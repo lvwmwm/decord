@@ -1,23 +1,23 @@
-// Module ID: 13599
-// Function ID: 13600
+// Module ID: 13666
+// Function ID: 13667
 // Name: NotificationSettingsMessageNotification
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 13600, 1128, 5195, 13601, 6859, 13598, 5171, 13603, 2002, 10795, 13605, 2]
+// Dependencies: [19, 17, 21, 4966, 587, 558, 576, 13667, 1128, 5216, 13668, 6887, 13665, 5192, 13670, 2002, 10939, 13672, 2]
 // Exports: NotificationSettingsChannelMessageNotification, NotificationSettingsGuildMessageNotification
 
-// Module 13599 (NotificationSettingsMessageNotification)
+// Module 13666 (NotificationSettingsMessageNotification)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import Pressables from "Pressables" /* 6859 */;
-import notificationSettingsPresetOptionUtils from "notificationSettingsPresetOptionUtils" /* 13600 */;
-import NotificationSettingsMockMessageDefault from "NotificationSettingsMockMessage" /* 13601 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import Pressables from "Pressables" /* 6887 */;
+import notificationSettingsPresetOptionUtils from "notificationSettingsPresetOptionUtils" /* 13667 */;
+import NotificationSettingsMockMessageDefault from "NotificationSettingsMockMessage" /* 13668 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -263,13 +263,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
   items1 = [hasOwnProperty(View, obj3), ];
   const obj5 = { onPress: onPress.onCustomize, activeOpacity: 0.6, children: hasOwnProperty(View, obj6) };
   obj6 = { style: tmp.card, children: items2 };
-  const PressableOpacity = tmp2(6859).PressableOpacity;
+  const PressableOpacity = tmp2(6887).PressableOpacity;
   items2 = [, , ];
   const obj7 = { notificationSetting: onPress.setting };
   items2[0] = React3(NotificationSettingsMockMessageDefault, obj7);
   const obj8 = { variant: "text-sm/medium", style: tmp.label, children: str };
   str = undefined;
-  const Text3 = tmp2(5195).Text;
+  const Text3 = tmp2(5216).Text;
   if (found != null) {
     str = found.label;
   }
@@ -278,9 +278,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
   }
   items2[1] = React3(Text3, obj8);
   const obj9 = { onPress: onPress.onCustomize, children: React3(Text4, obj10) };
-  const PressableOpacity2 = tmp2(6859).PressableOpacity;
+  const PressableOpacity2 = tmp2(6887).PressableOpacity;
   obj10 = { variant: "text-sm/semibold", style: tmp.cta, color: "text-brand", children: intl4.string(intl5.t.yxiV9W) };
-  Text4 = tmp2(5195).Text;
+  Text4 = tmp2(5216).Text;
   intl4 = tmp2(1128).intl;
   items2[2] = React3(PressableOpacity2, obj9);
   items1[1] = React3(PressableOpacity, obj5);
@@ -300,7 +300,7 @@ export const NotificationSettingsGuildMessageNotification = function Notificatio
     onCustomize() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { guildId: style.guildId };
-      obj.openLazy(asyncRequire(13603, dependencyMap.paths), "MessageNotificationGuildActionSheet", obj2);
+      obj.openLazy(asyncRequire(13670, dependencyMap.paths), "MessageNotificationGuildActionSheet", obj2);
     }
   };
   obj2 = require("notificationSettingsGuildFlagUtils");
@@ -316,7 +316,7 @@ export const NotificationSettingsChannelMessageNotification = function Notificat
     onCustomize() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { channel: style.channel };
-      obj.openLazy(asyncRequire(13605, dependencyMap.paths), "MessageNotificationChannelActionSheet", obj2);
+      obj.openLazy(asyncRequire(13672, dependencyMap.paths), "MessageNotificationChannelActionSheet", obj2);
     }
   };
   obj2 = require("notficationSettingsChannelFlagUtils");

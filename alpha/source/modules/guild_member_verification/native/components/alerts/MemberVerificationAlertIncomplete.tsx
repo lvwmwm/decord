@@ -1,16 +1,16 @@
-// Module ID: 7138
-// Function ID: 7139
+// Module ID: 7166
+// Function ID: 7167
 // Name: MemberVerificationAlertIncomplete
-// Dependencies: [109, 19, 4972, 21, 558, 576, 573, 6822, 6786, 1128, 5205, 6790, 7139, 2]
+// Dependencies: [109, 19, 4993, 21, 558, 576, 573, 6850, 6814, 1128, 5226, 6818, 7167, 2]
 
-// Module 7138 (MemberVerificationAlertIncomplete)
+// Module 7166 (MemberVerificationAlertIncomplete)
 import intl5 from "intl" /* 1128 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6786 */;
-import MemberVerificationAlertDefault from "MemberVerificationAlert" /* 6790 */;
-import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 6822 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6814 */;
+import MemberVerificationAlertDefault from "MemberVerificationAlert" /* 6818 */;
+import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 6850 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4972 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4993 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -126,7 +126,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
       }
       if (cResult[17] !== tmp15) {
         const obj3 = { variant: "secondary", text: tmp21, onPress: tmp15 };
-        const tmp25 = closure_7(tmp(5205).Button, obj3);
+        const tmp25 = closure_7(tmp(5226).Button, obj3);
         cResult[17] = tmp15;
         cResult[18] = tmp25;
         tmp23 = tmp25;
@@ -144,7 +144,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
       }
       if (cResult[20] !== tmp16) {
         const obj4 = { text: tmp26, variant: "destructive", onPress: tmp16 };
-        const tmp30 = closure_7(tmp(5205).Button, obj4);
+        const tmp30 = closure_7(tmp(5226).Button, obj4);
         cResult[20] = tmp16;
         cResult[21] = tmp30;
         tmp28 = tmp30;
@@ -165,7 +165,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
             return tmp35;
           }
         }
-        const obj5 = { icon: tmp(7139).ListViewIcon, header: tmp17, buttons: tmp31 };
+        const obj5 = { icon: tmp(7167).ListViewIcon, header: tmp17, buttons: tmp31 };
         const tmp38 = MemberVerificationAlertDefault;
         const merged = Object.assign(tmp6);
         const tmp42 = closure_7(tmp38, obj5);
@@ -281,16 +281,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
     let intl = tmp2(1128).intl;
     formatToPlainStringResult = intl.string(tmp2(1128).t["0sTyEb"]);
   }
-  const obj3 = { icon: guildId(7139).ListViewIcon, header: formatToPlainStringResult, buttons: closure_9(closure_8, obj4) };
-  const tmp9 = onClose(6790);
+  const obj3 = { icon: guildId(7167).ListViewIcon, header: formatToPlainStringResult, buttons: closure_9(closure_8, obj4) };
+  const tmp9 = onClose(6818);
   const merged1 = Object.assign(merged);
   obj4 = { children: items4 };
   const obj5 = { variant: "secondary", text: intl3.string(guildId(1128).t.h3aGmv), onPress: callback };
-  const Button = tmp2(5205).Button;
+  const Button = tmp2(5226).Button;
   intl3 = tmp2(1128).intl;
   items4 = [closure_7(Button, obj5), ];
   const obj6 = { text: intl4.string(guildId(1128).t.OQFlFD), variant: "destructive", onPress: callback1 };
-  const Button2 = tmp2(5205).Button;
+  const Button2 = tmp2(5226).Button;
   intl4 = tmp2(1128).intl;
   items4[1] = closure_7(Button2, obj6);
   return closure_7(tmp9, obj3);

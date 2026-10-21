@@ -1,15 +1,15 @@
-// Module ID: 13244
-// Function ID: 13245
+// Module ID: 13312
+// Function ID: 13313
 // Name: useGuildPowerupNewPerkMarketingVersion
-// Dependencies: [19, 4822, 4880, 5143, 1087, 558, 576, 5161, 504, 5148, 5147, 5146, 8941, 2]
+// Dependencies: [19, 4843, 4901, 5164, 1087, 558, 576, 5182, 504, 5169, 5168, 5167, 8968, 2]
 
-// Module 13244 (useGuildPowerupNewPerkMarketingVersion)
-import Powerups from "Powerups" /* 5146 */;
-import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 8941 */;
+// Module 13312 (useGuildPowerupNewPerkMarketingVersion)
+import Powerups from "Powerups" /* 5167 */;
+import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 8968 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4822 */;
-import PermissionStore from "PermissionStore" /* 4880 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5143 */;
+import GuildStore from "GuildStore" /* 4843 */;
+import PermissionStore from "PermissionStore" /* 4901 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5164 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -74,11 +74,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmpResult5 = tmp(5148);
+  const tmpResult5 = tmp(5169);
   const serverThemeEnabled = tmpResult5.useServerThemeEnabled(arg0, "useGuildPowerupNewPerkMarketingVersion");
-  const tmpResult6 = tmp(5147);
+  const tmpResult6 = tmp(5168);
   const serverThemeUserEnabled = tmpResult6.useServerThemeUserEnabled("useGuildPowerupNewPerkMarketingVersion");
-  const tmpResult7 = tmp(5148);
+  const tmpResult7 = tmp(5169);
   const serverThemeRollbackEnabled = tmpResult7.useServerThemeRollbackEnabled(arg0, "useGuildPowerupNewPerkMarketingVersion");
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     class U {

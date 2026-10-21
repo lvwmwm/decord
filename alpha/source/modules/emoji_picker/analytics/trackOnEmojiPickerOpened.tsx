@@ -1,19 +1,19 @@
-// Module ID: 9784
-// Function ID: 9785
+// Module ID: 9814
+// Function ID: 9815
 // Name: trackOnEmojiPickerOpened
-// Dependencies: [19, 6676, 4800, 4851, 1087, 1395, 1243, 558, 576, 9761, 9762, 5673, 4898, 2]
+// Dependencies: [19, 6704, 4821, 4872, 1087, 1395, 1243, 558, 576, 9791, 9792, 5693, 4919, 2]
 
-// Module 9784 (trackOnEmojiPickerOpened)
+// Module 9814 (trackOnEmojiPickerOpened)
 import Constants from "Constants" /* 1087 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1243 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4898 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5673 */;
-import useTopAndNewlyAddedEmojis from "useTopAndNewlyAddedEmojis" /* 9761 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4919 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5693 */;
+import useTopAndNewlyAddedEmojis from "useTopAndNewlyAddedEmojis" /* 9791 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6676 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4851 */;
+import EmojiStore from "EmojiStore" /* 6704 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ const require = globalThis.__r;
 let _require, animated;
 
 let tmp6;
-const useEmojiHotrail = tmp6(9762);
+const useEmojiHotrail = tmp6(9792);
 function trackOnEmojiPickerOpened(current) {
   let EXPRESSION_PICKER_OPENED;
   let analyticsObject;

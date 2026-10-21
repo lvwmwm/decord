@@ -1,12 +1,12 @@
-// Module ID: 9139
-// Function ID: 9140
+// Module ID: 9166
+// Function ID: 9167
 // Name: SecureFramesDeeplinkExperiment
-// Dependencies: [5150, 558, 576, 2]
+// Dependencies: [5171, 558, 576, 2]
 // Exports: getSecureFramesDeeplinkExperiment
 
-// Module 9139 (SecureFramesDeeplinkExperiment)
+// Module 9166 (SecureFramesDeeplinkExperiment)
 import react from "react" /* 576 */;
-import createExperimentDefault from "createExperiment" /* 5150 */;
+import createExperimentDefault from "createExperiment" /* 5171 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

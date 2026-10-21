@@ -1,26 +1,26 @@
-// Module ID: 16353
-// Function ID: 16354
+// Module ID: 16429
+// Function ID: 16430
 // Name: SettingsVoiceScreen
-// Dependencies: [19, 17, 2014, 8280, 1087, 21, 2068, 4945, 558, 576, 5166, 4952, 11513, 11514, 1128, 5631, 5258, 11512, 5195, 11509, 11111, 15780, 2]
+// Dependencies: [19, 17, 2014, 8308, 1087, 21, 2067, 4966, 558, 576, 5187, 4973, 11563, 11564, 1128, 5651, 5279, 11562, 5216, 11559, 11155, 15856, 2]
 
-// Module 16353 (SettingsVoiceScreen)
+// Module 16429 (SettingsVoiceScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl10 from "intl" /* 1128 */;
-import shared from "shared" /* 4952 */;
-import useThemeDefault from "useTheme" /* 5166 */;
-import FastImageDefault from "FastImage" /* 5631 */;
-import SettingsConstants from "SettingsConstants" /* 8280 */;
-import SettingBuilders from "SettingBuilders" /* 11111 */;
-import NoiseCancellationUtils from "NoiseCancellationUtils" /* 11509 */;
-import KrispLogo2 from "KrispLogo" /* 11512 */;
-import SettingLayoutDefault from "SettingLayout" /* 15780 */;
+import shared from "shared" /* 4973 */;
+import useThemeDefault from "useTheme" /* 5187 */;
+import FastImageDefault from "FastImage" /* 5651 */;
+import SettingsConstants from "SettingsConstants" /* 8308 */;
+import SettingBuilders from "SettingBuilders" /* 11155 */;
+import NoiseCancellationUtils from "NoiseCancellationUtils" /* 11559 */;
+import KrispLogo2 from "KrispLogo" /* 11562 */;
+import SettingLayoutDefault from "SettingLayout" /* 15856 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import Fragment from "Fragment" /* 21 */;
-import HelpdeskUtils from "HelpdeskUtils" /* 2068 */;
-import createStyles from "createStyles" /* 4945 */;
+import HelpdeskUtils from "HelpdeskUtils" /* 2067 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -124,9 +124,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function KrispL
   const tmp6 = useThemeDefault();
   const obj2 = shared;
   if (obj2.isThemeLight(tmp6)) {
-    tmp5Result = tmp5(11513);
+    tmp5Result = tmp5(11563);
   } else {
-    tmp5Result = tmp5(11514);
+    tmp5Result = tmp5(11564);
   }
   ({ krisp, logo } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -156,9 +156,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function KrispL
     const _Symbol2 = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { accessibilityRole: "link", accessibilityLabel: tmp12, onPress: KrispLogo2.handleKrispLinkPressed, children: metroImportAll(Text, obj4) };
-      const LegacyPressable = tmp(5258).LegacyPressable;
+      const LegacyPressable = tmp(5279).LegacyPressable;
       obj4 = { variant: "text-sm/medium", color: "text-link", children: intl3.string(intl10.t.hvVgAZ) };
-      Text = tmp(5195).Text;
+      Text = tmp(5216).Text;
       intl3 = tmp(1128).intl;
       const tmp16 = metroImportAll(LegacyPressable, obj3);
       cResult[5] = tmp16;
@@ -198,9 +198,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function KrispL
   const tmp4 = useThemeDefault();
   const obj = shared;
   if (obj.isThemeLight(tmp4)) {
-    tmp2Result = tmp2(11513);
+    tmp2Result = tmp2(11563);
   } else {
-    tmp2Result = tmp2(11514);
+    tmp2Result = tmp2(11564);
   }
   const obj2 = { style: tmp.krisp, children: items };
   const obj3 = { style: tmp.logo, source: tmp2Result, accessibilityLabel: intl.string(intl10.t.vFiCSx) };
@@ -208,10 +208,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function KrispL
   intl = tmp5(1128).intl;
   items = [metroImportAll(tmp2Result2, obj3), ];
   const obj4 = { accessibilityRole: "link", accessibilityLabel: intl2.string(intl10.t.hvVgAZ), onPress: KrispLogo2.handleKrispLinkPressed, children: metroImportAll(Text, obj5) };
-  const LegacyPressable = tmp5(5258).LegacyPressable;
+  const LegacyPressable = tmp5(5279).LegacyPressable;
   intl2 = tmp5(1128).intl;
   obj5 = { variant: "text-sm/medium", color: "text-link", children: intl3.string(intl10.t.hvVgAZ) };
-  Text = tmp5(5195).Text;
+  Text = tmp5(5216).Text;
   intl3 = tmp5(1128).intl;
   items[1] = metroImportAll(LegacyPressable, obj4);
   return React4(View, obj2);
@@ -229,7 +229,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function System
     let tmp6 = null;
     if (noiseCancellationDeferredToSystem) {
       const obj3 = { variant: "text-sm/medium", children: intl.format(intl10.t.EUNgko, obj4) };
-      const Text = tmp(5195).Text;
+      const Text = tmp(5216).Text;
       intl = tmp(1128).intl;
       obj4 = {
         onSettingsClick() {
@@ -253,7 +253,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function System
   const obj = NoiseCancellationUtils;
   if (obj.useNoiseCancellationDeferredToSystem()) {
     const obj2 = { variant: "text-sm/medium", children: intl.format(intl10.t.EUNgko, obj3) };
-    const Text = tmp(5195).Text;
+    const Text = tmp(5216).Text;
     intl = tmp(1128).intl;
     obj3 = {
       onSettingsClick() {
@@ -273,7 +273,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsVoic
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { sections: getVoiceSettings() };
-    const createList = tmp(11111).createList;
+    const createList = tmp(11155).createList;
     SettingBuilders;
     const list = createList(obj2);
     cResult[0] = list;

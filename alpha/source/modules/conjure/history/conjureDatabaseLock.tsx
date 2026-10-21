@@ -1,10 +1,10 @@
-// Module ID: 12138
-// Function ID: 12139
+// Module ID: 12186
+// Function ID: 12187
 // Name: conjureDatabaseLock
 // Dependencies: [5, 19, 558, 576, 2]
 // Exports: withConjureDatabaseLock
 
-// Module 12138 (conjureDatabaseLock)
+// Module 12186 (conjureDatabaseLock)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

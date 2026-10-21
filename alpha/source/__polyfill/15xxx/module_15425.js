@@ -1,14 +1,7 @@
 // Module ID: 15425
 // Function ID: 15426
-// Dependencies: [15373, 15374]
+// Dependencies: []
 
 // Module 15425
-import _mod15373 from "module_15373" /* 15373 */;
-import _mod15374 from "module_15374" /* 15374 */;
 
-const f70425 = () => 42 !== Object.defineProperty(() => {
-
-}, "prototype", { value: 42, writable: false }).prototype;
-_mod15373 && _mod15374(f70425);
-
-export default _mod15373 && _mod15374(f70425);
+export const calendars = ["buddhist", "chinese", "coptic", "dangi", "ethioaa", "ethiopic", "gregory", "hebrew", "indian", "islamic", "islamic-civil", "islamic-rgsa", "islamic-tbla", "islamic-umalqura", "islamicc", "iso8601", "japanese", "persian", "roc"];

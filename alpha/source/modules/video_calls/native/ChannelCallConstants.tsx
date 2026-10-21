@@ -1,9 +1,9 @@
-// Module ID: 10687
-// Function ID: 10688
+// Module ID: 10831
+// Function ID: 10832
 // Name: ChannelCallConstants
 // Dependencies: [1087, 2]
 
-// Module 10687 (ChannelCallConstants)
+// Module 10831 (ChannelCallConstants)
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

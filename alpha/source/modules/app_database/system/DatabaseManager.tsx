@@ -1,14 +1,14 @@
-// Module ID: 4843
-// Function ID: 4844
+// Module ID: 4864
+// Function ID: 4865
 // Name: DatabaseManager
-// Dependencies: [5, 502, 3, 504, 584, 4844, 4827, 2]
+// Dependencies: [5, 502, 3, 504, 584, 4865, 4848, 2]
 
-// Module 4843 (DatabaseManager)
+// Module 4864 (DatabaseManager)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Dispatcher2 from "Dispatcher" /* 584 */;
-import _mod4827 from "module_4827" /* 4827 */;
-import react_nativeAll from "react-native" /* 4844 */;
+import _mod4848 from "module_4848" /* 4848 */;
+import react_nativeAll from "react-native" /* 4865 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -64,7 +64,7 @@ let obj = function _trySpeculativelyOpenDatabaseAsync() {
             const _HermesInternal = HermesInternal;
             closure_2_6.verbose("speculatively opening " + tmp21);
             c4 = 1;
-            const Database = require("module_4827").Database;
+            const Database = require("module_4848").Database;
             c5 = 2;
             c6 = 1;
             const obj4 = { value: Database.open(tmp21), done: false };
@@ -181,7 +181,7 @@ class DatabaseManager extends Store {
           logger.verbose("synchronously opening " + combined);
           let num = 50;
           const tmp6 = tryUntil(50, () => {
-            const Database = _mod4827.Database;
+            const Database = _mod4848.Database;
             return Database.openSyncUnsafe(combined, { invalidateDisabledHandles: true });
           });
           const _HermesInternal3 = HermesInternal;
@@ -246,7 +246,7 @@ class DatabaseManager extends Store {
     if (value != null) {
       stateResult = value.state();
     }
-    const tmp3 = null == value && stateResult !== _mod4827.DatabaseState.Open;
+    const tmp3 = null == value && stateResult !== _mod4848.DatabaseState.Open;
     if (tmp3) {
       self.remove(id);
     }

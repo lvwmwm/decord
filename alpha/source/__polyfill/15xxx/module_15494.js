@@ -1,47 +1,18 @@
 // Module ID: 15494
 // Function ID: 15495
-// Dependencies: []
-// Exports: default
+// Dependencies: [15467]
 
 // Module 15494
+import _mod15467 from "module_15467" /* 15467 */;
 
-export default () => (startTimer) => {
-  let closure_0 = startTimer;
-  startTimer = startTimer.startTimer;
-  let obj = {
-    features: {
-      benchmark(title) {
-        const items = [];
-        let closure_2 = items();
-        function step(title) {
-          let num = 0;
-          if (0 !== items.length) {
-            num = arr[arr.length - 1].time;
-          }
-          const tmp = closure_2();
-          const obj = { title, time: tmp, delta: tmp - num };
-          items.push(obj);
-        }
-        let obj = { title, time: 0, delta: 0 };
-        const arr = items.push(obj);
-        function stop(title) {
-          if (typeof step === "function") {
-            let num = 0;
-            if (0 !== items.length) {
-              num = arr[arr.length - 1].time;
-            }
-            const tmp3 = closure_2();
-            const obj = { title, time: tmp3, delta: tmp3 - num };
-            items.push(obj);
-            const obj2 = { title, steps: items };
-            title.send("benchmark.report", obj2);
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        }
-        return { step, stop, last: stop };
-      }
-    }
-  };
-  return obj;
+
+export default function(arg0) {
+  if (_mod15467(arg0)) {
+    return arg0;
+  } else {
+    const self = this;
+    const self2 = this;
+    const tmp3 = new TypeError(String(arg0) + " is not an object");
+    throw tmp3;
+  }
 };

@@ -1,8 +1,8 @@
-// Module ID: 6123
-// Function ID: 6124
+// Module ID: 6145
+// Function ID: 6146
 // Dependencies: [2]
 
-// Module 6123
+// Module 6145
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/athlete_checkered.png.js");

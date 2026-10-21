@@ -1,10 +1,10 @@
-// Module ID: 18016
-// Function ID: 18017
+// Module ID: 18097
+// Function ID: 18098
 // Name: voiceChannelAppListState
 // Dependencies: [2]
 // Exports: voiceChannelAppListState
 
-// Module 18016 (voiceChannelAppListState)
+// Module 18097 (voiceChannelAppListState)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_channel_apps/voiceChannelAppListState.tsx");

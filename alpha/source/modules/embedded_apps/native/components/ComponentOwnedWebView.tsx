@@ -1,10 +1,10 @@
-// Module ID: 18183
-// Function ID: 18184
+// Module ID: 18266
+// Function ID: 18267
 // Name: ComponentOwnedWebView
-// Dependencies: [19, 21, 11372, 11350, 11373, 2]
+// Dependencies: [19, 21, 11416, 11394, 11417, 2]
 // Exports: default
 
-// Module 18183 (ComponentOwnedWebView)
+// Module 18266 (ComponentOwnedWebView)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

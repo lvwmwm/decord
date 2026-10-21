@@ -1,14 +1,14 @@
-// Module ID: 7148
-// Function ID: 7149
+// Module ID: 7176
+// Function ID: 7177
 // Name: DefaultChannelUtils
-// Dependencies: [4852, 4800, 1087, 1099, 558, 576, 4885, 504, 2]
+// Dependencies: [4873, 4821, 1087, 1099, 558, 576, 4906, 504, 2]
 // Exports: canChannelBeDefault
 
-// Module 7148 (DefaultChannelUtils)
+// Module 7176 (DefaultChannelUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4885 */;
-import GatedChannelStore from "GatedChannelStore" /* 4852 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4906 */;
+import GatedChannelStore from "GatedChannelStore" /* 4873 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,11 +1,11 @@
-// Module ID: 2062
-// Function ID: 2063
+// Module ID: 2061
+// Function ID: 2062
 // Name: InvoiceRecord
-// Dependencies: [1407, 1087, 2063, 2]
+// Dependencies: [1407, 1087, 2062, 2]
 
-// Module 2062 (InvoiceRecord)
+// Module 2061 (InvoiceRecord)
 import Constants from "Constants" /* 1087 */;
-import PremiumSubscriptionInvoiceItem from "PremiumSubscriptionInvoiceItem" /* 2063 */;
+import PremiumSubscriptionInvoiceItem from "PremiumSubscriptionInvoiceItem" /* 2062 */;
 import Record from "Record" /* 1407 */;
 import size from "module_2" /* 2 */;
 

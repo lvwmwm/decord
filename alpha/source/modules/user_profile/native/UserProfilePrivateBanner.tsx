@@ -1,20 +1,20 @@
-// Module ID: 14259
-// Function ID: 14260
+// Module ID: 14334
+// Function ID: 14335
 // Name: UserProfilePrivateBanner
-// Dependencies: [19, 17, 7253, 21, 4945, 587, 558, 576, 1105, 8515, 5195, 1128, 2]
+// Dependencies: [19, 17, 7281, 21, 4966, 587, 558, 576, 1105, 8542, 5216, 1128, 2]
 
-// Module 14259 (UserProfilePrivateBanner)
+// Module 14334 (UserProfilePrivateBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
 import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import Constants from "Constants" /* 7253 */;
-import LockIcon2 from "LockIcon" /* 8515 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import Constants from "Constants" /* 7281 */;
+import LockIcon2 from "LockIcon" /* 8542 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileP
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { size: "xs", color: nativeDefault.colors.TEXT_DEFAULT };
-      const LockIcon = tmp(8515).LockIcon;
+      const LockIcon = tmp(8542).LockIcon;
       const tmp13 = React3(LockIcon, obj3);
       cResult[5] = tmp13;
       tmp10 = tmp13;
@@ -70,7 +70,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileP
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { variant: "text-sm/medium", color: "text-default", children: intl.string(intl2.t.KPnd2O) };
-      const Text = tmp(5195).Text;
+      const Text = tmp(5216).Text;
       intl = tmp(1128).intl;
       const tmp16 = React3(Text, obj4);
       cResult[6] = tmp16;

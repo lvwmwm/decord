@@ -1,16 +1,16 @@
-// Module ID: 12776
-// Function ID: 12777
+// Module ID: 12840
+// Function ID: 12841
 // Name: onTapCheckpointCard
-// Dependencies: [4800, 1087, 5995, 1267, 5673, 12777, 2]
+// Dependencies: [4821, 1087, 6017, 1267, 5693, 12841, 2]
 // Exports: onTapCheckpointCard
 
-// Module 12776 (onTapCheckpointCard)
+// Module 12840 (onTapCheckpointCard)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5673 */;
-import CheckpointExperiments from "CheckpointExperiments" /* 5995 */;
-import openCheckpoint from "openCheckpoint" /* 12777 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5693 */;
+import CheckpointExperiments from "CheckpointExperiments" /* 6017 */;
+import openCheckpoint from "openCheckpoint" /* 12841 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

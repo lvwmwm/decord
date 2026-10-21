@@ -1,17 +1,17 @@
-// Module ID: 12604
-// Function ID: 12605
+// Module ID: 12668
+// Function ID: 12669
 // Name: GuildMemberUtils
-// Dependencies: [4860, 4822, 4880, 1392, 4866, 1087, 558, 576, 504, 11, 1405, 2]
+// Dependencies: [4881, 4843, 4901, 1392, 4887, 1087, 558, 576, 504, 11, 1405, 2]
 // Exports: canManageMessages, hasBanMemberPerms, hasKickMemberPerms
 
-// Module 12604 (GuildMemberUtils)
+// Module 12668 (GuildMemberUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1087 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4866 */;
-import GuildMemberStore from "GuildMemberStore" /* 4860 */;
-import GuildStore from "GuildStore" /* 4822 */;
-import PermissionStore from "PermissionStore" /* 4880 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4887 */;
+import GuildMemberStore from "GuildMemberStore" /* 4881 */;
+import GuildStore from "GuildStore" /* 4843 */;
+import PermissionStore from "PermissionStore" /* 4901 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

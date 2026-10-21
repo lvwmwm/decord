@@ -1,14 +1,14 @@
-// Module ID: 12856
-// Function ID: 12857
+// Module ID: 12924
+// Function ID: 12925
 // Name: joinOrStartActivityInChannel
-// Dependencies: [5, 4799, 4800, 4851, 11250, 11279, 2]
+// Dependencies: [5, 4820, 4821, 4872, 11294, 11323, 2]
 // Exports: joinOrStartActivityInChannel
 
-// Module 12856 (joinOrStartActivityInChannel)
+// Module 12924 (joinOrStartActivityInChannel)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4799 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4851 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
 import size from "module_2" /* 2 */;
 
 let analyticsLocations, applicationId, channelId, customId, guild_id, length, referrerId;
@@ -65,7 +65,7 @@ let obj = function _joinOrStartActivityInChannel() {
               compositeInstanceId = undefined;
               referrerId = 1;
               c5 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

@@ -1,18 +1,18 @@
-// Module ID: 18960
-// Function ID: 18961
+// Module ID: 19037
+// Function ID: 19038
 // Name: GuildSettingsRoleSubscriptionsEmpty
-// Dependencies: [19, 4822, 1087, 1375, 21, 558, 576, 1505, 18961, 18962, 18963, 504, 2]
+// Dependencies: [19, 4843, 1087, 1375, 21, 558, 576, 1505, 19038, 19039, 19040, 504, 2]
 
-// Module 18960 (GuildSettingsRoleSubscriptionsEmpty)
+// Module 19037 (GuildSettingsRoleSubscriptionsEmpty)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import ApplicationConstants from "ApplicationConstants" /* 1375 */;
 import useNavigation from "useNavigation" /* 1505 */;
-import useGuildApplicationDefault from "useGuildApplication" /* 18961 */;
-import PlaceholderDefault from "Placeholder" /* 18962 */;
-import GuildSettingsRoleSubscriptionWelcomeViewDefault from "GuildSettingsRoleSubscriptionWelcomeView" /* 18963 */;
+import useGuildApplicationDefault from "useGuildApplication" /* 19038 */;
+import PlaceholderDefault from "Placeholder" /* 19039 */;
+import GuildSettingsRoleSubscriptionWelcomeViewDefault from "GuildSettingsRoleSubscriptionWelcomeView" /* 19040 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4822 */;
+import GuildStore from "GuildStore" /* 4843 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -74,14 +74,14 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSe
   const str = obj.useNavigation();
   const tmp3 = useGuildApplicationDefault(guild.id, ApplicationTypes.GUILD_ROLE_SUBSCRIPTIONS);
   if (tmp3.loading) {
-    tmp7 = jsx(tmp2(18962), {});
+    tmp7 = jsx(tmp2(19039), {});
   } else {
     const features = guild.features;
     const tmp5 = constants;
     if (!features.has(constants.CREATOR_MONETIZABLE)) {
       const features2 = guild.features;
       if (!features2.has(tmp5.CREATOR_MONETIZABLE_PROVISIONAL)) {
-        tmp7 = jsx(tmp2(18963), { guild });
+        tmp7 = jsx(tmp2(19040), { guild });
       }
     }
     if (null == tmp4) {

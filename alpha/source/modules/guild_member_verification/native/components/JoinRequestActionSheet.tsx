@@ -1,20 +1,20 @@
-// Module ID: 17779
-// Function ID: 17780
+// Module ID: 17860
+// Function ID: 17861
 // Name: JoinRequestActionSheet
-// Dependencies: [19, 17, 4946, 1406, 1392, 1087, 21, 4945, 558, 576, 504, 8612, 8596, 5014, 8655, 5166, 7229, 5213, 587, 1105, 8657, 6796, 4849, 8613, 5226, 1202, 8660, 1128, 17780, 5230, 5543, 4999, 2]
+// Dependencies: [19, 17, 4967, 1406, 1392, 1087, 21, 4966, 558, 576, 504, 8639, 8623, 5035, 8682, 5187, 7257, 5234, 587, 1105, 8684, 6824, 4870, 8640, 5247, 1202, 8687, 1128, 17861, 5251, 5564, 5020, 2]
 
-// Module 17779 (JoinRequestActionSheet)
+// Module 17860 (JoinRequestActionSheet)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
-import isChangelogUserDefault from "isChangelogUser" /* 4849 */;
-import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 6796 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8613 */;
+import isChangelogUserDefault from "isChangelogUser" /* 4870 */;
+import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 6824 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8640 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4946 */;
+import AccessibilityStore from "AccessibilityStore" /* 4967 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

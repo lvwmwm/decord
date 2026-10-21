@@ -1,32 +1,32 @@
-// Module ID: 18278
-// Function ID: 18279
+// Module ID: 18359
+// Function ID: 18360
 // Name: SoundboardSoundPickerCategories
-// Dependencies: [109, 19, 17, 18261, 1392, 1087, 21, 4945, 587, 558, 576, 7394, 6834, 1128, 10087, 5653, 18276, 9239, 1202, 8515, 6859, 5258, 5173, 5174, 2054, 504, 9611, 1633, 8673, 7171, 5127, 2]
+// Dependencies: [109, 19, 17, 18342, 1392, 1087, 21, 4966, 587, 558, 576, 7422, 6862, 1128, 10117, 5673, 18357, 9266, 1202, 8542, 6887, 5279, 5194, 5195, 2053, 504, 9641, 1633, 8700, 7199, 5148, 2]
 
-// Module 18278 (SoundboardSoundPickerCategories)
+// Module 18359 (SoundboardSoundPickerCategories)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1128 */;
-import HapticUtils from "HapticUtils" /* 5173 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5174 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5258 */;
-import ClockIcon from "ClockIcon" /* 5653 */;
-import GuildIconDefault from "GuildIcon" /* 6834 */;
-import Pressables from "Pressables" /* 6859 */;
-import SoundboardTypes from "SoundboardTypes" /* 7394 */;
-import LockIcon from "LockIcon" /* 8515 */;
-import TrophyIcon from "TrophyIcon" /* 9239 */;
-import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9611 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10087 */;
-import ExpressionPickerStore from "ExpressionPickerStore" /* 18261 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18276 */;
+import HapticUtils from "HapticUtils" /* 5194 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5195 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5279 */;
+import ClockIcon from "ClockIcon" /* 5673 */;
+import GuildIconDefault from "GuildIcon" /* 6862 */;
+import Pressables from "Pressables" /* 6887 */;
+import SoundboardTypes from "SoundboardTypes" /* 7422 */;
+import LockIcon from "LockIcon" /* 8542 */;
+import TrophyIcon from "TrophyIcon" /* 9266 */;
+import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9641 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10117 */;
+import ExpressionPickerStore from "ExpressionPickerStore" /* 18342 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18357 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -338,7 +338,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
     const intl3 = tmp2(1128).intl;
     name = intl3.string(tmp2(1128).t["+cGVV6"]);
     const obj = { style: tmp.keyboardItem };
-    tmp7 = authStore2(tmp2(5653).ClockIcon, obj);
+    tmp7 = authStore2(tmp2(5673).ClockIcon, obj);
     tmp6 = null;
     tmp14Result = null;
   } else if (SoundboardTypes.SoundboardSoundGridSectionType.DEFAULTS === type) {
@@ -363,7 +363,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
       const obj3 = { guildName: category.categoryInfo.guild.name };
       name = intl5.formatToPlainString(tmp2(1128).t.GXs41w, obj3);
       const obj4 = { style: tmp.keyboardItem };
-      tmp7 = authStore2(tmp2(9239).TrophyIcon, obj4);
+      tmp7 = authStore2(tmp2(9266).TrophyIcon, obj4);
       tmp6 = null;
       tmp14Result = null;
     }
@@ -378,7 +378,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
   };
   obj6 = { style: items, children: items1 };
   items = [tmp.item, style];
-  const PressableOpacity = tmp2(6859).PressableOpacity;
+  const PressableOpacity = tmp2(6887).PressableOpacity;
   tmp15 = map1;
   if (tmp14Result == null) {
     tmp14Result = tmp7;

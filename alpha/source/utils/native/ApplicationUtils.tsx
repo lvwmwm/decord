@@ -1,19 +1,19 @@
-// Module ID: 11047
-// Function ID: 11048
+// Module ID: 10702
+// Function ID: 10703
 // Name: ApplicationUtils
-// Dependencies: [1087, 11048, 1267, 8792, 5622, 11049, 1099, 6623, 11052, 2002, 8759, 2]
+// Dependencies: [1087, 10703, 1267, 8819, 5642, 10704, 1099, 6651, 10707, 2002, 8786, 2]
 // Exports: installApplication, installPrivateChannelIntegration, openOAuth2Modal
 
-// Module 11047 (ApplicationUtils)
+// Module 10702 (ApplicationUtils)
 import Constants from "Constants" /* 1087 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import LinkingDefault from "Linking" /* 5622 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6623 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8759 */;
-import Constants2 from "Constants" /* 11048 */;
-import authorizeCallbackDefault from "authorizeCallback" /* 11049 */;
+import LinkingDefault from "Linking" /* 5642 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6651 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8786 */;
+import Constants2 from "Constants" /* 10703 */;
+import authorizeCallbackDefault from "authorizeCallback" /* 10704 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -47,7 +47,7 @@ export const installApplication = function installApplication(arg0) {
           obj.openURL(customInstallUrl);
         }
     };
-    const obj11 = customInstallUrl(8792);
+    const obj11 = customInstallUrl(8819);
     return obj11.handleClick(obj2);
   } else {
     if (null != integrationTypesConfig) {
@@ -97,7 +97,7 @@ export const installApplication = function installApplication(arg0) {
                 }
         };
         ModalActionCreatorsDefault;
-        const tmp25 = customInstallUrl(2002)(11052, dependencyMap.paths);
+        const tmp25 = customInstallUrl(2002)(10707, dependencyMap.paths);
         const merged = Object.assign(obj5);
         pushLazy2(tmp25, obj6, closure_5);
       }
@@ -153,7 +153,7 @@ export const installApplication = function installApplication(arg0) {
             }
       };
       ModalActionCreatorsDefault;
-      const tmp12 = customInstallUrl(2002)(11052, tmp36.paths);
+      const tmp12 = customInstallUrl(2002)(10707, tmp36.paths);
       const merged1 = Object.assign(obj10);
       pushLazy(tmp12, obj12, closure_5);
     }
@@ -176,7 +176,7 @@ export const openOAuth2Modal = function openOAuth2Modal(arg0) {
     }
   };
   ModalActionCreatorsDefault;
-  const tmp3 = require("asyncRequire")(11052, dependencyMap.paths);
+  const tmp3 = require("asyncRequire")(10707, dependencyMap.paths);
   const merged = Object.assign(arg0);
   pushLazy(tmp3, obj2, closure_5);
 };
@@ -200,7 +200,7 @@ export const installPrivateChannelIntegration = function installPrivateChannelIn
   };
   ModalActionCreatorsDefault;
   items = [];
-  const tmp2 = asyncRequire(11052, dependencyMap.paths);
+  const tmp2 = asyncRequire(10707, dependencyMap.paths);
   items[0] = OAuth2Scopes.OAuth2Scopes.APPLICATIONS_COMMANDS;
   pushLazy(tmp2, obj, closure_5);
 };

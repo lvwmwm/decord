@@ -1,12 +1,12 @@
-// Module ID: 9762
-// Function ID: 9763
+// Module ID: 9792
+// Function ID: 9793
 // Name: useEmojiHotrail
-// Dependencies: [19, 6679, 558, 576, 2]
+// Dependencies: [19, 6707, 558, 576, 2]
 // Exports: getEmojiHotrail
 
-// Module 9762 (useEmojiHotrail)
+// Module 9792 (useEmojiHotrail)
 import react2 from "react" /* 576 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6679 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6707 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

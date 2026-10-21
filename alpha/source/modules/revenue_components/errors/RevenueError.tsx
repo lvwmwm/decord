@@ -1,9 +1,9 @@
-// Module ID: 10852
-// Function ID: 10853
+// Module ID: 10996
+// Function ID: 10997
 // Name: RevenueError
 // Dependencies: [2]
 
-// Module 10852 (RevenueError)
+// Module 10996 (RevenueError)
 import size from "module_2" /* 2 */;
 
 class RevenueError extends Error {

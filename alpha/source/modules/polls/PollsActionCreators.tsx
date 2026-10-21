@@ -1,24 +1,24 @@
-// Module ID: 12096
-// Function ID: 12097
+// Module ID: 12144
+// Function ID: 12145
 // Name: PollsActionCreators
-// Dependencies: [5, 4881, 7645, 502, 4800, 7580, 6587, 5968, 8241, 10836, 1087, 38, 5866, 1128, 6781, 7268, 12097, 12099, 5673, 12, 504, 584, 5186, 12108, 4952, 12102, 7515, 9594, 6331, 2]
+// Dependencies: [5, 4902, 7673, 502, 4821, 7608, 6615, 5990, 8269, 10980, 1087, 38, 5888, 1128, 6809, 7296, 12145, 12147, 5693, 12, 504, 584, 5207, 12156, 4973, 12150, 7543, 9624, 6353, 2]
 
-// Module 12096 (PollsActionCreators)
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5673 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5866 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6781 */;
-import JoinGuildRefusedError from "JoinGuildRefusedError" /* 7268 */;
-import DraftStore from "DraftStore" /* 7580 */;
-import PollInteractionUtilsAll from "PollInteractionUtils" /* 12097 */;
+// Module 12144 (PollsActionCreators)
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5693 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5888 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6809 */;
+import JoinGuildRefusedError from "JoinGuildRefusedError" /* 7296 */;
+import DraftStore from "DraftStore" /* 7608 */;
+import PollInteractionUtilsAll from "PollInteractionUtils" /* 12145 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LurkingStore from "LurkingStore" /* 4881 */;
-import ReferencedMessageStore from "ReferencedMessageStore" /* 7645 */;
+import LurkingStore from "LurkingStore" /* 4902 */;
+import ReferencedMessageStore from "ReferencedMessageStore" /* 7673 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6587 */;
-import MessageStore from "MessageStore" /* 5968 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8241 */;
-import PollsInteractionStore from "PollsInteractionStore" /* 10836 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6615 */;
+import MessageStore from "MessageStore" /* 5990 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8269 */;
+import PollsInteractionStore from "PollsInteractionStore" /* 10980 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -239,7 +239,7 @@ let obj = function _optimisticallySetAnswers() {
       await "IconComponent";
       closure_2 = tmp;
       ({ channelId: c0, messageId: c1, answerIds: c2 } = channelId);
-      return "test";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -400,7 +400,7 @@ obj = function _handlePollSubmitVote() {
       await "IconComponent";
       answerIds = tmp5;
       ({ channelId: c0, messageId: c1 } = closure_0);
-      return "test";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -446,7 +446,7 @@ obj = function _handleClearPollVote() {
               channel = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -617,7 +617,7 @@ obj = function _handlePollActionTapped() {
       }
       await "IconComponent";
       ({ channelId: c0, messageId: c1, type: c2 } = closure_0);
-      return "test";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -681,7 +681,7 @@ obj = function _createPoll() {
                 obj5 = undefined;
                 layout_type = 1;
                 c6 = 1;
-                return { value: "test", done: true };
+                return { value: "Reflect", done: true };
               }
             } else if (1 === layout_type) {
               if (arg0 === 1) {
@@ -847,7 +847,7 @@ obj = function _endPollEarly() {
       }
       await "IconComponent";
       ({ channelId: c0, messageId: c1 } = closure_0);
-      return "test";
+      return "Reflect";
     })();
     iter.next();
     return iter;

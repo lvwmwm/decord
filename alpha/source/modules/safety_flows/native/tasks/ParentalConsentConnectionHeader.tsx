@@ -1,22 +1,22 @@
-// Module ID: 19162
-// Function ID: 19163
+// Module ID: 19237
+// Function ID: 19238
 // Name: ParentalConsentConnectionHeader
-// Dependencies: [19, 17, 1392, 21, 4945, 5229, 587, 558, 576, 1633, 504, 6619, 1128, 2822, 5195, 2]
+// Dependencies: [19, 17, 1392, 21, 4966, 5250, 587, 558, 576, 1633, 504, 6647, 1128, 2832, 5216, 2]
 
-// Module 19162 (ParentalConsentConnectionHeader)
+// Module 19237 (ParentalConsentConnectionHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import NavigatorConstants from "NavigatorConstants" /* 5229 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6619 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import NavigatorConstants from "NavigatorConstants" /* 5250 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6647 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp5;
-const _modDef2822 = tmp5(2822);
+const _modDef2832 = tmp5(2832);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -85,7 +85,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParentalConsentC
       return obj.logout("safety_flows_parental_consent_connection");
     };
     const intl = tmp(1128).intl;
-    const stringResult = intl.string(_modDef2822["3HuGuY"]);
+    const stringResult = intl.string(_modDef2832["3HuGuY"]);
     cResult[4] = fn2;
     cResult[5] = stringResult;
     tmp12 = stringResult;
@@ -107,7 +107,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParentalConsentC
     let tmp19 = null != stateFromStores;
     if (tmp19) {
       const obj4 = { accessibilityRole: "header", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores };
-      tmp19 = hasOwnProperty(tmp(5195).Text, obj4);
+      tmp19 = hasOwnProperty(tmp(5216).Text, obj4);
     }
     cResult[8] = stateFromStores;
     cResult[9] = tmp19;
@@ -172,7 +172,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParentalConsentC
       const obj = AuthenticationActionCreatorsDefault;
       return obj.logout("safety_flows_parental_consent_connection");
     },
-    children: intl.string(_modDef2822["3HuGuY"])
+    children: intl.string(_modDef2832["3HuGuY"])
   };
   const Text = Text_Text.Text;
   intl = intl2.intl;

@@ -1,14 +1,14 @@
-// Module ID: 18863
-// Function ID: 18864
+// Module ID: 18940
+// Function ID: 18941
 // Name: GuildSettingsRoleConstants
-// Dependencies: [18864, 1087, 18866, 1099, 4885, 586, 1128, 2]
+// Dependencies: [18941, 1087, 18943, 1099, 4906, 586, 1128, 2]
 
-// Module 18863 (GuildSettingsRoleConstants)
+// Module 18940 (GuildSettingsRoleConstants)
 import intl5 from "intl" /* 1128 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4885 */;
-import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 18864 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4906 */;
+import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 18941 */;
 import Constants from "Constants" /* 1087 */;
-import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 18866 */;
+import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 18943 */;
 import BigFlagUtils_mod from "BigFlagUtils" /* 1099 */;
 import shims_mod from "shims" /* 586 */;
 import size from "module_2" /* 2 */;

@@ -1,11 +1,11 @@
-// Module ID: 12694
-// Function ID: 12695
+// Module ID: 12758
+// Function ID: 12759
 // Name: useSafetyHubInitialized
-// Dependencies: [7870, 558, 576, 504, 2]
+// Dependencies: [7898, 558, 576, 504, 2]
 
-// Module 12694 (useSafetyHubInitialized)
+// Module 12758 (useSafetyHubInitialized)
 import react from "react" /* 576 */;
-import SafetyHubStore from "SafetyHubStore" /* 7870 */;
+import SafetyHubStore from "SafetyHubStore" /* 7898 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

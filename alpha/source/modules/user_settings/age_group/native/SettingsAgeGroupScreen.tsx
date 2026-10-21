@@ -1,23 +1,23 @@
-// Module ID: 15817
-// Function ID: 15818
+// Module ID: 15893
+// Function ID: 15894
 // Name: SettingsAgeGroupScreen
-// Dependencies: [19, 17, 8280, 1087, 21, 4945, 587, 558, 576, 7831, 2068, 5195, 1128, 3080, 15776, 11111, 15818, 15780, 2]
+// Dependencies: [19, 17, 8308, 1087, 21, 4966, 587, 558, 576, 7859, 2067, 5216, 1128, 3090, 15852, 11155, 15894, 15856, 2]
 
-// Module 15817 (SettingsAgeGroupScreen)
+// Module 15893 (SettingsAgeGroupScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2068 */;
-import _modDef3080 from "module_3080" /* 3080 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7831 */;
-import SettingsConstants from "SettingsConstants" /* 8280 */;
-import SettingBuilders from "SettingBuilders" /* 11111 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 15776 */;
-import SettingLayoutDefault from "SettingLayout" /* 15780 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
+import _modDef3090 from "module_3090" /* 3090 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7859 */;
+import SettingsConstants from "SettingsConstants" /* 8308 */;
+import SettingBuilders from "SettingBuilders" /* 11155 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 15852 */;
+import SettingLayoutDefault from "SettingLayout" /* 15856 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,8 +26,8 @@ let metroImportDefault;
 let obj2;
 let tmp;
 const intl3 = tmp(1128);
-const Text_Text = tmp(5195);
-const TinyBroncoAgeGroupHeader2 = tmp(15818);
+const Text_Text = tmp(5216);
+const TinyBroncoAgeGroupHeader2 = tmp(15894);
 const View = react_native.View;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const HelpdeskArticles = Constants.HelpdeskArticles;
@@ -61,7 +61,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(_modDef3080.PY4MA0) };
+    const obj2 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(_modDef3090.PY4MA0) };
     const Text = Text_Text.Text;
     intl = intl3.intl;
     const tmp9 = metroImportDefault(Text, obj2);
@@ -71,7 +71,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
     tmp6 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { variant: "text-sm/normal", color: "text-default", children: intl2.format(_modDef3080["1DN29p"], obj4) };
+    const obj3 = { variant: "text-sm/normal", color: "text-default", children: intl2.format(_modDef3090["1DN29p"], obj4) };
     const Text2 = Text_Text.Text;
     intl2 = intl3.intl;
     obj4 = { handleOnHelpUrlHook: first };
@@ -104,11 +104,11 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
     const obj = HelpdeskUtilsDefault;
     openUrl(obj.getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
   }, []);
-  const obj2 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(_modDef3080.PY4MA0) };
+  const obj2 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(_modDef3090.PY4MA0) };
   const Text = Text_Text.Text;
   intl = intl3.intl;
   items = [metroImportDefault(Text, obj2), ];
-  const obj3 = { variant: "text-sm/normal", color: "text-default", children: intl2.format(_modDef3080["1DN29p"], { handleOnHelpUrlHook: callback }) };
+  const obj3 = { variant: "text-sm/normal", color: "text-default", children: intl2.format(_modDef3090["1DN29p"], { handleOnHelpUrlHook: callback }) };
   const Text2 = Text_Text.Text;
   intl2 = intl3.intl;
   items[1] = metroImportDefault(Text2, obj3);
@@ -128,7 +128,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsAg
   const isTinyBroncoSettingsEnabled = obj2.useIsTinyBroncoSettingsEnabled();
   if (cResult[0] !== isTinyBroncoSettingsEnabled) {
     const obj3 = { sections: items1, ListHeaderComponent: TinyBroncoAgeGroupHeader };
-    const obj4 = { label: intl.string(_modDef3080["5Mi5TE"]), settings: items };
+    const obj4 = { label: intl.string(_modDef3090["5Mi5TE"]), settings: items };
     const createList = SettingBuilders.createList;
     SettingBuilders;
     intl = tmp(1128).intl;
@@ -136,7 +136,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsAg
     ({ AGE_GROUP_CONFIRM: arr[0], AGE_GROUP_RESET: arr[1], AGE_GROUP_CONFIRM_ACCOUNT_STATUS: arr[2] } = MobileUserSettings);
     items1 = [obj4];
     if (isTinyBroncoSettingsEnabled) {
-      TinyBroncoAgeGroupHeader = tmp(15818).TinyBroncoAgeGroupHeader;
+      TinyBroncoAgeGroupHeader = tmp(15894).TinyBroncoAgeGroupHeader;
     } else {
       TinyBroncoAgeGroupHeader = closure_10;
     }
@@ -159,7 +159,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsAg
   return tmp10;
 }) : (function SettingsAgeGroupScreen() {
   let isTinyBroncoSettingsEnabled;
-  let obj = isTinyBroncoSettingsEnabled(15776);
+  let obj = isTinyBroncoSettingsEnabled(15852);
   isTinyBroncoSettingsEnabled = obj.useIsTinyBroncoSettingsEnabled();
   let items = [isTinyBroncoSettingsEnabled];
   const node = react.useMemo(() => {
@@ -168,7 +168,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsAg
     let items;
     let items1;
     const obj = { sections: items1, ListHeaderComponent: TinyBroncoAgeGroupHeader };
-    const obj2 = { label: intl.string(_modDef3080["5Mi5TE"]), settings: items };
+    const obj2 = { label: intl.string(_modDef3090["5Mi5TE"]), settings: items };
     const createList = SettingBuilders.createList;
     SettingBuilders;
     intl = intl3.intl;

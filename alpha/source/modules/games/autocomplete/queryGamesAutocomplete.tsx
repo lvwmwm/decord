@@ -1,14 +1,14 @@
-// Module ID: 9005
-// Function ID: 9006
+// Module ID: 9032
+// Function ID: 9033
 // Name: queryGamesAutocomplete
-// Dependencies: [8528, 551, 9006, 9008, 8529, 2]
+// Dependencies: [8555, 551, 9033, 9035, 8556, 2]
 // Exports: queryGamesAutocomplete
 
-// Module 9005 (queryGamesAutocomplete)
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8529 */;
-import useGameAutocomplete2 from "useGameAutocomplete" /* 9006 */;
-import GameSearchSession from "GameSearchSession" /* 9008 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 8528 */;
+// Module 9032 (queryGamesAutocomplete)
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8556 */;
+import useGameAutocomplete2 from "useGameAutocomplete" /* 9033 */;
+import GameSearchSession from "GameSearchSession" /* 9035 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 8555 */;
 import debounce from "debounce" /* 551 */;
 import size from "module_2" /* 2 */;
 

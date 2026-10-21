@@ -1,15 +1,15 @@
-// Module ID: 13963
-// Function ID: 13964
+// Module ID: 14038
+// Function ID: 14039
 // Name: QuestRewardTile
-// Dependencies: [109, 19, 21, 558, 576, 9517, 9512, 13964, 2]
+// Dependencies: [109, 19, 21, 558, 576, 9547, 9542, 14039, 2]
 
-// Module 13963 (QuestRewardTile)
+// Module 14038 (QuestRewardTile)
 import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import react3 from "react" /* 576 */;
-import AssetUtils from "AssetUtils" /* 9512 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9517 */;
-import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 13964 */;
+import AssetUtils from "AssetUtils" /* 9542 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9547 */;
+import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 14039 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -67,7 +67,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestRewardT
   }
   if (cResult[8] !== tmp5) {
     const tmpResult2 = AssetUtils;
-    const questAsset = tmpResult2.getQuestAsset(tmp5, tmp(9512).QuestAssetType.REWARD, undefined, true);
+    const questAsset = tmpResult2.getQuestAsset(tmp5, tmp(9542).QuestAssetType.REWARD, undefined, true);
     cResult[8] = tmp5;
     cResult[9] = questAsset;
     tmp14 = questAsset;

@@ -1,10 +1,10 @@
-// Module ID: 4860
-// Function ID: 4861
+// Module ID: 4881
+// Function ID: 4882
 // Name: GuildMemberStore
-// Dependencies: [4861, 4853, 502, 4800, 4854, 4822, 4866, 3, 4867, 4858, 1405, 11, 1987, 1988, 1409, 4868, 1388, 1999, 12, 4869, 504, 584, 2]
+// Dependencies: [4882, 4874, 502, 4821, 4875, 4843, 4887, 3, 4888, 4879, 1405, 11, 1987, 1988, 1409, 4889, 1388, 1999, 12, 4890, 504, 584, 2]
 // Exports: getCommunicationDisabledUserKey, getGuildIdFromCommunicationDisabledUserKey, getUserCommunicationDisabledVersion, getUserIdFromCommunicationDisabledUserKey
 
-// Module 4860 (GuildMemberStore)
+// Module 4881 (GuildMemberStore)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
@@ -15,24 +15,24 @@ import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1409 */;
 import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1987 */;
 import mappers from "mappers" /* 1988 */;
 import isActivityParticipantValidGuildMemberDefault from "isActivityParticipantValidGuildMember" /* 1999 */;
-import GuildRoleUtils from "GuildRoleUtils" /* 4858 */;
-import useCommunicationDisabledNoticeStore from "useCommunicationDisabledNoticeStore" /* 4861 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4866 */;
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4867 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4868 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4869 */;
-import ImpersonateStore from "ImpersonateStore" /* 4853 */;
+import GuildRoleUtils from "GuildRoleUtils" /* 4879 */;
+import useCommunicationDisabledNoticeStore from "useCommunicationDisabledNoticeStore" /* 4882 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4887 */;
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4888 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4889 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4890 */;
+import ImpersonateStore from "ImpersonateStore" /* 4874 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import GuildRoleStore from "GuildRoleStore" /* 4854 */;
-import GuildStore from "GuildStore" /* 4822 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import GuildRoleStore from "GuildRoleStore" /* 4875 */;
+import GuildStore from "GuildStore" /* 4843 */;
 import size from "module_2" /* 2 */;
 
 let closure_12, closure_14, hasOwnProperty;
 
-const f92578 = (member) => member.member;
-const f92581 = (item) => null != item;
-const f92583 = (item) => {
+const f92859 = (member) => member.member;
+const f92862 = (item) => null != item;
+const f92864 = (item) => {
   mergeMessageResolvedMembers(item);
 };
 function trackCommunicationDisabled(guildId, tmp10Result) {
@@ -46,7 +46,7 @@ function trackCommunicationDisabled(guildId, tmp10Result) {
       const joined = items.join("-");
       let result = closure_15[joined] !== tmp10Result.communicationDisabledUntil;
       if (result) {
-        tmp10Result = tmp10(4867);
+        tmp10Result = tmp10(4888);
         result = tmp10Result.isMemberCommunicationDisabled(tmp10Result);
       }
       if (result) {
@@ -108,7 +108,7 @@ function computeDerivedMemberState(unsafeMutableRoles, roles) {
   let tmp3;
   let tmp4;
   if (0 === roles.length) {
-    return { colorString: null, colorStrings: null, colorRoleId: "applicationId", hoistRoleId: "default", iconRoleId: "max", highestRoleId: "r" };
+    return { colorString: null, colorStrings: null, colorRoleId: "unicodeVersion", hoistRoleId: "t", iconRoleId: "left", highestRoleId: "r" };
   } else {
     const iter = roles[Symbol.iterator]();
     while (iter !== undefined) {
@@ -566,7 +566,7 @@ function handleIncomingMessage(arg0) {
       }
       let tmp4 = null != members && null != guild_id;
       if (tmp4) {
-        obj = { id: guild_id, members: mapped.filter(f92581) };
+        obj = { id: guild_id, members: mapped.filter(f92862) };
         const _Object = Object;
         const entries = Object.entries(resolved.members);
         mapped = entries.map((item) => {
@@ -601,7 +601,7 @@ function handleIncomingMessage(arg0) {
   let tmp3 = null != members && null != guildId;
   if (tmp3) {
     const _Object = Object;
-    obj = { id: guildId, members: mapped.filter(f92581) };
+    obj = { id: guildId, members: mapped.filter(f92862) };
     const entries = Object.entries(resolved.members);
     mapped = entries.map((item) => {
       let tmp;
@@ -655,7 +655,7 @@ function mergeMessageResolvedMembers(channel_id) {
       }
       let tmp4 = null != members && null != guild_id;
       if (tmp4) {
-        obj = { id: guild_id, members: mapped.filter(f92581) };
+        obj = { id: guild_id, members: mapped.filter(f92862) };
         const _Object = Object;
         const entries = Object.entries(resolved.members);
         mapped = entries.map((item) => {
@@ -689,7 +689,7 @@ function mergeMessageResolvedMembers(channel_id) {
   }
   const tmp5 = null != members && null != guild_id;
   if (tmp5) {
-    obj = { id: guild_id, members: mapped.filter(f92581) };
+    obj = { id: guild_id, members: mapped.filter(f92862) };
     let _Object = Object;
     let entries = Object.entries(resolved.members);
     mapped = entries.map((item) => {
@@ -714,7 +714,7 @@ function mergeMessageResolvedMembers(channel_id) {
 }
 function handleLoadMessages(messages) {
   messages = messages.messages;
-  const item = messages.forEach(f92583);
+  const item = messages.forEach(f92864);
 }
 function handleLoadSearchResults(data) {
   data = data.data;
@@ -727,7 +727,7 @@ function handleLoadSearchResults(data) {
       });
     });
   });
-  const item1 = items.forEach(f92583);
+  const item1 = items.forEach(f92864);
 }
 let closure_3 = useCommunicationDisabledNoticeStore.clearCommunicationDisabledNotice;
 const GuildMemberFlags = GuildMemberConstants.GuildMemberFlags;
@@ -997,7 +997,7 @@ obj = {
         const item = activity_instances.forEach((participants) => {
           let found;
           participants = participants.participants;
-          obj = { id, members: found.map(f92578) };
+          obj = { id, members: found.map(f92859) };
           found = participants.filter(isActivityParticipantValidGuildMemberDefault);
           buildMembers(obj);
         });
@@ -1829,7 +1829,7 @@ obj = {
     let tmp3 = null != embeddedActivityLocationGuildId;
     if (tmp3) {
       const participants = instance.participants;
-      const obj2 = { id: embeddedActivityLocationGuildId, members: found.map(f92578) };
+      const obj2 = { id: embeddedActivityLocationGuildId, members: found.map(f92859) };
       found = participants.filter(isActivityParticipantValidGuildMemberDefault);
       tmp3 = buildMembers(obj2);
     }
@@ -1850,7 +1850,7 @@ obj = {
     let tmp4 = null != members && null != guild_id;
     if (tmp4) {
       const _Object = Object;
-      obj = { id: guild_id, members: mapped.filter(f92581) };
+      obj = { id: guild_id, members: mapped.filter(f92862) };
       const entries = Object.entries(resolved.members);
       mapped = entries.map((item) => {
         let tmp;

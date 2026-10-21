@@ -1,24 +1,24 @@
-// Module ID: 8331
-// Function ID: 8332
+// Module ID: 8359
+// Function ID: 8360
 // Name: AutoModerationActionSystemMessage
-// Dependencies: [17, 4800, 4860, 4880, 4890, 1392, 1087, 12, 4952, 587, 8084, 7566, 6323, 1128, 8296, 2050, 8332, 8333, 1417, 8336, 6965, 1420, 8337, 8338, 8270, 5565, 4867, 4773, 8339, 8340, 2]
+// Dependencies: [17, 4821, 4881, 4901, 4911, 1392, 1087, 12, 4973, 587, 8112, 7594, 6345, 1128, 8324, 2049, 8360, 8361, 1417, 8364, 6993, 1420, 8365, 8366, 8298, 5586, 4888, 4794, 8367, 8368, 2]
 // Exports: createAutoModerationActionSystemMessage
 
-// Module 8331 (AutoModerationActionSystemMessage)
+// Module 8359 (AutoModerationActionSystemMessage)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import _modDef2050 from "module_2050" /* 2050 */;
-import shared from "shared" /* 4952 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6965 */;
-import AutomodMessageUtils from "AutomodMessageUtils" /* 7566 */;
-import react_native from "react-native" /* 8084 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8270 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8337 */;
+import _modDef2049 from "module_2049" /* 2049 */;
+import shared from "shared" /* 4973 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6993 */;
+import AutomodMessageUtils from "AutomodMessageUtils" /* 7594 */;
+import react_native from "react-native" /* 8112 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8298 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8365 */;
 import react_native2 from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import GuildMemberStore from "GuildMemberStore" /* 4860 */;
-import PermissionStore from "PermissionStore" /* 4880 */;
-import RelationshipStore from "RelationshipStore" /* 4890 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import GuildMemberStore from "GuildMemberStore" /* 4881 */;
+import PermissionStore from "PermissionStore" /* 4901 */;
+import RelationshipStore from "RelationshipStore" /* 4911 */;
 import UserStore from "UserStore" /* 1392 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
@@ -29,14 +29,14 @@ let tmp;
 const intl19 = tmp(1128);
 const AvatarUtils = tmp(1417);
 const utils_AvatarUtils = tmp(1420);
-const DateUtils = tmp(4773);
-const CommunicationDisabledUtils = tmp(4867);
-const useChannelName = tmp(5565);
-const useMessageAuthor = tmp(6323);
-const AutomodNotificationEmbedTypeKeys = tmp(8296);
-const AutomodRaidAlertTypes = tmp(8332);
-const GuildAntiRaidUtils = tmp(8333);
-const getRoleIcon = tmp(8338);
+const DateUtils = tmp(4794);
+const CommunicationDisabledUtils = tmp(4888);
+const useChannelName = tmp(5586);
+const useMessageAuthor = tmp(6345);
+const AutomodNotificationEmbedTypeKeys = tmp(8324);
+const AutomodRaidAlertTypes = tmp(8360);
+const GuildAntiRaidUtils = tmp(8361);
+const getRoleIcon = tmp(8366);
 ({ processColor: c3, Image: closure_4 } = react_native2);
 const Permissions = Constants.Permissions;
 let closure_11 = module_12.memoize((arg0) => {
@@ -164,7 +164,7 @@ export const createAutoModerationActionSystemMessage = function createAutoModera
           if (AutomodNotificationEmbedTypeKeys.AutomodNotificationEmbedTypeKeys.MENTION_RAID === notificationType) {
             let fromNowResult;
             if (null != result2.raidDatetime) {
-              const obj13 = _modDef2050(result2.raidDatetime);
+              const obj13 = _modDef2049(result2.raidDatetime);
               fromNowResult = obj13.fromNow();
             }
             const obj2 = { subtitleLeft: fromNowResult, header: intl5.string(intl19.t.C2uIXE), headerColor: processColorOrThrow3(internal3.resolveSemanticColor(theme, nativeDefault.colors.TEXT_FEEDBACK_CRITICAL)), headerIconURL: resolveAssetSource2(tmpResult37.makeSource(AssetRegistryDefault)).uri, headerIconColor: processColorOrThrow4(internal4.resolveSemanticColor(theme, nativeDefault.colors.TEXT_FEEDBACK_CRITICAL)), body: intl6.string(intl19.t.SWIWEV), shouldShowActions: false };
@@ -233,7 +233,7 @@ export const createAutoModerationActionSystemMessage = function createAutoModera
               react_native;
               internal2 = nativeDefault.internal;
               intl3 = intl19.intl;
-              obj12 = _modDef2050(message.timestamp);
+              obj12 = _modDef2049(message.timestamp);
               intl4 = intl19.intl;
               let colorString1;
               if (member != null) {
@@ -268,7 +268,7 @@ export const createAutoModerationActionSystemMessage = function createAutoModera
       }
       let fromNowResult1;
       if (null != result2.raidDatetime) {
-        const obj16 = _modDef2050(result2.raidDatetime);
+        const obj16 = _modDef2049(result2.raidDatetime);
         fromNowResult1 = obj16.fromNow();
       }
       const raidType = result2.raidType;
@@ -292,7 +292,7 @@ export const createAutoModerationActionSystemMessage = function createAutoModera
         const obj7 = { joinCount: result2.joinAttempts };
         formatToPlainStringResult = formatToPlainString(t["4ylIiu"], obj7);
       }
-      const obj8 = { subtitleLeft: formatToPlainStringResult, severity: formatToPlainStringResult, subtitleRight: fromNowResult1, startTime: fromNowResult1, header: stringResult1, headerColor: processColorOrThrow5(internal5.resolveSemanticColor(theme, nativeDefault.colors.TEXT_FEEDBACK_CRITICAL)), headerIconURL: resolveAssetSource3(tmpResult49.makeSource(importDefault(raidType === DM_RAID ? 8336 : 6965))).uri, headerIconColor: processColorOrThrow6(internal6.resolveSemanticColor(theme, nativeDefault.colors.TEXT_FEEDBACK_CRITICAL)), body: intl9.formatToPlainString(intl19.t["4QIIZl"], obj9), shouldShowActions: true };
+      const obj8 = { subtitleLeft: formatToPlainStringResult, severity: formatToPlainStringResult, subtitleRight: fromNowResult1, startTime: fromNowResult1, header: stringResult1, headerColor: processColorOrThrow5(internal5.resolveSemanticColor(theme, nativeDefault.colors.TEXT_FEEDBACK_CRITICAL)), headerIconURL: resolveAssetSource3(tmpResult49.makeSource(importDefault(raidType === DM_RAID ? 8364 : 6993))).uri, headerIconColor: processColorOrThrow6(internal6.resolveSemanticColor(theme, nativeDefault.colors.TEXT_FEEDBACK_CRITICAL)), body: intl9.formatToPlainString(intl19.t["4QIIZl"], obj9), shouldShowActions: true };
       const intl8 = intl19.intl;
       const string = intl8.string;
       const t2 = intl19.t;
@@ -351,7 +351,7 @@ export const createAutoModerationActionSystemMessage = function createAutoModera
     makeSource = AvatarUtils.makeSource;
     AvatarUtils;
     tmpResult57 = utils_AvatarUtils;
-    obj15 = { headerText: str, headerBadgeText: intl12.string(intl19.t["70CJbT"]), keywordDisplayText: str3, message: obj18, notification: tmp14, ruleDisplayText: intl14.formatToPlainString(intl19.t.ZoOyKB, obj19), reasonDisplayText: formatToPlainString2Result, actionsIconURL: resolveAssetSource4(tmpResult62.makeSource(importDefault(result1 ? 8339 : 8340))).uri, actionsText: string2Result, feedbackText: raidAlertResolveCTAText };
+    obj15 = { headerText: str, headerBadgeText: intl12.string(intl19.t["70CJbT"]), keywordDisplayText: str3, message: obj18, notification: tmp14, ruleDisplayText: intl14.formatToPlainString(intl19.t.ZoOyKB, obj19), reasonDisplayText: formatToPlainString2Result, actionsIconURL: resolveAssetSource4(tmpResult62.makeSource(importDefault(result1 ? 8367 : 8368))).uri, actionsText: string2Result, feedbackText: raidAlertResolveCTAText };
     intl12 = intl19.intl;
     str3 = "";
     tmp68 = colorString;

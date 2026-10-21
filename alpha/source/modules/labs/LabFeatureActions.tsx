@@ -1,12 +1,12 @@
-// Module ID: 16646
-// Function ID: 16647
+// Module ID: 16722
+// Function ID: 16723
 // Name: LabFeatureActions
-// Dependencies: [8775, 584, 2]
+// Dependencies: [8802, 584, 2]
 // Exports: toggleLabFeature
 
-// Module 16646 (LabFeatureActions)
+// Module 16722 (LabFeatureActions)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import LabFeatureStore from "LabFeatureStore" /* 8775 */;
+import LabFeatureStore from "LabFeatureStore" /* 8802 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = {};

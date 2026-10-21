@@ -1,38 +1,38 @@
-// Module ID: 12851
-// Function ID: 12852
+// Module ID: 12919
+// Function ID: 12920
 // Name: createAppMessageEmbed
-// Dependencies: [32, 1392, 8570, 2046, 1504, 9932, 6760, 12852, 8223, 1128, 12853, 9576, 8569, 11246, 12854, 12855, 1417, 1386, 12856, 7227, 12857, 5595, 12858, 5120, 1631, 11047, 7234, 5624, 1388, 2]
+// Dependencies: [32, 1392, 8597, 2045, 1504, 9962, 6788, 12920, 8251, 1128, 12921, 9606, 8596, 11290, 12922, 12923, 1417, 1386, 12924, 7255, 12925, 5616, 12926, 5141, 1631, 10702, 7262, 5644, 1388, 2]
 // Exports: createAppMessageEmbed, getAppLinkGateResult, handleTapAppMessageEmbed
 
-// Module 12851 (createAppMessageEmbed)
+// Module 12919 (createAppMessageEmbed)
 import intl7 from "intl" /* 1128 */;
 import URLUtilsDefault from "URLUtils" /* 1386 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import AvatarUtils from "AvatarUtils" /* 1417 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
-import ChatInputUtils from "ChatInputUtils" /* 5120 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5595 */;
-import ToastUtils from "ToastUtils" /* 5624 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6760 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7227 */;
-import ClipboardUtils from "ClipboardUtils" /* 7234 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8223 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8569 */;
-import ApplicationAssetsStore2 from "ApplicationAssetsStore" /* 8570 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9576 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 9932 */;
-import ApplicationUtils from "ApplicationUtils" /* 11047 */;
-import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 11246 */;
-import ContentClassificationVisibility from "ContentClassificationVisibility" /* 12852 */;
-import CodedLinksTypes from "CodedLinksTypes" /* 12853 */;
-import getPlayInContext from "getPlayInContext" /* 12854 */;
-import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 12855 */;
-import joinOrStartActivityInChannel2 from "joinOrStartActivityInChannel" /* 12856 */;
-import AppLauncherPlayUtils from "AppLauncherPlayUtils" /* 12857 */;
-import playFrameFromEmbedDefault from "playFrameFromEmbed" /* 12858 */;
+import ChatInputUtils from "ChatInputUtils" /* 5141 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5616 */;
+import ToastUtils from "ToastUtils" /* 5644 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6788 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7255 */;
+import ClipboardUtils from "ClipboardUtils" /* 7262 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8251 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8596 */;
+import ApplicationAssetsStore2 from "ApplicationAssetsStore" /* 8597 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9606 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 9962 */;
+import ApplicationUtils from "ApplicationUtils" /* 10702 */;
+import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 11290 */;
+import ContentClassificationVisibility from "ContentClassificationVisibility" /* 12920 */;
+import CodedLinksTypes from "CodedLinksTypes" /* 12921 */;
+import getPlayInContext from "getPlayInContext" /* 12922 */;
+import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 12923 */;
+import joinOrStartActivityInChannel2 from "joinOrStartActivityInChannel" /* 12924 */;
+import AppLauncherPlayUtils from "AppLauncherPlayUtils" /* 12925 */;
+import playFrameFromEmbedDefault from "playFrameFromEmbed" /* 12926 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1392 */;
-import ApplicationStore from "ApplicationStore" /* 2046 */;
+import ApplicationStore from "ApplicationStore" /* 2045 */;
 import size from "module_2" /* 2 */;
 
 const ApplicationAssetsStore = ApplicationAssetsStore2;

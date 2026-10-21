@@ -1,10 +1,10 @@
-// Module ID: 5786
-// Function ID: 5787
+// Module ID: 5806
+// Function ID: 5807
 // Name: getExternalPipTileNativeId
 // Dependencies: [2]
 // Exports: getExternalPipTileNativeId
 
-// Module 5786 (getExternalPipTileNativeId)
+// Module 5806 (getExternalPipTileNativeId)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/external_pip/getExternalPipTileNativeId.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 12163
-// Function ID: 12164
+// Module ID: 12225
+// Function ID: 12226
 // Name: conjurePublishCard
-// Dependencies: [3820, 2]
+// Dependencies: [3830, 2]
 // Exports: isConjurePublishCtaVisible, isPublishCardLive, livePublishCardMessageId, publishCardServerName, publishNoticeMessage, withLivePublishCard
 
-// Module 12163 (conjurePublishCard)
-import _modDef3820 from "module_3820" /* 3820 */;
+// Module 12225 (conjurePublishCard)
+import _modDef3830 from "module_3830" /* 3830 */;
 import size from "module_2" /* 2 */;
 
 const weakMap = new WeakMap();
@@ -81,13 +81,13 @@ export const livePublishCardMessageId = function livePublishCardMessageId(arg0, 
 export const publishNoticeMessage = function publishNoticeMessage(notice, arg1) {
   let ev23Cw;
   if (true === notice.channel_skipped) {
-    ev23Cw = _modDef3820.ev23Cw;
+    ev23Cw = _modDef3830.ev23Cw;
   } else if (notice.update) {
-    ev23Cw = _modDef3820.gQzuLC;
+    ev23Cw = _modDef3830.gQzuLC;
   } else if (null == arg1) {
-    ev23Cw = _modDef3820.MOrR29;
+    ev23Cw = _modDef3830.MOrR29;
   } else {
-    ev23Cw = _modDef3820["/npn7F"];
+    ev23Cw = _modDef3830["/npn7F"];
   }
   return ev23Cw;
 };

@@ -1,19 +1,19 @@
-// Module ID: 12683
-// Function ID: 12684
+// Module ID: 12747
+// Function ID: 12748
 // Name: AppealIngestionPolicySummary
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 7845, 4942, 1128, 5195, 2]
+// Dependencies: [19, 17, 21, 4966, 587, 558, 576, 7873, 4963, 1128, 5216, 2]
 
-// Module 12683 (AppealIngestionPolicySummary)
+// Module 12747 (AppealIngestionPolicySummary)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import ColorUtils from "ColorUtils" /* 4942 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7845 */;
+import ColorUtils from "ColorUtils" /* 4963 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7873 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -157,7 +157,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealInge
   const tmp2Result = ColorUtils;
   const obj2 = { style: tmp.sectionTitle, variant: "text-sm/bold", children: intl.string(intl2.t.xsdcxh) };
   const hexWithOpacityResult = tmp2Result.hexWithOpacity(tmp.borderColor.color, 0.08);
-  const Text = tmp2(5195).Text;
+  const Text = tmp2(5216).Text;
   intl = tmp2(1128).intl;
   items = [_false(Text, obj2), ];
   const obj3 = { style: items1, children: _false(Text_Text.Text, { variant: "text-md/semibold", children: capitalizeTextResult }) };

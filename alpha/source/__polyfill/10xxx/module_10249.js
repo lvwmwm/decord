@@ -1,14 +1,12 @@
 // Module ID: 10249
 // Function ID: 10250
-// Dependencies: [41, 42, 93, 95, 98, 10238, 10147, 10151]
+// Dependencies: [41, 42, 93, 95, 98, 10194]
 
 // Module 10249
-import ReferenceWithTimezone from "ReferenceWithTimezone" /* 10147 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10151 */;
-import _mod10238 from "module_10238" /* 10238 */;
+import _mod10194 from "module_10194" /* 10194 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
+import map from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -27,44 +25,47 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(" + _mod10238.TIME_UNITS_PATTERN + ")(later|na|vanaf nu|voortaan|vooruit|uit)(?=(?:\\W|$))", "i");
-const regExp1 = new RegExp("(" + _mod10238.TIME_UNITS_PATTERN + ")(later|vanaf nu)(?=(?:\\W|$))", "i");
-class NLTimeUnitLaterFormatParser {
-  constructor(strictMode) {
+let fn = this;
+if (this) {
+  fn = this.__importDefault;
+}
+if (!fn) {
+  fn = (__esModule) => {
+    let tmp2;
+    const tmp = __esModule;
+    if (!tmp) {
+      tmp2 = { default: __esModule };
+      const obj = { default: __esModule };
+    } else {
+      tmp2 = __esModule;
+    }
+    return tmp2;
+  };
+}
+class JPMergeDateTimeRefiner {
+  constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, NLTimeUnitLaterFormatParser);
-    const obj = _getPrototypeOf(NLTimeUnitLaterFormatParser);
+    _classCallCheck(this, JPMergeDateTimeRefiner);
+    const obj = _getPrototypeOf(JPMergeDateTimeRefiner);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
+    const tmp3 = map;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, undefined);
+      constructResult = obj(...arguments);
     }
-    const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.strictMode = strictMode;
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-_inherits(NLTimeUnitLaterFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(JPMergeDateTimeRefiner, fn(_mod10194).default);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return this.strictMode ? regExp1 : regExp;
+  key: "patternBetween",
+  value: function patternBetween() {
+    return /^\s*(の)?\s*$/i;
   }
 };
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const parseDurationResult = _mod10238.parseDuration(arg1[1]);
-      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
-    }
-  }
-];
+const items = [entry];
 
-export default _createClass(NLTimeUnitLaterFormatParser, items);
+export default _createClass(JPMergeDateTimeRefiner, items);

@@ -1,20 +1,20 @@
-// Module ID: 9169
-// Function ID: 9170
+// Module ID: 9196
+// Function ID: 9197
 // Name: GuildBadgeV2
-// Dependencies: [109, 19, 21, 4945, 558, 576, 1202, 4952, 9170, 9167, 9168, 2]
+// Dependencies: [109, 19, 21, 4966, 558, 576, 1202, 4973, 9197, 9194, 9195, 2]
 // Exports: hasGuildBadge
 
-// Module 9169 (GuildBadgeV2)
+// Module 9196 (GuildBadgeV2)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import native from "native" /* 1202 */;
-import shared from "shared" /* 4952 */;
-import GuildTraits from "GuildTraits" /* 9167 */;
-import BadgeCategory from "BadgeCategory" /* 9168 */;
-import GuildBadgeImageSource from "GuildBadgeImageSource" /* 9170 */;
+import shared from "shared" /* 4973 */;
+import GuildTraits from "GuildTraits" /* 9194 */;
+import BadgeCategory from "BadgeCategory" /* 9195 */;
+import GuildBadgeImageSource from "GuildBadgeImageSource" /* 9197 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

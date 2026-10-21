@@ -1,17 +1,17 @@
-// Module ID: 13148
-// Function ID: 13149
+// Module ID: 13216
+// Function ID: 13217
 // Name: Badge/Badge
-// Dependencies: [17, 21, 1128, 587, 4945, 558, 576, 13149, 5000, 5195, 2]
+// Dependencies: [17, 21, 1128, 587, 4966, 558, 576, 13217, 5021, 5216, 2]
 
-// Module 13148 (Badge/Badge)
+// Module 13216 (Badge/Badge)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useBadgeTextVariant from "useBadgeTextVariant" /* 5000 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import BadgeShared from "BadgeShared" /* 13149 */;
+import useBadgeTextVariant from "useBadgeTextVariant" /* 5021 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import BadgeShared from "BadgeShared" /* 13217 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -107,7 +107,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Badge(arg0) 
   const cResult = obj.c(13);
   ({ type, variant, icon } = arg0);
   if (undefined === variant) {
-    variant = tmp(13149).DEFAULT_BADGE_VARIANT;
+    variant = tmp(13217).DEFAULT_BADGE_VARIANT;
   }
   const tmp4 = closure_7(variant);
   const tmpResult = useBadgeTextVariant;

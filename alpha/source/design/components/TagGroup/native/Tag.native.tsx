@@ -1,18 +1,18 @@
-// Module ID: 12143
-// Function ID: 12144
+// Module ID: 12191
+// Function ID: 12192
 // Name: Tag
-// Dependencies: [19, 17, 21, 4945, 12141, 587, 558, 576, 12144, 5195, 2]
+// Dependencies: [19, 17, 21, 4966, 12189, 587, 558, 576, 12192, 5216, 2]
 
-// Module 12143 (Tag)
+// Module 12191 (Tag)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import TagGroupTypes from "TagGroupTypes" /* 12141 */;
-import TagGraphic from "TagGraphic" /* 12144 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import TagGroupTypes from "TagGroupTypes" /* 12189 */;
+import TagGraphic from "TagGraphic" /* 12192 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -104,7 +104,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tag(variant)
     let tmp7 = null;
     if (null != item.icon) {
       const obj4 = { graphic: item.icon, size };
-      tmp7 = React3(tmp(12144).TagGraphic, obj4);
+      tmp7 = React3(tmp(12192).TagGraphic, obj4);
     }
     cResult[3] = item.icon;
     cResult[4] = size;

@@ -1,20 +1,20 @@
-// Module ID: 12094
-// Function ID: 12095
+// Module ID: 12142
+// Function ID: 12143
 // Name: useCreatePollFormData
-// Dependencies: [5, 32, 19, 8258, 558, 576, 8232, 12095, 12096, 12109, 12110, 12111, 1128, 12102, 2]
+// Dependencies: [5, 32, 19, 8286, 558, 576, 8260, 12143, 12144, 12157, 12158, 12159, 1128, 12150, 2]
 
-// Module 12094 (useCreatePollFormData)
+// Module 12142 (useCreatePollFormData)
 import intl3 from "intl" /* 1128 */;
-import PollsUtils from "PollsUtils" /* 8232 */;
-import useRequestDefault from "useRequest" /* 12095 */;
-import PollsActionCreatorsDefault from "PollsActionCreators" /* 12096 */;
-import PollUploadAttachmentActionCreatorsAll from "PollUploadAttachmentActionCreators" /* 12109 */;
-import PollAttachmentUtils from "PollAttachmentUtils" /* 12110 */;
-import PollTypes from "PollTypes" /* 12111 */;
+import PollsUtils from "PollsUtils" /* 8260 */;
+import useRequestDefault from "useRequest" /* 12143 */;
+import PollsActionCreatorsDefault from "PollsActionCreators" /* 12144 */;
+import PollUploadAttachmentActionCreatorsAll from "PollUploadAttachmentActionCreators" /* 12157 */;
+import PollAttachmentUtils from "PollAttachmentUtils" /* 12158 */;
+import PollTypes from "PollTypes" /* 12159 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import PollsConstants from "PollsConstants" /* 8258 */;
+import PollsConstants from "PollsConstants" /* 8286 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 function createPollCreationImageForMedia(mediaURL, status) {
-  const obj = { mediaAttachmentState: obj2, emoji: "r", stickerId: "toCharArray$esjava$1" };
+  const obj = { mediaAttachmentState: obj2, emoji: "Array", stickerId: "toCharArray$esjava$1" };
   return obj;
 }
 let react = react_mod;
@@ -478,12 +478,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreatePol
             const localCreationAnswerId = first1[arg1].localCreationAnswerId;
             const objectURL = URL.createObjectURL(arg2);
             tmp35(arg0, arg1);
-            const obj = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.PREPARING, mediaURL: objectURL }, emoji: "r", stickerId: "toCharArray$esjava$1" };
+            const obj = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.PREPARING, mediaURL: objectURL }, emoji: "Array", stickerId: "toCharArray$esjava$1" };
             ({ status: PollTypes.PollMediaUploadAttachmentStatus.PREPARING, mediaURL: objectURL });
             Ae(obj, arg1);
             const obj3 = PollUploadAttachmentActionCreatorsAll;
             const result = obj3.handlePollMediaAttachmentAdd(arg0, localCreationAnswerId, arg2);
-            const obj4 = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.READY_TO_UPLOAD, mediaURL: objectURL }, emoji: "r", stickerId: "toCharArray$esjava$1" };
+            const obj4 = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.READY_TO_UPLOAD, mediaURL: objectURL }, emoji: "Array", stickerId: "toCharArray$esjava$1" };
             ({ status: PollTypes.PollMediaUploadAttachmentStatus.READY_TO_UPLOAD, mediaURL: objectURL });
             Ae(obj4, arg1);
           }
@@ -506,12 +506,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreatePol
               const localCreationAnswerId = first1[arg1].localCreationAnswerId;
               const objectURL = URL.createObjectURL(arg2);
               tmp35(arg0, arg1);
-              const obj = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.PREPARING, mediaURL: objectURL }, emoji: "r", stickerId: "toCharArray$esjava$1" };
+              const obj = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.PREPARING, mediaURL: objectURL }, emoji: "Array", stickerId: "toCharArray$esjava$1" };
               ({ status: PollTypes.PollMediaUploadAttachmentStatus.PREPARING, mediaURL: objectURL });
               Ae(obj, arg1);
               const obj3 = PollUploadAttachmentActionCreatorsAll;
               const result = obj3.handlePollMediaAttachmentAdd(arg0, localCreationAnswerId, arg2);
-              const obj4 = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.READY_TO_UPLOAD, mediaURL: objectURL }, emoji: "r", stickerId: "toCharArray$esjava$1" };
+              const obj4 = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.READY_TO_UPLOAD, mediaURL: objectURL }, emoji: "Array", stickerId: "toCharArray$esjava$1" };
               ({ status: PollTypes.PollMediaUploadAttachmentStatus.READY_TO_UPLOAD, mediaURL: objectURL });
               Ae(obj4, arg1);
             }
@@ -549,12 +549,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreatePol
               const localCreationAnswerId = first1[arg1].localCreationAnswerId;
               const objectURL = URL.createObjectURL(arg2);
               tmp35(arg0, arg1);
-              const obj = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.PREPARING, mediaURL: objectURL }, emoji: "r", stickerId: "toCharArray$esjava$1" };
+              const obj = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.PREPARING, mediaURL: objectURL }, emoji: "Array", stickerId: "toCharArray$esjava$1" };
               ({ status: PollTypes.PollMediaUploadAttachmentStatus.PREPARING, mediaURL: objectURL });
               Ae(obj, arg1);
               const obj3 = PollUploadAttachmentActionCreatorsAll;
               const result = obj3.handlePollMediaAttachmentAdd(arg0, localCreationAnswerId, arg2);
-              const obj4 = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.READY_TO_UPLOAD, mediaURL: objectURL }, emoji: "r", stickerId: "toCharArray$esjava$1" };
+              const obj4 = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.READY_TO_UPLOAD, mediaURL: objectURL }, emoji: "Array", stickerId: "toCharArray$esjava$1" };
               ({ status: PollTypes.PollMediaUploadAttachmentStatus.READY_TO_UPLOAD, mediaURL: objectURL });
               Ae(obj4, arg1);
             }
@@ -619,12 +619,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreatePol
           const localCreationAnswerId = first1[arg1].localCreationAnswerId;
           const objectURL = URL.createObjectURL(arg2);
           tmp35(arg0, arg1);
-          const obj = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.PREPARING, mediaURL: objectURL }, emoji: "r", stickerId: "toCharArray$esjava$1" };
+          const obj = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.PREPARING, mediaURL: objectURL }, emoji: "Array", stickerId: "toCharArray$esjava$1" };
           ({ status: PollTypes.PollMediaUploadAttachmentStatus.PREPARING, mediaURL: objectURL });
           Ae(obj, arg1);
           const obj3 = PollUploadAttachmentActionCreatorsAll;
           const result = obj3.handlePollMediaAttachmentAdd(arg0, localCreationAnswerId, arg2);
-          const obj4 = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.READY_TO_UPLOAD, mediaURL: objectURL }, emoji: "r", stickerId: "toCharArray$esjava$1" };
+          const obj4 = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.READY_TO_UPLOAD, mediaURL: objectURL }, emoji: "Array", stickerId: "toCharArray$esjava$1" };
           ({ status: PollTypes.PollMediaUploadAttachmentStatus.READY_TO_UPLOAD, mediaURL: objectURL });
           Ae(obj4, arg1);
         }
@@ -638,12 +638,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreatePol
         const localCreationAnswerId = first1[arg1].localCreationAnswerId;
         const objectURL = URL.createObjectURL(arg2);
         tmp35(arg0, arg1);
-        const obj = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.PREPARING, mediaURL: objectURL }, emoji: "r", stickerId: "toCharArray$esjava$1" };
+        const obj = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.PREPARING, mediaURL: objectURL }, emoji: "Array", stickerId: "toCharArray$esjava$1" };
         ({ status: PollTypes.PollMediaUploadAttachmentStatus.PREPARING, mediaURL: objectURL });
         Ae(obj, arg1);
         const obj3 = PollUploadAttachmentActionCreatorsAll;
         const result = obj3.handlePollMediaAttachmentAdd(arg0, localCreationAnswerId, arg2);
-        const obj4 = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.READY_TO_UPLOAD, mediaURL: objectURL }, emoji: "r", stickerId: "toCharArray$esjava$1" };
+        const obj4 = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.READY_TO_UPLOAD, mediaURL: objectURL }, emoji: "Array", stickerId: "toCharArray$esjava$1" };
         ({ status: PollTypes.PollMediaUploadAttachmentStatus.READY_TO_UPLOAD, mediaURL: objectURL });
         Ae(obj4, arg1);
       }
@@ -945,18 +945,18 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreatePol
     const localCreationAnswerId = first[arg1].localCreationAnswerId;
     const objectURL = URL.createObjectURL(arg2);
     callback3(arg0, arg1);
-    const obj = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.PREPARING, mediaURL: objectURL }, emoji: "r", stickerId: "toCharArray$esjava$1" };
+    const obj = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.PREPARING, mediaURL: objectURL }, emoji: "Array", stickerId: "toCharArray$esjava$1" };
     ({ status: PollTypes.PollMediaUploadAttachmentStatus.PREPARING, mediaURL: objectURL });
     callback2(obj, arg1);
     const obj3 = PollUploadAttachmentActionCreatorsAll;
     const result = obj3.handlePollMediaAttachmentAdd(arg0, localCreationAnswerId, arg2);
-    const obj4 = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.READY_TO_UPLOAD, mediaURL: objectURL }, emoji: "r", stickerId: "toCharArray$esjava$1" };
+    const obj4 = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.READY_TO_UPLOAD, mediaURL: objectURL }, emoji: "Array", stickerId: "toCharArray$esjava$1" };
     ({ status: PollTypes.PollMediaUploadAttachmentStatus.READY_TO_UPLOAD, mediaURL: objectURL });
     callback2(obj4, arg1);
   }, items2);
   const callback6 = obj.useCallback((emoji, arg1) => {
     callback3(id, arg1);
-    const obj = { emoji, stickerId: "r", mediaAttachmentState: "toCharArray$esjava$1" };
+    const obj = { emoji, stickerId: "Array", mediaAttachmentState: "toCharArray$esjava$1" };
     callback2(obj, arg1);
   }, items3);
   const items4 = [tmp27];

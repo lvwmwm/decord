@@ -1,24 +1,24 @@
-// Module ID: 19101
-// Function ID: 19102
+// Module ID: 19176
+// Function ID: 19177
 // Name: NativeExperimentBridgeManager
-// Dependencies: [17, 2069, 502, 1384, 19102, 6451, 7695, 19103, 1267, 19104, 1297, 7165, 2]
+// Dependencies: [17, 2068, 502, 1384, 19177, 6473, 7723, 19178, 1267, 19179, 1297, 7193, 2]
 
-// Module 19101 (NativeExperimentBridgeManager)
+// Module 19176 (NativeExperimentBridgeManager)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 6451 */;
-import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 7695 */;
-import VideoStutterMitigationExperimentDefault from "VideoStutterMitigationExperiment" /* 19103 */;
-import NotificationLoadMessagesExperimentDefault from "NotificationLoadMessagesExperiment" /* 19104 */;
-import LocaleStore from "LocaleStore" /* 2069 */;
+import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 6473 */;
+import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 7723 */;
+import VideoStutterMitigationExperimentDefault from "VideoStutterMitigationExperiment" /* 19178 */;
+import NotificationLoadMessagesExperimentDefault from "NotificationLoadMessagesExperiment" /* 19179 */;
+import LocaleStore from "LocaleStore" /* 2068 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7165 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7193 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const YYTextReplacementExperiment = tmp(19102);
+const YYTextReplacementExperiment = tmp(19177);
 function syncYYTextReplacementExperiment() {
   const obj = PlatformUtils;
   if (obj.isIOS()) {

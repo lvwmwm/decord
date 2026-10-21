@@ -1,25 +1,25 @@
-// Module ID: 14663
-// Function ID: 14664
+// Module ID: 14737
+// Function ID: 14738
 // Name: PremiumSubscriptionPricingUpsell
-// Dependencies: [32, 19, 17, 2069, 1392, 2058, 2059, 7473, 1087, 1394, 21, 4945, 558, 576, 504, 2054, 14527, 7480, 7468, 5195, 1384, 7289, 7288, 1128, 1903, 2]
+// Dependencies: [32, 19, 17, 2068, 1392, 2057, 2058, 7501, 1087, 1394, 21, 4966, 558, 576, 504, 2053, 14601, 7508, 7496, 5216, 1384, 7317, 7316, 1128, 1903, 2]
 
-// Module 14663 (PremiumSubscriptionPricingUpsell)
+// Module 14737 (PremiumSubscriptionPricingUpsell)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl6 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 14527 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 14601 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2069 */;
+import LocaleStore from "LocaleStore" /* 2068 */;
 import UserStore from "UserStore" /* 1392 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2058 */;
-import SubscriptionStore from "SubscriptionStore" /* 2059 */;
-import IAPStore from "IAPStore" /* 7473 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2057 */;
+import SubscriptionStore from "SubscriptionStore" /* 2058 */;
+import IAPStore from "IAPStore" /* 7501 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -83,7 +83,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pricin
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   if (cResult[2] !== stateFromStores) {
-    const obj3 = stateFromStores2(2054);
+    const obj3 = stateFromStores2(2053);
     const hasBoostDiscountResult = obj3.hasBoostDiscount(stateFromStores);
     class T {
       constructor() {
@@ -110,7 +110,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pricin
   }
   const tmpResult6 = tmp(504);
   const stateFromStores1 = tmpResult6.useStateFromStores(tmp12, tmp13);
-  const tmpResult7 = tmp(14527);
+  const tmpResult7 = tmp(14601);
   const subscriptionPlansLoaded = tmpResult7.useSubscriptionPlansLoaded();
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [SubscriptionStore];
@@ -366,7 +366,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pricin
   let tmp16;
   let tmp2Result17;
   let tmp2Result18;
-  const f121072 = () => {
+  const f121514 = () => {
     const items = [IAPStore.getProduct(closure_0(str3[18]).ProductIds.PREMIUM_GUILD_1_MONTHLY), IAPStore.getProduct(closure_0(str3[18]).ProductIds.PREMIUM_TIER_2_MONTHLY), IAPStore.getProduct(closure_0(str3[18]).ProductIds.PREMIUM_TIER_2_PREMIUM_GUILD_1_MONTHLY), IAPStore.getProduct(closure_0(str3[18]).ProductIds.PREMIUM_TIER_2_YEARLY), IAPStore.getProduct(closure_0(str3[18]).ProductIds.PREMIUM_TIER_2_PREMIUM_GUILD_1_YEARLY)];
     return items;
   };
@@ -402,8 +402,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pricin
   }, []);
   const items4 = [IAPStore];
   const obj7 = require("get initialized");
-  [tmp12, tmp13, tmp14, tmp15, tmp16] = str2(obj7.useStateFromStoresArray(items4, f121072), 5);
-  str2(obj7.useStateFromStoresArray(items4, f121072), 5);
+  [tmp12, tmp13, tmp14, tmp15, tmp16] = str2(obj7.useStateFromStoresArray(items4, f121514), 5);
+  str2(obj7.useStateFromStoresArray(items4, f121514), 5);
   const obj8 = IAPStore;
   if (stateFromStores2 == null) {
     stateFromStores2 = closure_13[constants.PREMIUM_MONTH_GUILD];

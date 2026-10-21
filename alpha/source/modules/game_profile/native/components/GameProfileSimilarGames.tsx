@@ -1,28 +1,28 @@
-// Module ID: 9410
-// Function ID: 9411
+// Module ID: 9438
+// Function ID: 9439
 // Name: GameProfileSimilarGames
-// Dependencies: [32, 19, 17, 9233, 9284, 21, 587, 4945, 558, 576, 9178, 9180, 9184, 1128, 9265, 5631, 5195, 9274, 9267, 9411, 1499, 7171, 9246, 2]
+// Dependencies: [32, 19, 17, 9260, 9312, 21, 587, 4966, 558, 576, 9205, 9207, 9211, 1128, 9293, 5651, 5216, 9302, 9295, 9439, 1499, 7199, 9273, 2]
 
-// Module 9410 (GameProfileSimilarGames)
+// Module 9438 (GameProfileSimilarGames)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 7171 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9178 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9184 */;
-import GameProfileConstants from "GameProfileConstants" /* 9233 */;
-import GameProfileHorizontalScrollViewDefault from "GameProfileHorizontalScrollView" /* 9246 */;
-import GameProfileSkeletonDefault from "GameProfileSkeleton" /* 9265 */;
-import GameProfileSectionDefault from "GameProfileSection" /* 9267 */;
-import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 9274 */;
-import SimilarGamesConstants from "SimilarGamesConstants" /* 9284 */;
-import useSimilarGamesDefault from "useSimilarGames" /* 9411 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7199 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9205 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9211 */;
+import GameProfileConstants from "GameProfileConstants" /* 9260 */;
+import GameProfileHorizontalScrollViewDefault from "GameProfileHorizontalScrollView" /* 9273 */;
+import GameProfileSkeletonDefault from "GameProfileSkeleton" /* 9293 */;
+import GameProfileSectionDefault from "GameProfileSection" /* 9295 */;
+import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 9302 */;
+import SimilarGamesConstants from "SimilarGamesConstants" /* 9312 */;
+import useSimilarGamesDefault from "useSimilarGames" /* 9439 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let obj6;
 let obj7;
 let obj8;
 let tmp;
-const GameProfileSkeleton = tmp(9265);
+const GameProfileSkeleton = tmp(9293);
 let _slicedToArray = _slicedToArray_mod;
 ({ Pressable: hasOwnProperty, View: metroRequire } = react_native);
 let closure_7 = GameProfileConstants.MOBILE_GAME_PROFILE_MAX_WIDTH;
@@ -135,14 +135,14 @@ let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function S
       const tmp13 = _slicedToArray(shouldOpenGameProfile.useState(undefined), 2);
       _slicedToArray = tmp13[1];
       if (cResult[6] !== game.id) {
-        let obj2 = { gameId: game.id, source: tmp(9178).GameProfileSources.SimilarGames };
+        let obj2 = { gameId: game.id, source: tmp(9205).GameProfileSources.SimilarGames };
         cResult[6] = game.id;
         cResult[7] = obj2;
         tmp16 = obj2;
       } else {
         tmp16 = cResult[7];
       }
-      const tmp18 = trackAction(9180)(tmp16);
+      const tmp18 = trackAction(9207)(tmp16);
       shouldOpenGameProfile = tmp18.shouldOpenGameProfile;
       const gameId = tmp18.gameId;
       if (cResult[8] === game.id) {
@@ -239,8 +239,8 @@ let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function S
                       return;
                     }
                   }
-                  const obj5 = { style: tmp4.coverArtPlaceholder, children: closure_9(trackAction(9265), obj6) };
-                  const GameProfileSkeletonContainer = tmp(9265).GameProfileSkeletonContainer;
+                  const obj5 = { style: tmp4.coverArtPlaceholder, children: closure_9(trackAction(9293), obj6) };
+                  const GameProfileSkeletonContainer = tmp(9293).GameProfileSkeletonContainer;
                   obj6 = { style: tmp4.coverArt };
                   tmp32 = closure_9(GameProfileSkeletonContainer, obj5);
                 }
@@ -275,7 +275,7 @@ let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function S
                     return;
                   }
                 }
-                items1[1] = closure_9(trackAction(5631), obj7);
+                items1[1] = closure_9(trackAction(5651), obj7);
                 tmp31[1] = items1;
                 tmp29Result = tmp29(tmp30, tmp31);
               } else {
@@ -285,7 +285,7 @@ let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function S
                     return;
                   }
                 }
-                const obj9 = { style: items2, children: closure_9(tmp(5195).Text, obj10) };
+                const obj9 = { style: items2, children: closure_9(tmp(5216).Text, obj10) };
                 items2 = [tmp4.coverArtFallback, tmp6];
                 obj10 = { variant: "text-xs/medium", color: "text-overlay-light", lineClamp: 3, children: game.name };
                 tmp29Result = closure_9(closure_6, obj9);
@@ -578,7 +578,7 @@ let closure_20 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (function 
       }
     }
     const obj2 = { style: container, headerStyle: header, showViewAllSkeleton: false, skeletonTitleWidth: 124, children: tmp8 };
-    const tmp12 = closure_9(tmp(9267).GameProfileSectionSkeleton, obj2);
+    const tmp12 = closure_9(tmp(9295).GameProfileSectionSkeleton, obj2);
     cResult[5] = tmp4.container;
     cResult[6] = tmp4.header;
     cResult[7] = tmp8;
@@ -596,7 +596,7 @@ let closure_20 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   cardWidth = cardWidth.cardWidth;
   const tmp = closure_15();
   let obj = { style: tmp.container, headerStyle: tmp.header, showViewAllSkeleton: false, skeletonTitleWidth: 124, children: closure_9(tmp2, obj2) };
-  const GameProfileSectionSkeleton = cardWidth(9267).GameProfileSectionSkeleton;
+  const GameProfileSectionSkeleton = cardWidth(9295).GameProfileSectionSkeleton;
   obj2 = {
     contentContainerStyle: tmp.skeletonCards,
     children: Array.from({ length: 4 }, (arg0, arg1) => {
@@ -689,7 +689,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileS
         }
       }
       const obj4 = { horizontal: true, renderScrollComponent: GameProfileHorizontalScrollViewDefault, data: null, renderItem: tmp11, showsHorizontalScrollIndicator: false, ItemSeparatorComponent, ListHeaderComponent: ListFooterComponent, ListFooterComponent, decelerationRate: "fast", snapToInterval: sum };
-      const FlashList = tmp(7171).FlashList;
+      const FlashList = tmp(7199).FlashList;
       class M {
         constructor(arg0) {
           obj = { game: arg0.item, trackAction, cardWidth: closure_1 };

@@ -1,11 +1,11 @@
-// Module ID: 12034
-// Function ID: 12035
+// Module ID: 12082
+// Function ID: 12083
 // Name: useAnimationDelayedAutoFocus
-// Dependencies: [19, 558, 576, 12035, 2]
+// Dependencies: [19, 558, 576, 12083, 2]
 
-// Module 12034 (useAnimationDelayedAutoFocus)
+// Module 12082 (useAnimationDelayedAutoFocus)
 import react2 from "react" /* 576 */;
-import useAwaitAnimationComplete from "useAwaitAnimationComplete" /* 12035 */;
+import useAwaitAnimationComplete from "useAwaitAnimationComplete" /* 12083 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

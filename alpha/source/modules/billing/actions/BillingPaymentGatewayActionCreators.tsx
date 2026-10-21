@@ -1,19 +1,19 @@
-// Module ID: 6432
-// Function ID: 6433
+// Module ID: 6454
+// Function ID: 6455
 // Name: BillingPaymentGatewayActionCreators
-// Dependencies: [5, 1087, 1098, 3, 1297, 1128, 6421, 6433, 584, 38, 6434, 6435, 4771, 6331, 2]
+// Dependencies: [5, 1087, 1098, 3, 1297, 1128, 6443, 6455, 584, 38, 6456, 6457, 4792, 6353, 2]
 // Exports: confirmCardPaymentSource, confirmEPS, confirmPaymentElementSource, confirmPrzelewy24, createAdyenPaymentSourceToken, createAdyenPrepaidPaymentSource, createAdyenVaultablePaymentSource, createBraintreePaymentSource, createCardToken, createExpressCheckoutPaymentMethod, createPaymentSourceToken, createStripePaymentSource, paymentIntentSucceeded, submitElementsAndCreateStripePaymentMethod
 
-// Module 6432 (BillingPaymentGatewayActionCreators)
+// Module 6454 (BillingPaymentGatewayActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl2 from "intl" /* 1128 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import BillingSharedActionCreators from "BillingSharedActionCreators" /* 6421 */;
-import react from "react" /* 6433 */;
-import StripeActionCreators from "StripeActionCreators" /* 6434 */;
-import StripeUtilsAll from "StripeUtils" /* 6435 */;
+import BillingSharedActionCreators from "BillingSharedActionCreators" /* 6443 */;
+import react from "react" /* 6455 */;
+import StripeActionCreators from "StripeActionCreators" /* 6456 */;
+import StripeUtilsAll from "StripeUtils" /* 6457 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants_mod from "Constants" /* 1087 */;
 import Constants_mod2 from "Constants" /* 1098 */;
@@ -531,7 +531,7 @@ obj = function _createExpressCheckoutPaymentMethod() {
             billingAddressToken = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -693,7 +693,7 @@ obj = function _confirmPaymentElementSource() {
                 billing_details = undefined;
                 c12 = 3;
                 c13 = 1;
-                return { value: "test", done: true };
+                return { value: "Reflect", done: true };
               }
               break;
             }
@@ -766,8 +766,8 @@ obj = function _confirmPaymentElementSource() {
                         if (closure_11 == null) {
                           _undefined = undefined;
                         }
-                        tmp121 = { setupIntent: _undefined, error: "r" };
-                        const obj8 = { setupIntent: _undefined, error: "r" };
+                        tmp121 = { setupIntent: _undefined, error: "Array" };
+                        const obj8 = { setupIntent: _undefined, error: "Array" };
                         if (shouldRecreateSetupIntentForPaymentElement(tmp121.error)) {
                           if (c3 !== closure_137_10.PAYMENT_REQUEST) {
                             c12 = 7;
@@ -1319,7 +1319,7 @@ obj = function _createAdyenVaultablePaymentSource() {
               adyen_redirect_url = undefined;
               c12 = 1;
               c13 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c12) {
             if (arg0 === 1) {

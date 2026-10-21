@@ -1,12 +1,12 @@
-// Module ID: 12299
-// Function ID: 12300
+// Module ID: 12354
+// Function ID: 12355
 // Name: ConjureMidTurnCaption
-// Dependencies: [1128, 3820, 2]
+// Dependencies: [1128, 3830, 2]
 // Exports: midTurnCaption
 
-// Module 12299 (ConjureMidTurnCaption)
+// Module 12354 (ConjureMidTurnCaption)
 import intl5 from "intl" /* 1128 */;
-import _modDef3820 from "module_3820" /* 3820 */;
+import _modDef3830 from "module_3830" /* 3830 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureMidTurnCaption.tsx");
@@ -14,15 +14,15 @@ const result = size.fileFinishedImporting("modules/conjure/agent_activity/Conjur
 export const midTurnCaption = function midTurnCaption(acknowledges) {
   if ("steered" === acknowledges) {
     const intl4 = intl5.intl;
-    return intl4.string(_modDef3820.Mv5OmK);
+    return intl4.string(_modDef3830.Mv5OmK);
   } else if ("queued" === acknowledges) {
     const intl3 = intl5.intl;
-    return intl3.string(_modDef3820["Po/2mi"]);
+    return intl3.string(_modDef3830["Po/2mi"]);
   } else if ("restarting" === acknowledges) {
     const intl2 = intl5.intl;
-    return intl2.string(_modDef3820.Vj0woh);
+    return intl2.string(_modDef3830.Vj0woh);
   } else {
     const intl = intl5.intl;
-    return intl.string(_modDef3820.gY3L8p);
+    return intl.string(_modDef3830.gY3L8p);
   }
 };

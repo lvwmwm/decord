@@ -1,20 +1,20 @@
-// Module ID: 15863
-// Function ID: 15864
+// Module ID: 15939
+// Function ID: 15940
 // Name: AccountViewBackupCodesSetting
-// Dependencies: [19, 8280, 1087, 15857, 1128, 1202, 15864, 558, 576, 11111, 15775, 15866, 2]
+// Dependencies: [19, 8308, 1087, 15933, 1128, 1202, 15940, 558, 576, 11155, 15851, 15942, 2]
 
-// Module 15863 (AccountViewBackupCodesSetting)
+// Module 15939 (AccountViewBackupCodesSetting)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import SettingsConstants from "SettingsConstants" /* 8280 */;
-import SettingsAccountUtils from "SettingsAccountUtils" /* 15775 */;
-import MFAActionCreatorsDefault from "MFAActionCreators" /* 15857 */;
-import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 15864 */;
+import SettingsConstants from "SettingsConstants" /* 8308 */;
+import SettingsAccountUtils from "SettingsAccountUtils" /* 15851 */;
+import MFAActionCreatorsDefault from "MFAActionCreators" /* 15933 */;
+import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 15940 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11111 */;
+import SettingBuilders from "SettingBuilders" /* 11155 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

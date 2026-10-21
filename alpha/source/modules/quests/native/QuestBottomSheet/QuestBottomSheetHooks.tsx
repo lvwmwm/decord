@@ -1,19 +1,19 @@
-// Module ID: 16215
-// Function ID: 16216
+// Module ID: 16291
+// Function ID: 16292
 // Name: QuestBottomSheetHooks
-// Dependencies: [5, 19, 6661, 558, 576, 16189, 16211, 5171, 9533, 16216, 9501, 9502, 9505, 6668, 7748, 6664, 7739, 2]
+// Dependencies: [5, 19, 6689, 558, 576, 16265, 16287, 5192, 9563, 16292, 9531, 9532, 9535, 6696, 7776, 6692, 7767, 2]
 
-// Module 16215 (QuestBottomSheetHooks)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import QuestConstants from "QuestConstants" /* 6661 */;
-import QuestTypes from "QuestTypes" /* 6664 */;
-import AdCreativeType from "AdCreativeType" /* 6668 */;
-import AnalyticsActions from "AnalyticsActions" /* 7739 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7748 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9501 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9502 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9505 */;
-import openVideoQuestModalDefault from "openVideoQuestModal" /* 16216 */;
+// Module 16291 (QuestBottomSheetHooks)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
+import QuestConstants from "QuestConstants" /* 6689 */;
+import QuestTypes from "QuestTypes" /* 6692 */;
+import AdCreativeType from "AdCreativeType" /* 6696 */;
+import AnalyticsActions from "AnalyticsActions" /* 7767 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7776 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9531 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9532 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9535 */;
+import openVideoQuestModalDefault from "openVideoQuestModal" /* 16292 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -28,8 +28,8 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDism
   let setRestingQuestDockMode;
   let obj = setRestingQuestDockMode(576);
   const cResult = obj.c(3);
-  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(16189).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  const isInQuestBottomSheet = react.useContext(setRestingQuestDockMode(16211).QuestBottomSheetContext).isInQuestBottomSheet;
+  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(16265).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
+  const isInQuestBottomSheet = react.useContext(setRestingQuestDockMode(16287).QuestBottomSheetContext).isInQuestBottomSheet;
   if (cResult[0] === isInQuestBottomSheet) {
     let tmp2;
     if (cResult[1] === setRestingQuestDockMode) {
@@ -52,8 +52,8 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDism
   tmp2 = fn;
 }) : (function useDismissSheetOrCollapseDock() {
   let setRestingQuestDockMode;
-  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(16189).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  const isInQuestBottomSheet = react.useContext(setRestingQuestDockMode(16211).QuestBottomSheetContext).isInQuestBottomSheet;
+  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(16265).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
+  const isInQuestBottomSheet = react.useContext(setRestingQuestDockMode(16287).QuestBottomSheetContext).isInQuestBottomSheet;
   const items = [isInQuestBottomSheet, setRestingQuestDockMode];
   return react.useCallback(() => {
     const tmp = isInQuestBottomSheet;
@@ -74,7 +74,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWatchTask
   const sourceQuestContent = questId.sourceQuestContent;
   const tmp2 = closure_6();
   dependencyMap = tmp2;
-  const obj2 = questId(9533);
+  const obj2 = questId(9563);
   const questImpression = obj2.useQuestImpression();
   if (cResult[0] === tmp2) {
     if (cResult[1] === questImpression) {
@@ -142,7 +142,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWatchTask
   const sourceQuestContent = questId.sourceQuestContent;
   const tmp = closure_6();
   dependencyMap = tmp;
-  let obj = questId(9533);
+  let obj = questId(9563);
   const questImpression = obj.useQuestImpression();
   const items = [questId, tmp, questImpression, sourceQuestContent];
   return react.useCallback(() => {

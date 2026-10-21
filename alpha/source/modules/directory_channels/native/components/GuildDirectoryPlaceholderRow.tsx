@@ -1,16 +1,16 @@
-// Module ID: 13036
-// Function ID: 13037
+// Module ID: 13104
+// Function ID: 13105
 // Name: GuildDirectoryPlaceholderRow
-// Dependencies: [19, 17, 21, 4945, 587, 6658, 558, 576, 13037, 2]
+// Dependencies: [19, 17, 21, 4966, 587, 6686, 558, 576, 13105, 2]
 
-// Module 13036 (GuildDirectoryPlaceholderRow)
+// Module 13104 (GuildDirectoryPlaceholderRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import LegacyTokens from "LegacyTokens" /* 6658 */;
-import getChatPlaceholderRowWidthDefault from "getChatPlaceholderRowWidth" /* 13037 */;
+import LegacyTokens from "LegacyTokens" /* 6686 */;
+import getChatPlaceholderRowWidthDefault from "getChatPlaceholderRowWidth" /* 13105 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

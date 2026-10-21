@@ -1,18 +1,18 @@
-// Module ID: 8542
-// Function ID: 8543
+// Module ID: 8569
+// Function ID: 8570
 // Name: transformMessageComponents
-// Dependencies: [109, 17, 5973, 8543, 8430, 1388, 2000, 5972, 1128, 8544, 8551, 8552, 8554, 8557, 8558, 6605, 8099, 8559, 8561, 1105, 8230, 5957, 1405, 5979, 8538, 8537, 1386, 1459, 1104, 5667, 5981, 8573, 8084, 5994, 2]
+// Dependencies: [109, 17, 5995, 8570, 8458, 1388, 2000, 5994, 1128, 8571, 8578, 8579, 8581, 8584, 8585, 6633, 8127, 8586, 8588, 1105, 8258, 5979, 1405, 6001, 8565, 8564, 1386, 1459, 1104, 5687, 6003, 8600, 8112, 6016, 2]
 // Exports: default, getUnfurledMediaItemType
 
-// Module 8542 (transformMessageComponents)
+// Module 8569 (transformMessageComponents)
 import react_native from "react-native" /* 17 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import URLUtilsDefault from "URLUtils" /* 1386 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5957 */;
-import CheckpointConstants from "CheckpointConstants" /* 5973 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8538 */;
-import InteractionComponentConstants from "InteractionComponentConstants" /* 8543 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8558 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5979 */;
+import CheckpointConstants from "CheckpointConstants" /* 5995 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8565 */;
+import InteractionComponentConstants from "InteractionComponentConstants" /* 8570 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8585 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import LRUCache from "LRUCache" /* 1459 */;
 import size_mod from "module_2" /* 2 */;
@@ -23,10 +23,10 @@ let _require, importDefault;
 let tmp4;
 const intl6 = tmp4(1128);
 const FlagUtils = tmp4(1405);
-const MediaTypes = tmp4(5979);
-const AgeVerificationUtils = tmp4(6605);
-const sanitizeMediaDimension = tmp4(8537);
-const ExplicitMediaUtils = tmp4(8557);
+const MediaTypes = tmp4(6001);
+const AgeVerificationUtils = tmp4(6633);
+const sanitizeMediaDimension = tmp4(8564);
+const ExplicitMediaUtils = tmp4(8584);
 function transformToRowGeneratedComponent(message, accessory) {
   let colors;
   let contentType;
@@ -85,7 +85,7 @@ function transformToRowGeneratedComponent(message, accessory) {
   function expensive() {
     if (null != found1) {
       if (0 !== found1.length) {
-        const mapped = arr.map(f99819);
+        const mapped = arr.map(f100101);
         const intl = closure_0(message[8]).intl;
         const formatToPlainString = intl.formatToPlainString;
         const obj = { selections: mapped.join(",") };
@@ -148,7 +148,7 @@ function transformToRowGeneratedComponent(message, accessory) {
     const merged2 = Object.assign(accessory);
     tmpResult31 = tmp(tmp2[9]);
     _require = accessory;
-    const f99819 = (arg0) => found1.options[arg0].label;
+    const f100101 = (arg0) => found1.options[arg0].label;
     tmpResult32 = tmp(tmp2[7]);
     obj5 = { expensive, cheap: tmpResult34.getSelectPlaceholder(accessory) };
     getAccessibilityLabelOrCheapFallbackUnsafe2 = tmp(tmp2[20]).getAccessibilityLabelOrCheapFallbackUnsafe;
@@ -272,11 +272,11 @@ function transformToRowGeneratedComponent(message, accessory) {
                       if (height > 0) {
                         const obj = MediaFormatTesters;
                         if (obj.isImageContentType(contentType)) {
-                          VISUAL_PLACEHOLDER = tmp(8558).MediaGalleryItemType.IMAGE;
+                          VISUAL_PLACEHOLDER = tmp(8585).MediaGalleryItemType.IMAGE;
                         } else {
                           const tmpResult = MediaFormatTesters;
                           if (tmpResult.isVideoContentType(contentType)) {
-                            VISUAL_PLACEHOLDER = tmp(8558).MediaGalleryItemType.VIDEO;
+                            VISUAL_PLACEHOLDER = tmp(8585).MediaGalleryItemType.VIDEO;
                           }
                         }
                       }
@@ -379,8 +379,8 @@ function transformToRowGeneratedComponent(message, accessory) {
                 name = intl2.string(tmp(tmp2[8]).t.GnuJ5u);
               }
               num2 = accessory.size;
-              filesize = require("module_8099").filesize;
-              require("module_8099");
+              filesize = require("module_8127").filesize;
+              require("module_8127");
               if (num2 == null) {
                 num2 = 0;
               }
@@ -479,7 +479,7 @@ function transformToRowGeneratedComponent(message, accessory) {
     tmpResult52 = tmp(tmp2[9]);
     tmpResult53 = tmp(tmp2[12]);
     _require = accessory;
-    const f99820 = (label) => label.label;
+    const f100102 = (label) => label.label;
     tmpResult54 = tmp(tmp2[7]);
     obj24 = { expensive, cheap: tmpResult56.getSelectPlaceholder(accessory) };
     getAccessibilityLabelOrCheapFallbackUnsafe = tmp(tmp2[20]).getAccessibilityLabelOrCheapFallbackUnsafe;
@@ -505,11 +505,11 @@ function transformUnfurledMediaItem(media, shouldShowMedia) {
         if (height > 0) {
           const obj = MediaFormatTesters;
           if (obj.isImageContentType(contentType)) {
-            VISUAL_PLACEHOLDER = tmp(8558).MediaGalleryItemType.IMAGE;
+            VISUAL_PLACEHOLDER = tmp(8585).MediaGalleryItemType.IMAGE;
           } else {
             const tmpResult = MediaFormatTesters;
             if (tmpResult.isVideoContentType(contentType)) {
-              VISUAL_PLACEHOLDER = tmp(8558).MediaGalleryItemType.VIDEO;
+              VISUAL_PLACEHOLDER = tmp(8585).MediaGalleryItemType.VIDEO;
             }
           }
         }
@@ -554,7 +554,7 @@ export default function transformMessageComponents(message, arr) {
   let obj2;
   let obj3;
   const obj = { type: "textDisplayComponent", parserState: obj2.getInitialParserStateFromMessage(message.message, closure_7) };
-  obj2 = obj3(8430);
+  obj2 = obj3(8458);
   obj3 = { markdownConfigs: { textDisplayComponent: obj } };
   const merged = Object.assign(message);
   const mapped = arr.map((item) => transformToRowGeneratedComponent(obj3, item));

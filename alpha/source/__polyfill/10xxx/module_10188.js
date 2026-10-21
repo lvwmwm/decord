@@ -1,14 +1,14 @@
 // Module ID: 10188
 // Function ID: 10189
-// Dependencies: [41, 42, 93, 95, 96, 98, 10158]
+// Dependencies: [41, 42, 93, 95, 98, 10172, 10176, 10175, 10180]
 
 // Module 10188
-import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 10158 */;
+import _mod10172 from "module_10172" /* 10172 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10180 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _get from "_get" /* 96 */;
 import _inherits from "_inherits" /* 98 */;
 
 function _isNativeReflectConstruct() {
@@ -26,55 +26,48 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class DETimeExpressionParser {
-  constructor() {
+const regExp = new RegExp("(" + _mod10172.TIME_UNITS_PATTERN + ")\\s{0,5}(?:ago|before|earlier)(?=\\W|$)", "i");
+const regExp1 = new RegExp("(" + _mod10172.TIME_UNITS_NO_ABBR_PATTERN + ")\\s{0,5}(?:ago|before|earlier)(?=\\W|$)", "i");
+class ENTimeUnitAgoFormatParser {
+  constructor(strictMode) {
     let constructResult;
     const self = this;
-    _classCallCheck(this, DETimeExpressionParser);
-    const obj = _getPrototypeOf(DETimeExpressionParser);
+    _classCallCheck(this, ENTimeUnitAgoFormatParser);
+    const obj = _getPrototypeOf(ENTimeUnitAgoFormatParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
     } else {
-      constructResult = obj(...arguments);
+      constructResult = obj.apply(self, undefined);
     }
-    return tmp3(self, constructResult);
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.strictMode = strictMode;
+    return tmp3Result;
   }
 }
-_inherits(DETimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
+_inherits(ENTimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "primaryPrefix",
-  value: function primaryPrefix() {
-    return "(?:(?:um|von)\\s*)?";
+  key: "innerPattern",
+  value: function innerPattern() {
+    return this.strictMode ? regExp1 : regExp;
   }
 };
-let items = [
+const items = [
   entry,
   {
-    key: "followingPhase",
-    value: function followingPhase() {
-      return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|bis)\\s*";
-    }
-  },
-  {
-    key: "extractPrimaryTimeComponents",
-    value: function extractPrimaryTimeComponents(arg0, arg1) {
-      let fnResult = null;
-      const str = arg1[0];
-      if (!str.match(/^\s*\d{4}\s*$/)) {
-        const self = this;
-        let fn = _get(_getPrototypeOf(DETimeExpressionParser.prototype), "extractPrimaryTimeComponents", this);
-        if (typeof fn === "function") {
-          fn = (items) => fn.apply(self, items);
-        }
-        const items = [arg0, arg1];
-        fnResult = fn(items);
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      const parseDurationResult = _mod10172.parseDuration(arg1[1]);
+      let relativeFromReference = null;
+      if (parseDurationResult) {
+        const ParsingComponents = tmp(10176).ParsingComponents;
+        relativeFromReference = ParsingComponents.createRelativeFromReference(reference.reference, tmp(10175).reverseDuration(parseDurationResult));
       }
-      return fnResult;
+      return relativeFromReference;
     }
   }
 ];
 
-export default _createClass(DETimeExpressionParser, items);
+export default _createClass(ENTimeUnitAgoFormatParser, items);

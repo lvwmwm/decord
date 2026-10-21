@@ -1,21 +1,21 @@
-// Module ID: 9241
-// Function ID: 9242
+// Module ID: 9268
+// Function ID: 9269
 // Name: GameProfileMedia
-// Dependencies: [32, 19, 17, 4946, 1098, 21, 587, 9242, 4945, 558, 576, 9178, 8688, 5631, 8727, 1128, 9243, 9231, 504, 7171, 9246, 2]
+// Dependencies: [32, 19, 17, 4967, 1098, 21, 587, 9269, 4966, 558, 576, 9205, 8715, 5651, 8754, 1128, 9270, 9258, 504, 7199, 9273, 2]
 
-// Module 9241 (GameProfileMedia)
+// Module 9268 (GameProfileMedia)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
-import openMediaModal from "openMediaModal" /* 8688 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9178 */;
-import GameProfileMediaSources from "GameProfileMediaSources" /* 9242 */;
+import openMediaModal from "openMediaModal" /* 8715 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9205 */;
+import GameProfileMediaSources from "GameProfileMediaSources" /* 9269 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 4946 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 4967 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -363,7 +363,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileM
   const cResult = obj.c(44);
   ({ game, trackAction } = arg0);
   let tmp4 = closure_15();
-  const obj2 = trackAction(9231);
+  const obj2 = trackAction(9258);
   const obscured = obj2.useObscuredSurface().obscured;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
@@ -387,7 +387,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileM
   [, react] = react.useState(false);
   const ref = react.useRef(null);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult2 = trackAction(9242);
+    const tmpResult2 = trackAction(9269);
     const carouselPreviewPixelSize = tmpResult2.getCarouselPreviewPixelSize();
     cResult[2] = carouselPreviewPixelSize;
     tmp14 = carouselPreviewPixelSize;
@@ -426,9 +426,9 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileM
       }
     }
   }
-  const bound = Math.max(0, Math.min(tmp(9242).MEDIA_ITEM_MAX_WIDTH, tmp10 - PX_12 - 2 * PX_16));
-  AccessibilityStore = min(tmp(9242).MEDIA_ITEM_MAX_HEIGHT, bound / tmp(9242).MEDIA_ITEM_ASPECT_RATIO);
-  min(trackAction(9242).MEDIA_ITEM_MAX_HEIGHT, bound / trackAction(9242).MEDIA_ITEM_ASPECT_RATIO);
+  const bound = Math.max(0, Math.min(tmp(9269).MEDIA_ITEM_MAX_WIDTH, tmp10 - PX_12 - 2 * PX_16));
+  AccessibilityStore = min(tmp(9269).MEDIA_ITEM_MAX_HEIGHT, bound / tmp(9269).MEDIA_ITEM_ASPECT_RATIO);
+  min(trackAction(9269).MEDIA_ITEM_MAX_HEIGHT, bound / trackAction(9269).MEDIA_ITEM_ASPECT_RATIO);
   const tmp18 = PX_12;
   const tmp19 = PX_16;
   if (cResult[6] !== arr2) {

@@ -1,20 +1,20 @@
-// Module ID: 9340
-// Function ID: 9341
+// Module ID: 9368
+// Function ID: 9369
 // Name: NameplateDummyUserPreview
-// Dependencies: [19, 17, 1207, 21, 1202, 587, 4945, 558, 576, 4967, 504, 9341, 9343, 9344, 2]
+// Dependencies: [19, 17, 1207, 21, 1202, 587, 4966, 558, 576, 4988, 504, 9369, 9371, 9372, 2]
 
-// Module 9340 (NameplateDummyUserPreview)
+// Module 9368 (NameplateDummyUserPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
-import themes from "themes" /* 4967 */;
-import NameplateDefault from "Nameplate" /* 9341 */;
+import themes from "themes" /* 4988 */;
+import NameplateDefault from "Nameplate" /* 9369 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -93,7 +93,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplateDum
         if (cResult[7] === tmp6.nameplate) {
           tmp13 = cResult[8];
         }
-        const tmp17 = importDefault(tmp11 ? 9343 : 9344);
+        const tmp17 = importDefault(tmp11 ? 9371 : 9372);
         if (cResult[9] === avatarSize) {
           if (cResult[10] === tmp6.avatar) {
             let tmp18;
@@ -214,7 +214,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplateDum
   const obj3 = { nameplate, fullOpacity: true, style: tmp3.nameplate, animate };
   items2[0] = hasOwnProperty(NameplateDefault, obj3);
   const obj4 = { style: tmp3.avatarContainer, children: hasOwnProperty(Avatar, obj5) };
-  obj5 = { source: importDefault(stateFromStores ? 9343 : 9344), size: NORMAL, "aria-hidden": true, style: tmp3.avatar };
+  obj5 = { source: importDefault(stateFromStores ? 9371 : 9372), size: NORMAL, "aria-hidden": true, style: tmp3.avatar };
   Avatar = native.Avatar;
   items2[1] = hasOwnProperty(View, obj4);
   const obj6 = { style: items3 };

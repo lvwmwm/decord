@@ -1,12 +1,12 @@
-// Module ID: 13591
-// Function ID: 13592
+// Module ID: 13658
+// Function ID: 13659
 // Name: useGetInitialMessagePreview
-// Dependencies: [19, 4891, 558, 576, 5563, 2]
+// Dependencies: [19, 4912, 558, 576, 5584, 2]
 
-// Module 13591 (useGetInitialMessagePreview)
+// Module 13658 (useGetInitialMessagePreview)
 import react2 from "react" /* 576 */;
-import MessageRecord2 from "MessageRecord" /* 4891 */;
-import isForwardMessageDefault from "isForwardMessage" /* 5563 */;
+import MessageRecord2 from "MessageRecord" /* 4912 */;
+import isForwardMessageDefault from "isForwardMessage" /* 5584 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

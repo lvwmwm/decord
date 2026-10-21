@@ -1,15 +1,15 @@
-// Module ID: 7229
-// Function ID: 7230
+// Module ID: 7257
+// Function ID: 7258
 // Name: useProfileThemeValues
-// Dependencies: [19, 4946, 558, 576, 573, 587, 586, 2]
+// Dependencies: [19, 4967, 558, 576, 573, 587, 586, 2]
 
-// Module 7229 (useProfileThemeValues)
+// Module 7257 (useProfileThemeValues)
 import react from "react" /* 19 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import shims from "shims" /* 586 */;
 import nativeDefault from "native" /* 587 */;
-import AccessibilityStore from "AccessibilityStore" /* 4946 */;
+import AccessibilityStore from "AccessibilityStore" /* 4967 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

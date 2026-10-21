@@ -1,19 +1,19 @@
-// Module ID: 9235
-// Function ID: 9236
+// Module ID: 9262
+// Function ID: 9263
 // Name: GameProfileHeader
-// Dependencies: [19, 17, 9233, 21, 4945, 587, 558, 576, 5014, 9236, 9237, 5631, 5219, 9238, 5195, 9240, 2]
+// Dependencies: [19, 17, 9260, 21, 4966, 587, 558, 576, 5035, 9263, 9264, 5651, 5240, 9265, 5216, 9267, 2]
 
-// Module 9235 (GameProfileHeader)
+// Module 9262 (GameProfileHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
-import LinearGradientDefault from "LinearGradient" /* 5219 */;
-import useGameProfileHeroBackgroundURLDefault from "useGameProfileHeroBackgroundURL" /* 9237 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
+import LinearGradientDefault from "LinearGradient" /* 5240 */;
+import useGameProfileHeroBackgroundURLDefault from "useGameProfileHeroBackgroundURL" /* 9264 */;
 import react from "react" /* 19 */;
-import GameProfileConstants from "GameProfileConstants" /* 9233 */;
+import GameProfileConstants from "GameProfileConstants" /* 9260 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let rect;
 let size;
 let size1;
 let tmp;
-const SKUUtils = tmp(9236);
+const SKUUtils = tmp(9263);
 let View = react_native.View;
 ({ DISCORD_APP_GAME_ID: hasOwnProperty, MOBILE_GAME_PROFILE_MAX_WIDTH } = GameProfileConstants);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -192,7 +192,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
       }
       const obj5 = { source: obj6, style: tmp4.artHeroImage };
       obj6 = { uri: tmp9 };
-      tmp19 = metroRequire(tmp8(5631), obj5);
+      tmp19 = metroRequire(tmp8(5651), obj5);
     }
     cResult[11] = tmp9;
     cResult[12] = tmp4.artHeroImage;

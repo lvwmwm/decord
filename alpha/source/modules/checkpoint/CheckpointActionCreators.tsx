@@ -1,24 +1,28 @@
-// Module ID: 12780
-// Function ID: 12781
+// Module ID: 12844
+// Function ID: 12845
 // Name: CheckpointActionCreators
-// Dependencies: [5, 4800, 1087, 584, 12781, 1297, 12782, 7360, 1267, 7702, 7515, 2]
+// Dependencies: [5, 4821, 12843, 1087, 584, 1297, 12845, 12846, 7388, 1267, 7730, 7543, 2]
 // Exports: completeCheckpoint, fetchCheckpointData, resetCheckpoint, resetEditedCharacter, selectCharacterTrait, sendSidekickMessage, toggleMute
 
-// Module 12780 (CheckpointActionCreators)
+// Module 12844 (CheckpointActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7360 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7388 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import CheckpointStore from "CheckpointStore" /* 12843 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let c1, id;
 
-let hasOwnProperty;
+let metroImportDefault;
 let metroRequire;
 let obj = function _fetchCheckpointData() {
   obj = _asyncToGenerator(async (arg0, value) => {
+    let obj3;
+    let obj5;
+    let obj6;
     let closure_0 = arg0;
     if (c5 === 2) {
       c5 = 3;
@@ -35,7 +39,6 @@ let obj = function _fetchCheckpointData() {
     } else {
       let c3;
       try {
-        let flag;
         let body;
         c5 = 2;
         if (0 === c4) {
@@ -44,52 +47,27 @@ let obj = function _fetchCheckpointData() {
             throw value;
           } else if (arg0 === 2) {
             c5 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
+            const obj4 = { value, done: true };
+            return obj4;
           } else {
             let closure_2 = tmp;
             let closure_1 = tmp4;
-            flag = closure_0;
-            if (closure_0 === undefined) {
-              flag = false;
-            }
             body = undefined;
-            c4 = 1;
+            CheckpointStore.initializeIfNeeded();
+            const obj12 = DispatcherDefault;
+            obj12.dispatch({ type: "CHECKPOINT_FETCH_START" });
+            c3 = 1;
+            const HTTP = HTTPUtils.HTTP;
+            const obj7 = { url: constants.CHECKPOINT, rejectWithError: true };
+            c4 = 2;
             c5 = 1;
-            return { value: "test", done: true };
+            const obj9 = { value: HTTP.get(obj7), done: false };
+            return obj9;
           }
         } else if (1 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj5 = { value, done: true };
-            return obj5;
-          } else {
-            const obj11 = closure_130_1(closure_130_2[3]);
-            obj11.dispatch({ type: "CHECKPOINT_FETCH_START" });
-            if (flag) {
-              const obj6 = { type: "CHECKPOINT_FETCH_SUCCESS", stats: closure_130_0(closure_130_2[4]).MOCK_CHECKPOINT_STATS, character: null };
-              const dispatch = closure_130_1(closure_130_2[3]).dispatch;
-              const tmp23 = closure_130_1(closure_130_2[3]);
-              dispatch(obj6);
-              c5 = 3;
-              return { value: true, done: true };
-            } else {
-              c3 = 1;
-              const HTTP = closure_130_0(closure_130_2[5]).HTTP;
-              const obj7 = { url: closure_130_6.CHECKPOINT, rejectWithError: true };
-              c4 = 3;
-              c5 = 1;
-              const obj8 = { value: HTTP.get(obj7), done: false };
-              return obj8;
-            }
-          }
-        } else if (2 === c4) {
           c3 = 0;
-          const obj4 = closure_130_1(closure_130_2[3]);
-          obj4.dispatch({ type: "CHECKPOINT_FETCH_FAILED" });
+          const obj8 = closure_130_1(closure_130_2[4]);
+          obj8.dispatch({ type: "CHECKPOINT_FETCH_FAILED" });
           c5 = 3;
           return { value: false, done: true };
         } else if (arg0 === 1) {
@@ -98,29 +76,39 @@ let obj = function _fetchCheckpointData() {
         } else if (arg0 === 2) {
           c3 = 0;
           c5 = 3;
-          const obj9 = { value, done: true };
-          return obj9;
+          const obj10 = { value, done: true };
+          return obj10;
         } else {
           body = value.body;
-          let statsFromServerResult = null;
-          const dispatch2 = closure_130_1(closure_130_2[3]).dispatch;
-          const tmp37 = closure_130_1(closure_130_2[3]);
-          if (null != body.stats) {
-            obj = closure_130_0(closure_130_2[6]);
-            statsFromServerResult = obj.statsFromServer(body.stats);
+          if (null != closure_0) {
+            const obj11 = { type: "CHECKPOINT_FETCH_SUCCESS", stats: obj5.getMockCheckpointStats(closure_0), globalStats: obj6.globalStatsFromServer(body.global_stats), character: null };
+            const dispatch = closure_130_1(closure_130_2[4]).dispatch;
+            const tmp22 = closure_130_1(closure_130_2[4]);
+            obj5 = closure_130_0(closure_130_2[6]);
+            obj6 = closure_130_0(closure_130_2[7]);
+            dispatch(obj11);
+          } else {
+            let statsFromServerResult = null;
+            const dispatch2 = closure_130_1(closure_130_2[4]).dispatch;
+            const tmp46 = closure_130_1(closure_130_2[4]);
+            if (null != body.stats) {
+              obj = closure_130_0(closure_130_2[7]);
+              statsFromServerResult = obj.statsFromServer(body.stats);
+            }
+            const obj13 = { type: "CHECKPOINT_FETCH_SUCCESS", stats: statsFromServerResult, globalStats: obj3.globalStatsFromServer(body.global_stats), character: body.character };
+            obj3 = closure_130_0(closure_130_2[7]);
+            dispatch2(obj13);
           }
-          const obj10 = { type: "CHECKPOINT_FETCH_SUCCESS", stats: statsFromServerResult, character: body.character };
-          dispatch2(obj10);
           c3 = 0;
           c5 = 3;
           return { value: true, done: true };
         }
-      } catch (tmp27) {
+      } catch (tmp34) {
         if (0 === c3) {
           c5 = 3;
-          throw tmp27;
+          throw tmp34;
         } else {
-          c4 = 2;
+          c4 = 1;
         }
       }
     }
@@ -169,7 +157,7 @@ obj = function _completeCheckpoint() {
           }
         } else if (1 === c4) {
           c3 = 0;
-          const obj4 = closure_130_1(closure_130_2[3]);
+          const obj4 = closure_130_1(closure_130_2[4]);
           obj4.dispatch({ type: "CHECKPOINT_COMPLETE_FAILED" });
           c5 = 3;
           return { value: false, done: true };
@@ -183,7 +171,7 @@ obj = function _completeCheckpoint() {
           return obj6;
         } else {
           const obj7 = { type: "CHECKPOINT_COMPLETE_SUCCESS", character };
-          obj = closure_130_1(closure_130_2[3]);
+          obj = closure_130_1(closure_130_2[4]);
           obj.dispatch(obj7);
           c3 = 0;
           c5 = 3;
@@ -241,7 +229,7 @@ obj = function _resetCheckpoint() {
           }
         } else if (1 === tmp4) {
           c2 = 0;
-          const obj3 = closure_128_1(closure_128_2[3]);
+          const obj3 = closure_128_1(closure_128_2[4]);
           obj3.dispatch({ type: "CHECKPOINT_RESET_FAILED" });
           c3 = 3;
           return { value: false, done: true };
@@ -254,7 +242,7 @@ obj = function _resetCheckpoint() {
           const obj8 = { value, done: true };
           return obj8;
         } else {
-          obj = closure_128_1(closure_128_2[3]);
+          obj = closure_128_1(closure_128_2[4]);
           obj.dispatch({ type: "CHECKPOINT_RESET_SUCCESS" });
           c2 = 0;
           c3 = 3;
@@ -328,12 +316,12 @@ obj = function _sendSidekickMessage() {
               throw error;
             } else {
               const obj8 = { other_user_id };
-              const obj7 = closure_131_1(closure_131_2[8]);
-              obj7.track(closure_131_5.CHECKPOINT_SIDEKICK_MESSAGE_SENT, obj8);
-              const obj9 = closure_131_1(closure_131_2[9]);
+              const obj7 = closure_131_1(closure_131_2[9]);
+              obj7.track(closure_131_6.CHECKPOINT_SIDEKICK_MESSAGE_SENT, obj8);
+              const obj9 = closure_131_1(closure_131_2[10]);
               closure_4 = obj9.parse(id, closure_0);
               c5 = 3;
-              const obj10 = closure_131_1(closure_131_2[10]);
+              const obj10 = closure_131_1(closure_131_2[11]);
               obj = { value: obj10.sendMessage(id.id, closure_4, false, { location: "checkpoint-sidekick" }), done: true };
               return obj;
             }
@@ -347,7 +335,7 @@ obj = function _sendSidekickMessage() {
   });
   return obj(...arguments);
 };
-({ AnalyticEvents: hasOwnProperty, Endpoints: metroRequire } = Constants);
+({ AnalyticEvents: metroRequire, Endpoints: metroImportDefault } = Constants);
 const result = size.fileFinishedImporting("modules/checkpoint/CheckpointActionCreators.tsx");
 
 export const toggleMute = function toggleMute() {

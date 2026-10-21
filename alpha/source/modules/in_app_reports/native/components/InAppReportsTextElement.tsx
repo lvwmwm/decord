@@ -1,16 +1,16 @@
-// Module ID: 8078
-// Function ID: 8079
+// Module ID: 8106
+// Function ID: 8107
 // Name: InAppReportsTextElement
-// Dependencies: [19, 17, 21, 4945, 5937, 5195, 2]
+// Dependencies: [19, 17, 21, 4966, 5959, 5216, 2]
 // Exports: default
 
-// Module 8078 (InAppReportsTextElement)
+// Module 8106 (InAppReportsTextElement)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import CustomMarkupAll from "CustomMarkup" /* 5937 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import CustomMarkupAll from "CustomMarkup" /* 5959 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

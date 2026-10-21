@@ -1,11 +1,11 @@
-// Module ID: 12983
-// Function ID: 12984
+// Module ID: 13051
+// Function ID: 13052
 // Name: getNextResourceChannel
-// Dependencies: [7274, 558, 576, 504, 2]
+// Dependencies: [7302, 558, 576, 504, 2]
 // Exports: default
 
-// Module 12983 (getNextResourceChannel)
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7274 */;
+// Module 13051 (getNextResourceChannel)
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7302 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

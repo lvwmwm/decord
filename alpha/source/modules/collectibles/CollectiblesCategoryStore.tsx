@@ -1,23 +1,23 @@
-// Module ID: 7599
-// Function ID: 7600
+// Module ID: 7627
+// Function ID: 7628
 // Name: CollectiblesCategoryStore
-// Dependencies: [2069, 7600, 1104, 569, 584, 12, 7611, 504, 2]
+// Dependencies: [2068, 7628, 1104, 569, 584, 12, 7639, 504, 2]
 
-// Module 7599 (CollectiblesCategoryStore)
+// Module 7627 (CollectiblesCategoryStore)
 import _mod12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1104 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7611 */;
-import LocaleStore from "LocaleStore" /* 2069 */;
-import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7600 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7639 */;
+import LocaleStore from "LocaleStore" /* 2068 */;
+import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7628 */;
 import size from "module_2" /* 2 */;
 
 let closure_12, closure_13, closure_14, closure_9;
 
 function updateCategoriesAndProducts(map) {
-  const f97984 = (storeListingId) => {
+  const f98266 = (storeListingId) => {
     const items = [storeListingId.storeListingId, storeListingId];
     return items;
   };
@@ -42,8 +42,8 @@ function updateCategoriesAndProducts(map) {
   closure_9 = map1;
   const obj2 = CollectiblesUtils;
   const productsFromCategories1 = obj2.getProductsFromCategories(closure_14, false);
-  closure_11 = [...new Map(productsFromCategories1.map(f97984)).values()];
-  map2 = new Map(productsFromCategories1.map(f97984));
+  closure_11 = [...new Map(productsFromCategories1.map(f98266)).values()];
+  map2 = new Map(productsFromCategories1.map(f98266));
 }
 function reset() {
   closure_14 = map;

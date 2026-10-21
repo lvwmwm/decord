@@ -1,16 +1,16 @@
-// Module ID: 8580
-// Function ID: 8581
+// Module ID: 8607
+// Function ID: 8608
 // Name: createMessageFailedEmbed
-// Dependencies: [8081, 1087, 8225, 8581, 1128, 8582, 8098, 2]
+// Dependencies: [8109, 1087, 8253, 8608, 1128, 8609, 8126, 2]
 // Exports: createAutomodBlockedMessageEmbed, default
 
-// Module 8580 (createMessageFailedEmbed)
+// Module 8607 (createMessageFailedEmbed)
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8081 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8225 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8581 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8582 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8109 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8253 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8608 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8609 */;
 import size from "module_2" /* 2 */;
 
 const MessageFailureState = RowGeneratorConstants.MessageFailureState;
@@ -43,7 +43,7 @@ export default function createMessageFailedEmbed(useAttachmentUploadPreview) {
       const tmp6 = require;
       if (0 !== uploaderFile.currentSize) {
         const _HermesInternal = HermesInternal;
-        const tmp6Result = tmp6(8098);
+        const tmp6Result = tmp6(8126);
         str = " (" + tmp6Result.sizeString(uploaderFile.currentSize) + ")";
       }
     }

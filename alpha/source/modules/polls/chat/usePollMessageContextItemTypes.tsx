@@ -1,9 +1,9 @@
-// Module ID: 10009
-// Function ID: 10010
+// Module ID: 10039
+// Function ID: 10040
 // Name: usePollMessageContextItemTypes
 // Dependencies: [502, 558, 576, 504, 2]
 
-// Module 10009 (usePollMessageContextItemTypes)
+// Module 10039 (usePollMessageContextItemTypes)
 import react from "react" /* 576 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

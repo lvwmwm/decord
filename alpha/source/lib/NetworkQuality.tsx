@@ -1,11 +1,11 @@
-// Module ID: 5847
-// Function ID: 5848
+// Module ID: 5869
+// Function ID: 5870
 // Name: NetworkQuality
-// Dependencies: [5848, 1087, 5684, 2]
+// Dependencies: [5870, 1087, 5704, 2]
 
-// Module 5847 (NetworkQuality)
-import TimeUtils from "TimeUtils" /* 5684 */;
-import NetworkStore from "NetworkStore" /* 5848 */;
+// Module 5869 (NetworkQuality)
+import TimeUtils from "TimeUtils" /* 5704 */;
+import NetworkStore from "NetworkStore" /* 5870 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

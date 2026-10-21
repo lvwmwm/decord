@@ -1,17 +1,17 @@
-// Module ID: 15194
-// Function ID: 15195
+// Module ID: 15267
+// Function ID: 15268
 // Name: KeyboardLayoutMapUtils
-// Dependencies: [32, 5, 1372, 7562, 3, 1384, 15193, 510, 2]
+// Dependencies: [32, 5, 1372, 7590, 3, 1384, 15266, 510, 2]
 // Exports: __DEV_overrideLayoutMapKey, getKeyboardEventShapeFromAny, getKeyboardEventShapeFromKey, getKeyboardEventShapeFromKeycode, getLayoutMap, initializeKeyboardMapper, resetKeyboardMapper
 
-// Module 15194 (KeyboardLayoutMapUtils)
+// Module 15267 (KeyboardLayoutMapUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
-import keyCodeDefault from "keyCode" /* 15193 */;
+import keyCodeDefault from "keyCode" /* 15266 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1372 */;
-import KeyboardConstants from "KeyboardConstants" /* 7562 */;
+import KeyboardConstants from "KeyboardConstants" /* 7590 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,10 @@ let c1, c2, c4, c5;
 let LinuxKeyToCode;
 let MacosKeyToCode;
 let WindowsKeyToCode;
-const f122054 = (item) => {
+function createKeyboardMapper() {
+  return obj(...arguments);
+}
+const f122494 = (item) => {
   let tmp;
   [tmp, obj] = item;
   const items = [tmp, ];
@@ -159,84 +162,81 @@ function getNormalizedEvent(keyCode) {
   }
   return obj;
 }
+obj = function _createKeyboardMapper() {
+  obj = _asyncToGenerator(async function(arg0, value) {
+    if (c3 === 2) {
+      c3 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        let obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        c3 = 2;
+        const tmp3 = c2;
+        if (0 === c2) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_1 = tmp3;
+            let closure_0 = tmp3;
+            c2 = 1;
+            c3 = 1;
+            const obj4 = { value: syncKeyboardLayoutMap(), done: false };
+            return obj4;
+          }
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c3 = 3;
+          obj = { value, done: true };
+          return obj;
+        } else {
+          const self = this;
+          let closure_17 = new closure_129_16(closure_129_6);
+          const _document = document;
+          const str = "keydown";
+          const listener = document.addEventListener("keydown", (event) => {
+            try {
+              obj = closure_1_17;
+              if (closure_1_17 != null) {
+                obj.addEvent(event);
+              }
+            } catch (tmp3) {
+              const obj2 = { event, error: tmp3 };
+              logger.error("KeyboardMapper - Error adding event", obj2);
+            }
+          });
+          c3 = 3;
+          return { value: "IconComponent", done: null };
+        }
+      } catch (tmp11) {
+        c3 = 3;
+        throw tmp11;
+      }
+    }
+  });
+  return obj(...arguments);
+};
 function getKeyboardMapper() {
-  let promise;
   let tmp;
   if (null == c17) {
     tmp = null;
-    if (null == promise) {
-      let closure_0 = _asyncToGenerator(async function(arg0, value) {
-        closure_0 = arg0;
-        if (c4 === 2) {
-          c4 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            let obj2 = { value, done: true };
-            return obj2;
-          } else {
-            return { value: "IconComponent", done: null };
-          }
-        } else {
-          try {
-            c4 = 2;
-            if (0 === c3) {
-              if (arg0 === 1) {
-                c4 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c4 = 3;
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                let closure_2 = tmp4;
-                let closure_1 = tmp;
-                c3 = 1;
-                c4 = 1;
-                const obj4 = { value: syncKeyboardLayoutMap(), done: false };
-                return obj4;
-              }
-            } else if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              obj = { value, done: true };
-              return obj;
-            } else {
-              const self = this;
-              let closure_17 = new KeyboardMapper(LinuxKeyToCode);
-              const _document = document;
-              const str = "keydown";
-              const listener = document.addEventListener("keydown", (event) => {
-                try {
-                  obj = closure_1_17;
-                  if (closure_1_17 != null) {
-                    obj.addEvent(event);
-                  }
-                } catch (tmp3) {
-                  const obj2 = { event, error: tmp3 };
-                  logger.error("KeyboardMapper - Error adding event", obj2);
-                }
-              });
-              closure_0();
-              c4 = 3;
-              return { value: "IconComponent", done: null };
-            }
-          } catch (tmp15) {
-            c4 = 3;
-            throw tmp15;
-          }
-        }
-      });
-      const self = this;
-      const self2 = this;
+    if (null == closure_18) {
+      closure_18 = createKeyboardMapper();
       tmp = null;
-      promise = new Promise(function() {
-        return closure_0(...arguments);
-      });
     }
   } else {
     tmp = c17;
@@ -283,7 +283,7 @@ obj = function _resetKeyboardMapper() {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          obj = closure_128_19();
+          obj = closure_128_20();
           if (obj != null) {
             obj.reset();
           }
@@ -299,7 +299,6 @@ obj = function _resetKeyboardMapper() {
   return obj(...arguments);
 };
 function reverseLookupCodeFromKey(toLocaleLowerCase) {
-  let promise;
   let tmp;
   if (null != toLocaleLowerCase) {
     let toLocaleLowerCaseResult = toLocaleLowerCase;
@@ -312,79 +311,9 @@ function reverseLookupCodeFromKey(toLocaleLowerCase) {
     let tmp4;
     if (null == c17) {
       tmp4 = null;
-      if (null == promise) {
-        let closure_0 = _asyncToGenerator(async function(arg0, value) {
-          closure_0 = arg0;
-          if (c4 === 2) {
-            c4 = 3;
-            throw new TypeError("Generator functions may not be called on executing generators");
-          } else if (tmp3 === 3) {
-            if (arg0 === 1) {
-              throw value;
-            } else if (arg0 === 2) {
-              let obj2 = { value, done: true };
-              return obj2;
-            } else {
-              return { value: "IconComponent", done: null };
-            }
-          } else {
-            try {
-              c4 = 2;
-              if (0 === c3) {
-                if (arg0 === 1) {
-                  c4 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c4 = 3;
-                  const obj3 = { value, done: true };
-                  return obj3;
-                } else {
-                  let closure_2 = tmp4;
-                  let closure_1 = tmp;
-                  c3 = 1;
-                  c4 = 1;
-                  const obj4 = { value: syncKeyboardLayoutMap(), done: false };
-                  return obj4;
-                }
-              } else if (arg0 === 1) {
-                c4 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c4 = 3;
-                obj = { value, done: true };
-                return obj;
-              } else {
-                const self = this;
-                let closure_17 = new KeyboardMapper(LinuxKeyToCode);
-                const _document = document;
-                const str = "keydown";
-                const listener = document.addEventListener("keydown", (event) => {
-                  try {
-                    obj = closure_1_17;
-                    if (closure_1_17 != null) {
-                      obj.addEvent(event);
-                    }
-                  } catch (tmp3) {
-                    const obj2 = { event, error: tmp3 };
-                    logger.error("KeyboardMapper - Error adding event", obj2);
-                  }
-                });
-                closure_0();
-                c4 = 3;
-                return { value: "IconComponent", done: null };
-              }
-            } catch (tmp15) {
-              c4 = 3;
-              throw tmp15;
-            }
-          }
-        });
-        const self = this;
-        const self2 = this;
+      if (null == closure_18) {
+        closure_18 = createKeyboardMapper();
         tmp4 = null;
-        promise = new Promise(function() {
-          return closure_0(...arguments);
-        });
       }
     } else {
       tmp4 = c17;
@@ -397,7 +326,6 @@ function reverseLookupCodeFromKey(toLocaleLowerCase) {
   }
 }
 function getExactKeyboardEventMatchFromAny(keyCode) {
-  let promise;
   let tmp;
   keyCode = keyCode.keyCode;
   if (null != keyCode.key) {
@@ -412,79 +340,9 @@ function getExactKeyboardEventMatchFromAny(keyCode) {
     let tmp6;
     if (null == c17) {
       tmp6 = null;
-      if (null == promise) {
-        let closure_0 = _asyncToGenerator(async function(arg0, value) {
-          closure_0 = arg0;
-          if (c4 === 2) {
-            c4 = 3;
-            throw new TypeError("Generator functions may not be called on executing generators");
-          } else if (tmp3 === 3) {
-            if (arg0 === 1) {
-              throw value;
-            } else if (arg0 === 2) {
-              let obj2 = { value, done: true };
-              return obj2;
-            } else {
-              return { value: "IconComponent", done: null };
-            }
-          } else {
-            try {
-              c4 = 2;
-              if (0 === c3) {
-                if (arg0 === 1) {
-                  c4 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c4 = 3;
-                  const obj3 = { value, done: true };
-                  return obj3;
-                } else {
-                  let closure_2 = tmp4;
-                  let closure_1 = tmp;
-                  c3 = 1;
-                  c4 = 1;
-                  const obj4 = { value: syncKeyboardLayoutMap(), done: false };
-                  return obj4;
-                }
-              } else if (arg0 === 1) {
-                c4 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c4 = 3;
-                obj = { value, done: true };
-                return obj;
-              } else {
-                const self = this;
-                let closure_17 = new KeyboardMapper(LinuxKeyToCode);
-                const _document = document;
-                const str = "keydown";
-                const listener = document.addEventListener("keydown", (event) => {
-                  try {
-                    obj = closure_1_17;
-                    if (closure_1_17 != null) {
-                      obj.addEvent(event);
-                    }
-                  } catch (tmp3) {
-                    const obj2 = { event, error: tmp3 };
-                    logger.error("KeyboardMapper - Error adding event", obj2);
-                  }
-                });
-                closure_0();
-                c4 = 3;
-                return { value: "IconComponent", done: null };
-              }
-            } catch (tmp15) {
-              c4 = 3;
-              throw tmp15;
-            }
-          }
-        });
-        const self = this;
-        const self2 = this;
+      if (null == closure_18) {
+        closure_18 = createKeyboardMapper();
         tmp6 = null;
-        promise = new Promise(function() {
-          return closure_0(...arguments);
-        });
       }
     } else {
       tmp6 = c17;
@@ -516,81 +374,10 @@ if (!PlatformUtils.isLinux()) {
   LinuxKeyToCode = MacosKeyToCode;
 }
 function initializeKeyboardMapper() {
-  let promise;
-  if (null == promise) {
-    let closure_0 = _asyncToGenerator(async function(arg0, value) {
-      closure_0 = arg0;
-      if (c4 === 2) {
-        c4 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          let obj2 = { value, done: true };
-          return obj2;
-        } else {
-          return { value: "IconComponent", done: null };
-        }
-      } else {
-        try {
-          c4 = 2;
-          if (0 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              const obj3 = { value, done: true };
-              return obj3;
-            } else {
-              let closure_2 = tmp4;
-              let closure_1 = tmp;
-              c3 = 1;
-              c4 = 1;
-              const obj4 = { value: syncKeyboardLayoutMap(), done: false };
-              return obj4;
-            }
-          } else if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            obj = { value, done: true };
-            return obj;
-          } else {
-            const self = this;
-            let closure_17 = new KeyboardMapper(LinuxKeyToCode);
-            const _document = document;
-            const str = "keydown";
-            const listener = document.addEventListener("keydown", (event) => {
-              try {
-                obj = closure_1_17;
-                if (closure_1_17 != null) {
-                  obj.addEvent(event);
-                }
-              } catch (tmp3) {
-                const obj2 = { event, error: tmp3 };
-                logger.error("KeyboardMapper - Error adding event", obj2);
-              }
-            });
-            closure_0();
-            c4 = 3;
-            return { value: "IconComponent", done: null };
-          }
-        } catch (tmp15) {
-          c4 = 3;
-          throw tmp15;
-        }
-      }
-    });
-    const self = this;
-    const self2 = this;
-    promise = new Promise(function() {
-      return closure_0(...arguments);
-    });
+  if (null == closure_18) {
+    closure_18 = createKeyboardMapper();
   }
-  return promise;
+  return closure_18;
 }
 let set = new Set([192, 220, 222, 223, 229]);
 const frozen = Object.freeze({ KeyA: "a", KeyB: "b", KeyC: "c", KeyD: "d", KeyE: "e", KeyF: "f", KeyG: "g", KeyH: "h", KeyI: "i", KeyJ: "j", KeyK: "k", KeyL: "l", KeyM: "m", KeyN: "n", KeyO: "o", KeyP: "p", KeyQ: "q", KeyR: "r", KeyS: "s", KeyT: "t", KeyU: "u", KeyV: "v", KeyW: "w", KeyX: "x", KeyY: "y", KeyZ: "z", Digit0: "0", Digit1: "1", Digit2: "2", Digit3: "3", Digit4: "4", Digit5: "5", Digit6: "6", Digit7: "7", Digit8: "8", Digit9: "9", Backquote: "`", Backslash: "\\", Quote: "'", Slash: "/", Comma: ",", Period: ".", Semicolon: ";", Equal: "=", Minus: "-", BracketLeft: "[", BracketRight: "]", IntlBackslash: "\u00A7" });
@@ -602,8 +389,8 @@ class DiscordKeyboardLayoutMap {
     }
     obj = Object.create(new.target.prototype);
     const entries = Object.entries(tmp);
-    obj.map = new Map(entries.map(f122054));
-    new Map(entries.map(f122054));
+    obj.map = new Map(entries.map(f122494));
+    new Map(entries.map(f122494));
     return obj;
   }
   get(arg0) {
@@ -643,7 +430,7 @@ Object.defineProperty(DiscordKeyboardLayoutMap.prototype, "size", {
 });
 obj = Object.create(DiscordKeyboardLayoutMap.prototype);
 let entries = Object.entries(frozen);
-let map = new Map(entries.map(f122054));
+let map = new Map(entries.map(f122494));
 obj.map = map;
 let c15 = "keyboard-layout-map";
 class BaseKeyboardMapper {
@@ -1171,11 +958,10 @@ class KeyboardMapper extends BaseKeyboardMapper {
 }
 const prototype2 = KeyboardMapper.prototype;
 let c17 = null;
-let c18 = null;
+let closure_18 = null;
 let result = size.fileFinishedImporting("utils/web/KeyboardLayoutMapUtils.tsx");
 const getLayoutMap_export = function getLayoutMap() {
   let layoutMap;
-  let promise;
   let flag = arg0;
   if (arg0 === undefined) {
     flag = false;
@@ -1186,79 +972,9 @@ const getLayoutMap_export = function getLayoutMap() {
     let tmp3;
     if (null == c17) {
       tmp3 = null;
-      if (null == promise) {
-        let closure_0 = _asyncToGenerator(async function(arg0, value) {
-          closure_0 = arg0;
-          if (c4 === 2) {
-            c4 = 3;
-            throw new TypeError("Generator functions may not be called on executing generators");
-          } else if (tmp3 === 3) {
-            if (arg0 === 1) {
-              throw value;
-            } else if (arg0 === 2) {
-              let obj2 = { value, done: true };
-              return obj2;
-            } else {
-              return { value: "IconComponent", done: null };
-            }
-          } else {
-            try {
-              c4 = 2;
-              if (0 === c3) {
-                if (arg0 === 1) {
-                  c4 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c4 = 3;
-                  const obj3 = { value, done: true };
-                  return obj3;
-                } else {
-                  let closure_2 = tmp4;
-                  let closure_1 = tmp;
-                  c3 = 1;
-                  c4 = 1;
-                  const obj4 = { value: syncKeyboardLayoutMap(), done: false };
-                  return obj4;
-                }
-              } else if (arg0 === 1) {
-                c4 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c4 = 3;
-                obj = { value, done: true };
-                return obj;
-              } else {
-                const self = this;
-                let closure_17 = new KeyboardMapper(LinuxKeyToCode);
-                const _document = document;
-                const str = "keydown";
-                const listener = document.addEventListener("keydown", (event) => {
-                  try {
-                    obj = closure_1_17;
-                    if (closure_1_17 != null) {
-                      obj.addEvent(event);
-                    }
-                  } catch (tmp3) {
-                    const obj2 = { event, error: tmp3 };
-                    logger.error("KeyboardMapper - Error adding event", obj2);
-                  }
-                });
-                closure_0();
-                c4 = 3;
-                return { value: "IconComponent", done: null };
-              }
-            } catch (tmp15) {
-              c4 = 3;
-              throw tmp15;
-            }
-          }
-        });
-        const self = this;
-        const self2 = this;
+      if (null == closure_18) {
+        closure_18 = createKeyboardMapper();
         tmp3 = null;
-        promise = new Promise(function() {
-          return closure_0(...arguments);
-        });
       }
     } else {
       tmp3 = c17;
@@ -1296,88 +1012,15 @@ export { getLayoutMap_export as getLayoutMap };
 export { reverseLookupCodeFromKey };
 export { getExactKeyboardEventMatchFromAny };
 export const getKeyboardEventShapeFromAny = function getKeyboardEventShapeFromAny(keyCode) {
-  let promise;
   const tmp = getExactKeyboardEventMatchFromAny(keyCode);
   if (null != tmp) {
     return tmp;
   } else {
     let tmp2;
     if (null == c17) {
-      const tmp3 = promise;
       tmp2 = null;
-      if (null == promise) {
-        const tmp4 = globalThis;
-        let closure_0 = _asyncToGenerator(async function(arg0, value) {
-          closure_0 = arg0;
-          if (c4 === 2) {
-            c4 = 3;
-            throw new TypeError("Generator functions may not be called on executing generators");
-          } else if (tmp3 === 3) {
-            if (arg0 === 1) {
-              throw value;
-            } else if (arg0 === 2) {
-              let obj2 = { value, done: true };
-              return obj2;
-            } else {
-              return { value: "IconComponent", done: null };
-            }
-          } else {
-            try {
-              c4 = 2;
-              if (0 === c3) {
-                if (arg0 === 1) {
-                  c4 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c4 = 3;
-                  const obj3 = { value, done: true };
-                  return obj3;
-                } else {
-                  let closure_2 = tmp4;
-                  let closure_1 = tmp;
-                  c3 = 1;
-                  c4 = 1;
-                  const obj4 = { value: syncKeyboardLayoutMap(), done: false };
-                  return obj4;
-                }
-              } else if (arg0 === 1) {
-                c4 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c4 = 3;
-                obj = { value, done: true };
-                return obj;
-              } else {
-                const self = this;
-                let closure_17 = new KeyboardMapper(LinuxKeyToCode);
-                const _document = document;
-                const str = "keydown";
-                const listener = document.addEventListener("keydown", (event) => {
-                  try {
-                    obj = closure_1_17;
-                    if (closure_1_17 != null) {
-                      obj.addEvent(event);
-                    }
-                  } catch (tmp3) {
-                    const obj2 = { event, error: tmp3 };
-                    logger.error("KeyboardMapper - Error adding event", obj2);
-                  }
-                });
-                closure_0();
-                c4 = 3;
-                return { value: "IconComponent", done: null };
-              }
-            } catch (tmp15) {
-              c4 = 3;
-              throw tmp15;
-            }
-          }
-        });
-        let self = this;
-        const self2 = this;
-        promise = new Promise(function() {
-          return closure_0(...arguments);
-        });
+      if (null == closure_18) {
+        closure_18 = createKeyboardMapper();
         tmp2 = null;
       }
     } else {
@@ -1387,17 +1030,17 @@ export const getKeyboardEventShapeFromAny = function getKeyboardEventShapeFromAn
       return null;
     } else {
       keyCode = keyCode.keyCode;
-      let tmp8;
+      let tmp4;
       if (null != keyCode.key) {
         let toLocaleLowerCaseResult = key;
         if (null != keyCode.key) {
           toLocaleLowerCaseResult = key.toLocaleLowerCase();
         }
-        tmp8 = toLocaleLowerCaseResult;
+        tmp4 = toLocaleLowerCaseResult;
       }
       const code = keyCode.code;
-      if (null != tmp8) {
-        const result = tmp2.findKeyboardEventByKey(tmp8, code, keyCode);
+      if (null != tmp4) {
+        const result = tmp2.findKeyboardEventByKey(tmp4, code, keyCode);
         if (null != result) {
           return result;
         }

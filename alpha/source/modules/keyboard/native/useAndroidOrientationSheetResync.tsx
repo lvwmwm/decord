@@ -1,9 +1,9 @@
-// Module ID: 12084
-// Function ID: 12085
+// Module ID: 12132
+// Function ID: 12133
 // Name: useAndroidOrientationSheetResync
 // Dependencies: [19, 558, 576, 1384, 2]
 
-// Module 12084 (useAndroidOrientationSheetResync)
+// Module 12132 (useAndroidOrientationSheetResync)
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

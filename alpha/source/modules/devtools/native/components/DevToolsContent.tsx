@@ -1,27 +1,27 @@
-// Module ID: 16871
-// Function ID: 16872
+// Module ID: 16947
+// Function ID: 16948
 // Name: DevToolsContent
-// Dependencies: [32, 19, 17, 10831, 5151, 1261, 21, 4945, 587, 558, 576, 12556, 504, 16872, 5195, 5173, 12413, 6859, 12415, 1505, 1633, 6854, 5625, 15647, 6938, 2]
+// Dependencies: [32, 19, 17, 10975, 5172, 1261, 21, 4966, 587, 558, 576, 12612, 504, 16948, 5216, 5194, 12469, 6887, 12471, 1505, 1633, 6882, 5645, 15723, 6966, 2]
 
-// Module 16871 (DevToolsContent)
+// Module 16947 (DevToolsContent)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import HapticUtils from "HapticUtils" /* 5173 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import Pressables from "Pressables" /* 6859 */;
-import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 12413 */;
-import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 12415 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 15647 */;
-import useSortedDevToolsScreens from "useSortedDevToolsScreens" /* 16872 */;
+import HapticUtils from "HapticUtils" /* 5194 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import Pressables from "Pressables" /* 6887 */;
+import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 12469 */;
+import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 12471 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 15723 */;
+import useSortedDevToolsScreens from "useSortedDevToolsScreens" /* 16948 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 10831 */;
-import ExperimentStore from "ExperimentStore" /* 5151 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 10975 */;
+import ExperimentStore from "ExperimentStore" /* 5172 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1261 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -281,7 +281,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToo
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp11 = closure_10(screenKey(12413).ArrowSmallUpIcon, {});
+      const tmp11 = closure_10(screenKey(12469).ArrowSmallUpIcon, {});
       cResult[5] = tmp11;
       tmp9 = tmp11;
     } else {
@@ -330,7 +330,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToo
                 obj2.updateSortOrder(screenKey, "down");
               }
             }
-            const tmp19 = closure_10(screenKey(12415).ArrowSmallDownIcon, {});
+            const tmp19 = closure_10(screenKey(12471).ArrowSmallDownIcon, {});
             cResult[15] = tmp19;
             tmp18 = tmp19;
           } else {
@@ -357,8 +357,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToo
           cResult[16] = end;
           cResult[17] = tmp15;
           cResult[18] = tmp17;
-          cResult[19] = closure_10(screenKey(6859).PressableOpacity, obj2);
-          const tmp22 = closure_10(screenKey(6859).PressableOpacity, obj2);
+          cResult[19] = closure_10(screenKey(6887).PressableOpacity, obj2);
+          const tmp22 = closure_10(screenKey(6887).PressableOpacity, obj2);
         }
         const items = [tmp4.button, end && tmp4.disabledButton];
         cResult[12] = tmp4.button;
@@ -370,8 +370,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToo
     cResult[6] = start;
     cResult[7] = tmp5;
     cResult[8] = tmp7;
-    cResult[9] = closure_10(screenKey(6859).PressableOpacity, obj3);
-    const tmp14 = closure_10(screenKey(6859).PressableOpacity, obj3);
+    cResult[9] = closure_10(screenKey(6887).PressableOpacity, obj3);
+    const tmp14 = closure_10(screenKey(6887).PressableOpacity, obj3);
   }
   const items1 = [tmp4.button, start && tmp4.disabledButton];
   cResult[2] = tmp4.button;
@@ -424,7 +424,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToo
     children: closure_10(ArrowSmallDownIcon.ArrowSmallDownIcon, {})
   };
   items2 = [tmp.button, ];
-  const PressableOpacity2 = tmp5(6859).PressableOpacity;
+  const PressableOpacity2 = tmp5(6887).PressableOpacity;
   if (end) {
     end = tmp.disabledButton;
   }

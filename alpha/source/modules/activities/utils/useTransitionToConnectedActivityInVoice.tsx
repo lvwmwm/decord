@@ -1,15 +1,15 @@
-// Module ID: 18404
-// Function ID: 18405
+// Module ID: 18483
+// Function ID: 18484
 // Name: useTransitionToConnectedActivityInVoice
-// Dependencies: [5, 19, 4800, 4851, 1087, 558, 576, 4869, 5590, 11299, 11250, 1123, 2]
+// Dependencies: [5, 19, 4821, 4872, 1087, 558, 576, 4890, 5611, 11343, 11294, 1123, 2]
 
-// Module 18404 (useTransitionToConnectedActivityInVoice)
+// Module 18483 (useTransitionToConnectedActivityInVoice)
 import Constants from "Constants" /* 1087 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4851 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -162,7 +162,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTransitio
                   guild_id = undefined;
                   c3 = 1;
                   c4 = 1;
-                  return { value: "test", done: true };
+                  return { value: "Reflect", done: true };
                 }
               } else {
                 if (1 === c3) {

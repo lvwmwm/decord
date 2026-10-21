@@ -1,36 +1,45 @@
-// Module ID: 12807
-// Function ID: 12808
+// Module ID: 12874
+// Function ID: 12875
 // Name: CheckpointServersStatsScreen
-// Dependencies: [17, 12779, 5973, 21, 4945, 587, 558, 576, 504, 9573, 1128, 3078, 12797, 3046, 12799, 12808, 5195, 11524, 8491, 6834, 2]
+// Dependencies: [19, 17, 12843, 5995, 21, 4966, 587, 558, 576, 504, 12866, 12869, 12861, 1128, 3056, 3088, 12863, 9603, 12875, 5216, 6862, 11574, 8518, 2]
 
-// Module 12807 (CheckpointServersStatsScreen)
+// Module 12874 (CheckpointServersStatsScreen)
 import react_native from "react-native" /* 17 */;
-import get_initialized from "get initialized" /* 504 */;
-import react from "react" /* 576 */;
+import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef3046 from "module_3046" /* 3046 */;
-import _modDef3078 from "module_3078" /* 3078 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import GuildIcon from "GuildIcon" /* 6834 */;
-import ChatIcon from "ChatIcon" /* 8491 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 11524 */;
-import CheckpointTextDefault from "CheckpointText" /* 12797 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 12799 */;
-import CheckpointRankTagDefault from "CheckpointRankTag" /* 12808 */;
-import CheckpointStore from "CheckpointStore" /* 12779 */;
-import CheckpointConstants from "CheckpointConstants" /* 5973 */;
+import intl6 from "intl" /* 1128 */;
+import _modDef3056 from "module_3056" /* 3056 */;
+import _modDef3088 from "module_3088" /* 3088 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import GuildIcon from "GuildIcon" /* 6862 */;
+import ChatIcon from "ChatIcon" /* 8518 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 11574 */;
+import CheckpointTextDefault from "CheckpointText" /* 12861 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12863 */;
+import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12866 */;
+import _modDef12869 from "module_12869" /* 12869 */;
+import CheckpointRankTagDefault from "CheckpointRankTag" /* 12875 */;
+import react from "react" /* 19 */;
+import CheckpointStore from "CheckpointStore" /* 12843 */;
+import CheckpointConstants from "CheckpointConstants" /* 5995 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
+const require = globalThis.__r;
 const GuildIconDefault = GuildIcon;
-let stats;
+let _require, stats;
 
+let CHECKPOINT_GUILD_CARD_BACKGROUND;
+let CHECKPOINT_WHITE;
 let metroImportDefault;
 let metroRequire;
 let obj10;
 let obj11;
+let obj12;
+let obj13;
+let obj14;
 let obj2;
 let obj3;
 let obj4;
@@ -41,33 +50,37 @@ let obj8;
 let obj9;
 let size;
 let size1;
-let tmp;
-const intl4 = tmp(1128);
-const ServerIcon = tmp(9573);
+let size2;
 const View = react_native.View;
 const CHECKPOINT_PRIMARY = CheckpointConstants.CHECKPOINT_PRIMARY;
-const CHECKPOINT_WHITE = CheckpointConstants.CHECKPOINT_WHITE;
+({ CHECKPOINT_GUILD_CARD_BACKGROUND, CHECKPOINT_WHITE } = CheckpointConstants);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: obj2, header: obj3, heading: obj4, title: obj5, titleText: { flexShrink: 1 }, guilds: obj6, guildCard: obj7, guildContent: obj8, guildRankRow: { flexDirection: "row" }, guildDetails: obj9, guildName: { color: CHECKPOINT_WHITE }, guildStats: obj10, guildStat: obj11, guildStatText: { fontSize: 16, lineHeight: 20 }, topGuildIcon: size, guildIcon: size1 };
+let obj = { container: obj2, globalContainer: obj3, header: obj4, heading: obj5, globalHeading: obj6, globe: { width: 75, height: 56 }, title: obj7, titleText: { flexShrink: 1 }, guilds: obj8, globalGuilds: obj9, guildCard: obj10, guildContent: obj11, guildRankRow: { flexDirection: "row" }, guildDetails: obj12, guildName: { color: CHECKPOINT_WHITE }, guildStats: obj13, guildStat: obj14, guildStatText: { fontSize: 16, lineHeight: 20 }, topGuildIcon: size, guildIcon: size1, globalGuildIcon: size2 };
 obj2 = { width: "100%", flexGrow: 1, justifyContent: "center", gap: nativeDefault.space.PX_40, paddingBottom: nativeDefault.space.PX_64 };
 createStyles = createStyles.createStyles;
-obj3 = { gap: nativeDefault.space.PX_12 };
-obj4 = { gap: nativeDefault.space.PX_8 };
-obj5 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
-obj6 = { gap: nativeDefault.space.PX_24 };
-obj7 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12, borderWidth: 1, borderColor: CHECKPOINT_PRIMARY, backgroundColor: "#04363ABF" };
-obj8 = { flex: 1, alignSelf: "stretch", gap: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_12 };
-obj9 = { gap: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_12 };
-obj10 = { flexDirection: "row", flexWrap: "wrap", columnGap: nativeDefault.space.PX_16 };
-obj11 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
+obj3 = { justifyContent: "flex-start", gap: nativeDefault.space.PX_24 };
+obj4 = { gap: nativeDefault.space.PX_12 };
+obj5 = { gap: nativeDefault.space.PX_8 };
+obj6 = { alignItems: "flex-start", gap: nativeDefault.space.PX_4 };
+obj7 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
+obj8 = { gap: nativeDefault.space.PX_24 };
+obj9 = { gap: nativeDefault.space.PX_16 };
+obj10 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12, borderWidth: 1, borderColor: CHECKPOINT_PRIMARY, backgroundColor: CHECKPOINT_GUILD_CARD_BACKGROUND };
+obj11 = { flex: 1, alignSelf: "stretch", gap: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_12 };
+obj12 = { gap: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_12 };
+obj13 = { flexDirection: "row", flexWrap: "wrap", columnGap: nativeDefault.space.PX_16 };
+obj14 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
 size = { width: 96, height: 96, borderRadius: nativeDefault.radii.none };
 size1 = { width: 72, height: 72, borderRadius: nativeDefault.radii.none };
+size2 = { width: 64, height: 64, borderRadius: nativeDefault.radii.none };
 let closure_8 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointServersStatsScreen() {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointServersStatsScreen() {
   let container;
-  let first;
+  let globalGuildIcon;
+  let globalGuilds;
+  let guilds;
   let header;
   let heading;
   let intl3;
@@ -75,558 +88,1061 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
   let items2;
   let items3;
   let items4;
-  let obj8;
+  let items5;
+  let items6;
+  let items7;
+  let obj15;
+  let obj6;
   let stringResult1;
+  let stringResult2;
   let title;
-  let tmp12;
-  let tmp9;
-  let tmp = require;
+  let tmp5;
+  let tmp6;
+  let tmp = _require;
   let tmp2 = dependencyMap;
-  let obj = react;
-  const cResult = obj.c(25);
+  let obj = require("react");
+  const cResult = obj.c(57);
   const tmp4 = closure_8();
-  const items = [CheckpointStore];
-  const obj2 = get_initialized;
-  let stateFromStores = obj2.useStateFromStores(items, () => {
-    stats = stats.stats;
-    let tmp;
-    if (stats != null) {
-      const guilds = stats.guilds;
-      if (guilds != null) {
-        tmp = guilds.guilds;
-      }
-    }
-    return tmp;
-  });
-  if (stateFromStores == null) {
-    stateFromStores = [];
-  }
-  ({ container, header, heading, title } = tmp4);
+  _require = tmp4;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
-    const tmp8 = metroRequire(ServerIcon.ServerIcon, obj3);
-    cResult[0] = tmp8;
-    first = tmp8;
-  } else {
-    first = cResult[0];
-  }
-  const titleText = tmp4.titleText;
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = intl4.intl;
-    const stringResult = intl.string(_modDef3078.Mb5E6r);
-    const toLocaleUpperCaseResult = stringResult.toLocaleUpperCase();
-    cResult[1] = toLocaleUpperCaseResult;
-    tmp9 = toLocaleUpperCaseResult;
-  } else {
-    tmp9 = cResult[1];
-  }
-  if (cResult[2] !== tmp4.titleText) {
-    const obj4 = { variant: "heading-md/extrabold", style: titleText, children: tmp9 };
-    const tmp15 = metroRequire(CheckpointTextDefault, obj4);
-    cResult[2] = tmp4.titleText;
-    cResult[3] = tmp15;
-    tmp12 = tmp15;
-  } else {
-    tmp12 = cResult[3];
-  }
-  if (cResult[4] === tmp4.title) {
-    let tmp16;
-    let tmp18;
-    if (cResult[5] === tmp12) {
-      tmp16 = cResult[6];
-    }
-    const _Symbol = Symbol;
-    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj5 = { variant: "display-lg", children: stringResult1.toLocaleUpperCase() };
-      const tmp21 = CheckpointTextDefault;
-      const intl2 = intl4.intl;
-      stringResult1 = intl2.string(_modDef3046.F0fkrh);
-      const tmp22 = metroRequire(tmp21, obj5);
-      cResult[7] = tmp22;
-      tmp18 = tmp22;
-    } else {
-      tmp18 = cResult[7];
-    }
-    if (cResult[8] === tmp4.heading) {
-      let tmp23;
-      let tmp27;
-      if (cResult[9] === tmp16) {
-        tmp23 = cResult[10];
-      }
-      const _Symbol2 = Symbol;
-      if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj6 = { variant: "heading-lg/medium", children: intl3.string(_modDef3078.IN1DaS) };
-        const tmp30 = CheckpointTextDefault;
-        intl3 = intl4.intl;
-        const tmp31 = metroRequire(tmp30, obj6);
-        cResult[11] = tmp31;
-        tmp27 = tmp31;
-      } else {
-        tmp27 = cResult[11];
-      }
-      if (cResult[12] === tmp4.header) {
-        let tmp32;
-        let tmp36;
-        if (cResult[13] === tmp23) {
-          tmp32 = cResult[14];
+    const items = [CheckpointStore];
+    const fn = function o() {
+      let guildsByMembers;
+      stats = stats.stats;
+      let tmp2;
+      const tmp = stats;
+      if (stats != null) {
+        const guilds = stats.guilds;
+        if (guilds != null) {
+          tmp2 = guilds.guilds;
         }
-        let guilds = tmp4.guilds;
-        if (cResult[15] !== stateFromStores) {
-          let tmp37;
-          const _Symbol3 = Symbol;
-          if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-            const fn = function k(arg0, index) {
+      }
+      const globalStats = tmp.globalStats;
+      const obj = { guilds: tmp2, globalGuilds: guildsByMembers };
+      guildsByMembers = undefined;
+      if (globalStats != null) {
+        const guilds2 = globalStats.guilds;
+        if (guilds2 != null) {
+          guildsByMembers = guilds2.guildsByMembers;
+        }
+      }
+      return obj;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = tmp(504);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp5, tmp6);
+  ({ guilds, globalGuilds } = stateFromStoresObject);
+  if (null != guilds) {
+    if (0 !== guilds.length) {
+      let tmp9;
+      let tmp13;
+      const _Symbol6 = Symbol;
+      ({ container, header, heading, title } = tmp4);
+      if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
+        let obj2 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
+        const tmp12 = closure_6(tmp(9603).ServerIcon, obj2);
+        cResult[26] = tmp12;
+        tmp9 = tmp12;
+      } else {
+        tmp9 = cResult[26];
+      }
+      const _Symbol = Symbol;
+      const titleText = tmp4.titleText;
+      if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl = tmp(1128).intl;
+        const stringResult = intl.string(_modDef3088.Mb5E6r);
+        const toLocaleUpperCaseResult = stringResult.toLocaleUpperCase();
+        cResult[27] = toLocaleUpperCaseResult;
+        tmp13 = toLocaleUpperCaseResult;
+      } else {
+        tmp13 = cResult[27];
+      }
+      if (cResult[28] === tmp4.titleText) {
+        let tmp16;
+        if (cResult[29] === tmp13) {
+          tmp16 = cResult[30];
+        }
+        if (cResult[31] === tmp4.title) {
+          let tmp20;
+          let tmp23;
+          if (cResult[32] === tmp16) {
+            tmp20 = cResult[33];
+          }
+          const _Symbol2 = Symbol;
+          if (cResult[34] === Symbol.for("react.memo_cache_sentinel")) {
+            const obj3 = { variant: "display-lg", children: stringResult1.toLocaleUpperCase() };
+            const tmp26 = CheckpointTextDefault;
+            const intl2 = tmp(1128).intl;
+            stringResult1 = intl2.string(_modDef3056.F0fkrh);
+            const tmp27 = closure_6(tmp26, obj3);
+            cResult[34] = tmp27;
+            tmp23 = tmp27;
+          } else {
+            tmp23 = cResult[34];
+          }
+          if (cResult[35] === tmp4.heading) {
+            if (cResult[36] === tmp20) {
+              let tmp28;
+              let tmp32;
+              if (cResult[37] === tmp23) {
+                tmp28 = cResult[38];
+              }
+              const _Symbol3 = Symbol;
+              if (cResult[39] === Symbol.for("react.memo_cache_sentinel")) {
+                const obj4 = { variant: "heading-lg/medium", children: intl3.string(_modDef3088.IN1DaS) };
+                const tmp35 = CheckpointTextDefault;
+                intl3 = tmp(1128).intl;
+                const tmp36 = closure_6(tmp35, obj4);
+                cResult[39] = tmp36;
+                tmp32 = tmp36;
+              } else {
+                tmp32 = cResult[39];
+              }
+              if (cResult[40] === tmp4.header) {
+                let tmp37;
+                let tmp42;
+                if (cResult[41] === tmp28) {
+                  tmp37 = cResult[42];
+                }
+                if (cResult[43] === guilds) {
+                  if (cResult[44] === tmp4.guildIcon) {
+                    if (cResult[45] === tmp4.topGuildIcon) {
+                      tmp42 = cResult[46];
+                    }
+                    if (cResult[50] === tmp4.guilds) {
+                      let tmp45;
+                      if (cResult[51] === tmp42) {
+                        tmp45 = cResult[52];
+                      }
+                      if (cResult[53] === tmp4.container) {
+                        if (cResult[54] === tmp37) {
+                          let tmp48;
+                          if (cResult[55] === tmp45) {
+                            tmp48 = cResult[56];
+                          }
+                          return tmp48;
+                        }
+                      }
+                      class K {
+                        constructor(arg0, arg1) {
+                          let guild;
+                          let numMessagesSent;
+                          let numVoiceMinutes;
+                          ({ guild, numMessagesSent, numVoiceMinutes } = arg0);
+                          let tmp = 0 === arg1;
+                          const obj = { guild, rank: arg1 + 1, iconStyle: tmp ? globalGuildIcon.topGuildIcon : globalGuildIcon.guildIcon, children: tmp };
+                          const tmp3 = closure_9;
+                          if (tmp) {
+                            const tmp5 = closure_10;
+                            if (numMessagesSent == null) {
+                              numMessagesSent = 0;
+                            }
+                            const obj2 = { numMessagesSent, numVoiceMinutes };
+                            if (numVoiceMinutes == null) {
+                              numVoiceMinutes = 0;
+                            }
+                            tmp = tmp2(tmp5, obj2);
+                          }
+                          return metroRequire(tmp3, obj, guild.id);
+                        }
+                      }
+                      const obj5 = { children: closure_7(View, obj6) };
+                      obj6 = { style: container, children: items1 };
+                      items1 = [tmp37, tmp45];
+                      const tmp50 = CheckpointScreenDefault;
+                      const tmp53 = closure_6(tmp50, obj5);
+                      cResult[53] = tmp4.container;
+                      cResult[54] = tmp37;
+                      cResult[55] = tmp45;
+                      cResult[56] = tmp53;
+                      tmp48 = tmp53;
+                    }
+                    class K {
+                      constructor(arg0, arg1) {
+                        let guild;
+                        let numMessagesSent;
+                        let numVoiceMinutes;
+                        ({ guild, numMessagesSent, numVoiceMinutes } = arg0);
+                        let tmp = 0 === arg1;
+                        const obj = { guild, rank: arg1 + 1, iconStyle: tmp ? globalGuildIcon.topGuildIcon : globalGuildIcon.guildIcon, children: tmp };
+                        const tmp3 = closure_9;
+                        if (tmp) {
+                          const tmp5 = closure_10;
+                          if (numMessagesSent == null) {
+                            numMessagesSent = 0;
+                          }
+                          const obj2 = { numMessagesSent, numVoiceMinutes };
+                          if (numVoiceMinutes == null) {
+                            numVoiceMinutes = 0;
+                          }
+                          tmp = tmp2(tmp5, obj2);
+                        }
+                        return metroRequire(tmp3, obj, guild.id);
+                      }
+                    }
+                    const obj7 = { style: tmp41, children: tmp42 };
+                    const tmp47 = closure_6(View, obj7);
+                    cResult[50] = tmp4.guilds;
+                    cResult[51] = tmp42;
+                    cResult[52] = tmp47;
+                    tmp45 = tmp47;
+                  }
+                }
+                if (cResult[47] === tmp4.guildIcon) {
+                  let tmp43;
+                  if (cResult[48] === tmp4.topGuildIcon) {
+                    tmp43 = cResult[49];
+                  }
+                  const mapped = guilds.map(tmp43);
+                  class K {
+                    constructor(arg0, arg1) {
+                      let guild;
+                      let numMessagesSent;
+                      let numVoiceMinutes;
+                      ({ guild, numMessagesSent, numVoiceMinutes } = arg0);
+                      let tmp = 0 === arg1;
+                      const obj = { guild, rank: arg1 + 1, iconStyle: tmp ? globalGuildIcon.topGuildIcon : globalGuildIcon.guildIcon, children: tmp };
+                      const tmp3 = closure_9;
+                      if (tmp) {
+                        const tmp5 = closure_10;
+                        if (numMessagesSent == null) {
+                          numMessagesSent = 0;
+                        }
+                        const obj2 = { numMessagesSent, numVoiceMinutes };
+                        if (numVoiceMinutes == null) {
+                          numVoiceMinutes = 0;
+                        }
+                        tmp = tmp2(tmp5, obj2);
+                      }
+                      return metroRequire(tmp3, obj, guild.id);
+                    }
+                  }
+                  cResult[44] = tmp4.guildIcon;
+                  cResult[45] = tmp4.topGuildIcon;
+                  cResult[46] = mapped;
+                  tmp42 = mapped;
+                }
+                class K {
+                  constructor(arg0, arg1) {
+                    let guild;
+                    let numMessagesSent;
+                    let numVoiceMinutes;
+                    ({ guild, numMessagesSent, numVoiceMinutes } = arg0);
+                    let tmp = 0 === arg1;
+                    const obj = { guild, rank: arg1 + 1, iconStyle: tmp ? globalGuildIcon.topGuildIcon : globalGuildIcon.guildIcon, children: tmp };
+                    const tmp3 = closure_9;
+                    if (tmp) {
+                      const tmp5 = closure_10;
+                      if (numMessagesSent == null) {
+                        numMessagesSent = 0;
+                      }
+                      const obj2 = { numMessagesSent, numVoiceMinutes };
+                      if (numVoiceMinutes == null) {
+                        numVoiceMinutes = 0;
+                      }
+                      tmp = tmp2(tmp5, obj2);
+                    }
+                    return metroRequire(tmp3, obj, guild.id);
+                  }
+                }
+                cResult[47] = tmp4.guildIcon;
+                cResult[48] = tmp4.topGuildIcon;
+                cResult[49] = K;
+                tmp43 = K;
+              }
+              const obj8 = { style: header, children: items2 };
+              items2 = [tmp28, tmp32];
+              const tmp40 = closure_7(View, obj8);
+              cResult[40] = tmp4.header;
+              cResult[41] = tmp28;
+              cResult[42] = tmp40;
+              tmp37 = tmp40;
+            }
+          }
+          const obj9 = { style: heading, children: items3 };
+          items3 = [tmp20, tmp23];
+          const tmp31 = closure_7(View, obj9);
+          cResult[35] = tmp4.heading;
+          cResult[36] = tmp20;
+          cResult[37] = tmp23;
+          cResult[38] = tmp31;
+          tmp28 = tmp31;
+        }
+        const obj10 = { style: title, children: items4 };
+        items4 = [tmp9, tmp16];
+        const tmp22 = closure_7(View, obj10);
+        cResult[31] = tmp4.title;
+        cResult[32] = tmp16;
+        cResult[33] = tmp22;
+        tmp20 = tmp22;
+      }
+      const obj11 = { variant: "heading-md/extrabold", style: titleText, children: tmp13 };
+      const tmp19 = closure_6(CheckpointTextDefault, obj11);
+      cResult[28] = tmp4.titleText;
+      cResult[29] = tmp13;
+      cResult[30] = tmp19;
+      tmp16 = tmp19;
+    }
+  }
+  if (cResult[2] === tmp4.container) {
+    let tmp54;
+    let tmp55;
+    let tmp61;
+    if (cResult[3] === tmp4.globalContainer) {
+      tmp54 = cResult[4];
+    }
+    if (cResult[5] !== tmp4.globe) {
+      const obj12 = { uri: _modDef12869, style: tmp4.globe };
+      class K {
+        constructor(arg0, arg1) {
+          let guild;
+          let numMessagesSent;
+          let numVoiceMinutes;
+          ({ guild, numMessagesSent, numVoiceMinutes } = arg0);
+          let tmp = 0 === arg1;
+          const obj = { guild, rank: arg1 + 1, iconStyle: tmp ? globalGuildIcon.topGuildIcon : globalGuildIcon.guildIcon, children: tmp };
+          const tmp3 = closure_9;
+          if (tmp) {
+            const tmp5 = closure_10;
+            if (numMessagesSent == null) {
+              numMessagesSent = 0;
+            }
+            const obj2 = { numMessagesSent, numVoiceMinutes };
+            if (numVoiceMinutes == null) {
+              numVoiceMinutes = 0;
+            }
+            tmp = tmp2(tmp5, obj2);
+          }
+          return metroRequire(tmp3, obj, guild.id);
+        }
+      }
+      const tmp59 = closure_6(tmp58, obj12);
+      cResult[5] = tmp4.globe;
+      cResult[6] = tmp59;
+      tmp55 = tmp59;
+    } else {
+      tmp55 = cResult[6];
+    }
+    const _Symbol4 = Symbol;
+    class K {
+      constructor(arg0, arg1) {
+        let guild;
+        let numMessagesSent;
+        let numVoiceMinutes;
+        ({ guild, numMessagesSent, numVoiceMinutes } = arg0);
+        let tmp = 0 === arg1;
+        const obj = { guild, rank: arg1 + 1, iconStyle: tmp ? globalGuildIcon.topGuildIcon : globalGuildIcon.guildIcon, children: tmp };
+        const tmp3 = closure_9;
+        if (tmp) {
+          const tmp5 = closure_10;
+          if (numMessagesSent == null) {
+            numMessagesSent = 0;
+          }
+          const obj2 = { numMessagesSent, numVoiceMinutes };
+          if (numVoiceMinutes == null) {
+            numVoiceMinutes = 0;
+          }
+          tmp = tmp2(tmp5, obj2);
+        }
+        return metroRequire(tmp3, obj, guild.id);
+      }
+    }
+    if (tmp60 === Symbol.for("react.memo_cache_sentinel")) {
+      const obj13 = { variant: "display-lg", children: stringResult2.toLocaleUpperCase() };
+      class K {
+        constructor(arg0, arg1) {
+          let guild;
+          let numMessagesSent;
+          let numVoiceMinutes;
+          ({ guild, numMessagesSent, numVoiceMinutes } = arg0);
+          let tmp = 0 === arg1;
+          const obj = { guild, rank: arg1 + 1, iconStyle: tmp ? globalGuildIcon.topGuildIcon : globalGuildIcon.guildIcon, children: tmp };
+          const tmp3 = closure_9;
+          if (tmp) {
+            const tmp5 = closure_10;
+            if (numMessagesSent == null) {
+              numMessagesSent = 0;
+            }
+            const obj2 = { numMessagesSent, numVoiceMinutes };
+            if (numVoiceMinutes == null) {
+              numVoiceMinutes = 0;
+            }
+            tmp = tmp2(tmp5, obj2);
+          }
+          return metroRequire(tmp3, obj, guild.id);
+        }
+      }
+      const intl4 = tmp(1128).intl;
+      stringResult2 = intl4.string(_modDef3056.F0fkrh);
+      const tmp65 = closure_6(tmp64, obj13);
+      cResult[7] = tmp65;
+      tmp61 = tmp65;
+    } else {
+      tmp61 = cResult[7];
+    }
+    if (cResult[8] === tmp4.globalHeading) {
+      if (cResult[9] === tmp55) {
+        let tmp66;
+        if (cResult[10] === tmp61) {
+          tmp66 = cResult[11];
+        }
+        const _Symbol5 = Symbol;
+        class K {
+          constructor(arg0, arg1) {
+            let guild;
+            let numMessagesSent;
+            let numVoiceMinutes;
+            ({ guild, numMessagesSent, numVoiceMinutes } = arg0);
+            let tmp = 0 === arg1;
+            const obj = { guild, rank: arg1 + 1, iconStyle: tmp ? globalGuildIcon.topGuildIcon : globalGuildIcon.guildIcon, children: tmp };
+            const tmp3 = closure_9;
+            if (tmp) {
+              const tmp5 = closure_10;
+              if (numMessagesSent == null) {
+                numMessagesSent = 0;
+              }
+              const obj2 = { numMessagesSent, numVoiceMinutes };
+              if (numVoiceMinutes == null) {
+                numVoiceMinutes = 0;
+              }
+              tmp = tmp2(tmp5, obj2);
+            }
+            return metroRequire(tmp3, obj, guild.id);
+          }
+        }
+        if (cResult[13] === tmp4.header) {
+          let tmp72;
+          if (cResult[14] === tmp66) {
+            tmp72 = cResult[15];
+          }
+          if (cResult[16] === globalGuilds) {
+            let tmp76;
+            if (cResult[17] === tmp4.globalGuildIcon) {
+              tmp76 = cResult[18];
+            }
+            if (cResult[19] === tmp4.globalGuilds) {
+              let tmp78;
+              if (cResult[20] === tmp76) {
+                tmp78 = cResult[21];
+              }
+              if (cResult[22] === tmp54) {
+                if (cResult[23] === tmp72) {
+                  let tmp81;
+                  if (cResult[24] === tmp78) {
+                    tmp81 = cResult[25];
+                  }
+                  return tmp81;
+                }
+              }
+              class K {
+                constructor(arg0, arg1) {
+                  let guild;
+                  let numMessagesSent;
+                  let numVoiceMinutes;
+                  ({ guild, numMessagesSent, numVoiceMinutes } = arg0);
+                  let tmp = 0 === arg1;
+                  const obj = { guild, rank: arg1 + 1, iconStyle: tmp ? globalGuildIcon.topGuildIcon : globalGuildIcon.guildIcon, children: tmp };
+                  const tmp3 = closure_9;
+                  if (tmp) {
+                    const tmp5 = closure_10;
+                    if (numMessagesSent == null) {
+                      numMessagesSent = 0;
+                    }
+                    const obj2 = { numMessagesSent, numVoiceMinutes };
+                    if (numVoiceMinutes == null) {
+                      numVoiceMinutes = 0;
+                    }
+                    tmp = tmp2(tmp5, obj2);
+                  }
+                  return metroRequire(tmp3, obj, guild.id);
+                }
+              }
+              const obj14 = { children: closure_7(View, obj15) };
+              obj15 = { style: tmp54, children: items5 };
+              items5 = [tmp72, tmp78];
+              const tmp83 = CheckpointScreenDefault;
+              const tmp86 = closure_6(tmp83, obj14);
+              cResult[22] = tmp54;
+              cResult[23] = tmp72;
+              cResult[24] = tmp78;
+              cResult[25] = tmp86;
+              tmp81 = tmp86;
+            }
+            class K {
+              constructor(arg0, arg1) {
+                let guild;
+                let numMessagesSent;
+                let numVoiceMinutes;
+                ({ guild, numMessagesSent, numVoiceMinutes } = arg0);
+                let tmp = 0 === arg1;
+                const obj = { guild, rank: arg1 + 1, iconStyle: tmp ? globalGuildIcon.topGuildIcon : globalGuildIcon.guildIcon, children: tmp };
+                const tmp3 = closure_9;
+                if (tmp) {
+                  const tmp5 = closure_10;
+                  if (numMessagesSent == null) {
+                    numMessagesSent = 0;
+                  }
+                  const obj2 = { numMessagesSent, numVoiceMinutes };
+                  if (numVoiceMinutes == null) {
+                    numVoiceMinutes = 0;
+                  }
+                  tmp = tmp2(tmp5, obj2);
+                }
+                return metroRequire(tmp3, obj, guild.id);
+              }
+            }
+            const obj16 = { style: tmp4.globalGuilds, children: tmp76 };
+            const tmp80 = closure_6(View, obj16);
+            cResult[19] = tmp4.globalGuilds;
+            cResult[20] = tmp76;
+            cResult[21] = tmp80;
+            tmp78 = tmp80;
+          }
+          class K {
+            constructor(arg0, arg1) {
               let guild;
               let numMessagesSent;
               let numVoiceMinutes;
               ({ guild, numMessagesSent, numVoiceMinutes } = arg0);
-              const obj = { guild, index, numMessagesSent, numVoiceMinutes };
-              const tmp = closure_1_6;
-              const tmp2 = closure_1_9;
-              if (numMessagesSent == null) {
-                numMessagesSent = 0;
+              let tmp = 0 === arg1;
+              const obj = { guild, rank: arg1 + 1, iconStyle: tmp ? globalGuildIcon.topGuildIcon : globalGuildIcon.guildIcon, children: tmp };
+              const tmp3 = closure_9;
+              if (tmp) {
+                const tmp5 = closure_10;
+                if (numMessagesSent == null) {
+                  numMessagesSent = 0;
+                }
+                const obj2 = { numMessagesSent, numVoiceMinutes };
+                if (numVoiceMinutes == null) {
+                  numVoiceMinutes = 0;
+                }
+                tmp = tmp2(tmp5, obj2);
               }
-              if (numVoiceMinutes == null) {
-                numVoiceMinutes = 0;
-              }
-              return tmp(tmp2, obj, guild.id);
-            };
-            cResult[17] = fn;
-            tmp37 = fn;
-          } else {
-            tmp37 = cResult[17];
-          }
-          const mapped = stateFromStores.map(tmp37);
-          cResult[15] = stateFromStores;
-          cResult[16] = mapped;
-          tmp36 = mapped;
-        } else {
-          tmp36 = cResult[16];
-        }
-        if (cResult[18] === tmp4.guilds) {
-          let tmp39;
-          if (cResult[19] === tmp36) {
-            tmp39 = cResult[20];
-          }
-          if (cResult[21] === tmp4.container) {
-            if (cResult[22] === tmp32) {
-              let tmp43;
-              if (cResult[23] === tmp39) {
-                tmp43 = cResult[24];
-              }
-              return tmp43;
+              return metroRequire(tmp3, obj, guild.id);
             }
           }
-          const obj7 = { children: metroImportDefault(View, obj8) };
-          obj8 = { style: container, children: items1 };
-          items1 = [tmp32, tmp39];
-          const tmp46 = CheckpointScreenDefault;
-          const tmp49 = metroRequire(tmp46, obj7);
-          cResult[21] = tmp4.container;
-          cResult[22] = tmp32;
-          cResult[23] = tmp39;
-          cResult[24] = tmp49;
-          tmp43 = tmp49;
+          cResult[16] = globalGuilds;
+          cResult[17] = tmp4.globalGuildIcon;
+          cResult[18] = undefined;
+          tmp76 = tmp77;
         }
-        const obj9 = { style: guilds, children: tmp36 };
-        const tmp42 = metroRequire(View, obj9);
-        cResult[18] = tmp4.guilds;
-        cResult[19] = tmp36;
-        cResult[20] = tmp42;
-        tmp39 = tmp42;
+        const obj17 = { style: tmp4.header, children: items6 };
+        items6 = [tmp66, tmp71];
+        const tmp75 = closure_7(View, obj17);
+        cResult[13] = tmp4.header;
+        cResult[14] = tmp66;
+        cResult[15] = tmp75;
+        tmp72 = tmp75;
       }
-      const obj10 = { style: header, children: items2 };
-      items2 = [tmp23, tmp27];
-      const tmp35 = metroImportDefault(View, obj10);
-      cResult[12] = tmp4.header;
-      cResult[13] = tmp23;
-      cResult[14] = tmp35;
-      tmp32 = tmp35;
     }
-    const obj11 = { style: heading, children: items3 };
-    items3 = [tmp16, tmp18];
-    const tmp26 = metroImportDefault(View, obj11);
-    cResult[8] = tmp4.heading;
-    cResult[9] = tmp16;
-    cResult[10] = tmp26;
-    tmp23 = tmp26;
+    const obj18 = { style: tmp4.globalHeading, children: items7 };
+    items7 = [tmp55, tmp61];
+    const tmp69 = closure_7(View, obj18);
+    cResult[8] = tmp4.globalHeading;
+    cResult[9] = tmp55;
+    cResult[10] = tmp61;
+    cResult[11] = tmp69;
+    tmp66 = tmp69;
   }
-  const obj12 = { style: title, children: items4 };
-  items4 = [first, tmp12];
-  const tmp17 = metroImportDefault(View, obj12);
-  cResult[4] = tmp4.title;
-  cResult[5] = tmp12;
-  cResult[6] = tmp17;
-  tmp16 = tmp17;
+  const items8 = [, ];
+  ({ container: arr6[0], globalContainer: arr6[1] } = tmp4);
+  cResult[2] = tmp4.container;
+  cResult[3] = tmp4.globalContainer;
+  cResult[4] = items8;
+  tmp54 = items8;
 }) : (function CheckpointServersStatsScreen() {
-  let intl3;
-  let items1;
-  let items2;
-  let items3;
-  let items4;
-  let obj3;
-  let stringResult;
-  let stringResult1;
-  let tmp = closure_8();
-  let tmp2 = require;
-  let obj = get_initialized;
-  const items = [CheckpointStore];
-  let stateFromStores = obj.useStateFromStores(items, () => {
-    stats = stats.stats;
-    let tmp;
-    if (stats != null) {
-      const guilds = stats.guilds;
-      if (guilds != null) {
-        tmp = guilds.guilds;
-      }
-    }
-    return tmp;
-  });
-  if (stateFromStores == null) {
-    stateFromStores = [];
-  }
-  const obj2 = { children: metroImportDefault(View, obj3) };
-  const obj6 = { style: tmp.title, children: items1 };
-  items1 = [, ];
-  obj3 = { style: tmp.container, children: items4 };
-  const obj4 = { style: tmp.header, children: items3 };
-  const obj5 = { style: tmp.heading, children: items2 };
-  const obj7 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
-  const tmp4 = CheckpointScreenDefault;
-  items1[0] = metroRequire(ServerIcon.ServerIcon, obj7);
-  const obj8 = { variant: "heading-md/extrabold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
-  const tmp5 = CheckpointTextDefault;
-  const intl = intl4.intl;
-  stringResult = intl.string(_modDef3078.Mb5E6r);
-  items1[1] = metroRequire(tmp5, obj8);
-  items2 = [metroImportDefault(View, obj6), ];
-  const obj9 = { variant: "display-lg", children: stringResult1.toLocaleUpperCase() };
-  const tmp6 = CheckpointTextDefault;
-  const intl2 = intl4.intl;
-  stringResult1 = intl2.string(_modDef3046.F0fkrh);
-  items2[1] = metroRequire(tmp6, obj9);
-  items3 = [metroImportDefault(View, obj5), ];
-  const obj10 = { variant: "heading-lg/medium", children: intl3.string(_modDef3078.IN1DaS) };
-  const tmp7 = CheckpointTextDefault;
-  intl3 = intl4.intl;
-  items3[1] = metroRequire(tmp7, obj10);
-  items4 = [metroImportDefault(View, obj4), ];
-  const obj11 = {
-    style: tmp.guilds,
-    children: stateFromStores.map((item, index) => {
-      let guild;
-      let numMessagesSent;
-      let numVoiceMinutes;
-      ({ guild, numMessagesSent, numVoiceMinutes } = item);
-      const obj = { guild, index, numMessagesSent, numVoiceMinutes };
-      const tmp = closure_1_6;
-      const tmp2 = closure_1_9;
-      if (numMessagesSent == null) {
-        numMessagesSent = 0;
-      }
-      if (numVoiceMinutes == null) {
-        numVoiceMinutes = 0;
-      }
-      return tmp(tmp2, obj, guild.id);
-    })
-  };
-  items4[1] = metroRequire(View, obj11);
-  return metroRequire(tmp4, obj2);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildCard(arg0) {
-  let guild;
-  let guildCard;
-  let guildContent;
-  let index;
-  let items;
+  let globalGuildIcon;
+  let globalGuilds;
+  let guilds;
+  let intl2;
+  let intl5;
   let items1;
   let items2;
   let items3;
   let items4;
   let items5;
+  let items6;
+  let items7;
+  let items8;
+  let mapped;
+  let obj3;
+  let stringResult;
+  let stringResult1;
+  let stringResult2;
+  let tmp = closure_8();
+  _require = tmp;
+  let tmp2 = _require;
+  let tmp3 = dependencyMap;
+  let obj = require("get initialized");
+  const items = [CheckpointStore];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
+    let guildsByMembers;
+    stats = stats.stats;
+    let tmp2;
+    const tmp = stats;
+    if (stats != null) {
+      const guilds = stats.guilds;
+      if (guilds != null) {
+        tmp2 = guilds.guilds;
+      }
+    }
+    const globalStats = tmp.globalStats;
+    const obj = { guilds: tmp2, globalGuilds: guildsByMembers };
+    guildsByMembers = undefined;
+    if (globalStats != null) {
+      const guilds2 = globalStats.guilds;
+      if (guilds2 != null) {
+        guildsByMembers = guilds2.guildsByMembers;
+      }
+    }
+    return obj;
+  });
+  ({ guilds, globalGuilds } = stateFromStoresObject);
+  if (null != guilds) {
+    let tmp5Result;
+    if (0 !== guilds.length) {
+      let obj2 = { children: closure_7(View, obj3) };
+      const obj6 = { style: tmp.title, children: items1 };
+      items1 = [, ];
+      obj3 = { style: tmp.container, children: items4 };
+      const obj4 = { style: tmp.header, children: items3 };
+      const obj5 = { style: tmp.heading, children: items2 };
+      const obj7 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
+      const tmp16 = CheckpointScreenDefault;
+      items1[0] = closure_6(tmp2(9603).ServerIcon, obj7);
+      const obj8 = { variant: "heading-md/extrabold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
+      const tmp20 = CheckpointTextDefault;
+      const intl3 = tmp2(1128).intl;
+      stringResult = intl3.string(_modDef3088.Mb5E6r);
+      items1[1] = closure_6(tmp20, obj8);
+      items2 = [closure_7(View, obj6), ];
+      const obj9 = { variant: "display-lg", children: stringResult1.toLocaleUpperCase() };
+      const tmp21 = CheckpointTextDefault;
+      const intl4 = tmp2(1128).intl;
+      stringResult1 = intl4.string(_modDef3056.F0fkrh);
+      items2[1] = closure_6(tmp21, obj9);
+      items3 = [closure_7(View, obj5), ];
+      const obj10 = { variant: "heading-lg/medium", children: intl5.string(_modDef3088.IN1DaS) };
+      const tmp22 = CheckpointTextDefault;
+      intl5 = tmp2(1128).intl;
+      items3[1] = closure_6(tmp22, obj10);
+      items4 = [closure_7(View, obj4), ];
+      const obj11 = {
+        style: tmp.guilds,
+        children: guilds.map((item, index) => {
+              let guild;
+              let numMessagesSent;
+              let numVoiceMinutes;
+              ({ guild, numMessagesSent, numVoiceMinutes } = item);
+              let tmp = 0 === index;
+              const obj = { guild, rank: index + 1, iconStyle: tmp ? globalGuildIcon.topGuildIcon : globalGuildIcon.guildIcon, children: tmp };
+              const tmp3 = closure_9;
+              if (tmp) {
+                const tmp5 = closure_10;
+                if (numMessagesSent == null) {
+                  numMessagesSent = 0;
+                }
+                const obj2 = { numMessagesSent, numVoiceMinutes };
+                if (numVoiceMinutes == null) {
+                  numVoiceMinutes = 0;
+                }
+                tmp = tmp2(tmp5, obj2);
+              }
+              return metroRequire(tmp3, obj, guild.id);
+            })
+      };
+      items4[1] = closure_6(View, obj11);
+      tmp5Result = closure_6(tmp16, obj2);
+    }
+    return tmp5Result;
+  }
+  let tmp5 = closure_6;
+  const obj12 = { style: items5, children: items8 };
+  items5 = [, ];
+  ({ container: arr2[0], globalContainer: arr2[1] } = tmp);
+  const obj13 = { style: tmp.header, children: items7 };
+  const obj14 = { style: tmp.globalHeading, children: items6 };
+  const tmp6 = CheckpointScreenDefault;
+  const obj15 = { uri: _modDef12869, style: tmp.globe };
+  const tmp9 = CheckpointApngPlayerDefault;
+  items6 = [closure_6(tmp9, obj15), ];
+  const obj16 = { variant: "display-lg", children: stringResult2.toLocaleUpperCase() };
+  const tmp10 = CheckpointTextDefault;
+  const intl = tmp2(1128).intl;
+  stringResult2 = intl.string(_modDef3056.F0fkrh);
+  items6[1] = closure_6(tmp10, obj16);
+  items7 = [closure_7(View, obj14), ];
+  const obj17 = { variant: "heading-lg/medium", children: intl2.string(_modDef3088.bhnqop) };
+  const tmp11 = CheckpointTextDefault;
+  intl2 = tmp2(1128).intl;
+  items7[1] = closure_6(tmp11, obj17);
+  items8 = [closure_7(View, obj13), ];
+  const obj18 = { style: tmp.globalGuilds, children: mapped };
+  mapped = undefined;
+  const tmp7 = closure_7;
+  if (globalGuilds != null) {
+    mapped = globalGuilds.map((guild, index) => {
+      const obj = { guild, rank: index + 1, iconStyle: globalGuildIcon.globalGuildIcon };
+      return metroRequire(closure_9, obj, guild.id);
+    });
+  }
+  const obj19 = { children: tmp7(View, obj12) };
+  items8[1] = tmp5(View, obj18);
+  tmp5Result = tmp5(tmp6, obj19);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildCard(arg0) {
+  let children;
+  let guild;
+  let iconStyle;
+  let items;
+  let items1;
+  let items2;
+  let rank;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(23);
+  ({ guild, rank, iconStyle, children } = arg0);
+  const tmp4 = closure_8();
+  if (cResult[0] !== rank) {
+    const obj2 = { rank, chamferCorner: "bottom-right" };
+    const tmp8 = metroRequire(CheckpointRankTagDefault, obj2);
+    cResult[0] = rank;
+    cResult[1] = tmp8;
+    tmp5 = tmp8;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === tmp4.guildRankRow) {
+    let tmp9;
+    if (cResult[3] === tmp5) {
+      tmp9 = cResult[4];
+    }
+    if (cResult[5] === guild.name) {
+      let tmp11;
+      if (cResult[6] === tmp4.guildName) {
+        tmp11 = cResult[7];
+      }
+      if (cResult[8] === children) {
+        if (cResult[9] === tmp4.guildDetails) {
+          let tmp14;
+          if (cResult[10] === tmp11) {
+            tmp14 = cResult[11];
+          }
+          if (cResult[12] === tmp4.guildContent) {
+            if (cResult[13] === tmp9) {
+              let tmp18;
+              if (cResult[14] === tmp14) {
+                tmp18 = cResult[15];
+              }
+              if (cResult[16] === guild) {
+                let tmp22;
+                if (cResult[17] === iconStyle) {
+                  tmp22 = cResult[18];
+                }
+                if (cResult[19] === tmp4.guildCard) {
+                  if (cResult[20] === tmp18) {
+                    let tmp27;
+                    if (cResult[21] === tmp22) {
+                      tmp27 = cResult[22];
+                    }
+                    return tmp27;
+                  }
+                }
+                const obj3 = { style: tmp4.guildCard, children: items };
+                items = [tmp18, tmp22];
+                const tmp30 = metroImportDefault(View, obj3);
+                cResult[19] = tmp4.guildCard;
+                cResult[20] = tmp18;
+                cResult[21] = tmp22;
+                cResult[22] = tmp30;
+                tmp27 = tmp30;
+              }
+              const obj4 = { guild, size: GuildIcon.GuildIconSizes.XXLARGE, style: iconStyle };
+              const tmp25 = GuildIconDefault;
+              const tmp26 = metroRequire(tmp25, obj4);
+              cResult[16] = guild;
+              cResult[17] = iconStyle;
+              cResult[18] = tmp26;
+              tmp22 = tmp26;
+            }
+          }
+          const obj5 = { style: tmp4.guildContent, children: items1 };
+          items1 = [tmp9, tmp14];
+          const tmp21 = metroImportDefault(View, obj5);
+          cResult[12] = tmp4.guildContent;
+          cResult[13] = tmp9;
+          cResult[14] = tmp14;
+          cResult[15] = tmp21;
+          tmp18 = tmp21;
+        }
+      }
+      const obj6 = { style: tmp4.guildDetails, children: items2 };
+      items2 = [tmp11, children];
+      const tmp17 = metroImportDefault(View, obj6);
+      cResult[8] = children;
+      cResult[9] = tmp4.guildDetails;
+      cResult[10] = tmp11;
+      cResult[11] = tmp17;
+      tmp14 = tmp17;
+    }
+    const obj7 = { variant: "heading-lg/medium", style: tmp4.guildName, lineClamp: 1, ellipsizeMode: "tail", children: guild.name };
+    const tmp13 = metroRequire(Text_Text.Text, obj7);
+    cResult[5] = guild.name;
+    cResult[6] = tmp4.guildName;
+    cResult[7] = tmp13;
+    tmp11 = tmp13;
+  }
+  const obj8 = { style: tmp4.guildRankRow, children: tmp5 };
+  const tmp10 = metroRequire(View, obj8);
+  cResult[2] = tmp4.guildRankRow;
+  cResult[3] = tmp5;
+  cResult[4] = tmp10;
+  tmp9 = tmp10;
+}) : (function GuildCard(guild) {
+  let children;
+  let iconStyle;
+  let items;
+  let items1;
+  let items2;
+  let rank;
+  guild = guild.guild;
+  ({ rank, iconStyle, children } = guild);
+  const tmp = closure_8();
+  const obj2 = { style: tmp.guildContent, children: items };
+  items = [, ];
+  const obj = { style: tmp.guildCard, children: items2 };
+  const obj3 = { style: tmp.guildRankRow, children: metroRequire(CheckpointRankTagDefault, { rank, chamferCorner: "bottom-right" }) };
+  items[0] = metroRequire(View, obj3);
+  const obj4 = { style: tmp.guildDetails, children: items1 };
+  items1 = [, ];
+  const obj5 = { variant: "heading-lg/medium", style: tmp.guildName, lineClamp: 1, ellipsizeMode: "tail", children: guild.name };
+  items1[0] = metroRequire(Text_Text.Text, obj5);
+  items1[1] = children;
+  items[1] = metroImportDefault(View, obj4);
+  items2 = [metroImportDefault(View, obj2), ];
+  const obj6 = { guild, size: GuildIcon.GuildIconSizes.XXLARGE, style: iconStyle };
+  const tmp2 = GuildIconDefault;
+  items2[1] = metroRequire(tmp2, obj6);
+  return metroImportDefault(View, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildStats(arg0) {
+  let flag;
+  let items;
+  let items1;
+  let items2;
   let numMessagesSent;
   let numVoiceMinutes;
   let tmp10;
   let tmp11;
-  let tmp12;
   let tmp13;
-  let tmp14;
-  let tmp16;
-  let tmp21;
+  let tmp18;
+  let tmp5;
   let tmp6;
   let tmp7;
   let tmp8;
   let tmp9;
-  const obj = react;
-  const cResult = obj.c(50);
-  ({ guild, index, numVoiceMinutes, numMessagesSent } = arg0);
+  const obj = react2;
+  const cResult = obj.c(38);
+  ({ numVoiceMinutes, numMessagesSent } = arg0);
   const tmp4 = closure_8();
-  if (cResult[0] === guild.name) {
-    if (cResult[1] === index) {
-      if (cResult[2] === 0 === index) {
-        if (cResult[3] === numMessagesSent) {
-          if (cResult[4] === numVoiceMinutes) {
-            if (cResult[5] === tmp4.guildCard) {
-              if (cResult[6] === tmp4.guildContent) {
-                if (cResult[7] === tmp4.guildDetails) {
-                  if (cResult[8] === tmp4.guildName) {
-                    if (cResult[9] === tmp4.guildRankRow) {
-                      if (cResult[10] === tmp4.guildStat) {
-                        if (cResult[11] === tmp4.guildStatText) {
-                          if (cResult[12] === tmp4.guildStats) {
-                            tmp6 = cResult[13];
-                            tmp7 = cResult[14];
-                            tmp8 = cResult[15];
-                            tmp9 = cResult[16];
-                            tmp10 = cResult[17];
-                            tmp11 = cResult[18];
-                            tmp12 = cResult[19];
-                            tmp13 = cResult[20];
-                            tmp14 = cResult[21];
+  if (cResult[0] === numMessagesSent) {
+    if (cResult[1] === numVoiceMinutes) {
+      if (cResult[2] === tmp4.guildStat) {
+        if (cResult[3] === tmp4.guildStatText) {
+          let tmp30;
+          if (cResult[4] === tmp4.guildStats) {
+            tmp5 = cResult[5];
+            tmp6 = cResult[6];
+            tmp7 = cResult[7];
+            tmp8 = cResult[8];
+            tmp9 = cResult[9];
+            flag = cResult[10];
+            tmp10 = cResult[11];
+            tmp11 = cResult[12];
+          }
+          const _HermesInternal = HermesInternal;
+          const combined = "" + tmp8 + " " + tmp9;
+          const _Symbol = Symbol;
+          if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
+            const obj2 = { size: "xs", color: CHECKPOINT_PRIMARY };
+            const tmp33 = metroRequire(ChatIcon.ChatIcon, obj2);
+            cResult[23] = tmp33;
+            tmp30 = tmp33;
+          } else {
+            tmp30 = cResult[23];
+          }
+          if (cResult[24] === tmp7) {
+            let tmp34;
+            if (cResult[25] === tmp4.guildStatText) {
+              tmp34 = cResult[26];
+            }
+            if (cResult[27] === tmp5) {
+              if (cResult[28] === tmp4.guildStat) {
+                if (cResult[29] === flag) {
+                  if (cResult[30] === combined) {
+                    let tmp38;
+                    if (cResult[31] === tmp34) {
+                      tmp38 = cResult[32];
+                    }
+                    if (cResult[33] === tmp6) {
+                      if (cResult[34] === tmp10) {
+                        if (cResult[35] === tmp11) {
+                          let tmp41;
+                          if (cResult[36] === tmp38) {
+                            tmp41 = cResult[37];
                           }
-                          if (cResult[32] === tmp6) {
-                            if (cResult[33] === tmp9) {
-                              if (cResult[34] === tmp10) {
-                                let tmp33;
-                                if (cResult[35] === tmp11) {
-                                  tmp33 = cResult[36];
-                                }
-                                if (cResult[37] === tmp7) {
-                                  if (cResult[38] === tmp12) {
-                                    if (cResult[39] === tmp13) {
-                                      let tmp36;
-                                      if (cResult[40] === tmp33) {
-                                        tmp36 = cResult[41];
-                                      }
-                                      const tmp39 = 0 === index ? tmp4.topGuildIcon : tmp4.guildIcon;
-                                      if (cResult[42] === guild) {
-                                        let tmp40;
-                                        if (cResult[43] === tmp39) {
-                                          tmp40 = cResult[44];
-                                        }
-                                        if (cResult[45] === tmp8) {
-                                          if (cResult[46] === tmp40) {
-                                            if (cResult[47] === tmp14) {
-                                              let tmp45;
-                                              if (cResult[48] === tmp36) {
-                                                tmp45 = cResult[49];
-                                              }
-                                              return tmp45;
-                                            }
-                                          }
-                                        }
-                                        const obj2 = { style: tmp14, children: items };
-                                        items = [tmp36, tmp40];
-                                        const tmp47 = metroImportDefault(tmp8, obj2);
-                                        cResult[45] = tmp8;
-                                        cResult[46] = tmp40;
-                                        cResult[47] = tmp14;
-                                        cResult[48] = tmp36;
-                                        cResult[49] = tmp47;
-                                        tmp45 = tmp47;
-                                      }
-                                      const obj3 = { guild, size: GuildIcon.GuildIconSizes.XXLARGE, style: tmp39 };
-                                      const tmp43 = GuildIconDefault;
-                                      const tmp44 = metroRequire(tmp43, obj3);
-                                      cResult[42] = guild;
-                                      cResult[43] = tmp39;
-                                      cResult[44] = tmp44;
-                                      tmp40 = tmp44;
-                                    }
-                                  }
-                                }
-                                const obj4 = { style: tmp12, children: items1 };
-                                items1 = [tmp13, tmp33];
-                                const tmp38 = metroImportDefault(tmp7, obj4);
-                                cResult[37] = tmp7;
-                                cResult[38] = tmp12;
-                                cResult[39] = tmp13;
-                                cResult[40] = tmp33;
-                                cResult[41] = tmp38;
-                                tmp36 = tmp38;
-                              }
-                            }
-                          }
-                          const obj5 = { style: tmp9, children: items2 };
-                          items2 = [tmp10, tmp11];
-                          const tmp35 = metroImportDefault(tmp6, obj5);
-                          cResult[32] = tmp6;
-                          cResult[33] = tmp9;
-                          cResult[34] = tmp10;
-                          cResult[35] = tmp11;
-                          cResult[36] = tmp35;
-                          tmp33 = tmp35;
+                          return tmp41;
                         }
                       }
                     }
+                    const obj3 = { style: tmp10, children: items };
+                    items = [tmp11, tmp38];
+                    const tmp43 = metroImportDefault(tmp6, obj3);
+                    cResult[33] = tmp6;
+                    cResult[34] = tmp10;
+                    cResult[35] = tmp11;
+                    cResult[36] = tmp38;
+                    cResult[37] = tmp43;
+                    tmp41 = tmp43;
                   }
                 }
               }
             }
+            const obj4 = { accessible: flag, accessibilityLabel: combined, style: tmp4.guildStat, children: items1 };
+            items1 = [tmp30, tmp34];
+            const tmp40 = metroImportDefault(tmp5, obj4);
+            cResult[27] = tmp5;
+            cResult[28] = tmp4.guildStat;
+            cResult[29] = flag;
+            cResult[30] = combined;
+            cResult[31] = tmp34;
+            cResult[32] = tmp40;
+            tmp38 = tmp40;
           }
+          const obj5 = { variant: "experimental/mono-md/bold", style: tmp4.guildStatText, children: tmp7 };
+          const tmp37 = metroRequire(CheckpointTextDefault, obj5);
+          cResult[24] = tmp7;
+          cResult[25] = tmp4.guildStatText;
+          cResult[26] = tmp37;
+          tmp34 = tmp37;
         }
       }
     }
   }
   const rounded = Math.round(numVoiceMinutes);
-  if (cResult[22] !== numMessagesSent) {
+  if (cResult[13] !== numMessagesSent) {
     const _Math = Math;
     const rounded1 = Math.round(numMessagesSent);
-    cResult[22] = numMessagesSent;
-    cResult[23] = rounded1;
-    tmp16 = rounded1;
+    cResult[13] = numMessagesSent;
+    cResult[14] = rounded1;
+    tmp13 = rounded1;
   } else {
-    tmp16 = cResult[23];
+    tmp13 = cResult[14];
   }
   const intl = tmp(1128).intl;
-  const formatToPlainStringResult = intl.formatToPlainString(_modDef3046.UZbUtl, { numMinutes: rounded });
+  const formatToPlainStringResult = intl.formatToPlainString(_modDef3056.UZbUtl, { numMinutes: rounded });
   const intl2 = tmp(1128).intl;
-  ({ guildCard, guildContent } = tmp4);
-  const sum = index + 1;
-  const stringResult = intl2.string(_modDef3046.wWKySP);
-  if (cResult[24] !== sum) {
-    const obj6 = { rank: sum, chamferCorner: "bottom-right" };
-    const tmp23 = metroRequire(CheckpointRankTagDefault, obj6);
-    cResult[24] = sum;
-    cResult[25] = tmp23;
-    tmp21 = tmp23;
+  const guildStats = tmp4.guildStats;
+  const stringResult = intl2.string(_modDef3056.wWKySP);
+  const combined1 = "" + rounded + " " + formatToPlainStringResult.toLocaleLowerCase();
+  if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj6 = { size: "xs", color: CHECKPOINT_PRIMARY };
+    const tmp21 = metroRequire(MicrophoneIcon.MicrophoneIcon, obj6);
+    cResult[15] = tmp21;
+    tmp18 = tmp21;
   } else {
-    tmp21 = cResult[25];
+    tmp18 = cResult[15];
   }
-  if (cResult[26] === tmp4.guildRankRow) {
-    let tmp24;
-    if (cResult[27] === tmp21) {
-      tmp24 = cResult[28];
+  if (cResult[16] === tmp4.guildStatText) {
+    let tmp22;
+    if (cResult[17] === rounded) {
+      tmp22 = cResult[18];
     }
-    const guildDetails = tmp4.guildDetails;
-    if (cResult[29] === guild.name) {
-      let tmp26;
-      if (cResult[30] === tmp4.guildName) {
-        tmp26 = cResult[31];
+    if (cResult[19] === tmp4.guildStat) {
+      if (cResult[20] === combined1) {
+        let tmp24;
+        if (cResult[21] === tmp22) {
+          tmp24 = cResult[22];
+        }
+        const toLocaleLowerCaseResult = stringResult.toLocaleLowerCase();
+        cResult[0] = numMessagesSent;
+        cResult[1] = numVoiceMinutes;
+        cResult[2] = tmp4.guildStat;
+        cResult[3] = tmp4.guildStatText;
+        cResult[4] = tmp4.guildStats;
+        cResult[5] = View;
+        cResult[6] = View;
+        cResult[7] = tmp13;
+        cResult[8] = tmp13;
+        cResult[9] = toLocaleLowerCaseResult;
+        cResult[10] = true;
+        cResult[11] = guildStats;
+        cResult[12] = tmp24;
+        tmp11 = tmp24;
+        tmp10 = guildStats;
+        flag = true;
+        tmp9 = toLocaleLowerCaseResult;
+        tmp8 = tmp13;
+        tmp7 = tmp13;
+        tmp6 = tmp16;
+        tmp5 = tmp16;
       }
-      let tmp29 = tmp5;
-      if (tmp29) {
-        const obj7 = { style: tmp4.guildStats, children: items4 };
-        const _HermesInternal = HermesInternal;
-        const obj8 = { accessible: true, accessibilityLabel: "" + rounded + " " + formatToPlainStringResult.toLocaleLowerCase(), style: tmp4.guildStat, children: items3 };
-        const obj9 = { size: "xs", color: CHECKPOINT_PRIMARY };
-        items3 = [metroRequire(MicrophoneIcon.MicrophoneIcon, obj9), ];
-        const obj10 = { variant: "experimental/mono-md/bold", style: tmp4.guildStatText, children: rounded };
-        items3[1] = metroRequire(CheckpointTextDefault, obj10);
-        items4 = [metroImportDefault(View, obj8), ];
-        const _HermesInternal2 = HermesInternal;
-        const obj11 = { accessible: true, accessibilityLabel: "" + tmp16 + " " + stringResult.toLocaleLowerCase(), style: tmp4.guildStat, children: items5 };
-        const obj12 = { size: "xs", color: CHECKPOINT_PRIMARY };
-        items5 = [metroRequire(ChatIcon.ChatIcon, obj12), ];
-        const obj13 = { variant: "experimental/mono-md/bold", style: tmp4.guildStatText, children: tmp16 };
-        items5[1] = metroRequire(CheckpointTextDefault, obj13);
-        items4[1] = metroImportDefault(View, obj11);
-        tmp29 = metroImportDefault(tmp19, obj7);
-      }
-      cResult[0] = guild.name;
-      cResult[1] = index;
-      cResult[2] = 0 === index;
-      cResult[3] = numMessagesSent;
-      cResult[4] = numVoiceMinutes;
-      cResult[5] = tmp4.guildCard;
-      cResult[6] = tmp4.guildContent;
-      cResult[7] = tmp4.guildDetails;
-      cResult[8] = tmp4.guildName;
-      cResult[9] = tmp4.guildRankRow;
-      cResult[10] = tmp4.guildStat;
-      cResult[11] = tmp4.guildStatText;
-      cResult[12] = tmp4.guildStats;
-      cResult[13] = View;
-      cResult[14] = View;
-      cResult[15] = View;
-      cResult[16] = guildDetails;
-      cResult[17] = tmp26;
-      cResult[18] = tmp29;
-      cResult[19] = guildContent;
-      cResult[20] = tmp24;
-      cResult[21] = guildCard;
-      tmp11 = tmp29;
-      tmp14 = guildCard;
-      tmp13 = tmp24;
-      tmp12 = guildContent;
-      tmp10 = tmp26;
-      tmp9 = guildDetails;
-      tmp8 = tmp19;
-      tmp7 = tmp19;
-      tmp6 = tmp19;
     }
-    const obj14 = { variant: "heading-lg/medium", style: tmp4.guildName, lineClamp: 1, ellipsizeMode: "tail", children: guild.name };
-    const tmp28 = metroRequire(Text_Text.Text, obj14);
-    cResult[29] = guild.name;
-    cResult[30] = tmp4.guildName;
-    cResult[31] = tmp28;
-    tmp26 = tmp28;
+    const obj7 = { accessible: true, accessibilityLabel: combined1, style: tmp4.guildStat, children: items2 };
+    items2 = [tmp18, tmp22];
+    const tmp26 = metroImportDefault(View, obj7);
+    cResult[19] = tmp4.guildStat;
+    cResult[20] = combined1;
+    cResult[21] = tmp22;
+    cResult[22] = tmp26;
+    tmp24 = tmp26;
   }
-  const obj15 = { style: tmp4.guildRankRow, children: tmp21 };
-  const tmp25 = metroRequire(View, obj15);
-  cResult[26] = tmp4.guildRankRow;
-  cResult[27] = tmp21;
-  cResult[28] = tmp25;
-  tmp24 = tmp25;
-}) : (function GuildCard(arg0) {
-  let guild;
-  let index;
+  const obj8 = { variant: "experimental/mono-md/bold", style: tmp4.guildStatText, children: rounded };
+  const tmp23 = metroRequire(CheckpointTextDefault, obj8);
+  cResult[16] = tmp4.guildStatText;
+  cResult[17] = rounded;
+  cResult[18] = tmp23;
+  tmp22 = tmp23;
+}) : (function GuildStats(arg0) {
   let items;
   let items1;
   let items2;
-  let items3;
-  let items4;
-  let items5;
   let numMessagesSent;
   let numVoiceMinutes;
-  let obj4;
-  ({ guild, index } = arg0);
   ({ numVoiceMinutes, numMessagesSent } = arg0);
   const tmp = closure_8();
   const rounded = Math.round(numVoiceMinutes);
   const rounded1 = Math.round(numMessagesSent);
-  const intl = intl4.intl;
-  const formatToPlainStringResult = intl.formatToPlainString(_modDef3046.UZbUtl, { numMinutes: rounded });
-  const intl2 = intl4.intl;
-  const obj = { style: tmp.guildCard, children: items5 };
-  const obj2 = { style: tmp.guildContent, children: items };
-  const obj3 = { style: tmp.guildRankRow, children: metroRequire(CheckpointRankTagDefault, obj4) };
-  obj4 = { rank: index + 1, chamferCorner: "bottom-right" };
-  const stringResult = intl2.string(_modDef3046.wWKySP);
-  items = [metroRequire(View, obj3), ];
-  const obj5 = { style: tmp.guildDetails, children: items1 };
-  items1 = [, ];
-  const obj6 = { variant: "heading-lg/medium", style: tmp.guildName, lineClamp: 1, ellipsizeMode: "tail", children: guild.name };
-  items1[0] = metroRequire(Text_Text.Text, obj6);
-  let tmp8Result = tmp2;
-  if (tmp8Result) {
-    const obj7 = { style: tmp.guildStats, children: items3 };
-    const _HermesInternal = HermesInternal;
-    const obj8 = { accessible: true, accessibilityLabel: "" + rounded + " " + formatToPlainStringResult.toLocaleLowerCase(), style: tmp.guildStat, children: items2 };
-    const obj9 = { size: "xs", color: CHECKPOINT_PRIMARY };
-    items2 = [metroRequire(MicrophoneIcon.MicrophoneIcon, obj9), ];
-    const obj10 = { variant: "experimental/mono-md/bold", style: tmp.guildStatText, children: rounded };
-    items2[1] = metroRequire(CheckpointTextDefault, obj10);
-    items3 = [metroImportDefault(View, obj8), ];
-    const _HermesInternal2 = HermesInternal;
-    const obj11 = { accessible: true, accessibilityLabel: "" + rounded1 + " " + stringResult.toLocaleLowerCase(), style: tmp.guildStat, children: items4 };
-    const obj12 = { size: "xs", color: CHECKPOINT_PRIMARY };
-    items4 = [metroRequire(ChatIcon.ChatIcon, obj12), ];
-    const obj13 = { variant: "experimental/mono-md/bold", style: tmp.guildStatText, children: rounded1 };
-    items4[1] = metroRequire(CheckpointTextDefault, obj13);
-    items3[1] = metroImportDefault(View, obj11);
-    tmp8Result = tmp8(tmp9, obj7);
-  }
-  items1[1] = tmp8Result;
-  items[1] = metroImportDefault(View, obj5);
-  items5 = [metroImportDefault(View, obj2), ];
-  const obj14 = { guild, size: GuildIcon.GuildIconSizes.XXLARGE, style: 0 === index ? tmp.topGuildIcon : tmp.guildIcon };
-  const tmp7Result = GuildIconDefault;
-  items5[1] = metroRequire(tmp7Result, obj14);
+  const intl = intl6.intl;
+  const formatToPlainStringResult = intl.formatToPlainString(_modDef3056.UZbUtl, { numMinutes: rounded });
+  const intl2 = intl6.intl;
+  const obj = { style: tmp.guildStats, children: items1 };
+  const stringResult = intl2.string(_modDef3056.wWKySP);
+  const obj2 = { accessible: true, accessibilityLabel: "" + rounded + " " + formatToPlainStringResult.toLocaleLowerCase(), style: tmp.guildStat, children: items };
+  items = [, ];
+  const obj3 = { size: "xs", color: CHECKPOINT_PRIMARY };
+  items[0] = metroRequire(MicrophoneIcon.MicrophoneIcon, obj3);
+  const obj4 = { variant: "experimental/mono-md/bold", style: tmp.guildStatText, children: rounded };
+  items[1] = metroRequire(CheckpointTextDefault, obj4);
+  items1 = [metroImportDefault(View, obj2), ];
+  const obj5 = { accessible: true, accessibilityLabel: "" + rounded1 + " " + stringResult.toLocaleLowerCase(), style: tmp.guildStat, children: items2 };
+  items2 = [, ];
+  const obj6 = { size: "xs", color: CHECKPOINT_PRIMARY };
+  items2[0] = metroRequire(ChatIcon.ChatIcon, obj6);
+  const obj7 = { variant: "experimental/mono-md/bold", style: tmp.guildStatText, children: rounded1 };
+  items2[1] = metroRequire(CheckpointTextDefault, obj7);
+  items1[1] = metroImportDefault(View, obj5);
   return metroImportDefault(View, obj);
 });
 size = size_mod;
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/screens/stats/CheckpointServersStatsScreen.tsx");
 
-export default tmp5;
+export default tmp6;

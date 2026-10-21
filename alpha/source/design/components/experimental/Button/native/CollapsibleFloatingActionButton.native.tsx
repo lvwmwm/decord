@@ -1,20 +1,20 @@
-// Module ID: 8851
-// Function ID: 8852
+// Module ID: 8878
+// Function ID: 8879
 // Name: CollapsibleFloatingActionButton
-// Dependencies: [109, 19, 21, 5211, 4945, 558, 576, 5014, 5208, 5209, 5206, 8852, 587, 2]
+// Dependencies: [109, 19, 21, 5232, 4966, 558, 576, 5035, 5229, 5230, 5227, 8879, 587, 2]
 
-// Module 8851 (CollapsibleFloatingActionButton)
+// Module 8878 (CollapsibleFloatingActionButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
-import spring from "spring" /* 5208 */;
-import springPresets from "springPresets" /* 5209 */;
-import FloatingActionButton from "FloatingActionButton" /* 8852 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
+import spring from "spring" /* 5229 */;
+import springPresets from "springPresets" /* 5230 */;
+import FloatingActionButton from "FloatingActionButton" /* 8879 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import ButtonConstants from "ButtonConstants" /* 5211 */;
-import createStyles from "createStyles" /* 4945 */;
+import ButtonConstants from "ButtonConstants" /* 5232 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collap
     tmp6 = cResult[3];
   }
   collapseText = tmp5.collapseText;
-  const tmpResult = tmp(5014);
+  const tmpResult = tmp(5035);
   class I {
     constructor() {
       obj = { minWidth: closure_0(closure_2[3]).FAB_BUTTON_SIZE, minHeight: closure_0(closure_2[3]).FAB_BUTTON_SIZE, paddingHorizontal: null, paddingVertical: null };
@@ -83,7 +83,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collap
       return obj;
     }
   }
-  let obj2 = { FAB_BUTTON_SIZE: tmp(5211).FAB_BUTTON_SIZE, withSpring: tmp(5208).withSpring, interpolate: tmp(5014).interpolate, collapseText, FAB_PADDING_HORIZONTAL: 20, FAB_PADDING_VERTICAL: buttonPadding, SUBTLE_SPRING: tmp(5209).SUBTLE_SPRING };
+  let obj2 = { FAB_BUTTON_SIZE: tmp(5232).FAB_BUTTON_SIZE, withSpring: tmp(5229).withSpring, interpolate: tmp(5035).interpolate, collapseText, FAB_PADDING_HORIZONTAL: 20, FAB_PADDING_VERTICAL: buttonPadding, SUBTLE_SPRING: tmp(5230).SUBTLE_SPRING };
   I.__closure = obj2;
   I.__workletHash = 14478886959428;
   I.__initData = __initData;
@@ -99,7 +99,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collap
       }
     }
   }
-  const BaseTextButton = tmp(5206).BaseTextButton;
+  const BaseTextButton = tmp(5227).BaseTextButton;
   const merged = Object.assign(tmp4);
   const tmp13 = <BaseTextButton size="lg" variant="primary" textVariant="text-md/semibold" collapseText={collapseText} style={tmp6} pillStyle={animatedStyle} />;
   cResult[4] = animatedStyle;
@@ -114,7 +114,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collap
   ({ state, style } = arg0);
   const collapseText = state.collapseText;
   const merged = Object.assign(arg0, Object.assign({ state: 0, style: 0 }));
-  let obj = collapseText(5014);
+  let obj = collapseText(5035);
   const fn = function o() {
     let interpolateResult;
     let withSpring;
@@ -126,12 +126,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collap
     interpolateResult = obj2.interpolate(collapseText.get(), [0, 1], items);
     return obj;
   };
-  let obj2 = { FAB_BUTTON_SIZE: collapseText(5211).FAB_BUTTON_SIZE, withSpring: collapseText(5208).withSpring, interpolate: collapseText(5014).interpolate, collapseText, FAB_PADDING_HORIZONTAL: 20, FAB_PADDING_VERTICAL: buttonPadding, SUBTLE_SPRING: collapseText(5209).SUBTLE_SPRING };
+  let obj2 = { FAB_BUTTON_SIZE: collapseText(5232).FAB_BUTTON_SIZE, withSpring: collapseText(5229).withSpring, interpolate: collapseText(5035).interpolate, collapseText, FAB_PADDING_HORIZONTAL: 20, FAB_PADDING_VERTICAL: buttonPadding, SUBTLE_SPRING: collapseText(5230).SUBTLE_SPRING };
   fn.__closure = obj2;
   fn.__workletHash = 17167848237831;
   fn.__initData = __initData2;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const BaseTextButton = collapseText(5206).BaseTextButton;
+  const BaseTextButton = collapseText(5227).BaseTextButton;
   const merged1 = Object.assign(merged);
   return <BaseTextButton size="lg" variant="primary" textVariant="text-md/semibold" collapseText={collapseText} style={style} pillStyle={animatedStyle} />;
 });
@@ -201,10 +201,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollapsibleF
     tmp13 = tmp14;
   }
   if (DEFAULT_POSITION_OFFSET2 == null) {
-    DEFAULT_POSITION_OFFSET2 = tmp(8852).DEFAULT_POSITION_OFFSET;
+    DEFAULT_POSITION_OFFSET2 = tmp(8879).DEFAULT_POSITION_OFFSET;
   }
   if (DEFAULT_POSITION_OFFSET == null) {
-    DEFAULT_POSITION_OFFSET = tmp(8852).DEFAULT_POSITION_OFFSET;
+    DEFAULT_POSITION_OFFSET = tmp(8879).DEFAULT_POSITION_OFFSET;
   }
   if (cResult[10] === DEFAULT_POSITION_OFFSET2) {
     let tmp19;
@@ -252,7 +252,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollapsibleF
             }
           }
         }
-        const BaseTextButton = tmp(5206).BaseTextButton;
+        const BaseTextButton = tmp(5227).BaseTextButton;
         const merged1 = Object.assign(tmp5);
         const tmp26 = <BaseTextButton text={tmp7} size="lg" variant="primary" textVariant="text-md/semibold" icon={tmp13} style={tmp20} pillStyle={tmp11.textButtonPill} />;
         cResult[22] = tmp20;
@@ -297,18 +297,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollapsibleF
   }
   const items = [styles.button, ];
   if (positionRight == null) {
-    positionRight = tmp3(8852).DEFAULT_POSITION_OFFSET;
+    positionRight = tmp3(8879).DEFAULT_POSITION_OFFSET;
   }
   const rect = { position: "absolute", right: positionRight, bottom: positionBottom };
   if (positionBottom == null) {
-    positionBottom = tmp3(8852).DEFAULT_POSITION_OFFSET;
+    positionBottom = tmp3(8879).DEFAULT_POSITION_OFFSET;
   }
   items[1] = rect;
   if (null != state) {
     const merged1 = Object.assign(merged);
     tmp13 = <closure_12 state={state} text={text} style={items} icon={cloneElementResult} />;
   } else {
-    const BaseTextButton = tmp3(5206).BaseTextButton;
+    const BaseTextButton = tmp3(5227).BaseTextButton;
     const merged2 = Object.assign(merged);
     tmp13 = <BaseTextButton text={text} size="lg" variant="primary" textVariant="text-md/semibold" icon={cloneElementResult} style={items} pillStyle={tmp2.textButtonPill} />;
   }

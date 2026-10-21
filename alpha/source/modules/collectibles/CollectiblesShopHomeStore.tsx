@@ -1,9 +1,9 @@
-// Module ID: 5600
-// Function ID: 5601
+// Module ID: 5621
+// Function ID: 5622
 // Name: CollectiblesShopHomeStore
 // Dependencies: [504, 584, 2]
 
-// Module 5600 (CollectiblesShopHomeStore)
+// Module 5621 (CollectiblesShopHomeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,6 @@ const map5 = new Map();
 const map6 = new Map();
 const map7 = new Map();
 let c10;
-let c11;
 const Store = get_initializedDefault.Store;
 class CollectiblesShopHomesStore extends Store {
   getLastSuccessfulFetch(arg0) {
@@ -57,9 +56,6 @@ class CollectiblesShopHomesStore extends Store {
   getShopHomeConfigOverride() {
     return c10;
   }
-  getShopLayoutUrlOverride() {
-    return c11;
-  }
 }
 const prototype = CollectiblesShopHomesStore.prototype;
 CollectiblesShopHomesStore.displayName = "CollectiblesShopHomesStore";
@@ -92,9 +88,6 @@ const obj = {
   COLLECTIBLES_SET_SHOP_HOME_CONFIG_OVERRIDE: function handleSetShopHomeConfigOverride(shopHomeConfigOverride) {
     c10 = shopHomeConfigOverride.shopHomeConfigOverride;
   },
-  COLLECTIBLES_SET_SHOP_LAYOUT_URL_OVERRIDE: function handleSetShopLayoutUrlOverride(shopLayoutUrlOverride) {
-    c11 = shopLayoutUrlOverride.shopLayoutUrlOverride;
-  },
   LOGOUT: function reset() {
     map6.clear();
     map7.clear();
@@ -105,7 +98,6 @@ const obj = {
     map1.clear();
     map5.clear();
     c10 = undefined;
-    c11 = undefined;
   }
 };
 const collectiblesShopHomesStore = new CollectiblesShopHomesStore(DispatcherDefault, obj);

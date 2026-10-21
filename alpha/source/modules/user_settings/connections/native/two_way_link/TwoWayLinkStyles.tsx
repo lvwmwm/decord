@@ -1,11 +1,11 @@
-// Module ID: 9546
-// Function ID: 9547
+// Module ID: 9576
+// Function ID: 9577
 // Name: TwoWayLinkStyles
-// Dependencies: [4945, 587, 2]
+// Dependencies: [4966, 587, 2]
 
-// Module 9546 (TwoWayLinkStyles)
+// Module 9576 (TwoWayLinkStyles)
 import nativeDefault from "native" /* 587 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import size from "module_2" /* 2 */;
 
 let createStyles = createStyles_mod;

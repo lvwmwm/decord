@@ -1,18 +1,18 @@
-// Module ID: 12993
-// Function ID: 12994
+// Module ID: 13061
+// Function ID: 13062
 // Name: VocalChannelJoinButton
-// Dependencies: [19, 17, 4880, 5591, 1087, 21, 4945, 587, 1384, 558, 576, 9637, 5166, 4952, 10690, 573, 6645, 6639, 6591, 12994, 8517, 8521, 1128, 5195, 5205, 2]
+// Dependencies: [19, 17, 4901, 5612, 1087, 21, 4966, 587, 1384, 558, 576, 9667, 5187, 4973, 10834, 573, 6673, 6667, 6619, 13062, 8544, 8548, 1128, 5216, 5226, 2]
 
-// Module 12993 (VocalChannelJoinButton)
+// Module 13061 (VocalChannelJoinButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PermissionStore from "PermissionStore" /* 4880 */;
-import VoiceStateStore from "VoiceStateStore" /* 5591 */;
+import PermissionStore from "PermissionStore" /* 4901 */;
+import VoiceStateStore from "VoiceStateStore" /* 5612 */;
 import Constants from "Constants" /* 1087 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -242,19 +242,19 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (small === undefined) {
     small = false;
   }
-  const tmp2 = voiceStates(9637)();
-  const tmp3 = voiceStates(5166)();
-  const obj = channel(4952);
+  const tmp2 = voiceStates(9667)();
+  const tmp3 = voiceStates(5187)();
+  const obj = channel(4973);
   const tmp5 = closure_11(tmp2, obj.isThemeLight(tmp3));
-  const obj2 = channel(10690);
+  const obj2 = channel(10834);
   const isConnectedToVoiceChannel = obj2.useIsConnectedToVoiceChannel(channel);
   const items = [PermissionStore];
   const obj3 = channel(573);
   const stateFromStores = obj3.useStateFromStores(items, () => !PermissionStore.can(constants.CONNECT, channel));
-  const obj4 = channel(6645);
-  const stageParticipantsCount = obj4.useStageParticipantsCount(channel.id, channel(6639).StageChannelParticipantNamedIndex.AUDIENCE);
+  const obj4 = channel(6673);
+  const stageParticipantsCount = obj4.useStageParticipantsCount(channel.id, channel(6667).StageChannelParticipantNamedIndex.AUDIENCE);
   const isGuildStageVoiceResult = channel.isGuildStageVoice();
-  const obj5 = channel(6591);
+  const obj5 = channel(6619);
   obj5.useStageHasMedia(channel.id) && isGuildStageVoiceResult;
   const items1 = [VoiceStateStore];
   const tmp4Result = channel(573);
@@ -269,9 +269,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     return null != found;
   }, items2);
-  const tmp4Result3 = channel(12994);
+  const tmp4Result3 = channel(13062);
   const connectedUserLimit = tmp4Result3.useConnectedUserLimit({ channel, video: tmp14 });
-  const tmp4Result4 = channel(12994);
+  const tmp4Result4 = channel(13062);
   let connectedUserLimitFormatted = tmp4Result4.useConnectedUserLimitFormatted({ channel, video: tmp14, userCount: sum });
   let tmp19 = null;
   const tmp17 = !stateFromStores && !isConnectedToVoiceChannel && null != connectedUserLimitFormatted && sum > 0 && sum >= connectedUserLimit / 2 + 1;
@@ -279,7 +279,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     let tmp20Result;
     if (small) {
       const obj6 = { accessibilityRole: "none", pointerEvents: "none", onPress, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no", style: tmp5.joinButton, children: null };
-      const Text = tmp4(5195).Text;
+      const Text = tmp4(5216).Text;
       const tmp27 = closure_5;
       if (connectedUserLimitFormatted == null) {
         const intl2 = tmp4(1128).intl;
@@ -288,7 +288,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       tmp20Result = tmp20(tmp27, obj6);
     } else {
       let tmp21 = connectedUserLimitFormatted;
-      const Button = tmp4(5205).Button;
+      const Button = tmp4(5226).Button;
       if (!tmp17) {
         let formatted;
         const intl = tmp4(1128).intl;
@@ -314,9 +314,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const items3 = [joinButtonIconActive, { marginRight: 3, marginLeft: -1 }];
           if (!memo) {
             if (isGuildStageVoiceResult) {
-              let VoiceNormalIcon = tmp4(8517).StageIcon;
+              let VoiceNormalIcon = tmp4(8544).StageIcon;
             } else {
-              VoiceNormalIcon = tmp4(8521).VoiceNormalIcon;
+              VoiceNormalIcon = tmp4(8548).VoiceNormalIcon;
             }
             tmp20Result2 = <VoiceNormalIcon size="xs" style={items3} />;
           }

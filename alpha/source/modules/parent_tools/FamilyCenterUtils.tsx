@@ -1,16 +1,16 @@
-// Module ID: 8075
-// Function ID: 8076
+// Module ID: 8103
+// Function ID: 8104
 // Name: FamilyCenterUtils
-// Dependencies: [7594, 7595, 1128, 2526, 2050, 7596, 2]
+// Dependencies: [7622, 7623, 1128, 2536, 2049, 7624, 2]
 // Exports: formatLinkTimestamp, formatTotalTime, formatUserActivityTimestamp, getActivityTypeTextConfigs, getActivityWindowTimestampFormatter, getEmptyActivityFormatter, getFailureCodeForAPIError, getOrFetchLinkedUsers, getSortedActivityTypeConfigs, getTopUserOrGuildDescription, hasActiveParentLinks, isGift, isGuildAction, isParentallyControlled, isPurchase, isUserAction
 
-// Module 8075 (FamilyCenterUtils)
+// Module 8103 (FamilyCenterUtils)
 import intl5 from "intl" /* 1128 */;
-import _modDef2050 from "module_2050" /* 2050 */;
-import _modDef2526 from "module_2526" /* 2526 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7596 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7594 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7595 */;
+import _modDef2049 from "module_2049" /* 2049 */;
+import _modDef2536 from "module_2536" /* 2536 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7624 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7622 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7623 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -21,7 +21,7 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f99192 = (link_status) => link_status.link_status === constants.ACTIVE && link_status.link_type === constants2.PARENT;
+const f99475 = (link_status) => link_status.link_status === constants.ACTIVE && link_status.link_type === constants2.PARENT;
 ({ ACTION_TO_TEXT: closure_4, FAMILY_CENTER_ERROR_CODE_TO_FAILURE: hasOwnProperty, FamilyCenterFailureCode: metroRequire, TeenActionDisplayType: metroImportDefault, UserLinkStatus: metroImportAll, UserLinkType: c9 } = FamilyCenterConstants);
 let c10 = 86400;
 let c11 = 172800;
@@ -30,7 +30,7 @@ let result = size.fileFinishedImporting("modules/parent_tools/FamilyCenterUtils.
 export const getEmptyActivityFormatter = function getEmptyActivityFormatter() {
   let intl;
   let intl2;
-  const obj = { today: intl.string(_modDef2526.VjIAQQ), yesterday: intl2.string(_modDef2526["2a8xHY"]), days: _modDef2526.Xt6oND };
+  const obj = { today: intl.string(_modDef2536.VjIAQQ), yesterday: intl2.string(_modDef2536["2a8xHY"]), days: _modDef2536.Xt6oND };
   intl = intl5.intl;
   intl2 = intl5.intl;
   return obj;
@@ -40,29 +40,29 @@ export const getActivityWindowTimestampFormatter = function getActivityWindowTim
   const obj = { today: null, yesterday: null, days: null };
   const intl = intl5.intl;
   const string = intl.string;
-  const tmp4 = _modDef2526;
+  const tmp4 = _modDef2536;
   const tmp5 = arg0;
   if (tmp5) {
     obj.today = string(tmp4["2AtcIs"]);
     const intl3 = tmp(1128).intl;
-    obj.yesterday = intl3.string(_modDef2526.stOECr);
-    obj.days = _modDef2526.n8n5Ba;
+    obj.yesterday = intl3.string(_modDef2536.stOECr);
+    obj.days = _modDef2536.n8n5Ba;
     tmp6 = obj;
   } else {
     obj.today = string(tmp4.g1ZX6m);
     const intl2 = tmp(1128).intl;
-    obj.yesterday = intl2.string(_modDef2526.s3qSVt);
-    obj.days = _modDef2526.f1UJiC;
+    obj.yesterday = intl2.string(_modDef2536.s3qSVt);
+    obj.days = _modDef2536.f1UJiC;
     tmp6 = obj;
   }
   return tmp6;
 };
 export const formatUserActivityTimestamp = function formatUserActivityTimestamp(time, timestampFormatter, arg2) {
   let yesterday;
-  const obj = _modDef2050();
-  const diffResult = obj.diff(_modDef2050(time), "s");
+  const obj = _modDef2049();
+  const diffResult = obj.diff(_modDef2049(time), "s");
   const tmp3 = timestampFormatter();
-  const obj2 = _modDef2050(time);
+  const obj2 = _modDef2049(time);
   obj2.format("LL");
   if (diffResult < c10) {
     yesterday = tmp3.today;
@@ -86,10 +86,10 @@ export const formatUserActivityTimestamp = function formatUserActivityTimestamp(
 };
 export const formatLinkTimestamp = function formatLinkTimestamp(arg0, SENT_TIMESTAMP_FORMATTER) {
   let yesterday;
-  const obj = _modDef2050();
-  const diffResult = obj.diff(_modDef2050(arg0), "s");
+  const obj = _modDef2049();
+  const diffResult = obj.diff(_modDef2049(arg0), "s");
   const time = SENT_TIMESTAMP_FORMATTER();
-  _modDef2050(arg0);
+  _modDef2049(arg0);
   if (diffResult < 60) {
     yesterday = time.seconds;
   } else if (diffResult < 3600) {
@@ -181,11 +181,11 @@ export const getOrFetchLinkedUsers = function getOrFetchLinkedUsers() {
 };
 export const hasActiveParentLinks = function hasActiveParentLinks() {
   const values = Object.values(FamilyCenterStore.getLinkedUsers());
-  return values.some(f99192);
+  return values.some(f99475);
 };
 export const isParentallyControlled = function isParentallyControlled() {
   const values = Object.values(FamilyCenterStore.getLinkedUsers());
-  return values.some(f99192);
+  return values.some(f99475);
 };
 export const getTopUserOrGuildDescription = function getTopUserOrGuildDescription(dms_sent, call_count) {
   let formatToPlainStringResult;
@@ -193,7 +193,7 @@ export const getTopUserOrGuildDescription = function getTopUserOrGuildDescriptio
     if (0 === dms_sent) {
       const intl3 = intl5.intl;
       const obj2 = { callCount: call_count };
-      formatToPlainStringResult = intl3.formatToPlainString(_modDef2526["L/Cj7S"], obj2);
+      formatToPlainStringResult = intl3.formatToPlainString(_modDef2536["L/Cj7S"], obj2);
     }
     return formatToPlainStringResult;
   }
@@ -201,10 +201,10 @@ export const getTopUserOrGuildDescription = function getTopUserOrGuildDescriptio
     if (0 === call_count) {
       const intl2 = intl5.intl;
       const obj3 = { messageCount: dms_sent };
-      formatToPlainStringResult = intl2.formatToPlainString(_modDef2526["6X1F0i"], obj3);
+      formatToPlainStringResult = intl2.formatToPlainString(_modDef2536["6X1F0i"], obj3);
     }
   }
   const intl = intl5.intl;
   const obj = { messageCount: dms_sent, callCount: call_count };
-  formatToPlainStringResult = intl.formatToPlainString(_modDef2526.IYqGMG, obj);
+  formatToPlainStringResult = intl.formatToPlainString(_modDef2536.IYqGMG, obj);
 };

@@ -1,12 +1,12 @@
-// Module ID: 12552
-// Function ID: 12553
+// Module ID: 12608
+// Function ID: 12609
 // Name: useModalPanGesture
-// Dependencies: [558, 576, 5014, 5208, 6623, 5258, 2]
+// Dependencies: [558, 576, 5035, 5229, 6651, 5279, 2]
 
-// Module 12552 (useModalPanGesture)
-import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
-import spring from "spring" /* 5208 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6623 */;
+// Module 12608 (useModalPanGesture)
+import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
+import spring from "spring" /* 5229 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6651 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -187,7 +187,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useModalPa
       }
       set2 = tmp.set;
       obj3 = closure_0(closure_2[3]);
-      fn = function o() { /* body not rendered: F147327 */ };
+      fn = function o() { /* body not rendered: F147826 */ };
       obj1 = { runOnJS: closure_0(closure_2[2]).runOnJS, ModalActionCreators: closure_1(closure_2[4]) };
       fn.__closure = obj1;
       fn.__workletHash = 16884819962399;

@@ -1,20 +1,20 @@
-// Module ID: 19052
-// Function ID: 19053
+// Module ID: 19129
+// Function ID: 19130
 // Name: GuildRoleSubscriptionGroupSetupModal
-// Dependencies: [32, 109, 5, 19, 19011, 16311, 1087, 21, 558, 576, 16318, 16333, 5624, 1128, 1275, 5673, 19021, 19006, 19029, 2]
+// Dependencies: [32, 109, 5, 19, 19088, 16387, 1087, 21, 558, 576, 16394, 16409, 5644, 1128, 1275, 5693, 19098, 19083, 19106, 2]
 
-// Module 19052 (GuildRoleSubscriptionGroupSetupModal)
+// Module 19129 (GuildRoleSubscriptionGroupSetupModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
-import ToastUtils from "ToastUtils" /* 5624 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5673 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16333 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 19011 */;
+import ToastUtils from "ToastUtils" /* 5644 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5693 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16409 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 19088 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16311 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16387 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -155,16 +155,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   const tmp9 = updateSubscriptionsSettings(handleCreateOrUpdateFromEditState.useState(), 2);
   const first = tmp9[0];
   dependencyMap = tmp9[1];
-  const tmpResult = tmp(16318);
+  const tmpResult = tmp(16394);
   createSubscriptionGroupListing = tmpResult.useCreateSubscriptionGroupListing().createSubscriptionGroupListing;
-  const tmpResult2 = tmp(16318);
+  const tmpResult2 = tmp(16394);
   const updateSubscriptionsSettings1 = tmpResult2.useUpdateSubscriptionsSettings();
   updateSubscriptionsSettings = updateSubscriptionsSettings1.updateSubscriptionsSettings;
   let error = updateSubscriptionsSettings1.error;
   const tmp12 = updateSubscriptionsSettings(handleCreateOrUpdateFromEditState.useState(tmp4), 2);
   first1 = tmp12[0];
   _asyncToGenerator = tmp12[1];
-  let obj5 = first(16333);
+  let obj5 = first(16409);
   const createOrUpdateListingFromEditState = obj5.useCreateOrUpdateListingFromEditState();
   handleCreateOrUpdateFromEditState = createOrUpdateListingFromEditState.handleCreateOrUpdateFromEditState;
   if (error == null) {
@@ -302,19 +302,19 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                         }
                       }
                     }
-                    let tmp42 = jsx(tmp(19029).EditStateContextProvider, { guildId, editStateId: first1, groupListingId: null, children: tmp37 });
+                    let tmp42 = jsx(tmp(19106).EditStateContextProvider, { guildId, editStateId: first1, groupListingId: null, children: tmp37 });
                     cResult[25] = first1;
                     cResult[26] = guildId;
                     cResult[27] = tmp37;
                     cResult[28] = tmp42;
                   }
-                  const tmp39 = jsx(tmp(19006).RoleSubscriptionSettingsDisabledContextProvider, { guildId, children: tmp28 });
+                  const tmp39 = jsx(tmp(19083).RoleSubscriptionSettingsDisabledContextProvider, { guildId, children: tmp28 });
                   cResult[22] = guildId;
                   cResult[23] = tmp28;
                   cResult[24] = tmp39;
                 }
                 const obj10 = { modalKey, onDone: tmp17, steps: tmp22, onClose: tmp27, stepScreenPropsMap: tmp25 };
-                guildId(19021);
+                guildId(19098);
                 const merged = Object.assign(tmp5);
                 const tmp36 = <tmp31 modalKey={modalKey} onDone={tmp17} steps={tmp22} onClose={tmp27} stepScreenPropsMap={tmp25} />;
                 cResult[19] = tmp17;
@@ -574,9 +574,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   const tmp3 = merged;
   const tmp4 = dependencyMap;
   const tmp2 = _slicedToArray(react.useState(), 2);
-  let obj2 = merged(16318);
+  let obj2 = merged(16394);
   closure_4 = obj2.useCreateSubscriptionGroupListing().createSubscriptionGroupListing;
-  let obj3 = merged(16318);
+  let obj3 = merged(16394);
   const updateSubscriptionsSettings = obj3.useUpdateSubscriptionsSettings();
   ({ updateSubscriptionsSettings: c5, error } = updateSubscriptionsSettings);
   [editStateId, closure_7] = react.useState(editStateId);
@@ -622,9 +622,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     const obj2 = { setup_modal_step: findIndexResult + 1 };
     obj.trackWithMetadata(AnalyticEvents.GUILD_ROLE_SUBSCRIPTION_SETUP_MODAL_CLOSED, obj2);
   }, items1);
-  const EditStateContextProvider = tmp3(19029).EditStateContextProvider;
+  const EditStateContextProvider = tmp3(19106).EditStateContextProvider;
   let obj6 = { guildId, children: null };
-  const RoleSubscriptionSettingsDisabledContextProvider = tmp3(19006).RoleSubscriptionSettingsDisabledContextProvider;
+  const RoleSubscriptionSettingsDisabledContextProvider = tmp3(19083).RoleSubscriptionSettingsDisabledContextProvider;
   let obj7 = {
     modalKey: memo,
     onDone: function handleCreateGroupAndTier() {
@@ -634,7 +634,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     onClose: callback,
     stepScreenPropsMap: memo1
   };
-  guildId(19021);
+  guildId(19098);
   const merged1 = Object.assign(merged);
   return <EditStateContextProvider guildId={guildId} editStateId={editStateId} groupListingId={null}>{null}</EditStateContextProvider>;
 });

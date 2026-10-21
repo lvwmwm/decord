@@ -1,16 +1,72 @@
 // Module ID: 7939
 // Function ID: 7940
-// Dependencies: [26, 106, 65]
+// Dependencies: [7940, 7941, 8044, 8045, 8047, 8048, 7962]
 
 // Module 7939
-import _mod26 from "module_26" /* 26 */;
-import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
-import module_65 from "module_65" /* 65 */;
+import _mod7940 from "module_7940" /* 7940 */;
+import Circle from "Circle" /* 7941 */;
+import multiplyMatricesDefault from "multiplyMatrices" /* 7962 */;
+import showErrorCSS from "showErrorCSS" /* 8044 */;
+import SvgAst from "SvgAst" /* 8045 */;
+import _mod8047 from "module_8047" /* 8047 */;
+import RNSVGCircle from "RNSVGCircle" /* 8048 */;
 
-let obj2;
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGCircle", directEventTypes: { topSvgLayout: { registrationName: "onSvgLayout" } }, validAttributes: obj2 };
-obj2 = { name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, color: _mod26.colorAttribute, fill: true, fillOpacity: true, fillRule: true, stroke: true, strokeOpacity: true, strokeWidth: true, strokeLinecap: true, strokeLinejoin: true, strokeDasharray: true, strokeDashoffset: true, strokeMiterlimit: true, vectorEffect: true, propList: true, filter: true, cx: true, cy: true, r: true };
-const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onSvgLayout: true }));
+const CircleDefault = Circle;
 
-export default module_65.get("RNSVGCircle", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+for (const key10013 in _mod7940) {
+  exports[key10013] = _mod7940[key10013];
+  continue;
+}
+for (const key10017 in Circle) {
+  exports[key10017] = Circle[key10017];
+  continue;
+}
+const RNSVGCircle_export = RNSVGCircle.RNSVGCircle;
+const SvgAst_export = SvgAst.SvgAst;
+
+export const inlineStyles = showErrorCSS.inlineStyles;
+export const loadLocalRawResource = showErrorCSS.loadLocalRawResource;
+export const LocalSvg = showErrorCSS.LocalSvg;
+export const SvgCss = showErrorCSS.SvgCss;
+export const SvgCssUri = showErrorCSS.SvgCssUri;
+export const SvgWithCss = showErrorCSS.SvgWithCss;
+export const SvgWithCssUri = showErrorCSS.SvgWithCssUri;
+export const WithLocalSvg = showErrorCSS.WithLocalSvg;
+export const camelCase = SvgAst.camelCase;
+export const fetchText = _mod8047.fetchText;
+export const parse = SvgAst.parse;
+export { RNSVGCircle_export as RNSVGCircle };
+export const RNSVGClipPath = RNSVGCircle.RNSVGClipPath;
+export const RNSVGDefs = RNSVGCircle.RNSVGDefs;
+export const RNSVGEllipse = RNSVGCircle.RNSVGEllipse;
+export const RNSVGFeColorMatrix = RNSVGCircle.RNSVGFeColorMatrix;
+export const RNSVGFeComposite = RNSVGCircle.RNSVGFeComposite;
+export const RNSVGFeGaussianBlur = RNSVGCircle.RNSVGFeGaussianBlur;
+export const RNSVGFeMerge = RNSVGCircle.RNSVGFeMerge;
+export const RNSVGFeOffset = RNSVGCircle.RNSVGFeOffset;
+export const RNSVGFilter = RNSVGCircle.RNSVGFilter;
+export const RNSVGForeignObject = RNSVGCircle.RNSVGForeignObject;
+export const RNSVGGroup = RNSVGCircle.RNSVGGroup;
+export const RNSVGImage = RNSVGCircle.RNSVGImage;
+export const RNSVGLine = RNSVGCircle.RNSVGLine;
+export const RNSVGLinearGradient = RNSVGCircle.RNSVGLinearGradient;
+export const RNSVGMarker = RNSVGCircle.RNSVGMarker;
+export const RNSVGMask = RNSVGCircle.RNSVGMask;
+export const RNSVGPath = RNSVGCircle.RNSVGPath;
+export const RNSVGPattern = RNSVGCircle.RNSVGPattern;
+export const RNSVGRadialGradient = RNSVGCircle.RNSVGRadialGradient;
+export const RNSVGRect = RNSVGCircle.RNSVGRect;
+export const RNSVGSvgAndroid = RNSVGCircle.RNSVGSvgAndroid;
+export const RNSVGSvgIOS = RNSVGCircle.RNSVGSvgIOS;
+export const RNSVGSymbol = RNSVGCircle.RNSVGSymbol;
+export const RNSVGText = RNSVGCircle.RNSVGText;
+export const RNSVGTextPath = RNSVGCircle.RNSVGTextPath;
+export const RNSVGTSpan = RNSVGCircle.RNSVGTSpan;
+export const RNSVGUse = RNSVGCircle.RNSVGUse;
+export const Shape = multiplyMatricesDefault;
+export { SvgAst_export as SvgAst };
+export const SvgFromUri = SvgAst.SvgFromUri;
+export const SvgFromXml = SvgAst.SvgFromXml;
+export const SvgUri = SvgAst.SvgUri;
+export const SvgXml = SvgAst.SvgXml;
+export default CircleDefault;

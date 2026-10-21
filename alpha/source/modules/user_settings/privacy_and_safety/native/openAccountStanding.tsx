@@ -1,12 +1,12 @@
-// Module ID: 12693
-// Function ID: 12694
+// Module ID: 12757
+// Function ID: 12758
 // Name: openAccountStanding
-// Dependencies: [1087, 7439, 2]
+// Dependencies: [1087, 7467, 2]
 // Exports: openAccountStanding
 
-// Module 12693 (openAccountStanding)
+// Module 12757 (openAccountStanding)
 import Constants from "Constants" /* 1087 */;
-import openUserSettings from "openUserSettings" /* 7439 */;
+import openUserSettings from "openUserSettings" /* 7467 */;
 import size from "module_2" /* 2 */;
 
 const UserSettingsSections = Constants.UserSettingsSections;

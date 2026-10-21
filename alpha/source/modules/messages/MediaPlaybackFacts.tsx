@@ -1,10 +1,10 @@
-// Module ID: 9926
-// Function ID: 9927
+// Module ID: 9956
+// Function ID: 9957
 // Name: MediaPlaybackFacts
 // Dependencies: [2]
 // Exports: clearMediaPlaybackFactsForTest, getMediaPlaybackFacts, mediaItemIdFromSource, rememberMediaPlaybackFacts, resolveReportedMediaFacts
 
-// Module 9926 (MediaPlaybackFacts)
+// Module 9956 (MediaPlaybackFacts)
 import size_mod from "module_2" /* 2 */;
 
 let set;

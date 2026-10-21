@@ -1,17 +1,17 @@
-// Module ID: 17896
-// Function ID: 17897
+// Module ID: 17977
+// Function ID: 17978
 // Name: ThreadChannelUserList
-// Dependencies: [19, 4800, 4860, 4822, 1392, 1087, 21, 7202, 504, 17897, 7095, 550, 7326, 4994, 8605, 10551, 2]
+// Dependencies: [19, 4821, 4881, 4843, 1392, 1087, 21, 7230, 504, 17978, 7123, 550, 7354, 5015, 8632, 10580, 2]
 
-// Module 17896 (ThreadChannelUserList)
+// Module 17977 (ThreadChannelUserList)
 import Fragment from "Fragment" /* 21 */;
 import throttleDefault from "throttle" /* 550 */;
 import Constants from "Constants" /* 1087 */;
-import UserUtilsDefault from "UserUtils" /* 4994 */;
+import UserUtilsDefault from "UserUtils" /* 5015 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import GuildMemberStore from "GuildMemberStore" /* 4860 */;
-import GuildStore from "GuildStore" /* 4822 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import GuildMemberStore from "GuildMemberStore" /* 4881 */;
+import GuildStore from "GuildStore" /* 4843 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 

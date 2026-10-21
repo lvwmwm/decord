@@ -1,15 +1,15 @@
-// Module ID: 15967
-// Function ID: 15968
+// Module ID: 16043
+// Function ID: 16044
 // Name: FamilyCenterParentalConsentNotice
-// Dependencies: [19, 21, 4945, 587, 558, 576, 15959, 15960, 5622, 5195, 1128, 2526, 15968, 2]
+// Dependencies: [19, 21, 4966, 587, 558, 576, 16035, 16036, 5642, 5216, 1128, 2536, 16044, 2]
 
-// Module 15967 (FamilyCenterParentalConsentNotice)
+// Module 16043 (FamilyCenterParentalConsentNotice)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 15968 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 16044 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -77,7 +77,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
             }
             return tmp14;
           }
-          const tmp17 = jsx(onPress(15968), { style: tmp4.container, text: tmp10 });
+          const tmp17 = jsx(onPress(16044), { style: tmp4.container, text: tmp10 });
           cResult[6] = tmp4.container;
           cResult[7] = tmp10;
           cResult[8] = tmp17;
@@ -86,11 +86,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
         if (0 === daysRemaining) {
           const intl2 = tmp(1128).intl;
           const obj5 = { learnMoreHook: tmp9 };
-          formatResult = intl2.format(onPress(2526).S5kmfO, obj5);
+          formatResult = intl2.format(onPress(2536).S5kmfO, obj5);
         } else {
           const intl = tmp(1128).intl;
           const obj6 = { count: daysRemaining, learnMoreHook: tmp9 };
-          formatResult = intl.format(onPress(2526)["5jm+T3"], obj6);
+          formatResult = intl.format(onPress(2536)["5jm+T3"], obj6);
         }
         cResult[3] = daysRemaining;
         cResult[4] = tmp9;
@@ -133,11 +133,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
         if (0 === daysRemaining) {
           const intl2 = tmp2(1128).intl;
           const obj4 = { learnMoreHook };
-          formatResult = intl2.format(tmp9(2526).S5kmfO, obj4);
+          formatResult = intl2.format(tmp9(2536).S5kmfO, obj4);
         } else {
           const intl = tmp2(1128).intl;
           const obj5 = { count: daysRemaining, learnMoreHook };
-          formatResult = intl.format(tmp9(2526)["5jm+T3"], obj5);
+          formatResult = intl.format(tmp9(2536)["5jm+T3"], obj5);
         }
         return tmp8(tmp10, obj3);
       }

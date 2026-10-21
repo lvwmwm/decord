@@ -1,28 +1,28 @@
-// Module ID: 17110
-// Function ID: 17111
+// Module ID: 17186
+// Function ID: 17187
 // Name: Auth
-// Dependencies: [32, 19, 17, 13129, 1087, 21, 17111, 17112, 6875, 17121, 7048, 6995, 4945, 587, 558, 576, 17164, 6988, 1647, 7019, 17165, 7017, 7046, 1385, 1128, 17166, 7533, 17173, 2]
+// Dependencies: [32, 19, 17, 13197, 1087, 21, 17187, 17188, 6903, 17197, 7076, 7023, 4966, 587, 558, 576, 17240, 7016, 1647, 7047, 17241, 7045, 7074, 1385, 1128, 17242, 7561, 17249, 2]
 
-// Module 17110 (Auth)
+// Module 17186 (Auth)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 6988 */;
-import MFAUtils from "MFAUtils" /* 6995 */;
-import BackgroundImageDefault from "BackgroundImage" /* 7019 */;
-import _mod7048 from "module_7048" /* 7048 */;
-import RegistrationHandoff from "RegistrationHandoff" /* 17111 */;
-import RegistrationUtils from "RegistrationUtils" /* 17121 */;
-import useIsHCaptchaModalOpenTracking from "useIsHCaptchaModalOpenTracking" /* 17164 */;
-import AuthManagerDefault from "AuthManager" /* 17166 */;
-import useOrientationLockDefault from "useOrientationLock" /* 17173 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7016 */;
+import MFAUtils from "MFAUtils" /* 7023 */;
+import BackgroundImageDefault from "BackgroundImage" /* 7047 */;
+import _mod7076 from "module_7076" /* 7076 */;
+import RegistrationHandoff from "RegistrationHandoff" /* 17187 */;
+import RegistrationUtils from "RegistrationUtils" /* 17197 */;
+import useIsHCaptchaModalOpenTracking from "useIsHCaptchaModalOpenTracking" /* 17240 */;
+import AuthManagerDefault from "AuthManager" /* 17242 */;
+import useOrientationLockDefault from "useOrientationLock" /* 17249 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import MultiAccountStore from "MultiAccountStore" /* 13129 */;
+import MultiAccountStore from "MultiAccountStore" /* 13197 */;
 import Fragment from "Fragment" /* 21 */;
-import RegistrationStepsUtils_mod from "RegistrationStepsUtils" /* 17112 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import RegistrationStepsUtils_mod from "RegistrationStepsUtils" /* 17188 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -41,9 +41,9 @@ let unpackModuleId;
 const intl2 = tmp(1128);
 const utils_PlatformUtils = tmp(1385);
 const KeyboardChatScrollView = tmp(1647);
-const react3 = tmp(7017);
-const Navigator3 = tmp(7046);
-const AssetRegistry = tmp(17165);
+const react3 = tmp(7045);
+const Navigator3 = tmp(7074);
+const AssetRegistry = tmp(17241);
 function getInitialAuthRouteStack() {
   let items1;
   obj = RegistrationHandoff;
@@ -110,8 +110,8 @@ const screens = fromEntries(RegistrationStepsUtils.map((item) => {
   let tmp8 = null;
   set = new Set(items1);
   if (set.has(tmp)) {
-    tmp8 = { cardStyleInterpolator: _mod7048.CardStyleInterpolators.forFadeFromCenter };
-    const obj4 = { cardStyleInterpolator: _mod7048.CardStyleInterpolators.forFadeFromCenter };
+    tmp8 = { cardStyleInterpolator: _mod7076.CardStyleInterpolators.forFadeFromCenter };
+    const obj4 = { cardStyleInterpolator: _mod7076.CardStyleInterpolators.forFadeFromCenter };
   }
   const merged3 = Object.assign(tmp8);
   items[1] = obj;

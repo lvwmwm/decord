@@ -1,22 +1,22 @@
-// Module ID: 10339
-// Function ID: 10340
+// Module ID: 10368
+// Function ID: 10369
 // Name: AppliedForumTag
-// Dependencies: [109, 19, 17, 6676, 1395, 21, 4945, 587, 558, 576, 504, 1128, 7178, 1417, 5195, 10340, 2]
+// Dependencies: [109, 19, 17, 6704, 1395, 21, 4966, 587, 558, 576, 504, 1128, 7206, 1417, 5216, 10369, 2]
 
-// Module 10339 (AppliedForumTag)
+// Module 10368 (AppliedForumTag)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
-import EmojiDefault from "Emoji" /* 7178 */;
-import ForumTagContextMenuDefault from "ForumTagContextMenu" /* 10340 */;
+import EmojiDefault from "Emoji" /* 7206 */;
+import ForumTagContextMenuDefault from "ForumTagContextMenu" /* 10369 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6676 */;
+import EmojiStore from "EmojiStore" /* 6704 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let c9;
 let metroImportAll;
 let obj2;
 let tmp5;
-const Text_Text = tmp5(5195);
+const Text_Text = tmp5(5216);
 let closure_3 = ["ref"];
 const View = react_native.View;
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;

@@ -1,19 +1,19 @@
-// Module ID: 17317
-// Function ID: 17318
+// Module ID: 17393
+// Function ID: 17394
 // Name: useFavoritesGuildResetAction
-// Dependencies: [19, 4971, 1087, 558, 576, 4776, 4825, 1114, 10649, 1128, 3402, 2]
+// Dependencies: [19, 4992, 1087, 558, 576, 4797, 4846, 1114, 10792, 1128, 3412, 2]
 
-// Module 17317 (useFavoritesGuildResetAction)
+// Module 17393 (useFavoritesGuildResetAction)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import router_utils from "router_utils" /* 1114 */;
 import intl3 from "intl" /* 1128 */;
-import _modDef3402 from "module_3402" /* 3402 */;
-import UserSettings from "UserSettings" /* 4776 */;
-import FavoritesUtils from "FavoritesUtils" /* 4825 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10649 */;
+import _modDef3412 from "module_3412" /* 3412 */;
+import UserSettings from "UserSettings" /* 4797 */;
+import FavoritesUtils from "FavoritesUtils" /* 4846 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10792 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4971 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4992 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,9 +45,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
-    const stringResult = intl.string(_modDef3402.YkET6R);
+    const stringResult = intl.string(_modDef3412.YkET6R);
     const intl2 = tmp(1128).intl;
-    const stringResult1 = intl2.string(_modDef3402.ZzcwNk);
+    const stringResult1 = intl2.string(_modDef3412.ZzcwNk);
     cResult[1] = stringResult;
     cResult[2] = stringResult1;
     tmp7 = stringResult1;
@@ -72,7 +72,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   let intl2;
   const DeveloperMode = UserSettings.DeveloperMode;
   const setting = DeveloperMode.useSetting();
-  let obj = { isAvailable: setting, label: intl.string(_modDef3402.YkET6R), subLabel: intl2.string(_modDef3402.ZzcwNk), perform: callback };
+  let obj = { isAvailable: setting, label: intl.string(_modDef3412.YkET6R), subLabel: intl2.string(_modDef3412.ZzcwNk), perform: callback };
   callback = react.useCallback(() => {
     const obj = FavoritesUtils;
     if (obj.isFavoritesGuildId(guildId.getGuildId())) {

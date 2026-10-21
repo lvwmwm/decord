@@ -1,12 +1,12 @@
-// Module ID: 10780
-// Function ID: 10781
+// Module ID: 10924
+// Function ID: 10925
 // Name: SafetyToolsActionSheetWrapper
-// Dependencies: [19, 4800, 21, 558, 576, 504, 5226, 10781, 2]
+// Dependencies: [19, 4821, 21, 558, 576, 504, 5247, 10925, 2]
 
-// Module 10780 (SafetyToolsActionSheetWrapper)
+// Module 10924 (SafetyToolsActionSheetWrapper)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,23 +1,23 @@
-// Module ID: 15997
-// Function ID: 15998
+// Module ID: 16073
+// Function ID: 16074
 // Name: FamilyCenterActivityItemPreview
-// Dependencies: [19, 17, 8649, 21, 4945, 15996, 587, 558, 576, 5631, 9342, 8629, 9345, 12003, 9736, 9355, 1995, 1992, 2]
+// Dependencies: [19, 17, 8676, 21, 4966, 16072, 587, 558, 576, 5651, 9370, 8656, 9373, 12051, 9766, 9383, 1995, 1992, 2]
 
-// Module 15997 (FamilyCenterActivityItemPreview)
+// Module 16073 (FamilyCenterActivityItemPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import utils from "utils" /* 1992 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
-import FastImageDefault from "FastImage" /* 5631 */;
-import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8629 */;
-import ProfileFrameConstants from "ProfileFrameConstants" /* 8649 */;
-import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9345 */;
-import ShopIcon from "ShopIcon" /* 12003 */;
-import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 15996 */;
+import FastImageDefault from "FastImage" /* 5651 */;
+import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8656 */;
+import ProfileFrameConstants from "ProfileFrameConstants" /* 8676 */;
+import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9373 */;
+import ShopIcon from "ShopIcon" /* 12051 */;
+import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 16072 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let size2;
 let size3;
 let size4;
 let tmp;
-const NameplateUtils = tmp(9342);
+const NameplateUtils = tmp(9370);
 const View = react_native.View;
 let closure_4 = ProfileFrameConstants.PROFILE_FRAME_ASPECT_RATIO;
 const jsx = Fragment.jsx;
@@ -304,9 +304,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Subscr
       let NitroWheelIcon;
       const tmp7 = jsx;
       if (tmp4) {
-        NitroWheelIcon = tmp(9736).BoostGemIcon;
+        NitroWheelIcon = tmp(9766).BoostGemIcon;
       } else {
-        NitroWheelIcon = tmp(9355).NitroWheelIcon;
+        NitroWheelIcon = tmp(9383).NitroWheelIcon;
       }
       const obj4 = { size: "custom", style: { width: 20, height: 20 } };
       const tmp7Result = tmp7(NitroWheelIcon, obj4);
@@ -338,9 +338,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Subscr
   } else {
     const obj4 = FamilyCenterActivityPurchaseRowUtils;
     if (obj4.isGuildBoostSubscription(subscriptionPlanId)) {
-      let NitroWheelIcon = tmp5(9736).BoostGemIcon;
+      let NitroWheelIcon = tmp5(9766).BoostGemIcon;
     } else {
-      NitroWheelIcon = tmp5(9355).NitroWheelIcon;
+      NitroWheelIcon = tmp5(9383).NitroWheelIcon;
     }
     return <tmp8 style={styles.purchasePlaceholder}>{null}</tmp8>;
   }

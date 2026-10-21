@@ -1,11 +1,11 @@
-// Module ID: 19003
-// Function ID: 19004
+// Module ID: 19080
+// Function ID: 19081
 // Name: PreviewableListingImageUtil
-// Dependencies: [19004, 2]
+// Dependencies: [19081, 2]
 // Exports: getSource
 
-// Module 19003 (PreviewableListingImageUtil)
-import ListingImageUtilAll from "ListingImageUtil" /* 19004 */;
+// Module 19080 (PreviewableListingImageUtil)
+import ListingImageUtilAll from "ListingImageUtil" /* 19081 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/PreviewableListingImageUtil.tsx");

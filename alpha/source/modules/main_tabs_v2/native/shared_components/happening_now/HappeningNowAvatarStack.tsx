@@ -1,21 +1,21 @@
-// Module ID: 17260
-// Function ID: 17261
+// Module ID: 17336
+// Function ID: 17337
 // Name: HappeningNowAvatarStack
-// Dependencies: [32, 19, 17, 2069, 14135, 21, 4945, 587, 1202, 558, 576, 5014, 573, 5208, 9336, 1903, 5195, 17261, 2]
+// Dependencies: [32, 19, 17, 2068, 14210, 21, 4966, 587, 1202, 558, 576, 5035, 573, 5229, 9364, 1903, 5216, 17337, 2]
 
-// Module 17260 (HappeningNowAvatarStack)
+// Module 17336 (HappeningNowAvatarStack)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
-import spring from "spring" /* 5208 */;
-import ClipView from "ClipView" /* 9336 */;
-import ChannelAnimationConstants from "ChannelAnimationConstants" /* 14135 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
+import spring from "spring" /* 5229 */;
+import ClipView from "ClipView" /* 9364 */;
+import ChannelAnimationConstants from "ChannelAnimationConstants" /* 14210 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import LocaleStore_mod from "LocaleStore" /* 2069 */;
+import LocaleStore_mod from "LocaleStore" /* 2068 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -104,8 +104,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HappeningNow
   let tmp7 = avatarSize(num2.useState(tmp6), 2);
   [tmp8, CHANNEL_SPRING_CONFIG] = tmp7;
   let num6 = 0;
-  const useSharedValue = tmp(5014).useSharedValue;
-  tmp(5014);
+  const useSharedValue = tmp(5035).useSharedValue;
+  tmp(5035);
   if (tmp4) {
     num6 = 1;
   }
@@ -128,7 +128,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HappeningNow
   }
   const tmpResult3 = tmp(573);
   const stateFromStores = tmpResult3.useStateFromStores(tmp11, tmp12);
-  const tmpResult4 = tmp(5014);
+  const tmpResult4 = tmp(5035);
   class J {
     constructor() {
       let obj2;
@@ -139,7 +139,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HappeningNow
       return obj;
     }
   }
-  let obj3 = { interpolate: tmp(5014).interpolate, typingValue: sharedValue, ELLIPSIS_WIDTH: 28 };
+  let obj3 = { interpolate: tmp(5035).interpolate, typingValue: sharedValue, ELLIPSIS_WIDTH: 28 };
   J.__closure = obj3;
   J.__workletHash = 14140918847743;
   J.__initData = __initData;

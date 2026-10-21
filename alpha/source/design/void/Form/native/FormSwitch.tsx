@@ -1,22 +1,22 @@
-// Module ID: 8892
-// Function ID: 8893
+// Module ID: 8919
+// Function ID: 8920
 // Name: Form/FormSwitch
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5166, 4952, 2]
+// Dependencies: [19, 17, 21, 4966, 587, 558, 576, 5187, 4973, 2]
 
-// Module 8892 (Form/FormSwitch)
+// Module 8919 (Form/FormSwitch)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useThemeDefault from "useTheme" /* 5166 */;
+import useThemeDefault from "useTheme" /* 5187 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const shared = tmp(4952);
+const shared = tmp(4973);
 const Switch = react_native.Switch;
 const jsx = Fragment.jsx;
 let obj = { switch: { marginVertical: -5 }, track: obj2 };

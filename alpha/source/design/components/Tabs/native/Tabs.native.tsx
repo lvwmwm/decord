@@ -1,19 +1,19 @@
-// Module ID: 11713
-// Function ID: 11714
+// Module ID: 11759
+// Function ID: 11760
 // Name: Tabs
-// Dependencies: [19, 17, 2069, 21, 5014, 4945, 587, 558, 576, 5208, 9904, 11714, 5258, 1384, 2]
+// Dependencies: [19, 17, 2068, 21, 5035, 4966, 587, 558, 576, 5229, 9934, 11760, 5279, 1384, 2]
 
-// Module 11713 (Tabs)
+// Module 11759 (Tabs)
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5014 */;
-import spring from "spring" /* 5208 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5258 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9904 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5035 */;
+import spring from "spring" /* 5229 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5279 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9934 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2069 */;
+import LocaleStore from "LocaleStore" /* 2068 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

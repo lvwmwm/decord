@@ -1,9 +1,9 @@
-// Module ID: 8988
-// Function ID: 8989
+// Module ID: 9015
+// Function ID: 9016
 // Name: DisplayedInviteStore
 // Dependencies: [504, 584, 2]
 
-// Module 8988 (DisplayedInviteStore)
+// Module 9015 (DisplayedInviteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 14173
-// Function ID: 14174
+// Module ID: 14248
+// Function ID: 14249
 // Name: useBadgeDirectoryNuxEntryPoint
-// Dependencies: [19, 4797, 558, 576, 2]
+// Dependencies: [19, 4818, 558, 576, 2]
 
-// Module 14173 (useBadgeDirectoryNuxEntryPoint)
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4797 */;
+// Module 14248 (useBadgeDirectoryNuxEntryPoint)
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

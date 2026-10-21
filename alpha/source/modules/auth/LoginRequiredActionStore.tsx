@@ -1,9 +1,9 @@
-// Module ID: 4793
-// Function ID: 4794
+// Module ID: 4814
+// Function ID: 4815
 // Name: LoginRequiredActionStore
 // Dependencies: [504, 584, 2]
 
-// Module 4793 (LoginRequiredActionStore)
+// Module 4814 (LoginRequiredActionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

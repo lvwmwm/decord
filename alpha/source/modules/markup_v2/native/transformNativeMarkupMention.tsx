@@ -1,15 +1,15 @@
-// Module ID: 8449
-// Function ID: 8450
+// Module ID: 8476
+// Function ID: 8477
 // Name: transformNativeMarkupMention
-// Dependencies: [8450, 5940, 5938, 5950, 8531, 2]
+// Dependencies: [8477, 5962, 5960, 5972, 8558, 2]
 // Exports: applyChannelMentionIcons, transformNativeMention
 
-// Module 8449 (transformNativeMarkupMention)
-import MarkupTypes from "MarkupTypes" /* 5938 */;
-import MarkupRules from "MarkupRules" /* 5940 */;
-import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 5950 */;
-import PlatformMarkupRules from "PlatformMarkupRules" /* 8450 */;
-import StaticMentionRoutes from "StaticMentionRoutes" /* 8531 */;
+// Module 8476 (transformNativeMarkupMention)
+import MarkupTypes from "MarkupTypes" /* 5960 */;
+import MarkupRules from "MarkupRules" /* 5962 */;
+import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 5972 */;
+import PlatformMarkupRules from "PlatformMarkupRules" /* 8477 */;
+import StaticMentionRoutes from "StaticMentionRoutes" /* 8558 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup_v2/native/transformNativeMarkupMention.tsx");
@@ -37,10 +37,10 @@ export const transformNativeMention = function transformNativeMention(value, all
     return hydrateUserMention(obj5, allowGameMentions);
   } else if ("everyone" === type) {
     const obj15 = MarkupRules;
-    return obj15.hydrateUserMention({ fullMatch: "@everyone", id: "applicationId", everyoneOrHere: true }, allowGameMentions);
+    return obj15.hydrateUserMention({ fullMatch: "@everyone", id: "applicationId", everyoneOrHere: -213843966 }, allowGameMentions);
   } else if ("here" === type) {
     const obj14 = MarkupRules;
-    return obj14.hydrateUserMention({ fullMatch: "@here", id: "applicationId", everyoneOrHere: true }, allowGameMentions);
+    return obj14.hydrateUserMention({ fullMatch: "@here", id: "applicationId", everyoneOrHere: -1840185342 }, allowGameMentions);
   } else if ("role" === type) {
     const obj13 = MarkupRules;
     const str8 = value.value;

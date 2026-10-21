@@ -1,17 +1,17 @@
-// Module ID: 6787
-// Function ID: 6788
+// Module ID: 6815
+// Function ID: 6816
 // Name: MemberVerificationAlertSuccess
-// Dependencies: [109, 19, 17, 4946, 4822, 21, 4945, 558, 576, 504, 1128, 6788, 5189, 5195, 5936, 2]
+// Dependencies: [109, 19, 17, 4967, 4843, 21, 4966, 558, 576, 504, 1128, 6816, 5210, 5216, 5958, 2]
 
-// Module 6787 (MemberVerificationAlertSuccess)
+// Module 6815 (MemberVerificationAlertSuccess)
 import react_native from "react-native" /* 17 */;
-import LottieAnimationViewDefault from "LottieAnimationView" /* 5189 */;
+import LottieAnimationViewDefault from "LottieAnimationView" /* 5210 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4946 */;
-import GuildStore from "GuildStore" /* 4822 */;
+import AccessibilityStore from "AccessibilityStore" /* 4967 */;
+import GuildStore from "GuildStore" /* 4843 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -102,8 +102,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVeri
       const _Symbol2 = Symbol;
       ({ alert: _alert, illustrationContainer } = tmp10);
       if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-        cResult[14] = require("module_6788");
-        require("module_6788");
+        cResult[14] = require("module_6816");
+        require("module_6816");
         class M {
           constructor() {
             return useReducedMotion.useReducedMotion;

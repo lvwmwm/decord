@@ -1,11 +1,11 @@
-// Module ID: 7476
-// Function ID: 7477
+// Module ID: 7504
+// Function ID: 7505
 // Name: premium/ProductIds
-// Dependencies: [1394, 7477, 2]
+// Dependencies: [1394, 7505, 2]
 // Exports: getPlanIdForGift, getProductIdForGift
 
-// Module 7476 (premium/ProductIds)
-import AppleProductIds from "AppleProductIds" /* 7477 */;
+// Module 7504 (premium/ProductIds)
+import AppleProductIds from "AppleProductIds" /* 7505 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import size from "module_2" /* 2 */;
 

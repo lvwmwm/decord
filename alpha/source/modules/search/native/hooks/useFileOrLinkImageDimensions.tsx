@@ -1,12 +1,12 @@
-// Module ID: 17910
-// Function ID: 17911
+// Module ID: 17991
+// Function ID: 17992
 // Name: useFileOrLinkImageDimensions
-// Dependencies: [19, 9642, 558, 576, 2]
+// Dependencies: [19, 9672, 558, 576, 2]
 
-// Module 17910 (useFileOrLinkImageDimensions)
+// Module 17991 (useFileOrLinkImageDimensions)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import SearchConstants from "SearchConstants" /* 9642 */;
+import SearchConstants from "SearchConstants" /* 9672 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

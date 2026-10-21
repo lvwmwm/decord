@@ -1,14 +1,14 @@
-// Module ID: 19096
-// Function ID: 19097
+// Module ID: 19171
+// Function ID: 19172
 // Name: OrbsArcadeRewardUtils
-// Dependencies: [19094, 2]
+// Dependencies: [18196, 2]
 // Exports: getOrbsArcadeClaimableRewards, getOrbsArcadeFocusedReward, getOrbsArcadeRewardStatus, hasOrbsArcadeUnclaimedRewards, isOrbsArcadeEnrollmentOver
 
-// Module 19096 (OrbsArcadeRewardUtils)
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 19094 */;
+// Module 19171 (OrbsArcadeRewardUtils)
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 18196 */;
 import size from "module_2" /* 2 */;
 
-const f137986 = (pendingAt) => null != pendingAt.pendingAt && null == pendingAt.claimedAt;
+const f138450 = (pendingAt) => null != pendingAt.pendingAt && null == pendingAt.claimedAt;
 const result = size.fileFinishedImporting("modules/orbs_arcade/utils/OrbsArcadeRewardUtils.tsx");
 
 export const getOrbsArcadeRewardStatus = function getOrbsArcadeRewardStatus(arg0, arg1) {
@@ -67,7 +67,7 @@ export const getOrbsArcadeClaimableRewards = function getOrbsArcadeClaimableRewa
 };
 export const hasOrbsArcadeUnclaimedRewards = function hasOrbsArcadeUnclaimedRewards(gameState) {
   const values = Object.values(gameState.rewardGrants);
-  return values.some(f137986);
+  return values.some(f138450);
 };
 export const isOrbsArcadeEnrollmentOver = function isOrbsArcadeEnrollmentOver(gameStateForGame) {
   let tmp = null != gameStateForGame.expiresAt;
@@ -80,7 +80,7 @@ export const isOrbsArcadeEnrollmentOver = function isOrbsArcadeEnrollmentOver(ga
   if (tmp) {
     const _Object = Object;
     const values = Object.values(gameStateForGame.rewardGrants);
-    tmp = !values.some(f137986);
+    tmp = !values.some(f138450);
   }
   return tmp;
 };

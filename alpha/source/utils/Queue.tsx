@@ -1,9 +1,9 @@
-// Module ID: 8088
-// Function ID: 8089
+// Module ID: 8116
+// Function ID: 8117
 // Name: Queue
 // Dependencies: [3, 8, 2]
 
-// Module 8088 (Queue)
+// Module 8116 (Queue)
 import LoggerDefault from "Logger" /* 3 */;
 import DequeDefault from "Deque" /* 8 */;
 import size from "module_2" /* 2 */;

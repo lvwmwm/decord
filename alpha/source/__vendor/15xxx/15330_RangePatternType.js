@@ -1,9 +1,0 @@
-// Module ID: 15330
-// Function ID: 15331
-// Name: RangePatternType
-// Dependencies: []
-
-// Module 15330 (RangePatternType)
-const obj = { startRange: "startRange", shared: "shared", endRange: "endRange" };
-
-export const RangePatternType = obj;

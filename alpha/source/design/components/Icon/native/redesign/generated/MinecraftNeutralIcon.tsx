@@ -1,16 +1,16 @@
-// Module ID: 9221
-// Function ID: 9222
+// Module ID: 9248
+// Function ID: 9249
 // Name: MinecraftNeutralIcon
-// Dependencies: [109, 19, 17, 21, 558, 576, 587, 9222, 5630, 9223, 9224, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 587, 9249, 5650, 9250, 9251, 2]
 
-// Module 9221 (MinecraftNeutralIcon)
+// Module 9248 (MinecraftNeutralIcon)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage4 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 9222 */;
-import AssetRegistry2 from "AssetRegistry" /* 9223 */;
-import AssetRegistry3 from "AssetRegistry" /* 9224 */;
+import BaseIconImage4 from "BaseIconImage" /* 5650 */;
+import AssetRegistry from "AssetRegistry" /* 9249 */;
+import AssetRegistry2 from "AssetRegistry" /* 9250 */;
+import AssetRegistry3 from "AssetRegistry" /* 9251 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -171,7 +171,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MinecraftN
             }
           }
           const obj5 = { source: tmp29, color: str2, style: tmp31 };
-          const BaseIconImage3 = tmp2(5630).BaseIconImage;
+          const BaseIconImage3 = tmp2(5650).BaseIconImage;
           const merged = Object.assign(tmp5);
           const tmp39 = metroRequire(BaseIconImage3, obj5);
           cResult[23] = tmp5;
@@ -182,7 +182,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MinecraftN
         }
       }
       const obj6 = { source: tmp18, color: str, style: tmp20 };
-      const BaseIconImage2 = tmp2(5630).BaseIconImage;
+      const BaseIconImage2 = tmp2(5650).BaseIconImage;
       const merged1 = Object.assign(tmp5);
       const tmp28 = metroRequire(BaseIconImage2, obj6);
       cResult[15] = tmp5;
@@ -193,7 +193,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MinecraftN
     }
   }
   const obj7 = { source: tmp13, color: INTERACTIVE_ICON_DEFAULT, style: tmp6 };
-  const BaseIconImage = tmp2(5630).BaseIconImage;
+  const BaseIconImage = tmp2(5650).BaseIconImage;
   const merged2 = Object.assign(tmp5);
   const tmp17 = metroRequire(BaseIconImage, obj7);
   cResult[7] = INTERACTIVE_ICON_DEFAULT;

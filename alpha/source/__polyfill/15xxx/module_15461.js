@@ -1,131 +1,27 @@
 // Module ID: 15461
 // Function ID: 15462
-// Dependencies: [42, 41, 93, 95, 98, 158, 17, 15462]
+// Dependencies: [15446, 15442, 15462]
 
 // Module 15461
-import react_native from "react-native" /* 17 */;
-import base64Decode from "base64Decode" /* 15462 */;
-import _createClass from "_createClass" /* 42 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import _wrapNativeSuper from "_wrapNativeSuper" /* 158 */;
+import _mod15442 from "module_15442" /* 15442 */;
+import _mod15446 from "module_15446" /* 15446 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+const prop = Object.getOwnPropertySymbols && !_mod15446(() => {
+  const SymbolResult = Symbol("symbol detection");
+  const obj = _mod15442;
+  const StringResult = obj.String(SymbolResult);
+  let tmp5 = !StringResult;
+  if (StringResult) {
+    const _Object = Object;
+    const _Symbol = Symbol;
+    tmp5 = !(Object(SymbolResult) instanceof Symbol);
+  }
+  if (!tmp5) {
+    const _Symbol2 = Symbol;
+    tmp5 = !Symbol.sham && tmp2(15462) && tmp2(15462) < 41;
+    const tmp6 = !Symbol.sham && tmp2(15462) && tmp2(15462) < 41;
+  }
+  return tmp5;
+});
 
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-const NativeModules = react_native.NativeModules;
-class TypeMismatchError {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, TypeMismatchError);
-    const obj = _getPrototypeOf(TypeMismatchError);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = _possibleConstructorReturn;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(TypeMismatchError, _wrapNativeSuper(Error));
-let closure_8 = _createClass(TypeMismatchError);
-class QuotaExceededError {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, QuotaExceededError);
-    const obj = _getPrototypeOf(QuotaExceededError);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = _possibleConstructorReturn;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(QuotaExceededError, _wrapNativeSuper(Error));
-let closure_9 = _createClass(QuotaExceededError);
-if (typeof global.crypto !== "object") {
-  global.crypto = {};
-}
-if (typeof global.crypto.getRandomValues !== "function") {
-  global.crypto.getRandomValues = function getRandomValues(uint8Array) {
-    if (!(uint8Array instanceof Int8Array)) {
-      const _Uint8Array = Uint8Array;
-      if (!(uint8Array instanceof Uint8Array)) {
-        const _Int16Array = Int16Array;
-        if (!(uint8Array instanceof Int16Array)) {
-          const _Uint16Array = Uint16Array;
-          if (!(uint8Array instanceof Uint16Array)) {
-            const _Int32Array = Int32Array;
-            if (!(uint8Array instanceof Int32Array)) {
-              const _Uint32Array = Uint32Array;
-              if (!(uint8Array instanceof Uint32Array)) {
-                const _Uint8ClampedArray = Uint8ClampedArray;
-                if (!(uint8Array instanceof Uint8ClampedArray)) {
-                  const self = this;
-                  const self2 = this;
-                  const tmp2 = new closure_8("Expected an integer array");
-                  throw tmp2;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    if (uint8Array.byteLength > 65536) {
-      const self7 = this;
-      const self8 = this;
-      const tmp11 = new closure_9("Can only request a maximum of 65536 bytes");
-      throw tmp11;
-    } else {
-      let randomBase64;
-      const byteLength = uint8Array.byteLength;
-      const tmp15 = base64Decode;
-      if (NativeModules.RNGetRandomValues) {
-        const RNGetRandomValues = tmp16.RNGetRandomValues;
-        randomBase64 = RNGetRandomValues.getRandomBase64(byteLength);
-      } else if (NativeModules.ExpoRandom) {
-        const ExpoRandom2 = tmp16.ExpoRandom;
-        randomBase64 = ExpoRandom2.getRandomBase64String(byteLength);
-      } else if (global.ExpoModules) {
-        const ExpoRandom = global.ExpoModules.ExpoRandom;
-        randomBase64 = ExpoRandom.getRandomBase64String(byteLength);
-      } else {
-        const _Error = Error;
-        const self3 = this;
-        const self4 = this;
-        const error = new Error("Native module not found");
-        throw error;
-      }
-      const _Uint8Array2 = Uint8Array;
-      const self5 = this;
-      const self6 = this;
-      uint8Array = new Uint8Array(uint8Array.buffer, uint8Array.byteOffset, uint8Array.byteLength);
-      tmp15(randomBase64, uint8Array);
-      return uint8Array;
-    }
-  };
-}
+export default prop;

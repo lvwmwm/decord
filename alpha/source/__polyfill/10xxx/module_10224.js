@@ -1,19 +1,17 @@
 // Module ID: 10224
 // Function ID: 10225
-// Dependencies: [41, 42, 93, 95, 98, 10144, 10225, 10171, 10151]
+// Dependencies: [41, 42, 93, 95, 98, 10179, 10178, 10180]
 
 // Module 10224
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10144 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10151 */;
-import _mod10225 from "module_10225" /* 10225 */;
+import Meridiem from "Meridiem" /* 10178 */;
+import assignSimilarDate from "assignSimilarDate" /* 10179 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10180 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-let tmp2;
-const _mod10171 = tmp2(10171);
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,13 +27,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(?:(?:\\,|\\(|\\\uFF08)\\s*)?(?:(este|esta|passado|pr[o\u00F3]ximo)\\s*)?(" + repeatedTimeunitPattern.matchAnyPattern(_mod10225.WEEKDAY_DICTIONARY) + ")(?:\\s*(?:\\,|\\)|\\\uFF09))?(?:\\s*(este|esta|passado|pr[\u00F3o]ximo)\\s*semana)?(?=\\W|\\d|$)", "i");
-class PTWeekdayParser {
+class DECasualTimeParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, PTWeekdayParser);
-    const obj = _getPrototypeOf(PTWeekdayParser);
+    _classCallCheck(this, DECasualTimeParser);
+    const obj = _getPrototypeOf(DECasualTimeParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -47,43 +44,77 @@ class PTWeekdayParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(PTWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(DECasualTimeParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
-  value: function innerPattern() {
-    return regExp;
+  value: function innerPattern(arg0) {
+    return /(diesen)?\s*(morgen|vormittag|mittags?|nachmittag|abend|nacht|mitternacht)(?=\W|$)/i;
   }
 };
 const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
+    value: function innerExtract(refDate, arg1) {
+      refDate = refDate.refDate;
       const str = arg1[2];
       const formatted = str.toLowerCase();
-      const tmp4 = _mod10225.WEEKDAY_DICTIONARY[formatted];
-      if (undefined === tmp4) {
-        return null;
-      } else {
-        const str2 = arg1[1] || arg1[3] || "";
-        const formatted1 = str2.toLowerCase();
-        let str5 = "this";
-        if ("passado" != formatted1) {
-          str5 = "next";
-          if ("pr\u00F3ximo" != formatted1) {
-            str5 = "next";
-            if ("proximo" != formatted1) {
-              str5 = null;
-              if ("este" == formatted1) {
-                str5 = "this";
-              }
-            }
-          }
-        }
-        return _mod10171.createParsingComponentsAtWeekday(reference.reference, tmp4, str5);
-      }
+      const parsingComponents = refDate.createParsingComponents();
+      assignSimilarDate.implySimilarTime(parsingComponents, refDate);
+      return DECasualTimeParser.extractTimeComponents(parsingComponents, formatted);
     }
   }
 ];
+const entry1 = {
+  key: "extractTimeComponents",
+  value: function extractTimeComponents(nowResult, formatted) {
+    if ("morgen" === formatted) {
+      nowResult.imply("hour", 6);
+      nowResult.imply("minute", 0);
+      nowResult.imply("second", 0);
+      nowResult.imply("meridiem", Meridiem.Meridiem.AM);
+    } else if ("vormittag" === formatted) {
+      nowResult.imply("hour", 9);
+      nowResult.imply("minute", 0);
+      nowResult.imply("second", 0);
+      nowResult.imply("meridiem", Meridiem.Meridiem.AM);
+    } else {
+      if ("mittag" !== formatted) {
+        if ("mittags" !== formatted) {
+          if ("nachmittag" === formatted) {
+            nowResult.imply("hour", 15);
+            nowResult.imply("minute", 0);
+            nowResult.imply("second", 0);
+            nowResult.imply("meridiem", Meridiem.Meridiem.PM);
+          } else if ("abend" === formatted) {
+            nowResult.imply("hour", 18);
+            nowResult.imply("minute", 0);
+            nowResult.imply("second", 0);
+            nowResult.imply("meridiem", Meridiem.Meridiem.PM);
+          } else if ("nacht" === formatted) {
+            nowResult.imply("hour", 22);
+            nowResult.imply("minute", 0);
+            nowResult.imply("second", 0);
+            nowResult.imply("meridiem", Meridiem.Meridiem.PM);
+          } else if ("mitternacht" === formatted) {
+            if (nowResult.get("hour") > 1) {
+              nowResult.addDurationAsImplied({ day: 1 });
+            }
+            nowResult.imply("hour", 0);
+            nowResult.imply("minute", 0);
+            nowResult.imply("second", 0);
+            nowResult.imply("meridiem", Meridiem.Meridiem.AM);
+          }
+        }
+      }
+      nowResult.imply("hour", 12);
+      nowResult.imply("minute", 0);
+      nowResult.imply("second", 0);
+      nowResult.imply("meridiem", Meridiem.Meridiem.AM);
+    }
+    return nowResult;
+  }
+};
+const items1 = [entry1];
 
-export default _createClass(PTWeekdayParser, items);
+export default _createClass(DECasualTimeParser, items, items1);

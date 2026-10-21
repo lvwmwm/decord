@@ -1,15 +1,15 @@
-// Module ID: 13242
-// Function ID: 13243
+// Module ID: 13310
+// Function ID: 13311
 // Name: GuildPowerupsNotificationsDCF
-// Dependencies: [558, 576, 4784, 7445, 13236, 13243, 2]
+// Dependencies: [558, 576, 4805, 7473, 13304, 13311, 2]
 // Exports: useExpiringPowerupCoachmarkDCF, useNewGamesCoachmarkDC, useNewPerkAvailableCoachmarkDCF
 
-// Module 13242 (GuildPowerupsNotificationsDCF)
+// Module 13310 (GuildPowerupsNotificationsDCF)
 import react from "react" /* 576 */;
-import dismissible_content from "dismissible_content" /* 4784 */;
-import useSelectedDismissibleContent2 from "useSelectedDismissibleContent" /* 7445 */;
-import GuildPowerupsNotification from "GuildPowerupsNotification" /* 13236 */;
-import BoostToUnlockMobileCoachmarkExperimentDefault from "BoostToUnlockMobileCoachmarkExperiment" /* 13243 */;
+import dismissible_content from "dismissible_content" /* 4805 */;
+import useSelectedDismissibleContent2 from "useSelectedDismissibleContent" /* 7473 */;
+import GuildPowerupsNotification from "GuildPowerupsNotification" /* 13304 */;
+import BoostToUnlockMobileCoachmarkExperimentDefault from "BoostToUnlockMobileCoachmarkExperiment" /* 13311 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -64,7 +64,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
   const useSelectedTimeRecurringDismissibleContent = useSelectedDismissibleContent2.useSelectedTimeRecurringDismissibleContent;
   useSelectedDismissibleContent2;
   if (arg0) {
-    prop = tmp(4784).DismissibleContent.GUILD_POWERUP_NOTIFICATION;
+    prop = tmp(4805).DismissibleContent.GUILD_POWERUP_NOTIFICATION;
   }
   return useSelectedTimeRecurringDismissibleContent(prop, first);
 }) : (function useGuildPowerupNotificationDCF(arg0) {
@@ -72,7 +72,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
   const useSelectedTimeRecurringDismissibleContent = useSelectedDismissibleContent2.useSelectedTimeRecurringDismissibleContent;
   useSelectedDismissibleContent2;
   if (arg0) {
-    prop = tmp(4784).DismissibleContent.GUILD_POWERUP_NOTIFICATION;
+    prop = tmp(4805).DismissibleContent.GUILD_POWERUP_NOTIFICATION;
   }
   const obj = { cooldownDurationMs: GuildPowerupsNotification.GUILD_POWERUP_NOTIFICATION_COOLDOWN };
   return useSelectedTimeRecurringDismissibleContent(prop, obj);
@@ -110,7 +110,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBoostToUn
   if (arg0) {
     prop = null;
     if (showCoachmark) {
-      prop = tmp(4784).DismissibleContent.BOOST_TO_UNLOCK_COACHMARK;
+      prop = tmp(4805).DismissibleContent.BOOST_TO_UNLOCK_COACHMARK;
     }
   }
   return useSelectedTimeRecurringGuildDismissibleContent(prop, arg1, tmp5, arg2);
@@ -128,7 +128,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBoostToUn
   if (arg0) {
     prop = null;
     if (showCoachmark) {
-      prop = tmp3(4784).DismissibleContent.BOOST_TO_UNLOCK_COACHMARK;
+      prop = tmp3(4805).DismissibleContent.BOOST_TO_UNLOCK_COACHMARK;
     }
   }
   const obj = { cooldownDurationMs: GuildPowerupsNotification.BOOST_TO_UNLOCK_COACHMARK_COOLDOWN, numTimesToRecur: GuildPowerupsNotification.BOOST_TO_UNLOCK_COACHMARK_MAX_TIMES_TO_RECUR };

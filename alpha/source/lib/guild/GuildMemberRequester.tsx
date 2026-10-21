@@ -1,11 +1,11 @@
-// Module ID: 6641
-// Function ID: 6642
+// Module ID: 6669
+// Function ID: 6670
 // Name: GuildMemberRequester
-// Dependencies: [4795, 12, 2]
+// Dependencies: [4816, 12, 2]
 
-// Module 6641 (GuildMemberRequester)
+// Module 6669 (GuildMemberRequester)
 import _modDef12 from "module_12" /* 12 */;
-import Timers from "Timers" /* 4795 */;
+import Timers from "Timers" /* 4816 */;
 import size from "module_2" /* 2 */;
 
 let set, set2;
@@ -26,10 +26,26 @@ class GuildMemberRequestState {
     return merged;
   }
   acknowledge(arg0) {
-    const _unacknowledgedRequests = this._unacknowledgedRequests;
-    _unacknowledgedRequests.delete(arg0);
-    const _pendingRequests = this._pendingRequests;
+    let _pendingRequests;
+    let _unacknowledgedRequests;
+    ({ _unacknowledgedRequests, _pendingRequests } = this);
+    const deleteResult = _unacknowledgedRequests.delete(arg0);
     _pendingRequests.delete(arg0);
+    return deleteResult;
+  }
+  isSettled(arg0) {
+    const self = this;
+    const _sentRequests = this._sentRequests;
+    let hasItem = _sentRequests.has(arg0);
+    if (hasItem) {
+      const _unacknowledgedRequests = self._unacknowledgedRequests;
+      hasItem = !_unacknowledgedRequests.has(arg0);
+    }
+    if (hasItem) {
+      const _pendingRequests = self._pendingRequests;
+      hasItem = !_pendingRequests.has(arg0);
+    }
+    return hasItem;
   }
   flushRequests(fn) {
     const self = this;
@@ -111,7 +127,17 @@ class GuildMemberRequester {
   }
   acknowledge(_guildId, arg1) {
     const _getGuildStateResult = this._getGuildState(_guildId);
-    _getGuildStateResult.acknowledge(arg1);
+    return _getGuildStateResult.acknowledge(arg1);
+  }
+  isSettled(arg0, arg1) {
+    let flag;
+    if (this._guildStates[arg0] != null) {
+      flag = obj.isSettled(arg1);
+    }
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
   }
   flushRequests() {
     const self = this;

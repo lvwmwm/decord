@@ -1,89 +1,75 @@
 // Module ID: 12518
 // Function ID: 12519
-// Dependencies: [12479, 12467, 12502, 12426]
+// Dependencies: [12511, 12506, 12519, 12507, 12479]
+// Exports: sampleSpan
 
 // Module 12518
-import _mod12426 from "module_12426" /* 12426 */;
-import module_12479 from "module_12479" /* 12479 */;
+import _mod12506 from "module_12506" /* 12506 */;
+import _mod12507 from "module_12507" /* 12507 */;
+import _mod12511 from "module_12511" /* 12511 */;
+import _mod12519 from "module_12519" /* 12519 */;
 
-let filterKeys;
 
-let c2 = "_sentryBundlerPluginAppKey:";
-
-export const thirdPartyErrorFilterIntegration = module_12479.defineIntegration((arg0) => {
-  const behaviour = arg0;
-  let obj = {
-    name: "ThirdPartyErrorsFilter",
-    setup(on) {
-      const options = on;
-      on.on("beforeEnvelope", (arg0) => {
-        let obj = options(closure_1_1[1]);
-        obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
-          if ("event" === arg1) {
-            const _Array = Array;
-            let tmp3;
-            if (Array.isArray(arg0)) {
-              tmp3 = arg0[1];
-            }
-            if (tmp3) {
-              const obj = options(closure_1_1[2]);
-              const result = obj.stripMetadataFromStackFrames(tmp3);
-              arg0[1] = tmp3;
-            }
-          }
-        });
-      });
-      on.on("applyFrameMetadata", (type) => {
-        if (!type.type) {
-          const stackParser = options.getOptions().stackParser;
-          const obj = options(dependencyMap[2]);
-          const result = obj.addMetadataToStackFrames(stackParser, type);
-        }
-      });
-    },
-    processEvent(tags) {
-      const obj = _mod12426;
-      const framesFromEvent = obj.getFramesFromEvent(tags);
-      let mapped;
-      if (framesFromEvent) {
-        let found = framesFromEvent.filter((filename) => filename.filename);
-        mapped = found.map((module_metadata) => {
-          let length;
-          let mapped;
-          if (module_metadata.module_metadata) {
-            const _Object = Object;
-            const keys = Object.keys(module_metadata.module_metadata);
-            const found = keys.filter((item) => item.startsWith(length));
-            mapped = found.map((arr) => arr.slice(length.length));
-          } else {
-            mapped = [];
-          }
-          return mapped;
-        });
+export const sampleSpan = function sampleSpan(tracesSampler, normalizedRequest) {
+  const obj = _mod12511;
+  if (obj.hasTracingEnabled(tracesSampler)) {
+    let num;
+    let items3;
+    const tmpResult = _mod12506;
+    const isolationScope = tmpResult.getIsolationScope();
+    const obj2 = { normalizedRequest: normalizedRequest.normalizedRequest || normalizedRequest };
+    normalizedRequest = isolationScope.getScopeData().sdkProcessingMetadata.normalizedRequest;
+    const merged = Object.assign(normalizedRequest);
+    if (typeof tracesSampler.tracesSampler === "function") {
+      num = tracesSampler.tracesSampler(obj2);
+    } else if (undefined !== obj2.parentSampled) {
+      num = obj2.parentSampled;
+    } else {
+      num = 1;
+      if (undefined !== tracesSampler.tracesSampleRate) {
+        num = tracesSampler.tracesSampleRate;
       }
-      if (mapped) {
-        let str2;
-        if ("drop-error-if-contains-third-party-frames" === behaviour.behaviour) {
-          str2 = "some";
-        } else {
-          str2 = "every";
-        }
-        if (mapped[str2]((arr) => !arr.some((item) => {
-          filterKeys = filterKeys.filterKeys;
-          return filterKeys.includes(item);
-        }))) {
-          if ("drop-error-if-contains-third-party-frames" !== behaviour.behaviour) {
-            if ("drop-error-if-exclusively-contains-third-party-frames" !== behaviour.behaviour) {
-              const obj2 = { third_party_code: true };
-              const merged = Object.assign(tags.tags);
-              tags.tags = obj2;
-            }
-          }
-          return null;
-        }
-      }
-      return tags;
     }
-  };
-  return obj;
-});
+    const tmpResult2 = _mod12519;
+    const parseSampleRateResult = tmpResult2.parseSampleRate(num);
+    if (undefined === parseSampleRateResult) {
+      if (_mod12507.DEBUG_BUILD) {
+        const logger3 = tmp(12479).logger;
+        logger3.warn("[Tracing] Discarding transaction because of invalid sample rate.");
+      }
+      const items = [false];
+      items3 = items;
+    } else if (parseSampleRateResult) {
+      let items2;
+      const _Math = Math;
+      if (Math.random() < parseSampleRateResult) {
+        const items1 = [true, parseSampleRateResult];
+        items2 = items1;
+      } else {
+        if (_mod12507.DEBUG_BUILD) {
+          const logger2 = tmp(12479).logger;
+          const _Number = Number;
+          const _HermesInternal = HermesInternal;
+          logger2.log("[Tracing] Discarding transaction because it's not included in the random sample (sampling rate = " + Number(num) + ")");
+        }
+        items2 = [false, parseSampleRateResult];
+      }
+      items3 = items2;
+    } else {
+      if (_mod12507.DEBUG_BUILD) {
+        const logger = tmp(12479).logger;
+        let str = "a negative sampling decision was inherited or tracesSampleRate is set to 0";
+        const log = logger.log;
+        if (typeof tracesSampler.tracesSampler === "function") {
+          str = "tracesSampler returned 0 or false";
+        }
+        log(`[Tracing] Discarding transaction because ${str}`);
+      }
+      items3 = [false, parseSampleRateResult];
+    }
+    return items3;
+  } else {
+    const items4 = [false];
+    return items4;
+  }
+};

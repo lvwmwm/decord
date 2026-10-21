@@ -1,10 +1,10 @@
-// Module ID: 6980
-// Function ID: 6981
+// Module ID: 7008
+// Function ID: 7009
 // Name: _objectWithoutProperties
 // Dependencies: [109, 2]
 // Exports: propsForNativeTextInput
 
-// Module 6980 (_objectWithoutProperties)
+// Module 7008 (_objectWithoutProperties)
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import size from "module_2" /* 2 */;
 

@@ -1,21 +1,21 @@
-// Module ID: 8727
-// Function ID: 8728
+// Module ID: 8754
+// Function ID: 8755
 // Name: common/Video
-// Dependencies: [32, 19, 17, 21, 4945, 587, 558, 576, 8728, 4999, 8688, 7084, 5631, 1128, 2]
+// Dependencies: [32, 19, 17, 21, 4966, 587, 558, 576, 8755, 5020, 8715, 7112, 5651, 1128, 2]
 // Exports: createVideoControls
 
-// Module 8727 (common/Video)
+// Module 8754 (common/Video)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import native from "native" /* 4999 */;
-import FastImageDefault from "FastImage" /* 5631 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7084 */;
-import openMediaModal2 from "openMediaModal" /* 8688 */;
+import native from "native" /* 5020 */;
+import FastImageDefault from "FastImage" /* 5651 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7112 */;
+import openMediaModal2 from "openMediaModal" /* 8715 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -72,7 +72,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoCompo
   }
   _require = tmp6;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(8728);
+    const tmpResult = tmp(8755);
     cResult[0] = tmpResult;
     let first = tmpResult;
   } else {
@@ -88,8 +88,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoCompo
         if (tmp) {
           tmp2 = closure_1_7;
           str = "change";
-          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F143722 */ });
-          return () => { /* body not rendered: F143723 */ };
+          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F144190 */ });
+          return () => { /* body not rendered: F144191 */ };
         } else {
           return;
         }
@@ -108,8 +108,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoCompo
         if (tmp) {
           tmp2 = closure_1_7;
           str = "change";
-          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F143722 */ });
-          return () => { /* body not rendered: F143723 */ };
+          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F144190 */ });
+          return () => { /* body not rendered: F144191 */ };
         } else {
           return;
         }
@@ -125,8 +125,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoCompo
         if (tmp) {
           tmp2 = closure_1_7;
           str = "change";
-          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F143722 */ });
-          return () => { /* body not rendered: F143723 */ };
+          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F144190 */ });
+          return () => { /* body not rendered: F144191 */ };
         } else {
           return;
         }
@@ -141,8 +141,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoCompo
         if (tmp) {
           tmp2 = closure_1_7;
           str = "change";
-          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F143722 */ });
-          return () => { /* body not rendered: F143723 */ };
+          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F144190 */ });
+          return () => { /* body not rendered: F144191 */ };
         } else {
           return;
         }
@@ -156,8 +156,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoCompo
         if (tmp) {
           tmp2 = closure_1_7;
           str = "change";
-          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F143722 */ });
-          return () => { /* body not rendered: F143723 */ };
+          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F144190 */ });
+          return () => { /* body not rendered: F144191 */ };
         } else {
           return;
         }
@@ -234,7 +234,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoCompo
   }
   closure_1 = undefined;
   const httpEngine = paused.httpEngine;
-  const _default = pauseWhileAppInactive(8728).default;
+  const _default = pauseWhileAppInactive(8755).default;
   [first, closure_1] = react.useState("active" === closure_7.currentState);
   const items = [pauseWhileAppInactive];
   const effect = react.useEffect(() => {

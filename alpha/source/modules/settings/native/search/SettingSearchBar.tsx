@@ -1,24 +1,24 @@
-// Module ID: 15794
-// Function ID: 15795
+// Module ID: 15870
+// Function ID: 15871
 // Name: SettingSearchBar
-// Dependencies: [19, 17, 15782, 21, 4945, 587, 558, 576, 1896, 15788, 7096, 2]
+// Dependencies: [19, 17, 15858, 21, 4966, 587, 558, 576, 1896, 15864, 7124, 2]
 
-// Module 15794 (SettingSearchBar)
+// Module 15870 (SettingSearchBar)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1896 */;
-import settings_tracking_Tracking from "settings/tracking/Tracking" /* 15788 */;
+import settings_tracking_Tracking from "settings/tracking/Tracking" /* 15864 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 15782 */;
-import createStyles from "createStyles" /* 4945 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 15858 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const SearchField2 = tmp(7096);
+const SearchField2 = tmp(7124);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { container: obj2 };
@@ -47,7 +47,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingSea
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function f() {
+    const fn2 = function h() {
       const obj = settings_tracking_Tracking;
       const result = obj.trackSettingSearchInputFocused();
       UserSettingSearchStore.setState({ isActive: true, isFocused: true });
@@ -58,7 +58,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingSea
     tmp7 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn3 = function b() {
+    const fn3 = function y() {
       UserSettingSearchStore.setState({ isFocused: false });
     };
     cResult[2] = fn3;
@@ -91,7 +91,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingSea
       }
     }
     const SearchField = SearchField2.SearchField;
-    const tmp12 = <SearchField ref={ref} size="md" onFocus={tmp7} onBlur={tmp8} onClear={first} defaultValue={UserSettingSearchStore.getField("query")} onChange={tmp9} />;
+    const tmp12 = <SearchField ref={ref} testID="user_settings_search_input" size="md" onFocus={tmp7} onBlur={tmp8} onClear={first} defaultValue={UserSettingSearchStore.getField("query")} onChange={tmp9} />;
     cResult[4] = tmp12;
     tmp10 = tmp12;
   } else {
@@ -142,7 +142,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingSea
     const obj = { query };
     UserSettingSearchStore.setState(obj);
   }, []);
-  ({ ref, size: "md", onFocus: callback1, onBlur: callback2, onClear: callback, defaultValue: UserSettingSearchStore.getField("query"), onChange: callback3 });
+  ({ ref, testID: "user_settings_search_input", size: "md", onFocus: callback1, onBlur: callback2, onClear: callback, defaultValue: UserSettingSearchStore.getField("query"), onChange: callback3 });
   const SearchField = SearchField2.SearchField;
   return <View style={tmp.container}>{null}</View>;
 });

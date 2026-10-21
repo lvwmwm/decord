@@ -1,9 +1,9 @@
-// Module ID: 10363
-// Function ID: 10364
+// Module ID: 10392
+// Function ID: 10393
 // Name: DeviceConstants
 // Dependencies: [2]
 
-// Module 10363 (DeviceConstants)
+// Module 10392 (DeviceConstants)
 import size from "module_2" /* 2 */;
 
 const frozen = Object.freeze({ VIDEO: "ALAssetTypeVideo", PHOTO: "ALAssetTypePhoto" });

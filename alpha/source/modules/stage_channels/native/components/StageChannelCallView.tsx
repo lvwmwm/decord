@@ -1,19 +1,19 @@
-// Module ID: 11574
-// Function ID: 11575
+// Module ID: 11624
+// Function ID: 11625
 // Name: StageChannelCallView
-// Dependencies: [19, 21, 11445, 4945, 558, 576, 1633, 11575, 11576, 5014, 10693, 11577, 2]
+// Dependencies: [19, 21, 11495, 4966, 558, 576, 1633, 11625, 11626, 5035, 10837, 11627, 2]
 
-// Module 11574 (StageChannelCallView)
+// Module 11624 (StageChannelCallView)
 import react2 from "react" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5014 */;
-import StatusBarDefault from "StatusBar" /* 10693 */;
-import StageChannelAnimationUtils from "StageChannelAnimationUtils" /* 11575 */;
-import StageChannelBackgroundDefault from "StageChannelBackground" /* 11576 */;
-import StageChannelCallListDefault from "StageChannelCallList" /* 11577 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5035 */;
+import StatusBarDefault from "StatusBar" /* 10837 */;
+import StageChannelAnimationUtils from "StageChannelAnimationUtils" /* 11625 */;
+import StageChannelBackgroundDefault from "StageChannelBackground" /* 11626 */;
+import StageChannelCallListDefault from "StageChannelCallList" /* 11627 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let c3;
 let closure_4;
 let hasOwnProperty;
 let tmp4;
-const FocusedControls = tmp4(11445);
+const FocusedControls = tmp4(11495);
 ({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = Fragment);
 function CONTROL_PADDING_PX(arg0) {
 
@@ -39,7 +39,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageCh
   const top = useSafeAreaInsetsDefault().top;
   if (cResult[0] !== top) {
     if (typeof CONTROL_PADDING_PX === "function") {
-      const sum = tmp(11445).FOCUSED_CONTROLS_HEADER_HEIGHT + top;
+      const sum = tmp(11495).FOCUSED_CONTROLS_HEADER_HEIGHT + top;
       cResult[0] = top;
       cResult[1] = sum;
       tmp6 = sum;

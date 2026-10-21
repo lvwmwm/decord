@@ -1,21 +1,21 @@
-// Module ID: 12980
-// Function ID: 12981
+// Module ID: 13048
+// Function ID: 13049
 // Name: VoicePanelControlsDrawerTitle
-// Dependencies: [19, 17, 10702, 21, 4945, 587, 558, 576, 5014, 12981, 5195, 7119, 6837, 2]
+// Dependencies: [19, 17, 10846, 21, 4966, 587, 558, 576, 5035, 13049, 5216, 7147, 6865, 2]
 
-// Module 12980 (VoicePanelControlsDrawerTitle)
+// Module 13048 (VoicePanelControlsDrawerTitle)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import NativeViewDefault from "NativeView" /* 6837 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7119 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10702 */;
-import VoicePanelHeaderGlassBlurDefault from "VoicePanelHeaderGlassBlur" /* 12981 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import NativeViewDefault from "NativeView" /* 6865 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7147 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10846 */;
+import VoicePanelHeaderGlassBlurDefault from "VoicePanelHeaderGlassBlur" /* 13049 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

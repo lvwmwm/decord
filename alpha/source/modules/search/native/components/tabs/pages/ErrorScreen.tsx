@@ -1,21 +1,21 @@
-// Module ID: 17825
-// Function ID: 17826
+// Module ID: 17906
+// Function ID: 17907
 // Name: ErrorScreen
-// Dependencies: [19, 17, 21, 4945, 558, 576, 5554, 4954, 5195, 2]
+// Dependencies: [19, 17, 21, 4966, 558, 576, 5575, 4975, 5216, 2]
 
-// Module 17825 (ErrorScreen)
+// Module 17906 (ErrorScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4954 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5554 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4975 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5575 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Text_Text = tmp(5195);
+const Text_Text = tmp(5216);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ container: { justifyContent: "center", alignItems: "center", height: "100%", display: "flex" }, text: { textAlign: "center", width: "75%" } });

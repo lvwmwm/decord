@@ -1,14 +1,14 @@
-// Module ID: 5618
-// Function ID: 5619
+// Module ID: 5639
+// Function ID: 5640
 // Name: handleURL
-// Dependencies: [5, 17, 5172, 1087, 3, 5619, 5621, 5622, 5623, 1951, 5624, 1128, 5655, 1384, 5171, 1389, 5658, 7383, 14909, 2]
+// Dependencies: [5, 17, 5193, 1087, 3, 5640, 5641, 5642, 5643, 1951, 5644, 1128, 5675, 1384, 5192, 1389, 5678, 7411, 14983, 2]
 // Exports: default
 
-// Module 5618 (handleURL)
+// Module 5639 (handleURL)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 5172 */;
+import ActionSheetStore from "ActionSheetStore" /* 5193 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -334,7 +334,7 @@ let obj = function _handleURL() {
           presentFailedToast(intl.string(closure_2_0(tmp2[11]).t.XiqzAp));
         }
       };
-      return "test";
+      return "Reflect";
     })();
     let nextResult = iter.next();
     return iter;

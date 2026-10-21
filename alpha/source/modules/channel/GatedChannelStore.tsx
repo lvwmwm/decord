@@ -1,21 +1,21 @@
-// Module ID: 4852
-// Function ID: 4853
+// Module ID: 4873
+// Function ID: 4874
 // Name: GatedChannelStore
-// Dependencies: [4853, 4804, 4855, 4800, 4860, 4854, 4822, 1392, 1087, 4870, 4871, 4872, 504, 584, 2]
+// Dependencies: [4874, 4825, 4876, 4821, 4881, 4875, 4843, 1392, 1087, 4891, 4892, 4893, 504, 584, 2]
 
-// Module 4852 (GatedChannelStore)
+// Module 4873 (GatedChannelStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelRecord from "ChannelRecord" /* 4804 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 4855 */;
-import PremiumRoleUtils from "PremiumRoleUtils" /* 4870 */;
-import RolePermissionUtils from "RolePermissionUtils" /* 4871 */;
-import CreatorMonetizationRestrictionsUtils from "CreatorMonetizationRestrictionsUtils" /* 4872 */;
-import ImpersonateStore from "ImpersonateStore" /* 4853 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import GuildMemberStore from "GuildMemberStore" /* 4860 */;
-import GuildRoleStore from "GuildRoleStore" /* 4854 */;
-import GuildStore from "GuildStore" /* 4822 */;
+import ChannelRecord from "ChannelRecord" /* 4825 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 4876 */;
+import PremiumRoleUtils from "PremiumRoleUtils" /* 4891 */;
+import RolePermissionUtils from "RolePermissionUtils" /* 4892 */;
+import CreatorMonetizationRestrictionsUtils from "CreatorMonetizationRestrictionsUtils" /* 4893 */;
+import ImpersonateStore from "ImpersonateStore" /* 4874 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import GuildMemberStore from "GuildMemberStore" /* 4881 */;
+import GuildRoleStore from "GuildRoleStore" /* 4875 */;
+import GuildStore from "GuildStore" /* 4843 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
@@ -34,7 +34,7 @@ function isSubscriptionGated(role) {
   if (isSubscriptionRoleResult) {
     let tmp4 = isPreviewingRoles;
     if (!tmp4) {
-      const isSubscriptionRoleAvailableForPurchase = tmp(4870).isSubscriptionRoleAvailableForPurchase;
+      const isSubscriptionRoleAvailableForPurchase = tmp(4891).isSubscriptionRoleAvailableForPurchase;
       PremiumRoleUtils;
       let result = isSubscriptionRoleAvailableForPurchase(role);
       if (!result) {

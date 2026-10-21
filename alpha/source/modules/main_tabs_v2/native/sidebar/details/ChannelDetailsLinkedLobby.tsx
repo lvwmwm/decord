@@ -1,18 +1,18 @@
-// Module ID: 17936
-// Function ID: 17937
+// Module ID: 18017
+// Function ID: 18018
 // Name: ChannelDetailsLinkedLobby
-// Dependencies: [19, 17, 1087, 21, 4945, 587, 558, 576, 7206, 1128, 2068, 5195, 2]
+// Dependencies: [19, 17, 1087, 21, 4966, 587, 558, 576, 7234, 1128, 2067, 5216, 2]
 
-// Module 17936 (ChannelDetailsLinkedLobby)
+// Module 18017 (ChannelDetailsLinkedLobby)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2068 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7206 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7234 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -119,7 +119,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelDetai
       const obj7 = { variant: "text-sm/normal", color: "text-default", children: metroRequire(hasOwnProperty, obj8) };
       obj8 = { children: items1 };
       items1 = [tmp10, "  \u2022  ", tmp13];
-      const Text = tmp(5195).Text;
+      const Text = tmp(5216).Text;
       const tmp21 = metroImportDefault(Text, obj7);
       cResult[6] = tmp10;
       cResult[7] = tmp13;
@@ -155,7 +155,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelDetai
     let formatResult;
     const obj = { style: items, children: items2 };
     items = [tmp.container, containerStyle];
-    const Text = tmp2(5195).Text;
+    const Text = tmp2(5216).Text;
     const tmp11 = hasOwnProperty;
     if (null != getOrFetchApplication) {
       const intl2 = tmp2(1128).intl;

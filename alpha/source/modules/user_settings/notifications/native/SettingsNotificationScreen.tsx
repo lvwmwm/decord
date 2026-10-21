@@ -1,25 +1,25 @@
-// Module ID: 16590
-// Function ID: 16591
+// Module ID: 16666
+// Function ID: 16667
 // Name: SettingsNotificationScreen
-// Dependencies: [19, 17, 16591, 8280, 21, 4945, 587, 558, 576, 7026, 13127, 16592, 16593, 5195, 1128, 6856, 6963, 11111, 16594, 16595, 15780, 2]
+// Dependencies: [19, 17, 16667, 8308, 21, 4966, 587, 558, 576, 7054, 13195, 16668, 16669, 5216, 1128, 6884, 6991, 11155, 16670, 16671, 15856, 2]
 
-// Module 16590 (SettingsNotificationScreen)
+// Module 16666 (SettingsNotificationScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7026 */;
-import SettingsConstants from "SettingsConstants" /* 8280 */;
-import SettingBuilders from "SettingBuilders" /* 11111 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13127 */;
-import SettingLayoutDefault from "SettingLayout" /* 15780 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 16591 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 16592 */;
-import SettingsNotificationUtils from "SettingsNotificationUtils" /* 16593 */;
-import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 16594 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7054 */;
+import SettingsConstants from "SettingsConstants" /* 8308 */;
+import SettingBuilders from "SettingBuilders" /* 11155 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13195 */;
+import SettingLayoutDefault from "SettingLayout" /* 15856 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 16667 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 16668 */;
+import SettingsNotificationUtils from "SettingsNotificationUtils" /* 16669 */;
+import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 16670 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -169,7 +169,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function System
   if (cResult[2] !== manaTypeConsolidationExperiment) {
     if (tmp13Result) {
       let str = "text-sm/medium";
-      const Text = tmp(5195).Text;
+      const Text = tmp(5216).Text;
       const tmp13 = metroImportDefault;
       if (manaTypeConsolidationExperiment) {
         str = "experimental/body-xs/normal";
@@ -211,13 +211,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function System
     const obj8 = { style: tmp4.card, children: metroImportDefault(Card, obj9) };
     obj9 = { border: "none", shadow: "none", children: metroImportAll(View, obj10) };
     obj10 = { style: tmp4.cardContent, children: items1 };
-    Card = tmp(6856).Card;
+    Card = tmp(6884).Card;
     const obj11 = { color: nativeDefault.unsafe_rawColors.YELLOW_300 };
-    const CircleErrorIcon = tmp(6963).CircleErrorIcon;
+    const CircleErrorIcon = tmp(6991).CircleErrorIcon;
     items1 = [metroImportDefault(CircleErrorIcon, obj11), ];
     const obj12 = { style: tmp4.text, children: metroImportDefault(Text2, obj13) };
     obj13 = { color: "text-default", variant: "text-sm/medium", children: intl2.string(intl7.t.TAuasM) };
-    Text2 = tmp(5195).Text;
+    Text2 = tmp(5216).Text;
     intl2 = tmp(1128).intl;
     items1[1] = metroImportDefault(View, obj12);
     tmp15 = metroImportDefault(View, obj8);
@@ -248,7 +248,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function System
   const tmp9 = React4;
   if (result) {
     let str = "text-sm/medium";
-    const Text = tmp2(5195).Text;
+    const Text = tmp2(5216).Text;
     const tmp10 = metroImportDefault;
     if (manaTypeConsolidationExperiment) {
       str = "experimental/body-xs/normal";
@@ -265,13 +265,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function System
     const obj6 = { style: tmp.card, children: metroImportDefault(Card, obj7) };
     obj7 = { border: "none", shadow: "none", children: metroImportAll(View, obj8) };
     obj8 = { style: tmp.cardContent, children: items1 };
-    Card = tmp2(6856).Card;
+    Card = tmp2(6884).Card;
     const obj9 = { color: nativeDefault.unsafe_rawColors.YELLOW_300 };
-    const CircleErrorIcon = tmp2(6963).CircleErrorIcon;
+    const CircleErrorIcon = tmp2(6991).CircleErrorIcon;
     items1 = [metroImportDefault(CircleErrorIcon, obj9), ];
     const obj10 = { style: tmp.text, children: metroImportDefault(Text2, obj11) };
     obj11 = { color: "text-default", variant: "text-sm/medium", children: intl2.string(intl7.t.TAuasM) };
-    Text2 = tmp2(5195).Text;
+    Text2 = tmp2(5216).Text;
     intl2 = tmp2(1128).intl;
     items1[1] = metroImportDefault(View, obj10);
     showReactivationPrompt = metroImportDefault(View, obj6);
@@ -303,11 +303,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const inHoldout = obj3.useConfig(first).inHoldout;
   if (cResult[1] !== !inHoldout) {
     const obj4 = { sections: getNotificationSettings(), ListHeaderComponent: tmp5Result };
-    const createList = tmp(11111).createList;
+    const createList = tmp(11155).createList;
     SettingBuilders;
     tmp5Result = undefined;
     if (!inHoldout) {
-      tmp5Result = tmp5(16594);
+      tmp5Result = tmp5(16670);
     }
     const list = createList(obj4);
     cResult[1] = !inHoldout;

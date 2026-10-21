@@ -1,26 +1,26 @@
-// Module ID: 17551
-// Function ID: 17552
+// Module ID: 17632
+// Function ID: 17633
 // Name: GuildsBarDragPreview
-// Dependencies: [19, 6652, 17480, 17477, 21, 4945, 558, 576, 17200, 5014, 5208, 4999, 7119, 5213, 587, 17488, 17509, 4863, 2]
+// Dependencies: [19, 6680, 17561, 17558, 21, 4966, 558, 576, 17276, 5035, 5229, 5020, 7147, 5234, 587, 17569, 17590, 4884, 2]
 
-// Module 17551 (GuildsBarDragPreview)
+// Module 17632 (GuildsBarDragPreview)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import native from "native" /* 4999 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
-import spring from "spring" /* 5208 */;
-import SortedGuildStore from "SortedGuildStore" /* 6652 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17477 */;
+import native from "native" /* 5020 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
+import spring from "spring" /* 5229 */;
+import SortedGuildStore from "SortedGuildStore" /* 6680 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17558 */;
 import react_mod from "react" /* 19 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17480 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17561 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let min, obj1, set, str, tmp11, tmp12, tmp16, tmp18;
 
 let tmp;
-const _slicedToArray = tmp(4863);
+const _slicedToArray = tmp(4884);
 function getItemPreviewKey(id) {
   return "" + id.id;
 }
@@ -182,7 +182,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
   if ("convert-after" === overState) {
     if (null != overNode) {
       if (cResult[0] !== overNode) {
-        const element = { type: listInsets.FOLDER, id: -1, parentId: "test", name: "Array", color: "k", expanded: null, children: items };
+        const element = { type: listInsets.FOLDER, id: -1, parentId: "Reflect", name: "Array", color: "enumerable", expanded: null, children: items };
         items = [overNode];
         let num = 0;
         cResult[0] = overNode;
@@ -349,7 +349,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     let items;
     if ("convert-after" === overState) {
       if (null != overNode) {
-        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "test", name: "Array", color: "k", expanded: null, children: items };
+        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "Reflect", name: "Array", color: "enumerable", expanded: null, children: items };
         items = [tmp2];
         return element;
       }

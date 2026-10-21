@@ -1,13 +1,13 @@
-// Module ID: 14974
-// Function ID: 14975
+// Module ID: 15048
+// Function ID: 15049
 // Name: useMessageRequestPrivacyOption
-// Dependencies: [19, 21, 558, 576, 4776, 7042, 1128, 7243, 13170, 2]
+// Dependencies: [19, 21, 558, 576, 4797, 7070, 1128, 7271, 13238, 2]
 
-// Module 14974 (useMessageRequestPrivacyOption)
+// Module 15048 (useMessageRequestPrivacyOption)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7042 */;
-import useIsStricterMessageRequestsDefault from "useIsStricterMessageRequests" /* 13170 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7070 */;
+import useIsStricterMessageRequestsDefault from "useIsStricterMessageRequests" /* 13238 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 let addResult, deleteResult, updateSettingResult;
 
 let tmp;
-const UserSettings = tmp(4776);
+const UserSettings = tmp(4797);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRequestRestrictedGuildPrivacyOption(guild) {
@@ -25,14 +25,14 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Message
   const cResult = obj.c(14);
   guild = guild.guild;
   id = guild.id;
-  let MessageRequestRestrictedGuildIds = id(4776).MessageRequestRestrictedGuildIds;
+  let MessageRequestRestrictedGuildIds = id(4797).MessageRequestRestrictedGuildIds;
   const setting = MessageRequestRestrictedGuildIds.useSetting();
   if (cResult[0] === id) {
     let tmp4;
     if (cResult[1] === setting) {
       tmp4 = cResult[2];
     }
-    const RestrictedGuildIds = tmp(4776).RestrictedGuildIds;
+    const RestrictedGuildIds = tmp(4797).RestrictedGuildIds;
     const setting1 = RestrictedGuildIds.useSetting();
     if (cResult[3] === guild.id) {
       let tmp6;
@@ -158,8 +158,8 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Message
       cResult[10] = tmp8;
       cResult[11] = tmp6;
       cResult[12] = !tmp6 && !tmp4;
-      cResult[13] = jsx(tmp(7243).ActionSheetSwitchRow, { label: tmp10, subLabel: tmp11, value: !tmp6 && !tmp4, onValueChange: tmp8, disabled: tmp6 });
-      const tmp17 = jsx(tmp(7243).ActionSheetSwitchRow, { label: tmp10, subLabel: tmp11, value: !tmp6 && !tmp4, onValueChange: tmp8, disabled: tmp6 });
+      cResult[13] = jsx(tmp(7271).ActionSheetSwitchRow, { label: tmp10, subLabel: tmp11, value: !tmp6 && !tmp4, onValueChange: tmp8, disabled: tmp6 });
+      const tmp17 = jsx(tmp(7271).ActionSheetSwitchRow, { label: tmp10, subLabel: tmp11, value: !tmp6 && !tmp4, onValueChange: tmp8, disabled: tmp6 });
     }
     const hasItem = setting1.includes(guild.id);
     cResult[3] = guild.id;
@@ -177,10 +177,10 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Message
   let intl2;
   guild = guild.guild;
   const id = guild.id;
-  let MessageRequestRestrictedGuildIds = id(4776).MessageRequestRestrictedGuildIds;
+  let MessageRequestRestrictedGuildIds = id(4797).MessageRequestRestrictedGuildIds;
   const setting = MessageRequestRestrictedGuildIds.useSetting();
   const hasItem = setting.includes(id);
-  const RestrictedGuildIds = id(4776).RestrictedGuildIds;
+  const RestrictedGuildIds = id(4797).RestrictedGuildIds;
   const setting1 = RestrictedGuildIds.useSetting();
   const hasItem1 = setting1.includes(guild.id);
   const items = [id];
@@ -197,7 +197,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Message
     MessageRequestRestrictedGuildIds.updateSetting(Array.from(sanitizedMessageRequestRestrictedGuilds));
   }, items);
   let obj = { label: intl.string(id(1128).t["7UgSGP"]), subLabel: intl2.string(id(1128).t.INRaYb), value: !hasItem1 && !hasItem, onValueChange: callback, disabled: hasItem1 };
-  const ActionSheetSwitchRow = id(7243).ActionSheetSwitchRow;
+  const ActionSheetSwitchRow = id(7271).ActionSheetSwitchRow;
   intl = id(1128).intl;
   intl2 = id(1128).intl;
   return jsx(ActionSheetSwitchRow, obj);

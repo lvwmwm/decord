@@ -1,30 +1,30 @@
-// Module ID: 17022
-// Function ID: 17023
+// Module ID: 17098
+// Function ID: 17099
 // Name: ContentAndSocialScreen
-// Dependencies: [32, 19, 17, 8280, 1087, 21, 4945, 587, 1128, 2068, 17023, 15909, 13402, 558, 576, 17028, 7347, 11111, 15907, 15780, 17029, 5195, 2]
+// Dependencies: [32, 19, 17, 8308, 1087, 21, 4966, 587, 1128, 2067, 17099, 15985, 13469, 558, 576, 17104, 7375, 11155, 15983, 15856, 17105, 5216, 2]
 
-// Module 17022 (ContentAndSocialScreen)
+// Module 17098 (ContentAndSocialScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl10 from "intl" /* 1128 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2068 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7347 */;
-import SettingsConstants from "SettingsConstants" /* 8280 */;
-import SettingBuilders from "SettingBuilders" /* 11111 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13402 */;
-import SettingLayoutDefault from "SettingLayout" /* 15780 */;
-import SettingsScreenNotices from "SettingsScreenNotices" /* 15907 */;
-import TinyBroncoSettingsNoticesLazy from "TinyBroncoSettingsNoticesLazy" /* 15909 */;
-import SafetyGuildSettingGuildSelect from "SafetyGuildSettingGuildSelect" /* 17023 */;
-import useUserSafetySettingsSelectedGuildId from "useUserSafetySettingsSelectedGuildId" /* 17028 */;
-import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 17029 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7375 */;
+import SettingsConstants from "SettingsConstants" /* 8308 */;
+import SettingBuilders from "SettingBuilders" /* 11155 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13469 */;
+import SettingLayoutDefault from "SettingLayout" /* 15856 */;
+import SettingsScreenNotices from "SettingsScreenNotices" /* 15983 */;
+import TinyBroncoSettingsNoticesLazy from "TinyBroncoSettingsNoticesLazy" /* 15985 */;
+import SafetyGuildSettingGuildSelect from "SafetyGuildSettingGuildSelect" /* 17099 */;
+import useUserSafetySettingsSelectedGuildId from "useUserSafetySettingsSelectedGuildId" /* 17104 */;
+import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 17105 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -145,7 +145,7 @@ function getSocialPermissions(allServersSelected) {
   tmp11 = undefined;
   if (allServersSelected) {
     if (showMessageRequestsNotice) {
-      tmp11 = React4(tmp3(15909).MessageRequestsNotice, {});
+      tmp11 = React4(tmp3(15985).MessageRequestsNotice, {});
     }
   }
   items2[4] = obj5;
@@ -352,7 +352,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedGam
     const _Symbol2 = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj7 = { variant: "text-md/semibold", color: "text-strong", children: intl3.string(intl10.t["+0U77d"]) };
-      const Text = tmp(5195).Text;
+      const Text = tmp(5216).Text;
       intl3 = tmp(1128).intl;
       const tmp17 = React4(Text, obj7);
       cResult[3] = tmp17;
@@ -363,7 +363,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedGam
     const _Symbol3 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
       const obj8 = { variant: "text-sm/normal", color: "text-muted", children: format2(V8wClM, obj9) };
-      const Text2 = tmp(5195).Text;
+      const Text2 = tmp(5216).Text;
       const intl4 = tmp(1128).intl;
       format2 = intl4.format;
       obj9 = { helpdeskArticle: tmp5Result2.getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS) };
@@ -435,7 +435,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedGam
     tmp7 = unpackModuleId(metroRequire, obj3);
   } else {
     let obj = { node: tmp5 };
-    tmp7 = React4(tmp2(15780), obj);
+    tmp7 = React4(tmp2(15856), obj);
   }
   return tmp7;
 });
@@ -497,7 +497,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContentAndSo
   const first1 = _slicedToArray(react.useState(tmp8), 1)[0];
   if (cResult[3] !== first1) {
     const obj2 = { defaultIndex: first1, settings: first };
-    const tmpResult = tmp(11111);
+    const tmpResult = tmp(11155);
     const segmentedControl = tmpResult.createSegmentedControl(obj2);
     cResult[3] = first1;
     cResult[4] = segmentedControl;
@@ -516,7 +516,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContentAndSo
   }
   return tmp13;
 }) : (function ContentAndSocialSettings(route) {
-  const f127911 = () => {
+  const f128362 = () => {
     let tab;
     if (route != null) {
       const params = route.params;
@@ -536,9 +536,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContentAndSo
     ({ CONTENT_AND_SOCIAL_DISCORD: arr[0], CONNECTED_GAMES: arr[1] } = MobileUserSettings);
     return items;
   }, []);
-  const defaultIndex = _slicedToArray(react.useState(f127911), 2)[0];
+  const defaultIndex = _slicedToArray(react.useState(f128362), 2)[0];
   let items = [defaultIndex, memo];
-  _slicedToArray(react.useState(f127911), 2);
+  _slicedToArray(react.useState(f128362), 2);
   const node = react.useMemo(() => {
     const obj = SettingBuilders;
     const obj2 = { defaultIndex, settings: memo };

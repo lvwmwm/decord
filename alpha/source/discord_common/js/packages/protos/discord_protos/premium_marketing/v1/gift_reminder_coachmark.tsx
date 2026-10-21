@@ -1,12 +1,12 @@
-// Module ID: 9469
-// Function ID: 9470
+// Module ID: 9498
+// Function ID: 9499
 // Name: gift_reminder_coachmark
-// Dependencies: [32, 1212, 9464, 9454, 2]
+// Dependencies: [32, 1212, 9493, 9483, 2]
 
-// Module 9469 (gift_reminder_coachmark)
+// Module 9498 (gift_reminder_coachmark)
 import _mod1212 from "module_1212" /* 1212 */;
-import localized_string from "localized_string" /* 9454 */;
-import theme_aware_asset from "theme_aware_asset" /* 9464 */;
+import localized_string from "localized_string" /* 9483 */;
+import theme_aware_asset from "theme_aware_asset" /* 9493 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

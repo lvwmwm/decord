@@ -1,20 +1,20 @@
-// Module ID: 7442
-// Function ID: 7443
+// Module ID: 7470
+// Function ID: 7471
 // Name: useGiftCardMobileConsumptionHalfsheet
-// Dependencies: [32, 19, 7443, 2056, 4797, 1098, 7444, 504, 4784, 7445, 6420, 584, 7449, 2002, 5171, 2]
+// Dependencies: [32, 19, 7471, 2055, 4818, 1098, 7472, 504, 4805, 7473, 6442, 584, 7477, 2002, 5192, 2]
 // Exports: useGiftCardMobileConsumptionHalfsheet
 
-// Module 7442 (useGiftCardMobileConsumptionHalfsheet)
+// Module 7470 (useGiftCardMobileConsumptionHalfsheet)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1098 */;
-import dismissible_content from "dismissible_content" /* 4784 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4797 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6420 */;
+import dismissible_content from "dismissible_content" /* 4805 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6442 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import WalletBalanceStore from "WalletBalanceStore" /* 7443 */;
-import PaymentSourceStore from "PaymentSourceStore" /* 2056 */;
+import WalletBalanceStore from "WalletBalanceStore" /* 7471 */;
+import PaymentSourceStore from "PaymentSourceStore" /* 2055 */;
 import size from "module_2" /* 2 */;
 
 let Idle, dependencyMap;
@@ -38,7 +38,7 @@ export const useGiftCardMobileConsumptionHalfsheet = function useGiftCardMobileC
   let ref;
   let tmp = enabled;
   let tmp2 = dependencyMap;
-  obj = enabled(7444);
+  obj = enabled(7472);
   enabled = obj.useGiftCardsExperimentConfig({ location: "useGiftCardMobileConsumptionHalfsheet" }).enabled;
   let obj2 = enabled(504);
   let items = [markAsDismissed];
@@ -104,7 +104,7 @@ export const useGiftCardMobileConsumptionHalfsheet = function useGiftCardMobileC
     }
     return items1;
   }, items6);
-  const tmpResult = tmp(7445);
+  const tmpResult = tmp(7473);
   let tmp10 = first(tmpResult.useSelectedDismissibleContent(memo, { bypassAutoDismiss: true }), 2);
   first = tmp10[0];
   react = tmp12;
@@ -147,7 +147,7 @@ export const useGiftCardMobileConsumptionHalfsheet = function useGiftCardMobileC
         let c0 = false;
         obj = DispatcherDefault;
         const subscription = obj.subscribe("SHOW_ACTION_SHEET", handleShow);
-        const promise = asyncRequire(7449, tmp2.paths);
+        const promise = asyncRequire(7477, tmp2.paths);
         promise.catch(() => {
           const tmp = c0 || Idle !== closure_2_10.Opening;
           if (!tmp) {

@@ -1,9 +1,9 @@
-// Module ID: 10361
-// Function ID: 10362
+// Module ID: 10390
+// Function ID: 10391
 // Name: useMediaKeyboardItemsPerRow
-// Dependencies: [19, 5115, 558, 576, 2]
+// Dependencies: [19, 5136, 558, 576, 2]
 
-// Module 10361 (useMediaKeyboardItemsPerRow)
+// Module 10390 (useMediaKeyboardItemsPerRow)
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -16,15 +16,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaKeyb
   let tmp11;
   const obj = num(576);
   const cResult = obj.c(6);
-  const tmp4 = ref(5115)();
+  const tmp4 = ref(5136)();
   num = 8;
-  if (num(5115).WindowSizeClassifier.XLARGE !== tmp4) {
+  if (num(5136).WindowSizeClassifier.XLARGE !== tmp4) {
     num = 6;
-    if (num(5115).WindowSizeClassifier.LARGE !== tmp4) {
+    if (num(5136).WindowSizeClassifier.LARGE !== tmp4) {
       num = 4;
-      if (num(5115).WindowSizeClassifier.NORMAL !== tmp4) {
+      if (num(5136).WindowSizeClassifier.NORMAL !== tmp4) {
         num = 3;
-        if (num(5115).WindowSizeClassifier.SMALL !== tmp4) {
+        if (num(5136).WindowSizeClassifier.SMALL !== tmp4) {
           const _Error = Error;
           const _HermesInternal = HermesInternal;
           const self = this;
@@ -67,15 +67,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaKeyb
   tmp13 = obj3;
 }) : (function useMediaKeyboardItemsPerRow() {
   let itemsPageSizeRef;
-  const tmp2 = itemsPageSizeRef(5115)();
+  const tmp2 = itemsPageSizeRef(5136)();
   let itemsPerRow = 8;
-  if (itemsPerRow(5115).WindowSizeClassifier.XLARGE !== tmp2) {
+  if (itemsPerRow(5136).WindowSizeClassifier.XLARGE !== tmp2) {
     itemsPerRow = 6;
-    if (itemsPerRow(5115).WindowSizeClassifier.LARGE !== tmp2) {
+    if (itemsPerRow(5136).WindowSizeClassifier.LARGE !== tmp2) {
       itemsPerRow = 4;
-      if (itemsPerRow(5115).WindowSizeClassifier.NORMAL !== tmp2) {
+      if (itemsPerRow(5136).WindowSizeClassifier.NORMAL !== tmp2) {
         itemsPerRow = 3;
-        if (itemsPerRow(5115).WindowSizeClassifier.SMALL !== tmp2) {
+        if (itemsPerRow(5136).WindowSizeClassifier.SMALL !== tmp2) {
           const _Error = Error;
           const _HermesInternal = HermesInternal;
           const self = this;

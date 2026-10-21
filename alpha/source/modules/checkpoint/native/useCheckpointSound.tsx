@@ -1,12 +1,12 @@
-// Module ID: 12786
-// Function ID: 12787
+// Module ID: 12850
+// Function ID: 12851
 // Name: useCheckpointSound
-// Dependencies: [19, 12779, 558, 576, 504, 11404, 2]
+// Dependencies: [19, 12843, 558, 576, 504, 11454, 2]
 
-// Module 12786 (useCheckpointSound)
-import SoundUtils from "SoundUtils" /* 11404 */;
+// Module 12850 (useCheckpointSound)
+import SoundUtils from "SoundUtils" /* 11454 */;
 import react from "react" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 12779 */;
+import CheckpointStore from "CheckpointStore" /* 12843 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

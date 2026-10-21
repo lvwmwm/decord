@@ -1,18 +1,18 @@
-// Module ID: 13665
-// Function ID: 13666
+// Module ID: 13730
+// Function ID: 13731
 // Name: ForLaterMessageRow
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5166, 1384, 4776, 8080, 9700, 2]
+// Dependencies: [19, 17, 21, 4966, 587, 558, 576, 5187, 1384, 4797, 8108, 9730, 2]
 
-// Module 13665 (ForLaterMessageRow)
+// Module 13730 (ForLaterMessageRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import useThemeDefault from "useTheme" /* 5166 */;
-import RowGeneratorDefault from "RowGenerator" /* 8080 */;
-import ChatItemDefault from "ChatItem" /* 9700 */;
+import useThemeDefault from "useTheme" /* 5187 */;
+import RowGeneratorDefault from "RowGenerator" /* 8108 */;
+import ChatItemDefault from "ChatItem" /* 9730 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -44,8 +44,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterMess
   const tmp6 = useThemeDefault();
   if (cResult[0] !== tmp6) {
     let obj2 = { seeMoreLabelColor: tmp5(587).colors.TEXT_DEFAULT };
-    const createNativeStyleProperties = tmp(4945).createNativeStyleProperties;
-    tmp(4945);
+    const createNativeStyleProperties = tmp(4966).createNativeStyleProperties;
+    tmp(4966);
     const tmp9 = createNativeStyleProperties(obj2)(tmp6);
     cResult[0] = tmp6;
     cResult[1] = tmp9;
@@ -66,7 +66,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterMess
     const _Symbol = Symbol;
     let str = "react.memo_cache_sentinel";
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const RenderEmbeds = tmp(4776).RenderEmbeds;
+      const RenderEmbeds = tmp(4797).RenderEmbeds;
       const setting = RenderEmbeds.getSetting();
       cResult[5] = setting;
       tmp12 = setting;
@@ -75,7 +75,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterMess
     }
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const InlineEmbedMedia = tmp(4776).InlineEmbedMedia;
+      const InlineEmbedMedia = tmp(4797).InlineEmbedMedia;
       const setting1 = InlineEmbedMedia.getSetting();
       cResult[6] = setting1;
       tmp14 = setting1;
@@ -84,7 +84,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterMess
     }
     const _Symbol3 = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const InlineAttachmentMedia = tmp(4776).InlineAttachmentMedia;
+      const InlineAttachmentMedia = tmp(4797).InlineAttachmentMedia;
       const setting2 = InlineAttachmentMedia.getSetting();
       cResult[7] = setting2;
       tmp16 = setting2;
@@ -95,7 +95,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterMess
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
       const self = this;
       const self2 = this;
-      let obj3 = new tmp5(8080)();
+      let obj3 = new tmp5(8108)();
       const obj4 = { renderEmbeds: tmp12, inlineEmbedMedia: tmp14, inlineAttachmentMedia: tmp16, renderReplies: false, renderExecutedCommands: false, animateEmoji: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderThreadEmbeds: false, renderForumPostActions: false, ignoreMentioned: true, shouldDisableInteractiveComponents: true };
       obj3.setOptions(obj4);
       cResult[8] = obj3;

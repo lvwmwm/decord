@@ -1,9 +1,9 @@
-// Module ID: 9290
-// Function ID: 9291
+// Module ID: 9318
+// Function ID: 9319
 // Name: CollectiblesAnalyticsContext
 // Dependencies: [19, 21, 558, 576, 2]
 
-// Module 9290 (CollectiblesAnalyticsContext)
+// Module 9318 (CollectiblesAnalyticsContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;

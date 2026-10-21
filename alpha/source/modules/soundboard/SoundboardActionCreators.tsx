@@ -1,18 +1,18 @@
-// Module ID: 7393
-// Function ID: 7394
+// Module ID: 7421
+// Function ID: 7422
 // Name: SoundboardActionCreators
-// Dependencies: [5, 5964, 5966, 1087, 1097, 1297, 7394, 584, 7395, 6332, 7396, 1267, 4781, 12, 5866, 1128, 7397, 2]
+// Dependencies: [5, 5986, 5988, 1087, 1097, 1297, 7422, 584, 7423, 6354, 7424, 1267, 4802, 12, 5888, 1128, 7425, 2]
 // Exports: addFavoriteSound, deleteSound, fetchSoundGuildData, maybeFetchSoundboardSounds, playSoundLocally, removeFavoriteSound, reorderFavoriteSound, reportSoundFinishedPlaying, reportSoundStartedPlaying, updateSound, updateUserSoundboardVolume, uploadSound
 
-// Module 7393 (SoundboardActionCreators)
+// Module 7421 (SoundboardActionCreators)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl3 from "intl" /* 1128 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4781 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5866 */;
-import SoundboardConstants from "SoundboardConstants" /* 5966 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4802 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5888 */;
+import SoundboardConstants from "SoundboardConstants" /* 5988 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SoundboardStore from "SoundboardStore" /* 5964 */;
+import SoundboardStore from "SoundboardStore" /* 5986 */;
 import Constants from "Constants" /* 1087 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import size from "module_2" /* 2 */;
@@ -141,7 +141,7 @@ function _maybeFetchDefaultSounds() {
 }
 function _maybeFetchGuildSoundboardSounds() {
   let SOUNDBOARD_SOUNDS_RECEIVED;
-  obj = SOUNDBOARD_SOUNDS_RECEIVED(7396);
+  obj = SOUNDBOARD_SOUNDS_RECEIVED(7424);
   const guildIdsToFetchSoundsFor = obj.getGuildIdsToFetchSoundsFor();
   if (0 === guildIdsToFetchSoundsFor.length) {
     return Promise.resolve();
@@ -256,7 +256,7 @@ obj = function _uploadSound() {
             body = undefined;
             volume = 1;
             emoji_id = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === volume) {
           if (arg0 === 1) {
@@ -349,7 +349,7 @@ obj = function _updateSound() {
             body = undefined;
             volume = 1;
             emoji_id = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === volume) {
           if (arg0 === 1) {

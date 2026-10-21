@@ -1,17 +1,17 @@
-// Module ID: 12305
-// Function ID: 12306
+// Module ID: 12360
+// Function ID: 12361
 // Name: conjurePlanWidget
-// Dependencies: [32, 19, 2069, 6724, 11773, 12306, 12307, 11743, 558, 576, 11646, 504, 2]
+// Dependencies: [32, 19, 2068, 6752, 11821, 12361, 12362, 11791, 558, 576, 11696, 504, 2]
 
-// Module 12305 (conjurePlanWidget)
-import ApplicationWidgetConfigSurface from "ApplicationWidgetConfigSurface" /* 11743 */;
-import _mod11773 from "module_11773" /* 11773 */;
-import ApplicationAssetType from "ApplicationAssetType" /* 12306 */;
-import ApplicationAssetVisibility from "ApplicationAssetVisibility" /* 12307 */;
+// Module 12360 (conjurePlanWidget)
+import ApplicationWidgetConfigSurface from "ApplicationWidgetConfigSurface" /* 11791 */;
+import _mod11821 from "module_11821" /* 11821 */;
+import ApplicationAssetType from "ApplicationAssetType" /* 12361 */;
+import ApplicationAssetVisibility from "ApplicationAssetVisibility" /* 12362 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2069 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6724 */;
+import LocaleStore from "LocaleStore" /* 2068 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6752 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -120,19 +120,19 @@ function sampleValues(widget_config, sample_data, arg2) {
       let _String = String;
       let tmp13 = arg2[String(undefined, tmp8)];
       if (null != tmp13) {
-        let obj3 = { type: _mod11773.ResolvedValueType.MEDIA, media: size };
+        let obj3 = { type: _mod11821.ResolvedValueType.MEDIA, media: size };
         size = { url: tmp14, width: v256, height: v256 };
         obj2[tmp7] = obj3;
       }
     } else {
       let obj5;
       if (typeof tmp8 === "number") {
-        let obj4 = { type: _mod11773.ResolvedValueType.NUMBER, value: tmp8 };
+        let obj4 = { type: _mod11821.ResolvedValueType.NUMBER, value: tmp8 };
         let tmp10 = dependencyMap;
         let tmp11 = tmp8;
         obj5 = obj4;
       } else {
-        obj5 = { type: _mod11773.ResolvedValueType.STRING, value: tmp8 };
+        obj5 = { type: _mod11821.ResolvedValueType.STRING, value: tmp8 };
       }
       obj2[tmp7] = obj5;
     }
@@ -162,7 +162,7 @@ function buildConjurePlanWidgetRendererProps(widget_config, widget_preview, arg2
     }
     continue;
   }
-  const applicationWidgetSurfaceConfigsSchema = _mod11773.applicationWidgetSurfaceConfigsSchema;
+  const applicationWidgetSurfaceConfigsSchema = _mod11821.applicationWidgetSurfaceConfigsSchema;
   const safeParseResult = applicationWidgetSurfaceConfigsSchema.safeParse(obj);
   if (safeParseResult.success) {
     const data = safeParseResult.data;

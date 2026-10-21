@@ -1,12 +1,12 @@
-// Module ID: 7281
-// Function ID: 7282
+// Module ID: 7309
+// Function ID: 7310
 // Name: SocialLayerStorefrontStore
-// Dependencies: [2069, 502, 504, 584, 2]
+// Dependencies: [2068, 502, 504, 584, 2]
 
-// Module 7281 (SocialLayerStorefrontStore)
+// Module 7309 (SocialLayerStorefrontStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import LocaleStore from "LocaleStore" /* 2069 */;
+import LocaleStore from "LocaleStore" /* 2068 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 

@@ -1,21 +1,21 @@
-// Module ID: 10084
-// Function ID: 10085
+// Module ID: 10114
+// Function ID: 10115
 // Name: stickers/StickersUtils
-// Dependencies: [19, 17, 4822, 1392, 10085, 1087, 1243, 558, 576, 10082, 504, 9860, 6446, 10086, 10087, 10088, 1631, 2]
+// Dependencies: [19, 17, 4843, 1392, 10115, 1087, 1243, 558, 576, 10112, 504, 9890, 6468, 10116, 10117, 10118, 1631, 2]
 // Exports: dropPreloadedSticker, openStickerPickerToPackId, preloadSticker
 
-// Module 10084 (stickers/StickersUtils)
+// Module 10114 (stickers/StickersUtils)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1243 */;
 import KeyboardTypes from "KeyboardTypes" /* 1631 */;
-import StickersTypes from "StickersTypes" /* 6446 */;
-import StickerPickerStore from "StickerPickerStore" /* 10085 */;
-import StickerCategoryUtils from "StickerCategoryUtils" /* 10086 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10087 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10088 */;
+import StickersTypes from "StickersTypes" /* 6468 */;
+import StickerPickerStore from "StickerPickerStore" /* 10115 */;
+import StickerCategoryUtils from "StickerCategoryUtils" /* 10116 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10117 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10118 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4822 */;
+import GuildStore from "GuildStore" /* 4843 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -63,7 +63,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerCa
     tmp9 = cResult[2];
   }
   dependencyMap = tmp9;
-  const tmpResult2 = tmp(9860);
+  const tmpResult2 = tmp(9890);
   const mobileStickerPickerUpsellRestyleEnabled = tmpResult2.useMobileStickerPickerUpsellRestyleEnabled("native.StickerPicker");
   if (cResult[3] === arg0) {
     if (cResult[4] === stickerPackCategories) {

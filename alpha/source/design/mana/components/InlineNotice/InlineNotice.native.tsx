@@ -1,13 +1,13 @@
-// Module ID: 7901
-// Function ID: 7902
+// Module ID: 7929
+// Function ID: 7930
 // Name: InlineNotice
-// Dependencies: [19, 21, 7902, 558, 576, 7903, 7904, 5205, 5195, 2]
+// Dependencies: [19, 21, 7930, 558, 576, 7931, 7932, 5226, 5216, 2]
 
-// Module 7901 (InlineNotice)
+// Module 7929 (InlineNotice)
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import HelpMessage from "HelpMessage" /* 7902 */;
-import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 7903 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import HelpMessage from "HelpMessage" /* 7930 */;
+import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 7931 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -33,7 +33,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InlineNoti
     let tmp20;
     if (cResult[0] !== hidden) {
       const obj4 = {};
-      const NewInlineNotice = tmp(7904).NewInlineNotice;
+      const NewInlineNotice = tmp(7932).NewInlineNotice;
       const merged = Object.assign(hidden);
       const tmp25 = _false(NewInlineNotice, obj4);
       cResult[0] = hidden;
@@ -54,7 +54,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InlineNoti
         if (null != action) {
           const obj5 = { variant: "secondary", size: "sm", text: null, onPress: null, loading: null };
           ({ text: obj3.text, onPress: obj3.onPress, loading: obj3.loading } = action);
-          tmp7 = _false(tmp(5205).Button, obj5);
+          tmp7 = _false(tmp(5226).Button, obj5);
         }
         cResult[2] = action;
         cResult[3] = tmp7;
@@ -107,7 +107,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InlineNoti
   obj = DesignSystemsNotificationComponentsExperiment;
   if (obj.useDesignSystemsNotificationComponents(InlineNotice_str)) {
     const obj3 = {};
-    const NewInlineNotice = tmp(7904).NewInlineNotice;
+    const NewInlineNotice = tmp(7932).NewInlineNotice;
     const merged = Object.assign(hidden);
     return _false(NewInlineNotice, obj3);
   } else {
@@ -120,7 +120,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InlineNoti
       if (null != action) {
         const obj5 = { variant: "secondary", size: "sm", text: null, onPress: null, loading: null };
         ({ text: obj2.text, onPress: obj2.onPress, loading: obj2.loading } = action);
-        tmp14Result = tmp14(tmp(5205).Button, obj5);
+        tmp14Result = tmp14(tmp(5226).Button, obj5);
       }
       tmp7 = message;
       if (null != title) {

@@ -1,9 +1,17 @@
 // Module ID: 15454
 // Function ID: 15455
-// Dependencies: [15442]
+// Dependencies: [15455, 15469]
 
 // Module 15454
-import _mod15442 from "module_15442" /* 15442 */;
+import _mod15455 from "module_15455" /* 15455 */;
+import _mod15469 from "module_15469" /* 15469 */;
 
 
-export const URLSearchParams = _mod15442.URLSearchParams;
+export default (arg0) => {
+  const tmp = _mod15455(arg0, "string");
+  let text = tmp;
+  if (!_mod15469(tmp)) {
+    text = `${tmp}`;
+  }
+  return text;
+};

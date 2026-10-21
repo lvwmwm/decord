@@ -1,10 +1,10 @@
-// Module ID: 12136
-// Function ID: 12137
+// Module ID: 12184
+// Function ID: 12185
 // Name: databaseRestoreResultFromStatus
 // Dependencies: [2]
 // Exports: databaseRestoreResultFromStatus
 
-// Module 12136 (databaseRestoreResultFromStatus)
+// Module 12184 (databaseRestoreResultFromStatus)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/history/ConjureDatabaseRestoreResult.tsx");

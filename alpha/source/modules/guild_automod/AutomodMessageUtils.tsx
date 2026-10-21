@@ -1,27 +1,27 @@
-// Module ID: 7566
-// Function ID: 7567
+// Module ID: 7594
+// Function ID: 7595
 // Name: AutomodMessageUtils
-// Dependencies: [32, 19, 4800, 4880, 4890, 1392, 1087, 7567, 7568, 7569, 1128, 7570, 7571, 7572, 5565, 7573, 7574, 7575, 558, 576, 504, 7576, 2]
+// Dependencies: [32, 19, 4821, 4901, 4911, 1392, 1087, 7595, 7596, 7597, 1128, 7598, 7599, 7600, 5586, 7601, 7602, 7603, 558, 576, 504, 7604, 2]
 // Exports: extractAutomodNotificationFields, getActionHeaderText, getActionHeaderTextMobile, getQuarantineReasonString, getRaidAlertResolveCTAText, getUserIdOfAutomodAction, isAutomodMessageRecord, isAutomodNotification, useAutomodAlertActions
 
-// Module 7566 (AutomodMessageUtils)
+// Module 7594 (AutomodMessageUtils)
 import intl10 from "intl" /* 1128 */;
-import useChannelName from "useChannelName" /* 5565 */;
-import AutomodMessageEmbedKeys from "AutomodMessageEmbedKeys" /* 7567 */;
-import AutomodQuarantineUserActionMessageEmbedKeys from "AutomodQuarantineUserActionMessageEmbedKeys" /* 7568 */;
-import AutomodBlockProfileUpdateMessageEmbedKeys from "AutomodBlockProfileUpdateMessageEmbedKeys" /* 7569 */;
-import AutomodQuarantineEventMessageEmbedKeys from "AutomodQuarantineEventMessageEmbedKeys" /* 7570 */;
-import AutomodInteractionCallbackTypeEmbedKeys from "AutomodInteractionCallbackTypeEmbedKeys" /* 7571 */;
-import AutomodDecisionOutcomeEmbedKeys from "AutomodDecisionOutcomeEmbedKeys" /* 7572 */;
-import AutomodQuarantineUserMessageEmbedKeys from "AutomodQuarantineUserMessageEmbedKeys" /* 7573 */;
-import AutomodNotificationEmbedKeys from "AutomodNotificationEmbedKeys" /* 7574 */;
-import AutomodAlert from "AutomodAlert" /* 7575 */;
-import AutomodFeedback from "AutomodFeedback" /* 7576 */;
+import useChannelName from "useChannelName" /* 5586 */;
+import AutomodMessageEmbedKeys from "AutomodMessageEmbedKeys" /* 7595 */;
+import AutomodQuarantineUserActionMessageEmbedKeys from "AutomodQuarantineUserActionMessageEmbedKeys" /* 7596 */;
+import AutomodBlockProfileUpdateMessageEmbedKeys from "AutomodBlockProfileUpdateMessageEmbedKeys" /* 7597 */;
+import AutomodQuarantineEventMessageEmbedKeys from "AutomodQuarantineEventMessageEmbedKeys" /* 7598 */;
+import AutomodInteractionCallbackTypeEmbedKeys from "AutomodInteractionCallbackTypeEmbedKeys" /* 7599 */;
+import AutomodDecisionOutcomeEmbedKeys from "AutomodDecisionOutcomeEmbedKeys" /* 7600 */;
+import AutomodQuarantineUserMessageEmbedKeys from "AutomodQuarantineUserMessageEmbedKeys" /* 7601 */;
+import AutomodNotificationEmbedKeys from "AutomodNotificationEmbedKeys" /* 7602 */;
+import AutomodAlert from "AutomodAlert" /* 7603 */;
+import AutomodFeedback from "AutomodFeedback" /* 7604 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import PermissionStore from "PermissionStore" /* 4880 */;
-import RelationshipStore from "RelationshipStore" /* 4890 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import PermissionStore from "PermissionStore" /* 4901 */;
+import RelationshipStore from "RelationshipStore" /* 4911 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -238,7 +238,7 @@ function extractAutomodMessageFields(message) {
     }
     tmp5 = tmp7;
   }
-  const ALERT_ACTIONS_EXECUTION = tmp(7567).AutomodMessageEmbedKeys.ALERT_ACTIONS_EXECUTION;
+  const ALERT_ACTIONS_EXECUTION = tmp(7595).AutomodMessageEmbedKeys.ALERT_ACTIONS_EXECUTION;
   let embeds1 = message.embeds;
   if (embeds1 == null) {
     embeds1 = [];
@@ -277,7 +277,7 @@ function extractAutomodMessageFields(message) {
     str = "";
   }
   const obj = { content: str, ruleName: tmp19, decisionId: tmp25, keyword: tmp31, keywordMatchedContent: tmp37, flaggedMessageId: tmp43, timeoutDuration: tmp49, quarantineType: tmp55, quarantineAction: tmp61, decisionReason: tmp67, applicationName: tmp73, interactionUserId: tmp79, interactionCallbackType: tmp85, embedChannel: ChannelStore.getChannel(tmp5), embedChannelId: tmp5, alertActionsExecution: result };
-  const RULE_NAME = tmp(7567).AutomodMessageEmbedKeys.RULE_NAME;
+  const RULE_NAME = tmp(7595).AutomodMessageEmbedKeys.RULE_NAME;
   let embeds3 = message.embeds;
   if (embeds3 == null) {
     embeds3 = [];
@@ -301,7 +301,7 @@ function extractAutomodMessageFields(message) {
     }
     tmp19 = tmp21;
   }
-  const DECISION_ID = tmp(7567).AutomodMessageEmbedKeys.DECISION_ID;
+  const DECISION_ID = tmp(7595).AutomodMessageEmbedKeys.DECISION_ID;
   let embeds4 = message.embeds;
   if (embeds4 == null) {
     embeds4 = [];
@@ -325,7 +325,7 @@ function extractAutomodMessageFields(message) {
     }
     tmp25 = tmp27;
   }
-  const KEYWORD = tmp(7567).AutomodMessageEmbedKeys.KEYWORD;
+  const KEYWORD = tmp(7595).AutomodMessageEmbedKeys.KEYWORD;
   let embeds5 = message.embeds;
   if (embeds5 == null) {
     embeds5 = [];
@@ -349,7 +349,7 @@ function extractAutomodMessageFields(message) {
     }
     tmp31 = tmp33;
   }
-  const KEYWORD_MATCHED_CONTENT = tmp(7567).AutomodMessageEmbedKeys.KEYWORD_MATCHED_CONTENT;
+  const KEYWORD_MATCHED_CONTENT = tmp(7595).AutomodMessageEmbedKeys.KEYWORD_MATCHED_CONTENT;
   let embeds6 = message.embeds;
   if (embeds6 == null) {
     embeds6 = [];
@@ -373,7 +373,7 @@ function extractAutomodMessageFields(message) {
     }
     tmp37 = tmp39;
   }
-  const FLAGGED_MESSAGE_ID = tmp(7567).AutomodMessageEmbedKeys.FLAGGED_MESSAGE_ID;
+  const FLAGGED_MESSAGE_ID = tmp(7595).AutomodMessageEmbedKeys.FLAGGED_MESSAGE_ID;
   let embeds7 = message.embeds;
   if (embeds7 == null) {
     embeds7 = [];
@@ -397,7 +397,7 @@ function extractAutomodMessageFields(message) {
     }
     tmp43 = tmp45;
   }
-  const TIMEOUT_DURATION = tmp(7567).AutomodMessageEmbedKeys.TIMEOUT_DURATION;
+  const TIMEOUT_DURATION = tmp(7595).AutomodMessageEmbedKeys.TIMEOUT_DURATION;
   let embeds8 = message.embeds;
   if (embeds8 == null) {
     embeds8 = [];
@@ -421,7 +421,7 @@ function extractAutomodMessageFields(message) {
     }
     tmp49 = tmp51;
   }
-  const QUARANTINE_USER = tmp(7567).AutomodMessageEmbedKeys.QUARANTINE_USER;
+  const QUARANTINE_USER = tmp(7595).AutomodMessageEmbedKeys.QUARANTINE_USER;
   let embeds9 = message.embeds;
   if (embeds9 == null) {
     embeds9 = [];
@@ -445,7 +445,7 @@ function extractAutomodMessageFields(message) {
     }
     tmp55 = tmp57;
   }
-  const QUARANTINE_USER_ACTION = tmp(7567).AutomodMessageEmbedKeys.QUARANTINE_USER_ACTION;
+  const QUARANTINE_USER_ACTION = tmp(7595).AutomodMessageEmbedKeys.QUARANTINE_USER_ACTION;
   let embeds10 = message.embeds;
   if (embeds10 == null) {
     embeds10 = [];
@@ -469,7 +469,7 @@ function extractAutomodMessageFields(message) {
     }
     tmp61 = tmp63;
   }
-  const DECISION_REASON = tmp(7567).AutomodMessageEmbedKeys.DECISION_REASON;
+  const DECISION_REASON = tmp(7595).AutomodMessageEmbedKeys.DECISION_REASON;
   let embeds11 = message.embeds;
   if (embeds11 == null) {
     embeds11 = [];
@@ -493,7 +493,7 @@ function extractAutomodMessageFields(message) {
     }
     tmp67 = tmp69;
   }
-  const APPLICATION_NAME = tmp(7567).AutomodMessageEmbedKeys.APPLICATION_NAME;
+  const APPLICATION_NAME = tmp(7595).AutomodMessageEmbedKeys.APPLICATION_NAME;
   let embeds12 = message.embeds;
   if (embeds12 == null) {
     embeds12 = [];
@@ -517,7 +517,7 @@ function extractAutomodMessageFields(message) {
     }
     tmp73 = tmp75;
   }
-  const INTERACTION_USER_ID = tmp(7567).AutomodMessageEmbedKeys.INTERACTION_USER_ID;
+  const INTERACTION_USER_ID = tmp(7595).AutomodMessageEmbedKeys.INTERACTION_USER_ID;
   let embeds13 = message.embeds;
   if (embeds13 == null) {
     embeds13 = [];
@@ -541,7 +541,7 @@ function extractAutomodMessageFields(message) {
     }
     tmp79 = tmp81;
   }
-  const INTERACTION_CALLBACK_TYPE = tmp(7567).AutomodMessageEmbedKeys.INTERACTION_CALLBACK_TYPE;
+  const INTERACTION_CALLBACK_TYPE = tmp(7595).AutomodMessageEmbedKeys.INTERACTION_CALLBACK_TYPE;
   let embeds14 = message.embeds;
   if (embeds14 == null) {
     embeds14 = [];
@@ -686,7 +686,7 @@ export const getActionHeaderTextMobile = function getActionHeaderTextMobile(mess
     }
     tmp11 = tmp13;
   }
-  const APPLICATION_NAME = tmp7(7567).AutomodMessageEmbedKeys.APPLICATION_NAME;
+  const APPLICATION_NAME = tmp7(7595).AutomodMessageEmbedKeys.APPLICATION_NAME;
   let embeds1 = message.embeds;
   if (embeds1 == null) {
     embeds1 = [];
@@ -776,7 +776,7 @@ export const getActionHeaderText = function getActionHeaderText(embeds, channel,
   const tmp15 = getQuarantineEventFromMessage(embeds);
   const tmp16 = getQuarantineTypeFromMessage(embeds);
   const tmp17 = getDecisionOutcomeFromMessage(embeds);
-  const INTERACTION_CALLBACK_TYPE = tmp8(7567).AutomodMessageEmbedKeys.INTERACTION_CALLBACK_TYPE;
+  const INTERACTION_CALLBACK_TYPE = tmp8(7595).AutomodMessageEmbedKeys.INTERACTION_CALLBACK_TYPE;
   embeds = embeds.embeds;
   if (embeds == null) {
     embeds = [];
@@ -799,7 +799,7 @@ export const getActionHeaderText = function getActionHeaderText(embeds, channel,
     }
     tmp20 = tmp22;
   }
-  const APPLICATION_NAME = tmp8(7567).AutomodMessageEmbedKeys.APPLICATION_NAME;
+  const APPLICATION_NAME = tmp8(7595).AutomodMessageEmbedKeys.APPLICATION_NAME;
   let embeds1 = embeds.embeds;
   if (embeds1 == null) {
     embeds1 = [];
@@ -833,7 +833,7 @@ export const getActionHeaderText = function getActionHeaderText(embeds, channel,
       fn = authStore;
     }
   }
-  let closure_0 = tmp6(7567).AutomodMessageEmbedKeys.VOICE_CHANNEL_STATUS_OUTCOME;
+  let closure_0 = tmp6(7595).AutomodMessageEmbedKeys.VOICE_CHANNEL_STATUS_OUTCOME;
   let embeds2 = embeds.embeds;
   if (embeds2 == null) {
     embeds2 = [];
@@ -872,7 +872,7 @@ export const getActionHeaderText = function getActionHeaderText(embeds, channel,
   if (null != formatResult) {
     return formatResult;
   } else {
-    const GUILD_ROOM_NOTE_OUTCOME = tmp6(7567).AutomodMessageEmbedKeys.GUILD_ROOM_NOTE_OUTCOME;
+    const GUILD_ROOM_NOTE_OUTCOME = tmp6(7595).AutomodMessageEmbedKeys.GUILD_ROOM_NOTE_OUTCOME;
     let embeds3 = embeds.embeds;
     if (embeds3 == null) {
       embeds3 = [];
@@ -912,10 +912,10 @@ export const getActionHeaderText = function getActionHeaderText(embeds, channel,
       let formatResult4;
       if (null != tmp26) {
         let formatResult3;
-        if (tmp20 === tmp8(7571).AutomodInteractionCallbackTypeEmbedKeys.MODAL) {
+        if (tmp20 === tmp8(7599).AutomodInteractionCallbackTypeEmbedKeys.MODAL) {
           if (null != interactionUserHook) {
             let formatResult2;
-            if (tmp17 !== tmp8(7572).AutomodDecisionOutcomeEmbedKeys.BLOCKED) {
+            if (tmp17 !== tmp8(7600).AutomodDecisionOutcomeEmbedKeys.BLOCKED) {
               const intl9 = tmp8(1128).intl;
               const obj4 = { applicationName: tmp26, interactionUserHook, integrationOwnerHook };
               formatResult2 = intl9.format(tmp8(1128).t["4xL9Sk"], obj4);
@@ -928,7 +928,7 @@ export const getActionHeaderText = function getActionHeaderText(embeds, channel,
           }
           formatResult4 = formatResult3;
         }
-        if (tmp17 !== tmp8(7572).AutomodDecisionOutcomeEmbedKeys.BLOCKED) {
+        if (tmp17 !== tmp8(7600).AutomodDecisionOutcomeEmbedKeys.BLOCKED) {
           const intl7 = tmp8(1128).intl;
           const obj6 = { applicationName: tmp26, channelName, channelHook: fn, integrationOwnerHook };
           formatResult3 = intl7.format(tmp8(1128).t.AXQufN, obj6);
@@ -937,7 +937,7 @@ export const getActionHeaderText = function getActionHeaderText(embeds, channel,
           const obj7 = { applicationName: tmp26, channelName, channelHook: fn, integrationOwnerHook };
           formatResult3 = intl6.format(tmp8(1128).t.s3tjMN, obj7);
         }
-      } else if (tmp17 !== tmp8(7572).AutomodDecisionOutcomeEmbedKeys.BLOCKED) {
+      } else if (tmp17 !== tmp8(7600).AutomodDecisionOutcomeEmbedKeys.BLOCKED) {
         const intl5 = tmp8(1128).intl;
         const obj8 = { channelName, channelHook: fn };
         formatResult4 = intl5.format(tmp8(1128).t.IZg0VQ, obj8);
@@ -1001,7 +1001,7 @@ export const extractAutomodNotificationFields = function extractAutomodNotificat
     }
     tmp5 = tmp7;
   }
-  const JOIN_ATTEMPTS = tmp(7574).AutomodNotificationEmbedKeys.JOIN_ATTEMPTS;
+  const JOIN_ATTEMPTS = tmp(7602).AutomodNotificationEmbedKeys.JOIN_ATTEMPTS;
   let embeds1 = message.embeds;
   if (embeds1 == null) {
     embeds1 = [];
@@ -1025,7 +1025,7 @@ export const extractAutomodNotificationFields = function extractAutomodNotificat
     }
     tmp11 = tmp13;
   }
-  const RAID_DATETIME = tmp(7574).AutomodNotificationEmbedKeys.RAID_DATETIME;
+  const RAID_DATETIME = tmp(7602).AutomodNotificationEmbedKeys.RAID_DATETIME;
   let embeds2 = message.embeds;
   if (embeds2 == null) {
     embeds2 = [];
@@ -1049,7 +1049,7 @@ export const extractAutomodNotificationFields = function extractAutomodNotificat
     }
     tmp17 = tmp19;
   }
-  const DMS_SENT = tmp(7574).AutomodNotificationEmbedKeys.DMS_SENT;
+  const DMS_SENT = tmp(7602).AutomodNotificationEmbedKeys.DMS_SENT;
   let embeds3 = message.embeds;
   if (embeds3 == null) {
     embeds3 = [];
@@ -1073,7 +1073,7 @@ export const extractAutomodNotificationFields = function extractAutomodNotificat
     }
     tmp23 = tmp25;
   }
-  const RAID_TYPE = tmp(7574).AutomodNotificationEmbedKeys.RAID_TYPE;
+  const RAID_TYPE = tmp(7602).AutomodNotificationEmbedKeys.RAID_TYPE;
   let embeds4 = message.embeds;
   if (embeds4 == null) {
     embeds4 = [];
@@ -1097,7 +1097,7 @@ export const extractAutomodNotificationFields = function extractAutomodNotificat
     }
     tmp29 = tmp31;
   }
-  const RESOLVED_REASON = tmp(7574).AutomodNotificationEmbedKeys.RESOLVED_REASON;
+  const RESOLVED_REASON = tmp(7602).AutomodNotificationEmbedKeys.RESOLVED_REASON;
   let embeds5 = message.embeds;
   if (embeds5 == null) {
     embeds5 = [];
@@ -1121,7 +1121,7 @@ export const extractAutomodNotificationFields = function extractAutomodNotificat
     }
     tmp35 = tmp37;
   }
-  const DECISION_ID = tmp(7574).AutomodNotificationEmbedKeys.DECISION_ID;
+  const DECISION_ID = tmp(7602).AutomodNotificationEmbedKeys.DECISION_ID;
   let embeds6 = message.embeds;
   if (embeds6 == null) {
     embeds6 = [];
@@ -1145,7 +1145,7 @@ export const extractAutomodNotificationFields = function extractAutomodNotificat
     }
     tmp41 = tmp43;
   }
-  let closure_0 = tmp(7574).AutomodNotificationEmbedKeys.SUSPICIOUS_MENTION_ACTIVITY_UNTIL;
+  let closure_0 = tmp(7602).AutomodNotificationEmbedKeys.SUSPICIOUS_MENTION_ACTIVITY_UNTIL;
   let embeds7 = message.embeds;
   if (embeds7 == null) {
     embeds7 = [];

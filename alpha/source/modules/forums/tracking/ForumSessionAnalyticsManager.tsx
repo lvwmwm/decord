@@ -1,9 +1,9 @@
-// Module ID: 8242
-// Function ID: 8243
+// Module ID: 8270
+// Function ID: 8271
 // Name: ForumSessionAnalyticsManager
 // Dependencies: [1281, 2]
 
-// Module 8242 (ForumSessionAnalyticsManager)
+// Module 8270 (ForumSessionAnalyticsManager)
 import v1 from "v1" /* 1281 */;
 import size from "module_2" /* 2 */;
 

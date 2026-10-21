@@ -1,11 +1,11 @@
-// Module ID: 6989
-// Function ID: 6990
+// Module ID: 7017
+// Function ID: 7018
 // Name: useIsWindowLarge
-// Dependencies: [5115, 558, 2]
+// Dependencies: [5136, 558, 2]
 // Exports: default, getIsWindowLarge
 
-// Module 6989 (useIsWindowLarge)
-import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5115 */;
+// Module 7017 (useIsWindowLarge)
+import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5136 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

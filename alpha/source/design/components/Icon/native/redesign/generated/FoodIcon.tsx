@@ -1,14 +1,14 @@
-// Module ID: 9893
-// Function ID: 9894
+// Module ID: 9923
+// Function ID: 9924
 // Name: FoodIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 9894, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 9924, 5650, 2]
 
-// Module 9893 (FoodIcon)
+// Module 9923 (FoodIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 9894 */;
+import BaseIconImage2 from "BaseIconImage" /* 5650 */;
+import AssetRegistry from "AssetRegistry" /* 9924 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FoodIcon(a
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(5630).BaseIconImage;
+  const BaseIconImage = tmp(5650).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

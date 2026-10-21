@@ -1,21 +1,21 @@
-// Module ID: 9412
-// Function ID: 9413
+// Module ID: 9440
+// Function ID: 9441
 // Name: GameProfileDetails
-// Dependencies: [19, 17, 8771, 21, 4945, 587, 558, 576, 5622, 9236, 1128, 2000, 4773, 9413, 9420, 5195, 2]
+// Dependencies: [19, 17, 8798, 21, 4966, 587, 558, 576, 5642, 9441, 9263, 1128, 2000, 4794, 9442, 9449, 5216, 2]
 
-// Module 9412 (GameProfileDetails)
+// Module 9440 (GameProfileDetails)
 import nativeDefault from "native" /* 587 */;
 import intl13 from "intl" /* 1128 */;
 import Server from "Server" /* 2000 */;
-import DateUtilsAll from "DateUtils" /* 4773 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import LinkingDefault from "Linking" /* 5622 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 8771 */;
-import SKUUtils from "SKUUtils" /* 9236 */;
+import DateUtilsAll from "DateUtils" /* 4794 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import LinkingDefault from "Linking" /* 5642 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 8798 */;
+import SKUUtils from "SKUUtils" /* 9263 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -115,40 +115,46 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GamePr
   return closure_8(closure_6, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileDetails(arg0) {
-  let arr;
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileDetails(arg0) {
+  let arr2;
   let closure_1;
   let container;
   let game;
   let headerText;
   let tmp23;
   let tmp32;
-  let tmp55;
+  let tmp56;
   let trackAction;
   let tmp = trackAction;
   let tmp2 = dependencyMap;
   let obj = trackAction(576);
-  const cResult = obj.c(71);
+  const cResult = obj.c(74);
   ({ game, trackAction } = arg0);
   const tmp4 = closure_10();
   importDefault = tmp4;
+  let obj2 = trackAction(9441);
+  const gameProfileLinks = obj2.useGameProfileLinks(game);
   if (null != game) {
     let tmp9;
     let tmp17;
     let tmp26;
+    let tmp59;
+    let tmp60;
     if (cResult[1] === game) {
-      if (cResult[2] === tmp4.linksContainer) {
-        if (cResult[3] === tmp4.platformsContainer) {
-          let tmp6;
-          if (cResult[4] === trackAction) {
-            tmp6 = cResult[5];
+      if (cResult[2] === gameProfileLinks) {
+        if (cResult[3] === tmp4.linksContainer) {
+          if (cResult[4] === tmp4.platformsContainer) {
+            let tmp6;
+            if (cResult[5] === trackAction) {
+              tmp6 = cResult[6];
+            }
+            arr2 = tmp6;
           }
-          arr = tmp6;
         }
       }
     }
     let genres;
-    let tmp7 = cResult[6];
+    let tmp7 = cResult[7];
     if (game != null) {
       genres = game.genres;
     }
@@ -156,24 +162,24 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
       let joined;
       if (game != null) {
         const genres1 = game.genres;
-        const mapped = genres1.map(tmp(9236).getGenreText);
+        const mapped = genres1.map(tmp(9263).getGenreText);
         joined = mapped.join(", ");
       }
       let genres2;
       if (game != null) {
         genres2 = game.genres;
       }
-      cResult[6] = genres2;
-      cResult[7] = joined;
+      cResult[7] = genres2;
+      cResult[8] = joined;
       tmp9 = joined;
     } else {
-      tmp9 = cResult[7];
+      tmp9 = cResult[8];
     }
     let items = [];
     if (null != tmp9) {
       if ("" !== tmp9) {
         let tmp12;
-        if (cResult[8] !== game.genres.length) {
+        if (cResult[9] !== game.genres.length) {
           let stringResult;
           if (1 !== game.genres.length) {
             const intl2 = tmp(1128).intl;
@@ -182,43 +188,43 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
             const intl = tmp(1128).intl;
             stringResult = intl.string(tmp(1128).t.mjFKqn);
           }
-          cResult[8] = game.genres.length;
-          cResult[9] = stringResult;
+          cResult[9] = game.genres.length;
+          cResult[10] = stringResult;
           tmp12 = stringResult;
         } else {
-          tmp12 = cResult[9];
+          tmp12 = cResult[10];
         }
-        if (cResult[10] === tmp9) {
+        if (cResult[11] === tmp9) {
           let tmp14;
-          if (cResult[11] === tmp12) {
-            tmp14 = cResult[12];
+          if (cResult[12] === tmp12) {
+            tmp14 = cResult[13];
           }
-          const arr2 = items.push(tmp14);
+          items.push(tmp14);
         }
-        let obj2 = { label: tmp12, value: tmp9 };
-        cResult[10] = tmp9;
-        cResult[11] = tmp12;
-        cResult[12] = obj2;
-        tmp14 = obj2;
+        let obj3 = { label: tmp12, value: tmp9 };
+        cResult[11] = tmp9;
+        cResult[12] = tmp12;
+        cResult[13] = obj3;
+        tmp14 = obj3;
       }
     }
-    if (cResult[13] !== game) {
+    if (cResult[14] !== game) {
       let tmp20;
       let companyByRole;
       if (game != null) {
         companyByRole = game.getCompanyByRole(tmp(2000).GameCompanyRole.PUBLISHER);
       }
       const _Symbol2 = Symbol;
-      if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-        class P {
+      if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
+        class T {
           constructor(name) {
             return name.name;
           }
         }
-        cResult[16] = P;
-        tmp20 = P;
+        cResult[17] = T;
+        tmp20 = T;
       } else {
-        class P {
+        class T {
           constructor(name) {
             return name.name;
           }
@@ -226,55 +232,55 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
       }
       const mapped1 = companyByRole.map(tmp20);
       const joined1 = mapped1.join(", ");
-      cResult[13] = game;
-      cResult[14] = companyByRole;
-      cResult[15] = joined1;
+      cResult[14] = game;
+      cResult[15] = companyByRole;
+      cResult[16] = joined1;
       tmp17 = joined1;
     } else {
-      class P {
+      class T {
         constructor(name) {
           return name.name;
         }
       }
-      tmp17 = cResult[15];
+      tmp17 = cResult[16];
     }
     if (null != tmp17) {
-      class P {
+      class T {
         constructor(name) {
           return name.name;
         }
       }
       if ("" !== tmp17) {
-        class P {
+        class T {
           constructor(name) {
             return name.name;
           }
         }
-        if (cResult[19] === tmp17) {
-          class P {
+        if (cResult[20] === tmp17) {
+          class T {
             constructor(name) {
               return name.name;
             }
           }
           items.push(tmp23);
         }
-        let obj3 = { label: tmp22, value: tmp17 };
-        cResult[19] = tmp17;
-        cResult[20] = tmp22;
-        cResult[21] = obj3;
-        tmp23 = obj3;
+        const obj4 = { label: tmp22, value: tmp17 };
+        cResult[20] = tmp17;
+        cResult[21] = tmp22;
+        cResult[22] = obj4;
+        tmp23 = obj4;
       }
     }
-    if (cResult[22] !== game) {
+    if (cResult[23] !== game) {
       let tmp27Result;
       let tmp29;
-      class P {
+      class T {
         constructor(name) {
           return name.name;
         }
       }
       if (game != null) {
-        class P {
+        class T {
           constructor(name) {
             return name.name;
           }
@@ -282,16 +288,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
         tmp27Result = tmp27(tmp(2000).GameCompanyRole.DEVELOPER);
       }
       const _Symbol3 = Symbol;
-      if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
-        class S {
+      if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
+        class D {
           constructor(name) {
             return name.name;
           }
         }
-        cResult[25] = S;
-        tmp29 = S;
+        cResult[26] = D;
+        tmp29 = D;
       } else {
-        class S {
+        class D {
           constructor(name) {
             return name.name;
           }
@@ -299,54 +305,54 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
       }
       const mapped2 = tmp27Result.map(tmp29);
       const joined2 = mapped2.join(", ");
-      cResult[22] = game;
-      cResult[23] = tmp27Result;
-      cResult[24] = joined2;
+      cResult[23] = game;
+      cResult[24] = tmp27Result;
+      cResult[25] = joined2;
       tmp26 = joined2;
     } else {
-      class S {
+      class D {
         constructor(name) {
           return name.name;
         }
       }
-      tmp26 = cResult[24];
+      tmp26 = cResult[25];
     }
     if (null != tmp26) {
-      class S {
+      class D {
         constructor(name) {
           return name.name;
         }
       }
       if ("" !== tmp26) {
-        class S {
+        class D {
           constructor(name) {
             return name.name;
           }
         }
-        if (cResult[28] === tmp26) {
-          class S {
+        if (cResult[29] === tmp26) {
+          class D {
             constructor(name) {
               return name.name;
             }
           }
           items.push(tmp32);
         }
-        const obj4 = { label: tmp31, value: tmp26 };
-        cResult[28] = tmp26;
-        cResult[29] = tmp31;
-        cResult[30] = obj4;
-        tmp32 = obj4;
+        const obj5 = { label: tmp31, value: tmp26 };
+        cResult[29] = tmp26;
+        cResult[30] = tmp31;
+        cResult[31] = obj5;
+        tmp32 = obj5;
       }
     }
     if (game != null) {
-      class S {
+      class D {
         constructor(name) {
           return name.name;
         }
       }
     }
     if (null != undefined) {
-      class S {
+      class D {
         constructor(name) {
           return name.name;
         }
@@ -354,30 +360,30 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
       if ("" !== undefined) {
         let tmp35;
         let tmp43;
-        class S {
+        class D {
           constructor(name) {
             return name.name;
           }
         }
-        const _Symbol5 = Symbol;
-        if (cResult[31] === Symbol.for("react.memo_cache_sentinel")) {
-          class S {
+        const _Symbol7 = Symbol;
+        if (cResult[32] === Symbol.for("react.memo_cache_sentinel")) {
+          class D {
             constructor(name) {
               return name.name;
             }
           }
-          const stringResult1 = obj8.string(tmp(1128).t.H3mPDT);
-          cResult[31] = stringResult1;
+          const stringResult1 = obj9.string(tmp(1128).t.H3mPDT);
+          cResult[32] = stringResult1;
           tmp35 = stringResult1;
         } else {
-          class S {
+          class D {
             constructor(name) {
               return name.name;
             }
           }
         }
-        if (cResult[32] !== undefined) {
-          class S {
+        if (cResult[33] !== undefined) {
+          class D {
             constructor(name) {
               return name.name;
             }
@@ -385,32 +391,32 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
           const _Date = Date;
           const self = this;
           const self2 = this;
-          const dateFormat = arr(4773).dateFormat;
-          arr(4773);
+          const dateFormat = arr2(4794).dateFormat;
+          arr2(4794);
           const date = new Date(undefined);
-          cResult[32] = undefined;
-          cResult[33] = dateFormat(date, "LL");
+          cResult[33] = undefined;
+          cResult[34] = dateFormat(date, "LL");
           const dateFormatResult = dateFormat(date, "LL");
         } else {
-          class S {
+          class D {
             constructor(name) {
               return name.name;
             }
           }
         }
-        if (cResult[34] !== tmp37) {
-          class S {
+        if (cResult[35] !== tmp37) {
+          class D {
             constructor(name) {
               return name.name;
             }
           }
           tmp44[0] = tmp35;
           tmp44[1] = tmp37;
-          cResult[34] = tmp37;
-          cResult[35] = tmp44;
+          cResult[35] = tmp37;
+          cResult[36] = tmp44;
           tmp43 = tmp44;
         } else {
-          class S {
+          class D {
             constructor(name) {
               return name.name;
             }
@@ -420,385 +426,328 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
       }
     }
     if (game != null) {
-      class S {
+      class D {
         constructor(name) {
           return name.name;
         }
       }
     }
     if (null != undefined) {
-      class S {
+      class D {
         constructor(name) {
           return name.name;
         }
       }
       if (undefined.length > 0) {
-        class S {
+        class D {
           constructor(name) {
             return name.name;
           }
         }
         const platformsContainer = tmp4.platformsContainer;
-        if (cResult[38] !== undefined) {
+        if (cResult[39] !== undefined) {
           let tmp49;
-          class S {
+          class D {
             constructor(name) {
               return name.name;
             }
           }
           const _Symbol4 = Symbol;
-          if (cResult[40] === Symbol.for("react.memo_cache_sentinel")) {
-            class F {
-              constructor(platform) {
-                const obj = { platform, size: "md", color: closure_1(dependencyMap[5]).colors.ICON_SUBTLE };
-                const GameUpdatePlatformIcon = trackAction(dependencyMap[13]).GameUpdatePlatformIcon;
-                return closure_1_8(GameUpdatePlatformIcon, obj, platform);
+          if (cResult[41] === Symbol.for("react.memo_cache_sentinel")) {
+            class D {
+              constructor(name) {
+                return name.name;
               }
             }
-            cResult[40] = F;
-            tmp49 = F;
+            cResult[41] = tmp50;
+            tmp49 = tmp50;
           } else {
-            class F {
-              constructor(platform) {
-                const obj = { platform, size: "md", color: closure_1(dependencyMap[5]).colors.ICON_SUBTLE };
-                const GameUpdatePlatformIcon = trackAction(dependencyMap[13]).GameUpdatePlatformIcon;
-                return closure_1_8(GameUpdatePlatformIcon, obj, platform);
+            class D {
+              constructor(name) {
+                return name.name;
               }
             }
           }
           const mapped3 = tmp46.map(tmp49);
-          cResult[38] = undefined;
-          cResult[39] = mapped3;
+          cResult[39] = undefined;
+          cResult[40] = mapped3;
         } else {
-          class F {
-            constructor(platform) {
-              const obj = { platform, size: "md", color: closure_1(dependencyMap[5]).colors.ICON_SUBTLE };
-              const GameUpdatePlatformIcon = trackAction(dependencyMap[13]).GameUpdatePlatformIcon;
-              return closure_1_8(GameUpdatePlatformIcon, obj, platform);
+          class D {
+            constructor(name) {
+              return name.name;
             }
           }
         }
-        if (cResult[41] === tmp4.platformsContainer) {
-          class F {
-            constructor(platform) {
-              const obj = { platform, size: "md", color: closure_1(dependencyMap[5]).colors.ICON_SUBTLE };
-              const GameUpdatePlatformIcon = trackAction(dependencyMap[13]).GameUpdatePlatformIcon;
-              return closure_1_8(GameUpdatePlatformIcon, obj, platform);
+        if (cResult[42] === tmp4.platformsContainer) {
+          class D {
+            constructor(name) {
+              return name.name;
             }
           }
-          if (cResult[44] === tmp47) {
-            class F {
-              constructor(platform) {
-                const obj = { platform, size: "md", color: closure_1(dependencyMap[5]).colors.ICON_SUBTLE };
-                const GameUpdatePlatformIcon = trackAction(dependencyMap[13]).GameUpdatePlatformIcon;
-                return closure_1_8(GameUpdatePlatformIcon, obj, platform);
+          if (cResult[45] === tmp47) {
+            class D {
+              constructor(name) {
+                return name.name;
               }
             }
-            items.push(tmp55);
+            items.push(tmp56);
           }
-          const obj5 = { label: tmp47, value: tmp51 };
-          cResult[44] = tmp47;
-          cResult[45] = tmp51;
-          cResult[46] = obj5;
-          tmp55 = obj5;
+          const obj6 = { label: tmp47, value: tmp52 };
+          cResult[45] = tmp47;
+          cResult[46] = tmp52;
+          cResult[47] = obj6;
+          tmp56 = obj6;
         }
-        const obj6 = { style: platformsContainer, children: tmp48 };
-        cResult[41] = tmp4.platformsContainer;
-        cResult[42] = tmp48;
-        cResult[43] = closure_8(closure_5, obj6);
-        const tmp54 = closure_8(closure_5, obj6);
+        const obj7 = { style: platformsContainer, children: tmp48 };
+        cResult[42] = tmp4.platformsContainer;
+        cResult[43] = tmp48;
+        cResult[44] = closure_8(closure_5, obj7);
+        const tmp55 = closure_8(closure_5, obj7);
       }
     }
-    let found;
-    if (game != null) {
-      class F {
-        constructor(platform) {
-          const obj = { platform, size: "md", color: closure_1(dependencyMap[5]).colors.ICON_SUBTLE };
-          const GameUpdatePlatformIcon = trackAction(dependencyMap[13]).GameUpdatePlatformIcon;
-          return closure_1_8(GameUpdatePlatformIcon, obj, platform);
+    const _Symbol5 = Symbol;
+    if (cResult[48] === Symbol.for("react.memo_cache_sentinel")) {
+      class X {
+        constructor(arg0) {
+          const tmp = closure_1(dependencyMap[15]);
+          return tmp(arg0, closure_1(dependencyMap[5]).colors.ICON_SUBTLE);
         }
       }
-      if (tmp58 != null) {
-        class F {
-          constructor(platform) {
-            const obj = { platform, size: "md", color: closure_1(dependencyMap[5]).colors.ICON_SUBTLE };
-            const GameUpdatePlatformIcon = trackAction(dependencyMap[13]).GameUpdatePlatformIcon;
-            return closure_1_8(GameUpdatePlatformIcon, obj, platform);
-          }
-        }
-        found = arr5.filter((item) => null != item);
-      }
-    }
-    if (found == null) {
-      class F {
-        constructor(platform) {
-          const obj = { platform, size: "md", color: closure_1(dependencyMap[5]).colors.ICON_SUBTLE };
-          const GameUpdatePlatformIcon = trackAction(dependencyMap[13]).GameUpdatePlatformIcon;
-          return closure_1_8(GameUpdatePlatformIcon, obj, platform);
+      cResult[48] = X;
+      tmp59 = X;
+    } else {
+      class X {
+        constructor(arg0) {
+          const tmp = closure_1(dependencyMap[15]);
+          return tmp(arg0, closure_1(dependencyMap[5]).colors.ICON_SUBTLE);
         }
       }
     }
-    if (null != found) {
-      class F {
-        constructor(platform) {
-          const obj = { platform, size: "md", color: closure_1(dependencyMap[5]).colors.ICON_SUBTLE };
-          const GameUpdatePlatformIcon = trackAction(dependencyMap[13]).GameUpdatePlatformIcon;
-          return closure_1_8(GameUpdatePlatformIcon, obj, platform);
+    const _Symbol6 = Symbol;
+    if (cResult[49] === Symbol.for("react.memo_cache_sentinel")) {
+      class H {
+        constructor(arg0) {
+          return null != arg0;
         }
       }
-      if (found.length > 0) {
-        let tmp59;
-        let tmp61;
-        let tmp65;
-        class F {
-          constructor(platform) {
-            const obj = { platform, size: "md", color: closure_1(dependencyMap[5]).colors.ICON_SUBTLE };
-            const GameUpdatePlatformIcon = trackAction(dependencyMap[13]).GameUpdatePlatformIcon;
-            return closure_1_8(GameUpdatePlatformIcon, obj, platform);
-          }
+      cResult[49] = H;
+      tmp60 = H;
+    } else {
+      class H {
+        constructor(arg0) {
+          return null != arg0;
         }
-        const _Symbol6 = Symbol;
-        if (cResult[47] === Symbol.for("react.memo_cache_sentinel")) {
-          class F {
-            constructor(platform) {
-              const obj = { platform, size: "md", color: closure_1(dependencyMap[5]).colors.ICON_SUBTLE };
-              const GameUpdatePlatformIcon = trackAction(dependencyMap[13]).GameUpdatePlatformIcon;
-              return closure_1_8(GameUpdatePlatformIcon, obj, platform);
-            }
-          }
-          const stringResult2 = obj11.string(tmp(1128).t["Oj3o1/"]);
-          cResult[47] = stringResult2;
-          tmp59 = stringResult2;
-        } else {
-          class F {
-            constructor(platform) {
-              const obj = { platform, size: "md", color: closure_1(dependencyMap[5]).colors.ICON_SUBTLE };
-              const GameUpdatePlatformIcon = trackAction(dependencyMap[13]).GameUpdatePlatformIcon;
-              return closure_1_8(GameUpdatePlatformIcon, obj, platform);
-            }
-          }
-        }
-        if (cResult[48] !== trackAction) {
-          class Z {
-            constructor(icon) {
-              const url = icon.url;
-              const obj = { icon: icon.icon, action: icon.action, title: icon.title, url, trackAction };
-              return metroImportAll(closure_11, obj, url);
-            }
-          }
-          cResult[48] = trackAction;
-          cResult[49] = Z;
-          tmp61 = Z;
-        } else {
-          class Z {
-            constructor(icon) {
-              const url = icon.url;
-              const obj = { icon: icon.icon, action: icon.action, title: icon.title, url, trackAction };
-              return metroImportAll(closure_11, obj, url);
-            }
-          }
-        }
-        const obj7 = { style: tmp4.linksContainer, children: found.map(tmp61) };
-        const tmp64 = closure_8(closure_5, obj7);
-        if (cResult[50] !== tmp64) {
-          class Z {
-            constructor(icon) {
-              const url = icon.url;
-              const obj = { icon: icon.icon, action: icon.action, title: icon.title, url, trackAction };
-              return metroImportAll(closure_11, obj, url);
-            }
-          }
-          tmp66[0] = tmp59;
-          tmp66[1] = tmp64;
-          cResult[50] = tmp64;
-          cResult[51] = tmp66;
-          tmp65 = tmp66;
-        } else {
-          class Z {
-            constructor(icon) {
-              const url = icon.url;
-              const obj = { icon: icon.icon, action: icon.action, title: icon.title, url, trackAction };
-              return metroImportAll(closure_11, obj, url);
-            }
-          }
-        }
-        items.push(tmp65);
       }
+    }
+    const mapped4 = gameProfileLinks.map(tmp59);
+    const found = mapped4.filter(tmp60);
+    if (found.length > 0) {
+      let tmp61;
+      let tmp63;
+      let tmp68;
+      class H {
+        constructor(arg0) {
+          return null != arg0;
+        }
+      }
+      if (cResult[50] === Symbol.for("react.memo_cache_sentinel")) {
+        class H {
+          constructor(arg0) {
+            return null != arg0;
+          }
+        }
+        const stringResult2 = obj12.string(tmp(1128).t["Oj3o1/"]);
+        cResult[50] = stringResult2;
+        tmp61 = stringResult2;
+      } else {
+        class H {
+          constructor(arg0) {
+            return null != arg0;
+          }
+        }
+      }
+      if (cResult[51] !== trackAction) {
+        class H {
+          constructor(arg0) {
+            return null != arg0;
+          }
+        }
+        cResult[51] = trackAction;
+        cResult[52] = tmp64;
+        tmp63 = tmp64;
+      } else {
+        class H {
+          constructor(arg0) {
+            return null != arg0;
+          }
+        }
+      }
+      const obj8 = { style: tmp4.linksContainer, children: found.map(tmp63) };
+      const tmp67 = closure_8(closure_5, obj8);
+      if (cResult[53] !== tmp67) {
+        class H {
+          constructor(arg0) {
+            return null != arg0;
+          }
+        }
+        tmp69[0] = tmp61;
+        tmp69[1] = tmp67;
+        cResult[53] = tmp67;
+        cResult[54] = tmp69;
+        tmp68 = tmp69;
+      } else {
+        class H {
+          constructor(arg0) {
+            return null != arg0;
+          }
+        }
+      }
+      items.push(tmp68);
     }
     if (items.length > 0) {
-      let tmp69;
-      let tmp68;
-      let tmp73;
-      class Z {
-        constructor(icon) {
-          const url = icon.url;
-          const obj = { icon: icon.icon, action: icon.action, title: icon.title, url, trackAction };
-          return metroImportAll(closure_11, obj, url);
+      let tmp72;
+      let tmp71;
+      let tmp76;
+      class H {
+        constructor(arg0) {
+          return null != arg0;
         }
       }
-      const _Symbol7 = Symbol;
-      if (cResult[52] === Symbol.for("react.memo_cache_sentinel")) {
-        class Z {
-          constructor(icon) {
-            const url = icon.url;
-            const obj = { icon: icon.icon, action: icon.action, title: icon.title, url, trackAction };
-            return metroImportAll(closure_11, obj, url);
+      if (cResult[55] === Symbol.for("react.memo_cache_sentinel")) {
+        class H {
+          constructor(arg0) {
+            return null != arg0;
           }
         }
-        const stringResult3 = obj13.string(tmp(1128).t["BwQ+9e"]);
+        const stringResult3 = obj14.string(tmp(1128).t["BwQ+9e"]);
         const intl3 = tmp(1128).intl;
-        const obj9 = { igdbLink: IGDB_ATTRIBUTION_LINK };
-        const formatResult = intl3.format(tmp(1128).t.XPFZVl, obj9);
-        cResult[52] = stringResult3;
-        cResult[53] = formatResult;
-        tmp69 = formatResult;
-        tmp68 = stringResult3;
+        const obj10 = { igdbLink: IGDB_ATTRIBUTION_LINK };
+        const formatResult = intl3.format(tmp(1128).t.XPFZVl, obj10);
+        cResult[55] = stringResult3;
+        cResult[56] = formatResult;
+        tmp72 = formatResult;
+        tmp71 = stringResult3;
       } else {
-        class Z {
-          constructor(icon) {
-            const url = icon.url;
-            const obj = { icon: icon.icon, action: icon.action, title: icon.title, url, trackAction };
-            return metroImportAll(closure_11, obj, url);
+        class H {
+          constructor(arg0) {
+            return null != arg0;
           }
         }
-        tmp69 = cResult[53];
+        tmp72 = cResult[56];
       }
-      if (cResult[54] !== tmp69) {
-        class Z {
-          constructor(icon) {
-            const url = icon.url;
-            const obj = { icon: icon.icon, action: icon.action, title: icon.title, url, trackAction };
-            return metroImportAll(closure_11, obj, url);
+      if (cResult[57] !== tmp72) {
+        class H {
+          constructor(arg0) {
+            return null != arg0;
           }
         }
-        tmp74[0] = tmp68;
-        tmp74[1] = tmp69;
-        cResult[54] = tmp69;
-        cResult[55] = tmp74;
-        tmp73 = tmp74;
+        tmp77[0] = tmp71;
+        tmp77[1] = tmp72;
+        cResult[57] = tmp72;
+        cResult[58] = tmp77;
+        tmp76 = tmp77;
       } else {
-        class Z {
-          constructor(icon) {
-            const url = icon.url;
-            const obj = { icon: icon.icon, action: icon.action, title: icon.title, url, trackAction };
-            return metroImportAll(closure_11, obj, url);
+        class H {
+          constructor(arg0) {
+            return null != arg0;
           }
         }
       }
-      items.push(tmp73);
+      items.push(tmp76);
     }
     cResult[1] = game;
-    cResult[2] = tmp4.linksContainer;
-    cResult[3] = tmp4.platformsContainer;
-    cResult[4] = trackAction;
-    cResult[5] = items;
+    cResult[2] = gameProfileLinks;
+    cResult[3] = tmp4.linksContainer;
+    cResult[4] = tmp4.platformsContainer;
+    cResult[5] = trackAction;
+    cResult[6] = items;
     tmp6 = items;
   } else {
-    class Z {
-      constructor(icon) {
-        const url = icon.url;
-        const obj = { icon: icon.icon, action: icon.action, title: icon.title, url, trackAction };
-        return metroImportAll(closure_11, obj, url);
+    class H {
+      constructor(arg0) {
+        return null != arg0;
       }
     }
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      class Z {
-        constructor(icon) {
-          const url = icon.url;
-          const obj = { icon: icon.icon, action: icon.action, title: icon.title, url, trackAction };
-          return metroImportAll(closure_11, obj, url);
+      class H {
+        constructor(arg0) {
+          return null != arg0;
         }
       }
       cResult[0] = tmp5;
-      arr = tmp5;
+      arr2 = tmp5;
     } else {
-      class Z {
-        constructor(icon) {
-          const url = icon.url;
-          const obj = { icon: icon.icon, action: icon.action, title: icon.title, url, trackAction };
-          return metroImportAll(closure_11, obj, url);
+      class H {
+        constructor(arg0) {
+          return null != arg0;
         }
       }
     }
   }
-  if (0 === arr.length) {
-    class Z {
-      constructor(icon) {
-        const url = icon.url;
-        const obj = { icon: icon.icon, action: icon.action, title: icon.title, url, trackAction };
-        return metroImportAll(closure_11, obj, url);
+  if (0 === arr2.length) {
+    class H {
+      constructor(arg0) {
+        return null != arg0;
       }
     }
   } else {
-    let tmp76;
-    class Z {
-      constructor(icon) {
-        const url = icon.url;
-        const obj = { icon: icon.icon, action: icon.action, title: icon.title, url, trackAction };
-        return metroImportAll(closure_11, obj, url);
+    let tmp79;
+    class H {
+      constructor(arg0) {
+        return null != arg0;
       }
     }
     const _Symbol8 = Symbol;
     ({ container, headerText } = tmp4);
-    if (cResult[56] === Symbol.for("react.memo_cache_sentinel")) {
-      class Z {
-        constructor(icon) {
-          const url = icon.url;
-          const obj = { icon: icon.icon, action: icon.action, title: icon.title, url, trackAction };
-          return metroImportAll(closure_11, obj, url);
+    if (cResult[59] === Symbol.for("react.memo_cache_sentinel")) {
+      class H {
+        constructor(arg0) {
+          return null != arg0;
         }
       }
-      const stringResult4 = obj15.string(tmp(1128).t["7OjmmH"]);
-      cResult[56] = stringResult4;
-      tmp76 = stringResult4;
+      const stringResult4 = obj16.string(tmp(1128).t["7OjmmH"]);
+      cResult[59] = stringResult4;
+      tmp79 = stringResult4;
     } else {
-      class Z {
-        constructor(icon) {
-          const url = icon.url;
-          const obj = { icon: icon.icon, action: icon.action, title: icon.title, url, trackAction };
-          return metroImportAll(closure_11, obj, url);
+      class H {
+        constructor(arg0) {
+          return null != arg0;
         }
       }
     }
-    if (cResult[57] !== tmp4.headerText) {
-      class Z {
-        constructor(icon) {
-          const url = icon.url;
-          const obj = { icon: icon.icon, action: icon.action, title: icon.title, url, trackAction };
-          return metroImportAll(closure_11, obj, url);
+    if (cResult[60] !== tmp4.headerText) {
+      class H {
+        constructor(arg0) {
+          return null != arg0;
         }
       }
-      const obj10 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: headerText, children: tmp76 };
-      cResult[57] = tmp4.headerText;
-      cResult[58] = closure_8(tmp(5195).Text, obj10);
-      const tmp79 = closure_8(tmp(5195).Text, obj10);
+      const obj11 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: headerText, children: tmp79 };
+      cResult[60] = tmp4.headerText;
+      cResult[61] = closure_8(tmp(5216).Text, obj11);
+      const tmp82 = closure_8(tmp(5216).Text, obj11);
     } else {
-      class Z {
-        constructor(icon) {
-          const url = icon.url;
-          const obj = { icon: icon.icon, action: icon.action, title: icon.title, url, trackAction };
-          return metroImportAll(closure_11, obj, url);
+      class H {
+        constructor(arg0) {
+          return null != arg0;
         }
       }
     }
-    if (cResult[59] === arr) {
-      class Z {
-        constructor(icon) {
-          const url = icon.url;
-          const obj = { icon: icon.icon, action: icon.action, title: icon.title, url, trackAction };
-          return metroImportAll(closure_11, obj, url);
+    if (cResult[62] === arr2) {
+      class H {
+        constructor(arg0) {
+          return null != arg0;
         }
       }
     }
-    const mapped4 = arr.map((children, index) => {
+    const mapped5 = arr2.map((children, index) => {
       let items1;
       let value;
       const items = [closure_1.detailsRow, ];
       let prop = null;
       const tmp = React4;
       const tmp2 = hasOwnProperty;
-      if (arr.length > 1) {
+      if (arr2.length > 1) {
         prop = null;
         if (index < arr2.length - 1) {
           prop = tmp3.detailsRowBottomBorder;
@@ -819,24 +768,31 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
       items1[1] = value;
       return tmp(tmp2, obj, children.label);
     });
-    cResult[59] = arr;
-    cResult[60] = tmp4.detailsRow;
-    cResult[61] = tmp4.detailsRowBottomBorder;
-    cResult[62] = tmp4.detailsRowValue;
-    cResult[63] = mapped4;
+    cResult[62] = arr2;
+    cResult[63] = tmp4.detailsRow;
+    cResult[64] = tmp4.detailsRowBottomBorder;
+    cResult[65] = tmp4.detailsRowValue;
+    cResult[66] = mapped5;
   }
 }) : (function GameProfileDetails(game) {
   let intl;
   let items1;
   game = game.game;
   const trackAction = game.trackAction;
+  let gameProfileLinks;
+  let memo;
   let tmp = closure_10();
   let closure_2 = tmp;
-  let items = [, , , ];
+  let tmp2 = game;
+  const tmp3 = gameProfileLinks;
+  let obj = game(gameProfileLinks[9]);
+  gameProfileLinks = obj.useGameProfileLinks(game);
+  let items = [, , , , ];
   ({ linksContainer: arr[0], platformsContainer: arr[1] } = tmp);
   items[2] = game;
-  items[3] = trackAction;
-  const memo = react.useMemo(function() {
+  items[3] = gameProfileLinks;
+  items[4] = trackAction;
+  memo = memo.useMemo(function() {
     let date;
     let dateFormat;
     let intl10;
@@ -948,29 +904,19 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
         obj7 = {
           style: closure_2.platformsContainer,
           children: platforms.map((platform) => {
-                const obj = { platform, size: "md", color: trackAction(memo[5]).colors.ICON_SUBTLE };
-                const GameUpdatePlatformIcon = game(memo[13]).GameUpdatePlatformIcon;
+                const obj = { platform, size: "md", color: trackAction(gameProfileLinks[5]).colors.ICON_SUBTLE };
+                const GameUpdatePlatformIcon = game(gameProfileLinks[14]).GameUpdatePlatformIcon;
                 return closure_1_8(GameUpdatePlatformIcon, obj, platform);
               })
         };
         push5(obj6);
       }
-      let found;
-      if (obj != null) {
-        const websites = obj.websites;
-        if (websites != null) {
-          const mapped3 = websites.map((item) => {
-            const tmp = trackAction(memo[14]);
-            return tmp(item, trackAction(memo[5]).colors.ICON_SUBTLE);
-          });
-          found = mapped3.filter((item) => null != item);
-        }
-      }
-      if (found == null) {
-        found = [];
-      }
-      const tmp74 = null != found && found.length > 0;
-      if (tmp74) {
+      const mapped3 = gameProfileLinks.map((item) => {
+        const tmp = trackAction(gameProfileLinks[15]);
+        return tmp(item, trackAction(gameProfileLinks[5]).colors.ICON_SUBTLE);
+      });
+      const found = mapped3.filter((item) => null != item);
+      if (found.length > 0) {
         const push6 = items.push;
         const obj8 = { label: intl10.string(intl13.t["Oj3o1/"]), value: metroImportAll(hasOwnProperty, obj9) };
         intl10 = intl13.intl;
@@ -995,18 +941,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
       return items;
     }
   }, items);
-  let tmp2 = null;
+  let tmp5 = null;
   if (0 !== memo.length) {
-    const tmp3 = closure_9;
-    let tmp4 = closure_5;
-    let obj = { style: tmp.container, children: items1 };
-    let tmp6 = game;
-    let tmp7 = memo;
-    let obj2 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: tmp.headerText, children: intl.string(game(memo[10]).t["7OjmmH"]) };
-    const Text = game(memo[15]).Text;
-    intl = game(memo[10]).intl;
-    items1 = [closure_8(Text, obj2), ];
-    let obj3 = {
+    let tmp6 = closure_9;
+    let tmp7 = closure_5;
+    let obj2 = { style: tmp.container, children: items1 };
+    let obj3 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: tmp.headerText, children: intl.string(tmp2(tmp3[11]).t["7OjmmH"]) };
+    const Text = tmp2(tmp3[16]).Text;
+    intl = tmp2(tmp3[11]).intl;
+    items1 = [closure_8(Text, obj3), ];
+    let obj4 = {
       style: tmp.detailsContainer,
       children: memo.map((children, index) => {
           let items1;
@@ -1037,10 +981,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
           return tmp(tmp2, obj, children.label);
         })
     };
-    items1[1] = closure_8(closure_5, obj3);
-    tmp2 = closure_9(closure_5, obj);
+    items1[1] = closure_8(closure_5, obj4);
+    tmp5 = closure_9(closure_5, obj2);
   }
-  return tmp2;
+  return tmp5;
 });
 const result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileDetails.tsx");
 

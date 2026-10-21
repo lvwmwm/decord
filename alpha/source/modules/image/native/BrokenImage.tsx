@@ -1,18 +1,18 @@
-// Module ID: 11947
-// Function ID: 11948
+// Module ID: 11995
+// Function ID: 11996
 // Name: BrokenImage
-// Dependencies: [19, 21, 558, 576, 7910, 2]
+// Dependencies: [19, 21, 558, 576, 7938, 2]
 
-// Module 11947 (BrokenImage)
+// Module 11995 (BrokenImage)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import inlineStylesDefault from "inlineStyles" /* 7910 */;
+import inlineStylesDefault from "inlineStyles" /* 7938 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const inlineStyles = tmp(7910);
+const inlineStyles = tmp(7938);
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BrokenImage(arg0) {
   let first;

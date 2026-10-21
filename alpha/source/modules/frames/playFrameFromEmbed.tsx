@@ -1,10 +1,10 @@
-// Module ID: 12858
-// Function ID: 12859
+// Module ID: 12926
+// Function ID: 12927
 // Name: playFrameFromEmbed
-// Dependencies: [5, 11248, 11023, 2]
+// Dependencies: [5, 11292, 10678, 2]
 // Exports: default
 
-// Module 12858 (playFrameFromEmbed)
+// Module 12926 (playFrameFromEmbed)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -56,7 +56,7 @@ let obj = function _playFrameFromEmbed() {
       tmp15(obj8);
       await "IconComponent";
       ({ application: c0, analyticsContext: c1 } = closure_0);
-      return "test";
+      return "Reflect";
     })();
     iter.next();
     return iter;

@@ -1,27 +1,27 @@
-// Module ID: 19074
-// Function ID: 19075
+// Module ID: 19151
+// Function ID: 19152
 // Name: InviteSettingsModal
-// Dependencies: [32, 19, 4800, 8984, 4822, 4880, 1087, 21, 4945, 587, 558, 576, 1505, 38, 504, 12, 19075, 8990, 5866, 1128, 5224, 7434, 19076, 8985, 8883, 1275, 6875, 7046, 2]
+// Dependencies: [32, 19, 4821, 9011, 4843, 4901, 1087, 21, 4966, 587, 558, 576, 1505, 38, 504, 12, 19152, 9017, 5888, 1128, 5245, 7462, 19153, 9012, 8910, 1275, 6903, 7074, 2]
 
-// Module 19074 (InviteSettingsModal)
+// Module 19151 (InviteSettingsModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5866 */;
-import NavigatorHeader from "NavigatorHeader" /* 6875 */;
-import Navigator from "Navigator" /* 7046 */;
-import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 8990 */;
-import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 19075 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5888 */;
+import NavigatorHeader from "NavigatorHeader" /* 6903 */;
+import Navigator from "Navigator" /* 7074 */;
+import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 9017 */;
+import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 19152 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 8984 */;
-import GuildStore from "GuildStore" /* 4822 */;
-import PermissionStore from "PermissionStore" /* 4880 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 9011 */;
+import GuildStore from "GuildStore" /* 4843 */;
+import PermissionStore from "PermissionStore" /* 4901 */;
 import Constants from "Constants" /* 1087 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -186,7 +186,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Advanc
         }
       }
     }
-    const tmpResult3 = tmp(5224);
+    const tmpResult3 = tmp(5245);
     const unmountEffect = tmpResult3.useUnmountEffect(tmp23);
     if (cResult[9] !== channel) {
       class V {
@@ -353,7 +353,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Advanc
       }
     }
   }, items1);
-  const tmp2Result2 = navigation(5224);
+  const tmp2Result2 = navigation(5245);
   const unmountEffect = tmp2Result2.useUnmountEffect(() => {
     const obj = channel(closure_2[17]);
     obj.resetSettings();
@@ -418,9 +418,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Advanc
     const obj2 = { roleIds };
     obj.updateSettings(obj2);
   }, []);
-  const Form = tmp2(8883).Form;
-  ({ style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: channel(8985).getMaxUsesOptions, temporary: null, flags: null, roleIds: null, onChangeMaxAge: callback2, onChangeMaxUses: callback1, onChangeTemporary: callback3, onChangeFlags: callback4, onChangeRoleIds: callback5 });
-  channel(19076);
+  const Form = tmp2(8910).Form;
+  ({ style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: channel(9012).getMaxUsesOptions, temporary: null, flags: null, roleIds: null, onChangeMaxAge: callback2, onChangeMaxUses: callback1, onChangeTemporary: callback3, onChangeFlags: callback4, onChangeRoleIds: callback5 });
+  channel(19153);
   ({ temporary: obj7.temporary, flags: obj7.flags, roleIds: obj7.roleIds } = settings);
   return <Form contentContainerStyle={tmp.formContainer}>{null}</Form>;
 });

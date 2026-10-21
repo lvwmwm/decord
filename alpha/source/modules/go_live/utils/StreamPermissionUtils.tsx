@@ -1,20 +1,20 @@
-// Module ID: 6603
-// Function ID: 6604
+// Module ID: 6631
+// Function ID: 6632
 // Name: StreamPermissionUtils
-// Dependencies: [5677, 4804, 4878, 4822, 4880, 5591, 1087, 6590, 5952, 6604, 6613, 558, 576, 504, 2]
+// Dependencies: [5697, 4825, 4899, 4843, 4901, 5612, 1087, 6618, 5974, 6632, 6641, 558, 576, 504, 2]
 // Exports: getStreamEligibleChannels
 
-// Module 6603 (StreamPermissionUtils)
+// Module 6631 (StreamPermissionUtils)
 import Constants from "Constants" /* 1087 */;
-import ChannelRecord from "ChannelRecord" /* 4804 */;
-import GuildChannelStore from "GuildChannelStore" /* 4878 */;
-import ChannelUtils from "ChannelUtils" /* 5952 */;
-import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 6590 */;
-import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate" /* 6604 */;
-import GameConsoleStore from "GameConsoleStore" /* 5677 */;
-import GuildStore from "GuildStore" /* 4822 */;
-import PermissionStore from "PermissionStore" /* 4880 */;
-import VoiceStateStore from "VoiceStateStore" /* 5591 */;
+import ChannelRecord from "ChannelRecord" /* 4825 */;
+import GuildChannelStore from "GuildChannelStore" /* 4899 */;
+import ChannelUtils from "ChannelUtils" /* 5974 */;
+import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 6618 */;
+import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate" /* 6632 */;
+import GameConsoleStore from "GameConsoleStore" /* 5697 */;
+import GuildStore from "GuildStore" /* 4843 */;
+import PermissionStore from "PermissionStore" /* 4901 */;
+import VoiceStateStore from "VoiceStateStore" /* 5612 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -75,7 +75,7 @@ function canWatchStream(basicChannel1, VoiceStateStore, GuildStore, PermissionSt
     let result = obj2.shouldAgeVerifyForAgeGate();
     const tmp11 = require;
     if (result) {
-      const tmp11Result = tmp11(6613);
+      const tmp11Result = tmp11(6641);
       result = tmp11Result.shouldShowAgeGateForChannelId(basicChannel1.id);
     }
     if (tmp10) {

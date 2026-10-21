@@ -1,12 +1,12 @@
-// Module ID: 18249
-// Function ID: 18250
+// Module ID: 18330
+// Function ID: 18331
 // Name: useCanInviteMembers
-// Dependencies: [4800, 4880, 1098, 558, 576, 573, 2]
+// Dependencies: [4821, 4901, 1098, 558, 576, 573, 2]
 
-// Module 18249 (useCanInviteMembers)
+// Module 18330 (useCanInviteMembers)
 import Constants from "Constants" /* 1098 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import PermissionStore from "PermissionStore" /* 4880 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import PermissionStore from "PermissionStore" /* 4901 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,21 +1,21 @@
-// Module ID: 17124
-// Function ID: 17125
+// Module ID: 17200
+// Function ID: 17201
 // Name: register
-// Dependencies: [5, 17125, 502, 1087, 1112, 2050, 1267, 6627, 1275, 6332, 6423, 584, 17126, 17127, 17128, 2]
+// Dependencies: [5, 17201, 502, 1087, 1112, 2049, 1267, 6655, 1275, 6354, 6445, 584, 17202, 17203, 17204, 2]
 // Exports: default, registerPhone, scorePassword
 
-// Module 17124 (register)
+// Module 17200 (register)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
-import _modDef2050 from "module_2050" /* 2050 */;
-import APIErrorDefault from "APIError" /* 6332 */;
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6423 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6627 */;
-import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 17126 */;
-import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 17128 */;
+import _modDef2049 from "module_2049" /* 2049 */;
+import APIErrorDefault from "APIError" /* 6354 */;
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6445 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6655 */;
+import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 17202 */;
+import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 17204 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 17125 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 17201 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1087 */;
 import AgeGateConstants from "AgeGateConstants" /* 1112 */;
@@ -142,7 +142,7 @@ obj = function _registerPhone() {
               phone = phone.phone;
               c5 = 1;
               c6 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -245,7 +245,7 @@ function registerFull(giftCodeSKUId) {
     let obj2 = { source: constants5.REGISTER, action: constants4.AGE_GATE_SUBMITTED };
     const tmp4Result = AnalyticsUtilsDefault;
     tmp4Result.track(metroRequire.AGE_GATE_ACTION, obj2);
-    const obj10 = _modDef2050();
+    const obj10 = _modDef2049();
     const diffResult = obj10.diff(birthday, "years");
     const tmp15 = metroRequire;
     if (diffResult >= 13) {
@@ -273,7 +273,7 @@ function registerFull(giftCodeSKUId) {
   const post = tmp4Result4.post;
   tmp9 = undefined;
   if (null != birthday) {
-    tmp9 = tmp4(17127)(birthday);
+    tmp9 = tmp4(17203)(birthday);
   }
   checked = undefined;
   if (promoEmailConsent != null) {

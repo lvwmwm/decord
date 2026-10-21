@@ -1,26 +1,26 @@
-// Module ID: 10395
-// Function ID: 10396
+// Module ID: 10424
+// Function ID: 10425
 // Name: PremiumActivatedAlert
-// Dependencies: [19, 17, 1087, 21, 4945, 6658, 2054, 10396, 10397, 10398, 10399, 10400, 7497, 7498, 10401, 10402, 10403, 10404, 10405, 8386, 10406, 4952, 10407, 10408, 10409, 10410, 10411, 10412, 10413, 10414, 10415, 1128, 558, 576, 5166, 5631, 10416, 10417, 1202, 5936, 2]
+// Dependencies: [19, 17, 1087, 21, 4966, 6686, 2053, 10425, 10426, 10427, 10428, 10429, 7525, 7526, 10430, 10431, 10432, 10433, 10434, 8414, 10435, 4973, 10436, 10437, 10438, 10439, 10440, 10441, 10442, 10443, 10444, 1128, 558, 576, 5187, 5651, 10445, 10446, 1202, 5958, 2]
 
-// Module 10395 (PremiumActivatedAlert)
+// Module 10424 (PremiumActivatedAlert)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import PremiumUtils from "PremiumUtils" /* 2054 */;
-import shared from "shared" /* 4952 */;
-import useThemeDefault from "useTheme" /* 5166 */;
-import FastImageDefault from "FastImage" /* 5631 */;
-import AlertDefault from "Alert" /* 5936 */;
-import LegacyTokens from "LegacyTokens" /* 6658 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10415 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10416 */;
-import ShineAnimationDefault from "ShineAnimation" /* 10417 */;
+import PremiumUtils from "PremiumUtils" /* 2053 */;
+import shared from "shared" /* 4973 */;
+import useThemeDefault from "useTheme" /* 5187 */;
+import FastImageDefault from "FastImage" /* 5651 */;
+import AlertDefault from "Alert" /* 5958 */;
+import LegacyTokens from "LegacyTokens" /* 6686 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10444 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10445 */;
+import ShineAnimationDefault from "ShineAnimation" /* 10446 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,36 +35,36 @@ function getActivatedImage(cResult, arg1) {
     let tmp10Result;
     const tmpResult = shared;
     if (tmpResult.isThemeDark(arg1)) {
-      tmp10Result = tmp10(10407);
+      tmp10Result = tmp10(10436);
     } else {
-      tmp10Result = tmp10(10408);
+      tmp10Result = tmp10(10437);
     }
     return tmp10Result;
   } else if (PremiumUtils.Branding.TIER_1 === cResult) {
     let tmp8Result;
     const tmpResult4 = shared;
     if (tmpResult4.isThemeDark(arg1)) {
-      tmp8Result = tmp8(10409);
+      tmp8Result = tmp8(10438);
     } else {
-      tmp8Result = tmp8(10410);
+      tmp8Result = tmp8(10439);
     }
     return tmp8Result;
   } else if (PremiumUtils.Branding.TIER_2 === cResult) {
     let tmp6Result;
     const tmpResult5 = shared;
     if (tmpResult5.isThemeDark(arg1)) {
-      tmp6Result = tmp6(10411);
+      tmp6Result = tmp6(10440);
     } else {
-      tmp6Result = tmp6(10412);
+      tmp6Result = tmp6(10441);
     }
     return tmp6Result;
   } else if (PremiumUtils.Branding.BUNDLE === cResult) {
     let tmp4Result;
     const tmpResult6 = shared;
     if (tmpResult6.isThemeDark(arg1)) {
-      tmp4Result = tmp4(10413);
+      tmp4Result = tmp4(10442);
     } else {
-      tmp4Result = tmp4(10414);
+      tmp4Result = tmp4(10443);
     }
     return tmp4Result;
   } else if (PremiumUtils.Branding.PREMIUM_GUILD === cResult) {
@@ -207,15 +207,15 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumAct
   if (cResult[3] !== tmp9) {
     let tmp7Result;
     if (PremiumUtils.Branding.TIER_0 === tmp9) {
-      tmp7Result = tmp7(10396);
+      tmp7Result = tmp7(10425);
     } else if (PremiumUtils.Branding.TIER_1 === tmp9) {
-      tmp7Result = tmp7(10397);
+      tmp7Result = tmp7(10426);
     } else if (PremiumUtils.Branding.TIER_2 === tmp9) {
-      tmp7Result = tmp7(10398);
+      tmp7Result = tmp7(10427);
     } else if (PremiumUtils.Branding.BUNDLE === tmp9) {
-      tmp7Result = tmp7(10399);
+      tmp7Result = tmp7(10428);
     } else if (PremiumUtils.Branding.PREMIUM_GUILD === tmp9) {
-      tmp7Result = tmp7(10400);
+      tmp7Result = tmp7(10429);
     }
     cResult[3] = tmp9;
     cResult[4] = tmp7Result;
@@ -232,18 +232,18 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumAct
     if (cResult[8] !== tmp9) {
       let tmp7Result4;
       if (PremiumUtils.Branding.TIER_0 === tmp9) {
-        tmp7Result4 = tmp7(10404);
+        tmp7Result4 = tmp7(10433);
       } else if (PremiumUtils.Branding.TIER_1 === tmp9) {
-        tmp7Result4 = tmp7(10405);
+        tmp7Result4 = tmp7(10434);
       } else {
         if (PremiumUtils.Branding.BUNDLE !== tmp9) {
           if (PremiumUtils.Branding.TIER_2 !== tmp9) {
             if (PremiumUtils.Branding.PREMIUM_GUILD === tmp9) {
-              tmp7Result4 = tmp7(10406);
+              tmp7Result4 = tmp7(10435);
             }
           }
         }
-        tmp7Result4 = tmp7(8386);
+        tmp7Result4 = tmp7(8414);
       }
       cResult[8] = tmp9;
       cResult[9] = tmp7Result4;
@@ -265,15 +265,15 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumAct
         if (cResult[16] !== tmp9) {
           let tmp7Result5;
           if (PremiumUtils.Branding.TIER_0 === tmp9) {
-            tmp7Result5 = tmp7(7497);
+            tmp7Result5 = tmp7(7525);
           } else if (PremiumUtils.Branding.TIER_1 === tmp9) {
-            tmp7Result5 = tmp7(7498);
+            tmp7Result5 = tmp7(7526);
           } else if (PremiumUtils.Branding.TIER_2 === tmp9) {
-            tmp7Result5 = tmp7(10401);
+            tmp7Result5 = tmp7(10430);
           } else if (PremiumUtils.Branding.BUNDLE === tmp9) {
-            tmp7Result5 = tmp7(10402);
+            tmp7Result5 = tmp7(10431);
           } else if (PremiumUtils.Branding.PREMIUM_GUILD === tmp9) {
-            tmp7Result5 = tmp7(10403);
+            tmp7Result5 = tmp7(10432);
           }
           cResult[16] = tmp9;
           cResult[17] = tmp7Result5;
@@ -489,33 +489,33 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumAct
   const obj7 = { style: tmp.header, children: items };
   const tmp4Result9 = FastImageDefault;
   if (PremiumUtils.Branding.TIER_0 === premiumBranding) {
-    tmp4Result10 = tmp4(10396);
+    tmp4Result10 = tmp4(10425);
   } else if (PremiumUtils.Branding.TIER_1 === premiumBranding) {
-    tmp4Result10 = tmp4(10397);
+    tmp4Result10 = tmp4(10426);
   } else if (PremiumUtils.Branding.TIER_2 === premiumBranding) {
-    tmp4Result10 = tmp4(10398);
+    tmp4Result10 = tmp4(10427);
   } else if (PremiumUtils.Branding.BUNDLE === premiumBranding) {
-    tmp4Result10 = tmp4(10399);
+    tmp4Result10 = tmp4(10428);
   } else if (PremiumUtils.Branding.PREMIUM_GUILD === premiumBranding) {
-    tmp4Result10 = tmp4(10400);
+    tmp4Result10 = tmp4(10429);
   }
   items = [, , , ];
   const obj8 = { source: tmp4Result10, style: tmp.headerBackground };
   items[0] = hasOwnProperty(tmp4Result9, obj8);
   const tmp4Result11 = FastImageDefault;
   if (PremiumUtils.Branding.TIER_0 === premiumBranding) {
-    tmp4Result12 = tmp4(10404);
+    tmp4Result12 = tmp4(10433);
   } else if (PremiumUtils.Branding.TIER_1 === premiumBranding) {
-    tmp4Result12 = tmp4(10405);
+    tmp4Result12 = tmp4(10434);
   } else {
     if (PremiumUtils.Branding.BUNDLE !== premiumBranding) {
       if (PremiumUtils.Branding.TIER_2 !== premiumBranding) {
         if (PremiumUtils.Branding.PREMIUM_GUILD === premiumBranding) {
-          tmp4Result12 = tmp4(10406);
+          tmp4Result12 = tmp4(10435);
         }
       }
     }
-    tmp4Result12 = tmp4(8386);
+    tmp4Result12 = tmp4(8414);
   }
   const obj9 = { source: tmp4Result12, style: tmp9.logo };
   items[1] = hasOwnProperty(tmp4Result11, obj9);
@@ -528,15 +528,15 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumAct
   items[2] = tmp15Result;
   const tmp4Result14 = FastImageDefault;
   if (PremiumUtils.Branding.TIER_0 === premiumBranding) {
-    tmp4Result15 = tmp4(7497);
+    tmp4Result15 = tmp4(7525);
   } else if (PremiumUtils.Branding.TIER_1 === premiumBranding) {
-    tmp4Result15 = tmp4(7498);
+    tmp4Result15 = tmp4(7526);
   } else if (PremiumUtils.Branding.TIER_2 === premiumBranding) {
-    tmp4Result15 = tmp4(10401);
+    tmp4Result15 = tmp4(10430);
   } else if (PremiumUtils.Branding.BUNDLE === premiumBranding) {
-    tmp4Result15 = tmp4(10402);
+    tmp4Result15 = tmp4(10431);
   } else if (PremiumUtils.Branding.PREMIUM_GUILD === premiumBranding) {
-    tmp4Result15 = tmp4(10403);
+    tmp4Result15 = tmp4(10432);
   }
   const obj11 = { source: tmp4Result15, style: items1 };
   items1 = [tmp10.headerImage, tmp.headerImage];

@@ -1,10 +1,10 @@
-// Module ID: 8084
-// Function ID: 8085
+// Module ID: 8112
+// Function ID: 8113
 // Name: react-native
 // Dependencies: [17, 2]
 // Exports: processColorOrThrow
 
-// Module 8084 (react-native)
+// Module 8112 (react-native)
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 

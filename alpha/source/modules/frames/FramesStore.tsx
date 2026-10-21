@@ -1,17 +1,17 @@
-// Module ID: 6726
-// Function ID: 6727
+// Module ID: 6754
+// Function ID: 6755
 // Name: FramesStore
-// Dependencies: [6727, 5570, 1098, 5584, 504, 6728, 6729, 584, 2]
+// Dependencies: [6755, 5591, 1098, 5605, 504, 6756, 6757, 584, 2]
 
-// Module 6726 (FramesStore)
+// Module 6754 (FramesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1098 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5570 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 5584 */;
-import EmbeddedAppTypes from "EmbeddedAppTypes" /* 6728 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6729 */;
-import FramesConstants from "FramesConstants" /* 6727 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5591 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 5605 */;
+import EmbeddedAppTypes from "EmbeddedAppTypes" /* 6756 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6757 */;
+import FramesConstants from "FramesConstants" /* 6755 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -92,10 +92,10 @@ class FramesStoreClass extends Store {
   getFrameBySurface(arg0, arg1) {
     return map.get(metroImportAll(arg0, arg1));
   }
-  getFramesForSurface(arg0) {
-    let closure_0 = arg0;
+  getFramesForSurface(frameSurfaceForChannel) {
+    let closure_0 = frameSurfaceForChannel;
     const arr = Array.from(map.values());
-    return arr.filter((applicationId) => metroImportAll(applicationId.applicationId, closure_0) === applicationId.id);
+    return arr.filter((applicationId) => metroImportAll(applicationId.applicationId, frameSurfaceForChannel) === applicationId.id);
   }
   getFramesForChannel(id) {
     let closure_0 = id;

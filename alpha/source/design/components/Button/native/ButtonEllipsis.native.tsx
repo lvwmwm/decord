@@ -1,17 +1,17 @@
-// Module ID: 5223
-// Function ID: 5224
+// Module ID: 5244
+// Function ID: 5245
 // Name: ButtonEllipsis
-// Dependencies: [19, 17, 21, 5014, 4945, 587, 5167, 558, 576, 5212, 5224, 2]
+// Dependencies: [19, 17, 21, 5035, 4966, 587, 5188, 558, 576, 5233, 5245, 2]
 
-// Module 5223 (ButtonEllipsis)
+// Module 5244 (ButtonEllipsis)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
-import timing from "timing" /* 5167 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
+import timing from "timing" /* 5188 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

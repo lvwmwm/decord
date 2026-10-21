@@ -1,11 +1,11 @@
-// Module ID: 17150
-// Function ID: 17151
+// Module ID: 17226
+// Function ID: 17227
 // Name: isDateValidDateOfBirth
-// Dependencies: [2050, 2]
+// Dependencies: [2049, 2]
 // Exports: default
 
-// Module 17150 (isDateValidDateOfBirth)
-import _modDef2050 from "module_2050" /* 2050 */;
+// Module 17226 (isDateValidDateOfBirth)
+import _modDef2049 from "module_2049" /* 2049 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/auth/native/experiment/isDateValidDateOfBirth.tsx");
@@ -13,7 +13,7 @@ const result = size.fileFinishedImporting("modules/auth/native/experiment/isDate
 export default function isDateValidDateOfBirth(arg0) {
   let tmp = null != arg0;
   if (tmp) {
-    const obj = _modDef2050();
+    const obj = _modDef2049();
     tmp = obj.diff(arg0, "days") >= 1;
   }
   return tmp;

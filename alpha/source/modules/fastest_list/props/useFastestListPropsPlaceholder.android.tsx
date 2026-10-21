@@ -1,13 +1,13 @@
-// Module ID: 7107
-// Function ID: 7108
+// Module ID: 7135
+// Function ID: 7136
 // Name: useFastestListPropsPlaceholder
-// Dependencies: [19, 17, 7108, 4942, 558, 576, 2]
+// Dependencies: [19, 17, 7136, 4963, 558, 576, 2]
 
-// Module 7107 (useFastestListPropsPlaceholder)
+// Module 7135 (useFastestListPropsPlaceholder)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import ColorUtils from "ColorUtils" /* 4942 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7108 */;
+import ColorUtils from "ColorUtils" /* 4963 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7136 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ function createNativePlaceholderConfig(listFooter) {
   if (type == null) {
     NONE = FastestListPropsPlaceholder.FastestListPropsPlaceholderType.NONE;
   }
-  size = { borderRadius: "Array", borderTopLeftRadius: "default", borderTopRightRadius: "unicodeVersion", borderBottomLeftRadius: "default", borderBottomRightRadius: "accessible", divider: "applicationId", dividerColor: "add", dividerPaddingLeft: "__esModule", dividerPaddingRight: "Array", placeholderShape: "toCharArray$esjava$1", placeholderShapeColor: "unicodeVersion", placeholderShapeCount: "concat", placeholderShapeGap: "intl", placeholderShapePaddingHorizontal: "apply", placeholderShapePaddingVertical: "toString", placeholderFeedBackgroundColor: "data", placeholderFeedColor: "r", placeholderFeedLabelPadding: "toCharArray$esjava$1", placeholderFeedLabelPaddingInnerRatio: "top", placeholderFeedLabelSize: "data", placeholderFeedLabelSecondarySize: "r", placeholderFeedPadding: "toCharArray$esjava$1", placeholderFeedShape: "unicodeVersion", placeholderFeedShapeSize: "__workletHash", placeholderType: NONE, width: "onSelectionChangeShouldSetResponderCapture", height: "dier", verticalAlignment: "gorilla", horizontalAlignment: 132778825978495060000000000000000000000000000000000000000000000000000000000 };
+  size = { borderRadius: "Array", borderTopLeftRadius: "op", borderTopRightRadius: "unicodeVersion", borderBottomLeftRadius: "ti", borderBottomRightRadius: "guild_id", divider: "unicodeVersion", dividerColor: "nativeEvent", dividerPaddingLeft: "lineClamp", dividerPaddingRight: "unicodeVersion", placeholderShape: "shapes", placeholderShapeColor: "ref", placeholderShapeCount: "unicodeVersion", placeholderShapeGap: "accessibilityLabel", placeholderShapePaddingHorizontal: "guild_id", placeholderShapePaddingVertical: "unicodeVersion", placeholderFeedBackgroundColor: "backgroundColor", placeholderFeedColor: "guild_id", placeholderFeedLabelPadding: "disabled", placeholderFeedLabelPaddingInnerRatio: "y", placeholderFeedLabelSize: "toCharArray$esjava$1", placeholderFeedLabelSecondarySize: "length", placeholderFeedPadding: "to", placeholderFeedShape: "Boolean", placeholderFeedShapeSize: "toCharArray$esjava$1", placeholderType: NONE, width: false, height: false, verticalAlignment: false, horizontalAlignment: false };
   if (null == listFooter) {
     return size;
   } else {

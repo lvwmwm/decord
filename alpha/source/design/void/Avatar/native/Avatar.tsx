@@ -1,27 +1,27 @@
-// Module ID: 15240
-// Function ID: 15241
+// Module ID: 15312
+// Function ID: 15313
 // Name: Avatar
-// Dependencies: [19, 17, 1087, 1203, 21, 4945, 587, 14134, 15229, 15230, 9336, 8583, 558, 576, 9335, 15231, 5207, 11332, 11333, 15241, 2]
+// Dependencies: [19, 17, 1087, 1203, 21, 4966, 587, 14209, 15301, 15302, 9364, 8610, 558, 576, 9363, 15303, 5228, 11376, 11377, 15313, 2]
 
-// Module 15240 (Avatar)
+// Module 15312 (Avatar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import IconDefault from "Icon" /* 5207 */;
-import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 8583 */;
-import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9335 */;
-import ClipView from "ClipView" /* 9336 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11332 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11333 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14134 */;
-import Status_StatusUtils from "Status/StatusUtils" /* 15229 */;
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15230 */;
-import Status from "Status" /* 15231 */;
-import SpeakerPulseDefault from "SpeakerPulse" /* 15241 */;
+import IconDefault from "Icon" /* 5228 */;
+import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 8610 */;
+import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9363 */;
+import ClipView from "ClipView" /* 9364 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11376 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11377 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14209 */;
+import Status_StatusUtils from "Status/StatusUtils" /* 15301 */;
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15302 */;
+import Status from "Status" /* 15303 */;
+import SpeakerPulseDefault from "SpeakerPulse" /* 15313 */;
 import react from "react" /* 19 */;
 import StatusConstants from "StatusConstants" /* 1203 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,22 +1,22 @@
-// Module ID: 12320
-// Function ID: 12321
+// Module ID: 12375
+// Function ID: 12376
 // Name: ConjurePlanCommandText
-// Dependencies: [19, 5942, 21, 4945, 587, 558, 576, 5195, 12303, 2]
+// Dependencies: [19, 5964, 21, 4966, 587, 558, 576, 5216, 12358, 2]
 
-// Module 12320 (ConjurePlanCommandText)
+// Module 12375 (ConjurePlanCommandText)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5942 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5964 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const Text_Text = tmp(5195);
-const f113103 = (label) => {
+const Text_Text = tmp(5216);
+const f113483 = (label) => {
   let Children;
   let cloneElement;
   let cloneElementResult;
@@ -45,7 +45,7 @@ const f113103 = (label) => {
       cloneElementResult = mapped;
       if (null != mapped.props.children) {
         ({ Children, cloneElement } = tmp11);
-        cloneElementResult = cloneElement(mapped, undefined, Children.map(mapped.props.children, f113103));
+        cloneElementResult = cloneElement(mapped, undefined, Children.map(mapped.props.children, f113483));
       }
     }
   }
@@ -118,7 +118,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanC
   const cResult = obj.c(4);
   const tmp = size;
   ({ text, size, commandNames } = arg0);
-  const obj2 = size(12303);
+  const obj2 = size(12358);
   const conjurePlanCommandPattern = obj2.useConjurePlanCommandPattern(commandNames);
   if (cResult[0] === conjurePlanCommandPattern) {
     if (cResult[1] === size) {
@@ -129,7 +129,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanC
       return tmp5;
     }
   }
-  const tmpResult = tmp(12303);
+  const tmpResult = tmp(12358);
   const result = tmpResult.splitConjurePlanCommandText(text, conjurePlanCommandPattern);
   let mapped = text;
   if (null != result) {
@@ -153,9 +153,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanC
   let commandNames;
   text = text.text;
   ({ commandNames, size } = text);
-  const obj = size(12303);
+  const obj = size(12358);
   const conjurePlanCommandPattern = obj.useConjurePlanCommandPattern(commandNames);
-  const obj2 = size(12303);
+  const obj2 = size(12358);
   const result = obj2.splitConjurePlanCommandText(text, conjurePlanCommandPattern);
   if (null != result) {
     text = result.map((kind) => {
@@ -193,7 +193,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanC
   let mapped = markup;
   if (null != conjurePlanCommandPattern) {
     const Children = react.Children;
-    mapped = Children.map(markup, f113103);
+    mapped = Children.map(markup, f113483);
   }
   cResult[0] = markup;
   cResult[1] = conjurePlanCommandPattern;
@@ -216,7 +216,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanC
       let closure_0 = tmp;
       let closure_1 = size;
       const Children = react.Children;
-      mapped = Children.map(markup, f113103);
+      mapped = Children.map(markup, f113483);
     }
     return mapped;
   }, items);

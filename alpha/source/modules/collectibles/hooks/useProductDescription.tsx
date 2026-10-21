@@ -1,9 +1,9 @@
-// Module ID: 14277
-// Function ID: 14278
+// Module ID: 14352
+// Function ID: 14353
 // Name: useProductDescription
 // Dependencies: [19, 1128, 1995, 558, 576, 2]
 
-// Module 14277 (useProductDescription)
+// Module 14352 (useProductDescription)
 import react from "react" /* 19 */;
 import react2 from "react" /* 576 */;
 import intl7 from "intl" /* 1128 */;

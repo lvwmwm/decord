@@ -1,9 +1,9 @@
-// Module ID: 17831
-// Function ID: 17832
+// Module ID: 17912
+// Function ID: 17913
 // Name: MessagePreviewActionCreators
 // Dependencies: [1087, 1297, 584, 2]
 
-// Module 17831 (MessagePreviewActionCreators)
+// Module 17912 (MessagePreviewActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;

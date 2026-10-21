@@ -1,12 +1,12 @@
-// Module ID: 16443
-// Function ID: 16444
+// Module ID: 16519
+// Function ID: 16520
 // Name: useDisplayNameStylesPendingName
-// Dependencies: [8586, 4860, 558, 576, 4994, 504, 2]
+// Dependencies: [8613, 4881, 558, 576, 5015, 504, 2]
 
-// Module 16443 (useDisplayNameStylesPendingName)
-import UserUtilsDefault from "UserUtils" /* 4994 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8586 */;
-import GuildMemberStore from "GuildMemberStore" /* 4860 */;
+// Module 16519 (useDisplayNameStylesPendingName)
+import UserUtilsDefault from "UserUtils" /* 5015 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8613 */;
+import GuildMemberStore from "GuildMemberStore" /* 4881 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

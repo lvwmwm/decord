@@ -1,8 +1,8 @@
-// Module ID: 19170
-// Function ID: 19171
+// Module ID: 19245
+// Function ID: 19246
 // Dependencies: [2]
 
-// Module 19170
+// Module 19245
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PlaneIllocon-3x.png.js");

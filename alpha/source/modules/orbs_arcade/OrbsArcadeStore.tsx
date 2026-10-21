@@ -1,12 +1,12 @@
-// Module ID: 19093
-// Function ID: 19094
+// Module ID: 18195
+// Function ID: 18196
 // Name: OrbsArcadeStore
-// Dependencies: [502, 19094, 504, 584, 2]
+// Dependencies: [502, 18196, 504, 584, 2]
 
-// Module 19093 (OrbsArcadeStore)
+// Module 18195 (OrbsArcadeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 19094 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 18196 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
@@ -14,8 +14,10 @@ let c2 = false;
 let fetchedAt = null;
 let c4 = false;
 let orbsArcadeGames = [];
-let map = new Map();
-let set = new Set();
+const map = new Map();
+new Set();
+const set1 = new Set();
+let set = set1;
 const Store = get_initializedDefault.Store;
 class OrbsArcadeStore extends Store {
   initialize() {
@@ -29,6 +31,9 @@ class OrbsArcadeStore extends Store {
     return value;
   }
   isClaimingRewards(arg0) {
+    return set.has(arg0);
+  }
+  isLaunchingGame(arg0) {
     return set.has(arg0);
   }
 }
@@ -133,13 +138,25 @@ let obj = {
       set.delete(gameId);
     }
   },
+  ORBS_ARCADE_LAUNCH_GAME_BEGIN: function handleLaunchGameBegin(gameId) {
+    gameId = gameId.gameId;
+    set = new Set(set);
+    set = set.add(gameId);
+  },
+  ORBS_ARCADE_LAUNCH_GAME_END: function handleLaunchGameEnd(gameId) {
+    gameId = gameId.gameId;
+    set = new Set(set);
+    set.delete(gameId);
+  },
   LOGOUT: function initializeState() {
     c2 = false;
     fetchedAt = null;
     c4 = false;
     orbsArcadeGames = [];
-    map = new Map();
-    set = new Set();
+    new Map();
+    new Set();
+    new Set();
+    new Set();
   }
 };
 const orbsArcadeStore = new OrbsArcadeStore(DispatcherDefault, obj);

@@ -1,16 +1,16 @@
-// Module ID: 17833
-// Function ID: 17834
+// Module ID: 17914
+// Function ID: 17915
 // Name: usePlaceholderStyles
-// Dependencies: [4946, 9642, 558, 576, 1499, 504, 5014, 5167, 1202, 2]
+// Dependencies: [4967, 9672, 558, 576, 1499, 504, 5035, 5188, 1202, 2]
 
-// Module 17833 (usePlaceholderStyles)
+// Module 17914 (usePlaceholderStyles)
 import react from "react" /* 576 */;
 import native from "native" /* 1202 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
-import timing from "timing" /* 5167 */;
-import SearchConstants from "SearchConstants" /* 9642 */;
-import AccessibilityStore from "AccessibilityStore" /* 4946 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
+import timing from "timing" /* 5188 */;
+import SearchConstants from "SearchConstants" /* 9672 */;
+import AccessibilityStore from "AccessibilityStore" /* 4967 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -100,7 +100,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePlaceho
     return tmp5;
   };
   const tmpResult2 = require("ReanimatedRexport");
-  let obj2 = { useReducedMotion: stateFromStores, visible, withRepeat: tmp(5014).withRepeat, withSequence: tmp(5014).withSequence, withTiming: tmp(5167).withTiming, STANDARD_EASING: tmp(1202).STANDARD_EASING, FADE_LAYOUT_ANIMATION_DURATION };
+  let obj2 = { useReducedMotion: stateFromStores, visible, withRepeat: tmp(5035).withRepeat, withSequence: tmp(5035).withSequence, withTiming: tmp(5188).withTiming, STANDARD_EASING: tmp(1202).STANDARD_EASING, FADE_LAYOUT_ANIMATION_DURATION };
   fn2.__closure = obj2;
   fn2.__workletHash = 9750536800906;
   fn2.__initData = __initData;

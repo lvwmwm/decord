@@ -1,19 +1,19 @@
-// Module ID: 14254
-// Function ID: 14255
+// Module ID: 14329
+// Function ID: 14330
 // Name: UserProfileRemediatedNotice
-// Dependencies: [19, 17, 4890, 1087, 21, 4945, 587, 558, 576, 8669, 573, 5195, 1128, 7363, 2]
+// Dependencies: [19, 17, 4911, 1087, 21, 4966, 587, 558, 576, 8696, 573, 5216, 1128, 7391, 2]
 
-// Module 14254 (UserProfileRemediatedNotice)
+// Module 14329 (UserProfileRemediatedNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7363 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8669 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7391 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8696 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4890 */;
+import RelationshipStore from "RelationshipStore" /* 4911 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -76,7 +76,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RemediatedUs
           let tmp14 = isBlocked;
           if (tmp14) {
             const obj2 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: intl.string(user(1128).t["oC/fU6"]) };
-            const Text = tmp(5195).Text;
+            const Text = tmp(5216).Text;
             intl = tmp(1128).intl;
             tmp14 = closure_6(Text, obj2);
           }
@@ -113,9 +113,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RemediatedUs
         if (tmp17) {
           const obj4 = { children: items2 };
           const obj5 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: intl2.string(user(1128).t.HXz5An) };
-          const Text2 = tmp(5195).Text;
+          const Text2 = tmp(5216).Text;
           intl2 = tmp(1128).intl;
-          items2 = [closure_6(Text2, obj5), closure_6(user(5195).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
+          items2 = [closure_6(Text2, obj5), closure_6(user(5216).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
           const intl3 = tmp(1128).intl;
           const obj6 = {
             unignoreHook(children) {
@@ -181,7 +181,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RemediatedUs
     const tmp9 = View;
     if (isBlocked) {
       const obj3 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: intl.string(user(1128).t["oC/fU6"]) };
-      const Text = tmp4(5195).Text;
+      const Text = tmp4(5216).Text;
       intl = tmp4(1128).intl;
       isBlocked = closure_6(Text, obj3);
     }
@@ -189,9 +189,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RemediatedUs
     if (isIgnored) {
       const obj4 = { children: items3 };
       const obj5 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: intl2.string(user(1128).t.HXz5An) };
-      const Text2 = tmp4(5195).Text;
+      const Text2 = tmp4(5216).Text;
       intl2 = tmp4(1128).intl;
-      items3 = [closure_6(Text2, obj5), closure_6(user(5195).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
+      items3 = [closure_6(Text2, obj5), closure_6(user(5216).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
       const intl3 = tmp4(1128).intl;
       const obj6 = {
         unignoreHook(children) {

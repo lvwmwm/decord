@@ -1,11 +1,11 @@
-// Module ID: 15229
-// Function ID: 15230
+// Module ID: 15301
+// Function ID: 15302
 // Name: Status/StatusUtils
-// Dependencies: [1203, 15230, 2]
+// Dependencies: [1203, 15302, 2]
 // Exports: getAnimatedTypingTranslateX, getMobileStatusContainerRect, getStatusTypingDimensions, getVRStatusContainerRect
 
-// Module 15229 (Status/StatusUtils)
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15230 */;
+// Module 15301 (Status/StatusUtils)
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15302 */;
 import StatusConstants from "StatusConstants" /* 1203 */;
 import size_mod from "module_2" /* 2 */;
 

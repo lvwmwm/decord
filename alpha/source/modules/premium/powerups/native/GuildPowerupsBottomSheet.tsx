@@ -1,31 +1,31 @@
-// Module ID: 13257
-// Function ID: 13258
+// Module ID: 13325
+// Function ID: 13326
 // Name: GuildPowerupsBottomSheet
-// Dependencies: [17, 4946, 5143, 5144, 21, 4945, 587, 558, 576, 13241, 13237, 13258, 13259, 504, 13260, 5082, 13262, 5195, 13263, 13265, 13266, 5648, 1128, 2558, 13252, 13274, 5146, 8941, 13275, 13276, 13280, 13285, 13286, 5205, 13284, 5226, 2]
+// Dependencies: [17, 4967, 5164, 5165, 21, 4966, 587, 558, 576, 13309, 13305, 13326, 13327, 504, 13328, 5103, 13330, 5216, 13331, 13333, 13334, 5668, 1128, 2568, 13320, 13342, 5167, 8968, 13343, 13344, 13348, 13353, 13354, 5226, 13352, 5247, 2]
 
-// Module 13257 (GuildPowerupsBottomSheet)
+// Module 13325 (GuildPowerupsBottomSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef2558 from "module_2558" /* 2558 */;
-import GameServerHostingRive from "GameServerHostingRive" /* 5082 */;
-import GameServerConstants from "GameServerConstants" /* 5144 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 13237 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 13241 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13252 */;
-import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 13258 */;
-import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 13259 */;
-import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 13263 */;
-import useGuildPowerupLevelPerksDefault from "useGuildPowerupLevelPerks" /* 13265 */;
-import GuildBoostingMarketingUtils from "GuildBoostingMarketingUtils" /* 13266 */;
-import useGuildPowerupCardFooterConfigDefault from "useGuildPowerupCardFooterConfig" /* 13274 */;
-import GuildPowerupAnalytics from "GuildPowerupAnalytics" /* 13284 */;
-import AccessibilityStore from "AccessibilityStore" /* 4946 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5143 */;
+import _modDef2568 from "module_2568" /* 2568 */;
+import GameServerHostingRive from "GameServerHostingRive" /* 5103 */;
+import GameServerConstants from "GameServerConstants" /* 5165 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 13305 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 13309 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13320 */;
+import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 13326 */;
+import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 13327 */;
+import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 13331 */;
+import useGuildPowerupLevelPerksDefault from "useGuildPowerupLevelPerks" /* 13333 */;
+import GuildBoostingMarketingUtils from "GuildBoostingMarketingUtils" /* 13334 */;
+import useGuildPowerupCardFooterConfigDefault from "useGuildPowerupCardFooterConfig" /* 13342 */;
+import GuildPowerupAnalytics from "GuildPowerupAnalytics" /* 13352 */;
+import AccessibilityStore from "AccessibilityStore" /* 4967 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5164 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -49,15 +49,15 @@ let obj9;
 let tmp;
 let tmp5;
 const intl4 = tmp(1128);
-const Powerups = tmp(5146);
-const components_Button_Button = tmp(5205);
-const Sheet_BottomSheet = tmp(5226);
-const GuildSettingsServerTagUtils = tmp(8941);
-const useCanGuildPowerupBeToggledDefault = tmp5(13275);
-const useGuildPowerupOnActivateDefault = tmp5(13276);
-const useGuildPowerupOnShowDeactivateDefault = tmp5(13280);
-const useGuildPowerupConfigureCallbackDefault = tmp5(13285);
-const GuildPowerupsDisabledWarningDefault = tmp5(13286);
+const Powerups = tmp(5167);
+const components_Button_Button = tmp(5226);
+const Sheet_BottomSheet = tmp(5247);
+const GuildSettingsServerTagUtils = tmp(8968);
+const useCanGuildPowerupBeToggledDefault = tmp5(13343);
+const useGuildPowerupOnActivateDefault = tmp5(13344);
+const useGuildPowerupOnShowDeactivateDefault = tmp5(13348);
+const useGuildPowerupConfigureCallbackDefault = tmp5(13353);
+const GuildPowerupsDisabledWarningDefault = tmp5(13354);
 const View = react_native.View;
 ({ GuildPowerupType: hasOwnProperty, GUILD_POWERUP_CONFIGURABLE_SKUS_DESKTOP: metroRequire } = GuildPowerupsConstants);
 let closure_7 = GameServerConstants.GAME_SERVER_POWERUP_SKU_ID;
@@ -187,7 +187,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
   }
   if (powerup.type === hasOwnProperty.LEVEL) {
     const obj7 = { style: tmp4.gemContainer };
-    tmp33Result = metroImportAll(tmp5(13260), obj7);
+    tmp33Result = metroImportAll(tmp5(13328), obj7);
   } else if (powerup.skuId === closure_7) {
     const obj8 = { style: tmp4.image, children: metroImportAll(GameServerHostingRive.GameServerHostingRive, obj9) };
     obj9 = { stateMachine: "SM_Auto", dataBinding: obj10 };
@@ -195,7 +195,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
     tmp33Result = tmp33(View, obj8);
   } else {
     const obj11 = { imageUrl: str, style: tmp4.image, isAnimated: true };
-    tmp33Result = tmp33(tmp5(13262), obj11);
+    tmp33Result = tmp33(tmp5(13330), obj11);
   }
   cResult[2] = str;
   cResult[3] = powerup.skuId === closure_7;
@@ -235,7 +235,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
   }
   if (powerup.type === hasOwnProperty.LEVEL) {
     const obj2 = { style: tmp.gemContainer };
-    tmp15 = metroImportAll(tmp2(13260), obj2);
+    tmp15 = metroImportAll(tmp2(13328), obj2);
     tmp14 = metroImportAll;
   } else if (tmp10 === tmp9) {
     const obj3 = { style: tmp.image, children: metroImportAll(GameServerHostingRive.GameServerHostingRive, obj4) };
@@ -246,7 +246,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
   } else {
     tmp14 = metroImportAll;
     const obj6 = { imageUrl: str, style: tmp.image, isAnimated: true };
-    tmp15 = metroImportAll(tmp2(13262), obj6);
+    tmp15 = metroImportAll(tmp2(13330), obj6);
   }
   const obj7 = { children: items1 };
   items1 = [tmp15, ];
@@ -386,10 +386,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
       if (tmp15) {
         const obj3 = { style: tmp4.cooldownInfo, children: items1 };
         const obj4 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-        const CircleInformationIcon = tmp(5648).CircleInformationIcon;
+        const CircleInformationIcon = tmp(5668).CircleInformationIcon;
         items1 = [metroImportAll(CircleInformationIcon, obj4), ];
-        const obj5 = { variant: "text-sm/medium", color: "text-muted", children: intl.formatToPlainString(_modDef2558.GMhQcE, obj6) };
-        const Text = tmp(5195).Text;
+        const obj5 = { variant: "text-sm/medium", color: "text-muted", children: intl.formatToPlainString(_modDef2568.GMhQcE, obj6) };
+        const Text = tmp(5216).Text;
         intl = tmp(1128).intl;
         obj6 = { cooldownDays: powerup.deactivationCooldownPeriodDays };
         items1[1] = metroImportAll(Text, obj5);
@@ -437,10 +437,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
     if (tmp5Result) {
       const obj3 = { style: tmp.cooldownInfo, children: items1 };
       const obj4 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-      const CircleInformationIcon = tmp8(5648).CircleInformationIcon;
+      const CircleInformationIcon = tmp8(5668).CircleInformationIcon;
       items1 = [metroImportAll(CircleInformationIcon, obj4), ];
-      const obj5 = { variant: "text-sm/medium", color: "text-muted", children: intl.formatToPlainString(_modDef2558.GMhQcE, obj6) };
-      const Text = tmp8(5195).Text;
+      const obj5 = { variant: "text-sm/medium", color: "text-muted", children: intl.formatToPlainString(_modDef2568.GMhQcE, obj6) };
+      const Text = tmp8(5216).Text;
       intl = tmp8(1128).intl;
       obj6 = { cooldownDays: powerup.deactivationCooldownPeriodDays };
       items1[1] = metroImportAll(Text, obj5);
@@ -582,7 +582,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
                 };
                 const intl3 = intl4.intl;
                 const string = intl3.string;
-                const tmp5Result = _modDef2558;
+                const tmp5Result = _modDef2568;
                 if (isPowerupActive) {
                   stringResult = string(tmp5Result.TZsu1U);
                 } else {
@@ -602,7 +602,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
             }
             let tmp30 = tmp8;
             if (tmp30) {
-              const obj4 = { variant: "primary", text: intl2.string(_modDef2558.g5Ds69), onPress: tmp14 };
+              const obj4 = { variant: "primary", text: intl2.string(_modDef2568.g5Ds69), onPress: tmp14 };
               const Button = components_Button_Button.Button;
               intl2 = intl4.intl;
               tmp30 = metroImportAll(Button, obj4);
@@ -624,7 +624,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
         }
         let tmp23 = tmp19;
         if (tmp23) {
-          const obj6 = { style: tmp4.description, variant: "text-md/bold", children: intl.string(_modDef2558["jo5++h"]) };
+          const obj6 = { style: tmp4.description, variant: "text-md/bold", children: intl.string(_modDef2568["jo5++h"]) };
           const Text = Text_Text.Text;
           intl = intl4.intl;
           tmp23 = metroImportAll(Text, obj6);
@@ -679,7 +679,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
     let result = powerup.skuId !== Powerups.GUILD_POWERUP_TAG_SKU_ID;
     const tmp6 = require;
     if (!result) {
-      const tmp6Result = tmp6(8941);
+      const tmp6Result = tmp6(8968);
       result = tmp6Result.canUseMobileServerTagSettings(guildId);
     }
     showConfigureButton = result;
@@ -708,7 +708,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
     const tmp17 = React4;
     const tmp18 = View;
     if (tmp14) {
-      const obj2 = { style: tmp.description, variant: "text-md/bold", children: intl.string(_modDef2558["jo5++h"]) };
+      const obj2 = { style: tmp.description, variant: "text-md/bold", children: intl.string(_modDef2568["jo5++h"]) };
       const Text = Text_Text.Text;
       intl = intl4.intl;
       tmp14 = metroImportAll(Text, obj2);
@@ -721,7 +721,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
     }
     items[1] = tmp21;
     if (showConfigureButton) {
-      const obj4 = { variant: "primary", text: intl2.string(_modDef2558.g5Ds69), onPress: tmp10 };
+      const obj4 = { variant: "primary", text: intl2.string(_modDef2568.g5Ds69), onPress: tmp10 };
       const Button = components_Button_Button.Button;
       intl2 = intl4.intl;
       showConfigureButton = metroImportAll(Button, obj4);
@@ -756,7 +756,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
       };
       const intl3 = tmp28(1128).intl;
       const string = intl3.string;
-      const tmp2Result = _modDef2558;
+      const tmp2Result = _modDef2568;
       if (isPowerupActive) {
         stringResult = string(tmp2Result.TZsu1U);
       } else {

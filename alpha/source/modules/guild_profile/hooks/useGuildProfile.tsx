@@ -1,12 +1,12 @@
-// Module ID: 8919
-// Function ID: 8920
+// Module ID: 8946
+// Function ID: 8947
 // Name: useGuildProfile
-// Dependencies: [5, 19, 8918, 558, 576, 504, 8920, 2]
+// Dependencies: [5, 19, 8945, 558, 576, 504, 8947, 2]
 
-// Module 8919 (useGuildProfile)
+// Module 8946 (useGuildProfile)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildProfileStore from "GuildProfileStore" /* 8918 */;
+import GuildProfileStore from "GuildProfileStore" /* 8945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -186,7 +186,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
               }
               c3 = 1;
               c4 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {

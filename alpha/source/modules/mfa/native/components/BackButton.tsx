@@ -1,12 +1,12 @@
-// Module ID: 16791
-// Function ID: 16792
+// Module ID: 16867
+// Function ID: 16868
 // Name: BackButton
-// Dependencies: [21, 558, 576, 1505, 1128, 16788, 16785, 2]
+// Dependencies: [21, 558, 576, 1505, 1128, 16864, 16861, 2]
 
-// Module 16791 (BackButton)
+// Module 16867 (BackButton)
 import Fragment from "Fragment" /* 21 */;
-import MfaStepsTypes from "MfaStepsTypes" /* 16785 */;
-import buttonDefault from "button" /* 16788 */;
+import MfaStepsTypes from "MfaStepsTypes" /* 16861 */;
+import buttonDefault from "button" /* 16864 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackButton
     }
     return tmp7;
   }
-  const tmp8 = jsx(navigation(16788), {
+  const tmp8 = jsx(navigation(16864), {
     variant: "secondary",
     text: first,
     onPress() {

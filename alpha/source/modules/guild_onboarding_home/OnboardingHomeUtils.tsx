@@ -1,18 +1,18 @@
-// Module ID: 7273
-// Function ID: 7274
+// Module ID: 7301
+// Function ID: 7302
 // Name: OnboardingHomeUtils
-// Dependencies: [4853, 4800, 4822, 7274, 1087, 4807, 558, 576, 7275, 4825, 7152, 7276, 573, 2]
+// Dependencies: [4874, 4821, 4843, 7302, 1087, 4828, 558, 576, 7303, 4846, 7180, 7304, 573, 2]
 // Exports: canSeeOnboardingHome
 
-// Module 7273 (OnboardingHomeUtils)
-import ChannelConstants from "ChannelConstants" /* 4807 */;
-import FavoritesUtils from "FavoritesUtils" /* 4825 */;
-import useIsNewMemberDefault from "useIsNewMember" /* 7275 */;
-import guildHasOnboardingHomeDefault from "guildHasOnboardingHome" /* 7276 */;
-import ImpersonateStore from "ImpersonateStore" /* 4853 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import GuildStore from "GuildStore" /* 4822 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7274 */;
+// Module 7301 (OnboardingHomeUtils)
+import ChannelConstants from "ChannelConstants" /* 4828 */;
+import FavoritesUtils from "FavoritesUtils" /* 4846 */;
+import useIsNewMemberDefault from "useIsNewMember" /* 7303 */;
+import guildHasOnboardingHomeDefault from "guildHasOnboardingHome" /* 7304 */;
+import ImpersonateStore from "ImpersonateStore" /* 4874 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import GuildStore from "GuildStore" /* 4843 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7302 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -89,7 +89,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanSeeO
             }
             result = hasItem1;
           } else {
-            const tmp23Result = tmp23(7152);
+            const tmp23Result = tmp23(7180);
             result = tmp23Result.isGuildOnboardingSettingsAvailable(tmp2) || guildHasOnboardingHomeDefault(guild);
             if (result) {
               let tmp12 = closure_1;
@@ -169,7 +169,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanSeeO
             }
             result = hasItem1;
           } else {
-            const tmp23Result = tmp23(7152);
+            const tmp23Result = tmp23(7180);
             result = tmp23Result.isGuildOnboardingSettingsAvailable(tmp2) || guildHasOnboardingHomeDefault(guild);
             if (result) {
               let tmp12 = closure_1;
@@ -232,7 +232,7 @@ export const canSeeOnboardingHome = function canSeeOnboardingHome(id) {
           }
           return hasItem;
         } else {
-          const tmp14Result = tmp14(7152);
+          const tmp14Result = tmp14(7180);
           let result = tmp14Result.isGuildOnboardingSettingsAvailable(id);
           if (result) {
             const features = guild.features;

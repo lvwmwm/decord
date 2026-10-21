@@ -1,26 +1,35 @@
-// Module ID: 14367
-// Function ID: 14368
+// Module ID: 12618
+// Function ID: 12619
 // Name: getGameOrganizationDisplayNoun
-// Dependencies: [10833, 1128, 2396, 2]
+// Dependencies: [10977, 1128, 2406, 2]
 // Exports: default
 
-// Module 14367 (getGameOrganizationDisplayNoun)
+// Module 12618 (getGameOrganizationDisplayNoun)
 import intl3 from "intl" /* 1128 */;
-import _modDef2396 from "module_2396" /* 2396 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 10833 */;
+import _modDef2406 from "module_2406" /* 2406 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 10977 */;
 import size from "module_2" /* 2 */;
 
 const constants = GameOrganizationInviteConstants.GameOrganizationDisplayNouns;
 const result = size.fileFinishedImporting("modules/game_organization_invites/getGameOrganizationDisplayNoun.tsx");
 
-export default function getGameOrganizationDisplayNoun(arg0) {
-  let stringResult;
-  if (arg0 === constants.GUILD) {
+export default function getGameOrganizationDisplayNoun(lowercase) {
+  let string2Result;
+  let flag = lowercase.lowercase;
+  const displayNoun = lowercase.displayNoun;
+  if (flag === undefined) {
+    flag = false;
+  }
+  if (displayNoun === constants.GUILD) {
     const intl2 = intl3.intl;
-    stringResult = intl2.string(_modDef2396.sm5cz5);
+    const string2 = intl2.string;
+    const tmp9 = _modDef2406;
+    string2Result = string2(flag ? tmp9.aikK3o : tmp9.sm5cz5);
   } else {
     const intl = intl3.intl;
-    stringResult = intl.string(_modDef2396.nVMqjA);
+    const string = intl.string;
+    const tmp4 = _modDef2406;
+    string2Result = string(flag ? tmp4.xXXGsq : tmp4.nVMqjA);
   }
-  return stringResult;
+  return string2Result;
 };

@@ -1,60 +1,112 @@
 // Module ID: 15503
 // Function ID: 15504
-// Dependencies: [19, 15485, 15504, 21]
-// Exports: default
+// Dependencies: [15467, 15442, 15504, 15458, 15505, 15487, 15465, 15498]
 
 // Module 15503
-import react from "react" /* 19 */;
-import module_15485_mod from "module_15485" /* 15485 */;
-import module_15504_mod from "module_15504" /* 15504 */;
-import Fragment from "Fragment" /* 21 */;
+import _mod15442 from "module_15442" /* 15442 */;
+import _mod15458 from "module_15458" /* 15458 */;
+import _mod15467 from "module_15467" /* 15467 */;
+import _mod15487 from "module_15487" /* 15487 */;
+import _mod15498 from "module_15498" /* 15498 */;
+import _mod15504 from "module_15504" /* 15504 */;
+import _mod15505 from "module_15505" /* 15505 */;
 
-let closure_0;
+const require = globalThis.__r;
 
-let tmp4;
-let tmp6;
-if (react) {
-  const __esModule = react.__esModule;
-}
-let module_15485 = module_15485_mod;
-if (!module_15485) {
-  const obj = { default: module_15485 };
-  tmp4 = obj;
-} else {
-  tmp4 = module_15485;
-}
-module_15485 = tmp4;
-let module_15504 = module_15504_mod;
-if (!module_15504) {
-  let obj2 = { default: module_15504 };
-  tmp6 = obj2;
-} else {
-  tmp6 = module_15504;
-}
-module_15504 = tmp6;
-
-export default () => () => {
-  closure_0 = closure_0.default();
-  return {
-    onCommand(type) {
-      if ("storybook" === type.type) {
-        closure_0.emit("storybook", type.payload);
+let fn4;
+let fn5;
+let fn6;
+if (!_mod15504) {
+  let fn;
+  let fn2;
+  let fn3;
+  if (!_mod15458.state) {
+    let tmp = _mod15505("state");
+    let closure_6 = tmp;
+    _mod15487[tmp] = true;
+    fn = function t(facade, arg1) {
+      const tmp3 = closure_6;
+      if (require("module_15465")(facade, closure_6)) {
+        const self = this;
+        const self2 = this;
+        const typeError = new tmp(15442).TypeError("Object already initialized");
+        throw typeError;
+      } else {
+        arg1.facade = facade;
+        _mod15498(facade, tmp3, arg1);
+        return arg1;
       }
-    },
-    features: {
-      storybookSwitcher(arg0) {
-        closure_0 = arg0;
+    };
+    fn4 = fn;
+    fn2 = function n(arg0) {
+      return require("module_15465")(arg0, closure_6) ? arg0[closure_6] : {};
+    };
+    fn5 = fn2;
+    fn3 = function u(arg0) {
+      return require("module_15465")(arg0, closure_6);
+    };
+    fn6 = fn3;
+  }
+  let obj = {
+    set: fn,
+    get: fn2,
+    has: fn3,
+    enforce(toString) {
+        let tmp2;
+        if (fn6(toString)) {
+          tmp2 = fn5(toString);
+        } else {
+          tmp2 = fn4(toString, {});
+        }
+        return tmp2;
+      },
+    getterFor(arg0) {
+        let closure_0 = arg0;
         return (arg0) => {
-          closure_0 = arg0;
-          return function StorybookSwitcherContainer(arg0) {
-            const jsx = React.jsx;
-            const jsx2 = React.jsx;
-            const obj2 = {};
-            const merged = Object.assign(arg0);
-            return <_default storybookUi={emitter} emitter={emitter}>{jsx2(emitter, obj2)}</_default>;
-          };
+          if (_mod15467(arg0)) {
+            const tmp4 = fn5(arg0);
+            if (tmp4.type === closure_0) {
+              return tmp4;
+            }
+          }
+          const typeError = new _mod15442.TypeError("Incompatible receiver, " + closure_0 + " required");
+          throw typeError;
         };
       }
-    }
   };
+  module.exports = obj;
+}
+let state = _mod15458.state;
+if (!state) {
+  const _module = _mod15458;
+  let self = this;
+  let self2 = this;
+  const weakMap = new _mod15442.WeakMap();
+  let tmp4 = weakMap;
+  _module.state = weakMap;
+  state = weakMap;
+}
+({ get: state.get, has: state.has, set: state.set } = state);
+fn4 = function t(facade, arg1) {
+  const obj = state;
+  if (state.has(facade)) {
+    const self = this;
+    const self2 = this;
+    const typeError = new _mod15442.TypeError("Object already initialized");
+    throw typeError;
+  } else {
+    arg1.facade = facade;
+    const result = obj.set(facade, arg1);
+    return arg1;
+  }
 };
+fn5 = function n(arg0) {
+  const tmp = state.get(arg0) || {};
+  return tmp;
+};
+fn6 = function u(arg0) {
+  return state.has(arg0);
+};
+fn3 = fn6;
+fn2 = fn5;
+fn = fn4;

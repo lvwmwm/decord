@@ -1,11 +1,11 @@
-// Module ID: 7674
-// Function ID: 7675
+// Module ID: 7702
+// Function ID: 7703
 // Name: KvCacheVersion
-// Dependencies: [5, 499, 3, 4826, 2]
+// Dependencies: [5, 499, 3, 4847, 2]
 
-// Module 7674 (KvCacheVersion)
+// Module 7702 (KvCacheVersion)
 import LoggerDefault from "Logger" /* 3 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 4826 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4847 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import KvCacheVersionConstants from "KvCacheVersionConstants" /* 499 */;
 import size from "module_2" /* 2 */;

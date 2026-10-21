@@ -1,21 +1,21 @@
-// Module ID: 7854
-// Function ID: 7855
+// Module ID: 7882
+// Function ID: 7883
 // Name: AgeVerificationWebViewScreen
-// Dependencies: [32, 19, 17, 6607, 7832, 21, 3, 4945, 587, 558, 576, 5111, 6605, 7844, 5622, 1384, 7855, 6831, 2]
+// Dependencies: [32, 19, 17, 6635, 7860, 21, 3, 4966, 587, 558, 576, 5132, 6633, 7872, 5642, 1384, 7883, 6859, 2]
 
-// Module 7854 (AgeVerificationWebViewScreen)
+// Module 7882 (AgeVerificationWebViewScreen)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5111 */;
-import LinkingDefault from "Linking" /* 5622 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6607 */;
-import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 7844 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5132 */;
+import LinkingDefault from "Linking" /* 5642 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6635 */;
+import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 7872 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 7832 */;
+import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 7860 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj3;
 let rect;
 let tmp;
 let unpackModuleId;
-const AgeVerificationUtils = tmp(6605);
+const AgeVerificationUtils = tmp(6633);
 let react = react_mod;
 const View = react_native.View;
 let closure_6 = AgeVerificationConstants.AGE_VERIFICATION_MODAL_KEY;

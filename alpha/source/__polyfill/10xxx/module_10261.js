@@ -1,137 +1,146 @@
 // Module ID: 10261
 // Function ID: 10262
-// Dependencies: [41, 42, 93, 95, 98, 10259, 10151]
+// Dependencies: [10169, 10176, 10178, 10262, 10263, 10264, 10265, 10202, 10266, 10268, 10269, 10270, 10271, 10272, 10273, 10274, 10275, 10276, 10277, 10278, 10209]
+// Exports: createCasualConfiguration, parse, parseDate
 
 // Module 10261
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10151 */;
-import _mod10259 from "module_10259" /* 10259 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import _mod10202 from "module_10202" /* 10202 */;
+import includeCommonConfiguration2 from "includeCommonConfiguration" /* 10209 */;
+import _mod10262 from "module_10262" /* 10262 */;
+import _mod10263 from "module_10263" /* 10263 */;
+import _mod10264 from "module_10264" /* 10264 */;
+import _mod10265 from "module_10265" /* 10265 */;
+import _mod10266 from "module_10266" /* 10266 */;
+import _mod10268 from "module_10268" /* 10268 */;
+import _mod10269 from "module_10269" /* 10269 */;
+import _mod10270 from "module_10270" /* 10270 */;
+import _mod10271 from "module_10271" /* 10271 */;
+import _mod10272 from "module_10272" /* 10272 */;
+import _mod10273 from "module_10273" /* 10273 */;
+import _mod10274 from "module_10274" /* 10274 */;
+import _mod10275 from "module_10275" /* 10275 */;
+import _mod10276 from "module_10276" /* 10276 */;
+import _mod10277 from "module_10277" /* 10277 */;
+import _mod10278 from "module_10278" /* 10278 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+const require = globalThis.__r;
 
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
+function createConfiguration(flag) {
+  let items;
+  let items1;
+  if (flag === undefined) {
+    flag = true;
   }
+  let flag2 = arg1;
+  if (arg1 === undefined) {
+    flag2 = true;
+  }
+  const obj = { parsers: items, refiners: items1 };
+  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
+  items = [new module_10202.default(flag2), , , , , , , , , ];
+  new module_10202.default(flag2);
+  items[1] = new module_10266.default();
+  new module_10266.default();
+  items[2] = new module_10269.default();
+  new module_10269.default();
+  items[3] = new module_10270.default();
+  new module_10270.default();
+  items[4] = new module_10268.default();
+  new module_10268.default();
+  items[5] = new module_10273.default();
+  new module_10273.default();
+  items[6] = new module_10271.default();
+  new module_10271.default();
+  items[7] = new module_10272.default(flag);
+  new module_10272.default(flag);
+  items[8] = new module_10277.default(flag);
+  new module_10277.default(flag);
+  items[9] = new module_10278.default(flag);
+  new module_10278.default(flag);
+  items1 = [new module_10263.default(), ];
+  new module_10263.default();
+  items1[1] = new module_10262.default();
+  new module_10262.default();
+  return includeCommonConfiguration(obj, flag);
 }
-const keys = Object.keys(_mod10259.WEEKDAY_OFFSET);
-const regExp = new RegExp("(?<prefix>\u4E0A|\u4ECA|\u4E0B|\u9019|\u5462)(?:\u500B)?(?:\u661F\u671F|\u79AE\u62DC|\u9031)(?<weekday>" + keys.join("|") + ")");
-class ZHHantRelationWeekdayParser {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, ZHHantRelationWeekdayParser);
-    const obj = _getPrototypeOf(ZHHantRelationWeekdayParser);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
+const fn = this && this.__importDefault || ((__esModule) => {
+  let tmp2;
+  const tmp = __esModule;
+  if (!tmp) {
+    tmp2 = { default: __esModule };
+    const obj = { default: __esModule };
+  } else {
+    tmp2 = __esModule;
   }
+  return tmp2;
+});
+function createCasualConfiguration() {
+  let flag = arg0;
+  if (arg0 === undefined) {
+    flag = true;
+  }
+  const tmp = createConfiguration(false, flag);
+  const parsers = tmp.parsers;
+  const unshift = parsers.unshift;
+  const _default = new module_10264.default();
+  unshift(_default);
+  const parsers1 = tmp.parsers;
+  const unshift2 = parsers1.unshift;
+  const _default1 = new module_10265.default();
+  unshift2(_default1);
+  const parsers2 = tmp.parsers;
+  const unshift3 = parsers2.unshift;
+  const _default2 = new module_10274.default();
+  unshift3(_default2);
+  const parsers3 = tmp.parsers;
+  const unshift4 = parsers3.unshift;
+  const _default3 = new module_10270.default();
+  unshift4(_default3);
+  const parsers4 = tmp.parsers;
+  const unshift5 = parsers4.unshift;
+  const _default4 = new module_10276.default();
+  unshift5(_default4);
+  const parsers5 = tmp.parsers;
+  const unshift6 = parsers5.unshift;
+  const _default5 = new module_10275.default();
+  unshift6(_default5);
+  return tmp;
 }
-_inherits(ZHHantRelationWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
-const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return regExp;
-  }
+const module_10262 = fn(_mod10262);
+const module_10263 = fn(_mod10263);
+const module_10264 = fn(_mod10264);
+const module_10265 = fn(_mod10265);
+const module_10202 = fn(_mod10202);
+const module_10266 = fn(_mod10266);
+const module_10268 = fn(_mod10268);
+const module_10269 = fn(_mod10269);
+const module_10270 = fn(_mod10270);
+const module_10271 = fn(_mod10271);
+const module_10272 = fn(_mod10272);
+const module_10273 = fn(_mod10273);
+const module_10274 = fn(_mod10274);
+const module_10275 = fn(_mod10275);
+const module_10276 = fn(_mod10276);
+const module_10277 = fn(_mod10277);
+const module_10278 = fn(_mod10278);
+const chrono = new require("module_10169").Chrono(createCasualConfiguration());
+const chrono1 = new require("module_10169").Chrono(createConfiguration(true));
+
+export const parse = function parse(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parse(arg0, arg1, arg2);
 };
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(createParsingResult, index) {
-      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
-      const tmp2 = _mod10259.WEEKDAY_OFFSET[index.groups.weekday];
-      if (undefined === tmp2) {
-        return null;
-      } else {
-        const prefix = index.groups.prefix;
-        let str2 = "last";
-        if ("\u4E0A" != prefix) {
-          str2 = "next";
-          if ("\u4E0B" != prefix) {
-            str2 = null;
-            const tmp3 = "\u4ECA" != prefix && "\u9019" != prefix && "\u5462" != prefix;
-            if (!tmp3) {
-              str2 = "this";
-            }
-          }
-        }
-        const _Date = Date;
-        const refDate = createParsingResult.refDate;
-        const self = this;
-        const self2 = this;
-        const date = new Date(refDate.getTime());
-        const day = date.getDay();
-        if ("last" != str2) {
-          let flag;
-          if ("past" != str2) {
-            if ("next" == str2) {
-              date.setDate(date.getDate() + (tmp2 + 7 - day));
-              flag = true;
-            } else if ("this" == str2) {
-              date.setDate(date.getDate() + (tmp2 - day));
-              flag = false;
-            } else {
-              const diff = tmp2 - day;
-              const _Math3 = Math;
-              const _Math4 = Math;
-              const absolute = Math.abs(diff - 7);
-              let diff1 = diff;
-              if (absolute < Math.abs(diff)) {
-                diff1 = diff - 7;
-              }
-              const _Math = Math;
-              const _Math2 = Math;
-              const absolute1 = Math.abs(diff1 + 7);
-              let sum = diff1;
-              if (absolute1 < Math.abs(diff1)) {
-                sum = diff1 + 7;
-              }
-              date.setDate(date.getDate() + sum);
-              flag = false;
-            }
-          }
-          const start = parsingResult.start;
-          start.assign("weekday", tmp2);
-          const start2 = parsingResult.start;
-          if (flag) {
-            start2.assign("day", date.getDate());
-            const start5 = parsingResult.start;
-            start5.assign("month", date.getMonth() + 1);
-            const start6 = parsingResult.start;
-            start6.assign("year", date.getFullYear());
-          } else {
-            start2.imply("day", date.getDate());
-            const start3 = parsingResult.start;
-            start3.imply("month", date.getMonth() + 1);
-            const start4 = parsingResult.start;
-            start4.imply("year", date.getFullYear());
-          }
-          return parsingResult;
-        }
-        date.setDate(date.getDate() + (tmp2 - 7 - day));
-        flag = true;
-      }
-    }
-  }
-];
-
-export default _createClass(ZHHantRelationWeekdayParser, items);
+export const parseDate = function parseDate(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parseDate(arg0, arg1, arg2);
+};
+export { createCasualConfiguration };
+export { createConfiguration };
+export const Chrono = require("module_10169").Chrono;
+export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
+export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
+export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
+export const Meridiem = require("Meridiem").Meridiem;
+export const Weekday = require("Meridiem").Weekday;
+export const casual = chrono;
+export const strict = chrono1;

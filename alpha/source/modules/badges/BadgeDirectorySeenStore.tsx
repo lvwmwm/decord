@@ -1,9 +1,9 @@
-// Module ID: 10930
-// Function ID: 10931
+// Module ID: 11074
+// Function ID: 11075
 // Name: BadgeDirectorySeenStore
 // Dependencies: [504, 584, 2]
 
-// Module 10930 (BadgeDirectorySeenStore)
+// Module 11074 (BadgeDirectorySeenStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

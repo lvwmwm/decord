@@ -1,16 +1,16 @@
-// Module ID: 13079
-// Function ID: 13080
+// Module ID: 13147
+// Function ID: 13148
 // Name: SuggestedSearchActionCreators
-// Dependencies: [5, 13039, 13040, 1087, 569, 13078, 13062, 584, 1297, 2]
+// Dependencies: [5, 13107, 13108, 1087, 569, 13146, 13130, 584, 1297, 2]
 // Exports: advanceSuggestedSearches, fetchInitialSuggestedSearches
 
-// Module 13079 (SuggestedSearchActionCreators)
+// Module 13147 (SuggestedSearchActionCreators)
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import SmartSearchExperiments from "SmartSearchExperiments" /* 13078 */;
+import SmartSearchExperiments from "SmartSearchExperiments" /* 13146 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SuggestedSearchStore from "SuggestedSearchStore" /* 13039 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 13040 */;
+import SuggestedSearchStore from "SuggestedSearchStore" /* 13107 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 13108 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -104,7 +104,7 @@ let obj = function _performSuggestedSearchesFetch() {
         tmp30 = null;
       }
       windowSize = tmp30;
-      return "test";
+      return "Reflect";
     })();
     iter.next();
     return iter;

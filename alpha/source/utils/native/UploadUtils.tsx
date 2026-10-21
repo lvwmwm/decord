@@ -1,29 +1,29 @@
-// Module ID: 8102
-// Function ID: 8103
+// Module ID: 8130
+// Function ID: 8131
 // Name: utils/UploadUtils
-// Dependencies: [109, 5, 17, 1209, 5848, 1392, 1087, 7816, 3, 8103, 7833, 8093, 8110, 1384, 5624, 1128, 1447, 2054, 8092, 1164, 8111, 8113, 8114, 8098, 4902, 38, 8115, 8116, 8117, 1388, 8118, 8119, 8120, 5979, 8121, 2]
+// Dependencies: [109, 5, 17, 1209, 5870, 1392, 1087, 7844, 3, 8131, 7861, 8121, 8138, 1384, 5644, 1128, 1447, 2053, 8120, 1164, 8139, 8141, 8142, 8126, 4923, 38, 8143, 8144, 8145, 1388, 8146, 8147, 8148, 6001, 8149, 2]
 // Exports: cancelGetFileInfo, getAppDir, getCaptionLabel, getFileFromUploadItem, getFileInfo, getFileSize, getImageCompressionQuality, getImageDimensionsIfMissing, getType, openImagePicker, resolveModeToVideoQualityForFreeUser, resolveModeToVideoQualityForUserWithFeature, shouldResolveToMediaFilePath
 
-// Module 8102 (utils/UploadUtils)
+// Module 8130 (utils/UploadUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import react_nativeDefault from "react-native" /* 1164 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import react_nativeDefault2 from "react-native" /* 1447 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2054 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7816 */;
-import NativePermissionUtilsDefault from "NativePermissionUtils" /* 7833 */;
-import UploadPlatform from "UploadPlatform" /* 8092 */;
-import FileUtils from "FileUtils" /* 8098 */;
-import ImagePickerDefault from "ImagePicker" /* 8103 */;
-import ImageConversionDecision from "ImageConversionDecision" /* 8111 */;
-import VideoUploadUtils from "VideoUploadUtils" /* 8113 */;
-import UploadLimits from "UploadLimits" /* 8114 */;
-import utils_TimeUtils from "utils/TimeUtils" /* 8121 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2053 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7844 */;
+import NativePermissionUtilsDefault from "NativePermissionUtils" /* 7861 */;
+import UploadPlatform from "UploadPlatform" /* 8120 */;
+import FileUtils from "FileUtils" /* 8126 */;
+import ImagePickerDefault from "ImagePicker" /* 8131 */;
+import ImageConversionDecision from "ImageConversionDecision" /* 8139 */;
+import VideoUploadUtils from "VideoUploadUtils" /* 8141 */;
+import UploadLimits from "UploadLimits" /* 8142 */;
+import utils_TimeUtils from "utils/TimeUtils" /* 8149 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UnsyncedUserSettingsStore_mod from "UnsyncedUserSettingsStore" /* 1209 */;
-import NetworkStore from "NetworkStore" /* 5848 */;
+import NetworkStore from "NetworkStore" /* 5870 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import size_mod from "module_2" /* 2 */;
@@ -41,8 +41,8 @@ let closure_17;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const DeviceUtils = tmp(4902);
-const UploadUtils = tmp(8093);
+const DeviceUtils = tmp(4923);
+const UploadUtils = tmp(8121);
 function openImagePickerUnhandled() {
   return obj(...arguments);
 }
@@ -449,14 +449,14 @@ obj = function _openImagePicker() {
                   obj7 = { errorStr: closure_130_23 };
                   const obj6 = { errorStr: closure_130_23 };
                 } else if ("E_CROPPER_IMAGE_NOT_FOUND" === closure_1.code) {
-                  const presentFailedToast2 = closure_130_0(closure_130_2[14]).presentFailedToast;
+                  const presentFailedToast = closure_130_0(closure_130_2[14]).presentFailedToast;
                   closure_130_0(closure_130_2[14]);
-                  const intl2 = closure_130_0(closure_130_2[15]).intl;
-                  presentFailedToast2(intl2.string(closure_130_0(closure_130_2[15]).t.TTzyzW));
+                  const intl = closure_130_0(closure_130_2[15]).intl;
+                  presentFailedToast(intl.string(closure_130_0(closure_130_2[15]).t.TTzyzW));
                   obj7 = { errorStr: "No select photo access" };
                 } else {
-                  const obj4 = closure_130_0(closure_130_2[14]);
-                  obj4.presentFailedToast(closure_1.message);
+                  const obj3 = closure_130_0(closure_130_2[14]);
+                  obj3.presentFailedToast(closure_1.message);
                   obj7 = { errorStr: closure_1.message };
                 }
               }
@@ -474,21 +474,21 @@ obj = function _openImagePicker() {
             return { value, done: true };
           } else {
             if (null != value.errorStr) {
-              const presentFailedToast = closure_130_0(closure_130_2[14]).presentFailedToast;
+              const presentFailedToast2 = closure_130_0(closure_130_2[14]).presentFailedToast;
               closure_130_0(closure_130_2[14]);
-              const intl = closure_130_0(closure_130_2[15]).intl;
-              obj = { reason: value.errorStr };
-              presentFailedToast(intl.formatToPlainString(closure_130_0(closure_130_2[15]).t.Ex162J, obj));
+              const intl2 = closure_130_0(closure_130_2[15]).intl;
+              const obj11 = { reason: value.errorStr };
+              presentFailedToast2(intl2.formatToPlainString(closure_130_0(closure_130_2[15]).t.Ex162J, obj11));
             }
             c4 = 0;
             c6 = 3;
             return { value, done: true };
           }
-        } catch (tmp43) {
-          closure_3 = tmp43;
+        } catch (tmp32) {
+          closure_3 = tmp32;
           if (0 === c4) {
             c6 = 3;
-            throw tmp43;
+            throw tmp32;
           } else {
             c5 = 1;
           }
@@ -535,7 +535,7 @@ obj = function _mediaManager() {
               closure_3 = tmp;
               c6 = 1;
               c7 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -1324,7 +1324,7 @@ function convertVideo(videoMetadata) {
               } else {
                 isVideo = null != str3.match(/^assets-library:\/\/.+&ext=(mov|qt)$/i);
                 if (isVideo) {
-                  const obj4 = { uri: require, overrideType: "r" };
+                  const obj4 = { uri: require, overrideType: "Array" };
                   const tmp12Result8 = UploadUtils;
                   isVideo = tmp12Result8.getFile(obj4).isVideo;
                 }
@@ -1350,7 +1350,7 @@ function convertVideo(videoMetadata) {
                 } else {
                   isVideo2 = null != str3.match(/^assets-library:\/\/.+&ext=mp4$/i);
                   if (isVideo2) {
-                    obj6 = { uri: require, overrideType: "r" };
+                    obj6 = { uri: require, overrideType: "Array" };
                     const tmp12Result11 = UploadUtils;
                     isVideo2 = tmp12Result11.getFile(obj6).isVideo;
                   }
@@ -1550,7 +1550,7 @@ obj = function _processVideoUpload() {
             encodingConfig = undefined;
             fileSize = 1;
             spoiler = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === fileSize) {
           if (arg0 === 1) {
@@ -1750,7 +1750,7 @@ obj = function _processImageOrFileUpload() {
             closure_26 = undefined;
             i = 1;
             width = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {
@@ -2021,7 +2021,7 @@ obj = function _tryConvertImage() {
               path3 = undefined;
               useJpegliEncoder = 1;
               c7 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
             break;
           }

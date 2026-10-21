@@ -1,18 +1,18 @@
-// Module ID: 12324
-// Function ID: 12325
+// Module ID: 12379
+// Function ID: 12380
 // Name: conjurePlanExperienceSections
-// Dependencies: [3820, 12303, 1128, 12304, 2]
+// Dependencies: [3830, 12358, 1128, 12359, 2]
 // Exports: conjurePlanDisplayedSections, conjurePlanExperienceIsApp, conjurePlanFrameFeatures, conjurePlanRequirementGroups
 
-// Module 12324 (conjurePlanExperienceSections)
+// Module 12379 (conjurePlanExperienceSections)
 import intl3 from "intl" /* 1128 */;
-import _modDef3820 from "module_3820" /* 3820 */;
-import conjurePlanFormat from "conjurePlanFormat" /* 12304 */;
+import _modDef3830 from "module_3830" /* 3830 */;
+import conjurePlanFormat from "conjurePlanFormat" /* 12359 */;
 import size from "module_2" /* 2 */;
 
 let changes, names;
 
-let obj = { frame: _modDef3820.Z2bt4u, overlay_widget: _modDef3820["0mGHfU"], user_widget: _modDef3820.Jipr29, bot: _modDef3820.EbvC13, commands: _modDef3820.EbvC13, automod: _modDef3820.tiMvei };
+let obj = { frame: _modDef3830.Z2bt4u, overlay_widget: _modDef3830["0mGHfU"], user_widget: _modDef3830.Jipr29, bot: _modDef3830.EbvC13, commands: _modDef3830.EbvC13, automod: _modDef3830.tiMvei };
 const result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanExperienceSections.tsx");
 
 export const CONJURE_PLAN_EXPERIENCE_KIND_LABELS = obj;
@@ -60,7 +60,7 @@ export const conjurePlanFrameFeatures = function conjurePlanFrameFeatures(usable
   let items4;
   if (usableInVoice.usableInVoice) {
     const intl = intl3.intl;
-    const items = [intl.string(_modDef3820["4oGg2h"])];
+    const items = [intl.string(_modDef3830["4oGg2h"])];
     items1 = items;
   } else {
     items1 = [];
@@ -68,7 +68,7 @@ export const conjurePlanFrameFeatures = function conjurePlanFrameFeatures(usable
   const items2 = [...items1];
   if (usableInVoice.launchableAnywhere) {
     const intl2 = intl3.intl;
-    const items3 = [intl2.string(_modDef3820.BTGCfR)];
+    const items3 = [intl2.string(_modDef3830.BTGCfR)];
     items4 = items3;
   } else {
     items4 = [];
@@ -77,9 +77,9 @@ export const conjurePlanFrameFeatures = function conjurePlanFrameFeatures(usable
   return items2;
 };
 export const conjurePlanRequirementGroups = function conjurePlanRequirementGroups(proposal) {
-  let obj = { key: "permissions", caption: _modDef3820["2UbW6r"], names: proposal.bot_permissions };
-  let items = [obj, { key: "intents", caption: _modDef3820["7TKfpj"], names: proposal.privileged_intents }];
-  ({ key: "intents", caption: _modDef3820["7TKfpj"], names: proposal.privileged_intents });
+  let obj = { key: "permissions", caption: _modDef3830["2UbW6r"], names: proposal.bot_permissions };
+  let items = [obj, { key: "intents", caption: _modDef3830["7TKfpj"], names: proposal.privileged_intents }];
+  ({ key: "intents", caption: _modDef3830["7TKfpj"], names: proposal.privileged_intents });
   return items.flatMap((names) => {
     let intl;
     names = names.names;

@@ -1,14 +1,14 @@
 // Module ID: 2024
 // Function ID: 2025
 // Name: ApplicationRecord
-// Dependencies: [1407, 2025, 1406, 2026, 1375, 1099, 2029, 1417, 2031, 11, 2032, 2]
+// Dependencies: [1407, 2025, 1406, 2026, 1375, 1099, 2029, 1417, 2030, 11, 2031, 2]
 
 // Module 2024 (ApplicationRecord)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import ApplicationConstants from "ApplicationConstants" /* 1375 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import ApplicationOverlayMethodFlags from "ApplicationOverlayMethodFlags" /* 2031 */;
+import ApplicationOverlayMethodFlags from "ApplicationOverlayMethodFlags" /* 2030 */;
 import Record from "Record" /* 1407 */;
 import CompanyRecord from "CompanyRecord" /* 2025 */;
 import UserRecord from "UserRecord" /* 1406 */;
@@ -155,19 +155,12 @@ class BasicApplicationRecord extends Record {
 }
 Object.defineProperty(BasicApplicationRecord.prototype, "connectionEntrypointUrl", {
   get: function connectionEntrypointUrl() {
-    const obj = require("UserApplicationIdentityConstants").APPLICATION_IDENTITY_CONNECTIONS_WITH_OVERRIDE_ENTRYPOINT_URLS[this.id];
+    const tmp = require("UserApplicationIdentityConstants").APPLICATION_IDENTITY_CONNECTIONS_WITH_OVERRIDE_ENTRYPOINT_URLS[this.id];
     let prop;
-    if (obj != null) {
-      prop = obj.connectionEntrypointUrlOverride;
+    if (tmp != null) {
+      prop = tmp.connectionEntrypointUrlOverride;
     }
-    if (null != prop) {
-      let _connectionEntrypointUrl;
-      if (obj.getMigrationExperimentEnabled("ApplicationRecord")) {
-        _connectionEntrypointUrl = obj.connectionEntrypointUrlOverride;
-      }
-      return _connectionEntrypointUrl;
-    }
-    _connectionEntrypointUrl = this._connectionEntrypointUrl;
+    return null != prop ? tmp.connectionEntrypointUrlOverride : this._connectionEntrypointUrl;
   },
   set: undefined
 });

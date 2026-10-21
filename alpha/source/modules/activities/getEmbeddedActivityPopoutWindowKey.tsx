@@ -1,16 +1,16 @@
-// Module ID: 15561
-// Function ID: 15562
+// Module ID: 15633
+// Function ID: 15634
 // Name: getEmbeddedActivityPopoutWindowKey
-// Dependencies: [2046, 7778, 4799, 5570, 1087, 2032, 5587, 4869, 558, 576, 504, 2]
+// Dependencies: [2045, 7806, 4820, 5591, 1087, 2031, 5608, 4890, 558, 576, 504, 2]
 // Exports: default, getEmbeddedActivityPopoutWindowKeyForApplication, getEmbeddedActivityPopoutWindowKeyForChannel
 
-// Module 15561 (getEmbeddedActivityPopoutWindowKey)
+// Module 15633 (getEmbeddedActivityPopoutWindowKey)
 import Constants from "Constants" /* 1087 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4869 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5570 */;
-import ApplicationStore from "ApplicationStore" /* 2046 */;
-import PopoutWindowStore from "PopoutWindowStore" /* 7778 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4799 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4890 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5591 */;
+import ApplicationStore from "ApplicationStore" /* 2045 */;
+import PopoutWindowStore from "PopoutWindowStore" /* 7806 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

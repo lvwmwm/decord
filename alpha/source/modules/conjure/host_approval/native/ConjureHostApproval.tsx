@@ -1,20 +1,20 @@
-// Module ID: 11694
-// Function ID: 11695
+// Module ID: 11740
+// Function ID: 11741
 // Name: host_approval/ConjureHostApproval
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 11695, 5195, 1128, 3820, 11038, 5205, 5935, 11696, 6854, 6938, 2]
+// Dependencies: [19, 17, 21, 4966, 587, 558, 576, 11741, 5216, 1128, 3830, 10693, 5226, 5957, 11742, 6882, 6966, 2]
 
-// Module 11694 (host_approval/ConjureHostApproval)
+// Module 11740 (host_approval/ConjureHostApproval)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
-import _modDef3820 from "module_3820" /* 3820 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import ConjureHostApproval from "ConjureHostApproval" /* 11038 */;
-import ConjureAwaitingUser from "ConjureAwaitingUser" /* 11695 */;
-import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 11696 */;
+import _modDef3830 from "module_3830" /* 3830 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import ConjureHostApproval from "ConjureHostApproval" /* 10693 */;
+import ConjureAwaitingUser from "ConjureAwaitingUser" /* 11741 */;
+import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 11742 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -54,15 +54,15 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
   ({ host, reason } = approval);
   const card = tmp4.card;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = closure_4(projectId(11695).ConjureAwaitingPulseRing, {});
+    const tmp7 = closure_4(projectId(11741).ConjureAwaitingPulseRing, {});
     cResult[0] = tmp7;
     first = tmp7;
   } else {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { variant: "text-xs/semibold", color: "text-brand", children: intl.string(id(3820).W4DsVo) };
-    const Text = tmp(5195).Text;
+    const obj2 = { variant: "text-xs/semibold", color: "text-brand", children: intl.string(id(3830).W4DsVo) };
+    const Text = tmp(5216).Text;
     intl = tmp(1128).intl;
     const tmp11 = closure_4(Text, obj2);
     cResult[1] = tmp11;
@@ -73,7 +73,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
   if (cResult[2] !== host) {
     const intl2 = tmp(1128).intl;
     const obj3 = { host };
-    const formatResult = intl2.format(id(3820).E4Gc7e, obj3);
+    const formatResult = intl2.format(id(3830).E4Gc7e, obj3);
     cResult[2] = host;
     cResult[3] = formatResult;
     tmp12 = formatResult;
@@ -82,7 +82,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
   }
   if (cResult[4] !== tmp12) {
     const obj4 = { variant: "text-sm/normal", color: "text-default", children: tmp12 };
-    const tmp17 = closure_4(projectId(5195).Text, obj4);
+    const tmp17 = closure_4(projectId(5216).Text, obj4);
     cResult[4] = tmp12;
     cResult[5] = tmp17;
     tmp15 = tmp17;
@@ -92,8 +92,8 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
   if (cResult[6] !== reason) {
     let tmp19 = null;
     if ("" !== reason) {
-      const obj5 = { variant: "text-sm/normal", color: "text-muted", children: intl3.format(id(3820)["5poqiN"], obj6) };
-      const Text2 = tmp(5195).Text;
+      const obj5 = { variant: "text-sm/normal", color: "text-muted", children: intl3.format(id(3830)["5poqiN"], obj6) };
+      const Text2 = tmp(5216).Text;
       intl3 = tmp(1128).intl;
       obj6 = { reason };
       tmp19 = closure_4(Text2, obj5);
@@ -114,7 +114,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
     const _Symbol = Symbol;
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
       const intl4 = tmp(1128).intl;
-      const stringResult = intl4.string(id(3820).B05C3K);
+      const stringResult = intl4.string(id(3830).B05C3K);
       cResult[11] = stringResult;
       tmp23 = stringResult;
     } else {
@@ -122,7 +122,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
     }
     if (cResult[12] !== tmp22) {
       const obj7 = { variant: "primary", size: "sm", onPress: tmp22, text: tmp23 };
-      const tmp28 = closure_4(projectId(5205).Button, obj7);
+      const tmp28 = closure_4(projectId(5226).Button, obj7);
       cResult[12] = tmp22;
       cResult[13] = tmp28;
       tmp26 = tmp28;
@@ -139,8 +139,8 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
       const _Symbol2 = Symbol;
       if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
         const intl5 = tmp(1128).intl;
-        cResult[17] = intl5.string(id(3820)["rGv+om"]);
-        intl5.string(id(3820)["rGv+om"]);
+        cResult[17] = intl5.string(id(3830)["rGv+om"]);
+        intl5.string(id(3830)["rGv+om"]);
         class C {
           constructor() {
             const obj = ConjureHostApproval;
@@ -152,7 +152,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
       }
       if (cResult[18] !== tmp29) {
         const obj8 = { variant: "secondary", size: "sm", onPress: tmp29, text: tmp31 };
-        const tmp36 = closure_4(projectId(5205).Button, obj8);
+        const tmp36 = closure_4(projectId(5226).Button, obj8);
         class C {
           constructor() {
             const obj = ConjureHostApproval;
@@ -174,8 +174,8 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
         const _Symbol3 = Symbol;
         if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
           const intl6 = tmp(1128).intl;
-          cResult[23] = intl6.string(id(3820).vWkaSE);
-          intl6.string(id(3820).vWkaSE);
+          cResult[23] = intl6.string(id(3830).vWkaSE);
+          intl6.string(id(3830).vWkaSE);
           class C {
             constructor() {
               const obj = ConjureHostApproval;
@@ -187,7 +187,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
         }
         if (cResult[24] !== tmp37) {
           const obj9 = { variant: "secondary", size: "sm", onPress: tmp37, text: tmp38 };
-          const tmp43 = closure_4(projectId(5205).Button, obj9);
+          const tmp43 = closure_4(projectId(5226).Button, obj9);
           class C {
             constructor() {
               const obj = ConjureHostApproval;
@@ -228,7 +228,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
             tmp50[2] = tmp15;
             tmp50[3] = tmp18;
             tmp50[4] = tmp44;
-            const tmp51 = closure_5(id(11696), obj10);
+            const tmp51 = closure_5(id(11742), obj10);
             cResult[30] = tmp4.card;
             cResult[31] = tmp44;
             cResult[32] = tmp15;
@@ -244,7 +244,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
           }
         }
         const obj11 = { direction: "horizontal", spacing: id(587).space.PX_8, children: items };
-        const Stack = tmp(5935).Stack;
+        const Stack = tmp(5957).Stack;
         items = [tmp26, tmp34, tmp41];
         const tmp46 = closure_5(Stack, obj11);
         cResult[26] = tmp34;
@@ -300,25 +300,25 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
   items = [, , , , ];
   const tmp5 = ConjureNativeCardSurfaceDefault;
   items[0] = closure_4(ConjureAwaitingUser.ConjureAwaitingPulseRing, {});
-  const obj2 = { variant: "text-xs/semibold", color: "text-brand", children: intl.string(_modDef3820.W4DsVo) };
+  const obj2 = { variant: "text-xs/semibold", color: "text-brand", children: intl.string(_modDef3830.W4DsVo) };
   const Text = Text_Text.Text;
   intl = intl7.intl;
   items[1] = closure_4(Text, obj2);
-  const obj3 = { variant: "text-sm/normal", color: "text-default", children: intl2.format(_modDef3820.E4Gc7e, { host }) };
+  const obj3 = { variant: "text-sm/normal", color: "text-default", children: intl2.format(_modDef3830.E4Gc7e, { host }) };
   const Text2 = Text_Text.Text;
   intl2 = intl7.intl;
   items[2] = closure_4(Text2, obj3);
   let tmp6Result = null;
   if ("" !== reason) {
-    const obj4 = { variant: "text-sm/normal", color: "text-muted", children: intl3.format(_modDef3820["5poqiN"], obj5) };
-    const Text3 = tmp7(5195).Text;
+    const obj4 = { variant: "text-sm/normal", color: "text-muted", children: intl3.format(_modDef3830["5poqiN"], obj5) };
+    const Text3 = tmp7(5216).Text;
     intl3 = tmp7(1128).intl;
     obj5 = { reason };
     tmp6Result = tmp6(Text3, obj4);
   }
   items[3] = tmp6Result;
   const obj6 = { direction: "horizontal", spacing: nativeDefault.space.PX_8, children: items1 };
-  const Stack = tmp7(5935).Stack;
+  const Stack = tmp7(5957).Stack;
   const obj7 = {
     variant: "primary",
     size: "sm",
@@ -326,9 +326,9 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
       const obj = ConjureHostApproval;
       return obj.answerHostApproval(_require, c1, "once");
     },
-    text: intl4.string(_modDef3820.B05C3K)
+    text: intl4.string(_modDef3830.B05C3K)
   };
-  const Button = tmp7(5205).Button;
+  const Button = tmp7(5226).Button;
   intl4 = tmp7(1128).intl;
   items1 = [closure_4(Button, obj7), , ];
   const obj8 = {
@@ -338,9 +338,9 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
       const obj = ConjureHostApproval;
       return obj.answerHostApproval(_require, c1, "always");
     },
-    text: intl5.string(_modDef3820["rGv+om"])
+    text: intl5.string(_modDef3830["rGv+om"])
   };
-  const Button2 = tmp7(5205).Button;
+  const Button2 = tmp7(5226).Button;
   intl5 = tmp7(1128).intl;
   items1[1] = closure_4(Button2, obj8);
   const obj9 = {
@@ -350,9 +350,9 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
       const obj = ConjureHostApproval;
       return obj.answerHostApproval(_require, c1, "deny");
     },
-    text: intl6.string(_modDef3820.vWkaSE)
+    text: intl6.string(_modDef3830.vWkaSE)
   };
-  const Button3 = tmp7(5205).Button;
+  const Button3 = tmp7(5226).Button;
   intl6 = tmp7(1128).intl;
   items1[2] = closure_4(Button3, obj9);
   items[4] = closure_5(Stack, obj6);
@@ -364,7 +364,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureHostA
   const cResult = obj.c(8);
   projectId = projectId.projectId;
   const tmp2 = closure_6();
-  const obj2 = projectId(11038);
+  const obj2 = projectId(10693);
   const conjureHostApprovals = obj2.useConjureHostApprovals(projectId);
   if (0 === conjureHostApprovals.length) {
     return null;
@@ -409,7 +409,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureHostA
 }) : (function ConjureHostApprovalCards(projectId) {
   projectId = projectId.projectId;
   const tmp = closure_6();
-  let obj = projectId(11038);
+  let obj = projectId(10693);
   const conjureHostApprovals = obj.useConjureHostApprovals(projectId);
   let tmp2 = null;
   if (0 !== conjureHostApprovals.length) {
@@ -432,7 +432,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAllow
   let obj = projectId(576);
   const cResult = obj.c(7);
   projectId = projectId.projectId;
-  let obj2 = projectId(11038);
+  let obj2 = projectId(10693);
   const conjureAllowedHosts = obj2.useConjureAllowedHosts(projectId);
   let tmp4 = null;
   if (null != conjureAllowedHosts) {
@@ -440,9 +440,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAllow
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       let intl = tmp(1128).intl;
-      const stringResult = intl.string(_modDef3820.Ufr2wk);
+      const stringResult = intl.string(_modDef3830.Ufr2wk);
       let intl2 = tmp(1128).intl;
-      const stringResult1 = intl2.string(_modDef3820.wremls);
+      const stringResult1 = intl2.string(_modDef3830.wremls);
       cResult[0] = stringResult;
       cResult[1] = stringResult1;
       tmp6 = stringResult;
@@ -458,7 +458,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAllow
       }
       if (cResult[5] !== tmp11) {
         let obj3 = { title: tmp6, description: tmp7, hasIcons: false, children: tmp11 };
-        const tmp17 = closure_4(projectId(6938).TableRowGroup, obj3);
+        const tmp17 = closure_4(projectId(6966).TableRowGroup, obj3);
         cResult[5] = tmp11;
         cResult[6] = tmp17;
         tmp15 = tmp17;
@@ -468,8 +468,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAllow
       tmp4 = tmp15;
     }
     if (0 === conjureAllowedHosts.length) {
-      const obj4 = { label: intl3.string(_modDef3820.AweHIi) };
-      let TableRow = tmp(6854).TableRow;
+      const obj4 = { label: intl3.string(_modDef3830.AweHIi) };
+      let TableRow = tmp(6882).TableRow;
       intl3 = tmp(1128).intl;
       mapped = closure_4(TableRow, obj4);
     } else {
@@ -485,8 +485,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAllow
         obj2 = {
           variant: "secondary",
           size: "sm",
-          text: intl.string(_modDef3820["4r+tVj"]),
-          accessibilityLabel: intl2.formatToPlainString(_modDef3820.mocW6h, obj3),
+          text: intl.string(_modDef3830["4r+tVj"]),
+          accessibilityLabel: intl2.formatToPlainString(_modDef3830.mocW6h, obj3),
           onPress() {
             const obj = ConjureHostApproval;
             return obj.removeAllowedHost(projectId, label);
@@ -511,18 +511,18 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAllow
   let intl3;
   let mapped;
   projectId = projectId.projectId;
-  let obj = projectId(11038);
+  let obj = projectId(10693);
   const conjureAllowedHosts = obj.useConjureAllowedHosts(projectId);
   let tmp4Result2 = null;
   if (null != conjureAllowedHosts) {
-    let obj2 = { title: intl.string(_modDef3820.Ufr2wk), description: intl2.string(_modDef3820.wremls), hasIcons: false, children: mapped };
-    const TableRowGroup = tmp(6938).TableRowGroup;
+    let obj2 = { title: intl.string(_modDef3830.Ufr2wk), description: intl2.string(_modDef3830.wremls), hasIcons: false, children: mapped };
+    const TableRowGroup = tmp(6966).TableRowGroup;
     intl = tmp(1128).intl;
     intl2 = tmp(1128).intl;
     const tmp5 = importDefault;
     if (0 === conjureAllowedHosts.length) {
-      let obj3 = { label: intl3.string(tmp5(3820).AweHIi) };
-      let TableRow = tmp(6854).TableRow;
+      let obj3 = { label: intl3.string(tmp5(3830).AweHIi) };
+      let TableRow = tmp(6882).TableRow;
       intl3 = tmp(1128).intl;
       mapped = tmp4(TableRow, obj3);
     } else {
@@ -538,8 +538,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAllow
         obj2 = {
           variant: "secondary",
           size: "sm",
-          text: intl.string(_modDef3820["4r+tVj"]),
-          accessibilityLabel: intl2.formatToPlainString(_modDef3820.mocW6h, obj3),
+          text: intl.string(_modDef3830["4r+tVj"]),
+          accessibilityLabel: intl2.formatToPlainString(_modDef3830.mocW6h, obj3),
           onPress() {
             const obj = ConjureHostApproval;
             return obj.removeAllowedHost(projectId, label);

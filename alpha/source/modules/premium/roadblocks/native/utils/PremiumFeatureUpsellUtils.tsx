@@ -1,19 +1,20 @@
-// Module ID: 9611
-// Function ID: 9612
+// Module ID: 9641
+// Function ID: 9642
 // Name: PremiumFeatureUpsellUtils
-// Dependencies: [1087, 7394, 9610, 38, 1107, 2]
+// Dependencies: [1087, 7422, 9640, 1257, 1107, 2]
 // Exports: getAnalyticsPage, getUpsellType, isEmojiPickerUpsellFeature, isSoundboardSectionNitroLocked
 
-// Module 9611 (PremiumFeatureUpsellUtils)
-import _modDef38 from "module_38" /* 38 */;
+// Module 9641 (PremiumFeatureUpsellUtils)
 import Constants from "Constants" /* 1087 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
-import SoundboardTypes from "SoundboardTypes" /* 7394 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9610 */;
+import SentryUtilsDefault from "SentryUtils" /* 1257 */;
+import SoundboardTypes from "SoundboardTypes" /* 7422 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9640 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticsPages = Constants.AnalyticsPages;
 const items = [EntitlementFeatureNames.EntitlementFeatureNames.EMOJIS_EVERYWHERE, EntitlementFeatureNames.EntitlementFeatureNames.ANIMATED_EMOJIS];
+const set = new Set();
 const result = size.fileFinishedImporting("modules/premium/roadblocks/native/utils/PremiumFeatureUpsellUtils.tsx");
 
 export const isSoundboardSectionNitroLocked = function isSoundboardSectionNitroLocked(guild_id, categoryInfo) {
@@ -24,6 +25,7 @@ export const isEmojiPickerUpsellFeature = function isEmojiPickerUpsellFeature(fe
   return items.includes(featureName);
 };
 export const getAnalyticsPage = function getAnalyticsPage(featureName) {
+  let obj3;
   if (EntitlementFeatureNames.EntitlementFeatureNames.ANIMATED_EMOJIS === featureName) {
     return AnalyticsPages.PREMIUM_UPSELL_ANIMATED_EMOJI;
   } else if (EntitlementFeatureNames.EntitlementFeatureNames.EMOJIS_EVERYWHERE === featureName) {
@@ -42,13 +44,24 @@ export const getAnalyticsPage = function getAnalyticsPage(featureName) {
     return AnalyticsPages.PREMIUM_UPSELL_SCHEDULED_MESSAGES;
   } else if (EntitlementFeatureNames.EntitlementFeatureNames.STREAM_HIGH_QUALITY === featureName) {
     return AnalyticsPages.PREMIUM_UPSELL_STREAM_HIGH_QUALITY;
+  } else if (EntitlementFeatureNames.EntitlementFeatureNames.SHOP_MEMBER_PRICING === featureName) {
+    return AnalyticsPages.PREMIUM_UPSELL_SHOP_MEMBER_PRICING;
   } else {
     const _HermesInternal = HermesInternal;
-    const tmp4 = _modDef38;
-    tmp4(false, "Missing featureName: " + featureName);
+    const combined = "" + "getAnalyticsPage" + ":" + featureName;
+    const obj4 = set;
+    if (!set.has(combined)) {
+      obj4.add(combined);
+      const obj2 = { tags: obj3 };
+      obj3 = { helper: "getAnalyticsPage", feature_name: featureName };
+      const obj = SentryUtilsDefault;
+      obj.captureMessage("PremiumFeatureUpsellUtils: missing featureName mapping", obj2, "error");
+    }
+    return null;
   }
 };
 export const getUpsellType = function getUpsellType(EMOJIS_EVERYWHERE) {
+  let obj3;
   if (EntitlementFeatureNames.EntitlementFeatureNames.ANIMATED_EMOJIS === EMOJIS_EVERYWHERE) {
     return ConstantsIOS.UpsellTypes.ANIMATED_EMOJI;
   } else if (EntitlementFeatureNames.EntitlementFeatureNames.EMOJIS_EVERYWHERE === EMOJIS_EVERYWHERE) {
@@ -71,7 +84,15 @@ export const getUpsellType = function getUpsellType(EMOJIS_EVERYWHERE) {
     return ConstantsIOS.UpsellTypes.SHOP_MEMBER_PRICING;
   } else {
     const _HermesInternal = HermesInternal;
-    const tmp4 = _modDef38;
-    tmp4(false, "Missing featureName: " + EMOJIS_EVERYWHERE);
+    const combined = "" + "getUpsellType" + ":" + EMOJIS_EVERYWHERE;
+    const obj4 = set;
+    if (!set.has(combined)) {
+      obj4.add(combined);
+      const obj2 = { tags: obj3 };
+      obj3 = { helper: "getUpsellType", feature_name: EMOJIS_EVERYWHERE };
+      const obj = SentryUtilsDefault;
+      obj.captureMessage("PremiumFeatureUpsellUtils: missing featureName mapping", obj2, "error");
+    }
+    return null;
   }
 };

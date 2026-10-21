@@ -1,9 +1,9 @@
-// Module ID: 6781
-// Function ID: 6782
+// Module ID: 6809
+// Function ID: 6810
 // Name: GuildActionCreators
-// Dependencies: [109, 5, 6782, 502, 6653, 4878, 4822, 4851, 4971, 1392, 1087, 1112, 5866, 1128, 584, 6783, 1297, 6785, 7141, 2002, 6618, 7256, 7262, 7268, 7269, 7296, 7384, 6627, 1275, 4885, 1099, 7373, 4772, 1267, 7385, 1114, 6613, 6633, 2]
+// Dependencies: [109, 5, 6810, 502, 6681, 4899, 4843, 4872, 4992, 1392, 1087, 1112, 5888, 1128, 584, 6811, 1297, 6813, 7169, 2002, 6646, 7284, 7290, 7296, 7297, 7324, 7412, 6655, 1275, 4906, 1099, 7401, 4793, 1267, 7413, 1114, 6641, 6661, 2]
 
-// Module 6781 (GuildActionCreators)
+// Module 6809 (GuildActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AgeGateConstants from "AgeGateConstants" /* 1112 */;
 import router_utils from "router_utils" /* 1114 */;
@@ -11,22 +11,22 @@ import intl3 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5866 */;
-import AgeGateUtils from "AgeGateUtils" /* 6613 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6627 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6633 */;
-import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7373 */;
-import LurkerActionCreators from "LurkerActionCreators" /* 7384 */;
-import getPreviousSafeRouteForNsfwReturnDefault from "getPreviousSafeRouteForNsfwReturn" /* 7385 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5888 */;
+import AgeGateUtils from "AgeGateUtils" /* 6641 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6655 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6661 */;
+import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7401 */;
+import LurkerActionCreators from "LurkerActionCreators" /* 7412 */;
+import getPreviousSafeRouteForNsfwReturnDefault from "getPreviousSafeRouteForNsfwReturn" /* 7413 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BulkBanStore from "BulkBanStore" /* 6782 */;
+import BulkBanStore from "BulkBanStore" /* 6810 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6653 */;
-import GuildChannelStore from "GuildChannelStore" /* 4878 */;
-import GuildStore from "GuildStore" /* 4822 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4851 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4971 */;
+import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6681 */;
+import GuildChannelStore from "GuildChannelStore" /* 4899 */;
+import GuildStore from "GuildStore" /* 4843 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4992 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
@@ -133,7 +133,7 @@ let obj = function _joinGuild() {
               closure_11 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

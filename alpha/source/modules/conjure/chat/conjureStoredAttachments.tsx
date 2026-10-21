@@ -1,24 +1,24 @@
-// Module ID: 12222
-// Function ID: 12223
+// Module ID: 12205
+// Function ID: 12206
 // Name: conjureStoredAttachments
-// Dependencies: [19, 12210, 11646, 584, 558, 576, 504, 2]
+// Dependencies: [19, 12206, 11696, 584, 558, 576, 504, 2]
 // Exports: fetchConjureStoredAttachments
 
-// Module 12222 (conjureStoredAttachments)
+// Module 12205 (conjureStoredAttachments)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureAttachmentRequests from "conjureAttachmentRequests" /* 11646 */;
+import conjureAttachmentRequests from "conjureAttachmentRequests" /* 11696 */;
 import react from "react" /* 19 */;
-import ConjureStoredAttachmentStore from "ConjureStoredAttachmentStore" /* 12210 */;
+import ConjureStoredAttachmentStore from "ConjureStoredAttachmentStore" /* 12206 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const f112915 = () => {
+const f112913 = () => {
 
 };
-const f112916 = () => set.delete(projectId);
+const f112914 = () => set.delete(projectId);
 let closure_5 = [];
 const set = new Set();
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -88,8 +88,8 @@ function fetchConjureStoredAttachments(projectId) {
       attachmentId(closure_2_2[3]);
       dispatch(obj);
     });
-    const catchPromise = nextPromise.catch(f112915);
-    catchPromise.finally(f112916);
+    const catchPromise = nextPromise.catch(f112913);
+    catchPromise.finally(f112914);
   }
 }
 const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureStoredAttachment(arg0, attachmentId) {
@@ -157,8 +157,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
           attachmentId(closure_2_2[3]);
           dispatch(obj);
         });
-        const catchPromise = nextPromise.catch(f112915);
-        catchPromise.finally(f112916);
+        const catchPromise = nextPromise.catch(f112913);
+        catchPromise.finally(f112914);
       }
     }
   };
@@ -199,8 +199,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
           attachmentId(closure_2_2[3]);
           dispatch(obj);
         });
-        const catchPromise = nextPromise.catch(f112915);
-        catchPromise.finally(f112916);
+        const catchPromise = nextPromise.catch(f112913);
+        catchPromise.finally(f112914);
       }
     }
   }, items2);

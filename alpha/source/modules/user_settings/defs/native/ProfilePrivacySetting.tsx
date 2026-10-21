@@ -1,17 +1,17 @@
-// Module ID: 15944
-// Function ID: 15945
+// Module ID: 16020
+// Function ID: 16021
 // Name: ProfilePrivacySetting
-// Dependencies: [8280, 558, 4776, 15945, 5171, 15946, 2002, 1128, 1211, 11111, 2]
+// Dependencies: [8308, 558, 4797, 16021, 5192, 16022, 2002, 1128, 1211, 11155, 2]
 
-// Module 15944 (ProfilePrivacySetting)
+// Module 16020 (ProfilePrivacySetting)
 import intl7 from "intl" /* 1128 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
-import UserSettings from "UserSettings" /* 4776 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import SettingsConstants from "SettingsConstants" /* 8280 */;
-import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 15945 */;
+import UserSettings from "UserSettings" /* 4797 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
+import SettingsConstants from "SettingsConstants" /* 8308 */;
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 16021 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11111 */;
+import SettingBuilders from "SettingBuilders" /* 11155 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
@@ -42,7 +42,7 @@ let obj = {
       const obj4 = { direction: null, affectedGuildIds: null, settingName: null, mappedActivityValue: null };
       ({ direction: obj3.direction, affectedGuildIds: obj3.affectedGuildIds, settingName: obj3.settingName, mappedActivityValue: obj3.mappedActivityValue } = profileToActivityUpsell);
       const obj2 = ActionSheetActionCreatorsDefault;
-      obj2.openLazy(asyncRequire(15946, tmp3.paths), "ProfileToActivityPrivacyUpsellActionSheet", obj4);
+      obj2.openLazy(asyncRequire(16022, tmp3.paths), "ProfileToActivityPrivacyUpsellActionSheet", obj4);
     }
   },
   useOptions() {

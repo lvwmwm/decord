@@ -1,12 +1,12 @@
-// Module ID: 12229
-// Function ID: 12230
+// Module ID: 12290
+// Function ID: 12291
 // Name: useConjureProjectEventLine
-// Dependencies: [19, 4822, 1392, 558, 576, 12208, 504, 4994, 12230, 1128, 3820, 2]
+// Dependencies: [19, 4843, 1392, 558, 576, 12274, 504, 5015, 12291, 1128, 3830, 2]
 
-// Module 12229 (useConjureProjectEventLine)
-import conjureMessageAuthors from "conjureMessageAuthors" /* 12208 */;
+// Module 12290 (useConjureProjectEventLine)
+import conjureMessageAuthors from "conjureMessageAuthors" /* 12274 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4822 */;
+import GuildStore from "GuildStore" /* 4843 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -219,7 +219,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
     if (cResult[20] !== actor_user_id.source_name) {
       const intl2 = tmp(tmp2[9]).intl;
       const obj11 = { source: actor_user_id.source_name };
-      const formatResult4 = intl2.format(require("module_3820").mHCXtm, obj11);
+      const formatResult4 = intl2.format(require("module_3830").mHCXtm, obj11);
       cResult[20] = actor_user_id.source_name;
       cResult[21] = formatResult4;
       tmp24 = formatResult4;
@@ -361,7 +361,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
   } else if ("remixed" === type) {
     const intl2 = tmp2(tmp3[9]).intl;
     const obj13 = { source: actor_user_id.source_name };
-    return intl2.format(require("module_3820").mHCXtm, obj13);
+    return intl2.format(require("module_3830").mHCXtm, obj13);
   }
 });
 const result = size.fileFinishedImporting("modules/conjure/chat/useConjureProjectEventLine.tsx");

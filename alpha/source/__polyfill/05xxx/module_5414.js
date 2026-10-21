@@ -1,106 +1,126 @@
 // Module ID: 5414
 // Function ID: 5415
-// Dependencies: [19, 17, 21, 5415, 5235, 5231]
+// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 5412]
 
 // Module 5414
+import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import GESTURE_SOURCE from "GESTURE_SOURCE" /* 5231 */;
-import _mod5235 from "module_5235" /* 5235 */;
-import react_native from "react-native" /* 5415 */;
-import react_mod from "react" /* 19 */;
-import react_native2 from "react-native" /* 17 */;
+import TOUCHABLE_STATEDefault from "TOUCHABLE_STATE" /* 5412 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import metroRequire from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import react_native from "react-native" /* 17 */;
 
-let c2;
-let c3;
-let closure_4;
-let hasOwnProperty;
-let react = react_mod;
-({ useMemo: c2, useRef: c3 } = react);
-const memo = react.memo;
-react = react_mod;
-({ StatusBar: closure_4, View: hasOwnProperty } = react_native2);
+let timing;
+
+let c10;
+let c9;
+let metroImportAll;
+let unpackModuleId;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+let closure_3 = ["style"];
+const Component = react2.Component;
+({ Animated: metroImportAll, Easing: c9, StyleSheet: c10, View: unpackModuleId } = react_native);
 const jsx = Fragment.jsx;
-const memoResult = memo(function BottomSheetHostingContainerComponent(bottomInset) {
-  let stableCallback;
-  let topInset;
-  let value;
-  ({ containerHeight: require, containerOffset: dependencyMap, topInset } = bottomInset);
-  if (topInset === undefined) {
-    topInset = 0;
-  }
-  let num = bottomInset.bottomInset;
-  if (num === undefined) {
-    num = 0;
-  }
-  let flag = bottomInset.shouldCalculateHeight;
-  if (flag === undefined) {
-    flag = true;
-  }
-  const detached = bottomInset.detached;
-  const style = bottomInset.style;
-  const children = bottomInset.children;
-  const tmp = num(null);
-  const ref = tmp;
-  let items = [style, detached, topInset, num];
-  const obj2 = {
-    ref: tmp,
-    pointerEvents: "box-none",
-    onLayout: stableCallback,
-    style: topInset(() => {
-      let str;
-      const items = [style, react_native.styles.container, ];
-      const rect = { top: topInset, bottom: num, overflow: str };
-      str = "hidden";
-      if (detached) {
-        str = "visible";
+class TouchableOpacity {
+  constructor() {
+    let constructResult;
+    const self = this;
+    const items = [...arguments];
+    let closure_0;
+    let tmp = _classCallCheck(this, TouchableOpacity);
+    const items1 = [...items];
+    let obj = _getPrototypeOf(TouchableOpacity);
+    let tmp3 = metroRequire;
+    const tmp2 = _getPrototypeOf;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items1);
+    }
+    const tmp3Result = tmp3(self, constructResult);
+    closure_0 = tmp3Result;
+    tmp3Result.getChildStyleOpacityWithDefault = () => {
+      const tmp = closure_2_10.flatten(closure_0.props.style) || {};
+      let num = 1;
+      if (null != tmp.opacity) {
+        const opacity = tmp.opacity;
+        num = opacity.valueOf();
       }
-      items[2] = rect;
-      return items;
-    }, items),
-    collapsable: true,
-    children
-  };
-  stableCallback = undefined;
-  const obj = _mod5235;
-  const tmp3 = ref;
-  const tmp4 = style;
-  if (flag) {
-    stableCallback = obj.useStableCallback(function handleLayoutEvent(nativeEvent) {
-      const height = nativeEvent.nativeEvent.layout.height;
-      height.value = height;
-      const current = ref.current;
-      if (current != null) {
-        current.measure((arg0, arg1, arg2, arg3, arg4, arg5) => {
-          let WINDOW_HEIGHT;
-          let max;
-          let num3;
-          let sum;
-          if (dependencyMap.value) {
-            num = arg5;
-            let num2 = arg5;
-            if (arg5 == null) {
-              num2 = 0;
-            }
-            const rect = { top: num2, left: 0, right: 0, bottom: max(0, WINDOW_HEIGHT - (sum + num3)) };
-            const _Math = Math;
-            max = Math.max;
-            WINDOW_HEIGHT = GESTURE_SOURCE.WINDOW_HEIGHT;
-            if (num == null) {
-              num = 0;
-            }
-            num3 = currentHeight.currentHeight;
-            sum = num + height;
-            if (num3 == null) {
-              num3 = 0;
-            }
-            tmp.value = rect;
-          }
-        });
+      return num;
+    };
+    const value = new metroImportAll.Value(tmp3Result.getChildStyleOpacityWithDefault());
+    tmp3Result.opacity = value;
+    tmp3Result.setOpacityTo = (toValue, duration) => {
+      let flag;
+      timing = timing.timing;
+      const opacity = closure_0.opacity;
+      const obj = { toValue, duration, easing: closure_2_9.inOut(closure_2_9.quad), useNativeDriver: flag };
+      flag = closure_0.props.useNativeAnimations;
+      if (flag == null) {
+        flag = true;
       }
-    });
+      const timingResult = timing(opacity, obj);
+      timingResult.start();
+    };
+    tmp3Result.onStateChange = (arg0, arg1) => {
+      if (arg1 === TouchableOpacity(closure_2_2[9]).TOUCHABLE_STATE.BEGAN) {
+        closure_0.setOpacityTo(closure_0.props.activeOpacity, 0);
+      } else {
+        const tmp3 = arg1 !== TouchableOpacity(closure_2_2[9]).TOUCHABLE_STATE.UNDETERMINED && arg1 !== TouchableOpacity(closure_2_2[9]).TOUCHABLE_STATE.MOVED_OUTSIDE;
+        if (!tmp3) {
+          closure_0.setOpacityTo(closure_0.getChildStyleOpacityWithDefault(), 150);
+        }
+      }
+    };
+    return tmp3Result;
   }
-  return tmp3(tmp4, obj2);
-});
-memoResult.displayName = "BottomSheetHostingContainer";
+}
+_inherits(TouchableOpacity, Component);
+const entry = {
+  key: "render",
+  value: function render() {
+    let children;
+    const self = this;
+    const props = this.props;
+    let style = props.style;
+    if (undefined === style) {
+      style = {};
+    }
+    const tmp = _objectWithoutProperties(props, closure_3);
+    TOUCHABLE_STATEDefault;
+    const merged = Object.assign(tmp);
+    const items = [style, { opacity: self.opacity }];
+    if (self.props.children) {
+      children = self.props.children;
+    } else {
+      children = tmp2(unpackModuleId, {});
+    }
+    return <tmp3 style={items} onStateChange={self.onStateChange}>{children}</tmp3>;
+  }
+};
+let items = [entry];
+const importDefaultResultResult = _createClass(TouchableOpacity, items);
+let obj = { activeOpacity: 0.2 };
+let merged = Object.assign(TOUCHABLE_STATEDefault.defaultProps);
+importDefaultResultResult.defaultProps = obj;
 
-export const BottomSheetHostingContainer = memoResult;
+export default importDefaultResultResult;

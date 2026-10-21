@@ -1,10 +1,10 @@
-// Module ID: 4840
-// Function ID: 4841
+// Module ID: 4861
+// Function ID: 4862
 // Name: Kv
-// Dependencies: [4835, 2]
+// Dependencies: [4856, 2]
 
-// Module 4840 (Kv)
-import Host2 from "Host" /* 4835 */;
+// Module 4861 (Kv)
+import Host2 from "Host" /* 4856 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/Kv.tsx");

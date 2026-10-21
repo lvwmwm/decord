@@ -1,13 +1,13 @@
-// Module ID: 15789
-// Function ID: 15790
+// Module ID: 15865
+// Function ID: 15866
 // Name: useAutoScrollToSetting
-// Dependencies: [19, 15782, 11112, 15650, 15784, 1505, 2]
+// Dependencies: [19, 15858, 11156, 15726, 15860, 1505, 2]
 // Exports: useAutoScrollToSearchResultSetting
 
-// Module 15789 (useAutoScrollToSetting)
-import SettingRendererConstants from "SettingRendererConstants" /* 11112 */;
+// Module 15865 (useAutoScrollToSetting)
+import SettingRendererConstants from "SettingRendererConstants" /* 11156 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 15782 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 15858 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,8 +31,8 @@ export const useAutoScrollToSearchResultSetting = function useAutoScrollToSearch
   let flag = false;
   if (null != current) {
     flag = false;
-    if (tmp(15650).SETTING_RENDERER_CONFIG[current].type !== current.ROUTE) {
-      const tmpResult = tmp(15784);
+    if (tmp(15726).SETTING_RENDERER_CONFIG[current].type !== current.ROUTE) {
+      const tmpResult = tmp(15860);
       let initialScrollIndex = tmpResult.getInitialScrollIndex(current, memo);
       flag = 0 !== initialScrollIndex && 1 !== initialScrollIndex;
       const tmp7 = 0 !== initialScrollIndex && 1 !== initialScrollIndex;
@@ -49,7 +49,7 @@ export const useAutoScrollToSearchResultSetting = function useAutoScrollToSearch
           if (ref != null) {
             current = ref.current;
             if (current != null) {
-              const obj2 = { index: initialScrollIndex, animated: false, viewOffset: 300 };
+              const obj2 = { index: initialScrollIndex, animated: false, viewOffset: -300 };
               current.scrollToIndex(obj2);
             }
           }

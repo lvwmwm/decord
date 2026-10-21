@@ -1,42 +1,42 @@
-// Module ID: 14684
-// Function ID: 14685
+// Module ID: 14758
+// Function ID: 14759
 // Name: UserSettingsPremiumGifting
-// Dependencies: [32, 19, 17, 8618, 7455, 1087, 1394, 21, 4945, 587, 558, 576, 6938, 7475, 1505, 1633, 504, 6329, 12, 7478, 9448, 10425, 8610, 14527, 7457, 7480, 8623, 7038, 7042, 9721, 5631, 14685, 5195, 1128, 14686, 14692, 14694, 14697, 14699, 2622, 14700, 6831, 10844, 7044, 2]
+// Dependencies: [32, 19, 17, 8645, 7483, 1087, 1394, 21, 4966, 587, 558, 576, 6966, 7503, 1505, 1633, 504, 6351, 12, 7506, 9477, 10454, 8637, 14601, 7485, 7508, 8650, 7066, 7070, 9751, 5651, 14759, 5216, 1128, 14760, 14766, 14768, 14771, 14773, 2632, 14774, 6859, 10988, 7072, 2]
 
-// Module 14684 (UserSettingsPremiumGifting)
+// Module 14758 (UserSettingsPremiumGifting)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl9 from "intl" /* 1128 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import _modDef2622 from "module_2622" /* 2622 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import FastImageDefault from "FastImage" /* 5631 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 6329 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6831 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7038 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7042 */;
-import EntitlementActionCreators from "EntitlementActionCreators" /* 7457 */;
-import useStoreConnectionErrorAlertDefault from "useStoreConnectionErrorAlert" /* 7475 */;
-import BillingActionCreatorsDefault from "BillingActionCreators" /* 7480 */;
-import BadgeId from "BadgeId" /* 8610 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8623 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9721 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14685 */;
-import OutboundPromotionCardDefault from "OutboundPromotionCard" /* 14686 */;
-import EntitlementGiftGroupCardDefault from "EntitlementGiftGroupCard" /* 14692 */;
-import PremiumTierCardDefault from "PremiumTierCard" /* 14694 */;
-import GiftPurchaseButtonDefault from "GiftPurchaseButton" /* 14697 */;
-import PremiumUnverifiedWarningDefault from "PremiumUnverifiedWarning" /* 14699 */;
-import UserSettingsGiftingBadgeProgressDefault from "UserSettingsGiftingBadgeProgress" /* 14700 */;
+import _modDef2632 from "module_2632" /* 2632 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import FastImageDefault from "FastImage" /* 5651 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 6351 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6859 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7066 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7070 */;
+import EntitlementActionCreators from "EntitlementActionCreators" /* 7485 */;
+import useStoreConnectionErrorAlertDefault from "useStoreConnectionErrorAlert" /* 7503 */;
+import BillingActionCreatorsDefault from "BillingActionCreators" /* 7508 */;
+import BadgeId from "BadgeId" /* 8637 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8650 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9751 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14759 */;
+import OutboundPromotionCardDefault from "OutboundPromotionCard" /* 14760 */;
+import EntitlementGiftGroupCardDefault from "EntitlementGiftGroupCard" /* 14766 */;
+import PremiumTierCardDefault from "PremiumTierCard" /* 14768 */;
+import GiftPurchaseButtonDefault from "GiftPurchaseButton" /* 14771 */;
+import PremiumUnverifiedWarningDefault from "PremiumUnverifiedWarning" /* 14773 */;
+import UserSettingsGiftingBadgeProgressDefault from "UserSettingsGiftingBadgeProgress" /* 14774 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8618 */;
-import EntitlementStore from "EntitlementStore" /* 7455 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8645 */;
+import EntitlementStore from "EntitlementStore" /* 7483 */;
 import Constants from "Constants" /* 1087 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -58,7 +58,7 @@ let tmp;
 let tmp8;
 let unpackModuleId;
 const _modDef12 = tmp8(12);
-const TableRowGroup = tmp(6938);
+const TableRowGroup = tmp(6966);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ View: hasOwnProperty, ScrollView: metroRequire, StyleSheet } = react_native);
@@ -184,9 +184,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
     }
   }
   react = tmp15;
-  const tmpResult7 = tmp(7478);
+  const tmpResult7 = tmp(7506);
   const isPaymentsBlocked = tmpResult7.useIsPaymentsBlocked();
-  const tmpResult8 = tmp(9448);
+  const tmpResult8 = tmp(9477);
   const outboundPromotions = tmpResult8.useOutboundPromotions();
   const promotionsLoaded = outboundPromotions.promotionsLoaded;
   const activeOutboundPromotions = outboundPromotions.activeOutboundPromotions;
@@ -209,7 +209,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
       }
     }
   }
-  const GiftingBadgeExperiment = tmp(10425).GiftingBadgeExperiment;
+  const GiftingBadgeExperiment = tmp(10454).GiftingBadgeExperiment;
   const enabled = GiftingBadgeExperiment.useConfig(tmp20).enabled;
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     class L {
@@ -243,7 +243,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   const tmp25 = navigation(react.useState(false), 2);
   constants2 = tmp25[0];
   let closure_11 = tmp25[1];
-  const tmpResult10 = tmp(14527);
+  const tmpResult10 = tmp(14601);
   const subscriptionPlansLoaded = tmpResult10.useSubscriptionPlansLoaded();
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
     class L {

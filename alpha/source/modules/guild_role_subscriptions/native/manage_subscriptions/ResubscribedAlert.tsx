@@ -1,21 +1,21 @@
-// Module ID: 16324
-// Function ID: 16325
+// Module ID: 16400
+// Function ID: 16401
 // Name: ResubscribedAlert
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 1128, 5631, 16325, 1202, 5195, 5936, 2]
+// Dependencies: [19, 17, 21, 4966, 587, 558, 576, 1128, 5651, 16401, 1202, 5216, 5958, 2]
 
-// Module 16324 (ResubscribedAlert)
+// Module 16400 (ResubscribedAlert)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import FastImageDefault from "FastImage" /* 5631 */;
-import AlertDefault from "Alert" /* 5936 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16325 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import FastImageDefault from "FastImage" /* 5651 */;
+import AlertDefault from "Alert" /* 5958 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16401 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,27 +1,27 @@
-// Module ID: 18176
-// Function ID: 18177
+// Module ID: 18259
+// Function ID: 18260
 // Name: AppComponents
-// Dependencies: [21, 11882, 1384, 5111, 17714, 18111, 5126, 18130, 13562, 15097, 5872, 18177, 4955, 18184, 18194, 18227, 18236, 18412, 2]
+// Dependencies: [21, 11930, 1384, 5132, 17795, 18198, 5147, 18217, 13629, 15172, 5894, 18260, 4976, 18267, 18277, 18308, 18317, 18491, 2]
 
-// Module 18176 (AppComponents)
-import AccessibilityAnnouncerLiveRegion from "AccessibilityAnnouncerLiveRegion" /* 4955 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5111 */;
-import PortalKeyboard from "PortalKeyboard" /* 5126 */;
-import AlertModal from "AlertModal" /* 5872 */;
-import PortalKeyboardRenderer from "PortalKeyboardRenderer" /* 11882 */;
-import common_NotificationsDefault from "common/Notifications" /* 13562 */;
-import ContextMenuContainer from "ContextMenuContainer" /* 15097 */;
-import MainShared from "MainShared" /* 18111 */;
-import MainViewTooltipActionSheetsV2Default from "MainViewTooltipActionSheetsV2" /* 18130 */;
-import FramePoolDefault from "FramePool" /* 18177 */;
-import ExternalPipViewDefault from "ExternalPipView" /* 18184 */;
-import ActivityPanelContainerDefault from "ActivityPanelContainer" /* 18194 */;
-import FramePanelContainerDefault from "FramePanelContainer" /* 18227 */;
-import VoicePanelContainerDefault from "VoicePanelContainer" /* 18236 */;
-import MediaPlaybackPanelContainerDefault from "MediaPlaybackPanelContainer" /* 18412 */;
+// Module 18259 (AppComponents)
+import AccessibilityAnnouncerLiveRegion from "AccessibilityAnnouncerLiveRegion" /* 4976 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5132 */;
+import PortalKeyboard from "PortalKeyboard" /* 5147 */;
+import AlertModal from "AlertModal" /* 5894 */;
+import PortalKeyboardRenderer from "PortalKeyboardRenderer" /* 11930 */;
+import common_NotificationsDefault from "common/Notifications" /* 13629 */;
+import ContextMenuContainer from "ContextMenuContainer" /* 15172 */;
+import MainShared from "MainShared" /* 18198 */;
+import MainViewTooltipActionSheetsV2Default from "MainViewTooltipActionSheetsV2" /* 18217 */;
+import FramePoolDefault from "FramePool" /* 18260 */;
+import ExternalPipViewDefault from "ExternalPipView" /* 18267 */;
+import ActivityPanelContainerDefault from "ActivityPanelContainer" /* 18277 */;
+import FramePanelContainerDefault from "FramePanelContainer" /* 18308 */;
+import VoicePanelContainerDefault from "VoicePanelContainer" /* 18317 */;
+import MediaPlaybackPanelContainerDefault from "MediaPlaybackPanelContainer" /* 18491 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1384 */;
-import AppFreezer_mod from "AppFreezer" /* 17714 */;
+import AppFreezer_mod from "AppFreezer" /* 17795 */;
 import size from "module_2" /* 2 */;
 
 let Fragment;

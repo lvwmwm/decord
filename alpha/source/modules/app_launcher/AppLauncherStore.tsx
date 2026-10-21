@@ -1,18 +1,18 @@
-// Module ID: 11950
-// Function ID: 11951
+// Module ID: 11998
+// Function ID: 11999
 // Name: AppLauncherStore
-// Dependencies: [10972, 504, 584, 2]
+// Dependencies: [11116, 504, 584, 2]
 
-// Module 11950 (AppLauncherStore)
+// Module 11998 (AppLauncherStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 10972 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11116 */;
 import size from "module_2" /* 2 */;
 
 function handleDismissWithDismissed() {
   let DISMISSED = AppLauncherTypes.AppLauncherCloseReason.DISMISSED;
   if (DISMISSED === undefined) {
-    DISMISSED = tmp(10972).AppLauncherCloseReason.DISMISSED;
+    DISMISSED = tmp(11116).AppLauncherCloseReason.DISMISSED;
   }
   obj.show = false;
   obj.entrypoint = AppLauncherTypes.AppLauncherEntrypoint.NONE;
@@ -23,7 +23,7 @@ function handleDismissWithDismissed() {
 function handleSetActiveCommand() {
   let DISMISSED = AppLauncherTypes.AppLauncherCloseReason.COMMAND;
   if (DISMISSED === undefined) {
-    DISMISSED = tmp(10972).AppLauncherCloseReason.DISMISSED;
+    DISMISSED = tmp(11116).AppLauncherCloseReason.DISMISSED;
   }
   obj.show = false;
   obj.entrypoint = AppLauncherTypes.AppLauncherEntrypoint.NONE;
@@ -31,7 +31,7 @@ function handleSetActiveCommand() {
   obj.initialState = undefined;
   obj.activeChannelId = null;
 }
-const obj = { show: false, entrypoint: AppLauncherTypes.AppLauncherEntrypoint.NONE, lastShownEntrypoint: AppLauncherTypes.AppLauncherEntrypoint.NONE, activeViewType: null, activeChannelId: null, closeReason: AppLauncherTypes.AppLauncherCloseReason.DISMISSED, initialState: "apply" };
+const obj = { show: false, entrypoint: AppLauncherTypes.AppLauncherEntrypoint.NONE, lastShownEntrypoint: AppLauncherTypes.AppLauncherEntrypoint.NONE, activeViewType: null, activeChannelId: null, closeReason: AppLauncherTypes.AppLauncherCloseReason.DISMISSED, initialState: "applicationId" };
 const Store = get_initializedDefault.Store;
 class AppLauncherStore extends Store {
   initialize() {

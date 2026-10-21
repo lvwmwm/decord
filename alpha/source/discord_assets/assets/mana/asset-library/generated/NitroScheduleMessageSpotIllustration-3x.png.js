@@ -1,8 +1,8 @@
-// Module ID: 13874
-// Function ID: 13875
+// Module ID: 13949
+// Function ID: 13950
 // Dependencies: [2]
 
-// Module 13874
+// Module 13949
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroScheduleMessageSpotIllustration-3x.png.js");

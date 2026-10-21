@@ -1,31 +1,31 @@
-// Module ID: 12839
-// Function ID: 12840
+// Module ID: 12907
+// Function ID: 12908
 // Name: FinalizeTraitActionSheet
-// Dependencies: [21, 6319, 3078, 558, 576, 7197, 1128, 5171, 6935, 7247, 6936, 2]
+// Dependencies: [21, 6341, 3088, 558, 576, 7225, 1128, 5192, 6963, 7275, 6964, 2]
 
-// Module 12839 (FinalizeTraitActionSheet)
+// Module 12907 (FinalizeTraitActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import _modDef3078 from "module_3078" /* 3078 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6319 */;
+import _modDef3088 from "module_3088" /* 3088 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6341 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let option;
 
 const jsx = Fragment.jsx;
-let obj = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.AURA, subtitle: _modDef3078.f4BaUg };
+let obj = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.AURA, subtitle: _modDef3088.f4BaUg };
 const items = [obj, , , , , ];
-let obj2 = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.WEARABLE, subtitle: _modDef3078.gpEOaS };
+let obj2 = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.WEARABLE, subtitle: _modDef3088.gpEOaS };
 items[1] = obj2;
-const obj3 = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.SHOES, subtitle: _modDef3078["l/tCAO"] };
+const obj3 = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.SHOES, subtitle: _modDef3088["l/tCAO"] };
 items[2] = obj3;
-items[3] = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.HAT, subtitle: _modDef3078["+oFzYq"] };
-({ option: CheckpointCustomizationUtils.CheckpointCustomizationOption.HAT, subtitle: _modDef3078["+oFzYq"] });
-items[4] = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.OUTFIT, subtitle: _modDef3078.xa55WX };
-({ option: CheckpointCustomizationUtils.CheckpointCustomizationOption.OUTFIT, subtitle: _modDef3078.xa55WX });
-items[5] = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.FACE, subtitle: _modDef3078["1dd6Fx"] };
-({ option: CheckpointCustomizationUtils.CheckpointCustomizationOption.FACE, subtitle: _modDef3078["1dd6Fx"] });
+items[3] = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.HAT, subtitle: _modDef3088["+oFzYq"] };
+({ option: CheckpointCustomizationUtils.CheckpointCustomizationOption.HAT, subtitle: _modDef3088["+oFzYq"] });
+items[4] = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.OUTFIT, subtitle: _modDef3088.xa55WX };
+({ option: CheckpointCustomizationUtils.CheckpointCustomizationOption.OUTFIT, subtitle: _modDef3088.xa55WX });
+items[5] = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.FACE, subtitle: _modDef3088["1dd6Fx"] };
+({ option: CheckpointCustomizationUtils.CheckpointCustomizationOption.FACE, subtitle: _modDef3088["1dd6Fx"] });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTraitActionSheet(arg0) {
   let first;
   let onSelectOption;
@@ -35,9 +35,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTr
   const cResult = obj.c(8);
   ({ selectedOption, onSelectOption } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const BottomSheetTitleHeader = tmp(7197).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(7225).BottomSheetTitleHeader;
     let intl = tmp(1128).intl;
-    const tmp7 = <BottomSheetTitleHeader title={intl.string(_modDef3078.Zl5vPW)} />;
+    const tmp7 = <BottomSheetTitleHeader title={intl.string(_modDef3088.Zl5vPW)} />;
     cResult[0] = tmp7;
     first = tmp7;
   } else {
@@ -45,7 +45,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTr
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const intl2 = tmp(1128).intl;
-    const stringResult = intl2.string(_modDef3078.Zl5vPW);
+    const stringResult = intl2.string(_modDef3088.Zl5vPW);
     cResult[1] = stringResult;
   }
   if (cResult[2] !== onSelectOption) {
@@ -78,7 +78,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTr
     }
     return tmp15;
   }
-  const ActionSheet = tmp(7247).ActionSheet;
+  const ActionSheet = tmp(7275).ActionSheet;
   const tmp16 = <ActionSheet startExpanded header={first}>{null}</ActionSheet>;
   cResult[5] = selectedOption;
   cResult[6] = tmp11;
@@ -89,13 +89,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTr
   let intl2;
   onSelectOption = onSelectOption.onSelectOption;
   const selectedOption = onSelectOption.selectedOption;
-  const ActionSheet = onSelectOption(7247).ActionSheet;
-  let obj2 = { title: intl.string(_modDef3078.Zl5vPW) };
-  const BottomSheetTitleHeader = onSelectOption(7197).BottomSheetTitleHeader;
+  const ActionSheet = onSelectOption(7275).ActionSheet;
+  let obj2 = { title: intl.string(_modDef3088.Zl5vPW) };
+  const BottomSheetTitleHeader = onSelectOption(7225).BottomSheetTitleHeader;
   intl = onSelectOption(1128).intl;
   ({
     hasIcons: false,
-    accessibilityLabel: intl2.string(_modDef3078.Zl5vPW),
+    accessibilityLabel: intl2.string(_modDef3088.Zl5vPW),
     defaultValue: selectedOption,
     onChange(arg0) {
       const obj = ActionSheetActionCreatorsDefault;
@@ -111,7 +111,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTr
       return <TableRadioRow key={option} value={option} label={obj2.getCustomizationOptionName(option)} subLabel={intl.string(subtitle)} />;
     })
   });
-  const TableRadioGroup = onSelectOption(6936).TableRadioGroup;
+  const TableRadioGroup = onSelectOption(6964).TableRadioGroup;
   intl2 = onSelectOption(1128).intl;
   return <ActionSheet startExpanded header={null}>{null}</ActionSheet>;
 });

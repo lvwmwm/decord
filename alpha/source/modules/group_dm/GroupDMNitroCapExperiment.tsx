@@ -1,10 +1,10 @@
-// Module ID: 11195
-// Function ID: 11196
+// Module ID: 11239
+// Function ID: 11240
 // Name: GroupDMNitroCapExperiment
 // Dependencies: [1456, 2]
 // Exports: getGroupDMNitroCapConfig
 
-// Module 11195 (GroupDMNitroCapExperiment)
+// Module 11239 (GroupDMNitroCapExperiment)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1456 */;
 import size from "module_2" /* 2 */;
 

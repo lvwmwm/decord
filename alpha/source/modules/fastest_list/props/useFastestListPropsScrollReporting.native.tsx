@@ -1,15 +1,15 @@
-// Module ID: 7112
-// Function ID: 7113
+// Module ID: 7140
+// Function ID: 7141
 // Name: useFastestListPropsScrollReporting
-// Dependencies: [558, 576, 5014, 2]
+// Dependencies: [558, 576, 5035, 2]
 
-// Module 7112 (useFastestListPropsScrollReporting)
+// Module 7140 (useFastestListPropsScrollReporting)
 import react from "react" /* 576 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ReanimatedRexport = tmp(5014);
+const ReanimatedRexport = tmp(5035);
 const __initData = { code: "function useFastestListPropsScrollReportingNativeTsx1(event){const{scrollPosition,horizontal}=this.__closure;if(scrollPosition!=null){scrollPosition.set(horizontal?event.contentOffset.x:event.contentOffset.y);}}" };
 const __initData2 = { code: "function useFastestListPropsScrollReportingNativeTsx2(event){const{scrollPosition,horizontal}=this.__closure;if(scrollPosition!=null){scrollPosition.set(horizontal?event.contentOffset.x:event.contentOffset.y);}}" };
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFastestListPropsScrollReporting(scrollReporting, horizontal) {

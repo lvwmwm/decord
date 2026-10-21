@@ -1,12 +1,12 @@
-// Module ID: 9589
-// Function ID: 9590
+// Module ID: 9619
+// Function ID: 9620
 // Name: useMessageMaxLength
-// Dependencies: [1392, 1087, 2054, 558, 576, 504, 2]
+// Dependencies: [1392, 1087, 2053, 558, 576, 504, 2]
 // Exports: getMaxMessageLength
 
-// Module 9589 (useMessageMaxLength)
+// Module 9619 (useMessageMaxLength)
 import react from "react" /* 576 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2054 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2053 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

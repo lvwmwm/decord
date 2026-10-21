@@ -1,29 +1,29 @@
-// Module ID: 10082
-// Function ID: 10083
+// Module ID: 10112
+// Function ID: 10113
 // Name: StickersHooks
-// Dependencies: [5, 32, 19, 4822, 4971, 6652, 1392, 6716, 6717, 1087, 558, 576, 504, 10083, 4776, 6445, 8876, 6446, 8314, 1128, 4885, 10065, 7392, 2]
+// Dependencies: [5, 32, 19, 4843, 4992, 6680, 1392, 6744, 6745, 1087, 558, 576, 504, 10113, 4797, 6467, 8903, 6468, 8342, 1128, 4906, 10095, 7420, 2]
 // Exports: useHasSendableSticker, useStickersGrid
 
-// Module 10082 (StickersHooks)
+// Module 10112 (StickersHooks)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
-import UserSettings from "UserSettings" /* 4776 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4885 */;
-import StickersTypes from "StickersTypes" /* 6446 */;
-import StickerSendability from "StickerSendability" /* 7392 */;
-import useManageResourcePermissions from "useManageResourcePermissions" /* 8876 */;
-import FrecencyUserSettingsHooks from "FrecencyUserSettingsHooks" /* 10065 */;
-import StickersActionCreators from "StickersActionCreators" /* 10083 */;
+import UserSettings from "UserSettings" /* 4797 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4906 */;
+import StickersTypes from "StickersTypes" /* 6468 */;
+import StickerSendability from "StickerSendability" /* 7420 */;
+import useManageResourcePermissions from "useManageResourcePermissions" /* 8903 */;
+import FrecencyUserSettingsHooks from "FrecencyUserSettingsHooks" /* 10095 */;
+import StickersActionCreators from "StickersActionCreators" /* 10113 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4822 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4971 */;
-import SortedGuildStore from "SortedGuildStore" /* 6652 */;
+import GuildStore from "GuildStore" /* 4843 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4992 */;
+import SortedGuildStore from "SortedGuildStore" /* 6680 */;
 import UserStore from "UserStore" /* 1392 */;
-import StickersPersistedStore from "StickersPersistedStore" /* 6716 */;
-import StickersStore from "StickersStore" /* 6717 */;
+import StickersPersistedStore from "StickersPersistedStore" /* 6744 */;
+import StickersStore from "StickersStore" /* 6745 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ const require = globalThis.__r;
 let _require, c1, current, dependencyMap, flattenedGuildIds, rowCount, rowIndex, visibleRowIndex;
 
 let tmp;
-const StickersUtils = tmp(6445);
+const StickersUtils = tmp(6467);
 let react = react_mod;
 const Permissions = Constants.Permissions;
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -282,7 +282,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGui
     } else {
       const tmp34 = -1 === findIndexResult && null != guild && canManageAllExpressions;
       if (tmp34) {
-        const obj3 = { type: tmp45(6446).StickerCategoryTypes.EMPTY_GUILD_UPSELL, id: null, name: null, stickers: [] };
+        const obj3 = { type: tmp45(6468).StickerCategoryTypes.EMPTY_GUILD_UPSELL, id: null, name: null, stickers: [] };
         class F {
           constructor() {
             return currentUser.getCurrentUser();
@@ -757,7 +757,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerPa
         if (flag) {
           const tmpResult = StickerSendability;
           const stickerSendability = tmpResult.getStickerSendability(guild_id, stateFromStores, closure_0);
-          flag = stickerSendability !== tmp(7392).StickerSendability.NONSENDABLE;
+          flag = stickerSendability !== tmp(7420).StickerSendability.NONSENDABLE;
         }
         someResult = flag;
       } else {
@@ -889,10 +889,10 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
   [tmp12, _asyncToGenerator] = current(react.useState(false), 2);
   const tmp11 = current(react.useState(false), 2);
   if (cResult[3] !== id) {
-    const tmpResult3 = tmp(6445);
+    const tmpResult3 = tmp(6467);
     let isGuildStickerResult = tmpResult3.isGuildSticker(id);
     if (!isGuildStickerResult) {
-      const tmpResult4 = tmp(6445);
+      const tmpResult4 = tmp(6467);
       isGuildStickerResult = tmpResult4.isStandardSticker(id);
     }
     cResult[3] = id;
@@ -1484,7 +1484,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
   let obj3 = require("StickersUtils");
   let isGuildStickerResult = obj3.isGuildSticker(renderableSticker);
   if (!isGuildStickerResult) {
-    const tmpResult = tmp(6445);
+    const tmpResult = tmp(6467);
     isGuildStickerResult = tmpResult.isStandardSticker(renderableSticker);
   }
   obj4 = { hasFetched: tmp7, isReturnable: isGuildStickerResult, renderableSticker, shouldFetch: first, stickersStoreDefinition: stateFromStores };

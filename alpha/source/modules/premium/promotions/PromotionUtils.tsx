@@ -1,22 +1,22 @@
-// Module ID: 9488
-// Function ID: 9489
+// Module ID: 9518
+// Function ID: 9519
 // Name: PromotionUtils
-// Dependencies: [5, 1246, 9450, 9449, 1394, 1087, 4952, 1297, 1384, 1267, 1405, 4784, 11, 4785, 9486, 2]
+// Dependencies: [5, 1246, 9479, 9478, 1394, 1087, 4973, 1297, 1384, 1267, 1405, 4805, 11, 4806, 9516, 2]
 // Exports: claimOutboundPromotion, getClaimedEndedOutboundPromotions, getClaimedOutboundPromotionCodeMap, getNextUnseenOutboundPromotionId, getOutboundPromotionRedemptionUrl, getPromotionImageURL, isDedicatedSurfacePromotion, isRecurringPromotion, shouldShowOutboundPromotionNotice, shouldShowOutboundPromotionOnPlatform
 
-// Module 9488 (PromotionUtils)
+// Module 9518 (PromotionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
-import dismissible_content from "dismissible_content" /* 4784 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 4785 */;
-import shared from "shared" /* 4952 */;
-import promotions_constants from "promotions/constants" /* 9486 */;
+import dismissible_content from "dismissible_content" /* 4805 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 4806 */;
+import shared from "shared" /* 4973 */;
+import constants from "constants" /* 9516 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import PromotionRecord from "PromotionRecord" /* 9450 */;
-import PromotionsStore from "PromotionsStore" /* 9449 */;
+import PromotionRecord from "PromotionRecord" /* 9479 */;
+import PromotionsStore from "PromotionsStore" /* 9478 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let closure_4, location_stack, name, partner, promotion_id, set;
 let c10;
 let c9;
 let metroImportAll;
-const f102624 = (startDate, startDate2) => {
+const f102919 = (startDate, startDate2) => {
   let num = 1;
   const date = new Date(startDate.startDate);
   const date1 = new Date(startDate2.startDate);
@@ -83,7 +83,7 @@ let obj = function _claimOutboundPromotion() {
               ANDROID = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -196,7 +196,7 @@ export const getNextUnseenOutboundPromotionId = function getNextUnseenOutboundPr
     if (tmp) {
       let hasItem = null != id.partnerId;
       if (hasItem) {
-        const DEDICATED_SURFACE_PARTNER_IDS = promotions_constants.DEDICATED_SURFACE_PARTNER_IDS;
+        const DEDICATED_SURFACE_PARTNER_IDS = constants.DEDICATED_SURFACE_PARTNER_IDS;
         hasItem = DEDICATED_SURFACE_PARTNER_IDS.has(id.partnerId);
       }
       tmp = !hasItem;
@@ -221,7 +221,7 @@ export const getNextUnseenOutboundPromotionId = function getNextUnseenOutboundPr
   }
   let id = null;
   if (0 !== found1.length) {
-    id = found1.sort(f102624)[0].id;
+    id = found1.sort(f102919)[0].id;
   }
   return id;
 };
@@ -237,7 +237,7 @@ export const shouldShowOutboundPromotionNotice = function shouldShowOutboundProm
     if (tmp) {
       let hasItem = null != id.partnerId;
       if (hasItem) {
-        const DEDICATED_SURFACE_PARTNER_IDS = promotions_constants.DEDICATED_SURFACE_PARTNER_IDS;
+        const DEDICATED_SURFACE_PARTNER_IDS = constants.DEDICATED_SURFACE_PARTNER_IDS;
         hasItem = DEDICATED_SURFACE_PARTNER_IDS.has(id.partnerId);
       }
       tmp = !hasItem;
@@ -262,7 +262,7 @@ export const shouldShowOutboundPromotionNotice = function shouldShowOutboundProm
   }
   let id = null;
   if (0 !== found1.length) {
-    id = found1.sort(f102624)[0].id;
+    id = found1.sort(f102919)[0].id;
   }
   let tmp6 = null != id;
   if (tmp6) {
@@ -274,7 +274,7 @@ export const shouldShowOutboundPromotionNotice = function shouldShowOutboundProm
 export const isDedicatedSurfacePromotion = function isDedicatedSurfacePromotion(promotion) {
   let hasItem = null != promotion.partnerId;
   if (hasItem) {
-    const DEDICATED_SURFACE_PARTNER_IDS = promotions_constants.DEDICATED_SURFACE_PARTNER_IDS;
+    const DEDICATED_SURFACE_PARTNER_IDS = constants.DEDICATED_SURFACE_PARTNER_IDS;
     hasItem = DEDICATED_SURFACE_PARTNER_IDS.has(promotion.partnerId);
   }
   return hasItem;
@@ -303,11 +303,11 @@ export const getClaimedEndedOutboundPromotions = function getClaimedEndedOutboun
   return arr.filter((promotion) => {
     promotion = promotion.promotion;
     const hasItem = set.has(promotion.id);
-    let tmp2 = !hasItem && promotion.promotionType !== promotions_constants.PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING;
+    let tmp2 = !hasItem && promotion.promotionType !== constants.PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING;
     if (tmp2) {
       let hasItem1 = null != promotion.partnerId;
       if (hasItem1) {
-        const DEDICATED_SURFACE_PARTNER_IDS = promotions_constants.DEDICATED_SURFACE_PARTNER_IDS;
+        const DEDICATED_SURFACE_PARTNER_IDS = constants.DEDICATED_SURFACE_PARTNER_IDS;
         hasItem1 = DEDICATED_SURFACE_PARTNER_IDS.has(promotion.partnerId);
       }
       tmp2 = !hasItem1;
@@ -325,5 +325,5 @@ export const getClaimedEndedOutboundPromotions = function getClaimedEndedOutboun
   });
 };
 export const isRecurringPromotion = function isRecurringPromotion(promotionType) {
-  return promotionType.promotionType === promotions_constants.PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING;
+  return promotionType.promotionType === constants.PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING;
 };

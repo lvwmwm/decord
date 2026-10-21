@@ -1,11 +1,11 @@
-// Module ID: 16338
-// Function ID: 16339
+// Module ID: 16414
+// Function ID: 16415
 // Name: useTrialIntervalOptions
-// Dependencies: [19, 16311, 1394, 558, 576, 1128, 16337, 2]
+// Dependencies: [19, 16387, 1394, 558, 576, 1128, 16413, 2]
 
-// Module 16338 (useTrialIntervalOptions)
+// Module 16414 (useTrialIntervalOptions)
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16311 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16387 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

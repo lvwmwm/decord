@@ -1,12 +1,12 @@
-// Module ID: 15228
-// Function ID: 15229
+// Module ID: 15300
+// Function ID: 15301
 // Name: WarningCircle
-// Dependencies: [109, 19, 21, 558, 576, 7910, 2]
+// Dependencies: [109, 19, 21, 558, 576, 7938, 2]
 
-// Module 15228 (WarningCircle)
+// Module 15300 (WarningCircle)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 7910 */;
+import inlineStyles from "inlineStyles" /* 7938 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -74,7 +74,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WarningCir
       }
     }
   }
-  const Svg = tmp(7910).Svg;
+  const Svg = tmp(7938).Svg;
   const merged = Object.assign(tmp4);
   const tmp16 = <Svg width={num7} height={num6} viewBox="0 0 20 20">{tmp11}</Svg>;
   cResult[7] = num6;

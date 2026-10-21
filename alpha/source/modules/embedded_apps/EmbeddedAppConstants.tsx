@@ -1,9 +1,9 @@
-// Module ID: 11062
-// Function ID: 11063
+// Module ID: 10717
+// Function ID: 10718
 // Name: EmbeddedAppConstants
 // Dependencies: [2]
 
-// Module 11062 (EmbeddedAppConstants)
+// Module 10717 (EmbeddedAppConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/embedded_apps/EmbeddedAppConstants.tsx");

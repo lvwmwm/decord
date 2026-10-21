@@ -1,21 +1,18 @@
-// Module ID: 13683
-// Function ID: 13684
+// Module ID: 13748
+// Function ID: 13749
 // Name: openAppChannelToChat
-// Dependencies: [13684, 5669, 9644, 2]
+// Dependencies: [5689, 9674, 2]
 // Exports: default
 
-// Module 13683 (openAppChannelToChat)
-import transitionToChannel from "transitionToChannel" /* 5669 */;
-import openChannelSecondaryViewChatDefault from "openChannelSecondaryViewChat" /* 9644 */;
-import preloadChannelAppFrame from "preloadChannelAppFrame" /* 13684 */;
+// Module 13748 (openAppChannelToChat)
+import transitionToChannel from "transitionToChannel" /* 5689 */;
+import openChannelSecondaryViewChatDefault from "openChannelSecondaryViewChat" /* 9674 */;
 import size from "module_2" /* 2 */;
 
-let result = size.fileFinishedImporting("modules/app_channels/native/openAppChannelToChat.tsx");
+const result = size.fileFinishedImporting("modules/app_channels/native/openAppChannelToChat.tsx");
 
 export default function openAppChannelToChat(id) {
-  const obj = preloadChannelAppFrame;
-  const result = obj.cancelChannelAppFramePreload(id.id);
-  const obj2 = transitionToChannel;
-  obj2.transitionToChannel(id.id);
+  const obj = transitionToChannel;
+  obj.transitionToChannel(id.id);
   openChannelSecondaryViewChatDefault(id.guild_id, id.id);
 };

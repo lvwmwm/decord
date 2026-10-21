@@ -1,23 +1,23 @@
-// Module ID: 11649
-// Function ID: 11650
+// Module ID: 11699
+// Function ID: 11700
 // Name: ConjureModelLabels
-// Dependencies: [3820, 1128, 2]
+// Dependencies: [3830, 1128, 2]
 // Exports: modelTierMessage, tierTooltip
 
-// Module 11649 (ConjureModelLabels)
+// Module 11699 (ConjureModelLabels)
 import intl2 from "intl" /* 1128 */;
-import _modDef3820 from "module_3820" /* 3820 */;
+import _modDef3830 from "module_3830" /* 3830 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/model_settings/ConjureModelLabels.tsx");
 
 export const modelTierMessage = function modelTierMessage(value) {
   if ("simple" === value) {
-    return _modDef3820["/tlOR5"];
+    return _modDef3830["/tlOR5"];
   } else if ("balanced" === value) {
-    return _modDef3820.wNhuGQ;
+    return _modDef3830.wNhuGQ;
   } else if ("complex" === value) {
-    return _modDef3820.FxoUwB;
+    return _modDef3830.FxoUwB;
   } else {
     return null;
   }
@@ -27,13 +27,13 @@ export const tierTooltip = function tierTooltip(title, arg1) {
   let obj;
   let prop;
   if ("simple" === arg1) {
-    prop = _modDef3820["/tlOR5"];
+    prop = _modDef3830["/tlOR5"];
   } else if ("balanced" === arg1) {
-    prop = _modDef3820.wNhuGQ;
+    prop = _modDef3830.wNhuGQ;
   } else {
     prop = null;
     if ("complex" === arg1) {
-      prop = _modDef3820.FxoUwB;
+      prop = _modDef3830.FxoUwB;
     }
   }
   if (null != prop) {

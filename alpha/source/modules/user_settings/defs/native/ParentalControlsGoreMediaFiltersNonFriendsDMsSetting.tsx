@@ -1,22 +1,22 @@
-// Module ID: 17057
-// Function ID: 17058
+// Module ID: 17133
+// Function ID: 17134
 // Name: ParentalControlsGoreMediaFiltersNonFriendsDMsSetting
-// Dependencies: [7594, 8280, 558, 576, 15911, 8535, 15915, 15920, 1128, 1211, 11111, 2]
+// Dependencies: [7622, 8308, 558, 576, 15987, 8562, 15991, 15996, 1128, 1211, 11155, 2]
 // Exports: onGoreContentNonFriendsDmOnPress
 
-// Module 17057 (ParentalControlsGoreMediaFiltersNonFriendsDMsSetting)
+// Module 17133 (ParentalControlsGoreMediaFiltersNonFriendsDMsSetting)
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8280 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15911 */;
-import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 15915 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7594 */;
+import SettingsConstants from "SettingsConstants" /* 8308 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15987 */;
+import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 15991 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7622 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11111 */;
+import SettingBuilders from "SettingBuilders" /* 11155 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ExplicitMediaRedactionUtils = tmp(8535);
+const ExplicitMediaRedactionUtils = tmp(8562);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGoreContentNonFriendsDmSettingValue() {
   const obj = react;
@@ -62,7 +62,7 @@ function onGoreContentNonFriendsDmOnPress() {
   let items;
   const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
   if (null != selectedTeenId) {
-    let obj = selectedTeenId(15915);
+    let obj = selectedTeenId(15991);
     const goreContentNonFriendDm = obj.getGoreContentSettingOrDefault(selectedTeenId).goreContentNonFriendDm;
     let obj2 = {
       title: intl.string(selectedTeenId(1128).t["16/3Bi"]),
@@ -75,8 +75,8 @@ function onGoreContentNonFriendsDmOnPress() {
       currentValue: goreContentNonFriendDm,
       excluded: items
     };
-    const handleSensitiveMediaFilterPress = selectedTeenId(15920).handleSensitiveMediaFilterPress;
-    selectedTeenId(15920);
+    const handleSensitiveMediaFilterPress = selectedTeenId(15996).handleSensitiveMediaFilterPress;
+    selectedTeenId(15996);
     intl = selectedTeenId(1128).intl;
     intl2 = selectedTeenId(1128).intl;
     items = [selectedTeenId(1211).ExplicitContentRedaction.SHOW];

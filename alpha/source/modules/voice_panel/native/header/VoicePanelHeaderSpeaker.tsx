@@ -1,28 +1,28 @@
-// Module ID: 18290
-// Function ID: 18291
+// Module ID: 18371
+// Function ID: 18372
 // Name: VoicePanelHeaderSpeaker
-// Dependencies: [109, 19, 17, 18291, 5677, 5695, 18292, 4800, 5678, 1087, 21, 558, 18293, 576, 18238, 9086, 11490, 11449, 573, 14011, 11528, 18297, 1384, 9093, 5696, 1128, 9090, 9092, 18298, 14010, 4970, 4784, 6837, 18223, 15063, 2]
+// Dependencies: [109, 19, 17, 18372, 5697, 5715, 18373, 4821, 5698, 1087, 21, 558, 18374, 576, 18319, 9113, 11540, 11499, 573, 14086, 11578, 18378, 1384, 9120, 5716, 1128, 9117, 9119, 18379, 14085, 4991, 4805, 6865, 18305, 15138, 2]
 
-// Module 18290 (VoicePanelHeaderSpeaker)
+// Module 18371 (VoicePanelHeaderSpeaker)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import dismissible_content from "dismissible_content" /* 4784 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4970 */;
-import NativeViewDefault from "NativeView" /* 6837 */;
-import useOnConnectToConsole from "useOnConnectToConsole" /* 14010 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 14011 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 18223 */;
-import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 18291 */;
-import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 18293 */;
+import dismissible_content from "dismissible_content" /* 4805 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4991 */;
+import NativeViewDefault from "NativeView" /* 6865 */;
+import useOnConnectToConsole from "useOnConnectToConsole" /* 14085 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 14086 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 18305 */;
+import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 18372 */;
+import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 18374 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
-import GameConsoleStore_mod from "GameConsoleStore" /* 5677 */;
-import AudioRouteStore from "AudioRouteStore" /* 5695 */;
-import AudioRouteSwitchingStore from "AudioRouteSwitchingStore" /* 18292 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import SessionsStore from "SessionsStore" /* 5678 */;
+import GameConsoleStore_mod from "GameConsoleStore" /* 5697 */;
+import AudioRouteStore from "AudioRouteStore" /* 5715 */;
+import AudioRouteSwitchingStore from "AudioRouteSwitchingStore" /* 18373 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import SessionsStore from "SessionsStore" /* 5698 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ let closure_15;
 let closure_16;
 let closure_17;
 let tmp;
-const showAudioOutputSelector = tmp(9093);
+const showAudioOutputSelector = tmp(9120);
 let closure_3 = ["ref"];
 let closure_4 = ["ref"];
 let react = react_mod;
@@ -593,8 +593,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       let tmp9;
       let tmp = arg0;
       if (arg0 == null) {
-        tmp = { onPress, ref: "r" };
-        const obj = { onPress, ref: "r" };
+        tmp = { onPress, ref: "Array" };
+        const obj = { onPress, ref: "Array" };
       }
       const obj2 = { targetRef: tmp.ref, canShowTooltip: tmp9 };
       tmp9 = !stateFromStores2;

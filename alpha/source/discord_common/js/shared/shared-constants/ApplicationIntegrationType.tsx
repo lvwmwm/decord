@@ -1,9 +1,9 @@
-// Module ID: 5564
-// Function ID: 5565
+// Module ID: 5585
+// Function ID: 5586
 // Name: ApplicationIntegrationType
 // Dependencies: [2]
 
-// Module 5564 (ApplicationIntegrationType)
+// Module 5585 (ApplicationIntegrationType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationIntegrationType.tsx");

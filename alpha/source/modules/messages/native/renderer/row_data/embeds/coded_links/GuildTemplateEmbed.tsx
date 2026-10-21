@@ -1,20 +1,20 @@
-// Module ID: 14358
-// Function ID: 14359
+// Module ID: 14433
+// Function ID: 14434
 // Name: GuildTemplateEmbed
-// Dependencies: [17, 7516, 7376, 7756, 8223, 1128, 8084, 587, 4952, 12577, 12578, 14359, 2]
+// Dependencies: [17, 7544, 7404, 7784, 8251, 1128, 8112, 587, 4973, 12641, 12642, 14434, 2]
 // Exports: createGuildTemplateEmbed
 
-// Module 14358 (GuildTemplateEmbed)
+// Module 14433 (GuildTemplateEmbed)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
-import shared from "shared" /* 4952 */;
-import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7376 */;
-import Constants from "Constants" /* 7756 */;
-import react_native2 from "react-native" /* 8084 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8223 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14359 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7516 */;
+import shared from "shared" /* 4973 */;
+import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7404 */;
+import Constants from "Constants" /* 7784 */;
+import react_native2 from "react-native" /* 8112 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8251 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14434 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7544 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
@@ -57,9 +57,9 @@ export const createGuildTemplateEmbed = function createGuildTemplateEmbed(code, 
     resolveAssetSource = Image.resolveAssetSource;
     const obj3 = shared;
     if (obj3.isThemeDark(arg1)) {
-      tmpResult = tmp(12577);
+      tmpResult = tmp(12641);
     } else {
-      tmpResult = tmp(12578);
+      tmpResult = tmp(12642);
     }
     return obj;
   } else {

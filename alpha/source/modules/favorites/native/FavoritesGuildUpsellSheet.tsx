@@ -1,17 +1,17 @@
-// Module ID: 10653
-// Function ID: 10654
+// Module ID: 10796
+// Function ID: 10797
 // Name: FavoritesGuildUpsellSheet
-// Dependencies: [19, 4813, 1087, 21, 558, 576, 10651, 10654, 5171, 10652, 1128, 3402, 10655, 5205, 9720, 9721, 10659, 1114, 6647, 10660, 2]
+// Dependencies: [19, 4834, 1087, 21, 558, 576, 10794, 10797, 5192, 10795, 1128, 3412, 10798, 5226, 9750, 9751, 10802, 1114, 6675, 10803, 2]
 
-// Module 10653 (FavoritesGuildUpsellSheet)
+// Module 10796 (FavoritesGuildUpsellSheet)
 import Constants from "Constants" /* 1087 */;
 import router_utils from "router_utils" /* 1114 */;
-import _modDef3402 from "module_3402" /* 3402 */;
-import FavoritesConstants from "FavoritesConstants" /* 4813 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9720 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9721 */;
-import useTrackFavoritesGuildUpsellModalOpenedDefault from "useTrackFavoritesGuildUpsellModalOpened" /* 10654 */;
-import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10659 */;
+import _modDef3412 from "module_3412" /* 3412 */;
+import FavoritesConstants from "FavoritesConstants" /* 4834 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9750 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9751 */;
+import useTrackFavoritesGuildUpsellModalOpenedDefault from "useTrackFavoritesGuildUpsellModalOpened" /* 10797 */;
+import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10802 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -41,9 +41,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
   const cResult = obj.c(14);
   let FREE_FAVORITE_LIMIT = limit.limit;
   if (undefined === FREE_FAVORITE_LIMIT) {
-    FREE_FAVORITE_LIMIT = tmp(10651).FREE_FAVORITE_LIMIT;
+    FREE_FAVORITE_LIMIT = tmp(10794).FREE_FAVORITE_LIMIT;
   }
-  analyticsLocations = first(10654)().analyticsLocations;
+  analyticsLocations = first(10797)().analyticsLocations;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function s() {
       const obj = first(dependencyMap[8]);
@@ -56,7 +56,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
-    const stringResult = intl.string(first(3402).hINqUs);
+    const stringResult = intl.string(first(3412).hINqUs);
     cResult[1] = stringResult;
     tmp6 = stringResult;
   } else {
@@ -65,7 +65,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
   if (cResult[2] !== FREE_FAVORITE_LIMIT) {
     const intl2 = tmp(1128).intl;
     let obj2 = { count: FREE_FAVORITE_LIMIT, maxCount: MAX_FAVORITE_CHANNELS };
-    const formatToPlainStringResult = intl2.formatToPlainString(first(3402).D7S0Zo, obj2);
+    const formatToPlainStringResult = intl2.formatToPlainString(first(3412).D7S0Zo, obj2);
     cResult[2] = FREE_FAVORITE_LIMIT;
     cResult[3] = formatToPlainStringResult;
     tmp8 = formatToPlainStringResult;
@@ -73,7 +73,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
     tmp8 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp13 = closure_6(analyticsLocations(10655).FavoritesSpotIllustration, {});
+    const tmp13 = closure_6(analyticsLocations(10798).FavoritesSpotIllustration, {});
     cResult[4] = tmp13;
     tmp11 = tmp13;
   } else {
@@ -99,7 +99,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
           tmp2(obj);
         }
     };
-    const tmp18 = closure_6(analyticsLocations(5205).Button, obj3);
+    const tmp18 = closure_6(analyticsLocations(5226).Button, obj3);
     cResult[6] = analyticsLocations;
     cResult[7] = tmp18;
     tmp16 = tmp18;
@@ -110,7 +110,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
     const obj4 = {
       size: "lg",
       variant: "secondary",
-      text: intl4.string(first(3402).PprSsy),
+      text: intl4.string(first(3412).PprSsy),
       onPress() {
           first();
           const obj = FavoritesGuildAnalytics;
@@ -119,7 +119,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
           obj2.transitionToGuild(FAVORITES);
         }
     };
-    const Button = tmp(5205).Button;
+    const Button = tmp(5226).Button;
     intl4 = tmp(1128).intl;
     const tmp21 = closure_6(Button, obj4);
     cResult[8] = tmp21;
@@ -130,7 +130,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
   if (cResult[9] !== tmp16) {
     const obj5 = { children: items };
     items = [tmp16, tmp19];
-    const tmp24 = closure_7(analyticsLocations(6647).ButtonGroup, obj5);
+    const tmp24 = closure_7(analyticsLocations(6675).ButtonGroup, obj5);
     cResult[9] = tmp16;
     cResult[10] = tmp24;
     tmp22 = tmp24;
@@ -144,7 +144,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
     }
     return tmp25;
   }
-  const tmp26 = closure_6(analyticsLocations(10660).PromoSheet, { title: tmp6, description: tmp8, illustration: tmp11, actions: tmp22 });
+  const tmp26 = closure_6(analyticsLocations(10803).PromoSheet, { title: tmp6, description: tmp8, illustration: tmp11, actions: tmp22 });
   cResult[11] = tmp8;
   cResult[12] = tmp22;
   cResult[13] = tmp26;
@@ -163,20 +163,20 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
   let FREE_FAVORITE_LIMIT = limit.limit;
   if (FREE_FAVORITE_LIMIT === undefined) {
     let tmp2 = dependencyMap;
-    FREE_FAVORITE_LIMIT = analyticsLocations(10651).FREE_FAVORITE_LIMIT;
+    FREE_FAVORITE_LIMIT = analyticsLocations(10794).FREE_FAVORITE_LIMIT;
   }
   analyticsLocations = useTrackFavoritesGuildUpsellModalOpenedDefault().analyticsLocations;
   importDefault = react.useCallback(() => {
     const obj = closure_1(dependencyMap[8]);
     obj.hideActionSheet(analyticsLocations(dependencyMap[9]).FAVORITES_UPSELL_SHEET_KEY);
   }, []);
-  let obj = { title: intl.string(_modDef3402.hINqUs), description: intl2.formatToPlainString(_modDef3402.D7S0Zo, obj2), illustration: closure_6(analyticsLocations(10655).FavoritesSpotIllustration, {}), actions: closure_7(ButtonGroup, obj3) };
-  const PromoSheet = analyticsLocations(10660).PromoSheet;
+  let obj = { title: intl.string(_modDef3412.hINqUs), description: intl2.formatToPlainString(_modDef3412.D7S0Zo, obj2), illustration: closure_6(analyticsLocations(10798).FavoritesSpotIllustration, {}), actions: closure_7(ButtonGroup, obj3) };
+  const PromoSheet = analyticsLocations(10803).PromoSheet;
   intl = analyticsLocations(1128).intl;
   intl2 = analyticsLocations(1128).intl;
   obj2 = { count: FREE_FAVORITE_LIMIT, maxCount: MAX_FAVORITE_CHANNELS };
   obj3 = { children: items };
-  ButtonGroup = analyticsLocations(6647).ButtonGroup;
+  ButtonGroup = analyticsLocations(6675).ButtonGroup;
   const obj4 = {
     size: "lg",
     variant: "primary",
@@ -188,13 +188,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
       tmp2(obj);
     }
   };
-  const Button = analyticsLocations(5205).Button;
+  const Button = analyticsLocations(5226).Button;
   intl3 = analyticsLocations(1128).intl;
   items = [closure_6(Button, obj4), ];
   const obj5 = {
     size: "lg",
     variant: "secondary",
-    text: intl4.string(_modDef3402.PprSsy),
+    text: intl4.string(_modDef3412.PprSsy),
     onPress() {
       closure_1();
       const obj = FavoritesGuildAnalytics;
@@ -203,7 +203,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
       obj2.transitionToGuild(FAVORITES);
     }
   };
-  const Button2 = analyticsLocations(5205).Button;
+  const Button2 = analyticsLocations(5226).Button;
   intl4 = analyticsLocations(1128).intl;
   items[1] = closure_6(Button2, obj5);
   return closure_6(PromoSheet, obj);

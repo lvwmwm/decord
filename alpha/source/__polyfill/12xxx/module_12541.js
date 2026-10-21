@@ -1,68 +1,39 @@
 // Module ID: 12541
 // Function ID: 12542
-// Dependencies: [12429, 12426, 12539]
-// Exports: callFrameToStackFrame, watchdogTimer
+// Dependencies: [12507, 12479, 12506]
+// Exports: initAndBind, setCurrentClient
 
 // Module 12541
-import _mod12426 from "module_12426" /* 12426 */;
-import _mod12429 from "module_12429" /* 12429 */;
-import _mod12539 from "module_12539" /* 12539 */;
-
-let navigation;
+import _mod12479 from "module_12479" /* 12479 */;
+import _mod12506 from "module_12506" /* 12506 */;
+import _mod12507 from "module_12507" /* 12507 */;
 
 
-export const callFrameToStackFrame = function callFrameToStackFrame(location, str, fn) {
-  let filenameIsInAppResult;
-  let replaced;
-  if (str) {
-    replaced = str.replace(/^file:\/\//, "");
+export const initAndBind = function initAndBind(arg0, debug) {
+  if (true === debug.debug) {
+    const DEBUG_BUILD = _mod12507.DEBUG_BUILD;
+    const obj = _mod12479;
+    if (DEBUG_BUILD) {
+      const logger = obj.logger;
+      logger.enable();
+    } else {
+      obj.consoleSandbox(() => {
+        console.warn("[Sentry] Cannot initialize SDK with `debug` option using a non-debug bundle.");
+      });
+    }
   }
-  let sum;
-  if (location.location.columnNumber) {
-    sum = location.location.columnNumber + 1;
-  }
-  let sum1;
-  if (location.location.lineNumber) {
-    sum1 = location.location.lineNumber + 1;
-  }
-  const tmp6 = _mod12429;
-  const dropUndefinedKeys = tmp6.dropUndefinedKeys;
-  const obj = { filename: replaced, module: fn(replaced), function: location.functionName || _mod12426.UNKNOWN_FUNCTION, colno: sum, lineno: sum1, in_app: filenameIsInAppResult };
-  filenameIsInAppResult = undefined;
-  location.functionName || _mod12426.UNKNOWN_FUNCTION;
-  if (replaced) {
-    const tmp4Result = _mod12539;
-    filenameIsInAppResult = tmp4Result.filenameIsInApp(replaced);
-  }
-  return dropUndefinedKeys(obj);
+  const obj2 = _mod12506;
+  const currentScope = obj2.getCurrentScope();
+  currentScope.update(debug.initialScope);
+  const obj4 = new arg0(debug);
+  const obj5 = _mod12506;
+  const currentScope1 = obj5.getCurrentScope();
+  currentScope1.setClient(obj4);
+  obj4.init();
+  return obj4;
 };
-export const watchdogTimer = function watchdogTimer(fn, arg1, arg2, arg3) {
-  let closure_0 = arg1;
-  let closure_1 = arg2;
-  let closure_2 = arg3;
-  navigation = fn();
-  let c4 = false;
-  let c5 = true;
-  const timerId = setInterval(() => {
-    const timeMs = navigation.getTimeMs();
-    const tmp2 = false === c4 && timeMs > closure_0 + closure_1;
-    if (tmp2) {
-      c4 = true;
-      const tmp5 = c5;
-      if (tmp5) {
-        closure_2();
-      }
-    }
-    if (timeMs < closure_0 + closure_1) {
-      c4 = false;
-    }
-  }, 20);
-  return {
-    poll() {
-      navigation.reset();
-    },
-    enabled(arg0) {
-      c5 = arg0;
-    }
-  };
+export const setCurrentClient = function setCurrentClient(arg0) {
+  const obj = _mod12506;
+  const currentScope = obj.getCurrentScope();
+  currentScope.setClient(arg0);
 };

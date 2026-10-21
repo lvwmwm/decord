@@ -1,17 +1,17 @@
-// Module ID: 14207
-// Function ID: 14208
+// Module ID: 14282
+// Function ID: 14283
 // Name: UserProfileWidgetReportButton
-// Dependencies: [109, 19, 17, 21, 558, 576, 1128, 9899, 14208, 9571, 587, 9689, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 1128, 9929, 14283, 9601, 587, 9719, 2]
 
-// Module 14207 (UserProfileWidgetReportButton)
+// Module 14282 (UserProfileWidgetReportButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import MoreHorizontalIcon2 from "MoreHorizontalIcon" /* 9571 */;
-import ContextMenu from "ContextMenu" /* 9689 */;
-import FlagIcon from "FlagIcon" /* 9899 */;
-import showReportModalForUserWidget from "showReportModalForUserWidget" /* 14208 */;
+import MoreHorizontalIcon2 from "MoreHorizontalIcon" /* 9601 */;
+import ContextMenu from "ContextMenu" /* 9719 */;
+import FlagIcon from "FlagIcon" /* 9929 */;
+import showReportModalForUserWidget from "showReportModalForUserWidget" /* 14283 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -61,7 +61,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
       tmp7 = cResult[4];
     }
     if (cResult[5] !== tmp6) {
-      const tmp10 = jsx(userId(9689).ContextMenu, { items: tmp6, children: tmp7 });
+      const tmp10 = jsx(userId(9719).ContextMenu, { items: tmp6, children: tmp7 });
       cResult[5] = tmp6;
       cResult[6] = tmp10;
       tmp8 = tmp10;
@@ -70,12 +70,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     }
     return tmp8;
   }
-  const items = [{ label: first, variant: "destructive", IconComponent: userId(9899).FlagIcon, action }];
+  const items = [{ label: first, variant: "destructive", IconComponent: userId(9929).FlagIcon, action }];
   cResult[1] = userId;
   cResult[2] = widget;
   cResult[3] = items;
   tmp6 = items;
-  ({ label: first, variant: "destructive", IconComponent: userId(9899).FlagIcon, action });
+  ({ label: first, variant: "destructive", IconComponent: userId(9929).FlagIcon, action });
 }) : (function UserProfileWidgetReportButton(arg0) {
   let hitSlop;
   let intl;

@@ -1,16 +1,16 @@
-// Module ID: 11186
-// Function ID: 11187
+// Module ID: 11230
+// Function ID: 11231
 // Name: SuspiciousDownloadActionSheet
-// Dependencies: [19, 21, 4945, 587, 558, 576, 5171, 5617, 1633, 6942, 1128, 5195, 5935, 5205, 5226, 2]
+// Dependencies: [19, 21, 4966, 587, 558, 576, 5192, 5638, 1633, 6970, 1128, 5216, 5957, 5226, 5247, 2]
 
-// Module 11186 (SuspiciousDownloadActionSheet)
+// Module 11230 (SuspiciousDownloadActionSheet)
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import openURLDefault from "openURL" /* 5617 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
+import openURLDefault from "openURL" /* 5638 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuspiciousDo
     }
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp11 = closure_3(href(6942).TrafficConeSpotIllustration, {});
+      const tmp11 = closure_3(href(6970).TrafficConeSpotIllustration, {});
       cResult[7] = tmp11;
       tmp9 = tmp11;
     } else {
@@ -86,7 +86,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuspiciousDo
     }
     if (cResult[9] !== tmp4.title) {
       const obj3 = { style: title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp12 };
-      const tmp16 = closure_3(href(5195).Text, obj3);
+      const tmp16 = closure_3(href(5216).Text, obj3);
       cResult[9] = tmp4.title;
       cResult[10] = tmp16;
       tmp14 = tmp16;
@@ -105,7 +105,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuspiciousDo
     }
     if (cResult[12] !== tmp4.body) {
       const obj4 = { style: body, variant: "text-md/medium", children: tmp17 };
-      const tmp21 = closure_3(href(5195).Text, obj4);
+      const tmp21 = closure_3(href(5216).Text, obj4);
       cResult[12] = tmp4.body;
       cResult[13] = tmp21;
       tmp19 = tmp21;
@@ -129,7 +129,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuspiciousDo
                   return obj.hideActionSheet();
                 }
         };
-        const Button = tmp(5205).Button;
+        const Button = tmp(5226).Button;
         intl3 = tmp(1128).intl;
         const tmp27 = closure_3(Button, obj5);
         cResult[17] = tmp27;
@@ -149,9 +149,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuspiciousDo
       if (cResult[19] !== tmp5) {
         const obj6 = { spacing: 8, children: items };
         items = [tmp25, ];
-        const Stack = tmp(5935).Stack;
+        const Stack = tmp(5957).Stack;
         const obj7 = { text: tmp28, onPress: tmp5, variant: "secondary" };
-        items[1] = closure_3(href(5205).Button, obj7);
+        items[1] = closure_3(href(5226).Button, obj7);
         const tmp33 = closure_4(Stack, obj6);
         cResult[19] = tmp5;
         cResult[20] = tmp33;
@@ -168,8 +168,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuspiciousDo
           return tmp34;
         }
       }
-      const obj8 = { startExpanded: true, children: closure_4(href(5935).Stack, obj9) };
-      BottomSheet = tmp(5226).BottomSheet;
+      const obj8 = { startExpanded: true, children: closure_4(href(5957).Stack, obj9) };
+      BottomSheet = tmp(5247).BottomSheet;
       obj9 = { spacing: 16, justify: "center", align: "center", style: tmp7, children: items1 };
       items1 = [tmp22, tmp30];
       const tmp37 = closure_3(BottomSheet, obj8);
@@ -181,7 +181,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuspiciousDo
     }
     const obj10 = { spacing: 8, justify: "center", align: "center", children: items2 };
     items2 = [tmp9, tmp14, tmp19];
-    const tmp24 = closure_4(href(5935).Stack, obj10);
+    const tmp24 = closure_4(href(5957).Stack, obj10);
     cResult[14] = tmp19;
     cResult[15] = tmp14;
     cResult[16] = tmp24;
@@ -207,24 +207,24 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuspiciousDo
   const tmp = closure_5();
   const bottom = useSafeAreaInsetsDefault().bottom;
   let obj = { startExpanded: true, children: closure_4(Stack, obj2) };
-  BottomSheet = href(5226).BottomSheet;
+  BottomSheet = href(5247).BottomSheet;
   obj2 = { spacing: 16, justify: "center", align: "center", style: items, children: items2 };
   items = [tmp.container, { paddingBottom: bottom }];
-  Stack = href(5935).Stack;
+  Stack = href(5957).Stack;
   const obj3 = { spacing: 8, justify: "center", align: "center", children: items1 };
-  const Stack2 = href(5935).Stack;
-  items1 = [closure_3(href(6942).TrafficConeSpotIllustration, {}), , ];
+  const Stack2 = href(5957).Stack;
+  items1 = [closure_3(href(6970).TrafficConeSpotIllustration, {}), , ];
   const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl.string(href(1128).t.XtDo9Z) };
-  const Text = href(5195).Text;
+  const Text = href(5216).Text;
   intl = href(1128).intl;
   items1[1] = closure_3(Text, obj4);
   const obj5 = { style: tmp.body, variant: "text-md/medium", children: intl2.string(href(1128).t.L9yFko) };
-  const Text2 = href(5195).Text;
+  const Text2 = href(5216).Text;
   intl2 = href(1128).intl;
   items1[2] = closure_3(Text2, obj5);
   items2 = [closure_4(Stack2, obj3), ];
   const obj6 = { spacing: 8, children: items3 };
-  const Stack3 = href(5935).Stack;
+  const Stack3 = href(5957).Stack;
   const obj7 = {
     text: intl3.string(href(1128).t.j7Vi2i),
     onPress() {
@@ -232,7 +232,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuspiciousDo
       return obj.hideActionSheet();
     }
   };
-  const Button = href(5205).Button;
+  const Button = href(5226).Button;
   intl3 = href(1128).intl;
   items3 = [closure_3(Button, obj7), ];
   const obj8 = {
@@ -244,7 +244,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuspiciousDo
     },
     variant: "secondary"
   };
-  const Button2 = href(5205).Button;
+  const Button2 = href(5226).Button;
   intl4 = href(1128).intl;
   items3[1] = closure_3(Button2, obj8);
   items2[1] = closure_4(Stack3, obj6);

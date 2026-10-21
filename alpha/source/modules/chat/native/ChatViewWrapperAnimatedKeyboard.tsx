@@ -1,19 +1,19 @@
-// Module ID: 10718
-// Function ID: 10719
+// Module ID: 10862
+// Function ID: 10863
 // Name: ChatViewWrapperAnimatedKeyboard
-// Dependencies: [19, 17, 21, 5014, 5170, 558, 10719, 5167, 576, 5557, 10724, 10726, 5558, 10727, 2]
+// Dependencies: [19, 17, 21, 5035, 5191, 558, 10863, 5188, 576, 5578, 10868, 10870, 5579, 10871, 2]
 
-// Module 10718 (ChatViewWrapperAnimatedKeyboard)
+// Module 10862 (ChatViewWrapperAnimatedKeyboard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
-import timing from "timing" /* 5167 */;
-import timingPresets from "timingPresets" /* 5170 */;
-import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5557 */;
-import LayerScope2 from "LayerScope" /* 5558 */;
-import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 10724 */;
-import useChatViewPointerEventsDefault from "useChatViewPointerEvents" /* 10726 */;
-import StickyWrapper2 from "StickyWrapper" /* 10727 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
+import timing from "timing" /* 5188 */;
+import timingPresets from "timingPresets" /* 5191 */;
+import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5578 */;
+import LayerScope2 from "LayerScope" /* 5579 */;
+import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 10868 */;
+import useChatViewPointerEventsDefault from "useChatViewPointerEvents" /* 10870 */;
+import StickyWrapper2 from "StickyWrapper" /* 10871 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -23,7 +23,7 @@ let bezierResult;
 let hasOwnProperty;
 let metroRequire;
 let tmp4;
-const ReanimatedRexportDefault = tmp4(5014);
+const ReanimatedRexportDefault = tmp4(5035);
 let View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 const Easing = ReanimatedRexport.Easing;
@@ -246,7 +246,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatViewWrap
           }
         }
         const obj3 = { children: hasOwnProperty(StickyWrapper2.StickyWrapper, obj4) };
-        const LayerScope = tmp(5558).LayerScope;
+        const LayerScope = tmp(5579).LayerScope;
         obj4 = { header: stickyHeader, style, pointerEvents: tmp5, children: tmp13 };
         const tmp18 = hasOwnProperty(LayerScope, obj3);
         cResult[9] = tmp5;

@@ -1,23 +1,23 @@
-// Module ID: 18066
-// Function ID: 18067
+// Module ID: 18147
+// Function ID: 18148
 // Name: SearchNavigator
-// Dependencies: [19, 17, 9641, 17830, 1087, 21, 4945, 587, 9671, 558, 576, 7046, 13059, 1633, 18067, 9627, 18061, 18062, 9683, 1385, 9704, 9682, 2]
+// Dependencies: [19, 17, 9671, 17911, 1087, 21, 4966, 587, 9701, 558, 576, 7074, 13127, 1633, 18148, 9657, 18142, 18143, 9713, 1385, 9734, 9712, 2]
 
-// Module 18066 (SearchNavigator)
+// Module 18147 (SearchNavigator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import TrackingConstants from "TrackingConstants" /* 9641 */;
-import ConversationNavigatorHeader from "ConversationNavigatorHeader" /* 9683 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13059 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 17830 */;
-import SearchNavigatorPreviewHeaderDefault from "SearchNavigatorPreviewHeader" /* 18061 */;
+import TrackingConstants from "TrackingConstants" /* 9671 */;
+import ConversationNavigatorHeader from "ConversationNavigatorHeader" /* 9713 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13127 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 17911 */;
+import SearchNavigatorPreviewHeaderDefault from "SearchNavigatorPreviewHeader" /* 18142 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
-import NativeStackView from "NativeStackView" /* 9671 */;
+import createStyles from "createStyles" /* 4966 */;
+import NativeStackView from "NativeStackView" /* 9701 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let obj = searchContext(576);
   const cResult = obj.c(30);
   searchContext = route.route.params.searchContext;
-  let obj2 = searchContext(7046);
+  let obj2 = searchContext(7074);
   const accessibilityNativeStackOptions = obj2.useAccessibilityNativeStackOptions();
   if (cResult[0] !== searchContext) {
     const fn = function v() {
@@ -245,7 +245,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           }
         }
         const Screen = closure_11.Screen;
-        const obj8 = { name: tmp(9682).ConversationNavigatorScreens.FOCUS, options: tmp28, getComponent: tmp29 };
+        const obj8 = { name: tmp(9712).ConversationNavigatorScreens.FOCUS, options: tmp28, getComponent: tmp29 };
         cResult[21] = tmp28;
         cResult[22] = closure_8(Screen, obj8);
         const tmp31 = closure_8(Screen, obj8);
@@ -288,7 +288,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let obj3;
   let obj4;
   const searchContext = route.route.params.searchContext;
-  let obj = searchContext(7046);
+  let obj = searchContext(7074);
   const accessibilityNativeStackOptions = obj.useAccessibilityNativeStackOptions();
   const items = [searchContext];
   const effect = react.useEffect(() => {
@@ -350,7 +350,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   };
   items2[1] = closure_8(closure_11.Screen, obj6);
   const obj7 = {
-    name: searchContext(9682).ConversationNavigatorScreens.FOCUS,
+    name: searchContext(9712).ConversationNavigatorScreens.FOCUS,
     options(arg0) {
       let route;
       ({ route, navigation } = arg0);

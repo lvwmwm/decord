@@ -1,10 +1,10 @@
-// Module ID: 12884
-// Function ID: 12885
+// Module ID: 12952
+// Function ID: 12953
 // Name: CustomTypingIndicatorAnalytics
 // Dependencies: [1400, 2]
 // Exports: getTypingIndicatorStyleAnalytics
 
-// Module 12884 (CustomTypingIndicatorAnalytics)
+// Module 12952 (CustomTypingIndicatorAnalytics)
 import user from "user" /* 1400 */;
 import size from "module_2" /* 2 */;
 

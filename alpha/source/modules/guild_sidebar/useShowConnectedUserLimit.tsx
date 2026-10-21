@@ -1,12 +1,12 @@
-// Module ID: 12994
-// Function ID: 12995
+// Module ID: 13062
+// Function ID: 13063
 // Name: useShowConnectedUserLimit
-// Dependencies: [1087, 558, 9089, 576, 2]
+// Dependencies: [1087, 558, 9116, 576, 2]
 
-// Module 12994 (useShowConnectedUserLimit)
+// Module 13062 (useShowConnectedUserLimit)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import useChannelVideoLimitDefault from "useChannelVideoLimit" /* 9089 */;
+import useChannelVideoLimitDefault from "useChannelVideoLimit" /* 9116 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

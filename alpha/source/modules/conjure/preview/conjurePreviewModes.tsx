@@ -1,11 +1,11 @@
-// Module ID: 11731
-// Function ID: 11732
+// Module ID: 11776
+// Function ID: 11777
 // Name: conjurePreviewModes
-// Dependencies: [11032, 6725, 11732, 2]
+// Dependencies: [10687, 6753, 11777, 2]
 // Exports: permissionReviewBlocksMode, previewCapabilitiesFromSurfaces, previewModeAvailability, profileSurfaceAvailability, profileWidgetState, requiresPermissionReview, resolvePreviewMode, showsFramePreview
 
-// Module 11731 (conjurePreviewModes)
-import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 11032 */;
+// Module 11776 (conjurePreviewModes)
+import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 10687 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -40,10 +40,10 @@ export const previewCapabilitiesFromSurfaces = function previewCapabilitiesFromS
       obj = { hasFrame: obj2.declaresPreviewFrame(previewSupportedSurfaces), hasProfileWidget: widgetResolvable, hasBotDm: botDmResolvable };
       obj2 = conjurePreviewFrameSurfaces;
       if (widgetResolvable) {
-        widgetResolvable = previewSupportedSurfaces.includes(tmp3(6725).ConjureSupportedSurface.PROFILE_WIDGET);
+        widgetResolvable = previewSupportedSurfaces.includes(tmp3(6753).ConjureSupportedSurface.PROFILE_WIDGET);
       }
       if (botDmResolvable) {
-        const hasItem = previewSupportedSurfaces.includes(tmp3(6725).ConjureSupportedSurface.BOT) || previewSupportedSurfaces.includes(tmp3(6725).ConjureSupportedSurface.APPLICATION_COMMANDS);
+        const hasItem = previewSupportedSurfaces.includes(tmp3(6753).ConjureSupportedSurface.BOT) || previewSupportedSurfaces.includes(tmp3(6753).ConjureSupportedSurface.APPLICATION_COMMANDS);
         botDmResolvable = hasItem;
       }
       tmp = obj;

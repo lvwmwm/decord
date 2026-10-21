@@ -1,17 +1,17 @@
-// Module ID: 7397
-// Function ID: 7398
+// Module ID: 7425
+// Function ID: 7426
 // Name: GuildDiscoveryUtils
-// Dependencies: [5, 4881, 5155, 4822, 1087, 1114, 7398, 7296, 6781, 1267, 1297, 1493, 2]
+// Dependencies: [5, 4902, 5176, 4843, 1087, 1114, 7426, 7324, 6809, 1267, 1297, 1493, 2]
 // Exports: fetchPublicDiscoveryGuild, getDiscoverableGuild, startLurking, trackDiscoveryExited, trackGuildDiscoveryGetFeaturedGuildsFailed, trackGuildDiscoverySearchStart, trackGuildJoinClicked, trackSearchClosed, trackSearchFailed, trackSearchResultsViewed, trackSearchStarted
 
-// Module 7397 (GuildDiscoveryUtils)
+// Module 7425 (GuildDiscoveryUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _modDef1493 from "module_1493" /* 1493 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LurkingStore from "LurkingStore" /* 4881 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5155 */;
-import GuildStore from "GuildStore" /* 4822 */;
+import LurkingStore from "LurkingStore" /* 4902 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5176 */;
+import GuildStore from "GuildStore" /* 4843 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -162,7 +162,7 @@ let obj = function _startLurking() {
       if (closure_2 === undefined) {
         obj4 = {};
       }
-      return "test";
+      return "Reflect";
     })();
     iter.next();
     return iter;

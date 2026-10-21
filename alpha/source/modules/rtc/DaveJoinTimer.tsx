@@ -1,10 +1,10 @@
-// Module ID: 5777
-// Function ID: 5778
+// Module ID: 5797
+// Function ID: 5798
 // Name: DaveJoinTimer
-// Dependencies: [5684, 2]
+// Dependencies: [5704, 2]
 
-// Module 5777 (DaveJoinTimer)
-import TimeUtils from "TimeUtils" /* 5684 */;
+// Module 5797 (DaveJoinTimer)
+import TimeUtils from "TimeUtils" /* 5704 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/rtc/DaveJoinTimer.tsx");
@@ -63,9 +63,9 @@ class DaveJoinTimer {
       }
     }
   }
-  executed(transition_id, flag) {
+  executed(_secureFramesLastExecutedTransitionId, flag) {
     const self = this;
-    const tmp = transition_id !== this.joinTransitionId || self.joinIsGroupCreation || flag;
+    const tmp = _secureFramesLastExecutedTransitionId !== this.joinTransitionId || self.joinIsGroupCreation || flag;
     if (!tmp) {
       const timestampProducer = self.timestampProducer;
       self.joinedTime = timestampProducer.now();

@@ -1,24 +1,24 @@
-// Module ID: 19039
-// Function ID: 19040
+// Module ID: 19116
+// Function ID: 19117
 // Name: GuildRoleSubscriptionEmojiEditorModal
-// Dependencies: [5, 32, 19, 17, 4900, 21, 4945, 587, 558, 576, 19030, 504, 5866, 1128, 5936, 5631, 1417, 8883, 19025, 5195, 19036, 2]
+// Dependencies: [5, 32, 19, 17, 4921, 21, 4966, 587, 558, 576, 19107, 504, 5888, 1128, 5958, 5651, 1417, 8910, 19102, 5216, 19113, 2]
 
-// Module 19039 (GuildRoleSubscriptionEmojiEditorModal)
+// Module 19116 (GuildRoleSubscriptionEmojiEditorModal)
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import FastImageDefault from "FastImage" /* 5631 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5866 */;
-import AlertDefault from "Alert" /* 5936 */;
-import EmojiAliasDefault from "EmojiAlias" /* 19025 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import FastImageDefault from "FastImage" /* 5651 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5888 */;
+import AlertDefault from "Alert" /* 5958 */;
+import EmojiAliasDefault from "EmojiAlias" /* 19102 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SubscriptionRoleStore from "SubscriptionRoleStore" /* 4900 */;
+import SubscriptionRoleStore from "SubscriptionRoleStore" /* 4921 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

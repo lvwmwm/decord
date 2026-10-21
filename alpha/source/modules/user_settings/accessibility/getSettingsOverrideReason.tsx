@@ -1,14 +1,14 @@
-// Module ID: 16438
-// Function ID: 16439
+// Module ID: 16514
+// Function ID: 16515
 // Name: getSettingsOverrideReason
-// Dependencies: [4777, 1097, 1128, 4002, 558, 576, 504, 2]
+// Dependencies: [4798, 1097, 1128, 4023, 558, 576, 504, 2]
 // Exports: default
 
-// Module 16438 (getSettingsOverrideReason)
+// Module 16514 (getSettingsOverrideReason)
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import intl4 from "intl" /* 1128 */;
-import _modDef4002 from "module_4002" /* 4002 */;
-import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 4777 */;
+import _modDef4023 from "module_4023" /* 4023 */;
+import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 4798 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSetting
         formatResult = intl.string(intl4.t["2ExvRu"]);
       } else if (constants.GAME_MODE === appliedOverrideReasonKey) {
         const intl3 = intl4.intl;
-        formatResult = intl3.string(_modDef4002.VGcdxP);
+        formatResult = intl3.string(_modDef4023.VGcdxP);
       }
       return formatResult;
     };
@@ -72,7 +72,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSetting
       formatResult = intl.string(intl4.t["2ExvRu"]);
     } else if (constants.GAME_MODE === appliedOverrideReasonKey) {
       const intl3 = intl4.intl;
-      formatResult = intl3.string(_modDef4002.VGcdxP);
+      formatResult = intl3.string(_modDef4023.VGcdxP);
     }
     return formatResult;
   });
@@ -87,7 +87,7 @@ function getSettingsOverrideReason(arg0) {
     return intl2.string(intl4.t["2ExvRu"]);
   } else if (constants.GAME_MODE === arg0) {
     const intl = intl4.intl;
-    return intl.string(_modDef4002.VGcdxP);
+    return intl.string(_modDef4023.VGcdxP);
   }
 }
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSettingLockedByOverride(arg0) {

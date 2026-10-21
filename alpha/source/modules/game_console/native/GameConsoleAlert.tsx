@@ -1,14 +1,14 @@
-// Module ID: 11537
-// Function ID: 11538
+// Module ID: 11587
+// Function ID: 11588
 // Name: GameConsoleAlert
-// Dependencies: [19, 17, 5677, 21, 4945, 558, 576, 504, 5195, 2]
+// Dependencies: [19, 17, 5697, 21, 4966, 558, 576, 504, 5216, 2]
 
-// Module 11537 (GameConsoleAlert)
+// Module 11587 (GameConsoleAlert)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 5677 */;
+import GameConsoleStore from "GameConsoleStore" /* 5697 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

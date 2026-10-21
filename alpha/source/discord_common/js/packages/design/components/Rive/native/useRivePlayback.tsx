@@ -1,9 +1,9 @@
-// Module ID: 5058
-// Function ID: 5059
+// Module ID: 5079
+// Function ID: 5080
 // Name: useRivePlayback
 // Dependencies: [19, 17, 558, 576, 2]
 
-// Module 5058 (useRivePlayback)
+// Module 5079 (useRivePlayback)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,9 +1,9 @@
-// Module ID: 9262
-// Function ID: 9263
+// Module ID: 9290
+// Function ID: 9291
 // Name: GameProfileMobileReviewsExperiment
 // Dependencies: [1455, 558, 576, 2]
 
-// Module 9262 (GameProfileMobileReviewsExperiment)
+// Module 9290 (GameProfileMobileReviewsExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,14 +1,14 @@
-// Module ID: 6972
-// Function ID: 6973
+// Module ID: 7000
+// Function ID: 7001
 // Name: useInputAttachments
-// Dependencies: [32, 19, 17, 21, 6973, 5195, 558, 576, 6974, 2]
+// Dependencies: [32, 19, 17, 21, 7001, 5216, 558, 576, 7002, 2]
 // Exports: estimateAttachmentWidth, renderInputAttachment
 
-// Module 6972 (useInputAttachments)
+// Module 7000 (useInputAttachments)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import IconSize from "IconSize" /* 6973 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import IconSize from "IconSize" /* 7001 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -327,7 +327,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInputAtta
   let tmp20;
   let trailingIcon;
   let trailingPressableProps;
-  const f96078 = () => {
+  const f96362 = () => {
     let num = 0;
     if (null != leadingIcon) {
       num = IconSize.ICON_SIZE.xs + tmp;
@@ -391,8 +391,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInputAtta
         let trailingIcon2 = inputStyles.trailingText;
       }
       let num = 2;
-      [tmp19, tmp20] = trailingIcon(react.useState(f96078), 2);
-      trailingIcon(react.useState(f96078), 2);
+      [tmp19, tmp20] = trailingIcon(react.useState(f96362), 2);
+      trailingIcon(react.useState(f96362), 2);
       const tmp21 = trailingIcon(react.useState(() => {
         let num = 0;
         if (null != trailingIcon) {

@@ -1,21 +1,21 @@
-// Module ID: 7245
-// Function ID: 7246
+// Module ID: 7273
+// Function ID: 7274
 // Name: FormSwitch
-// Dependencies: [32, 19, 17, 21, 5014, 4945, 587, 5207, 4959, 5208, 5209, 5213, 6853, 7246, 5173, 5174, 2]
+// Dependencies: [32, 19, 17, 21, 5035, 4966, 587, 5228, 4980, 5229, 5230, 5234, 6881, 7274, 5194, 5195, 2]
 // Exports: FormSwitch
 
-// Module 7245 (FormSwitch)
+// Module 7273 (FormSwitch)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5014 */;
-import HapticUtils from "HapticUtils" /* 5173 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5174 */;
-import IconDefault from "Icon" /* 5207 */;
-import spring from "spring" /* 5208 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5035 */;
+import HapticUtils from "HapticUtils" /* 5194 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5195 */;
+import IconDefault from "Icon" /* 5228 */;
+import spring from "spring" /* 5229 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import size_mod from "module_2" /* 2 */;
 
 const ReanimatedRexport_mod = ReanimatedRexport2;
@@ -26,7 +26,7 @@ let obj3;
 let size;
 let size1;
 let tmp3;
-const springPresets = tmp3(5209);
+const springPresets = tmp3(5230);
 const Pressable = react_native.Pressable;
 const jsx = Fragment.jsx;
 let ReanimatedRexport = ReanimatedRexport_mod;

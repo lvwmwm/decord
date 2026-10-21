@@ -1,10 +1,10 @@
-// Module ID: 14018
-// Function ID: 14019
+// Module ID: 14093
+// Function ID: 14094
 // Name: DynamicLinkTemplates
 // Dependencies: [2]
 // Exports: getChannelDynamicLinkTemplate, getDefaultDynamicLinkTemplate, getGuildTemplateDynamicLinkTemplate, getInviteDynamicLinkTemplate
 
-// Module 14018 (DynamicLinkTemplates)
+// Module 14093 (DynamicLinkTemplates)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/dynamic-links/DynamicLinkTemplates.tsx");

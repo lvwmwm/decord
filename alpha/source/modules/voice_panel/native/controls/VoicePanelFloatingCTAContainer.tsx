@@ -1,29 +1,29 @@
-// Module ID: 18358
-// Function ID: 18359
+// Module ID: 18437
+// Function ID: 18438
 // Name: VoicePanelFloatingCTAContainer
-// Dependencies: [32, 109, 19, 4800, 10704, 10707, 1098, 21, 12073, 587, 4945, 558, 576, 5935, 8885, 4999, 10703, 18258, 7446, 573, 18255, 18359, 5014, 12979, 11945, 5208, 10337, 7119, 2]
+// Dependencies: [32, 109, 19, 4821, 10848, 10851, 1098, 21, 12121, 587, 4966, 558, 576, 5957, 8912, 5020, 10847, 18339, 7474, 573, 18336, 18438, 5035, 13047, 11993, 5229, 10366, 7147, 2]
 // Exports: getFloatingCTATotalViewHeight, renderVoicePanelFloatingCTA
 
-// Module 18358 (VoicePanelFloatingCTAContainer)
+// Module 18437 (VoicePanelFloatingCTAContainer)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
-import native from "native" /* 4999 */;
-import spring from "spring" /* 5208 */;
-import Stack_Stack from "Stack/Stack" /* 5935 */;
-import RowButton2 from "RowButton" /* 8885 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10704 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 10707 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11945 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12073 */;
-import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 12979 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 18255 */;
+import native from "native" /* 5020 */;
+import spring from "spring" /* 5229 */;
+import Stack_Stack from "Stack/Stack" /* 5957 */;
+import RowButton2 from "RowButton" /* 8912 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10848 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 10851 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11993 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12121 */;
+import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 13047 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 18336 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import createStyles from "createStyles" /* 4945 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -65,8 +65,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Floati
       return tmp10;
     }
   }
-  const Stack = tmp(5935).Stack;
-  const RowButton = tmp(8885).RowButton;
+  const Stack = tmp(5957).Stack;
+  const RowButton = tmp(8912).RowButton;
   const merged = Object.assign(tmp4);
   const tmp12 = <Stack>{null}</Stack>;
   cResult[3] = tmp4;

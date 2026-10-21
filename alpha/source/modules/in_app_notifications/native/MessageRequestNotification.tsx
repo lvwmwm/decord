@@ -1,16 +1,16 @@
-// Module ID: 13679
-// Function ID: 13680
+// Module ID: 13744
+// Function ID: 13745
 // Name: MessageRequestNotification
-// Dependencies: [19, 21, 558, 576, 1128, 13577, 5112, 1202, 13584, 13612, 2]
+// Dependencies: [19, 21, 558, 576, 1128, 13644, 5133, 1202, 13651, 13679, 2]
 
-// Module 13679 (MessageRequestNotification)
+// Module 13744 (MessageRequestNotification)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import RootNavigationRef from "RootNavigationRef" /* 5112 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 13577 */;
-import Notification from "Notification" /* 13612 */;
+import RootNavigationRef from "RootNavigationRef" /* 5133 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 13644 */;
+import Notification from "Notification" /* 13679 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -67,7 +67,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReq
     }
     const _Symbol2 = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const SystemMessageText = tmp(13584).SystemMessageText;
+      const SystemMessageText = tmp(13651).SystemMessageText;
       const intl2 = tmp(1128).intl;
       const tmp14 = <SystemMessageText text={intl2.string(intl3.t["Bx4/Lf"])} />;
       cResult[8] = tmp14;
@@ -119,11 +119,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReq
       rootNavigationRef.navigate("message-requests");
     }
   }, []);
-  const NotificationPressable = author(13612).NotificationPressable;
+  const NotificationPressable = author(13679).NotificationPressable;
   let obj2 = { user: author, size: author(1202).AvatarSizes.NORMAL, guildId: "r" };
   const Avatar = author(1202).Avatar;
   ({ text: intl.string(author(1128).t["Bx4/Lf"]) });
-  const SystemMessageText = author(13584).SystemMessageText;
+  const SystemMessageText = author(13651).SystemMessageText;
   intl = author(1128).intl;
   return <NotificationPressable icon={null} header={memo} onPress={callback} notification={notification}>{null}</NotificationPressable>;
 });

@@ -1,31 +1,31 @@
-// Module ID: 19023
-// Function ID: 19024
+// Module ID: 19100
+// Function ID: 19101
 // Name: GuildRoleSubscriptionTierBenefitsModal
-// Dependencies: [32, 19, 17, 16334, 19011, 16311, 21, 4945, 587, 558, 576, 5631, 19024, 5195, 8974, 1128, 1417, 19025, 14962, 16338, 38, 19006, 8883, 8977, 19026, 19027, 19029, 16318, 19002, 16333, 19030, 19031, 19040, 16337, 19041, 19013, 2]
+// Dependencies: [32, 19, 17, 16410, 19088, 16387, 21, 4966, 587, 558, 576, 5651, 19101, 5216, 9001, 1128, 1417, 19102, 15036, 16414, 38, 19083, 8910, 9004, 19103, 19104, 19106, 16394, 19079, 16409, 19107, 19108, 19117, 16413, 19118, 19090, 2]
 
-// Module 19023 (GuildRoleSubscriptionTierBenefitsModal)
+// Module 19100 (GuildRoleSubscriptionTierBenefitsModal)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import FastImageDefault from "FastImage" /* 5631 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 8974 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16333 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16334 */;
-import useRoleSubscriptionFormatDefault from "useRoleSubscriptionFormat" /* 19002 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 19011 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 19013 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19024 */;
-import EmojiAliasDefault from "EmojiAlias" /* 19025 */;
-import useRoleSubscriptionEmojisDefault from "useRoleSubscriptionEmojis" /* 19030 */;
-import GuildRoleSubscriptionsModalActionCreatorsAll from "GuildRoleSubscriptionsModalActionCreators" /* 19031 */;
+import FastImageDefault from "FastImage" /* 5651 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9001 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16409 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16410 */;
+import useRoleSubscriptionFormatDefault from "useRoleSubscriptionFormat" /* 19079 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 19088 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 19090 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19101 */;
+import EmojiAliasDefault from "EmojiAlias" /* 19102 */;
+import useRoleSubscriptionEmojisDefault from "useRoleSubscriptionEmojis" /* 19107 */;
+import GuildRoleSubscriptionsModalActionCreatorsAll from "GuildRoleSubscriptionsModalActionCreators" /* 19108 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16311 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16387 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,8 +47,8 @@ let obj7;
 let tmp;
 let tmp10;
 let unpackModuleId;
-const Text_Text = tmp(5195);
-const AllChannelsSwitchDefault = tmp10(19041);
+const Text_Text = tmp(5216);
+const AllChannelsSwitchDefault = tmp10(19118);
 function Content(arg0) {
   let closure_2;
   let closure_3;
@@ -153,7 +153,7 @@ function Content(arg0) {
   const first4 = tmp24[0];
   closure_13 = tmp27;
   const tmp26 = tmp24[1];
-  const tmp5Result = tmp5(19006);
+  const tmp5Result = tmp5(19083);
   roleSubscriptionSettingsDisabled = tmp5Result.useRoleSubscriptionSettingsDisabled();
   const tmp29 = useRoleSubscriptionEmojisDefault(guildId);
   closure_16 = tmp29;
@@ -277,7 +277,7 @@ function Content(arg0) {
       }
       return tmp3Result;
     },
-    keyExtractor: tmp5(16337).getBenefitKey,
+    keyExtractor: tmp5(16413).getBenefitKey,
     ListHeaderComponent: tmp34Result,
     renderSectionHeader(section) {
       const obj = { type: section.section.type };
@@ -606,8 +606,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
   ({ trialActiveUserLimit, onChangeTrialActiveUserLimit } = onChangeTrialInterval);
   const interval = onChangeTrialInterval.interval;
   const tmp4 = closure_15();
-  const tmp6 = options(14962)();
-  const tmp7 = options(16338)(interval);
+  const tmp6 = options(15036)();
+  const tmp7 = options(16414)(interval);
   options = tmp7.options;
   const selectedOption = tmp7.selectedOption;
   if (cResult[0] === onChangeTrialInterval) {
@@ -616,7 +616,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
     if (cResult[1] === options) {
       tmp8 = cResult[2];
     }
-    const tmpResult = onChangeTrialInterval(19006);
+    const tmpResult = onChangeTrialInterval(19083);
     const roleSubscriptionSettingsDisabled = tmpResult.useRoleSubscriptionSettingsDisabled();
     const _Symbol = Symbol;
     const listFooterContainer = tmp4.listFooterContainer;
@@ -658,7 +658,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
           }
           if (cResult[12] !== tmp18) {
             const obj2 = { style: tmp18, variant: "text-sm/medium", color: "text-default", children: tmp19 };
-            const tmp23 = closure_12(onChangeTrialInterval(5195).Text, obj2);
+            const tmp23 = closure_12(onChangeTrialInterval(5216).Text, obj2);
             cResult[12] = tmp18;
             cResult[13] = tmp23;
             tmp21 = tmp23;
@@ -677,7 +677,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
           }
           if (cResult[15] !== tmp6.header) {
             const obj3 = { style: header, children: tmp24 };
-            const tmp28 = closure_12(options(8977), obj3);
+            const tmp28 = closure_12(options(9004), obj3);
             cResult[15] = tmp6.header;
             cResult[16] = tmp28;
             tmp26 = tmp28;
@@ -702,7 +702,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
             }
             if (cResult[21] !== tmp29) {
               const obj4 = { style: tmp29, variant: "text-sm/medium", color: "text-default", children: tmp30 };
-              const tmp34 = closure_12(onChangeTrialInterval(5195).Text, obj4);
+              const tmp34 = closure_12(onChangeTrialInterval(5216).Text, obj4);
               cResult[21] = tmp29;
               cResult[22] = tmp34;
               tmp32 = tmp34;
@@ -735,7 +735,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
                   }
                   if (cResult[29] !== tmp6.header) {
                     const obj5 = { style: header2, children: tmp40 };
-                    const tmp44 = closure_12(options(8977), obj5);
+                    const tmp44 = closure_12(options(9004), obj5);
                     cResult[29] = tmp6.header;
                     cResult[30] = tmp44;
                     tmp42 = tmp44;
@@ -760,7 +760,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
                     }
                     if (cResult[35] !== tmp45) {
                       const obj6 = { style: tmp45, variant: "text-sm/medium", color: "text-default", children: tmp46 };
-                      const tmp50 = closure_12(onChangeTrialInterval(5195).Text, obj6);
+                      const tmp50 = closure_12(onChangeTrialInterval(5216).Text, obj6);
                       cResult[35] = tmp45;
                       cResult[36] = tmp50;
                       tmp48 = tmp50;
@@ -827,7 +827,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
                       }
                     }
                     const obj9 = { activeTrialUserlimit: trialActiveUserLimit, onChange: onChangeTrialActiveUserLimit, disabled: tmp35 };
-                    const tmp53 = closure_12(options(19027), obj9);
+                    const tmp53 = closure_12(options(19104), obj9);
                     cResult[37] = onChangeTrialActiveUserLimit;
                     cResult[38] = tmp35;
                     cResult[39] = trialActiveUserLimit;
@@ -844,7 +844,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
               }
             }
             const obj10 = { interval: selectedOption, onChange: onChangeTrialInterval, trialIntervalOptions: options, disabled: tmp36 };
-            const tmp39 = closure_12(options(19026), obj10);
+            const tmp39 = closure_12(options(19103), obj10);
             cResult[23] = onChangeTrialInterval;
             cResult[24] = selectedOption;
             cResult[25] = tmp36;
@@ -868,7 +868,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
       }
     }
     const obj11 = { label: tmp13, value: null != selectedOption, onValueChange: tmp8, disabled: roleSubscriptionSettingsDisabled };
-    const tmp17 = closure_12(onChangeTrialInterval(8883).FormSwitchRow, obj11);
+    const tmp17 = closure_12(onChangeTrialInterval(8910).FormSwitchRow, obj11);
     cResult[4] = tmp8;
     cResult[5] = null != selectedOption;
     cResult[6] = roleSubscriptionSettingsDisabled;
@@ -911,8 +911,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
   ({ interval, trialActiveUserLimit, onChangeTrialActiveUserLimit } = onChangeTrialInterval);
   const tmp = closure_15();
   let tmp3 = dependencyMap;
-  const tmp4 = options(14962)();
-  const tmp5 = options(16338)(interval);
+  const tmp4 = options(15036)();
+  const tmp5 = options(16414)(interval);
   options = tmp5.options;
   const selectedOption = tmp5.selectedOption;
   const items = [onChangeTrialInterval, options];
@@ -926,11 +926,11 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
     }
     tmp3(value);
   }, items);
-  const obj = onChangeTrialInterval(19006);
+  const obj = onChangeTrialInterval(19083);
   const roleSubscriptionSettingsDisabled = obj.useRoleSubscriptionSettingsDisabled();
   const obj2 = { style: tmp.listFooterContainer, children: items1 };
   const obj3 = { label: intl.string(onChangeTrialInterval(1128).t["+hTmdb"]), value: null != selectedOption, onValueChange: callback, disabled: roleSubscriptionSettingsDisabled };
-  const FormSwitchRow = onChangeTrialInterval(8883).FormSwitchRow;
+  const FormSwitchRow = onChangeTrialInterval(8910).FormSwitchRow;
   intl = onChangeTrialInterval(1128).intl;
   items1 = [closure_12(FormSwitchRow, obj3), ];
   if (null == selectedOption) {
@@ -940,39 +940,39 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
   const obj5 = { style: items2, variant: "text-sm/medium", color: "text-default", children: intl2.string(onChangeTrialInterval(1128).t.urVijS) };
   items2 = [, ];
   ({ listFooterText: arr3[0], listFooterSubtitle: arr3[1] } = tmp);
-  const Text = tmp8(5195).Text;
+  const Text = tmp8(5216).Text;
   intl2 = tmp8(1128).intl;
   items3 = [closure_12(Text, obj5), , , , , , ];
   const obj6 = { style: tmp4.header, children: intl3.string(onChangeTrialInterval(1128).t.m1KuWd) };
-  const tmp2Result = options(8977);
+  const tmp2Result = options(9004);
   intl3 = tmp8(1128).intl;
   items3[1] = closure_12(tmp2Result, obj6);
   const obj7 = { style: items4, variant: "text-sm/medium", color: "text-default", children: intl4.string(onChangeTrialInterval(1128).t.NB9NLF) };
   items4 = [, ];
   ({ listFooterSectionDescription: arr5[0], listFooterText: arr5[1] } = tmp);
-  const Text2 = tmp8(5195).Text;
+  const Text2 = tmp8(5216).Text;
   intl4 = tmp8(1128).intl;
   items3[2] = closure_12(Text2, obj7);
   let tmp15 = !tmp7;
   const obj8 = { interval: selectedOption, onChange: onChangeTrialInterval, trialIntervalOptions: options, disabled: tmp16 };
   tmp16 = tmp15;
-  const tmp2Result4 = options(19026);
+  const tmp2Result4 = options(19103);
   if (null != selectedOption) {
     tmp16 = roleSubscriptionSettingsDisabled;
   }
   items3[3] = closure_12(tmp2Result4, obj8);
   const obj9 = { style: tmp4.header, children: intl5.string(onChangeTrialInterval(1128).t["/JD9oe"]) };
-  const tmp2Result5 = options(8977);
+  const tmp2Result5 = options(9004);
   intl5 = tmp8(1128).intl;
   items3[4] = closure_12(tmp2Result5, obj9);
   const obj10 = { style: items5, variant: "text-sm/medium", color: "text-default", children: intl6.string(onChangeTrialInterval(1128).t.Cg5eBm) };
   items5 = [, ];
   ({ listFooterSectionDescription: arr6[0], listFooterText: arr6[1] } = tmp);
-  const Text3 = tmp8(5195).Text;
+  const Text3 = tmp8(5216).Text;
   intl6 = tmp8(1128).intl;
   items3[5] = closure_12(Text3, obj10);
   const obj11 = { activeTrialUserlimit: trialActiveUserLimit, onChange: onChangeTrialActiveUserLimit, disabled: tmp15 };
-  const tmp2Result6 = options(19027);
+  const tmp2Result6 = options(19104);
   if (null != selectedOption) {
     tmp15 = roleSubscriptionSettingsDisabled;
   }

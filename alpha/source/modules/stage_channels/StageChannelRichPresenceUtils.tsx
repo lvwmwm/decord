@@ -1,17 +1,17 @@
-// Module ID: 10581
-// Function ID: 10582
+// Module ID: 10610
+// Function ID: 10611
 // Name: StageChannelRichPresenceUtils
-// Dependencies: [32, 502, 4800, 4822, 6637, 6588, 1087, 2]
+// Dependencies: [32, 502, 4821, 4843, 6665, 6616, 1087, 2]
 // Exports: isStageActivity, packStageChannelPartyId, shouldShowActivity
 
-// Module 10581 (StageChannelRichPresenceUtils)
+// Module 10610 (StageChannelRichPresenceUtils)
 import Constants from "Constants" /* 1087 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6588 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6616 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import GuildStore from "GuildStore" /* 4822 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 6637 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import GuildStore from "GuildStore" /* 4843 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 6665 */;
 import size from "module_2" /* 2 */;
 
 function unpackStageChannelParty(activity) {

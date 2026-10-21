@@ -1,10 +1,10 @@
-// Module ID: 11282
-// Function ID: 11283
+// Module ID: 11326
+// Function ID: 11327
 // Name: pendingFrameLaunch
 // Dependencies: [2]
 // Exports: consumePendingFrameLaunch, stashPendingFrameLaunch
 
-// Module 11282 (pendingFrameLaunch)
+// Module 11326 (pendingFrameLaunch)
 import size from "module_2" /* 2 */;
 
 let closure_0 = {};

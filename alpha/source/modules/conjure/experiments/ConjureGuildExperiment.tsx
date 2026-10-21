@@ -1,12 +1,12 @@
-// Module ID: 6759
-// Function ID: 6760
+// Module ID: 6787
+// Function ID: 6788
 // Name: ConjureGuildExperiment
-// Dependencies: [4822, 1087, 1455, 558, 576, 504, 2]
+// Dependencies: [4843, 1087, 1455, 558, 576, 504, 2]
 
-// Module 6759 (ConjureGuildExperiment)
+// Module 6787 (ConjureGuildExperiment)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import GuildStore from "GuildStore" /* 4822 */;
+import GuildStore from "GuildStore" /* 4843 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

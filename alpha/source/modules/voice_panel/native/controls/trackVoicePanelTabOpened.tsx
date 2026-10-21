@@ -1,13 +1,13 @@
-// Module ID: 18352
-// Function ID: 18353
+// Module ID: 18431
+// Function ID: 18432
 // Name: trackVoicePanelTabOpened
-// Dependencies: [6722, 1087, 1267, 2]
+// Dependencies: [6750, 1087, 1267, 2]
 // Exports: default
 
-// Module 18352 (trackVoicePanelTabOpened)
+// Module 18431 (trackVoicePanelTabOpened)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import ReadStateStore from "ReadStateStore" /* 6722 */;
+import ReadStateStore from "ReadStateStore" /* 6750 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

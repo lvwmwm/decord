@@ -1,25 +1,25 @@
-// Module ID: 8054
-// Function ID: 8055
+// Module ID: 8082
+// Function ID: 8083
 // Name: StageSettingsActionSheet
-// Dependencies: [19, 17, 6723, 4800, 4880, 4805, 6588, 1087, 21, 4945, 587, 5171, 558, 576, 504, 4808, 6638, 7817, 7439, 8055, 10021, 8883, 1128, 1202, 8864, 14414, 14415, 14416, 14417, 7247, 2]
+// Dependencies: [19, 17, 6751, 4821, 4901, 4826, 6616, 1087, 21, 4966, 587, 5192, 558, 576, 504, 4829, 6666, 7845, 7467, 8083, 10051, 8910, 1128, 1202, 8891, 14488, 14489, 14490, 14491, 7275, 2]
 
-// Module 8054 (StageSettingsActionSheet)
+// Module 8082 (StageSettingsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import StageChannelPermissions from "StageChannelPermissions" /* 4808 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6588 */;
-import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 7817 */;
-import ReportModals from "ReportModals" /* 8055 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10021 */;
+import StageChannelPermissions from "StageChannelPermissions" /* 4829 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6616 */;
+import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 7845 */;
+import ReportModals from "ReportModals" /* 8083 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10051 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6723 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import PermissionStore from "PermissionStore" /* 4880 */;
-import StageInstanceStore from "StageInstanceStore" /* 4805 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6751 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import PermissionStore from "PermissionStore" /* 4901 */;
+import StageInstanceStore from "StageInstanceStore" /* 4826 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

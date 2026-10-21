@@ -1,14 +1,14 @@
-// Module ID: 18096
-// Function ID: 18097
+// Module ID: 18177
+// Function ID: 18178
 // Name: MessageRequestsPreviewScreen
-// Dependencies: [19, 6722, 1087, 21, 558, 576, 13166, 9645, 18097, 10695, 13561, 2]
+// Dependencies: [19, 6750, 1087, 21, 558, 576, 13234, 9675, 18178, 10839, 13628, 2]
 
-// Module 18096 (MessageRequestsPreviewScreen)
+// Module 18177 (MessageRequestsPreviewScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
-import MessageManagerDefault from "MessageManager" /* 9645 */;
+import MessageManagerDefault from "MessageManager" /* 9675 */;
 import react from "react" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 6722 */;
+import ReadStateStore from "ReadStateStore" /* 6750 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReq
   channelId = route.route.params.channelId;
   let obj2 = react;
   const ref = react.useRef(null);
-  const obj3 = channelId(13166);
+  const obj3 = channelId(13234);
   const isMessageRequestRestrictedViewer = obj3.useIsMessageRequestRestrictedViewer();
   if (cResult[0] !== channelId) {
     const fn = function l() {
@@ -56,7 +56,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReq
       }
       return tmp14;
     }
-    const tmp17 = jsx(tmp(13561).ChannelContainer, { guildId: ME, channelId, children: tmp9 });
+    const tmp17 = jsx(tmp(13628).ChannelContainer, { guildId: ME, channelId, children: tmp9 });
     cResult[6] = channelId;
     cResult[7] = tmp9;
     cResult[8] = tmp17;
@@ -64,10 +64,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReq
   }
   if (isMessageRequestRestrictedViewer) {
     const obj5 = { channelId };
-    tmp10Result = tmp10(tmp11(18097), obj5);
+    tmp10Result = tmp10(tmp11(18178), obj5);
   } else {
     const obj6 = { guildId: ME, channelId, chatInputRef: ref, HACK_fixModalInteraction: true, screenIndex: "message-request" };
-    tmp10Result = tmp10(tmp11(10695), obj6);
+    tmp10Result = tmp10(tmp11(10839), obj6);
   }
   cResult[3] = channelId;
   cResult[4] = isMessageRequestRestrictedViewer;
@@ -77,7 +77,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReq
   let tmp5Result;
   const channelId = route.route.params.channelId;
   const ref = react.useRef(null);
-  let obj = channelId(13166);
+  let obj = channelId(13234);
   const items = [channelId];
   const isMessageRequestRestrictedViewer = obj.useIsMessageRequestRestrictedViewer();
   const effect = react.useEffect(() => {
@@ -85,13 +85,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReq
     const obj2 = { channelId, messageId: ReadStateStore.lastMessageId(channelId) };
     const messages = obj.fetchMessages(obj2);
   }, items);
-  const ChannelContainer = channelId(13561).ChannelContainer;
+  const ChannelContainer = channelId(13628).ChannelContainer;
   if (isMessageRequestRestrictedViewer) {
     const obj3 = { channelId };
-    tmp5Result = tmp5(tmp7(18097), obj3);
+    tmp5Result = tmp5(tmp7(18178), obj3);
   } else {
     const obj4 = { guildId: tmp6, channelId, chatInputRef: ref, HACK_fixModalInteraction: true, screenIndex: "message-request" };
-    tmp5Result = tmp5(tmp7(10695), obj4);
+    tmp5Result = tmp5(tmp7(10839), obj4);
   }
   return <ChannelContainer guildId={ME} channelId={channelId}>{tmp5Result}</ChannelContainer>;
 });

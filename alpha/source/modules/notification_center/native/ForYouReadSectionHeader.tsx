@@ -1,17 +1,17 @@
-// Module ID: 17625
-// Function ID: 17626
+// Module ID: 17706
+// Function ID: 17707
 // Name: ForYouReadSectionHeader
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 1128, 5195, 2]
+// Dependencies: [19, 17, 21, 4966, 587, 558, 576, 1128, 5216, 2]
 
-// Module 17625 (ForYouReadSectionHeader)
+// Module 17706 (ForYouReadSectionHeader)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5195 */;
+import Text_Text from "Text/Text" /* 5216 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,19 +1,22 @@
 // Module ID: 5367
 // Function ID: 5368
-// Dependencies: [5366, 5317]
-// Exports: useExclusiveGestures
+// Dependencies: [5347, 5362, 5338]
+// Exports: useFlingGesture
 
 // Module 5367
-import ComposedGestureName from "ComposedGestureName" /* 5317 */;
-import _mod5366 from "module_5366" /* 5366 */;
+import ComposedGestureName from "ComposedGestureName" /* 5338 */;
+import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 5347 */;
+import _mod5362 from "module_5362" /* 5362 */;
 
+let closure_2 = {};
 
-export const useExclusiveGestures = function useExclusiveGestures() {
-  const items = [...arguments];
-  const useComposedGesture = _mod5366.useComposedGesture;
-  _mod5366;
-  const items1 = [ComposedGestureName.ComposedGestureName.Exclusive, ...items];
-  const applyResult = useComposedGesture.apply(items1);
-  applyResult.type = ComposedGestureName.ComposedGestureName.Exclusive;
-  return applyResult;
+export const useFlingGesture = function useFlingGesture(cResult) {
+  let tmp = cResult;
+  if (cResult === undefined) {
+    tmp = closure_2;
+  }
+  const obj = maybeExtractNativeEvent;
+  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp);
+  const obj2 = _mod5362;
+  return obj2.useGesture(ComposedGestureName.SingleGestureName.Fling, clonedAndRemappedConfig);
 };

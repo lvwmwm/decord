@@ -1,12 +1,12 @@
-// Module ID: 10507
-// Function ID: 10508
+// Module ID: 10536
+// Function ID: 10537
 // Name: UnsupportedFeatureModal
-// Dependencies: [19, 17, 21, 558, 576, 6623, 6875, 7046, 5195, 1128, 2]
+// Dependencies: [19, 17, 21, 558, 576, 6651, 6903, 7074, 5216, 1128, 2]
 
-// Module 10507 (UnsupportedFeatureModal)
+// Module 10536 (UnsupportedFeatureModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6623 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6651 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -36,7 +36,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Unsupporte
     tmp4 = cResult[1];
   }
   if (cResult[2] !== tmp4) {
-    const tmpResult = onDismiss(6875);
+    const tmpResult = onDismiss(6903);
     const headerCloseButton = tmpResult.getHeaderCloseButton(tmp4);
     cResult[2] = tmp4;
     cResult[3] = headerCloseButton;
@@ -64,7 +64,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Unsupporte
       }
     }
   };
-  const tmp8 = jsx(onDismiss(7046).Navigator, { initialRouteName: "Unsupported", screens: obj3 });
+  const tmp8 = jsx(onDismiss(7074).Navigator, { initialRouteName: "Unsupported", screens: obj3 });
   cResult[4] = tmp5;
   cResult[5] = title;
   cResult[6] = tmp8;
@@ -91,8 +91,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Unsupporte
       return <View style={{ flex: 1, alignItems: "center", justifyContent: "center", padding: 24 }}>{null}</View>;
     }
   };
-  const Navigator = onDismiss(7046).Navigator;
-  obj4 = onDismiss(6875);
+  const Navigator = onDismiss(7074).Navigator;
+  obj4 = onDismiss(6903);
   return <Navigator initialRouteName="Unsupported" screens={obj2} />;
 });
 const result = size.fileFinishedImporting("modules/billing/native/UnsupportedFeatureModal.tsx");

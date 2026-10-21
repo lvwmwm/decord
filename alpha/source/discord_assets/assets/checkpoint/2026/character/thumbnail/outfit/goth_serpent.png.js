@@ -1,8 +1,8 @@
-// Module ID: 6138
-// Function ID: 6139
+// Module ID: 6160
+// Function ID: 6161
 // Dependencies: [2]
 
-// Module 6138
+// Module 6160
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/outfit/goth_serpent.png.js");

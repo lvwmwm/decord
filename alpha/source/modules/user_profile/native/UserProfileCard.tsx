@@ -1,19 +1,19 @@
-// Module ID: 7252
-// Function ID: 7253
+// Module ID: 7280
+// Function ID: 7281
 // Name: UserProfileCard
-// Dependencies: [109, 19, 17, 7253, 21, 4945, 587, 558, 576, 5195, 7254, 6859, 2]
+// Dependencies: [109, 19, 17, 7281, 21, 4966, 587, 558, 576, 5216, 7282, 6887, 2]
 
-// Module 7252 (UserProfileCard)
+// Module 7280 (UserProfileCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import Pressables from "Pressables" /* 6859 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import Pressables from "Pressables" /* 6887 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7253 */;
+import Constants from "Constants" /* 7281 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp3;
-const ChevronSmallRightIcon = tmp3(7254);
+const ChevronSmallRightIcon = tmp3(7282);
 let closure_2 = ["title", "titleLeadingIcon", "titleIcon", "titleStyle", "trailingAction", "children", "style"];
 const View = react_native.View;
 ({ CARD_ROWS_COLUMN_GAP, CARD_ROWS_ICON_SIZE, CARD_ROWS_ICON_SIZE_VARIANT: metroRequire } = Constants);
@@ -83,7 +83,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileF
             tmp12 = cResult[9];
           }
           if (cResult[10] !== (undefined !== arrow && arrow)) {
-            const tmp17 = tmp4 && metroImportDefault(tmp(7254).ChevronSmallRightIcon, { size: "sm" });
+            const tmp17 = tmp4 && metroImportDefault(tmp(7282).ChevronSmallRightIcon, { size: "sm" });
             cResult[10] = undefined !== arrow && arrow;
             cResult[11] = tmp17;
             tmp16 = tmp17;

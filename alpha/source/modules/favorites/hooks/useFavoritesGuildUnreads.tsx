@@ -1,17 +1,17 @@
-// Module ID: 17507
-// Function ID: 17508
+// Module ID: 17588
+// Function ID: 17589
 // Name: useFavoritesGuildUnreads
-// Dependencies: [6721, 4882, 4800, 6765, 4880, 6722, 6655, 558, 576, 11, 504, 2]
+// Dependencies: [6749, 4903, 4821, 6793, 4901, 6750, 6683, 558, 576, 11, 504, 2]
 
-// Module 17507 (useFavoritesGuildUnreads)
+// Module 17588 (useFavoritesGuildUnreads)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6721 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4882 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6765 */;
-import PermissionStore from "PermissionStore" /* 4880 */;
-import ReadStateStore from "ReadStateStore" /* 6722 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6655 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6749 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4903 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6793 */;
+import PermissionStore from "PermissionStore" /* 4901 */;
+import ReadStateStore from "ReadStateStore" /* 6750 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6683 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

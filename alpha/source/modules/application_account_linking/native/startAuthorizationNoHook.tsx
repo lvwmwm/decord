@@ -1,13 +1,13 @@
-// Module ID: 11244
-// Function ID: 11245
+// Module ID: 11288
+// Function ID: 11289
 // Name: startAuthorizationNoHook
-// Dependencies: [5, 1087, 7205, 5622, 1267, 2]
+// Dependencies: [5, 1087, 7233, 5642, 1267, 2]
 // Exports: startAuthorizationNoHook
 
-// Module 11244 (startAuthorizationNoHook)
+// Module 11288 (startAuthorizationNoHook)
 import Constants from "Constants" /* 1087 */;
-import LinkingDefault from "Linking" /* 5622 */;
-import useAuthorizationApp from "useAuthorizationApp" /* 7205 */;
+import LinkingDefault from "Linking" /* 5642 */;
+import useAuthorizationApp from "useAuthorizationApp" /* 7233 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

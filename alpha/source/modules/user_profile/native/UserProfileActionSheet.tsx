@@ -1,38 +1,38 @@
-// Module ID: 8627
-// Function ID: 8628
+// Module ID: 8654
+// Function ID: 8655
 // Name: UserProfileActionSheet
-// Dependencies: [32, 19, 17, 4800, 4860, 1392, 8586, 7253, 1087, 5227, 21, 4945, 558, 5230, 5014, 576, 1633, 504, 8612, 7227, 7202, 8596, 4776, 8616, 8628, 8629, 8641, 8642, 8643, 8648, 8635, 8654, 8655, 8658, 1499, 5229, 8652, 5166, 5213, 587, 8625, 8659, 8607, 4849, 8613, 1267, 5112, 5171, 1505, 8605, 5226, 1202, 8660, 1128, 4999, 8665, 1384, 7439, 8668, 14070, 14166, 9324, 5543, 14262, 1211, 2]
+// Dependencies: [32, 19, 17, 4821, 4881, 1392, 8613, 7281, 1087, 5248, 21, 4966, 558, 5251, 5035, 576, 1633, 504, 8639, 7255, 7230, 8623, 4797, 8643, 8655, 8656, 8668, 8669, 8670, 8675, 8662, 8681, 8682, 8685, 1499, 5250, 8679, 5187, 5234, 587, 8652, 8686, 8634, 4870, 8640, 1267, 5133, 5192, 1505, 8632, 5247, 1202, 8687, 1128, 5020, 8692, 1384, 7467, 8695, 14145, 14241, 9352, 5564, 14337, 1211, 2]
 
-// Module 8627 (UserProfileActionSheet)
+// Module 8654 (UserProfileActionSheet)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import isChangelogUserDefault from "isChangelogUser" /* 4849 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5227 */;
-import BottomSheetModal from "BottomSheetModal" /* 5230 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7227 */;
-import Constants2 from "Constants" /* 7253 */;
-import openUserSettings from "openUserSettings" /* 7439 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8605 */;
-import UserActionCreators from "UserActionCreators" /* 8607 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8613 */;
-import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8635 */;
-import ProfileFrameDefault from "ProfileFrame" /* 8648 */;
-import scaleProfileFrameDefault from "scaleProfileFrame" /* 8652 */;
-import ApplicationPresenceUtils from "ApplicationPresenceUtils" /* 8659 */;
+import isChangelogUserDefault from "isChangelogUser" /* 4870 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5248 */;
+import BottomSheetModal from "BottomSheetModal" /* 5251 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7255 */;
+import Constants2 from "Constants" /* 7281 */;
+import openUserSettings from "openUserSettings" /* 7467 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8632 */;
+import UserActionCreators from "UserActionCreators" /* 8634 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8640 */;
+import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8662 */;
+import ProfileFrameDefault from "ProfileFrame" /* 8675 */;
+import scaleProfileFrameDefault from "scaleProfileFrame" /* 8679 */;
+import ApplicationPresenceUtils from "ApplicationPresenceUtils" /* 8686 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
+import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import GuildMemberStore from "GuildMemberStore" /* 4860 */;
-import UserStore_mod from "UserStore" /* 1392 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8586 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import GuildMemberStore from "GuildMemberStore" /* 4881 */;
+import UserStore from "UserStore" /* 1392 */;
+import UserProfileSettingsStore_mod from "UserProfileSettingsStore" /* 8613 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet, c7, constants, navigation, set;
+let BottomSheet, c18, constants, navigation, set;
 
 let closure_12;
 let closure_14;
@@ -41,9 +41,8 @@ let closure_17;
 let hasOwnProperty;
 let map1;
 let metroRequire;
-let react = react_mod;
 ({ StyleSheet: hasOwnProperty, View: metroRequire } = react_native);
-let UserStore = UserStore_mod;
+let UserProfileSettingsStore = UserProfileSettingsStore_mod;
 const UserProfileThemeTypes = Constants2.UserProfileThemeTypes;
 ({ AnalyticEvents: closure_12, EMPTY_STRING_SNOWFLAKE_ID: map1, UserSettingsSections: closure_14 } = Constants);
 const ACTION_SHEET_MAX_WIDTH = ActionSheetConstants.ACTION_SHEET_MAX_WIDTH;
@@ -174,15 +173,12 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Action
 });
 let closure_27 = { code: "function UserProfileActionSheetTsx7(payload,context){const{defaultHandleOnScroll,scrollPosition,animatedScrollableState,SCROLLABLE_STATE}=this.__closure;var _defaultHandleOnScrol;(_defaultHandleOnScrol=defaultHandleOnScroll)===null||_defaultHandleOnScrol===void 0||_defaultHandleOnScrol(payload,context);scrollPosition.set(animatedScrollableState.get()===SCROLLABLE_STATE.LOCKED?0:payload.contentOffset.y);}" };
 const __initData7 = { code: "function UserProfileActionSheetTsx8(){const{scrollPosition}=this.__closure;const transform=scrollPosition.get()<=0?[{translateY:scrollPosition.get()}]:[];return{transform:transform};}" };
-const __initData8 = { code: "function UserProfileActionSheetTsx9(){const{scrollPosition}=this.__closure;const transform=scrollPosition.get()<=0?[{translateY:scrollPosition.get()}]:[];return{transform:transform};}" };
+let closure_29 = { code: "function UserProfileActionSheetTsx9(){const{scrollPosition}=this.__closure;const transform=scrollPosition.get()<=0?[{translateY:scrollPosition.get()}]:[];return{transform:transform};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileActionSheet(userId) {
   let _location;
   let bottomSheetClose;
   let bottomSheetRef;
-  let closure_14;
-  let closure_4;
-  let closure_9;
   let collectibleProfileOverrides;
   let disableCalls;
   let disableMessage;
@@ -190,15 +186,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let initialSection;
   let isPreviewingChanges;
   let isVoiceContext;
+  let le;
   let localUser;
   let messageId;
-  let onClose;
+  let navigationReplace;
   let openedAt;
   let pendingAvatarDecoration;
+  let pendingChanges;
   let pendingProfileEffect;
   let pendingProfileFrame;
   let pendingThemeColors;
-  let re;
   let roleId;
   let sessionId;
   let showGuildProfile;
@@ -214,11 +211,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp7;
   const tmp3 = localUser;
   let obj = userId(localUser[15]);
-  const cResult = obj.c(191);
+  const cResult = obj.c(192);
   userId = userId.userId;
   const channelId = userId.channelId;
   ({ messageId, localUser } = userId);
-  ({ roleId, sessionId, onClose } = userId);
+  ({ roleId, sessionId, navigationReplace } = userId);
+  const onClose = userId.onClose;
   ({ openedAt, isPreviewingChanges, collectibleProfileOverrides, showGuildProfile, sourceAnalyticsLocations } = userId);
   let tmp5 = undefined !== isPreviewingChanges;
   ({ disableCalls, disableMessage, isVoiceContext, location: _location, initialSection } = userId);
@@ -237,31 +235,31 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     tmp7 = cResult[1];
   }
-  react = tmp7;
-  closure_18();
+  let closure_5 = tmp7;
+  c18();
   const tmp2Result = userId(tmp3[14]);
   const sharedValue = tmp2Result.useSharedValue(0);
   const tmp2Result9 = userId(tmp3[14]);
   const sharedValue1 = tmp2Result9.useSharedValue(-1);
   const top = channelId(tmp3[16])().top;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [UserStore];
+    const items1 = [stateFromStores2];
     cResult[2] = items1;
     tmp12 = items1;
   } else {
     tmp12 = cResult[2];
   }
   if (cResult[3] !== userId) {
-    class X {
+    class Z {
       constructor() {
         return UserStore.getUser(userId);
       }
     }
     cResult[3] = userId;
-    cResult[4] = X;
-    tmp14 = X;
+    cResult[4] = Z;
+    tmp14 = Z;
   } else {
-    class X {
+    class Z {
       constructor() {
         return UserStore.getUser(userId);
       }
@@ -271,20 +269,20 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const stateFromStores = tmp2Result10.useStateFromStores(tmp12, tmp14);
   let tmp16 = stateFromStores;
   if (stateFromStores == null) {
-    class X {
+    class Z {
       constructor() {
         return UserStore.getUser(userId);
       }
     }
     if (localUser != null) {
-      class X {
+      class Z {
         constructor() {
           return UserStore.getUser(userId);
         }
       }
     }
     if (tmp17 === userId) {
-      class X {
+      class Z {
         constructor() {
           return UserStore.getUser(userId);
         }
@@ -292,9 +290,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     tmp16 = tmp18;
   }
-  let c6 = tmp16;
+  let c7 = tmp16;
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class X {
+    class Z {
       constructor() {
         return UserStore.getUser(userId);
       }
@@ -303,14 +301,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     cResult[5] = items2;
     tmp19 = items2;
   } else {
-    class X {
+    class Z {
       constructor() {
         return UserStore.getUser(userId);
       }
     }
   }
   if (cResult[6] !== channelId) {
-    class X {
+    class Z {
       constructor() {
         return UserStore.getUser(userId);
       }
@@ -322,7 +320,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp21 = items3;
     tmp20 = tmp22;
   } else {
-    class X {
+    class Z {
       constructor() {
         return UserStore.getUser(userId);
       }
@@ -332,24 +330,24 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp2Result11 = userId(tmp3[17]);
   const stateFromStores1 = tmp2Result11.useStateFromStores(tmp19, tmp20, tmp21);
   if (stateFromStores1 != null) {
-    class X {
+    class Z {
       constructor() {
         return UserStore.getUser(userId);
       }
     }
   }
-  c7 = tmp24;
+  let c8 = tmp24;
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    class X {
+    class Z {
       constructor() {
         return UserStore.getUser(userId);
       }
     }
-    const items4 = [stateFromStores2];
+    const items4 = [c8];
     cResult[9] = items4;
     tmp25 = items4;
   } else {
-    class X {
+    class Z {
       constructor() {
         return UserStore.getUser(userId);
       }
@@ -357,41 +355,41 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   if (cResult[10] === undefined) {
     let tmp31;
-    let tmp49;
     let tmp48;
-    class X {
+    let tmp47;
+    class Z {
       constructor() {
         return UserStore.getUser(userId);
       }
     }
     const tmp2Result12 = userId(tmp3[17]);
-    stateFromStores2 = tmp2Result12.useStateFromStores(tmp25, re);
+    stateFromStores2 = tmp2Result12.useStateFromStores(tmp25, le);
     const tmp11Result = channelId(tmp3[18]);
     if (tmp16 != null) {
-      class X {
+      class Z {
         constructor() {
           return UserStore.getUser(userId);
         }
       }
     }
     if (undefined == null) {
-      class X {
+      class Z {
         constructor() {
           return UserStore.getUser(userId);
         }
       }
     }
     if (tmp6) {
-      class X {
+      class Z {
         constructor() {
           return UserStore.getUser(userId);
         }
       }
     }
-    UserStore = tmp11Result(undefined, undefined);
+    UserProfileSettingsStore = tmp11Result(undefined, undefined);
     tmp11Result(undefined, undefined);
     if (cResult[13] !== tmp7) {
-      class X {
+      class Z {
         constructor() {
           return UserStore.getUser(userId);
         }
@@ -402,7 +400,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       cResult[14] = tmp32;
       tmp31 = tmp32;
     } else {
-      class X {
+      class Z {
         constructor() {
           return UserStore.getUser(userId);
         }
@@ -412,11 +410,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const tmp2Result13 = userId(tmp3[21]);
     const bottomSheetRef1 = tmp2Result13.useBottomSheetRef();
     ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef1);
-    react.useRef(null);
+    onClose.useRef(null);
     const tmp2Result14 = userId(tmp3[14]);
     const sharedValue2 = tmp2Result14.useSharedValue(0);
     if (cResult[15] !== sharedValue2) {
-      class X {
+      class Z {
         constructor() {
           return UserStore.getUser(userId);
         }
@@ -455,7 +453,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       cResult[15] = sharedValue2;
       cResult[16] = fn;
     } else {
-      class X {
+      class Z {
         constructor() {
           return UserStore.getUser(userId);
         }
@@ -479,23 +477,23 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     _e.__initData = __initData7;
     const tmp2Result15 = userId(tmp3[14]);
     const animatedStyle = tmp2Result15.useAnimatedStyle(_e);
-    const tmp43 = onClose(react.useState(false), 2);
-    constants = tmp43[0];
-    let closure_13 = tmp43[1];
-    [r10174, closure_14] = onClose(react.useState(0), 2);
+    const tmp43 = navigationReplace(onClose.useState(false), 2);
+    let closure_13 = tmp43[0];
+    let closure_14 = tmp43[1];
+    [r10175, ACTION_SHEET_MAX_WIDTH] = navigationReplace(onClose.useState(0), 2);
     const _Symbol = Symbol;
-    onClose(react.useState(0), 2);
+    navigationReplace(onClose.useState(0), 2);
     if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-      class X {
-        constructor() {
-          return UserStore.getUser(userId);
+      class Ee {
+        constructor(nativeEvent) {
+          ACTION_SHEET_MAX_WIDTH(Math.floor(nativeEvent.nativeEvent.layout.width));
         }
       }
-      cResult[17] = tmp46;
+      cResult[17] = Ee;
     } else {
-      class X {
-        constructor() {
-          return UserStore.getUser(userId);
+      class Ee {
+        constructor(nativeEvent) {
+          ACTION_SHEET_MAX_WIDTH(Math.floor(nativeEvent.nativeEvent.layout.width));
         }
       }
     }
@@ -503,81 +501,81 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const setting = ProfileVisibility.useSetting();
     const _Symbol2 = Symbol;
     if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-      class X {
-        constructor() {
-          return UserStore.getUser(userId);
+      class Ee {
+        constructor(nativeEvent) {
+          ACTION_SHEET_MAX_WIDTH(Math.floor(nativeEvent.nativeEvent.layout.width));
         }
       }
-      const items5 = [analyticsLocations];
-      class Ue {
+      const items5 = [UserProfileSettingsStore];
+      class Re {
         constructor() {
-          return analyticsLocations.getPendingChanges();
+          return pendingChanges.getPendingChanges();
         }
       }
       cResult[18] = items5;
-      cResult[19] = Ue;
-      tmp49 = Ue;
-      tmp48 = items5;
+      cResult[19] = Re;
+      tmp48 = Re;
+      tmp47 = items5;
     } else {
-      class X {
-        constructor() {
-          return UserStore.getUser(userId);
+      class Ee {
+        constructor(nativeEvent) {
+          ACTION_SHEET_MAX_WIDTH(Math.floor(nativeEvent.nativeEvent.layout.width));
         }
       }
-      tmp49 = cResult[19];
+      tmp48 = cResult[19];
     }
     const tmp2Result16 = userId(tmp3[17]);
-    const stateFromStoresObject = tmp2Result16.useStateFromStoresObject(tmp48, tmp49);
+    const stateFromStoresObject = tmp2Result16.useStateFromStoresObject(tmp47, tmp48);
     ({ pendingThemeColors, pendingAvatarDecoration, pendingProfileEffect, pendingProfileFrame } = stateFromStoresObject);
     if (collectibleProfileOverrides != null) {
-      class X {
-        constructor() {
-          return UserStore.getUser(userId);
+      class Ee {
+        constructor(nativeEvent) {
+          ACTION_SHEET_MAX_WIDTH(Math.floor(nativeEvent.nativeEvent.layout.width));
         }
       }
     }
     if (undefined == null) {
-      class X {
-        constructor() {
-          return UserStore.getUser(userId);
+      class Ee {
+        constructor(nativeEvent) {
+          ACTION_SHEET_MAX_WIDTH(Math.floor(nativeEvent.nativeEvent.layout.width));
         }
       }
     }
-    let c15 = tmp51;
+    let c16 = tmp50;
     if (collectibleProfileOverrides != null) {
-      class X {
-        constructor() {
-          return UserStore.getUser(userId);
+      class Ee {
+        constructor(nativeEvent) {
+          ACTION_SHEET_MAX_WIDTH(Math.floor(nativeEvent.nativeEvent.layout.width));
         }
       }
     }
     if (undefined == null) {
-      class X {
-        constructor() {
-          return UserStore.getUser(userId);
+      class Ee {
+        constructor(nativeEvent) {
+          ACTION_SHEET_MAX_WIDTH(Math.floor(nativeEvent.nativeEvent.layout.width));
         }
       }
     }
-    let c16 = tmp52;
+    let c17 = tmp51;
     if (collectibleProfileOverrides != null) {
-      class X {
-        constructor() {
-          return UserStore.getUser(userId);
+      class Ee {
+        constructor(nativeEvent) {
+          ACTION_SHEET_MAX_WIDTH(Math.floor(nativeEvent.nativeEvent.layout.width));
         }
       }
     }
     if (undefined == null) {
-      class X {
-        constructor() {
-          return UserStore.getUser(userId);
+      class Ee {
+        constructor(nativeEvent) {
+          ACTION_SHEET_MAX_WIDTH(Math.floor(nativeEvent.nativeEvent.layout.width));
         }
       }
     }
-    let c17 = tmp53;
+    c18 = tmp52;
     if (cResult[20] === channelId) {
-      class X {
-        constructor() {
-          return UserStore.getUser(userId);
+      class Ee {
+        constructor(nativeEvent) {
+          ACTION_SHEET_MAX_WIDTH(Math.floor(nativeEvent.nativeEvent.layout.width));
         }
       }
     }
@@ -591,16 +589,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     cResult[26] = userId;
     cResult[27] = obj3;
   }
-  re = function re() {
+  le = function le() {
     let member = null;
-    if (null != c7) {
+    if (null != c8) {
       member = GuildMemberStore.getMember(tmp, userId);
     }
     return member;
   };
   cResult[10] = undefined;
   cResult[11] = userId;
-  cResult[12] = re;
+  cResult[12] = le;
 }) : (function UserProfileActionSheet(userId) {
   let ActionSheetBackdropToast;
   let AnalyticsLocationProvider2;
@@ -658,6 +656,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   userId = userId.userId;
   const channelId = userId.channelId;
   const localUser = userId.localUser;
+  const navigationReplace = userId.navigationReplace;
   const onClose = userId.onClose;
   ({ openedAt, isPreviewingChanges } = userId);
   ({ messageId, roleId, sessionId, disableCalls, disableMessage, isVoiceContext, location: _location } = userId);
@@ -672,33 +671,32 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (prop === undefined) {
     prop = [];
   }
-  let stateFromStores;
   let guild_id;
   let stateFromStores2;
-  let closure_13;
+  constants = undefined;
   let analyticsLocations;
   let sharedValue2;
   let first;
-  let closure_17;
+  closure_18 = undefined;
   let first1;
-  let closure_19;
+  let closure_20;
   let avatarDecoration;
   let profileEffect1;
   let profileFrame1;
   let createUserProfileAnalyticsContext;
-  let closure_24;
+  let closure_25;
   let width;
-  closure_26 = undefined;
+  closure_27 = undefined;
   navigation = undefined;
   function handleUserSettingsClose() {
     navigation.goBack();
-    const obj = { sourceAnalyticsLocations: analyticsLocations, localUser };
+    const obj = { navigationReplace, sourceAnalyticsLocations: analyticsLocations, localUser };
     const tmp2 = showUserProfileActionSheetDefault;
     const merged = Object.assign(createUserProfileAnalyticsContext);
     tmp2(obj);
   }
   const initialSection = userId.initialSection;
-  let tmp2 = first1();
+  let tmp2 = closure_18();
   const tmp3 = userId;
   const tmp4 = localUser;
   let obj = userId(localUser[14]);
@@ -708,8 +706,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp7 = channelId;
   const top = channelId(localUser[16])().top;
   let obj3 = userId(localUser[17]);
-  let items = [stateFromStores];
-  stateFromStores = obj3.useStateFromStores(items, () => UserStore.getUser(userId));
+  let items = [top];
+  const stateFromStores = obj3.useStateFromStores(items, () => UserStore.getUser(userId));
   let obj4 = stateFromStores;
   if (stateFromStores == null) {
     let id;
@@ -723,14 +721,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     obj4 = tmp10;
   }
   const tmp3Result = tmp3(tmp4[17]);
-  const items1 = [sharedValue1];
+  const items1 = [sharedValue];
   const items2 = [channelId];
   const stateFromStores1 = tmp3Result.useStateFromStores(items1, () => ChannelStore.getChannel(channelId), items2);
   guild_id = undefined;
   if (stateFromStores1 != null) {
     guild_id = stateFromStores1.guild_id;
   }
-  const items3 = [top];
+  const items3 = [sharedValue1];
   const tmp3Result13 = tmp3(tmp4[17]);
   stateFromStores2 = tmp3Result13.useStateFromStores(items3, () => {
     let member = null;
@@ -745,14 +743,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     id1 = obj4.id;
   }
   if (id1 == null) {
-    id1 = closure_13;
+    id1 = stateFromStores2;
   }
   let tmp16;
   if (showGuildProfile) {
     tmp16 = guild_id;
   }
   const tmp7ResultResult = tmp7Result(id1, tmp16);
-  closure_13 = tmp7ResultResult;
+  constants = tmp7ResultResult;
   const items4 = [];
   const tmp7Result10 = tmp7(tmp4[20]);
   const arraySpreadResult = HermesBuiltin.arraySpread(items4, prop, 0);
@@ -762,11 +760,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const bottomSheetRef1 = tmp3Result14.useBottomSheetRef();
   const bottomSheetClose = bottomSheetRef1.bottomSheetClose;
   const bottomSheetRef = bottomSheetRef1.bottomSheetRef;
-  const ref = isPreviewingChanges.useRef(null);
+  const ref = onClose.useRef(null);
   const tmp3Result15 = tmp3(tmp4[14]);
   sharedValue2 = tmp3Result15.useSharedValue(0);
   const items5 = [sharedValue2];
-  const memo = isPreviewingChanges.useMemo(() => (arg0, arg1, arg2) => {
+  const memo = onClose.useMemo(() => (arg0, arg1, arg2) => {
     let animatedScrollableState;
     let workletCallback;
     const obj = animatedScrollableState(closure_1_2[13]);
@@ -798,7 +796,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     return obj5;
   }, items5);
   const tmp3Result16 = tmp3(tmp4[14]);
-  class W {
+  class Y {
     constructor() {
       let transform;
       const obj = sharedValue2;
@@ -812,24 +810,24 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       return { transform };
     }
   }
-  W.__closure = { scrollPosition: sharedValue2 };
-  W.__workletHash = 4091977514258;
-  W.__initData = __initData8;
-  const animatedStyle = tmp3Result16.useAnimatedStyle(W);
-  const tmp25 = onClose(isPreviewingChanges.useState(false), 2);
+  Y.__closure = { scrollPosition: sharedValue2 };
+  Y.__workletHash = 4091977514258;
+  Y.__initData = handleUserSettingsClose;
+  const animatedStyle = tmp3Result16.useAnimatedStyle(Y);
+  const tmp25 = navigationReplace(onClose.useState(false), 2);
   first = tmp25[0];
-  closure_17 = tmp25[1];
-  const tmp27 = onClose(isPreviewingChanges.useState(0), 2);
+  closure_18 = tmp25[1];
+  const tmp27 = navigationReplace(onClose.useState(0), 2);
   first1 = tmp27[0];
-  closure_19 = tmp27[1];
-  const callback = isPreviewingChanges.useCallback((nativeEvent) => {
-    closure_19(Math.floor(nativeEvent.nativeEvent.layout.width));
+  closure_20 = tmp27[1];
+  const callback = onClose.useCallback((nativeEvent) => {
+    closure_20(Math.floor(nativeEvent.nativeEvent.layout.width));
   }, []);
   const ProfileVisibility = tmp3(tmp4[22]).ProfileVisibility;
   const setting = ProfileVisibility.useSetting();
-  const items6 = [obj4];
+  const items6 = [stateFromStores];
   const tmp3Result17 = tmp3(tmp4[17]);
-  const stateFromStoresObject = tmp3Result17.useStateFromStoresObject(items6, () => obj4.getPendingChanges());
+  const stateFromStoresObject = tmp3Result17.useStateFromStoresObject(items6, () => stateFromStores.getPendingChanges());
   avatarDecoration = undefined;
   ({ pendingThemeColors, pendingAvatarDecoration, pendingProfileEffect, pendingProfileFrame } = stateFromStoresObject);
   if (collectibleProfileOverrides != null) {
@@ -871,7 +869,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       tmp39 = skuId;
     }
     const tmp7Result2Result = tmp7Result11(tmp39);
-    closure_24 = tmp7Result2Result;
+    closure_25 = tmp7Result2Result;
     let tmp42;
     const tmp7Result12 = tmp7(tmp4[26]);
     if (!isScreenLandscape) {
@@ -892,7 +890,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       let obj2;
       let tmp10;
       let tmp2 = null;
-      if (null != closure_24) {
+      if (null != closure_25) {
         const obj = { animatedPosition: sharedValue, safeAreaTop: top, animatedIndex: sharedValue1, children: authStore4(tmp10, obj2) };
         obj2 = { frame: tmp, frameOrder: ProfileFrameLayerOrder.ProfileFrameLayerOrder.BACK, profileThemeType: UserProfileThemeTypes.ACTION_SHEET, containerWidth: first1 };
         tmp10 = ProfileFrameDefault;
@@ -918,7 +916,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       ({ theme, primaryColor, secondaryColor } = tmp7Result14(obj6));
       tmp7Result14(obj6);
-      const tmp57 = tmp7(tmp4[33])(sharedValue2);
+      const tmp57 = tmp7(tmp4[33])(analyticsLocations);
       size = tmp7(tmp4[34])();
       width = size.width;
       const diff = size.height - tmp3(tmp4[35]).NAV_BAR_HEIGHT_MULTILINE - top;
@@ -927,7 +925,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const memo2 = obj8.useMemo(() => {
         const tmp = isPreviewingChanges;
         if (tmp) {
-          if (null != closure_24) {
+          if (null != closure_25) {
             const _Math = Math;
             const bound = Math.min(width, ACTION_SHEET_MAX_WIDTH);
             return scaleProfileFrameDefault(tmp2, bound).overflowTop;
@@ -943,7 +941,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const token = tmp3Result21.useToken(tmp7(tmp4[39]).colors.INTERACTIVE_TEXT_HOVER, theme);
       const obj7 = { userId, user: obj4, channelId, guildId: guild_id, displayProfile: tmp7ResultResult, guildMember: stateFromStores2 };
       const tmp63 = tmp7(tmp4[40])(obj7);
-      closure_26 = tmp63;
+      closure_27 = tmp63;
       const items9 = [obj4, channelId];
       const items10 = [stateFromStores, userId];
       const memo3 = obj8.useMemo(() => {
@@ -979,7 +977,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }, items11);
       const items12 = [tmp63, tmp7ResultResult, guild_id, first, stateFromStores2];
       const effect2 = obj8.useEffect(() => {
-        const tmp = first || null == closure_13;
+        const tmp = first || null == constants;
         if (!tmp) {
           let tmp6 = null == guild_id;
           if (!tmp6) {
@@ -991,8 +989,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           }
           if (tmp6) {
             const obj = AnalyticsUtilsDefault;
-            obj.track(stateFromStores2.OPEN_POPOUT, closure_26);
-            closure_17(true);
+            obj.track(guild_id.OPEN_POPOUT, closure_27);
+            closure_18(true);
           }
         }
       }, items12);
@@ -1021,7 +1019,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const obj = { type: "Collectibles Shop Details Modal Expanded", location_stack: tmp, sku_id: skuId };
           skuId = undefined;
           const track = tmp3(1267).track;
-          const OPEN_MODAL = stateFromStores2.OPEN_MODAL;
+          const OPEN_MODAL = guild_id.OPEN_MODAL;
           AnalyticsUtilsDefault;
           if (avatarDecoration != null) {
             skuId = avatarDecoration.skuId;
@@ -1084,9 +1082,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const tmp3Result22 = tmp3(tmp4[48]);
       navigation = tmp3Result22.useNavigation();
       if (null == obj4) {
-        const obj9 = { value: analyticsLocations, children: first(UserProfileAnalyticsProvider, obj10) };
+        const obj9 = { value: analyticsLocations, children: sharedValue2(UserProfileAnalyticsProvider, obj10) };
         const AnalyticsLocationProvider = tmp3(tmp4[20]).AnalyticsLocationProvider;
-        obj10 = { value: createUserProfileAnalyticsContext, openedAt, fetchStartedAt, fetchEndedAt, isLoaded, children: first(BottomSheet2, obj11) };
+        obj10 = { value: createUserProfileAnalyticsContext, openedAt, fetchStartedAt, fetchEndedAt, isLoaded, children: sharedValue2(BottomSheet2, obj11) };
         fetchStartedAt = undefined;
         UserProfileAnalyticsProvider = tmp3(tmp4[23]).UserProfileAnalyticsProvider;
         if (tmp7ResultResult != null) {
@@ -1100,7 +1098,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         if (tmp7ResultResult != null) {
           isLoaded = tmp7ResultResult.isLoaded;
         }
-        obj11 = { children: first(EmptyState, obj12) };
+        obj11 = { children: sharedValue2(EmptyState, obj12) };
         BottomSheet2 = tmp3(tmp4[50]).BottomSheet;
         obj12 = { style: { marginTop: 42 }, Illustration: tmp3(tmp4[52]).NoResults, body: intl2.string(tmp3(tmp4[53]).t.eAn6z2) };
         EmptyState = tmp3(tmp4[51]).EmptyState;
@@ -1108,9 +1106,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         tmp109Result9 = tmp105(AnalyticsLocationProvider, obj9);
       } else {
         let tmp109Result5;
-        const obj13 = { theme, primaryColor, secondaryColor, children: first(AnalyticsLocationProvider2, obj14) };
+        const obj13 = { theme, primaryColor, secondaryColor, children: sharedValue2(AnalyticsLocationProvider2, obj14) };
         const ThemeContextProvider2 = tmp3(tmp4[54]).ThemeContextProvider;
-        obj14 = { value: analyticsLocations, children: closure_17(UserProfileAnalyticsProvider2, obj15) };
+        obj14 = { value: analyticsLocations, children: first(UserProfileAnalyticsProvider2, obj15) };
         AnalyticsLocationProvider2 = tmp3(tmp4[20]).AnalyticsLocationProvider;
         obj15 = { value: createUserProfileAnalyticsContext, openedAt, fetchStartedAt: fetchStartedAt1, fetchEndedAt: fetchEndedAt1, isLoaded: isLoaded1, children: items18 };
         fetchStartedAt1 = undefined;
@@ -1131,13 +1129,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         BottomSheet = tmp3(tmp4[50]).BottomSheet;
         if (tmp110Result) {
           const obj17 = { animatedPosition: sharedValue };
-          tmp109Result = tmp109(createUserProfileAnalyticsContext, obj17);
+          tmp109Result = tmp109(profileFrame1, obj17);
         }
         items15 = [tmp109Result, , , ];
         const obj18 = { gradientHeight: diff, bannerHeight: tmp57 };
-        items15[1] = first(tmp7(tmp4[55]), obj18);
+        items15[1] = sharedValue2(tmp7(tmp4[55]), obj18);
         let str2;
-        const obj19 = { scrollsToTop: false, style: tmp2.container, contentContainerStyle: obj20, scrollEventsHandlersHook: tmp79, ref, children: first(sharedValue, obj29) };
+        const obj19 = { scrollsToTop: false, style: tmp2.container, contentContainerStyle: obj20, scrollEventsHandlersHook: tmp79, ref, children: sharedValue2(prop, obj29) };
         const BottomSheetScrollView = tmp3(tmp4[13]).BottomSheetScrollView;
         if (isPreviewingChanges) {
           str2 = "none";
@@ -1155,6 +1153,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           displayProfile: tmp7ResultResult,
           disableCalls,
           disableMessage,
+          navigationReplace,
           isVoiceContext,
           location: _location,
           disableStatus: memo3,
@@ -1163,16 +1162,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           avatarDecorationOverride: avatarDecoration1,
           navigateToShop() {
                   const obj = openUserSettings;
-                  const obj2 = { screen: analyticsLocations.COLLECTIBLES_SHOP, onClose: handleUserSettingsClose };
+                  const obj2 = { screen: constants.COLLECTIBLES_SHOP, onClose: handleUserSettingsClose };
                   return obj.openUserSettings(obj2);
                 },
           navigateToPremium() {
                   const obj = openUserSettings;
-                  const obj2 = { screen: analyticsLocations.PREMIUM, onClose: handleUserSettingsClose };
+                  const obj2 = { screen: constants.PREMIUM, onClose: handleUserSettingsClose };
                   return obj.openUserSettings(obj2);
                 },
           showUserProfileActionSheet: function showUserProfileActionSheetWithParams() {
-                  const obj = { sourceAnalyticsLocations: analyticsLocations, localUser };
+                  const obj = { navigationReplace, sourceAnalyticsLocations: analyticsLocations, localUser };
                   const tmp = showUserProfileActionSheetDefault;
                   const merged = Object.assign(createUserProfileAnalyticsContext);
                   tmp(obj);
@@ -1213,7 +1212,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         items16 = [tmp109Result5, ];
         let tmp109Result6 = null != tmp50Result;
         if (tmp109Result6) {
-          const obj26 = { style: items17, pointerEvents: "none", children: first(tmp7(tmp4[61]), obj28) };
+          const obj26 = { style: items17, pointerEvents: "none", children: sharedValue2(tmp7(tmp4[61]), obj28) };
           items17 = [tmp2.profileEffect, , ];
           const obj27 = { height: diff };
           items17[1] = obj27;
@@ -1223,8 +1222,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           tmp109Result6 = tmp109(View, obj26);
         }
         items16[1] = tmp109Result6;
-        obj29 = { children: closure_17(sharedValue, obj21) };
-        items15[2] = first(BottomSheetScrollView, obj19);
+        obj29 = { children: first(prop, obj21) };
+        items15[2] = sharedValue2(BottomSheetScrollView, obj19);
         let tmp109Result7 = !tmp110Result;
         if (tmp109Result7) {
           const obj30 = { variant: "floating", tabStyle: obj31, onPress: bottomSheetClose };
@@ -1232,26 +1231,26 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           tmp109Result7 = tmp109(tmp3(tmp4[62]).ActionSheetHeaderBar, obj30);
         }
         items15[3] = tmp109Result7;
-        items18 = [closure_17(BottomSheet, obj16), , ];
+        items18 = [first(BottomSheet, obj16), , ];
         if (tmp110Result) {
           let tmp109Result8 = null != tmp7Result2Result;
           const obj32 = { animatedPosition: sharedValue, safeAreaTop: top, animatedIndex: sharedValue1, children: items19 };
-          const tmp99 = closure_26;
+          const tmp99 = width;
           if (tmp109Result8) {
-            const obj33 = { frame: tmp7Result2Result, profileThemeType: guild_id.ACTION_SHEET, frameOrder: tmp3(tmp4[30]).ProfileFrameLayerOrder.FRONT, containerWidth: first1 };
+            const obj33 = { frame: tmp7Result2Result, profileThemeType: obj4.ACTION_SHEET, frameOrder: tmp3(tmp4[30]).ProfileFrameLayerOrder.FRONT, containerWidth: first1 };
             const tmp7Result18 = tmp7(tmp4[29]);
             tmp109Result8 = tmp109(tmp7Result18, obj33);
           }
           items19 = [tmp109Result8, ];
           const obj34 = { variant: "floating", tabStyle: obj35, onPress: bottomSheetClose };
           obj35 = { backgroundColor: token };
-          items19[1] = first(tmp3(tmp4[62]).ActionSheetHeaderBar, obj34);
+          items19[1] = sharedValue2(tmp3(tmp4[62]).ActionSheetHeaderBar, obj34);
           tmp110Result = tmp110(tmp99, obj32);
         }
         items18[1] = tmp110Result;
         if (isPreviewingChanges) {
           let mNZcD8;
-          const obj36 = { theme: tmp61, primaryColor: null, secondaryColor: null, children: first(ActionSheetBackdropToast, obj37) };
+          const obj36 = { theme: tmp61, primaryColor: null, secondaryColor: null, children: sharedValue2(ActionSheetBackdropToast, obj37) };
           const ThemeContextProvider = tmp3(tmp4[54]).ThemeContextProvider;
           ActionSheetBackdropToast = tmp3(tmp4[63]).ActionSheetBackdropToast;
           const intl = tmp3(tmp4[53]).intl;

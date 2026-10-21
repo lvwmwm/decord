@@ -1,12 +1,12 @@
-// Module ID: 15832
-// Function ID: 15833
+// Module ID: 15908
+// Function ID: 15909
 // Name: SettingsAccountStandingScreen
-// Dependencies: [21, 558, 576, 15833, 2]
+// Dependencies: [21, 558, 576, 15909, 2]
 
-// Module 15832 (SettingsAccountStandingScreen)
+// Module 15908 (SettingsAccountStandingScreen)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import SafetyHubPageDefault from "SafetyHubPage" /* 15833 */;
+import SafetyHubPageDefault from "SafetyHubPage" /* 15909 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

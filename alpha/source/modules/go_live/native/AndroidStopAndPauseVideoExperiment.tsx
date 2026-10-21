@@ -1,9 +1,9 @@
-// Module ID: 7776
-// Function ID: 7777
+// Module ID: 7804
+// Function ID: 7805
 // Name: AndroidStopAndPauseVideoExperiment
 // Dependencies: [1455, 2]
 
-// Module 7776 (AndroidStopAndPauseVideoExperiment)
+// Module 7804 (AndroidStopAndPauseVideoExperiment)
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 

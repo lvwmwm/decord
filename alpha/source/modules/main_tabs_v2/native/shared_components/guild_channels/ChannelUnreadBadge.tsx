@@ -1,18 +1,18 @@
-// Module ID: 17211
-// Function ID: 17212
+// Module ID: 17287
+// Function ID: 17288
 // Name: ChannelUnreadBadge
-// Dependencies: [19, 17, 11934, 6656, 21, 4945, 558, 11935, 5214, 9632, 2]
+// Dependencies: [19, 17, 11982, 6684, 21, 4966, 558, 11983, 5235, 9662, 2]
 
-// Module 17211 (ChannelUnreadBadge)
+// Module 17287 (ChannelUnreadBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import useFontScale from "useFontScale" /* 5214 */;
-import ReadStateConstants from "ReadStateConstants" /* 6656 */;
-import shared_components_Badge from "shared_components/Badge" /* 9632 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11934 */;
-import ChannelListLayout from "ChannelListLayout" /* 11935 */;
+import useFontScale from "useFontScale" /* 5235 */;
+import ReadStateConstants from "ReadStateConstants" /* 6684 */;
+import shared_components_Badge from "shared_components/Badge" /* 9662 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11982 */;
+import ChannelListLayout from "ChannelListLayout" /* 11983 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

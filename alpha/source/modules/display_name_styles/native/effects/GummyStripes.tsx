@@ -1,14 +1,14 @@
-// Module ID: 15687
-// Function ID: 15688
+// Module ID: 15763
+// Function ID: 15764
 // Name: GummyStripes
-// Dependencies: [19, 17, 21, 4945, 558, 576, 1105, 2]
+// Dependencies: [19, 17, 21, 4966, 558, 576, 1105, 2]
 
-// Module 15687 (GummyStripes)
+// Module 15763 (GummyStripes)
 import react_native from "react-native" /* 17 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

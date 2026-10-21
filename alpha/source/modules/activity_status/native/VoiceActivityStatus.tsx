@@ -1,17 +1,17 @@
-// Module ID: 10582
-// Function ID: 10583
+// Module ID: 10611
+// Function ID: 10612
 // Name: VoiceActivityStatus
-// Dependencies: [19, 21, 4945, 1128, 558, 576, 10583, 10572, 2]
+// Dependencies: [19, 21, 4966, 1128, 558, 576, 10612, 10601, 2]
 // Exports: getVoiceActivityStatusText
 
-// Module 10582 (VoiceActivityStatus)
+// Module 10611 (VoiceActivityStatus)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
-import ActivityStatusTextDefault from "ActivityStatusText" /* 10572 */;
-import UserProfileVoiceActivityIconDefault from "UserProfileVoiceActivityIcon" /* 10583 */;
+import ActivityStatusTextDefault from "ActivityStatusText" /* 10601 */;
+import UserProfileVoiceActivityIconDefault from "UserProfileVoiceActivityIcon" /* 10612 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 10574
-// Function ID: 10575
+// Module ID: 10603
+// Function ID: 10604
 // Name: PresenceActivityStatus
-// Dependencies: [19, 1087, 21, 7759, 10575, 9543, 8526, 10576, 10570, 558, 576, 10577, 10569, 10572, 2]
+// Dependencies: [19, 1087, 21, 7787, 10604, 9573, 8553, 10605, 10599, 558, 576, 10606, 10598, 10601, 2]
 
-// Module 10574 (PresenceActivityStatus)
+// Module 10603 (PresenceActivityStatus)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7759 */;
-import ActivityStatusIconDefault from "ActivityStatusIcon" /* 10569 */;
-import ActivityStatusTextDefault from "ActivityStatusText" /* 10572 */;
-import conjurePresenceActivity from "conjurePresenceActivity" /* 10575 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 10577 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7787 */;
+import ActivityStatusIconDefault from "ActivityStatusIcon" /* 10598 */;
+import ActivityStatusTextDefault from "ActivityStatusText" /* 10601 */;
+import conjurePresenceActivity from "conjurePresenceActivity" /* 10604 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 10606 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -27,27 +27,27 @@ function getActivityStatusIcon(activity) {
     const obj = conjurePresenceActivity;
     if (!obj.isConjurePresenceActivity(activity)) {
       if (activity.type === ActivityTypes.PLAYING) {
-        GameControllerIcon = tmp2(9543).GameControllerIcon;
+        GameControllerIcon = tmp2(9573).GameControllerIcon;
       } else if (activity.type === ActivityTypes.LISTENING) {
-        GameControllerIcon = tmp2(10576).MusicIcon;
+        GameControllerIcon = tmp2(10605).MusicIcon;
       } else {
         if (activity.type !== ActivityTypes.WATCHING) {
           if (activity.type !== ActivityTypes.STREAMING) {
             GameControllerIcon = null;
             if (activity.type === ActivityTypes.COMPETING) {
-              GameControllerIcon = tmp2(9543).GameControllerIcon;
+              GameControllerIcon = tmp2(9573).GameControllerIcon;
             }
           }
         }
-        GameControllerIcon = tmp2(10570).TvIcon;
+        GameControllerIcon = tmp2(10599).TvIcon;
       }
     }
     return GameControllerIcon;
   }
   if (flag) {
-    AppsIcon = tmp5(9543).GameControllerIcon;
+    AppsIcon = tmp5(9573).GameControllerIcon;
   } else {
-    AppsIcon = tmp5(8526).AppsIcon;
+    AppsIcon = tmp5(8553).AppsIcon;
   }
   GameControllerIcon = AppsIcon;
 }
@@ -171,13 +171,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PresenceActi
   }
   if (tmp6) {
     const obj = { icon: tmp3, style: iconStyle };
-    tmp6 = React3(tmp(10569), obj);
+    tmp6 = React3(tmp(10598), obj);
   }
   const children = [tmp6, ];
   let tmp9 = !flag;
   if (tmp9) {
     const obj2 = { style: textStyle, maxFontSizeMultiplier, children: text };
-    tmp9 = React3(tmp(10572), obj2);
+    tmp9 = React3(tmp(10601), obj2);
   }
   children[1] = tmp9;
   return tmp4(tmp5, { children });

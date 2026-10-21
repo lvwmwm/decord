@@ -1,10 +1,10 @@
-// Module ID: 11318
-// Function ID: 11319
+// Module ID: 11362
+// Function ID: 11363
 // Name: VideoStreamReadyActionCreators
 // Dependencies: [584, 2]
 // Exports: clearVideoStreamTimeout, videoStreamTimedOut
 
-// Module 11318 (VideoStreamReadyActionCreators)
+// Module 11362 (VideoStreamReadyActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 

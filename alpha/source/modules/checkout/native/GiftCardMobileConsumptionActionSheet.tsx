@@ -1,18 +1,18 @@
-// Module ID: 7449
-// Function ID: 7450
+// Module ID: 7477
+// Function ID: 7478
 // Name: GiftCardMobileConsumptionActionSheet
-// Dependencies: [19, 17, 4797, 21, 4945, 587, 558, 576, 1633, 5171, 7450, 1128, 2232, 5195, 5205, 5935, 5226, 2]
+// Dependencies: [19, 17, 4818, 21, 4966, 587, 558, 576, 1633, 5192, 7478, 1128, 2242, 5216, 5226, 5957, 5247, 2]
 
-// Module 7449 (GiftCardMobileConsumptionActionSheet)
+// Module 7477 (GiftCardMobileConsumptionActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import _modDef2232 from "module_2232" /* 2232 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4797 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
+import _modDef2242 from "module_2242" /* 2242 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -155,7 +155,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCardMobi
           return tmp14(ContentDismissActionType.USER_DISMISS);
         }
       }
-      const tmp19 = closure_6(tmp(7450).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 });
+      const tmp19 = closure_6(tmp(7478).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 });
       cResult[14] = tmp19;
       tmp18 = tmp19;
     } else {
@@ -190,7 +190,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCardMobi
           return tmp14(ContentDismissActionType.USER_DISMISS);
         }
       }
-      const stringResult = obj4.string(_modDef2232.V3DI1E);
+      const stringResult = obj4.string(_modDef2242.V3DI1E);
       cResult[17] = stringResult;
       tmp23 = stringResult;
     } else {
@@ -208,8 +208,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCardMobi
       }
       const obj5 = { variant: "text-md/medium", color: "text-default", style: body, children: tmp23 };
       cResult[18] = tmp4.body;
-      cResult[19] = closure_6(tmp(5195).Text, obj5);
-      const tmp26 = closure_6(tmp(5195).Text, obj5);
+      cResult[19] = closure_6(tmp(5216).Text, obj5);
+      const tmp26 = closure_6(tmp(5216).Text, obj5);
     } else {
       class A {
         constructor() {
@@ -224,7 +224,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCardMobi
           return tmp14(ContentDismissActionType.USER_DISMISS);
         }
       }
-      const stringResult1 = obj6.string(_modDef2232.YZePWx);
+      const stringResult1 = obj6.string(_modDef2242.YZePWx);
       cResult[20] = stringResult1;
       tmp27 = stringResult1;
     } else {
@@ -250,8 +250,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCardMobi
             }
       };
       cResult[21] = tmp13;
-      cResult[22] = closure_6(tmp(5205).Button, obj7);
-      const tmp30 = closure_6(tmp(5205).Button, obj7);
+      cResult[22] = closure_6(tmp(5226).Button, obj7);
+      const tmp30 = closure_6(tmp(5226).Button, obj7);
     } else {
       class A {
         constructor() {
@@ -267,7 +267,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCardMobi
       }
     }
     const obj8 = { spacing: nativeDefault.space.PX_16, children: items2 };
-    const Stack = tmp(5935).Stack;
+    const Stack = tmp(5957).Stack;
     items2 = [tmp20, tmp25, tmp29];
     cResult[23] = tmp20;
     cResult[24] = tmp25;
@@ -327,26 +327,26 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCardMobi
   };
   obj2 = { style: items2, children: closure_7(Stack, obj3) };
   items2 = [tmp.container, { paddingBottom: bottom }];
-  BottomSheet = markAsDismissed(5226).BottomSheet;
+  BottomSheet = markAsDismissed(5247).BottomSheet;
   obj3 = { spacing: nativeDefault.space.PX_16, children: items3 };
-  Stack = markAsDismissed(5935).Stack;
+  Stack = markAsDismissed(5957).Stack;
   items3 = [, , ];
-  const obj4 = { style: tmp.illustration, children: closure_6(markAsDismissed(7450).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) };
+  const obj4 = { style: tmp.illustration, children: closure_6(markAsDismissed(7478).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) };
   items3[0] = closure_6(View, obj4);
-  const obj5 = { variant: "text-md/medium", color: "text-default", style: tmp.body, children: intl.string(_modDef2232.V3DI1E) };
-  const Text = markAsDismissed(5195).Text;
+  const obj5 = { variant: "text-md/medium", color: "text-default", style: tmp.body, children: intl.string(_modDef2242.V3DI1E) };
+  const Text = markAsDismissed(5216).Text;
   intl = markAsDismissed(1128).intl;
   items3[1] = closure_6(Text, obj5);
   const obj6 = {
     size: "lg",
     variant: "secondary",
     grow: true,
-    text: intl2.string(_modDef2232.YZePWx),
+    text: intl2.string(_modDef2242.YZePWx),
     onPress() {
       return closure_3(ContentDismissActionType.USER_DISMISS);
     }
   };
-  const Button = markAsDismissed(5205).Button;
+  const Button = markAsDismissed(5226).Button;
   intl2 = markAsDismissed(1128).intl;
   items3[2] = closure_6(Button, obj6);
   return closure_6(BottomSheet, obj);

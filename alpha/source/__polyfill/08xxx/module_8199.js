@@ -1,77 +1,322 @@
 // Module ID: 8199
 // Function ID: 8200
-// Dependencies: []
-// Exports: addMissingNamespaces, isMissingNamespaceError
+// Dependencies: [8200, 8193, 8190]
+// Exports: findOffsets
 
 // Module 8199
-let closure_0 = { xmp: "http://ns.adobe.com/xap/1.0/", tiff: "http://ns.adobe.com/tiff/1.0/", exif: "http://ns.adobe.com/exif/1.0/", dc: "http://purl.org/dc/elements/1.1/", xmpMM: "http://ns.adobe.com/xap/1.0/mm/", stEvt: "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#", stRef: "http://ns.adobe.com/xap/1.0/sType/ResourceRef#", photoshop: "http://ns.adobe.com/photoshop/1.0/" };
+import _mod8190 from "module_8190" /* 8190 */;
+import _modDef8193 from "module_8193" /* 8193 */;
+import get64BitValue from "get64BitValue" /* 8200 */;
 
-export const isMissingNamespaceError = function isMissingNamespaceError(message) {
-  const items = ["prefix is non-null and namespace is null", "prefix not bound to a namespace", "prefix inte bundet till en namnrymd", /Namespace prefix .+ is not defined/];
-  let num = 0;
-  if (0 < items.length) {
-    const _RegExp = RegExp;
-    const self = this;
-    const self2 = this;
-    const regExp = new RegExp(items[num]);
-    while (!regExp.test(message.message)) {
-      num = num + 1;
+function parseBox(getUint32, sum) {
+  let contentOffset;
+  let length;
+  let obj;
+  let obj12;
+  let obj14;
+  let obj20;
+  const uint32 = getUint32.getUint32(sum);
+  if (0 === uint32) {
+    obj = { length: getUint32.byteLength - sum, contentOffset: sum + 4 + 4 };
+    const obj2 = { length: getUint32.byteLength - sum, contentOffset: sum + 4 + 4 };
+  } else {
+    if (1 === uint32) {
+      if (0 === getUint32.getUint32(sum + 8)) {
+        obj = { length: getUint32.getUint32(sum + 12), contentOffset: sum + 4 + 4 + 8 };
+        const obj3 = { length: getUint32.getUint32(sum + 12), contentOffset: sum + 4 + 4 + 8 };
+      }
     }
-    return true;
+    obj = { length: uint32, contentOffset: sum + 4 + 4 };
   }
-  return false;
-};
-export const addMissingNamespaces = function addMissingNamespaces(tmp7Result) {
-  const match = tmp7Result.match(/<([A-Za-z_][A-Za-z0-9._-]*)([^>]*)>/);
-  if (match) {
-    const items = [];
-    const obj = /xmlns:([\w-]+)=["'][^"']+["']/g;
-    let match1 = obj.exec(tmp7Result);
-    if (null !== match1) {
-      do {
-        if (-1 === items.indexOf(match1[1])) {
-          let arr = items.push(match1[1]);
-        }
-        match1 = obj.exec(tmp7Result);
-      } while (null !== match1);
-    }
-    const items1 = [];
-    const obj2 = /\b([A-Za-z_][A-Za-z0-9._-]*):[A-Za-z_][A-Za-z0-9._-]*\b/g;
-    let match2 = obj2.exec(tmp7Result);
-    if (null !== match2) {
-      do {
-        let tmp8 = match2[1];
-        let tmp9 = "xmlns" !== tmp8 && "xml" !== tmp8;
-        if (tmp9) {
-          if (-1 === items1.indexOf(tmp8)) {
-            let arr2 = items1.push(tmp8);
+  ({ length, contentOffset } = obj);
+  if (length >= 8) {
+    const uint321 = getUint32.getUint32(sum + 4);
+    if (1718909296 === uint321) {
+      const obj4 = { type: "ftyp", majorBrand: obj20.getStringFromDataView(getUint32, contentOffset, 4), length };
+      obj20 = _mod8190;
+      return obj4;
+    } else if (1768977008 === uint321) {
+      const diff = length - (contentOffset - sum);
+      const items = [c3, c4];
+      const items1 = [];
+      sum = contentOffset;
+      if (contentOffset < contentOffset + diff) {
+        const arr12 = parseBox(getUint32, sum);
+        while (undefined !== arr12) {
+          let tmp63 = undefined === arr12.type;
+          if (!tmp63) {
+            let tmp64 = undefined !== arr12.itemType && -1 === items.indexOf(arr12.itemType);
+            tmp63 = tmp64;
+          }
+          if (!tmp63) {
+            let arr = items1.push(arr12);
+          }
+          sum = sum + arr12.length;
+          if (sum >= contentOffset + diff) {
+            break;
           }
         }
-        match2 = obj2.exec(tmp7Result);
-      } while (null !== match2);
-    }
-    const found = items1.filter((item) => -1 === items.indexOf(item));
-    let replaced = tmp7Result;
-    if (0 !== found.length) {
-      let num3;
-      const items2 = [];
-      for (let num3 = 0; num3 < found.length; num3 = num3 + 1) {
-        let tmp12 = found[num3];
-        let text = closure_0[tmp12];
-        if (!text) {
-          text = `http://fallback.namespace/${tmp12}`;
-        }
-        let arr3 = items2.push(` xmlns:${tmp12}="${tmp14}"`);
       }
-      const _RegExp = RegExp;
-      const self = this;
-      const self2 = this;
-      const joined = items2.join("");
-      const regExp = new RegExp("<" + tmp2 + "([^>]*)>");
-      replaced = tmp7Result.replace(regExp, `<${tmp2}$1${tmp17}>`);
+      return { type: "iprp", subBoxes: items1, length };
+    } else if (1768973167 === uint321) {
+      const diff1 = length - (contentOffset - sum);
+      const items2 = [c3, c4];
+      const items3 = [];
+      let sum1 = contentOffset;
+      if (contentOffset < contentOffset + diff1) {
+        const arr9 = parseBox(getUint32, sum1);
+        while (undefined !== arr9) {
+          let tmp54 = undefined === arr9.type;
+          if (!tmp54) {
+            let tmp55 = undefined !== arr9.itemType && -1 === items2.indexOf(arr9.itemType);
+            tmp54 = tmp55;
+          }
+          if (!tmp54) {
+            let arr2 = items3.push(arr9);
+          }
+          sum1 = sum1 + arr9.length;
+          if (sum1 >= contentOffset + diff1) {
+            break;
+          }
+        }
+      }
+      return { type: "ipco", properties: items3, length };
+    } else if (1668246642 === uint321) {
+      let tmp47;
+      const obj15 = _mod8190;
+      const stringFromDataView = obj15.getStringFromDataView(getUint32, contentOffset, 4);
+      if ("prof" === stringFromDataView) {
+        tmp47 = { offset: contentOffset + 4, length: getUint32.getUint32(contentOffset + 4), chunkNumber: 1, chunksTotal: 1 };
+      }
+      return { type: "colr", icc: tmp47, length };
+    } else {
+      let parseItemLocationBoxResult;
+      const uint8 = getUint32.getUint8(contentOffset);
+      if (1835365473 === uint321) {
+        let sum2 = contentOffset + 1 + 3;
+        const items4 = [c3, c4];
+        const items5 = [];
+        const sum3 = sum2 + (length - (sum2 - sum));
+        if (sum2 < sum3) {
+          const arr6 = parseBox(getUint32, sum2);
+          while (undefined !== arr6) {
+            let tmp41 = undefined === arr6.type;
+            if (!tmp41) {
+              let tmp42 = undefined !== arr6.itemType && -1 === items4.indexOf(arr6.itemType);
+              tmp41 = tmp42;
+            }
+            if (!tmp41) {
+              let arr4 = items5.push(arr6);
+            }
+            sum2 = sum2 + arr6.length;
+            if (sum2 >= sum3) {
+              break;
+            }
+          }
+        }
+        parseItemLocationBoxResult = { type: "meta", subBoxes: items5, length };
+        const obj11 = { type: "meta", subBoxes: items5, length };
+      } else if (1768714083 === uint321) {
+        const obj13 = get64BitValue;
+        parseItemLocationBoxResult = obj13.parseItemLocationBox(getUint32, uint8, contentOffset + 1, length);
+      } else if (1768517222 === uint321) {
+        obj12 = { entryCount: contentOffset + 1 + 3, itemInfos: obj12.entryCount + obj14.entryCount };
+        let num13 = 4;
+        if (0 === uint8) {
+          num13 = 2;
+        }
+        const itemInfos = obj12.itemInfos;
+        const diff2 = length - (obj12.itemInfos - sum);
+        const items6 = [c3, c4];
+        const items7 = [];
+        let sum4 = itemInfos;
+        obj14 = { entryCount: num13 };
+        if (itemInfos < itemInfos + diff2) {
+          const arr3 = parseBox(getUint32, sum4);
+          while (undefined !== arr3) {
+            let tmp26 = undefined === arr3.type;
+            if (!tmp26) {
+              let tmp27 = undefined !== arr3.itemType && -1 === items6.indexOf(arr3.itemType);
+              tmp26 = tmp27;
+            }
+            if (!tmp26) {
+              let arr5 = items7.push(arr3);
+            }
+            sum4 = sum4 + arr3.length;
+            if (sum4 >= itemInfos + diff2) {
+              break;
+            }
+          }
+        }
+        parseItemLocationBoxResult = { type: "iinf", itemInfos: items7, length };
+        const obj16 = { type: "iinf", itemInfos: items7, length };
+      } else if (1768842853 === uint321) {
+        const obj17 = { type: "infe", length };
+        let tmp3 = 0 !== uint8;
+        const sum5 = contentOffset + 1;
+        if (tmp3) {
+          tmp3 = 1 !== uint8;
+        }
+        const sum6 = sum5 + 3;
+        let sum9 = sum6;
+        if (!tmp3) {
+          obj17.itemId = getUint32.getUint16(sum6);
+          const sum7 = sum6 + 2;
+          obj17.itemProtectionIndex = getUint32.getUint16(sum7);
+          const sum8 = sum7 + 2;
+          const obj6 = _mod8190;
+          obj17.itemName = obj6.getNullTerminatedStringFromDataView(getUint32, sum8);
+          sum9 = sum8 + (obj17.itemName.length + 1);
+        }
+        parseItemLocationBoxResult = obj17;
+        if (uint8 >= 2) {
+          let sum10;
+          if (2 === uint8) {
+            obj17.itemId = getUint32.getUint16(sum9);
+            sum10 = sum9 + 2;
+          } else {
+            sum10 = sum9;
+            if (3 === uint8) {
+              obj17.itemId = getUint32.getUint32(sum9);
+              sum10 = sum9 + 4;
+            }
+          }
+          obj17.itemProtectionIndex = getUint32.getUint16(sum10);
+          const sum11 = sum10 + 2;
+          obj17.itemType = getUint32.getUint32(sum11);
+          const sum12 = sum11 + 4;
+          const obj7 = _mod8190;
+          obj17.itemName = obj7.getNullTerminatedStringFromDataView(getUint32, sum12);
+          const sum13 = sum12 + (obj17.itemName.length + 1);
+          if (obj17.itemType === c4) {
+            const tmp13Result = _mod8190;
+            obj17.contentType = tmp13Result.getNullTerminatedStringFromDataView(getUint32, sum13);
+            const sum14 = sum13 + (obj17.contentType.length + 1);
+            parseItemLocationBoxResult = obj17;
+            if (sum + length > sum14) {
+              const tmp13Result3 = _mod8190;
+              obj17.contentEncoding = tmp13Result3.getNullTerminatedStringFromDataView(getUint32, sum14);
+              const sum15 = obj17.contentEncoding.length + 1;
+              parseItemLocationBoxResult = obj17;
+            }
+          } else {
+            parseItemLocationBoxResult = obj17;
+            if (obj17.itemType === c5) {
+              const tmp13Result4 = _mod8190;
+              obj17.itemUri = tmp13Result4.getNullTerminatedStringFromDataView(getUint32, sum13);
+              const sum16 = obj17.itemUri.length + 1;
+              parseItemLocationBoxResult = obj17;
+            }
+          }
+        }
+      } else {
+        parseItemLocationBoxResult = { type: "Array", length };
+      }
+      return parseItemLocationBoxResult;
     }
-    return replaced;
-  } else {
-    return tmp7Result;
   }
+}
+function findIlocItem(subBoxes, arg1) {
+  let closure_0 = arg1;
+  subBoxes = subBoxes.subBoxes;
+  const items = subBoxes.find((type) => "iloc" === type.type).items;
+  return items.find((itemId) => itemId.itemId === closure_0);
+}
+let c3 = 1165519206;
+let c4 = 1835625829;
+let c5 = 1970432288;
+
+export const ITEM_INFO_TYPE_EXIF = 1165519206;
+export const ITEM_INFO_TYPE_MIME = 1835625829;
+export { parseBox };
+export const findOffsets = function findOffsets(byteLength) {
+  let obj;
+  let obj2;
+  function findExifOffset(byteLength, subBoxes) {
+    function findIinfExifItemId(subBoxes) {
+      subBoxes = subBoxes.subBoxes;
+      const itemInfos = subBoxes.find((type) => "iinf" === type.type).itemInfos;
+      return itemInfos.find((itemType) => itemType.itemType === closure_1_3);
+    }
+    function getTiffHeaderOffset(getUint32, sum) {
+      sum = sum + 4;
+      return sum + getUint32.getUint32(sum);
+    }
+    try {
+      const tmp4 = findIlocItem(subBoxes, findIinfExifItemId(subBoxes).itemId);
+      return getTiffHeaderOffset(byteLength, tmp4.baseOffset + tmp4.extents[0].extentOffset);
+    } catch (err) {
+    }
+  }
+  function findXmpChunks(subBoxes) {
+    function findIinfXmpItemId(subBoxes) {
+      subBoxes = subBoxes.subBoxes;
+      const itemInfos = subBoxes.find((type) => "iinf" === type.type).itemInfos;
+      return itemInfos.find((itemType) => itemType.itemType === closure_1_4 && "application/rdf+xml" === itemType.contentType);
+    }
+    try {
+      const itemId = findIinfXmpItemId(subBoxes).itemId;
+      const tmp3 = findIlocItem(subBoxes, itemId);
+      const first = findIlocItem(subBoxes, itemId).extents[0];
+      const items = [{ dataOffset: tmp3.baseOffset + first.extentOffset, length: first.extentLength }];
+      return items;
+    } catch (err) {
+    }
+  }
+  function findIccChunks(subBoxes) {
+    try {
+      subBoxes = subBoxes.subBoxes;
+      const subBoxes1 = subBoxes.find((type) => "iprp" === type.type).subBoxes;
+      const properties = subBoxes1.find((type) => "ipco" === type.type).properties;
+      const icc = properties.find((type) => "colr" === type.type).icc;
+      if (icc) {
+        const items = [tmp2];
+        return items;
+      }
+    } catch (err) {
+    }
+  }
+  let tmp = importDefault;
+  const tmp2 = dependencyMap;
+  if (!_modDef8193.USE_EXIF) {
+    if (!_modDef8193.USE_XMP) {
+      if (!_modDef8193.USE_ICC) {
+        return {};
+      }
+    }
+  }
+  let num = 0;
+  let tmp3;
+  if (8 <= byteLength.byteLength) {
+    let tmp4 = parseBox;
+    const arr = parseBox(byteLength, num);
+    while (undefined !== arr) {
+      tmp3 = arr;
+      if ("meta" === arr.type) {
+        break;
+      } else {
+        let sum = num + arr.length;
+        num = sum;
+        if (sum + 4 + 4 > byteLength.byteLength) {
+          break;
+        }
+      }
+    }
+  }
+  if (tmp3) {
+    obj2 = { hasAppMarkers: undefined !== obj2.tiffHeaderOffset || undefined !== obj2.xmpChunks || undefined !== obj2.iccChunks };
+    if (_modDef8193.USE_EXIF) {
+      obj2.tiffHeaderOffset = findExifOffset(byteLength, tmp3);
+    }
+    if (_modDef8193.USE_XMP) {
+      obj2.xmpChunks = findXmpChunks(tmp3);
+    }
+    if (_modDef8193.USE_ICC) {
+      obj2.iccChunks = findIccChunks(tmp3);
+    }
+    obj = obj2;
+  } else {
+    obj = { hasAppMarkers: false };
+  }
+  return obj;
 };

@@ -1,12 +1,12 @@
-// Module ID: 11998
-// Function ID: 11999
+// Module ID: 12046
+// Function ID: 12047
 // Name: AppDetailsOverflowMenu
-// Dependencies: [109, 19, 21, 558, 576, 9576, 11287, 1128, 10959, 4776, 7234, 5624, 10341, 7907, 9072, 9689, 2]
+// Dependencies: [109, 19, 21, 558, 576, 9606, 11331, 1128, 11103, 4797, 7262, 5644, 10370, 7935, 9099, 9719, 2]
 
-// Module 11998 (AppDetailsOverflowMenu)
+// Module 12046 (AppDetailsOverflowMenu)
 import Fragment from "Fragment" /* 21 */;
-import ToastUtils from "ToastUtils" /* 5624 */;
-import ClipboardUtils from "ClipboardUtils" /* 7234 */;
+import ToastUtils from "ToastUtils" /* 5644 */;
+import ClipboardUtils from "ClipboardUtils" /* 7262 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

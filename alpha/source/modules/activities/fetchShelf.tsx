@@ -1,15 +1,15 @@
-// Module ID: 11274
-// Function ID: 11275
+// Module ID: 11318
+// Function ID: 11319
 // Name: fetchShelf
-// Dependencies: [5, 2046, 2024, 4799, 1087, 1388, 584, 6627, 1275, 2]
+// Dependencies: [5, 2045, 2024, 4820, 1087, 1388, 584, 6655, 1275, 2]
 // Exports: fetchShelf
 
-// Module 11274 (fetchShelf)
+// Module 11318 (fetchShelf)
 import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2046 */;
+import ApplicationStore from "ApplicationStore" /* 2045 */;
 import ApplicationRecord from "ApplicationRecord" /* 2024 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4799 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
 import size from "module_2" /* 2 */;
 
 let c8, c9, closure_4;
@@ -87,7 +87,7 @@ let obj = function _fetchShelf() {
             assets = undefined;
             c8 = 1;
             c9 = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else {
           if (1 === c8) {

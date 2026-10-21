@@ -1,14 +1,14 @@
-// Module ID: 7490
-// Function ID: 7491
+// Module ID: 7518
+// Function ID: 7519
 // Name: payments/OrderActionCreators
-// Dependencies: [5, 5660, 1087, 3, 1297, 4764, 584, 7293, 2]
+// Dependencies: [5, 5680, 1087, 3, 1297, 4785, 584, 7321, 2]
 // Exports: cancelOrderSigning, discardOrder, getOrCreateOrder, markOrderAsSigningInProgress, patchOrder, patchOrderLineItem, updateOrder
 
-// Module 7490 (payments/OrderActionCreators)
+// Module 7518 (payments/OrderActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import PaymentConstants from "PaymentConstants" /* 5660 */;
+import PaymentConstants from "PaymentConstants" /* 5680 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -202,7 +202,7 @@ obj = function _createOrder() {
               body = undefined;
               external_gateway_facet = 1;
               request_gateway_country_code = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === external_gateway_facet) {
             if (arg0 === 1) {
@@ -431,7 +431,7 @@ obj = function _getOrCreateOrder() {
             value = undefined;
             purchase_type = 1;
             isGift = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === purchase_type) {
           if (arg0 === 1) {
@@ -541,7 +541,7 @@ obj = function _patchOrderLineItem() {
               body = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -683,7 +683,7 @@ obj = function _patchOrder() {
               body = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -832,7 +832,7 @@ obj = function _updateOrder() {
               body = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {

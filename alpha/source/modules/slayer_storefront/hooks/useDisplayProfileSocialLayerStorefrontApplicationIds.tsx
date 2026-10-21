@@ -1,13 +1,13 @@
-// Module ID: 9314
-// Function ID: 9315
+// Module ID: 9342
+// Function ID: 9343
 // Name: useDisplayProfileSocialLayerStorefrontApplicationIds
-// Dependencies: [19, 7281, 558, 576, 8612, 9315, 7654, 7657, 504, 12, 2]
+// Dependencies: [19, 7309, 558, 576, 8639, 9343, 7682, 7685, 504, 12, 2]
 
-// Module 9314 (useDisplayProfileSocialLayerStorefrontApplicationIds)
+// Module 9342 (useDisplayProfileSocialLayerStorefrontApplicationIds)
 import _mod12 from "module_12" /* 12 */;
-import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7654 */;
+import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7682 */;
 import react from "react" /* 19 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7281 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7309 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -117,7 +117,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDisplay
                 set.add(applicationIdFromDetectableId);
               }
             });
-          } else if (tmp5 instanceof tmp6(7657).ApplicationWidget) {
+          } else if (tmp5 instanceof tmp6(7685).ApplicationWidget) {
             let applicationIdFromDetectableId = SocialLayerStorefrontStore.getApplicationIdFromDetectableId(tmp5.applicationId);
             if (null != applicationIdFromDetectableId) {
               let addResult = set.add(tmp12);
@@ -262,7 +262,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDisplay
               set.add(applicationIdFromDetectableId);
             }
           });
-        } else if (tmp5 instanceof tmp6(7657).ApplicationWidget) {
+        } else if (tmp5 instanceof tmp6(7685).ApplicationWidget) {
           let applicationIdFromDetectableId = SocialLayerStorefrontStore.getApplicationIdFromDetectableId(tmp5.applicationId);
           if (null != applicationIdFromDetectableId) {
             let addResult = set.add(tmp12);

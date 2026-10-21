@@ -1,20 +1,20 @@
-// Module ID: 12221
-// Function ID: 12222
+// Module ID: 12204
+// Function ID: 12205
 // Name: ConjureFileMention
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 12159, 12222, 12223, 1128, 3820, 5195, 2]
+// Dependencies: [19, 17, 21, 4966, 587, 558, 576, 12203, 12205, 12207, 1128, 3830, 5216, 2]
 
-// Module 12221 (ConjureFileMention)
+// Module 12204 (ConjureFileMention)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef3820 from "module_3820" /* 3820 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import conjureFileMentions from "conjureFileMentions" /* 12159 */;
-import conjureStoredAttachments from "conjureStoredAttachments" /* 12222 */;
-import ConjureFileThumbnailDefault from "ConjureFileThumbnail" /* 12223 */;
+import _modDef3830 from "module_3830" /* 3830 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import conjureFileMentions from "conjureFileMentions" /* 12203 */;
+import conjureStoredAttachments from "conjureStoredAttachments" /* 12205 */;
+import ConjureFileThumbnailDefault from "ConjureFileThumbnail" /* 12207 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureFileM
     str = variant;
   }
   const tmp4 = closure_7();
-  const context = react.useContext(tmp(12159).ConjureFileMentionProjectContext);
+  const context = react.useContext(tmp(12203).ConjureFileMentionProjectContext);
   const tmpResult = conjureStoredAttachments;
   const conjureStoredAttachment = tmpResult.useConjureStoredAttachment(context, attachmentId);
   if (cResult[0] === conjureStoredAttachment) {
@@ -70,7 +70,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureFileM
         }
         if (name1 == null) {
           const intl = tmp(1128).intl;
-          name1 = intl.string(_modDef3820.ff9Q4C);
+          name1 = intl.string(_modDef3830.ff9Q4C);
         }
         let name2;
         if (conjureStoredAttachment != null) {
@@ -151,7 +151,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureFileM
   }
   if (name == null) {
     const intl = intl2.intl;
-    name = intl.string(_modDef3820.ff9Q4C);
+    name = intl.string(_modDef3830.ff9Q4C);
   }
   items[1] = tmp8(Text, obj4);
   return tmp6(tmp7, obj2);

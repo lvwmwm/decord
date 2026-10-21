@@ -1,18 +1,18 @@
-// Module ID: 15523
-// Function ID: 15524
+// Module ID: 15595
+// Function ID: 15596
 // Name: notifications/NotificationSettingsUtils
-// Dependencies: [32, 19, 15518, 15524, 15525, 558, 576, 1455, 504, 2]
+// Dependencies: [32, 19, 15590, 15596, 15597, 558, 576, 1455, 504, 2]
 // Exports: getAssignedNotifSettingsAndMappings, useNotifCategoryVisibility
 
-// Module 15523 (notifications/NotificationSettingsUtils)
+// Module 15595 (notifications/NotificationSettingsUtils)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
-import NotificationSettingsExperiments from "NotificationSettingsExperiments" /* 15524 */;
-import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 15525 */;
+import NotificationSettingsExperiments from "NotificationSettingsExperiments" /* 15596 */;
+import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 15597 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15518 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15590 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

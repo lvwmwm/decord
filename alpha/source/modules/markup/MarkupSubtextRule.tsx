@@ -1,9 +1,9 @@
-// Module ID: 8423
-// Function ID: 8424
+// Module ID: 8451
+// Function ID: 8452
 // Name: MarkupSubtextRule
 // Dependencies: [1951, 2]
 
-// Module 8423 (MarkupSubtextRule)
+// Module 8451 (MarkupSubtextRule)
 import _mod1951 from "module_1951" /* 1951 */;
 import size from "module_2" /* 2 */;
 

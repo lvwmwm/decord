@@ -1,10 +1,10 @@
-// Module ID: 11633
-// Function ID: 11634
+// Module ID: 11683
+// Function ID: 11684
 // Name: FilePickerUtils
-// Dependencies: [5, 1087, 11634, 1384, 5867, 1128, 5673, 2]
+// Dependencies: [5, 1087, 11684, 1384, 5889, 1128, 5693, 2]
 // Exports: handleDocumentSelection
 
-// Module 11633 (FilePickerUtils)
+// Module 11683 (FilePickerUtils)
 import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -98,7 +98,7 @@ let obj = function _handleDocumentSelection() {
               closure_4 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === tmp4) {
             if (arg0 === 1) {

@@ -1,21 +1,21 @@
-// Module ID: 9881
-// Function ID: 9882
+// Module ID: 9911
+// Function ID: 9912
 // Name: ExpressionGuildDetails
-// Dependencies: [19, 17, 6835, 21, 4945, 587, 558, 576, 6834, 1417, 5631, 5195, 1128, 6859, 9880, 6838, 1202, 2]
+// Dependencies: [19, 17, 6863, 21, 4966, 587, 558, 576, 6862, 1417, 5651, 5216, 1128, 6887, 9910, 6866, 1202, 2]
 
-// Module 9881 (ExpressionGuildDetails)
+// Module 9911 (ExpressionGuildDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import FastImageDefault from "FastImage" /* 5631 */;
-import GuildIconDefault from "GuildIcon" /* 6834 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6835 */;
-import guild_GuildUtils from "guild/GuildUtils" /* 9880 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import FastImageDefault from "FastImage" /* 5651 */;
+import GuildIconDefault from "GuildIcon" /* 6862 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6863 */;
+import guild_GuildUtils from "guild/GuildUtils" /* 9910 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj2;
 let size;
 let size1;
 let tmp10;
-const GuildBadgeDefault = tmp10(6838);
+const GuildBadgeDefault = tmp10(6866);
 const View = react_native.View;
 let closure_4 = ExpressionSourceRecord.ExpressionSourceGuildRecord;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -288,9 +288,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                 },
             children: hasOwnProperty(Text2, obj5)
           };
-          const PressableOpacity = tmp4(6859).PressableOpacity;
+          const PressableOpacity = tmp4(6887).PressableOpacity;
           obj5 = { variant: "text-xs/medium", color: "text-default", children: intl2.string(intl5.t.riu2R5) };
-          Text2 = tmp4(5195).Text;
+          Text2 = tmp4(5216).Text;
           intl2 = tmp4(1128).intl;
           tmp3Result = tmp3(PressableOpacity, obj4);
         }
@@ -299,7 +299,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         return tmp(tmp2, obj6);
       }
       const obj7 = { variant: "text-xs/medium", color: "text-default", children: intl3.string(intl5.t.inyJqO) };
-      const Text3 = tmp4(5195).Text;
+      const Text3 = tmp4(5216).Text;
       intl3 = tmp4(1128).intl;
       tmp3Result = tmp3(Text3, obj7);
     };
@@ -359,7 +359,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     }
     const obj5 = { style: tmp.guildDetailsContainer, children: null };
     const obj6 = { variant: "eyebrow", color: "text-default", children: title };
-    const items = [tmp12(guild(5195).Text, obj6), ];
+    const items = [tmp12(guild(5216).Text, obj6), ];
     const obj7 = { style: tmp.guildDetailsContent, children: null };
     const items1 = [tmp7, ];
     const obj8 = { style: tmp.guildNameAndOnlineMembers, children: null };
@@ -368,14 +368,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     const tmp10Result = GuildBadgeDefault;
     items2 = [tmp12(tmp10Result, obj10), ];
     const obj11 = { variant: "text-md/bold", color: "mobile-text-heading-primary", children: guild.name };
-    items2[1] = tmp12(guild(5195).Text, obj11);
+    items2[1] = tmp12(guild(5216).Text, obj11);
     const items3 = [closure_7(View, obj9), ];
     const obj12 = { style: tmp.guildDescriptionSection, children: null };
     if (isDiscoverableResult) {
       let tmp9Result1;
       if (null != fromGuildType.presenceCount) {
         const obj13 = { variant: "text-xs/medium", color: "text-default", children: intl2.format(guild(1128).t["LC+S+m"], obj14) };
-        const Text2 = tmp16(5195).Text;
+        const Text2 = tmp16(5216).Text;
         intl2 = tmp16(1128).intl;
         obj14 = { membersOnline: fromGuildType.presenceCount };
         const items4 = [tmp9(Text2, obj13), , ];
@@ -393,9 +393,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                         },
               children: tmp9(Text3, obj17)
             };
-            const PressableOpacity = tmp16(6859).PressableOpacity;
+            const PressableOpacity = tmp16(6887).PressableOpacity;
             obj17 = { variant: "text-xs/medium", color: "text-default", children: intl3.string(guild(1128).t.riu2R5) };
-            Text3 = tmp16(5195).Text;
+            Text3 = tmp16(5216).Text;
             intl3 = tmp16(1128).intl;
             tmp9Result = tmp9(PressableOpacity, obj16);
           }
@@ -404,7 +404,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
           tmp9Result1 = tmp14(tmp20, obj18);
         }
         const obj19 = { variant: "text-xs/medium", color: "text-default", children: intl4.string(guild(1128).t.inyJqO) };
-        const Text4 = tmp16(5195).Text;
+        const Text4 = tmp16(5216).Text;
         intl4 = tmp16(1128).intl;
         tmp9Result = tmp9(Text4, obj19);
       }
@@ -418,11 +418,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       return closure_7(View, obj5);
     }
     const obj20 = { variant: "text-xs/medium", color: "text-default", children: intl.string(guild(1128).t.H29mx4) };
-    const Text = tmp16(5195).Text;
+    const Text = tmp16(5216).Text;
     intl = tmp16(1128).intl;
     tmp9Result1 = tmp9(Text, obj20);
   }
-  const obj21 = { style: tmp.guildIcon, guild: fromGuildType, size: guild(6834).GuildIconSizes.XLARGE, animate: true };
+  const obj21 = { style: tmp.guildIcon, guild: fromGuildType, size: guild(6862).GuildIconSizes.XLARGE, animate: true };
   const tmp13 = GuildIconDefault;
   tmp7 = closure_5(tmp13, obj21);
   tmp9 = closure_5;

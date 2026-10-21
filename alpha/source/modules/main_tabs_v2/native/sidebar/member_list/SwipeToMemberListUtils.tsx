@@ -1,13 +1,13 @@
-// Module ID: 11109
-// Function ID: 11110
+// Module ID: 11153
+// Function ID: 11154
 // Name: SwipeToMemberListUtils
-// Dependencies: [558, 11110, 1211, 6757, 2]
+// Dependencies: [558, 11154, 1211, 6785, 2]
 // Exports: isSwipeToMemberListEnabled, isSwipeToMemberListEnabledForChannel, useIsSwipeToMemberListEnabled
 
-// Module 11109 (SwipeToMemberListUtils)
+// Module 11153 (SwipeToMemberListUtils)
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
-import hasSecondaryViewChatDefault from "hasSecondaryViewChat" /* 6757 */;
-import ChatGestureSettings from "ChatGestureSettings" /* 11110 */;
+import hasSecondaryViewChatDefault from "hasSecondaryViewChat" /* 6785 */;
+import ChatGestureSettings from "ChatGestureSettings" /* 11154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

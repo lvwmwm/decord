@@ -1,11 +1,11 @@
-// Module ID: 8625
-// Function ID: 8626
+// Module ID: 8652
+// Function ID: 8653
 // Name: useUserProfileAnalyticsProperties
-// Dependencies: [19, 8609, 558, 576, 2]
+// Dependencies: [19, 8636, 558, 576, 2]
 
-// Module 8625 (useUserProfileAnalyticsProperties)
+// Module 8652 (useUserProfileAnalyticsProperties)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 8609 */;
+import Constants from "Constants" /* 8636 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,22 +1,22 @@
-// Module ID: 19040
-// Function ID: 19041
+// Module ID: 19117
+// Function ID: 19118
 // Name: GuildRoleSubscriptionBenefitPreview
-// Dependencies: [19, 17, 16311, 21, 4945, 558, 576, 16346, 1202, 11442, 5195, 4894, 16339, 5565, 8451, 1128, 2]
+// Dependencies: [19, 17, 16387, 21, 4966, 558, 576, 16422, 1202, 11492, 5216, 4915, 16415, 5586, 8478, 1128, 2]
 
-// Module 19040 (GuildRoleSubscriptionBenefitPreview)
+// Module 19117 (GuildRoleSubscriptionBenefitPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4894 */;
-import useChannelNameDefault from "useChannelName" /* 5565 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8451 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11442 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16311 */;
-import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 16339 */;
-import EmojiIconDefault from "EmojiIcon" /* 16346 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4915 */;
+import useChannelNameDefault from "useChannelName" /* 5586 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8478 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11492 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16387 */;
+import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 16415 */;
+import EmojiIconDefault from "EmojiIcon" /* 16422 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let hasOwnProperty;
 let metroRequire;
 let tmp;
 const native = tmp(1202);
-const Text_Text = tmp(5195);
+const Text_Text = tmp(5216);
 const View = react_native.View;
 const constants = GuildRoleSubscriptionsConstants.GuildRoleSubscriptionBenefitTypes;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -279,7 +279,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: "[" + intl.string(intl2.t.bz1PZX) + "]" };
-      const Text = tmp(5195).Text;
+      const Text = tmp(5216).Text;
       intl = tmp(1128).intl;
       const _HermesInternal = HermesInternal;
       const tmp26 = hasOwnProperty(Text, obj3);
@@ -368,7 +368,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   }
   if (null == channelWithTemplateFallback) {
     const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: "[" + intl.string(intl2.t.bz1PZX) + "]" };
-    const Text = tmp2(5195).Text;
+    const Text = tmp2(5216).Text;
     intl = tmp2(1128).intl;
     const _HermesInternal = HermesInternal;
     tmp9 = hasOwnProperty(Text, obj2);

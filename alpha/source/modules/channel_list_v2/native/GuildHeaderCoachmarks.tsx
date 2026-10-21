@@ -1,21 +1,21 @@
-// Module ID: 17332
-// Function ID: 17333
+// Module ID: 17412
+// Function ID: 17413
 // Name: GuildHeaderCoachmarks
-// Dependencies: [32, 19, 4880, 1087, 4797, 21, 558, 576, 504, 17333, 17335, 13252, 17342, 13245, 13246, 4784, 7445, 13242, 17343, 17344, 17346, 2]
+// Dependencies: [32, 19, 4901, 1087, 4818, 21, 558, 576, 504, 17413, 17415, 13320, 17422, 13313, 13314, 4805, 7473, 13310, 17423, 17424, 17426, 2]
 
-// Module 17332 (GuildHeaderCoachmarks)
+// Module 17412 (GuildHeaderCoachmarks)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
-import dismissible_content from "dismissible_content" /* 4784 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4797 */;
-import useBoostToUnlockFeaturedPowerupDefault from "useBoostToUnlockFeaturedPowerup" /* 13245 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13252 */;
-import useShouldShowGuildThemeMemberCoachmarkDefault from "useShouldShowGuildThemeMemberCoachmark" /* 17333 */;
-import useGuildThemeNuxTriggerDefault from "useGuildThemeNuxTrigger" /* 17335 */;
-import useIsCurrentUserEligibleForPowerupUpsellsDefault from "useIsCurrentUserEligibleForPowerupUpsells" /* 17342 */;
+import dismissible_content from "dismissible_content" /* 4805 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
+import useBoostToUnlockFeaturedPowerupDefault from "useBoostToUnlockFeaturedPowerup" /* 13313 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13320 */;
+import useShouldShowGuildThemeMemberCoachmarkDefault from "useShouldShowGuildThemeMemberCoachmark" /* 17413 */;
+import useGuildThemeNuxTriggerDefault from "useGuildThemeNuxTrigger" /* 17415 */;
+import useIsCurrentUserEligibleForPowerupUpsellsDefault from "useIsCurrentUserEligibleForPowerupUpsells" /* 17422 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4880 */;
+import PermissionStore from "PermissionStore" /* 4901 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -82,7 +82,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildHeade
         return closure_5.can(Permissions.MANAGE_GUILD, guild);
       }
     }
-    tmp15(guild(4784).DismissibleContent.BOOST_PROGRESS_BAR_MOBILE_COACHMARK);
+    tmp15(guild(4805).DismissibleContent.BOOST_PROGRESS_BAR_MOBILE_COACHMARK);
   }
   if (tmp9) {
     class C {
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildHeade
         return closure_5.can(Permissions.MANAGE_GUILD, guild);
       }
     }
-    tmp17(guild(4784).DismissibleContent.GUILD_THEME_MEMBER_COACHMARK);
+    tmp17(guild(4805).DismissibleContent.GUILD_THEME_MEMBER_COACHMARK);
   }
   cResult[4] = stateFromStores;
   cResult[5] = guild.premiumProgressBarEnabled;
@@ -109,14 +109,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildHeade
   const items1 = [guild];
   const obj = guild(504);
   const stateFromStores = obj.useStateFromStores(items, () => PermissionStore.can(Permissions.MANAGE_GUILD, guild), items1);
-  const tmp5 = stateFromStores(17333)(guild.id);
+  const tmp5 = stateFromStores(17413)(guild.id);
   dependencyMap = tmp5;
-  let tmp6 = stateFromStores(17335)(guild.id);
-  const tmp7 = stateFromStores(13252)(guild.id);
-  const tmp8 = stateFromStores(17342)();
-  const tmp9 = stateFromStores(13245)(guild.id);
+  let tmp6 = stateFromStores(17415)(guild.id);
+  const tmp7 = stateFromStores(13320)(guild.id);
+  const tmp8 = stateFromStores(17422)();
+  const tmp9 = stateFromStores(13313)(guild.id);
   const items2 = [stateFromStores, guild.premiumProgressBarEnabled, tmp5];
-  const tmp10 = stateFromStores(13246)();
+  const tmp10 = stateFromStores(13314)();
   const memo = react.useMemo(() => {
     const items = [];
     const tmp = stateFromStores && !guild.premiumProgressBarEnabled;
@@ -129,13 +129,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildHeade
     }
     return items;
   }, items2);
-  const obj2 = guild(7445);
+  const obj2 = guild(7473);
   const obj3 = { groupName: constants.GUILD_HEADER_TOOLTIPS };
   [tmp15, tmp16] = obj2.useSelectedDismissibleContent(memo, obj3);
   _slicedToArray(obj2.useSelectedDismissibleContent(memo, obj3), 2);
   let tmp18 = false === tmp7;
-  const useBoostToUnlockCoachmarkDCF = guild(13242).useBoostToUnlockCoachmarkDCF;
-  guild(13242);
+  const useBoostToUnlockCoachmarkDCF = guild(13310).useBoostToUnlockCoachmarkDCF;
+  guild(13310);
   const tmp12 = constants;
   const tmp13 = _slicedToArray;
   if (tmp18) {
@@ -152,14 +152,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildHeade
   if (first == null) {
     first = tmp13Result[0];
   }
-  if (tmp(4784).DismissibleContent.BOOST_PROGRESS_BAR_MOBILE_COACHMARK === first) {
-    return jsx(stateFromStores(17343), { targetRef, guild, markAsDismissed: tmp16 });
-  } else if (tmp(4784).DismissibleContent.GUILD_THEME_MEMBER_COACHMARK === first) {
-    return jsx(stateFromStores(17344), { guildId: guild.id, targetRef, markAsDismissed: tmp16 });
-  } else if (tmp(4784).DismissibleContent.BOOST_TO_UNLOCK_COACHMARK === first) {
+  if (tmp(4805).DismissibleContent.BOOST_PROGRESS_BAR_MOBILE_COACHMARK === first) {
+    return jsx(stateFromStores(17423), { targetRef, guild, markAsDismissed: tmp16 });
+  } else if (tmp(4805).DismissibleContent.GUILD_THEME_MEMBER_COACHMARK === first) {
+    return jsx(stateFromStores(17424), { guildId: guild.id, targetRef, markAsDismissed: tmp16 });
+  } else if (tmp(4805).DismissibleContent.BOOST_TO_UNLOCK_COACHMARK === first) {
     let tmp22 = null;
     if (null != tmp9) {
-      tmp22 = jsx(tmp4(17346), { guildId: guild.id, powerup: tmp9, targetRef, markAsDismissed: tmp21 });
+      tmp22 = jsx(tmp4(17426), { guildId: guild.id, powerup: tmp9, targetRef, markAsDismissed: tmp21 });
     }
     return tmp22;
   } else {

@@ -1,16 +1,16 @@
-// Module ID: 13024
-// Function ID: 13025
+// Module ID: 13092
+// Function ID: 13093
 // Name: GuildDirectoryTemplatesIcons
-// Dependencies: [13025, 13026, 13027, 13028, 13029, 13030, 13031, 2]
+// Dependencies: [13093, 13094, 13095, 13096, 13097, 13098, 13099, 2]
 
-// Module 13024 (GuildDirectoryTemplatesIcons)
-import AssetRegistryDefault from "AssetRegistry" /* 13025 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13026 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13027 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13028 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 13029 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 13030 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 13031 */;
+// Module 13092 (GuildDirectoryTemplatesIcons)
+import AssetRegistryDefault from "AssetRegistry" /* 13093 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13094 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13095 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13096 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 13097 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 13098 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 13099 */;
 import size from "module_2" /* 2 */;
 
 const obj = { CREATE: AssetRegistryDefault, HUB_SCHOOL_CLUB: AssetRegistryDefault2, HUB_STUDY: AssetRegistryDefault3, HUB_CLASS: AssetRegistryDefault4, HUB_SOCIAL: AssetRegistryDefault5, HUB_MAJOR: AssetRegistryDefault6, HUB_DORM: AssetRegistryDefault7 };

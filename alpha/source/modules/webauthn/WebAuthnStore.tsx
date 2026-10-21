@@ -1,9 +1,9 @@
-// Module ID: 15773
-// Function ID: 15774
+// Module ID: 15849
+// Function ID: 15850
 // Name: WebAuthnStore
 // Dependencies: [2000, 504, 584, 2]
 
-// Module 15773 (WebAuthnStore)
+// Module 15849 (WebAuthnStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Server from "Server" /* 2000 */;

@@ -1,15 +1,15 @@
-// Module ID: 7359
-// Function ID: 7360
+// Module ID: 7387
+// Function ID: 7388
 // Name: LazyLoadedThreadManager
-// Dependencies: [6453, 4804, 4800, 4851, 1087, 4807, 584, 7272, 4976, 4989, 1297, 2]
+// Dependencies: [6475, 4825, 4821, 4872, 1087, 4828, 584, 7300, 4997, 5010, 1297, 2]
 
-// Module 7359 (LazyLoadedThreadManager)
+// Module 7387 (LazyLoadedThreadManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelConstants from "ChannelConstants" /* 4807 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6453 */;
-import ChannelRecord from "ChannelRecord" /* 4804 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4851 */;
+import ChannelConstants from "ChannelConstants" /* 4828 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6475 */;
+import ChannelRecord from "ChannelRecord" /* 4825 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let c9;
 let closure_4;
 let hasOwnProperty;
 let metroImportAll;
-const f97223 = () => {
+const f97506 = () => {
   closure_11 = {};
   channelId = channelId.getChannelId();
   const tmp2 = null != channelId && null == channel.getChannel(channelId);
@@ -33,7 +33,7 @@ function initialize() {
   if (!tmp) {
     c12 = true;
     const obj = DispatcherDefault;
-    const subscription = obj.subscribe("CONNECTION_OPEN", f97223);
+    const subscription = obj.subscribe("CONNECTION_OPEN", f97506);
   }
 }
 function dispatchLoadedThread(nextResult, arg1) {
@@ -64,7 +64,7 @@ function loadThread(channelId) {
       c12 = true;
       let tmp2 = importDefault;
       let obj = DispatcherDefault;
-      const subscription = obj.subscribe("CONNECTION_OPEN", f97223);
+      const subscription = obj.subscribe("CONNECTION_OPEN", f97506);
     }
     if (GatewayConnectionStore.isConnected()) {
       if (null != closure_11[channelId]) {
@@ -81,9 +81,9 @@ function loadThread(channelId) {
         const matchPath = require("matchPathCompat").matchPath;
         CHANNEL = constants.CHANNEL;
         require("matchPathCompat");
-        const RouteParam = tmp13(4989).RouteParam;
+        const RouteParam = tmp13(5010).RouteParam;
         guildIdResult = RouteParam.guildId();
-        RouteParam2 = tmp13(4989).RouteParam;
+        RouteParam2 = tmp13(5010).RouteParam;
         importDefault = matchPath(pathname, obj2);
         const HTTP = tmp13(1297).HTTP;
         const get = HTTP.get;
@@ -159,7 +159,7 @@ let obj = {
       let nextResult = iter.next();
       while (iter !== undefined) {
         let tmp10 = nextResult;
-        if (nextResult !== items1(7272).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+        if (nextResult !== items1(7300).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
           if (!isStaticChannelRoute(tmp10)) {
             if (null == ChannelStore.getChannel(tmp10)) {
               let tmp19 = closure_11[tmp10];

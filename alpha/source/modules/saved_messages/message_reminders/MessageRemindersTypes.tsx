@@ -1,16 +1,16 @@
-// Module ID: 13655
-// Function ID: 13656
+// Module ID: 13722
+// Function ID: 13723
 // Name: MessageRemindersTypes
-// Dependencies: [2050, 1128, 2]
+// Dependencies: [2049, 1128, 2]
 
-// Module 13655 (MessageRemindersTypes)
+// Module 13722 (MessageRemindersTypes)
 import intl3 from "intl" /* 1128 */;
-import _modDef2050 from "module_2050" /* 2050 */;
+import _modDef2049 from "module_2049" /* 2049 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
   getDueAt() {
-    const obj = _modDef2050();
+    const obj = _modDef2049();
     const addResult = obj.add(30, "minutes");
     return addResult.toDate();
   },
@@ -23,7 +23,7 @@ const items = [
   obj,
   {
     getDueAt() {
-      const obj = _modDef2050();
+      const obj = _modDef2049();
       const addResult = obj.add(1, "hour");
       return addResult.toDate();
     },
@@ -34,7 +34,7 @@ const items = [
   },
   {
     getDueAt() {
-      const obj = _modDef2050();
+      const obj = _modDef2049();
       const addResult = obj.add(4, "hour");
       return addResult.toDate();
     },
@@ -46,10 +46,10 @@ const items = [
   {
     getDueAt() {
       let toDateResult;
-      const obj = _modDef2050();
+      const obj = _modDef2049();
       const startOfResult = obj.startOf("day");
       const addResult = startOfResult.add(9, "hours");
-      const obj4 = _modDef2050();
+      const obj4 = _modDef2049();
       if (obj4.hour() >= 9) {
         const addResult1 = addResult.add(1, "day");
         toDateResult = addResult1.toDate();
@@ -60,7 +60,7 @@ const items = [
     },
     getLabel() {
       let stringResult;
-      const obj = _modDef2050();
+      const obj = _modDef2049();
       if (obj.hour() >= 9) {
         const intl2 = intl3.intl;
         stringResult = intl2.string(intl3.t["7MKr2P"]);
@@ -74,20 +74,20 @@ const items = [
   {
     getDueAt() {
       let num3;
-      const obj = _modDef2050();
+      const obj = _modDef2049();
       const dayResult = obj.day();
       if (0 === dayResult) {
         num3 = 1;
       } else {
         num3 = 8;
         if (1 === dayResult) {
-          const obj2 = _modDef2050();
+          const obj2 = _modDef2049();
           num3 = 8;
           const startOfResult = obj2.startOf("day");
           startOfResult.add(9, "hours");
         }
       }
-      const obj5 = _modDef2050();
+      const obj5 = _modDef2049();
       const dayResult1 = obj5.day(num3);
       const startOfResult1 = dayResult1.startOf("day");
       const addResult1 = startOfResult1.add(9, "hours");

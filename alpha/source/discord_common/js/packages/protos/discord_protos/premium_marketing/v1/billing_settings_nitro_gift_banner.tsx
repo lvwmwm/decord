@@ -1,18 +1,19 @@
-// Module ID: 9467
-// Function ID: 9468
+// Module ID: 9496
+// Function ID: 9497
 // Name: billing_settings_nitro_gift_banner
-// Dependencies: [32, 1212, 9462, 9464, 9454, 2]
+// Dependencies: [32, 1212, 9491, 9493, 9483, 9484, 2]
 
-// Module 9467 (billing_settings_nitro_gift_banner)
+// Module 9496 (billing_settings_nitro_gift_banner)
 import _mod1212 from "module_1212" /* 1212 */;
-import localized_string from "localized_string" /* 9454 */;
-import gradient2 from "gradient" /* 9462 */;
-import theme_aware_asset from "theme_aware_asset" /* 9464 */;
+import localized_string from "localized_string" /* 9483 */;
+import help_article from "help_article" /* 9484 */;
+import gradient2 from "gradient" /* 9491 */;
+import theme_aware_asset from "theme_aware_asset" /* 9493 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6;
+let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7;
 
 let tmp;
 const T2 = function T() {
@@ -30,18 +31,21 @@ const T5 = function T() {
 const T6 = function T() {
   return require("localized_string").LocalizedString;
 };
+const T7 = function T() {
+  return require("help_article").HelpArticle;
+};
 const MessageType = _mod1212.MessageType;
 class BillingSettingsNitroGiftBanner$Type extends MessageType {
   constructor() {
-    const items = [{ no: 1, name: "asset_url", kind: "scalar", T: 9 }, { no: 2, name: "header", kind: "scalar", T: 9 }, { no: 3, name: "body", kind: "scalar", T: 9 }, { no: 4, name: "background_asset_url", kind: "scalar", T: 9 }, { no: 5, name: "gradient", kind: "message", T: T2 }, { no: 6, name: "text_color", kind: "scalar", T: 9 }, { no: 7, name: "additional_terms", kind: "scalar", T: 9 }, { no: 8, name: "asset", kind: "message", T: T3 }, { no: 9, name: "background_asset", kind: "message", T: T4 }, { no: 10, name: "header_localized", kind: "message", T: T5 }, , ];
-    const obj = { no: 11, name: "body_localized", kind: "message", T };
+    const items = [{ no: 1, name: "asset_url", kind: "scalar", T: 9 }, { no: 2, name: "header", kind: "scalar", T: 9 }, { no: 3, name: "body", kind: "scalar", T: 9 }, { no: 4, name: "background_asset_url", kind: "scalar", T: 9 }, { no: 5, name: "gradient", kind: "message", T: T2 }, { no: 6, name: "text_color", kind: "scalar", T: 9 }, { no: 7, name: "additional_terms", kind: "scalar", T: 9 }, { no: 8, name: "asset", kind: "message", T: T3 }, { no: 9, name: "background_asset", kind: "message", T: T4 }, { no: 10, name: "header_localized", kind: "message", T: T5 }, { no: 11, name: "body_localized", kind: "message", T: T6 }, , ];
+    const obj = { no: 12, name: "additional_terms_localized", kind: "message", T };
     class T {
       constructor() {
         return closure_1_0(closure_1_1[4]).LocalizedString;
       }
     }
-    items[10] = obj;
-    items[11] = { no: 12, name: "additional_terms_localized", kind: "message", T: T6 };
+    items[11] = obj;
+    items[12] = { no: 13, name: "help_article", kind: "message", T: T7 };
     const tmp2 = new tmp("discord_protos.premium_marketing.v1.BillingSettingsNitroGiftBanner", items, T);
     return tmp2;
   }
@@ -141,6 +145,14 @@ class BillingSettingsNitroGiftBanner$Type extends MessageType {
       const internalBinaryWrite6Result = internalBinaryWrite6(additionalTermsLocalized, tagResult11.fork(), writeUnknownFields);
       const joined5 = internalBinaryWrite6Result.join();
     }
+    if (assetUrl.helpArticle) {
+      const HelpArticle = help_article.HelpArticle;
+      internalBinaryWrite7 = HelpArticle.internalBinaryWrite;
+      const helpArticle = assetUrl.helpArticle;
+      const tagResult12 = tag.tag(13, _mod1212.WireType.LengthDelimited);
+      const internalBinaryWrite7Result = internalBinaryWrite7(helpArticle, tagResult12.fork(), writeUnknownFields);
+      const joined6 = internalBinaryWrite7Result.join();
+    }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
@@ -153,15 +165,15 @@ class BillingSettingsNitroGiftBanner$Type extends MessageType {
   }
 }
 const prototype = BillingSettingsNitroGiftBanner$Type.prototype;
-let items = [{ no: 1, name: "asset_url", kind: "scalar", T: 9 }, { no: 2, name: "header", kind: "scalar", T: 9 }, { no: 3, name: "body", kind: "scalar", T: 9 }, { no: 4, name: "background_asset_url", kind: "scalar", T: 9 }, { no: 5, name: "gradient", kind: "message", T: T2 }, { no: 6, name: "text_color", kind: "scalar", T: 9 }, { no: 7, name: "additional_terms", kind: "scalar", T: 9 }, { no: 8, name: "asset", kind: "message", T: T3 }, { no: 9, name: "background_asset", kind: "message", T: T4 }, { no: 10, name: "header_localized", kind: "message", T: T5 }, , ];
-let obj = { no: 11, name: "body_localized", kind: "message", T };
+let items = [{ no: 1, name: "asset_url", kind: "scalar", T: 9 }, { no: 2, name: "header", kind: "scalar", T: 9 }, { no: 3, name: "body", kind: "scalar", T: 9 }, { no: 4, name: "background_asset_url", kind: "scalar", T: 9 }, { no: 5, name: "gradient", kind: "message", T: T2 }, { no: 6, name: "text_color", kind: "scalar", T: 9 }, { no: 7, name: "additional_terms", kind: "scalar", T: 9 }, { no: 8, name: "asset", kind: "message", T: T3 }, { no: 9, name: "background_asset", kind: "message", T: T4 }, { no: 10, name: "header_localized", kind: "message", T: T5 }, { no: 11, name: "body_localized", kind: "message", T: T6 }, , ];
+let obj = { no: 12, name: "additional_terms_localized", kind: "message", T };
 class T {
   constructor() {
     return require("localized_string").LocalizedString;
   }
 }
-items[10] = obj;
-items[11] = { no: 12, name: "additional_terms_localized", kind: "message", T: T6 };
+items[11] = obj;
+items[12] = { no: 13, name: "help_article", kind: "message", T: T7 };
 const prototype1 = new prototype("discord_protos.premium_marketing.v1.BillingSettingsNitroGiftBanner", items, tmp, T, BillingSettingsNitroGiftBanner$Type, prototype, items);
 let result = size.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/billing_settings_nitro_gift_banner.tsx");
 

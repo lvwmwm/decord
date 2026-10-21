@@ -1,20 +1,20 @@
-// Module ID: 12155
-// Function ID: 12156
+// Module ID: 12218
+// Function ID: 12219
 // Name: ConjureProjectHeaderTitle
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 1128, 3820, 11717, 6859, 5195, 2]
+// Dependencies: [19, 17, 21, 4966, 587, 558, 576, 1128, 3830, 11763, 6887, 5216, 2]
 
-// Module 12155 (ConjureProjectHeaderTitle)
+// Module 12218 (ConjureProjectHeaderTitle)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import _modDef3820 from "module_3820" /* 3820 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import Pressables from "Pressables" /* 6859 */;
-import ConjureProjectIconDefault from "ConjureProjectIcon" /* 11717 */;
+import _modDef3830 from "module_3830" /* 3830 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import Pressables from "Pressables" /* 6887 */;
+import ConjureProjectIconDefault from "ConjureProjectIcon" /* 11763 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
   const row = tmp4.row;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
-    const stringResult = intl.string(_modDef3820.FzfmQ8);
+    const stringResult = intl.string(_modDef3830.FzfmQ8);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -106,7 +106,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
   ({ project, title, onPressIcon } = arg0);
   const tmp = closure_7();
   const obj = { style: tmp.row, children: items };
-  const obj2 = { onPress: onPressIcon, hitSlop, accessibilityRole: "button", accessibilityLabel: intl.string(_modDef3820.FzfmQ8), children: React3(ConjureProjectIconDefault, { project, size: "header" }) };
+  const obj2 = { onPress: onPressIcon, hitSlop, accessibilityRole: "button", accessibilityLabel: intl.string(_modDef3830.FzfmQ8), children: React3(ConjureProjectIconDefault, { project, size: "header" }) };
   const PressableOpacity = Pressables.PressableOpacity;
   intl = intl2.intl;
   items = [React3(PressableOpacity, obj2), ];

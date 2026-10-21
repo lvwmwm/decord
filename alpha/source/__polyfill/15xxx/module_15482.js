@@ -1,34 +1,27 @@
 // Module ID: 15482
 // Function ID: 15483
-// Dependencies: []
-// Exports: getReactNativeDimensionsWithDimensions
+// Dependencies: [15483, 15496, 15444, 15465]
 
 // Module 15482
+import _mod15465 from "module_15465" /* 15465 */;
+import _mod15483 from "module_15483" /* 15483 */;
+import defineProperty2 from "defineProperty2" /* 15496 */;
 
-export const getReactNativeDimensionsWithDimensions = function getReactNativeDimensionsWithDimensions(value, value2) {
-  try {
-    let obj = {};
-    let obj2 = {};
-    if (value) {
-      const _Math = Math;
-      const _Math2 = Math;
-      ({ scale: obj3.screenScale, fontScale: obj3.screenFontScale } = value);
-      obj = { screenWidth: Math.ceil(value.width), screenHeight: Math.ceil(value.height), screenScale: null, screenFontScale: null };
-      const obj5 = { screenWidth: Math.ceil(value.width), screenHeight: Math.ceil(value.height), screenScale: null, screenFontScale: null };
+
+export default (arg0, arg1, arg2) => {
+  let num;
+  const arr = _mod15483(arg1);
+  const f = defineProperty2.f;
+  for (let num = 0; num < arr.length; num = num + 1) {
+    let tmp2 = arr[num];
+    let tmp3 = require;
+    let tmp5 = _mod15465(arg0, tmp2);
+    if (!tmp5) {
+      let tmp7 = arg2 && tmp3(15465)(arg2, tmp2);
+      tmp5 = tmp7;
     }
-    const tmp3 = value2;
-    if (tmp3) {
-      const _Math3 = Math;
-      const _Math4 = Math;
-      ({ scale: obj4.windowScale, fontScale: obj4.windowFontScale } = value2);
-      obj2 = { windowWidth: Math.ceil(value2.width), windowHeight: Math.ceil(value2.height), windowScale: null, windowFontScale: null };
-      const obj9 = { windowWidth: Math.ceil(value2.width), windowHeight: Math.ceil(value2.height), windowScale: null, windowFontScale: null };
+    if (!tmp5) {
+      let fResult = f(arg0, tmp2, tmp(arg1, tmp2));
     }
-    const obj10 = {};
-    const merged = Object.assign(obj);
-    const merged1 = Object.assign(obj2);
-    return obj10;
-  } catch (err) {
-    return null;
   }
 };

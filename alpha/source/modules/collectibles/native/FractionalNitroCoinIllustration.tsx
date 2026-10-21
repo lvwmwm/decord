@@ -1,14 +1,14 @@
-// Module ID: 9368
-// Function ID: 9369
+// Module ID: 9396
+// Function ID: 9397
 // Name: FractionalNitroCoinIllustration
-// Dependencies: [19, 1089, 21, 558, 576, 9369, 9373, 2]
+// Dependencies: [19, 1089, 21, 558, 576, 9397, 9401, 2]
 
-// Module 9368 (FractionalNitroCoinIllustration)
+// Module 9396 (FractionalNitroCoinIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
-import NitroCoinSpotIllustration from "NitroCoinSpotIllustration" /* 9369 */;
-import NitroCoinStackSpotIllustration2 from "NitroCoinStackSpotIllustration" /* 9373 */;
+import NitroCoinSpotIllustration from "NitroCoinSpotIllustration" /* 9397 */;
+import NitroCoinStackSpotIllustration2 from "NitroCoinStackSpotIllustration" /* 9401 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -29,9 +29,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fractional
     str = resizeMode;
   }
   if (skuId === EXTERNAL_PRODUCT_SKU_IDS.FRACTIONAL_PREMIUM_1_DAY) {
-    NitroCoinStackSpotIllustration = tmp(9369).NitroCoinSpotIllustration;
+    NitroCoinStackSpotIllustration = tmp(9397).NitroCoinSpotIllustration;
   } else {
-    NitroCoinStackSpotIllustration = tmp(9373).NitroCoinStackSpotIllustration;
+    NitroCoinStackSpotIllustration = tmp(9401).NitroCoinStackSpotIllustration;
   }
   if (cResult[0] === NitroCoinStackSpotIllustration) {
     if (cResult[1] === height) {

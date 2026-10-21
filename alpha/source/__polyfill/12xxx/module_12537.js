@@ -1,49 +1,30 @@
 // Module ID: 12537
 // Function ID: 12538
-// Dependencies: [12538]
-// Exports: isNodeEnv, loadModule
+// Dependencies: [12493, 12523]
+// Exports: createClientReportEnvelope
 
 // Module 12537
-import _mod12538 from "module_12538" /* 12538 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12493 */;
+import _mod12523 from "module_12523" /* 12523 */;
 
-function dynamicRequire(require, arg1) {
-  return require.require(arg1);
-}
 
-export { dynamicRequire };
-export const isNodeEnv = function isNodeEnv() {
-  const obj = _mod12538;
-  let tmp2 = !obj.isBrowserBundle();
-  obj.isBrowserBundle();
-  if (tmp2) {
-    const _Object = Object;
-    const _process = process;
-    let num = 0;
-    const call = toString.call;
-    if (typeof process !== "undefined") {
-      num = process;
-    }
-    tmp2 = "[object process]" === call(num);
+export const createClientReportEnvelope = function createClientReportEnvelope(discarded_events, dsn, arg2) {
+  let obj3;
+  let result = arg2;
+  const items = [{ type: "client_report" }, ];
+  if (!arg2) {
+    const obj = _browserPerformanceTimeOriginMode;
+    result = obj.dateTimestampInSeconds();
   }
-  return tmp2;
-};
-export const loadModule = function loadModule(arg0) {
-  let tmp = arg1;
-  if (arg1 === undefined) {
-    tmp = module;
+  items[1] = { timestamp: result, discarded_events };
+  const createEnvelope = _mod12523.createEnvelope;
+  _mod12523;
+  if (dsn) {
+    obj3 = { dsn };
+    const obj2 = { dsn };
+  } else {
+    obj3 = {};
   }
-  let tmp2;
-  try {
-    tmp2 = dynamicRequire(tmp, arg0);
-  } catch (err) {
-  }
-  const tmp4 = tmp2;
-  if (!tmp4) {
-    try {
-      const _HermesInternal = HermesInternal;
-      tmp2 = dynamicRequire(tmp, "" + dynamicRequire(tmp, "process").cwd() + "/node_modules/" + arg0);
-    } catch (err) {
-    }
-  }
-  return tmp2;
+  const items1 = [items];
+  return createEnvelope(obj3, items1);
 };

@@ -1,21 +1,21 @@
-// Module ID: 14276
-// Function ID: 14277
+// Module ID: 14351
+// Function ID: 14352
 // Name: ProductDetailsActionSheetInfo
-// Dependencies: [17, 21, 4945, 587, 558, 576, 14277, 5195, 7611, 9364, 1128, 14278, 1995, 2]
+// Dependencies: [17, 21, 4966, 587, 558, 576, 14352, 5216, 7639, 9392, 1128, 14353, 1995, 2]
 
-// Module 14276 (ProductDetailsActionSheetInfo)
+// Module 14351 (ProductDetailsActionSheetInfo)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7611 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9364 */;
-import useProductDescription from "useProductDescription" /* 14277 */;
-import InlinePriceTagDefault from "InlinePriceTag" /* 14278 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7639 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9392 */;
+import useProductDescription from "useProductDescription" /* 14352 */;
+import InlinePriceTagDefault from "InlinePriceTag" /* 14353 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -138,12 +138,12 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Product
   }
   if (isPurchased) {
     const obj3 = { variant: "text-md/semibold", color: "interactive-text-active", children: intl2.string(intl3.t["6cfuDj"]) };
-    const Text2 = tmp(5195).Text;
+    const Text2 = tmp(5216).Text;
     intl2 = tmp(1128).intl;
     tmp8 = React3(Text2, obj3);
   } else if (isPartiallyOwnedBundle) {
     const obj4 = { variant: "text-md/semibold", color: "interactive-text-active", children: intl.string(intl3.t.BEjTij) };
-    const Text = tmp(5195).Text;
+    const Text = tmp(5216).Text;
     intl = tmp(1128).intl;
     tmp8 = React3(Text, obj4);
   } else {
@@ -173,12 +173,12 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Product
   const tmp7 = View;
   if (productPurchaseState.isPurchased) {
     const obj3 = { variant: "text-md/semibold", color: "interactive-text-active", children: intl2.string(intl3.t["6cfuDj"]) };
-    const Text2 = tmp(5195).Text;
+    const Text2 = tmp(5216).Text;
     intl2 = tmp(1128).intl;
     children = tmp6(Text2, obj3);
   } else if (tmp5) {
     const obj4 = { variant: "text-md/semibold", color: "interactive-text-active", children: intl.string(intl3.t.BEjTij) };
-    const Text = tmp(5195).Text;
+    const Text = tmp(5216).Text;
     intl = tmp(1128).intl;
     children = tmp6(Text, obj4);
   } else {

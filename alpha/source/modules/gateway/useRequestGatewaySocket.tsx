@@ -1,10 +1,10 @@
-// Module ID: 15643
-// Function ID: 15644
+// Module ID: 15719
+// Function ID: 15720
 // Name: useRequestGatewaySocket
-// Dependencies: [19, 558, 576, 6752, 10028, 2]
+// Dependencies: [19, 558, 576, 6780, 10058, 2]
 
-// Module 15643 (useRequestGatewaySocket)
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10028 */;
+// Module 15719 (useRequestGatewaySocket)
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10058 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequest
   _require = arg0;
   let obj = require("react");
   const cResult = obj.c(4);
-  const obj2 = canUIRequestGatewaySocket(6752);
+  const obj2 = canUIRequestGatewaySocket(6780);
   canUIRequestGatewaySocket = obj2.useCanUIRequestGatewaySocket();
   if (cResult[0] === canUIRequestGatewaySocket) {
     let tmp3;
@@ -49,7 +49,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequest
 }) : (function useRequestGatewaySocket(arg0) {
   let canUIRequestGatewaySocket;
   let closure_0 = arg0;
-  let obj = canUIRequestGatewaySocket(6752);
+  let obj = canUIRequestGatewaySocket(6780);
   canUIRequestGatewaySocket = obj.useCanUIRequestGatewaySocket();
   const items = [arg0, canUIRequestGatewaySocket];
   const effect = react.useEffect(() => {

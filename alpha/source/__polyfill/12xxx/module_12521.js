@@ -1,57 +1,56 @@
 // Module ID: 12521
 // Function ID: 12522
-// Dependencies: [12450, 12451, 12423]
+// Dependencies: [12484, 12507, 12479, 12494]
+// Exports: setMeasurement, timedEventsToMeasurements
 
 // Module 12521
-import _mod12450 from "module_12450" /* 12450 */;
-import _mod12451 from "module_12451" /* 12451 */;
+import _mod12484 from "module_12484" /* 12484 */;
+import SEMANTIC_ATTRIBUTE_CACHE_HIT from "SEMANTIC_ATTRIBUTE_CACHE_HIT" /* 12494 */;
+import _mod12507 from "module_12507" /* 12507 */;
 
 
-export const profiler = {
-  startProfiler() {
-    const obj = _mod12450;
-    const client = obj.getClient();
-    if (client) {
-      const integrationByName = client.getIntegrationByName("ProfilingIntegration");
-      if (integrationByName) {
-        const tmp6 = integrationByName && undefined !== integrationByName._profiler && typeof integrationByName._profiler.start === "function" && typeof integrationByName._profiler.stop === "function";
-        if (tmp6) {
-          const _profiler = integrationByName._profiler;
-          _profiler.start();
-        } else if (_mod12451.DEBUG_BUILD) {
-          const logger3 = tmp(12423).logger;
-          logger3.warn("Profiler is not available on profiling integration.");
-        }
-      } else if (_mod12451.DEBUG_BUILD) {
-        const logger2 = tmp(12423).logger;
-        logger2.warn("ProfilingIntegration is not available");
-      }
-    } else if (_mod12451.DEBUG_BUILD) {
-      const logger = tmp(12423).logger;
-      logger.warn("No Sentry client available, profiling is not started");
+export const setMeasurement = function setMeasurement(arg0, arg1, arg2) {
+  let activeSpan = arg3;
+  if (arg3 === undefined) {
+    const obj = _mod12484;
+    activeSpan = obj.getActiveSpan();
+  }
+  let rootSpan = activeSpan;
+  if (rootSpan) {
+    const obj3 = _mod12484;
+    rootSpan = obj3.getRootSpan(activeSpan);
+  }
+  if (rootSpan) {
+    if (_mod12507.DEBUG_BUILD) {
+      const logger = tmp9(12479).logger;
+      const _HermesInternal = HermesInternal;
+      logger.log("[Measurement] Setting measurement on root span: " + arg0 + " = " + arg1 + " " + arg2);
     }
-  },
-  stopProfiler() {
-    const obj = _mod12450;
-    const client = obj.getClient();
-    if (client) {
-      const integrationByName = client.getIntegrationByName("ProfilingIntegration");
-      if (integrationByName) {
-        const tmp6 = integrationByName && undefined !== integrationByName._profiler && typeof integrationByName._profiler.start === "function" && typeof integrationByName._profiler.stop === "function";
-        if (tmp6) {
-          const _profiler = integrationByName._profiler;
-          _profiler.stop();
-        } else if (_mod12451.DEBUG_BUILD) {
-          const logger3 = tmp(12423).logger;
-          logger3.warn("Profiler is not available on profiling integration.");
+    const obj2 = {};
+    obj2[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE] = arg1;
+    obj2[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT] = arg2;
+    rootSpan.addEvent(arg0, obj2);
+  }
+};
+export const timedEventsToMeasurements = function timedEventsToMeasurements(arr) {
+  let tmp = arr;
+  if (tmp) {
+    if (0 !== arr.length) {
+      let obj = {};
+      const item = arr.forEach((attributes) => {
+        const tmp = attributes.attributes || {};
+        const tmp2 = tmp[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT];
+        const tmp3 = tmp[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE];
+        let tmp4 = typeof tmp2 === "string";
+        if (typeof tmp2 === "string") {
+          tmp4 = typeof tmp3 === "number";
         }
-      } else if (_mod12451.DEBUG_BUILD) {
-        const logger2 = tmp(12423).logger;
-        logger2.warn("ProfilingIntegration is not available");
-      }
-    } else if (_mod12451.DEBUG_BUILD) {
-      const logger = tmp(12423).logger;
-      logger.warn("No Sentry client available, profiling is not started");
+        if (tmp4) {
+          obj = { value: tmp3, unit: tmp2 };
+          obj[attributes.name] = obj;
+        }
+      });
+      return obj;
     }
   }
 };

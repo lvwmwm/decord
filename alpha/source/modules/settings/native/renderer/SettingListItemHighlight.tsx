@@ -1,17 +1,17 @@
-// Module ID: 15787
-// Function ID: 15788
+// Module ID: 15863
+// Function ID: 15864
 // Name: SettingListItemHighlight
-// Dependencies: [19, 17, 15782, 21, 4945, 587, 558, 576, 5014, 5167, 2]
+// Dependencies: [19, 17, 15858, 21, 4966, 587, 558, 576, 5035, 5188, 2]
 
-// Module 15787 (SettingListItemHighlight)
+// Module 15863 (SettingListItemHighlight)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5014 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5035 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 15782 */;
-import createStyles from "createStyles" /* 4945 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 15858 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,8 +19,8 @@ let obj1, obj7, obj8, tmp5;
 
 let obj2;
 let tmp;
-const ReanimatedRexport = tmp(5014);
-const timing = tmp(5167);
+const ReanimatedRexport = tmp(5035);
+const timing = tmp(5188);
 const StyleSheet = react_native.StyleSheet;
 const jsx = Fragment.jsx;
 let obj = { background: obj2 };

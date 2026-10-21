@@ -1,23 +1,23 @@
-// Module ID: 13981
-// Function ID: 13982
+// Module ID: 14056
+// Function ID: 14057
 // Name: openQuestCollectibleRewardModal
-// Dependencies: [1392, 6661, 21, 4945, 587, 558, 576, 504, 9517, 9498, 5195, 1128, 7730, 13771, 2]
+// Dependencies: [1392, 6689, 21, 4966, 587, 558, 576, 504, 9547, 9528, 5216, 1128, 7758, 13846, 2]
 // Exports: openQuestCollectibleRewardModal
 
-// Module 13981 (openQuestCollectibleRewardModal)
+// Module 14056 (openQuestCollectibleRewardModal)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import QuestConstants from "QuestConstants" /* 6661 */;
-import getQuestLogger from "getQuestLogger" /* 7730 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9498 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9517 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 13771 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import QuestConstants from "QuestConstants" /* 6689 */;
+import getQuestLogger from "getQuestLogger" /* 7758 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9528 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9547 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 13846 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -57,7 +57,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestCo
   const defaultRewardNameWithArticle = tmpResult3.getDefaultRewardNameWithArticle(quest.config, stateFromStores);
   const tmpResult4 = hooks_QuestHooks;
   const claimedCollectibleRewardMessage = tmpResult4.useClaimedCollectibleRewardMessage(quest.config);
-  const Text = tmp(5195).Text;
+  const Text = tmp(5216).Text;
   const title = tmp4.title;
   const intl = tmp(1128).intl;
   const formatResult = intl.format(intl2.t.YNaxMp, { itemName: defaultRewardNameWithArticle });

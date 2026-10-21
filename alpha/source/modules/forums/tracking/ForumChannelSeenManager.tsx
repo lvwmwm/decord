@@ -1,12 +1,12 @@
-// Module ID: 9657
-// Function ID: 9658
+// Module ID: 9687
+// Function ID: 9688
 // Name: ForumChannelSeenManager
-// Dependencies: [9658, 9656, 8237, 8239, 2]
+// Dependencies: [9688, 9686, 8265, 8267, 2]
 // Exports: getForumPostSeenManagerId, markForumPostItemAsSeen, markForumPostItemAsUnseen
 
-// Module 9657 (ForumChannelSeenManager)
-import AnalyticsFeedItemSeenActionCreators from "AnalyticsFeedItemSeenActionCreators" /* 9656 */;
-import AnalyticsFeedItemSeenManager2 from "AnalyticsFeedItemSeenManager" /* 9658 */;
+// Module 9687 (ForumChannelSeenManager)
+import AnalyticsFeedItemSeenActionCreators from "AnalyticsFeedItemSeenActionCreators" /* 9686 */;
+import AnalyticsFeedItemSeenManager2 from "AnalyticsFeedItemSeenManager" /* 9688 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -26,8 +26,8 @@ class ForumChannelSeenManager extends AnalyticsFeedItemSeenManager {
     concat = HermesInternal.concat;
     const tmp4 = new tmp(obj, tmp3, tmp2, FORUM_CHANNEL, concat, "_", new.target);
     _require = tmp4;
-    tmp4.createFlushSeenItemsFunction = function createFlushSeenItemsFunction(IMMEDIATE) {
-      let obj = { guildId: closure_0.guildId, channelId: closure_0.channelId, sessionId: closure_0.sessionId, trackedFeedItems: closure_0.trackedFeedItems, isForcedFlush: null != IMMEDIATE };
+    tmp4.createFlushSeenItemsFunction = function createFlushSeenItemsFunction(arg0) {
+      let obj = { guildId: closure_0.guildId, channelId: closure_0.channelId, sessionId: closure_0.sessionId, trackedFeedItems: closure_0.trackedFeedItems, isForcedFlush: null != arg0 };
       return () => {
         function flushSeenItems(trackedFeedItems) {
           let channelId;

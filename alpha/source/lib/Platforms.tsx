@@ -1,135 +1,140 @@
-// Module ID: 6459
-// Function ID: 6460
+// Module ID: 6481
+// Function ID: 6482
 // Name: Platforms
-// Dependencies: [1087, 2029, 586, 6460, 6461, 6462, 6463, 6464, 6465, 6466, 6467, 6468, 6469, 6470, 6471, 2030, 6472, 6473, 6474, 6475, 6476, 6477, 6478, 6479, 6480, 6481, 6482, 6483, 6484, 6485, 6486, 6487, 6488, 6489, 6490, 6491, 6492, 6493, 6494, 6495, 6496, 6497, 6498, 6499, 6500, 6501, 6502, 6503, 6504, 6505, 6506, 6507, 6508, 6509, 6510, 6511, 6512, 6513, 6514, 6515, 6516, 6517, 6518, 6519, 6520, 6521, 6522, 6523, 6524, 6525, 6526, 6527, 6528, 6529, 6530, 6531, 6532, 6533, 6534, 6535, 6536, 6537, 6538, 6539, 6540, 6541, 6542, 6543, 6544, 6545, 6546, 6547, 6548, 6549, 6550, 6551, 6552, 6553, 6554, 6555, 6556, 6557, 6558, 6559, 6560, 6561, 6562, 6563, 6564, 6565, 6566, 6567, 6568, 6569, 6570, 6571, 6572, 6573, 6574, 6575, 6576, 6577, 6578, 6579, 6580, 6581, 12, 1386, 2]
+// Dependencies: [1087, 2029, 586, 6482, 6483, 6484, 6485, 6486, 6487, 6488, 6489, 6490, 6491, 6492, 6493, 6494, 6495, 6496, 6497, 6498, 6499, 6500, 6501, 6502, 6503, 6504, 6505, 6506, 6507, 6508, 6509, 6510, 6511, 6512, 6513, 6514, 6515, 6516, 6517, 6518, 6519, 6520, 6521, 6522, 6523, 6524, 6525, 6526, 6527, 6528, 6529, 6530, 6531, 6532, 6533, 6534, 6535, 6536, 6537, 6538, 6539, 6540, 6541, 6542, 6543, 6544, 6545, 6546, 6547, 6548, 6549, 6550, 6551, 6552, 6553, 6554, 6555, 6556, 6557, 6558, 6559, 6560, 6561, 6562, 6563, 6564, 6565, 6566, 6567, 6568, 6569, 6570, 6571, 6572, 6573, 6574, 6575, 6576, 6577, 6578, 6579, 6580, 6581, 6582, 6583, 6584, 6585, 6586, 6587, 6588, 6589, 6590, 6591, 6592, 6593, 6594, 6595, 6596, 6597, 6598, 6599, 6600, 6601, 6602, 6603, 6604, 6605, 6606, 6607, 6608, 6609, 12, 1386, 2]
 
-// Module 6459 (Platforms)
+// Module 6481 (Platforms)
 import Constants from "Constants" /* 1087 */;
 import URLUtilsDefault from "URLUtils" /* 1386 */;
 import UserApplicationIdentityConstants from "UserApplicationIdentityConstants" /* 2029 */;
-import socialSDKMigration from "socialSDKMigration" /* 2030 */;
-import AssetRegistry from "AssetRegistry" /* 6460 */;
-import AssetRegistry2 from "AssetRegistry" /* 6461 */;
-import AssetRegistry3 from "AssetRegistry" /* 6462 */;
-import AssetRegistry4 from "AssetRegistry" /* 6463 */;
-import AssetRegistry5 from "AssetRegistry" /* 6464 */;
-import AssetRegistry6 from "AssetRegistry" /* 6465 */;
-import AssetRegistry7 from "AssetRegistry" /* 6466 */;
-import AssetRegistry8 from "AssetRegistry" /* 6467 */;
-import AssetRegistry9 from "AssetRegistry" /* 6468 */;
-import AssetRegistry10 from "AssetRegistry" /* 6469 */;
-import AssetRegistry11 from "AssetRegistry" /* 6470 */;
-import AssetRegistry12 from "AssetRegistry" /* 6471 */;
-import AssetRegistry13 from "AssetRegistry" /* 6472 */;
-import AssetRegistry14 from "AssetRegistry" /* 6473 */;
-import AssetRegistry15 from "AssetRegistry" /* 6474 */;
-import AssetRegistry16 from "AssetRegistry" /* 6475 */;
-import AssetRegistry17 from "AssetRegistry" /* 6476 */;
-import AssetRegistry18 from "AssetRegistry" /* 6477 */;
-import AssetRegistry19 from "AssetRegistry" /* 6478 */;
-import AssetRegistry20 from "AssetRegistry" /* 6479 */;
-import AssetRegistry21 from "AssetRegistry" /* 6480 */;
-import AssetRegistry22 from "AssetRegistry" /* 6481 */;
-import AssetRegistry23 from "AssetRegistry" /* 6482 */;
-import AssetRegistry24 from "AssetRegistry" /* 6483 */;
-import AssetRegistry25 from "AssetRegistry" /* 6484 */;
-import AssetRegistry26 from "AssetRegistry" /* 6485 */;
-import AssetRegistry27 from "AssetRegistry" /* 6486 */;
-import AssetRegistry28 from "AssetRegistry" /* 6487 */;
-import AssetRegistry29 from "AssetRegistry" /* 6488 */;
-import AssetRegistry30 from "AssetRegistry" /* 6489 */;
-import AssetRegistry31 from "AssetRegistry" /* 6490 */;
-import AssetRegistry32 from "AssetRegistry" /* 6491 */;
-import AssetRegistry33 from "AssetRegistry" /* 6492 */;
-import AssetRegistry34 from "AssetRegistry" /* 6493 */;
-import AssetRegistry35 from "AssetRegistry" /* 6494 */;
-import AssetRegistry36 from "AssetRegistry" /* 6495 */;
-import AssetRegistry37 from "AssetRegistry" /* 6496 */;
-import AssetRegistry38 from "AssetRegistry" /* 6497 */;
-import AssetRegistry39 from "AssetRegistry" /* 6498 */;
-import AssetRegistry40 from "AssetRegistry" /* 6499 */;
-import AssetRegistry41 from "AssetRegistry" /* 6500 */;
-import AssetRegistry42 from "AssetRegistry" /* 6501 */;
-import AssetRegistry43 from "AssetRegistry" /* 6502 */;
-import AssetRegistry44 from "AssetRegistry" /* 6503 */;
-import AssetRegistry45 from "AssetRegistry" /* 6504 */;
-import AssetRegistry46 from "AssetRegistry" /* 6505 */;
-import AssetRegistry47 from "AssetRegistry" /* 6506 */;
-import AssetRegistry48 from "AssetRegistry" /* 6507 */;
-import AssetRegistry49 from "AssetRegistry" /* 6508 */;
-import AssetRegistry50 from "AssetRegistry" /* 6509 */;
-import AssetRegistry51 from "AssetRegistry" /* 6510 */;
-import AssetRegistry52 from "AssetRegistry" /* 6511 */;
-import AssetRegistry53 from "AssetRegistry" /* 6512 */;
-import AssetRegistry54 from "AssetRegistry" /* 6513 */;
-import AssetRegistry55 from "AssetRegistry" /* 6514 */;
-import AssetRegistry56 from "AssetRegistry" /* 6515 */;
-import AssetRegistry57 from "AssetRegistry" /* 6516 */;
-import AssetRegistry58 from "AssetRegistry" /* 6517 */;
-import AssetRegistry59 from "AssetRegistry" /* 6518 */;
-import AssetRegistry60 from "AssetRegistry" /* 6519 */;
-import AssetRegistry61 from "AssetRegistry" /* 6520 */;
-import AssetRegistry62 from "AssetRegistry" /* 6521 */;
-import AssetRegistry63 from "AssetRegistry" /* 6522 */;
-import AssetRegistry64 from "AssetRegistry" /* 6523 */;
-import AssetRegistry65 from "AssetRegistry" /* 6524 */;
-import AssetRegistry66 from "AssetRegistry" /* 6525 */;
-import AssetRegistry67 from "AssetRegistry" /* 6526 */;
-import AssetRegistry68 from "AssetRegistry" /* 6527 */;
-import AssetRegistry69 from "AssetRegistry" /* 6528 */;
-import AssetRegistry70 from "AssetRegistry" /* 6529 */;
-import AssetRegistry71 from "AssetRegistry" /* 6530 */;
-import AssetRegistry72 from "AssetRegistry" /* 6531 */;
-import AssetRegistry73 from "AssetRegistry" /* 6532 */;
-import AssetRegistry74 from "AssetRegistry" /* 6533 */;
-import AssetRegistry75 from "AssetRegistry" /* 6534 */;
-import AssetRegistry76 from "AssetRegistry" /* 6535 */;
-import AssetRegistry77 from "AssetRegistry" /* 6536 */;
-import AssetRegistry78 from "AssetRegistry" /* 6537 */;
-import AssetRegistry79 from "AssetRegistry" /* 6538 */;
-import AssetRegistry80 from "AssetRegistry" /* 6539 */;
-import AssetRegistry81 from "AssetRegistry" /* 6540 */;
-import AssetRegistry82 from "AssetRegistry" /* 6541 */;
-import AssetRegistry83 from "AssetRegistry" /* 6542 */;
-import AssetRegistry84 from "AssetRegistry" /* 6543 */;
-import AssetRegistry85 from "AssetRegistry" /* 6544 */;
-import AssetRegistry86 from "AssetRegistry" /* 6545 */;
-import AssetRegistry87 from "AssetRegistry" /* 6546 */;
-import AssetRegistry88 from "AssetRegistry" /* 6547 */;
-import AssetRegistry89 from "AssetRegistry" /* 6548 */;
-import AssetRegistry90 from "AssetRegistry" /* 6549 */;
-import AssetRegistry91 from "AssetRegistry" /* 6550 */;
-import AssetRegistry92 from "AssetRegistry" /* 6551 */;
-import AssetRegistry93 from "AssetRegistry" /* 6552 */;
-import AssetRegistry94 from "AssetRegistry" /* 6553 */;
-import AssetRegistry95 from "AssetRegistry" /* 6554 */;
-import AssetRegistry96 from "AssetRegistry" /* 6555 */;
-import AssetRegistry97 from "AssetRegistry" /* 6556 */;
-import AssetRegistry98 from "AssetRegistry" /* 6557 */;
-import AssetRegistry99 from "AssetRegistry" /* 6558 */;
-import AssetRegistry100 from "AssetRegistry" /* 6559 */;
-import AssetRegistry101 from "AssetRegistry" /* 6560 */;
-import AssetRegistry102 from "AssetRegistry" /* 6561 */;
-import AssetRegistry103 from "AssetRegistry" /* 6562 */;
-import AssetRegistry104 from "AssetRegistry" /* 6563 */;
-import AssetRegistry105 from "AssetRegistry" /* 6564 */;
-import AssetRegistry106 from "AssetRegistry" /* 6565 */;
-import AssetRegistry107 from "AssetRegistry" /* 6566 */;
-import AssetRegistry108 from "AssetRegistry" /* 6567 */;
-import AssetRegistry109 from "AssetRegistry" /* 6568 */;
-import AssetRegistry110 from "AssetRegistry" /* 6569 */;
-import AssetRegistry111 from "AssetRegistry" /* 6570 */;
-import AssetRegistry112 from "AssetRegistry" /* 6571 */;
-import AssetRegistry113 from "AssetRegistry" /* 6572 */;
-import AssetRegistry114 from "AssetRegistry" /* 6573 */;
-import AssetRegistry115 from "AssetRegistry" /* 6574 */;
-import AssetRegistry116 from "AssetRegistry" /* 6575 */;
-import AssetRegistry117 from "AssetRegistry" /* 6576 */;
-import AssetRegistry118 from "AssetRegistry" /* 6577 */;
-import AssetRegistry119 from "AssetRegistry" /* 6578 */;
-import AssetRegistry120 from "AssetRegistry" /* 6579 */;
-import AssetRegistry121 from "AssetRegistry" /* 6580 */;
-import AssetRegistry122 from "AssetRegistry" /* 6581 */;
+import AssetRegistry from "AssetRegistry" /* 6482 */;
+import AssetRegistry2 from "AssetRegistry" /* 6483 */;
+import AssetRegistry3 from "AssetRegistry" /* 6484 */;
+import AssetRegistry4 from "AssetRegistry" /* 6485 */;
+import AssetRegistry5 from "AssetRegistry" /* 6486 */;
+import AssetRegistry6 from "AssetRegistry" /* 6487 */;
+import AssetRegistry7 from "AssetRegistry" /* 6488 */;
+import AssetRegistry8 from "AssetRegistry" /* 6489 */;
+import AssetRegistry9 from "AssetRegistry" /* 6490 */;
+import AssetRegistry10 from "AssetRegistry" /* 6491 */;
+import AssetRegistry11 from "AssetRegistry" /* 6492 */;
+import AssetRegistry12 from "AssetRegistry" /* 6493 */;
+import AssetRegistry13 from "AssetRegistry" /* 6494 */;
+import AssetRegistry14 from "AssetRegistry" /* 6495 */;
+import AssetRegistry15 from "AssetRegistry" /* 6496 */;
+import AssetRegistry16 from "AssetRegistry" /* 6497 */;
+import AssetRegistry17 from "AssetRegistry" /* 6498 */;
+import AssetRegistry18 from "AssetRegistry" /* 6499 */;
+import AssetRegistry19 from "AssetRegistry" /* 6500 */;
+import AssetRegistry20 from "AssetRegistry" /* 6501 */;
+import AssetRegistry21 from "AssetRegistry" /* 6502 */;
+import AssetRegistry22 from "AssetRegistry" /* 6503 */;
+import AssetRegistry23 from "AssetRegistry" /* 6504 */;
+import AssetRegistry24 from "AssetRegistry" /* 6505 */;
+import AssetRegistry25 from "AssetRegistry" /* 6506 */;
+import AssetRegistry26 from "AssetRegistry" /* 6507 */;
+import AssetRegistry27 from "AssetRegistry" /* 6508 */;
+import AssetRegistry28 from "AssetRegistry" /* 6509 */;
+import AssetRegistry29 from "AssetRegistry" /* 6510 */;
+import AssetRegistry30 from "AssetRegistry" /* 6511 */;
+import AssetRegistry31 from "AssetRegistry" /* 6512 */;
+import AssetRegistry32 from "AssetRegistry" /* 6513 */;
+import AssetRegistry33 from "AssetRegistry" /* 6514 */;
+import AssetRegistry34 from "AssetRegistry" /* 6515 */;
+import AssetRegistry35 from "AssetRegistry" /* 6516 */;
+import AssetRegistry36 from "AssetRegistry" /* 6517 */;
+import AssetRegistry37 from "AssetRegistry" /* 6518 */;
+import AssetRegistry38 from "AssetRegistry" /* 6519 */;
+import AssetRegistry39 from "AssetRegistry" /* 6520 */;
+import AssetRegistry40 from "AssetRegistry" /* 6521 */;
+import AssetRegistry41 from "AssetRegistry" /* 6522 */;
+import AssetRegistry42 from "AssetRegistry" /* 6523 */;
+import AssetRegistry43 from "AssetRegistry" /* 6524 */;
+import AssetRegistry44 from "AssetRegistry" /* 6525 */;
+import AssetRegistry45 from "AssetRegistry" /* 6526 */;
+import AssetRegistry46 from "AssetRegistry" /* 6527 */;
+import AssetRegistry47 from "AssetRegistry" /* 6528 */;
+import AssetRegistry48 from "AssetRegistry" /* 6529 */;
+import AssetRegistry49 from "AssetRegistry" /* 6530 */;
+import AssetRegistry50 from "AssetRegistry" /* 6531 */;
+import AssetRegistry51 from "AssetRegistry" /* 6532 */;
+import AssetRegistry52 from "AssetRegistry" /* 6533 */;
+import AssetRegistry53 from "AssetRegistry" /* 6534 */;
+import AssetRegistry54 from "AssetRegistry" /* 6535 */;
+import AssetRegistry55 from "AssetRegistry" /* 6536 */;
+import AssetRegistry56 from "AssetRegistry" /* 6537 */;
+import AssetRegistry57 from "AssetRegistry" /* 6538 */;
+import AssetRegistry58 from "AssetRegistry" /* 6539 */;
+import AssetRegistry59 from "AssetRegistry" /* 6540 */;
+import AssetRegistry60 from "AssetRegistry" /* 6541 */;
+import AssetRegistry61 from "AssetRegistry" /* 6542 */;
+import AssetRegistry62 from "AssetRegistry" /* 6543 */;
+import AssetRegistry63 from "AssetRegistry" /* 6544 */;
+import AssetRegistry64 from "AssetRegistry" /* 6545 */;
+import AssetRegistry65 from "AssetRegistry" /* 6546 */;
+import AssetRegistry66 from "AssetRegistry" /* 6547 */;
+import AssetRegistry67 from "AssetRegistry" /* 6548 */;
+import AssetRegistry68 from "AssetRegistry" /* 6549 */;
+import AssetRegistry69 from "AssetRegistry" /* 6550 */;
+import AssetRegistry70 from "AssetRegistry" /* 6551 */;
+import AssetRegistry71 from "AssetRegistry" /* 6552 */;
+import AssetRegistry72 from "AssetRegistry" /* 6553 */;
+import AssetRegistry73 from "AssetRegistry" /* 6554 */;
+import AssetRegistry74 from "AssetRegistry" /* 6555 */;
+import AssetRegistry75 from "AssetRegistry" /* 6556 */;
+import AssetRegistry76 from "AssetRegistry" /* 6557 */;
+import AssetRegistry77 from "AssetRegistry" /* 6558 */;
+import AssetRegistry78 from "AssetRegistry" /* 6559 */;
+import AssetRegistry79 from "AssetRegistry" /* 6560 */;
+import AssetRegistry80 from "AssetRegistry" /* 6561 */;
+import AssetRegistry81 from "AssetRegistry" /* 6562 */;
+import AssetRegistry82 from "AssetRegistry" /* 6563 */;
+import AssetRegistry83 from "AssetRegistry" /* 6564 */;
+import AssetRegistry84 from "AssetRegistry" /* 6565 */;
+import AssetRegistry85 from "AssetRegistry" /* 6566 */;
+import AssetRegistry86 from "AssetRegistry" /* 6567 */;
+import AssetRegistry87 from "AssetRegistry" /* 6568 */;
+import AssetRegistry88 from "AssetRegistry" /* 6569 */;
+import AssetRegistry89 from "AssetRegistry" /* 6570 */;
+import AssetRegistry90 from "AssetRegistry" /* 6571 */;
+import AssetRegistry91 from "AssetRegistry" /* 6572 */;
+import AssetRegistry92 from "AssetRegistry" /* 6573 */;
+import AssetRegistry93 from "AssetRegistry" /* 6574 */;
+import AssetRegistry94 from "AssetRegistry" /* 6575 */;
+import AssetRegistry95 from "AssetRegistry" /* 6576 */;
+import AssetRegistry96 from "AssetRegistry" /* 6577 */;
+import AssetRegistry97 from "AssetRegistry" /* 6578 */;
+import AssetRegistry98 from "AssetRegistry" /* 6579 */;
+import AssetRegistry99 from "AssetRegistry" /* 6580 */;
+import AssetRegistry100 from "AssetRegistry" /* 6581 */;
+import AssetRegistry101 from "AssetRegistry" /* 6582 */;
+import AssetRegistry102 from "AssetRegistry" /* 6583 */;
+import AssetRegistry103 from "AssetRegistry" /* 6584 */;
+import AssetRegistry104 from "AssetRegistry" /* 6585 */;
+import AssetRegistry105 from "AssetRegistry" /* 6586 */;
+import AssetRegistry106 from "AssetRegistry" /* 6587 */;
+import AssetRegistry107 from "AssetRegistry" /* 6588 */;
+import AssetRegistry108 from "AssetRegistry" /* 6589 */;
+import AssetRegistry109 from "AssetRegistry" /* 6590 */;
+import AssetRegistry110 from "AssetRegistry" /* 6591 */;
+import AssetRegistry111 from "AssetRegistry" /* 6592 */;
+import AssetRegistry112 from "AssetRegistry" /* 6593 */;
+import AssetRegistry113 from "AssetRegistry" /* 6594 */;
+import AssetRegistry114 from "AssetRegistry" /* 6595 */;
+import AssetRegistry115 from "AssetRegistry" /* 6596 */;
+import AssetRegistry116 from "AssetRegistry" /* 6597 */;
+import AssetRegistry117 from "AssetRegistry" /* 6598 */;
+import AssetRegistry118 from "AssetRegistry" /* 6599 */;
+import AssetRegistry119 from "AssetRegistry" /* 6600 */;
+import AssetRegistry120 from "AssetRegistry" /* 6601 */;
+import AssetRegistry121 from "AssetRegistry" /* 6602 */;
+import AssetRegistry122 from "AssetRegistry" /* 6603 */;
+import AssetRegistry123 from "AssetRegistry" /* 6604 */;
+import AssetRegistry124 from "AssetRegistry" /* 6605 */;
+import AssetRegistry125 from "AssetRegistry" /* 6606 */;
+import AssetRegistry126 from "AssetRegistry" /* 6607 */;
+import AssetRegistry127 from "AssetRegistry" /* 6608 */;
+import AssetRegistry128 from "AssetRegistry" /* 6609 */;
 import shims_mod from "shims" /* 586 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
@@ -154,7 +159,7 @@ let obj = {
   domains: ["twitch.tv", "twitch.com"]
 };
 shims = shims_mod;
-const items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
+const items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
 const obj3 = {
   type: PlatformTypes.YOUTUBE,
   name: "YouTube",
@@ -172,16 +177,7 @@ items[1] = obj3;
 const obj5 = { type: PlatformTypes.BATTLENET, name: "Battle.net", color: shims.unsafe_getRawColor("PLATFORM_BATTLENET"), icon: { lightPNG: AssetRegistry9, darkPNG: AssetRegistry9, whitePNG: AssetRegistry10, lightSVG: AssetRegistry11, darkSVG: AssetRegistry11, whiteSVG: AssetRegistry12, blackSVG: AssetRegistry11 }, enabled: true, migrationData: obj7 };
 ({ lightPNG: AssetRegistry5, darkPNG: AssetRegistry5, whitePNG: AssetRegistry6, lightSVG: AssetRegistry7, darkSVG: AssetRegistry7, whiteSVG: AssetRegistry8 });
 shims = shims_mod;
-obj7 = {
-  replacedBy: ApplicationIdentityAppIds.BATTLENET,
-  getMigrationExperimentEnabled(location) {
-    const battlenetSocialSDKMigrationExperiment = socialSDKMigration.battlenetSocialSDKMigrationExperiment;
-    const obj = { location };
-    return battlenetSocialSDKMigrationExperiment.getConfig(obj).enabled;
-  },
-  helpCenterLink: "https://discord.com/blog/link-world-of-warcraft-with-discord",
-  deprecationDate: new Date("2026-09-22Z-07:00")
-};
+obj7 = { replacedBy: ApplicationIdentityAppIds.BATTLENET, helpCenterLink: "https://discord.com/blog/link-world-of-warcraft-with-discord", deprecationDate: new Date("2026-09-22Z-07:00") };
 ({ lightPNG: AssetRegistry9, darkPNG: AssetRegistry9, whitePNG: AssetRegistry10, lightSVG: AssetRegistry11, darkSVG: AssetRegistry11, whiteSVG: AssetRegistry12, blackSVG: AssetRegistry11 });
 items[2] = obj5;
 const obj8 = {
@@ -218,14 +214,7 @@ items[5] = obj12;
 const obj14 = { type: PlatformTypes.LEAGUE_OF_LEGENDS, name: "League of Legends", color: shims.unsafe_getRawColor("PLATFORM_LOL"), icon: { lightPNG: AssetRegistry27, darkPNG: AssetRegistry27, whitePNG: AssetRegistry28, lightSVG: AssetRegistry29, darkSVG: AssetRegistry29, whiteSVG: AssetRegistry30 }, enabled: true, migrationData: obj16 };
 ({ lightPNG: AssetRegistry23, darkPNG: AssetRegistry23, whitePNG: AssetRegistry24, lightSVG: AssetRegistry25, darkSVG: AssetRegistry25, whiteSVG: AssetRegistry26 });
 shims = shims_mod;
-obj16 = {
-  replacedBy: ApplicationIdentityAppIds.RIOT_GAMES,
-  getMigrationExperimentEnabled() {
-    return true;
-  },
-  helpCenterLink: "https://www.riotgames.com/en/riot-games-discord-account-linking",
-  deprecationDate: new Date("2026-07-10Z-07:00")
-};
+obj16 = { replacedBy: ApplicationIdentityAppIds.RIOT_GAMES, helpCenterLink: "https://www.riotgames.com/en/riot-games-discord-account-linking", deprecationDate: new Date("2026-07-10Z-07:00") };
 ({ lightPNG: AssetRegistry27, darkPNG: AssetRegistry27, whitePNG: AssetRegistry28, lightSVG: AssetRegistry29, darkSVG: AssetRegistry29, whiteSVG: AssetRegistry30 });
 items[6] = obj14;
 const obj17 = {
@@ -339,14 +328,7 @@ const obj39 = { type: PlatformTypes.EPIC_GAMES, name: "Epic Games", icon: { ligh
 items[18] = obj39;
 const obj41 = { type: PlatformTypes.RIOT_GAMES, name: "Riot Games", icon: { lightPNG: AssetRegistry78, darkPNG: AssetRegistry78, whitePNG: AssetRegistry79, lightSVG: AssetRegistry80, darkSVG: AssetRegistry80, whiteSVG: AssetRegistry81, blackSVG: AssetRegistry82 }, enabled: true, migrationData: obj43 };
 ({ lightPNG: AssetRegistry74, darkPNG: AssetRegistry75, whitePNG: AssetRegistry75, lightSVG: AssetRegistry76, darkSVG: AssetRegistry77, whiteSVG: AssetRegistry77 });
-obj43 = {
-  replacedBy: ApplicationIdentityAppIds.RIOT_GAMES,
-  getMigrationExperimentEnabled() {
-    return true;
-  },
-  helpCenterLink: "https://www.riotgames.com/en/riot-games-discord-account-linking",
-  deprecationDate: new Date("2026-07-10Z-07:00")
-};
+obj43 = { replacedBy: ApplicationIdentityAppIds.RIOT_GAMES, helpCenterLink: "https://www.riotgames.com/en/riot-games-discord-account-linking", deprecationDate: new Date("2026-07-10Z-07:00") };
 ({ lightPNG: AssetRegistry78, darkPNG: AssetRegistry78, whitePNG: AssetRegistry79, lightSVG: AssetRegistry80, darkSVG: AssetRegistry80, whiteSVG: AssetRegistry81, blackSVG: AssetRegistry82 });
 items[19] = obj41;
 const obj44 = {
@@ -401,9 +383,21 @@ const obj52 = {
 ({ lightPNG: AssetRegistry97, darkPNG: AssetRegistry98, whitePNG: AssetRegistry98, lightSVG: AssetRegistry99, darkSVG: AssetRegistry100, whiteSVG: AssetRegistry100 });
 items[24] = obj52;
 const obj54 = {
+  type: PlatformTypes.LETTERBOXD,
+  name: "Letterboxd",
+  icon: { lightPNG: AssetRegistry105, darkPNG: AssetRegistry106, whitePNG: AssetRegistry107, lightSVG: AssetRegistry108, darkSVG: AssetRegistry109, whiteSVG: AssetRegistry110 },
+  enabled: true,
+  domains: ["letterboxd.com"],
+  getPlatformUserUrl(name) {
+    return "https://letterboxd.com/" + encodeURIComponent(name.name) + "/";
+  }
+};
+({ lightPNG: AssetRegistry101, darkPNG: AssetRegistry101, whitePNG: AssetRegistry102, lightSVG: AssetRegistry103, darkSVG: AssetRegistry103, whiteSVG: AssetRegistry104 });
+items[25] = obj54;
+const obj56 = {
   type: PlatformTypes.MASTODON,
   name: "Mastodon",
-  icon: { lightPNG: AssetRegistry105, darkPNG: AssetRegistry105, whitePNG: AssetRegistry106, lightSVG: AssetRegistry107, darkSVG: AssetRegistry107, whiteSVG: AssetRegistry108 },
+  icon: { lightPNG: AssetRegistry111, darkPNG: AssetRegistry111, whitePNG: AssetRegistry112, lightSVG: AssetRegistry113, darkSVG: AssetRegistry113, whiteSVG: AssetRegistry114 },
   enabled: false,
   getPlatformUserUrl(id) {
     return id.id;
@@ -411,44 +405,44 @@ const obj54 = {
   isFederated: true,
   hasMetadata: true
 };
-({ lightPNG: AssetRegistry101, darkPNG: AssetRegistry101, whitePNG: AssetRegistry102, lightSVG: AssetRegistry103, darkSVG: AssetRegistry103, whiteSVG: AssetRegistry104 });
-items[25] = obj54;
-const obj56 = { type: PlatformTypes.CRUNCHYROLL, name: "Crunchyroll", color: shims.unsafe_getRawColor("PLATFORM_CRUNCHYROLL"), icon: { lightPNG: AssetRegistry109, darkPNG: AssetRegistry109, whitePNG: AssetRegistry109, lightSVG: AssetRegistry110, darkSVG: AssetRegistry110, whiteSVG: AssetRegistry111 }, enabled: true };
-({ lightPNG: AssetRegistry105, darkPNG: AssetRegistry105, whitePNG: AssetRegistry106, lightSVG: AssetRegistry107, darkSVG: AssetRegistry107, whiteSVG: AssetRegistry108 });
-shims = shims_mod;
+({ lightPNG: AssetRegistry105, darkPNG: AssetRegistry106, whitePNG: AssetRegistry107, lightSVG: AssetRegistry108, darkSVG: AssetRegistry109, whiteSVG: AssetRegistry110 });
 items[26] = obj56;
-const obj58 = {
+const obj58 = { type: PlatformTypes.CRUNCHYROLL, name: "Crunchyroll", color: shims.unsafe_getRawColor("PLATFORM_CRUNCHYROLL"), icon: { lightPNG: AssetRegistry115, darkPNG: AssetRegistry115, whitePNG: AssetRegistry115, lightSVG: AssetRegistry116, darkSVG: AssetRegistry116, whiteSVG: AssetRegistry117 }, enabled: true };
+({ lightPNG: AssetRegistry111, darkPNG: AssetRegistry111, whitePNG: AssetRegistry112, lightSVG: AssetRegistry113, darkSVG: AssetRegistry113, whiteSVG: AssetRegistry114 });
+shims = shims_mod;
+items[27] = obj58;
+const obj60 = {
   type: PlatformTypes.DOMAIN,
   name: "Domain",
-  icon: { lightPNG: AssetRegistry112, darkPNG: AssetRegistry113, whitePNG: AssetRegistry113, lightSVG: AssetRegistry114, darkSVG: AssetRegistry115, whiteSVG: AssetRegistry115 },
+  icon: { lightPNG: AssetRegistry118, darkPNG: AssetRegistry119, whitePNG: AssetRegistry119, lightSVG: AssetRegistry120, darkSVG: AssetRegistry121, whiteSVG: AssetRegistry121 },
   getPlatformUserUrl(id) {
     return "https://" + id.id + "/";
   },
   enabled: true
 };
-({ lightPNG: AssetRegistry109, darkPNG: AssetRegistry109, whitePNG: AssetRegistry109, lightSVG: AssetRegistry110, darkSVG: AssetRegistry110, whiteSVG: AssetRegistry111 });
-items[27] = obj58;
-const obj60 = { type: PlatformTypes.AMAZON_MUSIC, name: "Amazon Music", icon: { lightPNG: AssetRegistry116, darkPNG: AssetRegistry116, whitePNG: AssetRegistry116, lightSVG: AssetRegistry117, darkSVG: AssetRegistry117, whiteSVG: AssetRegistry117 }, enabled: true };
-({ lightPNG: AssetRegistry112, darkPNG: AssetRegistry113, whitePNG: AssetRegistry113, lightSVG: AssetRegistry114, darkSVG: AssetRegistry115, whiteSVG: AssetRegistry115 });
+({ lightPNG: AssetRegistry115, darkPNG: AssetRegistry115, whitePNG: AssetRegistry115, lightSVG: AssetRegistry116, darkSVG: AssetRegistry116, whiteSVG: AssetRegistry117 });
 items[28] = obj60;
-const obj62 = { type: PlatformTypes.META_QUEST_OR_HORIZON, name: "Meta Quest", icon: { lightPNG: AssetRegistry118, darkPNG: AssetRegistry119, whitePNG: AssetRegistry120, lightSVG: AssetRegistry121, darkSVG: AssetRegistry122, whiteSVG: AssetRegistry122 }, enabled: false };
-({ lightPNG: AssetRegistry116, darkPNG: AssetRegistry116, whitePNG: AssetRegistry116, lightSVG: AssetRegistry117, darkSVG: AssetRegistry117, whiteSVG: AssetRegistry117 });
+const obj62 = { type: PlatformTypes.AMAZON_MUSIC, name: "Amazon Music", icon: { lightPNG: AssetRegistry122, darkPNG: AssetRegistry122, whitePNG: AssetRegistry122, lightSVG: AssetRegistry123, darkSVG: AssetRegistry123, whiteSVG: AssetRegistry123 }, enabled: true };
+({ lightPNG: AssetRegistry118, darkPNG: AssetRegistry119, whitePNG: AssetRegistry119, lightSVG: AssetRegistry120, darkSVG: AssetRegistry121, whiteSVG: AssetRegistry121 });
 items[29] = obj62;
-({ lightPNG: AssetRegistry118, darkPNG: AssetRegistry119, whitePNG: AssetRegistry120, lightSVG: AssetRegistry121, darkSVG: AssetRegistry122, whiteSVG: AssetRegistry122 });
-let closure_4 = module_12.keyBy(items, "type");
-let closure_5 = {};
+const obj64 = { type: PlatformTypes.META_QUEST_OR_HORIZON, name: "Meta Quest", icon: { lightPNG: AssetRegistry124, darkPNG: AssetRegistry125, whitePNG: AssetRegistry126, lightSVG: AssetRegistry127, darkSVG: AssetRegistry128, whiteSVG: AssetRegistry128 }, enabled: false };
+({ lightPNG: AssetRegistry122, darkPNG: AssetRegistry122, whitePNG: AssetRegistry122, lightSVG: AssetRegistry123, darkSVG: AssetRegistry123, whiteSVG: AssetRegistry123 });
+items[30] = obj64;
+({ lightPNG: AssetRegistry124, darkPNG: AssetRegistry125, whitePNG: AssetRegistry126, lightSVG: AssetRegistry127, darkSVG: AssetRegistry128, whiteSVG: AssetRegistry128 });
+let closure_3 = module_12.keyBy(items, "type");
+let closure_4 = {};
 let item = items.forEach((domains) => {
   let closure_0 = domains;
   domains = domains.domains;
   if (domains != null) {
     const item = domains.forEach((item) => {
-      closure_5[item] = domains;
+      closure_4[item] = domains;
     });
   }
 });
-const obj64 = {
+const obj66 = {
   get(arg0) {
-    let tmp = closure_4[arg0];
+    let tmp = closure_3[arg0];
     if (tmp == null) {
       tmp = null;
     }
@@ -463,12 +457,12 @@ const obj64 = {
       if (hostname.startsWith("www.")) {
         substr = hostname.slice(4);
       }
-      return closure_5[substr];
+      return closure_4[substr];
     }
   },
   isSupported(arg0) {
     hasOwnProperty = Object.prototype.hasOwnProperty;
-    return hasOwnProperty.call(closure_4, arg0);
+    return hasOwnProperty.call(closure_3, arg0);
   },
   map(arg0) {
     return items.map(arg0);
@@ -487,4 +481,4 @@ const obj64 = {
 };
 const result = size.fileFinishedImporting("lib/Platforms.tsx");
 
-export default obj64;
+export default obj66;

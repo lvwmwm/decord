@@ -1,68 +1,109 @@
 // Module ID: 10213
 // Function ID: 10214
-// Dependencies: [41, 42, 10214, 10145]
+// Dependencies: [41, 42, 93, 95, 98, 10192]
 
 // Module 10213
-import findMostLikelyADYear from "findMostLikelyADYear" /* 10145 */;
-import NUMBER from "NUMBER" /* 10214 */;
+import _mod10192 from "module_10192" /* 10192 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import map from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-const re3 = /(?:(?:([同今本])|((昭和|平成|令和)?([0-9０-９]{1,4}|元)))年\s*)?([0-9０-９]{1,2})月\s*([0-9０-９]{1,2})日/i;
-class JPStandardParser {
-  constructor() {
-    _classCallCheck(this, JPStandardParser);
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
+class UnlikelyFormatFilter {
+  constructor(strictMode) {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, UnlikelyFormatFilter);
+    const obj = _getPrototypeOf(UnlikelyFormatFilter);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = map;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, undefined);
+    }
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.strictMode = strictMode;
+    return tmp3Result;
+  }
+}
+_inherits(UnlikelyFormatFilter, _mod10192.Filter);
 const entry = {
-  key: "pattern",
-  value: function pattern() {
-    return re3;
+  key: "isValid",
+  value: function isValid(debug, text) {
+    let flag;
+    const str = text.text;
+    const str2 = str.replace(" ", "");
+    if (str2.match(/^\d*(\.\d*)?$/)) {
+      debug.debug(() => {
+        console.log("Removing unlikely result '" + text.text + "'");
+      });
+      flag = false;
+    } else {
+      const start = text.start;
+      if (start.isValidDate()) {
+        if (text.end) {
+          let flag2;
+          const end = text.end;
+          if (!end.isValidDate()) {
+            debug.debug(() => {
+              console.log("Removing invalid result: " + text + " (" + text.end + ")");
+            });
+            flag2 = false;
+          }
+          flag = flag2;
+        }
+        const self = this;
+        const strictMode = this.strictMode;
+        let isStrictModeValidResult = !strictMode;
+        if (strictMode) {
+          isStrictModeValidResult = self.isStrictModeValid(debug, text);
+        }
+        flag2 = isStrictModeValidResult;
+      } else {
+        debug.debug(() => {
+          console.log("Removing invalid result: " + text + " (" + text.start + ")");
+        });
+        flag = false;
+      }
+    }
+    return flag;
   }
 };
 const items = [
   entry,
   {
-    key: "extract",
-    value: function extract(createParsingComponents, arg1) {
-      const parsed = parseInt(NUMBER.toHankaku(arg1[5]));
-      const parsed1 = parseInt(NUMBER.toHankaku(arg1[6]));
-      const parsingComponents = createParsingComponents.createParsingComponents({ day: parsed1, month: parsed });
-      let match = arg1[1];
-      if (match) {
-        const str = arg1[1];
-        match = str.match("\u540C|\u4ECA|\u672C");
+    key: "isStrictModeValid",
+    value: function isStrictModeValid(debug, start) {
+      start = start.start;
+      const result = start.isOnlyWeekdayComponent();
+      let flag = !result;
+      if (result) {
+        debug.debug(() => {
+          console.log("(Strict) Removing weekday only component: " + start + " (" + start.end + ")");
+        });
+        flag = false;
       }
-      if (match) {
-        const reference = createParsingComponents.reference;
-        const assign = parsingComponents.assign;
-        const dateWithAdjustedTimezone = reference.getDateWithAdjustedTimezone();
-        assign("year", dateWithAdjustedTimezone.getFullYear());
-      }
-      if (arg1[2]) {
-        let sum;
-        let num = 1;
-        if ("\u5143" != arg1[4]) {
-          const _parseInt = parseInt;
-          num = parseInt(tmp(10214).toHankaku(tmp8));
-        }
-        if ("\u4EE4\u548C" == arg1[3]) {
-          sum = num + 2018;
-        } else if ("\u5E73\u6210" == arg1[3]) {
-          sum = num + 1988;
-        } else {
-          sum = num;
-          if ("\u662D\u548C" == arg1[3]) {
-            sum = num + 1925;
-          }
-        }
-        parsingComponents.assign("year", sum);
-      } else {
-        parsingComponents.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingComponents.refDate, parsed1, parsed));
-      }
-      return parsingComponents;
+      return flag;
     }
   }
 ];
 
-export default _createClass(JPStandardParser, items);
+export default _createClass(UnlikelyFormatFilter, items);

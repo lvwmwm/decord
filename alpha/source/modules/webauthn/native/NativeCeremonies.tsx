@@ -1,12 +1,12 @@
-// Module ID: 6993
-// Function ID: 6994
+// Module ID: 7021
+// Function ID: 7022
 // Name: NativeCeremonies
-// Dependencies: [5, 3, 6631, 6628, 1128, 1384, 6994, 6995, 1630, 2]
+// Dependencies: [5, 3, 6659, 6656, 1128, 1384, 7022, 7023, 1630, 2]
 
-// Module 6993 (NativeCeremonies)
+// Module 7021 (NativeCeremonies)
 import LoggerDefault from "Logger" /* 3 */;
 import intl2 from "intl" /* 1128 */;
-import react_nativeDefault from "react-native" /* 6631 */;
+import react_nativeDefault from "react-native" /* 6659 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -56,7 +56,7 @@ let obj = function _promptForRegisterCredential() {
             challenge = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {
@@ -151,7 +151,7 @@ obj = {
                 closure_2 = tmp;
                 c5 = 1;
                 c6 = 1;
-                return { value: "test", done: true };
+                return { value: "Reflect", done: true };
               }
             } else {
               let self;
@@ -219,7 +219,7 @@ obj = {
   },
   registerAndroidCredentialManagerPasskey(setError) {
     let setRegistering;
-    const registerPasskey = setRegistering(6631).registerPasskey;
+    const registerPasskey = setRegistering(6659).registerPasskey;
     setError = undefined;
     setError = setError.setError;
     setRegistering = setError.setRegistering;
@@ -250,7 +250,7 @@ obj = {
   },
   registerAndroidDevicePasskey(setError) {
     let setRegistering;
-    const register = setRegistering(6631).register;
+    const register = setRegistering(6659).register;
     setError = undefined;
     setError = setError.setError;
     setRegistering = setError.setRegistering;
@@ -284,7 +284,7 @@ obj = {
     let setRegistering;
     obj = setError(1384);
     const isAndroidResult = obj.isAndroid();
-    const tmp2 = setRegistering(6631);
+    const tmp2 = setRegistering(6659);
     if (isAndroidResult) {
       const registerPasskey = tmp2.registerPasskey;
       setError = undefined;
@@ -347,7 +347,7 @@ obj = {
     let setRegistering;
     let register = fn;
     if (fn === undefined) {
-      register = setRegistering(6631).register;
+      register = setRegistering(6659).register;
     }
     setError = undefined;
     setError = setError.setError;

@@ -1,13 +1,13 @@
-// Module ID: 12204
-// Function ID: 12205
+// Module ID: 12270
+// Function ID: 12271
 // Name: ConjureTipSwap
-// Dependencies: [19, 21, 558, 576, 5014, 5167, 2]
+// Dependencies: [19, 21, 558, 576, 5035, 5188, 2]
 
-// Module 12204 (ConjureTipSwap)
+// Module 12270 (ConjureTipSwap)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
-import timing from "timing" /* 5167 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
+import timing from "timing" /* 5188 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -61,7 +61,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function TipFade
   let obj = sharedValue(576);
   const cResult = obj.c(6);
   children = children.children;
-  const obj2 = sharedValue(5014);
+  const obj2 = sharedValue(5035);
   sharedValue = obj2.useSharedValue(0);
   if (cResult[0] !== sharedValue) {
     const fn = function s() {
@@ -95,7 +95,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function TipFade
   fn2.__closure = { opacity: sharedValue };
   fn2.__workletHash = 14074417751279;
   fn2.__initData = __initData;
-  const tmpResult = tmp(5014);
+  const tmpResult = tmp(5035);
   const animatedStyle = tmpResult.useAnimatedStyle(fn2);
   if (cResult[3] === children) {
     let tmp9;
@@ -112,7 +112,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function TipFade
 }) : (function TipFade(children) {
   let sharedValue;
   children = children.children;
-  let obj = sharedValue(5014);
+  let obj = sharedValue(5035);
   sharedValue = obj.useSharedValue(0);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
@@ -135,7 +135,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function TipFade
   fn.__closure = { opacity: sharedValue };
   fn.__workletHash = 13445232887916;
   fn.__initData = __initData2;
-  const obj2 = sharedValue(5014);
+  const obj2 = sharedValue(5035);
   const style = obj2.useAnimatedStyle(fn);
   return jsx(ReanimatedRexportDefault.View, { style, children });
 });

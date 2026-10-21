@@ -1,10 +1,10 @@
-// Module ID: 4904
-// Function ID: 4905
+// Module ID: 4925
+// Function ID: 4926
 // Name: getBurstAnimation
-// Dependencies: [5, 4905, 4906, 4907, 4908, 4909, 4910, 4911, 4912, 4913, 4914, 4915, 4916, 4917, 4918, 4919, 4920, 4921, 4922, 4923, 4924, 4925, 4926, 4927, 4928, 4929, 4930, 4931, 4932, 4933, 4934, 4935, 4936, 4937, 4938, 4939, 4940, 4941, 2]
+// Dependencies: [5, 4926, 4927, 4928, 4929, 4930, 4931, 4932, 4933, 4934, 4935, 4936, 4937, 4938, 4939, 4940, 4941, 4942, 4943, 4944, 4945, 4946, 4947, 4948, 4949, 4950, 4951, 4952, 4953, 4954, 4955, 4956, 4957, 4958, 4959, 4960, 4961, 4962, 2]
 // Exports: getBurstAnimation
 
-// Module 4904 (getBurstAnimation)
+// Module 4925 (getBurstAnimation)
 import _asyncToGeneratorDefault from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -13,119 +13,11 @@ let closure_5;
 
 const obj = {
   load() {
-    return require("module_4905");
+    return require("module_4926");
   }
 };
 const items = [
   obj,
-  {
-    load() {
-      return require("module_4906");
-    }
-  },
-  {
-    load() {
-      return require("module_4907");
-    }
-  },
-  {
-    load() {
-      return require("module_4908");
-    }
-  },
-  {
-    load() {
-      return require("module_4909");
-    }
-  },
-  {
-    load() {
-      return require("module_4910");
-    }
-  },
-  {
-    load() {
-      return require("module_4911");
-    }
-  },
-  {
-    load() {
-      return require("module_4912");
-    }
-  },
-  {
-    load() {
-      return require("module_4913");
-    }
-  },
-  {
-    load() {
-      return require("module_4914");
-    }
-  },
-  {
-    load() {
-      return require("module_4915");
-    }
-  },
-  {
-    load() {
-      return require("module_4916");
-    }
-  },
-  {
-    load() {
-      return require("module_4917");
-    }
-  },
-  {
-    load() {
-      return require("module_4918");
-    }
-  },
-  {
-    load() {
-      return require("module_4919");
-    }
-  },
-  {
-    load() {
-      return require("module_4920");
-    }
-  },
-  {
-    load() {
-      return require("module_4921");
-    }
-  },
-  {
-    load() {
-      return require("module_4922");
-    }
-  }
-];
-const obj2 = {
-  load() {
-    return require("module_4923");
-  }
-};
-const items1 = [
-  obj2,
-  {
-    load() {
-      return require("module_4924");
-    }
-  },
-  {
-    load() {
-      return require("module_4925");
-    }
-  },
-  {
-    load() {
-      return require("module_4926");
-    }
-  },
   {
     load() {
       return require("module_4927");
@@ -195,6 +87,114 @@ const items1 = [
     load() {
       return require("module_4940");
     }
+  },
+  {
+    load() {
+      return require("module_4941");
+    }
+  },
+  {
+    load() {
+      return require("module_4942");
+    }
+  },
+  {
+    load() {
+      return require("module_4943");
+    }
+  }
+];
+const obj2 = {
+  load() {
+    return require("module_4944");
+  }
+};
+const items1 = [
+  obj2,
+  {
+    load() {
+      return require("module_4945");
+    }
+  },
+  {
+    load() {
+      return require("module_4946");
+    }
+  },
+  {
+    load() {
+      return require("module_4947");
+    }
+  },
+  {
+    load() {
+      return require("module_4948");
+    }
+  },
+  {
+    load() {
+      return require("module_4949");
+    }
+  },
+  {
+    load() {
+      return require("module_4950");
+    }
+  },
+  {
+    load() {
+      return require("module_4951");
+    }
+  },
+  {
+    load() {
+      return require("module_4952");
+    }
+  },
+  {
+    load() {
+      return require("module_4953");
+    }
+  },
+  {
+    load() {
+      return require("module_4954");
+    }
+  },
+  {
+    load() {
+      return require("module_4955");
+    }
+  },
+  {
+    load() {
+      return require("module_4956");
+    }
+  },
+  {
+    load() {
+      return require("module_4957");
+    }
+  },
+  {
+    load() {
+      return require("module_4958");
+    }
+  },
+  {
+    load() {
+      return require("module_4959");
+    }
+  },
+  {
+    load() {
+      return require("module_4960");
+    }
+  },
+  {
+    load() {
+      return require("module_4961");
+    }
   }
 ];
 let closure_0 = _asyncToGeneratorDefault((arg0, arg1, arg2) => {
@@ -238,7 +238,7 @@ let closure_0 = _asyncToGeneratorDefault((arg0, arg1, arg2) => {
             burstAnimationHash = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (arg0 === 1) {
           c7 = 3;

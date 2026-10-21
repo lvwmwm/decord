@@ -1,295 +1,126 @@
 // Module ID: 8162
 // Function ID: 8163
-// Dependencies: [8163]
-// Exports: dataUriToBuffer, decompress, deferInit, getBase64Image, getCharacterArray, getDataView, getNullTerminatedStringFromDataView, getPascalStringFromDataView, getStringFromDataView, getStringValueFromArray, getUnicodeStringFromDataView, objectAssign, padStart, parseFloatRadix, strRepeat
+// Dependencies: []
+// Exports: findMatroskaDocTypeElements, getFileChunk, isAvifStringIncluded, isFileContaineJfiforExifHeader, isFlvStringIncluded, isHeicSignatureIncluded, isftypStringIncluded
 
 // Module 8162
-import _modDef8163 from "module_8163" /* 8163 */;
+function fetchFromObject(FileTypes, arr) {
+  let tmp2;
+  const index = arr.indexOf(".");
+  if (index > -1) {
+    tmp2 = fetchFromObject(FileTypes[arr.slice(arr, 0, index)], arr.slice(index + 1));
+  } else {
+    tmp2 = FileTypes[arr];
+  }
+  return tmp2;
+}
 
-const f99314 = (item) => String.fromCharCode(item);
-
-export const getDataView = function getDataView(buffer, byteOffset, byteLength) {
-  try {
-    const _DataView = DataView;
+export const getFileChunk = function getFileChunk(fileChunk, chunkSize) {
+  let num = chunkSize;
+  if (chunkSize === undefined) {
+    num = 32;
+  }
+  let uint8Array = fileChunk;
+  if (fileChunk instanceof ArrayBuffer) {
+    const _Uint8Array = Uint8Array;
     const self = this;
     const self2 = this;
-    const dataView = new DataView(buffer, byteOffset, byteLength);
-    return dataView;
-  } catch (err) {
-    const self3 = this;
-    const self4 = this;
-    const tmp12 = new _modDef8163(buffer, byteOffset, byteLength);
-    return tmp12;
+    let tmp = fileChunk;
+    uint8Array = new Uint8Array(fileChunk);
   }
-};
-export const getStringFromDataView = function getStringFromDataView(dataView, sum, length) {
-  const items = [];
-  if (0 < length) {
-    let num2 = 0;
-    if (sum < dataView.byteLength) {
-      items.push(dataView.getUint8(sum + num2));
-      sum = num2 + 1;
-      while (sum < length) {
-        num2 = sum;
-        if (sum + sum >= dataView.byteLength) {
-          break;
-        }
-      }
-    }
-  }
-  const mapped = items.map(f99314);
-  return mapped.join("");
-};
-export const getNullTerminatedStringFromDataView = function getNullTerminatedStringFromDataView(byteLength, sum13) {
-  const items = [];
-  let num = 0;
-  if (sum13 < byteLength.byteLength) {
-    const uint8 = byteLength.getUint8(sum13 + num);
-    while (0 !== uint8) {
-      let arr = items.push(uint8);
-      let sum = num + 1;
-      num = sum;
-      if (sum13 + sum >= byteLength.byteLength) {
-        break;
-      }
-    }
-  }
-  const mapped = items.map(f99314);
-  return mapped.join("");
-};
-export const getUnicodeStringFromDataView = function getUnicodeStringFromDataView(byteLength, arg1, uint325) {
-  const items = [];
-  if (0 < uint325) {
-    let num2 = 0;
-    if (arg1 < byteLength.byteLength) {
-      items.push(byteLength.getUint16(arg1 + num2));
-      const sum = num2 + 2;
-      while (sum < uint325) {
-        num2 = sum;
-        if (arg1 + sum >= byteLength.byteLength) {
-          break;
-        }
-      }
-    }
-  }
-  if (0 === items[items.length - 1]) {
-    items.pop();
-  }
-  const mapped = items.map(f99314);
-  return mapped.join("");
-};
-export const getPascalStringFromDataView = function getPascalStringFromDataView(getUint8, sum1) {
-  const uint8 = getUint8.getUint8(sum1);
-  const items = [uint8, ];
-  const sum = sum1 + 1;
-  const items1 = [];
-  if (0 < uint8) {
-    let num = 0;
-    if (sum < getUint8.byteLength) {
-      items1.push(getUint8.getUint8(sum + num));
-      sum1 = num + 1;
-      while (sum1 < uint8) {
-        num = sum1;
-        if (sum + sum1 >= getUint8.byteLength) {
-          break;
-        }
-      }
-    }
-  }
-  const mapped = items1.map(f99314);
-  items[1] = mapped.join("");
-  return items;
-};
-export const getStringValueFromArray = function getStringValueFromArray(value) {
-  const mapped = value.map(f99314);
-  return mapped.join("");
-};
-export const getCharacterArray = function getCharacterArray(str) {
-  const parts = str.split("");
-  return parts.map((item) => item.charCodeAt(0));
-};
-export const objectAssign = function objectAssign() {
-  let num;
-  for (let num = 1; num < arguments.length; num = num + 1) {
-    for (const key10010 in arguments[num]) {
-      arguments[0][key10010] = arguments[num][key10010];
-      continue;
-    }
-  }
-  return arguments[0];
-};
-export const deferInit = function deferInit(items, base64, arg2) {
-  let closure_1 = base64;
-  let closure_2 = arg2;
-  let c3 = false;
-  let obj = {
-    get() {
-      const tmp = c3;
-      if (!tmp) {
-        c3 = true;
-        const _Object = Object;
-        const obj = { configurable: true, enumerable: true, value: closure_2.apply(items), writable: true };
-        defineProperty(items, base64, obj);
-      }
-      return items[base64];
-    },
-    configurable: true,
-    enumerable: true
-  };
-  Object.defineProperty(items, base64, obj);
-};
-export const getBase64Image = function getBase64Image(image) {
-  let tmp4;
-  if (typeof btoa !== "undefined") {
-    let btoaResult;
-    if (typeof image === "string") {
-      const _btoa = btoa;
-      btoaResult = btoa(image);
-    } else {
-      const _Array = Array;
-      const _Uint8Array = Uint8Array;
-      const self3 = this;
-      const self4 = this;
-      const _btoa2 = btoa;
-      const call = reduce.call;
-      const uint8Array = new Uint8Array(image);
-      btoaResult = _btoa2(call(uint8Array, (arg0, arg1) => arg0 + String.fromCharCode(arg1), ""));
-    }
-    tmp4 = btoaResult;
-  } else {
-    const _Buffer3 = Buffer;
-    if (typeof Buffer !== "undefined") {
-      let str1;
-      const _Buffer4 = Buffer;
-      if (undefined !== Buffer.from) {
-        const _Buffer2 = Buffer;
-        const str3 = Buffer.from(image);
-        str1 = str3.toString("base64");
-      } else {
-        const _Buffer = Buffer;
-        const self = this;
-        const self2 = this;
-        const str = new Buffer(image);
-        str1 = str.toString("base64");
-      }
-      tmp4 = str1;
-    }
-  }
-  return tmp4;
-};
-export const dataUriToBuffer = function dataUriToBuffer(result) {
-  const substr = result.substring(result.indexOf(",") + 1);
-  if (-1 !== result.indexOf(";base64")) {
-    const _atob = atob;
-    if (typeof atob !== "undefined") {
-      const _Uint8Array = Uint8Array;
-      const _atob2 = atob;
-      return Uint8Array.from(atob(substr), (str) => str.charCodeAt(0)).buffer;
-    } else {
-      const _Buffer7 = Buffer;
-      if (typeof Buffer !== "undefined") {
-        let fromResult;
-        const _Buffer8 = Buffer;
-        if (undefined !== Buffer.from) {
-          const _Buffer5 = Buffer;
-          fromResult = Buffer.from(substr, "base64");
-        } else {
-          const _Buffer4 = Buffer;
-          const self3 = this;
-          const self4 = this;
-          fromResult = new Buffer(substr, "base64");
-        }
-        return fromResult;
-      }
-    }
-  } else {
-    let buffer;
-    const _decodeURIComponent = decodeURIComponent;
-    const decodeURIComponentResult = decodeURIComponent(substr);
-    const _Buffer6 = Buffer;
-    if (typeof Buffer !== "undefined") {
-      let fromResult1;
-      const _Buffer = Buffer;
-      if (undefined !== Buffer.from) {
-        const _Buffer3 = Buffer;
-        fromResult1 = Buffer.from(decodeURIComponentResult);
-      } else {
-        const _Buffer2 = Buffer;
-        const self = this;
-        const self2 = this;
-        fromResult1 = new Buffer(decodeURIComponentResult);
-      }
-      buffer = fromResult1;
-    } else {
+  if (!Array.isArray(fileChunk)) {
+    const _ArrayBuffer = ArrayBuffer;
+    if (!(fileChunk instanceof ArrayBuffer)) {
       const _Uint8Array2 = Uint8Array;
-      buffer = Uint8Array.from(decodeURIComponentResult, (str) => str.charCodeAt(0)).buffer;
-    }
-    return buffer;
-  }
-};
-export const padStart = function padStart(arg0, arg1, arg2) {
-  const array = new Array(arg1 - arg0.length + 1);
-  return array.join(arg2) + arg0;
-};
-export const parseFloatRadix = function parseFloatRadix(str, arg1) {
-  const parsed = parseInt(str.replace(".", ""), arg1);
-  const _Math = Math;
-  const arr = str.split(".")[1] || "";
-  return parsed / pow(arg1, arr.length);
-};
-export const strRepeat = function strRepeat(_1, arg1) {
-  const array = new Array(arg1 + 1);
-  return array.join(_1);
-};
-export const COMPRESSION_METHOD_DEFLATE = 0;
-export const decompress = function decompress(dataView, compressionMethod, arg2, dataview) {
-  let closure_0 = arg2;
-  let str = dataview;
-  if (dataview === undefined) {
-    str = "string";
-  }
-  if (0 === compressionMethod) {
-    if (typeof globalThis.DecompressionStream === "function") {
-      let nextPromise;
-      const DecompressionStream2 = globalThis.DecompressionStream;
-      const self = this;
-      const self2 = this;
-      const decompressionStream = new globalThis.DecompressionStream("deflate");
-      const _Blob = Blob;
-      const items = [dataView];
-      const self3 = this;
-      const self4 = this;
-      const blob = new Blob(items);
-      const streamResult = blob.stream();
-      const pipeThroughResult = streamResult.pipeThrough(decompressionStream);
-      if ("dataview" === str) {
-        const _Response2 = Response;
-        const self7 = this;
-        const self8 = this;
-        const response = new Response(pipeThroughResult);
-        const arrayBufferResult = response.arrayBuffer();
-        nextPromise = arrayBufferResult.then((result) => {
-          const dataView = new DataView(result);
-          return dataView;
-        });
-      } else {
-        const _Response = Response;
-        const self5 = this;
-        const self6 = this;
-        const response1 = new Response(pipeThroughResult);
-        const arrayBufferResult2 = response1.arrayBuffer();
-        nextPromise = arrayBufferResult2.then((result) => {
-          const decoder = new TextDecoder(closure_0);
-          return decoder.decode(result);
-        });
+      if (!(fileChunk instanceof Uint8Array)) {
+        const _TypeError = TypeError;
+        const _HermesInternal = HermesInternal;
+        const self3 = this;
+        const self4 = this;
+        const typeError = new TypeError("Expected the `file` argument to be of type `Array<number>`, `Uint8Array`, or `ArrayBuffer`, got `" + typeof fileChunk + "`");
+        throw typeError;
       }
-      return nextPromise;
     }
   }
-  let rejectResult = dataView;
-  if (undefined !== compressionMethod) {
-    const _HermesInternal = HermesInternal;
-    rejectResult = Promise.reject("Unknown compression method " + compressionMethod + ".");
+  const arr = Array.from(uint8Array.slice(0, num));
+  if (arr.every((item) => {
+    let tmp = typeof item === "number";
+    if (typeof item === "number") {
+      const _isNaN = isNaN;
+      tmp = !isNaN(item);
+    }
+    return tmp;
+  })) {
+    return arr;
+  } else {
+    const _TypeError2 = TypeError;
+    const self5 = this;
+    const self6 = this;
+    const typeError1 = new TypeError("File content contains illegal values");
+    throw typeError1;
   }
-  return rejectResult;
+};
+export { fetchFromObject };
+export const findMatroskaDocTypeElements = function findMatroskaDocTypeElements(fileChunk) {
+  const mapped = fileChunk.map((item) => String.fromCharCode(item));
+  const joined = mapped.join("");
+  let str = "webm";
+  if (!joined.includes("webm")) {
+    let str3;
+    if (joined.includes("matroska")) {
+      str3 = "mkv";
+    }
+    str = str3;
+  }
+  return str;
+};
+export const isftypStringIncluded = function isftypStringIncluded(fileChunk) {
+  const items = [102, 116, 121, 112];
+  let num = 0;
+  if (0 < fileChunk.length - items.length) {
+    while (true) {
+      let num2 = 0;
+      let flag = true;
+      if (0 < items.length) {
+        flag = false;
+        while (fileChunk[num + num2] === items[num2]) {
+          let sum = num2 + 1;
+          num2 = sum;
+          flag = true;
+          if (sum >= items.length) {
+            break;
+          }
+        }
+      }
+      if (flag) {
+        break;
+      } else {
+        num = num + 1;
+      }
+    }
+    return true;
+  }
+  return false;
+};
+export const isFlvStringIncluded = function isFlvStringIncluded(fileChunk) {
+  const substr = fileChunk.slice(0, 3);
+  const textDecoder = new TextDecoder();
+  const decode = textDecoder.decode;
+  const uint8Array = new Uint8Array(substr);
+  const decodeResult = decode(uint8Array);
+  return decodeResult.includes("FLV");
+};
+export const isFileContaineJfiforExifHeader = function isFileContaineJfiforExifHeader(arg0) {
+  return 224 === tmp || 225 === tmp;
+};
+export const isAvifStringIncluded = function isAvifStringIncluded(fileChunk) {
+  const substr = fileChunk.slice(4, 12);
+  const mapped = substr.map((item) => String.fromCharCode(item));
+  return "ftypavif" === mapped.join("");
+};
+export const isHeicSignatureIncluded = function isHeicSignatureIncluded(fileChunk) {
+  const mapped = fileChunk.map((item) => String.fromCharCode(item));
+  let closure_0 = mapped.join("");
+  const items = ["ftypheic", "ftyphevc", "ftypmif1", "ftypmsf1"];
+  return items.some((item) => closure_0.includes(item));
 };

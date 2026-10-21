@@ -1,17 +1,17 @@
-// Module ID: 12659
-// Function ID: 12660
+// Module ID: 12723
+// Function ID: 12724
 // Name: SafetyHubActionCreators
-// Dependencies: [5, 502, 7870, 7846, 1087, 584, 1297, 5957, 7845, 2]
+// Dependencies: [5, 502, 7898, 7874, 1087, 584, 1297, 5979, 7873, 2]
 // Exports: getSafetyHubDataForClassification, requestReview, requestSuspendedUserAgeVerification, resetAgeCheckStatus
 
-// Module 12659 (SafetyHubActionCreators)
+// Module 12723 (SafetyHubActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SafetyHubStore from "SafetyHubStore" /* 7870 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7846 */;
+import SafetyHubStore from "SafetyHubStore" /* 7898 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7874 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -20,7 +20,7 @@ let c0, c3, c4, signal, suspendedUserToken, user_input;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f114495 = (filename) => {
+const f114902 = (filename) => {
   filename = filename.filename;
   obj = closure_1_0(closure_1_2[7]);
   let isImageFileResult = obj.isImageFile(filename);
@@ -130,7 +130,7 @@ let obj = function _getSafetyHubData() {
                     let items;
                     const first = flagged_content.flagged_content[0];
                     const attachments = first.attachments;
-                    first.attachments = attachments.filter(f114495);
+                    first.attachments = attachments.filter(f114902);
                     let tmp2 = closure_1_0;
                     obj = closure_1_0(closure_1_2[8]);
                     if (obj.isFlaggedContentEmpty(first)) {
@@ -282,7 +282,7 @@ obj = function _getSafetyHubDataForClassification() {
                       let items;
                       const first = found.flagged_content[0];
                       const attachments = first.attachments;
-                      first.attachments = attachments.filter(f114495);
+                      first.attachments = attachments.filter(f114902);
                       const obj3 = closure_2_0(closure_2_2[8]);
                       if (obj3.isFlaggedContentEmpty(first)) {
                         items = [];

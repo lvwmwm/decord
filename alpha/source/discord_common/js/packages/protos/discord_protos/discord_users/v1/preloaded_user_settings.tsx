@@ -12,7 +12,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let internalBinaryWrite10, internalBinaryWrite11, internalBinaryWrite15, internalBinaryWrite16, internalBinaryWrite17, internalBinaryWrite18, internalBinaryWrite19, internalBinaryWrite20, internalBinaryWrite21, internalBinaryWrite22, internalBinaryWrite23, internalBinaryWrite24, internalBinaryWrite25, internalBinaryWrite28, internalBinaryWrite29, internalBinaryWrite30, internalBinaryWrite8;
+let internalBinaryWrite10, internalBinaryWrite11, internalBinaryWrite15, internalBinaryWrite16, internalBinaryWrite17, internalBinaryWrite18, internalBinaryWrite19, internalBinaryWrite20, internalBinaryWrite21, internalBinaryWrite22, internalBinaryWrite23, internalBinaryWrite24, internalBinaryWrite25, internalBinaryWrite28, internalBinaryWrite29, internalBinaryWrite30;
 
 let tmp;
 let tmp2;
@@ -7828,7 +7828,7 @@ class ApplicationSharingSettings$Type extends MessageType49 {
 const prototype49 = ApplicationSharingSettings$Type.prototype;
 const items42 = [{ no: 1, name: "disable_application_activity_sharing", kind: "scalar", T: 8 }];
 const tmp56 = new "binaryReadMap12"("discord_protos.discord_users.v1.ApplicationSharingSettings", items42, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-let closure_72 = tmp56;
+const goLiveSource = tmp56;
 const MessageType50 = _mod1212.MessageType;
 class AdsSettings$Type extends MessageType50 {
   constructor() {
@@ -7908,7 +7908,7 @@ class AdsSettings$Type extends MessageType50 {
 const prototype50 = AdsSettings$Type.prototype;
 const items43 = [{ no: 1, name: "always_deliver", kind: "scalar", T: 8 }];
 const tmp57 = new "binaryReadMap12"("discord_protos.discord_users.v1.AdsSettings", items43, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-const goLiveSource = tmp57;
+internalBinaryWrite7 = tmp57;
 const MessageType51 = _mod1212.MessageType;
 class InAppFeedbackState$Type extends MessageType51 {
   constructor() {
@@ -8010,7 +8010,7 @@ const obj55 = { no: 1, name: "last_impression_time", kind: "message", T: T57 };
 items44[0] = obj55;
 items44[1] = { no: 2, name: "opt_out_expiry_time", kind: "message", T: T58 };
 const tmp58 = new "binaryReadMap12"("discord_protos.discord_users.v1.InAppFeedbackState", items44, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-let closure_74 = tmp58;
+const navigation = tmp58;
 const MessageType52 = _mod1212.MessageType;
 class DefaultReactionEmoji$Type extends MessageType52 {
   constructor() {
@@ -8151,7 +8151,7 @@ items45[2] = {
 };
 items45[3] = { no: 4, name: "disable_double_tap", kind: "message", T: T61 };
 const tmp59 = new "binaryReadMap12"("discord_protos.discord_users.v1.DefaultReactionEmoji", items45, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-const navigation = tmp59;
+let internalBinaryWrite8 = tmp59;
 const MessageType53 = _mod1212.MessageType;
 class InAppFeedbackSettings$Type extends MessageType53 {
   constructor() {

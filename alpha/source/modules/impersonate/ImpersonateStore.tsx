@@ -1,19 +1,19 @@
-// Module ID: 4853
-// Function ID: 4854
+// Module ID: 4874
+// Function ID: 4875
 // Name: ImpersonateStore
-// Dependencies: [4854, 4822, 1087, 1097, 11, 4859, 1405, 504, 2042, 584, 2]
+// Dependencies: [4875, 4843, 1087, 1097, 11, 4880, 1405, 504, 2041, 584, 2]
 
-// Module 4853 (ImpersonateStore)
+// Module 4874 (ImpersonateStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import FlagUtilsAll from "FlagUtils" /* 1405 */;
-import FunctionUtils from "FunctionUtils" /* 2042 */;
-import ImpersonateTypes from "ImpersonateTypes" /* 4859 */;
-import GuildRoleStore from "GuildRoleStore" /* 4854 */;
-import GuildStore from "GuildStore" /* 4822 */;
+import FunctionUtils from "FunctionUtils" /* 2041 */;
+import ImpersonateTypes from "ImpersonateTypes" /* 4880 */;
+import GuildRoleStore from "GuildRoleStore" /* 4875 */;
+import GuildStore from "GuildStore" /* 4843 */;
 import size from "module_2" /* 2 */;
 
 const GuildSettingsSections = Constants.GuildSettingsSections;
@@ -182,7 +182,7 @@ let obj = {
     if (null != guildId) {
       if (null != closure_8[guildId]) {
         if (null != closure_8[guildId]) {
-          if (closure_8[guildId].type === overrides(4859).ImpersonateType.NEW_MEMBER) {
+          if (closure_8[guildId].type === overrides(4880).ImpersonateType.NEW_MEMBER) {
             optInChannels = tmp4.optInChannels;
             if (optInChannels == null) {
               let tmp = globalThis;
@@ -270,7 +270,7 @@ let obj = {
           }, {});
         }
         flag = true;
-        const tmp3 = null != flags && tmp2.type === guildId(4859).ImpersonateType.NEW_MEMBER;
+        const tmp3 = null != flags && tmp2.type === guildId(4880).ImpersonateType.NEW_MEMBER;
         if (tmp3) {
           closure_8[guildId].memberOptions.flags = flags;
           flag = true;

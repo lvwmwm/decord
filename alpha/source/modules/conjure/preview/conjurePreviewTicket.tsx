@@ -1,16 +1,16 @@
-// Module ID: 11030
-// Function ID: 11031
+// Module ID: 10685
+// Function ID: 10686
 // Name: conjurePreviewTicket
-// Dependencies: [11024, 6724, 6727, 11031, 11033, 6729, 2]
+// Dependencies: [10679, 6752, 6755, 10686, 10688, 6757, 2]
 // Exports: prefetchConjurePreviewTicket
 
-// Module 11030 (conjurePreviewTicket)
-import FramesConstants from "FramesConstants" /* 6727 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6729 */;
-import conjurePreviewSurface2 from "conjurePreviewSurface" /* 11031 */;
-import createProxyTicket from "createProxyTicket" /* 11033 */;
-import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 11024 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6724 */;
+// Module 10685 (conjurePreviewTicket)
+import FramesConstants from "FramesConstants" /* 6755 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6757 */;
+import conjurePreviewSurface2 from "conjurePreviewSurface" /* 10686 */;
+import createProxyTicket from "createProxyTicket" /* 10688 */;
+import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 10679 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6752 */;
 import size from "module_2" /* 2 */;
 
 const isLaunched = FramesConstants.isLaunched;

@@ -1,10 +1,10 @@
-// Module ID: 12232
-// Function ID: 12233
+// Module ID: 12293
+// Function ID: 12294
 // Name: conjureSettingsRequest
 // Dependencies: [2]
 // Exports: conjureSettingsRequestBlocks
 
-// Module 12232 (conjureSettingsRequest)
+// Module 12293 (conjureSettingsRequest)
 import size from "module_2" /* 2 */;
 
 let set;

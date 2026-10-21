@@ -1,142 +1,55 @@
 // Module ID: 15488
 // Function ID: 15489
-// Dependencies: [473, 15489, 190, 875]
-// Exports: default
+// Dependencies: [15447, 15489, 15493]
 
 // Module 15488
-import ArgType from "ArgType" /* 15489 */;
-import react_mod from "react" /* 473 */;
+import _mod15447 from "module_15447" /* 15447 */;
+import _mod15489 from "module_15489" /* 15489 */;
 
-let _default2, logger;
-
-let tmp3;
-let react = react_mod;
-if (!react) {
-  let obj = { default: react };
-  tmp3 = obj;
-} else {
-  tmp3 = react;
-}
-react = tmp3.default;
-let closure_5 = { veto: null };
-function objectifyError(headers) {
-  let closure_0 = headers;
-  const obj = {};
-  const ownPropertyNames = Object.getOwnPropertyNames(headers);
-  const item = ownPropertyNames.forEach((item) => {
-    obj[item] = closure_0[item];
-  });
-  return obj;
-}
-
-export default (arg0) => {
-  let closure_0 = arg0;
-  return (arg0) => {
-    let addException;
-    function reportError(stack) {
-      logger = stack;
-      try {
-        const tmp2 = _default;
-        if (!tmp2) {
-          const tmp3 = logger;
-          const tmp5 = logger(veto[2]);
-          if (typeof tmp5 === "function") {
-            _default = tmp5;
-          } else {
-            _default = tmp6.default;
+let tmp;
+const _mod15493 = tmp(15493);
+const f122811 = (arg0, arg1, arg2) => {
+  const tmp3 = _mod15447(arg0);
+  const tmp4 = _mod15489(tmp3);
+  if (0 === tmp4) {
+    return !c0 && -1;
+  } else {
+    let sum = _mod15493(arg2, tmp4);
+    const tmp16 = c0;
+    if (tmp16) {
+      if (arg1 != arg1) {
+        if (tmp4 > sum) {
+          while (tmp3[+sum] == tmp3[+sum]) {
+            sum = tmp7 + 1;
           }
+          return true;
         }
-        const tmp9 = _default2;
-        if (!tmp9) {
-          const tmp12 = logger(veto[3]);
-          if (typeof tmp12 === "function") {
-            _default2 = tmp12;
-          } else {
-            _default2 = tmp13.default;
-          }
-        }
-        if (_default) {
-          if (_default2) {
-            if (typeof tmp16 !== "function") {
-              logger.error("parseErrorStack is not a function", []);
-              const obj2 = { parseErrorStackType: typeof _default, parseErrorStack: _default };
-              logger.debug(obj2);
-            } else if (typeof tmp18 !== "function") {
-              logger.error("symbolicateStackTrace is not a function", []);
-              const obj3 = { symbolicateStackTraceType: typeof _default2, symbolicateStackTrace: _default2 };
-              logger.debug(obj3);
-            } else {
-              try {
-                const promise = _default2(_default(stack.stack));
-                const nextPromise = promise.then((stack) => {
-                  stack = stack.stack;
-                  const mapped = stack.map((file) => ({ fileName: file.file, functionName: file.methodName, lineNumber: file.lineNumber }));
-                  let found = mapped;
-                  if (veto.veto) {
-                    found = mapped.filter((item) => {
-                      let vetoResult;
-                      const obj = veto;
-                      if (veto != null) {
-                        vetoResult = obj.veto(item);
-                      }
-                      return vetoResult;
-                    });
-                  }
-                  stack.error(stack.message, found);
-                });
-                nextPromise.catch((error) => {
-                  stack.error("Unable to symbolicate stack trace from error object", []);
-                  if (typeof closure_2_6 === "function") {
-                    stack = error;
-                    const obj = {};
-                    const _Object = Object;
-                    const ownPropertyNames = Object.getOwnPropertyNames(error);
-                    const item = ownPropertyNames.forEach((item) => {
-                      obj[item] = closure_0[item];
-                    });
-                    tmp3(obj);
-                  } else {
-                    throw new TypeError("Trying to call a non-function");
-                  }
-                });
-              } catch (tmp32) {
-                logger.error("Unable to parse stack trace from error object", []);
-                logger.debug(closure_1_6(tmp32));
-              }
-            }
-          }
-        }
-        logger.error("parseErrorStack or symbolicateStackTrace is not available", []);
-        let obj = { parseErrorStackAvailable: _default, symbolicateStackTraceAvailable: _default2 };
-        logger.debug(obj);
-      } catch (tmp47) {
-        logger.error("Unable to load \"react-native/Libraries/Core/Devtools/parseErrorStack\" or \"react-native/Libraries/Core/Devtools/symbolicateStackTrace\"", []);
-        logger.debug(closure_1_6(tmp47));
       }
+      return !c0 && -1;
     }
-    let _default = reportError;
-    const result = ArgType.assertHasLoggerPlugin(arg0);
-    closure_0 = arg0;
-    let obj = closure_0;
-    let _Object = Object;
-    let tmp2 = closure_5;
-    if (!closure_0) {
-      obj = {};
-    }
-    let closure_1 = assign({}, tmp2, obj);
-    let obj2 = {
-      onConnect() {
-        const obj = {
-          apply(apply, arg1, arg2) {
-            _default(arg2[0]);
-            return apply.apply(arg1, arg2);
+    let sum1 = sum;
+    if (tmp4 > sum) {
+      let num;
+      while (true) {
+        num = c0;
+        if (c0) {
+          if (tmp3[sum1] === arg1) {
+            break;
           }
-        };
-        const proxy = new Proxy(addException.addException, obj);
-        addException.addException = proxy;
-      },
-      features: { reportError }
-    };
-    return obj2;
-  };
+        }
+        sum1 = sum1 + 1;
+      }
+      if (!num) {
+        num = sum1;
+      }
+      if (!num) {
+        num = 0;
+      }
+      return num;
+    }
+  }
 };
+let c0 = false;
+const obj = { includes: f122811, indexOf: f122811 };
+
+export default obj;

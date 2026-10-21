@@ -1,22 +1,22 @@
-// Module ID: 17984
-// Function ID: 17985
+// Module ID: 18065
+// Function ID: 18066
 // Name: useReferralProgramCoachmark
-// Dependencies: [32, 19, 17, 1087, 4797, 21, 4945, 558, 576, 5631, 17985, 4970, 4784, 8375, 7445, 1128, 7439, 587, 2]
+// Dependencies: [32, 19, 17, 1087, 4818, 21, 4966, 558, 576, 5651, 18066, 4991, 4805, 8403, 7473, 1128, 7467, 587, 2]
 
-// Module 17984 (useReferralProgramCoachmark)
+// Module 18065 (useReferralProgramCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4797 */;
-import FastImageDefault from "FastImage" /* 5631 */;
-import openUserSettings from "openUserSettings" /* 7439 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17985 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
+import FastImageDefault from "FastImage" /* 5651 */;
+import openUserSettings from "openUserSettings" /* 7467 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18066 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReferra
     _require = tmp11;
     const first = tmp9[0];
     const _Symbol = Symbol;
-    const REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK = tmp(4784).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK;
+    const REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK = tmp(4805).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const intl = tmp(1128).intl;
       const stringResult = intl.string(require("intl").t.USo4s7);
@@ -220,7 +220,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReferra
   if (isEligibleSenderForReferralProgram) {
     let items;
     if (!disabled) {
-      items = [tmp(4784).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK];
+      items = [tmp(4805).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK];
     }
     const tmp9 = _slicedToArray(tmp7(items), 2);
     _require = tmp10;

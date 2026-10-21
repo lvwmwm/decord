@@ -1,23 +1,23 @@
-// Module ID: 17228
-// Function ID: 17229
+// Module ID: 17304
+// Function ID: 17305
 // Name: MessagesEmptyState
-// Dependencies: [19, 17, 21, 4945, 558, 576, 1505, 1275, 9291, 8628, 16190, 17229, 1128, 5195, 5205, 2]
+// Dependencies: [19, 17, 21, 4966, 558, 576, 1505, 1275, 9319, 8655, 16266, 17305, 1128, 5216, 5226, 2]
 
-// Module 17228 (MessagesEmptyState)
+// Module 17304 (MessagesEmptyState)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
 import useNavigation from "useNavigation" /* 1505 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import components_Button_Button from "components/Button/Button" /* 5205 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8628 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9291 */;
-import useYouBarTotalHeight from "useYouBarTotalHeight" /* 16190 */;
-import ActivitiesTogetherSpotIllustration from "ActivitiesTogetherSpotIllustration" /* 17229 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import components_Button_Button from "components/Button/Button" /* 5226 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8655 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 9319 */;
+import useYouBarTotalHeight from "useYouBarTotalHeight" /* 16266 */;
+import ActivitiesTogetherSpotIllustration from "ActivitiesTogetherSpotIllustration" /* 17305 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -288,18 +288,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesEmpt
   items2[0] = metroRequire(React3, obj8);
   const obj9 = { style: tmp.textWrapper, children: items3 };
   const obj10 = { color: "mobile-text-heading-primary", variant: "heading-md/bold", style: tmp.title, children: intl.string(intl4.t["8JZof8"]) };
-  const Heading = tmp2(5195).Heading;
+  const Heading = tmp2(5216).Heading;
   intl = tmp2(1128).intl;
   items3 = [metroRequire(Heading, obj10), ];
   const obj11 = { color: "text-default", variant: "text-md/medium", style: tmp.body, children: intl2.string(intl4.t["qm+H7x"]) };
-  const Text = tmp2(5195).Text;
+  const Text = tmp2(5216).Text;
   intl2 = tmp2(1128).intl;
   items3[1] = metroRequire(Text, obj11);
   items2[1] = metroImportDefault(React3, obj9);
   items4 = [metroImportDefault(React3, obj7), ];
   const obj12 = { style: tmp.buttonWrapper, children: metroRequire(Button, obj13) };
   obj13 = { text: intl3.string(intl4.t.zIJnA6), onPress: callback, size: "lg" };
-  Button = tmp2(5205).Button;
+  Button = tmp2(5226).Button;
   intl3 = tmp2(1128).intl;
   items4[1] = metroRequire(React3, obj12);
   return metroRequire(tmp12, obj5);

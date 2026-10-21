@@ -1,25 +1,25 @@
-// Module ID: 18666
-// Function ID: 18667
+// Module ID: 18743
+// Function ID: 18744
 // Name: NotificationsManager
-// Dependencies: [5, 4882, 502, 4800, 6655, 13125, 1087, 7816, 13126, 5171, 18667, 2002, 1275, 2050, 7839, 13128, 13568, 1267, 1384, 7165, 16592, 1107, 2]
+// Dependencies: [5, 4903, 502, 4821, 6683, 13193, 1087, 7844, 13194, 5192, 18744, 2002, 1275, 2049, 7867, 13196, 13635, 1267, 1384, 7193, 16668, 1107, 2]
 
-// Module 18666 (NotificationsManager)
+// Module 18743 (NotificationsManager)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import _modDef2050 from "module_2050" /* 2050 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7816 */;
-import react_nativeDefault from "react-native" /* 7839 */;
-import PushNotificationPermissionStore2 from "PushNotificationPermissionStore" /* 13125 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13128 */;
+import _modDef2049 from "module_2049" /* 2049 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7844 */;
+import react_nativeDefault from "react-native" /* 7867 */;
+import PushNotificationPermissionStore2 from "PushNotificationPermissionStore" /* 13193 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13196 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4882 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4903 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6655 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6683 */;
 import Constants from "Constants" /* 1087 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13126 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7165 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13194 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7193 */;
 import size from "module_2" /* 2 */;
 
 const PushNotificationPermissionStore = PushNotificationPermissionStore2;
@@ -36,7 +36,7 @@ function haveNotSeenPromptSince(arg0, arg1) {
   if (!tmp2) {
     let tmp4;
     if (items.includes(arg0)) {
-      obj = _modDef2050();
+      obj = _modDef2049();
       tmp4 = obj.diff(tmp, "days") >= 1;
     }
     tmp2 = tmp4;
@@ -180,7 +180,7 @@ function showPrompt(arg0, arg1, arg2) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     const obj2 = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.PUSH_NOTIFICATION_REACTIVATION_PROMPT, impressionProperties: { action_location: location }, location };
     ActionSheetActionCreatorsDefault;
-    const tmp3 = asyncRequire(18667, dependencyMap.paths);
+    const tmp3 = asyncRequire(18744, dependencyMap.paths);
     openLazy(tmp3, syncedClientThemes, obj2);
   }, arg2);
 }
@@ -392,7 +392,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
                 ({ message: c0, optimistic: c1, isPushNotification: c2, sendMessageOptions: c3 } = closure_0);
                 c3 = 1;
                 c4 = 1;
-                return { value: "test", done: true };
+                return { value: "Reflect", done: true };
               }
             } else {
               let tmp5;
@@ -485,7 +485,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
                 invite = invite.invite;
                 c4 = 1;
                 c5 = 1;
-                return { value: "test", done: true };
+                return { value: "Reflect", done: true };
               }
             } else {
               let tmp5;
@@ -617,7 +617,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
         }
         await "IconComponent";
         relationship = relationship.relationship;
-        return "test";
+        return "Reflect";
       })();
       iter.next();
       return iter;
@@ -659,7 +659,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
               closure_2 = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else {
             if (1 === c3) {

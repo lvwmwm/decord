@@ -1,9 +1,9 @@
-// Module ID: 13569
-// Function ID: 13570
+// Module ID: 13636
+// Function ID: 13637
 // Name: RpcNotificationSettingsStore
 // Dependencies: [502, 504, 584, 2]
 
-// Module 13569 (RpcNotificationSettingsStore)
+// Module 13636 (RpcNotificationSettingsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

@@ -1,13 +1,14 @@
-// Module ID: 10833
-// Function ID: 10834
+// Module ID: 10977
+// Function ID: 10978
 // Name: GameOrganizationInviteConstants
 // Dependencies: [2]
 
-// Module 10833 (GameOrganizationInviteConstants)
+// Module 10977 (GameOrganizationInviteConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_organization_invites/GameOrganizationInviteConstants.tsx");
 
 export const GAME_ORGANIZATION_INVITE_TOO_MANY_INVITES_ERROR_CODE = 820007;
+export const GAME_ORGANIZATION_JOIN_ACTION_SHEET_KEY = "GameOrganizationJoinActionSheet";
 export const GameOrganizationInviteStates = { RESOLVING: "RESOLVING", RESOLVED: "RESOLVED", ERROR: "ERROR" };
 export const GameOrganizationDisplayNouns = { GUILD: "GUILD" };

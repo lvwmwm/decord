@@ -1,9 +1,9 @@
-// Module ID: 17193
-// Function ID: 17194
+// Module ID: 17269
+// Function ID: 17270
 // Name: GuildsRenderExperiment
 // Dependencies: [1455, 2]
 
-// Module 17193 (GuildsRenderExperiment)
+// Module 17269 (GuildsRenderExperiment)
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 

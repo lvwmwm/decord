@@ -1,17 +1,17 @@
-// Module ID: 13377
-// Function ID: 13378
+// Module ID: 13444
+// Function ID: 13445
 // Name: useJoinRequestButtonActions
-// Dependencies: [5, 32, 19, 4800, 1087, 5625, 1128, 7296, 5171, 6794, 4974, 13378, 2002, 2]
+// Dependencies: [5, 32, 19, 4821, 1087, 5645, 1128, 7324, 5192, 6822, 4995, 13445, 2002, 2]
 // Exports: useJoinRequestButtonActions
 
-// Module 13377 (useJoinRequestButtonActions)
+// Module 13444 (useJoinRequestButtonActions)
 import Constants from "Constants" /* 1087 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -157,7 +157,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
         const _HermesInternal = HermesInternal;
         ActionSheetActionCreatorsDefault;
         const obj = { joinRequest: tmp, onError, onDismiss };
-        const tmp10 = asyncRequire(13378, dependencyMap.paths);
+        const tmp10 = asyncRequire(13445, dependencyMap.paths);
         openLazy(tmp10, "RejectionReason-" + joinRequestId, obj);
       }
     }, items2),

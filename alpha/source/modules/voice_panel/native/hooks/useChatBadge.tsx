@@ -1,10 +1,10 @@
-// Module ID: 18305
-// Function ID: 18306
+// Module ID: 18384
+// Function ID: 18385
 // Name: useChatBadge
-// Dependencies: [6722, 558, 576, 504, 2]
+// Dependencies: [6750, 558, 576, 504, 2]
 
-// Module 18305 (useChatBadge)
-import ReadStateStore from "ReadStateStore" /* 6722 */;
+// Module 18384 (useChatBadge)
+import ReadStateStore from "ReadStateStore" /* 6750 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,22 +1,22 @@
-// Module ID: 16339
-// Function ID: 16340
+// Module ID: 16415
+// Function ID: 16416
 // Name: GuildRoleSubscriptionTierTemplatesUtils
-// Dependencies: [5, 19, 4800, 4873, 16334, 16340, 1087, 4807, 6341, 558, 576, 573, 1405, 584, 8904, 7309, 14957, 2]
+// Dependencies: [5, 19, 4821, 4894, 16410, 16416, 1087, 4828, 6363, 558, 576, 573, 1405, 584, 8931, 7337, 15031, 2]
 // Exports: announceCreateTemplateChannels, announceDeleteTemplateChannels, createChannelsFromTemplateTierBenefits, getTemplateTierCreationAnalyticsContext, isEligibleForNewBadge
 
-// Module 16339 (GuildRoleSubscriptionTierTemplatesUtils)
+// Module 16415 (GuildRoleSubscriptionTierTemplatesUtils)
 import react from "react" /* 19 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import FlagUtilsAll from "FlagUtils" /* 1405 */;
-import ChannelConstants from "ChannelConstants" /* 4807 */;
-import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7309 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16334 */;
+import ChannelConstants from "ChannelConstants" /* 4828 */;
+import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7337 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16410 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4873 */;
-import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 16340 */;
-import allSettled_mod from "allSettled" /* 6341 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4894 */;
+import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 16416 */;
+import allSettled_mod from "allSettled" /* 6363 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ const require = globalThis.__r;
 let _require, c3, c4, set;
 
 let tmp;
-const GuildRoleSubscriptionsExperimentUtils = tmp(14957);
+const GuildRoleSubscriptionsExperimentUtils = tmp(15031);
 function getUsedTemplateChannelsForGuild(arg0) {
   const arr = useEditStateStore.getState().editStateIdsForGroup[arg0];
   const listings = useEditStateStore.getState().listings;

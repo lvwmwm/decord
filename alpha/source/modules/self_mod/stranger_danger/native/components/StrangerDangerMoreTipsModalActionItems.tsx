@@ -1,18 +1,18 @@
-// Module ID: 10766
-// Function ID: 10767
+// Module ID: 10910
+// Function ID: 10911
 // Name: StrangerDangerMoreTipsModalActionItems
-// Dependencies: [32, 19, 4890, 1392, 10622, 21, 558, 576, 504, 4994, 10743, 7363, 1128, 7014, 7012, 9698, 6938, 10767, 2]
+// Dependencies: [32, 19, 4911, 1392, 10651, 21, 558, 576, 504, 5015, 10887, 7391, 1128, 7042, 7040, 9728, 6966, 10911, 2]
 
-// Module 10766 (StrangerDangerMoreTipsModalActionItems)
+// Module 10910 (StrangerDangerMoreTipsModalActionItems)
 import Fragment2 from "Fragment" /* 21 */;
 import intl5 from "intl" /* 1128 */;
-import UserUtilsDefault from "UserUtils" /* 4994 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7363 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10622 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10743 */;
+import UserUtilsDefault from "UserUtils" /* 5015 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7391 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10651 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10887 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4890 */;
+import RelationshipStore from "RelationshipStore" /* 4911 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -509,9 +509,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function StrangerDang
       stringResult = intl2.string(intl5.t.naWE6W);
     }
     if (first) {
-      let EyeSlashIcon = tmp11(7014).EyeIcon;
+      let EyeSlashIcon = tmp11(7042).EyeIcon;
     } else {
-      EyeSlashIcon = tmp11(7012).EyeSlashIcon;
+      EyeSlashIcon = tmp11(7040).EyeSlashIcon;
     }
     const items = [obj3, ];
     const intl3 = intl5.intl;

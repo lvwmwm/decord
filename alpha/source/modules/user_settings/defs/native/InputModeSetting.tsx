@@ -1,18 +1,18 @@
-// Module ID: 16354
-// Function ID: 16355
+// Module ID: 16430
+// Function ID: 16431
 // Name: InputModeSetting
-// Dependencies: [2014, 8280, 5680, 558, 576, 504, 1128, 11111, 11498, 2]
+// Dependencies: [2014, 8308, 5700, 558, 576, 504, 1128, 11155, 11548, 2]
 
-// Module 16354 (InputModeSetting)
+// Module 16430 (InputModeSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
-import Constants from "Constants" /* 5680 */;
-import SettingsConstants from "SettingsConstants" /* 8280 */;
-import UserSettingsVoiceInputOptions from "UserSettingsVoiceInputOptions" /* 11498 */;
+import Constants from "Constants" /* 5700 */;
+import SettingsConstants from "SettingsConstants" /* 8308 */;
+import UserSettingsVoiceInputOptions from "UserSettingsVoiceInputOptions" /* 11548 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11111 */;
+import SettingBuilders from "SettingBuilders" /* 11155 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

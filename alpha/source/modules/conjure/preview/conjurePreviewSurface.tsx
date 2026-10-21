@@ -1,14 +1,14 @@
-// Module ID: 11031
-// Function ID: 11032
+// Module ID: 10686
+// Function ID: 10687
 // Name: conjurePreviewSurface
-// Dependencies: [6726, 6727, 5587, 11032, 2]
+// Dependencies: [6754, 6755, 5608, 10687, 2]
 // Exports: getConjureBuilderPreviewFrame, getConjureBuilderPreviewFrames, getConjurePreviewGuildId, getConjurePreviewSurface, isConjurePreviewSurface
 
-// Module 11031 (conjurePreviewSurface)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5587 */;
-import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 11032 */;
-import FramesStore from "FramesStore" /* 6726 */;
-import FramesConstants from "FramesConstants" /* 6727 */;
+// Module 10686 (conjurePreviewSurface)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5608 */;
+import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 10687 */;
+import FramesStore from "FramesStore" /* 6754 */;
+import FramesConstants from "FramesConstants" /* 6755 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -16,7 +16,7 @@ let _require;
 
 let c3;
 let closure_4;
-const f107871 = (item) => null != item;
+const f106968 = (item) => null != item;
 ({ isLaunched: c3, makeFrameId: closure_4 } = FramesConstants);
 let c5 = "0";
 const CONJURE_PREVIEW_SURFACE = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, channelId: "0" };
@@ -88,7 +88,7 @@ export const getConjureBuilderPreviewFrames = function getConjureBuilderPreviewF
     }
     return getFrame(tmp2(tmp3, obj2));
   });
-  return mapped.filter(f107871);
+  return mapped.filter(f106968);
 };
 export const getConjureBuilderPreviewFrame = function getConjureBuilderPreviewFrame(prop) {
   _require = prop;
@@ -111,7 +111,7 @@ export const getConjureBuilderPreviewFrame = function getConjureBuilderPreviewFr
     }
     return getFrame(tmp2(tmp3, obj2));
   });
-  const found = mapped.filter(f107871);
+  const found = mapped.filter(f106968);
   let found1 = found.find(closure_3);
   if (found1 == null) {
     found1 = found[0];

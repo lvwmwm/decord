@@ -1,13 +1,13 @@
-// Module ID: 17318
-// Function ID: 17319
+// Module ID: 17394
+// Function ID: 17395
 // Name: useFavoritesGuildAutoAddedThreadsAction
-// Dependencies: [19, 1392, 4803, 558, 576, 504, 10649, 1128, 3402, 2]
+// Dependencies: [19, 1392, 4824, 558, 576, 504, 10792, 1128, 3412, 2]
 
-// Module 17318 (useFavoritesGuildAutoAddedThreadsAction)
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10649 */;
+// Module 17394 (useFavoritesGuildAutoAddedThreadsAction)
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10792 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import FavoriteStore from "FavoriteStore" /* 4803 */;
+import FavoriteStore from "FavoriteStore" /* 4824 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -70,9 +70,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       const intl = tmp(1128).intl;
-      const stringResult = intl.string(stateFromStores1(3402).DIyQIF);
+      const stringResult = intl.string(stateFromStores1(3412).DIyQIF);
       const intl2 = tmp(1128).intl;
-      const stringResult1 = intl2.string(stateFromStores1(3402).g2vHYJ);
+      const stringResult1 = intl2.string(stateFromStores1(3412).g2vHYJ);
       cResult[7] = stringResult;
       cResult[8] = stringResult1;
       tmp14 = stringResult1;
@@ -133,7 +133,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   const obj2 = stateFromStores(504);
   const stateFromStores1 = obj2.useStateFromStores(items1, () => autoAddJoinedThreads.autoAddJoinedThreads);
   const items2 = [stateFromStores, stateFromStores1];
-  const obj3 = { isAvailable: stateFromStores, isEnabled: stateFromStores1, label: intl.string(stateFromStores1(3402).DIyQIF), subLabel: intl2.string(stateFromStores1(3402).g2vHYJ), toggle: callback };
+  const obj3 = { isAvailable: stateFromStores, isEnabled: stateFromStores1, label: intl.string(stateFromStores1(3412).DIyQIF), subLabel: intl2.string(stateFromStores1(3412).g2vHYJ), toggle: callback };
   callback = react.useCallback(() => {
     const tmp = stateFromStores;
     if (tmp) {

@@ -1,10 +1,10 @@
-// Module ID: 11236
-// Function ID: 11237
+// Module ID: 11280
+// Function ID: 11281
 // Name: hasPartySize
 // Dependencies: [2]
 // Exports: hasPartySize
 
-// Module 11236 (hasPartySize)
+// Module 11280 (hasPartySize)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/hasPartySize.tsx");

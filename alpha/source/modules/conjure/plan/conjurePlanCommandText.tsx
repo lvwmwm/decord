@@ -1,30 +1,30 @@
-// Module ID: 12303
-// Function ID: 12304
+// Module ID: 12358
+// Function ID: 12359
 // Name: conjurePlanCommandText
-// Dependencies: [19, 12304, 558, 576, 4991, 2]
+// Dependencies: [19, 12359, 558, 576, 5012, 2]
 // Exports: conjurePlanCommandPattern, conjurePlanSlashCommandNames, conjurePlanTextMentionsCommand, splitConjurePlanCommandText
 
-// Module 12303 (conjurePlanCommandText)
+// Module 12358 (conjurePlanCommandText)
 import react2 from "react" /* 576 */;
-import escapeRegExpDefault from "escapeRegExp" /* 4991 */;
+import escapeRegExpDefault from "escapeRegExp" /* 5012 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const f113042 = (item) => {
+const f113422 = (item) => {
   const obj = closure_1_0(closure_1_2[1]);
   return "/" === obj.conjurePlanCommandPrefix(item);
 };
-const f113043 = (name) => name.name;
-const f113044 = (arg0, arg1) => arg1.length - arg0.length;
+const f113423 = (name) => name.name;
+const f113424 = (arg0, arg1) => arg1.length - arg0.length;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePlanSlashCommandNames(arr) {
   let tmp2;
   const obj = react2;
   const cResult = obj.c(2);
   if (cResult[0] !== arr) {
-    const found = arr.filter(f113042);
-    const mapped = found.map(f113043);
+    const found = arr.filter(f113422);
+    const mapped = found.map(f113423);
     cResult[0] = arr;
     cResult[1] = mapped;
     tmp2 = mapped;
@@ -36,14 +36,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
   let closure_0 = arg0;
   const items = [arg0];
   return react.useMemo(() => {
-    const found = closure_0.filter(f113042);
-    return found.map(f113043);
+    const found = closure_0.filter(f113422);
+    return found.map(f113423);
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 function conjurePlanSlashCommandNames(arr) {
-  const found = arr.filter(f113042);
-  return found.map(f113043);
+  const found = arr.filter(f113422);
+  return found.map(f113423);
 }
 function conjurePlanCommandPattern(size) {
   if (0 === size.length) {
@@ -51,7 +51,7 @@ function conjurePlanCommandPattern(size) {
   } else {
     const items = [];
     HermesBuiltin.arraySpread(items, size, 0);
-    const sorted = items.sort(f113044);
+    const sorted = items.sort(f113424);
     const mapped = sorted.map(escapeRegExpDefault);
     const _RegExp = RegExp;
     const _HermesInternal = HermesInternal;
@@ -70,7 +70,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     if (0 !== arg0.length) {
       const items = [];
       HermesBuiltin.arraySpread(items, arg0, 0);
-      const sorted = items.sort(f113044);
+      const sorted = items.sort(f113424);
       const mapped = sorted.map(escapeRegExpDefault);
       const _RegExp = RegExp;
       const _HermesInternal = HermesInternal;
@@ -93,7 +93,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     if (0 !== length.length) {
       const items = [];
       HermesBuiltin.arraySpread(items, length, 0);
-      const sorted = items.sort(f113044);
+      const sorted = items.sort(f113424);
       const mapped = sorted.map(escapeRegExpDefault);
       const _RegExp = RegExp;
       const _HermesInternal = HermesInternal;

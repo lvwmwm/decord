@@ -1,27 +1,27 @@
-// Module ID: 18416
-// Function ID: 18417
+// Module ID: 18495
+// Function ID: 18496
 // Name: MediaPlaybackPip
-// Dependencies: [32, 19, 17, 4800, 5968, 4890, 1392, 1087, 18193, 21, 4945, 587, 558, 576, 5213, 5565, 504, 8695, 5195, 18417, 5219, 7515, 7296, 5014, 5167, 1128, 8845, 6879, 10586, 1267, 15621, 4865, 18414, 8704, 8702, 18418, 2]
+// Dependencies: [32, 19, 17, 4821, 5990, 4911, 1392, 1087, 18276, 21, 4966, 587, 558, 576, 5234, 5586, 504, 8722, 5216, 18496, 5240, 7543, 7324, 5035, 5188, 1128, 8872, 6907, 10615, 1267, 15697, 4886, 18493, 8731, 8729, 18497, 2]
 
-// Module 18416 (MediaPlaybackPip)
+// Module 18495 (MediaPlaybackPip)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import timing from "timing" /* 5167 */;
-import useChannelName from "useChannelName" /* 5565 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7515 */;
-import MediaPlayerManagerDefault from "MediaPlayerManager" /* 15621 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18193 */;
+import timing from "timing" /* 5188 */;
+import useChannelName from "useChannelName" /* 5586 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7543 */;
+import MediaPlayerManagerDefault from "MediaPlayerManager" /* 15697 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18276 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import MessageStore from "MessageStore" /* 5968 */;
-import RelationshipStore from "RelationshipStore" /* 4890 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import MessageStore from "MessageStore" /* 5990 */;
+import RelationshipStore from "RelationshipStore" /* 4911 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ let obj4;
 let obj5;
 let size;
 let tmp5;
-const LinearGradientDefault = tmp5(5219);
+const LinearGradientDefault = tmp5(5240);
 let react = react_mod;
 ({ Easing: hasOwnProperty, StyleSheet, TouchableOpacity: metroRequire, View: metroImportDefault } = react_native);
 ({ AnalyticEvents: closure_12, MessageFlags: map1, Routes: closure_14 } = Constants);
@@ -79,7 +79,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaI
   message = message.message;
   ({ activeMediaPlayerSource, isVoiceMessage, isControlVisible } = message);
   const tmp4 = closure_17();
-  const obj2 = message(5213);
+  const obj2 = message(5234);
   const token = obj2.useToken(nativeDefault.colors.BACKGROUND_SURFACE_HIGH);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ChannelStore, , ];
@@ -171,8 +171,8 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaI
           }
           const obj3 = { variant: "text-md/semibold", lineClamp: 1, ellipsizeMode: "clip", onLayout: tmp26, children: tmp21 };
           cResult[11] = tmp21;
-          cResult[12] = closure_15(message(5195).Text, obj3);
-          const tmp28 = closure_15(message(5195).Text, obj3);
+          cResult[12] = closure_15(message(5216).Text, obj3);
+          const tmp28 = closure_15(message(5216).Text, obj3);
         } else {
           class R {
             constructor(nativeEvent) {
@@ -211,7 +211,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaI
           }
           const obj4 = { style: { flex: 1 }, children: items2 };
           const obj5 = { spacing: 20, speed: 0.2, children: tmp27 };
-          items2 = [closure_15(tmp(18417).Marquee, obj5), ];
+          items2 = [closure_15(tmp(18496).Marquee, obj5), ];
           const obj6 = { start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, locations: [0, 0.1, 0.2, 0.8, 0.9, 1], colors: items3, style: tmp4.infoContainerGradient };
           items3 = [token, `${tmp6}CC`, `${tmp6}00`, `${tmp6}00`, `${tmp6}CC`, token];
           items2[1] = closure_15(LinearGradientDefault, obj6);
@@ -278,7 +278,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaI
   react = undefined;
   ({ isVoiceMessage, isControlVisible } = message);
   const tmp = closure_17();
-  let obj = message(5213);
+  let obj = message(5234);
   const token = obj.useToken(first(587).colors.BACKGROUND_SURFACE_HIGH);
   const items = [ChannelStore, UserStore, RelationshipStore];
   const items1 = [message];
@@ -319,7 +319,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaI
           if (contentMessage.attachments.length > 0) {
             str2 = "";
             if (null != activeMediaPlayerSource.attachmentIndex) {
-              str2 = tmp4(8695)(contentMessage.attachments[activeMediaPlayerSource.attachmentIndex]);
+              str2 = tmp4(8722)(contentMessage.attachments[activeMediaPlayerSource.attachmentIndex]);
             }
           }
         }
@@ -332,7 +332,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaI
                 },
           children: str2
         };
-        const tmp14 = closure_15(message(5195).Text, obj3);
+        const tmp14 = closure_15(message(5216).Text, obj3);
         const obj4 = {
           accessibilityElementsHidden: isControlVisible,
           style: tmp.infoContent,
@@ -346,17 +346,17 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaI
         if (memo) {
           const obj6 = { style: { flex: 1 }, children: items3 };
           const obj7 = { spacing: 20, speed: 0.2, children: tmp14 };
-          items3 = [closure_15(message(18417).Marquee, obj7), ];
+          items3 = [closure_15(message(18496).Marquee, obj7), ];
           const obj8 = { start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, locations: [0, 0.1, 0.2, 0.8, 0.9, 1], colors: items4, style: tmp.infoContainerGradient };
           items4 = [token, `${tmp5}CC`, `${tmp5}00`, `${tmp5}00`, `${tmp5}CC`, token];
-          items3[1] = closure_15(first(5219), obj8);
+          items3[1] = closure_15(first(5240), obj8);
           tmp16Result = tmp16(tmp15, obj6);
         }
         items5 = [tmp16Result, ];
         let tmp13Result = null != stateFromStores;
         if (tmp13Result) {
           const obj9 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, children: stateFromStores };
-          tmp13Result = tmp13(tmp2(5195).Text, obj9);
+          tmp13Result = tmp13(tmp2(5216).Text, obj9);
         }
         items5[1] = tmp13Result;
         return closure_15(closure_7, obj4);
@@ -395,7 +395,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function PiPCon
             if (channel != null) {
               guildId = channel.getGuildId();
             }
-            const tmp6Result = tmp6(7296);
+            const tmp6Result = tmp6(7324);
             tmp6Result(syncedClientThemes.CHANNEL(guildId, message.channel_id, message.id), { navigationReplace: true, openChannel: true });
           }
         }
@@ -418,11 +418,11 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function PiPCon
     const obj = { opacity: withTiming(num, { duration: 200 }) };
     return obj;
   };
-  const tmpResult = tmp(5014);
-  fn2.__closure = { withTiming: tmp(5167).withTiming, visible };
+  const tmpResult = tmp(5035);
+  fn2.__closure = { withTiming: tmp(5188).withTiming, visible };
   fn2.__workletHash = 3641278982291;
   fn2.__initData = __initData;
-  ({ withTiming: tmp(5167).withTiming, visible });
+  ({ withTiming: tmp(5188).withTiming, visible });
   const animatedStyle = tmpResult.useAnimatedStyle(fn2);
   if (cResult[2] !== isVoiceMessage) {
     let stringResult;
@@ -464,7 +464,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function PiPCon
     }
     const _Symbol = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp15 = closure_15(tmp(8845).BackgroundBlurFill, { blurAmount: 0.05 });
+      const tmp15 = closure_15(tmp(8872).BackgroundBlurFill, { blurAmount: 0.05 });
       cResult[9] = tmp15;
       tmp13 = tmp15;
     } else {
@@ -478,7 +478,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function PiPCon
       }
       const _Symbol2 = Symbol;
       if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp20 = closure_15(tmp(6879).ArrowLargeLeftIcon, { size: "sm" });
+        const tmp20 = closure_15(tmp(6907).ArrowLargeLeftIcon, { size: "sm" });
         cResult[13] = tmp20;
         tmp18 = tmp20;
       } else {
@@ -499,7 +499,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function PiPCon
               }
               const _Symbol3 = Symbol;
               if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-                const tmp29 = closure_15(tmp(10586).XLargeIcon, { size: "sm" });
+                const tmp29 = closure_15(tmp(10615).XLargeIcon, { size: "sm" });
                 cResult[22] = tmp29;
                 tmp27 = tmp29;
               } else {
@@ -523,7 +523,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function PiPCon
                     }
                     const obj3 = { style: tmp11, children: items };
                     items = [tmp13, tmp21, tmp30];
-                    const tmp37 = closure_16(visible(5014).View, obj3);
+                    const tmp37 = closure_16(visible(5035).View, obj3);
                     cResult[28] = tmp30;
                     cResult[29] = tmp11;
                     cResult[30] = tmp21;
@@ -596,13 +596,13 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function PiPCon
           if (channel != null) {
             guildId = channel.getGuildId();
           }
-          const tmp6Result = tmp6(7296);
+          const tmp6Result = tmp6(7324);
           tmp6Result(syncedClientThemes.CHANNEL(guildId, message.channel_id, message.id), { navigationReplace: true, openChannel: true });
         }
       }
     }
   }, items);
-  let obj = message(5014);
+  let obj = message(5035);
   const fn = function c() {
     let num = 0;
     const withTiming = timing.withTiming;
@@ -613,10 +613,10 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function PiPCon
     const obj = { opacity: withTiming(num, { duration: 200 }) };
     return obj;
   };
-  fn.__closure = { withTiming: message(5167).withTiming, visible };
+  fn.__closure = { withTiming: message(5188).withTiming, visible };
   fn.__workletHash = 1481412007504;
   fn.__initData = __initData2;
-  ({ withTiming: message(5167).withTiming, visible });
+  ({ withTiming: message(5188).withTiming, visible });
   const animatedStyle = obj.useAnimatedStyle(fn);
   const intl = message(1128).intl;
   const string = intl.string;
@@ -636,13 +636,13 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function PiPCon
   }
   const obj3 = { style: items1, children: items2 };
   items1 = [tmp.pipControls, animatedStyle];
-  const View = visible(5014).View;
-  items2 = [closure_15(message(8845).BackgroundBlurFill, { blurAmount: 0.05 }), , ];
-  const obj4 = { disabled: !visible, style: items3, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: stringResult, children: closure_15(message(6879).ArrowLargeLeftIcon, { size: "sm" }) };
+  const View = visible(5035).View;
+  items2 = [closure_15(message(8872).BackgroundBlurFill, { blurAmount: 0.05 }), , ];
+  const obj4 = { disabled: !visible, style: items3, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: stringResult, children: closure_15(message(6907).ArrowLargeLeftIcon, { size: "sm" }) };
   items3 = [, ];
   ({ pipButton: arr4[0], backButton: arr4[1] } = tmp);
   items2[1] = closure_15(closure_6, obj4);
-  const obj5 = { disabled: !visible, style: items4, onPress: handleClosePip, accessible: true, accessibilityRole: "button", accessibilityLabel: string2Result, children: closure_15(message(10586).XLargeIcon, { size: "sm" }) };
+  const obj5 = { disabled: !visible, style: items4, onPress: handleClosePip, accessible: true, accessibilityRole: "button", accessibilityLabel: string2Result, children: closure_15(message(10615).XLargeIcon, { size: "sm" }) };
   items4 = [, ];
   ({ pipButton: arr5[0], dismissButton: arr5[1] } = tmp);
   items2[2] = closure_15(closure_6, obj5);
@@ -1383,9 +1383,9 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPlay
     let PlayIcon;
     const tmp = authStore3;
     if (isPlaying) {
-      PlayIcon = tmp2(8704).PauseIcon;
+      PlayIcon = tmp2(8731).PauseIcon;
     } else {
-      PlayIcon = tmp2(8702).PlayIcon;
+      PlayIcon = tmp2(8729).PlayIcon;
     }
     const obj = { color: nativeDefault.colors.WHITE, size: "md" };
     return tmp(PlayIcon, obj);

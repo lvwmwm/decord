@@ -1,22 +1,22 @@
-// Module ID: 11519
-// Function ID: 11520
+// Module ID: 11569
+// Function ID: 11570
 // Name: VoiceChatHeaderIcon
-// Dependencies: [19, 17, 6722, 1087, 21, 4945, 587, 5229, 558, 576, 504, 12, 11427, 4999, 1202, 6859, 2]
+// Dependencies: [19, 17, 6750, 1087, 21, 4966, 587, 5250, 558, 576, 504, 12, 11477, 5020, 1202, 6887, 2]
 
-// Module 11519 (VoiceChatHeaderIcon)
+// Module 11569 (VoiceChatHeaderIcon)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import native from "native" /* 1202 */;
-import NavigatorConstants from "NavigatorConstants" /* 5229 */;
-import Pressables from "Pressables" /* 6859 */;
-import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 11427 */;
+import NavigatorConstants from "NavigatorConstants" /* 5250 */;
+import Pressables from "Pressables" /* 6887 */;
+import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 11477 */;
 import react from "react" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 6722 */;
+import ReadStateStore from "ReadStateStore" /* 6750 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj2;
 let obj3;
 let size;
 let tmp;
-const native2 = tmp(4999);
+const native2 = tmp(5020);
 const View = react_native.View;
 const ThemeTypes = Constants.ThemeTypes;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);

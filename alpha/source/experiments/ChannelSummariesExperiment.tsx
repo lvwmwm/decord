@@ -1,14 +1,14 @@
-// Module ID: 9939
-// Function ID: 9940
+// Module ID: 9969
+// Function ID: 9970
 // Name: ChannelSummariesExperiment
-// Dependencies: [4818, 4822, 1087, 4807, 4825, 558, 576, 573, 2]
+// Dependencies: [4839, 4843, 1087, 4828, 4846, 558, 576, 573, 2]
 // Exports: canGuildUseConversationSummaries, channelEligibleForSummaries, useChannelSummariesExperiment
 
-// Module 9939 (ChannelSummariesExperiment)
-import ChannelConstants from "ChannelConstants" /* 4807 */;
-import GuildRecord from "GuildRecord" /* 4818 */;
-import FavoritesUtils from "FavoritesUtils" /* 4825 */;
-import GuildStore from "GuildStore" /* 4822 */;
+// Module 9969 (ChannelSummariesExperiment)
+import ChannelConstants from "ChannelConstants" /* 4828 */;
+import GuildRecord from "GuildRecord" /* 4839 */;
+import FavoritesUtils from "FavoritesUtils" /* 4846 */;
+import GuildStore from "GuildStore" /* 4843 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

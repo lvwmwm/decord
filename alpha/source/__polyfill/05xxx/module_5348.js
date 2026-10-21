@@ -1,48 +1,149 @@
 // Module ID: 5348
 // Function ID: 5349
-// Dependencies: [5326, 5341, 5317]
-// Exports: usePinchGesture
+// Dependencies: [32, 19, 5346, 5336, 5349, 5322, 5337, 5284]
+// Exports: prepareConfigForNativeSide, resolveInternalConfigProps, useClonedAndRemappedConfig
 
 // Module 5348
-import ComposedGestureName from "ComposedGestureName" /* 5317 */;
-import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 5326 */;
-import _mod5341 from "module_5341" /* 5341 */;
+import react from "react" /* 19 */;
+import Reanimated2 from "Reanimated" /* 5322 */;
+import SHARED_VALUE_OFFSET from "SHARED_VALUE_OFFSET" /* 5336 */;
+import allowedNativeProps2 from "allowedNativeProps" /* 5337 */;
+import _mod5346 from "module_5346" /* 5346 */;
+import _mod5349 from "module_5349" /* 5349 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-function transformPinchProps(arg0) {
-  const obj = maybeExtractNativeEvent;
-  arg0.changeEventCalculator = obj.getChangeEventCalculator(diffCalculator);
-  arg0.fillInDefaultValues = fillInDefaultValues;
+const useMemo = react.useMemo;
+const map = new Map();
+function DEFAULT_PROPS_TRANSFORMER(arg0) {
   return arg0;
 }
-function diffCalculator(scale, scale2) {
-  let scaleChange;
-  scale = scale.scale;
-  if (scale2) {
-    scaleChange = scale / scale2.scale;
+function isGestureEnabled(gestures) {
+  let someResult;
+  const obj = _mod5346;
+  if (obj.isComposedGesture(gestures)) {
+    gestures = gestures.gestures;
+    someResult = gestures.some(isGestureEnabled);
   } else {
-    scaleChange = scale;
+    const tmpResult = SHARED_VALUE_OFFSET;
+    someResult = false !== tmpResult.maybeUnpackValue(gestures.config.enabled);
   }
-  return { scaleChange };
+  return someResult;
 }
-diffCalculator.__closure = {};
-diffCalculator.__workletHash = 7517335332069;
-diffCalculator.__initData = { code: "function diffCalculator_Pnpm_usePinchGestureTs1(current,previous){return{scaleChange:previous?current.scale/previous.scale:current.scale};}" };
-function fillInDefaultValues(arg0) {
-  arg0.scaleChange = 1;
-}
-fillInDefaultValues.__closure = {};
-fillInDefaultValues.__workletHash = 10393435493424;
-fillInDefaultValues.__initData = { code: "function fillInDefaultValues_Pnpm_usePinchGestureTs2(event){event.scaleChange=1;}" };
-const map = new Map();
-let closure_6 = {};
 
-export const usePinchGesture = function usePinchGesture(cResult) {
-  let tmp = cResult;
-  if (cResult === undefined) {
-    tmp = closure_6;
+export { isGestureEnabled };
+export const resolveInternalConfigProps = function resolveInternalConfigProps(useAnimated) {
+  useAnimated = useAnimated.useAnimated;
+  if (!useAnimated) {
+    const obj = _mod5349;
+    useAnimated = obj.isNativeAnimatedEvent(useAnimated.onUpdate);
   }
-  const obj = maybeExtractNativeEvent;
-  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformPinchProps);
-  const obj2 = _mod5341;
-  return obj2.useGesture(ComposedGestureName.SingleGestureName.Pinch, clonedAndRemappedConfig);
+  useAnimated.dispatchesAnimatedEvents = useAnimated;
+  if (useAnimated.dispatchesAnimatedEvents) {
+    useAnimated.disableReanimated = true;
+  }
+  let result = !useAnimated.disableReanimated && undefined !== Reanimated2.Reanimated;
+  if (result) {
+    const obj2 = SHARED_VALUE_OFFSET;
+    result = obj2.hasWorkletEventHandlers(useAnimated);
+  }
+  if (result) {
+    result = !useAnimated.dispatchesAnimatedEvents;
+  }
+  useAnimated.shouldUseReanimatedDetector = result;
+  const obj3 = _mod5349;
+  useAnimated.needsPointerData = obj3.shouldHandleTouchEvents(useAnimated);
+};
+export const prepareConfigForNativeSide = function prepareConfigForNativeSide(arg0, shouldUseReanimatedDetector) {
+  let first;
+  let iter;
+  shouldUseReanimatedDetector = shouldUseReanimatedDetector.shouldUseReanimatedDetector;
+  if (shouldUseReanimatedDetector) {
+    const obj = SHARED_VALUE_OFFSET;
+    shouldUseReanimatedDetector = !obj.maybeUnpackValue(shouldUseReanimatedDetector.runOnJS);
+  }
+  const obj2 = { dispatchesReanimatedEvents: shouldUseReanimatedDetector };
+  const PropsWhiteLists = allowedNativeProps2.PropsWhiteLists;
+  let EMPTY_WHITE_LIST = PropsWhiteLists.get(arg0);
+  if (EMPTY_WHITE_LIST == null) {
+    EMPTY_WHITE_LIST = allowedNativeProps2.EMPTY_WHITE_LIST;
+  }
+  const entries = Object.entries(shouldUseReanimatedDetector);
+  const tmp12 = entries[Symbol.iterator]();
+  while (tmp12 !== undefined) {
+    [first, iter] = tmp13;
+    let tmp17 = first;
+    let tmp19 = require;
+    let allowedNativeProps = allowedNativeProps2.allowedNativeProps;
+    if (!allowedNativeProps.has(first)) {
+      if (!EMPTY_WHITE_LIST.has(tmp17)) {
+        let PropsToFilter = tmp19(5337).PropsToFilter;
+        if (PropsToFilter.has(tmp17)) {
+          continue;
+        } else {
+          let _console = console;
+          let tmp19Result = tmp19(5284);
+          let _HermesInternal = HermesInternal;
+          let str = "";
+          let str2 = " is not a valid property for ";
+          let str3 = " and will be ignored.";
+          let warnResult = warn(tmp19Result.tagMessage("" + tmp17 + " is not a valid property for " + arg0 + " and will be ignored."));
+        }
+        continue;
+      }
+      continue;
+    }
+    let Reanimated = tmp19(5322).Reanimated;
+    let isSharedValueResult;
+    if (Reanimated != null) {
+      isSharedValueResult = Reanimated.isSharedValue(iter);
+    }
+    obj2[tmp17] = isSharedValueResult ? iter.value : iter;
+  }
+  return obj2;
+};
+export const useClonedAndRemappedConfig = function useClonedAndRemappedConfig(cResult, map, transformHoverProps) {
+  let closure_0 = cResult;
+  let tmp = map;
+  if (map === undefined) {
+    tmp = map;
+  }
+  let closure_1 = tmp;
+  let tmp2 = transformHoverProps;
+  if (transformHoverProps === undefined) {
+    tmp2 = DEFAULT_PROPS_TRANSFORMER;
+  }
+  let closure_2 = tmp2;
+  const items = [cResult, tmp, tmp2];
+  return useMemo(() => {
+    const obj = {};
+    const merged = Object.assign(closure_0);
+    const item = closure_1.forEach((item, index) => {
+      if (index in obj) {
+        obj[item] = obj[index];
+        delete obj[tmp];
+      }
+    });
+    const tmp3 = closure_2(obj);
+    let useAnimated = tmp3.useAnimated;
+    if (!useAnimated) {
+      const obj2 = _mod5349;
+      useAnimated = obj2.isNativeAnimatedEvent(tmp3.onUpdate);
+    }
+    tmp3.dispatchesAnimatedEvents = useAnimated;
+    if (tmp3.dispatchesAnimatedEvents) {
+      tmp3.disableReanimated = true;
+    }
+    let result = !tmp3.disableReanimated && undefined !== Reanimated2.Reanimated;
+    if (result) {
+      const obj3 = SHARED_VALUE_OFFSET;
+      result = obj3.hasWorkletEventHandlers(tmp3);
+    }
+    if (result) {
+      result = !tmp3.dispatchesAnimatedEvents;
+    }
+    tmp3.shouldUseReanimatedDetector = result;
+    const obj4 = _mod5349;
+    tmp3.needsPointerData = obj4.shouldHandleTouchEvents(tmp3);
+    return tmp3;
+  }, items);
 };

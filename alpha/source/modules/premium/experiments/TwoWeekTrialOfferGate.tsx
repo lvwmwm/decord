@@ -1,10 +1,10 @@
-// Module ID: 8383
-// Function ID: 8384
+// Module ID: 8411
+// Function ID: 8412
 // Name: TwoWeekTrialOfferGate
 // Dependencies: [2]
 // Exports: isTwoWeekTrialOfferIngestAllowed
 
-// Module 8383 (TwoWeekTrialOfferGate)
+// Module 8411 (TwoWeekTrialOfferGate)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/experiments/TwoWeekTrialOfferGate.tsx");

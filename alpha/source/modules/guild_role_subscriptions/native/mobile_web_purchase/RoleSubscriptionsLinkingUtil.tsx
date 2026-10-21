@@ -1,10 +1,10 @@
-// Module ID: 7377
-// Function ID: 7378
+// Module ID: 7405
+// Function ID: 7406
 // Name: RoleSubscriptionsLinkingUtil
-// Dependencies: [5, 1087, 4807, 7378, 2002, 3, 7382, 2]
+// Dependencies: [5, 1087, 4828, 7406, 2002, 3, 7410, 2]
 
-// Module 7377 (RoleSubscriptionsLinkingUtil)
-import ChannelConstants from "ChannelConstants" /* 4807 */;
+// Module 7405 (RoleSubscriptionsLinkingUtil)
+import ChannelConstants from "ChannelConstants" /* 4828 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;

@@ -1,19 +1,19 @@
-// Module ID: 17469
-// Function ID: 17470
+// Module ID: 17550
+// Function ID: 17551
 // Name: useFavoritesGuildSuggestionCandidates
-// Dependencies: [19, 17470, 7679, 4800, 17378, 12731, 558, 576, 17472, 504, 9016, 13689, 12742, 9012, 9000, 2]
+// Dependencies: [19, 17551, 7707, 4821, 17458, 12795, 558, 576, 17553, 504, 9043, 13757, 12806, 9039, 9027, 2]
 // Exports: default
 
-// Module 17469 (useFavoritesGuildSuggestionCandidates)
+// Module 17550 (useFavoritesGuildSuggestionCandidates)
 import react2 from "react" /* 576 */;
-import _mod9000 from "module_9000" /* 9000 */;
-import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9012 */;
-import ShareConstants from "ShareConstants" /* 12731 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17378 */;
+import _mod9027 from "module_9027" /* 9027 */;
+import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9039 */;
+import ShareConstants from "ShareConstants" /* 12795 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17458 */;
 import react_mod from "react" /* 19 */;
-import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 17470 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7679 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
+import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 17551 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7707 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -223,7 +223,7 @@ export default function useFavoritesGuildSuggestionCandidates(arg0) {
               let sum = tmp25 + 1;
               if (null != tmp20) {
                 let tmp24;
-                if (tmp20.type !== _mod9000.AutocompleterResultTypes.HEADER) {
+                if (tmp20.type !== _mod9027.AutocompleterResultTypes.HEADER) {
                   tmp24 = sum;
                   if (!set.has(tmp20.record.id)) {
                     break;

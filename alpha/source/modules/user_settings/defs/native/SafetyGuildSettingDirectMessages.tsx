@@ -1,23 +1,23 @@
-// Module ID: 17032
-// Function ID: 17033
+// Module ID: 17108
+// Function ID: 17109
 // Name: SafetyGuildSettingDirectMessages
-// Dependencies: [4822, 17024, 8280, 11112, 558, 15911, 576, 17027, 4776, 5866, 1128, 5936, 7042, 17033, 11111, 2]
+// Dependencies: [4843, 17100, 8308, 11156, 558, 15987, 576, 17103, 4797, 5888, 1128, 5958, 7070, 17109, 11155, 2]
 
-// Module 17032 (SafetyGuildSettingDirectMessages)
+// Module 17108 (SafetyGuildSettingDirectMessages)
 import react from "react" /* 576 */;
 import intl5 from "intl" /* 1128 */;
-import UserSettings from "UserSettings" /* 4776 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5866 */;
-import AlertDefault from "Alert" /* 5936 */;
-import SettingsConstants from "SettingsConstants" /* 8280 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 11112 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15911 */;
-import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 17027 */;
-import useAllowFriendsFromMutualGuildsOnly from "useAllowFriendsFromMutualGuildsOnly" /* 17033 */;
-import GuildStore from "GuildStore" /* 4822 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 17024 */;
+import UserSettings from "UserSettings" /* 4797 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5888 */;
+import AlertDefault from "Alert" /* 5958 */;
+import SettingsConstants from "SettingsConstants" /* 8308 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11156 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15987 */;
+import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 17103 */;
+import useAllowFriendsFromMutualGuildsOnly from "useAllowFriendsFromMutualGuildsOnly" /* 17109 */;
+import GuildStore from "GuildStore" /* 4843 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 17100 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11111 */;
+import SettingBuilders from "SettingBuilders" /* 11155 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -239,7 +239,7 @@ let obj = {
       } else {
         sanitizedRestrictedGuilds.add(tmp);
       }
-      let RestrictedGuildIds = tmp2(4776).RestrictedGuildIds;
+      let RestrictedGuildIds = tmp2(4797).RestrictedGuildIds;
       const _Array = Array;
       RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
     }

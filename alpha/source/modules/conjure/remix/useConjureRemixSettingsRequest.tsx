@@ -1,11 +1,11 @@
-// Module ID: 12231
-// Function ID: 12232
+// Module ID: 12292
+// Function ID: 12293
 // Name: useConjureRemixSettingsRequest
-// Dependencies: [11019, 558, 576, 12232, 504, 1128, 3820, 2]
+// Dependencies: [10674, 558, 576, 12293, 504, 1128, 3830, 2]
 
-// Module 12231 (useConjureRemixSettingsRequest)
-import conjureSettingsRequest from "conjureSettingsRequest" /* 12232 */;
-import ConjureSettingsStore from "ConjureSettingsStore" /* 11019 */;
+// Module 12292 (useConjureRemixSettingsRequest)
+import conjureSettingsRequest from "conjureSettingsRequest" /* 12293 */;
+import ConjureSettingsStore from "ConjureSettingsStore" /* 10674 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRe
     if (stateFromStores) {
       tmp12 = null;
       if (null != settings_keys) {
-        let obj2 = { keys: settings_keys, note: intl.string(settings_keys(3820).F2yVHg) };
+        let obj2 = { keys: settings_keys, note: intl.string(settings_keys(3830).F2yVHg) };
         intl = tmp(1128).intl;
         tmp12 = obj2;
       }
@@ -100,7 +100,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRe
   }, items1)) {
     tmp4 = null;
     if (null != settings_keys) {
-      let obj2 = { keys: settings_keys, note: intl.string(settings_keys(3820).F2yVHg) };
+      let obj2 = { keys: settings_keys, note: intl.string(settings_keys(3830).F2yVHg) };
       intl = tmp2(1128).intl;
       tmp4 = obj2;
     }

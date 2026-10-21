@@ -1,21 +1,21 @@
-// Module ID: 16065
-// Function ID: 16066
+// Module ID: 16141
+// Function ID: 16142
 // Name: PlayStationTwoWayLinkUpsell
-// Dependencies: [19, 1087, 21, 4945, 558, 576, 2068, 16063, 1128, 5631, 16066, 13906, 4784, 2]
+// Dependencies: [19, 1087, 21, 4966, 558, 576, 2067, 16139, 1128, 5651, 16142, 13981, 4805, 2]
 
-// Module 16065 (PlayStationTwoWayLinkUpsell)
+// Module 16141 (PlayStationTwoWayLinkUpsell)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2068 */;
-import dismissible_content from "dismissible_content" /* 4784 */;
-import FastImageDefault from "FastImage" /* 5631 */;
-import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 13906 */;
-import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 16063 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16066 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
+import dismissible_content from "dismissible_content" /* 4805 */;
+import FastImageDefault from "FastImage" /* 5651 */;
+import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 13981 */;
+import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 16139 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16142 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStationT
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = HelpdeskUtilsDefault;
     const articleURL = obj2.getArticleURL(constants.PS_CONNECTION);
-    const OneWayToTwoWayLinkUpsell = tmp(16063).OneWayToTwoWayLinkUpsell;
+    const OneWayToTwoWayLinkUpsell = tmp(16139).OneWayToTwoWayLinkUpsell;
     const intl = tmp(1128).intl;
     const stringResult = intl.string(intl3.t.v20wwm);
     const intl2 = tmp(1128).intl;

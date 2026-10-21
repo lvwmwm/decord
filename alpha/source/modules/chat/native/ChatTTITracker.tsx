@@ -1,12 +1,12 @@
-// Module ID: 12871
-// Function ID: 12872
+// Module ID: 12939
+// Function ID: 12940
 // Name: ChatTTITracker
-// Dependencies: [21, 558, 576, 9, 12680, 2]
+// Dependencies: [21, 558, 576, 9, 12744, 2]
 
-// Module 12871 (ChatTTITracker)
+// Module 12939 (ChatTTITracker)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import react from "react" /* 576 */;
-import TTIMeasurementView from "TTIMeasurementView" /* 12680 */;
+import TTIMeasurementView from "TTIMeasurementView" /* 12744 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -48,7 +48,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatTTITrack
     let tmp7 = null;
     if (messages.length > 0) {
       const obj2 = { nativeID: "cached_messages_tti", onMeasurement: tmp5 };
-      tmp7 = _false(tmp(12680).TTIMeasurementView, obj2, "cached_messages_tti");
+      tmp7 = _false(tmp(12744).TTIMeasurementView, obj2, "cached_messages_tti");
     }
     cResult[2] = messages.length;
     cResult[3] = tmp7;
@@ -80,7 +80,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatTTITrack
   }
   if (messages.hasFetched) {
     const obj4 = { nativeID: "latest_messages_tti", onMeasurement: first };
-    tmp10 = _false(tmp(12680).TTIMeasurementView, obj4, "latest_messages_tti");
+    tmp10 = _false(tmp(12744).TTIMeasurementView, obj4, "latest_messages_tti");
   } else {
     tmp10 = null;
     if (messages.ready) {

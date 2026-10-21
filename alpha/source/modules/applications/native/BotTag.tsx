@@ -1,19 +1,19 @@
-// Module ID: 9067
-// Function ID: 9068
+// Module ID: 9094
+// Function ID: 9095
 // Name: BotTag
-// Dependencies: [19, 17, 1375, 21, 4945, 587, 1128, 558, 576, 9068, 5195, 2]
+// Dependencies: [19, 17, 1375, 21, 4966, 587, 1128, 558, 576, 9095, 5216, 2]
 
-// Module 9067 (BotTag)
+// Module 9094 (BotTag)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import ApplicationConstants from "ApplicationConstants" /* 1375 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import CheckmarkSmallBoldIcon2 from "CheckmarkSmallBoldIcon" /* 9068 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import CheckmarkSmallBoldIcon2 from "CheckmarkSmallBoldIcon" /* 9095 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -94,7 +94,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotTag(arg0)
     }
     if (cResult[2] !== str2) {
       const obj2 = { size: str2, color: nativeDefault.colors.WHITE };
-      const CheckmarkSmallBoldIcon = tmp(9068).CheckmarkSmallBoldIcon;
+      const CheckmarkSmallBoldIcon = tmp(9095).CheckmarkSmallBoldIcon;
       const tmp16 = hasOwnProperty(CheckmarkSmallBoldIcon, obj2);
       cResult[2] = str2;
       cResult[3] = tmp16;
@@ -279,7 +279,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotTag(arg0)
   items = [tmp2.tag, tmp11, style, prop];
   items1 = [tmp7Result, ];
   let str3 = "text-xs/semibold";
-  const Text = tmp17(5195).Text;
+  const Text = tmp17(5216).Text;
   const tmp24 = metroRequire;
   const tmp25 = View;
   const tmp26 = hasOwnProperty;

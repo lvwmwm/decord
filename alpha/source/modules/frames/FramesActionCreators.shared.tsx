@@ -1,24 +1,25 @@
-// Module ID: 11071
-// Function ID: 11072
+// Module ID: 10726
+// Function ID: 10727
 // Name: launchFrame
-// Dependencies: [5, 6726, 6727, 5570, 11072, 584, 11033, 6729, 11074, 11080, 11068, 2]
+// Dependencies: [32, 5, 6754, 6755, 5591, 10727, 584, 10688, 6757, 10729, 10735, 10740, 10723, 2]
 // Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameLayoutModes, setFrameRunsInBackground, updateFramePanelMode
 
-// Module 11071 (launchFrame)
+// Module 10726 (launchFrame)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5570 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6729 */;
-import createProxyTicket from "createProxyTicket" /* 11033 */;
-import leaveFrame from "leaveFrame" /* 11068 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 11072 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5591 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6757 */;
+import createProxyTicket from "createProxyTicket" /* 10688 */;
+import leaveFrame from "leaveFrame" /* 10723 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10727 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import FramesStore from "FramesStore" /* 6726 */;
-import FramesConstants from "FramesConstants" /* 6727 */;
+import FramesStore from "FramesStore" /* 6754 */;
+import FramesConstants from "FramesConstants" /* 6755 */;
 import size from "module_2" /* 2 */;
 
 let analyticsContext, dispatchResult1, error, hostWindowKey, intent, launch, launchRequestId, message, proxyTicket, type;
 
-let hasOwnProperty;
+let c9;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
@@ -33,7 +34,6 @@ let obj = function _launchFrame() {
       let c2;
       let c3;
       let c4;
-      let obj11;
       let obj6;
       let showErrorModal;
       let sum;
@@ -51,6 +51,7 @@ let obj = function _launchFrame() {
       } else {
         try {
           let frameId;
+          let closure_9;
           c7 = 2;
           if (0 === c6) {
             if (arg0 === 1) {
@@ -75,11 +76,12 @@ let obj = function _launchFrame() {
               frameId = undefined;
               intent = undefined;
               launchRequestId = undefined;
+              closure_9 = undefined;
               proxyTicket = undefined;
               message = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -89,32 +91,35 @@ let obj = function _launchFrame() {
               c7 = 3;
               return { value, done: true };
             } else {
-              frameId = closure_131_8(applicationId, type);
+              frameId = closure_131_9(applicationId, type);
               intent = frame.getFrame(frameId);
               if (null != intent) {
                 if (intent.intent === constants.MAIN) {
-                  closure_131_14(frameId);
+                  closure_131_15(frameId);
                   const obj7 = { frameId, layoutMode: constants2.FOCUSED };
-                  closure_131_15(obj7);
+                  closure_131_16(obj7);
                 }
                 c7 = 3;
                 return { value: frameId, done: true };
               } else {
-                if (closure_131_7(type) === constants.MAIN) {
-                  const obj8 = closure_131_0(closure_131_2[4]);
+                if (closure_131_8(type) === constants.MAIN) {
+                  const obj8 = closure_131_0(closure_131_2[5]);
                   const result = obj8.leaveCurrentEmbeddedActivity();
-                  closure_131_12();
+                  closure_131_13();
                 }
                 sum = sum + 1;
                 launchRequestId = sum;
                 const obj12 = { type: "FRAME_LAUNCH_START", applicationId, frameId, surface: type, hostWindowKey, launch, launchRequestId };
-                const obj9 = closure_131_1(closure_131_2[5]);
+                const obj9 = closure_131_1(closure_131_2[6]);
                 obj9.dispatch(obj12);
                 c5 = 1;
+                const items = [, ];
+                const obj11 = closure_131_0(closure_131_2[7]);
+                items[0] = obj11.createProxyTicket(applicationId, closure_131_1(closure_131_2[8])(type), type.type);
+                items[1] = closure_131_1(closure_131_2[9])(applicationId);
                 c6 = 3;
                 c7 = 1;
-                const obj13 = { value: obj11.createProxyTicket(applicationId, closure_131_1(closure_131_2[7])(type), type.type), done: false };
-                obj11 = closure_131_0(closure_131_2[6]);
+                const obj13 = { value: all(items), done: false };
                 return obj13;
               }
             }
@@ -127,7 +132,7 @@ let obj = function _launchFrame() {
                 c6 = 4;
                 c7 = 1;
                 const obj14 = { value: obj6.getActivityLaunchErrorInfo(error, applicationId), done: false };
-                obj6 = closure_131_0(closure_131_2[8]);
+                obj6 = closure_131_0(closure_131_2[10]);
                 return obj14;
               }
             } else if (3 === c6) {
@@ -139,11 +144,12 @@ let obj = function _launchFrame() {
                 c7 = 3;
                 return { value, done: true };
               } else {
-                proxyTicket = value;
+                closure_9 = value;
+                proxyTicket = closure_131_3(closure_9, 1)[0];
                 const obj16 = { type: "FRAME_LAUNCH", applicationId, frameId, surface: type, proxyTicket, analyticsContext, launch: type, hostWindowKey, launchRequestId };
                 type = launch;
-                const dispatch = closure_131_1(closure_131_2[5]).dispatch;
-                closure_131_1(closure_131_2[5]);
+                const dispatch = closure_131_1(closure_131_2[6]).dispatch;
+                closure_131_1(closure_131_2[6]);
                 if (launch == null) {
                   type = {};
                 }
@@ -160,18 +166,18 @@ let obj = function _launchFrame() {
               return { value, done: true };
             } else {
               message = value;
-              closure_131_1(closure_131_2[9])(message.message);
+              closure_131_1(closure_131_2[11])(message.message);
             }
             const obj18 = { type: "FRAME_LAUNCH_FAIL", applicationId, frameId, launchRequestId, error, analyticsContext };
-            const obj4 = closure_131_1(closure_131_2[5]);
+            const obj4 = closure_131_1(closure_131_2[6]);
             obj4.dispatch(obj18);
             throw error;
           }
-        } catch (tmp78) {
-          closure_4 = tmp78;
+        } catch (tmp81) {
+          closure_4 = tmp81;
           if (0 === c5) {
             c7 = 3;
-            throw tmp78;
+            throw tmp81;
           } else {
             c6 = 2;
           }
@@ -186,7 +192,7 @@ let obj = function _launchFrame() {
 function clearMainFrameSlot() {
   const mainFrame = FramesStore.getMainFrame();
   if (null != mainFrame) {
-    if (mainFrame.intent === hasOwnProperty.MAIN) {
+    if (mainFrame.intent === metroRequire.MAIN) {
       obj = leaveFrame;
       obj.leaveFrame(mainFrame.id);
     } else {
@@ -202,7 +208,7 @@ function demoteMainFrame(id) {
     id = mainFrame.id;
   }
   if (id === id) {
-    const FOCUSED = metroRequire.FOCUSED;
+    const FOCUSED = metroImportDefault.FOCUSED;
     const frame = obj.getFrame(id);
     if (null != frame) {
       const obj3 = { type: "FRAME_UPDATE_LAYOUT_MODE", applicationId: frame.applicationId, frameId: id, layoutMode: FOCUSED };
@@ -234,8 +240,8 @@ function promoteFrame(frameId) {
     const mainFrame1 = obj.getMainFrame();
     const tmp4 = require;
     if (null != mainFrame1) {
-      if (mainFrame1.intent === hasOwnProperty.MAIN) {
-        const tmp4Result = tmp4(11068);
+      if (mainFrame1.intent === metroRequire.MAIN) {
+        const tmp4Result = tmp4(10723);
         tmp4Result.leaveFrame(mainFrame1.id);
       } else {
         demoteMainFrame(mainFrame1.id);
@@ -311,13 +317,13 @@ obj = function _refreshProxyTicket() {
           } else if (1 === c5) {
             c4 = 0;
             const obj8 = { type: "FRAME_SET_PROXY_TICKET_REFRESHING", applicationId, frameId, refreshing: false };
-            const obj9 = closure_130_1(closure_130_2[5]);
+            const obj9 = closure_130_1(closure_130_2[6]);
             dispatchResult1 = obj9.dispatch(obj8);
             throw message;
           } else if (2 === c5) {
             c4 = 1;
             let closure_4 = message;
-            const obj7 = closure_130_0(closure_130_2[8]);
+            const obj7 = closure_130_0(closure_130_2[10]);
             dispatchResult1 = obj7.getActivityLaunchErrorInfo(closure_4, applicationId);
             c5 = 3;
             c6 = 1;
@@ -329,16 +335,16 @@ obj = function _refreshProxyTicket() {
             } else if (arg0 === 2) {
               c4 = 0;
               const obj11 = { type: "FRAME_SET_PROXY_TICKET_REFRESHING", applicationId, frameId, refreshing: false };
-              const obj4 = closure_130_1(closure_130_2[5]);
+              const obj4 = closure_130_1(closure_130_2[6]);
               obj4.dispatch(obj11);
               c6 = 3;
               return { value, done: true };
             } else {
               message = value;
-              closure_130_1(closure_130_2[9])(message.message);
+              closure_130_1(closure_130_2[11])(message.message);
               c4 = 0;
               const obj13 = { type: "FRAME_SET_PROXY_TICKET_REFRESHING", applicationId, frameId, refreshing: false };
-              const obj18 = closure_130_1(closure_130_2[5]);
+              const obj18 = closure_130_1(closure_130_2[6]);
               obj18.dispatch(obj13);
               c6 = 3;
               return { value: false, done: true };
@@ -349,18 +355,18 @@ obj = function _refreshProxyTicket() {
           } else if (arg0 === 2) {
             c4 = 0;
             const obj15 = { type: "FRAME_SET_PROXY_TICKET_REFRESHING", applicationId, frameId, refreshing: false };
-            obj = closure_130_1(closure_130_2[5]);
+            obj = closure_130_1(closure_130_2[6]);
             obj.dispatch(obj15);
             c6 = 3;
             return { value, done: true };
           } else {
             proxyTicket = value;
             const obj19 = { type: "FRAME_UPDATE_PROXY_TICKET", applicationId, frameId, proxyTicket };
-            const obj14 = closure_130_1(closure_130_2[5]);
+            const obj14 = closure_130_1(closure_130_2[6]);
             obj14.dispatch(obj19);
             c4 = 0;
             const obj21 = { type: "FRAME_SET_PROXY_TICKET_REFRESHING", applicationId, frameId, refreshing: false };
-            const obj16 = closure_130_1(closure_130_2[5]);
+            const obj16 = closure_130_1(closure_130_2[6]);
             obj16.dispatch(obj21);
             c6 = 3;
             return { value: true, done: true };
@@ -381,9 +387,9 @@ obj = function _refreshProxyTicket() {
   });
   return obj(...arguments);
 };
-({ FrameIntent: hasOwnProperty, FrameLayoutModes: metroRequire, getFrameIntentForSurface: metroImportDefault, makeFrameId: metroImportAll } = FramesConstants);
+({ FrameIntent: metroRequire, FrameLayoutModes: metroImportDefault, getFrameIntentForSurface: metroImportAll, makeFrameId: c9 } = FramesConstants);
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
-let c10 = 0;
+let c11 = 0;
 let result = size.fileFinishedImporting("modules/frames/FramesActionCreators.shared.tsx");
 
 export const launchFrame = function launchFrame() {
@@ -404,7 +410,7 @@ export const updateFramePanelMode = function updateFramePanelMode(id, PIP) {
   obj.dispatch(obj2);
 };
 export const resetFrameLayoutModes = function resetFrameLayoutModes(frameId) {
-  const FOCUSED = metroRequire.FOCUSED;
+  const FOCUSED = metroImportDefault.FOCUSED;
   const frame = FramesStore.getFrame(frameId);
   if (null != frame) {
     const obj2 = { type: "FRAME_UPDATE_LAYOUT_MODE", applicationId: frame.applicationId, frameId, layoutMode: FOCUSED };

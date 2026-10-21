@@ -1,22 +1,22 @@
-// Module ID: 17576
-// Function ID: 17577
+// Module ID: 17657
+// Function ID: 17658
 // Name: YouBarBackground
-// Dependencies: [19, 17, 16188, 21, 4945, 587, 558, 576, 683, 5219, 6917, 5213, 16274, 5014, 5208, 2]
+// Dependencies: [19, 17, 16264, 21, 4966, 587, 558, 576, 683, 5240, 6945, 5234, 16350, 5035, 5229, 2]
 
-// Module 17576 (YouBarBackground)
+// Module 17657 (YouBarBackground)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
-import spring from "spring" /* 5208 */;
-import useToken2 from "useToken" /* 5213 */;
-import LinearGradientDefault from "LinearGradient" /* 5219 */;
-import _modDef6917 from "module_6917" /* 6917 */;
-import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 16274 */;
+import spring from "spring" /* 5229 */;
+import useToken2 from "useToken" /* 5234 */;
+import LinearGradientDefault from "LinearGradient" /* 5240 */;
+import _modDef6945 from "module_6945" /* 6945 */;
+import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 16350 */;
 import react from "react" /* 19 */;
-import YouBarConstants from "YouBarConstants" /* 16188 */;
+import YouBarConstants from "YouBarConstants" /* 16264 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp4;
-const ReanimatedRexportDefault = tmp4(5014);
+const ReanimatedRexportDefault = tmp4(5035);
 const View = react_native.View;
 const YOU_BAR_HEIGHT = YouBarConstants.YOU_BAR_HEIGHT;
 const YOU_BAR_SPRING_CONFIG = YouBarConstants.YOU_BAR_SPRING_CONFIG;
@@ -159,7 +159,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouBarM
             return tmp39;
           }
           const obj6 = { style: first, maskElement: tmp31, children: tmp35 };
-          const tmp42 = metroRequire(_modDef6917, obj6);
+          const tmp42 = metroRequire(_modDef6945, obj6);
           cResult[24] = tmp31;
           cResult[25] = tmp35;
           cResult[26] = tmp42;
@@ -208,7 +208,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouBarM
   rect = { position: "absolute", top: 0, left: 0, right: 0, bottom: YOU_BAR_HEIGHT / 2 - 1, backgroundColor: "black" };
   items = [, , ];
   const tmp = closure_8();
-  const tmp3 = _modDef6917;
+  const tmp3 = _modDef6945;
   items[0] = metroRequire(View, obj3);
   const obj4 = { style: { position: "absolute", top: YOU_BAR_HEIGHT / 2, left: diff - 1, right: 0, bottom: 0, backgroundColor: "black" } };
   items[1] = metroRequire(View, obj4);

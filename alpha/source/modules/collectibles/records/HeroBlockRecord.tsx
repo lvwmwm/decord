@@ -1,11 +1,11 @@
-// Module ID: 7634
-// Function ID: 7635
+// Module ID: 7661
+// Function ID: 7662
 // Name: HeroBlockRecord
-// Dependencies: [5601, 7611, 2]
+// Dependencies: [5622, 7639, 2]
 
-// Module 7634 (HeroBlockRecord)
-import ShopBlockType from "ShopBlockType" /* 5601 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7611 */;
+// Module 7661 (HeroBlockRecord)
+import ShopBlockType from "ShopBlockType" /* 5622 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7639 */;
 import size from "module_2" /* 2 */;
 
 class HeroBlockRecord {

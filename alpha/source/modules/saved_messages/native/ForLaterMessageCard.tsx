@@ -1,19 +1,19 @@
-// Module ID: 13646
-// Function ID: 13647
+// Module ID: 13713
+// Function ID: 13714
 // Name: ForLaterMessageCard
-// Dependencies: [5, 19, 17, 4880, 1087, 21, 4945, 587, 558, 576, 6963, 1128, 5195, 7907, 5652, 13647, 6856, 13651, 6623, 1267, 10006, 2050, 13652, 504, 13653, 13662, 13664, 13665, 2]
+// Dependencies: [5, 19, 17, 4901, 1087, 21, 4966, 587, 558, 576, 6991, 1128, 5216, 7935, 5672, 13714, 6884, 13718, 6651, 1267, 10036, 2049, 13719, 504, 13720, 13727, 13729, 13730, 2]
 
-// Module 13646 (ForLaterMessageCard)
+// Module 13713 (ForLaterMessageCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5652 */;
-import SavedMessageHelpers from "SavedMessageHelpers" /* 13647 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5672 */;
+import SavedMessageHelpers from "SavedMessageHelpers" /* 13714 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4880 */;
+import PermissionStore from "PermissionStore" /* 4901 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterDele
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-      const CircleErrorIcon = tmp(6963).CircleErrorIcon;
+      const CircleErrorIcon = tmp(6991).CircleErrorIcon;
       const tmp10 = closure_10(CircleErrorIcon, obj2);
       cResult[3] = tmp10;
       tmp7 = tmp10;
@@ -98,7 +98,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterDele
                   return obj.removeSavedMessage(savedMessage.saveData);
                 }
         };
-        const IconButton = tmp(7907).IconButton;
+        const IconButton = tmp(7935).IconButton;
         const tmp22 = closure_10(IconButton, obj3);
         cResult[10] = savedMessage.saveData;
         cResult[11] = tmp22;
@@ -122,7 +122,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterDele
         }
         const obj4 = { variant: "primary", border: "subtle", shadow: "none", style: tmp5, children: items };
         items = [tmp7, tmp14, tmp23];
-        const tmp29 = closure_11(savedMessage(6856).Card, obj4);
+        const tmp29 = closure_11(savedMessage(6884).Card, obj4);
         cResult[15] = tmp5;
         cResult[16] = tmp14;
         cResult[17] = tmp23;
@@ -137,7 +137,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterDele
       tmp23 = tmp26;
     }
     const obj6 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp4.deletedText, children: tmp11 };
-    const tmp16 = closure_10(savedMessage(5195).Text, obj6);
+    const tmp16 = closure_10(savedMessage(5216).Text, obj6);
     cResult[6] = tmp4.deletedText;
     cResult[7] = tmp11;
     cResult[8] = tmp16;
@@ -161,12 +161,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterDele
   let obj = { variant: "primary", border: "subtle", shadow: "none", style: items, children: items1 };
   items = [, ];
   ({ card: arr[0], deletedCard: arr[1] } = tmp);
-  const Card = savedMessage(6856).Card;
+  const Card = savedMessage(6884).Card;
   const obj2 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-  const CircleErrorIcon = savedMessage(6963).CircleErrorIcon;
+  const CircleErrorIcon = savedMessage(6991).CircleErrorIcon;
   items1 = [closure_10(CircleErrorIcon, obj2), , ];
   const obj3 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.deletedText, children: stringResult };
-  const Text = savedMessage(5195).Text;
+  const Text = savedMessage(5216).Text;
   const tmp2 = closure_11;
   if (null != savedMessage.saveData.dueAt) {
     const intl2 = tmp3(1128).intl;
@@ -187,7 +187,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterDele
       return obj.removeSavedMessage(savedMessage.saveData);
     }
   };
-  IconButton = tmp3(7907).IconButton;
+  IconButton = tmp3(7935).IconButton;
   intl3 = tmp3(1128).intl;
   items1[2] = closure_10(View, obj4);
   return tmp2(Card, obj);
@@ -201,7 +201,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const cResult = obj.c(31);
   savedMessage = savedMessage.savedMessage;
   let tmp4 = closure_12();
-  let obj2 = savedMessage(13651);
+  let obj2 = savedMessage(13718);
   const savedMessageChannel = obj2.useSavedMessageChannel(savedMessage);
   if (cResult[0] === savedMessageChannel) {
     let tmp13;
@@ -476,7 +476,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp = closure_12();
   let tmp2 = savedMessage;
   let tmp3 = dependencyMap;
-  let obj = savedMessage(13651);
+  let obj = savedMessage(13718);
   let savedMessageChannel = obj.useSavedMessageChannel(savedMessage);
   const items = [savedMessage, savedMessageChannel];
   const callback = react.useCallback(_asyncToGenerator(async (arg0, value) => {
@@ -635,20 +635,20 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         let tmp6 = closure_10;
         const tmp7 = savedMessageChannel;
         let obj3 = { savedMessage, jumpToMessage: callback, throttledNow };
-        let tmp8 = closure_10(savedMessageChannel(13653), obj3);
+        let tmp8 = closure_10(savedMessageChannel(13720), obj3);
         let tmp9 = null != savedMessage.saveData.dueAt;
         let tmp10 = closure_11;
         let obj4 = { variant: "primary", border: "subtle", shadow: "none", style: tmp.card, onPress: callback, children: items2 };
         let tmp6Result = null;
-        const Card = tmp2(6856).Card;
+        const Card = tmp2(6884).Card;
         if (tmp9) {
           let obj5 = { savedMessage, throttledNow, actions: tmp8 };
-          tmp6Result = tmp6(tmp2(13662).ForLaterCardReminderHeader, obj5);
+          tmp6Result = tmp6(tmp2(13727).ForLaterCardReminderHeader, obj5);
         }
         items2 = [tmp6Result, , , ];
         let obj6 = { channel: savedMessageChannel, actions: tmp12 };
         tmp12 = null;
-        const ForLaterCardHeader = tmp2(13664).ForLaterCardHeader;
+        const ForLaterCardHeader = tmp2(13729).ForLaterCardHeader;
         if (!tmp9) {
           tmp12 = tmp8;
         }
@@ -656,7 +656,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         let obj7 = { style: tmp.cardDivider };
         items2[2] = tmp6(View, obj7);
         const obj8 = { message: savedMessage.message, lineClamp: 2, maxHeight: 250 };
-        items2[3] = tmp6(tmp2(13665).ForLaterMessageRow, obj8);
+        items2[3] = tmp6(tmp2(13730).ForLaterMessageRow, obj8);
         return tmp10(Card, obj4);
       }
     }

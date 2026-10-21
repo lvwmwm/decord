@@ -1,14 +1,14 @@
-// Module ID: 12328
-// Function ID: 12329
+// Module ID: 12383
+// Function ID: 12384
 // Name: ConjureClarification
-// Dependencies: [4800, 1392, 1087, 1128, 3820, 2]
+// Dependencies: [4821, 1392, 1087, 1128, 3830, 2]
 // Exports: clarificationAnswerAttachments, clarificationAnswersPayload, clarificationChannelType, clarificationDraftPlaceholder, clarificationEntities, clarificationPickerPlaceholder, entityAnswer, followingClarificationStep, formatClarificationAnswers, isClarificationComplete, isTypedClarificationQuestion, multiSelectAnswer, nextClarificationStep, toggleClarificationOption
 
-// Module 12328 (ConjureClarification)
+// Module 12383 (ConjureClarification)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import _modDef3820 from "module_3820" /* 3820 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
+import _modDef3830 from "module_3830" /* 3830 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 
@@ -20,10 +20,10 @@ const ChannelTypes = Constants.ChannelTypes;
 let closure_5 = { [ChannelTypes.GUILD_TEXT]: "text", [ChannelTypes.GUILD_VOICE]: "voice", [ChannelTypes.GUILD_ANNOUNCEMENT]: "announcement", [ChannelTypes.GUILD_STAGE_VOICE]: "stage", [ChannelTypes.GUILD_FORUM]: "forum", [ChannelTypes.GUILD_MEDIA]: "media" };
 let closure_6 = { channel: "#", role: "@", user: "@", project: "" };
 let obj = { channel: items, role: items1, user: items2, project: items3 };
-items = [_modDef3820["9+dfPT"], _modDef3820.pGSJqE];
-items1 = [_modDef3820["2VkCoD"], _modDef3820.c8YlX8];
-items2 = [_modDef3820.GZIAxl, _modDef3820["4bptbQ"]];
-items3 = [_modDef3820.twlOb6, _modDef3820.twlOb6];
+items = [_modDef3830["9+dfPT"], _modDef3830.pGSJqE];
+items1 = [_modDef3830["2VkCoD"], _modDef3830.c8YlX8];
+items2 = [_modDef3830.GZIAxl, _modDef3830["4bptbQ"]];
+items3 = [_modDef3830.twlOb6, _modDef3830.twlOb6];
 let result = size.fileFinishedImporting("modules/conjure/clarification/ConjureClarification.tsx");
 
 export const isTypedClarificationQuestion = function isTypedClarificationQuestion(options) {
@@ -36,7 +36,7 @@ export const clarificationDraftPlaceholder = function clarificationDraftPlacehol
   if (tmp2) {
     tmp2 = null == options.input;
   }
-  const tmp4 = _modDef3820;
+  const tmp4 = _modDef3830;
   return string(tmp2 ? tmp4.yLN1x6 : tmp4["tOC+tn"]);
 };
 export const isClarificationComplete = function isClarificationComplete(questions, arg1) {

@@ -1,14 +1,14 @@
-// Module ID: 7254
-// Function ID: 7255
+// Module ID: 7282
+// Function ID: 7283
 // Name: ChevronSmallRightIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 6864, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 6892, 5650, 2]
 
-// Module 7254 (ChevronSmallRightIcon)
+// Module 7282 (ChevronSmallRightIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 6864 */;
+import BaseIconImage2 from "BaseIconImage" /* 5650 */;
+import AssetRegistry from "AssetRegistry" /* 6892 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChevronSma
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(5630).BaseIconImage;
+  const BaseIconImage = tmp(5650).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

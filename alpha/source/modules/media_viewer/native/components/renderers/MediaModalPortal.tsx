@@ -1,15 +1,15 @@
-// Module ID: 8697
-// Function ID: 8698
+// Module ID: 8724
+// Function ID: 8725
 // Name: MediaModalPortal
-// Dependencies: [19, 17, 21, 4945, 1384, 8698, 558, 576, 7009, 8699, 2]
+// Dependencies: [19, 17, 21, 4966, 1384, 8725, 558, 576, 7037, 8726, 2]
 // Exports: createPortalControls, isPortalExpired, markPortalAlive
 
-// Module 8697 (MediaModalPortal)
+// Module 8724 (MediaModalPortal)
 import Fragment from "Fragment" /* 21 */;
-import PortalViewNativeComponentDefault from "PortalViewNativeComponent" /* 8698 */;
+import PortalViewNativeComponentDefault from "PortalViewNativeComponent" /* 8725 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -391,7 +391,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   ({ onLoad: dependencyMap, portal } = paused);
   ({ style, pointerEvents } = paused);
   let tmp = closure_5();
-  const tmp2 = muted(7009)(() => {
+  const tmp2 = muted(7037)(() => {
     let tmp;
     if (dependencyMap != null) {
       tmp = dependencyMap();

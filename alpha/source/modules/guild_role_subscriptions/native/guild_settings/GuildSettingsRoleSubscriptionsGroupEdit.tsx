@@ -1,14 +1,14 @@
-// Module ID: 19001
-// Function ID: 19002
+// Module ID: 19078
+// Function ID: 19079
 // Name: GuildSettingsRoleSubscriptionsGroupEdit
-// Dependencies: [5, 32, 19, 17, 1375, 21, 558, 576, 1505, 16318, 19002, 18961, 5554, 19003, 12, 6875, 7434, 1128, 5624, 587, 19005, 19010, 19014, 2]
+// Dependencies: [5, 32, 19, 17, 1375, 21, 558, 576, 1505, 16394, 19079, 19038, 5575, 19080, 12, 6903, 7462, 1128, 5644, 587, 19082, 19087, 19091, 2]
 
-// Module 19001 (GuildSettingsRoleSubscriptionsGroupEdit)
+// Module 19078 (GuildSettingsRoleSubscriptionsGroupEdit)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import ApplicationConstants from "ApplicationConstants" /* 1375 */;
-import ToastUtils from "ToastUtils" /* 5624 */;
-import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 19014 */;
+import ToastUtils from "ToastUtils" /* 5644 */;
+import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 19091 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

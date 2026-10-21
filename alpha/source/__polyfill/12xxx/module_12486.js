@@ -1,156 +1,128 @@
 // Module ID: 12486
 // Function ID: 12487
-// Dependencies: [12487, 12467, 12488, 12447, 12451, 12423, 12480]
-// Exports: createTransport
+// Dependencies: []
+// Exports: isDOMError, isDOMException, isElement, isError, isErrorEvent, isEvent, isParameterizedString, isPlainObject, isPrimitive, isRegExp, isString, isSyntheticEvent, isThenable, isVueViewModel
 
 // Module 12486
-import _mod12447 from "module_12447" /* 12447 */;
-import _mod12451 from "module_12451" /* 12451 */;
-import _mod12467 from "module_12467" /* 12467 */;
-import _mod12480 from "module_12480" /* 12480 */;
-import _slicedToArray from "_slicedToArray" /* 12488 */;
-
-const require = globalThis.__r;
-let _require, dependencyMap;
-
-
-export const DEFAULT_TRANSPORT_BUFFER_SIZE = 64;
-export const createTransport = function createTransport(bufferSize, arg1) {
-  _require = bufferSize;
-  dependencyMap = arg1;
-  let promiseBuffer = arg2;
-  if (arg2 === undefined) {
-    let tmp2 = _require;
-    let tmp4 = require("module_12487");
-    let num = bufferSize.bufferSize;
-    const makePromiseBuffer = tmp4.makePromiseBuffer;
-    if (!num) {
-      num = 64;
-    }
-    promiseBuffer = makePromiseBuffer(num);
+function isInstanceOf(arg0, arg1) {
+  try {
+    return arg0 instanceof arg1;
+  } catch (err) {
+    return false;
   }
-  let closure_3 = {};
-  let obj = {
-    send(arg0) {
-      const items = [];
-      let tmp = bufferSize;
-      const tmp2 = closure_1;
-      let obj = bufferSize(closure_1[1]);
-      obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
-        const obj = _mod12467;
-        const result = obj.envelopeItemTypeToDataCategory(arg1);
-        const obj2 = _slicedToArray;
-        if (obj2.isRateLimited(closure_3, result)) {
-          let tmp4;
-          if ("event" === arg1) {
-            const _Array = Array;
-            let tmp6;
-            if (Array.isArray(arg0)) {
-              tmp6 = arg0[1];
-            }
-            tmp4 = tmp6;
-          }
-          items.recordDroppedEvent("ratelimit_backoff", result, tmp4);
-        } else {
-          items.push(arg0);
-        }
-      });
-      if (0 === items.length) {
-        let tmpResult = tmp(tmp2[3]);
-        return tmpResult.resolvedSyncPromise({});
-      } else {
-        let tmpResult2 = tmp(tmp2[1]);
-        closure_1 = tmpResult2.createEnvelope(arg0[0], items);
-        function recordEnvelopeLoss(arg0) {
+}
 
+export const isDOMError = function isDOMError(arg0) {
+  const callResult = toString.call(arg0);
+  return callResult === "[object " + "DOMError" + "]";
+};
+export const isDOMException = function isDOMException(arg0) {
+  const callResult = toString.call(arg0);
+  return callResult === "[object " + "DOMException" + "]";
+};
+export const isElement = function isElement(arg0) {
+  let tmp = typeof globalThis.Element !== "undefined";
+  if (typeof globalThis.Element !== "undefined") {
+    tmp = isInstanceOf(arg0, globalThis.Element);
+  }
+  return tmp;
+};
+export const isError = function isError(arg0) {
+  const callResult = toString.call(arg0);
+  if ("[object Error]" !== callResult) {
+    if ("[object Exception]" !== callResult) {
+      if ("[object DOMException]" !== callResult) {
+        if ("[object WebAssembly.Exception]" !== callResult) {
+          const _Error = Error;
+          return isInstanceOf(arg0, Error);
         }
-        let tmp4 = recordEnvelopeLoss;
-        const addResult = recordEnvelopeLoss.add(() => {
-          let obj2;
-          let obj = { body: obj2.serializeEnvelope(closure_1) };
-          obj2 = _mod12467;
-          const promise = closure_1(obj);
-          return promise.then((statusCode) => {
-            let DEBUG_BUILD = undefined !== statusCode.statusCode;
-            if (DEBUG_BUILD) {
-              DEBUG_BUILD = statusCode.statusCode < 200 || statusCode.statusCode >= 300;
-              const tmp = statusCode.statusCode < 200 || statusCode.statusCode >= 300;
-            }
-            if (DEBUG_BUILD) {
-              DEBUG_BUILD = items(closure_1[4]).DEBUG_BUILD;
-            }
-            if (DEBUG_BUILD) {
-              const logger = items(closure_1[5]).logger;
-              const _HermesInternal = HermesInternal;
-              logger.warn("Sentry responded with status code " + statusCode.statusCode + " to sent event.");
-            }
-            const obj = items(closure_1[2]);
-            closure_3 = obj.updateRateLimits(closure_3, statusCode);
-            return statusCode;
-          }, (arg0) => {
-            let recordDroppedEvent;
-            if (typeof recordEnvelopeLoss === "function") {
-              let tmp = arg0;
-              const network_error = "network_error";
-              let obj = recordDroppedEvent(closure_1[1]);
-              let tmp4 = closure_1_1;
-              obj.forEachEnvelopeItem(closure_1_1, (arg0, arg1) => {
-                let tmp;
-                if ("event" === arg1) {
-                  const _Array = Array;
-                  let tmp4;
-                  if (Array.isArray(arg0)) {
-                    tmp4 = arg0[1];
-                  }
-                  tmp = tmp4;
-                }
-                recordDroppedEvent = recordDroppedEvent.recordDroppedEvent;
-                const obj = items(closure_3_1[1]);
-                recordDroppedEvent(network_error, obj.envelopeItemTypeToDataCategory(arg1), tmp);
-              });
-              throw arg0;
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          });
-        });
-        return addResult.then((result) => result, (arg0) => {
-          if (arg0 instanceof _mod12480.SentryError) {
-            if (_mod12451.DEBUG_BUILD) {
-              const logger = tmp(12423).logger;
-              logger.error("Skipped sending event because buffer is full.");
-            }
-            if (typeof recordEnvelopeLoss === "function") {
-              const queue_overflow = "queue_overflow";
-              const tmpResult = _mod12467;
-              tmpResult.forEachEnvelopeItem(closure_1, (arg0, arg1) => {
-                let tmp;
-                if ("event" === arg1) {
-                  const _Array = Array;
-                  let tmp4;
-                  if (Array.isArray(arg0)) {
-                    tmp4 = arg0[1];
-                  }
-                  tmp = tmp4;
-                }
-                recordDroppedEvent = recordDroppedEvent.recordDroppedEvent;
-                const obj = items(closure_3_1[1]);
-                recordDroppedEvent(network_error, obj.envelopeItemTypeToDataCategory(arg1), tmp);
-              });
-              const tmpResult2 = _mod12447;
-              return tmpResult2.resolvedSyncPromise({});
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          } else {
-            throw arg0;
-          }
-        });
       }
-    },
-    flush(arg0) {
-      return promiseBuffer.drain(arg0);
     }
-  };
-  return obj;
+  }
+  return true;
+};
+export const isErrorEvent = function isErrorEvent(arg0) {
+  const callResult = toString.call(arg0);
+  return callResult === "[object " + "ErrorEvent" + "]";
+};
+export const isEvent = function isEvent(arg0) {
+  let tmp = typeof Event !== "undefined";
+  if (typeof Event !== "undefined") {
+    const _Event = Event;
+    tmp = isInstanceOf(arg0, Event);
+  }
+  return tmp;
+};
+export { isInstanceOf };
+export const isParameterizedString = function isParameterizedString(obj) {
+  let tmp = typeof obj === "object";
+  if (typeof obj === "object") {
+    tmp = null !== obj;
+  }
+  if (tmp) {
+    tmp = "__sentry_template_string__" in obj;
+  }
+  if (tmp) {
+    tmp = "__sentry_template_values__" in obj;
+  }
+  return tmp;
+};
+export const isPlainObject = function isPlainObject(arg0) {
+  const callResult = toString.call(arg0);
+  return callResult === "[object " + "Object" + "]";
+};
+export const isPrimitive = function isPrimitive(obj) {
+  let tmp = null === obj;
+  if (!tmp) {
+    let tmp2 = typeof obj === "object";
+    if (typeof obj === "object") {
+      tmp2 = null !== obj;
+    }
+    if (tmp2) {
+      tmp2 = "__sentry_template_string__" in obj;
+    }
+    if (tmp2) {
+      tmp2 = "__sentry_template_values__" in obj;
+    }
+    tmp = tmp2;
+  }
+  if (!tmp) {
+    let tmp3 = typeof obj !== "object";
+    if (typeof obj !== "object") {
+      tmp3 = typeof obj !== "function";
+    }
+    tmp = tmp3;
+  }
+  return tmp;
+};
+export const isRegExp = function isRegExp(arg0) {
+  const callResult = toString.call(arg0);
+  return callResult === "[object " + "RegExp" + "]";
+};
+export const isString = function isString(arg0) {
+  const callResult = toString.call(arg0);
+  return callResult === "[object " + "String" + "]";
+};
+export const isSyntheticEvent = function isSyntheticEvent(arg0) {
+  const callResult = toString.call(arg0);
+  const tmp2 = callResult === "[object " + "Object" + "]" && "nativeEvent" in arg0 && "preventDefault" in arg0 && "stopPropagation" in arg0;
+  return tmp2;
+};
+export const isThenable = function isThenable(arg0) {
+  let then = arg0;
+  const _Boolean = Boolean;
+  if (arg0) {
+    then = arg0.then;
+  }
+  if (then) {
+    then = typeof arg0.then === "function";
+  }
+  return _Boolean(then);
+};
+export const isVueViewModel = function isVueViewModel(__isVue) {
+  let tmp = typeof __isVue !== "object" || null === __isVue;
+  if (!tmp) {
+    tmp = !__isVue.__isVue && !__isVue._isVue;
+  }
+  return !tmp;
 };

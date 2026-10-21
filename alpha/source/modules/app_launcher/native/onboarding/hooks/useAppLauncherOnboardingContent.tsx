@@ -1,19 +1,19 @@
-// Module ID: 11886
-// Function ID: 11887
+// Module ID: 11934
+// Function ID: 11935
 // Name: useAppLauncherOnboardingContent
-// Dependencies: [32, 9578, 4800, 4797, 558, 576, 4970, 4784, 504, 11887, 11892, 7445, 2]
+// Dependencies: [32, 9608, 4821, 4818, 558, 576, 4991, 4805, 504, 11935, 11940, 7473, 2]
 
-// Module 11886 (useAppLauncherOnboardingContent)
+// Module 11934 (useAppLauncherOnboardingContent)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import dismissible_content from "dismissible_content" /* 4784 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4797 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4970 */;
-import useActivityApplications2 from "useActivityApplications" /* 11887 */;
-import useCanShowAppLauncherOnboardingDefault from "useCanShowAppLauncherOnboarding" /* 11892 */;
+import dismissible_content from "dismissible_content" /* 4805 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4991 */;
+import useActivityApplications2 from "useActivityApplications" /* 11935 */;
+import useCanShowAppLauncherOnboardingDefault from "useCanShowAppLauncherOnboarding" /* 11940 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9578 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9608 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -113,7 +113,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasU
     guild_id = channel.guild_id;
   }
   const obj4 = { guildId: guild_id, fetchesShelf: !result };
-  const useActivityApplications = tmp(11887).useActivityApplications;
+  const useActivityApplications = tmp(11935).useActivityApplications;
   useActivityApplications2;
   if (result) {
     result = result1;
@@ -182,11 +182,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppLaun
   const tmp10 = useCanShowAppLauncherOnboardingDefault(tmp9);
   const canShowAppsOrActivitiesBanner = tmp10.canShowAppsOrActivitiesBanner;
   if (tmp10.canShowBotsBanner) {
-    items1.push(channelId(4784).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
+    items1.push(channelId(4805).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
   }
   if (canShowAppsOrActivitiesBanner) {
     const push = items1.push;
-    const DismissibleContent = tmp(4784).DismissibleContent;
+    const DismissibleContent = tmp(4805).DismissibleContent;
     if (hasUsedActivities) {
       push(DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
     } else {
@@ -200,7 +200,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppLaun
   } else {
     tmp14 = cResult[7];
   }
-  const tmpResult2 = channelId(7445);
+  const tmpResult2 = channelId(7473);
   [tmp17, tmp18] = tmpResult2.useSelectedDismissibleContent(items1, tmp14);
   _slicedToArray(tmpResult2.useSelectedDismissibleContent(items1, tmp14), 2);
   if (cResult[8] === tmp18) {
@@ -225,11 +225,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppLaun
   const tmp3 = useCanShowAppLauncherOnboardingDefault({ channelId });
   const canShowAppsOrActivitiesBanner = tmp3.canShowAppsOrActivitiesBanner;
   if (tmp3.canShowBotsBanner) {
-    items.push(channelId(4784).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
+    items.push(channelId(4805).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
   }
   if (canShowAppsOrActivitiesBanner) {
     const push = items.push;
-    const DismissibleContent = tmp(4784).DismissibleContent;
+    const DismissibleContent = tmp(4805).DismissibleContent;
     if (hasUsedActivities) {
       push(DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
     } else {
@@ -237,7 +237,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppLaun
     }
   }
   const obj3 = { groupName: constants.APP_LAUNCHER_ONBOARDING };
-  const tmpResult = channelId(7445);
+  const tmpResult = channelId(7473);
   const tmp7 = _slicedToArray(tmpResult.useSelectedDismissibleContent(items, obj3), 2);
   return { visibleContent: tmp7[0], markAsDismissed: tmp7[1] };
 });

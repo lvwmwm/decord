@@ -1,10 +1,10 @@
-// Module ID: 12674
-// Function ID: 12675
+// Module ID: 12738
+// Function ID: 12739
 // Name: NavTTISurfaceContext
 // Dependencies: [19, 558, 2]
 // Exports: useNavTTISurface
 
-// Module 12674 (NavTTISurfaceContext)
+// Module 12738 (NavTTISurfaceContext)
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

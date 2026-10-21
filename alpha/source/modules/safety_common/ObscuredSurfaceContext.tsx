@@ -1,10 +1,10 @@
-// Module ID: 9231
-// Function ID: 9232
+// Module ID: 9258
+// Function ID: 9259
 // Name: ObscuredSurfaceContext
 // Dependencies: [19, 558, 2]
 // Exports: useObscuredSurface
 
-// Module 9231 (ObscuredSurfaceContext)
+// Module 9258 (ObscuredSurfaceContext)
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

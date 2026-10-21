@@ -1,37 +1,37 @@
-// Module ID: 13554
-// Function ID: 13555
+// Module ID: 13621
+// Function ID: 13622
 // Name: ChannelNavbar
-// Dependencies: [19, 17, 6453, 4804, 4800, 4822, 5674, 4890, 1392, 1087, 4807, 4797, 21, 4945, 6602, 587, 558, 576, 504, 1128, 8451, 5565, 10563, 13555, 13556, 1202, 13557, 13558, 5631, 13559, 9786, 6859, 5195, 4994, 8686, 8974, 4970, 4784, 10337, 13560, 2]
+// Dependencies: [19, 17, 6475, 4825, 4821, 4843, 5694, 4911, 1392, 1087, 4828, 4818, 21, 4966, 6630, 587, 558, 576, 504, 1128, 8478, 5586, 10592, 13622, 13623, 1202, 13624, 13625, 5651, 13626, 9816, 6887, 5216, 5015, 8713, 9001, 4991, 4805, 10366, 13627, 2]
 
-// Module 13554 (ChannelNavbar)
+// Module 13621 (ChannelNavbar)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl10 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import dismissible_content from "dismissible_content" /* 4784 */;
-import ChannelRecord from "ChannelRecord" /* 4804 */;
-import ChannelConstants from "ChannelConstants" /* 4807 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4970 */;
-import UserUtilsDefault from "UserUtils" /* 4994 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import useChannelName from "useChannelName" /* 5565 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8451 */;
-import isStreamingDefault from "isStreaming" /* 8686 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10563 */;
+import dismissible_content from "dismissible_content" /* 4805 */;
+import ChannelRecord from "ChannelRecord" /* 4825 */;
+import ChannelConstants from "ChannelConstants" /* 4828 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4991 */;
+import UserUtilsDefault from "UserUtils" /* 5015 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import useChannelName from "useChannelName" /* 5586 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8478 */;
+import isStreamingDefault from "isStreaming" /* 8713 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10592 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6453 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import GuildStore from "GuildStore" /* 4822 */;
-import PresenceStore from "PresenceStore" /* 5674 */;
-import RelationshipStore from "RelationshipStore" /* 4890 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6475 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import GuildStore from "GuildStore" /* 4843 */;
+import PresenceStore from "PresenceStore" /* 5694 */;
+import RelationshipStore from "RelationshipStore" /* 4911 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4797 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
-import TextStyles from "TextStyles" /* 6602 */;
+import createStyles_mod from "createStyles" /* 4966 */;
+import TextStyles from "TextStyles" /* 6630 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ let obj3;
 let obj4;
 let size;
 let tmp;
-const Pressables = tmp(6859);
+const Pressables = tmp(6887);
 const View = react_native.View;
 const THREAD_CHANNEL_TYPES = ChannelRecord.THREAD_CHANNEL_TYPES;
 ({ ChannelTypes: closure_12, Fonts } = Constants);
@@ -133,7 +133,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelTitle
   if (cResult[7] !== stateFromStores) {
     let channelIcon = null;
     if (null != stateFromStores) {
-      const tmpResult5 = channelId(8451);
+      const tmpResult5 = channelId(8478);
       channelIcon = tmpResult5.getChannelIcon(stateFromStores);
     }
     class C {
@@ -148,7 +148,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelTitle
   }
   if (cResult[9] !== stateFromStores) {
     if (null != stateFromStores) {
-      channelId(5565);
+      channelId(5586);
       class C {
         constructor() {
           return connected.isConnected();

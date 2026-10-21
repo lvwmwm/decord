@@ -1,10 +1,10 @@
-// Module ID: 15909
-// Function ID: 15910
+// Module ID: 15985
+// Function ID: 15986
 // Name: TinyBroncoSettingsNoticesLazy
-// Dependencies: [2, 15910]
+// Dependencies: [2, 15986]
 
-// Module 15909 (TinyBroncoSettingsNoticesLazy)
-import TinyBroncoSettingsNotices from "TinyBroncoSettingsNotices" /* 15910 */;
+// Module 15985 (TinyBroncoSettingsNoticesLazy)
+import TinyBroncoSettingsNotices from "TinyBroncoSettingsNotices" /* 15986 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/tiny_bronco/native/TinyBroncoSettingsNoticesLazy.tsx");

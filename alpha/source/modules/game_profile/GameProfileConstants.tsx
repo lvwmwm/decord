@@ -1,9 +1,9 @@
-// Module ID: 9233
-// Function ID: 9234
+// Module ID: 9260
+// Function ID: 9261
 // Name: GameProfileConstants
 // Dependencies: [2]
 
-// Module 9233 (GameProfileConstants)
+// Module 9260 (GameProfileConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_profile/GameProfileConstants.tsx");

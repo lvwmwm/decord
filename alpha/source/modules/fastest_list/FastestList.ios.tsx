@@ -1,14 +1,14 @@
-// Module ID: 7117
-// Function ID: 7118
+// Module ID: 7145
+// Function ID: 7146
 // Name: FastestList
-// Dependencies: [109, 19, 17, 21, 558, 576, 7112, 7106, 7118, 7110, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 7140, 7134, 7146, 7138, 2]
 
-// Module 7117 (FastestList)
+// Module 7145 (FastestList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import FastestListItemTypeDefault from "FastestListItemType" /* 7110 */;
-import useFastestListPropsScrollReportingDefault from "useFastestListPropsScrollReporting" /* 7112 */;
-import FastList from "FastList" /* 7118 */;
+import FastestListItemTypeDefault from "FastestListItemType" /* 7138 */;
+import useFastestListPropsScrollReportingDefault from "useFastestListPropsScrollReporting" /* 7140 */;
+import FastList from "FastList" /* 7146 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -18,7 +18,7 @@ const require = globalThis.__r;
 let _require, dependencyMap, importDefault, num2, tmp6, tmpResult;
 
 let tmp43;
-const useFastestListPropsEstimatedListSizeDefault = tmp43(7106);
+const useFastestListPropsEstimatedListSizeDefault = tmp43(7134);
 function noop() {
 
 }

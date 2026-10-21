@@ -1,20 +1,20 @@
-// Module ID: 10443
-// Function ID: 10444
+// Module ID: 10472
+// Function ID: 10473
 // Name: GiftingBadgeProgressBanner
-// Dependencies: [19, 17, 21, 587, 4945, 558, 576, 7202, 1275, 9291, 10434, 1128, 2622, 5195, 2]
+// Dependencies: [19, 17, 21, 587, 4966, 558, 576, 7230, 1275, 9319, 10463, 1128, 2632, 5216, 2]
 
-// Module 10443 (GiftingBadgeProgressBanner)
+// Module 10472 (GiftingBadgeProgressBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
-import _modDef2622 from "module_2622" /* 2622 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7202 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9291 */;
+import _modDef2632 from "module_2632" /* 2632 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7230 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 9319 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -81,7 +81,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingBad
         let tmp15 = null != nextTierIcon;
         if (tmp15) {
           const obj3 = { icon: nextTierIcon, size: PX_40 };
-          tmp15 = React3(tmp7(10434), obj3);
+          tmp15 = React3(tmp7(10463), obj3);
         }
         cResult[7] = nextTierIcon;
         cResult[8] = tmp15;
@@ -129,7 +129,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingBad
         }
         const intl = tmp(1128).intl;
         const obj6 = { giftsRemaining: giftsToNextTier, nextTier: nextTierName };
-        const formatToPlainStringResult = intl.formatToPlainString(_modDef2622["0+xfd9"], obj6);
+        const formatToPlainStringResult = intl.formatToPlainString(_modDef2632["0+xfd9"], obj6);
         cResult[12] = giftsToNextTier;
         cResult[13] = nextTierName;
         cResult[14] = formatToPlainStringResult;
@@ -177,11 +177,11 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingBad
   const tmp8 = hasOwnProperty;
   if (tmp10Result) {
     const obj4 = { icon: nextTierIcon, size: PX_40 };
-    tmp10Result = tmp10(tmp2(10434), obj4);
+    tmp10Result = tmp10(tmp2(10463), obj4);
   }
   items2 = [React3(View, obj3), ];
-  const obj5 = { variant: "text-md/semibold", children: intl.formatToPlainString(_modDef2622["0+xfd9"], { giftsRemaining: giftsToNextTier, nextTier: nextTierName }) };
-  const Text = tmp6(5195).Text;
+  const obj5 = { variant: "text-md/semibold", children: intl.formatToPlainString(_modDef2632["0+xfd9"], { giftsRemaining: giftsToNextTier, nextTier: nextTierName }) };
+  const Text = tmp6(5216).Text;
   intl = tmp6(1128).intl;
   items2[1] = React3(Text, obj5);
   return tmp8(View, obj2);

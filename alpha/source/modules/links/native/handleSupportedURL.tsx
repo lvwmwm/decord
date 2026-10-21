@@ -1,51 +1,51 @@
-// Module ID: 14909
-// Function ID: 14910
+// Module ID: 14983
+// Function ID: 14984
 // Name: handleSupportedURL
-// Dependencies: [32, 109, 5, 6810, 6735, 7482, 14523, 502, 1087, 4807, 6594, 7816, 11048, 7595, 5660, 14910, 8280, 13398, 6623, 5112, 14911, 8605, 7439, 10924, 9272, 12561, 1896, 10839, 1267, 10841, 7297, 9997, 12701, 14918, 13431, 11052, 2002, 11049, 11047, 14920, 14922, 1630, 7833, 14932, 5622, 14934, 4822, 7398, 8820, 8815, 7378, 7814, 11531, 5111, 6673, 1114, 584, 7223, 1386, 8938, 14937, 14952, 1384, 14963, 8983, 12693, 14971, 6420, 14972, 7598, 7227, 9133, 15051, 7739, 6666, 9495, 13961, 6667, 10375, 15052, 6648, 11070, 15053, 9178, 9184, 7294, 13345, 5655, 2]
+// Dependencies: [32, 109, 5, 6838, 6763, 7510, 14597, 502, 1087, 4828, 6622, 7844, 10703, 7623, 5680, 14984, 8308, 13465, 6651, 5133, 14985, 8632, 7467, 11068, 9300, 12625, 1896, 10983, 1267, 10985, 7325, 10027, 12765, 14992, 13498, 10707, 2002, 10704, 10702, 14994, 14996, 1630, 7861, 15006, 5642, 15008, 4843, 7426, 8847, 8842, 7406, 7842, 11581, 5132, 6701, 1114, 584, 7251, 1386, 8965, 15011, 15026, 1384, 15037, 9010, 12757, 15045, 6442, 15046, 7626, 7255, 9160, 15126, 7767, 6694, 9525, 14036, 6695, 10404, 15127, 6676, 10725, 15128, 9205, 9211, 7322, 13412, 5675, 2]
 // Exports: default
 
-// Module 14909 (handleSupportedURL)
+// Module 14983 (handleSupportedURL)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1896 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ChannelConstants from "ChannelConstants" /* 4807 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5111 */;
-import PaymentConstants from "PaymentConstants" /* 5660 */;
-import Constants2 from "Constants" /* 6594 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6623 */;
-import BoostingActionCreators from "BoostingActionCreators" /* 6648 */;
-import QuestContent from "QuestContent" /* 6666 */;
-import AdPlacement from "AdPlacement" /* 6667 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6810 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7227 */;
-import openUserSettings from "openUserSettings" /* 7439 */;
-import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 7482 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7595 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7598 */;
-import AnalyticsActions from "AnalyticsActions" /* 7739 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7816 */;
-import SettingsConstants from "SettingsConstants" /* 8280 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8938 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8983 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9133 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9178 */;
-import GameProfileActionCreators from "GameProfileActionCreators" /* 9184 */;
-import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 9272 */;
-import QuestUtils from "QuestUtils" /* 9495 */;
-import ApplicationUtils from "ApplicationUtils" /* 11047 */;
-import Constants3 from "Constants" /* 11048 */;
-import closeVoicePanelsDefault from "closeVoicePanels" /* 11070 */;
-import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 12561 */;
-import BountyActionCreators from "BountyActionCreators" /* 13961 */;
-import ShareScreenConstants from "ShareScreenConstants" /* 14910 */;
-import MidjourneyOnboardingUtils from "MidjourneyOnboardingUtils" /* 14918 */;
-import GuildSettingsPickerActionCreators from "GuildSettingsPickerActionCreators" /* 14952 */;
-import AgeKeyReturnHandler from "AgeKeyReturnHandler" /* 15051 */;
+import ChannelConstants from "ChannelConstants" /* 4828 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5132 */;
+import PaymentConstants from "PaymentConstants" /* 5680 */;
+import Constants2 from "Constants" /* 6622 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6651 */;
+import BoostingActionCreators from "BoostingActionCreators" /* 6676 */;
+import QuestContent from "QuestContent" /* 6694 */;
+import AdPlacement from "AdPlacement" /* 6695 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6838 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7255 */;
+import openUserSettings from "openUserSettings" /* 7467 */;
+import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 7510 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7623 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7626 */;
+import AnalyticsActions from "AnalyticsActions" /* 7767 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7844 */;
+import SettingsConstants from "SettingsConstants" /* 8308 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8965 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9010 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9160 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9205 */;
+import GameProfileActionCreators from "GameProfileActionCreators" /* 9211 */;
+import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 9300 */;
+import QuestUtils from "QuestUtils" /* 9525 */;
+import ApplicationUtils from "ApplicationUtils" /* 10702 */;
+import Constants3 from "Constants" /* 10703 */;
+import closeVoicePanelsDefault from "closeVoicePanels" /* 10725 */;
+import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 12625 */;
+import BountyActionCreators from "BountyActionCreators" /* 14036 */;
+import ShareScreenConstants from "ShareScreenConstants" /* 14984 */;
+import MidjourneyOnboardingUtils from "MidjourneyOnboardingUtils" /* 14992 */;
+import GuildSettingsPickerActionCreators from "GuildSettingsPickerActionCreators" /* 15026 */;
+import AgeKeyReturnHandler from "AgeKeyReturnHandler" /* 15126 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6735 */;
-import PremiumNitroNavigationStore from "PremiumNitroNavigationStore" /* 14523 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6763 */;
+import PremiumNitroNavigationStore from "PremiumNitroNavigationStore" /* 14597 */;
 import AuthenticationStore_mod from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
@@ -60,9 +60,9 @@ let closure_18;
 let map1;
 let tmp;
 let tmp3;
-const authorizeCallbackDefault = tmp(11049);
-const FamilyCenterNativeUtils = tmp3(12701);
-const CreateGuildModalActionCreatorsDefault = tmp(13431);
+const authorizeCallbackDefault = tmp(10704);
+const FamilyCenterNativeUtils = tmp3(12765);
+const CreateGuildModalActionCreatorsDefault = tmp(13498);
 let closure_4 = ["code", "state"];
 PostConnectionCallbackStore.addPostConnectionCallback;
 let closure_10 = PremiumPlanPurchasedStore.handleMobileWebCheckoutStatus;
@@ -102,9 +102,10 @@ export default function handleSupportedURL(payload) {
   let safe;
   let skipMessageFetch;
   let summaryId;
+  let userProfileNavigationReplace;
   let waitForConnection;
   payload = payload.payload;
-  ({ safe, navigationReplace, waitForConnection, skipMessageFetch, isAppStartupNavigation } = payload);
+  ({ safe, navigationReplace, waitForConnection, skipMessageFetch, isAppStartupNavigation, userProfileNavigationReplace } = payload);
   let rootNavigationRef1;
   let rootNavigationRef2;
   let inviteCode;
@@ -172,7 +173,7 @@ export default function handleSupportedURL(payload) {
     }
     flag = true;
     if (null != payload.userId) {
-      const obj15 = { userId: payload.userId };
+      const obj15 = { userId: payload.userId, navigationReplace: userProfileNavigationReplace };
       const tmp157Result = tmp157(tmp155[21]);
       const result2 = tmp157Result.showUserProfileActionSheetPostConnection(obj15);
       flag = true;
@@ -335,7 +336,7 @@ export default function handleSupportedURL(payload) {
               });
             } else {
               const obj3 = { callback: authorizeCallbackDefault };
-              const openOAuth2Modal = tmp4(11047).openOAuth2Modal;
+              const openOAuth2Modal = tmp4(10702).openOAuth2Modal;
               ApplicationUtils;
               let merged = Object.assign(payload.props);
               openOAuth2Modal(obj3);
@@ -354,7 +355,7 @@ export default function handleSupportedURL(payload) {
           remoteAuthFingerprint(null != remoteAuthFingerprint ? (() => {
             const obj = ModalActionCreatorsDefault;
             const obj2 = { remoteAuthFingerprint };
-            obj.pushLazy(asyncRequire(14922, dependencyMap.paths), obj2, "REMOTE_AUTH_MODAL");
+            obj.pushLazy(asyncRequire(14996, dependencyMap.paths), obj2, "REMOTE_AUTH_MODAL");
           }) : (() => {
             let paths;
             let tmp = inviteCode;
@@ -385,7 +386,7 @@ export default function handleSupportedURL(payload) {
         } else if (tmp.USER_PROFILE === type) {
           flag = true;
           if (null != payload.userId) {
-            const obj28 = { userId: payload.userId };
+            const obj28 = { userId: payload.userId, navigationReplace: userProfileNavigationReplace };
             const obj19 = payload(inviteCode[21]);
             const result3 = obj19.showUserProfileActionSheetPostConnection(obj28);
             flag = true;
@@ -907,15 +908,15 @@ export default function handleSupportedURL(payload) {
                 flag = true;
               } else if (tmp.QUESTS === type) {
                 const tmp34 = remoteAuthFingerprint(() => {
-                  let obj2;
-                  let tmp11;
-                  let tmp12;
+                  let obj3;
+                  let tmp4;
+                  let tmp5;
                   if (null != payload.questId) {
-                    const obj = { questId: payload.questId, event: map1.QUEST_SHARE_LINK_DEEP_LINKED_INTO_MOBILE_CLIENT, sourceQuestContent: QuestContent.QuestContent.QUEST_EMBED_MOBILE, properties: obj2 };
+                    const obj2 = { questId: payload.questId, event: map1.QUEST_SHARE_LINK_DEEP_LINKED_INTO_MOBILE_CLIENT, sourceQuestContent: QuestContent.QuestContent.QUEST_EMBED_MOBILE, properties: obj3 };
                     const trackQuestEvent = AnalyticsActions.trackQuestEvent;
                     AnalyticsActions;
-                    obj2 = { referrer_id: payload.referrerId };
-                    trackQuestEvent(obj);
+                    obj3 = { referrer_id: payload.referrerId };
+                    trackQuestEvent(obj2);
                   }
                   let sort;
                   if (payload != null) {
@@ -925,24 +926,24 @@ export default function handleSupportedURL(payload) {
                   if (payload != null) {
                     filter = arr.filter;
                   }
-                  const obj3 = { scrollToQuestId: payload.questId, sort: tmp11, filter: tmp12, fromContent: QuestContent.QuestContent.QUEST_SHARE_LINK };
-                  tmp11 = null;
+                  const obj = { scrollToQuestId: payload.questId, sort: tmp4, filter: tmp5, fromContent: QuestContent.QuestContent.QUEST_SHARE_LINK };
+                  tmp4 = null;
                   const openQuestHome = QuestUtils.openQuestHome;
                   QuestUtils;
                   if (null != sort) {
-                    tmp11 = null;
+                    tmp4 = null;
                     if ("" !== sort) {
-                      tmp11 = sort;
+                      tmp4 = sort;
                     }
                   }
-                  tmp12 = null;
+                  tmp5 = null;
                   if (null != filter) {
-                    tmp12 = null;
+                    tmp5 = null;
                     if ("" !== filter) {
-                      tmp12 = filter;
+                      tmp5 = filter;
                     }
                   }
-                  openQuestHome(obj3);
+                  openQuestHome(obj);
                 });
                 flag = true;
               } else if (tmp.QUEST_HOME_PREVIEW === type) {
@@ -1036,7 +1037,6 @@ export default function handleSupportedURL(payload) {
                 });
                 flag = true;
               } else if (tmp.SUBSCRIPTION_SETTINGS === type) {
-                let tmp12 = remoteAuthFingerprint;
                 const tmp13 = remoteAuthFingerprint(() => {
                   const obj = rootNavigationRef1(inviteCode[18]);
                   obj.popAll();
@@ -1047,7 +1047,7 @@ export default function handleSupportedURL(payload) {
               } else if (tmp.GAME_PROFILE === type) {
                 gameId = payload.gameId;
                 const tmp10 = remoteAuthFingerprint;
-                let tmp11 = remoteAuthFingerprint(() => {
+                const tmp11 = remoteAuthFingerprint(() => {
                   const obj = ModalActionCreatorsDefault;
                   obj.popAll();
                   const GameProfileSources = GameProfileAnalyticUtils.GameProfileSources;
@@ -1061,7 +1061,7 @@ export default function handleSupportedURL(payload) {
                 let tmp3 = inviteCode;
                 let obj = rootNavigationRef1(inviteCode[18]);
                 obj.popAll();
-                const tmp5 = payload;
+                let tmp5 = payload;
                 let obj2 = payload(inviteCode[19]);
                 rootNavigationRef3 = obj2.getRootNavigationRef();
                 let tmp6 = null;

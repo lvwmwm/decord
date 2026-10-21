@@ -1,31 +1,31 @@
-// Module ID: 12834
-// Function ID: 12835
+// Module ID: 12902
+// Function ID: 12903
 // Name: CheckpointSummaryStatsScreen
-// Dependencies: [32, 19, 17, 4946, 12779, 5973, 21, 587, 4945, 1385, 558, 576, 504, 8573, 12799, 1417, 8022, 12835, 1128, 3078, 3046, 6834, 4894, 7178, 5631, 12797, 12832, 2]
+// Dependencies: [32, 19, 17, 4967, 12843, 5995, 21, 587, 4966, 1385, 558, 576, 504, 8600, 12863, 1417, 8050, 12903, 1128, 3088, 3056, 6862, 4915, 7206, 5651, 12861, 12868, 2]
 
-// Module 12834 (CheckpointSummaryStatsScreen)
+// Module 12902 (CheckpointSummaryStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import _modDef3046 from "module_3046" /* 3046 */;
-import _modDef3078 from "module_3078" /* 3078 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4894 */;
-import CheckpointConstants from "CheckpointConstants" /* 5973 */;
-import GuildIcon from "GuildIcon" /* 6834 */;
-import EmojiDefault from "Emoji" /* 7178 */;
-import CheckpointCardColors from "CheckpointCardColors" /* 8573 */;
-import CheckpointTextDefault from "CheckpointText" /* 12797 */;
-import CheckpointScreen from "CheckpointScreen" /* 12799 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 12832 */;
-import CheckpointRecapCardDefault from "CheckpointRecapCard" /* 12835 */;
+import _modDef3056 from "module_3056" /* 3056 */;
+import _modDef3088 from "module_3088" /* 3088 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4915 */;
+import CheckpointConstants from "CheckpointConstants" /* 5995 */;
+import GuildIcon from "GuildIcon" /* 6862 */;
+import EmojiDefault from "Emoji" /* 7206 */;
+import CheckpointCardColors from "CheckpointCardColors" /* 8600 */;
+import CheckpointTextDefault from "CheckpointText" /* 12861 */;
+import CheckpointScreen from "CheckpointScreen" /* 12863 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 12868 */;
+import CheckpointRecapCardDefault from "CheckpointRecapCard" /* 12903 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4946 */;
-import CheckpointStore from "CheckpointStore" /* 12779 */;
+import AccessibilityStore from "AccessibilityStore" /* 4967 */;
+import CheckpointStore from "CheckpointStore" /* 12843 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import PlatformUtils_mod from "utils/PlatformUtils" /* 1385 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -355,7 +355,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSu
     const obj6 = AvatarUtilsDefault;
     applicationIconURL = obj6.getApplicationIconURL(obj3);
   }
-  let tmp27Result4 = closure_8(tmp2(8022).UnknownGameIcon, { size: "md", color: primaryBackgroundColor });
+  let tmp27Result4 = closure_8(tmp2(8050).UnknownGameIcon, { size: "md", color: primaryBackgroundColor });
   const obj4 = { style: tmp.container, children: items2 };
   items2 = [, ];
   const tmp30 = CheckpointScreenDefault;
@@ -368,7 +368,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSu
     children: items4
   };
   const obj8 = { style: tmp.row, children: items3 };
-  const obj9 = { label: intl.string(_modDef3078.MSrV9z), value: round(num), color: primaryBackgroundColor };
+  const obj9 = { label: intl.string(_modDef3088.MSrV9z), value: round(num), color: primaryBackgroundColor };
   intl = tmp2(1128).intl;
   num = undefined;
   const _Math = Math;
@@ -380,7 +380,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSu
     num = 0;
   }
   items3 = [closure_8(closure_13, obj9), ];
-  const obj10 = { label: intl2.string(_modDef3046.wWKySP), value: round2(num2), color: primaryBackgroundColor };
+  const obj10 = { label: intl2.string(_modDef3056.wWKySP), value: round2(num2), color: primaryBackgroundColor };
   intl2 = tmp2(1128).intl;
   num2 = undefined;
   const _Math2 = Math;
@@ -394,7 +394,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSu
   items3[1] = closure_8(closure_13, obj10);
   items4 = [closure_9(View, obj8), , , ];
   const obj11 = { style: tmp.row, children: items5 };
-  const obj12 = { label: intl3.string(_modDef3078["f5S+pt"]), value: round3(num3), color: primaryBackgroundColor };
+  const obj12 = { label: intl3.string(_modDef3088["f5S+pt"]), value: round3(num3), color: primaryBackgroundColor };
   intl3 = tmp2(1128).intl;
   num3 = undefined;
   const _Math3 = Math;
@@ -406,13 +406,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSu
     num3 = 0;
   }
   items5 = [closure_8(closure_13, obj12), ];
-  const obj13 = { label: intl4.string(_modDef3046["8XPMJj"]), name, color: primaryBackgroundColor, icon: tmp27Result };
+  const obj13 = { label: intl4.string(_modDef3056["8XPMJj"]), name, color: primaryBackgroundColor, icon: tmp27Result };
   intl4 = tmp2(1128).intl;
   if (null != first) {
     name = first.guild.name;
   } else {
     const intl5 = tmp2(1128).intl;
-    name = intl5.string(tmp29(3078).GultYJ);
+    name = intl5.string(tmp29(3088).GultYJ);
   }
   tmp27Result = tmp27Result4;
   if (null != first) {
@@ -423,7 +423,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSu
   items5[1] = closure_8(closure_14, obj13);
   items4[1] = closure_9(View, obj11);
   const obj15 = { style: tmp.row, children: items6 };
-  const obj16 = { label: intl6.string(_modDef3078.xVSlv3), value: round4(num4), color: primaryBackgroundColor };
+  const obj16 = { label: intl6.string(_modDef3088.xVSlv3), value: round4(num4), color: primaryBackgroundColor };
   intl6 = tmp2(1128).intl;
   num4 = undefined;
   const _Math4 = Math;
@@ -435,7 +435,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSu
     num4 = 0;
   }
   items6 = [closure_8(closure_13, obj16), ];
-  const obj17 = { label: intl7.string(_modDef3046["3sARW7"]), name: stringResult, color: primaryBackgroundColor, icon: tmp27Result3 };
+  const obj17 = { label: intl7.string(_modDef3056["3sARW7"]), name: stringResult, color: primaryBackgroundColor, icon: tmp27Result3 };
   intl7 = tmp2(1128).intl;
   if (null == first1) {
     const intl8 = tmp2(1128).intl;
@@ -461,7 +461,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSu
   items6[1] = closure_8(closure_14, obj17);
   items4[2] = closure_9(View, obj15);
   const obj19 = { style: tmp.row, children: items7 };
-  const obj20 = { label: intl9.string(_modDef3078.y2Y1DD), value: round5(num5), color: primaryBackgroundColor };
+  const obj20 = { label: intl9.string(_modDef3088.y2Y1DD), value: round5(num5), color: primaryBackgroundColor };
   intl9 = tmp2(1128).intl;
   num5 = undefined;
   const _Math5 = Math;
@@ -473,7 +473,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSu
     num5 = 0;
   }
   items7 = [closure_8(closure_13, obj20), ];
-  const obj22 = { label: intl10.string(_modDef3046.RbT4Zq), name: name2, color: primaryBackgroundColor, icon: tmp27Result4 };
+  const obj22 = { label: intl10.string(_modDef3056.RbT4Zq), name: name2, color: primaryBackgroundColor, icon: tmp27Result4 };
   intl10 = tmp2(1128).intl;
   if (null != game) {
     name2 = game.name;
@@ -484,7 +484,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSu
   if (null != applicationIconURL) {
     const obj23 = { source: obj24, style: tmp.itemIcon };
     obj24 = { uri: applicationIconURL };
-    tmp27Result4 = tmp27(tmp29(5631), obj23);
+    tmp27Result4 = tmp27(tmp29(5651), obj23);
   }
   const obj25 = { children: closure_9(View, obj4) };
   items7[1] = closure_8(closure_14, obj22);

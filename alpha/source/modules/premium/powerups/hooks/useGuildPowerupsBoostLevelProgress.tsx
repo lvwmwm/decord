@@ -1,12 +1,12 @@
-// Module ID: 8323
-// Function ID: 8324
+// Module ID: 8351
+// Function ID: 8352
 // Name: useGuildPowerupsBoostLevelProgress
-// Dependencies: [4822, 1087, 8319, 558, 576, 504, 2]
+// Dependencies: [4843, 1087, 8347, 558, 576, 504, 2]
 // Exports: getGuildPowerupBoostLevelProgress
 
-// Module 8323 (useGuildPowerupsBoostLevelProgress)
-import useGuildPowerupsBoostCount from "useGuildPowerupsBoostCount" /* 8319 */;
-import GuildStore from "GuildStore" /* 4822 */;
+// Module 8351 (useGuildPowerupsBoostLevelProgress)
+import useGuildPowerupsBoostCount from "useGuildPowerupsBoostCount" /* 8347 */;
+import GuildStore from "GuildStore" /* 4843 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

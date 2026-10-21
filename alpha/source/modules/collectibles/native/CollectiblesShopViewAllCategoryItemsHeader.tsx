@@ -1,21 +1,21 @@
-// Module ID: 17000
-// Function ID: 17001
+// Module ID: 17076
+// Function ID: 17077
 // Name: CollectiblesShopViewAllCategoryItemsHeader
-// Dependencies: [19, 17, 21, 4945, 558, 576, 1505, 14587, 1128, 9627, 9630, 5631, 2]
+// Dependencies: [19, 17, 21, 4966, 558, 576, 1505, 14661, 1128, 9657, 9660, 5651, 2]
 // Exports: default
 
-// Module 17000 (CollectiblesShopViewAllCategoryItemsHeader)
+// Module 17076 (CollectiblesShopViewAllCategoryItemsHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import useNavigation from "useNavigation" /* 1505 */;
-import FastImageDefault from "FastImage" /* 5631 */;
-import HeaderShared from "HeaderShared" /* 9627 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9630 */;
-import useYouBarSettingsSafeArea from "useYouBarSettingsSafeArea" /* 14587 */;
+import FastImageDefault from "FastImage" /* 5651 */;
+import HeaderShared from "HeaderShared" /* 9657 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9660 */;
+import useYouBarSettingsSafeArea from "useYouBarSettingsSafeArea" /* 14661 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -148,7 +148,7 @@ export default function CollectiblesShopViewAllCategoryItemsHeader(arg0) {
         const tmp36 = React3(View, obj5);
       }
       const obj6 = { source: AssetRegistryDefault, color: buttonColor2, accessibilityLabel: tmp26, onPress: tmp28 };
-      const HeaderIconButton2 = tmp15(9627).HeaderIconButton;
+      const HeaderIconButton2 = tmp15(9657).HeaderIconButton;
       cResult[6] = buttonColor2;
       cResult[7] = tmp28;
       cResult[8] = React3(HeaderIconButton2, obj6);

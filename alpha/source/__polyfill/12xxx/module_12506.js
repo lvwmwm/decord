@@ -1,63 +1,93 @@
 // Module ID: 12506
 // Function ID: 12507
-// Dependencies: []
-// Exports: getClientIPAddress
+// Dependencies: [12497, 12498, 12480, 12500, 12485]
+// Exports: getClient, getCurrentScope, getGlobalScope, getIsolationScope, getTraceContextFromScope, withIsolationScope, withScope
 
 // Module 12506
-const items = ["X-Client-IP", "X-Forwarded-For", "Fly-Client-IP", "CF-Connecting-IP", "Fastly-Client-Ip", "True-Client-Ip", "X-Real-IP", "X-Cluster-Client-IP", "X-Forwarded", "Forwarded-For", "Forwarded", "X-Vercel-Forwarded-For"];
+import _mod12480 from "module_12480" /* 12480 */;
+import _mod12485 from "module_12485" /* 12485 */;
+import _mod12497 from "module_12497" /* 12497 */;
+import _mod12498 from "module_12498" /* 12498 */;
+import _mod12500 from "module_12500" /* 12500 */;
 
-export const getClientIPAddress = function getClientIPAddress(arg0) {
-  let closure_0 = arg0;
-  let mapped = items.map((item) => {
-    let mapped;
-    function parseForwardedHeader(str) {
-      if (str) {
-        const parts = str.split(";");
-        const iter = parts[Symbol.iterator]();
-        const nextResult = iter.next();
-        while (iter !== undefined) {
-          let arr = nextResult;
-          if (nextResult.startsWith("for=")) {
-            let substr = arr.slice(4);
-            iter.return();
-            return substr;
-          }
-        }
-        return null;
-      } else {
-        return null;
-      }
-    }
-    let str = obj;
-    if (Array.isArray(closure_0[item])) {
-      str = obj.join(";");
-    }
-    if ("Forwarded" === item) {
-      mapped = parseForwardedHeader(str);
-    } else {
-      mapped = str;
-      if (mapped) {
-        let parts = str.split(",");
-        mapped = parts.map((item) => item.trim());
-      }
-    }
-    return mapped;
-  });
-  const reduced = mapped.reduce((arr, item) => {
-    let combined = arr;
-    if (item) {
-      combined = arr.concat(item);
-    }
-    return combined;
-  }, []);
-  const tmp = reduced.find((item) => {
-    let isMatch = null !== item;
-    if (isMatch) {
-      const obj = /(?:^(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}$)|(?:^(?:(?:[a-fA-F\d]{1,4}:){7}(?:[a-fA-F\d]{1,4}|:)|(?:[a-fA-F\d]{1,4}:){6}(?:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|:[a-fA-F\d]{1,4}|:)|(?:[a-fA-F\d]{1,4}:){5}(?::(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,2}|:)|(?:[a-fA-F\d]{1,4}:){4}(?:(?::[a-fA-F\d]{1,4}){0,1}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,3}|:)|(?:[a-fA-F\d]{1,4}:){3}(?:(?::[a-fA-F\d]{1,4}){0,2}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,4}|:)|(?:[a-fA-F\d]{1,4}:){2}(?:(?::[a-fA-F\d]{1,4}){0,3}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,5}|:)|(?:[a-fA-F\d]{1,4}:){1}(?:(?::[a-fA-F\d]{1,4}){0,4}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,6}|:)|(?::(?:(?::[a-fA-F\d]{1,4}){0,5}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,7}|:)))(?:%[0-9a-zA-Z]{1,})?$)/;
-      isMatch = obj.test(item);
-    }
-    return isMatch;
-  }) || null;
-  return tmp;
+
+export const getClient = function getClient() {
+  const obj = _mod12497;
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = _mod12498;
+  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+  const currentScope = asyncContextStrategy.getCurrentScope();
+  return currentScope.getClient();
 };
-export const ipHeaderNames = items;
+export const getCurrentScope = function getCurrentScope() {
+  const obj = _mod12497;
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = _mod12498;
+  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+  return asyncContextStrategy.getCurrentScope();
+};
+export const getGlobalScope = function getGlobalScope() {
+  const obj = _mod12480;
+  return obj.getGlobalSingleton("globalScope", () => {
+    const scope = new _mod12500.Scope();
+    return scope;
+  });
+};
+export const getIsolationScope = function getIsolationScope() {
+  const obj = _mod12497;
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = _mod12498;
+  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+  return asyncContextStrategy.getIsolationScope();
+};
+export const getTraceContextFromScope = function getTraceContextFromScope(getPropagationContext) {
+  let parentSpanId;
+  let spanId;
+  let traceId;
+  const propagationContext = getPropagationContext.getPropagationContext();
+  ({ traceId, spanId, parentSpanId } = propagationContext);
+  const obj = _mod12485;
+  return obj.dropUndefinedKeys({ trace_id, span_id, parent_span_id });
+};
+export const withIsolationScope = function withIsolationScope() {
+  let tmp2;
+  let tmp3;
+  const items = [...arguments];
+  const obj = _mod12497;
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = _mod12498;
+  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+  if (2 === items.length) {
+    let result;
+    [tmp2, tmp3] = items;
+    if (tmp2) {
+      result = asyncContextStrategy.withSetIsolationScope(tmp2, tmp3);
+    } else {
+      result = asyncContextStrategy.withIsolationScope(tmp3);
+    }
+    return result;
+  } else {
+    return asyncContextStrategy.withIsolationScope(items[0]);
+  }
+};
+export const withScope = function withScope() {
+  let tmp2;
+  let tmp3;
+  const items = [...arguments];
+  const obj = _mod12497;
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = _mod12498;
+  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+  if (2 === items.length) {
+    let withSetScopeResult;
+    [tmp2, tmp3] = items;
+    if (tmp2) {
+      withSetScopeResult = asyncContextStrategy.withSetScope(tmp2, tmp3);
+    } else {
+      withSetScopeResult = asyncContextStrategy.withScope(tmp3);
+    }
+    return withSetScopeResult;
+  } else {
+    return asyncContextStrategy.withScope(items[0]);
+  }
+};

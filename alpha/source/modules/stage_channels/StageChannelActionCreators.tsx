@@ -1,27 +1,27 @@
-// Module ID: 7821
-// Function ID: 7822
+// Module ID: 7849
+// Function ID: 7850
 // Name: StageChannelActionCreators
-// Dependencies: [5, 4851, 5591, 1087, 7365, 38, 5673, 7822, 1297, 7371, 5954, 6638, 6781, 2000, 4885, 1099, 7360, 7826, 7829, 2]
+// Dependencies: [5, 4872, 5612, 1087, 7393, 38, 5693, 7850, 1297, 7399, 5976, 6666, 6809, 2000, 4906, 1099, 7388, 7854, 7857, 2]
 // Exports: editStage, endStage, inviteUserToStage, moveSelfToAudience, moveUserToAudience, removeUserFromChannel, setEveryoneRolePermissionAllowed, setUserSuppress, startStage, toggleRequestToSpeak
 
-// Module 7821 (StageChannelActionCreators)
+// Module 7849 (StageChannelActionCreators)
 import _modDef38 from "module_38" /* 38 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import Server from "Server" /* 2000 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4885 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5673 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5954 */;
-import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6638 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6781 */;
-import Constants2 from "Constants" /* 7365 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7371 */;
-import StageChannelUtils from "StageChannelUtils" /* 7822 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7826 */;
-import StageInstanceActionCreators from "StageInstanceActionCreators" /* 7829 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4906 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5693 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5976 */;
+import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6666 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6809 */;
+import Constants2 from "Constants" /* 7393 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7399 */;
+import StageChannelUtils from "StageChannelUtils" /* 7850 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7854 */;
+import StageInstanceActionCreators from "StageInstanceActionCreators" /* 7857 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4851 */;
-import VoiceStateStore from "VoiceStateStore" /* 5591 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
+import VoiceStateStore from "VoiceStateStore" /* 5612 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -31,8 +31,8 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 let tmp2;
-const ChannelActionCreatorsDefault = tmp2(7360);
-const f98485 = (error) => {
+const ChannelActionCreatorsDefault = tmp2(7388);
+const f98767 = (error) => {
   if (error.code === constants.STAGE_CHANNEL_USER_NOT_ALLOWED_TO_SPEAK) {
     obj = SafetyToastsActionCreatorsDefault;
     obj.showFailedToast(constants2.GENERIC_ERROR);
@@ -346,7 +346,7 @@ export const setUserSuppress = function setUserSuppress(channel, id, suppress) {
   obj = { suppress, channel_id: channel.id };
   obj3 = HTTPUtils;
   const patchResult = patch(request);
-  return patchResult.catch(f98485);
+  return patchResult.catch(f98767);
 };
 export const moveUserToAudience = function moveUserToAudience(user, voiceChannel) {
   let constants2;
@@ -366,7 +366,7 @@ export const moveUserToAudience = function moveUserToAudience(user, voiceChannel
       obj = { suppress: true, channel_id: voiceChannel.id };
       obj3 = HTTPUtils;
       const patchResult = patch(request);
-      patchResult.catch(f98485);
+      patchResult.catch(f98767);
       const HTTP2 = HTTPUtils.HTTP;
       const request1 = { url: React4.UPDATE_VOICE_STATE(guildId, user.id), body: obj2, rejectWithError: obj6.rejectWithMigratedError() };
       const patch2 = HTTP2.patch;

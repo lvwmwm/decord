@@ -3,5 +3,3 @@
 // Dependencies: []
 
 // Module 15415
-
-export default {};

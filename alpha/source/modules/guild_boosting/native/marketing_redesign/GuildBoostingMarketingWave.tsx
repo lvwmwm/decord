@@ -1,21 +1,21 @@
-// Module ID: 14708
-// Function ID: 14709
+// Module ID: 14782
+// Function ID: 14783
 // Name: GuildBoostingMarketingWave
-// Dependencies: [19, 21, 558, 576, 5213, 587, 7910, 2]
+// Dependencies: [19, 21, 558, 576, 5234, 587, 7938, 2]
 
-// Module 14708 (GuildBoostingMarketingWave)
+// Module 14782 (GuildBoostingMarketingWave)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 5213 */;
+import useToken from "useToken" /* 5234 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 let tmp4;
-const inlineStyles = tmp(7910);
-const inlineStylesDefault = tmp4(7910);
+const inlineStyles = tmp(7938);
+const inlineStylesDefault = tmp4(7938);
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostingMarketingWave(arg0) {
   let tmp6;

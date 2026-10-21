@@ -1,28 +1,28 @@
-// Module ID: 14363
-// Function ID: 14364
+// Module ID: 14438
+// Function ID: 14439
 // Name: QuestEmbed
-// Dependencies: [17, 1207, 7723, 6661, 1087, 7756, 1384, 1128, 7745, 13968, 6664, 4952, 9512, 1630, 14364, 7719, 7739, 7743, 8223, 2]
+// Dependencies: [17, 1207, 7751, 6689, 1087, 7784, 1384, 1128, 7773, 14043, 6692, 4973, 9542, 1630, 14439, 7747, 7767, 7771, 8251, 2]
 // Exports: createQuestsEmbed
 
-// Module 14363 (QuestEmbed)
+// Module 14438 (QuestEmbed)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import intl14 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
-import shared from "shared" /* 4952 */;
-import QuestTypes from "QuestTypes" /* 6664 */;
-import QuestDataUtils from "QuestDataUtils" /* 7719 */;
-import AnalyticsActions from "AnalyticsActions" /* 7739 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7743 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7745 */;
-import Constants2 from "Constants" /* 7756 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8223 */;
-import AssetUtils from "AssetUtils" /* 9512 */;
-import QuestCopyHooks from "QuestCopyHooks" /* 13968 */;
+import shared from "shared" /* 4973 */;
+import QuestTypes from "QuestTypes" /* 6692 */;
+import QuestDataUtils from "QuestDataUtils" /* 7747 */;
+import AnalyticsActions from "AnalyticsActions" /* 7767 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7771 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7773 */;
+import Constants2 from "Constants" /* 7784 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8251 */;
+import AssetUtils from "AssetUtils" /* 9542 */;
+import QuestCopyHooks from "QuestCopyHooks" /* 14043 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
-import QuestStore from "QuestStore" /* 7723 */;
-import QuestConstants from "QuestConstants" /* 6661 */;
+import QuestStore from "QuestStore" /* 7751 */;
+import QuestConstants from "QuestConstants" /* 6689 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -59,7 +59,7 @@ export const createQuestsEmbed = function createQuestsEmbed(questId) {
     const stringResult1 = intl10.string(intl14.t.CXEb9p);
     const colors6 = tmp3.colors;
     const obj2 = { headerColor: colors6.headerColor, titleText: stringResult, thumbnailUrl: uri3, embedCanBeTapped: true, canBeAccepted: true, type: InviteTypes.GUILD };
-    uri3 = Image.resolveAssetSource(tmp(14364)).uri;
+    uri3 = Image.resolveAssetSource(tmp(14439)).uri;
     const merged = Object.assign(tmp3.baseColors);
     ({ titleColor: obj25.titleColor, bodyTextColor: obj25.subtitleColor, bodyTextColor: obj25.bodyTextColor } = colors6);
     const obj3 = {};
@@ -122,7 +122,7 @@ export const createQuestsEmbed = function createQuestsEmbed(questId) {
         const stringResult3 = intl8.string(intl14.t.ii4mJo);
         const colors4 = tmp3.colors;
         const obj9 = { headerColor: colors4.headerColor, titleText: stringResult2, thumbnailUrl: uri2, embedCanBeTapped: true, canBeAccepted: true, type: InviteTypes.GUILD };
-        uri2 = Image.resolveAssetSource(tmp(14364)).uri;
+        uri2 = Image.resolveAssetSource(tmp(14439)).uri;
         const merged5 = Object.assign(tmp3.baseColors);
         ({ titleColor: obj18.titleColor, bodyTextColor: obj18.subtitleColor, bodyTextColor: obj18.bodyTextColor } = colors4);
         const obj10 = {};
@@ -148,7 +148,7 @@ export const createQuestsEmbed = function createQuestsEmbed(questId) {
         const stringResult5 = intl13.string(intl14.t.Ow5AQI);
         const colors7 = tmp3.colors;
         const obj11 = { headerColor: colors7.headerColor, titleText: stringResult4, thumbnailUrl: uri4, embedCanBeTapped: true, canBeAccepted: true, type: InviteTypes.GUILD };
-        uri4 = Image.resolveAssetSource(tmp(14364)).uri;
+        uri4 = Image.resolveAssetSource(tmp(14439)).uri;
         const merged7 = Object.assign(tmp3.baseColors);
         ({ titleColor: obj34.titleColor, bodyTextColor: obj34.subtitleColor, bodyTextColor: obj34.bodyTextColor } = colors7);
         const obj12 = {};
@@ -215,7 +215,7 @@ export const createQuestsEmbed = function createQuestsEmbed(questId) {
         const colors3 = tmp3.colors;
         const obj17 = { headerColor: colors3.headerColor, titleText: formatToPlainStringResult, thumbnailUrl: url, embedCanBeTapped: true, canBeAccepted: true, type: InviteTypes.GUILD };
         const tmp4Result27 = AssetUtils;
-        url = tmp4Result27.getQuestAsset(result, tmp4(9512).QuestAssetType.GAME_TILE, tmp29).url;
+        url = tmp4Result27.getQuestAsset(result, tmp4(9542).QuestAssetType.GAME_TILE, tmp29).url;
         const merged9 = Object.assign(tmp3.baseColors);
         ({ titleColor: obj13.titleColor, bodyTextColor: obj13.subtitleColor, bodyTextColor: obj13.bodyTextColor } = colors3);
         const obj19 = {};
@@ -269,7 +269,7 @@ export const createQuestsEmbed = function createQuestsEmbed(questId) {
         const stringResult8 = intl2.string(intl14.t.NXrP3N);
         const colors = tmp3.colors;
         const obj21 = { headerColor: colors.headerColor, titleText: stringResult7, thumbnailUrl: uri, embedCanBeTapped: true, canBeAccepted: true, type: InviteTypes.GUILD };
-        uri = Image.resolveAssetSource(tmp(14364)).uri;
+        uri = Image.resolveAssetSource(tmp(14439)).uri;
         const merged12 = Object.assign(tmp3.baseColors);
         ({ titleColor: obj4.titleColor, bodyTextColor: obj4.subtitleColor, bodyTextColor: obj4.bodyTextColor } = colors);
         const obj23 = {};

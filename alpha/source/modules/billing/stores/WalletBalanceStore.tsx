@@ -1,9 +1,9 @@
-// Module ID: 7443
-// Function ID: 7444
+// Module ID: 7471
+// Function ID: 7472
 // Name: WalletBalanceStore
 // Dependencies: [504, 584, 2]
 
-// Module 7443 (WalletBalanceStore)
+// Module 7471 (WalletBalanceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

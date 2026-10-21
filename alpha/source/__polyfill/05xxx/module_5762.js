@@ -1,48 +1,18 @@
 // Module ID: 5762
 // Function ID: 5763
-// Dependencies: []
+// Dependencies: [539, 540, 5763]
 
 // Module 5762
-module.exports.timeout = function(arg0, arg1) {
-  const f94462 = (arg0, arg1) => {
-    let closure_1;
-    closure_0 = arg1;
-    const timeout = setTimeout(() => {
-      closure_0(self);
-    }, closure_0);
-  };
-  let closure_0 = arg1;
-  const self = this;
-  if (typeof tmp === "function") {
-    Error.call(self);
-    const _Error = Error;
-    self.stack = Error().stack;
-    self.message = "Timeout";
-    const items = [arg0, ];
-    const self2 = this;
-    const self3 = this;
-    items[1] = new Promise(f94462);
-    const promise = new Promise(f94462);
-    const raceResult = race(items);
-    return raceResult.then((result) => {
-      clearTimeout(closure_1_1);
-      return result;
-    }, (arg0) => {
-      clearTimeout(closure_1_1);
-      throw arg0;
-    });
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-};
-class tmp {
-  constructor() {
-    const self = this;
-    Error.call(self);
-    self.stack = Error().stack;
-    self.message = "Timeout";
-  }
+import _mod539 from "module_539" /* 539 */;
+import baseUnary from "baseUnary" /* 540 */;
+import baseIsSet from "baseIsSet" /* 5763 */;
+
+let _module;
+const tmp = _mod539 && _mod539.isSet;
+if (tmp) {
+  _module = baseUnary(tmp);
+} else {
+  _module = baseIsSet;
 }
-module.exports.TimeoutError = tmp;
-tmp.prototype = Object.create(Error.prototype);
-tmp.prototype.name = "TimeoutError";
+
+export default _module;

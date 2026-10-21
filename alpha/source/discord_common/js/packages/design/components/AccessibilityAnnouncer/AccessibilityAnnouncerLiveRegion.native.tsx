@@ -1,15 +1,15 @@
-// Module ID: 4955
-// Function ID: 4956
+// Module ID: 4976
+// Function ID: 4977
 // Name: AccessibilityAnnouncerLiveRegion
-// Dependencies: [19, 17, 21, 4956, 558, 576, 2]
+// Dependencies: [19, 17, 21, 4977, 558, 576, 2]
 // Exports: updateAccessibilityAnnouncerLiveRegionMessage
 
-// Module 4955 (AccessibilityAnnouncerLiveRegion)
+// Module 4976 (AccessibilityAnnouncerLiveRegion)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import module_4956 from "module_4956" /* 4956 */;
+import module_4977 from "module_4977" /* 4977 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let StyleSheet;
 let c2;
 ({ StyleSheet, Text: c2 } = react_native);
 const jsx = Fragment.jsx;
-const state = module_4956.create(() => ({ message: "duration", version: false }));
+const state = module_4977.create(() => ({ message: "enabled", version: false }));
 const styles = StyleSheet.create({ liveRegion: { position: "absolute", top: 0, left: 0, width: 1, height: 1, opacity: 0 } });
 const memo = react.memo;
 const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function AccessibilityAnnouncerLiveRegion() {

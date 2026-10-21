@@ -1,13 +1,13 @@
-// Module ID: 7842
-// Function ID: 7843
+// Module ID: 7870
+// Function ID: 7871
 // Name: AgeVerificationIncodeModal
-// Dependencies: [19, 21, 4945, 587, 6623, 7434, 1128, 7843, 7854, 558, 576, 7046, 2]
+// Dependencies: [19, 21, 4966, 587, 6651, 7462, 1128, 7871, 7882, 558, 576, 7074, 2]
 
-// Module 7842 (AgeVerificationIncodeModal)
+// Module 7870 (AgeVerificationIncodeModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

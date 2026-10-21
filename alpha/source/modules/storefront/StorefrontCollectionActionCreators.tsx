@@ -1,18 +1,18 @@
-// Module ID: 9409
-// Function ID: 9410
+// Module ID: 9437
+// Function ID: 9438
 // Name: StorefrontCollectionActionCreators
-// Dependencies: [5, 2069, 9407, 7617, 1087, 8647, 584, 6340, 6332, 2]
+// Dependencies: [5, 2068, 9435, 7644, 1087, 8674, 584, 6362, 6354, 2]
 // Exports: maybeFetchCollectionsAfter, maybeFetchCollectionsForApplication, maybeFetchCollectionsForApplicationPage, maybeFetchCollectionsWithProducts
 
-// Module 9409 (StorefrontCollectionActionCreators)
+// Module 9437 (StorefrontCollectionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
-import StoreUtils from "StoreUtils" /* 6340 */;
-import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8647 */;
+import StoreUtils from "StoreUtils" /* 6362 */;
+import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8674 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2069 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9407 */;
-import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7617 */;
+import LocaleStore from "LocaleStore" /* 2068 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9435 */;
+import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7644 */;
 import size from "module_2" /* 2 */;
 
 let collectionsAfterFetchState, requestKey;
@@ -100,7 +100,7 @@ let obj = function _maybeFetchCollectionsWithProducts() {
     flag = tmp54.includeUnpublishedCollections ?? false;
     flag2 = tmp54.ignoreCache ?? false;
     flag3 = tmp54.includePricing ?? false;
-    return "test";
+    return "Reflect";
   });
   return obj(...arguments);
 };
@@ -249,7 +249,7 @@ obj = function _maybeFetchCollectionsForApplicationPage() {
       obj6 = {};
     }
     flag = obj6.retryAfterError ?? false;
-    return "test";
+    return "Reflect";
   });
   return obj(...arguments);
 };
@@ -515,7 +515,7 @@ obj = function _maybeFetchCollectionsForApplication() {
     if (includePricing === undefined) {
       includePricing = false;
     }
-    return "test";
+    return "Reflect";
   });
   return obj(...arguments);
 };

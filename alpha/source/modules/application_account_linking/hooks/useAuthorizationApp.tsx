@@ -1,14 +1,14 @@
-// Module ID: 7205
-// Function ID: 7206
+// Module ID: 7233
+// Function ID: 7234
 // Name: useAuthorizationApp
-// Dependencies: [19, 2046, 2024, 1375, 2000, 558, 576, 7206, 2]
+// Dependencies: [19, 2045, 2024, 1375, 2000, 558, 576, 7234, 2]
 // Exports: getAuthorizationApp
 
-// Module 7205 (useAuthorizationApp)
+// Module 7233 (useAuthorizationApp)
 import react2 from "react" /* 576 */;
 import ApplicationConstants from "ApplicationConstants" /* 1375 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2046 */;
+import ApplicationStore from "ApplicationStore" /* 2045 */;
 import ApplicationRecord from "ApplicationRecord" /* 2024 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 let _require;
 
 let tmp;
-const useGetOrFetchApplications = tmp(7206);
+const useGetOrFetchApplications = tmp(7234);
 const ApplicationTypes = ApplicationConstants.ApplicationTypes;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAuthorizationApp(getOfficialApplicationId) {
   let tmp4;
@@ -142,18 +142,18 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAuthoriza
     return tmp2;
   }, items);
 });
-function getAuthorizationApp(type) {
-  if (null == type) {
+function getAuthorizationApp(application) {
+  if (null == application) {
     return null;
-  } else if (type.type !== ApplicationTypes.GAME) {
-    return type;
+  } else if (application.type !== ApplicationTypes.GAME) {
+    return application;
   } else {
-    const linkedGames = type.linkedGames;
+    const linkedGames = application.linkedGames;
     let found;
     if (linkedGames != null) {
       found = linkedGames.find((type) => type.type === getOfficialApplicationId(getOrFetchApplication[4]).GameLinkTypes.OFFICIAL);
     }
-    let application;
+    application = undefined;
     if (found != null) {
       application = found.application;
     }

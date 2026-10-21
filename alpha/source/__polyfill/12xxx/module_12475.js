@@ -1,84 +1,44 @@
 // Module ID: 12475
 // Function ID: 12476
-// Dependencies: [12424]
-// Exports: getDebugImagesForResources
+// Dependencies: [12476, 12483, 12484, 12507, 12479, 12496]
+// Exports: registerSpanErrorInstrumentation
 
 // Module 12475
-const require = globalThis.__r;
-let _require, obj;
+import _mod12476 from "module_12476" /* 12476 */;
+import _mod12483 from "module_12483" /* 12483 */;
+import _mod12484 from "module_12484" /* 12484 */;
+import _mod12496 from "module_12496" /* 12496 */;
+import _mod12507 from "module_12507" /* 12507 */;
 
-function getFilenameToDebugIdMap(arg0) {
-  let _sentryDebugIds;
-  let closure_0;
-  let length;
-  let reduced;
-  _require = arg0;
-  _sentryDebugIds = require("module_12424").GLOBAL_OBJ._sentryDebugIds;
-  if (_sentryDebugIds) {
-    let tmp = globalThis;
-    const _Object = Object;
-    const keys = Object.keys(_sentryDebugIds);
-    const tmp2 = reduced;
-    if (tmp2) {
-      return reduced;
+function errorCallback() {
+  const obj = _mod12484;
+  const activeSpan = obj.getActiveSpan();
+  let rootSpan = activeSpan;
+  if (rootSpan) {
+    const tmpResult = _mod12484;
+    rootSpan = tmpResult.getRootSpan(activeSpan);
+  }
+  if (rootSpan) {
+    if (_mod12507.DEBUG_BUILD) {
+      const logger = tmp(12479).logger;
+      const _HermesInternal = HermesInternal;
+      logger.log("[Tracing] Root span: " + "internal_error" + " -> Global error occurred");
     }
-    reduced = keys.reduce((acc, item) => {
-      let tmp7;
-      let tmp9;
-      let tmp = obj;
-      if (!tmp) {
-        obj = {};
-        tmp = obj;
-      }
-      if (tmp[item]) {
-        acc[tmp[item][0]] = tmp[item][1];
-      } else {
-        const arr = closure_0(item);
-        let diff = arr.length - 1;
-        if (0 <= diff) {
-          while (true) {
-            let tmp5 = arr[diff];
-            tmp7 = tmp5 && tmp5.filename;
-            tmp9 = _sentryDebugIds[item];
-            if (tmp7) {
-              if (tmp9) {
-                break;
-              }
-            }
-            diff = diff - 1;
-          }
-          acc[tmp7] = tmp9;
-          const items = [tmp7, tmp9];
-          obj[item] = items;
-        }
-      }
-      return acc;
-    }, {});
-  } else {
-    return {};
+    const setStatus = rootSpan.setStatus;
+    const obj2 = { code: _mod12496.SPAN_STATUS_ERROR, message: "internal_error" };
+    setStatus(obj2);
   }
 }
+let c2 = false;
+errorCallback.tag = "sentry_tracingErrorCallback";
 
-export const getDebugImagesForResources = function getDebugImagesForResources(arg0, arg1) {
-  const tmp = getFilenameToDebugIdMap(arg0);
-  const items = [];
-  if (tmp) {
-    const iter = arg1[Symbol.iterator]();
-    let nextResult = iter.next();
-    while (iter !== undefined) {
-      let tmp7 = nextResult;
-      if (tmp7) {
-        nextResult = tmp[tmp7];
-      }
-      if (nextResult) {
-        obj = { type: "sourcemap", code_file: tmp7, debug_id: tmp[tmp7] };
-        let arr = items.push(obj);
-      }
-      continue;
-    }
-    return items;
-  } else {
-    return items;
+export const registerSpanErrorInstrumentation = function registerSpanErrorInstrumentation() {
+  const tmp = c2;
+  if (!tmp) {
+    c2 = true;
+    const obj = _mod12476;
+    const result = obj.addGlobalErrorInstrumentationHandler(errorCallback);
+    const obj2 = _mod12483;
+    const result1 = obj2.addGlobalUnhandledRejectionInstrumentationHandler(errorCallback);
   }
 };
-export { getFilenameToDebugIdMap };

@@ -1,20 +1,20 @@
-// Module ID: 7650
-// Function ID: 7651
+// Module ID: 7678
+// Function ID: 7679
 // Name: ConversationPreviewStore
-// Dependencies: [32, 502, 4800, 4890, 1392, 5568, 1459, 7649, 7648, 5970, 504, 584, 2]
+// Dependencies: [32, 502, 4821, 4911, 1392, 5589, 1459, 7677, 7676, 5992, 504, 584, 2]
 
-// Module 7650 (ConversationPreviewStore)
+// Module 7678 (ConversationPreviewStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import LRUCacheDefault from "LRUCache" /* 1459 */;
-import ConversationConstants from "ConversationConstants" /* 5568 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5970 */;
-import ConversationMessageCacheUtils from "ConversationMessageCacheUtils" /* 7648 */;
-import ConversationsUtils from "ConversationsUtils" /* 7649 */;
+import ConversationConstants from "ConversationConstants" /* 5589 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5992 */;
+import ConversationMessageCacheUtils from "ConversationMessageCacheUtils" /* 7676 */;
+import ConversationsUtils from "ConversationsUtils" /* 7677 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import RelationshipStore from "RelationshipStore" /* 4890 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import RelationshipStore from "RelationshipStore" /* 4911 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ function handleReaction(messageId) {
         if (flag2) {
           const messageByMessageId2 = peekResult.messageByMessageId;
           const result = messageByMessageId2.set(messageId, applyReactionResult);
-          const tmp5Result = tmp5(7648);
+          const tmp5Result = tmp5(7676);
           const result1 = tmp5Result.replaceHydratedMessage(peekResult, messageId, applyReactionResult);
           flag2 = true;
         }
@@ -355,7 +355,7 @@ let obj2 = {
             if (flag2) {
               const messageByMessageId2 = peekResult.messageByMessageId;
               const result = messageByMessageId2.set(id, updateMessageRecordResult);
-              const tmp7Result = tmp7(7648);
+              const tmp7Result = tmp7(7676);
               const result1 = tmp7Result.replaceHydratedMessage(peekResult, id, updateMessageRecordResult);
               flag2 = true;
             }

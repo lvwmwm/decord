@@ -1,12 +1,12 @@
-// Module ID: 18313
-// Function ID: 18314
+// Module ID: 18392
+// Function ID: 18393
 // Name: useCameraEncodeError
-// Dependencies: [502, 11307, 558, 576, 5855, 504, 2]
+// Dependencies: [502, 11351, 558, 576, 5877, 504, 2]
 
-// Module 18313 (useCameraEncodeError)
-import AVError from "AVError" /* 5855 */;
+// Module 18392 (useCameraEncodeError)
+import AVError from "AVError" /* 5877 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AVErrorStore from "AVErrorStore" /* 11307 */;
+import AVErrorStore from "AVErrorStore" /* 11351 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

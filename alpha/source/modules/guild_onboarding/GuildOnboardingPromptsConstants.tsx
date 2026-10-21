@@ -1,14 +1,14 @@
-// Module ID: 7147
-// Function ID: 7148
+// Module ID: 7175
+// Function ID: 7176
 // Name: GuildOnboardingPromptsConstants
-// Dependencies: [32, 109, 1087, 1357, 1128, 2034, 2]
+// Dependencies: [32, 109, 1087, 1357, 1128, 2033, 2]
 // Exports: clientPromptToServerPrompt, getConnectionIdentifier, getDefaultPrompt, getEmptyPrompt, isDefaultPrompt, isEmojiEmpty, parseConnectionIdentifier, serverApiResponseToClientState, validateOnboardingConnections
 
-// Module 7147 (GuildOnboardingPromptsConstants)
+// Module 7175 (GuildOnboardingPromptsConstants)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef1357 from "module_1357" /* 1357 */;
-import StringUtils from "StringUtils" /* 2034 */;
+import StringUtils from "StringUtils" /* 2033 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import size from "module_2" /* 2 */;
@@ -45,7 +45,7 @@ function validateOnboardingConnection(connection_type) {
     if (obj3.isNullOrEmpty(connection_type.application_id)) {
       items.push("Application ID is required for application connections");
     }
-    const tmp9Result = tmp9(2034);
+    const tmp9Result = tmp9(2033);
     if (!tmp9Result.isNullOrEmpty(connection_type.provider_id)) {
       items.push("Platform ID not allowed for application connections");
     }
@@ -57,7 +57,7 @@ function validateOnboardingConnection(connection_type) {
     } else if (!closure_11.includes(connection_type.provider_id)) {
       items.push("Invalid platform ID");
     }
-    const tmp3Result = tmp3(2034);
+    const tmp3Result = tmp3(2033);
     if (!tmp3Result.isNullOrEmpty(connection_type.application_id)) {
       items.push("Application ID not allowed for platform connections");
     }

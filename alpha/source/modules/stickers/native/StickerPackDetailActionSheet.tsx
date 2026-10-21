@@ -1,18 +1,18 @@
-// Module ID: 10091
-// Function ID: 10092
+// Module ID: 10121
+// Function ID: 10122
 // Name: StickerPackDetailActionSheet
-// Dependencies: [32, 19, 10052, 1087, 5227, 21, 4945, 558, 576, 1499, 1633, 12, 1267, 5226, 10092, 10093, 5543, 5230, 10097, 6859, 10098, 2]
+// Dependencies: [32, 19, 10082, 1087, 5248, 21, 4966, 558, 576, 1499, 1633, 12, 1267, 5247, 10122, 10123, 5564, 5251, 10127, 6887, 10128, 2]
 
-// Module 10091 (StickerPackDetailActionSheet)
+// Module 10121 (StickerPackDetailActionSheet)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5227 */;
-import StickerPickerListRowDefault from "StickerPickerListRow" /* 10097 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5248 */;
+import StickerPickerListRowDefault from "StickerPickerListRow" /* 10127 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 10052 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 10082 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

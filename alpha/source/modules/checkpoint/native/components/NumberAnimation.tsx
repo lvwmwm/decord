@@ -1,16 +1,16 @@
-// Module ID: 12803
-// Function ID: 12804
+// Module ID: 12870
+// Function ID: 12871
 // Name: NumberAnimation
-// Dependencies: [32, 19, 17, 4946, 5973, 21, 4945, 558, 576, 504, 12797, 5078, 2]
+// Dependencies: [32, 19, 17, 4967, 5995, 21, 4966, 558, 576, 504, 12861, 5099, 2]
 
-// Module 12803 (NumberAnimation)
+// Module 12870 (NumberAnimation)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import CheckpointConstants from "CheckpointConstants" /* 5973 */;
+import CheckpointConstants from "CheckpointConstants" /* 5995 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4946 */;
-import createStyles from "createStyles" /* 4945 */;
+import AccessibilityStore from "AccessibilityStore" /* 4967 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,15 +42,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NumberAnim
   const tmp4 = closure_10();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
-    class M {
+    class S {
       constructor() {
         return closure_1_7.useReducedMotion;
       }
     }
     cResult[0] = items;
-    cResult[1] = M;
+    cResult[1] = S;
     tmp5 = items;
-    tmp6 = M;
+    tmp6 = S;
   } else {
     [tmp5, tmp6] = cResult;
   }
@@ -58,6 +58,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NumberAnim
   stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   const tmp9 = _slicedToArray(closure_5(num), 2);
   [tmp10, _slicedToArray] = tmp9;
+  if (stateFromStores) {
+    tmp10 = end;
+  }
   if (cResult[2] === end) {
     if (cResult[3] === stateFromStores) {
       let tmp11;
@@ -70,19 +73,21 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NumberAnim
         tmp12 = cResult[6];
       }
       closure_4(tmp11, tmp12);
-      class M {
+      class S {
         constructor() {
           return closure_1_7.useReducedMotion;
         }
       }
-      if (cResult[7] !== tmp10) {
-        const obj2 = { DisplayValue: tmp10, TextColor: null };
-        class M {
+      const animation = tmp4.animation;
+      const StringResult = String(tmp10);
+      if (cResult[7] !== StringResult) {
+        const obj2 = { DisplayValueString: StringResult, TextColor: null };
+        class S {
           constructor() {
             return closure_1_7.useReducedMotion;
           }
         }
-        cResult[7] = tmp10;
+        cResult[7] = StringResult;
         cResult[8] = obj2;
         tmp16 = obj2;
       } else {
@@ -91,7 +96,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NumberAnim
       if (cResult[9] !== end) {
         const toLocaleStringResult = end.toLocaleString();
         cResult[9] = end;
-        class M {
+        class S {
           constructor() {
             return closure_1_7.useReducedMotion;
           }
@@ -102,7 +107,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NumberAnim
         tmp18 = cResult[10];
       }
       if (cResult[11] !== tmp18) {
-        class M {
+        class S {
           constructor() {
             return closure_1_7.useReducedMotion;
           }
@@ -114,9 +119,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NumberAnim
       } else {
         tmp20 = cResult[12];
       }
-      if (cResult[13] === tmp16) {
+      if (cResult[13] === tmp20) {
         let tmp24;
-        if (cResult[14] === tmp20) {
+        if (cResult[14] === tmp16) {
           tmp24 = cResult[15];
         }
         if (cResult[16] === tmp4.animation) {
@@ -126,20 +131,20 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NumberAnim
           }
           return tmp27;
         }
-        class M {
+        class S {
           constructor() {
             return closure_1_7.useReducedMotion;
           }
         }
-        const tmp29 = <View style={tmp15}>{tmp24}</View>;
+        const tmp29 = <View style={animation}>{tmp24}</View>;
         cResult[16] = tmp4.animation;
         cResult[17] = tmp24;
         cResult[18] = tmp29;
         tmp27 = tmp29;
       }
       const tmp26 = jsx(tmp(tmp2[11]).CheckpointNumbersRive, { stateMachine: "State Machine 1", fit: "contain", alignment: "center-left", dataBinding: tmp16, fallback: tmp20 });
-      cResult[13] = tmp16;
-      cResult[14] = tmp20;
+      cResult[13] = tmp20;
+      cResult[14] = tmp16;
       cResult[15] = tmp26;
       tmp24 = tmp26;
     }
@@ -155,8 +160,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NumberAnim
         closure_0 = Date.now();
         _setInterval = setInterval;
         num = 32;
-        closure_1 = setInterval(() => { /* body not rendered: F147563 */ }, 32);
-        return () => { /* body not rendered: F147564 */ };
+        closure_1 = setInterval(() => { /* body not rendered: F148069 */ }, 32);
+        return () => { /* body not rendered: F148070 */ };
       }
     }
   }
@@ -218,7 +223,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NumberAnim
       return () => clearInterval(closure_1);
     }
   }, items1);
-  const obj4 = { DisplayValue: tmp6, TextColor: CHECKPOINT_PRIMARY };
+  const obj4 = { DisplayValueString: String(tmp6), TextColor: CHECKPOINT_PRIMARY };
   const CheckpointNumbersRive = tmp2(tmp3[11]).CheckpointNumbersRive;
   ({ variant: "display-lg", children: end.toLocaleString() });
   end(stateFromStores[10]);

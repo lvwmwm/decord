@@ -1,18 +1,18 @@
-// Module ID: 15693
-// Function ID: 15694
+// Module ID: 15769
+// Function ID: 15770
 // Name: UserProfileUpsellCard
-// Dependencies: [19, 17, 7253, 7493, 21, 4945, 587, 558, 576, 9355, 5195, 5219, 1107, 1202, 2]
+// Dependencies: [19, 17, 7281, 7521, 21, 4966, 587, 558, 576, 9383, 5216, 5240, 1107, 1202, 2]
 
-// Module 15693 (UserProfileUpsellCard)
+// Module 15769 (UserProfileUpsellCard)
 import nativeDefault from "native" /* 587 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
-import LinearGradientDefault from "LinearGradient" /* 5219 */;
-import Constants from "Constants" /* 7253 */;
-import ColorConstants from "ColorConstants" /* 7493 */;
+import LinearGradientDefault from "LinearGradient" /* 5240 */;
+import Constants from "Constants" /* 7281 */;
+import ColorConstants from "ColorConstants" /* 7521 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -131,10 +131,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
           }
           const obj3 = { style: tmp4.titleContainer, children: items1 };
           const obj4 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, size: "xs" };
-          const NitroWheelIcon = tmp(9355).NitroWheelIcon;
+          const NitroWheelIcon = tmp(9383).NitroWheelIcon;
           items1 = [closure_6(NitroWheelIcon, obj4), ];
           const obj5 = { variant: "heading-sm/bold", children: headerText };
-          items1[1] = closure_6(tmp(5195).Text, obj5);
+          items1[1] = closure_6(tmp(5216).Text, obj5);
           tmp9 = closure_7(closure_3, obj3);
         }
         cResult[9] = headerText;
@@ -190,7 +190,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   if (null != headerText) {
     const obj3 = { style: tmp.titleContainer, children: items3 };
     const obj4 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, size: "xs" };
-    const NitroWheelIcon = tmp3(9355).NitroWheelIcon;
+    const NitroWheelIcon = tmp3(9383).NitroWheelIcon;
     items3 = [closure_6(NitroWheelIcon, obj4), ];
     const obj5 = { variant: "heading-sm/bold", children: headerText };
     items3[1] = closure_6(require("Text/Text").Text, obj5);

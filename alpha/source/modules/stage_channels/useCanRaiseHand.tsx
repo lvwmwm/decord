@@ -1,11 +1,11 @@
-// Module ID: 11434
-// Function ID: 11435
+// Module ID: 11484
+// Function ID: 11485
 // Name: useCanRaiseHand
-// Dependencies: [4880, 1098, 558, 576, 504, 2]
+// Dependencies: [4901, 1098, 558, 576, 504, 2]
 
-// Module 11434 (useCanRaiseHand)
+// Module 11484 (useCanRaiseHand)
 import Constants from "Constants" /* 1098 */;
-import PermissionStore from "PermissionStore" /* 4880 */;
+import PermissionStore from "PermissionStore" /* 4901 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

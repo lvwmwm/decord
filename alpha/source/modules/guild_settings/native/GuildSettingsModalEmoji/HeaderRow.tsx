@@ -1,22 +1,22 @@
-// Module ID: 18823
-// Function ID: 18824
+// Module ID: 18900
+// Function ID: 18901
 // Name: HeaderRow
-// Dependencies: [12951, 5, 32, 19, 17, 18817, 1087, 1395, 21, 4945, 587, 8876, 9871, 1267, 1128, 1281, 8102, 5205, 5195, 558, 576, 504, 2]
+// Dependencies: [13019, 5, 32, 19, 17, 18894, 1087, 1395, 21, 4966, 587, 8903, 9901, 1267, 1128, 1281, 8130, 5226, 5216, 558, 576, 504, 2]
 
-// Module 18823 (HeaderRow)
+// Module 18900 (HeaderRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 12951 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 13019 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 18817 */;
+import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 18894 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -233,7 +233,7 @@ function HeaderRow(guild) {
   [c6, c7] = tmp6;
   let tmp7 = guild;
   let tmp8 = dependencyMap;
-  obj = guild(8876);
+  obj = guild(8903);
   let canCreateExpressions = obj.useManageResourcePermissions(guild).canCreateExpressions;
   let intl = guild(1128).intl;
   let obj2 = { id: "GUILD_SETTINGS_EMOJI_UPLOAD_REQUIREMENTS_" + 1, text: stringResult };
@@ -258,7 +258,7 @@ function HeaderRow(guild) {
   stringResult2 = intl4.string(guild(1128).t["8Vr5Qd"]);
   const tmp14 = closure_15;
   if (canCreateExpressions) {
-    const Button = tmp7(5205).Button;
+    const Button = tmp7(5226).Button;
     if (!tmp3) {
       tmp3 = isUploading;
     }
@@ -278,14 +278,14 @@ function HeaderRow(guild) {
   let tmp13Result = null != tmp5;
   if (tmp13Result) {
     let obj9 = { style: tmp.errorText, variant: "text-sm/medium", color: "text-feedback-critical", children: tmp5 };
-    tmp13Result = tmp13(tmp7(5195).Text, obj9);
+    tmp13Result = tmp13(tmp7(5216).Text, obj9);
   }
   let obj10 = { children: tmp15(tmp16, obj7) };
   items1[1] = tmp13Result;
   let obj11 = { style: tmp.uploadInstructionsContainer, children: items2 };
-  items2 = [tmp13(tmp7(5195).Text, { variant: "text-sm/medium", color: "text-muted", children: description }), , ];
+  items2 = [tmp13(tmp7(5216).Text, { variant: "text-sm/medium", color: "text-muted", children: description }), , ];
   const obj12 = { variant: "text-xs/bold", color: "text-muted", style: tmp.uploadInstructionsHeading, children: str.toUpperCase() };
-  const Text = tmp7(5195).Text;
+  const Text = tmp7(5216).Text;
   const intl6 = tmp7(1128).intl;
   str = intl6.string(tmp7(1128).t.jrXfyw);
   items2[1] = tmp13(Text, obj12);

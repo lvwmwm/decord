@@ -1,16 +1,16 @@
-// Module ID: 14120
-// Function ID: 14121
+// Module ID: 14195
+// Function ID: 14196
 // Name: getActivityHeader
-// Dependencies: [1087, 14121, 14122, 1128, 14124, 14125, 10581, 2]
+// Dependencies: [1087, 14196, 14197, 1128, 14199, 14200, 10610, 2]
 // Exports: default
 
-// Module 14120 (getActivityHeader)
+// Module 14195 (getActivityHeader)
 import intl23 from "intl" /* 1128 */;
-import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 10581 */;
-import parseProviderRouteHeadlessSessionIdDefault from "parseProviderRouteHeadlessSessionId" /* 14121 */;
-import getActivityPlatformDefault from "getActivityPlatform" /* 14122 */;
-import isOnMetaHorizonDefault from "isOnMetaHorizon" /* 14124 */;
-import getActivityPlatformDisplayNameDefault from "getActivityPlatformDisplayName" /* 14125 */;
+import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 10610 */;
+import parseProviderRouteHeadlessSessionIdDefault from "parseProviderRouteHeadlessSessionId" /* 14196 */;
+import getActivityPlatformDefault from "getActivityPlatform" /* 14197 */;
+import isOnMetaHorizonDefault from "isOnMetaHorizon" /* 14199 */;
+import getActivityPlatformDisplayNameDefault from "getActivityPlatformDisplayName" /* 14200 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

@@ -1,20 +1,20 @@
-// Module ID: 11960
-// Function ID: 11961
+// Module ID: 12008
+// Function ID: 12009
 // Name: SearchBarBottomBorder
-// Dependencies: [19, 21, 4945, 587, 558, 576, 5014, 5208, 5209, 2]
+// Dependencies: [19, 21, 4966, 587, 558, 576, 5035, 5229, 5230, 2]
 
-// Module 11960 (SearchBarBottomBorder)
+// Module 12008 (SearchBarBottomBorder)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import spring from "spring" /* 5208 */;
+import spring from "spring" /* 5229 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const springPresets = tmp(5209);
+const springPresets = tmp(5230);
 const jsx = Fragment.jsx;
 let obj = { border: obj2 };
 obj2 = { borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, borderBottomWidth: 1 };
@@ -35,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePinnedS
     num = triggerScrollHeight;
   }
   const tmp4 = closure_5();
-  const tmpResult = tmp(5014);
+  const tmpResult = tmp(5035);
   const sharedValue = tmpResult.useSharedValue(0);
   if (cResult[0] !== sharedValue) {
     const fn = function c() {
@@ -74,9 +74,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePinnedS
       const obj = { opacity: withSpring(num, springPresets.springStandard) };
       return obj;
     };
-    const obj2 = { withSpring: tmp(5208).withSpring, scrollPosition: sharedValue, triggerScrollHeight: num, springStandard: tmp(5209).springStandard };
-    const useAnimatedStyle = tmp(5014).useAnimatedStyle;
-    tmp(5014);
+    const obj2 = { withSpring: tmp(5229).withSpring, scrollPosition: sharedValue, triggerScrollHeight: num, springStandard: tmp(5230).springStandard };
+    const useAnimatedStyle = tmp(5035).useAnimatedStyle;
+    tmp(5035);
     fn3.__closure = obj2;
     fn3.__workletHash = 5466161440826;
     fn3.__initData = __initData;
@@ -104,7 +104,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePinnedS
         cResult[15] = obj3;
         tmp19 = obj3;
       }
-      const tmp18 = jsx(sharedValue(5014).View, { style: tmp14 }, key);
+      const tmp18 = jsx(sharedValue(5035).View, { style: tmp14 }, key);
       cResult[10] = key;
       cResult[11] = tmp14;
       cResult[12] = tmp18;
@@ -129,7 +129,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePinnedS
     triggerScrollHeight = 1;
   }
   let tmp = closure_5();
-  let obj = triggerScrollHeight(5014);
+  let obj = triggerScrollHeight(5035);
   const sharedValue = obj.useSharedValue(0);
   const items = [key, sharedValue];
   const effect = react.useEffect(() => {
@@ -149,12 +149,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePinnedS
     const obj = { opacity: withSpring(num, springPresets.springStandard) };
     return obj;
   };
-  const obj2 = triggerScrollHeight(5014);
-  fn.__closure = { withSpring: triggerScrollHeight(5208).withSpring, scrollPosition: sharedValue, triggerScrollHeight, springStandard: triggerScrollHeight(5209).springStandard };
+  const obj2 = triggerScrollHeight(5035);
+  fn.__closure = { withSpring: triggerScrollHeight(5229).withSpring, scrollPosition: sharedValue, triggerScrollHeight, springStandard: triggerScrollHeight(5230).springStandard };
   fn.__workletHash = 17305021520857;
   fn.__initData = __initData2;
   const obj4 = { scrollHandler: callback, bottomBorderComponent: null };
-  ({ withSpring: triggerScrollHeight(5208).withSpring, scrollPosition: sharedValue, triggerScrollHeight, springStandard: triggerScrollHeight(5209).springStandard });
+  ({ withSpring: triggerScrollHeight(5229).withSpring, scrollPosition: sharedValue, triggerScrollHeight, springStandard: triggerScrollHeight(5230).springStandard });
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const items2 = [tmp.border, animatedStyle];
   return obj4;

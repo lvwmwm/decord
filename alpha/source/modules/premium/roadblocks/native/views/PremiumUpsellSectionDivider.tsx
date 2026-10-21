@@ -1,19 +1,19 @@
-// Module ID: 9835
-// Function ID: 9836
+// Module ID: 9865
+// Function ID: 9866
 // Name: PremiumUpsellSectionDivider
-// Dependencies: [19, 17, 7493, 21, 4945, 587, 558, 576, 9836, 5219, 1107, 8515, 2]
+// Dependencies: [19, 17, 7521, 21, 4966, 587, 558, 576, 9866, 5240, 1107, 8542, 2]
 
-// Module 9835 (PremiumUpsellSectionDivider)
+// Module 9865 (PremiumUpsellSectionDivider)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
-import LinearGradientDefault from "LinearGradient" /* 5219 */;
-import ColorConstants from "ColorConstants" /* 7493 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9836 */;
+import LinearGradientDefault from "LinearGradient" /* 5240 */;
+import ColorConstants from "ColorConstants" /* 7521 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9866 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -136,7 +136,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
         obj5 = { style: tmp4.lockGradient, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: useTier0UpsellContent ? tmp10.PREMIUM_TIER_0 : tmp10.PREMIUM_TIER_2_TRI_COLOR, children: metroRequire(LockIcon, obj6) };
         tmp23 = LinearGradientDefault;
         obj6 = { color: nativeDefault.colors.WHITE, style: tmp4.lock };
-        LockIcon = tmp(8515).LockIcon;
+        LockIcon = tmp(8542).LockIcon;
         tmp20Result = tmp20(React3, obj4);
       }
       cResult[8] = position;
@@ -194,7 +194,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
     obj5 = { style: tmp.lockGradient, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: useTier0UpsellContent ? tmp9.PREMIUM_TIER_0 : tmp9.PREMIUM_TIER_2_TRI_COLOR, children: metroRequire(LockIcon, obj6) };
     tmp7Result = LinearGradientDefault;
     obj6 = { color: nativeDefault.colors.WHITE, style: tmp.lock };
-    LockIcon = tmp5(8515).LockIcon;
+    LockIcon = tmp5(8542).LockIcon;
     tmp4Result = tmp4(tmp3, obj4);
   }
   items[2] = tmp4Result;

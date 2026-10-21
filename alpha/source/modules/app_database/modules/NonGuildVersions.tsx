@@ -1,21 +1,21 @@
-// Module ID: 7676
-// Function ID: 7677
+// Module ID: 7704
+// Function ID: 7705
 // Name: NonGuildVersions
-// Dependencies: [5, 4971, 3, 7669, 12, 4826, 1104, 2]
+// Dependencies: [5, 4992, 3, 7697, 12, 4847, 1104, 2]
 
-// Module 7676 (NonGuildVersions)
+// Module 7704 (NonGuildVersions)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import DurationsDefault from "Durations" /* 1104 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 4826 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4847 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4971 */;
-import isCacheEnabled from "isCacheEnabled" /* 7669 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4992 */;
+import isCacheEnabled from "isCacheEnabled" /* 7697 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, closure_3, guildId;
 
-const f98256 = () => {
+const f98538 = () => {
   let obj = DatabaseDaosDefault;
   const databaseResult = obj.database();
   if (databaseResult != null) {
@@ -54,7 +54,7 @@ class NonGuildVersions {
     if (obj.isCacheEnabled()) {
       const addChangeListener = SelectedGuildStore.addChangeListener;
       let obj2 = _modDef12;
-      addChangeListener(obj2.throttle(f98256, 10 * DurationsDefault.Millis.SECOND));
+      addChangeListener(obj2.throttle(f98538, 10 * DurationsDefault.Millis.SECOND));
     }
     return obj3;
   }
@@ -171,7 +171,7 @@ obj.actions = {
 if (isCacheEnabled.isCacheEnabled()) {
   let addChangeListener = SelectedGuildStore.addChangeListener;
   const importDefaultResult1 = _modDef12;
-  addChangeListener(importDefaultResult1.throttle(f98256, 10 * DurationsDefault.Millis.SECOND));
+  addChangeListener(importDefaultResult1.throttle(f98538, 10 * DurationsDefault.Millis.SECOND));
 }
 let result = size.fileFinishedImporting("modules/app_database/modules/NonGuildVersions.tsx");
 

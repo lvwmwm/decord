@@ -1,26 +1,26 @@
-// Module ID: 17207
-// Function ID: 17208
-// Dependencies: [2, 15065, 15067, 15069, 15071, 15073, 11468, 15075, 15077, 15079, 15081, 15083, 15085, 15087, 15089, 15091, 15093, 13783, 13781]
+// Module ID: 17283
+// Function ID: 17284
+// Dependencies: [2, 15140, 15142, 15144, 15146, 15148, 11518, 15150, 15152, 15154, 15156, 15158, 15160, 15162, 15164, 15166, 15168, 13858, 13856]
 
-// Module 17207
-import CameraLottie from "CameraLottie" /* 11468 */;
-import SpendEarnOrbsLightThemeLottie from "SpendEarnOrbsLightThemeLottie" /* 13781 */;
-import SpendEarnOrbsLottie from "SpendEarnOrbsLottie" /* 13783 */;
-import MessagesTabLottie from "MessagesTabLottie" /* 15065 */;
-import ServerTabLottie from "ServerTabLottie" /* 15067 */;
-import YouTabLottie from "YouTabLottie" /* 15069 */;
-import NotificationsTabLottie from "NotificationsTabLottie" /* 15071 */;
-import MicrophoneLottie from "MicrophoneLottie" /* 15073 */;
-import NitroGem1Lottie from "NitroGem1Lottie" /* 15075 */;
-import NitroGem2Lottie from "NitroGem2Lottie" /* 15077 */;
-import NitroGem3Lottie from "NitroGem3Lottie" /* 15079 */;
-import NitroGem6Lottie from "NitroGem6Lottie" /* 15081 */;
-import NitroGem9Lottie from "NitroGem9Lottie" /* 15083 */;
-import NitroGem12Lottie from "NitroGem12Lottie" /* 15085 */;
-import NitroGem15Lottie from "NitroGem15Lottie" /* 15087 */;
-import NitroGem18Lottie from "NitroGem18Lottie" /* 15089 */;
-import NitroGem24Lottie from "NitroGem24Lottie" /* 15091 */;
-import MessageRequestLottie from "MessageRequestLottie" /* 15093 */;
+// Module 17283
+import CameraLottie from "CameraLottie" /* 11518 */;
+import SpendEarnOrbsLightThemeLottie from "SpendEarnOrbsLightThemeLottie" /* 13856 */;
+import SpendEarnOrbsLottie from "SpendEarnOrbsLottie" /* 13858 */;
+import MessagesTabLottie from "MessagesTabLottie" /* 15140 */;
+import ServerTabLottie from "ServerTabLottie" /* 15142 */;
+import YouTabLottie from "YouTabLottie" /* 15144 */;
+import NotificationsTabLottie from "NotificationsTabLottie" /* 15146 */;
+import MicrophoneLottie from "MicrophoneLottie" /* 15148 */;
+import NitroGem1Lottie from "NitroGem1Lottie" /* 15150 */;
+import NitroGem2Lottie from "NitroGem2Lottie" /* 15152 */;
+import NitroGem3Lottie from "NitroGem3Lottie" /* 15154 */;
+import NitroGem6Lottie from "NitroGem6Lottie" /* 15156 */;
+import NitroGem9Lottie from "NitroGem9Lottie" /* 15158 */;
+import NitroGem12Lottie from "NitroGem12Lottie" /* 15160 */;
+import NitroGem15Lottie from "NitroGem15Lottie" /* 15162 */;
+import NitroGem18Lottie from "NitroGem18Lottie" /* 15164 */;
+import NitroGem24Lottie from "NitroGem24Lottie" /* 15166 */;
+import MessageRequestLottie from "MessageRequestLottie" /* 15168 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/components/LottieIcon/native/generated/index.tsx");

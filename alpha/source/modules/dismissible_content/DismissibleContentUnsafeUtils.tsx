@@ -1,19 +1,19 @@
-// Module ID: 4970
-// Function ID: 4971
+// Module ID: 4991
+// Function ID: 4992
 // Name: DismissibleContentUnsafeUtils
-// Dependencies: [5, 1246, 4971, 1104, 4992, 4791, 4785, 11, 4783, 558, 576, 504, 4781, 2]
+// Dependencies: [5, 1246, 4992, 1104, 5013, 4812, 4806, 11, 4804, 558, 576, 504, 4802, 2]
 // Exports: UNSAFE_markDismissibleContentAsDismissed, UNSAFE_markSingleUseGuildDismissibleContentAsDismissed, UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed, UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed
 
-// Module 4970 (DismissibleContentUnsafeUtils)
+// Module 4991 (DismissibleContentUnsafeUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1104 */;
-import Uint8ArrayUtils from "Uint8ArrayUtils" /* 4783 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 4785 */;
-import DismissibleContentTypes from "DismissibleContentTypes" /* 4791 */;
-import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 4992 */;
+import Uint8ArrayUtils from "Uint8ArrayUtils" /* 4804 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 4806 */;
+import DismissibleContentTypes from "DismissibleContentTypes" /* 4812 */;
+import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 5013 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4971 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4992 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -154,7 +154,7 @@ let obj = function _UNSAFE_markDismissibleContentAsDismissed() {
     if (closure_1 === undefined) {
       obj6 = {};
     }
-    return "test";
+    return "Reflect";
   });
   return obj(...arguments);
 };
@@ -197,7 +197,7 @@ obj = function _UNSAFE_markSingleUseGuildDismissibleContentAsDismissed() {
             }
             c5 = 1;
             c6 = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {

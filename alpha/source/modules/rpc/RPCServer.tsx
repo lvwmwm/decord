@@ -1,21 +1,21 @@
-// Module ID: 9194
-// Function ID: 9195
+// Module ID: 9221
+// Function ID: 9222
 // Name: RPCServer
-// Dependencies: [5, 6335, 1087, 12, 9195, 9197, 9199, 1267, 38, 9200, 9202, 4795, 1104, 2]
+// Dependencies: [5, 6357, 1087, 12, 9222, 9224, 9226, 1267, 38, 9227, 9229, 4816, 1104, 2]
 
-// Module 9194 (RPCServer)
+// Module 9221 (RPCServer)
 import _modDef12 from "module_12" /* 12 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import Constants2 from "Constants" /* 6335 */;
-import transformUserDefault from "transformUser" /* 9195 */;
-import RPCErrorDefault from "RPCError" /* 9197 */;
-import validateScopeDefault from "validateScope" /* 9199 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 9202 */;
+import Constants2 from "Constants" /* 6357 */;
+import transformUserDefault from "transformUser" /* 9222 */;
+import RPCErrorDefault from "RPCError" /* 9224 */;
+import validateScopeDefault from "validateScope" /* 9226 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 9229 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
-let _self, c5, command, dependencyMap, importDefault;
+let _self, c2, command, dependencyMap, importDefault;
 
 let c9;
 let hasOwnProperty;
@@ -82,81 +82,8 @@ class RPCServer {
     this.onDisconnect(abortController, arg1);
   }
   handleRequest(socket, arg1) {
-    const f101796 = (result) => {
-      let closure_0 = self(function*(arg0, value) {
-        let closure_1;
-        closure_0 = arg0;
-        if (c5 === 2) {
-          c5 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            const obj2 = { value, done: true };
-            return obj2;
-          } else {
-            return { value: "IconComponent", done: null };
-          }
-        } else {
-          try {
-            let tmp;
-            c5 = 2;
-            if (0 === c4) {
-              if (arg0 === 1) {
-                c5 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c5 = 3;
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                let closure_3 = tmp4;
-                tmp = undefined;
-                if (null != closure_0.validation) {
-                  c4 = 1;
-                  c5 = 1;
-                  const obj4 = { value: closure_0.getJoi(), done: false };
-                  return obj4;
-                } else {
-                  tmp26(closure_0);
-                }
-              }
-            } else if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 3;
-              let obj = { value, done: true };
-              return obj;
-            } else {
-              tmp = value;
-              socket(closure_3_2[8])(null != closure_0.validation, "command.validation must not be null");
-              args = args.args;
-              tmp.validate(args, closure_0.validation(tmp), { convert: false }, function(message) {
-                if (null == message) {
-                  closure_1_0(closure_0);
-                } else {
-                  self = this;
-                  const self2 = this;
-                  const obj = { errorCode: constants.INVALID_PAYLOAD };
-                  const tmp6 = new socket(closure_4_2[5])(obj, message.message);
-                  closure_1_1(tmp6);
-                }
-              });
-            }
-            c5 = 3;
-            return { value: "IconComponent", done: null };
-          } catch (tmp8) {
-            c5 = 3;
-            throw tmp8;
-          }
-        }
-      });
-      const promise = new Promise(function() {
-        return closure_0(...arguments);
-      });
-      return promise;
+    const f144729 = function() {
+      return closure_0(...arguments);
     };
     let closure_2 = arg1;
     let self = this;
@@ -202,8 +129,95 @@ class RPCServer {
       const tmp21 = new RPCErrorDefault(obj4, "Payload requires a nonce");
       throw tmp21;
     });
-    const then = promise.then(f101796).then;
-    promise.then(f101796);
+    const then = promise.then;
+    self((value) => {
+      let c3 = 0;
+      let c4 = 0;
+      return (function*(arg0, value) {
+        if (c4 === 2) {
+          c4 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            return { value, done: true };
+          } else {
+            return { value: "IconComponent", done: null };
+          }
+        } else {
+          try {
+            c4 = 2;
+            if (0 === c3) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                return { value, done: true };
+              } else {
+                c2 = 0;
+                closure_1 = undefined;
+                let args;
+                if (null != value.validation) {
+                  c3 = 1;
+                  c4 = 1;
+                  const obj4 = { value: value.getJoi(), done: false };
+                  return obj4;
+                }
+              }
+            } else if (1 === tmp4) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                return { value, done: true };
+              } else {
+                closure_1 = value;
+                socket(closure_2_2[8])(null != value.validation, "command.validation must not be null");
+                args = value.validation(closure_1);
+                self = this;
+                let self2 = this;
+                const promise = new Promise((arg0, arg1) => {
+                  closure_0 = arg0;
+                  closure_1 = arg1;
+                  closure_1_1.validate(args.args, closure_1_2, { convert: false }, function(message) {
+                    if (null == message) {
+                      closure_0();
+                    } else {
+                      self = this;
+                      const self2 = this;
+                      const obj = { errorCode: constants.INVALID_PAYLOAD };
+                      const tmp6 = new closure_2_1(args[5])(obj, message.message);
+                      closure_1(tmp6);
+                    }
+                  });
+                });
+                c3 = 2;
+                c4 = 1;
+                return { value: promise, done: false };
+              }
+            } else if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              let obj = { value, done: true };
+              return obj;
+            }
+            let tmp6 = closure_1;
+            c4 = 3;
+            return { value, done: true };
+          } catch (tmp8) {
+            c4 = 3;
+            throw tmp8;
+          }
+        }
+      })();
+    });
+    const then2 = then(f144729).then;
+    then(f144729);
     let closure_0 = self((command) => {
       let closure_1;
       let c3 = 0;
@@ -225,10 +239,10 @@ class RPCServer {
         return { command, botScopeOnly };
       })();
     });
-    const nextPromise1 = then(function() {
+    const then2Result = then2(function() {
       return closure_0(...arguments);
     });
-    const nextPromise2 = nextPromise1.then((command) => {
+    const nextPromise1 = then2Result.then((command) => {
       let args;
       let args1;
       command = command.command;
@@ -267,8 +281,8 @@ class RPCServer {
       }
       return handler(obj2);
     });
-    const nextPromise3 = nextPromise2.then((result) => self.dispatch(socket, closure_2.nonce, closure_2.cmd, null, result));
-    nextPromise3.catch((error) => self.error(socket, closure_2.nonce, closure_2.cmd, error.code, error.message));
+    const nextPromise2 = nextPromise1.then((result) => self.dispatch(socket, closure_2.nonce, closure_2.cmd, null, result));
+    nextPromise2.catch((error) => self.error(socket, closure_2.nonce, closure_2.cmd, error.code, error.message));
   }
   setCommandHandler(arg0, arg1) {
     this.commands[arg0] = arg1;

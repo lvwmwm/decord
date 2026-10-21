@@ -1,11 +1,11 @@
-// Module ID: 4830
-// Function ID: 4831
+// Module ID: 4851
+// Function ID: 4852
 // Name: Dao
-// Dependencies: [4831, 4833, 2]
+// Dependencies: [4852, 4854, 2]
 
-// Module 4830 (Dao)
-import Table from "Table" /* 4831 */;
-import TableId from "TableId" /* 4833 */;
+// Module 4851 (Dao)
+import Table from "Table" /* 4852 */;
+import TableId from "TableId" /* 4854 */;
 import size from "module_2" /* 2 */;
 
 class Dao {

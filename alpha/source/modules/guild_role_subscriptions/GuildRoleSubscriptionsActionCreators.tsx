@@ -1,13 +1,13 @@
-// Module ID: 7304
-// Function ID: 7305
+// Module ID: 7332
+// Function ID: 7333
 // Name: GuildRoleSubscriptionsActionCreators
-// Dependencies: [32, 5, 1087, 7305, 584, 6420, 7306, 1267, 5673, 5684, 1104, 2]
+// Dependencies: [32, 5, 1087, 7333, 584, 6442, 7334, 1267, 5693, 5704, 1104, 2]
 // Exports: archiveSubscriptionListing, createSubscriptionGroupListing, createSubscriptionListing, deleteSubscriptionGroupListing, deleteSubscriptionListing, fetchAllSubscriptionListingsDataForGuild, fetchMonetizationRestrictions, fetchSubscriptionListingForPlan, fetchSubscriptionsSettings, updateSubscriptionGroupListing, updateSubscriptionListing, updateSubscriptionTrial, updateSubscriptionsSettings
 
-// Module 7304 (GuildRoleSubscriptionsActionCreators)
+// Module 7332 (GuildRoleSubscriptionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
-import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 7305 */;
+import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 7333 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -193,7 +193,7 @@ obj = function _fetchAllSubscriptionListingsDataForGuild() {
               benefitChannels = undefined;
               c11 = 1;
               c12 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === tmp4) {
             if (arg0 === 1) {
@@ -816,7 +816,7 @@ obj = function _fetchGuildRoleSubscriptionGroupListing() {
             tmp = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -901,7 +901,7 @@ obj = function _createSubscriptionListing() {
             id = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -1006,7 +1006,7 @@ obj = function _updateSubscriptionListing() {
             value = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -1106,7 +1106,7 @@ obj = function _fetchMonetizationRestrictions() {
               restrictions = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else {
             if (1 === c7) {

@@ -1,13 +1,13 @@
-// Module ID: 16097
-// Function ID: 16098
+// Module ID: 16173
+// Function ID: 16174
 // Name: BountiesModal
-// Dependencies: [19, 21, 558, 576, 16098, 16099, 16152, 13977, 10952, 2]
+// Dependencies: [19, 21, 558, 576, 16174, 16175, 16228, 14052, 11096, 2]
 
-// Module 16097 (BountiesModal)
+// Module 16173 (BountiesModal)
 import Fragment from "Fragment" /* 21 */;
-import BountiesModalTypes from "BountiesModalTypes" /* 16098 */;
-import BountiesModalContentScrollDefault from "BountiesModalContentScroll" /* 16099 */;
-import BountiesModalContentDefault from "BountiesModalContent" /* 16152 */;
+import BountiesModalTypes from "BountiesModalTypes" /* 16174 */;
+import BountiesModalContentScrollDefault from "BountiesModalContentScroll" /* 16175 */;
+import BountiesModalContentDefault from "BountiesModalContent" /* 16228 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

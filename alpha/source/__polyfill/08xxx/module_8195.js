@@ -1,45 +1,25 @@
 // Module ID: 8195
 // Function ID: 8196
-// Dependencies: [8196]
+// Dependencies: []
 
 // Module 8195
-import _modDef8196 from "module_8196" /* 8196 */;
-
+let c0 = 18761;
+let c1 = 19789;
 
 export default {
-  decode(arg0, buffer) {
-    function decodeAsciiValue(arg0) {
-      try {
-        const _decodeURIComponent = decodeURIComponent;
-        const _escape = escape;
-        return decodeURIComponent(escape(arg0));
-      } catch (err) {
-        return arg0;
-      }
+  BIG_ENDIAN: 19789,
+  LITTLE_ENDIAN: 18761,
+  getByteOrder(getUint16, c5) {
+    if (getUint16.getUint16(c5) === c0) {
+      return c0;
+    } else if (getUint16.getUint16(c5) === c1) {
+      return c1;
+    } else {
+      const _Error = Error;
+      const self = this;
+      const self2 = this;
+      const error = new Error("Illegal byte order value. Faulty image.");
+      throw error;
     }
-    const obj = _modDef8196;
-    const value = obj.get();
-    if (undefined !== value) {
-      if (undefined !== arg0) {
-        try {
-          const self = this;
-          const self2 = this;
-          const value1 = new value(arg0);
-          const _DataView = DataView;
-          const decode = value1.decode;
-          if (buffer instanceof DataView) {
-            buffer = buffer.buffer;
-          } else {
-            const _Uint8Array = Uint8Array;
-            buffer = Uint8Array.from(buffer);
-          }
-          return decode(buffer);
-        } catch (err) {
-        }
-      }
-    }
-    const mapped = buffer.map((item) => String.fromCharCode(item));
-    return decodeAsciiValue(mapped.join(""));
-  },
-  TAG_HEADER_SIZE: 5
+  }
 };

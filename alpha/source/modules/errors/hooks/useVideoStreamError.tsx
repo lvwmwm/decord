@@ -1,14 +1,14 @@
-// Module ID: 11306
-// Function ID: 11307
+// Module ID: 11350
+// Function ID: 11351
 // Name: useVideoStreamError
-// Dependencies: [502, 11307, 5680, 558, 576, 5855, 504, 2]
+// Dependencies: [502, 11351, 5700, 558, 576, 5877, 504, 2]
 // Exports: default
 
-// Module 11306 (useVideoStreamError)
-import Constants from "Constants" /* 5680 */;
-import AVError from "AVError" /* 5855 */;
+// Module 11350 (useVideoStreamError)
+import Constants from "Constants" /* 5700 */;
+import AVError from "AVError" /* 5877 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AVErrorStore from "AVErrorStore" /* 11307 */;
+import AVErrorStore from "AVErrorStore" /* 11351 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

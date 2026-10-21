@@ -1,14 +1,14 @@
-// Module ID: 10007
-// Function ID: 10008
+// Module ID: 10037
+// Function ID: 10038
 // Name: canForwardMessage
-// Dependencies: [4852, 4800, 4822, 4880, 1087, 1405, 558, 576, 504, 2]
+// Dependencies: [4873, 4821, 4843, 4901, 1087, 1405, 558, 576, 504, 2]
 
-// Module 10007 (canForwardMessage)
+// Module 10037 (canForwardMessage)
 import FlagUtils from "FlagUtils" /* 1405 */;
-import GatedChannelStore from "GatedChannelStore" /* 4852 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import GuildStore from "GuildStore" /* 4822 */;
-import PermissionStore from "PermissionStore" /* 4880 */;
+import GatedChannelStore from "GatedChannelStore" /* 4873 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import GuildStore from "GuildStore" /* 4843 */;
+import PermissionStore from "PermissionStore" /* 4901 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

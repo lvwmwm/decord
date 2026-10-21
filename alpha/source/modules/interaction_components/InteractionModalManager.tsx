@@ -1,17 +1,17 @@
-// Module ID: 18584
-// Function ID: 18585
+// Module ID: 18661
+// Function ID: 18662
 // Name: InteractionModalManager
-// Dependencies: [5, 2046, 8218, 1087, 5977, 18585, 2002, 1267, 559, 1257, 18596, 15620, 5587, 18599, 7165, 2]
+// Dependencies: [5, 2045, 8246, 1087, 5999, 18662, 2002, 1267, 559, 1257, 18673, 15696, 5608, 18676, 7193, 2]
 
-// Module 18584 (InteractionModalManager)
+// Module 18661 (InteractionModalManager)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 15620 */;
-import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 18596 */;
+import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 15696 */;
+import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 18673 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2046 */;
-import InteractionStore from "InteractionStore" /* 8218 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7165 */;
+import ApplicationStore from "ApplicationStore" /* 2045 */;
+import InteractionStore from "InteractionStore" /* 8246 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7193 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, data, iFrameModal, interactionDebugContext;

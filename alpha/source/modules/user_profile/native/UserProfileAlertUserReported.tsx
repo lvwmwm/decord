@@ -1,13 +1,13 @@
-// Module ID: 13368
-// Function ID: 13369
+// Module ID: 13435
+// Function ID: 13436
 // Name: UserProfileAlertUserReported
-// Dependencies: [19, 21, 558, 576, 1128, 5872, 5872, 2]
+// Dependencies: [19, 21, 558, 576, 1128, 5894, 5894, 2]
 
-// Module 13368 (UserProfileAlertUserReported)
+// Module 13435 (UserProfileAlertUserReported)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
-import AlertModal2 from "AlertModal" /* 5872 */;
+import AlertModal2 from "AlertModal" /* 5894 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -33,10 +33,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     [tmp4, tmp5] = cResult;
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const AlertModal = tmp(5872).AlertModal;
-    const AlertActions = tmp(5872).AlertActions;
+    const AlertModal = tmp(5894).AlertModal;
+    const AlertActions = tmp(5894).AlertActions;
     ({ text: intl3.string(intl4.t.BddRzS) });
-    const AlertActionButton = tmp(5872).AlertActionButton;
+    const AlertActionButton = tmp(5894).AlertActionButton;
     intl3 = tmp(1128).intl;
     const tmp10 = <AlertModal title={tmp4} content={tmp5} actions={null} />;
     cResult[2] = tmp10;

@@ -1,17 +1,17 @@
-// Module ID: 18921
-// Function ID: 18922
+// Module ID: 18998
+// Function ID: 18999
 // Name: EnableCommunityModal
-// Dependencies: [19, 21, 18920, 558, 576, 6881, 6875, 1128, 7434, 8062, 18922, 18923, 18935, 18936, 7046, 2]
+// Dependencies: [19, 21, 18997, 558, 576, 6909, 6903, 1128, 7462, 8090, 18999, 19000, 19012, 19013, 7074, 2]
 
-// Module 18921 (EnableCommunityModal)
+// Module 18998 (EnableCommunityModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
-import NavigatorHeader from "NavigatorHeader" /* 6875 */;
-import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 6881 */;
-import Navigator2 from "Navigator" /* 7046 */;
-import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 18920 */;
-import EnableCommunitySharedNavigation from "EnableCommunitySharedNavigation" /* 18922 */;
+import NavigatorHeader from "NavigatorHeader" /* 6903 */;
+import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 6909 */;
+import Navigator2 from "Navigator" /* 7074 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 18997 */;
+import EnableCommunitySharedNavigation from "EnableCommunitySharedNavigation" /* 18999 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -110,7 +110,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnableComm
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const Navigator = tmp(7046).Navigator;
+    const Navigator = tmp(7074).Navigator;
     const intl = tmp(1128).intl;
     const tmp8 = <Navigator screens={first} initialRouteName={EnableCommunitySharedNavigation.EnableCommunityModalSteps.STEP_1} headerBackTitle={intl.string(intl2.t["13/7kX"])} />;
     cResult[1] = tmp8;

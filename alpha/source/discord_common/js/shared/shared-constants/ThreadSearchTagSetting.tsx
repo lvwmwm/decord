@@ -1,9 +1,9 @@
-// Module ID: 4811
-// Function ID: 4812
+// Module ID: 4832
+// Function ID: 4833
 // Name: ThreadSearchTagSetting
 // Dependencies: [2]
 
-// Module 4811 (ThreadSearchTagSetting)
+// Module 4832 (ThreadSearchTagSetting)
 import size from "module_2" /* 2 */;
 
 const obj = { ALL: new Set(["match_all", "match_some"]) };

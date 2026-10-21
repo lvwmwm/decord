@@ -1,23 +1,23 @@
-// Module ID: 16452
-// Function ID: 16453
+// Module ID: 16528
+// Function ID: 16529
 // Name: DisplayNameStylesEffectPickerSheet
-// Dependencies: [32, 19, 17, 21, 4945, 587, 558, 576, 8596, 16446, 16447, 5173, 5171, 1128, 2918, 16451, 5205, 5935, 5226, 10593, 10590, 10591, 2]
+// Dependencies: [32, 19, 17, 21, 4966, 587, 558, 576, 8623, 16522, 16523, 5194, 5192, 1128, 2928, 16527, 5226, 5957, 5247, 10622, 10619, 10620, 2]
 
-// Module 16452 (DisplayNameStylesEffectPickerSheet)
+// Module 16528 (DisplayNameStylesEffectPickerSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import _modDef2918 from "module_2918" /* 2918 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import HapticUtils from "HapticUtils" /* 5173 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10590 */;
-import types from "types" /* 10591 */;
-import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10593 */;
+import _modDef2928 from "module_2928" /* 2928 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
+import HapticUtils from "HapticUtils" /* 5194 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10619 */;
+import types from "types" /* 10620 */;
+import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10622 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -380,11 +380,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
   closure_5 = undefined;
   let tmp = closure_9();
   let tmp3 = dependencyMap;
-  let obj = userId(8596);
+  let obj = userId(8623);
   const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
-  let obj2 = userId(16446);
+  let obj2 = userId(16522);
   const visibleEffectOrder = obj2.useVisibleEffectOrder();
-  const obj3 = userId(16447);
+  const obj3 = userId(16523);
   const displayNameStylesNewEffects = obj3.useDisplayNameStylesNewEffects(visibleEffectOrder);
   ({ dotEffectIds: c2, dismissEffectDot: c3 } = displayNameStylesNewEffects);
   [first, closure_5] = first.useState(selectedEffectId);
@@ -396,12 +396,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
   let tmp9 = null;
   if (null != userId) {
     const obj4 = { ref: bottomSheetRef, header: closure_7(tmp12, obj5), children: closure_7(closure_5, obj7) };
-    BottomSheet = tmp2(5226).BottomSheet;
-    obj5 = { title: intl.string(onSelectEffect(2918).RVtMxT), trailing: closure_7(Button, obj6) };
-    tmp12 = onSelectEffect(16451);
+    BottomSheet = tmp2(5247).BottomSheet;
+    obj5 = { title: intl.string(onSelectEffect(2928).RVtMxT), trailing: closure_7(Button, obj6) };
+    tmp12 = onSelectEffect(16527);
     intl = tmp2(1128).intl;
     obj6 = { text: intl2.string(userId(1128).t.XqMe3N), onPress: tmp8, variant: "primary", size: "sm" };
-    Button = tmp2(5205).Button;
+    Button = tmp2(5226).Button;
     intl2 = tmp2(1128).intl;
     obj7 = { style: tmp.container, children: closure_7(closure_5, obj8) };
     obj8 = { style: tmp.contentContainer, children: closure_7(Stack, obj9) };
@@ -427,7 +427,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
           return closure_7(closure_1_10, obj, effectId);
         })
     };
-    Stack = tmp2(5935).Stack;
+    Stack = tmp2(5957).Stack;
     tmp9 = closure_7(BottomSheet, obj4);
   }
   return tmp9;
@@ -448,9 +448,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Effect
   if (cResult[0] !== effectId) {
     const intl = tmp(1128).intl;
     const string = intl.string;
-    let OpWJ3f = tmp(10593).DISPLAY_NAME_STYLES_EFFECT_NAMES[effectId];
+    let OpWJ3f = tmp(10622).DISPLAY_NAME_STYLES_EFFECT_NAMES[effectId];
     if (OpWJ3f == null) {
-      OpWJ3f = _modDef2918.OpWJ3f;
+      OpWJ3f = _modDef2928.OpWJ3f;
     }
     const stringResult = string(OpWJ3f);
     cResult[0] = effectId;
@@ -570,7 +570,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Effect
   const string = intl.string;
   let OpWJ3f = useDisplayNameStylesEffectConfigs.DISPLAY_NAME_STYLES_EFFECT_NAMES[effectId];
   if (OpWJ3f == null) {
-    OpWJ3f = _modDef2918.OpWJ3f;
+    OpWJ3f = _modDef2928.OpWJ3f;
   }
   const stringResult = string(OpWJ3f);
   const items = [tmp.effectCard, ];

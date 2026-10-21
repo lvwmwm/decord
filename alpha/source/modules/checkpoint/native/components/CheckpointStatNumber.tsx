@@ -1,32 +1,48 @@
-// Module ID: 12832
-// Function ID: 12833
+// Module ID: 12868
+// Function ID: 12869
 // Name: CheckpointStatNumber
-// Dependencies: [19, 17, 5973, 21, 4945, 558, 576, 12797, 5078, 2]
+// Dependencies: [19, 17, 5995, 21, 4966, 558, 576, 12861, 5099, 2]
+// Exports: getCheckpointStatNumberWidth
 
-// Module 12832 (CheckpointStatNumber)
+// Module 12868 (CheckpointStatNumber)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import CheckpointConstants from "CheckpointConstants" /* 5973 */;
-import CheckpointTextDefault from "CheckpointText" /* 12797 */;
+import CheckpointConstants from "CheckpointConstants" /* 5995 */;
+import CheckpointTextDefault from "CheckpointText" /* 12861 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp;
-const CheckpointNumbersRive2 = tmp(5078);
+const CheckpointNumbersRive2 = tmp(5099);
+function getTextPixels(value) {
+  let num = 0;
+  const StringResult = String(value);
+  const tmp2 = StringResult[Symbol.iterator]();
+  while (tmp2 !== undefined) {
+    let num2 = closure_9[tmp3];
+    if (num2 == null) {
+      num2 = 5;
+    }
+    num = num + num2;
+    continue;
+  }
+  return Math.max(num - 1, 0);
+}
 const View = react_native.View;
 const CHECKPOINT_PRIMARY = CheckpointConstants.CHECKPOINT_PRIMARY;
 const jsx = Fragment.jsx;
-let c7 = 0.3625;
-let c8 = 2.4774774774774775;
-let closure_9 = createStyles.createStyles({ rive: { position: "absolute", top: 0, left: 0 } });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointStatNumber(arg0) {
+let c7 = 2.5675675675675675;
+let c8 = 28.7;
+let closure_9 = { 1: 3, 2: 4, 3: 4, 5: 4, 7: 4, ".": 2, ",": 2 };
+let closure_10 = createStyles.createStyles({ rive: { position: "absolute", top: 0, left: 0 } });
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointStatNumber(arg0) {
   let color;
   let value;
   const obj = react2;
-  const cResult = obj.c(26);
+  const cResult = obj.c(30);
   ({ value, color, size } = arg0);
   if (undefined === color) {
     color = CHECKPOINT_PRIMARY;
@@ -35,108 +51,136 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
   if (undefined !== size) {
     num = size;
   }
-  const tmp4 = closure_9();
-  const result = String(value).length * num * c7;
+  const tmp4 = closure_10();
+  const tmp6 = getTextPixels(value);
+  let num2 = 1;
+  const tmp5 = getTextPixels;
+  if (tmp6 > c8) {
+    num2 = tmp7 / tmp6;
+  }
   if (cResult[0] === num) {
-    let tmp6;
-    if (cResult[1] === result) {
-      tmp6 = cResult[2];
+    let tmp8;
+    if (cResult[1] === value) {
+      tmp8 = cResult[2];
     }
-    const result1 = num * c8;
     if (cResult[3] === num) {
-      let tmp9;
-      if (cResult[4] === result1) {
-        tmp9 = cResult[5];
+      let tmp10;
+      if (cResult[4] === tmp8) {
+        tmp10 = cResult[5];
       }
-      if (cResult[6] === color) {
-        let tmp10;
-        let tmp11;
-        if (cResult[7] === value) {
-          tmp10 = cResult[8];
-        }
-        if (cResult[9] !== color) {
-          const obj2 = { color };
-          cResult[9] = color;
-          cResult[10] = obj2;
-          tmp11 = obj2;
-        } else {
-          tmp11 = cResult[10];
-        }
-        if (cResult[11] === tmp9) {
-          let tmp12;
-          if (cResult[12] === tmp4.rive) {
-            tmp12 = cResult[13];
+      const result = (1 - num2) * num * 0.54;
+      const _Math = Math;
+      const bound = Math.max(num * c7, tmp8);
+      if (cResult[6] === num) {
+        if (cResult[7] === result) {
+          let tmp15;
+          if (cResult[8] === bound) {
+            tmp15 = cResult[9];
           }
-          if (cResult[14] === tmp11) {
-            let tmp13;
-            if (cResult[15] === value) {
-              tmp13 = cResult[16];
+          const _String = String;
+          const StringResult = String(value);
+          if (cResult[10] === color) {
+            let tmp17;
+            let tmp18;
+            if (cResult[11] === StringResult) {
+              tmp17 = cResult[12];
             }
-            if (cResult[17] === tmp10) {
-              let tmp17;
-              if (cResult[18] === tmp13) {
-                tmp17 = cResult[19];
+            if (cResult[13] !== color) {
+              const obj2 = { color };
+              cResult[13] = color;
+              cResult[14] = obj2;
+              tmp18 = obj2;
+            } else {
+              tmp18 = cResult[14];
+            }
+            if (cResult[15] === tmp15) {
+              let tmp19;
+              if (cResult[16] === tmp4.rive) {
+                tmp19 = cResult[17];
               }
-              if (cResult[20] === tmp17) {
+              if (cResult[18] === tmp18) {
                 let tmp20;
-                if (cResult[21] === tmp12) {
-                  tmp20 = cResult[22];
+                if (cResult[19] === value) {
+                  tmp20 = cResult[20];
                 }
-                if (cResult[23] === tmp6) {
+                if (cResult[21] === tmp17) {
                   let tmp24;
-                  if (cResult[24] === tmp20) {
-                    tmp24 = cResult[25];
+                  if (cResult[22] === tmp20) {
+                    tmp24 = cResult[23];
                   }
-                  return tmp24;
+                  if (cResult[24] === tmp19) {
+                    let tmp27;
+                    if (cResult[25] === tmp24) {
+                      tmp27 = cResult[26];
+                    }
+                    if (cResult[27] === tmp10) {
+                      let tmp31;
+                      if (cResult[28] === tmp27) {
+                        tmp31 = cResult[29];
+                      }
+                      return tmp31;
+                    }
+                    const tmp34 = <View style={tmp10}>{tmp27}</View>;
+                    cResult[27] = tmp10;
+                    cResult[28] = tmp27;
+                    cResult[29] = tmp34;
+                    tmp31 = tmp34;
+                  }
+                  const tmp30 = <View style={tmp19}>{tmp24}</View>;
+                  cResult[24] = tmp19;
+                  cResult[25] = tmp24;
+                  cResult[26] = tmp30;
+                  tmp27 = tmp30;
                 }
-                const tmp27 = <View style={tmp6}>{tmp20}</View>;
-                cResult[23] = tmp6;
-                cResult[24] = tmp20;
-                cResult[25] = tmp27;
-                tmp24 = tmp27;
+                const tmp26 = jsx(CheckpointNumbersRive2.CheckpointNumbersRive, { stateMachine: "State Machine 1", fit: "contain", alignment: "center-left", dataBinding: tmp17, fallback: tmp20 });
+                cResult[21] = tmp17;
+                cResult[22] = tmp20;
+                cResult[23] = tmp26;
+                tmp24 = tmp26;
               }
-              const tmp23 = <View style={tmp12}>{tmp17}</View>;
-              cResult[20] = tmp17;
-              cResult[21] = tmp12;
-              cResult[22] = tmp23;
+              const tmp23 = jsx(CheckpointTextDefault, { variant: "heading-xl/bold", style: tmp18, children: value });
+              cResult[18] = tmp18;
+              cResult[19] = value;
+              cResult[20] = tmp23;
               tmp20 = tmp23;
             }
-            const tmp19 = jsx(CheckpointNumbersRive2.CheckpointNumbersRive, { stateMachine: "State Machine 1", fit: "contain", alignment: "center-left", dataBinding: tmp10, fallback: tmp13 });
-            cResult[17] = tmp10;
-            cResult[18] = tmp13;
-            cResult[19] = tmp19;
-            tmp17 = tmp19;
+            const items = [tmp4.rive, tmp15];
+            cResult[15] = tmp15;
+            cResult[16] = tmp4.rive;
+            cResult[17] = items;
+            tmp19 = items;
           }
-          const tmp16 = jsx(CheckpointTextDefault, { variant: "heading-xl/bold", style: tmp11, children: value });
-          cResult[14] = tmp11;
-          cResult[15] = value;
-          cResult[16] = tmp16;
-          tmp13 = tmp16;
+          const obj7 = { DisplayValueString: StringResult, TextColor: color };
+          cResult[10] = color;
+          cResult[11] = StringResult;
+          cResult[12] = obj7;
+          tmp17 = obj7;
         }
-        const items = [tmp4.rive, tmp9];
-        cResult[11] = tmp9;
-        cResult[12] = tmp4.rive;
-        cResult[13] = items;
-        tmp12 = items;
       }
-      const obj7 = { DisplayValue: value, TextColor: color };
-      cResult[6] = color;
-      cResult[7] = value;
-      cResult[8] = obj7;
-      tmp10 = obj7;
+      const size1 = { top: result, height: num, width: bound };
+      cResult[6] = num;
+      cResult[7] = result;
+      cResult[8] = bound;
+      cResult[9] = size1;
+      tmp15 = size1;
     }
-    const size1 = { height: num, width: result1 };
+    const size2 = { height: num, width: tmp8 };
     cResult[3] = num;
-    cResult[4] = result1;
-    cResult[5] = size1;
-    tmp9 = size1;
+    cResult[4] = tmp8;
+    cResult[5] = size2;
+    tmp10 = size2;
   }
-  const size2 = { height: num, width: result };
+  let num3 = num;
+  if (num === undefined) {
+    num3 = 40;
+  }
+  const result1 = Math.min(tmp5(value), tmp7) * num3 * 0.08675000000000001;
   cResult[0] = num;
-  cResult[1] = result;
-  cResult[2] = size2;
-  tmp6 = size2;
+  cResult[1] = value;
+  cResult[2] = result1;
+  tmp8 = result1;
 }) : (function CheckpointStatNumber(value) {
+  let width;
   value = value.value;
   require = value;
   let color = value.color;
@@ -147,26 +191,50 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
   if (num === undefined) {
     num = 40;
   }
-  const items = [num, value];
-  const items1 = [num];
-  const tmp = closure_9();
-  const memo = react.useMemo(() => {
-    size = { height: num, width: String(require).length * num * c7 };
+  let c4;
+  const tmp = closure_10();
+  const tmp3 = getTextPixels(value);
+  let num2 = 1;
+  const tmp2 = getTextPixels;
+  if (tmp3 > c8) {
+    num2 = tmp4 / tmp3;
+  }
+  let num3 = num;
+  if (num === undefined) {
+    num3 = 40;
+  }
+  const result = Math.min(tmp2(value), tmp4) * num3 * 0.08675000000000001;
+  c4 = result;
+  const items = [num, result];
+  const items1 = [num2, num, result];
+  const memo = num2.useMemo(() => {
+    size = { height: num, width };
     return size;
   }, items);
   const items2 = [color, value];
-  const memo1 = react.useMemo(() => {
-    size = { height: num, width: num * c8 };
+  const memo1 = num2.useMemo(() => {
+    size = { top: (1 - num2) * num * 0.54, height: num, width: Math.max(num * c7, c4) };
     return size;
   }, items1);
   const items3 = [color];
-  const memo2 = react.useMemo(() => ({ DisplayValue: require, TextColor: color }), items2);
+  const memo2 = num2.useMemo(() => {
+    const obj = { DisplayValueString: String(require), TextColor: color };
+    return obj;
+  }, items2);
   const items4 = [tmp.rive, memo1];
-  const memo3 = react.useMemo(() => ({ color }), items3);
+  const memo3 = num2.useMemo(() => ({ color }), items3);
   const CheckpointNumbersRive = require("CheckpointNumbersRive").CheckpointNumbersRive;
-  return <View style={memo}>{null}</View>;
+  return <c4 style={memo}>{null}</c4>;
 });
+function getCheckpointStatNumberWidth(value, arg1) {
+  let num = arg1;
+  if (arg1 === undefined) {
+    num = 40;
+  }
+  return Math.min(getTextPixels(value), c8) * num * 0.08675000000000001;
+}
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointStatNumber.tsx");
 
 export default tmp2;
+export { getCheckpointStatNumberWidth };

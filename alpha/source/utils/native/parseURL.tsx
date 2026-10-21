@@ -1,10 +1,10 @@
-// Module ID: 5658
-// Function ID: 5659
+// Module ID: 5678
+// Function ID: 5679
 // Name: parseURL
-// Dependencies: [32, 1087, 1089, 5568, 5659, 5660, 1493, 1951, 1389, 5661, 5665, 14027, 6329, 14907, 1386, 5567, 11, 9557, 7464, 1630, 1384, 9139, 1267, 1280, 14908, 2]
+// Dependencies: [32, 1087, 1089, 5589, 5679, 5680, 1493, 1951, 1389, 5681, 5685, 14102, 6351, 14981, 1386, 5588, 11, 9587, 7492, 1630, 1384, 9166, 1267, 1280, 14982, 2]
 // Exports: default
 
-// Module 5658 (parseURL)
+// Module 5678 (parseURL)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
@@ -13,22 +13,22 @@ import urlParseDefault from "urlParse" /* 1389 */;
 import _modDef1493 from "module_1493" /* 1493 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
 import _modDef1951 from "module_1951" /* 1951 */;
-import LinkUtils from "LinkUtils" /* 5567 */;
-import ConversationConstants from "ConversationConstants" /* 5568 */;
-import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 5659 */;
-import findCodedLinks from "findCodedLinks" /* 5661 */;
-import CodedLink from "CodedLink" /* 5665 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 6329 */;
-import MobileWebRedirectCheckoutUtils from "MobileWebRedirectCheckoutUtils" /* 7464 */;
-import SecureFramesDeeplinkExperiment from "SecureFramesDeeplinkExperiment" /* 9139 */;
-import Authorize from "Authorize" /* 9557 */;
-import useVirtualCurrencyMobileEnabled from "useVirtualCurrencyMobileEnabled" /* 14027 */;
-import QRLoginUtils from "QRLoginUtils" /* 14907 */;
-import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 14908 */;
+import LinkUtils from "LinkUtils" /* 5588 */;
+import ConversationConstants from "ConversationConstants" /* 5589 */;
+import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 5679 */;
+import findCodedLinks from "findCodedLinks" /* 5681 */;
+import CodedLink from "CodedLink" /* 5685 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 6351 */;
+import MobileWebRedirectCheckoutUtils from "MobileWebRedirectCheckoutUtils" /* 7492 */;
+import SecureFramesDeeplinkExperiment from "SecureFramesDeeplinkExperiment" /* 9166 */;
+import Authorize from "Authorize" /* 9587 */;
+import useVirtualCurrencyMobileEnabled from "useVirtualCurrencyMobileEnabled" /* 14102 */;
+import QRLoginUtils from "QRLoginUtils" /* 14981 */;
+import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 14982 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import Constants from "Constants" /* 1087 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
-import PaymentConstants from "PaymentConstants" /* 5660 */;
+import PaymentConstants from "PaymentConstants" /* 5680 */;
 import size from "module_2" /* 2 */;
 
 let c9;

@@ -1,10 +1,10 @@
-// Module ID: 11033
-// Function ID: 11034
+// Module ID: 10688
+// Function ID: 10689
 // Name: createProxyTicket
-// Dependencies: [5, 502, 1087, 1297, 5584, 2]
+// Dependencies: [5, 502, 1087, 1297, 5605, 2]
 // Exports: createProxyTicket, prefetchProxyTicket, rememberProxyTicket
 
-// Module 11033 (createProxyTicket)
+// Module 10688 (createProxyTicket)
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -147,28 +147,36 @@ let result = size.fileFinishedImporting("modules/activities/createProxyTicket.ts
 export const createProxyTicket = function createProxyTicket() {
   return obj(...arguments);
 };
-export const prefetchProxyTicket = function prefetchProxyTicket(prop, arg1, type) {
+export const prefetchProxyTicket = function prefetchProxyTicket(application_id, arg1, type) {
+  const items = [AuthenticationStore.getId(), application_id, , ];
   let str = arg1;
-  let str2 = type;
-  const promise = mintProxyTicket(prop, arg1, type);
-  promise.catch(() => {
-
-  });
-  const items = [, , , ];
-  set = map.set;
-  items[0] = AuthenticationStore.getId();
-  items[1] = prop;
   if (arg1 == null) {
     str = "";
   }
   items[2] = str;
-  if (str2 == null) {
+  let str2 = type;
+  if (type == null) {
     str2 = "";
   }
   items[3] = str2;
-  obj = { ticket: promise, expiresAt: Date.now() + 60000 };
   const joined = items.join(":");
-  const result = set(joined, obj);
+  obj = map;
+  const value = map.get(joined);
+  if (null == value) {
+    const promise = mintProxyTicket(application_id, arg1, type);
+    const obj2 = { ticket: promise, expiresAt: Date.now() + 60000 };
+    const _Date2 = Date;
+    const result = obj.set(joined, obj2);
+    promise.catch(() => {
+      obj = map;
+      const tmp = joined;
+      if (map.get(joined) === obj2) {
+        obj.delete(tmp);
+      }
+    });
+  } else {
+    const _Date = Date;
+  }
 };
 export const rememberProxyTicket = function rememberProxyTicket(proxy_ticket, id, CONJURE_UNKNOWN_CHANNEL, APP_CHANNEL) {
   let str = CONJURE_UNKNOWN_CHANNEL;

@@ -1,20 +1,20 @@
-// Module ID: 11336
-// Function ID: 11337
+// Module ID: 11380
+// Function ID: 11381
 // Name: AnimatedEffectEmoji
-// Dependencies: [19, 17, 4946, 21, 1104, 4945, 587, 558, 576, 5631, 1202, 504, 5014, 5167, 7406, 2]
+// Dependencies: [19, 17, 4967, 21, 1104, 4966, 587, 558, 576, 5651, 1202, 504, 5035, 5188, 7434, 2]
 
-// Module 11336 (AnimatedEffectEmoji)
+// Module 11380 (AnimatedEffectEmoji)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import DurationsDefault from "Durations" /* 1104 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
-import timing from "timing" /* 5167 */;
-import FastImageDefault from "FastImage" /* 5631 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
+import timing from "timing" /* 5188 */;
+import FastImageDefault from "FastImage" /* 5651 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4946 */;
-import createStyles from "createStyles" /* 4945 */;
+import AccessibilityStore from "AccessibilityStore" /* 4967 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

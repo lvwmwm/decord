@@ -1,12 +1,12 @@
-// Module ID: 7651
-// Function ID: 7652
+// Module ID: 7679
+// Function ID: 7680
 // Name: handleExplicitMediaScanTimeoutForMessage
-// Dependencies: [7341, 7348, 2]
+// Dependencies: [7369, 7376, 2]
 // Exports: handleExplicitMediaScanTimeoutForMessage
 
-// Module 7651 (handleExplicitMediaScanTimeoutForMessage)
-import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7341 */;
-import findComponentMediaDefault from "findComponentMedia" /* 7348 */;
+// Module 7679 (handleExplicitMediaScanTimeoutForMessage)
+import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7369 */;
+import findComponentMediaDefault from "findComponentMedia" /* 7376 */;
 import size from "module_2" /* 2 */;
 
 function failOverComponentMedia(components) {
@@ -32,11 +32,11 @@ const FAILOVER_SCAN_VERSION = ExplicitMediaRedactionConstants.FAILOVER_SCAN_VERS
 const result = size.fileFinishedImporting("modules/explicit_media_redaction/handleExplicitMediaScanTimeoutForMessage.tsx");
 
 export const handleExplicitMediaScanTimeoutForMessage = function handleExplicitMediaScanTimeoutForMessage(message) {
-  const f98138 = (item) => {
+  const f98420 = (item) => {
     item.content_scan_version = -1;
     return item;
   };
-  const f98139 = (components) => {
+  const f98421 = (components) => {
     components.contentScanVersion = -1;
     components = components.components;
     const tmp = closure_1_3;
@@ -48,9 +48,9 @@ export const handleExplicitMediaScanTimeoutForMessage = function handleExplicitM
   };
   let attachments = message.attachments;
   let embeds = message.embeds;
-  const attachments1 = attachments.map(f98138);
+  const attachments1 = attachments.map(f98420);
   let components = message.components;
-  const embeds1 = embeds.map(f98139);
+  const embeds1 = embeds.map(f98421);
   failOverComponentMedia(components);
   const messageSnapshots = message.messageSnapshots;
   let messageSnapshots1 = messageSnapshots;
@@ -61,9 +61,9 @@ export const handleExplicitMediaScanTimeoutForMessage = function handleExplicitM
         message = message.message;
         const attachments = message.attachments;
         const embeds = message.embeds;
-        const mapped = attachments.map(f98138);
+        const mapped = attachments.map(f98420);
         let components = message.components;
-        const mapped1 = embeds.map(f98139);
+        const mapped1 = embeds.map(f98421);
         failOverComponentMedia(components);
         const obj = { message: message.merge({ attachments: mapped, embeds: mapped1, components }) };
         return message.merge(obj);

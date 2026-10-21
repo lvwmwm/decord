@@ -1,12 +1,12 @@
-// Module ID: 10816
-// Function ID: 10817
+// Module ID: 10960
+// Function ID: 10961
 // Name: useFavoritesGuildChannelActions
-// Dependencies: [502, 4860, 4803, 558, 576, 4825, 504, 10650, 2]
+// Dependencies: [502, 4881, 4824, 558, 576, 4846, 504, 10793, 2]
 
-// Module 10816 (useFavoritesGuildChannelActions)
+// Module 10960 (useFavoritesGuildChannelActions)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4860 */;
-import FavoriteStore from "FavoriteStore" /* 4803 */;
+import GuildMemberStore from "GuildMemberStore" /* 4881 */;
+import FavoriteStore from "FavoriteStore" /* 4824 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   const obj = require("react");
   const cResult = obj.c(13);
   if (cResult[0] !== channelId) {
-    const tmpResult = tmp(4825);
+    const tmpResult = tmp(4846);
     const isFavoritableChannelResult = tmpResult.isFavoritableChannel(channelId);
     cResult[0] = channelId;
     cResult[1] = isFavoritableChannelResult;
@@ -51,7 +51,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   }
   const tmpResult4 = tmp(504);
   const stateFromStores = tmpResult4.useStateFromStores(tmp6, tmp8);
-  const tmpResult5 = tmp(10650);
+  const tmpResult5 = tmp(10793);
   const isFavoritesGuildSelected = tmpResult5.useIsFavoritesGuildSelected();
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [GuildMemberStore, AuthenticationStore];

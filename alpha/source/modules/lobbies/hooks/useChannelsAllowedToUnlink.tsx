@@ -1,12 +1,12 @@
-// Module ID: 18742
-// Function ID: 18743
+// Module ID: 18819
+// Function ID: 18820
 // Name: useChannelsAllowedToUnlink
-// Dependencies: [4878, 4880, 10627, 558, 576, 504, 2]
+// Dependencies: [4899, 4901, 10770, 558, 576, 504, 2]
 // Exports: getChannelsAllowedToUnlink
 
-// Module 18742 (useChannelsAllowedToUnlink)
-import GuildChannelStore2 from "GuildChannelStore" /* 4878 */;
-import PermissionStore from "PermissionStore" /* 4880 */;
+// Module 18819 (useChannelsAllowedToUnlink)
+import GuildChannelStore2 from "GuildChannelStore" /* 4899 */;
+import PermissionStore from "PermissionStore" /* 4901 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 const GuildChannelStore = GuildChannelStore2;
 let _require;
 
-const f136543 = (channel) => channel.channel;
+const f137008 = (channel) => channel.channel;
 let closure_3 = GuildChannelStore2.GUILD_SELECTABLE_CHANNELS_KEY;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelsAllowedToUnlink(arg0) {
   let first;
@@ -46,7 +46,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelsA
               const obj = closure_2_0(closure_2_1[2]);
               return obj.canUnlinkLobbyChannel(channel.channel, closure_0);
             });
-            items = found.map(f136543);
+            items = found.map(f137008);
           }
           return items;
         }
@@ -78,7 +78,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelsA
             const obj = closure_2_0(closure_2_1[2]);
             return obj.canUnlinkLobbyChannel(channel.channel, closure_0);
           });
-          items = found.map(f136543);
+          items = found.map(f137008);
         }
         return items;
       }
@@ -104,7 +104,7 @@ function getChannelsAllowedToUnlink(arg0) {
       const obj = closure_2_0(closure_2_1[2]);
       return obj.canUnlinkLobbyChannel(channel.channel, closure_0);
     });
-    items = found.map(f136543);
+    items = found.map(f137008);
   }
   return items;
 }

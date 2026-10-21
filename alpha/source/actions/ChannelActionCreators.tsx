@@ -1,25 +1,25 @@
-// Module ID: 7360
-// Function ID: 7361
+// Module ID: 7388
+// Function ID: 7389
 // Name: ChannelActionCreators
-// Dependencies: [32, 5, 7361, 4804, 4800, 6722, 1087, 7362, 1297, 6783, 5112, 5669, 6585, 584, 6772, 1267, 1114, 4952, 1128, 7373, 5671, 6340, 2]
+// Dependencies: [32, 5, 7389, 4825, 4821, 6750, 1087, 7390, 1297, 6811, 5133, 5689, 6613, 584, 6800, 1267, 1114, 4973, 1128, 7401, 5691, 6362, 2]
 
-// Module 7360 (ChannelActionCreators)
+// Module 7388 (ChannelActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import router_utils from "router_utils" /* 1114 */;
 import intl2 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import ChannelRecord from "ChannelRecord" /* 4804 */;
-import shared from "shared" /* 4952 */;
-import RootNavigationRef from "RootNavigationRef" /* 5112 */;
-import preloadChannelDefault from "preloadChannel" /* 5671 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6585 */;
-import isChangelogChannelDefault from "isChangelogChannel" /* 6772 */;
+import ChannelRecord from "ChannelRecord" /* 4825 */;
+import shared from "shared" /* 4973 */;
+import RootNavigationRef from "RootNavigationRef" /* 5133 */;
+import preloadChannelDefault from "preloadChannel" /* 5691 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6613 */;
+import isChangelogChannelDefault from "isChangelogChannel" /* 6800 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChangelogStore from "ChangelogStore" /* 7361 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import ReadStateStore from "ReadStateStore" /* 6722 */;
+import ChangelogStore from "ChangelogStore" /* 7389 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import ReadStateStore from "ReadStateStore" /* 6750 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let closure_12;
 let map1;
 let tmp5;
 let unpackModuleId;
-const transitionToChannel = tmp5(5669);
+const transitionToChannel = tmp5(5689);
 let closure_6 = ChannelRecord.createChannelRecordFromServer;
 ({ AnalyticEvents: c9, AbortCodes: c10, Endpoints: unpackModuleId, Routes: closure_12, ChannelTypes: map1 } = Constants);
 let obj = {
@@ -50,6 +50,10 @@ let obj = {
     ({ location: _slicedToArray, onBeforeTransition: _asyncToGenerator, navigateToChannel } = joinCallVideo);
     if (navigateToChannel === undefined) {
       navigateToChannel = true;
+    }
+    let flag2 = joinCallVideo.navigationReplace;
+    if (flag2 === undefined) {
+      flag2 = true;
     }
     const self = this;
     return (async (arg0, value) => {
@@ -74,7 +78,6 @@ let obj = {
         }
       } else {
         try {
-          let require;
           let tmp;
           let joinCallIfRequested;
           c5 = 2;
@@ -88,7 +91,7 @@ let obj = {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              require = tmp4;
+              const require = tmp4;
               tmp = undefined;
               joinCallIfRequested = function joinCallIfRequested(_openCachedDMChannelResult) {
                 const tmp = closure_1_1;
@@ -105,7 +108,7 @@ let obj = {
               };
               const _getRecipientsResult = self._getRecipients(_require);
               if (1 === _getRecipientsResult.length) {
-                const _openCachedDMChannelResult = self._openCachedDMChannel(_location(_getRecipientsResult, 1)[0], _asyncToGenerator, navigateToChannel);
+                const _openCachedDMChannelResult = self._openCachedDMChannel(_location(_getRecipientsResult, 1)[0], _asyncToGenerator, navigateToChannel, flag2);
                 if (null != _openCachedDMChannelResult) {
                   joinCallIfRequested(_openCachedDMChannelResult);
                   c5 = 3;
@@ -147,14 +150,13 @@ let obj = {
             const obj9 = { value, done: true };
             return obj9;
           } else {
-            let tmp5 = require;
             tmp = value;
-            const tmp7 = closure_129_5;
-            if (tmp7) {
+            const tmp50 = closure_129_5;
+            if (tmp50) {
               if (closure_129_4 != null) {
-                const tmp8 = closure_129_4();
+                let tmp5 = closure_129_4();
               }
-              joinCallIfRequested(closure_129_6._openPrivateChannel(tmp.body));
+              joinCallIfRequested(closure_129_7._openPrivateChannel(tmp.body, closure_129_6));
             }
             _location = 0;
             c5 = 3;
@@ -274,10 +276,13 @@ let obj = {
       }
     })();
   },
-  _openCachedDMChannel(id, fn, navigateToChannel) {
+  _openCachedDMChannel(id, fn, navigateToChannel, flag2) {
     let flag = navigateToChannel;
     if (navigateToChannel === undefined) {
       flag = true;
+    }
+    if (flag2 === undefined) {
+      flag2 = true;
     }
     const dMFromUserId = ChannelStore.getDMFromUserId(id);
     let channel = null;
@@ -295,8 +300,9 @@ let obj = {
         const obj2 = RootNavigationRef;
         const tmp6 = require;
         if (null != obj2.getRootNavigationRef()) {
-          const tmp6Result = tmp6(5669);
-          tmp6Result.transitionToChannel(channel.id, { navigationReplace: true });
+          const obj4 = { navigationReplace: flag2 };
+          const tmp6Result = tmp6(5689);
+          tmp6Result.transitionToChannel(channel.id, obj4);
           tmp3 = channel;
         } else {
           const obj3 = SelectedChannelActionCreatorsDefault;
@@ -421,14 +427,19 @@ let obj = {
     }
     return items1;
   },
-  _openPrivateChannel(body) {
+  _openPrivateChannel(body, arg1) {
+    let flag = arg1;
+    if (arg1 === undefined) {
+      flag = true;
+    }
     const tmp = closure_6(body);
     const obj = DispatcherDefault;
     obj.dispatch({ type: "CHANNEL_CREATE", channel: tmp });
     const obj2 = RootNavigationRef;
     if (null != obj2.getRootNavigationRef()) {
+      const obj3 = { navigationReplace: flag };
       const tmp5Result = transitionToChannel;
-      tmp5Result.transitionToChannel(tmp.id, { navigationReplace: true });
+      tmp5Result.transitionToChannel(tmp.id, obj3);
     } else {
       const tmp2Result = SelectedChannelActionCreatorsDefault;
       const privateChannel = tmp2Result.selectPrivateChannel(tmp.id);
@@ -452,7 +463,7 @@ let obj = {
       AnalyticsUtilsDefault;
       track(CHANGE_LOG_DM_REMOVED, obj);
     }
-    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "r", parent_id: "toCharArray$esjava$1" }, silent: flag2 };
+    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "toCharArray$esjava$1" }, silent: flag2 };
     const tmpResult2 = DispatcherDefault;
     tmpResult2.dispatch(obj2);
     if (flag) {

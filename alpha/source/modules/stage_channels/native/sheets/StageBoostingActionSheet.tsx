@@ -1,19 +1,19 @@
-// Module ID: 6644
-// Function ID: 6645
+// Module ID: 6672
+// Function ID: 6673
 // Name: StageBoostingActionSheet
-// Dependencies: [19, 4946, 4822, 4880, 6588, 1087, 1394, 21, 504, 4808, 1128, 5171, 1267, 6645, 6639, 5224, 6647, 5205, 6648, 10660, 14757, 5631, 14761, 2]
+// Dependencies: [19, 4967, 4843, 4901, 6616, 1087, 1394, 21, 504, 4829, 1128, 5192, 1267, 6673, 6667, 5245, 6675, 5226, 6676, 10803, 14831, 5651, 14835, 2]
 // Exports: default
 
-// Module 6644 (StageBoostingActionSheet)
+// Module 6672 (StageBoostingActionSheet)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import StageChannelPermissions from "StageChannelPermissions" /* 4808 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6588 */;
-import BoostingActionCreators from "BoostingActionCreators" /* 6648 */;
+import StageChannelPermissions from "StageChannelPermissions" /* 4829 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6616 */;
+import BoostingActionCreators from "BoostingActionCreators" /* 6676 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4946 */;
-import GuildStore from "GuildStore" /* 4822 */;
-import PermissionStore from "PermissionStore" /* 4880 */;
+import AccessibilityStore from "AccessibilityStore" /* 4967 */;
+import GuildStore from "GuildStore" /* 4843 */;
+import PermissionStore from "PermissionStore" /* 4901 */;
 import Constants from "Constants" /* 1087 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import Fragment from "Fragment" /* 21 */;
@@ -123,18 +123,18 @@ export default function StageBoostingActionSheet(channel) {
       const obj3 = { guild_id: channel.guild_id, type: map1.VIDEO_STAGE_LIMIT, is_moderator: stateFromStores2, action: constants.DISMISS };
       obj2.track(metroImportDefault.BOOSTING_UPSELL_CLICKED, obj3);
     }
-    const tmpResult3 = channel(6645);
+    const tmpResult3 = channel(6673);
     dependencyMap = tmpResult3.useActualStageSpeakerCount(channel.id);
-    const tmpResult4 = channel(6645);
-    useReducedMotion = tmpResult4.useStageParticipantsCount(channel.id, tmp(6639).StageChannelParticipantNamedIndex.AUDIENCE);
-    stateFromStores2(5224)(() => {
+    const tmpResult4 = channel(6673);
+    useReducedMotion = tmpResult4.useStageParticipantsCount(channel.id, tmp(6667).StageChannelParticipantNamedIndex.AUDIENCE);
+    stateFromStores2(5245)(() => {
       const obj = AnalyticsUtilsDefault;
       const obj2 = { guild_id: channel.guild_id, type: map1.VIDEO_STAGE_LIMIT, is_moderator: stateFromStores2, listener_count: closure_2 + useReducedMotion };
       obj.track(metroImportDefault.BOOSTING_UPSELL_VIEWED, obj2);
     });
     if (tmp9) {
       let obj3 = { size: "lg", children: items5 };
-      const ButtonGroup = tmp(6647).ButtonGroup;
+      const ButtonGroup = tmp(6675).ButtonGroup;
       let obj4 = {
         variant: "experimental_premium-primary",
         size: "lg",
@@ -153,11 +153,11 @@ export default function StageBoostingActionSheet(channel) {
               obj5.track(metroImportDefault.BOOSTING_UPSELL_CLICKED, obj6);
             }
       };
-      const Button2 = tmp(5205).Button;
+      const Button2 = tmp(5226).Button;
       intl6 = tmp(1128).intl;
       items5 = [closure_14(Button2, obj4), ];
       let obj5 = { variant: "secondary", size: "lg", text: intl7.string(channel(1128).t.f3Pet9), onPress: handleClose };
-      const Button3 = tmp(5205).Button;
+      const Button3 = tmp(5226).Button;
       intl7 = tmp(1128).intl;
       items5[1] = closure_14(Button3, obj5);
       tmp21Result = closure_15(ButtonGroup, obj3);
@@ -165,7 +165,7 @@ export default function StageBoostingActionSheet(channel) {
     } else {
       let obj7;
       tmp21 = closure_14;
-      const Button = tmp(5205).Button;
+      const Button = tmp(5226).Button;
       if (stateFromStores2) {
         let obj6 = { variant: "secondary", size: "lg", text: intl5.string(channel(1128).t.WAI6xu), onPress: handleClose };
         intl5 = tmp(1128).intl;
@@ -177,12 +177,12 @@ export default function StageBoostingActionSheet(channel) {
       tmp21Result = tmp21(Button, obj7);
     }
     const obj8 = { title: string3Result1, description: stringResult, illustration: tmp21Result2, actions: tmp21Result };
-    const PromoSheet = tmp(10660).PromoSheet;
+    const PromoSheet = tmp(10803).PromoSheet;
     if (tmp9) {
-      tmp21Result2 = tmp21(tmp(14757).HoldingGemSpotIllustration, { accessible: false });
+      tmp21Result2 = tmp21(tmp(14831).HoldingGemSpotIllustration, { accessible: false });
     } else {
-      const obj9 = { source: stateFromStores2(14761) };
-      const tmp19Result = stateFromStores2(5631);
+      const obj9 = { source: stateFromStores2(14835) };
+      const tmp19Result = stateFromStores2(5651);
       tmp21Result2 = tmp21(tmp19Result, obj9);
     }
     return tmp21(PromoSheet, obj8);

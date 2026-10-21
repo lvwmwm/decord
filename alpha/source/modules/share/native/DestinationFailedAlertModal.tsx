@@ -1,27 +1,27 @@
-// Module ID: 12765
-// Function ID: 12766
+// Module ID: 12829
+// Function ID: 12830
 // Name: DestinationFailedAlertModal
-// Dependencies: [19, 17, 4800, 4822, 5674, 4890, 1392, 1098, 21, 4945, 587, 558, 576, 5565, 10617, 1202, 5195, 504, 4994, 12766, 5872, 5872, 1128, 2]
+// Dependencies: [19, 17, 4821, 4843, 5694, 4911, 1392, 1098, 21, 4966, 587, 558, 576, 5586, 10646, 1202, 5216, 504, 5015, 12830, 5894, 5894, 1128, 2]
 
-// Module 12765 (DestinationFailedAlertModal)
+// Module 12829 (DestinationFailedAlertModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
 import intl4 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import UserUtilsDefault from "UserUtils" /* 4994 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import useChannelNameDefault from "useChannelName" /* 5565 */;
-import AlertModal2 from "AlertModal" /* 5872 */;
+import UserUtilsDefault from "UserUtils" /* 5015 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import useChannelNameDefault from "useChannelName" /* 5586 */;
+import AlertModal2 from "AlertModal" /* 5894 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import GuildStore from "GuildStore" /* 4822 */;
-import PresenceStore from "PresenceStore" /* 5674 */;
-import RelationshipStore from "RelationshipStore" /* 4890 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import GuildStore from "GuildStore" /* 4843 */;
+import PresenceStore from "PresenceStore" /* 5694 */;
+import RelationshipStore from "RelationshipStore" /* 4911 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj2;
 let obj3;
 let tmp5;
 let unpackModuleId;
-const GroupDMAvatarDefault = tmp5(10617);
+const GroupDMAvatarDefault = tmp5(10646);
 const View = react_native.View;
 const StatusTypes = Constants.StatusTypes;
 ({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
@@ -195,7 +195,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Failed
     const items2 = [closure_10(Avatar, obj2), ];
     const obj3 = { style: tmp4.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: name };
     name = stateFromStores;
-    const Text = tmp(5195).Text;
+    const Text = tmp(5216).Text;
     if (stateFromStores == null) {
       class A {
         constructor() {
@@ -245,7 +245,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Failed
     }
     items2 = [closure_10(Avatar, obj4), ];
     const obj5 = { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: stateFromStores };
-    const Text = tmp2(5195).Text;
+    const Text = tmp2(5216).Text;
     if (stateFromStores == null) {
       const obj6 = UserUtilsDefault;
       stateFromStores = obj6.getName(user);
@@ -327,14 +327,14 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Failed
       tmp18 = tmp21;
     }
     const obj3 = { style: tmp4.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: tmp12 };
-    const tmp17 = closure_10(channel(5195).Text, obj3);
+    const tmp17 = closure_10(channel(5216).Text, obj3);
     cResult[6] = tmp12;
     cResult[7] = tmp4.label;
     cResult[8] = tmp17;
     tmp15 = tmp17;
   }
-  const obj4 = { "aria-label": "", guild: stateFromStores, channel, size: channel(12766).GuildIconWithChannelTypeSizes.SMALL_32 };
-  const GuildIconWithChannelType = tmp(12766).GuildIconWithChannelType;
+  const obj4 = { "aria-label": "", guild: stateFromStores, channel, size: channel(12830).GuildIconWithChannelTypeSizes.SMALL_32 };
+  const GuildIconWithChannelType = tmp(12830).GuildIconWithChannelType;
   const tmp14 = closure_10(GuildIconWithChannelType, obj4);
   cResult[3] = channel;
   cResult[4] = stateFromStores;
@@ -355,12 +355,12 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Failed
     return getGuild(guild_id);
   });
   const obj2 = { style: tmp.row, children: items1 };
-  const obj3 = { "aria-label": "", guild: stateFromStores, channel, size: channel(12766).GuildIconWithChannelTypeSizes.SMALL_32 };
+  const obj3 = { "aria-label": "", guild: stateFromStores, channel, size: channel(12830).GuildIconWithChannelTypeSizes.SMALL_32 };
   const tmp3 = useChannelNameDefault(channel);
-  const GuildIconWithChannelType = channel(12766).GuildIconWithChannelType;
+  const GuildIconWithChannelType = channel(12830).GuildIconWithChannelType;
   items1 = [closure_10(GuildIconWithChannelType, obj3), ];
   const obj4 = { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: tmp3 };
-  items1[1] = closure_10(channel(5195).Text, obj4);
+  items1[1] = closure_10(channel(5216).Text, obj4);
   return closure_11(View, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -535,21 +535,21 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DestinationFaile
     }
     if (cResult[6] !== onRetry) {
       let tmp12Result;
-      const AlertActions = tmp(5872).AlertActions;
+      const AlertActions = tmp(5894).AlertActions;
       if (null != onRetry) {
         const obj2 = { children: items };
         const obj3 = { variant: "primary", onPress: onRetry, text: intl2.string(intl4.t["5911Lb"]) };
-        const AlertActionButton2 = tmp(5872).AlertActionButton;
+        const AlertActionButton2 = tmp(5894).AlertActionButton;
         intl2 = tmp(1128).intl;
         items = [authStore(AlertActionButton2, obj3, "confirm"), ];
         const obj4 = { variant: "secondary", text: intl3.string(intl4.t.WAI6xu) };
-        const AlertActionButton3 = tmp(5872).AlertActionButton;
+        const AlertActionButton3 = tmp(5894).AlertActionButton;
         intl3 = tmp(1128).intl;
         items[1] = authStore(AlertActionButton3, obj4, "cancel");
         tmp12Result = unpackModuleId(authStore2, obj2);
       } else {
         const obj5 = { variant: "primary", text: intl.string(intl4.t.BddRzS) };
-        const AlertActionButton = tmp(5872).AlertActionButton;
+        const AlertActionButton = tmp(5894).AlertActionButton;
         intl = tmp(1128).intl;
         tmp12Result = tmp12(AlertActionButton, obj5, "confirm");
       }
@@ -613,17 +613,17 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DestinationFaile
   if (null != onRetry) {
     const obj3 = { children: items };
     const obj4 = { variant: "primary", onPress: onRetry, text: intl2.string(intl4.t["5911Lb"]) };
-    const AlertActionButton2 = tmp3(5872).AlertActionButton;
+    const AlertActionButton2 = tmp3(5894).AlertActionButton;
     intl2 = tmp3(1128).intl;
     items = [authStore(AlertActionButton2, obj4, "confirm"), ];
     const obj5 = { variant: "secondary", text: intl3.string(intl4.t.WAI6xu) };
-    const AlertActionButton3 = tmp3(5872).AlertActionButton;
+    const AlertActionButton3 = tmp3(5894).AlertActionButton;
     intl3 = tmp3(1128).intl;
     items[1] = authStore(AlertActionButton3, obj5, "cancel");
     tmp2Result = unpackModuleId(authStore2, obj3);
   } else {
     const obj6 = { variant: "primary", text: intl.string(intl4.t.BddRzS) };
-    const AlertActionButton = tmp3(5872).AlertActionButton;
+    const AlertActionButton = tmp3(5894).AlertActionButton;
     intl = tmp3(1128).intl;
     tmp2Result = tmp2(AlertActionButton, obj6, "confirm");
   }

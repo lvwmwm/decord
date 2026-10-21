@@ -1,10 +1,10 @@
-// Module ID: 9116
-// Function ID: 9117
+// Module ID: 9143
+// Function ID: 9144
 // Name: DisplayableCode
 // Dependencies: [2]
 // Exports: generateDisplayableCode
 
-// Module 9116 (DisplayableCode)
+// Module 9143 (DisplayableCode)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/libdave/package/src/DisplayableCode.ts");

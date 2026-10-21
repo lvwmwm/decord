@@ -1,13 +1,13 @@
-// Module ID: 15004
-// Function ID: 15005
+// Module ID: 15078
+// Function ID: 15079
 // Name: GuildBadgeBunny
-// Dependencies: [109, 19, 21, 558, 576, 1281, 14982, 7910, 2]
+// Dependencies: [109, 19, 21, 558, 576, 1281, 15056, 7938, 2]
 
-// Module 15004 (GuildBadgeBunny)
+// Module 15078 (GuildBadgeBunny)
 import react2 from "react" /* 576 */;
 import v1 from "v1" /* 1281 */;
-import inlineStyles from "inlineStyles" /* 7910 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 14982 */;
+import inlineStyles from "inlineStyles" /* 7938 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15056 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -282,9 +282,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadge
           const _Symbol = Symbol;
           if (cResult[50] === Symbol.for("react.memo_cache_sentinel")) {
             const obj8 = { children: hasOwnProperty(ClipPath, obj9) };
-            const Defs = tmp(7910).Defs;
+            const Defs = tmp(7938).Defs;
             obj9 = { id: combined, children: hasOwnProperty(inlineStyles.Rect, { width: "16", height: "16", fill: "white" }) };
-            ClipPath = tmp(7910).ClipPath;
+            ClipPath = tmp(7938).ClipPath;
             const tmp94 = hasOwnProperty(Defs, obj8);
             cResult[50] = tmp94;
             tmp92 = tmp94;
@@ -303,7 +303,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadge
             }
           }
           const obj10 = { width: num6, height: num7, viewBox: "0 0 16 16", fill: "none", children: items };
-          const Svg = tmp(7910).Svg;
+          const Svg = tmp(7938).Svg;
           const merged = Object.assign(tmp5);
           items = [tmp90, tmp92];
           const tmp100 = metroRequire(Svg, obj10);
@@ -318,7 +318,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadge
     }
   }
   const obj11 = { clipPath: "url(#" + combined + ")", children: items1 };
-  const G = tmp(7910).G;
+  const G = tmp(7938).G;
   items1 = [tmp19, tmp25, tmp26, tmp27, tmp28, tmp22, tmp23, tmp24, tmp37, tmp38, tmp42, tmp43, tmp44, tmp45, tmp46, tmp47, tmp48, tmp49, tmp50, tmp51, tmp52, tmp53, tmp54, tmp55, tmp56, tmp57, tmp58, tmp59, tmp60, tmp61, tmp62, tmp85, tmp86];
   const tmp91 = metroRequire(G, obj11);
   cResult[44] = tmp37;

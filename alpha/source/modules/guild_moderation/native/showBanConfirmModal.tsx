@@ -1,13 +1,13 @@
-// Module ID: 12630
-// Function ID: 12631
+// Module ID: 12694
+// Function ID: 12695
 // Name: showBanConfirmModal
-// Dependencies: [5171, 6623, 12631, 2002, 2]
+// Dependencies: [5192, 6651, 12695, 2002, 2]
 // Exports: default
 
-// Module 12630 (showBanConfirmModal)
+// Module 12694 (showBanConfirmModal)
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6623 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6651 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_moderation/native/showBanConfirmModal.tsx");
@@ -16,5 +16,5 @@ export default function showBanConfirmModal(merged) {
   const obj = ActionSheetActionCreatorsDefault;
   obj.hideActionSheet();
   const obj2 = ModalActionCreatorsDefault;
-  obj2.pushLazy(asyncRequire(12631, dependencyMap.paths), merged);
+  obj2.pushLazy(asyncRequire(12695, dependencyMap.paths), merged);
 };

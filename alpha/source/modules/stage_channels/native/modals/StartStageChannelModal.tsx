@@ -1,10 +1,10 @@
-// Module ID: 8970
-// Function ID: 8971
+// Module ID: 8997
+// Function ID: 8998
 // Name: StartStageChannelModal
-// Dependencies: [5, 32, 19, 17, 4805, 6588, 1087, 4806, 21, 4945, 587, 6623, 558, 576, 1128, 6859, 1202, 7135, 8971, 6834, 7257, 504, 8883, 5195, 8974, 8975, 8976, 5224, 1267, 1896, 7821, 7261, 6331, 8977, 8978, 7830, 5205, 7172, 7086, 2]
+// Dependencies: [5, 32, 19, 17, 4826, 6616, 1087, 4827, 21, 4966, 587, 6651, 558, 576, 1128, 6887, 1202, 7163, 8998, 6862, 7285, 504, 8910, 5216, 9001, 9002, 9003, 5245, 1267, 1896, 7849, 7289, 6353, 9004, 9005, 7858, 5226, 7200, 7114, 2]
 // Exports: default
 
-// Module 8970 (StartStageChannelModal)
+// Module 8997 (StartStageChannelModal)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,22 +13,22 @@ import intl9 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1896 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4806 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6623 */;
-import GuildIconDefault from "GuildIcon" /* 6834 */;
-import Pressables from "Pressables" /* 6859 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7135 */;
-import HotspotStore2 from "HotspotStore" /* 7257 */;
-import Form from "Form" /* 8883 */;
-import StageSparkleDefault from "StageSparkle" /* 8971 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4827 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6651 */;
+import GuildIconDefault from "GuildIcon" /* 6862 */;
+import Pressables from "Pressables" /* 6887 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7163 */;
+import HotspotStore2 from "HotspotStore" /* 7285 */;
+import Form from "Form" /* 8910 */;
+import StageSparkleDefault from "StageSparkle" /* 8998 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import StageInstanceStore from "StageInstanceStore" /* 4805 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6588 */;
+import StageInstanceStore from "StageInstanceStore" /* 4826 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6616 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ let obj6;
 let obj7;
 let tmp;
 let unpackModuleId;
-const GuildIcon = tmp(6834);
+const GuildIcon = tmp(6862);
 function closeModal() {
   const obj = ModalActionCreatorsDefault;
   obj.popWithKey(unpackModuleId);
@@ -99,7 +99,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Naviga
       const _Symbol2 = Symbol;
       if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
         const obj2 = { accessibilityRole: "button", accessibilityLabel: tmp8, onPress: closeModal, children: syncedClientThemes(Icon, obj3) };
-        const PressableOpacity = tmp(6859).PressableOpacity;
+        const PressableOpacity = tmp(6887).PressableOpacity;
         obj3 = { source: AssetRegistryDefault };
         Icon = tmp(1202).Icon;
         const tmp14 = syncedClientThemes(PressableOpacity, obj2);
@@ -228,7 +228,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { text: intl.string(intl9.t.BYJgew) };
-    const FormLabel = tmp(8883).FormLabel;
+    const FormLabel = tmp(8910).FormLabel;
     intl = tmp(1128).intl;
     const tmp10 = syncedClientThemes(FormLabel, obj2);
     cResult[2] = tmp10;
@@ -290,7 +290,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
   if (stateFromStores) {
     const obj6 = { style: tmp4.pill, children: syncedClientThemes(Text, obj7) };
     obj7 = { style: tmp4.pillLabel, variant: "text-xxs/bold", color: "text-overlay-light", children: intl2.string(intl9.t.y2b7CA) };
-    Text = tmp(5195).Text;
+    Text = tmp(5216).Text;
     intl2 = tmp(1128).intl;
     tmp12 = syncedClientThemes(metroImportDefault, obj6);
   }
@@ -331,7 +331,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
   if (stateFromStores) {
     const obj4 = { style: tmp.pill, children: syncedClientThemes(Text, obj5) };
     obj5 = { style: tmp.pillLabel, variant: "text-xxs/bold", color: "text-overlay-light", children: intl2.string(intl9.t.y2b7CA) };
-    Text = tmp2(5195).Text;
+    Text = tmp2(5216).Text;
     intl2 = tmp2(1128).intl;
     tmp6Result = tmp6(tmp8, obj4);
   }

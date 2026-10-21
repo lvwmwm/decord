@@ -1,9 +1,9 @@
-// Module ID: 8071
-// Function ID: 8072
+// Module ID: 8099
+// Function ID: 8100
 // Name: useUserIsTeen
 // Dependencies: [1392, 558, 576, 504, 2]
 
-// Module 8071 (useUserIsTeen)
+// Module 8099 (useUserIsTeen)
 import react from "react" /* 576 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

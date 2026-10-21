@@ -1,15 +1,15 @@
-// Module ID: 18089
-// Function ID: 18090
+// Module ID: 18170
+// Function ID: 18171
 // Name: Pending
-// Dependencies: [19, 21, 8661, 18090, 18091, 18092, 558, 576, 4952, 5631, 2]
+// Dependencies: [19, 21, 8688, 18171, 18172, 18173, 558, 576, 4973, 5651, 2]
 // Exports: getPendingSource
 
-// Module 18089 (Pending)
+// Module 18170 (Pending)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import shared from "shared" /* 4952 */;
-import FastImageDefault from "FastImage" /* 5631 */;
-import _mod8661 from "module_8661" /* 8661 */;
+import shared from "shared" /* 4973 */;
+import FastImageDefault from "FastImage" /* 5651 */;
+import _mod8688 from "module_8688" /* 8688 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -35,7 +35,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingSo
   const theme = obj2.useThemeContext().theme;
   if (cResult[0] !== theme) {
     const obj3 = { dark, darker, light };
-    const tmpResult = _mod8661;
+    const tmpResult = _mod8688;
     const illustrationSource = tmpResult.getIllustrationSource(theme, obj3);
     cResult[0] = theme;
     cResult[1] = illustrationSource;
@@ -47,7 +47,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingSo
 }) : (function usePendingSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8661;
+  const obj2 = _mod8688;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 });
@@ -78,7 +78,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pending(arg0
   return <tmp2 source={tmp} />;
 });
 function getPendingSource(theme) {
-  const obj = _mod8661;
+  const obj = _mod8688;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }

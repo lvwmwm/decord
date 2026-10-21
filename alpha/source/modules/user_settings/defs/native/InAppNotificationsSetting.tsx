@@ -1,21 +1,21 @@
-// Module ID: 16596
-// Function ID: 16597
+// Module ID: 16672
+// Function ID: 16673
 // Name: InAppNotificationsSetting
-// Dependencies: [8280, 1087, 558, 4776, 576, 13571, 1128, 2854, 1267, 11111, 15523, 16597, 2]
+// Dependencies: [8308, 1087, 558, 4797, 576, 13638, 1128, 2864, 1267, 11155, 15595, 16673, 2]
 
-// Module 16596 (InAppNotificationsSetting)
+// Module 16672 (InAppNotificationsSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import _modDef2854 from "module_2854" /* 2854 */;
-import UserSettings from "UserSettings" /* 4776 */;
-import SettingsConstants from "SettingsConstants" /* 8280 */;
-import FocusModeUtils from "FocusModeUtils" /* 13571 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 15523 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 16597 */;
+import _modDef2864 from "module_2864" /* 2864 */;
+import UserSettings from "UserSettings" /* 4797 */;
+import SettingsConstants from "SettingsConstants" /* 8308 */;
+import FocusModeUtils from "FocusModeUtils" /* 13638 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 15595 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 16673 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11111 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11155 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -88,7 +88,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRedesig
     if (focusModeEnabled) {
       stringResult = string(tmp(1128).t.cIRG0s);
     } else {
-      stringResult = string(_modDef2854["T/zMdV"]);
+      stringResult = string(_modDef2864["T/zMdV"]);
     }
     cResult[0] = focusModeEnabled;
     cResult[1] = stringResult;
@@ -106,7 +106,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRedesig
   if (focusModeEnabled) {
     stringResult = string(intl2.t.cIRG0s);
   } else {
-    stringResult = string(_modDef2854["T/zMdV"]);
+    stringResult = string(_modDef2864["T/zMdV"]);
   }
   return stringResult;
 });
@@ -131,7 +131,7 @@ const createToggle2 = SettingBuilders.createToggle;
 const obj3 = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2854.sH5mu9);
+    return intl.string(_modDef2864.sH5mu9);
   },
   useDescription: tmp4,
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,

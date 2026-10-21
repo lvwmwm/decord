@@ -1,9 +1,9 @@
-// Module ID: 10794
-// Function ID: 10795
+// Module ID: 10938
+// Function ID: 10939
 // Name: UnreadSettingNoticeStore2
-// Dependencies: [502, 4800, 4822, 4851, 6655, 1087, 6656, 1097, 1104, 11, 1405, 504, 10795, 584, 2]
+// Dependencies: [502, 4821, 4843, 4872, 6683, 1087, 6684, 1097, 1104, 11, 1405, 504, 10939, 584, 2]
 
-// Module 10794 (UnreadSettingNoticeStore2)
+// Module 10938 (UnreadSettingNoticeStore2)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -11,18 +11,18 @@ import Constants from "Constants" /* 1087 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
-import ReadStateConstants from "ReadStateConstants" /* 6656 */;
-import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 10795 */;
+import ReadStateConstants from "ReadStateConstants" /* 6684 */;
+import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 10939 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import GuildStore from "GuildStore" /* 4822 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4851 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6655 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import GuildStore from "GuildStore" /* 4843 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6683 */;
 import size from "module_2" /* 2 */;
 
 let guild;
 
-const f106976 = () => {
+const f107647 = () => {
   let flag = false;
   if (null != closure_16) {
     flag = false;
@@ -57,7 +57,7 @@ function startInterval() {
   }
   if (UserGuildSettingsStore.useNewNotifications) {
     const _setInterval = setInterval;
-    interval = setInterval(f106976, 15 * DurationsDefault.Millis.SECOND);
+    interval = setInterval(f107647, 15 * DurationsDefault.Millis.SECOND);
   }
   return false;
 }
@@ -276,7 +276,7 @@ const obj5 = {
     }
     if (UserGuildSettingsStore.useNewNotifications) {
       const _setInterval = setInterval;
-      interval = setInterval(f106976, 15 * DurationsDefault.Millis.SECOND);
+      interval = setInterval(f107647, 15 * DurationsDefault.Millis.SECOND);
     }
     let closure_0 = Date.now() - WEEK;
     const arr = SnowflakeUtilsDefault;

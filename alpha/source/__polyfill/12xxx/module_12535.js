@@ -1,121 +1,142 @@
 // Module ID: 12535
 // Function ID: 12536
-// Dependencies: [12424, 12422, 12423]
-// Exports: supportsDOMError, supportsDOMException, supportsErrorEvent, supportsNativeFetch, supportsReferrerPolicy, supportsReportingObserver
+// Dependencies: [32, 12507, 12479, 12506]
+// Exports: addIntegration, afterSetupIntegrations, defineIntegration, getIntegrationsToSetup, setupIntegrations
 
 // Module 12535
-import _mod12422 from "module_12422" /* 12422 */;
-import _mod12424 from "module_12424" /* 12424 */;
+import _mod12506 from "module_12506" /* 12506 */;
+import _mod12507 from "module_12507" /* 12507 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-function supportsFetch() {
-  if ("fetch" in _mod12424.GLOBAL_OBJ) {
-    try {
-      const _Headers = Headers;
-      const self = this;
-      const headers = new Headers();
-      const _Request = Request;
-      const self2 = this;
-      const request = new Request("http://www.example.com");
-      const _Response = Response;
-      const self3 = this;
-      const response = new Response();
-      return true;
-    } catch (err) {
-      return false;
+let integrations;
+
+function setupIntegration(on, name, arg2) {
+  let closure_0 = on;
+  if (arg2[name.name]) {
+    const tmp10 = require;
+    if (_mod12507.DEBUG_BUILD) {
+      const logger2 = tmp10(12479).logger;
+      const _HermesInternal2 = HermesInternal;
+      logger2.log("Integration skipped because it was already installed: " + name.name);
     }
   } else {
-    return false;
+    arg2[name.name] = name;
+    const arr = items;
+    const tmp = -1 === items.indexOf(name.name) && typeof name.setupOnce === "function";
+    if (tmp) {
+      name.setupOnce();
+      arr.push(name.name);
+    }
+    const tmp4 = name.setup && typeof name.setup === "function";
+    if (tmp4) {
+      name.setup(on);
+    }
+    if (typeof name.preprocessEvent === "function") {
+      const preprocessEvent = name.preprocessEvent;
+      let closure_1 = preprocessEvent.bind(name);
+      on.on("preprocessEvent", (arg0, arg1) => closure_1(arg0, arg1, closure_0));
+    }
+    if (typeof name.processEvent === "function") {
+      const processEvent = name.processEvent;
+      let closure_2 = processEvent.bind(name);
+      const _Object = Object;
+      const obj = { id: name.name };
+      on.addEventProcessor(Object.assign((arg0, arg1) => closure_2(arg0, arg1, closure_0), obj));
+    }
+    const tmp6 = require;
+    if (_mod12507.DEBUG_BUILD) {
+      const logger = tmp6(12479).logger;
+      const _HermesInternal = HermesInternal;
+      logger.log("Integration installed: " + name.name);
+    }
   }
 }
-function isNativeFunction(arg0) {
-  let isMatch = arg0;
-  if (isMatch) {
-    const obj = /^function\s+\w+\(\)\s+\{\s+\[native code\]\s+\}$/;
-    isMatch = obj.test(arg0.toString());
-  }
-  return isMatch;
-}
+let items = [];
 
-export { isNativeFunction };
-export const supportsDOMError = function supportsDOMError() {
-  try {
-    const self = this;
-    const dOMError = new globalThis.DOMError("");
-    return true;
-  } catch (err) {
-    return false;
+export const addIntegration = function addIntegration(name) {
+  const obj = _mod12506;
+  const client = obj.getClient();
+  if (client) {
+    client.addIntegration(name);
+  } else if (_mod12507.DEBUG_BUILD) {
+    const logger = tmp(12479).logger;
+    const _HermesInternal = HermesInternal;
+    logger.warn("Cannot add integration \"" + name.name + "\" because no SDK Client is available.");
   }
 };
-export const supportsDOMException = function supportsDOMException() {
-  try {
-    const self = this;
-    const dOMException = new globalThis.DOMException("");
-    return true;
-  } catch (err) {
-    return false;
+export const afterSetupIntegrations = function afterSetupIntegrations(arg0, arg1) {
+  const iter = arg1[Symbol.iterator]();
+  let afterAllSetup = iter.next();
+  while (iter !== undefined) {
+    let obj = afterAllSetup;
+    if (obj) {
+      afterAllSetup = obj.afterAllSetup;
+    }
+    if (afterAllSetup) {
+      let afterAllSetupResult = obj.afterAllSetup(arg0);
+    }
+    continue;
   }
 };
-export const supportsErrorEvent = function supportsErrorEvent() {
-  try {
-    const self = this;
-    const errorEvent = new globalThis.ErrorEvent("");
-    return true;
-  } catch (err) {
-    return false;
-  }
-};
-export { supportsFetch };
-export const supportsNativeFetch = function supportsNativeFetch() {
-  if (typeof globalThis.EdgeRuntime === "string") {
-    return true;
-  } else if (supportsFetch()) {
-    const tmp = isNativeFunction;
-    if (isNativeFunction(_mod12424.GLOBAL_OBJ.fetch)) {
-      return true;
-    } else {
-      let flag2 = false;
-      const _document = tmp2(12424).GLOBAL_OBJ.document;
-      if (_document) {
-        if (typeof _document.createElement === "function") {
-          try {
-            const element = <iframe />;
-            element.hidden = true;
-            const head = _document.head;
-            head.appendChild(element);
-            const _fetch = element.contentWindow && tmp5.contentWindow.fetch;
-            if (_fetch) {
-              flag2 = tmp(tmp5.contentWindow.fetch);
-            }
-            const head2 = _document.head;
-            head2.removeChild(element);
-          } catch (tmp10) {
-            if (_mod12422.DEBUG_BUILD) {
-              const logger = tmp2(12423).logger;
-              logger.warn("Could not create sandbox iframe for pure fetch check, bailing to window.fetch: ", tmp10);
-            }
-          }
-        }
+export function defineIntegration(arg0) {
+  return arg0;
+}
+export const getIntegrationsToSetup = function getIntegrationsToSetup(defaultIntegrations) {
+  let arr2;
+  const arr = defaultIntegrations.defaultIntegrations || [];
+  integrations = defaultIntegrations.integrations;
+  const item = arr.forEach((item) => {
+    item.isDefaultInstance = true;
+  });
+  if (Array.isArray(integrations)) {
+    items = [];
+    HermesBuiltin.arraySpread(items, integrations, HermesBuiltin.arraySpread(items, arr, 0));
+    arr2 = items;
+  } else {
+    arr2 = arr;
+    if (typeof integrations === "function") {
+      const integrationsResult = integrations(arr);
+      const _Array = Array;
+      let tmp3 = integrationsResult;
+      if (!Array.isArray(integrationsResult)) {
+        const items1 = [integrationsResult];
+        tmp3 = items1;
       }
-      return flag2;
+      arr2 = tmp3;
     }
-  } else {
-    return false;
   }
-};
-export const supportsReferrerPolicy = function supportsReferrerPolicy() {
-  if (supportsFetch()) {
-    try {
-      const _Request = Request;
-      const self = this;
-      const request = new Request("_", { referrerPolicy: "origin" });
-      return true;
-    } catch (err) {
-      return false;
+  const obj = {};
+  const item1 = arr2.forEach((name) => {
+    name = name.name;
+    let isDefaultInstance = tmp2;
+    const tmp = obj;
+    if (obj[name]) {
+      isDefaultInstance = !tmp2.isDefaultInstance;
     }
-  } else {
-    return false;
+    if (isDefaultInstance) {
+      isDefaultInstance = name.isDefaultInstance;
+    }
+    if (!isDefaultInstance) {
+      tmp[name] = name;
+    }
+  });
+  const values = Object.values(obj);
+  const findIndexResult = values.findIndex((name) => "Debug" === name.name);
+  if (findIndexResult > -1) {
+    values.push(_slicedToArray(values.splice(findIndexResult, 1), 1)[0]);
   }
+  return values;
 };
-export const supportsReportingObserver = function supportsReportingObserver() {
-  return "ReportingObserver" in _mod12424.GLOBAL_OBJ;
+export const installedIntegrations = items;
+export { setupIntegration };
+export const setupIntegrations = function setupIntegrations(arg0, arr) {
+  let closure_0 = arg0;
+  const obj = {};
+  const item = arr.forEach((item) => {
+    const tmp = item;
+    if (tmp) {
+      setupIntegration(closure_0, item, obj);
+    }
+  });
+  return obj;
 };

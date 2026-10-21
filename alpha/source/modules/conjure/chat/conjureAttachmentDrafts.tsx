@@ -1,16 +1,16 @@
-// Module ID: 12171
-// Function ID: 12172
+// Module ID: 12233
+// Function ID: 12234
 // Name: conjureAttachmentDrafts
-// Dependencies: [109, 5124, 11001, 11646, 1128, 3820, 11645, 558, 576, 584, 2]
+// Dependencies: [109, 5145, 10656, 11696, 1128, 3830, 11695, 558, 576, 584, 2]
 // Exports: addConjureAttachmentDrafts, clearConjureAttachmentDrafts, conjureAttachmentTooLargeText, removeConjureAttachmentDraft, sendConjureCardReply, uploadConjureAttachment
 
-// Module 12171 (conjureAttachmentDrafts)
+// Module 12233 (conjureAttachmentDrafts)
 import intl2 from "intl" /* 1128 */;
-import _modDef3820 from "module_3820" /* 3820 */;
-import ZustandStore from "ZustandStore" /* 5124 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 11001 */;
-import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 11645 */;
-import conjureAttachmentRequests from "conjureAttachmentRequests" /* 11646 */;
+import _modDef3830 from "module_3830" /* 3830 */;
+import ZustandStore from "ZustandStore" /* 5145 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10656 */;
+import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 11695 */;
+import conjureAttachmentRequests from "conjureAttachmentRequests" /* 11696 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import Dispatcher_mod from "Dispatcher" /* 584 */;
@@ -19,7 +19,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, closure_8;
 
-const f112734 = () => {
+const f113112 = () => {
 
 };
 function _toPropertyKey(obj) {
@@ -83,7 +83,7 @@ function discardDraft(projectId, item10010) {
     const id = item10010.ref.id;
     const obj = conjureAttachmentRequests;
     const result = obj.deleteStagedAttachment(projectId, id);
-    result.catch(f112734);
+    result.catch(f113112);
   }
 }
 function discardProject(projectId, deleteFromWorker) {
@@ -195,7 +195,7 @@ function conjureAttachmentTooLargeText(contentType) {
   const intl = intl2.intl;
   const formatToPlainString = intl.formatToPlainString;
   const obj = { size: formatConjureAttachmentLimit(obj2.conjureAttachmentLimit(contentType)) };
-  const JZ59Bo = _modDef3820.JZ59Bo;
+  const JZ59Bo = _modDef3830.JZ59Bo;
   formatConjureAttachmentLimit = ConjureAttachmentTypes.formatConjureAttachmentLimit;
   ConjureAttachmentTypes;
   obj2 = ConjureAttachmentTypes;
@@ -235,7 +235,7 @@ export const uploadConjureAttachment = function uploadConjureAttachment(arg0, si
     const intl = tmp(1128).intl;
     formatToPlainString = intl.formatToPlainString;
     obj3 = { size: formatConjureAttachmentLimit(tmpResult4.conjureAttachmentLimit(contentType)) };
-    JZ59Bo = _modDef3820.JZ59Bo;
+    JZ59Bo = _modDef3830.JZ59Bo;
     formatConjureAttachmentLimit = ConjureAttachmentTypes.formatConjureAttachmentLimit;
     ConjureAttachmentTypes;
     tmpResult4 = ConjureAttachmentTypes;
@@ -294,7 +294,7 @@ export const removeConjureAttachmentDraft = function removeConjureAttachmentDraf
       const id = found.ref.id;
       const obj2 = conjureAttachmentRequests;
       const result = obj2.deleteStagedAttachment(projectId, id);
-      result.catch(f112734);
+      result.catch(f113112);
     }
     const found1 = tmp2.filter((localId) => localId.localId !== closure_0);
     const draftsByProject = obj.getState().draftsByProject;

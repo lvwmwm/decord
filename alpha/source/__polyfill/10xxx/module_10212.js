@@ -1,106 +1,247 @@
 // Module ID: 10212
 // Function ID: 10213
-// Dependencies: [10213, 10215, 10216, 10217, 10218, 10219, 10220, 10140, 10147, 10149, 10221, 10222, 10186, 10180]
-// Exports: createCasualConfiguration, parse, parseDate
+// Dependencies: [41, 42, 10179, 10175]
 
 // Module 10212
-import includeCommonConfiguration2 from "includeCommonConfiguration" /* 10180 */;
-import _mod10186 from "module_10186" /* 10186 */;
-import _mod10213 from "module_10213" /* 10213 */;
-import _mod10215 from "module_10215" /* 10215 */;
-import _mod10216 from "module_10216" /* 10216 */;
-import _mod10217 from "module_10217" /* 10217 */;
-import _mod10218 from "module_10218" /* 10218 */;
-import _mod10219 from "module_10219" /* 10219 */;
-import _mod10220 from "module_10220" /* 10220 */;
-import _mod10221 from "module_10221" /* 10221 */;
-import _mod10222 from "module_10222" /* 10222 */;
-import { Chrono } from "module_10140" /* 10140 */;
+import assignSimilarDate2 from "assignSimilarDate" /* 10179 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
-const require = globalThis.__r;
+let hasOwnProperty;
 
-function createConfiguration(flag) {
-  let items;
-  let items1;
-  if (flag === undefined) {
-    flag = true;
-  }
-  const obj = { parsers: items, refiners: items1 };
-  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
-  items = [new module_10213.default(), , , , ];
-  new module_10213.default();
-  items[1] = new module_10217.default();
-  new module_10217.default();
-  items[2] = new module_10222.default();
-  new module_10222.default();
-  items[3] = new module_10218.default();
-  new module_10218.default();
-  items[4] = new module_10219.default();
-  new module_10219.default();
-  items1 = [new module_10221.default(), , ];
-  new module_10221.default();
-  items1[1] = new module_10220.default();
-  new module_10220.default();
-  items1[2] = new module_10215.default();
-  new module_10215.default();
-  const result = includeCommonConfiguration(obj, flag);
-  const refiners = result.refiners;
-  result.refiners = refiners.filter((item) => !(item instanceof module_10186.default));
-  return result;
+let self = this;
+let self2 = this;
+if (this) {
+  self2 = self.__createBinding;
 }
-const fn = this && this.__importDefault || ((__esModule) => {
-  let tmp2;
-  const tmp = __esModule;
-  if (!tmp) {
-    tmp2 = { default: __esModule };
-    const obj = { default: __esModule };
-  } else {
-    tmp2 = __esModule;
-  }
-  return tmp2;
-});
-function createCasualConfiguration() {
-  const tmp = createConfiguration(false);
-  const parsers = tmp.parsers;
-  const unshift = parsers.unshift;
-  const _default = new module_10216.default();
-  unshift(_default);
-  return tmp;
+if (!self2) {
+  let _Object = Object;
+  self2 = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
+    }
+    let closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
+      }
+      tmp3 = !tmp4;
+    }
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
+    }
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
 }
-const module_10213 = fn(_mod10213);
-const module_10215 = fn(_mod10215);
-const module_10216 = fn(_mod10216);
-const module_10217 = fn(_mod10217);
-const module_10218 = fn(_mod10218);
-const module_10219 = fn(_mod10219);
-const module_10220 = fn(_mod10220);
-const module_10221 = fn(_mod10221);
-const module_10222 = fn(_mod10222);
-const module_10186 = fn(_mod10186);
-const configuration = createConfiguration(false);
-let parsers = configuration.parsers;
-let unshift = parsers.unshift;
-let _default = new module_10216.default();
-unshift(_default);
-const chrono = new Chrono(configuration);
-const chrono1 = new require("module_10140").Chrono(createConfiguration(true));
-const Chrono_export = require("module_10140").Chrono;
+let tmp3 = self && self.__setModuleDefault;
+if (!tmp3) {
+  let tmp4 = globalThis;
+  const _Object2 = Object;
+  tmp3 = Object.create ? ((arg0, value) => {
+    const obj = { enumerable: true, value };
+    Object.defineProperty(arg0, "default", obj);
+  }) : ((arg0, arg1) => {
+    arg0.default = arg1;
+  });
+}
+let closure_5 = tmp3;
+let fn = self && self.__importStar;
+if (!fn) {
+  fn = function t(arg0) {
+    fn = Object.getOwnPropertyNames || ((obj) => {
+      const items = [];
+      for (const key10005 in obj) {
+        let _Object = Object;
+        hasOwnProperty = Object.prototype.hasOwnProperty;
+        if (!hasOwnProperty.call(obj, key10005)) {
+          continue;
+        } else {
+          items[items.length] = key10005;
+          continue;
+        }
+        continue;
+      }
+      return items;
+    });
+    return fn(arg0);
+  };
+  fn = (__esModule) => {
+    const tmp = __esModule;
+    if (tmp) {
+      if (__esModule.__esModule) {
+        return __esModule;
+      }
+    }
+    const obj = {};
+    if (null != __esModule) {
+      let num;
+      const arr = fn(__esModule);
+      for (let num = 0; num < arr.length; num = num + 1) {
+        if ("default" !== arr[num]) {
+          let tmp5 = self2(obj, __esModule, arr[num]);
+        }
+      }
+    }
+    closure_5(obj, __esModule);
+    return obj;
+  };
+}
+const assignSimilarDate = fn(assignSimilarDate2);
+class ForwardDateRefiner {
+  constructor() {
+    _classCallCheck(this, ForwardDateRefiner);
+  }
+}
+const entry = {
+  key: "refine",
+  value: function refine(option, arr) {
+    let self = this;
+    if (option.option.forwardDate) {
+      const item = arr.forEach(function(start) {
+        let end3;
+        let end8;
+        let end9;
+        let start3;
+        let start8;
+        let start9;
+        option = start;
+        const reference = option.reference;
+        const dateWithAdjustedTimezone = reference.getDateWithAdjustedTimezone();
+        start = start.start;
+        if (start.isOnlyTime()) {
+          const start2 = start.start;
+          if (option.reference.instant > start2.date()) {
+            const reference2 = obj.reference;
+            const dateWithAdjustedTimezone1 = reference2.getDateWithAdjustedTimezone();
+            const _Date = Date;
+            self = this;
+            self2 = this;
+            const date = new Date(dateWithAdjustedTimezone1);
+            date.setDate(date.getDate() + 1);
+            assignSimilarDate.implySimilarDate(start.start, date);
+            option.debug(() => {
+              console.log("" + self.constructor.name + " adjusted " + start + " time from the ref date (" + dateWithAdjustedTimezone1 + ") to the following day (" + date + ")");
+            });
+            let end2 = start.end;
+            if (end2) {
+              const end = start.end;
+              end2 = end.isOnlyTime();
+            }
+            if (end2) {
+              assignSimilarDate.implySimilarDate(start.end, date);
+              ({ start: start3, end: end3 } = start);
+              const dateResult = start3.date();
+              if (dateResult > end3.date()) {
+                date.setDate(date.getDate() + 1);
+                assignSimilarDate.implySimilarDate(start.end, date);
+              }
+            }
+          }
+        }
+        const start4 = start.start;
+        let tmp5 = dateWithAdjustedTimezone;
+        if (start4.isOnlyWeekdayComponent()) {
+          const start5 = start.start;
+          tmp5 = dateWithAdjustedTimezone;
+          if (dateWithAdjustedTimezone > start5.date()) {
+            const start11 = start.start;
+            const value = start11.get("weekday");
+            const diff = value - dateWithAdjustedTimezone.getDay();
+            let sum = diff;
+            if (diff <= 0) {
+              sum = diff + 7;
+            }
+            const obj2 = { day: sum };
+            const addDurationResult = option(self[3]).addDuration(dateWithAdjustedTimezone, obj2);
+            option(self[2]).implySimilarDate(start.start, addDurationResult);
+            option.debug(() => {
+              console.log("" + self.constructor.name + " adjusted " + start + " weekday (" + start.start + ")");
+            });
+            tmp5 = addDurationResult;
+            if (start.end) {
+              const end4 = start.end;
+              tmp5 = addDurationResult;
+              if (end4.isOnlyWeekdayComponent()) {
+                const end5 = start.end;
+                const value2 = end5.get("weekday");
+                const diff1 = value2 - addDurationResult.getDay();
+                let sum1 = diff1;
+                if (diff1 <= 0) {
+                  sum1 = diff1 + 7;
+                }
+                const obj3 = { day: sum1 };
+                const addDurationResult1 = option(self[3]).addDuration(addDurationResult, obj3);
+                option(self[2]).implySimilarDate(start.end, addDurationResult1);
+                option.debug(() => {
+                  console.log("" + self.constructor.name + " adjusted " + start + " weekday (" + start.end + ")");
+                });
+                tmp5 = addDurationResult1;
+              }
+            }
+          }
+        }
+        const start6 = start.start;
+        if (start6.isDateWithUnknownYear()) {
+          const start7 = start.start;
+          if (tmp5 > start7.date()) {
+            const start12 = start.start;
+            let num3 = 0;
+            if (tmp5 > start12.date()) {
+              while (true) {
+                ({ start: start8, start: start9 } = start);
+                let implyResult = start8.imply("year", start9.get("year") + 1);
+                let obj6 = option;
+                let debugResult3 = option.debug(() => {
+                  console.log("" + self.constructor.name + " adjusted " + start + " year (" + start.start + ")");
+                });
+                let end6 = start.end;
+                if (end6) {
+                  let end7 = start.end;
+                  end6 = !end7.isCertain("year");
+                }
+                if (end6) {
+                  ({ end: end8, end: end9 } = start);
+                  let implyResult1 = end8.imply("year", end9.get("year") + 1);
+                  let debugResult4 = obj6.debug(() => {
+                    console.log("" + self.constructor.name + " adjusted " + start + " month (" + start.start + ")");
+                  });
+                }
+                let sum2 = num3 + 1;
+                if (sum2 >= 3) {
+                  break;
+                } else {
+                  let start10 = start.start;
+                  num3 = sum2;
+                  if (tmp5 <= start10.date()) {
+                    break;
+                  }
+                }
+              }
+            }
+          }
+        }
+      });
+    }
+    return arr;
+  }
+};
+let items = [entry];
 
-export const parse = function parse(arg0, arg1, arg2) {
-  const casual = exports.casual;
-  return casual.parse(arg0, arg1, arg2);
-};
-export const parseDate = function parseDate(arg0, arg1, arg2) {
-  const casual = exports.casual;
-  return casual.parseDate(arg0, arg1, arg2);
-};
-export { createCasualConfiguration };
-export { createConfiguration };
-export { Chrono_export as Chrono };
-export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
-export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
-export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
-export const Meridiem = require("Meridiem").Meridiem;
-export const Weekday = require("Meridiem").Weekday;
-export const casual = chrono;
-export const strict = chrono1;
+export default _createClass(ForwardDateRefiner, items);

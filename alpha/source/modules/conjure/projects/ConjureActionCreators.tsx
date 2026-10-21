@@ -1,34 +1,34 @@
-// Module ID: 11023
-// Function ID: 11024
+// Module ID: 10678
+// Function ID: 10679
 // Name: ConjureActionCreators
-// Dependencies: [109, 5, 6722, 1392, 11024, 6724, 1087, 6656, 584, 1297, 11025, 5684, 11027, 569, 11022, 11028, 11030, 11033, 11031, 5587, 6725, 6760, 8607, 11034, 2]
-// Exports: applyPublishedPreview, applyRemixPreview, createProject, createRemix, deleteProjectInBackground, fetchApplicationChannels, fetchProjectLimit, loadMissingConjureProjects, prefetchProject, refreshConjureInstallState, refreshPreviewApplication, setGuildHints, setSelectedProjectForGuild, takePrefetchedRead, updateProjectSettings
+// Dependencies: [109, 5, 6750, 1392, 10679, 6752, 1087, 6684, 584, 1297, 10680, 5704, 10682, 569, 10677, 10683, 10685, 10688, 10686, 5608, 6753, 6788, 8634, 10689, 2]
+// Exports: applyPublishedPreview, applyRemixPreview, createProject, createRemix, deleteProjectInBackground, fetchApplicationChannels, fetchProjectLimit, isConjureProjectUnavailable, loadMissingConjureProjects, prefetchProject, refreshConjureInstallState, refreshPreviewApplication, setGuildHints, setSelectedProjectForGuild, takePrefetchedRead, updateProjectSettings
 
-// Module 11023 (ConjureActionCreators)
+// Module 10678 (ConjureActionCreators)
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5587 */;
-import ReadStateConstants from "ReadStateConstants" /* 6656 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6725 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6760 */;
-import UserActionCreators from "UserActionCreators" /* 8607 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 11022 */;
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 11028 */;
-import conjurePreviewTicket from "conjurePreviewTicket" /* 11030 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 11031 */;
-import createProxyTicket from "createProxyTicket" /* 11033 */;
-import conjureAppInServer from "conjureAppInServer" /* 11034 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5608 */;
+import ReadStateConstants from "ReadStateConstants" /* 6684 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6753 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6788 */;
+import UserActionCreators from "UserActionCreators" /* 8634 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10677 */;
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 10683 */;
+import conjurePreviewTicket from "conjurePreviewTicket" /* 10685 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 10686 */;
+import createProxyTicket from "createProxyTicket" /* 10688 */;
+import conjureAppInServer from "conjureAppInServer" /* 10689 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ReadStateStore from "ReadStateStore" /* 6722 */;
+import ReadStateStore from "ReadStateStore" /* 6750 */;
 import UserStore from "UserStore" /* 1392 */;
-import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 11024 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6724 */;
+import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 10679 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6752 */;
 import size from "module_2" /* 2 */;
 
-let GUILD_COLLABORATION, closure_14, closure_15, closure_29, projectsFetchState, resourceIds;
+let GUILD_COLLABORATION, closure_14, closure_15, closure_31, projectsFetchState, resourceIds;
 
 function updateIntegrationStatus(projectId, integrationStatus) {
   obj = DispatcherDefault;
@@ -242,7 +242,7 @@ obj = function _forgetMissingProjects() {
             c5 = 2;
             c6 = 4;
             c7 = 1;
-            let obj9 = { value: closure_131_32(c0), done: false };
+            let obj9 = { value: closure_131_34(c0), done: false };
             return obj9;
           }
         } else if (3 === tmp4) {
@@ -318,21 +318,21 @@ obj = function _drainMissingProjects() {
             let closure_2 = tmp2;
             c1 = undefined;
             c2 = undefined;
-            c26 = true;
+            c27 = true;
             closure_0 = [];
-            let closure_1 = set1;
-            closure_0 = set1[Symbol.iterator]();
+            let closure_1 = set2;
+            closure_0 = set2[Symbol.iterator]();
             if (closure_0 === undefined) {
-              c26 = false;
+              c27 = false;
               if (0 !== closure_0.length) {
                 let failResult = closure_131_22.fail(() => {
                   for (const item10005 of closure_1_0) {
                     let addResult = set.add(item10005);
                     continue;
                   }
-                  const tmp3 = closure_2_26;
+                  const tmp3 = closure_2_27;
                   if (!tmp3) {
-                    closure_2_27();
+                    closure_2_29();
                   }
                 });
               } else {
@@ -342,16 +342,17 @@ obj = function _drainMissingProjects() {
               return { value: "IconComponent", done: null };
             } else {
               let c5 = 1;
-              c1 = tmp34;
-              let deleteResult = set2.delete(c1);
+              c1 = tmp36;
+              let deleteResult = set3.delete(c1);
               if (!set.has(c1)) {
                 let addResult = set.add(c1);
                 if (null == project.getProject(c1)) {
                   c2 = undefined;
+                  c28 = c1;
                   c5 = 2;
                   c6 = 3;
                   c7 = 1;
-                  let obj5 = { value: closure_131_32(c1), done: false };
+                  let obj5 = { value: closure_131_34(c1), done: false };
                   return obj5;
                 }
               }
@@ -380,6 +381,7 @@ obj = function _drainMissingProjects() {
             c2 = 200;
             c5 = 1;
           }
+          c28 = null;
           if (200 !== c2) {
             if (403 !== c2) {
               if (404 !== c2) {
@@ -387,7 +389,8 @@ obj = function _drainMissingProjects() {
                 let arr = closure_0.push(c1);
               }
             }
-            let tmp28 = closure_131_21(c1);
+            let addResult1 = set2.add(c1);
+            let tmp30 = closure_131_21(c1);
           }
         }
         c5 = 0;
@@ -440,9 +443,9 @@ obj = function _fetchProjectLimit() {
             }
             closure_0 = c0;
             if (null != c0) {
-              if (closure_29 !== c0) {
+              if (closure_31 !== c0) {
                 if (!ConjureProjectStore.hasFetchedProjectLimit()) {
-                  closure_29 = tmp16;
+                  closure_31 = tmp16;
                   max_projects = null;
                   c3 = 1;
                   const HTTP = HTTPUtils.HTTP;
@@ -470,8 +473,8 @@ obj = function _fetchProjectLimit() {
             max_projects = value.body.max_projects;
             c3 = 0;
           }
-          if (c29 === closure_0) {
-            c29 = null;
+          if (c31 === closure_0) {
+            c31 = null;
           }
           const currentUser1 = currentUser.getCurrentUser();
           let id1;
@@ -829,7 +832,7 @@ obj = function _updateProjectSettings() {
         const tmp7 = null == user.name && null == user.icon && null == user.description && !("cover_image" in user);
       }
       if (!tmp14) {
-        const promise = closure_131_40(preview_application_id);
+        const promise = closure_131_42(preview_application_id);
         promise.catch(() => {
 
         });
@@ -1001,8 +1004,10 @@ let closure_22 = tmp2;
 let id = null;
 const set = new Set();
 const set1 = new Set();
-let c26 = false;
-let c29 = null;
+const set2 = new Set();
+let c27 = false;
+let c28 = null;
+let c31 = null;
 const map = new Map();
 let result = size.fileFinishedImporting("modules/conjure/projects/ConjureActionCreators.tsx");
 
@@ -1043,7 +1048,11 @@ export const applyPublishedPreview = function applyPublishedPreview(projectId, a
   tmpResult.dispatch(obj5);
 };
 export { listProjects };
-export const loadMissingConjureProjects = function loadMissingConjureProjects(arg0) {
+export const isConjureProjectUnavailable = function isConjureProjectUnavailable(arg0) {
+  const hasItem = set1.has(arg0) && null == ConjureProjectStore.getProject(arg0);
+  return hasItem;
+};
+export const loadMissingConjureProjects = function loadMissingConjureProjects(items) {
   const currentUser = UserStore.getCurrentUser();
   id = undefined;
   if (currentUser != null) {
@@ -1055,18 +1064,33 @@ export const loadMissingConjureProjects = function loadMissingConjureProjects(ar
   if (id !== id) {
     set.clear();
     set1.clear();
+    set2.clear();
     closure_22.cancel();
   }
-  const iter = arg0[Symbol.iterator]();
+  const iter = items[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
-    let tmp10 = nextResult;
-    if (!set.has(nextResult)) {
-      let addResult = set1.add(tmp10);
+    let tmp13 = nextResult;
+    obj = set;
+    let hasItem = set.has(nextResult);
+    if (hasItem) {
+      hasItem = !set1.has(tmp13);
+    }
+    if (hasItem) {
+      hasItem = c28 !== tmp13;
+    }
+    if (hasItem) {
+      hasItem = null == ConjureProjectStore.getProject(tmp13);
+    }
+    if (hasItem) {
+      let deleteResult = obj.delete(tmp13);
+    }
+    if (!obj.has(tmp13)) {
+      let addResult = set2.add(tmp13);
     }
     continue;
   }
-  const pending = c26 || closure_22.pending;
+  const pending = c27 || closure_22.pending;
   if (!pending) {
     drainMissingProjects();
   }

@@ -1,13 +1,13 @@
-// Module ID: 9852
-// Function ID: 9853
+// Module ID: 9882
+// Function ID: 9883
 // Name: useModalDismissGuardRefreshControl
-// Dependencies: [19, 17, 21, 558, 576, 9853, 1384, 2]
+// Dependencies: [19, 17, 21, 558, 576, 9883, 1384, 2]
 
-// Module 9852 (useModalDismissGuardRefreshControl)
+// Module 9882 (useModalDismissGuardRefreshControl)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import PortalKeyboardModalContext from "PortalKeyboardModalContext" /* 9853 */;
+import PortalKeyboardModalContext from "PortalKeyboardModalContext" /* 9883 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -42,7 +42,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useModalDi
   return tmp5;
 }) : (function useModalDismissGuardRefreshControl() {
   let isPortalKeyboardInModal;
-  let obj = isPortalKeyboardInModal(9853);
+  let obj = isPortalKeyboardInModal(9883);
   isPortalKeyboardInModal = obj.useIsPortalKeyboardInModal();
   const items = [isPortalKeyboardInModal];
   return react.useMemo(() => {

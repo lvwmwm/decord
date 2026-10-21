@@ -1,13 +1,13 @@
-// Module ID: 5873
-// Function ID: 5874
+// Module ID: 5895
+// Function ID: 5896
 // Name: OverlayView
-// Dependencies: [109, 19, 17, 21, 1384, 5874, 558, 576, 5923, 2]
+// Dependencies: [109, 19, 17, 21, 1384, 5896, 558, 576, 5945, 2]
 
-// Module 5873 (OverlayView)
+// Module 5895 (OverlayView)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import enableScreens from "enableScreens" /* 5874 */;
-import react_nativeDefault from "react-native" /* 5923 */;
+import enableScreens from "enableScreens" /* 5896 */;
+import react_nativeDefault from "react-native" /* 5945 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

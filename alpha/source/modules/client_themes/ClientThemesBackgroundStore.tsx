@@ -1,25 +1,25 @@
-// Module ID: 4969
-// Function ID: 4970
+// Module ID: 4990
+// Function ID: 4991
 // Name: ClientThemesBackgroundStore
-// Dependencies: [1208, 1207, 1209, 1246, 4804, 4800, 1392, 1255, 1210, 4970, 4784, 4994, 2054, 4776, 4997, 4998, 504, 1254, 584, 2]
+// Dependencies: [1208, 1207, 1209, 1246, 4825, 4821, 1392, 1255, 1210, 4991, 4805, 5015, 2053, 4797, 5018, 5019, 504, 1254, 584, 2]
 
-// Module 4969 (ClientThemesBackgroundStore)
+// Module 4990 (ClientThemesBackgroundStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ThemeConstants from "ThemeConstants" /* 1210 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1254 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1255 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2054 */;
-import UserSettings from "UserSettings" /* 4776 */;
-import dismissible_content from "dismissible_content" /* 4784 */;
-import ChannelRecord from "ChannelRecord" /* 4804 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4970 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 4998 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2053 */;
+import UserSettings from "UserSettings" /* 4797 */;
+import dismissible_content from "dismissible_content" /* 4805 */;
+import ChannelRecord from "ChannelRecord" /* 4825 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4991 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 5019 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1208 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1209 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 
@@ -247,7 +247,7 @@ let obj = {
         const obj2 = DismissibleContentUnsafeUtils;
         const tmp6 = require;
         if (!obj2.UNSAFE_isDismissibleContentDismissed(dismissible_content.DismissibleContent.CLIENT_THEMES_COACHMARK)) {
-          const tmp6Result = tmp6(4994);
+          const tmp6Result = tmp6(5015);
           if (tmp6Result.ageEligibleForPremiumUpsell(tmp)) {
             const channel = ChannelStore.getChannel(channelId);
             const tmp4 = null != channel && isGuildTextChannelType(channel.type);

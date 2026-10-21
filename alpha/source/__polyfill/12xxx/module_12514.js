@@ -1,178 +1,42 @@
 // Module ID: 12514
 // Function ID: 12515
-// Dependencies: [12479, 12424, 12515]
-// Exports: generateIteratee
+// Dependencies: [12486]
+// Exports: handleCallbackErrors
 
 // Module 12514
-import _mod12515 from "module_12515" /* 12515 */;
-import module_12479 from "module_12479" /* 12479 */;
-
-const require = globalThis.__r;
-let _require, stacktrace;
+import _mod12486 from "module_12486" /* 12486 */;
 
 
-export const generateIteratee = function generateIteratee(arg0) {
-  let closure_2;
-  let require;
-  ({ isBrowser: require, root: dependencyMap, prefix: closure_2 } = arg0);
-  return (filename) => {
-    if (filename.filename) {
-      const obj = /^[a-zA-Z]:\\/;
-      let isMatch = obj.test(filename.filename);
-      if (!isMatch) {
-        filename = filename.filename;
-        let hasItem = filename.includes("\\");
-        if (hasItem) {
-          const filename2 = filename.filename;
-          hasItem = !filename2.includes("/");
-        }
-        isMatch = hasItem;
-      }
-      const tmp5 = closure_0;
-      if (tmp5) {
-        if (root) {
-          const filename1 = filename.filename;
-          if (0 === filename1.indexOf(root)) {
-            filename.filename = filename1.replace(root, prefix);
-          }
-        }
-      } else if (isMatch) {
-        let replaced;
-        let relativeResult;
-        if (isMatch) {
-          const str5 = filename.filename.replace(/^[a-zA-Z]:/, "");
-          replaced = str5.replace(/\\/g, "/");
-        } else {
-          replaced = str3;
-        }
-        const obj2 = _mod12515;
-        if (root) {
-          relativeResult = obj2.relative(tmp7, replaced);
-        } else {
-          relativeResult = obj2.basename(replaced);
-        }
-        const _HermesInternal = HermesInternal;
-        filename.filename = "" + prefix + relativeResult;
-      }
-      return filename;
+export const handleCallbackErrors = function handleCallbackErrors(fn, fn2) {
+  function maybeHandlePromiseRejection(promise, fn2, fn) {
+    let closure_0 = fn2;
+    let closure_1 = fn;
+    const obj = _mod12486;
+    if (obj.isThenable(promise)) {
+      return promise.then((result) => {
+        closure_1();
+        return result;
+      }, (arg0) => {
+        closure_0(arg0);
+        closure_1();
+        throw arg0;
+      });
     } else {
-      return filename;
+      fn();
+      return promise;
     }
-  };
-};
-export const rewriteFramesIntegration = module_12479.defineIntegration(() => {
-  let closure_0;
-  let prefix;
-  let root;
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
   }
-  let fn;
-  ({ prefix, root } = obj);
-  if (!prefix) {
-    prefix = "app:///";
-  }
-  const tmp = _require;
-  let tmp2 = root;
-  fn = obj.iteratee;
-  const tmp3 = "window" in require("module_12424").GLOBAL_OBJ && undefined !== tmp(tmp2[1]).GLOBAL_OBJ.window;
-  if (!fn) {
-    _require = tmp3;
-    fn = (filename) => {
-      if (filename.filename) {
-        const obj = /^[a-zA-Z]:\\/;
-        let isMatch = obj.test(filename.filename);
-        if (!isMatch) {
-          filename = filename.filename;
-          let hasItem = filename.includes("\\");
-          if (hasItem) {
-            const filename2 = filename.filename;
-            hasItem = !filename2.includes("/");
-          }
-          isMatch = hasItem;
-        }
-        const tmp5 = closure_0;
-        if (tmp5) {
-          if (root) {
-            const filename1 = filename.filename;
-            if (0 === filename1.indexOf(root)) {
-              filename.filename = filename1.replace(root, prefix);
-            }
-          }
-        } else if (isMatch) {
-          let replaced;
-          let relativeResult;
-          if (isMatch) {
-            const str5 = filename.filename.replace(/^[a-zA-Z]:/, "");
-            replaced = str5.replace(/\\/g, "/");
-          } else {
-            replaced = str3;
-          }
-          const obj2 = _mod12515;
-          if (root) {
-            relativeResult = obj2.relative(tmp7, replaced);
-          } else {
-            relativeResult = obj2.basename(replaced);
-          }
-          const _HermesInternal = HermesInternal;
-          filename.filename = "" + prefix + relativeResult;
-        }
-        return filename;
-      } else {
-        return filename;
-      }
+  fn = arg2;
+  if (arg2 === undefined) {
+    fn = function t() {
+
     };
   }
-  let obj2 = {
-    name: "RewriteFrames",
-    processEvent(exception) {
-      function _processExceptionsEvent(exception) {
-        let obj2;
-        let values;
-        try {
-          let obj = { exception: obj2 };
-          let merged = Object.assign(exception);
-          obj2 = {
-            values: values.map((stacktrace) => {
-                let mapped;
-                const obj = {};
-                const merged = Object.assign(stacktrace);
-                stacktrace = stacktrace.stacktrace;
-                if (stacktrace) {
-                  const stacktrace2 = stacktrace.stacktrace;
-                  const obj2 = { frames: mapped };
-                  const merged1 = Object.assign(stacktrace2);
-                  mapped = stacktrace2 && stacktrace2.frames;
-                  if (mapped) {
-                    const frames = stacktrace2.frames;
-                    mapped = frames.map((item) => closure_1_0(item));
-                  }
-                  stacktrace = { stacktrace: obj2 };
-                  const obj3 = { stacktrace: obj2 };
-                }
-                const merged2 = Object.assign(stacktrace);
-                return obj;
-              })
-          };
-          let merged1 = Object.assign(exception.exception);
-          values = exception.exception.values;
-          return obj;
-        } catch (err) {
-          return exception;
-        }
-      }
-      exception = exception.exception;
-      if (exception) {
-        const _Array = Array;
-        exception = Array.isArray(exception.exception.values);
-      }
-      let tmp2 = exception;
-      if (exception) {
-        tmp2 = _processExceptionsEvent(exception);
-      }
-      return tmp2;
-    }
-  };
-  return obj2;
-});
+  try {
+    return maybeHandlePromiseRejection(fn(), fn2, fn);
+  } catch (tmp2) {
+    fn2(tmp2);
+    fn();
+    throw tmp2;
+  }
+};

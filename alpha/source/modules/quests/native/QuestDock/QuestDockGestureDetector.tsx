@@ -1,17 +1,17 @@
-// Module ID: 16278
-// Function ID: 16279
+// Module ID: 16354
+// Function ID: 16355
 // Name: QuestDockGestureDetector
-// Dependencies: [19, 6661, 16185, 21, 558, 576, 16213, 16182, 16186, 10720, 16189, 16272, 5014, 16190, 16187, 5258, 16184, 5173, 2]
+// Dependencies: [19, 6689, 16261, 21, 558, 576, 16289, 16258, 16262, 10864, 16265, 16348, 5035, 16266, 16263, 5279, 16260, 5194, 2]
 
-// Module 16278 (QuestDockGestureDetector)
+// Module 16354 (QuestDockGestureDetector)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
-import HapticUtils from "HapticUtils" /* 5173 */;
-import QuestConstants from "QuestConstants" /* 6661 */;
-import QuestDockUtils from "QuestDockUtils" /* 16184 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
+import HapticUtils from "HapticUtils" /* 5194 */;
+import QuestConstants from "QuestConstants" /* 6689 */;
+import QuestDockUtils from "QuestDockUtils" /* 16260 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 16185 */;
+import QuestDockConstants from "QuestDockConstants" /* 16261 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const LegacyBaseButton = tmp(5258);
+const LegacyBaseButton = tmp(5279);
 const QuestDockMode = QuestConstants.QuestDockMode;
 ({ QUEST_DOCK_COLLAPSED_HEIGHT: hasOwnProperty, QUEST_DOCK_CLOSED_HEIGHT: metroRequire, QUEST_DOCK_VERTICAL_EDGE_GUTTER_EXPANDED: metroImportDefault, QUEST_DOCK_GESTURE_VERTICAL_DELTA_MINIMUM: metroImportAll, QUEST_DOCK_GESTURE_CLOSED_VERTICAL_DELTA_MINIMUM: c9, QUEST_DOCK_GESTURE_MODE_TRANSITION_HEIGHT: c10, QUEST_DOCK_GESTURE_MODE_CLOSED_TRANSITION_HEIGHT: unpackModuleId, QUEST_DOCK_GESTURE_MODE_TRANSITION_VELOCITY: closure_12, QUEST_DOCK_GESTURE_TOUCH_MOVE_COUNT_THRESHOLD: map1, QUEST_DOCK_GESTURE_COLLAPSED_Y_OFFSET_FACTOR: closure_14, QUEST_DOCK_GESTURE_CLOSED_Y_OFFSET_FACTOR: closure_15, QUEST_DOCK_GESTURE_EXPANDED_EXCESS_HEIGHT_FACTOR: closure_16 } = QuestDockConstants);
 const jsx = Fragment.jsx;

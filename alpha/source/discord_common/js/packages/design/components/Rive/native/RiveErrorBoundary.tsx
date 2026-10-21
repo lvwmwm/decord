@@ -1,11 +1,11 @@
-// Module ID: 5061
-// Function ID: 5062
+// Module ID: 5082
+// Function ID: 5083
 // Name: RiveErrorBoundary
-// Dependencies: [19, 5057, 2]
+// Dependencies: [19, 5078, 2]
 
-// Module 5061 (RiveErrorBoundary)
+// Module 5082 (RiveErrorBoundary)
 import reactAll from "react" /* 19 */;
-import ManaContext from "ManaContext" /* 5057 */;
+import ManaContext from "ManaContext" /* 5078 */;
 import size from "module_2" /* 2 */;
 
 const Component = reactAll.Component;

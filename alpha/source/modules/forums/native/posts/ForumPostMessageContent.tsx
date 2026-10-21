@@ -1,19 +1,19 @@
-// Module ID: 12936
-// Function ID: 12937
+// Module ID: 13004
+// Function ID: 13005
 // Name: ForumPostMessageContent
-// Dependencies: [19, 21, 4945, 558, 576, 12937, 5195, 2]
+// Dependencies: [19, 21, 4966, 558, 576, 13005, 5216, 2]
 
-// Module 12936 (ForumPostMessageContent)
+// Module 13004 (ForumPostMessageContent)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useNativeForumPostContentDefault from "useNativeForumPostContent" /* 12937 */;
+import useNativeForumPostContentDefault from "useNativeForumPostContent" /* 13005 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Text_Text = tmp(5195);
+const Text_Text = tmp(5216);
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ text: { alignSelf: "flex-start" } });
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostMessageContent(hasUnreads) {

@@ -1,9 +1,9 @@
-// Module ID: 8335
-// Function ID: 8336
+// Module ID: 8363
+// Function ID: 8364
 // Name: GuildAntiRaidTypes
 // Dependencies: [2]
 
-// Module 8335 (GuildAntiRaidTypes)
+// Module 8363 (GuildAntiRaidTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidTypes.tsx");

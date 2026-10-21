@@ -1,11 +1,11 @@
-// Module ID: 11103
-// Function ID: 11104
+// Module ID: 11147
+// Function ID: 11148
 // Name: SocialSdkGameResolver
-// Dependencies: [2040, 2]
+// Dependencies: [2039, 2]
 // Exports: withProcessIdentity
 
-// Module 11103 (SocialSdkGameResolver)
-import DetectableGameStore from "DetectableGameStore" /* 2040 */;
+// Module 11147 (SocialSdkGameResolver)
+import DetectableGameStore from "DetectableGameStore" /* 2039 */;
 import size from "module_2" /* 2 */;
 
 let map;

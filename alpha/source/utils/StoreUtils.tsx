@@ -1,123 +1,126 @@
-// Module ID: 6340
-// Function ID: 6341
+// Module ID: 6362
+// Function ID: 6363
 // Name: StoreUtils
-// Dependencies: [5, 502, 2055, 2056, 2059, 1087, 6341, 5860, 5781, 1452, 6420, 1297, 1384, 1128, 2]
+// Dependencies: [5, 502, 2054, 2055, 2058, 1087, 6363, 5882, 5801, 1452, 6442, 5704, 1297, 1384, 1128, 2]
 // Exports: getAssetURL, getPrimarySKUForApplication, httpGetWithCountryCodeQuery, nativePlatformTypeToSKUOperatingSystem, skuOperatingSystemToText
 
-// Module 6340 (StoreUtils)
+// Module 6362 (StoreUtils)
 import intl4 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1452 */;
-import BrowserUtils from "BrowserUtils" /* 5781 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 5860 */;
+import BrowserUtils from "BrowserUtils" /* 5801 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 5882 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6442 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import BillingInfoStore from "BillingInfoStore" /* 2055 */;
-import PaymentSourceStore from "PaymentSourceStore" /* 2056 */;
-import SubscriptionStore from "SubscriptionStore" /* 2059 */;
+import BillingInfoStore from "BillingInfoStore" /* 2054 */;
+import PaymentSourceStore from "PaymentSourceStore" /* 2055 */;
+import SubscriptionStore from "SubscriptionStore" /* 2058 */;
 import Constants from "Constants" /* 1087 */;
-import allSettled_mod from "allSettled" /* 6341 */;
+import allSettled_mod from "allSettled" /* 6363 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, c6, c7;
+let c1, c6, c7;
 
 let metroImportAll;
 let metroImportDefault;
+let obj = function _waitForSubscriptionsToBeFetched() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let obj3;
+    let obj5;
+    if (c2 === 2) {
+      c2 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        c2 = 2;
+        if (0 === c1) {
+          if (arg0 === 1) {
+            c2 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c2 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            let c0 = 0;
+            if (!SubscriptionStore.hasFetchedSubscriptions()) {
+              if (BillingInfoStore.isSubscriptionFetching) {
+                if (BillingInfoStore.isSubscriptionFetching) {
+                  c1 = 2;
+                  c2 = 1;
+                  const obj6 = { value: obj5.sleep(50), done: false };
+                  obj5 = closure_128_0(closure_128_1[11]);
+                  return obj6;
+                }
+              } else {
+                c1 = 1;
+                c2 = 1;
+                const obj7 = { value: obj3.fetchSubscriptions(), done: false };
+                obj3 = actions_BillingActionCreators;
+                return obj7;
+              }
+            }
+          }
+        } else if (1 === tmp3) {
+          if (arg0 === 1) {
+            c2 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c2 = 3;
+            const obj8 = { value, done: true };
+            return obj8;
+          }
+        } else if (arg0 === 1) {
+          c2 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c2 = 3;
+          obj = { value, done: true };
+          return obj;
+        }
+        c2 = 3;
+        return { value: "IconComponent", done: null };
+      } catch (tmp13) {
+        c2 = 3;
+        throw tmp13;
+      }
+    }
+  });
+  return obj(...arguments);
+};
 function fetchCountryCodeQueryDependencies() {
+  function waitForSubscriptionsToBeFetched() {
+    return obj(...arguments);
+  }
   const items = [];
   if (!PaymentSourceStore.hasFetchedPaymentSources) {
     let paymentSourcesFetchRequest = BillingInfoStore.paymentSourcesFetchRequest;
-    const tmp2 = null;
     const push = items.push;
     if (paymentSourcesFetchRequest == null) {
-      let tmp3 = _require;
-      let tmp4 = dependencyMap;
-      obj = require("actions/BillingActionCreators");
+      obj = actions_BillingActionCreators;
       paymentSourcesFetchRequest = obj.fetchPaymentSources();
     }
     push(paymentSourcesFetchRequest);
   }
   if (!BillingInfoStore.ipCountryCodeLoaded) {
     const push2 = items.push;
-    let obj2 = require("actions/BillingActionCreators");
+    const obj2 = actions_BillingActionCreators;
     push2(obj2.fetchIpCountryCode());
   }
-  const push3 = items.push;
-  _require = _asyncToGenerator(async (arg0, value) => {
-    let obj2;
-    closure_0 = arg0;
-    if (c3 === 2) {
-      c3 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
-      } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      try {
-        c3 = 2;
-        if (0 === c2) {
-          if (arg0 === 1) {
-            c3 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c3 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            let c1 = 0;
-            const tmp16 = closure_0;
-            if (SubscriptionStore.hasFetchedSubscriptions()) {
-              tmp16();
-            } else if (BillingInfoStore.isSubscriptionFetching) {
-              function wait() {
-                if (closure_2_4.isSubscriptionFetching) {
-                  const _setTimeout = setTimeout;
-                  const timerId = setTimeout(wait, 50);
-                } else {
-                  closure_0();
-                }
-              }
-              wait();
-            } else {
-              c2 = 1;
-              c3 = 1;
-              const obj5 = { value: obj2.fetchSubscriptions(), done: false };
-              obj2 = closure_0(c1[10]);
-              return obj5;
-            }
-          }
-        } else if (arg0 === 1) {
-          c3 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c3 = 3;
-          obj = { value, done: true };
-          return obj;
-        } else {
-          closure_0();
-        }
-        c3 = 3;
-        return { value: "IconComponent", done: null };
-      } catch (tmp12) {
-        c3 = 3;
-        throw tmp12;
-      }
-    }
-  });
-  const promise = new Promise(function() {
-    return closure_0(...arguments);
-  });
-  push3(promise);
+  items.push(waitForSubscriptionsToBeFetched());
   return Promise.allSettled(items);
 }
-let obj = function _httpGetWithCountryCodeQuery() {
+obj = function _httpGetWithCountryCodeQuery() {
   obj = _asyncToGenerator(async function(arg0, value) {
     let closure_4;
     let closure_0 = arg0;
@@ -164,7 +167,7 @@ let obj = function _httpGetWithCountryCodeQuery() {
             closure_5 = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else {
           if (1 === c6) {
@@ -178,7 +181,7 @@ let obj = function _httpGetWithCountryCodeQuery() {
             } else {
               const isAuthenticatedResult = flag && closure_133_3.isAuthenticated();
               if (isAuthenticatedResult) {
-                const items = [closure_133_10(), ];
+                const items = [closure_133_11(), ];
                 const self3 = this;
                 const self4 = this;
                 const promise = new Promise((arg0) => setTimeout(arg0, 10000));
@@ -245,7 +248,7 @@ let obj = function _httpGetWithCountryCodeQuery() {
               obj6.query = obj7;
             }
           }
-          const HTTP = closure_133_0(closure_133_1[11]).HTTP;
+          const HTTP = closure_133_0(closure_133_1[12]).HTTP;
           c7 = 3;
           const obj8 = { value: HTTP.get(obj6), done: true };
           return obj8;
@@ -264,7 +267,6 @@ allSettled = allSettled.shim();
 let tmp4 = !shared_PlatformUtils.isMobile && !shared_PlatformUtils.isTablet;
 if (tmp4) {
   const _module1 = BrowserUtils;
-  let num = -1;
   tmp4 = -1 !== _module1.getChromeVersion();
 }
 let closure_9 = tmp4;

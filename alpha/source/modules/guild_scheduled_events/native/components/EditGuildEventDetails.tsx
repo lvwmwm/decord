@@ -1,21 +1,21 @@
-// Module ID: 8947
-// Function ID: 8948
+// Module ID: 8974
+// Function ID: 8975
 // Name: EditGuildEventDetails
-// Dependencies: [32, 19, 6735, 4806, 21, 4945, 1128, 558, 576, 2050, 8822, 1505, 1896, 8821, 4954, 5195, 5205, 8936, 8844, 8842, 2]
+// Dependencies: [32, 19, 6763, 4827, 21, 4966, 1128, 558, 576, 2049, 8849, 1505, 1896, 8848, 4975, 5216, 5226, 8963, 8871, 8869, 2]
 
-// Module 8947 (EditGuildEventDetails)
+// Module 8974 (EditGuildEventDetails)
 import intl8 from "intl" /* 1128 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1896 */;
-import _modDef2050 from "module_2050" /* 2050 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4806 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4954 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6735 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8821 */;
-import ScheduleUtils from "ScheduleUtils" /* 8822 */;
+import _modDef2049 from "module_2049" /* 2049 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4827 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4975 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6763 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 8848 */;
+import ScheduleUtils from "ScheduleUtils" /* 8849 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -449,7 +449,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildE
             const obj = { scheduledStartTime: toISOString.toISOString() };
             const isBeforeResult = null != scheduledEndTime && before.isBefore(toISOString);
             if (isBeforeResult) {
-              const obj2 = _modDef2050(toISOString);
+              const obj2 = _modDef2049(toISOString);
               const addResult = obj2.add(1, "hour");
               obj.scheduledEndTime = addResult.toISOString();
             }
@@ -489,7 +489,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildE
     }
     const fn = function x() {
       const obj = ScheduleUtils;
-      return obj.recurrenceRuleToOption(_modDef2050(scheduledStartTime), recurrenceRule);
+      return obj.recurrenceRuleToOption(_modDef2049(scheduledStartTime), recurrenceRule);
     };
     cResult[5] = recurrenceRule;
     cResult[6] = scheduledStartTime;
@@ -538,9 +538,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildE
   let name;
   let scheduledStartTime;
   let tmp12;
-  const f101057 = () => {
+  const f101339 = () => {
     const obj = ScheduleUtils;
-    return obj.recurrenceRuleToOption(_modDef2050(scheduledStartTime), recurrenceRule);
+    return obj.recurrenceRuleToOption(_modDef2049(scheduledStartTime), recurrenceRule);
   };
   guildEvent = guildEvent.guildEvent;
   const onChange = guildEvent.onChange;
@@ -556,20 +556,20 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildE
   const items = [scheduledStartTime];
   let tmp = c11();
   ({ name, entityType } = guildEvent);
-  memo = memo.useMemo(() => _modDef2050(scheduledStartTime), items);
+  memo = memo.useMemo(() => _modDef2049(scheduledStartTime), items);
   const items1 = [scheduledEndTime, scheduledStartTime];
   const memo1 = memo.useMemo(() => {
     let addResult;
     if (null != scheduledEndTime) {
-      addResult = _modDef2050(tmp);
+      addResult = _modDef2049(tmp);
     } else {
-      const obj = _modDef2050(scheduledStartTime);
+      const obj = _modDef2049(scheduledStartTime);
       addResult = obj.add(1, "hour");
     }
     return addResult;
   }, items1);
-  [c7, c8] = recurrenceRule(memo.useState(f101057), 2);
-  const tmp4 = recurrenceRule(memo.useState(f101057), 2);
+  [c7, c8] = recurrenceRule(memo.useState(f101339), 2);
+  const tmp4 = recurrenceRule(memo.useState(f101339), 2);
   const memo2 = memo.useMemo(() => onChange(scheduledEndTime[9])(), []);
   const items2 = [memo];
   const memo3 = memo.useMemo(() => {
@@ -577,7 +577,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildE
     return obj.add(guildEvent(scheduledEndTime[10]).MAX_DAYS_AHEAD_AN_EVENT_CAN_START, "days");
   }, []);
   const memo4 = memo.useMemo(() => {
-    const obj = _modDef2050(memo);
+    const obj = _modDef2049(memo);
     return obj.add(15, "minutes");
   }, items2);
   const memo5 = memo.useMemo(() => {
@@ -647,7 +647,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildE
         const obj = { scheduledStartTime: toISOString.toISOString() };
         const isBeforeResult = null != scheduledEndTime && memo1.isBefore(toISOString);
         if (isBeforeResult) {
-          const obj2 = _modDef2050(toISOString);
+          const obj2 = _modDef2049(toISOString);
           const addResult = obj2.add(1, "hour");
           obj.scheduledEndTime = addResult.toISOString();
         }

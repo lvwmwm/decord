@@ -1,10 +1,10 @@
-// Module ID: 7489
-// Function ID: 7490
+// Module ID: 7517
+// Function ID: 7518
 // Name: ContextUtils
 // Dependencies: [19, 21, 558, 576, 2]
 // Exports: default
 
-// Module 7489 (ContextUtils)
+// Module 7517 (ContextUtils)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

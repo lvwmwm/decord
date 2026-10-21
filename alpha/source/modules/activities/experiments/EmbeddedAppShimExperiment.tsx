@@ -1,10 +1,10 @@
-// Module ID: 11376
-// Function ID: 11377
+// Module ID: 11420
+// Function ID: 11421
 // Name: EmbeddedAppShimExperiment
 // Dependencies: [1455, 558, 2]
-// Exports: useEmbeddedAppShimVersion
+// Exports: getEmbeddedAppShimVersion, useEmbeddedAppShimVersion
 
-// Module 11376 (EmbeddedAppShimExperiment)
+// Module 11420 (EmbeddedAppShimExperiment)
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -23,6 +23,14 @@ export const useEmbeddedAppShimVersion = function useEmbeddedAppShimVersion(Base
   let num = 1;
   const obj = { location: BaseEmbeddedAppWebView };
   if (closure_0.useConfig(obj).enabled) {
+    num = 2;
+  }
+  return num;
+};
+export const getEmbeddedAppShimVersion = function getEmbeddedAppShimVersion(location) {
+  let num = 1;
+  const obj = { location };
+  if (closure_0.getConfig(obj).enabled) {
     num = 2;
   }
   return num;

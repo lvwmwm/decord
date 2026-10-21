@@ -1,13 +1,13 @@
-// Module ID: 8671
-// Function ID: 8672
+// Module ID: 8698
+// Function ID: 8699
 // Name: useUserProfileOverscrollStyles
-// Dependencies: [32, 19, 4946, 558, 576, 1499, 504, 5014, 2]
+// Dependencies: [32, 19, 4967, 558, 576, 1499, 504, 5035, 2]
 
-// Module 8671 (useUserProfileOverscrollStyles)
-import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
+// Module 8698 (useUserProfileOverscrollStyles)
+import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4946 */;
+import AccessibilityStore from "AccessibilityStore" /* 4967 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

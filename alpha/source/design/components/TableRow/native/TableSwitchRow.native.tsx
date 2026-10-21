@@ -1,16 +1,16 @@
-// Module ID: 7244
-// Function ID: 7245
+// Module ID: 7272
+// Function ID: 7273
 // Name: TableSwitchRow
-// Dependencies: [32, 109, 19, 17, 21, 4945, 558, 576, 1384, 5100, 5195, 7245, 6854, 2]
+// Dependencies: [32, 109, 19, 17, 21, 4966, 558, 576, 1384, 5121, 5216, 7273, 6882, 2]
 
-// Module 7244 (TableSwitchRow)
+// Module 7272 (TableSwitchRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,10 +18,10 @@ let metroImportAll;
 let metroImportDefault;
 let tmp;
 const PlatformUtils = tmp(1384);
-const native = tmp(5100);
-const Text_Text = tmp(5195);
-const TableRow2 = tmp(6854);
-const FormSwitch = tmp(7245);
+const native = tmp(5121);
+const Text_Text = tmp(5216);
+const TableRow2 = tmp(6882);
+const FormSwitch = tmp(7273);
 let closure_2 = ["value", "onValueChange", "label", "subLabel", "trailing", "disabled", "accessibilityHint", "variant"];
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -331,7 +331,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableSwitc
     const tmp17 = View;
     if (!obj4.isValidElement(label)) {
       let str = "mobile-text-heading-primary";
-      const Text = tmp3(5195).Text;
+      const Text = tmp3(5216).Text;
       if ("danger" === variant) {
         str = "text-feedback-critical";
       }

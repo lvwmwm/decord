@@ -1,23 +1,23 @@
-// Module ID: 18430
-// Function ID: 18431
+// Module ID: 18509
+// Function ID: 18510
 // Name: LaunchPadUnreadServers
-// Dependencies: [19, 17, 4800, 6722, 1392, 1087, 21, 4945, 587, 558, 576, 7398, 18431, 504, 1202, 10617, 14136, 5631, 7360, 5669, 9631, 17284, 1499, 18436, 1128, 7118, 2]
+// Dependencies: [19, 17, 4821, 6750, 1392, 1087, 21, 4966, 587, 558, 576, 7426, 18510, 504, 1202, 10646, 14211, 5651, 7388, 5689, 9661, 17360, 1499, 18515, 1128, 7146, 2]
 
-// Module 18430 (LaunchPadUnreadServers)
+// Module 18509 (LaunchPadUnreadServers)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import transitionToChannel from "transitionToChannel" /* 5669 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7360 */;
-import transitionToGuild from "transitionToGuild" /* 7398 */;
-import isGuildSelectableDefault from "isGuildSelectable" /* 18436 */;
+import transitionToChannel from "transitionToChannel" /* 5689 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7388 */;
+import transitionToGuild from "transitionToGuild" /* 7426 */;
+import isGuildSelectableDefault from "isGuildSelectable" /* 18515 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import ReadStateStore from "ReadStateStore" /* 6722 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import ReadStateStore from "ReadStateStore" /* 6750 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -92,7 +92,7 @@ let closure_13 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
       }
     }
     const obj3 = { size: 48, borderRadius: 16, guildId, selected, onPress: tmp4, onLongPress: tmp5, backgroundColor: tmp3.maskStrokeStyle.backgroundColor };
-    const tmp9 = closure_10(onGuildSelect(18431), obj3);
+    const tmp9 = closure_10(onGuildSelect(18510), obj3);
     cResult[5] = guildId;
     cResult[6] = tmp5;
     cResult[7] = tmp4;
@@ -119,7 +119,7 @@ let closure_13 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
   const callback = react.useCallback(() => {
     onGuildSelect(guildId);
   }, items);
-  let obj = { style: tmp.guildWrapper, children: closure_10(onGuildSelect(18431), obj2) };
+  let obj = { style: tmp.guildWrapper, children: closure_10(onGuildSelect(18510), obj2) };
   const callback1 = react.useCallback(() => {
     const obj = transitionToGuild;
     obj.transitionToGuild(guildId);

@@ -1,42 +1,22 @@
 // Module ID: 12501
 // Function ID: 12502
-// Dependencies: [12479, 12467, 12502]
+// Dependencies: [12485]
+// Exports: _getSpanForScope, _setSpanForScope
 
 // Module 12501
-import _mod12502 from "module_12502" /* 12502 */;
-import module_12479 from "module_12479" /* 12479 */;
+import _mod12485 from "module_12485" /* 12485 */;
 
+const _sentrySpan = "_sentrySpan";
 
-export const moduleMetadataIntegration = module_12479.defineIntegration(() => {
-  let obj = {
-    name: "ModuleMetadata",
-    setup(on) {
-      const options = on;
-      on.on("beforeEnvelope", (arg0) => {
-        let obj = options(closure_1_1[1]);
-        obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
-          if ("event" === arg1) {
-            const _Array = Array;
-            let tmp3;
-            if (Array.isArray(arg0)) {
-              tmp3 = arg0[1];
-            }
-            if (tmp3) {
-              const obj = options(closure_1_1[2]);
-              const result = obj.stripMetadataFromStackFrames(tmp3);
-              arg0[1] = tmp3;
-            }
-          }
-        });
-      });
-      on.on("applyFrameMetadata", (type) => {
-        if (!type.type) {
-          const stackParser = options.getOptions().stackParser;
-          const obj = _mod12502;
-          const result = obj.addMetadataToStackFrames(stackParser, type);
-        }
-      });
-    }
-  };
-  return obj;
-});
+export const _getSpanForScope = function _getSpanForScope(arg0) {
+  return arg0[_sentrySpan];
+};
+export const _setSpanForScope = function _setSpanForScope(arg0, arg1) {
+  const tmp2 = arg1;
+  if (tmp2) {
+    const obj = _mod12485;
+    const result = obj.addNonEnumerableProperty(arg0, _sentrySpan, arg1);
+  } else {
+    delete tmp[_sentrySpan];
+  }
+};

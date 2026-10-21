@@ -1,13 +1,13 @@
-// Module ID: 11910
-// Function ID: 11911
+// Module ID: 11958
+// Function ID: 11959
 // Name: handleUsePrimaryEntryPointAppCommand
-// Dependencies: [5, 4800, 1392, 11289, 5589, 11911, 11279, 2]
+// Dependencies: [5, 4821, 1392, 11333, 5610, 11959, 11323, 2]
 // Exports: default
 
-// Module 11910 (handleUsePrimaryEntryPointAppCommand)
-import getCachedOrFetchActivityApplicationForLaunchDefault from "getCachedOrFetchActivityApplicationForLaunch" /* 11289 */;
+// Module 11958 (handleUsePrimaryEntryPointAppCommand)
+import getCachedOrFetchActivityApplicationForLaunchDefault from "getCachedOrFetchActivityApplicationForLaunch" /* 11333 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 
@@ -162,7 +162,7 @@ obj = function _handleUsePrimaryEntryPointAppCommandInternal() {
               currentUser = undefined;
               analyticsLocations = 1;
               componentId = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else {
             let tmp5;

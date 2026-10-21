@@ -1,9 +1,9 @@
-// Module ID: 8793
-// Function ID: 8794
+// Module ID: 8820
+// Function ID: 8821
 // Name: BlockedDomainStore
 // Dependencies: [1087, 562, 1267, 2]
 
-// Module 8793 (BlockedDomainStore)
+// Module 8820 (BlockedDomainStore)
 import shim from "shim" /* 562 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;

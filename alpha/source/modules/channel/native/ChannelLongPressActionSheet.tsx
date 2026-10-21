@@ -1,67 +1,70 @@
-// Module ID: 10621
-// Function ID: 10622
+// Module ID: 10650
+// Function ID: 10651
 // Name: ChannelLongPressActionSheet
-// Dependencies: [5, 19, 10622, 6634, 4805, 6741, 4804, 7164, 4800, 7585, 4822, 4880, 6722, 4890, 4851, 6655, 1392, 4807, 1087, 9952, 21, 7826, 2002, 7815, 1128, 10623, 8605, 5638, 7360, 5565, 5866, 10048, 9953, 5640, 6623, 10625, 3402, 9573, 1114, 10646, 8494, 10648, 10662, 3820, 10663, 8983, 10665, 7160, 5112, 6882, 10667, 7905, 10668, 10669, 10671, 10673, 10674, 10676, 7014, 7157, 10678, 9073, 7166, 7161, 10680, 10021, 8493, 10682, 10683, 8517, 8491, 5171, 10684, 13682, 5672, 7817, 9899, 8055, 13683, 7012, 6781, 7437, 5644, 8908, 10341, 7234, 5624, 558, 576, 7202, 7227, 10650, 504, 4808, 6764, 9652, 4776, 6834, 1202, 13685, 10816, 13686, 13692, 7294, 13697, 7247, 1630, 10817, 7243, 2]
+// Dependencies: [5, 19, 10651, 6662, 4826, 6769, 4825, 7192, 4821, 7613, 4843, 4901, 6750, 4911, 4872, 6683, 1392, 4828, 1087, 9982, 21, 7854, 2002, 7843, 1128, 3830, 10652, 5192, 10654, 1114, 10766, 8632, 5658, 7388, 5586, 5888, 10078, 9983, 5660, 6651, 10768, 3412, 9603, 10789, 8521, 10791, 10806, 10807, 9010, 10809, 7188, 5133, 6910, 10811, 7933, 10812, 10813, 10815, 10817, 10818, 10820, 7042, 7185, 10822, 9100, 7194, 7189, 10824, 10051, 8520, 10826, 10827, 8544, 8518, 10828, 13747, 5692, 7845, 9929, 8083, 13748, 11466, 13749, 7040, 6809, 7465, 5664, 8935, 10370, 7262, 5644, 558, 576, 7230, 7255, 10793, 504, 4829, 6792, 9682, 4797, 6862, 1202, 13753, 10960, 13754, 13760, 7322, 13765, 13766, 13769, 7275, 1630, 10961, 7271, 2]
 
-// Module 10621 (ChannelLongPressActionSheet)
+// Module 10650 (ChannelLongPressActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import router_utils from "router_utils" /* 1114 */;
-import intl38 from "intl" /* 1128 */;
+import intl40 from "intl" /* 1128 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ChannelConstants from "ChannelConstants" /* 4807 */;
-import StageChannelPermissions from "StageChannelPermissions" /* 4808 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import useChannelName from "useChannelName" /* 5565 */;
-import ToastUtils from "ToastUtils" /* 5624 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5672 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5866 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6623 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6781 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7157 */;
-import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7160 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7161 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7166 */;
-import ClipboardUtils from "ClipboardUtils" /* 7234 */;
-import ActionSheetRow2 from "ActionSheetRow" /* 7243 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7360 */;
-import ReportModals from "ReportModals" /* 8055 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8605 */;
-import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8908 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8983 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9952 */;
-import showChatGDMCustomizeActionSheetDefault from "showChatGDMCustomizeActionSheet" /* 9953 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10021 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10622 */;
-import openFavoritesGuildMoveToCategoryActionSheetDefault from "openFavoritesGuildMoveToCategoryActionSheet" /* 10648 */;
-import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10667 */;
-import InappropriateConversationsActionCreators from "InappropriateConversationsActionCreators" /* 10668 */;
-import MessageRequestActionCreators from "MessageRequestActionCreators" /* 10671 */;
-import markChannelUnreadDefault from "markChannelUnread" /* 10676 */;
-import showThreadBrowserModalDefault from "showThreadBrowserModal" /* 10682 */;
-import ChannelCollapseActionCreatorsDefault from "ChannelCollapseActionCreators" /* 10683 */;
-import hideLaunchPadDefault from "hideLaunchPad" /* 13682 */;
-import openAppChannelToChatDefault from "openAppChannelToChat" /* 13683 */;
+import ChannelConstants from "ChannelConstants" /* 4828 */;
+import StageChannelPermissions from "StageChannelPermissions" /* 4829 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5192 */;
+import useChannelName from "useChannelName" /* 5586 */;
+import ToastUtils from "ToastUtils" /* 5644 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5692 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5888 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6651 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6809 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7185 */;
+import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7188 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7189 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7194 */;
+import ClipboardUtils from "ClipboardUtils" /* 7262 */;
+import ActionSheetRow2 from "ActionSheetRow" /* 7271 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7388 */;
+import ReportModals from "ReportModals" /* 8083 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8632 */;
+import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8935 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9010 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9982 */;
+import showChatGDMCustomizeActionSheetDefault from "showChatGDMCustomizeActionSheet" /* 9983 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10051 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10651 */;
+import ConjureRemixSheet from "ConjureRemixSheet" /* 10654 */;
+import openFavoritesGuildMoveToCategoryActionSheetDefault from "openFavoritesGuildMoveToCategoryActionSheet" /* 10791 */;
+import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10811 */;
+import InappropriateConversationsActionCreators from "InappropriateConversationsActionCreators" /* 10812 */;
+import MessageRequestActionCreators from "MessageRequestActionCreators" /* 10815 */;
+import markChannelUnreadDefault from "markChannelUnread" /* 10820 */;
+import showThreadBrowserModalDefault from "showThreadBrowserModal" /* 10826 */;
+import ChannelCollapseActionCreatorsDefault from "ChannelCollapseActionCreators" /* 10827 */;
+import hideLaunchPadDefault from "hideLaunchPad" /* 13747 */;
+import openAppChannelToChatDefault from "openAppChannelToChat" /* 13748 */;
+import closeFrameDefault from "closeFrame" /* 13749 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import ChannelSpoilerAgreeStore from "ChannelSpoilerAgreeStore" /* 6634 */;
-import StageInstanceStore from "StageInstanceStore" /* 4805 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6741 */;
-import ChannelRecord from "ChannelRecord" /* 4804 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7164 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7585 */;
-import GuildStore from "GuildStore" /* 4822 */;
-import PermissionStore from "PermissionStore" /* 4880 */;
-import ReadStateStore from "ReadStateStore" /* 6722 */;
-import RelationshipStore from "RelationshipStore" /* 4890 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4851 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6655 */;
+import ChannelSpoilerAgreeStore from "ChannelSpoilerAgreeStore" /* 6662 */;
+import StageInstanceStore from "StageInstanceStore" /* 4826 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6769 */;
+import ChannelRecord from "ChannelRecord" /* 4825 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7192 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7613 */;
+import GuildStore from "GuildStore" /* 4843 */;
+import PermissionStore from "PermissionStore" /* 4901 */;
+import ReadStateStore from "ReadStateStore" /* 6750 */;
+import RelationshipStore from "RelationshipStore" /* 4911 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6683 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
 let c1, closure_1, dependencyMap, paths;
 
 let c10;
@@ -79,7 +82,7 @@ let closure_32;
 let closure_33;
 let tmp;
 let unpackModuleId;
-const RootNavigationRef = tmp(5112);
+const RootNavigationRef = tmp(5133);
 function handleVoiceOrStageChannelConnectPress() {
   return obj(...arguments);
 }
@@ -175,28 +178,30 @@ function getActionSheetButtons(channel) {
   let hasThreads;
   let hasUnread;
   let intl;
-  let intl11;
-  let intl13;
+  let intl12;
   let intl14;
   let intl15;
   let intl16;
   let intl17;
   let intl18;
+  let intl19;
   let intl2;
-  let intl26;
   let intl27;
+  let intl28;
   let intl3;
-  let intl30;
   let intl31;
   let intl32;
   let intl33;
   let intl34;
-  let intl37;
+  let intl35;
+  let intl38;
+  let intl39;
   let intl4;
   let intl5;
   let intl6;
   let intl7;
   let intl8;
+  let intl9;
   let isCollapsedVoiceChannel;
   let isFavoritesGuild;
   let isInCollapsedCategory;
@@ -211,8 +216,9 @@ function getActionSheetButtons(channel) {
   let isStaff;
   let items1;
   let items2;
-  let items4;
+  let items3;
   let items5;
+  let items6;
   let sourceAnalyticsLocations;
   channel = channel.channel;
   ({ canCreateInstantInvite, developerMode, isMuted } = channel);
@@ -221,49 +227,71 @@ function getActionSheetButtons(channel) {
   const isMessagesFavorited = channel.isMessagesFavorited;
   ({ analyticsLocations: SafetyWarningTypes, isFavoritesGuild, favoritesCategoryAddAction, favoritesMoveAction } = channel);
   const conjureProjectId = channel.conjureProjectId;
-  let guildId;
-  obj = { sectionKey: "dm", buttons: [] };
+  const appFrameId = channel.appFrameId;
+  const conjureRemixProject = channel.conjureRemixProject;
   ({ canManageChannel, canConnect, hasUnread, canMarkUnread, isOwner, hasThreads, isNsfwGated, isInCollapsedCategory, isCollapsedVoiceChannel, canModerateStage, isOptInEnabled, isParentOptedIn, canMarkAsTier1InappropriateConversation, canMarkAsTier2InappropriateConversation, isSpoilerAgreed, isStaff, favorites } = channel);
-  if (channel.isDM()) {
-    const buttons = obj.buttons;
+  let guildId = channel.getGuildId();
+  const tmp2 = null != conjureRemixProject && null != guildId;
+  const items = [];
+  if (tmp2) {
+    obj = { sectionKey: "conjure-remix", buttons: items1 };
     let obj2 = {
-      label: intl.string(channel(isOptedIn[24]).t.LYju5J),
-      IconComponent: channel(isOptedIn[25]).UserCircleIcon,
+      label: intl.string(isMuted(isOptedIn[25]).KMwCb7),
+      IconComponent: channel(isOptedIn[26]).RemixIcon,
+      onPress() {
+          const tmp = ActionSheetActionCreators;
+          obj = { key: ConjureRemixSheet.CONJURE_REMIX_SHEET_KEY, content: null };
+          const showActionSheet = tmp.showActionSheet;
+          showActionSheet(obj);
+        }
+    };
+    let tmp3 = channel;
+    let tmp4 = isOptedIn;
+    const push = items.push;
+    intl = channel(isOptedIn[24]).intl;
+    items1 = [obj2];
+    push(obj);
+  }
+  let obj3 = { sectionKey: "dm", buttons: [] };
+  if (channel.isDM()) {
+    const buttons = obj3.buttons;
+    let obj4 = {
+      label: intl2.string(channel(isOptedIn[24]).t.LYju5J),
+      IconComponent: channel(isOptedIn[30]).UserCircleIcon,
       onPress() {
           obj = { userId: channel.getRecipientId(), channelId: channel.id, sourceAnalyticsLocations: SafetyWarningTypes };
           const tmp = showUserProfileActionSheetDefault;
           tmp(obj);
         }
     };
-    let tmp = channel;
-    const tmp2 = isOptedIn;
-    const push = buttons.push;
-    intl = channel(isOptedIn[24]).intl;
-    push(obj2);
+    const tmp7 = channel;
+    const push2 = buttons.push;
+    intl2 = channel(isOptedIn[24]).intl;
+    push2(obj4);
     if (!isFavoritesGuild) {
-      const buttons1 = obj.buttons;
-      let obj3 = {
-        label: intl2.string(tmp(tmp2[24]).t.jsvgc3),
-        IconComponent: tmp(tmp2[27]).UserMinusIcon,
+      const buttons1 = obj3.buttons;
+      const push3 = buttons1.push;
+      const obj5 = {
+        label: intl3.string(tmp7(isOptedIn[24]).t.jsvgc3),
+        IconComponent: tmp7(isOptedIn[32]).UserMinusIcon,
         onPress() {
               obj = ChannelActionCreatorsDefault;
               obj.closePrivateChannel(channel.id, SelectedChannelStore.getCurrentlySelectedChannelId() === channel.id);
             }
       };
-      const push2 = buttons1.push;
-      intl2 = tmp(tmp2[24]).intl;
-      push2(obj3);
+      intl3 = tmp7(tmp8[24]).intl;
+      push3(obj5);
     }
   }
-  let obj4 = { sectionKey: "gdm", buttons: [] };
-  const obj5 = { sectionKey: "gdm-destructive", buttons: [] };
+  const obj6 = { sectionKey: "gdm", buttons: [] };
+  const obj7 = { sectionKey: "gdm-destructive", buttons: [] };
   if (channel.isGroupDM()) {
     if (!isFavoritesGuild) {
-      const buttons2 = obj5.buttons;
-      const push3 = buttons2.push;
-      const obj6 = {
-        label: intl3.string(channel(isOptedIn[24]).t["26C4oi"]),
-        IconComponent: channel(isOptedIn[27]).UserMinusIcon,
+      const buttons2 = obj7.buttons;
+      const push4 = buttons2.push;
+      const obj8 = {
+        label: intl4.string(channel(isOptedIn[24]).t["26C4oi"]),
+        IconComponent: channel(isOptedIn[32]).UserMinusIcon,
         isDestructive: true,
         onPress() {
               let intl5;
@@ -271,10 +299,10 @@ function getActionSheetButtons(channel) {
               let user;
               obj = useChannelName;
               const channelName = obj.computeChannelName(channel, UserStore, RelationshipStore);
-              const intl = intl38.intl;
-              const formatToPlainStringResult = intl.formatToPlainString(intl38.t.hJ5Ap4, { name: channelName });
-              const intl2 = intl38.intl;
-              let formatResult = intl2.format(intl38.t.SSIVOu, { name: channelName });
+              const intl = intl40.intl;
+              const formatToPlainStringResult = intl.formatToPlainString(intl40.t.hJ5Ap4, { name: channelName });
+              const intl2 = intl40.intl;
+              let formatResult = intl2.format(intl40.t.SSIVOu, { name: channelName });
               let formatToPlainStringResult1 = formatToPlainStringResult;
               if (channel.isManaged()) {
                 const intl3 = tmp(1128).intl;
@@ -287,10 +315,10 @@ function getActionSheetButtons(channel) {
               const obj4 = {
                 title: formatToPlainStringResult1,
                 body: formatResult,
-                confirmText: intl5.string(intl38.t.p89ACt),
-                cancelText: intl6.string(intl38.t.gm1Vej),
+                confirmText: intl5.string(intl40.t.p89ACt),
+                cancelText: intl6.string(intl40.t.gm1Vej),
                 onConfirm() {
-                  obj = isMuted(isOptedIn[28]);
+                  obj = isMuted(isOptedIn[33]);
                   obj.closePrivateChannel(user.id, currentlySelectedChannelId.getCurrentlySelectedChannelId() === user.id);
                 }
               };
@@ -301,143 +329,140 @@ function getActionSheetButtons(channel) {
               show(obj4);
             }
       };
-      intl3 = channel(isOptedIn[24]).intl;
-      push3(obj6);
+      intl4 = channel(isOptedIn[24]).intl;
+      push4(obj8);
     }
-    const buttons3 = obj4.buttons;
-    const tmp9 = isOptedIn;
-    const push4 = buttons3.push;
-    const obj7 = {
-      label: intl4.string(channel(isOptedIn[24]).t["1r5E+m"]),
-      IconComponent: channel(isOptedIn[31]).PencilIcon,
+    const buttons3 = obj6.buttons;
+    const push5 = buttons3.push;
+    const obj9 = {
+      label: intl5.string(channel(isOptedIn[24]).t["1r5E+m"]),
+      IconComponent: channel(isOptedIn[36]).PencilIcon,
       onPress() {
           obj = { channelId: channel.id };
           showChatGDMCustomizeActionSheetDefault(obj);
         }
     };
-    intl4 = channel(isOptedIn[24]).intl;
-    push4(obj7);
+    intl5 = channel(isOptedIn[24]).intl;
+    push5(obj9);
     if (isOwner) {
-      const buttons4 = obj4.buttons;
-      const push5 = buttons4.push;
-      const obj8 = {
-        label: intl5.string(channel(tmp9[24]).t.OQ9MKu),
-        IconComponent: channel(tmp9[33]).LinkIcon,
+      const buttons4 = obj6.buttons;
+      const push6 = buttons4.push;
+      const obj10 = {
+        label: intl6.string(channel(isOptedIn[24]).t.OQ9MKu),
+        IconComponent: channel(isOptedIn[38]).LinkIcon,
         onPress() {
               obj = ModalActionCreatorsDefault;
               const obj2 = { channelId: channel.id };
-              obj.pushLazy(asyncRequire(10625, dependencyMap.paths), obj2);
+              obj.pushLazy(asyncRequire(10768, dependencyMap.paths), obj2);
             }
       };
-      intl5 = tmp8(tmp9[24]).intl;
-      push5(obj8);
+      intl6 = tmp14(tmp15[24]).intl;
+      push6(obj10);
     }
   }
-  const items = [];
-  if (obj.buttons.length > 0) {
-    items.push(obj);
+  if (obj3.buttons.length > 0) {
+    items.push(obj3);
   }
-  const tmp13 = isFavoritesGuild && null != channel.guild_id && !channel.isCategory();
-  if (tmp13) {
-    const obj9 = { sectionKey: "go-to-server", buttons: items1 };
-    const push6 = items.push;
-    const obj10 = {
-      label: intl6.string(isMuted(isOptedIn[36])["3KruG3"]),
-      IconComponent: channel(isOptedIn[37]).ServerIcon,
+  const tmp19 = isFavoritesGuild && null != channel.guild_id && !channel.isCategory();
+  if (tmp19) {
+    const obj11 = { sectionKey: "go-to-server", buttons: items2 };
+    const push7 = items.push;
+    const obj12 = {
+      label: intl7.string(isMuted(isOptedIn[41])["3KruG3"]),
+      IconComponent: channel(isOptedIn[42]).ServerIcon,
       onPress() {
           obj = router_utils;
           obj.transitionToGuild(channel.guild_id, channel.id);
         }
     };
-    intl6 = channel(isOptedIn[24]).intl;
-    items1 = [obj10];
-    push6(obj9);
-  }
-  if (null != favoritesCategoryAddAction) {
-    const obj11 = { sectionKey: "favorites-add-to-category", buttons: items2 };
-    const push7 = items.push;
-    items2 = [{ label: favoritesCategoryAddAction.label, IconComponent: channel(isOptedIn[39]).PlusLargeIcon, onPress: favoritesCategoryAddAction.perform }];
-    const obj12 = { label: favoritesCategoryAddAction.label, IconComponent: channel(isOptedIn[39]).PlusLargeIcon, onPress: favoritesCategoryAddAction.perform };
+    intl7 = channel(isOptedIn[24]).intl;
+    items2 = [obj12];
     push7(obj11);
   }
-  const items3 = [];
+  if (null != favoritesCategoryAddAction) {
+    const obj13 = { sectionKey: "favorites-add-to-category", buttons: items3 };
+    const push8 = items.push;
+    items3 = [{ label: favoritesCategoryAddAction.label, IconComponent: channel(isOptedIn[43]).PlusLargeIcon, onPress: favoritesCategoryAddAction.perform }];
+    const obj14 = { label: favoritesCategoryAddAction.label, IconComponent: channel(isOptedIn[43]).PlusLargeIcon, onPress: favoritesCategoryAddAction.perform };
+    push8(obj13);
+  }
+  const items4 = [];
   if (null != favoritesMoveAction) {
-    const push8 = items3.push;
-    const obj13 = {
+    const push9 = items4.push;
+    const obj15 = {
       label: favoritesMoveAction.label,
-      IconComponent: channel(isOptedIn[40]).FolderIcon,
+      IconComponent: channel(isOptedIn[44]).FolderIcon,
       onPress() {
           openFavoritesGuildMoveToCategoryActionSheetDefault(channel.id, favoritesMoveAction);
         }
     };
-    push8(obj13);
+    push9(obj15);
   }
-  const tmp26 = isOptedIn;
-  const tmp27 = isMuted(isOptedIn[42])(favorites);
-  const tmp25 = isMuted;
-  if (null != tmp27) {
-    items3.push(tmp27);
+  const tmp31 = isOptedIn;
+  const tmp32 = isMuted(isOptedIn[46])(favorites);
+  const tmp30 = isMuted;
+  if (null != tmp32) {
+    items4.push(tmp32);
   }
-  if (items3.length > 0) {
-    const obj14 = { sectionKey: "favorites", buttons: items3 };
-    items.push(obj14);
+  if (items4.length > 0) {
+    const obj16 = { sectionKey: "favorites", buttons: items4 };
+    items.push(obj16);
   }
-  guildId = channel.getGuildId();
-  const tmp31 = null != conjureProjectId && null != guildId;
-  if (tmp31) {
-    const obj15 = { sectionKey: "conjure", buttons: items4 };
-    const push9 = items.push;
-    const obj16 = {
-      label: intl7.string(tmp25(tmp26[43]).jMMrDM),
-      IconComponent: channel(tmp26[31]).PencilIcon,
+  const tmp35 = null != conjureProjectId && null != guildId;
+  if (tmp35) {
+    const obj17 = { sectionKey: "conjure", buttons: items5 };
+    const push10 = items.push;
+    const obj18 = {
+      label: intl8.string(tmp30(tmp31[25]).jMMrDM),
+      IconComponent: channel(tmp31[36]).PencilIcon,
       onPress() {
           obj = router_utils;
           obj.transitionTo(closure_32.CHANNEL(guildId, StaticChannelRoute.CONJURE, conjureProjectId));
         }
     };
-    intl7 = channel(tmp26[24]).intl;
-    items4 = [obj16];
-    push9(obj15);
+    intl8 = channel(tmp31[24]).intl;
+    items5 = [obj18];
+    push10(obj17);
   }
-  const obj17 = { sectionKey: "channel-actions", buttons: [] };
+  const obj19 = { sectionKey: "channel-actions", buttons: [] };
   if (canCreateInstantInvite) {
     canCreateInstantInvite = channel.type !== constants5.GUILD_CATEGORY;
   }
   if (canCreateInstantInvite) {
-    const buttons5 = obj17.buttons;
-    const push10 = buttons5.push;
-    const obj18 = {
-      label: intl8.string(channel(tmp26[24]).t.VINpSK),
-      IconComponent: channel(tmp26[44]).GroupPlusIcon,
+    const buttons5 = obj19.buttons;
+    const push11 = buttons5.push;
+    const obj20 = {
+      label: intl9.string(channel(tmp31[24]).t.VINpSK),
+      IconComponent: channel(tmp31[47]).GroupPlusIcon,
       onPress() {
           obj = instant_invite_InstantInviteUtils;
           const obj2 = { source: constants5.CONTEXT_MENU };
           const result = obj.showInstantInviteActionSheet(channel, obj2);
         }
     };
-    intl8 = channel(tmp26[24]).intl;
-    push10(obj18);
+    intl9 = channel(tmp31[24]).intl;
+    push11(obj20);
   }
-  const tmp37 = isFavoritesGuild || null == guildId || channel.isThread();
-  if (!tmp37) {
+  const tmp41 = isFavoritesGuild || null == guildId || channel.isThread();
+  if (!tmp41) {
     if (!channel.isCategory()) {
       let stringResult;
-      let tmp40;
-      const buttons6 = obj17.buttons;
-      const push11 = buttons6.push;
-      const intl9 = channel(tmp26[24]).intl;
-      const string = intl9.string;
-      const t = channel(tmp26[24]).t;
+      let tmp44;
+      const buttons6 = obj19.buttons;
+      const push12 = buttons6.push;
+      const intl10 = channel(tmp31[24]).intl;
+      const string = intl10.string;
+      const t = channel(tmp31[24]).t;
       if (isPinned) {
         stringResult = string(t.M5PWSf);
-        tmp40 = tmp38;
+        tmp44 = tmp42;
       } else {
         stringResult = string(t.RMpwZu);
-        tmp40 = tmp38;
+        tmp44 = tmp42;
       }
-      const obj19 = {
+      const obj21 = {
         label: stringResult,
-        IconComponent: tmp40(tmp26[46]).PinIcon,
+        IconComponent: tmp44(tmp31[49]).PinIcon,
         onPress() {
               obj = OptInChannelsActionCreators;
               const obj2 = { section: constants3.CHANNEL_ACTION_SHEET };
@@ -474,209 +499,209 @@ function getActionSheetButtons(channel) {
               }
             }
       };
-      push11(obj19);
+      push12(obj21);
     }
     if (isOptInEnabled) {
-      const buttons7 = obj17.buttons;
-      const push12 = buttons7.push;
-      const obj20 = { label: null, IconComponent: null, onPress: null };
-      const intl10 = channel(tmp26[24]).intl;
-      const string2 = intl10.string;
-      const t2 = channel(tmp26[24]).t;
+      const buttons7 = obj19.buttons;
+      const push13 = buttons7.push;
+      const obj22 = { label: null, IconComponent: null, onPress: null };
+      const intl11 = channel(tmp31[24]).intl;
+      const string2 = intl11.string;
+      const t2 = channel(tmp31[24]).t;
       if (isParentOptedIn) {
-        obj20.label = string2(t2.jNphKT);
-        obj20.IconComponent = channel(tmp26[49]).XSmallIcon;
-        obj20.onPress = function onPress() {
+        obj22.label = string2(t2.jNphKT);
+        obj22.IconComponent = channel(tmp31[52]).XSmallIcon;
+        obj22.onPress = function onPress() {
           if (null != channel.parent_id) {
             obj = OptInChannelsActionCreators;
             const obj2 = { section: constants3.CHANNEL_ACTION_SHEET };
             obj.setOptInChannel(guildId, tmp.parent_id, false, obj2);
           }
         };
-        push12(obj20);
+        push13(obj22);
       } else {
         let string2Result;
-        let tmp44;
+        let tmp48;
         let PlusLargeIcon;
         if (isOptedIn) {
           string2Result = string2(t2["3zySTA"]);
-          tmp44 = tmp42;
+          tmp48 = tmp46;
         } else {
           string2Result = string2(t2["9mysCh"]);
-          tmp44 = tmp42;
+          tmp48 = tmp46;
         }
-        obj20.label = string2Result;
+        obj22.label = string2Result;
         if (isOptedIn) {
-          PlusLargeIcon = tmp44(tmp26[49]).XSmallIcon;
+          PlusLargeIcon = tmp48(tmp31[52]).XSmallIcon;
         } else {
-          PlusLargeIcon = tmp44(tmp26[39]).PlusLargeIcon;
+          PlusLargeIcon = tmp48(tmp31[43]).PlusLargeIcon;
         }
-        obj20.IconComponent = PlusLargeIcon;
-        obj20.onPress = function onPress() {
+        obj22.IconComponent = PlusLargeIcon;
+        obj22.onPress = function onPress() {
           obj = OptInChannelsActionCreators;
           const obj2 = { section: constants3.CHANNEL_ACTION_SHEET };
           obj.setOptInChannel(guildId, channel.id, !isOptedIn, obj2);
         };
-        push12(obj20);
+        push13(obj22);
       }
     }
   }
-  const isForumLikeChannelResult = closure_9(channel.type) || closure_10(channel.type) || channel.isForumLikeChannel();
+  const isForumLikeChannelResult = conjureRemixProject(channel.type) || guildId(channel.type) || channel.isForumLikeChannel();
   if (isForumLikeChannelResult) {
-    const buttons8 = obj17.buttons;
-    const push13 = buttons8.push;
-    const obj21 = {
-      label: intl11.string(channel(tmp26[24]).t.WqhZss),
-      IconComponent: channel(tmp26[33]).LinkIcon,
+    const buttons8 = obj19.buttons;
+    const push14 = buttons8.push;
+    const obj23 = {
+      label: intl12.string(channel(tmp31[24]).t.WqhZss),
+      IconComponent: channel(tmp31[38]).LinkIcon,
       isDestructive: false,
       onPress() {
           obj = ChannelActionSheetUtils;
           const result = obj.copyGuildChannelOrThreadLink(channel.guild_id, channel.id);
         }
     };
-    intl11 = channel(tmp26[24]).intl;
-    push13(obj21);
+    intl12 = channel(tmp31[24]).intl;
+    push14(obj23);
   }
-  const tmp52 = !isFavoritesGuild && channel.isPrivate();
-  if (tmp52) {
+  const tmp56 = !isFavoritesGuild && channel.isPrivate();
+  if (tmp56) {
     let string3Result;
-    let tmp55;
-    const buttons9 = obj17.buttons;
-    const push14 = buttons9.push;
-    const intl12 = channel(tmp26[24]).intl;
-    const string3 = intl12.string;
-    const t3 = channel(tmp26[24]).t;
+    let tmp59;
+    const buttons9 = obj19.buttons;
+    const push15 = buttons9.push;
+    const intl13 = channel(tmp31[24]).intl;
+    const string3 = intl13.string;
+    const t3 = channel(tmp31[24]).t;
     if (isMessagesFavorited) {
       string3Result = string3(t3.vDYmad);
-      tmp55 = tmp53;
+      tmp59 = tmp57;
     } else {
       string3Result = string3(t3["uKw3A+"]);
-      tmp55 = tmp53;
+      tmp59 = tmp57;
     }
-    const obj22 = {
+    const obj24 = {
       label: string3Result,
-      IconComponent: tmp55(tmp26[46]).PinIcon,
+      IconComponent: tmp59(tmp31[49]).PinIcon,
       onPress() {
           obj = OptInChannelsActionCreators;
           obj.setMessagesFavorite(channel.id, !isMessagesFavorited);
         }
     };
-    push14(obj22);
+    push15(obj24);
   }
-  const obj23 = { sectionKey: "safety-warning-tooling", buttons: [] };
+  const obj25 = { sectionKey: "safety-warning-tooling", buttons: [] };
   if (canMarkAsTier1InappropriateConversation) {
-    const buttons10 = obj23.buttons;
-    const push15 = buttons10.push;
-    const obj24 = {
-      label: intl13.string(channel(tmp26[24]).t.EuzCET),
-      IconComponent: channel(tmp26[51]).WarningIcon,
+    const buttons10 = obj25.buttons;
+    const push16 = buttons10.push;
+    const obj26 = {
+      label: intl14.string(channel(tmp31[24]).t.EuzCET),
+      IconComponent: channel(tmp31[54]).WarningIcon,
       onPress() {
           obj = InappropriateConversationsActionCreators;
           const result = obj.markAsInappropriateConversation(channel.id, SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1);
         }
     };
-    intl13 = channel(tmp26[24]).intl;
-    push15(obj24);
+    intl14 = channel(tmp31[24]).intl;
+    push16(obj26);
   }
   if (canMarkAsTier2InappropriateConversation) {
-    const buttons11 = obj23.buttons;
-    const push16 = buttons11.push;
-    const obj25 = {
-      label: intl14.string(channel(tmp26[24]).t["tBw/1i"]),
-      IconComponent: channel(tmp26[51]).WarningIcon,
+    const buttons11 = obj25.buttons;
+    const push17 = buttons11.push;
+    const obj27 = {
+      label: intl15.string(channel(tmp31[24]).t["tBw/1i"]),
+      IconComponent: channel(tmp31[54]).WarningIcon,
       onPress() {
           obj = InappropriateConversationsActionCreators;
           const result = obj.markAsInappropriateConversation(channel.id, SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_2);
         }
     };
-    intl14 = channel(tmp26[24]).intl;
-    push16(obj25);
+    intl15 = channel(tmp31[24]).intl;
+    push17(obj27);
   }
-  if (obj23.buttons.length > 0) {
-    items.push(obj23);
+  if (obj25.buttons.length > 0) {
+    items.push(obj25);
   }
   if (isStaff) {
     if (developerMode) {
       if (channel.isDM()) {
-        const obj26 = { sectionKey: "message-request", buttons: [] };
+        const obj28 = { sectionKey: "message-request", buttons: [] };
         if (true !== channel.isMessageRequest) {
-          const buttons12 = obj26.buttons;
-          const push17 = buttons12.push;
-          const obj27 = {
-            label: intl15.string(channel(tmp26[24]).t.L6623r),
-            IconComponent: channel(tmp26[53]).InboxIcon,
+          const buttons12 = obj28.buttons;
+          const push18 = buttons12.push;
+          const obj29 = {
+            label: intl16.string(channel(tmp31[24]).t.L6623r),
+            IconComponent: channel(tmp31[56]).InboxIcon,
             onPress() {
                       obj = MessageRequestActionCreators;
                       obj.markAsMessageRequest(channel.id);
                     }
           };
-          intl15 = channel(tmp26[24]).intl;
-          push17(obj27);
+          intl16 = channel(tmp31[24]).intl;
+          push18(obj29);
         }
-        const buttons13 = obj26.buttons;
-        const push18 = buttons13.push;
-        const obj28 = {
-          label: intl16.string(channel(tmp26[24]).t["85YWlY"]),
-          IconComponent: channel(tmp26[53]).InboxIcon,
+        const buttons13 = obj28.buttons;
+        const push19 = buttons13.push;
+        const obj30 = {
+          label: intl17.string(channel(tmp31[24]).t["85YWlY"]),
+          IconComponent: channel(tmp31[56]).InboxIcon,
           onPress() {
                   obj = MessageRequestActionCreators;
                   const result = obj.clearMessageRequestState(channel.id);
                 }
         };
-        intl16 = channel(tmp26[24]).intl;
-        push18(obj28);
-        if (obj26.buttons.length > 0) {
-          items.push(obj26);
+        intl17 = channel(tmp31[24]).intl;
+        push19(obj30);
+        if (obj28.buttons.length > 0) {
+          items.push(obj28);
         }
       }
     }
   }
-  if (obj17.buttons.length > 0) {
-    items.push(obj17);
+  if (obj19.buttons.length > 0) {
+    items.push(obj19);
   }
-  const obj29 = { sectionKey: "notifications", buttons: [] };
-  const tmp68 = closure_11(channel.type) || channel.isCategory() || channel.isForumLikeChannel();
-  if (tmp68) {
-    const MarkChannelUnreadExperiment = channel(tmp26[55]).MarkChannelUnreadExperiment;
+  const obj31 = { sectionKey: "notifications", buttons: [] };
+  const tmp72 = closure_11(channel.type) || channel.isCategory() || channel.isForumLikeChannel();
+  if (tmp72) {
+    const MarkChannelUnreadExperiment = channel(tmp31[58]).MarkChannelUnreadExperiment;
     if (MarkChannelUnreadExperiment.getConfig({ location: "channel_action_sheet" }).enabled) {
       if (!hasUnread) {
         if (canMarkUnread) {
-          const buttons14 = obj29.buttons;
-          const push19 = buttons14.push;
-          const obj30 = {
-            label: intl17.string(channel(tmp26[24]).t.RpE9k7),
-            IconComponent: channel(tmp26[56]).ChatMarkUnreadIcon,
+          const buttons14 = obj31.buttons;
+          const push20 = buttons14.push;
+          const obj32 = {
+            label: intl18.string(channel(tmp31[24]).t.RpE9k7),
+            IconComponent: channel(tmp31[59]).ChatMarkUnreadIcon,
             onPress() {
                       markChannelUnreadDefault(channel.id);
                     }
           };
-          intl17 = tmp69(tmp26[24]).intl;
-          push19(obj30);
+          intl18 = tmp73(tmp31[24]).intl;
+          push20(obj32);
         }
       }
     }
-    const buttons15 = obj29.buttons;
-    const push20 = buttons15.push;
-    const obj31 = {
-      label: intl18.string(channel(tmp26[24]).t.e6RscS),
-      IconComponent: channel(tmp26[58]).EyeIcon,
+    const buttons15 = obj31.buttons;
+    const push21 = buttons15.push;
+    const obj33 = {
+      label: intl19.string(channel(tmp31[24]).t.e6RscS),
+      IconComponent: channel(tmp31[61]).EyeIcon,
       onPress() {
           obj = ReadStateActionCreators;
           const obj2 = { section: constants3.CHANNEL_ACTION_SHEET, object: constants2.MARK_CHANNEL_AS_READ_BUTTON, objectType: constants.ACK_MANUAL };
           obj.ackChannel(channel, obj2);
         }
     };
-    intl18 = tmp69(tmp26[24]).intl;
-    push20(obj31);
+    intl19 = tmp73(tmp31[24]).intl;
+    push21(obj33);
   }
   if (!closure_12(channel.type)) {
-    const tmp79 = closure_9(channel.type) || channel.isCategory() || channel.isGuildStageVoice() || channel.isForumLikeChannel();
-    if (tmp79) {
-      const buttons16 = obj29.buttons;
-      const push23 = buttons16.push;
-      const obj32 = {
-        label: intl26.string(channel(tmp26[24]).t.h850Ss),
-        IconComponent: channel(tmp26[64]).ChannelNotificationIcon,
+    const tmp83 = conjureRemixProject(channel.type) || channel.isCategory() || channel.isGuildStageVoice() || channel.isForumLikeChannel();
+    if (tmp83) {
+      const buttons16 = obj31.buttons;
+      const push24 = buttons16.push;
+      const obj34 = {
+        label: intl27.string(channel(tmp31[24]).t.h850Ss),
+        IconComponent: channel(tmp31[67]).ChannelNotificationIcon,
         disableColor: true,
         onPress() {
               obj = ChannelSettingsActionCreatorsDefault;
@@ -685,107 +710,107 @@ function getActionSheetButtons(channel) {
               obj2.open(channel.id);
             }
       };
-      intl26 = channel(tmp26[24]).intl;
-      push23(obj32);
+      intl27 = channel(tmp31[24]).intl;
+      push24(obj34);
     }
-    if (obj29.buttons.length > 0) {
-      items.push(obj29);
+    if (obj31.buttons.length > 0) {
+      items.push(obj31);
     }
-    const obj33 = { sectionKey: "threads", buttons: [] };
-    const tmp83 = channel.isThread() || channel.isForumLikeChannel() || !hasThreads || isNsfwGated;
-    if (!tmp83) {
-      const buttons17 = obj33.buttons;
-      const push24 = buttons17.push;
-      const obj34 = {
-        label: intl27.string(channel(tmp26[24]).t.B2panI),
-        IconComponent: channel(tmp26[66]).ThreadIcon,
+    const obj35 = { sectionKey: "threads", buttons: [] };
+    const tmp87 = channel.isThread() || channel.isForumLikeChannel() || !hasThreads || isNsfwGated;
+    if (!tmp87) {
+      const buttons17 = obj35.buttons;
+      const push25 = buttons17.push;
+      const obj36 = {
+        label: intl28.string(channel(tmp31[24]).t.B2panI),
+        IconComponent: channel(tmp31[69]).ThreadIcon,
         onPress() {
               showThreadBrowserModalDefault(channel);
             }
       };
-      intl27 = channel(tmp26[24]).intl;
-      push24(obj34);
+      intl28 = channel(tmp31[24]).intl;
+      push25(obj36);
     }
-    if (obj33.buttons.length > 0) {
-      items.push(obj33);
+    if (obj35.buttons.length > 0) {
+      items.push(obj35);
     }
-    const obj35 = { sectionKey: "voice", buttons: [] };
-    const tmp88 = closure_10(channel.type) && !isInCollapsedCategory;
-    if (tmp88) {
+    const obj37 = { sectionKey: "voice", buttons: [] };
+    const tmp92 = guildId(channel.type) && !isInCollapsedCategory;
+    if (tmp92) {
       let string5Result;
-      let tmp91;
-      const buttons18 = obj35.buttons;
-      const push25 = buttons18.push;
-      const intl28 = channel(tmp26[24]).intl;
-      const string5 = intl28.string;
-      const t5 = channel(tmp26[24]).t;
+      let tmp95;
+      const buttons18 = obj37.buttons;
+      const push26 = buttons18.push;
+      const intl29 = channel(tmp31[24]).intl;
+      const string5 = intl29.string;
+      const t5 = channel(tmp31[24]).t;
       if (isCollapsedVoiceChannel) {
         string5Result = string5(t5.JYF2Oa);
-        tmp91 = tmp89;
+        tmp95 = tmp93;
       } else {
         string5Result = string5(t5.LxzNiu);
-        tmp91 = tmp89;
+        tmp95 = tmp93;
       }
-      const obj36 = {
+      const obj38 = {
         label: string5Result,
-        IconComponent: tmp91(tmp26[25]).UserCircleIcon,
+        IconComponent: tmp95(tmp31[30]).UserCircleIcon,
         onPress() {
               obj = ChannelCollapseActionCreatorsDefault;
               obj.update(channel.id);
             }
       };
-      push25(obj36);
+      push26(obj38);
     }
     if (channel.isGuildVocal()) {
-      const buttons19 = obj35.buttons;
-      const push26 = buttons19.push;
-      const obj37 = { label: null, IconComponent: null, onPress: null };
+      const buttons19 = obj37.buttons;
+      const push27 = buttons19.push;
+      const obj39 = { label: null, IconComponent: null, onPress: null };
       const isGuildStageVoiceResult = channel.isGuildStageVoice();
-      const intl29 = channel(tmp26[24]).intl;
-      const string6 = intl29.string;
-      const t6 = channel(tmp26[24]).t;
+      const intl30 = channel(tmp31[24]).intl;
+      const string6 = intl30.string;
+      const t6 = channel(tmp31[24]).t;
       if (isGuildStageVoiceResult) {
-        obj37.label = string6(t6["7vb2cc"]);
-        obj37.IconComponent = channel(tmp26[69]).StageIcon;
-        obj37.onPress = function onPress() {
+        obj39.label = string6(t6["7vb2cc"]);
+        obj39.IconComponent = channel(tmp31[72]).StageIcon;
+        obj39.onPress = function onPress() {
           handleVoiceOrStageChannelConnectPress(channel);
         };
-        push26(obj37);
-        const buttons20 = obj35.buttons;
-        const push27 = buttons20.push;
-        const obj38 = {
-          label: intl30.string(channel(tmp26[24]).t.ZXxLQg),
-          IconComponent: channel(tmp26[70]).ChatIcon,
+        push27(obj39);
+        const buttons20 = obj37.buttons;
+        const push28 = buttons20.push;
+        const obj40 = {
+          label: intl31.string(channel(tmp31[24]).t.ZXxLQg),
+          IconComponent: channel(tmp31[73]).ChatIcon,
           onPress() {
                   obj = ActionSheetActionCreatorsDefault;
                   obj.hideActionSheet();
                   const obj2 = ModalActionCreatorsDefault;
                   const obj3 = { channel };
-                  obj2.pushLazy(asyncRequire(10684, dependencyMap.paths), obj3);
+                  obj2.pushLazy(asyncRequire(10828, dependencyMap.paths), obj3);
                   hideLaunchPadDefault();
                 }
         };
-        intl30 = tmp94(tmp26[24]).intl;
-        push27(obj38);
+        intl31 = tmp98(tmp31[24]).intl;
+        push28(obj40);
       } else {
-        obj37.label = string6(t6.ZXxLQg);
-        obj37.IconComponent = channel(tmp26[70]).ChatIcon;
-        obj37.onPress = function onPress() {
+        obj39.label = string6(t6.ZXxLQg);
+        obj39.IconComponent = channel(tmp31[73]).ChatIcon;
+        obj39.onPress = function onPress() {
           handleVoiceOrStageChannelConnectPress(channel);
           obj = ChannelRTCActionCreatorsDefault;
           obj.updateChatOpen(channel.id, true);
           hideLaunchPadDefault();
         };
-        push26(obj37);
+        push27(obj39);
       }
     }
-    const tmp98 = channel.isGuildStageVoice() && isLiveStageChannel && canModerateStage;
-    if (tmp98) {
-      const buttons21 = obj35.buttons;
-      const push28 = buttons21.push;
-      const obj39 = {
-        label: intl31.string(channel(tmp26[24]).t.saZaRb),
-        IconComponent: channel(tmp26[49]).XSmallIcon,
+    const tmp102 = channel.isGuildStageVoice() && isLiveStageChannel && canModerateStage;
+    if (tmp102) {
+      const buttons21 = obj37.buttons;
+      const push29 = buttons21.push;
+      const obj41 = {
+        label: intl32.string(channel(tmp31[24]).t.saZaRb),
+        IconComponent: channel(tmp31[52]).XSmallIcon,
         isDestructive: true,
         onPress() {
               return (async (arg0, value) => {
@@ -816,7 +841,7 @@ function getActionSheetButtons(channel) {
                       } else {
                         c1 = 1;
                         paths = 1;
-                        const obj4 = { value: tmp3(paths[22])(paths[75], paths.paths), done: false };
+                        const obj4 = { value: tmp3(paths[22])(paths[77], paths.paths), done: false };
                         return obj4;
                       }
                     } else if (arg0 === 1) {
@@ -839,82 +864,95 @@ function getActionSheetButtons(channel) {
               })();
             }
       };
-      intl31 = channel(tmp26[24]).intl;
-      push28(obj39);
+      intl32 = channel(tmp31[24]).intl;
+      push29(obj41);
     }
-    const tmp101 = channel.isGuildStageVoice() && isLiveStageChannel && canConnect;
-    if (tmp101) {
-      const buttons22 = obj35.buttons;
-      const push29 = buttons22.push;
-      const obj40 = {
-        label: intl32.string(channel(tmp26[24]).t["+78Pfm"]),
-        IconComponent: channel(tmp26[76]).FlagIcon,
+    const tmp105 = channel.isGuildStageVoice() && isLiveStageChannel && canConnect;
+    if (tmp105) {
+      const buttons22 = obj37.buttons;
+      const push30 = buttons22.push;
+      const obj42 = {
+        label: intl33.string(channel(tmp31[24]).t["+78Pfm"]),
+        IconComponent: channel(tmp31[78]).FlagIcon,
         isDestructive: true,
         onPress() {
               obj = ReportModals;
               const result = obj.showReportModalForStageChannel(channel);
             }
       };
-      intl32 = channel(tmp26[24]).intl;
-      push29(obj40);
+      intl33 = channel(tmp31[24]).intl;
+      push30(obj42);
     }
-    if (obj35.buttons.length > 0) {
-      items.push(obj35);
+    if (obj37.buttons.length > 0) {
+      items.push(obj37);
     }
-    const tmp106 = channel.type === constants5.GUILD_APP && null != channel.application_id;
-    if (tmp106) {
-      const obj41 = { sectionKey: "app-channel", buttons: items5 };
-      const push30 = items.push;
-      const obj42 = {
-        label: intl33.string(channel(tmp26[24]).t.ZXxLQg),
-        IconComponent: channel(tmp26[70]).ChatIcon,
-        onPress() {
-              openAppChannelToChatDefault(channel);
-              hideLaunchPadDefault();
-            }
-      };
-      intl33 = channel(tmp26[24]).intl;
-      items5 = [obj42];
-      push30(obj41);
+    if (channel.type === constants5.GUILD_APP) {
+      if (null != channel.application_id) {
+        const obj43 = { sectionKey: "app-channel", buttons: items6 };
+        const obj44 = {
+          label: intl39.string(channel(tmp31[24]).t.ZXxLQg),
+          IconComponent: channel(tmp31[73]).ChatIcon,
+          onPress() {
+                  openAppChannelToChatDefault(channel);
+                  hideLaunchPadDefault();
+                }
+        };
+        intl39 = channel(tmp31[24]).intl;
+        items6 = [obj44];
+        if (null != appFrameId) {
+          const buttons23 = obj43.buttons;
+          const push31 = buttons23.push;
+          const obj45 = {
+            label: intl34.string(channel(tmp31[24]).t.VkMnR2),
+            IconComponent: channel(tmp31[81]).DoorExitIcon,
+            onPress() {
+                      closeFrameDefault(appFrameId);
+                    }
+          };
+          intl34 = tmp130(tmp31[24]).intl;
+          push31(obj45);
+        }
+        items.push(obj43);
+      }
     }
     if (channel.isSpoilerChannel()) {
       if (isSpoilerAgreed) {
-        const obj43 = { sectionKey: "spoiler", buttons: [] };
-        const buttons23 = obj43.buttons;
-        const push31 = buttons23.push;
-        const obj44 = {
-          label: intl34.string(channel(tmp26[24]).t.ix2UVZ),
-          IconComponent: channel(tmp26[79]).EyeSlashIcon,
+        const obj46 = { sectionKey: "spoiler", buttons: [] };
+        const buttons24 = obj46.buttons;
+        const push32 = buttons24.push;
+        const obj47 = {
+          label: intl35.string(channel(tmp31[24]).t.ix2UVZ),
+          IconComponent: channel(tmp31[83]).EyeSlashIcon,
           onPress() {
                   obj = GuildActionCreatorsDefault;
                   obj.clearSpoilerAgree(channel.id);
                 }
         };
-        intl34 = channel(tmp26[24]).intl;
-        push31(obj44);
-        items.push(obj43);
+        intl35 = channel(tmp31[24]).intl;
+        push32(obj47);
+        items.push(obj46);
       }
     }
-    const obj45 = { sectionKey: "admin-actions", buttons: [] };
+    const obj48 = { sectionKey: "admin-actions", buttons: [] };
     if (canManageChannel) {
       let string7Result;
-      let tmp115;
-      const buttons24 = obj45.buttons;
-      const push32 = buttons24.push;
+      let tmp118;
+      const buttons25 = obj48.buttons;
+      const push33 = buttons25.push;
       const isCategoryResult = channel.isCategory();
-      const intl35 = channel(tmp26[24]).intl;
-      const string7 = intl35.string;
-      const t7 = channel(tmp26[24]).t;
+      const intl36 = channel(tmp31[24]).intl;
+      const string7 = intl36.string;
+      const t7 = channel(tmp31[24]).t;
       if (isCategoryResult) {
         string7Result = string7(t7.zdPFs9);
-        tmp115 = tmp113;
+        tmp118 = tmp116;
       } else {
         string7Result = string7(t7["3gUsJb"]);
-        tmp115 = tmp113;
+        tmp118 = tmp116;
       }
-      const obj46 = {
+      const obj49 = {
         label: string7Result,
-        IconComponent: tmp115(tmp26[81]).SettingsIcon,
+        IconComponent: tmp118(tmp31[85]).SettingsIcon,
         onPress() {
               obj = ChannelSettingsActionCreatorsDefault;
               obj.setSection(constants4.OVERVIEW);
@@ -922,22 +960,22 @@ function getActionSheetButtons(channel) {
               obj2.open(channel.id);
             }
       };
-      push32(obj46);
-      const isForumLikeChannelResult1 = tmp47(channel.type) || channel.isForumLikeChannel() || channel.isGuildVoice() || channel.isCategory();
+      push33(obj49);
+      const isForumLikeChannelResult1 = tmp51(channel.type) || channel.isForumLikeChannel() || channel.isGuildVoice() || channel.isCategory();
       if (isForumLikeChannelResult1) {
         let string8Result;
-        const buttons25 = obj45.buttons;
-        const push33 = buttons25.push;
+        const buttons26 = obj48.buttons;
+        const push34 = buttons26.push;
         const isCategoryResult1 = channel.isCategory();
-        const intl36 = tmp115(tmp26[24]).intl;
-        const string8 = intl36.string;
-        const t8 = tmp115(tmp26[24]).t;
+        const intl37 = tmp118(tmp31[24]).intl;
+        const string8 = intl37.string;
+        const t8 = tmp118(tmp31[24]).t;
         if (isCategoryResult1) {
           string8Result = string8(t8["fUYU+j"]);
         } else {
           string8Result = string8(t8.dEaPc4);
         }
-        const obj47 = {
+        const obj50 = {
           label: string8Result,
           IconComponent: CopyIcon,
           onPress() {
@@ -957,19 +995,19 @@ function getActionSheetButtons(channel) {
                 }
         };
         if (channel.isCategory()) {
-          CopyIcon = tmp115(tmp26[39]).PlusLargeIcon;
+          CopyIcon = tmp118(tmp31[43]).PlusLargeIcon;
         } else {
-          CopyIcon = tmp115(tmp26[82]).CopyIcon;
+          CopyIcon = tmp118(tmp31[86]).CopyIcon;
         }
-        push33(obj47);
+        push34(obj50);
       }
     }
     if (developerMode) {
-      const buttons26 = obj45.buttons;
-      const push34 = buttons26.push;
-      const obj48 = {
-        label: intl37.string(channel(tmp26[24]).t.gFHI3k),
-        IconComponent: channel(tmp26[84]).IdIcon,
+      const buttons27 = obj48.buttons;
+      const push35 = buttons27.push;
+      const obj51 = {
+        label: intl38.string(channel(tmp31[24]).t.gFHI3k),
+        IconComponent: channel(tmp31[88]).IdIcon,
         onPress() {
               obj = ClipboardUtils;
               obj.copy(channel.id);
@@ -977,47 +1015,47 @@ function getActionSheetButtons(channel) {
               obj2.presentIdCopied();
             }
       };
-      intl37 = channel(tmp26[24]).intl;
-      push34(obj48);
+      intl38 = channel(tmp31[24]).intl;
+      push35(obj51);
     }
-    if (obj45.buttons.length > 0) {
-      items.push(obj45);
+    if (obj48.buttons.length > 0) {
+      items.push(obj48);
     }
-    if (obj4.buttons.length > 0) {
-      items.push(obj4);
+    if (obj6.buttons.length > 0) {
+      items.push(obj6);
     }
-    if (obj5.buttons.length > 0) {
-      items.push(obj5);
+    if (obj7.buttons.length > 0) {
+      items.push(obj7);
     }
     return items;
   }
-  const intl19 = channel(tmp26[24]).intl;
-  const string4 = intl19.string;
-  const t4 = channel(tmp26[24]).t;
+  const intl20 = channel(tmp31[24]).intl;
+  const string4 = intl20.string;
+  const t4 = channel(tmp31[24]).t;
   if (isMuted) {
     let stringResult1;
     const string4Result = string4(t4.OYefme);
     if (channel.isCategory()) {
-      const intl25 = tmp72(tmp26[24]).intl;
-      stringResult1 = intl25.string(tmp72(tmp26[24]).t.olaBeG);
+      const intl26 = tmp76(tmp31[24]).intl;
+      stringResult1 = intl26.string(tmp76(tmp31[24]).t.olaBeG);
     } else {
       if (!channel.isDM()) {
         if (!channel.isGroupDM()) {
           stringResult1 = string4Result;
           if (channel.isThread()) {
-            const intl23 = tmp72(tmp26[24]).intl;
-            stringResult1 = intl23.string(tmp72(tmp26[24]).t["Cq/TzF"]);
+            const intl24 = tmp76(tmp31[24]).intl;
+            stringResult1 = intl24.string(tmp76(tmp31[24]).t["Cq/TzF"]);
           }
         }
       }
-      const intl24 = tmp72(tmp26[24]).intl;
-      stringResult1 = intl24.string(tmp72(tmp26[24]).t["s5/5fm"]);
+      const intl25 = tmp76(tmp31[24]).intl;
+      stringResult1 = intl25.string(tmp76(tmp31[24]).t["s5/5fm"]);
     }
-    const buttons27 = obj29.buttons;
-    const push22 = buttons27.push;
-    const obj49 = {
+    const buttons28 = obj31.buttons;
+    const push23 = buttons28.push;
+    const obj52 = {
       label: stringResult1,
-      IconComponent: channel(tmp26[61]).BellIcon,
+      IconComponent: channel(tmp31[64]).BellIcon,
       onPress() {
           let NotificationLabel;
           let obj2;
@@ -1029,31 +1067,31 @@ function getActionSheetButtons(channel) {
           const result = updateChannelOverrideSettings(obj);
         }
     };
-    push22(obj49);
+    push23(obj52);
   } else {
     let stringResult2;
     const string4Result1 = string4(t4.tbeRRJ);
     if (channel.isCategory()) {
-      const intl22 = tmp72(tmp26[24]).intl;
-      stringResult2 = intl22.string(tmp72(tmp26[24]).t.pNMCg2);
+      const intl23 = tmp76(tmp31[24]).intl;
+      stringResult2 = intl23.string(tmp76(tmp31[24]).t.pNMCg2);
     } else {
       if (!channel.isDM()) {
         if (!channel.isGroupDM()) {
           stringResult2 = string4Result1;
           if (channel.isThread()) {
-            const intl20 = tmp72(tmp26[24]).intl;
-            stringResult2 = intl20.string(tmp72(tmp26[24]).t.bUUd8q);
+            const intl21 = tmp76(tmp31[24]).intl;
+            stringResult2 = intl21.string(tmp76(tmp31[24]).t.bUUd8q);
           }
         }
       }
-      const intl21 = tmp72(tmp26[24]).intl;
-      stringResult2 = intl21.string(tmp72(tmp26[24]).t.LO3kaK);
+      const intl22 = tmp76(tmp31[24]).intl;
+      stringResult2 = intl22.string(tmp76(tmp31[24]).t.LO3kaK);
     }
-    const buttons28 = obj29.buttons;
-    const push21 = buttons28.push;
-    const obj50 = {
+    const buttons29 = obj31.buttons;
+    const push22 = buttons29.push;
+    const obj53 = {
       label: stringResult2,
-      IconComponent: channel(tmp26[60]).BellSlashIcon,
+      IconComponent: channel(tmp31[63]).BellSlashIcon,
       onPress() {
           obj = RootNavigationRef;
           const rootNavigationRef = obj.getRootNavigationRef();
@@ -1064,7 +1102,7 @@ function getActionSheetButtons(channel) {
           }
         }
     };
-    push21(obj50);
+    push22(obj53);
   }
 }
 let react = react_mod;
@@ -1093,8 +1131,8 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   const cResult = obj.c(69);
   channel = channel.channel;
   const onClose = channel.onClose;
-  const tmp4 = onClose(7202);
-  const analyticsLocations = tmp4(onClose(7227).CHANNEL_LONG_PRESS_MENU).analyticsLocations;
+  const tmp4 = onClose(7230);
+  const analyticsLocations = tmp4(onClose(7255).CHANNEL_LONG_PRESS_MENU).analyticsLocations;
   if (cResult[0] !== channel) {
     const guildId = channel.getGuildId();
     cResult[0] = channel;
@@ -1104,7 +1142,7 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     tmp5 = cResult[1];
   }
   dependencyMap = tmp5;
-  const tmpResult = tmp(10650);
+  const tmpResult = tmp(10793);
   const isFavoritesGuildSelected = tmpResult.useIsFavoritesGuildSelected();
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildStore];
@@ -1153,8 +1191,8 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   const tmpResult5 = tmp(504);
   const stateFromStoresObject = tmpResult5.useStateFromStoresObject(tmp12, tmp14);
   ({ canManageChannel, canCreateInstantInvite, canConnect, canModerateStage } = stateFromStoresObject);
-  const useOptInEnabledForGuild = tmp(6764).useOptInEnabledForGuild;
-  tmp(6764);
+  const useOptInEnabledForGuild = tmp(6792).useOptInEnabledForGuild;
+  tmp(6792);
   const tmp17 = tmp5;
   if (tmp5 == null) {
     class O {
@@ -1190,7 +1228,7 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
       }
     }
   }
-  class F {
+  class R {
     constructor() {
       let isFavorite;
       let tmp;
@@ -1207,21 +1245,26 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   cResult[9] = channel.id;
   cResult[10] = channel.parent_id;
   cResult[11] = tmp5;
-  cResult[12] = F;
+  cResult[12] = R;
 }) : (function ChannelLongPressActionSheetConnected(channel) {
   let ActionSheet;
+  let ActionSheetIconHeader;
   let canConnect;
   let canCreateInstantInvite;
   let canManageChannel;
   let canModerateStage;
   let currentUser;
+  let formatToPlainStringResult;
   let id;
   let isOptedIn;
   let isParentOptedIn;
   let isPinned;
   let isStaffResult;
   let length;
+  let obj10;
   let obj9;
+  let subtitle;
+  let title;
   let tmp24;
   let tmp25;
   let tmp5Result26;
@@ -1231,29 +1274,29 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   let setting;
   react = undefined;
   let tmp = onClose;
-  const tmp3 = onClose(guildId[89]);
-  const analyticsLocations = tmp3(onClose(guildId[90]).CHANNEL_LONG_PRESS_MENU).analyticsLocations;
+  const tmp3 = onClose(guildId[93]);
+  const analyticsLocations = tmp3(onClose(guildId[94]).CHANNEL_LONG_PRESS_MENU).analyticsLocations;
   guildId = channel.getGuildId();
-  obj = channel(guildId[91]);
+  obj = channel(guildId[95]);
   const isFavoritesGuildSelected = obj.useIsFavoritesGuildSelected();
-  const obj2 = channel(guildId[92]);
+  const obj2 = channel(guildId[96]);
   const items = [GuildStore];
   const stateFromStores = obj2.useStateFromStores(items, () => GuildStore.getGuild(guildId));
   const items1 = [PermissionStore];
-  const obj3 = channel(guildId[92]);
+  const obj3 = channel(guildId[96]);
   const stateFromStoresObject = obj3.useStateFromStoresObject(items1, () => {
     obj = { canManageChannel: PermissionStore.can(constants.MANAGE_CHANNELS, channel), canCreateInstantInvite: PermissionStore.can(constants.CREATE_INSTANT_INVITE, channel), canConnect: PermissionStore.can(constants.CONNECT, channel), canModerateStage: PermissionStore.can(StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS, channel) };
     return obj;
   });
   ({ canManageChannel, canCreateInstantInvite, canConnect, canModerateStage } = stateFromStoresObject);
-  const useOptInEnabledForGuild = channel(guildId[94]).useOptInEnabledForGuild;
-  channel(guildId[94]);
+  const useOptInEnabledForGuild = channel(guildId[98]).useOptInEnabledForGuild;
+  channel(guildId[98]);
   if (guildId == null) {
     guildId = closure_30;
   }
   const optInEnabledForGuild = useOptInEnabledForGuild(guildId);
   const items2 = [UserGuildSettingsStore];
-  const tmp5Result = channel(guildId[92]);
+  const tmp5Result = channel(guildId[96]);
   const stateFromStoresObject1 = tmp5Result.useStateFromStoresObject(items2, () => {
     let isFavorite;
     let tmp;
@@ -1268,51 +1311,51 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   });
   ({ isOptedIn, isParentOptedIn, isPinned } = stateFromStoresObject1);
   const items3 = [UserGuildSettingsStore];
-  const tmp5Result14 = channel(guildId[92]);
+  const tmp5Result14 = channel(guildId[96]);
   const stateFromStores1 = tmp5Result14.useStateFromStores(items3, () => UserGuildSettingsStore.isChannelMuted(guildId, channel.id));
   const items4 = [ReadStateStore];
-  const tmp5Result15 = channel(guildId[92]);
+  const tmp5Result15 = channel(guildId[96]);
   const stateFromStores2 = tmp5Result15.useStateFromStores(items4, () => ReadStateStore.hasUnreadOrMentions(channel.id));
-  const tmp5Result16 = channel(guildId[57]);
+  const tmp5Result16 = channel(guildId[60]);
   const canMarkChannelUnread = tmp5Result16.useCanMarkChannelUnread(channel);
   const items5 = [ActiveThreadsStore];
-  const tmp5Result17 = channel(guildId[92]);
+  const tmp5Result17 = channel(guildId[96]);
   const stateFromStores3 = tmp5Result17.useStateFromStores(items5, () => {
     const hasThreadsForChannelResult = null != guildId && ActiveThreadsStore.hasThreadsForChannel(tmp, channel.id);
     return hasThreadsForChannelResult;
   });
   const items6 = [CategoryCollapseStore];
-  const tmp5Result18 = channel(guildId[92]);
+  const tmp5Result18 = channel(guildId[96]);
   const stateFromStores4 = tmp5Result18.useStateFromStores(items6, () => CategoryCollapseStore.isCollapsed(channel.parent_id));
   const items7 = [CollapsedVoiceChannelStore];
-  const tmp5Result19 = channel(guildId[92]);
+  const tmp5Result19 = channel(guildId[96]);
   const stateFromStores5 = tmp5Result19.useStateFromStores(items7, () => CollapsedVoiceChannelStore.isCollapsed(channel.id));
   const items8 = [StageInstanceStore];
-  const tmp5Result20 = channel(guildId[92]);
+  const tmp5Result20 = channel(guildId[96]);
   const stateFromStores6 = tmp5Result20.useStateFromStores(items8, () => StageInstanceStore.isLive(channel.id));
-  const tmpResult = tmp(guildId[29]);
+  const tmpResult = tmp(guildId[34]);
   const tmpResultResult = tmpResult(channel, !channel.isThread());
-  const tmp22 = tmp(guildId[95])(channel);
-  const DeveloperMode = tmp5(tmp2[96]).DeveloperMode;
+  const tmp22 = tmp(guildId[99])(channel);
+  const DeveloperMode = tmp5(tmp2[100]).DeveloperMode;
   setting = DeveloperMode.useSetting();
   const tmp11 = UserGuildSettingsStore;
   if (null != stateFromStores) {
-    tmp(guildId[97]);
-    tmp25 = <tmpResult3 guild={stateFromStores} size={channel(tmp2[97]).GuildIconSizes.LARGE} />;
+    tmp(guildId[101]);
+    tmp25 = <tmpResult3 guild={stateFromStores} size={channel(tmp2[101]).GuildIconSizes.LARGE} />;
     tmp24 = jsx;
   } else {
     tmp24 = jsx;
-    const Avatar = tmp5(tmp2[98]).Avatar;
-    tmp25 = <Avatar size={channel(tmp2[98]).AvatarSizes.LARGE} channel={channel} />;
+    const Avatar = tmp5(tmp2[102]).Avatar;
+    tmp25 = <Avatar size={channel(tmp2[102]).AvatarSizes.LARGE} channel={channel} />;
   }
   const items9 = [UserStore];
-  const tmp5Result21 = channel(guildId[92]);
+  const tmp5Result21 = channel(guildId[96]);
   const stateFromStores7 = tmp5Result21.useStateFromStores(items9, () => currentUser.getCurrentUser());
   const items10 = [tmp11];
   const tmp28 = null != stateFromStores7 && channel.isOwner(stateFromStores7.id);
-  const tmp5Result22 = channel(guildId[92]);
+  const tmp5Result22 = channel(guildId[96]);
   const stateFromStores8 = tmp5Result22.useStateFromStores(items10, () => UserGuildSettingsStore.isMessagesFavorite(channel.id));
-  const tmp5Result23 = channel(guildId[99]);
+  const tmp5Result23 = channel(guildId[103]);
   const inappropriateConversationsTiers = tmp5Result23.useInappropriateConversationsTiers(channel);
   let isTier1;
   if (inappropriateConversationsTiers != null) {
@@ -1339,11 +1382,11 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     tmp35 = !isTier21;
   }
   const items11 = [ChannelSpoilerAgreeStore];
-  const tmp5Result24 = channel(guildId[92]);
+  const tmp5Result24 = channel(guildId[96]);
   const stateFromStores9 = tmp5Result24.useStateFromStores(items11, () => ChannelSpoilerAgreeStore.didAgree(channel.id));
-  const tmp38 = tmp(guildId[100])(channel);
-  const tmp39 = tmp(guildId[101])(channel);
-  const tmp40 = tmp(guildId[102])(channel);
+  const tmp38 = tmp(guildId[104])(channel);
+  const tmp39 = tmp(guildId[105])(channel);
+  const tmp40 = tmp(guildId[106])(channel);
   let isFavorites;
   if (tmp40 != null) {
     isFavorites = tmp40.isFavorites;
@@ -1356,17 +1399,19 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
       tmp42 = tmp40;
     }
   }
-  const tmp5Result25 = channel(guildId[103]);
+  const tmp5Result25 = channel(guildId[107]);
   const isConjureChannelCandidate = tmp5Result25.useIsConjureChannelCandidate(channel, "ChannelLongPressActionSheet");
   let tmp45 = null;
-  const tmpResult4 = tmp(guildId[104]);
+  const tmpResult4 = tmp(guildId[108]);
   if (isConjureChannelCandidate) {
     tmp45 = channel;
   }
   const tmpResult2Result = tmpResult4(tmp45);
-  const obj6 = { channel, canManageChannel, canCreateInstantInvite, canConnect, developerMode: setting, isMuted: stateFromStores1, hasUnread: stateFromStores2, canMarkUnread: canMarkChannelUnread, isOwner: tmp28, hasThreads: stateFromStores3, isNsfwGated: tmp22, isInCollapsedCategory: stateFromStores4, isCollapsedVoiceChannel: stateFromStores5, isLiveStageChannel: stateFromStores6, canModerateStage, isOptInEnabled: optInEnabledForGuild, isOptedIn, isParentOptedIn, isPinned, isMessagesFavorited: stateFromStores8, canMarkAsTier1InappropriateConversation: tmp32, canMarkAsTier2InappropriateConversation: tmp35, isSpoilerAgreed: stateFromStores9, analyticsLocations, isFavoritesGuild: isFavoritesGuildSelected, isStaff: true === isStaffResult, favorites: tmp38, favoritesCategoryAddAction: tmp39, favoritesMoveAction: tmp42, conjureProjectId: id };
+  const frameId = tmp(tmp2[109])(channel).frameId;
+  const tmp47 = tmp(guildId[110])(channel, isConjureChannelCandidate);
+  const obj6 = { channel, canManageChannel, canCreateInstantInvite, canConnect, developerMode: setting, isMuted: stateFromStores1, hasUnread: stateFromStores2, canMarkUnread: canMarkChannelUnread, isOwner: tmp28, hasThreads: stateFromStores3, isNsfwGated: tmp22, isInCollapsedCategory: stateFromStores4, isCollapsedVoiceChannel: stateFromStores5, isLiveStageChannel: stateFromStores6, canModerateStage, isOptInEnabled: optInEnabledForGuild, isOptedIn, isParentOptedIn, isPinned, isMessagesFavorited: stateFromStores8, canMarkAsTier1InappropriateConversation: tmp32, canMarkAsTier2InappropriateConversation: tmp35, isSpoilerAgreed: stateFromStores9, analyticsLocations, isFavoritesGuild: isFavoritesGuildSelected, isStaff: true === isStaffResult, favorites: tmp38, favoritesCategoryAddAction: tmp39, favoritesMoveAction: tmp42, conjureProjectId: id, appFrameId: frameId, conjureRemixProject: tmp47.remixProject };
   isStaffResult = undefined;
-  const tmp47 = getActionSheetButtons;
+  const tmp48 = getActionSheetButtons;
   if (stateFromStores7 != null) {
     isStaffResult = stateFromStores7.isStaff();
   }
@@ -1377,15 +1422,14 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   if (id == null) {
     id = null;
   }
-  const tmp47Result = tmp47(obj6);
-  react = tmp47Result;
-  let formatToPlainStringResult;
+  const tmp48Result = tmp48(obj6);
+  react = tmp48Result;
   if (channel.isGroupDM()) {
     const intl = tmp5(tmp2[24]).intl;
     const obj7 = { members: channel.recipients.length + 1 };
-    formatToPlainStringResult = intl.formatToPlainString(tmp5(tmp2[24]).t.ABMKx3, obj7);
+    formatToPlainStringResult = intl.formatToPlainString(channel(guildId[24]).t.ABMKx3, obj7);
   }
-  const items12 = [tmp47Result.length, setting, onClose];
+  const items12 = [tmp48Result.length, setting, onClose];
   const effect = react.useEffect(() => {
     const tmp = 0 !== length.length || setting;
     if (!tmp) {
@@ -1393,12 +1437,12 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     }
   }, items12);
   const obj8 = { value: analyticsLocations, children: tmp24(ActionSheet, obj9) };
-  const AnalyticsLocationProvider = tmp5(tmp2[89]).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = tmp5(tmp2[93]).AnalyticsLocationProvider;
   obj9 = {
     showGradient: true,
     startExpanded: tmp5Result26.isMetaQuest(),
-    header: tmp24(channel(guildId[107]).ActionSheetIconHeader, { icon: tmp25, title: tmpResultResult, subtitle: formatToPlainStringResult }),
-    children: tmp47Result.map((buttons) => {
+    header: tmp24(ActionSheetIconHeader, obj10),
+    children: tmp48Result.map((buttons) => {
       buttons = buttons.buttons;
       const Group = ActionSheetRow2.ActionSheetRow.Group;
       return <Group key={arg0.sectionKey} hasIcons>{buttons.map((onPress, index) => {
@@ -1416,7 +1460,7 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
         obj = {
           variant: str,
           label,
-          icon: closure_1_35(channel(guildId[108]).ActionSheetRow.Icon, { IconComponent, style: iconStyle, disableColor }),
+          icon: closure_1_35(channel(guildId[114]).ActionSheetRow.Icon, { IconComponent, style: iconStyle, disableColor }),
           trailing,
           onPress() {
             if (onPress != null) {
@@ -1425,13 +1469,39 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
             onClose();
           }
         };
-        const ActionSheetRow = channel(guildId[108]).ActionSheetRow;
+        const ActionSheetRow = channel(guildId[114]).ActionSheetRow;
         return closure_1_35(ActionSheetRow, obj, index);
       })}</Group>;
     })
   };
-  ActionSheet = tmp5(tmp2[105]).ActionSheet;
-  tmp5Result26 = channel(guildId[106]);
+  ActionSheet = tmp5(tmp2[111]).ActionSheet;
+  const header = tmp47.header;
+  let icon;
+  tmp5Result26 = channel(guildId[112]);
+  ActionSheetIconHeader = tmp5(tmp2[113]).ActionSheetIconHeader;
+  if (header != null) {
+    icon = header.icon;
+  }
+  if (icon == null) {
+    icon = tmp25;
+  }
+  const header2 = tmp47.header;
+  obj10 = { icon, title, subtitle };
+  title = undefined;
+  if (header2 != null) {
+    title = header2.title;
+  }
+  if (title == null) {
+    title = tmpResultResult;
+  }
+  const header3 = tmp47.header;
+  subtitle = undefined;
+  if (header3 != null) {
+    subtitle = header3.subtitle;
+  }
+  if (subtitle == null) {
+    subtitle = formatToPlainStringResult;
+  }
   return tmp24(AnalyticsLocationProvider, obj8);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -1439,7 +1509,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelLongP
   let first;
   let stateFromStores;
   let tmp6;
-  obj = channelId(stateFromStores[88]);
+  obj = channelId(stateFromStores[92]);
   const cResult = obj.c(10);
   const tmp = channelId;
   channelId = channelId.channelId;
@@ -1462,7 +1532,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelLongP
   } else {
     tmp6 = cResult[2];
   }
-  const tmpResult = tmp(tmp2[92]);
+  const tmpResult = tmp(tmp2[96]);
   stateFromStores = tmpResult.useStateFromStores(first, tmp6);
   if (cResult[3] === stateFromStores) {
     let tmp8;

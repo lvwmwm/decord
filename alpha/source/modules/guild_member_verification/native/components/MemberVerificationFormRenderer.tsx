@@ -1,14 +1,14 @@
-// Module ID: 6846
-// Function ID: 6847
+// Module ID: 6874
+// Function ID: 6875
 // Name: MemberVerificationFormRenderer
-// Dependencies: [19, 17, 21, 4945, 558, 576, 4974, 6847, 6868, 7129, 7130, 7134, 2]
+// Dependencies: [19, 17, 21, 4966, 558, 576, 4995, 6875, 6896, 7157, 7158, 7162, 2]
 
-// Module 6846 (MemberVerificationFormRenderer)
+// Module 6874 (MemberVerificationFormRenderer)
 import Fragment from "Fragment" /* 21 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4974 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4995 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

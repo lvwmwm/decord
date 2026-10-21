@@ -1,12 +1,12 @@
-// Module ID: 12105
-// Function ID: 12106
+// Module ID: 12153
+// Function ID: 12154
 // Name: useVoteReactors
-// Dependencies: [8233, 1087, 558, 576, 5186, 504, 1357, 2]
+// Dependencies: [8261, 1087, 558, 576, 5207, 504, 1357, 2]
 
-// Module 12105 (useVoteReactors)
+// Module 12153 (useVoteReactors)
 import Constants from "Constants" /* 1087 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5186 */;
-import MessageReactionsStore from "MessageReactionsStore" /* 8233 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5207 */;
+import MessageReactionsStore from "MessageReactionsStore" /* 8261 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

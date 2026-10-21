@@ -1,20 +1,20 @@
-// Module ID: 11180
-// Function ID: 11181
+// Module ID: 11224
+// Function ID: 11225
 // Name: UserProfileSection
-// Dependencies: [109, 19, 17, 21, 4945, 587, 558, 576, 4999, 7229, 4942, 8887, 5195, 2]
+// Dependencies: [109, 19, 17, 21, 4966, 587, 558, 576, 5020, 7257, 4963, 8914, 5216, 2]
 
-// Module 11180 (UserProfileSection)
+// Module 11224 (UserProfileSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ColorUtils from "ColorUtils" /* 4942 */;
-import native from "native" /* 4999 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 7229 */;
+import ColorUtils from "ColorUtils" /* 4963 */;
+import native from "native" /* 5020 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 7257 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -183,7 +183,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
     let borderColor;
     if (null != profileThemeValues) {
       const tmpResult4 = ColorUtils;
-      borderColor = tmpResult4.hexOpacityToRgba(tmp(8887).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
+      borderColor = tmpResult4.hexOpacityToRgba(tmp(8914).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
     }
     cResult[8] = primaryColor;
     cResult[9] = profileThemeValues;
@@ -220,7 +220,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
     let borderColor;
     if (null != profileThemeValues) {
       const tmp3Result = ColorUtils;
-      borderColor = tmp3Result.hexOpacityToRgba(tmp3(8887).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
+      borderColor = tmp3Result.hexOpacityToRgba(tmp3(8914).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
     }
     obj3.borderColor = borderColor;
     const obj4 = { style: items, children: items3 };

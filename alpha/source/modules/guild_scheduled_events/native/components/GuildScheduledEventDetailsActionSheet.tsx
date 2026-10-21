@@ -1,20 +1,20 @@
-// Module ID: 8817
-// Function ID: 8818
+// Module ID: 8844
+// Function ID: 8845
 // Name: GuildScheduledEventDetailsActionSheet
-// Dependencies: [32, 19, 17, 4822, 6735, 4806, 21, 4945, 587, 1128, 558, 576, 7202, 7227, 504, 8818, 8831, 8819, 8832, 1633, 8833, 8834, 9079, 5230, 9081, 9082, 5226, 2]
+// Dependencies: [32, 19, 17, 4843, 6763, 4827, 21, 4966, 587, 1128, 558, 576, 7230, 7255, 504, 8845, 8858, 8846, 8859, 1633, 8860, 8861, 9106, 5251, 9108, 9109, 5247, 2]
 
-// Module 8817 (GuildScheduledEventDetailsActionSheet)
+// Module 8844 (GuildScheduledEventDetailsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
-import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8819 */;
+import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8846 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4822 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6735 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4806 */;
+import GuildStore from "GuildStore" /* 4843 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6763 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4827 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -381,7 +381,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSchedul
   let tmp23;
   let tmp36Result2;
   let tmp8;
-  const f100572 = () => {
+  const f100854 = () => {
     let id;
     const getGuildEventUsers = GuildScheduledEventManagerDefault.getGuildEventUsers;
     GuildScheduledEventManagerDefault;
@@ -466,9 +466,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSchedul
     }
     return tmp5;
   }, items3);
-  [c5, tmp19] = tmp5(tmp2(tmp3[18])(f100572), 2);
+  [c5, tmp19] = tmp5(tmp2(tmp3[18])(f100854), 2);
   ({ loading, error } = tmp19);
-  tmp5(tmp2(tmp3[18])(f100572), 2);
+  tmp5(tmp2(tmp3[18])(f100854), 2);
   [tmp21, c6] = tmp5(obj.useState(0), 2);
   tmp5(obj.useState(0), 2);
   [tmp23, c7] = tmp5(obj.useState(0), 2);

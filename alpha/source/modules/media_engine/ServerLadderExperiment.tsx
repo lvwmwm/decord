@@ -1,9 +1,9 @@
-// Module ID: 5805
-// Function ID: 5806
+// Module ID: 5827
+// Function ID: 5828
 // Name: ServerLadderExperiment
 // Dependencies: [1455, 2]
 
-// Module 5805 (ServerLadderExperiment)
+// Module 5827 (ServerLadderExperiment)
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 

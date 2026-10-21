@@ -1,10 +1,10 @@
-// Module ID: 9998
-// Function ID: 9999
+// Module ID: 10028
+// Function ID: 10029
 // Name: SummaryActionCreators
-// Dependencies: [5, 19, 6453, 4800, 9937, 1087, 1104, 584, 1297, 6331, 12, 9939, 558, 576, 573, 2]
+// Dependencies: [5, 19, 6475, 4821, 9967, 1087, 1104, 584, 1297, 6353, 12, 9969, 558, 576, 573, 2]
 // Exports: deleteSummary, fetchSummaries, setHighlightedSummary, setSelectedSummary, setSummaryFeedback, stopPolling, toggleTopicsBar, updateVisibleMessages
 
-// Module 9998 (SummaryActionCreators)
+// Module 10028 (SummaryActionCreators)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
@@ -12,9 +12,9 @@ import DurationsDefault from "Durations" /* 1104 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6453 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import SummaryStore from "SummaryStore" /* 9937 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6475 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import SummaryStore from "SummaryStore" /* 9967 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -444,7 +444,7 @@ obj = function _fetchSummariesBulk() {
     }
     flag = obj4.useQuickSwitcher ?? true;
     flag2 = obj4.useChannelAffinities ?? true;
-    return "test";
+    return "Reflect";
   });
   return obj(...arguments);
 };

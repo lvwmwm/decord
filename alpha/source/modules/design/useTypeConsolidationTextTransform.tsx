@@ -1,12 +1,12 @@
-// Module ID: 7025
-// Function ID: 7026
+// Module ID: 7053
+// Function ID: 7054
 // Name: useTypeConsolidationTextTransform
-// Dependencies: [558, 7026, 576, 2]
+// Dependencies: [558, 7054, 576, 2]
 // Exports: useTypeConsolidationTextTransform
 
-// Module 7025 (useTypeConsolidationTextTransform)
+// Module 7053 (useTypeConsolidationTextTransform)
 import react from "react" /* 576 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7026 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7054 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTypeConso
     obj4 = { variant: "experimental/body-sm/medium", style };
     const obj3 = { variant: "experimental/body-sm/medium", style };
   } else {
-    obj4 = { variant, style: "r" };
+    obj4 = { variant, style: "Array" };
   }
   cResult[0] = variant;
   cResult[1] = manaTypeConsolidationExperiment;
@@ -44,7 +44,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTypeConso
     obj3 = { variant: "experimental/body-sm/medium", style };
     const obj2 = { variant: "experimental/body-sm/medium", style };
   } else {
-    obj3 = { variant, style: "r" };
+    obj3 = { variant, style: "Array" };
   }
   return obj3;
 });

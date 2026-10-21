@@ -1,28 +1,85 @@
 // Module ID: 12491
 // Function ID: 12492
-// Dependencies: []
-// Exports: isSentryRequestUrl
+// Dependencies: [12492, 12489]
+// Exports: extractTraceparentData, generateSentryTraceHeader, propagationContextFromHeaders
 
 // Module 12491
+import generatePropagationContext from "generatePropagationContext" /* 12489 */;
+import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 12492 */;
 
-export const isSentryRequestUrl = function isSentryRequestUrl(arr, getDsn) {
-  const tmp = getDsn && getDsn.getDsn();
-  arr = getDsn && getDsn.getOptions().tunnel;
-  let tmp2 = tmp && arr.includes(tmp.host);
-  if (!tmp2) {
-    let flag = false;
-    if (arr) {
-      let substr = arr;
-      if ("/" === arr[arr.length - 1]) {
-        substr = arr.slice(0, -1);
+const regExp = new RegExp("^[ \\t]*([0-9a-f]{32})?-?([0-9a-f]{16})?-?([01])?[ \\t]*$");
+
+export const TRACEPARENT_REGEXP = regExp;
+export const extractTraceparentData = function extractTraceparentData(str) {
+  const tmp = str;
+  if (tmp) {
+    const match = str.match(regExp);
+    if (match) {
+      let flag = true;
+      if ("1" !== match[3]) {
+        if ("0" === match[3]) {
+          flag = false;
+        }
       }
-      let substr1 = arr;
-      if ("/" === arr[arr.length - 1]) {
-        substr1 = arr.slice(0, -1);
-      }
-      flag = substr === substr1;
+      return { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
     }
-    tmp2 = flag;
   }
-  return tmp2;
+};
+export const generateSentryTraceHeader = function generateSentryTraceHeader() {
+  let traceId = arg0;
+  if (arg0 === undefined) {
+    const obj = generatePropagationContext;
+    traceId = obj.generateTraceId();
+  }
+  let spanId = arg1;
+  if (arg1 === undefined) {
+    const obj2 = generatePropagationContext;
+    spanId = obj2.generateSpanId();
+  }
+  let str = "";
+  if (undefined !== arg2) {
+    let str2 = "-0";
+    if (arg2) {
+      str2 = "-1";
+    }
+    str = str2;
+  }
+  return "" + traceId + "-" + spanId + str;
+};
+export const propagationContextFromHeaders = function propagationContextFromHeaders(str, arg1) {
+  let parentSampled;
+  let tmp4Result;
+  let tmp4Result3;
+  let tmp4Result4;
+  let tmp;
+  if (str) {
+    const match = str.match(regExp);
+    if (match) {
+      let flag = true;
+      if ("1" !== match[3]) {
+        if ("0" === match[3]) {
+          flag = false;
+        }
+      }
+      tmp = { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
+      const obj = { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
+    }
+  }
+  const obj2 = BAGGAGE_HEADER_NAME;
+  let result = obj2.baggageHeaderToDynamicSamplingContext(arg1);
+  if (tmp) {
+    if (tmp.traceId) {
+      const obj3 = { traceId: null, parentSpanId: null, spanId: tmp4Result.generateSpanId(), sampled: parentSampled, dsc: result };
+      ({ traceId: obj7.traceId, parentSpanId: obj7.parentSpanId, parentSampled } = tmp);
+      tmp4Result = generatePropagationContext;
+      if (!result) {
+        result = {};
+      }
+      return obj3;
+    }
+  }
+  const obj4 = { traceId: tmp4Result3.generateTraceId(), spanId: tmp4Result4.generateSpanId() };
+  tmp4Result3 = generatePropagationContext;
+  tmp4Result4 = generatePropagationContext;
+  return obj4;
 };

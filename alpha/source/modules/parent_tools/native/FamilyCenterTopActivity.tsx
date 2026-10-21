@@ -1,20 +1,20 @@
-// Module ID: 15990
-// Function ID: 15991
+// Module ID: 16066
+// Function ID: 16067
 // Name: FamilyCenterTopActivity
-// Dependencies: [19, 17, 1392, 7594, 21, 4945, 587, 573, 5171, 15991, 2002, 15992, 8974, 1128, 2526, 5195, 1202, 6834, 2]
+// Dependencies: [19, 17, 1392, 7622, 21, 4966, 587, 573, 5192, 16067, 2002, 16068, 9001, 1128, 2536, 5216, 1202, 6862, 2]
 // Exports: default
 
-// Module 15990 (FamilyCenterTopActivity)
+// Module 16066 (FamilyCenterTopActivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import GuildIcon from "GuildIcon" /* 6834 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
+import GuildIcon from "GuildIcon" /* 6862 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7594 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7622 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -66,7 +66,7 @@ export default function FamilyCenterTopActivity() {
   const callback = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { topUserActivities: stateFromStores };
-    obj.openLazy(asyncRequire(15991, dependencyMap.paths), "FamilyCenterTopUsers", obj2);
+    obj.openLazy(asyncRequire(16067, dependencyMap.paths), "FamilyCenterTopUsers", obj2);
   }, items2);
   if (0 !== stateFromStores.length) {
     let tmp9 = stateFromStores.length > 0;

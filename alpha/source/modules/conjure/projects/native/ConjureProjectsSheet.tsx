@@ -1,30 +1,30 @@
-// Module ID: 13982
-// Function ID: 13983
+// Module ID: 14057
+// Function ID: 14058
 // Name: ConjureProjectsSheet
-// Dependencies: [19, 17, 4971, 6724, 7270, 21, 4945, 587, 5171, 5112, 13345, 558, 576, 11629, 11717, 6854, 6938, 11627, 1128, 3820, 11705, 6834, 504, 5195, 5935, 5205, 11023, 1633, 5224, 7197, 7247, 5230, 2]
+// Dependencies: [19, 17, 4992, 6752, 7298, 21, 4966, 587, 5192, 5133, 13412, 558, 576, 11679, 11763, 6882, 6966, 11677, 1128, 3830, 11751, 6862, 504, 5216, 5957, 5226, 10678, 1633, 5245, 7225, 7275, 5251, 2]
 
-// Module 13982 (ConjureProjectsSheet)
+// Module 14057 (ConjureProjectsSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl10 from "intl" /* 1128 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import _modDef3820 from "module_3820" /* 3820 */;
-import RootNavigationRef from "RootNavigationRef" /* 5112 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5171 */;
-import useMountEffectDefault from "useMountEffect" /* 5224 */;
-import BottomSheetModal from "BottomSheetModal" /* 5230 */;
-import TableRowGroup2 from "TableRowGroup" /* 6938 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7197 */;
-import ActionSheet2 from "ActionSheet" /* 7247 */;
-import ConjureCreateSheet from "ConjureCreateSheet" /* 11627 */;
-import openConjureProject from "openConjureProject" /* 13345 */;
+import _modDef3830 from "module_3830" /* 3830 */;
+import RootNavigationRef from "RootNavigationRef" /* 5133 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5192 */;
+import useMountEffectDefault from "useMountEffect" /* 5245 */;
+import BottomSheetModal from "BottomSheetModal" /* 5251 */;
+import TableRowGroup2 from "TableRowGroup" /* 6966 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7225 */;
+import ActionSheet2 from "ActionSheet" /* 7275 */;
+import ConjureCreateSheet from "ConjureCreateSheet" /* 11677 */;
+import openConjureProject from "openConjureProject" /* 13412 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4971 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6724 */;
-import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 7270 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4992 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6752 */;
+import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 7298 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
     fallbackGuildId = entry.fallbackGuildId;
   }
   if (cResult[0] !== entry) {
-    const tmpResult = tmp(11629);
+    const tmpResult = tmp(11679);
     const result = tmpResult.describeConjureProjectRow(entry);
     let num = 0;
     cResult[0] = entry;
@@ -72,7 +72,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
   ({ serverName, label } = tmp4);
   if (cResult[2] !== entry.project) {
     let obj2 = { project: entry.project, size: "list" };
-    const tmp9 = closure_6(fallbackGuildId(11717), obj2);
+    const tmp9 = closure_6(fallbackGuildId(11763), obj2);
     cResult[2] = entry.project;
     cResult[3] = tmp9;
     tmp6 = tmp9;
@@ -113,7 +113,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
       }
     }
     let obj3 = { label: entry.name, subLabel: serverName, accessibilityLabel: label, icon: tmp6, trailing: tmp10, disabled: null == fallbackGuildId, onPress: tmp15 };
-    const tmp18 = closure_6(tmp(6854).TableRow, obj3);
+    const tmp18 = closure_6(tmp(6882).TableRow, obj3);
     cResult[9] = label;
     cResult[10] = entry.name;
     cResult[11] = serverName;
@@ -170,14 +170,14 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
   if (fallbackGuildId == null) {
     fallbackGuildId = entry.fallbackGuildId;
   }
-  let obj = entry(11629);
+  let obj = entry(11679);
   const result = obj.describeConjureProjectRow(entry);
   ({ serverName, label } = result);
   let obj2 = {
     label: entry.name,
     subLabel: serverName,
     accessibilityLabel: label,
-    icon: closure_6(fallbackGuildId(11717), obj3),
+    icon: closure_6(fallbackGuildId(11763), obj3),
     trailing: tmp2Result,
     disabled: null == fallbackGuildId,
     onPress() {
@@ -213,7 +213,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
       }
     }
   };
-  const TableRow = entry(6854).TableRow;
+  const TableRow = entry(6882).TableRow;
   obj3 = { project: entry.project, size: "list" };
   tmp2Result = undefined;
   if ("building" === entry.activity) {
@@ -247,7 +247,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
         return tmp7;
       }
       const obj2 = { title, hasIcons: true, children: tmp4 };
-      const tmp9 = closure_6(tmp(6938).TableRowGroup, obj2);
+      const tmp9 = closure_6(tmp(6966).TableRowGroup, obj2);
       cResult[5] = tmp4;
       cResult[6] = title;
       cResult[7] = tmp9;
@@ -320,7 +320,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildG
     let tmp6 = null;
     if (null != tmp4) {
       let obj2 = {
-        label: intl.string(_modDef3820.UPLaGM),
+        label: intl.string(_modDef3830.UPLaGM),
         icon: closure_6(Icon, obj3),
         arrow: true,
         onPress() {
@@ -364,10 +364,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildG
               showActionSheet(obj);
             }
       };
-      let TableRow = tmp(6854).TableRow;
+      let TableRow = tmp(6882).TableRow;
       intl = tmp(1128).intl;
-      obj3 = { IconComponent: tmp(11705).UserIcon };
-      Icon = tmp(6854).TableRow.Icon;
+      obj3 = { IconComponent: tmp(11751).UserIcon };
+      Icon = tmp(6882).TableRow.Icon;
       tmp6 = closure_6(TableRow, obj2);
     }
     cResult[0] = tmp4;
@@ -450,7 +450,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildG
   }
   let obj4 = { title, description, hasIcons: true, children: items };
   items = [tmp5, tmp9];
-  const tmp14 = closure_7(tmp(6938).TableRowGroup, obj4);
+  const tmp14 = closure_7(tmp(6966).TableRowGroup, obj4);
   cResult[5] = description;
   cResult[6] = tmp5;
   cResult[7] = tmp9;
@@ -475,11 +475,11 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildG
   if (0 !== guilds.length) {
     let obj = { title, description, hasIcons: true, children: items };
     let tmp5 = null;
-    const TableRowGroup = forMeGuildId(6938).TableRowGroup;
+    const TableRowGroup = forMeGuildId(6966).TableRowGroup;
     const tmp2 = closure_7;
     if (null != forMeGuildId) {
       let obj2 = {
-        label: intl.string(_modDef3820.UPLaGM),
+        label: intl.string(_modDef3830.UPLaGM),
         icon: closure_6(Icon, obj3),
         arrow: true,
         onPress() {
@@ -523,10 +523,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildG
               showActionSheet(obj);
             }
       };
-      let TableRow = tmp3(6854).TableRow;
+      let TableRow = tmp3(6882).TableRow;
       intl = tmp3(1128).intl;
-      obj3 = { IconComponent: forMeGuildId(11705).UserIcon };
-      Icon = tmp3(6854).TableRow.Icon;
+      obj3 = { IconComponent: forMeGuildId(11751).UserIcon };
+      Icon = tmp3(6882).TableRow.Icon;
       tmp5 = closure_6(TableRow, obj2);
     }
     items = [
@@ -603,11 +603,11 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
   let obj = stateFromStores1(576);
   const cResult = obj.c(47);
   const tmp4 = closure_9(0);
-  const obj2 = stateFromStores1(11629);
+  const obj2 = stateFromStores1(11679);
   const conjureProjects = obj2.useConjureProjects(ConjureProjectsSheet_str);
-  const obj3 = stateFromStores1(11629);
+  const obj3 = stateFromStores1(11679);
   const conjureEligibleGuilds = obj3.useConjureEligibleGuilds(ConjureProjectsSheet_str);
-  const obj4 = stateFromStores1(11629);
+  const obj4 = stateFromStores1(11679);
   const conjureForMeGuildId = obj4.useConjureForMeGuildId(ConjureProjectsSheet_str);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ConjureProjectStore];
@@ -651,8 +651,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
           let tmp80;
           const _Symbol5 = Symbol;
           if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-            const obj5 = { variant: "text-sm/normal", color: "text-muted", children: intl4.string(_modDef3820.DJAPMO) };
-            const Text2 = tmp(5195).Text;
+            const obj5 = { variant: "text-sm/normal", color: "text-muted", children: intl4.string(_modDef3830.DJAPMO) };
+            const Text2 = tmp(5216).Text;
             intl4 = tmp(1128).intl;
             const tmp75 = closure_6(Text2, obj5);
             cResult[8] = tmp75;
@@ -665,13 +665,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
             const obj6 = {
               variant: "secondary",
               size: "sm",
-              text: intl5.string(_modDef3820["WFJ/vb"]),
+              text: intl5.string(_modDef3830["WFJ/vb"]),
               onPress() {
                           const obj = stateFromStores1(dependencyMap[26]);
                           return obj.listProjects();
                         }
             };
-            const Button = tmp(5205).Button;
+            const Button = tmp(5226).Button;
             intl5 = tmp(1128).intl;
             const tmp79 = closure_6(Button, obj6);
             cResult[9] = tmp79;
@@ -681,7 +681,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
           }
           if (cResult[10] !== tmp4.state) {
             const obj8 = { style: tmp4.state, align: "center", spacing: nativeDefault.space.PX_12, children: items2 };
-            const Stack4 = tmp(5935).Stack;
+            const Stack4 = tmp(5957).Stack;
             items2 = [tmp72, tmp76];
             const tmp83 = closure_7(Stack4, obj8);
             cResult[10] = tmp4.state;
@@ -697,8 +697,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
           let tmp59;
           const _Symbol9 = Symbol;
           if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-            const obj10 = { variant: "text-md/semibold", color: "text-strong", children: intl.string(_modDef3820.snY8uu) };
-            const Text = tmp(5195).Text;
+            const obj10 = { variant: "text-md/semibold", color: "text-strong", children: intl.string(_modDef3830.snY8uu) };
+            const Text = tmp(5216).Text;
             intl = tmp(1128).intl;
             const tmp54 = closure_6(Text, obj10);
             cResult[12] = tmp54;
@@ -710,11 +710,11 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
             let stringResult;
             if (0 === conjureEligibleGuilds.length) {
               const intl3 = tmp(1128).intl;
-              stringResult = intl3.string(_modDef3820.f5o5pk);
+              stringResult = intl3.string(_modDef3830.f5o5pk);
             } else {
               const intl2 = tmp(1128).intl;
               const obj12 = { count: conjureEligibleGuilds.length };
-              stringResult = intl2.formatToPlainString(_modDef3820.NiXcSi, obj12);
+              stringResult = intl2.formatToPlainString(_modDef3830.NiXcSi, obj12);
             }
             cResult[13] = conjureEligibleGuilds.length;
             cResult[14] = stringResult;
@@ -724,10 +724,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
           }
           if (cResult[15] !== tmp55) {
             const obj13 = { spacing: nativeDefault.space.PX_4, children: items3 };
-            const Stack2 = tmp(5935).Stack;
+            const Stack2 = tmp(5957).Stack;
             items3 = [tmp51, ];
             const obj14 = { variant: "text-sm/normal", color: "text-muted", children: tmp55 };
-            items3[1] = closure_6(stateFromStores1(5195).Text, obj14);
+            items3[1] = closure_6(stateFromStores1(5216).Text, obj14);
             const tmp63 = closure_7(Stack2, obj13);
             cResult[15] = tmp55;
             cResult[16] = tmp63;
@@ -746,7 +746,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
               }
             }
             const obj15 = { spacing: nativeDefault.space.PX_16, children: items4 };
-            const Stack3 = tmp(5935).Stack;
+            const Stack3 = tmp(5957).Stack;
             items4 = [tmp59, tmp64];
             const tmp71 = closure_7(Stack3, obj15);
             cResult[20] = tmp59;
@@ -774,8 +774,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
     }
     const _Symbol8 = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj17 = { variant: "text-sm/normal", color: "text-muted", children: intl6.string(_modDef3820["XE+JXX"]) };
-      const Text3 = tmp(5195).Text;
+      const obj17 = { variant: "text-sm/normal", color: "text-muted", children: intl6.string(_modDef3830["XE+JXX"]) };
+      const Text3 = tmp(5216).Text;
       intl6 = tmp(1128).intl;
       const tmp91 = closure_6(Text3, obj17);
       cResult[5] = tmp91;
@@ -785,7 +785,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
     }
     if (cResult[6] !== tmp4.state) {
       const obj18 = { style: tmp4.state, align: "center", spacing: nativeDefault.space.PX_8, children: items5 };
-      const Stack5 = tmp(5935).Stack;
+      const Stack5 = tmp(5957).Stack;
       items5 = [tmp84, tmp88];
       const tmp95 = closure_7(Stack5, obj18);
       cResult[6] = tmp4.state;
@@ -869,7 +869,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
             return "idle" === activity.activity;
           }
         }
-        const stringResult1 = obj7.string(_modDef3820.DnsyEc);
+        const stringResult1 = obj7.string(_modDef3830.DnsyEc);
         cResult[32] = stringResult1;
         tmp26 = stringResult1;
       } else {
@@ -893,7 +893,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
               return "idle" === activity.activity;
             }
           }
-          const stringResult2 = obj9.string(_modDef3820.p8lFfK);
+          const stringResult2 = obj9.string(_modDef3830.p8lFfK);
           cResult[36] = stringResult2;
           tmp33 = stringResult2;
         } else {
@@ -917,7 +917,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
                 return "idle" === activity.activity;
               }
             }
-            const stringResult3 = obj11.string(_modDef3820.sFiGNz);
+            const stringResult3 = obj11.string(_modDef3830.sFiGNz);
             cResult[40] = stringResult3;
             tmp40 = stringResult3;
           } else {
@@ -952,7 +952,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
             }
           }
           const obj20 = { spacing: nativeDefault.space.PX_24, children: items6 };
-          const Stack = tmp(5935).Stack;
+          const Stack = tmp(5957).Stack;
           items6 = [tmp29, tmp36, tmp43];
           cResult[43] = tmp36;
           cResult[44] = tmp43;
@@ -1043,42 +1043,42 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
       if ("loading" !== stateFromStores.type) {
         if ("error" === stateFromStores.type) {
           const obj6 = { style: tmp.state, align: "center", spacing: nativeDefault.space.PX_12, children: items2 };
-          const Stack2 = tmp2(5935).Stack;
-          const obj7 = { variant: "text-sm/normal", color: "text-muted", children: intl6.string(_modDef3820.DJAPMO) };
-          const Text = tmp2(5195).Text;
+          const Stack2 = tmp2(5957).Stack;
+          const obj7 = { variant: "text-sm/normal", color: "text-muted", children: intl6.string(_modDef3830.DJAPMO) };
+          const Text = tmp2(5216).Text;
           intl6 = tmp2(1128).intl;
           items2 = [closure_6(Text, obj7), ];
           const obj8 = {
             variant: "secondary",
             size: "sm",
-            text: intl7.string(_modDef3820["WFJ/vb"]),
+            text: intl7.string(_modDef3830["WFJ/vb"]),
             onPress() {
                       const obj = closure_0(dependencyMap[26]);
                       return obj.listProjects();
                     }
           };
-          const Button = tmp2(5205).Button;
+          const Button = tmp2(5226).Button;
           intl7 = tmp2(1128).intl;
           items2[1] = closure_6(Button, obj8);
           tmp29Result = closure_7(Stack2, obj6);
         } else {
           let stringResult;
           const obj9 = { spacing: nativeDefault.space.PX_16, children: items4 };
-          const Stack4 = tmp2(5935).Stack;
+          const Stack4 = tmp2(5957).Stack;
           const obj10 = { spacing: nativeDefault.space.PX_4, children: items3 };
-          const Stack5 = tmp2(5935).Stack;
-          const obj11 = { variant: "text-md/semibold", color: "text-strong", children: intl9.string(_modDef3820.snY8uu) };
-          const Text3 = tmp2(5195).Text;
+          const Stack5 = tmp2(5957).Stack;
+          const obj11 = { variant: "text-md/semibold", color: "text-strong", children: intl9.string(_modDef3830.snY8uu) };
+          const Text3 = tmp2(5216).Text;
           intl9 = tmp2(1128).intl;
           items3 = [closure_6(Text3, obj11), ];
-          const Text4 = tmp2(5195).Text;
+          const Text4 = tmp2(5216).Text;
           if (0 === conjureEligibleGuilds.length) {
             const intl5 = tmp2(1128).intl;
-            stringResult = intl5.string(tmp30(3820).f5o5pk);
+            stringResult = intl5.string(tmp30(3830).f5o5pk);
           } else {
             const intl4 = tmp2(1128).intl;
             const obj12 = { count: conjureEligibleGuilds.length };
-            stringResult = intl4.formatToPlainString(tmp30(3820).NiXcSi, obj12);
+            stringResult = intl4.formatToPlainString(tmp30(3830).NiXcSi, obj12);
           }
           const obj13 = { variant: "text-sm/normal", color: "text-muted", children: stringResult };
           items3[1] = closure_6(Text4, obj13);
@@ -1091,10 +1091,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
       return tmp29Result;
     }
     const obj15 = { style: tmp.state, align: "center", spacing: nativeDefault.space.PX_8, children: items5 };
-    const Stack3 = tmp2(5935).Stack;
+    const Stack3 = tmp2(5957).Stack;
     items5 = [closure_6(ActivityIndicator, {}), ];
-    const obj16 = { variant: "text-sm/normal", color: "text-muted", children: intl8.string(_modDef3820["XE+JXX"]) };
-    const Text2 = tmp2(5195).Text;
+    const obj16 = { variant: "text-sm/normal", color: "text-muted", children: intl8.string(_modDef3830["XE+JXX"]) };
+    const Text2 = tmp2(5216).Text;
     intl8 = tmp2(1128).intl;
     items5[1] = closure_6(Text2, obj16);
     tmp29Result = closure_7(Stack3, obj15);
@@ -1118,14 +1118,14 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
     const found1 = conjureProjects.filter((activity) => "idle" !== activity.activity);
     const found2 = conjureProjects.filter((activity) => "idle" === activity.activity);
     const obj17 = { spacing: nativeDefault.space.PX_24, children: items6 };
-    const Stack = tmp2(5935).Stack;
-    const obj18 = { title: intl.string(_modDef3820.DnsyEc), entries: found1, fallbackGuildId: id };
+    const Stack = tmp2(5957).Stack;
+    const obj18 = { title: intl.string(_modDef3830.DnsyEc), entries: found1, fallbackGuildId: id };
     intl = tmp2(1128).intl;
     items6 = [closure_6(closure_11, obj18), , ];
-    const obj19 = { title: intl2.string(_modDef3820.p8lFfK), entries: found2, fallbackGuildId: id };
+    const obj19 = { title: intl2.string(_modDef3830.p8lFfK), entries: found2, fallbackGuildId: id };
     intl2 = tmp2(1128).intl;
     items6[1] = closure_6(closure_11, obj19);
-    const obj20 = { title: intl3.string(_modDef3820.sFiGNz), guilds: conjureEligibleGuilds };
+    const obj20 = { title: intl3.string(_modDef3830.sFiGNz), guilds: conjureEligibleGuilds };
     intl3 = tmp2(1128).intl;
     items6[2] = closure_6(closure_12, obj20);
     return closure_7(Stack, obj17);
@@ -1155,8 +1155,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
   }
   useMountEffectDefault(first);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { title: intl.string(_modDef3820.uk6jhJ) };
-    const BottomSheetTitleHeader = tmp(7197).BottomSheetTitleHeader;
+    const obj2 = { title: intl.string(_modDef3830.uk6jhJ) };
+    const BottomSheetTitleHeader = tmp(7225).BottomSheetTitleHeader;
     intl = tmp(1128).intl;
     const tmp10 = metroRequire(BottomSheetTitleHeader, obj2);
     cResult[1] = tmp10;
@@ -1187,7 +1187,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
     return tmp16;
   }
   const obj4 = { scrollable: true, header: tmp8, children: metroRequire(BottomSheetModal.BottomSheetScrollView, obj5) };
-  const ActionSheet = tmp(7247).ActionSheet;
+  const ActionSheet = tmp(7275).ActionSheet;
   obj5 = { contentContainerStyle: tmp5.scrollContent, scrollIndicatorInsets: tmp11, children: tmp12 };
   const tmp17 = metroRequire(ActionSheet, obj4);
   cResult[5] = tmp5.scrollContent;
@@ -1208,7 +1208,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
   });
   let obj = { scrollable: true, header: metroRequire(BottomSheetTitleHeader, obj2), children: metroRequire(BottomSheetScrollView, obj3) };
   const ActionSheet = ActionSheet2.ActionSheet;
-  obj2 = { title: intl.string(_modDef3820.uk6jhJ) };
+  obj2 = { title: intl.string(_modDef3830.uk6jhJ) };
   BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   intl = intl10.intl;
   obj3 = { contentContainerStyle: tmp.scrollContent, scrollIndicatorInsets: { bottom }, children: metroRequire(closure_13, {}) };

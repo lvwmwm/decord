@@ -1,10 +1,10 @@
-// Module ID: 5548
-// Function ID: 5549
+// Module ID: 5569
+// Function ID: 5570
 // Name: VEVOOStore
 // Dependencies: [570, 558, 1274, 2]
 // Exports: clearVisualEffectViewOverrides, getVisualEffectViewOverrides, setVisualEffectViewOverides, useVisualEffectViewOverrides
 
-// Module 5548 (VEVOOStore)
+// Module 5569 (VEVOOStore)
 import react_native from "react-native" /* 1274 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

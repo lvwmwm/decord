@@ -1,16 +1,16 @@
-// Module ID: 8899
-// Function ID: 8900
+// Module ID: 8926
+// Function ID: 8927
 // Name: LegacyText/LegacyText
-// Dependencies: [19, 17, 1087, 21, 4945, 8900, 2]
+// Dependencies: [19, 17, 1087, 21, 4966, 8927, 2]
 // Exports: default
 
-// Module 8899 (LegacyText/LegacyText)
+// Module 8926 (LegacyText/LegacyText)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
-import useLegacyTextMigrationHighlight from "useLegacyTextMigrationHighlight" /* 8900 */;
+import useLegacyTextMigrationHighlight from "useLegacyTextMigrationHighlight" /* 8927 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import size from "module_2" /* 2 */;
 
 const Text = react_native.Text;

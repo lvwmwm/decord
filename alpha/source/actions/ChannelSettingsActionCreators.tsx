@@ -1,16 +1,16 @@
-// Module ID: 10021
-// Function ID: 10022
+// Module ID: 10051
+// Function ID: 10052
 // Name: ChannelSettingsActionCreators
-// Dependencies: [5, 10022, 4800, 1087, 584, 5112, 8235, 1297, 7373, 2]
+// Dependencies: [5, 10052, 4821, 1087, 584, 5133, 8263, 1297, 7401, 2]
 // Exports: deleteChannel, init, open, removeLinkedLobby, saveChannel, selectPermissionOverwrite, setSection, updateChannel, updateVoiceChannelStatus
 
-// Module 10021 (ChannelSettingsActionCreators)
+// Module 10051 (ChannelSettingsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import RootNavigationRef from "RootNavigationRef" /* 5112 */;
+import RootNavigationRef from "RootNavigationRef" /* 5133 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 10022 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 10052 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -184,7 +184,7 @@ let obj = function _saveChannel() {
               channel = undefined;
               topic = 1;
               bitrate = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === topic) {
             if (arg0 === 1) {

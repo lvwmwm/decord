@@ -1,48 +1,125 @@
 // Module ID: 5349
 // Function ID: 5350
-// Dependencies: [5326, 5341, 5317]
-// Exports: useRotationGesture
+// Dependencies: [5284]
+// Exports: checkMappingForChangeProperties, flattenAndFilterEvent, getChangeEventCalculator, isEventForHandlerWithTag, isNativeAnimatedEvent, isStateChangeEvent, isTouchEvent, maybeExtractNativeEvent, shouldHandleTouchEvents
 
 // Module 5349
-import ComposedGestureName from "ComposedGestureName" /* 5317 */;
-import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 5326 */;
-import _mod5341 from "module_5341" /* 5341 */;
+import tagMessage from "tagMessage" /* 5284 */;
 
-function transformRotationProps(arg0) {
-  const obj = maybeExtractNativeEvent;
-  arg0.changeEventCalculator = obj.getChangeEventCalculator(diffCalculator);
-  arg0.fillInDefaultValues = fillInDefaultValues;
-  return arg0;
+function isNativeEvent(arg0) {
+  return "nativeEvent" in arg0;
 }
-function diffCalculator(rotation, rotation2) {
-  let rotationChange;
-  rotation = rotation.rotation;
-  if (rotation2) {
-    rotationChange = rotation - rotation2.rotation;
+isNativeEvent.__closure = {};
+isNativeEvent.__workletHash = 15502708650016;
+isNativeEvent.__initData = { code: "function isNativeEvent_Pnpm_eventUtilsTs1(event){return'nativeEvent'in event;}" };
+function maybeExtractNativeEvent(nativeEvent) {
+  if (typeof isNativeEvent === "function") {
+    if ("nativeEvent" in nativeEvent) {
+      nativeEvent = nativeEvent.nativeEvent;
+    }
+    return nativeEvent;
   } else {
-    rotationChange = rotation;
+    throw new TypeError("Trying to call a non-function");
   }
-  return { rotationChange };
 }
-diffCalculator.__closure = {};
-diffCalculator.__workletHash = 14071129947311;
-diffCalculator.__initData = { code: "function diffCalculator_Pnpm_useRotationGestureTs1(current,previous){return{rotationChange:previous?current.rotation-previous.rotation:current.rotation};}" };
-function fillInDefaultValues(arg0) {
-  arg0.rotationChange = 0;
+maybeExtractNativeEvent.__closure = { isNativeEvent };
+maybeExtractNativeEvent.__workletHash = 9418753326359;
+maybeExtractNativeEvent.__initData = { code: "function maybeExtractNativeEvent_Pnpm_eventUtilsTs2(event){const{isNativeEvent}=this.__closure;return isNativeEvent(event)?event.nativeEvent:event;}" };
+function flattenAndFilterEvent(handlerTag) {
+  const obj = { handlerTag: handlerTag.handlerTag };
+  const merged = Object.assign(handlerTag.handlerData);
+  return obj;
 }
-fillInDefaultValues.__closure = {};
-fillInDefaultValues.__workletHash = 2470118803733;
-fillInDefaultValues.__initData = { code: "function fillInDefaultValues_Pnpm_useRotationGestureTs2(event){event.rotationChange=0;}" };
-const map = new Map();
-let closure_6 = {};
+flattenAndFilterEvent.__closure = {};
+flattenAndFilterEvent.__workletHash = 12741778497058;
+flattenAndFilterEvent.__initData = { code: "function flattenAndFilterEvent_Pnpm_eventUtilsTs3(event){return{handlerTag:event.handlerTag,...event.handlerData};}" };
+function isEventForHandlerWithTag(arg0, handlerTag) {
+  return handlerTag.handlerTag === arg0;
+}
+isEventForHandlerWithTag.__closure = {};
+isEventForHandlerWithTag.__workletHash = 11134871115176;
+isEventForHandlerWithTag.__initData = { code: "function isEventForHandlerWithTag_Pnpm_eventUtilsTs4(handlerTag,event){return event.handlerTag===handlerTag;}" };
+function isNativeAnimatedEvent(onUpdate) {
+  return onUpdate && "_argMapping" in onUpdate;
+}
+isNativeAnimatedEvent.__closure = {};
+isNativeAnimatedEvent.__workletHash = 3439774750008;
+isNativeAnimatedEvent.__initData = { code: "function isNativeAnimatedEvent_Pnpm_eventUtilsTs5(callback){return!!callback&&'_argMapping'in callback;}" };
+const __initData = { code: "function pnpm_eventUtilsTs7(current,previous){const{diffCalculator}=this.__closure;const currentEventData=current.handlerData;const previousEventData=previous?previous.handlerData:null;const changePayload=diffCalculator(currentEventData,previousEventData);current.handlerData={...currentEventData,...changePayload};return current;}" };
+function getChangeEventCalculator(diffCalculator) {
+  let closure_0 = diffCalculator;
+  const fn = function t(handlerData, handlerData2) {
+    handlerData = handlerData.handlerData;
+    let handlerData1 = null;
+    if (handlerData2) {
+      handlerData1 = handlerData2.handlerData;
+    }
+    const obj = {};
+    const tmp2 = closure_0(handlerData, handlerData1);
+    const merged = Object.assign(handlerData);
+    const merged1 = Object.assign(tmp2);
+    handlerData.handlerData = obj;
+    return handlerData;
+  };
+  fn.__closure = { diffCalculator };
+  fn.__workletHash = 10887773943786;
+  fn.__initData = __initData;
+  return fn;
+}
+getChangeEventCalculator.__closure = {};
+getChangeEventCalculator.__workletHash = 1165584403675;
+getChangeEventCalculator.__initData = { code: "function getChangeEventCalculator_Pnpm_eventUtilsTs6(diffCalculator){return function(current,previous){'worklet';const currentEventData=current.handlerData;const previousEventData=previous?previous.handlerData:null;const changePayload=diffCalculator(currentEventData,previousEventData);current.handlerData={...currentEventData,...changePayload};return current;};}" };
+function isTouchEvent(arg0) {
+  return "allTouches" in arg0;
+}
+isTouchEvent.__closure = {};
+isTouchEvent.__workletHash = 14798108877298;
+isTouchEvent.__initData = { code: "function isTouchEvent_Pnpm_eventUtilsTs8(event){return'allTouches'in event;}" };
+function isStateChangeEvent(oldState) {
+  return "oldState" in oldState && undefined !== oldState.oldState;
+}
+isStateChangeEvent.__closure = {};
+isStateChangeEvent.__workletHash = 7295971713196;
+isStateChangeEvent.__initData = { code: "function isStateChangeEvent_Pnpm_eventUtilsTs9(event){return'oldState'in event&&event.oldState!==undefined;}" };
 
-export const useRotationGesture = function useRotationGesture(cResult) {
-  let tmp = cResult;
-  if (cResult === undefined) {
-    tmp = closure_6;
+export { maybeExtractNativeEvent };
+export { flattenAndFilterEvent };
+export { isEventForHandlerWithTag };
+export { isNativeAnimatedEvent };
+export const checkMappingForChangeProperties = function checkMappingForChangeProperties(arg0) {
+  const iter = arg0._argMapping[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp2 = nextResult;
+    if (tmp2) {
+      if ("nativeEvent" in tmp2) {
+        if ("handlerData" in tmp2.nativeEvent) {
+          for (const key10023 in tmp2.nativeEvent.handlerData) {
+            let tmp13 = key10023;
+            if (!key10023.startsWith("change")) {
+              continue;
+            } else {
+              let tmp6 = globalThis;
+              let _Error = Error;
+              let obj = tagMessage;
+              let _HermesInternal = HermesInternal;
+              let str = " is not available when using Animated.Event.";
+              let str2 = "";
+              let self = this;
+              let self2 = this;
+              let error = new Error(obj.tagMessage("" + tmp13 + " is not available when using Animated.Event."));
+              throw error;
+            }
+          }
+        }
+      }
+    }
+    continue;
   }
-  const obj = maybeExtractNativeEvent;
-  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformRotationProps);
-  const obj2 = _mod5341;
-  return obj2.useGesture(ComposedGestureName.SingleGestureName.Rotation, clonedAndRemappedConfig);
 };
+export const shouldHandleTouchEvents = function shouldHandleTouchEvents(onTouchesDown) {
+  return onTouchesDown.onTouchesDown || onTouchesDown.onTouchesMove || onTouchesDown.onTouchesUp || onTouchesDown.onTouchesCancel;
+};
+export { getChangeEventCalculator };
+export { isTouchEvent };
+export { isStateChangeEvent };

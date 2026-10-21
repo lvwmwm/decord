@@ -1,11 +1,11 @@
-// Module ID: 18325
-// Function ID: 18326
+// Module ID: 18404
+// Function ID: 18405
 // Name: useActivityUsers
-// Dependencies: [1392, 4799, 558, 576, 573, 2]
+// Dependencies: [1392, 4820, 558, 576, 573, 2]
 
-// Module 18325 (useActivityUsers)
+// Module 18404 (useActivityUsers)
 import UserStore from "UserStore" /* 1392 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4799 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

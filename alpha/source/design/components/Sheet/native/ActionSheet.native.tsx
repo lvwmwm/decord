@@ -1,15 +1,15 @@
-// Module ID: 7247
-// Function ID: 7248
+// Module ID: 7275
+// Function ID: 7276
 // Name: ActionSheet
-// Dependencies: [109, 19, 21, 4945, 587, 558, 576, 5226, 2]
+// Dependencies: [109, 19, 21, 4966, 587, 558, 576, 5247, 2]
 
-// Module 7247 (ActionSheet)
+// Module 7275 (ActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let BottomSheet;
 
 let obj2;
 let tmp;
-const Sheet_BottomSheet = tmp(5226);
+const Sheet_BottomSheet = tmp(5247);
 let closure_2 = ["ref"];
 const jsx = Fragment.jsx;
 let obj = { content: obj2, body: { gap: 24 } };

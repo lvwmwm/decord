@@ -1,13 +1,13 @@
-// Module ID: 14774
-// Function ID: 14775
+// Module ID: 14848
+// Function ID: 14849
 // Name: BasicWorkScheduler
-// Dependencies: [14772, 3, 14775, 38, 2]
+// Dependencies: [14846, 3, 14849, 38, 2]
 
-// Module 14774 (BasicWorkScheduler)
+// Module 14848 (BasicWorkScheduler)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
-import WorkSchedulerTelemetry from "WorkSchedulerTelemetry" /* 14775 */;
-import DispatcherWorkConstants from "DispatcherWorkConstants" /* 14772 */;
+import WorkSchedulerTelemetry from "WorkSchedulerTelemetry" /* 14849 */;
+import DispatcherWorkConstants from "DispatcherWorkConstants" /* 14846 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -122,11 +122,11 @@ class BasicWorkScheduler {
     self._workCallbackFn = flush;
     if (!self.hasWorkScheduled) {
       let telemetry = self.telemetry;
-      telemetry.time(self(14775).WorkSchedulerTelemetryTiming.TIME_TO_QUEUE_EMPTY);
+      telemetry.time(self(14849).WorkSchedulerTelemetryTiming.TIME_TO_QUEUE_EMPTY);
       const tmp = self;
       if (self._nextDispatchTimeout === closure_6) {
         const telemetry2 = self.telemetry;
-        telemetry2.track(tmp(14775).WorkSchedulerTelemetryEvent.LONGER_DISPATCH);
+        telemetry2.track(tmp(14849).WorkSchedulerTelemetryEvent.LONGER_DISPATCH);
       }
       if (flag) {
         self._queueIdleCallback();

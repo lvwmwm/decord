@@ -1,9 +1,9 @@
-// Module ID: 12702
-// Function ID: 12703
+// Module ID: 12766
+// Function ID: 12767
 // Name: FamilyCenterModalRequest
-// Dependencies: [5, 19, 17, 1392, 7595, 21, 4945, 587, 558, 576, 1505, 573, 7596, 12703, 8075, 12704, 1202, 1417, 1128, 2526, 5195, 5631, 12705, 12706, 7849, 5205, 6623, 12713, 6647, 7848, 12714, 8073, 38, 11160, 8062, 6831, 6611, 2000, 7831, 6608, 12718, 6605, 6875, 10952, 2]
+// Dependencies: [5, 19, 17, 1392, 7623, 21, 4966, 587, 558, 576, 1505, 573, 7624, 12767, 8103, 12768, 1202, 1417, 1128, 2536, 5216, 5651, 12769, 12770, 7877, 5226, 6651, 12777, 6675, 7876, 12778, 8101, 38, 11204, 8090, 6859, 6639, 2000, 7859, 6636, 12782, 6633, 6903, 11096, 2]
 
-// Module 12702 (FamilyCenterModalRequest)
+// Module 12766 (FamilyCenterModalRequest)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
@@ -13,31 +13,31 @@ import intl8 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import useNavigation from "useNavigation" /* 1505 */;
 import Server from "Server" /* 2000 */;
-import _modDef2526 from "module_2526" /* 2526 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import components_Button_Button from "components/Button/Button" /* 5205 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6623 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6831 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7596 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7831 */;
-import ModalScreen2 from "ModalScreen" /* 7848 */;
-import ModalContent2 from "ModalContent" /* 7849 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8062 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8073 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8075 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11160 */;
-import FamilyCenterModalRequestRouting from "FamilyCenterModalRequestRouting" /* 12703 */;
-import ModalFooter2 from "ModalFooter" /* 12713 */;
-import EnvelopeSpotIllustration from "EnvelopeSpotIllustration" /* 12714 */;
-import FamilyShieldSpotIllustration from "FamilyShieldSpotIllustration" /* 12718 */;
+import _modDef2536 from "module_2536" /* 2536 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import components_Button_Button from "components/Button/Button" /* 5226 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6651 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6859 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7624 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7859 */;
+import ModalScreen2 from "ModalScreen" /* 7876 */;
+import ModalContent2 from "ModalContent" /* 7877 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8090 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8101 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8103 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11204 */;
+import FamilyCenterModalRequestRouting from "FamilyCenterModalRequestRouting" /* 12767 */;
+import ModalFooter2 from "ModalFooter" /* 12777 */;
+import EnvelopeSpotIllustration from "EnvelopeSpotIllustration" /* 12778 */;
+import FamilyShieldSpotIllustration from "FamilyShieldSpotIllustration" /* 12782 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7595 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7623 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import NavigatorHeader_mod from "NavigatorHeader" /* 6875 */;
+import NavigatorHeader_mod from "NavigatorHeader" /* 6903 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -863,7 +863,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   const header = tmp4.header;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
-    const stringResult = intl.string(_modDef2526.EpwfZl);
+    const stringResult = intl.string(_modDef2536.EpwfZl);
     cResult[6] = stringResult;
     tmp19 = stringResult;
   } else {
@@ -888,7 +888,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
     const intl2 = tmp(1128).intl;
     const format = intl2.format;
     let email1;
-    const dVtWId = _modDef2526.dVtWId;
+    const dVtWId = _modDef2536.dVtWId;
     if (stateFromStores != null) {
       email1 = stateFromStores.email;
     }
@@ -926,9 +926,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
             const _Symbol = Symbol;
             if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
               const obj5 = { children: unpackModuleId(Button, obj6) };
-              const ModalFooter = tmp(12713).ModalFooter;
+              const ModalFooter = tmp(12777).ModalFooter;
               obj6 = { size: "lg", text: intl3.string(intl8.t.cpT0Cq), onPress: tmp9 };
-              Button = tmp(5205).Button;
+              Button = tmp(5226).Button;
               intl3 = tmp(1128).intl;
               const tmp44 = unpackModuleId(ModalFooter, obj5);
               cResult[22] = tmp44;
@@ -950,7 +950,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
           }
           const obj8 = { children: unpackModuleId(View, obj9) };
           obj9 = { style: content, children: tmp34 };
-          const ModalContent = tmp(7849).ModalContent;
+          const ModalContent = tmp(7877).ModalContent;
           const tmp41 = unpackModuleId(ModalContent, obj8);
           cResult[19] = tmp4.content;
           cResult[20] = tmp34;
@@ -998,22 +998,22 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
     const arr2 = ModalActionCreatorsDefault;
     let arr = arr2.pop();
   }
-  const ModalScreen = tmp2(7848).ModalScreen;
+  const ModalScreen = tmp2(7876).ModalScreen;
   const obj2 = { style: tmp.content, children: authStore2(View, obj3) };
   obj3 = { style: tmp.textWrapper, children: items1 };
   const obj4 = { style: tmp.illustration, children: unpackModuleId(EnvelopeSpotIllustration.EnvelopeSpotIllustration, { scale: 0.7 }) };
-  const ModalContent = tmp2(7849).ModalContent;
+  const ModalContent = tmp2(7877).ModalContent;
   items1 = [unpackModuleId(View, obj4), , ];
-  const obj5 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.header, children: intl.string(_modDef2526.EpwfZl) };
-  const Text = tmp2(5195).Text;
+  const obj5 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.header, children: intl.string(_modDef2536.EpwfZl) };
+  const Text = tmp2(5216).Text;
   intl = tmp2(1128).intl;
   items1[1] = unpackModuleId(Text, obj5);
   const obj6 = { variant: "text-sm/medium", color: "text-muted", style: tmp.description, children: format(dVtWId, { email }) };
-  const Text2 = tmp2(5195).Text;
+  const Text2 = tmp2(5216).Text;
   const intl2 = tmp2(1128).intl;
   format = intl2.format;
   email = undefined;
-  dVtWId = _modDef2526.dVtWId;
+  dVtWId = _modDef2536.dVtWId;
   if (stateFromStores != null) {
     email = stateFromStores.email;
   }
@@ -1022,9 +1022,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   items1[2] = unpackModuleId(Text2, obj6);
   items2 = [unpackModuleId(ModalContent, obj8), ];
   const obj9 = { children: unpackModuleId(Button, obj10) };
-  const ModalFooter = tmp2(12713).ModalFooter;
+  const ModalFooter = tmp2(12777).ModalFooter;
   obj10 = { size: "lg", text: intl3.string(intl8.t.cpT0Cq), onPress: callback };
-  Button = tmp2(5205).Button;
+  Button = tmp2(5226).Button;
   intl3 = tmp2(1128).intl;
   items2[1] = unpackModuleId(ModalFooter, obj9);
   return authStore2(ModalScreen, obj7);
@@ -1164,9 +1164,9 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
                     const _Symbol = Symbol;
                     if (cResult[32] === Symbol.for("react.memo_cache_sentinel")) {
                       const obj5 = { children: unpackModuleId(Button, obj6) };
-                      const ModalFooter = tmp(12713).ModalFooter;
+                      const ModalFooter = tmp(12777).ModalFooter;
                       obj6 = { text: intl.string(intl8.t.cpT0Cq), onPress: tmp13 };
-                      Button = tmp(5205).Button;
+                      Button = tmp(5226).Button;
                       intl = tmp(1128).intl;
                       const tmp47 = unpackModuleId(ModalFooter, obj5);
                       cResult[32] = tmp47;
@@ -1271,13 +1271,13 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   const CHECK = constants2.CHECK;
   const headerResult = metroImportAll[failureCode].header(obj4);
   const descriptionResult = metroImportAll[failureCode].description(obj4);
-  const ModalScreen = tmp2(7848).ModalScreen;
+  const ModalScreen = tmp2(7876).ModalScreen;
   const obj5 = { style: items1, children: unpackModuleId(View, obj6) };
   items1 = [tmp.ring, boxShadowStyle];
   const items2 = [tmp.iconContainer, ];
   obj6 = { style: items2, children: tmp15Result };
   items2[1] = icon === CHECK ? tmp.positive : tmp.negative;
-  const ModalContent = tmp2(7849).ModalContent;
+  const ModalContent = tmp2(7877).ModalContent;
   const tmp13 = constants2;
   if (icon === tmp13.CHECK) {
     const obj7 = { source: AssetRegistryDefault2, color: "#FFF" };
@@ -1297,9 +1297,9 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   items3[2] = unpackModuleId(Text_Text.Text, obj12);
   items4 = [authStore2(ModalContent, obj10), ];
   const obj13 = { children: unpackModuleId(Button, obj14) };
-  const ModalFooter = tmp2(12713).ModalFooter;
+  const ModalFooter = tmp2(12777).ModalFooter;
   obj14 = { text: intl.string(intl8.t.cpT0Cq), onPress: callback };
-  Button = tmp2(5205).Button;
+  Button = tmp2(5226).Button;
   intl = tmp2(1128).intl;
   items4[1] = unpackModuleId(ModalFooter, obj13);
   return authStore2(ModalScreen, obj9);
@@ -1360,7 +1360,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
             tmp17 = tmp19;
           }
           const obj3 = { children: unpackModuleId(components_Button_Button.Button, obj4) };
-          const ModalFooter = tmp(12713).ModalFooter;
+          const ModalFooter = tmp(12777).ModalFooter;
           obj4 = { text: null, onPress: null };
           ({ text: obj6.text, onPress: obj6.onPress } = primaryButton);
           const tmp16 = unpackModuleId(ModalFooter, obj3);
@@ -1452,7 +1452,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNav
   }
   const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const tmp9 = stateFromStores(6611)(stateFromStores);
+  const tmp9 = stateFromStores(6639)(stateFromStores);
   dependencyMap = tmp9;
   if (cResult[2] === stateFromStores) {
     if (cResult[3] === navigation) {
@@ -1493,7 +1493,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNav
     }
     return prop;
   });
-  const tmp3 = stateFromStores(6611)(stateFromStores);
+  const tmp3 = stateFromStores(6639)(stateFromStores);
   dependencyMap = tmp3;
   const items1 = [stateFromStores, tmp3, navigation];
   const effect = react.useEffect(() => {
@@ -1575,7 +1575,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
       const description = tmp4.description;
       if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
         const intl2 = tmp(1128).intl;
-        const formatResult = intl2.format(_modDef2526["0o3yg8"], { link: "https://support.discord.com/hc/articles/14155060633623" });
+        const formatResult = intl2.format(_modDef2536["0o3yg8"], { link: "https://support.discord.com/hc/articles/14155060633623" });
         cResult[10] = formatResult;
         tmp26 = formatResult;
       } else {
@@ -1602,8 +1602,8 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
             }
             const _Symbol2 = Symbol;
             if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-              const obj4 = { variant: "primary", text: intl3.string(_modDef2526["3oUE4o"]), onPress: first };
-              const Button = tmp(5205).Button;
+              const obj4 = { variant: "primary", text: intl3.string(_modDef2536["3oUE4o"]), onPress: first };
+              const Button = tmp(5226).Button;
               intl3 = tmp(1128).intl;
               const tmp39 = unpackModuleId(Button, obj4);
               cResult[18] = tmp39;
@@ -1614,10 +1614,10 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
             const _Symbol3 = Symbol;
             if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
               const obj5 = { children: authStore2(ButtonGroup, obj6) };
-              const ModalFooter = tmp(12713).ModalFooter;
+              const ModalFooter = tmp(12777).ModalFooter;
               obj6 = { children: items };
               items = [tmp36, ];
-              ButtonGroup = tmp(6647).ButtonGroup;
+              ButtonGroup = tmp(6675).ButtonGroup;
               const obj7 = {
                 variant: "tertiary",
                 text: intl4.string(intl8.t.oEAioF),
@@ -1626,7 +1626,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
                               return arr.pop();
                             }
               };
-              const Button2 = tmp(5205).Button;
+              const Button2 = tmp(5226).Button;
               intl4 = tmp(1128).intl;
               items[1] = unpackModuleId(Button2, obj7);
               const tmp43 = unpackModuleId(ModalFooter, obj5);
@@ -1669,7 +1669,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
   const intl = tmp(1128).intl;
   const formatToPlainString = intl.formatToPlainString;
   let str;
-  const pQQMJ7 = _modDef2526.pQQMJ7;
+  const pQQMJ7 = _modDef2536.pQQMJ7;
   if (teenIdentity != null) {
     str = teenIdentity.global_name;
   }
@@ -1725,7 +1725,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
   const intl = intl8.intl;
   formatToPlainString = intl.formatToPlainString;
   str = undefined;
-  pQQMJ7 = _modDef2526.pQQMJ7;
+  pQQMJ7 = _modDef2536.pQQMJ7;
   const tmp7 = View;
   if (teenIdentity != null) {
     str = teenIdentity.global_name;
@@ -1742,17 +1742,17 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
   }
   const obj4 = { children: items1 };
   items[1] = unpackModuleId(Text, obj3);
-  const obj5 = { variant: "text-sm/medium", color: "text-muted", style: tmp.description, children: intl2.format(_modDef2526["0o3yg8"], { link: "https://support.discord.com/hc/articles/14155060633623" }) };
-  const Text2 = tmp5(5195).Text;
+  const obj5 = { variant: "text-sm/medium", color: "text-muted", style: tmp.description, children: intl2.format(_modDef2536["0o3yg8"], { link: "https://support.discord.com/hc/articles/14155060633623" }) };
+  const Text2 = tmp5(5216).Text;
   intl2 = tmp5(1128).intl;
   items[2] = unpackModuleId(Text2, obj5);
   items1 = [authStore2(tmp7, obj), ];
   const obj6 = { children: authStore2(ButtonGroup, obj7) };
-  const ModalFooter = tmp5(12713).ModalFooter;
+  const ModalFooter = tmp5(12777).ModalFooter;
   obj7 = { children: items2 };
-  ButtonGroup = tmp5(6647).ButtonGroup;
-  const obj8 = { variant: "primary", text: intl3.string(_modDef2526["3oUE4o"]), onPress: callback };
-  const Button = tmp5(5205).Button;
+  ButtonGroup = tmp5(6675).ButtonGroup;
+  const obj8 = { variant: "primary", text: intl3.string(_modDef2536["3oUE4o"]), onPress: callback };
+  const Button = tmp5(5226).Button;
   intl3 = tmp5(1128).intl;
   items2 = [unpackModuleId(Button, obj8), ];
   const obj9 = {
@@ -1763,7 +1763,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
       return arr.pop();
     }
   };
-  const Button2 = tmp5(5205).Button;
+  const Button2 = tmp5(5226).Button;
   intl4 = tmp5(1128).intl;
   items2[1] = unpackModuleId(Button2, obj9);
   items1[1] = unpackModuleId(ModalFooter, obj6);
@@ -1977,7 +1977,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
   const obj = react2;
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { title: intl.string(_modDef2526.ewSb6o), description: intl2.string(_modDef2526.jcUN2F), primaryButton: obj3 };
+    const obj2 = { title: intl.string(_modDef2536.ewSb6o), description: intl2.string(_modDef2536.jcUN2F), primaryButton: obj3 };
     intl = tmp(1128).intl;
     intl2 = tmp(1128).intl;
     obj3 = { text: intl3.string(intl8.t.WAI6xu), onPress: ModalActionCreatorsDefault.pop };
@@ -1994,7 +1994,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
   let intl2;
   let intl3;
   let obj2;
-  const obj = { title: intl.string(_modDef2526.ewSb6o), description: intl2.string(_modDef2526.jcUN2F), primaryButton: obj2 };
+  const obj = { title: intl.string(_modDef2536.ewSb6o), description: intl2.string(_modDef2536.jcUN2F), primaryButton: obj2 };
   intl = intl8.intl;
   intl2 = intl8.intl;
   obj2 = { text: intl3.string(intl8.t.WAI6xu), onPress: ModalActionCreatorsDefault.pop };
@@ -2026,7 +2026,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { title: intl.string(_modDef2526.BQFHXW), description: intl2.format(_modDef2526.WDjaKn, obj3), primaryButton: obj5 };
+    let obj2 = { title: intl.string(_modDef2536.BQFHXW), description: intl2.format(_modDef2536.WDjaKn, obj3), primaryButton: obj5 };
     intl = tmp(1128).intl;
     intl2 = tmp(1128).intl;
     obj3 = { link: obj4 };
@@ -2047,7 +2047,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
   let obj2;
   let obj3;
   closure_25();
-  let obj = { title: intl.string(_modDef2526.BQFHXW), description: intl2.format(_modDef2526.WDjaKn, obj2), primaryButton: obj3 };
+  let obj = { title: intl.string(_modDef2536.BQFHXW), description: intl2.format(_modDef2536.WDjaKn, obj2), primaryButton: obj3 };
   const callback = react.useCallback(() => {
     const obj = AgeVerificationActionCreatorsDefault;
     const obj2 = { entryPoint: require("AgeVerificationAnalyticsUtils").AgeVerificationModalEntryPoint.FAMILY_CENTER_CONNECTION };
@@ -2093,7 +2093,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCente
     }
     if (cResult[4] !== tmp4) {
       const obj2 = { initialRouteName: FamilyCenterModalRequestRouting.FamilyCenterModalRequestSections.PREREQ_LOADING, screens: tmp4, headerBackTitle: tmp7 };
-      const Modal = tmp(10952).Modal;
+      const Modal = tmp(11096).Modal;
       const tmp11 = unpackModuleId(Modal, obj2);
       cResult[4] = tmp4;
       cResult[5] = tmp11;
@@ -2114,8 +2114,8 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCente
   const linkCode = userId.linkCode;
   const items = [linkCode, userId];
   const memo = react.useMemo(() => getScreens(userId, linkCode), items);
-  const obj = { initialRouteName: userId(12703).FamilyCenterModalRequestSections.PREREQ_LOADING, screens: memo, headerBackTitle: intl.string(userId(1128).t["13/7kX"]) };
-  const Modal = userId(10952).Modal;
+  const obj = { initialRouteName: userId(12767).FamilyCenterModalRequestSections.PREREQ_LOADING, screens: memo, headerBackTitle: intl.string(userId(1128).t["13/7kX"]) };
+  const Modal = userId(11096).Modal;
   intl = userId(1128).intl;
   return closure_11(Modal, obj);
 });

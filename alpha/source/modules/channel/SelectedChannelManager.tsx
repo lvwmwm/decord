@@ -1,18 +1,18 @@
-// Module ID: 18698
-// Function ID: 18699
+// Module ID: 18775
+// Function ID: 18776
 // Name: SelectedChannelManager
-// Dependencies: [2014, 4851, 4971, 1087, 7165, 7398, 6585, 1114, 584, 2]
+// Dependencies: [2014, 4872, 4992, 1087, 7193, 7426, 6613, 1114, 584, 2]
 
-// Module 18698 (SelectedChannelManager)
+// Module 18775 (SelectedChannelManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import router_utils from "router_utils" /* 1114 */;
-import SelectedChannelStore2 from "SelectedChannelStore" /* 4851 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6585 */;
-import transitionToGuild from "transitionToGuild" /* 7398 */;
+import SelectedChannelStore2 from "SelectedChannelStore" /* 4872 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6613 */;
+import transitionToGuild from "transitionToGuild" /* 7426 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4971 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4992 */;
 import Constants from "Constants" /* 1087 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7165 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7193 */;
 import size from "module_2" /* 2 */;
 
 const SelectedChannelStore = SelectedChannelStore2;

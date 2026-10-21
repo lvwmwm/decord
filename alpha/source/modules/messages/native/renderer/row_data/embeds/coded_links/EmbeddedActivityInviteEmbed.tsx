@@ -1,28 +1,28 @@
-// Module ID: 14355
-// Function ID: 14356
+// Module ID: 14430
+// Function ID: 14431
 // Name: EmbeddedActivityInviteEmbed
-// Dependencies: [32, 17, 4799, 8570, 2046, 502, 4800, 5662, 4890, 1392, 9932, 7756, 584, 8569, 8223, 8451, 1128, 5565, 14356, 2]
+// Dependencies: [32, 17, 4820, 8597, 2045, 502, 4821, 5682, 4911, 1392, 9962, 7784, 584, 8596, 8251, 8478, 1128, 5586, 14431, 2]
 // Exports: createEmbeddedActivityInviteEmbed
 
-// Module 14355 (EmbeddedActivityInviteEmbed)
+// Module 14430 (EmbeddedActivityInviteEmbed)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl6 from "intl" /* 1128 */;
-import useChannelName from "useChannelName" /* 5565 */;
-import Constants from "Constants" /* 7756 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8223 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8451 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8569 */;
-import ApplicationAssetsStore2 from "ApplicationAssetsStore" /* 8570 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 9932 */;
-import useEmbeddedActivityParticipantAvatarUris from "useEmbeddedActivityParticipantAvatarUris" /* 14356 */;
+import useChannelName from "useChannelName" /* 5586 */;
+import Constants from "Constants" /* 7784 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8251 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8478 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8596 */;
+import ApplicationAssetsStore2 from "ApplicationAssetsStore" /* 8597 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 9962 */;
+import useEmbeddedActivityParticipantAvatarUris from "useEmbeddedActivityParticipantAvatarUris" /* 14431 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4799 */;
-import ApplicationStore from "ApplicationStore" /* 2046 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
+import ApplicationStore from "ApplicationStore" /* 2045 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import InviteStore from "InviteStore" /* 5662 */;
-import RelationshipStore from "RelationshipStore" /* 4890 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import InviteStore from "InviteStore" /* 5682 */;
+import RelationshipStore from "RelationshipStore" /* 4911 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 

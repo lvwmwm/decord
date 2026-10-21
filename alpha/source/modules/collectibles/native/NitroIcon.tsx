@@ -1,18 +1,18 @@
-// Module ID: 14274
-// Function ID: 14275
+// Module ID: 14349
+// Function ID: 14350
 // Name: NitroIcon
-// Dependencies: [19, 21, 558, 576, 7910, 2]
+// Dependencies: [19, 21, 558, 576, 7938, 2]
 
-// Module 14274 (NitroIcon)
+// Module 14349 (NitroIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import inlineStylesDefault from "inlineStyles" /* 7910 */;
+import inlineStylesDefault from "inlineStyles" /* 7938 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const inlineStyles = tmp(7910);
+const inlineStyles = tmp(7938);
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroIcon(arg0) {
   let color;

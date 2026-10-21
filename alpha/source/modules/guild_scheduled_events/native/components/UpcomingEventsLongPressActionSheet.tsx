@@ -1,20 +1,20 @@
-// Module ID: 13085
-// Function ID: 13086
+// Module ID: 13153
+// Function ID: 13154
 // Name: UpcomingEventsLongPressActionSheet
-// Dependencies: [19, 17, 4822, 6655, 6656, 21, 4945, 558, 576, 504, 6834, 1128, 7197, 1202, 13086, 8883, 7157, 5171, 13087, 13088, 7166, 7161, 7247, 2]
+// Dependencies: [19, 17, 4843, 6683, 6684, 21, 4966, 558, 576, 504, 6862, 1128, 7225, 1202, 13154, 8910, 7185, 5192, 13155, 13156, 7194, 7189, 7275, 2]
 
-// Module 13085 (UpcomingEventsLongPressActionSheet)
+// Module 13153 (UpcomingEventsLongPressActionSheet)
 import react_native from "react-native" /* 17 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import ReadStateConstants from "ReadStateConstants" /* 6656 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7157 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7161 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7166 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
+import ReadStateConstants from "ReadStateConstants" /* 6684 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7185 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7189 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7194 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4822 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6655 */;
+import GuildStore from "GuildStore" /* 4843 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6683 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -76,8 +76,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UpcomingEven
   const tmpResult2 = tmp(504);
   const stateFromStores1 = tmpResult2.useStateFromStores(tmp9, tmp11);
   if (cResult[6] !== stateFromStores) {
-    let obj2 = { guild: stateFromStores, size: tmp(6834).GuildIconSizes.LARGE };
-    const tmp16 = stateFromStores1(6834);
+    let obj2 = { guild: stateFromStores, size: tmp(6862).GuildIconSizes.LARGE };
+    const tmp16 = stateFromStores1(6862);
     const tmp17 = closure_7(tmp16, obj2);
     cResult[6] = stateFromStores;
     cResult[7] = tmp17;
@@ -109,7 +109,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UpcomingEven
     }
     if (cResult[12] !== tmp18) {
       const obj3 = { leading: tmp18, title: tmp20 };
-      const tmp24 = closure_7(tmp(7197).BottomSheetTitleHeader, obj3);
+      const tmp24 = closure_7(tmp(7225).BottomSheetTitleHeader, obj3);
       cResult[12] = tmp18;
       cResult[13] = tmp24;
       tmp22 = tmp24;
@@ -118,7 +118,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UpcomingEven
     }
     const _Symbol2 = Symbol;
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj4 = { source: stateFromStores1(13086) };
+      const obj4 = { source: stateFromStores1(13154) };
       const Icon = tmp(1202).Icon;
       const tmp28 = closure_7(Icon, obj4);
       cResult[14] = tmp28;
@@ -129,7 +129,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UpcomingEven
     const _Symbol3 = Symbol;
     if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
       const obj5 = { text: intl2.string(tmp(1128).t.e6RscS) };
-      const FormLabel = tmp(8883).FormLabel;
+      const FormLabel = tmp(8910).FormLabel;
       intl2 = tmp(1128).intl;
       const tmp31 = closure_7(FormLabel, obj5);
       cResult[15] = tmp31;
@@ -148,14 +148,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UpcomingEven
               obj2.hideActionSheet();
             }
       };
-      const tmp34 = closure_7(tmp(8883).FormRow, obj6);
+      const tmp34 = closure_7(tmp(8910).FormRow, obj6);
       cResult[16] = guildId;
       cResult[17] = tmp34;
       tmp32 = tmp34;
     } else {
       tmp32 = cResult[17];
     }
-    const tmp35 = stateFromStores1(stateFromStores1 ? 13087 : 13088);
+    const tmp35 = stateFromStores1(stateFromStores1 ? 13155 : 13156);
     if (cResult[18] !== tmp35) {
       const obj7 = { source: tmp35 };
       const tmp38 = closure_7(tmp(1202).Icon, obj7);
@@ -183,7 +183,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UpcomingEven
     }
     if (cResult[22] !== tmp39) {
       const obj8 = { text: tmp39 };
-      const tmp43 = closure_7(tmp(8883).FormLabel, obj8);
+      const tmp43 = closure_7(tmp(8910).FormLabel, obj8);
       cResult[22] = tmp39;
       cResult[23] = tmp43;
       tmp41 = tmp43;
@@ -212,7 +212,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UpcomingEven
           }
           const obj9 = { children: items2 };
           items2 = [tmp22, tmp32, tmp45];
-          const tmp50 = closure_8(tmp(7247).ActionSheet, obj9);
+          const tmp50 = closure_8(tmp(7275).ActionSheet, obj9);
           cResult[31] = tmp32;
           cResult[32] = tmp45;
           cResult[33] = tmp22;
@@ -221,7 +221,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UpcomingEven
         }
       }
       const obj10 = { leading: tmp36, label: tmp41, onPress: tmp44 };
-      const tmp47 = closure_7(tmp(8883).FormRow, obj10);
+      const tmp47 = closure_7(tmp(8910).FormRow, obj10);
       cResult[27] = tmp36;
       cResult[28] = tmp41;
       cResult[29] = tmp44;
@@ -268,12 +268,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UpcomingEven
   let obj2 = guildId(504);
   const items1 = [UserGuildSettingsStore];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId));
-  const ActionSheet = guildId(7247).ActionSheet;
+  const ActionSheet = guildId(7275).ActionSheet;
   const obj3 = { leading: closure_7(View, obj4), title: intl.string(guildId(1128).t.tlopTM) };
   obj4 = { style: tmp.headerIcon, children: closure_7(tmp9, obj5) };
-  const BottomSheetTitleHeader = guildId(7197).BottomSheetTitleHeader;
-  obj5 = { guild: stateFromStores, size: guildId(6834).GuildIconSizes.LARGE };
-  tmp9 = stateFromStores1(6834);
+  const BottomSheetTitleHeader = guildId(7225).BottomSheetTitleHeader;
+  obj5 = { guild: stateFromStores, size: guildId(6862).GuildIconSizes.LARGE };
+  tmp9 = stateFromStores1(6862);
   intl = guildId(1128).intl;
   const items2 = [closure_7(BottomSheetTitleHeader, obj3), , ];
   const obj6 = {
@@ -286,14 +286,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UpcomingEven
       obj2.hideActionSheet();
     }
   };
-  const FormRow = guildId(8883).FormRow;
-  obj7 = { source: stateFromStores1(13086) };
+  const FormRow = guildId(8910).FormRow;
+  obj7 = { source: stateFromStores1(13154) };
   Icon = guildId(1202).Icon;
   obj8 = { text: intl2.string(guildId(1128).t.e6RscS) };
-  FormLabel = guildId(8883).FormLabel;
+  FormLabel = guildId(8910).FormLabel;
   intl2 = guildId(1128).intl;
   items2[1] = closure_7(FormRow, obj6);
-  const FormRow2 = guildId(8883).FormRow;
+  const FormRow2 = guildId(8910).FormRow;
   const obj9 = {
     leading: closure_7(Icon2, obj10),
     label: closure_7(FormLabel2, { text: stringResult }),
@@ -305,9 +305,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UpcomingEven
       const result = updateGuildNotificationSettings(guildId, obj, NotificationLabel.mutedEvents(!stateFromStores1));
     }
   };
-  obj10 = { source: stateFromStores1(stateFromStores1 ? 13087 : 13088) };
+  obj10 = { source: stateFromStores1(stateFromStores1 ? 13155 : 13156) };
   Icon2 = guildId(1202).Icon;
-  FormLabel2 = tmp2(8883).FormLabel;
+  FormLabel2 = tmp2(8910).FormLabel;
   const intl3 = tmp2(1128).intl;
   const string = intl3.string;
   const t = tmp2(1128).t;

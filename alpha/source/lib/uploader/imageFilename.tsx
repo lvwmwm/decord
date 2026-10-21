@@ -1,10 +1,10 @@
-// Module ID: 8122
-// Function ID: 8123
+// Module ID: 8150
+// Function ID: 8151
 // Name: imageFilename
 // Dependencies: [2]
 // Exports: heicMimeType, isHeicFile, isJxrFile, jxrMimeType, renameToJpegExtension
 
-// Module 8122 (imageFilename)
+// Module 8150 (imageFilename)
 import size from "module_2" /* 2 */;
 
 const set = new Set(["image/heic", "image/heif", "image/heic-sequence", "image/heif-sequence"]);

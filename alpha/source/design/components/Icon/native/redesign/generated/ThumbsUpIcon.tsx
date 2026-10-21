@@ -1,14 +1,14 @@
-// Module ID: 9685
-// Function ID: 9686
+// Module ID: 9715
+// Function ID: 9716
 // Name: ThumbsUpIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 9686, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 9716, 5650, 2]
 
-// Module 9685 (ThumbsUpIcon)
+// Module 9715 (ThumbsUpIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 9686 */;
+import BaseIconImage2 from "BaseIconImage" /* 5650 */;
+import AssetRegistry from "AssetRegistry" /* 9716 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThumbsUpIc
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(5630).BaseIconImage;
+  const BaseIconImage = tmp(5650).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

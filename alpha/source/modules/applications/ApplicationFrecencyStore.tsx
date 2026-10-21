@@ -1,17 +1,17 @@
-// Module ID: 9578
-// Function ID: 9579
+// Module ID: 9608
+// Function ID: 9609
 // Name: ApplicationFrecencyStore
-// Dependencies: [4799, 1246, 1375, 1097, 2000, 5692, 12, 504, 584, 2]
+// Dependencies: [4820, 1246, 1375, 1097, 2000, 5712, 12, 504, 584, 2]
 
-// Module 9578 (ApplicationFrecencyStore)
+// Module 9608 (ApplicationFrecencyStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import ApplicationConstants from "ApplicationConstants" /* 1375 */;
 import Server from "Server" /* 2000 */;
-import FrecencyDefault from "Frecency" /* 5692 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4799 */;
+import FrecencyDefault from "Frecency" /* 5712 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
 import size from "module_2" /* 2 */;
 

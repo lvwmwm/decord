@@ -1,9 +1,9 @@
-// Module ID: 2046
-// Function ID: 2047
+// Module ID: 2045
+// Function ID: 2046
 // Name: ApplicationStore
 // Dependencies: [32, 2024, 504, 584, 2]
 
-// Module 2046 (ApplicationStore)
+// Module 2045 (ApplicationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

@@ -1,12 +1,12 @@
-// Module ID: 17388
-// Function ID: 17389
+// Module ID: 17468
+// Function ID: 17469
 // Name: HubUnreadUtils
-// Dependencies: [13012, 6722, 558, 576, 11, 13004, 504, 2]
+// Dependencies: [13080, 6750, 558, 576, 11, 13072, 504, 2]
 
-// Module 17388 (HubUnreadUtils)
-import GuildDirectoryUtils from "GuildDirectoryUtils" /* 13004 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 13012 */;
-import ReadStateStore from "ReadStateStore" /* 6722 */;
+// Module 17468 (HubUnreadUtils)
+import GuildDirectoryUtils from "GuildDirectoryUtils" /* 13072 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 13080 */;
+import ReadStateStore from "ReadStateStore" /* 6750 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

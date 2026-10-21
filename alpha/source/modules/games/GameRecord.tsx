@@ -1,14 +1,14 @@
 // Module ID: 2023
 // Function ID: 2024
 // Name: GameRecord
-// Dependencies: [1407, 2024, 2000, 2033, 1417, 1388, 2]
+// Dependencies: [1407, 2024, 2000, 2032, 1417, 1388, 2]
 
 // Module 2023 (GameRecord)
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import AvatarUtils from "AvatarUtils" /* 1417 */;
 import Server from "Server" /* 2000 */;
 import ApplicationRecord2 from "ApplicationRecord" /* 2024 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2033 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2032 */;
 import Record from "Record" /* 1407 */;
 import size_mod from "module_2" /* 2 */;
 

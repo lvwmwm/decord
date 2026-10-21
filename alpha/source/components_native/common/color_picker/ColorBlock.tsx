@@ -1,19 +1,19 @@
-// Module ID: 15663
-// Function ID: 15664
+// Module ID: 15739
+// Function ID: 15740
 // Name: ColorBlock
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 1105, 4942, 1202, 11160, 6859, 2]
+// Dependencies: [19, 17, 21, 4966, 587, 558, 576, 1105, 4963, 1202, 11204, 6887, 2]
 
-// Module 15663 (ColorBlock)
+// Module 15739 (ColorBlock)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
-import ColorUtils from "ColorUtils" /* 4942 */;
-import Pressables from "Pressables" /* 6859 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11160 */;
+import ColorUtils from "ColorUtils" /* 4963 */;
+import Pressables from "Pressables" /* 6887 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11204 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -265,7 +265,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((color) 
       style: items,
       children: tmp7Result
     };
-    const PressableOpacity = tmp2(6859).PressableOpacity;
+    const PressableOpacity = tmp2(6887).PressableOpacity;
     hexToColorName = ColorUtils.hexToColorName;
     ColorUtils;
     items = [tmp.colorBlock, style, ];

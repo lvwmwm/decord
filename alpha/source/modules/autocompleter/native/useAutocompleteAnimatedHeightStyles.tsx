@@ -1,11 +1,11 @@
-// Module ID: 13109
-// Function ID: 13110
+// Module ID: 13177
+// Function ID: 13178
 // Name: useAutocompleteAnimatedHeightStyles
-// Dependencies: [558, 5121, 5014, 5167, 5170, 2]
+// Dependencies: [558, 5142, 5035, 5188, 5191, 2]
 
-// Module 13109 (useAutocompleteAnimatedHeightStyles)
-import timing from "timing" /* 5167 */;
-import timingPresets from "timingPresets" /* 5170 */;
+// Module 13177 (useAutocompleteAnimatedHeightStyles)
+import timing from "timing" /* 5188 */;
+import timingPresets from "timingPresets" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

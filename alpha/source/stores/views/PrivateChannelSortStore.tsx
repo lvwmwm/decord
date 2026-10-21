@@ -1,22 +1,23 @@
-// Module ID: 7271
-// Function ID: 7272
+// Module ID: 7299
+// Function ID: 7300
 // Name: PrivateChannelSortStore
-// Dependencies: [6736, 6737, 4804, 4800, 4822, 6722, 6655, 1392, 11, 4875, 2050, 7272, 504, 584, 2]
+// Dependencies: [6764, 6765, 4825, 4821, 4843, 6750, 6683, 1392, 4828, 11, 4896, 2049, 7300, 504, 584, 2]
 
-// Module 7271 (PrivateChannelSortStore)
+// Module 7299 (PrivateChannelSortStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import _modDef2050 from "module_2050" /* 2050 */;
-import ChannelRecord from "ChannelRecord" /* 4804 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 4875 */;
-import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7272 */;
-import MessageRequestStore from "MessageRequestStore" /* 6736 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6737 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import GuildStore from "GuildStore" /* 4822 */;
-import ReadStateStore from "ReadStateStore" /* 6722 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6655 */;
+import _modDef2049 from "module_2049" /* 2049 */;
+import ChannelRecord from "ChannelRecord" /* 4825 */;
+import ChannelConstants from "ChannelConstants" /* 4828 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4896 */;
+import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7300 */;
+import MessageRequestStore from "MessageRequestStore" /* 6764 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6765 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import GuildStore from "GuildStore" /* 4843 */;
+import ReadStateStore from "ReadStateStore" /* 6750 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6683 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +35,7 @@ function makeSortedChannel(channel, id) {
     const isMessageRequestTimestamp = channel.isMessageRequestTimestamp;
     let tmp2 = id;
     if (null != isMessageRequestTimestamp) {
-      const obj = _modDef2050(isMessageRequestTimestamp);
+      const obj = _modDef2049(isMessageRequestTimestamp);
       const valueOfResult = obj.valueOf();
       const obj2 = SnowflakeUtilsDefault;
       let fromTimestampResult = obj2.fromTimestamp(valueOfResult);
@@ -65,7 +66,8 @@ function handleCacheLoaded() {
   }
 }
 const isPrivate = ChannelRecord.isPrivate;
-const unpackModuleId = { DEFAULT: "DEFAULT", FAVORITE: "FAVORITE" };
+const ChannelFlags = ChannelConstants.ChannelFlags;
+const authStore2 = { DEFAULT: "DEFAULT", FAVORITE: "FAVORITE" };
 const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(function indexBy(value) {
   let items;
   if (value.isRequest) {
@@ -81,8 +83,8 @@ const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(function index
 });
 let values = [];
 let values2 = [];
-let closure_17 = [];
-const f41086 = () => {
+let closure_18 = [];
+const f41184 = () => {
 
 };
 const Store = get_initializedDefault.Store;
@@ -93,16 +95,16 @@ class PrivateChannelSortStore extends Store {
     this.syncWith(items, handleConnectionOpen);
   }
   getPrivateChannelIds() {
-    if (typeof f41086 === "function") {
+    if (typeof f41184 === "function") {
       values = secondaryIndexMap.values(constants.FAVORITE);
       values2 = secondaryIndexMap.values(constants.DEFAULT);
       const tmp4 = values === values && values2 === values2;
       if (!tmp4) {
-        closure_17 = [];
-        const item = values.forEach((channelId) => closure_1_17.push(channelId.channelId));
-        const item1 = values2.forEach((channelId) => closure_1_17.push(channelId.channelId));
+        closure_18 = [];
+        const item = values.forEach((channelId) => closure_1_18.push(channelId.channelId));
+        const item1 = values2.forEach((channelId) => closure_1_18.push(channelId.channelId));
       }
-      return closure_17;
+      return closure_18;
     } else {
       throw new TypeError("Trying to call a non-function");
     }
@@ -130,10 +132,12 @@ let obj = {
   CACHE_LOADED_LAZY: handleCacheLoaded,
   CHANNEL_UPDATES: function handleChannelUpdates(channels) {
     channels = channels.channels;
-    const item = channels.forEach((type) => {
-      const hasItem = isPrivate(type.type) || map.has(type.id);
-      if (hasItem) {
-        const result = map.set(type.id, makeSortedChannel(type));
+    const item = channels.forEach((hasFlag) => {
+      if (!hasFlag.hasFlag(constants.UNLISTED)) {
+        const hasItem = isPrivate(hasFlag.type) || map.has(hasFlag.id);
+        if (hasItem) {
+          const result = map.set(hasFlag.id, makeSortedChannel(hasFlag));
+        }
       }
     });
   },
@@ -141,9 +145,13 @@ let obj = {
     channel = channel.channel;
     let tmp = isPrivate(channel.type);
     if (tmp) {
-      const tmp4 = channel.id !== FakePlaceholderPrivateChannel.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
+      let tmp4 = channel.id !== FakePlaceholderPrivateChannel.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
       if (tmp4) {
-        const result = secondaryIndexMap.set(channel.id, makeSortedChannel(channel));
+        const tmp7 = !channel.hasFlag(ChannelFlags.UNLISTED);
+        if (tmp7) {
+          const result = secondaryIndexMap.set(channel.id, makeSortedChannel(channel));
+        }
+        tmp4 = tmp7;
       }
       tmp = tmp4;
     }

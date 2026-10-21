@@ -1,13 +1,13 @@
-// Module ID: 8250
-// Function ID: 8251
+// Module ID: 8278
+// Function ID: 8279
 // Name: trackChannelOpenedClickstream
-// Dependencies: [4800, 1087, 4807, 7524, 2]
+// Dependencies: [4821, 1087, 4828, 7552, 2]
 // Exports: default
 
-// Module 8250 (trackChannelOpenedClickstream)
-import ChannelConstants from "ChannelConstants" /* 4807 */;
-import Clickstream from "Clickstream" /* 7524 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
+// Module 8278 (trackChannelOpenedClickstream)
+import ChannelConstants from "ChannelConstants" /* 4828 */;
+import Clickstream from "Clickstream" /* 7552 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

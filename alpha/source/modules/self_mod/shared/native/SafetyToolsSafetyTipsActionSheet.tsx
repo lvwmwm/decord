@@ -1,20 +1,20 @@
-// Module ID: 10789
-// Function ID: 10790
+// Module ID: 10933
+// Function ID: 10934
 // Name: SafetyToolsSafetyTipsActionSheet
-// Dependencies: [19, 17, 10730, 21, 4945, 587, 558, 576, 1128, 10751, 5195, 10780, 2]
+// Dependencies: [19, 17, 10874, 21, 4966, 587, 558, 576, 1128, 10895, 5216, 10924, 2]
 
-// Module 10789 (SafetyToolsSafetyTipsActionSheet)
+// Module 10933 (SafetyToolsSafetyTipsActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import Constants from "Constants" /* 10730 */;
-import SafetyTipsSectionDefault from "SafetyTipsSection" /* 10751 */;
-import SafetyToolsActionSheetWrapperDefault from "SafetyToolsActionSheetWrapper" /* 10780 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import Constants from "Constants" /* 10874 */;
+import SafetyTipsSectionDefault from "SafetyTipsSection" /* 10895 */;
+import SafetyToolsActionSheetWrapperDefault from "SafetyToolsActionSheetWrapper" /* 10924 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

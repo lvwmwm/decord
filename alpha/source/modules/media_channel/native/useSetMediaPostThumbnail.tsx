@@ -1,14 +1,14 @@
-// Module ID: 13797
-// Function ID: 13798
+// Module ID: 13872
+// Function ID: 13873
 // Name: useSetMediaPostThumbnail
-// Dependencies: [19, 7580, 8241, 558, 576, 8092, 573, 9592, 5171, 2]
+// Dependencies: [19, 7608, 8269, 558, 576, 8120, 573, 9622, 5192, 2]
 
-// Module 13797 (useSetMediaPostThumbnail)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import DraftStore from "DraftStore" /* 7580 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9592 */;
+// Module 13872 (useSetMediaPostThumbnail)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
+import DraftStore from "DraftStore" /* 7608 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9622 */;
 import react from "react" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8241 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8269 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 12970
-// Function ID: 12971
+// Module ID: 13038
+// Function ID: 13039
 // Name: ChatInputScrimGradient
-// Dependencies: [19, 17, 21, 558, 576, 5105, 5213, 587, 1105, 5219, 2]
+// Dependencies: [19, 17, 21, 558, 576, 5126, 5234, 587, 1105, 5240, 2]
 
-// Module 12970 (ChatInputScrimGradient)
+// Module 13038 (ChatInputScrimGradient)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5105 */;
-import useToken2 from "useToken" /* 5213 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5126 */;
+import useToken2 from "useToken" /* 5234 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 let closure_4;
 let hasOwnProperty;
 let tmp6;
-const LinearGradientDefault = tmp6(5219);
+const LinearGradientDefault = tmp6(5240);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -37,7 +37,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputScr
   ({ gradientHeight, inline, scrimBase } = arg0);
   const tmp4 = undefined !== inline && inline;
   const tmpResult = client_themes_ClientThemesUtils;
-  const gradientValue = tmpResult.useGradientValue(tmp(5105).GradientPercentage.END);
+  const gradientValue = tmpResult.useGradientValue(tmp(5126).GradientPercentage.END);
   const tmpResult5 = useToken2;
   const token = tmpResult5.useToken(nativeDefault.colors.BACKGROUND_BASE_LOWER);
   const useToken = useToken2.useToken;

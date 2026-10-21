@@ -1,10 +1,10 @@
-// Module ID: 2066
-// Function ID: 2067
+// Module ID: 2065
+// Function ID: 2066
 // Name: BillingPlatformUtils
 // Dependencies: [1630, 1384, 2]
 // Exports: isCollectibleGiftingSupported, isGooglePlayBillingSupported, isPremiumGiftingSupported, isSocialLayerStorefrontGiftingSupported, isSocialLayerStorefrontPurchaseSupported
 
-// Module 2066 (BillingPlatformUtils)
+// Module 2065 (BillingPlatformUtils)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
 import size from "module_2" /* 2 */;

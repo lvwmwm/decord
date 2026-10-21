@@ -1,18 +1,18 @@
-// Module ID: 15112
-// Function ID: 15113
+// Module ID: 12620
+// Function ID: 12621
 // Name: ModalStepIndicator
-// Dependencies: [19, 17, 21, 4945, 558, 576, 587, 5014, 5213, 5208, 1128, 2082, 2]
+// Dependencies: [19, 17, 21, 4966, 558, 576, 587, 5035, 5234, 5229, 1128, 2081, 2]
 
-// Module 15112 (ModalStepIndicator)
+// Module 12620 (ModalStepIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
-import _modDef2082 from "module_2082" /* 2082 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
-import spring from "spring" /* 5208 */;
+import _modDef2081 from "module_2081" /* 2081 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
+import spring from "spring" /* 5229 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -235,7 +235,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ModalStepInd
               const _Symbol = Symbol;
               if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
                 const intl = intl2.intl;
-                const stringResult = intl.string(_modDef2082.KUwsC0);
+                const stringResult = intl.string(_modDef2081.KUwsC0);
                 cResult[11] = stringResult;
                 tmp7 = stringResult;
               } else {
@@ -306,7 +306,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ModalStepInd
     } else {
       const intl = intl2.intl;
       const range = { min: 1, max: totalSteps, now: currentStep + 1 };
-      return <View accessible accessibilityRole="progressbar" accessibilityLabel={intl.string(_modDef2082.KUwsC0)} accessibilityValue={range} importantForAccessibility="yes" style={tmp.container}>{items}</View>;
+      return <View accessible accessibilityRole="progressbar" accessibilityLabel={intl.string(_modDef2081.KUwsC0)} accessibilityValue={range} importantForAccessibility="yes" style={tmp.container}>{items}</View>;
     }
   }
 });

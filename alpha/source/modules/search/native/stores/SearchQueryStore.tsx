@@ -1,20 +1,20 @@
-// Module ID: 13052
-// Function ID: 13053
+// Module ID: 13120
+// Function ID: 13121
 // Name: SearchQueryStore
-// Dependencies: [4800, 4890, 1392, 9642, 9641, 1087, 5565, 1128, 13045, 13053, 2042, 504, 584, 2]
+// Dependencies: [4821, 4911, 1392, 9672, 9671, 1087, 5586, 1128, 13113, 13121, 2041, 504, 584, 2]
 
-// Module 13052 (SearchQueryStore)
+// Module 13120 (SearchQueryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import TrackingConstants from "TrackingConstants" /* 9641 */;
-import SearchUtils from "SearchUtils" /* 13045 */;
-import SearchQueryTagManagerDefault from "SearchQueryTagManager" /* 13053 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import RelationshipStore from "RelationshipStore" /* 4890 */;
+import TrackingConstants from "TrackingConstants" /* 9671 */;
+import SearchUtils from "SearchUtils" /* 13113 */;
+import SearchQueryTagManagerDefault from "SearchQueryTagManager" /* 13121 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import RelationshipStore from "RelationshipStore" /* 4911 */;
 import UserStore from "UserStore" /* 1392 */;
-import SearchConstants from "SearchConstants" /* 9642 */;
+import SearchConstants from "SearchConstants" /* 9672 */;
 import Constants from "Constants" /* 1087 */;
-import FunctionUtils from "FunctionUtils" /* 2042 */;
+import FunctionUtils from "FunctionUtils" /* 2041 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -193,7 +193,7 @@ class SearchQueryStateManager {
       let items1;
       let channelName;
       if (null != channel) {
-        const obj2 = obj(5565);
+        const obj2 = obj(5586);
         channelName = obj2.computeChannelName(channel, UserStore, RelationshipStore);
       }
       if (null == channelName) {
@@ -205,7 +205,7 @@ class SearchQueryStateManager {
         let str = ": ";
         stringResult = intl.string(obj(1128).t.WNpFHa);
         items1 = [obj3];
-        obj4 = obj(13045);
+        obj4 = obj(13113);
       }
       items = items1;
     }

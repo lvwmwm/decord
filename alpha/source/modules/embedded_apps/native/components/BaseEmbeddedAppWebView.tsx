@@ -1,9 +1,9 @@
-// Module ID: 11373
-// Function ID: 11374
+// Module ID: 11417
+// Function ID: 11418
 // Name: BaseEmbeddedAppWebView
-// Dependencies: [5, 32, 19, 17, 5586, 1087, 2026, 21, 4945, 3, 1384, 558, 576, 11374, 7855, 11375, 11376, 1383, 11360, 11377, 11378, 11370, 1267, 573, 5866, 1128, 11379, 5584, 1297, 11380, 1386, 11061, 6611, 2]
+// Dependencies: [5, 32, 19, 17, 5607, 1087, 2026, 21, 4966, 3, 1384, 558, 576, 10732, 11418, 7883, 11419, 11420, 1383, 11403, 11421, 11422, 11423, 11414, 1267, 573, 5888, 1128, 11424, 5605, 1297, 11425, 11426, 1386, 10716, 6639, 2]
 
-// Module 11373 (BaseEmbeddedAppWebView)
+// Module 11417 (BaseEmbeddedAppWebView)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -13,19 +13,21 @@ import intl4 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import URLUtilsDefault from "URLUtils" /* 1386 */;
 import Constants2 from "Constants" /* 2026 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5866 */;
-import usePreviousDefault from "usePrevious" /* 6611 */;
-import WebView2 from "WebView" /* 7855 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5888 */;
+import usePreviousDefault from "usePrevious" /* 6639 */;
+import WebView2 from "WebView" /* 7883 */;
+import useEmbeddedAppCSPDefault from "useEmbeddedAppCSP" /* 10732 */;
+import isAllowedFrameNavigation from "isAllowedFrameNavigation" /* 11426 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5586 */;
-import createStyles from "createStyles" /* 4945 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5607 */;
+import createStyles from "createStyles" /* 4966 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c1, c2, c3, c4, c5, c7, c8, c9, constants, content_security_policy;
+let c1, c2, c3, c4, c5, c8, c9, constants, content_security_policy;
 
 function getSafeArea(disable, arg1) {
   let tmp = arg1;
@@ -55,15 +57,121 @@ let closure_10 = Constants2.DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY;
 const jsx = Fragment.jsx;
 let closure_12 = createStyles.createStyles({ webView: { backgroundColor: "transparent" } });
 let tmp2 = new LoggerDefault("BaseEmbeddedAppWebView");
-let closure_13 = tmp2;
+const logger = tmp2;
 let closure_14 = PlatformUtils.isIOS();
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbeddedAppWebView(iframeId) {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbeddedAppWebView(onLoadError) {
+  let policy;
+  let routerOrigin;
+  const obj = react2;
+  const cResult = obj.c(12);
+  onLoadError = onLoadError.onLoadError;
+  const tmp2 = useEmbeddedAppCSPDefault(onLoadError.activityUrl);
+  let closure_1 = tmp2;
+  if (cResult[0] === tmp2.status) {
+    let tmp3;
+    let tmp4;
+    if (cResult[1] === onLoadError) {
+      tmp3 = cResult[2];
+      tmp4 = cResult[3];
+    }
+    const effect = react.useEffect(tmp3, tmp4);
+    const status = tmp2.status;
+    if ("loading" !== status) {
+      if ("failed" !== status) {
+        let tmp15;
+        if ("not-enforced" !== status) {
+          if ("developer-served" !== status) {
+            if ("ready" === status) {
+              ({ policy, routerOrigin } = tmp2);
+              if (cResult[6] === policy) {
+                let tmp7;
+                if (cResult[7] === routerOrigin) {
+                  tmp7 = cResult[8];
+                }
+                if (cResult[9] === onLoadError) {
+                  let tmp8;
+                  if (cResult[10] === tmp7) {
+                    tmp8 = cResult[11];
+                  }
+                  return tmp8;
+                }
+                const merged = Object.assign(onLoadError);
+                const tmp14 = <closure_16 framePolicy={tmp7} />;
+                cResult[9] = onLoadError;
+                cResult[10] = tmp7;
+                cResult[11] = tmp14;
+                tmp8 = tmp14;
+              }
+              const obj3 = { policy, routerOrigin };
+              cResult[6] = policy;
+              cResult[7] = routerOrigin;
+              cResult[8] = obj3;
+              tmp7 = obj3;
+            }
+          }
+        }
+        if (cResult[4] !== onLoadError) {
+          const merged1 = Object.assign(onLoadError);
+          const tmp22 = <closure_16 framePolicy={null} />;
+          cResult[4] = onLoadError;
+          cResult[5] = tmp22;
+          tmp15 = tmp22;
+        } else {
+          tmp15 = cResult[5];
+        }
+        return tmp15;
+      }
+    }
+    return null;
+  }
+  const fn = function n() {
+    if ("failed" === status.status) {
+      onLoadError();
+    }
+  };
+  const items = [tmp2.status, onLoadError];
+  cResult[0] = tmp2.status;
+  cResult[1] = onLoadError;
+  cResult[2] = fn;
+  cResult[3] = items;
+  tmp4 = items;
+  tmp3 = fn;
+}) : (function BaseEmbeddedAppWebView(onLoadError) {
+  let policy;
+  let routerOrigin;
+  onLoadError = onLoadError.onLoadError;
+  const tmp = useEmbeddedAppCSPDefault(onLoadError.activityUrl);
+  let closure_1 = tmp;
+  const items = [tmp.status, onLoadError];
+  const effect = react.useEffect(() => {
+    if ("failed" === status.status) {
+      onLoadError();
+    }
+  }, items);
+  const status = tmp.status;
+  if ("loading" !== status) {
+    if ("failed" !== status) {
+      if ("not-enforced" !== status) {
+        if ("developer-served" !== status) {
+          if ("ready" === status) {
+            ({ policy, routerOrigin } = tmp);
+            const merged = Object.assign(onLoadError);
+            return <closure_16 framePolicy={{ policy, routerOrigin }} />;
+          }
+        }
+      }
+      const merged1 = Object.assign(onLoadError);
+      return <closure_16 framePolicy={null} />;
+    }
+  }
+  return null;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbeddedAppWebViewContent(framePolicy) {
   let allowPopups;
   let applicationId;
-  let closure_15;
   let deepLinkQueryParams;
-  let hasInvalidUrlError;
   let ignoreSilentHardwareSwitch;
   let onActivityCrash;
   let queryParams;
@@ -74,40 +182,41 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
   let tmp14;
   let tmp15;
   let tmp22;
+  let tmp26;
   let tmp9;
-  let tmp = iframeId;
-  let tmp2 = onActivityCrash;
-  let obj = iframeId(onActivityCrash[12]);
-  const cResult = obj.c(111);
-  iframeId = iframeId.iframeId;
-  let shellBridgeSecret = iframeId.shellBridgeSecret;
-  ({ deepLinkQueryParams, applicationId } = iframeId);
-  ({ queryParams, onActivityCrash } = iframeId);
-  const onLoadError = iframeId.onLoadError;
-  const onInvalidUrl = iframeId.onInvalidUrl;
-  ({ allowPopups, referrerPolicy } = iframeId);
-  const isPipOrGridMode = iframeId.isPipOrGridMode;
-  ({ ignoreSilentHardwareSwitch, safeAreasConfig } = iframeId);
-  const channelId = iframeId.channelId;
-  const guildId = iframeId.guildId;
-  const activitySessionId = iframeId.activitySessionId;
-  const activityUrl = iframeId.activityUrl;
+  let tmp = framePolicy;
+  let tmp2 = applicationId;
+  let obj = framePolicy(applicationId[12]);
+  const cResult = obj.c(117);
+  framePolicy = framePolicy.framePolicy;
+  let iframeId = framePolicy.iframeId;
+  let shellBridgeSecret = framePolicy.shellBridgeSecret;
+  ({ deepLinkQueryParams, applicationId } = framePolicy);
+  ({ queryParams, onActivityCrash } = framePolicy);
+  const onLoadError = framePolicy.onLoadError;
+  const onInvalidUrl = framePolicy.onInvalidUrl;
+  ({ allowPopups, referrerPolicy } = framePolicy);
+  const isPipOrGridMode = framePolicy.isPipOrGridMode;
+  ({ ignoreSilentHardwareSwitch, safeAreasConfig } = framePolicy);
+  const channelId = framePolicy.channelId;
+  const guildId = framePolicy.guildId;
+  const activitySessionId = framePolicy.activitySessionId;
+  const activityUrl = framePolicy.activityUrl;
   if (undefined === deepLinkQueryParams) {
     deepLinkQueryParams = {};
   }
-  let tmp4 = hasInvalidUrlError();
-  let obj2 = referrerPolicy;
-  const context = referrerPolicy.useContext(tmp(tmp2[13]).WebViewContext);
-  let tmp6 = closure_16();
-  hasInvalidUrlError = tmp6.hasInvalidUrlError;
+  let tmp4 = activitySessionId();
+  let obj2 = onInvalidUrl;
+  const context = onInvalidUrl.useContext(tmp(tmp2[14]).WebViewContext);
+  const tmp6 = closure_17();
+  const hasInvalidUrlError = tmp6.hasInvalidUrlError;
   const setHasInvalidUrlError = tmp6.setHasInvalidUrlError;
   const hadInvalidUrlError = tmp6.hadInvalidUrlError;
-  const tmp7 = onInvalidUrl;
-  let tmp8 = onInvalidUrl(referrerPolicy.useState(null), 2);
+  const tmp7 = onLoadError;
+  let tmp8 = onLoadError(onInvalidUrl.useState(null), 2);
   [tmp9, tmp10] = tmp8;
-  getSafeArea = tmp10;
   if (cResult[0] !== iframeId) {
-    const tmpResult = tmp(tmp2[14]);
+    const tmpResult = tmp(tmp2[15]);
     const webViewProxy = tmpResult.getWebViewProxy(iframeId);
     cResult[0] = iframeId;
     cResult[1] = webViewProxy;
@@ -115,167 +224,200 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
   } else {
     tmp11 = cResult[1];
   }
-  closure_16 = tmp11;
+  closure_17 = tmp11;
   [tmp14, tmp15] = tmp7(obj2.useState(null), 2);
-  let closure_17 = tmp15;
-  const tmp16 = shellBridgeSecret;
+  let closure_18 = tmp15;
+  const tmp16 = iframeId;
   tmp7(obj2.useState(null), 2);
-  const tmp17 = shellBridgeSecret(tmp2[15])();
-  let closure_18 = tmp17;
-  const tmpResult3 = tmp(tmp2[16]);
+  const tmp17 = iframeId(tmp2[16])();
+  let closure_19 = tmp17;
+  const tmpResult3 = tmp(tmp2[17]);
   const embeddedAppShimVersion = tmpResult3.useEmbeddedAppShimVersion("BaseEmbeddedAppWebView");
-  let obj5 = applicationId(tmp2[17]);
-  let obj3 = { frame_id: iframeId, platform: tmp(tmp2[18]).ActivityPlatform.MOBILE, mobile_app_version: constants.Version };
+  let obj5 = shellBridgeSecret(tmp2[18]);
+  let obj3 = { frame_id: iframeId, platform: tmp(tmp2[19]).ActivityPlatform.MOBILE, mobile_app_version: constants.Version };
   constants = obj5.getConstants();
   const merged = Object.assign(queryParams);
   const merged1 = Object.assign(deepLinkQueryParams);
-  obj3[tmp(tmp2[19]).SHIM_VERSION_PARAM] = "" + embeddedAppShimVersion;
+  obj3[tmp(tmp2[20]).SHIM_VERSION_PARAM] = "" + embeddedAppShimVersion;
   if (cResult[2] !== allowPopups) {
     let obj4 = { allowPopups };
-    const tmp23 = tmp16(tmp2[20])(obj4);
+    const tmp23 = tmp16(tmp2[21])(obj4);
     cResult[2] = allowPopups;
     cResult[3] = tmp23;
     tmp22 = tmp23;
   } else {
     tmp22 = cResult[3];
   }
-  let closure_20 = tmp22;
+  let closure_21 = tmp22;
   const uRLSearchParams = new URLSearchParams(obj3);
   const combined = "" + activityUrl + "?" + uRLSearchParams;
-  if (cResult[4] === iframeId) {
-    if (cResult[5] === tmp22) {
-      if (cResult[6] === combined) {
-        if (cResult[7] === onLoadError) {
-          if (cResult[8] === referrerPolicy) {
-            if (cResult[9] === tmp15) {
-              if (cResult[10] === shellBridgeSecret) {
-                let tmp26;
-                if (cResult[11] === embeddedAppShimVersion) {
-                  tmp26 = cResult[12];
-                }
-                if (cResult[13] === iframeId) {
-                  if (cResult[14] === tmp22) {
-                    if (cResult[15] === combined) {
-                      if (cResult[16] === onLoadError) {
-                        if (cResult[17] === referrerPolicy) {
-                          if (cResult[18] === shellBridgeSecret) {
-                            let tmp27;
-                            if (cResult[19] === embeddedAppShimVersion) {
-                              tmp27 = cResult[20];
-                            }
-                            const effect = obj2.useEffect(tmp26, tmp27);
-                            if (cResult[21] !== applicationId) {
-                              function ce(nativeEvent) {
-                                setHasInvalidUrlError.warn("activity WebView error for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
-                              }
-                              cResult[21] = applicationId;
-                              cResult[22] = ce;
-                              let tmp29 = ce;
-                            } else {
-                              tmp29 = cResult[22];
-                            }
-                            if (cResult[23] !== applicationId) {
-                              function fe(nativeEvent) {
-                                setHasInvalidUrlError.warn("activity WebView render process gone for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
-                              }
-                              cResult[23] = applicationId;
-                              cResult[24] = fe;
-                              let tmp30 = fe;
-                            } else {
-                              tmp30 = cResult[24];
-                            }
-                            if (cResult[25] === activitySessionId) {
-                              if (cResult[26] === applicationId) {
-                                if (cResult[27] === channelId) {
-                                  if (cResult[28] === guildId) {
-                                    let tmp33;
-                                    let tmp32;
-                                    if (cResult[29] === onActivityCrash) {
-                                      let tmp31 = cResult[30];
+  if (cResult[4] !== framePolicy) {
+    let result;
+    if (null != framePolicy) {
+      const tmpResult4 = tmp(tmp2[22]);
+      result = tmpResult4.deriveIframeCSPAttributeFromPolicy(framePolicy.policy);
+    }
+    cResult[4] = framePolicy;
+    cResult[5] = result;
+    tmp26 = result;
+  } else {
+    tmp26 = cResult[5];
+  }
+  let closure_23 = tmp26;
+  if (cResult[6] === tmp26) {
+    if (cResult[7] === iframeId) {
+      if (cResult[8] === tmp22) {
+        if (cResult[9] === combined) {
+          if (cResult[10] === onLoadError) {
+            if (cResult[11] === referrerPolicy) {
+              if (cResult[12] === tmp15) {
+                if (cResult[13] === shellBridgeSecret) {
+                  let tmp28;
+                  if (cResult[14] === embeddedAppShimVersion) {
+                    tmp28 = cResult[15];
+                  }
+                  if (cResult[16] === tmp26) {
+                    if (cResult[17] === iframeId) {
+                      if (cResult[18] === tmp22) {
+                        if (cResult[19] === combined) {
+                          if (cResult[20] === onLoadError) {
+                            if (cResult[21] === referrerPolicy) {
+                              if (cResult[22] === shellBridgeSecret) {
+                                let tmp29;
+                                if (cResult[23] === embeddedAppShimVersion) {
+                                  tmp29 = cResult[24];
+                                }
+                                const effect = obj2.useEffect(tmp28, tmp29);
+                                if (cResult[25] !== applicationId) {
+                                  function pe(nativeEvent) {
+                                    hasInvalidUrlError.warn("activity WebView error for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
+                                  }
+                                  cResult[25] = applicationId;
+                                  cResult[26] = pe;
+                                  class Se {
+                                    constructor() {
+                                      hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
+                                      const obj = AnalyticsUtilsDefault;
+                                      const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
+                                      obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
+                                      onActivityCrash();
                                     }
-                                    const _Symbol = Symbol;
-                                    let str = "react.memo_cache_sentinel";
-                                    if (cResult[31] === Symbol.for("react.memo_cache_sentinel")) {
-                                      let items = [safeAreasConfig];
-                                      class Se {
-                                        constructor() {
-                                          return safeAreasConfig.getUseActivityUrlOverride();
-                                        }
-                                      }
-                                      cResult[31] = items;
-                                      cResult[32] = Se;
-                                      tmp33 = Se;
-                                      tmp32 = items;
-                                    } else {
-                                      tmp32 = cResult[31];
-                                      tmp33 = cResult[32];
+                                  }
+                                } else {
+                                  let tmp31 = cResult[26];
+                                }
+                                if (cResult[27] !== applicationId) {
+                                  function me(nativeEvent) {
+                                    hasInvalidUrlError.warn("activity WebView render process gone for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
+                                  }
+                                  cResult[27] = applicationId;
+                                  cResult[28] = me;
+                                  class Se {
+                                    constructor() {
+                                      hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
+                                      const obj = AnalyticsUtilsDefault;
+                                      const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
+                                      obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
+                                      onActivityCrash();
                                     }
-                                    const tmpResult4 = tmp(tmp2[23]);
-                                    const stateFromStores = tmpResult4.useStateFromStores(tmp32, tmp33);
-                                    if (cResult[33] === combined) {
-                                      if (cResult[34] === stateFromStores) {
-                                        if (cResult[35] === setHasInvalidUrlError) {
-                                          let tmp36;
-                                          if (cResult[36] === tmp10) {
-                                            tmp36 = cResult[37];
+                                  }
+                                }
+                                if (cResult[29] === activitySessionId) {
+                                  if (cResult[30] === applicationId) {
+                                    if (cResult[31] === channelId) {
+                                      if (cResult[32] === guildId) {
+                                        let tmp35;
+                                        let tmp34;
+                                        const _Symbol = Symbol;
+                                        let str = "react.memo_cache_sentinel";
+                                        if (cResult[35] === Symbol.for("react.memo_cache_sentinel")) {
+                                          let items = [isPipOrGridMode];
+                                          function be() {
+                                            return isPipOrGridMode.getUseActivityUrlOverride();
                                           }
-                                          if (cResult[38] === combined) {
-                                            if (cResult[39] === stateFromStores) {
-                                              let tmp37;
-                                              if (cResult[40] === setHasInvalidUrlError) {
-                                                tmp37 = cResult[41];
-                                              }
-                                              const effect1 = obj2.useEffect(tmp36, tmp37);
-                                              if (cResult[42] === hadInvalidUrlError) {
-                                                let tmp39;
-                                                let tmp40;
-                                                if (cResult[43] === hasInvalidUrlError) {
-                                                  tmp39 = cResult[44];
-                                                  tmp40 = cResult[45];
+                                          class Se {
+                                            constructor() {
+                                              hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
+                                              const obj = AnalyticsUtilsDefault;
+                                              const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
+                                              obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
+                                              onActivityCrash();
+                                            }
+                                          }
+                                          cResult[36] = be;
+                                          tmp35 = be;
+                                          class Ee {
+                                            constructor() {
+                                              let tmp10;
+                                              try {
+                                                const _URL = URL;
+                                                const self = this;
+                                                const self2 = this;
+                                                const uRL = new URL(combined);
+                                                tmp10(uRL);
+                                              } catch (tmp7) {
+                                                const tmp8 = stateFromStores;
+                                                if (tmp8) {
+                                                  tmp10 = setHasInvalidUrlError(true);
+                                                } else {
+                                                  throw tmp7;
                                                 }
-                                                const effect2 = obj2.useEffect(tmp39, tmp40);
-                                                if (cResult[46] === hadInvalidUrlError) {
-                                                  if (cResult[47] === hasInvalidUrlError) {
-                                                    let tmp43;
-                                                    let tmp44;
-                                                    if (cResult[48] === onInvalidUrl) {
-                                                      tmp43 = cResult[49];
-                                                      tmp44 = cResult[50];
+                                              }
+                                            }
+                                          }
+                                        } else {
+                                          tmp35 = cResult[36];
+                                          tmp34 = cResult[35];
+                                        }
+                                        class Se {
+                                          constructor() {
+                                            hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
+                                            const obj = AnalyticsUtilsDefault;
+                                            const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
+                                            obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
+                                            onActivityCrash();
+                                          }
+                                        }
+                                        const stateFromStores = obj9.useStateFromStores(tmp34, tmp35);
+                                        if (cResult[37] === combined) {
+                                          if (cResult[38] === stateFromStores) {
+                                            if (cResult[39] === setHasInvalidUrlError) {
+                                              let tmp38;
+                                              if (cResult[40] === tmp10) {
+                                                tmp38 = cResult[41];
+                                              }
+                                              if (cResult[42] === combined) {
+                                                if (cResult[43] === stateFromStores) {
+                                                  let tmp39;
+                                                  if (cResult[44] === setHasInvalidUrlError) {
+                                                    tmp39 = cResult[45];
+                                                  }
+                                                  const effect1 = obj2.useEffect(tmp38, tmp39);
+                                                  if (cResult[46] === hadInvalidUrlError) {
+                                                    let tmp41;
+                                                    let tmp42;
+                                                    if (cResult[47] === hasInvalidUrlError) {
+                                                      tmp41 = cResult[48];
+                                                      tmp42 = cResult[49];
                                                     }
-                                                    const effect3 = obj2.useEffect(tmp43, tmp44);
-                                                    if (cResult[51] === tmp9) {
-                                                      let tmp46;
-                                                      let combined1;
-                                                      if (cResult[52] === tmp14) {
-                                                        tmp46 = cResult[53];
-                                                      }
-                                                      const tmp48 = cResult[54];
-                                                      class Ae {
-                                                        constructor() {
-                                                          let tmp2 = null != onInvalidUrl;
-                                                          const tmp = onInvalidUrl;
-                                                          if (tmp2) {
-                                                            tmp2 = !hadInvalidUrlError;
-                                                          }
-                                                          if (tmp2) {
-                                                            tmp2 = hasInvalidUrlError;
-                                                          }
-                                                          if (tmp2) {
-                                                            tmp();
-                                                          }
+                                                    const effect2 = obj2.useEffect(tmp41, tmp42);
+                                                    if (cResult[50] === hadInvalidUrlError) {
+                                                      if (cResult[51] === hasInvalidUrlError) {
+                                                        let tmp44;
+                                                        let tmp45;
+                                                        if (cResult[52] === onInvalidUrl) {
+                                                          tmp44 = cResult[53];
+                                                          tmp45 = cResult[54];
                                                         }
-                                                      }
-                                                      if (tmp48 === undefined) {
+                                                        const effect3 = obj2.useEffect(tmp44, tmp45);
                                                         if (cResult[55] === tmp9) {
-                                                          let tmp57;
-                                                          let tmp61;
-                                                          let tmp60;
+                                                          let tmp47;
+                                                          let combined1;
                                                           if (cResult[56] === tmp14) {
-                                                            combined1 = cResult[57];
+                                                            tmp47 = cResult[57];
                                                           }
-                                                          let flag = false;
-                                                          const tmp7Result3 = tmp7(obj2.useState(false), 2);
-                                                          class Ae {
+                                                          const tmp49 = cResult[58];
+                                                          class Ce {
                                                             constructor() {
                                                               let tmp2 = null != onInvalidUrl;
                                                               const tmp = onInvalidUrl;
@@ -290,1742 +432,674 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
                                                               }
                                                             }
                                                           }
-                                                          const _Symbol2 = Symbol;
-                                                          const first = tmp7Result3[0];
-                                                          if (cResult[58] === Symbol.for("react.memo_cache_sentinel")) {
-                                                            const items1 = [];
-                                                            cResult[58] = items1;
-                                                            class Ae {
-                                                              constructor() {
-                                                                let tmp2 = null != onInvalidUrl;
-                                                                const tmp = onInvalidUrl;
-                                                                if (tmp2) {
-                                                                  tmp2 = !hadInvalidUrlError;
-                                                                }
-                                                                if (tmp2) {
-                                                                  tmp2 = hasInvalidUrlError;
-                                                                }
-                                                                if (tmp2) {
-                                                                  tmp();
+                                                          if (tmp49 === undefined) {
+                                                            if (cResult[59] === tmp9) {
+                                                              let tmp61;
+                                                              if (cResult[60] === tmp14) {
+                                                                combined1 = cResult[61];
+                                                              }
+                                                              class Ce {
+                                                                constructor() {
+                                                                  let tmp2 = null != onInvalidUrl;
+                                                                  const tmp = onInvalidUrl;
+                                                                  if (tmp2) {
+                                                                    tmp2 = !hadInvalidUrlError;
+                                                                  }
+                                                                  if (tmp2) {
+                                                                    tmp2 = hasInvalidUrlError;
+                                                                  }
+                                                                  if (tmp2) {
+                                                                    tmp();
+                                                                  }
                                                                 }
                                                               }
+                                                              let flag = false;
+                                                              class Se {
+                                                                constructor() {
+                                                                  hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
+                                                                  const obj = AnalyticsUtilsDefault;
+                                                                  const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
+                                                                  obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
+                                                                  onActivityCrash();
+                                                                }
+                                                              }
+                                                              let closure_27 = tmp58[1];
+                                                              const _Symbol2 = Symbol;
+                                                              const first = tmp58[0];
+                                                              class Ee {
+                                                                constructor() {
+                                                                  let tmp10;
+                                                                  try {
+                                                                    const _URL = URL;
+                                                                    const self = this;
+                                                                    const self2 = this;
+                                                                    const uRL = new URL(combined);
+                                                                    tmp10(uRL);
+                                                                  } catch (tmp7) {
+                                                                    const tmp8 = stateFromStores;
+                                                                    if (tmp8) {
+                                                                      tmp10 = setHasInvalidUrlError(true);
+                                                                    } else {
+                                                                      throw tmp7;
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                              if (tmp60 === Symbol.for("react.memo_cache_sentinel")) {
+                                                                const items1 = [];
+                                                                cResult[62] = items1;
+                                                                class Ce {
+                                                                  constructor() {
+                                                                    let tmp2 = null != onInvalidUrl;
+                                                                    const tmp = onInvalidUrl;
+                                                                    if (tmp2) {
+                                                                      tmp2 = !hadInvalidUrlError;
+                                                                    }
+                                                                    if (tmp2) {
+                                                                      tmp2 = hasInvalidUrlError;
+                                                                    }
+                                                                    if (tmp2) {
+                                                                      tmp();
+                                                                    }
+                                                                  }
+                                                                }
+                                                              } else {
+                                                                tmp61 = cResult[62];
+                                                              }
+                                                              const tmp7Result2 = tmp7(obj2.useState(tmp61), 2);
+                                                              const first1 = tmp7Result2[0];
+                                                              let closure_29 = tmp7Result2[1];
+                                                              if (cResult[63] === applicationId) {
+                                                                let tmp65;
+                                                                let tmp64;
+                                                                if (cResult[64] === (setHasInvalidUrlError && null == framePolicy)) {
+                                                                  tmp65 = cResult[66];
+                                                                  tmp64 = cResult[65];
+                                                                }
+                                                                const effect4 = obj2.useEffect(tmp64, tmp65);
+                                                                if (cResult[67] === first1) {
+                                                                  if (cResult[68] === framePolicy) {
+                                                                    let origin;
+                                                                    let closure_30 = tmp68;
+                                                                    class Ne {
+                                                                      constructor(mainDocumentURL) {
+                                                                        mainDocumentURL = mainDocumentURL.mainDocumentURL;
+                                                                        if (null != combined1) {
+                                                                          if (null != mainDocumentURL) {
+                                                                            if (mainDocumentURL !== combined1) {
+                                                                              Linking.openURL(mainDocumentURL.url);
+                                                                              return false;
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                        if (null != framePolicy) {
+                                                                          const obj2 = isAllowedFrameNavigation;
+                                                                          if (obj2.isAllowedFrameNavigation(mainDocumentURL.url, framePolicy.routerOrigin, framePolicy.policy)) {
+                                                                            return true;
+                                                                          }
+                                                                        } else {
+                                                                          const iter = first1[Symbol.iterator]();
+                                                                          const nextResult = iter.next();
+                                                                          while (iter !== undefined) {
+                                                                            let _RegExp = RegExp;
+                                                                            let self = this;
+                                                                            let self2 = this;
+                                                                            let regExp = new RegExp(nextResult);
+                                                                            if (regExp.test(mainDocumentURL.url)) {
+                                                                              iter.return();
+                                                                              let flag = true;
+                                                                              return true;
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                        const toURLSafe = URLUtilsDefault.toURLSafe;
+                                                                        URLUtilsDefault;
+                                                                        let str = DeveloperActivityShelfStore.getActivityUrlOverride();
+                                                                        if (str == null) {
+                                                                          str = "";
+                                                                        }
+                                                                        const toURLSafeResult = toURLSafe(str);
+                                                                        const tmp13Result = URLUtilsDefault;
+                                                                        const toURLSafeResult1 = tmp13Result.toURLSafe(mainDocumentURL.url);
+                                                                        return null != toURLSafeResult && null != toURLSafeResult1 && toURLSafeResult.origin + toURLSafeResult.pathname === toURLSafeResult1.origin + toURLSafeResult1.pathname;
+                                                                      }
+                                                                    }
+                                                                    let closure_31 = tmp69;
+                                                                    class Se {
+                                                                      constructor() {
+                                                                        hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
+                                                                        const obj = AnalyticsUtilsDefault;
+                                                                        const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
+                                                                        obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
+                                                                        onActivityCrash();
+                                                                      }
+                                                                    }
+                                                                    if (tmp9 != null) {
+                                                                      origin = tmp9.origin;
+                                                                    }
+                                                                    if (cResult[71] === origin) {
+                                                                      if (cResult[72] === tmp17) {
+                                                                        if (cResult[73] === isPipOrGridMode) {
+                                                                          if (safeAreasConfig != null) {
+                                                                            let bottom = safeAreasConfig.bottom;
+                                                                          }
+                                                                          class Ne {
+                                                                            constructor(mainDocumentURL) {
+                                                                              mainDocumentURL = mainDocumentURL.mainDocumentURL;
+                                                                              if (null != combined1) {
+                                                                                if (null != mainDocumentURL) {
+                                                                                  if (mainDocumentURL !== combined1) {
+                                                                                    Linking.openURL(mainDocumentURL.url);
+                                                                                    return false;
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                              if (null != framePolicy) {
+                                                                                const obj2 = isAllowedFrameNavigation;
+                                                                                if (obj2.isAllowedFrameNavigation(mainDocumentURL.url, framePolicy.routerOrigin, framePolicy.policy)) {
+                                                                                  return true;
+                                                                                }
+                                                                              } else {
+                                                                                const iter = first1[Symbol.iterator]();
+                                                                                const nextResult = iter.next();
+                                                                                while (iter !== undefined) {
+                                                                                  let _RegExp = RegExp;
+                                                                                  let self = this;
+                                                                                  let self2 = this;
+                                                                                  let regExp = new RegExp(nextResult);
+                                                                                  if (regExp.test(mainDocumentURL.url)) {
+                                                                                    iter.return();
+                                                                                    let flag = true;
+                                                                                    return true;
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                              const toURLSafe = URLUtilsDefault.toURLSafe;
+                                                                              URLUtilsDefault;
+                                                                              let str = DeveloperActivityShelfStore.getActivityUrlOverride();
+                                                                              if (str == null) {
+                                                                                str = "";
+                                                                              }
+                                                                              const toURLSafeResult = toURLSafe(str);
+                                                                              const tmp13Result = URLUtilsDefault;
+                                                                              const toURLSafeResult1 = tmp13Result.toURLSafe(mainDocumentURL.url);
+                                                                              return null != toURLSafeResult && null != toURLSafeResult1 && toURLSafeResult.origin + toURLSafeResult.pathname === toURLSafeResult1.origin + toURLSafeResult1.pathname;
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                    class Ee {
+                                                                      constructor() {
+                                                                        let tmp10;
+                                                                        try {
+                                                                          const _URL = URL;
+                                                                          const self = this;
+                                                                          const self2 = this;
+                                                                          const uRL = new URL(combined);
+                                                                          tmp10(uRL);
+                                                                        } catch (tmp7) {
+                                                                          const tmp8 = stateFromStores;
+                                                                          if (tmp8) {
+                                                                            tmp10 = setHasInvalidUrlError(true);
+                                                                          } else {
+                                                                            throw tmp7;
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                    cResult[71] = origin;
+                                                                    cResult[72] = tmp17;
+                                                                    cResult[73] = isPipOrGridMode;
+                                                                    let bottom1;
+                                                                    if (safeAreasConfig != null) {
+                                                                      bottom1 = safeAreasConfig.bottom;
+                                                                    }
+                                                                    cResult[74] = bottom1;
+                                                                    let left;
+                                                                    if (safeAreasConfig != null) {
+                                                                      left = safeAreasConfig.left;
+                                                                    }
+                                                                    cResult[75] = left;
+                                                                    let right;
+                                                                    if (safeAreasConfig != null) {
+                                                                      right = safeAreasConfig.right;
+                                                                    }
+                                                                    cResult[76] = right;
+                                                                    let top;
+                                                                    if (safeAreasConfig != null) {
+                                                                      top = safeAreasConfig.top;
+                                                                    }
+                                                                    class De {
+                                                                      constructor() {
+                                                                        function tryInjectJavaScript() {
+                                                                          return closure_0(...arguments);
+                                                                        }
+                                                                        const tmp = closure_30;
+                                                                        if (tmp) {
+                                                                          const tmp3 = null;
+                                                                          if (null != closure_17) {
+                                                                            const tmp4 = onActivityCrash;
+                                                                            let closure_0 = onActivityCrash(function*(arg0, value) {
+                                                                              let bottom;
+                                                                              let obj5;
+                                                                              let right;
+                                                                              let top;
+                                                                              if (c9 === 2) {
+                                                                                c9 = 3;
+                                                                                throw new TypeError("Generator functions may not be called on executing generators");
+                                                                              } else if (tmp3 === 3) {
+                                                                                if (arg0 === 1) {
+                                                                                  throw value;
+                                                                                } else if (arg0 === 2) {
+                                                                                  const obj2 = { value, done: true };
+                                                                                  return obj2;
+                                                                                } else {
+                                                                                  return { value: "IconComponent", done: null };
+                                                                                }
+                                                                              } else {
+                                                                                let c7;
+                                                                                try {
+                                                                                  c9 = 2;
+                                                                                  if (0 === c8) {
+                                                                                    if (arg0 === 1) {
+                                                                                      c9 = 3;
+                                                                                      throw value;
+                                                                                    } else if (arg0 === 2) {
+                                                                                      c9 = 3;
+                                                                                      const obj3 = { value, done: true };
+                                                                                      return obj3;
+                                                                                    } else {
+                                                                                      let closure_5 = tmp;
+                                                                                      let closure_4 = tmp4;
+                                                                                      closure_0 = undefined;
+                                                                                      const obj8 = closure_1_17;
+                                                                                      if (null != closure_1_17) {
+                                                                                        if (null != origin) {
+                                                                                          let rect;
+                                                                                          const tmp14 = c8;
+                                                                                          if (tmp14) {
+                                                                                            rect = { top: 0, bottom: 0, left: 0, right: 0 };
+                                                                                          } else {
+                                                                                            rect = closure_1_19;
+                                                                                          }
+                                                                                          const rect2 = c9;
+                                                                                          let left;
+                                                                                          if (c9 != null) {
+                                                                                            left = rect2.left;
+                                                                                          }
+                                                                                          let left1;
+                                                                                          if (rect != null) {
+                                                                                            left1 = rect.left;
+                                                                                          }
+                                                                                          let c0 = left1;
+                                                                                          if (left1 == null) {
+                                                                                            c0 = 0;
+                                                                                          }
+                                                                                          const rect1 = { left: hadInvalidUrlError(left, c0), right: hadInvalidUrlError(right, c1), top: hadInvalidUrlError(top, c2), bottom: hadInvalidUrlError(bottom, c3) };
+                                                                                          right = undefined;
+                                                                                          if (rect2 != null) {
+                                                                                            right = rect2.right;
+                                                                                          }
+                                                                                          let right1;
+                                                                                          if (rect != null) {
+                                                                                            right1 = rect.right;
+                                                                                          }
+                                                                                          c1 = right1;
+                                                                                          if (right1 == null) {
+                                                                                            c1 = 0;
+                                                                                          }
+                                                                                          top = undefined;
+                                                                                          if (rect2 != null) {
+                                                                                            top = rect2.top;
+                                                                                          }
+                                                                                          let top1;
+                                                                                          if (rect != null) {
+                                                                                            top1 = rect.top;
+                                                                                          }
+                                                                                          c2 = top1;
+                                                                                          if (top1 == null) {
+                                                                                            c2 = 0;
+                                                                                          }
+                                                                                          bottom = undefined;
+                                                                                          if (rect2 != null) {
+                                                                                            bottom = rect2.bottom;
+                                                                                          }
+                                                                                          let bottom1;
+                                                                                          if (rect != null) {
+                                                                                            bottom1 = rect.bottom;
+                                                                                          }
+                                                                                          c3 = bottom1;
+                                                                                          if (bottom1 == null) {
+                                                                                            c3 = 0;
+                                                                                          }
+                                                                                          const obj4 = { type: "safeAreaUpdateEvent", data: obj5 };
+                                                                                          obj5 = { insets: rect1 };
+                                                                                          const tmp30 = iframeId(applicationId[34])(obj4, tmp13);
+                                                                                          closure_0 = tmp30;
+                                                                                          c7 = 1;
+                                                                                          c8 = 2;
+                                                                                          c9 = 1;
+                                                                                          const obj6 = { value: obj8.injectJavaScript(tmp30), done: false };
+                                                                                          return obj6;
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  } else if (1 === c8) {
+                                                                                    c7 = 0;
+                                                                                    if (null != ref.current) {
+                                                                                      const current = ref.current;
+                                                                                      current.injectJavaScript(closure_0);
+                                                                                    }
+                                                                                  } else if (arg0 === 1) {
+                                                                                    c9 = 3;
+                                                                                    throw value;
+                                                                                  } else if (arg0 === 2) {
+                                                                                    c7 = 0;
+                                                                                    c9 = 3;
+                                                                                    const obj = { value, done: true };
+                                                                                    return obj;
+                                                                                  } else {
+                                                                                    c7 = 0;
+                                                                                  }
+                                                                                  c9 = 3;
+                                                                                  return { value: "IconComponent", done: null };
+                                                                                } catch (tmp31) {
+                                                                                  let closure_6 = tmp31;
+                                                                                  if (0 === c7) {
+                                                                                    c9 = 3;
+                                                                                    throw tmp31;
+                                                                                  } else {
+                                                                                    c8 = 1;
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            });
+                                                                            tryInjectJavaScript();
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                    cResult[77] = top;
+                                                                    cResult[78] = null != tmp51 && null != tmp9 && null != tmp14;
+                                                                    cResult[79] = tmp11;
+                                                                    cResult[80] = De;
+                                                                  }
+                                                                }
+                                                                class Ne {
+                                                                  constructor(mainDocumentURL) {
+                                                                    mainDocumentURL = mainDocumentURL.mainDocumentURL;
+                                                                    if (null != combined1) {
+                                                                      if (null != mainDocumentURL) {
+                                                                        if (mainDocumentURL !== combined1) {
+                                                                          Linking.openURL(mainDocumentURL.url);
+                                                                          return false;
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                    if (null != framePolicy) {
+                                                                      const obj2 = isAllowedFrameNavigation;
+                                                                      if (obj2.isAllowedFrameNavigation(mainDocumentURL.url, framePolicy.routerOrigin, framePolicy.policy)) {
+                                                                        return true;
+                                                                      }
+                                                                    } else {
+                                                                      const iter = first1[Symbol.iterator]();
+                                                                      const nextResult = iter.next();
+                                                                      while (iter !== undefined) {
+                                                                        let _RegExp = RegExp;
+                                                                        let self = this;
+                                                                        let self2 = this;
+                                                                        let regExp = new RegExp(nextResult);
+                                                                        if (regExp.test(mainDocumentURL.url)) {
+                                                                          iter.return();
+                                                                          let flag = true;
+                                                                          return true;
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                    const toURLSafe = URLUtilsDefault.toURLSafe;
+                                                                    URLUtilsDefault;
+                                                                    let str = DeveloperActivityShelfStore.getActivityUrlOverride();
+                                                                    if (str == null) {
+                                                                      str = "";
+                                                                    }
+                                                                    const toURLSafeResult = toURLSafe(str);
+                                                                    const tmp13Result = URLUtilsDefault;
+                                                                    const toURLSafeResult1 = tmp13Result.toURLSafe(mainDocumentURL.url);
+                                                                    return null != toURLSafeResult && null != toURLSafeResult1 && toURLSafeResult.origin + toURLSafeResult.pathname === toURLSafeResult1.origin + toURLSafeResult1.pathname;
+                                                                  }
+                                                                }
+                                                                class Se {
+                                                                  constructor() {
+                                                                    hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
+                                                                    const obj = AnalyticsUtilsDefault;
+                                                                    const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
+                                                                    obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
+                                                                    onActivityCrash();
+                                                                  }
+                                                                }
+                                                                cResult[68] = framePolicy;
+                                                                class Ee {
+                                                                  constructor() {
+                                                                    let tmp10;
+                                                                    try {
+                                                                      const _URL = URL;
+                                                                      const self = this;
+                                                                      const self2 = this;
+                                                                      const uRL = new URL(combined);
+                                                                      tmp10(uRL);
+                                                                    } catch (tmp7) {
+                                                                      const tmp8 = stateFromStores;
+                                                                      if (tmp8) {
+                                                                        tmp10 = setHasInvalidUrlError(true);
+                                                                      } else {
+                                                                        throw tmp7;
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                                cResult[70] = Ne;
+                                                              }
+                                                              function je() {
+                                                                function fetchAndParseCSP() {
+                                                                  return closure_0(...arguments);
+                                                                }
+                                                                const tmp = closure_26;
+                                                                if (tmp) {
+                                                                  let closure_0 = ["'self'"];
+                                                                  function parseCsp(arg0, str) {
+                                                                    const match = str.match(arg0);
+                                                                    if (null !== match) {
+                                                                      if (match.length >= 2) {
+                                                                        str = match[1];
+                                                                        const parts = str.split(" ");
+                                                                        const found = parts.filter((item) => !closure_1_0.includes(item));
+                                                                      }
+                                                                      return [];
+                                                                    }
+                                                                  }
+                                                                  const tmp2 = onActivityCrash;
+                                                                  closure_0 = onActivityCrash(function*(arg0, value) {
+                                                                    if (c5 === 2) {
+                                                                      c5 = 3;
+                                                                      throw new TypeError("Generator functions may not be called on executing generators");
+                                                                    } else if (tmp5 === 3) {
+                                                                      if (arg0 === 1) {
+                                                                        throw value;
+                                                                      } else if (arg0 === 2) {
+                                                                        const obj2 = { value, done: true };
+                                                                        return obj2;
+                                                                      } else {
+                                                                        return { value: "IconComponent", done: null };
+                                                                      }
+                                                                    } else {
+                                                                      try {
+                                                                        let items;
+                                                                        c5 = 2;
+                                                                        if (0 === c4) {
+                                                                          if (arg0 === 1) {
+                                                                            c5 = 3;
+                                                                            throw value;
+                                                                          } else if (arg0 === 2) {
+                                                                            c5 = 3;
+                                                                            const obj3 = { value, done: true };
+                                                                            return obj3;
+                                                                          } else {
+                                                                            let closure_3 = tmp2;
+                                                                            let closure_2 = tmp;
+                                                                            closure_0 = undefined;
+                                                                            content_security_policy = undefined;
+                                                                            items = undefined;
+                                                                            const obj6 = closure_0(applicationId[29]);
+                                                                            const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(closure_2_3);
+                                                                            const tmp29 = closure_0;
+                                                                            closure_0 = nonTestModeUrlForApplication;
+                                                                            const tmp30 = applicationId;
+                                                                            const tmp31 = closure_2_3;
+                                                                            if (nonTestModeUrlForApplication == null) {
+                                                                              const _HermesInternal = HermesInternal;
+                                                                              let str = ".discordsays.com";
+                                                                              closure_0 = "https://" + tmp31 + ".discordsays.com";
+                                                                            }
+                                                                            const HTTP = tmp29(tmp30[30]).HTTP;
+                                                                            const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
+                                                                            const _HermesInternal2 = HermesInternal;
+                                                                            const get = HTTP.get;
+                                                                            c4 = 1;
+                                                                            c5 = 1;
+                                                                            const obj5 = { value: get(obj4), done: false };
+                                                                            return obj5;
+                                                                          }
+                                                                        } else if (arg0 === 1) {
+                                                                          c5 = 3;
+                                                                          throw value;
+                                                                        } else if (arg0 === 2) {
+                                                                          c5 = 3;
+                                                                          const obj = { value, done: true };
+                                                                          return obj;
+                                                                        } else {
+                                                                          content_security_policy = value.headers["content-security-policy"];
+                                                                          items = ["about:blank", "file://*", closure_0];
+                                                                          let closure_1 = 3;
+                                                                          closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
+                                                                          closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
+                                                                          closure_2_29(items.map((item) => {
+                                                                            const str = closure_1_1(closure_1_3[31])(item);
+                                                                            return "^" + str.replace(/\\\*/g, ".*");
+                                                                          }));
+                                                                          closure_2_27(true);
+                                                                          c5 = 3;
+                                                                          return { value: "IconComponent", done: null };
+                                                                        }
+                                                                      } catch (tmp10) {
+                                                                        c5 = 3;
+                                                                        throw tmp10;
+                                                                      }
+                                                                    }
+                                                                  });
+                                                                  fetchAndParseCSP();
+                                                                }
+                                                              }
+                                                              const items2 = [applicationId, setHasInvalidUrlError && null == framePolicy];
+                                                              cResult[63] = applicationId;
+                                                              cResult[64] = setHasInvalidUrlError && null == framePolicy;
+                                                              cResult[65] = je;
+                                                              cResult[66] = items2;
+                                                              tmp65 = items2;
                                                             }
-                                                          } else {
-                                                            tmp57 = cResult[58];
                                                           }
-                                                          const tmp7Result4 = tmp7(obj2.useState(tmp57), 2);
-                                                          const first1 = tmp7Result4[0];
-                                                          let closure_26 = tmp7Result4[1];
-                                                          if (cResult[59] !== applicationId) {
-                                                            class Le {
-                                                              constructor() {
-                                                                tmp = hadInvalidUrlError;
-                                                                if (tmp) {
-                                                                  closure_0 = ["'self'"];
-                                                                  parseCsp = function parseCsp(arg0, str) {
-                                                                    const match = str.match(arg0);
-                                                                    if (null !== match) {
-                                                                      if (match.length >= 2) {
-                                                                        str = match[1];
-                                                                        const parts = str.split(" ");
-                                                                        const found = parts.filter((item) => !closure_1_0.includes(item));
-                                                                      }
-                                                                      return [];
-                                                                    }
-                                                                  };
-                                                                  closure_0 = undefined;
-                                                                  tmp2 = onLoadError;
-                                                                  closure_0 = onLoadError(function*(arg0, value) {
-                                                                    if (c5 === 2) {
-                                                                      c5 = 3;
-                                                                      throw new TypeError("Generator functions may not be called on executing generators");
-                                                                    } else if (tmp5 === 3) {
-                                                                      if (arg0 === 1) {
-                                                                        throw value;
-                                                                      } else if (arg0 === 2) {
-                                                                        const obj2 = { value, done: true };
-                                                                        return obj2;
-                                                                      } else {
-                                                                        return { value: "IconComponent", done: null };
-                                                                      }
-                                                                    } else {
-                                                                      try {
-                                                                        let items;
-                                                                        c5 = 2;
-                                                                        if (0 === c4) {
-                                                                          if (arg0 === 1) {
-                                                                            c5 = 3;
-                                                                            throw value;
-                                                                          } else if (arg0 === 2) {
-                                                                            c5 = 3;
-                                                                            const obj3 = { value, done: true };
-                                                                            return obj3;
-                                                                          } else {
-                                                                            let closure_3 = tmp2;
-                                                                            let closure_2 = tmp;
-                                                                            closure_0 = undefined;
-                                                                            content_security_policy = undefined;
-                                                                            items = undefined;
-                                                                            const obj6 = closure_0(onActivityCrash[27]);
-                                                                            const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(applicationId);
-                                                                            const tmp29 = closure_0;
-                                                                            closure_0 = nonTestModeUrlForApplication;
-                                                                            const tmp30 = onActivityCrash;
-                                                                            const tmp31 = applicationId;
-                                                                            if (nonTestModeUrlForApplication == null) {
-                                                                              const _HermesInternal = HermesInternal;
-                                                                              let str = ".discordsays.com";
-                                                                              closure_0 = "https://" + tmp31 + ".discordsays.com";
-                                                                            }
-                                                                            const HTTP = tmp29(tmp30[28]).HTTP;
-                                                                            const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
-                                                                            const _HermesInternal2 = HermesInternal;
-                                                                            const get = HTTP.get;
-                                                                            c4 = 1;
-                                                                            c5 = 1;
-                                                                            const obj5 = { value: get(obj4), done: false };
-                                                                            return obj5;
-                                                                          }
-                                                                        } else if (arg0 === 1) {
-                                                                          c5 = 3;
-                                                                          throw value;
-                                                                        } else if (arg0 === 2) {
-                                                                          c5 = 3;
-                                                                          const obj = { value, done: true };
-                                                                          return obj;
-                                                                        } else {
-                                                                          content_security_policy = value.headers["content-security-policy"];
-                                                                          items = ["about:blank", "file://*", closure_0];
-                                                                          let closure_1 = 3;
-                                                                          closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
-                                                                          closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
-                                                                          closure_2_26(items.map((item) => {
-                                                                            const str = closure_1_1(closure_1_3[29])(item);
-                                                                            return "^" + str.replace(/\\\*/g, ".*");
-                                                                          }));
-                                                                          closure_2_24(true);
-                                                                          c5 = 3;
-                                                                          return { value: "IconComponent", done: null };
-                                                                        }
-                                                                      } catch (tmp10) {
-                                                                        c5 = 3;
-                                                                        throw tmp10;
-                                                                      }
-                                                                    }
-                                                                  });
-                                                                  tmp3 = (function fetchAndParseCSP() {
-                                                                    return closure_0(...arguments);
-                                                                  })();
-                                                                }
-                                                                return;
-                                                              }
+                                                          class Se {
+                                                            constructor() {
+                                                              hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
+                                                              const obj = AnalyticsUtilsDefault;
+                                                              const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
+                                                              obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
+                                                              onActivityCrash();
                                                             }
-                                                            const items2 = [applicationId, ];
-                                                            class Ae {
-                                                              constructor() {
-                                                                let tmp2 = null != onInvalidUrl;
-                                                                const tmp = onInvalidUrl;
-                                                                if (tmp2) {
-                                                                  tmp2 = !hadInvalidUrlError;
-                                                                }
-                                                                if (tmp2) {
-                                                                  tmp2 = hasInvalidUrlError;
-                                                                }
-                                                                if (tmp2) {
-                                                                  tmp();
-                                                                }
-                                                              }
-                                                            }
-                                                            items2[1] = hadInvalidUrlError;
-                                                            cResult[59] = applicationId;
-                                                            cResult[60] = Le;
-                                                            cResult[61] = items2;
-                                                            tmp61 = items2;
-                                                            tmp60 = Le;
-                                                          } else {
-                                                            class Le {
-                                                              constructor() {
-                                                                tmp = hadInvalidUrlError;
-                                                                if (tmp) {
-                                                                  closure_0 = ["'self'"];
-                                                                  parseCsp = function parseCsp(arg0, str) {
-                                                                    const match = str.match(arg0);
-                                                                    if (null !== match) {
-                                                                      if (match.length >= 2) {
-                                                                        str = match[1];
-                                                                        const parts = str.split(" ");
-                                                                        const found = parts.filter((item) => !closure_1_0.includes(item));
-                                                                      }
-                                                                      return [];
-                                                                    }
-                                                                  };
-                                                                  closure_0 = undefined;
-                                                                  tmp2 = onLoadError;
-                                                                  closure_0 = onLoadError(function*(arg0, value) {
-                                                                    if (c5 === 2) {
-                                                                      c5 = 3;
-                                                                      throw new TypeError("Generator functions may not be called on executing generators");
-                                                                    } else if (tmp5 === 3) {
-                                                                      if (arg0 === 1) {
-                                                                        throw value;
-                                                                      } else if (arg0 === 2) {
-                                                                        const obj2 = { value, done: true };
-                                                                        return obj2;
-                                                                      } else {
-                                                                        return { value: "IconComponent", done: null };
-                                                                      }
-                                                                    } else {
-                                                                      try {
-                                                                        let items;
-                                                                        c5 = 2;
-                                                                        if (0 === c4) {
-                                                                          if (arg0 === 1) {
-                                                                            c5 = 3;
-                                                                            throw value;
-                                                                          } else if (arg0 === 2) {
-                                                                            c5 = 3;
-                                                                            const obj3 = { value, done: true };
-                                                                            return obj3;
-                                                                          } else {
-                                                                            let closure_3 = tmp2;
-                                                                            let closure_2 = tmp;
-                                                                            closure_0 = undefined;
-                                                                            content_security_policy = undefined;
-                                                                            items = undefined;
-                                                                            const obj6 = closure_0(onActivityCrash[27]);
-                                                                            const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(applicationId);
-                                                                            const tmp29 = closure_0;
-                                                                            closure_0 = nonTestModeUrlForApplication;
-                                                                            const tmp30 = onActivityCrash;
-                                                                            const tmp31 = applicationId;
-                                                                            if (nonTestModeUrlForApplication == null) {
-                                                                              const _HermesInternal = HermesInternal;
-                                                                              let str = ".discordsays.com";
-                                                                              closure_0 = "https://" + tmp31 + ".discordsays.com";
-                                                                            }
-                                                                            const HTTP = tmp29(tmp30[28]).HTTP;
-                                                                            const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
-                                                                            const _HermesInternal2 = HermesInternal;
-                                                                            const get = HTTP.get;
-                                                                            c4 = 1;
-                                                                            c5 = 1;
-                                                                            const obj5 = { value: get(obj4), done: false };
-                                                                            return obj5;
-                                                                          }
-                                                                        } else if (arg0 === 1) {
-                                                                          c5 = 3;
-                                                                          throw value;
-                                                                        } else if (arg0 === 2) {
-                                                                          c5 = 3;
-                                                                          const obj = { value, done: true };
-                                                                          return obj;
-                                                                        } else {
-                                                                          content_security_policy = value.headers["content-security-policy"];
-                                                                          items = ["about:blank", "file://*", closure_0];
-                                                                          let closure_1 = 3;
-                                                                          closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
-                                                                          closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
-                                                                          closure_2_26(items.map((item) => {
-                                                                            const str = closure_1_1(closure_1_3[29])(item);
-                                                                            return "^" + str.replace(/\\\*/g, ".*");
-                                                                          }));
-                                                                          closure_2_24(true);
-                                                                          c5 = 3;
-                                                                          return { value: "IconComponent", done: null };
-                                                                        }
-                                                                      } catch (tmp10) {
-                                                                        c5 = 3;
-                                                                        throw tmp10;
-                                                                      }
-                                                                    }
-                                                                  });
-                                                                  tmp3 = (function fetchAndParseCSP() {
-                                                                    return closure_0(...arguments);
-                                                                  })();
-                                                                }
-                                                                return;
-                                                              }
-                                                            }
-                                                            tmp61 = cResult[61];
                                                           }
-                                                          const effect4 = obj2.useEffect(tmp60, tmp61);
-                                                          if (cResult[62] === first1) {
-                                                            class Le {
-                                                              constructor() {
-                                                                tmp = hadInvalidUrlError;
-                                                                if (tmp) {
-                                                                  closure_0 = ["'self'"];
-                                                                  parseCsp = function parseCsp(arg0, str) {
-                                                                    const match = str.match(arg0);
-                                                                    if (null !== match) {
-                                                                      if (match.length >= 2) {
-                                                                        str = match[1];
-                                                                        const parts = str.split(" ");
-                                                                        const found = parts.filter((item) => !closure_1_0.includes(item));
-                                                                      }
-                                                                      return [];
-                                                                    }
-                                                                  };
-                                                                  closure_0 = undefined;
-                                                                  tmp2 = onLoadError;
-                                                                  closure_0 = onLoadError(function*(arg0, value) {
-                                                                    if (c5 === 2) {
-                                                                      c5 = 3;
-                                                                      throw new TypeError("Generator functions may not be called on executing generators");
-                                                                    } else if (tmp5 === 3) {
-                                                                      if (arg0 === 1) {
-                                                                        throw value;
-                                                                      } else if (arg0 === 2) {
-                                                                        const obj2 = { value, done: true };
-                                                                        return obj2;
-                                                                      } else {
-                                                                        return { value: "IconComponent", done: null };
-                                                                      }
-                                                                    } else {
-                                                                      try {
-                                                                        let items;
-                                                                        c5 = 2;
-                                                                        if (0 === c4) {
-                                                                          if (arg0 === 1) {
-                                                                            c5 = 3;
-                                                                            throw value;
-                                                                          } else if (arg0 === 2) {
-                                                                            c5 = 3;
-                                                                            const obj3 = { value, done: true };
-                                                                            return obj3;
-                                                                          } else {
-                                                                            let closure_3 = tmp2;
-                                                                            let closure_2 = tmp;
-                                                                            closure_0 = undefined;
-                                                                            content_security_policy = undefined;
-                                                                            items = undefined;
-                                                                            const obj6 = closure_0(onActivityCrash[27]);
-                                                                            const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(applicationId);
-                                                                            const tmp29 = closure_0;
-                                                                            closure_0 = nonTestModeUrlForApplication;
-                                                                            const tmp30 = onActivityCrash;
-                                                                            const tmp31 = applicationId;
-                                                                            if (nonTestModeUrlForApplication == null) {
-                                                                              const _HermesInternal = HermesInternal;
-                                                                              let str = ".discordsays.com";
-                                                                              closure_0 = "https://" + tmp31 + ".discordsays.com";
-                                                                            }
-                                                                            const HTTP = tmp29(tmp30[28]).HTTP;
-                                                                            const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
-                                                                            const _HermesInternal2 = HermesInternal;
-                                                                            const get = HTTP.get;
-                                                                            c4 = 1;
-                                                                            c5 = 1;
-                                                                            const obj5 = { value: get(obj4), done: false };
-                                                                            return obj5;
-                                                                          }
-                                                                        } else if (arg0 === 1) {
-                                                                          c5 = 3;
-                                                                          throw value;
-                                                                        } else if (arg0 === 2) {
-                                                                          c5 = 3;
-                                                                          const obj = { value, done: true };
-                                                                          return obj;
-                                                                        } else {
-                                                                          content_security_policy = value.headers["content-security-policy"];
-                                                                          items = ["about:blank", "file://*", closure_0];
-                                                                          let closure_1 = 3;
-                                                                          closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
-                                                                          closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
-                                                                          closure_2_26(items.map((item) => {
-                                                                            const str = closure_1_1(closure_1_3[29])(item);
-                                                                            return "^" + str.replace(/\\\*/g, ".*");
-                                                                          }));
-                                                                          closure_2_24(true);
-                                                                          c5 = 3;
-                                                                          return { value: "IconComponent", done: null };
-                                                                        }
-                                                                      } catch (tmp10) {
-                                                                        c5 = 3;
-                                                                        throw tmp10;
-                                                                      }
-                                                                    }
-                                                                  });
-                                                                  tmp3 = (function fetchAndParseCSP() {
-                                                                    return closure_0(...arguments);
-                                                                  })();
-                                                                }
-                                                                return;
+                                                          if (null != tmp9) {
+                                                            const tmp53 = setHasInvalidUrlError;
+                                                            if (tmp53) {
+                                                              let _HermesInternal = HermesInternal;
+                                                              combined1 = "file://" + tmp14;
+                                                            } else {
+                                                              combined1 = undefined;
+                                                              if (tmp47 != null) {
+                                                                combined1 = tmp47.uri;
                                                               }
-                                                            }
-                                                            let closure_27 = tmp64;
-                                                            class Ae {
-                                                              constructor() {
-                                                                let tmp2 = null != onInvalidUrl;
-                                                                const tmp = onInvalidUrl;
-                                                                if (tmp2) {
-                                                                  tmp2 = !hadInvalidUrlError;
-                                                                }
-                                                                if (tmp2) {
-                                                                  tmp2 = hasInvalidUrlError;
-                                                                }
-                                                                if (tmp2) {
-                                                                  tmp();
-                                                                }
-                                                              }
-                                                            }
-                                                            let closure_28 = tmp65;
-                                                            if (tmp9 != null) {
-                                                              class Le {
-                                                                constructor() {
-                                                                  tmp = hadInvalidUrlError;
-                                                                  if (tmp) {
-                                                                    closure_0 = ["'self'"];
-                                                                    parseCsp = function parseCsp(arg0, str) {
-                                                                      const match = str.match(arg0);
-                                                                      if (null !== match) {
-                                                                        if (match.length >= 2) {
-                                                                          str = match[1];
-                                                                          const parts = str.split(" ");
-                                                                          const found = parts.filter((item) => !closure_1_0.includes(item));
-                                                                        }
-                                                                        return [];
-                                                                      }
-                                                                    };
-                                                                    closure_0 = undefined;
-                                                                    tmp2 = onLoadError;
-                                                                    closure_0 = onLoadError(function*(arg0, value) {
-                                                                      if (c5 === 2) {
-                                                                        c5 = 3;
-                                                                        throw new TypeError("Generator functions may not be called on executing generators");
-                                                                      } else if (tmp5 === 3) {
-                                                                        if (arg0 === 1) {
-                                                                          throw value;
-                                                                        } else if (arg0 === 2) {
-                                                                          const obj2 = { value, done: true };
-                                                                          return obj2;
-                                                                        } else {
-                                                                          return { value: "IconComponent", done: null };
-                                                                        }
-                                                                      } else {
-                                                                        try {
-                                                                          let items;
-                                                                          c5 = 2;
-                                                                          if (0 === c4) {
-                                                                            if (arg0 === 1) {
-                                                                              c5 = 3;
-                                                                              throw value;
-                                                                            } else if (arg0 === 2) {
-                                                                              c5 = 3;
-                                                                              const obj3 = { value, done: true };
-                                                                              return obj3;
-                                                                            } else {
-                                                                              let closure_3 = tmp2;
-                                                                              let closure_2 = tmp;
-                                                                              closure_0 = undefined;
-                                                                              content_security_policy = undefined;
-                                                                              items = undefined;
-                                                                              const obj6 = closure_0(onActivityCrash[27]);
-                                                                              const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(applicationId);
-                                                                              const tmp29 = closure_0;
-                                                                              closure_0 = nonTestModeUrlForApplication;
-                                                                              const tmp30 = onActivityCrash;
-                                                                              const tmp31 = applicationId;
-                                                                              if (nonTestModeUrlForApplication == null) {
-                                                                                const _HermesInternal = HermesInternal;
-                                                                                let str = ".discordsays.com";
-                                                                                closure_0 = "https://" + tmp31 + ".discordsays.com";
-                                                                              }
-                                                                              const HTTP = tmp29(tmp30[28]).HTTP;
-                                                                              const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
-                                                                              const _HermesInternal2 = HermesInternal;
-                                                                              const get = HTTP.get;
-                                                                              c4 = 1;
-                                                                              c5 = 1;
-                                                                              const obj5 = { value: get(obj4), done: false };
-                                                                              return obj5;
-                                                                            }
-                                                                          } else if (arg0 === 1) {
-                                                                            c5 = 3;
-                                                                            throw value;
-                                                                          } else if (arg0 === 2) {
-                                                                            c5 = 3;
-                                                                            const obj = { value, done: true };
-                                                                            return obj;
-                                                                          } else {
-                                                                            content_security_policy = value.headers["content-security-policy"];
-                                                                            items = ["about:blank", "file://*", closure_0];
-                                                                            let closure_1 = 3;
-                                                                            closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
-                                                                            closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
-                                                                            closure_2_26(items.map((item) => {
-                                                                              const str = closure_1_1(closure_1_3[29])(item);
-                                                                              return "^" + str.replace(/\\\*/g, ".*");
-                                                                            }));
-                                                                            closure_2_24(true);
-                                                                            c5 = 3;
-                                                                            return { value: "IconComponent", done: null };
-                                                                          }
-                                                                        } catch (tmp10) {
-                                                                          c5 = 3;
-                                                                          throw tmp10;
-                                                                        }
-                                                                      }
-                                                                    });
-                                                                    tmp3 = (function fetchAndParseCSP() {
-                                                                      return closure_0(...arguments);
-                                                                    })();
-                                                                  }
-                                                                  return;
-                                                                }
-                                                              }
-                                                            }
-                                                            let c29 = tmp66;
-                                                            if (cResult[65] === undefined) {
-                                                              class Le {
-                                                                constructor() {
-                                                                  tmp = hadInvalidUrlError;
-                                                                  if (tmp) {
-                                                                    closure_0 = ["'self'"];
-                                                                    parseCsp = function parseCsp(arg0, str) {
-                                                                      const match = str.match(arg0);
-                                                                      if (null !== match) {
-                                                                        if (match.length >= 2) {
-                                                                          str = match[1];
-                                                                          const parts = str.split(" ");
-                                                                          const found = parts.filter((item) => !closure_1_0.includes(item));
-                                                                        }
-                                                                        return [];
-                                                                      }
-                                                                    };
-                                                                    closure_0 = undefined;
-                                                                    tmp2 = onLoadError;
-                                                                    closure_0 = onLoadError(function*(arg0, value) {
-                                                                      if (c5 === 2) {
-                                                                        c5 = 3;
-                                                                        throw new TypeError("Generator functions may not be called on executing generators");
-                                                                      } else if (tmp5 === 3) {
-                                                                        if (arg0 === 1) {
-                                                                          throw value;
-                                                                        } else if (arg0 === 2) {
-                                                                          const obj2 = { value, done: true };
-                                                                          return obj2;
-                                                                        } else {
-                                                                          return { value: "IconComponent", done: null };
-                                                                        }
-                                                                      } else {
-                                                                        try {
-                                                                          let items;
-                                                                          c5 = 2;
-                                                                          if (0 === c4) {
-                                                                            if (arg0 === 1) {
-                                                                              c5 = 3;
-                                                                              throw value;
-                                                                            } else if (arg0 === 2) {
-                                                                              c5 = 3;
-                                                                              const obj3 = { value, done: true };
-                                                                              return obj3;
-                                                                            } else {
-                                                                              let closure_3 = tmp2;
-                                                                              let closure_2 = tmp;
-                                                                              closure_0 = undefined;
-                                                                              content_security_policy = undefined;
-                                                                              items = undefined;
-                                                                              const obj6 = closure_0(onActivityCrash[27]);
-                                                                              const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(applicationId);
-                                                                              const tmp29 = closure_0;
-                                                                              closure_0 = nonTestModeUrlForApplication;
-                                                                              const tmp30 = onActivityCrash;
-                                                                              const tmp31 = applicationId;
-                                                                              if (nonTestModeUrlForApplication == null) {
-                                                                                const _HermesInternal = HermesInternal;
-                                                                                let str = ".discordsays.com";
-                                                                                closure_0 = "https://" + tmp31 + ".discordsays.com";
-                                                                              }
-                                                                              const HTTP = tmp29(tmp30[28]).HTTP;
-                                                                              const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
-                                                                              const _HermesInternal2 = HermesInternal;
-                                                                              const get = HTTP.get;
-                                                                              c4 = 1;
-                                                                              c5 = 1;
-                                                                              const obj5 = { value: get(obj4), done: false };
-                                                                              return obj5;
-                                                                            }
-                                                                          } else if (arg0 === 1) {
-                                                                            c5 = 3;
-                                                                            throw value;
-                                                                          } else if (arg0 === 2) {
-                                                                            c5 = 3;
-                                                                            const obj = { value, done: true };
-                                                                            return obj;
-                                                                          } else {
-                                                                            content_security_policy = value.headers["content-security-policy"];
-                                                                            items = ["about:blank", "file://*", closure_0];
-                                                                            let closure_1 = 3;
-                                                                            closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
-                                                                            closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
-                                                                            closure_2_26(items.map((item) => {
-                                                                              const str = closure_1_1(closure_1_3[29])(item);
-                                                                              return "^" + str.replace(/\\\*/g, ".*");
-                                                                            }));
-                                                                            closure_2_24(true);
-                                                                            c5 = 3;
-                                                                            return { value: "IconComponent", done: null };
-                                                                          }
-                                                                        } catch (tmp10) {
-                                                                          c5 = 3;
-                                                                          throw tmp10;
-                                                                        }
-                                                                      }
-                                                                    });
-                                                                    tmp3 = (function fetchAndParseCSP() {
-                                                                      return closure_0(...arguments);
-                                                                    })();
-                                                                  }
-                                                                  return;
-                                                                }
-                                                              }
-                                                            }
-                                                            cResult[65] = undefined;
-                                                            cResult[66] = tmp17;
-                                                            cResult[67] = isPipOrGridMode;
-                                                            if (safeAreasConfig != null) {
-                                                              class Le {
-                                                                constructor() {
-                                                                  tmp = hadInvalidUrlError;
-                                                                  if (tmp) {
-                                                                    closure_0 = ["'self'"];
-                                                                    parseCsp = function parseCsp(arg0, str) {
-                                                                      const match = str.match(arg0);
-                                                                      if (null !== match) {
-                                                                        if (match.length >= 2) {
-                                                                          str = match[1];
-                                                                          const parts = str.split(" ");
-                                                                          const found = parts.filter((item) => !closure_1_0.includes(item));
-                                                                        }
-                                                                        return [];
-                                                                      }
-                                                                    };
-                                                                    closure_0 = undefined;
-                                                                    tmp2 = onLoadError;
-                                                                    closure_0 = onLoadError(function*(arg0, value) {
-                                                                      if (c5 === 2) {
-                                                                        c5 = 3;
-                                                                        throw new TypeError("Generator functions may not be called on executing generators");
-                                                                      } else if (tmp5 === 3) {
-                                                                        if (arg0 === 1) {
-                                                                          throw value;
-                                                                        } else if (arg0 === 2) {
-                                                                          const obj2 = { value, done: true };
-                                                                          return obj2;
-                                                                        } else {
-                                                                          return { value: "IconComponent", done: null };
-                                                                        }
-                                                                      } else {
-                                                                        try {
-                                                                          let items;
-                                                                          c5 = 2;
-                                                                          if (0 === c4) {
-                                                                            if (arg0 === 1) {
-                                                                              c5 = 3;
-                                                                              throw value;
-                                                                            } else if (arg0 === 2) {
-                                                                              c5 = 3;
-                                                                              const obj3 = { value, done: true };
-                                                                              return obj3;
-                                                                            } else {
-                                                                              let closure_3 = tmp2;
-                                                                              let closure_2 = tmp;
-                                                                              closure_0 = undefined;
-                                                                              content_security_policy = undefined;
-                                                                              items = undefined;
-                                                                              const obj6 = closure_0(onActivityCrash[27]);
-                                                                              const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(applicationId);
-                                                                              const tmp29 = closure_0;
-                                                                              closure_0 = nonTestModeUrlForApplication;
-                                                                              const tmp30 = onActivityCrash;
-                                                                              const tmp31 = applicationId;
-                                                                              if (nonTestModeUrlForApplication == null) {
-                                                                                const _HermesInternal = HermesInternal;
-                                                                                let str = ".discordsays.com";
-                                                                                closure_0 = "https://" + tmp31 + ".discordsays.com";
-                                                                              }
-                                                                              const HTTP = tmp29(tmp30[28]).HTTP;
-                                                                              const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
-                                                                              const _HermesInternal2 = HermesInternal;
-                                                                              const get = HTTP.get;
-                                                                              c4 = 1;
-                                                                              c5 = 1;
-                                                                              const obj5 = { value: get(obj4), done: false };
-                                                                              return obj5;
-                                                                            }
-                                                                          } else if (arg0 === 1) {
-                                                                            c5 = 3;
-                                                                            throw value;
-                                                                          } else if (arg0 === 2) {
-                                                                            c5 = 3;
-                                                                            const obj = { value, done: true };
-                                                                            return obj;
-                                                                          } else {
-                                                                            content_security_policy = value.headers["content-security-policy"];
-                                                                            items = ["about:blank", "file://*", closure_0];
-                                                                            let closure_1 = 3;
-                                                                            closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
-                                                                            closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
-                                                                            closure_2_26(items.map((item) => {
-                                                                              const str = closure_1_1(closure_1_3[29])(item);
-                                                                              return "^" + str.replace(/\\\*/g, ".*");
-                                                                            }));
-                                                                            closure_2_24(true);
-                                                                            c5 = 3;
-                                                                            return { value: "IconComponent", done: null };
-                                                                          }
-                                                                        } catch (tmp10) {
-                                                                          c5 = 3;
-                                                                          throw tmp10;
-                                                                        }
-                                                                      }
-                                                                    });
-                                                                    tmp3 = (function fetchAndParseCSP() {
-                                                                      return closure_0(...arguments);
-                                                                    })();
-                                                                  }
-                                                                  return;
-                                                                }
-                                                              }
-                                                            }
-                                                            cResult[68] = undefined;
-                                                            if (safeAreasConfig != null) {
-                                                              class Le {
-                                                                constructor() {
-                                                                  tmp = hadInvalidUrlError;
-                                                                  if (tmp) {
-                                                                    closure_0 = ["'self'"];
-                                                                    parseCsp = function parseCsp(arg0, str) {
-                                                                      const match = str.match(arg0);
-                                                                      if (null !== match) {
-                                                                        if (match.length >= 2) {
-                                                                          str = match[1];
-                                                                          const parts = str.split(" ");
-                                                                          const found = parts.filter((item) => !closure_1_0.includes(item));
-                                                                        }
-                                                                        return [];
-                                                                      }
-                                                                    };
-                                                                    closure_0 = undefined;
-                                                                    tmp2 = onLoadError;
-                                                                    closure_0 = onLoadError(function*(arg0, value) {
-                                                                      if (c5 === 2) {
-                                                                        c5 = 3;
-                                                                        throw new TypeError("Generator functions may not be called on executing generators");
-                                                                      } else if (tmp5 === 3) {
-                                                                        if (arg0 === 1) {
-                                                                          throw value;
-                                                                        } else if (arg0 === 2) {
-                                                                          const obj2 = { value, done: true };
-                                                                          return obj2;
-                                                                        } else {
-                                                                          return { value: "IconComponent", done: null };
-                                                                        }
-                                                                      } else {
-                                                                        try {
-                                                                          let items;
-                                                                          c5 = 2;
-                                                                          if (0 === c4) {
-                                                                            if (arg0 === 1) {
-                                                                              c5 = 3;
-                                                                              throw value;
-                                                                            } else if (arg0 === 2) {
-                                                                              c5 = 3;
-                                                                              const obj3 = { value, done: true };
-                                                                              return obj3;
-                                                                            } else {
-                                                                              let closure_3 = tmp2;
-                                                                              let closure_2 = tmp;
-                                                                              closure_0 = undefined;
-                                                                              content_security_policy = undefined;
-                                                                              items = undefined;
-                                                                              const obj6 = closure_0(onActivityCrash[27]);
-                                                                              const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(applicationId);
-                                                                              const tmp29 = closure_0;
-                                                                              closure_0 = nonTestModeUrlForApplication;
-                                                                              const tmp30 = onActivityCrash;
-                                                                              const tmp31 = applicationId;
-                                                                              if (nonTestModeUrlForApplication == null) {
-                                                                                const _HermesInternal = HermesInternal;
-                                                                                let str = ".discordsays.com";
-                                                                                closure_0 = "https://" + tmp31 + ".discordsays.com";
-                                                                              }
-                                                                              const HTTP = tmp29(tmp30[28]).HTTP;
-                                                                              const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
-                                                                              const _HermesInternal2 = HermesInternal;
-                                                                              const get = HTTP.get;
-                                                                              c4 = 1;
-                                                                              c5 = 1;
-                                                                              const obj5 = { value: get(obj4), done: false };
-                                                                              return obj5;
-                                                                            }
-                                                                          } else if (arg0 === 1) {
-                                                                            c5 = 3;
-                                                                            throw value;
-                                                                          } else if (arg0 === 2) {
-                                                                            c5 = 3;
-                                                                            const obj = { value, done: true };
-                                                                            return obj;
-                                                                          } else {
-                                                                            content_security_policy = value.headers["content-security-policy"];
-                                                                            items = ["about:blank", "file://*", closure_0];
-                                                                            let closure_1 = 3;
-                                                                            closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
-                                                                            closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
-                                                                            closure_2_26(items.map((item) => {
-                                                                              const str = closure_1_1(closure_1_3[29])(item);
-                                                                              return "^" + str.replace(/\\\*/g, ".*");
-                                                                            }));
-                                                                            closure_2_24(true);
-                                                                            c5 = 3;
-                                                                            return { value: "IconComponent", done: null };
-                                                                          }
-                                                                        } catch (tmp10) {
-                                                                          c5 = 3;
-                                                                          throw tmp10;
-                                                                        }
-                                                                      }
-                                                                    });
-                                                                    tmp3 = (function fetchAndParseCSP() {
-                                                                      return closure_0(...arguments);
-                                                                    })();
-                                                                  }
-                                                                  return;
-                                                                }
-                                                              }
-                                                            }
-                                                            cResult[69] = undefined;
-                                                            if (safeAreasConfig != null) {
-                                                              class Le {
-                                                                constructor() {
-                                                                  tmp = hadInvalidUrlError;
-                                                                  if (tmp) {
-                                                                    closure_0 = ["'self'"];
-                                                                    parseCsp = function parseCsp(arg0, str) {
-                                                                      const match = str.match(arg0);
-                                                                      if (null !== match) {
-                                                                        if (match.length >= 2) {
-                                                                          str = match[1];
-                                                                          const parts = str.split(" ");
-                                                                          const found = parts.filter((item) => !closure_1_0.includes(item));
-                                                                        }
-                                                                        return [];
-                                                                      }
-                                                                    };
-                                                                    closure_0 = undefined;
-                                                                    tmp2 = onLoadError;
-                                                                    closure_0 = onLoadError(function*(arg0, value) {
-                                                                      if (c5 === 2) {
-                                                                        c5 = 3;
-                                                                        throw new TypeError("Generator functions may not be called on executing generators");
-                                                                      } else if (tmp5 === 3) {
-                                                                        if (arg0 === 1) {
-                                                                          throw value;
-                                                                        } else if (arg0 === 2) {
-                                                                          const obj2 = { value, done: true };
-                                                                          return obj2;
-                                                                        } else {
-                                                                          return { value: "IconComponent", done: null };
-                                                                        }
-                                                                      } else {
-                                                                        try {
-                                                                          let items;
-                                                                          c5 = 2;
-                                                                          if (0 === c4) {
-                                                                            if (arg0 === 1) {
-                                                                              c5 = 3;
-                                                                              throw value;
-                                                                            } else if (arg0 === 2) {
-                                                                              c5 = 3;
-                                                                              const obj3 = { value, done: true };
-                                                                              return obj3;
-                                                                            } else {
-                                                                              let closure_3 = tmp2;
-                                                                              let closure_2 = tmp;
-                                                                              closure_0 = undefined;
-                                                                              content_security_policy = undefined;
-                                                                              items = undefined;
-                                                                              const obj6 = closure_0(onActivityCrash[27]);
-                                                                              const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(applicationId);
-                                                                              const tmp29 = closure_0;
-                                                                              closure_0 = nonTestModeUrlForApplication;
-                                                                              const tmp30 = onActivityCrash;
-                                                                              const tmp31 = applicationId;
-                                                                              if (nonTestModeUrlForApplication == null) {
-                                                                                const _HermesInternal = HermesInternal;
-                                                                                let str = ".discordsays.com";
-                                                                                closure_0 = "https://" + tmp31 + ".discordsays.com";
-                                                                              }
-                                                                              const HTTP = tmp29(tmp30[28]).HTTP;
-                                                                              const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
-                                                                              const _HermesInternal2 = HermesInternal;
-                                                                              const get = HTTP.get;
-                                                                              c4 = 1;
-                                                                              c5 = 1;
-                                                                              const obj5 = { value: get(obj4), done: false };
-                                                                              return obj5;
-                                                                            }
-                                                                          } else if (arg0 === 1) {
-                                                                            c5 = 3;
-                                                                            throw value;
-                                                                          } else if (arg0 === 2) {
-                                                                            c5 = 3;
-                                                                            const obj = { value, done: true };
-                                                                            return obj;
-                                                                          } else {
-                                                                            content_security_policy = value.headers["content-security-policy"];
-                                                                            items = ["about:blank", "file://*", closure_0];
-                                                                            let closure_1 = 3;
-                                                                            closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
-                                                                            closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
-                                                                            closure_2_26(items.map((item) => {
-                                                                              const str = closure_1_1(closure_1_3[29])(item);
-                                                                              return "^" + str.replace(/\\\*/g, ".*");
-                                                                            }));
-                                                                            closure_2_24(true);
-                                                                            c5 = 3;
-                                                                            return { value: "IconComponent", done: null };
-                                                                          }
-                                                                        } catch (tmp10) {
-                                                                          c5 = 3;
-                                                                          throw tmp10;
-                                                                        }
-                                                                      }
-                                                                    });
-                                                                    tmp3 = (function fetchAndParseCSP() {
-                                                                      return closure_0(...arguments);
-                                                                    })();
-                                                                  }
-                                                                  return;
-                                                                }
-                                                              }
-                                                            }
-                                                            cResult[70] = undefined;
-                                                            if (safeAreasConfig != null) {
-                                                              class Le {
-                                                                constructor() {
-                                                                  tmp = hadInvalidUrlError;
-                                                                  if (tmp) {
-                                                                    closure_0 = ["'self'"];
-                                                                    parseCsp = function parseCsp(arg0, str) {
-                                                                      const match = str.match(arg0);
-                                                                      if (null !== match) {
-                                                                        if (match.length >= 2) {
-                                                                          str = match[1];
-                                                                          const parts = str.split(" ");
-                                                                          const found = parts.filter((item) => !closure_1_0.includes(item));
-                                                                        }
-                                                                        return [];
-                                                                      }
-                                                                    };
-                                                                    closure_0 = undefined;
-                                                                    tmp2 = onLoadError;
-                                                                    closure_0 = onLoadError(function*(arg0, value) {
-                                                                      if (c5 === 2) {
-                                                                        c5 = 3;
-                                                                        throw new TypeError("Generator functions may not be called on executing generators");
-                                                                      } else if (tmp5 === 3) {
-                                                                        if (arg0 === 1) {
-                                                                          throw value;
-                                                                        } else if (arg0 === 2) {
-                                                                          const obj2 = { value, done: true };
-                                                                          return obj2;
-                                                                        } else {
-                                                                          return { value: "IconComponent", done: null };
-                                                                        }
-                                                                      } else {
-                                                                        try {
-                                                                          let items;
-                                                                          c5 = 2;
-                                                                          if (0 === c4) {
-                                                                            if (arg0 === 1) {
-                                                                              c5 = 3;
-                                                                              throw value;
-                                                                            } else if (arg0 === 2) {
-                                                                              c5 = 3;
-                                                                              const obj3 = { value, done: true };
-                                                                              return obj3;
-                                                                            } else {
-                                                                              let closure_3 = tmp2;
-                                                                              let closure_2 = tmp;
-                                                                              closure_0 = undefined;
-                                                                              content_security_policy = undefined;
-                                                                              items = undefined;
-                                                                              const obj6 = closure_0(onActivityCrash[27]);
-                                                                              const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(applicationId);
-                                                                              const tmp29 = closure_0;
-                                                                              closure_0 = nonTestModeUrlForApplication;
-                                                                              const tmp30 = onActivityCrash;
-                                                                              const tmp31 = applicationId;
-                                                                              if (nonTestModeUrlForApplication == null) {
-                                                                                const _HermesInternal = HermesInternal;
-                                                                                let str = ".discordsays.com";
-                                                                                closure_0 = "https://" + tmp31 + ".discordsays.com";
-                                                                              }
-                                                                              const HTTP = tmp29(tmp30[28]).HTTP;
-                                                                              const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
-                                                                              const _HermesInternal2 = HermesInternal;
-                                                                              const get = HTTP.get;
-                                                                              c4 = 1;
-                                                                              c5 = 1;
-                                                                              const obj5 = { value: get(obj4), done: false };
-                                                                              return obj5;
-                                                                            }
-                                                                          } else if (arg0 === 1) {
-                                                                            c5 = 3;
-                                                                            throw value;
-                                                                          } else if (arg0 === 2) {
-                                                                            c5 = 3;
-                                                                            const obj = { value, done: true };
-                                                                            return obj;
-                                                                          } else {
-                                                                            content_security_policy = value.headers["content-security-policy"];
-                                                                            items = ["about:blank", "file://*", closure_0];
-                                                                            let closure_1 = 3;
-                                                                            closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
-                                                                            closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
-                                                                            closure_2_26(items.map((item) => {
-                                                                              const str = closure_1_1(closure_1_3[29])(item);
-                                                                              return "^" + str.replace(/\\\*/g, ".*");
-                                                                            }));
-                                                                            closure_2_24(true);
-                                                                            c5 = 3;
-                                                                            return { value: "IconComponent", done: null };
-                                                                          }
-                                                                        } catch (tmp10) {
-                                                                          c5 = 3;
-                                                                          throw tmp10;
-                                                                        }
-                                                                      }
-                                                                    });
-                                                                    tmp3 = (function fetchAndParseCSP() {
-                                                                      return closure_0(...arguments);
-                                                                    })();
-                                                                  }
-                                                                  return;
-                                                                }
+                                                              if (combined1 == null) {
+                                                                combined1 = null;
                                                               }
                                                             }
                                                             class Ne {
-                                                              constructor() {
-                                                                function tryInjectJavaScript() {
-                                                                  return closure_0(...arguments);
-                                                                }
-                                                                const tmp = closure_27;
-                                                                if (tmp) {
-                                                                  const tmp3 = null;
-                                                                  if (null != closure_16) {
-                                                                    const tmp4 = onLoadError;
-                                                                    let closure_0 = onLoadError(function*(arg0, value) {
-                                                                      let bottom;
-                                                                      let obj5;
-                                                                      let right;
-                                                                      let top;
-                                                                      if (c9 === 2) {
-                                                                        c9 = 3;
-                                                                        throw new TypeError("Generator functions may not be called on executing generators");
-                                                                      } else if (tmp3 === 3) {
-                                                                        if (arg0 === 1) {
-                                                                          throw value;
-                                                                        } else if (arg0 === 2) {
-                                                                          const obj2 = { value, done: true };
-                                                                          return obj2;
-                                                                        } else {
-                                                                          return { value: "IconComponent", done: null };
-                                                                        }
-                                                                      } else {
-                                                                        try {
-                                                                          c9 = 2;
-                                                                          if (0 === c8) {
-                                                                            if (arg0 === 1) {
-                                                                              c9 = 3;
-                                                                              throw value;
-                                                                            } else if (arg0 === 2) {
-                                                                              c9 = 3;
-                                                                              const obj3 = { value, done: true };
-                                                                              return obj3;
-                                                                            } else {
-                                                                              let closure_5 = tmp;
-                                                                              let closure_4 = tmp4;
-                                                                              closure_0 = undefined;
-                                                                              const obj8 = closure_1_16;
-                                                                              if (null != closure_1_16) {
-                                                                                if (null != closure_1_29) {
-                                                                                  let rect;
-                                                                                  const tmp14 = c7;
-                                                                                  if (tmp14) {
-                                                                                    rect = { top: 0, bottom: 0, left: 0, right: 0 };
-                                                                                  } else {
-                                                                                    rect = closure_1_18;
-                                                                                  }
-                                                                                  const rect2 = c8;
-                                                                                  let left;
-                                                                                  if (c8 != null) {
-                                                                                    left = rect2.left;
-                                                                                  }
-                                                                                  let left1;
-                                                                                  if (rect != null) {
-                                                                                    left1 = rect.left;
-                                                                                  }
-                                                                                  let c0 = left1;
-                                                                                  if (left1 == null) {
-                                                                                    c0 = 0;
-                                                                                  }
-                                                                                  const rect1 = { left: tmp10(left, c0), right: tmp10(right, c1), top: tmp10(top, c2), bottom: tmp10(bottom, c3) };
-                                                                                  right = undefined;
-                                                                                  if (rect2 != null) {
-                                                                                    right = rect2.right;
-                                                                                  }
-                                                                                  let right1;
-                                                                                  if (rect != null) {
-                                                                                    right1 = rect.right;
-                                                                                  }
-                                                                                  c1 = right1;
-                                                                                  if (right1 == null) {
-                                                                                    c1 = 0;
-                                                                                  }
-                                                                                  top = undefined;
-                                                                                  if (rect2 != null) {
-                                                                                    top = rect2.top;
-                                                                                  }
-                                                                                  let top1;
-                                                                                  if (rect != null) {
-                                                                                    top1 = rect.top;
-                                                                                  }
-                                                                                  c2 = top1;
-                                                                                  if (top1 == null) {
-                                                                                    c2 = 0;
-                                                                                  }
-                                                                                  bottom = undefined;
-                                                                                  if (rect2 != null) {
-                                                                                    bottom = rect2.bottom;
-                                                                                  }
-                                                                                  let bottom1;
-                                                                                  if (rect != null) {
-                                                                                    bottom1 = rect.bottom;
-                                                                                  }
-                                                                                  c3 = bottom1;
-                                                                                  if (bottom1 == null) {
-                                                                                    c3 = 0;
-                                                                                  }
-                                                                                  const obj4 = { type: "safeAreaUpdateEvent", data: obj5 };
-                                                                                  obj5 = { insets: rect1 };
-                                                                                  const tmp30 = shellBridgeSecret(onActivityCrash[31])(obj4, tmp13);
-                                                                                  closure_0 = tmp30;
-                                                                                  c7 = 1;
-                                                                                  c8 = 2;
-                                                                                  c9 = 1;
-                                                                                  const obj6 = { value: obj8.injectJavaScript(tmp30), done: false };
-                                                                                  return obj6;
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          } else if (1 === c8) {
-                                                                            c7 = 0;
-                                                                            if (null != ref.current) {
-                                                                              const current = ref.current;
-                                                                              current.injectJavaScript(closure_0);
-                                                                            }
-                                                                          } else if (arg0 === 1) {
-                                                                            c9 = 3;
-                                                                            throw value;
-                                                                          } else if (arg0 === 2) {
-                                                                            c7 = 0;
-                                                                            c9 = 3;
-                                                                            const obj = { value, done: true };
-                                                                            return obj;
-                                                                          } else {
-                                                                            c7 = 0;
-                                                                          }
-                                                                          c9 = 3;
-                                                                          return { value: "IconComponent", done: null };
-                                                                        } catch (tmp31) {
-                                                                          let closure_6 = tmp31;
-                                                                          if (0 === c7) {
-                                                                            c9 = 3;
-                                                                            throw tmp31;
-                                                                          } else {
-                                                                            c8 = 1;
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    });
-                                                                    tryInjectJavaScript();
+                                                              constructor(mainDocumentURL) {
+                                                                mainDocumentURL = mainDocumentURL.mainDocumentURL;
+                                                                if (null != combined1) {
+                                                                  if (null != mainDocumentURL) {
+                                                                    if (mainDocumentURL !== combined1) {
+                                                                      Linking.openURL(mainDocumentURL.url);
+                                                                      return false;
+                                                                    }
                                                                   }
                                                                 }
-                                                              }
-                                                            }
-                                                            cResult[71] = undefined;
-                                                            cResult[72] = null != tmp50 && null != tmp9 && null != tmp14;
-                                                            cResult[73] = tmp11;
-                                                            cResult[74] = Ne;
-                                                          }
-                                                          function $e(mainDocumentURL) {
-                                                            mainDocumentURL = mainDocumentURL.mainDocumentURL;
-                                                            if (null != combined1) {
-                                                              if (null != mainDocumentURL) {
-                                                                if (mainDocumentURL !== combined1) {
-                                                                  Linking.openURL(mainDocumentURL.url);
-                                                                  return false;
-                                                                }
-                                                              }
-                                                            }
-                                                            const iter = first1[Symbol.iterator]();
-                                                            const nextResult = iter.next();
-                                                            while (iter !== undefined) {
-                                                              let _RegExp = RegExp;
-                                                              let self = this;
-                                                              let self2 = this;
-                                                              let regExp = new RegExp(nextResult);
-                                                              if (regExp.test(mainDocumentURL.url)) {
-                                                                iter.return();
-                                                                let flag = true;
-                                                                return true;
-                                                              }
-                                                            }
-                                                            const toURLSafe = URLUtilsDefault.toURLSafe;
-                                                            URLUtilsDefault;
-                                                            let str = DeveloperActivityShelfStore.getActivityUrlOverride();
-                                                            if (str == null) {
-                                                              str = "";
-                                                            }
-                                                            const toURLSafeResult = toURLSafe(str);
-                                                            const tmp6Result = URLUtilsDefault;
-                                                            const toURLSafeResult1 = tmp6Result.toURLSafe(mainDocumentURL.url);
-                                                            return null != toURLSafeResult && null != toURLSafeResult1 && toURLSafeResult.origin + toURLSafeResult.pathname === toURLSafeResult1.origin + toURLSafeResult1.pathname;
-                                                          }
-                                                          cResult[62] = first1;
-                                                          cResult[63] = tmp50;
-                                                          cResult[64] = $e;
-                                                        }
-                                                      }
-                                                      combined1 = null;
-                                                      if (null != tmp9) {
-                                                        class Le {
-                                                          constructor() {
-                                                            tmp = hadInvalidUrlError;
-                                                            if (tmp) {
-                                                              closure_0 = ["'self'"];
-                                                              parseCsp = function parseCsp(arg0, str) {
-                                                                const match = str.match(arg0);
-                                                                if (null !== match) {
-                                                                  if (match.length >= 2) {
-                                                                    str = match[1];
-                                                                    const parts = str.split(" ");
-                                                                    const found = parts.filter((item) => !closure_1_0.includes(item));
-                                                                  }
-                                                                  return [];
-                                                                }
-                                                              };
-                                                              closure_0 = undefined;
-                                                              tmp2 = onLoadError;
-                                                              closure_0 = onLoadError(function*(arg0, value) {
-                                                                if (c5 === 2) {
-                                                                  c5 = 3;
-                                                                  throw new TypeError("Generator functions may not be called on executing generators");
-                                                                } else if (tmp5 === 3) {
-                                                                  if (arg0 === 1) {
-                                                                    throw value;
-                                                                  } else if (arg0 === 2) {
-                                                                    const obj2 = { value, done: true };
-                                                                    return obj2;
-                                                                  } else {
-                                                                    return { value: "IconComponent", done: null };
+                                                                if (null != framePolicy) {
+                                                                  const obj2 = isAllowedFrameNavigation;
+                                                                  if (obj2.isAllowedFrameNavigation(mainDocumentURL.url, framePolicy.routerOrigin, framePolicy.policy)) {
+                                                                    return true;
                                                                   }
                                                                 } else {
-                                                                  try {
-                                                                    let items;
-                                                                    c5 = 2;
-                                                                    if (0 === c4) {
-                                                                      if (arg0 === 1) {
-                                                                        c5 = 3;
-                                                                        throw value;
-                                                                      } else if (arg0 === 2) {
-                                                                        c5 = 3;
-                                                                        const obj3 = { value, done: true };
-                                                                        return obj3;
-                                                                      } else {
-                                                                        let closure_3 = tmp2;
-                                                                        let closure_2 = tmp;
-                                                                        closure_0 = undefined;
-                                                                        content_security_policy = undefined;
-                                                                        items = undefined;
-                                                                        const obj6 = closure_0(onActivityCrash[27]);
-                                                                        const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(applicationId);
-                                                                        const tmp29 = closure_0;
-                                                                        closure_0 = nonTestModeUrlForApplication;
-                                                                        const tmp30 = onActivityCrash;
-                                                                        const tmp31 = applicationId;
-                                                                        if (nonTestModeUrlForApplication == null) {
-                                                                          const _HermesInternal = HermesInternal;
-                                                                          let str = ".discordsays.com";
-                                                                          closure_0 = "https://" + tmp31 + ".discordsays.com";
-                                                                        }
-                                                                        const HTTP = tmp29(tmp30[28]).HTTP;
-                                                                        const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
-                                                                        const _HermesInternal2 = HermesInternal;
-                                                                        const get = HTTP.get;
-                                                                        c4 = 1;
-                                                                        c5 = 1;
-                                                                        const obj5 = { value: get(obj4), done: false };
-                                                                        return obj5;
-                                                                      }
-                                                                    } else if (arg0 === 1) {
-                                                                      c5 = 3;
-                                                                      throw value;
-                                                                    } else if (arg0 === 2) {
-                                                                      c5 = 3;
-                                                                      const obj = { value, done: true };
-                                                                      return obj;
-                                                                    } else {
-                                                                      content_security_policy = value.headers["content-security-policy"];
-                                                                      items = ["about:blank", "file://*", closure_0];
-                                                                      let closure_1 = 3;
-                                                                      closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
-                                                                      closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
-                                                                      closure_2_26(items.map((item) => {
-                                                                        const str = closure_1_1(closure_1_3[29])(item);
-                                                                        return "^" + str.replace(/\\\*/g, ".*");
-                                                                      }));
-                                                                      closure_2_24(true);
-                                                                      c5 = 3;
-                                                                      return { value: "IconComponent", done: null };
+                                                                  const iter = first1[Symbol.iterator]();
+                                                                  const nextResult = iter.next();
+                                                                  while (iter !== undefined) {
+                                                                    let _RegExp = RegExp;
+                                                                    let self = this;
+                                                                    let self2 = this;
+                                                                    let regExp = new RegExp(nextResult);
+                                                                    if (regExp.test(mainDocumentURL.url)) {
+                                                                      iter.return();
+                                                                      let flag = true;
+                                                                      return true;
                                                                     }
-                                                                  } catch (tmp10) {
-                                                                    c5 = 3;
-                                                                    throw tmp10;
                                                                   }
                                                                 }
-                                                              });
-                                                              tmp3 = (function fetchAndParseCSP() {
-                                                                return closure_0(...arguments);
-                                                              })();
+                                                                const toURLSafe = URLUtilsDefault.toURLSafe;
+                                                                URLUtilsDefault;
+                                                                let str = DeveloperActivityShelfStore.getActivityUrlOverride();
+                                                                if (str == null) {
+                                                                  str = "";
+                                                                }
+                                                                const toURLSafeResult = toURLSafe(str);
+                                                                const tmp13Result = URLUtilsDefault;
+                                                                const toURLSafeResult1 = tmp13Result.toURLSafe(mainDocumentURL.url);
+                                                                return null != toURLSafeResult && null != toURLSafeResult1 && toURLSafeResult.origin + toURLSafeResult.pathname === toURLSafeResult1.origin + toURLSafeResult1.pathname;
+                                                              }
                                                             }
-                                                            return;
                                                           }
-                                                        }
-                                                        if (tmp52) {
-                                                          class Le {
+                                                          class Ee {
                                                             constructor() {
-                                                              tmp = hadInvalidUrlError;
-                                                              if (tmp) {
-                                                                closure_0 = ["'self'"];
-                                                                parseCsp = function parseCsp(arg0, str) {
-                                                                  const match = str.match(arg0);
-                                                                  if (null !== match) {
-                                                                    if (match.length >= 2) {
-                                                                      str = match[1];
-                                                                      const parts = str.split(" ");
-                                                                      const found = parts.filter((item) => !closure_1_0.includes(item));
-                                                                    }
-                                                                    return [];
-                                                                  }
-                                                                };
-                                                                closure_0 = undefined;
-                                                                tmp2 = onLoadError;
-                                                                closure_0 = onLoadError(function*(arg0, value) {
-                                                                  if (c5 === 2) {
-                                                                    c5 = 3;
-                                                                    throw new TypeError("Generator functions may not be called on executing generators");
-                                                                  } else if (tmp5 === 3) {
-                                                                    if (arg0 === 1) {
-                                                                      throw value;
-                                                                    } else if (arg0 === 2) {
-                                                                      const obj2 = { value, done: true };
-                                                                      return obj2;
-                                                                    } else {
-                                                                      return { value: "IconComponent", done: null };
-                                                                    }
-                                                                  } else {
-                                                                    try {
-                                                                      let items;
-                                                                      c5 = 2;
-                                                                      if (0 === c4) {
-                                                                        if (arg0 === 1) {
-                                                                          c5 = 3;
-                                                                          throw value;
-                                                                        } else if (arg0 === 2) {
-                                                                          c5 = 3;
-                                                                          const obj3 = { value, done: true };
-                                                                          return obj3;
-                                                                        } else {
-                                                                          let closure_3 = tmp2;
-                                                                          let closure_2 = tmp;
-                                                                          closure_0 = undefined;
-                                                                          content_security_policy = undefined;
-                                                                          items = undefined;
-                                                                          const obj6 = closure_0(onActivityCrash[27]);
-                                                                          const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(applicationId);
-                                                                          const tmp29 = closure_0;
-                                                                          closure_0 = nonTestModeUrlForApplication;
-                                                                          const tmp30 = onActivityCrash;
-                                                                          const tmp31 = applicationId;
-                                                                          if (nonTestModeUrlForApplication == null) {
-                                                                            const _HermesInternal = HermesInternal;
-                                                                            let str = ".discordsays.com";
-                                                                            closure_0 = "https://" + tmp31 + ".discordsays.com";
-                                                                          }
-                                                                          const HTTP = tmp29(tmp30[28]).HTTP;
-                                                                          const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
-                                                                          const _HermesInternal2 = HermesInternal;
-                                                                          const get = HTTP.get;
-                                                                          c4 = 1;
-                                                                          c5 = 1;
-                                                                          const obj5 = { value: get(obj4), done: false };
-                                                                          return obj5;
-                                                                        }
-                                                                      } else if (arg0 === 1) {
-                                                                        c5 = 3;
-                                                                        throw value;
-                                                                      } else if (arg0 === 2) {
-                                                                        c5 = 3;
-                                                                        const obj = { value, done: true };
-                                                                        return obj;
-                                                                      } else {
-                                                                        content_security_policy = value.headers["content-security-policy"];
-                                                                        items = ["about:blank", "file://*", closure_0];
-                                                                        let closure_1 = 3;
-                                                                        closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
-                                                                        closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
-                                                                        closure_2_26(items.map((item) => {
-                                                                          const str = closure_1_1(closure_1_3[29])(item);
-                                                                          return "^" + str.replace(/\\\*/g, ".*");
-                                                                        }));
-                                                                        closure_2_24(true);
-                                                                        c5 = 3;
-                                                                        return { value: "IconComponent", done: null };
-                                                                      }
-                                                                    } catch (tmp10) {
-                                                                      c5 = 3;
-                                                                      throw tmp10;
-                                                                    }
-                                                                  }
-                                                                });
-                                                                tmp3 = (function fetchAndParseCSP() {
-                                                                  return closure_0(...arguments);
-                                                                })();
-                                                              }
-                                                              return;
-                                                            }
-                                                          }
-                                                          combined1 = "file://" + tmp14;
-                                                        } else {
-                                                          class Le {
-                                                            constructor() {
-                                                              tmp = hadInvalidUrlError;
-                                                              if (tmp) {
-                                                                closure_0 = ["'self'"];
-                                                                parseCsp = function parseCsp(arg0, str) {
-                                                                  const match = str.match(arg0);
-                                                                  if (null !== match) {
-                                                                    if (match.length >= 2) {
-                                                                      str = match[1];
-                                                                      const parts = str.split(" ");
-                                                                      const found = parts.filter((item) => !closure_1_0.includes(item));
-                                                                    }
-                                                                    return [];
-                                                                  }
-                                                                };
-                                                                closure_0 = undefined;
-                                                                tmp2 = onLoadError;
-                                                                closure_0 = onLoadError(function*(arg0, value) {
-                                                                  if (c5 === 2) {
-                                                                    c5 = 3;
-                                                                    throw new TypeError("Generator functions may not be called on executing generators");
-                                                                  } else if (tmp5 === 3) {
-                                                                    if (arg0 === 1) {
-                                                                      throw value;
-                                                                    } else if (arg0 === 2) {
-                                                                      const obj2 = { value, done: true };
-                                                                      return obj2;
-                                                                    } else {
-                                                                      return { value: "IconComponent", done: null };
-                                                                    }
-                                                                  } else {
-                                                                    try {
-                                                                      let items;
-                                                                      c5 = 2;
-                                                                      if (0 === c4) {
-                                                                        if (arg0 === 1) {
-                                                                          c5 = 3;
-                                                                          throw value;
-                                                                        } else if (arg0 === 2) {
-                                                                          c5 = 3;
-                                                                          const obj3 = { value, done: true };
-                                                                          return obj3;
-                                                                        } else {
-                                                                          let closure_3 = tmp2;
-                                                                          let closure_2 = tmp;
-                                                                          closure_0 = undefined;
-                                                                          content_security_policy = undefined;
-                                                                          items = undefined;
-                                                                          const obj6 = closure_0(onActivityCrash[27]);
-                                                                          const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(applicationId);
-                                                                          const tmp29 = closure_0;
-                                                                          closure_0 = nonTestModeUrlForApplication;
-                                                                          const tmp30 = onActivityCrash;
-                                                                          const tmp31 = applicationId;
-                                                                          if (nonTestModeUrlForApplication == null) {
-                                                                            const _HermesInternal = HermesInternal;
-                                                                            let str = ".discordsays.com";
-                                                                            closure_0 = "https://" + tmp31 + ".discordsays.com";
-                                                                          }
-                                                                          const HTTP = tmp29(tmp30[28]).HTTP;
-                                                                          const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
-                                                                          const _HermesInternal2 = HermesInternal;
-                                                                          const get = HTTP.get;
-                                                                          c4 = 1;
-                                                                          c5 = 1;
-                                                                          const obj5 = { value: get(obj4), done: false };
-                                                                          return obj5;
-                                                                        }
-                                                                      } else if (arg0 === 1) {
-                                                                        c5 = 3;
-                                                                        throw value;
-                                                                      } else if (arg0 === 2) {
-                                                                        c5 = 3;
-                                                                        const obj = { value, done: true };
-                                                                        return obj;
-                                                                      } else {
-                                                                        content_security_policy = value.headers["content-security-policy"];
-                                                                        items = ["about:blank", "file://*", closure_0];
-                                                                        let closure_1 = 3;
-                                                                        closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
-                                                                        closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
-                                                                        closure_2_26(items.map((item) => {
-                                                                          const str = closure_1_1(closure_1_3[29])(item);
-                                                                          return "^" + str.replace(/\\\*/g, ".*");
-                                                                        }));
-                                                                        closure_2_24(true);
-                                                                        c5 = 3;
-                                                                        return { value: "IconComponent", done: null };
-                                                                      }
-                                                                    } catch (tmp10) {
-                                                                      c5 = 3;
-                                                                      throw tmp10;
-                                                                    }
-                                                                  }
-                                                                });
-                                                                tmp3 = (function fetchAndParseCSP() {
-                                                                  return closure_0(...arguments);
-                                                                })();
-                                                              }
-                                                              return;
-                                                            }
-                                                          }
-                                                          if (tmp46 != null) {
-                                                            class Le {
-                                                              constructor() {
-                                                                tmp = hadInvalidUrlError;
-                                                                if (tmp) {
-                                                                  closure_0 = ["'self'"];
-                                                                  parseCsp = function parseCsp(arg0, str) {
-                                                                    const match = str.match(arg0);
-                                                                    if (null !== match) {
-                                                                      if (match.length >= 2) {
-                                                                        str = match[1];
-                                                                        const parts = str.split(" ");
-                                                                        const found = parts.filter((item) => !closure_1_0.includes(item));
-                                                                      }
-                                                                      return [];
-                                                                    }
-                                                                  };
-                                                                  closure_0 = undefined;
-                                                                  tmp2 = onLoadError;
-                                                                  closure_0 = onLoadError(function*(arg0, value) {
-                                                                    if (c5 === 2) {
-                                                                      c5 = 3;
-                                                                      throw new TypeError("Generator functions may not be called on executing generators");
-                                                                    } else if (tmp5 === 3) {
-                                                                      if (arg0 === 1) {
-                                                                        throw value;
-                                                                      } else if (arg0 === 2) {
-                                                                        const obj2 = { value, done: true };
-                                                                        return obj2;
-                                                                      } else {
-                                                                        return { value: "IconComponent", done: null };
-                                                                      }
-                                                                    } else {
-                                                                      try {
-                                                                        let items;
-                                                                        c5 = 2;
-                                                                        if (0 === c4) {
-                                                                          if (arg0 === 1) {
-                                                                            c5 = 3;
-                                                                            throw value;
-                                                                          } else if (arg0 === 2) {
-                                                                            c5 = 3;
-                                                                            const obj3 = { value, done: true };
-                                                                            return obj3;
-                                                                          } else {
-                                                                            let closure_3 = tmp2;
-                                                                            let closure_2 = tmp;
-                                                                            closure_0 = undefined;
-                                                                            content_security_policy = undefined;
-                                                                            items = undefined;
-                                                                            const obj6 = closure_0(onActivityCrash[27]);
-                                                                            const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(applicationId);
-                                                                            const tmp29 = closure_0;
-                                                                            closure_0 = nonTestModeUrlForApplication;
-                                                                            const tmp30 = onActivityCrash;
-                                                                            const tmp31 = applicationId;
-                                                                            if (nonTestModeUrlForApplication == null) {
-                                                                              const _HermesInternal = HermesInternal;
-                                                                              let str = ".discordsays.com";
-                                                                              closure_0 = "https://" + tmp31 + ".discordsays.com";
-                                                                            }
-                                                                            const HTTP = tmp29(tmp30[28]).HTTP;
-                                                                            const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
-                                                                            const _HermesInternal2 = HermesInternal;
-                                                                            const get = HTTP.get;
-                                                                            c4 = 1;
-                                                                            c5 = 1;
-                                                                            const obj5 = { value: get(obj4), done: false };
-                                                                            return obj5;
-                                                                          }
-                                                                        } else if (arg0 === 1) {
-                                                                          c5 = 3;
-                                                                          throw value;
-                                                                        } else if (arg0 === 2) {
-                                                                          c5 = 3;
-                                                                          const obj = { value, done: true };
-                                                                          return obj;
-                                                                        } else {
-                                                                          content_security_policy = value.headers["content-security-policy"];
-                                                                          items = ["about:blank", "file://*", closure_0];
-                                                                          let closure_1 = 3;
-                                                                          closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
-                                                                          closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
-                                                                          closure_2_26(items.map((item) => {
-                                                                            const str = closure_1_1(closure_1_3[29])(item);
-                                                                            return "^" + str.replace(/\\\*/g, ".*");
-                                                                          }));
-                                                                          closure_2_24(true);
-                                                                          c5 = 3;
-                                                                          return { value: "IconComponent", done: null };
-                                                                        }
-                                                                      } catch (tmp10) {
-                                                                        c5 = 3;
-                                                                        throw tmp10;
-                                                                      }
-                                                                    }
-                                                                  });
-                                                                  tmp3 = (function fetchAndParseCSP() {
-                                                                    return closure_0(...arguments);
-                                                                  })();
+                                                              let tmp10;
+                                                              try {
+                                                                const _URL = URL;
+                                                                const self = this;
+                                                                const self2 = this;
+                                                                const uRL = new URL(combined);
+                                                                tmp10(uRL);
+                                                              } catch (tmp7) {
+                                                                const tmp8 = stateFromStores;
+                                                                if (tmp8) {
+                                                                  tmp10 = setHasInvalidUrlError(true);
+                                                                } else {
+                                                                  throw tmp7;
                                                                 }
-                                                                return;
                                                               }
                                                             }
                                                           }
-                                                          if (combined1 == null) {
-                                                            class Le {
-                                                              constructor() {
-                                                                tmp = hadInvalidUrlError;
-                                                                if (tmp) {
-                                                                  closure_0 = ["'self'"];
-                                                                  parseCsp = function parseCsp(arg0, str) {
-                                                                    const match = str.match(arg0);
-                                                                    if (null !== match) {
-                                                                      if (match.length >= 2) {
-                                                                        str = match[1];
-                                                                        const parts = str.split(" ");
-                                                                        const found = parts.filter((item) => !closure_1_0.includes(item));
-                                                                      }
-                                                                      return [];
-                                                                    }
-                                                                  };
-                                                                  closure_0 = undefined;
-                                                                  tmp2 = onLoadError;
-                                                                  closure_0 = onLoadError(function*(arg0, value) {
-                                                                    if (c5 === 2) {
-                                                                      c5 = 3;
-                                                                      throw new TypeError("Generator functions may not be called on executing generators");
-                                                                    } else if (tmp5 === 3) {
-                                                                      if (arg0 === 1) {
-                                                                        throw value;
-                                                                      } else if (arg0 === 2) {
-                                                                        const obj2 = { value, done: true };
-                                                                        return obj2;
-                                                                      } else {
-                                                                        return { value: "IconComponent", done: null };
-                                                                      }
-                                                                    } else {
-                                                                      try {
-                                                                        let items;
-                                                                        c5 = 2;
-                                                                        if (0 === c4) {
-                                                                          if (arg0 === 1) {
-                                                                            c5 = 3;
-                                                                            throw value;
-                                                                          } else if (arg0 === 2) {
-                                                                            c5 = 3;
-                                                                            const obj3 = { value, done: true };
-                                                                            return obj3;
-                                                                          } else {
-                                                                            let closure_3 = tmp2;
-                                                                            let closure_2 = tmp;
-                                                                            closure_0 = undefined;
-                                                                            content_security_policy = undefined;
-                                                                            items = undefined;
-                                                                            const obj6 = closure_0(onActivityCrash[27]);
-                                                                            const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(applicationId);
-                                                                            const tmp29 = closure_0;
-                                                                            closure_0 = nonTestModeUrlForApplication;
-                                                                            const tmp30 = onActivityCrash;
-                                                                            const tmp31 = applicationId;
-                                                                            if (nonTestModeUrlForApplication == null) {
-                                                                              const _HermesInternal = HermesInternal;
-                                                                              let str = ".discordsays.com";
-                                                                              closure_0 = "https://" + tmp31 + ".discordsays.com";
-                                                                            }
-                                                                            const HTTP = tmp29(tmp30[28]).HTTP;
-                                                                            const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
-                                                                            const _HermesInternal2 = HermesInternal;
-                                                                            const get = HTTP.get;
-                                                                            c4 = 1;
-                                                                            c5 = 1;
-                                                                            const obj5 = { value: get(obj4), done: false };
-                                                                            return obj5;
-                                                                          }
-                                                                        } else if (arg0 === 1) {
-                                                                          c5 = 3;
-                                                                          throw value;
-                                                                        } else if (arg0 === 2) {
-                                                                          c5 = 3;
-                                                                          const obj = { value, done: true };
-                                                                          return obj;
-                                                                        } else {
-                                                                          content_security_policy = value.headers["content-security-policy"];
-                                                                          items = ["about:blank", "file://*", closure_0];
-                                                                          let closure_1 = 3;
-                                                                          closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
-                                                                          closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
-                                                                          closure_2_26(items.map((item) => {
-                                                                            const str = closure_1_1(closure_1_3[29])(item);
-                                                                            return "^" + str.replace(/\\\*/g, ".*");
-                                                                          }));
-                                                                          closure_2_24(true);
-                                                                          c5 = 3;
-                                                                          return { value: "IconComponent", done: null };
-                                                                        }
-                                                                      } catch (tmp10) {
-                                                                        c5 = 3;
-                                                                        throw tmp10;
-                                                                      }
-                                                                    }
-                                                                  });
-                                                                  tmp3 = (function fetchAndParseCSP() {
-                                                                    return closure_0(...arguments);
-                                                                  })();
-                                                                }
-                                                                return;
-                                                              }
-                                                            }
-                                                          }
+                                                          cResult[58] = undefined;
+                                                          cResult[59] = tmp9;
+                                                          cResult[60] = tmp14;
+                                                          cResult[61] = null;
                                                         }
-                                                        class Ae {
+                                                        class Ce {
                                                           constructor() {
                                                             let tmp2 = null != onInvalidUrl;
                                                             const tmp = onInvalidUrl;
@@ -2040,118 +1114,40 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
                                                             }
                                                           }
                                                         }
-                                                      }
-                                                      if (tmp46 != null) {
-                                                        class Le {
+                                                        class Se {
                                                           constructor() {
-                                                            tmp = hadInvalidUrlError;
-                                                            if (tmp) {
-                                                              closure_0 = ["'self'"];
-                                                              parseCsp = function parseCsp(arg0, str) {
-                                                                const match = str.match(arg0);
-                                                                if (null !== match) {
-                                                                  if (match.length >= 2) {
-                                                                    str = match[1];
-                                                                    const parts = str.split(" ");
-                                                                    const found = parts.filter((item) => !closure_1_0.includes(item));
-                                                                  }
-                                                                  return [];
-                                                                }
-                                                              };
-                                                              closure_0 = undefined;
-                                                              tmp2 = onLoadError;
-                                                              closure_0 = onLoadError(function*(arg0, value) {
-                                                                if (c5 === 2) {
-                                                                  c5 = 3;
-                                                                  throw new TypeError("Generator functions may not be called on executing generators");
-                                                                } else if (tmp5 === 3) {
-                                                                  if (arg0 === 1) {
-                                                                    throw value;
-                                                                  } else if (arg0 === 2) {
-                                                                    const obj2 = { value, done: true };
-                                                                    return obj2;
-                                                                  } else {
-                                                                    return { value: "IconComponent", done: null };
-                                                                  }
-                                                                } else {
-                                                                  try {
-                                                                    let items;
-                                                                    c5 = 2;
-                                                                    if (0 === c4) {
-                                                                      if (arg0 === 1) {
-                                                                        c5 = 3;
-                                                                        throw value;
-                                                                      } else if (arg0 === 2) {
-                                                                        c5 = 3;
-                                                                        const obj3 = { value, done: true };
-                                                                        return obj3;
-                                                                      } else {
-                                                                        let closure_3 = tmp2;
-                                                                        let closure_2 = tmp;
-                                                                        closure_0 = undefined;
-                                                                        content_security_policy = undefined;
-                                                                        items = undefined;
-                                                                        const obj6 = closure_0(onActivityCrash[27]);
-                                                                        const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(applicationId);
-                                                                        const tmp29 = closure_0;
-                                                                        closure_0 = nonTestModeUrlForApplication;
-                                                                        const tmp30 = onActivityCrash;
-                                                                        const tmp31 = applicationId;
-                                                                        if (nonTestModeUrlForApplication == null) {
-                                                                          const _HermesInternal = HermesInternal;
-                                                                          let str = ".discordsays.com";
-                                                                          closure_0 = "https://" + tmp31 + ".discordsays.com";
-                                                                        }
-                                                                        const HTTP = tmp29(tmp30[28]).HTTP;
-                                                                        const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
-                                                                        const _HermesInternal2 = HermesInternal;
-                                                                        const get = HTTP.get;
-                                                                        c4 = 1;
-                                                                        c5 = 1;
-                                                                        const obj5 = { value: get(obj4), done: false };
-                                                                        return obj5;
-                                                                      }
-                                                                    } else if (arg0 === 1) {
-                                                                      c5 = 3;
-                                                                      throw value;
-                                                                    } else if (arg0 === 2) {
-                                                                      c5 = 3;
-                                                                      const obj = { value, done: true };
-                                                                      return obj;
-                                                                    } else {
-                                                                      content_security_policy = value.headers["content-security-policy"];
-                                                                      items = ["about:blank", "file://*", closure_0];
-                                                                      let closure_1 = 3;
-                                                                      closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
-                                                                      closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
-                                                                      closure_2_26(items.map((item) => {
-                                                                        const str = closure_1_1(closure_1_3[29])(item);
-                                                                        return "^" + str.replace(/\\\*/g, ".*");
-                                                                      }));
-                                                                      closure_2_24(true);
-                                                                      c5 = 3;
-                                                                      return { value: "IconComponent", done: null };
-                                                                    }
-                                                                  } catch (tmp10) {
-                                                                    c5 = 3;
-                                                                    throw tmp10;
-                                                                  }
-                                                                }
-                                                              });
-                                                              tmp3 = (function fetchAndParseCSP() {
-                                                                return closure_0(...arguments);
-                                                              })();
-                                                            }
-                                                            return;
+                                                            hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
+                                                            const obj = AnalyticsUtilsDefault;
+                                                            const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
+                                                            obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
+                                                            onActivityCrash();
                                                           }
                                                         }
+                                                        cResult[55] = tmp9;
+                                                        class Ee {
+                                                          constructor() {
+                                                            let tmp10;
+                                                            try {
+                                                              const _URL = URL;
+                                                              const self = this;
+                                                              const self2 = this;
+                                                              const uRL = new URL(combined);
+                                                              tmp10(uRL);
+                                                            } catch (tmp7) {
+                                                              const tmp8 = stateFromStores;
+                                                              if (tmp8) {
+                                                                tmp10 = setHasInvalidUrlError(true);
+                                                              } else {
+                                                                throw tmp7;
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                        cResult[57] = null;
+                                                        tmp47 = tmp48;
                                                       }
-                                                      cResult[54] = undefined;
-                                                      cResult[55] = tmp9;
-                                                      cResult[56] = tmp14;
-                                                      cResult[57] = null;
                                                     }
-                                                    class Ae {
+                                                    class Ce {
                                                       constructor() {
                                                         let tmp2 = null != onInvalidUrl;
                                                         const tmp = onInvalidUrl;
@@ -2166,456 +1162,196 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
                                                         }
                                                       }
                                                     }
-                                                    let androidWebViewShellConfig = null;
-                                                    if (!hadInvalidUrlError) {
-                                                      class Le {
-                                                        constructor() {
-                                                          tmp = hadInvalidUrlError;
-                                                          if (tmp) {
-                                                            closure_0 = ["'self'"];
-                                                            parseCsp = function parseCsp(arg0, str) {
-                                                              const match = str.match(arg0);
-                                                              if (null !== match) {
-                                                                if (match.length >= 2) {
-                                                                  str = match[1];
-                                                                  const parts = str.split(" ");
-                                                                  const found = parts.filter((item) => !closure_1_0.includes(item));
-                                                                }
-                                                                return [];
-                                                              }
-                                                            };
-                                                            closure_0 = undefined;
-                                                            tmp2 = onLoadError;
-                                                            closure_0 = onLoadError(function*(arg0, value) {
-                                                              if (c5 === 2) {
-                                                                c5 = 3;
-                                                                throw new TypeError("Generator functions may not be called on executing generators");
-                                                              } else if (tmp5 === 3) {
-                                                                if (arg0 === 1) {
-                                                                  throw value;
-                                                                } else if (arg0 === 2) {
-                                                                  const obj2 = { value, done: true };
-                                                                  return obj2;
-                                                                } else {
-                                                                  return { value: "IconComponent", done: null };
-                                                                }
-                                                              } else {
-                                                                try {
-                                                                  let items;
-                                                                  c5 = 2;
-                                                                  if (0 === c4) {
-                                                                    if (arg0 === 1) {
-                                                                      c5 = 3;
-                                                                      throw value;
-                                                                    } else if (arg0 === 2) {
-                                                                      c5 = 3;
-                                                                      const obj3 = { value, done: true };
-                                                                      return obj3;
-                                                                    } else {
-                                                                      let closure_3 = tmp2;
-                                                                      let closure_2 = tmp;
-                                                                      closure_0 = undefined;
-                                                                      content_security_policy = undefined;
-                                                                      items = undefined;
-                                                                      const obj6 = closure_0(onActivityCrash[27]);
-                                                                      const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(applicationId);
-                                                                      const tmp29 = closure_0;
-                                                                      closure_0 = nonTestModeUrlForApplication;
-                                                                      const tmp30 = onActivityCrash;
-                                                                      const tmp31 = applicationId;
-                                                                      if (nonTestModeUrlForApplication == null) {
-                                                                        const _HermesInternal = HermesInternal;
-                                                                        let str = ".discordsays.com";
-                                                                        closure_0 = "https://" + tmp31 + ".discordsays.com";
-                                                                      }
-                                                                      const HTTP = tmp29(tmp30[28]).HTTP;
-                                                                      const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
-                                                                      const _HermesInternal2 = HermesInternal;
-                                                                      const get = HTTP.get;
-                                                                      c4 = 1;
-                                                                      c5 = 1;
-                                                                      const obj5 = { value: get(obj4), done: false };
-                                                                      return obj5;
-                                                                    }
-                                                                  } else if (arg0 === 1) {
-                                                                    c5 = 3;
-                                                                    throw value;
-                                                                  } else if (arg0 === 2) {
-                                                                    c5 = 3;
-                                                                    const obj = { value, done: true };
-                                                                    return obj;
-                                                                  } else {
-                                                                    content_security_policy = value.headers["content-security-policy"];
-                                                                    items = ["about:blank", "file://*", closure_0];
-                                                                    let closure_1 = 3;
-                                                                    closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
-                                                                    closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
-                                                                    closure_2_26(items.map((item) => {
-                                                                      const str = closure_1_1(closure_1_3[29])(item);
-                                                                      return "^" + str.replace(/\\\*/g, ".*");
-                                                                    }));
-                                                                    closure_2_24(true);
-                                                                    c5 = 3;
-                                                                    return { value: "IconComponent", done: null };
-                                                                  }
-                                                                } catch (tmp10) {
-                                                                  c5 = 3;
-                                                                  throw tmp10;
-                                                                }
-                                                              }
-                                                            });
-                                                            tmp3 = (function fetchAndParseCSP() {
-                                                              return closure_0(...arguments);
-                                                            })();
-                                                          }
-                                                          return;
-                                                        }
+                                                    const items3 = [, , ];
+                                                    class Se {
+                                                      constructor() {
+                                                        hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
+                                                        const obj = AnalyticsUtilsDefault;
+                                                        const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
+                                                        obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
+                                                        onActivityCrash();
                                                       }
-                                                      if (null != tmp9) {
-                                                        class Le {
-                                                          constructor() {
-                                                            tmp = hadInvalidUrlError;
-                                                            if (tmp) {
-                                                              closure_0 = ["'self'"];
-                                                              parseCsp = function parseCsp(arg0, str) {
-                                                                const match = str.match(arg0);
-                                                                if (null !== match) {
-                                                                  if (match.length >= 2) {
-                                                                    str = match[1];
-                                                                    const parts = str.split(" ");
-                                                                    const found = parts.filter((item) => !closure_1_0.includes(item));
-                                                                  }
-                                                                  return [];
-                                                                }
-                                                              };
-                                                              closure_0 = undefined;
-                                                              tmp2 = onLoadError;
-                                                              closure_0 = onLoadError(function*(arg0, value) {
-                                                                if (c5 === 2) {
-                                                                  c5 = 3;
-                                                                  throw new TypeError("Generator functions may not be called on executing generators");
-                                                                } else if (tmp5 === 3) {
-                                                                  if (arg0 === 1) {
-                                                                    throw value;
-                                                                  } else if (arg0 === 2) {
-                                                                    const obj2 = { value, done: true };
-                                                                    return obj2;
-                                                                  } else {
-                                                                    return { value: "IconComponent", done: null };
-                                                                  }
-                                                                } else {
-                                                                  try {
-                                                                    let items;
-                                                                    c5 = 2;
-                                                                    if (0 === c4) {
-                                                                      if (arg0 === 1) {
-                                                                        c5 = 3;
-                                                                        throw value;
-                                                                      } else if (arg0 === 2) {
-                                                                        c5 = 3;
-                                                                        const obj3 = { value, done: true };
-                                                                        return obj3;
-                                                                      } else {
-                                                                        let closure_3 = tmp2;
-                                                                        let closure_2 = tmp;
-                                                                        closure_0 = undefined;
-                                                                        content_security_policy = undefined;
-                                                                        items = undefined;
-                                                                        const obj6 = closure_0(onActivityCrash[27]);
-                                                                        const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(applicationId);
-                                                                        const tmp29 = closure_0;
-                                                                        closure_0 = nonTestModeUrlForApplication;
-                                                                        const tmp30 = onActivityCrash;
-                                                                        const tmp31 = applicationId;
-                                                                        if (nonTestModeUrlForApplication == null) {
-                                                                          const _HermesInternal = HermesInternal;
-                                                                          let str = ".discordsays.com";
-                                                                          closure_0 = "https://" + tmp31 + ".discordsays.com";
-                                                                        }
-                                                                        const HTTP = tmp29(tmp30[28]).HTTP;
-                                                                        const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
-                                                                        const _HermesInternal2 = HermesInternal;
-                                                                        const get = HTTP.get;
-                                                                        c4 = 1;
-                                                                        c5 = 1;
-                                                                        const obj5 = { value: get(obj4), done: false };
-                                                                        return obj5;
-                                                                      }
-                                                                    } else if (arg0 === 1) {
-                                                                      c5 = 3;
-                                                                      throw value;
-                                                                    } else if (arg0 === 2) {
-                                                                      c5 = 3;
-                                                                      const obj = { value, done: true };
-                                                                      return obj;
-                                                                    } else {
-                                                                      content_security_policy = value.headers["content-security-policy"];
-                                                                      items = ["about:blank", "file://*", closure_0];
-                                                                      let closure_1 = 3;
-                                                                      closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
-                                                                      closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
-                                                                      closure_2_26(items.map((item) => {
-                                                                        const str = closure_1_1(closure_1_3[29])(item);
-                                                                        return "^" + str.replace(/\\\*/g, ".*");
-                                                                      }));
-                                                                      closure_2_24(true);
-                                                                      c5 = 3;
-                                                                      return { value: "IconComponent", done: null };
-                                                                    }
-                                                                  } catch (tmp10) {
-                                                                    c5 = 3;
-                                                                    throw tmp10;
-                                                                  }
-                                                                }
-                                                              });
-                                                              tmp3 = (function fetchAndParseCSP() {
-                                                                return closure_0(...arguments);
-                                                              })();
-                                                            }
-                                                            return;
+                                                    }
+                                                    items3[1] = hadInvalidUrlError;
+                                                    items3[2] = onInvalidUrl;
+                                                    class Ee {
+                                                      constructor() {
+                                                        let tmp10;
+                                                        try {
+                                                          const _URL = URL;
+                                                          const self = this;
+                                                          const self2 = this;
+                                                          const uRL = new URL(combined);
+                                                          tmp10(uRL);
+                                                        } catch (tmp7) {
+                                                          const tmp8 = stateFromStores;
+                                                          if (tmp8) {
+                                                            tmp10 = setHasInvalidUrlError(true);
+                                                          } else {
+                                                            throw tmp7;
                                                           }
-                                                        }
-                                                        if (null != tmp14) {
-                                                          class Le {
-                                                            constructor() {
-                                                              tmp = hadInvalidUrlError;
-                                                              if (tmp) {
-                                                                closure_0 = ["'self'"];
-                                                                parseCsp = function parseCsp(arg0, str) {
-                                                                  const match = str.match(arg0);
-                                                                  if (null !== match) {
-                                                                    if (match.length >= 2) {
-                                                                      str = match[1];
-                                                                      const parts = str.split(" ");
-                                                                      const found = parts.filter((item) => !closure_1_0.includes(item));
-                                                                    }
-                                                                    return [];
-                                                                  }
-                                                                };
-                                                                closure_0 = undefined;
-                                                                tmp2 = onLoadError;
-                                                                closure_0 = onLoadError(function*(arg0, value) {
-                                                                  if (c5 === 2) {
-                                                                    c5 = 3;
-                                                                    throw new TypeError("Generator functions may not be called on executing generators");
-                                                                  } else if (tmp5 === 3) {
-                                                                    if (arg0 === 1) {
-                                                                      throw value;
-                                                                    } else if (arg0 === 2) {
-                                                                      const obj2 = { value, done: true };
-                                                                      return obj2;
-                                                                    } else {
-                                                                      return { value: "IconComponent", done: null };
-                                                                    }
-                                                                  } else {
-                                                                    try {
-                                                                      let items;
-                                                                      c5 = 2;
-                                                                      if (0 === c4) {
-                                                                        if (arg0 === 1) {
-                                                                          c5 = 3;
-                                                                          throw value;
-                                                                        } else if (arg0 === 2) {
-                                                                          c5 = 3;
-                                                                          const obj3 = { value, done: true };
-                                                                          return obj3;
-                                                                        } else {
-                                                                          let closure_3 = tmp2;
-                                                                          let closure_2 = tmp;
-                                                                          closure_0 = undefined;
-                                                                          content_security_policy = undefined;
-                                                                          items = undefined;
-                                                                          const obj6 = closure_0(onActivityCrash[27]);
-                                                                          const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(applicationId);
-                                                                          const tmp29 = closure_0;
-                                                                          closure_0 = nonTestModeUrlForApplication;
-                                                                          const tmp30 = onActivityCrash;
-                                                                          const tmp31 = applicationId;
-                                                                          if (nonTestModeUrlForApplication == null) {
-                                                                            const _HermesInternal = HermesInternal;
-                                                                            let str = ".discordsays.com";
-                                                                            closure_0 = "https://" + tmp31 + ".discordsays.com";
-                                                                          }
-                                                                          const HTTP = tmp29(tmp30[28]).HTTP;
-                                                                          const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
-                                                                          const _HermesInternal2 = HermesInternal;
-                                                                          const get = HTTP.get;
-                                                                          c4 = 1;
-                                                                          c5 = 1;
-                                                                          const obj5 = { value: get(obj4), done: false };
-                                                                          return obj5;
-                                                                        }
-                                                                      } else if (arg0 === 1) {
-                                                                        c5 = 3;
-                                                                        throw value;
-                                                                      } else if (arg0 === 2) {
-                                                                        c5 = 3;
-                                                                        const obj = { value, done: true };
-                                                                        return obj;
-                                                                      } else {
-                                                                        content_security_policy = value.headers["content-security-policy"];
-                                                                        items = ["about:blank", "file://*", closure_0];
-                                                                        let closure_1 = 3;
-                                                                        closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
-                                                                        closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
-                                                                        closure_2_26(items.map((item) => {
-                                                                          const str = closure_1_1(closure_1_3[29])(item);
-                                                                          return "^" + str.replace(/\\\*/g, ".*");
-                                                                        }));
-                                                                        closure_2_24(true);
-                                                                        c5 = 3;
-                                                                        return { value: "IconComponent", done: null };
-                                                                      }
-                                                                    } catch (tmp10) {
-                                                                      c5 = 3;
-                                                                      throw tmp10;
-                                                                    }
-                                                                  }
-                                                                });
-                                                                tmp3 = (function fetchAndParseCSP() {
-                                                                  return closure_0(...arguments);
-                                                                })();
-                                                              }
-                                                              return;
-                                                            }
-                                                          }
-                                                          let obj6 = { iframeUrl: tmp9, shellFilePath: null };
-                                                          class Ae {
-                                                            constructor() {
-                                                              let tmp2 = null != onInvalidUrl;
-                                                              const tmp = onInvalidUrl;
-                                                              if (tmp2) {
-                                                                tmp2 = !hadInvalidUrlError;
-                                                              }
-                                                              if (tmp2) {
-                                                                tmp2 = hasInvalidUrlError;
-                                                              }
-                                                              if (tmp2) {
-                                                                tmp();
-                                                              }
-                                                            }
-                                                          }
-                                                          androidWebViewShellConfig = obj9.getAndroidWebViewShellConfig(obj6);
                                                         }
                                                       }
                                                     }
-                                                    cResult[51] = tmp9;
-                                                    cResult[52] = tmp14;
-                                                    cResult[53] = androidWebViewShellConfig;
-                                                    tmp46 = androidWebViewShellConfig;
+                                                    cResult[51] = hasInvalidUrlError;
+                                                    cResult[52] = onInvalidUrl;
+                                                    cResult[53] = Ce;
+                                                    cResult[54] = items3;
+                                                    tmp45 = items3;
+                                                    tmp44 = Ce;
                                                   }
-                                                }
-                                                class Ae {
-                                                  constructor() {
-                                                    let tmp2 = null != onInvalidUrl;
-                                                    const tmp = onInvalidUrl;
-                                                    if (tmp2) {
-                                                      tmp2 = !hadInvalidUrlError;
-                                                    }
-                                                    if (tmp2) {
-                                                      tmp2 = hasInvalidUrlError;
-                                                    }
-                                                    if (tmp2) {
-                                                      tmp();
+                                                  class Ie {
+                                                    constructor() {
+                                                      let intl;
+                                                      let intl2;
+                                                      let intl3;
+                                                      const tmp = !hadInvalidUrlError && hasInvalidUrlError;
+                                                      if (tmp) {
+                                                        const obj = { title: intl.string(intl4.t.PtobXW), body: intl2.string(intl4.t["55iAUT"]), confirmText: intl3.string(intl4.t.BddRzS) };
+                                                        const show = AlertActionCreatorsDefault.show;
+                                                        AlertActionCreatorsDefault;
+                                                        intl = intl4.intl;
+                                                        intl2 = intl4.intl;
+                                                        intl3 = intl4.intl;
+                                                        show(obj);
+                                                      }
                                                     }
                                                   }
+                                                  const items4 = [, ];
+                                                  class Se {
+                                                    constructor() {
+                                                      hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
+                                                      const obj = AnalyticsUtilsDefault;
+                                                      const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
+                                                      obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
+                                                      onActivityCrash();
+                                                    }
+                                                  }
+                                                  items4[1] = hasInvalidUrlError;
+                                                  cResult[46] = hadInvalidUrlError;
+                                                  class Ee {
+                                                    constructor() {
+                                                      let tmp10;
+                                                      try {
+                                                        const _URL = URL;
+                                                        const self = this;
+                                                        const self2 = this;
+                                                        const uRL = new URL(combined);
+                                                        tmp10(uRL);
+                                                      } catch (tmp7) {
+                                                        const tmp8 = stateFromStores;
+                                                        if (tmp8) {
+                                                          tmp10 = setHasInvalidUrlError(true);
+                                                        } else {
+                                                          throw tmp7;
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                  cResult[47] = hasInvalidUrlError;
+                                                  cResult[48] = Ie;
+                                                  cResult[49] = items4;
+                                                  tmp42 = items4;
+                                                  tmp41 = Ie;
                                                 }
-                                                const items3 = [hasInvalidUrlError, hadInvalidUrlError, onInvalidUrl];
-                                                cResult[46] = hadInvalidUrlError;
-                                                cResult[47] = hasInvalidUrlError;
-                                                cResult[48] = onInvalidUrl;
-                                                cResult[49] = Ae;
-                                                cResult[50] = items3;
-                                                tmp44 = items3;
-                                                tmp43 = Ae;
                                               }
+                                              const items5 = [, stateFromStores, ];
                                               class Se {
                                                 constructor() {
-                                                  return safeAreasConfig.getUseActivityUrlOverride();
+                                                  hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
+                                                  const obj = AnalyticsUtilsDefault;
+                                                  const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
+                                                  obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
+                                                  onActivityCrash();
                                                 }
                                               }
-                                              const items4 = [hadInvalidUrlError, hasInvalidUrlError];
-                                              cResult[42] = hadInvalidUrlError;
-                                              cResult[43] = hasInvalidUrlError;
-                                              cResult[44] = tmp41;
-                                              cResult[45] = items4;
-                                              tmp40 = items4;
-                                              tmp39 = tmp41;
+                                              cResult[42] = combined;
+                                              class Ee {
+                                                constructor() {
+                                                  let tmp10;
+                                                  try {
+                                                    const _URL = URL;
+                                                    const self = this;
+                                                    const self2 = this;
+                                                    const uRL = new URL(combined);
+                                                    tmp10(uRL);
+                                                  } catch (tmp7) {
+                                                    const tmp8 = stateFromStores;
+                                                    if (tmp8) {
+                                                      tmp10 = setHasInvalidUrlError(true);
+                                                    } else {
+                                                      throw tmp7;
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                              cResult[44] = setHasInvalidUrlError;
+                                              cResult[45] = items5;
+                                              tmp39 = items5;
                                             }
                                           }
-                                          const items5 = [, , ];
-                                          class Se {
-                                            constructor() {
-                                              return safeAreasConfig.getUseActivityUrlOverride();
+                                        }
+                                        class Ee {
+                                          constructor() {
+                                            let tmp10;
+                                            try {
+                                              const _URL = URL;
+                                              const self = this;
+                                              const self2 = this;
+                                              const uRL = new URL(combined);
+                                              tmp10(uRL);
+                                            } catch (tmp7) {
+                                              const tmp8 = stateFromStores;
+                                              if (tmp8) {
+                                                tmp10 = setHasInvalidUrlError(true);
+                                              } else {
+                                                throw tmp7;
+                                              }
                                             }
                                           }
-                                          items5[1] = stateFromStores;
-                                          items5[2] = setHasInvalidUrlError;
-                                          cResult[38] = combined;
-                                          cResult[39] = stateFromStores;
-                                          cResult[40] = setHasInvalidUrlError;
-                                          cResult[41] = items5;
-                                          tmp37 = items5;
                                         }
+                                        cResult[37] = combined;
+                                        cResult[38] = stateFromStores;
+                                        cResult[39] = setHasInvalidUrlError;
+                                        cResult[40] = tmp10;
+                                        cResult[41] = Ee;
+                                        tmp38 = Ee;
                                       }
                                     }
-                                    function be() {
-                                      let tmp10;
-                                      try {
-                                        const _URL = URL;
-                                        const self = this;
-                                        const self2 = this;
-                                        const uRL = new URL(combined);
-                                        tmp10(uRL);
-                                      } catch (tmp7) {
-                                        const tmp8 = stateFromStores;
-                                        if (tmp8) {
-                                          tmp10 = setHasInvalidUrlError(true);
-                                        } else {
-                                          throw tmp7;
-                                        }
-                                      }
-                                    }
-                                    cResult[33] = combined;
-                                    cResult[34] = stateFromStores;
-                                    cResult[35] = setHasInvalidUrlError;
-                                    cResult[36] = tmp10;
-                                    cResult[37] = be;
-                                    tmp36 = be;
                                   }
                                 }
+                                class Se {
+                                  constructor() {
+                                    hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
+                                    const obj = AnalyticsUtilsDefault;
+                                    const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
+                                    obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
+                                    onActivityCrash();
+                                  }
+                                }
+                                cResult[29] = activitySessionId;
+                                cResult[31] = channelId;
+                                cResult[32] = guildId;
+                                cResult[33] = onActivityCrash;
+                                cResult[34] = Se;
                               }
                             }
-                            function ve() {
-                              setHasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
-                              const obj = AnalyticsUtilsDefault;
-                              const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
-                              obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
-                              onActivityCrash();
-                            }
-                            cResult[25] = activitySessionId;
-                            cResult[26] = applicationId;
-                            cResult[27] = channelId;
-                            cResult[28] = guildId;
-                            cResult[29] = onActivityCrash;
-                            cResult[30] = ve;
-                            tmp31 = ve;
                           }
                         }
                       }
                     }
                   }
+                  const items6 = [, tmp22, , referrerPolicy, iframeId, embeddedAppShimVersion, , tmp26];
+                  cResult[16] = tmp26;
+                  cResult[17] = iframeId;
+                  cResult[18] = tmp22;
+                  cResult[19] = combined;
+                  cResult[20] = onLoadError;
+                  cResult[21] = referrerPolicy;
+                  cResult[22] = shellBridgeSecret;
+                  cResult[23] = embeddedAppShimVersion;
+                  cResult[24] = items6;
                 }
-                const items6 = [, tmp22, onLoadError, referrerPolicy, iframeId, embeddedAppShimVersion, shellBridgeSecret];
-                cResult[13] = iframeId;
-                cResult[14] = tmp22;
-                cResult[15] = combined;
-                cResult[16] = onLoadError;
-                cResult[17] = referrerPolicy;
-                cResult[18] = shellBridgeSecret;
-                cResult[19] = embeddedAppShimVersion;
-                cResult[20] = items6;
-                tmp27 = items6;
               }
             }
           }
@@ -2623,11 +1359,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
       }
     }
   }
-  function oe() {
+  function ue() {
     function loadHtml() {
       return closure_0(...arguments);
     }
-    let closure_0 = onLoadError(function*(arg0, value) {
+    let closure_0 = onActivityCrash(function*(arg0, value) {
       if (c3 === 2) {
         c3 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -2643,7 +1379,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
       } else {
         try {
           c3 = 2;
-          if (0 === c2) {
+          if (0 === shellBridgeSecret) {
             if (arg0 === 1) {
               c3 = 3;
               throw value;
@@ -2652,12 +1388,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              shellBridgeSecret = tmp;
-              iframeId = undefined;
-              const obj4 = { iframeId, iframeUri, iframeSandboxAttributes, referrerPolicy, shimVersion, shellBridgeSecret };
-              c2 = 1;
+              iframeId = tmp;
+              closure_0 = undefined;
+              const obj4 = { iframeId, iframeUri, iframeSandboxAttributes, referrerPolicy, shimVersion, shellBridgeSecret, iframeCsp };
+              shellBridgeSecret = 1;
               c3 = 1;
-              const obj5 = { value: shellBridgeSecret(onActivityCrash[21])(obj4), done: false };
+              const obj5 = { value: iframeId(applicationId[23])(obj4), done: false };
               return obj5;
             }
           } else if (arg0 === 1) {
@@ -2668,9 +1404,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
             const obj = { value, done: true };
             return obj;
           } else {
-            iframeId = value;
-            if (null != iframeId) {
-              closure_1_17(iframeId);
+            closure_0 = value;
+            if (null != closure_0) {
+              closure_1_18(closure_0);
             } else {
               onLoadError();
             }
@@ -2685,105 +1421,113 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
     });
     const tmp = loadHtml();
   }
-  cResult[4] = iframeId;
-  cResult[5] = tmp22;
-  cResult[6] = combined;
-  cResult[7] = onLoadError;
-  cResult[8] = referrerPolicy;
-  cResult[9] = tmp15;
-  cResult[10] = shellBridgeSecret;
-  cResult[11] = embeddedAppShimVersion;
-  cResult[12] = oe;
-  tmp26 = oe;
-}) : (function BaseEmbeddedAppWebView(iframeId) {
+  cResult[6] = tmp26;
+  cResult[7] = iframeId;
+  cResult[8] = tmp22;
+  cResult[9] = combined;
+  cResult[10] = onLoadError;
+  cResult[11] = referrerPolicy;
+  cResult[12] = tmp15;
+  cResult[13] = shellBridgeSecret;
+  cResult[14] = embeddedAppShimVersion;
+  cResult[15] = ue;
+  tmp28 = ue;
+}) : (function BaseEmbeddedAppWebViewContent(framePolicy) {
   let _undefined;
   let activityUrl;
   let allowPopups;
   let assetLoaderConfig;
-  let c15;
-  let c17;
-  let c25;
+  let c16;
+  let c18;
+  let c27;
   let ignoreSilentHardwareSwitch;
-  let obj9;
+  let obj8;
   let onActivityCrash;
   let queryParams;
   let str2;
   let tmp11;
-  let tmp32;
-  let tmp45;
-  let tmp48;
-  let tmp51;
-  let tmp54;
-  let tmp60;
-  let tmp61;
+  let tmp34;
+  let tmp47;
+  let tmp50;
+  let tmp53;
+  let tmp56;
   let tmp62;
+  let tmp63;
+  let tmp64;
   let tmp8;
-  iframeId = iframeId.iframeId;
-  let shellBridgeSecret = iframeId.shellBridgeSecret;
-  let deepLinkQueryParams = iframeId.deepLinkQueryParams;
+  framePolicy = framePolicy.framePolicy;
+  let iframeId = framePolicy.iframeId;
+  let shellBridgeSecret = framePolicy.shellBridgeSecret;
+  let deepLinkQueryParams = framePolicy.deepLinkQueryParams;
   if (deepLinkQueryParams === undefined) {
     deepLinkQueryParams = {};
   }
-  const applicationId = iframeId.applicationId;
-  ({ queryParams, onActivityCrash } = iframeId);
-  const onLoadError = iframeId.onLoadError;
-  const onInvalidUrl = iframeId.onInvalidUrl;
-  const referrerPolicy = iframeId.referrerPolicy;
-  const isPipOrGridMode = iframeId.isPipOrGridMode;
-  ({ ignoreSilentHardwareSwitch, activityUrl, allowPopups } = iframeId);
+  const applicationId = framePolicy.applicationId;
+  ({ queryParams, onActivityCrash } = framePolicy);
+  const onLoadError = framePolicy.onLoadError;
+  const onInvalidUrl = framePolicy.onInvalidUrl;
+  const referrerPolicy = framePolicy.referrerPolicy;
+  const isPipOrGridMode = framePolicy.isPipOrGridMode;
+  ({ ignoreSilentHardwareSwitch, activityUrl, allowPopups } = framePolicy);
   if (ignoreSilentHardwareSwitch === undefined) {
     ignoreSilentHardwareSwitch = true;
   }
-  const safeAreasConfig = iframeId.safeAreasConfig;
-  const channelId = iframeId.channelId;
-  const guildId = iframeId.guildId;
-  const activitySessionId = iframeId.activitySessionId;
-  let hasInvalidUrlError;
-  c15 = undefined;
+  const safeAreasConfig = framePolicy.safeAreasConfig;
+  const channelId = framePolicy.channelId;
+  const guildId = framePolicy.guildId;
+  const activitySessionId = framePolicy.activitySessionId;
+  c16 = undefined;
   let memo;
-  c17 = undefined;
+  c18 = undefined;
+  let c23;
+  let stateFromStores;
   let combined1;
-  let closure_24;
-  c25 = undefined;
+  let closure_26;
+  c27 = undefined;
   let first;
-  let closure_27;
-  let closure_28;
+  let closure_29;
+  let closure_30;
   let ref;
   let origin;
-  let obj2 = referrerPolicy;
-  let tmp2 = iframeId;
-  let tmp3 = onActivityCrash;
-  let tmp = hasInvalidUrlError();
-  const context = referrerPolicy.useContext(iframeId(onActivityCrash[13]).WebViewContext);
-  let tmp5 = memo();
-  hasInvalidUrlError = tmp5.hasInvalidUrlError;
+  let obj2 = onInvalidUrl;
+  let tmp2 = framePolicy;
+  let tmp3 = applicationId;
+  let tmp = activitySessionId();
+  const context = onInvalidUrl.useContext(framePolicy(applicationId[14]).WebViewContext);
+  const tmp5 = memo();
+  const hasInvalidUrlError = tmp5.hasInvalidUrlError;
   const setHasInvalidUrlError = tmp5.setHasInvalidUrlError;
   const hadInvalidUrlError = tmp5.hadInvalidUrlError;
-  let tmp6 = onInvalidUrl;
-  const tmp7 = onInvalidUrl(referrerPolicy.useState(null), 2);
-  [tmp8, c15] = tmp7;
+  const tmp7 = onLoadError(onInvalidUrl.useState(null), 2);
+  [tmp8, c16] = tmp7;
   let items = [iframeId];
-  memo = referrerPolicy.useMemo(() => {
+  memo = onInvalidUrl.useMemo(() => {
     const obj = WebView2;
     return obj.getWebViewProxy(iframeId);
   }, items);
-  const tmp10 = onInvalidUrl(referrerPolicy.useState(null), 2);
-  [tmp11, c17] = tmp10;
-  let rect = shellBridgeSecret(onActivityCrash[15])();
-  let obj3 = iframeId(onActivityCrash[16]);
+  let tmp10 = onLoadError(onInvalidUrl.useState(null), 2);
+  [tmp11, c18] = tmp10;
+  let rect = iframeId(applicationId[16])();
+  let obj3 = framePolicy(applicationId[17]);
   const embeddedAppShimVersion = obj3.useEmbeddedAppShimVersion("BaseEmbeddedAppWebView");
-  let obj4 = applicationId(onActivityCrash[17]);
-  let obj = { frame_id: iframeId, platform: iframeId(onActivityCrash[18]).ActivityPlatform.MOBILE, mobile_app_version: constants.Version };
+  let obj4 = shellBridgeSecret(applicationId[18]);
+  let obj = { frame_id: iframeId, platform: framePolicy(applicationId[19]).ActivityPlatform.MOBILE, mobile_app_version: constants.Version };
   constants = obj4.getConstants();
   const merged = Object.assign(queryParams);
   const merged1 = Object.assign(deepLinkQueryParams);
-  obj[iframeId(onActivityCrash[19]).SHIM_VERSION_PARAM] = "" + embeddedAppShimVersion;
-  const tmp16 = shellBridgeSecret(onActivityCrash[20])({ allowPopups });
-  let closure_20 = tmp16;
+  obj[framePolicy(applicationId[20]).SHIM_VERSION_PARAM] = "" + embeddedAppShimVersion;
+  const tmp16 = iframeId(applicationId[21])({ allowPopups });
+  let closure_21 = tmp16;
   const uRLSearchParams = new URLSearchParams(obj);
   const combined = "" + activityUrl + "?" + uRLSearchParams;
-  const items1 = [combined, tmp16, onLoadError, referrerPolicy, iframeId, embeddedAppShimVersion, shellBridgeSecret];
-  const effect = referrerPolicy.useEffect(() => {
+  let result;
+  if (null != framePolicy) {
+    const tmp2Result = tmp2(tmp3[22]);
+    result = tmp2Result.deriveIframeCSPAttributeFromPolicy(framePolicy.policy);
+  }
+  c23 = result;
+  const items1 = [combined, tmp16, onLoadError, referrerPolicy, iframeId, embeddedAppShimVersion, shellBridgeSecret, result];
+  const effect = obj2.useEffect(() => {
     function loadHtml() {
       return obj(...arguments);
     }
@@ -2803,8 +1547,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
           }
         } else {
           try {
+            let closure_0;
             c3 = 2;
-            if (0 === c2) {
+            if (0 === shellBridgeSecret) {
               if (arg0 === 1) {
                 c3 = 3;
                 throw value;
@@ -2813,12 +1558,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                shellBridgeSecret = tmp;
-                iframeId = undefined;
-                const obj4 = { iframeId, iframeUri, iframeSandboxAttributes, referrerPolicy, shimVersion, shellBridgeSecret };
-                c2 = 1;
+                iframeId = tmp;
+                closure_0 = undefined;
+                const obj4 = { iframeId, iframeUri, iframeSandboxAttributes, referrerPolicy, shimVersion, shellBridgeSecret, iframeCsp };
+                shellBridgeSecret = 1;
                 c3 = 1;
-                const obj5 = { value: closure_2_1(onActivityCrash[21])(obj4), done: false };
+                const obj5 = { value: closure_2_1(applicationId[23])(obj4), done: false };
                 return obj5;
               }
             } else if (arg0 === 1) {
@@ -2829,11 +1574,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
               obj = { value, done: true };
               return obj;
             } else {
-              iframeId = value;
-              if (null != iframeId) {
-                closure_1_17(iframeId);
+              closure_0 = value;
+              if (null != closure_0) {
+                closure_1_18(closure_0);
               } else {
-                closure_1_4();
+                closure_1_5();
               }
               c3 = 3;
               return { value: "IconComponent", done: null };
@@ -2850,25 +1595,25 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
   }, items1);
   const items2 = [applicationId];
   const items3 = [applicationId];
-  const callback = referrerPolicy.useCallback((nativeEvent) => {
-    setHasInvalidUrlError.warn("activity WebView error for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
+  const callback = obj2.useCallback((nativeEvent) => {
+    hasInvalidUrlError.warn("activity WebView error for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
   }, items2);
   const items4 = [applicationId, channelId, guildId, activitySessionId, onActivityCrash];
-  const callback1 = referrerPolicy.useCallback((nativeEvent) => {
-    setHasInvalidUrlError.warn("activity WebView render process gone for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
+  const callback1 = obj2.useCallback((nativeEvent) => {
+    hasInvalidUrlError.warn("activity WebView render process gone for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
   }, items3);
-  const callback2 = referrerPolicy.useCallback(() => {
-    setHasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
+  const callback2 = obj2.useCallback(() => {
+    hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
     const obj = AnalyticsUtilsDefault;
     const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
     obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
     onActivityCrash();
   }, items4);
-  let obj6 = iframeId(onActivityCrash[23]);
-  const items5 = [safeAreasConfig];
-  const stateFromStores = obj6.useStateFromStores(items5, () => safeAreasConfig.getUseActivityUrlOverride());
+  const items5 = [isPipOrGridMode];
+  const tmp2Result4 = tmp2(tmp3[25]);
+  stateFromStores = tmp2Result4.useStateFromStores(items5, () => isPipOrGridMode.getUseActivityUrlOverride());
   const items6 = [combined, stateFromStores, setHasInvalidUrlError];
-  const effect1 = referrerPolicy.useEffect(function() {
+  const effect1 = obj2.useEffect(function() {
     try {
       const _URL = URL;
       const self = this;
@@ -2885,7 +1630,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
     }
   }, items6);
   const items7 = [hadInvalidUrlError, hasInvalidUrlError];
-  const effect2 = referrerPolicy.useEffect(() => {
+  const effect2 = obj2.useEffect(() => {
     let intl;
     let intl2;
     let intl3;
@@ -2901,7 +1646,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
     }
   }, items7);
   const items8 = [hasInvalidUrlError, hadInvalidUrlError, onInvalidUrl];
-  const effect3 = referrerPolicy.useEffect(() => {
+  const effect3 = obj2.useEffect(() => {
     let tmp2 = null != onInvalidUrl;
     const tmp = onInvalidUrl;
     if (tmp2) {
@@ -2915,21 +1660,21 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
     }
   }, items8);
   let androidWebViewShellConfig = null;
-  if (!hadInvalidUrlError) {
+  if (!setHasInvalidUrlError) {
     androidWebViewShellConfig = null;
     if (null != tmp8) {
       androidWebViewShellConfig = null;
       if (null != tmp11) {
         let obj5 = { iframeUrl: tmp8, shellFilePath: tmp11 };
-        const tmp2Result = tmp2(tmp3[26]);
-        androidWebViewShellConfig = tmp2Result.getAndroidWebViewShellConfig(obj5);
+        const tmp2Result5 = tmp2(tmp3[28]);
+        androidWebViewShellConfig = tmp2Result5.getAndroidWebViewShellConfig(obj5);
       }
     }
   }
   combined1 = null;
-  let tmp29 = null;
+  let tmp30 = null;
   if (null != tmp8) {
-    if (hadInvalidUrlError) {
+    if (setHasInvalidUrlError) {
       let _HermesInternal = HermesInternal;
       let str = "file://";
       combined1 = "file://" + tmp11;
@@ -2942,20 +1687,20 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
         combined1 = null;
       }
     }
-    tmp29 = combined1;
+    tmp30 = combined1;
   }
-  closure_24 = tmp27;
-  let tmp6Result = tmp6(obj2.useState(false), 2);
-  [tmp32, c25] = tmp6Result;
-  const tmp6Result2 = tmp6(obj2.useState([]), 2);
+  closure_26 = tmp32;
+  [tmp34, c27] = onLoadError(obj2.useState(false), 2);
+  onLoadError(obj2.useState(false), 2);
+  const tmp6Result2 = onLoadError(obj2.useState([]), 2);
   first = tmp6Result2[0];
-  closure_27 = tmp6Result2[1];
-  const items9 = [applicationId, tmp27];
+  closure_29 = tmp6Result2[1];
+  const items9 = [applicationId, tmp32];
   const effect4 = obj2.useEffect(() => {
     function fetchAndParseCSP() {
       return obj(...arguments);
     }
-    const tmp = closure_24;
+    const tmp = closure_26;
     if (tmp) {
       function parseCsp(arg0, str) {
         const match = str.match(arg0);
@@ -2999,18 +1744,18 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
                   let closure_2 = tmp;
                   content_security_policy = undefined;
                   items = undefined;
-                  const obj6 = closure_2_0(onActivityCrash[27]);
-                  const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(closure_2);
+                  const obj6 = closure_2_0(applicationId[29]);
+                  const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(closure_3);
                   closure_0 = nonTestModeUrlForApplication;
                   const tmp29 = closure_2_0;
-                  const tmp30 = onActivityCrash;
-                  const tmp31 = closure_2;
+                  const tmp30 = applicationId;
+                  const tmp31 = closure_3;
                   if (nonTestModeUrlForApplication == null) {
                     const _HermesInternal = HermesInternal;
                     let str = ".discordsays.com";
                     closure_0 = "https://" + tmp31 + ".discordsays.com";
                   }
-                  const HTTP = tmp29(tmp30[28]).HTTP;
+                  const HTTP = tmp29(tmp30[30]).HTTP;
                   const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
                   const _HermesInternal2 = HermesInternal;
                   const get = HTTP.get;
@@ -3032,11 +1777,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
                 let closure_1 = 3;
                 closure_1 = HermesBuiltin.arraySpread(items, closure_131_1(/frame-src (.*?);/, content_security_policy), closure_1);
                 closure_1 = HermesBuiltin.arraySpread(items, closure_131_1(/child-src (.*?);/, content_security_policy), closure_1);
-                closure_1_27(items.map((item) => {
-                  const str = closure_1_1(closure_1_3[29])(item);
+                closure_1_29(items.map((item) => {
+                  const str = closure_1_1(closure_1_3[31])(item);
                   return "^" + str.replace(/\\\*/g, ".*");
                 }));
-                closure_1_25(true);
+                closure_1_27(true);
                 c5 = 3;
                 return { value: "IconComponent", done: null };
               }
@@ -3052,8 +1797,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
       const tmp2 = fetchAndParseCSP();
     }
   }, items9);
-  const items10 = [tmp29, first];
-  let tmp37 = null != tmp29;
+  const items10 = [tmp30, first, framePolicy];
+  let tmp39 = null != tmp30;
   const callback3 = obj2.useCallback(function(mainDocumentURL) {
     mainDocumentURL = mainDocumentURL.mainDocumentURL;
     if (null != combined1) {
@@ -3064,17 +1809,24 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
         }
       }
     }
-    const iter = first[Symbol.iterator]();
-    const nextResult = iter.next();
-    while (iter !== undefined) {
-      let _RegExp = RegExp;
-      let self = this;
-      let self2 = this;
-      let regExp = new RegExp(nextResult);
-      if (regExp.test(mainDocumentURL.url)) {
-        iter.return();
-        let flag = true;
+    if (null != framePolicy) {
+      const obj2 = isAllowedFrameNavigation;
+      if (obj2.isAllowedFrameNavigation(mainDocumentURL.url, framePolicy.routerOrigin, framePolicy.policy)) {
         return true;
+      }
+    } else {
+      const iter = first[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        let _RegExp = RegExp;
+        let self = this;
+        let self2 = this;
+        let regExp = new RegExp(nextResult);
+        if (regExp.test(mainDocumentURL.url)) {
+          iter.return();
+          let flag = true;
+          return true;
+        }
       }
     }
     const toURLSafe = URLUtilsDefault.toURLSafe;
@@ -3084,28 +1836,28 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
       str = "";
     }
     const toURLSafeResult = toURLSafe(str);
-    const tmp6Result = URLUtilsDefault;
-    const toURLSafeResult1 = tmp6Result.toURLSafe(mainDocumentURL.url);
+    const tmp13Result = URLUtilsDefault;
+    const toURLSafeResult1 = tmp13Result.toURLSafe(mainDocumentURL.url);
     return null != toURLSafeResult && null != toURLSafeResult1 && toURLSafeResult.origin + toURLSafeResult.pathname === toURLSafeResult1.origin + toURLSafeResult1.pathname;
   }, items10);
-  if (tmp37) {
-    tmp37 = null != tmp8;
+  if (tmp39) {
+    tmp39 = null != tmp8;
   }
-  if (tmp37) {
-    tmp37 = null != tmp11;
+  if (tmp39) {
+    tmp39 = null != tmp11;
   }
-  closure_28 = tmp37;
+  closure_30 = tmp39;
   ref = obj2.useRef(null);
   origin = undefined;
   if (tmp8 != null) {
     origin = tmp8.origin;
   }
-  const items11 = [rect, isPipOrGridMode, tmp37, memo, origin, safeAreasConfig];
+  const items11 = [rect, isPipOrGridMode, tmp39, memo, origin, safeAreasConfig];
   const effect5 = obj2.useEffect(() => {
     function tryInjectJavaScript() {
       return obj(...arguments);
     }
-    const tmp = closure_28;
+    const tmp = closure_30;
     if (tmp) {
       const tmp3 = null;
       if (null != memo) {
@@ -3128,6 +1880,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
                 return { value: "IconComponent", done: null };
               }
             } else {
+              let c7;
               try {
                 let closure_0;
                 c9 = 2;
@@ -3143,18 +1896,18 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
                     let closure_5 = tmp;
                     let closure_4 = tmp4;
                     closure_0 = undefined;
-                    const obj8 = closure_1_16;
-                    if (null != closure_1_16) {
-                      if (null != closure_1_30) {
-                        const tmp14 = c7;
+                    const obj8 = closure_1_17;
+                    if (null != closure_1_17) {
+                      if (null != closure_1_32) {
+                        const tmp14 = c8;
                         if (tmp14) {
                           rect = { top: 0, bottom: 0, left: 0, right: 0 };
                         } else {
-                          rect = closure_1_18;
+                          rect = closure_1_19;
                         }
-                        const rect2 = c8;
+                        const rect2 = c9;
                         let left;
-                        if (c8 != null) {
+                        if (c9 != null) {
                           left = rect2.left;
                         }
                         let left1;
@@ -3165,7 +1918,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
                         if (left1 == null) {
                           c0 = 0;
                         }
-                        const rect1 = { left: _undefined(left, c0), right: _undefined(right, c1), top: _undefined(top, c2), bottom: _undefined(bottom, c3) };
+                        const rect1 = { left: hadInvalidUrlError(left, c0), right: hadInvalidUrlError(right, c1), top: hadInvalidUrlError(top, c2), bottom: hadInvalidUrlError(bottom, c3) };
                         right = undefined;
                         if (rect2 != null) {
                           right = rect2.right;
@@ -3204,7 +1957,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
                         }
                         const obj4 = { type: "safeAreaUpdateEvent", data: obj5 };
                         obj5 = { insets: rect1 };
-                        const tmp30 = shellBridgeSecret(onActivityCrash[31])(obj4, tmp13);
+                        const tmp30 = iframeId(applicationId[34])(obj4, tmp13);
                         closure_0 = tmp30;
                         c7 = 1;
                         c8 = 2;
@@ -3250,7 +2003,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
       }
     }
   }, items11);
-  if (null != tmp29) {
+  if (null != tmp30) {
     if (null != tmp8) {
       let left;
       if (safeAreasConfig != null) {
@@ -3263,7 +2016,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
       if (num == null) {
         num = 0;
       }
-      let tmp42 = num;
+      let tmp44 = num;
       if (null != left) {
         let num3 = 0;
         if (!left.disable) {
@@ -3280,9 +2033,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
           }
           num3 = bound;
         }
-        tmp42 = num3;
+        tmp44 = num3;
       }
-      let rect1 = { left: tmp42, right: tmp45, top: tmp48, bottom: tmp51 };
+      let rect1 = { left: tmp44, right: tmp47, top: tmp50, bottom: tmp53 };
       let right;
       if (safeAreasConfig != null) {
         right = safeAreasConfig.right;
@@ -3294,7 +2047,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
       if (num4 == null) {
         num4 = 0;
       }
-      tmp45 = num4;
+      tmp47 = num4;
       if (null != right) {
         let num6 = 0;
         if (!right.disable) {
@@ -3311,7 +2064,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
           }
           num6 = bound1;
         }
-        tmp45 = num6;
+        tmp47 = num6;
       }
       let top;
       if (safeAreasConfig != null) {
@@ -3324,7 +2077,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
       if (num7 == null) {
         num7 = 0;
       }
-      tmp48 = num7;
+      tmp50 = num7;
       if (null != top) {
         let num9 = 0;
         if (!top.disable) {
@@ -3341,7 +2094,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
           }
           num9 = bound2;
         }
-        tmp48 = num9;
+        tmp50 = num9;
       }
       let bottom;
       if (safeAreasConfig != null) {
@@ -3354,7 +2107,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
       if (num10 == null) {
         num10 = 0;
       }
-      tmp51 = num10;
+      tmp53 = num10;
       if (null != bottom) {
         let num12 = 0;
         if (!bottom.disable) {
@@ -3371,23 +2124,23 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
           }
           num12 = bound3;
         }
-        tmp51 = num12;
+        tmp53 = num12;
       }
-      const obj7 = { insets: rect1, messageForDisallowedNavigationError: tmp54 };
-      tmp54 = undefined;
-      const createActivityFrameInjectedJavaScript = tmp2(tmp3[21]).createActivityFrameInjectedJavaScript;
-      tmp2(tmp3[21]);
-      if (!hadInvalidUrlError) {
-        tmp54 = guildId;
+      let obj6 = { insets: rect1, messageForDisallowedNavigationError: tmp56 };
+      tmp56 = undefined;
+      const createActivityFrameInjectedJavaScript = tmp2(tmp3[23]).createActivityFrameInjectedJavaScript;
+      tmp2(tmp3[23]);
+      if (!setHasInvalidUrlError) {
+        tmp56 = channelId;
       }
-      const activityFrameInjectedJavaScript = createActivityFrameInjectedJavaScript(obj7);
-      let tmp57Result = null;
+      const activityFrameInjectedJavaScript = createActivityFrameInjectedJavaScript(obj6);
+      let tmp59Result = null;
       if (null != tmp11) {
-        let obj8 = { style: tmp.webView, ref, source: obj9, androidAssetLoaderConfig: assetLoaderConfig, mixedContentMode: str2, androidInjectedJavaScriptForOrigins: tmp60, originWhitelist: ["*"], overScrollMode: "never", scrollEnabled: false, cacheEnabled: true, onError: callback, onContentProcessDidTerminate: callback2, onRenderProcessGone: callback1, webViewKey: iframeId, temporaryParentNodeTag: context, messagingWithWebViewKeyEnabled: true, allowFileAccess: tmp27, injectedJavaScript: tmp61, injectedJavaScriptForMainFrameOnly: false, onShouldStartLoadWithRequest: tmp62, mediaPlaybackRequiresUserAction: false, ignoreSilentHardwareSwitch, allowsInlineMediaPlayback: true, minimumFontSize: 1, bounces: false, allowsProtectedMedia: true };
+        const obj7 = { style: tmp.webView, ref, source: obj8, androidAssetLoaderConfig: assetLoaderConfig, mixedContentMode: str2, androidInjectedJavaScriptForOrigins: tmp62, originWhitelist: ["*"], overScrollMode: "never", scrollEnabled: false, cacheEnabled: true, onError: callback, onContentProcessDidTerminate: callback2, onRenderProcessGone: callback1, webViewKey: iframeId, temporaryParentNodeTag: context, messagingWithWebViewKeyEnabled: true, allowFileAccess: setHasInvalidUrlError, injectedJavaScript: tmp63, injectedJavaScriptForMainFrameOnly: false, onShouldStartLoadWithRequest: tmp64, mediaPlaybackRequiresUserAction: false, ignoreSilentHardwareSwitch, allowsInlineMediaPlayback: true, minimumFontSize: 1, bounces: false, allowsProtectedMedia: true };
+        obj8 = { uri: tmp30 };
         assetLoaderConfig = undefined;
-        obj9 = { uri: tmp29 };
-        const WebView = tmp2(tmp3[14]).WebView;
-        const tmp57 = activitySessionId;
+        const WebView = tmp2(tmp3[15]).WebView;
+        const tmp59 = guildId;
         if (androidWebViewShellConfig != null) {
           assetLoaderConfig = androidWebViewShellConfig.assetLoaderConfig;
         }
@@ -3400,28 +2153,28 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
         if (true === allowMixedContent) {
           str2 = "always";
         }
-        tmp60 = undefined;
-        if (null != androidWebViewShellConfig) {
-          tmp60 = { script: activityFrameInjectedJavaScript, allowedOriginRules: androidWebViewShellConfig.documentStartOriginRules };
-          const obj10 = { script: activityFrameInjectedJavaScript, allowedOriginRules: androidWebViewShellConfig.documentStartOriginRules };
-        }
-        tmp61 = undefined;
-        if (hadInvalidUrlError) {
-          tmp61 = activityFrameInjectedJavaScript;
-        }
         tmp62 = undefined;
-        if (hadInvalidUrlError) {
-          tmp62 = callback3;
+        if (null != androidWebViewShellConfig) {
+          tmp62 = { script: activityFrameInjectedJavaScript, allowedOriginRules: androidWebViewShellConfig.documentStartOriginRules };
+          const obj9 = { script: activityFrameInjectedJavaScript, allowedOriginRules: androidWebViewShellConfig.documentStartOriginRules };
         }
-        tmp57Result = tmp57(WebView, obj8);
+        tmp63 = undefined;
+        if (setHasInvalidUrlError) {
+          tmp63 = activityFrameInjectedJavaScript;
+        }
+        tmp64 = undefined;
+        if (setHasInvalidUrlError) {
+          tmp64 = callback3;
+        }
+        tmp59Result = tmp59(WebView, obj7);
       }
-      return tmp57Result;
+      return tmp59Result;
     }
   }
   return null;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasInvalidUrlErrorState() {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasInvalidUrlErrorState() {
   let first;
   let tmp4;
   const obj = react2;
@@ -3446,6 +2199,6 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHas
   const obj = { hasInvalidUrlError: first, setHasInvalidUrlError: tmp[1], hadInvalidUrlError: usePreviousDefault(first) };
   return obj;
 });
-const result = size.fileFinishedImporting("modules/embedded_apps/native/components/BaseEmbeddedAppWebView.tsx");
+let result = size.fileFinishedImporting("modules/embedded_apps/native/components/BaseEmbeddedAppWebView.tsx");
 
 export const BaseEmbeddedAppWebView = tmp3;

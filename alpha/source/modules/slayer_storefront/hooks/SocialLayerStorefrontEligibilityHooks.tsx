@@ -1,19 +1,19 @@
-// Module ID: 9315
-// Function ID: 9316
+// Module ID: 9343
+// Function ID: 9344
 // Name: SocialLayerStorefrontEligibilityHooks
-// Dependencies: [19, 9316, 2021, 7652, 4822, 5674, 7281, 558, 576, 8761, 504, 9317, 2]
+// Dependencies: [19, 9344, 2021, 7680, 4843, 5694, 7309, 558, 576, 8788, 504, 9345, 2]
 // Exports: useIsCurrentUserPlayingSocialLayerStorefrontGames
 
-// Module 9315 (SocialLayerStorefrontEligibilityHooks)
+// Module 9343 (SocialLayerStorefrontEligibilityHooks)
 import react2 from "react" /* 576 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8761 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8788 */;
 import react from "react" /* 19 */;
-import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9316 */;
+import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9344 */;
 import RunningGameStore from "RunningGameStore" /* 2021 */;
-import UserProfileStore from "UserProfileStore" /* 7652 */;
-import GuildStore from "GuildStore" /* 4822 */;
-import PresenceStore from "PresenceStore" /* 5674 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7281 */;
+import UserProfileStore from "UserProfileStore" /* 7680 */;
+import GuildStore from "GuildStore" /* 4843 */;
+import PresenceStore from "PresenceStore" /* 5694 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7309 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -255,7 +255,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUsersPlay
   }
   const tmp2Result = tmp2(504);
   const stateFromStoresArray = tmp2Result.useStateFromStoresArray(first, tmp8, tmp9);
-  const tmp2Result2 = tmp2(9317);
+  const tmp2Result2 = tmp2(9345);
   const slayerStorefrontDevApplicationIdOverride = tmp2Result2.useSlayerStorefrontDevApplicationIdOverride();
   let tmp12 = stateFromStoresArray;
   if (null != slayerStorefrontDevApplicationIdOverride) {

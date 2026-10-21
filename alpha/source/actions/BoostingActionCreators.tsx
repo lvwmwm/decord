@@ -1,17 +1,17 @@
-// Module ID: 8316
-// Function ID: 8317
+// Module ID: 8344
+// Function ID: 8345
 // Name: actions/BoostingActionCreators
-// Dependencies: [5, 8317, 8318, 2059, 1087, 1297, 584, 6331, 2]
+// Dependencies: [5, 8345, 8346, 2058, 1087, 1297, 584, 6353, 2]
 // Exports: applyToGuild, cancelGuildBoostSlot, fetchAppliedBoostsCooldown, fetchAppliedGuildBoostsForGuild, fetchAppliedGuildBoostsForUser, unapplyFromGuild, uncancelGuildBoostSlot
 
-// Module 8316 (actions/BoostingActionCreators)
+// Module 8344 (actions/BoostingActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 8317 */;
-import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 8318 */;
-import SubscriptionStore from "SubscriptionStore" /* 2059 */;
+import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 8345 */;
+import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 8346 */;
+import SubscriptionStore from "SubscriptionStore" /* 2058 */;
 import size from "module_2" /* 2 */;
 
 let boostId, closure_3, closure_4, closure_5;
@@ -57,7 +57,7 @@ let obj = function _fetchAppliedGuildBoostsForGuild() {
               tmp = undefined;
               c4 = 1;
               c5 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c4) {
             if (arg0 === 1) {
@@ -145,7 +145,7 @@ obj = function _fetchAppliedGuildBoostsForUser() {
             tmp = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -351,7 +351,7 @@ obj = function _applyToGuild() {
               appliedGuildBoostError = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

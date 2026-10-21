@@ -1,14 +1,14 @@
-// Module ID: 9698
-// Function ID: 9699
+// Module ID: 9728
+// Function ID: 9729
 // Name: DenyIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8626, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8653, 5650, 2]
 
-// Module 9698 (DenyIcon)
+// Module 9728 (DenyIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 8626 */;
+import BaseIconImage2 from "BaseIconImage" /* 5650 */;
+import AssetRegistry from "AssetRegistry" /* 8653 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DenyIcon(a
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(5630).BaseIconImage;
+  const BaseIconImage = tmp(5650).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

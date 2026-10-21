@@ -1,42 +1,31 @@
 // Module ID: 12497
 // Function ID: 12498
-// Dependencies: [12429, 12450, 12479]
+// Dependencies: [12480, 12481]
+// Exports: getMainCarrier, getSentryCarrier
 
 // Module 12497
-import module_12479 from "module_12479" /* 12479 */;
+import _mod12480 from "module_12480" /* 12480 */;
+import _mod12481 from "module_12481" /* 12481 */;
 
-let has, toString;
 
-const weakMap = new WeakMap();
-
-export const functionToStringIntegration = module_12479.defineIntegration(() => {
-  let obj = {
-    name: "FunctionToString",
-    setupOnce() {
-      toString = Function.prototype.toString;
-      try {
-        const _Function = Function;
-        Function.prototype.toString = function() {
-          const items = [...arguments];
-          const obj = closure_1_0(closure_1_1[0]);
-          const originalFunction = obj.getOriginalFunction(this);
-          has = has.has;
-          let self = this;
-          const obj2 = closure_1_0(closure_1_1[1]);
-          if (has(obj2.getClient())) {
-            self = this;
-            if (undefined !== originalFunction) {
-              self = originalFunction;
-            }
-          }
-          return toString.apply(self, items);
-        };
-      } catch (err) {
-      }
-    },
-    setup(arg0) {
-      const result = weakMap.set(arg0, true);
-    }
-  };
-  return obj;
-});
+export const getMainCarrier = function getMainCarrier() {
+  const GLOBAL_OBJ = _mod12480.GLOBAL_OBJ;
+  const tmp3 = GLOBAL_OBJ.__SENTRY__ || {};
+  GLOBAL_OBJ.__SENTRY__ = tmp3;
+  tmp3.version = tmp3.version || _mod12481.SDK_VERSION;
+  tmp3.version || _mod12481.SDK_VERSION;
+  const SDK_VERSION = tmp(12481).SDK_VERSION;
+  tmp3[SDK_VERSION] = tmp3[_mod12481.SDK_VERSION] || {};
+  tmp3[_mod12481.SDK_VERSION] || {};
+  return _mod12480.GLOBAL_OBJ;
+};
+export const getSentryCarrier = function getSentryCarrier(__SENTRY__) {
+  const tmp = __SENTRY__.__SENTRY__ || {};
+  __SENTRY__.__SENTRY__ = tmp;
+  const SDK_VERSION = tmp.version || _mod12481.SDK_VERSION;
+  tmp.version = SDK_VERSION;
+  const SDK_VERSION2 = _mod12481.SDK_VERSION;
+  const tmp4 = tmp[_mod12481.SDK_VERSION] || {};
+  tmp[SDK_VERSION2] = tmp4;
+  return tmp4;
+};

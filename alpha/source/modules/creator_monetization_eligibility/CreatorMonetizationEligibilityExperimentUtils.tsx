@@ -1,14 +1,14 @@
-// Module ID: 7310
-// Function ID: 7311
+// Module ID: 7338
+// Function ID: 7339
 // Name: CreatorMonetizationEligibilityExperimentUtils
-// Dependencies: [1392, 2055, 1087, 558, 576, 504, 2]
+// Dependencies: [1392, 2054, 1087, 558, 576, 504, 2]
 // Exports: isExpeditedMonetizationOnboardingGuild, isRavenOnboardingGuild, isUserInCreatorMonetizationEligibleCountry, isWhitegloveOnboardingGuild, useIsRavenOnboardingGuild, useIsWhitegloveOnboardingGuild
 
-// Module 7310 (CreatorMonetizationEligibilityExperimentUtils)
+// Module 7338 (CreatorMonetizationEligibilityExperimentUtils)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import UserStore from "UserStore" /* 1392 */;
-import BillingInfoStore from "BillingInfoStore" /* 2055 */;
+import BillingInfoStore from "BillingInfoStore" /* 2054 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

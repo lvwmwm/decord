@@ -1,15 +1,15 @@
-// Module ID: 11736
-// Function ID: 11737
+// Module ID: 11784
+// Function ID: 11785
 // Name: AnimatedKeyboardProviderController
-// Dependencies: [19, 21, 5014, 558, 576, 11737, 1647, 2]
+// Dependencies: [19, 21, 5035, 558, 576, 11785, 1647, 2]
 
-// Module 11736 (AnimatedKeyboardProviderController)
+// Module 11784 (AnimatedKeyboardProviderController)
 import react2 from "react" /* 576 */;
 import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1647 */;
-import KeyboardPreloadExperiment2 from "KeyboardPreloadExperiment" /* 11737 */;
+import KeyboardPreloadExperiment2 from "KeyboardPreloadExperiment" /* 11785 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 5014 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 5035 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Component(ch
   } else {
     first = cResult[0];
   }
-  const KeyboardPreloadExperiment = tmp(11737).KeyboardPreloadExperiment;
+  const KeyboardPreloadExperiment = tmp(11785).KeyboardPreloadExperiment;
   const tmp5 = !KeyboardPreloadExperiment.useConfig(first).disablePreload;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const tmp9 = React2(closure_12, {});

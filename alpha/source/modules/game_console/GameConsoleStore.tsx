@@ -1,13 +1,13 @@
-// Module ID: 5677
-// Function ID: 5678
+// Module ID: 5697
+// Function ID: 5698
 // Name: GameConsoleStore
-// Dependencies: [5678, 5591, 504, 584, 2]
+// Dependencies: [5698, 5612, 504, 584, 2]
 
-// Module 5677 (GameConsoleStore)
+// Module 5697 (GameConsoleStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import SessionsStore from "SessionsStore" /* 5678 */;
-import VoiceStateStore from "VoiceStateStore" /* 5591 */;
+import SessionsStore from "SessionsStore" /* 5698 */;
+import VoiceStateStore from "VoiceStateStore" /* 5612 */;
 import size from "module_2" /* 2 */;
 
 let c2 = null;

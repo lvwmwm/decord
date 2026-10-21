@@ -1,18 +1,18 @@
-// Module ID: 13732
-// Function ID: 13733
+// Module ID: 13807
+// Function ID: 13808
 // Name: SocialLayerStorefrontWishlistItemCard
-// Dependencies: [109, 19, 2046, 13730, 21, 4945, 587, 558, 576, 504, 9348, 5631, 9296, 2]
+// Dependencies: [109, 19, 2045, 13805, 21, 4966, 587, 558, 576, 504, 9376, 5651, 9324, 2]
 
-// Module 13732 (SocialLayerStorefrontWishlistItemCard)
+// Module 13807 (SocialLayerStorefrontWishlistItemCard)
 import nativeDefault from "native" /* 587 */;
-import WishlistItemCardBaseDefault from "WishlistItemCardBase" /* 9296 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9348 */;
+import WishlistItemCardBaseDefault from "WishlistItemCardBase" /* 9324 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9376 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2046 */;
-import SentGiftsStore from "SentGiftsStore" /* 13730 */;
+import ApplicationStore from "ApplicationStore" /* 2045 */;
+import SentGiftsStore from "SentGiftsStore" /* 13805 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let metroImportAll;
 let obj2;
 let size;
 let tmp4;
-const FastImageDefault = tmp4(5631);
+const FastImageDefault = tmp4(5651);
 let closure_3 = ["sku", "isOwned", "source", "wishlistOwnerId", "size"];
 let _objectWithoutProperties = _objectWithoutProperties_mod;
 ({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = Fragment);
@@ -201,7 +201,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SocialLayerStore
               cResult[30] = tmp36;
               tmp29 = tmp36;
             }
-            OWNED = tmp(9296).WishlistItemCardOverlay.OWNED;
+            OWNED = tmp(9324).WishlistItemCardOverlay.OWNED;
           }
         }
       }

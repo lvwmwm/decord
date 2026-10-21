@@ -1,30 +1,30 @@
-// Module ID: 12842
-// Function ID: 12843
+// Module ID: 12910
+// Function ID: 12911
 // Name: TraitPicker
-// Dependencies: [32, 19, 17, 4946, 1392, 12779, 5973, 21, 587, 4945, 12843, 558, 576, 6319, 1128, 3078, 12797, 5195, 504, 5228, 1991, 6321, 5974, 5560, 5014, 5167, 12845, 2]
+// Dependencies: [32, 19, 17, 4967, 1392, 12843, 5995, 21, 587, 4966, 12911, 558, 576, 6341, 1128, 3088, 12861, 5216, 504, 5249, 1991, 6343, 5996, 5581, 5035, 5188, 12913, 2]
 
-// Module 12842 (TraitPicker)
+// Module 12910 (TraitPicker)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import _modDef3078 from "module_3078" /* 3078 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
-import timing from "timing" /* 5167 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import CheckpointConstants from "CheckpointConstants" /* 5973 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5974 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6319 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6321 */;
-import CheckpointTextDefault from "CheckpointText" /* 12797 */;
-import TraitOptionList from "TraitOptionList" /* 12843 */;
+import _modDef3088 from "module_3088" /* 3088 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
+import timing from "timing" /* 5188 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import CheckpointConstants from "CheckpointConstants" /* 5995 */;
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5996 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6341 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6343 */;
+import CheckpointTextDefault from "CheckpointText" /* 12861 */;
+import TraitOptionList from "TraitOptionList" /* 12911 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 4946 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 4967 */;
 import UserStore_mod from "UserStore" /* 1392 */;
-import CheckpointStore from "CheckpointStore" /* 12779 */;
+import CheckpointStore from "CheckpointStore" /* 12843 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -120,7 +120,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Earned
     }
     const intl2 = tmp(1128).intl;
     const obj3 = { earnedCount, totalCount, countHook: tmp15 };
-    const formatResult = intl2.format(_modDef3078.Vfq58K, obj3);
+    const formatResult = intl2.format(_modDef3088.Vfq58K, obj3);
     cResult[6] = earnedCount;
     cResult[7] = totalCount;
     cResult[8] = formatResult;
@@ -144,7 +144,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Earned
     }
   }
   const intl = tmp(1128).intl;
-  const formatToPlainStringResult = intl.formatToPlainString(_modDef3078.Vfq58K, { earnedCount, totalCount, countHook: tmp8 });
+  const formatToPlainStringResult = intl.formatToPlainString(_modDef3088.Vfq58K, { earnedCount, totalCount, countHook: tmp8 });
   cResult[2] = earnedCount;
   cResult[3] = totalCount;
   cResult[4] = formatToPlainStringResult;
@@ -167,8 +167,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Earned
       return arg0;
     }
   };
-  const combined = "" + customizationOptionName + ", " + intl.formatToPlainString(_modDef3078.Vfq58K, obj2);
-  const obj3 = { variant: "experimental/body-sm/medium", color: "text-default", style: tmp.earnedRow, accessibilityRole: "header", accessibilityLabel: combined, children: intl2.format(_modDef3078.Vfq58K, obj4) };
+  const combined = "" + customizationOptionName + ", " + intl.formatToPlainString(_modDef3088.Vfq58K, obj2);
+  const obj3 = { variant: "experimental/body-sm/medium", color: "text-default", style: tmp.earnedRow, accessibilityRole: "header", accessibilityLabel: combined, children: intl2.format(_modDef3088.Vfq58K, obj4) };
   const Text = Text_Text.Text;
   intl2 = intl3.intl;
   obj4 = {
@@ -235,7 +235,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
   }
   const tmp2Result = selectedOptionId(504);
   const stateFromStores = tmp2Result.useStateFromStores(tmp11, tmp12);
-  const tmp2Result5 = selectedOptionId(5228);
+  const tmp2Result5 = selectedOptionId(5249);
   const isScreenReaderEnabled = tmp2Result5.useIsScreenReaderEnabled();
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [stats];
@@ -305,7 +305,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
                       return obj.isPremium(currentUser.getCurrentUser());
                     }
                   }
-                  const tmp57 = onSelectOption(5560)(tmp53);
+                  const tmp57 = onSelectOption(5581)(tmp53);
                   stats = tmp58;
                   function st() {
                     let Easing;
@@ -320,7 +320,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
                     }
                     let num2 = 0;
                     const obj2 = { opacity: withTiming(num, obj), transform: items };
-                    const withTiming2 = tmp(5167).withTiming;
+                    const withTiming2 = tmp(5188).withTiming;
                     timing;
                     if (!stats) {
                       num2 = PX_12;
@@ -623,8 +623,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
       }
     }
   }
-  const tmp2Result8 = selectedOptionId(6321);
-  const visibleTraitRarities = tmp2Result8.getVisibleTraitRarities(tmp2(6319).CUSTOMIZATION_OPTION_TRAITS[customizationOption], stateFromStores1);
+  const tmp2Result8 = selectedOptionId(6343);
+  const visibleTraitRarities = tmp2Result8.getVisibleTraitRarities(tmp2(6341).CUSTOMIZATION_OPTION_TRAITS[customizationOption], stateFromStores1);
   const items6 = [];
   let num7 = 0;
   let num8 = 0;
@@ -648,7 +648,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
         }
       }
     }
-    let tmp35 = tmp27.rarity === selectedOptionId(5974).CheckpointTraitRarity.NITRO && !stateFromStores2;
+    let tmp35 = tmp27.rarity === selectedOptionId(5996).CheckpointTraitRarity.NITRO && !stateFromStores2;
     let tmp36 = tmp35;
     if (null != tmp27.rarity) {
       num7 = num7 + 1;
@@ -917,7 +917,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
       }
       let num2 = 0;
       const obj2 = { opacity: withTiming(num, obj), transform: items };
-      const withTiming2 = tmp(5167).withTiming;
+      const withTiming2 = tmp(5188).withTiming;
       timing;
       if (!closure_13) {
         num2 = PX_12;

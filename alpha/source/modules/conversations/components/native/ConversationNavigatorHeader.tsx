@@ -1,23 +1,23 @@
-// Module ID: 9683
-// Function ID: 9684
+// Module ID: 9713
+// Function ID: 9714
 // Name: ConversationNavigatorHeader
-// Dependencies: [19, 17, 4800, 21, 4945, 587, 558, 576, 504, 5565, 9627, 5213, 1385, 1128, 9684, 2]
+// Dependencies: [19, 17, 4821, 21, 4966, 587, 558, 576, 504, 5586, 9657, 5234, 1385, 1128, 9714, 2]
 // Exports: conversationNavigatorFocusHeaderOptions, conversationNavigatorListHeaderOptions
 
-// Module 9683 (ConversationNavigatorHeader)
+// Module 9713 (ConversationNavigatorHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
-import useToken from "useToken" /* 5213 */;
-import useChannelNameDefault from "useChannelName" /* 5565 */;
-import HeaderShared from "HeaderShared" /* 9627 */;
-import ConversationNavigatorMoreMenuDefault from "ConversationNavigatorMoreMenu" /* 9684 */;
+import useToken from "useToken" /* 5234 */;
+import useChannelNameDefault from "useChannelName" /* 5586 */;
+import HeaderShared from "HeaderShared" /* 9657 */;
+import ConversationNavigatorMoreMenuDefault from "ConversationNavigatorMoreMenu" /* 9714 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4800 */;
-import createStyles from "createStyles" /* 4945 */;
+import ChannelStore from "ChannelStore" /* 4821 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -94,7 +94,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Convers
     cResult[9] = tmp18;
     tmp15 = tmp18;
   }
-  const tmp14 = jsx(channelId(9627).GenericHeaderTitle, { title, subtitle: tmp12, variant: "heading-lg/semibold", subtitleColor: "text-muted" });
+  const tmp14 = jsx(channelId(9657).GenericHeaderTitle, { title, subtitle: tmp12, variant: "heading-lg/semibold", subtitleColor: "text-muted" });
   cResult[4] = tmp12;
   cResult[5] = title;
   cResult[6] = tmp14;
@@ -112,7 +112,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Convers
   const obj = channelId(504);
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
   const tmp3 = useChannelNameDefault(stateFromStores, true);
-  const GenericHeaderTitle = channelId(9627).GenericHeaderTitle;
+  const GenericHeaderTitle = channelId(9657).GenericHeaderTitle;
   return <tmp5 style={tmp.container}>{null}</tmp5>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;

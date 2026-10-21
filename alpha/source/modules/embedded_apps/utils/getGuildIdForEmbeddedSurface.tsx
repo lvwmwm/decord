@@ -1,11 +1,11 @@
-// Module ID: 9201
-// Function ID: 9202
+// Module ID: 9228
+// Function ID: 9229
 // Name: getGuildIdForEmbeddedSurface
-// Dependencies: [5587, 2]
+// Dependencies: [5608, 2]
 // Exports: default
 
-// Module 9201 (getGuildIdForEmbeddedSurface)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5587 */;
+// Module 9228 (getGuildIdForEmbeddedSurface)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5608 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/embedded_apps/utils/getGuildIdForEmbeddedSurface.tsx");
@@ -17,7 +17,7 @@ export default function getGuildIdForEmbeddedSurface(type) {
       if (EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL !== type) {
         if (EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL !== type) {
           if (EmbeddedSurfaceType.EmbeddedSurfaceType.INTERACTION_MODAL !== type) {
-            const OVERLAY = tmp(5587).EmbeddedSurfaceType.OVERLAY;
+            const OVERLAY = tmp(5608).EmbeddedSurfaceType.OVERLAY;
           }
         }
       }

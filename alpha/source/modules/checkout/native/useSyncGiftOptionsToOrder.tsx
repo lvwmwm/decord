@@ -1,13 +1,13 @@
-// Module ID: 10510
-// Function ID: 10511
+// Module ID: 10539
+// Function ID: 10540
 // Name: useSyncGiftOptionsToOrder
-// Dependencies: [32, 19, 7485, 3, 558, 576, 10381, 7490, 4764, 2]
+// Dependencies: [32, 19, 7513, 3, 558, 576, 10410, 7518, 4785, 2]
 
-// Module 10510 (useSyncGiftOptionsToOrder)
+// Module 10539 (useSyncGiftOptionsToOrder)
 import LoggerDefault from "Logger" /* 3 */;
-import BillingUtils from "BillingUtils" /* 4764 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7485 */;
-import useGiftOptionsSyncDebounceDefault from "useGiftOptionsSyncDebounce" /* 10381 */;
+import BillingUtils from "BillingUtils" /* 4785 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7513 */;
+import useGiftOptionsSyncDebounceDefault from "useGiftOptionsSyncDebounce" /* 10410 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -275,7 +275,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncGiftO
                     closure_1_10((arg0) => arg0 + 1);
                   } else if (ref4.current < 3) {
                     const _setTimeout = setTimeout;
-                    ref8.current = setTimeout(() => closure_1_10(() => { /* body not rendered: F160217 */ }), 500 * 2 ** (ref4.current - 1));
+                    ref8.current = setTimeout(() => closure_1_10(() => { /* body not rendered: F160744 */ }), 500 * 2 ** (ref4.current - 1));
                   } else {
                     resolveSyncs(false);
                   }

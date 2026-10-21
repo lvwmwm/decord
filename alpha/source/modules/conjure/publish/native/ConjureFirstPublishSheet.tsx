@@ -1,18 +1,18 @@
-// Module ID: 11726
-// Function ID: 11727
+// Module ID: 11770
+// Function ID: 11771
 // Name: ConjureFirstPublishSheet
-// Dependencies: [5, 32, 19, 17, 21, 4945, 587, 558, 576, 11686, 11689, 5171, 11727, 1128, 3820, 7197, 11690, 5195, 5205, 7247, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4966, 587, 558, 576, 11732, 11735, 11771, 5192, 11772, 1128, 3830, 7225, 11736, 11779, 5216, 5226, 7275, 2]
 // Exports: showConjureFirstPublishSheet
 
-// Module 11726 (ConjureFirstPublishSheet)
+// Module 11770 (ConjureFirstPublishSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5171 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5192 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,39 +38,38 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
   let name;
   let obj2;
   let str;
-  let tmp12;
+  let tmp14;
   let trimmed;
+  const tmp = name;
   let obj = trimmed(name[8]);
-  const cResult = obj.c(51);
+  const cResult = obj.c(54);
   projectId = projectId.projectId;
   name = projectId.name;
   let description = projectId.description;
   const onDone = projectId.onDone;
-  closure_10();
+  const tmp3 = closure_10();
+  const tmp4 = projectId;
   const iconURL = projectId(name[9])(projectId).iconURL;
-  const tmp3 = onDone(first.useState(name), 2);
-  [str, r10027] = tmp3;
-  const tmp4 = onDone(first.useState(description), 2);
-  first = tmp4[0];
-  const tmp6 = onDone(first.useState(null), 2);
-  const first1 = tmp6[0];
-  let closure_7 = tmp6[1];
-  [r10042, closure_8] = onDone(first.useState(null), 2);
+  [str, r10027] = onDone(first.useState(name), 2);
+  const tmp5 = onDone(first.useState(name), 2);
+  const tmp6 = onDone(first.useState(description), 2);
+  first = tmp6[0];
   const tmp8 = onDone(first.useState(null), 2);
-  const tmp9 = onDone(first.useState(false), 2);
-  const first2 = tmp9[0];
-  closure_10 = tmp9[1];
+  const first1 = tmp8[0];
+  let closure_7 = tmp8[1];
+  [r10042, closure_8] = onDone(first.useState(null), 2);
+  const tmp10 = onDone(first.useState(null), 2);
+  const tmp11 = onDone(first.useState(false), 2);
+  const first2 = tmp11[0];
+  closure_10 = tmp11[1];
   if (cResult[0] === name) {
-    let tmp11;
+    let tmp13;
     if (cResult[1] === str) {
-      tmp11 = cResult[2];
+      tmp13 = cResult[2];
       trimmed = cResult[3];
     }
-    closure_11 = tmp11;
-    let tmp15 = first1;
-    if (first1 == null) {
-      tmp15 = iconURL;
-    }
+    closure_11 = tmp13;
+    tmp4(tmp[11])(projectId);
     if (cResult[4] !== onDone) {
       class H {
         constructor() {
@@ -90,7 +89,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
         }
       }
     }
-    H = tmp16;
+    H = tmp19;
     if (cResult[6] === first) {
       class H {
         constructor() {
@@ -139,7 +138,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
                   name = 1;
                   description = 1;
                   const obj7 = { value: obj5.saveConjureFirstPublishDetails(closure_1, obj4, obj6), done: false };
-                  obj5 = name(name[12]);
+                  obj5 = name(name[13]);
                   return obj7;
                 }
               }
@@ -157,8 +156,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
             if (name) {
               closure_1_12();
             } else {
-              const intl = name(name[13]).intl;
-              closure_1_8(intl.string(projectId(name[14]).Fi7boI));
+              const intl = name(name[14]).intl;
+              closure_1_8(intl.string(projectId(name[15]).Fi7boI));
             }
           }
           description = 3;
@@ -173,14 +172,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
       return closure_0(...arguments);
     }
     cResult[6] = first;
-    cResult[7] = tmp16;
+    cResult[7] = tmp19;
     cResult[8] = first1;
     cResult[9] = description;
     cResult[10] = name;
-    cResult[11] = tmp11;
+    cResult[11] = tmp13;
     cResult[12] = projectId;
     cResult[13] = first2;
-    cResult[14] = tmp12;
+    cResult[14] = tmp14;
     cResult[15] = publish;
   }
   trimmed = str.trim();
@@ -199,8 +198,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
   cResult[1] = str;
   cResult[2] = result;
   cResult[3] = trimmed;
-  tmp11 = result;
-  tmp12 = trimmed;
+  tmp13 = result;
+  tmp14 = trimmed;
 }) : (function ConjureFirstPublishSheet(projectId) {
   let BottomSheetTitleHeader;
   let _undefined;
@@ -267,7 +266,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
                   _undefined(null);
                   const obj4 = { name: name2, icon, description: description2 };
                   const obj6 = { name, description };
-                  const obj5 = tmp4(description[12]);
+                  const obj5 = tmp4(description[13]);
                   description = 1;
                   c3 = 1;
                   const obj7 = { value: obj5.saveConjureFirstPublishDetails(projectId, obj4, obj6), done: false };
@@ -288,8 +287,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
             if (tmp4) {
               closure_129_12();
             } else {
-              const intl = tmp4(description[13]).intl;
-              closure_129_7(intl.string(tmp(description[14]).Fi7boI));
+              const intl = tmp4(description[14]).intl;
+              closure_129_7(intl.string(tmp(description[15]).Fi7boI));
             }
           }
           c3 = 3;
@@ -327,6 +326,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
   }
   c11 = result;
   const items = [onDone];
+  const tmp18 = name(tmp3[11])(projectId);
   onPress = obj.useCallback(() => {
     obj = ActionSheetActionCreatorsDefault;
     obj.hideActionSheet(ConjureFirstPublishSheet_str);
@@ -339,15 +339,15 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
       return onDone(false);
     },
     header: c7(BottomSheetTitleHeader, obj4),
-    children: tmp21(tmp22, obj5)
+    children: tmp22(tmp23, obj5)
   };
-  const ActionSheet = projectId(tmp3[19]).ActionSheet;
-  obj4 = { title: intl.string(tmp2(tmp3[14]).OmOWDq), subtitle: intl2.string(tmp2(tmp3[14]).Gzmlyg) };
-  BottomSheetTitleHeader = projectId(tmp3[15]).BottomSheetTitleHeader;
-  intl = projectId(tmp3[13]).intl;
-  intl2 = projectId(tmp3[13]).intl;
+  const ActionSheet = projectId(tmp3[21]).ActionSheet;
+  obj4 = { title: intl.string(tmp2(tmp3[15]).OmOWDq), subtitle: intl2.string(tmp2(tmp3[15]).Gzmlyg) };
+  BottomSheetTitleHeader = projectId(tmp3[16]).BottomSheetTitleHeader;
+  intl = projectId(tmp3[14]).intl;
+  intl2 = projectId(tmp3[14]).intl;
   obj5 = { style: tmp.content, children: items1 };
-  const ConjureAppIdentitySection = projectId(tmp3[16]).ConjureAppIdentitySection;
+  const ConjureAppIdentitySection = projectId(tmp3[17]).ConjureAppIdentitySection;
   if (first1 == null) {
     first1 = iconURL;
   }
@@ -364,23 +364,23 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
     onDescriptionChange: tmp8,
     disabled: first2
   };
-  items1 = [tmp19(ConjureAppIdentitySection, obj6), , ];
-  let tmp19Result = null;
+  items1 = [tmp20(ConjureAppIdentitySection, obj6), tmp20(tmp2(tmp3[18]), { permissions: tmp18 }), , ];
+  let tmp20Result = null;
   if (null != tmp12) {
-    let obj7 = { accessibilityRole: "alert", children: tmp19(tmp20(tmp3[17]).Text, obj8) };
+    let obj7 = { accessibilityRole: "alert", children: tmp20(tmp21(tmp3[19]).Text, obj8) };
     obj8 = { variant: "text-sm/normal", color: "text-feedback-critical", children: tmp12 };
-    tmp19Result = tmp19(tmp22, obj7);
+    tmp20Result = tmp20(tmp23, obj7);
   }
-  items1[1] = tmp19Result;
+  items1[2] = tmp20Result;
   const obj9 = { style: tmp.actions, children: items2 };
-  const obj10 = { variant: "secondary", grow: true, text: intl3.string(name(tmp3[14])["bz/M68"]), disabled: first2, onPress };
-  const Button = tmp20(tmp3[18]).Button;
-  intl3 = tmp20(tmp3[13]).intl;
-  items2 = [tmp19(Button, obj10), ];
+  const obj10 = { variant: "secondary", grow: true, text: intl3.string(name(tmp3[15])["bz/M68"]), disabled: first2, onPress };
+  const Button = tmp21(tmp3[20]).Button;
+  intl3 = tmp21(tmp3[14]).intl;
+  items2 = [tmp20(Button, obj10), ];
   const obj11 = {
     variant: "primary",
     grow: true,
-    text: intl4.string(name(tmp3[14]).dyIV6M),
+    text: intl4.string(name(tmp3[15]).dyIV6M),
     loading: first2,
     disabled: null != result,
     onPress() {
@@ -393,10 +393,10 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
       });
     }
   };
-  const Button2 = tmp20(tmp3[18]).Button;
-  intl4 = tmp20(tmp3[13]).intl;
+  const Button2 = tmp21(tmp3[20]).Button;
+  intl4 = tmp21(tmp3[14]).intl;
   items2[1] = c7(Button2, obj11);
-  items1[2] = first2(closure_6, obj9);
+  items1[3] = first2(closure_6, obj9);
   return c7(ActionSheet, obj3);
 });
 let result = size.fileFinishedImporting("modules/conjure/publish/native/ConjureFirstPublishSheet.tsx");

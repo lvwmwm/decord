@@ -1,10 +1,10 @@
-// Module ID: 6598
-// Function ID: 6599
+// Module ID: 6626
+// Function ID: 6627
 // Name: getTitleFromPickedStreamContent
 // Dependencies: [1128, 2]
 // Exports: default
 
-// Module 6598 (getTitleFromPickedStreamContent)
+// Module 6626 (getTitleFromPickedStreamContent)
 import intl2 from "intl" /* 1128 */;
 import size from "module_2" /* 2 */;
 

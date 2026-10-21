@@ -1,27 +1,27 @@
-// Module ID: 18980
-// Function ID: 18981
+// Module ID: 19057
+// Function ID: 19058
 // Name: CreatorBenefitsSection
-// Dependencies: [19, 17, 16311, 21, 4945, 587, 4952, 558, 576, 5166, 5195, 1128, 5631, 18981, 18982, 18983, 18984, 18985, 18986, 18987, 18988, 2]
+// Dependencies: [19, 17, 16387, 21, 4966, 587, 4973, 558, 576, 5187, 5216, 1128, 5651, 19058, 19059, 19060, 19061, 19062, 19063, 19064, 19065, 2]
 
-// Module 18980 (CreatorBenefitsSection)
+// Module 19057 (CreatorBenefitsSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import shared from "shared" /* 4952 */;
-import useThemeDefault from "useTheme" /* 5166 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import FastImageDefault from "FastImage" /* 5631 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16311 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18981 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18984 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 18985 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 18986 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 18987 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 18988 */;
+import shared from "shared" /* 4973 */;
+import useThemeDefault from "useTheme" /* 5187 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import FastImageDefault from "FastImage" /* 5651 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16387 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19058 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 19061 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 19062 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 19063 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 19064 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 19065 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -82,7 +82,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Earning
               const _Symbol = Symbol;
               if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
                 const obj2 = { variant: "text-sm/normal", color: "mobile-text-heading-primary", children: intl.string(intl3.t.TXPK7B) };
-                const Text = tmp(5195).Text;
+                const Text = tmp(5216).Text;
                 intl = tmp(1128).intl;
                 const tmp16 = hasOwnProperty(Text, obj2);
                 cResult[14] = tmp16;
@@ -215,10 +215,10 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Earning
   const tmp7Result = shared;
   items1[2] = tmp7Result.isThemeDark(tmp3) ? tmp4.earningMetricsDarkMode : tmp4.earningMetricsLightMode;
   const obj4 = { variant: "text-sm/normal", color: "mobile-text-heading-primary", children: intl.string(intl3.t.TXPK7B) };
-  const Text = tmp7(5195).Text;
+  const Text = tmp7(5216).Text;
   intl = tmp7(1128).intl;
   const items2 = [hasOwnProperty(Text, obj4), ];
-  const Text2 = tmp7(5195).Text;
+  const Text2 = tmp7(5216).Text;
   const obj5 = { children: items2 };
   const tmp7Result2 = shared;
   const obj6 = { style: tmp7Result2.isThemeDark(tmp3) ? tmp4.greenTextDarkMode : tmp4.greenTextLightMode, variant: "heading-lg/extrabold", children: intl2.string(intl3.t.LdjJG5) };
@@ -279,9 +279,9 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Consist
     }
     const tmpResult = shared;
     if (tmpResult.isThemeDark(tmp5)) {
-      tmp4Result = tmp4(18982);
+      tmp4Result = tmp4(19059);
     } else {
-      tmp4Result = tmp4(18983);
+      tmp4Result = tmp4(19060);
     }
     if (cResult[7] !== tmp4Result) {
       const obj3 = { avatarSource: tmp4Result };
@@ -361,9 +361,9 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Consist
   ({ horizontalContainer: arr2[0], benefitAvatars: arr2[1] } = tmp4);
   const obj4 = shared;
   if (obj4.isThemeDark(tmp3)) {
-    tmpResult = tmp(18982);
+    tmpResult = tmp(19059);
   } else {
-    tmpResult = tmp(18983);
+    tmpResult = tmp(19060);
   }
   items2 = [hasOwnProperty(closure_12, { avatarSource: tmpResult }), , ];
   const obj5 = { avatarSource: AssetRegistryDefault2 };
@@ -573,7 +573,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Revenu
   items1[1] = obj2.isThemeDark(tmp3) ? tmp4.greenTextDarkMode : tmp4.greenTextLightMode;
   items2 = [hasOwnProperty(Text, obj3), , ];
   const obj4 = { style: tmp4.revenueShareDescription, variant: "heading-md/medium", color: "text-default", children: intl.string(intl3.t.AewsXD) };
-  const Text2 = tmp8(5195).Text;
+  const Text2 = tmp8(5216).Text;
   intl = tmp8(1128).intl;
   items2[1] = hasOwnProperty(Text2, obj4);
   const obj5 = { style: tmp4.revenueShareIllo, source: AssetRegistryDefault6 };

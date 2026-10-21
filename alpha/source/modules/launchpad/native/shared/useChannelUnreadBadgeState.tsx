@@ -1,12 +1,12 @@
-// Module ID: 17535
-// Function ID: 17536
+// Module ID: 17616
+// Function ID: 17617
 // Name: useChannelUnreadBadgeState
-// Dependencies: [7590, 6722, 6655, 558, 576, 504, 6764, 2]
+// Dependencies: [7618, 6750, 6683, 558, 576, 504, 6792, 2]
 
-// Module 17535 (useChannelUnreadBadgeState)
-import NewChannelsStore from "NewChannelsStore" /* 7590 */;
-import ReadStateStore from "ReadStateStore" /* 6722 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6655 */;
+// Module 17616 (useChannelUnreadBadgeState)
+import NewChannelsStore from "NewChannelsStore" /* 7618 */;
+import ReadStateStore from "ReadStateStore" /* 6750 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6683 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

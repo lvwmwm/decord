@@ -1,9 +1,9 @@
-// Module ID: 17115
-// Function ID: 17116
+// Module ID: 17191
+// Function ID: 17192
 // Name: Welcome
-// Dependencies: [19, 17, 17116, 5151, 7516, 13129, 1406, 5662, 8988, 1087, 7376, 7756, 21, 4945, 587, 558, 576, 13481, 1128, 38, 1202, 4994, 5195, 5631, 14359, 6989, 7025, 14921, 1505, 1633, 504, 7533, 1267, 510, 5224, 6619, 5560, 17117, 17112, 1506, 5205, 6647, 5229, 12679, 4999, 2]
+// Dependencies: [19, 17, 17192, 5172, 7544, 13197, 1406, 5682, 9015, 1087, 7404, 7784, 21, 4966, 587, 558, 576, 13548, 1128, 38, 1202, 5015, 5216, 5651, 14434, 7017, 7053, 14995, 1505, 1633, 504, 7561, 1267, 510, 5245, 6647, 5581, 17193, 17188, 1506, 5226, 6675, 5250, 12743, 5020, 2]
 
-// Module 17115 (Welcome)
+// Module 17191 (Welcome)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,30 +11,30 @@ import intl4 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import Link from "Link" /* 1506 */;
-import UserUtilsDefault from "UserUtils" /* 4994 */;
-import Text_Text from "Text/Text" /* 5195 */;
-import FastImageDefault from "FastImage" /* 5631 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6989 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7025 */;
-import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7376 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7533 */;
-import Constants2 from "Constants" /* 7756 */;
-import GuildInviteIconDefault from "GuildInviteIcon" /* 13481 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14359 */;
-import AssetRegistry from "AssetRegistry" /* 14921 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 17112 */;
+import UserUtilsDefault from "UserUtils" /* 5015 */;
+import Text_Text from "Text/Text" /* 5216 */;
+import FastImageDefault from "FastImage" /* 5651 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7017 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7053 */;
+import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7404 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7561 */;
+import Constants2 from "Constants" /* 7784 */;
+import GuildInviteIconDefault from "GuildInviteIcon" /* 13548 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14434 */;
+import AssetRegistry from "AssetRegistry" /* 14995 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 17188 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AgeGateStore from "AgeGateStore" /* 17116 */;
-import ExperimentStore from "ExperimentStore" /* 5151 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7516 */;
-import MultiAccountStore from "MultiAccountStore" /* 13129 */;
+import AgeGateStore from "AgeGateStore" /* 17192 */;
+import ExperimentStore from "ExperimentStore" /* 5172 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7544 */;
+import MultiAccountStore from "MultiAccountStore" /* 13197 */;
 import UserRecord from "UserRecord" /* 1406 */;
-import InviteStore from "InviteStore" /* 5662 */;
-import DisplayedInviteStore from "DisplayedInviteStore" /* 8988 */;
+import InviteStore from "InviteStore" /* 5682 */;
+import DisplayedInviteStore from "DisplayedInviteStore" /* 9015 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4945 */;
+import createStyles_mod from "createStyles" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -135,7 +135,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
         tmp21 = cResult[4];
       }
       if (cResult[5] !== tmp21) {
-        const obj4 = { user: tmp21, guildId: "r" };
+        const obj4 = { user: tmp21, guildId: "Array" };
         const tmp28 = closure_20(native.Avatar, obj4);
         cResult[5] = tmp21;
         cResult[6] = tmp28;
@@ -153,7 +153,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
         tmp30 = cResult[7];
       }
       if (cResult[8] !== inviter) {
-        const tmp19Result = tmp19(4994);
+        const tmp19Result = tmp19(5015);
         const formattedName = tmp19Result.getFormattedName(inviter);
         cResult[8] = inviter;
         cResult[9] = formattedName;
@@ -179,7 +179,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
         tmp6 = cResult[11];
       }
       if (cResult[12] !== tmp6) {
-        const obj5 = { user: tmp6, guildId: "r" };
+        const obj5 = { user: tmp6, guildId: "Array" };
         const tmp13 = closure_20(native.Avatar, obj5);
         cResult[12] = tmp6;
         cResult[13] = tmp13;
@@ -303,7 +303,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
       _modDef38(null != inviter, "Null inviter");
       const self = this;
       const self2 = this;
-      const obj = { user: tmp10, guildId: "r" };
+      const obj = { user: tmp10, guildId: "Array" };
       const Avatar = native.Avatar;
       tmp10 = new UserRecord(inviter);
       tmp12 = closure_20(Avatar, obj);
@@ -318,7 +318,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
     } else {
       const self3 = this;
       const self4 = this;
-      const obj4 = { user: tmp29, guildId: "r" };
+      const obj4 = { user: tmp29, guildId: "Array" };
       const Avatar2 = native.Avatar;
       tmp29 = new UserRecord(inviter);
       const tmp31 = closure_20(Avatar2, obj4);
@@ -335,9 +335,9 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
     items1 = [tmp12, ];
     const obj6 = { style: tmp.text, children: items2 };
     const obj7 = { variant: "text-sm/medium", color: "text-subtle", children: stringResult };
-    items2 = [tmp16(tmp15(5195).Text, obj7), ];
+    items2 = [tmp16(tmp15(5216).Text, obj7), ];
     const obj8 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: name };
-    items2[1] = tmp16(tmp15(5195).Text, obj8);
+    items2[1] = tmp16(tmp15(5216).Text, obj8);
     items1[1] = closure_21(React3, obj6);
     return closure_21(React3, obj5);
   }
@@ -374,7 +374,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildT
     const _Symbol2 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { variant: "text-sm/medium", color: "text-subtle", children: intl.string(intl4.t.QzUORX) };
-      const Text = tmp(5195).Text;
+      const Text = tmp(5216).Text;
       intl = tmp(1128).intl;
       const tmp14 = closure_20(Text, obj3);
       cResult[4] = tmp14;
@@ -668,7 +668,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Center
   const obj5 = { style: items1, lineClamp: num, variant: "display-md", color: "text-overlay-light", maxFontSizeMultiplier: 1, children: intl.string(intl4.t["3S2xmm"]) };
   items1 = [tmp4.header, typeConsolidationTextTransform];
   num = 2;
-  const Heading = tmp5(5195).Heading;
+  const Heading = tmp5(5216).Heading;
   tmp14 = hasOwnProperty;
   if (tmp3) {
     num = 1;
@@ -676,7 +676,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Center
   intl = tmp5(1128).intl;
   const items2 = [closure_20(Heading, obj5), , , ];
   const items3 = [tmp4.subHeader, ];
-  const Text = tmp5(5195).Text;
+  const Text = tmp5(5216).Text;
   if (null != invite) {
     subHeaderWithInvite = tmp4.subHeaderWithInvite;
   } else {

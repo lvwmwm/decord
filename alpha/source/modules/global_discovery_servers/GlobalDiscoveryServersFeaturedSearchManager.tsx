@@ -1,14 +1,14 @@
-// Module ID: 19111
-// Function ID: 19112
+// Module ID: 19186
+// Function ID: 19187
 // Name: GlobalDiscoveryServersFeaturedSearchManager
-// Dependencies: [5, 14836, 8940, 1087, 7165, 19112, 584, 1297, 1493, 19113, 7397, 2]
+// Dependencies: [5, 14910, 8967, 1087, 7193, 19187, 584, 1297, 1493, 19188, 7425, 2]
 
-// Module 19111 (GlobalDiscoveryServersFeaturedSearchManager)
+// Module 19186 (GlobalDiscoveryServersFeaturedSearchManager)
 import Constants from "Constants" /* 1087 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 8940 */;
-import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 14836 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 8967 */;
+import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 14910 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7165 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7193 */;
 import size from "module_2" /* 2 */;
 
 let categoryId, closure_1, closure_4, constants;
@@ -232,7 +232,7 @@ class GlobalDiscoveryServersFeaturedSearchManager extends AutomaticLifecycleMana
         if (forceRefresh === undefined) {
           forceRefresh = false;
         }
-        return "test";
+        return "Reflect";
       })();
       iter.next();
       return iter;

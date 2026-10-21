@@ -1,23 +1,23 @@
-// Module ID: 11711
-// Function ID: 11712
+// Module ID: 11757
+// Function ID: 11758
 // Name: ConjureModelSettingsSheet
-// Dependencies: [32, 19, 17, 11001, 11015, 21, 558, 576, 504, 11041, 11712, 11647, 1128, 3820, 5195, 5935, 587, 7197, 7247, 2]
+// Dependencies: [32, 19, 17, 10656, 10670, 21, 558, 576, 504, 10696, 11758, 11697, 1128, 3830, 5216, 5957, 587, 7225, 7275, 2]
 
-// Module 11711 (ConjureModelSettingsSheet)
+// Module 11757 (ConjureModelSettingsSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import _modDef3820 from "module_3820" /* 3820 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7197 */;
-import ActionSheet2 from "ActionSheet" /* 7247 */;
-import conjureModelSettingsConnection from "conjureModelSettingsConnection" /* 11041 */;
-import ConjureEffortPickerDefault from "ConjureEffortPicker" /* 11647 */;
-import useConjureModelSettingsDraftDefault from "useConjureModelSettingsDraft" /* 11712 */;
+import _modDef3830 from "module_3830" /* 3830 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7225 */;
+import ActionSheet2 from "ActionSheet" /* 7275 */;
+import conjureModelSettingsConnection from "conjureModelSettingsConnection" /* 10696 */;
+import ConjureEffortPickerDefault from "ConjureEffortPicker" /* 11697 */;
+import useConjureModelSettingsDraftDefault from "useConjureModelSettingsDraft" /* 11758 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 11001 */;
-import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 11015 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10656 */;
+import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 10670 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -161,7 +161,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ModelS
             let stringResult;
             const intl = tmp(1128).intl;
             const string = intl.string;
-            const tmp11Result = _modDef3820;
+            const tmp11Result = _modDef3830;
             if ("open" !== stateFromStores) {
               stringResult = string(tmp11Result.GxpdUR);
             } else {
@@ -175,7 +175,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ModelS
           }
           if (cResult[14] !== tmp17) {
             const obj2 = { variant: "text-xs/normal", color: "text-muted", children: tmp17 };
-            const tmp22 = closure_8(projectId(5195).Text, obj2);
+            const tmp22 = closure_8(projectId(5216).Text, obj2);
             cResult[14] = tmp17;
             cResult[15] = tmp22;
             tmp20 = tmp22;
@@ -190,7 +190,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ModelS
             return tmp23;
           }
           const obj3 = { direction: "vertical", spacing: nativeDefault.space.PX_16, children: items2 };
-          const Stack = tmp(5935).Stack;
+          const Stack = tmp(5957).Stack;
           items2 = [tmp15, tmp20];
           const tmp25 = closure_9(Stack, obj3);
           cResult[16] = tmp15;
@@ -230,14 +230,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ModelS
   [tmp4, tmp5] = useConjureModelSettingsDraftDefault(tierSettings, callback);
   const obj2 = { direction: "vertical", spacing: nativeDefault.space.PX_16, children: items3 };
   _slicedToArray(useConjureModelSettingsDraftDefault(tierSettings, callback), 2);
-  const Stack = projectId(5935).Stack;
+  const Stack = projectId(5957).Stack;
   items3 = [, ];
   const obj3 = { settings: tmp4, tiers: modelSettings.tiers, choices: modelSettings.choices, disabled: tmp, onChange: tmp5 };
   items3[0] = closure_8(ConjureEffortPickerDefault, obj3);
-  const Text = projectId(5195).Text;
+  const Text = projectId(5216).Text;
   const intl = projectId(1128).intl;
   const string = intl.string;
-  const tmp8 = _modDef3820;
+  const tmp8 = _modDef3830;
   const tmp6 = closure_9;
   const tmp7 = closure_8;
   if (tmp) {
@@ -259,8 +259,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMod
   const cResult = obj.c(3);
   projectId = projectId.projectId;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { title: intl.string(_modDef3820["3E7Yc0"]) };
-    const BottomSheetTitleHeader = tmp(7197).BottomSheetTitleHeader;
+    const obj2 = { title: intl.string(_modDef3830["3E7Yc0"]) };
+    const BottomSheetTitleHeader = tmp(7225).BottomSheetTitleHeader;
     intl = tmp(1128).intl;
     const tmp7 = metroImportAll(BottomSheetTitleHeader, obj2);
     cResult[0] = tmp7;
@@ -272,7 +272,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMod
     const obj3 = { header: first, children: metroImportAll(View, obj4) };
     obj4 = { children: metroImportAll(closure_10, obj5) };
     obj5 = { projectId };
-    const ActionSheet = tmp(7247).ActionSheet;
+    const ActionSheet = tmp(7275).ActionSheet;
     const tmp12 = metroImportAll(ActionSheet, obj3);
     cResult[1] = projectId;
     cResult[2] = tmp12;
@@ -289,7 +289,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMod
   projectId = projectId.projectId;
   const obj = { header: metroImportAll(BottomSheetTitleHeader, obj2), children: metroImportAll(View, obj3) };
   const ActionSheet = ActionSheet2.ActionSheet;
-  obj2 = { title: intl.string(_modDef3820["3E7Yc0"]) };
+  obj2 = { title: intl.string(_modDef3830["3E7Yc0"]) };
   BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   intl = intl2.intl;
   obj3 = { children: metroImportAll(closure_10, { projectId }) };

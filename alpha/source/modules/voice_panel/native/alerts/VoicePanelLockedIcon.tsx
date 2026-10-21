@@ -1,17 +1,17 @@
-// Module ID: 18369
-// Function ID: 18370
+// Module ID: 18448
+// Function ID: 18449
 // Name: VoicePanelLockedIcon
-// Dependencies: [19, 21, 4945, 587, 558, 576, 1202, 18370, 6837, 2]
+// Dependencies: [19, 21, 4966, 587, 558, 576, 1202, 18449, 6865, 2]
 
-// Module 18369 (VoicePanelLockedIcon)
+// Module 18448 (VoicePanelLockedIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
-import NativeViewDefault from "NativeView" /* 6837 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18370 */;
+import NativeViewDefault from "NativeView" /* 6865 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18449 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4945 */;
+import createStyles from "createStyles" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

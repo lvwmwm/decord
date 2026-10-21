@@ -1,18 +1,18 @@
-// Module ID: 17804
-// Function ID: 17805
+// Module ID: 17885
+// Function ID: 17886
 // Name: NavTTISurfaceProvider
-// Dependencies: [109, 19, 17, 5198, 21, 558, 576, 17730, 17728, 17731, 17722, 12675, 504, 12674, 2]
+// Dependencies: [109, 19, 17, 5219, 21, 558, 576, 17811, 17809, 17812, 17803, 12739, 504, 12738, 2]
 
-// Module 17804 (NavTTISurfaceProvider)
+// Module 17885 (NavTTISurfaceProvider)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 12675 */;
-import useComponentRenderSpan from "useComponentRenderSpan" /* 17728 */;
-import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 17730 */;
-import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 17731 */;
+import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 12739 */;
+import useComponentRenderSpan from "useComponentRenderSpan" /* 17809 */;
+import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 17811 */;
+import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 17812 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 5198 */;
+import DevSettingsStore from "DevSettingsStore" /* 5219 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -316,7 +316,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavTTISurfac
           tmp5 = closure_1;
           fn = obj.subscribe(closure_0, closure_1, definition);
         } else {
-          fn = function() { /* body not rendered: F152024 */ };
+          fn = function() { /* body not rendered: F152540 */ };
         }
         return fn;
       }
@@ -525,7 +525,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavTTISurfac
                     tmp5 = closure_1;
                     fn = obj.subscribe(closure_0, closure_1, definition);
                   } else {
-                    fn = function() { /* body not rendered: F152024 */ };
+                    fn = function() { /* body not rendered: F152540 */ };
                   }
                   return fn;
                 }
@@ -551,7 +551,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavTTISurfac
             tmp5 = closure_1;
             fn = obj.subscribe(closure_0, closure_1, definition);
           } else {
-            fn = function() { /* body not rendered: F152024 */ };
+            fn = function() { /* body not rendered: F152540 */ };
           }
           return fn;
         }
@@ -589,7 +589,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavTTISurfac
         tmp5 = closure_1;
         fn = obj.subscribe(closure_0, closure_1, definition);
       } else {
-        fn = function() { /* body not rendered: F152024 */ };
+        fn = function() { /* body not rendered: F152540 */ };
       }
       return fn;
     }

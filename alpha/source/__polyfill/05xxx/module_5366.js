@@ -1,55 +1,106 @@
 // Module ID: 5366
 // Function ID: 5367
-// Dependencies: [5326, 5263, 5301]
-// Exports: useComposedGesture
+// Dependencies: [19, 5322, 5365]
+// Exports: useReanimatedEventHandler
 
 // Module 5366
-let handlerTags;
+import Reanimated2 from "Reanimated" /* 5322 */;
+import eventHandler from "eventHandler" /* 5365 */;
+import react from "react" /* 19 */;
 
+const require = globalThis.__r;
+let _require, dependencyMap;
 
-export const useComposedGesture = function useComposedGesture(type) {
-  const substr = [...arguments].slice();
-  const flatMapResult = substr.flatMap((handlerTags) => {
-    const obj = substr(dependencyMap[0]);
-    if (obj.isComposedGesture(handlerTags)) {
-      handlerTags = handlerTags.handlerTags;
-    } else {
-      handlerTags = [handlerTags.handlerTag];
-    }
-    return handlerTags;
-  });
-  let tmp2 = substr;
-  let obj = substr(5326);
-  if (obj.containsDuplicates(flatMapResult)) {
-    const _Error2 = Error;
-    const self3 = this;
-    const self4 = this;
-    const tmp2Result = tmp2(5263);
-    const error = new Error(tmp2Result.tagMessage("Each gesture can be used only once in the gesture composition."));
-    throw error;
-  } else {
-    const obj2 = { shouldUseReanimatedDetector: substr.some((config) => config.config.shouldUseReanimatedDetector), dispatchesAnimatedEvents: substr.some((config) => config.config.dispatchesAnimatedEvents) };
-    if (obj2.shouldUseReanimatedDetector) {
-      if (obj2.dispatchesAnimatedEvents) {
-        const _Error = Error;
-        const self = this;
-        const self2 = this;
-        const tmp2Result2 = tmp2(5263);
-        const error1 = new Error(tmp2Result2.tagMessage("Composed gestures cannot use both Reanimated and Animated events at the same time."));
-        throw error1;
-      }
-    }
-    const Reanimated = tmp2(5301).Reanimated;
-    let composedEventHandler;
+let c2;
+let c3;
+let closure_4;
+({ useEffect: c2, useMemo: c3, useRef: closure_4 } = react);
+let closure_5 = ["onGestureHandlerReanimatedEvent", "onGestureHandlerReanimatedStateChange", "onGestureHandlerReanimatedTouchEvent"];
+const onUpdate = function n() {
+
+};
+onUpdate.__closure = {};
+onUpdate.__workletHash = 763644533783;
+onUpdate.__initData = { code: "function pnpm_useReanimatedEventHandlerTs1(){}" };
+let Reanimated = Reanimated2.Reanimated;
+let mutable;
+if (Reanimated != null) {
+  mutable = Reanimated.makeMutable({});
+}
+function deleteHandlerEventEntry(arg0) {
+  delete mutable.value[arg0];
+}
+deleteHandlerEventEntry.__closure = { lastUpdateEventMap: mutable };
+deleteHandlerEventEntry.__workletHash = 8348834805583;
+deleteHandlerEventEntry.__initData = { code: "function deleteHandlerEventEntry_Pnpm_useReanimatedEventHandlerTs2(handlerTag){const{lastUpdateEventMap}=this.__closure;delete lastUpdateEventMap.value[handlerTag];}" };
+const __initData = { code: "function pnpm_useReanimatedEventHandlerTs3(event){const{lastUpdateEventMap,eventHandler,handlerTag,workletizedHandlers,changeEventCalculator,fillInDefaultValues}=this.__closure;let context=lastUpdateEventMap.value[event.handlerTag];if(context===undefined){context={lastUpdateEvent:undefined};lastUpdateEventMap.value[event.handlerTag]=context;}eventHandler(handlerTag,event,workletizedHandlers,changeEventCalculator,context,false,fillInDefaultValues);}" };
+
+export const useReanimatedEventHandler = function useReanimatedEventHandler(handlerTag, memoizedGestureCallbacks, handler, changeEventCalculator, fillInDefaultValues) {
+  _require = handlerTag;
+  dependencyMap = memoizedGestureCallbacks;
+  let closure_2 = changeEventCalculator;
+  let closure_3 = fillInDefaultValues;
+  const items = [memoizedGestureCallbacks];
+  let tmp = closure_3(() => {
+    let obj;
+    const Reanimated = Reanimated2.Reanimated;
+    let isWorkletFunctionResult;
     if (Reanimated != null) {
-      composedEventHandler = Reanimated.useComposedEventHandler(substr.map((detectorCallbacks) => detectorCallbacks.detectorCallbacks.reanimatedEventHandler || null));
+      isWorkletFunctionResult = Reanimated.isWorkletFunction(memoizedGestureCallbacks.onUpdate);
     }
-    const found = substr.filter((detectorCallbacks) => undefined !== detectorCallbacks.detectorCallbacks.animatedEventHandler);
-    let animatedEventHandler;
-    if (found.length > 0) {
-      animatedEventHandler = found[0].detectorCallbacks.animatedEventHandler;
+    if (isWorkletFunctionResult) {
+      obj = tmp3;
+    } else {
+      obj = { onUpdate };
+      const merged = Object.assign(tmp3);
     }
-    const obj3 = { handlerTags: flatMapResult, type, config: obj2, detectorCallbacks: obj4, externalSimultaneousHandlers: [], gestures: substr };
-    return obj3;
+    return obj;
+  }, items);
+  let closure_4 = tmp;
+  const fn = function h(handlerTag) {
+    let tmp = mutable.value[handlerTag.handlerTag];
+    if (undefined === tmp) {
+      const obj = { lastUpdateEvent: "r" };
+      iter.value[handlerTag.handlerTag] = obj;
+      tmp = obj;
+    }
+    const obj2 = eventHandler;
+    obj2.eventHandler(current, handlerTag, closure_4, changeEventCalculator, tmp, false, fillInDefaultValues);
+  };
+  let obj = { lastUpdateEventMap: mutable, eventHandler: require("eventHandler").eventHandler, handlerTag, workletizedHandlers: tmp, changeEventCalculator, fillInDefaultValues };
+  fn.__closure = obj;
+  fn.__workletHash = 3272953373395;
+  fn.__initData = __initData;
+  const tmp2 = closure_4(handlerTag);
+  closure_5 = tmp2;
+  const items1 = [handlerTag];
+  const current = tmp2.current;
+  const tmp3 = closure_2(() => {
+    closure_5.current = current;
+    return () => {
+      const Reanimated = closure_0(memoizedGestureCallbacks[1]).Reanimated;
+      if (Reanimated != null) {
+        const runOnUI = Reanimated.runOnUI;
+        if (runOnUI != null) {
+          runOnUI(deleteHandlerEventEntry)(closure_1_0);
+        }
+      }
+    };
+  }, items1);
+  let Reanimated = require("Reanimated").Reanimated;
+  let event;
+  if (Reanimated != null) {
+    let tmp5 = current !== handlerTag;
+    const useEvent = Reanimated.useEvent;
+    const tmp6 = closure_5;
+    if (!tmp5) {
+      let doDependenciesDiffer;
+      if (handler != null) {
+        doDependenciesDiffer = handler.doDependenciesDiffer;
+      }
+      tmp5 = doDependenciesDiffer;
+    }
+    event = useEvent(fn, tmp6, tmp5);
   }
+  return event;
 };

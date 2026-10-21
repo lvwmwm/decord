@@ -1,25 +1,69 @@
 // Module ID: 8176
 // Function ID: 8177
-// Dependencies: [8162]
+// Dependencies: [8177, 8179]
 
 // Module 8176
-import _mod8162 from "module_8162" /* 8162 */;
+import _mod8177 from "module_8177" /* 8177 */;
+import _mod8179 from "module_8179" /* 8179 */;
 
-let obj = {
-  isGifFile(dataView) {
-    let hasItem = dataView;
-    if (hasItem) {
-      includes = includes.includes;
-      const obj = _mod8162;
-      hasItem = includes(obj.getStringFromDataView(dataView, 0, c2));
+let hasOwnProperty;
+
+const self = this;
+let tmp = this && self.__createBinding;
+if (!tmp) {
+  let tmp2 = globalThis;
+  let _Object = Object;
+  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
     }
-    return hasItem;
-  },
-  findOffsets() {
-    return { gifHeaderOffset: 0 };
+    closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
+      }
+      tmp3 = !tmp4;
+    }
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
+    }
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let closure_0 = tmp;
+let tmp3 = self && self.__exportStar || ((obj, arg1) => {
+  for (const key10007 in obj) {
+    let callResult = "default" === key10007;
+    if (!callResult) {
+      let _Object = Object;
+      hasOwnProperty = Object.prototype.hasOwnProperty;
+      callResult = hasOwnProperty.call(arg1, key10007);
+    }
+    if (callResult) {
+      continue;
+    } else {
+      let tmp3 = closure_0(arg1, obj, key10007);
+      continue;
+    }
+    continue;
   }
-};
-let c2 = 6;
-let includes = ["GIF87a", "GIF89a"];
-
-export default obj;
+});
+tmp3(_mod8177, exports);
+tmp3(_mod8179, exports);

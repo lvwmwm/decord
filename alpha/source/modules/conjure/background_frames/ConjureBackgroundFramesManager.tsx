@@ -1,11 +1,11 @@
-// Module ID: 18522
-// Function ID: 18523
+// Module ID: 18601
+// Function ID: 18602
 // Name: ConjureBackgroundFramesManager
-// Dependencies: [5, 7165, 5587, 17793, 2002, 2]
+// Dependencies: [5, 7193, 5608, 17874, 2002, 2]
 
-// Module 18522 (ConjureBackgroundFramesManager)
+// Module 18601 (ConjureBackgroundFramesManager)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7165 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7193 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -46,7 +46,7 @@ let actions = function _handleFrameLaunchStart() {
     }
     await "IconComponent";
     ({ applicationId: c0, frameId: c1, surface: c2 } = closure_0);
-    return "test";
+    return "Reflect";
   });
   return obj(...arguments);
 };
