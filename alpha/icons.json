@@ -664,16 +664,9 @@
         "width": 24,
         "height": 24
     },
-    "BoostGemSlashIcon-primary": {
-        "file": "app/design/components/Icon/native/redesign/generated/images/BoostGemSlashIcon-primary.png",
-        "hash": "7dbd1713c87c4ae784d40f25fd6578fe",
-        "scales": [],
-        "width": 24,
-        "height": 24
-    },
-    "BoostGemSlashIcon-secondary": {
-        "file": "app/design/components/Icon/native/redesign/generated/images/BoostGemSlashIcon-secondary.png",
-        "hash": "c7028bf08d8a5f5ffcf7b1260c0b4766",
+    "BoostGemSlashIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/BoostGemSlashIcon.png",
+        "hash": "60410ef8275ee557c4c66e4f0d7dfc15",
         "scales": [],
         "width": 24,
         "height": 24
@@ -4961,6 +4954,27 @@
         "scales": [],
         "width": 255,
         "height": 255
+    },
+    "img_account_sync_letterboxd_dark": {
+        "file": "app/images/platforms/img_account_sync_letterboxd_dark.png",
+        "hash": "94e785783bdc5358633f0ac49f888e99",
+        "scales": [],
+        "width": 500,
+        "height": 500
+    },
+    "img_account_sync_letterboxd_light": {
+        "file": "app/images/platforms/img_account_sync_letterboxd_light.png",
+        "hash": "59966e5b844184ad532c25b89628277b",
+        "scales": [],
+        "width": 500,
+        "height": 500
+    },
+    "img_account_sync_letterboxd_white": {
+        "file": "app/images/platforms/img_account_sync_letterboxd_white.png",
+        "hash": "b5435b1c0c86072b1fe63c9093cc47a6",
+        "scales": [],
+        "width": 500,
+        "height": 500
     },
     "img_account_sync_mastodon_light_and_dark": {
         "file": "app/images/platforms/img_account_sync_mastodon_light_and_dark.png",
