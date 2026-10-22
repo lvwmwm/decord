@@ -13,6 +13,13 @@
         "width": 24,
         "height": 24
     },
+    "ActivitiesIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/ActivitiesIcon.png",
+        "hash": "04284dcfb33cab4ac93ceefb6696c6d5",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
     "add": {
         "file": "app/modules/video_calls/native/images/add.png",
         "hash": "db76c9ef21a10a502ae95ae16e345521",
@@ -495,6 +502,13 @@
         "scales": [],
         "width": 34,
         "height": 34
+    },
+    "BadgeIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/BadgeIcon.png",
+        "hash": "9e19181651828ca952221179ae78d318",
+        "scales": [],
+        "width": 24,
+        "height": 24
     },
     "BattlenetNeutralIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/BattlenetNeutralIcon.png",
@@ -1454,6 +1468,13 @@
         "scales": [],
         "width": 80,
         "height": 80
+    },
+    "conjure_agent_avatar": {
+        "file": "app/modules/conjure/chat/native/images/conjure_agent_avatar.png",
+        "hash": "92675a57b5fd10ac5056ccc7a2fd5e34",
+        "scales": [],
+        "width": 40,
+        "height": 40
     },
     "ConnectionAverageIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/ConnectionAverageIcon.png",
