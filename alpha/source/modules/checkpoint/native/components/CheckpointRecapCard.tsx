@@ -1,18 +1,18 @@
-// Module ID: 12937
-// Function ID: 12938
+// Module ID: 12956
+// Function ID: 12957
 // Name: CheckpointRecapCard
-// Dependencies: [32, 19, 17, 21, 12902, 4969, 587, 558, 576, 8609, 6023, 1900, 5038, 5192, 7946, 5655, 10541, 2]
+// Dependencies: [32, 19, 17, 21, 12919, 4969, 587, 558, 576, 8610, 6022, 1900, 5038, 5192, 7947, 5655, 10548, 2]
 
-// Module 12937 (CheckpointRecapCard)
+// Module 12956 (CheckpointRecapCard)
 import nativeDefault from "native" /* 587 */;
 import react_nativeDefault from "react-native" /* 1900 */;
 import timing from "timing" /* 5192 */;
-import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6023 */;
+import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6022 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import CheckpointStatNumber from "CheckpointStatNumber" /* 12902 */;
+import CheckpointStatNumber from "CheckpointStatNumber" /* 12919 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -88,14 +88,14 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
     } else {
       tmp11 = cResult[4];
     }
-    const tmpResult = recapCardBackgroundImage(8609);
+    const tmpResult = recapCardBackgroundImage(8610);
     const cardColors = tmpResult.getCardColors(character);
     ({ primaryBackgroundColor, secondaryBackgroundColor, recapCardBackgroundImage } = cardColors);
     if (cResult[5] !== character) {
       let characterLayerUrls;
       if (null != character) {
         const _Math3 = Math;
-        const tmpResult3 = recapCardBackgroundImage(6023);
+        const tmpResult3 = recapCardBackgroundImage(6022);
         characterLayerUrls = tmpResult3.getCharacterLayerUrls(character, Math.round(c15 * first(1900)()));
       } else {
         characterLayerUrls = [];
@@ -195,8 +195,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
         }
         const obj5 = { d, fill: secondaryBackgroundColor };
         cResult[13] = secondaryBackgroundColor;
-        cResult[14] = closure_7(recapCardBackgroundImage(7946).Path, obj5);
-        const tmp32 = closure_7(recapCardBackgroundImage(7946).Path, obj5);
+        cResult[14] = closure_7(recapCardBackgroundImage(7947).Path, obj5);
+        const tmp32 = closure_7(recapCardBackgroundImage(7947).Path, obj5);
       } else {
         class U {
           constructor() {
@@ -278,8 +278,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                 }
                 const obj6 = { value, color: primaryBackgroundColor, size: 64 };
                 cResult[31] = primaryBackgroundColor;
-                cResult[32] = closure_7(first(12902), obj6);
-                const tmp54 = closure_7(first(12902), obj6);
+                cResult[32] = closure_7(first(12919), obj6);
+                const tmp54 = closure_7(first(12919), obj6);
               } else {
                 class U {
                   constructor() {
@@ -304,8 +304,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                   }
                   const obj7 = { d: d2, fill: primaryBackgroundColor };
                   cResult[36] = primaryBackgroundColor;
-                  cResult[37] = closure_7(recapCardBackgroundImage(7946).Path, obj7);
-                  const tmp61 = closure_7(recapCardBackgroundImage(7946).Path, obj7);
+                  cResult[37] = closure_7(recapCardBackgroundImage(7947).Path, obj7);
+                  const tmp61 = closure_7(recapCardBackgroundImage(7947).Path, obj7);
                 } else {
                   class U {
                     constructor() {
@@ -329,7 +329,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                       }
                     }
                     const obj8 = { size: "custom", color: first(587).colors.BLACK, style: tmp4.clyde };
-                    const ClydeIcon = tmp(10541).ClydeIcon;
+                    const ClydeIcon = tmp(10548).ClydeIcon;
                     cResult[41] = tmp4.clyde;
                     cResult[42] = closure_7(ClydeIcon, obj8);
                     const tmp69 = closure_7(ClydeIcon, obj8);
@@ -360,8 +360,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                 size = { style: tmp4.container, width: v40, height: v40, viewBox: "0 0 40 40", children: tmp59 };
                 cResult[38] = tmp4.container;
                 cResult[39] = tmp59;
-                cResult[40] = closure_7(first(7946), size);
-                const tmp66 = closure_7(first(7946), size);
+                cResult[40] = closure_7(first(7947), size);
+                const tmp66 = closure_7(first(7947), size);
               }
               const obj10 = { style: tmp4.year, children: tmp51 };
               cResult[33] = tmp4.year;
@@ -391,8 +391,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
       const size1 = { style: tmp4.container, width: tmp7, height, viewBox: "0 0 200 284", children: tmp30 };
       cResult[15] = tmp4.container;
       cResult[16] = tmp30;
-      cResult[17] = closure_7(first(7946), size1);
-      const tmp37 = closure_7(first(7946), size1);
+      cResult[17] = closure_7(first(7947), size1);
+      const tmp37 = closure_7(first(7947), size1);
     }
     const items3 = [tmp4.card, tmp11];
     cResult[10] = tmp11;

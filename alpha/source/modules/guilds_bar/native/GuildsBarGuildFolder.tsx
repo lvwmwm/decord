@@ -1,9 +1,9 @@
-// Module ID: 17639
-// Function ID: 17640
+// Module ID: 17661
+// Function ID: 17662
 // Name: GuildsBarGuildFolder
-// Dependencies: [19, 4970, 6800, 4843, 4995, 6687, 17631, 17636, 17628, 21, 4969, 587, 558, 576, 5238, 504, 6869, 5233, 4966, 1105, 7154, 5038, 5023, 5655, 8490, 17640, 17643, 12453, 17650, 5198, 6816, 6872, 17633, 17651, 2]
+// Dependencies: [19, 4970, 6799, 4843, 4995, 6686, 17653, 17658, 17650, 21, 4969, 587, 558, 576, 5238, 504, 6868, 5233, 4966, 1105, 7153, 5038, 5023, 5655, 8491, 17662, 17665, 12463, 17672, 5198, 6815, 6871, 17655, 17673, 2]
 
-// Module 17639 (GuildsBarGuildFolder)
+// Module 17661 (GuildsBarGuildFolder)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,21 +15,21 @@ import HapticUtils from "HapticUtils" /* 5198 */;
 import spring from "spring" /* 5233 */;
 import useToken2 from "useToken" /* 5238 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import SortedGuildStore2 from "SortedGuildStore" /* 6687 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6816 */;
-import NativeViewDefault from "NativeView" /* 6872 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7154 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8490 */;
-import ListUtils from "ListUtils" /* 12453 */;
-import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 17633 */;
+import SortedGuildStore2 from "SortedGuildStore" /* 6686 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6815 */;
+import NativeViewDefault from "NativeView" /* 6871 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7153 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8491 */;
+import ListUtils from "ListUtils" /* 12463 */;
+import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 17655 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
-import GuildReadStateStore_mod from "GuildReadStateStore" /* 6800 */;
+import GuildReadStateStore_mod from "GuildReadStateStore" /* 6799 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17631 */;
-import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 17636 */;
-import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 17628 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17653 */;
+import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 17658 */;
+import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 17650 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -50,8 +50,8 @@ let map1;
 let tmp;
 let tmp4;
 let unpackModuleId;
-const GuildIcon = tmp(6869);
-const GuildIconDefault = tmp4(6869);
+const GuildIcon = tmp(6868);
+const GuildIconDefault = tmp4(6868);
 function getItemKey(type) {
   return type.type;
 }
@@ -183,7 +183,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function MiniGu
           }
         }
       }
-      const obj3 = { style: tmp12, guild: stateFromStores, size: guildId(6869).GuildIconSizes.XXSMALL, selected };
+      const obj3 = { style: tmp12, guild: stateFromStores, size: guildId(6868).GuildIconSizes.XXSMALL, selected };
       const tmp4Result = GuildIconDefault;
       const tmp16 = closure_17(tmp4Result, obj3, combined);
       cResult[7] = stateFromStores;
@@ -377,7 +377,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   items1 = [tmp3.folderBackground, memo, ];
   const obj7 = { height: token + token1 + (token + 2 * token1) * totalItems + tmp4 };
   items1[2] = obj7;
-  return closure_17(token2(7154), obj6);
+  return closure_17(token2(7153), obj6);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function TransitionWrapper(state) {
@@ -494,7 +494,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Transi
             return tmp20;
           }
           const obj3 = { style: tmp19, children };
-          const tmp22 = closure_17(tmp5(7154), obj3);
+          const tmp22 = closure_17(tmp5(7153), obj3);
           cResult[11] = children;
           cResult[12] = tmp19;
           cResult[13] = tmp22;

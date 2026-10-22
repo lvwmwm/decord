@@ -1,17 +1,17 @@
-// Module ID: 16999
-// Function ID: 17000
+// Module ID: 17021
+// Function ID: 17022
 // Name: DevToolsAccountLinkingScreen
-// Dependencies: [32, 19, 17, 2045, 7189, 4843, 4995, 21, 4969, 587, 558, 576, 504, 7243, 1633, 7241, 7238, 6973, 6889, 5220, 6994, 5230, 5655, 2]
+// Dependencies: [32, 19, 17, 2045, 7188, 4843, 4995, 21, 4969, 587, 558, 576, 504, 7244, 1633, 7242, 7239, 6972, 6888, 5220, 6993, 5230, 5655, 2]
 
-// Module 16999 (DevToolsAccountLinkingScreen)
+// Module 17021 (DevToolsAccountLinkingScreen)
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7243 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7244 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7189 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7188 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
 import Fragment from "Fragment" /* 21 */;
@@ -32,8 +32,8 @@ let size;
 let tmp2;
 let unpackModuleId;
 const FastImageDefault = tmp2(5655);
-const useStartAuthorizeDefault = tmp2(7238);
-const useGetOrFetchApplicationsDefault = tmp2(7241);
+const useStartAuthorizeDefault = tmp2(7239);
+const useGetOrFetchApplicationsDefault = tmp2(7242);
 ({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
 let createStyles = createStyles_mod;
@@ -770,7 +770,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAcco
   }
   const arr4 = useGetOrFetchApplicationsDefault(gameApplicationIds);
   let found = arr4.filter((item) => null != item);
-  const tmp8Result = value(7241);
+  const tmp8Result = value(7242);
   getOrFetchApplication = tmp8Result.useGetOrFetchApplication(value);
   const items2 = [ApplicationStore];
   const tmp8Result2 = value(504);
@@ -821,7 +821,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAcco
   items3 = [tmp.scrollContainer, { paddingBottom: tmp4.bottom + nativeDefault.space.PX_16 }];
   let name;
   ({ paddingBottom: tmp4.bottom + nativeDefault.space.PX_16 });
-  const TableRowGroup = tmp8(6973).TableRowGroup;
+  const TableRowGroup = tmp8(6972).TableRowGroup;
   const tmp16 = connectionApp;
   if (stateFromStores != null) {
     name = stateFromStores.name;
@@ -852,18 +852,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAcco
         return closure_1_11(TableRow, obj, name.id);
       });
     } else {
-      mapped1 = tmp17(tmp8(6889).TableRow, { label: "No official games" });
+      mapped1 = tmp17(tmp8(6888).TableRow, { label: "No official games" });
     }
     tmp17Result = mapped1;
   } else {
-    tmp17Result = tmp17(tmp8(6889).TableRow, { label: "No guild selected" });
+    tmp17Result = tmp17(tmp8(6888).TableRow, { label: "No guild selected" });
   }
   items4 = [closure_11(TableRowGroup, obj5), , , ];
-  const obj6 = { style: obj7, children: closure_11(value(6994).TextInput, { label: "Application ID", value, onChange: tmp5[1] }) };
+  const obj6 = { style: obj7, children: closure_11(value(6993).TextInput, { label: "Application ID", value, onChange: tmp5[1] }) };
   obj7 = { padding: nativeDefault.space.PX_12 };
-  const TableRowGroup2 = tmp8(6973).TableRowGroup;
+  const TableRowGroup2 = tmp8(6972).TableRowGroup;
   const items5 = [closure_11(closure_6, obj6), , ];
-  let TableRow = tmp8(6889).TableRow;
+  let TableRow = tmp8(6888).TableRow;
   if (null != getOrFetchApplication) {
     str = getOrFetchApplication.name;
   }
@@ -871,11 +871,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAcco
   const obj9 = { label: "Name: " + str };
   items5[1] = closure_11(TableRow, obj9);
   const obj10 = { label: "Linked Games: " + str2 };
-  const TableRow2 = tmp8(6889).TableRow;
+  const TableRow2 = tmp8(6888).TableRow;
   items5[2] = closure_11(TableRow2, obj10);
   items4[1] = closure_12(TableRowGroup2, obj8);
-  const TableRowGroup3 = tmp8(6973).TableRowGroup;
-  const TableRow3 = tmp8(6889).TableRow;
+  const TableRowGroup3 = tmp8(6972).TableRowGroup;
+  const TableRow3 = tmp8(6888).TableRow;
   let str4 = "text-feedback-critical";
   const Text = tmp8(5220).Text;
   if (debug.hasConnectionEntrypointUrl) {
@@ -889,7 +889,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAcco
   const items6 = [, , ];
   const obj12 = { label: "Connection Entrypoint URL", trailing: closure_11(Text, obj11) };
   items6[0] = closure_11(TableRow3, obj12);
-  const TableRow4 = tmp8(6889).TableRow;
+  const TableRow4 = tmp8(6888).TableRow;
   let str6 = "text-muted";
   const Text2 = tmp8(5220).Text;
   if (hasAlreadyLinked) {
@@ -925,7 +925,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAcco
   let tmp15Result = null != prop;
   if (tmp15Result) {
     let tmp17Result2 = null != connectionApp.applicationAccountLinkBenefitConfig.reward_image;
-    const TableRowGroup4 = tmp8(6973).TableRowGroup;
+    const TableRowGroup4 = tmp8(6972).TableRowGroup;
     if (tmp17Result2) {
       const obj19 = { style: obj20, children: closure_11(FastImageDefault, obj21) };
       obj21 = { source: obj22, style: tmp.rewardImage };
@@ -935,7 +935,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAcco
     }
     const items8 = [tmp17Result2, ];
     let str8 = connectionApp.applicationAccountLinkBenefitConfig.reward_name;
-    const TableRow5 = tmp8(6889).TableRow;
+    const TableRow5 = tmp8(6888).TableRow;
     if (str8 == null) {
       str8 = "Unnamed Reward";
     }

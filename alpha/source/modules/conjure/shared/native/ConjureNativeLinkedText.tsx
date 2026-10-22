@@ -1,64 +1,75 @@
-// Module ID: 11763
-// Function ID: 11764
+// Module ID: 11775
+// Function ID: 11776
 // Name: ConjureNativeLinkedText
-// Dependencies: [19, 21, 558, 576, 11764, 11773, 5220, 2]
+// Dependencies: [19, 21, 11776, 11785, 558, 576, 5220, 2]
+// Exports: conjureLinkedNodes
 
-// Module 11763 (ConjureNativeLinkedText)
+// Module 11775 (ConjureNativeLinkedText)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import conjureMarkup from "conjureMarkup" /* 11764 */;
-import conjureLinkifyBareDomains from "conjureLinkifyBareDomains" /* 11773 */;
+import conjureMarkup from "conjureMarkup" /* 11776 */;
+import conjureLinkifyBareDomains from "conjureLinkifyBareDomains" /* 11785 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
+function conjureLinkedNodes(hint, linkVariant) {
+  const parseConjureMarkup = conjureMarkup.parseConjureMarkup;
+  conjureMarkup;
+  const obj = conjureLinkifyBareDomains;
+  const obj2 = { allowLinks: true, linkVariant };
+  return parseConjureMarkup(obj.linkifyBareDomains(hint), true, obj2);
+}
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativeLinkedText(arg0) {
   let color;
   let text;
-  let tmp4;
   let variant;
   const obj = react2;
-  const cResult = obj.c(6);
+  const cResult = obj.c(7);
   ({ text, variant, color } = arg0);
-  if (cResult[0] !== text) {
-    const parseConjureMarkup = conjureMarkup.parseConjureMarkup;
-    conjureMarkup;
-    const tmpResult2 = conjureLinkifyBareDomains;
-    const parseConjureMarkupResult = parseConjureMarkup(tmpResult2.linkifyBareDomains(text), true, { allowLinks: true });
-    cResult[0] = text;
-    cResult[1] = parseConjureMarkupResult;
-    tmp4 = parseConjureMarkupResult;
-  } else {
-    tmp4 = cResult[1];
-  }
-  if (cResult[2] === color) {
-    if (cResult[3] === tmp4) {
-      let tmp7;
-      if (cResult[4] === variant) {
-        tmp7 = cResult[5];
-      }
-      return tmp7;
+  if (cResult[0] === text) {
+    let tmp4;
+    if (cResult[1] === variant) {
+      tmp4 = cResult[2];
     }
+    if (cResult[3] === color) {
+      if (cResult[4] === tmp4) {
+        let tmp7;
+        if (cResult[5] === variant) {
+          tmp7 = cResult[6];
+        }
+        return tmp7;
+      }
+    }
+    const tmp9 = jsx(Text_Text.Text, { variant, color, children: tmp4 });
+    cResult[3] = color;
+    cResult[4] = tmp4;
+    cResult[5] = variant;
+    cResult[6] = tmp9;
+    tmp7 = tmp9;
   }
-  const tmp8 = jsx(Text_Text.Text, { variant, color, children: tmp4 });
-  cResult[2] = color;
-  cResult[3] = tmp4;
-  cResult[4] = variant;
-  cResult[5] = tmp8;
-  tmp7 = tmp8;
-}) : (function ConjureNativeLinkedText(arg0) {
+  const parseConjureMarkup = conjureMarkup.parseConjureMarkup;
+  conjureMarkup;
+  const tmpResult2 = conjureLinkifyBareDomains;
+  const parseConjureMarkupResult = parseConjureMarkup(tmpResult2.linkifyBareDomains(text), true, { allowLinks: true, linkVariant: variant });
+  cResult[0] = text;
+  cResult[1] = variant;
+  cResult[2] = parseConjureMarkupResult;
+  tmp4 = parseConjureMarkupResult;
+}) : (function ConjureNativeLinkedText(variant) {
   let color;
   let text;
-  let variant;
-  ({ text, variant, color } = arg0);
+  variant = variant.variant;
+  ({ text, color } = variant);
   const Text = Text_Text.Text;
   const parseConjureMarkup = conjureMarkup.parseConjureMarkup;
   conjureMarkup;
   const obj2 = conjureLinkifyBareDomains;
-  return <Text variant={variant} color={color}>{parseConjureMarkup(obj2.linkifyBareDomains(text), true, { allowLinks: true })}</Text>;
+  return <Text variant={variant} color={color}>{parseConjureMarkup(obj2.linkifyBareDomains(text), true, { allowLinks: true, linkVariant: variant })}</Text>;
 });
 const result = size.fileFinishedImporting("modules/conjure/shared/native/ConjureNativeLinkedText.tsx");
 
 export default tmp3;
+export { conjureLinkedNodes };

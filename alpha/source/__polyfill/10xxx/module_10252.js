@@ -1,14 +1,12 @@
 // Module ID: 10252
 // Function ID: 10253
-// Dependencies: [41, 42, 93, 95, 98, 10247, 10185, 10187, 10188, 10192]
+// Dependencies: [41, 42, 93, 95, 98, 10210]
 
 // Module 10252
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10185 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10192 */;
-import _mod10247 from "module_10247" /* 10247 */;
+import _mod10210 from "module_10210" /* 10210 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
+import map from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -27,65 +25,47 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FRTimeUnitAgoFormatParser {
+let fn = this;
+if (this) {
+  fn = this.__importDefault;
+}
+if (!fn) {
+  fn = (__esModule) => {
+    let tmp2;
+    const tmp = __esModule;
+    if (!tmp) {
+      tmp2 = { default: __esModule };
+      const obj = { default: __esModule };
+    } else {
+      tmp2 = __esModule;
+    }
+    return tmp2;
+  };
+}
+class FRMergeDateRangeRefiner {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, FRTimeUnitAgoFormatParser);
-    const obj = _getPrototypeOf(FRTimeUnitAgoFormatParser);
+    _classCallCheck(this, FRMergeDateRangeRefiner);
+    const obj = _getPrototypeOf(FRMergeDateRangeRefiner);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
+    const tmp3 = map;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, undefined);
+      constructResult = obj(...arguments);
     }
     return tmp3(self, constructResult);
   }
 }
-_inherits(FRTimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(FRMergeDateRangeRefiner, fn(_mod10210).default);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    const NUMBER_PATTERN = _mod10247.NUMBER_PATTERN;
-    const regExp = new RegExp("(?:les?|la|l'|du|des?)\\s*(" + NUMBER_PATTERN + ")?(?:\\s*(prochaine?s?|derni[e\u00E8]re?s?|pass[\u00E9e]e?s?|pr[\u00E9e]c[\u00E9e]dents?|suivante?s?))?\\s*(" + repeatedTimeunitPattern.matchAnyPattern(_mod10247.TIME_UNIT_DICTIONARY) + ")(?:\\s*(prochaine?s?|derni[e\u00E8]re?s?|pass[\u00E9e]e?s?|pr[\u00E9e]c[\u00E9e]dents?|suivante?s?))?", "i");
-    return regExp;
+  key: "patternBetween",
+  value: function patternBetween() {
+    return /^\s*(à|a|au|-)\s*$/i;
   }
 };
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      let num = 1;
-      if (arg1[1]) {
-        num = _mod10247.parseNumberPattern(arg1[1]);
-      }
-      const obj = {};
-      obj[_mod10247.TIME_UNIT_DICTIONARY[arg1[3].toLowerCase(arg1[3])]] = num;
-      const str2 = arg1[2] || arg1[4] || "";
-      const formatted = str2.toLowerCase();
-      if (formatted) {
-        const obj2 = /derni[eè]re?s?/;
-        let isMatch = obj2.test(formatted);
-        if (!isMatch) {
-          const obj3 = /pass[ée]e?s?/;
-          isMatch = obj3.test(formatted);
-        }
-        if (!isMatch) {
-          const obj4 = /pr[ée]c[ée]dents?/;
-          isMatch = obj4.test(formatted);
-        }
-        let reverseDurationResult = obj;
-        if (isMatch) {
-          reverseDurationResult = tmp3(10187).reverseDuration(obj);
-        }
-        const ParsingComponents = tmp3(10188).ParsingComponents;
-        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
-      }
-    }
-  }
-];
+const items = [entry];
 
-export default _createClass(FRTimeUnitAgoFormatParser, items);
+export default _createClass(FRMergeDateRangeRefiner, items);

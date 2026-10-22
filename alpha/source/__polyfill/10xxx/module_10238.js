@@ -1,91 +1,101 @@
 // Module ID: 10238
 // Function ID: 10239
-// Dependencies: [41, 42, 93, 95, 98, 10231, 10185, 10187, 10188, 10192]
+// Dependencies: [10192, 10193]
+// Exports: parseDuration, parseYear
 
 // Module 10238
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10185 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10192 */;
-import _mod10231 from "module_10231" /* 10231 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10192 */;
+import findMostLikelyADYear from "findMostLikelyADYear" /* 10193 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-class DETimeUnitAgoFormatParser {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, DETimeUnitAgoFormatParser);
-    const obj = _getPrototypeOf(DETimeUnitAgoFormatParser);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, undefined);
+function parseNumberPattern(str) {
+  let num6;
+  str = str.toLowerCase();
+  if (undefined !== exports.INTEGER_WORD_DICTIONARY[str]) {
+    num6 = exports.INTEGER_WORD_DICTIONARY[str];
+  } else {
+    num6 = 1;
+    if ("ein" !== str) {
+      num6 = 1;
+      if ("einer" !== str) {
+        num6 = 1;
+        if ("einem" !== str) {
+          num6 = 1;
+          if ("einen" !== str) {
+            num6 = 1;
+            if ("eine" !== str) {
+              let num5 = 2;
+              if (!str.match(/wenigen/)) {
+                let num2 = 0.5;
+                if (!str.match(/halb/)) {
+                  num2 = 0.5;
+                  if (!str.match(/halben/)) {
+                    let num3 = 3;
+                    if (!str.match(/einigen/)) {
+                      let num4 = 7;
+                      if (!str.match(/mehreren/)) {
+                        const _parseFloat = parseFloat;
+                        num4 = parseFloat(str);
+                      }
+                      num3 = num4;
+                    }
+                    num2 = num3;
+                  }
+                }
+                num5 = num2;
+              }
+              num6 = num5;
+            }
+          }
+        }
+      }
     }
-    return tmp3(self, constructResult);
   }
+  return num6;
 }
-_inherits(DETimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
-const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    const NUMBER_PATTERN = _mod10231.NUMBER_PATTERN;
-    const regExp = new RegExp("(?:\\s*((?:n\u00E4chste|kommende|folgende|letzte|vergangene|vorige|vor(?:her|an)gegangene)(?:s|n|m|r)?|vor|in)\\s*)?(" + NUMBER_PATTERN + ")?(?:\\s*(n\u00E4chste|kommende|folgende|letzte|vergangene|vorige|vor(?:her|an)gegangene)(?:s|n|m|r)?)?\\s*(" + repeatedTimeunitPattern.matchAnyPattern(_mod10231.TIME_UNIT_DICTIONARY) + ")", "i");
-    return regExp;
+const combined = "(" + exports.NUMBER_PATTERN + ")\\s{0,5}(" + repeatedTimeunitPattern.matchAnyPattern(exports.TIME_UNIT_DICTIONARY) + ")\\s{0,5}";
+const regExp = new RegExp(combined, "i");
+
+export { parseNumberPattern };
+export const parseYear = function parseYear(match) {
+  const obj = /v/i;
+  if (obj.test(match)) {
+    const _parseInt3 = parseInt;
+    return -parseInt(match.replace(/[^0-9]+/gi, ""));
+  } else {
+    const obj2 = /n/i;
+    if (obj2.test(match)) {
+      const _parseInt2 = parseInt;
+      return parseInt(match.replace(/[^0-9]+/gi, ""));
+    } else {
+      const _parseInt = parseInt;
+      const obj3 = /z/i;
+      if (obj3.test(match)) {
+        return _parseInt(match.replace(/[^0-9]+/gi, ""));
+      } else {
+        const _parseIntResult = _parseInt(match);
+        return findMostLikelyADYear.findMostLikelyADYear(_parseIntResult);
+      }
+    }
   }
 };
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      let num = 1;
-      if (arg1[2]) {
-        num = _mod10231.parseNumberPattern(arg1[2]);
-      }
-      const obj = {};
-      obj[_mod10231.TIME_UNIT_DICTIONARY[arg1[4].toLowerCase(arg1[4])]] = num;
-      const str2 = arg1[1] || arg1[3] || "";
-      const formatted = str2.toLowerCase();
-      if (formatted) {
-        const obj2 = /vor/;
-        let isMatch = obj2.test(formatted);
-        if (!isMatch) {
-          const obj3 = /letzte/;
-          isMatch = obj3.test(formatted);
-        }
-        if (!isMatch) {
-          const obj4 = /vergangen/;
-          isMatch = obj4.test(formatted);
-        }
-        let reverseDurationResult = obj;
-        if (isMatch) {
-          reverseDurationResult = tmp3(10187).reverseDuration(obj);
-        }
-        const ParsingComponents = tmp3(10188).ParsingComponents;
-        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
-      }
-    }
+export const parseDuration = function parseDuration(arg0) {
+  let str = arg0;
+  const obj = {};
+  let match = regExp.exec(arg0);
+  while (match) {
+    let str2 = match[2];
+    let tmp3 = parseNumberPattern(match[1]);
+    obj[exports.TIME_UNIT_DICTIONARY[str2.toLowerCase(str2)]] = tmp3;
+    let substr = str.substring(match[0].length);
+    match = regExp.exec(substr);
+    str = substr;
   }
-];
-
-export default _createClass(DETimeUnitAgoFormatParser, items);
+  return obj;
+};
+export const WEEKDAY_DICTIONARY = { sonntag: 0, so: 0, montag: 1, mo: 1, dienstag: 2, di: 2, mittwoch: 3, mi: 3, donnerstag: 4, do: 4, freitag: 5, fr: 5, samstag: 6, sa: 6 };
+export const MONTH_DICTIONARY = { januar: 1, "j\u00e4nner": 1, janner: 1, jan: 1, "jan.": 1, februar: 2, feber: 2, feb: 2, "feb.": 2, "m\u00e4rz": 3, maerz: 3, "m\u00e4r": 3, "m\u00e4r.": 3, mrz: 3, "mrz.": 3, april: 4, apr: 4, "apr.": 4, mai: 5, juni: 6, jun: 6, "jun.": 6, juli: 7, jul: 7, "jul.": 7, august: 8, aug: 8, "aug.": 8, september: 9, sep: 9, "sep.": 9, sept: 9, "sept.": 9, oktober: 10, okt: 10, "okt.": 10, november: 11, nov: 11, "nov.": 11, dezember: 12, dez: 12, "dez.": 12 };
+export const INTEGER_WORD_DICTIONARY = { eins: 1, eine: 1, einem: 1, einen: 1, einer: 1, zwei: 2, drei: 3, vier: 4, "f\u00fcnf": 5, fuenf: 5, sechs: 6, sieben: 7, acht: 8, neun: 9, zehn: 10, elf: 11, "zw\u00f6lf": 12, zwoelf: 12 };
+export const TIME_UNIT_DICTIONARY = { sek: "second", sekunde: "second", sekunden: "second", min: "minute", minute: "minute", minuten: "minute", h: "hour", std: "hour", stunde: "hour", stunden: "hour", tag: "day", tage: "day", tagen: "day", woche: "week", wochen: "week", monat: "month", monate: "month", monaten: "month", monats: "month", quartal: "quarter", quartals: "quarter", quartale: "quarter", quartalen: "quarter", a: "year", j: "year", jr: "year", jahr: "year", jahre: "year", jahren: "year", jahres: "year" };
+export const NUMBER_PATTERN = "(?:" + repeatedTimeunitPattern.matchAnyPattern(exports.INTEGER_WORD_DICTIONARY) + "|[0-9]+|[0-9]+\\.[0-9]+|halb?|halbe?|einigen?|wenigen?|mehreren?)";
+export const YEAR_PATTERN = "(?:[0-9]{1,4}(?:\\s*[vn]\\.?\\s*(?:C(?:hr)?|(?:u\\.?|d\\.?(?:\\s*g\\.?)?)?\\s*Z)\\.?|\\s*(?:u\\.?|d\\.?(?:\\s*g\\.)?)\\s*Z\\.?)?)";
+export const TIME_UNITS_PATTERN = repeatedTimeunitPattern.repeatedTimeunitPattern("", combined);

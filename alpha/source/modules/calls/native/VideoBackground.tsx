@@ -1,15 +1,15 @@
-// Module ID: 8712
-// Function ID: 8713
+// Module ID: 8719
+// Function ID: 8720
 // Name: VideoBackground
-// Dependencies: [109, 32, 19, 17, 1087, 21, 4969, 12, 8713, 8714, 4966, 587, 1901, 558, 576, 8715, 1202, 5244, 2]
+// Dependencies: [109, 32, 19, 17, 1087, 21, 4969, 12, 8720, 8721, 4966, 587, 1901, 558, 576, 8722, 1202, 5244, 2]
 
-// Module 8712 (VideoBackground)
+// Module 8719 (VideoBackground)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import native from "native" /* 1202 */;
 import react_nativeDefault from "react-native" /* 1901 */;
-import VideoBackgroundManagerDefault from "VideoBackgroundManager" /* 8714 */;
-import useProfileTileGradientDefault from "useProfileTileGradient" /* 8715 */;
+import VideoBackgroundManagerDefault from "VideoBackgroundManager" /* 8721 */;
+import useProfileTileGradientDefault from "useProfileTileGradient" /* 8722 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -41,13 +41,13 @@ function useDominantRGBFromImage(arg0, arg1) {
     tmp = first;
   }
   let tmp3 = first;
-  const tmp5 = first(8713)();
+  const tmp5 = first(8720)();
   dependencyMap = tmp5;
   let obj = react;
   let hexToRgbResult;
   const useState = react.useState;
   if (null != arg0) {
-    hexToRgbResult = tmp3(8714).cachedDominantColors[arg0];
+    hexToRgbResult = tmp3(8721).cachedDominantColors[arg0];
   }
   if (hexToRgbResult == null) {
     const obj2 = require("ColorUtils");

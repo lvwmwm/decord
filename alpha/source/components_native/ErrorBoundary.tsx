@@ -1,21 +1,21 @@
-// Module ID: 17240
-// Function ID: 17241
+// Module ID: 17262
+// Function ID: 17263
 // Name: components_native/ErrorBoundary
-// Dependencies: [5, 32, 19, 17, 10992, 21, 4969, 558, 576, 12644, 504, 1128, 5230, 5023, 1257, 584, 1202, 9054, 5220, 2]
+// Dependencies: [5, 32, 19, 17, 11000, 21, 4969, 558, 576, 12656, 504, 1128, 5230, 5023, 1257, 584, 1202, 9061, 5220, 2]
 
-// Module 17240 (components_native/ErrorBoundary)
+// Module 17262 (components_native/ErrorBoundary)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import native from "native" /* 1202 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import native2 from "native" /* 5023 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import AppCrash from "AppCrash" /* 9054 */;
+import AppCrash from "AppCrash" /* 9061 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 10992 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11000 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

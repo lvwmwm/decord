@@ -1,18 +1,18 @@
-// Module ID: 8418
-// Function ID: 8419
+// Module ID: 8419
+// Function ID: 8420
 // Name: UserOfferActionCreators
-// Dependencies: [5, 8419, 7548, 7544, 1394, 1087, 1384, 584, 1267, 1297, 8420, 1257, 4994, 4805, 4802, 2]
+// Dependencies: [5, 8420, 7549, 7545, 1394, 1087, 1384, 584, 1267, 1297, 8421, 1257, 4994, 4805, 4802, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer, triggerUserOffer
 
-// Module 8418 (UserOfferActionCreators)
+// Module 8419 (UserOfferActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8419 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7548 */;
-import UserOfferStore from "UserOfferStore" /* 7544 */;
+import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8420 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7549 */;
+import UserOfferStore from "UserOfferStore" /* 7545 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -90,7 +90,7 @@ let obj = function _fetchUserOffer() {
               }
               obj6 = closure_2;
               if (closure_2 === undefined) {
-                obj6 = { offerId: "r", paymentGatewayOverride: "emoji" };
+                obj6 = { offerId: "Array", paymentGatewayOverride: "Reflect" };
               }
               offerId = undefined;
               paymentGatewayOverride = undefined;

@@ -1,9 +1,9 @@
-// Module ID: 5849
-// Function ID: 5850
+// Module ID: 5848
+// Function ID: 5849
 // Name: VideoBackgroundStore
 // Dependencies: [1209, 1246, 2014, 4872, 1392, 5725, 504, 584, 2]
 
-// Module 5849 (VideoBackgroundStore)
+// Module 5848 (VideoBackgroundStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 5725 */;

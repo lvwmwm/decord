@@ -1,13 +1,13 @@
-// Module ID: 9518
-// Function ID: 9519
+// Module ID: 9525
+// Function ID: 9526
 // Name: guild_boost_checkout_banner
-// Dependencies: [32, 1212, 9504, 9494, 9495, 2]
+// Dependencies: [32, 1212, 9511, 9501, 9502, 2]
 
-// Module 9518 (guild_boost_checkout_banner)
+// Module 9525 (guild_boost_checkout_banner)
 import _mod1212 from "module_1212" /* 1212 */;
-import localized_string from "localized_string" /* 9494 */;
-import help_article from "help_article" /* 9495 */;
-import theme_aware_asset from "theme_aware_asset" /* 9504 */;
+import localized_string from "localized_string" /* 9501 */;
+import help_article from "help_article" /* 9502 */;
+import theme_aware_asset from "theme_aware_asset" /* 9511 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

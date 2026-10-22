@@ -1,10 +1,10 @@
-// Module ID: 11299
-// Function ID: 11300
+// Module ID: 11308
+// Function ID: 11309
 // Name: getIsInParty
 // Dependencies: [2]
 // Exports: getIsInParty
 
-// Module 11299 (getIsInParty)
+// Module 11308 (getIsInParty)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/getIsInParty.tsx");

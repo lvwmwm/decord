@@ -1,10 +1,10 @@
-// Module ID: 9799
-// Function ID: 9800
+// Module ID: 9806
+// Function ID: 9807
 // Name: EmojiPickerUtils
-// Dependencies: [19, 6711, 4843, 6687, 1392, 6714, 1087, 1395, 1243, 1394, 1281, 9800, 5697, 9801, 9803, 9804, 504, 1991, 4919, 1128, 4915, 1267, 12, 1104, 558, 576, 4802, 2]
+// Dependencies: [19, 6710, 4843, 6686, 1392, 6713, 1087, 1395, 1243, 1394, 1281, 9807, 5697, 9808, 9810, 9811, 504, 1991, 4919, 1128, 4915, 1267, 12, 1104, 558, 576, 4802, 2]
 // Exports: getAriaIdForEmojiCategory, getEmojiSubCategory, getSearchPlaceholder, getStringForEmojiCategory, getUnicodeEmojiCategories, initializeSearch, trackEmojiFavorited, trackEmojiFocus, trackEmojiSearchEmpty, trackEmojiSearchResultsViewed, trackEmojiSearchSelect, trackEmojiSearchStart, trackEmojiSelect, trackPremiumSettingsPaneOpened, useEmojiCategories
 
-// Module 9799 (EmojiPickerUtils)
+// Module 9806 (EmojiPickerUtils)
 import DurationsDefault from "Durations" /* 1104 */;
 import intl13 from "intl" /* 1128 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1243 */;
@@ -14,13 +14,13 @@ import PremiumConstants from "PremiumConstants" /* 1394 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4915 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 4919 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5697 */;
-import ExpressionPickerGridStores from "ExpressionPickerGridStores" /* 9800 */;
+import ExpressionPickerGridStores from "ExpressionPickerGridStores" /* 9807 */;
 import react_mod from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6711 */;
+import EmojiStore from "EmojiStore" /* 6710 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import SortedGuildStore from "SortedGuildStore" /* 6687 */;
+import SortedGuildStore from "SortedGuildStore" /* 6686 */;
 import UserStore from "UserStore" /* 1392 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6714 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6713 */;
 import Constants from "Constants" /* 1087 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import module_12 from "module_12" /* 12 */;

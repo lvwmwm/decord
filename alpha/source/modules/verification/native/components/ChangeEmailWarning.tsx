@@ -1,14 +1,14 @@
-// Module ID: 6976
-// Function ID: 6977
+// Module ID: 6975
+// Function ID: 6976
 // Name: ChangeEmailWarning
-// Dependencies: [19, 17, 1392, 6969, 1087, 21, 4969, 587, 558, 576, 1505, 504, 1267, 1107, 6977, 1128, 5220, 5230, 6907, 2]
+// Dependencies: [19, 17, 1392, 6968, 1087, 21, 4969, 587, 558, 576, 1505, 504, 1267, 1107, 6976, 1128, 5220, 5230, 6906, 2]
 
-// Module 6976 (ChangeEmailWarning)
+// Module 6975 (ChangeEmailWarning)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import VerificationConstants from "VerificationConstants" /* 6969 */;
+import VerificationConstants from "VerificationConstants" /* 6968 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -81,7 +81,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
       const _Symbol6 = Symbol;
       const container = tmp4.container;
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp15 = closure_9(changeEmailReason(6977).TrafficConeSpotIllustration, {});
+        const tmp15 = closure_9(changeEmailReason(6976).TrafficConeSpotIllustration, {});
         cResult[5] = tmp15;
         tmp13 = tmp15;
       } else {
@@ -248,7 +248,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
   if (null != stateFromStores) {
     const obj3 = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: closure_10(closure_4, obj4) };
     obj4 = { style: tmp.container, children: items2 };
-    items2 = [closure_9(changeEmailReason(6977).TrafficConeSpotIllustration, {}), , , ];
+    items2 = [closure_9(changeEmailReason(6976).TrafficConeSpotIllustration, {}), , , ];
     const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(changeEmailReason(1128).t.hhR7gX) };
     const Text = tmp2(5220).Text;
     intl = tmp2(1128).intl;

@@ -1,18 +1,18 @@
-// Module ID: 5886
-// Function ID: 5887
+// Module ID: 5885
+// Function ID: 5886
 // Name: VideoQuality
-// Dependencies: [5849, 5728, 5876, 5708, 5870, 5725, 5887, 12, 1384, 11, 4838, 2]
+// Dependencies: [5848, 5728, 5875, 5708, 5869, 5725, 5886, 12, 1384, 11, 4838, 2]
 
-// Module 5886 (VideoQuality)
+// Module 5885 (VideoQuality)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import TimeUtils from "TimeUtils" /* 5708 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 5725 */;
-import Histogram from "Histogram" /* 5870 */;
-import NetworkQualityDefault from "NetworkQuality" /* 5876 */;
-import VideoQualityStats from "VideoQualityStats" /* 5887 */;
-import VideoBackgroundStore_mod from "VideoBackgroundStore" /* 5849 */;
+import Histogram from "Histogram" /* 5869 */;
+import NetworkQualityDefault from "NetworkQuality" /* 5875 */;
+import VideoQualityStats from "VideoQualityStats" /* 5886 */;
+import VideoBackgroundStore_mod from "VideoBackgroundStore" /* 5848 */;
 import TypedEventEmitter from "TypedEventEmitter" /* 5728 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -284,23 +284,23 @@ class VideoQuality extends TypedEventEmitter {
         if (num == null) {
           num = 0;
         }
-        num2 = value.get(tmp2(5887).CodecTypes.H265);
+        num2 = value.get(tmp2(5886).CodecTypes.H265);
         if (num2 == null) {
           num2 = 0;
         }
-        num3 = value.get(tmp2(5887).CodecTypes.VP8);
+        num3 = value.get(tmp2(5886).CodecTypes.VP8);
         if (num3 == null) {
           num3 = 0;
         }
-        num4 = value.get(tmp2(5887).CodecTypes.VP9);
+        num4 = value.get(tmp2(5886).CodecTypes.VP9);
         if (num4 == null) {
           num4 = 0;
         }
-        num5 = value.get(tmp2(5887).CodecTypes.AV1);
+        num5 = value.get(tmp2(5886).CodecTypes.AV1);
         if (num5 == null) {
           num5 = 0;
         }
-        num6 = value.get(tmp2(5887).CodecTypes.UNKNOWN);
+        num6 = value.get(tmp2(5886).CodecTypes.UNKNOWN);
         if (num6 == null) {
           num6 = 0;
         }
@@ -318,23 +318,23 @@ class VideoQuality extends TypedEventEmitter {
     if (num8 == null) {
       num8 = 0;
     }
-    num9 = map.get(tmp7(5887).CodecTypes.H265);
+    num9 = map.get(tmp7(5886).CodecTypes.H265);
     if (num9 == null) {
       num9 = 0;
     }
-    num10 = map.get(tmp7(5887).CodecTypes.VP8);
+    num10 = map.get(tmp7(5886).CodecTypes.VP8);
     if (num10 == null) {
       num10 = 0;
     }
-    num11 = map.get(tmp7(5887).CodecTypes.VP9);
+    num11 = map.get(tmp7(5886).CodecTypes.VP9);
     if (num11 == null) {
       num11 = 0;
     }
-    num12 = map.get(tmp7(5887).CodecTypes.AV1);
+    num12 = map.get(tmp7(5886).CodecTypes.AV1);
     if (num12 == null) {
       num12 = 0;
     }
-    num13 = map.get(tmp7(5887).CodecTypes.UNKNOWN);
+    num13 = map.get(tmp7(5886).CodecTypes.UNKNOWN);
     if (num13 == null) {
       num13 = 0;
     }
@@ -863,6 +863,12 @@ class VideoQuality extends TypedEventEmitter {
     let cryptorSuccessCount;
     let framesCodec;
     let framesCodecError;
+    let framesCodecErrorFallback;
+    let framesCodecErrorGeneric;
+    let framesCodecErrorNoOutput;
+    let framesCodecErrorOther;
+    let framesCodecErrorParameter;
+    let framesCodecErrorTimeout;
     let framesDropped;
     let framesNetwork;
     let freezeCount;
@@ -1273,7 +1279,7 @@ class VideoQuality extends TypedEventEmitter {
       const aggregatedProperties = aggregationDuration.aggregatedProperties;
       ({ bytes, framesDropped, networkFramesDropped, framesCodec, freezeCount, totalFreezesDuration, totalFramesDuration, cryptorFailureCount } = aggregatedProperties);
       let num66 = cryptorFailureCount;
-      ({ framesCodecError, framesNetwork, packets, packetsLost, nackCount, pliCount, qpSum, pauseCount, totalPausesDuration, totalDecodeTime, keyframes, passthroughCount, cryptorSuccessCount, cryptorDuration, cryptorAttempts, cryptorMissingKeyCount, cryptorInvalidNonceCount, qualityDecodeErrors, qualityDecoderReboots, qualityScoreErrors, qualityFrameDrops, qualitySizeMismatches } = aggregatedProperties);
+      ({ framesCodecError, framesCodecErrorNoOutput, framesCodecErrorTimeout, framesCodecErrorGeneric, framesCodecErrorFallback, framesCodecErrorParameter, framesCodecErrorOther, framesNetwork, packets, packetsLost, nackCount, pliCount, qpSum, pauseCount, totalPausesDuration, totalDecodeTime, keyframes, passthroughCount, cryptorSuccessCount, cryptorDuration, cryptorAttempts, cryptorMissingKeyCount, cryptorInvalidNonceCount, qualityDecodeErrors, qualityDecoderReboots, qualityScoreErrors, qualityFrameDrops, qualitySizeMismatches } = aggregatedProperties);
       if (cryptorFailureCount == null) {
         num66 = 0;
       }
@@ -1300,7 +1306,7 @@ class VideoQuality extends TypedEventEmitter {
           obj.frames_dropped_render = framesDropped;
         }
       }
-      const obj2 = { avg_bitrate: num68, avg_fps: num71, num_bytes: bytes, num_packets_lost: packetsLost, num_packets: packets, num_frames: framesNetwork, num_frames_codec_error: framesCodecError, time_to_first_frame_ms: aggregationDuration.timeToFirstFrame, num_frames_dropped: framesDropped + networkFramesDropped, num_nacks: nackCount, num_plis: pliCount, qp_sum: qpSum, num_keyframes: keyframes, cryptor_passthrough_count: passthroughCount, cryptor_success_count: cryptorSuccessCount, cryptor_failure_count: cryptorFailureCount, cryptor_duration: cryptorDuration, cryptor_attempts: cryptorAttempts, cryptor_missing_key_count: cryptorMissingKeyCount, cryptor_invalid_nonce_count: cryptorInvalidNonceCount, cryptor_failure_after_success_count: diff1, encoder_quality_decode_errors: qualityDecodeErrors, encoder_quality_decoder_reboots: qualityDecoderReboots, encoder_quality_score_errors: qualityScoreErrors, encoder_quality_frame_drops: qualityFrameDrops, encoder_quality_size_mismatches: qualitySizeMismatches };
+      const obj2 = { avg_bitrate: num68, avg_fps: num71, num_bytes: bytes, num_packets_lost: packetsLost, num_packets: packets, num_frames: framesNetwork, num_frames_codec_error: framesCodecError, num_frames_codec_error_no_output: framesCodecErrorNoOutput, num_frames_codec_error_timeout: framesCodecErrorTimeout, num_frames_codec_error_generic: framesCodecErrorGeneric, num_frames_codec_error_fallback: framesCodecErrorFallback, num_frames_codec_error_parameter: framesCodecErrorParameter, num_frames_codec_error_other: framesCodecErrorOther, time_to_first_frame_ms: aggregationDuration.timeToFirstFrame, num_frames_dropped: framesDropped + networkFramesDropped, num_nacks: nackCount, num_plis: pliCount, qp_sum: qpSum, num_keyframes: keyframes, cryptor_passthrough_count: passthroughCount, cryptor_success_count: cryptorSuccessCount, cryptor_failure_count: cryptorFailureCount, cryptor_duration: cryptorDuration, cryptor_attempts: cryptorAttempts, cryptor_missing_key_count: cryptorMissingKeyCount, cryptor_invalid_nonce_count: cryptorInvalidNonceCount, cryptor_failure_after_success_count: diff1, encoder_quality_decode_errors: qualityDecodeErrors, encoder_quality_decoder_reboots: qualityDecoderReboots, encoder_quality_score_errors: qualityScoreErrors, encoder_quality_frame_drops: qualityFrameDrops, encoder_quality_size_mismatches: qualitySizeMismatches };
       const merged1 = Object.assign(obj);
       num68 = 0;
       if (0 < result) {

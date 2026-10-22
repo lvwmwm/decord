@@ -1,9 +1,9 @@
-// Module ID: 7437
-// Function ID: 7438
+// Module ID: 7438
+// Function ID: 7439
 // Name: useMuteStates
 // Dependencies: [4874, 502, 2014, 4901, 5616, 1087, 558, 576, 504, 2]
 
-// Module 7437 (useMuteStates)
+// Module 7438 (useMuteStates)
 import Constants from "Constants" /* 1087 */;
 import ImpersonateStore from "ImpersonateStore" /* 4874 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

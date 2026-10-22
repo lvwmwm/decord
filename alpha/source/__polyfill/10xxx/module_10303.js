@@ -1,9 +1,9 @@
 // Module ID: 10303
 // Function ID: 10304
-// Dependencies: [41, 42, 93, 95, 98, 10300, 10192]
+// Dependencies: [41, 42, 93, 95, 98, 10300, 10199]
 
 // Module 10303
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10192 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10199 */;
 import _mod10300 from "module_10300" /* 10300 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
@@ -28,23 +28,23 @@ function _isNativeReflectConstruct() {
   }
 }
 const keys = Object.keys(_mod10300.NUMBER);
-const text = `(?:由|從|自)?(?:(今|明|前|大前|後|大後|聽|昨|尋|琴)(早|朝|晚)|(上(?:午|晝)|朝(?:早)|早(?:上)|下(?:午|晝)|晏(?:晝)|晚(?:上)|夜(?:晚)?|中(?:午)|凌(?:晨))|(今|明|前|大前|後|大後|聽|昨|尋|琴)(?:日|天)(?:[\\s,，]*)(?:(上(?:午|晝)|朝(?:早)|早(?:上)|下(?:午|晝)|晏(?:晝)|晚(?:上)|夜(?:晚)?|中(?:午)|凌(?:晨)))?)?(?:[\\s,，]*)(?:(\\d+|[${obj.join("")}`;
+const text = `(?:从|自)?(?:(今|明|前|大前|后|大后|昨)(早|朝|晚)|(上(?:午)|早(?:上)|下(?:午)|晚(?:上)|夜(?:晚)?|中(?:午)|凌(?:晨))|(今|明|前|大前|后|大后|昨)(?:日|天)(?:[\\s,，]*)(?:(上(?:午)|早(?:上)|下(?:午)|晚(?:上)|夜(?:晚)?|中(?:午)|凌(?:晨)))?)?(?:[\\s,，]*)(?:(\\d+|[${obj.join("")}`;
 const keys1 = Object.keys(_mod10300.NUMBER);
-const text1 = `${`(?:由|從|自)?(?:(今|明|前|大前|後|大後|聽|昨|尋|琴)(早|朝|晚)|(上(?:午|晝)|朝(?:早)|早(?:上)|下(?:午|晝)|晏(?:晝)|晚(?:上)|夜(?:晚)?|中(?:午)|凌(?:晨))|(今|明|前|大前|後|大後|聽|昨|尋|琴)(?:日|天)(?:[\\s,，]*)(?:(上(?:午|晝)|朝(?:早)|早(?:上)|下(?:午|晝)|晏(?:晝)|晚(?:上)|夜(?:晚)?|中(?:午)|凌(?:晨)))?)?(?:[\\s,，]*)(?:(\\d+|[${obj.join("")}`}]+)(?:\\s*)(?:點|時|:|：)(?:\\s*)(\\d+|半|正|整|[${obj2.join("")}`;
+const text1 = `${`(?:从|自)?(?:(今|明|前|大前|后|大后|昨)(早|朝|晚)|(上(?:午)|早(?:上)|下(?:午)|晚(?:上)|夜(?:晚)?|中(?:午)|凌(?:晨))|(今|明|前|大前|后|大后|昨)(?:日|天)(?:[\\s,，]*)(?:(上(?:午)|早(?:上)|下(?:午)|晚(?:上)|夜(?:晚)?|中(?:午)|凌(?:晨)))?)?(?:[\\s,，]*)(?:(\\d+|[${obj.join("")}`}]+)(?:\\s*)(?:点|时|:|：)(?:\\s*)(\\d+|半|正|整|[${obj2.join("")}`;
 const keys2 = Object.keys(_mod10300.NUMBER);
 const regExp = new RegExp(text1 + "]+)?(?:\\s*)(?:\u5206|:|\uFF1A)?(?:\\s*)(\\d+|[" + keys2.join("") + "]+)?(?:\\s*)(?:\u79D2)?)(?:\\s*(A.M.|P.M.|AM?|PM?))?", "i");
 const keys3 = Object.keys(_mod10300.NUMBER);
-const text2 = `(?:^\\s*(?:到|至|\\-|\\–|\\~|\\〜)\\s*)(?:(今|明|前|大前|後|大後|聽|昨|尋|琴)(早|朝|晚)|(上(?:午|晝)|朝(?:早)|早(?:上)|下(?:午|晝)|晏(?:晝)|晚(?:上)|夜(?:晚)?|中(?:午)|凌(?:晨))|(今|明|前|大前|後|大後|聽|昨|尋|琴)(?:日|天)(?:[\\s,，]*)(?:(上(?:午|晝)|朝(?:早)|早(?:上)|下(?:午|晝)|晏(?:晝)|晚(?:上)|夜(?:晚)?|中(?:午)|凌(?:晨)))?)?(?:[\\s,，]*)(?:(\\d+|[${obj4.join("")}`;
+const text2 = `(?:^\\s*(?:到|至|\\-|\\–|\\~|\\〜)\\s*)(?:(今|明|前|大前|后|大后|昨)(早|朝|晚)|(上(?:午)|早(?:上)|下(?:午)|晚(?:上)|夜(?:晚)?|中(?:午)|凌(?:晨))|(今|明|前|大前|后|大后|昨)(?:日|天)(?:[\\s,，]*)(?:(上(?:午)|早(?:上)|下(?:午)|晚(?:上)|夜(?:晚)?|中(?:午)|凌(?:晨)))?)?(?:[\\s,，]*)(?:(\\d+|[${obj4.join("")}`;
 const keys4 = Object.keys(_mod10300.NUMBER);
-const text3 = `${`(?:^\\s*(?:到|至|\\-|\\–|\\~|\\〜)\\s*)(?:(今|明|前|大前|後|大後|聽|昨|尋|琴)(早|朝|晚)|(上(?:午|晝)|朝(?:早)|早(?:上)|下(?:午|晝)|晏(?:晝)|晚(?:上)|夜(?:晚)?|中(?:午)|凌(?:晨))|(今|明|前|大前|後|大後|聽|昨|尋|琴)(?:日|天)(?:[\\s,，]*)(?:(上(?:午|晝)|朝(?:早)|早(?:上)|下(?:午|晝)|晏(?:晝)|晚(?:上)|夜(?:晚)?|中(?:午)|凌(?:晨)))?)?(?:[\\s,，]*)(?:(\\d+|[${obj4.join("")}`}]+)(?:\\s*)(?:點|時|:|：)(?:\\s*)(\\d+|半|正|整|[${obj5.join("")}`;
+const text3 = `${`(?:^\\s*(?:到|至|\\-|\\–|\\~|\\〜)\\s*)(?:(今|明|前|大前|后|大后|昨)(早|朝|晚)|(上(?:午)|早(?:上)|下(?:午)|晚(?:上)|夜(?:晚)?|中(?:午)|凌(?:晨))|(今|明|前|大前|后|大后|昨)(?:日|天)(?:[\\s,，]*)(?:(上(?:午)|早(?:上)|下(?:午)|晚(?:上)|夜(?:晚)?|中(?:午)|凌(?:晨)))?)?(?:[\\s,，]*)(?:(\\d+|[${obj4.join("")}`}]+)(?:\\s*)(?:点|时|:|：)(?:\\s*)(\\d+|半|正|整|[${obj5.join("")}`;
 const keys5 = Object.keys(_mod10300.NUMBER);
 const regExp1 = new RegExp(text3 + "]+)?(?:\\s*)(?:\u5206|:|\uFF1A)?(?:\\s*)(\\d+|[" + keys5.join("") + "]+)?(?:\\s*)(?:\u79D2)?)(?:\\s*(A.M.|P.M.|AM?|PM?))?", "i");
-class ZHHantTimeExpressionParser {
+class ZHHansTimeExpressionParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ZHHantTimeExpressionParser);
-    const obj = _getPrototypeOf(ZHHantTimeExpressionParser);
+    _classCallCheck(this, ZHHansTimeExpressionParser);
+    const obj = _getPrototypeOf(ZHHansTimeExpressionParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -56,7 +56,7 @@ class ZHHantTimeExpressionParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ZHHantTimeExpressionParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ZHHansTimeExpressionParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
@@ -84,64 +84,48 @@ const items = [
       const refDate = createParsingResult.refDate;
       const date = new Date(refDate.getTime());
       if (index[1]) {
-        if ("\u660E" != index[1]) {
-          if ("\u807D" != index[1]) {
-            if ("\u6628" != index[1]) {
-              if ("\u5C0B" != index[1]) {
-                if ("\u7434" != index[1]) {
-                  if ("\u524D" == index[1]) {
-                    date.setDate(date.getDate() - 2);
-                  } else if ("\u5927\u524D" == index[1]) {
-                    date.setDate(date.getDate() - 3);
-                  } else if ("\u5F8C" == index[1]) {
-                    date.setDate(date.getDate() + 2);
-                  } else if ("\u5927\u5F8C" == index[1]) {
-                    date.setDate(date.getDate() + 3);
-                  }
-                }
-              }
-            }
-            date.setDate(date.getDate() - 1);
+        if ("\u660E" == index[1]) {
+          const refDate2 = createParsingResult.refDate;
+          if (refDate2.getHours() > 1) {
+            date.setDate(date.getDate() + 1);
           }
-          const start7 = parsingResult.start;
-          start7.assign("day", date.getDate());
-          const start8 = parsingResult.start;
-          start8.assign("month", date.getMonth() + 1);
-          const start9 = parsingResult.start;
-          start9.assign("year", date.getFullYear());
+        } else if ("\u6628" == index[1]) {
+          date.setDate(date.getDate() - 1);
+        } else if ("\u524D" == index[1]) {
+          date.setDate(date.getDate() - 2);
+        } else if ("\u5927\u524D" == index[1]) {
+          date.setDate(date.getDate() - 3);
+        } else if ("\u540E" == index[1]) {
+          date.setDate(date.getDate() + 2);
+        } else if ("\u5927\u540E" == index[1]) {
+          date.setDate(date.getDate() + 3);
         }
-        const refDate2 = createParsingResult.refDate;
-        if (refDate2.getHours() > 1) {
-          date.setDate(date.getDate() + 1);
-        }
+        const start7 = parsingResult.start;
+        start7.assign("day", date.getDate());
+        const start8 = parsingResult.start;
+        start8.assign("month", date.getMonth() + 1);
+        const start9 = parsingResult.start;
+        start9.assign("year", date.getFullYear());
       } else if (index[4]) {
-        if ("\u660E" != index[4]) {
-          if ("\u807D" != index[4]) {
-            if ("\u6628" != index[4]) {
-              if ("\u5C0B" != index[4]) {
-                if ("\u7434" != index[4]) {
-                  if ("\u524D" == index[4]) {
-                    date.setDate(date.getDate() - 2);
-                  } else if ("\u5927\u524D" == index[4]) {
-                    date.setDate(date.getDate() - 3);
-                  } else if ("\u5F8C" == index[4]) {
-                    date.setDate(date.getDate() + 2);
-                  } else if ("\u5927\u5F8C" == index[4]) {
-                    date.setDate(date.getDate() + 3);
-                  }
-                }
-              }
-            }
-            date.setDate(date.getDate() - 1);
-          }
-          const start4 = parsingResult.start;
-          start4.assign("day", date.getDate());
-          const start5 = parsingResult.start;
-          start5.assign("month", date.getMonth() + 1);
-          const start6 = parsingResult.start;
-          start6.assign("year", date.getFullYear());
+        if ("\u660E" == index[4]) {
+          date.setDate(date.getDate() + 1);
+        } else if ("\u6628" == index[4]) {
+          date.setDate(date.getDate() - 1);
+        } else if ("\u524D" == index[4]) {
+          date.setDate(date.getDate() - 2);
+        } else if ("\u5927\u524D" == index[4]) {
+          date.setDate(date.getDate() - 3);
+        } else if ("\u540E" == index[4]) {
+          date.setDate(date.getDate() + 2);
+        } else if ("\u5927\u540E" == index[4]) {
+          date.setDate(date.getDate() + 3);
         }
-        date.setDate(date.getDate() + 1);
+        const start4 = parsingResult.start;
+        start4.assign("day", date.getDate());
+        const start5 = parsingResult.start;
+        start5.assign("month", date.getMonth() + 1);
+        const start6 = parsingResult.start;
+        start6.assign("year", date.getFullYear());
       } else {
         const start = parsingResult.start;
         start.imply("day", date.getDate());
@@ -216,8 +200,8 @@ const items = [
           if (rounded > 12) {
             return null;
           } else {
-            const str98 = index[9][0];
-            const formatted = str98.toLowerCase();
+            const str82 = index[9][0];
+            const formatted = str82.toLowerCase();
             let tmp42 = rounded;
             if ("a" == formatted) {
               let num21 = rounded;
@@ -240,43 +224,40 @@ const items = [
           }
         } else if (index[2]) {
           const first = index[2][0];
-          if ("\u671D" != first) {
-            if ("\u65E9" != first) {
-              num19 = num18;
-              num20 = rounded;
-              if ("\u665A" == first) {
-                let sum1 = rounded;
-                if (12 != rounded) {
-                  sum1 = rounded + 12;
-                }
-                num19 = 1;
-                num20 = sum1;
-              }
-            }
-          }
-          num19 = 0;
-          num20 = rounded;
-          if (12 == rounded) {
+          if ("\u65E9" == first) {
             num19 = 0;
-            num20 = 0;
+            num20 = rounded;
+            if (12 == rounded) {
+              num19 = 0;
+              num20 = 0;
+            }
+          } else {
+            num19 = num18;
+            num20 = rounded;
+            if ("\u665A" == first) {
+              let sum1 = rounded;
+              if (12 != rounded) {
+                sum1 = rounded + 12;
+              }
+              num19 = 1;
+              num20 = sum1;
+            }
           }
         } else if (index[3]) {
           const first1 = index[3][0];
           if ("\u4E0A" != first1) {
-            if ("\u671D" != first1) {
-              if ("\u65E9" != first1) {
-                if ("\u51CC" != first1) {
-                  num19 = num18;
-                  num20 = rounded;
-                  const tmp38 = "\u4E0B" != first1 && "\u664F" != first1 && "\u665A" != first1;
-                  if (!tmp38) {
-                    let sum2 = rounded;
-                    if (12 != rounded) {
-                      sum2 = rounded + 12;
-                    }
-                    num19 = 1;
-                    num20 = sum2;
+            if ("\u65E9" != first1) {
+              if ("\u51CC" != first1) {
+                num19 = num18;
+                num20 = rounded;
+                const tmp38 = "\u4E0B" != first1 && "\u665A" != first1;
+                if (!tmp38) {
+                  let sum2 = rounded;
+                  if (12 != rounded) {
+                    sum2 = rounded + 12;
                   }
+                  num19 = 1;
+                  num20 = sum2;
                 }
               }
             }
@@ -293,20 +274,18 @@ const items = [
           if (index[5]) {
             const first2 = index[5][0];
             if ("\u4E0A" != first2) {
-              if ("\u671D" != first2) {
-                if ("\u65E9" != first2) {
-                  if ("\u51CC" != first2) {
-                    num19 = num18;
-                    num20 = rounded;
-                    const tmp35 = "\u4E0B" != first2 && "\u664F" != first2 && "\u665A" != first2;
-                    if (!tmp35) {
-                      let sum3 = rounded;
-                      if (12 != rounded) {
-                        sum3 = rounded + 12;
-                      }
-                      num19 = 1;
-                      num20 = sum3;
+              if ("\u65E9" != first2) {
+                if ("\u51CC" != first2) {
+                  num19 = num18;
+                  num20 = rounded;
+                  const tmp35 = "\u4E0B" != first2 && "\u665A" != first2;
+                  if (!tmp35) {
+                    let sum3 = rounded;
+                    if (12 != rounded) {
+                      sum3 = rounded + 12;
                     }
+                    num19 = 1;
+                    num20 = sum3;
                   }
                 }
               }
@@ -333,8 +312,8 @@ const items = [
           const start12 = parsingResult.start;
           start12.imply("meridiem", 1);
         }
-        const str43 = createParsingResult.text;
-        const match = regExp1.exec(str43.substring(parsingResult.index + parsingResult.text.length));
+        const str38 = createParsingResult.text;
+        const match = regExp1.exec(str38.substring(parsingResult.index + parsingResult.text.length));
         if (match) {
           let num37;
           let rounded1;
@@ -344,64 +323,48 @@ const items = [
           const date1 = new Date(date.getTime());
           parsingResult.end = createParsingResult.createParsingComponents();
           if (match[1]) {
-            if ("\u660E" != match[1]) {
-              if ("\u807D" != match[1]) {
-                if ("\u6628" != match[1]) {
-                  if ("\u5C0B" != match[1]) {
-                    if ("\u7434" != match[1]) {
-                      if ("\u524D" == match[1]) {
-                        date1.setDate(date1.getDate() - 2);
-                      } else if ("\u5927\u524D" == match[1]) {
-                        date1.setDate(date1.getDate() - 3);
-                      } else if ("\u5F8C" == match[1]) {
-                        date1.setDate(date1.getDate() + 2);
-                      } else if ("\u5927\u5F8C" == match[1]) {
-                        date1.setDate(date1.getDate() + 3);
-                      }
-                    }
-                  }
-                }
-                date1.setDate(date1.getDate() - 1);
+            if ("\u660E" == match[1]) {
+              const refDate3 = createParsingResult.refDate;
+              if (refDate3.getHours() > 1) {
+                date1.setDate(date1.getDate() + 1);
               }
-              const end7 = parsingResult.end;
-              end7.assign("day", date1.getDate());
-              const end8 = parsingResult.end;
-              end8.assign("month", date1.getMonth() + 1);
-              const end9 = parsingResult.end;
-              end9.assign("year", date1.getFullYear());
+            } else if ("\u6628" == match[1]) {
+              date1.setDate(date1.getDate() - 1);
+            } else if ("\u524D" == match[1]) {
+              date1.setDate(date1.getDate() - 2);
+            } else if ("\u5927\u524D" == match[1]) {
+              date1.setDate(date1.getDate() - 3);
+            } else if ("\u540E" == match[1]) {
+              date1.setDate(date1.getDate() + 2);
+            } else if ("\u5927\u540E" == match[1]) {
+              date1.setDate(date1.getDate() + 3);
             }
-            const refDate3 = createParsingResult.refDate;
-            if (refDate3.getHours() > 1) {
-              date1.setDate(date1.getDate() + 1);
-            }
+            const end7 = parsingResult.end;
+            end7.assign("day", date1.getDate());
+            const end8 = parsingResult.end;
+            end8.assign("month", date1.getMonth() + 1);
+            const end9 = parsingResult.end;
+            end9.assign("year", date1.getFullYear());
           } else if (match[4]) {
-            if ("\u660E" != match[4]) {
-              if ("\u807D" != match[4]) {
-                if ("\u6628" != match[4]) {
-                  if ("\u5C0B" != match[4]) {
-                    if ("\u7434" != match[4]) {
-                      if ("\u524D" == match[4]) {
-                        date1.setDate(date1.getDate() - 2);
-                      } else if ("\u5927\u524D" == match[4]) {
-                        date1.setDate(date1.getDate() - 3);
-                      } else if ("\u5F8C" == match[4]) {
-                        date1.setDate(date1.getDate() + 2);
-                      } else if ("\u5927\u5F8C" == match[4]) {
-                        date1.setDate(date1.getDate() + 3);
-                      }
-                    }
-                  }
-                }
-                date1.setDate(date1.getDate() - 1);
-              }
-              const end4 = parsingResult.end;
-              end4.assign("day", date1.getDate());
-              const end5 = parsingResult.end;
-              end5.assign("month", date1.getMonth() + 1);
-              const end6 = parsingResult.end;
-              end6.assign("year", date1.getFullYear());
+            if ("\u660E" == match[4]) {
+              date1.setDate(date1.getDate() + 1);
+            } else if ("\u6628" == match[4]) {
+              date1.setDate(date1.getDate() - 1);
+            } else if ("\u524D" == match[4]) {
+              date1.setDate(date1.getDate() - 2);
+            } else if ("\u5927\u524D" == match[4]) {
+              date1.setDate(date1.getDate() - 3);
+            } else if ("\u540E" == match[4]) {
+              date1.setDate(date1.getDate() + 2);
+            } else if ("\u5927\u540E" == match[4]) {
+              date1.setDate(date1.getDate() + 3);
             }
-            date1.setDate(date1.getDate() + 1);
+            const end4 = parsingResult.end;
+            end4.assign("day", date1.getDate());
+            const end5 = parsingResult.end;
+            end5.assign("month", date1.getMonth() + 1);
+            const end6 = parsingResult.end;
+            end6.assign("year", date1.getFullYear());
           } else {
             const end = parsingResult.end;
             end.imply("day", date1.getDate());
@@ -476,8 +439,8 @@ const items = [
               if (rounded1 > 12) {
                 return null;
               } else {
-                const str113 = match[9][0];
-                const formatted1 = str113.toLowerCase();
+                const str91 = match[9][0];
+                const formatted1 = str91.toLowerCase();
                 let tmp93 = rounded1;
                 if ("a" == formatted1) {
                   let num41 = rounded1;
@@ -529,43 +492,40 @@ const items = [
               }
             } else if (match[2]) {
               const first3 = match[2][0];
-              if ("\u671D" != first3) {
-                if ("\u65E9" != first3) {
-                  num39 = num38;
-                  num40 = rounded1;
-                  if ("\u665A" == first3) {
-                    let sum5 = rounded1;
-                    if (12 != rounded1) {
-                      sum5 = rounded1 + 12;
-                    }
-                    num39 = 1;
-                    num40 = sum5;
-                  }
-                }
-              }
-              num39 = 0;
-              num40 = rounded1;
-              if (12 == rounded1) {
+              if ("\u65E9" == first3) {
                 num39 = 0;
-                num40 = 0;
+                num40 = rounded1;
+                if (12 == rounded1) {
+                  num39 = 0;
+                  num40 = 0;
+                }
+              } else {
+                num39 = num38;
+                num40 = rounded1;
+                if ("\u665A" == first3) {
+                  let sum5 = rounded1;
+                  if (12 != rounded1) {
+                    sum5 = rounded1 + 12;
+                  }
+                  num39 = 1;
+                  num40 = sum5;
+                }
               }
             } else if (match[3]) {
               const first4 = match[3][0];
               if ("\u4E0A" != first4) {
-                if ("\u671D" != first4) {
-                  if ("\u65E9" != first4) {
-                    if ("\u51CC" != first4) {
-                      num39 = num38;
-                      num40 = rounded1;
-                      const tmp89 = "\u4E0B" != first4 && "\u664F" != first4 && "\u665A" != first4;
-                      if (!tmp89) {
-                        let sum6 = rounded1;
-                        if (12 != rounded1) {
-                          sum6 = rounded1 + 12;
-                        }
-                        num39 = 1;
-                        num40 = sum6;
+                if ("\u65E9" != first4) {
+                  if ("\u51CC" != first4) {
+                    num39 = num38;
+                    num40 = rounded1;
+                    const tmp89 = "\u4E0B" != first4 && "\u665A" != first4;
+                    if (!tmp89) {
+                      let sum6 = rounded1;
+                      if (12 != rounded1) {
+                        sum6 = rounded1 + 12;
                       }
+                      num39 = 1;
+                      num40 = sum6;
                     }
                   }
                 }
@@ -582,20 +542,18 @@ const items = [
               if (match[5]) {
                 const first5 = match[5][0];
                 if ("\u4E0A" != first5) {
-                  if ("\u671D" != first5) {
-                    if ("\u65E9" != first5) {
-                      if ("\u51CC" != first5) {
-                        num39 = num38;
-                        num40 = rounded1;
-                        const tmp86 = "\u4E0B" != first5 && "\u664F" != first5 && "\u665A" != first5;
-                        if (!tmp86) {
-                          let sum7 = rounded1;
-                          if (12 != rounded1) {
-                            sum7 = rounded1 + 12;
-                          }
-                          num39 = 1;
-                          num40 = sum7;
+                  if ("\u65E9" != first5) {
+                    if ("\u51CC" != first5) {
+                      num39 = num38;
+                      num40 = rounded1;
+                      const tmp86 = "\u4E0B" != first5 && "\u665A" != first5;
+                      if (!tmp86) {
+                        let sum7 = rounded1;
+                        if (12 != rounded1) {
+                          sum7 = rounded1 + 12;
                         }
+                        num39 = 1;
+                        num40 = sum7;
                       }
                     }
                   }
@@ -646,8 +604,8 @@ const items = [
           }
         } else {
           let tmp51 = null;
-          const str44 = parsingResult.text;
-          if (!str44.match(/^\d+$/)) {
+          const str39 = parsingResult.text;
+          if (!str39.match(/^\d+$/)) {
             tmp51 = parsingResult;
           }
           return tmp51;
@@ -657,4 +615,4 @@ const items = [
   }
 ];
 
-export default _createClass(ZHHantTimeExpressionParser, items);
+export default _createClass(ZHHansTimeExpressionParser, items);

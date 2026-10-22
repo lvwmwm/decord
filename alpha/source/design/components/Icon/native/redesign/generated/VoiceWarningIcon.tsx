@@ -1,14 +1,14 @@
-// Module ID: 8555
-// Function ID: 8556
+// Module ID: 8556
+// Function ID: 8557
 // Name: VoiceWarningIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8500, 5654, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8501, 5654, 2]
 
-// Module 8555 (VoiceWarningIcon)
+// Module 8556 (VoiceWarningIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5654 */;
-import AssetRegistry from "AssetRegistry" /* 8500 */;
+import AssetRegistry from "AssetRegistry" /* 8501 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

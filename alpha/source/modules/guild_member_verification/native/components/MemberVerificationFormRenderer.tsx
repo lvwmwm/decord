@@ -1,9 +1,9 @@
-// Module ID: 6881
-// Function ID: 6882
+// Module ID: 6880
+// Function ID: 6881
 // Name: MemberVerificationFormRenderer
-// Dependencies: [19, 17, 21, 4969, 558, 576, 4998, 6882, 6903, 7164, 7165, 7169, 2]
+// Dependencies: [19, 17, 21, 4969, 558, 576, 4998, 6881, 6902, 7163, 7164, 7168, 2]
 
-// Module 6881 (MemberVerificationFormRenderer)
+// Module 6880 (MemberVerificationFormRenderer)
 import Fragment from "Fragment" /* 21 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4998 */;
 import react from "react" /* 19 */;

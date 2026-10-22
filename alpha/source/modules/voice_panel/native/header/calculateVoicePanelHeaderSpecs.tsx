@@ -1,10 +1,10 @@
-// Module ID: 10871
-// Function ID: 10872
+// Module ID: 10879
+// Function ID: 10880
 // Name: calculateVoicePanelHeaderSpecs
 // Dependencies: [2]
 // Exports: default
 
-// Module 10871 (calculateVoicePanelHeaderSpecs)
+// Module 10879 (calculateVoicePanelHeaderSpecs)
 import size from "module_2" /* 2 */;
 
 const fn = function t(top, arg1) {

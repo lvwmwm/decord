@@ -1,9 +1,9 @@
-// Module ID: 14511
-// Function ID: 14512
+// Module ID: 14525
+// Function ID: 14526
 // Name: InAppReportsUserPreview
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 7060, 4966, 1128, 5220, 1202, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 7059, 4966, 1128, 5220, 1202, 2]
 
-// Module 14511 (InAppReportsUserPreview)
+// Module 14525 (InAppReportsUserPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,7 +11,7 @@ import intl3 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import ColorUtils from "ColorUtils" /* 4966 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7060 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7059 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -97,7 +97,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPrevie
             tmp16 = cResult[15];
           }
           if (cResult[16] !== user) {
-            const obj4 = { size: native.AvatarSizes.LARGE_48, user, guildId: "r" };
+            const obj4 = { size: native.AvatarSizes.LARGE_48, user, guildId: "Array" };
             const Avatar = tmp(1202).Avatar;
             const tmp19 = _false(Avatar, obj4);
             cResult[16] = user;
@@ -235,7 +235,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPrevie
   items1 = [_false(Text, obj4), ];
   const obj5 = { style: items2, children: items3 };
   items2 = [tmp.userContainer, { borderColor: hexWithOpacityResult }];
-  const obj6 = { size: native.AvatarSizes.LARGE_48, user, guildId: "r" };
+  const obj6 = { size: native.AvatarSizes.LARGE_48, user, guildId: "Array" };
   const Avatar = tmp2(1202).Avatar;
   items3 = [_false(Avatar, obj6), ];
   let tmp8Result = null != user.globalName;

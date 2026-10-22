@@ -1,14 +1,14 @@
-// Module ID: 13665
-// Function ID: 13666
+// Module ID: 13679
+// Function ID: 13680
 // Name: common/Notifications
-// Dependencies: [19, 13666, 21, 558, 576, 504, 13685, 2]
+// Dependencies: [19, 13680, 21, 558, 576, 504, 13699, 2]
 
-// Module 13665 (common/Notifications)
+// Module 13679 (common/Notifications)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import InAppNotificationContainerDefault from "InAppNotificationContainer" /* 13685 */;
+import InAppNotificationContainerDefault from "InAppNotificationContainer" /* 13699 */;
 import react from "react" /* 19 */;
-import InAppNotificationStore from "InAppNotificationStore" /* 13666 */;
+import InAppNotificationStore from "InAppNotificationStore" /* 13680 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

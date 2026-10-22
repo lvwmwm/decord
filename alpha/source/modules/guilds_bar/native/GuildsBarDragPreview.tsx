@@ -1,18 +1,18 @@
-// Module ID: 17702
-// Function ID: 17703
+// Module ID: 17724
+// Function ID: 17725
 // Name: GuildsBarDragPreview
-// Dependencies: [19, 6687, 17631, 17628, 21, 4969, 558, 576, 17346, 5038, 5233, 5023, 7154, 5238, 587, 17639, 17660, 4884, 2]
+// Dependencies: [19, 6686, 17653, 17650, 21, 4969, 558, 576, 17368, 5038, 5233, 5023, 7153, 5238, 587, 17661, 17682, 4884, 2]
 
-// Module 17702 (GuildsBarDragPreview)
+// Module 17724 (GuildsBarDragPreview)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import native from "native" /* 5023 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
 import spring from "spring" /* 5233 */;
-import SortedGuildStore from "SortedGuildStore" /* 6687 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17628 */;
+import SortedGuildStore from "SortedGuildStore" /* 6686 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17650 */;
 import react_mod from "react" /* 19 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17631 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17653 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -182,7 +182,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
   if ("convert-after" === overState) {
     if (null != overNode) {
       if (cResult[0] !== overNode) {
-        const element = { type: listInsets.FOLDER, id: -1, parentId: "Reflect", name: "Array", color: "__packager_asset", expanded: null, children: items };
+        const element = { type: listInsets.FOLDER, id: -1, parentId: "Reflect", name: "Array", color: "__packager_asset", expanded: "justifyContent", children: items };
         items = [overNode];
         let num = 0;
         cResult[0] = overNode;
@@ -349,7 +349,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     let items;
     if ("convert-after" === overState) {
       if (null != overNode) {
-        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "Reflect", name: "Array", color: "__packager_asset", expanded: null, children: items };
+        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "Reflect", name: "Array", color: "__packager_asset", expanded: "justifyContent", children: items };
         items = [tmp2];
         return element;
       }

@@ -1,9 +1,9 @@
-// Module ID: 17570
-// Function ID: 17571
+// Module ID: 17592
+// Function ID: 17593
 // Name: GuildRoleSubscriptionsUpsellActionSheet
-// Dependencies: [19, 17, 1087, 4818, 21, 4969, 558, 576, 8974, 5655, 17571, 1128, 5220, 5230, 5251, 2]
+// Dependencies: [19, 17, 1087, 4818, 21, 4969, 558, 576, 8981, 5655, 17593, 1128, 5220, 5230, 5251, 2]
 
-// Module 17570 (GuildRoleSubscriptionsUpsellActionSheet)
+// Module 17592 (GuildRoleSubscriptionsUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import intl5 from "intl" /* 1128 */;
@@ -12,8 +12,8 @@ import Text_Text from "Text/Text" /* 5220 */;
 import components_Button_Button from "components/Button/Button" /* 5230 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5251 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8974 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17571 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8981 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17593 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -62,7 +62,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { source: markAsDismissed(17571) };
+      const obj2 = { source: markAsDismissed(17593) };
       const tmp11 = markAsDismissed(5655);
       const tmp12 = closure_6(tmp11, obj2);
       cResult[5] = tmp12;

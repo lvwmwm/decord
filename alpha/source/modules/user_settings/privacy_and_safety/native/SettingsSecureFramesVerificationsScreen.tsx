@@ -1,15 +1,15 @@
-// Module ID: 17153
-// Function ID: 17154
+// Module ID: 17175
+// Function ID: 17176
 // Name: SettingsSecureFramesVerificationsScreen
-// Dependencies: [19, 17, 1392, 21, 4969, 558, 576, 9165, 1128, 6917, 6894, 6889, 5220, 7076, 1505, 504, 5018, 9669, 17149, 7206, 2]
+// Dependencies: [19, 17, 1392, 21, 4969, 558, 576, 9172, 1128, 6916, 6893, 6888, 5220, 7075, 1505, 504, 5018, 9676, 17171, 7205, 2]
 
-// Module 17153 (SettingsSecureFramesVerificationsScreen)
+// Module 17175 (SettingsSecureFramesVerificationsScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 9165 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 9172 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -45,7 +45,7 @@ function VerificationListItem(verification) {
         tmp12 = cResult[2];
       }
       if (cResult[3] !== verification2.timestamp) {
-        const tmp9Result = userId(9165);
+        const tmp9Result = userId(9172);
         const secureFramesUserVerifiedTimestamp = tmp9Result.getSecureFramesUserVerifiedTimestamp(verification2.timestamp);
         cResult[3] = verification2.timestamp;
         cResult[4] = secureFramesUserVerifiedTimestamp;
@@ -65,14 +65,14 @@ function VerificationListItem(verification) {
       }
       const _Symbol = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp20 = jsx(userId(6917).XSmallIcon, {});
+        const tmp20 = jsx(userId(6916).XSmallIcon, {});
         cResult[7] = tmp20;
         tmp18 = tmp20;
       } else {
         tmp18 = cResult[7];
       }
       if (cResult[8] !== tmp12) {
-        const tmp23 = jsx(userId(6894).PressableHighlight, { onPress: tmp12, children: tmp18 });
+        const tmp23 = jsx(userId(6893).PressableHighlight, { onPress: tmp12, children: tmp18 });
         cResult[8] = tmp12;
         cResult[9] = tmp23;
         tmp21 = tmp23;
@@ -92,7 +92,7 @@ function VerificationListItem(verification) {
           }
         }
       }
-      const tmp26 = jsx(userId(6889).TableRow, { label: tmp15, subLabel: tmp13, start: start2, end: end2, trailing: tmp21 });
+      const tmp26 = jsx(userId(6888).TableRow, { label: tmp15, subLabel: tmp13, start: start2, end: end2, trailing: tmp21 });
       cResult[10] = end2;
       cResult[11] = start2;
       cResult[12] = tmp13;
@@ -123,10 +123,10 @@ function VerificationListItem(verification) {
       const obj = SecureFramesUtils;
       return obj.getSecureFramesUserVerifiedTimestamp(verification.timestamp);
     }, items1);
-    const TableRow = userId(6889).TableRow;
+    const TableRow = userId(6888).TableRow;
     const intl = userId(1128).intl;
     const obj6 = { index };
-    const PressableHighlight = userId(6894).PressableHighlight;
+    const PressableHighlight = userId(6893).PressableHighlight;
     tmp8 = <TableRow label={intl.formatToPlainString(userId(1128).t.N4qBBO, obj6)} subLabel={memo} start={start} end={end} trailing={null} />;
   }
   return tmp8;
@@ -228,7 +228,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClearV
     tmp8 = cResult[3];
   }
   if (cResult[4] !== tmp4) {
-    const tmp13 = jsx(userId(6889).TableRow, { label: tmp5, subLabel: tmp8, onPress: tmp4, start: true, end: true });
+    const tmp13 = jsx(userId(6888).TableRow, { label: tmp5, subLabel: tmp8, onPress: tmp4, start: true, end: true });
     cResult[4] = tmp4;
     cResult[5] = tmp13;
     tmp11 = tmp13;
@@ -245,7 +245,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClearV
     const obj = SecureFramesUtils;
     const result = obj.deleteUserPersistentVerifications(userId);
   }, items);
-  const TableRow = userId(6889).TableRow;
+  const TableRow = userId(6888).TableRow;
   ({ variant: "text-md/semibold", color: "text-feedback-critical", children: intl.string(userId(1128).t["2xL5lu"]) });
   const Text = userId(5220).Text;
   intl = userId(1128).intl;
@@ -267,7 +267,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsSe
   let obj = userId(576);
   const cResult = obj.c(29);
   const tmp4 = closure_7();
-  const obj2 = userId(7076);
+  const obj2 = userId(7075);
   userId = obj2.useSettingNavigationRoute().params.userId;
   const obj3 = userId(1505);
   navigation = obj3.useNavigation();
@@ -306,7 +306,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsSe
       tmp13 = cResult[7];
     }
     const layoutEffect = items1.useLayoutEffect(tmp13);
-    const tmpResult2 = userId(17149);
+    const tmpResult2 = userId(17171);
     const secureFramesUserVerifiedKeys = tmpResult2.useSecureFramesUserVerifiedKeys(userId);
     const obj6 = items1;
     if (cResult[8] === userId) {
@@ -370,7 +370,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsSe
                 }
               }
             }
-            const tmp32 = jsx(userId(7206).FlashList, { keyExtractor, getItemType, renderItem, data: tmp15, contentContainerStyle: tmp4.listContent, ListFooterComponent: tmp24 });
+            const tmp32 = jsx(userId(7205).FlashList, { keyExtractor, getItemType, renderItem, data: tmp15, contentContainerStyle: tmp4.listContent, ListFooterComponent: tmp24 });
             cResult[22] = tmp15;
             cResult[23] = tmp4.listContent;
             cResult[24] = tmp24;
@@ -461,7 +461,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsSe
   let secureFramesUserVerifiedKeys;
   let userId;
   const tmp = closure_7();
-  let obj = userId(7076);
+  let obj = userId(7075);
   userId = obj.useSettingNavigationRoute().params.userId;
   let obj2 = userId(1505);
   navigation = obj2.useNavigation();
@@ -484,7 +484,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsSe
     intl = intl3.intl;
     setOptions(obj);
   });
-  const obj5 = userId(17149);
+  const obj5 = userId(17171);
   secureFramesUserVerifiedKeys = obj5.useSecureFramesUserVerifiedKeys(userId);
   const items1 = [userId, secureFramesUserVerifiedKeys];
   const items2 = [navigation, secureFramesUserVerifiedKeys];
@@ -508,7 +508,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsSe
       navigation.pop();
     }
   }, items2);
-  const FlashList = userId(7206).FlashList;
+  const FlashList = userId(7205).FlashList;
   return <View style={tmp.list}>{null}</View>;
 });
 let result = size.fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SettingsSecureFramesVerificationsScreen.tsx");

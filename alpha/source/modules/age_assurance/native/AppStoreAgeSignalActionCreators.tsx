@@ -1,10 +1,10 @@
-// Module ID: 8063
-// Function ID: 8064
+// Module ID: 8064
+// Function ID: 8065
 // Name: AppStoreAgeSignalActionCreators
 // Dependencies: [5, 1087, 1297, 2]
 // Exports: registerAgeSignalAttestKey, requestAgeSignalChallenge, submitAgeSignal
 
-// Module 8063 (AppStoreAgeSignalActionCreators)
+// Module 8064 (AppStoreAgeSignalActionCreators)
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

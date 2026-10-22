@@ -1,10 +1,10 @@
-// Module ID: 9750
-// Function ID: 9751
+// Module ID: 9757
+// Function ID: 9758
 // Name: getEmbeddedActivityKey
 // Dependencies: [2]
 // Exports: default, parseEmbeddedActivityKey
 
-// Module 9750 (getEmbeddedActivityKey)
+// Module 9757 (getEmbeddedActivityKey)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/getEmbeddedActivityKey.tsx");

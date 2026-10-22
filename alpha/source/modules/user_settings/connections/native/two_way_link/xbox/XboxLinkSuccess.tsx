@@ -1,16 +1,16 @@
-// Module ID: 14007
-// Function ID: 14008
+// Module ID: 14021
+// Function ID: 14022
 // Name: XboxLinkSuccess
-// Dependencies: [32, 19, 17, 9581, 9595, 21, 4969, 587, 558, 576, 9588, 1384, 1505, 5655, 14008, 1128, 5220, 11664, 14009, 1202, 11613, 5230, 7207, 2]
+// Dependencies: [32, 19, 17, 9588, 9602, 21, 4969, 587, 558, 576, 9595, 1384, 1505, 5655, 14022, 1128, 5220, 11675, 14023, 1202, 11624, 5230, 7206, 2]
 
-// Module 14007 (XboxLinkSuccess)
+// Module 14021 (XboxLinkSuccess)
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import XboxLinkConstants from "XboxLinkConstants" /* 9581 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 9588 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 9595 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 9602 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,9 +1,9 @@
-// Module ID: 10582
-// Function ID: 10583
+// Module ID: 10589
+// Function ID: 10590
 // Name: LockedRecipientField
 // Dependencies: [19, 17, 21, 4969, 587, 558, 576, 1202, 5018, 5220, 2]
 
-// Module 10582 (LockedRecipientField)
+// Module 10589 (LockedRecipientField)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

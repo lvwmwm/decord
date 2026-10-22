@@ -1,10 +1,10 @@
-// Module ID: 6988
-// Function ID: 6989
+// Module ID: 6987
+// Function ID: 6988
 // Name: ConfirmEmailChangeStart
-// Dependencies: [5, 32, 19, 17, 1392, 21, 4969, 1505, 504, 6989, 1107, 6361, 5649, 1128, 5655, 6990, 5220, 5230, 2]
+// Dependencies: [5, 32, 19, 17, 1392, 21, 4969, 1505, 504, 6988, 1107, 6360, 5649, 1128, 5655, 6989, 5220, 5230, 2]
 // Exports: default
 
-// Module 6988 (ConfirmEmailChangeStart)
+// Module 6987 (ConfirmEmailChangeStart)
 import Text_Text from "Text/Text" /* 5220 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -54,7 +54,7 @@ export default function ConfirmEmailChangeStart() {
     let obj3 = { oldEmail: stateFromStores.email };
     let obj4 = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: closure_10(closure_6, obj5) };
     obj5 = { style: tmp.container, children: items1 };
-    let obj6 = { style: tmp.image, source: navigation(6990) };
+    let obj6 = { style: tmp.image, source: navigation(6989) };
     const formatResult = intl.format(require("intl").t.oMFSgi, obj3);
     const tmp14 = navigation(5655);
     items1 = [closure_9(tmp14, obj6), , , ];

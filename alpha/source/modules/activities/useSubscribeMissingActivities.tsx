@@ -1,21 +1,21 @@
-// Module ID: 11174
-// Function ID: 11175
+// Module ID: 11183
+// Function ID: 11184
 // Name: useSubscribeMissingActivities
-// Dependencies: [32, 19, 11175, 5698, 558, 576, 504, 11177, 2]
+// Dependencies: [32, 19, 11184, 5698, 558, 576, 504, 11186, 2]
 
-// Module 11174 (useSubscribeMissingActivities)
+// Module 11183 (useSubscribeMissingActivities)
 import react2 from "react" /* 576 */;
-import PresenceSubscriptionsActionCreators from "PresenceSubscriptionsActionCreators" /* 11177 */;
+import PresenceSubscriptionsActionCreators from "PresenceSubscriptionsActionCreators" /* 11186 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PresenceSubscriptionsStore from "PresenceSubscriptionsStore" /* 11175 */;
+import PresenceSubscriptionsStore from "PresenceSubscriptionsStore" /* 11184 */;
 import PresenceStore from "PresenceStore" /* 5698 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let _require, application_id, dependencyMap;
 
-const f108925 = (application) => {
+const f109025 = (application) => {
   application = application.application;
   let id;
   if (application != null) {
@@ -32,7 +32,7 @@ const f108925 = (application) => {
   }
   return tmp2;
 };
-const f108926 = (id) => id.id;
+const f109026 = (id) => id.id;
 let closure_6 = [];
 let closure_7 = [];
 let closure_8 = [];
@@ -160,8 +160,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMiss
     tmp16 = items3;
   }
   if (isPrivate.isPrivate()) {
-    const found = arr.filter(f108925);
-    const items4 = [found, found.map(f108926)];
+    const found = arr.filter(f109025);
+    const items4 = [found, found.map(f109026)];
     items5 = items4;
   } else {
     items5 = [closure_8, closure_7];
@@ -181,8 +181,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMiss
     let items1;
     const arr = closure_0;
     if (_private.isPrivate()) {
-      const found = arr.filter(f108925);
-      const items = [found, found.map(f108926)];
+      const found = arr.filter(f109025);
+      const items = [found, found.map(f109026)];
       items1 = items;
     } else {
       items1 = [closure_8, ];

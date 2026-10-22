@@ -1,10 +1,10 @@
-// Module ID: 8315
-// Function ID: 8316
+// Module ID: 8316
+// Function ID: 8317
 // Name: DoubleTapErrorToast
 // Dependencies: [1395, 1128, 5649, 2]
 // Exports: showDoubleTapErrorToast
 
-// Module 8315 (DoubleTapErrorToast)
+// Module 8316 (DoubleTapErrorToast)
 import intl4 from "intl" /* 1128 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5649 */;

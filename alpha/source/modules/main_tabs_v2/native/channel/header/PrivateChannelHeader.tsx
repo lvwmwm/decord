@@ -1,13 +1,13 @@
-// Module ID: 13956
-// Function ID: 13957
+// Module ID: 13970
+// Function ID: 13971
 // Name: PrivateChannelHeader
-// Dependencies: [19, 17, 4821, 5698, 4911, 1392, 1087, 21, 1202, 4969, 587, 558, 576, 504, 13953, 5590, 1128, 10604, 13957, 13958, 13960, 5018, 13963, 2]
+// Dependencies: [19, 17, 4821, 5698, 4911, 1392, 1087, 21, 1202, 4969, 587, 558, 576, 504, 13967, 5590, 1128, 10611, 13971, 13972, 13974, 5018, 13977, 2]
 
-// Module 13956 (PrivateChannelHeader)
+// Module 13970 (PrivateChannelHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
-import ChannelHeader from "ChannelHeader" /* 13953 */;
+import ChannelHeader from "ChannelHeader" /* 13967 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import PresenceStore from "PresenceStore" /* 5698 */;

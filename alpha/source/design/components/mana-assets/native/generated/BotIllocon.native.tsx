@@ -1,28 +1,28 @@
-// Module ID: 12372
-// Function ID: 12373
+// Module ID: 12383
+// Function ID: 12384
 // Name: BotIllocon
-// Dependencies: [19, 21, 12373, 12374, 12375, 558, 576, 6981, 5655, 2]
+// Dependencies: [19, 21, 12384, 12385, 12386, 558, 576, 6980, 5655, 2]
 
-// Module 12372 (BotIllocon)
+// Module 12383 (BotIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import react_native from "react-native" /* 6981 */;
-import _modDef12373 from "module_12373" /* 12373 */;
-import _modDef12374 from "module_12374" /* 12374 */;
-import _modDef12375 from "module_12375" /* 12375 */;
+import react_native from "react-native" /* 6980 */;
+import _modDef12384 from "module_12384" /* 12384 */;
+import _modDef12385 from "module_12385" /* 12385 */;
+import _modDef12386 from "module_12386" /* 12386 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef12373 };
+let obj2 = { uri: _modDef12384 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef12374 };
-({ uri: _modDef12374 });
-obj[3] = { uri: _modDef12375 };
-({ uri: _modDef12375 });
+obj[2] = { uri: _modDef12385 };
+({ uri: _modDef12385 });
+obj[3] = { uri: _modDef12386 };
+({ uri: _modDef12386 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotIllocon(arg0) {
   let accessibilityLabel;
   let accessible;
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotIllocon
   }, items);
   obj = { fadeDuration: 0, source: obj2.getAssetSource(obj), style: memo, accessible, accessibilityLabel, resizeMode };
   FastImageDefault;
-  obj2 = num(6981);
+  obj2 = num(6980);
   return <tmp2 fadeDuration={0} source={obj2.getAssetSource(obj)} style={memo} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;
 });
 let size = size_mod;

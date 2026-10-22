@@ -1,15 +1,15 @@
-// Module ID: 19281
-// Function ID: 19282
+// Module ID: 19304
+// Function ID: 19305
 // Name: LibdiscoreExperimentManager
-// Dependencies: [1261, 562, 559, 568, 1455, 7200, 2]
+// Dependencies: [1261, 562, 559, 568, 1455, 7199, 2]
 
-// Module 19281 (LibdiscoreExperimentManager)
+// Module 19304 (LibdiscoreExperimentManager)
 import libdiscoreExperiments from "libdiscoreExperiments" /* 559 */;
 import shim from "shim" /* 562 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1261 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7200 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7199 */;
 import size from "module_2" /* 2 */;
 
 let map, treatmentId;

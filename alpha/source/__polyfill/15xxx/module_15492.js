@@ -1,27 +1,7 @@
 // Module ID: 15492
 // Function ID: 15493
-// Dependencies: [15493, 15490, 15495]
+// Dependencies: []
 
 // Module 15492
-import _mod15490 from "module_15490" /* 15490 */;
-import _mod15493 from "module_15493" /* 15493 */;
-import _mod15495 from "module_15495" /* 15495 */;
 
-let fn = Object;
-let closure_3 = _mod15493("".split);
-if (_mod15490(() => {
-  const obj = Object("z");
-  return !obj.propertyIsEnumerable(0);
-})) {
-  fn = (arg0) => {
-    let tmp2;
-    if ("String" === _mod15495(arg0)) {
-      tmp2 = closure_3(arg0, "");
-    } else {
-      tmp2 = Object(arg0);
-    }
-    return tmp2;
-  };
-}
-
-export default fn;
+export const units = ["degree", "acre", "hectare", "percent", "bit", "byte", "gigabit", "gigabyte", "kilobit", "kilobyte", "megabit", "megabyte", "petabyte", "terabit", "terabyte", "day", "hour", "millisecond", "minute", "month", "second", "week", "year", "centimeter", "foot", "inch", "kilometer", "meter", "mile-scandinavian", "mile", "millimeter", "yard", "gram", "kilogram", "ounce", "pound", "stone", "celsius", "fahrenheit", "fluid-ounce", "gallon", "liter", "milliliter"];

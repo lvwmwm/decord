@@ -1,18 +1,18 @@
-// Module ID: 6873
-// Function ID: 6874
+// Module ID: 6872
+// Function ID: 6873
 // Name: GuildBadge
-// Dependencies: [109, 19, 1087, 21, 6874, 6875, 6876, 6877, 4835, 558, 576, 1202, 2]
+// Dependencies: [109, 19, 1087, 21, 6873, 6874, 6875, 6876, 4835, 558, 576, 1202, 2]
 
-// Module 6873 (GuildBadge)
+// Module 6872 (GuildBadge)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import native from "native" /* 1202 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 4835 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6874 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 6875 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 6876 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 6877 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6873 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 6874 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 6875 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 6876 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

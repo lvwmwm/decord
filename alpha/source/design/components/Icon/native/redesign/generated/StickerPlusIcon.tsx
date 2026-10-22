@@ -1,14 +1,14 @@
-// Module ID: 18980
-// Function ID: 18981
+// Module ID: 19003
+// Function ID: 19004
 // Name: StickerPlusIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 18981, 5654, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 19004, 5654, 2]
 
-// Module 18980 (StickerPlusIcon)
+// Module 19003 (StickerPlusIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5654 */;
-import AssetRegistry from "AssetRegistry" /* 18981 */;
+import AssetRegistry from "AssetRegistry" /* 19004 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

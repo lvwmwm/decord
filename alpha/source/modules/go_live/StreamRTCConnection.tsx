@@ -1,9 +1,9 @@
-// Module ID: 7799
-// Function ID: 7800
+// Module ID: 7800
+// Function ID: 7801
 // Name: StreamRTCConnection
-// Dependencies: [2020, 5719, 5866, 502, 4821, 7800, 2014, 5877, 5700, 5799, 1087, 5704, 1104, 5706, 7801, 4816, 6631, 7802, 12, 584, 5818, 5725, 7803, 1267, 4975, 7809, 5708, 5867, 7810, 7811, 14571, 5827, 2]
+// Dependencies: [2020, 5719, 5865, 502, 4821, 7801, 2014, 5876, 5700, 5799, 1087, 5704, 1104, 5706, 7802, 4816, 6630, 7803, 12, 584, 5818, 5725, 7804, 1267, 4975, 7810, 5708, 5866, 7811, 7812, 14585, 5826, 2]
 
-// Module 7799 (StreamRTCConnection)
+// Module 7800 (StreamRTCConnection)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1104 */;
@@ -12,20 +12,20 @@ import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4975 *
 import Constants2 from "Constants" /* 5704 */;
 import SystemAnalyticsStore from "SystemAnalyticsStore" /* 5719 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 5725 */;
-import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 5867 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6631 */;
-import SoundshareStatsAggregatorDefault from "SoundshareStatsAggregator" /* 7801 */;
-import VideoStreamStatsDefault from "VideoStreamStats" /* 7802 */;
-import GameAnalyticsUtils from "GameAnalyticsUtils" /* 7803 */;
-import getSoundshareAnalyticsContextDefault from "getSoundshareAnalyticsContext" /* 7809 */;
-import getStreamSourceMetadataDefault from "getStreamSourceMetadata" /* 7810 */;
+import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 5866 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6630 */;
+import SoundshareStatsAggregatorDefault from "SoundshareStatsAggregator" /* 7802 */;
+import VideoStreamStatsDefault from "VideoStreamStats" /* 7803 */;
+import GameAnalyticsUtils from "GameAnalyticsUtils" /* 7804 */;
+import getSoundshareAnalyticsContextDefault from "getSoundshareAnalyticsContext" /* 7810 */;
+import getStreamSourceMetadataDefault from "getStreamSourceMetadata" /* 7811 */;
 import ClipsStore from "ClipsStore" /* 2020 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5866 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5865 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import HookErrorStore from "HookErrorStore" /* 7800 */;
+import HookErrorStore from "HookErrorStore" /* 7801 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import NetworkStore from "NetworkStore" /* 5877 */;
+import NetworkStore from "NetworkStore" /* 5876 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5700 */;
 import RTCRegionStore from "RTCRegionStore" /* 5799 */;
 import Constants from "Constants" /* 1087 */;
@@ -741,12 +741,12 @@ class StreamRTCConnection extends RTCConnection {
         codecUsageStats = getCodecUsageStats("receiver", tmp3);
       }
       let obj = { stream_application_name: _default.getApplicationNames() };
-      _default = obj5(7811).default;
+      _default = obj5(7812).default;
       const tmp5 = obj5;
       if (self.isOwner) {
         let obj2 = { clips_enabled: tmp5Result.isClipsEnabled(), clips_buffer_length: tmp8.clipsLength };
         obj3 = obj2;
-        tmp5Result = tmp5(14571);
+        tmp5Result = tmp5(14585);
       } else {
         obj3 = {};
       }
@@ -785,7 +785,7 @@ class StreamRTCConnection extends RTCConnection {
           tmp = null;
           obj4 = MediaEngineStore;
           if (self.isOwner) {
-            tmp = tmp4(5827)();
+            tmp = tmp4(5826)();
           }
           tmp4Result = CrossPlatformNativeUtilsDefault;
           track(VIDEO_STREAM_ENDED, obj);
@@ -823,7 +823,7 @@ class StreamRTCConnection extends RTCConnection {
           obj2 = CrossPlatformNativeUtilsDefault;
           const tmp4 = importDefault;
           if (self.isOwner) {
-            tmp2 = tmp4(5827)();
+            tmp2 = tmp4(5826)();
           }
           track(VIDEO_STREAM_ENDED, obj);
         }

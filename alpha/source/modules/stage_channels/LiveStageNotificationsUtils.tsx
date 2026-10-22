@@ -1,9 +1,9 @@
-// Module ID: 9011
-// Function ID: 9012
+// Module ID: 9018
+// Function ID: 9019
 // Name: LiveStageNotificationsUtils
 // Dependencies: [5180, 4901, 1098, 558, 576, 504, 2]
 
-// Module 9011 (LiveStageNotificationsUtils)
+// Module 9018 (LiveStageNotificationsUtils)
 import Constants from "Constants" /* 1098 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 5180 */;
 import PermissionStore from "PermissionStore" /* 4901 */;

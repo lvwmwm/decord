@@ -1,9 +1,9 @@
-// Module ID: 15875
-// Function ID: 15876
+// Module ID: 15891
+// Function ID: 15892
 // Name: EditableTileAvatarButton
-// Dependencies: [19, 4970, 8622, 21, 558, 576, 504, 4797, 8631, 1202, 1417, 15874, 1128, 15871, 15799, 2]
+// Dependencies: [19, 4970, 8629, 21, 558, 576, 504, 4797, 8638, 1202, 1417, 15890, 1128, 15887, 15882, 2]
 
-// Module 15875 (EditableTileAvatarButton)
+// Module 15891 (EditableTileAvatarButton)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -11,17 +11,17 @@ import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import AvatarUtils from "AvatarUtils" /* 1417 */;
 import UserSettings from "UserSettings" /* 4797 */;
-import RecentAvatarUtils from "RecentAvatarUtils" /* 8631 */;
-import UserProfileEditingAccessibilityUtils from "UserProfileEditingAccessibilityUtils" /* 15871 */;
-import UserProfileEditableTileBaseDefault from "UserProfileEditableTileBase" /* 15874 */;
+import RecentAvatarUtils from "RecentAvatarUtils" /* 8638 */;
+import UserProfileEditingAccessibilityUtils from "UserProfileEditingAccessibilityUtils" /* 15887 */;
+import UserProfileEditableTileBaseDefault from "UserProfileEditableTileBase" /* 15890 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8622 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8629 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp21;
-const SpinAnimationDefault = tmp21(15799);
+const SpinAnimationDefault = tmp21(15882);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditableTileAvatarButtonBase(arg0) {

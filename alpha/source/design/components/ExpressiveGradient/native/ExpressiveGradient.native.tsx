@@ -1,9 +1,9 @@
-// Module ID: 9821
-// Function ID: 9822
+// Module ID: 9828
+// Function ID: 9829
 // Name: ExpressiveGradient
 // Dependencies: [19, 17, 21, 587, 558, 576, 5238, 683, 5244, 2]
 
-// Module 9821 (ExpressiveGradient)
+// Module 9828 (ExpressiveGradient)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;

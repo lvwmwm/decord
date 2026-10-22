@@ -1,101 +1,247 @@
 // Module ID: 10231
 // Function ID: 10232
-// Dependencies: [10185, 10186]
-// Exports: parseDuration, parseYear
+// Dependencies: [41, 42, 10198, 10194]
 
 // Module 10231
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10185 */;
-import findMostLikelyADYear from "findMostLikelyADYear" /* 10186 */;
+import assignSimilarDate2 from "assignSimilarDate" /* 10198 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
-function parseNumberPattern(str) {
-  let num6;
-  str = str.toLowerCase();
-  if (undefined !== exports.INTEGER_WORD_DICTIONARY[str]) {
-    num6 = exports.INTEGER_WORD_DICTIONARY[str];
-  } else {
-    num6 = 1;
-    if ("ein" !== str) {
-      num6 = 1;
-      if ("einer" !== str) {
-        num6 = 1;
-        if ("einem" !== str) {
-          num6 = 1;
-          if ("einen" !== str) {
-            num6 = 1;
-            if ("eine" !== str) {
-              let num5 = 2;
-              if (!str.match(/wenigen/)) {
-                let num2 = 0.5;
-                if (!str.match(/halb/)) {
-                  num2 = 0.5;
-                  if (!str.match(/halben/)) {
-                    let num3 = 3;
-                    if (!str.match(/einigen/)) {
-                      let num4 = 7;
-                      if (!str.match(/mehreren/)) {
-                        const _parseFloat = parseFloat;
-                        num4 = parseFloat(str);
-                      }
-                      num3 = num4;
-                    }
-                    num2 = num3;
-                  }
-                }
-                num5 = num2;
-              }
-              num6 = num5;
-            }
-          }
+let hasOwnProperty;
+
+let self = this;
+let self2 = this;
+if (this) {
+  self2 = self.__createBinding;
+}
+if (!self2) {
+  let _Object = Object;
+  self2 = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
+    }
+    let closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
+      }
+      tmp3 = !tmp4;
+    }
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
+    }
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let tmp3 = self && self.__setModuleDefault;
+if (!tmp3) {
+  let tmp4 = globalThis;
+  const _Object2 = Object;
+  tmp3 = Object.create ? ((arg0, value) => {
+    const obj = { enumerable: true, value };
+    Object.defineProperty(arg0, "default", obj);
+  }) : ((arg0, arg1) => {
+    arg0.default = arg1;
+  });
+}
+let closure_5 = tmp3;
+let fn = self && self.__importStar;
+if (!fn) {
+  fn = function t(arg0) {
+    fn = Object.getOwnPropertyNames || ((obj) => {
+      const items = [];
+      for (const key10005 in obj) {
+        let _Object = Object;
+        hasOwnProperty = Object.prototype.hasOwnProperty;
+        if (!hasOwnProperty.call(obj, key10005)) {
+          continue;
+        } else {
+          items[items.length] = key10005;
+          continue;
+        }
+        continue;
+      }
+      return items;
+    });
+    return fn(arg0);
+  };
+  fn = (__esModule) => {
+    const tmp = __esModule;
+    if (tmp) {
+      if (__esModule.__esModule) {
+        return __esModule;
+      }
+    }
+    const obj = {};
+    if (null != __esModule) {
+      let num;
+      const arr = fn(__esModule);
+      for (let num = 0; num < arr.length; num = num + 1) {
+        if ("default" !== arr[num]) {
+          let tmp5 = self2(obj, __esModule, arr[num]);
         }
       }
     }
-  }
-  return num6;
+    closure_5(obj, __esModule);
+    return obj;
+  };
 }
-const combined = "(" + exports.NUMBER_PATTERN + ")\\s{0,5}(" + repeatedTimeunitPattern.matchAnyPattern(exports.TIME_UNIT_DICTIONARY) + ")\\s{0,5}";
-const regExp = new RegExp(combined, "i");
-
-export { parseNumberPattern };
-export const parseYear = function parseYear(match) {
-  const obj = /v/i;
-  if (obj.test(match)) {
-    const _parseInt3 = parseInt;
-    return -parseInt(match.replace(/[^0-9]+/gi, ""));
-  } else {
-    const obj2 = /n/i;
-    if (obj2.test(match)) {
-      const _parseInt2 = parseInt;
-      return parseInt(match.replace(/[^0-9]+/gi, ""));
-    } else {
-      const _parseInt = parseInt;
-      const obj3 = /z/i;
-      if (obj3.test(match)) {
-        return _parseInt(match.replace(/[^0-9]+/gi, ""));
-      } else {
-        const _parseIntResult = _parseInt(match);
-        return findMostLikelyADYear.findMostLikelyADYear(_parseIntResult);
-      }
+const assignSimilarDate = fn(assignSimilarDate2);
+class ForwardDateRefiner {
+  constructor() {
+    _classCallCheck(this, ForwardDateRefiner);
+  }
+}
+const entry = {
+  key: "refine",
+  value: function refine(option, arr) {
+    let self = this;
+    if (option.option.forwardDate) {
+      const item = arr.forEach(function(start) {
+        let end3;
+        let end8;
+        let end9;
+        let start3;
+        let start8;
+        let start9;
+        option = start;
+        const reference = option.reference;
+        const dateWithAdjustedTimezone = reference.getDateWithAdjustedTimezone();
+        start = start.start;
+        if (start.isOnlyTime()) {
+          const start2 = start.start;
+          if (option.reference.instant > start2.date()) {
+            const reference2 = obj.reference;
+            const dateWithAdjustedTimezone1 = reference2.getDateWithAdjustedTimezone();
+            const _Date = Date;
+            self = this;
+            self2 = this;
+            const date = new Date(dateWithAdjustedTimezone1);
+            date.setDate(date.getDate() + 1);
+            assignSimilarDate.implySimilarDate(start.start, date);
+            option.debug(() => {
+              console.log("" + self.constructor.name + " adjusted " + start + " time from the ref date (" + dateWithAdjustedTimezone1 + ") to the following day (" + date + ")");
+            });
+            let end2 = start.end;
+            if (end2) {
+              const end = start.end;
+              end2 = end.isOnlyTime();
+            }
+            if (end2) {
+              assignSimilarDate.implySimilarDate(start.end, date);
+              ({ start: start3, end: end3 } = start);
+              const dateResult = start3.date();
+              if (dateResult > end3.date()) {
+                date.setDate(date.getDate() + 1);
+                assignSimilarDate.implySimilarDate(start.end, date);
+              }
+            }
+          }
+        }
+        const start4 = start.start;
+        let tmp5 = dateWithAdjustedTimezone;
+        if (start4.isOnlyWeekdayComponent()) {
+          const start5 = start.start;
+          tmp5 = dateWithAdjustedTimezone;
+          if (dateWithAdjustedTimezone > start5.date()) {
+            const start11 = start.start;
+            const value = start11.get("weekday");
+            const diff = value - dateWithAdjustedTimezone.getDay();
+            let sum = diff;
+            if (diff <= 0) {
+              sum = diff + 7;
+            }
+            const obj2 = { day: sum };
+            const addDurationResult = option(self[3]).addDuration(dateWithAdjustedTimezone, obj2);
+            option(self[2]).implySimilarDate(start.start, addDurationResult);
+            option.debug(() => {
+              console.log("" + self.constructor.name + " adjusted " + start + " weekday (" + start.start + ")");
+            });
+            tmp5 = addDurationResult;
+            if (start.end) {
+              const end4 = start.end;
+              tmp5 = addDurationResult;
+              if (end4.isOnlyWeekdayComponent()) {
+                const end5 = start.end;
+                const value2 = end5.get("weekday");
+                const diff1 = value2 - addDurationResult.getDay();
+                let sum1 = diff1;
+                if (diff1 <= 0) {
+                  sum1 = diff1 + 7;
+                }
+                const obj3 = { day: sum1 };
+                const addDurationResult1 = option(self[3]).addDuration(addDurationResult, obj3);
+                option(self[2]).implySimilarDate(start.end, addDurationResult1);
+                option.debug(() => {
+                  console.log("" + self.constructor.name + " adjusted " + start + " weekday (" + start.end + ")");
+                });
+                tmp5 = addDurationResult1;
+              }
+            }
+          }
+        }
+        const start6 = start.start;
+        if (start6.isDateWithUnknownYear()) {
+          const start7 = start.start;
+          if (tmp5 > start7.date()) {
+            const start12 = start.start;
+            let num3 = 0;
+            if (tmp5 > start12.date()) {
+              while (true) {
+                ({ start: start8, start: start9 } = start);
+                let implyResult = start8.imply("year", start9.get("year") + 1);
+                let obj6 = option;
+                let debugResult3 = option.debug(() => {
+                  console.log("" + self.constructor.name + " adjusted " + start + " year (" + start.start + ")");
+                });
+                let end6 = start.end;
+                if (end6) {
+                  let end7 = start.end;
+                  end6 = !end7.isCertain("year");
+                }
+                if (end6) {
+                  ({ end: end8, end: end9 } = start);
+                  let implyResult1 = end8.imply("year", end9.get("year") + 1);
+                  let debugResult4 = obj6.debug(() => {
+                    console.log("" + self.constructor.name + " adjusted " + start + " month (" + start.start + ")");
+                  });
+                }
+                let sum2 = num3 + 1;
+                if (sum2 >= 3) {
+                  break;
+                } else {
+                  let start10 = start.start;
+                  num3 = sum2;
+                  if (tmp5 <= start10.date()) {
+                    break;
+                  }
+                }
+              }
+            }
+          }
+        }
+      });
     }
+    return arr;
   }
 };
-export const parseDuration = function parseDuration(arg0) {
-  let str = arg0;
-  const obj = {};
-  let match = regExp.exec(arg0);
-  while (match) {
-    let str2 = match[2];
-    let tmp3 = parseNumberPattern(match[1]);
-    obj[exports.TIME_UNIT_DICTIONARY[str2.toLowerCase(str2)]] = tmp3;
-    let substr = str.substring(match[0].length);
-    match = regExp.exec(substr);
-    str = substr;
-  }
-  return obj;
-};
-export const WEEKDAY_DICTIONARY = { sonntag: 0, so: 0, montag: 1, mo: 1, dienstag: 2, di: 2, mittwoch: 3, mi: 3, donnerstag: 4, do: 4, freitag: 5, fr: 5, samstag: 6, sa: 6 };
-export const MONTH_DICTIONARY = { januar: 1, "j\u00e4nner": 1, janner: 1, jan: 1, "jan.": 1, februar: 2, feber: 2, feb: 2, "feb.": 2, "m\u00e4rz": 3, maerz: 3, "m\u00e4r": 3, "m\u00e4r.": 3, mrz: 3, "mrz.": 3, april: 4, apr: 4, "apr.": 4, mai: 5, juni: 6, jun: 6, "jun.": 6, juli: 7, jul: 7, "jul.": 7, august: 8, aug: 8, "aug.": 8, september: 9, sep: 9, "sep.": 9, sept: 9, "sept.": 9, oktober: 10, okt: 10, "okt.": 10, november: 11, nov: 11, "nov.": 11, dezember: 12, dez: 12, "dez.": 12 };
-export const INTEGER_WORD_DICTIONARY = { eins: 1, eine: 1, einem: 1, einen: 1, einer: 1, zwei: 2, drei: 3, vier: 4, "f\u00fcnf": 5, fuenf: 5, sechs: 6, sieben: 7, acht: 8, neun: 9, zehn: 10, elf: 11, "zw\u00f6lf": 12, zwoelf: 12 };
-export const TIME_UNIT_DICTIONARY = { sek: "second", sekunde: "second", sekunden: "second", min: "minute", minute: "minute", minuten: "minute", h: "hour", std: "hour", stunde: "hour", stunden: "hour", tag: "day", tage: "day", tagen: "day", woche: "week", wochen: "week", monat: "month", monate: "month", monaten: "month", monats: "month", quartal: "quarter", quartals: "quarter", quartale: "quarter", quartalen: "quarter", a: "year", j: "year", jr: "year", jahr: "year", jahre: "year", jahren: "year", jahres: "year" };
-export const NUMBER_PATTERN = "(?:" + repeatedTimeunitPattern.matchAnyPattern(exports.INTEGER_WORD_DICTIONARY) + "|[0-9]+|[0-9]+\\.[0-9]+|halb?|halbe?|einigen?|wenigen?|mehreren?)";
-export const YEAR_PATTERN = "(?:[0-9]{1,4}(?:\\s*[vn]\\.?\\s*(?:C(?:hr)?|(?:u\\.?|d\\.?(?:\\s*g\\.?)?)?\\s*Z)\\.?|\\s*(?:u\\.?|d\\.?(?:\\s*g\\.)?)\\s*Z\\.?)?)";
-export const TIME_UNITS_PATTERN = repeatedTimeunitPattern.repeatedTimeunitPattern("", combined);
+let items = [entry];
+
+export default _createClass(ForwardDateRefiner, items);

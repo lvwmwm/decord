@@ -1,13 +1,13 @@
-// Module ID: 7173
-// Function ID: 7174
+// Module ID: 7172
+// Function ID: 7173
 // Name: MemberVerificationAlertIncomplete
-// Dependencies: [109, 19, 4996, 21, 558, 576, 573, 6857, 6821, 1128, 5230, 6825, 7174, 2]
+// Dependencies: [109, 19, 4996, 21, 558, 576, 573, 6856, 6820, 1128, 5230, 6824, 7173, 2]
 
-// Module 7173 (MemberVerificationAlertIncomplete)
+// Module 7172 (MemberVerificationAlertIncomplete)
 import intl5 from "intl" /* 1128 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6821 */;
-import MemberVerificationAlertDefault from "MemberVerificationAlert" /* 6825 */;
-import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 6857 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6820 */;
+import MemberVerificationAlertDefault from "MemberVerificationAlert" /* 6824 */;
+import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 6856 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4996 */;
@@ -165,7 +165,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
             return tmp35;
           }
         }
-        const obj5 = { icon: tmp(7174).ListViewIcon, header: tmp17, buttons: tmp31 };
+        const obj5 = { icon: tmp(7173).ListViewIcon, header: tmp17, buttons: tmp31 };
         const tmp38 = MemberVerificationAlertDefault;
         const merged = Object.assign(tmp6);
         const tmp42 = closure_7(tmp38, obj5);
@@ -281,8 +281,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
     let intl = tmp2(1128).intl;
     formatToPlainStringResult = intl.string(tmp2(1128).t["0sTyEb"]);
   }
-  const obj3 = { icon: guildId(7174).ListViewIcon, header: formatToPlainStringResult, buttons: closure_9(closure_8, obj4) };
-  const tmp9 = onClose(6825);
+  const obj3 = { icon: guildId(7173).ListViewIcon, header: formatToPlainStringResult, buttons: closure_9(closure_8, obj4) };
+  const tmp9 = onClose(6824);
   const merged1 = Object.assign(merged);
   obj4 = { children: items4 };
   const obj5 = { variant: "secondary", text: intl3.string(guildId(1128).t.h3aGmv), onPress: callback };

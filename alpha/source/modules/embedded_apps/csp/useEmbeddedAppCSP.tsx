@@ -1,14 +1,14 @@
-// Module ID: 10744
-// Function ID: 10745
+// Module ID: 10751
+// Function ID: 10752
 // Name: useEmbeddedAppCSP
-// Dependencies: [5, 10742, 504, 10745, 558, 576, 10743, 5609, 2]
+// Dependencies: [5, 10749, 504, 10752, 558, 576, 10750, 5609, 2]
 
-// Module 10744 (useEmbeddedAppCSP)
+// Module 10751 (useEmbeddedAppCSP)
 import react from "react" /* 576 */;
-import EmbeddedAppFramePolicyExperiment from "EmbeddedAppFramePolicyExperiment" /* 10743 */;
-import EmbeddedAppCSPActionCreators from "EmbeddedAppCSPActionCreators" /* 10745 */;
+import EmbeddedAppFramePolicyExperiment from "EmbeddedAppFramePolicyExperiment" /* 10750 */;
+import EmbeddedAppCSPActionCreators from "EmbeddedAppCSPActionCreators" /* 10752 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmbeddedAppCSPStore from "EmbeddedAppCSPStore" /* 10742 */;
+import EmbeddedAppCSPStore from "EmbeddedAppCSPStore" /* 10749 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

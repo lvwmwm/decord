@@ -1,9 +1,9 @@
-// Module ID: 17664
-// Function ID: 17665
+// Module ID: 17686
+// Function ID: 17687
 // Name: HomeDrawerGuildVoiceState
-// Dependencies: [19, 17, 4899, 4911, 6690, 5703, 1087, 21, 4969, 587, 558, 576, 1202, 14246, 1128, 5220, 11661, 5655, 5244, 17663, 504, 14958, 12, 2]
+// Dependencies: [19, 17, 4899, 4911, 6689, 5703, 1087, 21, 4969, 587, 558, 576, 1202, 14260, 1128, 5220, 11672, 5655, 5244, 17685, 504, 14972, 12, 2]
 
-// Module 17664 (HomeDrawerGuildVoiceState)
+// Module 17686 (HomeDrawerGuildVoiceState)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -15,12 +15,12 @@ import GuildChannelStore2 from "GuildChannelStore" /* 4899 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import LinearGradientDefault from "LinearGradient" /* 5244 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 11661 */;
-import AvatarPile2 from "AvatarPile" /* 14246 */;
-import BlockedUserUtils from "BlockedUserUtils" /* 14958 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 11672 */;
+import AvatarPile2 from "AvatarPile" /* 14260 */;
+import BlockedUserUtils from "BlockedUserUtils" /* 14972 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6690 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6689 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5703 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -120,7 +120,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceU
       }
       const obj3 = { style: tmp5, children: closure_11(AvatarPile, obj4) };
       obj4 = { size: guildId(1202).AvatarSizes.XSMALL, names: tmp6, totalCount: tmp9, children: tmp10 };
-      AvatarPile = tmp(14246).AvatarPile;
+      AvatarPile = tmp(14260).AvatarPile;
       const tmp16 = closure_11(View, obj3);
       cResult[11] = tmp6;
       cResult[12] = tmp10;

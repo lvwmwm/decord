@@ -1,9 +1,9 @@
-// Module ID: 14424
-// Function ID: 14425
+// Module ID: 14438
+// Function ID: 14439
 // Name: EditProfileCollectiblesOrderingExperiment
 // Dependencies: [1455, 558, 576, 2]
 
-// Module 14424 (EditProfileCollectiblesOrderingExperiment)
+// Module 14438 (EditProfileCollectiblesOrderingExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

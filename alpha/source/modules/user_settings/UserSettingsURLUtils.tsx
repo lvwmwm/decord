@@ -1,14 +1,14 @@
-// Module ID: 6706
-// Function ID: 6707
+// Module ID: 6705
+// Function ID: 6706
 // Name: UserSettingsURLUtils
-// Dependencies: [32, 1097, 1087, 6707, 1267, 6708, 2]
+// Dependencies: [32, 1097, 1087, 6706, 1267, 6707, 2]
 // Exports: parseSettingsUrl, settingsPathToRoute, trackParseSettingsUrl
 
-// Module 6706 (UserSettingsURLUtils)
+// Module 6705 (UserSettingsURLUtils)
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import UserSettingsKeys from "UserSettingsKeys" /* 6707 */;
-import _mod6708 from "module_6708" /* 6708 */;
+import UserSettingsKeys from "UserSettingsKeys" /* 6706 */;
+import _mod6707 from "module_6707" /* 6707 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
@@ -116,8 +116,8 @@ export const parseSettingsUrl = function parseSettingsUrl(arg0) {
     tmp8 = tmp9;
   }
   const obj2 = { target: tmp8, path: joined, params: parse(search) };
-  parse = tmp6(6708).parse;
-  _mod6708;
+  parse = tmp6(6707).parse;
+  _mod6707;
   if (search == null) {
     const _location = location;
     search = location.search;

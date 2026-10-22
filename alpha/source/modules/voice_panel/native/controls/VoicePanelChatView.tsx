@@ -1,22 +1,22 @@
-// Module ID: 13082
-// Function ID: 13083
+// Module ID: 13098
+// Function ID: 13099
 // Name: VoicePanelChatView
-// Dependencies: [19, 17, 10863, 1087, 21, 4969, 5696, 558, 576, 1123, 13080, 1128, 10628, 10864, 5038, 10595, 7154, 9678, 1499, 1633, 13083, 7395, 5132, 13084, 10856, 5955, 5023, 11189, 2]
+// Dependencies: [19, 17, 10871, 1087, 21, 4969, 5696, 558, 576, 1123, 13096, 1128, 10635, 10872, 5038, 10602, 7153, 9685, 1499, 1633, 13099, 7396, 5132, 13100, 10864, 5954, 5023, 11198, 2]
 
-// Module 13082 (VoicePanelChatView)
+// Module 13098 (VoicePanelChatView)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import intl2 from "intl" /* 1128 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5696 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7154 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7395 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10595 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10628 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10863 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10864 */;
-import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 13080 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7153 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7396 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10602 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10635 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10871 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10872 */;
+import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 13096 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;

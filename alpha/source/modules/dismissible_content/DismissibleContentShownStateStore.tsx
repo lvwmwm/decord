@@ -27,14 +27,14 @@ let body, closure_3, closure_4, context, dependencyMap;
 
 let metroImportAll;
 let metroImportDefault;
-const f93089 = (item) => {
+const f93187 = (item) => {
   content = undefined;
   if (content != null) {
     content = content.content;
   }
   return item !== content;
 };
-const f93091 = () => {
+const f93189 = () => {
   state.setState(() => {
     obj = { candidates: new Map(), shownFatigableCandidate: null, prevFatigableCandidate: null, recentlyShown: [], currentlyShown: new Set(), currentlyShownGroup: new Set(), lastWinnerTime: 0, postConnectionOpen: true };
     new Map();
@@ -262,7 +262,7 @@ function withUpdateWinner(candidates, arg1) {
           const items1 = [];
           HermesBuiltin.arraySpread(items1, candidates3.keys(), 0);
           const shownFatigableCandidate = candidates.shownFatigableCandidate;
-          const found = items1.filter(f93089);
+          const found = items1.filter(f93187);
           const tmp9 = withContent;
           if (null != shownFatigableCandidate) {
             if (null != shownFatigableCandidate.content) {
@@ -581,7 +581,7 @@ let _require = _asyncToGenerator(async (arg0, value) => {
                 const items = [];
                 HermesBuiltin.arraySpread(items, candidates.keys(), 0);
                 const shownFatigableCandidate = obj.shownFatigableCandidate;
-                let found = items.filter(f93089);
+                let found = items.filter(f93187);
                 const tmp11 = closure_2_14;
                 if (null != shownFatigableCandidate) {
                   if (null != shownFatigableCandidate.content) {
@@ -698,7 +698,7 @@ function isStateInCooldown(shownFatigableCandidate) {
 }
 function reset() {
   obj = react_native;
-  obj.batchUpdates(f93091);
+  obj.batchUpdates(f93189);
   closure_10 = {};
   c11 = null;
   closure_9.succeed();
@@ -721,7 +721,7 @@ DismissibleContentShownStateStore.displayName = "DismissibleContentShownStateSto
 obj = {
   CONNECTION_OPEN() {
     obj = react_native;
-    obj.batchUpdates(f93091);
+    obj.batchUpdates(f93189);
     closure_10 = {};
     c11 = null;
     closure_9.succeed();
@@ -730,7 +730,7 @@ obj = {
   LOGOUT() {
     let state;
     obj = react_native;
-    obj.batchUpdates(f93091);
+    obj.batchUpdates(f93189);
     closure_10 = {};
     c11 = null;
     closure_9.succeed();

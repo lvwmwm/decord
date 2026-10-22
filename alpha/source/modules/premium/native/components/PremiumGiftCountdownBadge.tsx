@@ -1,9 +1,9 @@
-// Module ID: 10481
-// Function ID: 10482
+// Module ID: 10488
+// Function ID: 10489
 // Name: PremiumGiftCountdownBadge
 // Dependencies: [19, 17, 21, 4969, 587, 1384, 558, 576, 5220, 2]
 
-// Module 10481 (PremiumGiftCountdownBadge)
+// Module 10488 (PremiumGiftCountdownBadge)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

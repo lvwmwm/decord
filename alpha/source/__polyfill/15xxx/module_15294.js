@@ -1,41 +1,9 @@
 // Module ID: 15294
 // Function ID: 15295
-// Dependencies: [15289, 15260]
+// Dependencies: [15287]
 
 // Module 15294
-import _mod15260 from "module_15260" /* 15260 */;
-
-const require = globalThis.__r;
-let _require, c1, dependencyMap;
+import _mod15287 from "module_15287" /* 15287 */;
 
 
-export default function(arr, arg1, arg2) {
-  let closure_0;
-  _require = arg2;
-  dependencyMap = null;
-  let closure_2 = null;
-  let regex = null;
-  try {
-    let tmp = arg1;
-    let self = this;
-    let self2 = this;
-    const tmp6 = new require("module_15289")(arg1, arg2);
-    let tmp7 = tmp6;
-    regex = tmp6;
-    const item = arr.forEach(function(item) {
-      if (regex.test(item)) {
-        const tmp = c1 && 1 !== closure_2.compare(item);
-        if (!tmp) {
-          c1 = item;
-          const self = this;
-          const self2 = this;
-          closure_2 = new _mod15260(c1, closure_0);
-          const tmp7 = new _mod15260(c1, closure_0);
-        }
-      }
-    });
-    return dependencyMap;
-  } catch (err) {
-    return null;
-  }
-};
+export default (arg0, arg1, arg2) => _mod15287(arg0, arg1, arg2) < 0;

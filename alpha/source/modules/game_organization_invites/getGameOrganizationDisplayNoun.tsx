@@ -1,13 +1,13 @@
-// Module ID: 12650
-// Function ID: 12651
+// Module ID: 12665
+// Function ID: 12666
 // Name: getGameOrganizationDisplayNoun
-// Dependencies: [10994, 1128, 2406, 2]
+// Dependencies: [11002, 1128, 2406, 2]
 // Exports: default
 
-// Module 12650 (getGameOrganizationDisplayNoun)
+// Module 12665 (getGameOrganizationDisplayNoun)
 import intl3 from "intl" /* 1128 */;
 import _modDef2406 from "module_2406" /* 2406 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 10994 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11002 */;
 import size from "module_2" /* 2 */;
 
 const constants = GameOrganizationInviteConstants.GameOrganizationDisplayNouns;

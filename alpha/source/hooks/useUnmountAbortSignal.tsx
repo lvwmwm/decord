@@ -1,9 +1,9 @@
-// Module ID: 7338
-// Function ID: 7339
+// Module ID: 7339
+// Function ID: 7340
 // Name: useUnmountAbortSignal
 // Dependencies: [558, 576, 5585, 5249, 2]
 
-// Module 7338 (useUnmountAbortSignal)
+// Module 7339 (useUnmountAbortSignal)
 import react from "react" /* 576 */;
 import useInitialValueDefault from "useInitialValue" /* 5585 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

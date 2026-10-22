@@ -1,142 +1,236 @@
 // Module ID: 12565
 // Function ID: 12566
-// Dependencies: [32, 12537, 12509, 12536]
-// Exports: addIntegration, afterSetupIntegrations, defineIntegration, getIntegrationsToSetup, setupIntegrations
+// Dependencies: [32, 12566, 12526, 12527, 12523]
+// Exports: normalizeUrlToBase
 
 // Module 12565
-import _mod12536 from "module_12536" /* 12536 */;
-import _mod12537 from "module_12537" /* 12537 */;
+import _mod12523 from "module_12523" /* 12523 */;
+import _mod12526 from "module_12526" /* 12526 */;
+import _mod12527 from "module_12527" /* 12527 */;
+import memoBuilder from "memoBuilder" /* 12566 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 
-let integrations;
+let hasOwnProperty;
 
-function setupIntegration(on, name, arg2) {
-  let closure_0 = on;
-  if (arg2[name.name]) {
-    const tmp10 = require;
-    if (_mod12537.DEBUG_BUILD) {
-      const logger2 = tmp10(12509).logger;
-      const _HermesInternal2 = HermesInternal;
-      logger2.log("Integration skipped because it was already installed: " + name.name);
-    }
-  } else {
-    arg2[name.name] = name;
-    const arr = items;
-    const tmp = -1 === items.indexOf(name.name) && typeof name.setupOnce === "function";
-    if (tmp) {
-      name.setupOnce();
-      arr.push(name.name);
-    }
-    const tmp4 = name.setup && typeof name.setup === "function";
-    if (tmp4) {
-      name.setup(on);
-    }
-    if (typeof name.preprocessEvent === "function") {
-      const preprocessEvent = name.preprocessEvent;
-      let closure_1 = preprocessEvent.bind(name);
-      on.on("preprocessEvent", (arg0, arg1) => closure_1(arg0, arg1, closure_0));
-    }
-    if (typeof name.processEvent === "function") {
-      const processEvent = name.processEvent;
-      let closure_2 = processEvent.bind(name);
-      const _Object = Object;
-      const obj = { id: name.name };
-      on.addEventProcessor(Object.assign((arg0, arg1) => closure_2(arg0, arg1, closure_0), obj));
-    }
-    const tmp6 = require;
-    if (_mod12537.DEBUG_BUILD) {
-      const logger = tmp6(12509).logger;
-      const _HermesInternal = HermesInternal;
-      logger.log("Integration installed: " + name.name);
-    }
+function normalize(arg0) {
+  let num = arg1;
+  if (arg1 === undefined) {
+    num = 100;
   }
-}
-let items = [];
-
-export const addIntegration = function addIntegration(name) {
-  const obj = _mod12536;
-  const client = obj.getClient();
-  if (client) {
-    client.addIntegration(name);
-  } else if (_mod12537.DEBUG_BUILD) {
-    const logger = tmp(12509).logger;
+  let num2 = arg2;
+  if (arg2 === undefined) {
+    num2 = Infinity;
+  }
+  try {
+    return visit("", arg0, num, num2);
+  } catch (tmp5) {
     const _HermesInternal = HermesInternal;
-    logger.warn("Cannot add integration \"" + name.name + "\" because no SDK Client is available.");
+    const obj = { ERROR: "**non-serializable** (" + tmp5 + ")" };
+    return obj;
   }
-};
-export const afterSetupIntegrations = function afterSetupIntegrations(arg0, arg1) {
-  const iter = arg1[Symbol.iterator]();
-  let afterAllSetup = iter.next();
-  while (iter !== undefined) {
-    let obj = afterAllSetup;
-    if (obj) {
-      afterAllSetup = obj.afterAllSetup;
-    }
-    if (afterAllSetup) {
-      let afterAllSetupResult = obj.afterAllSetup(arg0);
-    }
-    continue;
-  }
-};
-export function defineIntegration(arg0) {
-  return arg0;
 }
-export const getIntegrationsToSetup = function getIntegrationsToSetup(defaultIntegrations) {
-  let arr2;
-  const arr = defaultIntegrations.defaultIntegrations || [];
-  integrations = defaultIntegrations.integrations;
-  const item = arr.forEach((item) => {
-    item.isDefaultInstance = true;
-  });
-  if (Array.isArray(integrations)) {
-    items = [];
-    HermesBuiltin.arraySpread(items, integrations, HermesBuiltin.arraySpread(items, arr, 0));
-    arr2 = items;
-  } else {
-    arr2 = arr;
-    if (typeof integrations === "function") {
-      const integrationsResult = integrations(arr);
-      const _Array = Array;
-      let tmp3 = integrationsResult;
-      if (!Array.isArray(integrationsResult)) {
-        const items1 = [integrationsResult];
-        tmp3 = items1;
+function visit(arg0, __sentry_skip_normalization__) {
+  function stringifyValue(arg0, _events) {
+    function getConstructorName(_events) {
+      const prototypeOf = Object.getPrototypeOf(_events);
+      let str = "null prototype";
+      if (prototypeOf) {
+        str = prototypeOf.constructor.name;
       }
-      arr2 = tmp3;
+      return str;
+    }
+    try {
+      let str = "domain";
+      if ("domain" === arg0) {
+        if (_events) {
+          if (typeof _events === "object") {
+            if (_events._events) {
+              return "[Domain]";
+            }
+          }
+        }
+      }
+      if ("domainEmitter" === arg0) {
+        return "[DomainEmitter]";
+      } else {
+        if (undefined !== global) {
+          if (_events === global) {
+            return "[Global]";
+          }
+        }
+        const _window = window;
+        if (typeof window !== "undefined") {
+          const _window2 = window;
+          if (_events === window) {
+            return "[Window]";
+          }
+        }
+        const _document = document;
+        if (typeof document !== "undefined") {
+          const _document2 = document;
+          if (_events === document) {
+            return "[Document]";
+          }
+        }
+        const obj = _mod12527;
+        if (obj.isVueViewModel(_events)) {
+          return "[VueViewModel]";
+        } else {
+          const tmp4Result = _mod12527;
+          if (tmp4Result.isSyntheticEvent(_events)) {
+            return "[SyntheticEvent]";
+          } else {
+            if (typeof _events === "number") {
+              const _Number = Number;
+              if (!Number.isFinite(_events)) {
+                const _HermesInternal = HermesInternal;
+                return "[" + _events + "]";
+              }
+            }
+            if (typeof _events === "function") {
+              const _HermesInternal4 = HermesInternal;
+              const tmp4Result2 = _mod12523;
+              return "[Function: " + tmp4Result2.getFunctionName(_events) + "]";
+            } else if (typeof _events === "symbol") {
+              const _String2 = String;
+              const _HermesInternal3 = HermesInternal;
+              return "[" + String(_events) + "]";
+            } else if (typeof _events === "bigint") {
+              const _String = String;
+              const _HermesInternal2 = HermesInternal;
+              return "[BigInt: " + String(_events) + "]";
+            } else {
+              let combined;
+              const _HermesInternal6 = HermesInternal;
+              const obj4 = /^HTML(\w*)Element$/;
+              const tmp9 = getConstructorName(_events);
+              if (obj4.test(tmp9)) {
+                combined = concat(tmp10, "]");
+              } else {
+                combined = concat(tmp10, "]");
+              }
+              return combined;
+            }
+          }
+        }
+      }
+    } catch (tmp7) {
+      const _HermesInternal5 = HermesInternal;
+      return "**non-serializable** (" + tmp7 + ")";
     }
   }
-  const obj = {};
-  const item1 = arr2.forEach((name) => {
-    name = name.name;
-    let isDefaultInstance = tmp2;
-    const tmp = obj;
-    if (obj[name]) {
-      isDefaultInstance = !tmp2.isDefaultInstance;
-    }
-    if (isDefaultInstance) {
-      isDefaultInstance = name.isDefaultInstance;
-    }
-    if (!isDefaultInstance) {
-      tmp[name] = name;
-    }
-  });
-  const values = Object.values(obj);
-  const findIndexResult = values.findIndex((name) => "Debug" === name.name);
-  if (findIndexResult > -1) {
-    values.push(_slicedToArray(values.splice(findIndexResult, 1), 1)[0]);
+  let num = arg2;
+  if (arg2 === undefined) {
+    num = Infinity;
   }
-  return values;
-};
-export const installedIntegrations = items;
-export { setupIntegration };
-export const setupIntegrations = function setupIntegrations(arg0, arr) {
-  let closure_0 = arg0;
-  const obj = {};
-  const item = arr.forEach((item) => {
-    const tmp = item;
-    if (tmp) {
-      setupIntegration(closure_0, item, obj);
+  let num2 = arg3;
+  if (arg3 === undefined) {
+    num2 = Infinity;
+  }
+  let memoBuilderResult = arg4;
+  if (arg4 === undefined) {
+    let obj = memoBuilder;
+    memoBuilderResult = obj.memoBuilder();
+  }
+  _slicedToArray(memoBuilderResult, 2);
+  if (null != __sentry_skip_normalization__) {
+    const items = ["boolean", "string"];
+    if (!items.includes(typeof __sentry_skip_normalization__)) {
+      if (typeof __sentry_skip_normalization__ === "number") {
+        let _Number = Number;
+      }
+      let tmp9 = arg0;
+      let str = stringifyValue(arg0, __sentry_skip_normalization__);
+      if (str.startsWith("[object ")) {
+        if (__sentry_skip_normalization__.__sentry_skip_normalization__) {
+          return __sentry_skip_normalization__;
+        } else {
+          if (typeof __sentry_skip_normalization__.__sentry_override_normalization_depth__ === "number") {
+            num = __sentry_skip_normalization__.__sentry_override_normalization_depth__;
+          }
+          if (0 === num) {
+            return str.replace("object ", "");
+          } else if (tmp6(__sentry_skip_normalization__)) {
+            return "[Circular ~]";
+          } else {
+            if (__sentry_skip_normalization__) {
+              if (typeof __sentry_skip_normalization__.toJSON === "function") {
+                try {
+                  const tmp10 = visit;
+                  return visit("", __sentry_skip_normalization__.toJSON(), num - 1, num2, memoBuilderResult);
+                } catch (err) {
+                }
+              }
+            }
+            const _Array = Array;
+            const tmp14 = Array.isArray(__sentry_skip_normalization__) ? [] : {};
+            const obj2 = _mod12526;
+            const convertToPlainObjectResult = obj2.convertToPlainObject(__sentry_skip_normalization__);
+            const keys = Object.keys();
+            if (keys !== undefined) {
+              while (keys[tmp] !== undefined) {
+                let _Object = Object;
+                hasOwnProperty = Object.prototype.hasOwnProperty;
+                let tmp28 = tmp21;
+                if (!hasOwnProperty.call(convertToPlainObjectResult, tmp21)) {
+                  continue;
+                } else {
+                  if (tmp20 >= num2) {
+                    let str4 = "[MaxProperties ~]";
+                    tmp14[tmp21] = "[MaxProperties ~]";
+                    break;
+                  } else {
+                    tmp14[tmp21] = visit(tmp28, convertToPlainObjectResult[tmp21], num - 1, num2, tmp8);
+                    let num6 = tmp20 + 1;
+                    continue;
+                  }
+                  break;
+                }
+                break;
+              }
+            }
+            tmp7(__sentry_skip_normalization__);
+            return tmp14;
+          }
+        }
+      } else {
+        return str;
+      }
     }
-  });
-  return obj;
+  }
+  return __sentry_skip_normalization__;
+}
+function normalizeToSize(arg0) {
+  let num = arg1;
+  if (arg1 === undefined) {
+    num = 3;
+  }
+  let num2 = arg2;
+  if (arg2 === undefined) {
+    num2 = 102400;
+  }
+  let tmp = normalize(arg0, num);
+  const str = encodeURI(JSON.stringify(tmp));
+  if (~(-str.split(/%..|./).length) > num2) {
+    tmp = normalizeToSize(arg0, num - 1, num2);
+  }
+  return tmp;
+}
+
+export { normalize };
+export { normalizeToSize };
+export const normalizeUrlToBase = function normalizeUrlToBase(arg0, str) {
+  let str2 = arg0;
+  str = str.replace(/\\/g, "/");
+  const replaced = str.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&");
+  try {
+    const _decodeURI = decodeURI;
+    str2 = decodeURI(arg0);
+  } catch (err) {
+  }
+  const str3 = str2.replace(/\\/g, "/");
+  const replace = str3.replace(/webpack:\/?/g, "").replace;
+  str3.replace(/webpack:\/?/g, "");
+  const regExp = new RegExp("(file://)?/*" + replaced + "/*", "ig");
+  return replace(regExp, "app:///");
 };

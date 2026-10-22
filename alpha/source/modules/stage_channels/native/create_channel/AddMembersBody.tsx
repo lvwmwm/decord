@@ -1,10 +1,10 @@
-// Module ID: 8971
-// Function ID: 8972
+// Module ID: 8978
+// Function ID: 8979
 // Name: AddMembersBody
-// Dependencies: [109, 32, 19, 17, 4881, 4875, 1392, 7859, 1098, 21, 4969, 587, 4906, 5579, 504, 5594, 8941, 1202, 1128, 8958, 4978, 5255, 8962, 6815, 5220, 7937, 8967, 2]
+// Dependencies: [109, 32, 19, 17, 4881, 4875, 1392, 7860, 1098, 21, 4969, 587, 4906, 5579, 504, 5594, 8948, 1202, 1128, 8965, 4978, 5255, 8969, 6814, 5220, 7938, 8974, 2]
 // Exports: default
 
-// Module 8971 (AddMembersBody)
+// Module 8978 (AddMembersBody)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
 import intl6 from "intl" /* 1128 */;
@@ -12,7 +12,7 @@ import PermissionUtilsAll from "PermissionUtils" /* 4906 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4978 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import RegexUtilsDefault from "RegexUtils" /* 5594 */;
-import GuildUtilsDefault from "GuildUtils" /* 6815 */;
+import GuildUtilsDefault from "GuildUtils" /* 6814 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -20,7 +20,7 @@ import react_native from "react-native" /* 17 */;
 import GuildMemberStore from "GuildMemberStore" /* 4881 */;
 import GuildRoleStore from "GuildRoleStore" /* 4875 */;
 import UserStore from "UserStore" /* 1392 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7859 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7860 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import size_mod from "module_2" /* 2 */;
@@ -42,7 +42,7 @@ let obj5;
 let size;
 let size1;
 let tmp10;
-const ChannelPermissionsUtilsAll = tmp10(8941);
+const ChannelPermissionsUtilsAll = tmp10(8948);
 function _toPropertyKey(obj) {
   let StringResult = obj;
   if (typeof obj === "object") {
@@ -238,7 +238,7 @@ export default function AddMembersBody(pendingAdditions) {
     },
     autoFocus: true
   };
-  tmp4Result = tmp4(8962);
+  tmp4Result = tmp4(8969);
   intl3 = tmp6(1128).intl;
   const items5 = [closure_16(closure_7, obj9), , , ];
   let tmp27Result = null;
@@ -253,7 +253,7 @@ export default function AddMembersBody(pendingAdditions) {
   if (canEveryoneRoleResult) {
     const obj13 = { style: tmp3.adminWarning, children: closure_16(InlineNotice, obj14) };
     obj14 = { type: "warning", message: intl4.string(guild(1128).t["5f3HIC"]), role: "status" };
-    InlineNotice = tmp6(7937).InlineNotice;
+    InlineNotice = tmp6(7938).InlineNotice;
     intl4 = tmp6(1128).intl;
     canEveryoneRoleResult = tmp27(tmp28, obj13);
   }
@@ -263,7 +263,7 @@ export default function AddMembersBody(pendingAdditions) {
       let tmp27Result2;
       if (0 === membersRows.length) {
         const obj15 = { children: closure_16(EmptyState, obj16) };
-        obj16 = { Illustration: guild(8967).NoResultsAlt, style: null, bodyStyle: null, body: intl5.format(guild(1128).t.ErpIY3, obj17) };
+        obj16 = { Illustration: guild(8974).NoResultsAlt, style: null, bodyStyle: null, body: intl5.format(guild(1128).t.ErpIY3, obj17) };
         EmptyState = tmp6(1202).EmptyState;
         ({ emptyState: obj21.style, emptyStateText: obj21.bodyStyle } = tmp3);
         intl5 = tmp6(1128).intl;

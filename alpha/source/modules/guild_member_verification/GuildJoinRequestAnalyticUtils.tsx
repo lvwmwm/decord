@@ -1,10 +1,10 @@
-// Module ID: 6831
-// Function ID: 6832
+// Module ID: 6830
+// Function ID: 6831
 // Name: GuildJoinRequestAnalyticUtils
 // Dependencies: [502, 4881, 1087, 1267, 2]
 // Exports: trackMemberApplicationAction, trackMemberApplicationInterviewMessage, trackMemberApplicationViewed, trackMemberVerificationApplicationViewed
 
-// Module 6831 (GuildJoinRequestAnalyticUtils)
+// Module 6830 (GuildJoinRequestAnalyticUtils)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

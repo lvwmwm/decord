@@ -1,170 +1,123 @@
 // Module ID: 12556
 // Function ID: 12557
-// Dependencies: [32, 12509, 12508]
-// Exports: dsnToString, makeDsn
+// Dependencies: [12526, 12557, 12547, 12525, 12533, 12535, 12552]
+// Exports: freezeDscOnSpan, getDynamicSamplingContextFromClient, getDynamicSamplingContextFromScope, spanToBaggageHeader
 
 // Module 12556
-import _mod12509 from "module_12509" /* 12509 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import _mod12525 from "module_12525" /* 12525 */;
+import _mod12526 from "module_12526" /* 12526 */;
+import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 12533 */;
+import SEMANTIC_ATTRIBUTE_CACHE_HIT from "SEMANTIC_ATTRIBUTE_CACHE_HIT" /* 12535 */;
+import _mod12547 from "module_12547" /* 12547 */;
+import _mod12552 from "module_12552" /* 12552 */;
 
-function dsnFromString(arg0) {
-  let closure_0 = arg0;
-  const match = re3.exec(arg0);
-  if (match) {
-    const tmp5 = _slicedToArray(match.slice(1), 6);
-    let str = tmp5[1];
-    let str3 = "";
-    const first = tmp5[0];
-    if (undefined !== tmp5[2]) {
-      str3 = tmp7;
-    }
-    let str4 = "";
-    if (undefined !== tmp5[3]) {
-      str4 = tmp8;
-    }
-    let str5 = "";
-    if (undefined !== tmp5[4]) {
-      str5 = tmp9;
-    }
-    let str6 = "";
-    if (undefined !== tmp5[5]) {
-      str6 = tmp10;
-    }
-    const parts = str6.split("/");
-    let str8 = str6;
-    let str9 = "";
-    if (parts.length > 1) {
-      const substr = parts.slice(0, -1);
-      str9 = substr.join("/");
-      str8 = parts.pop();
-    }
-    let first1 = str8;
-    if (first1) {
-      const match1 = str8.match(/^\d+/);
-      first1 = str8;
-      if (match1) {
-        first1 = match1[0];
+let tmp3;
+const _mod12557 = tmp3(12557);
+function getDynamicSamplingContextFromSpan(spanContext) {
+  const obj = _mod12547;
+  const client = obj.getClient();
+  if (client) {
+    const tmpResult = _mod12525;
+    const rootSpan = tmpResult.getRootSpan(spanContext);
+    if (rootSpan[_frozenDsc]) {
+      return rootSpan[_frozenDsc];
+    } else {
+      const traceState = rootSpan.spanContext().traceState;
+      const value = traceState && traceState.get("sentry.dsc");
+      let result = value;
+      if (result) {
+        const tmpResult6 = BAGGAGE_HEADER_NAME;
+        result = tmpResult6.baggageHeaderToDynamicSamplingContext(value);
+      }
+      if (result) {
+        return result;
+      } else {
+        const traceId = spanContext.spanContext().traceId;
+        const options = client.getOptions();
+        const publicKey = (client.getDsn() || {}).publicKey;
+        client.getDsn() || {};
+        let DEFAULT_ENVIRONMENT = options.environment;
+        const dropUndefinedKeys = _mod12526.dropUndefinedKeys;
+        _mod12526;
+        if (!DEFAULT_ENVIRONMENT) {
+          DEFAULT_ENVIRONMENT = tmp(12557).DEFAULT_ENVIRONMENT;
+        }
+        const obj2 = { environment: DEFAULT_ENVIRONMENT, release: options.release, public_key: publicKey, trace_id: traceId };
+        const dropUndefinedKeysResult = dropUndefinedKeys(obj2);
+        client.emit("createDsc", dropUndefinedKeysResult);
+        const tmpResult8 = _mod12525;
+        const spanToJSONResult = tmpResult8.spanToJSON(rootSpan);
+        const tmp14 = spanToJSONResult.data || {};
+        const tmp15 = tmp14[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_SAMPLE_RATE];
+        if (null != tmp15) {
+          const _HermesInternal = HermesInternal;
+          dropUndefinedKeysResult.sample_rate = "" + tmp15;
+        }
+        const description = spanToJSONResult.description;
+        const tmp18 = "url" !== tmp14[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE] && description;
+        if (tmp18) {
+          dropUndefinedKeysResult.transaction = description;
+        }
+        const tmpResult9 = _mod12552;
+        if (tmpResult9.hasTracingEnabled()) {
+          const _String = String;
+          const tmpResult10 = _mod12525;
+          dropUndefinedKeysResult.sampled = String(tmpResult10.spanIsSampled(rootSpan));
+        }
+        client.emit("createDsc", dropUndefinedKeysResult, rootSpan);
+        return dropUndefinedKeysResult;
       }
     }
-    const url = { protocol: first, publicKey: str, pass: str3, host: str4, port: str5, path: str9, projectId: first1 };
-    if (!str) {
-      str = "";
-    }
-    if (!str3) {
-      str3 = "";
-    }
-    if (!str5) {
-      str5 = "";
-    }
-    if (!str9) {
-      str9 = "";
-    }
-    return url;
   } else {
-    const obj = _mod12509;
-    obj.consoleSandbox(() => {
-      console.error("Invalid Sentry Dsn: " + closure_0);
-    });
+    return {};
   }
 }
-const re3 = /^(?:(\w+):)\/\/(?:(\w+)(?::(\w+)?)?@)([\w.-]+)(?::(\d+))?\/(.+)/;
+const _frozenDsc = "_frozenDsc";
 
-export { dsnFromString };
-export const dsnToString = function dsnToString(arg0) {
-  let host;
-  let pass;
-  let path;
-  let port;
-  let projectId;
-  let protocol;
-  let publicKey;
-  let flag = arg1;
-  if (arg1 === undefined) {
-    flag = false;
-  }
-  ({ host, path, pass, port, projectId, protocol, publicKey } = arg0);
-  let str = "";
-  if (flag) {
-    str = "";
-    if (pass) {
-      const _HermesInternal = HermesInternal;
-      str = ":" + pass;
-    }
-  }
-  let str3 = "";
-  if (port) {
-    const _HermesInternal2 = HermesInternal;
-    str3 = ":" + port;
-  }
-  let combined = path;
-  if (combined) {
-    const _HermesInternal3 = HermesInternal;
-    combined = "" + path + "/";
-  }
-  return "" + protocol + "://" + publicKey + str + "@" + host + str3 + "/" + combined + projectId;
+export const freezeDscOnSpan = function freezeDscOnSpan(arg0, arg1) {
+  const obj = _mod12526;
+  const result = obj.addNonEnumerableProperty(arg0, _frozenDsc, arg1);
 };
-export const makeDsn = function makeDsn(protocol) {
-  let port;
-  let projectId;
-  let url;
-  if (typeof protocol === "string") {
-    url = dsnFromString(protocol);
-  } else {
-    url = { protocol: protocol.protocol, publicKey: protocol.publicKey || "", pass: protocol.pass || "", host: protocol.host, port: protocol.port || "", path: protocol.path || "", projectId: protocol.projectId };
+export const getDynamicSamplingContextFromClient = function getDynamicSamplingContextFromClient(trace_id, getOptions) {
+  const options = getOptions.getOptions();
+  const publicKey = (getOptions.getDsn() || {}).publicKey;
+  getOptions.getDsn() || {};
+  let DEFAULT_ENVIRONMENT = options.environment;
+  const dropUndefinedKeys = _mod12526.dropUndefinedKeys;
+  _mod12526;
+  if (!DEFAULT_ENVIRONMENT) {
+    DEFAULT_ENVIRONMENT = _mod12557.DEFAULT_ENVIRONMENT;
   }
-  if (url) {
-    let flag = true;
-    if (url(12508).DEBUG_BUILD) {
-      ({ port, projectId, protocol } = url);
-      const items = ["protocol", "publicKey", "host", "projectId"];
-      let found = items.find((item) => {
-        let flag = !url[item];
-        if (flag) {
-          const logger = _mod12509.logger;
-          const _HermesInternal = HermesInternal;
-          logger.error("Invalid Sentry Dsn: " + item + " missing");
-          flag = true;
-        }
-        return flag;
-      });
-      if (!found) {
-        let num;
-        if (projectId.match(/^\d+$/)) {
-          let num2;
-          const tmp7 = "http" === protocol || "https" === protocol;
-          if (tmp7) {
-            let num3 = port;
-            if (num3) {
-              const _isNaN = isNaN;
-              const _parseInt = parseInt;
-              num3 = isNaN(parseInt(port, 10));
-            }
-            if (num3) {
-              const logger3 = tmp2(12509).logger;
-              const _HermesInternal3 = HermesInternal;
-              logger3.error("Invalid Sentry Dsn: Invalid port " + port);
-              num3 = 1;
-            }
-            num2 = num3;
-          } else {
-            const logger2 = tmp2(12509).logger;
-            const _HermesInternal2 = HermesInternal;
-            logger2.error("Invalid Sentry Dsn: Invalid protocol " + protocol);
-            num2 = 1;
-          }
-          num = num2;
-        } else {
-          let logger = tmp2(12509).logger;
-          let _HermesInternal = HermesInternal;
-          logger.error("Invalid Sentry Dsn: Invalid projectId " + projectId);
-          num = 1;
-        }
-        found = num;
-      }
-      flag = !found;
+  const obj = { environment: DEFAULT_ENVIRONMENT, release: options.release, public_key: publicKey, trace_id };
+  const dropUndefinedKeysResult = dropUndefinedKeys(obj);
+  getOptions.emit("createDsc", dropUndefinedKeysResult);
+  return dropUndefinedKeysResult;
+};
+export const getDynamicSamplingContextFromScope = function getDynamicSamplingContextFromScope(getOptions, getPropagationContext) {
+  const propagationContext = getPropagationContext.getPropagationContext();
+  let dsc = propagationContext.dsc;
+  if (!dsc) {
+    const traceId = propagationContext.traceId;
+    const options = getOptions.getOptions();
+    const publicKey = (getOptions.getDsn() || {}).publicKey;
+    getOptions.getDsn() || {};
+    let DEFAULT_ENVIRONMENT = options.environment;
+    const dropUndefinedKeys = _mod12526.dropUndefinedKeys;
+    _mod12526;
+    const tmp5 = require;
+    if (!DEFAULT_ENVIRONMENT) {
+      DEFAULT_ENVIRONMENT = tmp5(12557).DEFAULT_ENVIRONMENT;
     }
-    if (flag) {
-      return url;
-    }
+    const obj = { environment: DEFAULT_ENVIRONMENT, release: options.release, public_key: publicKey, trace_id: traceId };
+    const dropUndefinedKeysResult = dropUndefinedKeys(obj);
+    getOptions.emit("createDsc", dropUndefinedKeysResult);
+    dsc = dropUndefinedKeysResult;
   }
+  return dsc;
+};
+export { getDynamicSamplingContextFromSpan };
+export const spanToBaggageHeader = function spanToBaggageHeader(arg0) {
+  const tmp = getDynamicSamplingContextFromSpan(arg0);
+  const obj = BAGGAGE_HEADER_NAME;
+  return obj.dynamicSamplingContextToSentryBaggageHeader(tmp);
 };

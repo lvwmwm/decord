@@ -1,16 +1,16 @@
-// Module ID: 8924
-// Function ID: 8925
+// Module ID: 8931
+// Function ID: 8932
 // Name: FormHint
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 6972, 5220, 1202, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 6971, 5220, 1202, 2]
 
-// Module 8924 (FormHint)
+// Module 8931 (FormHint)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import RedesignCompat from "RedesignCompat" /* 6972 */;
+import RedesignCompat from "RedesignCompat" /* 6971 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

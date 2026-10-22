@@ -1,12 +1,12 @@
-// Module ID: 11542
-// Function ID: 11543
+// Module ID: 11553
+// Function ID: 11554
 // Name: canStreamWithSettings
-// Dependencies: [5800, 11543, 11544, 2]
+// Dependencies: [5800, 11554, 11555, 2]
 // Exports: default
 
-// Module 11542 (canStreamWithSettings)
-import GoLiveAutoQualityExperiment from "GoLiveAutoQualityExperiment" /* 11543 */;
-import canUseStreamSettingDefault from "canUseStreamSetting" /* 11544 */;
+// Module 11553 (canStreamWithSettings)
+import GoLiveAutoQualityExperiment from "GoLiveAutoQualityExperiment" /* 11554 */;
+import canUseStreamSettingDefault from "canUseStreamSetting" /* 11555 */;
 import StreamSettingsConstants from "StreamSettingsConstants" /* 5800 */;
 import size from "module_2" /* 2 */;
 

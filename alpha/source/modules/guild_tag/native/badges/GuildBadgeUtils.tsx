@@ -1,10 +1,10 @@
-// Module ID: 15100
-// Function ID: 15101
+// Module ID: 15113
+// Function ID: 15114
 // Name: GuildBadgeUtils
-// Dependencies: [2, 15101]
+// Dependencies: [2, 15114]
 
-// Module 15100 (GuildBadgeUtils)
-import getTransformedBadgeColors from "getTransformedBadgeColors" /* 15101 */;
+// Module 15113 (GuildBadgeUtils)
+import getTransformedBadgeColors from "getTransformedBadgeColors" /* 15114 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgeUtils.tsx");

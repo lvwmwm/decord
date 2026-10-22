@@ -1,16 +1,16 @@
-// Module ID: 12088
-// Function ID: 12089
+// Module ID: 12099
+// Function ID: 12100
 // Name: AppLauncherCommandViewHeader
-// Dependencies: [19, 17, 1504, 21, 12065, 4969, 587, 558, 576, 11969, 5038, 5238, 8599, 5655, 5220, 12089, 2]
+// Dependencies: [19, 17, 1504, 21, 12075, 4969, 587, 558, 576, 11983, 5038, 5238, 8600, 5655, 5220, 12100, 2]
 
-// Module 12088 (AppLauncherCommandViewHeader)
+// Module 12099 (AppLauncherCommandViewHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
-import useAvatarColorDefault from "useAvatarColor" /* 8599 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11969 */;
-import AppLauncherBackButton from "AppLauncherBackButton" /* 12065 */;
-import CommandDetailsOverflowMenuDefault from "CommandDetailsOverflowMenu" /* 12089 */;
+import useAvatarColorDefault from "useAvatarColor" /* 8600 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11983 */;
+import AppLauncherBackButton from "AppLauncherBackButton" /* 12075 */;
+import CommandDetailsOverflowMenuDefault from "CommandDetailsOverflowMenu" /* 12100 */;
 import react from "react" /* 19 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
 import Fragment from "Fragment" /* 21 */;
@@ -73,7 +73,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
     application = section.application;
   }
   if (cResult[0] !== application) {
-    const tmpResult = scrollOffsetY(11969);
+    const tmpResult = scrollOffsetY(11983);
     const appLauncherIconSource = tmpResult.getAppLauncherIconSource(application);
     cResult[0] = application;
     cResult[1] = appLauncherIconSource;
@@ -462,7 +462,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   let obj7 = scrollOffsetY(5238);
   let str = obj7.useToken(section(587).colors.BACKGROUND_BASE_LOW);
   let tmp10 = memo;
-  const tmp9 = section(8599);
+  const tmp9 = section(8600);
   if (typeof memo !== "number") {
     let uri;
     if (memo != null) {
@@ -496,7 +496,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   items2[1] = prop;
   const obj11 = { style: items3 };
   items3 = [tmp.headerBannerOverlay, animatedStyle2];
-  items4 = [tmp16(section(5038).View, obj11), tmp16(section(12065), { onPress: onPressBack }), , , ];
+  items4 = [tmp16(section(5038).View, obj11), tmp16(section(12075), { onPress: onPressBack }), , , ];
   const obj12 = { lineClamp: 1, animated: true, style: items5, variant: "heading-lg/bold", color: "text-overlay-light", children: displayName };
   items5 = [tmp.appSmallName, animatedStyle];
   displayName = undefined;
@@ -507,7 +507,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   items4[2] = tmp16(Text, obj12);
   const obj13 = { style: tmp.overflowMenuContainer, children: tmp16(tmp8Result, { commandId: id }) };
   id = undefined;
-  tmp8Result = section(12089);
+  tmp8Result = section(12100);
   if (command != null) {
     const rootCommand = command.rootCommand;
     if (rootCommand != null) {

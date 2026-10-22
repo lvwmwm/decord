@@ -1,9 +1,9 @@
-// Module ID: 8936
-// Function ID: 8937
+// Module ID: 8943
+// Function ID: 8944
 // Name: useLegacyTextMigrationHighlight
 // Dependencies: [5223, 4969, 587, 558, 576, 504, 2]
 
-// Module 8936 (useLegacyTextMigrationHighlight)
+// Module 8943 (useLegacyTextMigrationHighlight)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import DevSettingsStore from "DevSettingsStore" /* 5223 */;

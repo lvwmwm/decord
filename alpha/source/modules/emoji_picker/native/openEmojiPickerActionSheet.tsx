@@ -1,14 +1,14 @@
-// Module ID: 9795
-// Function ID: 9796
+// Module ID: 9802
+// Function ID: 9803
 // Name: openEmojiPickerActionSheet
-// Dependencies: [1395, 9796, 5196, 9797, 2002, 2]
+// Dependencies: [1395, 9803, 5196, 9804, 2002, 2]
 // Exports: openEmojiPickerActionSheet
 
-// Module 9795 (openEmojiPickerActionSheet)
+// Module 9802 (openEmojiPickerActionSheet)
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import emojis_EmojiActionCreators from "emojis/EmojiActionCreators" /* 9796 */;
+import emojis_EmojiActionCreators from "emojis/EmojiActionCreators" /* 9803 */;
 import size from "module_2" /* 2 */;
 
 const EmojiInteractionPoint = EmojiConstants.EmojiInteractionPoint;
@@ -20,5 +20,5 @@ export const openEmojiPickerActionSheet = function openEmojiPickerActionSheet(ar
   const obj = emojis_EmojiActionCreators;
   const result = obj.initiateEmojiInteraction(EmojiInteractionPoint.EmojiPickerActionSheetOpened);
   const obj2 = ActionSheetActionCreatorsDefault;
-  obj2.openLazy(asyncRequire(9797, dependencyMap.paths), EmojiPickerActionSheet, arg0, stack);
+  obj2.openLazy(asyncRequire(9804, dependencyMap.paths), EmojiPickerActionSheet, arg0, stack);
 };

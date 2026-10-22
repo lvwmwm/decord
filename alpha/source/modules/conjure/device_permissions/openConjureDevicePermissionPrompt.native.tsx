@@ -1,14 +1,14 @@
-// Module ID: 10769
-// Function ID: 10770
+// Module ID: 10776
+// Function ID: 10777
 // Name: openConjureDevicePermissionPrompt
-// Dependencies: [5901, 10768, 1128, 3830, 2]
+// Dependencies: [5900, 10775, 1128, 3830, 2]
 // Exports: default
 
-// Module 10769 (openConjureDevicePermissionPrompt)
+// Module 10776 (openConjureDevicePermissionPrompt)
 import intl3 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import AlertModal from "AlertModal" /* 5901 */;
-import conjureDevicePermissions from "conjureDevicePermissions" /* 10768 */;
+import AlertModal from "AlertModal" /* 5900 */;
+import conjureDevicePermissions from "conjureDevicePermissions" /* 10775 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/device_permissions/openConjureDevicePermissionPrompt.native.tsx");

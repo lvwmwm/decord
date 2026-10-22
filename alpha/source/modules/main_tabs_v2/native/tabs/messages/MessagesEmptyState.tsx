@@ -1,19 +1,19 @@
-// Module ID: 17374
-// Function ID: 17375
+// Module ID: 17396
+// Function ID: 17397
 // Name: MessagesEmptyState
-// Dependencies: [19, 17, 21, 4969, 558, 576, 1505, 1275, 9330, 8664, 16336, 17375, 1128, 5220, 5230, 2]
+// Dependencies: [19, 17, 21, 4969, 558, 576, 1505, 1275, 9337, 8671, 16359, 17397, 1128, 5220, 5230, 2]
 
-// Module 17374 (MessagesEmptyState)
+// Module 17396 (MessagesEmptyState)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
 import useNavigation from "useNavigation" /* 1505 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import components_Button_Button from "components/Button/Button" /* 5230 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8664 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9330 */;
-import useYouBarTotalHeight from "useYouBarTotalHeight" /* 16336 */;
-import ActivitiesTogetherSpotIllustration from "ActivitiesTogetherSpotIllustration" /* 17375 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8671 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 9337 */;
+import useYouBarTotalHeight from "useYouBarTotalHeight" /* 16359 */;
+import ActivitiesTogetherSpotIllustration from "ActivitiesTogetherSpotIllustration" /* 17397 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

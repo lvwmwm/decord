@@ -1,10 +1,10 @@
-// Module ID: 13154
-// Function ID: 13155
+// Module ID: 13170
+// Function ID: 13171
 // Name: SearchTokensUtils
 // Dependencies: [5594, 2]
 // Exports: makeRegexForOptionsWithNegation, validateForMapWithNegation
 
-// Module 13154 (SearchTokensUtils)
+// Module 13170 (SearchTokensUtils)
 import RegexUtilsDefault from "RegexUtils" /* 5594 */;
 import size from "module_2" /* 2 */;
 

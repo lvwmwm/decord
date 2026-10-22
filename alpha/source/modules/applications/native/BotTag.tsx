@@ -1,16 +1,16 @@
-// Module ID: 9103
-// Function ID: 9104
+// Module ID: 9110
+// Function ID: 9111
 // Name: BotTag
-// Dependencies: [19, 17, 1375, 21, 4969, 587, 1128, 558, 576, 9104, 5220, 2]
+// Dependencies: [19, 17, 1375, 21, 4969, 587, 1128, 558, 576, 9111, 5220, 2]
 
-// Module 9103 (BotTag)
+// Module 9110 (BotTag)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import ApplicationConstants from "ApplicationConstants" /* 1375 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import CheckmarkSmallBoldIcon2 from "CheckmarkSmallBoldIcon" /* 9104 */;
+import CheckmarkSmallBoldIcon2 from "CheckmarkSmallBoldIcon" /* 9111 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -94,7 +94,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotTag(arg0)
     }
     if (cResult[2] !== str2) {
       const obj2 = { size: str2, color: nativeDefault.colors.WHITE };
-      const CheckmarkSmallBoldIcon = tmp(9104).CheckmarkSmallBoldIcon;
+      const CheckmarkSmallBoldIcon = tmp(9111).CheckmarkSmallBoldIcon;
       const tmp16 = hasOwnProperty(CheckmarkSmallBoldIcon, obj2);
       cResult[2] = str2;
       cResult[3] = tmp16;

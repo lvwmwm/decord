@@ -1,20 +1,20 @@
-// Module ID: 11459
-// Function ID: 11460
+// Module ID: 11470
+// Function ID: 11471
 // Name: ChannelCallNavigator
-// Dependencies: [5, 32, 19, 17, 11460, 10848, 1087, 10715, 21, 4969, 558, 576, 1499, 10853, 5038, 11461, 10846, 10851, 6648, 6658, 10719, 2002, 1123, 11507, 10860, 5132, 11519, 1384, 5023, 7081, 5162, 2]
+// Dependencies: [5, 32, 19, 17, 11471, 10856, 1087, 10722, 21, 4969, 558, 576, 1499, 10861, 5038, 11472, 10854, 10859, 6647, 6657, 10726, 2002, 1123, 11518, 10868, 5132, 11530, 1384, 5023, 7080, 5162, 2]
 
-// Module 11459 (ChannelCallNavigator)
+// Module 11470 (ChannelCallNavigator)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import reactDefault from "react" /* 5162 */;
-import Constants2 from "Constants" /* 10715 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10848 */;
-import VoiceChatModalContext from "VoiceChatModalContext" /* 10853 */;
+import Constants2 from "Constants" /* 10722 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10856 */;
+import VoiceChatModalContext from "VoiceChatModalContext" /* 10861 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 11460 */;
+import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 11471 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -40,7 +40,7 @@ function MainCallScreen(channel) {
   let isConnectedToVoiceChannel;
   let tmp3 = dependencyMap;
   let tmp = closure_14();
-  let obj = isConnectedToVoiceChannel(10851);
+  let obj = isConnectedToVoiceChannel(10859);
   isConnectedToVoiceChannel = obj.useIsConnectedToVoiceChannel(channel);
   const id = react.useId();
   const items = [isConnectedToVoiceChannel, id];
@@ -55,7 +55,7 @@ function MainCallScreen(channel) {
       const safeAreaDisableLock = state.requestSafeAreaDisableLock(obj);
     };
   }, items);
-  let obj2 = isConnectedToVoiceChannel(6648);
+  let obj2 = isConnectedToVoiceChannel(6647);
   const isChannelContentGated = obj2.useIsChannelContentGated(channel);
   const effect1 = react.useEffect(() => {
     function dismissOAuthModal() {
@@ -144,11 +144,11 @@ function MainCallScreen(channel) {
       }
     };
   }, []);
-  isConnectedToVoiceChannel(11507);
+  isConnectedToVoiceChannel(11518);
   if (isChannelContentGated) {
-    let obj3 = { onReturnToSafety: id(6658).pop, guildId: null, channelId: null };
+    let obj3 = { onReturnToSafety: id(6657).pop, guildId: null, channelId: null };
     ({ guild_id: obj6.guildId, id: obj6.channelId } = channel);
-    const tmp20 = id(10860);
+    const tmp20 = id(10868);
     tmp14Result2 = closure_12(tmp20, obj3);
     tmp11 = closure_12;
   } else {
@@ -165,13 +165,13 @@ function MainCallScreen(channel) {
     if (channel.isGuildStageVoice()) {
       let tmp17 = id;
       const obj7 = { channel };
-      tmp14Result = tmp14(id(11461), obj7);
+      tmp14Result = tmp14(id(11472), obj7);
     }
     tmp14Result2 = tmp14(tmp15, obj5);
     tmp11 = tmp14;
   }
   const tmp21 = id(5132)();
-  const tmp22 = id(11519);
+  const tmp22 = id(11530);
   const tmp2Result = isConnectedToVoiceChannel(1384);
   const tmp23 = tmp2Result.isAndroid() || !isConnectedToVoiceChannel;
   const obj8 = { forceHide: tmp23, showWhenParticipantOnScreen: !isConnectedToVoiceChannel, children: tmp11(isConnectedToVoiceChannel(5023).ThemeContextProvider, { gradient: tmp21, children: tmp14Result2 }) };
@@ -321,7 +321,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function CallWi
       let tmp18 = null;
       if (channel.isGuildStageVoice()) {
         const obj5 = { channel };
-        tmp18 = closure_12(tmp5(11461), obj5);
+        tmp18 = closure_12(tmp5(11472), obj5);
       }
       cResult[5] = channel;
       cResult[6] = tmp18;
@@ -383,7 +383,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function CallWi
         let tmp29 = null;
         if (tmp13) {
           const obj9 = { channel };
-          tmp29 = closure_12(tmp5(10846), obj9);
+          tmp29 = closure_12(tmp5(10854), obj9);
         }
         cResult[13] = channel;
         cResult[14] = tmp13;
@@ -512,7 +512,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function CallWi
   let tmp17 = null;
   if (channel.isGuildStageVoice()) {
     const obj6 = { channel };
-    tmp17 = closure_12(tmp2(11461), obj6);
+    tmp17 = closure_12(tmp2(11472), obj6);
   }
   items1 = [tmp17, ];
   const obj7 = { pointerEvents: "box-none", style: items2 };
@@ -523,7 +523,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function CallWi
   tmp19Result = null;
   if (first) {
     const obj9 = { channel };
-    tmp19Result = tmp19(tmp2(10846), obj9);
+    tmp19Result = tmp19(tmp2(10854), obj9);
   }
   items3[1] = closure_12(closure_6, obj8);
   return closure_13(View, obj4);
@@ -563,7 +563,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCal
   }
   if (cResult[2] !== tmp6) {
     const obj4 = { screens: tmp6, initialRouteName: MAIN_CALL_SCREEN };
-    const tmp9 = closure_12(tmp(7081).Navigator, obj4);
+    const tmp9 = closure_12(tmp(7080).Navigator, obj4);
     cResult[2] = tmp6;
     cResult[3] = tmp9;
     tmp7 = tmp9;
@@ -593,7 +593,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCal
   if (guild_id == null) {
     guild_id = null;
   }
-  let obj = { value: guild_id, children: closure_12(channel(7081).Navigator, obj2) };
+  let obj = { value: guild_id, children: closure_12(channel(7080).Navigator, obj2) };
   obj2 = { screens: { [tmp.MAIN_CALL_SCREEN]: obj3 }, initialRouteName: MAIN_CALL_SCREEN };
   obj3 = {
     headerShown: false,

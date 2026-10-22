@@ -13,12 +13,12 @@ import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let dataBinding, importDefault, tmp3, tmp5;
+let dataBinding, dependencyMap, tmp3, tmp5;
 
 let tmp;
 const RiveErrorBoundary2 = tmp(5086);
+let closure_2 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
 let closure_3 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
-let closure_4 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
 const jsx = Fragment.jsx;
 const artboardProperties = { "Icon Camera": { reducedMotion: "boolean", fill: "color", on: "boolean" }, "Animation Main": {} };
 const artboardViewModelInstances = { "Icon Camera": ["CamOff", "CamOn"], "Animation Main": [] };
@@ -89,7 +89,7 @@ let obj = {
   })
 };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function CameraRiveInner(arg0) {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function CameraRiveInner(arg0) {
   let _require;
   let artboard;
   let defaultViewModelInstance;
@@ -103,19 +103,18 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Camera
   let tmp7;
   let tmp8;
   let tmp9;
-  let tmp2 = str;
+  let tmp2 = dependencyMap;
   obj = require("react");
   const cResult = obj.c(19);
-  const tmp = _require;
   if (cResult[0] !== arg0) {
     ({ ref, fallback, artboard, stateMachine, defaultViewModelInstance, dataBinding, onDataBindingChange } = arg0);
-    const tmp13 = _objectWithoutProperties(arg0, closure_3);
+    const tmp13 = _objectWithoutProperties(arg0, str);
     _require = dataBinding;
-    importDefault = onDataBindingChange;
+    dependencyMap = onDataBindingChange;
     cResult[0] = arg0;
     class E {
       constructor(arg0) {
-        tmp = closure_10[closure_2];
+        tmp = closure_9[closure_2];
         tmp2 = null;
         if (null != tmp) {
           tmp3 = arg0;
@@ -146,7 +145,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Camera
     tmp6 = ref;
   } else {
     _require = cResult[1];
-    importDefault = cResult[2];
+    dependencyMap = cResult[2];
     tmp6 = cResult[3];
     tmp7 = cResult[4];
     tmp8 = cResult[5];
@@ -182,10 +181,10 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Camera
           }
         }
       }
-      const BaseRive = tmp(tmp2[4]).BaseRive;
+      const BaseRive = tmp(5032).BaseRive;
       class E {
         constructor(arg0) {
-          tmp = closure_10[closure_2];
+          tmp = closure_9[closure_2];
           tmp2 = null;
           if (null != tmp) {
             tmp3 = arg0;
@@ -203,20 +202,20 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Camera
         }
       }
       let merged = Object.assign(tmp7);
-      const tmp23 = <BaseRive ref={tmp6} src={require("module_5094")} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={str2} stateMachine={null} renderDataBinding={tmp14} />;
+      const tmp22 = <BaseRive ref={tmp6} src={require("AssetRegistry")} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={str2} stateMachine={tmp8} renderDataBinding={null} />;
       cResult[12] = str;
       cResult[13] = str2;
       cResult[14] = tmp6;
       cResult[15] = tmp14;
       cResult[16] = tmp7;
       cResult[17] = tmp8;
-      cResult[18] = tmp23;
-      tmp15 = tmp23;
+      cResult[18] = tmp22;
+      tmp15 = tmp22;
     }
   }
   class E {
     constructor(arg0) {
-      tmp = closure_10[closure_2];
+      tmp = closure_9[closure_2];
       tmp2 = null;
       if (null != tmp) {
         tmp3 = arg0;
@@ -256,7 +255,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Camera
   dataBinding = ref.dataBinding;
   const onDataBindingChange = ref.onDataBindingChange;
   const items = [str, dataBinding, onDataBindingChange];
-  const tmp = _objectWithoutProperties(ref, closure_4);
+  const tmp = _objectWithoutProperties(ref, closure_3);
   const callback = react.useCallback((arg0) => {
     let tmp2 = null;
     if (null != obj[str]) {
@@ -265,9 +264,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Camera
     }
     return tmp2;
   }, items);
-  const BaseRive = str(onDataBindingChange[4]).BaseRive;
+  const BaseRive = str(dataBinding[4]).BaseRive;
   let merged = Object.assign(tmp);
-  return <BaseRive ref={ref} src={dataBinding(onDataBindingChange[6])} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={str2} stateMachine={stateMachine} renderDataBinding={callback} />;
+  return <BaseRive ref={ref} src={str(dataBinding[6])} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={str2} stateMachine={stateMachine} renderDataBinding={callback} />;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CameraRiveWithBoundary(fallback) {
@@ -276,7 +275,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CameraRiveWi
   const cResult = obj.c(5);
   if (cResult[0] !== fallback) {
     const merged = Object.assign(fallback);
-    const tmp10 = <closure_11 />;
+    const tmp10 = <closure_10 />;
     cResult[0] = fallback;
     cResult[1] = tmp10;
     tmp4 = tmp10;

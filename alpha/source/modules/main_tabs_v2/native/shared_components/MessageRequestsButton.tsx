@@ -1,21 +1,21 @@
-// Module ID: 17352
-// Function ID: 17353
+// Module ID: 17374
+// Function ID: 17375
 // Name: MessageRequestsButton
-// Dependencies: [109, 19, 17, 6771, 6772, 21, 4969, 558, 576, 504, 17353, 5230, 1128, 7943, 13940, 9089, 2]
+// Dependencies: [109, 19, 17, 6770, 6771, 21, 4969, 558, 576, 504, 17375, 5230, 1128, 7944, 13954, 9096, 2]
 
-// Module 17352 (MessageRequestsButton)
+// Module 17374 (MessageRequestsButton)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import components_Button_Button from "components/Button/Button" /* 5230 */;
-import IconButton2 from "IconButton" /* 7943 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9089 */;
-import IconActionButtonDefault from "IconActionButton" /* 13940 */;
+import IconButton2 from "IconButton" /* 7944 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9096 */;
+import IconActionButtonDefault from "IconActionButton" /* 13954 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import MessageRequestStore from "MessageRequestStore" /* 6771 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6772 */;
+import MessageRequestStore from "MessageRequestStore" /* 6770 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6771 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -24,7 +24,7 @@ import size from "module_2" /* 2 */;
 let c10;
 let c9;
 let tmp;
-const _mod17353 = tmp(17353);
+const _mod17375 = tmp(17375);
 let closure_3 = ["alternateVariant"];
 const View = react_native.View;
 ({ jsx: c9, jsxs: c10 } = Fragment);
@@ -129,7 +129,7 @@ const IconComponent = ReactCompilerGating.isReactCompilerEnabled() ? (function M
   const effect = obj2.useEffect(tmp5, tmp6);
   if (cResult[3] !== color) {
     const obj3 = { ref, color, size: "sm", autoPlay: true };
-    const tmp10 = React4(_mod17353.MessageRequestLottie, obj3);
+    const tmp10 = React4(_mod17375.MessageRequestLottie, obj3);
     cResult[3] = color;
     cResult[4] = tmp10;
     tmp8 = tmp10;
@@ -152,7 +152,7 @@ const IconComponent = ReactCompilerGating.isReactCompilerEnabled() ? (function M
       }
     }
   }, items);
-  return React4(_mod17353.MessageRequestLottie, { ref, color, size: "sm", autoPlay: true });
+  return React4(_mod17375.MessageRequestLottie, { ref, color, size: "sm", autoPlay: true });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRequestsButton(alternateVariant) {
@@ -204,7 +204,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
         tmp29 = cResult[7];
       }
       if (cResult[8] !== tmp11.requestCount) {
-        const tmp43 = str > 0 && React4(tmp(13940).ButtonBadge, { badgePosition: "right" });
+        const tmp43 = str > 0 && React4(tmp(13954).ButtonBadge, { badgePosition: "right" });
         cResult[8] = tmp11.requestCount;
         cResult[9] = tmp43;
         tmp42 = tmp43;
@@ -237,7 +237,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
       tmp36 = React4(Button, obj3);
     } else {
       const obj4 = { variant: "secondary", size: "sm", icon: React4(IconComponent, {}), accessibilityLabel: intl2.string(intl4.t.e7GWjQ) };
-      const IconButton = tmp(7943).IconButton;
+      const IconButton = tmp(7944).IconButton;
       intl2 = tmp(1128).intl;
       const merged1 = Object.assign(tmp4);
       tmp36 = React4(IconButton, obj4);
@@ -334,8 +334,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
       const merged2 = Object.assign(merged);
       tmp24 = React4(IconButton, obj4);
     }
-    items = [tmp24, tmp3.requestCount > 0 && tmp27(tmp26(13940).ButtonBadge, { badgePosition: "right" })];
-    tmp3.requestCount > 0 && tmp27(tmp26(13940).ButtonBadge, { badgePosition: "right" });
+    items = [tmp24, tmp3.requestCount > 0 && tmp27(tmp26(13954).ButtonBadge, { badgePosition: "right" })];
+    tmp3.requestCount > 0 && tmp27(tmp26(13954).ButtonBadge, { badgePosition: "right" });
     return tmp15(tmp16, obj2);
   } else {
     const obj = { source: AssetRegistryDefault, IconComponent, accessibilityLabel: intl.string(intl4.t.e7GWjQ), buttonText: str2, badge: tmp3.requestCount > 0, badgePosition: "right" };

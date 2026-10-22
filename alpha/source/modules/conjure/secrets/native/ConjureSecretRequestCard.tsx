@@ -1,15 +1,15 @@
-// Module ID: 12420
-// Function ID: 12421
+// Module ID: 12430
+// Function ID: 12431
 // Name: ConjureSecretRequestCard
-// Dependencies: [19, 17, 4970, 21, 4969, 587, 558, 576, 5196, 12421, 7037, 12252, 504, 5038, 5233, 5234, 5220, 1128, 3830, 11759, 12209, 7251, 12320, 11758, 5230, 2]
+// Dependencies: [19, 17, 4970, 21, 4969, 587, 558, 576, 5196, 12431, 7036, 12263, 504, 5038, 5233, 5234, 5220, 1128, 3830, 11770, 12220, 7252, 12331, 11769, 11775, 5230, 2]
 
-// Module 12420 (ConjureSecretRequestCard)
+// Module 12430 (ConjureSecretRequestCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5196 */;
 import spring from "spring" /* 5233 */;
 import springPresets from "springPresets" /* 5234 */;
-import ConjureSecretsSheet from "ConjureSecretsSheet" /* 12421 */;
+import ConjureSecretsSheet from "ConjureSecretsSheet" /* 12431 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
 import Fragment from "Fragment" /* 21 */;
@@ -351,14 +351,14 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSec
       if ("" !== request.note) {
         note = request.note;
       }
-      const obj24 = { variant: "text-sm/normal", color: "text-default", children: note };
+      const obj24 = { text: note, variant: "text-sm/normal", color: "text-default" };
       items8[2] = closure_6(tmp17, obj24);
       const obj25 = { label: intl3.string(request(secretRequestStatusChanged[18]).HCQvpO), size: "xs", items: memo };
       const TagGroup = tmp4(tmp5[20]).TagGroup;
       intl3 = tmp4(tmp5[17]).intl;
       items8[3] = closure_6(TagGroup, obj25);
       const obj26 = { variant: "primary", size: "sm", onPress: callback, text: intl4.string(request(secretRequestStatusChanged[18]).EK8tKY) };
-      const Button = tmp4(tmp5[24]).Button;
+      const Button = tmp4(tmp5[25]).Button;
       intl4 = tmp4(tmp5[17]).intl;
       items8[4] = closure_6(Button, obj26);
       obj22.children = items8;

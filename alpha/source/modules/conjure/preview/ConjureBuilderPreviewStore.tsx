@@ -1,13 +1,13 @@
-// Module ID: 15651
-// Function ID: 15652
+// Module ID: 15664
+// Function ID: 15665
 // Name: ConjureBuilderPreviewStore
-// Dependencies: [6761, 2026, 504, 584, 2]
+// Dependencies: [6760, 2026, 504, 584, 2]
 
-// Module 15651 (ConjureBuilderPreviewStore)
+// Module 15664 (ConjureBuilderPreviewStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 2026 */;
-import FramesStore from "FramesStore" /* 6761 */;
+import FramesStore from "FramesStore" /* 6760 */;
 import size from "module_2" /* 2 */;
 
 const OrientationLockState = Constants.OrientationLockState;

@@ -1,9 +1,9 @@
-// Module ID: 11656
-// Function ID: 11657
+// Module ID: 11667
+// Function ID: 11668
 // Name: CallTile
-// Dependencies: [19, 17, 6628, 1392, 10847, 5618, 21, 4969, 4966, 587, 558, 576, 7237, 1633, 504, 5696, 8641, 11366, 11628, 11386, 11398, 11657, 11662, 11663, 11664, 11665, 11666, 1202, 11314, 5038, 5192, 11667, 2]
+// Dependencies: [19, 17, 6627, 1392, 10855, 5618, 21, 4969, 4966, 587, 558, 576, 7238, 1633, 504, 5696, 8648, 11377, 11639, 11397, 11409, 11668, 11673, 11674, 11675, 11676, 11677, 1202, 11323, 5038, 5192, 11678, 2]
 
-// Module 11656 (CallTile)
+// Module 11667 (CallTile)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
@@ -11,19 +11,19 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 5038 */;
 import timing from "timing" /* 5192 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5696 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8641 */;
-import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 11657 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11662 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11663 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11664 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11665 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 11666 */;
-import ParticipantTitleDefault from "ParticipantTitle" /* 11667 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8648 */;
+import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 11668 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11673 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11674 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11675 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 11676 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 11677 */;
+import ParticipantTitleDefault from "ParticipantTitle" /* 11678 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6628 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6627 */;
 import UserStore from "UserStore" /* 1392 */;
-import ChannelCallStore from "ChannelCallStore" /* 10847 */;
+import ChannelCallStore from "ChannelCallStore" /* 10855 */;
 import CallConstants from "CallConstants" /* 5618 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -672,7 +672,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function TileOverlay
   const tmp4 = closure_16();
   ({ bottom, left, top, right } = useSafeAreaInsetsDefault());
   useSafeAreaInsetsDefault();
-  reveal = react.useContext(reveal(11314).RevealContext).reveal;
+  reveal = react.useContext(reveal(11323).RevealContext).reveal;
   let obj2 = reveal(5038);
   const fn = function l() {
     let obj2;
@@ -843,7 +843,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function TileOverlay
   ({ bottom, left, top, right } = useSafeAreaInsetsDefault());
   useSafeAreaInsetsDefault();
   const tmp5 = reveal;
-  reveal = react.useContext(reveal(11314).RevealContext).reveal;
+  reveal = react.useContext(reveal(11323).RevealContext).reveal;
   let obj = reveal(5038);
   class A {
     constructor() {
@@ -893,7 +893,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function TileOverlay
   items1 = [isActiveStream, ];
   const obj5 = { style: tmp.usernamePosition, children: closure_15(closure_5, obj6) };
   obj6 = { style: tmp.usernameContainer, children: items2 };
-  items2 = [closure_13(closure_18, { participant }), closure_13(tmp2(11667), { channel, participant })];
+  items2 = [closure_13(closure_18, { participant }), closure_13(tmp2(11678), { channel, participant })];
   items1[1] = closure_13(closure_5, obj5);
   return closure_15(View, obj3);
 });

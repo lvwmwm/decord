@@ -1,16 +1,16 @@
-// Module ID: 17436
-// Function ID: 17437
+// Module ID: 17458
+// Function ID: 17459
 // Name: FavoritesGuildCategorySettingsModal
-// Dependencies: [32, 19, 17, 4824, 4834, 21, 4969, 587, 558, 576, 1505, 504, 4846, 10809, 9669, 1128, 5895, 1202, 6994, 5675, 6973, 6889, 5964, 9999, 10000, 2]
+// Dependencies: [32, 19, 17, 4824, 4834, 21, 4969, 587, 558, 576, 1505, 504, 4846, 10817, 9676, 1128, 5894, 1202, 6993, 5675, 6972, 6888, 5963, 10006, 10007, 2]
 
-// Module 17436 (FavoritesGuildCategorySettingsModal)
+// Module 17458 (FavoritesGuildCategorySettingsModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import FavoritesConstants from "FavoritesConstants" /* 4834 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5895 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10809 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5894 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10817 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import FavoriteStore_mod from "FavoriteStore" /* 4824 */;
@@ -333,7 +333,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
   const cResult = obj.c(4);
   categoryId = categoryId.categoryId;
   const tmp4 = onGoBack;
-  onGoBack = onGoBack(9999)().onGoBack;
+  onGoBack = onGoBack(10006)().onGoBack;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
     const stringResult = intl.string(categoryId(1128).t["/uELTj"]);
@@ -357,7 +357,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
       return metroImportAll(closure_11, obj);
     }
   };
-  const tmp8 = closure_8(tmp4(10000), obj2);
+  const tmp8 = closure_8(tmp4(10007), obj2);
   cResult[1] = categoryId;
   cResult[2] = onGoBack;
   cResult[3] = tmp8;
@@ -366,7 +366,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
   let intl;
   categoryId = categoryId.categoryId;
   let onGoBack;
-  onGoBack = onGoBack(9999)().onGoBack;
+  onGoBack = onGoBack(10006)().onGoBack;
   let obj = {
     screenKey: "favoritesGuildCategorySettings",
     title: intl.string(categoryId(1128).t["/uELTj"]),
@@ -375,7 +375,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
       return metroImportAll(closure_11, obj);
     }
   };
-  const tmp = onGoBack(10000);
+  const tmp = onGoBack(10007);
   intl = categoryId(1128).intl;
   return closure_8(tmp, obj);
 });

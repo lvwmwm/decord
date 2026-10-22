@@ -1,9 +1,9 @@
-// Module ID: 19223
-// Function ID: 19224
+// Module ID: 19246
+// Function ID: 19247
 // Name: SelectInviteRolesActionSheet
-// Dependencies: [32, 19, 21, 4969, 558, 576, 10594, 7130, 5196, 12, 8919, 12704, 5220, 1128, 6894, 7232, 7136, 7282, 2]
+// Dependencies: [32, 19, 21, 4969, 558, 576, 10601, 7129, 5196, 12, 8926, 12723, 5220, 1128, 6893, 7233, 7135, 7283, 2]
 
-// Module 19223 (SelectInviteRolesActionSheet)
+// Module 19246 (SelectInviteRolesActionSheet)
 import _mod12 from "module_12" /* 12 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -78,8 +78,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectInvite
       tmp13 = cResult[9];
     }
     [first, closure_5] = first.useState(tmp13);
-    onSave(10594)();
-    onSave(7130)();
+    onSave(10601)();
+    onSave(7129)();
     const _Symbol2 = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
       class C {

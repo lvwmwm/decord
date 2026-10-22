@@ -1,11 +1,11 @@
-// Module ID: 15379
-// Function ID: 15380
+// Module ID: 15392
+// Function ID: 15393
 // Name: awaitExperiments
-// Dependencies: [9622, 2]
+// Dependencies: [9629, 2]
 // Exports: beginLoadedExperimentsTimeout, getPromise, onExperimentsLoaded
 
-// Module 15379 (awaitExperiments)
-import Future from "Future" /* 9622 */;
+// Module 15392 (awaitExperiments)
+import Future from "Future" /* 9629 */;
 import size from "module_2" /* 2 */;
 
 let c1;

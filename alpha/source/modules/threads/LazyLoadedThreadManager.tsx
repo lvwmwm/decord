@@ -1,12 +1,12 @@
-// Module ID: 7394
-// Function ID: 7395
+// Module ID: 7395
+// Function ID: 7396
 // Name: LazyLoadedThreadManager
-// Dependencies: [6482, 4825, 4821, 4872, 1087, 4828, 584, 7307, 5000, 5013, 1297, 2]
+// Dependencies: [6481, 4825, 4821, 4872, 1087, 4828, 584, 7308, 5000, 5013, 1297, 2]
 
-// Module 7394 (LazyLoadedThreadManager)
+// Module 7395 (LazyLoadedThreadManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ChannelConstants from "ChannelConstants" /* 4828 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6482 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6481 */;
 import ChannelRecord from "ChannelRecord" /* 4825 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
@@ -20,7 +20,7 @@ let c9;
 let closure_4;
 let hasOwnProperty;
 let metroImportAll;
-const f97953 = () => {
+const f98051 = () => {
   closure_11 = {};
   channelId = channelId.getChannelId();
   const tmp2 = null != channelId && null == channel.getChannel(channelId);
@@ -33,7 +33,7 @@ function initialize() {
   if (!tmp) {
     c12 = true;
     const obj = DispatcherDefault;
-    const subscription = obj.subscribe("CONNECTION_OPEN", f97953);
+    const subscription = obj.subscribe("CONNECTION_OPEN", f98051);
   }
 }
 function dispatchLoadedThread(nextResult, arg1) {
@@ -64,7 +64,7 @@ function loadThread(channelId) {
       c12 = true;
       let tmp2 = importDefault;
       let obj = DispatcherDefault;
-      const subscription = obj.subscribe("CONNECTION_OPEN", f97953);
+      const subscription = obj.subscribe("CONNECTION_OPEN", f98051);
     }
     if (GatewayConnectionStore.isConnected()) {
       if (null != closure_11[channelId]) {
@@ -109,7 +109,7 @@ function loadThread(channelId) {
         const catchPromise = nextPromise.catch(() => {
           let guildId;
           closure_11[id] = { type: "NOT_FOUND" };
-          const obj = { id, guild_id: guildId, parent_id: "r" };
+          const obj = { id, guild_id: guildId, parent_id: "Array" };
           guildId = undefined;
           const dispatch = DispatcherDefault.dispatch;
           DispatcherDefault;
@@ -159,7 +159,7 @@ let obj = {
       let nextResult = iter.next();
       while (iter !== undefined) {
         let tmp10 = nextResult;
-        if (nextResult !== items1(7307).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+        if (nextResult !== items1(7308).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
           if (!isStaticChannelRoute(tmp10)) {
             if (null == ChannelStore.getChannel(tmp10)) {
               let tmp19 = closure_11[tmp10];

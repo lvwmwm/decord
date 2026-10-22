@@ -1,18 +1,18 @@
-// Module ID: 9392
-// Function ID: 9393
+// Module ID: 9399
+// Function ID: 9400
 // Name: CollectiblesBadges
-// Dependencies: [19, 17, 1394, 21, 4969, 587, 558, 576, 1128, 5220, 9393, 8551, 9394, 2]
+// Dependencies: [19, 17, 1394, 21, 4969, 587, 558, 576, 1128, 5220, 9400, 8552, 9401, 2]
 
-// Module 9392 (CollectiblesBadges)
+// Module 9399 (CollectiblesBadges)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import LockIcon3 from "LockIcon" /* 8551 */;
-import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 9393 */;
-import NitroWheelIcon3 from "NitroWheelIcon" /* 9394 */;
+import LockIcon3 from "LockIcon" /* 8552 */;
+import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 9400 */;
+import NitroWheelIcon3 from "NitroWheelIcon" /* 9401 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -139,7 +139,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function LockBadge(ar
     items = [tmp5.newLockIconBadge, style];
     const obj3 = { size: "xxs", color: nativeDefault.colors.WHITE };
     const tmp13 = PremiumFeaturesBackgroundDefault;
-    const LockIcon2 = tmp(8551).LockIcon;
+    const LockIcon2 = tmp(8552).LockIcon;
     items1 = [hasOwnProperty(LockIcon2, obj3), ];
     const obj4 = { variant: "text-xs/bold", color: "text-overlay-light", style: tmp5.badgeTextUppercase, children: intl.string(intl2.t.y2b7CA) };
     const Text = tmp(5220).Text;
@@ -150,7 +150,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function LockBadge(ar
     const obj5 = { style: items2, children: hasOwnProperty(LockIcon, obj6) };
     items2 = [tmp5.lockIconBadge, style];
     obj6 = { size: "sm", color: nativeDefault.colors.WHITE };
-    LockIcon = tmp(8551).LockIcon;
+    LockIcon = tmp(8552).LockIcon;
     tmp10 = hasOwnProperty(View, obj5);
   }
   cResult[0] = undefined !== isNew && isNew;
@@ -228,7 +228,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumBadge
     items = [tmp5.newLockIconBadge, style];
     const obj3 = { size: "xxs", color: nativeDefault.colors.WHITE };
     const tmp13 = PremiumFeaturesBackgroundDefault;
-    const NitroWheelIcon2 = tmp(9394).NitroWheelIcon;
+    const NitroWheelIcon2 = tmp(9401).NitroWheelIcon;
     items1 = [hasOwnProperty(NitroWheelIcon2, obj3), ];
     const obj4 = { variant: "text-xs/bold", color: "text-overlay-light", style: tmp5.badgeTextUppercase, children: intl.string(intl2.t.y2b7CA) };
     const Text = tmp(5220).Text;
@@ -239,7 +239,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumBadge
     const obj5 = { style: items2, children: hasOwnProperty(NitroWheelIcon, obj6) };
     items2 = [tmp5.lockIconBadge, style];
     obj6 = { size: "sm", color: nativeDefault.colors.WHITE };
-    NitroWheelIcon = tmp(9394).NitroWheelIcon;
+    NitroWheelIcon = tmp(9401).NitroWheelIcon;
     tmp10 = hasOwnProperty(View, obj5);
   }
   cResult[0] = undefined !== isNew && isNew;

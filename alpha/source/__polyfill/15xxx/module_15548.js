@@ -1,16 +1,18 @@
 // Module ID: 15548
 // Function ID: 15549
-// Dependencies: [15512, 15486]
+// Dependencies: [15549]
 
 // Module 15548
-import _mod15486 from "module_15486" /* 15486 */;
-import module_15512 from "module_15512" /* 15512 */;
+import _mod15549 from "module_15549" /* 15549 */;
 
-let _moduleResult = module_15512(_mod15486.WeakMap);
-if (_moduleResult) {
-  const _String = String;
-  const obj = /native code/;
-  _moduleResult = obj.test(String(_mod15486.WeakMap));
-}
 
-export default _moduleResult;
+export default (arg0) => {
+  let num = 0;
+  {
+    num = 0;
+    if (0 !== +arg0) {
+      num = _mod15549(tmp);
+    }
+  }
+  return num;
+};

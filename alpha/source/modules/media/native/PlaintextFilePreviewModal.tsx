@@ -1,9 +1,9 @@
-// Module ID: 11245
-// Function ID: 11246
+// Module ID: 11254
+// Function ID: 11255
 // Name: PlaintextFilePreviewModal
-// Dependencies: [109, 32, 19, 17, 1098, 21, 4969, 587, 6658, 11244, 8595, 11246, 5646, 558, 576, 11248, 5220, 1128, 6866, 7216, 6910, 9731, 7469, 9613, 11113, 2]
+// Dependencies: [109, 32, 19, 17, 1098, 21, 4969, 587, 6657, 11253, 8596, 11255, 5646, 558, 576, 11257, 5220, 1128, 6865, 7215, 6909, 9738, 7470, 9620, 11122, 2]
 
-// Module 11245 (PlaintextFilePreviewModal)
+// Module 11254 (PlaintextFilePreviewModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,14 +11,14 @@ import Constants from "Constants" /* 1098 */;
 import intl3 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import LinkingDefault from "Linking" /* 5646 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6658 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6866 */;
-import NavigatorHeader from "NavigatorHeader" /* 6910 */;
-import SuspiciousDownloadUtils from "SuspiciousDownloadUtils" /* 8595 */;
-import ContextMenu from "ContextMenu" /* 9731 */;
-import openPlaintextFilePreview from "openPlaintextFilePreview" /* 11244 */;
-import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 11246 */;
-import useDownloadedFile from "useDownloadedFile" /* 11248 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6657 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6865 */;
+import NavigatorHeader from "NavigatorHeader" /* 6909 */;
+import SuspiciousDownloadUtils from "SuspiciousDownloadUtils" /* 8596 */;
+import ContextMenu from "ContextMenu" /* 9738 */;
+import openPlaintextFilePreview from "openPlaintextFilePreview" /* 11253 */;
+import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 11255 */;
+import useDownloadedFile from "useDownloadedFile" /* 11257 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -394,7 +394,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlaintextFil
     intl = intl3.intl;
     CheckmarkSmallIcon = undefined;
     if (first) {
-      CheckmarkSmallIcon = tmp(7216).CheckmarkSmallIcon;
+      CheckmarkSmallIcon = tmp(7215).CheckmarkSmallIcon;
     }
     items = [obj, ];
     let obj2 = {
@@ -447,7 +447,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlaintextFil
     obj3 = NavigatorHeader;
     return obj;
   }, items1);
-  return jsx(url(11113).Modal, { screens: memo1, initialRouteName: constants.PREVIEW });
+  return jsx(url(11122).Modal, { screens: memo1, initialRouteName: constants.PREVIEW });
 });
 const result = size.fileFinishedImporting("modules/media/native/PlaintextFilePreviewModal.tsx");
 

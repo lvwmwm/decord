@@ -1,18 +1,18 @@
-// Module ID: 7596
-// Function ID: 7597
+// Module ID: 7597
+// Function ID: 7598
 // Name: ConnectionsHooks
-// Dependencies: [32, 19, 6486, 1392, 1087, 7597, 1104, 558, 576, 504, 7599, 12, 6488, 2]
+// Dependencies: [32, 19, 6485, 1392, 1087, 7598, 1104, 558, 576, 504, 7600, 12, 6487, 2]
 // Exports: useLegacyPlatformType
 
-// Module 7596 (ConnectionsHooks)
+// Module 7597 (ConnectionsHooks)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import DurationsDefault from "Durations" /* 1104 */;
-import PlatformsDefault from "Platforms" /* 6488 */;
-import KeyboardConstants from "KeyboardConstants" /* 7597 */;
+import PlatformsDefault from "Platforms" /* 6487 */;
+import KeyboardConstants from "KeyboardConstants" /* 7598 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6486 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6485 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -268,7 +268,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePlatforms
   const sortBy = set(12).sortBy;
   set(12);
   const items1 = [tmp14, tmp15, tmp16, tmp17, tmp18];
-  const arr3 = set(6488);
+  const arr3 = set(6487);
   const sortByResult = sortBy(arr3.filter(tmp8), items1);
   cResult[5] = tmp9;
   cResult[6] = tmp8;

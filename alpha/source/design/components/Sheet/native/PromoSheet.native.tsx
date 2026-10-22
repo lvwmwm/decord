@@ -1,12 +1,12 @@
-// Module ID: 10820
-// Function ID: 10821
+// Module ID: 10828
+// Function ID: 10829
 // Name: PromoSheet
-// Dependencies: [109, 19, 17, 21, 4969, 587, 558, 576, 9821, 9820, 5220, 5964, 5251, 2]
+// Dependencies: [109, 19, 17, 21, 4969, 587, 558, 576, 9828, 9827, 5220, 5963, 5251, 2]
 
-// Module 10820 (PromoSheet)
+// Module 10828 (PromoSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ExpressiveGradient2 from "ExpressiveGradient" /* 9821 */;
+import ExpressiveGradient2 from "ExpressiveGradient" /* 9828 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -116,7 +116,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromoSheet
       }
     }
     let obj2 = { style: tmp14.graphic };
-    const Graphic = tmp(9820).Graphic;
+    const Graphic = tmp(9827).Graphic;
     let merged = Object.assign(tmp7);
     tmp17 = closure_8(Graphic, obj2);
   } else {
@@ -179,10 +179,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromoSheet
   let obj = { startExpanded: true, contentStyles: tmp2.content, backgroundComponent: memo, children: closure_9(Stack, obj6) };
   BottomSheet = gradientColor(5251).BottomSheet;
   let merged = Object.assign(tmp);
-  Stack = gradientColor(5964).Stack;
+  Stack = gradientColor(5963).Stack;
   if (null != graphic) {
     let obj2 = { style: tmp2.graphic };
-    const Graphic = tmp5(9820).Graphic;
+    const Graphic = tmp5(9827).Graphic;
     const merged1 = Object.assign(graphic);
     tmp4Result = tmp4(Graphic, obj2);
   } else {
@@ -193,7 +193,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromoSheet
     }
   }
   const items1 = [tmp4Result, , ];
-  const Stack2 = tmp5(5964).Stack;
+  const Stack2 = tmp5(5963).Stack;
   const items2 = [, ];
   const obj4 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp2.title, children: title };
   items2[0] = closure_8(gradientColor(5220).Text, obj4);

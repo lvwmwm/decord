@@ -1,9 +1,28 @@
 // Module ID: 15281
 // Function ID: 15282
-// Dependencies: [15274]
+// Dependencies: [15273]
 
 // Module 15281
-import _mod15274 from "module_15274" /* 15274 */;
+import _mod15273 from "module_15273" /* 15273 */;
 
 
-export default (arg0, arg1, arg2) => _mod15274(arg0, arg1, arg2) < 0;
+export default function(version, pre, major2, arg3, arg4) {
+  let tmp = arg4;
+  let tmp2 = arg3;
+  if (typeof major2 === "string") {
+    tmp = arg3;
+    tmp2 = major2;
+  }
+  try {
+    const tmp7 = _mod15273;
+    if (version instanceof _mod15273) {
+      version = version.version;
+    }
+    const self = this;
+    const self2 = this;
+    const tmp72 = new tmp7(version, major2);
+    return tmp72.inc(pre, tmp2, tmp).version;
+  } catch (err) {
+    return null;
+  }
+};

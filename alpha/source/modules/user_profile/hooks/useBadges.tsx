@@ -1,9 +1,9 @@
-// Module ID: 8706
-// Function ID: 8707
+// Module ID: 8713
+// Function ID: 8714
 // Name: useBadges
 // Dependencies: [5019, 1392, 558, 576, 4797, 573, 1128, 2]
 
-// Module 8706 (useBadges)
+// Module 8713 (useBadges)
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react from "react" /* 576 */;
 import UserSettings from "UserSettings" /* 4797 */;

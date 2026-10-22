@@ -1,12 +1,12 @@
-// Module ID: 12879
-// Function ID: 12880
+// Module ID: 12897
+// Function ID: 12898
 // Name: CheckpointFlows
-// Dependencies: [6349, 12878, 12880, 12881, 2]
+// Dependencies: [6348, 12896, 12898, 12899, 2]
 // Exports: getAdjacentCheckpointRoute, getCheckpointFlow, getCheckpointRoutes
 
-// Module 12879 (CheckpointFlows)
-import CheckpointNavigation from "CheckpointNavigation" /* 6349 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 12878 */;
+// Module 12897 (CheckpointFlows)
+import CheckpointNavigation from "CheckpointNavigation" /* 6348 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 12896 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,6 +28,10 @@ let obj = {
   [CheckpointNavigation.CheckpointRoute.EMOJI_INTRO]: (stats) => {
     obj = CheckpointStatsUtils;
     return !obj.hasCheckpointEmojis(stats);
+  },
+  [CheckpointNavigation.CheckpointRoute.GAMES_INTRO]: (stats) => {
+    obj = CheckpointStatsUtils;
+    return !obj.hasCheckpointGames(stats);
   }
 };
 const obj2 = {};
@@ -47,9 +51,9 @@ export const getCheckpointRoutes = function getCheckpointRoutes(arg0, arg1) {
   let prop;
   _require = arg1;
   if (arg0 === require("CheckpointNavigation").CheckpointFlow.SHARED_DATA) {
-    prop = tmp(12880).CHECKPOINT_SHARED_DATA_FLOW;
+    prop = tmp(12898).CHECKPOINT_SHARED_DATA_FLOW;
   } else {
-    prop = tmp(12881).CHECKPOINT_NO_SHARED_DATA_FLOW;
+    prop = tmp(12899).CHECKPOINT_NO_SHARED_DATA_FLOW;
   }
   return prop.filter((item) => {
     if (null != obj[item]) {
@@ -72,9 +76,9 @@ export const getAdjacentCheckpointRoute = function getAdjacentCheckpointRoute(ar
   _require = arg3;
   const tmp = _require;
   if (arg0 === require("CheckpointNavigation").CheckpointFlow.SHARED_DATA) {
-    prop = tmp(12880).CHECKPOINT_SHARED_DATA_FLOW;
+    prop = tmp(12898).CHECKPOINT_SHARED_DATA_FLOW;
   } else {
-    prop = tmp(12881).CHECKPOINT_NO_SHARED_DATA_FLOW;
+    prop = tmp(12899).CHECKPOINT_NO_SHARED_DATA_FLOW;
   }
   const found = prop.filter((item) => {
     if (null != obj[item]) {
@@ -91,7 +95,7 @@ export const getAdjacentCheckpointRoute = function getAdjacentCheckpointRoute(ar
   });
   const index = found.indexOf(arg1);
   if (-1 === index) {
-    INTRODUCTION = tmp(6349).CheckpointRoute.INTRODUCTION;
+    INTRODUCTION = tmp(6348).CheckpointRoute.INTRODUCTION;
   } else {
     let tmp4 = arg2;
     INTRODUCTION = found[index + arg2];

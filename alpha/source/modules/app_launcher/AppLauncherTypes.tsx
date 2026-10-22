@@ -1,9 +1,9 @@
-// Module ID: 11133
-// Function ID: 11134
+// Module ID: 11142
+// Function ID: 11143
 // Name: AppLauncherTypes
 // Dependencies: [2]
 
-// Module 11133 (AppLauncherTypes)
+// Module 11142 (AppLauncherTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_launcher/AppLauncherTypes.tsx");

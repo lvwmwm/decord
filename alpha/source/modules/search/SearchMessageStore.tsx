@@ -1,15 +1,15 @@
-// Module ID: 6778
-// Function ID: 6779
+// Module ID: 6777
+// Function ID: 6778
 // Name: SearchMessageStore
-// Dependencies: [502, 4821, 4911, 1087, 6360, 5999, 4913, 504, 584, 2]
+// Dependencies: [502, 4821, 4911, 1087, 6359, 5998, 4913, 504, 584, 2]
 
-// Module 6778 (SearchMessageStore)
+// Module 6777 (SearchMessageStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import ReactionUtils from "ReactionUtils" /* 4913 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5999 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6360 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5998 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6359 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;

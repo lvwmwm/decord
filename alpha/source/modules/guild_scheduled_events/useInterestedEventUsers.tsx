@@ -1,12 +1,12 @@
-// Module ID: 8867
-// Function ID: 8868
+// Module ID: 8874
+// Function ID: 8875
 // Name: useInterestedEventUsers
-// Dependencies: [19, 6770, 4827, 558, 576, 504, 2]
+// Dependencies: [19, 6769, 4827, 558, 576, 504, 2]
 
-// Module 8867 (useInterestedEventUsers)
+// Module 8874 (useInterestedEventUsers)
 import react from "react" /* 19 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4827 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6770 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6769 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

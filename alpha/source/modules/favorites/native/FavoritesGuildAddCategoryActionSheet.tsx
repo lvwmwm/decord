@@ -1,14 +1,14 @@
-// Module ID: 17479
-// Function ID: 17480
+// Module ID: 17501
+// Function ID: 17502
 // Name: FavoritesGuildAddCategoryActionSheet
-// Dependencies: [32, 19, 4834, 21, 4969, 587, 558, 576, 4846, 10809, 5196, 7232, 1128, 6994, 5230, 5251, 2]
+// Dependencies: [32, 19, 4834, 21, 4969, 587, 558, 576, 4846, 10817, 5196, 7233, 1128, 6993, 5230, 5251, 2]
 // Exports: openFavoritesGuildAddCategoryActionSheet
 
-// Module 17479 (FavoritesGuildAddCategoryActionSheet)
+// Module 17501 (FavoritesGuildAddCategoryActionSheet)
 import nativeDefault from "native" /* 587 */;
 import FavoritesConstants from "FavoritesConstants" /* 4834 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5196 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10809 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10817 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -67,7 +67,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favori
     ({ content, body } = tmp4);
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       let obj2 = { title: intl.string(tmp(1128).t["ISN+NM"]) };
-      const BottomSheetTitleHeader = tmp(7232).BottomSheetTitleHeader;
+      const BottomSheetTitleHeader = tmp(7233).BottomSheetTitleHeader;
       intl = tmp(1128).intl;
       const tmp14 = closure_6(BottomSheetTitleHeader, obj2);
       cResult[5] = tmp14;
@@ -138,7 +138,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favori
       tmp26 = tmp28;
     }
     const obj5 = { label: tmp15, placeholder: tmp16, value, onChange: tmp7, maxLength, autoFocus: true, clearable: true, returnKeyType: "done", onSubmitEditing: tmp10 };
-    const tmp22 = closure_6(tmp(6994).TextInput, obj5);
+    const tmp22 = closure_6(tmp(6993).TextInput, obj5);
     cResult[8] = tmp10;
     cResult[9] = value;
     cResult[10] = tmp22;
@@ -185,10 +185,10 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favori
   let obj2 = { contentStyles: tmp.content, bodyStyles: tmp.body, keyboardShouldPersistTaps: "always", header: closure_6(BottomSheetTitleHeader, obj3), children: items1 };
   BottomSheet = value(5251).BottomSheet;
   obj3 = { title: intl.string(value(1128).t["ISN+NM"]) };
-  BottomSheetTitleHeader = value(7232).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = value(7233).BottomSheetTitleHeader;
   intl = value(1128).intl;
   const obj4 = { label: intl2.string(value(1128).t.OCAkGP), placeholder: intl3.string(value(1128).t.eTVbtx), value, onChange: tmp4, maxLength, autoFocus: true, clearable: true, returnKeyType: "done", onSubmitEditing: callback };
-  const TextInput = value(6994).TextInput;
+  const TextInput = value(6993).TextInput;
   intl2 = value(1128).intl;
   intl3 = value(1128).intl;
   items1 = [closure_6(TextInput, obj4), ];

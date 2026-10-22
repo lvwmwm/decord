@@ -1,9 +1,10 @@
 // Module ID: 8186
 // Function ID: 8187
-// Dependencies: [8187]
+// Dependencies: [8187, 8189]
 
 // Module 8186
 import _mod8187 from "module_8187" /* 8187 */;
+import _mod8189 from "module_8189" /* 8189 */;
 
 let hasOwnProperty;
 
@@ -65,3 +66,4 @@ let tmp3 = self && self.__exportStar || ((obj, arg1) => {
   }
 });
 tmp3(_mod8187, exports);
+tmp3(_mod8189, exports);

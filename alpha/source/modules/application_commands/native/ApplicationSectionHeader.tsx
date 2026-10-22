@@ -1,9 +1,9 @@
-// Module ID: 13216
-// Function ID: 13217
+// Module ID: 13232
+// Function ID: 13233
 // Name: ApplicationSectionHeader
-// Dependencies: [19, 17, 4881, 21, 4969, 587, 558, 576, 504, 13047, 1128, 5655, 5220, 2]
+// Dependencies: [19, 17, 4881, 21, 4969, 587, 558, 576, 504, 13063, 1128, 5655, 5220, 2]
 
-// Module 13216 (ApplicationSectionHeader)
+// Module 13232 (ApplicationSectionHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
@@ -122,7 +122,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applicatio
       cResult[11] = tmp16;
       tmp15 = tmp16;
     }
-    const tmpResult2 = tmp(13047);
+    const tmpResult2 = tmp(13063);
     const applicationCommandsIconSource = tmpResult2.getApplicationCommandsIconSource(section, stateFromStores);
     cResult[4] = stateFromStores;
     cResult[5] = section;
@@ -165,7 +165,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applicatio
       }
     }
   });
-  const obj2 = section(13047);
+  const obj2 = section(13063);
   const applicationCommandsIconSource = obj2.getApplicationCommandsIconSource(section, stateFromStores);
   let nick;
   if (stateFromStores != null) {

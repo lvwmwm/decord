@@ -1,15 +1,15 @@
-// Module ID: 16308
-// Function ID: 16309
+// Module ID: 16326
+// Function ID: 16327
 // Name: OrbsArcadeRewardStatusLabel
-// Dependencies: [19, 17, 21, 4969, 587, 16299, 1128, 558, 576, 5220, 8551, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 16317, 1128, 558, 576, 5220, 8552, 2]
 
-// Module 16308 (OrbsArcadeRewardStatusLabel)
+// Module 16326 (OrbsArcadeRewardStatusLabel)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16299 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16317 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -20,7 +20,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp4;
-const LockIcon2 = tmp4(8551);
+const LockIcon2 = tmp4(8552);
 function getStatusLabel(type, arg1) {
   type = type.type;
   const FRACTIONAL_PREMIUM = OrbsArcadeTypes.OrbsArcadeRewardType.FRACTIONAL_PREMIUM;
@@ -68,7 +68,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeReward
         let tmp12 = null;
         if (status === OrbsArcadeTypes.OrbsArcadeRewardStatus.LOCKED) {
           const obj2 = { size: "xxs", color: nativeDefault.colors.ICON_MUTED };
-          const LockIcon = tmp(8551).LockIcon;
+          const LockIcon = tmp(8552).LockIcon;
           tmp12 = React3(LockIcon, obj2);
         }
         cResult[6] = status;

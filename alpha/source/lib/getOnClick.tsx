@@ -1,10 +1,10 @@
-// Module ID: 8833
-// Function ID: 8834
+// Module ID: 8840
+// Function ID: 8841
 // Name: getOnClick
-// Dependencies: [32, 5, 2045, 6770, 7316, 502, 4881, 4843, 5686, 5997, 4872, 4995, 6687, 1087, 1089, 7317, 584, 5687, 8834, 8856, 2002, 6816, 7331, 8851, 5685, 5689, 7748, 5642, 1267, 12958, 14131, 11340, 7395, 11979, 14135, 11193, 10525, 9534, 1386, 9536, 6701, 14136, 7633, 5697, 5592, 8595, 11246, 2]
+// Dependencies: [32, 5, 2045, 6769, 7317, 502, 4881, 4843, 5686, 5996, 4872, 4995, 6686, 1087, 1089, 7318, 584, 5687, 8841, 8863, 2002, 6815, 7332, 8858, 5685, 5689, 7749, 5642, 1267, 12977, 11318, 14145, 11315, 14149, 11202, 10532, 9541, 1386, 9543, 6700, 14150, 7634, 5697, 5592, 8596, 11255, 2]
 // Exports: default
 
-// Module 8833 (getOnClick)
+// Module 8840 (getOnClick)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import URLUtilsDefault from "URLUtils" /* 1386 */;
@@ -12,32 +12,33 @@ import asyncRequire from "asyncRequire" /* 2002 */;
 import openURLDefault from "openURL" /* 5642 */;
 import CodedLink from "CodedLink" /* 5689 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5697 */;
-import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7317 */;
-import safeTransitionToDefault from "safeTransitionTo" /* 7331 */;
-import _slicedToArray2 from "_slicedToArray" /* 7748 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8834 */;
-import QuestUtils from "QuestUtils" /* 9536 */;
-import storefrontCodedLink from "storefrontCodedLink" /* 11193 */;
-import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 11246 */;
+import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7318 */;
+import safeTransitionToDefault from "safeTransitionTo" /* 7332 */;
+import _slicedToArray2 from "_slicedToArray" /* 7749 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8841 */;
+import QuestUtils from "QuestUtils" /* 9543 */;
+import storefrontCodedLink from "storefrontCodedLink" /* 11202 */;
+import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 11255 */;
+import GamesActionCreatorsDefault from "GamesActionCreators" /* 11315 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6770 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7316 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6769 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7317 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 4881 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import InviteStore from "InviteStore" /* 5686 */;
-import MessageStore from "MessageStore" /* 5997 */;
+import MessageStore from "MessageStore" /* 5996 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
-import SortedGuildStore from "SortedGuildStore" /* 6687 */;
+import SortedGuildStore from "SortedGuildStore" /* 6686 */;
 import Constants from "Constants" /* 1087 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_4, closure_5, invite, openCollectiblesShopMobile, roles;
+let _require, closure_4, closure_5, customId, invite, openCollectiblesShopMobile, roles;
 
 let AbortCodes;
 let AppContext;
@@ -49,8 +50,8 @@ let closure_15;
 let map1;
 let tmp;
 let tmp11;
-const QuestContent = tmp11(6701);
-const SocialLayerStorefrontNativeActionCreators = tmp(10525);
+const QuestContent = tmp11(6700);
+const SocialLayerStorefrontNativeActionCreators = tmp(10532);
 function openInviteModal() {
   return obj(...arguments);
 }
@@ -320,7 +321,7 @@ export default function getOnClick(url) {
           const tmp3Result = _slicedToArray2;
           result = tmp3Result.parseStorefrontSkuCodedLink(code);
           if (result == null) {
-            result = { applicationId: "r", skuId: "emoji" };
+            result = { applicationId: "Array", skuId: "Reflect" };
           }
         }
         ({ applicationId, skuId } = result);
@@ -335,202 +336,69 @@ export default function getOnClick(url) {
         openURLDefault(url);
         return true;
       }
-      result = { applicationId: code, skuId: "r" };
+      result = { applicationId: code, skuId: "Array" };
     };
   }
   if (null != findCodedLinkResult) {
     if (findCodedLinkResult.type === tmp2(5689).CodedLinkType.ACTIVITY_BOOKMARK) {
       return (preventDefault) => {
-        let currentChannelId;
+        let canLaunchInChannel;
+        let closure_2;
         let isCurrentlyInInstance;
         if (preventDefault != null) {
           preventDefault.preventDefault();
         }
-        const code = currentChannelId.code;
-        url = currentChannelId.url;
+        const code = canLaunchInChannel.code;
+        url = canLaunchInChannel.url;
         const application = obj2.getApplication(code);
         const uRL = new URL(url);
-        let searchParams = uRL.searchParams;
+        const searchParams = uRL.searchParams;
         const value = searchParams.get("referrer_id");
-        let closure_2 = value;
-        const tmp6 = dependencyMap;
-        const tmp5 = url;
+        const referrerId = value;
         obj = url(dependencyMap[29]);
         const playInContext = obj.getPlayInContext(code);
-        currentChannelId = playInContext.currentChannelId;
-        ({ instanceId: pathname, isCurrentlyInInstance } = playInContext);
-        if (playInContext.canLaunchInChannel) {
-          let flag2 = !isCurrentlyInInstance && null != currentChannelId;
-          if (flag2) {
-            let searchParams2 = uRL.searchParams;
-            let getCustomActivityLinkParams = tmp5(tmp6[30]).getCustomActivityLinkParams;
-            const searchParams3 = uRL.searchParams;
-            tmp5(tmp6[30]);
-            const value2 = searchParams2.get("link_id");
-            const customActivityLinkParams = getCustomActivityLinkParams(code, value2, searchParams3.get("custom_id"));
-            const then2 = customActivityLinkParams.then;
-            url = pathname((applicationId) => {
-              let c3 = 0;
-              let c4 = 0;
-              const iter = (function*(arg0, value) {
-                let obj6;
-                if (c4 === 2) {
-                  c4 = 3;
-                  throw new TypeError("Generator functions may not be called on executing generators");
-                } else if (tmp3 === 3) {
-                  if (arg0 === 1) {
-                    throw value;
-                  } else if (arg0 === 2) {
-                    return { value, done: true };
-                  } else {
-                    return { value: "IconComponent", done: null };
-                  }
-                } else {
-                  try {
-                    let customId;
-                    c4 = 2;
-                    if (0 === channelId) {
-                      if (arg0 === 1) {
-                        c4 = 3;
-                        throw value;
-                      } else if (arg0 === 2) {
-                        c4 = 3;
-                        return { value, done: true };
-                      } else {
-                        referrerId = tmp4;
-                        closure_1 = tmp;
-                        customId = applicationId.customId;
-                        channelId = 1;
-                        c4 = 1;
-                        return { value: "Reflect", done: true };
-                      }
-                    } else if (1 === channelId) {
-                      if (arg0 === 1) {
-                        c4 = 3;
-                        throw value;
-                      } else if (arg0 === 2) {
-                        c4 = 3;
-                        return { value, done: true };
-                      } else {
-                        const obj5 = { channelId, applicationId, isStart: null == c4, customId, referrerId, analyticsLocations };
-                        channelId = 2;
-                        c4 = 1;
-                        const obj7 = { value: obj6.runPrimaryAppCommandOrJoinEmbeddedActivity(obj5), done: false };
-                        obj6 = code(referrerId[31]);
-                        return obj7;
-                      }
-                    } else if (arg0 === 1) {
-                      c4 = 3;
-                      throw value;
-                    } else if (arg0 === 2) {
-                      c4 = 3;
-                      return { value, done: true };
-                    } else {
-                      c4 = 3;
-                      return { value: "IconComponent", done: null };
-                    }
-                  } catch (tmp6) {
-                    c4 = 3;
-                    throw tmp6;
-                  }
-                }
-              })();
-              iter.next();
-              return iter;
-            });
-            const then2Result = then2(function() {
-              return closure_0(...arguments);
-            });
-            then2Result.catch(() => {
-
-            });
-            flag2 = true;
-          }
-          return flag2;
-        } else {
-          let id;
-          if (application != null) {
-            const bot = application.bot;
-            if (bot != null) {
-              id = bot.id;
+        ({ currentChannelId: closure_2, isCurrentlyInInstance, canLaunchInChannel } = playInContext);
+        if (!isCurrentlyInInstance) {
+          let tmp8 = !canLaunchInChannel;
+          if (tmp8) {
+            let bot;
+            if (application != null) {
+              bot = application.bot;
             }
+            tmp8 = null == bot;
           }
-          let flag = null != id;
-          if (flag) {
-            obj2 = require("ChannelActionCreators");
-            let obj3 = { recipientIds: id };
-            const then = obj2.openPrivateChannel(obj3).then;
-            obj2.openPrivateChannel(obj3);
-            url = pathname(function*(arg0, value) {
-              let closure_1;
-              if (c4 === 2) {
-                c4 = 3;
-                throw new TypeError("Generator functions may not be called on executing generators");
-              } else if (tmp3 === 3) {
-                if (arg0 === 1) {
-                  throw value;
-                } else if (arg0 === 2) {
-                  obj2 = { value, done: true };
-                  return obj2;
-                } else {
-                  return { value: "IconComponent", done: null };
-                }
-              } else {
-                try {
-                  let referrerId;
-                  let customId;
-                  c4 = 2;
-                  if (0 === c3) {
-                    if (arg0 === 1) {
-                      c4 = 3;
-                      throw value;
-                    } else if (arg0 === 2) {
-                      c4 = 3;
-                      const obj3 = { value, done: true };
-                      return obj3;
-                    } else {
-                      referrerId = tmp4;
-                      customId = undefined;
-                      const searchParams = tmp.searchParams;
-                      const getCustomActivityLinkParams = code(closure_2[30]).getCustomActivityLinkParams;
-                      const searchParams2 = tmp.searchParams;
-                      const tmp22 = code(closure_2[30]);
-                      closure_2 = searchParams.get("link_id");
-                      c3 = 1;
-                      c4 = 1;
-                      const obj4 = { value: getCustomActivityLinkParams(channelId, closure_2, searchParams2.get("custom_id")), done: false };
-                      return obj4;
-                    }
-                  } else if (arg0 === 1) {
-                    c4 = 3;
-                    throw value;
-                  } else if (arg0 === 2) {
-                    c4 = 3;
-                    obj = { value, done: true };
-                    return obj;
-                  } else {
-                    customId = value.customId;
-                    const obj5 = { targetApplicationId: channelId, channelId, analyticsLocations, customId, referrerId };
-                    uRL(closure_2[33])(obj5);
-                    c4 = 3;
-                    return { value: "IconComponent", done: null };
-                  }
-                } catch (tmp5) {
-                  c4 = 3;
-                  throw tmp5;
-                }
-              }
-            });
-            const nextPromise = then(function() {
-              return closure_0(...arguments);
-            });
-            nextPromise.catch(() => {
-
-            });
-            flag = true;
+          if (tmp8) {
+            const tmp5Result = url(dependencyMap[30]);
+            tmp8 = !tmp5Result.canLaunchContextlessFrame(application);
           }
-          return flag;
+          isCurrentlyInInstance = tmp8;
         }
+        let flag = !isCurrentlyInInstance;
+        if (flag) {
+          const searchParams2 = uRL.searchParams;
+          const getCustomActivityLinkParams = url(dependencyMap[31]).getCustomActivityLinkParams;
+          const searchParams3 = uRL.searchParams;
+          url(dependencyMap[31]);
+          const value2 = searchParams2.get("link_id");
+          const customActivityLinkParams = getCustomActivityLinkParams(code, value2, searchParams3.get("custom_id"));
+          const nextPromise = customActivityLinkParams.then((customId) => {
+            let tmp2;
+            customId = customId.customId;
+            obj = { applicationId: code, channelId: tmp2, fromLink: true, customId, referrerId, analyticsLocations: importDefault };
+            tmp2 = null;
+            const launch = GamesActionCreatorsDefault.launch;
+            GamesActionCreatorsDefault;
+            if (canLaunchInChannel) {
+              tmp2 = paths;
+            }
+            return launch(obj);
+          });
+          nextPromise.catch(() => {
+
+          });
+          flag = true;
+        }
+        return flag;
       };
     }
   }
@@ -544,7 +412,7 @@ export default function getOnClick(url) {
         }
         [closure_129_0, closure_129_1] = _undefined.code.split("-");
         _slicedToArray(_undefined.code.split("-"), 2);
-        const promise = asyncRequire(14135, dependencyMap.paths);
+        const promise = asyncRequire(14149, dependencyMap.paths);
         promise.then((openGuildProductLink) => {
           openGuildProductLink.openGuildProductLink(closure_1_0, closure_1_1);
         });
@@ -600,7 +468,7 @@ export default function getOnClick(url) {
   }
   if (null != findCodedLinkResult) {
     if (findCodedLinkResult.type === tmp2(5689).CodedLinkType.QUESTS_EMBED) {
-      const tmp2Result = tmp2(9534);
+      const tmp2Result = tmp2(9541);
       if (tmp2Result.getIsEligibleForQuests()) {
         return function(preventDefault) {
           if (preventDefault != null) {
@@ -646,9 +514,9 @@ export default function getOnClick(url) {
         if (preventDefault != null) {
           preventDefault.preventDefault();
         }
-        obj = url(dependencyMap[41]);
+        obj = url(dependencyMap[40]);
         const enabled = obj.isVirtualCurrencyEnabled().enabled;
-        const promise = url(dependencyMap[20])(dependencyMap[42], dependencyMap.paths);
+        const promise = url(dependencyMap[20])(dependencyMap[41], dependencyMap.paths);
         promise.then((openCollectiblesShopMobile) => {
           let tmp10;
           openCollectiblesShopMobile = openCollectiblesShopMobile.openCollectiblesShopMobile;
@@ -674,14 +542,14 @@ export default function getOnClick(url) {
     }
   }
   let tmp5 = importDefault;
-  let obj3 = URLUtilsDefault;
+  const obj3 = URLUtilsDefault;
   let toURLSafeResult = obj3.toURLSafe(url);
   if (toURLSafeResult == null) {
     toURLSafeResult = {};
   }
   ({ host, hostname, pathname } = toURLSafeResult);
   ({ search, hash } = toURLSafeResult);
-  const tmp5Result = URLUtilsDefault;
+  let tmp5Result = URLUtilsDefault;
   let tmp7 = hostname;
   const isDiscordHostname = tmp5Result.isDiscordHostname;
   if (hostname == null) {
@@ -707,7 +575,7 @@ export default function getOnClick(url) {
           if (preventDefault != null) {
             preventDefault.preventDefault();
           }
-          const result = url(dependencyMap[36]).openSocialLayerStorefrontUnsupportedOnMobileAlert();
+          const result = url(dependencyMap[35]).openSocialLayerStorefrontUnsupportedOnMobileAlert();
           return true;
         };
       }
@@ -752,7 +620,7 @@ export default function getOnClick(url) {
   const tmp2Result3 = tmp2(5592);
   let result = tmp2Result3.tryParseEventDetailsPath(pathname);
   if (!skipExtensionCheck) {
-    const tmp2Result4 = tmp2(8595);
+    const tmp2Result4 = tmp2(8596);
     if (null != tmp2Result4.isSuspiciousDownload(url)) {
       fn = (preventDefault) => {
         if (preventDefault != null) {

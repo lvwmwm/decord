@@ -1,11 +1,11 @@
-// Module ID: 13450
-// Function ID: 13451
+// Module ID: 13464
+// Function ID: 13465
 // Name: useOwnedConjureProject
-// Dependencies: [6759, 558, 576, 11944, 504, 2]
+// Dependencies: [6758, 558, 576, 11958, 504, 2]
 
-// Module 13450 (useOwnedConjureProject)
-import useIsOwnedConjureApplicationDefault from "useIsOwnedConjureApplication" /* 11944 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6759 */;
+// Module 13464 (useOwnedConjureProject)
+import useIsOwnedConjureApplicationDefault from "useIsOwnedConjureApplication" /* 11958 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6758 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

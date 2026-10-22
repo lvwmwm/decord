@@ -1,9 +1,9 @@
-// Module ID: 17219
-// Function ID: 17220
+// Module ID: 17241
+// Function ID: 17242
 // Name: MobileNotifSettingsSections
 // Dependencies: [2]
 
-// Module 17219 (MobileNotifSettingsSections)
+// Module 17241 (MobileNotifSettingsSections)
 import size from "module_2" /* 2 */;
 
 const frozen = Object.freeze({ NOTIFICATIONS_REDESIGN: "Notifications (Redesign)", NOTIF_CATEGORY_CALLS_MESSAGES: "Category calls messages", NOTIF_CATEGORY_DISCOVERY_HIGHLIGHTS: "Category discovery highlights", NOTIF_CATEGORY_FRIENDS_ACTIVITY: "Category friends activity", NOTIF_FRIEND_ACTIVITY_TITLE: "Friend activity title", NOTIF_CATEGORY_SERVERS: "Category servers" });

@@ -1,201 +1,75 @@
 // Module ID: 12559
 // Function ID: 12560
-// Dependencies: [12534, 12515, 12514, 12545]
-// Exports: applyScopeDataToEvent, mergeAndOverwriteScopeData, mergeScopeData
+// Dependencies: [12552, 12547, 12560, 12548, 12520]
+// Exports: sampleSpan
 
 // Module 12559
-import _mod12514 from "module_12514" /* 12514 */;
-import _mod12515 from "module_12515" /* 12515 */;
-import _mod12534 from "module_12534" /* 12534 */;
-import _mod12545 from "module_12545" /* 12545 */;
+import _mod12547 from "module_12547" /* 12547 */;
+import _mod12548 from "module_12548" /* 12548 */;
+import _mod12552 from "module_12552" /* 12552 */;
+import _mod12560 from "module_12560" /* 12560 */;
 
 
-export const applyScopeDataToEvent = function applyScopeDataToEvent(extra, arg1) {
-  let breadcrumbs;
-  let contexts;
-  let fingerprint;
-  let items1;
-  let level;
-  let sdkProcessingMetadata;
-  let span;
-  let tags;
-  let tmpResult10;
-  let tmpResult9;
-  let transactionName;
-  let user;
-  ({ fingerprint, span, breadcrumbs, sdkProcessingMetadata, level, transactionName } = arg1);
-  ({ extra, tags, user, contexts } = arg1);
-  const obj = _mod12515;
-  const dropUndefinedKeysResult = obj.dropUndefinedKeys(extra);
-  let length = dropUndefinedKeysResult;
-  if (length) {
-    const _Object = Object;
-    length = Object.keys(dropUndefinedKeysResult).length;
-  }
-  const tmp5 = extra;
-  if (length) {
-    const obj2 = {};
-    const merged = Object.assign(dropUndefinedKeysResult);
-    const merged1 = Object.assign(extra.extra);
-    extra.extra = obj2;
-  }
-  const tmpResult = _mod12515;
-  const dropUndefinedKeysResult1 = tmpResult.dropUndefinedKeys(tags);
-  let length2 = dropUndefinedKeysResult1;
-  if (length2) {
-    const _Object2 = Object;
-    length2 = Object.keys(dropUndefinedKeysResult1).length;
-  }
-  if (length2) {
-    const obj3 = {};
-    const merged2 = Object.assign(dropUndefinedKeysResult1);
-    const merged3 = Object.assign(extra.tags);
-    extra.tags = obj3;
-  }
-  const tmpResult7 = _mod12515;
-  const dropUndefinedKeysResult2 = tmpResult7.dropUndefinedKeys(user);
-  let length3 = dropUndefinedKeysResult2;
-  if (length3) {
-    const _Object3 = Object;
-    length3 = Object.keys(dropUndefinedKeysResult2).length;
-  }
-  if (length3) {
-    const obj4 = {};
-    const merged4 = Object.assign(dropUndefinedKeysResult2);
-    const merged5 = Object.assign(extra.user);
-    extra.user = obj4;
-  }
-  const tmpResult8 = _mod12515;
-  const dropUndefinedKeysResult3 = tmpResult8.dropUndefinedKeys(contexts);
-  let length4 = dropUndefinedKeysResult3;
-  if (length4) {
-    const _Object4 = Object;
-    length4 = Object.keys(dropUndefinedKeysResult3).length;
-  }
-  if (length4) {
-    const obj5 = {};
-    const merged6 = Object.assign(dropUndefinedKeysResult3);
-    const merged7 = Object.assign(extra.contexts);
-    extra.contexts = obj5;
-  }
-  if (level) {
-    extra.level = level;
-  }
-  const tmp32 = transactionName && "transaction" !== extra.type;
-  if (tmp32) {
-    extra.transaction = transactionName;
-  }
-  if (span) {
-    const obj6 = { trace: tmpResult9.spanToTraceContext(span) };
-    tmpResult9 = _mod12514;
-    const merged8 = Object.assign(extra.contexts);
-    extra.contexts = obj6;
-    const obj7 = { dynamicSamplingContext: tmpResult10.getDynamicSamplingContextFromSpan(span) };
-    tmpResult10 = _mod12545;
-    const merged9 = Object.assign(extra.sdkProcessingMetadata);
-    extra.sdkProcessingMetadata = obj7;
-    const tmpResult11 = _mod12514;
-    const rootSpan = tmpResult11.getRootSpan(span);
-    const tmpResult12 = _mod12514;
-    const description = tmpResult12.spanToJSON(rootSpan).description;
-    const tmp38 = description && !extra.transaction && "transaction" === extra.type;
-    if (tmp38) {
-      extra.transaction = description;
-    }
-  }
-  if (extra.fingerprint) {
-    let items;
-    const _Array = Array;
-    const fingerprint2 = extra.fingerprint;
-    if (Array.isArray(extra.fingerprint)) {
-      items = fingerprint2;
+export const sampleSpan = function sampleSpan(tracesSampler, normalizedRequest) {
+  const obj = _mod12552;
+  if (obj.hasTracingEnabled(tracesSampler)) {
+    let num;
+    let items3;
+    const tmpResult = _mod12547;
+    const isolationScope = tmpResult.getIsolationScope();
+    const obj2 = { normalizedRequest: normalizedRequest.normalizedRequest || normalizedRequest };
+    normalizedRequest = isolationScope.getScopeData().sdkProcessingMetadata.normalizedRequest;
+    const merged = Object.assign(normalizedRequest);
+    if (typeof tracesSampler.tracesSampler === "function") {
+      num = tracesSampler.tracesSampler(obj2);
+    } else if (undefined !== obj2.parentSampled) {
+      num = obj2.parentSampled;
     } else {
-      items = [fingerprint2];
+      num = 1;
+      if (undefined !== tracesSampler.tracesSampleRate) {
+        num = tracesSampler.tracesSampleRate;
+      }
     }
-    items1 = items;
+    const tmpResult2 = _mod12560;
+    const parseSampleRateResult = tmpResult2.parseSampleRate(num);
+    if (undefined === parseSampleRateResult) {
+      if (_mod12548.DEBUG_BUILD) {
+        const logger3 = tmp(12520).logger;
+        logger3.warn("[Tracing] Discarding transaction because of invalid sample rate.");
+      }
+      const items = [false];
+      items3 = items;
+    } else if (parseSampleRateResult) {
+      let items2;
+      const _Math = Math;
+      if (Math.random() < parseSampleRateResult) {
+        const items1 = [true, parseSampleRateResult];
+        items2 = items1;
+      } else {
+        if (_mod12548.DEBUG_BUILD) {
+          const logger2 = tmp(12520).logger;
+          const _Number = Number;
+          const _HermesInternal = HermesInternal;
+          logger2.log("[Tracing] Discarding transaction because it's not included in the random sample (sampling rate = " + Number(num) + ")");
+        }
+        items2 = [false, parseSampleRateResult];
+      }
+      items3 = items2;
+    } else {
+      if (_mod12548.DEBUG_BUILD) {
+        const logger = tmp(12520).logger;
+        let str = "a negative sampling decision was inherited or tracesSampleRate is set to 0";
+        const log = logger.log;
+        if (typeof tracesSampler.tracesSampler === "function") {
+          str = "tracesSampler returned 0 or false";
+        }
+        log(`[Tracing] Discarding transaction because ${str}`);
+      }
+      items3 = [false, parseSampleRateResult];
+    }
+    return items3;
   } else {
-    items1 = [];
+    const items4 = [false];
+    return items4;
   }
-  extra.fingerprint = items1;
-  if (fingerprint) {
-    const fingerprint3 = extra.fingerprint;
-    extra.fingerprint = fingerprint3.concat(fingerprint);
-  }
-  const tmp40 = extra.fingerprint && !extra.fingerprint.length;
-  if (tmp40) {
-    delete tmp5["fingerprint"];
-  }
-  const items2 = [...breadcrumbs];
-  let tmp42;
-  if (items2.length) {
-    tmp42 = items2;
-  }
-  extra.breadcrumbs = tmp42;
-  const obj8 = {};
-  const merged10 = Object.assign(extra.sdkProcessingMetadata);
-  const merged11 = Object.assign(sdkProcessingMetadata);
-  extra.sdkProcessingMetadata = obj8;
-};
-export const mergeAndOverwriteScopeData = function mergeAndOverwriteScopeData(arg0, arg1, arg2) {
-  const obj = _mod12534;
-  arg0[arg1] = obj.merge(arg0[arg1], arg2, 1);
-};
-export const mergeScopeData = function mergeScopeData(extra, arg1) {
-  let attachments;
-  let breadcrumbs;
-  let contexts;
-  let eventProcessors;
-  let fingerprint;
-  let level;
-  let propagationContext;
-  let sdkProcessingMetadata;
-  let span;
-  let tags;
-  let transactionName;
-  let user;
-  ({ level, breadcrumbs, fingerprint, eventProcessors, attachments, propagationContext, transactionName, span } = arg1);
-  ({ extra, tags, user, contexts, sdkProcessingMetadata } = arg1);
-  const obj = _mod12534;
-  extra.extra = obj.merge(extra.extra, extra, 1);
-  const obj2 = _mod12534;
-  extra.tags = obj2.merge(extra.tags, tags, 1);
-  const obj3 = _mod12534;
-  extra.user = obj3.merge(extra.user, user, 1);
-  const obj4 = _mod12534;
-  extra.contexts = obj4.merge(extra.contexts, contexts, 1);
-  const obj5 = _mod12534;
-  extra.sdkProcessingMetadata = obj5.merge(extra.sdkProcessingMetadata, sdkProcessingMetadata, 2);
-  if (level) {
-    extra.level = level;
-  }
-  if (transactionName) {
-    extra.transactionName = transactionName;
-  }
-  if (span) {
-    extra.span = span;
-  }
-  if (breadcrumbs.length) {
-    const items = [];
-    HermesBuiltin.arraySpread(items, breadcrumbs, HermesBuiltin.arraySpread(items, extra.breadcrumbs, 0));
-    extra.breadcrumbs = items;
-  }
-  if (fingerprint.length) {
-    const items1 = [];
-    HermesBuiltin.arraySpread(items1, fingerprint, HermesBuiltin.arraySpread(items1, extra.fingerprint, 0));
-    extra.fingerprint = items1;
-  }
-  if (eventProcessors.length) {
-    const items2 = [];
-    HermesBuiltin.arraySpread(items2, eventProcessors, HermesBuiltin.arraySpread(items2, extra.eventProcessors, 0));
-    extra.eventProcessors = items2;
-  }
-  if (attachments.length) {
-    const items3 = [];
-    HermesBuiltin.arraySpread(items3, attachments, HermesBuiltin.arraySpread(items3, extra.attachments, 0));
-    extra.attachments = items3;
-  }
-  const obj6 = {};
-  const merged = Object.assign(extra.propagationContext);
-  const merged1 = Object.assign(propagationContext);
-  extra.propagationContext = obj6;
 };

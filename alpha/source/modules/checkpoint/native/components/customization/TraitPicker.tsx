@@ -1,9 +1,9 @@
-// Module ID: 12944
-// Function ID: 12945
+// Module ID: 12963
+// Function ID: 12964
 // Name: TraitPicker
-// Dependencies: [32, 19, 17, 4970, 21, 587, 4969, 12945, 558, 576, 6348, 1128, 3088, 12893, 5220, 504, 5253, 12947, 5585, 5038, 5192, 12948, 12949, 2]
+// Dependencies: [32, 19, 17, 4970, 6001, 21, 587, 6347, 4969, 12964, 558, 576, 1128, 3088, 12911, 5220, 504, 5253, 12966, 5585, 5038, 5192, 12967, 12968, 2]
 
-// Module 12944 (TraitPicker)
+// Module 12963 (TraitPicker)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,30 +12,30 @@ import _modDef3088 from "module_3088" /* 3088 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
 import timing from "timing" /* 5192 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6348 */;
-import CheckpointTextDefault from "CheckpointText" /* 12893 */;
-import TraitOptionList from "TraitOptionList" /* 12945 */;
+import CheckpointConstants from "CheckpointConstants" /* 6001 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6347 */;
+import CheckpointTextDefault from "CheckpointText" /* 12911 */;
+import TraitOptionList from "TraitOptionList" /* 12964 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 4970 */;
+import AccessibilityStore from "AccessibilityStore" /* 4970 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let dependencyMap, importDefault;
+let dependencyMap;
 
+let c9;
 let metroImportAll;
-let metroImportDefault;
 let obj2;
 let obj3;
 let obj4;
 let _slicedToArray = _slicedToArray_mod;
 let View = react_native.View;
-let AccessibilityStore = AccessibilityStore_mod;
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let c9 = 600;
+const rarityOrder = CheckpointConstants.CHECKPOINT_RARITY_ORDER_MOBILE;
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+let c10 = 600;
 const PX_12 = nativeDefault.space.PX_12;
 let createStyles = createStyles_mod;
 let obj = { container: obj2, earnedRow: obj3, details: obj4 };
@@ -43,9 +43,9 @@ obj2 = { gap: TraitOptionList.TRAIT_OPTION_SPACING };
 createStyles = createStyles.createStyles;
 obj3 = { paddingHorizontal: TraitOptionList.CONTENT_INSET };
 obj4 = { paddingHorizontal: TraitOptionList.CONTENT_INSET };
-let closure_11 = createStyles(obj);
+let closure_12 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function EarnedCountHeader(arg0) {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function EarnedCountHeader(arg0) {
   let customizationOption;
   let earnedCount;
   let tmp5;
@@ -54,7 +54,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Earned
   let obj = react2;
   const cResult = obj.c(14);
   ({ customizationOption, earnedCount, totalCount } = arg0);
-  const tmp4 = closure_11();
+  const tmp4 = closure_12();
   if (cResult[0] !== customizationOption) {
     const tmpResult = CheckpointCustomizationUtils;
     const customizationOptionName = tmpResult.getCustomizationOptionName(customizationOption);
@@ -87,7 +87,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Earned
         }
       }
       const obj2 = { variant: "experimental/body-sm/medium", color: "text-default", style: tmp13, accessibilityRole: "header", accessibilityLabel: combined, children: tmp14 };
-      const tmp20 = metroImportDefault(Text_Text.Text, obj2);
+      const tmp20 = metroImportAll(Text_Text.Text, obj2);
       cResult[10] = combined;
       cResult[11] = tmp4.earnedRow;
       cResult[12] = tmp14;
@@ -99,7 +99,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Earned
       class S {
         constructor(arg0, arg1) {
           obj = { variant: "experimental/mono-md/bold", children: arg0 };
-          return closure_1_7(closure_1_1(closure_1_2[13]), obj, arg1);
+          return closure_1_8(closure_1_1(closure_1_2[14]), obj, arg1);
         }
       }
       cResult[9] = S;
@@ -108,7 +108,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Earned
       class S {
         constructor(arg0, arg1) {
           obj = { variant: "experimental/mono-md/bold", children: arg0 };
-          return closure_1_7(closure_1_1(closure_1_2[13]), obj, arg1);
+          return closure_1_8(closure_1_1(closure_1_2[14]), obj, arg1);
         }
       }
     }
@@ -124,7 +124,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Earned
     class S {
       constructor(arg0, arg1) {
         obj = { variant: "experimental/mono-md/bold", children: arg0 };
-        return closure_1_7(closure_1_1(closure_1_2[13]), obj, arg1);
+        return closure_1_8(closure_1_1(closure_1_2[14]), obj, arg1);
       }
     }
     cResult[5] = tmp9;
@@ -133,7 +133,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Earned
     class S {
       constructor(arg0, arg1) {
         obj = { variant: "experimental/mono-md/bold", children: arg0 };
-        return closure_1_7(closure_1_1(closure_1_2[13]), obj, arg1);
+        return closure_1_8(closure_1_1(closure_1_2[14]), obj, arg1);
       }
     }
   }
@@ -150,7 +150,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Earned
   let totalCount;
   ({ earnedCount, totalCount } = customizationOption);
   customizationOption = customizationOption.customizationOption;
-  const tmp = closure_11();
+  const tmp = closure_12();
   let obj = CheckpointCustomizationUtils;
   const customizationOptionName = obj.getCustomizationOptionName(customizationOption);
   const intl = intl3.intl;
@@ -170,93 +170,93 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Earned
     totalCount,
     countHook(children, arg1) {
       const obj = { variant: "experimental/mono-md/bold", children };
-      return closure_1_7(CheckpointTextDefault, obj, arg1);
+      return closure_1_8(CheckpointTextDefault, obj, arg1);
     }
   };
-  return metroImportDefault(Text, obj3);
+  return metroImportAll(Text, obj3);
 });
 const __initData = { code: "function TraitPickerTsx1(){const{INTRO_DETAILS_DURATION_MS,Easing,withTiming,isDetailsVisible,INTRO_DETAILS_OFFSET_Y}=this.__closure;const timing={duration:INTRO_DETAILS_DURATION_MS,easing:Easing.out(Easing.cubic)};return{opacity:withTiming(isDetailsVisible?1:0,timing),transform:[{translateY:withTiming(isDetailsVisible?0:INTRO_DETAILS_OFFSET_Y,timing)}]};}" };
 const __initData2 = { code: "function TraitPickerTsx2(){const{INTRO_DETAILS_DURATION_MS,Easing,withTiming,isDetailsVisible,INTRO_DETAILS_OFFSET_Y}=this.__closure;const timing={duration:INTRO_DETAILS_DURATION_MS,easing:Easing.out(Easing.cubic)};return{opacity:withTiming(isDetailsVisible?1:0,timing),transform:[{translateY:withTiming(isDetailsVisible?0:INTRO_DETAILS_OFFSET_Y,timing)}]};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(arg0) {
-  let closure_1;
+  let availableTraitOptions;
   let customizationOption;
   let disabled;
+  let duration;
   let earnedCount;
-  let hideDescriptionAndRarity;
   let items1;
+  let items2;
+  let obj5;
   let onSelectOption;
-  let options;
+  let optionIds;
   let savedOptionId;
   let selectedOptionId;
   let showEarnedCount;
-  let skipIntro;
   let stateFromStores;
   let style;
   let tmp10;
-  let tmp9;
+  let tmp11;
+  let tmp7;
   let totalCount;
   let useReducedMotion;
-  const tmp = selectedOptionId;
-  let obj = selectedOptionId(stateFromStores[9]);
-  const cResult = obj.c(46);
-  ({ style, customizationOption, disabled, options, savedOptionId, selectedOptionId } = arg0);
-  ({ hideDescriptionAndRarity, skipIntro, showEarnedCount, onSelectOption } = arg0);
-  importDefault = tmp6;
-  const tmp8 = closure_11();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [AccessibilityStore];
-    class E {
-      constructor() {
-        return useReducedMotion.useReducedMotion;
-      }
-    }
+  let tmp = customizationOption;
+  const tmp2 = stateFromStores;
+  let obj = customizationOption(stateFromStores[11]);
+  const cResult = obj.c(48);
+  ({ style, customizationOption } = arg0);
+  ({ disabled, optionIds, savedOptionId, selectedOptionId } = arg0);
+  ({ showEarnedCount, onSelectOption } = arg0);
+  const tmp6 = closure_12();
+  if (cResult[0] !== customizationOption) {
+    const tmpResult = tmp(tmp2[7]);
+    const isTraitRarityVisible = tmpResult.getIsTraitRarityVisible(customizationOption);
     let num = 0;
-    cResult[0] = items;
+    cResult[0] = customizationOption;
     let num2 = 1;
-    cResult[1] = E;
-    tmp10 = E;
-    tmp9 = items;
+    cResult[1] = isTraitRarityVisible;
+    tmp7 = isTraitRarityVisible;
   } else {
-    [tmp9, tmp10] = cResult;
+    tmp7 = cResult[1];
   }
-  const tmpResult = tmp(tmp2[15]);
-  stateFromStores = tmpResult.useStateFromStores(tmp9, tmp10);
-  const tmpResult5 = tmp(stateFromStores[16]);
-  const isScreenReaderEnabled = tmpResult5.useIsScreenReaderEnabled();
-  if (cResult[2] === customizationOption) {
-    if (cResult[3] === options) {
-      let tmp14;
-      if (cResult[4] === savedOptionId) {
-        tmp14 = cResult[5];
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [useReducedMotion];
+    const fn = function z() {
+      return useReducedMotion.useReducedMotion;
+    };
+    cResult[2] = items;
+    cResult[3] = fn;
+    tmp11 = fn;
+    tmp10 = items;
+  } else {
+    tmp10 = cResult[2];
+    tmp11 = cResult[3];
+  }
+  const tmpResult6 = tmp(tmp2[16]);
+  stateFromStores = tmpResult6.useStateFromStores(tmp10, tmp11);
+  const tmpResult7 = tmp(tmp2[17]);
+  const isScreenReaderEnabled = tmpResult7.useIsScreenReaderEnabled();
+  if (cResult[4] === customizationOption) {
+    if (cResult[5] === optionIds) {
+      let tmp15;
+      if (cResult[6] === savedOptionId) {
+        tmp15 = cResult[7];
       }
-      const tmpResult6 = tmp(stateFromStores[17]);
-      const traitPickerOptions = tmpResult6.useTraitPickerOptions(tmp14);
-      class E {
-        constructor() {
-          return useReducedMotion.useReducedMotion;
-        }
-      }
-      ({ totalCount, earnedCount } = traitPickerOptions);
-      let closure_5 = tmp17;
-      if (cResult[6] === earnedCount) {
-        if (cResult[7] === null != selectedOptionId) {
-          if (cResult[8] === stateFromStores) {
-            if (cResult[9] === isScreenReaderEnabled) {
-              let tmp18;
-              if (cResult[10] === (undefined !== skipIntro && skipIntro)) {
-                tmp18 = cResult[11];
+      const tmpResult8 = tmp(tmp2[18]);
+      const traitPickerOptions = tmpResult8.useTraitPickerOptions(tmp15);
+      ({ availableTraitOptions, totalCount, earnedCount } = traitPickerOptions);
+      let closure_5 = tmp18;
+      if (cResult[8] === customizationOption) {
+        if (cResult[9] === earnedCount) {
+          if (cResult[10] === null != selectedOptionId) {
+            if (cResult[11] === stateFromStores) {
+              let tmp19;
+              if (cResult[12] === isScreenReaderEnabled) {
+                tmp19 = cResult[13];
               }
-              const tmp20 = require("useInitialValue")(tmp18);
-              const tmp19 = importDefault;
-              class E {
-                constructor() {
-                  return useReducedMotion.useReducedMotion;
-                }
-              }
-              AccessibilityStore = tmp21;
-              tmp(stateFromStores[19]);
-              const fn = function j() {
+              const tmp21 = selectedOptionId(tmp2[19])(tmp19);
+              useReducedMotion = tmp22;
+              tmp(tmp2[20]);
+              const fn2 = function $() {
                 let Easing;
                 let items;
                 const obj = { duration, easing: Easing.out(ReanimatedRexport.Easing.cubic) };
@@ -278,13 +278,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
                 ({ translateY: withTiming2(num2, obj) });
                 return obj2;
               };
-              let obj2 = { INTRO_DETAILS_DURATION_MS: v600, Easing: tmp(tmp2[19]).Easing, withTiming: tmp(tmp2[20]).withTiming, isDetailsVisible: tmp21, INTRO_DETAILS_OFFSET_Y: PX_12 };
-              class H {
+              let obj2 = { INTRO_DETAILS_DURATION_MS, Easing: tmp(tmp2[20]).Easing, withTiming: tmp(tmp2[21]).withTiming, isDetailsVisible: tmp22, INTRO_DETAILS_OFFSET_Y: PX_12 };
+              class M {
                 constructor() {
                   let num = 0;
+                  const tmp = customizationOption;
                   if (!closure_5) {
                     num = 0;
-                    if (!closure_1) {
+                    if (tmp !== tmp2) {
                       num = 0;
                       if (!stateFromStores) {
                         num = 0;
@@ -298,90 +299,81 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
                   return num;
                 }
               }
-              fn.__closure = obj2;
-              fn.__workletHash = 9456849062820;
-              fn.__initData = __initData;
-              const tmp23Result = tmp23(fn);
-              const tmp30 = isScreenReaderEnabled(earnedCount.useState(tmp20), 2);
-              const first = tmp30[0];
-              let tmp33 = tmp4;
-              const tmp32 = tmp30[1];
+              fn2.__closure = obj2;
+              fn2.__workletHash = 9456849062820;
+              fn2.__initData = __initData;
+              const tmp24Result = tmp24(fn2);
+              const tmp31 = isScreenReaderEnabled(earnedCount.useState(tmp21), 2);
+              const first = tmp31[0];
+              let tmp34 = tmp4;
+              const tmp33 = tmp31[1];
               if (!(undefined !== disabled && disabled)) {
-                tmp33 = !tmp17 && first > 0;
-                const tmp34 = !tmp17 && first > 0;
+                tmp34 = !tmp18 && first > 0;
+                const tmp35 = !tmp18 && first > 0;
               }
-              if (cResult[12] === onSelectOption) {
-                if (cResult[13] === selectedOptionId) {
-                  if (cResult[14] === tmp33) {
-                    let tmp35;
-                    let diff;
-                    if (cResult[15] === arr2) {
-                      tmp35 = cResult[16];
+              if (cResult[14] === availableTraitOptions) {
+                if (cResult[15] === onSelectOption) {
+                  if (cResult[16] === selectedOptionId) {
+                    let tmp36;
+                    if (cResult[17] === tmp34) {
+                      tmp36 = cResult[18];
                     }
-                    const tmpResult8 = tmp(stateFromStores[21]);
-                    const autoSelectTraitOption = tmpResult8.useAutoSelectTraitOption(tmp35);
-                    class E {
-                      constructor() {
-                        return useReducedMotion.useReducedMotion;
-                      }
-                    }
+                    const tmpResult10 = tmp(tmp2[22]);
+                    const autoSelectTraitOption = tmpResult10.useAutoSelectTraitOption(tmp36);
+                    let diff = earnedCount;
                     if (null == selectedOptionId) {
                       diff = earnedCount - first;
                     }
-                    if (cResult[17] === selectedOptionId) {
-                      let tmp38;
-                      if (cResult[18] === arr2) {
-                        tmp38 = cResult[19];
+                    if (cResult[19] === availableTraitOptions) {
+                      let tmp39;
+                      if (cResult[20] === selectedOptionId) {
+                        tmp39 = cResult[21];
                       }
-                      if (cResult[20] === style) {
-                        if (cResult[23] === customizationOption) {
-                          if (cResult[24] === diff) {
-                            if (cResult[25] === (undefined !== showEarnedCount && showEarnedCount)) {
-                              let tmp41;
-                              if (cResult[26] === totalCount) {
-                                tmp41 = cResult[27];
+                      if (cResult[22] === style) {
+                        if (cResult[25] === customizationOption) {
+                          if (cResult[26] === diff) {
+                            if (cResult[27] === (undefined !== showEarnedCount && showEarnedCount)) {
+                              let tmp42;
+                              if (cResult[28] === totalCount) {
+                                tmp42 = cResult[29];
                               }
-                              if (cResult[28] === customizationOption) {
-                                if (cResult[29] === (undefined !== disabled && disabled)) {
-                                  if (cResult[30] === (undefined !== hideDescriptionAndRarity && hideDescriptionAndRarity)) {
-                                    if (cResult[31] === tmp20) {
-                                      if (cResult[32] === onSelectOption) {
-                                        if (cResult[33] === selectedOptionId) {
-                                          let tmp43;
-                                          if (cResult[34] === arr2) {
-                                            tmp43 = cResult[35];
+                              if (cResult[30] === availableTraitOptions) {
+                                if (cResult[31] === customizationOption) {
+                                  if (cResult[32] === (undefined !== disabled && disabled)) {
+                                    if (cResult[33] === !tmp7) {
+                                      if (cResult[34] === tmp21) {
+                                        if (cResult[35] === onSelectOption) {
+                                          let tmp46;
+                                          if (cResult[36] === selectedOptionId) {
+                                            tmp46 = cResult[37];
                                           }
-                                          if (cResult[36] === tmp23Result) {
-                                            if (cResult[37] === (undefined !== hideDescriptionAndRarity && hideDescriptionAndRarity)) {
-                                              if (cResult[38] === tmp38) {
-                                                let tmp47;
-                                                if (cResult[39] === tmp8.details) {
-                                                  tmp47 = cResult[40];
+                                          if (cResult[38] === tmp24Result) {
+                                            if (cResult[39] === !tmp7) {
+                                              if (cResult[40] === tmp39) {
+                                                let tmp49;
+                                                if (cResult[41] === tmp6.details) {
+                                                  tmp49 = cResult[42];
                                                 }
-                                                if (cResult[41] === tmp40) {
-                                                  if (cResult[42] === tmp41) {
-                                                    if (cResult[43] === tmp43) {
-                                                      let tmp49;
-                                                      if (cResult[44] === tmp47) {
-                                                        tmp49 = cResult[45];
+                                                if (cResult[43] === tmp41) {
+                                                  if (cResult[44] === tmp42) {
+                                                    if (cResult[45] === tmp46) {
+                                                      let tmp52;
+                                                      if (cResult[46] === tmp49) {
+                                                        tmp52 = cResult[47];
                                                       }
-                                                      return tmp49;
+                                                      return tmp52;
                                                     }
                                                   }
                                                 }
-                                                class E {
-                                                  constructor() {
-                                                    return useReducedMotion.useReducedMotion;
-                                                  }
-                                                }
-                                                const obj3 = { style: tmp40, children: items1 };
-                                                items1 = [tmp41, tmp43, tmp47];
-                                                class H {
+                                                const obj3 = { style: tmp41, children: items1 };
+                                                items1 = [tmp42, tmp46, tmp49];
+                                                class M {
                                                   constructor() {
                                                     let num = 0;
+                                                    const tmp = customizationOption;
                                                     if (!closure_5) {
                                                       num = 0;
-                                                      if (!closure_1) {
+                                                      if (tmp !== tmp2) {
                                                         num = 0;
                                                         if (!stateFromStores) {
                                                           num = 0;
@@ -395,29 +387,51 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
                                                     return num;
                                                   }
                                                 }
-                                                cResult[41] = tmp40;
-                                                cResult[42] = tmp41;
-                                                cResult[43] = tmp43;
-                                                cResult[44] = tmp47;
-                                                cResult[45] = tmp51;
-                                                tmp49 = tmp51;
+                                                cResult[43] = tmp41;
+                                                cResult[44] = tmp42;
+                                                cResult[45] = tmp46;
+                                                cResult[46] = tmp49;
+                                                cResult[47] = tmp55;
+                                                tmp52 = tmp55;
                                               }
                                             }
                                           }
-                                          class E {
-                                            constructor() {
-                                              return useReducedMotion.useReducedMotion;
+                                          if (null != tmp39) {
+                                            ({ style: items2, children: closure_8(selectedOptionId(tmp2[23]), obj5) });
+                                            items2 = [tmp6.details, tmp24Result];
+                                            View = tmp20(tmp2[20]).View;
+                                            obj5 = { asset: tmp39, hideDescriptionAndRarity: !tmp7 };
+                                            class M {
+                                              constructor() {
+                                                let num = 0;
+                                                const tmp = customizationOption;
+                                                if (!closure_5) {
+                                                  num = 0;
+                                                  if (tmp !== tmp2) {
+                                                    num = 0;
+                                                    if (!stateFromStores) {
+                                                      num = 0;
+                                                      if (!isScreenReaderEnabled) {
+                                                        const _Math = Math;
+                                                        num = Math.max(earnedCount - 1, 0);
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                                return num;
+                                              }
                                             }
                                           }
-                                          cResult[36] = tmp23Result;
-                                          cResult[37] = undefined !== hideDescriptionAndRarity && hideDescriptionAndRarity;
-                                          cResult[38] = tmp38;
-                                          class H {
+                                          cResult[38] = tmp24Result;
+                                          cResult[39] = !tmp7;
+                                          cResult[40] = tmp39;
+                                          class M {
                                             constructor() {
                                               let num = 0;
+                                              const tmp = customizationOption;
                                               if (!closure_5) {
                                                 num = 0;
-                                                if (!closure_1) {
+                                                if (tmp !== tmp2) {
                                                   num = 0;
                                                   if (!stateFromStores) {
                                                     num = 0;
@@ -431,32 +445,22 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
                                               return num;
                                             }
                                           }
-                                          cResult[40] = null != tmp38;
-                                          tmp47 = tmp48;
+                                          cResult[42] = null != tmp39;
+                                          tmp49 = tmp50;
                                         }
                                       }
                                     }
                                   }
                                 }
                               }
-                              class E {
-                                constructor() {
-                                  return useReducedMotion.useReducedMotion;
-                                }
-                              }
-                              tmp45[0] = customizationOption;
-                              tmp45[1] = arr2;
-                              tmp45[2] = selectedOptionId;
-                              tmp45[3] = undefined !== disabled && disabled;
-                              tmp45[4] = undefined !== hideDescriptionAndRarity && hideDescriptionAndRarity;
-                              tmp45[5] = tmp20;
-                              tmp45[6] = tmp32;
-                              class H {
+                              const obj6 = { customizationOption, options: availableTraitOptions, selectedOptionId, disabled: undefined !== disabled && disabled, hideRarity: !tmp7, introStartIndex: tmp21, onIntroStep: tmp33, onSelectOption: null };
+                              class M {
                                 constructor() {
                                   let num = 0;
+                                  const tmp = customizationOption;
                                   if (!closure_5) {
                                     num = 0;
-                                    if (!closure_1) {
+                                    if (tmp !== tmp2) {
                                       num = 0;
                                       if (!stateFromStores) {
                                         num = 0;
@@ -470,33 +474,34 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
                                   return num;
                                 }
                               }
-                              const tmp46 = closure_7(tmp19(stateFromStores[7]), tmp45);
-                              cResult[28] = customizationOption;
-                              cResult[29] = undefined !== disabled && disabled;
-                              cResult[30] = undefined !== hideDescriptionAndRarity && hideDescriptionAndRarity;
-                              cResult[31] = tmp20;
-                              cResult[32] = onSelectOption;
-                              cResult[33] = selectedOptionId;
-                              cResult[34] = arr2;
-                              cResult[35] = tmp46;
-                              tmp43 = tmp46;
+                              const tmp48 = closure_8(selectedOptionId(tmp2[9]), obj6);
+                              cResult[30] = availableTraitOptions;
+                              cResult[31] = customizationOption;
+                              cResult[32] = undefined !== disabled && disabled;
+                              cResult[33] = !tmp7;
+                              cResult[34] = tmp21;
+                              cResult[35] = onSelectOption;
+                              cResult[36] = selectedOptionId;
+                              cResult[37] = tmp48;
+                              tmp46 = tmp48;
                             }
                           }
                         }
-                        class E {
-                          constructor() {
-                            return useReducedMotion.useReducedMotion;
-                          }
+                        let tmp43 = tmp5;
+                        if (tmp43) {
+                          const obj7 = { customizationOption, earnedCount: diff, totalCount };
+                          tmp43 = closure_8(closure_13, obj7);
                         }
-                        cResult[23] = customizationOption;
-                        cResult[24] = diff;
-                        cResult[25] = undefined !== showEarnedCount && showEarnedCount;
-                        class H {
+                        cResult[25] = customizationOption;
+                        cResult[26] = diff;
+                        cResult[27] = undefined !== showEarnedCount && showEarnedCount;
+                        class M {
                           constructor() {
                             let num = 0;
+                            const tmp = customizationOption;
                             if (!closure_5) {
                               num = 0;
-                              if (!closure_1) {
+                              if (tmp !== tmp2) {
                                 num = 0;
                                 if (!stateFromStores) {
                                   num = 0;
@@ -510,25 +515,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
                             return num;
                           }
                         }
-                        cResult[27] = undefined !== showEarnedCount && showEarnedCount;
-                        tmp41 = tmp42;
+                        cResult[29] = tmp43;
+                        tmp42 = tmp43;
                       }
-                      const items2 = [, ];
-                      class E {
-                        constructor() {
-                          return useReducedMotion.useReducedMotion;
-                        }
-                      }
-                      items2[1] = style;
-                      cResult[20] = style;
-                      cResult[21] = tmp8.container;
-                      cResult[22] = items2;
-                      class H {
+                      const items3 = [tmp6.container, style];
+                      cResult[22] = style;
+                      cResult[23] = tmp6.container;
+                      cResult[24] = items3;
+                      class M {
                         constructor() {
                           let num = 0;
+                          const tmp = customizationOption;
                           if (!closure_5) {
                             num = 0;
-                            if (!closure_1) {
+                            if (tmp !== tmp2) {
                               num = 0;
                               if (!stateFromStores) {
                                 num = 0;
@@ -543,17 +543,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
                         }
                       }
                     }
-                    let found = arr2.find((optionId) => optionId.optionId === selectedOptionId);
+                    let found = availableTraitOptions.find((optionId) => optionId.optionId === selectedOptionId);
                     if (found == null) {
-                      found = arr2[0];
+                      found = availableTraitOptions[0];
                     }
-                    cResult[17] = selectedOptionId;
-                    class H {
+                    cResult[19] = availableTraitOptions;
+                    class M {
                       constructor() {
                         let num = 0;
+                        const tmp = customizationOption;
                         if (!closure_5) {
                           num = 0;
-                          if (!closure_1) {
+                          if (tmp !== tmp2) {
                             num = 0;
                             if (!stateFromStores) {
                               num = 0;
@@ -567,28 +568,29 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
                         return num;
                       }
                     }
-                    cResult[19] = found;
-                    tmp38 = found;
+                    cResult[21] = found;
+                    tmp39 = found;
                   }
                 }
               }
-              const obj4 = { visibleTraitOptions: arr2, selectedOptionId, onSelectOption, paused: tmp33 };
-              cResult[12] = onSelectOption;
-              cResult[13] = selectedOptionId;
-              cResult[14] = tmp33;
-              cResult[15] = arr2;
-              cResult[16] = obj4;
-              tmp35 = obj4;
+              const obj8 = { availableTraitOptions, selectedOptionId, onSelectOption, paused: tmp34 };
+              cResult[14] = availableTraitOptions;
+              cResult[15] = onSelectOption;
+              cResult[16] = selectedOptionId;
+              cResult[17] = tmp34;
+              cResult[18] = obj8;
+              tmp36 = obj8;
             }
           }
         }
       }
-      class H {
+      class M {
         constructor() {
           let num = 0;
+          const tmp = customizationOption;
           if (!closure_5) {
             num = 0;
-            if (!closure_1) {
+            if (tmp !== tmp2) {
               num = 0;
               if (!stateFromStores) {
                 num = 0;
@@ -602,76 +604,73 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
           return num;
         }
       }
-      cResult[6] = earnedCount;
-      cResult[7] = null != selectedOptionId;
-      cResult[8] = stateFromStores;
-      cResult[9] = isScreenReaderEnabled;
-      cResult[10] = undefined !== skipIntro && skipIntro;
-      cResult[11] = H;
-      tmp18 = H;
+      cResult[8] = customizationOption;
+      cResult[9] = earnedCount;
+      cResult[10] = null != selectedOptionId;
+      cResult[11] = stateFromStores;
+      cResult[12] = isScreenReaderEnabled;
+      cResult[13] = M;
+      tmp19 = M;
     }
   }
-  const obj5 = { customizationOption, options, savedOptionId };
-  cResult[2] = customizationOption;
-  cResult[3] = options;
-  cResult[4] = savedOptionId;
-  cResult[5] = obj5;
-  tmp14 = obj5;
-}) : (function TraitPicker(style) {
+  const obj9 = { customizationOption, optionIds, savedOptionId, rarityOrder };
+  cResult[4] = customizationOption;
+  cResult[5] = optionIds;
+  cResult[6] = savedOptionId;
+  cResult[7] = obj9;
+  tmp15 = obj9;
+}) : (function TraitPicker(customizationOption) {
+  let availableTraitOptions;
   let closure_2;
   let closure_3;
-  let customizationOption;
-  let disabled;
+  let duration;
   let earnedCount;
-  let hideDescriptionAndRarity;
   let items1;
   let items2;
   let items3;
-  let obj9;
-  let options;
+  let obj11;
+  let optionIds;
   let savedOptionId;
-  let tmp11;
+  let showEarnedCount;
   let tmp12;
-  let tmp14;
-  let visibleTraitOptions;
-  ({ customizationOption, disabled } = style);
-  style = style.style;
-  if (disabled === undefined) {
-    disabled = false;
-  }
-  const selectedOptionId = style.selectedOptionId;
-  ({ hideDescriptionAndRarity, options, savedOptionId } = style);
-  if (hideDescriptionAndRarity === undefined) {
-    hideDescriptionAndRarity = false;
-  }
-  let flag = style.skipIntro;
+  let tmp13;
+  let tmp15;
+  customizationOption = customizationOption.customizationOption;
+  let flag = customizationOption.disabled;
+  const style = customizationOption.style;
   if (flag === undefined) {
     flag = false;
   }
-  let flag2 = style.showEarnedCount;
-  if (flag2 === undefined) {
-    flag2 = false;
+  const selectedOptionId = customizationOption.selectedOptionId;
+  ({ showEarnedCount, optionIds, savedOptionId } = customizationOption);
+  if (showEarnedCount === undefined) {
+    showEarnedCount = false;
   }
-  const onSelectOption = style.onSelectOption;
+  const onSelectOption = customizationOption.onSelectOption;
   dependencyMap = undefined;
   earnedCount = undefined;
   let useReducedMotion;
-  const tmp = closure_11();
-  let obj = selectedOptionId(504);
+  let tmp = closure_12();
+  const tmp2 = customizationOption;
+  let obj = customizationOption(6347);
+  const tmp4 = !obj.getIsTraitRarityVisible(customizationOption);
+  let obj2 = customizationOption(504);
   let items = [useReducedMotion];
-  dependencyMap = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let obj2 = selectedOptionId(5253);
-  _slicedToArray = obj2.useIsScreenReaderEnabled();
-  const obj3 = selectedOptionId(12947);
-  const traitPickerOptions = obj3.useTraitPickerOptions({ customizationOption, options, savedOptionId });
-  ({ visibleTraitOptions, earnedCount } = traitPickerOptions);
-  let closure_5 = tmp5;
+  dependencyMap = obj2.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const obj3 = customizationOption(5253);
+  _slicedToArray = obj3.useIsScreenReaderEnabled();
+  const obj4 = customizationOption(12966);
+  const obj5 = { customizationOption, optionIds, savedOptionId, rarityOrder };
+  const traitPickerOptions = obj4.useTraitPickerOptions(obj5);
+  ({ availableTraitOptions, earnedCount } = traitPickerOptions);
+  let closure_5 = tmp6;
   const totalCount = traitPickerOptions.totalCount;
-  const tmp7 = flag(5585)(() => {
+  const tmp8 = selectedOptionId(5585)(() => {
     let num = 0;
+    const tmp = customizationOption;
     if (!closure_5) {
       num = 0;
-      if (!flag) {
+      if (tmp !== tmp2) {
         num = 0;
         if (!closure_2) {
           num = 0;
@@ -684,84 +683,82 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
     }
     return num;
   });
-  let tmp8 = tmp5;
-  if (!tmp8) {
+  let tmp9 = tmp6;
+  if (!tmp9) {
     let num = 0;
-    tmp8 = 0 === tmp7;
+    tmp9 = 0 === tmp8;
   }
-  useReducedMotion = tmp8;
-  const tmp2Result = selectedOptionId(5038);
-  class C {
-    constructor() {
-      let Easing;
-      let items;
-      const obj = { duration, easing: Easing.out(ReanimatedRexport.Easing.cubic) };
-      Easing = ReanimatedRexport.Easing;
-      let num = 0;
-      const withTiming = timing.withTiming;
-      timing;
-      if (useReducedMotion) {
-        num = 1;
-      }
-      let num2 = 0;
-      const obj2 = { opacity: withTiming(num, obj), transform: items };
-      const withTiming2 = tmp(5192).withTiming;
-      timing;
-      if (!useReducedMotion) {
-        num2 = PX_12;
-      }
-      items = [{ translateY: withTiming2(num2, obj) }];
-      ({ translateY: withTiming2(num2, obj) });
-      return obj2;
+  useReducedMotion = tmp9;
+  const fn = function f() {
+    let Easing;
+    let items;
+    const obj = { duration, easing: Easing.out(ReanimatedRexport.Easing.cubic) };
+    Easing = ReanimatedRexport.Easing;
+    let num = 0;
+    const withTiming = timing.withTiming;
+    timing;
+    if (useReducedMotion) {
+      num = 1;
     }
-  }
-  C.__closure = { INTRO_DETAILS_DURATION_MS: v600, Easing: selectedOptionId(5038).Easing, withTiming: selectedOptionId(5192).withTiming, isDetailsVisible: tmp8, INTRO_DETAILS_OFFSET_Y: PX_12 };
-  C.__workletHash = 13382203050567;
-  C.__initData = __initData2;
-  ({ INTRO_DETAILS_DURATION_MS: v600, Easing: selectedOptionId(5038).Easing, withTiming: selectedOptionId(5192).withTiming, isDetailsVisible: tmp8, INTRO_DETAILS_OFFSET_Y: PX_12 });
-  const animatedStyle = tmp2Result.useAnimatedStyle(C);
-  [tmp11, tmp12] = earnedCount.useState(tmp7);
-  _slicedToArray(earnedCount.useState(tmp7), 2);
-  const obj5 = { visibleTraitOptions, selectedOptionId, onSelectOption, paused: tmp14 };
-  tmp14 = disabled;
-  const useAutoSelectTraitOption = tmp2(12948).useAutoSelectTraitOption;
-  selectedOptionId(12948);
-  if (!disabled) {
-    let tmp15 = !tmp5;
-    if (tmp15) {
-      let num2 = 0;
-      tmp15 = tmp11 > 0;
+    let num2 = 0;
+    const obj2 = { opacity: withTiming(num, obj), transform: items };
+    const withTiming2 = tmp(5192).withTiming;
+    timing;
+    if (!useReducedMotion) {
+      num2 = PX_12;
     }
-    tmp14 = tmp15;
+    items = [{ translateY: withTiming2(num2, obj) }];
+    ({ translateY: withTiming2(num2, obj) });
+    return obj2;
+  };
+  const tmp2Result = tmp2(5038);
+  fn.__closure = { INTRO_DETAILS_DURATION_MS, Easing: tmp2(5038).Easing, withTiming: tmp2(5192).withTiming, isDetailsVisible: tmp9, INTRO_DETAILS_OFFSET_Y: PX_12 };
+  fn.__workletHash = 13382203050567;
+  fn.__initData = __initData2;
+  ({ INTRO_DETAILS_DURATION_MS, Easing: tmp2(5038).Easing, withTiming: tmp2(5192).withTiming, isDetailsVisible: tmp9, INTRO_DETAILS_OFFSET_Y: PX_12 });
+  const animatedStyle = tmp2Result.useAnimatedStyle(fn);
+  [tmp12, tmp13] = earnedCount.useState(tmp8);
+  _slicedToArray(earnedCount.useState(tmp8), 2);
+  const obj7 = { availableTraitOptions, selectedOptionId, onSelectOption, paused: tmp15 };
+  tmp15 = flag;
+  const useAutoSelectTraitOption = tmp2(12967).useAutoSelectTraitOption;
+  tmp2(12967);
+  if (!flag) {
+    let tmp16 = !tmp6;
+    if (tmp16) {
+      let num2 = 0;
+      tmp16 = tmp12 > 0;
+    }
+    tmp15 = tmp16;
   }
-  const autoSelectTraitOption = useAutoSelectTraitOption(obj5);
+  const autoSelectTraitOption = useAutoSelectTraitOption(obj7);
   let diff = earnedCount;
   if (null == selectedOptionId) {
-    diff = earnedCount - tmp11;
+    diff = earnedCount - tmp12;
   }
-  let found = visibleTraitOptions.find((optionId) => optionId.optionId === selectedOptionId);
+  let found = availableTraitOptions.find((optionId) => optionId.optionId === selectedOptionId);
   if (found == null) {
-    found = visibleTraitOptions[0];
+    found = availableTraitOptions[0];
   }
-  const obj6 = { style: items1, children: items2 };
+  const obj8 = { style: items1, children: items2 };
   items1 = [tmp.container, style];
-  const tmp19 = closure_8;
-  const tmp20 = closure_5;
-  if (flag2) {
-    const obj7 = { customizationOption, earnedCount: diff, totalCount };
-    flag2 = closure_7(closure_12, obj7);
+  const tmp20 = closure_9;
+  const tmp21 = closure_5;
+  if (showEarnedCount) {
+    const obj9 = { customizationOption, earnedCount: diff, totalCount };
+    showEarnedCount = closure_8(closure_13, obj9);
   }
-  items2 = [flag2, closure_7(flag(12945), { customizationOption, options: visibleTraitOptions, selectedOptionId, disabled, hideRarity: hideDescriptionAndRarity, introStartIndex: tmp7, onIntroStep: tmp12, onSelectOption }), ];
-  let tmp23Result = null != found;
-  if (tmp23Result) {
-    const obj8 = { style: items3, children: closure_7(flag(12949), obj9) };
+  items2 = [showEarnedCount, closure_8(selectedOptionId(12964), { customizationOption, options: availableTraitOptions, selectedOptionId, disabled: flag, hideRarity: tmp4, introStartIndex: tmp8, onIntroStep: tmp13, onSelectOption }), ];
+  let tmp24Result = null != found;
+  if (tmp24Result) {
+    const obj10 = { style: items3, children: closure_8(selectedOptionId(12968), obj11) };
     items3 = [tmp.details, animatedStyle];
-    View = tmp6(5038).View;
-    obj9 = { asset: found, hideDescriptionAndRarity };
-    tmp23Result = tmp23(View, obj8);
+    View = tmp7(5038).View;
+    obj11 = { asset: found, hideDescriptionAndRarity: tmp4 };
+    tmp24Result = tmp24(View, obj10);
   }
-  items2[2] = tmp23Result;
-  return tmp19(tmp20, obj6);
+  items2[2] = tmp24Result;
+  return tmp20(tmp21, obj8);
 });
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/customization/TraitPicker.tsx");
 

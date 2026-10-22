@@ -1,8 +1,50 @@
 // Module ID: 15556
 // Function ID: 15557
-// Dependencies: []
+// Dependencies: [15525, 15557, 15500, 15553]
 
 // Module 15556
-const obj = { name: "react-native-url-polyfill", version: "2.0.0", description: "A lightweight and trustworthy URL polyfill for React Native", keywords: ["URL", "URLSearchParams", "polyfill", "react native", "whatwg-url"], bugs: { url: "https://github.com/charpeni/react-native-url-polyfill/issues" }, homepage: "https://github.com/charpeni/react-native-url-polyfill", readme: "https://github.com/charpeni/react-native-url-polyfill#readme", repository: { type: "git", url: "https://github.com/charpeni/react-native-url-polyfill.git" }, main: "index.js", types: "index.d.ts", scripts: { test: "jest", lint: "eslint .", prepare: "husky install", "bundle-size": "node scripts/bundle-size" }, author: "Nicolas Charpentier <nicolas.charpentier079@gmail.com>", license: "MIT", dependencies: { "whatwg-url-without-unicode": "8.0.0-3" }, devDependencies: { "@react-native-community/eslint-config": "3.2.0", detox: "20.9.1", eslint: "8.44.0", "eslint-plugin-prettier": "4.2.1", husky: "8.0.3", jest: "29.5.0", "lint-staged": "13.2.3", "metro-react-native-babel-preset": "0.76.7", nanoid: "3.3.6", prettier: "2.8.8", react: "18.2.0", "react-native": "0.72.1", "react-native-bundle-scale": "1.1.0", typescript: "5.1.6" }, peerDependencies: { "react-native": "*" }, jest: { preset: "react-native", testPathIgnorePatterns: ["/node_modules/", "./platforms/"] }, "lint-staged": { "*.js": ["eslint --fix"] } };
+import _mod15500 from "module_15500" /* 15500 */;
+import _mod15525 from "module_15525" /* 15525 */;
+import defineProperty2 from "defineProperty2" /* 15553 */;
+import _mod15557 from "module_15557" /* 15557 */;
 
-export default obj;
+
+export default (arg0, arg1, value, arg3) => {
+  const obj = arg3 || {};
+  let flag = obj.enumerable;
+  let name = arg1;
+  const tmp = arg1;
+  if (undefined !== obj.name) {
+    name = obj.name;
+  }
+  if (_mod15525(value)) {
+    _mod15557(value, name, obj);
+  }
+  if (obj.global) {
+    if (flag) {
+      arg0[arg1] = value;
+    } else {
+      _mod15500(arg1, value);
+    }
+  } else {
+    try {
+      if (obj.unsafe) {
+        if (arg0[arg1]) {
+          flag = true;
+        }
+      } else {
+        delete tmp5[tmp];
+      }
+    } catch (err) {
+    }
+    const tmp6 = flag;
+    if (tmp6) {
+      arg0[arg1] = value;
+    } else {
+      const obj2 = { value, enumerable: false, configurable: !obj.nonConfigurable, writable: !obj.nonWritable };
+      const tmp2Result = defineProperty2;
+      tmp2Result.f(arg0, arg1, obj2);
+    }
+  }
+  return arg0;
+};

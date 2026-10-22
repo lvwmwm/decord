@@ -1,19 +1,19 @@
-// Module ID: 16839
-// Function ID: 16840
+// Module ID: 16861
+// Function ID: 16862
 // Name: DevToolsAnalyticsScreen
-// Dependencies: [32, 19, 17, 1392, 15588, 1087, 21, 4969, 587, 558, 576, 5220, 10121, 6889, 2049, 9102, 6894, 7269, 5668, 504, 12085, 7279, 5675, 16834, 6973, 7131, 5964, 7206, 2]
+// Dependencies: [32, 19, 17, 1392, 15601, 1087, 21, 4969, 587, 558, 576, 5220, 10128, 6888, 2049, 9109, 6893, 7270, 5668, 504, 12096, 7280, 5675, 16856, 6972, 7130, 5963, 7205, 2]
 
-// Module 16839 (DevToolsAnalyticsScreen)
+// Module 16861 (DevToolsAnalyticsScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import _modDef2049 from "module_2049" /* 2049 */;
-import ClipboardUtils from "ClipboardUtils" /* 7269 */;
+import ClipboardUtils from "ClipboardUtils" /* 7270 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import AnalyticsLogStore from "AnalyticsLogStore" /* 15588 */;
+import AnalyticsLogStore from "AnalyticsLogStore" /* 15601 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -117,7 +117,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Logged
     tmp7 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp13 = closure_8(tmp(10121).AnalyticsIcon, {});
+    const tmp13 = closure_8(tmp(10128).AnalyticsIcon, {});
     cResult[2] = tmp13;
     tmp11 = tmp13;
   } else {
@@ -145,21 +145,21 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Logged
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     class E {
       constructor() {
-        return closure_2(() => { /* body not rendered: F151997 */ });
+        return closure_2(() => { /* body not rendered: F152253 */ });
       }
     }
     cResult[5] = E;
   } else {
     class E {
       constructor() {
-        return closure_2(() => { /* body not rendered: F151997 */ });
+        return closure_2(() => { /* body not rendered: F152253 */ });
       }
     }
   }
   if (cResult[6] === end) {
     class E {
       constructor() {
-        return closure_2(() => { /* body not rendered: F151997 */ });
+        return closure_2(() => { /* body not rendered: F152253 */ });
       }
     }
   }
@@ -168,8 +168,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Logged
   cResult[8] = start;
   cResult[9] = !tmp6;
   cResult[10] = tmp14;
-  cResult[11] = closure_8(tmp(6889).TableRow, { arrow: !tmp6, icon: tmp11, label: event, subLabel: tmp14, onPress: tmp16, start, end });
-  closure_8(tmp(6889).TableRow, { arrow: !tmp6, icon: tmp11, label: event, subLabel: tmp14, onPress: tmp16, start, end });
+  cResult[11] = closure_8(tmp(6888).TableRow, { arrow: !tmp6, icon: tmp11, label: event, subLabel: tmp14, onPress: tmp16, start, end });
+  closure_8(tmp(6888).TableRow, { arrow: !tmp6, icon: tmp11, label: event, subLabel: tmp14, onPress: tmp16, start, end });
 }) : (function LoggedEvent(arg0) {
   let Text;
   let _undefined;
@@ -203,7 +203,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Logged
   let tmp6 = View;
   let obj = {
     arrow: !tmp5Result2,
-    icon: closure_8(fingerprint(10121).AnalyticsIcon, {}),
+    icon: closure_8(fingerprint(10128).AnalyticsIcon, {}),
     label: event,
     subLabel: str2,
     onPress() {
@@ -212,7 +212,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Logged
     start,
     end
   };
-  const TableRow = fingerprint(6889).TableRow;
+  const TableRow = fingerprint(6888).TableRow;
   if ("name" in properties) {
     str2 = properties.name;
   } else {
@@ -237,7 +237,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Logged
     let tmp7Result = null != user;
     const tmp12 = importDefault;
     if (tmp7Result) {
-      const obj7 = { name: "User ", children: closure_8(tmp12(9102), obj8) };
+      const obj7 = { name: "User ", children: closure_8(tmp12(9109), obj8) };
       obj8 = { user };
       tmp7Result = tmp7(tmp11, obj7);
     }
@@ -253,7 +253,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Logged
             },
         children: items3
       };
-      const PressableOpacity = tmp8(6894).PressableOpacity;
+      const PressableOpacity = tmp8(6893).PressableOpacity;
       const obj10 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: items2, children: fingerprint };
       items2 = [tmp.monospace, { marginRight: 4 }];
       items3 = [tmp7(fingerprint(5220).Text, obj10), tmp7(fingerprint(5668).CopyIcon, { size: "sm" })];
@@ -349,7 +349,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAnal
     }
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp19 = closure_8(trimmed(12085).ArrowsUpDownIcon, {});
+      const tmp19 = closure_8(trimmed(12096).ArrowsUpDownIcon, {});
       cResult[6] = tmp19;
       tmp17 = tmp19;
     } else {
@@ -357,7 +357,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAnal
     }
     if (cResult[7] !== first) {
       const obj2 = { icon: tmp17, label: "Reverse Events", value: first, onValueChange: tmp11 };
-      const tmp22 = closure_8(trimmed(7279).TableSwitchRow, obj2);
+      const tmp22 = closure_8(trimmed(7280).TableSwitchRow, obj2);
       cResult[7] = first;
       cResult[8] = tmp22;
       tmp20 = tmp22;
@@ -366,8 +366,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAnal
     }
     const _Symbol2 = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { arrow: true, variant: "danger", icon: closure_8(trimmed(5675).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(16834).clearAnalyticsLog };
-      const TableRow = tmp(6889).TableRow;
+      const obj3 = { arrow: true, variant: "danger", icon: closure_8(trimmed(5675).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(16856).clearAnalyticsLog };
+      const TableRow = tmp(6888).TableRow;
       const tmp25 = closure_8(TableRow, obj3);
       cResult[9] = tmp25;
       tmp23 = tmp25;
@@ -377,7 +377,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAnal
     if (cResult[10] !== tmp20) {
       const obj4 = { title: "Actions", hasIcons: true, children: items1 };
       items1 = [tmp20, tmp23];
-      const tmp28 = closure_9(trimmed(6973).TableRowGroup, obj4);
+      const tmp28 = closure_9(trimmed(6972).TableRowGroup, obj4);
       cResult[10] = tmp20;
       cResult[11] = tmp28;
       tmp26 = tmp28;
@@ -387,7 +387,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAnal
     const _Symbol3 = Symbol;
     if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
       const obj5 = { placeholder: "Search by event name", onChange: tmp13 };
-      const tmp31 = closure_8(trimmed(7131).SearchField, obj5);
+      const tmp31 = closure_8(trimmed(7130).SearchBar, obj5);
       cResult[12] = tmp31;
       tmp29 = tmp31;
     } else {
@@ -410,7 +410,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAnal
       }
       if (cResult[18] !== tmp36) {
         const obj7 = { title: "Analytics Events", hasIcons: false, children: tmp36 };
-        const tmp42 = closure_8(trimmed(6973).TableRowGroup, obj7);
+        const tmp42 = closure_8(trimmed(6972).TableRowGroup, obj7);
         cResult[18] = tmp36;
         cResult[19] = tmp42;
         tmp40 = tmp42;
@@ -425,7 +425,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAnal
             tmp43 = cResult[23];
           }
           if (cResult[24] !== arr4.length) {
-            const fn2 = function k(arg0) {
+            const fn2 = function j(arg0) {
               let index;
               let item;
               ({ item, index } = arg0);
@@ -464,7 +464,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAnal
             }
           }
           const obj9 = { ListHeaderComponent: tmp43, contentContainerStyle: tmp4.contentContainer, extraData: stateFromStores, data: arr4, renderItem: tmp46 };
-          const tmp49 = closure_8(trimmed(7206).FlashList, obj9);
+          const tmp49 = closure_8(trimmed(7205).FlashList, obj9);
           cResult[26] = arr4;
           cResult[27] = stateFromStores;
           cResult[28] = tmp4.contentContainer;
@@ -476,7 +476,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAnal
       }
       const obj10 = { spacing: 16, children: items2 };
       items2 = [tmp26, tmp32, tmp40];
-      const tmp45 = closure_9(trimmed(5964).Stack, obj10);
+      const tmp45 = closure_9(trimmed(5963).Stack, obj10);
       cResult[20] = tmp40;
       cResult[21] = tmp26;
       cResult[22] = tmp32;
@@ -484,13 +484,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAnal
       tmp43 = tmp45;
     }
     if (0 === loggedEvents.length) {
-      tmp37 = closure_8(tmp(6889).TableRow, { label: "No events logged." });
+      tmp37 = closure_8(tmp(6888).TableRow, { label: "No events logged." });
     } else {
       tmp37 = null;
       if (0 === arr3.length) {
         const _HermesInternal = HermesInternal;
         const obj11 = { label: "No events match \"" + str + "\"" };
-        const TableRow2 = tmp(6889).TableRow;
+        const TableRow2 = tmp(6888).TableRow;
         tmp37 = closure_8(TableRow2, obj11);
       }
     }
@@ -559,30 +559,30 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAnal
     reversed = items1;
   }
   const obj2 = { style: tmp.analyticsContainer, children: closure_8(FlashList, obj8) };
-  FlashList = tmp2(7206).FlashList;
-  const Stack = tmp2(5964).Stack;
+  FlashList = tmp2(7205).FlashList;
+  const Stack = tmp2(5963).Stack;
   const obj3 = { title: "Actions", hasIcons: true, children: items2 };
-  const TableRowGroup = tmp2(6973).TableRowGroup;
-  const obj4 = { icon: closure_8(trimmed(12085).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp7 };
-  const TableSwitchRow = tmp2(7279).TableSwitchRow;
+  const TableRowGroup = tmp2(6972).TableRowGroup;
+  const obj4 = { icon: closure_8(trimmed(12096).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp7 };
+  const TableSwitchRow = tmp2(7280).TableSwitchRow;
   items2 = [closure_8(TableSwitchRow, obj4), ];
-  const obj5 = { arrow: true, variant: "danger", icon: closure_8(trimmed(5675).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(16834).clearAnalyticsLog };
-  const TableRow = tmp2(6889).TableRow;
+  const obj5 = { arrow: true, variant: "danger", icon: closure_8(trimmed(5675).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(16856).clearAnalyticsLog };
+  const TableRow = tmp2(6888).TableRow;
   items2[1] = closure_8(TableRow, obj5);
   const items3 = [closure_9(TableRowGroup, obj3), , ];
-  const obj6 = { style: tmp.searchFieldContainer, children: closure_8(trimmed(7131).SearchField, { placeholder: "Search by event name", onChange: tmp9 }) };
+  const obj6 = { style: tmp.searchFieldContainer, children: closure_8(trimmed(7130).SearchBar, { placeholder: "Search by event name", onChange: tmp9 }) };
   items3[1] = closure_8(View, obj6);
-  const TableRowGroup2 = tmp2(6973).TableRowGroup;
+  const TableRowGroup2 = tmp2(6972).TableRowGroup;
   const tmp13 = View;
   const tmp14 = closure_9;
   if (0 === loggedEvents.length) {
-    tmp12Result = tmp12(tmp2(6889).TableRow, { label: "No events logged." });
+    tmp12Result = tmp12(tmp2(6888).TableRow, { label: "No events logged." });
   } else {
     tmp12Result = null;
     if (0 === found.length) {
       const _HermesInternal = HermesInternal;
       const obj7 = { label: "No events match \"" + str + "\"" };
-      const TableRow2 = tmp2(6889).TableRow;
+      const TableRow2 = tmp2(6888).TableRow;
       tmp12Result = tmp12(TableRow2, obj7);
     }
   }

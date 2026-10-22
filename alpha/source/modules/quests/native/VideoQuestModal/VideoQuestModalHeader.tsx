@@ -1,13 +1,13 @@
-// Module ID: 16390
-// Function ID: 16391
+// Module ID: 16412
+// Function ID: 16413
 // Name: VideoQuestModalHeader
-// Dependencies: [19, 17, 7762, 21, 4969, 587, 558, 576, 16364, 9539, 7782, 4884, 14065, 1128, 5220, 16386, 2]
+// Dependencies: [19, 17, 7763, 21, 4969, 587, 558, 576, 16387, 9546, 7783, 4884, 14079, 1128, 5220, 16408, 2]
 
-// Module 16390 (VideoQuestModalHeader)
+// Module 16412 (VideoQuestModalHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import VideoQuestUIStore from "VideoQuestUIStore" /* 7762 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7782 */;
+import VideoQuestUIStore from "VideoQuestUIStore" /* 7763 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7783 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -42,9 +42,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoQuestMo
   ({ closeButtonIconColor, onClose, style, showCurrentVideoTime, withTextShadow } = arg0);
   let textShadow = undefined !== withTextShadow && withTextShadow;
   const tmp5 = closure_7();
-  const tmpResult = tmp(16364);
+  const tmpResult = tmp(16387);
   quest = tmpResult.useVideoQuestModalContext().quest;
-  const tmpResult3 = tmp(9539);
+  const tmpResult3 = tmp(9546);
   const questTaskDetails = tmpResult3.useQuestTaskDetails(quest);
   if (cResult[0] === quest.id) {
     let tmp7;
@@ -136,7 +136,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoQuestMo
                       tmp34 = tmp37;
                     }
                     const obj4 = { iconColor: closeButtonIconColor, onClose };
-                    const tmp33 = closure_5(questTaskDetails(16386), obj4);
+                    const tmp33 = closure_5(questTaskDetails(16408), obj4);
                     cResult[23] = closeButtonIconColor;
                     cResult[24] = onClose;
                     cResult[25] = tmp33;
@@ -177,7 +177,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoQuestMo
     }
     let videoQuestProgressRemainingAccessibilityLabel;
     if (tmp14) {
-      const tmpResult4 = tmp(14065);
+      const tmpResult4 = tmp(14079);
       videoQuestProgressRemainingAccessibilityLabel = tmpResult4.getVideoQuestProgressRemainingAccessibilityLabel(questTaskDetails, tmp12);
     }
     cResult[3] = null != completedAt;
@@ -223,9 +223,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoQuestMo
   const withTextShadow = showCurrentVideoTime.withTextShadow;
   let textShadow = undefined !== withTextShadow && withTextShadow;
   const tmp2 = closure_7();
-  let obj = quest(16364);
+  let obj = quest(16387);
   quest = obj.useVideoQuestModalContext().quest;
-  let obj2 = quest(9539);
+  let obj2 = quest(9546);
   const questTaskDetails = obj2.useQuestTaskDetails(quest);
   const tmp6 = useVideoQuestUIStore((arg0) => {
     let tmp = arg0.videoProgress[quest.id];
@@ -245,7 +245,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoQuestMo
     completedAt = userStatus.completedAt;
   }
   if (null == completedAt) {
-    const tmp3Result = quest(14065);
+    const tmp3Result = quest(14079);
     videoQuestProgressRemainingAccessibilityLabel = tmp3Result.getVideoQuestProgressRemainingAccessibilityLabel(questTaskDetails, tmp8);
   }
   let obj3 = { style: items, children: items2 };
@@ -273,7 +273,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoQuestMo
     }
   }
   items1[1] = closure_5(Text2, obj7);
-  items2 = [closure_6(View, obj4), closure_5(questTaskDetails(16386), { iconColor: closeButtonIconColor, onClose })];
+  items2 = [closure_6(View, obj4), closure_5(questTaskDetails(16408), { iconColor: closeButtonIconColor, onClose })];
   return closure_6(View, obj3);
 });
 const result = size.fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestModalHeader.tsx");

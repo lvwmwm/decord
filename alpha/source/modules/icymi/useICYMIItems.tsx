@@ -1,14 +1,14 @@
-// Module ID: 17831
-// Function ID: 17832
+// Module ID: 17853
+// Function ID: 17854
 // Name: useICYMIItems
-// Dependencies: [19, 8791, 8804, 504, 8809, 2]
+// Dependencies: [19, 8798, 8811, 504, 8816, 2]
 // Exports: default
 
-// Module 17831 (useICYMIItems)
-import ICYMITypes from "ICYMITypes" /* 8804 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8809 */;
+// Module 17853 (useICYMIItems)
+import ICYMITypes from "ICYMITypes" /* 8811 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8816 */;
 import react from "react" /* 19 */;
-import ICYMIStore from "ICYMIStore" /* 8791 */;
+import ICYMIStore from "ICYMIStore" /* 8798 */;
 import size from "module_2" /* 2 */;
 
 function createItem(id, type, unread) {
@@ -98,7 +98,7 @@ export default function useICYMIItems() {
           let tmp9 = stateFromStoresObject[tmp6.id];
           let tmp10 = null == tmp9;
           if (tmp10) {
-            tmp10 = tmp6.type === stateFromStores1(8804).ICYMIItemTypes.MESSAGE;
+            tmp10 = tmp6.type === stateFromStores1(8811).ICYMIItemTypes.MESSAGE;
           }
           if (tmp10) {
             let message_context = tmp6.data.message_context;
@@ -144,7 +144,7 @@ export default function useICYMIItems() {
           let tmp22 = stateFromStoresObject[tmp19.id];
           let tmp23 = null == tmp22;
           if (tmp23) {
-            tmp23 = tmp19.type === stateFromStores1(8804).ICYMIItemTypes.MESSAGE;
+            tmp23 = tmp19.type === stateFromStores1(8811).ICYMIItemTypes.MESSAGE;
           }
           if (tmp23) {
             let message_context2 = tmp19.data.message_context;

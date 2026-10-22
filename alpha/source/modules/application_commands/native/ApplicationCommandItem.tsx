@@ -1,13 +1,13 @@
-// Module ID: 13219
-// Function ID: 13220
+// Module ID: 13235
+// Function ID: 13236
 // Name: ApplicationCommandItem
-// Dependencies: [19, 17, 4881, 10083, 21, 4969, 587, 558, 576, 5239, 504, 13047, 1128, 5655, 5220, 6894, 2]
+// Dependencies: [19, 17, 4881, 10090, 21, 4969, 587, 558, 576, 5239, 504, 13063, 1128, 5655, 5220, 6893, 2]
 
-// Module 13219 (ApplicationCommandItem)
+// Module 13235 (ApplicationCommandItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10083 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 13047 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10090 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 13063 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 4881 */;
 import Fragment from "Fragment" /* 21 */;
@@ -147,7 +147,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationC
                         }
                         const obj4 = { accessibilityLabel: tmp15, style: tmp19, accessibilityRole: "button", onPress, children: items1 };
                         items1 = [tmp25, tmp36, tmp40];
-                        const tmp45 = closure_8(tmp(6894).PressableOpacity, obj4);
+                        const tmp45 = closure_8(tmp(6893).PressableOpacity, obj4);
                         cResult[32] = onPress;
                         cResult[33] = tmp36;
                         cResult[34] = tmp40;
@@ -211,7 +211,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationC
       cResult[10] = formatToPlainStringResult;
       tmp15 = formatToPlainStringResult;
     }
-    const tmpResult4 = tmp(13047);
+    const tmpResult4 = tmp(13063);
     const applicationCommandsIconSource = tmpResult4.getApplicationCommandsIconSource(section, stateFromStores);
     cResult[4] = stateFromStores;
     cResult[5] = section;

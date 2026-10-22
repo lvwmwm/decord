@@ -1,9 +1,9 @@
-// Module ID: 9221
-// Function ID: 9222
+// Module ID: 9228
+// Function ID: 9229
 // Name: GameProfileScreen
-// Dependencies: [32, 19, 17, 9222, 21, 4969, 587, 558, 576, 1128, 5230, 8632, 9223, 5646, 9214, 7390, 8566, 5038, 9220, 9240, 5192, 9241, 9246, 9263, 5196, 9265, 5255, 9266, 9264, 9268, 9475, 9485, 9486, 5568, 5251, 2]
+// Dependencies: [32, 19, 17, 9229, 21, 4969, 587, 558, 576, 1128, 5230, 8639, 9230, 5646, 9221, 7391, 8567, 5038, 9227, 9247, 5192, 9248, 9253, 9270, 5196, 9272, 5255, 9273, 9271, 9275, 9482, 9492, 9493, 5568, 5251, 2]
 
-// Module 9221 (GameProfileScreen)
+// Module 9228 (GameProfileScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
@@ -11,14 +11,14 @@ import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
 import timing from "timing" /* 5192 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5196 */;
 import components_Button_Button from "components/Button/Button" /* 5230 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9214 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9220 */;
-import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 9246 */;
-import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 9265 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9221 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9227 */;
+import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 9253 */;
+import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 9272 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameProfileStore from "GameProfileStore" /* 9222 */;
+import GameProfileStore from "GameProfileStore" /* 9229 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

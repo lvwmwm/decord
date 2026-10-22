@@ -1,13 +1,13 @@
-// Module ID: 12432
-// Function ID: 12433
+// Module ID: 12442
+// Function ID: 12443
 // Name: ConjureThinkingOverlay
-// Dependencies: [19, 17, 10669, 21, 4969, 587, 558, 576, 504, 12223, 9931, 5220, 1128, 3830, 12221, 6891, 2]
+// Dependencies: [19, 17, 10676, 21, 4969, 587, 558, 576, 504, 12234, 9938, 5220, 1128, 3830, 12232, 6890, 2]
 
-// Module 12432 (ConjureThinkingOverlay)
+// Module 12442 (ConjureThinkingOverlay)
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConjureChatStore from "ConjureChatStore" /* 10669 */;
+import ConjureChatStore from "ConjureChatStore" /* 10676 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -83,8 +83,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
     tmp12 = cResult[5];
   }
   let str2;
-  const useConjureRevealedText = projectId(12223).useConjureRevealedText;
-  projectId(12223);
+  const useConjureRevealedText = projectId(12234).useConjureRevealedText;
+  projectId(12234);
   if (stateFromStores != null) {
     str2 = stateFromStores.text;
   }
@@ -94,7 +94,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
   const text = useConjureRevealedText(str2, tmp12).text;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { size: "xs", color: ref(587).colors.TEXT_BRAND };
-    const LightbulbIcon = tmp(9931).LightbulbIcon;
+    const LightbulbIcon = tmp(9938).LightbulbIcon;
     const tmp17 = closure_7(LightbulbIcon, obj3);
     cResult[6] = tmp17;
     tmp14 = tmp17;
@@ -162,7 +162,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
     const obj8 = { variant: "primary", shadow: "high", children: closure_8(closure_5, obj9) };
     obj9 = { style: tmp4.body, children: items3 };
     items3 = [tmp22, tmp26];
-    const Card = tmp(6891).Card;
+    const Card = tmp(6890).Card;
     const tmp37 = closure_7(Card, obj8);
     cResult[13] = tmp4.body;
     cResult[14] = tmp22;
@@ -183,7 +183,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
           }
           return scrollToEndResult;
         },
-      children: closure_7(ref(12221), obj11)
+      children: closure_7(ref(12232), obj11)
     };
     obj11 = { source: text };
     tmp29 = closure_7(closure_4, obj10);
@@ -215,8 +215,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
   const obj = projectId(504);
   const stateFromStores = obj.useStateFromStores(items, () => ConjureChatStore.getThinkingActivity(projectId), items1);
   let str;
-  const useConjureRevealedText = projectId(12223).useConjureRevealedText;
-  projectId(12223);
+  const useConjureRevealedText = projectId(12234).useConjureRevealedText;
+  projectId(12234);
   if (stateFromStores != null) {
     str = stateFromStores.text;
   }
@@ -229,9 +229,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
   obj3 = { style: tmp.opaque, children: closure_7(Card, obj11) };
   const obj4 = { style: tmp.body, children: items3 };
   const obj5 = { style: tmp.header, children: items2 };
-  Card = tmp3(6891).Card;
+  Card = tmp3(6890).Card;
   const obj6 = { size: "xs", color: ref(587).colors.TEXT_BRAND };
-  const LightbulbIcon = tmp3(9931).LightbulbIcon;
+  const LightbulbIcon = tmp3(9938).LightbulbIcon;
   items2 = [closure_7(LightbulbIcon, obj6), ];
   const obj7 = { variant: "text-sm/semibold", color: "text-strong", children: intl.string(ref(3830).XXYIeI) };
   const Text = tmp3(5220).Text;
@@ -252,7 +252,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
           }
           return scrollToEndResult;
         },
-      children: closure_7(ref(12221), obj9)
+      children: closure_7(ref(12232), obj9)
     };
     obj9 = { source: text };
     tmp8Result = tmp8(closure_4, obj8);

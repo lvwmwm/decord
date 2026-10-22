@@ -1,13 +1,13 @@
-// Module ID: 12464
-// Function ID: 12465
+// Module ID: 12474
+// Function ID: 12475
 // Name: ConjureMentionSuggestions
-// Dependencies: [19, 21, 4969, 587, 558, 576, 6973, 1128, 3830, 6889, 1202, 5018, 11769, 2]
+// Dependencies: [19, 21, 4969, 587, 558, 576, 6972, 1128, 3830, 6888, 1202, 5018, 11781, 2]
 
-// Module 12464 (ConjureMentionSuggestions)
+// Module 12474 (ConjureMentionSuggestions)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import TableRowGroup3 from "TableRowGroup" /* 6973 */;
+import TableRowGroup3 from "TableRowGroup" /* 6972 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -131,13 +131,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMenti
                 }
               };
               const TableRow = projectId(fileThumbnail[9]).TableRow;
-              obj2 = { user: user.user, size: projectId(fileThumbnail[10]).AvatarSizes.XSMALL, guildId: "r" };
+              obj2 = { user: user.user, size: projectId(fileThumbnail[10]).AvatarSizes.XSMALL, guildId: "Array" };
               Avatar = projectId(fileThumbnail[10]).Avatar;
               obj3 = projectId(fileThumbnail[11]);
               return closure_1_3(TableRow, obj, user.user.id);
             })
       };
-      const TableRowGroup = tmp(6973).TableRowGroup;
+      const TableRowGroup = tmp(6972).TableRowGroup;
       intl = tmp(1128).intl;
       tmp15 = closure_3(TableRowGroup, obj3);
     }
@@ -166,7 +166,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMenti
               return closure_1_3(TableRow, obj, file.file.id);
             })
       };
-      const TableRowGroup2 = tmp(6973).TableRowGroup;
+      const TableRowGroup2 = tmp(6972).TableRowGroup;
       intl2 = tmp(1128).intl;
       tmp16 = closure_3(TableRowGroup2, obj4);
     }
@@ -217,7 +217,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMenti
                 }
               };
               const TableRow = require("TableRow").TableRow;
-              obj2 = { user: user.user, size: require("native").AvatarSizes.XSMALL, guildId: "r" };
+              obj2 = { user: user.user, size: require("native").AvatarSizes.XSMALL, guildId: "Array" };
               Avatar = require("native").Avatar;
               obj3 = require("UserUtils");
               return closure_1_3(TableRow, obj, user.user.id);

@@ -1,14 +1,14 @@
-// Module ID: 7132
-// Function ID: 7133
+// Module ID: 7131
+// Function ID: 7132
 // Name: MagnifyingGlassIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 7133, 5654, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 7132, 5654, 2]
 
-// Module 7132 (MagnifyingGlassIcon)
+// Module 7131 (MagnifyingGlassIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5654 */;
-import AssetRegistry from "AssetRegistry" /* 7133 */;
+import AssetRegistry from "AssetRegistry" /* 7132 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

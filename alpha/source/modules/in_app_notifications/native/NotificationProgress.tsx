@@ -1,9 +1,9 @@
-// Module ID: 13718
-// Function ID: 13719
+// Module ID: 13732
+// Function ID: 13733
 // Name: NotificationProgress
 // Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 5038, 2]
 
-// Module 13718 (NotificationProgress)
+// Module 13732 (NotificationProgress)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

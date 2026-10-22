@@ -1,17 +1,17 @@
-// Module ID: 10459
-// Function ID: 10460
+// Module ID: 10466
+// Function ID: 10467
 // Name: GiftingPromotionUtils
-// Dependencies: [32, 19, 9489, 1394, 558, 576, 504, 10460, 10464, 10465, 4994, 4805, 2]
+// Dependencies: [32, 19, 9496, 1394, 558, 576, 504, 10467, 10471, 10472, 4994, 4805, 2]
 // Exports: combinePromotionStyles, createBackgroundStyle, createGradientStyle, getRewardAssetIdMap, shouldShowGiftPromotionReminderNotice, useIsPlanEligibleForGiftingPromotion
 
-// Module 10459 (GiftingPromotionUtils)
+// Module 10466 (GiftingPromotionUtils)
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4994 */;
-import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 10464 */;
-import MarketingComponentType from "MarketingComponentType" /* 10465 */;
+import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 10471 */;
+import MarketingComponentType from "MarketingComponentType" /* 10472 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PromotionsStore from "PromotionsStore" /* 9489 */;
+import PromotionsStore from "PromotionsStore" /* 9496 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

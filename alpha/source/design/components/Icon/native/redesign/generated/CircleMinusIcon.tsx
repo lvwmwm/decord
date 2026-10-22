@@ -1,15 +1,15 @@
-// Module ID: 16565
-// Function ID: 16566
+// Module ID: 16587
+// Function ID: 16588
 // Name: CircleMinusIcon
-// Dependencies: [109, 19, 17, 21, 558, 576, 587, 16566, 5654, 16567, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 587, 16588, 5654, 16589, 2]
 
-// Module 16565 (CircleMinusIcon)
+// Module 16587 (CircleMinusIcon)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage3 from "BaseIconImage" /* 5654 */;
-import AssetRegistry from "AssetRegistry" /* 16566 */;
-import AssetRegistry2 from "AssetRegistry" /* 16567 */;
+import AssetRegistry from "AssetRegistry" /* 16588 */;
+import AssetRegistry2 from "AssetRegistry" /* 16589 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

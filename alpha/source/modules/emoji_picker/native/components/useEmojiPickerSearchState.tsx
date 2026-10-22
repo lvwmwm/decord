@@ -1,12 +1,12 @@
-// Module ID: 9805
-// Function ID: 9806
+// Module ID: 9812
+// Function ID: 9813
 // Name: useEmojiPickerSearchState
-// Dependencies: [32, 19, 6711, 558, 576, 1274, 4802, 2]
+// Dependencies: [32, 19, 6710, 558, 576, 1274, 4802, 2]
 
-// Module 9805 (useEmojiPickerSearchState)
+// Module 9812 (useEmojiPickerSearchState)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6711 */;
+import EmojiStore from "EmojiStore" /* 6710 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

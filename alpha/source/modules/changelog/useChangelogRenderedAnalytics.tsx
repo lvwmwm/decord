@@ -1,16 +1,16 @@
-// Module ID: 13266
-// Function ID: 13267
+// Module ID: 13280
+// Function ID: 13281
 // Name: useChangelogRenderedAnalytics
-// Dependencies: [19, 2068, 6757, 7396, 1087, 558, 576, 13267, 504, 6807, 8452, 1267, 2]
+// Dependencies: [19, 2068, 6756, 7397, 1087, 558, 576, 13281, 504, 6806, 8453, 1267, 2]
 
-// Module 13266 (useChangelogRenderedAnalytics)
+// Module 13280 (useChangelogRenderedAnalytics)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 8452 */;
+import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 8453 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
-import ReadStateStore_mod from "ReadStateStore" /* 6757 */;
-import ChangelogStore from "ChangelogStore" /* 7396 */;
+import ReadStateStore_mod from "ReadStateStore" /* 6756 */;
+import ChangelogStore from "ChangelogStore" /* 7397 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

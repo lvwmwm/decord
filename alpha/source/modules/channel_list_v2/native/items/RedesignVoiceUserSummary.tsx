@@ -1,12 +1,12 @@
-// Module ID: 17455
-// Function ID: 17456
+// Module ID: 17477
+// Function ID: 17478
 // Name: RedesignVoiceUserSummary
-// Dependencies: [19, 4872, 5703, 21, 558, 576, 504, 5981, 17451, 2]
+// Dependencies: [19, 4872, 5703, 21, 558, 576, 504, 5980, 17473, 2]
 
-// Module 17455 (RedesignVoiceUserSummary)
+// Module 17477 (RedesignVoiceUserSummary)
 import Fragment from "Fragment" /* 21 */;
-import ChannelUtils from "ChannelUtils" /* 5981 */;
-import VoiceUserSummaryDefault from "VoiceUserSummary" /* 17451 */;
+import ChannelUtils from "ChannelUtils" /* 5980 */;
+import VoiceUserSummaryDefault from "VoiceUserSummary" /* 17473 */;
 import react from "react" /* 19 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5703 */;
@@ -121,7 +121,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignVo
         tmp17 = cResult[14];
       }
       const obj3 = { channels, selectedChannelId: "r", selectedVoiceChannelId: stateFromStores1, voiceStates: stateFromStores };
-      const tmpResult5 = guildId(5981);
+      const tmpResult5 = guildId(5980);
       const summarizedVoiceUsers = tmpResult5.computeSummarizedVoiceUsers(obj3);
       const found = summarizedVoiceUsers.filter(tmp17);
       cResult[10] = channels;
@@ -131,7 +131,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignVo
       tmp15 = found;
     }
   }
-  const tmpResult6 = guildId(5981);
+  const tmpResult6 = guildId(5980);
   const isAnyVoiceStateStageResult = tmpResult6.isAnyVoiceStateStage(channels, stateFromStores1, stateFromStores);
   cResult[6] = channels;
   cResult[7] = stateFromStores1;
@@ -155,8 +155,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignVo
     const obj = ChannelUtils;
     return obj.isAnyVoiceStateStage(channels, stateFromStores1, stateFromStores);
   }, items3);
+  const obj4 = { channels, selectedChannelId: "r", selectedVoiceChannelId: stateFromStores1, voiceStates: stateFromStores };
   const obj3 = channels(stateFromStores[7]);
-  const summarizedVoiceUsers = obj3.computeSummarizedVoiceUsers({ channels, selectedChannelId: "r", selectedVoiceChannelId: stateFromStores1, voiceStates: stateFromStores });
+  const summarizedVoiceUsers = obj3.computeSummarizedVoiceUsers(obj4);
   const users = summarizedVoiceUsers.filter((item) => null != item);
   return jsx(guildId(stateFromStores[8]), { users, max: 8, renderIcon: true, guildId, stageIcon });
 });

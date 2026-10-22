@@ -1,19 +1,10 @@
 // Module ID: 15549
 // Function ID: 15550
-// Dependencies: [15501, 15508]
+// Dependencies: []
 
 // Module 15549
-import _mod15501 from "module_15501" /* 15501 */;
-import _mod15508 from "module_15508" /* 15508 */;
+const tmp = Math.trunc || (function trunc(arg0) {
+  return 0 < +arg0 ? floor : ceil(+arg0);
+});
 
-let closure_2 = _mod15501("keys");
-
-export default (arg0) => {
-  let tmp2 = closure_2[arg0];
-  if (!tmp2) {
-    const tmp5 = _mod15508(arg0);
-    tmp[arg0] = tmp5;
-    tmp2 = tmp5;
-  }
-  return tmp2;
-};
+export default tmp;

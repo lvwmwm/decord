@@ -1,28 +1,28 @@
-// Module ID: 15719
-// Function ID: 15720
+// Module ID: 15733
+// Function ID: 15734
 // Name: crossPlatformRPCEventHandlers
-// Dependencies: [2045, 2021, 4839, 6628, 4821, 4881, 4843, 2014, 5700, 1392, 5616, 6364, 1087, 11421, 11424, 9233, 6648, 15648, 8795, 12, 15649, 9226, 7418, 15655, 1099, 568, 9231, 15720, 15721, 2]
+// Dependencies: [2045, 2021, 4839, 6627, 4821, 4881, 4843, 2014, 5700, 1392, 5616, 6363, 1087, 11432, 11435, 9240, 6647, 15661, 8802, 12, 15662, 9233, 7419, 15668, 1099, 568, 9238, 15734, 15735, 2]
 
-// Module 15719 (crossPlatformRPCEventHandlers)
+// Module 15733 (crossPlatformRPCEventHandlers)
 import _modDef12 from "module_12" /* 12 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import GuildRecord from "GuildRecord" /* 4839 */;
-import frameDeepLinks from "frameDeepLinks" /* 7418 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8795 */;
-import getSocketFrameDefault from "getSocketFrame" /* 9226 */;
-import transformUserDefault from "transformUser" /* 9231 */;
-import RPCErrorDefault from "RPCError" /* 9233 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11421 */;
-import RPCHelpers from "RPCHelpers" /* 11424 */;
-import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 15648 */;
-import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 15649 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 15655 */;
-import transformGuildMemberDefault from "transformGuildMember" /* 15720 */;
-import transformApplicationDefault from "transformApplication" /* 15721 */;
+import frameDeepLinks from "frameDeepLinks" /* 7419 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8802 */;
+import getSocketFrameDefault from "getSocketFrame" /* 9233 */;
+import transformUserDefault from "transformUser" /* 9238 */;
+import RPCErrorDefault from "RPCError" /* 9240 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11432 */;
+import RPCHelpers from "RPCHelpers" /* 11435 */;
+import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 15661 */;
+import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 15662 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 15668 */;
+import transformGuildMemberDefault from "transformGuildMember" /* 15734 */;
+import transformApplicationDefault from "transformApplication" /* 15735 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
 import RunningGameStore from "RunningGameStore" /* 2021 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6628 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6627 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildMemberStore from "GuildMemberStore" /* 4881 */;
 import GuildStore from "GuildStore" /* 4843 */;
@@ -30,7 +30,7 @@ import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5700 */;
 import UserStore from "UserStore" /* 1392 */;
 import VoiceStateStore from "VoiceStateStore" /* 5616 */;
-import Constants_mod from "Constants" /* 6364 */;
+import Constants_mod from "Constants" /* 6363 */;
 import Constants_mod2 from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -112,7 +112,7 @@ function messageEvents(args) {
     const obj4 = RPCHelpers;
     const tmp11 = require;
     if (obj4.hasMessageReadPermission(channel, socket.application.id, socket.authorization.scopes)) {
-      const tmp11Result = tmp11(6648);
+      const tmp11Result = tmp11(6647);
       if (tmp11Result.userCannotSeeNSFWContent(channel)) {
         const _HermesInternal = HermesInternal;
         const self = this;
@@ -426,7 +426,7 @@ obj2[RPCEvents.VOICE_SESSION_PARTICIPANTS_UPDATE] = {
   handler(args) {
     const session_id = args.args.session_id;
     const socket = args.socket;
-    let obj = socket(15648);
+    let obj = socket(15661);
     const result = obj.validateEventSubscription(socket, session_id);
     return (prevState) => {
       prevState = prevState.prevState;
@@ -571,7 +571,7 @@ const obj36 = {
         if (null != tmp7) {
           takeFrameDeepLinkResult = null;
           if (null != frameDeepLinkChannelId) {
-            const tmp8Result = tmp8(7418);
+            const tmp8Result = tmp8(7419);
             takeFrameDeepLinkResult = tmp8Result.takeFrameDeepLink(frameDeepLinkChannelId, tmp7.applicationId);
           }
         }

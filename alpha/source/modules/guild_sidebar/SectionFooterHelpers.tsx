@@ -1,15 +1,15 @@
-// Module ID: 17568
-// Function ID: 17569
+// Module ID: 17590
+// Function ID: 17591
 // Name: SectionFooterHelpers
-// Dependencies: [7199, 4901, 7627, 1087, 7621, 4846, 2]
+// Dependencies: [7198, 4901, 7628, 1087, 7622, 4846, 2]
 // Exports: getSectionFooterActiveVoiceChannels, getSectionFooterConfig, isSectionFooterWithActiveVoiceChannels
 
-// Module 17568 (SectionFooterHelpers)
+// Module 17590 (SectionFooterHelpers)
 import Constants from "Constants" /* 1087 */;
 import FavoritesUtils from "FavoritesUtils" /* 4846 */;
-import ChannelListState from "ChannelListState" /* 7621 */;
-import GuildSidebarConstants from "GuildSidebarConstants" /* 7627 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7199 */;
+import ChannelListState from "ChannelListState" /* 7622 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 7628 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7198 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
 import size from "module_2" /* 2 */;
 
@@ -33,18 +33,18 @@ export const getSectionFooterConfig = function getSectionFooterConfig(guildChann
   }
   let tmp6 = !tmp3;
   if (tmp6) {
-    let tmp7 = section === tmp(7621).SECTION_INDEX_GUILD_ACTIONS;
+    let tmp7 = section === tmp(7622).SECTION_INDEX_GUILD_ACTIONS;
     if (!tmp7) {
       let tmp8;
       const tmpResult = FavoritesUtils;
       if (tmpResult.isFavoritesGuildId(guildChannels.id)) {
         tmp8 = section !== guildChannels.getSections(false).length - 1;
       } else {
-        tmp8 = section === tmp(7621).SECTION_INDEX_FAVORITES;
+        tmp8 = section === tmp(7622).SECTION_INDEX_FAVORITES;
         if (!tmp8) {
           let tmp10 = optInChannelsEnabled;
           if (tmp10) {
-            let tmp11 = section !== tmp(7621).SECTION_INDEX_UNCATEGORIZED_CHANNELS;
+            let tmp11 = section !== tmp(7622).SECTION_INDEX_UNCATEGORIZED_CHANNELS;
             if (tmp11) {
               let flag2 = section === guildChannels.recentsSectionNumber;
               if (!flag2) {

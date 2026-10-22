@@ -1,11 +1,11 @@
-// Module ID: 9524
-// Function ID: 9525
+// Module ID: 9531
+// Function ID: 9532
 // Name: outbound_promotion_popover
-// Dependencies: [32, 1212, 9504, 2]
+// Dependencies: [32, 1212, 9511, 2]
 
-// Module 9524 (outbound_promotion_popover)
+// Module 9531 (outbound_promotion_popover)
 import _mod1212 from "module_1212" /* 1212 */;
-import theme_aware_asset from "theme_aware_asset" /* 9504 */;
+import theme_aware_asset from "theme_aware_asset" /* 9511 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

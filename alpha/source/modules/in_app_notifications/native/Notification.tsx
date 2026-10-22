@@ -1,19 +1,19 @@
-// Module ID: 13715
-// Function ID: 13716
+// Module ID: 13729
+// Function ID: 13730
 // Name: Notification
-// Dependencies: [109, 19, 13679, 1087, 21, 4969, 587, 558, 576, 13678, 13695, 5038, 5233, 5192, 5697, 13716, 13718, 6894, 2]
+// Dependencies: [109, 19, 13693, 1087, 21, 4969, 587, 558, 576, 13692, 13709, 5038, 5233, 5192, 5697, 13730, 13732, 6893, 2]
 
-// Module 13715 (Notification)
+// Module 13729 (Notification)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
 import timing from "timing" /* 5192 */;
 import spring from "spring" /* 5233 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5697 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 13678 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 13692 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 13679 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 13693 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -93,7 +93,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
   panning();
   const type = tmp9.type;
   if (cResult[10] !== tmp9) {
-    const tmpResult = tmp(13678);
+    const tmpResult = tmp(13692);
     let result = tmpResult.extractMetadataFromNotification(tmp9);
     cResult[10] = tmp9;
     cResult[11] = result;
@@ -110,7 +110,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
     channelId = tmp19.channelId;
     const messageId = tmp19.messageId;
     const type2 = tmp19.type;
-    const tmpResult5 = tmp(13695);
+    const tmpResult5 = tmp(13709);
     const inAppNotificationContext = tmpResult5.useInAppNotificationContext();
     const notificationGestureY = inAppNotificationContext.notificationGestureY;
     const velocityY = inAppNotificationContext.velocityY;

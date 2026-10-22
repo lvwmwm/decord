@@ -1,18 +1,18 @@
-// Module ID: 16307
-// Function ID: 16308
+// Module ID: 16325
+// Function ID: 16326
 // Name: OrbsArcadeRewardPreview
-// Dependencies: [19, 17, 21, 4969, 9372, 587, 558, 576, 1989, 5655, 9373, 16299, 9408, 2]
+// Dependencies: [19, 17, 21, 4969, 9379, 587, 558, 576, 1989, 5655, 9380, 16317, 9415, 2]
 
-// Module 16307 (OrbsArcadeRewardPreview)
+// Module 16325 (OrbsArcadeRewardPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 1989 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import AvatarDecorationSampleV2 from "AvatarDecorationSampleV2" /* 9372 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9373 */;
-import NitroCoinSpotIllustration from "NitroCoinSpotIllustration" /* 9408 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16299 */;
+import AvatarDecorationSampleV2 from "AvatarDecorationSampleV2" /* 9379 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9380 */;
+import NitroCoinSpotIllustration from "NitroCoinSpotIllustration" /* 9415 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16317 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;

@@ -1,14 +1,14 @@
-// Module ID: 8076
-// Function ID: 8077
+// Module ID: 8077
+// Function ID: 8078
 // Name: LinkExternalSmallIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8077, 5654, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8078, 5654, 2]
 
-// Module 8076 (LinkExternalSmallIcon)
+// Module 8077 (LinkExternalSmallIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5654 */;
-import AssetRegistry from "AssetRegistry" /* 8077 */;
+import AssetRegistry from "AssetRegistry" /* 8078 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

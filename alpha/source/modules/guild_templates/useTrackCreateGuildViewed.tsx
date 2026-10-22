@@ -1,12 +1,12 @@
-// Module ID: 12659
-// Function ID: 12660
+// Module ID: 12678
+// Function ID: 12679
 // Name: useTrackCreateGuildViewed
-// Dependencies: [19, 7411, 1087, 558, 576, 1267, 2]
+// Dependencies: [19, 7412, 1087, 558, 576, 1267, 2]
 
-// Module 12659 (useTrackCreateGuildViewed)
+// Module 12678 (useTrackCreateGuildViewed)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7411 */;
+import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7412 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

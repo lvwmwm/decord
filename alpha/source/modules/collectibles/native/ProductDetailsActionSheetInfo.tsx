@@ -1,19 +1,19 @@
-// Module ID: 14394
-// Function ID: 14395
+// Module ID: 14408
+// Function ID: 14409
 // Name: ProductDetailsActionSheetInfo
-// Dependencies: [17, 21, 4969, 587, 558, 576, 14395, 5220, 7646, 9403, 1128, 14396, 1995, 2]
+// Dependencies: [17, 21, 4969, 587, 558, 576, 14409, 5220, 7647, 9410, 1128, 14410, 1995, 2]
 
-// Module 14394 (ProductDetailsActionSheetInfo)
+// Module 14408 (ProductDetailsActionSheetInfo)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7646 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9403 */;
-import useProductDescription from "useProductDescription" /* 14395 */;
-import InlinePriceTagDefault from "InlinePriceTag" /* 14396 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7647 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9410 */;
+import useProductDescription from "useProductDescription" /* 14409 */;
+import InlinePriceTagDefault from "InlinePriceTag" /* 14410 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

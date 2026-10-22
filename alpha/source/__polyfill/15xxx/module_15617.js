@@ -1,148 +1,142 @@
 // Module ID: 15617
 // Function ID: 15618
-// Dependencies: [32, 15618]
+// Dependencies: [473, 15618, 190, 875]
 // Exports: default
 
 // Module 15617
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import ArgType from "ArgType" /* 15618 */;
+import react_mod from "react" /* 473 */;
 
-let regex;
+let _default2, logger;
 
-const re3 = /^(image)\/.*$/i;
-let closure_4 = {};
+let tmp3;
+let react = react_mod;
+if (!react) {
+  let obj = { default: react };
+  tmp3 = obj;
+} else {
+  tmp3 = react;
+}
+react = tmp3.default;
+let closure_5 = { veto: null };
+function objectifyError(headers) {
+  let closure_0 = headers;
+  const obj = {};
+  const ownPropertyNames = Object.getOwnPropertyNames(headers);
+  const item = ownPropertyNames.forEach((item) => {
+    obj[item] = closure_0[item];
+  });
+  return obj;
+}
 
-export default () => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
+export default (arg0) => {
+  let closure_0 = arg0;
   return (arg0) => {
-    let closure_0 = arg0;
-    function onSend(data, _url) {
-      if (merged.ignoreUrls) {
-        const ignoreUrls = merged.ignoreUrls;
-        if (ignoreUrls.test(_url._url)) {
-          _url._skipReactotron = true;
-        }
-      }
-      sum = sum + 1;
-      _url._trackingName = sum;
-      closure_4[sum] = { data, xhr: _url, stopTimer: closure_0.startTimer() };
-      ({ data, xhr: _url, stopTimer: closure_0.startTimer() });
-    }
-    function onResponse(status, arg1, _bodyBlob, arg3, arg4, _skipReactotron) {
-      let data;
-      let responseHeaders;
-      let closure_1 = _bodyBlob;
-      regex = _skipReactotron;
-      if (!_skipReactotron._skipReactotron) {
-        let _url = arg3;
-        obj = null;
-        let num2 = -1;
-        if (arg3) {
-          let str = "?";
-          num2 = _url.indexOf("?");
-        }
-        let tmp2 = null;
-        if (num2 > -1) {
-          obj = {};
-          const str2 = _url.substr(num2 + 1);
-          const parts = str2.split("&");
-          const item = parts.forEach((item) => {
-            let str;
-            let tmp2;
-            [tmp2, str] = closure_3_2(item.split("="), 2);
-            closure_3_2(item.split("="), 2);
-            const tmp3 = tmp2 && undefined !== str;
-            if (tmp3) {
-              const _decodeURIComponent = decodeURIComponent;
-              obj[tmp2] = decodeURIComponent(str.replace(/\+/g, " "));
-            }
-          });
-          tmp2 = obj;
-        }
-        const _trackingName = _skipReactotron._trackingName;
-        let tmp5 = closure_4[_trackingName];
-        const tmp4 = closure_4;
-        if (!tmp5) {
-          tmp5 = { xhr: _skipReactotron };
-          const obj2 = { xhr: _skipReactotron };
-        }
-        tmp4[_trackingName] = null;
-        ({ stopTimer: closure_4, data } = tmp5);
-        if (!_url) {
-          _url = tmp5.xhr._url;
-        }
-        const request = { url: _url, method: _skipReactotron._method || null, data, headers: _skipReactotron._headers || null, params: tmp2 };
-        let str4 = _skipReactotron.responseHeaders && _skipReactotron.responseHeaders["content-type"];
-        if (!str4) {
-          str4 = _skipReactotron.responseHeaders && _skipReactotron.responseHeaders["Content-Type"];
-        }
-        if (!str4) {
-          str4 = "";
-        }
-        function sendResponse(result) {
-          let str = "~~~ skipped ~~~";
-          if (result) {
-            try {
-              const _JSON = JSON;
-              str = JSON.parse(result);
-            } catch (err) {
-              str = _bodyBlob;
-            }
+    let addException;
+    function reportError(stack) {
+      logger = stack;
+      try {
+        const tmp2 = _default;
+        if (!tmp2) {
+          const tmp3 = logger;
+          const tmp5 = logger(veto[2]);
+          if (typeof tmp5 === "function") {
+            _default = tmp5;
+          } else {
+            _default = tmp6.default;
           }
-          const response = { body: str, status, headers: responseHeaders.responseHeaders || null };
-          let tmp4Result = null;
-          const apiResponse = status.apiResponse;
-          const tmp3 = request;
-          if (closure_4) {
-            tmp4Result = tmp4();
-          }
-          apiResponse(tmp3, response, tmp4Result);
         }
-        if (typeof _bodyBlob === "string") {
-          const test = regex.test;
-          if (!str4) {
-            str4 = "";
+        const tmp9 = _default2;
+        if (!tmp9) {
+          const tmp12 = logger(veto[3]);
+          if (typeof tmp12 === "function") {
+            _default2 = tmp12;
+          } else {
+            _default2 = tmp13.default;
           }
-          if (!test(str4)) {
-            if ("blob" === arg4) {
-              const _FileReader = FileReader;
-              if (typeof FileReader !== "undefined") {
-                if (_bodyBlob) {
-                  const _FileReader2 = FileReader;
-                  const self = this;
-                  const self2 = this;
-                  const fileReader = new FileReader();
-                  function brListener() {
-                    sendResponse(fileReader.result);
-                    const removed = fileReader.removeEventListener("loadend", brListener);
+        }
+        if (_default) {
+          if (_default2) {
+            if (typeof tmp16 !== "function") {
+              logger.error("parseErrorStack is not a function", []);
+              const obj2 = { parseErrorStackType: typeof _default, parseErrorStack: _default };
+              logger.debug(obj2);
+            } else if (typeof tmp18 !== "function") {
+              logger.error("symbolicateStackTrace is not a function", []);
+              const obj3 = { symbolicateStackTraceType: typeof _default2, symbolicateStackTrace: _default2 };
+              logger.debug(obj3);
+            } else {
+              try {
+                const promise = _default2(_default(stack.stack));
+                const nextPromise = promise.then((stack) => {
+                  stack = stack.stack;
+                  const mapped = stack.map((file) => ({ fileName: file.file, functionName: file.methodName, lineNumber: file.lineNumber }));
+                  let found = mapped;
+                  if (veto.veto) {
+                    found = mapped.filter((item) => {
+                      let vetoResult;
+                      const obj = veto;
+                      if (veto != null) {
+                        vetoResult = obj.veto(item);
+                      }
+                      return vetoResult;
+                    });
                   }
-                  const listener = fileReader.addEventListener("loadend", brListener);
-                  const asText = fileReader.readAsText(_bodyBlob);
-                }
+                  stack.error(stack.message, found);
+                });
+                nextPromise.catch((error) => {
+                  stack.error("Unable to symbolicate stack trace from error object", []);
+                  if (typeof closure_2_6 === "function") {
+                    stack = error;
+                    const obj = {};
+                    const _Object = Object;
+                    const ownPropertyNames = Object.getOwnPropertyNames(error);
+                    const item = ownPropertyNames.forEach((item) => {
+                      obj[item] = closure_0[item];
+                    });
+                    tmp3(obj);
+                  } else {
+                    throw new TypeError("Trying to call a non-function");
+                  }
+                });
+              } catch (tmp32) {
+                logger.error("Unable to parse stack trace from error object", []);
+                logger.debug(closure_1_6(tmp32));
               }
             }
-            sendResponse(_bodyBlob);
           }
         }
-        sendResponse("");
+        logger.error("parseErrorStack or symbolicateStackTrace is not available", []);
+        let obj = { parseErrorStackAvailable: _default, symbolicateStackTraceAvailable: _default2 };
+        logger.debug(obj);
+      } catch (tmp47) {
+        logger.error("Unable to load \"react-native/Libraries/Core/Devtools/parseErrorStack\" or \"react-native/Libraries/Core/Devtools/symbolicateStackTrace\"", []);
+        logger.debug(closure_1_6(tmp47));
       }
     }
-    const merged = Object.assign({}, closure_4, obj);
-    let closure_2 = merged.ignoreContentTypes || re3;
-    let sum = 1000;
-    closure_4 = {};
-    obj = {
+    let _default = reportError;
+    const result = ArgType.assertHasLoggerPlugin(arg0);
+    closure_0 = arg0;
+    let obj = closure_0;
+    let _Object = Object;
+    let tmp2 = closure_5;
+    if (!closure_0) {
+      obj = {};
+    }
+    let closure_1 = assign({}, tmp2, obj);
+    let obj2 = {
       onConnect() {
-        const XHRInterceptor = obj(closure_2_1[1]).XHRInterceptor;
-        XHRInterceptor.setSendCallback(onSend);
-        const XHRInterceptor2 = obj(closure_2_1[1]).XHRInterceptor;
-        XHRInterceptor2.setResponseCallback(onResponse);
-        const XHRInterceptor3 = obj(closure_2_1[1]).XHRInterceptor;
-        XHRInterceptor3.enableInterception();
-      }
+        const obj = {
+          apply(apply, arg1, arg2) {
+            _default(arg2[0]);
+            return apply.apply(arg1, arg2);
+          }
+        };
+        const proxy = new Proxy(addException.addException, obj);
+        addException.addException = proxy;
+      },
+      features: { reportError }
     };
-    return obj;
+    return obj2;
   };
 };

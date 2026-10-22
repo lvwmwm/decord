@@ -1,18 +1,18 @@
-// Module ID: 15032
-// Function ID: 15033
+// Module ID: 15045
+// Function ID: 15046
 // Name: AddFriendById
-// Dependencies: [32, 19, 17, 1087, 21, 4969, 587, 1128, 558, 576, 5220, 7001, 15033, 7403, 7398, 5648, 1267, 4978, 7166, 5230, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 4969, 587, 1128, 558, 576, 5220, 7000, 15046, 7404, 7399, 5648, 1267, 4978, 7165, 5230, 2]
 
-// Module 15032 (AddFriendById)
+// Module 15045 (AddFriendById)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4978 */;
 import ToastUtils from "ToastUtils" /* 5648 */;
-import TextField2 from "TextField" /* 7001 */;
-import FriendsUtils from "FriendsUtils" /* 7403 */;
-import FriendRequestMessageExperimentDefault from "FriendRequestMessageExperiment" /* 15033 */;
+import TextField2 from "TextField" /* 7000 */;
+import FriendsUtils from "FriendsUtils" /* 7404 */;
+import FriendRequestMessageExperimentDefault from "FriendRequestMessageExperiment" /* 15046 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -613,7 +613,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
                               intl = tmp(1128).intl;
                               const items5 = [closure_9(Text, obj10), , ];
                               const obj11 = { returnKeyType: "done", submitBehavior: "submit", value: first3, maxLength: 120, onSubmitEditing: tmp21, onChange: tmp18, status: undefined };
-                              const TextArea = tmp(7166).TextArea;
+                              const TextArea = tmp(7165).TextArea;
                               const tmp35 = closure_10;
                               const tmp36 = first2;
                               const tmp38 = constants2;
@@ -1162,7 +1162,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
     const items7 = [tmp17(Text, obj6), , ];
     const obj7 = { returnKeyType: "done", submitBehavior: "submit", value: first2, maxLength: 120, onSubmitEditing: handleSubmitEditing, onChange: callback1, status: str2 };
     str2 = undefined;
-    const TextArea = sourcePage(7166).TextArea;
+    const TextArea = sourcePage(7165).TextArea;
     const tmp19 = constants2;
     if (first1.field === constants2.MESSAGE) {
       if (first1.status === tmp4.ERROR) {

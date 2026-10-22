@@ -1,17 +1,17 @@
-// Module ID: 12740
-// Function ID: 12741
+// Module ID: 12759
+// Function ID: 12760
 // Name: AutomodQuarantineUtils
-// Dependencies: [19, 11088, 502, 4881, 4843, 4901, 4995, 1087, 4887, 1097, 558, 576, 4907, 573, 1128, 11152, 11153, 7474, 2]
+// Dependencies: [19, 11097, 502, 4881, 4843, 4901, 4995, 1087, 4887, 1097, 558, 576, 4907, 573, 1128, 11161, 11162, 7475, 2]
 
-// Module 12740 (AutomodQuarantineUtils)
+// Module 12759 (AutomodQuarantineUtils)
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import intl4 from "intl" /* 1128 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 4887 */;
 import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4907 */;
-import openUserSettings2 from "openUserSettings" /* 7474 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11153 */;
+import openUserSettings2 from "openUserSettings" /* 7475 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11162 */;
 import react from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11088 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11097 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 4881 */;
 import GuildStore from "GuildStore" /* 4843 */;
@@ -113,7 +113,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAu
       if (closure_0 == null) {
         guildId = SelectedGuildStore.getGuildId();
       }
-      const obj = { nick: "r", bio: "emoji" };
+      const obj = { nick: "Array", bio: "Reflect" };
       const guild = GuildStore.getGuild(guildId);
       if (null != guild) {
         if (null != guildId) {
@@ -181,7 +181,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAu
     if (closure_0 == null) {
       guildId = SelectedGuildStore.getGuildId();
     }
-    const obj = { nick: "r", bio: "emoji" };
+    const obj = { nick: "Array", bio: "Reflect" };
     const guild = GuildStore.getGuild(guildId);
     if (null != guild) {
       if (null != guildId) {

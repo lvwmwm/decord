@@ -1,9 +1,9 @@
-// Module ID: 17573
-// Function ID: 17574
+// Module ID: 17595
+// Function ID: 17596
 // Name: GenericUpsellActionSheet
-// Dependencies: [19, 17, 4818, 21, 4969, 587, 558, 576, 8632, 5655, 5568, 5220, 1202, 5230, 5251, 2]
+// Dependencies: [19, 17, 4818, 21, 4969, 587, 558, 576, 8639, 5655, 5568, 5220, 1202, 5230, 5251, 2]
 
-// Module 17573 (GenericUpsellActionSheet)
+// Module 17595 (GenericUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
@@ -45,7 +45,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GenericUps
   markAsDismissed = markAsDismissed.markAsDismissed;
   ({ imageSource, header, body, onCTAPress, cta } = markAsDismissed);
   const tmp4 = closure_7();
-  const obj2 = markAsDismissed(8632);
+  const obj2 = markAsDismissed(8639);
   const bottomSheetRef1 = obj2.useBottomSheetRef();
   ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef1);
   if (cResult[0] !== markAsDismissed) {
@@ -189,7 +189,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GenericUps
   markAsDismissed = markAsDismissed.markAsDismissed;
   ({ imageSource, header, body, onCTAPress, cta } = markAsDismissed);
   const tmp = closure_7();
-  const obj = markAsDismissed(8632);
+  const obj = markAsDismissed(8639);
   const bottomSheetRef1 = obj.useBottomSheetRef();
   ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef1);
   const obj2 = {

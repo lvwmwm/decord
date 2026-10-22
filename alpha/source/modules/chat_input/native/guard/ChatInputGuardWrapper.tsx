@@ -1,25 +1,25 @@
-// Module ID: 13262
-// Function ID: 13263
+// Module ID: 13276
+// Function ID: 13277
 // Name: ChatInputGuardWrapper
-// Dependencies: [19, 4902, 4825, 4881, 4843, 6622, 4911, 1392, 12462, 1087, 7124, 21, 504, 6880, 4888, 4907, 13263, 13264, 10894, 10893, 13265, 13266, 5697, 7398, 6658, 7123, 2002, 7126, 6907, 11227, 13268, 13269, 13278, 13277, 5672, 1128, 13280, 13283, 13284, 13298, 13302, 13303, 13306, 13307, 9016, 13309, 2]
+// Dependencies: [19, 4902, 4825, 4881, 4843, 6621, 4911, 1392, 12472, 1087, 7123, 21, 504, 6879, 4888, 4907, 13277, 13278, 10902, 10901, 13279, 13280, 5697, 7399, 6657, 7122, 2002, 7125, 6906, 11236, 13282, 13283, 13292, 13291, 5672, 1128, 13294, 13297, 13298, 13312, 13316, 13317, 13320, 13321, 9023, 13323, 2]
 // Exports: default
 
-// Module 13262 (ChatInputGuardWrapper)
+// Module 13276 (ChatInputGuardWrapper)
 import Fragment from "Fragment" /* 21 */;
 import ChannelRecord from "ChannelRecord" /* 4825 */;
 import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4888 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5697 */;
-import MemberVerificationUtils from "MemberVerificationUtils" /* 6880 */;
-import PhoneConstants from "PhoneConstants" /* 7124 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7398 */;
-import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11227 */;
-import ChatInputConstants from "ChatInputConstants" /* 12462 */;
-import navigateToThreadCreation from "navigateToThreadCreation" /* 13268 */;
+import MemberVerificationUtils from "MemberVerificationUtils" /* 6879 */;
+import PhoneConstants from "PhoneConstants" /* 7123 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7399 */;
+import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11236 */;
+import ChatInputConstants from "ChatInputConstants" /* 12472 */;
+import navigateToThreadCreation from "navigateToThreadCreation" /* 13282 */;
 import react from "react" /* 19 */;
 import LurkingStore from "LurkingStore" /* 4902 */;
 import GuildMemberStore from "GuildMemberStore" /* 4881 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6622 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6621 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;

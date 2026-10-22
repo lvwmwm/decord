@@ -1,15 +1,15 @@
-// Module ID: 14385
-// Function ID: 14386
+// Module ID: 14399
+// Function ID: 14400
 // Name: BundleProductDetailsActionSheetPreview
-// Dependencies: [32, 19, 17, 1089, 21, 4969, 587, 558, 576, 14386, 5283, 1128, 8633, 7646, 14387, 5220, 2]
+// Dependencies: [32, 19, 17, 1089, 21, 4969, 587, 558, 576, 14400, 5283, 1128, 8640, 7647, 14401, 5220, 2]
 
-// Module 14385 (BundleProductDetailsActionSheetPreview)
+// Module 14399 (BundleProductDetailsActionSheetPreview)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import intl2 from "intl" /* 1128 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5283 */;
-import useShopProductItems from "useShopProductItems" /* 8633 */;
+import useShopProductItems from "useShopProductItems" /* 8640 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -36,8 +36,8 @@ let rect;
 let size;
 let tmp;
 const Text_Text = tmp(5220);
-const CollectiblesUtils = tmp(7646);
-const IndividualProductPreview = tmp(14387);
+const CollectiblesUtils = tmp(7647);
+const IndividualProductPreview = tmp(14401);
 ({ memo, useCallback: closure_4, useLayoutEffect: hasOwnProperty, useMemo: metroRequire, useState: metroImportDefault } = react);
 ({ Pressable: metroImportAll, ScrollView: c9, View: c10 } = react_native);
 const ShopCtaEnum = CollectiblesShopConstants.ShopCtaEnum;

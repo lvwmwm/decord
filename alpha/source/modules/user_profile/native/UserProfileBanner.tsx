@@ -1,12 +1,12 @@
-// Module ID: 8710
-// Function ID: 8711
+// Module ID: 8717
+// Function ID: 8718
 // Name: UserProfileBanner
-// Dependencies: [32, 19, 17, 1087, 21, 4969, 558, 576, 4797, 8711, 1417, 8718, 6894, 1128, 8458, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 4969, 558, 576, 4797, 8718, 1417, 8725, 6893, 1128, 8459, 2]
 
-// Module 8710 (UserProfileBanner)
+// Module 8717 (UserProfileBanner)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
-import BannerDefault from "Banner" /* 8718 */;
+import BannerDefault from "Banner" /* 8725 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

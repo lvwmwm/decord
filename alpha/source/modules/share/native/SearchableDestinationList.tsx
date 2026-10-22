@@ -1,18 +1,18 @@
-// Module ID: 12837
-// Function ID: 12838
+// Module ID: 12855
+// Function ID: 12856
 // Name: SearchableDestinationList
-// Dependencies: [32, 19, 17, 1087, 10586, 21, 4969, 587, 558, 576, 12838, 7119, 12826, 9036, 7718, 1388, 7130, 11023, 12014, 10592, 12845, 1128, 10595, 7131, 2]
+// Dependencies: [32, 19, 17, 1087, 10593, 21, 4969, 587, 558, 576, 12856, 7118, 12844, 9043, 7719, 1388, 7129, 11032, 12025, 10599, 12863, 1128, 10602, 7130, 2]
 
-// Module 12837 (SearchableDestinationList)
+// Module 12855 (SearchableDestinationList)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7119 */;
-import UserSearchUtils from "UserSearchUtils" /* 7718 */;
-import _mod9036 from "module_9036" /* 9036 */;
-import UserRowConstants from "UserRowConstants" /* 10586 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12014 */;
-import formatResults from "formatResults" /* 12826 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7118 */;
+import UserSearchUtils from "UserSearchUtils" /* 7719 */;
+import _mod9043 from "module_9043" /* 9043 */;
+import UserRowConstants from "UserRowConstants" /* 10593 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12025 */;
+import formatResults from "formatResults" /* 12844 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -223,7 +223,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchableDe
   cResult[5] = obj3;
   tmp13 = obj3;
 }) : (function SearchableDestinationList(getRowIsUnavailable) {
-  let SearchField;
+  let SearchBar;
   let _undefined;
   let c13;
   let channelFilter;
@@ -426,7 +426,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchableDe
     let type;
     ({ type, record } = results[arg1]);
     const arr = results;
-    if (type !== _mod9036.AutocompleterResultTypes.HEADER) {
+    if (type !== _mod9043.AutocompleterResultTypes.HEADER) {
       const destinationKey = formatResults.destinationKey;
       formatResults;
       const tmp2Result4 = formatResults;
@@ -469,20 +469,20 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchableDe
         const obj2 = { onLongPress: NOOP };
       }
       const merged = Object.assign(tmp17);
-      if (_mod9036.AutocompleterResultTypes.USER === type) {
+      if (_mod9043.AutocompleterResultTypes.USER === type) {
         const element = { type: "user", props: obj3 };
         obj3 = { user: record, type: tmp2Result5.getRelationshipType(record.id), onPress: callback3 };
         const merged1 = Object.assign(obj);
         tmp2Result5 = UserSearchUtils;
         return element;
-      } else if (_mod9036.AutocompleterResultTypes.GROUP_DM === type) {
+      } else if (_mod9043.AutocompleterResultTypes.GROUP_DM === type) {
         const element1 = { type: "gdm", props: obj4 };
         obj4 = { channel: record, onPress: callback4 };
         const merged2 = Object.assign(obj);
         return element1;
       } else {
-        if (_mod9036.AutocompleterResultTypes.TEXT_CHANNEL !== type) {
-          if (_mod9036.AutocompleterResultTypes.VOICE_CHANNEL !== type) {
+        if (_mod9043.AutocompleterResultTypes.TEXT_CHANNEL !== type) {
+          if (_mod9043.AutocompleterResultTypes.VOICE_CHANNEL !== type) {
             const tmp2Result6 = GlobalUtils;
             return tmp2Result6.assertNever(type);
           }
@@ -505,7 +505,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchableDe
     let type;
     ({ type, record } = results[arg1]);
     let tmp2;
-    if (type !== _mod9036.AutocompleterResultTypes.HEADER) {
+    if (type !== _mod9043.AutocompleterResultTypes.HEADER) {
       let lineClamp;
       if (getRowIsUnavailable != null) {
         const tmp5 = getRowIsUnavailable(record);
@@ -566,9 +566,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchableDe
     items10[2] = tmp31Result;
     return tmp37(tmp38, obj8);
   }
-  const obj9 = { style: tmp6.searchBarContainer, children: tmp35(SearchField, obj10) };
+  const obj9 = { style: tmp6.searchBarContainer, children: tmp35(SearchBar, obj10) };
   obj10 = { ref, size: "md", onChange, autoFocus: flag, accessibilityLabel: intl2.string(disabledDestinations(onSelectedDestinationChange[21]).t.CaEER6) };
-  SearchField = tmp10(tmp11[23]).SearchField;
+  SearchBar = tmp10(tmp11[23]).SearchBar;
   const tmp41 = disableSelection;
   if (flag) {
     flag = someResult;

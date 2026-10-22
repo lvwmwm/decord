@@ -1,12 +1,12 @@
-// Module ID: 9471
-// Function ID: 9472
+// Module ID: 9478
+// Function ID: 9479
 // Name: GameProfileGameClaimCta
-// Dependencies: [5, 19, 1087, 21, 558, 576, 9214, 7413, 7417, 2000, 1128, 5230, 2]
+// Dependencies: [5, 19, 1087, 21, 558, 576, 9221, 7414, 7418, 2000, 1128, 5230, 2]
 
-// Module 9471 (GameProfileGameClaimCta)
+// Module 9478 (GameProfileGameClaimCta)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
-import MobileWebHandoffLinkingDefault from "MobileWebHandoffLinking" /* 7413 */;
+import MobileWebHandoffLinkingDefault from "MobileWebHandoffLinking" /* 7414 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

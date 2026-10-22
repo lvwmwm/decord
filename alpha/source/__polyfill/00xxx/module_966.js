@@ -60,7 +60,7 @@ function hookSetter(arg0, arg1, arg2, arg3) {
       set.call(this, arg0);
     }
   };
-  const f86648 = () => {
+  const f86746 = () => {
     let ownPropertyDescriptor;
     const tmp3 = ownPropertyDescriptor || {};
     closure_0 = tmp;
@@ -70,7 +70,7 @@ function hookSetter(arg0, arg1, arg2, arg3) {
     ownPropertyDescriptor = _Object.getOwnPropertyDescriptor(tmp, tmp2);
     const _Object2 = window.Object;
     _Object2.defineProperty(closure_0, closure_1, tmp3);
-    return f86648;
+    return f86746;
   };
   let closure_0 = arg0;
   let closure_1 = arg1;
@@ -90,7 +90,7 @@ function hookSetter(arg0, arg1, arg2, arg3) {
     const obj = { set: set2 };
   }
   defineProperty(arg0, arg1, tmp);
-  return f86648;
+  return f86746;
 }
 function patch(arg0, arg1, fn) {
   let obj2;
@@ -124,7 +124,7 @@ function patch(arg0, arg1, fn) {
   }
 }
 function isBlocked(nodeType, arg1, arg2, arg3, arg4) {
-  const f86646 = (parentNode) => {
+  const f86744 = (parentNode) => {
     function elementClassMatchesRegex(classList, test) {
       let diff = tmp - 1;
       if (+classList.classList.length) {
@@ -182,7 +182,7 @@ function isBlocked(nodeType, arg1, arg2, arg3, arg4) {
       let tmp4 = arg3;
       let closure_0 = arg1;
       let closure_1 = arg2;
-      const fn = f86646;
+      const fn = f86744;
       if (arg4) {
         let num2 = -1;
         if (obj) {
@@ -222,7 +222,7 @@ function isBlocked(nodeType, arg1, arg2, arg3, arg4) {
             if (obj) {
               let num14 = -1;
               if (obj.nodeType === obj.ELEMENT_NODE) {
-                const fn2 = f86646;
+                const fn2 = f86744;
                 let num15 = 0;
                 if (!fn2(obj)) {
                   const parentNode2 = obj.parentNode;
@@ -1204,14 +1204,14 @@ let closure_29 = (() => {
           HermesBuiltin.arraySpread(items2, tmp2(WebGLRenderingContext.WebGL2RenderingContext.prototype, tmp3.WebGL2, bindResult, arg1, arg2, arg3, 0, WebGLRenderingContext), 0);
           HermesBuiltin.apply(push, items2, items);
         }
-        const f156732 = () => {
+        const f156988 = () => {
 
         };
         const restoreHandlers = this.restoreHandlers;
         let arr = restoreHandlers.push(() => {
           closure_0();
           closure_1();
-          if (typeof f156732 === "function") {
+          if (typeof f156988 === "function") {
             const item = closure_130_0.forEach((fn) => fn());
           } else {
             throw new TypeError("Trying to call a non-function");

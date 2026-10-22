@@ -1,9 +1,9 @@
-// Module ID: 9813
-// Function ID: 9814
+// Module ID: 9820
+// Function ID: 9821
 // Name: Tooltip
-// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 5038, 5238, 9814, 5233, 5220, 2]
+// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 5038, 5238, 9821, 5233, 5220, 2]
 
-// Module 9813 (Tooltip)
+// Module 9820 (Tooltip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;

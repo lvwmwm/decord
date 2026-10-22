@@ -1,13 +1,13 @@
-// Module ID: 12720
-// Function ID: 12721
+// Module ID: 12739
+// Function ID: 12740
 // Name: BanConfirm
-// Dependencies: [32, 19, 17, 4843, 1392, 21, 1128, 1104, 4969, 587, 558, 576, 5579, 11033, 504, 6816, 5655, 12721, 5220, 5018, 6971, 6970, 7166, 5230, 2]
+// Dependencies: [32, 19, 17, 4843, 1392, 21, 1128, 1104, 4969, 587, 558, 576, 5579, 11042, 504, 6815, 5655, 12740, 5220, 5018, 6970, 6969, 7165, 5230, 2]
 
-// Module 12720 (BanConfirm)
+// Module 12739 (BanConfirm)
 import nativeDefault from "native" /* 587 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import intl7 from "intl" /* 1128 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6816 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6815 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -252,7 +252,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         banUserResult = obj.banUser(tmp.id, closure_4.id, closure_12[closure_5.current].value, closure_6.current);
         tmp13 = onBan;
         nextPromise = banUserResult.then(onBan);
-        catchPromise = nextPromise.catch(() => { /* body not rendered: F148678 */ });
+        catchPromise = nextPromise.catch(() => { /* body not rendered: F148909 */ });
       }
       return;
     }
@@ -290,7 +290,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp4Result5;
   let tmp4Result6;
   let v8jV9fx;
-  const f115246 = () => ({ banning: false, banError: false });
+  const f115374 = () => ({ banning: false, banError: false });
   ({ guildId: require, userId: importDefault, onBan } = arg0);
   let stateFromStores1;
   c7 = undefined;
@@ -309,10 +309,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   stateFromStores1 = obj3.useStateFromStores(items2, () => UserStore.getUser(importDefault));
   ref = stateFromStores1.useRef(0);
   ref2 = stateFromStores1.useRef("");
-  [tmp11, c7] = stateFromStores(stateFromStores1.useState(f115246), 2);
+  [tmp11, c7] = stateFromStores(stateFromStores1.useState(f115374), 2);
   const items3 = [stateFromStores, stateFromStores1, onBan];
   let tmp14Result2 = null;
-  const tmp10 = stateFromStores(stateFromStores1.useState(f115246), 2);
+  const tmp10 = stateFromStores(stateFromStores1.useState(f115374), 2);
   if (null != stateFromStores1) {
     tmp14Result2 = null;
     if (null != stateFromStores) {

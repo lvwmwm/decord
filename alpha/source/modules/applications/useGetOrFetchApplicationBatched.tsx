@@ -1,9 +1,9 @@
-// Module ID: 11220
-// Function ID: 11221
+// Module ID: 11229
+// Function ID: 11230
 // Name: useGetOrFetchApplicationBatched
-// Dependencies: [19, 2045, 4816, 12, 6795, 558, 576, 504, 2]
+// Dependencies: [19, 2045, 4816, 12, 6794, 558, 576, 504, 2]
 
-// Module 11220 (useGetOrFetchApplicationBatched)
+// Module 11229 (useGetOrFetchApplicationBatched)
 import Timers from "Timers" /* 4816 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;

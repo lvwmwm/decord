@@ -1,16 +1,16 @@
-// Module ID: 9488
-// Function ID: 9489
+// Module ID: 9495
+// Function ID: 9496
 // Name: PromotionsHooks
-// Dependencies: [19, 1392, 9489, 1394, 558, 576, 504, 9529, 2053, 9530, 2]
+// Dependencies: [19, 1392, 9496, 1394, 558, 576, 504, 9536, 2053, 9537, 2]
 
-// Module 9488 (PromotionsHooks)
+// Module 9495 (PromotionsHooks)
 import react2 from "react" /* 576 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import PromotionUtils from "PromotionUtils" /* 9529 */;
-import PromotionsActionCreatorsDefault from "PromotionsActionCreators" /* 9530 */;
+import PromotionUtils from "PromotionUtils" /* 9536 */;
+import PromotionsActionCreatorsDefault from "PromotionsActionCreators" /* 9537 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import PromotionsStore from "PromotionsStore" /* 9489 */;
+import PromotionsStore from "PromotionsStore" /* 9496 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -116,7 +116,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEligibleA
       let result1 = obj.shouldShowOutboundPromotionOnPlatform(id);
       const tmp2 = require;
       if (result1) {
-        const tmp2Result = tmp2(9529);
+        const tmp2Result = tmp2(9536);
         const result = tmp2Result.isDedicatedSurfacePromotion(id);
         let flag = !result;
         if (flag) {
@@ -175,7 +175,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEligibleA
         let result1 = obj.shouldShowOutboundPromotionOnPlatform(id);
         const tmp2 = require;
         if (result1) {
-          const tmp2Result = tmp2(9529);
+          const tmp2Result = tmp2(9536);
           const result = tmp2Result.isDedicatedSurfacePromotion(id);
           flag = !result;
           if (flag) {

@@ -1,10 +1,10 @@
-// Module ID: 11493
-// Function ID: 11494
+// Module ID: 11504
+// Function ID: 11505
 // Name: StageChannelParticipantUtils
 // Dependencies: [1104, 5018, 1128, 2]
 // Exports: participantMemberInfo
 
-// Module 11493 (StageChannelParticipantUtils)
+// Module 11504 (StageChannelParticipantUtils)
 import DurationsDefault from "Durations" /* 1104 */;
 import intl6 from "intl" /* 1128 */;
 import UserUtils from "UserUtils" /* 5018 */;

@@ -1,10 +1,10 @@
-// Module ID: 8737
-// Function ID: 8738
+// Module ID: 8744
+// Function ID: 8745
 // Name: MediaSlider
-// Dependencies: [32, 19, 17, 21, 4969, 1384, 5585, 12, 683, 8158, 6894, 1128, 8738, 8740, 5220, 8742, 8751, 587, 2]
+// Dependencies: [32, 19, 17, 21, 4969, 1384, 5585, 12, 683, 8159, 6893, 1128, 8745, 8747, 5220, 8749, 8758, 587, 2]
 // Exports: default
 
-// Module 8737 (MediaSlider)
+// Module 8744 (MediaSlider)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -128,7 +128,7 @@ export default function MediaSlider(controls) {
       tmp2.current = false;
     }
   }, items2);
-  let obj = controls(8158);
+  let obj = controls(8159);
   const obj2 = { style: items3, children: items4 };
   items3 = [tmp.container, style];
   const timeFormat = obj.getTimeFormat(tmp3);
@@ -145,7 +145,7 @@ export default function MediaSlider(controls) {
     hitSlop: { top: 8, right: 8, bottom: 8, left: 8 },
     children: closure_6(PauseIcon, { size: "md", color: "white" })
   };
-  const PressableOpacity = controls(6894).PressableOpacity;
+  const PressableOpacity = controls(6893).PressableOpacity;
   const intl = controls(1128).intl;
   const string = intl.string;
   const t = controls(1128).t;
@@ -155,9 +155,9 @@ export default function MediaSlider(controls) {
     stringResult = string(t.ZcgDJX);
   }
   if (paused) {
-    PauseIcon = tmp18(8738).PlayIcon;
+    PauseIcon = tmp18(8745).PlayIcon;
   } else {
-    PauseIcon = tmp18(8740).PauseIcon;
+    PauseIcon = tmp18(8747).PauseIcon;
   }
   items4 = [closure_6(PressableOpacity, obj3), , , ];
   const obj4 = { style: items5, tabularNumbers: true, lineClamp: 1, color: "text-overlay-light", variant: "text-xs/medium", children: timeFormat };
@@ -166,7 +166,7 @@ export default function MediaSlider(controls) {
   const obj5 = { style: tmp.sliderContainer, children: items7 };
   const obj6 = { pointerEvents: "none", style: tmp.progressSliderContainer, children: items6 };
   const obj7 = { style: tmp.timelineBackgroundSlider, value: 1, minimumValue: 0, maximumValue: 1, thumbTintColor: alphaResult.hex(), minimumTrackTintColor: alphaResult1.hex(), maximumTrackTintColor: alphaResult2.hex() };
-  const tmp11Result = paused(8742);
+  const tmp11Result = paused(8749);
   const obj8 = paused(683)("#FFFFFF");
   alphaResult = obj8.alpha(0);
   const obj10 = paused(683)("#FFFFFF");
@@ -175,15 +175,15 @@ export default function MediaSlider(controls) {
   alphaResult2 = obj12.alpha(0.1);
   items6 = [closure_6(tmp11Result, obj7), ];
   const obj9 = { style: tmp.downloadProgressSlider, value: first, minimumValue: 0, maximumValue: 1, thumbTintColor: alphaResult3.hex(), minimumTrackTintColor: alphaResult4.hex(), maximumTrackTintColor: tmp7 };
-  const tmp11Result3 = paused(8742);
+  const tmp11Result3 = paused(8749);
   const obj15 = paused(683)("#FFFFFF");
   alphaResult3 = obj15.alpha(0);
   const obj17 = paused(683)("#FFFFFF");
   alphaResult4 = obj17.alpha(0.2);
   items6[1] = closure_6(tmp11Result3, obj9);
   items7 = [c7(c5, obj6), ];
-  const obj11 = { style: tmp.playbackSlider, value: tmp3, thumbImage: paused(8751), minimumValue: 0, maximumValue: ref.current, minimumTrackTintColor: paused(587).unsafe_rawColors.WHITE, maximumTrackTintColor: "transparent", onValueChange: tmp13, onSlidingStart: callback, onSlidingComplete: callback1 };
-  const tmp11Result4 = paused(8742);
+  const obj11 = { style: tmp.playbackSlider, value: tmp3, thumbImage: paused(8758), minimumValue: 0, maximumValue: ref.current, minimumTrackTintColor: paused(587).unsafe_rawColors.WHITE, maximumTrackTintColor: "transparent", onValueChange: tmp13, onSlidingStart: callback, onSlidingComplete: callback1 };
+  const tmp11Result4 = paused(8749);
   items7[1] = closure_6(tmp11Result4, obj11);
   items4[2] = c7(c5, obj5);
   const obj13 = {
@@ -198,7 +198,7 @@ export default function MediaSlider(controls) {
     children: tmp18Result.getTimeFormat(ref.current)
   };
   const Text = tmp18(5220).Text;
-  tmp18Result = controls(8158);
+  tmp18Result = controls(8159);
   items4[3] = closure_6(Text, obj13);
   return c7(c5, obj2);
 };

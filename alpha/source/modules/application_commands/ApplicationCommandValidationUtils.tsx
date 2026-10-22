@@ -1,15 +1,15 @@
-// Module ID: 12090
-// Function ID: 12091
+// Module ID: 12101
+// Function ID: 12102
 // Name: ApplicationCommandValidationUtils
-// Dependencies: [5970, 5620, 10169, 1128, 12091, 2]
+// Dependencies: [5969, 5620, 10176, 1128, 12102, 2]
 // Exports: getValidationResults
 
-// Module 12090 (ApplicationCommandValidationUtils)
+// Module 12101 (ApplicationCommandValidationUtils)
 import intl3 from "intl" /* 1128 */;
 import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5620 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5970 */;
-import ApplicationCommandOptionUtils from "ApplicationCommandOptionUtils" /* 10169 */;
-import ApplicationCommandValidatorsDefault from "ApplicationCommandValidators" /* 12091 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5969 */;
+import ApplicationCommandOptionUtils from "ApplicationCommandOptionUtils" /* 10176 */;
+import ApplicationCommandValidatorsDefault from "ApplicationCommandValidators" /* 12102 */;
 import size from "module_2" /* 2 */;
 
 function validateOptionContent(allowEmptyValues) {

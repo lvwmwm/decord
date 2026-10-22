@@ -1,10 +1,10 @@
-// Module ID: 5981
-// Function ID: 5982
+// Module ID: 5980
+// Function ID: 5981
 // Name: ChannelUtils
-// Dependencies: [4825, 4821, 4899, 4901, 4872, 5703, 1087, 1394, 4906, 1099, 2000, 5982, 5983, 1128, 5018, 5984, 11, 2, 5988]
+// Dependencies: [4825, 4821, 4899, 4901, 4872, 5703, 1087, 1394, 4906, 1099, 2000, 5981, 5982, 1128, 5018, 5983, 11, 2, 5987]
 // Exports: channelTypeString, computeSummarizedVoiceStates, computeSummarizedVoiceUsers, denyChannelAccessForNonPaidUsers, getBitrateLimit, getChannelAnalyticsPage, getChannelLinkToCopy, getChannelPermalink, getChannelThreadPermalink, getMentionIconType, getPrivateChannelUserTagsString, isAnyVoiceStateStage, isChannelFull, permissionOverwriteForRole, permissionOverwriteForUser, permissionOverwritesForAnnouncement, permissionOverwritesForRoles, previousTextChannelRouteForGuild
 
-// Module 5981 (ChannelUtils)
+// Module 5980 (ChannelUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import intl14 from "intl" /* 1128 */;
@@ -12,10 +12,10 @@ import PremiumConstants from "PremiumConstants" /* 1394 */;
 import Server from "Server" /* 2000 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4906 */;
 import UserUtilsDefault from "UserUtils" /* 5018 */;
-import ChannelListUtils from "ChannelListUtils" /* 5982 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5983 */;
-import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 5984 */;
-import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 5988 */;
+import ChannelListUtils from "ChannelListUtils" /* 5981 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5982 */;
+import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 5983 */;
+import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 5987 */;
 import ChannelRecord from "ChannelRecord" /* 4825 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildChannelStore from "GuildChannelStore" /* 4899 */;

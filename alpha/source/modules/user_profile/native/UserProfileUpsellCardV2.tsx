@@ -1,9 +1,9 @@
-// Module ID: 15866
-// Function ID: 15867
+// Module ID: 15880
+// Function ID: 15881
 // Name: UserProfileUpsellCardV2
-// Dependencies: [19, 17, 7528, 21, 4969, 587, 558, 576, 5220, 9394, 5230, 5244, 1107, 2]
+// Dependencies: [19, 17, 7529, 21, 4969, 587, 558, 576, 5220, 9401, 5230, 5244, 1107, 2]
 
-// Module 15866 (UserProfileUpsellCardV2)
+// Module 15880 (UserProfileUpsellCardV2)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,7 +11,7 @@ import ConstantsIOS from "ConstantsIOS" /* 1107 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import components_Button_Button from "components/Button/Button" /* 5230 */;
 import LinearGradientDefault from "LinearGradient" /* 5244 */;
-import ColorConstants from "ColorConstants" /* 7528 */;
+import ColorConstants from "ColorConstants" /* 7529 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -83,7 +83,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileU
           const _Symbol = Symbol;
           if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
             const obj2 = { color: nativeDefault.colors.WHITE, size: "xs" };
-            const NitroWheelIcon = tmp(9394).NitroWheelIcon;
+            const NitroWheelIcon = tmp(9401).NitroWheelIcon;
             const tmp18 = hasOwnProperty(NitroWheelIcon, obj2);
             cResult[12] = tmp18;
             tmp15 = tmp18;
@@ -228,7 +228,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileU
   const obj3 = { icon: hasOwnProperty(NitroWheelIcon, obj4), text: buttonText, onPress: onButtonPress, variant: buttonVariant, loading: flag2, disabled: flag, grow: true };
   const Button = tmp6(5230).Button;
   obj4 = { color: nativeDefault.colors.WHITE, size: "xs" };
-  NitroWheelIcon = tmp6(9394).NitroWheelIcon;
+  NitroWheelIcon = tmp6(9401).NitroWheelIcon;
   if (!flag) {
     flag = flag2;
   }

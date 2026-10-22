@@ -1,23 +1,23 @@
-// Module ID: 12402
-// Function ID: 12403
+// Module ID: 12412
+// Function ID: 12413
 // Name: ConjurePlanExperiences
-// Dependencies: [19, 17, 21, 9585, 12403, 10783, 11740, 10918, 4969, 587, 558, 576, 5220, 8562, 12392, 1128, 3830, 12405, 12401, 12385, 2]
+// Dependencies: [19, 17, 21, 9592, 12413, 10791, 11751, 10926, 4969, 587, 558, 576, 5220, 8563, 12402, 1128, 3830, 12415, 12411, 12395, 2]
 
-// Module 12402 (ConjurePlanExperiences)
+// Module 12412 (ConjurePlanExperiences)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import AppsIcon2 from "AppsIcon" /* 8562 */;
-import GameControllerIcon from "GameControllerIcon" /* 9585 */;
-import UserCircleIcon from "UserCircleIcon" /* 10783 */;
-import ShieldIcon from "ShieldIcon" /* 10918 */;
-import RobotIcon from "RobotIcon" /* 11740 */;
-import conjurePlanExperienceSurfaces from "conjurePlanExperienceSurfaces" /* 12392 */;
-import ConjurePlanCommandText from "ConjurePlanCommandText" /* 12401 */;
-import WindowTopIcon from "WindowTopIcon" /* 12403 */;
-import conjurePlanExperienceSections from "conjurePlanExperienceSections" /* 12405 */;
+import AppsIcon2 from "AppsIcon" /* 8563 */;
+import GameControllerIcon from "GameControllerIcon" /* 9592 */;
+import UserCircleIcon from "UserCircleIcon" /* 10791 */;
+import ShieldIcon from "ShieldIcon" /* 10926 */;
+import RobotIcon from "RobotIcon" /* 11751 */;
+import conjurePlanExperienceSurfaces from "conjurePlanExperienceSurfaces" /* 12402 */;
+import ConjurePlanCommandText from "ConjurePlanCommandText" /* 12411 */;
+import WindowTopIcon from "WindowTopIcon" /* 12413 */;
+import conjurePlanExperienceSections from "conjurePlanExperienceSections" /* 12415 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -41,7 +41,7 @@ let obj9;
 let size;
 let tmp;
 const Text_Text = tmp(5220);
-const f113972 = (caption) => {
+const f114096 = (caption) => {
   let obj2;
   obj = { caption: caption.caption, children: closure_1_5(closure_1_10, obj2) };
   const key = caption.key;
@@ -262,7 +262,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   const combined = "" + name + ", " + description;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.ICON_STRONG };
-    const AppsIcon = tmp(8562).AppsIcon;
+    const AppsIcon = tmp(8563).AppsIcon;
     const tmp9 = hasOwnProperty(AppsIcon, obj2);
     cResult[0] = tmp9;
     first = tmp9;
@@ -494,7 +494,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Experi
         const arraySpreadResult = HermesBuiltin.arraySpread(items3, items2, 0);
         const tmp2Result = conjurePlanExperienceSections;
         const result = tmp2Result.conjurePlanRequirementGroups(proposal);
-        HermesBuiltin.arraySpread(items3, result.map(f113972), arraySpreadResult);
+        HermesBuiltin.arraySpread(items3, result.map(f114096), arraySpreadResult);
         cResult[5] = proposal;
         cResult[6] = items3;
         tmp7 = items3;
@@ -548,7 +548,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Experi
       const arraySpreadResult = HermesBuiltin.arraySpread(items3, items2, 0);
       const obj3 = conjurePlanExperienceSections;
       const result = obj3.conjurePlanRequirementGroups(proposal);
-      HermesBuiltin.arraySpread(items3, result.map(f113972), arraySpreadResult);
+      HermesBuiltin.arraySpread(items3, result.map(f114096), arraySpreadResult);
       items = items3;
     }
   }
@@ -668,7 +668,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Compon
     tmp5 = cResult[1];
   }
   if (tmp5) {
-    AppsIcon = tmp(8562).AppsIcon;
+    AppsIcon = tmp(8563).AppsIcon;
   } else {
     AppsIcon = obj[experience.kind];
   }
@@ -802,7 +802,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Compon
     if (tmp5) {
       BM4Ymz = _modDef3830.BM4Ymz;
     } else {
-      BM4Ymz = tmp(12405).CONJURE_PLAN_EXPERIENCE_KIND_LABELS[experience.kind];
+      BM4Ymz = tmp(12415).CONJURE_PLAN_EXPERIENCE_KIND_LABELS[experience.kind];
     }
     const stringResult = string(BM4Ymz);
     cResult[7] = experience.kind;
@@ -833,7 +833,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Compon
   obj = conjurePlanExperienceSections;
   const result = obj.conjurePlanExperienceIsApp(experience);
   if (result) {
-    AppsIcon = tmp2(8562).AppsIcon;
+    AppsIcon = tmp2(8563).AppsIcon;
   } else {
     AppsIcon = obj[experience.kind];
   }
@@ -848,7 +848,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Compon
   if (result) {
     BM4Ymz = _modDef3830.BM4Ymz;
   } else {
-    BM4Ymz = tmp2(12405).CONJURE_PLAN_EXPERIENCE_KIND_LABELS[experience.kind];
+    BM4Ymz = tmp2(12415).CONJURE_PLAN_EXPERIENCE_KIND_LABELS[experience.kind];
   }
   const obj6 = { variant: "text-md/medium", color: "text-strong", accessibilityRole: "header", children: string(BM4Ymz) };
   items[1] = hasOwnProperty(Text, obj6);

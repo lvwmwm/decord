@@ -1,9 +1,9 @@
-// Module ID: 11361
-// Function ID: 11362
+// Module ID: 11372
+// Function ID: 11373
 // Name: PictureInPictureVideo
-// Dependencies: [32, 19, 17, 4820, 6758, 502, 2014, 4872, 6671, 11318, 10847, 5618, 21, 4969, 1202, 587, 558, 576, 10853, 12, 11315, 11362, 504, 5696, 11363, 11366, 11376, 10870, 11386, 11311, 11398, 11454, 5238, 8599, 11388, 11391, 11325, 11321, 11324, 1499, 1384, 8788, 2]
+// Dependencies: [32, 19, 17, 4820, 6757, 502, 2014, 4872, 6670, 11327, 10855, 5618, 21, 4969, 1202, 587, 558, 576, 10861, 12, 11324, 11373, 504, 5696, 11374, 11377, 11387, 10878, 11397, 11320, 11409, 11465, 5238, 8600, 11399, 11402, 11334, 11330, 11333, 1499, 1384, 8795, 2]
 
-// Module 11361 (PictureInPictureVideo)
+// Module 11372 (PictureInPictureVideo)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,26 +12,26 @@ import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import useToken2 from "useToken" /* 5238 */;
 import CallConstants from "CallConstants" /* 5618 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5696 */;
-import useAvatarColorDefault from "useAvatarColor" /* 8599 */;
-import transitionToActivityDefault from "transitionToActivity" /* 11311 */;
-import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 11321 */;
-import usePipDimensionsDefault from "usePipDimensions" /* 11324 */;
-import useIsViewingActivity from "useIsViewingActivity" /* 11325 */;
-import VideoRenderer from "VideoRenderer" /* 11376 */;
-import UserTileDefault from "UserTile" /* 11386 */;
-import useAvatarSpeakingColor from "useAvatarSpeakingColor" /* 11388 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11391 */;
+import useAvatarColorDefault from "useAvatarColor" /* 8600 */;
+import transitionToActivityDefault from "transitionToActivity" /* 11320 */;
+import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 11330 */;
+import usePipDimensionsDefault from "usePipDimensions" /* 11333 */;
+import useIsViewingActivity from "useIsViewingActivity" /* 11334 */;
+import VideoRenderer from "VideoRenderer" /* 11387 */;
+import UserTileDefault from "UserTile" /* 11397 */;
+import useAvatarSpeakingColor from "useAvatarSpeakingColor" /* 11399 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11402 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6758 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6757 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
-import SpeakingStore from "SpeakingStore" /* 6671 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11318 */;
-import ChannelCallStore from "ChannelCallStore" /* 10847 */;
+import SpeakingStore from "SpeakingStore" /* 6670 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11327 */;
+import ChannelCallStore from "ChannelCallStore" /* 10855 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import native_mod from "native" /* 1202 */;
@@ -1033,7 +1033,7 @@ let closure_23 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   let obj9;
   let tmp5;
   let tmp6;
-  const f109746 = () => {
+  const f109852 = () => {
     const items = [ChannelCallLifecycleStore.consumedRequestToRespondToSeriousThermalState(), ChannelCallLifecycleStore.isReactingToThermalState()];
     return items;
   };
@@ -1043,8 +1043,8 @@ let closure_23 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   let items = [ChannelCallLifecycleStore];
   const obj = get_initialized;
   const obj2 = { channelId: channel.id, selfParticipant };
-  [tmp5, tmp6] = obj.useStateFromStoresArray(items, f109746);
-  _slicedToArray(obj.useStateFromStoresArray(items, f109746), 2);
+  [tmp5, tmp6] = obj.useStateFromStoresArray(items, f109852);
+  _slicedToArray(obj.useStateFromStoresArray(items, f109852), 2);
   const tmp7 = closure_22(obj2);
   let avatarURL;
   const obj3 = useToken2;

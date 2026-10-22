@@ -1,22 +1,22 @@
-// Module ID: 18173
-// Function ID: 18174
+// Module ID: 18195
+// Function ID: 18196
 // Name: EasyChannelPermissionSettings
-// Dependencies: [32, 5, 19, 17, 18174, 4821, 4881, 4875, 4843, 4901, 4911, 1392, 7859, 1087, 21, 4969, 587, 558, 576, 1505, 11272, 504, 8941, 8942, 8943, 1128, 5590, 5895, 8958, 4906, 5964, 7279, 6973, 7937, 11120, 6889, 11270, 6916, 5697, 8869, 9115, 18175, 18177, 2]
+// Dependencies: [32, 5, 19, 17, 18196, 4821, 4881, 4875, 4843, 4901, 4911, 1392, 7860, 1087, 21, 4969, 587, 558, 576, 1505, 11281, 504, 8948, 8949, 8950, 1128, 5590, 5894, 8965, 4906, 5963, 7280, 6972, 7938, 11129, 6888, 11279, 6915, 5697, 8876, 9122, 18197, 18199, 2]
 
-// Module 18173 (EasyChannelPermissionSettings)
+// Module 18195 (EasyChannelPermissionSettings)
 import nativeDefault from "native" /* 587 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5697 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5895 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7859 */;
-import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8941 */;
-import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8942 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8958 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11270 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5894 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7860 */;
+import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8948 */;
+import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8949 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8965 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11279 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 18174 */;
+import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 18196 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildMemberStore from "GuildMemberStore" /* 4881 */;
 import GuildRoleStore from "GuildRoleStore" /* 4875 */;
@@ -110,7 +110,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   if (cResult[3] !== navigation) {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "Array" });
+        navigation.setOptions({ headerRight: "r" });
       }
     }
     const items1 = [navigation];
@@ -122,7 +122,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   } else {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "Array" });
+        navigation.setOptions({ headerRight: "r" });
       }
     }
     tmp13 = cResult[5];
@@ -131,13 +131,13 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   if (null != guild) {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "Array" });
+        navigation.setOptions({ headerRight: "r" });
       }
     }
     if (null != guild) {
       class N {
         constructor() {
-          navigation.setOptions({ headerRight: "Array" });
+          navigation.setOptions({ headerRight: "r" });
         }
       }
     }
@@ -146,14 +146,14 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "Array" });
+        navigation.setOptions({ headerRight: "r" });
       }
     }
     cResult[6] = tmp16;
   } else {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "Array" });
+        navigation.setOptions({ headerRight: "r" });
       }
     }
   }
@@ -400,7 +400,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   const sortedGuildRoles = stateFromStoresObject.sortedGuildRoles;
   const items1 = [navigation];
   const layoutEffect = togglePrivateChannel.useLayoutEffect(() => {
-    navigation.setOptions({ headerRight: "Array" });
+    navigation.setOptions({ headerRight: "r" });
   }, items1);
   const items2 = [guild, sortedGuildRoles, channel];
   const memo = togglePrivateChannel.useMemo(() => {

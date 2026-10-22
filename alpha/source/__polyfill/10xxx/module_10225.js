@@ -1,109 +1,63 @@
 // Module ID: 10225
 // Function ID: 10226
-// Dependencies: [41, 42, 93, 95, 98, 10204]
+// Dependencies: [41, 42]
 
 // Module 10225
-import _mod10204 from "module_10204" /* 10204 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
+class OverlapRemovalRefiner {
+  constructor() {
+    _classCallCheck(this, OverlapRemovalRefiner);
   }
 }
-class UnlikelyFormatFilter {
-  constructor(strictMode) {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, UnlikelyFormatFilter);
-    const obj = _getPrototypeOf(UnlikelyFormatFilter);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, undefined);
-    }
-    const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.strictMode = strictMode;
-    return tmp3Result;
-  }
-}
-_inherits(UnlikelyFormatFilter, _mod10204.Filter);
 const entry = {
-  key: "isValid",
-  value: function isValid(debug, text) {
-    let flag;
-    const str = text.text;
-    const str2 = str.replace(" ", "");
-    if (str2.match(/^\d*(\.\d*)?$/)) {
-      debug.debug(() => {
-        console.log("Removing unlikely result '" + text.text + "'");
-      });
-      flag = false;
+  key: "refine",
+  value: function refine(debug, arg1) {
+    const self = this;
+    if (arg1.length < 2) {
+      return arg1;
     } else {
-      const start = text.start;
-      if (start.isValidDate()) {
-        if (text.end) {
-          let flag2;
-          const end = text.end;
-          if (!end.isValidDate()) {
-            debug.debug(() => {
-              console.log("Removing invalid result: " + text + " (" + text.end + ")");
+      const items = [];
+      let first = arg1[0];
+      let num = 1;
+      let num2 = 1;
+      let tmp8 = first;
+      if (1 < arg1.length) {
+        do {
+          let tmp4;
+          let tmp = arg1[num];
+          if (tmp.index >= first.index + first.text.length) {
+            let arr = items.push(first);
+            tmp4 = tmp;
+          } else {
+            first = null;
+            let closure_1 = null;
+            if (tmp.text.length > first.text.length) {
+              first = tmp;
+              closure_1 = first;
+              tmp4 = tmp;
+            } else {
+              closure_1 = tmp;
+              tmp4 = first;
+            }
+            let debugResult = debug.debug(() => {
+              console.log("" + self.constructor.name + " remove " + closure_1 + " by " + first);
             });
-            flag2 = false;
           }
-          flag = flag2;
-        }
-        const self = this;
-        const strictMode = this.strictMode;
-        let isStrictModeValidResult = !strictMode;
-        if (strictMode) {
-          isStrictModeValidResult = self.isStrictModeValid(debug, text);
-        }
-        flag2 = isStrictModeValidResult;
-      } else {
-        debug.debug(() => {
-          console.log("Removing invalid result: " + text + " (" + text.start + ")");
-        });
-        flag = false;
+          num = num2 + 1;
+          first = tmp4;
+          tmp8 = tmp4;
+          num2 = num;
+        } while (num < arg1.length);
       }
+      if (null != tmp8) {
+        items.push(tmp8);
+      }
+      return items;
     }
-    return flag;
   }
 };
-const items = [
-  entry,
-  {
-    key: "isStrictModeValid",
-    value: function isStrictModeValid(debug, start) {
-      start = start.start;
-      const result = start.isOnlyWeekdayComponent();
-      let flag = !result;
-      if (result) {
-        debug.debug(() => {
-          console.log("(Strict) Removing weekday only component: " + start + " (" + start.end + ")");
-        });
-        flag = false;
-      }
-      return flag;
-    }
-  }
-];
+let items = [entry];
 
-export default _createClass(UnlikelyFormatFilter, items);
+export default _createClass(OverlapRemovalRefiner, items);

@@ -1,10 +1,10 @@
-// Module ID: 5890
-// Function ID: 5891
+// Module ID: 5889
+// Function ID: 5890
 // Name: dispatchAutoDisableVideo
 // Dependencies: [5704, 584, 2]
 // Exports: default
 
-// Module 5890 (dispatchAutoDisableVideo)
+// Module 5889 (dispatchAutoDisableVideo)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 5704 */;
 import size from "module_2" /* 2 */;

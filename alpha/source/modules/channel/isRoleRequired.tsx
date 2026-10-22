@@ -1,10 +1,10 @@
-// Module ID: 7188
-// Function ID: 7189
+// Module ID: 7187
+// Function ID: 7188
 // Name: isRoleRequired
 // Dependencies: [4825, 1098, 4906, 1099, 2]
 // Exports: default
 
-// Module 7188 (isRoleRequired)
+// Module 7187 (isRoleRequired)
 import Constants from "Constants" /* 1098 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import ChannelRecord from "ChannelRecord" /* 4825 */;

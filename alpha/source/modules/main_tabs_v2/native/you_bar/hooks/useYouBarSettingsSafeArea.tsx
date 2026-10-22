@@ -1,12 +1,12 @@
-// Module ID: 14705
-// Function ID: 14706
+// Module ID: 14719
+// Function ID: 14720
 // Name: useYouBarSettingsSafeArea
-// Dependencies: [558, 1633, 576, 7024, 1385, 2]
+// Dependencies: [558, 1633, 576, 7023, 1385, 2]
 
-// Module 14705 (useYouBarSettingsSafeArea)
+// Module 14719 (useYouBarSettingsSafeArea)
 import react from "react" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7024 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7023 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

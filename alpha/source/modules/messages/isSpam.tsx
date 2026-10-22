@@ -1,11 +1,11 @@
-// Module ID: 7600
-// Function ID: 7601
+// Module ID: 7601
+// Function ID: 7602
 // Name: isSpam
-// Dependencies: [1392, 1087, 7601, 2]
+// Dependencies: [1392, 1087, 7602, 2]
 // Exports: isSpam, isSpamSupported, isSpammer
 
-// Module 7600 (isSpam)
-import AutomodMessageUtils from "AutomodMessageUtils" /* 7601 */;
+// Module 7601 (isSpam)
+import AutomodMessageUtils from "AutomodMessageUtils" /* 7602 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;

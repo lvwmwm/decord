@@ -1,18 +1,18 @@
-// Module ID: 12218
-// Function ID: 12219
+// Module ID: 12229
+// Function ID: 12230
 // Name: ConjurePublishHistoryPanel
-// Dependencies: [32, 19, 17, 21, 558, 576, 12219, 5220, 1128, 3830, 5964, 5230, 12221, 2]
+// Dependencies: [32, 19, 17, 21, 558, 576, 12230, 5220, 1128, 3830, 5963, 5230, 12232, 2]
 
-// Module 12218 (ConjurePublishHistoryPanel)
+// Module 12229 (ConjurePublishHistoryPanel)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl9 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import components_Button_Button from "components/Button/Button" /* 5230 */;
-import Stack_Stack from "Stack/Stack" /* 5964 */;
-import useConjurePublishHistory from "useConjurePublishHistory" /* 12219 */;
-import ConjureNativeMarkdownDefault from "ConjureNativeMarkdown" /* 12221 */;
+import Stack_Stack from "Stack/Stack" /* 5963 */;
+import useConjurePublishHistory from "useConjurePublishHistory" /* 12230 */;
+import ConjureNativeMarkdownDefault from "ConjureNativeMarkdown" /* 12232 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -66,7 +66,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Release
     if (cResult[2] !== retry) {
       const obj4 = { spacing: 8, children: items };
       items = [first, ];
-      const Stack = tmp(5964).Stack;
+      const Stack = tmp(5963).Stack;
       const obj5 = { variant: "secondary", size: "sm", text: tmp24, onPress: retry };
       items[1] = metroRequire(components_Button_Button.Button, obj5);
       const tmp30 = metroImportDefault(Stack, obj4);
@@ -145,7 +145,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Release
   const state = conjurePublishHistoryNotes.state;
   if ("failed" === state.status) {
     const obj2 = { spacing: 8, children: items };
-    const Stack = tmp(5964).Stack;
+    const Stack = tmp(5963).Stack;
     const obj3 = { variant: "text-sm/normal", color: "text-muted", children: intl4.string(_modDef3830.cBIaeW) };
     const Text2 = tmp(5220).Text;
     intl4 = tmp(1128).intl;
@@ -375,7 +375,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePubli
   let obj = projectId(576);
   const cResult = obj.c(33);
   projectId = projectId.projectId;
-  const obj2 = projectId(12219);
+  const obj2 = projectId(12230);
   const iter = obj2.useConjurePublishHistory(projectId);
   const state = iter.state;
   if ("loading" === state.status) {
@@ -419,7 +419,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePubli
     if (cResult[3] !== iter.retry) {
       const obj5 = { spacing: 12, children: items };
       items = [tmp43, ];
-      const Stack = tmp(5964).Stack;
+      const Stack = tmp(5963).Stack;
       const obj6 = { variant: "secondary", text: tmp47, onPress: iter.retry };
       items[1] = closure_6(projectId(5230).Button, obj6);
       const tmp53 = closure_7(Stack, obj5);
@@ -529,7 +529,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePubli
                 }
                 const obj11 = { spacing: 24, children: items1 };
                 items1 = [tmp4, tmp8, tmp31];
-                const tmp36 = closure_7(projectId(5964).Stack, obj11);
+                const tmp36 = closure_7(projectId(5963).Stack, obj11);
                 cResult[30] = tmp31;
                 cResult[31] = tmp8;
                 cResult[32] = tmp36;
@@ -538,7 +538,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePubli
             }
             const obj12 = { direction: "horizontal", spacing: 8, align: "center", justify: "space-between", children: items2 };
             items2 = [tmp15, tmp21, tmp28];
-            const tmp33 = closure_7(projectId(5964).Stack, obj12);
+            const tmp33 = closure_7(projectId(5963).Stack, obj12);
             cResult[26] = tmp28;
             cResult[27] = tmp15;
             cResult[28] = tmp21;
@@ -597,7 +597,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePubli
   let obj12;
   let tmp5;
   projectId = projectId.projectId;
-  let obj = projectId(12219);
+  let obj = projectId(12230);
   const iter = obj.useConjurePublishHistory(projectId);
   const state = iter.state;
   if ("loading" === state.status) {
@@ -607,7 +607,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePubli
     tmp5 = closure_6(Text3, obj2);
   } else if ("failed" === state.status) {
     const obj3 = { spacing: 12, children: items };
-    const Stack = tmp(5964).Stack;
+    const Stack = tmp(5963).Stack;
     const obj4 = { variant: "text-sm/normal", children: intl2.string(iter(3830).TzCJWI) };
     const Text2 = tmp(5220).Text;
     intl2 = tmp(1128).intl;
@@ -624,7 +624,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePubli
     tmp5 = closure_6(Text, obj6);
   } else {
     const obj7 = { spacing: 24, children: items1 };
-    const Stack2 = tmp(5964).Stack;
+    const Stack2 = tmp(5963).Stack;
     const obj8 = { variant: "text-sm/normal", color: "text-muted", children: intl5.string(iter(3830).Kzt1rI) };
     const Text4 = tmp(5220).Text;
     intl5 = tmp(1128).intl;
@@ -635,7 +635,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePubli
       return metroRequire(closure_9, obj, entry.id);
     });
     const obj9 = { direction: "horizontal", spacing: 8, align: "center", justify: "space-between", children: items2 };
-    const Stack3 = tmp(5964).Stack;
+    const Stack3 = tmp(5963).Stack;
     const obj10 = { variant: "secondary", size: "sm", shrink: true, text: intl6.string(iter(3830)["4un98A"]), disabled: !iter.hasPrevious, onPress: iter.previous };
     const Button2 = tmp(5230).Button;
     intl6 = tmp(1128).intl;

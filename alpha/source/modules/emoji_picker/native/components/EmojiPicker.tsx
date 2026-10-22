@@ -1,9 +1,9 @@
-// Module ID: 10099
-// Function ID: 10100
+// Module ID: 10106
+// Function ID: 10107
 // Name: EmojiPicker
-// Dependencies: [19, 17, 1087, 1395, 21, 4969, 587, 1267, 558, 576, 5038, 9799, 7237, 7262, 9805, 10098, 1128, 7131, 9823, 9906, 4966, 5244, 9928, 2]
+// Dependencies: [19, 17, 1087, 1395, 21, 4969, 587, 1267, 558, 576, 5038, 9806, 7238, 7263, 9812, 10105, 1128, 7130, 9830, 9913, 4966, 5244, 9935, 2]
 
-// Module 10099 (EmojiPicker)
+// Module 10106 (EmojiPicker)
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
@@ -102,7 +102,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       tmp18 = cResult[7];
     }
     if (cResult[8] !== handleTextChange) {
-      class H {
+      class M {
         constructor() {
           const current = ref1.current;
           if (current != null) {
@@ -112,9 +112,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
       cResult[8] = handleTextChange;
-      cResult[9] = H;
+      cResult[9] = M;
     } else {
-      class H {
+      class M {
         constructor() {
           const current = ref1.current;
           if (current != null) {
@@ -126,7 +126,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     const _Symbol = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      class H {
+      class M {
         constructor() {
           const current = ref1.current;
           if (current != null) {
@@ -137,7 +137,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       cResult[10] = tmp22;
     } else {
-      class H {
+      class M {
         constructor() {
           const current = ref1.current;
           if (current != null) {
@@ -152,7 +152,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     ({ container, header } = tmp4);
     ref1(handleTextChange[15])(tmp21);
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      class H {
+      class M {
         constructor() {
           const current = ref1.current;
           if (current != null) {
@@ -165,7 +165,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       cResult[11] = stringResult;
       tmp24 = stringResult;
     } else {
-      class H {
+      class M {
         constructor() {
           const current = ref1.current;
           if (current != null) {
@@ -176,7 +176,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
     }
     if (cResult[12] === tmp18) {
-      class H {
+      class M {
         constructor() {
           const current = ref1.current;
           if (current != null) {
@@ -186,7 +186,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
       if (cResult[15] === tmp4.header) {
-        class H {
+        class M {
           constructor() {
             const current = ref1.current;
             if (current != null) {
@@ -196,7 +196,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           }
         }
         if (cResult[18] === bottomSheetIndex) {
-          class H {
+          class M {
             constructor() {
               const current = ref1.current;
               if (current != null) {
@@ -229,8 +229,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj7 = { ref: ref1, size: "md", placeholder: tmp24, onChange: handleTextChange, onFocus: tmp18, round: true };
     cResult[12] = tmp18;
     cResult[13] = handleTextChange;
-    cResult[14] = closure_9(channel(handleTextChange[17]).SearchField, obj7);
-    const tmp28 = closure_9(channel(handleTextChange[17]).SearchField, obj7);
+    cResult[14] = closure_9(channel(handleTextChange[17]).SearchBar, obj7);
+    const tmp28 = closure_9(channel(handleTextChange[17]).SearchBar, obj7);
   }
   const fn = function n() {
     const obj = AnalyticsUtilsDefault;
@@ -246,7 +246,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   tmp6 = items;
   tmp5 = fn;
 }) : (function EmojiPicker(inPortalKeyboard) {
-  let SearchField;
+  let SearchBar;
   let bottomSheetIndex;
   let bottomSheetRef;
   let channel;
@@ -301,11 +301,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ({ safeAreaStyle, safeAreaBottomKeyboardAware } = ref1(handleTextChange[15])({ hasCategories: true }));
   const obj3 = { value: analyticsLocations, children: closure_10(closure_4, obj4) };
   obj4 = { style: tmp.container, children: items3 };
-  const obj5 = { style: tmp.header, children: closure_9(SearchField, obj6) };
+  const obj5 = { style: tmp.header, children: closure_9(SearchBar, obj6) };
   ref1(handleTextChange[15])({ hasCategories: true });
   const AnalyticsLocationProvider = channel(handleTextChange[12]).AnalyticsLocationProvider;
   obj6 = { ref: ref1, size: "md", placeholder: intl.string(channel(handleTextChange[16]).t.KgK5qg), onChange: handleTextChange, onFocus: callback, round: true };
-  SearchField = channel(handleTextChange[17]).SearchField;
+  SearchBar = channel(handleTextChange[17]).SearchBar;
   intl = channel(handleTextChange[16]).intl;
   items3 = [closure_9(closure_4, obj5), , ];
   const obj7 = { style: tmp.list, children: items4 };

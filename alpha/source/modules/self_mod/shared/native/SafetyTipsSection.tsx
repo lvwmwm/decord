@@ -1,12 +1,12 @@
-// Module ID: 10912
-// Function ID: 10913
+// Module ID: 10920
+// Function ID: 10921
 // Name: SafetyTipsSection
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 10913, 5220, 1128, 5964, 8074, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 10921, 5220, 1128, 5963, 8075, 2]
 
-// Module 10912 (SafetyTipsSection)
+// Module 10920 (SafetyTipsSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import SafetyTipsRowDefault from "SafetyTipsRow" /* 8074 */;
+import SafetyTipsRowDefault from "SafetyTipsRow" /* 8075 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -35,7 +35,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyTipsCo
   showHeader = showHeader.showHeader;
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = closure_4(safetyTips(10913).SafetyBookletSpotIllustration, {});
+    const tmp7 = closure_4(safetyTips(10921).SafetyBookletSpotIllustration, {});
     cResult[0] = tmp7;
     first = tmp7;
   } else {
@@ -103,7 +103,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyTipsCo
           }
           const obj3 = { spacing: 16, children: items };
           items = [tmp8, tmp18, tmp24];
-          const tmp30 = closure_5(safetyTips(5964).Stack, obj3);
+          const tmp30 = closure_5(safetyTips(5963).Stack, obj3);
           cResult[19] = tmp8;
           cResult[20] = tmp18;
           cResult[21] = tmp24;
@@ -119,7 +119,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyTipsCo
       }
       const obj5 = { spacing: 8, align: "center", justify: "center", children: items1 };
       items1 = [tmp12, tmp15];
-      const tmp20 = closure_5(safetyTips(5964).Stack, obj5);
+      const tmp20 = closure_5(safetyTips(5963).Stack, obj5);
       cResult[9] = tmp12;
       cResult[10] = tmp15;
       cResult[11] = tmp20;
@@ -150,10 +150,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyTipsCo
   let showHeader = safetyTips.showHeader;
   const description = safetyTips.description;
   const tmp = closure_6();
-  let obj = { style: tmp.image, children: closure_4(safetyTips(10913).SafetyBookletSpotIllustration, {}) };
-  const Stack = safetyTips(5964).Stack;
+  let obj = { style: tmp.image, children: closure_4(safetyTips(10921).SafetyBookletSpotIllustration, {}) };
+  const Stack = safetyTips(5963).Stack;
   const items = [closure_4(View, obj), , ];
-  const Stack2 = safetyTips(5964).Stack;
+  const Stack2 = safetyTips(5963).Stack;
   const tmp6 = View;
   if (showHeader) {
     const obj2 = { style: tmp.text, variant: "heading-xl/semibold", children: intl.string(safetyTips(1128).t.eAbVfS) };

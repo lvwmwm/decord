@@ -1,10 +1,10 @@
-// Module ID: 12982
-// Function ID: 12983
+// Module ID: 12998
+// Function ID: 12999
 // Name: TypingIndicator
-// Dependencies: [19, 17, 9752, 5223, 6712, 7744, 12983, 1392, 1087, 21, 558, 576, 12984, 504, 4969, 587, 12985, 12986, 12987, 5976, 1267, 7237, 7262, 12988, 12989, 5038, 5238, 5023, 5233, 5234, 12999, 1202, 5220, 13003, 2]
+// Dependencies: [19, 17, 9759, 5223, 6711, 7745, 12999, 1392, 1087, 21, 558, 576, 13000, 504, 4969, 587, 13001, 13002, 13003, 5975, 1267, 7238, 7263, 13004, 13005, 5038, 5238, 5023, 5233, 5234, 13015, 1202, 5220, 13019, 2]
 // Exports: hasTypingIndicatorContent
 
-// Module 12982 (TypingIndicator)
+// Module 12998 (TypingIndicator)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -13,17 +13,17 @@ import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import spring from "spring" /* 5233 */;
 import springPresets from "springPresets" /* 5234 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5976 */;
-import SlowmodeStore from "SlowmodeStore" /* 7744 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9752 */;
-import useTypingUsersIds from "useTypingUsersIds" /* 12984 */;
-import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 12987 */;
-import CustomTypingIndicatorAnalytics from "CustomTypingIndicatorAnalytics" /* 12988 */;
-import openCustomTypingIndicatorAnnounceActionSheet from "openCustomTypingIndicatorAnnounceActionSheet" /* 12989 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5975 */;
+import SlowmodeStore from "SlowmodeStore" /* 7745 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9759 */;
+import useTypingUsersIds from "useTypingUsersIds" /* 13000 */;
+import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 13003 */;
+import CustomTypingIndicatorAnalytics from "CustomTypingIndicatorAnalytics" /* 13004 */;
+import openCustomTypingIndicatorAnnounceActionSheet from "openCustomTypingIndicatorAnnounceActionSheet" /* 13005 */;
 import react from "react" /* 19 */;
 import DevSettingsStore from "DevSettingsStore" /* 5223 */;
-import RawGuildEmojiStore_mod from "RawGuildEmojiStore" /* 6712 */;
-import TypingStore from "TypingStore" /* 12983 */;
+import RawGuildEmojiStore_mod from "RawGuildEmojiStore" /* 6711 */;
+import TypingStore from "TypingStore" /* 12999 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

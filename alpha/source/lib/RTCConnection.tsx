@@ -1,7 +1,7 @@
 // Module ID: 5706
 // Function ID: 5707
 // Name: RTCConnection
-// Dependencies: [5, 5707, 5717, 5718, 5719, 5720, 502, 4821, 4843, 2014, 5700, 5723, 5799, 1392, 1087, 5800, 5801, 5704, 5802, 569, 5708, 5728, 1257, 3, 5803, 5804, 1281, 5806, 5815, 5809, 5816, 1483, 1384, 4783, 1386, 584, 2013, 1405, 5818, 14, 5819, 5820, 5821, 5822, 5823, 5824, 5825, 5826, 1267, 4975, 5827, 5772, 5828, 5830, 5831, 2053, 5832, 5834, 5835, 5836, 5725, 5837, 5869, 5882, 5878, 5883, 5884, 5885, 5886, 5888, 5891, 5893, 5894, 5895, 1128, 551, 15013, 1266, 2]
+// Dependencies: [5, 5707, 5717, 5718, 5719, 5720, 502, 4821, 4843, 2014, 5700, 5723, 5799, 1392, 1087, 5800, 5801, 5704, 5802, 569, 5708, 5728, 1257, 3, 5803, 5804, 1281, 5806, 5815, 5809, 5816, 1483, 1384, 4783, 1386, 584, 2013, 1405, 5818, 14, 5819, 5820, 5821, 5822, 5823, 5824, 5825, 1267, 4975, 5826, 5772, 5827, 5829, 5830, 2053, 5831, 5833, 5834, 5835, 5725, 5836, 5868, 5881, 5877, 5882, 5883, 5884, 5885, 5887, 5890, 5892, 5893, 5894, 1128, 551, 15026, 1266, 2]
 
 // Module 5706 (RTCConnection)
 import LoggerDefault from "Logger" /* 3 */;
@@ -24,25 +24,25 @@ import WindowVisibilityVideoManager3 from "WindowVisibilityVideoManager" /* 5809
 import RTCConnectionEvent from "RTCConnectionEvent" /* 5818 */;
 import DesktopGeneralPerfExperiment from "DesktopGeneralPerfExperiment" /* 5819 */;
 import ProportionalVadIndicatorExperimentDefault from "ProportionalVadIndicatorExperiment" /* 5820 */;
-import SurfaceDirectRendererExperiment from "SurfaceDirectRendererExperiment" /* 5825 */;
-import LinuxGpuDecodeExperiment from "LinuxGpuDecodeExperiment" /* 5826 */;
-import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 5827 */;
-import getFrontierTuningConfigIfEligibleDefault from "getFrontierTuningConfigIfEligible" /* 5832 */;
-import ServerLadderExperiment2 from "ServerLadderExperiment" /* 5834 */;
-import AV1BitrateTuningExperiment from "AV1BitrateTuningExperiment" /* 5835 */;
-import NativeMuteManagerDefault from "NativeMuteManager" /* 5837 */;
-import VoiceQuality from "VoiceQuality" /* 5869 */;
-import SystemResourcesDefault from "SystemResources" /* 5878 */;
-import SystemResponsivenessDefault from "SystemResponsiveness" /* 5882 */;
-import VoiceDurationDefault from "VoiceDuration" /* 5883 */;
-import AVError from "AVError" /* 5884 */;
-import VideoQuality from "VideoQuality" /* 5886 */;
-import VideoHealthManager from "VideoHealthManager" /* 5888 */;
-import ThermalUtilsDefault from "ThermalUtils" /* 5891 */;
-import BandwidthEstimationExperimentDefault from "BandwidthEstimationExperiment" /* 5893 */;
-import DaveMessageValidator from "DaveMessageValidator" /* 5894 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5895 */;
-import E2eLatencyMeasurementExperiment2 from "E2eLatencyMeasurementExperiment" /* 15013 */;
+import SurfaceDirectRendererExperiment from "SurfaceDirectRendererExperiment" /* 5824 */;
+import LinuxGpuDecodeExperiment from "LinuxGpuDecodeExperiment" /* 5825 */;
+import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 5826 */;
+import getFrontierTuningConfigIfEligibleDefault from "getFrontierTuningConfigIfEligible" /* 5831 */;
+import ServerLadderExperiment2 from "ServerLadderExperiment" /* 5833 */;
+import AV1BitrateTuningExperiment from "AV1BitrateTuningExperiment" /* 5834 */;
+import NativeMuteManagerDefault from "NativeMuteManager" /* 5836 */;
+import VoiceQuality from "VoiceQuality" /* 5868 */;
+import SystemResourcesDefault from "SystemResources" /* 5877 */;
+import SystemResponsivenessDefault from "SystemResponsiveness" /* 5881 */;
+import VoiceDurationDefault from "VoiceDuration" /* 5882 */;
+import AVError from "AVError" /* 5883 */;
+import VideoQuality from "VideoQuality" /* 5885 */;
+import VideoHealthManager from "VideoHealthManager" /* 5887 */;
+import ThermalUtilsDefault from "ThermalUtils" /* 5890 */;
+import BandwidthEstimationExperimentDefault from "BandwidthEstimationExperiment" /* 5892 */;
+import DaveMessageValidator from "DaveMessageValidator" /* 5893 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5894 */;
+import E2eLatencyMeasurementExperiment2 from "E2eLatencyMeasurementExperiment" /* 15026 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import DeviceFrecencyStore from "DeviceFrecencyStore" /* 5707 */;
 import MediaEngineStatsStore_mod from "MediaEngineStatsStore" /* 5717 */;
@@ -90,7 +90,7 @@ const DaveJoinTimerDefault = tmp11(5803);
 const RTCMediaSinkWantsManagerDefault = tmp11(5806);
 const GoLiveQualityManagerDefault = tmp11(5815);
 const setShouldRecordNextConnectionDefault = tmp11(5816);
-const VideoStabilizationExperimentDefault = tmp8(5824);
+const VideoStabilizationExperimentDefault = tmp8(5823);
 let obj = function _readAvx512EntropyHistogramSupported() {
   obj = _asyncToGenerator(async () => {
     let c2;
@@ -1106,29 +1106,20 @@ class RTCConnection extends TypedEventEmitter {
     if (dontEmitVolumeOnlySpeakingEvents) {
       items.push("dont_emit_volume_only_speaking_events");
     }
-    const tmpResult9 = PlatformUtils;
-    let enabled = tmpResult9.isWeb();
+    const tmpResult8 = PlatformUtils;
+    let enabled = tmpResult8.isWeb() && self.context === constants6.STREAM;
     if (enabled) {
-      const BrowserTransceiverPaddingRemovalExperiment = tmp(5821).BrowserTransceiverPaddingRemovalExperiment;
-      enabled = BrowserTransceiverPaddingRemovalExperiment.getConfig({ location: "RTCConnection" }).enabled;
+      const WebScreenShareAudioExperiment = tmp(5821).WebScreenShareAudioExperiment;
+      enabled = WebScreenShareAudioExperiment.getConfig({ location: "RTCConnection" }).enabled;
     }
     if (enabled) {
-      items.push("browser_transceiver_padding_removal");
-    }
-    const tmpResult10 = PlatformUtils;
-    let enabled2 = tmpResult10.isWeb() && self.context === constants6.STREAM;
-    if (enabled2) {
-      const WebScreenShareAudioExperiment = tmp(5822).WebScreenShareAudioExperiment;
-      enabled2 = WebScreenShareAudioExperiment.getConfig({ location: "RTCConnection" }).enabled;
-    }
-    if (enabled2) {
       items.push("web_screen_share_audio");
     }
-    const tmpResult11 = PlatformUtils;
-    if (tmpResult11.isWeb()) {
+    const tmpResult9 = PlatformUtils;
+    if (tmpResult9.isWeb()) {
       if (self.context === constants6.STREAM) {
         if (self.isStreamSender()) {
-          const WebStreamingOptimizationsExperiment = tmp(5823).WebStreamingOptimizationsExperiment;
+          const WebStreamingOptimizationsExperiment = tmp(5822).WebStreamingOptimizationsExperiment;
           const config1 = WebStreamingOptimizationsExperiment.getConfig({ location: "RTCConnection" });
           const degradationPreference = config1.degradationPreference;
           const motionContentHint = config1.motionContentHint;
@@ -1143,8 +1134,8 @@ class RTCConnection extends TypedEventEmitter {
         }
       }
     }
-    const tmpResult12 = PlatformUtils;
-    if (tmpResult12.isIOS()) {
+    const tmpResult10 = PlatformUtils;
+    if (tmpResult10.isIOS()) {
       const tmp8Result = VideoStabilizationExperimentDefault;
       const mode = tmp8Result.getConfig({ location: "_chooseExperiments" }).mode;
       if ("standard" === mode) {
@@ -1153,25 +1144,25 @@ class RTCConnection extends TypedEventEmitter {
         items.push("ios_video_stabilization_low_latency");
       }
     }
-    const tmpResult13 = PlatformUtils;
-    let isAndroidResult = tmpResult13.isAndroid();
+    const tmpResult11 = PlatformUtils;
+    let isAndroidResult = tmpResult11.isAndroid();
     if (isAndroidResult) {
-      const tmpResult14 = SurfaceDirectRendererExperiment;
-      isAndroidResult = tmpResult14.isSurfaceDirectRendererExperimentEnabled();
+      const tmpResult12 = SurfaceDirectRendererExperiment;
+      isAndroidResult = tmpResult12.isSurfaceDirectRendererExperimentEnabled();
     }
     if (isAndroidResult) {
       items.push(SurfaceDirectRendererExperiment.ANDROID_SURFACE_DIRECT_RENDERER_EXPERIMENT);
     }
-    const tmpResult15 = PlatformUtils;
-    if (tmpResult15.isLinux()) {
-      const tmpResult16 = LinuxGpuDecodeExperiment;
-      const mode2 = tmpResult16.getLinuxGpuDecodeExperimentConfig("_chooseExperiments").mode;
-      let tmp24 = "disable_all" === mode2;
-      if (!tmp24) {
-        tmp24 = "disable_nvidia" === mode2 && obj3.getHasNvidiaGpu();
+    const tmpResult13 = PlatformUtils;
+    if (tmpResult13.isLinux()) {
+      const tmpResult14 = LinuxGpuDecodeExperiment;
+      const mode2 = tmpResult14.getLinuxGpuDecodeExperimentConfig("_chooseExperiments").mode;
+      let tmp23 = "disable_all" === mode2;
+      if (!tmp23) {
+        tmp23 = "disable_nvidia" === mode2 && obj3.getHasNvidiaGpu();
         "disable_nvidia" === mode2 && MediaEngineStore.getHasNvidiaGpu();
       }
-      if (tmp24) {
+      if (tmp23) {
         items.push("disable_electron_decode");
       }
     }
@@ -1567,7 +1558,7 @@ class RTCConnection extends TypedEventEmitter {
         return value;
       });
       const items = [getBatteryLevel(), , ];
-      const tmp140Result = tmp140(tmp141[52]);
+      const tmp140Result = tmp140(tmp141[51]);
       items[1] = tmp140Result.getKrispModel();
       if (obj5.getKrispEnableStats()) {
         const mediaEngine3 = obj5.getMediaEngine();
@@ -1735,7 +1726,7 @@ class RTCConnection extends TypedEventEmitter {
             const tmp5 = value && closure_128_1._connection === closure_128_0;
             if (tmp5) {
               const setAvx512EntropyHistogram = closure_128_0.setAvx512EntropyHistogram;
-              obj = tmp(c2[53]);
+              obj = tmp(c2[52]);
               const result = setAvx512EntropyHistogram(obj.getIsAvx512EntropyHistogramEnabled("RTCConnection"));
             }
             c2 = 3;
@@ -1923,7 +1914,7 @@ class RTCConnection extends TypedEventEmitter {
       }
     }
     if (obj.supports(tmp8.IMAGE_QUALITY_MEASUREMENT)) {
-      const SingleCpuCopyExperiment = tmp2(tmp3[59]).SingleCpuCopyExperiment;
+      const SingleCpuCopyExperiment = tmp2(tmp3[58]).SingleCpuCopyExperiment;
       const enabled = SingleCpuCopyExperiment.getConfig({ location: "RTCConnection" }).enabled;
       let str4 = "imageQualityWebrtcPsnrDb:5000,imageQualityVmaf_v061:5000,hwdec";
       if (enabled) {
@@ -2235,7 +2226,7 @@ class RTCConnection extends TypedEventEmitter {
     const _handleLocalVideoDisabled = self._handleLocalVideoDisabled;
     on4(require("BaseConnectionEvent").BaseConnectionEvent.LocalVideoDisabled, _handleLocalVideoDisabled.bind(self));
     const on5 = connectResult.on;
-    const Stats = tmp2(tmp3[60]).BaseConnectionEvent.Stats;
+    const Stats = tmp2(tmp3[59]).BaseConnectionEvent.Stats;
     const tmp19Result2 = require("RTCBandwidthMonitor");
     on5(Stats, tmp19Result2.create());
     const on6 = connectResult.on;
@@ -2377,7 +2368,7 @@ class RTCConnection extends TypedEventEmitter {
           const self2 = this;
           const self3 = this;
           let tmp = windowLength;
-          const videoHealthManager = new tmp8(5888).VideoHealthManager(windowLength, allowedPoorFpsRatio, fpsThreshold, backoffTimeSec);
+          const videoHealthManager = new tmp8(5887).VideoHealthManager(windowLength, allowedPoorFpsRatio, fpsThreshold, backoffTimeSec);
           self._videoHealthManager = videoHealthManager;
           if (null != self._localMediaSinkWantsManager) {
             self._localMediaSinkWantsManager.videoHealthManager = self._videoHealthManager;

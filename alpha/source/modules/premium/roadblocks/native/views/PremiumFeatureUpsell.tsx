@@ -1,9 +1,9 @@
-// Module ID: 9901
-// Function ID: 9902
+// Module ID: 9908
+// Function ID: 9909
 // Name: PremiumFeatureUpsell
-// Dependencies: [109, 19, 17, 5700, 1394, 1087, 7528, 21, 9652, 2053, 1128, 4969, 587, 558, 576, 9653, 9641, 9902, 1267, 9649, 9886, 1202, 9903, 9904, 5220, 9394, 5244, 1107, 5233, 5234, 7237, 9905, 8732, 5038, 9816, 2]
+// Dependencies: [109, 19, 17, 5700, 1394, 1087, 7529, 21, 9659, 2053, 1128, 4969, 587, 558, 576, 9660, 9648, 9909, 1267, 9656, 9893, 1202, 9910, 9911, 5220, 9401, 5244, 1107, 5233, 5234, 7238, 9912, 8739, 5038, 9823, 2]
 
-// Module 9901 (PremiumFeatureUpsell)
+// Module 9908 (PremiumFeatureUpsell)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
@@ -13,9 +13,9 @@ import PremiumUtils from "PremiumUtils" /* 2053 */;
 import spring from "spring" /* 5233 */;
 import springPresets from "springPresets" /* 5234 */;
 import LinearGradientDefault from "LinearGradient" /* 5244 */;
-import ColorConstants from "ColorConstants" /* 7528 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9649 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9652 */;
+import ColorConstants from "ColorConstants" /* 7529 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9656 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9659 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -298,7 +298,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
                         let tmpResult;
                         if (closure_4) {
                           const obj2 = { size: "xxs", color: nativeDefault.colors.WHITE, style: items };
-                          const NitroWheelIcon = tmp2(9394).NitroWheelIcon;
+                          const NitroWheelIcon = tmp2(9401).NitroWheelIcon;
                           items = [closure_3.nitroWheelIcon, loading && closure_3.nitroWheelDisabled];
                           tmpResult = tmp(NitroWheelIcon, obj2);
                         } else {
@@ -473,7 +473,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
       let tmpResult;
       if (c4) {
         const obj2 = { size: "xxs", color: nativeDefault.colors.WHITE, style: items };
-        const NitroWheelIcon = tmp2(9394).NitroWheelIcon;
+        const NitroWheelIcon = tmp2(9401).NitroWheelIcon;
         items = [closure_3.nitroWheelIcon, loading && closure_3.nitroWheelDisabled];
         tmpResult = tmp(NitroWheelIcon, obj2);
       } else {

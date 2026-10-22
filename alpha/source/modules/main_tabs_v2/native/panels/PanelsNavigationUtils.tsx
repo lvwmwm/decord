@@ -1,10 +1,10 @@
-// Module ID: 17322
-// Function ID: 17323
+// Module ID: 17344
+// Function ID: 17345
 // Name: PanelsNavigationUtils
 // Dependencies: [5137, 5136, 1510, 1281, 2]
 // Exports: convertLandscapeToPortraitScreens, convertPortraitToLandscapeScreens
 
-// Module 17322 (PanelsNavigationUtils)
+// Module 17344 (PanelsNavigationUtils)
 import v1 from "v1" /* 1281 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5136 */;
 import RootNavigationRef from "RootNavigationRef" /* 5137 */;

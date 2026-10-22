@@ -1,9 +1,9 @@
-// Module ID: 7484
-// Function ID: 7485
+// Module ID: 7485
+// Function ID: 7486
 // Name: GiftCardMobileConsumptionActionSheet
-// Dependencies: [19, 17, 4818, 21, 4969, 587, 558, 576, 1633, 5196, 7485, 1128, 2242, 5220, 5230, 5964, 5251, 2]
+// Dependencies: [19, 17, 4818, 21, 4969, 587, 558, 576, 1633, 5196, 7486, 1128, 2242, 5220, 5230, 5963, 5251, 2]
 
-// Module 7484 (GiftCardMobileConsumptionActionSheet)
+// Module 7485 (GiftCardMobileConsumptionActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
@@ -155,7 +155,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCardMobi
           return tmp14(ContentDismissActionType.USER_DISMISS);
         }
       }
-      const tmp19 = closure_6(tmp(7485).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 });
+      const tmp19 = closure_6(tmp(7486).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 });
       cResult[14] = tmp19;
       tmp18 = tmp19;
     } else {
@@ -267,7 +267,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCardMobi
       }
     }
     const obj8 = { spacing: nativeDefault.space.PX_16, children: items2 };
-    const Stack = tmp(5964).Stack;
+    const Stack = tmp(5963).Stack;
     items2 = [tmp20, tmp25, tmp29];
     cResult[23] = tmp20;
     cResult[24] = tmp25;
@@ -329,9 +329,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCardMobi
   items2 = [tmp.container, { paddingBottom: bottom }];
   BottomSheet = markAsDismissed(5251).BottomSheet;
   obj3 = { spacing: nativeDefault.space.PX_16, children: items3 };
-  Stack = markAsDismissed(5964).Stack;
+  Stack = markAsDismissed(5963).Stack;
   items3 = [, , ];
-  const obj4 = { style: tmp.illustration, children: closure_6(markAsDismissed(7485).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) };
+  const obj4 = { style: tmp.illustration, children: closure_6(markAsDismissed(7486).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) };
   items3[0] = closure_6(View, obj4);
   const obj5 = { variant: "text-md/medium", color: "text-default", style: tmp.body, children: intl.string(_modDef2242.V3DI1E) };
   const Text = markAsDismissed(5220).Text;

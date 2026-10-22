@@ -1,10 +1,10 @@
-// Module ID: 13606
-// Function ID: 13607
+// Module ID: 13620
+// Function ID: 13621
 // Name: HubEmailConnectionGuildSelect
-// Dependencies: [5, 32, 19, 17, 13583, 21, 4969, 587, 558, 576, 4835, 6869, 8919, 1128, 5220, 1633, 5230, 1202, 1505, 7469, 7132, 13597, 6360, 13592, 7206, 2]
+// Dependencies: [5, 32, 19, 17, 13597, 21, 4969, 587, 558, 576, 4835, 6868, 8926, 1128, 5220, 1633, 5230, 1202, 1505, 7470, 7131, 13611, 6359, 13606, 7205, 2]
 // Exports: default
 
-// Module 13606 (HubEmailConnectionGuildSelect)
+// Module 13620 (HubEmailConnectionGuildSelect)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,9 +13,9 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 4835 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import components_Button_Button from "components/Button/Button" /* 5230 */;
-import GuildIconDefault from "GuildIcon" /* 6869 */;
-import Form from "Form" /* 8919 */;
-import HubConstants from "HubConstants" /* 13583 */;
+import GuildIconDefault from "GuildIcon" /* 6868 */;
+import Form from "Form" /* 8926 */;
+import HubConstants from "HubConstants" /* 13597 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

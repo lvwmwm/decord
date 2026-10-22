@@ -1,14 +1,14 @@
-// Module ID: 9018
-// Function ID: 9019
+// Module ID: 9025
+// Function ID: 9026
 // Name: GuildEventRsvpPickerActionSheet
-// Dependencies: [32, 19, 17, 4827, 21, 4969, 587, 558, 576, 8864, 1128, 8874, 5196, 7232, 6970, 6971, 5230, 7207, 5251, 2]
+// Dependencies: [32, 19, 17, 4827, 21, 4969, 587, 558, 576, 8871, 1128, 8881, 5196, 7233, 6969, 6970, 5230, 7206, 5251, 2]
 
-// Module 9018 (GuildEventRsvpPickerActionSheet)
+// Module 9025 (GuildEventRsvpPickerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4827 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import GuildEventRsvpUtils from "GuildEventRsvpUtils" /* 8864 */;
+import GuildEventRsvpUtils from "GuildEventRsvpUtils" /* 8871 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -23,7 +23,7 @@ let metroImportDefault;
 let obj2;
 let obj3;
 let tmp;
-const guild_scheduled_events_GuildScheduledEventModalActionCreators = tmp(8874);
+const guild_scheduled_events_GuildScheduledEventModalActionCreators = tmp(8881);
 const View = react_native.View;
 const constants = GuildScheduledEventsConstants.GuildScheduledEventUserResponses;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -221,8 +221,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventRs
   let closure_5;
   let tmp = closure_9();
   let tmp3 = dependencyMap;
-  [defaultValue, tmp6] = defaultValue.useState(event(8864).ResponseOptions.SERIES);
-  let obj = event(8864);
+  [defaultValue, tmp6] = defaultValue.useState(event(8871).ResponseOptions.SERIES);
+  let obj = event(8871);
   const existingRsvp = obj.getExistingRsvp(event.id, null);
   let response;
   if (existingRsvp != null) {
@@ -237,10 +237,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventRs
     const intl = tmp2(1128).intl;
     stringResult = intl.string(tmp2(1128).t["8MPCVr"]);
   }
-  let obj2 = { header: closure_7(tmp2(7232).BottomSheetTitleHeader, { title: stringResult }), children: closure_8(SafeAreaPaddingView, obj3) };
+  let obj2 = { header: closure_7(tmp2(7233).BottomSheetTitleHeader, { title: stringResult }), children: closure_8(SafeAreaPaddingView, obj3) };
   BottomSheet = tmp2(5251).BottomSheet;
   obj3 = { bottom: true, style: tmp.container, children: items };
-  SafeAreaPaddingView = tmp2(7207).SafeAreaPaddingView;
+  SafeAreaPaddingView = tmp2(7206).SafeAreaPaddingView;
   const obj4 = {
     defaultValue,
     onChange: tmp6,
@@ -250,8 +250,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventRs
       return closure_1_7(event(dependencyMap[14]).TableRadioRow, obj, value.value);
     })
   };
-  const TableRadioGroup = tmp2(6971).TableRadioGroup;
-  const tmp2Result = event(8864);
+  const TableRadioGroup = tmp2(6970).TableRadioGroup;
+  const tmp2Result = event(8871);
   responseOptions = tmp2Result.getResponseOptions();
   items = [closure_7(TableRadioGroup, obj4), ];
   const obj5 = { style: tmp.buttonWrapper, children: closure_7(Button, obj6) };

@@ -1,9 +1,9 @@
-// Module ID: 17940
-// Function ID: 17941
+// Module ID: 17962
+// Function ID: 17963
 // Name: AppChannel
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 1899, 5579, 11826, 17941, 17944, 11823, 11827, 7329, 5693, 11828, 11832, 17948, 17951, 1128, 6795, 5655, 1417, 5230, 5612, 9686, 17952, 6793, 17953, 10857, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 1899, 5579, 11840, 17963, 17966, 11837, 11841, 7330, 5693, 11842, 11846, 17970, 17973, 1128, 6794, 5655, 1417, 5230, 5612, 9693, 17974, 6792, 17975, 10865, 2]
 
-// Module 17940 (AppChannel)
+// Module 17962 (AppChannel)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,19 +15,19 @@ import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAwar
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5612 */;
 import FastImageDefault from "FastImage" /* 5655 */;
 import transitionToChannel from "transitionToChannel" /* 5693 */;
-import conjureDMAppChannel from "conjureDMAppChannel" /* 6793 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6795 */;
-import openChannelSecondaryViewChat from "openChannelSecondaryViewChat" /* 9686 */;
-import useChannelContentGate from "useChannelContentGate" /* 10857 */;
-import useEdgeOnlySwipeExitDefault from "useEdgeOnlySwipeExit" /* 11823 */;
-import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 11826 */;
-import useInlineFrameOAuthNavigationDefault from "useInlineFrameOAuthNavigation" /* 11827 */;
-import FrameRenderTargetDefault from "FrameRenderTarget" /* 11828 */;
-import useFrameLifecycleDefault from "useFrameLifecycle" /* 17941 */;
-import conjureBackgroundFramesDefault from "conjureBackgroundFrames" /* 17944 */;
-import FrameSurfaceState from "FrameSurfaceState" /* 17951 */;
-import useAppChannelClosedDefault from "useAppChannelClosed" /* 17952 */;
-import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 17953 */;
+import conjureDMAppChannel from "conjureDMAppChannel" /* 6792 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6794 */;
+import openChannelSecondaryViewChat from "openChannelSecondaryViewChat" /* 9693 */;
+import useChannelContentGate from "useChannelContentGate" /* 10865 */;
+import useEdgeOnlySwipeExitDefault from "useEdgeOnlySwipeExit" /* 11837 */;
+import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 11840 */;
+import useInlineFrameOAuthNavigationDefault from "useInlineFrameOAuthNavigation" /* 11841 */;
+import FrameRenderTargetDefault from "FrameRenderTarget" /* 11842 */;
+import useFrameLifecycleDefault from "useFrameLifecycle" /* 17963 */;
+import conjureBackgroundFramesDefault from "conjureBackgroundFrames" /* 17966 */;
+import FrameSurfaceState from "FrameSurfaceState" /* 17973 */;
+import useAppChannelClosedDefault from "useAppChannelClosed" /* 17974 */;
+import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 17975 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -85,14 +85,14 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function OpenApp
             useFrameLifecycleDefault(tmp9);
             conjureBackgroundFramesDefault(applicationId, surface);
             const tmp5Result = useEdgeOnlySwipeExitDefault;
-            tmp5Result(state === id(17941).FrameLifecycleState.Launched);
+            tmp5Result(state === id(17963).FrameLifecycleState.Launched);
             let tmp15 = null;
             const tmp5Result3 = useInlineFrameOAuthNavigationDefault;
-            if (state === id(17941).FrameLifecycleState.Launched) {
+            if (state === id(17963).FrameLifecycleState.Launched) {
               tmp15 = applicationId;
             }
             tmp5Result3(tmp15);
-            const tmpResult = id(7329);
+            const tmpResult = id(7330);
             const isConjureChannelCandidate = tmpResult.useIsConjureChannelCandidate(channel, "AppChannel");
             id = channel.id;
             if (cResult[9] !== id) {
@@ -114,7 +114,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function OpenApp
                 }
               }
             }
-            if (id(17941).FrameLifecycleState.Launched === state) {
+            if (id(17963).FrameLifecycleState.Launched === state) {
               class M {
                 constructor(arg0) {
                   obj = closure_0(closure_2[15]);
@@ -122,7 +122,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function OpenApp
                   return;
                 }
               }
-              const obj2 = { frameId: frame.id, level: id(11832).FrameStackLevel.WithinAppContent, presentation: tmp7 };
+              const obj2 = { frameId: frame.id, level: id(11846).FrameStackLevel.WithinAppContent, presentation: tmp7 };
               const tmp5Result4 = FrameRenderTargetDefault;
               cResult[11] = frame.id;
               cResult[12] = tmp7;
@@ -497,7 +497,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { heading: intl.string(intl6.t.tU5fiM), description: intl2.string(intl6.t.E94mJf) };
-      const FrameSurfaceExplanation = tmp(17951).FrameSurfaceExplanation;
+      const FrameSurfaceExplanation = tmp(17973).FrameSurfaceExplanation;
       intl = tmp(1128).intl;
       intl2 = tmp(1128).intl;
       const tmp13 = hasOwnProperty(FrameSurfaceExplanation, obj3);
@@ -539,7 +539,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
     result = tmpResult2.renderChannelContentGate(channelContentGate);
   } else if (null == application_id) {
     const obj2 = { heading: intl.string(intl6.t.tU5fiM), description: intl2.string(intl6.t.E94mJf) };
-    const FrameSurfaceExplanation = tmp(17951).FrameSurfaceExplanation;
+    const FrameSurfaceExplanation = tmp(17973).FrameSurfaceExplanation;
     intl = tmp(1128).intl;
     intl2 = tmp(1128).intl;
     result = hasOwnProperty(FrameSurfaceExplanation, obj2);

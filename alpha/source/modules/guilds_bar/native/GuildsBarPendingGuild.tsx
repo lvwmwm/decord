@@ -1,21 +1,21 @@
-// Module ID: 17688
-// Function ID: 17689
+// Module ID: 17710
+// Function ID: 17711
 // Name: GuildsBarPendingGuild
-// Dependencies: [19, 4996, 4839, 4995, 6687, 21, 4969, 587, 558, 576, 17640, 5238, 504, 6869, 17672, 17643, 4998, 6821, 17655, 17679, 17632, 5038, 17661, 5655, 2]
+// Dependencies: [19, 4996, 4839, 4995, 6686, 21, 4969, 587, 558, 576, 17662, 5238, 504, 6868, 17694, 17665, 4998, 6820, 17677, 17701, 17654, 5038, 17683, 5655, 2]
 
-// Module 17688 (GuildsBarPendingGuild)
+// Module 17710 (GuildsBarPendingGuild)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4998 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6821 */;
-import GuildIcon from "GuildIcon" /* 6869 */;
-import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 17632 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17655 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6820 */;
+import GuildIcon from "GuildIcon" /* 6868 */;
+import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 17654 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17677 */;
 import react from "react" /* 19 */;
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4996 */;
 import GuildRecord from "GuildRecord" /* 4839 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
-import SortedGuildStore from "SortedGuildStore" /* 6687 */;
+import SortedGuildStore from "SortedGuildStore" /* 6686 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;

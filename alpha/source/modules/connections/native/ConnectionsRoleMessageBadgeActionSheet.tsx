@@ -1,9 +1,9 @@
-// Module ID: 12686
-// Function ID: 12687
+// Module ID: 12705
+// Function ID: 12706
 // Name: ConnectionsRoleMessageBadgeActionSheet
-// Dependencies: [32, 19, 17, 1406, 502, 4881, 4875, 4843, 12687, 7260, 1087, 21, 4969, 587, 558, 576, 1128, 7259, 6905, 5220, 5191, 12, 5238, 6488, 11223, 9103, 1202, 1417, 4976, 38, 7237, 7262, 504, 1267, 5697, 6816, 8641, 5196, 11227, 7283, 5230, 5251, 2]
+// Dependencies: [32, 19, 17, 1406, 502, 4881, 4875, 4843, 12706, 7261, 1087, 21, 4969, 587, 558, 576, 1128, 7260, 6904, 5220, 5191, 12, 5238, 6487, 11232, 9110, 1202, 1417, 4976, 38, 7238, 7263, 504, 1267, 5697, 6815, 8648, 5196, 11236, 7284, 5230, 5251, 2]
 
-// Module 12686 (ConnectionsRoleMessageBadgeActionSheet)
+// Module 12705 (ConnectionsRoleMessageBadgeActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,13 +16,13 @@ import useThemeDefault from "useTheme" /* 5191 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5697 */;
-import PlatformsDefault from "Platforms" /* 6488 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6816 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 6905 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 7259 */;
-import Constants2 from "Constants" /* 7260 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8641 */;
-import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11227 */;
+import PlatformsDefault from "Platforms" /* 6487 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6815 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 6904 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 7260 */;
+import Constants2 from "Constants" /* 7261 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8648 */;
+import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11236 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -31,7 +31,7 @@ import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore_mod from "GuildMemberStore" /* 4881 */;
 import GuildRoleStore from "GuildRoleStore" /* 4875 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import GuildRoleConnectionEligibilityStore from "GuildRoleConnectionEligibilityStore" /* 12687 */;
+import GuildRoleConnectionEligibilityStore from "GuildRoleConnectionEligibilityStore" /* 12706 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -290,10 +290,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutChec
     }
     if (includes(str)) {
       const obj2 = { style: closure_1.botTag, guildId, roleColor, size: 16 };
-      tmp10 = authStore3(tmp2(11223), obj2);
+      tmp10 = authStore3(tmp2(11232), obj2);
     } else if (null != tmp7) {
       const obj3 = { style: closure_1.botTag, verified: false };
-      tmp10 = authStore3(tmp2(9103), obj3);
+      tmp10 = authStore3(tmp2(9110), obj3);
     }
     const items = [closure_1.popoutChecksGroup, ];
     let prop = null;
@@ -423,10 +423,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutChec
       }
       if (includes(str)) {
         const obj2 = { style: closure_1.botTag, guildId, roleColor, size: 16 };
-        tmp10 = authStore3(tmp2(11223), obj2);
+        tmp10 = authStore3(tmp2(11232), obj2);
       } else if (null != tmp7) {
         const obj3 = { style: closure_1.botTag, verified: false };
-        tmp10 = authStore3(tmp2(9103), obj3);
+        tmp10 = authStore3(tmp2(9110), obj3);
       }
       const items = [closure_1.popoutChecksGroup, ];
       let prop = null;

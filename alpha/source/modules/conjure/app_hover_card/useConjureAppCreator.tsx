@@ -1,22 +1,21 @@
-// Module ID: 13806
-// Function ID: 13807
+// Module ID: 13820
+// Function ID: 13821
 // Name: useConjureAppCreator
-// Dependencies: [19, 1392, 558, 576, 13807, 12297, 504, 13808, 2]
+// Dependencies: [5, 32, 19, 1392, 558, 576, 13821, 12308, 504, 13822, 2]
 
-// Module 13806 (useConjureAppCreator)
-import conjureMessageAuthors from "conjureMessageAuthors" /* 12297 */;
-import react_native from "react-native" /* 13808 */;
+// Module 13820 (useConjureAppCreator)
+import react_native from "react-native" /* 13822 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, importDefault;
+let _require, c3, c4, importDefault;
 
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAppCreator(conjureProjectId, arg1, arg2) {
-  let closure_0;
-  let closure_2;
   let owner_user_id;
   let project;
   let remixProject;
@@ -26,7 +25,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAp
   let obj = require("react");
   const cResult = obj.c(19);
   conjureProjectId = undefined;
-  const tmp4 = owner_user_id(13807);
+  let tmp4 = owner_user_id(13821);
   if (conjureProjectId != null) {
     conjureProjectId = conjureProjectId.conjureProjectId;
   }
@@ -43,28 +42,29 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAp
   if (owner_user_id == null) {
     owner_user_id = null;
   }
+  let obj2 = react;
+  [, dependencyMap] = react.useState(null);
   if (cResult[0] === owner_user_id) {
-    let tmp8;
-    let tmp9;
-    let tmp12;
-    let tmp15;
+    let tmp10;
+    let tmp11;
     let tmp14;
+    let tmp17;
+    let tmp16;
     if (cResult[1] === arg2) {
-      tmp8 = cResult[2];
-      tmp9 = cResult[3];
+      tmp10 = cResult[2];
+      tmp11 = cResult[3];
     }
-    const effect = react.useEffect(tmp8, tmp9);
+    const effect = obj2.useEffect(tmp10, tmp11);
     const _Symbol = Symbol;
-    const obj2 = react;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
       const items = [UserStore];
       cResult[4] = items;
-      tmp12 = items;
+      tmp14 = items;
     } else {
-      tmp12 = cResult[4];
+      tmp14 = cResult[4];
     }
     if (cResult[5] !== owner_user_id) {
-      const fn2 = function j() {
+      const fn2 = function _() {
         let tmp2 = null;
         if (null != owner_user_id) {
           let user = UserStore.getUser(tmp);
@@ -79,69 +79,62 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAp
       cResult[5] = owner_user_id;
       cResult[6] = fn2;
       cResult[7] = items1;
-      tmp15 = items1;
-      tmp14 = fn2;
+      tmp17 = items1;
+      tmp16 = fn2;
     } else {
-      tmp14 = cResult[6];
-      tmp15 = cResult[7];
+      tmp16 = cResult[6];
+      tmp17 = cResult[7];
     }
     const tmpResult = tmp(504);
-    const stateFromStores = tmpResult.useStateFromStores(tmp12, tmp14, tmp15);
+    const stateFromStores = tmpResult.useStateFromStores(tmp14, tmp16, tmp17);
     if (cResult[8] === stateFromStores) {
-      let tmp16;
+      let tmp18;
       if (cResult[9] === arg1) {
-        tmp16 = cResult[10];
+        tmp18 = cResult[10];
       }
-      dependencyMap = tmp16;
-      if (cResult[11] === tmp16) {
-        let tmp18;
-        let tmp19;
+      let closure_3 = tmp18;
+      if (cResult[11] === tmp18) {
+        let tmp20;
+        let tmp21;
         if (cResult[12] === arg2) {
-          tmp18 = cResult[13];
-          tmp19 = cResult[14];
+          tmp20 = cResult[13];
+          tmp21 = cResult[14];
         }
-        const effect1 = obj2.useEffect(tmp18, tmp19);
-        class E {
-          constructor() {
-            const tmp = closure_0 && null != closure_2;
-            if (tmp) {
-              const obj = react_native;
-              obj.preloadImage(closure_2);
-            }
-          }
+        const effect1 = obj2.useEffect(tmp20, tmp21);
+        let tmp23 = null != conjureProjectId && isSettled;
+        if (tmp23) {
+          tmp23 = null == owner_user_id || null != stateFromStores || tmp9 === owner_user_id;
         }
         if (cResult[15] === stateFromStores) {
           if (cResult[16] === remixProject) {
-            let tmp22;
-            if (cResult[17] === (null != conjureProjectId && isSettled)) {
-              tmp22 = cResult[18];
+            let tmp25;
+            if (cResult[17] === tmp23) {
+              tmp25 = cResult[18];
             }
-            return tmp22;
+            return tmp25;
           }
         }
-        const obj3 = { creator: stateFromStores, remixProject, isSettled: null != conjureProjectId && isSettled };
+        let obj3 = { creator: stateFromStores, remixProject, isSettled: tmp23 };
         cResult[15] = stateFromStores;
         cResult[16] = remixProject;
-        cResult[17] = null != conjureProjectId && isSettled;
+        cResult[17] = tmp23;
         cResult[18] = obj3;
-        tmp22 = obj3;
+        tmp25 = obj3;
       }
-      class E {
-        constructor() {
-          const tmp = closure_0 && null != closure_2;
-          if (tmp) {
-            const obj = react_native;
-            obj.preloadImage(closure_2);
-          }
+      const fn3 = function b() {
+        const tmp = closure_0 && null != closure_3;
+        if (tmp) {
+          const obj = react_native;
+          obj.preloadImage(closure_3);
         }
-      }
-      const items2 = [arg2, tmp16];
-      cResult[11] = tmp16;
+      };
+      const items2 = [arg2, tmp18];
+      cResult[11] = tmp18;
       cResult[12] = arg2;
-      cResult[13] = E;
+      cResult[13] = fn3;
       cResult[14] = items2;
-      tmp19 = items2;
-      tmp18 = E;
+      tmp21 = items2;
+      tmp20 = fn3;
     }
     let avatarURL;
     if (stateFromStores != null) {
@@ -150,13 +143,80 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAp
     cResult[8] = stateFromStores;
     cResult[9] = arg1;
     cResult[10] = avatarURL;
-    tmp16 = avatarURL;
+    tmp18 = avatarURL;
   }
-  const fn = function s() {
-    const tmp = closure_0;
+  const fn = function f() {
+    let user;
+    function requestCreator() {
+      return closure_0(...arguments);
+    }
+    const tmp = c0;
     if (tmp) {
-      const obj = conjureMessageAuthors;
-      const messageAuthor = obj.requestMessageAuthor(owner_user_id);
+      const tmp3 = null;
+      if (null != owner_user_id) {
+        c0 = true;
+        const tmp4 = closure_3;
+        closure_0 = closure_3(function*(arg0, value) {
+          let obj2;
+          closure_0 = arg0;
+          if (c4 === 2) {
+            c4 = 3;
+            throw new TypeError("Generator functions may not be called on executing generators");
+          } else if (tmp3 === 3) {
+            if (arg0 === 1) {
+              throw value;
+            } else if (arg0 === 2) {
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              return { value: "IconComponent", done: null };
+            }
+          } else {
+            try {
+              c4 = 2;
+              if (0 === c3) {
+                if (arg0 === 1) {
+                  c4 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c4 = 3;
+                  const obj4 = { value, done: true };
+                  return obj4;
+                } else {
+                  closure_2 = tmp4;
+                  let closure_1 = tmp;
+                  c3 = 1;
+                  c4 = 1;
+                  const obj5 = { value: obj2.requestMessageAuthor(closure_0), done: false };
+                  obj2 = c0(closure_3_2[7]);
+                  return obj5;
+                }
+              } else if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                const obj = { value, done: true };
+                return obj;
+              } else {
+                const tmp6 = closure_0 && null == user.getUser(closure_0);
+                if (tmp6) {
+                  closure_2_2(closure_0);
+                }
+                c4 = 3;
+                return { value: "IconComponent", done: null };
+              }
+            } catch (tmp19) {
+              c4 = 3;
+              throw tmp19;
+            }
+          }
+        });
+        requestCreator(tmp2);
+        return () => {
+          c0 = false;
+        };
+      }
     }
   };
   const items3 = [arg2, owner_user_id];
@@ -164,10 +224,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAp
   cResult[1] = arg2;
   cResult[2] = fn;
   cResult[3] = items3;
-  tmp9 = items3;
-  tmp8 = fn;
+  tmp11 = items3;
+  tmp10 = fn;
 }) : (function useConjureAppCreator(conjureProjectId, arg1, arg2) {
-  let closure_1;
+  let first;
   let project;
   let remixProject;
   _require = conjureProjectId;
@@ -191,18 +251,91 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAp
   if (owner_user_id == null) {
     owner_user_id = null;
   }
-  let obj = isSettled;
+  let obj = first;
+  let tmp6 = owner_user_id(first.useState(null), 2);
+  first = tmp6[0];
+  let closure_6 = tmp6[1];
   const items = [arg2, owner_user_id];
-  const effect = isSettled.useEffect(() => {
-    const tmp = closure_1;
+  const effect = first.useEffect(() => {
+    let _false;
+    function requestCreator(arg0) {
+      return obj(...arguments);
+    }
+    let obj = function _requestCreator2() {
+      let user;
+      obj = _asyncToGenerator(async (arg0, value) => {
+        let obj2;
+        let closure_0 = arg0;
+        if (c4 === 2) {
+          c4 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            return { value: "IconComponent", done: null };
+          }
+        } else {
+          try {
+            c4 = 2;
+            if (0 === c3) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                const obj4 = { value, done: true };
+                return obj4;
+              } else {
+                let closure_2 = tmp4;
+                closure_1 = tmp;
+                c3 = 1;
+                c4 = 1;
+                const obj5 = { value: obj2.requestMessageAuthor(closure_0), done: false };
+                obj2 = _false(remixProject[7]);
+                return obj5;
+              }
+            } else if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              obj = { value, done: true };
+              return obj;
+            } else {
+              const tmp6 = closure_130_0 && null == user.getUser(closure_0);
+              if (tmp6) {
+                user(closure_0);
+              }
+              c4 = 3;
+              return { value: "IconComponent", done: null };
+            }
+          } catch (tmp19) {
+            c4 = 3;
+            throw tmp19;
+          }
+        }
+      });
+      return obj(...arguments);
+    };
+    const tmp = obj;
     if (tmp) {
-      const obj = conjureMessageAuthors;
-      const messageAuthor = obj.requestMessageAuthor(owner_user_id);
+      const tmp3 = null;
+      if (null != owner_user_id) {
+        let c0 = true;
+        const tmp4 = requestCreator(tmp2);
+        return () => {
+          let c0 = false;
+        };
+      }
     }
   }, items);
-  const items1 = [owner_user_id];
+  let obj2 = require("get initialized");
+  const items1 = [closure_6];
   const items2 = [owner_user_id];
-  const obj2 = require("get initialized");
   const stateFromStores = obj2.useStateFromStores(items1, () => {
     let tmp2 = null;
     if (null != owner_user_id) {
@@ -226,16 +359,25 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAp
       obj.preloadImage(avatarURL);
     }
   }, items3);
-  const items4 = [stateFromStores, remixProject, conjureProjectId, isSettled, owner_user_id];
+  const items4 = [stateFromStores, remixProject, conjureProjectId, isSettled, owner_user_id, first];
   return obj.useMemo(() => {
     let tmp2;
     const obj = { creator: stateFromStores, remixProject, isSettled: tmp2 };
     tmp2 = null != conjureProjectId;
+    const tmp = stateFromStores;
     if (tmp2) {
       tmp2 = isSettled;
     }
     if (tmp2) {
-      tmp2 = null == owner_user_id || null != tmp;
+      let tmp4 = null == owner_user_id;
+      const tmp3 = owner_user_id;
+      if (!tmp4) {
+        tmp4 = null != tmp;
+      }
+      if (!tmp4) {
+        tmp4 = first === tmp3;
+      }
+      tmp2 = tmp4;
     }
     return obj;
   }, items4);

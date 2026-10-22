@@ -1,15 +1,15 @@
-// Module ID: 9617
-// Function ID: 9618
+// Module ID: 9624
+// Function ID: 9625
 // Name: DetailsHeader
-// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 5038, 9618, 11125, 8664, 6646, 5192, 5195, 6871, 5220, 1128, 6952, 5244, 1107, 2]
+// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 5038, 9625, 11134, 8671, 6645, 5192, 5195, 6870, 5220, 1128, 6951, 5244, 1107, 2]
 
-// Module 9617 (DetailsHeader)
+// Module 9624 (DetailsHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
 import timing from "timing" /* 5192 */;
 import timingPresets from "timingPresets" /* 5195 */;
-import BioMarkupUtils from "BioMarkupUtils" /* 11125 */;
+import BioMarkupUtils from "BioMarkupUtils" /* 11134 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -132,7 +132,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ({ application, viewContainerStyle, mainContainerStyle, hideName } = arg0);
   const tmp4 = ref2();
   if (cResult[0] !== application) {
-    const tmpResult = tmp(9618);
+    const tmpResult = tmp(9625);
     const isPartnerApplicationResult = tmpResult.isPartnerApplication(application);
     cResult[0] = application;
     cResult[1] = isPartnerApplicationResult;
@@ -151,7 +151,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ({ containerStyle, containerHeight } = closure_15());
   const tmp13 = closure_15();
   if (cResult[2] !== application) {
-    const tmpResult5 = tmp(9618);
+    const tmpResult5 = tmp(9625);
     const sectionName = tmpResult5.getSectionName(application);
     cResult[2] = application;
     cResult[3] = sectionName;
@@ -160,7 +160,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp14 = cResult[3];
   }
   if (cResult[4] !== application) {
-    const tmpResult6 = tmp(9618);
+    const tmpResult6 = tmp(9625);
     const str = tmpResult6.getSectionDescription(application);
     const tmp18 = null != str && str.trim().length > 0;
     cResult[4] = application;
@@ -189,7 +189,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (null != tmp16) {
     let tmp28;
     if (cResult[7] !== tmp16) {
-      const tmpResult7 = tmp(11125);
+      const tmpResult7 = tmp(11134);
       let result = tmpResult7.parseBioReactWithCachedAST(tmp16);
       cResult[7] = tmp16;
       cResult[8] = result;
@@ -199,9 +199,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     tmp27 = tmp28;
   }
-  const tmpResult8 = tmp(8664);
+  const tmpResult8 = tmp(8671);
   const isScreenLandscape = tmpResult8.useIsScreenLandscape();
-  const tmp32 = first(6646)(isScreenLandscape);
+  const tmp32 = first(6645)(isScreenLandscape);
   closure_17 = tmp32;
   if (cResult[9] === isScreenLandscape) {
     let tmp33;
@@ -259,7 +259,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           if (cResult[21] === first) {
             tmp40 = cResult[22];
           }
-          const tmp41 = first(6871)(ref);
+          const tmp41 = first(6870)(ref);
           if (cResult[23] === containerStyle) {
             if (cResult[24] === tmp4.animatedViewContainer) {
               let tmp43;
@@ -440,7 +440,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                             const obj12 = { style: null };
                             const absoluteFill = first2.absoluteFill;
                             const obj11 = { style: descriptionContainer, onPress: tmp40, accessibilityRole: "button", children: items9 };
-                            const tmp31Result = first(6952);
+                            const tmp31Result = first(6951);
                             if (first && !first1) {
                               const obj13 = { style: absoluteFill, children: items5 };
                               obj12.style = tmp4.maskFill;
@@ -696,7 +696,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let closure_18;
   viewContainerStyle = viewContainerStyle.viewContainerStyle;
   let tmp = ref();
-  let obj = ref(9618);
+  let obj = ref(9625);
   let obj2 = react;
   const isPartnerApplicationResult = obj.isPartnerApplication(application);
   ref = react.useRef(null);
@@ -709,9 +709,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let closure_5 = react.useRef(true);
   ({ containerHeight: c6, containerStyle } = first2());
   const tmp11 = first2();
-  const obj3 = ref(9618);
+  const obj3 = ref(9625);
   const sectionName = obj3.getSectionName(application);
-  const obj4 = ref(9618);
+  const obj4 = ref(9625);
   const str = obj4.getSectionDescription(application);
   let tmp27Result5 = null != str;
   if (tmp27Result5) {
@@ -739,9 +739,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     return result;
   }, items);
-  const tmp2Result = ref(8664);
+  const tmp2Result = ref(8671);
   isScreenLandscape = tmp2Result.useIsScreenLandscape();
-  const tmp23 = first(6646)(isScreenLandscape);
+  const tmp23 = first(6645)(isScreenLandscape);
   closure_18 = tmp23;
   const items1 = [isScreenLandscape, tmp23];
   const effect = obj2.useEffect(() => {
@@ -752,7 +752,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
   }, items1);
   let tmp26 = first;
-  first(6871)(ref);
+  first(6870)(ref);
   if (first) {
     tmp26 = !first1;
   }
@@ -835,7 +835,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       accessibilityRole: "button",
       children: items10
     };
-    const tmp22Result = first(6952);
+    const tmp22Result = first(6951);
     if (tmp26) {
       const obj13 = { style: absoluteFill, children: items6 };
       obj12.style = tmp.maskFill;

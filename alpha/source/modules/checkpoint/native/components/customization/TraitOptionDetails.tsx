@@ -1,14 +1,14 @@
-// Module ID: 12949
-// Function ID: 12950
+// Module ID: 12968
+// Function ID: 12969
 // Name: TraitOptionDetails
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 6003, 1128, 3088, 5220, 9762, 7262, 6348, 12950, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 6025, 1128, 3088, 5220, 9769, 7263, 6347, 12969, 2]
 
-// Module 12949 (TraitOptionDetails)
+// Module 12968 (TraitOptionDetails)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3088 from "module_3088" /* 3088 */;
-import RarityBadgeDefault from "RarityBadge" /* 12950 */;
+import RarityBadgeDefault from "RarityBadge" /* 12969 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -41,52 +41,51 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetDe
   _require = tmp4;
   let tmp5 = null;
   if (!hidden) {
-    let tmp6;
-    if (asset.rarity === tmp(6003).CheckpointTraitRarity.NITRO) {
-      if (true === asset.locked) {
-        let tmp8;
-        if (cResult[0] !== tmp4) {
-          const intl = tmp(1128).intl;
-          const obj2 = {
-            subscribeHook(children, arg1) {
-                      let obj = {
-                        variant: "text-md/medium",
-                        color: "text-subtle",
-                        style: subscribeLink.subscribeLink,
-                        onPress() {
-                          let items;
-                          const obj = { analyticsLocations: items };
-                          items = [];
-                          const tmp = closure_1_1(closure_1_2[11]);
-                          items[0] = closure_1_1(closure_1_2[12]).CHECKPOINT;
-                          return tmp(obj);
-                        },
-                        accessibilityRole: "link",
-                        children
-                      };
-                      return React3(Text_Text.Text, obj, arg1);
-                    }
-          };
-          const formatResult = intl.format(_modDef3088["3Wq/bk"], obj2);
-          cResult[0] = tmp4;
-          cResult[1] = formatResult;
-          tmp8 = formatResult;
-        } else {
-          tmp8 = cResult[1];
-        }
-        tmp5 = tmp8;
+    if (asset.status === tmp(6025).CheckpointTraitOptionStatus.NITRO_LOCKED) {
+      let tmp8;
+      if (cResult[0] !== tmp4) {
+        const intl = tmp(1128).intl;
+        const obj2 = {
+          subscribeHook(children, arg1) {
+                  let obj = {
+                    variant: "text-md/medium",
+                    color: "text-subtle",
+                    style: subscribeLink.subscribeLink,
+                    onPress() {
+                      let items;
+                      const obj = { analyticsLocations: items };
+                      items = [];
+                      const tmp = closure_1_1(closure_1_2[11]);
+                      items[0] = closure_1_1(closure_1_2[12]).CHECKPOINT;
+                      return tmp(obj);
+                    },
+                    accessibilityRole: "link",
+                    children
+                  };
+                  return React3(Text_Text.Text, obj, arg1);
+                }
+        };
+        const formatResult = intl.format(_modDef3088["3Wq/bk"], obj2);
+        cResult[0] = tmp4;
+        cResult[1] = formatResult;
+        tmp8 = formatResult;
+      } else {
+        tmp8 = cResult[1];
       }
-    }
-    if (cResult[2] !== asset) {
-      const tmpResult = tmp(6348);
-      const assetDescription = tmpResult.getAssetDescription(asset);
-      cResult[2] = asset;
-      cResult[3] = assetDescription;
-      tmp6 = assetDescription;
+      tmp5 = tmp8;
     } else {
-      tmp6 = cResult[3];
+      let tmp6;
+      if (cResult[2] !== asset) {
+        const tmpResult = tmp(6347);
+        const assetDescription = tmpResult.getAssetDescription(asset);
+        cResult[2] = asset;
+        cResult[3] = assetDescription;
+        tmp6 = assetDescription;
+      } else {
+        tmp6 = cResult[3];
+      }
+      tmp5 = tmp6;
     }
-    tmp5 = tmp6;
   }
   if (cResult[4] === tmp5) {
     let tmp12;
@@ -107,36 +106,35 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetDe
   _require = closure_7();
   let tmp = null;
   if (!hidden) {
-    if (asset.rarity === require("CheckpointTraitRarity").CheckpointTraitRarity.NITRO) {
-      let formatResult;
-      if (true === asset.locked) {
-        const intl = tmp2(1128).intl;
-        let obj = {
-          subscribeHook(children, arg1) {
-                  let obj = {
-                    variant: "text-md/medium",
-                    color: "text-subtle",
-                    style: subscribeLink.subscribeLink,
-                    onPress() {
-                      let items;
-                      const obj = { analyticsLocations: items };
-                      items = [];
-                      const tmp = closure_1_1(closure_1_2[11]);
-                      items[0] = closure_1_1(closure_1_2[12]).CHECKPOINT;
-                      return tmp(obj);
-                    },
-                    accessibilityRole: "link",
-                    children
-                  };
-                  return React3(Text_Text.Text, obj, arg1);
-                }
-        };
-        formatResult = intl.format(_modDef3088["3Wq/bk"], obj);
-      }
-      tmp = formatResult;
+    let formatResult;
+    if (asset.status === require("CheckpointCharacterAssets").CheckpointTraitOptionStatus.NITRO_LOCKED) {
+      const intl = tmp2(1128).intl;
+      let obj = {
+        subscribeHook(children, arg1) {
+              let obj = {
+                variant: "text-md/medium",
+                color: "text-subtle",
+                style: subscribeLink.subscribeLink,
+                onPress() {
+                  let items;
+                  const obj = { analyticsLocations: items };
+                  items = [];
+                  const tmp = closure_1_1(closure_1_2[11]);
+                  items[0] = closure_1_1(closure_1_2[12]).CHECKPOINT;
+                  return tmp(obj);
+                },
+                accessibilityRole: "link",
+                children
+              };
+              return React3(Text_Text.Text, obj, arg1);
+            }
+      };
+      formatResult = intl.format(_modDef3088["3Wq/bk"], obj);
+    } else {
+      const tmp2Result = require("CheckpointCustomizationUtils");
+      formatResult = tmp2Result.getAssetDescription(asset);
     }
-    const tmp2Result = require("CheckpointCustomizationUtils");
-    formatResult = tmp2Result.getAssetDescription(asset);
+    tmp = formatResult;
   }
   const obj2 = { variant: "text-md/medium", color: "text-subtle", accessibilityElementsHidden: null == tmp, children: tmp };
   return closure_4(require("Text/Text").Text, obj2);

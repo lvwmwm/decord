@@ -1,62 +1,56 @@
 // Module ID: 10502
 // Function ID: 10503
-// Dependencies: [1658, 10488]
-// Exports: useOnProgressChange
+// Dependencies: [19, 21, 1658]
+// Exports: GlobalStateProvider, useGlobalState
 
 // Module 10502
-import convertToSharedIndex from "convertToSharedIndex" /* 10488 */;
+import Fragment from "Fragment" /* 21 */;
+import _mod1658 from "module_1658" /* 1658 */;
+import react from "react" /* 19 */;
 
-let tmp;
-const _mod1658 = tmp(1658);
-let closure_2 = { code: "function pnpm_useOnProgressChangeTs1(){const{offsetX}=this.__closure;return offsetX.value;}" };
-let closure_3 = { code: "function pnpm_useOnProgressChangeTs2(_value){const{computedOffsetXValueWithAutoFillData,rawDataLength,size,autoFillData,loop,onProgressChange,isFunc,runOnJS}=this.__closure;let value=computedOffsetXValueWithAutoFillData({value:_value,rawDataLength:rawDataLength,size:size,autoFillData:autoFillData,loop:loop});if(!loop){value=Math.max(-((rawDataLength-1)*size),Math.min(value,0));}let absoluteProgress=Math.abs(value/size);if(value>0)absoluteProgress=rawDataLength-absoluteProgress;if(onProgressChange){if(isFunc)runOnJS(onProgressChange)(value,absoluteProgress);else onProgressChange.value=absoluteProgress;}}" };
+const jsx = Fragment.jsx;
+let context = react.createContext({});
+const __initData = { code: "function pnpm_indexTsx1(index,dimensions){const{itemDimensions}=this.__closure;itemDimensions.value={...itemDimensions.value,[index]:dimensions};}" };
+const __initData2 = { code: "function pnpm_indexTsx2(dimensions){const{containerSize}=this.__closure;containerSize.value=dimensions;}" };
 
-export const useOnProgressChange = function useOnProgressChange(autoFillData) {
-  autoFillData = autoFillData.autoFillData;
-  const loop = autoFillData.loop;
-  const offsetX = autoFillData.offsetX;
-  size = autoFillData.size;
-  const rawDataLength = autoFillData.rawDataLength;
-  const onProgressChange = autoFillData.onProgressChange;
-  let tmp = typeof onProgressChange === "function";
-  let closure_6 = tmp;
-  let obj = autoFillData(loop[0]);
-  const fn = function n() {
-    return offsetX.value;
+export const GlobalStateContext = context;
+export const GlobalStateProvider = (arg0) => {
+  let children;
+  let value;
+  ({ children, value } = arg0);
+  let obj = _mod1658;
+  const sharedValue = obj.useSharedValue({ width: 0, height: 0 });
+  const obj2 = _mod1658;
+  const sharedValue1 = obj2.useSharedValue({});
+  const fn = function c(arg0, arg1) {
+    const obj = {};
+    const merged = Object.assign(sharedValue1.value);
+    obj[arg0] = arg1;
+    sharedValue1.value = obj;
   };
-  fn.__closure = { offsetX };
-  fn.__workletHash = 355184931449;
-  fn.__initData = offsetX;
-  const fn2 = function u(value) {
-    const obj = convertToSharedIndex;
-    const obj2 = { value, rawDataLength, size, autoFillData, loop };
-    const result = obj.computedOffsetXValueWithAutoFillData(obj2);
-    let bound = result;
-    if (!loop) {
-      const _Math = Math;
-      const _Math2 = Math;
-      const result1 = -tmp3 - 1 * tmp4;
-      bound = Math.max(result1, Math.min(result, 0));
-    }
-    const absolute = Math.abs(bound / tmp4);
-    let diff = absolute;
-    if (bound > 0) {
-      diff = tmp3 - absolute;
-    }
-    if (onProgressChange) {
-      const tmp12 = closure_6;
-      if (tmp12) {
-        const tmpResult = _mod1658;
-        tmpResult.runOnJS(onProgressChange)(bound, diff);
-      } else {
-        onProgressChange.value = diff;
-      }
-    }
+  fn.__closure = { itemDimensions: sharedValue1 };
+  fn.__workletHash = 9846581158902;
+  fn.__initData = __initData;
+  const fn2 = function _(value) {
+    sharedValue.value = value;
   };
-  let obj2 = { computedOffsetXValueWithAutoFillData: autoFillData(loop[1]).computedOffsetXValueWithAutoFillData, rawDataLength, size, autoFillData, loop, onProgressChange, isFunc: tmp, runOnJS: autoFillData(loop[0]).runOnJS };
-  fn2.__closure = obj2;
-  fn2.__workletHash = 12473781608319;
-  fn2.__initData = size;
-  const items = [loop, autoFillData, rawDataLength, onProgressChange, size];
-  const animatedReaction = obj.useAnimatedReaction(fn, fn2, items);
+  fn2.__closure = { containerSize: sharedValue };
+  fn2.__workletHash = 5978604737778;
+  fn2.__initData = __initData2;
+  const Provider = context.Provider;
+  const obj4 = { layout: { containerSize: sharedValue, itemDimensions: sharedValue1, updateItemDimensions: fn, updateContainerSize: fn2 } };
+  let merged = Object.assign(value);
+  return <Provider value={obj4}>{children}</Provider>;
+};
+export const useGlobalState = function() {
+  context = react.useContext(context);
+  if (context) {
+    return context;
+  } else {
+    const _Error = Error;
+    const self = this;
+    const self2 = this;
+    const error = new Error("useGlobalState must be used within a GlobalStateProvider");
+    throw error;
+  }
 };

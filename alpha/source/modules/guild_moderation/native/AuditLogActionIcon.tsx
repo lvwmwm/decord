@@ -1,37 +1,37 @@
-// Module ID: 18946
-// Function ID: 18947
+// Module ID: 18969
+// Function ID: 18970
 // Name: AuditLogActionIcon
-// Dependencies: [19, 17, 18941, 1087, 21, 4969, 587, 18947, 18881, 9319, 5672, 16169, 5664, 9941, 8545, 18082, 8553, 9016, 8529, 13376, 11130, 13371, 18949, 13903, 8527, 11740, 18951, 18952, 18953, 558, 576, 1202, 2]
+// Dependencies: [19, 17, 18964, 1087, 21, 4969, 587, 18970, 18904, 9326, 5672, 16187, 5664, 9948, 8546, 18104, 8554, 9023, 8530, 13390, 11139, 13385, 18972, 13917, 8528, 11751, 18974, 18975, 18976, 558, 576, 1202, 2]
 
-// Module 18946 (AuditLogActionIcon)
+// Module 18969 (AuditLogActionIcon)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import LinkIcon from "LinkIcon" /* 5664 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 5672 */;
-import ChatIcon from "ChatIcon" /* 8527 */;
-import ThreadIcon from "ThreadIcon" /* 8529 */;
-import GroupIcon from "GroupIcon" /* 8545 */;
-import StageIcon from "StageIcon" /* 8553 */;
-import CalendarIcon from "CalendarIcon" /* 9016 */;
-import ReactionIcon from "ReactionIcon" /* 9319 */;
-import FlagIcon from "FlagIcon" /* 9941 */;
-import SlashBoxIcon from "SlashBoxIcon" /* 11130 */;
-import RobotIcon2 from "RobotIcon" /* 11740 */;
-import SoundboardIcon from "SoundboardIcon" /* 13371 */;
-import StickerIcon from "StickerIcon" /* 13376 */;
-import CircleQuestionIcon from "CircleQuestionIcon" /* 13903 */;
-import PuzzlePieceIcon from "PuzzlePieceIcon" /* 16169 */;
-import WebhookIcon from "WebhookIcon" /* 18082 */;
-import ChannelListIcon from "ChannelListIcon" /* 18881 */;
-import ListBulletsIcon from "ListBulletsIcon" /* 18947 */;
-import HomeIcon from "HomeIcon" /* 18949 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18951 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18952 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 18953 */;
+import ChatIcon from "ChatIcon" /* 8528 */;
+import ThreadIcon from "ThreadIcon" /* 8530 */;
+import GroupIcon from "GroupIcon" /* 8546 */;
+import StageIcon from "StageIcon" /* 8554 */;
+import CalendarIcon from "CalendarIcon" /* 9023 */;
+import ReactionIcon from "ReactionIcon" /* 9326 */;
+import FlagIcon from "FlagIcon" /* 9948 */;
+import SlashBoxIcon from "SlashBoxIcon" /* 11139 */;
+import RobotIcon2 from "RobotIcon" /* 11751 */;
+import SoundboardIcon from "SoundboardIcon" /* 13385 */;
+import StickerIcon from "StickerIcon" /* 13390 */;
+import CircleQuestionIcon from "CircleQuestionIcon" /* 13917 */;
+import PuzzlePieceIcon from "PuzzlePieceIcon" /* 16187 */;
+import WebhookIcon from "WebhookIcon" /* 18104 */;
+import ChannelListIcon from "ChannelListIcon" /* 18904 */;
+import ListBulletsIcon from "ListBulletsIcon" /* 18970 */;
+import HomeIcon from "HomeIcon" /* 18972 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18974 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18975 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 18976 */;
 import react from "react" /* 19 */;
-import AuditLogRecord from "AuditLogRecord" /* 18941 */;
+import AuditLogRecord from "AuditLogRecord" /* 18964 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -113,7 +113,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function AuditI
   if (cResult[2] !== action) {
     let RobotIcon;
     if (action === metroImportDefault.MESSAGE_DELETE) {
-      RobotIcon = tmp(8527).ChatIcon;
+      RobotIcon = tmp(8528).ChatIcon;
     } else {
       if (action !== metroImportDefault.AUTO_MODERATION_BLOCK_MESSAGE) {
         if (action !== metroImportDefault.AUTO_MODERATION_FLAG_TO_CHANNEL) {
@@ -124,7 +124,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function AuditI
           }
         }
       }
-      RobotIcon = tmp(11740).RobotIcon;
+      RobotIcon = tmp(11751).RobotIcon;
     }
     cResult[2] = action;
     cResult[3] = RobotIcon;

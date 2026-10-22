@@ -1,9 +1,9 @@
-// Module ID: 11039
-// Function ID: 11040
+// Module ID: 11048
+// Function ID: 11049
 // Name: useCustomStatusActivityForUser
-// Dependencies: [502, 5698, 1087, 558, 576, 504, 11021, 2]
+// Dependencies: [502, 5698, 1087, 558, 576, 504, 11030, 2]
 
-// Module 11039 (useCustomStatusActivityForUser)
+// Module 11048 (useCustomStatusActivityForUser)
 import Constants from "Constants" /* 1087 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import PresenceStore from "PresenceStore" /* 5698 */;

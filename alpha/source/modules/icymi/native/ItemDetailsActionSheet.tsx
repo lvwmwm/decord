@@ -1,18 +1,18 @@
-// Module ID: 17805
-// Function ID: 17806
+// Module ID: 17827
+// Function ID: 17828
 // Name: ItemDetailsActionSheet
-// Dependencies: [19, 17, 4821, 4843, 8791, 21, 4969, 587, 558, 576, 504, 5590, 6912, 6869, 1202, 8808, 10978, 17806, 6973, 6889, 7282, 2]
+// Dependencies: [19, 17, 4821, 4843, 8798, 21, 4969, 587, 558, 576, 504, 5590, 6911, 6868, 1202, 8815, 10986, 17828, 6972, 6888, 7283, 2]
 
-// Module 17805 (ItemDetailsActionSheet)
+// Module 17827 (ItemDetailsActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
 import useChannelNameDefault from "useChannelName" /* 5590 */;
-import useDesignToggleDefault from "useDesignToggle" /* 6912 */;
+import useDesignToggleDefault from "useDesignToggle" /* 6911 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import ICYMIStore from "ICYMIStore" /* 8791 */;
+import ICYMIStore from "ICYMIStore" /* 8798 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -25,14 +25,14 @@ let obj2;
 let tmp;
 let tmp5;
 const native = tmp(1202);
-const GuildIcon = tmp(6869);
-const GuildIconDefault = tmp5(6869);
-const TableRow2 = tmp(6889);
-const TableRowGroup2 = tmp(6973);
-const ActionSheet2 = tmp(7282);
-const ICYMIUtils = tmp(8808);
-const ActionSheetIconHeader2 = tmp(10978);
-const ICYMIContentSettingControl = tmp(17806);
+const GuildIcon = tmp(6868);
+const GuildIconDefault = tmp5(6868);
+const TableRow2 = tmp(6888);
+const TableRowGroup2 = tmp(6972);
+const ActionSheet2 = tmp(7283);
+const ICYMIUtils = tmp(8815);
+const ActionSheetIconHeader2 = tmp(10986);
+const ICYMIContentSettingControl = tmp(17828);
 const View = react_native.View;
 ({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
 let obj = { divider: obj2 };

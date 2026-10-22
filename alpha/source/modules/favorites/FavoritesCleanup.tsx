@@ -1,20 +1,20 @@
-// Module ID: 10822
-// Function ID: 10823
+// Module ID: 10830
+// Function ID: 10831
 // Name: FavoritesCleanup
-// Dependencies: [5, 4825, 4821, 4901, 6757, 4824, 1098, 1211, 7394, 1104, 6808, 2]
+// Dependencies: [5, 4825, 4821, 4901, 6756, 4824, 1098, 1211, 7395, 1104, 6807, 2]
 // Exports: getFavoritesCleanupCandidates, loadFavoriteThreadsForCleanup
 
-// Module 10822 (FavoritesCleanup)
+// Module 10830 (FavoritesCleanup)
 import Constants from "Constants" /* 1098 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
 import ChannelRecord from "ChannelRecord" /* 4825 */;
-import getThreadAutoArchiveTimeOnce from "getThreadAutoArchiveTimeOnce" /* 6808 */;
-import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7394 */;
+import getThreadAutoArchiveTimeOnce from "getThreadAutoArchiveTimeOnce" /* 6807 */;
+import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7395 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
-import ReadStateStore from "ReadStateStore" /* 6757 */;
+import ReadStateStore from "ReadStateStore" /* 6756 */;
 import FavoriteStore from "FavoriteStore" /* 4824 */;
 import size from "module_2" /* 2 */;
 

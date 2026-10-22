@@ -1,10 +1,10 @@
-// Module ID: 7310
-// Function ID: 7311
+// Module ID: 7311
+// Function ID: 7312
 // Name: useIsNewMember
 // Dependencies: [4874, 4881, 4887, 1405, 1104, 558, 576, 504, 2]
 // Exports: getIsNewMember
 
-// Module 7310 (useIsNewMember)
+// Module 7311 (useIsNewMember)
 import DurationsDefault from "Durations" /* 1104 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 4887 */;

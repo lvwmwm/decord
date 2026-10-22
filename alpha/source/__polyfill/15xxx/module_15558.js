@@ -1,26 +1,15 @@
 // Module ID: 15558
 // Function ID: 15559
-// Dependencies: [15559, 15563, 15566]
+// Dependencies: [15506, 15525, 15515]
 
 // Module 15558
-import _mod15559 from "module_15559" /* 15559 */;
-import _mod15563 from "module_15563" /* 15563 */;
-import _mod15566 from "module_15566" /* 15566 */;
+import _mod15506 from "module_15506" /* 15506 */;
+import _mod15515 from "module_15515" /* 15515 */;
+import module_15525 from "module_15525" /* 15525 */;
 
-const obj = {};
-const _URL = _mod15559.URL;
-_URL.install(obj);
-const _URLSearchParams = _mod15559.URLSearchParams;
-_URLSearchParams.install(obj);
-({ URL: exports.URL, URLSearchParams: exports.URLSearchParams } = obj);
+let closure_0 = _mod15506(Function.toString);
+if (!module_15525(_mod15515.inspectSource)) {
+  _mod15515.inspectSource = (arg0) => closure_0(arg0);
+}
 
-export const parseURL = _mod15563.parseURL;
-export const basicURLParse = _mod15563.basicURLParse;
-export const serializeURL = _mod15563.serializeURL;
-export const serializeHost = _mod15563.serializeHost;
-export const serializeInteger = _mod15563.serializeInteger;
-export const serializeURLOrigin = _mod15563.serializeURLOrigin;
-export const setTheUsername = _mod15563.setTheUsername;
-export const setThePassword = _mod15563.setThePassword;
-export const cannotHaveAUsernamePasswordPort = _mod15563.cannotHaveAUsernamePasswordPort;
-export const percentDecode = _mod15566.percentDecode;
+export default _mod15515.inspectSource;

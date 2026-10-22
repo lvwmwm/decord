@@ -1,18 +1,18 @@
-// Module ID: 18221
-// Function ID: 18222
+// Module ID: 18243
+// Function ID: 18244
 // Name: ContextMenuCommandRootScreen
-// Dependencies: [32, 19, 17, 4843, 5970, 21, 4969, 587, 558, 576, 504, 9625, 10174, 10168, 5579, 7130, 11023, 1128, 5220, 18222, 7131, 7136, 2]
+// Dependencies: [32, 19, 17, 4843, 5969, 21, 4969, 587, 558, 576, 504, 9632, 10181, 10175, 5579, 7129, 11032, 1128, 5220, 18244, 7130, 7135, 2]
 
-// Module 18221 (ContextMenuCommandRootScreen)
+// Module 18243 (ContextMenuCommandRootScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import executeCommandDefault from "executeCommand" /* 10168 */;
+import executeCommandDefault from "executeCommand" /* 10175 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5970 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5969 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -570,7 +570,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMen
   tmp12 = items7;
   tmp11 = H;
 }) : (function ContextMenuCommandRootScreen(navigation) {
-  let SearchField;
+  let SearchBar;
   let intl;
   let items13;
   let items2;
@@ -833,9 +833,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMen
     }
     const obj7 = { marginBottom: num2 };
     items12[1] = obj7;
-    const obj6 = { style: items12, children: sectionDescriptors(SearchField, obj8) };
+    const obj6 = { style: items12, children: sectionDescriptors(SearchBar, obj8) };
     obj8 = { size: "md", onChange: tmp6, placeholder: intl.string(tmp(tmp2[17]).t.m1UwbP) };
-    SearchField = tmp(tmp2[20]).SearchField;
+    SearchBar = tmp(tmp2[20]).SearchBar;
     intl = tmp(tmp2[17]).intl;
     tmp29Result = tmp29(tmp30, obj6);
   }

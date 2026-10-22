@@ -1,9 +1,9 @@
-// Module ID: 13392
-// Function ID: 13393
+// Module ID: 13406
+// Function ID: 13407
 // Name: GuildPowerupsMultiPerkBottomSheet
-// Dependencies: [17, 21, 4969, 587, 683, 558, 576, 5191, 4991, 13356, 13345, 13341, 13362, 13393, 13363, 13379, 13380, 13384, 13366, 1202, 1128, 5220, 13367, 5230, 2568, 1633, 13394, 13397, 13390, 5255, 5251, 2]
+// Dependencies: [17, 21, 4969, 587, 683, 558, 576, 5191, 4991, 13370, 13359, 13355, 13376, 13407, 13377, 13393, 13394, 13398, 13380, 1202, 1128, 5220, 13381, 5230, 2568, 1633, 13408, 13411, 13404, 5255, 5251, 2]
 
-// Module 13392 (GuildPowerupsMultiPerkBottomSheet)
+// Module 13406 (GuildPowerupsMultiPerkBottomSheet)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,18 +11,18 @@ import _modDef683 from "module_683" /* 683 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import _modDef2568 from "module_2568" /* 2568 */;
 import useThemeDefault from "useTheme" /* 5191 */;
-import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 13341 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 13345 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13356 */;
-import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 13363 */;
-import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 13366 */;
-import useCanGuildPowerupBeToggledDefault from "useCanGuildPowerupBeToggled" /* 13379 */;
-import useGuildPowerupOnActivateDefault from "useGuildPowerupOnActivate" /* 13380 */;
-import useGuildPowerupOnShowDeactivateDefault from "useGuildPowerupOnShowDeactivate" /* 13384 */;
-import GuildPowerupsDisabledWarningDefault from "GuildPowerupsDisabledWarning" /* 13390 */;
-import useGuildPowerupColorConfigDefault from "useGuildPowerupColorConfig" /* 13393 */;
-import usePowerupGroupConfigDefault from "usePowerupGroupConfig" /* 13394 */;
-import GuildPowerupsSectionHeaderDefault from "GuildPowerupsSectionHeader" /* 13397 */;
+import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 13355 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 13359 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13370 */;
+import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 13377 */;
+import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 13380 */;
+import useCanGuildPowerupBeToggledDefault from "useCanGuildPowerupBeToggled" /* 13393 */;
+import useGuildPowerupOnActivateDefault from "useGuildPowerupOnActivate" /* 13394 */;
+import useGuildPowerupOnShowDeactivateDefault from "useGuildPowerupOnShowDeactivate" /* 13398 */;
+import GuildPowerupsDisabledWarningDefault from "GuildPowerupsDisabledWarning" /* 13404 */;
+import useGuildPowerupColorConfigDefault from "useGuildPowerupColorConfig" /* 13407 */;
+import usePowerupGroupConfigDefault from "usePowerupGroupConfig" /* 13408 */;
+import GuildPowerupsSectionHeaderDefault from "GuildPowerupsSectionHeader" /* 13411 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -40,9 +40,9 @@ const native = tmp(1202);
 const themes = tmp(4991);
 const Text_Text = tmp(5220);
 const components_Button_Button = tmp(5230);
-const usePowerupActiveStatus = tmp(13345);
-const useCalculatePowerupCardStatus = tmp(13362);
-const GuildPowerupsCardFooter = tmp(13367);
+const usePowerupActiveStatus = tmp(13359);
+const useCalculatePowerupCardStatus = tmp(13376);
+const GuildPowerupsCardFooter = tmp(13381);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -134,9 +134,9 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPo
     tmp13 = cResult[3];
   }
   let closure_0 = tmp13;
-  const textColor = tmp4(13393)(tmp13).textColor;
-  let str = tmp4(13363)(powerup, true, forceStaticImage);
-  const disabled = tmp4(13379)(guildId, powerup, tmp13).disabled;
+  const textColor = tmp4(13407)(tmp13).textColor;
+  let str = tmp4(13377)(powerup, true, forceStaticImage);
+  const disabled = tmp4(13393)(guildId, powerup, tmp13).disabled;
   const tmp15 = useGuildPowerupOnActivateDefault(guildId, powerup);
   const onActivate = tmp15.onActivate;
   const isLoading = tmp15.isLoading;

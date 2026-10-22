@@ -1,16 +1,16 @@
-// Module ID: 13940
-// Function ID: 13941
+// Module ID: 13954
+// Function ID: 13955
 // Name: IconActionButton
-// Dependencies: [377, 19, 21, 4969, 587, 1384, 558, 576, 1202, 5239, 5220, 6894, 9674, 2]
+// Dependencies: [377, 19, 21, 4969, 587, 1384, 558, 576, 1202, 5239, 5220, 6893, 9681, 2]
 
-// Module 13940 (IconActionButton)
+// Module 13954 (IconActionButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import useFontScale from "useFontScale" /* 5239 */;
-import Pressables from "Pressables" /* 6894 */;
-import shared_components_BadgeDefault from "shared_components/Badge" /* 9674 */;
+import Pressables from "Pressables" /* 6893 */;
+import shared_components_BadgeDefault from "shared_components/Badge" /* 9681 */;
 import _readOnlyError from "_readOnlyError" /* 377 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -23,7 +23,7 @@ let dependencyMap;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const shared_components_Badge = tmp(9674);
+const shared_components_Badge = tmp(9681);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles(() => {
   let num;
@@ -339,7 +339,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconActionBu
   const obj = { ref, hitSlop, onPress, onLongPress, disabled, accessibilityRole: "button", accessibilityLabel, accessibilityActions, onAccessibilityAction, style: items, children: items1 };
   items = [tmp.actionIconButtonPressable, "outlined" === str ? tmp.outlined : tmp.filled, , , ];
   let roundButton;
-  const PressableOpacity = tmp2(6894).PressableOpacity;
+  const PressableOpacity = tmp2(6893).PressableOpacity;
   const tmp7 = hasOwnProperty;
   if (!tmp10Result) {
     roundButton = tmp.roundButton;

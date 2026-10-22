@@ -1,17 +1,17 @@
-// Module ID: 15482
-// Function ID: 15483
+// Module ID: 15495
+// Function ID: 15496
 // Name: polyfillsNative
-// Dependencies: [3, 15483, 15553, 15571, 15574, 15577, 1278, 1263, 2]
+// Dependencies: [3, 15496, 15566, 15584, 15587, 15590, 1278, 1263, 2]
 
-// Module 15482 (polyfillsNative)
+// Module 15495 (polyfillsNative)
 import _mod1263 from "module_1263" /* 1263 */;
 import Buffer from "Buffer" /* 1278 */;
-import _mod15577 from "module_15577" /* 15577 */;
+import _mod15590 from "module_15590" /* 15590 */;
 import Logger from "Logger" /* 3 */;
-import module_15483 from "module_15483" /* 15483 */;
-import react_native from "react-native" /* 15553 */;
-import getPluralRules from "getPluralRules" /* 15571 */;
-import module_15574 from "module_15574" /* 15574 */;
+import module_15496 from "module_15496" /* 15496 */;
+import react_native from "react-native" /* 15566 */;
+import getPluralRules from "getPluralRules" /* 15584 */;
+import module_15587 from "module_15587" /* 15587 */;
 import size from "module_2" /* 2 */;
 
 if (typeof process === "undefined") {
@@ -26,7 +26,7 @@ if (!global.self) {
   global.self = global;
 }
 if (null == window.crypto) {
-  const _module5 = _mod15577;
+  const _module5 = _mod15590;
   const _window = window;
   window.crypto = global.crypto;
 }

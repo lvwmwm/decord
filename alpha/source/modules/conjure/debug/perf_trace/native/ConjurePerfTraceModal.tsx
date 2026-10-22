@@ -1,21 +1,21 @@
-// Module ID: 12472
-// Function ID: 12473
+// Module ID: 12483
+// Function ID: 12484
 // Name: ConjurePerfTraceModal
-// Dependencies: [19, 17, 10674, 21, 4969, 587, 558, 576, 12473, 7289, 11043, 5220, 7941, 12474, 12476, 1633, 12477, 10704, 5230, 504, 6910, 6658, 11113, 2]
+// Dependencies: [19, 17, 10681, 21, 4969, 587, 558, 576, 12484, 7290, 11052, 5220, 7942, 12485, 12487, 1633, 12488, 10711, 5230, 504, 6909, 6657, 11122, 2]
 
-// Module 12472 (ConjurePerfTraceModal)
+// Module 12483 (ConjurePerfTraceModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import NavigatorHeader from "NavigatorHeader" /* 6910 */;
-import ChevronSmallRightIcon2 from "ChevronSmallRightIcon" /* 7289 */;
-import ConjurePerfTraceStatsHeaderDefault from "ConjurePerfTraceStatsHeader" /* 12473 */;
-import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 12474 */;
-import useConjurePerfTraceTreeDefault from "useConjurePerfTraceTree" /* 12477 */;
+import NavigatorHeader from "NavigatorHeader" /* 6909 */;
+import ChevronSmallRightIcon2 from "ChevronSmallRightIcon" /* 7290 */;
+import ConjurePerfTraceStatsHeaderDefault from "ConjurePerfTraceStatsHeader" /* 12484 */;
+import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 12485 */;
+import useConjurePerfTraceTreeDefault from "useConjurePerfTraceTree" /* 12488 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConjureDebugStore from "ConjureDebugStore" /* 10674 */;
+import ConjureDebugStore from "ConjureDebugStore" /* 10681 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -46,7 +46,7 @@ let obj9;
 let rect;
 let size;
 let tmp;
-const ConjurePerfTraceStats = tmp(12476);
+const ConjurePerfTraceStats = tmp(12487);
 ({ Pressable: closure_4, ScrollView: hasOwnProperty, View: metroRequire } = react_native);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 const perf_trace = "perf_trace";
@@ -550,12 +550,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Waterf
   const detail = tmp;
   let tmp2 = node;
   let tmp3 = dependencyMap;
-  let obj = node(12473);
+  let obj = node(12484);
   const perfCategoryColors = obj.usePerfCategoryColors();
   if (collapsed) {
-    ChevronSmallDownIcon = tmp2(7289).ChevronSmallRightIcon;
+    ChevronSmallDownIcon = tmp2(7290).ChevronSmallRightIcon;
   } else {
-    ChevronSmallDownIcon = tmp2(11043).ChevronSmallDownIcon;
+    ChevronSmallDownIcon = tmp2(11052).ChevronSmallDownIcon;
   }
   if (node.failed) {
     running = tmp.failed;
@@ -640,13 +640,13 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Waterf
   let tmp14Result5 = null;
   if (node.failed) {
     const obj15 = { size: "xs", color: selected(587).colors.STATUS_DANGER };
-    const WarningIcon = tmp2(7941).WarningIcon;
+    const WarningIcon = tmp2(7942).WarningIcon;
     tmp14Result5 = tmp14(WarningIcon, obj15);
   }
   items2[6] = tmp14Result5;
   const obj16 = { variant: "text-xs/normal", color: "text-muted", children: tmp2Result.perfNodeDuration(node) };
   const Text2 = tmp2(5220).Text;
-  tmp2Result = tmp2(12474);
+  tmp2Result = tmp2(12485);
   items2[7] = tmp14(Text2, obj16);
   items4 = [tmp6(closure_6, obj4), , ];
   const obj17 = { style: tmp.track, children: tmp14(closure_6, obj18) };
@@ -706,7 +706,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Waterf
     items6 = [tmp.detail, ];
     items6[1] = { paddingLeft: node.depth * selected(587).space.PX_12 };
     const obj21 = { paddingLeft: node.depth * selected(587).space.PX_12 };
-    const tmp2Result2 = tmp2(12474);
+    const tmp2Result2 = tmp2(12485);
     perfNodeSectionsResult = tmp2Result2.perfNodeSections(node);
     tmp14Result6 = tmp14(tmp10, obj20);
   }
@@ -762,7 +762,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Smalle
       const _Symbol = Symbol;
       if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
         const obj3 = { size: "xs", color: tmp9(587).colors.ICON_SUBTLE };
-        const ChevronSmallRightIcon = tmp(7289).ChevronSmallRightIcon;
+        const ChevronSmallRightIcon = tmp(7290).ChevronSmallRightIcon;
         const tmp16 = metroImportAll(ChevronSmallRightIcon, obj3);
         cResult[10] = tmp16;
         tmp14 = tmp16;
@@ -1610,7 +1610,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
     const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmpResult2 = projectId(6910);
+      const tmpResult2 = projectId(6909);
       const headerCloseButton = tmpResult2.getHeaderCloseButton(() => {
         const arr = traceId(dependencyMap[21]);
         return arr.pop();
@@ -1633,7 +1633,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
         }
         if (cResult[12] !== tmp12) {
           const obj2 = { initialRouteName: perf_trace, screens: tmp12 };
-          const tmp17 = closure_8(projectId(11113).Modal, obj2);
+          const tmp17 = closure_8(projectId(11122).Modal, obj2);
           cResult[12] = tmp12;
           cResult[13] = tmp17;
           tmp14 = tmp17;

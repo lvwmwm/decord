@@ -1,22 +1,22 @@
-// Module ID: 18715
-// Function ID: 18716
+// Module ID: 18737
+// Function ID: 18738
 // Name: GuildPowerupsManager
-// Dependencies: [4843, 4901, 4995, 5167, 7200, 4846, 5186, 5173, 5185, 13356, 17492, 5889, 5172, 13333, 8353, 2]
+// Dependencies: [4843, 4901, 4995, 5167, 7199, 4846, 5186, 5173, 5185, 13370, 17514, 5888, 5172, 13347, 8354, 2]
 
-// Module 18715 (GuildPowerupsManager)
+// Module 18737 (GuildPowerupsManager)
 import FavoritesUtils from "FavoritesUtils" /* 4846 */;
 import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 5172 */;
 import ServerThemeExperiment2 from "ServerThemeExperiment" /* 5173 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 5889 */;
-import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8353 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13333 */;
-import useHasAllocateBoostPermission from "useHasAllocateBoostPermission" /* 13356 */;
-import useIsCurrentUserEligibleForPowerupUpsells from "useIsCurrentUserEligibleForPowerupUpsells" /* 17492 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 5888 */;
+import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8354 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13347 */;
+import useHasAllocateBoostPermission from "useHasAllocateBoostPermission" /* 13370 */;
+import useIsCurrentUserEligibleForPowerupUpsells from "useIsCurrentUserEligibleForPowerupUpsells" /* 17514 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 5167 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7200 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7199 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -56,7 +56,7 @@ class GuildPowerupsManager extends AutomaticLifecycleManager {
           if (!tmp7Result.getHasAllocateBoostPermission(PermissionStore, guild)) {
             const tmp7Result9 = useIsCurrentUserEligibleForPowerupUpsells;
             let isCurrentUserEligibleForPowerupUpsells = tmp7Result9.getIsCurrentUserEligibleForPowerupUpsells();
-            let isMobile = tmp7(5889).isMobile;
+            let isMobile = tmp7(5888).isMobile;
             if (isMobile) {
               const tmp7Result10 = ServerThemeExperiment2;
               isMobile = tmp7Result10.getServerThemeEnabled(guildId, "GuildPowerupsManager");
@@ -73,7 +73,7 @@ class GuildPowerupsManager extends AutomaticLifecycleManager {
               const tmp7Result13 = ServerThemeUserExperiment;
               isMobile = tmp7Result13.getServerThemeUserEnabled("GuildPowerupsManager");
             }
-            let isMobile2 = tmp7(5889).isMobile;
+            let isMobile2 = tmp7(5888).isMobile;
             if (isMobile2) {
               const tmp7Result14 = useIsCurrentUserEligibleForPowerupUpsells;
               isMobile2 = tmp7Result14.getIsCurrentUserEligibleForPowerupUpsells();

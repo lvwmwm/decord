@@ -1,16 +1,16 @@
-// Module ID: 12909
-// Function ID: 12910
+// Module ID: 12928
+// Function ID: 12929
 // Name: CheckpointRankTag
-// Dependencies: [32, 19, 17, 6002, 21, 4969, 587, 558, 576, 7946, 6348, 5220, 2]
+// Dependencies: [32, 19, 17, 6001, 21, 4969, 587, 558, 576, 7947, 6347, 5220, 2]
 
-// Module 12909 (CheckpointRankTag)
+// Module 12928 (CheckpointRankTag)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import CheckpointConstants from "CheckpointConstants" /* 6002 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6348 */;
-import inlineStyles from "inlineStyles" /* 7946 */;
+import CheckpointConstants from "CheckpointConstants" /* 6001 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6347 */;
+import inlineStyles from "inlineStyles" /* 7947 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -142,7 +142,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
       }
       items2[1] = shapeChamferBottomRight;
       obj5 = { points: tmpResult.getChamferedRectPoints(size.width, size.height, 5.5), fill: CHECKPOINT_PRIMARY };
-      Polygon = tmp(7946).Polygon;
+      Polygon = tmp(7947).Polygon;
       tmpResult = CheckpointCustomizationUtils;
       tmp11Result = tmp11(tmp13, size1);
     }

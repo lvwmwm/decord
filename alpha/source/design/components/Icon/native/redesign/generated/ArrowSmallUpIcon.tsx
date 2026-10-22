@@ -1,14 +1,14 @@
-// Module ID: 12499
-// Function ID: 12500
+// Module ID: 12510
+// Function ID: 12511
 // Name: ArrowSmallUpIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 12500, 5654, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 12511, 5654, 2]
 
-// Module 12499 (ArrowSmallUpIcon)
+// Module 12510 (ArrowSmallUpIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5654 */;
-import AssetRegistry from "AssetRegistry" /* 12500 */;
+import AssetRegistry from "AssetRegistry" /* 12511 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

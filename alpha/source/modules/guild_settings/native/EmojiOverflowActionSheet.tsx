@@ -1,12 +1,12 @@
-// Module ID: 18965
-// Function ID: 18966
+// Module ID: 18988
+// Function ID: 18989
 // Name: EmojiOverflowActionSheet
-// Dependencies: [5, 19, 17, 21, 4969, 558, 576, 1417, 5655, 5220, 5675, 1128, 6889, 9913, 10090, 6360, 5648, 6917, 6973, 7282, 2]
+// Dependencies: [5, 19, 17, 21, 4969, 558, 576, 1417, 5655, 5220, 5675, 1128, 6888, 9920, 10097, 6359, 5648, 6916, 6972, 7283, 2]
 
-// Module 18965 (EmojiOverflowActionSheet)
+// Module 18988 (EmojiOverflowActionSheet)
 import react_native from "react-native" /* 17 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9913 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9920 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -403,7 +403,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiOverflo
   const tmp3 = emoji;
   const tmp4 = dependencyMap;
   let obj = { style: tmp.header, children: items };
-  const ActionSheet = emoji(7282).ActionSheet;
+  const ActionSheet = emoji(7283).ActionSheet;
   let obj2 = { style: tmp.emojiImage, source: obj3 };
   obj3 = { uri: obj4.getEmojiURL(obj5) };
   const tmp6 = FastImageDefault;
@@ -414,7 +414,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiOverflo
   const Text = emoji(5220).Text;
   items[1] = closure_6(Text, obj6);
   const items1 = [closure_7(View, obj), ];
-  const TableRowGroup = emoji(6973).TableRowGroup;
+  const TableRowGroup = emoji(6972).TableRowGroup;
   let obj7 = {
     icon: closure_6(emoji(5675).TrashIcon, { color: "text-feedback-critical" }),
     label: closure_6(Text2, obj8),
@@ -424,20 +424,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiOverflo
       onClose();
     }
   };
-  const TableRow = emoji(6889).TableRow;
+  const TableRow = emoji(6888).TableRow;
   obj8 = { variant: "text-md/semibold", color: "text-feedback-critical", children: intl.string(emoji(1128).t.oyYWHE) };
   Text2 = emoji(5220).Text;
   intl = emoji(1128).intl;
   const items2 = [closure_6(TableRow, obj7), , , ];
   const obj9 = {
-    icon: closure_6(emoji(10090).PencilIcon, {}),
+    icon: closure_6(emoji(10097).PencilIcon, {}),
     label: closure_6(Text3, obj10),
     onPress() {
       dependencyMap();
       onClose();
     }
   };
-  const TableRow2 = emoji(6889).TableRow;
+  const TableRow2 = emoji(6888).TableRow;
   obj10 = { variant: "text-md/semibold", children: intl2.string(emoji(1128).t.bt75uw) };
   Text3 = emoji(5220).Text;
   intl2 = emoji(1128).intl;
@@ -445,7 +445,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiOverflo
   let tmp5Result = null;
   if (null != onSelectRolesForEmoji) {
     const obj11 = {
-      icon: closure_6(tmp3(10090).PencilIcon, {}),
+      icon: closure_6(tmp3(10097).PencilIcon, {}),
       label: closure_6(Text4, obj12),
       onPress: onClose(function*(arg0, value) {
           let obj2;
@@ -545,7 +545,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiOverflo
           }
         })
     };
-    const TableRow3 = tmp3(6889).TableRow;
+    const TableRow3 = tmp3(6888).TableRow;
     obj12 = { variant: "text-md/semibold", children: intl3.string(tmp3(1128).t["+riKdA"]) };
     Text4 = tmp3(5220).Text;
     intl3 = tmp3(1128).intl;
@@ -554,8 +554,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiOverflo
   const obj13 = { children: items1 };
   const obj14 = { hasIcons: true, children: items2 };
   items2[2] = tmp5Result;
-  const obj15 = { icon: closure_6(tmp3(6917).XSmallIcon, {}), label: closure_6(Text5, obj16), onPress: onClose };
-  const TableRow4 = tmp3(6889).TableRow;
+  const obj15 = { icon: closure_6(tmp3(6916).XSmallIcon, {}), label: closure_6(Text5, obj16), onPress: onClose };
+  const TableRow4 = tmp3(6888).TableRow;
   obj16 = { variant: "text-md/semibold", children: intl4.string(tmp3(1128).t["ETE/oC"]) };
   Text5 = tmp3(5220).Text;
   intl4 = tmp3(1128).intl;

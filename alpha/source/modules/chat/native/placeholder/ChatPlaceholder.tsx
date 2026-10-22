@@ -1,19 +1,19 @@
-// Module ID: 13485
-// Function ID: 13486
+// Module ID: 13499
+// Function ID: 13500
 // Name: ChatPlaceholder
-// Dependencies: [19, 17, 9752, 21, 4969, 587, 558, 576, 1633, 5579, 1499, 13486, 13487, 13488, 5038, 2]
+// Dependencies: [19, 17, 9759, 21, 4969, 587, 558, 576, 1633, 5579, 1499, 13500, 13501, 13502, 5038, 2]
 
-// Module 13485 (ChatPlaceholder)
+// Module 13499 (ChatPlaceholder)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9752 */;
-import useChatPlaceholderAnimatedStylesDefault from "useChatPlaceholderAnimatedStyles" /* 13486 */;
-import getChatPlaceholderRowHeightDefault from "getChatPlaceholderRowHeight" /* 13487 */;
-import ChatPlaceholderRowDefault from "ChatPlaceholderRow" /* 13488 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9759 */;
+import useChatPlaceholderAnimatedStylesDefault from "useChatPlaceholderAnimatedStyles" /* 13500 */;
+import getChatPlaceholderRowHeightDefault from "getChatPlaceholderRowHeight" /* 13501 */;
+import ChatPlaceholderRowDefault from "ChatPlaceholderRow" /* 13502 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -35,7 +35,7 @@ let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLinesForRowIndexCallback() {
   let first;
   let tmp3;
-  const obj = react2;
+  let obj = react2;
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [];

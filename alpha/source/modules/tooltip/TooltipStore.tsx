@@ -1,9 +1,9 @@
-// Module ID: 11524
-// Function ID: 11525
+// Module ID: 11535
+// Function ID: 11536
 // Name: TooltipStore
 // Dependencies: [1087, 510, 504, 584, 2]
 
-// Module 11524 (TooltipStore)
+// Module 11535 (TooltipStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;

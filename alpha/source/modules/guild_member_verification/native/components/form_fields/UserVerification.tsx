@@ -1,13 +1,13 @@
-// Module ID: 6903
-// Function ID: 6904
+// Module ID: 6902
+// Function ID: 6903
 // Name: UserVerification
-// Dependencies: [19, 21, 4969, 558, 576, 4998, 6904, 1128, 5220, 2]
+// Dependencies: [19, 21, 4969, 558, 576, 4998, 6903, 1128, 5220, 2]
 
-// Module 6903 (UserVerification)
+// Module 6902 (UserVerification)
 import react2 from "react" /* 576 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4998 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import IdentityVerificationFieldDefault from "IdentityVerificationField" /* 6904 */;
+import IdentityVerificationFieldDefault from "IdentityVerificationField" /* 6903 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;

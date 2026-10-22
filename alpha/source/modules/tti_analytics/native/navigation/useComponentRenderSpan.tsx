@@ -1,14 +1,14 @@
-// Module ID: 17879
-// Function ID: 17880
+// Module ID: 17901
+// Function ID: 17902
 // Name: useComponentRenderSpan
-// Dependencies: [19, 3, 558, 576, 12770, 12774, 12771, 17880, 2]
+// Dependencies: [19, 3, 558, 576, 12789, 12793, 12790, 17902, 2]
 // Exports: useNavigationTTIRegionMeasurement
 
-// Module 17879 (useComponentRenderSpan)
+// Module 17901 (useComponentRenderSpan)
 import LoggerDefault from "Logger" /* 3 */;
-import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 12771 */;
-import NavigationSpanTypes from "NavigationSpanTypes" /* 12774 */;
-import NavigationTTIRegionDebugState from "NavigationTTIRegionDebugState" /* 17880 */;
+import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 12790 */;
+import NavigationSpanTypes from "NavigationSpanTypes" /* 12793 */;
+import NavigationTTIRegionDebugState from "NavigationTTIRegionDebugState" /* 17902 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -30,7 +30,7 @@ export const useNavigationTTIRegionMeasurement = function useNavigationTTIRegion
     let spanComponent = regionId;
     let obj3 = require("react");
     const cResult = obj3.c(25);
-    const obj4 = require("NavTTISurfaceContext");
+    let obj4 = require("NavTTISurfaceContext");
     const navTTISurface = obj4.useNavTTISurface();
     let str2;
     if (navTTISurface != null) {
@@ -53,7 +53,7 @@ export const useNavigationTTIRegionMeasurement = function useNavigationTTIRegion
     if (flag2 == null) {
       flag2 = false;
     }
-    const obj5 = current;
+    let obj5 = current;
     ref = current.useRef(null);
     ref2 = current.useRef(null);
     ref3 = current.useRef(null);
@@ -515,6 +515,7 @@ export const useNavigationTTIRegionMeasurement = function useNavigationTTIRegion
       }
     }
     current = tmp5;
+    let tmp6;
     if (navTTISurface1 != null) {
       class R {
         constructor(nativeEvent) {
@@ -554,7 +555,7 @@ export const useNavigationTTIRegionMeasurement = function useNavigationTTIRegion
         }
       }
     }
-    if (undefined == null) {
+    if (tmp6 == null) {
       class R {
         constructor(nativeEvent) {
           let height;

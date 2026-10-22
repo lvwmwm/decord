@@ -1,24 +1,24 @@
-// Module ID: 9955
-// Function ID: 9956
+// Module ID: 9962
+// Function ID: 9963
 // Name: ReactionEmojiOptionsActionSheet
-// Dependencies: [19, 17, 4970, 6711, 6870, 4995, 1087, 21, 4969, 587, 558, 576, 9914, 4797, 7268, 504, 9799, 1417, 5196, 9913, 5649, 1128, 9917, 9919, 7269, 5648, 8271, 7213, 5220, 4117, 2067, 6973, 6889, 7282, 2]
+// Dependencies: [19, 17, 4970, 6710, 6869, 4995, 1087, 21, 4969, 587, 558, 576, 9921, 4797, 7269, 504, 9806, 1417, 5196, 9920, 5649, 1128, 9924, 9926, 7270, 5648, 8272, 7212, 5220, 4117, 2067, 6972, 6888, 7283, 2]
 
-// Module 9955 (ReactionEmojiOptionsActionSheet)
+// Module 9962 (ReactionEmojiOptionsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl7 from "intl" /* 1128 */;
 import ToastUtils from "ToastUtils" /* 5648 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5649 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6870 */;
-import ClipboardUtils from "ClipboardUtils" /* 7269 */;
-import ReactionActionCreatorsAll from "ReactionActionCreators" /* 8271 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9913 */;
-import StarOutlineIcon from "StarOutlineIcon" /* 9917 */;
-import StarIcon from "StarIcon" /* 9919 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6869 */;
+import ClipboardUtils from "ClipboardUtils" /* 7270 */;
+import ReactionActionCreatorsAll from "ReactionActionCreators" /* 8272 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9920 */;
+import StarOutlineIcon from "StarOutlineIcon" /* 9924 */;
+import StarIcon from "StarIcon" /* 9926 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
-import EmojiStore from "EmojiStore" /* 6711 */;
+import EmojiStore from "EmojiStore" /* 6710 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;

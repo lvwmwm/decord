@@ -1,11 +1,11 @@
-// Module ID: 10739
-// Function ID: 10740
+// Module ID: 10746
+// Function ID: 10747
 // Name: leaveCurrentEmbeddedActivity
-// Dependencies: [4820, 10740, 2]
+// Dependencies: [4820, 10747, 2]
 // Exports: leaveCurrentEmbeddedActivity
 
-// Module 10739 (leaveCurrentEmbeddedActivity)
-import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 10740 */;
+// Module 10746 (leaveCurrentEmbeddedActivity)
+import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 10747 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
 import size from "module_2" /* 2 */;
 

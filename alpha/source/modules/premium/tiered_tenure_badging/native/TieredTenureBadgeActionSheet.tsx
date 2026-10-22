@@ -1,20 +1,20 @@
-// Module ID: 11047
-// Function ID: 11048
+// Module ID: 11056
+// Function ID: 11057
 // Name: TieredTenureBadgeActionSheet
-// Dependencies: [19, 17, 1392, 1394, 1087, 21, 4969, 587, 558, 576, 11048, 7696, 11073, 5655, 5220, 1128, 11074, 504, 1991, 1275, 9330, 1633, 7474, 5196, 8641, 9886, 10148, 5255, 5251, 2]
+// Dependencies: [19, 17, 1392, 1394, 1087, 21, 4969, 587, 558, 576, 11057, 7697, 11082, 5655, 5220, 1128, 11083, 504, 1991, 1275, 9337, 1633, 7475, 5196, 8648, 9893, 10155, 5255, 5251, 2]
 
-// Module 11047 (TieredTenureBadgeActionSheet)
+// Module 11056 (TieredTenureBadgeActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import openUserSettings from "openUserSettings" /* 7474 */;
-import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7696 */;
-import showUserProfileActionSheet from "showUserProfileActionSheet" /* 8641 */;
-import useMobileTenureBadgeImages from "useMobileTenureBadgeImages" /* 11048 */;
-import useTenureBadgeRequirementString from "useTenureBadgeRequirementString" /* 11073 */;
+import openUserSettings from "openUserSettings" /* 7475 */;
+import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7697 */;
+import showUserProfileActionSheet from "showUserProfileActionSheet" /* 8648 */;
+import useMobileTenureBadgeImages from "useMobileTenureBadgeImages" /* 11057 */;
+import useTenureBadgeRequirementString from "useTenureBadgeRequirementString" /* 11082 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;

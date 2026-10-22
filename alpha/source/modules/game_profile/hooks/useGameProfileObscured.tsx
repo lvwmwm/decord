@@ -1,10 +1,10 @@
-// Module ID: 8566
-// Function ID: 8567
+// Module ID: 8567
+// Function ID: 8568
 // Name: useGameProfileObscured
 // Dependencies: [1392, 5598, 558, 576, 504, 2]
 // Exports: isGameProfileObscured
 
-// Module 8566 (useGameProfileObscured)
+// Module 8567 (useGameProfileObscured)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import utils from "utils" /* 5598 */;

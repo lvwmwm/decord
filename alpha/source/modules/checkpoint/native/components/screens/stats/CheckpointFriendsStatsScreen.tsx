@@ -1,9 +1,9 @@
-// Module ID: 12932
-// Function ID: 12933
+// Module ID: 12951
+// Function ID: 12952
 // Name: CheckpointFriendsStatsScreen
-// Dependencies: [5, 32, 19, 17, 4970, 1392, 12875, 6002, 21, 1385, 4969, 587, 1417, 558, 576, 504, 12933, 12934, 1499, 5018, 6349, 5097, 12893, 1128, 3088, 3056, 12895, 5652, 8527, 12902, 11591, 12935, 12876, 5648, 1202, 10416, 7262, 12806, 5666, 2]
+// Dependencies: [5, 32, 19, 17, 4970, 1392, 12893, 6001, 21, 1385, 4969, 587, 1417, 558, 576, 504, 12952, 12953, 1499, 5018, 6348, 5097, 12911, 1128, 3088, 3056, 12913, 5652, 12926, 8528, 12919, 11602, 12954, 12894, 5648, 1202, 10423, 7263, 12825, 5666, 2]
 
-// Module 12932 (CheckpointFriendsStatsScreen)
+// Module 12951 (CheckpointFriendsStatsScreen)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,24 +15,25 @@ import _modDef3088 from "module_3088" /* 3088 */;
 import UserUtils from "UserUtils" /* 5018 */;
 import CheckpointFriendsRive2 from "CheckpointFriendsRive" /* 5097 */;
 import FriendsIcon from "FriendsIcon" /* 5652 */;
-import CheckpointNavigation from "CheckpointNavigation" /* 6349 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7262 */;
-import ChatIcon from "ChatIcon" /* 8527 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10416 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 11591 */;
-import CheckpointTextDefault from "CheckpointText" /* 12893 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 12895 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 12902 */;
-import useFriendsAnimationState from "useFriendsAnimationState" /* 12933 */;
-import useSidekickLeave from "useSidekickLeave" /* 12934 */;
+import CheckpointNavigation from "CheckpointNavigation" /* 6348 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7263 */;
+import ChatIcon from "ChatIcon" /* 8528 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10423 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 11602 */;
+import CheckpointTextDefault from "CheckpointText" /* 12911 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12913 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 12919 */;
+import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 12926 */;
+import useFriendsAnimationState from "useFriendsAnimationState" /* 12952 */;
+import useSidekickLeave from "useSidekickLeave" /* 12953 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
 import UserStore from "UserStore" /* 1392 */;
-import CheckpointStore from "CheckpointStore" /* 12875 */;
-import CheckpointConstants from "CheckpointConstants" /* 6002 */;
+import CheckpointStore from "CheckpointStore" /* 12893 */;
+import CheckpointConstants from "CheckpointConstants" /* 6001 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1385 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -118,7 +119,7 @@ function SidekickMessageInput(user) {
                 c1 = 3;
                 c4 = 1;
                 const obj5 = { value: obj2.sendSidekickMessage(importDefault, id.id), done: false };
-                obj2 = tmp(closure_2[32]);
+                obj2 = tmp(closure_2[33]);
                 return obj5;
               }
             }
@@ -129,8 +130,8 @@ function SidekickMessageInput(user) {
           } else {
             if (2 === c1) {
               c3 = 1;
-              const presentError = tmp(closure_2[33]).presentError;
-              const tmp16 = tmp(closure_2[33]);
+              const presentError = tmp(closure_2[34]).presentError;
+              const tmp16 = tmp(closure_2[34]);
               const intl = tmp(closure_2[23]).intl;
               presentError(intl.string(tmp(closure_2[23]).t.fEptJP));
             } else if (arg0 === 1) {
@@ -176,7 +177,7 @@ function SidekickMessageInput(user) {
   [tmp7, c4] = _slicedToArray(react.useState(false), 2);
   let tmp10 = null != value;
   const tmp6 = _slicedToArray(react.useState(false), 2);
-  const tmp9 = value(12935)(user.id);
+  const tmp9 = value(12954)(user.id);
   if (tmp10) {
     tmp10 = value.length > 0;
   }
@@ -220,7 +221,7 @@ function SidekickMessageInput(user) {
         },
       accessibilityRole: "button",
       accessibilityLabel: intl2.string(tmp15(1128).t.Ve9Ge6),
-      children: tmp14(tmp15(12806).GiftIcon, obj6)
+      children: tmp14(tmp15(12825).GiftIcon, obj6)
     };
     intl2 = tmp15(1128).intl;
     obj6 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
@@ -640,7 +641,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointFr
                                   tmp76 = cResult[51];
                                 }
                                 if (cResult[52] !== route) {
-                                  let tmp79 = route === tmp(6349).CheckpointRoute.SQUAD;
+                                  let tmp79 = route === tmp(6348).CheckpointRoute.SQUAD;
                                   if (tmp79) {
                                     const obj4 = { title: obj20.string(_modDef3056.OzY5Ns), description: intl.string(_modDef3088.EqdLDd) };
                                     class R {
@@ -1073,8 +1074,8 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
       tmp18 = cResult[8];
     }
     if (cResult[9] !== tmp18) {
-      const obj4 = { variant: "display-lg", children: tmp18 };
-      const tmp23 = map1(CheckpointTextDefault, obj4);
+      const obj4 = { children: tmp18 };
+      const tmp23 = map1(CheckpointDisplayTextDefault, obj4);
       cResult[9] = tmp18;
       cResult[10] = tmp23;
       tmp20 = tmp23;
@@ -1152,8 +1153,8 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
   stringResult = intl.string(_modDef3056.ZQakPR);
   items[1] = map1(tmp2, obj5);
   items1 = [syncedClientThemes(metroImportDefault, obj3), ];
-  const obj6 = { variant: "display-lg", children: title.toLocaleUpperCase() };
-  const tmp3 = CheckpointTextDefault;
+  const obj6 = { children: title.toLocaleUpperCase() };
+  const tmp3 = CheckpointDisplayTextDefault;
   items1[1] = map1(tmp3, obj6);
   items2 = [syncedClientThemes(metroImportDefault, obj2), map1(CheckpointTextDefault, { variant: "heading-lg/medium", children: description })];
   return syncedClientThemes(metroImportDefault, obj);

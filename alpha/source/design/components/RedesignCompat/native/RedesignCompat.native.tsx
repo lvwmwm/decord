@@ -1,9 +1,9 @@
-// Module ID: 6972
-// Function ID: 6973
+// Module ID: 6971
+// Function ID: 6972
 // Name: RedesignCompat
 // Dependencies: [19, 21, 558, 576, 2]
 
-// Module 6972 (RedesignCompat)
+// Module 6971 (RedesignCompat)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;

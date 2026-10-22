@@ -1,21 +1,21 @@
-// Module ID: 17018
-// Function ID: 17019
+// Module ID: 17040
+// Function ID: 17041
 // Name: BuildOverrideActiveSetting
-// Dependencies: [19, 10992, 21, 15765, 558, 576, 12644, 504, 16054, 5964, 17016, 1128, 2145, 5230, 11172, 11729, 2]
+// Dependencies: [19, 11000, 21, 15779, 558, 576, 12656, 504, 16072, 5963, 17038, 1128, 2145, 5230, 11181, 11740, 2]
 
-// Module 17018 (BuildOverrideActiveSetting)
+// Module 17040 (BuildOverrideActiveSetting)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import _modDef2145 from "module_2145" /* 2145 */;
-import RefreshIcon from "RefreshIcon" /* 11729 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12644 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 15765 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16054 */;
+import RefreshIcon from "RefreshIcon" /* 11740 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12656 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 15779 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16072 */;
 import react from "react" /* 19 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 10992 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11000 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11172 */;
+import SettingBuilders from "SettingBuilders" /* 11181 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -88,9 +88,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBuildOver
   }
   let tmp8Result;
   if (null != tmp4) {
-    const Stack = tmp(5964).Stack;
+    const Stack = tmp(5963).Stack;
     const obj3 = { label: "" + intl.string(_modDef2145.d11XdP) + " ", value: tmp4.id };
-    const DevToolsContentSubLabel = tmp(17016).DevToolsContentSubLabel;
+    const DevToolsContentSubLabel = tmp(17038).DevToolsContentSubLabel;
     intl = tmp(1128).intl;
     const _HermesInternal = HermesInternal;
     const items = [React3(DevToolsContentSubLabel, obj3), , ];
@@ -125,9 +125,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBuildOver
   const staffOrDeveloperSettingPredicate = obj.useStaffOrDeveloperSettingPredicate();
   let tmp6Result;
   if (null != tmp) {
-    const Stack = tmp2(5964).Stack;
+    const Stack = tmp2(5963).Stack;
     const obj2 = { label: "" + intl.string(_modDef2145.d11XdP) + " ", value: tmp.id };
-    const DevToolsContentSubLabel = tmp2(17016).DevToolsContentSubLabel;
+    const DevToolsContentSubLabel = tmp2(17038).DevToolsContentSubLabel;
     intl = tmp2(1128).intl;
     const _HermesInternal = HermesInternal;
     const items = [React3(DevToolsContentSubLabel, obj2), , ];

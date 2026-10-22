@@ -1,9 +1,9 @@
-// Module ID: 6887
-// Function ID: 6888
+// Module ID: 6886
+// Function ID: 6887
 // Name: FormCheckbox
-// Dependencies: [19, 21, 4969, 587, 5038, 5232, 558, 576, 4983, 6888, 5233, 5234, 2]
+// Dependencies: [19, 21, 4969, 587, 5038, 5232, 558, 576, 4983, 6887, 5233, 5234, 2]
 
-// Module 6887 (FormCheckbox)
+// Module 6886 (FormCheckbox)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,7 +11,7 @@ import react3 from "react" /* 4983 */;
 import IconDefault from "Icon" /* 5232 */;
 import spring from "spring" /* 5233 */;
 import springPresets from "springPresets" /* 5234 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6888 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6887 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;

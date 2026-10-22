@@ -1,14 +1,14 @@
-// Module ID: 17987
-// Function ID: 17988
+// Module ID: 18009
+// Function ID: 18010
 // Name: Separators
-// Dependencies: [19, 17, 9684, 21, 4969, 558, 576, 2]
+// Dependencies: [19, 17, 9691, 21, 4969, 558, 576, 2]
 
-// Module 17987 (Separators)
+// Module 18009 (Separators)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import SearchConstants from "SearchConstants" /* 9684 */;
+import SearchConstants from "SearchConstants" /* 9691 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,11 +1,11 @@
-// Module ID: 7538
-// Function ID: 7539
+// Module ID: 7539
+// Function ID: 7540
 // Name: useCountdown
-// Dependencies: [32, 19, 558, 576, 4794, 7539, 2]
+// Dependencies: [32, 19, 558, 576, 4794, 7540, 2]
 
-// Module 7538 (useCountdown)
+// Module 7539 (useCountdown)
 import DateUtils from "DateUtils" /* 4794 */;
-import useIntervalDefault from "useInterval" /* 7539 */;
+import useIntervalDefault from "useInterval" /* 7540 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

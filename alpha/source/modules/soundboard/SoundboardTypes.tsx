@@ -1,10 +1,10 @@
-// Module ID: 7429
-// Function ID: 7430
+// Module ID: 7430
+// Function ID: 7431
 // Name: SoundboardTypes
 // Dependencies: [2]
 // Exports: soundboardSoundFromAPI, soundboardSoundToAPI
 
-// Module 7429 (SoundboardTypes)
+// Module 7430 (SoundboardTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/soundboard/SoundboardTypes.tsx");

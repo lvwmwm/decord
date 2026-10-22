@@ -1,9 +1,9 @@
-// Module ID: 18550
-// Function ID: 18551
+// Module ID: 18572
+// Function ID: 18573
 // Name: VoicePanelController
-// Dependencies: [32, 19, 17, 4970, 4820, 6758, 8754, 11460, 11318, 4821, 2014, 5700, 4872, 6790, 10865, 10863, 1087, 2026, 5595, 5618, 10866, 21, 558, 576, 18551, 5038, 9946, 1104, 504, 5649, 1128, 9142, 14265, 18552, 5838, 11340, 18404, 1499, 1633, 18390, 10873, 10867, 10869, 12, 1281, 1123, 1274, 10882, 12469, 6455, 1267, 8788, 6766, 18348, 5023, 18482, 5696, 5145, 5697, 7119, 18456, 18483, 4890, 18553, 18554, 18558, 18353, 18389, 5162, 10864, 2]
+// Dependencies: [32, 19, 17, 4970, 4820, 6757, 8761, 11471, 11327, 4821, 2014, 5700, 4872, 6789, 10873, 10871, 1087, 2026, 5595, 5618, 10874, 21, 558, 576, 18573, 5038, 9953, 1104, 504, 5649, 1128, 9149, 14279, 18574, 5837, 11349, 18426, 1499, 1633, 18412, 10881, 10875, 10877, 12, 1281, 1123, 1274, 10890, 12479, 6454, 1267, 8795, 6765, 18370, 5023, 18504, 5696, 5145, 5697, 7118, 18478, 18505, 4890, 18575, 18576, 18580, 18375, 18411, 5162, 10872, 2]
 
-// Module 18550 (VoicePanelController)
+// Module 18572 (VoicePanelController)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import DurationsDefault from "Durations" /* 1104 */;
@@ -21,37 +21,37 @@ import CallConstants from "CallConstants" /* 5618 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5649 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5696 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5697 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5838 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6766 */;
-import DeviceOrientation from "DeviceOrientation" /* 8788 */;
-import MicrophoneSlashIcon from "MicrophoneSlashIcon" /* 9142 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9946 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 10866 */;
-import VoicePanelCardLayoutManagerDefault from "VoicePanelCardLayoutManager" /* 10867 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10869 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 11340 */;
-import VideoSlashIcon from "VideoSlashIcon" /* 14265 */;
-import applyActivityOrientationLockDefault from "applyActivityOrientationLock" /* 18348 */;
-import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 18389 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 18404 */;
-import useIsVoicePanelParticipantFocusable from "useIsVoicePanelParticipantFocusable" /* 18482 */;
-import useTransitionToConnectedActivityInVoiceDefault from "useTransitionToConnectedActivityInVoice" /* 18551 */;
-import trackActivityThermalStateNoticeShown from "trackActivityThermalStateNoticeShown" /* 18552 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5837 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6765 */;
+import DeviceOrientation from "DeviceOrientation" /* 8795 */;
+import MicrophoneSlashIcon from "MicrophoneSlashIcon" /* 9149 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9953 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 10874 */;
+import VoicePanelCardLayoutManagerDefault from "VoicePanelCardLayoutManager" /* 10875 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10877 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 11349 */;
+import VideoSlashIcon from "VideoSlashIcon" /* 14279 */;
+import applyActivityOrientationLockDefault from "applyActivityOrientationLock" /* 18370 */;
+import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 18411 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 18426 */;
+import useIsVoicePanelParticipantFocusable from "useIsVoicePanelParticipantFocusable" /* 18504 */;
+import useTransitionToConnectedActivityInVoiceDefault from "useTransitionToConnectedActivityInVoice" /* 18573 */;
+import trackActivityThermalStateNoticeShown from "trackActivityThermalStateNoticeShown" /* 18574 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
 import EmbeddedActivitiesStore_mod from "EmbeddedActivitiesStore" /* 4820 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6758 */;
-import AppFreezeStore_mod from "AppFreezeStore" /* 8754 */;
-import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 11460 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11318 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6757 */;
+import AppFreezeStore_mod from "AppFreezeStore" /* 8761 */;
+import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 11471 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11327 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5700 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
-import VoicePanelStore from "VoicePanelStore" /* 6790 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10865 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10863 */;
+import VoicePanelStore from "VoicePanelStore" /* 6789 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10873 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10871 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -1475,7 +1475,7 @@ let closure_58 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLay
               closure_10.current.timeout = setTimeout(() => {
                 clearTimeout(ref.current.timeout);
                 let obj = windowDimensions(contentDimensions[46]);
-                obj.batchUpdates(() => { /* body not rendered: F160523 */ });
+                obj.batchUpdates(() => { /* body not rendered: F160783 */ });
               }, 60);
               return;
             }
@@ -1488,7 +1488,7 @@ let closure_58 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLay
               closure_10.current.timeout = setTimeout(() => {
                 clearTimeout(ref.current.timeout);
                 let obj = windowDimensions(contentDimensions[46]);
-                obj.batchUpdates(() => { /* body not rendered: F160523 */ });
+                obj.batchUpdates(() => { /* body not rendered: F160783 */ });
               }, 60);
               return;
             }
@@ -1503,7 +1503,7 @@ let closure_58 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLay
               closure_10.current.timeout = setTimeout(() => {
                 clearTimeout(ref.current.timeout);
                 let obj = windowDimensions(contentDimensions[46]);
-                obj.batchUpdates(() => { /* body not rendered: F160523 */ });
+                obj.batchUpdates(() => { /* body not rendered: F160783 */ });
               }, 60);
               return;
             }
@@ -1520,7 +1520,7 @@ let closure_58 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLay
               closure_10.current.timeout = setTimeout(() => {
                 clearTimeout(ref.current.timeout);
                 let obj = windowDimensions(contentDimensions[46]);
-                obj.batchUpdates(() => { /* body not rendered: F160523 */ });
+                obj.batchUpdates(() => { /* body not rendered: F160783 */ });
               }, 60);
               return;
             }
@@ -1536,7 +1536,7 @@ let closure_58 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLay
               closure_10.current.timeout = setTimeout(() => {
                 clearTimeout(ref.current.timeout);
                 let obj = windowDimensions(contentDimensions[46]);
-                obj.batchUpdates(() => { /* body not rendered: F160523 */ });
+                obj.batchUpdates(() => { /* body not rendered: F160783 */ });
               }, 60);
               return;
             }
@@ -1549,7 +1549,7 @@ let closure_58 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLay
                 closure_10.current.timeout = setTimeout(() => {
                   clearTimeout(ref.current.timeout);
                   let obj = windowDimensions(contentDimensions[46]);
-                  obj.batchUpdates(() => { /* body not rendered: F160523 */ });
+                  obj.batchUpdates(() => { /* body not rendered: F160783 */ });
                 }, 60);
                 return;
               }
@@ -2969,10 +2969,10 @@ let closure_72 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKey
     }
   };
   const obj = mode(5038);
-  fn2.__closure = { cheapWorkletArrayShallowEqual: mode(9946).cheapWorkletArrayShallowEqual, VoicePanelControlsModes, VoicePanelModes, runOnJS: mode(5038).runOnJS, dismissKeyboard: mode(5145).dismissKeyboard };
+  fn2.__closure = { cheapWorkletArrayShallowEqual: mode(9953).cheapWorkletArrayShallowEqual, VoicePanelControlsModes, VoicePanelModes, runOnJS: mode(5038).runOnJS, dismissKeyboard: mode(5145).dismissKeyboard };
   fn2.__workletHash = 9634019064864;
   fn2.__initData = __initData21;
-  ({ cheapWorkletArrayShallowEqual: mode(9946).cheapWorkletArrayShallowEqual, VoicePanelControlsModes, VoicePanelModes, runOnJS: mode(5038).runOnJS, dismissKeyboard: mode(5145).dismissKeyboard });
+  ({ cheapWorkletArrayShallowEqual: mode(9953).cheapWorkletArrayShallowEqual, VoicePanelControlsModes, VoicePanelModes, runOnJS: mode(5038).runOnJS, dismissKeyboard: mode(5145).dismissKeyboard });
   const animatedReaction = obj.useAnimatedReaction(fn, fn2);
 }) : (function useKeyboardDismissHandler(mode) {
   mode = mode.mode;
@@ -3008,10 +3008,10 @@ let closure_72 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKey
     }
   };
   const obj = mode(5038);
-  fn2.__closure = { cheapWorkletArrayShallowEqual: mode(9946).cheapWorkletArrayShallowEqual, VoicePanelControlsModes, VoicePanelModes, runOnJS: mode(5038).runOnJS, dismissKeyboard: mode(5145).dismissKeyboard };
+  fn2.__closure = { cheapWorkletArrayShallowEqual: mode(9953).cheapWorkletArrayShallowEqual, VoicePanelControlsModes, VoicePanelModes, runOnJS: mode(5038).runOnJS, dismissKeyboard: mode(5145).dismissKeyboard };
   fn2.__workletHash = 12442886667392;
   fn2.__initData = __initData23;
-  ({ cheapWorkletArrayShallowEqual: mode(9946).cheapWorkletArrayShallowEqual, VoicePanelControlsModes, VoicePanelModes, runOnJS: mode(5038).runOnJS, dismissKeyboard: mode(5145).dismissKeyboard });
+  ({ cheapWorkletArrayShallowEqual: mode(9953).cheapWorkletArrayShallowEqual, VoicePanelControlsModes, VoicePanelModes, runOnJS: mode(5038).runOnJS, dismissKeyboard: mode(5145).dismissKeyboard });
   const animatedReaction = obj.useAnimatedReaction(fn, fn2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;

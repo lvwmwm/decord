@@ -1,18 +1,18 @@
-// Module ID: 7167
-// Function ID: 7168
+// Module ID: 7166
+// Function ID: 7167
 // Name: TextAreaField
-// Dependencies: [109, 19, 17, 21, 4969, 587, 558, 576, 7009, 7002, 5125, 1128, 7168, 7015, 7012, 5220, 2]
+// Dependencies: [109, 19, 17, 21, 4969, 587, 558, 576, 7008, 7001, 5125, 1128, 7167, 7014, 7011, 5220, 2]
 
-// Module 7167 (TextAreaField)
+// Module 7166 (TextAreaField)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import native from "native" /* 5125 */;
-import useTextField from "useTextField" /* 7002 */;
-import InputFieldContainer2 from "InputFieldContainer" /* 7009 */;
-import _objectWithoutProperties2 from "_objectWithoutProperties" /* 7015 */;
-import useCharacterLimitAnnouncement2 from "useCharacterLimitAnnouncement" /* 7168 */;
+import useTextField from "useTextField" /* 7001 */;
+import InputFieldContainer2 from "InputFieldContainer" /* 7008 */;
+import _objectWithoutProperties2 from "_objectWithoutProperties" /* 7014 */;
+import useCharacterLimitAnnouncement2 from "useCharacterLimitAnnouncement" /* 7167 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -96,7 +96,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextAreaFiel
     }
     const tmpResult10 = useCharacterLimitAnnouncement2;
     const characterLimitAnnouncement = tmpResult10.useCharacterLimitAnnouncement(tmp18);
-    const InputFieldContainer = tmp(7009).InputFieldContainer;
+    const InputFieldContainer = tmp(7008).InputFieldContainer;
     if (cResult[9] === focusProps) {
       let tmp20;
       if (cResult[10] === inputProps) {
@@ -175,7 +175,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextAreaFiel
             }
           }
           const obj8 = { ref: innerRef, style: tmp23, placeholderTextColor: inputStyles.placeholderText.color, multiline: true };
-          const NativeTextInput = tmp(7012).NativeTextInput;
+          const NativeTextInput = tmp(7011).NativeTextInput;
           const merged1 = Object.assign(tmp20);
           const tmp29 = hasOwnProperty(NativeTextInput, obj8);
           cResult[16] = innerRef;
@@ -246,10 +246,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextAreaFiel
   intl = tmp2(1128).intl;
   const characterLimitAnnouncement = useCharacterLimitAnnouncement(obj5);
   const obj6 = { isFocused, children: items1 };
-  const InputFieldContainer = tmp2(7009).InputFieldContainer;
+  const InputFieldContainer = tmp2(7008).InputFieldContainer;
   const merged1 = Object.assign(merged);
   const obj7 = { ref: innerRef, style: items, placeholderTextColor: inputStyles.placeholderText.color, multiline: true };
-  const NativeTextInput = tmp2(7012).NativeTextInput;
+  const NativeTextInput = tmp2(7011).NativeTextInput;
   const propsForNativeTextInput = _objectWithoutProperties2.propsForNativeTextInput;
   _objectWithoutProperties2;
   const tmp2Result6 = native;

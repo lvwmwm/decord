@@ -1,14 +1,21 @@
 // Module ID: 15274
 // Function ID: 15275
-// Dependencies: [15260]
+// Dependencies: []
 
 // Module 15274
-import _mod15260 from "module_15260" /* 15260 */;
+let closure_0 = Object.freeze({ loose: true });
+let closure_1 = Object.freeze({});
 
-
-export default (arg0, arg1, arg2) => {
-  const compare = new _mod15260(arg0, arg2).compare;
-  new _mod15260(arg0, arg2);
-  const tmp2 = new _mod15260(arg1, arg2);
-  return compare(tmp2);
+export default (arg0) => {
+  let tmp2;
+  let tmp = arg0;
+  if (tmp) {
+    if (typeof tmp !== "object") {
+      tmp = closure_0;
+    }
+    tmp2 = tmp;
+  } else {
+    tmp2 = closure_1;
+  }
+  return tmp2;
 };

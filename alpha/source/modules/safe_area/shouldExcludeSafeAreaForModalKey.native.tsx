@@ -1,14 +1,14 @@
-// Module ID: 18225
-// Function ID: 18226
+// Module ID: 18247
+// Function ID: 18248
 // Name: shouldExcludeSafeAreaForModalKey
-// Dependencies: [1087, 10715, 8822, 7851, 2]
+// Dependencies: [1087, 10722, 8829, 7852, 2]
 // Exports: shouldExcludeSafeAreaForModalKey
 
-// Module 18225 (shouldExcludeSafeAreaForModalKey)
+// Module 18247 (shouldExcludeSafeAreaForModalKey)
 import Constants2 from "Constants" /* 1087 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7851 */;
-import SharePreparingModalConstants from "SharePreparingModalConstants" /* 8822 */;
-import Constants from "Constants" /* 10715 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7852 */;
+import SharePreparingModalConstants from "SharePreparingModalConstants" /* 8829 */;
+import Constants from "Constants" /* 10722 */;
 import size from "module_2" /* 2 */;
 
 let OAUTH2_AUTHORIZE_MODAL_KEY;

@@ -1,14 +1,14 @@
-// Module ID: 10824
-// Function ID: 10825
+// Module ID: 10832
+// Function ID: 10833
 // Name: GroupPlusIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 10825, 5654, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 10833, 5654, 2]
 
-// Module 10824 (GroupPlusIcon)
+// Module 10832 (GroupPlusIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5654 */;
-import AssetRegistry from "AssetRegistry" /* 10825 */;
+import AssetRegistry from "AssetRegistry" /* 10833 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

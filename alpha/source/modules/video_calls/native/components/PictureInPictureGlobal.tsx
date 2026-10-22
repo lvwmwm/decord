@@ -1,9 +1,9 @@
-// Module ID: 18267
-// Function ID: 18268
+// Module ID: 18289
+// Function ID: 18290
 // Name: PictureInPictureGlobal
-// Dependencies: [32, 19, 17, 4820, 6758, 9752, 502, 2014, 1087, 5618, 21, 4969, 1202, 587, 558, 576, 11322, 504, 6766, 11315, 7851, 11321, 8664, 11324, 8788, 11362, 11366, 11376, 11386, 11311, 11398, 11363, 11320, 6788, 5038, 5192, 5254, 18268, 1633, 2]
+// Dependencies: [32, 19, 17, 4820, 6757, 9759, 502, 2014, 1087, 5618, 21, 4969, 1202, 587, 558, 576, 11331, 504, 6765, 11324, 7852, 11330, 8671, 11333, 8795, 11373, 11377, 11387, 11397, 11320, 11409, 11374, 11329, 6787, 5038, 5192, 5254, 18290, 1633, 2]
 
-// Module 18267 (PictureInPictureGlobal)
+// Module 18289 (PictureInPictureGlobal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -11,17 +11,17 @@ import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
 import timing from "timing" /* 5192 */;
 import NavigatorConstants from "NavigatorConstants" /* 5254 */;
 import CallConstants from "CallConstants" /* 5618 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6766 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7851 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9752 */;
-import transitionToActivityDefault from "transitionToActivity" /* 11311 */;
-import PictureInPictureDefault from "PictureInPicture" /* 11320 */;
-import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 18268 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6765 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7852 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9759 */;
+import transitionToActivityDefault from "transitionToActivity" /* 11320 */;
+import PictureInPictureDefault from "PictureInPicture" /* 11329 */;
+import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 18290 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6758 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6757 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import Fragment from "Fragment" /* 21 */;
@@ -664,11 +664,11 @@ let closure_20 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
 }) : (function PIPContentContainer(channel) {
   let tmp2;
   let tmp3;
-  const f134603 = () => constants.TOP_RIGHT;
+  const f134812 = () => constants.TOP_RIGHT;
   channel = channel.channel;
-  [tmp2, tmp3] = react.useState(f134603);
+  [tmp2, tmp3] = react.useState(f134812);
   const obj = { channel, preferredPosition: tmp2, onMove: tmp3, children: closure_15(closure_19, { channel }) };
-  _slicedToArray(react.useState(f134603), 2);
+  _slicedToArray(react.useState(f134812), 2);
   const tmp4 = PictureInPictureDefault;
   return closure_15(tmp4, obj);
 }));

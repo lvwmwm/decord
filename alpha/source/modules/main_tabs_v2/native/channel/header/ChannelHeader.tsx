@@ -1,22 +1,22 @@
-// Module ID: 13953
-// Function ID: 13954
+// Module ID: 13967
+// Function ID: 13968
 // Name: ChannelHeader
-// Dependencies: [19, 4821, 1087, 4828, 21, 1384, 5145, 11170, 1123, 5137, 558, 576, 573, 6648, 13954, 13955, 13956, 1128, 13964, 13966, 2]
+// Dependencies: [19, 4821, 1087, 4828, 21, 1384, 5145, 11179, 1123, 5137, 558, 576, 573, 6647, 13968, 13969, 13970, 1128, 13978, 13980, 2]
 // Exports: navigateToChannelDetails
 
-// Module 13953 (ChannelHeader)
+// Module 13967 (ChannelHeader)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import ChannelConstants from "ChannelConstants" /* 4828 */;
 import RootNavigationRef from "RootNavigationRef" /* 5137 */;
 import ChatInputUtils from "ChatInputUtils" /* 5145 */;
-import SwipeToMemberListUtils from "SwipeToMemberListUtils" /* 11170 */;
-import GuildRoleSubscriptionsChannelHeaderDefault from "GuildRoleSubscriptionsChannelHeader" /* 13954 */;
-import HomeChannelHeaderDefault from "HomeChannelHeader" /* 13955 */;
-import PrivateChannelHeaderDefault from "PrivateChannelHeader" /* 13956 */;
-import ForumChannelHeaderDefault from "ForumChannelHeader" /* 13964 */;
-import GuildChannelHeaderDefault from "GuildChannelHeader" /* 13966 */;
+import SwipeToMemberListUtils from "SwipeToMemberListUtils" /* 11179 */;
+import GuildRoleSubscriptionsChannelHeaderDefault from "GuildRoleSubscriptionsChannelHeader" /* 13968 */;
+import HomeChannelHeaderDefault from "HomeChannelHeader" /* 13969 */;
+import PrivateChannelHeaderDefault from "PrivateChannelHeader" /* 13970 */;
+import ForumChannelHeaderDefault from "ForumChannelHeader" /* 13978 */;
+import GuildChannelHeaderDefault from "GuildChannelHeader" /* 13980 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -56,7 +56,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelHea
   }
   const tmpResult = channelId(573);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp9);
-  const tmpResult2 = channelId(6648);
+  const tmpResult2 = channelId(6647);
   const isChannelContentGated = tmpResult2.useIsChannelContentGated(stateFromStores);
   if (channelId === StaticChannelRoute.ROLE_SUBSCRIPTIONS) {
     let tmp36;
@@ -210,7 +210,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelHea
   const items = [ChannelStore];
   const obj = channelId(573);
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId));
-  const obj3 = channelId(6648);
+  const obj3 = channelId(6647);
   const isChannelContentGated = obj3.useIsChannelContentGated(stateFromStores);
   if (channelId === StaticChannelRoute.ROLE_SUBSCRIPTIONS) {
     tmp8Result = jsx(GuildRoleSubscriptionsChannelHeaderDefault, {});

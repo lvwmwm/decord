@@ -1,303 +1,382 @@
 // Module ID: 12568
 // Function ID: 12569
-// Dependencies: [32, 41, 42, 93, 95, 96, 98, 12508, 12523, 12505, 12569, 12533, 12536, 12537, 12509, 12562, 12520, 12570, 12531, 12514, 12545, 12564]
+// Dependencies: [5, 12547, 12569, 12548, 12520, 12531, 12534, 12527, 12557, 12521, 12543]
+// Exports: addEventProcessor, captureCheckIn, captureEvent, captureException, captureMessage, captureSession, close, flush, isEnabled, isInitialized, lastEventId, setContext, setExtra, setExtras, setTag, setTags, setUser, startSession, withMonitor
 
 // Module 12568
-import _mod12505 from "module_12505" /* 12505 */;
-import _mod12514 from "module_12514" /* 12514 */;
-import _mod12520 from "module_12520" /* 12520 */;
+import _mod12521 from "module_12521" /* 12521 */;
+import _mod12527 from "module_12527" /* 12527 */;
 import _mod12531 from "module_12531" /* 12531 */;
-import _mod12533 from "module_12533" /* 12533 */;
-import _mod12536 from "module_12536" /* 12536 */;
-import _mod12537 from "module_12537" /* 12537 */;
-import _mod12545 from "module_12545" /* 12545 */;
-import BaseClient from "BaseClient" /* 12564 */;
-import eventFromMessage2 from "eventFromMessage" /* 12569 */;
-import _mod12570 from "module_12570" /* 12570 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _get from "_get" /* 96 */;
-import _inherits from "_inherits" /* 98 */;
-import DEBUG_BUILD from "module_12508" /* 12508 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12523 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12534 */;
+import _mod12543 from "module_12543" /* 12543 */;
+import _mod12547 from "module_12547" /* 12547 */;
+import _mod12548 from "module_12548" /* 12548 */;
+import _mod12569 from "module_12569" /* 12569 */;
+import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+const require = globalThis.__r;
+let _require, c1, dependencyMap;
 
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-class ServerRuntimeClient {
-  constructor(arg0) {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, ServerRuntimeClient);
-    const obj = _mod12505;
-    const result = obj.registerSpanErrorInstrumentation();
-    const items = [arg0];
-    const obj2 = _getPrototypeOf(ServerRuntimeClient);
-    const tmp3 = _getPrototypeOf;
-    const tmp4 = _possibleConstructorReturn;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj2, items, tmp3(self).constructor);
+let obj = function _flush() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let closure_0 = arg0;
+    if (c1 === 2) {
+      c1 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
     } else {
-      constructResult = obj2.apply(self, items);
+      try {
+        c1 = 2;
+        if (arg0 === 1) {
+          c1 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c1 = 3;
+          const obj3 = { value, done: true };
+          return obj3;
+        } else {
+          let flushResult;
+          const obj4 = require("module_12547");
+          const client = obj4.getClient();
+          const tmp10 = closure_0;
+          if (client) {
+            flushResult = client.flush(tmp10);
+          } else {
+            if (require("module_12548").DEBUG_BUILD) {
+              const logger = tmp11(tmp12[4]).logger;
+              logger.warn("Cannot flush events. No client defined.");
+            }
+            flushResult = Promise.resolve(false);
+          }
+          c1 = 3;
+          obj = { value: flushResult, done: true };
+          return obj;
+        }
+      } catch (tmp6) {
+        c1 = 3;
+        throw tmp6;
+      }
     }
-    return tmp4(self, constructResult);
+  });
+  return obj(...arguments);
+};
+obj = function _close() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let closure_0 = arg0;
+    if (c1 === 2) {
+      c1 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        c1 = 2;
+        if (arg0 === 1) {
+          c1 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c1 = 3;
+          const obj3 = { value, done: true };
+          return obj3;
+        } else {
+          let closeResult;
+          const obj4 = require("module_12547");
+          const client = obj4.getClient();
+          const tmp10 = closure_0;
+          if (client) {
+            closeResult = client.close(tmp10);
+          } else {
+            if (require("module_12548").DEBUG_BUILD) {
+              const logger = tmp11(tmp12[4]).logger;
+              logger.warn("Cannot flush events and disable SDK. No client defined.");
+            }
+            closeResult = Promise.resolve(false);
+          }
+          c1 = 3;
+          obj = { value: closeResult, done: true };
+          return obj;
+        }
+      } catch (tmp6) {
+        c1 = 3;
+        throw tmp6;
+      }
+    }
+  });
+  return obj(...arguments);
+};
+function endSession() {
+  obj = _mod12547;
+  const isolationScope = obj.getIsolationScope();
+  const obj3 = _mod12547;
+  const currentScope = obj3.getCurrentScope();
+  const tmp3 = currentScope.getSession() || isolationScope.getSession();
+  if (tmp3) {
+    const tmpResult = _mod12543;
+    tmpResult.closeSession(tmp3);
   }
+  const tmpResult4 = _mod12547;
+  const isolationScope1 = tmpResult4.getIsolationScope();
+  const tmpResult5 = _mod12547;
+  const currentScope1 = tmpResult5.getCurrentScope();
+  const tmpResult6 = _mod12547;
+  const client = tmpResult6.getClient();
+  const tmp5 = currentScope1.getSession() || isolationScope1.getSession();
+  const tmp6 = tmp5 && client;
+  if (tmp6) {
+    client.captureSession(tmp5);
+  }
+  isolationScope.setSession();
+  currentScope.setSession();
 }
-_inherits(ServerRuntimeClient, BaseClient.BaseClient);
-const entry = {
-  key: "eventFromException",
-  value: function eventFromException(arg0, arg1) {
-    const obj = eventFromMessage2;
-    const result = obj.eventFromUnknownInput(this, this._options.stackParser, arg0, arg1);
-    result.level = "error";
-    const obj2 = _mod12533;
-    return obj2.resolvedSyncPromise(result);
+let _asyncToGenerator = _asyncToGenerator_mod;
+
+export const addEventProcessor = function addEventProcessor(arg0) {
+  obj = _mod12547;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.addEventProcessor(arg0);
+};
+export const captureCheckIn = function captureCheckIn(arg0, arg1) {
+  obj = _mod12547;
+  const currentScope = obj.getCurrentScope();
+  const obj2 = _mod12547;
+  const client = obj2.getClient();
+  if (client) {
+    if (client.captureCheckIn) {
+      return client.captureCheckIn(arg0, arg1, currentScope);
+    } else if (_mod12548.DEBUG_BUILD) {
+      const logger2 = tmp(12520).logger;
+      logger2.warn("Cannot capture check-in. Client does not support sending check-ins.");
+    }
+  } else if (_mod12548.DEBUG_BUILD) {
+    const logger = tmp(12520).logger;
+    logger.warn("Cannot capture check-in. No client defined.");
+  }
+  const tmpResult = _mod12531;
+  return tmpResult.uuid4();
+};
+export const captureEvent = function captureEvent(arg0, arg1) {
+  obj = _mod12547;
+  const currentScope = obj.getCurrentScope();
+  return currentScope.captureEvent(arg0, arg1);
+};
+export const captureException = function captureException(arg0, arg1) {
+  obj = _mod12547;
+  const currentScope = obj.getCurrentScope();
+  const captureException = currentScope.captureException;
+  const obj2 = _mod12569;
+  return captureException(arg0, obj2.parseEventHintOrCaptureContext(arg1));
+};
+export const captureMessage = function captureMessage(arg0, captureContext) {
+  let tmp;
+  if (typeof captureContext === "string") {
+    tmp = captureContext;
+  }
+  let tmp2;
+  if (typeof captureContext !== "string") {
+    tmp2 = { captureContext };
+    const obj2 = { captureContext };
+  }
+  obj = _mod12547;
+  const currentScope = obj.getCurrentScope();
+  return currentScope.captureMessage(arg0, tmp, tmp2);
+};
+export const captureSession = function captureSession() {
+  let flag = arg0;
+  if (arg0 === undefined) {
+    flag = false;
+  }
+  if (flag) {
+    endSession();
+  } else {
+    obj = _mod12547;
+    const isolationScope = obj.getIsolationScope();
+    const obj3 = _mod12547;
+    const currentScope = obj3.getCurrentScope();
+    const obj5 = _mod12547;
+    const client = obj5.getClient();
+    const tmp3 = currentScope.getSession() || isolationScope.getSession();
+    const tmp4 = tmp3 && client;
+    if (tmp4) {
+      client.captureSession(tmp3);
+    }
   }
 };
-let items = [
-  entry,
-  {
-    key: "eventFromMessage",
-    value: function eventFromMessage(arg0) {
-      let str = arg1;
-      if (arg1 === undefined) {
-        str = "info";
-      }
-      const resolvedSyncPromise = _mod12533.resolvedSyncPromise;
-      const obj = eventFromMessage2;
-      return resolvedSyncPromise(obj.eventFromMessage(this._options.stackParser, arg0, str, arg2, this._options.attachStacktrace));
-    }
-  },
-  {
-    key: "captureException",
-    value: function captureException(arg0, arg1, arg2) {
-      const self = this;
-      if (this._options.autoSessionTracking) {
-        if (self._sessionFlusher) {
-          const obj = _mod12536;
-          const isolationScope = obj.getIsolationScope();
-          const requestSession = isolationScope.getRequestSession();
-          const tmp4 = requestSession && "ok" === requestSession.status;
-          if (tmp4) {
-            requestSession.status = "errored";
-          }
-        }
-      }
-      let fn = _get(_getPrototypeOf(ServerRuntimeClient.prototype), "captureException", self);
-      if (typeof fn === "function") {
-        fn = (items) => fn.apply(self, items);
-      }
-      const items = [arg0, arg1, arg2];
-      return fn(items);
-    }
-  },
-  {
-    key: "captureEvent",
-    value: function captureEvent(type, arg1, arg2) {
-      const self = this;
-      if (this._options.autoSessionTracking) {
-        if (self._sessionFlusher) {
-          const tmp = type.type || "exception";
-          if ("exception" === tmp) {
-            if (type.exception) {
-              if (type.exception.values) {
-                if (type.exception.values.length > 0) {
-                  const obj = _mod12536;
-                  const isolationScope = obj.getIsolationScope();
-                  const requestSession = isolationScope.getRequestSession();
-                  const tmp5 = requestSession && "ok" === requestSession.status;
-                  if (tmp5) {
-                    requestSession.status = "errored";
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      let fn = _get(_getPrototypeOf(ServerRuntimeClient.prototype), "captureEvent", self);
-      if (typeof fn === "function") {
-        fn = (items) => fn.apply(self, items);
-      }
-      const items = [type, arg1, arg2];
-      return fn(items);
-    }
-  },
-  {
-    key: "close",
-    value: function close(arg0) {
-      const self = this;
-      if (this._sessionFlusher) {
-        const _sessionFlusher = self._sessionFlusher;
-        _sessionFlusher.close();
-      }
-      let fn = _get(_getPrototypeOf(ServerRuntimeClient.prototype), "close", self);
-      if (typeof fn === "function") {
-        fn = (items) => fn.apply(self, items);
-      }
-      const items = [arg0];
-      return fn(items);
-    }
-  },
-  {
-    key: "initSessionFlusher",
-    value: function initSessionFlusher() {
-      const self = this;
-      const release = this._options.release;
-      if (release) {
-        const self2 = this;
-        const self3 = this;
-        const obj = { release, environment: tmp };
-        const sessionFlusher = new tmp2(12562).SessionFlusher(self, obj);
-        self._sessionFlusher = sessionFlusher;
-      } else if (_mod12537.DEBUG_BUILD) {
-        const logger = tmp2(12509).logger;
-        logger.warn("Cannot initialize an instance of SessionFlusher if no release is provided!");
-      }
-    }
-  },
-  {
-    key: "captureCheckIn",
-    value: function captureCheckIn(checkInId, arg1, arg2) {
-      let tmp10;
-      let tmp9;
-      if ("checkInId" in checkInId) {
-        if (checkInId.checkInId) {
-          checkInId = checkInId.checkInId;
-        }
-        const self = this;
-        if (this._isEnabled()) {
-          const options = self.getOptions();
-          const tunnel = options.tunnel;
-          const obj4 = { check_in_id: checkInId, monitor_slug: null, status: null, release: null, environment: null };
-          ({ monitorSlug: obj2.monitor_slug, status: obj2.status } = checkInId);
-          ({ release: obj2.release, environment: obj2.environment } = options);
-          if ("duration" in checkInId) {
-            obj4.duration = checkInId.duration;
-          }
-          const tmp5 = arg1;
-          if (tmp5) {
-            const obj7 = { schedule: null, checkin_margin: null, max_runtime: null, timezone: null, failure_issue_threshold: null, recovery_threshold: null };
-            ({ schedule: obj3.schedule, checkinMargin: obj3.checkin_margin, maxRuntime: obj3.max_runtime, timezone: obj3.timezone, failureIssueThreshold: obj3.failure_issue_threshold, recoveryThreshold: obj3.recovery_threshold } = arg1);
-            obj4.monitor_config = obj7;
-          }
-          [tmp9, tmp10] = self._getTraceInfoFromScope(arg2);
-          _slicedToArray(self._getTraceInfoFromScope(arg2), 2);
-          if (tmp10) {
-            const obj8 = { trace: tmp10 };
-            obj4.contexts = obj8;
-          }
-          const createCheckInEnvelope = _mod12570.createCheckInEnvelope;
-          const sdkMetadata = self.getSdkMetadata();
-          const checkInEnvelope = createCheckInEnvelope(obj4, tmp9, sdkMetadata, tunnel, self.getDsn());
-          const tmp11 = require;
-          if (_mod12537.DEBUG_BUILD) {
-            const logger2 = tmp11(12509).logger;
-            logger2.info("Sending checkin:", checkInId.monitorSlug, checkInId.status);
-          }
-          self.sendEnvelope(checkInEnvelope);
-          return checkInId;
-        } else {
-          const tmp = require;
-          if (_mod12537.DEBUG_BUILD) {
-            const logger = tmp(12509).logger;
-            logger.warn("SDK not enabled, will not capture checkin.");
-          }
-          return checkInId;
-        }
-      }
-      const obj = _mod12520;
-      checkInId = obj.uuid4();
-    }
-  },
-  {
-    key: "_captureRequestSession",
-    value: function _captureRequestSession() {
-      if (this._sessionFlusher) {
-        const _sessionFlusher = this._sessionFlusher;
-        const result = _sessionFlusher.incrementSessionStatusCount();
-      } else {
-        const tmp = require;
-        if (_mod12537.DEBUG_BUILD) {
-          const logger = tmp(12509).logger;
-          logger.warn("Discarded request mode session because autoSessionTracking option was disabled");
-        }
-      }
-    }
-  },
-  {
-    key: "_prepareEvent",
-    value: function _prepareEvent(platform, arg1, arg2, arg3) {
-      let tmp3;
-      const self = this;
-      if (this._options.platform) {
-        platform.platform = platform.platform || self._options.platform;
-      }
-      if (self._options.runtime) {
-        const obj = { runtime: tmp3.runtime || self._options.runtime };
-        const merged = Object.assign(platform.contexts);
-        tmp3 = platform.contexts || {};
-        platform.contexts = obj;
-      }
-      if (self._options.serverName) {
-        platform.server_name = platform.server_name || self._options.serverName;
-      }
-      let fn = _get(_getPrototypeOf(ServerRuntimeClient.prototype), "_prepareEvent", self);
-      if (typeof fn === "function") {
-        fn = (items) => fn.apply(self, items);
-      }
-      const items = [platform, arg1, arg2, arg3];
-      return fn(items);
-    }
-  },
-  {
-    key: "_getTraceInfoFromScope",
-    value: function _getTraceInfoFromScope(arg0) {
-      const tmp = arg0;
-      if (tmp) {
-        let spanToTraceContextResult;
-        let dynamicSamplingContextFromSpan;
-        const obj = _mod12531;
-        const _getSpanForScopeResult = obj._getSpanForScope(arg0);
-        if (_getSpanForScopeResult) {
-          const tmp2Result = _mod12514;
-          spanToTraceContextResult = tmp2Result.spanToTraceContext(_getSpanForScopeResult);
-        } else {
-          const tmp2Result3 = _mod12536;
-          spanToTraceContextResult = tmp2Result3.getTraceContextFromScope(arg0);
-        }
-        const tmp2Result4 = _mod12545;
-        if (_getSpanForScopeResult) {
-          dynamicSamplingContextFromSpan = tmp2Result4.getDynamicSamplingContextFromSpan(_getSpanForScopeResult);
-        } else {
-          const self = this;
-          dynamicSamplingContextFromSpan = tmp2Result4.getDynamicSamplingContextFromScope(this, arg0);
-        }
-        const items = [dynamicSamplingContextFromSpan, spanToTraceContextResult];
-        return items;
-      } else {
-        const items1 = [undefined, undefined];
-        return items1;
-      }
-    }
+export const close = function close(arg0) {
+  return obj(...arguments);
+};
+export { endSession };
+export const flush = function flush(arg0) {
+  return obj(...arguments);
+};
+export const isEnabled = function isEnabled() {
+  obj = _mod12547;
+  const client = obj.getClient();
+  const transport = client && false !== client.getOptions().enabled && client.getTransport();
+  return transport;
+};
+export const isInitialized = function isInitialized() {
+  obj = _mod12547;
+  return obj.getClient();
+};
+export const lastEventId = function lastEventId() {
+  obj = _mod12547;
+  const isolationScope = obj.getIsolationScope();
+  return isolationScope.lastEventId();
+};
+export const setContext = function setContext(arg0, arg1) {
+  obj = _mod12547;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setContext(arg0, arg1);
+};
+export const setExtra = function setExtra(arg0, arg1) {
+  obj = _mod12547;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setExtra(arg0, arg1);
+};
+export const setExtras = function setExtras(arg0) {
+  obj = _mod12547;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setExtras(arg0);
+};
+export const setTag = function setTag(arg0, arg1) {
+  obj = _mod12547;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setTag(arg0, arg1);
+};
+export const setTags = function setTags(arg0) {
+  obj = _mod12547;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setTags(arg0);
+};
+export const setUser = function setUser(arg0) {
+  obj = _mod12547;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setUser(arg0);
+};
+export const startSession = function startSession(arg0) {
+  let environment;
+  let release;
+  obj = _mod12547;
+  const client = obj.getClient();
+  const obj3 = _mod12547;
+  const isolationScope = obj3.getIsolationScope();
+  const obj5 = _mod12547;
+  const currentScope = obj5.getCurrentScope();
+  ({ environment, release } = client && client.getOptions() || {});
+  client && client.getOptions() || {};
+  if (undefined === environment) {
+    environment = tmp(12557).DEFAULT_ENVIRONMENT;
   }
-];
-const ServerRuntimeClient_export = _createClass(ServerRuntimeClient, items);
-
-export { ServerRuntimeClient_export as ServerRuntimeClient };
+  const userAgent = (_mod12521.GLOBAL_OBJ.navigator || {}).userAgent;
+  _mod12521.GLOBAL_OBJ.navigator || {};
+  const obj2 = { release, environment, user: currentScope.getUser() || isolationScope.getUser() };
+  const makeSession = _mod12543.makeSession;
+  _mod12543;
+  let tmp7 = userAgent;
+  currentScope.getUser() || isolationScope.getUser();
+  if (tmp7) {
+    tmp7 = { userAgent };
+    const obj4 = { userAgent };
+  }
+  const merged = Object.assign(tmp7);
+  const merged1 = Object.assign(arg0);
+  const session = makeSession(obj2);
+  const session1 = isolationScope.getSession();
+  const tmp12 = session1 && "ok" === session1.status;
+  if (tmp12) {
+    const tmpResult2 = _mod12543;
+    tmpResult2.updateSession(session1, { status: "exited" });
+  }
+  endSession();
+  isolationScope.setSession(session);
+  currentScope.setSession(session);
+  return session;
+};
+export const withMonitor = function withMonitor(monitorSlug, arg1, arg2) {
+  let closure_1;
+  _require = monitorSlug;
+  dependencyMap = arg1;
+  function finishCheckIn(status) {
+    let obj2;
+    obj = { monitorSlug, status, checkInId: _asyncToGenerator, duration: obj2.timestampInSeconds() - closure_3 };
+    obj2 = _browserPerformanceTimeOriginMode;
+    const obj3 = _mod12547;
+    const currentScope = obj3.getCurrentScope();
+    const obj4 = _mod12547;
+    const client = obj4.getClient();
+    if (client) {
+      if (client.captureCheckIn) {
+        _asyncToGenerator = client.captureCheckIn(obj, undefined, currentScope);
+      } else if (_mod12548.DEBUG_BUILD) {
+        const logger2 = tmp(12520).logger;
+        logger2.warn("Cannot capture check-in. Client does not support sending check-ins.");
+      }
+    } else if (_mod12548.DEBUG_BUILD) {
+      const logger = tmp(12520).logger;
+      logger.warn("Cannot capture check-in. No client defined.");
+    }
+    const tmpResult = _mod12531;
+    tmpResult.uuid4();
+  }
+  obj = { monitorSlug, status: "in_progress" };
+  const tmp = _require;
+  let tmp2 = dependencyMap;
+  let obj2 = require("module_12547");
+  let currentScope = obj2.getCurrentScope();
+  let obj3 = require("module_12547");
+  let client = obj3.getClient();
+  if (client) {
+    let captureCheckInResult;
+    if (client.captureCheckIn) {
+      captureCheckInResult = client.captureCheckIn(obj, arg2, currentScope);
+    } else if (tmp(12548).DEBUG_BUILD) {
+      let logger2 = tmp(12520).logger;
+      logger2.warn("Cannot capture check-in. Client does not support sending check-ins.");
+    }
+    _asyncToGenerator = captureCheckInResult;
+    let tmpResult = tmp(12534);
+    let closure_3 = tmpResult.timestampInSeconds();
+    const tmpResult3 = tmp(12547);
+    return tmpResult3.withIsolationScope(() => {
+      try {
+        const tmp2 = closure_1();
+        obj = _mod12527;
+        if (obj.isThenable(tmp2)) {
+          const resolved = Promise.resolve(tmp2);
+          resolved.then(() => {
+            finishCheckIn("ok");
+          }, (arg0) => {
+            finishCheckIn("error");
+            throw arg0;
+          });
+        } else {
+          finishCheckIn("ok");
+        }
+        return tmp2;
+      } catch (tmp11) {
+        finishCheckIn("error");
+        throw tmp11;
+      }
+    });
+  } else if (tmp(12548).DEBUG_BUILD) {
+    let logger = tmp(12520).logger;
+    logger.warn("Cannot capture check-in. No client defined.");
+  }
+  const tmpResult4 = tmp(12531);
+  captureCheckInResult = tmpResult4.uuid4();
+};

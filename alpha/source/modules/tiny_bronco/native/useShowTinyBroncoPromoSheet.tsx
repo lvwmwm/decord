@@ -1,13 +1,13 @@
-// Module ID: 15928
-// Function ID: 15929
+// Module ID: 15946
+// Function ID: 15947
 // Name: useShowTinyBroncoPromoSheet
-// Dependencies: [19, 558, 15927, 576, 4805, 15929, 2]
+// Dependencies: [19, 558, 15945, 576, 4805, 15947, 2]
 // Exports: useIsTinyBroncoEligible
 
-// Module 15928 (useShowTinyBroncoPromoSheet)
+// Module 15946 (useShowTinyBroncoPromoSheet)
 import dismissible_content from "dismissible_content" /* 4805 */;
-import TinyBroncoNoticeVisibility from "TinyBroncoNoticeVisibility" /* 15927 */;
-import openTinyBroncoPromoSheetDefault from "openTinyBroncoPromoSheet" /* 15929 */;
+import TinyBroncoNoticeVisibility from "TinyBroncoNoticeVisibility" /* 15945 */;
+import openTinyBroncoPromoSheetDefault from "openTinyBroncoPromoSheet" /* 15947 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

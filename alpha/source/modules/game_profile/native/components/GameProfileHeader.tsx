@@ -1,20 +1,20 @@
-// Module ID: 9271
-// Function ID: 9272
+// Module ID: 9278
+// Function ID: 9279
 // Name: GameProfileHeader
-// Dependencies: [19, 17, 9269, 21, 4969, 587, 558, 576, 5038, 9272, 9273, 5655, 5244, 9274, 9276, 5220, 9278, 2]
+// Dependencies: [19, 17, 9276, 21, 4969, 587, 558, 576, 5038, 9279, 9280, 5655, 5244, 9281, 9283, 5220, 9285, 2]
 
-// Module 9271 (GameProfileHeader)
+// Module 9278 (GameProfileHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
 import LinearGradientDefault from "LinearGradient" /* 5244 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import useGameProfileHeroBackgroundURLDefault from "useGameProfileHeroBackgroundURL" /* 9273 */;
-import GameCoverArtDefault from "GameCoverArt" /* 9274 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9278 */;
+import useGameProfileHeroBackgroundURLDefault from "useGameProfileHeroBackgroundURL" /* 9280 */;
+import GameCoverArtDefault from "GameCoverArt" /* 9281 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9285 */;
 import react from "react" /* 19 */;
-import GameProfileConstants from "GameProfileConstants" /* 9269 */;
+import GameProfileConstants from "GameProfileConstants" /* 9276 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -35,7 +35,7 @@ let rect;
 let size;
 let size1;
 let tmp;
-const SKUUtils = tmp(9272);
+const SKUUtils = tmp(9279);
 let View = react_native.View;
 ({ DISCORD_APP_GAME_ID: hasOwnProperty, MOBILE_GAME_PROFILE_MAX_WIDTH } = GameProfileConstants);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -227,7 +227,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
   const tmp2Result = ReanimatedRexport;
   const animatedStyle = tmp2Result.useAnimatedStyle(fn);
   const name = game.name;
-  const mapped = genres.map(tmp2(9272).getGenreText);
+  const mapped = genres.map(tmp2(9279).getGenreText);
   const joined = mapped.join(", ");
   const l30Rank = game.l30Rank;
   const tmp7 = useGameProfileHeroBackgroundURLDefault(game, 1024);
@@ -263,7 +263,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
   const obj10 = { style: tmp.titleContainer, children: items6 };
   if (tmp12Result) {
     const obj11 = { rank: l30Rank };
-    tmp12Result = tmp12(tmp6(9276), obj11);
+    tmp12Result = tmp12(tmp6(9283), obj11);
   }
   items6 = [tmp12Result, , ];
   const obj13 = { variant: "heading-xxl/semibold", color: "text-overlay-light", lineClamp: 2, style: items7, children: name };

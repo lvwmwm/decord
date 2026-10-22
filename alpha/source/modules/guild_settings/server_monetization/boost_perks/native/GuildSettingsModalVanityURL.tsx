@@ -1,25 +1,25 @@
-// Module ID: 19042
-// Function ID: 19043
+// Module ID: 19065
+// Function ID: 19066
 // Name: GuildSettingsModalVanityURL
-// Dependencies: [19, 17, 19043, 4843, 8975, 1087, 21, 4969, 587, 6910, 7469, 1128, 19044, 9030, 5220, 18883, 6994, 5655, 19045, 558, 576, 1505, 504, 5578, 2]
+// Dependencies: [19, 17, 19066, 4843, 8982, 1087, 21, 4969, 587, 6909, 7470, 1128, 19067, 9037, 5220, 18906, 6993, 5655, 19068, 558, 576, 1505, 504, 5578, 2]
 
-// Module 19042 (GuildSettingsModalVanityURL)
+// Module 19065 (GuildSettingsModalVanityURL)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl7 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 6994 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7469 */;
-import getInviteURLDefault from "getInviteURL" /* 9030 */;
-import GuildSettingsVanityURLUtils from "GuildSettingsVanityURLUtils" /* 18883 */;
-import ChangeVanityURLActionCreatorsDefault from "ChangeVanityURLActionCreators" /* 19044 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19045 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 6993 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7470 */;
+import getInviteURLDefault from "getInviteURL" /* 9037 */;
+import GuildSettingsVanityURLUtils from "GuildSettingsVanityURLUtils" /* 18906 */;
+import ChangeVanityURLActionCreatorsDefault from "ChangeVanityURLActionCreators" /* 19067 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19068 */;
 import react from "react" /* 19 */;
-import ChangeVanityURLModalStore from "ChangeVanityURLModalStore" /* 19043 */;
+import ChangeVanityURLModalStore from "ChangeVanityURLModalStore" /* 19066 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8975 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8982 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -107,7 +107,7 @@ class GuildSettingsModalVanityURL extends PureComponent {
       if (submitting) {
         fn = () => null;
       } else if (isEditing) {
-        let obj = self(6910);
+        let obj = self(6909);
         fn = obj.getHeaderConditionalBackButton(this.handleCancel);
       }
       const obj2 = { headerLeft: fn, headerRight: fn2 };

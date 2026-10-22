@@ -1,18 +1,18 @@
-// Module ID: 13593
-// Function ID: 13594
+// Module ID: 13607
+// Function ID: 13608
 // Name: HubEmailConnectionStudentPrompt
-// Dependencies: [19, 17, 13583, 1087, 21, 4969, 6637, 587, 558, 576, 1505, 1267, 1128, 1202, 5655, 13594, 7221, 13595, 13592, 2]
+// Dependencies: [19, 17, 13597, 1087, 21, 4969, 6636, 587, 558, 576, 1505, 1267, 1128, 1202, 5655, 13608, 7222, 13609, 13606, 2]
 
-// Module 13593 (HubEmailConnectionStudentPrompt)
+// Module 13607 (HubEmailConnectionStudentPrompt)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import HubConstants from "HubConstants" /* 13583 */;
+import HubConstants from "HubConstants" /* 13597 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
-import TextStyles from "TextStyles" /* 6637 */;
+import TextStyles from "TextStyles" /* 6636 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -204,7 +204,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
   dependencyMap = obj.useNavigation();
   let obj2 = { children: closure_7(View, obj3) };
   obj3 = { style: tmp.container, children: items };
-  const HubEmailConnectionScreen = onClose(13592).HubEmailConnectionScreen;
+  const HubEmailConnectionScreen = onClose(13606).HubEmailConnectionScreen;
   const obj4 = { style: tmp.header, children: intl.string(onClose(1128).t["+/Pv0h"]) };
   const LegacyText = onClose(1202).LegacyText;
   intl = onClose(1128).intl;
@@ -212,7 +212,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
   const obj5 = {
     DEPRECATED_style: tmp.row,
     leading: closure_6(tmp3, obj6),
-    trailing: invite(7221).Arrow,
+    trailing: invite(7222).Arrow,
     label: intl2.string(onClose(1128).t["a7a/D+"]),
     subLabel: intl3.string(onClose(1128).t.Gsegk8),
     onPress: function onContinue() {
@@ -222,15 +222,15 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
       closure_2.push(HubEmailConnectionSteps.VERIFY_EMAIL, obj2);
     }
   };
-  obj6 = { source: invite(13594) };
-  const tmp2 = invite(7221);
+  obj6 = { source: invite(13608) };
+  const tmp2 = invite(7222);
   tmp3 = invite(5655);
   intl2 = onClose(1128).intl;
   intl3 = onClose(1128).intl;
   items[1] = closure_6(tmp2, obj5);
-  const obj7 = { DEPRECATED_style: tmp.row, leading: closure_6(tmp5, obj8), trailing: invite(7221).Arrow, label: intl4.string(onClose(1128).t.GLG9n4), onPress: onClose };
-  obj8 = { source: invite(13595) };
-  const tmp4 = invite(7221);
+  const obj7 = { DEPRECATED_style: tmp.row, leading: closure_6(tmp5, obj8), trailing: invite(7222).Arrow, label: intl4.string(onClose(1128).t.GLG9n4), onPress: onClose };
+  obj8 = { source: invite(13609) };
+  const tmp4 = invite(7222);
   tmp5 = invite(5655);
   intl4 = onClose(1128).intl;
   items[2] = closure_6(tmp4, obj7);

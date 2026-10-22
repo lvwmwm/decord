@@ -1,9 +1,9 @@
-// Module ID: 19038
-// Function ID: 19039
+// Module ID: 19061
+// Function ID: 19062
 // Name: SelectConnectionActionSheet
-// Dependencies: [32, 19, 17, 21, 558, 576, 11220, 1202, 6889, 5191, 7232, 1128, 7596, 1417, 4976, 5196, 8869, 9115, 5255, 7207, 6973, 7282, 2]
+// Dependencies: [32, 19, 17, 21, 558, 576, 11229, 1202, 6888, 5191, 7233, 1128, 7597, 1417, 4976, 5196, 8876, 9122, 5255, 7206, 6972, 7283, 2]
 
-// Module 19038 (SelectConnectionActionSheet)
+// Module 19061 (SelectConnectionActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1128 */;
@@ -12,9 +12,9 @@ import AvatarUtils from "AvatarUtils" /* 1417 */;
 import shared from "shared" /* 4976 */;
 import useThemeDefault from "useTheme" /* 5191 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import TableRow2 from "TableRow" /* 6889 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7232 */;
-import useGetOrFetchApplicationBatched from "useGetOrFetchApplicationBatched" /* 11220 */;
+import TableRow2 from "TableRow" /* 6888 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7233 */;
+import useGetOrFetchApplicationBatched from "useGetOrFetchApplicationBatched" /* 11229 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -28,12 +28,12 @@ let metroImportDefault;
 let metroRequire;
 let tmp3;
 const BottomSheetModal = tmp3(5255);
-const TableRowGroup = tmp3(6973);
-const common_SafeAreaView = tmp3(7207);
-const ActionSheet2 = tmp3(7282);
-const ConnectionsHooks = tmp3(7596);
-const SegmentedControlState = tmp3(8869);
-const SegmentedControl = tmp3(9115);
+const TableRowGroup = tmp3(6972);
+const common_SafeAreaView = tmp3(7206);
+const ActionSheet2 = tmp3(7283);
+const ConnectionsHooks = tmp3(7597);
+const SegmentedControlState = tmp3(8876);
+const SegmentedControl = tmp3(9122);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -53,7 +53,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identit
     if (cResult[0] !== bot) {
       let tmp6 = null;
       if (null != bot) {
-        const obj3 = { user: bot, size: native.AvatarSizes.XSMALL, guildId: "r" };
+        const obj3 = { user: bot, size: native.AvatarSizes.XSMALL, guildId: "Array" };
         const Avatar = tmp(1202).Avatar;
         tmp6 = metroRequire(Avatar, obj3);
       }
@@ -99,9 +99,9 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identit
   } else {
     const bot = getOrFetchApplicationBatched.bot;
     let tmp6Result = null;
-    const TableRow = tmp(6889).TableRow;
+    const TableRow = tmp(6888).TableRow;
     if (null != bot) {
-      const obj2 = { user: bot, size: native.AvatarSizes.XSMALL, guildId: "r" };
+      const obj2 = { user: bot, size: native.AvatarSizes.XSMALL, guildId: "Array" };
       const Avatar = tmp(1202).Avatar;
       tmp6Result = tmp6(Avatar, obj2);
     }
@@ -200,7 +200,7 @@ tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectConnection
                   }
               };
               const TableRow = addConnection(excludedApplications[8]).TableRow;
-              obj2 = { user: application.bot, size: addConnection(excludedApplications[7]).AvatarSizes.XSMALL, guildId: "r" };
+              obj2 = { user: application.bot, size: addConnection(excludedApplications[7]).AvatarSizes.XSMALL, guildId: "Array" };
               Avatar = addConnection(excludedApplications[7]).Avatar;
               description = undefined;
               const tmp2 = closure_1_6;
@@ -538,7 +538,7 @@ tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectConnection
             }
         };
         const TableRow = TableRow2.TableRow;
-        obj2 = { user: application.bot, size: native.AvatarSizes.XSMALL, guildId: "r" };
+        obj2 = { user: application.bot, size: native.AvatarSizes.XSMALL, guildId: "Array" };
         Avatar = native.Avatar;
         description = undefined;
         const tmp2 = closure_1_6;

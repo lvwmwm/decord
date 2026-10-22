@@ -1,9 +1,9 @@
-// Module ID: 8893
-// Function ID: 8894
+// Module ID: 8900
+// Function ID: 8901
 // Name: ItemSelectorActionSheet
-// Dependencies: [19, 21, 558, 576, 5238, 587, 1633, 7277, 7232, 6970, 6971, 5255, 5251, 2]
+// Dependencies: [19, 21, 558, 576, 5238, 587, 1633, 7278, 7233, 6969, 6970, 5255, 5251, 2]
 
-// Module 8893 (ItemSelectorActionSheet)
+// Module 8900 (ItemSelectorActionSheet)
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import react from "react" /* 19 */;
@@ -160,10 +160,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ItemSelector
   BottomSheet = items(5251).BottomSheet;
   const obj2 = { title, trailing: tmp6Result };
   tmp6Result = null;
-  const BottomSheetTitleHeader = items(7232).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = items(7233).BottomSheetTitleHeader;
   if (null != onClose) {
     const obj3 = { onPress: onClose };
-    tmp6Result = tmp6(tmp(7277).ActionSheetCloseButton, obj3);
+    tmp6Result = tmp6(tmp(7278).ActionSheetCloseButton, obj3);
   }
   const obj4 = { scrollable: true, header: closure_3(BottomSheetTitleHeader, obj2), children: tmp8(BottomSheetScrollView, obj5) };
   obj5 = { contentContainerStyle: obj6, children: items1 };
@@ -171,7 +171,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ItemSelector
   BottomSheetScrollView = tmp(5255).BottomSheetScrollView;
   items1 = [body, ];
   let num = -1;
-  const TableRadioGroup = tmp(6971).TableRadioGroup;
+  const TableRadioGroup = tmp(6970).TableRadioGroup;
   tmp8 = closure_4;
   if (findIndexResult >= 0) {
     num = findIndexResult;

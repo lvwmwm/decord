@@ -1,11 +1,11 @@
-// Module ID: 18056
-// Function ID: 18057
+// Module ID: 18078
+// Function ID: 18079
 // Name: SearchFetchPendingManager
-// Dependencies: [19, 13142, 558, 576, 5585, 2]
+// Dependencies: [19, 13158, 558, 576, 5585, 2]
 
-// Module 18056 (SearchFetchPendingManager)
+// Module 18078 (SearchFetchPendingManager)
 import useInitialValueDefault from "useInitialValue" /* 5585 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13142 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13158 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

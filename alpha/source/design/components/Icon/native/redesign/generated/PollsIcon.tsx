@@ -1,14 +1,14 @@
-// Module ID: 10391
-// Function ID: 10392
+// Module ID: 10398
+// Function ID: 10399
 // Name: PollsIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 10392, 5654, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 10399, 5654, 2]
 
-// Module 10391 (PollsIcon)
+// Module 10398 (PollsIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5654 */;
-import AssetRegistry from "AssetRegistry" /* 10392 */;
+import AssetRegistry from "AssetRegistry" /* 10399 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

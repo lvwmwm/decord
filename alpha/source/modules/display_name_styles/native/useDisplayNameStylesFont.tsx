@@ -1,16 +1,16 @@
-// Module ID: 9190
-// Function ID: 9191
+// Module ID: 9197
+// Function ID: 9198
 // Name: useDisplayNameStylesFont
-// Dependencies: [1412, 558, 576, 6354, 2]
+// Dependencies: [1412, 558, 576, 6353, 2]
 
-// Module 9190 (useDisplayNameStylesFont)
+// Module 9197 (useDisplayNameStylesFont)
 import react from "react" /* 576 */;
 import DisplayNameFont from "DisplayNameFont" /* 1412 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useDisplayNameStylesEnabled = tmp(6354);
+const useDisplayNameStylesEnabled = tmp(6353);
 const DISPLAY_NAME_STYLES_FONT_FAMILY_MAP = { [DisplayNameFont.DisplayNameFont.CHERRY_BOMB]: "Sakura-Normal", [DisplayNameFont.DisplayNameFont.CHICLE]: "Jellybean-Normal", [DisplayNameFont.DisplayNameFont.MUSEO_MODERNO]: "Modern-Medium", [DisplayNameFont.DisplayNameFont.NEO_CASTEL]: "Medieval-Normal", [DisplayNameFont.DisplayNameFont.PIXELIFY]: "8Bit-Normal", [DisplayNameFont.DisplayNameFont.SINISTRE]: "Vampyre-Normal", [DisplayNameFont.DisplayNameFont.ZILLA_SLAB]: "Tempo-SemiBold", [DisplayNameFont.DisplayNameFont.PLAYPEN_SANS]: "MonkeyBars-Bold", [DisplayNameFont.DisplayNameFont.ORBITRON]: "Mainframe-Bold", [DisplayNameFont.DisplayNameFont.NEW_ROCKER]: "Headbang-Normal", [DisplayNameFont.DisplayNameFont.KALAM]: "Journal-Bold" };
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDisplayNameStylesFont(arg0) {
   let displayNameStyles;

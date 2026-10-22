@@ -1,63 +1,115 @@
 // Module ID: 10218
 // Function ID: 10219
-// Dependencies: [41, 42]
+// Dependencies: [41, 42, 93, 95, 98, 10192, 10191, 10197, 10219, 10199]
 
 // Module 10218
+import _mod10191 from "module_10191" /* 10191 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10192 */;
+import Meridiem from "Meridiem" /* 10197 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10199 */;
+import _mod10219 from "module_10219" /* 10219 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-class OverlapRemovalRefiner {
-  constructor() {
-    _classCallCheck(this, OverlapRemovalRefiner);
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
-const entry = {
-  key: "refine",
-  value: function refine(debug, arg1) {
+const regExp = new RegExp("(?:(?:\\,|\\(|\\\uFF08)\\s*)?(?:on\\s*?)?(?:(this|last|past|next)\\s*)?(" + repeatedTimeunitPattern.matchAnyPattern(_mod10191.WEEKDAY_DICTIONARY) + "|weekend|weekday)(?:\\s*(?:\\,|\\)|\\\uFF09))?(?:\\s*(this|last|past|next)\\s*week)?(?=\\W|$)", "i");
+class ENWeekdayParser {
+  constructor() {
+    let constructResult;
     const self = this;
-    if (arg1.length < 2) {
-      return arg1;
+    _classCallCheck(this, ENWeekdayParser);
+    const obj = _getPrototypeOf(ENWeekdayParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      const items = [];
-      let first = arg1[0];
-      let num = 1;
-      let num2 = 1;
-      let tmp8 = first;
-      if (1 < arg1.length) {
-        do {
-          let tmp4;
-          let tmp = arg1[num];
-          if (tmp.index >= first.index + first.text.length) {
-            let arr = items.push(first);
-            tmp4 = tmp;
-          } else {
-            first = null;
-            let closure_1 = null;
-            if (tmp.text.length > first.text.length) {
-              first = tmp;
-              closure_1 = first;
-              tmp4 = tmp;
-            } else {
-              closure_1 = tmp;
-              tmp4 = first;
-            }
-            let debugResult = debug.debug(() => {
-              console.log("" + self.constructor.name + " remove " + closure_1 + " by " + first);
-            });
-          }
-          num = num2 + 1;
-          first = tmp4;
-          tmp8 = tmp4;
-          num2 = num;
-        } while (num < arg1.length);
-      }
-      if (null != tmp8) {
-        items.push(tmp8);
-      }
-      return items;
+      constructResult = obj(...arguments);
     }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(ENWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const entry = {
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
   }
 };
-let items = [entry];
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      let sum;
+      const str = arg1[1] || arg1[3] || "";
+      const formatted = str.toLowerCase();
+      let str2 = "last";
+      if ("last" != formatted) {
+        str2 = "last";
+        if ("past" != formatted) {
+          str2 = "next";
+          if ("next" != formatted) {
+            str2 = null;
+            if ("this" == formatted) {
+              str2 = "this";
+            }
+          }
+        }
+      }
+      const str6 = arg1[2];
+      const formatted1 = str6.toLowerCase();
+      if (undefined !== _mod10191.WEEKDAY_DICTIONARY[formatted1]) {
+        sum = tmp3(10191).WEEKDAY_DICTIONARY[formatted1];
+      } else if ("weekend" == formatted1) {
+        let SATURDAY;
+        if ("last" == str2) {
+          SATURDAY = tmp3(10197).Weekday.SUNDAY;
+        } else {
+          SATURDAY = tmp3(10197).Weekday.SATURDAY;
+        }
+        sum = SATURDAY;
+      } else if ("weekday" != formatted1) {
+        return null;
+      } else {
+        let MONDAY;
+        reference = reference.reference;
+        const dateWithAdjustedTimezone = reference.getDateWithAdjustedTimezone();
+        const day = dateWithAdjustedTimezone.getDay();
+        if (day != Meridiem.Weekday.SUNDAY) {
+          if (day != Meridiem.Weekday.SATURDAY) {
+            const diff = day - 1;
+            sum = ("last" == str2 ? diff - 1 : diff + 1) % 5 + 1;
+          }
+        }
+        if ("last" == str2) {
+          MONDAY = tmp3(10197).Weekday.FRIDAY;
+        } else {
+          MONDAY = tmp3(10197).Weekday.MONDAY;
+        }
+        sum = MONDAY;
+      }
+      return _mod10219.createParsingComponentsAtWeekday(reference.reference, sum, str2);
+    }
+  }
+];
 
-export default _createClass(OverlapRemovalRefiner, items);
+export default _createClass(ENWeekdayParser, items);

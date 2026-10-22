@@ -1,9 +1,9 @@
-// Module ID: 18270
-// Function ID: 18271
+// Module ID: 18292
+// Function ID: 18293
 // Name: BurstReactionAnimationContainer
-// Dependencies: [32, 19, 17, 4818, 21, 4969, 587, 4927, 558, 576, 5198, 5199, 584, 5038, 5192, 4805, 10378, 1202, 5212, 5220, 1128, 5023, 2]
+// Dependencies: [32, 19, 17, 4818, 21, 4969, 587, 4927, 558, 576, 5198, 5199, 584, 5038, 5192, 4805, 10385, 1202, 5212, 5220, 1128, 5023, 2]
 
-// Module 18270 (BurstReactionAnimationContainer)
+// Module 18292 (BurstReactionAnimationContainer)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
@@ -252,7 +252,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstR
           return tmp(OverlayView, obj);
         }
     };
-    const tmp19 = animatedStyle(animationData(10378), obj4);
+    const tmp19 = animatedStyle(animationData(10385), obj4);
     cResult[4] = animatedStyle;
     cResult[5] = animationData;
     cResult[6] = first1;
@@ -412,7 +412,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstR
           return tmp(OverlayView, obj);
         }
     };
-    let tmp11 = animationData(10378);
+    let tmp11 = animationData(10385);
     items = [tmp6(4805).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS];
     tmp8 = closure_8(tmp11, obj3);
   }

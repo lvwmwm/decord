@@ -1,13 +1,13 @@
-// Module ID: 15077
-// Function ID: 15078
+// Module ID: 15090
+// Function ID: 15091
 // Name: useFilteredGuilds
-// Dependencies: [19, 4843, 6687, 1392, 558, 576, 504, 38, 2]
+// Dependencies: [19, 4843, 6686, 1392, 558, 576, 504, 38, 2]
 
-// Module 15077 (useFilteredGuilds)
+// Module 15090 (useFilteredGuilds)
 import _modDef38 from "module_38" /* 38 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import SortedGuildStore from "SortedGuildStore" /* 6687 */;
+import SortedGuildStore from "SortedGuildStore" /* 6686 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

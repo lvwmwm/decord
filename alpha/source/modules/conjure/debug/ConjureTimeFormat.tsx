@@ -1,10 +1,10 @@
-// Module ID: 12475
-// Function ID: 12476
+// Module ID: 12486
+// Function ID: 12487
 // Name: ConjureTimeFormat
 // Dependencies: [2]
 // Exports: formatClockTime
 
-// Module 12475 (ConjureTimeFormat)
+// Module 12486 (ConjureTimeFormat)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/debug/ConjureTimeFormat.tsx");

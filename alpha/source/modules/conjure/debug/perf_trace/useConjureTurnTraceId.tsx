@@ -1,10 +1,10 @@
-// Module ID: 12307
-// Function ID: 12308
+// Module ID: 12318
+// Function ID: 12319
 // Name: useConjureTurnTraceId
-// Dependencies: [10674, 558, 576, 12226, 10670, 504, 2]
+// Dependencies: [10681, 558, 576, 12237, 10677, 504, 2]
 
-// Module 12307 (useConjureTurnTraceId)
-import ConjureDebugStore from "ConjureDebugStore" /* 10674 */;
+// Module 12318 (useConjureTurnTraceId)
+import ConjureDebugStore from "ConjureDebugStore" /* 10681 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -88,7 +88,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     tmp6 = null;
     if ("assistant" === role.role) {
       tmp6 = null;
-      const tmpResult2 = tmp(10670);
+      const tmpResult2 = tmp(10677);
       if (tmpResult2.turnSettled(role)) {
         let turn_id = role.turn_id;
         if (turn_id == null) {

@@ -1,15 +1,15 @@
-// Module ID: 14002
-// Function ID: 14003
+// Module ID: 14016
+// Function ID: 14017
 // Name: Checkbox
-// Dependencies: [17, 21, 4969, 558, 576, 5025, 1128, 6887, 5220, 5964, 2]
+// Dependencies: [17, 21, 4969, 558, 576, 5025, 1128, 6886, 5220, 5963, 2]
 
-// Module 14002 (Checkbox)
+// Module 14016 (Checkbox)
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
 import react_native from "react-native" /* 5025 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import Stack_Stack from "Stack/Stack" /* 5964 */;
-import FormCheckbox from "FormCheckbox" /* 6887 */;
+import Stack_Stack from "Stack/Stack" /* 5963 */;
+import FormCheckbox from "FormCheckbox" /* 6886 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -243,7 +243,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkbox(onT
     const _HermesInternal2 = HermesInternal;
     str = ", " + description;
   }
-  Stack = tmp2(5964).Stack;
+  Stack = tmp2(5963).Stack;
   const items = [React3(FormCheckbox.FormCheckbox, { checked }), ];
   const obj3 = { style: tmp.textContainer, children: items2 };
   const obj4 = { style: tmp.labelContainer, children: hasOwnProperty(Text, { variant: "text-md/medium", children: items1 }) };

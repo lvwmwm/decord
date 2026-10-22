@@ -1,12 +1,12 @@
-// Module ID: 13384
-// Function ID: 13385
+// Module ID: 13398
+// Function ID: 13399
 // Name: useGuildPowerupOnShowDeactivate
-// Dependencies: [19, 21, 13385, 2002, 558, 576, 5897, 2]
+// Dependencies: [19, 21, 13399, 2002, 558, 576, 5896, 2]
 
-// Module 13384 (useGuildPowerupOnShowDeactivate)
+// Module 13398 (useGuildPowerupOnShowDeactivate)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import useAlertStore from "useAlertStore" /* 5897 */;
+import useAlertStore from "useAlertStore" /* 5896 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 const jsx = Fragment.jsx;
-let closure_4 = react.lazy(() => asyncRequire(13385, dependencyMap.paths));
+let closure_4 = react.lazy(() => asyncRequire(13399, dependencyMap.paths));
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowerupOnShowDeactivate(guildId, powerup) {
   _require = guildId;
   dependencyMap = powerup;

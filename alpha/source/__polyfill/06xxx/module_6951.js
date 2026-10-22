@@ -1,32 +1,9 @@
 // Module ID: 6951
 // Function ID: 6952
-// Dependencies: [19, 17, 21, 6952]
-// Exports: MaskedView
+// Dependencies: [6952]
 
 // Module 6951
-import react_native from "react-native" /* 17 */;
-import Fragment from "Fragment" /* 21 */;
-import _mod6952 from "module_6952" /* 6952 */;
-import react from "react" /* 19 */;
+import _modDef6952 from "module_6952" /* 6952 */;
 
-const UIManager = react_native.UIManager;
-const jsx = Fragment.jsx;
-try {
-  let closure_0 = _mod6952.default;
-} catch (err) {
-}
-let closure_2 = null != UIManager.getViewManagerConfig("RNCMaskedView");
 
-export const MaskedView = function MaskedView(children) {
-  children = children.children;
-  const merged = Object.assign(children, Object.assign({ children: 0 }));
-  let tmp2 = children;
-  if (closure_2) {
-    tmp2 = children;
-    if (closure_0) {
-      const merged1 = Object.assign(merged);
-      tmp2 = <tmp3>{children}</tmp3>;
-    }
-  }
-  return tmp2;
-};
+export default _modDef6952;

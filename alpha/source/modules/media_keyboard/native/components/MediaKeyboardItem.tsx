@@ -1,10 +1,10 @@
-// Module ID: 10403
-// Function ID: 10404
+// Module ID: 10410
+// Function ID: 10411
 // Name: MediaKeyboardItem
-// Dependencies: [19, 17, 8278, 10404, 21, 5038, 4969, 587, 4966, 558, 576, 1202, 10136, 5220, 8137, 504, 10405, 1128, 8158, 8139, 10406, 10407, 5192, 1499, 10408, 8543, 10393, 2]
+// Dependencies: [19, 17, 8279, 10411, 21, 5038, 4969, 587, 4966, 558, 576, 1202, 10143, 5220, 8138, 504, 10412, 1128, 8159, 8140, 10413, 10414, 5192, 1499, 10415, 8544, 10400, 2]
 // Exports: isAttachFilesNode, isMediaCameraNode, isSpecialMediaGridNode, isViewAllPhotosNode
 
-// Module 10403 (MediaKeyboardItem)
+// Module 10410 (MediaKeyboardItem)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
@@ -13,15 +13,15 @@ import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 5038 */;
 import timing from "timing" /* 5192 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import ImageIcon from "ImageIcon" /* 8543 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10136 */;
-import AttachmentIcon from "AttachmentIcon" /* 10393 */;
-import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10405 */;
-import CameraIcon from "CameraIcon" /* 10408 */;
+import ImageIcon from "ImageIcon" /* 8544 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10143 */;
+import AttachmentIcon from "AttachmentIcon" /* 10400 */;
+import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10412 */;
+import CameraIcon from "CameraIcon" /* 10415 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8278 */;
-import DeviceConstants from "DeviceConstants" /* 10404 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8279 */;
+import DeviceConstants from "DeviceConstants" /* 10411 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ColorUtils_mod from "ColorUtils" /* 4966 */;

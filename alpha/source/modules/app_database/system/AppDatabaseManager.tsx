@@ -1,13 +1,13 @@
-// Module ID: 7702
-// Function ID: 7703
+// Module ID: 7703
+// Function ID: 7704
 // Name: AppDatabaseManager
-// Dependencies: [32, 502, 3, 4864, 4848, 584, 7703, 2]
+// Dependencies: [32, 502, 3, 4864, 4848, 584, 7704, 2]
 
-// Module 7702 (AppDatabaseManager)
+// Module 7703 (AppDatabaseManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Dispatcher from "Dispatcher" /* 584 */;
 import DatabaseManagerDefault from "DatabaseManager" /* 4864 */;
-import actions2 from "actions" /* 7703 */;
+import actions2 from "actions" /* 7704 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;

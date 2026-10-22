@@ -1,226 +1,110 @@
 // Module ID: 10518
 // Function ID: 10519
-// Dependencies: [109, 19, 17, 21, 1658]
-// Exports: PaginationItem
+// Dependencies: [19, 1658]
+// Exports: useVisibleRanges
 
 // Module 10518
-import react_native from "react-native" /* 17 */;
-import Fragment from "Fragment" /* 21 */;
-import _mod1658 from "module_1658" /* 1658 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 
-let closure_3 = ["width", "height", "borderRadius", "backgroundColor"];
-let closure_4 = ["width", "height", "borderRadius", "backgroundColor"];
-const Pressable = react_native.Pressable;
-const jsx = Fragment.jsx;
-let closure_8 = { code: "function pnpm_PaginationItemTsx1(){const{runOnJS,handleCustomAnimation,animValue}=this.__closure;var _animValue;runOnJS(handleCustomAnimation)((_animValue=animValue)===null||_animValue===void 0?void 0:_animValue.value);}" };
-const __initData = { code: "function pnpm_PaginationItemTsx2(){const{size,defaultDotSize,dotStyle,activeDotStyle,animValue,index,count,interpolate,Extrapolation,interpolateColor,customReanimatedStyleRef}=this.__closure;var _dotStyle,_activeDotStyle,_animValue,_animValue2,_animValue3,_ref,_ref2,_customReanimatedStyl,_restStyle$transform,_customReanimatedStyl2,_customReanimatedStyl3;const{width=size||defaultDotSize,height=size||defaultDotSize,borderRadius:borderRadius,backgroundColor=\"#FFF\",...restDotStyle}=(_dotStyle=dotStyle)!==null&&_dotStyle!==void 0?_dotStyle:{};const{width:activeWidth=width,height:activeHeight=height,borderRadius:activeBorderRadius,backgroundColor:activeBackgroundColor=\"#000\",...restActiveDotStyle}=(_activeDotStyle=activeDotStyle)!==null&&_activeDotStyle!==void 0?_activeDotStyle:{};let val=Math.abs(((_animValue=animValue)===null||_animValue===void 0?void 0:_animValue.value)-index);if(index===0&&((_animValue2=animValue)===null||_animValue2===void 0?void 0:_animValue2.value)>count-1)val=Math.abs(((_animValue3=animValue)===null||_animValue3===void 0?void 0:_animValue3.value)-count);const inputRange=[0,1,2];const restStyle=(_ref=val===0?restActiveDotStyle:restDotStyle)!==null&&_ref!==void 0?_ref:{};return{width:interpolate(val,inputRange,[activeWidth,width,width],Extrapolation.CLAMP),height:interpolate(val,inputRange,[activeHeight,height,height],Extrapolation.CLAMP),borderRadius:interpolate(val,inputRange,[(_ref2=activeBorderRadius!==null&&activeBorderRadius!==void 0?activeBorderRadius:borderRadius)!==null&&_ref2!==void 0?_ref2:0,borderRadius!==null&&borderRadius!==void 0?borderRadius:0,borderRadius!==null&&borderRadius!==void 0?borderRadius:0],Extrapolation.CLAMP),backgroundColor:interpolateColor(val,inputRange,[activeBackgroundColor,backgroundColor,backgroundColor]),...restStyle,...((_customReanimatedStyl=customReanimatedStyleRef.value)!==null&&_customReanimatedStyl!==void 0?_customReanimatedStyl:{}),transform:[...((_restStyle$transform=restStyle===null||restStyle===void 0?void 0:restStyle.transform)!==null&&_restStyle$transform!==void 0?_restStyle$transform:[]),...((_customReanimatedStyl2=(_customReanimatedStyl3=customReanimatedStyleRef.value)===null||_customReanimatedStyl3===void 0?void 0:_customReanimatedStyl3.transform)!==null&&_customReanimatedStyl2!==void 0?_customReanimatedStyl2:[])]};}" };
+const useRef = react.useRef;
+let closure_3 = { code: "function pnpm_useVisibleRangesTsx1(){const{windowSize,translation,viewSize,total,loop,isArraysEqual,cachedRanges}=this.__closure;var _cachedRanges$current,_cachedRanges$current2,_cachedRanges$current3,_cachedRanges$current4;const positiveCount=Math.round(windowSize/2);const negativeCount=windowSize-positiveCount;let currentIndex=Math.round(-translation.value/viewSize);currentIndex=currentIndex<0?currentIndex%total+total:currentIndex;let newRanges;if(!loop){newRanges={negativeRange:[0+currentIndex-(windowSize-1),0+currentIndex],positiveRange:[0+currentIndex,currentIndex+(windowSize-1)]};}else{const negativeRange=[(currentIndex-negativeCount+total)%total,(currentIndex-1+total)%total];const positiveRange=[(currentIndex+total)%total,(currentIndex+positiveCount+total)%total];if(negativeRange[0]<total&&negativeRange[0]>negativeRange[1]){negativeRange[1]=total-1;positiveRange[0]=0;}if(positiveRange[0]>positiveRange[1]){negativeRange[1]=total-1;positiveRange[0]=0;}newRanges={negativeRange:negativeRange,positiveRange:positiveRange};}if(isArraysEqual((_cachedRanges$current=(_cachedRanges$current2=cachedRanges.current)===null||_cachedRanges$current2===void 0?void 0:_cachedRanges$current2.negativeRange)!==null&&_cachedRanges$current!==void 0?_cachedRanges$current:[],newRanges.negativeRange)&&isArraysEqual((_cachedRanges$current3=(_cachedRanges$current4=cachedRanges.current)===null||_cachedRanges$current4===void 0?void 0:_cachedRanges$current4.positiveRange)!==null&&_cachedRanges$current3!==void 0?_cachedRanges$current3:[],newRanges.positiveRange))return cachedRanges.current;cachedRanges.current=newRanges;return cachedRanges.current;}" };
+function isArraysEqual(arr, arg1) {
+  let closure_0 = arg1;
+  const tmp = arr.length === arg1.length && arr.every((item, index) => item === positiveRange1[index]);
+  return tmp;
+}
+isArraysEqual.__closure = {};
+isArraysEqual.__workletHash = 6222082561981;
+isArraysEqual.__initData = { code: "function isArraysEqual_Pnpm_useVisibleRangesTsx2(a,b){if(a.length!==b.length)return false;return a.every(function(value,index){return value===b[index];});}" };
 
-export const PaginationItem = (animValue) => {
-  let View;
-  let children;
-  let customReanimatedStyle;
-  let horizontal;
-  let items1;
-  let items2;
-  let obj7;
-  let onPress;
-  let str;
-  const iter = animValue.animValue;
-  const dotStyle = animValue.dotStyle;
-  const activeDotStyle = animValue.activeDotStyle;
-  const index = animValue.index;
-  const count = animValue.count;
-  size = animValue.size;
-  ({ horizontal, customReanimatedStyle } = animValue);
-  const accessibilityLabel = animValue.accessibilityLabel;
-  ({ children, onPress } = animValue);
-  let tmp = activeDotStyle;
-  let obj = iter(activeDotStyle[4]);
-  const sharedValue = obj.useSharedValue({});
-  function handleCustomAnimation(arg0) {
-    let obj;
-    const tmp = sharedValue;
-    if (customReanimatedStyle != null) {
-      obj = tmp2(arg0, index, count);
-    }
-    if (obj == null) {
-      obj = {};
-    }
-    tmp.value = obj;
+export const useVisibleRanges = function useVisibleRanges(total) {
+  let loop;
+  let windowSize;
+  total = total.total;
+  let num = 0;
+  if (undefined !== total) {
+    num = total;
   }
-  const fn = function _() {
-    let value;
-    const obj = _mod1658;
-    const runOnJSResult = obj.runOnJS(handleCustomAnimation);
-    if (iter != null) {
-      value = iter.value;
-    }
-    runOnJSResult(value);
-  };
-  const obj2 = iter(activeDotStyle[4]);
-  let obj3 = { runOnJS: iter(activeDotStyle[4]).runOnJS, handleCustomAnimation, animValue: iter };
-  fn.__closure = obj3;
-  fn.__workletHash = 10388501491479;
-  fn.__initData = handleCustomAnimation;
-  const derivedValue = obj2.useDerivedValue(fn);
-  let obj4 = iter(activeDotStyle[4]);
-  const fn2 = function k() {
-    let backgroundColor;
-    let backgroundColor2;
-    let borderRadius;
-    let borderRadius2;
-    let interpolate;
-    let items1;
+  const viewSize = total.viewSize;
+  const translation = total.translation;
+  ({ windowSize, loop } = total);
+  if (windowSize == null) {
+    windowSize = num;
+  }
+  const tmp = translation(null);
+  const ref = tmp;
+  let obj = num(viewSize[1]);
+  const fn = function s() {
     let items2;
     let items3;
-    let items4;
-    let items5;
-    let obj3;
-    let obj4;
-    let tmp12Result;
-    size = dotStyle;
-    if (dotStyle == null) {
-      size = {};
+    let obj;
+    const rounded = Math.round(windowSize / 2);
+    const diff = windowSize - rounded;
+    const rounded1 = Math.round(-translation.value / viewSize);
+    let sum = rounded1;
+    if (rounded1 < 0) {
+      sum = rounded1 % num + num;
     }
-    let width = size.width;
-    if (undefined === width) {
-      width = size || 10;
-    }
-    let height = size.height;
-    if (undefined === height) {
-      height = size || 10;
-    }
-    ({ borderRadius, backgroundColor } = size);
-    let str = "#FFF";
-    if (undefined !== backgroundColor) {
-      str = backgroundColor;
-    }
-    let obj = _objectWithoutProperties(size, closure_3);
-    let size2 = activeDotStyle;
-    const tmp3 = _objectWithoutProperties;
-    if (activeDotStyle == null) {
-      size2 = {};
-    }
-    let width2 = size2.width;
-    if (undefined === width2) {
-      width2 = width;
-    }
-    let height2 = size2.height;
-    if (undefined === height2) {
-      height2 = height;
-    }
-    ({ borderRadius: borderRadius2, backgroundColor: backgroundColor2 } = size2);
-    let str2 = "#000";
-    if (undefined !== backgroundColor2) {
-      str2 = backgroundColor2;
-    }
-    let value5;
-    const _Math = Math;
-    const tmp3Result = tmp3(size2, closure_4);
-    if (iter != null) {
-      value5 = iter.value;
-    }
-    let absResult = abs(value5 - index);
-    let tmp7 = 0 === index;
+    const tmp7 = loop;
     if (tmp7) {
-      let value6;
-      if (iter != null) {
-        value6 = iter.value;
+      const items = [(sum - diff + num) % num, (sum - 1 + num) % num];
+      const items1 = [(sum + num) % num, (sum + rounded + num) % num];
+      const tmp9 = items[0] < num && items[0] > items[1];
+      if (tmp9) {
+        items[1] = num - 1;
+        items1[0] = 0;
       }
-      tmp7 = value6 > count - 1;
-    }
-    if (tmp7) {
-      let value7;
-      const _Math2 = Math;
-      const abs2 = Math.abs;
-      if (iter != null) {
-        value7 = iter.value;
+      if (items1[0] > items1[1]) {
+        items[1] = num - 1;
+        items1[0] = 0;
       }
-      absResult = abs2(value7 - count);
+      obj = { negativeRange: items, positiveRange: items1 };
+      const obj2 = { negativeRange: items, positiveRange: items1 };
+    } else {
+      obj = { negativeRange: items2, positiveRange: items3 };
+      items2 = [sum - (windowSize - 1), sum];
+      items3 = [sum, sum + (windowSize - 1)];
     }
-    if (0 === absResult) {
-      obj = tmp3Result;
+    const current = ref.current;
+    let negativeRange;
+    if (current != null) {
+      negativeRange = current.negativeRange;
     }
-    if (obj == null) {
-      obj = {};
+    if (negativeRange == null) {
+      negativeRange = [];
     }
-    const items = [0, 1, 2];
-    const size1 = { width: obj3.interpolate(absResult, items, items1, _mod1658.Extrapolation.CLAMP), height: obj4.interpolate(absResult, items, items2, _mod1658.Extrapolation.CLAMP), borderRadius: interpolate(absResult, items, items3, _mod1658.Extrapolation.CLAMP), backgroundColor: tmp12Result.interpolateColor(absResult, items, items4), transform: items5 };
-    items1 = [width2, width, width];
-    items2 = [height2, height, height];
-    obj3 = _mod1658;
-    obj4 = _mod1658;
-    interpolate = _mod1658.interpolate;
-    _mod1658;
-    if (borderRadius2 == null) {
-      borderRadius2 = borderRadius;
+    const negativeRange1 = obj.negativeRange;
+    if (typeof isArraysEqual === "function") {
+      let tmp12 = negativeRange.length === negativeRange1.length && negativeRange.every((item, index) => item === positiveRange1[index]);
+      if (tmp12) {
+        const current2 = tmp11.current;
+        let positiveRange;
+        if (current2 != null) {
+          positiveRange = current2.positiveRange;
+        }
+        if (positiveRange == null) {
+          positiveRange = [];
+        }
+        const positiveRange1 = obj.positiveRange;
+        if (typeof isArraysEqual === "function") {
+          tmp12 = positiveRange.length === positiveRange1.length && positiveRange.every((item, index) => item === positiveRange1[index]);
+          positiveRange.length === positiveRange1.length && positiveRange.every((item, index) => item === positiveRange1[index]);
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+      }
+      if (!tmp12) {
+        ref.current = obj;
+      }
+      return ref.current;
+    } else {
+      throw new TypeError("Trying to call a non-function");
     }
-    if (borderRadius2 == null) {
-      borderRadius2 = 0;
-    }
-    items3 = [borderRadius2, , ];
-    let num2 = borderRadius;
-    if (borderRadius == null) {
-      num2 = 0;
-    }
-    items3[1] = num2;
-    if (borderRadius == null) {
-      borderRadius = 0;
-    }
-    items3[2] = borderRadius;
-    items4 = [str2, str, str];
-    tmp12Result = _mod1658;
-    const merged = Object.assign(obj);
-    let value8 = sharedValue.value;
-    const iter2 = sharedValue;
-    if (value8 == null) {
-      value8 = {};
-    }
-    const merged1 = Object.assign(value8);
-    let transform;
-    if (obj != null) {
-      transform = obj.transform;
-    }
-    if (transform == null) {
-      transform = [];
-    }
-    items5 = [...transform];
-    const value = iter2.value;
-    let transform1;
-    if (value != null) {
-      transform1 = value.transform;
-    }
-    if (transform1 == null) {
-      transform1 = [];
-    }
-    HermesBuiltin.arraySpread(items5, transform1, tmp17);
-    return size1;
   };
-  fn2.__closure = { size, defaultDotSize: 10, dotStyle, activeDotStyle, animValue: iter, index, count, interpolate: iter(activeDotStyle[4]).interpolate, Extrapolation: iter(activeDotStyle[4]).Extrapolation, interpolateColor: iter(activeDotStyle[4]).interpolateColor, customReanimatedStyleRef: sharedValue };
-  fn2.__workletHash = 8302907289230;
-  fn2.__initData = __initData;
-  let items = [iter, index, count, horizontal, dotStyle, activeDotStyle, customReanimatedStyle];
-  const obj6 = { onPress, accessibilityLabel, accessibilityRole: "button", accessibilityHint: str, accessibilityState: { selected: iter.value === index }, children: sharedValue(View, obj7) };
-  str = "";
-  ({ size, defaultDotSize: 10, dotStyle, activeDotStyle, animValue: iter, index, count, interpolate: iter(activeDotStyle[4]).interpolate, Extrapolation: iter(activeDotStyle[4]).Extrapolation, interpolateColor: iter(activeDotStyle[4]).interpolateColor, customReanimatedStyleRef: sharedValue });
-  const animatedStyle = obj4.useAnimatedStyle(fn2, items);
-  const tmp6 = customReanimatedStyle;
-  if (iter.value !== index) {
-    let tmp7 = globalThis;
-    const _HermesInternal = HermesInternal;
-    let str2 = "Go to ";
-    str = "Go to " + accessibilityLabel;
-  }
-  let str3 = "0deg";
-  View = dotStyle(tmp[4]).View;
-  if (horizontal) {
-    str3 = "90deg";
-  }
-  const obj8 = { overflow: "hidden", transform: items1 };
-  items1 = [{ rotateZ: str3 }];
-  obj7 = { style: items2, children };
-  items2 = [obj8, dotStyle, animatedStyle];
-  return sharedValue(tmp6, obj6);
+  let obj2 = { windowSize, translation, viewSize, total: num, loop, isArraysEqual: windowSize, cachedRanges: tmp };
+  fn.__closure = obj2;
+  fn.__workletHash = 627759706032;
+  fn.__initData = loop;
+  let items = [loop, num, windowSize, translation];
+  return obj.useDerivedValue(fn, items);
 };

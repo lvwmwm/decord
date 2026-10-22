@@ -1,9 +1,9 @@
-// Module ID: 10795
-// Function ID: 10796
+// Module ID: 10803
+// Function ID: 10804
 // Name: InstantInviteCode
-// Dependencies: [19, 17, 4825, 4911, 1392, 21, 4969, 587, 558, 576, 8487, 8536, 5590, 5220, 5964, 5677, 1128, 10006, 2]
+// Dependencies: [19, 17, 4825, 4911, 1392, 21, 4969, 587, 558, 576, 8488, 8537, 5590, 5220, 5963, 5677, 1128, 10013, 2]
 
-// Module 10795 (InstantInviteCode)
+// Module 10803 (InstantInviteCode)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,9 +12,9 @@ import ChannelRecord from "ChannelRecord" /* 4825 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import useChannelName from "useChannelName" /* 5590 */;
 import ClockIcon from "ClockIcon" /* 5677 */;
-import Stack_Stack from "Stack/Stack" /* 5964 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8487 */;
-import CountDownDefault from "CountDown" /* 10006 */;
+import Stack_Stack from "Stack/Stack" /* 5963 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8488 */;
+import CountDownDefault from "CountDown" /* 10013 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -51,7 +51,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInv
     const tmpResult = utils_ChannelUtils;
     let TextIcon = tmpResult.getSimpleChannelIconComponent(channel);
     if (TextIcon == null) {
-      TextIcon = tmp(8536).TextIcon;
+      TextIcon = tmp(8537).TextIcon;
     }
     cResult[0] = channel;
     cResult[1] = TextIcon;
@@ -110,7 +110,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInv
       let tmp23 = null != expiresAt;
       if (tmp23) {
         const obj3 = { direction: "horizontal", align: "center", children: items1 };
-        const Stack = tmp(5964).Stack;
+        const Stack = tmp(5963).Stack;
         items1 = [metroImportAll(ClockIcon.ClockIcon, { size: "xs", color: "icon-subtle" }), , ];
         const obj4 = { variant: "text-md/semibold", color: "text-subtle", children: intl.string(intl2.t.aTABYx) };
         const Text = tmp(5220).Text;
@@ -150,11 +150,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInv
   const obj = utils_ChannelUtils;
   let TextIcon = obj.getSimpleChannelIconComponent(channel);
   if (TextIcon == null) {
-    TextIcon = tmp2(8536).TextIcon;
+    TextIcon = tmp2(8537).TextIcon;
   }
-  const Stack = tmp2(5964).Stack;
+  const Stack = tmp2(5963).Stack;
   const obj2 = { direction: "horizontal", align: "center", children: items };
-  const Stack2 = tmp2(5964).Stack;
+  const Stack2 = tmp2(5963).Stack;
   items = [metroImportAll(TextIcon, { color: "icon-subtle", size: "xs" }), ];
   const obj3 = { variant: "text-md/semibold", color: "text-subtle", style: tmp.channel, lineClamp: 1, children: tmp2Result.computeChannelName(channel, UserStore, RelationshipStore, false) };
   const Text = tmp2(5220).Text;
@@ -164,7 +164,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInv
   let tmp4Result = null != expiresAt;
   if (tmp4Result) {
     const obj4 = { direction: "horizontal", align: "center", children: items2 };
-    const Stack3 = tmp2(5964).Stack;
+    const Stack3 = tmp2(5963).Stack;
     items2 = [metroImportAll(ClockIcon.ClockIcon, { size: "xs", color: "icon-subtle" }), , ];
     const obj5 = { variant: "text-md/semibold", color: "text-subtle", children: intl.string(intl2.t.aTABYx) };
     const Text2 = tmp2(5220).Text;
@@ -260,7 +260,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
   const obj = { style: closure_10().flex, children: closure_9(Stack, obj2) };
   const memo = react.useMemo(() => closure_5(invite.channel), items);
   obj2 = { children: items1 };
-  Stack = invite(5964).Stack;
+  Stack = invite(5963).Stack;
   items1 = [, ];
   const obj3 = { variant: "text-lg/bold", tabularNumbers: true, children: invite.code };
   items1[0] = closure_8(invite(5220).Text, obj3);

@@ -1,15 +1,15 @@
-// Module ID: 15087
-// Function ID: 15088
+// Module ID: 15100
+// Function ID: 15101
 // Name: ShareEmbed
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 6866, 5655, 5220, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 6865, 5655, 5220, 2]
 
-// Module 15087 (ShareEmbed)
+// Module 15100 (ShareEmbed)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6866 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6865 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;

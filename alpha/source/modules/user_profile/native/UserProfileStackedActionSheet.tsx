@@ -1,9 +1,9 @@
-// Module ID: 11040
-// Function ID: 11041
+// Module ID: 11049
+// Function ID: 11050
 // Name: UserProfileStackedActionSheet
-// Dependencies: [109, 19, 17, 21, 4969, 587, 558, 576, 1633, 8919, 1384, 7206, 5255, 6894, 1128, 6914, 5220, 5251, 2]
+// Dependencies: [109, 19, 17, 21, 4969, 587, 558, 576, 1633, 8926, 1384, 7205, 5255, 6893, 1128, 6913, 5220, 5251, 2]
 
-// Module 11040 (UserProfileStackedActionSheet)
+// Module 11049 (UserProfileStackedActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,8 +11,8 @@ import intl2 from "intl" /* 1128 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5251 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6914 */;
-import Form from "Form" /* 8919 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6913 */;
+import Form from "Form" /* 8926 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -134,7 +134,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
           }
         }
         const obj3 = { data: arr, style: tmp10.list, ItemSeparatorComponent: tmp12, contentContainerStyle: tmp15, renderItem: tmp16 };
-        const BottomSheetFlashList = tmp(7206).BottomSheetFlashList;
+        const BottomSheetFlashList = tmp(7205).BottomSheetFlashList;
         const merged = Object.assign(tmp5);
         const tmp21 = closure_8(BottomSheetFlashList, obj3);
         cResult[16] = arr;
@@ -189,7 +189,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
       return renderItem(obj);
     }
   };
-  const BottomSheetFlashList = data(7206).BottomSheetFlashList;
+  const BottomSheetFlashList = data(7205).BottomSheetFlashList;
   const merged1 = Object.assign(merged);
   items = [tmp2.contentContainer, , ];
   let num = 0;
@@ -418,7 +418,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
     let tmp16 = tmp12;
     if (tmp16) {
       const obj7 = { accessibilityRole: "button", accessibilityLabel: intl.string(intl2.t["13/7kX"]), onPress: tmp5, children: metroImportAll(ArrowLargeLeftIcon.ArrowLargeLeftIcon, { size: "md" }) };
-      const PressableOpacity = tmp(6894).PressableOpacity;
+      const PressableOpacity = tmp(6893).PressableOpacity;
       intl = tmp(1128).intl;
       tmp16 = metroImportAll(PressableOpacity, obj7);
     }
@@ -458,7 +458,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
   let tmp4Result = tmp4Result2;
   if (tmp4Result) {
     const obj3 = { accessibilityRole: "button", accessibilityLabel: intl.string(intl2.t["13/7kX"]), onPress: onBack, children: metroImportAll(ArrowLargeLeftIcon.ArrowLargeLeftIcon, { size: "md" }) };
-    const PressableOpacity = tmp5(6894).PressableOpacity;
+    const PressableOpacity = tmp5(6893).PressableOpacity;
     intl = tmp5(1128).intl;
     tmp4Result = tmp4(PressableOpacity, obj3);
   }

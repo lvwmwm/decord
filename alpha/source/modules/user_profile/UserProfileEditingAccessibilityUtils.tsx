@@ -1,14 +1,14 @@
-// Module ID: 15871
-// Function ID: 15872
+// Module ID: 15887
+// Function ID: 15888
 // Name: UserProfileEditingAccessibilityUtils
-// Dependencies: [1128, 15803, 10634, 2928, 7072, 2]
+// Dependencies: [1128, 15815, 10641, 2928, 7071, 2]
 // Exports: getAvatarAccessibleValue, getBannerAccessibleValue, getDisplayNameStyleAccessibleValue
 
-// Module 15871 (UserProfileEditingAccessibilityUtils)
+// Module 15887 (UserProfileEditingAccessibilityUtils)
 import intl5 from "intl" /* 1128 */;
-import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7072 */;
-import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10634 */;
-import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 15803 */;
+import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7071 */;
+import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10641 */;
+import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 15815 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/UserProfileEditingAccessibilityUtils.tsx");

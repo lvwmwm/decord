@@ -1,14 +1,14 @@
-// Module ID: 14967
-// Function ID: 14968
+// Module ID: 14980
+// Function ID: 14981
 // Name: GuildOfficialMessagesStore
-// Dependencies: [4821, 4881, 4843, 4911, 1392, 1087, 5999, 1405, 504, 584, 2]
+// Dependencies: [4821, 4881, 4843, 4911, 1392, 1087, 5998, 1405, 504, 584, 2]
 
-// Module 14967 (GuildOfficialMessagesStore)
+// Module 14980 (GuildOfficialMessagesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5999 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5998 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildMemberStore from "GuildMemberStore" /* 4881 */;
 import GuildStore from "GuildStore" /* 4843 */;
@@ -310,7 +310,7 @@ obj = {
             let tmp6 = null != tmp5;
             if (tmp6) {
               if (null == obj[guildId].messages[message.id]) {
-                const tmp24Result = tmp24(5999);
+                const tmp24Result = tmp24(5998);
                 const messageRecord = tmp24Result.createMessageRecord(message);
                 if (null != obj[guildId]) {
                   obj = {};

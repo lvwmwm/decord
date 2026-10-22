@@ -1,10 +1,10 @@
-// Module ID: 11622
-// Function ID: 11623
+// Module ID: 11633
+// Function ID: 11634
 // Name: useDeafStates
 // Dependencies: [502, 2014, 5616, 558, 576, 504, 2]
 // Exports: getDeafStates
 
-// Module 11622 (useDeafStates)
+// Module 11633 (useDeafStates)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import VoiceStateStore from "VoiceStateStore" /* 5616 */;

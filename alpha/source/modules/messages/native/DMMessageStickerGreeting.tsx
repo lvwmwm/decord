@@ -1,9 +1,9 @@
-// Module ID: 13076
-// Function ID: 13077
+// Module ID: 13092
+// Function ID: 13093
 // Name: DMMessageStickerGreeting
-// Dependencies: [5, 32, 19, 17, 6752, 5997, 1392, 21, 4969, 587, 5130, 558, 576, 5238, 4966, 5649, 13077, 7550, 1128, 1103, 504, 5018, 13078, 10125, 5038, 5192, 1202, 10124, 5244, 6894, 10140, 5220, 5230, 2]
+// Dependencies: [5, 32, 19, 17, 6751, 5996, 1392, 21, 4969, 587, 5130, 558, 576, 5238, 4966, 5649, 13093, 7551, 1128, 1103, 504, 5018, 13094, 10132, 5038, 5192, 1202, 10131, 5244, 6893, 10147, 5220, 5230, 2]
 
-// Module 13076 (DMMessageStickerGreeting)
+// Module 13092 (DMMessageStickerGreeting)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,12 +12,12 @@ import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
 import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5130 */;
 import timing from "timing" /* 5192 */;
 import useToken2 from "useToken" /* 5238 */;
-import StickersActionCreators from "StickersActionCreators" /* 10125 */;
+import StickersActionCreators from "StickersActionCreators" /* 10132 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 6752 */;
-import MessageStore from "MessageStore" /* 5997 */;
+import StickersStore from "StickersStore" /* 6751 */;
+import MessageStore from "MessageStore" /* 5996 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -465,7 +465,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMMessageSti
   }
   const intl2 = tmp(1128).intl;
   intl2.formatToPlainString(tmp(1128).t.m0zYbV, { username: name });
-  const tmpResult7 = tmp(13078);
+  const tmpResult7 = tmp(13094);
   const showConvoStarterInDM = tmpResult7.useShowConvoStarterInDM(channel);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [StickersStore];
@@ -574,7 +574,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMMessageSti
   fn3.__initData = __initData;
   const animatedStyle = tmpResult9.useAnimatedStyle(fn3);
   const tmp28 = closure_19();
-  const tmpResult10 = tmp(10124);
+  const tmpResult10 = tmp(10131);
   const shouldAnimateSticker = tmpResult10.useShouldAnimateSticker(false);
   if (showConvoStarterInDM) {
     class U {
@@ -626,7 +626,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMMessageSti
   }
   const intl2 = tmp(1128).intl;
   const formatToPlainStringResult = intl2.formatToPlainString(tmp(1128).t.m0zYbV, { username: name });
-  const tmpResult = tmp(13078);
+  const tmpResult = tmp(13094);
   showConvoStarterInDM = tmpResult.useShowConvoStarterInDM(channel);
   const items2 = [StickersStore];
   const items3 = [showConvoStarterInDM];
@@ -690,7 +690,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMMessageSti
   M.__initData = __initData2;
   const animatedStyle = tmpResult5.useAnimatedStyle(M);
   const tmp15 = closure_19();
-  const tmpResult6 = tmp(10124);
+  const tmpResult6 = tmp(10131);
   const shouldAnimateSticker = tmpResult6.useShouldAnimateSticker(false);
   let tmp18Result2 = null;
   if (showConvoStarterInDM) {
@@ -701,12 +701,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMMessageSti
     const obj8 = { style: tmp3.container, children: tmp18Result };
     if (stateFromStores) {
       const obj9 = { style: tmp3.toastContainer, accessibilityRole: "button", accessibilityLabel: intl3.string(tmp(1128).t.pJObYI), onPress: tmp12, children: items6 };
-      const PressableOpacity = tmp(6894).PressableOpacity;
+      const PressableOpacity = tmp(6893).PressableOpacity;
       intl3 = tmp(1128).intl;
       let tmp19Result = null;
       if (null != stateFromStores2) {
         const obj10 = { sticker: stateFromStores2, size: 24, animated: shouldAnimateSticker };
-        tmp19Result = tmp19(tmp6(10140), obj10);
+        tmp19Result = tmp19(tmp6(10147), obj10);
       }
       items6 = [tmp19Result, ];
       const obj11 = { style: tmp3.toastContent, variant: "text-md/bold", children: formatToPlainStringResult };
@@ -716,7 +716,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMMessageSti
       let tmp19Result2 = null;
       const tmp21 = closure_12;
       if (null != stateFromStores2) {
-        const obj12 = { style: tmp3.stickerContainer, children: closure_10(hasInputText(10140), obj13) };
+        const obj12 = { style: tmp3.stickerContainer, children: closure_10(hasInputText(10147), obj13) };
         obj13 = { sticker: stateFromStores2, size: 100, animated: shouldAnimateSticker };
         tmp19Result2 = tmp19(tmp20, obj12);
       }

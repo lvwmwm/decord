@@ -1,17 +1,17 @@
-// Module ID: 16084
-// Function ID: 16085
+// Module ID: 16102
+// Function ID: 16103
 // Name: FamilyCenterActivityPage
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 8109, 16085, 16087, 16097, 12802, 16101, 7207, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 8110, 16103, 16105, 16115, 12821, 16119, 7206, 2]
 
-// Module 16084 (FamilyCenterActivityPage)
+// Module 16102 (FamilyCenterActivityPage)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useUserLinks from "useUserLinks" /* 8109 */;
-import FamilyCenterDataConfirmationDefault from "FamilyCenterDataConfirmation" /* 12802 */;
-import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 16085 */;
-import FamilyCenterActivityBannerDefault from "FamilyCenterActivityBanner" /* 16087 */;
-import FamilyCenterFeatureRowDefault from "FamilyCenterFeatureRow" /* 16097 */;
-import FamilyCenterActivityCardDefault from "FamilyCenterActivityCard" /* 16101 */;
+import useUserLinks from "useUserLinks" /* 8110 */;
+import FamilyCenterDataConfirmationDefault from "FamilyCenterDataConfirmation" /* 12821 */;
+import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 16103 */;
+import FamilyCenterActivityBannerDefault from "FamilyCenterActivityBanner" /* 16105 */;
+import FamilyCenterFeatureRowDefault from "FamilyCenterFeatureRow" /* 16115 */;
+import FamilyCenterActivityCardDefault from "FamilyCenterActivityCard" /* 16119 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -27,7 +27,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const common_SafeAreaView = tmp(7207);
+const common_SafeAreaView = tmp(7206);
 ({ View: c3, ScrollView: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -122,7 +122,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
     items1[2] = hasOwnProperty(_false, obj5);
     tmp3Result = tmp5(metroRequire, obj4);
   } else {
-    tmp3Result = tmp3(tmp7(16101), {});
+    tmp3Result = tmp3(tmp7(16119), {});
   }
   items[1] = tmp3Result;
   obj6 = { bottom: true, children: metroImportDefault(_false, obj3) };

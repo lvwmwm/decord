@@ -1,21 +1,21 @@
-// Module ID: 9322
-// Function ID: 9323
+// Module ID: 9329
+// Function ID: 9330
 // Name: GameProfileHttpUtils
-// Dependencies: [5, 7653, 2068, 9222, 1087, 9323, 584, 6369, 1297, 504, 569, 1104, 9314, 2]
+// Dependencies: [5, 7654, 2068, 9229, 1087, 9330, 584, 6368, 1297, 504, 569, 1104, 9321, 2]
 // Exports: getGameAnnouncements, getShopCollection
 
-// Module 9322 (GameProfileHttpUtils)
+// Module 9329 (GameProfileHttpUtils)
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import StoreUtils from "StoreUtils" /* 6369 */;
-import SimilarGamesConstants from "SimilarGamesConstants" /* 9323 */;
+import StoreUtils from "StoreUtils" /* 6368 */;
+import SimilarGamesConstants from "SimilarGamesConstants" /* 9330 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StorefrontProductRecord from "StorefrontProductRecord" /* 7653 */;
+import StorefrontProductRecord from "StorefrontProductRecord" /* 7654 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
-import GameProfileStore from "GameProfileStore" /* 9222 */;
+import GameProfileStore from "GameProfileStore" /* 9229 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 

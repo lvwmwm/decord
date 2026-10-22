@@ -1,10 +1,10 @@
-// Module ID: 9198
-// Function ID: 9199
+// Module ID: 9205
+// Function ID: 9206
 // Name: GuildProfileView
-// Dependencies: [19, 17, 4843, 1087, 21, 4991, 5023, 4969, 587, 558, 576, 4835, 504, 1499, 1417, 9199, 5655, 5191, 5238, 9200, 5244, 9201, 5220, 9213, 14106, 2]
+// Dependencies: [19, 17, 4843, 1087, 21, 4991, 5023, 4969, 587, 558, 576, 4835, 504, 1499, 1417, 9206, 5655, 5191, 5238, 9207, 5244, 9208, 5220, 9220, 14120, 2]
 // Exports: getBackgroundForProfile
 
-// Module 9198 (GuildProfileView)
+// Module 9205 (GuildProfileView)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -17,11 +17,11 @@ import native from "native" /* 5023 */;
 import useThemeDefault from "useTheme" /* 5191 */;
 import useToken from "useToken" /* 5238 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 9199 */;
-import guild_profile_GuildProfileUtils from "guild_profile/GuildProfileUtils" /* 9200 */;
-import GuildProfileHeaderDefault from "GuildProfileHeader" /* 9201 */;
-import GuildProfileGamesDefault from "GuildProfileGames" /* 9213 */;
-import GuildProfileTraitsDefault from "GuildProfileTraits" /* 14106 */;
+import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 9206 */;
+import guild_profile_GuildProfileUtils from "guild_profile/GuildProfileUtils" /* 9207 */;
+import GuildProfileHeaderDefault from "GuildProfileHeader" /* 9208 */;
+import GuildProfileGamesDefault from "GuildProfileGames" /* 9220 */;
+import GuildProfileTraitsDefault from "GuildProfileTraits" /* 14120 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import Fragment from "Fragment" /* 21 */;

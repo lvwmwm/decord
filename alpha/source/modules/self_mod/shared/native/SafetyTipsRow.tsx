@@ -1,9 +1,9 @@
-// Module ID: 8074
-// Function ID: 8075
+// Module ID: 8075
+// Function ID: 8076
 // Name: SafetyTipsRow
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5220, 6889, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5220, 6888, 2]
 
-// Module 8074 (SafetyTipsRow)
+// Module 8075 (SafetyTipsRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -70,8 +70,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyTips
     cResult[6] = end;
     cResult[7] = tmp6;
     cResult[8] = tip;
-    cResult[9] = jsx(tmp(6889).TableRow, { icon: tmp6, label: tip, subLabel: description, end });
-    const tmp10 = jsx(tmp(6889).TableRow, { icon: tmp6, label: tip, subLabel: description, end });
+    cResult[9] = jsx(tmp(6888).TableRow, { icon: tmp6, label: tip, subLabel: description, end });
+    const tmp10 = jsx(tmp(6888).TableRow, { icon: tmp6, label: tip, subLabel: description, end });
   }
   const tmp7 = <tmp5 index={index} />;
   cResult[2] = tmp5;

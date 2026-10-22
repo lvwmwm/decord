@@ -1,18 +1,18 @@
-// Module ID: 18249
-// Function ID: 18250
+// Module ID: 18271
+// Function ID: 18272
 // Name: RestrictedMessagePreviewHeader
-// Dependencies: [19, 17, 13272, 21, 4969, 587, 7237, 5018, 8641, 7269, 5648, 5196, 13452, 2002, 8653, 7433, 6658, 6894, 1128, 1202, 5220, 18232, 6869, 18250, 2]
+// Dependencies: [19, 17, 13286, 21, 4969, 587, 7238, 5018, 8648, 7270, 5648, 5196, 13466, 2002, 8660, 7434, 6657, 6893, 1128, 1202, 5220, 18254, 6868, 18272, 2]
 // Exports: default
 
-// Module 18249 (RestrictedMessagePreviewHeader)
+// Module 18271 (RestrictedMessagePreviewHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
 import ToastUtils from "ToastUtils" /* 5648 */;
-import ClipboardUtils from "ClipboardUtils" /* 7269 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8641 */;
-import MessageRequestConstants from "MessageRequestConstants" /* 13272 */;
+import ClipboardUtils from "ClipboardUtils" /* 7270 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8648 */;
+import MessageRequestConstants from "MessageRequestConstants" /* 13286 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -80,7 +80,7 @@ export default function RestrictedMessagePreviewHeader(channel) {
         obj4.popWithKey(closure_1_5);
       }
     };
-    obj.openLazy(asyncRequire(13452, dependencyMap.paths), "MutualGuildsActionSheet", obj2);
+    obj.openLazy(asyncRequire(13466, dependencyMap.paths), "MutualGuildsActionSheet", obj2);
   }, items2);
   let obj4 = { accessibilityRole: "button", accessibilityLabel: intl.string(channel(analyticsLocations[18]).t.iXAna6), onPress: callback, children: closure_6(Avatar, obj5) };
   const PressableOpacity = channel(analyticsLocations[17]).PressableOpacity;

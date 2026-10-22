@@ -1,14 +1,14 @@
-// Module ID: 12070
-// Function ID: 12071
+// Module ID: 12080
+// Function ID: 12081
 // Name: BillIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 12071, 5654, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 12081, 5654, 2]
 
-// Module 12070 (BillIcon)
+// Module 12080 (BillIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5654 */;
-import AssetRegistry from "AssetRegistry" /* 12071 */;
+import AssetRegistry from "AssetRegistry" /* 12081 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

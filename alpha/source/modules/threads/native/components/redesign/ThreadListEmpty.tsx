@@ -1,16 +1,16 @@
-// Module ID: 18067
-// Function ID: 18068
+// Module ID: 18089
+// Function ID: 18090
 // Name: ThreadListEmpty
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 1202, 13053, 1128, 5220, 5230, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 1202, 13069, 1128, 5220, 5230, 2]
 
-// Module 18067 (ThreadListEmpty)
+// Module 18089 (ThreadListEmpty)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13053 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13069 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;

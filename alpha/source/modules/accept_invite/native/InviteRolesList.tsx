@@ -1,12 +1,12 @@
-// Module ID: 13585
-// Function ID: 13586
+// Module ID: 13599
+// Function ID: 13600
 // Name: InviteRolesList
-// Dependencies: [19, 17, 21, 4969, 558, 576, 4879, 5220, 1128, 10802, 5964, 2]
+// Dependencies: [19, 17, 21, 4969, 558, 576, 4879, 5220, 1128, 10810, 5963, 2]
 
-// Module 13585 (InviteRolesList)
+// Module 13599 (InviteRolesList)
 import react_native from "react-native" /* 17 */;
 import GuildRoleUtils from "GuildRoleUtils" /* 4879 */;
-import RolePillDefault from "RolePill" /* 10802 */;
+import RolePillDefault from "RolePill" /* 10810 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -96,7 +96,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteRole
               }
               const obj3 = { spacing: 4, style, children: items1 };
               items1 = [tmp12, tmp19];
-              const tmp25 = closure_6(guild(5964).Stack, obj3);
+              const tmp25 = closure_6(guild(5963).Stack, obj3);
               cResult[15] = style;
               cResult[16] = tmp19;
               cResult[17] = tmp25;
@@ -168,7 +168,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteRole
     tmp2 = null;
     if (0 !== memo.length) {
       let obj = { spacing: 4, style, children: items1 };
-      const Stack = guild(5964).Stack;
+      const Stack = guild(5963).Stack;
       const obj2 = { variant: "text-sm/semibold", color: "text-default", children: intl.string(guild(1128).t.stcSfI) };
       const Text = guild(5220).Text;
       intl = guild(1128).intl;

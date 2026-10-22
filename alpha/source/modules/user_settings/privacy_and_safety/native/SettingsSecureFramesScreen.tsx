@@ -1,18 +1,18 @@
-// Module ID: 17148
-// Function ID: 17149
+// Module ID: 17170
+// Function ID: 17171
 // Name: SettingsSecureFramesScreen
-// Dependencies: [19, 17, 1392, 1087, 21, 4969, 587, 558, 576, 504, 17149, 5018, 8643, 7237, 8641, 1202, 1128, 6898, 6889, 5238, 1505, 17147, 5220, 7206, 9165, 2]
+// Dependencies: [19, 17, 1392, 1087, 21, 4969, 587, 558, 576, 504, 17171, 5018, 8650, 7238, 8648, 1202, 1128, 6897, 6888, 5238, 1505, 17169, 5220, 7205, 9172, 2]
 
-// Module 17148 (SettingsSecureFramesScreen)
+// Module 17170 (SettingsSecureFramesScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8641 */;
-import UserActionCreators from "UserActionCreators" /* 8643 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 9165 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8648 */;
+import UserActionCreators from "UserActionCreators" /* 8650 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 9172 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;

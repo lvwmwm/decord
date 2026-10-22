@@ -1,15 +1,15 @@
-// Module ID: 13526
-// Function ID: 13527
+// Module ID: 13540
+// Function ID: 13541
 // Name: ContactSyncInviteFriends
-// Dependencies: [19, 17, 1392, 1087, 21, 4969, 587, 558, 576, 504, 1267, 1128, 5018, 8819, 5655, 13527, 5220, 5230, 2]
+// Dependencies: [19, 17, 1392, 1087, 21, 4969, 587, 558, 576, 504, 1267, 1128, 5018, 8826, 5655, 13541, 5220, 5230, 2]
 
-// Module 13526 (ContactSyncInviteFriends)
+// Module 13540 (ContactSyncInviteFriends)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13527 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13541 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
@@ -30,7 +30,7 @@ let obj2;
 let tmp;
 let tmp5;
 const UserUtilsDefault = tmp(5018);
-const showShareActionSheet = tmp5(8819);
+const showShareActionSheet = tmp5(8826);
 const View = react_native.View;
 ({ AnalyticEvents: hasOwnProperty, AnalyticsSections: metroRequire } = Constants);
 ({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);

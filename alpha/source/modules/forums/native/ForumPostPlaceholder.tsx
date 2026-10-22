@@ -1,9 +1,9 @@
-// Module ID: 13044
-// Function ID: 13045
+// Module ID: 13060
+// Function ID: 13061
 // Name: ForumPostPlaceholder
-// Dependencies: [32, 19, 4970, 21, 4969, 587, 558, 576, 504, 5038, 5192, 6891, 2]
+// Dependencies: [32, 19, 4970, 21, 4969, 587, 558, 576, 504, 5038, 5192, 6890, 2]
 
-// Module 13044 (ForumPostPlaceholder)
+// Module 13060 (ForumPostPlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
@@ -115,7 +115,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         return obj;
       }
     }
-    const tmp12 = jsx(stateFromStores(6891).Card, { variant: "secondary", style: tmp4.postPlaceholder });
+    const tmp12 = jsx(stateFromStores(6890).Card, { variant: "secondary", style: tmp4.postPlaceholder });
     cResult[3] = tmp4.postPlaceholder;
     cResult[4] = tmp12;
   } else {

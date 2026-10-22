@@ -1,9 +1,9 @@
-// Module ID: 11247
-// Function ID: 11248
+// Module ID: 11256
+// Function ID: 11257
 // Name: SuspiciousDownloadActionSheet
-// Dependencies: [19, 21, 4969, 587, 558, 576, 5196, 5642, 1633, 6977, 1128, 5220, 5964, 5230, 5251, 2]
+// Dependencies: [19, 21, 4969, 587, 558, 576, 5196, 5642, 1633, 6976, 1128, 5220, 5963, 5230, 5251, 2]
 
-// Module 11247 (SuspiciousDownloadActionSheet)
+// Module 11256 (SuspiciousDownloadActionSheet)
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
@@ -68,7 +68,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuspiciousDo
     }
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp11 = closure_3(href(6977).TrafficConeSpotIllustration, {});
+      const tmp11 = closure_3(href(6976).TrafficConeSpotIllustration, {});
       cResult[7] = tmp11;
       tmp9 = tmp11;
     } else {
@@ -149,7 +149,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuspiciousDo
       if (cResult[19] !== tmp5) {
         const obj6 = { spacing: 8, children: items };
         items = [tmp25, ];
-        const Stack = tmp(5964).Stack;
+        const Stack = tmp(5963).Stack;
         const obj7 = { text: tmp28, onPress: tmp5, variant: "secondary" };
         items[1] = closure_3(href(5230).Button, obj7);
         const tmp33 = closure_4(Stack, obj6);
@@ -168,7 +168,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuspiciousDo
           return tmp34;
         }
       }
-      const obj8 = { startExpanded: true, children: closure_4(href(5964).Stack, obj9) };
+      const obj8 = { startExpanded: true, children: closure_4(href(5963).Stack, obj9) };
       BottomSheet = tmp(5251).BottomSheet;
       obj9 = { spacing: 16, justify: "center", align: "center", style: tmp7, children: items1 };
       items1 = [tmp22, tmp30];
@@ -181,7 +181,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuspiciousDo
     }
     const obj10 = { spacing: 8, justify: "center", align: "center", children: items2 };
     items2 = [tmp9, tmp14, tmp19];
-    const tmp24 = closure_4(href(5964).Stack, obj10);
+    const tmp24 = closure_4(href(5963).Stack, obj10);
     cResult[14] = tmp19;
     cResult[15] = tmp14;
     cResult[16] = tmp24;
@@ -210,10 +210,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuspiciousDo
   BottomSheet = href(5251).BottomSheet;
   obj2 = { spacing: 16, justify: "center", align: "center", style: items, children: items2 };
   items = [tmp.container, { paddingBottom: bottom }];
-  Stack = href(5964).Stack;
+  Stack = href(5963).Stack;
   const obj3 = { spacing: 8, justify: "center", align: "center", children: items1 };
-  const Stack2 = href(5964).Stack;
-  items1 = [closure_3(href(6977).TrafficConeSpotIllustration, {}), , ];
+  const Stack2 = href(5963).Stack;
+  items1 = [closure_3(href(6976).TrafficConeSpotIllustration, {}), , ];
   const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl.string(href(1128).t.XtDo9Z) };
   const Text = href(5220).Text;
   intl = href(1128).intl;
@@ -224,7 +224,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuspiciousDo
   items1[2] = closure_3(Text2, obj5);
   items2 = [closure_4(Stack2, obj3), ];
   const obj6 = { spacing: 8, children: items3 };
-  const Stack3 = href(5964).Stack;
+  const Stack3 = href(5963).Stack;
   const obj7 = {
     text: intl3.string(href(1128).t.j7Vi2i),
     onPress() {

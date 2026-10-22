@@ -1,10 +1,10 @@
-// Module ID: 6764
-// Function ID: 6765
+// Module ID: 6763
+// Function ID: 6764
 // Name: getChannelIdForEmbeddedSurface
 // Dependencies: [5612, 2]
 // Exports: default
 
-// Module 6764 (getChannelIdForEmbeddedSurface)
+// Module 6763 (getChannelIdForEmbeddedSurface)
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5612 */;
 import size from "module_2" /* 2 */;
 

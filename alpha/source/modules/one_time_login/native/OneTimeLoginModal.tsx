@@ -1,9 +1,9 @@
-// Module ID: 15038
-// Function ID: 15039
+// Module ID: 15051
+// Function ID: 15052
 // Name: OneTimeLoginModal
-// Dependencies: [5, 19, 17, 502, 1392, 1087, 1255, 21, 4969, 587, 558, 576, 1633, 1499, 1385, 1267, 6658, 5136, 1114, 5897, 5901, 6998, 1128, 5901, 6654, 10595, 5130, 5655, 15039, 5220, 7020, 2]
+// Dependencies: [5, 19, 17, 502, 1392, 1087, 1255, 21, 4969, 587, 558, 576, 1633, 1499, 1385, 1267, 6657, 5136, 1114, 5896, 5900, 6997, 1128, 5900, 6653, 10602, 5130, 5655, 15052, 5220, 7019, 2]
 
-// Module 15038 (OneTimeLoginModal)
+// Module 15051 (OneTimeLoginModal)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1255 */;
@@ -12,10 +12,10 @@ import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import useAlertStore from "useAlertStore" /* 5897 */;
-import AlertModal2 from "AlertModal" /* 5901 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6998 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10595 */;
+import useAlertStore from "useAlertStore" /* 5896 */;
+import AlertModal2 from "AlertModal" /* 5900 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6997 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10602 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -217,9 +217,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLogin
             str = "current user";
           }
           obj3 = { children: authStore2(AlertActionButton, obj4, "confirm") };
-          AlertActions = tmp(5901).AlertActions;
+          AlertActions = tmp(5900).AlertActions;
           obj4 = { onPress: onPress2, text: intl3.string(intl4.t["3PatSz"]) };
-          AlertActionButton = tmp(5901).AlertActionButton;
+          AlertActionButton = tmp(5900).AlertActionButton;
           intl3 = tmp(1128).intl;
           openAlert("already-logged-in-alert", authStore2(AlertModal, obj));
         }
@@ -257,9 +257,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLogin
             str = "current user";
           }
           obj3 = { children: authStore2(AlertActionButton, obj4, "confirm") };
-          AlertActions = tmp(5901).AlertActions;
+          AlertActions = tmp(5900).AlertActions;
           obj4 = { onPress: onPress2, text: intl3.string(intl4.t["3PatSz"]) };
-          AlertActionButton = tmp(5901).AlertActionButton;
+          AlertActionButton = tmp(5900).AlertActionButton;
           intl3 = tmp(1128).intl;
           openAlert("already-logged-in-alert", authStore2(AlertModal, obj));
         }
@@ -297,9 +297,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLogin
             str = "current user";
           }
           obj3 = { children: authStore2(AlertActionButton, obj4, "confirm") };
-          AlertActions = tmp(5901).AlertActions;
+          AlertActions = tmp(5900).AlertActions;
           obj4 = { onPress: onPress2, text: intl3.string(intl4.t["3PatSz"]) };
-          AlertActionButton = tmp(5901).AlertActionButton;
+          AlertActionButton = tmp(5900).AlertActionButton;
           intl3 = tmp(1128).intl;
           openAlert("already-logged-in-alert", authStore2(AlertModal, obj));
         }
@@ -450,9 +450,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLogin
           str = "current user";
         }
         obj3 = { children: authStore2(AlertActionButton, obj4, "confirm") };
-        AlertActions = tmp(5901).AlertActions;
+        AlertActions = tmp(5900).AlertActions;
         obj4 = { onPress: onPress2, text: intl3.string(intl4.t["3PatSz"]) };
-        AlertActionButton = tmp(5901).AlertActionButton;
+        AlertActionButton = tmp(5900).AlertActionButton;
         intl3 = tmp(1128).intl;
         openAlert("already-logged-in-alert", authStore2(AlertModal, obj));
       }
@@ -568,9 +568,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLogin
       str = "current user";
     }
     obj3 = { children: authStore2(AlertActionButton, obj4, "confirm") };
-    AlertActions = tmp(5901).AlertActions;
+    AlertActions = tmp(5900).AlertActions;
     obj4 = { onPress: callback1, text: intl3.string(intl4.t["3PatSz"]) };
-    AlertActionButton = tmp(5901).AlertActionButton;
+    AlertActionButton = tmp(5900).AlertActionButton;
     intl3 = tmp(1128).intl;
     openAlert("already-logged-in-alert", authStore2(AlertModal, obj));
   }, items3);
@@ -688,7 +688,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLogin
   items6 = [closure_12(tmp11, obj2), ];
   let obj4 = { style: tmp.container, children: items9 };
   let obj5 = { style: tmp.centerContent, children: items7 };
-  let obj6 = { source: token(15039), style: tmp.logo };
+  let obj6 = { source: token(15052), style: tmp.logo };
   const tmp12 = FastImageDefault;
   items7 = [closure_12(tmp12, obj6), ];
   let obj7 = { style: tmp.loadingContainer, children: items8 };
@@ -705,7 +705,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLogin
   intl2 = token(1128).intl;
   items10 = [closure_12(Text2, obj10), ];
   let obj11 = { textColor: "text-default", text: intl3.string(token(1128).t.FIEwfG), variant: "text-sm/medium", onPress, textStyle: tmp.link };
-  const LinkButton = token(7020).LinkButton;
+  const LinkButton = token(7019).LinkButton;
   intl3 = token(1128).intl;
   items10[1] = closure_12(LinkButton, obj11);
   items9[1] = closure_13(callback1, obj9);

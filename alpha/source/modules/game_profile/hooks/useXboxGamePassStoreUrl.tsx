@@ -1,13 +1,13 @@
-// Module ID: 9245
-// Function ID: 9246
+// Module ID: 9252
+// Function ID: 9253
 // Name: useXboxGamePassStoreUrl
-// Dependencies: [1087, 2033, 9239, 2]
+// Dependencies: [1087, 2033, 9246, 2]
 // Exports: default
 
-// Module 9245 (useXboxGamePassStoreUrl)
+// Module 9252 (useXboxGamePassStoreUrl)
 import Constants from "Constants" /* 1087 */;
 import StringUtils from "StringUtils" /* 2033 */;
-import distributorStoreUrls from "distributorStoreUrls" /* 9239 */;
+import distributorStoreUrls from "distributorStoreUrls" /* 9246 */;
 import size from "module_2" /* 2 */;
 
 const Distributors = Constants.Distributors;

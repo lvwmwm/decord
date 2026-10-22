@@ -1,9 +1,9 @@
-// Module ID: 12753
-// Function ID: 12754
+// Module ID: 12772
+// Function ID: 12773
 // Name: ClassificationDetail
-// Dependencies: [19, 17, 2068, 7906, 7882, 1087, 21, 4969, 587, 558, 576, 5220, 7883, 1128, 504, 3154, 5646, 10918, 9010, 6889, 5230, 12754, 12756, 7905, 6643, 1267, 12757, 6454, 6459, 12759, 12764, 7881, 7207, 2]
+// Dependencies: [19, 17, 2068, 7907, 7883, 1087, 21, 4969, 587, 558, 576, 5220, 7884, 1128, 504, 3154, 5646, 10926, 9017, 6888, 5230, 12773, 12775, 7906, 6642, 1267, 12776, 6453, 6458, 12778, 12783, 7882, 7206, 2]
 
-// Module 12753 (ClassificationDetail)
+// Module 12772 (ClassificationDetail)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -13,18 +13,18 @@ import _modDef3154 from "module_3154" /* 3154 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import components_Button_Button from "components/Button/Button" /* 5230 */;
 import LinkingDefault from "Linking" /* 5646 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6454 */;
-import MetricEvents from "MetricEvents" /* 6459 */;
-import TableRow2 from "TableRow" /* 6889 */;
-import SafetyHubModels from "SafetyHubModels" /* 7883 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9010 */;
-import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 12757 */;
-import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 12759 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6453 */;
+import MetricEvents from "MetricEvents" /* 6458 */;
+import TableRow2 from "TableRow" /* 6888 */;
+import SafetyHubModels from "SafetyHubModels" /* 7884 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9017 */;
+import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 12776 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 12778 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
-import SafetyHubStore_mod from "SafetyHubStore" /* 7906 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7882 */;
+import SafetyHubStore_mod from "SafetyHubStore" /* 7907 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7883 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -69,7 +69,7 @@ function ClassificationPolicyCard(policyExplainerLink) {
   let obj7;
   let tmp11;
   let tmp9;
-  const tmp = closure_25;
+  let tmp = closure_25;
   if (tmp) {
     let tmp17;
     let tmp19;
@@ -95,7 +95,7 @@ function ClassificationPolicyCard(policyExplainerLink) {
     const classificationPolicyCard = tmp16.classificationPolicyCard;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "sm", color: nativeDefault.colors.TEXT_LINK };
-      const ShieldIcon2 = tmp12(10918).ShieldIcon;
+      const ShieldIcon2 = tmp12(10926).ShieldIcon;
       const tmp22 = closure_13(ShieldIcon2, obj2);
       cResult[2] = tmp22;
       tmp19 = tmp22;
@@ -166,6 +166,7 @@ function ClassificationPolicyCard(policyExplainerLink) {
     tmp32 = tmp35;
   } else {
     policyExplainerLink = policyExplainerLink.policyExplainerLink;
+    let tmp2 = closure_16;
     const classificationTypeText = policyExplainerLink.classificationTypeText;
     const tmp3 = closure_16();
     let obj = { children: closure_14(tmp9, obj10) };
@@ -180,7 +181,7 @@ function ClassificationPolicyCard(policyExplainerLink) {
     const obj11 = { style: tmp3.classificationPolicyCardIcon, children: closure_13(ShieldIcon, obj12) };
     obj12 = { size: "sm", color: nativeDefault.colors.TEXT_LINK };
     tmp9 = TouchableHitBoxDefault;
-    ShieldIcon = policyExplainerLink(10918).ShieldIcon;
+    ShieldIcon = policyExplainerLink(10926).ShieldIcon;
     items1 = [closure_13(closure_4, obj11), ];
     const obj13 = { style: tmp3.classificationPolicyCardContent, children: closure_13(Text, obj14) };
     obj14 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.format(policyExplainerLink(1128).t.zxUdpj, obj15) };

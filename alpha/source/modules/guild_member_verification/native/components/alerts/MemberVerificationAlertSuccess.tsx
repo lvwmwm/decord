@@ -1,9 +1,9 @@
-// Module ID: 6822
-// Function ID: 6823
+// Module ID: 6821
+// Function ID: 6822
 // Name: MemberVerificationAlertSuccess
-// Dependencies: [109, 19, 17, 4970, 4843, 21, 4969, 558, 576, 504, 1128, 6823, 5214, 5220, 5965, 2]
+// Dependencies: [109, 19, 17, 4970, 4843, 21, 4969, 558, 576, 504, 1128, 6822, 5214, 5220, 5964, 2]
 
-// Module 6822 (MemberVerificationAlertSuccess)
+// Module 6821 (MemberVerificationAlertSuccess)
 import react_native from "react-native" /* 17 */;
 import LottieAnimationViewDefault from "LottieAnimationView" /* 5214 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -102,8 +102,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVeri
       const _Symbol2 = Symbol;
       ({ alert: _alert, illustrationContainer } = tmp10);
       if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-        cResult[14] = require("module_6823");
-        require("module_6823");
+        cResult[14] = require("module_6822");
+        require("module_6822");
         class M {
           constructor() {
             return useReducedMotion.useReducedMotion;

@@ -1,58 +1,58 @@
-// Module ID: 14596
-// Function ID: 14597
+// Module ID: 14610
+// Function ID: 14611
 // Name: PremiumSubscriptionDetails
-// Dependencies: [32, 5, 19, 17, 1392, 7508, 1087, 1394, 21, 587, 4969, 2053, 10440, 14597, 14598, 10437, 10438, 10439, 10441, 14599, 14600, 14601, 7532, 14602, 14603, 14604, 14605, 14606, 10442, 14607, 14608, 14609, 14610, 14611, 14612, 14613, 10445, 14614, 14615, 14616, 8423, 14617, 14618, 14619, 10418, 13852, 14620, 14621, 7502, 7503, 7505, 7515, 1281, 6449, 1505, 504, 38, 14630, 7237, 7323, 5655, 1202, 5230, 1128, 5220, 7941, 558, 576, 7262, 14633, 14634, 14635, 2]
+// Dependencies: [32, 5, 19, 17, 1392, 7509, 1087, 1394, 21, 587, 4969, 2053, 10447, 14611, 14612, 10444, 10445, 10446, 10448, 14613, 14614, 14615, 7533, 14616, 14617, 14618, 14619, 14620, 10449, 14621, 14622, 14623, 14624, 14625, 14626, 14627, 10452, 14628, 14629, 14630, 8424, 14631, 14632, 14633, 10425, 13866, 14634, 14635, 7503, 7504, 7506, 7516, 1281, 6448, 1505, 504, 38, 14644, 7238, 7324, 5655, 1202, 5230, 1128, 5220, 7942, 558, 576, 7263, 14647, 14648, 14649, 2]
 // Exports: onCancelClick
 
-// Module 14596 (PremiumSubscriptionDetails)
+// Module 14610 (PremiumSubscriptionDetails)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
 import PremiumUtils from "PremiumUtils" /* 2053 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7237 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7262 */;
-import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 7502 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7532 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8423 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10418 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 10437 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 10438 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 10439 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 10440 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 10441 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 10442 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 10445 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 14597 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 14598 */;
-import AssetRegistryDefault12 from "AssetRegistry" /* 14599 */;
-import AssetRegistryDefault13 from "AssetRegistry" /* 14600 */;
-import AssetRegistryDefault14 from "AssetRegistry" /* 14601 */;
-import AssetRegistryDefault15 from "AssetRegistry" /* 14602 */;
-import AssetRegistryDefault16 from "AssetRegistry" /* 14603 */;
-import AssetRegistryDefault17 from "AssetRegistry" /* 14604 */;
-import AssetRegistryDefault18 from "AssetRegistry" /* 14605 */;
-import AssetRegistryDefault19 from "AssetRegistry" /* 14606 */;
-import AssetRegistryDefault20 from "AssetRegistry" /* 14607 */;
-import AssetRegistryDefault21 from "AssetRegistry" /* 14608 */;
-import AssetRegistryDefault22 from "AssetRegistry" /* 14609 */;
-import AssetRegistryDefault23 from "AssetRegistry" /* 14610 */;
-import AssetRegistryDefault24 from "AssetRegistry" /* 14611 */;
-import AssetRegistryDefault25 from "AssetRegistry" /* 14612 */;
-import AssetRegistryDefault26 from "AssetRegistry" /* 14613 */;
-import AssetRegistryDefault27 from "AssetRegistry" /* 14614 */;
-import AssetRegistryDefault28 from "AssetRegistry" /* 14615 */;
-import AssetRegistryDefault29 from "AssetRegistry" /* 14616 */;
-import AssetRegistryDefault30 from "AssetRegistry" /* 14617 */;
-import AssetRegistryDefault31 from "AssetRegistry" /* 14618 */;
-import AssetRegistryDefault32 from "AssetRegistry" /* 14619 */;
-import PremiumSubscriptionInvoice from "PremiumSubscriptionInvoice" /* 14633 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7238 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7263 */;
+import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 7503 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7533 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8424 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10425 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 10444 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 10445 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 10446 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 10447 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 10448 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 10449 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 10452 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 14611 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 14612 */;
+import AssetRegistryDefault12 from "AssetRegistry" /* 14613 */;
+import AssetRegistryDefault13 from "AssetRegistry" /* 14614 */;
+import AssetRegistryDefault14 from "AssetRegistry" /* 14615 */;
+import AssetRegistryDefault15 from "AssetRegistry" /* 14616 */;
+import AssetRegistryDefault16 from "AssetRegistry" /* 14617 */;
+import AssetRegistryDefault17 from "AssetRegistry" /* 14618 */;
+import AssetRegistryDefault18 from "AssetRegistry" /* 14619 */;
+import AssetRegistryDefault19 from "AssetRegistry" /* 14620 */;
+import AssetRegistryDefault20 from "AssetRegistry" /* 14621 */;
+import AssetRegistryDefault21 from "AssetRegistry" /* 14622 */;
+import AssetRegistryDefault22 from "AssetRegistry" /* 14623 */;
+import AssetRegistryDefault23 from "AssetRegistry" /* 14624 */;
+import AssetRegistryDefault24 from "AssetRegistry" /* 14625 */;
+import AssetRegistryDefault25 from "AssetRegistry" /* 14626 */;
+import AssetRegistryDefault26 from "AssetRegistry" /* 14627 */;
+import AssetRegistryDefault27 from "AssetRegistry" /* 14628 */;
+import AssetRegistryDefault28 from "AssetRegistry" /* 14629 */;
+import AssetRegistryDefault29 from "AssetRegistry" /* 14630 */;
+import AssetRegistryDefault30 from "AssetRegistry" /* 14631 */;
+import AssetRegistryDefault31 from "AssetRegistry" /* 14632 */;
+import AssetRegistryDefault32 from "AssetRegistry" /* 14633 */;
+import PremiumSubscriptionInvoice from "PremiumSubscriptionInvoice" /* 14647 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;
-import IAPStore from "IAPStore" /* 7508 */;
+import IAPStore from "IAPStore" /* 7509 */;
 import Constants from "Constants" /* 1087 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import Fragment from "Fragment" /* 21 */;
@@ -84,8 +84,8 @@ let tmp6;
 let unpackModuleId;
 const _modDef38 = tmp6(38);
 const FastImageDefault = tmp6(5655);
-const openPremiumPlanWhatYouLoseActionSheetDefault = tmp4(14620);
-const PremiumPlanWhatYouLoseActionSheet = tmp3(14621);
+const openPremiumPlanWhatYouLoseActionSheetDefault = tmp4(14634);
+const PremiumPlanWhatYouLoseActionSheet = tmp3(14635);
 function handleCancelSubscription() {
   return obj(...arguments);
 }
@@ -391,7 +391,7 @@ class PremiumSubscriptionHeader {
     const planIdFromInvoice = obj4.getPlanIdFromInvoice(subscription, renewalInvoicePreview);
     [tmp9, c2] = analyticsLocations(react.useState(false), 2);
     const tmp8 = analyticsLocations(react.useState(false), 2);
-    const obj5 = subscription(14630);
+    const obj5 = subscription(14644);
     const appleSubscriptionOwnership = obj5.useAppleSubscriptionOwnership(subscription);
     const isMismatchResult = appleSubscriptionOwnership.isMismatch();
     obj7 = subscription(2053);
@@ -418,7 +418,7 @@ class PremiumSubscriptionHeader {
       const getPlanDescription = PremiumUtilsDefault.getPlanDescription;
       PremiumUtilsDefault;
       if (null != stateFromStores1) {
-        const tmp2Result5 = tmp2(7323);
+        const tmp2Result5 = tmp2(7324);
         formatRateResult = tmp2Result5.formatRate(stateFromStores1.priceString, tmp38.interval, tmp38.intervalCount);
       }
       premiumGuildHeaderDescription = getPlanDescription(obj8);
@@ -611,7 +611,7 @@ class PremiumSubscriptionHeader {
     if (isMismatchResult) {
       const obj24 = { accessibilityRole: "alert", style: tmp.appleAccountMismatchNotice, children: items8 };
       const obj25 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING };
-      const WarningIcon = tmp2(7941).WarningIcon;
+      const WarningIcon = tmp2(7942).WarningIcon;
       items8 = [closure_16(WarningIcon, obj25), ];
       const obj26 = { variant: "text-sm/medium", color: "text-strong", style: tmp.appleAccountMismatchNoticeText, children: intl6.string(tmp2(1128).t.meauFg) };
       const Text2 = tmp2(5220).Text;
@@ -784,7 +784,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumSubsc
         let tmp16 = null != subscription.renewalMutations && subscription.status !== map1.CANCELED;
         if (tmp16) {
           const obj3 = { subscription, renewalMutations: subscription.renewalMutations };
-          tmp16 = authStore3(tmp5(14634), obj3);
+          tmp16 = authStore3(tmp5(14648), obj3);
         }
         cResult[6] = subscription;
         cResult[7] = tmp16;
@@ -796,7 +796,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumSubsc
         let tmp21 = subscription.status === map1.ACCOUNT_HOLD;
         if (tmp21) {
           const obj4 = { subscription };
-          tmp21 = authStore3(tmp5(14635), obj4);
+          tmp21 = authStore3(tmp5(14649), obj4);
         }
         cResult[8] = subscription;
         cResult[9] = tmp21;
@@ -901,13 +901,13 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumSubsc
     }
     if (tmp9Result) {
       const obj5 = { subscription, renewalMutations: subscription.renewalMutations };
-      tmp9Result = tmp9(tmp2(14634), obj5);
+      tmp9Result = tmp9(tmp2(14648), obj5);
     }
     items[1] = tmp9Result;
     let tmp9Result2 = subscription.status === map1.ACCOUNT_HOLD;
     if (tmp9Result2) {
       const obj6 = { subscription };
-      tmp9Result2 = tmp9(tmp2(14635), obj6);
+      tmp9Result2 = tmp9(tmp2(14649), obj6);
     }
     items[2] = tmp9Result2;
     obj7 = { subscription, renewalInvoicePreview: first, onClickManagePremiumGuild };
@@ -933,7 +933,7 @@ function onCancelClick(subscription, analyticsLocations) {
   } else {
     const obj3 = {
       subscription,
-      mode: tmp(14621).WhatYouLoseMode.CANCEL,
+      mode: tmp(14635).WhatYouLoseMode.CANCEL,
       onContinue(arg0) {
           return closure_2_26(closure_0, closure_1, arg0);
         }

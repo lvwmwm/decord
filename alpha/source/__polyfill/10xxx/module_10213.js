@@ -1,11 +1,10 @@
 // Module ID: 10213
 // Function ID: 10214
-// Dependencies: [41, 42, 93, 95, 98, 10185, 10184, 10188, 10192]
+// Dependencies: [41, 42, 93, 95, 98, 10214, 10211]
 
 // Module 10213
-import _mod10184 from "module_10184" /* 10184 */;
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10185 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10192 */;
+import _mod10211 from "module_10211" /* 10211 */;
+import mergeDateTimeComponent from "mergeDateTimeComponent" /* 10214 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -27,13 +26,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(this|last|past|next|after\\s*this)\\s*(" + repeatedTimeunitPattern.matchAnyPattern(_mod10184.TIME_UNIT_DICTIONARY) + ")(?=\\s*)(?=\\W|$)", "i");
-class ENRelativeDateFormatParser {
+class AbstractMergeDateTimeRefiner {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENRelativeDateFormatParser);
-    const obj = _getPrototypeOf(ENRelativeDateFormatParser);
+    _classCallCheck(this, AbstractMergeDateTimeRefiner);
+    const obj = _getPrototypeOf(AbstractMergeDateTimeRefiner);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -45,65 +43,46 @@ class ENRelativeDateFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ENRelativeDateFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(AbstractMergeDateTimeRefiner, _mod10211.MergingRefiner);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return regExp;
+  key: "shouldMergeResults",
+  value: function shouldMergeResults(str, start, start2) {
+    start = start.start;
+    let isOnlyDateResult = start.isOnlyDate();
+    if (isOnlyDateResult) {
+      start2 = start2.start;
+      isOnlyDateResult = start2.isOnlyTime();
+    }
+    if (!isOnlyDateResult) {
+      const start3 = start2.start;
+      let isOnlyDateResult1 = start3.isOnlyDate();
+      if (isOnlyDateResult1) {
+        const start4 = start.start;
+        isOnlyDateResult1 = start4.isOnlyTime();
+      }
+      isOnlyDateResult = isOnlyDateResult1;
+    }
+    if (isOnlyDateResult) {
+      const self = this;
+      isOnlyDateResult = null != str.match(this.patternBetween());
+    }
+    return isOnlyDateResult;
   }
 };
 const items = [
   entry,
   {
-    key: "innerExtract",
-    value: function innerExtract(createParsingComponents, arg1) {
-      const str = arg1[1];
-      const formatted = str.toLowerCase();
-      const str2 = arg1[2];
-      const str3 = str2.toLowerCase();
-      const tmp3 = _mod10184.TIME_UNIT_DICTIONARY[str3];
-      if ("next" != formatted) {
-        if (!formatted.startsWith("after")) {
-          if ("last" != formatted) {
-            if ("past" != formatted) {
-              const parsingComponents = createParsingComponents.createParsingComponents();
-              const _Date = Date;
-              const instant = createParsingComponents.reference.instant;
-              const self = this;
-              const self2 = this;
-              const date = new Date(instant.getTime());
-              if (str3.match(/week/i)) {
-                const setDate = date.setDate;
-                const date1 = date.getDate();
-                setDate(date1 - date.getDay());
-                parsingComponents.imply("day", date.getDate());
-                parsingComponents.imply("month", date.getMonth() + 1);
-                parsingComponents.imply("year", date.getFullYear());
-              } else if (str3.match(/month/i)) {
-                date.setDate(1);
-                parsingComponents.imply("day", date.getDate());
-                parsingComponents.assign("year", date.getFullYear());
-                parsingComponents.assign("month", date.getMonth() + 1);
-              } else if (str3.match(/year/i)) {
-                date.setDate(1);
-                date.setMonth(0);
-                parsingComponents.imply("day", date.getDate());
-                parsingComponents.imply("month", date.getMonth() + 1);
-                parsingComponents.assign("year", date.getFullYear());
-              }
-              return parsingComponents;
-            }
-          }
-          const obj4 = {};
-          obj4[tmp3] = -1;
-          const ParsingComponents = tmp(10188).ParsingComponents;
-          return ParsingComponents.createRelativeFromReference(createParsingComponents.reference, obj4);
-        }
-      }
-      const ParsingComponents2 = tmp(10188).ParsingComponents;
-      return ParsingComponents2.createRelativeFromReference(createParsingComponents.reference, { [tmp3]: 1 });
+    key: "mergeResults",
+    value: function mergeResults(arg0, start, text) {
+      start = start.start;
+      const isOnlyDateResult = start.isOnlyDate();
+      const mergeDateTimeResult = mergeDateTimeComponent.mergeDateTimeResult;
+      const tmp2 = isOnlyDateResult ? mergeDateTimeResult(start, text) : mergeDateTimeResult(text, start);
+      tmp2.index = start.index;
+      tmp2.text = start.text + arg0 + text.text;
+      return tmp2;
     }
   }
 ];
 
-export default _createClass(ENRelativeDateFormatParser, items);
+export default _createClass(AbstractMergeDateTimeRefiner, items);

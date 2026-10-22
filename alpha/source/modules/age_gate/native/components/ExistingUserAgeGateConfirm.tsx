@@ -1,9 +1,9 @@
-// Module ID: 18638
-// Function ID: 18639
+// Module ID: 18660
+// Function ID: 18661
 // Name: ExistingUserAgeGateConfirm
-// Dependencies: [5, 32, 19, 17, 1087, 21, 4969, 558, 576, 1505, 1128, 5220, 2067, 5230, 7207, 2]
+// Dependencies: [5, 32, 19, 17, 1087, 21, 4969, 558, 576, 1505, 1128, 5220, 2067, 5230, 7206, 2]
 
-// Module 18638 (ExistingUserAgeGateConfirm)
+// Module 18660 (ExistingUserAgeGateConfirm)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
@@ -25,7 +25,7 @@ let tmp;
 const intl4 = tmp(1128);
 const Text_Text = tmp(5220);
 const components_Button_Button = tmp(5230);
-const common_SafeAreaView = tmp(7207);
+const common_SafeAreaView = tmp(7206);
 const View = react_native.View;
 const HelpdeskArticles = Constants.HelpdeskArticles;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -324,7 +324,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
   [tmp3, c2] = _slicedToArray(react.useState(false), 2);
   let obj2 = { top: true, style: tmp.container, children: items };
   const tmp2 = _slicedToArray(react.useState(false), 2);
-  const SafeAreaPaddingView = onConfirm(7207).SafeAreaPaddingView;
+  const SafeAreaPaddingView = onConfirm(7206).SafeAreaPaddingView;
   let obj3 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.format(onConfirm(1128).t.wumolR, { age }) };
   const Heading = onConfirm(5220).Heading;
   intl = onConfirm(1128).intl;

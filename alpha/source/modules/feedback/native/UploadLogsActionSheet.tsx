@@ -1,9 +1,9 @@
-// Module ID: 18698
-// Function ID: 18699
+// Module ID: 18720
+// Function ID: 18721
 // Name: UploadLogsActionSheet
-// Dependencies: [19, 17, 1087, 21, 4969, 587, 558, 576, 13727, 1267, 5196, 7232, 1128, 5220, 5230, 5251, 2]
+// Dependencies: [19, 17, 1087, 21, 4969, 587, 558, 576, 13741, 1267, 5196, 7233, 1128, 5220, 5230, 5251, 2]
 
-// Module 18698 (UploadLogsActionSheet)
+// Module 18720 (UploadLogsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
@@ -11,8 +11,8 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import components_Button_Button from "components/Button/Button" /* 5230 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5251 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7232 */;
-import DebugUploadManager from "DebugUploadManager" /* 13727 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7233 */;
+import DebugUploadManager from "DebugUploadManager" /* 13741 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
@@ -69,7 +69,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UploadLogsAc
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       let obj2 = { title: intl.string(tmp(1128).t.KTjjrG) };
-      const BottomSheetTitleHeader = tmp(7232).BottomSheetTitleHeader;
+      const BottomSheetTitleHeader = tmp(7233).BottomSheetTitleHeader;
       intl = tmp(1128).intl;
       const tmp9 = closure_6(BottomSheetTitleHeader, obj2);
       cResult[3] = tmp9;

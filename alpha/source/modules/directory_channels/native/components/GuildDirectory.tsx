@@ -1,9 +1,9 @@
-// Module ID: 13495
-// Function ID: 13496
+// Module ID: 13509
+// Function ID: 13510
 // Name: GuildDirectory
-// Dependencies: [19, 17, 4843, 6757, 13116, 13109, 13114, 1087, 21, 4969, 587, 558, 13496, 13497, 13139, 13140, 576, 5220, 13498, 5655, 1128, 7132, 5230, 12775, 13499, 13111, 13112, 11115, 6894, 504, 1633, 7568, 9, 7192, 5006, 13120, 1267, 13104, 13624, 13626, 2]
+// Dependencies: [19, 17, 4843, 6756, 13132, 13125, 13130, 1087, 21, 4969, 587, 558, 13510, 13511, 13155, 13156, 576, 5220, 13512, 5655, 1128, 7131, 5230, 12794, 13513, 13127, 13128, 11124, 6893, 504, 1633, 7569, 9, 7191, 5006, 13136, 1267, 13120, 13638, 13640, 2]
 
-// Module 13495 (GuildDirectory)
+// Module 13509 (GuildDirectory)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,28 +11,28 @@ import intl4 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import components_Button_Button from "components/Button/Button" /* 5230 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7132 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7568 */;
-import PlusMediumIcon from "PlusMediumIcon" /* 11115 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12775 */;
-import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 13104 */;
-import GuildDirectoryConstants2 from "GuildDirectoryConstants" /* 13109 */;
-import useCanManageGuildDirectoryEntry from "useCanManageGuildDirectoryEntry" /* 13111 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 13112 */;
-import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 13120 */;
-import GuildDirectoryRowDefault from "GuildDirectoryRow" /* 13139 */;
-import GuildDirectoryPlaceholderRowDefault from "GuildDirectoryPlaceholderRow" /* 13140 */;
-import HubProgressBarUtils from "HubProgressBarUtils" /* 13496 */;
-import GuildDirectoryRowGenerator from "GuildDirectoryRowGenerator" /* 13497 */;
-import AssetRegistry from "AssetRegistry" /* 13498 */;
-import HubProgressHeaderDefault from "HubProgressHeader" /* 13499 */;
-import GuildDirectoryCategorySelectorDefault from "GuildDirectoryCategorySelector" /* 13624 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7131 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7569 */;
+import PlusMediumIcon from "PlusMediumIcon" /* 11124 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12794 */;
+import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 13120 */;
+import GuildDirectoryConstants2 from "GuildDirectoryConstants" /* 13125 */;
+import useCanManageGuildDirectoryEntry from "useCanManageGuildDirectoryEntry" /* 13127 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 13128 */;
+import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 13136 */;
+import GuildDirectoryRowDefault from "GuildDirectoryRow" /* 13155 */;
+import GuildDirectoryPlaceholderRowDefault from "GuildDirectoryPlaceholderRow" /* 13156 */;
+import HubProgressBarUtils from "HubProgressBarUtils" /* 13510 */;
+import GuildDirectoryRowGenerator from "GuildDirectoryRowGenerator" /* 13511 */;
+import AssetRegistry from "AssetRegistry" /* 13512 */;
+import HubProgressHeaderDefault from "HubProgressHeader" /* 13513 */;
+import GuildDirectoryCategorySelectorDefault from "GuildDirectoryCategorySelector" /* 13638 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import ReadStateStore from "ReadStateStore" /* 6757 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 13116 */;
-import GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 13114 */;
+import ReadStateStore from "ReadStateStore" /* 6756 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 13132 */;
+import GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 13130 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -386,7 +386,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
   const channel = guild.channel;
   const hideFooter = guild.hideFooter;
   const tmp4 = closure_22();
-  let obj2 = guild(13111);
+  let obj2 = guild(13127);
   let tmp5 = null;
   if (obj2.useCanCreateOrAddGuildInDirectory(channel)) {
     tmp5 = null;
@@ -412,7 +412,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
           }
           const _Symbol2 = Symbol;
           if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp12 = closure_18(guild(11115).PlusMediumIcon, {});
+            const tmp12 = closure_18(guild(11124).PlusMediumIcon, {});
             cResult[5] = tmp12;
             tmp10 = tmp12;
           } else {
@@ -451,7 +451,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
               tmp5 = tmp24;
             }
             const obj5 = { accessibilityRole: "button", accessibilityLabel: first, onPress: tmp9, children: tmp20 };
-            const tmp26 = closure_18(guild(6894).PressableOpacity, obj5);
+            const tmp26 = closure_18(guild(6893).PressableOpacity, obj5);
             cResult[12] = tmp9;
             cResult[13] = tmp20;
             cResult[14] = tmp26;
@@ -504,7 +504,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
             },
         children: closure_19(closure_5, obj3)
       };
-      const PressableOpacity = tmp2(6894).PressableOpacity;
+      const PressableOpacity = tmp2(6893).PressableOpacity;
       intl = tmp2(1128).intl;
       obj3 = { style: tmp.footer, children: items };
       const obj4 = { style: tmp.addIcon, children: closure_18(PlusMediumIcon.PlusMediumIcon, {}) };
@@ -1063,8 +1063,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirecto
         const obj8 = { style: tmp.border };
         items9 = [closure_18(currentCategoryId, obj8), , ];
         const obj9 = { guild: stateFromStores, channel };
-        items9[1] = closure_18(tmp5(13626), obj9);
-        items9[2] = closure_18(tmp2(12775).TTIFirstContentfulPaint, { label: "guild_directory_empty" });
+        items9[1] = closure_18(tmp5(13640), obj9);
+        items9[2] = closure_18(tmp2(12794).TTIFirstContentfulPaint, { label: "guild_directory_empty" });
         tmp25 = closure_19(currentCategoryId, obj6);
       }
       tmp18 = tmp25;

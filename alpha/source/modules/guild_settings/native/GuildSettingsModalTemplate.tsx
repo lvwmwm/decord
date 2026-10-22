@@ -1,9 +1,9 @@
-// Module ID: 19049
-// Function ID: 19050
+// Module ID: 19072
+// Function ID: 19073
 // Name: GuildSettingsModalTemplate
-// Dependencies: [5, 32, 19, 17, 21, 4969, 587, 558, 576, 19050, 5220, 1128, 8919, 7120, 1505, 5901, 12657, 6360, 6910, 7469, 6994, 7166, 5230, 5964, 5578, 6891, 7251, 7004, 19051, 7269, 5648, 5668, 6995, 8881, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4969, 587, 558, 576, 19073, 5220, 1128, 8926, 7119, 1505, 5900, 12676, 6359, 6909, 7470, 6993, 7165, 5230, 5963, 5578, 6890, 7252, 7003, 19074, 7270, 5648, 5668, 6994, 8888, 2]
 
-// Module 19049 (GuildSettingsModalTemplate)
+// Module 19072 (GuildSettingsModalTemplate)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,17 +11,17 @@ import intl9 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import ToastUtils from "ToastUtils" /* 5648 */;
 import CopyIcon2 from "CopyIcon" /* 5668 */;
-import AlertModal from "AlertModal" /* 5901 */;
-import Stack_Stack from "Stack/Stack" /* 5964 */;
-import Card_Card from "Card/Card" /* 6891 */;
-import Input2 from "Input" /* 6995 */;
-import SceneLoadingIndicator from "SceneLoadingIndicator" /* 7120 */;
-import ClipboardUtils from "ClipboardUtils" /* 7269 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7469 */;
-import native from "native" /* 8881 */;
-import Form3 from "Form" /* 8919 */;
-import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 12657 */;
-import GuildTemplateSettingsUtils from "GuildTemplateSettingsUtils" /* 19050 */;
+import AlertModal from "AlertModal" /* 5900 */;
+import Stack_Stack from "Stack/Stack" /* 5963 */;
+import Card_Card from "Card/Card" /* 6890 */;
+import Input2 from "Input" /* 6994 */;
+import SceneLoadingIndicator from "SceneLoadingIndicator" /* 7119 */;
+import ClipboardUtils from "ClipboardUtils" /* 7270 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7470 */;
+import native from "native" /* 8888 */;
+import Form3 from "Form" /* 8926 */;
+import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 12676 */;
+import GuildTemplateSettingsUtils from "GuildTemplateSettingsUtils" /* 19073 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -204,11 +204,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     if (null != loadError) {
       const obj2 = { style: tmp.container, contentContainerStyle: items, children: metroImportDefault(Text_Text.Text, obj3) };
       items = [tmp.containerContent, contentContainerStyle];
-      const Form2 = tmp2(8919).Form;
+      const Form2 = tmp2(8926).Form;
       obj3 = { variant: "text-sm/normal", color: "text-feedback-critical", children: loadError.message };
       tmp12Result = metroImportDefault(Form2, obj2);
     } else if (tmp8) {
-      tmp12Result = tmp12(tmp2(7120).SceneLoadingIndicator, {});
+      tmp12Result = tmp12(tmp2(7119).SceneLoadingIndicator, {});
     } else {
       const obj4 = { guildId, guildTemplate: tmp9, contentContainerStyle };
       tmp12Result = tmp12(closure_13, obj4);
@@ -217,7 +217,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   } else {
     const obj5 = { style: tmp.container, contentContainerStyle: items1, children: metroImportDefault(Text, obj6) };
     items1 = [tmp.containerContent, contentContainerStyle];
-    const Form = tmp2(8919).Form;
+    const Form = tmp2(8926).Form;
     obj6 = { variant: "text-sm/normal", color: "text-muted", children: intl.string(intl9.t.f0IPAG) };
     Text = tmp2(5220).Text;
     intl = tmp2(1128).intl;
@@ -1375,7 +1375,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function D
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { spacing: nativeDefault.space.PX_12, children: items };
-    const Stack = tmp(5964).Stack;
+    const Stack = tmp(5963).Stack;
     items = [first, tmp7, tmp11, ];
     const obj6 = { copies: true, label: intl4.string(intl9.t["/VNqdD"]) };
     intl4 = tmp(1128).intl;
@@ -1416,12 +1416,12 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function D
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj10 = { children: metroImportAll(Stack2, obj11) };
-    const Card = tmp(6891).Card;
+    const Card = tmp(6890).Card;
     obj11 = { spacing: nativeDefault.space.PX_16, children: items1 };
-    Stack2 = tmp(5964).Stack;
+    Stack2 = tmp(5963).Stack;
     items1 = [tmp15, ];
     const obj12 = { spacing: nativeDefault.space.PX_12, children: items2 };
-    const Stack3 = tmp(5964).Stack;
+    const Stack3 = tmp(5963).Stack;
     items2 = [tmp21, tmp24, tmp28, ];
     const obj13 = { copies: false, label: intl8.string(intl9.t["6Q/DHk"]) };
     intl8 = tmp(1128).intl;
@@ -1499,9 +1499,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function CopyRo
   ({ copies, label } = arg0);
   const tmp4 = closure_12();
   if (copies) {
-    CircleXIcon = tmp(7251).CircleCheckIcon;
+    CircleXIcon = tmp(7252).CircleCheckIcon;
   } else {
-    CircleXIcon = tmp(7004).CircleXIcon;
+    CircleXIcon = tmp(7003).CircleXIcon;
   }
   const colors = nativeDefault.colors;
   if (copies) {
@@ -1560,10 +1560,10 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function CopyRo
   const label = copies.label;
   const tmp = closure_12();
   if (copies) {
-    CircleXIcon = tmp2(7251).CircleCheckIcon;
+    CircleXIcon = tmp2(7252).CircleCheckIcon;
     tmp4 = tmp2;
   } else {
-    CircleXIcon = tmp2(7004).CircleXIcon;
+    CircleXIcon = tmp2(7003).CircleXIcon;
     tmp4 = tmp2;
   }
   const obj = { style: tmp.copyRow, children: items };
@@ -2178,7 +2178,7 @@ let closure_16 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   };
   [first, _slicedToArray] = react.useState(false);
   const tmp3 = dependencyMap;
-  const tmp4 = guildTemplate(19051)(guildTemplate.code);
+  const tmp4 = guildTemplate(19074)(guildTemplate.code);
   react = tmp4;
   obj = { spacing: guildTemplate(587).space.PX_12, children: items };
   const Stack = Stack_Stack.Stack;

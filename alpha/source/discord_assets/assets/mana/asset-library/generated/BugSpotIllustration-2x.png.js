@@ -1,8 +1,8 @@
-// Module ID: 17074
-// Function ID: 17075
+// Module ID: 17096
+// Function ID: 17097
 // Dependencies: [2]
 
-// Module 17074
+// Module 17096
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BugSpotIllustration-2x.png.js");

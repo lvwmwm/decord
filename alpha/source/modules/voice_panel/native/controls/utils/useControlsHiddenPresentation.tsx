@@ -1,11 +1,11 @@
-// Module ID: 18506
-// Function ID: 18507
+// Module ID: 18528
+// Function ID: 18529
 // Name: useControlsHiddenPresentation
-// Dependencies: [10865, 558, 576, 5023, 5038, 5233, 2]
+// Dependencies: [10873, 558, 576, 5023, 5038, 5233, 2]
 
-// Module 18506 (useControlsHiddenPresentation)
+// Module 18528 (useControlsHiddenPresentation)
 import spring from "spring" /* 5233 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10865 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10873 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

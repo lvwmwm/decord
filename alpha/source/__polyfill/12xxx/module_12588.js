@@ -1,85 +1,28 @@
 // Module ID: 12588
 // Function ID: 12589
-// Dependencies: [12510]
-// Exports: addMetadataToStackFrames, stripMetadataFromStackFrames
+// Dependencies: []
+// Exports: isSentryRequestUrl
 
 // Module 12588
-import _mod12510 from "module_12510" /* 12510 */;
 
-function getMetadataForUrl(fn, arg1) {
-  function ensureMetadataStacksAreParsed(fn) {
-    const tmp2 = require;
-    const tmp4 = dependencyMap;
-    if (_mod12510.GLOBAL_OBJ._sentryModuleMetadata) {
-      const _Object = Object;
-      const keys = Object.keys(tmp2(tmp4[0]).GLOBAL_OBJ._sentryModuleMetadata);
-      for (const item10026 of keys) {
-        let tmp11 = item10026;
-        let tmp16 = _mod12510.GLOBAL_OBJ._sentryModuleMetadata[item10026];
-        let obj = set;
-        if (!set.has(item10026)) {
-          let addResult = obj.add(tmp11);
-          let obj2 = fn(tmp11);
-          let reversed = obj2.reverse();
-          for (const item10050 of reversed) {
-            if (item10050.filename) {
-              let result = map.set(tmp22.filename, tmp16);
-              obj3.return();
-              break;
-            }
-            continue;
-          }
-        }
-        continue;
+export const isSentryRequestUrl = function isSentryRequestUrl(arr, getDsn) {
+  const tmp = getDsn && getDsn.getDsn();
+  arr = getDsn && getDsn.getOptions().tunnel;
+  let tmp2 = tmp && arr.includes(tmp.host);
+  if (!tmp2) {
+    let flag = false;
+    if (arr) {
+      let substr = arr;
+      if ("/" === arr[arr.length - 1]) {
+        substr = arr.slice(0, -1);
       }
+      let substr1 = arr;
+      if ("/" === arr[arr.length - 1]) {
+        substr1 = arr.slice(0, -1);
+      }
+      flag = substr === substr1;
     }
+    tmp2 = flag;
   }
-  const tmp = ensureMetadataStacksAreParsed(fn);
-  return map.get(arg1);
-}
-const map = new Map();
-const set = new Set();
-
-export const addMetadataToStackFrames = function addMetadataToStackFrames(arg0, exception) {
-  let closure_0 = arg0;
-  try {
-    let tmp = exception;
-    const values = exception.exception.values;
-    const item = values.forEach((stacktrace) => {
-      if (stacktrace.stacktrace) {
-        const tmp = stacktrace.stacktrace.frames || [];
-        for (const item10010 of tmp) {
-          let tmp4 = item10010;
-          if (item10010.filename) {
-            if (!tmp4.module_metadata) {
-              let tmp9 = getMetadataForUrl(closure_0, tmp4.filename);
-              if (tmp9) {
-                tmp4.module_metadata = tmp10;
-              }
-            }
-          }
-          continue;
-        }
-      }
-    });
-  } catch (err) {
-  }
-};
-export { getMetadataForUrl };
-export const stripMetadataFromStackFrames = function stripMetadataFromStackFrames(exception) {
-  try {
-    let tmp = exception;
-    const values = exception.exception.values;
-    const item = values.forEach((stacktrace) => {
-      if (stacktrace.stacktrace) {
-        const tmp = stacktrace.stacktrace.frames || [];
-        const iter = tmp[Symbol.iterator]();
-        while (iter !== undefined) {
-          delete iter.next()[`module_metadata`];
-          continue;
-        }
-      }
-    });
-  } catch (err) {
-  }
+  return tmp2;
 };

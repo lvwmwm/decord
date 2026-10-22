@@ -1,17 +1,17 @@
-// Module ID: 19082
-// Function ID: 19083
+// Module ID: 19105
+// Function ID: 19106
 // Name: GuildSettingsAnalyticsUtils
-// Dependencies: [19, 5180, 4843, 19083, 1087, 558, 576, 504, 1128, 19101, 1903, 2]
+// Dependencies: [19, 5180, 4843, 19106, 1087, 558, 576, 504, 1128, 19124, 1903, 2]
 // Exports: getGuildAnalyticsCardProps
 
-// Module 19082 (GuildSettingsAnalyticsUtils)
+// Module 19105 (GuildSettingsAnalyticsUtils)
 import intl4 from "intl" /* 1128 */;
 import NumberUtils from "NumberUtils" /* 1903 */;
-import GuildSettingsAnalyticsActionCreators from "GuildSettingsAnalyticsActionCreators" /* 19101 */;
+import GuildSettingsAnalyticsActionCreators from "GuildSettingsAnalyticsActionCreators" /* 19124 */;
 import react from "react" /* 19 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 5180 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import GuildSettingsAnalyticsStore from "GuildSettingsAnalyticsStore" /* 19083 */;
+import GuildSettingsAnalyticsStore from "GuildSettingsAnalyticsStore" /* 19106 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

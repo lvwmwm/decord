@@ -1,10 +1,10 @@
-// Module ID: 9302
-// Function ID: 9303
+// Module ID: 9309
+// Function ID: 9310
 // Name: GameProfileSummary
-// Dependencies: [32, 19, 17, 21, 4969, 558, 576, 9214, 1128, 5220, 2]
+// Dependencies: [32, 19, 17, 21, 4969, 558, 576, 9221, 1128, 5220, 2]
 
-// Module 9302 (GameProfileSummary)
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9214 */;
+// Module 9309 (GameProfileSummary)
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9221 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

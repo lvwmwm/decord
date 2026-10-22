@@ -1,9 +1,9 @@
-// Module ID: 12661
-// Function ID: 12662
+// Module ID: 12680
+// Function ID: 12681
 // Name: AcceptGuildTemplate
-// Dependencies: [19, 17, 4825, 4876, 1087, 7411, 21, 4969, 587, 6637, 558, 576, 6866, 1202, 12662, 1128, 7060, 38, 1633, 4877, 5220, 12664, 6994, 5230, 8923, 12, 8896, 12669, 12670, 10802, 1105, 2]
+// Dependencies: [19, 17, 4825, 4876, 1087, 7412, 21, 4969, 587, 6636, 558, 576, 6865, 1202, 12681, 1128, 7059, 38, 1633, 4877, 5220, 12683, 6993, 5230, 8930, 12, 8903, 12688, 12689, 10810, 1105, 2]
 
-// Module 12661 (AcceptGuildTemplate)
+// Module 12680 (AcceptGuildTemplate)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
@@ -14,17 +14,17 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import ChannelRecord from "ChannelRecord" /* 4825 */;
 import GuildRoleRecord from "GuildRoleRecord" /* 4876 */;
 import GuildRoleRecordUtilsAll from "GuildRoleRecordUtils" /* 4877 */;
-import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7411 */;
-import FormDividerDefault from "FormDivider" /* 8923 */;
-import RolePillDefault from "RolePill" /* 10802 */;
-import InvalidLink from "InvalidLink" /* 12662 */;
-import GuildIconUploaderDefault from "GuildIconUploader" /* 12664 */;
+import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7412 */;
+import FormDividerDefault from "FormDivider" /* 8930 */;
+import RolePillDefault from "RolePill" /* 10810 */;
+import InvalidLink from "InvalidLink" /* 12681 */;
+import GuildIconUploaderDefault from "GuildIconUploader" /* 12683 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
-import TextStyles_mod from "TextStyles" /* 6637 */;
+import TextStyles_mod from "TextStyles" /* 6636 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ let obj7;
 let obj8;
 let tmp;
 let unpackModuleId;
-const ActivityIndicator_ActivityIndicator = tmp(6866);
+const ActivityIndicator_ActivityIndicator = tmp(6865);
 ({ View: closure_4, ScrollView: hasOwnProperty } = react_native);
 const isGuildVocalChannelType = ChannelRecord.isGuildVocalChannelType;
 const isEveryoneRole = GuildRoleRecord.isEveryoneRole;
@@ -149,7 +149,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildT
   guildTemplate = guildTemplate.guildTemplate;
   ({ createServer, name, setName, icon, chooseIcon, errors } = guildTemplate);
   const tmp4 = closure_14();
-  const obj2 = guildTemplate(7060);
+  const obj2 = guildTemplate(7059);
   const typeConsolidationTextTransform = obj2.useTypeConsolidationTextTransform("AcceptGuildTemplate");
   _modDef38(null != guildTemplate, "guild template cannot be null");
   _modDef38(guildTemplate.state !== GuildTemplateStates.RESOLVING, "guild must be resolved");
@@ -466,7 +466,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildT
                 }
               }
               const obj20 = { label: tmp28, errorMessage: name1, value: name, onChange: setName, autoFocus: true, autoCorrect: false, returnKeyType: "done", clearable: true };
-              const tmp33 = closure_11(guildTemplate(6994).TextInput, obj20);
+              const tmp33 = closure_11(guildTemplate(6993).TextInput, obj20);
               cResult[23] = name;
               cResult[24] = setName;
               cResult[25] = name1;
@@ -567,7 +567,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildT
   const errors = guildTemplate.errors;
   ({ createServer, name, setName, icon, chooseIcon } = guildTemplate);
   const tmp = closure_14();
-  let obj = guildTemplate(7060);
+  let obj = guildTemplate(7059);
   const typeConsolidationTextTransform = obj.useTypeConsolidationTextTransform("AcceptGuildTemplate");
   _modDef38(null != guildTemplate, "guild template cannot be null");
   _modDef38(guildTemplate.state !== GuildTemplateStates.RESOLVING, "guild must be resolved");
@@ -589,7 +589,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildT
   const obj5 = { iconBackgroundColor: tmp.wrapper.backgroundColor, style: tmp.iconUploader, onPress: chooseIcon, icon };
   items1[2] = closure_11(GuildIconUploaderDefault, obj5);
   const obj6 = { label: intl2.string(guildTemplate(1128).t.dBih7e), errorMessage: name1, value: name, onChange: setName, autoFocus: true, autoCorrect: false, returnKeyType: "done", clearable: true };
-  const TextInput = guildTemplate(6994).TextInput;
+  const TextInput = guildTemplate(6993).TextInput;
   intl2 = guildTemplate(1128).intl;
   name1 = undefined;
   const tmp10 = closure_5;
@@ -756,11 +756,11 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     const type = children.type;
     const obj2 = { style: items, color: nativeDefault.unsafe_rawColors.PRIMARY_400, size: native.Icon.Sizes.CUSTOM, source: tmp10Result };
     if (isGuildVocalChannelType(type)) {
-      tmp10Result = tmp10(8896);
+      tmp10Result = tmp10(8903);
     } else if (type === tmp.GUILD_CATEGORY) {
-      tmp10Result = tmp10(12669);
+      tmp10Result = tmp10(12688);
     } else {
-      tmp10Result = tmp10(12670);
+      tmp10Result = tmp10(12689);
     }
     items1 = [unpackModuleId(Icon, obj2), ];
     const items2 = [closure_0.channelName, ];
@@ -815,11 +815,11 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     const type = children.type;
     const obj2 = { style: items, color: nativeDefault.unsafe_rawColors.PRIMARY_400, size: native.Icon.Sizes.CUSTOM, source: tmp10Result };
     if (isGuildVocalChannelType(type)) {
-      tmp10Result = tmp10(8896);
+      tmp10Result = tmp10(8903);
     } else if (type === tmp.GUILD_CATEGORY) {
-      tmp10Result = tmp10(12669);
+      tmp10Result = tmp10(12688);
     } else {
-      tmp10Result = tmp10(12670);
+      tmp10Result = tmp10(12689);
     }
     items1 = [unpackModuleId(Icon, obj2), ];
     const items2 = [closure_0.channelName, ];

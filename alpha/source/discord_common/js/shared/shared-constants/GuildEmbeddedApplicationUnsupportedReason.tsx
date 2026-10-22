@@ -1,9 +1,9 @@
-// Module ID: 8952
-// Function ID: 8953
+// Module ID: 8959
+// Function ID: 8960
 // Name: GuildEmbeddedApplicationUnsupportedReason
 // Dependencies: [2]
 
-// Module 8952 (GuildEmbeddedApplicationUnsupportedReason)
+// Module 8959 (GuildEmbeddedApplicationUnsupportedReason)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/GuildEmbeddedApplicationUnsupportedReason.tsx");

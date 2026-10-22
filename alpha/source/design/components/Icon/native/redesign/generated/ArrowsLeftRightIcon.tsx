@@ -1,14 +1,14 @@
-// Module ID: 18776
-// Function ID: 18777
+// Module ID: 18799
+// Function ID: 18800
 // Name: ArrowsLeftRightIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 18777, 5654, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 18800, 5654, 2]
 
-// Module 18776 (ArrowsLeftRightIcon)
+// Module 18799 (ArrowsLeftRightIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5654 */;
-import AssetRegistry from "AssetRegistry" /* 18777 */;
+import AssetRegistry from "AssetRegistry" /* 18800 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

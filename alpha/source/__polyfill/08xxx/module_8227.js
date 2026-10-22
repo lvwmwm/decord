@@ -1,15 +1,15 @@
 // Module ID: 8227
 // Function ID: 8228
-// Dependencies: [8224]
+// Dependencies: [8225]
 
 // Module 8227
-import _mod8224 from "module_8224" /* 8224 */;
+import _mod8225 from "module_8225" /* 8225 */;
 
-let obj = { 45056: null, 45057: "NumberOfImages", 45058: "MPEntry", 45059: "ImageUIDList", 45060: "TotalFrames" };
-obj[45056] = {
-  name: "MPFVersion",
+let obj = { 1: "InteroperabilityIndex", 2: null, 4096: "RelatedImageFileFormat", 4097: "RelatedImageWidth", 4098: "RelatedImageHeight" };
+obj[2] = {
+  name: "InteroperabilityVersion",
   description(value) {
-    const obj = _mod8224;
+    const obj = _mod8225;
     return obj.getStringValue(value);
   }
 };

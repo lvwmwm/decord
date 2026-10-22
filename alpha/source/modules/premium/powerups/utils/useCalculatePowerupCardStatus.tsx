@@ -1,9 +1,9 @@
-// Module ID: 13362
-// Function ID: 13363
+// Module ID: 13376
+// Function ID: 13377
 // Name: useCalculatePowerupCardStatus
 // Dependencies: [19, 5168, 558, 576, 1128, 2568, 2]
 
-// Module 13362 (useCalculatePowerupCardStatus)
+// Module 13376 (useCalculatePowerupCardStatus)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import _modDef2568 from "module_2568" /* 2568 */;

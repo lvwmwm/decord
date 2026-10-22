@@ -1,12 +1,11 @@
 // Module ID: 10342
 // Function ID: 10343
-// Dependencies: [41, 42, 93, 95, 98, 10185, 10339, 10186, 10341]
+// Dependencies: [41, 42, 93, 95, 98, 10197, 10198, 10199]
 
 // Module 10342
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10185 */;
-import findMostLikelyADYear from "findMostLikelyADYear" /* 10186 */;
-import _mod10339 from "module_10339" /* 10339 */;
-import _mod10341 from "module_10341" /* 10341 */;
+import Meridiem from "Meridiem" /* 10197 */;
+import assignSimilarDate from "assignSimilarDate" /* 10198 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10199 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -28,12 +27,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class UkMonthNameParser {
+class ESCasualTimeParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, UkMonthNameParser);
-    const obj = _getPrototypeOf(UkMonthNameParser);
+    _classCallCheck(this, ESCasualTimeParser);
+    const obj = _getPrototypeOf(ESCasualTimeParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -45,42 +44,49 @@ class UkMonthNameParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(UkMonthNameParser, _mod10341.AbstractParserWithLeftBoundaryChecking);
+_inherits(ESCasualTimeParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "innerPatternString",
-  value: function innerPatternString(arg0) {
-    const matchAnyPatternResult = repeatedTimeunitPattern.matchAnyPattern(_mod10339.MONTH_DICTIONARY);
-    return "((?:\u0432|\u0443)\\s*)?(" + matchAnyPatternResult + ")\\s*(?:[,-]?\\s*(" + _mod10339.YEAR_PATTERN + ")?)?(?=[^\\s\\w]|\\s+[^0-9]|\\s+$|$)";
+  key: "innerPattern",
+  value: function innerPattern() {
+    return /(?:esta\s*)?(mañana|tarde|medianoche|mediodia|mediodía|noche)(?=\W|$)/i;
   }
 };
 const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(createParsingResult, index) {
-      const str = index[2];
+    value: function innerExtract(refDate, arg1) {
+      refDate = refDate.refDate;
+      const parsingComponents = refDate.createParsingComponents();
+      const str = arg1[1];
       const formatted = str.toLowerCase();
-      if (index[0].length <= 3) {
-        if (!_mod10339.FULL_MONTH_NAME_DICTIONARY[formatted]) {
-          return null;
-        }
+      if ("tarde" === formatted) {
+        parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
+        parsingComponents.imply("hour", 15);
+      } else if ("noche" === formatted) {
+        parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
+        parsingComponents.imply("hour", 22);
+      } else if ("ma\u00F1ana" === formatted) {
+        parsingComponents.imply("meridiem", Meridiem.Meridiem.AM);
+        parsingComponents.imply("hour", 6);
+      } else if ("medianoche" === formatted) {
+        const _Date = Date;
+        const self = this;
+        const self2 = this;
+        const date = new Date(refDate.getTime());
+        date.setDate(date.getDate() + 1);
+        assignSimilarDate.assignSimilarDate(parsingComponents, date);
+        assignSimilarDate.implySimilarTime(parsingComponents, date);
+        parsingComponents.imply("hour", 0);
+        parsingComponents.imply("minute", 0);
+        parsingComponents.imply("second", 0);
+      } else if ("mediodia" === formatted) {
+        parsingComponents.imply("meridiem", Meridiem.Meridiem.AM);
+        parsingComponents.imply("hour", 12);
       }
-      const parsingResult = createParsingResult.createParsingResult(index.index, index.index + index[0].length);
-      const start = parsingResult.start;
-      start.imply("day", 1);
-      const tmp9 = _mod10339.MONTH_DICTIONARY[formatted];
-      const start2 = parsingResult.start;
-      start2.assign("month", tmp9);
-      if (index[3]) {
-        const start4 = parsingResult.start;
-        start4.assign("year", _mod10339.parseYearPattern(index[3]));
-      } else {
-        const start3 = parsingResult.start;
-        start3.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingResult.reference.instant, 1, tmp9));
-      }
-      return parsingResult;
+      return parsingComponents;
     }
   }
 ];
 
-export default _createClass(UkMonthNameParser, items);
+export default _createClass(ESCasualTimeParser, items);

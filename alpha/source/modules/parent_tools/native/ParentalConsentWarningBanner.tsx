@@ -1,16 +1,16 @@
-// Module ID: 18599
-// Function ID: 18600
+// Module ID: 18621
+// Function ID: 18622
 // Name: ParentalConsentWarningBanner
-// Dependencies: [19, 17, 7630, 1087, 21, 587, 4969, 558, 576, 1633, 16078, 16077, 18600, 11514, 5238, 7644, 1267, 7631, 7474, 5220, 5244, 1128, 2536, 2]
+// Dependencies: [19, 17, 7631, 1087, 21, 587, 4969, 558, 576, 1633, 16096, 16095, 18622, 11525, 5238, 7645, 1267, 7632, 7475, 5220, 5244, 1128, 2536, 2]
 
-// Module 18599 (ParentalConsentWarningBanner)
+// Module 18621 (ParentalConsentWarningBanner)
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import openUserSettings from "openUserSettings" /* 7474 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7630 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7631 */;
-import _modDef7644 from "module_7644" /* 7644 */;
+import openUserSettings from "openUserSettings" /* 7475 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7631 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7632 */;
+import _modDef7645 from "module_7645" /* 7645 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
@@ -74,7 +74,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParentalCo
   const obj6 = require("useToken");
   const token = obj6.useToken(daysRemaining(587).colors.BACKGROUND_FEEDBACK_WARNING);
   if (cResult[0] !== token) {
-    const obj7 = daysRemaining(7644)(token);
+    const obj7 = daysRemaining(7645)(token);
     const setAlphaResult = obj7.setAlpha(0);
     const toRgbStringResult = setAlphaResult.toRgbString();
     cResult[0] = token;
@@ -295,7 +295,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParentalCo
   daysRemaining = undefined;
   const memo = react.useMemo(() => {
     const items = [token, ];
-    const obj = _modDef7644(token);
+    const obj = _modDef7645(token);
     const setAlphaResult = obj.setAlpha(0);
     items[1] = setAlphaResult.toRgbString();
     return items;

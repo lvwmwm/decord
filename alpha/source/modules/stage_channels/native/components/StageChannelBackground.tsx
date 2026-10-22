@@ -1,9 +1,9 @@
-// Module ID: 11643
-// Function ID: 11644
+// Module ID: 11654
+// Function ID: 11655
 // Name: StageChannelBackground
 // Dependencies: [19, 17, 21, 4969, 587, 558, 576, 2]
 
-// Module 11643 (StageChannelBackground)
+// Module 11654 (StageChannelBackground)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

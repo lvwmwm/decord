@@ -1,27 +1,27 @@
-// Module ID: 7555
-// Function ID: 7556
+// Module ID: 7556
+// Function ID: 7557
 // Name: SessionHeartbeatScheduler
-// Dependencies: [5, 6482, 502, 6619, 5700, 1087, 1104, 3, 7556, 7557, 7558, 1257, 7559, 7562, 1267, 7563, 510, 7565, 1366, 584, 504, 1281, 2]
+// Dependencies: [5, 6481, 502, 6618, 5700, 1087, 1104, 3, 7557, 7558, 7559, 1257, 7560, 7563, 1267, 7564, 510, 7566, 1366, 584, 504, 1281, 2]
 // Exports: getActiveSessionUnsafe, initSessionHeartbeatScheduler
 
-// Module 7555 (SessionHeartbeatScheduler)
+// Module 7556 (SessionHeartbeatScheduler)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
-import MonotonicClock from "MonotonicClock" /* 7558 */;
-import Clickstream from "Clickstream" /* 7559 */;
-import SkippedClientHeartbeatUtil from "SkippedClientHeartbeatUtil" /* 7563 */;
-import SessionUtils from "SessionUtils" /* 7565 */;
+import MonotonicClock from "MonotonicClock" /* 7559 */;
+import Clickstream from "Clickstream" /* 7560 */;
+import SkippedClientHeartbeatUtil from "SkippedClientHeartbeatUtil" /* 7564 */;
+import SessionUtils from "SessionUtils" /* 7566 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6482 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6481 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import IdleStore from "IdleStore" /* 6619 */;
+import IdleStore from "IdleStore" /* 6618 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5700 */;
 import Constants from "Constants" /* 1087 */;
-import react_native from "react-native" /* 7556 */;
-import SessionRouteUtils from "SessionRouteUtils" /* 7557 */;
+import react_native from "react-native" /* 7557 */;
+import SessionRouteUtils from "SessionRouteUtils" /* 7558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -145,7 +145,7 @@ function isActive() {
   return items.length > 0;
 }
 function scheduleHeartbeatTracking() {
-  const f144124 = () => {
+  const f144337 = () => {
     trackHeartbeat();
     obj = {
       type: "interval",
@@ -181,8 +181,8 @@ function scheduleHeartbeatTracking() {
       SentryUtilsDefault;
       addBreadcrumb(obj3);
       const _setTimeout = setTimeout;
-      user = { type: "timeout", id: setTimeout(f144124, num) };
-      const obj4 = { type: "timeout", id: setTimeout(f144124, num) };
+      user = { type: "timeout", id: setTimeout(f144337, num) };
+      const obj4 = { type: "timeout", id: setTimeout(f144337, num) };
     }
   } else {
     let flag = false;
@@ -236,7 +236,7 @@ function validateClientSession(version) {
     const tmp2 = require;
     if (version.version !== SessionUtils.CLIENT_SESSION_STORAGE_VERSION) {
       const _HermesInternal = HermesInternal;
-      logger.warn("Throwing away client session with invalid version: " + version.version + ", expected " + tmp2(7565).CLIENT_SESSION_STORAGE_VERSION);
+      logger.warn("Throwing away client session with invalid version: " + version.version + ", expected " + tmp2(7566).CLIENT_SESSION_STORAGE_VERSION);
       tmp4 = null;
     }
     tmp = tmp4;
@@ -335,7 +335,7 @@ function handleAuthenticationChange() {
       const obj2 = { category: user, message: "Stopping Analytics Heartbeat" };
       obj = SentryUtilsDefault;
       obj.addBreadcrumb(obj2);
-      const tmp15Result = tmp15(7559);
+      const tmp15Result = tmp15(7560);
       tmp15Result.drainClickstream();
     }
     c19 = 0;

@@ -1,10 +1,10 @@
-// Module ID: 16716
-// Function ID: 16717
+// Module ID: 16738
+// Function ID: 16739
 // Name: UserSettingsText
-// Dependencies: [19, 17, 1392, 2058, 1208, 1209, 1087, 21, 4969, 587, 1267, 4797, 5855, 558, 576, 5238, 504, 2053, 1505, 7073, 6973, 1128, 7279, 1202, 10137, 5220, 6971, 6970, 8919, 5964, 2]
+// Dependencies: [19, 17, 1392, 2058, 1208, 1209, 1087, 21, 4969, 587, 1267, 4797, 5854, 558, 576, 5238, 504, 2053, 1505, 7072, 6972, 1128, 7280, 1202, 10144, 5220, 6970, 6969, 8926, 5963, 2]
 // Exports: setDataSavingMode, setImageDescriptions, setLowQualityImageMode, setStickerAutocomplete, setVideoUploadQuality
 
-// Module 16716 (UserSettingsText)
+// Module 16738 (UserSettingsText)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl23 from "intl" /* 1128 */;
@@ -13,13 +13,13 @@ import UnsyncedUserSettingsStore2 from "UnsyncedUserSettingsStore" /* 1209 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import UserSettings from "UserSettings" /* 4797 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5855 */;
-import TableRadioRow4 from "TableRadioRow" /* 6970 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 6971 */;
-import TableRowGroup7 from "TableRowGroup" /* 6973 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7073 */;
-import TableSwitchRow8 from "TableSwitchRow" /* 7279 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10137 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5854 */;
+import TableRadioRow4 from "TableRadioRow" /* 6969 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 6970 */;
+import TableRowGroup7 from "TableRowGroup" /* 6972 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7072 */;
+import TableSwitchRow8 from "TableSwitchRow" /* 7280 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10144 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import SubscriptionStore from "SubscriptionStore" /* 2058 */;

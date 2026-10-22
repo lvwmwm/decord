@@ -1,25 +1,26 @@
-// Module ID: 12907
-// Function ID: 12908
+// Module ID: 12925
+// Function ID: 12926
 // Name: CheckpointServersStatsScreen
-// Dependencies: [19, 17, 12875, 6002, 21, 4969, 587, 558, 576, 504, 12898, 12903, 12893, 1128, 3056, 3088, 12895, 9615, 12908, 12909, 5220, 6869, 2]
+// Dependencies: [19, 17, 12893, 6001, 21, 4969, 587, 558, 576, 504, 12916, 12921, 12926, 1128, 3056, 12911, 3088, 12913, 9622, 12927, 12928, 5220, 6868, 2]
 
-// Module 12907 (CheckpointServersStatsScreen)
+// Module 12925 (CheckpointServersStatsScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3056 from "module_3056" /* 3056 */;
 import _modDef3088 from "module_3088" /* 3088 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import GuildIcon from "GuildIcon" /* 6869 */;
-import CheckpointTextDefault from "CheckpointText" /* 12893 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 12895 */;
-import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12898 */;
-import _modDef12903 from "module_12903" /* 12903 */;
-import CheckpointGuildStatsDefault from "CheckpointGuildStats" /* 12908 */;
-import CheckpointRankTagDefault from "CheckpointRankTag" /* 12909 */;
+import GuildIcon from "GuildIcon" /* 6868 */;
+import CheckpointTextDefault from "CheckpointText" /* 12911 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12913 */;
+import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12916 */;
+import _modDef12921 from "module_12921" /* 12921 */;
+import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 12926 */;
+import CheckpointGuildStatsDefault from "CheckpointGuildStats" /* 12927 */;
+import CheckpointRankTagDefault from "CheckpointRankTag" /* 12928 */;
 import react from "react" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 12875 */;
-import CheckpointConstants from "CheckpointConstants" /* 6002 */;
+import CheckpointStore from "CheckpointStore" /* 12893 */;
+import CheckpointConstants from "CheckpointConstants" /* 6001 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -141,7 +142,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
       ({ container, header, heading, title } = tmp4);
       if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
         let obj2 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
-        const tmp12 = closure_6(tmp(9615).ServerIcon, obj2);
+        const tmp12 = closure_6(tmp(9622).ServerIcon, obj2);
         cResult[26] = tmp12;
         tmp9 = tmp12;
       } else {
@@ -171,8 +172,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
           }
           const _Symbol2 = Symbol;
           if (cResult[34] === Symbol.for("react.memo_cache_sentinel")) {
-            const obj3 = { variant: "display-lg", children: stringResult1.toLocaleUpperCase() };
-            const tmp26 = CheckpointTextDefault;
+            const obj3 = { children: stringResult1.toLocaleUpperCase() };
+            const tmp26 = CheckpointDisplayTextDefault;
             const intl2 = tmp(1128).intl;
             stringResult1 = intl2.string(_modDef3056.F0fkrh);
             const tmp27 = closure_6(tmp26, obj3);
@@ -393,7 +394,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
       tmp54 = cResult[4];
     }
     if (cResult[5] !== tmp4.globe) {
-      const obj12 = { uri: _modDef12903, style: tmp4.globe };
+      const obj12 = { uri: _modDef12921, style: tmp4.globe };
       class B {
         constructor(arg0, arg1) {
           let guild;
@@ -449,7 +450,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
       }
     }
     if (tmp60 === Symbol.for("react.memo_cache_sentinel")) {
-      const obj13 = { variant: "display-lg", children: stringResult2.toLocaleUpperCase() };
+      const obj13 = { children: stringResult2.toLocaleUpperCase() };
       class B {
         constructor(arg0, arg1) {
           let guild;
@@ -710,15 +711,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
       const obj5 = { style: tmp.heading, children: items2 };
       const obj7 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
       const tmp16 = CheckpointScreenDefault;
-      items1[0] = closure_6(tmp2(9615).ServerIcon, obj7);
+      items1[0] = closure_6(tmp2(9622).ServerIcon, obj7);
       const obj8 = { variant: "heading-md/extrabold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
       const tmp20 = CheckpointTextDefault;
       const intl3 = tmp2(1128).intl;
       stringResult = intl3.string(_modDef3088.Mb5E6r);
       items1[1] = closure_6(tmp20, obj8);
       items2 = [closure_7(View, obj6), ];
-      const obj9 = { variant: "display-lg", children: stringResult1.toLocaleUpperCase() };
-      const tmp21 = CheckpointTextDefault;
+      const obj9 = { children: stringResult1.toLocaleUpperCase() };
+      const tmp21 = CheckpointDisplayTextDefault;
       const intl4 = tmp2(1128).intl;
       stringResult1 = intl4.string(_modDef3056.F0fkrh);
       items2[1] = closure_6(tmp21, obj9);
@@ -764,11 +765,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
   const obj14 = { style: tmp.globalHeading, children: items6 };
   let tmp7 = closure_7;
   const tmp6 = CheckpointScreenDefault;
-  const obj15 = { uri: _modDef12903, style: tmp.globe };
+  const obj15 = { uri: _modDef12921, style: tmp.globe };
   const tmp9 = CheckpointApngPlayerDefault;
   items6 = [closure_6(tmp9, obj15), ];
-  const obj16 = { variant: "display-lg", children: stringResult2.toLocaleUpperCase() };
-  const tmp10 = CheckpointTextDefault;
+  const obj16 = { children: stringResult2.toLocaleUpperCase() };
+  const tmp10 = CheckpointDisplayTextDefault;
   const intl = tmp2(1128).intl;
   stringResult2 = intl.string(_modDef3056.F0fkrh);
   items6[1] = closure_6(tmp10, obj16);

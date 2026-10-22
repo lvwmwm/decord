@@ -1,74 +1,85 @@
 // Module ID: 8179
 // Function ID: 8180
-// Dependencies: [8171, 8172]
-// Exports: isAVI, isFLV, isM4V, isMKV, isMOV, isMP4, isOGG, isSWF, isWEBM
+// Dependencies: [8172, 8173]
+// Exports: isBLEND, isDOC, isELF, isEXE, isINDD, isMACHO, isORC, isPARQUET, isPCAP, isPDF, isPS, isRTF, isSQLITE, isSTL, isTTF
 
 // Module 8179
-import _mod8171 from "module_8171" /* 8171 */;
 import _mod8172 from "module_8172" /* 8172 */;
+import _mod8173 from "module_8173" /* 8173 */;
 
 
-export const isAVI = function isAVI(fileChunk) {
-  fileChunk = _mod8171.getFileChunk(fileChunk);
-  const FileTypes = _mod8172.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "avi");
+export const isBLEND = function isBLEND(fileChunk) {
+  fileChunk = _mod8172.getFileChunk(fileChunk);
+  const FileTypes = _mod8173.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "blend");
 };
-export const isFLV = function isFLV(fileChunk) {
-  fileChunk = _mod8171.getFileChunk(fileChunk);
-  const FileTypes = _mod8172.FileTypes;
-  const tmp4 = FileTypes.checkByFileType(fileChunk, "flv") && _mod8171.isFlvStringIncluded(fileChunk);
-  return tmp4;
+export const isELF = function isELF(fileChunk) {
+  fileChunk = _mod8172.getFileChunk(fileChunk);
+  const FileTypes = _mod8173.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "elf");
 };
-export const isM4V = function isM4V(fileChunk) {
-  fileChunk = _mod8171.getFileChunk(fileChunk);
-  const FileTypes = _mod8172.FileTypes;
-  const tmp4 = FileTypes.checkByFileType(fileChunk, "m4v") && _mod8171.isftypStringIncluded(fileChunk);
-  return tmp4;
+export const isEXE = function isEXE(fileChunk) {
+  fileChunk = _mod8172.getFileChunk(fileChunk);
+  const FileTypes = _mod8173.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "exe");
 };
-export const isMKV = function isMKV(fileChunk) {
-  fileChunk = _mod8171.getFileChunk(fileChunk, 64);
-  const FileTypes = _mod8172.FileTypes;
-  const tmp4 = FileTypes.checkByFileType(fileChunk, "mkv") && "mkv" === _mod8171.findMatroskaDocTypeElements(fileChunk);
-  return tmp4;
+export const isMACHO = function isMACHO(fileChunk) {
+  fileChunk = _mod8172.getFileChunk(fileChunk);
+  const FileTypes = _mod8173.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "macho");
 };
-export const isMOV = function isMOV(fileChunk) {
-  fileChunk = _mod8171.getFileChunk(fileChunk);
-  const FileTypes = _mod8172.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "mov");
+export const isINDD = function isINDD(fileChunk) {
+  fileChunk = _mod8172.getFileChunk(fileChunk);
+  const FileTypes = _mod8173.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "indd");
 };
-export const isMP4 = function isMP4(fileChunk, excludeSimilarTypes) {
-  fileChunk = _mod8171.getFileChunk(fileChunk);
-  const FileTypes = _mod8172.FileTypes;
-  let checkByFileTypeResult = FileTypes.checkByFileType(fileChunk, "mp4");
-  if (!checkByFileTypeResult) {
-    excludeSimilarTypes = undefined;
-    if (null != excludeSimilarTypes) {
-      excludeSimilarTypes = excludeSimilarTypes.excludeSimilarTypes;
-    }
-    let tmp8 = !excludeSimilarTypes;
-    if (tmp8) {
-      const fileChunk1 = tmp(8171).getFileChunk(fileChunk);
-      const FileTypes2 = tmp(8172).FileTypes;
-      tmp8 = FileTypes2.checkByFileType(fileChunk1, "m4v") && _mod8171.isftypStringIncluded(fileChunk1);
-      FileTypes2.checkByFileType(fileChunk1, "m4v") && _mod8171.isftypStringIncluded(fileChunk1);
-    }
-    checkByFileTypeResult = tmp8;
-  }
-  return checkByFileTypeResult;
+export const isORC = function isORC(fileChunk) {
+  fileChunk = _mod8172.getFileChunk(fileChunk);
+  const FileTypes = _mod8173.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "orc");
 };
-export const isOGG = function isOGG(fileChunk) {
-  fileChunk = _mod8171.getFileChunk(fileChunk);
-  const FileTypes = _mod8172.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "ogg");
+export const isPARQUET = function isPARQUET(fileChunk) {
+  fileChunk = _mod8172.getFileChunk(fileChunk);
+  const FileTypes = _mod8173.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "parquet");
 };
-export const isSWF = function isSWF(fileChunk) {
-  fileChunk = _mod8171.getFileChunk(fileChunk);
-  const FileTypes = _mod8172.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "swf");
+export const isPDF = function isPDF(fileChunk) {
+  fileChunk = _mod8172.getFileChunk(fileChunk);
+  const FileTypes = _mod8173.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "pdf");
 };
-export const isWEBM = function isWEBM(fileChunk) {
-  fileChunk = _mod8171.getFileChunk(fileChunk, 64);
-  const FileTypes = _mod8172.FileTypes;
-  const tmp4 = FileTypes.checkByFileType(fileChunk, "webm") && "webm" === _mod8171.findMatroskaDocTypeElements(fileChunk);
-  return tmp4;
+export const isPS = function isPS(fileChunk) {
+  fileChunk = _mod8172.getFileChunk(fileChunk);
+  const FileTypes = _mod8173.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "ps");
+};
+export const isRTF = function isRTF(fileChunk) {
+  fileChunk = _mod8172.getFileChunk(fileChunk);
+  const FileTypes = _mod8173.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "rtf");
+};
+export const isSQLITE = function isSQLITE(fileChunk) {
+  fileChunk = _mod8172.getFileChunk(fileChunk);
+  const FileTypes = _mod8173.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "sqlite");
+};
+export const isSTL = function isSTL(fileChunk) {
+  fileChunk = _mod8172.getFileChunk(fileChunk);
+  const FileTypes = _mod8173.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "stl");
+};
+export const isTTF = function isTTF(fileChunk) {
+  fileChunk = _mod8172.getFileChunk(fileChunk);
+  const FileTypes = _mod8173.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "ttf");
+};
+export const isDOC = function isDOC(fileChunk) {
+  fileChunk = _mod8172.getFileChunk(fileChunk);
+  const FileTypes = _mod8173.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "doc");
+};
+export const isPCAP = function isPCAP(fileChunk) {
+  fileChunk = _mod8172.getFileChunk(fileChunk);
+  const FileTypes = _mod8173.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "pcap");
 };

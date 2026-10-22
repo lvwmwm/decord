@@ -1,9 +1,9 @@
-// Module ID: 17704
-// Function ID: 17705
+// Module ID: 17726
+// Function ID: 17727
 // Name: NonCollapsableGestureDetector
 // Dependencies: [109, 19, 17, 21, 558, 576, 5283, 2]
 
-// Module 17704 (NonCollapsableGestureDetector)
+// Module 17726 (NonCollapsableGestureDetector)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

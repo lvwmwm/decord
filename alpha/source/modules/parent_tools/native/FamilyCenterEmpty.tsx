@@ -1,9 +1,9 @@
-// Module ID: 16131
-// Function ID: 16132
+// Module ID: 16149
+// Function ID: 16150
 // Name: FamilyCenterEmpty
 // Dependencies: [19, 17, 21, 4969, 558, 576, 5220, 2]
 
-// Module 16131 (FamilyCenterEmpty)
+// Module 16149 (FamilyCenterEmpty)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

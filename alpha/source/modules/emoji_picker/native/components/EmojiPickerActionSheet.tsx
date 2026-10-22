@@ -1,10 +1,10 @@
-// Module ID: 9797
-// Function ID: 9798
+// Module ID: 9804
+// Function ID: 9805
 // Name: EmojiPickerActionSheet
-// Dependencies: [32, 19, 17, 1392, 9798, 1087, 1395, 21, 4969, 587, 5211, 5038, 9799, 5579, 1633, 1384, 7237, 7262, 9805, 5196, 9795, 9806, 5220, 1128, 7131, 9808, 2053, 9754, 2002, 5198, 5199, 9822, 5251, 5152, 9823, 9906, 9928, 2]
+// Dependencies: [32, 19, 17, 1392, 9805, 1087, 1395, 21, 4969, 587, 5211, 5038, 9806, 5579, 1633, 1384, 7238, 7263, 9812, 5196, 9802, 9813, 5220, 1128, 7130, 9815, 2053, 9761, 2002, 5198, 5199, 9829, 5251, 5152, 9830, 9913, 9935, 2]
 // Exports: default
 
-// Module 9797 (EmojiPickerActionSheet)
+// Module 9804 (EmojiPickerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -12,11 +12,11 @@ import intl3 from "intl" /* 1128 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import SearchField2 from "SearchField" /* 7131 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9795 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9798 */;
-import EmojiPickerUtils from "EmojiPickerUtils" /* 9799 */;
-import BurstReactionToggleDefault from "BurstReactionToggle" /* 9808 */;
+import SearchBar2 from "SearchBar" /* 7130 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9802 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9805 */;
+import EmojiPickerUtils from "EmojiPickerUtils" /* 9806 */;
+import BurstReactionToggleDefault from "BurstReactionToggle" /* 9815 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -35,7 +35,7 @@ let obj6;
 let obj7;
 let tmp5;
 let unpackModuleId;
-const DoubleTapReminderToast = tmp5(9806);
+const DoubleTapReminderToast = tmp5(9813);
 let react = react_mod;
 const View = react_native.View;
 const EmojiPickerSource = EmojiPickerListConstants.EmojiPickerSource;
@@ -218,9 +218,9 @@ export default function EmojiPickerActionSheet(onClose) {
     let obj2 = { style: items1, children: items2 };
     items1[1] = headerSpacer;
     const obj3 = { ref, size: "md", round: true, onChange: handleTextChange, placeholder: obj4.getSearchPlaceholder(pickerIntention, currentUser) };
-    const SearchField = SearchField2.SearchField;
+    const SearchBar = SearchBar2.SearchBar;
     obj4 = EmojiPickerUtils;
-    items2 = [authStore(SearchField, obj3), ];
+    items2 = [authStore(SearchBar, obj3), ];
     let tmp4Result = pickerIntention === EmojiIntention.REACTION && source !== EmojiPickerSource.NOTIFICATION;
     const tmp4 = authStore;
     const tmp6 = currentUser;

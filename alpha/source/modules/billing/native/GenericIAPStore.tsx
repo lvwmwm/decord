@@ -1,13 +1,13 @@
-// Module ID: 18769
-// Function ID: 18770
+// Module ID: 18792
+// Function ID: 18793
 // Name: GenericIAPStore
-// Dependencies: [504, 12, 7503, 584, 2]
+// Dependencies: [504, 12, 7504, 584, 2]
 
-// Module 18769 (GenericIAPStore)
+// Module 18792 (GenericIAPStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ProductIds from "ProductIds" /* 7503 */;
+import ProductIds from "ProductIds" /* 7504 */;
 import size from "module_2" /* 2 */;
 
 let c3 = null;

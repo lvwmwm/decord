@@ -1,10 +1,11 @@
 // Module ID: 10292
 // Function ID: 10293
-// Dependencies: [41, 42, 93, 95, 98, 10293, 10192]
+// Dependencies: [41, 42, 93, 95, 98, 10192, 10286, 10199]
 
 // Module 10292
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10192 */;
-import _mod10293 from "module_10293" /* 10293 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10192 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10199 */;
+import _mod10286 from "module_10286" /* 10286 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -26,12 +27,13 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class ZHHansDateParser {
+const regExp = new RegExp("([0-9]{4})[\\.\\/\\s](?:(" + repeatedTimeunitPattern.matchAnyPattern(_mod10286.MONTH_DICTIONARY) + ")|([0-9]{1,2}))[\\.\\/\\s]([0-9]{1,2})(?=\\W|$)", "i");
+class NLCasualYearMonthDayParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ZHHansDateParser);
-    const obj = _getPrototypeOf(ZHHansDateParser);
+    _classCallCheck(this, NLCasualYearMonthDayParser);
+    const obj = _getPrototypeOf(NLCasualYearMonthDayParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -43,18 +45,10 @@ class ZHHansDateParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ZHHansDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(NLCasualYearMonthDayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
-    const keys = Object.keys(_mod10293.NUMBER);
-    const text = `(\\d{2,4}|[${obj.join("")}`;
-    const keys1 = Object.keys(_mod10293.NUMBER);
-    const text1 = `${`(\\d{2,4}|[${obj.join("")}`}]{4}|[${obj2.join("")}`;
-    const keys2 = Object.keys(_mod10293.NUMBER);
-    const text2 = `${tmp2}]{2})?(?:\\s*)(?:年)?(?:[\\s|,|，]*)(\\d{1,2}|[${obj3.join("")}`;
-    const keys3 = Object.keys(_mod10293.NUMBER);
-    const regExp = new RegExp(text2 + "]{1,3})(?:\\s*)(?:\u6708)(?:\\s*)(\\d{1,2}|[" + keys3.join("") + "]{1,3})?(?:\\s*)(?:\u65E5|\u53F7)?");
     return regExp;
   }
 };
@@ -62,47 +56,27 @@ const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(createParsingResult, index) {
-      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
-      const parsed = parseInt(index[2]);
-      let zhStringToNumberResult = parsed;
-      if (isNaN(parsed)) {
-        zhStringToNumberResult = _mod10293.zhStringToNumber(index[2]);
-      }
-      const start = parsingResult.start;
-      start.assign("month", zhStringToNumberResult);
-      if (index[3]) {
+    value: function innerExtract(arg0, arg1) {
+      let parsed;
+      let parsed1;
+      if (arg1[3]) {
         const _parseInt = parseInt;
-        const parsed1 = parseInt(index[3]);
-        const _isNaN = isNaN;
-        let zhStringToNumberResult1 = parsed1;
-        if (isNaN(parsed1)) {
-          zhStringToNumberResult1 = _mod10293.zhStringToNumber(index[3]);
-        }
-        const start3 = parsingResult.start;
-        start3.assign("day", zhStringToNumberResult1);
+        parsed = parseInt(arg1[3]);
       } else {
-        const start2 = parsingResult.start;
-        const refDate = createParsingResult.refDate;
-        start2.imply("day", refDate.getDate());
+        parsed = _mod10286.MONTH_DICTIONARY[str.toLowerCase(str)];
       }
-      if (index[1]) {
-        const _parseInt2 = parseInt;
-        let parsed2 = parseInt(index[1]);
-        const _isNaN2 = isNaN;
-        if (isNaN(parsed2)) {
-          parsed2 = _mod10293.zhStringToYear(index[1]);
+      if (parsed >= 1) {
+        if (parsed <= 12) {
+          const _parseInt2 = parseInt;
+          const _parseInt3 = parseInt;
+          const date = { day: parseInt(arg1[4]), month: parsed, year: parsed1 };
+          parsed1 = parseInt(arg1[1]);
+          return date;
         }
-        const start5 = parsingResult.start;
-        start5.assign("year", parsed2);
-      } else {
-        const start4 = parsingResult.start;
-        const refDate2 = createParsingResult.refDate;
-        start4.imply("year", refDate2.getFullYear());
       }
-      return parsingResult;
+      return null;
     }
   }
 ];
 
-export default _createClass(ZHHansDateParser, items);
+export default _createClass(NLCasualYearMonthDayParser, items);

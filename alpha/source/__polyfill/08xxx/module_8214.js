@@ -1,27 +1,25 @@
 // Module ID: 8214
 // Function ID: 8215
-// Dependencies: [8199]
+// Dependencies: [8200]
 
 // Module 8214
-import _mod8199 from "module_8199" /* 8199 */;
+import _mod8200 from "module_8200" /* 8200 */;
 
 let obj = {
-  isXMLFile(dataView) {
-    let tmp = dataView;
-    if (tmp) {
-      const obj = _mod8199;
-      tmp = obj.getStringFromDataView(dataView, c2, length.length) === length;
+  isGifFile(dataView) {
+    let hasItem = dataView;
+    if (hasItem) {
+      includes = includes.includes;
+      const obj = _mod8200;
+      hasItem = includes(obj.getStringFromDataView(dataView, 0, c2));
     }
-    return tmp;
+    return hasItem;
   },
-  findOffsets(byteLength) {
-    const xmpChunks = [];
-    const obj = { dataOffset, length: byteLength.byteLength };
-    xmpChunks.push(obj);
-    return { xmpChunks };
+  findOffsets() {
+    return { gifHeaderOffset: 0 };
   }
 };
-let c2 = 0;
-let c3 = "<?xpacket begin";
+let c2 = 6;
+let includes = ["GIF87a", "GIF89a"];
 
 export default obj;

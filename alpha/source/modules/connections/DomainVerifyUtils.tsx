@@ -1,10 +1,10 @@
-// Module ID: 14040
-// Function ID: 14041
+// Module ID: 14054
+// Function ID: 14055
 // Name: DomainVerifyUtils
 // Dependencies: [2]
 // Exports: getDnsName, getHttpName
 
-// Module 14040 (DomainVerifyUtils)
+// Module 14054 (DomainVerifyUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/connections/DomainVerifyUtils.tsx");

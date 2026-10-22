@@ -1,232 +1,89 @@
 // Module ID: 12615
 // Function ID: 12616
-// Dependencies: [5, 12505, 12508, 12509, 12537, 12523, 12533, 12557, 12536, 12554, 12543, 12524]
-// Exports: trpcMiddleware
+// Dependencies: [12576, 12564, 12599, 12523]
 
 // Module 12615
-import _mod12533 from "module_12533" /* 12533 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import registerSpanErrorInstrumentation from "module_12505" /* 12505 */;
-import "module_12508";
-import CONSOLE_LEVELS from "module_12509" /* 12509 */;
-import DEBUG_BUILD from "module_12537" /* 12537 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12523 */;
+import _mod12523 from "module_12523" /* 12523 */;
+import module_12576 from "module_12576" /* 12576 */;
 
-let c5, c6;
+let filterKeys;
 
-_mod12533;
-let obj = { mechanism: { handled: false, data: { function: "trpcMiddleware" } } };
+let c2 = "_sentryBundlerPluginAppKey:";
 
-export const trpcMiddleware = function trpcMiddleware() {
-  obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  let closure_0 = _asyncToGenerator(async (arg0, value) => {
-    let c1;
-    let fn;
-    let getRawInput;
-    let rawInput;
-    let tmp;
-    let tmp4;
-    closure_0 = arg0;
-    if (c6 === 2) {
-      c6 = 3;
-      let str = "Generator functions may not be called on executing generators";
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        let obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      let c4;
-      let closure_3;
-      try {
-        let closure_2;
-        let obj5;
-        c6 = 2;
-        if (0 === c5) {
-          if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            let obj4 = { value, done: true };
-            return obj4;
-          } else {
-            closure_2 = tmp;
-            const tmp24 = closure_0;
-            c1 = undefined;
-            closure_3 = undefined;
-            const path = closure_0.path;
-            ({ next: c1, rawInput, getRawInput } = closure_0);
-            const type = closure_0.type;
-            const obj8 = closure_0(dependencyMap[8]);
-            const client = obj8.getClient();
-            const options = client && client.getOptions();
-            obj5 = { procedure_path: path, procedure_type: type };
-            value = closure_0.attachRpcInput;
-            if (undefined !== value) {
-              value = closure_0.attachRpcInput;
-            } else {
-              value = options && options.sendDefaultPii;
+export const thirdPartyErrorFilterIntegration = module_12576.defineIntegration((arg0) => {
+  const behaviour = arg0;
+  let obj = {
+    name: "ThirdPartyErrorsFilter",
+    setup(on) {
+      const options = on;
+      on.on("beforeEnvelope", (arg0) => {
+        let obj = options(closure_1_1[1]);
+        obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
+          if ("event" === arg1) {
+            const _Array = Array;
+            let tmp3;
+            if (Array.isArray(arg0)) {
+              tmp3 = arg0[1];
             }
-            if (value) {
-              if (undefined !== rawInput) {
-                const normalizer2 = closure_0(dependencyMap[9]);
-                value = normalizer2.normalize(rawInput);
-                obj5.input = value;
-              }
-              if (undefined !== getRawInput) {
-                if (typeof getRawInput === "function") {
-                  c4 = 1;
-                  value = getRawInput();
-                  c5 = 2;
-                  c6 = 1;
-                  let obj6 = { value, done: false };
-                  return obj6;
-                }
-              }
+            if (tmp3) {
+              const obj = options(closure_1_1[2]);
+              const result = obj.stripMetadataFromStackFrames(tmp3);
+              arg0[1] = tmp3;
             }
           }
-        } else if (1 === tmp4) {
-          c4 = 0;
-        } else if (arg0 === 1) {
-          c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 0;
-          c6 = 3;
-          obj = { value, done: true };
-          return obj;
-        } else {
-          let tmp6 = closure_2;
-          closure_3 = value;
-          value = obj5;
-          const normalizer = closure_0(dependencyMap[9]);
-          obj5.input = normalizer.normalize(closure_3);
-          c4 = 0;
+        });
+      });
+      on.on("applyFrameMetadata", (type) => {
+        if (!type.type) {
+          const stackParser = options.getOptions().stackParser;
+          const obj = options(dependencyMap[2]);
+          const result = obj.addMetadataToStackFrames(stackParser, type);
         }
-        let obj3 = closure_0(dependencyMap[8]);
-        value = (setContext) => {
-          setContext.setContext("trpc", closure_2);
-          const tmp2 = closure_1_0(fn[10]);
-          obj = { name: "trpc/" + closure_0, op: "rpc.server", attributes: { [closure_1_0(closure_1_1[11]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE]: "route", [closure_1_0(closure_1_1[11]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN]: "auto.rpc.trpc" } };
-          const startSpanManual = tmp2.startSpanManual;
-          closure_0 = closure_1_2(function*(arg0, value) {
-            let tmp;
-            function captureIfError(ok) {
-              let tmp = typeof ok === "object";
-              if (typeof ok === "object") {
-                tmp = null !== ok;
-              }
-              if (tmp) {
-                tmp = "ok" in ok;
-              }
-              if (tmp) {
-                tmp = !ok.ok;
-              }
-              if (tmp) {
-                tmp = "error" in ok;
-              }
-              if (tmp) {
-                obj = closure_1_0(closure_1_1[7]);
-                obj.captureException(ok.error, closure_1_3);
-              }
-            }
-            closure_0 = arg0;
-            if (c6 === 2) {
-              c6 = 3;
-              const str = "Generator functions may not be called on executing generators";
-              throw new TypeError("Generator functions may not be called on executing generators");
-            } else if (tmp3 === 3) {
-              if (arg0 === 1) {
-                throw value;
-              } else if (arg0 === 2) {
-                const obj2 = { value, done: true };
-                return obj2;
-              } else {
-                return { value: "IconComponent", done: null };
-              }
-            } else {
-              try {
-                c6 = 2;
-                const tmp4 = c5;
-                if (0 === c5) {
-                  if (arg0 === 1) {
-                    c6 = 3;
-                    throw value;
-                  } else if (arg0 === 2) {
-                    c6 = 3;
-                    const obj4 = { value, done: true };
-                    return obj4;
-                  } else {
-                    closure_2 = tmp;
-                    value = undefined;
-                    c4 = 1;
-                    c5 = 2;
-                    c6 = 1;
-                    const obj5 = { value: value(), done: false };
-                    return obj5;
-                  }
-                } else if (1 === tmp4) {
-                  c4 = 0;
-                  closure_2 = closure_3;
-                  const obj3 = closure_0(fn[7]);
-                  const captureExceptionResult = obj3.captureException(closure_2, closure_2_3);
-                  closure_0.end();
-                  throw closure_2;
-                } else if (arg0 === 1) {
-                  c6 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c4 = 0;
-                  c6 = 3;
-                  const obj6 = { value, done: true };
-                  return obj6;
-                } else {
-                  captureIfError(value);
-                  closure_0.end();
-                  c4 = 0;
-                  c6 = 3;
-                  obj = { value, done: true };
-                  return obj;
-                }
-              } catch (tmp24) {
-                closure_3 = tmp24;
-                if (0 === c4) {
-                  c6 = 3;
-                  throw tmp24;
-                } else {
-                  c5 = 1;
-                }
-              }
-            }
-          });
-          return startSpanManual(obj, function(arg0) {
-            return closure_0(...arguments);
-          });
-        };
-        c6 = 3;
-        const obj7 = { value: obj3.withScope(value), done: true };
-        return obj7;
-      } catch (tmp18) {
-        closure_3 = tmp18;
-        if (0 === c4) {
-          c6 = 3;
-          throw tmp18;
+      });
+    },
+    processEvent(tags) {
+      const obj = _mod12523;
+      const framesFromEvent = obj.getFramesFromEvent(tags);
+      let mapped;
+      if (framesFromEvent) {
+        let found = framesFromEvent.filter((filename) => filename.filename);
+        mapped = found.map((module_metadata) => {
+          let length;
+          let mapped;
+          if (module_metadata.module_metadata) {
+            const _Object = Object;
+            const keys = Object.keys(module_metadata.module_metadata);
+            const found = keys.filter((item) => item.startsWith(length));
+            mapped = found.map((arr) => arr.slice(length.length));
+          } else {
+            mapped = [];
+          }
+          return mapped;
+        });
+      }
+      if (mapped) {
+        let str2;
+        if ("drop-error-if-contains-third-party-frames" === behaviour.behaviour) {
+          str2 = "some";
         } else {
-          c5 = 1;
+          str2 = "every";
+        }
+        if (mapped[str2]((arr) => !arr.some((item) => {
+          filterKeys = filterKeys.filterKeys;
+          return filterKeys.includes(item);
+        }))) {
+          if ("drop-error-if-contains-third-party-frames" !== behaviour.behaviour) {
+            if ("drop-error-if-exclusively-contains-third-party-frames" !== behaviour.behaviour) {
+              const obj2 = { third_party_code: true };
+              const merged = Object.assign(tags.tags);
+              tags.tags = obj2;
+            }
+          }
+          return null;
         }
       }
+      return tags;
     }
-  });
-  return function(arg0) {
-    return closure_0(...arguments);
   };
-};
+  return obj;
+});

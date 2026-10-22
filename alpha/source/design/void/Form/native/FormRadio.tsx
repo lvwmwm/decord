@@ -1,9 +1,9 @@
-// Module ID: 7227
-// Function ID: 7228
+// Module ID: 7228
+// Function ID: 7229
 // Name: Form/FormRadio
-// Dependencies: [19, 21, 4969, 558, 576, 7228, 7229, 5655, 2]
+// Dependencies: [19, 21, 4969, 558, 576, 7229, 7230, 5655, 2]
 
-// Module 7227 (Form/FormRadio)
+// Module 7228 (Form/FormRadio)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5655 */;
@@ -19,7 +19,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormRadio(se
   const cResult = obj.c(3);
   selected = selected.selected;
   const tmp3 = closure_4();
-  const tmp4Result = importDefault(selected ? 7228 : 7229);
+  const tmp4Result = importDefault(selected ? 7229 : 7230);
   if (cResult[0] === tmp3.radio) {
     let tmp6;
     if (cResult[1] === tmp4Result) {
@@ -35,7 +35,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormRadio(se
 }) : (function FormRadio(selected) {
   selected = selected.selected;
   FastImageDefault;
-  return <tmp5 style={closure_4().radio} source={importDefault(selected ? 7228 : 7229)} />;
+  return <tmp5 style={closure_4().radio} source={importDefault(selected ? 7229 : 7230)} />;
 });
 const result = size.fileFinishedImporting("design/void/Form/native/FormRadio.tsx");
 

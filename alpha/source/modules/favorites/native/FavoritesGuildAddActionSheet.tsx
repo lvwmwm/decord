@@ -1,14 +1,14 @@
-// Module ID: 17478
-// Function ID: 17479
+// Module ID: 17500
+// Function ID: 17501
 // Name: FavoritesGuildAddActionSheet
-// Dependencies: [19, 21, 5196, 17479, 558, 576, 10810, 10812, 13791, 7232, 1128, 3412, 7278, 11115, 17480, 7282, 2]
+// Dependencies: [19, 21, 5196, 17501, 558, 576, 10818, 10820, 13805, 7233, 1128, 3412, 7279, 11124, 17502, 7283, 2]
 // Exports: openFavoritesGuildAddActionSheet
 
-// Module 17478 (FavoritesGuildAddActionSheet)
+// Module 17500 (FavoritesGuildAddActionSheet)
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5196 */;
-import openFavoritesGuildLimitUpsellDefault from "openFavoritesGuildLimitUpsell" /* 10812 */;
-import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 13791 */;
-import FavoritesGuildAddCategoryActionSheet from "FavoritesGuildAddCategoryActionSheet" /* 17479 */;
+import openFavoritesGuildLimitUpsellDefault from "openFavoritesGuildLimitUpsell" /* 10820 */;
+import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 13805 */;
+import FavoritesGuildAddCategoryActionSheet from "FavoritesGuildAddCategoryActionSheet" /* 17501 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,9 +1,9 @@
-// Module ID: 8928
-// Function ID: 8929
+// Module ID: 8935
+// Function ID: 8936
 // Name: Form/FormSwitch
 // Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5191, 4976, 2]
 
-// Module 8928 (Form/FormSwitch)
+// Module 8935 (Form/FormSwitch)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

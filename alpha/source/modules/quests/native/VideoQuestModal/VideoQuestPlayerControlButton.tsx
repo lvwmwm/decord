@@ -1,9 +1,9 @@
-// Module ID: 16252
-// Function ID: 16253
+// Module ID: 16270
+// Function ID: 16271
 // Name: VideoQuestPlayerControlButton
-// Dependencies: [109, 19, 21, 4969, 587, 683, 558, 576, 5572, 6894, 2]
+// Dependencies: [109, 19, 21, 4969, 587, 683, 558, 576, 5572, 6893, 2]
 
-// Module 16252 (VideoQuestPlayerControlButton)
+// Module 16270 (VideoQuestPlayerControlButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -19,7 +19,7 @@ let alphaResult;
 let obj2;
 let obj3;
 let tmp;
-const Pressables = tmp(6894);
+const Pressables = tmp(6893);
 let closure_3 = ["style", "children"];
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;

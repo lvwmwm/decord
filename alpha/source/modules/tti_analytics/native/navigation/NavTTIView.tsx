@@ -1,15 +1,15 @@
-// Module ID: 17878
-// Function ID: 17879
+// Module ID: 17900
+// Function ID: 17901
 // Name: NavTTIView
-// Dependencies: [109, 19, 17, 5223, 21, 558, 576, 17879, 17881, 17882, 504, 17873, 2]
+// Dependencies: [109, 19, 17, 5223, 21, 558, 576, 17901, 17903, 17904, 504, 17895, 2]
 
-// Module 17878 (NavTTIView)
+// Module 17900 (NavTTIView)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import navigationTTIEnabled from "navigationTTIEnabled" /* 17873 */;
-import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 17881 */;
-import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 17882 */;
+import navigationTTIEnabled from "navigationTTIEnabled" /* 17895 */;
+import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 17903 */;
+import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 17904 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import DevSettingsStore from "DevSettingsStore" /* 5223 */;
@@ -22,7 +22,7 @@ let tmp3Result;
 let closure_14;
 let closure_15;
 let tmp;
-const useComponentRenderSpan = tmp(17879);
+const useComponentRenderSpan = tmp(17901);
 let closure_2 = ["measurementProps", "onLayout", "children"];
 let closure_3 = ["name"];
 let closure_4 = ["tracking", "descendantTracking", "name"];
@@ -133,9 +133,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavTTI
   onLayout = onLayout.onLayout;
   ({ measurementProps, children } = onLayout);
   const merged = Object.assign(onLayout, Object.assign({ measurementProps: 0, onLayout: 0, children: 0 }));
-  let onLayout2 = measurementProps.onLayout;
+  const onLayout2 = measurementProps.onLayout;
   const items = [onLayout2, onLayout];
-  let obj = { onLayout, children };
+  const obj = { onLayout, children };
   const callback = react.useCallback((arg0) => {
     if (onLayout2 != null) {
       tmp(arg0);

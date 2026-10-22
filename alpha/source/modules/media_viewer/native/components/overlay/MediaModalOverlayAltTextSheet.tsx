@@ -1,17 +1,17 @@
-// Module ID: 11196
-// Function ID: 11197
+// Module ID: 11205
+// Function ID: 11206
 // Name: MediaModalOverlayAltTextSheet
-// Dependencies: [19, 21, 4969, 587, 558, 576, 11197, 8664, 7232, 1128, 5220, 5251, 2]
+// Dependencies: [19, 21, 4969, 587, 558, 576, 11206, 8671, 7233, 1128, 5220, 5251, 2]
 
-// Module 11196 (MediaModalOverlayAltTextSheet)
+// Module 11205 (MediaModalOverlayAltTextSheet)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5251 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8664 */;
-import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11197 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8671 */;
+import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11206 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -39,7 +39,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaViewe
     num = messagePreviewCollapsedheight + 20 + 50;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const BottomSheetTitleHeader = tmp(7232).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(7233).BottomSheetTitleHeader;
     const intl = tmp(1128).intl;
     const tmp8 = <BottomSheetTitleHeader title={intl.string(intl2.t.J3IOO1)} />;
     cResult[0] = tmp8;
@@ -100,7 +100,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaViewe
   }
   BottomSheet = tmp2(5251).BottomSheet;
   ({ title: intl.string(intl2.t.J3IOO1) });
-  const BottomSheetTitleHeader = tmp2(7232).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = tmp2(7233).BottomSheetTitleHeader;
   intl = tmp2(1128).intl;
   const items = [tmp.container, { minHeight: num }];
   return <BottomSheet header={null} contentStyles={items}>{null}</BottomSheet>;

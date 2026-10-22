@@ -1,22 +1,22 @@
-// Module ID: 7874
-// Function ID: 7875
+// Module ID: 7875
+// Function ID: 7876
 // Name: mobile/NativePermissionUtils
-// Dependencies: [5, 19, 17, 7852, 21, 1384, 1630, 7875, 7871, 3, 7876, 7877, 2002, 5897, 1128, 2]
+// Dependencies: [5, 19, 17, 7853, 21, 1384, 1630, 7876, 7872, 3, 7877, 7878, 2002, 5896, 1128, 2]
 
-// Module 7874 (mobile/NativePermissionUtils)
+// Module 7875 (mobile/NativePermissionUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1128 */;
-import useAlertStore from "useAlertStore" /* 5897 */;
-import NativePermissionBaseUtils2 from "NativePermissionBaseUtils" /* 7871 */;
-import react_nativeDefault from "react-native" /* 7876 */;
+import useAlertStore from "useAlertStore" /* 5896 */;
+import NativePermissionBaseUtils2 from "NativePermissionBaseUtils" /* 7872 */;
+import react_nativeDefault from "react-native" /* 7877 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7852 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7853 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1384 */;
 import MetaQuestUtils_mod from "MetaQuestUtils" /* 1630 */;
-import react_native2_mod from "react-native" /* 7875 */;
+import react_native2_mod from "react-native" /* 7876 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

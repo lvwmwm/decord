@@ -1,14 +1,14 @@
-// Module ID: 18180
-// Function ID: 18181
+// Module ID: 18202
+// Function ID: 18203
 // Name: ChannelSettingsPermissionsList
-// Dependencies: [32, 19, 17, 4821, 4881, 4875, 1392, 1087, 21, 4969, 587, 558, 576, 504, 6813, 1505, 1633, 7130, 7395, 4906, 6889, 10091, 2000, 10797, 7131, 1128, 7136, 1202, 8696, 2]
+// Dependencies: [32, 19, 17, 4821, 4881, 4875, 1392, 1087, 21, 4969, 587, 558, 576, 504, 6812, 1505, 1633, 7129, 7396, 4906, 6888, 10098, 2000, 10805, 7130, 1128, 7135, 1202, 8703, 2]
 
-// Module 18180 (ChannelSettingsPermissionsList)
+// Module 18202 (ChannelSettingsPermissionsList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Server from "Server" /* 2000 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6813 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6812 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
@@ -382,7 +382,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp12 = cResult[3];
   }
   if (cResult[4] !== stateFromStores) {
-    class B {
+    class G {
       constructor() {
         guildId = undefined;
         const obj = stateFromStores;
@@ -398,12 +398,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     const items2 = [stateFromStores];
     cResult[4] = stateFromStores;
-    cResult[5] = B;
+    cResult[5] = G;
     cResult[6] = items2;
     tmp15 = items2;
-    tmp14 = B;
+    tmp14 = G;
   } else {
-    class B {
+    class G {
       constructor() {
         guildId = undefined;
         const obj = stateFromStores;
@@ -424,7 +424,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   guildId = stateFromStoresObject.guildId;
   const MEMBER = constants.MEMBER;
   if (stateFromStores != null) {
-    class B {
+    class G {
       constructor() {
         guildId = undefined;
         const obj = stateFromStores;
@@ -440,7 +440,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
   }
   if (cResult[7] === guildId) {
-    class B {
+    class G {
       constructor() {
         guildId = undefined;
         const obj = stateFromStores;
@@ -462,7 +462,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   cResult[10] = undefined;
   cResult[11] = obj3;
 }) : (function ChannelSettingsPermissionsList(channelId) {
-  let SearchField;
+  let SearchBar;
   let intl;
   let items5;
   let obj9;
@@ -538,7 +538,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }, items3);
   const items4 = [guildId, rows, rows1, callback, type, rowContentHeight];
   const obj7 = { style: tmp.container, children: items5 };
-  const obj8 = { style: tmp.containerSearchBar, children: closure_13(SearchField, obj9) };
+  const obj8 = { style: tmp.containerSearchBar, children: closure_13(SearchBar, obj9) };
   const callback1 = obj2.useCallback((arg0, arg1) => {
     let id;
     let obj5;
@@ -578,7 +578,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
   }, items4);
   obj9 = { size: "md", placeholder: intl.string(channelId(stateFromStores[25]).t["5h0QOP"]), onChange: tmp7, round: true };
-  SearchField = tmp2(tmp3[24]).SearchField;
+  SearchBar = tmp2(tmp3[24]).SearchBar;
   intl = tmp2(tmp3[25]).intl;
   items5 = [closure_13(rows1, obj8), ];
   const tmp19 = closure_14;

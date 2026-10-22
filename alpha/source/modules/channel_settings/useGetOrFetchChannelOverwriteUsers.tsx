@@ -1,12 +1,12 @@
-// Module ID: 18178
-// Function ID: 18179
+// Module ID: 18200
+// Function ID: 18201
 // Name: useGetOrFetchChannelOverwriteUsers
-// Dependencies: [32, 19, 4881, 1392, 2000, 558, 576, 504, 18179, 6816, 1388, 2]
+// Dependencies: [32, 19, 4881, 1392, 2000, 558, 576, 504, 18201, 6815, 1388, 2]
 
-// Module 18178 (useGetOrFetchChannelOverwriteUsers)
+// Module 18200 (useGetOrFetchChannelOverwriteUsers)
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6816 */;
-import createAggregatorDefault from "createAggregator" /* 18179 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6815 */;
+import createAggregatorDefault from "createAggregator" /* 18201 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 4881 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f134129 = (id) => id.id;
+const f134338 = (id) => id.id;
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFetchChannelOverwriteUsers(arg0, arg1) {
@@ -152,7 +152,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFetc
     const _Object = Object;
     const values = Object.values(arg1);
     const found = values.filter((type) => type.type === closure_1_0(stateFromStoresArray[4]).PermissionOverwriteType.MEMBER);
-    items5 = found.map(f134129);
+    items5 = found.map(f134338);
   }
   const tmp11Result = tmp11(items5, tmp10);
   cResult[4] = stateFromStoresArray;
@@ -180,7 +180,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFetc
       const _Object = Object;
       const values = Object.values(tmp2);
       const found = values.filter((type) => type.type === closure_1_0(stateFromStoresArray[4]).PermissionOverwriteType.MEMBER);
-      items = found.map(f134129);
+      items = found.map(f134338);
     }
     return tmp(items, (arg0) => stateFromStoresArray.includes(arg0));
   }, items2), 2);

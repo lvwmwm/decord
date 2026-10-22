@@ -1,9 +1,9 @@
-// Module ID: 9650
-// Function ID: 9651
+// Module ID: 9657
+// Function ID: 9658
 // Name: PremiumUpsellActionSheet
-// Dependencies: [19, 17, 4970, 1207, 5700, 4995, 1392, 1394, 1087, 5800, 9651, 21, 4969, 587, 558, 576, 5238, 2053, 9652, 8151, 8135, 9653, 9654, 1128, 9658, 9662, 9663, 5196, 9649, 9664, 13982, 13986, 1107, 1384, 9370, 5655, 5244, 504, 7237, 9641, 7541, 8416, 13987, 9902, 1267, 9886, 5145, 7282, 13989, 5220, 5230, 8407, 2]
+// Dependencies: [19, 17, 4970, 1207, 5700, 4995, 1392, 1394, 1087, 5800, 9658, 21, 4969, 587, 558, 576, 5238, 2053, 9659, 8152, 8136, 9660, 9661, 1128, 9665, 9669, 9670, 5196, 9656, 9671, 13996, 14000, 1107, 1384, 9377, 5655, 5244, 504, 7238, 9648, 7542, 8417, 14001, 9909, 1267, 9893, 5145, 7283, 14003, 5220, 5230, 8408, 2]
 
-// Module 9650 (PremiumUpsellActionSheet)
+// Module 9657 (PremiumUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,12 +15,12 @@ import useToken from "useToken" /* 5238 */;
 import LinearGradientDefault from "LinearGradient" /* 5244 */;
 import FastImageDefault from "FastImage" /* 5655 */;
 import StreamSettingsConstants from "StreamSettingsConstants" /* 5800 */;
-import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 9649 */;
-import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9651 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9662 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9663 */;
-import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9664 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13986 */;
+import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 9656 */;
+import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9658 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9669 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9670 */;
+import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9671 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14000 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
@@ -53,14 +53,14 @@ let unpackModuleId;
 const ConstantsIOS = tmp(1107);
 const intl18 = tmp(1128);
 const PremiumUtils = tmp(2053);
-const FileUtils = tmp(8135);
-const UploadLimits = tmp(8151);
-const APNGPlayer = tmp(9370);
-const EntitlementFeatureNames = tmp(9652);
-const PremiumFeatureUpsellUtils = tmp(9653);
-const ReactionsSpotIllustration = tmp(9654);
-const StickersSpotIllustration = tmp(9658);
-const NitroScheduleMessageSpotIllustration = tmp(13982);
+const FileUtils = tmp(8136);
+const UploadLimits = tmp(8152);
+const APNGPlayer = tmp(9377);
+const EntitlementFeatureNames = tmp(9659);
+const PremiumFeatureUpsellUtils = tmp(9660);
+const ReactionsSpotIllustration = tmp(9661);
+const StickersSpotIllustration = tmp(9665);
+const NitroScheduleMessageSpotIllustration = tmp(13996);
 const View = react_native.View;
 ({ PremiumSubscriptionSKUs: c10, PremiumTypes: unpackModuleId, PremiumUpsellTypes: closure_12 } = PremiumConstants);
 ({ AnalyticEvents: map1, AnalyticsPages: closure_14, ThemeTypes: closure_15 } = Constants);

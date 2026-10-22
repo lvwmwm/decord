@@ -1,15 +1,15 @@
-// Module ID: 9060
-// Function ID: 9061
+// Module ID: 9067
+// Function ID: 9068
 // Name: InstantInviteShareApps
-// Dependencies: [32, 19, 17, 9061, 21, 4969, 587, 558, 576, 5239, 5283, 9096, 7943, 9065, 2]
+// Dependencies: [32, 19, 17, 9068, 21, 4969, 587, 558, 576, 5239, 5283, 9103, 7944, 9072, 2]
 
-// Module 9060 (InstantInviteShareApps)
+// Module 9067 (InstantInviteShareApps)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import InstantInviteConstants from "components/InstantInviteConstants" /* 9061 */;
+import InstantInviteConstants from "components/InstantInviteConstants" /* 9068 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

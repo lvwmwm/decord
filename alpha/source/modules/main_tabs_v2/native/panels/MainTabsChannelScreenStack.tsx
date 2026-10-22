@@ -1,9 +1,9 @@
-// Module ID: 17872
-// Function ID: 17873
+// Module ID: 17894
+// Function ID: 17895
 // Name: MainTabsChannelScreenStack
-// Dependencies: [32, 19, 17, 9670, 1087, 1098, 21, 4969, 558, 576, 5038, 17873, 17875, 5249, 5191, 5139, 5141, 17876, 5023, 11189, 17877, 5926, 5039, 1506, 5145, 17324, 11824, 5283, 5132, 17323, 584, 5146, 2]
+// Dependencies: [32, 19, 17, 9677, 1087, 1098, 21, 4969, 558, 576, 5038, 17895, 17897, 5249, 5191, 5139, 5141, 17898, 5023, 11198, 17899, 5925, 5039, 1506, 5145, 17346, 11838, 5283, 5132, 17345, 584, 5146, 2]
 
-// Module 17872 (MainTabsChannelScreenStack)
+// Module 17894 (MainTabsChannelScreenStack)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants2 from "Constants" /* 1098 */;
@@ -15,15 +15,15 @@ import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions"
 import ChatInputUtils from "ChatInputUtils" /* 5145 */;
 import useThemeDefault from "useTheme" /* 5191 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5283 */;
-import react_native from "react-native" /* 9670 */;
-import reactDefault from "react" /* 11189 */;
-import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 11824 */;
-import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 17323 */;
-import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 17324 */;
-import navigationTTIEnabled from "navigationTTIEnabled" /* 17873 */;
-import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 17875 */;
-import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 17876 */;
-import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 17877 */;
+import react_native from "react-native" /* 9677 */;
+import reactDefault from "react" /* 11198 */;
+import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 11838 */;
+import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 17345 */;
+import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 17346 */;
+import navigationTTIEnabled from "navigationTTIEnabled" /* 17895 */;
+import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 17897 */;
+import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 17898 */;
+import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 17899 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
@@ -48,7 +48,7 @@ let tmp;
 let tmp5;
 const ReanimatedRexport = tmp(5038);
 const useMountEffect = tmp(5249);
-const react3 = tmp5(5926);
+const react3 = tmp5(5925);
 function getKey(index) {
   return String(index.index);
 }
@@ -1365,8 +1365,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (cResult[7] !== sharedValue) {
     class J {
       constructor() {
-        closure_0 = setTimeout(() => { /* body not rendered: F153250 */ }, 10);
-        return () => { /* body not rendered: F153251 */ };
+        closure_0 = setTimeout(() => { /* body not rendered: F153505 */ }, 10);
+        return () => { /* body not rendered: F153506 */ };
       }
     }
     cResult[7] = sharedValue;
@@ -1375,24 +1375,24 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     class J {
       constructor() {
-        closure_0 = setTimeout(() => { /* body not rendered: F153250 */ }, 10);
-        return () => { /* body not rendered: F153251 */ };
+        closure_0 = setTimeout(() => { /* body not rendered: F153505 */ }, 10);
+        return () => { /* body not rendered: F153506 */ };
       }
     }
   }
   if (cResult[9] === shouldFreeze) {
     class J {
       constructor() {
-        closure_0 = setTimeout(() => { /* body not rendered: F153250 */ }, 10);
-        return () => { /* body not rendered: F153251 */ };
+        closure_0 = setTimeout(() => { /* body not rendered: F153505 */ }, 10);
+        return () => { /* body not rendered: F153506 */ };
       }
     }
     const effect1 = obj2.useEffect(tmp21, items);
     if (cResult[12] === firstScreenFrame) {
       class J {
         constructor() {
-          closure_0 = setTimeout(() => { /* body not rendered: F153250 */ }, 10);
-          return () => { /* body not rendered: F153251 */ };
+          closure_0 = setTimeout(() => { /* body not rendered: F153505 */ }, 10);
+          return () => { /* body not rendered: F153506 */ };
         }
       }
     }

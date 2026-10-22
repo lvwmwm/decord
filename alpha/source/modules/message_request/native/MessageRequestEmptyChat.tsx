@@ -1,9 +1,9 @@
-// Module ID: 13477
-// Function ID: 13478
+// Module ID: 13491
+// Function ID: 13492
 // Name: MessageRequestEmptyChat
 // Dependencies: [19, 17, 1098, 21, 4969, 1384, 558, 576, 1128, 5220, 2]
 
-// Module 13477 (MessageRequestEmptyChat)
+// Module 13491 (MessageRequestEmptyChat)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

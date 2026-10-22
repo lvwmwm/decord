@@ -1,10 +1,10 @@
-// Module ID: 14958
-// Function ID: 14959
+// Module ID: 14972
+// Function ID: 14973
 // Name: BlockedUserUtils
 // Dependencies: [4911, 1388, 2]
 // Exports: filterOutBlockedOrIgnoredUserIds, filterOutBlockedOrIgnoredUsers, hasBlockedOrIgnoredUserIds
 
-// Module 14958 (BlockedUserUtils)
+// Module 14972 (BlockedUserUtils)
 import RelationshipStore from "RelationshipStore" /* 4911 */;
 import size from "module_2" /* 2 */;
 

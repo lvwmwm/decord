@@ -1,9 +1,9 @@
-// Module ID: 13043
-// Function ID: 13044
+// Module ID: 13059
+// Function ID: 13060
 // Name: GameInviteVoiceCount
-// Dependencies: [19, 17, 5703, 21, 4969, 558, 576, 504, 8557, 587, 5220, 2]
+// Dependencies: [19, 17, 5703, 21, 4969, 558, 576, 504, 8558, 587, 5220, 2]
 
-// Module 13043 (GameInviteVoiceCount)
+// Module 13059 (GameInviteVoiceCount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
@@ -57,7 +57,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameInviteVo
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
-      const VoiceNormalIcon = tmp(8557).VoiceNormalIcon;
+      const VoiceNormalIcon = tmp(8558).VoiceNormalIcon;
       const tmp14 = closure_5(VoiceNormalIcon, obj2);
       cResult[4] = tmp14;
       tmp11 = tmp14;
@@ -101,7 +101,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameInviteVo
   if (0 !== stateFromStores) {
     const obj2 = { style: tmp.container, children: items2 };
     const obj3 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
-    const VoiceNormalIcon = tmp2(8557).VoiceNormalIcon;
+    const VoiceNormalIcon = tmp2(8558).VoiceNormalIcon;
     items2 = [closure_5(VoiceNormalIcon, obj3), ];
     const obj4 = { variant: "text-sm/medium", color: "text-feedback-positive", children: stateFromStores };
     items2[1] = closure_5(channel(5220).Text, obj4);

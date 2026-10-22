@@ -1,9 +1,9 @@
-// Module ID: 9265
-// Function ID: 9266
+// Module ID: 9272
+// Function ID: 9273
 // Name: GameProfileStoreLinksActionSheet
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 9223, 5646, 1633, 1128, 5220, 5230, 5196, 7282, 5255, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 9230, 5646, 1633, 1128, 5220, 5230, 5196, 7283, 5255, 2]
 
-// Module 9265 (GameProfileStoreLinksActionSheet)
+// Module 9272 (GameProfileStoreLinksActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
@@ -13,8 +13,8 @@ import Text_Text from "Text/Text" /* 5220 */;
 import components_Button_Button from "components/Button/Button" /* 5230 */;
 import BottomSheetModal from "BottomSheetModal" /* 5255 */;
 import LinkingDefault from "Linking" /* 5646 */;
-import ActionSheet2 from "ActionSheet" /* 7282 */;
-import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 9223 */;
+import ActionSheet2 from "ActionSheet" /* 7283 */;
+import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 9230 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -127,7 +127,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileS
                 }
               }
               const obj5 = { children: closure_5(trackAction(5255).BottomSheetScrollView, obj6) };
-              const ActionSheet = tmp(7282).ActionSheet;
+              const ActionSheet = tmp(7283).ActionSheet;
               obj6 = { contentContainerStyle: tmp8, children: items };
               items = [tmp18, tmp26];
               const tmp33 = closure_4(ActionSheet, obj5);

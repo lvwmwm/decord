@@ -1,12 +1,12 @@
-// Module ID: 17062
-// Function ID: 17063
+// Module ID: 17084
+// Function ID: 17085
 // Name: DesignSystemBackdropSetting
-// Dependencies: [8317, 1087, 11172, 17063, 2]
+// Dependencies: [8318, 1087, 11181, 17085, 2]
 
-// Module 17062 (DesignSystemBackdropSetting)
+// Module 17084 (DesignSystemBackdropSetting)
 import Constants from "Constants" /* 1087 */;
-import SettingsConstants from "SettingsConstants" /* 8317 */;
-import SettingBuilders from "SettingBuilders" /* 11172 */;
+import SettingsConstants from "SettingsConstants" /* 8318 */;
+import SettingBuilders from "SettingBuilders" /* 11181 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,16 +1,16 @@
-// Module ID: 17350
-// Function ID: 17351
+// Module ID: 17372
+// Function ID: 17373
 // Name: useMessagesSpecs
-// Dependencies: [109, 19, 1087, 558, 576, 5239, 1633, 17351, 17354, 17365, 587, 2]
+// Dependencies: [109, 19, 1087, 558, 576, 5239, 1633, 17373, 17376, 17387, 587, 2]
 
-// Module 17350 (useMessagesSpecs)
+// Module 17372 (useMessagesSpecs)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import useFontScale from "useFontScale" /* 5239 */;
-import MessagesHeader from "MessagesHeader" /* 17351 */;
-import MessagesItemChannel from "MessagesItemChannel" /* 17354 */;
-import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 17365 */;
+import MessagesHeader from "MessagesHeader" /* 17373 */;
+import MessagesItemChannel from "MessagesItemChannel" /* 17376 */;
+import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 17387 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

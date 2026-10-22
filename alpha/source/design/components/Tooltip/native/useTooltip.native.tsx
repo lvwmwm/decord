@@ -1,14 +1,14 @@
-// Module ID: 9811
-// Function ID: 9812
+// Module ID: 9818
+// Function ID: 9819
 // Name: useTooltip
-// Dependencies: [32, 5, 19, 21, 3, 558, 576, 1281, 5584, 9812, 1499, 9817, 2]
+// Dependencies: [32, 5, 19, 21, 3, 558, 576, 1281, 5584, 9819, 1499, 9824, 2]
 // Exports: useTooltipHelper
 
-// Module 9811 (useTooltip)
+// Module 9818 (useTooltip)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
-import AnimatedTooltip2 from "AnimatedTooltip" /* 9812 */;
+import AnimatedTooltip2 from "AnimatedTooltip" /* 9819 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

@@ -1,18 +1,18 @@
-// Module ID: 13117
-// Function ID: 13118
+// Module ID: 13133
+// Function ID: 13134
 // Name: GuildDirectoryMoreMenu
-// Dependencies: [109, 19, 21, 558, 576, 13111, 13118, 5896, 1128, 13120, 1202, 8092, 10090, 5675, 9941, 7943, 9613, 587, 9731, 2]
+// Dependencies: [109, 19, 21, 558, 576, 13127, 13134, 5895, 1128, 13136, 1202, 8093, 10097, 5675, 9948, 7944, 9620, 587, 9738, 2]
 
-// Module 13117 (GuildDirectoryMoreMenu)
+// Module 13133 (GuildDirectoryMoreMenu)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5896 */;
-import ReportModals from "ReportModals" /* 8092 */;
-import useCanManageGuildDirectoryEntryDefault from "useCanManageGuildDirectoryEntry" /* 13111 */;
-import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 13118 */;
-import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 13120 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5895 */;
+import ReportModals from "ReportModals" /* 8093 */;
+import useCanManageGuildDirectoryEntryDefault from "useCanManageGuildDirectoryEntry" /* 13127 */;
+import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 13134 */;
+import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 13136 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -148,7 +148,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirec
                     return <IconButton ref={ref} size="sm" variant="secondary" accessibilityLabel={intl.string(entry(dependencyMap[8]).t.PdRCRg)} icon={<MoreHorizontalIcon size="sm" color={nativeDefault.colors.WHITE} />} />;
                   }
                 }
-                const tmp26 = jsx(tmp(9731).ContextMenu, { items: arr, children: tmp24 });
+                const tmp26 = jsx(tmp(9738).ContextMenu, { items: arr, children: tmp24 });
                 cResult[23] = arr;
                 cResult[24] = tmp26;
                 tmp25 = tmp26;
@@ -230,7 +230,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirec
         }
       }
       tmp11[0] = tmp8;
-      tmp11[1] = tmp(10090).PencilIcon;
+      tmp11[1] = tmp(10097).PencilIcon;
       tmp11[2] = tmp5;
       cResult[14] = tmp5;
       cResult[15] = tmp11;
@@ -382,7 +382,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirec
         }
       }
       tmp21[0] = tmp18;
-      tmp21[1] = tmp(9941).FlagIcon;
+      tmp21[1] = tmp(9948).FlagIcon;
       tmp21[3] = tmp7;
       cResult[20] = tmp7;
       cResult[21] = tmp21;
@@ -423,7 +423,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirec
   if (tmp2.canEdit) {
     let obj = {
       label: intl.string(entry(1128).t.XnuOvN),
-      IconComponent: entry(10090).PencilIcon,
+      IconComponent: entry(10097).PencilIcon,
       action: function handleEdit() {
           const obj = GuildDirectoryEditDescriptionModalActionCreatorsDefault;
           const obj2 = { entry };
@@ -479,7 +479,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirec
     const push3 = items.push;
     const obj3 = {
       label: intl3.string(entry(1128).t.Aen9eh),
-      IconComponent: entry(9941).FlagIcon,
+      IconComponent: entry(9948).FlagIcon,
       variant: "destructive",
       action: function handleReport() {
           const obj = ReportModals;
@@ -491,7 +491,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirec
   }
   let tmp9 = null;
   if (0 !== items.length) {
-    tmp9 = jsx(entry(9731).ContextMenu, {
+    tmp9 = jsx(entry(9738).ContextMenu, {
       items,
       children(ref) {
           ref = ref.ref;

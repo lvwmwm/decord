@@ -1,9 +1,9 @@
-// Module ID: 14709
-// Function ID: 14710
+// Module ID: 14723
+// Function ID: 14724
 // Name: LargeCountDownPill
 // Dependencies: [17, 21, 4969, 587, 558, 576, 5649, 1128, 5672, 5220, 2]
 
-// Module 14709 (LargeCountDownPill)
+// Module 14723 (LargeCountDownPill)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;

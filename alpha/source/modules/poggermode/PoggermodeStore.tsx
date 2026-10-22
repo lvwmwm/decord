@@ -1,20 +1,20 @@
-// Module ID: 14576
-// Function ID: 14577
+// Module ID: 14590
+// Function ID: 14591
 // Name: PoggermodeStore
-// Dependencies: [502, 4872, 7735, 7736, 1087, 4896, 4816, 14577, 1123, 504, 584, 2]
+// Dependencies: [502, 4872, 7736, 7737, 1087, 4896, 4816, 14591, 1123, 504, 584, 2]
 // Exports: getComboId, isComboing, shouldTrackMessage
 
-// Module 14576 (PoggermodeStore)
+// Module 14590 (PoggermodeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import SecondaryIndexMap from "SecondaryIndexMap" /* 4896 */;
-import PoggermodeUtils from "PoggermodeUtils" /* 14577 */;
+import PoggermodeUtils from "PoggermodeUtils" /* 14591 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
-import PoggermodeSettingsStore from "PoggermodeSettingsStore" /* 7735 */;
-import PoggermodeConstants from "PoggermodeConstants" /* 7736 */;
+import PoggermodeSettingsStore from "PoggermodeSettingsStore" /* 7736 */;
+import PoggermodeConstants from "PoggermodeConstants" /* 7737 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

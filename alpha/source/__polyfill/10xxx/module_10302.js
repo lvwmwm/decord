@@ -1,9 +1,9 @@
 // Module ID: 10302
 // Function ID: 10303
-// Dependencies: [41, 42, 93, 95, 98, 10300, 10192]
+// Dependencies: [41, 42, 93, 95, 98, 10300, 10199]
 
 // Module 10302
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10192 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10199 */;
 import _mod10300 from "module_10300" /* 10300 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
@@ -27,13 +27,13 @@ function _isNativeReflectConstruct() {
   }
 }
 const keys = Object.keys(_mod10300.WEEKDAY_OFFSET);
-const regExp = new RegExp("(?<prefix>\u4E0A|\u4ECA|\u4E0B|\u9019|\u5462)(?:\u500B)?(?:\u661F\u671F|\u79AE\u62DC|\u9031)(?<weekday>" + keys.join("|") + ")");
-class ZHHantRelationWeekdayParser {
+const regExp = new RegExp("(?<prefix>\u4E0A|\u4E0B|\u8FD9)(?:\u4E2A)?(?:\u661F\u671F|\u793C\u62DC|\u5468)(?<weekday>" + keys.join("|") + ")");
+class ZHHansRelationWeekdayParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ZHHantRelationWeekdayParser);
-    const obj = _getPrototypeOf(ZHHantRelationWeekdayParser);
+    _classCallCheck(this, ZHHansRelationWeekdayParser);
+    const obj = _getPrototypeOf(ZHHansRelationWeekdayParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -45,7 +45,7 @@ class ZHHantRelationWeekdayParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ZHHantRelationWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ZHHansRelationWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
@@ -68,8 +68,7 @@ const items = [
           str2 = "next";
           if ("\u4E0B" != prefix) {
             str2 = null;
-            const tmp3 = "\u4ECA" != prefix && "\u9019" != prefix && "\u5462" != prefix;
-            if (!tmp3) {
+            if ("\u8FD9" == prefix) {
               str2 = "this";
             }
           }
@@ -134,4 +133,4 @@ const items = [
   }
 ];
 
-export default _createClass(ZHHantRelationWeekdayParser, items);
+export default _createClass(ZHHansRelationWeekdayParser, items);

@@ -1,9 +1,9 @@
-// Module ID: 13524
-// Function ID: 13525
+// Module ID: 13538
+// Function ID: 13539
 // Name: ContactSyncSuggestions
-// Dependencies: [32, 19, 17, 1087, 13525, 21, 4969, 587, 5254, 558, 5239, 576, 5220, 5018, 1417, 1202, 1128, 6886, 5238, 4966, 11, 1267, 8919, 7206, 5244, 1107, 5230, 2]
+// Dependencies: [32, 19, 17, 1087, 13539, 21, 4969, 587, 5254, 558, 5239, 576, 5220, 5018, 1417, 1202, 1128, 6885, 5238, 4966, 11, 1267, 8926, 7205, 5244, 1107, 5230, 2]
 
-// Module 13524 (ContactSyncSuggestions)
+// Module 13538 (ContactSyncSuggestions)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -15,9 +15,9 @@ import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import UserUtils from "UserUtils" /* 5018 */;
 import useFontScale from "useFontScale" /* 5239 */;
 import NavigatorConstants from "NavigatorConstants" /* 5254 */;
-import TableCheckboxRow2 from "TableCheckboxRow" /* 6886 */;
-import Form from "Form" /* 8919 */;
-import FriendsScreenConstants from "FriendsScreenConstants" /* 13525 */;
+import TableCheckboxRow2 from "TableCheckboxRow" /* 6885 */;
+import Form from "Form" /* 8926 */;
+import FriendsScreenConstants from "FriendsScreenConstants" /* 13539 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
@@ -284,7 +284,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sugges
       return onSelect(suggestion.suggested_user.id);
     }
   };
-  const TableCheckboxRow = tmp3(6886).TableCheckboxRow;
+  const TableCheckboxRow = tmp3(6885).TableCheckboxRow;
   obj4 = { source: userAvatarSource, size: native.AvatarSizes.REFRESH_MEDIUM_32 };
   Avatar = tmp3(1202).Avatar;
   items = [metroImportAll(Text_Text.Text, { variant: "text-xs/medium", color: "text-muted", children: userTag }), ];
@@ -618,7 +618,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncS
   }, items3);
   let obj6 = { contentContainerStyle: obj7, data: memo, renderItem: callback1 };
   obj7 = { paddingHorizontal: onSubmit(587).space.PX_16, paddingBottom: tmp6 };
-  const FlashList = friendSuggestions(7206).FlashList;
+  const FlashList = friendSuggestions(7205).FlashList;
   items5 = [closure_8(FlashList, obj6), , ];
   let obj8 = { style: tmp.linearGradient, start: friendSuggestions(1107).VerticalGradient.START, end: friendSuggestions(1107).VerticalGradient.END, pointerEvents: "none", colors: items };
   const tmp11 = onSubmit(5244);

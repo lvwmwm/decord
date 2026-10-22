@@ -1,10 +1,10 @@
-// Module ID: 16738
-// Function ID: 16739
+// Module ID: 16760
+// Function ID: 16761
 // Name: SettingsNotificationUtils
 // Dependencies: [1384, 4926, 2]
 // Exports: hasAndroidNotificationChannels
 
-// Module 16738 (SettingsNotificationUtils)
+// Module 16760 (SettingsNotificationUtils)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import size from "module_2" /* 2 */;
 

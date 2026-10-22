@@ -1,10 +1,10 @@
-// Module ID: 9125
-// Function ID: 9126
+// Module ID: 9132
+// Function ID: 9133
 // Name: useChannelVideoLimit
 // Dependencies: [4843, 5703, 1087, 558, 576, 504, 2]
 // Exports: getChannelVideoLimit
 
-// Module 9125 (useChannelVideoLimit)
+// Module 9132 (useChannelVideoLimit)
 import Constants from "Constants" /* 1087 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5703 */;

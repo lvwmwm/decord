@@ -1,9 +1,9 @@
-// Module ID: 17261
-// Function ID: 17262
+// Module ID: 17283
+// Function ID: 17284
 // Name: Welcome
-// Dependencies: [19, 17, 17262, 5176, 7551, 13233, 1406, 5686, 9024, 1087, 7411, 7793, 21, 4969, 587, 558, 576, 13584, 1128, 38, 1202, 5018, 5220, 5655, 14478, 7024, 7060, 15039, 1505, 1633, 504, 7568, 1267, 510, 5249, 6654, 5585, 17263, 17258, 1506, 5230, 6682, 5254, 12775, 5023, 2]
+// Dependencies: [19, 17, 17284, 5176, 7552, 13249, 1406, 5686, 9031, 1087, 7412, 7794, 21, 4969, 587, 558, 576, 13598, 1128, 38, 1202, 5018, 5220, 5655, 14492, 7023, 7059, 15052, 1505, 1633, 504, 7569, 1267, 510, 5249, 6653, 5585, 17285, 17280, 1506, 5230, 6681, 5254, 12794, 5023, 2]
 
-// Module 17261 (Welcome)
+// Module 17283 (Welcome)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,24 +14,24 @@ import Link from "Link" /* 1506 */;
 import UserUtilsDefault from "UserUtils" /* 5018 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7024 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7060 */;
-import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7411 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7568 */;
-import Constants2 from "Constants" /* 7793 */;
-import GuildInviteIconDefault from "GuildInviteIcon" /* 13584 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14478 */;
-import AssetRegistry from "AssetRegistry" /* 15039 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 17258 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7023 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7059 */;
+import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7412 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7569 */;
+import Constants2 from "Constants" /* 7794 */;
+import GuildInviteIconDefault from "GuildInviteIcon" /* 13598 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14492 */;
+import AssetRegistry from "AssetRegistry" /* 15052 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 17280 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AgeGateStore from "AgeGateStore" /* 17262 */;
+import AgeGateStore from "AgeGateStore" /* 17284 */;
 import ExperimentStore from "ExperimentStore" /* 5176 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7551 */;
-import MultiAccountStore from "MultiAccountStore" /* 13233 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7552 */;
+import MultiAccountStore from "MultiAccountStore" /* 13249 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import InviteStore from "InviteStore" /* 5686 */;
-import DisplayedInviteStore from "DisplayedInviteStore" /* 9024 */;
+import DisplayedInviteStore from "DisplayedInviteStore" /* 9031 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -135,7 +135,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
         tmp21 = cResult[4];
       }
       if (cResult[5] !== tmp21) {
-        const obj4 = { user: tmp21, guildId: "r" };
+        const obj4 = { user: tmp21, guildId: "Array" };
         const tmp28 = closure_20(native.Avatar, obj4);
         cResult[5] = tmp21;
         cResult[6] = tmp28;
@@ -179,7 +179,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
         tmp6 = cResult[11];
       }
       if (cResult[12] !== tmp6) {
-        const obj5 = { user: tmp6, guildId: "r" };
+        const obj5 = { user: tmp6, guildId: "Array" };
         const tmp13 = closure_20(native.Avatar, obj5);
         cResult[12] = tmp6;
         cResult[13] = tmp13;
@@ -303,7 +303,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
       _modDef38(null != inviter, "Null inviter");
       const self = this;
       const self2 = this;
-      const obj = { user: tmp10, guildId: "r" };
+      const obj = { user: tmp10, guildId: "Array" };
       const Avatar = native.Avatar;
       tmp10 = new UserRecord(inviter);
       tmp12 = closure_20(Avatar, obj);
@@ -318,7 +318,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
     } else {
       const self3 = this;
       const self4 = this;
-      const obj4 = { user: tmp29, guildId: "r" };
+      const obj4 = { user: tmp29, guildId: "Array" };
       const Avatar2 = native.Avatar;
       tmp29 = new UserRecord(inviter);
       const tmp31 = closure_20(Avatar2, obj4);

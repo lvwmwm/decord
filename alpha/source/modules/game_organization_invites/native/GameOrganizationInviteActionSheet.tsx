@@ -1,24 +1,24 @@
-// Module ID: 15146
-// Function ID: 15147
+// Module ID: 15159
+// Function ID: 15160
 // Name: GameOrganizationInviteActionSheet
-// Dependencies: [32, 19, 17, 9100, 4843, 9034, 1098, 21, 4969, 587, 9021, 5649, 1128, 558, 576, 9029, 504, 9051, 15147, 2406, 7282, 5964, 5220, 7131, 15150, 2]
+// Dependencies: [32, 19, 17, 9107, 4843, 9041, 1098, 21, 4969, 587, 9028, 5649, 1128, 558, 576, 9036, 504, 9058, 15160, 2406, 7283, 5963, 5220, 7130, 15163, 2]
 
-// Module 15146 (GameOrganizationInviteActionSheet)
+// Module 15159 (GameOrganizationInviteActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
 import intl6 from "intl" /* 1128 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5649 */;
-import InstantInviteUtils from "InstantInviteUtils" /* 9021 */;
-import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 9029 */;
-import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 9051 */;
-import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9100 */;
-import sendGameOrganizationInviteDefault from "sendGameOrganizationInvite" /* 15147 */;
+import InstantInviteUtils from "InstantInviteUtils" /* 9028 */;
+import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 9036 */;
+import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 9058 */;
+import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9107 */;
+import sendGameOrganizationInviteDefault from "sendGameOrganizationInvite" /* 15160 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import InviteSuggestionsStore from "InviteSuggestionsStore" /* 9034 */;
+import InviteSuggestionsStore from "InviteSuggestionsStore" /* 9041 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -191,7 +191,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
     }
   }
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    class F {
+    class N {
       constructor() {
         let ref;
         const tmp = InviteSuggestionsActionCreators;
@@ -210,12 +210,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
       }
     }
     const items2 = [];
-    cResult[8] = F;
+    cResult[8] = N;
     cResult[9] = items2;
     tmp19 = items2;
-    tmp18 = F;
+    tmp18 = N;
   } else {
-    class F {
+    class N {
       constructor() {
         let ref;
         const tmp = InviteSuggestionsActionCreators;
@@ -237,7 +237,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
   }
   const effect = obj4.useEffect(tmp18, tmp19);
   if (cResult[10] !== tmp7) {
-    class L {
+    class F {
       constructor(arg0) {
         let tmp2;
         if (closure_2 != null) {
@@ -250,9 +250,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
       }
     }
     cResult[10] = tmp7;
-    cResult[11] = L;
+    cResult[11] = F;
   } else {
-    class L {
+    class F {
       constructor(arg0) {
         let tmp2;
         if (closure_2 != null) {
@@ -266,7 +266,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
     }
   }
   if (cResult[12] === stateFromStores) {
-    class L {
+    class F {
       constructor(arg0) {
         let tmp2;
         if (closure_2 != null) {
@@ -279,7 +279,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
       }
     }
     if (cResult[15] === tmp4.centeredText) {
-      class L {
+      class F {
         constructor(arg0) {
           let tmp2;
           if (closure_2 != null) {
@@ -292,7 +292,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
         }
       }
       if (cResult[31] === tmp22) {
-        class L {
+        class F {
           constructor(arg0) {
             let tmp2;
             if (closure_2 != null) {
@@ -316,10 +316,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
     }
     const intl = tmp(1128).intl;
     const stringResult = intl.string(combined(2406).nVMqjA);
-    const ActionSheet = tmp(7282).ActionSheet;
+    const ActionSheet = tmp(7283).ActionSheet;
     const _Symbol = Symbol;
     if (cResult[30] === Symbol.for("react.memo_cache_sentinel")) {
-      class L {
+      class F {
         constructor(arg0) {
           let tmp2;
           if (closure_2 != null) {
@@ -334,7 +334,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
       cResult[30] = obj5.string(tmp(1128).t.cpT0Cq);
       const stringResult1 = obj5.string(tmp(1128).t.cpT0Cq);
     } else {
-      class L {
+      class F {
         constructor(arg0) {
           let tmp2;
           if (closure_2 != null) {
@@ -347,11 +347,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
         }
       }
     }
-    const Stack = tmp(5964).Stack;
+    const Stack = tmp(5963).Stack;
     const PX_16 = tmp31(587).space.PX_16;
     const header = tmp4.header;
     const obj3 = { spacing: combined(587).space.PX_4, children: items3 };
-    const Stack2 = tmp(5964).Stack;
+    const Stack2 = tmp(5963).Stack;
     const obj6 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp4.centeredText, children: intl2.formatToPlainString(combined(2406).EnTIIr, obj7) };
     const Heading = tmp(5220).Heading;
     intl2 = tmp(1128).intl;
@@ -363,34 +363,43 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
     obj9 = { noun: stringResult };
     items3[1] = closure_10(Text, obj8);
     const tmp37 = closure_11(Stack2, obj3);
-    const SearchField = tmp(7131).SearchField;
+    const SearchBar = tmp(7130).SearchBar;
     const intl4 = tmp(1128).intl;
     const obj10 = { noun: stringResult };
     cResult[15] = tmp4.centeredText;
     cResult[16] = tmp4.header;
-    cResult[17] = SearchField;
+    cResult[17] = SearchBar;
+    const formatToPlainStringResult = intl4.formatToPlainString(combined(2406).cRK6SQ, obj10);
+    class U {
+      constructor(arg0) {
+        if (null != stateFromStores) {
+          sendGameOrganizationInviteDefault(combined, stateFromStores, arg0, showInviteErrorToast);
+        }
+      }
+    }
     cResult[18] = Stack;
     cResult[19] = ActionSheet;
     cResult[20] = "md";
     cResult[21] = true;
     cResult[22] = tmp17;
-    cResult[23] = intl4.formatToPlainString(combined(2406).cRK6SQ, obj10);
+    cResult[23] = formatToPlainStringResult;
     cResult[24] = PX_16;
     cResult[25] = header;
     cResult[26] = tmp37;
     cResult[27] = true;
     cResult[28] = true;
     cResult[29] = tmp33;
-    const formatToPlainStringResult = intl4.formatToPlainString(combined(2406).cRK6SQ, obj10);
   }
-  const fn4 = function j(arg0) {
-    if (null != stateFromStores) {
-      sendGameOrganizationInviteDefault(combined, stateFromStores, arg0, showInviteErrorToast);
+  class U {
+    constructor(arg0) {
+      if (null != stateFromStores) {
+        sendGameOrganizationInviteDefault(combined, stateFromStores, arg0, showInviteErrorToast);
+      }
     }
-  };
+  }
   cResult[12] = stateFromStores;
   cResult[13] = combined;
-  cResult[14] = fn4;
+  cResult[14] = U;
 }) : (function GameOrganizationInviteActionSheet(guildId) {
   let Stack;
   let closure_2;
@@ -474,12 +483,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
   const intl = guildId(1128).intl;
   const stringResult = intl.string(combined(2406).nVMqjA);
   const obj3 = { scrollable: true, startExpanded: true, dismissAccessibilityLabel: intl2.string(guildId(1128).t.cpT0Cq), header: closure_11(Stack, obj4), children: tmp15Result };
-  const ActionSheet = guildId(7282).ActionSheet;
+  const ActionSheet = guildId(7283).ActionSheet;
   intl2 = guildId(1128).intl;
   obj4 = { spacing: combined(587).space.PX_16, style: tmp.header, children: items5 };
-  Stack = guildId(5964).Stack;
+  Stack = guildId(5963).Stack;
   const obj5 = { spacing: combined(587).space.PX_4, children: items4 };
-  const Stack2 = guildId(5964).Stack;
+  const Stack2 = guildId(5963).Stack;
   const obj6 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.centeredText, children: intl3.formatToPlainString(combined(2406).EnTIIr, { noun: stringResult }) };
   const Heading = guildId(5220).Heading;
   intl3 = guildId(1128).intl;
@@ -490,15 +499,15 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
   items4[1] = closure_10(Text, obj7);
   items5 = [closure_11(Stack2, obj5), ];
   const obj8 = { size: "md", round: true, onChange: callback, placeholder: intl5.formatToPlainString(combined(2406).cRK6SQ, { noun: stringResult }) };
-  const SearchField = guildId(7131).SearchField;
+  const SearchBar = guildId(7130).SearchBar;
   intl5 = guildId(1128).intl;
-  items5[1] = closure_10(SearchField, obj8);
+  items5[1] = closure_10(SearchBar, obj8);
   const tmp13 = combined;
   if (first) {
     tmp15Result = tmp15(closure_15, {});
   } else {
     const obj9 = { users: stateFromStoresArray, getSendState: callback1, onInvite: callback2 };
-    tmp15Result = tmp15(tmp13(15150), obj9);
+    tmp15Result = tmp15(tmp13(15163), obj9);
   }
   return closure_10(ActionSheet, obj3);
 });

@@ -1,17 +1,17 @@
-// Module ID: 7171
-// Function ID: 7172
+// Module ID: 7170
+// Function ID: 7171
 // Name: MemberVerificationAlertUpdate
-// Dependencies: [19, 1087, 21, 4969, 558, 576, 1128, 5646, 5655, 7172, 5220, 5965, 2]
+// Dependencies: [19, 1087, 21, 4969, 558, 576, 1128, 5646, 5655, 7171, 5220, 5964, 2]
 
-// Module 7171 (MemberVerificationAlertUpdate)
+// Module 7170 (MemberVerificationAlertUpdate)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl5 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import LinkingDefault from "Linking" /* 5646 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import AlertDefault from "Alert" /* 5965 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7172 */;
+import AlertDefault from "Alert" /* 5964 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7171 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;

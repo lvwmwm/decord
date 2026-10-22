@@ -1,18 +1,18 @@
-// Module ID: 9731
-// Function ID: 9732
+// Module ID: 9738
+// Function ID: 9739
 // Name: ContextMenu
-// Dependencies: [19, 21, 1384, 5038, 1499, 9732, 5239, 9733, 5958, 9734, 4976, 1128, 9735, 5283, 5198, 5253, 2]
+// Dependencies: [19, 21, 1384, 5038, 1499, 9739, 5239, 9740, 5957, 9741, 4976, 1128, 9742, 5283, 5198, 5253, 2]
 // Exports: ContextMenu
 
-// Module 9731 (ContextMenu)
+// Module 9738 (ContextMenu)
 import intl2 from "intl" /* 1128 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
 import HapticUtils from "HapticUtils" /* 5198 */;
 import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5253 */;
-import react_native from "react-native" /* 5958 */;
-import ContextMenuState from "ContextMenuState" /* 9732 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 9733 */;
-import UID from "UID" /* 9734 */;
+import react_native from "react-native" /* 5957 */;
+import ContextMenuState from "ContextMenuState" /* 9739 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 9740 */;
+import UID from "UID" /* 9741 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;

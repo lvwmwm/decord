@@ -1,16 +1,16 @@
-// Module ID: 17656
-// Function ID: 17657
+// Module ID: 17678
+// Function ID: 17679
 // Name: HomeDrawerDirectMessagesRow
-// Dependencies: [19, 17, 5698, 4911, 1087, 21, 4969, 587, 558, 576, 504, 5220, 1128, 17652, 5142, 5139, 2]
+// Dependencies: [19, 17, 5698, 4911, 1087, 21, 4969, 587, 558, 576, 504, 5220, 1128, 17674, 5142, 5139, 2]
 
-// Module 17656 (HomeDrawerDirectMessagesRow)
+// Module 17678 (HomeDrawerDirectMessagesRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
-import HomeDrawerShared from "HomeDrawerShared" /* 17652 */;
+import HomeDrawerShared from "HomeDrawerShared" /* 17674 */;
 import react from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 5698 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
@@ -132,7 +132,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDr
     tmp5 = metroImportAll(View, obj2);
   }
   const obj6 = { title: metroImportDefault(Text2, obj7), subtitle: tmp5 };
-  const HomeDrawerSharedItem = tmp2(17652).HomeDrawerSharedItem;
+  const HomeDrawerSharedItem = tmp2(17674).HomeDrawerSharedItem;
   obj7 = { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: intl2.string(intl3.t.YUU0RF) };
   Text2 = tmp2(5220).Text;
   intl2 = tmp2(1128).intl;

@@ -1,13 +1,13 @@
-// Module ID: 19190
-// Function ID: 19191
+// Module ID: 19213
+// Function ID: 19214
 // Name: GuildPremiumRoleSubscribeButton
-// Dependencies: [19, 21, 4969, 558, 576, 1128, 9831, 2]
+// Dependencies: [19, 21, 4969, 558, 576, 1128, 9838, 2]
 
-// Module 19190 (GuildPremiumRoleSubscribeButton)
+// Module 19213 (GuildPremiumRoleSubscribeButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
-import CreatorRevenueButton2 from "CreatorRevenueButton" /* 9831 */;
+import CreatorRevenueButton2 from "CreatorRevenueButton" /* 9838 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

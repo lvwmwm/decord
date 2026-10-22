@@ -1,15 +1,15 @@
-// Module ID: 10134
-// Function ID: 10135
+// Module ID: 10141
+// Function ID: 10142
 // Name: StickerPackInformationPopout
-// Dependencies: [19, 17, 21, 4969, 587, 6474, 1128, 558, 576, 5220, 6894, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 6473, 1128, 558, 576, 5220, 6893, 2]
 // Exports: doesStickerPackHavePopoutInformation
 
-// Module 10134 (StickerPackInformationPopout)
+// Module 10141 (StickerPackInformationPopout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import StickersUtils from "StickersUtils" /* 6474 */;
+import StickersUtils from "StickersUtils" /* 6473 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -230,7 +230,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StickerPackI
   obj6 = { stickerPackName: stickerPack.name };
   items2 = [closure_3(Text, obj5), ];
   const obj7 = { onPress: onClose, accessibilityRole: "button", accessibilityLabel: intl3.string(require("intl").t.cpT0Cq), children: closure_3(Text2, obj8) };
-  const PressableOpacity = tmp2(6894).PressableOpacity;
+  const PressableOpacity = tmp2(6893).PressableOpacity;
   intl3 = tmp2(1128).intl;
   obj8 = { variant: "text-md/bold", color: "text-brand", children: intl4.string(require("intl").t.cpT0Cq) };
   Text2 = tmp2(5220).Text;

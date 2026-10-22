@@ -1,9 +1,9 @@
-// Module ID: 10996
-// Function ID: 10997
+// Module ID: 11005
+// Function ID: 11006
 // Name: FamilyCenterPendingConnectionStore
 // Dependencies: [504, 584, 2]
 
-// Module 10996 (FamilyCenterPendingConnectionStore)
+// Module 11005 (FamilyCenterPendingConnectionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

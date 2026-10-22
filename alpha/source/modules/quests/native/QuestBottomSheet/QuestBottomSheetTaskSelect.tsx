@@ -1,10 +1,10 @@
-// Module ID: 16397
-// Function ID: 16398
+// Module ID: 16419
+// Function ID: 16420
 // Name: QuestBottomSheetTaskSelect
-// Dependencies: [19, 6696, 21, 558, 576, 9452, 1128, 6889, 9585, 6973, 2]
+// Dependencies: [19, 6695, 21, 558, 576, 9459, 1128, 6888, 9592, 6972, 2]
 
-// Module 16397 (QuestBottomSheetTaskSelect)
-import QuestConstants from "QuestConstants" /* 6696 */;
+// Module 16419 (QuestBottomSheetTaskSelect)
+import QuestConstants from "QuestConstants" /* 6695 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -27,7 +27,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
   const cResult = obj.c(11);
   onTaskSelect = onTaskSelect.onTaskSelect;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = closure_3(tmp(9452).ScreenIcon, {});
+    const tmp7 = closure_3(tmp(9459).ScreenIcon, {});
     const intl = tmp(1128).intl;
     const stringResult = intl.string(tmp(1128).t["QXc01+"]);
     cResult[0] = tmp7;
@@ -50,7 +50,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
           return tmpResult;
         }
     };
-    const tmp11 = closure_3(tmp(6889).TableRow, obj2);
+    const tmp11 = closure_3(tmp(6888).TableRow, obj2);
     cResult[2] = onTaskSelect;
     cResult[3] = tmp11;
     tmp9 = tmp11;
@@ -58,7 +58,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
     tmp9 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp15 = closure_3(tmp(9585).GameControllerIcon, {});
+    const tmp15 = closure_3(tmp(9592).GameControllerIcon, {});
     const intl2 = tmp(1128).intl;
     const stringResult1 = intl2.string(tmp(1128).t["8lAfuB"]);
     cResult[4] = tmp15;
@@ -82,7 +82,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
           return tmpResult;
         }
     };
-    const tmp19 = closure_3(tmp(6889).TableRow, obj3);
+    const tmp19 = closure_3(tmp(6888).TableRow, obj3);
     cResult[6] = onTaskSelect;
     cResult[7] = tmp19;
     tmp17 = tmp19;
@@ -98,7 +98,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
   }
   const obj4 = { hasIcons: true, children: items };
   items = [tmp9, tmp17];
-  const tmp21 = closure_4(tmp(6973).TableRowGroup, obj4);
+  const tmp21 = closure_4(tmp(6972).TableRowGroup, obj4);
   cResult[8] = tmp9;
   cResult[9] = tmp17;
   cResult[10] = tmp21;
@@ -109,10 +109,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
   let items;
   onTaskSelect = onTaskSelect.onTaskSelect;
   const obj = { hasIcons: true, children: items };
-  const TableRowGroup = onTaskSelect(6973).TableRowGroup;
+  const TableRowGroup = onTaskSelect(6972).TableRowGroup;
   const obj2 = {
     arrow: true,
-    icon: closure_3(onTaskSelect(9452).ScreenIcon, {}),
+    icon: closure_3(onTaskSelect(9459).ScreenIcon, {}),
     label: intl.string(onTaskSelect(1128).t["QXc01+"]),
     onPress() {
       let tmpResult;
@@ -122,12 +122,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
       return tmpResult;
     }
   };
-  const TableRow = onTaskSelect(6889).TableRow;
+  const TableRow = onTaskSelect(6888).TableRow;
   intl = onTaskSelect(1128).intl;
   items = [closure_3(TableRow, obj2), ];
   const obj3 = {
     arrow: true,
-    icon: closure_3(onTaskSelect(9585).GameControllerIcon, {}),
+    icon: closure_3(onTaskSelect(9592).GameControllerIcon, {}),
     label: intl2.string(onTaskSelect(1128).t["8lAfuB"]),
     onPress() {
       let tmpResult;
@@ -137,7 +137,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
       return tmpResult;
     }
   };
-  const TableRow2 = onTaskSelect(6889).TableRow;
+  const TableRow2 = onTaskSelect(6888).TableRow;
   intl2 = onTaskSelect(1128).intl;
   items[1] = closure_3(TableRow2, obj3);
   return closure_4(TableRowGroup, obj);

@@ -1,31 +1,31 @@
-// Module ID: 10690
-// Function ID: 10691
+// Module ID: 10697
+// Function ID: 10698
 // Name: ConjureActionCreators
-// Dependencies: [109, 5, 6757, 1392, 10691, 6759, 1087, 6691, 584, 1297, 10692, 5708, 10694, 569, 10689, 10695, 10697, 10700, 10698, 5612, 6760, 6795, 8643, 10701, 2]
+// Dependencies: [109, 5, 6756, 1392, 10698, 6758, 1087, 6690, 584, 1297, 10699, 5708, 10701, 569, 10696, 10702, 10704, 10707, 10705, 5612, 6759, 6794, 8650, 10708, 2]
 // Exports: applyPublishedPreview, applyRemixPreview, createProject, createRemix, deleteProjectInBackground, fetchApplicationChannels, fetchProjectLimit, isConjureProjectUnavailable, loadMissingConjureProjects, prefetchProject, refreshConjureInstallState, refreshPreviewApplication, setGuildHints, setSelectedProjectForGuild, takePrefetchedRead, updateProjectSettings
 
-// Module 10690 (ConjureActionCreators)
+// Module 10697 (ConjureActionCreators)
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5612 */;
-import ReadStateConstants from "ReadStateConstants" /* 6691 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6760 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6795 */;
-import UserActionCreators from "UserActionCreators" /* 8643 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10689 */;
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 10695 */;
-import conjurePreviewTicket from "conjurePreviewTicket" /* 10697 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 10698 */;
-import createProxyTicket from "createProxyTicket" /* 10700 */;
-import conjureAppInServer from "conjureAppInServer" /* 10701 */;
+import ReadStateConstants from "ReadStateConstants" /* 6690 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6759 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6794 */;
+import UserActionCreators from "UserActionCreators" /* 8650 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10696 */;
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 10702 */;
+import conjurePreviewTicket from "conjurePreviewTicket" /* 10704 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 10705 */;
+import createProxyTicket from "createProxyTicket" /* 10707 */;
+import conjureAppInServer from "conjureAppInServer" /* 10708 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ReadStateStore from "ReadStateStore" /* 6757 */;
+import ReadStateStore from "ReadStateStore" /* 6756 */;
 import UserStore from "UserStore" /* 1392 */;
-import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 10691 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6759 */;
+import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 10698 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6758 */;
 import size from "module_2" /* 2 */;
 
 let GUILD_COLLABORATION, closure_14, closure_15, closure_31, projectsFetchState, resourceIds;
@@ -1168,7 +1168,7 @@ export const applyRemixPreview = function applyRemixPreview(id, remix_preview) {
   const obj4 = { type: "CONJURE_PROJECT_INTEGRATION_STATUS_UPDATE", projectId: id, integrationStatus: { preview_ready: true, has_activity: remix_preview.has_activity, preview_app_channels: remix_preview.preview_app_channels, integration_installed: false, bot_permissions_changed: false, owner_authorization_revoked: false } };
   const tmpResult = DispatcherDefault;
   tmpResult.dispatch(obj4);
-  const obj5 = { type: "CONJURE_PROJECT_PUBLISH_STATUS_UPDATE", projectId: id, published: false, hasUnpublishedChanges: true, surface: str, previewAppChannels: remix_preview.preview_app_channels };
+  const obj5 = { type: "CONJURE_PROJECT_PUBLISH_STATUS_UPDATE", projectId: id, publishState: "not_live", surface: str, previewAppChannels: remix_preview.preview_app_channels };
   str = null;
   const dispatch = DispatcherDefault.dispatch;
   DispatcherDefault;

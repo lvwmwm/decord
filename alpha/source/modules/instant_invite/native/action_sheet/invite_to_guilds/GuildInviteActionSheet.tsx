@@ -1,9 +1,9 @@
-// Module ID: 14187
-// Function ID: 14188
+// Module ID: 14201
+// Function ID: 14202
 // Name: GuildInviteActionSheet
-// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 1128, 1202, 14188, 14189, 14185, 14190, 5220, 5579, 11040, 7232, 7131, 9021, 5251, 2]
+// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 1128, 1202, 14202, 14203, 14199, 14204, 5220, 5579, 11049, 7233, 7130, 9028, 5251, 2]
 
-// Module 14187 (GuildInviteActionSheet)
+// Module 14201 (GuildInviteActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,12 +11,12 @@ import intl4 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5251 */;
-import SearchField2 from "SearchField" /* 7131 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7232 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9021 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14188 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14189 */;
-import GuildInviteRowDefault from "GuildInviteRow" /* 14190 */;
+import SearchBar2 from "SearchBar" /* 7130 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7233 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9028 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14202 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14203 */;
+import GuildInviteRowDefault from "GuildInviteRow" /* 14204 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -99,7 +99,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildL
   const query = recipientId.query;
   const tmp4 = closure_8();
   dependencyMap = tmp4;
-  const obj2 = recipientId(14185);
+  const obj2 = recipientId(14199);
   [arr, arr2] = _slicedToArray(obj2.useServerInviteRows(recipientId, query), 2);
   const tmp5 = _slicedToArray(obj2.useServerInviteRows(recipientId, query), 2);
   if (cResult[0] === (0 === arr.length && 0 === arr2.length)) {
@@ -109,10 +109,10 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildL
         tmp7 = cResult[3];
       }
       if (cResult[4] === recipientId) {
-        let tmp9;
-        let tmp11;
+        let tmp10;
+        let tmp12;
         if (cResult[5] === source) {
-          tmp9 = cResult[6];
+          tmp10 = cResult[6];
         }
         if (cResult[7] !== tmp4) {
           function renderSectionHeader(data) {
@@ -125,33 +125,33 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildL
           }
           cResult[7] = tmp4;
           cResult[8] = renderSectionHeader;
-          tmp11 = renderSectionHeader;
+          tmp12 = renderSectionHeader;
         } else {
-          tmp11 = cResult[8];
+          tmp12 = cResult[8];
         }
-        _slicedToArray = tmp11;
-        let tmp13 = 0 === arr.length;
+        _slicedToArray = tmp12;
+        let tmp14 = 0 === arr.length;
         const insets = source(5579)().insets;
-        const tmp12 = source;
-        if (!tmp13) {
-          tmp13 = 0 === arr2.length;
+        const tmp13 = source;
+        if (!tmp14) {
+          tmp14 = 0 === arr2.length;
         }
-        let closure_4 = tmp13;
+        let closure_4 = tmp14;
         let num6 = 0;
-        if (tmp13) {
+        if (tmp14) {
           num6 = 24;
         }
-        const sum = insets.bottom + tmp12(587).space.PX_16;
+        const sum = insets.bottom + tmp13(587).space.PX_16;
         if (cResult[9] === num6) {
-          let tmp15;
+          let tmp16;
           if (cResult[10] === sum) {
-            tmp15 = cResult[11];
+            tmp16 = cResult[11];
           }
-          if (cResult[12] === tmp13) {
-            let tmp16;
-            let tmp18;
-            if (cResult[13] === tmp11) {
-              tmp16 = cResult[14];
+          if (cResult[12] === tmp14) {
+            let tmp17;
+            let tmp19;
+            if (cResult[13] === tmp12) {
+              tmp17 = cResult[14];
             }
             class A {
               constructor(arg0) {
@@ -163,9 +163,11 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildL
               }
             }
             if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-              const fn = function k(guild) {
-                return guild.guild.id;
-              };
+              class B {
+                constructor(guild) {
+                  return guild.guild.id;
+                }
+              }
               class A {
                 constructor(arg0) {
                   let tmp2 = null;
@@ -175,29 +177,28 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildL
                   return tmp2;
                 }
               }
-              tmp18 = fn;
+              tmp19 = B;
             } else {
-              tmp18 = cResult[15];
-            }
-            if (cResult[16] === tmp9) {
-              if (cResult[17] === tmp7) {
-                if (cResult[18] === tmp15) {
-                  let tmp19;
-                  if (cResult[19] === tmp16) {
-                    tmp19 = cResult[20];
-                  }
-                  return tmp19;
+              class B {
+                constructor(guild) {
+                  return guild.guild.id;
                 }
               }
             }
-            const obj3 = { renderItem: tmp9, contentContainerStyle: tmp15, sections: tmp7, renderSectionHeader: tmp16, stickySectionHeadersEnabled: true, keyExtractor: tmp18, ListEmptyComponent };
-            const tmp22 = closure_6(tmp(11040).UserProfileStackedActionSheetSectionList, obj3);
-            cResult[16] = tmp9;
+            if (cResult[16] === tmp10) {
+              class B {
+                constructor(guild) {
+                  return guild.guild.id;
+                }
+              }
+            }
+            const obj3 = { renderItem: tmp10, contentContainerStyle: tmp16, sections: tmp7, renderSectionHeader: tmp17, stickySectionHeadersEnabled: true, keyExtractor: tmp19, ListEmptyComponent };
+            cResult[16] = tmp10;
             cResult[17] = tmp7;
-            cResult[18] = tmp15;
-            cResult[19] = tmp16;
-            cResult[20] = tmp22;
-            tmp19 = tmp22;
+            cResult[18] = tmp16;
+            cResult[19] = tmp17;
+            cResult[20] = closure_6(tmp(11049).UserProfileStackedActionSheetSectionList, obj3);
+            const tmp23 = closure_6(tmp(11049).UserProfileStackedActionSheetSectionList, obj3);
           }
           class A {
             constructor(arg0) {
@@ -208,27 +209,35 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildL
               return tmp2;
             }
           }
-          cResult[12] = tmp13;
-          cResult[13] = tmp11;
+          cResult[12] = tmp14;
+          cResult[13] = tmp12;
           cResult[14] = A;
-          tmp16 = A;
+          tmp17 = A;
         }
         const obj4 = { paddingTop: num6, paddingBottom: sum };
         cResult[9] = num6;
         cResult[10] = sum;
         cResult[11] = obj4;
-        tmp15 = obj4;
+        tmp16 = obj4;
       }
       cResult[4] = recipientId;
       cResult[5] = source;
-      cResult[6] = tmp10;
-      tmp9 = tmp10;
+      cResult[6] = tmp11;
+      tmp10 = tmp11;
     }
   }
   if (0 === arr.length && 0 === arr2.length) {
-    items = [];
+    class B {
+      constructor(guild) {
+        return guild.guild.id;
+      }
+    }
   } else {
-    const obj5 = { title: tmp8(tmp(1128).t["u+Ithu"]), data: arr };
+    class B {
+      constructor(guild) {
+        return guild.guild.id;
+      }
+    }
     const intl = tmp(1128).intl;
     class A {
       constructor(arg0) {
@@ -239,10 +248,12 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildL
         return tmp2;
       }
     }
-    items = [obj5, ];
-    const obj6 = { title: intl2.string(tmp(1128).t["c5T+X/"]), data: arr2 };
+    tmp8[0] = tmp9(tmp(1128).t["u+Ithu"]);
+    tmp8[1] = arr;
+    items = [tmp8, ];
+    const obj5 = { title: intl2.string(tmp(1128).t["c5T+X/"]), data: arr2 };
     intl2 = tmp(1128).intl;
-    items[1] = obj6;
+    items[1] = obj5;
   }
   cResult[0] = 0 === arr.length && 0 === arr2.length;
   cResult[1] = arr;
@@ -265,7 +276,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildL
   dependencyMap = closure_8();
   let tmp = recipientId;
   let tmp2 = dependencyMap;
-  let obj = recipientId(14185);
+  let obj = recipientId(14199);
   [arr, arr2] = _slicedToArray(obj.useServerInviteRows(recipientId, query), 2);
   const tmp3 = _slicedToArray(obj.useServerInviteRows(recipientId, query), 2);
   if (0 === arr.length) {
@@ -310,7 +321,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildL
         },
       ListEmptyComponent
     };
-    const UserProfileStackedActionSheetSectionList = tmp(11040).UserProfileStackedActionSheetSectionList;
+    const UserProfileStackedActionSheetSectionList = tmp(11049).UserProfileStackedActionSheetSectionList;
     const tmp6 = closure_6;
     if (tmp5) {
       num = 24;
@@ -360,7 +371,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInviteA
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: intl.string(intl4.t.HvoZQD) };
-    const BottomSheetTitleHeader = tmp(7232).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(7233).BottomSheetTitleHeader;
     intl = tmp(1128).intl;
     const tmp10 = metroRequire(BottomSheetTitleHeader, obj2);
     cResult[1] = tmp10;
@@ -370,9 +381,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInviteA
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { onChange: first, placeholder: intl2.string(intl4.t.uohsSv) };
-    const SearchField = tmp(7131).SearchField;
+    const SearchBar = tmp(7130).SearchBar;
     intl2 = tmp(1128).intl;
-    const tmp13 = metroRequire(SearchField, obj3);
+    const tmp13 = metroRequire(SearchBar, obj3);
     cResult[2] = tmp13;
     tmp11 = tmp13;
   } else {
@@ -460,9 +471,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInviteA
     },
     placeholder: intl2.string(intl4.t.uohsSv)
   };
-  const SearchField = SearchField2.SearchField;
+  const SearchBar = SearchBar2.SearchBar;
   intl2 = intl4.intl;
-  items = [metroRequire(SearchField, obj4), ];
+  items = [metroRequire(SearchBar, obj4), ];
   const obj5 = { variant: "text-xs/medium", color: "text-subtle", children: format(v4UyUHh, obj6) };
   const Text = Text_Text.Text;
   const intl3 = intl4.intl;

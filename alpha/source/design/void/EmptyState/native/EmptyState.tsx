@@ -1,9 +1,9 @@
-// Module ID: 15364
-// Function ID: 15365
+// Module ID: 15377
+// Function ID: 15378
 // Name: EmptyState
 // Dependencies: [19, 17, 21, 4969, 587, 558, 576, 4976, 5655, 5220, 2]
 
-// Module 15364 (EmptyState)
+// Module 15377 (EmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

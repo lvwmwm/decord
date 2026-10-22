@@ -1,10 +1,10 @@
-// Module ID: 12469
-// Function ID: 12470
+// Module ID: 12479
+// Function ID: 12480
 // Name: subscribeToWindowDimensions
 // Dependencies: [1500, 2]
 // Exports: default
 
-// Module 12469 (subscribeToWindowDimensions)
+// Module 12479 (subscribeToWindowDimensions)
 import DimensionsStore from "DimensionsStore" /* 1500 */;
 import size from "module_2" /* 2 */;
 

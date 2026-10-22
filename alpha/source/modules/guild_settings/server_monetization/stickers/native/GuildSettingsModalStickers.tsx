@@ -1,19 +1,19 @@
-// Module ID: 18972
-// Function ID: 18973
+// Module ID: 18995
+// Function ID: 18996
 // Name: GuildSettingsModalStickers
-// Dependencies: [19, 17, 4843, 4901, 1392, 1087, 4800, 21, 1128, 18973, 9778, 14769, 4969, 587, 1633, 504, 8912, 18975, 7120, 8351, 5220, 6365, 5230, 18976, 8919, 5964, 6973, 6889, 8551, 10140, 1202, 5976, 6898, 18982, 2]
+// Dependencies: [19, 17, 4843, 4901, 1392, 1087, 4800, 21, 1128, 18996, 9785, 14783, 4969, 587, 1633, 504, 8919, 18998, 7119, 8352, 5220, 6364, 5230, 18999, 8926, 5963, 6972, 6888, 8552, 10147, 1202, 5975, 6897, 19005, 2]
 
-// Module 18972 (GuildSettingsModalStickers)
+// Module 18995 (GuildSettingsModalStickers)
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import StickersConstants from "StickersConstants" /* 4800 */;
-import TableRow2 from "TableRow" /* 6889 */;
-import TableRowGroup2 from "TableRowGroup" /* 6973 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 8351 */;
-import BoostGemIcon from "BoostGemIcon" /* 9778 */;
-import BoostTier3Icon from "BoostTier3Icon" /* 14769 */;
-import BoostGemOutlineIcon from "BoostGemOutlineIcon" /* 18973 */;
-import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 18976 */;
+import TableRow2 from "TableRow" /* 6888 */;
+import TableRowGroup2 from "TableRowGroup" /* 6972 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8352 */;
+import BoostGemIcon from "BoostGemIcon" /* 9785 */;
+import BoostTier3Icon from "BoostTier3Icon" /* 14783 */;
+import BoostGemOutlineIcon from "BoostGemOutlineIcon" /* 18996 */;
+import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 18999 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 4843 */;
@@ -38,13 +38,13 @@ let intl4;
 let map1;
 let metroImportAll;
 let tmp2;
-const LockIcon = tmp2(8551);
+const LockIcon = tmp2(8552);
 ({ ScrollView: c3, View: closure_4 } = react_native);
 ({ AppliedGuildBoostsRequiredForBoostedGuildTier: metroImportAll, BoostedGuildTiers } = Constants);
 const GuildFeatures = Constants.GuildFeatures;
 const MAX_STICKER_FILE_SIZE = StickersConstants.MAX_STICKER_FILE_SIZE;
 ({ jsx: closure_12, jsxs: map1 } = Fragment);
-let obj = { tier: BoostedGuildTiers.NONE, title: intl.string(intl5.t.tfVXhP), IconComponent: "r" };
+let obj = { tier: BoostedGuildTiers.NONE, title: intl.string(intl5.t.tfVXhP), IconComponent: "Array" };
 intl = intl5.intl;
 let items = [obj, , , ];
 let obj2 = { tier: BoostedGuildTiers.TIER_1, title: intl2.string(intl5.t.nzXtaS), IconComponent: BoostGemOutlineIcon.BoostGemOutlineIcon };

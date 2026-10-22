@@ -1,9 +1,9 @@
-// Module ID: 15243
-// Function ID: 15244
+// Module ID: 15256
+// Function ID: 15257
 // Name: BitRateStore
 // Dependencies: [5704, 504, 584, 2]
 
-// Module 15243 (BitRateStore)
+// Module 15256 (BitRateStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 5704 */;

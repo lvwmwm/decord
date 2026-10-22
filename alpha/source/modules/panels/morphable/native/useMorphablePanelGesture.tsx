@@ -1,17 +1,17 @@
-// Module ID: 18359
-// Function ID: 18360
+// Module ID: 18381
+// Function ID: 18382
 // Name: useMorphablePanelGesture
-// Dependencies: [19, 10866, 558, 576, 1499, 1633, 5038, 10869, 5283, 18357, 18360, 5198, 2]
+// Dependencies: [19, 10874, 558, 576, 1499, 1633, 5038, 10877, 5283, 18379, 18382, 5198, 2]
 
-// Module 18359 (useMorphablePanelGesture)
+// Module 18381 (useMorphablePanelGesture)
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
 import HapticUtils from "HapticUtils" /* 5198 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5283 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10869 */;
-import MorphablePanelUtils from "MorphablePanelUtils" /* 18357 */;
-import triggerIOSHapticDefault from "triggerIOSHaptic" /* 18360 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10877 */;
+import MorphablePanelUtils from "MorphablePanelUtils" /* 18379 */;
+import triggerIOSHapticDefault from "triggerIOSHaptic" /* 18382 */;
 import react from "react" /* 19 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 10866 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 10874 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

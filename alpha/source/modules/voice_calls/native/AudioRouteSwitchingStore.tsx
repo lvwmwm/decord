@@ -1,9 +1,9 @@
-// Module ID: 18441
-// Function ID: 18442
+// Module ID: 18463
+// Function ID: 18464
 // Name: AudioRouteSwitchingStore
 // Dependencies: [17, 4821, 5700, 5720, 5721, 504, 584, 2]
 
-// Module 18441 (AudioRouteSwitchingStore)
+// Module 18463 (AudioRouteSwitchingStore)
 import react_native from "react-native" /* 17 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;

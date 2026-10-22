@@ -1,16 +1,16 @@
-// Module ID: 7283
-// Function ID: 7284
+// Module ID: 7284
+// Function ID: 7285
 // Name: VerifiedRoleIcon
-// Dependencies: [19, 17, 1087, 21, 587, 4969, 558, 576, 7284, 7266, 7285, 5664, 2]
+// Dependencies: [19, 17, 1087, 21, 587, 4969, 558, 576, 7285, 7267, 7286, 5664, 2]
 
-// Module 7283 (VerifiedRoleIcon)
+// Module 7284 (VerifiedRoleIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useRoleIconProps2 from "useRoleIconProps" /* 7266 */;
-import getHigherContrastColor from "getHigherContrastColor" /* 7284 */;
-import RoleIconDefault from "RoleIcon" /* 7285 */;
+import useRoleIconProps2 from "useRoleIconProps" /* 7267 */;
+import getHigherContrastColor from "getHigherContrastColor" /* 7285 */;
+import RoleIconDefault from "RoleIcon" /* 7286 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import createStyles from "createStyles" /* 4969 */;

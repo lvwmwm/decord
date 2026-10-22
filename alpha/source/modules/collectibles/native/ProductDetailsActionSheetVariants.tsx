@@ -1,15 +1,15 @@
-// Module ID: 14405
-// Function ID: 14406
+// Module ID: 14419
+// Function ID: 14420
 // Name: ProductDetailsActionSheetVariants
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 9403, 1128, 6894, 9437, 7216, 7645, 5220, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 9410, 1128, 6893, 9444, 7215, 7646, 5220, 2]
 
-// Module 14405 (ProductDetailsActionSheetVariants)
+// Module 14419 (ProductDetailsActionSheetVariants)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Pressables from "Pressables" /* 6894 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9403 */;
-import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 9437 */;
+import Pressables from "Pressables" /* 6893 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9410 */;
+import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 9444 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -24,7 +24,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const CheckmarkSmallIcon2 = tmp(7216);
+const CheckmarkSmallIcon2 = tmp(7215);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -219,7 +219,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductDetai
   ({ disabled, onVariantSelect } = arg0);
   dependencyMap = tmp4;
   const tmp5 = closure_6();
-  const tmpResult = selectedVariantIndex(7645);
+  const tmpResult = selectedVariantIndex(7646);
   if (tmpResult.getIsVariantProduct(product)) {
     const _Symbol = Symbol;
     const container = tmp5.container;
@@ -281,7 +281,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductDetai
                   class V {
                     constructor(arg0, arg1) {
                       closure_0 = arg1;
-                      obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F150374 */ } };
+                      obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F150611 */ } };
                       return closure_1_4(closure_1_8, obj, arg0.variantValue);
                     }
                   }
@@ -297,7 +297,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductDetai
                 class V {
                   constructor(arg0, arg1) {
                     closure_0 = arg1;
-                    obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F150374 */ } };
+                    obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F150611 */ } };
                     return closure_1_4(closure_1_8, obj, arg0.variantValue);
                   }
                 }
@@ -322,7 +322,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductDetai
               class V {
                 constructor(arg0, arg1) {
                   closure_0 = arg1;
-                  obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F150374 */ } };
+                  obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F150611 */ } };
                   return closure_1_4(closure_1_8, obj, arg0.variantValue);
                 }
               }
@@ -335,7 +335,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductDetai
           class V {
             constructor(arg0, arg1) {
               closure_0 = arg1;
-              obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F150374 */ } };
+              obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F150611 */ } };
               return closure_1_4(closure_1_8, obj, arg0.variantValue);
             }
           }

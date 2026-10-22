@@ -1,22 +1,22 @@
-// Module ID: 17160
-// Function ID: 17161
+// Module ID: 17182
+// Function ID: 17183
 // Name: SponsoredContentPreferencesScreen
-// Dependencies: [19, 8317, 1087, 21, 1128, 2067, 558, 576, 11172, 15898, 2]
+// Dependencies: [19, 8318, 1087, 21, 1128, 2067, 558, 576, 11181, 15916, 2]
 
-// Module 17160 (SponsoredContentPreferencesScreen)
+// Module 17182 (SponsoredContentPreferencesScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
-import SettingsConstants from "SettingsConstants" /* 8317 */;
-import SettingLayoutDefault from "SettingLayout" /* 15898 */;
+import SettingsConstants from "SettingsConstants" /* 8318 */;
+import SettingLayoutDefault from "SettingLayout" /* 15916 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const SettingBuilders = tmp(11172);
+const SettingBuilders = tmp(11181);
 function useSponsoredContentSettings() {
   let cf9mvV;
   let format;

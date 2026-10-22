@@ -1,24 +1,24 @@
-// Module ID: 17867
-// Function ID: 17868
+// Module ID: 17889
+// Function ID: 17890
 // Name: GuildOpenNotificationNudge
-// Dependencies: [32, 19, 4881, 4843, 4995, 6690, 13229, 13230, 1087, 21, 558, 576, 504, 1128, 17868, 16737, 13231, 7187, 5013, 7480, 4805, 13232, 5196, 17867, 2002, 2]
+// Dependencies: [32, 19, 4881, 4843, 4995, 6689, 13245, 13246, 1087, 21, 558, 576, 504, 1128, 17890, 16759, 13247, 7186, 5013, 7481, 4805, 13248, 5196, 17889, 2002, 2]
 // Exports: useGuildOpenNudge
 
-// Module 17867 (GuildOpenNotificationNudge)
+// Module 17889 (GuildOpenNotificationNudge)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7187 */;
-import PushNotificationPermissionStore2 from "PushNotificationPermissionStore" /* 13229 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13232 */;
-import NotificationNudgeBottomSheetDefault from "NotificationNudgeBottomSheet" /* 17868 */;
+import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7186 */;
+import PushNotificationPermissionStore2 from "PushNotificationPermissionStore" /* 13245 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13248 */;
+import NotificationNudgeBottomSheetDefault from "NotificationNudgeBottomSheet" /* 17890 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 4881 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6690 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13230 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6689 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13246 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -154,9 +154,9 @@ export const useGuildOpenNudge = function useGuildOpenNudge() {
     }
     return guildId;
   });
-  let obj2 = stateFromStores3(16737);
+  let obj2 = stateFromStores3(16759);
   const inHoldout = obj2.useConfig({ location: "useGuildOpenNudge" }).inHoldout;
-  let obj3 = stateFromStores(13231);
+  let obj3 = stateFromStores(13247);
   const canSeePushNotificationNudge = obj3.useCanSeePushNotificationNudge();
   const items1 = [UserGuildSettingsStore];
   const obj4 = stateFromStores(504);
@@ -243,8 +243,8 @@ export const useGuildOpenNudge = function useGuildOpenNudge() {
     tmp13 = stateFromStores4;
   }
   let prop = null;
-  const useSelectedTimeRecurringGuildDismissibleContent = tmp(7480).useSelectedTimeRecurringGuildDismissibleContent;
-  tmp(7480);
+  const useSelectedTimeRecurringGuildDismissibleContent = tmp(7481).useSelectedTimeRecurringGuildDismissibleContent;
+  tmp(7481);
   if (tmp13) {
     prop = tmp(4805).DismissibleContent.NOTIFICATION_NUDGE_GUILD_OPEN_PER_GUILD;
   }
@@ -267,7 +267,7 @@ export const useGuildOpenNudge = function useGuildOpenNudge() {
       const result = obj.setPushPermissionReactivationSeen(PermissionPromptType.GUILD_OPEN_BOTTOM_SHEET);
       const obj3 = { guildId: tmp, markAsDismissed };
       const obj2 = ActionSheetActionCreatorsDefault;
-      obj2.openLazy(asyncRequire(17867, dependencyMap.paths), c16, obj3);
+      obj2.openLazy(asyncRequire(17889, dependencyMap.paths), c16, obj3);
     }
   }, items6);
 };

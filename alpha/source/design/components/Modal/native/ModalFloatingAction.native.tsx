@@ -1,9 +1,9 @@
-// Module ID: 12858
-// Function ID: 12859
+// Module ID: 12876
+// Function ID: 12877
 // Name: ModalFloatingAction
-// Dependencies: [109, 19, 17, 21, 4969, 558, 576, 5038, 4983, 1633, 5233, 5234, 683, 5244, 12859, 2]
+// Dependencies: [109, 19, 17, 21, 4969, 558, 576, 5038, 4983, 1633, 5233, 5234, 683, 5244, 12877, 2]
 
-// Module 12858 (ModalFloatingAction)
+// Module 12876 (ModalFloatingAction)
 import react2 from "react" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
 import spring from "spring" /* 5233 */;

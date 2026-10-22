@@ -1,12 +1,12 @@
-// Module ID: 8314
-// Function ID: 8315
+// Module ID: 8315
+// Function ID: 8316
 // Name: canAddNewReactions
-// Dependencies: [6622, 4901, 1087, 2]
+// Dependencies: [6621, 4901, 1087, 2]
 // Exports: default
 
-// Module 8314 (canAddNewReactions)
+// Module 8315 (canAddNewReactions)
 import Constants from "Constants" /* 1087 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6622 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6621 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
 import size from "module_2" /* 2 */;
 

@@ -1,19 +1,19 @@
-// Module ID: 18262
-// Function ID: 18263
+// Module ID: 18284
+// Function ID: 18285
 // Name: OrbsArcadeGameScreen
-// Dependencies: [19, 17, 6761, 1087, 5595, 18263, 6762, 21, 4969, 587, 558, 576, 1633, 504, 1506, 11827, 10735, 11449, 11828, 11832, 18264, 18265, 5023, 2]
+// Dependencies: [19, 17, 6760, 1087, 5595, 18285, 6761, 21, 4969, 587, 558, 576, 1633, 504, 1506, 11841, 10742, 11460, 11842, 11846, 18286, 18287, 5023, 2]
 
-// Module 18262 (OrbsArcadeGameScreen)
+// Module 18284 (OrbsArcadeGameScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import Link from "Link" /* 1506 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5595 */;
-import leaveFrame from "leaveFrame" /* 10735 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 18263 */;
+import leaveFrame from "leaveFrame" /* 10742 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 18285 */;
 import react_mod from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6761 */;
-import FramesConstants from "FramesConstants" /* 6762 */;
+import FramesStore from "FramesStore" /* 6760 */;
+import FramesConstants from "FramesConstants" /* 6761 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

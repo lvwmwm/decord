@@ -1,17 +1,17 @@
-// Module ID: 9587
-// Function ID: 9588
+// Module ID: 9594
+// Function ID: 9595
 // Name: TwoWayLinkLanding
-// Dependencies: [19, 17, 6486, 21, 4969, 558, 576, 9588, 504, 5655, 5220, 6889, 1128, 5230, 5964, 7207, 2]
+// Dependencies: [19, 17, 6485, 21, 4969, 558, 576, 9595, 504, 5655, 5220, 6888, 1128, 5230, 5963, 7206, 2]
 
-// Module 9587 (TwoWayLinkLanding)
+// Module 9594 (TwoWayLinkLanding)
 import get_initialized from "get initialized" /* 504 */;
 import intl3 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import TableRow2 from "TableRow" /* 6889 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9588 */;
+import TableRow2 from "TableRow" /* 6888 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9595 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6486 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6485 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -44,7 +44,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLink
   ({ img, imgStyle, headerConnect, headerReconnect, body, valueProps } = platformType);
   ({ learnMoreLink, onNext } = platformType);
   const tmp4 = closure_8();
-  const obj2 = platformType(9588);
+  const obj2 = platformType(9595);
   const twoWayLinkStyles = obj2.useTwoWayLinkStyles();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ConnectedAccountsStore];
@@ -299,9 +299,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLink
   items3[1] = tmp9Result;
   items4 = [closure_7(tmp8, { alwaysBounceVertical: false, children: items3 }), ];
   const obj11 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: closure_6(Stack, obj12) };
-  const SafeAreaPaddingView = tmp2(7207).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp2(7206).SafeAreaPaddingView;
   obj12 = { spacing: 8, direction: "vertical", style: twoWayLinkStyles.footerButton, children: closure_6(Button, obj13) };
-  Stack = tmp2(5964).Stack;
+  Stack = tmp2(5963).Stack;
   obj13 = { variant: "primary", size: "lg", text: intl2.string(intl3.t.LhlgY9), onPress: onNext };
   Button = tmp2(5230).Button;
   intl2 = tmp2(1128).intl;

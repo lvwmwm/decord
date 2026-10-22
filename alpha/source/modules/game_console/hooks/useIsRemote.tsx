@@ -1,9 +1,9 @@
-// Module ID: 7362
-// Function ID: 7363
+// Module ID: 7363
+// Function ID: 7364
 // Name: useIsRemote
 // Dependencies: [5701, 558, 576, 504, 2]
 
-// Module 7362 (useIsRemote)
+// Module 7363 (useIsRemote)
 import react from "react" /* 576 */;
 import GameConsoleStore from "GameConsoleStore" /* 5701 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

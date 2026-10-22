@@ -1,9 +1,9 @@
-// Module ID: 19006
-// Function ID: 19007
+// Module ID: 19029
+// Function ID: 19030
 // Name: GuildSettingsRoleCreateModal
-// Dependencies: [5, 32, 19, 17, 4839, 4875, 1392, 8975, 19007, 1087, 21, 4969, 5254, 587, 1267, 5697, 558, 576, 1128, 5220, 19005, 504, 38, 4906, 1505, 7013, 6910, 6816, 5648, 19004, 5196, 17637, 2002, 5964, 6994, 6973, 6889, 15781, 1105, 5230, 19011, 19012, 8974, 19013, 5579, 5253, 5958, 7120, 5249, 7081, 2]
+// Dependencies: [5, 32, 19, 17, 4839, 4875, 1392, 8982, 19030, 1087, 21, 4969, 5254, 587, 1267, 5697, 558, 576, 1128, 5220, 19028, 504, 38, 4906, 1505, 7012, 6909, 6815, 5648, 19027, 5196, 17659, 2002, 5963, 6993, 6972, 6888, 15795, 1105, 5230, 19034, 19035, 8981, 19036, 5579, 5253, 5957, 7119, 5249, 7080, 2]
 
-// Module 19006 (GuildSettingsRoleCreateModal)
+// Module 19029 (GuildSettingsRoleCreateModal)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -17,19 +17,19 @@ import Text_Text from "Text/Text" /* 5220 */;
 import useMountEffectDefault from "useMountEffect" /* 5249 */;
 import NavigatorConstants from "NavigatorConstants" /* 5254 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5697 */;
-import react_native from "react-native" /* 5958 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6816 */;
-import NavigatorHeader from "NavigatorHeader" /* 6910 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8974 */;
-import GuildSettingsRoleCreateModalActionCreatorsDefault from "GuildSettingsRoleCreateModalActionCreators" /* 19005 */;
+import react_native from "react-native" /* 5957 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6815 */;
+import NavigatorHeader from "NavigatorHeader" /* 6909 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8981 */;
+import GuildSettingsRoleCreateModalActionCreatorsDefault from "GuildSettingsRoleCreateModalActionCreators" /* 19028 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import GuildRoleStore from "GuildRoleStore" /* 4875 */;
 import UserStore from "UserStore" /* 1392 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8975 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 19007 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8982 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 19030 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -256,7 +256,7 @@ function RoleCreateScene() {
     metroImportAll.dismiss();
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { color, onSelect };
-    obj.openLazy(asyncRequire(17637, dependencyMap.paths), "RoleColorPicker", obj2);
+    obj.openLazy(asyncRequire(17659, dependencyMap.paths), "RoleColorPicker", obj2);
   }, items2);
   let tmp16 = closure_22;
   let tmp17 = closure_33;
@@ -634,8 +634,8 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? (function RolePe
         const obj8 = { onSelect: tmp11, location: constants2.GUILD_ROLE_CREATION_MODAL, guildId: guild.id };
         cResult[12] = guild.id;
         cResult[13] = tmp11;
-        cResult[14] = closure_21(role(19011), obj8);
-        const tmp22 = closure_21(role(19011), obj8);
+        cResult[14] = closure_21(role(19034), obj8);
+        const tmp22 = closure_21(role(19034), obj8);
       }
     }
     const fn2 = function o(arg0) {
@@ -1345,7 +1345,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   useMountEffectDefault(tmp5);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { screens, initialRouteName: obj6.STEP_DISPLAY };
-    const tmp11 = closure_21(tmp(7081).Navigator, obj2);
+    const tmp11 = closure_21(tmp(7080).Navigator, obj2);
     cResult[2] = tmp11;
     tmp7 = tmp11;
   } else {

@@ -1,16 +1,16 @@
-// Module ID: 17224
-// Function ID: 17225
+// Module ID: 17246
+// Function ID: 17247
 // Name: DeclarativeSystemNotifPermissionHelpers
-// Dependencies: [17, 15634, 15638, 4926, 1383, 7022, 2]
+// Dependencies: [17, 15647, 15651, 4926, 1383, 7021, 2]
 // Exports: openSystemNotifSettings, refreshSystemNotifPermissions
 
-// Module 17224 (DeclarativeSystemNotifPermissionHelpers)
+// Module 17246 (DeclarativeSystemNotifPermissionHelpers)
 import react_native from "react-native" /* 17 */;
 import react_nativeAll from "react-native" /* 1383 */;
 import DeviceUtils from "DeviceUtils" /* 4926 */;
-import react_nativeDefault from "react-native" /* 7022 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15634 */;
-import react_nativeDefault2 from "react-native" /* 15638 */;
+import react_nativeDefault from "react-native" /* 7021 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15647 */;
+import react_nativeDefault2 from "react-native" /* 15651 */;
 import size from "module_2" /* 2 */;
 
 let set;

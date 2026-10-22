@@ -1,10 +1,10 @@
-// Module ID: 9641
-// Function ID: 9642
+// Module ID: 9648
+// Function ID: 9649
 // Name: PremiumUpsellUtils
-// Dependencies: [19, 1392, 1087, 1394, 21, 9642, 1128, 9643, 9644, 9645, 2053, 9646, 9647, 9648, 5896, 9834, 2002, 558, 576, 7541, 9763, 5145, 1267, 5196, 9762, 2]
+// Dependencies: [19, 1392, 1087, 1394, 21, 9649, 1128, 9650, 9651, 9652, 2053, 9653, 9654, 9655, 5895, 9841, 2002, 558, 576, 7542, 9770, 5145, 1267, 5196, 9769, 2]
 // Exports: getUpsellItems
 
-// Module 9641 (PremiumUpsellUtils)
+// Module 9648 (PremiumUpsellUtils)
 import Fragment from "Fragment" /* 21 */;
 import intl20 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
@@ -12,14 +12,14 @@ import asyncRequire from "asyncRequire" /* 2002 */;
 import PremiumUtils from "PremiumUtils" /* 2053 */;
 import ChatInputUtils from "ChatInputUtils" /* 5145 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9642 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9643 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 9644 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 9645 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 9646 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 9647 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9762 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9763 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9649 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9650 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 9651 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 9652 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 9653 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 9654 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9769 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9770 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
@@ -414,7 +414,7 @@ let obj = {
           importer() {
                 let imageSource;
                 let largestFileSize;
-                const promise = asyncRequire(9834, dependencyMap.paths);
+                const promise = asyncRequire(9841, dependencyMap.paths);
                 return promise.then((result) => {
                   let closure_0 = result.default;
                   return (arg0) => {

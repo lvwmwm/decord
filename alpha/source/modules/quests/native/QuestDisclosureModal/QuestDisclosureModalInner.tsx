@@ -1,9 +1,9 @@
-// Module ID: 16349
-// Function ID: 16350
+// Module ID: 16372
+// Function ID: 16373
 // Name: QuestDisclosureModalInner
-// Dependencies: [17, 1087, 21, 4969, 587, 558, 576, 4797, 9615, 1128, 9461, 11780, 9585, 16350, 9563, 5220, 6891, 2067, 5230, 2]
+// Dependencies: [17, 1087, 21, 4969, 587, 558, 576, 4797, 9622, 1128, 9468, 11792, 9592, 16373, 9570, 5220, 6890, 2067, 5230, 2]
 
-// Module 16349 (QuestDisclosureModalInner)
+// Module 16372 (QuestDisclosureModalInner)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import Text_Text from "Text/Text" /* 5220 */;
@@ -70,20 +70,20 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDiscl
     let items1;
     let obj2 = { icon: null, text: null };
     if (setting) {
-      obj2.icon = closure_6(tmp(9615).ServerIcon, { size: "xs" });
+      obj2.icon = closure_6(tmp(9622).ServerIcon, { size: "xs" });
       const intl4 = tmp(1128).intl;
       obj2.text = intl4.string(tmp(1128).t["2bL0wT"]);
       let items = [obj2];
       items1 = items;
     } else {
-      obj2.icon = closure_6(tmp(9461).GlobeEarthIcon, { size: "xs" });
+      obj2.icon = closure_6(tmp(9468).GlobeEarthIcon, { size: "xs" });
       const intl = tmp(1128).intl;
       obj2.text = intl.string(tmp(1128).t.xQSdPv);
       items1 = [obj2, , ];
-      const obj3 = { icon: closure_6(tmp(11780).UserIcon, { size: "xs" }), text: intl2.string(tmp(1128).t.mYt7hQ) };
+      const obj3 = { icon: closure_6(tmp(11792).UserIcon, { size: "xs" }), text: intl2.string(tmp(1128).t.mYt7hQ) };
       intl2 = tmp(1128).intl;
       items1[1] = obj3;
-      const obj4 = { icon: closure_6(tmp(9585).GameControllerIcon, { size: "xs" }), text: intl3.string(tmp(1128).t.XAsWxQ) };
+      const obj4 = { icon: closure_6(tmp(9592).GameControllerIcon, { size: "xs" }), text: intl3.string(tmp(1128).t.XAsWxQ) };
       intl3 = tmp(1128).intl;
       items1[2] = obj4;
     }
@@ -95,7 +95,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDiscl
   }
   ({ container, contentContainer } = tmp4);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp9 = closure_6(tmp(16350).WumpusCouchSpotIllustration, {});
+    const tmp9 = closure_6(tmp(16373).WumpusCouchSpotIllustration, {});
     cResult[2] = tmp9;
     tmp7 = tmp9;
   } else {
@@ -241,7 +241,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDiscl
                                   return tmp(React3, obj, index);
                                 })
                 };
-                const Card = tmp(6891).Card;
+                const Card = tmp(6890).Card;
                 tmp20 = closure_6(Card, obj13);
               }
               cResult[15] = isTargetedDisclosure;
@@ -258,7 +258,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDiscl
       }
     }
   }
-  const tmpResult = tmp(9563);
+  const tmpResult = tmp(9570);
   const disclosureText = tmpResult.getDisclosureText({ adCreativeType, gamePublisher, gameTitle, isTargetedDisclosure, isContextualDisclosure: setting, cosponsorName, isVideoQuest });
   cResult[5] = adCreativeType;
   cResult[6] = cosponsorName;
@@ -309,7 +309,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDiscl
     const intl = tmp2(1128).intl;
     obj.text = intl.string(require("intl").t.xQSdPv);
     items1 = [obj, , ];
-    let obj2 = { icon: closure_6(tmp2(11780).UserIcon, { size: "xs" }), text: intl2.string(tmp2(1128).t.mYt7hQ) };
+    let obj2 = { icon: closure_6(tmp2(11792).UserIcon, { size: "xs" }), text: intl2.string(tmp2(1128).t.mYt7hQ) };
     intl2 = tmp2(1128).intl;
     items1[1] = obj2;
     const obj3 = { icon: closure_6(require("GameControllerIcon").GameControllerIcon, { size: "xs" }), text: intl3.string(require("intl").t.XAsWxQ) };
@@ -349,7 +349,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDiscl
           return tmp(React3, obj, index);
         })
     };
-    const Card = tmp2(6891).Card;
+    const Card = tmp2(6890).Card;
     isTargetedDisclosure = tmp6(Card, obj7);
   }
   items2[2] = isTargetedDisclosure;

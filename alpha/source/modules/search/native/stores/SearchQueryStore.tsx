@@ -1,18 +1,18 @@
-// Module ID: 13156
-// Function ID: 13157
+// Module ID: 13172
+// Function ID: 13173
 // Name: SearchQueryStore
-// Dependencies: [4821, 4911, 1392, 9684, 9683, 1087, 5590, 1128, 13149, 13157, 2041, 504, 584, 2]
+// Dependencies: [4821, 4911, 1392, 9691, 9690, 1087, 5590, 1128, 13165, 13173, 2041, 504, 584, 2]
 
-// Module 13156 (SearchQueryStore)
+// Module 13172 (SearchQueryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import TrackingConstants from "TrackingConstants" /* 9683 */;
-import SearchUtils from "SearchUtils" /* 13149 */;
-import SearchQueryTagManagerDefault from "SearchQueryTagManager" /* 13157 */;
+import TrackingConstants from "TrackingConstants" /* 9690 */;
+import SearchUtils from "SearchUtils" /* 13165 */;
+import SearchQueryTagManagerDefault from "SearchQueryTagManager" /* 13173 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
 import UserStore from "UserStore" /* 1392 */;
-import SearchConstants from "SearchConstants" /* 9684 */;
+import SearchConstants from "SearchConstants" /* 9691 */;
 import Constants from "Constants" /* 1087 */;
 import FunctionUtils from "FunctionUtils" /* 2041 */;
 import size from "module_2" /* 2 */;
@@ -205,7 +205,7 @@ class SearchQueryStateManager {
         let str = ": ";
         stringResult = intl.string(obj(1128).t.WNpFHa);
         items1 = [obj3];
-        obj4 = obj(13149);
+        obj4 = obj(13165);
       }
       items = items1;
     }

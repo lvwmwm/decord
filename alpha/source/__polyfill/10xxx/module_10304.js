@@ -1,9 +1,9 @@
 // Module ID: 10304
 // Function ID: 10305
-// Dependencies: [41, 42, 93, 95, 98, 10300, 10192]
+// Dependencies: [41, 42, 93, 95, 98, 10300, 10199]
 
 // Module 10304
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10192 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10199 */;
 import _mod10300 from "module_10300" /* 10300 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
@@ -27,13 +27,13 @@ function _isNativeReflectConstruct() {
   }
 }
 const keys = Object.keys(_mod10300.WEEKDAY_OFFSET);
-const regExp = new RegExp("(?:\u661F\u671F|\u79AE\u62DC|\u9031)(?<weekday>" + keys.join("|") + ")");
-class ZHHantWeekdayParser {
+const regExp = new RegExp("(?:\u661F\u671F|\u793C\u62DC|\u5468)(?<weekday>" + keys.join("|") + ")");
+class ZHHansWeekdayParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ZHHantWeekdayParser);
-    const obj = _getPrototypeOf(ZHHantWeekdayParser);
+    _classCallCheck(this, ZHHansWeekdayParser);
+    const obj = _getPrototypeOf(ZHHansWeekdayParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -45,7 +45,7 @@ class ZHHantWeekdayParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ZHHantWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ZHHansWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
@@ -97,4 +97,4 @@ const items = [
   }
 ];
 
-export default _createClass(ZHHantWeekdayParser, items);
+export default _createClass(ZHHansWeekdayParser, items);

@@ -1,17 +1,17 @@
-// Module ID: 13217
-// Function ID: 13218
+// Module ID: 13233
+// Function ID: 13234
 // Name: ApplicationCommandDiscoveryManager
 // Dependencies: [570, 1274, 2]
 // Exports: updateInitialSectionId
 
-// Module 13217 (ApplicationCommandDiscoveryManager)
+// Module 13233 (ApplicationCommandDiscoveryManager)
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const useCommandDiscoveryManager = module_570.create(() => ({ initialSectionId: "Array" }));
+const useCommandDiscoveryManager = module_570.create(() => ({ initialSectionId: "r" }));
 const result = size.fileFinishedImporting("modules/application_commands/ApplicationCommandDiscoveryManager.tsx");
 
 export { useCommandDiscoveryManager };

@@ -1,16 +1,16 @@
-// Module ID: 12227
-// Function ID: 12228
+// Module ID: 12238
+// Function ID: 12239
 // Name: useConjurePreviewMenu
-// Dependencies: [19, 10686, 558, 576, 11945, 12228, 5648, 504, 12201, 12229, 1128, 3830, 2]
+// Dependencies: [19, 10693, 558, 576, 11959, 12239, 5648, 504, 12212, 12240, 1128, 3830, 2]
 
-// Module 12227 (useConjurePreviewMenu)
+// Module 12238 (useConjurePreviewMenu)
 import intl2 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import ToastUtils from "ToastUtils" /* 5648 */;
-import conjureExternalConnections from "conjureExternalConnections" /* 12201 */;
-import conjureProjectMenuItems from "conjureProjectMenuItems" /* 12229 */;
+import conjureExternalConnections from "conjureExternalConnections" /* 12212 */;
+import conjureProjectMenuItems from "conjureProjectMenuItems" /* 12240 */;
 import react from "react" /* 19 */;
-import ConjureSettingsStore from "ConjureSettingsStore" /* 10686 */;
+import ConjureSettingsStore from "ConjureSettingsStore" /* 10693 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

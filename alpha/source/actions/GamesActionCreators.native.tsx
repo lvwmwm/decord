@@ -1,13 +1,13 @@
-// Module ID: 11306
-// Function ID: 11307
+// Module ID: 11315
+// Function ID: 11316
 // Name: GamesActionCreators
-// Dependencies: [5, 1087, 2026, 11307, 1107, 7393, 5646, 584, 1297, 11308, 11310, 2]
+// Dependencies: [5, 1087, 2026, 11316, 1107, 7394, 5646, 584, 1297, 11317, 11319, 2]
 
-// Module 11306 (GamesActionCreators)
+// Module 11315 (GamesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants2 from "Constants" /* 2026 */;
 import LinkingDefault from "Linking" /* 5646 */;
-import getOrFetchApplicationDefault from "getOrFetchApplication" /* 11307 */;
+import getOrFetchApplicationDefault from "getOrFetchApplication" /* 11316 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
@@ -149,8 +149,18 @@ obj = {
   deleteEntry() {
 
   },
-  launch() {
-    return Promise.resolve();
+  launch(arg0) {
+    let closure_0 = arg0;
+    return (async () => {
+      let c1;
+      let value;
+      const obj3 = value(c2[9]);
+      value = await obj3.tryStartAsEmbeddedApp(closure_0);
+      if (arg1 == null) {
+        value = false;
+      }
+      return value;
+    })();
   },
   join(arg0) {
     let closure_0 = arg0;

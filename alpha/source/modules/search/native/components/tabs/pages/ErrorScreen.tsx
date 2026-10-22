@@ -1,9 +1,9 @@
-// Module ID: 17976
-// Function ID: 17977
+// Module ID: 17998
+// Function ID: 17999
 // Name: ErrorScreen
 // Dependencies: [19, 17, 21, 4969, 558, 576, 5579, 4978, 5220, 2]
 
-// Module 17976 (ErrorScreen)
+// Module 17998 (ErrorScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

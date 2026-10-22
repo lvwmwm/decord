@@ -1,9 +1,9 @@
-// Module ID: 17696
-// Function ID: 17697
+// Module ID: 17718
+// Function ID: 17719
 // Name: GuildsBarUnreadBars
-// Dependencies: [32, 19, 17, 6800, 4995, 6687, 17628, 16334, 21, 4969, 7153, 558, 576, 1633, 16327, 16336, 551, 568, 504, 5038, 17697, 2]
+// Dependencies: [32, 19, 17, 6799, 4995, 6686, 17650, 16357, 21, 4969, 7152, 558, 576, 1633, 16350, 16359, 551, 568, 504, 5038, 17719, 2]
 
-// Module 17696 (GuildsBarUnreadBars)
+// Module 17718 (GuildsBarUnreadBars)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -11,16 +11,16 @@ import debounceDefault from "debounce" /* 551 */;
 import react2 from "react" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
-import SortedGuildStore2 from "SortedGuildStore" /* 6687 */;
-import FastList from "FastList" /* 7153 */;
-import QuestHooks from "QuestHooks" /* 16327 */;
-import useYouBarTotalHeight2 from "useYouBarTotalHeight" /* 16336 */;
+import SortedGuildStore2 from "SortedGuildStore" /* 6686 */;
+import FastList from "FastList" /* 7152 */;
+import QuestHooks from "QuestHooks" /* 16350 */;
+import useYouBarTotalHeight2 from "useYouBarTotalHeight" /* 16359 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6800 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6799 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17628 */;
-import YouBarConstants from "YouBarConstants" /* 16334 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17650 */;
+import YouBarConstants from "YouBarConstants" /* 16357 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -149,7 +149,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
               ({ section, item: item2 } = tmp4);
             }
             let type = tmp4.type;
-            if (tmp41(7153).FastListItemTypes.SECTION === type) {
+            if (tmp41(7152).FastListItemTypes.SECTION === type) {
               let node = guildsTree.getNode(tmp4.recyclerKey);
               let element = node;
               if (null != node) {
@@ -173,7 +173,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
               }
               continue;
             } else {
-              if (tmp41(7153).FastListItemTypes.ITEM === type) {
+              if (tmp41(7152).FastListItemTypes.ITEM === type) {
                 let node1 = guildsTree.getNode(tmp4.recyclerKey);
                 let tmp12 = node1;
                 if (null != node1) {
@@ -233,7 +233,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
               }
               return tmp37;
             }
-            let obj6 = { beforeItem: obj7, afterItem: "r" };
+            let obj6 = { beforeItem: obj7, afterItem: "Array" };
             obj7 = { section: sum, row: tmp32.item, mention: true };
             return obj6;
           }
@@ -252,8 +252,8 @@ const GuildsNodeType = SortedGuildStore2.GuildsNodeType;
 const jsx = Fragment.jsx;
 let obj = { wrapper: { position: "absolute", top: 0, left: 0, bottom: 0, width: GUILD_LIST_WIDTH } };
 let closure_15 = createStyles.createStyles(obj);
-let closure_17 = { beforeItem: "r", afterItem: "emoji" };
-let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "r" };
+let closure_17 = { beforeItem: "Array", afterItem: "Reflect" };
+let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "Array" };
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUnreadBarWrapperStyles() {
   const obj = react2;

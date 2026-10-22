@@ -1,48 +1,47 @@
-// Module ID: 18141
-// Function ID: 18142
+// Module ID: 18163
+// Function ID: 18164
 // Name: YouScreenUserProfileContent
-// Dependencies: [32, 19, 17, 4813, 6484, 7687, 8645, 7288, 4818, 15773, 21, 558, 576, 9535, 17713, 1384, 8719, 8705, 14308, 14309, 14312, 14333, 5238, 587, 8652, 4805, 10090, 6866, 1128, 5230, 14211, 18142, 18147, 18138, 15802, 11082, 18148, 14283, 12985, 7480, 14286, 11042, 14287, 1506, 8648, 11021, 8706, 504, 8691, 8702, 14136, 18149, 14331, 14310, 14343, 14344, 11028, 18150, 14347, 16966, 14213, 11123, 8923, 14350, 18152, 14270, 14355, 14359, 14365, 8869, 11022, 8987, 11792, 5583, 5038, 2]
+// Dependencies: [32, 19, 17, 4813, 6483, 7688, 8652, 7289, 4818, 15787, 21, 558, 576, 9542, 17735, 1384, 8726, 8712, 14322, 14323, 14326, 14347, 5238, 587, 8659, 4805, 10097, 6865, 1128, 5230, 14225, 18164, 18169, 18160, 15814, 11091, 18170, 14297, 13001, 7481, 14300, 11051, 14301, 1506, 8655, 11030, 8713, 504, 8698, 8709, 14150, 18171, 14345, 14324, 14357, 14358, 11037, 18172, 14361, 16988, 14227, 11132, 14364, 18174, 14284, 14369, 14373, 14379, 8876, 11031, 8994, 11804, 5583, 5038, 2]
 
-// Module 18141 (YouScreenUserProfileContent)
+// Module 18163 (YouScreenUserProfileContent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1128 */;
 import dismissible_content from "dismissible_content" /* 4805 */;
 import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 4813 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
-import Constants from "Constants" /* 7288 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7480 */;
-import Constants2 from "Constants" /* 8645 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8705 */;
-import UserProfileAvatarDefault from "UserProfileAvatar" /* 8719 */;
-import FormDividerDefault from "FormDivider" /* 8923 */;
-import tracking_Tracking from "tracking/Tracking" /* 9535 */;
-import getRandomCustomStatusPromptDefault from "getRandomCustomStatusPrompt" /* 11028 */;
-import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 11042 */;
-import BadgeManagementExperiment from "BadgeManagementExperiment" /* 11082 */;
-import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 11123 */;
-import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 12985 */;
-import UserProfileActivityDefault from "UserProfileActivity" /* 14213 */;
-import UserProfileNoteDefault from "UserProfileNote" /* 14270 */;
-import useBadgeDirectoryNuxCoachmarkVariant from "useBadgeDirectoryNuxCoachmarkVariant" /* 14283 */;
-import useBadgeDirectoryNuxEntryPoint from "useBadgeDirectoryNuxEntryPoint" /* 14286 */;
-import UserProfileWidgetsBoardEditNoticeDefault from "UserProfileWidgetsBoardEditNotice" /* 14308 */;
-import ConjureCustomWidgetAddOptionDefault from "ConjureCustomWidgetAddOption" /* 14309 */;
-import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 14312 */;
-import UserProfileConnections from "UserProfileConnections" /* 14350 */;
-import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 14355 */;
-import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 14359 */;
-import UserProfileEditConstants from "UserProfileEditConstants" /* 15773 */;
-import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 15802 */;
-import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 16966 */;
-import showYouAccountActionSheet from "showYouAccountActionSheet" /* 17713 */;
-import useOwnsAnyBadgeDefault from "useOwnsAnyBadge" /* 18148 */;
-import YouExpiringTrialOfferCardDefault from "YouExpiringTrialOfferCard" /* 18150 */;
-import UserProfileYourFriendsCardDefault from "UserProfileYourFriendsCard" /* 18152 */;
+import Constants from "Constants" /* 7289 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7481 */;
+import Constants2 from "Constants" /* 8652 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8712 */;
+import UserProfileAvatarDefault from "UserProfileAvatar" /* 8726 */;
+import tracking_Tracking from "tracking/Tracking" /* 9542 */;
+import getRandomCustomStatusPromptDefault from "getRandomCustomStatusPrompt" /* 11037 */;
+import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 11051 */;
+import BadgeManagementExperiment from "BadgeManagementExperiment" /* 11091 */;
+import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 11132 */;
+import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 13001 */;
+import UserProfileActivityDefault from "UserProfileActivity" /* 14227 */;
+import UserProfileNoteDefault from "UserProfileNote" /* 14284 */;
+import useBadgeDirectoryNuxCoachmarkVariant from "useBadgeDirectoryNuxCoachmarkVariant" /* 14297 */;
+import useBadgeDirectoryNuxEntryPoint from "useBadgeDirectoryNuxEntryPoint" /* 14300 */;
+import UserProfileWidgetsBoardEditNoticeDefault from "UserProfileWidgetsBoardEditNotice" /* 14322 */;
+import ConjureCustomWidgetAddOptionDefault from "ConjureCustomWidgetAddOption" /* 14323 */;
+import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 14326 */;
+import UserProfileConnections from "UserProfileConnections" /* 14364 */;
+import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 14369 */;
+import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 14373 */;
+import UserProfileEditConstants from "UserProfileEditConstants" /* 15787 */;
+import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 15814 */;
+import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 16988 */;
+import showYouAccountActionSheet from "showYouAccountActionSheet" /* 17735 */;
+import useOwnsAnyBadgeDefault from "useOwnsAnyBadge" /* 18170 */;
+import YouExpiringTrialOfferCardDefault from "YouExpiringTrialOfferCard" /* 18172 */;
+import UserProfileYourFriendsCardDefault from "UserProfileYourFriendsCard" /* 18174 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6484 */;
-import UserProfileStore from "UserProfileStore" /* 7687 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6483 */;
+import UserProfileStore from "UserProfileStore" /* 7688 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -57,7 +56,7 @@ let map1;
 let tmp;
 let tmp3;
 const PlatformUtils = tmp(1384);
-const UserProfileActivityTabDefault = tmp3(14333);
+const UserProfileActivityTabDefault = tmp3(14347);
 let react = react_mod;
 let View = react_native.View;
 const useIsContentShown = DismissibleContentShownStateStore.useIsContentShown;
@@ -633,7 +632,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScr
                         let tmp40 = null != badgeDirectoryNuxCoachmarkVariant.variantProps;
                         if (tmp40) {
                           const obj7 = { targetRef: entryPointRef, userId: id, variantProps: badgeDirectoryNuxCoachmarkVariant.variantProps, visible: tmp28, markAsDismissed: tmp27 };
-                          tmp40 = map1(tmp4(14287), obj7);
+                          tmp40 = map1(tmp4(14301), obj7);
                         }
                         cResult[20] = badgeDirectoryNuxCoachmarkVariant.variantProps;
                         cResult[21] = entryPointRef;
@@ -757,7 +756,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScr
   const tmp26 = View;
   if (tmp27Result) {
     const obj7 = { targetRef: entryPointRef, userId: id, variantProps: badgeDirectoryNuxCoachmarkVariant.variantProps, visible: tmp23, markAsDismissed: tmp22 };
-    tmp27Result = tmp27(tmp(14287), obj7);
+    tmp27Result = tmp27(tmp(14301), obj7);
   }
   items2[1] = tmp27Result;
   items2[2] = map1(closure_20, { navigateToProfileCustomization, isProfileLoaded, visibleContent: tmp21, markAsDismissed: tmp22 });
@@ -1168,7 +1167,7 @@ tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreenUserPro
     const obj2 = { style: items1, children: items2 };
     items1 = [, ];
     ({ cards: arr2[0], profileContent: arr2[1] } = closure_5);
-    items2 = [, , , , , , , , , ];
+    items2 = [, , , , , , , , ];
     const obj3 = { navigateToPremium, style: items };
     items2[0] = map1(YouExpiringTrialOfferCardDefault, obj3);
     let tmp3Result = !shouldShowExpiringTrialOfferCard;
@@ -1177,7 +1176,7 @@ tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreenUserPro
     const tmp6 = navigateToPremium;
     if (tmp3Result) {
       const obj4 = { navigateToPremium: tmp6, navigateToShop, hasCustomProfileTheme };
-      tmp3Result = tmp3(tmp4(14347), obj4);
+      tmp3Result = tmp3(tmp4(14361), obj4);
     }
     items2[1] = tmp3Result;
     items2[2] = enabled && map1(BalanceWidgetMenuDefault, {});
@@ -1186,15 +1185,14 @@ tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreenUserPro
     items2[3] = map1(UserProfileActivityDefault, obj5);
     const obj6 = { userId: user.id, displayProfile };
     items2[4] = map1(UserProfileAboutMeCardDefault, obj6);
-    items2[5] = map1(FormDividerDefault, {});
     const obj7 = { userId: user.id };
-    items2[6] = map1(UserProfileConnections.UserProfileAccountConnectionsCard, obj7);
+    items2[5] = map1(UserProfileConnections.UserProfileAccountConnectionsCard, obj7);
     const obj8 = { userId: user.id };
-    items2[7] = map1(UserProfileConnections.UserProfileApplicationRoleConnectionsCard, obj8);
+    items2[6] = map1(UserProfileConnections.UserProfileApplicationRoleConnectionsCard, obj8);
     const obj9 = { userId: user.id, navigateToFriends };
-    items2[8] = map1(UserProfileYourFriendsCardDefault, obj9);
+    items2[7] = map1(UserProfileYourFriendsCardDefault, obj9);
     const obj10 = { userId: user.id };
-    items2[9] = map1(UserProfileNoteDefault, obj10);
+    items2[8] = map1(UserProfileNoteDefault, obj10);
     return tmp(tmp2, obj2);
   }, items7);
   const items8 = [tmp3.profileContent, stateFromStores1, pageWidth, activeProfileTabSection === customStatusActivity.WISHLIST, user.id];
@@ -1263,10 +1261,10 @@ tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreenUserPro
     push3(obj6);
     return items;
   }, items9);
-  const tmp4Result11 = tmp4(tmp2[68]);
+  const tmp4Result11 = tmp4(tmp2[67]);
   const measuredTabItems = tmp4Result11.useMeasuredTabItems(memo);
   ({ items, pageHeights } = measuredTabItems);
-  const tmp4Result12 = tmp4(tmp2[69]);
+  const tmp4Result12 = tmp4(tmp2[68]);
   const obj14 = { pageWidth, defaultIndex: activeProfileTabSectionIndex, itemSpacing: tmp(tmp2[23]).space.PX_24, items, onPageChange: handleTabChange };
   segmentedControlState = tmp4Result12.useSegmentedControlState(obj14);
   const items10 = [segmentedControlState, restoreActiveIndex];
@@ -1303,16 +1301,16 @@ tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreenUserPro
     };
   }, items11));
   const obj15 = { style, children: enabled(LayerScope, obj25) };
-  View = tmp(tmp2[74]).View;
+  View = tmp(tmp2[73]).View;
   const obj16 = { style: items12, children: items13 };
   items12 = [tmp3.profileContentWrapper, { paddingTop: 0 }];
   const obj17 = { user, backgroundColor: avatarBackground, statusStyle: { backgroundColor: statusBackground }, animate: flag };
-  LayerScope = tmp4(tmp2[73]).LayerScope;
+  LayerScope = tmp4(tmp2[72]).LayerScope;
   items13 = [enabled(stateFromStores1, obj17), , , ];
   const obj18 = { ref, customStatusActivity, hasCustomProfileTheme: tmp11, style: items14, emojiOnlyStyle: tmp3.emojiOnlyCustomStatusBubble, editEnabled: true, placeholderText: labelResult, prompt: obj8 };
   items14 = [, ];
   ({ customStatusBubble: arr15[0], customStatusBubbleInset: arr15[1] } = tmp3);
-  items13[1] = enabled(tmp(tmp2[70]), obj18);
+  items13[1] = enabled(tmp(tmp2[69]), obj18);
   let isLoaded;
   const tmp43 = closure_21;
   if (tmp6 != null) {
@@ -1328,7 +1326,7 @@ tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreenUserPro
   const formatToPlainString = intl.formatToPlainString;
   const obj21 = { status: tmp4Result14.getStatusLabel(stateFromStores) };
   const prop = tmp4(tmp2[28]).t["er+FRD"];
-  tmp4Result14 = tmp4(tmp2[71]);
+  tmp4Result14 = tmp4(tmp2[70]);
   formatToPlainStringResult = formatToPlainString(prop, obj21);
   intl2 = tmp4(tmp2[28]).intl;
   items13[2] = enabled(tmp43, obj19);
@@ -1336,12 +1334,12 @@ tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreenUserPro
   const obj23 = { style: tmp3.profileTablist, children: enabled(Tabs, obj24) };
   obj24 = { state: segmentedControlState, variant: str };
   str = undefined;
-  Tabs = tmp4(tmp2[72]).Tabs;
+  Tabs = tmp4(tmp2[71]).Tabs;
   if (tmp11) {
     str = "overlay";
   }
   obj25 = { zIndex: 1, children: c14(closure_5, obj16) };
-  items15 = [enabled(closure_5, obj23), enabled(tmp(tmp2[68]), { state: segmentedControlState, pageHeights, scrollPosition, scrollViewRef })];
+  items15 = [enabled(closure_5, obj23), enabled(tmp(tmp2[67]), { state: segmentedControlState, pageHeights, scrollPosition, scrollViewRef })];
   items13[3] = c14(closure_5, obj22);
   return enabled(View, obj15);
 });

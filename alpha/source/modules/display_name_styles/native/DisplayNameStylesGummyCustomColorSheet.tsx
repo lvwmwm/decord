@@ -1,9 +1,9 @@
-// Module ID: 16601
-// Function ID: 16602
+// Module ID: 16623
+// Function ID: 16624
 // Name: DisplayNameStylesGummyCustomColorSheet
-// Dependencies: [19, 17, 1410, 21, 4969, 587, 558, 576, 5038, 1409, 1105, 5198, 5196, 1128, 16596, 5230, 16602, 15785, 5251, 2]
+// Dependencies: [19, 17, 1410, 21, 4969, 587, 558, 576, 5038, 1409, 1105, 5198, 5196, 1128, 16618, 5230, 16624, 15799, 5251, 2]
 
-// Module 16601 (DisplayNameStylesGummyCustomColorSheet)
+// Module 16623 (DisplayNameStylesGummyCustomColorSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1409 */;
@@ -90,7 +90,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
     if (cResult[6] !== tmp9) {
       let obj3 = { title: tmp10, trailing: closure_7(onSelect(5230).Button, obj4) };
       obj4 = { variant: "primary", size: "sm", text: tmp12, onPress: tmp9 };
-      const tmp17 = sharedValue(16596);
+      const tmp17 = sharedValue(16618);
       const tmp18 = closure_7(tmp17, obj3);
       cResult[6] = tmp9;
       cResult[7] = tmp18;
@@ -100,7 +100,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
     }
     if (cResult[8] !== sharedValue) {
       const obj5 = { hue: sharedValue };
-      const tmp22 = closure_7(sharedValue(16602), obj5);
+      const tmp22 = closure_7(sharedValue(16624), obj5);
       cResult[8] = sharedValue;
       cResult[9] = tmp22;
       tmp19 = tmp22;
@@ -120,7 +120,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
         }
         if (cResult[16] !== sharedValue) {
           const obj6 = { hue: sharedValue, onPanFinalize: first, saturation, lightness, fullWidth: true };
-          const tmp36 = closure_7(sharedValue(15785), obj6);
+          const tmp36 = closure_7(sharedValue(15799), obj6);
           cResult[16] = sharedValue;
           cResult[17] = tmp36;
           tmp31 = tmp36;
@@ -233,16 +233,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   let obj2 = { header: closure_7(tmp7, obj3), children: closure_8(View, obj5) };
   BottomSheet = onSelect(5251).BottomSheet;
   obj3 = { title: intl.string(onSelect(1128).t.WTqQ5e), trailing: closure_7(Button, obj4) };
-  tmp7 = sharedValue(16596);
+  tmp7 = sharedValue(16618);
   intl = onSelect(1128).intl;
   obj4 = { variant: "primary", size: "sm", text: intl2.string(onSelect(1128).t.XqMe3N), onPress: callback1 };
   Button = onSelect(5230).Button;
   intl2 = onSelect(1128).intl;
   obj5 = { style: tmp.body, children: items1 };
   const obj6 = { style: tmp.previewWrapper, children: closure_7(View, obj7) };
-  obj7 = { style: tmp.preview, children: closure_7(sharedValue(16602), { hue: sharedValue }) };
+  obj7 = { style: tmp.preview, children: closure_7(sharedValue(16624), { hue: sharedValue }) };
   items1 = [closure_7(View, obj6), ];
-  const obj8 = { style: tmp.huePickerInset, children: closure_7(sharedValue(15785), obj9) };
+  const obj8 = { style: tmp.huePickerInset, children: closure_7(sharedValue(15799), obj9) };
   obj9 = { hue: sharedValue, onPanFinalize: callback, saturation, lightness, fullWidth: true };
   items1[1] = closure_7(View, obj8);
   return closure_7(BottomSheet, obj2);

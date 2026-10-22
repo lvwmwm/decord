@@ -1,10 +1,10 @@
-// Module ID: 6815
-// Function ID: 6816
+// Module ID: 6814
+// Function ID: 6815
 // Name: GuildUtils
-// Dependencies: [4843, 1392, 1459, 1104, 6816, 5018, 1128, 2]
+// Dependencies: [4843, 1392, 1459, 1104, 6815, 5018, 1128, 2]
 // Exports: getGuildNameSuggestion
 
-// Module 6815 (GuildUtils)
+// Module 6814 (GuildUtils)
 import DurationsDefault from "Durations" /* 1104 */;
 import intl2 from "intl" /* 1128 */;
 import UserUtilsAll from "UserUtils" /* 5018 */;
@@ -46,7 +46,7 @@ let obj2 = {
     let closure_4;
     let flag2;
     let timeout;
-    const f96395 = () => {
+    const f96493 = () => {
       items = [];
       if (null == items) {
         const push = items.push;
@@ -124,7 +124,7 @@ let obj2 = {
           clearTimeout(timeout);
         }
         const _setTimeout2 = setTimeout;
-        timeout = setTimeout(f96395, 200);
+        timeout = setTimeout(f96493, 200);
       }
     }
     if (flag2) {
@@ -135,7 +135,7 @@ let obj2 = {
         clearTimeout(timeout);
       }
       const _setTimeout = setTimeout;
-      timeout = setTimeout(f96395, 200);
+      timeout = setTimeout(f96493, 200);
     }
   }
 };

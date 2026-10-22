@@ -1,12 +1,12 @@
-// Module ID: 16015
-// Function ID: 16016
+// Module ID: 16033
+// Function ID: 16034
 // Name: BlockedUserRowV2
-// Dependencies: [19, 1392, 21, 7398, 558, 576, 7237, 1128, 8641, 1202, 16016, 5230, 6889, 504, 2]
+// Dependencies: [19, 1392, 21, 7399, 558, 576, 7238, 1128, 8648, 1202, 16034, 5230, 6888, 504, 2]
 
-// Module 16015 (BlockedUserRowV2)
+// Module 16033 (BlockedUserRowV2)
 import Fragment from "Fragment" /* 21 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7398 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8641 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7399 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8648 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -22,7 +22,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocked
   let obj = userRecord(576);
   const cResult = obj.c(29);
   userRecord = userRecord.userRecord;
-  analyticsLocations = analyticsLocations(7237)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7238)().analyticsLocations;
   if (cResult[0] === userRecord.globalName) {
     let tmp4;
     if (cResult[1] === userRecord.username) {
@@ -114,7 +114,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocked
                   }
                 }
               }
-              const tmp25 = jsx(userRecord(6889).TableRow, { accessible: false, icon: tmp8, label: tmp14, onPress: tmp6, trailing: tmp20 });
+              const tmp25 = jsx(userRecord(6888).TableRow, { accessible: false, icon: tmp8, label: tmp14, onPress: tmp6, trailing: tmp20 });
               cResult[24] = tmp6;
               cResult[25] = tmp20;
               cResult[26] = tmp8;
@@ -129,7 +129,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocked
             tmp20 = tmp22;
           }
         }
-        const tmp16 = jsx(userRecord(16016).RestrictedUserRowLabel, { userRecord, accessibilityActions: tmp13, onAccessibilityAction: tmp7 });
+        const tmp16 = jsx(userRecord(16034).RestrictedUserRowLabel, { userRecord, accessibilityActions: tmp13, onAccessibilityAction: tmp7 });
         cResult[14] = tmp7;
         cResult[15] = tmp13;
         cResult[16] = userRecord;
@@ -176,7 +176,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocked
   let intl2;
   userRecord = userRecord.userRecord;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(7237)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7238)().analyticsLocations;
   const intl = userRecord(1128).intl;
   const formatToPlainString = intl.formatToPlainString;
   let username = userRecord.globalName;
@@ -189,7 +189,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocked
     showUserProfileActionSheetDefault(obj);
   }
   const formatToPlainStringResult = formatToPlainString(izBDZN, { name: username });
-  const TableRow = tmp2(6889).TableRow;
+  const TableRow = tmp2(6888).TableRow;
   let obj2 = { user: userRecord, guildId: "Array", size: tmp2(1202).AvatarSizes.REFRESH_MEDIUM_32 };
   const Avatar = tmp2(1202).Avatar;
   const items = [{ name: "activate" }, { name: "unblock", label: formatToPlainStringResult }];

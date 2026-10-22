@@ -1,15 +1,15 @@
-// Module ID: 18933
-// Function ID: 18934
+// Module ID: 18956
+// Function ID: 18957
 // Name: TimeoutDurationActionSheet
-// Dependencies: [19, 12731, 4883, 21, 558, 576, 18912, 5196, 7282, 7232, 5220, 1128, 6971, 6970, 2]
+// Dependencies: [19, 12750, 4883, 21, 558, 576, 18935, 5196, 7283, 7233, 5220, 1128, 6970, 6969, 2]
 
-// Module 18933 (TimeoutDurationActionSheet)
+// Module 18956 (TimeoutDurationActionSheet)
 import intl3 from "intl" /* 1128 */;
 import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4883 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import TableRadioRow2 from "TableRadioRow" /* 6970 */;
-import Constants from "Constants" /* 12731 */;
-import getActionInfo from "getActionInfo" /* 18912 */;
+import TableRadioRow2 from "TableRadioRow" /* 6969 */;
+import Constants from "Constants" /* 12750 */;
+import getActionInfo from "getActionInfo" /* 18935 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -146,7 +146,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TimeoutDurat
       if (cResult[19] === onSelectDuration) {
         tmp21 = cResult[20];
       }
-      const ActionSheet = tmp(7282).ActionSheet;
+      const ActionSheet = tmp(7283).ActionSheet;
       let str;
       if (tmp4 != null) {
         str = tmp4.headerText;
@@ -156,7 +156,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TimeoutDurat
       }
       if (cResult[21] !== str) {
         const obj4 = { title: str };
-        const tmp24 = closure_5(onSelectDuration(7232).BottomSheetTitleHeader, obj4);
+        const tmp24 = closure_5(onSelectDuration(7233).BottomSheetTitleHeader, obj4);
         cResult[21] = str;
         cResult[22] = tmp24;
         tmp22 = tmp24;
@@ -174,7 +174,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TimeoutDurat
       } else {
         tmp26 = cResult[23];
       }
-      const TableRadioGroup = tmp(6971).TableRadioGroup;
+      const TableRadioGroup = tmp(6970).TableRadioGroup;
       let headerText1;
       if (tmp4 != null) {
         headerText1 = tmp4.headerText;
@@ -188,7 +188,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TimeoutDurat
       const _Symbol2 = Symbol;
       if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
         const obj6 = { value, label: intl2.string(onSelectDuration(1128).t.PoWNfe) };
-        let TableRadioRow = tmp(6970).TableRadioRow;
+        let TableRadioRow = tmp(6969).TableRadioRow;
         intl2 = tmp(1128).intl;
         const tmp34 = closure_5(TableRadioRow, obj6);
         cResult[24] = tmp34;
@@ -289,7 +289,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TimeoutDurat
     cResult[20] = handleChange;
     tmp21 = handleChange;
   }
-  const tmpResult = onSelectDuration(18912);
+  const tmpResult = onSelectDuration(18935);
   const actionInfo = tmpResult.getActionInfo(AutomodActionType.USER_COMMUNICATION_DISABLED, action, triggerType);
   cResult[0] = action;
   cResult[1] = triggerType;
@@ -311,9 +311,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TimeoutDurat
   if (action != null) {
     durationSeconds = action.metadata.durationSeconds;
   }
-  const ActionSheet = tmp(7282).ActionSheet;
+  const ActionSheet = tmp(7283).ActionSheet;
   let str;
-  const BottomSheetTitleHeader = tmp(7232).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = tmp(7233).BottomSheetTitleHeader;
   if (actionInfo != null) {
     str = actionInfo.headerText;
   }
@@ -326,7 +326,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TimeoutDurat
   intl = tmp(1128).intl;
   items = [tmp6(Text, obj3), ];
   let headerText;
-  const TableRadioGroup = tmp(6971).TableRadioGroup;
+  const TableRadioGroup = tmp(6970).TableRadioGroup;
   if (actionInfo != null) {
     headerText = actionInfo.headerText;
   }
@@ -353,7 +353,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TimeoutDurat
     StringResult = value;
   }
   const obj5 = { value, label: intl2.string(intl3.t.PoWNfe) };
-  let TableRadioRow = tmp(6970).TableRadioRow;
+  let TableRadioRow = tmp(6969).TableRadioRow;
   intl2 = tmp(1128).intl;
   items1 = [
     tmp6(TableRadioRow, obj5),

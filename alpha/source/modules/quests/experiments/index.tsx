@@ -1,13 +1,13 @@
-// Module ID: 9572
-// Function ID: 9573
+// Module ID: 9579
+// Function ID: 9580
 // Name: apexExperiment
-// Dependencies: [1455, 558, 576, 9560, 9561, 9573, 2]
+// Dependencies: [1455, 558, 576, 9567, 9568, 9580, 2]
 
-// Module 9572 (apexExperiment)
+// Module 9579 (apexExperiment)
 import react from "react" /* 576 */;
-import QuestOrbMultiplierHooks from "QuestOrbMultiplierHooks" /* 9560 */;
-import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 9561 */;
-import QuestOrbsMultiplier from "QuestOrbsMultiplier" /* 9573 */;
+import QuestOrbMultiplierHooks from "QuestOrbMultiplierHooks" /* 9567 */;
+import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 9568 */;
+import QuestOrbsMultiplier from "QuestOrbsMultiplier" /* 9580 */;
 import ApexExperiment_mod from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,9 +1,9 @@
-// Module ID: 17860
-// Function ID: 17861
+// Module ID: 17882
+// Function ID: 17883
 // Name: ICYMIServerRecommendationRow
-// Dependencies: [32, 5, 19, 17, 4970, 4843, 8791, 1087, 21, 17797, 587, 558, 576, 504, 1417, 4835, 9375, 5655, 6869, 8809, 5649, 1128, 6816, 5220, 5230, 17836, 7136, 2]
+// Dependencies: [32, 5, 19, 17, 4970, 4843, 8798, 1087, 21, 17819, 587, 558, 576, 504, 1417, 4835, 9382, 5655, 6868, 8816, 5649, 1128, 6815, 5220, 5230, 17858, 7135, 2]
 
-// Module 17860 (ICYMIServerRecommendationRow)
+// Module 17882 (ICYMIServerRecommendationRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -12,19 +12,19 @@ import intl3 from "intl" /* 1128 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 4835 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import GuildIconDefault from "GuildIcon" /* 6869 */;
-import FastestListDefault from "FastestList" /* 7136 */;
-import ClipViewDefault from "ClipView" /* 9375 */;
-import ICYMIShared from "ICYMIShared" /* 17836 */;
+import GuildIconDefault from "GuildIcon" /* 6868 */;
+import FastestListDefault from "FastestList" /* 7135 */;
+import ClipViewDefault from "ClipView" /* 9382 */;
+import ICYMIShared from "ICYMIShared" /* 17858 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import ICYMIStore from "ICYMIStore" /* 8791 */;
+import ICYMIStore from "ICYMIStore" /* 8798 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 17797 */;
+import createICYMIStyles from "createICYMIStyles" /* 17819 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -309,7 +309,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Cutout
         }
         const _Symbol = Symbol;
         if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-          size = { shape: guild(9375).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
+          size = { shape: guild(9382).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
           const items1 = [size];
           cResult[9] = items1;
           tmp16 = items1;
@@ -348,7 +348,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Cutout
                   tmp31 = tmp34;
                 }
               }
-              const obj4 = { style: tmp4.guildIcon, guild: tmp14, size: guild(6869).GuildIconSizes.LARGE, animate: !stateFromStores };
+              const obj4 = { style: tmp4.guildIcon, guild: tmp14, size: guild(6868).GuildIconSizes.LARGE, animate: !stateFromStores };
               const tmp29 = GuildIconDefault;
               const tmp30 = closure_14(tmp29, obj4);
               cResult[15] = tmp14;
@@ -433,7 +433,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Cutout
     return obj.fromClientDiscoverableGuild(guild);
   }, items1);
   const obj4 = { cutouts: items2, children: tmp12Result };
-  size = { shape: guild(9375).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
+  size = { shape: guild(9382).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
   items2 = [size];
   const tmp10 = closure_15;
   const tmp14 = ClipViewDefault;
@@ -447,7 +447,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Cutout
     tmp12Result = tmp12(tmp11, obj6);
   }
   items4 = [closure_14(tmp14, obj4), ];
-  const obj7 = { style: tmp.guildIcon, guild: memo, size: guild(6869).GuildIconSizes.LARGE, animate: !stateFromStores };
+  const obj7 = { style: tmp.guildIcon, guild: memo, size: guild(6868).GuildIconSizes.LARGE, animate: !stateFromStores };
   const tmp13Result = GuildIconDefault;
   items4[1] = closure_14(tmp13Result, obj7);
   return tmp10(View, obj3);

@@ -1,19 +1,19 @@
-// Module ID: 6628
-// Function ID: 6629
+// Module ID: 6627
+// Function ID: 6628
 // Name: ApplicationStreamingStore
-// Dependencies: [5701, 2021, 502, 4821, 4843, 2014, 4901, 5700, 4872, 5616, 1087, 6629, 1104, 6631, 6632, 6633, 6634, 2002, 6638, 504, 6670, 584, 2]
+// Dependencies: [5701, 2021, 502, 4821, 4843, 2014, 4901, 5700, 4872, 5616, 1087, 6628, 1104, 6630, 6631, 6632, 6633, 2002, 6637, 504, 6669, 584, 2]
 
-// Module 6628 (ApplicationStreamingStore)
+// Module 6627 (ApplicationStreamingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import Constants2 from "Constants" /* 6629 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6631 */;
-import _slicedToArrayDefault from "_slicedToArray" /* 6632 */;
-import getTitleFromPickedStreamContentDefault from "getTitleFromPickedStreamContent" /* 6633 */;
-import StreamPermissionUtils from "StreamPermissionUtils" /* 6638 */;
-import canSpectateDefault from "canSpectate" /* 6670 */;
+import Constants2 from "Constants" /* 6628 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6630 */;
+import _slicedToArrayDefault from "_slicedToArray" /* 6631 */;
+import getTitleFromPickedStreamContentDefault from "getTitleFromPickedStreamContent" /* 6632 */;
+import StreamPermissionUtils from "StreamPermissionUtils" /* 6637 */;
+import canSpectateDefault from "canSpectate" /* 6669 */;
 import GameConsoleStore from "GameConsoleStore" /* 5701 */;
 import RunningGameStore from "RunningGameStore" /* 2021 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -720,7 +720,7 @@ let obj = {
     let streamType;
     ({ streamType, guildId, channelId, pid, sourceId } = arg0);
     ({ sourceName, sourceIcon, previewDisabled } = arg0);
-    const obj = sourceId(6631);
+    const obj = sourceId(6630);
     const obj2 = { streamType, guildId, channelId, ownerId: AuthenticationStore.getId() };
     const encodeStreamKeyResult = obj.encodeStreamKey(obj2);
     let startsWithResult;
@@ -806,7 +806,7 @@ let obj = {
       } else if (reason === constants3.SAFETY_GUILD_RATE_LIMITED) {
         const obj = StreamKeyUtils;
         guildId = obj.decodeStreamKey(streamKey).guildId;
-        const promise = asyncRequire(6634, dependencyMap.paths);
+        const promise = asyncRequire(6633, dependencyMap.paths);
         promise.then((result) => {
           result.default(guildId);
         });

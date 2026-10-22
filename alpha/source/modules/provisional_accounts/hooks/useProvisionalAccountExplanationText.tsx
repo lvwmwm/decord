@@ -1,32 +1,28 @@
-// Module ID: 13475
-// Function ID: 13476
+// Module ID: 13489
+// Function ID: 13490
 // Name: useProvisionalAccountExplanationText
-// Dependencies: [19, 1087, 558, 576, 13476, 1128, 2067, 2]
+// Dependencies: [19, 1087, 558, 576, 13490, 1128, 2067, 2]
 
-// Module 13475 (useProvisionalAccountExplanationText)
+// Module 13489 (useProvisionalAccountExplanationText)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import useProvisionalAccountApplicationDefault from "useProvisionalAccountApplication" /* 13476 */;
+import intl3 from "intl" /* 1128 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
+import useProvisionalAccountApplicationDefault from "useProvisionalAccountApplication" /* 13490 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
 
-let tmp;
-let tmp4;
-const intl3 = tmp(1128);
-const HelpdeskUtilsDefault = tmp4(2067);
 const HelpdeskArticles = Constants.HelpdeskArticles;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProvisionalAccountExplanationText(renderApplicationName) {
   let tmp4Result;
   let tmp4Result2;
   let tmp6;
-  const tmp = require;
-  let obj = react2;
+  const obj = react2;
   const cResult = obj.c(4);
   renderApplicationName = renderApplicationName.renderApplicationName;
-  const tmp4 = importDefault;
   const tmp5 = useProvisionalAccountApplicationDefault(renderApplicationName.userId);
   let closure_1 = tmp5;
   if (null != tmp5) {
@@ -37,15 +33,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProvisi
       }
       tmp6 = tmp10;
     }
-    const intl2 = intl3.intl;
+    const intl2 = tmp(1128).intl;
     const format2 = intl2.format;
-    let obj2 = {
+    const obj2 = {
       helpdeskArticle: tmp4Result.getArticleURL(HelpdeskArticles.SLAYER_PROVISIONAL_ACCOUNTS),
       applicationName() {
           return renderApplicationName(closure_1);
         }
     };
-    const rSUACb = intl3.t.rSUACb;
+    const rSUACb = tmp(1128).t.rSUACb;
     tmp4Result = HelpdeskUtilsDefault;
     const format2Result = format2(rSUACb, obj2);
     cResult[0] = tmp5;
@@ -55,10 +51,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProvisi
   } else {
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = intl3.intl;
+      const intl = tmp(1128).intl;
       const format = intl.format;
-      let obj3 = { helpdeskArticle: tmp4Result2.getArticleURL(HelpdeskArticles.SLAYER_PROVISIONAL_ACCOUNTS) };
-      const prop = intl3.t["q+N8L6"];
+      const obj3 = { helpdeskArticle: tmp4Result2.getArticleURL(HelpdeskArticles.SLAYER_PROVISIONAL_ACCOUNTS) };
+      const prop = tmp(1128).t["q+N8L6"];
       tmp4Result2 = HelpdeskUtilsDefault;
       const formatResult = format(prop, obj3);
       cResult[3] = formatResult;

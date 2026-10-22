@@ -1,18 +1,18 @@
-// Module ID: 7490
-// Function ID: 7491
+// Module ID: 7491
+// Function ID: 7492
 // Name: EntitlementStore
-// Dependencies: [2046, 2043, 6810, 1087, 1394, 504, 12, 7491, 1090, 584, 2]
+// Dependencies: [2046, 2043, 6809, 1087, 1394, 504, 12, 7492, 1090, 584, 2]
 
-// Module 7490 (EntitlementStore)
+// Module 7491 (EntitlementStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedAll from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1090 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7491 */;
+import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7492 */;
 import EntitlementRecord from "EntitlementRecord" /* 2046 */;
 import LibraryApplicationStore from "LibraryApplicationStore" /* 2043 */;
-import SKUStore from "SKUStore" /* 6810 */;
+import SKUStore from "SKUStore" /* 6809 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

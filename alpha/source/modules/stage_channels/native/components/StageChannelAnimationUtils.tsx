@@ -1,9 +1,9 @@
-// Module ID: 11642
-// Function ID: 11643
+// Module ID: 11653
+// Function ID: 11654
 // Name: StageChannelAnimationUtils
-// Dependencies: [5038, 558, 11513, 11511, 1633, 5192, 2]
+// Dependencies: [5038, 558, 11524, 11522, 1633, 5192, 2]
 
-// Module 11642 (StageChannelAnimationUtils)
+// Module 11653 (StageChannelAnimationUtils)
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
 import timing from "timing" /* 5192 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

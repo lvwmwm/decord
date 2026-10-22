@@ -3,8 +3,5 @@
 // Dependencies: []
 
 // Module 15536
-const tmp = Math.trunc || (function trunc(arg0) {
-  return 0 < +arg0 ? floor : ceil(+arg0);
-});
 
-export default tmp;
+export default (arg0, value) => ({ enumerable: !(1 & arg0), configurable: !(2 & arg0), writable: !(4 & arg0), value });

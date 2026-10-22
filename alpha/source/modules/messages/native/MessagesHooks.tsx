@@ -1,23 +1,23 @@
-// Module ID: 11178
-// Function ID: 11179
+// Module ID: 11187
+// Function ID: 11188
 // Name: MessagesHooks
-// Dependencies: [32, 19, 17, 9973, 9752, 6689, 4843, 5698, 558, 576, 12, 504, 568, 6795, 1388, 7792, 11179, 9751, 11180, 2]
+// Dependencies: [32, 19, 17, 9980, 9759, 6688, 4843, 5698, 558, 576, 12, 504, 568, 6794, 1388, 7793, 11188, 9758, 11189, 2]
 // Exports: useChatUpdatesQueue, useMessagesLifecycle
 
-// Module 11178 (MessagesHooks)
+// Module 11187 (MessagesHooks)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import shallowEqual from "shallowEqual" /* 568 */;
 import react2 from "react" /* 576 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6795 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7792 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9751 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9752 */;
-import ChatUpdatesQueueDefault from "ChatUpdatesQueue" /* 11180 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6794 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 7793 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9758 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9759 */;
+import ChatUpdatesQueueDefault from "ChatUpdatesQueue" /* 11189 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 9973 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6689 */;
+import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 9980 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6688 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import PresenceStore from "PresenceStore" /* 5698 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -284,7 +284,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchVoic
             result = VoiceChannelStartTimeStore.hasRequestedStartTimes(tmp8);
           }
           if (!result) {
-            let tmp4Result = tmp4(11179);
+            let tmp4Result = tmp4(11188);
             let channelInfo = tmp4Result.fetchChannelInfo(tmp8);
           }
         }
@@ -346,7 +346,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchVoic
             result = VoiceChannelStartTimeStore.hasRequestedStartTimes(tmp8);
           }
           if (!result) {
-            let tmp4Result = tmp4(11179);
+            let tmp4Result = tmp4(11188);
             let channelInfo = tmp4Result.fetchChannelInfo(tmp8);
           }
         }

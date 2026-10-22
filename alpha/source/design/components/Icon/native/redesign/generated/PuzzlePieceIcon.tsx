@@ -1,14 +1,14 @@
-// Module ID: 16169
-// Function ID: 16170
+// Module ID: 16187
+// Function ID: 16188
 // Name: PuzzlePieceIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 16170, 5654, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 16188, 5654, 2]
 
-// Module 16169 (PuzzlePieceIcon)
+// Module 16187 (PuzzlePieceIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5654 */;
-import AssetRegistry from "AssetRegistry" /* 16170 */;
+import AssetRegistry from "AssetRegistry" /* 16188 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

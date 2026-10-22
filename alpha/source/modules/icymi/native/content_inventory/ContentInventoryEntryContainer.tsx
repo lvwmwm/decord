@@ -1,18 +1,18 @@
-// Module ID: 17851
-// Function ID: 17852
+// Module ID: 17873
+// Function ID: 17874
 // Name: ContentInventoryEntryContainer
-// Dependencies: [19, 17, 1392, 21, 17797, 587, 1384, 558, 576, 8809, 8641, 504, 1202, 17836, 6894, 2]
+// Dependencies: [19, 17, 1392, 21, 17819, 587, 1384, 558, 576, 8816, 8648, 504, 1202, 17858, 6893, 2]
 
-// Module 17851 (ContentInventoryEntryContainer)
+// Module 17873 (ContentInventoryEntryContainer)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8641 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8809 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8648 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8816 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 17797 */;
+import createICYMIStyles from "createICYMIStyles" /* 17819 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

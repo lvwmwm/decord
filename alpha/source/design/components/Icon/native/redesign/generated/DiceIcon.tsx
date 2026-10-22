@@ -1,14 +1,14 @@
-// Module ID: 9395
-// Function ID: 9396
+// Module ID: 9402
+// Function ID: 9403
 // Name: DiceIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 9396, 5654, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 9403, 5654, 2]
 
-// Module 9395 (DiceIcon)
+// Module 9402 (DiceIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5654 */;
-import AssetRegistry from "AssetRegistry" /* 9396 */;
+import AssetRegistry from "AssetRegistry" /* 9403 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

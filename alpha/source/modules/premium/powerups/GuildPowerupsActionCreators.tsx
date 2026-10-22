@@ -1,10 +1,10 @@
-// Module ID: 13333
-// Function ID: 13334
+// Module ID: 13347
+// Function ID: 13348
 // Name: GuildPowerupsActionCreators
-// Dependencies: [5168, 1087, 584, 13334, 6369, 1297, 13335, 1388, 2]
+// Dependencies: [5168, 1087, 584, 13348, 6368, 1297, 13349, 1388, 2]
 // Exports: disablePowerupForGuild, enablePowerupForGuild, fetchGuildBoostEntitlements, fetchPowerupCatalogForGuild, guildPowerupsAckNotification, guildPowerupsResetNotifications
 
-// Module 13333 (GuildPowerupsActionCreators)
+// Module 13347 (GuildPowerupsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;

@@ -1,9 +1,9 @@
-// Module ID: 12169
-// Function ID: 12170
+// Module ID: 12180
+// Function ID: 12181
 // Name: PollLayoutTypes
 // Dependencies: [2]
 
-// Module 12169 (PollLayoutTypes)
+// Module 12180 (PollLayoutTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/PollLayoutTypes.tsx");

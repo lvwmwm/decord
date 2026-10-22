@@ -1,9 +1,9 @@
-// Module ID: 10458
-// Function ID: 10459
+// Module ID: 10465
+// Function ID: 10466
 // Name: ShineAnimation
 // Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5038, 5192, 683, 5655, 2]
 
-// Module 10458 (ShineAnimation)
+// Module 10465 (ShineAnimation)
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
 import timing from "timing" /* 5192 */;

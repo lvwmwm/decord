@@ -1,14 +1,14 @@
-// Module ID: 17000
-// Function ID: 17001
+// Module ID: 17022
+// Function ID: 17023
 // Name: DevToolsPerformanceTestingScreen
-// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 1505, 1633, 16838, 6973, 6889, 15765, 2]
+// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 1505, 1633, 16860, 6972, 6888, 15779, 2]
 
-// Module 17000 (DevToolsPerformanceTestingScreen)
+// Module 17022 (DevToolsPerformanceTestingScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 15765 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 15779 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -46,14 +46,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const _Object = Object;
-    const entries = Object.entries(tmp(16838).PerformanceTestingScreens);
+    const entries = Object.entries(tmp(16860).PerformanceTestingScreens);
     cResult[2] = entries;
     arr = entries;
   } else {
     arr = cResult[2];
   }
   if (cResult[3] !== navigation) {
-    const TableRowGroup = tmp(6973).TableRowGroup;
+    const TableRowGroup = tmp(6972).TableRowGroup;
     const tmp11 = <TableRowGroup hasIcons>{arr.map((item) => {
       let Icon;
       let headerTitle;

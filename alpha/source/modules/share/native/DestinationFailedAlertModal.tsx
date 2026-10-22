@@ -1,9 +1,9 @@
-// Module ID: 12861
-// Function ID: 12862
+// Module ID: 12879
+// Function ID: 12880
 // Name: DestinationFailedAlertModal
-// Dependencies: [19, 17, 4821, 4843, 5698, 4911, 1392, 1098, 21, 4969, 587, 558, 576, 5590, 10658, 1202, 5220, 504, 5018, 12862, 5901, 5901, 1128, 2]
+// Dependencies: [19, 17, 4821, 4843, 5698, 4911, 1392, 1098, 21, 4969, 587, 558, 576, 5590, 10665, 1202, 5220, 504, 5018, 12880, 5900, 5900, 1128, 2]
 
-// Module 12861 (DestinationFailedAlertModal)
+// Module 12879 (DestinationFailedAlertModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,7 +13,7 @@ import native from "native" /* 1202 */;
 import UserUtilsDefault from "UserUtils" /* 5018 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import useChannelNameDefault from "useChannelName" /* 5590 */;
-import AlertModal2 from "AlertModal" /* 5901 */;
+import AlertModal2 from "AlertModal" /* 5900 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;
@@ -31,7 +31,7 @@ let obj2;
 let obj3;
 let tmp5;
 let unpackModuleId;
-const GroupDMAvatarDefault = tmp5(10658);
+const GroupDMAvatarDefault = tmp5(10665);
 const View = react_native.View;
 const StatusTypes = Constants.StatusTypes;
 ({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
@@ -180,7 +180,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Failed
       }
     }
     tmp16[0] = tmp4.row;
-    const obj2 = { user, guildId: "Boolean", status: null, isMobileOnline, isVROnline, size: user(1202).AvatarSizes.XSMALL, avatarDecoration: user.avatarDecoration, autoStatusCutout: "jsona" };
+    const obj2 = { user, guildId: "Boolean", status: null, isMobileOnline, isVROnline, size: user(1202).AvatarSizes.XSMALL, avatarDecoration: user.avatarDecoration, autoStatusCutout: null };
     const Avatar = tmp(1202).Avatar;
     const tmp14 = closure_11;
     const tmp15 = View;
@@ -235,7 +235,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Failed
   let tmp9Result = null;
   if (null != user) {
     const obj3 = { style: tmp.row, children: items2 };
-    const obj4 = { user, guildId: "Boolean", status: tmp13, isMobileOnline: tmp6, isVROnline: tmp7, size: user(1202).AvatarSizes.XSMALL, avatarDecoration: user.avatarDecoration, autoStatusCutout: "jsona" };
+    const obj4 = { user, guildId: "Boolean", status: tmp13, isMobileOnline: tmp6, isVROnline: tmp7, size: user(1202).AvatarSizes.XSMALL, avatarDecoration: user.avatarDecoration, autoStatusCutout: null };
     tmp13 = null;
     const Avatar = tmp2(1202).Avatar;
     const tmp10 = View;
@@ -333,8 +333,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Failed
     cResult[8] = tmp17;
     tmp15 = tmp17;
   }
-  const obj4 = { "aria-label": "", guild: stateFromStores, channel, size: channel(12862).GuildIconWithChannelTypeSizes.SMALL_32 };
-  const GuildIconWithChannelType = tmp(12862).GuildIconWithChannelType;
+  const obj4 = { "aria-label": "", guild: stateFromStores, channel, size: channel(12880).GuildIconWithChannelTypeSizes.SMALL_32 };
+  const GuildIconWithChannelType = tmp(12880).GuildIconWithChannelType;
   const tmp14 = closure_10(GuildIconWithChannelType, obj4);
   cResult[3] = channel;
   cResult[4] = stateFromStores;
@@ -355,9 +355,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Failed
     return getGuild(guild_id);
   });
   const obj2 = { style: tmp.row, children: items1 };
-  const obj3 = { "aria-label": "", guild: stateFromStores, channel, size: channel(12862).GuildIconWithChannelTypeSizes.SMALL_32 };
+  const obj3 = { "aria-label": "", guild: stateFromStores, channel, size: channel(12880).GuildIconWithChannelTypeSizes.SMALL_32 };
   const tmp3 = useChannelNameDefault(channel);
-  const GuildIconWithChannelType = channel(12862).GuildIconWithChannelType;
+  const GuildIconWithChannelType = channel(12880).GuildIconWithChannelType;
   items1 = [closure_10(GuildIconWithChannelType, obj3), ];
   const obj4 = { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: tmp3 };
   items1[1] = closure_10(channel(5220).Text, obj4);
@@ -535,21 +535,21 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DestinationFaile
     }
     if (cResult[6] !== onRetry) {
       let tmp12Result;
-      const AlertActions = tmp(5901).AlertActions;
+      const AlertActions = tmp(5900).AlertActions;
       if (null != onRetry) {
         const obj2 = { children: items };
         const obj3 = { variant: "primary", onPress: onRetry, text: intl2.string(intl4.t["5911Lb"]) };
-        const AlertActionButton2 = tmp(5901).AlertActionButton;
+        const AlertActionButton2 = tmp(5900).AlertActionButton;
         intl2 = tmp(1128).intl;
         items = [authStore(AlertActionButton2, obj3, "confirm"), ];
         const obj4 = { variant: "secondary", text: intl3.string(intl4.t.WAI6xu) };
-        const AlertActionButton3 = tmp(5901).AlertActionButton;
+        const AlertActionButton3 = tmp(5900).AlertActionButton;
         intl3 = tmp(1128).intl;
         items[1] = authStore(AlertActionButton3, obj4, "cancel");
         tmp12Result = unpackModuleId(authStore2, obj2);
       } else {
         const obj5 = { variant: "primary", text: intl.string(intl4.t.BddRzS) };
-        const AlertActionButton = tmp(5901).AlertActionButton;
+        const AlertActionButton = tmp(5900).AlertActionButton;
         intl = tmp(1128).intl;
         tmp12Result = tmp12(AlertActionButton, obj5, "confirm");
       }
@@ -613,17 +613,17 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DestinationFaile
   if (null != onRetry) {
     const obj3 = { children: items };
     const obj4 = { variant: "primary", onPress: onRetry, text: intl2.string(intl4.t["5911Lb"]) };
-    const AlertActionButton2 = tmp3(5901).AlertActionButton;
+    const AlertActionButton2 = tmp3(5900).AlertActionButton;
     intl2 = tmp3(1128).intl;
     items = [authStore(AlertActionButton2, obj4, "confirm"), ];
     const obj5 = { variant: "secondary", text: intl3.string(intl4.t.WAI6xu) };
-    const AlertActionButton3 = tmp3(5901).AlertActionButton;
+    const AlertActionButton3 = tmp3(5900).AlertActionButton;
     intl3 = tmp3(1128).intl;
     items[1] = authStore(AlertActionButton3, obj5, "cancel");
     tmp2Result = unpackModuleId(authStore2, obj3);
   } else {
     const obj6 = { variant: "primary", text: intl.string(intl4.t.BddRzS) };
-    const AlertActionButton = tmp3(5901).AlertActionButton;
+    const AlertActionButton = tmp3(5900).AlertActionButton;
     intl = tmp3(1128).intl;
     tmp2Result = tmp2(AlertActionButton, obj6, "confirm");
   }

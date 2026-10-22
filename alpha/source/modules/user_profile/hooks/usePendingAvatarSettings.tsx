@@ -1,13 +1,13 @@
-// Module ID: 8621
-// Function ID: 8622
+// Module ID: 8628
+// Function ID: 8629
 // Name: usePendingAvatarSettings
-// Dependencies: [19, 8622, 558, 576, 8625, 573, 8626, 8628, 8629, 2]
+// Dependencies: [19, 8629, 558, 576, 8632, 573, 8633, 8635, 8636, 2]
 
-// Module 8621 (usePendingAvatarSettings)
+// Module 8628 (usePendingAvatarSettings)
 import react from "react" /* 19 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8626 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8628 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8622 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8633 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8635 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8629 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingAv
   const cResult = obj.c(15);
   isTryItOut = isTryItOut.isTryItOut;
   const guildId = isTryItOut.guildId;
-  const tmp4 = guildId(8625)(isTryItOut.analyticsLocations);
+  const tmp4 = guildId(8632)(isTryItOut.analyticsLocations);
   dependencyMap = tmp4;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserProfileSettingsStore];
@@ -67,10 +67,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingAv
         setTryItOutAvatarDecoration = cResult[8];
       }
       if (isTryItOut) {
-        setTryItOutAvatar = tmp(8629).setTryItOutAvatar;
+        setTryItOutAvatar = tmp(8636).setTryItOutAvatar;
       }
       if (isTryItOut) {
-        setTryItOutAvatarDecoration = tmp(8629).setTryItOutAvatarDecoration;
+        setTryItOutAvatarDecoration = tmp(8636).setTryItOutAvatarDecoration;
       }
       if (cResult[9] === pendingAvatar) {
         if (cResult[10] === pendingAvatarDecoration) {
@@ -149,7 +149,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingAv
   let pendingErrors;
   isTryItOut = isTryItOut.isTryItOut;
   const guildId = isTryItOut.guildId;
-  const tmp2 = guildId(8625)(isTryItOut.analyticsLocations);
+  const tmp2 = guildId(8632)(isTryItOut.analyticsLocations);
   dependencyMap = tmp2;
   let obj = isTryItOut(573);
   const items = [UserProfileSettingsStore];
@@ -197,10 +197,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingAv
   }, items2);
   let obj2 = { pendingAvatar, pendingAvatarDecoration, pendingErrors, setPendingAvatar: setTryItOutAvatar, setPendingAvatarDecoration: setTryItOutAvatarDecoration };
   if (isTryItOut) {
-    setTryItOutAvatar = tmp3(8629).setTryItOutAvatar;
+    setTryItOutAvatar = tmp3(8636).setTryItOutAvatar;
   }
   if (isTryItOut) {
-    setTryItOutAvatarDecoration = tmp3(8629).setTryItOutAvatarDecoration;
+    setTryItOutAvatarDecoration = tmp3(8636).setTryItOutAvatarDecoration;
   }
   return obj2;
 });

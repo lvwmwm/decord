@@ -1,9 +1,9 @@
-// Module ID: 9150
-// Function ID: 9151
-// Dependencies: [2, 9151]
+// Module ID: 9157
+// Function ID: 9158
+// Dependencies: [2, 9158]
 
-// Module 9150
-import generateDisplayableCode from "generateDisplayableCode" /* 9151 */;
+// Module 9157
+import generateDisplayableCode from "generateDisplayableCode" /* 9158 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/libdave/index.tsx");

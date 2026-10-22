@@ -1,9 +1,9 @@
-// Module ID: 7121
-// Function ID: 7122
+// Module ID: 7120
+// Function ID: 7121
 // Name: KeyboardAwareView
 // Dependencies: [32, 19, 17, 1501, 21, 1899, 5147, 1631, 5582, 5580, 5581, 2]
 
-// Module 7121 (KeyboardAwareView)
+// Module 7120 (KeyboardAwareView)
 import Fragment from "Fragment" /* 21 */;
 import useKeyboardDuration from "useKeyboardDuration" /* 5580 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

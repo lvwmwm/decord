@@ -1,15 +1,15 @@
-// Module ID: 10599
-// Function ID: 10600
+// Module ID: 10606
+// Function ID: 10607
 // Name: PeopleUtils
-// Dependencies: [4911, 1087, 10600, 7398, 10601, 584, 5018, 2]
+// Dependencies: [4911, 1087, 10607, 7399, 10608, 584, 5018, 2]
 
-// Module 10599 (PeopleUtils)
+// Module 10606 (PeopleUtils)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import UserUtilsDefault from "UserUtils" /* 5018 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7398 */;
-import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10600 */;
-import AcceptFriendRequestModalActionCreators from "AcceptFriendRequestModalActionCreators" /* 10601 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7399 */;
+import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10607 */;
+import AcceptFriendRequestModalActionCreators from "AcceptFriendRequestModalActionCreators" /* 10608 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
 import size from "module_2" /* 2 */;
 

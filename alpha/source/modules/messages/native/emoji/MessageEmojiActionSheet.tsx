@@ -1,16 +1,16 @@
-// Module ID: 9907
-// Function ID: 9908
+// Module ID: 9914
+// Function ID: 9915
 // Name: MessageEmojiActionSheet
-// Dependencies: [19, 17, 1087, 21, 4969, 1384, 558, 576, 1281, 1267, 9908, 5251, 9914, 9915, 2]
+// Dependencies: [19, 17, 1087, 21, 4969, 1384, 558, 576, 1281, 1267, 9915, 5251, 9921, 9922, 2]
 
-// Module 9907 (MessageEmojiActionSheet)
+// Module 9914 (MessageEmojiActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import StandardEmojiContentDefault from "StandardEmojiContent" /* 9908 */;
-import CustomEmojiContentDefault from "CustomEmojiContent" /* 9915 */;
+import StandardEmojiContentDefault from "StandardEmojiContent" /* 9915 */;
+import CustomEmojiContentDefault from "CustomEmojiContent" /* 9922 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;

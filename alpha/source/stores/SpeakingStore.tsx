@@ -1,9 +1,9 @@
-// Module ID: 6671
-// Function ID: 6672
+// Module ID: 6670
+// Function ID: 6671
 // Name: SpeakingStore
 // Dependencies: [32, 4821, 2014, 5700, 4872, 1087, 5704, 4906, 504, 5820, 584, 2]
 
-// Module 6671 (SpeakingStore)
+// Module 6670 (SpeakingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants2 from "Constants" /* 1087 */;

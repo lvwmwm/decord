@@ -1,17 +1,17 @@
-// Module ID: 6773
-// Function ID: 6774
+// Module ID: 6772
+// Function ID: 6773
 // Name: NotificationCenterItemsStore
-// Dependencies: [5176, 6770, 4912, 4911, 1392, 1087, 6774, 5999, 6775, 11, 504, 584, 2]
+// Dependencies: [5176, 6769, 4912, 4911, 1392, 1087, 6773, 5998, 6774, 11, 504, 584, 2]
 
-// Module 6773 (NotificationCenterItemsStore)
+// Module 6772 (NotificationCenterItemsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5999 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6770 */;
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6774 */;
-import NotificationCenterUtils from "NotificationCenterUtils" /* 6775 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5998 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6769 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6773 */;
+import NotificationCenterUtils from "NotificationCenterUtils" /* 6774 */;
 import ExperimentStore from "ExperimentStore" /* 5176 */;
 import MessageRecord from "MessageRecord" /* 4912 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
@@ -25,7 +25,7 @@ function _validate(id) {
 function toNotificationCenterItem(item_enum) {
   let id;
   let messageRecord;
-  const tmp3 = item_enum.item_enum === NotificationCenterItemsTypes.ItemEnum.FIRST_MESSAGE && item_enum.type === tmp(6774).NotificationCenterItems.LIFECYCLE_ITEM;
+  const tmp3 = item_enum.item_enum === NotificationCenterItemsTypes.ItemEnum.FIRST_MESSAGE && item_enum.type === tmp(6773).NotificationCenterItems.LIFECYCLE_ITEM;
   if (tmp3) {
     item_enum.deeplink = "https://discord.com/feature/composeMessage";
   }
@@ -48,7 +48,7 @@ function handleAddItem(type) {
   let messageRecord;
   if ("NOTIFICATION_CENTER_ITEM_CREATE" === type.type) {
     const item2 = type.item;
-    const tmp4 = item2.item_enum === NotificationCenterItemsTypes.ItemEnum.FIRST_MESSAGE && item2.type === tmp2(6774).NotificationCenterItems.LIFECYCLE_ITEM;
+    const tmp4 = item2.item_enum === NotificationCenterItemsTypes.ItemEnum.FIRST_MESSAGE && item2.type === tmp2(6773).NotificationCenterItems.LIFECYCLE_ITEM;
     if (tmp4) {
       item2.deeplink = "https://discord.com/feature/composeMessage";
     }
@@ -163,7 +163,7 @@ function handleRelationshipAddOrUpdate(relationship) {
         tmp4 = id === tmp3;
       }
       if (!tmp4) {
-        let tmp7 = type.type === tmp(6774).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED;
+        let tmp7 = type.type === tmp(6773).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED;
         if (tmp7) {
           const other_user2 = type.other_user;
           let id1;
@@ -175,7 +175,7 @@ function handleRelationshipAddOrUpdate(relationship) {
         tmp4 = tmp7;
       }
       if (!tmp4) {
-        let tmp10 = type.type === tmp(6774).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS;
+        let tmp10 = type.type === tmp(6773).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS;
         if (tmp10) {
           const other_user3 = type.other_user;
           let id2;
@@ -187,7 +187,7 @@ function handleRelationshipAddOrUpdate(relationship) {
         tmp4 = tmp10;
       }
       if (!tmp4) {
-        let tmp13 = type.type === tmp(6774).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED;
+        let tmp13 = type.type === tmp(6773).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED;
         if (tmp13) {
           const other_user4 = type.other_user;
           let id3;
@@ -204,7 +204,7 @@ function handleRelationshipAddOrUpdate(relationship) {
 }
 const isGuildEventEnded = GuildScheduledEventStore.isGuildEventEnded;
 const RelationshipTypes = Constants.RelationshipTypes;
-let obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: set, notifCenterLocalItems: [], paginationHasMore: true, paginationCursor: "Set", notifCenterActive: "none", notifCenterTabFocused: "URL" };
+let obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: set, notifCenterLocalItems: [], paginationHasMore: true, paginationCursor: "Set", notifCenterActive: "teapot", notifCenterTabFocused: "coffee" };
 set = new Set();
 const PersistedStore = get_initializedDefault.PersistedStore;
 class NotificationCenterItemsStore extends PersistedStore {
@@ -387,7 +387,7 @@ const obj2 = {
     if (flag === undefined) {
       flag = false;
     }
-    obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set(), notifCenterLocalItems: prop, paginationHasMore: true, paginationCursor: "Set", notifCenterActive: "none", notifCenterTabFocused: "URL" };
+    obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set(), notifCenterLocalItems: prop, paginationHasMore: true, paginationCursor: "Set", notifCenterActive: "teapot", notifCenterTabFocused: "coffee" };
     new Set();
     if (flag) {
       prop = obj.notifCenterLocalItems;
@@ -518,7 +518,7 @@ const obj2 = {
     if (flag === undefined) {
       flag = false;
     }
-    obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set(), notifCenterLocalItems: prop, paginationHasMore: true, paginationCursor: "Set", notifCenterActive: "none", notifCenterTabFocused: "URL" };
+    obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set(), notifCenterLocalItems: prop, paginationHasMore: true, paginationCursor: "Set", notifCenterActive: "teapot", notifCenterTabFocused: "coffee" };
     new Set();
     if (flag) {
       prop = obj.notifCenterLocalItems;
@@ -581,7 +581,7 @@ const obj2 = {
         let tmp8 = obj;
         const items = [];
         const arraySpreadResult = HermesBuiltin.arraySpread(items, obj.notifCenterLocalItems, 0);
-        obj = id(6775);
+        obj = id(6774);
         items[arraySpreadResult] = obj.incomingGameFriendRequestLocalItem(user, since, applicationId);
         obj.notifCenterLocalItems = items;
       }
@@ -670,7 +670,7 @@ const obj2 = {
     if (flag === undefined) {
       flag = false;
     }
-    obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set(), notifCenterLocalItems: prop, paginationHasMore: true, paginationCursor: "Set", notifCenterActive: "none", notifCenterTabFocused: "URL" };
+    obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set(), notifCenterLocalItems: prop, paginationHasMore: true, paginationCursor: "Set", notifCenterActive: "teapot", notifCenterTabFocused: "coffee" };
     new Set();
     if (flag) {
       prop = obj.notifCenterLocalItems;

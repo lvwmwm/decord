@@ -1,27 +1,27 @@
-// Module ID: 18080
-// Function ID: 18081
+// Module ID: 18102
+// Function ID: 18103
 // Name: SearchAutocompleteStore
-// Dependencies: [4821, 4881, 4843, 4872, 5019, 1392, 13152, 1087, 6811, 13149, 9039, 5018, 5790, 6815, 6694, 13153, 13150, 504, 584, 2]
+// Dependencies: [4821, 4881, 4843, 4872, 5019, 1392, 13168, 1087, 6810, 13165, 9046, 5018, 5790, 6814, 6693, 13169, 13166, 504, 584, 2]
 
-// Module 18080 (SearchAutocompleteStore)
+// Module 18102 (SearchAutocompleteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import UserUtilsDefault from "UserUtils" /* 5018 */;
 import isEqualDefault from "isEqual" /* 5790 */;
-import AutocompleteUtils from "AutocompleteUtils" /* 6694 */;
-import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 6811 */;
-import GuildUtilsDefault from "GuildUtils" /* 6815 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 9039 */;
-import SearchUtils from "SearchUtils" /* 13149 */;
-import SearchTokens from "SearchTokens" /* 13150 */;
-import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 13153 */;
+import AutocompleteUtils from "AutocompleteUtils" /* 6693 */;
+import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 6810 */;
+import GuildUtilsDefault from "GuildUtils" /* 6814 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 9046 */;
+import SearchUtils from "SearchUtils" /* 13165 */;
+import SearchTokens from "SearchTokens" /* 13166 */;
+import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 13169 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildMemberStore from "GuildMemberStore" /* 4881 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
 import StreamerModeStore from "StreamerModeStore" /* 5019 */;
 import UserStore from "UserStore" /* 1392 */;
-import SelectedSearchContextStore from "SelectedSearchContextStore" /* 13152 */;
+import SelectedSearchContextStore from "SelectedSearchContextStore" /* 13168 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

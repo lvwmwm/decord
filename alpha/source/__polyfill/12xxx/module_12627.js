@@ -1,68 +1,43 @@
 // Module ID: 12627
 // Function ID: 12628
-// Dependencies: [12515, 12512, 12625]
-// Exports: callFrameToStackFrame, watchdogTimer
+// Dependencies: [12547, 12526]
+// Exports: captureFeedback
 
 // Module 12627
-import _mod12512 from "module_12512" /* 12512 */;
-import _mod12515 from "module_12515" /* 12515 */;
-import _mod12625 from "module_12625" /* 12625 */;
-
-let navigation;
+import _mod12526 from "module_12526" /* 12526 */;
+import _mod12547 from "module_12547" /* 12547 */;
 
 
-export const callFrameToStackFrame = function callFrameToStackFrame(location, str, fn) {
-  let filenameIsInAppResult;
-  let replaced;
-  if (str) {
-    replaced = str.replace(/^file:\/\//, "");
+export const captureFeedback = function captureFeedback(arg0) {
+  let associatedEventId;
+  let email;
+  let message;
+  let name;
+  let obj4;
+  let obj6;
+  let source;
+  let tags;
+  let url;
+  let obj = arg1;
+  if (arg1 === undefined) {
+    obj = {};
   }
-  let sum;
-  if (location.location.columnNumber) {
-    sum = location.location.columnNumber + 1;
+  let currentScope = arg2;
+  if (arg2 === undefined) {
+    const obj3 = _mod12547;
+    currentScope = obj3.getCurrentScope();
   }
-  let sum1;
-  if (location.location.lineNumber) {
-    sum1 = location.location.lineNumber + 1;
+  const obj2 = { contexts: obj4, type: "feedback", level: "info", tags };
+  obj4 = { feedback: obj6.dropUndefinedKeys({ contact_email: email, name, message, url, source, associated_event_id: associatedEventId }) };
+  ({ message, name, email, url, source, associatedEventId, tags } = arg0);
+  obj6 = _mod12526;
+  let client = currentScope && currentScope.getClient();
+  if (!client) {
+    const tmp3Result = _mod12547;
+    client = tmp3Result.getClient();
   }
-  const tmp6 = _mod12515;
-  const dropUndefinedKeys = tmp6.dropUndefinedKeys;
-  const obj = { filename: replaced, module: fn(replaced), function: location.functionName || _mod12512.UNKNOWN_FUNCTION, colno: sum, lineno: sum1, in_app: filenameIsInAppResult };
-  filenameIsInAppResult = undefined;
-  location.functionName || _mod12512.UNKNOWN_FUNCTION;
-  if (replaced) {
-    const tmp4Result = _mod12625;
-    filenameIsInAppResult = tmp4Result.filenameIsInApp(replaced);
+  if (client) {
+    client.emit("beforeSendFeedback", obj2, obj);
   }
-  return dropUndefinedKeys(obj);
-};
-export const watchdogTimer = function watchdogTimer(fn, arg1, arg2, arg3) {
-  let closure_0 = arg1;
-  let closure_1 = arg2;
-  let closure_2 = arg3;
-  navigation = fn();
-  let c4 = false;
-  let c5 = true;
-  const timerId = setInterval(() => {
-    const timeMs = navigation.getTimeMs();
-    const tmp2 = false === c4 && timeMs > closure_0 + closure_1;
-    if (tmp2) {
-      c4 = true;
-      const tmp5 = c5;
-      if (tmp5) {
-        closure_2();
-      }
-    }
-    if (timeMs < closure_0 + closure_1) {
-      c4 = false;
-    }
-  }, 20);
-  return {
-    poll() {
-      navigation.reset();
-    },
-    enabled(arg0) {
-      c5 = arg0;
-    }
-  };
+  return currentScope.captureEvent(obj2, obj);
 };

@@ -1,9 +1,9 @@
-// Module ID: 9794
-// Function ID: 9795
+// Module ID: 9801
+// Function ID: 9802
 // Name: PremiumUpsellTooltipActionSheet
 // Dependencies: [19, 17, 4818, 21, 4969, 587, 558, 576, 4994, 5196, 5655, 1202, 5220, 5230, 5251, 2]
 
-// Module 9794 (PremiumUpsellTooltipActionSheet)
+// Module 9801 (PremiumUpsellTooltipActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;

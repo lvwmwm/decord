@@ -1,9 +1,9 @@
-// Module ID: 17854
-// Function ID: 17855
+// Module ID: 17876
+// Function ID: 17877
 // Name: ICYMICustomStatusRow
-// Dependencies: [32, 19, 17, 1392, 8791, 21, 587, 4969, 17797, 558, 576, 1202, 13025, 5220, 1128, 9678, 4966, 504, 6353, 9190, 10608, 10625, 1384, 6894, 5675, 10090, 12399, 9319, 11, 1104, 5018, 6775, 17855, 9375, 17851, 2]
+// Dependencies: [32, 19, 17, 1392, 8798, 21, 587, 4969, 17819, 558, 576, 1202, 13041, 5220, 1128, 9685, 4966, 504, 6352, 9197, 10615, 10632, 1384, 6893, 5675, 10097, 12409, 9326, 11, 1104, 5018, 6774, 17877, 9382, 17873, 2]
 
-// Module 17854 (ICYMICustomStatusRow)
+// Module 17876 (ICYMICustomStatusRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,18 +11,18 @@ import intl4 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import TrashIcon from "TrashIcon" /* 5675 */;
-import Pressables from "Pressables" /* 6894 */;
-import ReactionIcon from "ReactionIcon" /* 9319 */;
-import PencilIcon from "PencilIcon" /* 10090 */;
-import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 12399 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13025 */;
+import Pressables from "Pressables" /* 6893 */;
+import ReactionIcon from "ReactionIcon" /* 9326 */;
+import PencilIcon from "PencilIcon" /* 10097 */;
+import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 12409 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13041 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import ICYMIStore from "ICYMIStore" /* 8791 */;
+import ICYMIStore from "ICYMIStore" /* 8798 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
-import createICYMIStyles from "createICYMIStyles" /* 17797 */;
+import createICYMIStyles from "createICYMIStyles" /* 17819 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -127,7 +127,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GravityCus
   const userId = id.userId;
   ({ customStatusExtra, renderForScreenshot, variant } = id);
   closure_14(renderForScreenshot);
-  const obj2 = id(9678);
+  const obj2 = id(9685);
   const gradientBottom = obj2.useGradientBottom();
   let backgroundColor;
   const tmp6 = closure_13;

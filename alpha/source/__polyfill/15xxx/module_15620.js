@@ -1,132 +1,57 @@
 // Module ID: 15620
 // Function ID: 15621
-// Dependencies: [41, 42, 93, 95, 98, 19, 17, 21]
+// Dependencies: []
+// Exports: default
 
 // Module 15620
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import Fragment from "Fragment" /* 21 */;
 
-let value;
-let weakMap;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-if (typeof WeakMap === "function") {
-  const _WeakMap = WeakMap;
-  let self = this;
-  const self2 = this;
-  weakMap = new WeakMap();
-  const _WeakMap2 = WeakMap;
-  const self3 = this;
-  const weakMap1 = new WeakMap();
-}
-if (!react) {
-  const merged = Object.assign({ default: null });
-  merged[0] = react;
-  value = merged;
-  if (null !== react) {
-    if (typeof react === "object") {
-      if (!weakMap) {
-        value = merged;
-        const keys = Object.keys();
-        if (keys !== undefined) {
-          value = merged;
-          while (keys[tmp] !== undefined) {
-            let callResult = "default" !== tmp12;
-            if (callResult) {
-              let hasOwnProperty = {}.hasOwnProperty;
-              callResult = hasOwnProperty.call(react, tmp12);
-            }
-            if (!callResult) {
-              continue;
-            } else {
-              let _Object = Object;
-              let ownPropertyDescriptor = defineProperty;
-              if (ownPropertyDescriptor) {
-                let _Object2 = Object;
-                ownPropertyDescriptor = Object.getOwnPropertyDescriptor(react, tmp12);
-              }
-              if (!ownPropertyDescriptor) {
-                merged[tmp12] = react[tmp12];
-                continue;
-              } else {
-                let definePropertyResult1 = defineProperty(merged, tmp12, ownPropertyDescriptor);
-                continue;
-              }
-              continue;
-            }
-            continue;
-          }
+export default function(createSocket) {
+  let host;
+  let port;
+  ({ host, port } = createSocket);
+  if (null != createSocket.createSocket) {
+    let tmp5 = typeof host === "string";
+    if (typeof host === "string") {
+      tmp5 = host;
+    }
+    if (tmp5) {
+      tmp5 = "" !== host;
+    }
+    if (tmp5) {
+      let tmp9 = typeof port === "number";
+      if (typeof port === "number") {
+        tmp9 = port >= 1;
+      }
+      if (tmp9) {
+        tmp9 = port <= 65535;
+      }
+      if (tmp9) {
+        if (typeof tmp !== "function") {
+          const _Error4 = Error;
+          const self7 = this;
+          const self8 = this;
+          const error = new Error("invalid onCommand handler");
+          throw error;
         }
-      } else if (weakMap.has(react)) {
-        value = weakMap.get(react);
       } else {
-        const result = weakMap.set(react, merged);
+        const _Error3 = Error;
+        const self5 = this;
+        const self6 = this;
+        const error1 = new Error("invalid port");
+        throw error1;
       }
     } else {
-      value = merged;
+      const _Error2 = Error;
+      const self3 = this;
+      const self4 = this;
+      const error2 = new Error("invalid host");
+      throw error2;
     }
-  }
-} else {
-  value = react;
-}
-class StorybookSwitcher {
-  constructor(emitter) {
-    let constructResult;
+  } else {
+    const _Error = Error;
     const self = this;
-    _classCallCheck(this, StorybookSwitcher);
-    const items = [emitter];
-    let obj = _getPrototypeOf(StorybookSwitcher);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items);
-    }
-    const tmp3Result = tmp3(self, constructResult);
-    let closure_0 = tmp3Result;
-    tmp3Result.state = { showStorybook: false };
-    emitter = emitter.emitter;
-    emitter.on("storybook", (showStorybook) => {
-      const obj = { showStorybook };
-      state.setState(obj);
-    });
-    return tmp3Result;
-  }
-}
-_inherits(StorybookSwitcher, value.Component);
-const entry = {
-  key: "render",
-  value: function render() {
-    let children = this.props.children;
-    const jsx = Fragment.jsx;
-    const View = react_native.View;
-    if (this.state.showStorybook) {
-      children = <tmp />;
-    }
-    return <View style={{ flex: 1 }}>{children}</View>;
+    const self2 = this;
+    const error3 = new Error("invalid createSocket function");
+    throw error3;
   }
 };
-let items = [entry];
-
-export default _createClass(StorybookSwitcher, items);

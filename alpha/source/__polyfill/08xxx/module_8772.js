@@ -1,10 +1,9 @@
 // Module ID: 8772
 // Function ID: 8773
-// Dependencies: [5003]
+// Dependencies: [8773]
 
 // Module 8772
-import module_5003 from "module_5003" /* 5003 */;
+import _modDef8773 from "module_8773" /* 8773 */;
 
-const rect = { top: module_5003.number, left: module_5003.number, bottom: module_5003.number, right: module_5003.number };
 
-export default module_5003.shape(rect);
+export default _modDef8773({ contain: null, cover: null, stretch: null });

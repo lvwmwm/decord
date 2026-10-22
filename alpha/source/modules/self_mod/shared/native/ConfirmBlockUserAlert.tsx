@@ -1,16 +1,16 @@
-// Module ID: 10931
-// Function ID: 10932
+// Module ID: 10939
+// Function ID: 10940
 // Name: ConfirmBlockUserAlert
-// Dependencies: [19, 17, 1392, 10891, 21, 4969, 587, 558, 576, 504, 10932, 5018, 7398, 7406, 8092, 5230, 1128, 5220, 5965, 2]
+// Dependencies: [19, 17, 1392, 10899, 21, 4969, 587, 558, 576, 504, 10940, 5018, 7399, 7407, 8093, 5230, 1128, 5220, 5964, 2]
 
-// Module 10931 (ConfirmBlockUserAlert)
+// Module 10939 (ConfirmBlockUserAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import components_Button_Button from "components/Button/Button" /* 5230 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7398 */;
-import ReportModals from "ReportModals" /* 8092 */;
-import Constants from "Constants" /* 10891 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7399 */;
+import ReportModals from "ReportModals" /* 8093 */;
+import Constants from "Constants" /* 10899 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
@@ -131,7 +131,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmBlo
       obj = closure_1(closure_2[12]);
       obj1 = { location: LOCATION_CONTEXT_MOBILE };
       blockUserResult = obj.blockUser(userId, obj1, channelId);
-      nextPromise = blockUserResult.then(() => { /* body not rendered: F146725 */ });
+      nextPromise = blockUserResult.then(() => { /* body not rendered: F146938 */ });
       return;
     }
   }

@@ -1,15 +1,15 @@
-// Module ID: 9988
-// Function ID: 9989
+// Module ID: 9995
+// Function ID: 9996
 // Name: NsfwServerInviteWarningVariant
-// Dependencies: [1087, 6650, 1128, 9989, 558, 6640, 9990, 2]
+// Dependencies: [1087, 6649, 1128, 9996, 558, 6639, 9997, 2]
 // Exports: getNsfwServerInviteWarningAgeGroupForError, getNsfwServerInviteWarningVariant
 
-// Module 9988 (NsfwServerInviteWarningVariant)
+// Module 9995 (NsfwServerInviteWarningVariant)
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6640 */;
-import getTinyBroncoWarningDescriptions from "getTinyBroncoWarningDescriptions" /* 6650 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 9989 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6639 */;
+import getTinyBroncoWarningDescriptions from "getTinyBroncoWarningDescriptions" /* 6649 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 9996 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -76,7 +76,7 @@ export const getNsfwServerInviteWarningAgeGroupForError = function getNsfwServer
     return null;
   }
   let tmp7 = null;
-  const tmp3Result = tmp3(9990);
+  const tmp3Result = tmp3(9997);
   if (tmp3Result.getIsInviteAcceptAgeGroupErrorsEnabled("invite_accept_error")) {
     tmp7 = UNVERIFIED;
   }

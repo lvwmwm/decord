@@ -1,12 +1,12 @@
-// Module ID: 7774
-// Function ID: 7775
+// Module ID: 7775
+// Function ID: 7776
 // Name: Reward
-// Dependencies: [6699, 7765, 2]
+// Dependencies: [6698, 7766, 2]
 // Exports: questRewardsConfigV2FromServer
 
-// Module 7774 (Reward)
-import QuestTypes from "QuestTypes" /* 6699 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 7765 */;
+// Module 7775 (Reward)
+import QuestTypes from "QuestTypes" /* 6698 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 7766 */;
 import size from "module_2" /* 2 */;
 
 function _rewardRedemptionInstructionsFromServer(redemption_instructions_by_platform) {

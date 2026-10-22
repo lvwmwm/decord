@@ -1,19 +1,16 @@
 // Module ID: 10210
 // Function ID: 10211
-// Dependencies: [41, 42, 93, 95, 98, 10209, 10192]
+// Dependencies: [41, 42, 93, 95, 98, 10194, 10211]
 
 // Module 10210
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10192 */;
-import now2 from "now" /* 10209 */;
+import EmptyDuration from "EmptyDuration" /* 10194 */;
+import _mod10211 from "module_10211" /* 10211 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-let hasOwnProperty;
-
-let self = this;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,110 +26,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let self2 = this;
-if (this) {
-  self2 = self.__createBinding;
-}
-if (!self2) {
-  let tmp3 = globalThis;
-  let _Object = Object;
-  self2 = Object.create ? ((arg0, __esModule, arg2, arg3) => {
-    function get() {
-      return __esModule[closure_1];
-    }
-    let closure_0 = __esModule;
-    let closure_1 = arg2;
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
-    let tmp3 = ownPropertyDescriptor;
-    if (tmp3) {
-      let tmp4;
-      if ("get" in ownPropertyDescriptor) {
-        tmp4 = !__esModule.__esModule;
-      } else {
-        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
-      }
-      tmp3 = !tmp4;
-    }
-    if (!tmp3) {
-      ownPropertyDescriptor = { enumerable: true, get };
-      const obj = { enumerable: true, get };
-    }
-    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
-  }) : ((arg0, arg1, arg2, arg3) => {
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    arg0[tmp] = arg1[arg2];
-  });
-}
-let tmp4 = self && self.__setModuleDefault;
-if (!tmp4) {
-  let tmp5 = globalThis;
-  const _Object2 = Object;
-  tmp4 = Object.create ? ((arg0, value) => {
-    const obj = { enumerable: true, value };
-    Object.defineProperty(arg0, "default", obj);
-  }) : ((arg0, arg1) => {
-    arg0.default = arg1;
-  });
-}
-let closure_6 = tmp4;
-let fn = self && self.__importStar;
-if (!fn) {
-  fn = function c(arg0) {
-    fn = Object.getOwnPropertyNames || ((obj) => {
-      const items = [];
-      for (const key10005 in obj) {
-        let _Object = Object;
-        hasOwnProperty = Object.prototype.hasOwnProperty;
-        if (!hasOwnProperty.call(obj, key10005)) {
-          continue;
-        } else {
-          items[items.length] = key10005;
-          continue;
-        }
-        continue;
-      }
-      return items;
-    });
-    return fn(arg0);
-  };
-  fn = (__esModule) => {
-    const tmp = __esModule;
-    if (tmp) {
-      if (__esModule.__esModule) {
-        return __esModule;
-      }
-    }
-    const obj = {};
-    if (null != __esModule) {
-      let num;
-      const arr = fn(__esModule);
-      for (let num = 0; num < arr.length; num = num + 1) {
-        if ("default" !== arr[num]) {
-          let tmp5 = self2(obj, __esModule, arr[num]);
-        }
-      }
-    }
-    closure_6(obj, __esModule);
-    return obj;
-  };
-}
-const now = fn(now2);
-const re8 = /(?:this)?\s{0,3}(morning|afternoon|evening|night|midnight|midday|noon)(?=\W|$)/i;
-class ENCasualTimeParser {
+class AbstractMergeDateRangeRefiner {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENCasualTimeParser);
-    const obj = _getPrototypeOf(ENCasualTimeParser);
+    _classCallCheck(this, AbstractMergeDateRangeRefiner);
+    const obj = _getPrototypeOf(AbstractMergeDateRangeRefiner);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -142,45 +43,135 @@ class ENCasualTimeParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ENCasualTimeParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(AbstractMergeDateRangeRefiner, _mod10211.MergingRefiner);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return re8;
+  key: "shouldMergeResults",
+  value: function shouldMergeResults(str, end, end2) {
+    let tmp = !end.end && !end2.end;
+    if (tmp) {
+      const self = this;
+      tmp = null != str.match(this.patternBetween());
+    }
+    return tmp;
   }
 };
 let items = [
   entry,
   {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      let afternoonResult;
-      const str = arg1[1];
-      const formatted = str.toLowerCase();
-      if ("afternoon" === formatted) {
-        afternoonResult = now.afternoon(reference.reference);
-      } else {
-        if ("evening" !== formatted) {
-          if ("night" !== formatted) {
-            if ("midnight" === formatted) {
-              afternoonResult = now.midnight(reference.reference);
-            } else if ("morning" === formatted) {
-              afternoonResult = now.morning(reference.reference);
-            } else if ("noon" === formatted) {
-              afternoonResult = now.noon(reference.reference);
-            } else {
-              afternoonResult = null;
-            }
+    key: "mergeResults",
+    value: function mergeResults(arg0, start, start2) {
+      let closure_0 = start;
+      let first = start2;
+      start = start.start;
+      let result = start.isOnlyWeekdayComponent();
+      if (!result) {
+        start2 = start2.start;
+        result = start2.isOnlyWeekdayComponent();
+      }
+      if (!result) {
+        let start3 = start2.start;
+        const certainComponents = start3.getCertainComponents();
+        const item = certainComponents.forEach((item) => {
+          const start = closure_0.start;
+          const tmp = closure_0;
+          if (!start.isCertain(item)) {
+            const start2 = tmp.start;
+            const start3 = first.start;
+            start2.imply(item, start3.get(item));
+          }
+        });
+        const start4 = start.start;
+        const certainComponents1 = start4.getCertainComponents();
+        const item1 = certainComponents1.forEach((item) => {
+          const start = first.start;
+          const tmp = first;
+          if (!start.isCertain(item)) {
+            const start2 = tmp.start;
+            const start3 = closure_0.start;
+            start2.imply(item, start3.get(item));
+          }
+        });
+      }
+      const start5 = start.start;
+      const start6 = start2.start;
+      let tmp5 = start2;
+      let obj = start;
+      const dateResult = start5.date();
+      if (dateResult > start6.date()) {
+        const start18 = start.start;
+        const dateResult1 = start18.date();
+        const start19 = start2.start;
+        const dateResult2 = start19.date();
+        const start20 = start2.start;
+        if (start20.isOnlyWeekdayComponent()) {
+          const tmp6 = require;
+          if (EmptyDuration.addDuration(dateResult2, { day: 7 }) > dateResult1) {
+            const addDurationResult = tmp6(10194).addDuration(dateResult2, { day: 7 });
+            const start15 = start2.start;
+            start15.imply("day", addDurationResult.getDate());
+            const start16 = start2.start;
+            start16.imply("month", addDurationResult.getMonth() + 1);
+            const start17 = start2.start;
+            start17.imply("year", addDurationResult.getFullYear());
+            tmp5 = start2;
+            obj = start;
           }
         }
-        afternoonResult = now.evening(reference.reference);
+        const start7 = start.start;
+        if (start7.isOnlyWeekdayComponent()) {
+          const tmp8 = require;
+          if (EmptyDuration.addDuration(dateResult1, { day: -7 }) < dateResult2) {
+            const addDurationResult1 = tmp8(10194).addDuration(dateResult1, { day: -7 });
+            const start12 = start.start;
+            start12.imply("day", addDurationResult1.getDate());
+            const start13 = start.start;
+            start13.imply("month", addDurationResult1.getMonth() + 1);
+            const start14 = start.start;
+            start14.imply("year", addDurationResult1.getFullYear());
+            tmp5 = start2;
+            obj = start;
+          }
+        }
+        const start8 = start2.start;
+        if (start8.isDateWithUnknownYear()) {
+          const tmp10 = require;
+          if (EmptyDuration.addDuration(dateResult2, { year: 1 }) > dateResult1) {
+            const start11 = start2.start;
+            const addDurationResult2 = tmp10(10194).addDuration(dateResult2, { year: 1 });
+            start11.imply("year", addDurationResult2.getFullYear());
+            tmp5 = start2;
+            obj = start;
+          }
+        }
+        const start9 = start.start;
+        if (start9.isDateWithUnknownYear()) {
+          const tmp12 = require;
+          if (EmptyDuration.addDuration(dateResult1, { year: -1 }) < dateResult2) {
+            const start10 = start.start;
+            const addDurationResult3 = tmp12(10194).addDuration(dateResult1, { year: -1 });
+            start10.imply("year", addDurationResult3.getFullYear());
+            tmp5 = start2;
+            obj = start;
+          }
+        }
+        const items = [start, start2];
+        first = items[0];
+        closure_0 = tmp15;
+        tmp5 = first;
+        obj = tmp15;
       }
-      if (afternoonResult) {
-        afternoonResult.addTag("parser/ENCasualTimeParser");
+      const cloneResult = obj.clone();
+      cloneResult.start = obj.start;
+      cloneResult.end = tmp5.start;
+      cloneResult.index = Math.min(obj.index, tmp5.index);
+      if (obj.index < tmp5.index) {
+        cloneResult.text = obj.text + arg0 + tmp5.text;
+      } else {
+        cloneResult.text = tmp5.text + arg0 + obj.text;
       }
-      return afternoonResult;
+      return cloneResult;
     }
   }
 ];
 
-export default _createClass(ENCasualTimeParser, items);
+export default _createClass(AbstractMergeDateRangeRefiner, items);

@@ -1,23 +1,23 @@
-// Module ID: 18455
-// Function ID: 18456
+// Module ID: 18477
+// Function ID: 18478
 // Name: VoicePanelVideoRenderer
-// Dependencies: [32, 19, 17, 10865, 10863, 18344, 10866, 21, 5038, 11381, 4969, 558, 576, 10864, 5233, 9946, 5198, 5283, 5825, 18389, 11378, 11377, 18456, 10869, 18341, 5810, 5238, 587, 5192, 7154, 11380, 2]
+// Dependencies: [32, 19, 17, 10873, 10871, 18366, 10874, 21, 5038, 11392, 4969, 558, 576, 10872, 5233, 9953, 5198, 5283, 5824, 18411, 11389, 11388, 18478, 10877, 18363, 5810, 5238, 587, 5192, 7153, 11391, 2]
 
-// Module 18455 (VoicePanelVideoRenderer)
+// Module 18477 (VoicePanelVideoRenderer)
 import react_native from "react-native" /* 17 */;
 import timing from "timing" /* 5192 */;
 import spring from "spring" /* 5233 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5283 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9946 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10863 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 10866 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10869 */;
-import DCDVideoRendererDefault from "DCDVideoRenderer" /* 11381 */;
-import VideoActionCreators from "VideoActionCreators" /* 18341 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18344 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9953 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10871 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 10874 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10877 */;
+import DCDVideoRendererDefault from "DCDVideoRenderer" /* 11392 */;
+import VideoActionCreators from "VideoActionCreators" /* 18363 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18366 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10865 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10873 */;
 import Fragment from "Fragment" /* 21 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
 import createStyles from "createStyles" /* 4969 */;

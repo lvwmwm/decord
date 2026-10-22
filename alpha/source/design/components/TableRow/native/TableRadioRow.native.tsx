@@ -1,9 +1,9 @@
-// Module ID: 6970
-// Function ID: 6971
+// Module ID: 6969
+// Function ID: 6970
 // Name: TableRadioRow
-// Dependencies: [109, 19, 21, 558, 576, 6971, 5125, 5025, 6974, 6889, 2]
+// Dependencies: [109, 19, 21, 558, 576, 6970, 5125, 5025, 6973, 6888, 2]
 
-// Module 6970 (TableRadioRow)
+// Module 6969 (TableRadioRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -14,9 +14,9 @@ import size from "module_2" /* 2 */;
 let tmp;
 const react_native = tmp(5025);
 const native = tmp(5125);
-const TableRow2 = tmp(6889);
-const TableRadioGroup = tmp(6971);
-const FormRadio = tmp(6974);
+const TableRow2 = tmp(6888);
+const TableRadioGroup = tmp(6970);
+const FormRadio = tmp(6973);
 let closure_2 = ["value", "label", "subLabel", "disabled", "accessibilityHint", "legacyCompat_selected", "legacyCompat_onPress"];
 const jsx = Fragment.jsx;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableRadioRow(value) {
@@ -206,7 +206,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableRadio
   const tmp2Result4 = react_native;
   const radioA11yNative = tmp2Result4.useRadioA11yNative({ selected: legacyCompat_selected, disabled });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
-  const TableRow = tmp2(6889).TableRow;
+  const TableRow = tmp2(6888).TableRow;
   const merged1 = Object.assign(merged);
   let str = nodeText1;
   if (nodeText1 == null) {

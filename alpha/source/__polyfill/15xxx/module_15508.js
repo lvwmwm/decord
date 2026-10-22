@@ -1,20 +1,11 @@
 // Module ID: 15508
 // Function ID: 15509
-// Dependencies: [15493]
+// Dependencies: [15506]
 
 // Module 15508
-import _mod15493 from "module_15493" /* 15493 */;
+import _mod15506 from "module_15506" /* 15506 */;
 
-let _window = 0;
-let closure_1 = Math.random();
-let closure_2 = _mod15493((1).toString);
+let closure_0 = _mod15506({}.toString);
+let closure_1 = _mod15506("".slice);
 
-export default (arg0) => {
-  let _window;
-  let str = "";
-  if (undefined !== arg0) {
-    str = arg0;
-  }
-  _window = _window + 1;
-  return `Symbol(${str}` + ")_" + closure_2(_window + closure_1, 36);
-};
+export default (arg0) => closure_1(closure_0(arg0), 8, -1);

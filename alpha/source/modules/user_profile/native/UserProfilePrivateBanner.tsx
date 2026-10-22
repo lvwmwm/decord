@@ -1,17 +1,17 @@
-// Module ID: 14377
-// Function ID: 14378
+// Module ID: 14391
+// Function ID: 14392
 // Name: UserProfilePrivateBanner
-// Dependencies: [19, 17, 7288, 21, 4969, 587, 558, 576, 1105, 8551, 5220, 1128, 2]
+// Dependencies: [19, 17, 7289, 21, 4969, 587, 558, 576, 1105, 8552, 5220, 1128, 2]
 
-// Module 14377 (UserProfilePrivateBanner)
+// Module 14391 (UserProfilePrivateBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
 import intl2 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import Constants from "Constants" /* 7288 */;
-import LockIcon2 from "LockIcon" /* 8551 */;
+import Constants from "Constants" /* 7289 */;
+import LockIcon2 from "LockIcon" /* 8552 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -60,7 +60,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileP
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { size: "xs", color: nativeDefault.colors.TEXT_DEFAULT };
-      const LockIcon = tmp(8551).LockIcon;
+      const LockIcon = tmp(8552).LockIcon;
       const tmp13 = React3(LockIcon, obj3);
       cResult[5] = tmp13;
       tmp10 = tmp13;

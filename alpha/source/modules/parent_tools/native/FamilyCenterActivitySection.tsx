@@ -1,19 +1,19 @@
-// Module ID: 16111
-// Function ID: 16112
+// Module ID: 16129
+// Function ID: 16130
 // Name: FamilyCenterActivitySection
-// Dependencies: [32, 19, 17, 7630, 21, 4969, 587, 558, 576, 8110, 8112, 16106, 5220, 12800, 1128, 2536, 16112, 6894, 2]
+// Dependencies: [32, 19, 17, 7631, 21, 4969, 587, 558, 576, 8111, 8113, 16124, 5220, 12819, 1128, 2536, 16130, 6893, 2]
 
-// Module 16111 (FamilyCenterActivitySection)
+// Module 16129 (FamilyCenterActivitySection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8110 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8112 */;
-import useFamilyCenterActivities from "useFamilyCenterActivities" /* 16106 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8111 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8113 */;
+import useFamilyCenterActivities from "useFamilyCenterActivities" /* 16124 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7630 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7631 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -192,9 +192,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   const cResult = obj.c(36);
   displayType = displayType.displayType;
   const tmp4 = closure_13();
-  const obj2 = displayType(16106);
+  const obj2 = displayType(16124);
   const actionsForDisplayType = obj2.useActionsForDisplayType(displayType);
-  const obj3 = displayType(16106);
+  const obj3 = displayType(16124);
   const actionTotalsForDisplayType = obj3.useActionTotalsForDisplayType(displayType);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = {};
@@ -203,7 +203,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   } else {
     first = cResult[0];
   }
-  const tmpResult = displayType(12800);
+  const tmpResult = displayType(12819);
   const familyCenterActions = tmpResult.useFamilyCenterActions(first);
   const loadMore = familyCenterActions.loadMore;
   const isMoreLoading = familyCenterActions.isMoreLoading;
@@ -277,7 +277,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
                   tmp33Result = tmp33(tmp34, obj7);
                 } else {
                   const obj9 = { style: tmp4.loadMore, accessibilityLabel: tmp13, accessibilityRole: "button", onPress: tmp12, children: closure_9(displayType(5220).Text, obj10) };
-                  const PressableOpacity = tmp(6894).PressableOpacity;
+                  const PressableOpacity = tmp(6893).PressableOpacity;
                   obj10 = { style: tmp4.loadMoreButton, variant: "text-xs/semibold", color: "text-overlay-light", children: tmp13 };
                   tmp33Result = tmp33(PressableOpacity, obj9);
                 }
@@ -397,11 +397,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   let tmp19Result;
   displayType = displayType.displayType;
   const tmp = closure_13();
-  let obj = displayType(16106);
+  let obj = displayType(16124);
   const actionsForDisplayType = obj.useActionsForDisplayType(displayType);
-  const obj2 = displayType(16106);
+  const obj2 = displayType(16124);
   const actionTotalsForDisplayType = obj2.useActionTotalsForDisplayType(displayType);
-  const obj3 = displayType(12800);
+  const obj3 = displayType(12819);
   const familyCenterActions = obj3.useFamilyCenterActions({});
   const loadMore = familyCenterActions.loadMore;
   const isMoreLoading = familyCenterActions.isMoreLoading;
@@ -439,7 +439,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
         tmp19Result = tmp19(tmp18, obj8);
       } else {
         const obj10 = { style: tmp.loadMore, accessibilityLabel: formatToPlainStringResult, accessibilityRole: "button", onPress: tmp8, children: closure_9(displayType(5220).Text, obj11) };
-        const PressableOpacity = tmp2(6894).PressableOpacity;
+        const PressableOpacity = tmp2(6893).PressableOpacity;
         obj11 = { style: tmp.loadMoreButton, variant: "text-xs/semibold", color: "text-overlay-light", children: formatToPlainStringResult };
         tmp19Result = tmp19(PressableOpacity, obj10);
       }

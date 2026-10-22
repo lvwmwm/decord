@@ -1,16 +1,16 @@
-// Module ID: 14408
-// Function ID: 14409
+// Module ID: 14422
+// Function ID: 14423
 // Name: OrbCheckoutModalContext
-// Dependencies: [19, 1392, 6810, 21, 1281, 558, 576, 2053, 504, 9546, 7319, 11015, 7645, 4785, 9425, 2]
+// Dependencies: [19, 1392, 6809, 21, 1281, 558, 576, 2053, 504, 9553, 7320, 11024, 7646, 4785, 9432, 2]
 // Exports: useOrbCheckoutModalContext
 
-// Module 14408 (OrbCheckoutModalContext)
+// Module 14422 (OrbCheckoutModalContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7645 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7646 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import SKUStore from "SKUStore" /* 6810 */;
+import SKUStore from "SKUStore" /* 6809 */;
 import v1_mod from "v1" /* 1281 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -30,7 +30,7 @@ let obj = {
   analyticsLocations: [],
   analyticsSourceLocation: null,
   isRedeeming: null,
-  orbRedemptionError: "lg",
+  orbRedemptionError: "",
   orbProductContext: null,
   onRedeemVirtualCurrency() {
 

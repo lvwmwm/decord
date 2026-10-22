@@ -1,9 +1,9 @@
-// Module ID: 9135
-// Function ID: 9136
+// Module ID: 9142
+// Function ID: 9143
 // Name: VoiceStateIconUtils
 // Dependencies: [2014, 5616, 568, 558, 576, 504, 2]
 
-// Module 9135 (VoiceStateIconUtils)
+// Module 9142 (VoiceStateIconUtils)
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import VoiceStateStore from "VoiceStateStore" /* 5616 */;

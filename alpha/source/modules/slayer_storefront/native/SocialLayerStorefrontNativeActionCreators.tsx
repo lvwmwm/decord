@@ -1,20 +1,20 @@
-// Module ID: 10525
-// Function ID: 10526
+// Module ID: 10532
+// Function ID: 10533
 // Name: SocialLayerStorefrontNativeActionCreators
-// Dependencies: [6810, 21, 5896, 1128, 3700, 10526, 6658, 10527, 2002, 2065, 10531, 10547, 13813, 2]
+// Dependencies: [6809, 21, 5895, 1128, 3700, 10533, 6657, 10534, 2002, 2065, 10538, 10554, 13827, 2]
 // Exports: closeSocialLayerStorefrontGiftModal, closeSocialLayerStorefrontProductDetailsModal, openSocialLayerStorefrontGiftModal, openSocialLayerStorefrontProductDetailsModal, openSocialLayerStorefrontProductGiftPurchaseSuccessModal, openSocialLayerStorefrontProductSelfPurchaseSuccessModal, openSocialLayerStorefrontUnsupportedOnMobileAlert
 
-// Module 10525 (SocialLayerStorefrontNativeActionCreators)
+// Module 10532 (SocialLayerStorefrontNativeActionCreators)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1128 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import BillingPlatformUtils from "BillingPlatformUtils" /* 2065 */;
 import _modDef3700 from "module_3700" /* 3700 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5896 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6658 */;
-import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10526 */;
-import redirectToSlayerStorefrontWebDefault from "redirectToSlayerStorefrontWeb" /* 10531 */;
-import SKUStore from "SKUStore" /* 6810 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5895 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6657 */;
+import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10533 */;
+import redirectToSlayerStorefrontWebDefault from "redirectToSlayerStorefrontWeb" /* 10538 */;
+import SKUStore from "SKUStore" /* 6809 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -40,7 +40,7 @@ export const openSocialLayerStorefrontProductDetailsModal = function openSocialL
   const obj = SocialLayerStorefrontActionCreators;
   const socialLayerStorefrontConfig = obj.fetchSocialLayerStorefrontConfig();
   const obj2 = ModalActionCreatorsDefault;
-  obj2.pushLazy(asyncRequire(10527, dependencyMap.paths), merged, c5, { presentation: "modal" });
+  obj2.pushLazy(asyncRequire(10534, dependencyMap.paths), merged, c5, { presentation: "modal" });
 };
 export const closeSocialLayerStorefrontProductDetailsModal = function closeSocialLayerStorefrontProductDetailsModal() {
   const obj = ModalActionCreatorsDefault;
@@ -51,7 +51,7 @@ export const openSocialLayerStorefrontGiftModal = function openSocialLayerStoref
   const tmp2 = dependencyMap;
   if (obj.isSocialLayerStorefrontGiftingSupported()) {
     const tmp3Result = ModalActionCreatorsDefault;
-    tmp3Result.pushLazy(asyncRequire(10547, tmp2.paths), skuId, c6);
+    tmp3Result.pushLazy(asyncRequire(10554, tmp2.paths), skuId, c6);
   } else {
     const tmp3Result2 = redirectToSlayerStorefrontWebDefault;
     const value = SKUStore.get(skuId.skuId);
@@ -72,7 +72,7 @@ export const openSocialLayerStorefrontProductSelfPurchaseSuccessModal = function
   const obj = actions_AlertActionCreatorsDefault;
   const obj2 = {
     importer() {
-      const promise = asyncRequire(13813, dependencyMap.paths);
+      const promise = asyncRequire(13827, dependencyMap.paths);
       return promise.then((SocialLayerStorefrontProductSelfPurchaseSuccessModal) => {
         closure_0 = SocialLayerStorefrontProductSelfPurchaseSuccessModal.SocialLayerStorefrontProductSelfPurchaseSuccessModal;
         return (arg0) => {
@@ -91,7 +91,7 @@ export const openSocialLayerStorefrontProductGiftPurchaseSuccessModal = function
   const obj = actions_AlertActionCreatorsDefault;
   const obj2 = {
     importer() {
-      const promise = asyncRequire(13813, dependencyMap.paths);
+      const promise = asyncRequire(13827, dependencyMap.paths);
       return promise.then((SocialLayerStorefrontProductGiftPurchaseSuccessModal) => {
         closure_0 = SocialLayerStorefrontProductGiftPurchaseSuccessModal.SocialLayerStorefrontProductGiftPurchaseSuccessModal;
         return (arg0) => {

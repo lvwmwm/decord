@@ -1,10 +1,10 @@
-// Module ID: 18944
-// Function ID: 18945
+// Module ID: 18967
+// Function ID: 18968
 // Name: GuildSettingsModalAuditLogFilter
-// Dependencies: [32, 19, 17, 1392, 18940, 1087, 21, 4969, 587, 1128, 5018, 18942, 558, 576, 5025, 6974, 10797, 1633, 1505, 6813, 18945, 1202, 11633, 18946, 6970, 7131, 8696, 7206, 5578, 2]
+// Dependencies: [32, 19, 17, 1392, 18963, 1087, 21, 4969, 587, 1128, 5018, 18965, 558, 576, 5025, 6973, 10805, 1633, 1505, 6812, 18968, 1202, 11644, 18969, 6969, 7130, 8703, 7205, 5578, 2]
 // Exports: createAuditLogFilterActionData, createAuditLogFilterUserData
 
-// Module 18944 (GuildSettingsModalAuditLogFilter)
+// Module 18967 (GuildSettingsModalAuditLogFilter)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,15 +12,15 @@ import Constants from "Constants" /* 1087 */;
 import intl6 from "intl" /* 1128 */;
 import UserUtilsDefault from "UserUtils" /* 5018 */;
 import react_native2 from "react-native" /* 5025 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6813 */;
-import FormRadio from "FormRadio" /* 6974 */;
-import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10797 */;
-import AuditLogUtils from "AuditLogUtils" /* 18942 */;
-import AuditLogActionCreators from "AuditLogActionCreators" /* 18945 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6812 */;
+import FormRadio from "FormRadio" /* 6973 */;
+import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10805 */;
+import AuditLogUtils from "AuditLogUtils" /* 18965 */;
+import AuditLogActionCreators from "AuditLogActionCreators" /* 18968 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 18940 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 18963 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -211,7 +211,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                         stringResult = intl.string(tmp(1128).t["5h0QOP"]);
                       }
                       cResult[23] = filterType;
-                      class O {
+                      class B {
                         constructor(arg0, id) {
                           const tmp = arg0;
                           if (tmp) {
@@ -238,7 +238,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                     }
                     if (cResult[25] !== tmp20) {
                       let obj5 = { size: "md", placeholder: tmp20, onChange: null };
-                      class O {
+                      class B {
                         constructor(arg0, id) {
                           const tmp = arg0;
                           if (tmp) {
@@ -258,14 +258,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                           }
                         }
                       }
-                      const tmp25 = closure_9(tmp(7131).SearchField, obj5);
+                      const tmp25 = closure_9(tmp(7130).SearchBar, obj5);
                       cResult[25] = tmp20;
                       cResult[26] = tmp25;
                       tmp23 = tmp25;
                     } else {
                       tmp23 = cResult[26];
                     }
-                    class O {
+                    class B {
                       constructor(arg0, id) {
                         const tmp = arg0;
                         if (tmp) {
@@ -312,7 +312,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
               }
             }
           }
-          class O {
+          class B {
             constructor(arg0, id) {
               const tmp = arg0;
               if (tmp) {
@@ -358,7 +358,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
           cResult[22] = tmp19;
         }
       }
-      class O {
+      class B {
         constructor(arg0, id) {
           const tmp = arg0;
           if (tmp) {
@@ -381,7 +381,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
       cResult[12] = filterType;
       cResult[13] = guildId;
       cResult[14] = navigation;
-      cResult[15] = O;
+      cResult[15] = B;
       class N {
         constructor() {
           let stringResult;
@@ -433,7 +433,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
       return tmp(formatted, str.toLowerCase());
     };
     cResult[3] = first;
-    class O {
+    class B {
       constructor(arg0, id) {
         const tmp = arg0;
         if (tmp) {
@@ -464,7 +464,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   cResult[2] = found;
   tmp8 = found;
 }) : (function GuildSettingsModalAuditLogFilter(data) {
-  let SearchField;
+  let SearchBar;
   let intl4;
   let intl5;
   let obj5;
@@ -545,7 +545,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     }
   }, items2);
   const items3 = [filterType, guildId, callback, data1.length, tmp.allUsersIconContainer, keyExtractor];
-  let obj2 = { style: tmp.searchBar, children: tmp15(SearchField, { size: "md", placeholder: stringResult, onChange: tmp8 }) };
+  let obj2 = { style: tmp.searchBar, children: tmp15(SearchBar, { size: "md", placeholder: stringResult, onChange: tmp8 }) };
   const callback1 = navigation.useCallback((arg0) => {
     let Icon;
     let index;
@@ -603,7 +603,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     const TableRadioRow = data(tmp6[24]).TableRadioRow;
     return tmp4(TableRadioRow, obj5);
   }, items3);
-  SearchField = data(guildId[25]).SearchField;
+  SearchBar = data(guildId[25]).SearchBar;
   const tmp13 = closure_11;
   const tmp14 = closure_10;
   const tmp16 = first;

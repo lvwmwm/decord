@@ -1,11 +1,11 @@
-// Module ID: 10930
-// Function ID: 10931
+// Module ID: 10938
+// Function ID: 10939
 // Name: InappropriateConversationBlockAndReportAlert
-// Dependencies: [19, 21, 558, 576, 10904, 1128, 10931, 2]
+// Dependencies: [19, 21, 558, 576, 10912, 1128, 10939, 2]
 
-// Module 10930 (InappropriateConversationBlockAndReportAlert)
+// Module 10938 (InappropriateConversationBlockAndReportAlert)
 import Fragment from "Fragment" /* 21 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10904 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10912 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

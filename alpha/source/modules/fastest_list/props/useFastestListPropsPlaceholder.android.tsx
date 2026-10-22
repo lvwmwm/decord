@@ -1,13 +1,13 @@
-// Module ID: 7142
-// Function ID: 7143
+// Module ID: 7141
+// Function ID: 7142
 // Name: useFastestListPropsPlaceholder
-// Dependencies: [19, 17, 7143, 4966, 558, 576, 2]
+// Dependencies: [19, 17, 7142, 4966, 558, 576, 2]
 
-// Module 7142 (useFastestListPropsPlaceholder)
+// Module 7141 (useFastestListPropsPlaceholder)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import ColorUtils from "ColorUtils" /* 4966 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7143 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7142 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ function createNativePlaceholderConfig(listFooter) {
   if (type == null) {
     NONE = FastestListPropsPlaceholder.FastestListPropsPlaceholderType.NONE;
   }
-  size = { borderRadius: "Array", borderTopLeftRadius: "defineProperty", borderTopRightRadius: "ix", borderBottomLeftRadius: "jsxs", borderBottomRightRadius: "useEffect", divider: "PX_16", dividerColor: "Array", dividerPaddingLeft: "toCharArray$esjava$1", dividerPaddingRight: "toCharArray$esjava$1", placeholderShape: "toCharArray$esjava$1", placeholderShapeColor: "HermesInternal", placeholderShapeCount: "toCharArray$esjava$1", placeholderShapeGap: "toCharArray$esjava$1", placeholderShapePaddingHorizontal: "toCharArray$esjava$1", placeholderShapePaddingVertical: "PX_16", placeholderFeedBackgroundColor: "paddingHorizontal", placeholderFeedColor: "toCharArray$esjava$1", placeholderFeedLabelPadding: "toCharArray$esjava$1", placeholderFeedLabelPaddingInnerRatio: "Icon", placeholderFeedLabelSize: "toCharArray$esjava$1", placeholderFeedLabelSecondarySize: "toCharArray$esjava$1", placeholderFeedPadding: "toCharArray$esjava$1", placeholderFeedShape: "Button", placeholderFeedShapeSize: "toCharArray$esjava$1", placeholderType: NONE, width: "toCharArray$esjava$1", height: "split", verticalAlignment: "paddingHorizontal", horizontalAlignment: "toCharArray$esjava$1" };
+  size = { borderRadius: "Array", borderTopLeftRadius: "defineProperty", borderTopRightRadius: "ix", borderBottomLeftRadius: "channel", borderBottomRightRadius: "guildId", divider: "includes", dividerColor: "Array", dividerPaddingLeft: "toCharArray$esjava$1", dividerPaddingRight: "section", placeholderShape: "limit", placeholderShapeColor: "r", placeholderShapeCount: "toCharArray$esjava$1", placeholderShapeGap: "guildId", placeholderShapePaddingHorizontal: "Path", placeholderShapePaddingVertical: "Array", placeholderFeedBackgroundColor: "toCharArray$esjava$1", placeholderFeedColor: "values", placeholderFeedLabelPadding: "e", placeholderFeedLabelPaddingInnerRatio: "r", placeholderFeedLabelSize: "toCharArray$esjava$1", placeholderFeedLabelSecondarySize: "push", placeholderFeedPadding: "lineClamp", placeholderFeedShape: "Array", placeholderFeedShapeSize: "toCharArray$esjava$1", placeholderType: NONE, width: "<string:400883714>", height: "<string:3242721281>", verticalAlignment: "<string:2653683714>", horizontalAlignment: "<string:2984050689>" };
   if (null == listFooter) {
     return size;
   } else {

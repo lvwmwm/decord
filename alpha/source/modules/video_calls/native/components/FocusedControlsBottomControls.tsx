@@ -1,25 +1,25 @@
-// Module ID: 11522
-// Function ID: 11523
+// Module ID: 11533
+// Function ID: 11534
 // Name: FocusedControlsBottomControls
-// Dependencies: [32, 19, 17, 10847, 10848, 1087, 21, 1384, 4969, 587, 6637, 1202, 558, 576, 1633, 5038, 11523, 1107, 1128, 5568, 5192, 5283, 10109, 1499, 11329, 1123, 5023, 4976, 5572, 11525, 2]
+// Dependencies: [32, 19, 17, 10855, 10856, 1087, 21, 1384, 4969, 587, 6636, 1202, 558, 576, 1633, 5038, 11534, 1107, 1128, 5568, 5192, 5283, 10116, 1499, 11338, 1123, 5023, 4976, 5572, 11536, 2]
 
-// Module 11522 (FocusedControlsBottomControls)
+// Module 11533 (FocusedControlsBottomControls)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import native from "native" /* 1202 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
 import timing from "timing" /* 5192 */;
-import CallPTTButtonDefault from "CallPTTButton" /* 11525 */;
+import CallPTTButtonDefault from "CallPTTButton" /* 11536 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelCallStore from "ChannelCallStore" /* 10847 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10848 */;
+import ChannelCallStore from "ChannelCallStore" /* 10855 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10856 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
-import TextStyles from "TextStyles" /* 6637 */;
+import TextStyles from "TextStyles" /* 6636 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ let obj3;
 let rect;
 let tmp;
 let unpackModuleId;
-const CallPTTButton = tmp(11525);
+const CallPTTButton = tmp(11536);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, TouchableWithoutFeedback: metroRequire, ScrollView: metroImportDefault, StyleSheet } = react_native);
 ({ clearFocusTimer: metroImportAll, resetFocusTimer: c9 } = ChannelCallStore);
@@ -236,7 +236,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
   const cResult = obj.c(8);
   positionY = positionY.positionY;
   const tmp4 = closure_19();
-  const obj2 = positionY(11523);
+  const obj2 = positionY(11534);
   const canShowTooltip = obj2.useCanShowTooltip(positionY(1107).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
   const fn = function o() {
     const obj = { opacity: 1 - Math.min(-1 * positionY.get() / c16, 1) };
@@ -298,7 +298,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
   let obj7;
   positionY = positionY.positionY;
   const tmp = closure_19();
-  let obj = positionY(11523);
+  let obj = positionY(11534);
   const canShowTooltip = obj.useCanShowTooltip(positionY(1107).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
   positionY(5038);
   const fn = function o() {

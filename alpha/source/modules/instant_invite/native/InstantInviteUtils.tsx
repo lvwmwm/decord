@@ -1,33 +1,33 @@
-// Module ID: 9019
-// Function ID: 9020
+// Module ID: 9026
+// Function ID: 9027
 // Name: instant_invite/InstantInviteUtils
-// Dependencies: [7551, 4825, 4821, 9020, 4899, 5686, 5698, 1392, 9024, 7793, 9025, 1087, 1267, 7795, 9026, 9027, 5687, 5196, 8819, 5648, 9030, 7269, 7807, 38, 9022, 2]
+// Dependencies: [7552, 4825, 4821, 9027, 4899, 5686, 5698, 1392, 9031, 7794, 9032, 1087, 1267, 7796, 9033, 9034, 5687, 5196, 8826, 5648, 9037, 7270, 7808, 38, 9029, 2]
 // Exports: getShareMessage, handleCopy, handleOpenInviteActionsheet, handleOpenShareSheet, handlePressSettings, hasDeferredInvite, isAppInstalled, showInstantInviteActionSheetForChannel, showVanityUrlInviteActionSheet
 
-// Module 9019 (instant_invite/InstantInviteUtils)
+// Module 9026 (instant_invite/InstantInviteUtils)
 import _modDef38 from "module_38" /* 38 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import ChannelRecord from "ChannelRecord" /* 4825 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
 import ToastUtils from "ToastUtils" /* 5648 */;
 import InviteCodeUtils from "InviteCodeUtils" /* 5687 */;
-import ClipboardUtils from "ClipboardUtils" /* 7269 */;
-import Constants2 from "Constants" /* 7793 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7795 */;
-import DCDSendUtils from "DCDSendUtils" /* 7807 */;
-import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 9022 */;
-import InstantInviteConstants from "InstantInviteConstants" /* 9025 */;
-import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 9026 */;
-import openInstantInviteActionSheetDefault from "openInstantInviteActionSheet" /* 9027 */;
-import getInviteURLDefault from "getInviteURL" /* 9030 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7551 */;
+import ClipboardUtils from "ClipboardUtils" /* 7270 */;
+import Constants2 from "Constants" /* 7794 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7796 */;
+import DCDSendUtils from "DCDSendUtils" /* 7808 */;
+import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 9029 */;
+import InstantInviteConstants from "InstantInviteConstants" /* 9032 */;
+import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 9033 */;
+import openInstantInviteActionSheetDefault from "openInstantInviteActionSheet" /* 9034 */;
+import getInviteURLDefault from "getInviteURL" /* 9037 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7552 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 9020 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 9027 */;
 import GuildChannelStore from "GuildChannelStore" /* 4899 */;
 import InviteStore from "InviteStore" /* 5686 */;
 import PresenceStore from "PresenceStore" /* 5698 */;
 import UserStore from "UserStore" /* 1392 */;
-import DisplayedInviteStore from "DisplayedInviteStore" /* 9024 */;
+import DisplayedInviteStore from "DisplayedInviteStore" /* 9031 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -288,7 +288,7 @@ export const handleOpenShareSheet = function handleOpenShareSheet(code, channel,
           }
         }
     };
-    const tmp21Result = tmp21(8819);
+    const tmp21Result = tmp21(8826);
     tmp21Result.showShareActionSheet(obj2, source);
   }
 };

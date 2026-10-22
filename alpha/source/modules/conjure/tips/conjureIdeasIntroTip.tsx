@@ -1,10 +1,10 @@
-// Module ID: 12276
-// Function ID: 12277
+// Module ID: 12287
+// Function ID: 12288
 // Name: conjureIdeasIntroTip
 // Dependencies: [2]
 // Exports: resolveIdeasIntroTip
 
-// Module 12276 (conjureIdeasIntroTip)
+// Module 12287 (conjureIdeasIntroTip)
 import size from "module_2" /* 2 */;
 
 function resolveIdeasIntroTip(turn) {

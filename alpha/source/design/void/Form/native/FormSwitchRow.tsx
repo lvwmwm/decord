@@ -1,15 +1,15 @@
-// Module ID: 8930
-// Function ID: 8931
+// Module ID: 8937
+// Function ID: 8938
 // Name: FormSwitchRow
-// Dependencies: [32, 109, 19, 17, 21, 4969, 558, 576, 1384, 7223, 8928, 7221, 6972, 7279, 2]
+// Dependencies: [32, 109, 19, 17, 21, 4969, 558, 576, 1384, 7224, 8935, 7222, 6971, 7280, 2]
 
-// Module 8930 (FormSwitchRow)
+// Module 8937 (FormSwitchRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import RedesignCompat from "RedesignCompat" /* 6972 */;
-import FormRowDefault from "FormRow" /* 7221 */;
-import FormLabelDefault from "FormLabel" /* 7223 */;
-import Form_FormSwitchDefault from "Form/FormSwitch" /* 8928 */;
+import RedesignCompat from "RedesignCompat" /* 6971 */;
+import FormRowDefault from "FormRow" /* 7222 */;
+import FormLabelDefault from "FormLabel" /* 7224 */;
+import Form_FormSwitchDefault from "Form/FormSwitch" /* 8935 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -22,7 +22,7 @@ let c9;
 let metroImportAll;
 let tmp;
 const PlatformUtils = tmp(1384);
-const TableSwitchRow2 = tmp(7279);
+const TableSwitchRow2 = tmp(7280);
 let closure_3 = ["onValueChange", "value", "disabled", "label", "subLabel", "accessibilityHint", "trailing", "numberOfLines", "switchProps"];
 const View = react_native.View;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);

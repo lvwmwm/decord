@@ -1,18 +1,18 @@
-// Module ID: 16183
-// Function ID: 16184
+// Module ID: 16201
+// Function ID: 16202
 // Name: PlayStationTwoWayLinkUpsell
-// Dependencies: [19, 1087, 21, 4969, 558, 576, 2067, 16181, 1128, 5655, 16184, 14017, 4805, 2]
+// Dependencies: [19, 1087, 21, 4969, 558, 576, 2067, 16199, 1128, 5655, 16202, 14031, 4805, 2]
 
-// Module 16183 (PlayStationTwoWayLinkUpsell)
+// Module 16201 (PlayStationTwoWayLinkUpsell)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
 import dismissible_content from "dismissible_content" /* 4805 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 14017 */;
-import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 16181 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16184 */;
+import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 14031 */;
+import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 16199 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16202 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -38,7 +38,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStationT
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = HelpdeskUtilsDefault;
     const articleURL = obj2.getArticleURL(constants.PS_CONNECTION);
-    const OneWayToTwoWayLinkUpsell = tmp(16181).OneWayToTwoWayLinkUpsell;
+    const OneWayToTwoWayLinkUpsell = tmp(16199).OneWayToTwoWayLinkUpsell;
     const intl = tmp(1128).intl;
     const stringResult = intl.string(intl3.t.v20wwm);
     const intl2 = tmp(1128).intl;

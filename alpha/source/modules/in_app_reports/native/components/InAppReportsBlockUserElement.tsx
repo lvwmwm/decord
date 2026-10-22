@@ -1,15 +1,15 @@
-// Module ID: 14522
-// Function ID: 14523
+// Module ID: 14536
+// Function ID: 14537
 // Name: InAppReportsBlockUserElement
-// Dependencies: [19, 4821, 4911, 1087, 21, 558, 576, 504, 5976, 5697, 7398, 7406, 1128, 9740, 14520, 2]
+// Dependencies: [19, 4821, 4911, 1087, 21, 558, 576, 504, 5975, 5697, 7399, 7407, 1128, 9747, 14534, 2]
 
-// Module 14522 (InAppReportsBlockUserElement)
+// Module 14536 (InAppReportsBlockUserElement)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5697 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5976 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7398 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7406 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5975 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7399 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7407 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;

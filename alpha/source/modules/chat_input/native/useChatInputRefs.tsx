@@ -1,28 +1,28 @@
-// Module ID: 13007
-// Function ID: 13008
+// Module ID: 13023
+// Function ID: 13024
 // Name: useChatInputRefs
-// Dependencies: [19, 8292, 6752, 7615, 7738, 7744, 1392, 9752, 1087, 5971, 4974, 5585, 5145, 12, 12449, 13008, 13009, 13010, 13011, 9631, 8289, 5147, 1631, 1503, 1384, 5148, 1896, 1267, 10055, 7550, 10057, 13012, 7739, 13013, 6474, 13045, 7013, 2]
+// Dependencies: [19, 8293, 6751, 7616, 7739, 7745, 1392, 9759, 1087, 5970, 4974, 5585, 5145, 12, 12459, 13024, 13025, 13026, 13027, 9638, 8290, 5147, 1631, 1503, 1384, 5148, 1896, 1267, 10062, 7551, 10064, 13028, 7740, 13029, 6473, 13061, 7012, 2]
 // Exports: default
 
-// Module 13007 (useChatInputRefs)
+// Module 13023 (useChatInputRefs)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import MessageConstants from "MessageConstants" /* 4974 */;
 import ChatInputUtils from "ChatInputUtils" /* 5145 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5971 */;
-import StickersUtils from "StickersUtils" /* 6474 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7550 */;
-import DraftStore2 from "DraftStore" /* 7615 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9752 */;
-import LongPressMessageActionSheetUtils from "LongPressMessageActionSheetUtils" /* 10055 */;
-import PendingReplyActionCreators from "PendingReplyActionCreators" /* 10057 */;
-import ChatInputNativeCommandsDefault from "ChatInputNativeCommands" /* 12449 */;
-import ChatInputSendUtils from "ChatInputSendUtils" /* 13013 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5970 */;
+import StickersUtils from "StickersUtils" /* 6473 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7551 */;
+import DraftStore2 from "DraftStore" /* 7616 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9759 */;
+import LongPressMessageActionSheetUtils from "LongPressMessageActionSheetUtils" /* 10062 */;
+import PendingReplyActionCreators from "PendingReplyActionCreators" /* 10064 */;
+import ChatInputNativeCommandsDefault from "ChatInputNativeCommands" /* 12459 */;
+import ChatInputSendUtils from "ChatInputSendUtils" /* 13029 */;
 import react_mod from "react" /* 19 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 8292 */;
-import StickersStore from "StickersStore" /* 6752 */;
-import EditMessageStore from "EditMessageStore" /* 7738 */;
-import SlowmodeStore from "SlowmodeStore" /* 7744 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8293 */;
+import StickersStore from "StickersStore" /* 6751 */;
+import EditMessageStore from "EditMessageStore" /* 7739 */;
+import SlowmodeStore from "SlowmodeStore" /* 7745 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 
@@ -252,7 +252,7 @@ export default function useChatInputRefs(chatInputProps) {
             id = currentUser.id;
           }
           track(CHAT_CONTEXT_BAR_ACTION_CANCELED, obj);
-          const tmp6Result = tmp6(7550);
+          const tmp6Result = tmp6(7551);
           tmp6Result.endEditMessage(channel.id);
         }
       },
@@ -539,7 +539,7 @@ export default function useChatInputRefs(chatInputProps) {
                   }
                   const tmp30Result2 = PendingReplyActionCreators;
                   tmp30Result2.deletePendingReply(channel.id);
-                  const tmp34Result = tmp34(8289);
+                  const tmp34Result = tmp34(8290);
                   tmp34Result.saveDraft(channel.id, "", DraftType.ChannelMessage);
                   const current3 = tmp13.current;
                   if (current3 != null) {

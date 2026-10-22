@@ -1,14 +1,14 @@
-// Module ID: 15811
-// Function ID: 15812
+// Module ID: 15823
+// Function ID: 15824
 // Name: UserProfileUpsellCard
-// Dependencies: [19, 17, 7288, 7528, 21, 4969, 587, 558, 576, 9394, 5220, 5244, 1107, 1202, 2]
+// Dependencies: [19, 17, 7289, 7529, 21, 4969, 587, 558, 576, 9401, 5220, 5244, 1107, 1202, 2]
 
-// Module 15811 (UserProfileUpsellCard)
+// Module 15823 (UserProfileUpsellCard)
 import nativeDefault from "native" /* 587 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
 import LinearGradientDefault from "LinearGradient" /* 5244 */;
-import Constants from "Constants" /* 7288 */;
-import ColorConstants from "ColorConstants" /* 7528 */;
+import Constants from "Constants" /* 7289 */;
+import ColorConstants from "ColorConstants" /* 7529 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -131,7 +131,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
           }
           const obj3 = { style: tmp4.titleContainer, children: items1 };
           const obj4 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, size: "xs" };
-          const NitroWheelIcon = tmp(9394).NitroWheelIcon;
+          const NitroWheelIcon = tmp(9401).NitroWheelIcon;
           items1 = [closure_6(NitroWheelIcon, obj4), ];
           const obj5 = { variant: "heading-sm/bold", children: headerText };
           items1[1] = closure_6(tmp(5220).Text, obj5);
@@ -190,7 +190,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   if (null != headerText) {
     const obj3 = { style: tmp.titleContainer, children: items3 };
     const obj4 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, size: "xs" };
-    const NitroWheelIcon = tmp3(9394).NitroWheelIcon;
+    const NitroWheelIcon = tmp3(9401).NitroWheelIcon;
     items3 = [closure_6(NitroWheelIcon, obj4), ];
     const obj5 = { variant: "heading-sm/bold", children: headerText };
     items3[1] = closure_6(require("Text/Text").Text, obj5);

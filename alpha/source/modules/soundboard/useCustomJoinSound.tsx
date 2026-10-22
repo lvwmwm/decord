@@ -1,11 +1,11 @@
-// Module ID: 7466
-// Function ID: 7467
+// Module ID: 7467
+// Function ID: 7468
 // Name: useCustomJoinSound
-// Dependencies: [1246, 5995, 558, 576, 504, 2]
+// Dependencies: [1246, 5994, 558, 576, 504, 2]
 // Exports: getCustomJoinSound
 
-// Module 7466 (useCustomJoinSound)
-import SoundboardConstants from "SoundboardConstants" /* 5995 */;
+// Module 7467 (useCustomJoinSound)
+import SoundboardConstants from "SoundboardConstants" /* 5994 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

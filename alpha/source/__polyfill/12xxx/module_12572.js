@@ -1,156 +1,84 @@
 // Module ID: 12572
 // Function ID: 12573
-// Dependencies: [12573, 12553, 12574, 12533, 12537, 12509, 12566]
-// Exports: createTransport
+// Dependencies: [12521]
+// Exports: getDebugImagesForResources
 
 // Module 12572
-import _mod12533 from "module_12533" /* 12533 */;
-import _mod12537 from "module_12537" /* 12537 */;
-import _mod12553 from "module_12553" /* 12553 */;
-import _mod12566 from "module_12566" /* 12566 */;
-import _slicedToArray from "_slicedToArray" /* 12574 */;
-
 const require = globalThis.__r;
-let _require, dependencyMap;
+let _require, obj;
 
-
-export const DEFAULT_TRANSPORT_BUFFER_SIZE = 64;
-export const createTransport = function createTransport(bufferSize, arg1) {
-  _require = bufferSize;
-  dependencyMap = arg1;
-  let promiseBuffer = arg2;
-  if (arg2 === undefined) {
-    let tmp2 = _require;
-    let tmp4 = require("module_12573");
-    let num = bufferSize.bufferSize;
-    const makePromiseBuffer = tmp4.makePromiseBuffer;
-    if (!num) {
-      num = 64;
+function getFilenameToDebugIdMap(arg0) {
+  let _sentryDebugIds;
+  let closure_0;
+  let length;
+  let reduced;
+  _require = arg0;
+  _sentryDebugIds = require("module_12521").GLOBAL_OBJ._sentryDebugIds;
+  if (_sentryDebugIds) {
+    let tmp = globalThis;
+    const _Object = Object;
+    const keys = Object.keys(_sentryDebugIds);
+    const tmp2 = reduced;
+    if (tmp2) {
+      return reduced;
     }
-    promiseBuffer = makePromiseBuffer(num);
-  }
-  let closure_3 = {};
-  let obj = {
-    send(arg0) {
-      const items = [];
-      let tmp = bufferSize;
-      const tmp2 = closure_1;
-      let obj = bufferSize(closure_1[1]);
-      obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
-        const obj = _mod12553;
-        const result = obj.envelopeItemTypeToDataCategory(arg1);
-        const obj2 = _slicedToArray;
-        if (obj2.isRateLimited(closure_3, result)) {
-          let tmp4;
-          if ("event" === arg1) {
-            const _Array = Array;
-            let tmp6;
-            if (Array.isArray(arg0)) {
-              tmp6 = arg0[1];
-            }
-            tmp4 = tmp6;
-          }
-          items.recordDroppedEvent("ratelimit_backoff", result, tmp4);
-        } else {
-          items.push(arg0);
-        }
-      });
-      if (0 === items.length) {
-        let tmpResult = tmp(tmp2[3]);
-        return tmpResult.resolvedSyncPromise({});
-      } else {
-        let tmpResult2 = tmp(tmp2[1]);
-        closure_1 = tmpResult2.createEnvelope(arg0[0], items);
-        function recordEnvelopeLoss(arg0) {
-
-        }
-        let tmp4 = recordEnvelopeLoss;
-        const addResult = recordEnvelopeLoss.add(() => {
-          let obj2;
-          let obj = { body: obj2.serializeEnvelope(closure_1) };
-          obj2 = _mod12553;
-          const promise = closure_1(obj);
-          return promise.then((statusCode) => {
-            let DEBUG_BUILD = undefined !== statusCode.statusCode;
-            if (DEBUG_BUILD) {
-              DEBUG_BUILD = statusCode.statusCode < 200 || statusCode.statusCode >= 300;
-              const tmp = statusCode.statusCode < 200 || statusCode.statusCode >= 300;
-            }
-            if (DEBUG_BUILD) {
-              DEBUG_BUILD = items(closure_1[4]).DEBUG_BUILD;
-            }
-            if (DEBUG_BUILD) {
-              const logger = items(closure_1[5]).logger;
-              const _HermesInternal = HermesInternal;
-              logger.warn("Sentry responded with status code " + statusCode.statusCode + " to sent event.");
-            }
-            const obj = items(closure_1[2]);
-            closure_3 = obj.updateRateLimits(closure_3, statusCode);
-            return statusCode;
-          }, (arg0) => {
-            let recordDroppedEvent;
-            if (typeof recordEnvelopeLoss === "function") {
-              let tmp = arg0;
-              const network_error = "network_error";
-              let obj = recordDroppedEvent(closure_1[1]);
-              let tmp4 = closure_1_1;
-              obj.forEachEnvelopeItem(closure_1_1, (arg0, arg1) => {
-                let tmp;
-                if ("event" === arg1) {
-                  const _Array = Array;
-                  let tmp4;
-                  if (Array.isArray(arg0)) {
-                    tmp4 = arg0[1];
-                  }
-                  tmp = tmp4;
-                }
-                recordDroppedEvent = recordDroppedEvent.recordDroppedEvent;
-                const obj = items(closure_3_1[1]);
-                recordDroppedEvent(network_error, obj.envelopeItemTypeToDataCategory(arg1), tmp);
-              });
-              throw arg0;
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          });
-        });
-        return addResult.then((result) => result, (arg0) => {
-          if (arg0 instanceof _mod12566.SentryError) {
-            if (_mod12537.DEBUG_BUILD) {
-              const logger = tmp(12509).logger;
-              logger.error("Skipped sending event because buffer is full.");
-            }
-            if (typeof recordEnvelopeLoss === "function") {
-              const queue_overflow = "queue_overflow";
-              const tmpResult = _mod12553;
-              tmpResult.forEachEnvelopeItem(closure_1, (arg0, arg1) => {
-                let tmp;
-                if ("event" === arg1) {
-                  const _Array = Array;
-                  let tmp4;
-                  if (Array.isArray(arg0)) {
-                    tmp4 = arg0[1];
-                  }
-                  tmp = tmp4;
-                }
-                recordDroppedEvent = recordDroppedEvent.recordDroppedEvent;
-                const obj = items(closure_3_1[1]);
-                recordDroppedEvent(network_error, obj.envelopeItemTypeToDataCategory(arg1), tmp);
-              });
-              const tmpResult2 = _mod12533;
-              return tmpResult2.resolvedSyncPromise({});
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          } else {
-            throw arg0;
-          }
-        });
+    reduced = keys.reduce((acc, item) => {
+      let tmp7;
+      let tmp9;
+      let tmp = obj;
+      if (!tmp) {
+        obj = {};
+        tmp = obj;
       }
-    },
-    flush(arg0) {
-      return promiseBuffer.drain(arg0);
+      if (tmp[item]) {
+        acc[tmp[item][0]] = tmp[item][1];
+      } else {
+        const arr = closure_0(item);
+        let diff = arr.length - 1;
+        if (0 <= diff) {
+          while (true) {
+            let tmp5 = arr[diff];
+            tmp7 = tmp5 && tmp5.filename;
+            tmp9 = _sentryDebugIds[item];
+            if (tmp7) {
+              if (tmp9) {
+                break;
+              }
+            }
+            diff = diff - 1;
+          }
+          acc[tmp7] = tmp9;
+          const items = [tmp7, tmp9];
+          obj[item] = items;
+        }
+      }
+      return acc;
+    }, {});
+  } else {
+    return {};
+  }
+}
+
+export const getDebugImagesForResources = function getDebugImagesForResources(arg0, arg1) {
+  const tmp = getFilenameToDebugIdMap(arg0);
+  const items = [];
+  if (tmp) {
+    const iter = arg1[Symbol.iterator]();
+    let nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp7 = nextResult;
+      if (tmp7) {
+        nextResult = tmp[tmp7];
+      }
+      if (nextResult) {
+        obj = { type: "sourcemap", code_file: tmp7, debug_id: tmp[tmp7] };
+        let arr = items.push(obj);
+      }
+      continue;
     }
-  };
-  return obj;
+    return items;
+  } else {
+    return items;
+  }
 };
+export { getFilenameToDebugIdMap };

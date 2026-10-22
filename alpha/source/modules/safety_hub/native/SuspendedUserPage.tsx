@@ -1,22 +1,22 @@
-// Module ID: 18261
-// Function ID: 18262
+// Module ID: 18283
+// Function ID: 18284
 // Name: SuspendedUserPage
-// Dependencies: [19, 17, 7906, 7882, 21, 4969, 587, 558, 576, 504, 6654, 5646, 7943, 1128, 8099, 5220, 15951, 7207, 2]
+// Dependencies: [19, 17, 7907, 7883, 21, 4969, 587, 558, 576, 504, 6653, 5646, 7944, 1128, 8100, 5220, 15969, 7206, 2]
 
-// Module 18261 (SuspendedUserPage)
+// Module 18283 (SuspendedUserPage)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import LinkingDefault from "Linking" /* 5646 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6654 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7207 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8099 */;
-import SafetyHubPageDefault from "SafetyHubPage" /* 15951 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6653 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7206 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8100 */;
+import SafetyHubPageDefault from "SafetyHubPage" /* 15969 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7906 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7882 */;
+import SafetyHubStore from "SafetyHubStore" /* 7907 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7883 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -115,7 +115,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuspendedUse
         const rect = { top: true, right: true, left: true, children: metroImportAll(View, obj2) };
         obj2 = { style: tmp4.container, children: items1 };
         items1 = [tmp12, tmp18];
-        const SafeAreaPaddingView = tmp(7207).SafeAreaPaddingView;
+        const SafeAreaPaddingView = tmp(7206).SafeAreaPaddingView;
         const tmp26 = metroImportDefault(SafeAreaPaddingView, rect);
         cResult[10] = tmp4.container;
         cResult[11] = tmp12;
@@ -128,7 +128,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuspendedUse
   if (tmp13) {
     const obj3 = { style: tmp4.header, children: items2 };
     const obj4 = { variant: "destructive", accessibilityLabel: intl.string(intl4.t.cpT0Cq), onPress: tmp9, icon: AssetRegistryDefault };
-    const IconButton = tmp(7943).IconButton;
+    const IconButton = tmp(7944).IconButton;
     intl = tmp(1128).intl;
     items2 = [metroImportDefault(IconButton, obj4), ];
     const obj5 = { style: tmp4.text, onPress: tmp10, variant: "text-xs/medium", color: "control-critical-primary-text-default", children: items3 };
@@ -172,7 +172,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuspendedUse
         },
       icon: AssetRegistryDefault
     };
-    const IconButton = tmp2(7943).IconButton;
+    const IconButton = tmp2(7944).IconButton;
     intl = tmp2(1128).intl;
     items1 = [metroImportDefault(IconButton, obj4), ];
     const obj5 = {

@@ -1,10 +1,10 @@
-// Module ID: 6024
-// Function ID: 6025
+// Module ID: 6023
+// Function ID: 6024
 // Name: CheckpointExperiments
 // Dependencies: [1455, 558, 576, 2]
 // Exports: getIsCheckpointCardEnabled, getIsCheckpointEnabled
 
-// Module 6024 (CheckpointExperiments)
+// Module 6023 (CheckpointExperiments)
 import react from "react" /* 576 */;
 import ApexExperiment_mod from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

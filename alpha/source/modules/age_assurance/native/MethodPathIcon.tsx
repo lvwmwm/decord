@@ -1,13 +1,13 @@
-// Module ID: 7945
-// Function ID: 7946
+// Module ID: 7946
+// Function ID: 7947
 // Name: MethodPathIcon
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5238, 7946, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5238, 7947, 2]
 
-// Module 7945 (MethodPathIcon)
+// Module 7946 (MethodPathIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import inlineStyles from "inlineStyles" /* 7946 */;
+import inlineStyles from "inlineStyles" /* 7947 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -18,7 +18,7 @@ let _require;
 
 let size;
 let tmp4;
-const inlineStylesDefault = tmp4(7946);
+const inlineStylesDefault = tmp4(7947);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { container: size };

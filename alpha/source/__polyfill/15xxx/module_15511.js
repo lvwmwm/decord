@@ -1,17 +1,17 @@
 // Module ID: 15511
 // Function ID: 15512
-// Dependencies: [15512]
+// Dependencies: [15512, 15526]
 
 // Module 15511
 import _mod15512 from "module_15512" /* 15512 */;
+import _mod15526 from "module_15526" /* 15526 */;
 
 
-export default (obj) => {
-  let tmp2;
-  if (typeof obj === "object") {
-    tmp2 = null !== obj;
-  } else {
-    tmp2 = _mod15512(obj);
+export default (arg0) => {
+  const tmp = _mod15512(arg0, "string");
+  let text = tmp;
+  if (!_mod15526(tmp)) {
+    text = `${tmp}`;
   }
-  return tmp2;
+  return text;
 };

@@ -1,9 +1,9 @@
-// Module ID: 18222
-// Function ID: 18223
+// Module ID: 18244
+// Function ID: 18245
 // Name: ContextMenuCommandItem
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 12, 6889, 1128, 13047, 5655, 2000, 5666, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 12, 6888, 1128, 13063, 5655, 2000, 5666, 2]
 
-// Module 18222 (ContextMenuCommandItem)
+// Module 18244 (ContextMenuCommandItem)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -13,7 +13,7 @@ import intl2 from "intl" /* 1128 */;
 import Server from "Server" /* 2000 */;
 import FastImageDefault from "FastImage" /* 5655 */;
 import SendMessageIcon from "SendMessageIcon" /* 5666 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 13047 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 13063 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -23,7 +23,7 @@ let obj2;
 let obj3;
 let size;
 let tmp;
-const TableRow2 = tmp(6889);
+const TableRow2 = tmp(6888);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -352,10 +352,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMenuC
     const obj = { applicationName: name, commandName: tmp.displayName };
     return formatToPlainString(Pk4Mz3, obj);
   }, items);
-  let obj = item(13047);
+  let obj = item(13063);
   const applicationCommandsIconSource = obj.getApplicationCommandsIconSource(section);
   let tmp8Result = null != applicationCommandsIconSource;
-  const TableRow = item(6889).TableRow;
+  const TableRow = item(6888).TableRow;
   if (tmp8Result) {
     const obj3 = { style: tmp.commandIcon, source: applicationCommandsIconSource };
     tmp8Result = tmp8(section(5655), obj3);

@@ -1,10 +1,10 @@
-// Module ID: 12248
-// Function ID: 12249
+// Module ID: 12259
+// Function ID: 12260
 // Name: conjurePublishCard
 // Dependencies: [3830, 2]
 // Exports: isConjurePublishCtaVisible, isPublishCardLive, livePublishCardMessageId, publishNoticeMessage, withLivePublishCard
 
-// Module 12248 (conjurePublishCard)
+// Module 12259 (conjurePublishCard)
 import _modDef3830 from "module_3830" /* 3830 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ export const isPublishCardLive = function isPublishCardLive(reason, newUiUnpubli
     if ("new_ui" === reason.reason) {
       tmp3 = true === newUiUnpublished.newUiUnpublished;
     } else {
-      tmp3 = "unpublished" === newUiUnpublished.state;
+      tmp3 = "not_live" === newUiUnpublished.publishState;
     }
     tmp = tmp3;
   }
@@ -34,7 +34,7 @@ export const isConjurePublishCtaVisible = function isConjurePublishCtaVisible(pu
       if ("new_ui" === cta.reason) {
         tmp4 = true === status.newUiUnpublished;
       } else {
-        tmp4 = "unpublished" === status.state;
+        tmp4 = "not_live" === status.publishState;
       }
       tmp2 = tmp4;
     }
@@ -55,7 +55,7 @@ export const livePublishCardMessageId = function livePublishCardMessageId(arg0, 
       if ("new_ui" === publishCta.reason) {
         tmp5 = true === newUiUnpublished.newUiUnpublished;
       } else {
-        tmp5 = "unpublished" === newUiUnpublished.state;
+        tmp5 = "not_live" === newUiUnpublished.publishState;
       }
       tmp4 = tmp5;
     }
@@ -97,7 +97,7 @@ export const withLivePublishCard = function withLivePublishCard(stateFromStores1
       if ("new_ui" === publishCta.reason) {
         tmp6 = true === stateFromStores2.newUiUnpublished;
       } else {
-        tmp6 = "unpublished" === stateFromStores2.state;
+        tmp6 = "not_live" === stateFromStores2.publishState;
       }
       tmp5 = tmp6;
     }

@@ -1,7 +1,7 @@
 // Module ID: 5685
 // Function ID: 5686
 // Name: findCodedLinks
-// Dependencies: [5686, 1087, 1089, 5594, 1389, 5689, 5690, 1381, 8470, 5687, 7792, 9599, 8795, 7748, 6708, 11193, 5973, 2]
+// Dependencies: [5686, 1087, 1089, 5594, 1389, 5689, 5690, 1381, 8471, 5687, 7793, 9606, 8802, 7749, 6707, 11202, 5972, 2]
 // Exports: containsCodedLink, default, findCodedLink, isSuspiciousCodedLink, parseGameServerShareCode, parseQuestsEmbedCode, parseUserProfileEmbedCode, remainingPathFromDiscordHostMatch
 
 // Module 5685 (findCodedLinks)
@@ -12,13 +12,13 @@ import urlParse from "urlParse" /* 1389 */;
 import InviteCodeUtils from "InviteCodeUtils" /* 5687 */;
 import CodedLink from "CodedLink" /* 5689 */;
 import findCodedLinkUrlsDefault from "findCodedLinkUrls" /* 5690 */;
-import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 5973 */;
-import _mod6708 from "module_6708" /* 6708 */;
-import _slicedToArray from "_slicedToArray" /* 7748 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7792 */;
-import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 8470 */;
-import Authorize from "Authorize" /* 9599 */;
-import storefrontCodedLink2 from "storefrontCodedLink" /* 11193 */;
+import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 5972 */;
+import _mod6707 from "module_6707" /* 6707 */;
+import _slicedToArray from "_slicedToArray" /* 7749 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 7793 */;
+import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 8471 */;
+import Authorize from "Authorize" /* 9606 */;
+import storefrontCodedLink2 from "storefrontCodedLink" /* 11202 */;
 import InviteStore from "InviteStore" /* 5686 */;
 import RegexUtils_mod from "RegexUtils" /* 5594 */;
 import size from "module_2" /* 2 */;
@@ -30,7 +30,7 @@ let obj17;
 let obj20;
 let obj4;
 let obj7;
-const f94807 = (arg0, arg1, arg2, arg3) => {
+const f94905 = (arg0, arg1, arg2, arg3) => {
   let combined = arg0;
   if (null == arg2) {
     const _HermesInternal = HermesInternal;
@@ -53,7 +53,7 @@ const coerceLinksToCodedLinks2 = function coerceLinksToCodedLinks(arg0) {
         let primaryHostRemainingPath;
         let templateHostRemainingPath;
         let url;
-        const f94809 = (item) => {
+        const f94907 = (item) => {
           let parts;
           if (typeof item === "string") {
             parts = item.split(",");
@@ -349,7 +349,7 @@ const coerceLinksToCodedLinks2 = function coerceLinksToCodedLinks(arg0) {
               }
               let parsed = null;
               if (null != query) {
-                const tmp4Result23 = _mod6708;
+                const tmp4Result23 = _mod6707;
                 parsed = tmp4Result23.parse(query);
               }
               if (typeof match11[3] === "string") {
@@ -368,7 +368,7 @@ const coerceLinksToCodedLinks2 = function coerceLinksToCodedLinks(arg0) {
                   const _Array = Array;
                   if (Array.isArray(skuIds)) {
                     const tmp4Result26 = storefrontCodedLink2;
-                    result1 = tmp4Result26.normalizeStorefrontSkuIds(skuIds.flatMap(f94809));
+                    result1 = tmp4Result26.normalizeStorefrontSkuIds(skuIds.flatMap(f94907));
                   } else {
                     result1 = [];
                   }
@@ -463,7 +463,7 @@ const coerceLinksToCodedLinks2 = function coerceLinksToCodedLinks(arg0) {
               let applicationId;
               let parsed1 = null;
               if (null != query) {
-                const tmp4Result28 = _mod6708;
+                const tmp4Result28 = _mod6707;
                 parsed1 = tmp4Result28.parse(query);
               }
               let str14;
@@ -497,7 +497,7 @@ const coerceLinksToCodedLinks2 = function coerceLinksToCodedLinks(arg0) {
                       const _Array2 = Array;
                       if (Array.isArray(skuIds1)) {
                         const tmp4Result31 = storefrontCodedLink2;
-                        result2 = tmp4Result31.normalizeStorefrontSkuIds(skuIds1.flatMap(f94809));
+                        result2 = tmp4Result31.normalizeStorefrontSkuIds(skuIds1.flatMap(f94907));
                       } else {
                         result2 = [];
                       }
@@ -916,7 +916,7 @@ function findCodedLinks(str) {
   if (null == str) {
     return [];
   } else {
-    str = str.replace(regExp1, f94807);
+    str = str.replace(regExp1, f94905);
     const tmp4 = findCodedLinkUrlsDefault(str);
     let match = str.match(re22);
     const concat = tmp4.concat;
@@ -1161,7 +1161,7 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
   if (null == sanitizeUrlResult) {
     items = [];
   } else {
-    const str = sanitizeUrlResult.replace(regExp1, f94807);
+    const str = sanitizeUrlResult.replace(regExp1, f94905);
     const tmp4 = findCodedLinkUrlsDefault(str);
     let match = str.match(re22);
     const concat = tmp4.concat;
@@ -1184,7 +1184,7 @@ export const containsCodedLink = function containsCodedLink(sanitizeWhitespaceRe
       items = [];
     } else {
       let tmp4 = regExp1;
-      const str2 = str.replace(regExp1, f94807);
+      const str2 = str.replace(regExp1, f94905);
       let tmp5 = importDefault;
       const tmp6 = findCodedLinkUrlsDefault(str2);
       let match = str2.match(re22);

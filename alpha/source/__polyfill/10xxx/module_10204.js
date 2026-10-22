@@ -1,75 +1,68 @@
 // Module ID: 10204
 // Function ID: 10205
-// Dependencies: [41, 42]
+// Dependencies: [41, 42, 93, 95, 98, 10199]
 
 // Module 10204
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10199 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import map from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-class Filter {
-  constructor() {
-    _classCallCheck(this, Filter);
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
-const entry = {
-  key: "refine",
-  value: function refine(arg0, arr) {
+const regExp = new RegExp("([0-9]|0[1-9]|1[012])/([0-9]{4})", "i");
+class ENSlashMonthFormatParser {
+  constructor() {
+    let constructResult;
     const self = this;
-    let closure_0 = arg0;
-    return arr.filter((item) => self.isValid(closure_0, item));
+    _classCallCheck(this, ENSlashMonthFormatParser);
+    const obj = _getPrototypeOf(ENSlashMonthFormatParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = map;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(ENSlashMonthFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const entry = {
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
   }
 };
-let items = [entry];
-class MergingRefiner {
-  constructor() {
-    _classCallCheck(this, MergingRefiner);
-  }
-}
-const entry1 = {
-  key: "refine",
-  value: function refine(text, arg1) {
-    const self = this;
-    if (arg1.length < 2) {
-      return arg1;
-    } else {
-      const items = [];
-      let first = arg1[0];
-      let num = 1;
-      let num2 = 1;
-      let tmp20 = first;
-      if (1 < arg1.length) {
-        do {
-          let tmp11;
-          let tmp = arg1[num];
-          let str = text.text;
-          let substr = str.substring(first.index + first.text.length, tmp.index);
-          if (self.shouldMergeResults(substr, first, tmp, text)) {
-            let closure_1 = tmp;
-            let mergeResultsResult = self.mergeResults(substr, tmp8, tmp, text);
-            let debugResult = text.debug(() => {
-              console.log("" + self.constructor.name + " merged " + first + " and " + closure_1 + " into " + mergeResultsResult);
-            });
-            tmp11 = mergeResultsResult;
-          } else {
-            let arr = items.push(first);
-            tmp11 = tmp;
-          }
-          num = num2 + 1;
-          first = tmp11;
-          tmp20 = tmp11;
-          num2 = num;
-        } while (num < arg1.length);
-      }
-      if (null != tmp20) {
-        items.push(tmp20);
-      }
-      return items;
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(createParsingComponents, arg1) {
+      const parsed = parseInt(arg1[2]);
+      const parsed1 = parseInt(arg1[1]);
+      const parsingComponents = createParsingComponents.createParsingComponents();
+      const implyResult = parsingComponents.imply("day", 1);
+      const obj = implyResult.assign("month", parsed1);
+      return obj.assign("year", parsed);
     }
   }
-};
-const items1 = [entry1];
-const Filter_export = _createClass(Filter, items);
-const MergingRefiner_export = _createClass(MergingRefiner, items1);
+];
 
-export { Filter_export as Filter };
-export { MergingRefiner_export as MergingRefiner };
+export default _createClass(ENSlashMonthFormatParser, items);

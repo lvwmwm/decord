@@ -1,21 +1,21 @@
-// Module ID: 8293
-// Function ID: 8294
+// Module ID: 8294
+// Function ID: 8295
 // Name: ThreadUtils
-// Dependencies: [109, 6757, 6690, 4903, 1127, 1087, 1128, 7592, 5697, 1267, 8282, 7196, 1405, 558, 576, 504, 11, 2049, 2]
+// Dependencies: [109, 6756, 6689, 4903, 1127, 1087, 1128, 7593, 5697, 1267, 8283, 7195, 1405, 558, 576, 504, 11, 2049, 2]
 // Exports: getTimestampAccessibilityLabel, trackActiveThreadsPopoutOpened, trackThreadBrowserOpened, trackThreadBrowserTab, trackThreadNotificationSettingsUpdated
 
-// Module 8293 (ThreadUtils)
+// Module 8294 (ThreadUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import ThreadConstants from "ThreadConstants" /* 1127 */;
 import intl2 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import _modDef2049 from "module_2049" /* 2049 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5697 */;
-import getTimestampStringDefault from "getTimestampString" /* 7592 */;
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8282 */;
+import getTimestampStringDefault from "getTimestampString" /* 7593 */;
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8283 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ReadStateStore from "ReadStateStore" /* 6757 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6690 */;
+import ReadStateStore from "ReadStateStore" /* 6756 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6689 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4903 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -27,7 +27,7 @@ let _require;
 let c10;
 let c9;
 let tmp;
-const NotificationSettingsUtils = tmp(7196);
+const NotificationSettingsUtils = tmp(7195);
 function getAccessibilityLabelFormatter() {
   let intl;
   const time = { minutes: intl2.t["1Rcf/h"], hours: intl2.t.vgnx51, days: intl2.t.fNvE50, month: intl.string(intl2.t.P7Gygz) };

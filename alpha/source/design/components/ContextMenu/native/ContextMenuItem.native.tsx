@@ -1,14 +1,14 @@
-// Module ID: 15215
-// Function ID: 15216
+// Module ID: 15228
+// Function ID: 15229
 // Name: ContextMenuItem
-// Dependencies: [19, 17, 21, 5038, 4969, 9733, 587, 558, 576, 9732, 5233, 5234, 5232, 5220, 2]
+// Dependencies: [19, 17, 21, 5038, 4969, 9740, 587, 558, 576, 9739, 5233, 5234, 5232, 5220, 2]
 
-// Module 15215 (ContextMenuItem)
+// Module 15228 (ContextMenuItem)
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 5038 */;
 import spring from "spring" /* 5233 */;
-import ContextMenuState from "ContextMenuState" /* 9732 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 9733 */;
+import ContextMenuState from "ContextMenuState" /* 9739 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 9740 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -100,7 +100,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMenuI
         const measureResult = obj.measure(animatedRef);
         if (null != measureResult) {
           ({ pageX, pageY, width, height } = measureResult);
-          const result = index * tmp2(9732).INDEX_BOUNDS_OFFSET;
+          const result = index * tmp2(9739).INDEX_BOUNDS_OFFSET;
           const value = itemMeasurements.get();
           value[result + ContextMenuState.INDEX_BOUNDS_PAGE_X_OFFSET] = pageX;
           const value4 = itemMeasurements.get();
@@ -382,7 +382,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMenuI
         const measureResult = obj.measure(animatedRef);
         if (null != measureResult) {
           ({ pageX, pageY, width, height } = measureResult);
-          const result = index * tmp2(9732).INDEX_BOUNDS_OFFSET;
+          const result = index * tmp2(9739).INDEX_BOUNDS_OFFSET;
           const value = itemMeasurements.get();
           value[result + ContextMenuState.INDEX_BOUNDS_PAGE_X_OFFSET] = pageX;
           const value4 = itemMeasurements.get();

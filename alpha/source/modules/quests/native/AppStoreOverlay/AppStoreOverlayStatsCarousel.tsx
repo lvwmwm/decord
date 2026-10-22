@@ -1,18 +1,18 @@
-// Module ID: 14049
-// Function ID: 14050
+// Module ID: 14063
+// Function ID: 14064
 // Name: AppStoreOverlayStatsCarousel
-// Dependencies: [19, 17, 21, 587, 4969, 14050, 1128, 14051, 558, 576, 5220, 1384, 5283, 7776, 7785, 2]
+// Dependencies: [19, 17, 21, 587, 4969, 14064, 1128, 14065, 558, 576, 5220, 1384, 5283, 7777, 7786, 2]
 
-// Module 14049 (AppStoreOverlayStatsCarousel)
+// Module 14063 (AppStoreOverlayStatsCarousel)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5283 */;
-import AnalyticsActions from "AnalyticsActions" /* 7776 */;
-import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 14050 */;
-import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 14051 */;
+import AnalyticsActions from "AnalyticsActions" /* 7777 */;
+import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 14064 */;
+import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 14065 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -568,9 +568,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
           if (bound !== current) {
             const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.STATS, scrollingDirection: LEFT, carouselPosition: bound, carouselSize: length };
             if (bound > current) {
-              LEFT = tmp2(7785).HorizontalScrollingDirection.RIGHT;
+              LEFT = tmp2(7786).HorizontalScrollingDirection.RIGHT;
             } else {
-              LEFT = tmp2(7785).HorizontalScrollingDirection.LEFT;
+              LEFT = tmp2(7786).HorizontalScrollingDirection.LEFT;
             }
             tmp(obj);
             tmp11.current = bound;
@@ -619,9 +619,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
         if (bound !== current) {
           const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.STATS, scrollingDirection: LEFT, carouselPosition: bound, carouselSize: length };
           if (bound > current) {
-            LEFT = tmp2(7785).HorizontalScrollingDirection.RIGHT;
+            LEFT = tmp2(7786).HorizontalScrollingDirection.RIGHT;
           } else {
-            LEFT = tmp2(7785).HorizontalScrollingDirection.LEFT;
+            LEFT = tmp2(7786).HorizontalScrollingDirection.LEFT;
           }
           tmp(obj);
           tmp11.current = bound;

@@ -1,11 +1,11 @@
-// Module ID: 9062
-// Function ID: 9063
+// Module ID: 9069
+// Function ID: 9070
 // Name: Share
-// Dependencies: [1384, 9063, 9064, 2]
+// Dependencies: [1384, 9070, 9071, 2]
 
-// Module 9062 (Share)
-import AssetRegistryDefault from "AssetRegistry" /* 9063 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9064 */;
+// Module 9069 (Share)
+import AssetRegistryDefault from "AssetRegistry" /* 9070 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9071 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import size from "module_2" /* 2 */;
 

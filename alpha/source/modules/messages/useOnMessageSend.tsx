@@ -1,9 +1,9 @@
-// Module ID: 18107
-// Function ID: 18108
+// Module ID: 18129
+// Function ID: 18130
 // Name: useOnMessageSend
 // Dependencies: [19, 1087, 558, 576, 584, 2]
 
-// Module 18107 (useOnMessageSend)
+// Module 18129 (useOnMessageSend)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import react from "react" /* 19 */;

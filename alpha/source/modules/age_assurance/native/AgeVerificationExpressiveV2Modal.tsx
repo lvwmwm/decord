@@ -1,20 +1,20 @@
-// Module ID: 7918
-// Function ID: 7919
+// Module ID: 7919
+// Function ID: 7920
 // Name: AgeVerificationExpressiveV2Modal
-// Dependencies: [5, 32, 19, 17, 6642, 1087, 21, 1400, 7919, 7921, 7923, 1384, 7925, 7927, 7037, 4969, 587, 7929, 7930, 7914, 7931, 6643, 7900, 7901, 6640, 7932, 7884, 7885, 5964, 7933, 5220, 7867, 2067, 7937, 1128, 3090, 6973, 6889, 7945, 8058, 7289, 6658, 6910, 8060, 8061, 558, 576, 1281, 7081, 2]
+// Dependencies: [5, 32, 19, 17, 6641, 1087, 21, 1400, 7920, 7922, 7924, 1384, 7926, 7928, 7036, 4969, 587, 7930, 7931, 7915, 7932, 6642, 7901, 7902, 6639, 7933, 7885, 7886, 5963, 7934, 5220, 7868, 2067, 7938, 1128, 3090, 6972, 6888, 7946, 8059, 7290, 6657, 6909, 8061, 8062, 558, 576, 1281, 7080, 2]
 
-// Module 7918 (AgeVerificationExpressiveV2Modal)
+// Module 7919 (AgeVerificationExpressiveV2Modal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6640 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6642 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6643 */;
-import NavigatorHeader from "NavigatorHeader" /* 6910 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7867 */;
-import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 7900 */;
-import AgeVerificationAuthSession from "AgeVerificationAuthSession" /* 7901 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6639 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6641 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6642 */;
+import NavigatorHeader from "NavigatorHeader" /* 6909 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7868 */;
+import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 7901 */;
+import AgeVerificationAuthSession from "AgeVerificationAuthSession" /* 7902 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -384,7 +384,7 @@ function MethodsScreen(onClose) {
                     KeyIcon = GoogleNeutralIcon;
                   } else if (navigation(onComplete[7]).AgeAssuranceMethod.CREDIT_CARD === method) {
                     KeyIcon = tmp(tmp2[13]).CreditCardIcon;
-                  } else if (navigation(onComplete[7]).AgeAssuranceMethod.NEW_METHOD === method) {
+                  } else if (navigation(onComplete[7]).AgeAssuranceMethod.AGE_KEY === method) {
                     KeyIcon = tmp(tmp2[14]).KeyIcon;
                   }
                   if (null != KeyIcon) {
@@ -548,7 +548,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
             }
           }
           const obj2 = { screens: tmp7, initialRouteName: constants.METHODS, headerBackTitle: tmp12 };
-          const tmp16 = closure_9(entryPoint(7081).Navigator, obj2);
+          const tmp16 = closure_9(entryPoint(7080).Navigator, obj2);
           cResult[10] = tmp7;
           cResult[11] = tmp16;
           tmp14 = tmp16;
@@ -581,7 +581,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
     }
   };
   obj3[METHODS] = obj4;
-  tmpResult4 = entryPoint(6910);
+  tmpResult4 = entryPoint(6909);
   const GOOGLE_WALLET_VERIFICATION = constants.GOOGLE_WALLET_VERIFICATION;
   const obj5 = {
     headerStyle: tmp4.headerStyle,
@@ -593,7 +593,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
     }
   };
   obj3[GOOGLE_WALLET_VERIFICATION] = obj5;
-  tmpResult5 = entryPoint(6910);
+  tmpResult5 = entryPoint(6909);
   const APP_STORE_VERIFICATION = constants.APP_STORE_VERIFICATION;
   const obj6 = {
     headerStyle: tmp4.headerStyle,
@@ -611,7 +611,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
   cResult[4] = tmp4;
   cResult[5] = obj3;
   tmp7 = obj3;
-  tmpResult6 = entryPoint(6910);
+  tmpResult6 = entryPoint(6909);
 }) : (function AgeVerificationExpressiveV2Modal(entryPoint) {
   let intl;
   entryPoint = entryPoint.entryPoint;

@@ -1,14 +1,14 @@
-// Module ID: 11309
-// Function ID: 11310
+// Module ID: 11318
+// Function ID: 11319
 // Name: canLaunchContextlessFrame
-// Dependencies: [1087, 9618, 2031, 5612, 6797, 2]
+// Dependencies: [1087, 9625, 2031, 5612, 6796, 2]
 // Exports: canLaunchContextlessFrame
 
-// Module 11309 (canLaunchContextlessFrame)
+// Module 11318 (canLaunchContextlessFrame)
 import Constants from "Constants" /* 1087 */;
 import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2031 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6797 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9618 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6796 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9625 */;
 import size from "module_2" /* 2 */;
 
 const ApplicationFlags = Constants.ApplicationFlags;

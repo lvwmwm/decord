@@ -1,9 +1,9 @@
-// Module ID: 6997
-// Function ID: 6998
+// Module ID: 6996
+// Function ID: 6997
 // Name: ErrorText
-// Dependencies: [19, 21, 558, 576, 5125, 4976, 6998, 5220, 5964, 2]
+// Dependencies: [19, 21, 558, 576, 5125, 4976, 6997, 5220, 5963, 2]
 
-// Module 6997 (ErrorText)
+// Module 6996 (ErrorText)
 import shared from "shared" /* 4976 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -61,7 +61,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ErrorText(
   }
   const effect = react.useEffect(tmp6, tmp7);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp11 = closure_3(tmp(6998).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" });
+    const tmp11 = closure_3(tmp(6997).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" });
     cResult[5] = tmp11;
     tmp9 = tmp11;
   } else {
@@ -85,7 +85,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ErrorText(
   }
   const obj3 = { direction: "horizontal", spacing: 4, align: "flex-start", style, children: items1 };
   items1 = [tmp9, tmp12];
-  const tmp16 = closure_4(tmp(5964).Stack, obj3);
+  const tmp16 = closure_4(tmp(5963).Stack, obj3);
   cResult[8] = style;
   cResult[9] = tmp12;
   cResult[10] = tmp16;
@@ -106,8 +106,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ErrorText(
     }
   }, items);
   const obj2 = { direction: "horizontal", spacing: 4, align: "flex-start", style, children: items1 };
-  const Stack = nodeText(5964).Stack;
-  items1 = [closure_3(nodeText(6998).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), closure_3(nodeText(5220).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children })];
+  const Stack = nodeText(5963).Stack;
+  items1 = [closure_3(nodeText(6997).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), closure_3(nodeText(5220).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children })];
   return closure_4(Stack, obj2);
 });
 const result = size.fileFinishedImporting("design/components/ErrorText/native/ErrorText.native.tsx");

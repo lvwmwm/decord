@@ -1,17 +1,17 @@
-// Module ID: 19181
-// Function ID: 19182
+// Module ID: 19204
+// Function ID: 19205
 // Name: FormEmojiPicker
-// Dependencies: [19, 1087, 1395, 21, 4969, 6637, 587, 558, 576, 15080, 4915, 16492, 16491, 5655, 19182, 9795, 4919, 1128, 1202, 11509, 9010, 2]
+// Dependencies: [19, 1087, 1395, 21, 4969, 6636, 587, 558, 576, 15093, 4915, 16514, 16513, 5655, 19205, 9802, 4919, 1128, 1202, 11520, 9017, 2]
 
-// Module 19181 (FormEmojiPicker)
+// Module 19204 (FormEmojiPicker)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9795 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9802 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
-import TextStyles_mod from "TextStyles" /* 6637 */;
+import TextStyles_mod from "TextStyles" /* 6636 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,14 +45,14 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormEmojiP
   onChange = onChange.onChange;
   ({ emojiId, emojiName } = emoji);
   const tmp4 = closure_6();
-  const tmp6 = onChange(15080)();
+  const tmp6 = onChange(15093)();
   if (cResult[0] === emojiId) {
     let tmp7;
     let tmp16;
     if (cResult[1] === emojiName) {
       tmp7 = cResult[2];
     }
-    const tmpResult = tmp(16492);
+    const tmpResult = tmp(16514);
     const emojiByIdOrName = tmpResult.useEmojiByIdOrName(guildId, tmp7);
     if (cResult[3] === tmp7) {
       let tmp12;
@@ -99,7 +99,7 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormEmojiP
               }
               const _Symbol = Symbol;
               if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-                let obj2 = { size: tmp(1202).Icon.Sizes.MEDIUM, source: onChange(11509) };
+                let obj2 = { size: tmp(1202).Icon.Sizes.MEDIUM, source: onChange(11520) };
                 const Icon = tmp(1202).Icon;
                 const tmp31 = closure_4(Icon, obj2);
                 cResult[20] = tmp31;
@@ -120,7 +120,7 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormEmojiP
               }
               const obj3 = { style: tmp19, accessibilityRole: "link", onPress: tmp18, children: items };
               items = [tmp12, tmp25, tmp29];
-              const tmp34 = closure_5(onChange(9010), obj3);
+              const tmp34 = closure_5(onChange(9017), obj3);
               cResult[21] = tmp12;
               cResult[22] = tmp18;
               cResult[23] = tmp19;
@@ -175,9 +175,9 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormEmojiP
     }
     if (null != tmp7) {
       const obj5 = { guildId, id: tmp7 };
-      tmp16 = closure_4(tmp5(16491), obj5);
+      tmp16 = closure_4(tmp5(16513), obj5);
     } else {
-      const obj6 = { resizeMode: "contain", source: onChange(19182) };
+      const obj6 = { resizeMode: "contain", source: onChange(19205) };
       const tmp5Result = onChange(5655);
       tmp16 = closure_4(tmp5Result, obj6);
     }
@@ -213,7 +213,7 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormEmojiP
   const onChange = emoji.onChange;
   const tmp = closure_6();
   const tmp3 = dependencyMap;
-  const tmp4 = onChange(15080)();
+  const tmp4 = onChange(15093)();
   if (emojiId == null) {
     const convertSurrogateToName = onChange(4915).convertSurrogateToName;
     onChange(4915);
@@ -222,14 +222,14 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormEmojiP
     }
     emojiId = convertSurrogateToName(emojiName, false);
   }
-  let obj = guildId(16492);
+  let obj = guildId(16514);
   const emojiByIdOrName = obj.useEmojiByIdOrName(guildId, emojiId);
   if (null != emojiId) {
     let obj2 = { guildId, id: emojiId };
-    tmp10 = closure_4(tmp2(16491), obj2);
+    tmp10 = closure_4(tmp2(16513), obj2);
     tmp11 = closure_4;
   } else {
-    const obj3 = { resizeMode: "contain", source: onChange(19182) };
+    const obj3 = { resizeMode: "contain", source: onChange(19205) };
     const tmp2Result3 = onChange(5655);
     tmp10 = closure_4(tmp2Result3, obj3);
     tmp11 = closure_4;
@@ -265,7 +265,7 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormEmojiP
   const items2 = [tmp.content, ];
   const obj5 = { style: items2, children: allEmojiNamesString };
   items2[1] = null != emojiByIdOrName ? tmp.text : tmp.placeholder;
-  const tmp2Result4 = onChange(9010);
+  const tmp2Result4 = onChange(9017);
   const LegacyText = tmp6(1202).LegacyText;
   const tmp13 = closure_5;
   if (null != emojiByIdOrName) {
@@ -276,7 +276,7 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormEmojiP
     allEmojiNamesString = intl.string(tmp6(1128).t.gXAN3P);
   }
   items1[1] = tmp11(LegacyText, obj5);
-  const obj6 = { size: guildId(1202).Icon.Sizes.MEDIUM, source: onChange(11509) };
+  const obj6 = { size: guildId(1202).Icon.Sizes.MEDIUM, source: onChange(11520) };
   const Icon = tmp6(1202).Icon;
   items1[2] = tmp11(Icon, obj6);
   return tmp13(tmp2Result4, obj4);

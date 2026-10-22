@@ -1,9 +1,9 @@
-// Module ID: 9029
-// Function ID: 9030
+// Module ID: 9036
+// Function ID: 9037
 // Name: UserPlaceholderRow
 // Dependencies: [19, 17, 4970, 21, 4969, 587, 558, 576, 5038, 504, 5192, 5195, 2]
 
-// Module 9029 (UserPlaceholderRow)
+// Module 9036 (UserPlaceholderRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;

@@ -1,10 +1,10 @@
-// Module ID: 12878
-// Function ID: 12879
+// Module ID: 12896
+// Function ID: 12897
 // Name: CheckpointStatsUtils
 // Dependencies: [1406, 4835, 11, 2]
-// Exports: getCheckpointTopPercent, globalStatsFromServer, hasCheckpointEmojis, hasCheckpointGuilds, hasCheckpointMessages, hasCheckpointSidekick, hasCheckpointSquad, hasCheckpointVoiceMinutes, statsFromServer
+// Exports: getCheckpointTopPercent, globalStatsFromServer, hasCheckpointEmojis, hasCheckpointGames, hasCheckpointGuilds, hasCheckpointMessages, hasCheckpointSidekick, hasCheckpointSquad, hasCheckpointVoiceMinutes, statsFromServer
 
-// Module 12878 (CheckpointStatsUtils)
+// Module 12896 (CheckpointStatsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 4835 */;
 import UserRecord from "UserRecord" /* 1406 */;
@@ -114,6 +114,34 @@ export const hasCheckpointEmojis = function hasCheckpointEmojis(stats) {
       const emojis2 = stats.emojis;
       if (emojis2 != null) {
         num2 = emojis2.emojis.length;
+      }
+    }
+    if (num2 == null) {
+      num2 = 0;
+    }
+    tmp = num2 > 0;
+  }
+  return tmp;
+};
+export const hasCheckpointGames = function hasCheckpointGames(stats) {
+  let num;
+  const _Math = Math;
+  if (stats != null) {
+    const games = stats.games;
+    if (games != null) {
+      num = games.totalGamesPlayed;
+    }
+  }
+  if (num == null) {
+    num = 0;
+  }
+  let tmp = round(num) > 0;
+  if (tmp) {
+    let num2;
+    if (stats != null) {
+      const games2 = stats.games;
+      if (games2 != null) {
+        num2 = games2.games.length;
       }
     }
     if (num2 == null) {

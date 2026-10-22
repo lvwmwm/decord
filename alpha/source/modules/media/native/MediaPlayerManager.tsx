@@ -1,10 +1,10 @@
-// Module ID: 15739
-// Function ID: 15740
+// Module ID: 15753
+// Function ID: 15754
 // Name: MediaPlayerManager
-// Dependencies: [17, 4820, 6790, 4821, 5997, 4901, 2001, 1087, 5595, 15740, 1098, 3, 570, 1274, 2004, 5137, 584, 1384, 568, 7550, 6788, 2]
+// Dependencies: [17, 4820, 6789, 4821, 5996, 4901, 2001, 1087, 5595, 15754, 1098, 3, 570, 1274, 2004, 5137, 584, 1384, 568, 7551, 6787, 2]
 // Exports: isPlaybackComplete
 
-// Module 15739 (MediaPlayerManager)
+// Module 15753 (MediaPlayerManager)
 import LoggerDefault from "Logger" /* 3 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -13,15 +13,15 @@ import Constants2 from "Constants" /* 1098 */;
 import react_native from "react-native" /* 1274 */;
 import RootNavigationRef from "RootNavigationRef" /* 5137 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5595 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7550 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7551 */;
 import react_native2 from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
-import VoicePanelStore from "VoicePanelStore" /* 6790 */;
+import VoicePanelStore from "VoicePanelStore" /* 6789 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import MessageStore from "MessageStore" /* 5997 */;
+import MessageStore from "MessageStore" /* 5996 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15740 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15754 */;
 import module_570 from "module_570" /* 570 */;
 import LifecycleManager from "LifecycleManager" /* 2004 */;
 import size from "module_2" /* 2 */;
@@ -59,7 +59,7 @@ const useMediaPlayerManagerStore = module_570.create((arg0) => {
       obj.batchUpdates(() => closure_1_0({ showPip: false }));
     },
     displayedMediaItemIdsPerChannel: {},
-    currentlyDisplayedChannelId: 150
+    currentlyDisplayedChannelId: 24
   };
   return obj;
 });

@@ -1,9 +1,9 @@
-// Module ID: 14434
-// Function ID: 14435
+// Module ID: 14448
+// Function ID: 14449
 // Name: AvatarGrid
-// Dependencies: [19, 17, 4970, 5698, 21, 4969, 587, 558, 576, 504, 8711, 1202, 2]
+// Dependencies: [19, 17, 4970, 5698, 21, 4969, 587, 558, 576, 504, 8718, 1202, 2]
 
-// Module 14434 (AvatarGrid)
+// Module 14448 (AvatarGrid)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -122,7 +122,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GridAva
               }
             }
           }
-          const tmpResult4 = user(8711);
+          const tmpResult4 = user(8718);
           class E {
             constructor() {
               return useReducedMotion.useReducedMotion;
@@ -200,7 +200,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GridAva
   const tmp7 = closure_5;
   if (undefined !== pendingAvatarSrc) {
     const obj4 = { source: tmp2Result.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores1) };
-    tmp2Result = user(8711);
+    tmp2Result = user(8718);
     const merged = Object.assign(obj3);
     obj5 = obj4;
   } else {

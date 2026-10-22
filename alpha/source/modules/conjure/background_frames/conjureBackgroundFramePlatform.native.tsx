@@ -1,14 +1,14 @@
-// Module ID: 17947
-// Function ID: 17948
+// Module ID: 17969
+// Function ID: 17970
 // Name: conjureBackgroundFramePlatform
-// Dependencies: [5595, 6762, 10736, 11830, 5612, 5693, 2]
+// Dependencies: [5595, 6761, 10743, 11844, 5612, 5693, 2]
 
-// Module 17947 (conjureBackgroundFramePlatform)
+// Module 17969 (conjureBackgroundFramePlatform)
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5595 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5612 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10736 */;
-import FramePoolManagerDefault from "FramePoolManager" /* 11830 */;
-import FramesConstants from "FramesConstants" /* 6762 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10743 */;
+import FramePoolManagerDefault from "FramePoolManager" /* 11844 */;
+import FramesConstants from "FramesConstants" /* 6761 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -22,6 +22,9 @@ let obj = {
     return false;
   },
   isActivityPopoutOpen() {
+    return false;
+  },
+  hasOwnPictureInPicture() {
     return false;
   },
   isPictureInPicture(surface) {

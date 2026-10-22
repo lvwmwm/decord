@@ -1,10 +1,10 @@
-// Module ID: 9956
-// Function ID: 9957
+// Module ID: 9963
+// Function ID: 9964
 // Name: TabBar
-// Dependencies: [109, 32, 19, 17, 21, 4969, 587, 558, 576, 7206, 5283, 1128, 2]
+// Dependencies: [109, 32, 19, 17, 21, 4969, 587, 558, 576, 7205, 5283, 1128, 2]
 // Exports: default
 
-// Module 9956 (TabBar)
+// Module 9963 (TabBar)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -22,7 +22,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const defaultMVCPConfig = tmp(7206);
+const defaultMVCPConfig = tmp(7205);
 let closure_2 = ["ref"];
 ({ View: metroRequire, TouchableWithoutFeedback: metroImportDefault, ScrollView: metroImportAll } = react_native);
 const jsx = Fragment.jsx;

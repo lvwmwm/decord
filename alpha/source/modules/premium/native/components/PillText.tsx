@@ -1,14 +1,14 @@
-// Module ID: 14663
-// Function ID: 14664
+// Module ID: 14677
+// Function ID: 14678
 // Name: PillText
-// Dependencies: [1087, 21, 4969, 587, 558, 576, 14664, 5220, 5244, 2]
+// Dependencies: [1087, 21, 4969, 587, 558, 576, 14678, 5220, 5244, 2]
 
-// Module 14663 (PillText)
+// Module 14677 (PillText)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 14664 */;
+import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 14678 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

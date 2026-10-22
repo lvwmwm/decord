@@ -1,9 +1,9 @@
-// Module ID: 17761
-// Function ID: 17762
+// Module ID: 17783
+// Function ID: 17784
 // Name: ForYouItems
-// Dependencies: [5, 32, 19, 17, 4970, 2045, 4821, 4843, 1392, 17755, 1087, 6657, 21, 4969, 5220, 587, 558, 5966, 576, 17760, 1128, 1405, 8398, 8269, 13025, 10163, 8089, 504, 8467, 1202, 13474, 17762, 1505, 5682, 15027, 6774, 1267, 14445, 9931, 10012, 5649, 10035, 2002, 5196, 17763, 5675, 17757, 7274, 17764, 17765, 11, 6894, 17766, 6775, 14369, 1506, 4797, 5629, 17776, 17777, 17778, 17779, 17780, 17786, 686, 17787, 17788, 1388, 17759, 17789, 7206, 2]
+// Dependencies: [5, 32, 19, 17, 4970, 2045, 4821, 4843, 1392, 17777, 1087, 6656, 21, 4969, 5220, 587, 558, 5965, 576, 17782, 1128, 1405, 8399, 8270, 13041, 10170, 8090, 504, 8468, 1202, 13488, 17784, 1505, 5682, 15040, 6773, 1267, 14459, 9938, 10019, 5649, 10042, 2002, 5196, 17785, 5675, 17779, 7275, 17786, 17787, 11, 6893, 17788, 6774, 14383, 1506, 4797, 5629, 17798, 17799, 17800, 17801, 17802, 17808, 686, 17809, 17810, 1388, 17781, 17811, 7205, 2]
 
-// Module 17761 (ForYouItems)
+// Module 17783 (ForYouItems)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _mod686 from "module_686" /* 686 */;
@@ -13,22 +13,22 @@ import GlobalUtils from "GlobalUtils" /* 1388 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import parseURLDefault from "parseURL" /* 5682 */;
-import CustomMarkupAll from "CustomMarkup" /* 5966 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6657 */;
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6774 */;
-import PollsUtils from "PollsUtils" /* 8269 */;
-import parsePollResultSystemMessageEmbedDefault from "parsePollResultSystemMessageEmbed" /* 8398 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13474 */;
-import handleSupportedURLDefault from "handleSupportedURL" /* 15027 */;
-import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 17759 */;
-import ForYouReadSectionHeader from "ForYouReadSectionHeader" /* 17776 */;
-import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader" /* 17777 */;
-import ForYouHoistedItemsHeader from "ForYouHoistedItemsHeader" /* 17778 */;
-import ForYouSuggestedFriendsSectionHeaderDefault from "ForYouSuggestedFriendsSectionHeader" /* 17779 */;
-import ForYouSuggestedFriendRowDefault from "ForYouSuggestedFriendRow" /* 17780 */;
-import ForYouShowAllRow from "ForYouShowAllRow" /* 17786 */;
-import ForYouUnreadClearedState from "ForYouUnreadClearedState" /* 17787 */;
-import ForYouLoadMore from "ForYouLoadMore" /* 17788 */;
+import CustomMarkupAll from "CustomMarkup" /* 5965 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6656 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6773 */;
+import PollsUtils from "PollsUtils" /* 8270 */;
+import parsePollResultSystemMessageEmbedDefault from "parsePollResultSystemMessageEmbed" /* 8399 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13488 */;
+import handleSupportedURLDefault from "handleSupportedURL" /* 15040 */;
+import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 17781 */;
+import ForYouReadSectionHeader from "ForYouReadSectionHeader" /* 17798 */;
+import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader" /* 17799 */;
+import ForYouHoistedItemsHeader from "ForYouHoistedItemsHeader" /* 17800 */;
+import ForYouSuggestedFriendsSectionHeaderDefault from "ForYouSuggestedFriendsSectionHeader" /* 17801 */;
+import ForYouSuggestedFriendRowDefault from "ForYouSuggestedFriendRow" /* 17802 */;
+import ForYouShowAllRow from "ForYouShowAllRow" /* 17808 */;
+import ForYouUnreadClearedState from "ForYouUnreadClearedState" /* 17809 */;
+import ForYouLoadMore from "ForYouLoadMore" /* 17810 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -38,7 +38,7 @@ import ApplicationStore from "ApplicationStore" /* 2045 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import UserStore from "UserStore" /* 1392 */;
-import NotificationCenterStore from "NotificationCenterStore" /* 17755 */;
+import NotificationCenterStore from "NotificationCenterStore" /* 17777 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -72,7 +72,7 @@ let obj8;
 let size;
 let tmp;
 const Link = tmp(1506);
-const ForYouMentionPlaceholder = tmp(17760);
+const ForYouMentionPlaceholder = tmp(17782);
 function getMessageContentPreviewV2(item) {
   let ATTACHMENT;
   let result;
@@ -399,7 +399,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYou
   const acked = item.acked;
   ({ compactMode, roleStyle } = item);
   const tmp4 = closure_32();
-  const obj2 = message_channel_id(5966);
+  const obj2 = message_channel_id(5965);
   const notifCenterV2MessagePreviewParser = obj2.getNotifCenterV2MessagePreviewParser(closure_27(), closure_28, roleStyle);
   const tmp6 = getMessageContentPreviewV2({ item });
   const iconType = tmp6.iconType;
@@ -500,8 +500,8 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYou
       const message5 = item.message;
       const obj4 = { content, guildId: guild_id, channelId: message_channel_id, messageId: message_id, authorId: id1 };
       id1 = undefined;
-      const renderMessageContentMarkup = item(8467).renderMessageContentMarkup;
-      item(8467);
+      const renderMessageContentMarkup = item(8468).renderMessageContentMarkup;
+      item(8468);
       if (message5 != null) {
         id1 = message5.author.id;
       }
@@ -517,13 +517,13 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYou
         const obj6 = { style: tmp4.messagePreviewIconV2Container, children: closure_21(Icon, obj7) };
         Icon = tmp(1202).Icon;
         if (constants4.ATTACHMENT === iconType) {
-          tmp38 = guild_id(13025);
+          tmp38 = guild_id(13041);
         } else if (constants4.STICKER === iconType) {
-          tmp38 = guild_id(10163);
+          tmp38 = guild_id(10170);
         } else {
           tmp38 = null;
           if (constants4.VOICE_MESSAGE === iconType) {
-            tmp38 = guild_id(8089);
+            tmp38 = guild_id(8090);
           }
         }
         obj7 = { source: tmp38, size: item(1202).IconSizes.SMALL, style: tmp4.messagePreviewIconV2 };
@@ -630,7 +630,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYou
   let message_channel_id;
   ({ compactMode, roleStyle } = item);
   const tmp = closure_32();
-  const obj = message_channel_id(5966);
+  const obj = message_channel_id(5965);
   const notifCenterV2MessagePreviewParser = obj.getNotifCenterV2MessagePreviewParser(closure_27(), closure_28, roleStyle);
   const tmp4 = getMessageContentPreviewV2({ item });
   const iconType = tmp4.iconType;
@@ -689,8 +689,8 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYou
   let message = item.message;
   const obj8 = { content, guildId: guild_id, channelId: message_channel_id, messageId: message_id, authorId: id };
   id = undefined;
-  const renderMessageContentMarkup = item(8467).renderMessageContentMarkup;
-  item(8467);
+  const renderMessageContentMarkup = item(8468).renderMessageContentMarkup;
+  item(8468);
   if (message != null) {
     id = message.author.id;
   }
@@ -705,13 +705,13 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYou
     const obj9 = { style: tmp.messagePreviewIconV2Container, children: closure_21(Icon, obj10) };
     Icon = tmp5(1202).Icon;
     if (constants4.ATTACHMENT === iconType) {
-      tmp17 = guild_id(13025);
+      tmp17 = guild_id(13041);
     } else if (constants4.STICKER === iconType) {
-      tmp17 = guild_id(10163);
+      tmp17 = guild_id(10170);
     } else {
       tmp17 = null;
       if (constants4.VOICE_MESSAGE === iconType) {
-        tmp17 = guild_id(8089);
+        tmp17 = guild_id(8090);
       }
     }
     obj10 = { source: tmp17, size: item(1202).IconSizes.SMALL, style: tmp.messagePreviewIconV2 };

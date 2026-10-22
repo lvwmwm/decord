@@ -1,21 +1,21 @@
-// Module ID: 18112
-// Function ID: 18113
+// Module ID: 18134
+// Function ID: 18135
 // Name: useUserRowWithSubLabelHeight
-// Dependencies: [558, 576, 5238, 587, 11023, 5239, 17783, 12014, 2]
+// Dependencies: [558, 576, 5238, 587, 11032, 5239, 17805, 12025, 2]
 // Exports: getUserRowWithSubLabelHeight
 
-// Module 18112 (useUserRowWithSubLabelHeight)
+// Module 18134 (useUserRowWithSubLabelHeight)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 5238 */;
 import useFontScale from "useFontScale" /* 5239 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11023 */;
-import ActionStatusSubLabel from "ActionStatusSubLabel" /* 17783 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11032 */;
+import ActionStatusSubLabel from "ActionStatusSubLabel" /* 17805 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const roundToNearestPixelDefault = tmp4(12014);
+const roundToNearestPixelDefault = tmp4(12025);
 function getUserRowWithSubLabelHeight(rowHeight) {
   return Math.max(rowHeight.rowHeight, 2 * rowHeight.rowPadding + rowHeight.labelLineHeight + rowHeight.subLabelLines * rowHeight.subLabelLineHeight);
 }
@@ -34,7 +34,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserRow
   const scaledTextLineHeight = tmpResult5.useScaledTextLineHeight("text-md/semibold");
   const tmpResult6 = useFontScale;
   const fontScale = tmpResult6.useFontScale();
-  const result = tmp(17783).ACTION_STATUS_SUB_LABEL_LINE_HEIGHT * fontScale;
+  const result = tmp(17805).ACTION_STATUS_SUB_LABEL_LINE_HEIGHT * fontScale;
   if (cResult[0] === scaledTextLineHeight) {
     if (cResult[1] === token) {
       if (cResult[2] === token1) {

@@ -1,9 +1,9 @@
-// Module ID: 19046
-// Function ID: 19047
+// Module ID: 19069
+// Function ID: 19070
 // Name: GuildSettingsModalInstantInvites
-// Dependencies: [32, 19, 17, 11202, 8836, 4821, 4843, 8975, 1087, 21, 4969, 587, 558, 576, 1128, 2067, 5220, 6897, 14855, 6886, 13185, 504, 12, 8372, 8370, 5196, 12693, 2002, 5649, 10786, 7120, 1202, 19047, 7206, 5578, 2]
+// Dependencies: [32, 19, 17, 11211, 8843, 4821, 4843, 8982, 1087, 21, 4969, 587, 558, 576, 1128, 2067, 5220, 6896, 14869, 6885, 13201, 504, 12, 8373, 8371, 5196, 12712, 2002, 5649, 10794, 7119, 1202, 19070, 7205, 5578, 2]
 
-// Module 19046 (GuildSettingsModalInstantInvites)
+// Module 19069 (GuildSettingsModalInstantInvites)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,19 +12,19 @@ import asyncRequire from "asyncRequire" /* 2002 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import TableCheckboxRow2 from "TableCheckboxRow" /* 6886 */;
-import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8370 */;
-import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 8372 */;
-import InstantInvite from "InstantInvite" /* 10786 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14855 */;
+import TableCheckboxRow2 from "TableCheckboxRow" /* 6885 */;
+import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8371 */;
+import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 8373 */;
+import InstantInvite from "InstantInvite" /* 10794 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14869 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11202 */;
-import InviteRecord from "InviteRecord" /* 8836 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11211 */;
+import InviteRecord from "InviteRecord" /* 8843 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8975 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8982 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -154,7 +154,7 @@ function GuildSettingsModalInstantInvites(invites) {
         obj2 = GuildAntiRaidUtils;
         const obj4 = { guild, analyticsData: obj };
         const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.openLazy(asyncRequire(12693, dependencyMap.paths), "GuildIncidentActionsActionSheet", obj4);
+        obj3.openLazy(asyncRequire(12712, dependencyMap.paths), "GuildIncidentActionsActionSheet", obj4);
         closure_7(false);
       } catch (tmp16) {
         closure_7(false);
@@ -287,7 +287,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function InvitesDisab
     let tmp14 = null;
     if (invitesDisabled) {
       const obj5 = { source: AssetRegistryDefault };
-      const TableRowIcon = tmp(6897).TableRowIcon;
+      const TableRowIcon = tmp(6896).TableRowIcon;
       tmp14 = authStore2(TableRowIcon, obj5);
     }
     cResult[5] = invitesDisabled;
@@ -333,11 +333,11 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function InvitesDisab
     stringResult1 = format(IFBHag, obj);
   }
   const obj3 = { label: stringResult, subLabel: authStore2(Text_Text.Text, { variant: "text-xs/medium", children: stringResult1 }), icon: tmp7Result, checked: invitesDisabled, onPress: onPauseInvites, start: true, end: true };
-  const TableCheckboxRow = tmp(6886).TableCheckboxRow;
+  const TableCheckboxRow = tmp(6885).TableCheckboxRow;
   tmp7Result = null;
   if (invitesDisabled) {
     const obj4 = { source: AssetRegistryDefault };
-    const TableRowIcon = tmp(6897).TableRowIcon;
+    const TableRowIcon = tmp(6896).TableRowIcon;
     tmp7Result = tmp7(TableRowIcon, obj4);
   }
   return authStore2(TableCheckboxRow, obj3);

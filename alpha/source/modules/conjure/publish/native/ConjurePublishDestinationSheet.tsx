@@ -1,19 +1,19 @@
-// Module ID: 12197
-// Function ID: 12198
+// Module ID: 12208
+// Function ID: 12209
 // Name: ConjurePublishDestinationSheet
-// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 1128, 3830, 5196, 7232, 6970, 6971, 5230, 7282, 2]
+// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 1128, 3830, 5196, 7233, 6969, 6970, 5230, 7283, 2]
 // Exports: default
 
-// Module 12197 (ConjurePublishDestinationSheet)
+// Module 12208 (ConjurePublishDestinationSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5196 */;
 import components_Button_Button from "components/Button/Button" /* 5230 */;
-import TableRadioRow from "TableRadioRow" /* 6970 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 6971 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7232 */;
-import ActionSheet2 from "ActionSheet" /* 7282 */;
+import TableRadioRow from "TableRadioRow" /* 6969 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 6970 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7233 */;
+import ActionSheet2 from "ActionSheet" /* 7283 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -71,8 +71,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
   dependencyMap = tmp11;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: first1 };
-    cResult[3] = closure_6(onDone(7232).BottomSheetTitleHeader, obj2);
-    const tmp14 = closure_6(onDone(7232).BottomSheetTitleHeader, obj2);
+    cResult[3] = closure_6(onDone(7233).BottomSheetTitleHeader, obj2);
+    const tmp14 = closure_6(onDone(7233).BottomSheetTitleHeader, obj2);
   }
   if (cResult[4] !== onDone) {
     const fn = function w() {
@@ -224,8 +224,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
   }
   cResult[9] = value;
   cResult[10] = tmp16;
-  cResult[11] = closure_6(onDone(6971).TableRadioGroup, { hasIcons: false, value, onChange: tmp7, accessibilityLabel: first1, children: tmp16 });
-  const tmp20 = closure_6(onDone(6971).TableRadioGroup, { hasIcons: false, value, onChange: tmp7, accessibilityLabel: first1, children: tmp16 });
+  cResult[11] = closure_6(onDone(6970).TableRadioGroup, { hasIcons: false, value, onChange: tmp7, accessibilityLabel: first1, children: tmp16 });
+  const tmp20 = closure_6(onDone(6970).TableRadioGroup, { hasIcons: false, value, onChange: tmp7, accessibilityLabel: first1, children: tmp16 });
 }) : (function PublishDestinationSheet(arg0) {
   let destinations;
   let intl2;

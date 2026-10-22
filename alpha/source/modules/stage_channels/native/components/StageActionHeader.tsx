@@ -1,10 +1,10 @@
-// Module ID: 11631
-// Function ID: 11632
+// Module ID: 11642
+// Function ID: 11643
 // Name: StageActionHeader
-// Dependencies: [19, 17, 6758, 4821, 6800, 4843, 4826, 11468, 1087, 21, 4969, 5254, 4966, 587, 1267, 5697, 10854, 6658, 7851, 558, 576, 504, 5696, 1128, 1202, 11494, 11632, 5590, 6680, 6674, 5244, 5220, 8900, 8089, 11633, 7853, 11634, 8991, 9019, 10825, 10824, 11470, 11476, 11477, 11480, 11635, 11636, 2]
+// Dependencies: [19, 17, 6757, 4821, 6799, 4843, 4826, 11479, 1087, 21, 4969, 5254, 4966, 587, 1267, 5697, 10862, 6657, 7852, 558, 576, 504, 5696, 1128, 1202, 11505, 11643, 5590, 6679, 6673, 5244, 5220, 8907, 8090, 11644, 7854, 11645, 8998, 9026, 10833, 10832, 11481, 11487, 11488, 11491, 11646, 11647, 2]
 // Exports: closeStageModal
 
-// Module 11631 (StageActionHeader)
+// Module 11642 (StageActionHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,27 +14,27 @@ import NavigatorConstants from "NavigatorConstants" /* 5254 */;
 import useChannelNameDefault from "useChannelName" /* 5590 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5696 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5697 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6658 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7851 */;
-import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 7853 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8089 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8900 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9019 */;
-import StatusBarDefault from "StatusBar" /* 10854 */;
-import StageMusicActionCreators from "StageMusicActionCreators" /* 11480 */;
-import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 11494 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11632 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11633 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 11634 */;
-import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 11635 */;
-import ChannelCallHeaderButtons from "ChannelCallHeaderButtons" /* 11636 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6657 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7852 */;
+import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 7854 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8090 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8907 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9026 */;
+import StatusBarDefault from "StatusBar" /* 10862 */;
+import StageMusicActionCreators from "StageMusicActionCreators" /* 11491 */;
+import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 11505 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11643 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 11644 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 11645 */;
+import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 11646 */;
+import ChannelCallHeaderButtons from "ChannelCallHeaderButtons" /* 11647 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6758 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6757 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6800 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6799 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import StageInstanceStore from "StageInstanceStore" /* 4826 */;
-import StageMusicStore from "StageMusicStore" /* 11468 */;
+import StageMusicStore from "StageMusicStore" /* 11479 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -234,9 +234,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannel
   }
   const tmpResult = channel(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp9, tmp10);
-  const tmpResult4 = channel(6680);
-  const stageParticipantsCount = tmpResult4.useStageParticipantsCount(channel.id, tmp(6674).StageChannelParticipantNamedIndex.AUDIENCE);
-  const tmpResult5 = channel(6680);
+  const tmpResult4 = channel(6679);
+  const stageParticipantsCount = tmpResult4.useStageParticipantsCount(channel.id, tmp(6673).StageChannelParticipantNamedIndex.AUDIENCE);
+  const tmpResult5 = channel(6679);
   const actualStageSpeakerCount = tmpResult5.useActualStageSpeakerCount(channel.id);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [ChannelRTCStore];
@@ -378,9 +378,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannel
   const items1 = [channel.id];
   const obj = channel(504);
   const stateFromStores = obj.useStateFromStores(items, () => StageInstanceStore.getStageInstanceByChannel(channel.id), items1);
-  const obj2 = channel(6680);
-  const stageParticipantsCount = obj2.useStageParticipantsCount(channel.id, channel(6674).StageChannelParticipantNamedIndex.AUDIENCE);
-  const obj3 = channel(6680);
+  const obj2 = channel(6679);
+  const stageParticipantsCount = obj2.useStageParticipantsCount(channel.id, channel(6673).StageChannelParticipantNamedIndex.AUDIENCE);
+  const obj3 = channel(6679);
   const actualStageSpeakerCount = obj3.useActualStageSpeakerCount(channel.id);
   const items2 = [ChannelRTCStore];
   const obj5 = { pointerEvents: "none", style: tmp.leftTitleContainer, children: items4 };
@@ -588,8 +588,8 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageSetting
         }
         return tmp9;
       }
-      const obj2 = { accessibilityLabel: first, containerStyle: tmp7, source: onOpenRTCDebugOverlay(11634), onPress: tmp8, disableBackground: true };
-      const tmp12 = onOpenRTCDebugOverlay(11494);
+      const obj2 = { accessibilityLabel: first, containerStyle: tmp7, source: onOpenRTCDebugOverlay(11645), onPress: tmp8, disableBackground: true };
+      const tmp12 = onOpenRTCDebugOverlay(11505);
       const tmp13 = closure_12(tmp12, obj2);
       cResult[7] = tmp7;
       cResult[8] = tmp8;
@@ -871,7 +871,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function MusicMuteBu
   }
   const tmpResult = stateFromStores(504);
   stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const tmpResult2 = stateFromStores(11470);
+  const tmpResult2 = stateFromStores(11481);
   if (tmpResult2.useShowStageMusicMuteButton(channelId)) {
     let tmp9;
     if (cResult[2] !== stateFromStores) {
@@ -890,7 +890,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function MusicMuteBu
     } else {
       tmp9 = cResult[3];
     }
-    const tmp11Result = importDefault(stateFromStores ? 11476 : 11477);
+    const tmp11Result = importDefault(stateFromStores ? 11487 : 11488);
     if (cResult[4] !== stateFromStores) {
       class C {
         constructor() {
@@ -941,7 +941,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function MusicMuteBu
   const items = [StageMusicStore];
   stateFromStores = obj.useStateFromStores(items, () => muted.isMuted());
   let tmp6Result = null;
-  const obj2 = stateFromStores(11470);
+  const obj2 = stateFromStores(11481);
   if (obj2.useShowStageMusicMuteButton(channelId)) {
     let stringResult;
     const tmp8 = ChannelCallNavigatorIconDefault;
@@ -958,7 +958,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function MusicMuteBu
     const obj3 = {
       accessibilityLabel: stringResult,
       containerStyle: tmp.iconBackground,
-      source: tmp7(stateFromStores ? 11476 : 11477),
+      source: tmp7(stateFromStores ? 11487 : 11488),
       onPress() {
           const obj = StageMusicActionCreators;
           return obj.updateStageMusicMuted(!stateFromStores);
@@ -1090,7 +1090,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       let tmp17 = fullscreenStream;
       if (tmp17) {
         const obj6 = { channel };
-        tmp17 = authStore2(tmp(11636).GridButton, obj6);
+        tmp17 = authStore2(tmp(11647).GridButton, obj6);
       }
       cResult[8] = channel;
       cResult[9] = fullscreenStream;

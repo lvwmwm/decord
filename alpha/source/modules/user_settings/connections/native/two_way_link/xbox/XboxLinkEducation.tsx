@@ -1,9 +1,9 @@
-// Module ID: 14010
-// Function ID: 14011
+// Module ID: 14024
+// Function ID: 14025
 // Name: XboxLinkEducation
-// Dependencies: [19, 17, 1087, 21, 4969, 558, 576, 9588, 2067, 14011, 5655, 1128, 5220, 5230, 7207, 2]
+// Dependencies: [19, 17, 1087, 21, 4969, 558, 576, 9595, 2067, 14025, 5655, 1128, 5220, 5230, 7206, 2]
 
-// Module 14010 (XboxLinkEducation)
+// Module 14024 (XboxLinkEducation)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
@@ -12,9 +12,9 @@ import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import components_Button_Button from "components/Button/Button" /* 5230 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7207 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9588 */;
-import _modDef14011 from "module_14011" /* 14011 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7206 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9595 */;
+import _modDef14025 from "module_14025" /* 14025 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -187,7 +187,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkEd
   const obj3 = HelpdeskUtilsDefault;
   const articleURL = obj3.getArticleURL(HelpdeskArticles.XBOX_CONNECTION);
   if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj10 = { uri: _modDef14011 };
+    const obj10 = { uri: _modDef14025 };
     cResult[16] = obj10;
     tmp17 = obj10;
   } else {
@@ -270,7 +270,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkEd
   const obj3 = { style: twoWayLinkStyles.container, children: items1 };
   const obj4 = { style: twoWayLinkStyles.content, children: items };
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef14011 };
+    const obj = { uri: _modDef14025 };
     return obj;
   }, []);
   items = [, , ];

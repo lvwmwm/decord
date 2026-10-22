@@ -1,15 +1,15 @@
-// Module ID: 16241
-// Function ID: 16242
+// Module ID: 16259
+// Function ID: 16260
 // Name: BountiesModalEndedCtaButtons
-// Dependencies: [21, 4969, 587, 558, 576, 9574, 5038, 5192, 5195, 16240, 5230, 9576, 6703, 6701, 7785, 1128, 2]
+// Dependencies: [21, 4969, 587, 558, 576, 9581, 5038, 5192, 5195, 16258, 5230, 9583, 6702, 6700, 7786, 1128, 2]
 
-// Module 16241 (BountiesModalEndedCtaButtons)
+// Module 16259 (BountiesModalEndedCtaButtons)
 import nativeDefault from "native" /* 587 */;
 import timing from "timing" /* 5192 */;
-import QuestContent from "QuestContent" /* 6701 */;
-import AdCreativeType from "AdCreativeType" /* 6703 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7785 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9576 */;
+import QuestContent from "QuestContent" /* 6700 */;
+import AdCreativeType from "AdCreativeType" /* 6702 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7786 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9583 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -155,7 +155,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesModa
     flag = false;
   }
   let tmp = closure_5();
-  let obj = bounty(9574);
+  let obj = bounty(9581);
   let closure_3 = obj.useGetQuestImpressionId();
   let obj2 = bounty(5038);
   const fn = function y() {
@@ -173,7 +173,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesModa
   fn.__initData = __initData2;
   ({ withTiming: bounty(5192).withTiming, visible, timingStandard: bounty(5195).timingStandard });
   const animatedStyle = obj2.useAnimatedStyle(fn);
-  bounty(16240);
+  bounty(16258);
   if (visible) {
     const obj4 = { style: items, children: items1 };
     items = [tmp.container, animatedStyle];

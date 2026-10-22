@@ -1,21 +1,21 @@
-// Module ID: 11744
-// Function ID: 11745
+// Module ID: 11755
+// Function ID: 11756
 // Name: useConjureProjectSettingsForm
-// Dependencies: [5, 32, 19, 17, 4875, 6759, 1087, 21, 4969, 587, 558, 576, 504, 6760, 5196, 1128, 3830, 5220, 7232, 8902, 7131, 6973, 6886, 7282, 11745, 11748, 11750, 10705, 7329, 11751, 11752, 10690, 11753, 6889, 11757, 2]
+// Dependencies: [5, 32, 19, 17, 4875, 6758, 1087, 21, 4969, 587, 558, 576, 504, 6759, 5196, 1128, 3830, 5220, 7233, 8909, 7130, 6972, 6885, 7283, 11756, 11759, 11761, 10712, 7330, 11762, 11763, 10697, 11764, 6888, 11768, 2]
 // Exports: default
 
-// Module 11744 (useConjureProjectSettingsForm)
+// Module 11755 (useConjureProjectSettingsForm)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5196 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6760 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6759 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildRoleStore_mod from "GuildRoleStore" /* 4875 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6759 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6758 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -413,10 +413,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
   ActionSheetHeaderPressableText = guildId(onSave[19]).ActionSheetHeaderPressableText;
   intl4 = guildId(onSave[15]).intl;
   const obj7 = { size: "md", round: true, grow: false, accessibilityLabel: intl5.string(guildId(onSave[15]).t.Sojqsr), placeholder: intl6.string(guildId(onSave[15]).t.Sojqsr), onChange: tmp8 };
-  const SearchField = guildId(onSave[20]).SearchField;
+  const SearchBar = guildId(onSave[20]).SearchBar;
   intl5 = guildId(onSave[15]).intl;
   intl6 = guildId(onSave[15]).intl;
-  items4 = [closure_10(SearchField, obj7), ];
+  items4 = [closure_10(SearchBar, obj7), ];
   const obj8 = { style: tmp.roleListContent, children: tmp13Result };
   const tmp12 = closure_11;
   if (0 === memo.length) {

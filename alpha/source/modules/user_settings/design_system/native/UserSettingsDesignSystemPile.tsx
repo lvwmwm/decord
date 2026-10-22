@@ -1,19 +1,19 @@
-// Module ID: 17067
-// Function ID: 17068
+// Module ID: 17089
+// Function ID: 17090
 // Name: UserSettingsDesignSystemPile
-// Dependencies: [32, 19, 17, 21, 4969, 1202, 6869, 558, 576, 5964, 5220, 6891, 14246, 1420, 15231, 13465, 12863, 12453, 9375, 2]
+// Dependencies: [32, 19, 17, 21, 4969, 1202, 6868, 558, 576, 5963, 5220, 6890, 14260, 1420, 15244, 13479, 12881, 12463, 9382, 2]
 
-// Module 17067 (UserSettingsDesignSystemPile)
+// Module 17089 (UserSettingsDesignSystemPile)
 import react2 from "react" /* 576 */;
 import native from "native" /* 1202 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1420 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import Stack_Stack from "Stack/Stack" /* 5964 */;
-import GuildIcon from "GuildIcon" /* 6869 */;
-import Card_Card from "Card/Card" /* 6891 */;
-import ClipView from "ClipView" /* 9375 */;
-import ListUtils from "ListUtils" /* 12453 */;
-import AvatarDuoPile2 from "AvatarDuoPile" /* 15231 */;
+import Stack_Stack from "Stack/Stack" /* 5963 */;
+import GuildIcon from "GuildIcon" /* 6868 */;
+import Card_Card from "Card/Card" /* 6890 */;
+import ClipView from "ClipView" /* 9382 */;
+import ListUtils from "ListUtils" /* 12463 */;
+import AvatarDuoPile2 from "AvatarDuoPile" /* 15244 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

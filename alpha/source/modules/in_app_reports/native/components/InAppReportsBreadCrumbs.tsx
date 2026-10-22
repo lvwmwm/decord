@@ -1,9 +1,9 @@
-// Module ID: 14517
-// Function ID: 14518
+// Module ID: 14531
+// Function ID: 14532
 // Name: InAppReportsBreadCrumbs
-// Dependencies: [32, 109, 19, 17, 21, 4969, 587, 558, 576, 12, 8095, 1128, 2670, 5220, 2]
+// Dependencies: [32, 109, 19, 17, 21, 4969, 587, 558, 576, 12, 8096, 1128, 2670, 5220, 2]
 
-// Module 14517 (InAppReportsBreadCrumbs)
+// Module 14531 (InAppReportsBreadCrumbs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5220 */;
@@ -98,7 +98,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Breadcrumbs(
         const container = tmp5.container;
         if (cResult[2] !== menuName) {
           let stringResult;
-          const REPORT_TO_MOD = tmp(8095).ReportMenuTypeSets.REPORT_TO_MOD;
+          const REPORT_TO_MOD = tmp(8096).ReportMenuTypeSets.REPORT_TO_MOD;
           const hasItem = REPORT_TO_MOD.has(menuName);
           const intl = tmp(1128).intl;
           const string = intl.string;

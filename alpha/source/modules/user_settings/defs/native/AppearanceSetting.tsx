@@ -1,9 +1,9 @@
-// Module ID: 16512
-// Function ID: 16513
+// Module ID: 16534
+// Function ID: 16535
 // Name: AppearanceSetting
-// Dependencies: [4993, 1210, 1087, 558, 576, 5191, 504, 1254, 9680, 1128, 2768, 11172, 16513, 16515, 2]
+// Dependencies: [4993, 1210, 1087, 558, 576, 5191, 504, 1254, 9687, 1128, 2768, 11181, 16535, 16537, 2]
 
-// Module 16512 (AppearanceSetting)
+// Module 16534 (AppearanceSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
@@ -11,11 +11,11 @@ import intl3 from "intl" /* 1128 */;
 import ThemeConstants from "ThemeConstants" /* 1210 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1254 */;
 import useThemeDefault from "useTheme" /* 5191 */;
-import useActiveTheme from "useActiveTheme" /* 9680 */;
-import PaintPaletteIcon from "PaintPaletteIcon" /* 16513 */;
+import useActiveTheme from "useActiveTheme" /* 9687 */;
+import PaintPaletteIcon from "PaintPaletteIcon" /* 16535 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4993 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11172 */;
+import SettingBuilders from "SettingBuilders" /* 11181 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

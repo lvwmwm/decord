@@ -1,9 +1,9 @@
-// Module ID: 13603
-// Function ID: 13604
+// Module ID: 13617
+// Function ID: 13618
 // Name: HubEmailConnectionWaitlist
-// Dependencies: [19, 17, 1087, 21, 4969, 587, 558, 576, 1505, 7469, 1128, 5655, 13604, 1202, 5220, 5230, 2]
+// Dependencies: [19, 17, 1087, 21, 4969, 587, 558, 576, 1505, 7470, 1128, 5655, 13618, 1202, 5220, 5230, 2]
 
-// Module 13603 (HubEmailConnectionWaitlist)
+// Module 13617 (HubEmailConnectionWaitlist)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -48,7 +48,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailCo
     const layoutEffect = react.useLayoutEffect(tmp6, tmp7);
     const container = tmp4.container;
     if (cResult[4] !== tmp4.header) {
-      const obj3 = { source: navigation(13604), style: tmp4.header };
+      const obj3 = { source: navigation(13618), style: tmp4.header };
       const tmp13 = navigation(5655);
       const tmp14 = closure_5(tmp13, obj3);
       cResult[4] = tmp4.header;
@@ -203,7 +203,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailCo
     navigation.setOptions(obj);
   }, items);
   const obj2 = { style: tmp.container, children: items1 };
-  const obj3 = { source: navigation(13604), style: tmp.header };
+  const obj3 = { source: navigation(13618), style: tmp.header };
   const tmp4 = navigation(5655);
   items1 = [closure_5(tmp4, obj3), , , ];
   const obj4 = { style: tmp.title, accessibilityRole: "header", children: intl.string(onClose(1128).t.OaloU5) };

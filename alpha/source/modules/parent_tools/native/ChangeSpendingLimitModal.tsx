@@ -1,17 +1,17 @@
-// Module ID: 16119
-// Function ID: 16120
+// Module ID: 16137
+// Function ID: 16138
 // Name: ChangeSpendingLimitModal
-// Dependencies: [5, 19, 17, 21, 4969, 587, 7941, 5220, 1128, 2536, 558, 576, 16120, 5649, 6658, 5648, 7323, 7884, 7885, 5964, 6994, 5230, 12809, 6682, 6910, 11113, 2]
+// Dependencies: [5, 19, 17, 21, 4969, 587, 7942, 5220, 1128, 2536, 558, 576, 16138, 5649, 6657, 5648, 7324, 7885, 7886, 5963, 6993, 5230, 12667, 6681, 6909, 11122, 2]
 
-// Module 16119 (ChangeSpendingLimitModal)
+// Module 16137 (ChangeSpendingLimitModal)
 import nativeDefault from "native" /* 587 */;
 import intl8 from "intl" /* 1128 */;
 import _modDef2536 from "module_2536" /* 2536 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5649 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6658 */;
-import NavigatorHeader from "NavigatorHeader" /* 6910 */;
-import WarningIcon2 from "WarningIcon" /* 7941 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6657 */;
+import NavigatorHeader from "NavigatorHeader" /* 6909 */;
+import WarningIcon2 from "WarningIcon" /* 7942 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -118,7 +118,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
   const cResult = obj.c(62);
   teenId = teenId.teenId;
   const tmp4 = closure_8();
-  let obj2 = save(16120);
+  let obj2 = save(16138);
   const changeSpendingLimitFormState = obj2.useChangeSpendingLimitFormState(teenId);
   ({ amountInput, handleAmountChange, currency, currencySymbol, exponent, isClearingCap, isOverspending, canSave, isSubmitting, renewalDate, monthlySpend, save } = changeSpendingLimitFormState);
   if (cResult[0] !== save) {
@@ -263,8 +263,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
                                           tmp63 = cResult[55];
                                         }
                                         if (cResult[56] !== tmp57) {
-                                          let obj4 = { children: closure_7(tmp(6682).ButtonGroup, obj5) };
-                                          const ModalFooter = tmp(12809).ModalFooter;
+                                          let obj4 = { children: closure_7(tmp(6681).ButtonGroup, obj5) };
+                                          const ModalFooter = tmp(12667).ModalFooter;
                                           obj5 = { children: items };
                                           items = [tmp57, tmp63];
                                           const tmp70 = closure_6(ModalFooter, obj4);
@@ -360,14 +360,14 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
   if (null != monthlySpend) {
     formatPriceResult = null;
     if (monthlySpend > 0) {
-      const tmpResult = tmp(7323);
+      const tmpResult = tmp(7324);
       formatPriceResult = tmpResult.formatPrice(monthlySpend, currency);
     }
   }
   const tmp19 = amountInput.length > 0;
-  const ModalScreen = tmp(7884).ModalScreen;
-  const ModalContent = tmp(7885).ModalContent;
-  const Stack = tmp(5964).Stack;
+  const ModalScreen = tmp(7885).ModalScreen;
+  const ModalContent = tmp(7886).ModalContent;
+  const Stack = tmp(5963).Stack;
   const PX_16 = nativeDefault.space.PX_16;
   if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
     const obj12 = { variant: "text-sm/normal", children: intl.string(_modDef2536.IFguF2) };
@@ -379,7 +379,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
   } else {
     tmp21 = cResult[21];
   }
-  const Stack2 = tmp(5964).Stack;
+  const Stack2 = tmp(5963).Stack;
   const PX_8 = tmp20(587).space.PX_8;
   if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
     const obj13 = { variant: "text-sm/semibold", color: "text-subtle", children: intl2.string(_modDef2536["1fHSu2"]) };
@@ -483,7 +483,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
       }
     }
   }
-  const tmp33 = closure_6(tmp(6994).TextInput, { accessibilityLabel: tmp27, value: amountInput, onChange: handleAmountChange, leadingText: tmp29, placeholder: tmp30, keyboardType: str, clearable: true });
+  const tmp33 = closure_6(tmp(6993).TextInput, { accessibilityLabel: tmp27, value: amountInput, onChange: handleAmountChange, leadingText: tmp29, placeholder: tmp30, keyboardType: str, clearable: true });
   cResult[25] = amountInput;
   cResult[26] = handleAmountChange;
   cResult[27] = str;
@@ -612,22 +612,22 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
   }
   let tmp8 = closure_7;
   const tmp7 = amountInput.length > 0;
-  const ModalScreen = tmp2(7884).ModalScreen;
-  const ModalContent = tmp2(7885).ModalContent;
+  const ModalScreen = tmp2(7885).ModalScreen;
+  const ModalContent = tmp2(7886).ModalContent;
   let obj2 = { spacing: obj(587).space.PX_16, children: items };
-  const Stack = tmp2(5964).Stack;
+  const Stack = tmp2(5963).Stack;
   let obj3 = { variant: "text-sm/normal", children: intl.string(obj(2536).IFguF2) };
   const Text = tmp2(5220).Text;
   intl = tmp2(1128).intl;
   items = [closure_6(Text, obj3), ];
   let obj4 = { spacing: obj(587).space.PX_8, children: items1 };
-  const Stack2 = tmp2(5964).Stack;
+  const Stack2 = tmp2(5963).Stack;
   let obj5 = { variant: "text-sm/semibold", color: "text-subtle", children: intl2.string(obj(2536)["1fHSu2"]) };
   const Text2 = tmp2(5220).Text;
   intl2 = tmp2(1128).intl;
   items1 = [closure_6(Text2, obj5), , ];
   const obj6 = { accessibilityLabel: intl3.string(obj(2536)["1fHSu2"]), value: amountInput, onChange: handleAmountChange, leadingText: tmp12, placeholder: intl4.string(obj(2536).DjSv82), keyboardType: str, clearable: true };
-  const TextInput = tmp2(6994).TextInput;
+  const TextInput = tmp2(6993).TextInput;
   intl3 = tmp2(1128).intl;
   tmp12 = undefined;
   if (tmp7) {
@@ -653,8 +653,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
   items1[2] = renderMonthlySpendLine(formatPriceResult, isOverspending, renewalDate, tmp);
   items[1] = tmp8(Stack2, obj4);
   const items3 = [tmp9(ModalContent, obj8), ];
-  const ModalFooter = tmp2(12809).ModalFooter;
-  const ButtonGroup = tmp2(6682).ButtonGroup;
+  const ModalFooter = tmp2(12667).ModalFooter;
+  const ButtonGroup = tmp2(6681).ButtonGroup;
   const Button = tmp2(5230).Button;
   if (isClearingCap) {
     const obj9 = { variant: "destructive", text: intl6.string(obj(2536).JZDGJ8), onPress: handleSave, disabled: isSubmitting, loading: isSubmitting };
@@ -672,7 +672,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
   const obj12 = { children: tmp8(ButtonGroup, obj13) };
   obj13 = { children: items4 };
   items4 = [tmp9(Button, obj10), ];
-  const obj14 = { variant: "tertiary", text: intl7.string(require("intl").t["ETE/oC"]), onPress: obj(6658).pop };
+  const obj14 = { variant: "tertiary", text: intl7.string(require("intl").t["ETE/oC"]), onPress: obj(6657).pop };
   const Button2 = tmp2(5230).Button;
   intl7 = tmp2(1128).intl;
   items4[1] = closure_6(Button2, obj14);
@@ -709,7 +709,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeSpendi
     cResult[0] = teenId;
     cResult[1] = obj2;
     tmp4 = obj2;
-    tmpResult = teenId(6910);
+    tmpResult = teenId(6909);
   } else {
     tmp4 = cResult[1];
   }
@@ -723,7 +723,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeSpendi
   }
   if (cResult[3] !== tmp4) {
     const obj4 = { initialRouteName: "CHANGE_SPENDING_LIMIT", screens: tmp4, headerBackTitle: tmp6 };
-    const tmp10 = closure_6(teenId(11113).Modal, obj4);
+    const tmp10 = closure_6(teenId(11122).Modal, obj4);
     cResult[3] = tmp4;
     cResult[4] = tmp10;
     tmp8 = tmp10;
@@ -758,7 +758,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeSpendi
     return obj;
   }, items);
   let obj = { initialRouteName: "CHANGE_SPENDING_LIMIT", screens: memo, headerBackTitle: intl.string(teenId(1128).t["13/7kX"]) };
-  const Modal = teenId(11113).Modal;
+  const Modal = teenId(11122).Modal;
   intl = teenId(1128).intl;
   return closure_6(Modal, obj);
 });

@@ -1,9 +1,9 @@
-// Module ID: 15735
-// Function ID: 15736
+// Module ID: 15749
+// Function ID: 15750
 // Name: EmbeddedActivitiesManager
-// Dependencies: [5, 6758, 4825, 502, 4821, 5700, 4872, 1392, 15661, 4820, 1087, 15660, 1297, 4890, 11351, 5891, 1267, 10736, 11342, 11343, 5696, 1281, 2033, 9624, 2004, 1123, 584, 5615, 5609, 10747, 10752, 6795, 11333, 1128, 11402, 11335, 11404, 11979, 6006, 7262, 2]
+// Dependencies: [5, 6757, 4825, 502, 4821, 5700, 4872, 1392, 15674, 4820, 1087, 15673, 1297, 4890, 11362, 5890, 1267, 10743, 11351, 11354, 5696, 1281, 2033, 9631, 2004, 1123, 584, 5615, 5609, 10754, 10759, 6794, 11342, 1128, 11413, 11344, 11415, 11315, 6005, 7263, 2]
 
-// Module 15735 (EmbeddedActivitiesManager)
+// Module 15749 (EmbeddedActivitiesManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
@@ -13,29 +13,29 @@ import ChannelRecord from "ChannelRecord" /* 4825 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4890 */;
 import getURLForApplication from "getURLForApplication" /* 5609 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5696 */;
-import ThermalUtilsDefault from "ThermalUtils" /* 5891 */;
-import InteractionTypes from "InteractionTypes" /* 6006 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7262 */;
-import CommandPermissionContext from "CommandPermissionContext" /* 9624 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10736 */;
-import tryLaunchAsFrame from "tryLaunchAsFrame" /* 11342 */;
-import pendingFrameLaunch from "pendingFrameLaunch" /* 11343 */;
-import getShelfItemDataDefault from "getShelfItemData" /* 11351 */;
-import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 15660 */;
+import ThermalUtilsDefault from "ThermalUtils" /* 5890 */;
+import InteractionTypes from "InteractionTypes" /* 6005 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7263 */;
+import CommandPermissionContext from "CommandPermissionContext" /* 9631 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10743 */;
+import tryLaunchAsFrame from "tryLaunchAsFrame" /* 11351 */;
+import pendingFrameLaunch from "pendingFrameLaunch" /* 11354 */;
+import getShelfItemDataDefault from "getShelfItemData" /* 11362 */;
+import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 15673 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6758 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6757 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5700 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
 import UserStore from "UserStore" /* 1392 */;
-import ActivityShelfStore from "ActivityShelfStore" /* 15661 */;
+import ActivityShelfStore from "ActivityShelfStore" /* 15674 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
 import Constants from "Constants" /* 1087 */;
 import LifecycleManager from "LifecycleManager" /* 2004 */;
 import size_mod from "module_2" /* 2 */;
 
-let _undefined, commandOrigin, has, userIds, voiceChannelId;
+let applicationId2, commandOrigin, has, userIds, voiceChannelId;
 
 let closure_14;
 let closure_15;
@@ -630,9 +630,10 @@ class EmbeddedActivitiesManager extends LifecycleManager {
         let c4;
         let channel2;
         let launchId;
-        let obj14;
-        let obj18;
-        let obj9;
+        let obj10;
+        let obj15;
+        let obj19;
+        let obj5;
         if (1 === has) {
           if (arg0 === 1) {
             let c6 = 3;
@@ -649,17 +650,17 @@ class EmbeddedActivitiesManager extends LifecycleManager {
                 type = channel2.type;
               }
               if (!has(type)) {
-                closure_1_12.getSelfEmbeddedActivityForChannel(channelId);
+                applicationId2 = closure_1_12.getSelfEmbeddedActivityForChannel(channelId);
                 applicationId = undefined;
-                if (applicationId != null) {
-                  applicationId = applicationId.applicationId;
+                if (applicationId2 != null) {
+                  applicationId = applicationId2.applicationId;
                 }
-                if (applicationId !== _undefined) {
+                if (applicationId !== applicationId) {
                   has = 2;
                   c6 = 1;
-                  const obj5 = { value: obj18.fetchApplication(_undefined), done: false };
-                  obj18 = _undefined(analyticsLocations[31]);
-                  return obj5;
+                  const obj6 = { value: obj19.fetchApplication(applicationId), done: false };
+                  obj19 = applicationId(analyticsLocations[31]);
+                  return obj6;
                 }
               }
             }
@@ -673,10 +674,10 @@ class EmbeddedActivitiesManager extends LifecycleManager {
             return { value, done: true };
           } else {
             channel = value;
-            const obj24 = channelId(analyticsLocations[32]);
-            if (obj24.getIsActivitiesEnabledForCurrentPlatform()) {
+            const obj25 = channelId(analyticsLocations[32]);
+            if (obj25.getIsActivitiesEnabledForCurrentPlatform()) {
               let supported_platforms;
-              const tmp58 = _undefined(analyticsLocations[34]);
+              const tmp58 = applicationId(analyticsLocations[34]);
               if (channel != null) {
                 const embedded_activity_config = channel.embedded_activity_config;
                 if (embedded_activity_config != null) {
@@ -685,28 +686,28 @@ class EmbeddedActivitiesManager extends LifecycleManager {
               }
               if (tmp58(supported_platforms)) {
                 guildId = undefined;
-                const obj13 = channel2;
+                const obj14 = channel2;
                 if (channel2 != null) {
-                  guildId = obj13.getGuildId();
+                  guildId = obj14.getGuildId();
                 }
-                _undefined = guildId;
+                applicationId = guildId;
                 if (guildId == null) {
-                  _undefined = undefined;
+                  applicationId = undefined;
                 }
-                guildId = _undefined;
+                guildId = applicationId;
                 has = 3;
                 c6 = 1;
-                const obj7 = { guildId };
-                const obj8 = { value: obj14.fetchShelf(obj7), done: false };
-                obj14 = channelId(analyticsLocations[35]);
-                return obj8;
+                const obj8 = { guildId };
+                const obj9 = { value: obj15.fetchShelf(obj8), done: false };
+                obj15 = channelId(analyticsLocations[35]);
+                return obj9;
               } else {
-                const tmp64 = _undefined(analyticsLocations[30]);
+                const tmp64 = applicationId(analyticsLocations[30]);
                 const intl2 = channelId(analyticsLocations[33]).intl;
                 tmp64(intl2.string(channelId(analyticsLocations[33]).t.uGDCcw));
               }
             } else {
-              const tmp48 = _undefined(analyticsLocations[30]);
+              const tmp48 = applicationId(analyticsLocations[30]);
               const intl = channelId(analyticsLocations[33]).intl;
               tmp48(intl.string(channelId(analyticsLocations[33]).t.UXoQTp));
             }
@@ -723,14 +724,14 @@ class EmbeddedActivitiesManager extends LifecycleManager {
               voiceChannelId = value;
               const activityConfigs = voiceChannelId.activityConfigs;
               const applications = voiceChannelId.applications;
-              const obj11 = { applicationId: _undefined, activityConfigs, applications };
-              if (null == _undefined(analyticsLocations[14])(obj11)) {
+              const obj12 = { applicationId, activityConfigs, applications };
+              if (null == applicationId(analyticsLocations[14])(obj12)) {
                 has = 4;
                 c6 = 1;
-                const obj12 = { guildId, force: true };
-                const obj15 = { value: obj9.fetchShelf(obj12), done: false };
-                obj9 = channelId(analyticsLocations[35]);
-                return obj15;
+                const obj13 = { guildId, force: true };
+                const obj16 = { value: obj10.fetchShelf(obj13), done: false };
+                obj10 = channelId(analyticsLocations[35]);
+                return obj16;
               }
             }
           } else if (4 === has) {
@@ -742,8 +743,8 @@ class EmbeddedActivitiesManager extends LifecycleManager {
               return { value, done: true };
             } else {
               let closure_12 = value;
-              const obj17 = { applicationId: _undefined, activityConfigs: closure_12.activityConfigs, applications: closure_12.applications };
-              _undefined(analyticsLocations[14])(obj17);
+              const obj18 = { applicationId, activityConfigs: closure_12.activityConfigs, applications: closure_12.applications };
+              applicationId(analyticsLocations[14])(obj18);
             }
           } else if (5 === has) {
             if (arg0 === 1) {
@@ -761,7 +762,7 @@ class EmbeddedActivitiesManager extends LifecycleManager {
             return { value, done: true };
           }
           const embeddedActivitiesForChannel = closure_1_12.getEmbeddedActivitiesForChannel(channelId);
-          let closure_13 = embeddedActivitiesForChannel.find((applicationId) => applicationId.applicationId === _undefined);
+          let closure_13 = embeddedActivitiesForChannel.find((applicationId) => applicationId.applicationId === applicationId);
           size = undefined;
           if (closure_13 != null) {
             size = closure_13.userIds.size;
@@ -771,7 +772,7 @@ class EmbeddedActivitiesManager extends LifecycleManager {
             analyticsLocations = 0;
           }
           if (analyticsLocations > 0) {
-            const obj20 = { channelId, applicationId: _undefined, launchId, inputApplication: null, analyticsLocations, inviterUserId };
+            const obj21 = { channelId, applicationId, launchId, inputApplication: null, analyticsLocations, inviterUserId };
             launchId = undefined;
             const maybeJoinEmbeddedActivity = channelId(analyticsLocations[36]).maybeJoinEmbeddedActivity;
             channelId(analyticsLocations[36]);
@@ -780,14 +781,15 @@ class EmbeddedActivitiesManager extends LifecycleManager {
             }
             has = 6;
             c6 = 1;
-            const obj21 = { value: maybeJoinEmbeddedActivity(obj20), done: false };
-            return obj21;
+            const obj22 = { value: maybeJoinEmbeddedActivity(obj21), done: false };
+            return obj22;
           } else {
             has = 5;
             c6 = 1;
-            const obj22 = { targetApplicationId: _undefined, channelId, analyticsLocations, commandOrigin, inviterUserId };
-            const obj23 = { value: _undefined(analyticsLocations[37])(obj22), done: false };
-            return obj23;
+            const obj23 = { applicationId, channelId, analyticsLocations, commandOrigin, inviterUserId };
+            const obj24 = { value: obj5.launch(obj23), done: false };
+            obj5 = applicationId(analyticsLocations[37]);
+            return obj24;
           }
         }
         await "IconComponent";

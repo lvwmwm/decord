@@ -1,10 +1,10 @@
-// Module ID: 12324
-// Function ID: 12325
+// Module ID: 12335
+// Function ID: 12336
 // Name: ConjurePublishNotesSheet
-// Dependencies: [5, 32, 19, 17, 4899, 4843, 4911, 1392, 4974, 21, 4969, 587, 5579, 504, 7329, 9631, 12325, 10765, 5196, 11776, 1128, 3830, 7739, 7550, 7282, 7232, 7166, 5220, 5590, 5230, 2]
+// Dependencies: [5, 32, 19, 17, 4899, 4843, 4911, 1392, 4974, 21, 4969, 587, 5579, 504, 7330, 9638, 12336, 10772, 5196, 11788, 1128, 3830, 7740, 7551, 7283, 7233, 7165, 5220, 5590, 5230, 2]
 // Exports: default
 
-// Module 12324 (ConjurePublishNotesSheet)
+// Module 12335 (ConjurePublishNotesSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl10 from "intl" /* 1128 */;
@@ -12,9 +12,9 @@ import _modDef3830 from "module_3830" /* 3830 */;
 import GuildChannelStore2 from "GuildChannelStore" /* 4899 */;
 import MessageConstants from "MessageConstants" /* 4974 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5196 */;
-import ConjureUtils from "ConjureUtils" /* 7329 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11776 */;
-import ConjurePatchNotesChannel from "ConjurePatchNotesChannel" /* 12325 */;
+import ConjureUtils from "ConjureUtils" /* 7330 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11788 */;
+import ConjurePatchNotesChannel from "ConjurePatchNotesChannel" /* 12336 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

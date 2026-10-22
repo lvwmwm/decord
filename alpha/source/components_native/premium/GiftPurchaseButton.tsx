@@ -1,15 +1,15 @@
-// Module ID: 14815
-// Function ID: 14816
+// Module ID: 14829
+// Function ID: 14830
 // Name: GiftPurchaseButton
-// Dependencies: [5, 19, 17, 2058, 7508, 21, 558, 576, 5237, 5220, 504, 7503, 13852, 7237, 10469, 5896, 1128, 2053, 10416, 5231, 14816, 2]
+// Dependencies: [5, 19, 17, 2058, 7509, 21, 558, 576, 5237, 5220, 504, 7504, 13866, 7238, 10476, 5895, 1128, 2053, 10423, 5231, 14830, 2]
 
-// Module 14815 (GiftPurchaseButton)
+// Module 14829 (GiftPurchaseButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 2058 */;
-import IAPStore from "IAPStore" /* 7508 */;
+import IAPStore from "IAPStore" /* 7509 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -77,7 +77,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftPurcha
   const tmpResult7 = tmp(504);
   const stateFromStores = tmpResult7.useStateFromStores(tmp8, tmp9);
   if (cResult[4] !== planId) {
-    const tmpResult8 = tmp(7503);
+    const tmpResult8 = tmp(7504);
     const productIdForGift = tmpResult8.getProductIdForGift(planId);
     cResult[4] = planId;
     cResult[5] = productIdForGift;
@@ -86,7 +86,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftPurcha
     tmp12 = cResult[5];
   }
   _asyncToGenerator = tmp12;
-  const tmpResult9 = tmp(13852);
+  const tmpResult9 = tmp(13866);
   const canPurchaseIAP = tmpResult9.useCanPurchaseIAP(tmp12);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [IAPStore];
@@ -130,8 +130,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftPurcha
   if (tmp23) {
     tmp23 = stateFromStores.planId === planId;
   }
-  const analyticsLocations = recipientUserId(7237)().analyticsLocations;
-  const tmpResult12 = tmp(10469);
+  const analyticsLocations = recipientUserId(7238)().analyticsLocations;
+  const tmpResult12 = tmp(10476);
   const createOrReuseGiftOrder = tmpResult12.useCreateOrReuseGiftOrder("GiftPurchaseButton");
   const tmp24 = recipientUserId;
   if (cResult[12] === tmp4) {
@@ -145,7 +145,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftPurcha
             }
             const BaseTextButton = tmp(5231).BaseTextButton;
             let obj4 = { style: obj3, basePlanId: planId, isCurrentPlan: tmp23, isGift: true, product: stateFromStores2 };
-            const tmp28 = tmp24(14816)(obj4);
+            const tmp28 = tmp24(14830)(obj4);
             if (cResult[19] === BaseTextButton) {
               if (cResult[20] === tmp26) {
                 if (cResult[21] === stateFromStores1) {

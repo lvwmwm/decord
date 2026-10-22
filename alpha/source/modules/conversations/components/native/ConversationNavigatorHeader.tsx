@@ -1,10 +1,10 @@
-// Module ID: 9725
-// Function ID: 9726
+// Module ID: 9732
+// Function ID: 9733
 // Name: ConversationNavigatorHeader
-// Dependencies: [19, 17, 4821, 21, 4969, 587, 558, 576, 504, 5590, 9669, 5238, 1385, 1128, 9726, 2]
+// Dependencies: [19, 17, 4821, 21, 4969, 587, 558, 576, 504, 5590, 9676, 5238, 1385, 1128, 9733, 2]
 // Exports: conversationNavigatorFocusHeaderOptions, conversationNavigatorListHeaderOptions
 
-// Module 9725 (ConversationNavigatorHeader)
+// Module 9732 (ConversationNavigatorHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -13,8 +13,8 @@ import intl2 from "intl" /* 1128 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
 import useToken from "useToken" /* 5238 */;
 import useChannelNameDefault from "useChannelName" /* 5590 */;
-import HeaderShared from "HeaderShared" /* 9669 */;
-import ConversationNavigatorMoreMenuDefault from "ConversationNavigatorMoreMenu" /* 9726 */;
+import HeaderShared from "HeaderShared" /* 9676 */;
+import ConversationNavigatorMoreMenuDefault from "ConversationNavigatorMoreMenu" /* 9733 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -94,7 +94,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Convers
     cResult[9] = tmp18;
     tmp15 = tmp18;
   }
-  const tmp14 = jsx(channelId(9669).GenericHeaderTitle, { title, subtitle: tmp12, variant: "heading-lg/semibold", subtitleColor: "text-muted" });
+  const tmp14 = jsx(channelId(9676).GenericHeaderTitle, { title, subtitle: tmp12, variant: "heading-lg/semibold", subtitleColor: "text-muted" });
   cResult[4] = tmp12;
   cResult[5] = title;
   cResult[6] = tmp14;
@@ -112,7 +112,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Convers
   const obj = channelId(504);
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
   const tmp3 = useChannelNameDefault(stateFromStores, true);
-  const GenericHeaderTitle = channelId(9669).GenericHeaderTitle;
+  const GenericHeaderTitle = channelId(9676).GenericHeaderTitle;
   return <tmp5 style={tmp.container}>{null}</tmp5>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;

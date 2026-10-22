@@ -1,10 +1,10 @@
-// Module ID: 10768
-// Function ID: 10769
+// Module ID: 10775
+// Function ID: 10776
 // Name: conjureDevicePermissions
 // Dependencies: [1384, 1128, 3830, 2]
 // Exports: getConjureDevicePermissionLabel, getConjureDevicePermissionPromptTitle, isConjureDevicePermissionName, isConjureDevicePermissionSupported
 
-// Module 10768 (conjureDevicePermissions)
+// Module 10775 (conjureDevicePermissions)
 import intl2 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import _modDef3830 from "module_3830" /* 3830 */;
@@ -14,7 +14,18 @@ function getLabel() {
   const intl = intl2.intl;
   return intl.string(_modDef3830["2KIefJ"]);
 }
-let obj = { screen_capture: { isSupported: PlatformUtils.isDesktop, getLabel } };
+let obj = {
+  screen_capture: { isSupported: PlatformUtils.isDesktop, getLabel },
+  connect_user_to_voice: {
+    isSupported() {
+      return true;
+    },
+    getLabel() {
+      const intl = intl2.intl;
+      return intl.string(_modDef3830["5Hp3Nx"]);
+    }
+  }
+};
 ({ isSupported: PlatformUtils.isDesktop, getLabel });
 const keys = Object.keys(obj);
 const result = size.fileFinishedImporting("modules/conjure/device_permissions/conjureDevicePermissions.tsx");

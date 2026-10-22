@@ -1,16 +1,16 @@
-// Module ID: 7841
-// Function ID: 7842
+// Module ID: 7842
+// Function ID: 7843
 // Name: SurveyStore
-// Dependencies: [5180, 4843, 4901, 4995, 1392, 1087, 1104, 7842, 1099, 510, 2049, 504, 584, 2]
+// Dependencies: [5180, 4843, 4901, 4995, 1392, 1087, 1104, 7843, 1099, 510, 2049, 504, 584, 2]
 
-// Module 7841 (SurveyStore)
+// Module 7842 (SurveyStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import _modDef2049 from "module_2049" /* 2049 */;
-import surveyFetch from "surveyFetch" /* 7842 */;
+import surveyFetch from "surveyFetch" /* 7843 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 5180 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import PermissionStore from "PermissionStore" /* 4901 */;

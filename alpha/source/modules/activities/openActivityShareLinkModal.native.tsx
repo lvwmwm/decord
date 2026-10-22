@@ -1,13 +1,13 @@
-// Module ID: 15681
-// Function ID: 15682
+// Module ID: 15694
+// Function ID: 15695
 // Name: openActivityShareLinkModal
-// Dependencies: [12823, 15682, 2002, 6658, 2]
+// Dependencies: [12841, 15695, 2002, 6657, 2]
 // Exports: closeActivityShareLinkModal, openActivityShareLinkModal
 
-// Module 15681 (openActivityShareLinkModal)
+// Module 15694 (openActivityShareLinkModal)
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6658 */;
-import showSearchableDestinationListModalDefault from "showSearchableDestinationListModal" /* 12823 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6657 */;
+import showSearchableDestinationListModalDefault from "showSearchableDestinationListModal" /* 12841 */;
 import size from "module_2" /* 2 */;
 
 const ACTIVITY_SHARE_LINK_MODAL = "ACTIVITY_SHARE_LINK_MODAL";
@@ -23,7 +23,7 @@ export const openActivityShareLinkModal = function openActivityShareLinkModal(ar
   let onShare;
   ({ applicationId, customId, linkId, message, onShare } = arg0);
   const tmp = showSearchableDestinationListModalDefault;
-  tmp(asyncRequire(15682, dependencyMap.paths), { applicationId, customId, linkId, message, onShare }, ACTIVITY_SHARE_LINK_MODAL);
+  tmp(asyncRequire(15695, dependencyMap.paths), { applicationId, customId, linkId, message, onShare }, ACTIVITY_SHARE_LINK_MODAL);
 };
 export const closeActivityShareLinkModal = function closeActivityShareLinkModal() {
   const obj = ModalActionCreatorsDefault;

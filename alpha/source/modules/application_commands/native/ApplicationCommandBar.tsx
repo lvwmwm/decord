@@ -1,17 +1,17 @@
-// Module ID: 13223
-// Function ID: 13224
+// Module ID: 13239
+// Function ID: 13240
 // Name: ApplicationCommandBar
-// Dependencies: [32, 109, 19, 17, 4881, 21, 4969, 587, 6693, 558, 576, 1128, 1202, 6894, 504, 13047, 5655, 5220, 8919, 6646, 13224, 2]
+// Dependencies: [32, 109, 19, 17, 4881, 21, 4969, 587, 6692, 558, 576, 1128, 1202, 6893, 504, 13063, 5655, 5220, 8926, 6645, 13240, 2]
 
-// Module 13223 (ApplicationCommandBar)
+// Module 13239 (ApplicationCommandBar)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import usePreviousDefault from "usePrevious" /* 6646 */;
-import LegacyTokens from "LegacyTokens" /* 6693 */;
-import Pressables from "Pressables" /* 6894 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 13047 */;
+import usePreviousDefault from "usePrevious" /* 6645 */;
+import LegacyTokens from "LegacyTokens" /* 6692 */;
+import Pressables from "Pressables" /* 6893 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 13063 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
@@ -45,7 +45,7 @@ let tmp;
 let tmp5;
 let unpackModuleId;
 const Text_Text = tmp(5220);
-const DescriptionEllipsisDefault = tmp5(13224);
+const DescriptionEllipsisDefault = tmp5(13240);
 let closure_3 = ["option", "optionState"];
 let react = react_mod;
 ({ View: metroImportDefault, ScrollView: metroImportAll, StyleSheet } = react_native);
@@ -180,7 +180,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applic
                 }
               }
               const obj3 = { accessibilityLabel: tmp11, accessibilityRole: "button", disabled: flag, style: tmp15, children: tmp20 };
-              const PressableOpacity = tmp(6894).PressableOpacity;
+              const PressableOpacity = tmp(6893).PressableOpacity;
               const merged = Object.assign(tmp6);
               const tmp28 = authStore(PressableOpacity, obj3);
               cResult[18] = flag;
@@ -927,10 +927,10 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((command) => {
   items5[3] = tmp19Result;
   items8 = [closure_12(tmp21, obj3), , , ];
   const obj9 = { style: tmp.applicationDescriptionDivider };
-  items8[1] = c10(command(8919).FormDivider, obj9);
+  items8[1] = c10(command(8926).FormDivider, obj9);
   items8[2] = c10(closure_15, { command, option: currentOption, optionState: tmp17 });
   const obj10 = { style: tmp.applicationDescriptionDivider };
-  items8[3] = c10(command(8919).FormDivider, obj10);
+  items8[3] = c10(command(8926).FormDivider, obj10);
   return closure_12(ref, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;

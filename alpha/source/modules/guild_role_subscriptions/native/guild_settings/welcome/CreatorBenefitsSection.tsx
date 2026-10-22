@@ -1,9 +1,9 @@
-// Module ID: 19124
-// Function ID: 19125
+// Module ID: 19147
+// Function ID: 19148
 // Name: CreatorBenefitsSection
-// Dependencies: [19, 17, 16456, 21, 4969, 587, 4976, 558, 576, 5191, 5220, 1128, 5655, 19125, 19126, 19127, 19128, 19129, 19130, 19131, 19132, 2]
+// Dependencies: [19, 17, 16478, 21, 4969, 587, 4976, 558, 576, 5191, 5220, 1128, 5655, 19148, 19149, 19150, 19151, 19152, 19153, 19154, 19155, 2]
 
-// Module 19124 (CreatorBenefitsSection)
+// Module 19147 (CreatorBenefitsSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,13 +12,13 @@ import shared from "shared" /* 4976 */;
 import useThemeDefault from "useTheme" /* 5191 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16456 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19125 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 19128 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 19129 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 19130 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 19131 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 19132 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16478 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19148 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 19151 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 19152 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 19153 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 19154 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 19155 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -279,9 +279,9 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Consist
     }
     const tmpResult = shared;
     if (tmpResult.isThemeDark(tmp5)) {
-      tmp4Result = tmp4(19126);
+      tmp4Result = tmp4(19149);
     } else {
-      tmp4Result = tmp4(19127);
+      tmp4Result = tmp4(19150);
     }
     if (cResult[7] !== tmp4Result) {
       const obj3 = { avatarSource: tmp4Result };
@@ -361,9 +361,9 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Consist
   ({ horizontalContainer: arr2[0], benefitAvatars: arr2[1] } = tmp4);
   const obj4 = shared;
   if (obj4.isThemeDark(tmp3)) {
-    tmpResult = tmp(19126);
+    tmpResult = tmp(19149);
   } else {
-    tmpResult = tmp(19127);
+    tmpResult = tmp(19150);
   }
   items2 = [hasOwnProperty(closure_12, { avatarSource: tmpResult }), , ];
   const obj5 = { avatarSource: AssetRegistryDefault2 };

@@ -1,22 +1,22 @@
-// Module ID: 17534
-// Function ID: 17535
+// Module ID: 17556
+// Function ID: 17557
 // Name: GuildActionRows
-// Dependencies: [19, 17, 7625, 6757, 12003, 7178, 6691, 21, 4969, 587, 7425, 4994, 4805, 573, 7621, 6658, 11206, 2002, 13193, 13095, 1128, 15019, 2]
+// Dependencies: [19, 17, 7626, 6756, 12014, 7177, 6690, 21, 4969, 587, 7426, 4994, 4805, 573, 7622, 6657, 11215, 2002, 13209, 13111, 1128, 15032, 2]
 // Exports: GuildRolesAndChannelsRow
 
-// Module 17534 (GuildActionRows)
+// Module 17556 (GuildActionRows)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6658 */;
-import ReadStateConstants from "ReadStateConstants" /* 6691 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7178 */;
-import ChannelListState from "ChannelListState" /* 7621 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12003 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6657 */;
+import ReadStateConstants from "ReadStateConstants" /* 6690 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7177 */;
+import ChannelListState from "ChannelListState" /* 7622 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12014 */;
 import react from "react" /* 19 */;
-import NewChannelsStore from "NewChannelsStore" /* 7625 */;
-import ReadStateStore from "ReadStateStore" /* 6757 */;
+import NewChannelsStore from "NewChannelsStore" /* 7626 */;
+import ReadStateStore from "ReadStateStore" /* 6756 */;
 import createStyles from "createStyles" /* 4969 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ export const GuildRolesAndChannelsRow = function GuildRolesAndChannelsRow(guild)
   const selected = guild.selected;
   let id;
   const tmp = closure_10();
-  const tmp4 = id(7425)(guild);
+  const tmp4 = id(7426)(guild);
   const tmp2 = id;
   id = guild.id;
   let obj = guild(4994);
@@ -52,11 +52,11 @@ export const GuildRolesAndChannelsRow = function GuildRolesAndChannelsRow(guild)
   const callback = react.useCallback(() => {
     const obj = ModalActionCreatorsDefault;
     const obj2 = { guildId: id };
-    obj.pushLazy(asyncRequire(11206, dependencyMap.paths), obj2, closure_7);
+    obj.pushLazy(asyncRequire(11215, dependencyMap.paths), obj2, closure_7);
   }, items2);
-  let SELECTED = guild(13193).ChannelModes.DEFAULT;
+  let SELECTED = guild(13209).ChannelModes.DEFAULT;
   if (selected) {
-    SELECTED = tmp5(13193).ChannelModes.SELECTED;
+    SELECTED = tmp5(13209).ChannelModes.SELECTED;
   }
   let tmp10 = !result;
   if (result) {
@@ -67,9 +67,9 @@ export const GuildRolesAndChannelsRow = function GuildRolesAndChannelsRow(guild)
   }
   let tmp11 = null;
   if (tmp10) {
-    tmp11 = <View style={tmp.channelInfoContainer}>{jsx(guild(13095).NewBadge, {})}</View>;
+    tmp11 = <View style={tmp.channelInfoContainer}>{jsx(guild(13111).NewBadge, {})}</View>;
   }
-  tmp2(13193);
+  tmp2(13209);
   const intl = tmp5(1128).intl;
   const string = intl.string;
   const t = tmp5(1128).t;
@@ -78,7 +78,7 @@ export const GuildRolesAndChannelsRow = function GuildRolesAndChannelsRow(guild)
   } else {
     stringResult = string(t.et6wav);
   }
-  const BaseChannelName = tmp5(13193).BaseChannelName;
+  const BaseChannelName = tmp5(13209).BaseChannelName;
   const intl2 = tmp5(1128).intl;
   const string2 = intl2.string;
   const t2 = tmp5(1128).t;
@@ -87,7 +87,7 @@ export const GuildRolesAndChannelsRow = function GuildRolesAndChannelsRow(guild)
   } else {
     string2(t2.et6wav);
   }
-  ({ mode: SELECTED, IconComponent: guild(15019).ChannelListMagnifyingGlassIcon });
-  const BaseChannelIcon = tmp5(13193).BaseChannelIcon;
+  ({ mode: SELECTED, IconComponent: guild(15032).ChannelListMagnifyingGlassIcon });
+  const BaseChannelIcon = tmp5(13209).BaseChannelIcon;
   return <tmp2Result onPress={callback} style={tmp.container} accessible accessibilityLabel={stringResult} accessibilityState={{ selected }} mode={SELECTED} name={null} icon={null} channelInfo={tmp11} />;
 };

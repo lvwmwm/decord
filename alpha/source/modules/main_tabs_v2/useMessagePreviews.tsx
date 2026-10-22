@@ -1,13 +1,13 @@
-// Module ID: 16570
-// Function ID: 16571
+// Module ID: 16592
+// Function ID: 16593
 // Name: useMessagePreviews
-// Dependencies: [1246, 6757, 4797, 558, 576, 504, 9694, 5629, 16571, 2]
+// Dependencies: [1246, 6756, 4797, 558, 576, 504, 9701, 5629, 16593, 2]
 
-// Module 16570 (useMessagePreviews)
+// Module 16592 (useMessagePreviews)
 import UserSettings from "UserSettings" /* 4797 */;
-import useIsNsfwGatedDefault from "useIsNsfwGated" /* 9694 */;
+import useIsNsfwGatedDefault from "useIsNsfwGated" /* 9701 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import ReadStateStore from "ReadStateStore" /* 6757 */;
+import ReadStateStore from "ReadStateStore" /* 6756 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 let _require;
 
 let tmp9;
-const useLatestChannelMessageDefault = tmp9(16571);
+const useLatestChannelMessageDefault = tmp9(16593);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessagePreviewSetting(arg0) {
   let closure_0;

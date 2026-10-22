@@ -1,9 +1,9 @@
-// Module ID: 16993
-// Function ID: 16994
+// Module ID: 17015
+// Function ID: 17016
 // Name: InappropriateConversationModal
-// Dependencies: [32, 19, 17, 1392, 10891, 21, 4969, 587, 558, 576, 504, 5018, 1505, 6977, 1128, 5220, 5230, 10904, 16994, 10912, 16995, 6910, 10936, 6658, 10905, 7081, 2]
+// Dependencies: [32, 19, 17, 1392, 10899, 21, 4969, 587, 558, 576, 504, 5018, 1505, 6976, 1128, 5220, 5230, 10912, 17016, 10920, 17017, 6909, 10944, 6657, 10913, 7080, 2]
 
-// Module 16993 (InappropriateConversationModal)
+// Module 17015 (InappropriateConversationModal)
 import react2 from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import react3 from "react" /* 576 */;
@@ -13,17 +13,17 @@ import useNavigation from "useNavigation" /* 1505 */;
 import UserUtilsDefault from "UserUtils" /* 5018 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import components_Button_Button from "components/Button/Button" /* 5230 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6658 */;
-import NavigatorHeader from "NavigatorHeader" /* 6910 */;
-import TrafficConeSpotIllustration from "TrafficConeSpotIllustration" /* 6977 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10904 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10905 */;
-import SafetyTipsSectionDefault from "SafetyTipsSection" /* 10912 */;
-import TakeActionScreenDefault from "TakeActionScreen" /* 16994 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6657 */;
+import NavigatorHeader from "NavigatorHeader" /* 6909 */;
+import TrafficConeSpotIllustration from "TrafficConeSpotIllustration" /* 6976 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10912 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10913 */;
+import SafetyTipsSectionDefault from "SafetyTipsSection" /* 10920 */;
+import TakeActionScreenDefault from "TakeActionScreen" /* 17016 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 10891 */;
+import Constants from "Constants" /* 10899 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -606,7 +606,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Crisis
   const tmp4 = closure_15();
   const container = tmp4.container;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = closure_13(trackAnalyticsEvent(16995).SafetyChatSpotIllustration, {});
+    const tmp7 = closure_13(trackAnalyticsEvent(17017).SafetyChatSpotIllustration, {});
     cResult[0] = tmp7;
     first = tmp7;
   } else {
@@ -767,7 +767,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Crisis
   trackAnalyticsEvent = trackAnalyticsEvent.trackAnalyticsEvent;
   const tmp = closure_15();
   const obj = { style: tmp.container, children: items };
-  items = [closure_13(trackAnalyticsEvent(16995).SafetyChatSpotIllustration, {}), , ];
+  items = [closure_13(trackAnalyticsEvent(17017).SafetyChatSpotIllustration, {}), , ];
   const obj2 = { style: tmp.warningText, children: items1 };
   const obj3 = { variant: "heading-xl/semibold", style: tmp.takeoverHeader, accessibilityRole: "header", children: intl.string(trackAnalyticsEvent(1128).t.NUMAsF) };
   const Text = trackAnalyticsEvent(5220).Text;

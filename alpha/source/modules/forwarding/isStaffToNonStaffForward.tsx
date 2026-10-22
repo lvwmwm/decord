@@ -1,10 +1,10 @@
-// Module ID: 12830
-// Function ID: 12831
+// Module ID: 12848
+// Function ID: 12849
 // Name: isStaffToNonStaffForward
 // Dependencies: [4821, 4843, 1392, 1087, 2]
 // Exports: default
 
-// Module 12830 (isStaffToNonStaffForward)
+// Module 12848 (isStaffToNonStaffForward)
 import Constants from "Constants" /* 1087 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;
@@ -17,12 +17,12 @@ const GuildFeatures = Constants.GuildFeatures;
 const result = size.fileFinishedImporting("modules/forwarding/isStaffToNonStaffForward.tsx");
 
 export default function isStaffToNonStaffForward(channel_id, arr) {
-  const f115677 = (item) => {
+  const f115805 = (item) => {
     user = user.getUser(item);
     const tmp = null != user && user.isStaff();
     return tmp;
   };
-  const f115678 = (item) => {
+  const f115806 = (item) => {
     channel = channel.getChannel(item);
     let tmp = null != channel;
     if (tmp) {
@@ -32,7 +32,7 @@ export default function isStaffToNonStaffForward(channel_id, arr) {
         let everyResult;
         if (channel.isPrivate()) {
           const recipients = channel.recipients;
-          everyResult = recipients.every(f115677);
+          everyResult = recipients.every(f115805);
         } else {
           guild = guild.getGuild(channel.guild_id);
           everyResult = null != guild;
@@ -60,7 +60,7 @@ export default function isStaffToNonStaffForward(channel_id, arr) {
       let everyResult;
       if (channel.isPrivate()) {
         let recipients = channel.recipients;
-        everyResult = recipients.every(f115677);
+        everyResult = recipients.every(f115805);
       } else {
         let guild = GuildStore.getGuild(channel.guild_id);
         everyResult = null != guild;
@@ -69,8 +69,8 @@ export default function isStaffToNonStaffForward(channel_id, arr) {
           everyResult = features.has(GuildFeatures.INTERNAL_EMPLOYEE_ONLY);
         }
       }
-      tmp4 = everyResult && arr.some(f115678);
-      const someResult = everyResult && arr.some(f115678);
+      tmp4 = everyResult && arr.some(f115806);
+      const someResult = everyResult && arr.some(f115806);
     }
     return tmp4;
   } else {

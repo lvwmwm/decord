@@ -1,17 +1,17 @@
-// Module ID: 9889
-// Function ID: 9890
+// Module ID: 9896
+// Function ID: 9897
 // Name: EmojiPickerListComponentEmpty
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 9890, 9894, 5255, 1128, 1202, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 9897, 9901, 5255, 1128, 1202, 2]
 
-// Module 9889 (EmojiPickerListComponentEmpty)
+// Module 9896 (EmojiPickerListComponentEmpty)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import SearchEmpty from "SearchEmpty" /* 9890 */;
-import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 9894 */;
+import SearchEmpty from "SearchEmpty" /* 9897 */;
+import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 9901 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

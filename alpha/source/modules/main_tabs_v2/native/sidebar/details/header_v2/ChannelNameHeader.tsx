@@ -1,9 +1,9 @@
-// Module ID: 18086
-// Function ID: 18087
+// Module ID: 18108
+// Function ID: 18109
 // Name: ChannelNameHeader
-// Dependencies: [19, 17, 4821, 4843, 4901, 5698, 1392, 1087, 21, 4969, 587, 558, 576, 504, 1202, 5590, 1505, 5693, 1128, 5220, 6894, 5981, 3766, 10658, 8487, 10631, 7237, 8641, 2]
+// Dependencies: [19, 17, 4821, 4843, 4901, 5698, 1392, 1087, 21, 4969, 587, 558, 576, 504, 1202, 5590, 1505, 5693, 1128, 5220, 6893, 5980, 3766, 10665, 8488, 10638, 7238, 8648, 2]
 
-// Module 18086 (ChannelNameHeader)
+// Module 18108 (ChannelNameHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,10 +11,10 @@ import native from "native" /* 1202 */;
 import _modDef3766 from "module_3766" /* 3766 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import transitionToChannel from "transitionToChannel" /* 5693 */;
-import ChannelUtils from "ChannelUtils" /* 5981 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8487 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8641 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10658 */;
+import ChannelUtils from "ChannelUtils" /* 5980 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8488 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8648 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10665 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;
@@ -388,7 +388,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
       const intl = tmp(1128).intl;
       stringResult = intl.string(_modDef3766["D+2/QP"]);
     } else {
-      const tmpResult2 = tmp(5981);
+      const tmpResult2 = tmp(5980);
       stringResult = tmpResult2.channelTypeString(channel);
     }
     tmp10 = stringResult;
@@ -418,7 +418,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
       const intl = tmp(1128).intl;
       stringResult = intl.string(_modDef3766["D+2/QP"]);
     } else {
-      const tmpResult = tmp(5981);
+      const tmpResult = tmp(5980);
       stringResult = tmpResult.channelTypeString(channel);
     }
     stateFromStores = stringResult;
@@ -691,7 +691,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMChan
   channel = channel.channel;
   const containerStyle = channel.containerStyle;
   const tmp4 = closure_15();
-  analyticsLocations = analyticsLocations(7237)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7238)().analyticsLocations;
   if (cResult[0] === analyticsLocations) {
     let tmp5;
     if (cResult[1] === channel) {
@@ -722,7 +722,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMChan
         }
       }
       const obj3 = { style: tmp6, onPress: tmp5, children: tmp7 };
-      const tmp13 = closure_12(tmp(6894).PressableOpacity, obj3);
+      const tmp13 = closure_12(tmp(6893).PressableOpacity, obj3);
       cResult[8] = tmp5;
       cResult[9] = tmp6;
       cResult[10] = tmp7;
@@ -753,7 +753,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMChan
   let analyticsLocations;
   const containerStyle = channel.containerStyle;
   let tmp = closure_15();
-  analyticsLocations = analyticsLocations(7237)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7238)().analyticsLocations;
   const items = [channel, analyticsLocations];
   const callback = react.useCallback(() => {
     const recipientId = channel.getRecipientId();
@@ -765,7 +765,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMChan
   }, items);
   let obj = { style: items1, onPress: callback, children: closure_12(closure_19, { channel }) };
   items1 = [tmp.container, containerStyle];
-  const PressableOpacity = channel(6894).PressableOpacity;
+  const PressableOpacity = channel(6893).PressableOpacity;
   return closure_12(PressableOpacity, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;

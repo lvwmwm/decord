@@ -1,16 +1,16 @@
-// Module ID: 19025
-// Function ID: 19026
+// Module ID: 19048
+// Function ID: 19049
 // Name: RoleIconActionSheet
-// Dependencies: [5, 19, 19008, 1087, 1395, 21, 558, 576, 504, 5196, 8139, 1496, 19026, 5648, 1128, 19022, 9795, 7232, 5220, 6889, 7282, 6973, 2]
+// Dependencies: [5, 19, 19031, 1087, 1395, 21, 558, 576, 504, 5196, 8140, 1496, 19049, 5648, 1128, 19045, 9802, 7233, 5220, 6888, 7283, 6972, 2]
 
-// Module 19025 (RoleIconActionSheet)
+// Module 19048 (RoleIconActionSheet)
 import Constants from "Constants" /* 1087 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 19022 */;
+import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 19045 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 19008 */;
+import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 19031 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -308,7 +308,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIconActi
         }
       }
       let obj2 = { title: intl.string(tmp(1128).t.B9grJw) };
-      const BottomSheetTitleHeader = tmp(7232).BottomSheetTitleHeader;
+      const BottomSheetTitleHeader = tmp(7233).BottomSheetTitleHeader;
       intl = tmp(1128).intl;
       const tmp14 = closure_7(BottomSheetTitleHeader, obj2);
       cResult[11] = tmp14;
@@ -447,7 +447,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIconActi
         }
       }
       let obj4 = { label: tmp18, subLabel: tmp17, onPress: tmp9 };
-      const tmp22 = closure_7(tmp(6889).TableRow, obj4);
+      const tmp22 = closure_7(tmp(6888).TableRow, obj4);
       cResult[15] = tmp9;
       cResult[16] = tmp22;
     } else {
@@ -533,7 +533,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIconActi
         }
       }
       let obj6 = { label: tmp23, onPress: tmp10 };
-      const tmp26 = closure_7(tmp(6889).TableRow, obj6);
+      const tmp26 = closure_7(tmp(6888).TableRow, obj6);
       cResult[18] = tmp10;
       cResult[19] = tmp26;
     } else {
@@ -598,10 +598,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIconActi
       const tmp30 = closure_8;
       let obj8 = { children: items2 };
       items2 = [tmp13, tmp15, ];
-      const ActionSheet = tmp(7282).ActionSheet;
+      const ActionSheet = tmp(7283).ActionSheet;
       let obj9 = { hasIcons: false, children: items3 };
       items3 = [tmp21, tmp25, tmp27];
-      items2[2] = closure_8(tmp(6973).TableRowGroup, obj9);
+      items2[2] = closure_8(tmp(6972).TableRowGroup, obj9);
       const tmp31 = closure_8(ActionSheet, obj8);
       cResult[23] = tmp21;
       cResult[24] = tmp25;
@@ -630,7 +630,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIconActi
         }
       }
       const obj10 = { variant: "danger", label: intl4.string(tmp(1128).t["uY+Nk/"]), onPress: tmp11 };
-      const TableRow = tmp(6889).TableRow;
+      const TableRow = tmp(6888).TableRow;
       intl4 = tmp(1128).intl;
       tmp28 = closure_7(TableRow, obj10);
     }

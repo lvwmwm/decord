@@ -1,9 +1,9 @@
-// Module ID: 8754
-// Function ID: 8755
+// Module ID: 8761
+// Function ID: 8762
 // Name: AppFreezeStore
 // Dependencies: [570, 1274, 2]
 
-// Module 8754 (AppFreezeStore)
+// Module 8761 (AppFreezeStore)
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 

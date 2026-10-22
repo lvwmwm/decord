@@ -1,9 +1,9 @@
-// Module ID: 9179
-// Function ID: 9180
+// Module ID: 9186
+// Function ID: 9187
 // Name: SecureFramesCode
 // Dependencies: [19, 17, 1098, 21, 4969, 587, 558, 576, 5220, 2]
 
-// Module 9179 (SecureFramesCode)
+// Module 9186 (SecureFramesCode)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;

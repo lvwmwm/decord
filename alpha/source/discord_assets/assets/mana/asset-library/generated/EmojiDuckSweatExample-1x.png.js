@@ -1,8 +1,8 @@
-// Module ID: 12994
-// Function ID: 12995
+// Module ID: 13010
+// Function ID: 13011
 // Dependencies: [2]
 
-// Module 12994
+// Module 13010
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/EmojiDuckSweatExample-1x.png.js");

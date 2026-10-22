@@ -1,10 +1,10 @@
-// Module ID: 13345
-// Function ID: 13346
+// Module ID: 13359
+// Function ID: 13360
 // Name: usePowerupActiveStatus
 // Dependencies: [4843, 5167, 5168, 1087, 5169, 558, 576, 504, 2]
 // Exports: isPowerupActiveStatusActive
 
-// Module 13345 (usePowerupActiveStatus)
+// Module 13359 (usePowerupActiveStatus)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import GameServerConstants from "GameServerConstants" /* 5169 */;
@@ -112,15 +112,15 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerupsA
           hasItem = features.has(GuildFeatures.GAME_SERVERS);
         }
       }
-      obj3 = { type: hasItem ? hasOwnProperty.POWERUP_ACTIVATED : hasOwnProperty.INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "toCharArray$esjava$1" };
-      const obj2 = { type: hasItem ? hasOwnProperty.POWERUP_ACTIVATED : hasOwnProperty.INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "toCharArray$esjava$1" };
+      obj3 = { type: hasItem ? hasOwnProperty.POWERUP_ACTIVATED : hasOwnProperty.INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "IconComponent" };
+      const obj2 = { type: hasItem ? hasOwnProperty.POWERUP_ACTIVATED : hasOwnProperty.INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "IconComponent" };
     } else {
       if (null != skuId) {
         if (null != stateFromStores) {
           let obj;
           if (null != stateFromStores1) {
             if (null == metroRequire[skuId.skuId]) {
-              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "ix" };
+              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "__initData" };
             } else {
               obj = { isActiveFromLevel: tmp16.premiumTier >= metroRequire[skuId.skuId], levelEntitlement: tmp3, levelPowerup: tmp5 };
               tmp3 = undefined;
@@ -158,7 +158,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerupsA
           if (tmp9 == null) {
             tmp9 = null;
           }
-          obj3 = { type: hasOwnProperty.INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "toCharArray$esjava$1" };
+          obj3 = { type: hasOwnProperty.INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "IconComponent" };
           if (isActiveFromLevel) {
             obj3 = { type: hasOwnProperty.LEVEL_ACTIVATED, powerup: skuId, sourceEntitlement: levelEntitlement, sourcePowerup: levelPowerup };
             const obj4 = { type: hasOwnProperty.LEVEL_ACTIVATED, powerup: skuId, sourceEntitlement: levelEntitlement, sourcePowerup: levelPowerup };
@@ -171,7 +171,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerupsA
           }
         }
       }
-      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "ix" };
+      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "__initData" };
     }
     return obj3;
   });
@@ -220,8 +220,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerupsA
         if (hasItem) {
           INACTIVE = hasOwnProperty.POWERUP_ACTIVATED;
         }
-        obj3 = { type: INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "toCharArray$esjava$1" };
-        const obj2 = { type: INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "toCharArray$esjava$1" };
+        obj3 = { type: INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "IconComponent" };
+        const obj2 = { type: INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "IconComponent" };
       }
       INACTIVE = hasOwnProperty.INACTIVE;
     } else {
@@ -230,7 +230,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerupsA
           let obj;
           if (null != unlockedPowerups) {
             if (null == metroRequire[skuId.skuId]) {
-              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "ix" };
+              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "__initData" };
             } else {
               let tmp4;
               const tmp = tmp18.premiumTier >= metroRequire[skuId.skuId];
@@ -269,7 +269,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerupsA
           if (tmp10 == null) {
             tmp10 = null;
           }
-          obj3 = { type: hasOwnProperty.INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "toCharArray$esjava$1" };
+          obj3 = { type: hasOwnProperty.INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "IconComponent" };
           if (isActiveFromLevel) {
             obj3 = { type: hasOwnProperty.LEVEL_ACTIVATED, powerup: skuId, sourceEntitlement: levelEntitlement, sourcePowerup: levelPowerup };
             const obj4 = { type: hasOwnProperty.LEVEL_ACTIVATED, powerup: skuId, sourceEntitlement: levelEntitlement, sourcePowerup: levelPowerup };
@@ -282,7 +282,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerupsA
           }
         }
       }
-      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "ix" };
+      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "__initData" };
     }
     return obj3;
   });
@@ -312,7 +312,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerupAc
     let tmp6;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "r", sourcePowerup: "toCharArray$esjava$1" };
+      const obj2 = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "toCharArray$esjava$1" };
       cResult[2] = obj2;
       tmp6 = obj2;
     } else {
@@ -334,8 +334,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerupAc
   }
   const tmpResult = tmp(arg0, items);
   if (tmpResult.length <= 0) {
-    first = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "r", sourcePowerup: "toCharArray$esjava$1" };
-    const obj = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "r", sourcePowerup: "toCharArray$esjava$1" };
+    first = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "toCharArray$esjava$1" };
+    const obj = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "toCharArray$esjava$1" };
   } else {
     first = tmpResult[0];
   }

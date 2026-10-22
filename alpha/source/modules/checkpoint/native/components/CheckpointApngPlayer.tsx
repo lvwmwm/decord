@@ -1,9 +1,9 @@
-// Module ID: 12898
-// Function ID: 12899
+// Module ID: 12916
+// Function ID: 12917
 // Name: CheckpointApngPlayer
-// Dependencies: [17, 4970, 21, 4969, 558, 576, 504, 1385, 5655, 9370, 2]
+// Dependencies: [17, 4970, 21, 4969, 558, 576, 504, 1385, 5655, 9377, 2]
 
-// Module 12898 (CheckpointApngPlayer)
+// Module 12916 (CheckpointApngPlayer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -16,7 +16,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const APNGPlayer = tmp2(9370);
+const APNGPlayer = tmp2(9377);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ container: { alignItems: "center", justifyContent: "center" } });
@@ -73,7 +73,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointApngPl
     tmp10Result = tmp10(FastImageDefault, obj3);
   } else {
     const obj5 = { url: uri, autoplay: !stateFromStores, style };
-    tmp10Result = tmp10(tmp(9370).APNGPlayer, obj5);
+    tmp10Result = tmp10(tmp(9377).APNGPlayer, obj5);
   }
   cResult[2] = stateFromStores;
   cResult[3] = style;

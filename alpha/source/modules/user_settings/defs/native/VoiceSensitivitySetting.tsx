@@ -1,19 +1,19 @@
-// Module ID: 16501
-// Function ID: 16502
+// Module ID: 16523
+// Function ID: 16524
 // Name: VoiceSensitivitySetting
-// Dependencies: [17, 2014, 8317, 21, 4969, 558, 576, 504, 5838, 11566, 11172, 1128, 2]
+// Dependencies: [17, 2014, 8318, 21, 4969, 558, 576, 504, 5837, 11577, 11181, 1128, 2]
 
-// Module 16501 (VoiceSensitivitySetting)
+// Module 16523 (VoiceSensitivitySetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1128 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5838 */;
-import SettingsConstants from "SettingsConstants" /* 8317 */;
-import VoiceSensitivityDefault from "VoiceSensitivity" /* 11566 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5837 */;
+import SettingsConstants from "SettingsConstants" /* 8318 */;
+import VoiceSensitivityDefault from "VoiceSensitivity" /* 11577 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11172 */;
+import SettingBuilders from "SettingBuilders" /* 11181 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

@@ -1,15 +1,12 @@
 // Module ID: 10317
 // Function ID: 10318
-// Dependencies: [41, 42, 93, 95, 98, 10185, 10314, 10186, 10316]
+// Dependencies: [41, 42, 93, 95, 98, 10210]
 
 // Module 10317
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10185 */;
-import findMostLikelyADYear from "findMostLikelyADYear" /* 10186 */;
-import REGEX_PARTS from "REGEX_PARTS" /* 10314 */;
-import AbstractParserWithLeftBoundaryChecking from "AbstractParserWithLeftBoundaryChecking" /* 10316 */;
+import _mod10210 from "module_10210" /* 10210 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
+import map from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -28,14 +25,31 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class RUMonthNameParser {
+let fn = this;
+if (this) {
+  fn = this.__importDefault;
+}
+if (!fn) {
+  fn = (__esModule) => {
+    let tmp2;
+    const tmp = __esModule;
+    if (!tmp) {
+      tmp2 = { default: __esModule };
+      const obj = { default: __esModule };
+    } else {
+      tmp2 = __esModule;
+    }
+    return tmp2;
+  };
+}
+class ZHHansMergeDateRangeRefiner {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, RUMonthNameParser);
-    const obj = _getPrototypeOf(RUMonthNameParser);
+    _classCallCheck(this, ZHHansMergeDateRangeRefiner);
+    const obj = _getPrototypeOf(ZHHansMergeDateRangeRefiner);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
+    const tmp3 = map;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -45,42 +59,13 @@ class RUMonthNameParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(RUMonthNameParser, AbstractParserWithLeftBoundaryChecking.AbstractParserWithLeftBoundaryChecking);
+_inherits(ZHHansMergeDateRangeRefiner, fn(_mod10210).default);
 const entry = {
-  key: "innerPatternString",
-  value: function innerPatternString(arg0) {
-    const matchAnyPatternResult = repeatedTimeunitPattern.matchAnyPattern(REGEX_PARTS.MONTH_DICTIONARY);
-    return "((?:\u0432)\\s*)?(" + matchAnyPatternResult + ")\\s*(?:[,-]?\\s*(" + REGEX_PARTS.YEAR_PATTERN + ")?)?(?=[^\\s\\w]|\\s+[^0-9]|\\s+$|$)";
+  key: "patternBetween",
+  value: function patternBetween() {
+    return /^\s*(至|到|-|~|～|－|ー)\s*$/i;
   }
 };
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(createParsingResult, index) {
-      const str = index[2];
-      const formatted = str.toLowerCase();
-      if (index[0].length <= 3) {
-        if (!REGEX_PARTS.FULL_MONTH_NAME_DICTIONARY[formatted]) {
-          return null;
-        }
-      }
-      const parsingResult = createParsingResult.createParsingResult(index.index, index.index + index[0].length);
-      const start = parsingResult.start;
-      start.imply("day", 1);
-      const tmp9 = REGEX_PARTS.MONTH_DICTIONARY[formatted];
-      const start2 = parsingResult.start;
-      start2.assign("month", tmp9);
-      if (index[3]) {
-        const start4 = parsingResult.start;
-        start4.assign("year", REGEX_PARTS.parseYear(index[3]));
-      } else {
-        const start3 = parsingResult.start;
-        start3.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingResult.refDate, 1, tmp9));
-      }
-      return parsingResult;
-    }
-  }
-];
+const items = [entry];
 
-export default _createClass(RUMonthNameParser, items);
+export default _createClass(ZHHansMergeDateRangeRefiner, items);

@@ -1,17 +1,17 @@
-// Module ID: 5984
-// Function ID: 5985
+// Module ID: 5983
+// Function ID: 5984
 // Name: MediaPostEmbedUtils
-// Dependencies: [4843, 4911, 1392, 1087, 5985, 1128, 5976, 1417, 1405, 5590, 5685, 5592, 2]
+// Dependencies: [4843, 4911, 1392, 1087, 5984, 1128, 5975, 1417, 1405, 5590, 5685, 5592, 2]
 // Exports: canUseMediaPostEmbed, getMediaPostEmbedChannelId, getMediaPostEmbedChannelPath, getMediaPostEmbedCommonData
 
-// Module 5984 (MediaPostEmbedUtils)
+// Module 5983 (MediaPostEmbedUtils)
 import FlagUtils from "FlagUtils" /* 1405 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import useChannelName from "useChannelName" /* 5590 */;
 import LinkUtils from "LinkUtils" /* 5592 */;
 import findCodedLinks from "findCodedLinks" /* 5685 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5976 */;
-import MediaPostThumbnailUtils from "MediaPostThumbnailUtils" /* 5985 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5975 */;
+import MediaPostThumbnailUtils from "MediaPostThumbnailUtils" /* 5984 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
 import UserStore from "UserStore" /* 1392 */;

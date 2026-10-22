@@ -1,9 +1,9 @@
-// Module ID: 10978
-// Function ID: 10979
+// Module ID: 10986
+// Function ID: 10987
 // Name: ActionSheetIconHeader
 // Dependencies: [19, 17, 21, 4969, 558, 576, 5220, 2]
 
-// Module 10978 (ActionSheetIconHeader)
+// Module 10986 (ActionSheetIconHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Text_Text from "Text/Text" /* 5220 */;

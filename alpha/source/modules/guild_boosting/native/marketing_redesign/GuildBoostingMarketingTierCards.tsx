@@ -1,9 +1,9 @@
-// Module ID: 14833
-// Function ID: 14834
+// Module ID: 14847
+// Function ID: 14848
 // Name: GuildBoostingMarketingTierCards
-// Dependencies: [32, 19, 17, 1087, 1394, 21, 9319, 1128, 13376, 13375, 8557, 8553, 10118, 14834, 9774, 5664, 14836, 4969, 587, 14828, 6693, 558, 576, 5038, 5192, 5220, 5191, 4976, 5244, 6894, 8351, 14837, 14839, 4966, 1202, 14841, 14842, 5581, 13413, 2]
+// Dependencies: [32, 19, 17, 1087, 1394, 21, 9326, 1128, 13390, 13389, 8558, 8554, 10125, 14848, 9781, 5664, 14850, 4969, 587, 14842, 6692, 558, 576, 5038, 5192, 5220, 5191, 4976, 5244, 6893, 8352, 14851, 14853, 4966, 1202, 14855, 14856, 5581, 13427, 2]
 
-// Module 14833 (GuildBoostingMarketingTierCards)
+// Module 14847 (GuildBoostingMarketingTierCards)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
@@ -17,20 +17,20 @@ import Text_Text from "Text/Text" /* 5220 */;
 import LinearGradientDefault from "LinearGradient" /* 5244 */;
 import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5581 */;
 import LinkIcon from "LinkIcon" /* 5664 */;
-import LegacyTokens from "LegacyTokens" /* 6693 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 8351 */;
-import StageIcon from "StageIcon" /* 8553 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 8557 */;
-import ReactionIcon from "ReactionIcon" /* 9319 */;
-import UploadIcon from "UploadIcon" /* 9774 */;
-import GifIcon from "GifIcon" /* 10118 */;
-import ScreenArrowIcon from "ScreenArrowIcon" /* 13375 */;
-import StickerIcon from "StickerIcon" /* 13376 */;
-import GuildBoostingMarketingProgressBar from "GuildBoostingMarketingProgressBar" /* 14828 */;
-import ServerGridIcon from "ServerGridIcon" /* 14834 */;
-import ServerBoostStreamQualityMarketingExperiment from "ServerBoostStreamQualityMarketingExperiment" /* 14836 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14841 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14842 */;
+import LegacyTokens from "LegacyTokens" /* 6692 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8352 */;
+import StageIcon from "StageIcon" /* 8554 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 8558 */;
+import ReactionIcon from "ReactionIcon" /* 9326 */;
+import UploadIcon from "UploadIcon" /* 9781 */;
+import GifIcon from "GifIcon" /* 10125 */;
+import ScreenArrowIcon from "ScreenArrowIcon" /* 13389 */;
+import StickerIcon from "StickerIcon" /* 13390 */;
+import GuildBoostingMarketingProgressBar from "GuildBoostingMarketingProgressBar" /* 14842 */;
+import ServerGridIcon from "ServerGridIcon" /* 14848 */;
+import ServerBoostStreamQualityMarketingExperiment from "ServerBoostStreamQualityMarketingExperiment" /* 14850 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14855 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14856 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
@@ -208,7 +208,7 @@ function GuildBoostingMarketingTierCard(ref) {
   obj4 = { style: tmp2.pressableWrapper, children: authStore(PressableHighlight, obj5) };
   obj5 = { onPress: onCardPress, style: tmp2.cardContent, accessibilityRole: "button", accessibilityState: { expanded: isExpanded }, accessibilityLabel: stringResult, children: items3 };
   const obj6 = { style: tmp2.cardHeading, children: items2 };
-  PressableHighlight = tmp8(6894).PressableHighlight;
+  PressableHighlight = tmp8(6893).PressableHighlight;
   const obj7 = { color: "text-overlay-light", style: tmp2.cardTierName, variant: "heading-xxl/extrabold", children: tmp8Result.getTierName(tier, { useLevels: false }) };
   const Text = tmp8(5220).Text;
   tmp8Result = GuildBoostingUtils;
@@ -228,9 +228,9 @@ function GuildBoostingMarketingTierCard(ref) {
   const obj12 = { style: tmp2.cardFooter, children: items5 };
   items5 = [React4(Text_Text.Text, { color: "text-overlay-light", variant: "text-md/semibold", children: stringResult }), ];
   if (isExpanded) {
-    ChevronLargeDownIcon = tmp8(14837).ChevronLargeUpIcon;
+    ChevronLargeDownIcon = tmp8(14851).ChevronLargeUpIcon;
   } else {
-    ChevronLargeDownIcon = tmp8(14839).ChevronLargeDownIcon;
+    ChevronLargeDownIcon = tmp8(14853).ChevronLargeDownIcon;
   }
   const obj13 = { color: nativeDefault.colors.WHITE, style: tmp2.cardFooterIcon };
   items5[1] = React4(ChevronLargeDownIcon, obj13);
@@ -968,7 +968,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
       return React4(GuildBoostingMarketingTierCard, obj, tier);
     })
   };
-  const MarketingCardsScroller = guild(13413).MarketingCardsScroller;
+  const MarketingCardsScroller = guild(13427).MarketingCardsScroller;
   let closure_0 = Math.min(BoostedGuildTiers.TIER_3, guild.premiumTier + 1);
   let findIndexResult = items1.findIndex((tier) => tier.tier === closure_0);
   num = 0;

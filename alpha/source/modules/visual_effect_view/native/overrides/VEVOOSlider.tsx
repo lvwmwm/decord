@@ -1,13 +1,13 @@
-// Module ID: 17237
-// Function ID: 17238
+// Module ID: 17259
+// Function ID: 17260
 // Name: VEVOOSlider
-// Dependencies: [19, 21, 4969, 1384, 587, 558, 576, 8742, 2]
+// Dependencies: [19, 21, 4969, 1384, 587, 558, 576, 8749, 2]
 
-// Module 17237 (VEVOOSlider)
+// Module 17259 (VEVOOSlider)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef8742 from "module_8742" /* 8742 */;
+import _modDef8749 from "module_8749" /* 8749 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
@@ -79,7 +79,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
     }
-    _modDef8742;
+    _modDef8749;
     const tmp15 = <tmp14 style={tmp7} disabled={disabled} value={current} minimumValue={0} maximumValue={1} minimumTrackTintColor={nativeDefault.unsafe_rawColors.BRAND_500} maximumTrackTintColor={nativeDefault.unsafe_rawColors.PRIMARY_400} onValueChange={onValueChange} onResponderGrant={tmp10} />;
     cResult[6] = disabled;
     cResult[7] = onValueChange;
@@ -108,7 +108,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let num = 1;
   closure_4();
   const tmp2 = jsx;
-  const tmp5 = _modDef8742;
+  const tmp5 = _modDef8749;
   if (flag) {
     num = 0.5;
   }

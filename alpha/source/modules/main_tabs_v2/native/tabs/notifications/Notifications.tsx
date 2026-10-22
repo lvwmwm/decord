@@ -1,9 +1,9 @@
-// Module ID: 17745
-// Function ID: 17746
+// Module ID: 17767
+// Function ID: 17768
 // Name: notifications/Notifications
-// Dependencies: [19, 17, 11147, 4818, 21, 4969, 587, 5137, 558, 576, 7024, 17746, 6894, 1128, 17747, 5220, 17748, 10048, 17749, 7207, 7237, 7262, 7568, 6916, 17753, 17754, 12775, 5583, 5132, 1633, 17338, 10595, 5023, 2]
+// Dependencies: [19, 17, 11156, 4818, 21, 4969, 587, 5137, 558, 576, 7023, 17768, 6893, 1128, 17769, 5220, 17770, 10055, 17771, 7206, 7238, 7263, 7569, 6915, 17775, 17776, 12794, 5583, 5132, 1633, 17360, 10602, 5023, 2]
 
-// Module 17745 (notifications/Notifications)
+// Module 17767 (notifications/Notifications)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,17 +13,17 @@ import native from "native" /* 5023 */;
 import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5132 */;
 import RootNavigationRef from "RootNavigationRef" /* 5137 */;
 import LayerScope2 from "LayerScope" /* 5583 */;
-import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 6916 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7024 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7237 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7262 */;
-import MainTabsConstants from "MainTabsConstants" /* 11147 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12775 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 17338 */;
-import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 17746 */;
-import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 17748 */;
-import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 17749 */;
-import NotificationCenterForYou from "NotificationCenterForYou" /* 17754 */;
+import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 6915 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7023 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7238 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7263 */;
+import MainTabsConstants from "MainTabsConstants" /* 11156 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12794 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 17360 */;
+import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 17768 */;
+import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 17770 */;
+import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 17771 */;
+import NotificationCenterForYou from "NotificationCenterForYou" /* 17776 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -42,8 +42,8 @@ let size;
 let size1;
 let tmp4;
 let tmp7;
-const ThemedGradientDefault = tmp4(10595);
-const NotificationCenterPermissionNudgeDefault = tmp7(17753);
+const ThemedGradientDefault = tmp4(10602);
+const NotificationCenterPermissionNudgeDefault = tmp7(17775);
 function goBack() {
   const obj = RootNavigationRef;
   navigation = obj.getRootNavigationRef();
@@ -148,7 +148,7 @@ let closure_11 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
   if (!nestedInLaunchPad) {
     const obj5 = { style: tmp4.headerTitle, children: items1 };
     const obj6 = { style: tmp4.headerClose, accessibilityLabel: intl.string(require("intl").t["13/7kX"]), onPress: goBack, children: closure_7(require("BackIconWithBadge").LeftBackIconWithBadge, {}) };
-    const PressableOpacity = tmp(6894).PressableOpacity;
+    const PressableOpacity = tmp(6893).PressableOpacity;
     intl = tmp(1128).intl;
     items1 = [closure_7(PressableOpacity, obj6), , ];
     const obj7 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: tmp4.headerText, maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: intl2.string(require("intl").t.HcoRu0) };
@@ -200,7 +200,7 @@ let closure_11 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
   if (!nestedInLaunchPad) {
     const obj2 = { style: tmp.headerTitle, children: items1 };
     const obj3 = { style: tmp.headerClose, accessibilityLabel: intl.string(require("intl").t["13/7kX"]), onPress: goBack, children: closure_7(require("BackIconWithBadge").LeftBackIconWithBadge, {}) };
-    const PressableOpacity = tmp11(6894).PressableOpacity;
+    const PressableOpacity = tmp11(6893).PressableOpacity;
     intl = tmp11(1128).intl;
     items1 = [closure_7(PressableOpacity, obj3), , ];
     const obj4 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: tmp.headerText, maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: intl2.string(require("intl").t.HcoRu0) };

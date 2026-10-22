@@ -1,11 +1,11 @@
-// Module ID: 9508
-// Function ID: 9509
+// Module ID: 9515
+// Function ID: 9516
 // Name: gift_reminder_nagbar
-// Dependencies: [32, 1212, 9494, 2]
+// Dependencies: [32, 1212, 9501, 2]
 
-// Module 9508 (gift_reminder_nagbar)
+// Module 9515 (gift_reminder_nagbar)
 import _mod1212 from "module_1212" /* 1212 */;
-import localized_string from "localized_string" /* 9494 */;
+import localized_string from "localized_string" /* 9501 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

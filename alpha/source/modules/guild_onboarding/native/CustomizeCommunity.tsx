@@ -1,9 +1,9 @@
-// Module ID: 11207
-// Function ID: 11208
+// Module ID: 11216
+// Function ID: 11217
 // Name: CustomizeCommunity
-// Dependencies: [19, 17, 6711, 4843, 6757, 4995, 7181, 7182, 1087, 1395, 6691, 21, 4969, 587, 6637, 558, 576, 4991, 5191, 504, 11208, 11209, 5655, 1128, 1202, 5220, 7187, 7208, 7235, 7262, 1633, 11210, 7180, 7192, 7186, 7213, 1417, 1388, 5238, 5038, 5192, 11211, 5196, 7218, 2002, 6894, 7233, 7209, 2]
+// Dependencies: [19, 17, 6710, 4843, 6756, 4995, 7180, 7181, 1087, 1395, 6690, 21, 4969, 587, 6636, 558, 576, 4991, 5191, 504, 11217, 11218, 5655, 1128, 1202, 5220, 7186, 7207, 7236, 7263, 1633, 11219, 7179, 7191, 7185, 7212, 1417, 1388, 5238, 5038, 5192, 11220, 5196, 7217, 2002, 6893, 7234, 7208, 2]
 
-// Module 11207 (CustomizeCommunity)
+// Module 11216 (CustomizeCommunity)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -15,23 +15,23 @@ import timing from "timing" /* 5192 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import ReadStateConstants from "ReadStateConstants" /* 6691 */;
-import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 7180 */;
-import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7187 */;
-import EmojiDefault from "Emoji" /* 7213 */;
-import ConnectionCardDefault from "ConnectionCard" /* 7235 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7262 */;
+import ReadStateConstants from "ReadStateConstants" /* 6690 */;
+import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 7179 */;
+import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7186 */;
+import EmojiDefault from "Emoji" /* 7212 */;
+import ConnectionCardDefault from "ConnectionCard" /* 7236 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7263 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmojiStore from "EmojiStore" /* 6711 */;
+import EmojiStore from "EmojiStore" /* 6710 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import ReadStateStore from "ReadStateStore" /* 6757 */;
+import ReadStateStore from "ReadStateStore" /* 6756 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7181 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7182 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7180 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7181 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
-import TextStyles from "TextStyles" /* 6637 */;
+import TextStyles from "TextStyles" /* 6636 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -150,7 +150,7 @@ function DropdownPrompt(guildId) {
       canBeNew: !_prompt.isNew,
       returnToCustomize: true
     };
-    obj.openLazy(asyncRequire(7218, dependencyMap.paths), "DropdownOptions", obj2);
+    obj.openLazy(asyncRequire(7217, dependencyMap.paths), "DropdownOptions", obj2);
   }, items1);
   const obj5 = { style: items2, children: items3 };
   items2 = [tmp.promptContainer, animatedStyle];
@@ -248,7 +248,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyC
       tmp11 = cResult[4];
     }
     const emptyContainer = tmp4.emptyContainer;
-    const tmp5Result = stateFromStores(isThemeDarkResult ? 11208 : 11209);
+    const tmp5Result = stateFromStores(isThemeDarkResult ? 11217 : 11218);
     if (cResult[5] === tmp4.emptyContainerImage) {
       let tmp13;
       let tmp16;
@@ -350,7 +350,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyC
   const tmp4 = importDefault;
   importDefault = obj2.useStateFromStores(items, () => guildId.getGuildId());
   const obj3 = { style: tmp.emptyContainer, children: items1 };
-  const obj4 = { style: tmp.emptyContainerImage, source: tmp4(isThemeDarkResult ? 11208 : 11209) };
+  const obj4 = { style: tmp.emptyContainerImage, source: tmp4(isThemeDarkResult ? 11217 : 11218) };
   const tmp9 = FastImageDefault;
   items1 = [closure_15(tmp9, obj4), , ];
   const obj5 = { style: tmp.emptyContainerHeader, children: intl.string(setTab(1128).t.leKHQz) };
@@ -482,7 +482,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Prompt
     if (cResult[6] !== tmp11) {
       let selectedRoleIds;
       if (null != tmp11) {
-        const tmpResult3 = guildId(7187);
+        const tmpResult3 = guildId(7186);
         selectedRoleIds = tmpResult3.getSelectedRoleIds(tmp11);
       } else {
         const _Set = Set;
@@ -499,7 +499,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Prompt
     if (cResult[8] !== tmp11) {
       let selectedChannelIds;
       if (null != tmp11) {
-        const tmpResult4 = guildId(7187);
+        const tmpResult4 = guildId(7186);
         selectedChannelIds = tmpResult4.getSelectedChannelIds(tmp11);
       } else {
         const _Set2 = Set;
@@ -532,8 +532,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Prompt
           if (cResult[14] === tmp14) {
             tmp19 = cResult[15];
           }
-          ({ helpText, helpTextAdditional } = selectedOptionIds(7208)(tmp19));
-          selectedOptionIds(7208)(tmp19);
+          ({ helpText, helpTextAdditional } = selectedOptionIds(7207)(tmp19));
+          selectedOptionIds(7207)(tmp19);
           if (cResult[16] === helpText) {
             if (cResult[17] === helpTextAdditional) {
               let tmp22;
@@ -886,8 +886,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomizeCom
   }
   const tmpResult2 = tmp(504);
   const stateFromStores1 = tmpResult2.useStateFromStores(tmp10, tmp12);
-  ({ newOnboardingPrompts, onboardingPromptsWithNewAnswers, newAnswersCount, onboardingPrompts } = stateFromStores(11210)(guildId));
-  stateFromStores(11210)(guildId);
+  ({ newOnboardingPrompts, onboardingPromptsWithNewAnswers, newAnswersCount, onboardingPrompts } = stateFromStores(11219)(guildId));
+  stateFromStores(11219)(guildId);
   if (cResult[6] === guildId) {
     class N {
       constructor() {
@@ -970,7 +970,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomizeCom
     }
     return prop;
   });
-  const tmp7 = stateFromStores(11210)(guildId);
+  const tmp7 = stateFromStores(11219)(guildId);
   ({ newOnboardingPrompts, onboardingPromptsWithNewAnswers, onboardingPrompts } = tmp7);
   const items2 = [guildId, stateFromStores, stateFromStores1];
   ({ onboardingPromptsRaw, newAnswersCount } = tmp7);

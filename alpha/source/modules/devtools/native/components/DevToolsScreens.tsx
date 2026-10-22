@@ -1,59 +1,59 @@
-// Module ID: 16838
-// Function ID: 16839
+// Module ID: 16860
+// Function ID: 16861
 // Name: DevToolsScreens
-// Dependencies: [19, 21, 6826, 16839, 11729, 16840, 16843, 12677, 9710, 16845, 16846, 11780, 16847, 11733, 16873, 16513, 16874, 16875, 16879, 9483, 16882, 5670, 16917, 11267, 16920, 9277, 16925, 12287, 16926, 12807, 16953, 10090, 16976, 16605, 16978, 10918, 16980, 11740, 16981, 12072, 16988, 16989, 16991, 16853, 16992, 5664, 16999, 11546, 17000, 17001, 17002, 2]
+// Dependencies: [19, 21, 6825, 16861, 11740, 16862, 16865, 12696, 9717, 16867, 16868, 11792, 16869, 11744, 16895, 16535, 16896, 16897, 16901, 9490, 16904, 5670, 16939, 11276, 16942, 9284, 16947, 12298, 16948, 12826, 16975, 10097, 16998, 16627, 17000, 10926, 17002, 11751, 17003, 12082, 17010, 17011, 17013, 16875, 17014, 5664, 17021, 11557, 17022, 17023, 17024, 2]
 
-// Module 16838 (DevToolsScreens)
+// Module 16860 (DevToolsScreens)
 import Fragment from "Fragment" /* 21 */;
 import LinkIcon from "LinkIcon" /* 5664 */;
 import DownloadIcon from "DownloadIcon" /* 5670 */;
-import ClipboardListIcon from "ClipboardListIcon" /* 6826 */;
-import TrophyIcon from "TrophyIcon" /* 9277 */;
-import LanguageIcon from "LanguageIcon" /* 9483 */;
-import PaperIcon from "PaperIcon" /* 9710 */;
-import PencilIcon from "PencilIcon" /* 10090 */;
-import ShieldIcon from "ShieldIcon" /* 10918 */;
-import TimerIcon from "TimerIcon" /* 11267 */;
-import SpeedometerIcon from "SpeedometerIcon" /* 11546 */;
-import RefreshIcon from "RefreshIcon" /* 11729 */;
-import FileUpIcon from "FileUpIcon" /* 11733 */;
-import RobotIcon from "RobotIcon" /* 11740 */;
-import UserIcon from "UserIcon" /* 11780 */;
-import ShopIcon from "ShopIcon" /* 12072 */;
-import MagicWandIcon from "MagicWandIcon" /* 12287 */;
-import DevToolsExperimentsScreen from "DevToolsExperimentsScreen" /* 12677 */;
-import PiggyBankIcon from "PiggyBankIcon" /* 12807 */;
-import PaintPaletteIcon from "PaintPaletteIcon" /* 16513 */;
-import EyeDropperIcon from "EyeDropperIcon" /* 16605 */;
-import DevToolsAnalyticsScreen from "DevToolsAnalyticsScreen" /* 16839 */;
-import DevToolsBuildOverrideScreen from "DevToolsBuildOverrideScreen" /* 16840 */;
-import BeakerIcon from "BeakerIcon" /* 16843 */;
-import DevToolsLoggingFlagsScreen from "DevToolsLoggingFlagsScreen" /* 16845 */;
-import DevToolsLocalMessageCache from "DevToolsLocalMessageCache" /* 16846 */;
-import DevToolsGeneratedTestUsersScreen from "DevToolsGeneratedTestUsersScreen" /* 16847 */;
-import CompassIcon from "CompassIcon" /* 16853 */;
-import DevToolsDataStorageScreen from "DevToolsDataStorageScreen" /* 16873 */;
-import UserSettingsDesignSystemsScreen from "UserSettingsDesignSystemsScreen" /* 16874 */;
-import DevToolsDismissableContentsScreen from "DevToolsDismissableContentsScreen" /* 16875 */;
-import GameCommunityUpsellDevTools from "GameCommunityUpsellDevTools" /* 16879 */;
-import IntlTestingSettingsPage from "IntlTestingSettingsPage" /* 16882 */;
-import DevToolsOTATestScreen from "DevToolsOTATestScreen" /* 16917 */;
-import DevToolsProfilingScreen from "DevToolsProfilingScreen" /* 16920 */;
-import DevToolsBountyQaScreen from "DevToolsBountyQaScreen" /* 16925 */;
-import DevToolsQuickActionsScreen from "DevToolsQuickActionsScreen" /* 16926 */;
-import DevToolsRevenuePlaygroundScreen from "DevToolsRevenuePlaygroundScreen" /* 16953 */;
-import UserSettingsSurveyChangelogOverride from "UserSettingsSurveyChangelogOverride" /* 16976 */;
-import DevToolsTogglesScreen from "DevToolsTogglesScreen" /* 16978 */;
-import DevToolsAgeVerificationScreen from "DevToolsAgeVerificationScreen" /* 16980 */;
-import DevToolsComponentsTestingScreen from "DevToolsComponentsTestingScreen" /* 16981 */;
-import DevToolsShopScreen from "DevToolsShopScreen" /* 16988 */;
-import CollectiblesTool from "CollectiblesTool" /* 16989 */;
-import SlayerStorefrontDevTools from "SlayerStorefrontDevTools" /* 16991 */;
-import DevToolsActionSheetsScreen from "DevToolsActionSheetsScreen" /* 16992 */;
-import DevToolsAccountLinkingScreen from "DevToolsAccountLinkingScreen" /* 16999 */;
-import DevToolsPerformanceTestingScreen from "DevToolsPerformanceTestingScreen" /* 17000 */;
-import DevToolsInAppNotificationTestingScreen from "DevToolsInAppNotificationTestingScreen" /* 17001 */;
-import DevToolsDisplayNameEffectsBenchmarkScreen from "DevToolsDisplayNameEffectsBenchmarkScreen" /* 17002 */;
+import ClipboardListIcon from "ClipboardListIcon" /* 6825 */;
+import TrophyIcon from "TrophyIcon" /* 9284 */;
+import LanguageIcon from "LanguageIcon" /* 9490 */;
+import PaperIcon from "PaperIcon" /* 9717 */;
+import PencilIcon from "PencilIcon" /* 10097 */;
+import ShieldIcon from "ShieldIcon" /* 10926 */;
+import TimerIcon from "TimerIcon" /* 11276 */;
+import SpeedometerIcon from "SpeedometerIcon" /* 11557 */;
+import RefreshIcon from "RefreshIcon" /* 11740 */;
+import FileUpIcon from "FileUpIcon" /* 11744 */;
+import RobotIcon from "RobotIcon" /* 11751 */;
+import UserIcon from "UserIcon" /* 11792 */;
+import ShopIcon from "ShopIcon" /* 12082 */;
+import MagicWandIcon from "MagicWandIcon" /* 12298 */;
+import DevToolsExperimentsScreen from "DevToolsExperimentsScreen" /* 12696 */;
+import PiggyBankIcon from "PiggyBankIcon" /* 12826 */;
+import PaintPaletteIcon from "PaintPaletteIcon" /* 16535 */;
+import EyeDropperIcon from "EyeDropperIcon" /* 16627 */;
+import DevToolsAnalyticsScreen from "DevToolsAnalyticsScreen" /* 16861 */;
+import DevToolsBuildOverrideScreen from "DevToolsBuildOverrideScreen" /* 16862 */;
+import BeakerIcon from "BeakerIcon" /* 16865 */;
+import DevToolsLoggingFlagsScreen from "DevToolsLoggingFlagsScreen" /* 16867 */;
+import DevToolsLocalMessageCache from "DevToolsLocalMessageCache" /* 16868 */;
+import DevToolsGeneratedTestUsersScreen from "DevToolsGeneratedTestUsersScreen" /* 16869 */;
+import CompassIcon from "CompassIcon" /* 16875 */;
+import DevToolsDataStorageScreen from "DevToolsDataStorageScreen" /* 16895 */;
+import UserSettingsDesignSystemsScreen from "UserSettingsDesignSystemsScreen" /* 16896 */;
+import DevToolsDismissableContentsScreen from "DevToolsDismissableContentsScreen" /* 16897 */;
+import GameCommunityUpsellDevTools from "GameCommunityUpsellDevTools" /* 16901 */;
+import IntlTestingSettingsPage from "IntlTestingSettingsPage" /* 16904 */;
+import DevToolsOTATestScreen from "DevToolsOTATestScreen" /* 16939 */;
+import DevToolsProfilingScreen from "DevToolsProfilingScreen" /* 16942 */;
+import DevToolsBountyQaScreen from "DevToolsBountyQaScreen" /* 16947 */;
+import DevToolsQuickActionsScreen from "DevToolsQuickActionsScreen" /* 16948 */;
+import DevToolsRevenuePlaygroundScreen from "DevToolsRevenuePlaygroundScreen" /* 16975 */;
+import UserSettingsSurveyChangelogOverride from "UserSettingsSurveyChangelogOverride" /* 16998 */;
+import DevToolsTogglesScreen from "DevToolsTogglesScreen" /* 17000 */;
+import DevToolsAgeVerificationScreen from "DevToolsAgeVerificationScreen" /* 17002 */;
+import DevToolsComponentsTestingScreen from "DevToolsComponentsTestingScreen" /* 17003 */;
+import DevToolsShopScreen from "DevToolsShopScreen" /* 17010 */;
+import CollectiblesTool from "CollectiblesTool" /* 17011 */;
+import SlayerStorefrontDevTools from "SlayerStorefrontDevTools" /* 17013 */;
+import DevToolsActionSheetsScreen from "DevToolsActionSheetsScreen" /* 17014 */;
+import DevToolsAccountLinkingScreen from "DevToolsAccountLinkingScreen" /* 17021 */;
+import DevToolsPerformanceTestingScreen from "DevToolsPerformanceTestingScreen" /* 17022 */;
+import DevToolsInAppNotificationTestingScreen from "DevToolsInAppNotificationTestingScreen" /* 17023 */;
+import DevToolsDisplayNameEffectsBenchmarkScreen from "DevToolsDisplayNameEffectsBenchmarkScreen" /* 17024 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

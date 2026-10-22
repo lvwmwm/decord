@@ -1,9 +1,9 @@
-// Module ID: 7206
-// Function ID: 7207
+// Module ID: 7205
+// Function ID: 7206
 // Name: defaultMVCPConfig
 // Dependencies: [109, 19, 17, 21, 1384, 558, 576, 5480, 5038, 5479, 5255, 2]
 
-// Module 7206 (defaultMVCPConfig)
+// Module 7205 (defaultMVCPConfig)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

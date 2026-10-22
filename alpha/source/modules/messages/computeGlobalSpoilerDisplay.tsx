@@ -1,10 +1,10 @@
-// Module ID: 8736
-// Function ID: 8737
+// Module ID: 8743
+// Function ID: 8744
 // Name: computeGlobalSpoilerDisplay
 // Dependencies: [4901, 1087, 558, 576, 573, 4797, 2]
 // Exports: default
 
-// Module 8736 (computeGlobalSpoilerDisplay)
+// Module 8743 (computeGlobalSpoilerDisplay)
 import PermissionStore from "PermissionStore" /* 4901 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

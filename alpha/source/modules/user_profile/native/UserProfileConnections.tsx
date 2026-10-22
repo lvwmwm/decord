@@ -1,9 +1,9 @@
-// Module ID: 14350
-// Function ID: 14351
+// Module ID: 14364
+// Function ID: 14365
 // Name: UserProfileConnections
-// Dependencies: [19, 17, 2068, 5019, 7288, 1087, 7260, 21, 1202, 4969, 587, 11234, 558, 576, 5238, 4976, 11239, 11240, 8652, 7259, 6488, 1417, 8828, 5697, 5646, 5198, 7269, 5648, 1128, 5220, 5654, 8076, 6889, 5023, 504, 14351, 6973, 7287, 14354, 2]
+// Dependencies: [19, 17, 2068, 5019, 7289, 1087, 7261, 21, 1202, 4969, 587, 11243, 558, 576, 5238, 4976, 11248, 11249, 8659, 7260, 6487, 1417, 8835, 5697, 5646, 5198, 7270, 5648, 1128, 5220, 5654, 8077, 6888, 5023, 504, 14365, 6972, 7288, 14368, 2]
 
-// Module 14350 (UserProfileConnections)
+// Module 14364 (UserProfileConnections)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -15,19 +15,19 @@ import HapticUtils from "HapticUtils" /* 5198 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import useToken from "useToken" /* 5238 */;
 import ToastUtils from "ToastUtils" /* 5648 */;
-import TableRow2 from "TableRow" /* 6889 */;
-import TableRowGroup from "TableRowGroup" /* 6973 */;
-import Constants2 from "Constants" /* 7260 */;
-import ClipboardUtils from "ClipboardUtils" /* 7269 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8828 */;
-import ConnectionMetadataVanityItems from "ConnectionMetadataVanityItems" /* 11234 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11239 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11240 */;
-import useUserProfileApplicationRoleConnectionsDefault from "useUserProfileApplicationRoleConnections" /* 14354 */;
+import TableRow2 from "TableRow" /* 6888 */;
+import TableRowGroup from "TableRowGroup" /* 6972 */;
+import Constants2 from "Constants" /* 7261 */;
+import ClipboardUtils from "ClipboardUtils" /* 7270 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8835 */;
+import ConnectionMetadataVanityItems from "ConnectionMetadataVanityItems" /* 11243 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11248 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11249 */;
+import useUserProfileApplicationRoleConnectionsDefault from "useUserProfileApplicationRoleConnections" /* 14368 */;
 import react_mod from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
 import StreamerModeStore from "StreamerModeStore" /* 5019 */;
-import Constants_mod from "Constants" /* 7288 */;
+import Constants_mod from "Constants" /* 7289 */;
 import Constants_mod2 from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import native_mod from "native" /* 1202 */;
@@ -37,7 +37,6 @@ import size from "module_2" /* 2 */;
 
 let copyResult, dependencyMap, handleClickResult, obj1;
 
-let CARD_PADDING;
 let c10;
 let c9;
 let closure_12;
@@ -49,9 +48,8 @@ let native;
 let obj2;
 let obj3;
 let obj4;
-let obj5;
 let tmp5;
-const UserProfileCardDefault = tmp5(7287);
+const UserProfileCardDefault = tmp5(7288);
 function generateMetadataForPlatform(arg0) {
   let accountType;
   let metadata;
@@ -89,7 +87,7 @@ function generateMetadataForPlatform(arg0) {
 let react = react_mod;
 const View = react_native.View;
 let Constants = Constants_mod2;
-({ CARD_ROWS_ICON_SIZE: metroImportDefault, CARD_ROWS_ICON_SIZE_VARIANT: metroImportAll, CARD_PADDING } = Constants);
+({ CARD_ROWS_ICON_SIZE: metroImportDefault, CARD_ROWS_ICON_SIZE_VARIANT: metroImportAll } = Constants);
 Constants = Constants_mod2;
 ({ AnalyticEvents: c9, PlatformTypes: c10 } = Constants);
 const MetadataFields = Constants2.MetadataFields;
@@ -98,12 +96,11 @@ const REFRESH_SMALL_16 = native.Icon.Sizes.REFRESH_SMALL_16;
 native = native_mod;
 const iconSize = native.getIconSize(REFRESH_SMALL_16);
 let createStyles = createStyles_mod;
-let obj = { cardContainer: obj2, refreshCardTitle: obj3, connectedAccountName: { flexDirection: "row", alignItems: "center", columnGap: 4 }, linkIcon: { marginEnd: 4 }, connectedAccountNameText: { flexShrink: 1 }, verifiedIconContainer: { height: iconSize, width: iconSize }, verifiedIcon: { position: "absolute", left: 0, top: 0 }, connectionMetadata: { flexDirection: "row", flexWrap: "wrap", alignItems: "center", overflow: "hidden" }, metadataItem: obj4, poweredByContainer: { flexDirection: "row", alignItems: "center", marginTop: 6 }, applicationIcon: obj5 };
-obj2 = { paddingBottom: CARD_PADDING - 12 };
-obj3 = { marginBottom: nativeDefault.space.PX_8 };
+let obj = { refreshCardTitle: obj2, connectedAccountName: { flexDirection: "row", alignItems: "center", columnGap: 4 }, linkIcon: { marginEnd: 4 }, connectedAccountNameText: { flexShrink: 1 }, verifiedIconContainer: { height: iconSize, width: iconSize }, verifiedIcon: { position: "absolute", left: 0, top: 0 }, connectionMetadata: { flexDirection: "row", flexWrap: "wrap", alignItems: "center", overflow: "hidden" }, metadataItem: obj3, poweredByContainer: { flexDirection: "row", alignItems: "center", marginTop: 6 }, applicationIcon: obj4 };
+obj2 = { marginBottom: nativeDefault.space.PX_8 };
 createStyles = createStyles.createStyles;
-obj4 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
-obj5 = { borderRadius: native.getIconSize(native.Icon.Sizes.MEDIUM) };
+obj3 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
+obj4 = { borderRadius: native.getIconSize(native.Icon.Sizes.MEDIUM) };
 native = native_mod;
 let closure_16 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -268,7 +265,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function U
                         let obj7;
                         let name;
                         const tmp34 = cResult[23];
-                        class H {
+                        class B {
                           constructor() {
                             tmp = trackUserProfileAction({ action: "COPY_CONNECTED_ACCOUNT" });
                             obj = closure_0(closure_2[25]);
@@ -297,7 +294,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function U
                               tmp6 = account;
                               tmp7 = PlatformTypes;
                               obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                              obj1.onConfirm = function onConfirm() { /* body not rendered: F150318 */ };
+                              obj1.onConfirm = function onConfirm() { /* body not rendered: F150555 */ };
                               handleClickResult = obj.handleClick(obj1);
                             }
                             return;
@@ -314,7 +311,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function U
                           }
                           if (cResult[30] !== tmp46) {
                             const tmp46Result = tmp46();
-                            class H {
+                            class B {
                               constructor() {
                                 tmp = trackUserProfileAction({ action: "COPY_CONNECTED_ACCOUNT" });
                                 obj = closure_0(closure_2[25]);
@@ -328,7 +325,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function U
                             }
                             cResult[31] = tmp46Result;
                           }
-                          class H {
+                          class B {
                             constructor() {
                               tmp = trackUserProfileAction({ action: "COPY_CONNECTED_ACCOUNT" });
                               obj = closure_0(closure_2[25]);
@@ -354,7 +351,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function U
                                 tmp6 = account;
                                 tmp7 = PlatformTypes;
                                 obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                                obj1.onConfirm = function onConfirm() { /* body not rendered: F150318 */ };
+                                obj1.onConfirm = function onConfirm() { /* body not rendered: F150555 */ };
                                 handleClickResult = obj.handleClick(obj1);
                               }
                               return;
@@ -439,7 +436,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function U
                         tmp46 = Y;
                       }
                     }
-                    class H {
+                    class B {
                       constructor() {
                         tmp = trackUserProfileAction({ action: "COPY_CONNECTED_ACCOUNT" });
                         obj = closure_0(closure_2[25]);
@@ -469,7 +466,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function U
                           tmp6 = account;
                           tmp7 = PlatformTypes;
                           obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                          obj1.onConfirm = function onConfirm() { /* body not rendered: F150318 */ };
+                          obj1.onConfirm = function onConfirm() { /* body not rendered: F150555 */ };
                           handleClickResult = obj.handleClick(obj1);
                         }
                         return;
@@ -482,7 +479,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function U
                       if (cResult[25] !== tmp9) {
                         let intl = tmp(tmp2[28]).intl;
                         let formatToPlainString = intl.formatToPlainString;
-                        class H {
+                        class B {
                           constructor() {
                             tmp = trackUserProfileAction({ action: "COPY_CONNECTED_ACCOUNT" });
                             obj = closure_0(closure_2[25]);
@@ -509,7 +506,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function U
                               tmp6 = account;
                               tmp7 = PlatformTypes;
                               obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                              obj1.onConfirm = function onConfirm() { /* body not rendered: F150318 */ };
+                              obj1.onConfirm = function onConfirm() { /* body not rendered: F150555 */ };
                               handleClickResult = obj.handleClick(obj1);
                             }
                             return;
@@ -532,7 +529,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function U
                     cResult[24] = arr2;
                     obj7 = arr2;
                   }
-                  class H {
+                  class B {
                     constructor() {
                       tmp = trackUserProfileAction({ action: "COPY_CONNECTED_ACCOUNT" });
                       obj = closure_0(closure_2[25]);
@@ -558,13 +555,13 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function U
                         tmp6 = account;
                         tmp7 = PlatformTypes;
                         obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                        obj1.onConfirm = function onConfirm() { /* body not rendered: F150318 */ };
+                        obj1.onConfirm = function onConfirm() { /* body not rendered: F150555 */ };
                         handleClickResult = obj.handleClick(obj1);
                       }
                       return;
                     }
                   }
-                  cResult[20] = H;
+                  cResult[20] = B;
                 }
               }
             }
@@ -581,7 +578,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function U
                   tmp6 = account;
                   tmp7 = PlatformTypes;
                   obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                  obj1.onConfirm = function onConfirm() { /* body not rendered: F150318 */ };
+                  obj1.onConfirm = function onConfirm() { /* body not rendered: F150555 */ };
                   handleClickResult = obj.handleClick(obj1);
                 }
                 return;
@@ -600,7 +597,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function U
           const source = makeSource(tmp26);
           if (tmp22 != null) {
             const getPlatformUserUrl = tmp22.getPlatformUserUrl;
-            class H {
+            class B {
               constructor() {
                 tmp = trackUserProfileAction({ action: "COPY_CONNECTED_ACCOUNT" });
                 obj = closure_0(closure_2[25]);
@@ -629,7 +626,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function U
   }
   if (undefined === showMetadata || showMetadata) {
     tmp(trackUserProfileAction[19]);
-    class H {
+    class B {
       constructor() {
         tmp = trackUserProfileAction({ action: "COPY_CONNECTED_ACCOUNT" });
         obj = closure_0(closure_2[25]);
@@ -644,7 +641,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function U
   }
   if (undefined === showMetadata || showMetadata) {
     let obj3 = { accountType: null, metadata, style: tmp5.metadataItem };
-    class H {
+    class B {
       constructor() {
         tmp = trackUserProfileAction({ action: "COPY_CONNECTED_ACCOUNT" });
         obj = closure_0(closure_2[25]);
@@ -669,7 +666,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function U
           tmp6 = account;
           tmp7 = PlatformTypes;
           obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-          obj1.onConfirm = function onConfirm() { /* body not rendered: F150318 */ };
+          obj1.onConfirm = function onConfirm() { /* body not rendered: F150555 */ };
           handleClickResult = obj.handleClick(obj1);
         }
         return;
@@ -902,7 +899,7 @@ let closure_20 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   application = application.application;
   const identity = application.identity;
   const tmp4 = closure_16();
-  let obj2 = trackUserProfileAction(8652);
+  let obj2 = trackUserProfileAction(8659);
   trackUserProfileAction = obj2.useUserProfileAnalyticsContext().trackUserProfileAction;
   if (cResult[0] !== application) {
     const iconSource = application.getIconSource(closure_7);
@@ -961,24 +958,13 @@ let closure_20 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
           }
         }
         const obj5 = { label: str, icon: tmp14, onPress: tmp8, onLongPress: tmp8, accessibilityLabel: joined, accessibilityHint: tmp12, accessibilityRole: "button" };
+        const tmp20 = closure_12(trackUserProfileAction(6888).TableRow, obj5);
         cResult[13] = tmp12;
         cResult[14] = joined;
         cResult[15] = tmp8;
         cResult[16] = str;
         cResult[17] = tmp14;
-        const tmp20 = closure_12(trackUserProfileAction(6889).TableRow, obj5);
-        class C {
-          constructor() {
-            tmp = trackUserProfileAction({ action: "COPY_CONNECTED_ACCOUNT" });
-            obj = closure_0(closure_2[25]);
-            result = obj.triggerHapticFeedback(closure_0(closure_2[25]).HapticFeedbackTypes.IMPACT_LIGHT);
-            obj2 = closure_0(closure_2[26]);
-            copyResult = obj2.copy(c1);
-            obj3 = closure_0(closure_2[27]);
-            result1 = obj3.presentCopiedToClipboard();
-            return;
-          }
-        }
+        cResult[18] = tmp20;
         tmp18 = tmp20;
       }
       let tmp15;
@@ -999,22 +985,19 @@ let closure_20 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
     cResult[7] = items;
     obj3 = items;
   }
-  class C {
-    constructor() {
-      tmp = trackUserProfileAction({ action: "COPY_CONNECTED_ACCOUNT" });
-      obj = closure_0(closure_2[25]);
-      result = obj.triggerHapticFeedback(closure_0(closure_2[25]).HapticFeedbackTypes.IMPACT_LIGHT);
-      obj2 = closure_0(closure_2[26]);
-      copyResult = obj2.copy(c1);
-      obj3 = closure_0(closure_2[27]);
-      result1 = obj3.presentCopiedToClipboard();
-      return;
-    }
-  }
+  const fn = function f() {
+    trackUserProfileAction({ action: "COPY_CONNECTED_ACCOUNT" });
+    const obj = HapticUtils;
+    const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_LIGHT);
+    const obj2 = ClipboardUtils;
+    obj2.copy(str);
+    const obj3 = ToastUtils;
+    const result1 = obj3.presentCopiedToClipboard();
+  };
   cResult[2] = str;
   cResult[3] = trackUserProfileAction;
-  cResult[4] = C;
-  tmp8 = C;
+  cResult[4] = fn;
+  tmp8 = fn;
 }) : (function UserAccountApplicationConnection(application) {
   let tmp8Result;
   application = application.application;
@@ -1266,7 +1249,7 @@ const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (functi
   items[2] = authStore2(View, obj7);
   let name = applicationRoleConnection.platform_name;
   const tmp5Result = tmp5(tmp6, obj6);
-  const TableRow = tmp2(6889).TableRow;
+  const TableRow = tmp2(6888).TableRow;
   if (name == null) {
     name = applicationRoleConnection.platform_username;
   }
@@ -1289,7 +1272,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
   let tmp6;
   let tmp9;
   let obj = userId(stateFromStores[13]);
-  const cResult = obj.c(25);
+  const cResult = obj.c(22);
   userId = userId.userId;
   const style = userId.style;
   const tmp4 = closure_16();
@@ -1334,41 +1317,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
       if (cResult[5] === connections) {
         if (cResult[6] === stateFromStores) {
           if (cResult[7] === theme) {
-            if (cResult[15] === style) {
-              let tmp17;
-              if (cResult[16] === tmp4.cardContainer) {
-                tmp17 = cResult[17];
-              }
-              const _Symbol = Symbol;
-              class I {
-                constructor() {
-                  return StreamerModeStore.hidePersonalInformation;
-                }
-              }
-              class M {
-                constructor(account) {
-                  const obj = { account, theme, locale: stateFromStores, userId };
-                  return authStore2(closure_19, obj, account.id);
-                }
-              }
-              if (cResult[21] === tmp4.refreshCardTitle) {
-                if (cResult[22] === tmp17) {
-                  let tmp21;
-                  if (cResult[23] === tmp20) {
-                    tmp21 = cResult[24];
-                  }
-                  return tmp21;
-                }
-              }
-              const obj3 = { style: tmp17, title: tmp19, titleStyle: tmp4.refreshCardTitle, children: tmp20 };
-              const tmp23 = closure_12(tmp13(stateFromStores[37]), obj3);
-              cResult[21] = tmp4.refreshCardTitle;
-              cResult[22] = tmp17;
-              cResult[23] = tmp20;
-              cResult[24] = tmp23;
-              tmp21 = tmp23;
-            }
-            const items2 = [, ];
+            const _Symbol = Symbol;
             class I {
               constructor() {
                 return StreamerModeStore.hidePersonalInformation;
@@ -1380,10 +1329,22 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
                 return authStore2(closure_19, obj, account.id);
               }
             }
-            cResult[15] = style;
-            cResult[16] = tmp4.cardContainer;
-            cResult[17] = items2;
-            tmp17 = items2;
+            if (cResult[18] === style) {
+              if (cResult[19] === tmp4.refreshCardTitle) {
+                let tmp20;
+                if (cResult[20] === tmp19) {
+                  tmp20 = cResult[21];
+                }
+                return tmp20;
+              }
+            }
+            const obj3 = { title: tmp18, style, titleStyle: tmp4.refreshCardTitle, children: tmp19 };
+            const tmp22 = closure_12(tmp13(stateFromStores[37]), obj3);
+            cResult[18] = style;
+            cResult[19] = tmp4.refreshCardTitle;
+            cResult[20] = tmp19;
+            cResult[21] = tmp22;
+            tmp20 = tmp22;
           }
         }
       }
@@ -1409,7 +1370,6 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
   let appIdentities;
   let connections;
   let intl;
-  let items3;
   let locale;
   let locale2;
   let obj5;
@@ -1424,8 +1384,8 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
   const items1 = [StreamerModeStore];
   const obj3 = userId(504);
   const stateFromStores = obj3.useStateFromStores(items1, () => StreamerModeStore.hidePersonalInformation);
-  ({ connections, appIdentities } = theme(14351)(userId));
-  theme(14351)(userId);
+  ({ connections, appIdentities } = theme(14365)(userId));
+  theme(14365)(userId);
   const tmp6 = theme;
   if (!stateFromStores) {
     const items2 = [];
@@ -1438,9 +1398,8 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
       const obj = { identity, application: application.application };
       return closure_1_12(closure_1_20, obj, "" + identity.application_id + "-" + identity.provider_issued_user_id);
     }), arraySpreadResult);
-    const obj4 = { style: items3, title: intl.string(userId(1128).t["3fe7U5"]), titleStyle: tmp2.refreshCardTitle, children: closure_12(userId(6973).TableRowGroup, obj5) };
-    items3 = [tmp2.cardContainer, style];
-    const tmp6Result = tmp6(7287);
+    const obj4 = { title: intl.string(userId(1128).t["3fe7U5"]), style, titleStyle: tmp2.refreshCardTitle, children: closure_12(userId(6972).TableRowGroup, obj5) };
+    const tmp6Result = tmp6(7288);
     intl = tmp3(1128).intl;
     obj5 = { hasIcons: true, children: items2 };
     return closure_12(tmp6Result, obj4);
@@ -1452,7 +1411,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfile
   let tmp6;
   let tmp7;
   let obj = react2;
-  const cResult = obj.c(15);
+  const cResult = obj.c(12);
   style = style.style;
   const userId = style.userId;
   const tmp4 = closure_16();
@@ -1473,6 +1432,8 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfile
   if (!tmpResult.useStateFromStores(tmp6, tmp7)) {
     if (0 !== arr.length) {
       let tmp9;
+      let tmp12;
+      let tmp14;
       if (cResult[2] !== arr) {
         let tmp10;
         const _Symbol = Symbol;
@@ -1493,59 +1454,45 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfile
       } else {
         tmp9 = cResult[3];
       }
-      if (cResult[5] === style) {
-        let tmp12;
-        let tmp13;
-        let tmp15;
-        if (cResult[6] === tmp4.cardContainer) {
-          tmp12 = cResult[7];
-        }
-        const _Symbol2 = Symbol;
-        if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1128).intl;
-          const stringResult = intl.string(intl3.t.PHjkRE);
-          cResult[8] = stringResult;
-          tmp13 = stringResult;
-        } else {
-          tmp13 = cResult[8];
-        }
-        if (cResult[9] !== tmp9) {
-          const obj2 = { hasIcons: true, children: tmp9 };
-          const tmp17 = authStore2(TableRowGroup.TableRowGroup, obj2);
-          cResult[9] = tmp9;
-          cResult[10] = tmp17;
-          tmp15 = tmp17;
-        } else {
-          tmp15 = cResult[10];
-        }
-        if (cResult[11] === tmp4.refreshCardTitle) {
-          if (cResult[12] === tmp12) {
-            let tmp18;
-            if (cResult[13] === tmp15) {
-              tmp18 = cResult[14];
-            }
-            return tmp18;
-          }
-        }
-        const obj3 = { style: tmp12, title: tmp13, titleStyle: tmp4.refreshCardTitle, children: tmp15 };
-        const tmp20 = authStore2(UserProfileCardDefault, obj3);
-        cResult[11] = tmp4.refreshCardTitle;
-        cResult[12] = tmp12;
-        cResult[13] = tmp15;
-        cResult[14] = tmp20;
-        tmp18 = tmp20;
+      const _Symbol2 = Symbol;
+      if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl = tmp(1128).intl;
+        const stringResult = intl.string(intl3.t.PHjkRE);
+        cResult[5] = stringResult;
+        tmp12 = stringResult;
+      } else {
+        tmp12 = cResult[5];
       }
-      const items1 = [tmp4.cardContainer, style];
-      cResult[5] = style;
-      cResult[6] = tmp4.cardContainer;
-      cResult[7] = items1;
-      tmp12 = items1;
+      if (cResult[6] !== tmp9) {
+        const obj2 = { hasIcons: true, children: tmp9 };
+        const tmp16 = authStore2(TableRowGroup.TableRowGroup, obj2);
+        cResult[6] = tmp9;
+        cResult[7] = tmp16;
+        tmp14 = tmp16;
+      } else {
+        tmp14 = cResult[7];
+      }
+      if (cResult[8] === style) {
+        if (cResult[9] === tmp4.refreshCardTitle) {
+          let tmp17;
+          if (cResult[10] === tmp14) {
+            tmp17 = cResult[11];
+          }
+          return tmp17;
+        }
+      }
+      const obj3 = { title: tmp12, style, titleStyle: tmp4.refreshCardTitle, children: tmp14 };
+      const tmp19 = authStore2(UserProfileCardDefault, obj3);
+      cResult[8] = style;
+      cResult[9] = tmp4.refreshCardTitle;
+      cResult[10] = tmp14;
+      cResult[11] = tmp19;
+      tmp17 = tmp19;
     }
   }
   return null;
 }) : (function UserProfileApplicationRoleConnectionsCard(arg0) {
   let intl;
-  let items1;
   let obj3;
   let style;
   let userId;
@@ -1560,8 +1507,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfile
         const obj = { applicationRoleConnection };
         return closure_1_12(closure_1_21, obj, applicationRoleConnection.application.id);
       });
-      const obj2 = { style: items1, title: intl.string(intl3.t.PHjkRE), titleStyle: tmp.refreshCardTitle, children: authStore2(TableRowGroup.TableRowGroup, obj3) };
-      items1 = [tmp.cardContainer, style];
+      const obj2 = { title: intl.string(intl3.t.PHjkRE), style, titleStyle: tmp.refreshCardTitle, children: authStore2(TableRowGroup.TableRowGroup, obj3) };
       const tmp2Result = UserProfileCardDefault;
       intl = tmp4(1128).intl;
       obj3 = { hasIcons: true, children: mapped };

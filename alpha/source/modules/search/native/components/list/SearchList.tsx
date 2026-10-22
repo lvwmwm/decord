@@ -1,37 +1,37 @@
-// Module ID: 17988
-// Function ID: 17989
+// Module ID: 18010
+// Function ID: 18011
 // Name: SearchList
-// Dependencies: [19, 17, 9684, 21, 4969, 17989, 17990, 17991, 18006, 17985, 18008, 18010, 18005, 17992, 18011, 18015, 18016, 18019, 18020, 18021, 18022, 18023, 18024, 17974, 18041, 558, 576, 1633, 17976, 1128, 7206, 18042, 2]
+// Dependencies: [19, 17, 9691, 21, 4969, 18011, 18012, 18013, 18028, 18007, 18030, 18032, 18027, 18014, 18033, 18037, 18038, 18041, 18042, 18043, 18044, 18045, 18046, 17996, 18063, 558, 576, 1633, 17998, 1128, 7205, 18064, 2]
 
-// Module 17988 (SearchList)
+// Module 18010 (SearchList)
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 7206 */;
-import SuggestedSearchRowDefault from "SuggestedSearchRow" /* 17974 */;
-import MediaGridPlaceholderDefault from "MediaGridPlaceholder" /* 17985 */;
-import DMRowDefault from "DMRow" /* 17989 */;
-import rows_GroupDMRowDefault from "rows/GroupDMRow" /* 17990 */;
-import SearchHistoryRowDefault from "SearchHistoryRow" /* 17991 */;
-import GuildVoiceOrStageChannelRowDefault from "GuildVoiceOrStageChannelRow" /* 17992 */;
-import GuildTextChannelRowDefault from "GuildTextChannelRow" /* 18005 */;
-import MediaGridItemDefault from "MediaGridItem" /* 18006 */;
-import FileOrLinkGridPlaceholderDefault from "FileOrLinkGridPlaceholder" /* 18008 */;
-import MediaGridDefault from "MediaGrid" /* 18010 */;
-import MessageRowDefault from "MessageRow" /* 18011 */;
-import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 18015 */;
-import LinkGridItemDefault from "LinkGridItem" /* 18016 */;
-import FileGridItemDefault from "FileGridItem" /* 18019 */;
-import GuildChannelMemberRowDefault from "GuildChannelMemberRow" /* 18020 */;
-import MemberRowPlaceholderDefault from "MemberRowPlaceholder" /* 18021 */;
-import GenericTextRowDefault from "GenericTextRow" /* 18022 */;
-import SearchListSectionDefault from "SearchListSection" /* 18023 */;
-import SmartSearchRowDefault from "SmartSearchRow" /* 18024 */;
-import SuggestedSearchSkeletonDefault from "SuggestedSearchSkeleton" /* 18041 */;
-import smartSearchViewabilityConfig from "smartSearchViewabilityConfig" /* 18042 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7205 */;
+import SuggestedSearchRowDefault from "SuggestedSearchRow" /* 17996 */;
+import MediaGridPlaceholderDefault from "MediaGridPlaceholder" /* 18007 */;
+import DMRowDefault from "DMRow" /* 18011 */;
+import rows_GroupDMRowDefault from "rows/GroupDMRow" /* 18012 */;
+import SearchHistoryRowDefault from "SearchHistoryRow" /* 18013 */;
+import GuildVoiceOrStageChannelRowDefault from "GuildVoiceOrStageChannelRow" /* 18014 */;
+import GuildTextChannelRowDefault from "GuildTextChannelRow" /* 18027 */;
+import MediaGridItemDefault from "MediaGridItem" /* 18028 */;
+import FileOrLinkGridPlaceholderDefault from "FileOrLinkGridPlaceholder" /* 18030 */;
+import MediaGridDefault from "MediaGrid" /* 18032 */;
+import MessageRowDefault from "MessageRow" /* 18033 */;
+import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 18037 */;
+import LinkGridItemDefault from "LinkGridItem" /* 18038 */;
+import FileGridItemDefault from "FileGridItem" /* 18041 */;
+import GuildChannelMemberRowDefault from "GuildChannelMemberRow" /* 18042 */;
+import MemberRowPlaceholderDefault from "MemberRowPlaceholder" /* 18043 */;
+import GenericTextRowDefault from "GenericTextRow" /* 18044 */;
+import SearchListSectionDefault from "SearchListSection" /* 18045 */;
+import SmartSearchRowDefault from "SmartSearchRow" /* 18046 */;
+import SuggestedSearchSkeletonDefault from "SuggestedSearchSkeleton" /* 18063 */;
+import smartSearchViewabilityConfig from "smartSearchViewabilityConfig" /* 18064 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SearchConstants from "SearchConstants" /* 9684 */;
+import SearchConstants from "SearchConstants" /* 9691 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -43,8 +43,8 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-let tmp6;
-const ErrorScreenDefault = tmp6(17976);
+let tmp9;
+const ErrorScreenDefault = tmp9(17998);
 function keyExtractor(type) {
   let key;
   const type2 = type.type;
@@ -249,92 +249,126 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let contentContainerStyle;
   let data;
   let intl;
-  let items;
+  let items1;
   let numColumns;
-  let obj3;
+  let obj4;
   let onEndReached;
-  let tmp14;
-  let tmp6Result;
-  let tmp8;
+  let scrollToTopKey;
+  let tmp11;
+  let tmp17;
+  let tmp18;
+  let tmp5;
+  let tmp6;
+  let tmp9Result;
   const obj = react2;
-  const cResult = obj.c(21);
-  ({ contentContainerStyle, data, onEndReached, ItemSeparatorComponent, ListHeaderComponent, ListFooterComponent, numColumns } = arg0);
+  const cResult = obj.c(25);
+  ({ contentContainerStyle, data, onEndReached, ItemSeparatorComponent, ListHeaderComponent, ListFooterComponent, numColumns, scrollToTopKey } = arg0);
   const ref = react.useRef(null);
-  const tmp5 = closure_10();
-  let num = 0.5;
+  let closure_2 = react.useRef(scrollToTopKey);
+  const obj2 = react;
+  if (cResult[0] !== scrollToTopKey) {
+    const fn = function c() {
+      if (ref.current !== scrollToTopKey) {
+        ref.current = scrollToTopKey;
+        const current = ref.current;
+        if (current != null) {
+          current.scrollToOffset({ offset: 0, animated: false });
+        }
+      }
+    };
+    const items = [scrollToTopKey];
+    cResult[0] = scrollToTopKey;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp6 = items;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+    tmp6 = cResult[2];
+  }
+  const effect = obj2.useEffect(tmp5, tmp6);
+  const tmp8 = closure_10();
+  let num4 = 0.5;
   const bottom = useSafeAreaInsetsDefault().bottom;
   if (null != numColumns) {
-    num = 0.5;
+    num4 = 0.5;
     if (1 !== numColumns) {
-      num = 0.8;
+      num4 = 0.8;
       if (2 !== numColumns) {
         if (numColumns >= 3) {
-          num = 0.99;
+          num4 = 0.99;
         }
       }
     }
   }
-  if (cResult[0] !== (0 === data.length && null == ListFooterComponent && null == ListHeaderComponent)) {
-    let tmp9 = tmp7;
-    if (tmp9) {
-      const obj2 = { style: hasOwnProperty.absoluteFill, children: metroImportAll(tmp6Result, obj3) };
-      obj3 = { text: intl.string(intl2.t.V6nAfF) };
-      tmp6Result = ErrorScreenDefault;
+  if (cResult[3] !== (0 === data.length && null == ListFooterComponent && null == ListHeaderComponent)) {
+    let tmp12 = tmp10;
+    if (tmp12) {
+      const obj3 = { style: hasOwnProperty.absoluteFill, children: metroImportAll(tmp9Result, obj4) };
+      obj4 = { text: intl.string(intl2.t.V6nAfF) };
+      tmp9Result = ErrorScreenDefault;
       intl = tmp(1128).intl;
-      tmp9 = metroImportAll(React3, obj2);
+      tmp12 = metroImportAll(React3, obj3);
     }
-    cResult[0] = 0 === data.length && null == ListFooterComponent && null == ListHeaderComponent;
-    cResult[1] = tmp9;
-    tmp8 = tmp9;
+    cResult[3] = 0 === data.length && null == ListFooterComponent && null == ListHeaderComponent;
+    cResult[4] = tmp12;
+    tmp11 = tmp12;
   } else {
-    tmp8 = cResult[1];
+    tmp11 = cResult[4];
   }
-  if (cResult[2] !== (0 === data.length && null == ListFooterComponent && null == ListHeaderComponent)) {
-    let obj4;
+  if (cResult[5] !== (0 === data.length && null == ListFooterComponent && null == ListHeaderComponent)) {
+    let obj5;
     if (0 === data.length && null == ListFooterComponent && null == ListHeaderComponent) {
-      obj4 = { importantForAccessibility: "no", scrollEnabled: false };
+      obj5 = { importantForAccessibility: "no", scrollEnabled: false };
     }
-    cResult[2] = 0 === data.length && null == ListFooterComponent && null == ListHeaderComponent;
-    cResult[3] = obj4;
-    tmp14 = obj4;
+    cResult[5] = 0 === data.length && null == ListFooterComponent && null == ListHeaderComponent;
+    cResult[6] = obj5;
+    tmp17 = obj5;
   } else {
-    tmp14 = cResult[3];
+    tmp17 = cResult[6];
+  }
+  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj6 = { disabled: true };
+    cResult[7] = obj6;
+    tmp18 = obj6;
+  } else {
+    tmp18 = cResult[7];
   }
   const sum = 16 + bottom;
-  if (cResult[4] === contentContainerStyle) {
-    let tmp16;
-    if (cResult[5] === sum) {
-      tmp16 = cResult[6];
+  if (cResult[8] === contentContainerStyle) {
+    let tmp20;
+    if (cResult[9] === sum) {
+      tmp20 = cResult[10];
     }
-    if (cResult[7] === ItemSeparatorComponent) {
-      if (cResult[8] === ListFooterComponent) {
-        if (cResult[9] === ListHeaderComponent) {
-          if (cResult[10] === data) {
-            if (cResult[11] === numColumns) {
-              if (cResult[12] === onEndReached) {
-                if (cResult[13] === tmp14) {
-                  if (cResult[14] === tmp16) {
-                    let tmp18;
-                    if (cResult[15] === num) {
-                      tmp18 = cResult[16];
+    if (cResult[11] === ItemSeparatorComponent) {
+      if (cResult[12] === ListFooterComponent) {
+        if (cResult[13] === ListHeaderComponent) {
+          if (cResult[14] === data) {
+            if (cResult[15] === numColumns) {
+              if (cResult[16] === onEndReached) {
+                if (cResult[17] === tmp17) {
+                  if (cResult[18] === tmp20) {
+                    let tmp22;
+                    if (cResult[19] === num4) {
+                      tmp22 = cResult[20];
                     }
-                    if (cResult[17] === tmp5.container) {
-                      if (cResult[18] === tmp8) {
-                        let tmp24;
-                        if (cResult[19] === tmp18) {
-                          tmp24 = cResult[20];
+                    if (cResult[21] === tmp8.container) {
+                      if (cResult[22] === tmp11) {
+                        let tmp28;
+                        if (cResult[23] === tmp22) {
+                          tmp28 = cResult[24];
                         }
-                        return tmp24;
+                        return tmp28;
                       }
                     }
-                    const obj5 = { style: tmp5.container, children: items };
-                    items = [tmp8, tmp18];
-                    const tmp27 = React4(React3, obj5);
-                    cResult[17] = tmp5.container;
-                    cResult[18] = tmp8;
-                    cResult[19] = tmp18;
-                    cResult[20] = tmp27;
-                    tmp24 = tmp27;
+                    const obj7 = { style: tmp8.container, children: items1 };
+                    items1 = [tmp11, tmp22];
+                    const tmp31 = React4(React3, obj7);
+                    cResult[21] = tmp8.container;
+                    cResult[22] = tmp11;
+                    cResult[23] = tmp22;
+                    cResult[24] = tmp31;
+                    tmp28 = tmp31;
                   }
                 }
               }
@@ -343,27 +377,27 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
     }
-    const obj6 = { ref, overrideProps: tmp14, keyboardDismissMode: "on-drag", keyboardShouldPersistTaps: "handled", data, renderItem, onEndReachedThreshold: num, onEndReached, scrollsToTop: true, contentContainerStyle: tmp16, keyExtractor, getItemType, ListHeaderComponent, ListFooterComponent, ItemSeparatorComponent, numColumns, viewabilityConfigCallbackPairs: smartSearchViewabilityConfig.smartSearchViewabilityConfig };
-    const AnimatedFlashList = tmp(7206).AnimatedFlashList;
-    const tmp23 = metroImportAll(AnimatedFlashList, obj6);
-    cResult[7] = ItemSeparatorComponent;
-    cResult[8] = ListFooterComponent;
-    cResult[9] = ListHeaderComponent;
-    cResult[10] = data;
-    cResult[11] = numColumns;
-    cResult[12] = onEndReached;
-    cResult[13] = tmp14;
-    cResult[14] = tmp16;
-    cResult[15] = num;
-    cResult[16] = tmp23;
-    tmp18 = tmp23;
+    const obj8 = { ref, overrideProps: tmp17, keyboardDismissMode: "on-drag", keyboardShouldPersistTaps: "handled", data, renderItem, onEndReachedThreshold: num4, onEndReached, scrollsToTop: true, maintainVisibleContentPosition: tmp18, contentContainerStyle: tmp20, keyExtractor, getItemType, ListHeaderComponent, ListFooterComponent, ItemSeparatorComponent, numColumns, viewabilityConfigCallbackPairs: smartSearchViewabilityConfig.smartSearchViewabilityConfig };
+    const AnimatedFlashList = tmp(7205).AnimatedFlashList;
+    const tmp27 = metroImportAll(AnimatedFlashList, obj8);
+    cResult[11] = ItemSeparatorComponent;
+    cResult[12] = ListFooterComponent;
+    cResult[13] = ListHeaderComponent;
+    cResult[14] = data;
+    cResult[15] = numColumns;
+    cResult[16] = onEndReached;
+    cResult[17] = tmp17;
+    cResult[18] = tmp20;
+    cResult[19] = num4;
+    cResult[20] = tmp27;
+    tmp22 = tmp27;
   }
-  const obj7 = { paddingBottom: sum };
+  const obj9 = { paddingBottom: sum };
   const merged = Object.assign(contentContainerStyle);
-  cResult[4] = contentContainerStyle;
-  cResult[5] = sum;
-  cResult[6] = obj7;
-  tmp16 = obj7;
+  cResult[8] = contentContainerStyle;
+  cResult[9] = sum;
+  cResult[10] = obj9;
+  tmp20 = obj9;
 }) : (function SearchList(arg0) {
   let ItemSeparatorComponent;
   let ListFooterComponent;
@@ -371,18 +405,30 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let contentContainerStyle;
   let data;
   let intl;
-  let items;
+  let items1;
   let numColumns;
   let obj3;
   let obj5;
   let obj6;
   let onEndReached;
-  let tmp3Result;
-  ({ contentContainerStyle, data, ListHeaderComponent, ListFooterComponent, numColumns } = arg0);
+  let scrollToTopKey;
+  let tmp4Result;
+  ({ contentContainerStyle, data, ListHeaderComponent, ListFooterComponent, numColumns, scrollToTopKey } = arg0);
   ({ onEndReached, ItemSeparatorComponent } = arg0);
-  let num = 0.5;
   const ref = react.useRef(null);
-  const tmp2 = closure_10();
+  let closure_2 = react.useRef(scrollToTopKey);
+  const items = [scrollToTopKey];
+  const effect = react.useEffect(() => {
+    if (ref.current !== scrollToTopKey) {
+      ref.current = scrollToTopKey;
+      const current = ref.current;
+      if (current != null) {
+        current.scrollToOffset({ offset: 0, animated: false });
+      }
+    }
+  }, items);
+  let num = 0.5;
+  const tmp3 = closure_10();
   const bottom = useSafeAreaInsetsDefault().bottom;
   if (null != numColumns) {
     num = 0.5;
@@ -395,28 +441,28 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
     }
   }
-  let tmp8 = tmp5;
-  const obj = { style: tmp2.container, children: items };
-  const tmp6 = React4;
+  let tmp9 = tmp6;
+  const obj = { style: tmp3.container, children: items1 };
+  const tmp7 = React4;
   if (0 === data.length && null == ListFooterComponent && null == ListHeaderComponent) {
-    const obj2 = { style: hasOwnProperty.absoluteFill, children: metroImportAll(tmp3Result, obj3) };
+    const obj2 = { style: hasOwnProperty.absoluteFill, children: metroImportAll(tmp4Result, obj3) };
     obj3 = { text: intl.string(intl2.t.V6nAfF) };
-    tmp3Result = ErrorScreenDefault;
+    tmp4Result = ErrorScreenDefault;
     intl = intl2.intl;
-    tmp8 = metroImportAll(tmp7, obj2);
+    tmp9 = metroImportAll(tmp8, obj2);
   }
-  items = [tmp8, ];
-  const obj4 = { ref, overrideProps: obj5, keyboardDismissMode: "on-drag", keyboardShouldPersistTaps: "handled", data, renderItem, onEndReachedThreshold: num, onEndReached, scrollsToTop: true, contentContainerStyle: obj6, keyExtractor, getItemType, ListHeaderComponent, ListFooterComponent, ItemSeparatorComponent, numColumns, viewabilityConfigCallbackPairs: smartSearchViewabilityConfig.smartSearchViewabilityConfig };
+  items1 = [tmp9, ];
+  const obj4 = { ref, overrideProps: obj5, keyboardDismissMode: "on-drag", keyboardShouldPersistTaps: "handled", data, renderItem, onEndReachedThreshold: num, onEndReached, scrollsToTop: true, maintainVisibleContentPosition: { disabled: true }, contentContainerStyle: obj6, keyExtractor, getItemType, ListHeaderComponent, ListFooterComponent, ItemSeparatorComponent, numColumns, viewabilityConfigCallbackPairs: smartSearchViewabilityConfig.smartSearchViewabilityConfig };
   obj5 = undefined;
   const AnimatedFlashList = defaultMVCPConfig.AnimatedFlashList;
-  const tmp13 = metroImportAll;
+  const tmp14 = metroImportAll;
   if (0 === data.length && null == ListFooterComponent && null == ListHeaderComponent) {
     obj5 = { importantForAccessibility: "no", scrollEnabled: false };
   }
   obj6 = { paddingBottom: 16 + bottom };
   const merged = Object.assign(contentContainerStyle);
-  items[1] = tmp13(AnimatedFlashList, obj4);
-  return tmp6(React3, obj);
+  items1[1] = tmp14(AnimatedFlashList, obj4);
+  return tmp7(React3, obj);
 }));
 const result = size.fileFinishedImporting("modules/search/native/components/list/SearchList.tsx");
 

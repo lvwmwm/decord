@@ -1,24 +1,24 @@
-// Module ID: 9326
-// Function ID: 9327
+// Module ID: 9333
+// Function ID: 9334
 // Name: CollectiblesShopCardV2
-// Dependencies: [19, 17, 1207, 7634, 1089, 21, 4969, 587, 558, 576, 9327, 7645, 9328, 8640, 9331, 9332, 1128, 5649, 7237, 9389, 9391, 4976, 504, 7646, 5220, 9392, 9395, 9397, 9394, 9398, 9400, 9405, 9416, 6894, 9329, 5196, 8638, 2053, 9403, 9440, 9441, 1281, 2]
+// Dependencies: [19, 17, 1207, 7635, 1089, 21, 4969, 587, 558, 576, 9334, 7646, 9335, 8647, 9338, 9339, 1128, 5649, 7238, 9396, 9398, 4976, 504, 7647, 5220, 9399, 9402, 9404, 9401, 9405, 9407, 9412, 9423, 6893, 9336, 5196, 8645, 2053, 9410, 9447, 9448, 1281, 2]
 
-// Module 9326 (CollectiblesShopCardV2)
+// Module 9333 (CollectiblesShopCardV2)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5649 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7645 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7646 */;
-import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 8638 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9329 */;
-import DiceIcon from "DiceIcon" /* 9395 */;
-import LimitedTimeBadgeDefault from "LimitedTimeBadge" /* 9397 */;
-import OrbsIcon from "OrbsIcon" /* 9398 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7646 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7647 */;
+import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 8645 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9336 */;
+import DiceIcon from "DiceIcon" /* 9402 */;
+import LimitedTimeBadgeDefault from "LimitedTimeBadge" /* 9404 */;
+import OrbsIcon from "OrbsIcon" /* 9405 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7634 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7635 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;

@@ -1,10 +1,10 @@
-// Module ID: 12274
-// Function ID: 12275
+// Module ID: 12285
+// Function ID: 12286
 // Name: conjureTipImpressions
 // Dependencies: [2]
 // Exports: conjureTipShownAt, countOwnMessagesSince, isConjureTipCoolingDown, recordConjureTipImpression
 
-// Module 12274 (conjureTipImpressions)
+// Module 12285 (conjureTipImpressions)
 import size from "module_2" /* 2 */;
 
 const map = new Map();

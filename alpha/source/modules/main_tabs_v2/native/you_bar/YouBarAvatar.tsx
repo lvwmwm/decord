@@ -1,9 +1,9 @@
-// Module ID: 17731
-// Function ID: 17732
+// Module ID: 17753
+// Function ID: 17754
 // Name: YouBarAvatar
-// Dependencies: [5, 32, 19, 17, 4970, 6484, 1392, 16334, 1087, 21, 4969, 587, 558, 576, 504, 1202, 5023, 5038, 6768, 9375, 5233, 5238, 9374, 8619, 5198, 7474, 2002, 5283, 2]
+// Dependencies: [5, 32, 19, 17, 4970, 6483, 1392, 16357, 1087, 21, 4969, 587, 558, 576, 504, 1202, 5023, 5038, 6767, 9382, 5233, 5238, 9381, 8626, 5198, 7475, 2002, 5283, 2]
 
-// Module 17731 (YouBarAvatar)
+// Module 17753 (YouBarAvatar)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import native from "native" /* 1202 */;
@@ -11,15 +11,15 @@ import native2 from "native" /* 5023 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
 import spring from "spring" /* 5233 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5283 */;
-import ClipView from "ClipView" /* 9375 */;
+import ClipView from "ClipView" /* 9382 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6484 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6483 */;
 import UserStore from "UserStore" /* 1392 */;
-import YouBarConstants from "YouBarConstants" /* 16334 */;
+import YouBarConstants from "YouBarConstants" /* 16357 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -712,7 +712,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouBar
           tmp24 = tmp26;
         }
       }
-      const obj4 = { user: stateFromStores, guildId: "Array", size: tmp27, animate: true, needsOffscreenAlphaCompositing: null, avatarDecoration, status: OFFLINE, autoStatusCutout: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi" };
+      const obj4 = { user: stateFromStores, guildId: "Array", size: tmp27, animate: true, needsOffscreenAlphaCompositing: null, avatarDecoration, status: OFFLINE, autoStatusCutout: "/assets/.cache/intl/bW9kdWxlcy9naWZ0X2NhcmRzL21lc3NhZ2Vz" };
       const tmp23 = closure_22(tmp(sharedValue[15]).Avatar, obj4);
       cResult[11] = avatarDecoration;
       cResult[12] = OFFLINE;
@@ -805,7 +805,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouBar
     const obj5 = { style: items3, children: closure_22(Avatar, obj6) };
     items3 = [rect, animatedStyle];
     const View = cleanup(tmp2[17]).View;
-    obj6 = { user: stateFromStores, guildId: "Array", size: size2, animate: true, needsOffscreenAlphaCompositing: null, avatarDecoration, status: OFFLINE, autoStatusCutout: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi" };
+    obj6 = { user: stateFromStores, guildId: "Array", size: size2, animate: true, needsOffscreenAlphaCompositing: null, avatarDecoration, status: OFFLINE, autoStatusCutout: "/assets/.cache/intl/bW9kdWxlcy9naWZ0X2NhcmRzL21lc3NhZ2Vz" };
     Avatar = tmp(tmp2[15]).Avatar;
     if (OFFLINE === StatusTypes.UNKNOWN) {
       OFFLINE = StatusTypes.OFFLINE;

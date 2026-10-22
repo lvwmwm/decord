@@ -1,13 +1,13 @@
-// Module ID: 17631
-// Function ID: 17632
+// Module ID: 17653
+// Function ID: 17654
 // Name: GuildsBarDnDStore
-// Dependencies: [6687, 1269, 5038, 1274, 1257, 558, 576, 4884, 2]
+// Dependencies: [6686, 1269, 5038, 1274, 1257, 558, 576, 4884, 2]
 
-// Module 17631 (GuildsBarDnDStore)
+// Module 17653 (GuildsBarDnDStore)
 import react from "react" /* 576 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import react_native from "react-native" /* 1274 */;
-import SortedGuildStore from "SortedGuildStore" /* 6687 */;
+import SortedGuildStore from "SortedGuildStore" /* 6686 */;
 import module_1269 from "module_1269" /* 1269 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -79,7 +79,7 @@ const withEqualityFn = module_1269.createWithEqualityFn((arg0, arg1) => {
       } else {
         const obj4 = dropSpecs(tmp2[3]);
         obj4.batchUpdates(() => {
-          const obj = { dropSpecs, dragSpecs: "r", overSpecs: "toCharArray$esjava$1" };
+          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "toCharArray$esjava$1" };
           return dropSpecs(obj);
         });
         const _clearTimeout = clearTimeout;
@@ -110,7 +110,7 @@ const withEqualityFn = module_1269.createWithEqualityFn((arg0, arg1) => {
       obj.addBreadcrumb(obj2);
       if (null != dropSpecs) {
         const obj4 = react_native;
-        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "Array" }));
+        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "r" }));
         const _clearTimeout = clearTimeout;
         clearTimeout(c5);
         if (null == dragSpecs) {

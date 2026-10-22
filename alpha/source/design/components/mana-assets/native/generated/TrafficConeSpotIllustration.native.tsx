@@ -1,28 +1,28 @@
-// Module ID: 6977
-// Function ID: 6978
+// Module ID: 6976
+// Function ID: 6977
 // Name: TrafficConeSpotIllustration
-// Dependencies: [19, 21, 6978, 6979, 6980, 558, 576, 6981, 5655, 2]
+// Dependencies: [19, 21, 6977, 6978, 6979, 558, 576, 6980, 5655, 2]
 
-// Module 6977 (TrafficConeSpotIllustration)
+// Module 6976 (TrafficConeSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5655 */;
+import _modDef6977 from "module_6977" /* 6977 */;
 import _modDef6978 from "module_6978" /* 6978 */;
 import _modDef6979 from "module_6979" /* 6979 */;
-import _modDef6980 from "module_6980" /* 6980 */;
-import react_native from "react-native" /* 6981 */;
+import react_native from "react-native" /* 6980 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef6978 };
+let obj2 = { uri: _modDef6977 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef6979 };
+let obj3 = { uri: _modDef6978 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef6980 };
-({ uri: _modDef6980 });
+obj[3] = { uri: _modDef6979 };
+({ uri: _modDef6979 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TrafficConeSpotIllustration(arg0) {
   let accessibilityLabel;
   let accessible;

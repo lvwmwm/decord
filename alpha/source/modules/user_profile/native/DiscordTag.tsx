@@ -1,14 +1,14 @@
-// Module ID: 9102
-// Function ID: 9103
+// Module ID: 9109
+// Function ID: 9110
 // Name: DiscordTag
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5220, 9103, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5220, 9110, 2]
 
-// Module 9102 (DiscordTag)
+// Module 9109 (DiscordTag)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import BotTagDefault from "BotTag" /* 9103 */;
+import BotTagDefault from "BotTag" /* 9110 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;

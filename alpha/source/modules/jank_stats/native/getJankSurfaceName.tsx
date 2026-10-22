@@ -1,17 +1,19 @@
-// Module ID: 17335
-// Function ID: 17336
+// Module ID: 17357
+// Function ID: 17358
 // Name: getJankSurfaceName
-// Dependencies: [19, 5197, 17331, 17330, 5139, 17334, 2]
+// Dependencies: [19, 5197, 17353, 17352, 5139, 17356, 2]
 // Exports: attachJankActionSheetReporter, getJankSurfaceName, recordJankChannelDetailsOpen, setJankChannelDetailsOpen, setJankPanelOpen, setJankVoicePanelFocus, setJankVoicePanelTab
 
-// Module 17335 (getJankSurfaceName)
+// Module 17357 (getJankSurfaceName)
 import useChatLayout from "useChatLayout" /* 5139 */;
-import getJankScreenName from "getJankScreenName" /* 17330 */;
-import react_nativeDefault from "react-native" /* 17334 */;
+import getJankScreenName from "getJankScreenName" /* 17352 */;
+import react_nativeDefault from "react-native" /* 17356 */;
 import react from "react" /* 19 */;
 import ActionSheetStore from "ActionSheetStore" /* 5197 */;
-import JankScreenConstants from "JankScreenConstants" /* 17331 */;
+import JankScreenConstants from "JankScreenConstants" /* 17353 */;
 import size from "module_2" /* 2 */;
+
+let importDefault;
 
 let hasOwnProperty;
 let metroImportAll;
@@ -192,20 +194,25 @@ export const setJankVoicePanelFocus = function setJankVoicePanelFocus(arg0) {
   }
 };
 export const attachJankActionSheetReporter = function attachJankActionSheetReporter() {
-  let tmp = c15;
+  let atResult;
+  const tmp = c15;
   if (!tmp) {
     c15 = true;
-    let tmp2 = ActionSheetStore;
-    let length = ActionSheetStore.getStack().length;
+    const length = ActionSheetStore.getStack().length;
+    let stack = ActionSheetStore.getStack();
+    importDefault = stack.at(-1);
     ActionSheetStore.addChangeListener(() => {
-      length = ActionSheetStore.getStack().length;
-      const tmp = length < length;
-      const tmp2 = composeJankSurfaceName(getJankScreenName.getBaseScreenName);
-      const obj = react_nativeDefault;
-      if (tmp) {
-        obj.surfaceClosed(tmp2);
-      } else {
-        obj.setScreenContext(tmp2, metroRequire);
+      const stack = ActionSheetStore.getStack();
+      importDefault = stack.at(-1);
+      if (stack.length !== length) {
+        const tmp4 = stack.length < stack.length;
+        const tmp8 = composeJankSurfaceName(getJankScreenName.getBaseScreenName);
+        const obj = react_nativeDefault;
+        if (tmp4) {
+          obj.surfaceClosed(tmp8);
+        } else {
+          obj.setScreenContext(tmp8, metroRequire);
+        }
       }
     });
   }

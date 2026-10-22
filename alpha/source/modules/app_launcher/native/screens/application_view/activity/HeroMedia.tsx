@@ -1,16 +1,16 @@
-// Module ID: 12015
-// Function ID: 12016
+// Module ID: 12026
+// Function ID: 12027
 // Name: HeroMedia
-// Dependencies: [19, 4970, 1504, 21, 4969, 558, 576, 11134, 11453, 504, 7241, 11976, 1128, 8763, 2]
+// Dependencies: [19, 4970, 1504, 21, 4969, 558, 576, 11143, 11464, 504, 7242, 11990, 1128, 8770, 2]
 
-// Module 12015 (HeroMedia)
+// Module 12026 (HeroMedia)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7241 */;
-import common_VideoDefault from "common/Video" /* 8763 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11453 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7242 */;
+import common_VideoDefault from "common/Video" /* 8770 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11464 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -19,8 +19,8 @@ import size_mod from "module_2" /* 2 */;
 
 let tmp;
 let tmp2;
-const useDefaultAppLauncherWidth = tmp(11134);
-const getPreviewVideoAssetUrlDefault = tmp2(11976);
+const useDefaultAppLauncherWidth = tmp(11143);
+const getPreviewVideoAssetUrlDefault = tmp2(11990);
 const DEFAULT_CONTENT_PADDING = AppLauncherNativeConstants.DEFAULT_CONTENT_PADDING;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ mediaBackground: { backgroundColor: "black" } });
@@ -286,7 +286,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeroMedia(ar
       }
       let tmp22 = null;
       if (null != prop2) {
-        tmp22 = tmp10(11976)(applicationId, prop.activity_preview_video_asset_id);
+        tmp22 = tmp10(11990)(applicationId, prop.activity_preview_video_asset_id);
       }
       cResult[10] = applicationId;
       cResult[11] = prop;

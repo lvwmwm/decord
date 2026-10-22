@@ -1,9 +1,9 @@
-// Module ID: 19020
-// Function ID: 19021
+// Module ID: 19043
+// Function ID: 19044
 // Name: GuildSettingsRoleItem
-// Dependencies: [5, 19, 17, 1087, 21, 4969, 587, 5220, 558, 576, 5975, 7266, 5896, 1128, 11232, 6816, 5965, 5675, 7943, 7285, 7283, 5244, 1388, 1105, 8959, 8545, 1202, 9833, 8551, 6889, 2]
+// Dependencies: [5, 19, 17, 1087, 21, 4969, 587, 5220, 558, 576, 5974, 7267, 5895, 1128, 11241, 6815, 5964, 5675, 7944, 7286, 7284, 5244, 1388, 1105, 8966, 8546, 1202, 9840, 8552, 6888, 2]
 
-// Module 19020 (GuildSettingsRoleItem)
+// Module 19043 (GuildSettingsRoleItem)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import Text_Text from "Text/Text" /* 5220 */;

@@ -1,14 +1,14 @@
-// Module ID: 12454
-// Function ID: 12455
+// Module ID: 12464
+// Function ID: 12465
 // Name: ImagesIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 12455, 5654, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 12465, 5654, 2]
 
-// Module 12454 (ImagesIcon)
+// Module 12464 (ImagesIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5654 */;
-import AssetRegistry from "AssetRegistry" /* 12455 */;
+import AssetRegistry from "AssetRegistry" /* 12465 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

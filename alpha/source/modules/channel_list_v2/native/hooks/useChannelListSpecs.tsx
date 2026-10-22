@@ -1,17 +1,17 @@
-// Module ID: 17456
-// Function ID: 17457
+// Module ID: 17478
+// Function ID: 17479
 // Name: useChannelListSpecs
-// Dependencies: [19, 12003, 558, 576, 17457, 1499, 17344, 5239, 1633, 12014, 2]
+// Dependencies: [19, 12014, 558, 576, 17479, 1499, 17366, 5239, 1633, 12025, 2]
 
-// Module 17456 (useChannelListSpecs)
+// Module 17478 (useChannelListSpecs)
 import react2 from "react" /* 576 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12014 */;
-import useChannelListWidthDefault from "useChannelListWidth" /* 17344 */;
-import RedesignGuildHeader from "RedesignGuildHeader" /* 17457 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12025 */;
+import useChannelListWidthDefault from "useChannelListWidth" /* 17366 */;
+import RedesignGuildHeader from "RedesignGuildHeader" /* 17479 */;
 import react from "react" /* 19 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12003 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12014 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -129,10 +129,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannel
   let closure_2;
   let height;
   let redesignGuildHeaderHeight;
-  let obj = redesignGuildHeaderHeight(17457);
+  let obj = redesignGuildHeaderHeight(17479);
   redesignGuildHeaderHeight = obj.useRedesignGuildHeaderHeight(banner);
   height = height(1499)({ ignoreKeyboard: true }).height;
-  const tmp2 = height(17344)();
+  const tmp2 = height(17366)();
   dependencyMap = tmp2;
   const obj2 = redesignGuildHeaderHeight(5239);
   const fontScale = obj2.useFontScale();

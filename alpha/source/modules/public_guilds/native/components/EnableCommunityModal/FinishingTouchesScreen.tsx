@@ -1,18 +1,18 @@
-// Module ID: 19080
-// Function ID: 19081
+// Module ID: 19103
+// Function ID: 19104
 // Name: FinishingTouchesScreen
-// Dependencies: [32, 19, 17, 8975, 4875, 8391, 1087, 21, 558, 576, 5238, 587, 504, 4906, 8974, 1099, 19022, 19069, 19068, 1128, 5220, 5655, 7279, 19078, 6973, 5964, 2067, 19066, 2]
+// Dependencies: [32, 19, 17, 8982, 4875, 8392, 1087, 21, 558, 576, 5238, 587, 504, 4906, 8981, 1099, 19045, 19092, 19091, 1128, 5220, 5655, 7280, 19101, 6972, 5963, 2067, 19089, 2]
 
-// Module 19080 (FinishingTouchesScreen)
+// Module 19103 (FinishingTouchesScreen)
 import react_native from "react-native" /* 17 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4906 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8974 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8981 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8975 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8982 */;
 import GuildRoleStore from "GuildRoleStore" /* 4875 */;
-import PublicGuildsConstants from "PublicGuildsConstants" /* 8391 */;
+import PublicGuildsConstants from "PublicGuildsConstants" /* 8392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -159,8 +159,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
     } else {
       tmp28 = cResult[7];
     }
-    const tmp29 = defaultMessageNotifications(19069)();
-    const tmpResult2 = tmp(19068);
+    const tmp29 = defaultMessageNotifications(19092)();
+    const tmpResult2 = tmp(19091);
     const enableCommunitySharedStyles = tmpResult2.useEnableCommunitySharedStyles();
     const _Symbol2 = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
@@ -328,8 +328,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
                         tmp79 = cResult[44];
                       }
                       if (cResult[45] !== tmp15) {
-                        const obj11 = { title: tmp77, hasIcons: false, children: closure_15(tmp(7279).TableSwitchRow, obj12) };
-                        const TableRowGroup = tmp(6973).TableRowGroup;
+                        const obj11 = { title: tmp77, hasIcons: false, children: closure_15(tmp(7280).TableSwitchRow, obj12) };
+                        const TableRowGroup = tmp(6972).TableRowGroup;
                         obj12 = { label: tmp79, value: tmp15, onValueChange: tmp16 };
                         const tmp83 = closure_15(TableRowGroup, obj11);
                         cResult[45] = tmp15;
@@ -381,8 +381,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
                               }
                             }
                           }
-                          const obj15 = { headerRef: ref, currentStep: tmp(19066).EnableCommunityModalSteps.STEP_3, onSuccess: tmp28, disableNextStep: !tmp15, buttonText: tmp32, children: items1 };
-                          const EnableCommunityModalScreen = tmp(19066).EnableCommunityModalScreen;
+                          const obj15 = { headerRef: ref, currentStep: tmp(19089).EnableCommunityModalSteps.STEP_3, onSuccess: tmp28, disableNextStep: !tmp15, buttonText: tmp32, children: items1 };
+                          const EnableCommunityModalScreen = tmp(19089).EnableCommunityModalScreen;
                           items1 = [tmp50, tmp84, tmp91];
                           const tmp96 = closure_16(EnableCommunityModalScreen, obj15);
                           cResult[54] = tmp50;
@@ -395,7 +395,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
                       }
                       const obj16 = { spacing: 24, style: tmp54, children: items2 };
                       items2 = [tmp74, tmp81];
-                      const tmp86 = closure_16(tmp(5964).Stack, obj16);
+                      const tmp86 = closure_16(tmp(5963).Stack, obj16);
                       cResult[47] = tmp54;
                       cResult[48] = tmp74;
                       cResult[49] = tmp81;
@@ -404,28 +404,28 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
                     }
                     const obj17 = { hasIcons: false, children: items3 };
                     items3 = [tmp63, tmp71];
-                    const tmp76 = closure_16(tmp(6973).TableRowGroup, obj17);
+                    const tmp76 = closure_16(tmp(6972).TableRowGroup, obj17);
                     cResult[40] = tmp63;
                     cResult[41] = tmp71;
                     cResult[42] = tmp76;
                     tmp74 = tmp76;
                   }
                   const obj18 = { formSwitchDisabled: first1, children: tmp68 };
-                  const tmp73 = closure_15(defaultMessageNotifications(19078), obj18);
+                  const tmp73 = closure_15(defaultMessageNotifications(19101), obj18);
                   cResult[37] = first1;
                   cResult[38] = tmp68;
                   cResult[39] = tmp73;
                   tmp71 = tmp73;
                 }
                 const obj19 = { label: tmp66, value: tmp21, disabled: first1, onValueChange: tmp22 };
-                const tmp70 = closure_15(tmp(7279).TableSwitchRow, obj19);
+                const tmp70 = closure_15(tmp(7280).TableSwitchRow, obj19);
                 cResult[34] = first1;
                 cResult[35] = tmp21;
                 cResult[36] = tmp70;
                 tmp68 = tmp70;
               }
               const obj20 = { formSwitchDisabled: defaultMessageNotifications === ONLY_MENTIONS, children: tmp60 };
-              const tmp65 = closure_15(defaultMessageNotifications(19078), obj20);
+              const tmp65 = closure_15(defaultMessageNotifications(19101), obj20);
               cResult[30] = defaultMessageNotifications === ONLY_MENTIONS;
               cResult[31] = tmp60;
               cResult[32] = tmp65;
@@ -433,7 +433,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
             }
           }
           const obj21 = { label: tmp55, value: prop2 === constants2.ONLY_MENTIONS, disabled: defaultMessageNotifications === ONLY_MENTIONS, onValueChange: tmp26 };
-          const tmp62 = closure_15(tmp(7279).TableSwitchRow, obj21);
+          const tmp62 = closure_15(tmp(7280).TableSwitchRow, obj21);
           cResult[26] = defaultMessageNotifications === ONLY_MENTIONS;
           cResult[27] = tmp26;
           cResult[28] = prop2 === constants2.ONLY_MENTIONS;
@@ -542,7 +542,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
   let tmp14;
   let tmp4Result5;
   let tmp4Result6;
-  const f138662 = (item) => {
+  const f138876 = (item) => {
     const obj = PermissionUtilsAll;
     return obj.canEveryone(item, guild);
   };
@@ -562,8 +562,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
   defaultMessageNotifications = _slicedToArray(useState(prop), 1)[0];
   const ONLY_MENTIONS = constants2.ONLY_MENTIONS;
   [first1, tmp11] = obj.useState(false);
-  [tmp13, tmp14] = _slicedToArray(obj.useState(!closure_10.some(f138662)), 2);
-  const tmp12 = _slicedToArray(obj.useState(!closure_10.some(f138662)), 2);
+  [tmp13, tmp14] = _slicedToArray(obj.useState(!closure_10.some(f138876)), 2);
+  const tmp12 = _slicedToArray(obj.useState(!closure_10.some(f138876)), 2);
   const first2 = _slicedToArray(obj.useState(tmp13), 1)[0];
   let prop1;
   const tmp8 = constants2;
@@ -632,11 +632,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
       }
     }
   }, []);
-  const tmp20 = tmp4(19069)();
-  const tmp2Result = guild(19068);
+  const tmp20 = tmp4(19092)();
+  const tmp2Result = guild(19091);
   const enableCommunitySharedStyles = tmp2Result.useEnableCommunitySharedStyles();
-  let obj4 = { headerRef: ref, currentStep: tmp2(19066).EnableCommunityModalSteps.STEP_3, onSuccess: callback1, disableNextStep: !first1, buttonText: intl.string(tmp2(1128).t.XGl4ba), children: items3 };
-  const EnableCommunityModalScreen = tmp2(19066).EnableCommunityModalScreen;
+  let obj4 = { headerRef: ref, currentStep: tmp2(19089).EnableCommunityModalSteps.STEP_3, onSuccess: callback1, disableNextStep: !first1, buttonText: intl.string(tmp2(1128).t.XGl4ba), children: items3 };
+  const EnableCommunityModalScreen = tmp2(19089).EnableCommunityModalScreen;
   intl = tmp2(1128).intl;
   const obj5 = { style: enableCommunitySharedStyles.content, children: items2 };
   const obj6 = { ref, accessibilityRole: "header", variant: "text-md/semibold", color: "text-subtle", children: intl2.formatToPlainString(guild(1128).t.tInpJj, { number: 3, total: 3 }) };
@@ -655,12 +655,12 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
   items2[3] = closure_15(Text2, obj9);
   items3 = [closure_16(View, obj5), , ];
   const obj10 = { spacing: 24, style: { paddingHorizontal: token }, children: items5 };
-  const Stack = tmp2(5964).Stack;
-  const TableRowGroup = tmp2(6973).TableRowGroup;
+  const Stack = tmp2(5963).Stack;
+  const TableRowGroup = tmp2(6972).TableRowGroup;
   const obj11 = { formSwitchDisabled: defaultMessageNotifications === ONLY_MENTIONS, children: closure_15(TableSwitchRow, obj12) };
   obj12 = { label: intl5.format(guild(1128).t.K8Eg4P, obj13), value: prop2 === tmp8.ONLY_MENTIONS, disabled: defaultMessageNotifications === ONLY_MENTIONS, onValueChange: callback };
-  const tmp4Result = tmp4(19078);
-  TableSwitchRow = tmp2(7279).TableSwitchRow;
+  const tmp4Result = tmp4(19101);
+  TableSwitchRow = tmp2(7280).TableSwitchRow;
   intl5 = tmp2(1128).intl;
   prop2 = undefined;
   obj13 = {
@@ -675,8 +675,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
   items4 = [closure_15(tmp4Result, obj11), ];
   const obj15 = { formSwitchDisabled: first2, children: closure_15(TableSwitchRow2, obj16) };
   obj16 = { label: intl6.format(guild(1128).t.v8qCoG, obj17), value: tmp13, disabled: first2, onValueChange: tmp14 };
-  const tmp4Result4 = tmp4(19078);
-  TableSwitchRow2 = tmp2(7279).TableSwitchRow;
+  const tmp4Result4 = tmp4(19101);
+  TableSwitchRow2 = tmp2(7280).TableSwitchRow;
   intl6 = tmp2(1128).intl;
   obj17 = {
     infoHook() {
@@ -686,10 +686,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
   items4[1] = closure_15(tmp4Result4, obj15);
   items5 = [closure_16(TableRowGroup, obj14), ];
   const obj18 = { title: intl7.string(guild(1128).t["k+b2Cf"]), hasIcons: false, children: closure_15(TableSwitchRow3, obj19) };
-  const TableRowGroup2 = tmp2(6973).TableRowGroup;
+  const TableRowGroup2 = tmp2(6972).TableRowGroup;
   intl7 = tmp2(1128).intl;
   obj19 = { label: intl8.string(guild(1128).t["9AG3wI"]), value: first1, onValueChange: tmp11 };
-  TableSwitchRow3 = tmp2(7279).TableSwitchRow;
+  TableSwitchRow3 = tmp2(7280).TableSwitchRow;
   intl8 = tmp2(1128).intl;
   items5[1] = closure_15(TableRowGroup2, obj18);
   items3[1] = closure_16(Stack, obj10);

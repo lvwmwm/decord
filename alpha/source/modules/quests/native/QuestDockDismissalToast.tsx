@@ -1,10 +1,10 @@
-// Module ID: 16342
-// Function ID: 16343
+// Module ID: 16365
+// Function ID: 16366
 // Name: QuestDockDismissalToast
 // Dependencies: [5649, 1128, 5672, 2]
 // Exports: displayQuestDismissalToast
 
-// Module 16342 (QuestDockDismissalToast)
+// Module 16365 (QuestDockDismissalToast)
 import intl2 from "intl" /* 1128 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5649 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 5672 */;

@@ -1,9 +1,9 @@
-// Module ID: 13679
-// Function ID: 13680
+// Module ID: 13693
+// Function ID: 13694
 // Name: InAppNotificationConstants
 // Dependencies: [587, 5038, 2]
 
-// Module 13679 (InAppNotificationConstants)
+// Module 13693 (InAppNotificationConstants)
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
 import size from "module_2" /* 2 */;

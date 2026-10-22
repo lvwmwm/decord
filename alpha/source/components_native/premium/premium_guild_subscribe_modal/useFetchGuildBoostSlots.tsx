@@ -1,13 +1,13 @@
-// Module ID: 14820
-// Function ID: 14821
+// Module ID: 14834
+// Function ID: 14835
 // Name: useFetchGuildBoostSlots
-// Dependencies: [5, 32, 19, 7495, 2001, 558, 576, 504, 1107, 7515, 8353, 2]
+// Dependencies: [5, 32, 19, 7496, 2001, 558, 576, 504, 1107, 7516, 8354, 2]
 
-// Module 14820 (useFetchGuildBoostSlots)
+// Module 14834 (useFetchGuildBoostSlots)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7495 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7496 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

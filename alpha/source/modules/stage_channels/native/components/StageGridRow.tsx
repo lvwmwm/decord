@@ -1,15 +1,15 @@
-// Module ID: 11654
-// Function ID: 11655
+// Module ID: 11665
+// Function ID: 11666
 // Name: StageGridRow
-// Dependencies: [19, 17, 21, 4969, 11647, 6674, 558, 576, 8664, 11655, 11646, 2]
+// Dependencies: [19, 17, 21, 4969, 11658, 6673, 558, 576, 8671, 11666, 11657, 2]
 
-// Module 11654 (StageGridRow)
+// Module 11665 (StageGridRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 6674 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8664 */;
-import SpeakerTileDefault from "SpeakerTile" /* 11646 */;
-import MediaTileDefault from "MediaTile" /* 11655 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 6673 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8671 */;
+import SpeakerTileDefault from "SpeakerTile" /* 11657 */;
+import MediaTileDefault from "MediaTile" /* 11666 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -28,7 +28,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const participants = channel.participants;
   const row = channel.row;
   const tmp4 = closure_5();
-  let obj2 = channel(8664);
+  let obj2 = channel(8671);
   const isScreenLandscape = obj2.useIsScreenLandscape();
   let num = 3;
   if (0 === row) {
@@ -37,11 +37,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   if (cResult[0] !== num) {
     let THIRD;
     if (1 === num) {
-      THIRD = tmp(11647).StageTileSize.FULL;
+      THIRD = tmp(11658).StageTileSize.FULL;
     } else if (2 === num) {
-      THIRD = tmp(11647).StageTileSize.HALF;
+      THIRD = tmp(11658).StageTileSize.HALF;
     } else {
-      THIRD = tmp(11647).StageTileSize.THIRD;
+      THIRD = tmp(11658).StageTileSize.THIRD;
     }
     cResult[0] = num;
     cResult[1] = THIRD;
@@ -139,11 +139,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     num = participants.length;
   }
   if (1 === num) {
-    THIRD = tmp2(11647).StageTileSize.FULL;
+    THIRD = tmp2(11658).StageTileSize.FULL;
   } else if (2 === num) {
-    THIRD = tmp2(11647).StageTileSize.HALF;
+    THIRD = tmp2(11658).StageTileSize.HALF;
   } else {
-    THIRD = tmp2(11647).StageTileSize.THIRD;
+    THIRD = tmp2(11658).StageTileSize.THIRD;
   }
   const items = [tmp.container, ];
   const tmp5 = View;

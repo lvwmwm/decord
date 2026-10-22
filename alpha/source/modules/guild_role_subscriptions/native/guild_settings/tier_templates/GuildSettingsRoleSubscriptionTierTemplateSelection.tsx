@@ -1,21 +1,21 @@
-// Module ID: 19206
-// Function ID: 19207
+// Module ID: 19229
+// Function ID: 19230
 // Name: GuildSettingsRoleSubscriptionTierTemplateSelection
-// Dependencies: [32, 19, 17, 16485, 19155, 1087, 21, 4969, 587, 558, 576, 5220, 19207, 7206, 573, 16463, 16464, 12162, 19213, 1633, 1505, 1267, 5697, 19163, 10090, 1128, 6910, 1275, 9330, 1202, 19150, 2]
+// Dependencies: [32, 19, 17, 16507, 19178, 1087, 21, 4969, 587, 558, 576, 5220, 19230, 7205, 573, 16485, 16486, 12173, 19236, 1633, 1505, 1267, 5697, 19186, 10097, 1128, 6909, 1275, 9337, 1202, 19173, 2]
 
-// Module 19206 (GuildSettingsRoleSubscriptionTierTemplateSelection)
+// Module 19229 (GuildSettingsRoleSubscriptionTierTemplateSelection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5697 */;
-import NavigatorHeader from "NavigatorHeader" /* 6910 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 19155 */;
-import GuildRoleSubscriptionsActionCreatorExtrasAll from "GuildRoleSubscriptionsActionCreatorExtras" /* 19163 */;
-import GuildRoleSubscriptionTierTemplatePreviewCardDefault from "GuildRoleSubscriptionTierTemplatePreviewCard" /* 19207 */;
+import NavigatorHeader from "NavigatorHeader" /* 6909 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 19178 */;
+import GuildRoleSubscriptionsActionCreatorExtrasAll from "GuildRoleSubscriptionsActionCreatorExtras" /* 19186 */;
+import GuildRoleSubscriptionTierTemplatePreviewCardDefault from "GuildRoleSubscriptionTierTemplatePreviewCard" /* 19230 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 16485 */;
+import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 16507 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -36,7 +36,7 @@ let obj3;
 let obj4;
 let tmp;
 let unpackModuleId;
-const GroupListingsFetchContext = tmp(16464);
+const GroupListingsFetchContext = tmp(16486);
 ({ ActivityIndicator: metroRequire, TouchableOpacity: metroImportDefault, View: metroImportAll } = react_native);
 const usePriceTiers = RoleTierEditStore.usePriceTiers;
 ({ AnalyticEvents: unpackModuleId, GuildSettingsSections: closure_12 } = Constants);
@@ -135,14 +135,14 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function TierTe
               }
               tmp6 = tmp12;
             }
-            const obj5 = { data: templates, horizontal: true, contentContainerStyle: tmp7, keyExtractor: null, ItemSeparatorComponent: tmp9, decelerationRate: "fast", snapToInterval: guildId(19207).CARD_WIDTH + v16, renderItem: tmp11 };
+            const obj5 = { data: templates, horizontal: true, contentContainerStyle: tmp7, keyExtractor: null, ItemSeparatorComponent: tmp9, decelerationRate: "fast", snapToInterval: guildId(19230).CARD_WIDTH + v16, renderItem: tmp11 };
             class T {
               constructor(template) {
                 const obj = { template: template.item, priceTiers: tiers, guildId, groupListingId, editGroupId: guildId };
                 return map1(GuildRoleSubscriptionTierTemplatePreviewCardDefault, obj);
               }
             }
-            const FlashList = tmp(7206).FlashList;
+            const FlashList = tmp(7205).FlashList;
             const tmp15 = closure_13(FlashList, obj5);
             cResult[11] = tmp11;
             cResult[12] = templates;
@@ -203,14 +203,14 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function TierTe
                   return closure_1_13(closure_1_8, obj);
                 },
           decelerationRate: "fast",
-          snapToInterval: guildId(19207).CARD_WIDTH + v16,
+          snapToInterval: guildId(19230).CARD_WIDTH + v16,
           renderItem(template) {
                   const obj = { template: template.item, priceTiers: tiers, guildId, groupListingId, editGroupId: guildId };
                   return map1(GuildRoleSubscriptionTierTemplatePreviewCardDefault, obj);
                 }
         };
         obj4 = { paddingLeft: v16, paddingRight: v16 };
-        const FlashList = guildId(7206).FlashList;
+        const FlashList = guildId(7205).FlashList;
         tmp3 = closure_13(FlashList, obj3);
       }
     }

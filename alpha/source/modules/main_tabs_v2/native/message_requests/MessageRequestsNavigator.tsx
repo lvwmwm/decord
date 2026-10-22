@@ -1,18 +1,18 @@
-// Module ID: 18226
-// Function ID: 18227
+// Module ID: 18248
+// Function ID: 18249
 // Name: MessageRequestsNavigator
-// Dependencies: [109, 19, 17, 21, 9713, 4969, 587, 558, 576, 7081, 7568, 1633, 9669, 1128, 10001, 18227, 18246, 18247, 2]
+// Dependencies: [109, 19, 17, 21, 9720, 4969, 587, 558, 576, 7080, 7569, 1633, 9676, 1128, 10008, 18249, 18268, 18269, 2]
 
-// Module 18226 (MessageRequestsNavigator)
+// Module 18248 (MessageRequestsNavigator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import HeaderShared from "HeaderShared" /* 9669 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10001 */;
+import HeaderShared from "HeaderShared" /* 9676 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10008 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9713 */;
+import NativeStackView from "NativeStackView" /* 9720 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -136,7 +136,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
           const Screen = closure_9.Screen;
           const obj3 = { title: intl.string(tmp(1128).t.e7GWjQ) };
           intl = tmp(1128).intl;
-          let merged = Object.assign(tmp9(10001)());
+          let merged = Object.assign(tmp9(10008)());
           tmp19[1] = obj3;
           tmp19[2] = function getComponent() {
             return closure_0(dependencyMap[15]).default;
@@ -175,7 +175,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
           const Screen2 = closure_9.Screen;
           const obj4 = { title: intl2.string(tmp(1128).t.ulKXHp) };
           intl2 = tmp(1128).intl;
-          const merged1 = Object.assign(tmp9(10001)());
+          const merged1 = Object.assign(tmp9(10008)());
           tmp26[1] = obj4;
           tmp26[2] = function getComponent() {
             return closure_0(dependencyMap[16]).default;
@@ -214,7 +214,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
           const Screen3 = closure_9.Screen;
           const obj5 = { title: intl3.string(tmp(1128).t.iilwGH) };
           intl3 = tmp(1128).intl;
-          const merged2 = Object.assign(tmp9(10001)());
+          const merged2 = Object.assign(tmp9(10008)());
           tmp33[1] = obj5;
           tmp33[2] = function getComponent() {
             return closure_0(dependencyMap[17]).default;

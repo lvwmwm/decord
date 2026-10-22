@@ -1,10 +1,10 @@
-// Module ID: 8421
-// Function ID: 8422
+// Module ID: 8422
+// Function ID: 8423
 // Name: ReverseTrialUtils
 // Dependencies: [1392, 558, 576, 504, 2]
 // Exports: maybeShowReverseTrialFollowupUpsellModal, maybeShowReverseTrialInitialUpsellModal, useReverseTrialDaysRemaining
 
-// Module 8421 (ReverseTrialUtils)
+// Module 8422 (ReverseTrialUtils)
 import react from "react" /* 576 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

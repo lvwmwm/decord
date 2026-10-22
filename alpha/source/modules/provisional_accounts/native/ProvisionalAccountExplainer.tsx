@@ -1,18 +1,18 @@
-// Module ID: 13473
-// Function ID: 13474
+// Module ID: 13487
+// Function ID: 13488
 // Name: ProvisionalAccountExplainer
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 13474, 13475, 5220, 1128, 6998, 6891, 7287, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 13488, 13489, 5220, 1128, 6997, 6890, 7288, 2]
 
-// Module 13473 (ProvisionalAccountExplainer)
+// Module 13487 (ProvisionalAccountExplainer)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import Card_Card from "Card/Card" /* 6891 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6998 */;
-import UserProfileCardDefault from "UserProfileCard" /* 7287 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13474 */;
+import Card_Card from "Card/Card" /* 6890 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6997 */;
+import UserProfileCardDefault from "UserProfileCard" /* 7288 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13488 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -48,7 +48,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNati
       if (cResult[4] === userId) {
         tmp5 = cResult[5];
       }
-      const tmpResult = tmp(13475);
+      const tmpResult = tmp(13489);
       return tmpResult.useProvisionalAccountExplanationText(tmp5);
     }
     const obj2 = { userId, renderApplicationName: tmp4 };
@@ -74,7 +74,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNati
     const obj = { application, textVariant, iconSize };
     return hasOwnProperty(ApplicationIconAndNameDefault, obj, application.id);
   }, items);
-  let obj = iconSize(13475);
+  let obj = iconSize(13489);
   return obj.useProvisionalAccountExplanationText({ userId, renderApplicationName });
 });
 ReactCompilerGating = ReactCompilerGating_mod;

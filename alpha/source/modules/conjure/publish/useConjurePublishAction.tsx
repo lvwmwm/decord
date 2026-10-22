@@ -1,36 +1,37 @@
-// Module ID: 11816
-// Function ID: 11817
+// Module ID: 11828
+// Function ID: 11829
 // Name: useConjurePublishAction
-// Dependencies: [5, 19, 2045, 7687, 4821, 4899, 4843, 4901, 6759, 10684, 1087, 6760, 7329, 10701, 11814, 6795, 10712, 10690, 10765, 1128, 3830, 11817, 10755, 584, 8643, 10771, 2002, 11818, 10688, 10773, 11810, 504, 2]
+// Dependencies: [5, 19, 2045, 7688, 4821, 4899, 4843, 4901, 6758, 10691, 1087, 6759, 7330, 10708, 11826, 6794, 10719, 10697, 10772, 1128, 3830, 11829, 10762, 584, 8650, 10781, 10778, 2002, 11830, 10695, 10780, 11822, 504, 11832, 2]
 // Exports: default, isConjureLiveNameOutdated, publishGuildId
 
-// Module 11816 (useConjurePublishAction)
+// Module 11828 (useConjurePublishAction)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6760 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6795 */;
-import ConjureUtils from "ConjureUtils" /* 7329 */;
-import UserActionCreators from "UserActionCreators" /* 8643 */;
-import conjureAppInServer from "conjureAppInServer" /* 10701 */;
-import conjurePublishAction2 from "conjurePublishAction" /* 11818 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6759 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6794 */;
+import ConjureUtils from "ConjureUtils" /* 7330 */;
+import UserActionCreators from "UserActionCreators" /* 8650 */;
+import conjureAppInServer from "conjureAppInServer" /* 10708 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 10781 */;
+import conjurePublishAction2 from "conjurePublishAction" /* 11830 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
-import UserProfileStore from "UserProfileStore" /* 7687 */;
+import UserProfileStore from "UserProfileStore" /* 7688 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildChannelStore from "GuildChannelStore" /* 4899 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
-import ConjureProjectStore_mod from "ConjureProjectStore" /* 6759 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10684 */;
+import ConjureProjectStore_mod from "ConjureProjectStore" /* 6758 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10691 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c10, c11, closure_4, intent, paths;
+let _require, c10, c11, closure_5, intent;
 
 let closure_12;
 let unpackModuleId;
-const f111334 = () => {
+const f111451 = () => {
 
 };
 function readPublishSubject(projectId, arg1) {
@@ -441,7 +442,7 @@ obj = function _startPublish() {
                       tmp(closure_1_2[24]);
                       const tmpResult3 = tmp(closure_1_2[13]);
                       const profile = fetchProfile(tmpResult3.conjureProductionBotUserId(closure_3), { withMutualGuilds: true });
-                      profile.catch(f111334);
+                      profile.catch(f111451);
                     }
                     const tmpResult4 = tmp(closure_1_2[22]);
                     result = tmpResult4.refreshPublishedProject(projectId, { isPreview: false });
@@ -595,13 +596,11 @@ function runConjurePublishAction() {
 }
 obj = function _runConjurePublishAction() {
   obj = _asyncToGenerator(async (arg0, value, arg2) => {
-    let closure_2;
-    let publishState;
     let surface;
     let closure_0 = arg0;
-    paths = arg2;
-    if (c7 === 2) {
-      c7 = 3;
+    let closure_2 = arg2;
+    if (c6 === 2) {
+      c6 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
     } else if (tmp3 === 3) {
       if (arg0 === 1) {
@@ -614,83 +613,86 @@ obj = function _runConjurePublishAction() {
       }
     } else {
       try {
-        c7 = 2;
-        if (0 === c6) {
+        c6 = 2;
+        if (0 === c5) {
           if (arg0 === 1) {
-            c7 = 3;
+            c6 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c7 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
+            c6 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
           } else {
-            let closure_5 = tmp;
-            let closure_1 = paths;
+            let closure_4 = tmp;
+            let closure_1 = closure_2;
             publishApprovalUrl = undefined;
             let conjurePublishAction;
-            const platform = paths.platform;
-            if (true !== paths.busy) {
+            const platform = closure_2.platform;
+            if (true !== closure_2.busy) {
               if (!set.has(closure_0)) {
-                const tmp9 = readPublishSubject(closure_0, tmp31);
-                if (null != tmp9) {
-                  const obj8 = publishApprovalUrl;
-                  publishApprovalUrl = publishApprovalUrl.getPublishApprovalUrl(tmp28);
-                  if (null != publishApprovalUrl) {
-                    if (authStore2(tmp9.project)) {
-                      c6 = 1;
-                      c7 = 1;
-                      const obj4 = { value: require("asyncRequire")(paths[25], paths.paths), done: false };
-                      return obj4;
-                    }
+                let publishState;
+                const tmp9 = readPublishSubject(closure_0, tmp28);
+                if (tmp9 != null) {
+                  const status = tmp9.input.status;
+                  if (status != null) {
+                    publishState = status.publishState;
                   }
-                  if (!obj8.isProjectPublishing(closure_0)) {
-                    const status = tmp9.input.status;
-                    let publishing;
-                    if (status != null) {
-                      publishing = status.publishing;
-                    }
-                    if (true !== publishing) {
-                      const obj9 = require("conjurePublishAction");
-                      conjurePublishAction = obj9.resolveConjurePublishAction(tmp9.input);
-                      const obj5 = { entryPoint: tmp29, publishState, surface, installScope: tmp9.project.install_scope, action: conjurePublishAction.action };
-                      const status3 = tmp9.input.status;
-                      let state;
-                      const trackConjurePublishActionClicked = require("ConjureAnalytics").trackConjurePublishActionClicked;
-                      const tmp37 = require("ConjureAnalytics");
-                      if (status3 != null) {
-                        state = status3.state;
-                      }
-                      publishState = state;
-                      if (state == null) {
-                        publishState = null;
-                      }
-                      const status2 = tmp9.input.status;
-                      surface = undefined;
-                      if (status2 != null) {
-                        surface = status2.surface;
-                      }
-                      if (surface == null) {
-                        surface = null;
-                      }
-                      const result = trackConjurePublishActionClicked(tmp28, obj5);
-                      if (null == conjurePublishAction.disabledReason) {
-                        const tmp34Result = require("conjurePublishConnection");
-                        tmp34Result.preparePublish(closure_0);
-                        if (null == conjurePublishAction.confirmReason) {
-                          c6 = 2;
-                          c7 = 1;
-                          const obj6 = { value: continuePublish(closure_0, conjurePublishAction, tmp30), done: false };
-                          return obj6;
-                        } else {
-                          platform.showPublishBlocked(require("conjurePublishBlockedReason").ConjurePublishBlockedReason.MISSING_MANAGE_CHANNELS, conjurePublishAction.confirmReason, () => {
-                            const promise = closure_2_27(closure_1_0, closure_1_3, closure_1_1);
-                            promise.catch(() => {
-
-                            });
-                          });
+                }
+                if (null != tmp9) {
+                  if (null != publishState) {
+                    const obj9 = require("ConjurePublishTypes");
+                    if (obj9.canPublish(publishState)) {
+                      const obj3 = publishApprovalUrl;
+                      publishApprovalUrl = publishApprovalUrl.getPublishApprovalUrl(tmp25);
+                      if (null != publishApprovalUrl) {
+                        if (authStore2(tmp9.project)) {
+                          c5 = 1;
+                          c6 = 1;
+                          const obj5 = { value: require("asyncRequire")(dependencyMap[26], dependencyMap.paths), done: false };
+                          return obj5;
                         }
-                      } else {
-                        platform.showPublishBlocked(require("conjurePublishBlockedReason").ConjurePublishBlockedReason.MISSING_MANAGE_SERVER, conjurePublishAction.disabledReason);
+                      }
+                      if (!obj3.isProjectPublishing(closure_0)) {
+                        const status2 = tmp9.input.status;
+                        let publishing;
+                        if (status2 != null) {
+                          publishing = status2.publishing;
+                        }
+                        if (true !== publishing) {
+                          const tmp30Result = require("conjurePublishAction");
+                          conjurePublishAction = tmp30Result.resolveConjurePublishAction(tmp9.input);
+                          const obj6 = { entryPoint: tmp26, publishState, surface, installScope: tmp9.project.install_scope, action: conjurePublishAction.action };
+                          const status3 = tmp9.input.status;
+                          surface = undefined;
+                          const trackConjurePublishActionClicked = require("ConjureAnalytics").trackConjurePublishActionClicked;
+                          const tmp30Result3 = require("ConjureAnalytics");
+                          if (status3 != null) {
+                            surface = status3.surface;
+                          }
+                          if (surface == null) {
+                            surface = null;
+                          }
+                          const result = trackConjurePublishActionClicked(tmp25, obj6);
+                          if (null == conjurePublishAction.disabledReason) {
+                            const tmp30Result4 = require("conjurePublishConnection");
+                            tmp30Result4.preparePublish(closure_0);
+                            if (null == conjurePublishAction.confirmReason) {
+                              c5 = 2;
+                              c6 = 1;
+                              const obj7 = { value: continuePublish(closure_0, conjurePublishAction, tmp27), done: false };
+                              return obj7;
+                            } else {
+                              platform.showPublishBlocked(require("conjurePublishBlockedReason").ConjurePublishBlockedReason.MISSING_MANAGE_CHANNELS, conjurePublishAction.confirmReason, () => {
+                                const promise = closure_2_27(closure_1_0, closure_1_3, closure_1_1);
+                                promise.catch(() => {
+
+                                });
+                              });
+                            }
+                          } else {
+                            platform.showPublishBlocked(require("conjurePublishBlockedReason").ConjurePublishBlockedReason.MISSING_MANAGE_SERVER, conjurePublishAction.disabledReason);
+                          }
+                        }
                       }
                     }
                   }
@@ -700,28 +702,28 @@ obj = function _runConjurePublishAction() {
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {
-            c7 = 3;
+            c6 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c7 = 3;
-            const obj7 = { value, done: true };
-            return obj7;
+            c6 = 3;
+            const obj8 = { value, done: true };
+            return obj8;
           } else {
             const result1 = value.promptPublishApproval(publishApprovalUrl);
           }
         } else if (arg0 === 1) {
-          c7 = 3;
+          c6 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c7 = 3;
+          c6 = 3;
           obj = { value, done: true };
           return obj;
         }
-        c7 = 3;
+        c6 = 3;
         return { value: "IconComponent", done: null };
-      } catch (tmp24) {
-        c7 = 3;
-        throw tmp24;
+      } catch (tmp21) {
+        c6 = 3;
+        throw tmp21;
       }
     }
   });
@@ -786,13 +788,13 @@ obj = function _continuePublish() {
                   set.add(closure_0);
                   c9 = 1;
                   const requestConsent = platform.requestConsent;
-                  let f159172 = requestConsent;
+                  let f159428 = requestConsent;
                   if (requestConsent == null) {
-                    f159172 = (arg0) => closure_2_18(arg0, closure_1_3);
+                    f159428 = (arg0) => closure_2_18(arg0, closure_1_3);
                   }
                   c10 = 3;
                   c11 = 1;
-                  const obj5 = { value: f159172(closure_0), done: false };
+                  const obj5 = { value: f159428(closure_0), done: false };
                   return obj5;
                 }
               }
@@ -841,8 +843,8 @@ obj = function _continuePublish() {
               if (null != _null) {
                 const obj8 = { installScope: _null.project.install_scope, previewReady: true === preview_ready, integrationInstalled, botPermissionsChanged: true === prop1 };
                 preview_ready = undefined;
-                const requiresPermissionReview = closure_135_0(closure_135_2[30]).requiresPermissionReview;
-                const tmp62 = closure_135_0(closure_135_2[30]);
+                const requiresPermissionReview = closure_135_0(closure_135_2[31]).requiresPermissionReview;
+                const tmp62 = closure_135_0(closure_135_2[31]);
                 if (integrationInstalled != null) {
                   preview_ready = integrationInstalled.preview_ready;
                 }
@@ -906,7 +908,6 @@ export default function useConjurePublishAction(arg0, arg1) {
   let appChannelPending;
   let approvalUrl;
   let botInGuild;
-  let canPublish;
   let closure_0;
   let guildId;
   let guildName;
@@ -914,10 +915,12 @@ export default function useConjurePublishAction(arg0, arg1) {
   let integrationStatus;
   let memo;
   let project;
+  let publishOffered;
   let publishing;
   let status;
   let status1;
   let usesAppChannels;
+  let viewerCanPublish;
   _require = arg0;
   context = arg1;
   obj = guildId;
@@ -932,16 +935,18 @@ export default function useConjurePublishAction(arg0, arg1) {
     guildId1 = null;
   }
   const tmp3 = _require;
+  let obj2 = require("get initialized");
   const items = [usesAppChannels, botInGuild, appChannelName, guildName, integrationStatus, appChannelPending, status, installScope];
   const items1 = [arg0, guildId1];
-  const obj2 = require("get initialized");
   const stateFromStoresObject = obj2.useStateFromStoresObject(items, () => {
     let appChannelId;
+    let canPublishResult;
     let flag2;
     let flag3;
     let flag4;
     let publishApprovalUrl;
-    let tmp10;
+    let status1;
+    let tmp14;
     let tmp2 = null;
     if (null != closure_0) {
       tmp2 = null;
@@ -949,7 +954,16 @@ export default function useConjurePublishAction(arg0, arg1) {
         tmp2 = readPublishSubject(tmp, tmp3);
       }
     }
-    obj = { canPublish: null != tmp2 && unpackModuleId(tmp2.project), project, guildId, appChannelId, publishing: tmp10, approvalUrl: publishApprovalUrl, installScope, status, integrationStatus, guildName, appChannelName, appChannelPending: flag2, canManageGuild, canManageChannels, usesAppChannels: flag3, botInGuild, liveNameOutdated: flag4 };
+    status = undefined;
+    obj = { viewerCanPublish: null != tmp2 && unpackModuleId(tmp2.project), publishOffered: canPublishResult, project, guildId, appChannelId, publishing: tmp14, approvalUrl: publishApprovalUrl, installScope, status: status1, integrationStatus, guildName, appChannelName, appChannelPending: flag2, canManageGuild, canManageChannels, usesAppChannels: flag3, botInGuild, liveNameOutdated: flag4 };
+    if (tmp2 != null) {
+      status = tmp2.input.status;
+    }
+    canPublishResult = null != status;
+    if (canPublishResult) {
+      const obj2 = ConjurePublishTypes;
+      canPublishResult = obj2.canPublish(tmp2.input.status.publishState);
+    }
     project = undefined;
     if (tmp2 != null) {
       project = tmp2.project;
@@ -971,8 +985,8 @@ export default function useConjurePublishAction(arg0, arg1) {
     if (appChannelId == null) {
       appChannelId = null;
     }
-    tmp10 = null != tmp && null == ConjurePublishStatusStore.getPublishApprovalUrl(tmp);
-    if (tmp10) {
+    tmp14 = null != tmp && null == ConjurePublishStatusStore.getPublishApprovalUrl(tmp);
+    if (tmp14) {
       let isProjectPublishingResult = ConjurePublishStatusStore.isProjectPublishing(tmp);
       if (!isProjectPublishingResult) {
         const publishStatus = ConjurePublishStatusStore.getPublishStatus(tmp);
@@ -982,7 +996,7 @@ export default function useConjurePublishAction(arg0, arg1) {
         }
         isProjectPublishingResult = true === publishing;
       }
-      tmp10 = isProjectPublishingResult;
+      tmp14 = isProjectPublishingResult;
     }
     publishApprovalUrl = null;
     if (null != closure_0) {
@@ -995,12 +1009,12 @@ export default function useConjurePublishAction(arg0, arg1) {
     if (installScope == null) {
       installScope = null;
     }
-    status = undefined;
+    status1 = undefined;
     if (tmp2 != null) {
-      status = tmp2.input.status;
+      status1 = tmp2.input.status;
     }
-    if (status == null) {
-      status = null;
+    if (status1 == null) {
+      status1 = null;
     }
     integrationStatus = undefined;
     if (tmp2 != null) {
@@ -1081,7 +1095,7 @@ export default function useConjurePublishAction(arg0, arg1) {
   botInGuild = stateFromStoresObject.botInGuild;
   const liveNameOutdated = stateFromStoresObject.liveNameOutdated;
   const items2 = [project, installScope, status, integrationStatus, guildName, appChannelName, appChannelPending, canManageGuild, canManageChannels, usesAppChannels, botInGuild, liveNameOutdated];
-  ({ canPublish, approvalUrl, appChannelId } = stateFromStoresObject);
+  ({ viewerCanPublish, publishOffered, approvalUrl, appChannelId } = stateFromStoresObject);
   memo = obj.useMemo(() => {
     let tmp = null;
     if (null != project) {
@@ -1090,15 +1104,15 @@ export default function useConjurePublishAction(arg0, arg1) {
     }
     return tmp;
   }, items2);
-  let state;
+  let publishState;
   if (memo != null) {
     const status2 = memo.status;
     if (status2 != null) {
-      state = status2.state;
+      publishState = status2.publishState;
     }
   }
-  if (state == null) {
-    state = null;
+  if (publishState == null) {
+    publishState = null;
   }
   let installScope1;
   if (memo != null) {
@@ -1119,28 +1133,29 @@ export default function useConjurePublishAction(arg0, arg1) {
   if (project != null) {
     id = project.id;
   }
-  const items3 = [id, guildId, tmp9, state];
+  const items3 = [id, guildId, tmp9, publishState];
   const effect = useEffect(() => {
-    let tmp2 = null != project;
+    isConjureLiveResult = null != project;
     const tmp = project;
-    if (tmp2) {
-      tmp2 = null != guildId;
+    if (isConjureLiveResult) {
+      isConjureLiveResult = null != guildId;
     }
-    if (tmp2) {
-      tmp2 = closure_18;
+    if (isConjureLiveResult) {
+      isConjureLiveResult = closure_18;
     }
-    if (tmp2) {
-      tmp2 = null != state;
+    if (isConjureLiveResult) {
+      isConjureLiveResult = null != publishState;
     }
-    if (tmp2) {
-      tmp2 = "unpublished" !== state;
+    if (isConjureLiveResult) {
+      obj = ConjurePublishTypes;
+      isConjureLiveResult = obj.isConjureLive(publishState);
     }
-    if (tmp2) {
+    if (isConjureLiveResult) {
       const fetchProfile = UserActionCreators.fetchProfile;
       UserActionCreators;
-      obj = conjureAppInServer;
-      const profile = fetchProfile(obj.conjureProductionBotUserId(tmp), { withMutualGuilds: true });
-      profile.catch(f111334);
+      const obj2 = conjureAppInServer;
+      const profile = fetchProfile(obj2.conjureProductionBotUserId(tmp), { withMutualGuilds: true });
+      profile.catch(f111451);
     }
   }, items3);
   let application_id;
@@ -1150,10 +1165,15 @@ export default function useConjurePublishAction(arg0, arg1) {
   if (application_id == null) {
     application_id = null;
   }
-  let closure_20 = tmp14;
-  const items4 = [application_id, tmp14];
+  let isConjureLiveResult = null != publishState;
+  if (isConjureLiveResult) {
+    const tmp3Result = tmp3(guildId1[25]);
+    isConjureLiveResult = tmp3Result.isConjureLive(publishState);
+  }
+  startPublish = isConjureLiveResult;
+  const items4 = [application_id, isConjureLiveResult];
   const effect1 = obj.useEffect(() => {
-    const tmp2 = null != application_id && closure_20 && null == ApplicationStore.getApplication(tmp) && !ApplicationStore.isFetchingApplication(tmp);
+    const tmp2 = null != application_id && startPublish && null == ApplicationStore.getApplication(tmp) && !ApplicationStore.isFetchingApplication(tmp);
     if (tmp2) {
       obj = ApplicationActionCreators;
       const application = obj.fetchApplication(tmp);
@@ -1171,18 +1191,29 @@ export default function useConjurePublishAction(arg0, arg1) {
     }
     return conjurePublishAction;
   }, items5);
+  let tmp19 = null;
+  const tmp18 = context(guildId1[33]);
+  if (publishing) {
+    tmp19 = arg0;
+  }
+  let stringResult = tmp18(tmp19);
   const items6 = [arg0, context];
   if (null != context) {
-    if (canPublish) {
+    if (viewerCanPublish) {
       if (null != memo1) {
         let label;
+        if (!publishOffered) {
+          if (!publishing) {
+            return null;
+          }
+        }
         if (null == approvalUrl) {
           label = memo1.label;
         } else {
           const intl = tmp3(tmp4[19]).intl;
-          label = intl.string(context(tmp4[20]).qru9M5);
+          label = intl.string(tmp17(tmp4[20]).qru9M5);
         }
-        const obj3 = { status: status1, guildId, appChannelId, publishing, label, disabled: publishing, run: tmp17 };
+        const obj3 = { status: status1, guildId, appChannelId, publishing, showsProgress: null != stringResult, label, disabled: publishing, run: tmp21 };
         const merged = Object.assign(memo1);
         status1 = undefined;
         if (memo != null) {
@@ -1192,8 +1223,11 @@ export default function useConjurePublishAction(arg0, arg1) {
           status1 = null;
         }
         if (publishing) {
-          const intl2 = tmp3(tmp4[19]).intl;
-          label = intl2.string(context(tmp4[20]).Rhx0rn);
+          if (stringResult == null) {
+            const intl2 = tmp3(tmp4[19]).intl;
+            stringResult = intl2.string(tmp17(tmp4[20]).Rhx0rn);
+          }
+          label = stringResult;
         }
         if (!publishing) {
           publishing = true === context.busy;

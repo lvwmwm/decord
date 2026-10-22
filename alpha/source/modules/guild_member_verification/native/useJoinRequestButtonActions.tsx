@@ -1,10 +1,10 @@
-// Module ID: 13480
-// Function ID: 13481
+// Module ID: 13494
+// Function ID: 13495
 // Name: useJoinRequestButtonActions
-// Dependencies: [5, 32, 19, 4821, 1087, 5649, 1128, 7331, 5196, 6829, 4998, 13481, 2002, 2]
+// Dependencies: [5, 32, 19, 4821, 1087, 5649, 1128, 7332, 5196, 6828, 4998, 13495, 2002, 2]
 // Exports: useJoinRequestButtonActions
 
-// Module 13480 (useJoinRequestButtonActions)
+// Module 13494 (useJoinRequestButtonActions)
 import Constants from "Constants" /* 1087 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
@@ -157,7 +157,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
         const _HermesInternal = HermesInternal;
         ActionSheetActionCreatorsDefault;
         const obj = { joinRequest: tmp, onError, onDismiss };
-        const tmp10 = asyncRequire(13481, dependencyMap.paths);
+        const tmp10 = asyncRequire(13495, dependencyMap.paths);
         openLazy(tmp10, "RejectionReason-" + joinRequestId, obj);
       }
     }, items2),

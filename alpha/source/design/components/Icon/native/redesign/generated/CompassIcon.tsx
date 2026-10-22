@@ -1,14 +1,14 @@
-// Module ID: 16853
-// Function ID: 16854
+// Module ID: 16875
+// Function ID: 16876
 // Name: CompassIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 16854, 5654, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 16876, 5654, 2]
 
-// Module 16853 (CompassIcon)
+// Module 16875 (CompassIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5654 */;
-import AssetRegistry from "AssetRegistry" /* 16854 */;
+import AssetRegistry from "AssetRegistry" /* 16876 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

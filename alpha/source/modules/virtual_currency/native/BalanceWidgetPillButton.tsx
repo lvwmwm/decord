@@ -1,13 +1,13 @@
-// Module ID: 13898
-// Function ID: 13899
+// Module ID: 13912
+// Function ID: 13913
 // Name: BalanceWidgetPillButton
-// Dependencies: [19, 21, 558, 576, 1128, 5230, 9399, 2]
+// Dependencies: [19, 21, 558, 576, 1128, 5230, 9406, 2]
 
-// Module 13898 (BalanceWidgetPillButton)
+// Module 13912 (BalanceWidgetPillButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import components_Button_Button from "components/Button/Button" /* 5230 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9399 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9406 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

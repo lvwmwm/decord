@@ -1,16 +1,16 @@
-// Module ID: 17891
-// Function ID: 17892
+// Module ID: 17913
+// Function ID: 17914
 // Name: Elements
-// Dependencies: [32, 109, 19, 17, 2057, 21, 4969, 587, 558, 576, 5220, 1128, 1202, 17892, 6894, 9767, 16478, 573, 9770, 7323, 2]
+// Dependencies: [32, 109, 19, 17, 2057, 21, 4969, 587, 558, 576, 5220, 1128, 1202, 17914, 6893, 9774, 16500, 573, 9777, 7324, 2]
 
-// Module 17891 (Elements)
+// Module 17913 (Elements)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
-import Pressables from "Pressables" /* 6894 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9767 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16478 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17892 */;
+import Pressables from "Pressables" /* 6893 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9774 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16500 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17914 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -35,7 +35,7 @@ let tmp4;
 let unpackModuleId;
 const intl2 = tmp(1128);
 const Text_Text = tmp(5220);
-const useStoreFrontPriceDefault = tmp4(9770);
+const useStoreFrontPriceDefault = tmp4(9777);
 let closure_4 = ["lineClamp"];
 ({ TouchableOpacity: metroImportAll, View: c9 } = react_native);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
@@ -362,7 +362,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormatted
       const _HermesInternal = HermesInternal;
       str = "" + tmp11 + "/mo.";
     }
-    const tmpResult2 = first(7323);
+    const tmpResult2 = first(7324);
     const formatPriceResult = tmpResult2.formatPrice(price.amount, price.currency);
     cResult[3] = price.amount;
     cResult[4] = price.currency;
@@ -384,7 +384,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormatted
   const tmp3 = _require;
   if (null != price) {
     const _HermesInternal = HermesInternal;
-    const tmp3Result = tmp3(7323);
+    const tmp3Result = tmp3(7324);
     str = "" + tmp3Result.formatPrice(price.amount, price.currency) + "/mo.";
   }
   return str;

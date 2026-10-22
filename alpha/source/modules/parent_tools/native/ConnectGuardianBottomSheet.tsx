@@ -1,9 +1,9 @@
-// Module ID: 16091
-// Function ID: 16092
+// Module ID: 16109
+// Function ID: 16110
 // Name: ConnectGuardianBottomSheet
-// Dependencies: [19, 17, 7629, 7630, 21, 4969, 587, 558, 576, 573, 5196, 16092, 1128, 2536, 5220, 16093, 5230, 5251, 2]
+// Dependencies: [19, 17, 7630, 7631, 21, 4969, 587, 558, 576, 573, 5196, 16110, 1128, 2536, 5220, 16111, 5230, 5251, 2]
 
-// Module 16091 (ConnectGuardianBottomSheet)
+// Module 16109 (ConnectGuardianBottomSheet)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
@@ -12,10 +12,10 @@ import _modDef2536 from "module_2536" /* 2536 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5251 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7630 */;
-import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 16092 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7631 */;
+import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 16110 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7629 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7630 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -287,7 +287,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
   items2[1] = metroImportDefault(Text2, obj6);
   items3 = [metroImportAll(View, obj4), , ];
   const obj8 = { style: tmp.cardContainer, children: metroImportDefault(ConnectGuardianCard, obj9) };
-  ConnectGuardianCard = tmp2(16093).ConnectGuardianCard;
+  ConnectGuardianCard = tmp2(16111).ConnectGuardianCard;
   if (stateFromStores == null) {
     stateFromStores = linkCode;
   }

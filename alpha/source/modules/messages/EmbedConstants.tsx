@@ -1,9 +1,9 @@
-// Module ID: 6473
-// Function ID: 6474
+// Module ID: 6472
+// Function ID: 6473
 // Name: EmbedConstants
 // Dependencies: [1087, 2]
 
-// Module 6473 (EmbedConstants)
+// Module 6472 (EmbedConstants)
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

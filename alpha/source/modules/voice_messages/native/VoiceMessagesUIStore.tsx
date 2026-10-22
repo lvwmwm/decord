@@ -1,13 +1,13 @@
-// Module ID: 12979
-// Function ID: 12980
+// Module ID: 12995
+// Function ID: 12996
 // Name: VoiceMessagesUIStore
-// Dependencies: [12980, 570, 5038, 1274, 5233, 2]
+// Dependencies: [12996, 570, 5038, 1274, 5233, 2]
 // Exports: addVoiceMessageWave, hideVoiceMessagesTooltip, resetVoiceMessageState, setIsUsingHoldGesture, setIsVoiceMessageButtonMounted, setSavedVoiceMessageUploadData, setShowRecordingOverlay, setVoiceMessageAnimationState, setVoiceMessageRecordingId, setVoiceMessageRecordingState, setVoiceMessageStartTimeMillis, showVoiceMessagesTooltip
 
-// Module 12979 (VoiceMessagesUIStore)
+// Module 12995 (VoiceMessagesUIStore)
 import react_native from "react-native" /* 1274 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 12980 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 12996 */;
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ const spring = tmp(5233);
 let obj = module_570.create(() => {
   let items;
   let obj2;
-  obj = { voiceMessageAnimationState: obj2.makeMutable(items), recordingStatus: null, recordingId: null, currWaveHeight: "Reflect", showRecordingOverlay: "Array", startTimeMillis: 0, waveform: [], waveformVersion: "Set", showVoiceMessagesTooltip: "heading-lg/medium", savedVoiceMessageUploadData: null, isVoiceMessageButtonMounted: "text-default", isUsingHoldGesture: null };
+  obj = { voiceMessageAnimationState: obj2.makeMutable(items), recordingStatus: null, recordingId: null, currWaveHeight: "Reflect", showRecordingOverlay: "Array", startTimeMillis: 0, waveform: [], waveformVersion: "Set", showVoiceMessagesTooltip: "auto", savedVoiceMessageUploadData: "80%", isVoiceMessageButtonMounted: "hidden", isUsingHoldGesture: "auto" };
   items = [, ];
   ({ SENDING: arr[0], SENDING: arr[1] } = React2);
   obj2 = ReanimatedRexport;

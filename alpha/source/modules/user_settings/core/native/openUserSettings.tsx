@@ -1,14 +1,14 @@
-// Module ID: 7474
-// Function ID: 7475
+// Module ID: 7475
+// Function ID: 7476
 // Name: openUserSettings
-// Dependencies: [7475, 1087, 5137, 584, 2]
+// Dependencies: [7476, 1087, 5137, 584, 2]
 // Exports: openUserSettings
 
-// Module 7474 (openUserSettings)
+// Module 7475 (openUserSettings)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import RootNavigationRef from "RootNavigationRef" /* 5137 */;
-import UserSettingsAccountStore from "UserSettingsAccountStore" /* 7475 */;
+import UserSettingsAccountStore from "UserSettingsAccountStore" /* 7476 */;
 import size from "module_2" /* 2 */;
 
 const UserSettingsSections = Constants.UserSettingsSections;

@@ -1,9 +1,9 @@
-// Module ID: 16402
-// Function ID: 16403
+// Module ID: 16424
+// Function ID: 16425
 // Name: QuestOrbMultiplierPerkInfoActionSheet
-// Dependencies: [19, 17, 1087, 21, 4969, 587, 558, 576, 5196, 7474, 9886, 5646, 2067, 5230, 1128, 7060, 1633, 5568, 5111, 5220, 9561, 3636, 5251, 16399, 2]
+// Dependencies: [19, 17, 1087, 21, 4969, 587, 558, 576, 5196, 7475, 9893, 5646, 2067, 5230, 1128, 7059, 1633, 5568, 5111, 5220, 9568, 3636, 5251, 16421, 2]
 
-// Module 16402 (QuestOrbMultiplierPerkInfoActionSheet)
+// Module 16424 (QuestOrbMultiplierPerkInfoActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -17,11 +17,11 @@ import Text_Text from "Text/Text" /* 5220 */;
 import components_Button_Button from "components/Button/Button" /* 5230 */;
 import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5568 */;
 import LinkingDefault from "Linking" /* 5646 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7060 */;
-import openUserSettings from "openUserSettings" /* 7474 */;
-import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 9561 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9886 */;
-import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 16399 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7059 */;
+import openUserSettings from "openUserSettings" /* 7475 */;
+import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 9568 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9893 */;
+import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 16421 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
@@ -641,12 +641,12 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestOrbMu
   multiplier = multiplier.multiplier;
   const orbMultiplierEligibility = multiplier.orbMultiplierEligibility;
   const tmp = multiplier;
-  let obj = multiplier(9561);
+  let obj = multiplier(9568);
   const result = obj.shouldReceiveQuestOrbMultiplier(orbMultiplierEligibility);
   dependencyMap = result;
   const items = [orbMultiplierEligibility];
   const items1 = [result, orbMultiplierEligibility, multiplier];
-  const tmp4 = orbMultiplierEligibility === multiplier(9561).QuestOrbMultiplierEligibilityType.NITRO || orbMultiplierEligibility === tmp(9561).QuestOrbMultiplierEligibilityType.UPSELL;
+  const tmp4 = orbMultiplierEligibility === multiplier(9568).QuestOrbMultiplierEligibilityType.NITRO || orbMultiplierEligibility === tmp(9568).QuestOrbMultiplierEligibilityType.UPSELL;
   const memo = react.useMemo(() => {
     let stringResult;
     if (orbMultiplierEligibility === QuestOrbMultiplierUtils.QuestOrbMultiplierEligibilityType.XBOX_GAME_PASS) {
@@ -681,7 +681,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestOrbMu
   let obj2 = { scrollable: false, handleDisabled: true, startExpanded: true, contentStyles, children: closure_8(tmp7, obj3) };
   BottomSheet = tmp(5251).BottomSheet;
   obj3 = { visible: tmp4, children: closure_8(closure_14, { title: memo, body: memo1, eligibleToReceivePremiumRewards: result }) };
-  tmp7 = orbMultiplierEligibility(16399);
+  tmp7 = orbMultiplierEligibility(16421);
   return closure_8(BottomSheet, obj2);
 });
 let result = size.fileFinishedImporting("modules/quests/native/QuestOrbMultiplierPerkInfoActionSheet.tsx");

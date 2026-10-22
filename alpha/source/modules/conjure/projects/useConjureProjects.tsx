@@ -1,27 +1,27 @@
-// Module ID: 11696
-// Function ID: 11697
+// Module ID: 11707
+// Function ID: 11708
 // Name: useConjureProjects
-// Dependencies: [32, 19, 2045, 7687, 4899, 4843, 4901, 4995, 10669, 6759, 1128, 3830, 558, 576, 6794, 11693, 10701, 1455, 504, 7329, 2]
+// Dependencies: [32, 19, 2045, 7688, 4899, 4843, 4901, 4995, 10676, 6758, 1128, 3830, 558, 576, 6793, 11704, 10708, 1455, 504, 7330, 2]
 // Exports: describeConjureProjectRow
 
-// Module 11696 (useConjureProjects)
+// Module 11707 (useConjureProjects)
 import react2 from "react" /* 576 */;
 import intl6 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6794 */;
-import ConjureUtils from "ConjureUtils" /* 7329 */;
-import conjureAppInServer from "conjureAppInServer" /* 10701 */;
-import ConjureActivity from "ConjureActivity" /* 11693 */;
+import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6793 */;
+import ConjureUtils from "ConjureUtils" /* 7330 */;
+import conjureAppInServer from "conjureAppInServer" /* 10708 */;
+import ConjureActivity from "ConjureActivity" /* 11704 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
-import UserProfileStore from "UserProfileStore" /* 7687 */;
+import UserProfileStore from "UserProfileStore" /* 7688 */;
 import GuildChannelStore from "GuildChannelStore" /* 4899 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
-import ConjureChatStore from "ConjureChatStore" /* 10669 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6759 */;
+import ConjureChatStore from "ConjureChatStore" /* 10676 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6758 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ function collectEntries(_location) {
         const conjureActivityResult = tmpResult.conjureActivity(obj4);
         if ("done" === conjureActivityResult) {
           if (null != num) {
-            const sum = num + tmp(11693).CONJURE_DONE_WINDOW_MS;
+            const sum = num + tmp(11704).CONJURE_DONE_WINDOW_MS;
             bound = sum;
             if (null != bound) {
               const _Math = Math;

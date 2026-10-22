@@ -1,26 +1,26 @@
-// Module ID: 17179
-// Function ID: 17180
+// Module ID: 17201
+// Function ID: 17202
 // Name: SafetyGuildSettingMessageRequests
-// Dependencies: [4843, 17169, 8317, 11173, 558, 576, 17180, 16029, 4797, 5895, 1128, 5965, 17181, 7867, 6643, 7077, 17172, 11172, 2]
+// Dependencies: [4843, 17191, 8318, 11182, 558, 576, 17202, 16047, 4797, 5894, 1128, 5964, 17203, 7868, 6642, 7076, 17194, 11181, 2]
 
-// Module 17179 (SafetyGuildSettingMessageRequests)
+// Module 17201 (SafetyGuildSettingMessageRequests)
 import react from "react" /* 576 */;
 import intl5 from "intl" /* 1128 */;
 import UserSettings from "UserSettings" /* 4797 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5895 */;
-import AlertDefault from "Alert" /* 5965 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7077 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7867 */;
-import SettingsConstants from "SettingsConstants" /* 8317 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 11173 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16029 */;
-import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 17172 */;
-import useShouldDisableMessageRequestSettings from "useShouldDisableMessageRequestSettings" /* 17180 */;
-import DefaultDMSettingsExperiment from "DefaultDMSettingsExperiment" /* 17181 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5894 */;
+import AlertDefault from "Alert" /* 5964 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7076 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7868 */;
+import SettingsConstants from "SettingsConstants" /* 8318 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11182 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16047 */;
+import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 17194 */;
+import useShouldDisableMessageRequestSettings from "useShouldDisableMessageRequestSettings" /* 17202 */;
+import DefaultDMSettingsExperiment from "DefaultDMSettingsExperiment" /* 17203 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 17169 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 17191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11172 */;
+import SettingBuilders from "SettingBuilders" /* 11181 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -232,7 +232,7 @@ let obj = {
       const obj = DefaultDMSettingsExperiment;
       const tmp2 = require;
       if (obj.shouldAgeVerifyForDMDefaultOff()) {
-        const obj2 = { entryPoint: tmp2(6643).AgeVerificationModalEntryPoint.MESSAGE_REQUESTS_SETTINGS };
+        const obj2 = { entryPoint: tmp2(6642).AgeVerificationModalEntryPoint.MESSAGE_REQUESTS_SETTINGS };
         const showAgeVerificationGetStartedModal = AgeVerificationActionCreatorsDefault.showAgeVerificationGetStartedModal;
         AgeVerificationActionCreatorsDefault;
         const result = showAgeVerificationGetStartedModal(obj2);

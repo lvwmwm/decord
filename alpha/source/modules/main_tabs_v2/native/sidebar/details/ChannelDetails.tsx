@@ -1,23 +1,23 @@
-// Module ID: 17956
-// Function ID: 17957
+// Module ID: 17978
+// Function ID: 17979
 // Name: ChannelDetails
-// Dependencies: [19, 17, 13156, 4821, 9682, 9994, 21, 587, 4969, 558, 576, 504, 13103, 17957, 7237, 7262, 1505, 13254, 5253, 7024, 1633, 1384, 4926, 7568, 13167, 13142, 5038, 5192, 5195, 5233, 13176, 5145, 17958, 17968, 18084, 18086, 18087, 18088, 5926, 5283, 2]
+// Dependencies: [19, 17, 13172, 4821, 9689, 10001, 21, 587, 4969, 558, 576, 504, 13119, 17979, 7238, 7263, 1505, 13268, 5253, 7023, 1633, 1384, 4926, 7569, 13183, 13158, 5038, 5192, 5195, 5233, 13192, 5145, 17980, 17990, 18106, 18108, 18109, 18110, 5925, 5283, 2]
 
-// Module 17956 (ChannelDetails)
+// Module 17978 (ChannelDetails)
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import timing from "timing" /* 5192 */;
 import timingPresets from "timingPresets" /* 5195 */;
 import spring from "spring" /* 5233 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13142 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13167 */;
-import SearchActionCreatorsDefault from "SearchActionCreators" /* 13176 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13158 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13183 */;
+import SearchActionCreatorsDefault from "SearchActionCreators" /* 13192 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SearchQueryStore from "SearchQueryStore" /* 13156 */;
+import SearchQueryStore from "SearchQueryStore" /* 13172 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 9682 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9994 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 9689 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10001 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

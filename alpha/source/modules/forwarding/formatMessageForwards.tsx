@@ -1,17 +1,17 @@
-// Module ID: 8297
-// Function ID: 8298
+// Module ID: 8298
+// Function ID: 8299
 // Name: formatMessageForwards
-// Dependencies: [8298, 4821, 4843, 4901, 4911, 1392, 1417, 1128, 5588, 4794, 11, 5590, 2]
+// Dependencies: [8299, 4821, 4843, 4901, 4911, 1392, 1417, 1128, 5588, 4794, 11, 5590, 2]
 // Exports: maybeCreateSingleForwardForMessage
 
-// Module 8297 (formatMessageForwards)
+// Module 8298 (formatMessageForwards)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl4 from "intl" /* 1128 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import DateUtils from "DateUtils" /* 4794 */;
 import isForwardMessageDefault from "isForwardMessage" /* 5588 */;
 import useChannelName from "useChannelName" /* 5590 */;
-import BasicGuildStore from "BasicGuildStore" /* 8298 */;
+import BasicGuildStore from "BasicGuildStore" /* 8299 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import PermissionStore from "PermissionStore" /* 4901 */;

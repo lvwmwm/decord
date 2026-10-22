@@ -1,13 +1,13 @@
-// Module ID: 10937
-// Function ID: 10938
+// Module ID: 10945
+// Function ID: 10946
 // Name: useInappropriateConversationSafetyToolsWarningForChannel
-// Dependencies: [558, 576, 10898, 10899, 10896, 2]
+// Dependencies: [558, 576, 10906, 10907, 10904, 2]
 
-// Module 10937 (useInappropriateConversationSafetyToolsWarningForChannel)
+// Module 10945 (useInappropriateConversationSafetyToolsWarningForChannel)
 import react from "react" /* 576 */;
-import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 10896 */;
-import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 10898 */;
-import useSafetyAlertsSettingOrDefault from "useSafetyAlertsSettingOrDefault" /* 10899 */;
+import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 10904 */;
+import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 10906 */;
+import useSafetyAlertsSettingOrDefault from "useSafetyAlertsSettingOrDefault" /* 10907 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

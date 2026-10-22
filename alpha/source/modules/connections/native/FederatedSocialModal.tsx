@@ -1,11 +1,11 @@
-// Module ID: 14041
-// Function ID: 14042
+// Module ID: 14055
+// Function ID: 14056
 // Name: FederatedSocialModal
-// Dependencies: [5, 32, 19, 1087, 21, 4969, 6488, 1128, 7258, 5646, 14042, 7207, 5220, 6993, 1202, 5230, 558, 576, 6910, 7081, 2]
+// Dependencies: [5, 32, 19, 1087, 21, 4969, 6487, 1128, 7259, 5646, 14056, 7206, 5220, 6992, 1202, 5230, 558, 576, 6909, 7080, 2]
 
-// Module 14041 (FederatedSocialModal)
+// Module 14055 (FederatedSocialModal)
 import Constants from "Constants" /* 1087 */;
-import PlatformsDefault from "Platforms" /* 6488 */;
+import PlatformsDefault from "Platforms" /* 6487 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

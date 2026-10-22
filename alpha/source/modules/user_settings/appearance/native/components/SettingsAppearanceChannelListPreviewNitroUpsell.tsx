@@ -1,17 +1,17 @@
-// Module ID: 16554
-// Function ID: 16555
+// Module ID: 16576
+// Function ID: 16577
 // Name: SettingsAppearanceChannelListPreviewNitroUpsell
-// Dependencies: [19, 17, 4970, 1087, 21, 5038, 5244, 5233, 5234, 4969, 587, 558, 576, 7237, 7262, 9762, 9763, 1128, 1202, 5230, 504, 9816, 2]
+// Dependencies: [19, 17, 4970, 1087, 21, 5038, 5244, 5233, 5234, 4969, 587, 558, 576, 7238, 7263, 9769, 9770, 1128, 1202, 5230, 504, 9823, 2]
 
-// Module 16554 (SettingsAppearanceChannelListPreviewNitroUpsell)
+// Module 16576 (SettingsAppearanceChannelListPreviewNitroUpsell)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import spring from "spring" /* 5233 */;
 import springPresets from "springPresets" /* 5234 */;
 import LinearGradientDefault from "LinearGradient" /* 5244 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9762 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9763 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9816 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9769 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9770 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9823 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
@@ -107,8 +107,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
   fn.__initData = __initData2;
   ({ theme, ThemeTypes, StyleSheet, withSpring: theme(5233).withSpring, springStandard: theme(5234).springStandard });
   const animatedStyle = obj2.useAnimatedStyle(fn);
-  const tmp6 = analyticsLocations(7237);
-  analyticsLocations = tmp6(analyticsLocations(7262).CLIENT_THEMES_EDITOR).analyticsLocations;
+  const tmp6 = analyticsLocations(7238);
+  analyticsLocations = tmp6(analyticsLocations(7263).CLIENT_THEMES_EDITOR).analyticsLocations;
   if (cResult[0] !== analyticsLocations) {
     const fn2 = function l() {
       let obj2;
@@ -203,8 +203,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
   fn.__workletHash = 14565202241551;
   fn.__initData = __initData3;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const tmp3 = analyticsLocations(7237);
-  analyticsLocations = tmp3(analyticsLocations(7262).CLIENT_THEMES_EDITOR).analyticsLocations;
+  const tmp3 = analyticsLocations(7238);
+  analyticsLocations = tmp3(analyticsLocations(7263).CLIENT_THEMES_EDITOR).analyticsLocations;
   const items = [analyticsLocations];
   const obj3 = { style: tmp.nitroUpsell, children: items1 };
   const obj4 = { style: animatedStyle, importantForAccessibility: "no-hide-descendants", colors };

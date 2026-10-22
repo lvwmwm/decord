@@ -1,13 +1,13 @@
-// Module ID: 15212
-// Function ID: 15213
+// Module ID: 15225
+// Function ID: 15226
 // Name: MessageRequestLottie
-// Dependencies: [109, 19, 21, 558, 576, 15213, 11537, 2]
+// Dependencies: [109, 19, 21, 558, 576, 15226, 11548, 2]
 
-// Module 15212 (MessageRequestLottie)
+// Module 15225 (MessageRequestLottie)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import LottieIcon2 from "LottieIcon" /* 11537 */;
-import AssetRegistry from "AssetRegistry" /* 15213 */;
+import LottieIcon2 from "LottieIcon" /* 11548 */;
+import AssetRegistry from "AssetRegistry" /* 15226 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -48,7 +48,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReq
     }
     return tmp11;
   }
-  const LottieIcon = tmp(11537).LottieIcon;
+  const LottieIcon = tmp(11548).LottieIcon;
   const merged = Object.assign(tmp4);
   const tmp13 = <LottieIcon dotLottie={tmp9} animation="all" ref={tmp5} layers={layers} markers={items} />;
   cResult[4] = tmp4;

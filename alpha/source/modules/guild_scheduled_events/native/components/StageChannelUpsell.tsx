@@ -1,10 +1,10 @@
-// Module ID: 8915
-// Function ID: 8916
+// Module ID: 8922
+// Function ID: 8923
 // Name: StageChannelUpsell
-// Dependencies: [32, 19, 17, 4825, 8916, 8852, 1087, 21, 4969, 587, 6894, 1202, 8099, 5655, 8917, 5220, 1128, 5230, 6658, 8918, 2002, 5196, 2]
+// Dependencies: [32, 19, 17, 4825, 8923, 8859, 1087, 21, 4969, 587, 6893, 1202, 8100, 5655, 8924, 5220, 1128, 5230, 6657, 8925, 2002, 5196, 2]
 // Exports: default
 
-// Module 8915 (StageChannelUpsell)
+// Module 8922 (StageChannelUpsell)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -16,12 +16,12 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196
 import Text_Text from "Text/Text" /* 5220 */;
 import components_Button_Button from "components/Button/Button" /* 5230 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6658 */;
-import Pressables from "Pressables" /* 6894 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8099 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 8852 */;
-import StageChannelUpsellCardStore from "StageChannelUpsellCardStore" /* 8916 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8917 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6657 */;
+import Pressables from "Pressables" /* 6893 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8100 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 8859 */;
+import StageChannelUpsellCardStore from "StageChannelUpsellCardStore" /* 8923 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8924 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -117,7 +117,7 @@ export default function StageChannelUpsell(arg0) {
               obj.popWithKey(closure_1_11);
             }
           };
-          obj2.pushLazy(asyncRequire(8918, dependencyMap.paths), obj3, CREATE_CHANNEL_MODAL_KEY);
+          obj2.pushLazy(asyncRequire(8925, dependencyMap.paths), obj3, CREATE_CHANNEL_MODAL_KEY);
           closure_2();
           const obj4 = ActionSheetActionCreatorsDefault;
           obj4.hideActionSheet();

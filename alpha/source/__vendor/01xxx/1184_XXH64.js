@@ -34,14 +34,14 @@ class XXH64 {
       num = 0;
     }
     _classCallCheck(this, XXH64);
-    Object.defineProperty(this, closure_9, { writable: true, value: "Array" });
-    Object.defineProperty(this, closure_10, { writable: true, value: "Array" });
-    Object.defineProperty(this, closure_11, { writable: true, value: "Array" });
-    Object.defineProperty(this, closure_12, { writable: true, value: "Array" });
-    Object.defineProperty(this, closure_13, { writable: true, value: "Array" });
-    Object.defineProperty(this, closure_14, { writable: true, value: "Array" });
-    Object.defineProperty(this, closure_15, { writable: true, value: "Array" });
-    Object.defineProperty(this, closure_16, { writable: true, value: "Array" });
+    Object.defineProperty(this, closure_9, { writable: true, value: "a" });
+    Object.defineProperty(this, closure_10, { writable: true, value: "a" });
+    Object.defineProperty(this, closure_11, { writable: true, value: "a" });
+    Object.defineProperty(this, closure_12, { writable: true, value: "a" });
+    Object.defineProperty(this, closure_13, { writable: true, value: "a" });
+    Object.defineProperty(this, closure_14, { writable: true, value: "a" });
+    Object.defineProperty(this, closure_15, { writable: true, value: "a" });
+    Object.defineProperty(this, closure_16, { writable: true, value: "a" });
     this.reset(num);
   }
 }

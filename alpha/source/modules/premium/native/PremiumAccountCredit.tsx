@@ -1,9 +1,9 @@
-// Module ID: 14639
-// Function ID: 14640
+// Module ID: 14653
+// Function ID: 14654
 // Name: PremiumAccountCredit
-// Dependencies: [19, 17, 7490, 1087, 21, 4969, 587, 7245, 558, 576, 2053, 1128, 3250, 9778, 5220, 504, 12, 2]
+// Dependencies: [19, 17, 7491, 1087, 21, 4969, 587, 7246, 558, 576, 2053, 1128, 3250, 9785, 5220, 504, 12, 2]
 
-// Module 14639 (PremiumAccountCredit)
+// Module 14653 (PremiumAccountCredit)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,9 +11,9 @@ import Constants from "Constants" /* 1087 */;
 import intl6 from "intl" /* 1128 */;
 import PremiumUtils from "PremiumUtils" /* 2053 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import GameIcon from "GameIcon" /* 7245 */;
+import GameIcon from "GameIcon" /* 7246 */;
 import react from "react" /* 19 */;
-import EntitlementStore from "EntitlementStore" /* 7490 */;
+import EntitlementStore from "EntitlementStore" /* 7491 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -368,11 +368,11 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Account
     if (tmp9) {
       const obj13 = { style: tmp4.boostIcon, children: metroRequire(BoostGemIcon, obj14) };
       obj14 = { size: "md", color: tmp23(587).unsafe_rawColors.GUILD_BOOSTING_PINK };
-      BoostGemIcon = tmp(9778).BoostGemIcon;
+      BoostGemIcon = tmp(9785).BoostGemIcon;
       tmp43Result = tmp43(tmp39, obj13);
     } else {
       const obj15 = { size: GameIcon.GameIconSizes.SMALL, skuId: tmp5 };
-      const tmp23Result = tmp23(7245);
+      const tmp23Result = tmp23(7246);
       tmp43Result = tmp43(tmp23Result, obj15);
     }
     cResult[37] = tmp9;
@@ -467,7 +467,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Account
   if (result1) {
     const obj7 = { style: tmp.boostIcon, children: metroRequire(BoostGemIcon, obj8) };
     obj8 = { size: "md", color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
-    BoostGemIcon = tmp2(9778).BoostGemIcon;
+    BoostGemIcon = tmp2(9785).BoostGemIcon;
     tmp22Result = tmp22(tmp20, obj7);
     tmp25 = tmp22;
   } else {

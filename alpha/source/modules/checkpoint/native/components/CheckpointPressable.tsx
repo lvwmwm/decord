@@ -1,14 +1,14 @@
-// Module ID: 12928
-// Function ID: 12929
+// Module ID: 12947
+// Function ID: 12948
 // Name: CheckpointPressable
-// Dependencies: [109, 17, 6002, 21, 587, 4969, 558, 576, 2]
+// Dependencies: [109, 17, 6001, 21, 587, 4969, 558, 576, 2]
 
-// Module 12928 (CheckpointPressable)
+// Module 12947 (CheckpointPressable)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 6002 */;
+import CheckpointConstants from "CheckpointConstants" /* 6001 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -204,16 +204,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointPr
   if (shadowColor === undefined) {
     shadowColor = metroRequire;
   }
-  let merged = Object.assign(arg0, Object.assign({ style: 0, containerStyle: 0, children: 0, disabled: 0, onPress: 0, size: 0, shadowColor: 0 }));
+  const merged = Object.assign(arg0, Object.assign({ style: 0, containerStyle: 0, children: 0, disabled: 0, onPress: 0, size: 0, shadowColor: 0 }));
   const tmp2 = closure_9();
   let closure_3 = tmp2;
-  const tmp4 = hasOwnProperty;
-  let obj = { style: items, children: items2 };
+  const obj = { style: items, children: items2 };
   items = [tmp2.container, containerStyle];
   let tmp5 = !disabled;
   const tmp3 = metroImportAll;
   if (!disabled) {
-    let obj2 = { style: items1 };
+    const obj2 = { style: items1 };
     items1 = [tmp2.shadow, ];
     const obj3 = { backgroundColor: shadowColor };
     items1[1] = obj3;
@@ -239,9 +238,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointPr
   };
   const merged1 = Object.assign(merged);
   items2[1] = metroImportDefault(React3, obj4);
-  return tmp3(tmp4, obj);
+  return tmp3(hasOwnProperty, obj);
 });
-let result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointPressable.tsx");
+const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointPressable.tsx");
 
 export default tmp5;
 export const SHADOW_OFFSET = PX_4;

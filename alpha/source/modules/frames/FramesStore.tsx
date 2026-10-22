@@ -1,17 +1,17 @@
-// Module ID: 6761
-// Function ID: 6762
+// Module ID: 6760
+// Function ID: 6761
 // Name: FramesStore
-// Dependencies: [6762, 5595, 1098, 5609, 504, 6763, 6764, 584, 2]
+// Dependencies: [6761, 5595, 1098, 5609, 504, 6762, 6763, 584, 2]
 
-// Module 6761 (FramesStore)
+// Module 6760 (FramesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1098 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5595 */;
 import getURLForApplicationDefault from "getURLForApplication" /* 5609 */;
-import EmbeddedAppTypes from "EmbeddedAppTypes" /* 6763 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6764 */;
-import FramesConstants from "FramesConstants" /* 6762 */;
+import EmbeddedAppTypes from "EmbeddedAppTypes" /* 6762 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6763 */;
+import FramesConstants from "FramesConstants" /* 6761 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -143,7 +143,7 @@ let obj = {
           const obj3 = { id: null, applicationId: null, intent: null, surface: null, launchRequestId: null, state: "launched", data: obj5 };
           ({ id: obj2.id, applicationId: obj2.applicationId, intent: obj2.intent, surface: obj2.surface, launchRequestId: obj2.launchRequestId } = value);
           const _Date = Date;
-          obj5 = { url: tmp5, connectedSince: Date.now(), layoutMode: hasOwnProperty.FOCUSED, activityPanelMode: ActivityPanelModes.PANEL, proxyTicket, proxyTicketRefreshing: false, orientationLock: null, pipOrientationLock: null, runsInBackground: false, poolVisibility: "unpooled", muted: false, iframeId: null, hostWindowKey, launch };
+          obj5 = { url: tmp5, connectedSince: Date.now(), layoutMode: hasOwnProperty.FOCUSED, activityPanelMode: ActivityPanelModes.PANEL, proxyTicket, proxyTicketRefreshing: false, orientationLock: null, pipOrientationLock: null, runsInBackground: false, poolVisibility: "unpooled", muted: false, userMuted: false, iframeId: null, hostWindowKey, launch };
           set = map.set;
           const merged = Object.assign(closure_12);
           if (hostWindowKey == null) {
@@ -365,14 +365,42 @@ let obj = {
           const obj = { data: obj2 };
           set = tmp2.set;
           const merged = Object.assign(value);
-          obj2 = { poolVisibility, muted: "hidden" === poolVisibility };
-          const merged1 = Object.assign(value.data);
+          const data = value.data;
+          obj2 = { poolVisibility, muted: "hidden" === poolVisibility || data.userMuted };
+          const merged1 = Object.assign(data);
           const result = set(frameId, obj);
           flag2 = true;
         }
         tmp5 = flag2;
       }
       flag = tmp5;
+    }
+    return flag;
+  },
+  FRAME_SET_USER_MUTED: function handleSetUserMuted(arg0) {
+    let muted;
+    let obj2;
+    ({ frameId, muted } = arg0);
+    let flag = false;
+    if (null != frameId) {
+      const value = map.get(frameId);
+      let tmp4 = metroImportDefault(value);
+      const tmp = map;
+      if (tmp4) {
+        let flag2 = value.data.userMuted !== muted;
+        if (flag2) {
+          const obj = { data: obj2 };
+          set = tmp.set;
+          const merged = Object.assign(value);
+          const data = value.data;
+          obj2 = { userMuted: muted, muted: "hidden" === data.poolVisibility || muted };
+          const merged1 = Object.assign(data);
+          const result = set(frameId, obj);
+          flag2 = true;
+        }
+        tmp4 = flag2;
+      }
+      flag = tmp4;
     }
     return flag;
   },

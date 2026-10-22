@@ -1,9 +1,9 @@
-// Module ID: 12017
-// Function ID: 12018
+// Module ID: 12028
+// Function ID: 12029
 // Name: ActivityShelfBadge
 // Dependencies: [19, 17, 1087, 21, 4969, 587, 1202, 558, 576, 2000, 1128, 5220, 2]
 
-// Module 12017 (ActivityShelfBadge)
+// Module 12028 (ActivityShelfBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

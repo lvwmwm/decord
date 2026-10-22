@@ -1,9 +1,9 @@
-// Module ID: 8986
-// Function ID: 8987
+// Module ID: 8993
+// Function ID: 8994
 // Name: guildEventDetailsParser
 // Dependencies: [5691, 2]
 
-// Module 8986 (guildEventDetailsParser)
+// Module 8993 (guildEventDetailsParser)
 import MarkupUtils from "MarkupUtils" /* 5691 */;
 import size from "module_2" /* 2 */;
 

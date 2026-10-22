@@ -1,10 +1,10 @@
-// Module ID: 10040
-// Function ID: 10041
+// Module ID: 10047
+// Function ID: 10048
 // Name: SummaryActionCreators
-// Dependencies: [5, 19, 6482, 4821, 9979, 1087, 1104, 584, 1297, 6360, 12, 9981, 558, 576, 573, 2]
+// Dependencies: [5, 19, 6481, 4821, 9986, 1087, 1104, 584, 1297, 6359, 12, 9988, 558, 576, 573, 2]
 // Exports: deleteSummary, fetchSummaries, setHighlightedSummary, setSelectedSummary, setSummaryFeedback, stopPolling, toggleTopicsBar, updateVisibleMessages
 
-// Module 10040 (SummaryActionCreators)
+// Module 10047 (SummaryActionCreators)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
@@ -12,9 +12,9 @@ import DurationsDefault from "Durations" /* 1104 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6482 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6481 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import SummaryStore from "SummaryStore" /* 9979 */;
+import SummaryStore from "SummaryStore" /* 9986 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

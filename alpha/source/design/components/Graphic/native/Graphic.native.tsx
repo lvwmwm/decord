@@ -1,9 +1,9 @@
-// Module ID: 9820
-// Function ID: 9821
+// Module ID: 9827
+// Function ID: 9828
 // Name: Graphic
 // Dependencies: [109, 19, 17, 21, 4969, 558, 576, 5655, 5023, 5123, 2]
 
-// Module 9820 (Graphic)
+// Module 9827 (Graphic)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

@@ -1,17 +1,17 @@
-// Module ID: 7075
-// Function ID: 7076
+// Module ID: 7074
+// Function ID: 7075
 // Name: UserSettingsConfirmPassword
-// Dependencies: [5, 32, 19, 17, 1392, 1087, 21, 4969, 587, 558, 576, 7076, 504, 7077, 6360, 1257, 1128, 7079, 5220, 6993, 7019, 5230, 2]
+// Dependencies: [5, 32, 19, 17, 1392, 1087, 21, 4969, 587, 558, 576, 7075, 504, 7076, 6359, 1257, 1128, 7078, 5220, 6992, 7018, 5230, 2]
 
-// Module 7075 (UserSettingsConfirmPassword)
+// Module 7074 (UserSettingsConfirmPassword)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6993 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7076 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7077 */;
-import UserSettingsAccountUnverifiedHeaderDefault from "UserSettingsAccountUnverifiedHeader" /* 7079 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6992 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7075 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7076 */;
+import UserSettingsAccountUnverifiedHeaderDefault from "UserSettingsAccountUnverifiedHeader" /* 7078 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -255,7 +255,7 @@ class UserSettingsConfirmPasswordInner {
         tmp20Result = null;
         if (null == obj2.getFieldMessage("password")) {
           const obj9 = { style: tmp.hint, children: obj2.message };
-          tmp20Result = tmp20(tmp21(7019), obj9);
+          tmp20Result = tmp20(tmp21(7018), obj9);
         }
       }
       items3[3] = tmp20Result;

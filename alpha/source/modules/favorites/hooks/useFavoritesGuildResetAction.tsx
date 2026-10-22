@@ -1,9 +1,9 @@
-// Module ID: 17463
-// Function ID: 17464
+// Module ID: 17485
+// Function ID: 17486
 // Name: useFavoritesGuildResetAction
-// Dependencies: [19, 4995, 1087, 558, 576, 4797, 4846, 1114, 10809, 1128, 3412, 2]
+// Dependencies: [19, 4995, 1087, 558, 576, 4797, 4846, 1114, 10817, 1128, 3412, 2]
 
-// Module 17463 (useFavoritesGuildResetAction)
+// Module 17485 (useFavoritesGuildResetAction)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import router_utils from "router_utils" /* 1114 */;
@@ -11,7 +11,7 @@ import intl3 from "intl" /* 1128 */;
 import _modDef3412 from "module_3412" /* 3412 */;
 import UserSettings from "UserSettings" /* 4797 */;
 import FavoritesUtils from "FavoritesUtils" /* 4846 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10809 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10817 */;
 import react from "react" /* 19 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

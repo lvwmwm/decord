@@ -1,30 +1,30 @@
-// Module ID: 7619
-// Function ID: 7620
+// Module ID: 7620
+// Function ID: 7621
 // Name: ChannelListStore
-// Dependencies: [4820, 4873, 6770, 6756, 4903, 1246, 502, 7199, 4821, 7620, 4901, 6757, 4872, 6690, 1097, 7621, 12, 1388, 4890, 11, 504, 584, 2]
+// Dependencies: [4820, 4873, 6769, 6755, 4903, 1246, 502, 7198, 4821, 7621, 4901, 6756, 4872, 6689, 1097, 7622, 12, 1388, 4890, 11, 504, 584, 2]
 
-// Module 7619 (ChannelListStore)
+// Module 7620 (ChannelListStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4890 */;
-import ChannelListStateDefault from "ChannelListState" /* 7621 */;
+import ChannelListStateDefault from "ChannelListState" /* 7622 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
 import GatedChannelStore from "GatedChannelStore" /* 4873 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6770 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6756 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6769 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6755 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4903 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7199 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7198 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7620 */;
+import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7621 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
-import ReadStateStore from "ReadStateStore" /* 6757 */;
+import ReadStateStore from "ReadStateStore" /* 6756 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6690 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6689 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

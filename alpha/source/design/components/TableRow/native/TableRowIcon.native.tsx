@@ -1,9 +1,9 @@
-// Module ID: 6897
-// Function ID: 6898
+// Module ID: 6896
+// Function ID: 6897
 // Name: TableRowIcon
 // Dependencies: [109, 19, 17, 21, 4969, 587, 5232, 558, 576, 2]
 
-// Module 6897 (TableRowIcon)
+// Module 6896 (TableRowIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

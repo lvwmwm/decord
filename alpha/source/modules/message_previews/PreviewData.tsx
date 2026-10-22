@@ -1,13 +1,13 @@
-// Module ID: 14966
-// Function ID: 14967
+// Module ID: 14979
+// Function ID: 14980
 // Name: PreviewData
-// Dependencies: [4912, 6757, 5999, 11, 2]
+// Dependencies: [4912, 6756, 5998, 11, 2]
 
-// Module 14966 (PreviewData)
+// Module 14979 (PreviewData)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5999 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5998 */;
 import MessageRecord from "MessageRecord" /* 4912 */;
-import ReadStateStore from "ReadStateStore" /* 6757 */;
+import ReadStateStore from "ReadStateStore" /* 6756 */;
 import size from "module_2" /* 2 */;
 
 let set;

@@ -1,14 +1,14 @@
-// Module ID: 14200
-// Function ID: 14201
+// Module ID: 14214
+// Function ID: 14215
 // Name: AddFriendNicknameModal
-// Dependencies: [5, 32, 19, 17, 4911, 1392, 21, 4969, 587, 10003, 504, 1128, 6658, 7398, 7121, 5965, 5220, 7001, 5018, 2]
+// Dependencies: [5, 32, 19, 17, 4911, 1392, 21, 4969, 587, 10010, 504, 1128, 6657, 7399, 7120, 5964, 5220, 7000, 5018, 2]
 // Exports: default
 
-// Module 14200 (AddFriendNicknameModal)
+// Module 14214 (AddFriendNicknameModal)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6658 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6657 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -171,7 +171,7 @@ export default function AddFriendNicknameModal(arg0) {
   const tmp3 = showUserProfile;
   const tmp4 = dependencyMap;
   const tmp2 = _slicedToArray(react.useState(false), 2);
-  _slicedToArray = showUserProfile(10003)();
+  _slicedToArray = showUserProfile(10010)();
   let obj2 = get_initialized;
   const items = [obj];
   const stateFromStores = obj2.useStateFromStores(items, () => RelationshipStore.getNickname(require));
@@ -213,8 +213,8 @@ export default function AddFriendNicknameModal(arg0) {
     onCancel: callback1,
     children: items3
   };
-  tmp3Result = tmp3(7121);
-  tmp3Result3 = tmp3(5965);
+  tmp3Result = tmp3(7120);
+  tmp3Result3 = tmp3(5964);
   intl3 = tmp5(1128).intl;
   intl4 = tmp5(1128).intl;
   let obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: stringResult };
@@ -224,7 +224,7 @@ export default function AddFriendNicknameModal(arg0) {
   intl5 = tmp5(1128).intl;
   items3[1] = closure_9(Text, obj7);
   let obj8 = { onChange: callback, autoFocus: true, accessibilityLabel: intl6.string(tmp5(1128).t.pqG6GS), placeholder: tmp3Result4.getName(stateFromStores1), defaultValue: stateFromStores, maxLength: 32, clearable: true };
-  const TextField = tmp5(7001).TextField;
+  const TextField = tmp5(7000).TextField;
   intl6 = tmp5(1128).intl;
   tmp3Result4 = tmp3(5018);
   items3[2] = closure_9(TextField, obj8);

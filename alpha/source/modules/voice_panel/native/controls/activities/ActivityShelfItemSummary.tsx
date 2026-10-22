@@ -1,16 +1,16 @@
-// Module ID: 18471
-// Function ID: 18472
+// Module ID: 18493
+// Function ID: 18494
 // Name: ActivityShelfItemSummary
-// Dependencies: [32, 19, 17, 21, 4969, 587, 4966, 558, 576, 18472, 11231, 1202, 5242, 5220, 5248, 5038, 2]
+// Dependencies: [32, 19, 17, 21, 4969, 587, 4966, 558, 576, 18494, 11240, 1202, 5242, 5220, 5248, 5038, 2]
 
-// Module 18471 (ActivityShelfItemSummary)
+// Module 18493 (ActivityShelfItemSummary)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 5038 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import ButtonPill from "ButtonPill" /* 5242 */;
-import useActivityUsersDefault from "useActivityUsers" /* 18472 */;
+import useActivityUsersDefault from "useActivityUsers" /* 18494 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -29,7 +29,7 @@ let tmp2;
 let tmp4;
 const native = tmp(1202);
 const ButtonEllipsis = tmp2(5248);
-const UserSummaryItemDefault = tmp4(11231);
+const UserSummaryItemDefault = tmp4(11240);
 let View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;

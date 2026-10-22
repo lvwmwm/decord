@@ -1,9 +1,9 @@
-// Module ID: 12150
-// Function ID: 12151
+// Module ID: 12161
+// Function ID: 12162
 // Name: useCustomKeyboardBottomSheetConfig
-// Dependencies: [19, 4970, 1384, 1899, 5147, 1631, 558, 576, 1499, 10884, 5585, 10883, 2]
+// Dependencies: [19, 4970, 1384, 1899, 5147, 1631, 558, 576, 1499, 10892, 5585, 10891, 2]
 
-// Module 12150 (useCustomKeyboardBottomSheetConfig)
+// Module 12161 (useCustomKeyboardBottomSheetConfig)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import KeyboardTypes from "KeyboardTypes" /* 1631 */;
 import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 1899 */;
@@ -38,7 +38,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCustomKey
   }
   const tmp8 = minimum(1499)(first);
   _require = tmp8;
-  const tmp9 = minimum(10884)();
+  const tmp9 = minimum(10892)();
   minimum = tmp9.minimum;
   const maximum = tmp9.maximum;
   if (cResult[1] === minimum) {
@@ -136,7 +136,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCustomKey
   let obj2;
   let str;
   let styles;
-  const f113004 = () => {
+  const f113127 = () => {
     const obj = { initialPosition: styles.height - minimum, animateOnMount: false };
     let tmp3 = obj;
     const obj2 = PlatformUtils;
@@ -175,8 +175,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCustomKey
   minimum = tmp3.minimum;
   const maximum = tmp3.maximum;
   let items = [flag, maximum, minimum];
-  ({ initialPosition, animateOnMount } = require("useInitialValue")(f113004));
-  const tmp4 = require("useInitialValue")(f113004);
+  ({ initialPosition, animateOnMount } = require("useInitialValue")(f113127));
+  const tmp4 = require("useInitialValue")(f113127);
   let obj = { animateOnMount, enablePanDownToClose: flag2, accessible: obj2.isAndroid() && undefined, contentHeight: maximum, containerHeight: tmp2.height, enableDynamicSizing: false, initialPosition, keyboardBehavior: "extend", android_keyboardInputMode: str, snapPoints: memo };
   memo = maximum.useMemo(() => {
     let items1;

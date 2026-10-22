@@ -1,23 +1,23 @@
-// Module ID: 19053
-// Function ID: 19054
+// Module ID: 19076
+// Function ID: 19077
 // Name: GuildSettingsModalBans
-// Dependencies: [32, 19, 17, 4843, 4901, 1392, 8975, 1087, 21, 4969, 587, 504, 7130, 4797, 6813, 6816, 8974, 6889, 1202, 6898, 1128, 7269, 5648, 7274, 7120, 19054, 7131, 8696, 7136, 5578, 2]
+// Dependencies: [32, 19, 17, 4843, 4901, 1392, 8982, 1087, 21, 4969, 587, 504, 7129, 4797, 6812, 6815, 8981, 6888, 1202, 6897, 1128, 7270, 5648, 7275, 7119, 19077, 7130, 8703, 7135, 5578, 2]
 // Exports: default
 
-// Module 19053 (GuildSettingsModalBans)
+// Module 19076 (GuildSettingsModalBans)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6813 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6816 */;
-import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7274 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6812 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6815 */;
+import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7275 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
 import UserStore from "UserStore" /* 1392 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8975 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8982 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import size from "module_2" /* 2 */;
@@ -273,7 +273,7 @@ export default function ConnectedGuildSettingsModalBans(guildId) {
     }
     const obj5 = { style: tmp.containerInner, children: null };
     tmp19 = closure_12;
-    const obj6 = { style: tmp.searchField, children: closure_12(tmp2(tmp3[26]).SearchField, obj7) };
+    const obj6 = { style: tmp.searchField, children: closure_12(tmp2(tmp3[26]).SearchBar, obj7) };
     obj7 = { size: "md", onChange: tmp15 };
     const items7 = [closure_12(setting, obj6), ];
     const tmp18 = setting;

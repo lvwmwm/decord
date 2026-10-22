@@ -1,9 +1,9 @@
-// Module ID: 6861
-// Function ID: 6862
+// Module ID: 6860
+// Function ID: 6861
 // Name: MemberVerificationFormStore
 // Dependencies: [504, 12, 4998, 584, 2]
 
-// Module 6861 (MemberVerificationFormStore)
+// Module 6860 (MemberVerificationFormStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;

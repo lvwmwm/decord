@@ -1,12 +1,12 @@
-// Module ID: 9403
-// Function ID: 9404
+// Module ID: 9410
+// Function ID: 9411
 // Name: useProductPurchaseState
-// Dependencies: [7649, 9404, 1995, 558, 576, 504, 2]
+// Dependencies: [7650, 9411, 1995, 558, 576, 504, 2]
 
-// Module 9403 (useProductPurchaseState)
+// Module 9410 (useProductPurchaseState)
 import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
-import compactDefault from "compact" /* 9404 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7649 */;
+import compactDefault from "compact" /* 9411 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7650 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

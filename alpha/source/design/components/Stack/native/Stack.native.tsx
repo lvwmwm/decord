@@ -1,9 +1,9 @@
-// Module ID: 5964
-// Function ID: 5965
+// Module ID: 5963
+// Function ID: 5964
 // Name: Stack/Stack
 // Dependencies: [19, 17, 21, 4969, 558, 576, 2]
 
-// Module 5964 (Stack/Stack)
+// Module 5963 (Stack/Stack)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

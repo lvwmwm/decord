@@ -1,16 +1,16 @@
-// Module ID: 12099
-// Function ID: 12100
+// Module ID: 12110
+// Function ID: 12111
 // Name: AppLauncherChoicesActionSheet
-// Dependencies: [32, 109, 19, 17, 1504, 21, 4969, 587, 558, 576, 7206, 1633, 1384, 6694, 8919, 5196, 7024, 12100, 12102, 2]
+// Dependencies: [32, 109, 19, 17, 1504, 21, 4969, 587, 558, 576, 7205, 1633, 1384, 6693, 8926, 5196, 7023, 12111, 12113, 2]
 
-// Module 12099 (AppLauncherChoicesActionSheet)
+// Module 12110 (AppLauncherChoicesActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6694 */;
-import Form from "Form" /* 8919 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6693 */;
+import Form from "Form" /* 8926 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
@@ -28,8 +28,8 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const defaultMVCPConfig = tmp(7206);
-const f112801 = (choice, originalIndex) => ({ choice, originalIndex });
+const defaultMVCPConfig = tmp(7205);
+const f112924 = (choice, originalIndex) => ({ choice, originalIndex });
 let length = ["scrollable"];
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
@@ -138,7 +138,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
         if (choices == null) {
           choices = [];
         }
-        return choices.map(function() { /* body not rendered: F112801 */ });
+        return choices.map(function() { /* body not rendered: F112924 */ });
       }
     }
     cResult[2] = option.choices;
@@ -151,7 +151,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
         if (choices == null) {
           choices = [];
         }
-        return choices.map(function() { /* body not rendered: F112801 */ });
+        return choices.map(function() { /* body not rendered: F112924 */ });
       }
     }
   }
@@ -233,7 +233,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
       obj = { style: items, children: null };
       items[2] = lastItem;
       tmp5 = tmp === originalIndex;
-      obj1 = { style: tmp4.listItem, label: item.choice.displayName, align: "right", selected: tmp5, onPress() { /* body not rendered: F147910 */ } };
+      obj1 = { style: tmp4.listItem, label: item.choice.displayName, align: "right", selected: tmp5, onPress() { /* body not rendered: F148134 */ } };
       obj.children = tmp2(option(closure_2[14]).FormRadioRow, obj1);
       return tmp2(tmp3, obj);
     }
@@ -280,7 +280,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
     if (choices == null) {
       choices = [];
     }
-    return choices.map(f112801);
+    return choices.map(f112924);
   });
   [first1, react] = react.useState(initChoiceIndex);
   let items = [option.choices];
@@ -350,15 +350,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
   let obj2 = { option, startExpanded: tmp13, onDismiss, scrollable: tmp13, children: items3 };
   let tmp16 = tmp13;
   length = data.length;
-  const AppLauncherCommandOptionActionSheet = tmp3(12102).AppLauncherCommandOptionActionSheet;
+  const AppLauncherCommandOptionActionSheet = tmp3(12113).AppLauncherCommandOptionActionSheet;
   const tmp15 = closure_10;
   if (tmp13) {
     const obj3 = { onChange: callback };
-    tmp16 = closure_9(tmp3(12100).AppLauncherListSearchBar, obj3);
+    tmp16 = closure_9(tmp3(12111).AppLauncherListSearchBar, obj3);
   }
   items3 = [tmp16, ];
   if (0 === length) {
-    tmp20 = closure_9(tmp3(12100).AppLauncherListEmptyState, {});
+    tmp20 = closure_9(tmp3(12111).AppLauncherListEmptyState, {});
   } else {
     const obj4 = {
       scrollable: tmp13,

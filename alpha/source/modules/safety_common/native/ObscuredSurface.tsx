@@ -1,15 +1,15 @@
-// Module ID: 9266
-// Function ID: 9267
+// Module ID: 9273
+// Function ID: 9274
 // Name: ObscuredSurface
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 8537, 1128, 5220, 9267, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 8538, 1128, 5220, 9274, 2]
 
-// Module 9266 (ObscuredSurface)
+// Module 9273 (ObscuredSurface)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import ImageWarningIcon2 from "ImageWarningIcon" /* 8537 */;
-import ObscuredSurfaceContext from "ObscuredSurfaceContext" /* 9267 */;
+import ImageWarningIcon2 from "ImageWarningIcon" /* 8538 */;
+import ObscuredSurfaceContext from "ObscuredSurfaceContext" /* 9274 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -65,7 +65,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ObscuredSurf
       const _Symbol = Symbol;
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
         const obj3 = { size: "lg", color: nativeDefault.colors.TEXT_DEFAULT };
-        const ImageWarningIcon = tmp(8537).ImageWarningIcon;
+        const ImageWarningIcon = tmp(8538).ImageWarningIcon;
         const tmp18 = React3(ImageWarningIcon, obj3);
         cResult[5] = tmp18;
         tmp15 = tmp18;
@@ -132,7 +132,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ObscuredSurf
             }
           }
           const obj6 = { value: ObscuredSurfaceContext.OBSCURED_VALUE, children: hasOwnProperty(View, obj7) };
-          const Provider = tmp(9267).ObscuredSurfaceContext.Provider;
+          const Provider = tmp(9274).ObscuredSurfaceContext.Provider;
           obj7 = { style: tmp4.container, children: items };
           items = [tmp6, tmp10, tmp31];
           const tmp39 = React3(Provider, obj6);

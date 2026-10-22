@@ -1,14 +1,14 @@
-// Module ID: 18227
-// Function ID: 18228
+// Module ID: 18249
+// Function ID: 18250
 // Name: MessageRequestsScreenWithTabs
-// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 1128, 18228, 18244, 8869, 9115, 11111, 12775, 2]
+// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 1128, 18250, 18266, 8876, 9122, 11120, 12794, 2]
 
-// Module 18227 (MessageRequestsScreenWithTabs)
+// Module 18249 (MessageRequestsScreenWithTabs)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import MessageRequestListDefault from "MessageRequestList" /* 18228 */;
-import SpamMessageListDefault from "SpamMessageList" /* 18244 */;
+import MessageRequestListDefault from "MessageRequestList" /* 18250 */;
+import SpamMessageListDefault from "SpamMessageList" /* 18266 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -22,10 +22,10 @@ let obj2;
 let obj3;
 let tmp;
 const intl5 = tmp(1128);
-const SegmentedControlState = tmp(8869);
-const SegmentedControl = tmp(9115);
-const SegmentedControlPages = tmp(11111);
-const TTIFirstContentfulPaint = tmp(12775);
+const SegmentedControlState = tmp(8876);
+const SegmentedControl = tmp(9122);
+const SegmentedControlPages = tmp(11120);
+const TTIFirstContentfulPaint = tmp(12794);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const constants = { REQUEST: "REQUEST", SPAM: "SPAM" };
@@ -48,13 +48,13 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let tmp7;
   let tmp8;
   let tmp9;
-  const tmp = require;
+  let tmp = require;
   let obj = react2;
   const cResult = obj.c(30);
   navigation = navigation.navigation;
   const tmp4 = closure_9();
-  let tmp5 = _slicedToArray(react.useState(0), 2);
-  [tmp6, closure_129_1] = tmp5;
+  [tmp6, closure_129_1] = _slicedToArray(react.useState(0), 2);
+  const tmp5 = _slicedToArray(react.useState(0), 2);
   if (cResult[0] !== navigation) {
     const fn = function b(channelId) {
       const obj = { channelId };
@@ -76,8 +76,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     tmp8 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    let intl = intl5.intl;
-    let stringResult = intl.string(intl5.t["7RFcXZ"]);
+    const intl = intl5.intl;
+    const stringResult = intl.string(intl5.t["7RFcXZ"]);
     cResult[3] = stringResult;
     tmp9 = stringResult;
   } else {
@@ -93,7 +93,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     tmp11 = cResult[5];
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    let intl2 = intl5.intl;
+    const intl2 = intl5.intl;
     const stringResult1 = intl2.string(intl5.t.ulKXHp);
     cResult[6] = stringResult1;
     tmp15 = stringResult1;
@@ -102,6 +102,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }
   if (cResult[7] !== tmp7) {
     let obj4 = { label: tmp15, id: constants.SPAM, page: metroRequire(SpamMessageListDefault, obj5) };
+    let tmp19 = metroRequire;
     obj5 = { goToMessageRequestPreview: tmp7 };
     cResult[7] = tmp7;
     cResult[8] = obj4;
@@ -169,7 +170,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
               return tmp41;
             }
           }
-          let obj8 = { style: tmp4.container, children: items };
+          const obj8 = { style: tmp4.container, children: items };
           items = [tmp27, tmp34, tmp38];
           const tmp44 = metroImportDefault(View, obj8);
           cResult[26] = tmp4.container;
@@ -185,7 +186,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         cResult[24] = tmp37;
         tmp34 = tmp37;
       }
-      const obj10 = { style: tmp4.tabContainer, onLayout: tmp8, children: tmp24 };
+      let obj10 = { style: tmp4.tabContainer, onLayout: tmp8, children: tmp24 };
       const tmp30 = metroRequire(View, obj10);
       cResult[17] = tmp4.tabContainer;
       cResult[18] = tmp24;
@@ -223,24 +224,23 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     closure_1(nativeEvent.nativeEvent.layout.width);
   }, []);
   let obj = { items: items1, pageWidth: first, defaultIndex: 0 };
-  const obj2 = { label: intl.string(intl5.t["7RFcXZ"]), id: constants.REQUEST, page: metroRequire(MessageRequestListDefault, { goToMessageRequestPreview: callback }) };
-  const useSegmentedControlState = SegmentedControlState.useSegmentedControlState;
-  SegmentedControlState;
+  const tmp6 = SegmentedControlState;
+  let obj2 = { label: intl.string(intl5.t["7RFcXZ"]), id: constants.REQUEST, page: metroRequire(MessageRequestListDefault, { goToMessageRequestPreview: callback }) };
+  const useSegmentedControlState = tmp6.useSegmentedControlState;
   intl = intl5.intl;
   items1 = [obj2, ];
-  const obj3 = { label: intl2.string(intl5.t.ulKXHp), id: constants.SPAM, page: metroRequire(SpamMessageListDefault, { goToMessageRequestPreview: callback }) };
+  let obj3 = { label: intl2.string(intl5.t.ulKXHp), id: constants.SPAM, page: metroRequire(SpamMessageListDefault, { goToMessageRequestPreview: callback }) };
   intl2 = intl5.intl;
   items1[1] = obj3;
   const segmentedControlState = useSegmentedControlState(obj);
-  const obj4 = { style: tmp.container, children: items2 };
-  items2 = [, , ];
-  const obj5 = { style: tmp.tabContainer, onLayout: callback1, children: metroRequire(SegmentedControl.SegmentedControl, { state: segmentedControlState }) };
-  items2[0] = metroRequire(View, obj5);
-  const obj6 = { style: tmp.messageRequestContent, children: metroRequire(SegmentedControlPages.SegmentedControlPages, { state: segmentedControlState }) };
+  let obj4 = { style: tmp.container, children: items2 };
+  let obj5 = { style: tmp.tabContainer, onLayout: callback1, children: metroRequire(SegmentedControl.SegmentedControl, { state: segmentedControlState }) };
+  items2 = [metroRequire(View, obj5), , ];
+  let obj6 = { style: tmp.messageRequestContent, children: metroRequire(SegmentedControlPages.SegmentedControlPages, { state: segmentedControlState }) };
   items2[1] = metroRequire(View, obj6);
   items2[2] = metroRequire(TTIFirstContentfulPaint.TTIFirstContentfulPaint, { label: "message_requests" });
   return metroImportDefault(View, obj4);
 }));
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/message_requests/screens/MessageRequestsScreenWithTabs.tsx");
+let result = size.fileFinishedImporting("modules/main_tabs_v2/native/message_requests/screens/MessageRequestsScreenWithTabs.tsx");
 
 export default memoResult;

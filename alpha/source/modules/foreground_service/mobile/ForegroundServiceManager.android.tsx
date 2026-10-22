@@ -1,12 +1,12 @@
-// Module ID: 10069
-// Function ID: 10070
+// Module ID: 10076
+// Function ID: 10077
 // Name: ForegroundServiceManager
-// Dependencies: [17, 10070, 1357, 2004, 2]
+// Dependencies: [17, 10077, 1357, 2004, 2]
 
-// Module 10069 (ForegroundServiceManager)
+// Module 10076 (ForegroundServiceManager)
 import react_native from "react-native" /* 17 */;
 import _modDef1357 from "module_1357" /* 1357 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10070 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10077 */;
 import LifecycleManager from "LifecycleManager" /* 2004 */;
 import size from "module_2" /* 2 */;
 

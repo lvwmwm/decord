@@ -1,41 +1,23 @@
 // Module ID: 12549
 // Function ID: 12550
-// Dependencies: [12537, 12509]
-// Exports: parseSampleRate
+// Dependencies: [12526]
+// Exports: getCapturedScopesOnSpan, setCapturedScopesOnSpan
 
 // Module 12549
-import _mod12537 from "module_12537" /* 12537 */;
+import _mod12526 from "module_12526" /* 12526 */;
 
+const _sentryScope = "_sentryScope";
+const _sentryIsolationScope = "_sentryIsolationScope";
 
-export const parseSampleRate = function parseSampleRate(flag) {
-  if (typeof flag === "boolean") {
-    const _Number = Number;
-    return Number(flag);
-  } else {
-    let parsed = flag;
-    if (typeof flag === "string") {
-      const _parseFloat = parseFloat;
-      parsed = parseFloat(flag);
-    }
-    if (typeof parsed === "number") {
-      const _isNaN = isNaN;
-      if (!isNaN(parsed)) {
-        if (parsed >= 0) {
-          if (parsed <= 1) {
-            return parsed;
-          }
-        }
-      }
-    }
-    const tmp = require;
-    if (_mod12537.DEBUG_BUILD) {
-      const logger = tmp(12509).logger;
-      const _JSON = JSON;
-      const warn = logger.warn;
-      const json = JSON.stringify(flag);
-      const _JSON2 = JSON;
-      const _HermesInternal = HermesInternal;
-      warn("[Tracing] Given sample rate is invalid. Sample rate must be a boolean or a number between 0 and 1. Got " + json + " of type " + JSON.stringify(typeof flag) + ".");
-    }
+export const getCapturedScopesOnSpan = function getCapturedScopesOnSpan(scope) {
+  return { scope: scope[_sentryScope], isolationScope: scope[_sentryIsolationScope] };
+};
+export const setCapturedScopesOnSpan = function setCapturedScopesOnSpan(arg0, arg1, arg2) {
+  const tmp = arg0;
+  if (tmp) {
+    const obj = _mod12526;
+    const result = obj.addNonEnumerableProperty(arg0, _sentryIsolationScope, arg2);
+    const obj2 = _mod12526;
+    const result1 = obj2.addNonEnumerableProperty(arg0, _sentryScope, arg1);
   }
 };

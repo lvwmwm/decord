@@ -1,15 +1,15 @@
-// Module ID: 14106
-// Function ID: 14107
+// Module ID: 14120
+// Function ID: 14121
 // Name: GuildProfileTraits
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 1417, 4919, 7213, 5220, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 1417, 4919, 7212, 5220, 2]
 
-// Module 14106 (GuildProfileTraits)
+// Module 14120 (GuildProfileTraits)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 4919 */;
-import EmojiDefault from "Emoji" /* 7213 */;
+import EmojiDefault from "Emoji" /* 7212 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -53,7 +53,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitEm
         }
       }
       const obj5 = { src: tmp4, name: tmp8, fastImageStyle: tmp3.emojiImage };
-      const tmp11 = hasOwnProperty(tmp7(7213), obj5);
+      const tmp11 = hasOwnProperty(tmp7(7212), obj5);
       cResult[3] = tmp4;
       cResult[4] = tmp8;
       cResult[5] = tmp3.emojiImage;

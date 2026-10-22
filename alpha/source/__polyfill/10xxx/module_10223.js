@@ -1,61 +1,89 @@
 // Module ID: 10223
 // Function ID: 10224
-// Dependencies: [41, 42]
+// Dependencies: [41, 42, 93, 95, 98, 10191, 10194, 10195, 10211]
 
 // Module 10223
+import _mod10191 from "module_10191" /* 10191 */;
+import ReferenceWithTimezone2 from "ReferenceWithTimezone" /* 10195 */;
+import _mod10211 from "module_10211" /* 10211 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-let start;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-const regExp = new RegExp("^\\s*(?:\\(?(?:GMT|UTC)\\s?)?([+-])(\\d{1,2})(?::?(\\d{2}))?\\)?", "i");
-class ExtractTimezoneOffsetRefiner {
-  constructor() {
-    _classCallCheck(this, ExtractTimezoneOffsetRefiner);
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
+class ENMergeRelativeAfterDateRefiner {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ENMergeRelativeAfterDateRefiner);
+    const obj = _getPrototypeOf(ENMergeRelativeAfterDateRefiner);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(ENMergeRelativeAfterDateRefiner, _mod10211.MergingRefiner);
 const entry = {
-  key: "refine",
-  value: function refine(arg0, arr) {
-    let text = arg0;
-    const item = arr.forEach((start) => {
-      text = start;
-      start = start.start;
-      if (!start.isCertain("timezoneOffset")) {
-        const str = text.text;
-        const match = regExp.exec(str.substring(start.index + start.text.length));
-        const obj = text;
-        if (match) {
-          obj.debug(() => {
-            console.log("Extracting timezone: '" + match[0] + "' into : " + closure_0);
-          });
-          const _parseInt = parseInt;
-          let str2 = match[3];
-          const result = 60 * parseInt(match[2]);
-          const _parseInt2 = parseInt;
-          if (!str2) {
-            str2 = "0";
-          }
-          const sum = result + _parseInt2(str2);
-          if (sum <= 840) {
-            let tmp7 = sum;
-            if ("-" === match[1]) {
-              tmp7 = -sum;
-            }
-            if (null != start.end) {
-              const end = start.end;
-              end.assign("timezoneOffset", tmp7);
-            }
-            const start2 = start.start;
-            start2.assign("timezoneOffset", tmp7);
-            start.text = start.text + match[0];
-          }
-        }
+  key: "shouldMergeResults",
+  value: function shouldMergeResults(str, arg1, text) {
+    let match = str.match(/^\s*$/i);
+    if (match) {
+      str = text.text;
+      let tmp4 = null != str.match(/^[+-]/i);
+      if (!tmp4) {
+        const str2 = text.text;
+        tmp4 = null != str2.match(/^-/i);
       }
-    });
-    return arr;
+      match = tmp4;
+    }
+    return match;
   }
 };
-const items = [entry];
+const items = [
+  entry,
+  {
+    key: "mergeResults",
+    value: function mergeResults(arg0, start, text, arg3) {
+      let index;
+      let reference;
+      const parseDurationResult = _mod10191.parseDuration(text.text);
+      let reverseDurationResult = parseDurationResult;
+      const str = text.text;
+      if (null != str.match(/^-/i)) {
+        reverseDurationResult = tmp(10194).reverseDuration(parseDurationResult);
+      }
+      const ParsingComponents = tmp(10195).ParsingComponents;
+      const createRelativeFromReference = ParsingComponents.createRelativeFromReference;
+      const ReferenceWithTimezone = tmp(10195).ReferenceWithTimezone;
+      start = start.start;
+      const relativeFromReference = createRelativeFromReference(ReferenceWithTimezone.fromDate(start.date()), reverseDurationResult);
+      ({ reference, index } = start);
+      const parsingResult = new ReferenceWithTimezone2.ParsingResult(reference, index, "" + start.text + arg0 + text.text, relativeFromReference);
+      return parsingResult;
+    }
+  }
+];
 
-export default _createClass(ExtractTimezoneOffsetRefiner, items);
+export default _createClass(ENMergeRelativeAfterDateRefiner, items);

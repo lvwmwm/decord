@@ -1,24 +1,24 @@
-// Module ID: 9451
-// Function ID: 9452
+// Module ID: 9458
+// Function ID: 9459
 // Name: GameProfileDetails
-// Dependencies: [19, 17, 8807, 21, 8798, 9452, 7039, 9261, 9454, 9456, 4969, 587, 558, 576, 5646, 9458, 9459, 9272, 1128, 2000, 4794, 9460, 5220, 2]
+// Dependencies: [19, 17, 8814, 21, 8805, 9459, 7038, 9268, 9461, 9463, 4969, 587, 558, 576, 5646, 9465, 9466, 9279, 1128, 2000, 4794, 9467, 5220, 2]
 
-// Module 9451 (GameProfileDetails)
+// Module 9458 (GameProfileDetails)
 import nativeDefault from "native" /* 587 */;
 import intl13 from "intl" /* 1128 */;
 import Server from "Server" /* 2000 */;
 import DateUtilsAll from "DateUtils" /* 4794 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import LinkingDefault from "Linking" /* 5646 */;
-import MobilePhoneIcon from "MobilePhoneIcon" /* 7039 */;
-import PlatformType from "PlatformType" /* 8798 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 8807 */;
-import XboxNeutralIcon from "XboxNeutralIcon" /* 9261 */;
-import SKUUtils from "SKUUtils" /* 9272 */;
-import ScreenIcon from "ScreenIcon" /* 9452 */;
-import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9454 */;
-import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 9456 */;
-import useGameProfilePlatformsDefault from "useGameProfilePlatforms" /* 9459 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 7038 */;
+import PlatformType from "PlatformType" /* 8805 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 8814 */;
+import XboxNeutralIcon from "XboxNeutralIcon" /* 9268 */;
+import SKUUtils from "SKUUtils" /* 9279 */;
+import ScreenIcon from "ScreenIcon" /* 9459 */;
+import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9461 */;
+import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 9463 */;
+import useGameProfilePlatformsDefault from "useGameProfilePlatforms" /* 9466 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -145,7 +145,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
   ({ game, trackAction } = arg0);
   const tmp4 = closure_11();
   importDefault = tmp4;
-  let obj2 = trackAction(9458);
+  let obj2 = trackAction(9465);
   const gameProfileLinks = obj2.useGameProfileLinks(game);
   const arr2 = useGameProfilePlatformsDefault(game);
   if (null != game) {
@@ -178,7 +178,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
       let joined;
       if (game != null) {
         const genres1 = game.genres;
-        const mapped = genres1.map(tmp(9272).getGenreText);
+        const mapped = genres1.map(tmp(9279).getGenreText);
         joined = mapped.join(", ");
       }
       let genres2;

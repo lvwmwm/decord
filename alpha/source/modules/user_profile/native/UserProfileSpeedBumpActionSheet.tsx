@@ -1,19 +1,19 @@
-// Module ID: 8644
-// Function ID: 8645
+// Module ID: 8651
+// Function ID: 8652
 // Name: UserProfileSpeedBumpActionSheet
-// Dependencies: [32, 19, 17, 4821, 4881, 1392, 8645, 1087, 21, 4969, 587, 8647, 1128, 558, 576, 6973, 6889, 1202, 4976, 5191, 504, 8648, 7262, 7237, 8652, 8661, 1267, 8643, 8641, 8662, 7048, 5220, 5976, 5230, 6894, 4797, 5251, 5255, 2]
+// Dependencies: [32, 19, 17, 4821, 4881, 1392, 8652, 1087, 21, 4969, 587, 8654, 1128, 558, 576, 6972, 6888, 1202, 4976, 5191, 504, 8655, 7263, 7238, 8659, 8668, 1267, 8650, 8648, 8669, 7047, 5220, 5975, 5230, 6893, 4797, 5251, 5255, 2]
 
-// Module 8644 (UserProfileSpeedBumpActionSheet)
+// Module 8651 (UserProfileSpeedBumpActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import UserSettings from "UserSettings" /* 4797 */;
-import TableRow2 from "TableRow" /* 6889 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8641 */;
-import UserActionCreators from "UserActionCreators" /* 8643 */;
-import Constants2 from "Constants" /* 8645 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8647 */;
+import TableRow2 from "TableRow" /* 6888 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8648 */;
+import UserActionCreators from "UserActionCreators" /* 8650 */;
+import Constants2 from "Constants" /* 8652 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8654 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
@@ -79,7 +79,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Inform
         stringResult = intl2.string(tmp(1128).t.W6fjkS);
       }
       items[1] = obj3;
-      const TableRowGroup = tmp(6973).TableRowGroup;
+      const TableRowGroup = tmp(6972).TableRowGroup;
       const mapped = items.map((icon, index) => {
         let Icon;
         let obj2;
@@ -148,7 +148,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Inform
           return authStore2(TableRow, obj, index);
         })
     };
-    const TableRowGroup = tmp4(6973).TableRowGroup;
+    const TableRowGroup = tmp4(6972).TableRowGroup;
     return closure_12(TableRowGroup, obj3);
   } else {
     throw new TypeError("Trying to call a non-function");

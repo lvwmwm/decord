@@ -1,16 +1,16 @@
-// Module ID: 17523
-// Function ID: 17524
+// Module ID: 17545
+// Function ID: 17546
 // Name: GuildProgressButton
-// Dependencies: [19, 21, 12140, 587, 11023, 558, 576, 13316, 13319, 8921, 17524, 1128, 13436, 2]
+// Dependencies: [19, 21, 12151, 587, 11032, 558, 576, 13330, 13333, 8928, 17546, 1128, 13450, 2]
 // Exports: getScaledGuildProgressButtonHeight
 
-// Module 17523 (GuildProgressButton)
+// Module 17545 (GuildProgressButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11023 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12140 */;
-import GuildProgressUtils from "GuildProgressUtils" /* 13316 */;
-import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 13319 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11032 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12151 */;
+import GuildProgressUtils from "GuildProgressUtils" /* 13330 */;
+import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 13333 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProgr
   let obj = guild(576);
   const cResult = obj.c(15);
   guild = guild.guild;
-  let obj2 = guild(13316);
+  let obj2 = guild(13330);
   const guildProgressStep = obj2.useGuildProgressStep(guild);
   ({ percentComplete, subtitle, completed } = guildProgressStep);
   if (cResult[0] === completed) {
@@ -45,8 +45,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProgr
       }
       const _Symbol = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        const Icon = tmp(8921).RowButton.Icon;
-        const tmp15 = <Icon source={completed(17524)} />;
+        const Icon = tmp(8928).RowButton.Icon;
+        const tmp15 = <Icon source={completed(17546)} />;
         const intl = tmp(1128).intl;
         const stringResult = intl.string(tmp(1128).t.o3HK3d);
         cResult[7] = tmp15;
@@ -58,7 +58,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProgr
         tmp12 = cResult[8];
       }
       if (cResult[9] !== percentComplete) {
-        const tmp20 = jsx(completed(13436), { percent: percentComplete });
+        const tmp20 = jsx(completed(13450), { percent: percentComplete });
         cResult[9] = percentComplete;
         cResult[10] = tmp20;
         tmp17 = tmp20;
@@ -74,7 +74,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProgr
           return tmp21;
         }
       }
-      const tmp23 = jsx(tmp(8921).RowButton, { icon: tmp11, label: tmp12, subLabel: subtitle, onPress: tmp9, trailing: tmp17 });
+      const tmp23 = jsx(tmp(8928).RowButton, { icon: tmp11, label: tmp12, subLabel: subtitle, onPress: tmp9, trailing: tmp17 });
       cResult[11] = tmp9;
       cResult[12] = subtitle;
       cResult[13] = tmp17;
@@ -113,7 +113,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProgr
   let percentComplete;
   let subtitle;
   guild = guild.guild;
-  let obj = guild(13316);
+  let obj = guild(13330);
   const guildProgressStep = obj.useGuildProgressStep(guild);
   const completed = guildProgressStep.completed;
   const items = [completed, guild.id];
@@ -135,9 +135,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProgr
     const obj2 = GuildProgressUtils;
     obj2.openActionSheet(guild);
   }, items1);
-  const RowButton = guild(8921).RowButton;
-  ({ source: completed(17524) });
-  const Icon = guild(8921).RowButton.Icon;
+  const RowButton = guild(8928).RowButton;
+  ({ source: completed(17546) });
+  const Icon = guild(8928).RowButton.Icon;
   const intl = guild(1128).intl;
   return <RowButton icon={null} label={intl.string(guild(1128).t.o3HK3d)} subLabel={subtitle} onPress={callback} trailing={null} />;
 });

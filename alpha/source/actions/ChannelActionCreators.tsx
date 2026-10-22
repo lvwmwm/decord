@@ -1,9 +1,9 @@
-// Module ID: 7395
-// Function ID: 7396
+// Module ID: 7396
+// Function ID: 7397
 // Name: ChannelActionCreators
-// Dependencies: [32, 5, 7396, 4825, 4821, 6757, 1087, 7397, 1297, 6818, 5137, 5693, 6620, 584, 6807, 1267, 1114, 4976, 1128, 7408, 5695, 6369, 2]
+// Dependencies: [32, 5, 7397, 4825, 4821, 6756, 1087, 7398, 1297, 6817, 5137, 5693, 6619, 584, 6806, 1267, 1114, 4976, 1128, 7409, 5695, 6368, 2]
 
-// Module 7395 (ChannelActionCreators)
+// Module 7396 (ChannelActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl2 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
@@ -12,13 +12,13 @@ import ChannelRecord from "ChannelRecord" /* 4825 */;
 import shared from "shared" /* 4976 */;
 import RootNavigationRef from "RootNavigationRef" /* 5137 */;
 import preloadChannelDefault from "preloadChannel" /* 5695 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6620 */;
-import isChangelogChannelDefault from "isChangelogChannel" /* 6807 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6619 */;
+import isChangelogChannelDefault from "isChangelogChannel" /* 6806 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChangelogStore from "ChangelogStore" /* 7396 */;
+import ChangelogStore from "ChangelogStore" /* 7397 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import ReadStateStore from "ReadStateStore" /* 6757 */;
+import ReadStateStore from "ReadStateStore" /* 6756 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -471,7 +471,7 @@ let obj = {
     if (flag3 == null) {
       flag3 = false;
     }
-    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "r", parent_id: "toCharArray$esjava$1" }, silent: flag2 };
+    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "toCharArray$esjava$1" }, silent: flag2 };
     const tmpResult2 = DispatcherDefault;
     tmpResult2.dispatch(obj2);
     if (flag) {

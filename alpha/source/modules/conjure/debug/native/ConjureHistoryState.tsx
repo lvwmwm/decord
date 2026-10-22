@@ -1,9 +1,9 @@
-// Module ID: 12485
-// Function ID: 12486
+// Module ID: 12496
+// Function ID: 12497
 // Name: ConjureHistoryState
 // Dependencies: [19, 17, 21, 4969, 587, 558, 576, 1128, 3830, 5220, 2]
 
-// Module 12485 (ConjureHistoryState)
+// Module 12496 (ConjureHistoryState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

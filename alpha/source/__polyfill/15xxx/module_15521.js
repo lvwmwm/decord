@@ -1,20 +1,20 @@
 // Module ID: 15521
 // Function ID: 15522
-// Dependencies: [15489, 15490, 15522]
+// Dependencies: [15506]
 
 // Module 15521
-import _mod15490 from "module_15490" /* 15490 */;
-import _mod15522 from "module_15522" /* 15522 */;
-import getOwnPropertyDescriptor from "module_15489" /* 15489 */;
+import _mod15506 from "module_15506" /* 15506 */;
 
-const f70877 = () => {
-  const obj = {
-    get() {
-      return 7;
-    }
-  };
-  return 7 !== Object.defineProperty(_mod15522("div"), "a", obj).a;
+let _window = 0;
+let closure_1 = Math.random();
+let closure_2 = _mod15506((1).toString);
+
+export default (arg0) => {
+  let _window;
+  let str = "";
+  if (undefined !== arg0) {
+    str = arg0;
+  }
+  _window = _window + 1;
+  return `Symbol(${str}` + ")_" + closure_2(_window + closure_1, 36);
 };
-!getOwnPropertyDescriptor && !_mod15490(f70877);
-
-export default !getOwnPropertyDescriptor && !_mod15490(f70877);

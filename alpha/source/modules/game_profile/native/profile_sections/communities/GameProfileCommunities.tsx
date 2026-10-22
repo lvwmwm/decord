@@ -1,22 +1,22 @@
-// Module ID: 9475
-// Function ID: 9476
+// Module ID: 9482
+// Function ID: 9483
 // Name: GameProfileCommunities
-// Dependencies: [32, 5, 19, 17, 4843, 4872, 9269, 1087, 4828, 21, 4969, 587, 558, 576, 4835, 504, 9220, 9264, 9214, 7304, 7432, 7262, 7303, 1128, 9310, 9476, 9479, 5196, 9481, 5220, 7943, 9483, 12, 9304, 2]
+// Dependencies: [32, 5, 19, 17, 4843, 4872, 9276, 1087, 4828, 21, 4969, 587, 558, 576, 4835, 504, 9227, 9271, 9221, 7305, 7433, 7263, 7304, 1128, 9317, 9483, 9486, 5196, 9488, 5220, 7944, 9490, 12, 9311, 2]
 
-// Module 9475 (GameProfileCommunities)
+// Module 9482 (GameProfileCommunities)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import ChannelConstants from "ChannelConstants" /* 4828 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 4835 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5196 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9214 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9220 */;
-import GameProfileNavTypes from "GameProfileNavTypes" /* 9264 */;
-import GameProfileConstants from "GameProfileConstants" /* 9269 */;
-import useGameProfileCommunitiesDefault from "useGameProfileCommunities" /* 9476 */;
-import useGameProfileCommunitiesLocaleFilterDefault from "useGameProfileCommunitiesLocaleFilter" /* 9479 */;
-import GameProfileCommunitiesLocaleFilterActionSheet from "GameProfileCommunitiesLocaleFilterActionSheet" /* 9481 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9221 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9227 */;
+import GameProfileNavTypes from "GameProfileNavTypes" /* 9271 */;
+import GameProfileConstants from "GameProfileConstants" /* 9276 */;
+import useGameProfileCommunitiesDefault from "useGameProfileCommunities" /* 9483 */;
+import useGameProfileCommunitiesLocaleFilterDefault from "useGameProfileCommunitiesLocaleFilter" /* 9486 */;
+import GameProfileCommunitiesLocaleFilterActionSheet from "GameProfileCommunitiesLocaleFilterActionSheet" /* 9488 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -661,8 +661,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileC
   intl = game(1128).intl;
   items1 = [closure_11(Heading, obj3), ];
   if (showLocaleFilter) {
-    const obj4 = { size: "sm", variant: "secondary", icon: closure_11(game(9483).LanguageIcon, { size: "sm" }), accessibilityLabel: intl2.string(game(1128).t.OlOHDH), onPress: callback };
-    const IconButton = tmp12(7943).IconButton;
+    const obj4 = { size: "sm", variant: "secondary", icon: closure_11(game(9490).LanguageIcon, { size: "sm" }), accessibilityLabel: intl2.string(game(1128).t.OlOHDH), onPress: callback };
+    const IconButton = tmp12(7944).IconButton;
     intl2 = tmp12(1128).intl;
     showLocaleFilter = tmp11(IconButton, obj4);
   }

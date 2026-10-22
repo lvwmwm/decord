@@ -1,9 +1,9 @@
-// Module ID: 15040
-// Function ID: 15041
+// Module ID: 15053
+// Function ID: 15054
 // Name: RemoteAuthModal
-// Dependencies: [32, 19, 17, 1087, 21, 4969, 587, 558, 576, 1633, 5655, 15041, 15039, 5581, 1297, 6658, 12, 15042, 5220, 1128, 1202, 5230, 6682, 15046, 6866, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 4969, 587, 558, 576, 1633, 5655, 15054, 15052, 5581, 1297, 6657, 12, 15055, 5220, 1128, 1202, 5230, 6681, 15059, 6865, 2]
 
-// Module 15040 (RemoteAuthModal)
+// Module 15053 (RemoteAuthModal)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,12 +16,12 @@ import Text_Text from "Text/Text" /* 5220 */;
 import components_Button_Button from "components/Button/Button" /* 5230 */;
 import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5581 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6658 */;
-import ButtonGroup2 from "ButtonGroup" /* 6682 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15039 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15041 */;
-import QrLoginSpotIllustration from "QrLoginSpotIllustration" /* 15042 */;
-import QrSuccessSpotIllustration from "QrSuccessSpotIllustration" /* 15046 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6657 */;
+import ButtonGroup2 from "ButtonGroup" /* 6681 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15052 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15054 */;
+import QrLoginSpotIllustration from "QrLoginSpotIllustration" /* 15055 */;
+import QrSuccessSpotIllustration from "QrSuccessSpotIllustration" /* 15059 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -41,7 +41,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const ActivityIndicator_ActivityIndicator = tmp(6866);
+const ActivityIndicator_ActivityIndicator = tmp(6865);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, StyleSheet } = react_native);
 const Endpoints = Constants.Endpoints;
@@ -405,7 +405,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remote
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { scale };
-      const tmp19 = closure_7(tmp(15042).QrLoginSpotIllustration, obj4);
+      const tmp19 = closure_7(tmp(15055).QrLoginSpotIllustration, obj4);
       cResult[7] = tmp19;
       tmp16 = tmp19;
     } else {
@@ -515,7 +515,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remote
         }
         const obj10 = { style: buttonGroup, children: items2 };
         items2 = [tmp35, tmp40];
-        const tmp45 = closure_8(tmp(6682).ButtonGroup, obj10);
+        const tmp45 = closure_8(tmp(6681).ButtonGroup, obj10);
         cResult[22] = tmp4.buttonGroup;
         cResult[23] = tmp35;
         cResult[24] = tmp40;

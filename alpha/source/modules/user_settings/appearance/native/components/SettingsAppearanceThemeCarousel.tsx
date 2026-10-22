@@ -1,9 +1,9 @@
-// Module ID: 16524
-// Function ID: 16525
+// Module ID: 16546
+// Function ID: 16547
 // Name: SettingsAppearanceThemeCarousel
-// Dependencies: [19, 17, 16525, 1087, 21, 5038, 1202, 4969, 587, 558, 576, 5253, 12, 5198, 1256, 1128, 16526, 5192, 5195, 9871, 5220, 1630, 10485, 16529, 2]
+// Dependencies: [19, 17, 16547, 1087, 21, 5038, 1202, 4969, 587, 558, 576, 5253, 12, 5198, 1256, 1128, 16548, 5192, 5195, 9878, 5220, 1630, 10492, 16551, 2]
 
-// Module 16524 (SettingsAppearanceThemeCarousel)
+// Module 16546 (SettingsAppearanceThemeCarousel)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -14,7 +14,7 @@ import timing from "timing" /* 5192 */;
 import HapticUtils from "HapticUtils" /* 5198 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 16525 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 16547 */;
 import Fragment from "Fragment" /* 21 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
 import createStyles_mod from "createStyles" /* 4969 */;

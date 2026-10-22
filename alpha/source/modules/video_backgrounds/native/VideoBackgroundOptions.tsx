@@ -1,14 +1,14 @@
-// Module ID: 11583
-// Function ID: 11584
+// Module ID: 11594
+// Function ID: 11595
 // Name: VideoBackgroundOptions
-// Dependencies: [19, 5850, 21, 4969, 587, 558, 576, 5856, 1128, 6897, 9740, 11584, 5655, 2]
+// Dependencies: [19, 5849, 21, 4969, 587, 558, 576, 5855, 1128, 6896, 9747, 11595, 5655, 2]
 // Exports: fromVideoBackgroundRadioValue, parseVideoBackgroundRadioValue, toVideoBackgroundRadioValue
 
-// Module 11583 (VideoBackgroundOptions)
+// Module 11594 (VideoBackgroundOptions)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5850 */;
-import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 5856 */;
+import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5849 */;
+import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 5855 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -49,7 +49,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoBa
     const obj2 = { value: none, label: intl.string(require("intl").t.fUdMeO), icon: null };
     intl = tmp2(1128).intl;
     ({ IconComponent: require("DenyIcon").DenyIcon });
-    const TableRowIcon = tmp2(6897).TableRowIcon;
+    const TableRowIcon = tmp2(6896).TableRowIcon;
     cResult[1] = obj2;
     tmp8 = obj2;
   } else {
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoBa
     const obj4 = { value: BLUR_BACKGROUND_OPTION, label: intl2.string(require("intl").t.LhSyL8), icon: null };
     intl2 = tmp2(1128).intl;
     ({ IconComponent: require("BlurBackgroundIcon").BlurBackgroundIcon });
-    const TableRowIcon2 = tmp2(6897).TableRowIcon;
+    const TableRowIcon2 = tmp2(6896).TableRowIcon;
     cResult[2] = obj4;
     tmp11 = obj4;
   } else {

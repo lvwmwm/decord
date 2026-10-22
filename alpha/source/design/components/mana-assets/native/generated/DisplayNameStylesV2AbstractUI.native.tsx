@@ -1,28 +1,28 @@
-// Module ID: 18296
-// Function ID: 18297
+// Module ID: 18318
+// Function ID: 18319
 // Name: DisplayNameStylesV2AbstractUI
-// Dependencies: [19, 21, 18297, 18298, 18299, 558, 576, 6981, 5655, 2]
+// Dependencies: [19, 21, 18319, 18320, 18321, 558, 576, 6980, 5655, 2]
 
-// Module 18296 (DisplayNameStylesV2AbstractUI)
+// Module 18318 (DisplayNameStylesV2AbstractUI)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import react_native from "react-native" /* 6981 */;
-import _modDef18297 from "module_18297" /* 18297 */;
-import _modDef18298 from "module_18298" /* 18298 */;
-import _modDef18299 from "module_18299" /* 18299 */;
+import react_native from "react-native" /* 6980 */;
+import _modDef18319 from "module_18319" /* 18319 */;
+import _modDef18320 from "module_18320" /* 18320 */;
+import _modDef18321 from "module_18321" /* 18321 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef18297 };
+let obj2 = { uri: _modDef18319 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef18298 };
+let obj3 = { uri: _modDef18320 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef18299 };
-({ uri: _modDef18299 });
+obj[3] = { uri: _modDef18321 };
+({ uri: _modDef18321 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameStylesV2AbstractUI(arg0) {
   let accessibilityLabel;
   let accessible;

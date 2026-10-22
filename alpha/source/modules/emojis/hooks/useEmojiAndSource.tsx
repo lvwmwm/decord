@@ -1,17 +1,17 @@
-// Module ID: 9914
-// Function ID: 9915
+// Module ID: 9921
+// Function ID: 9922
 // Name: useEmojiAndSource
-// Dependencies: [5, 32, 19, 4843, 6711, 6870, 1087, 4918, 558, 576, 573, 2]
+// Dependencies: [5, 32, 19, 4843, 6710, 6869, 1087, 4918, 558, 576, 573, 2]
 
-// Module 9914 (useEmojiAndSource)
+// Module 9921 (useEmojiAndSource)
 import Constants from "Constants" /* 1087 */;
 import EmojiTypes from "EmojiTypes" /* 4918 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import EmojiStore from "EmojiStore" /* 6711 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6870 */;
+import EmojiStore from "EmojiStore" /* 6710 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6869 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -556,10 +556,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiAndS
       if (current != null) {
         currentResult = current();
       }
-      closure_0 = closure_2(function() { /* body not rendered: F158761 */ });
+      closure_0 = closure_2(function() { /* body not rendered: F159013 */ });
       tmp3 = closure_2;
       if (tmp3) {
-        tmp5 = (function fetch() { /* body not rendered: F158762 */ })();
+        tmp5 = (function fetch() { /* body not rendered: F159014 */ })();
       } else {
         current2 = tmp.current;
         if (current2 != null) {

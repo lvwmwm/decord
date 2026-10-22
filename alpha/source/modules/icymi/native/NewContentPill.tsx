@@ -1,20 +1,20 @@
-// Module ID: 17864
-// Function ID: 17865
+// Module ID: 17886
+// Function ID: 17887
 // Name: NewContentPill
-// Dependencies: [32, 19, 17, 4843, 8791, 21, 4969, 587, 558, 576, 9375, 6869, 504, 5191, 8804, 8808, 5038, 5233, 1508, 12499, 5220, 1128, 6894, 4976, 2]
+// Dependencies: [32, 19, 17, 4843, 8798, 21, 4969, 587, 558, 576, 9382, 6868, 504, 5191, 8811, 8815, 5038, 5233, 1508, 12510, 5220, 1128, 6893, 4976, 2]
 
-// Module 17864 (NewContentPill)
+// Module 17886 (NewContentPill)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import spring from "spring" /* 5233 */;
-import GuildIcon from "GuildIcon" /* 6869 */;
-import ICYMITypes from "ICYMITypes" /* 8804 */;
-import ClipView from "ClipView" /* 9375 */;
+import GuildIcon from "GuildIcon" /* 6868 */;
+import ICYMITypes from "ICYMITypes" /* 8811 */;
+import ClipView from "ClipView" /* 9382 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore_mod from "GuildStore" /* 4843 */;
-import ICYMIStore_mod from "ICYMIStore" /* 8791 */;
+import ICYMIStore_mod from "ICYMIStore" /* 8798 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -30,7 +30,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const ICYMIUtils = tmp(8808);
+const ICYMIUtils = tmp(8815);
 let _slicedToArray = _slicedToArray_mod;
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = react_native);
 let GuildStore = GuildStore_mod;

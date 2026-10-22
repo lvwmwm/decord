@@ -1,15 +1,15 @@
-// Module ID: 14372
-// Function ID: 14373
+// Module ID: 14386
+// Function ID: 14387
 // Name: UserProfileRemediatedNotice
-// Dependencies: [19, 17, 4911, 1087, 21, 4969, 587, 558, 576, 8705, 573, 5220, 1128, 7398, 2]
+// Dependencies: [19, 17, 4911, 1087, 21, 4969, 587, 558, 576, 8712, 573, 5220, 1128, 7399, 2]
 
-// Module 14372 (UserProfileRemediatedNotice)
+// Module 14386 (UserProfileRemediatedNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7398 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8705 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7399 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8712 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
 import Fragment from "Fragment" /* 21 */;

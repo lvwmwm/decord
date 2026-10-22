@@ -1,10 +1,10 @@
-// Module ID: 7499
-// Function ID: 7500
+// Module ID: 7500
+// Function ID: 7501
 // Name: MobileWebRedirectCheckoutUtils
-// Dependencies: [5684, 1087, 1257, 1630, 558, 576, 5001, 6708, 2]
+// Dependencies: [5684, 1087, 1257, 1630, 558, 576, 5001, 6707, 2]
 // Exports: captureMobileWebRedirectCheckoutSentryError, getCustomCheckoutFlow, getCustomCheckoutFlowForAnalytics, isMobileWebRedirectCheckoutEnabled
 
-// Module 7499 (MobileWebRedirectCheckoutUtils)
+// Module 7500 (MobileWebRedirectCheckoutUtils)
 import react from "react" /* 576 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const _mod6708 = tmp(6708);
+const _mod6707 = tmp(6707);
 const CustomCheckoutFlow = PaymentConstants.CustomCheckoutFlow;
 ({ Routes: closure_4, LinkingTypes: hasOwnProperty } = Constants);
 const mobile_web_redirect_checkout = "mobile_web_redirect_checkout";
@@ -38,7 +38,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetCustom
     }
     return tmp5;
   }
-  const tmpResult = _mod6708;
+  const tmpResult = _mod6707;
   const parsed = tmpResult.parse(search);
   ({ deep_link_type, flow_type } = parsed);
   let tmp7;
@@ -63,7 +63,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetCustom
   const obj = BrowserRouter;
   const _location = obj.useLocation();
   ({ pathname, search } = _location);
-  const obj2 = _mod6708;
+  const obj2 = _mod6707;
   const parsed = obj2.parse(search);
   ({ deep_link_type, flow_type } = parsed);
   let tmp3;
@@ -102,7 +102,7 @@ export const useGetCustomCheckoutFlow = tmp3;
 export const getCustomCheckoutFlow = function getCustomCheckoutFlow() {
   let deep_link_type;
   let flow_type;
-  const obj = _mod6708;
+  const obj = _mod6707;
   const parsed = obj.parse(window.location.search);
   ({ deep_link_type, flow_type } = parsed);
   let tmp2;

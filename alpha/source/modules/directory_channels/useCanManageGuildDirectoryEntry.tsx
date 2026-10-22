@@ -1,9 +1,9 @@
-// Module ID: 13111
-// Function ID: 13112
+// Module ID: 13127
+// Function ID: 13128
 // Name: useCanManageGuildDirectoryEntry
 // Dependencies: [4821, 4843, 4901, 1087, 558, 576, 504, 2]
 
-// Module 13111 (useCanManageGuildDirectoryEntry)
+// Module 13127 (useCanManageGuildDirectoryEntry)
 import Constants from "Constants" /* 1087 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;

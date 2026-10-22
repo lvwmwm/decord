@@ -1,9 +1,9 @@
-// Module ID: 14740
-// Function ID: 14741
+// Module ID: 14754
+// Function ID: 14755
 // Name: PremiumMarketingFloatingSubscribeButton
-// Dependencies: [19, 17, 4970, 1087, 21, 4969, 587, 558, 576, 1633, 504, 14738, 7262, 683, 5038, 5192, 5244, 10148, 2]
+// Dependencies: [19, 17, 4970, 1087, 21, 4969, 587, 558, 576, 1633, 504, 14752, 7263, 683, 5038, 5192, 5244, 10155, 2]
 
-// Module 14740 (PremiumMarketingFloatingSubscribeButton)
+// Module 14754 (PremiumMarketingFloatingSubscribeButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
@@ -64,9 +64,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMarke
   }
   const tmpResult = tmp(504);
   stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
-  const tmp5Result = stateFromStores(14738);
-  ({ openPayment, buttonText } = tmp5Result(stateFromStores(7262).PREMIUM_MARKETING_FLOATING_CTA));
-  tmp5Result(stateFromStores(7262).PREMIUM_MARKETING_FLOATING_CTA);
+  const tmp5Result = stateFromStores(14752);
+  ({ openPayment, buttonText } = tmp5Result(stateFromStores(7263).PREMIUM_MARKETING_FLOATING_CTA));
+  tmp5Result(stateFromStores(7263).PREMIUM_MARKETING_FLOATING_CTA);
   if (cResult[2] !== backgroundColor) {
     const obj3 = tmp5(683)(backgroundColor);
     let num3 = 0;
@@ -424,7 +424,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMarke
               }
             }
             const obj9 = { onPress: openPayment, text: buttonText };
-            const tmp33 = closure_7(stateFromStores(10148), obj9);
+            const tmp33 = closure_7(stateFromStores(10155), obj9);
             cResult[20] = buttonText;
             cResult[21] = openPayment;
             cResult[22] = tmp33;

@@ -1,9 +1,9 @@
-// Module ID: 16039
-// Function ID: 16040
+// Module ID: 16057
+// Function ID: 16058
 // Name: ExplicitMediaSettingsActionSheet
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5196, 7232, 1211, 6970, 6971, 5251, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5196, 7233, 1211, 6969, 6970, 5251, 2]
 
-// Module 16039 (ExplicitMediaSettingsActionSheet)
+// Module 16057 (ExplicitMediaSettingsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
@@ -97,13 +97,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExplicitMedi
     cResult[8] = tmp5;
     cResult[9] = SHOW;
     cResult[10] = tmp9;
-    cResult[11] = closure_5(options(6971).TableRadioGroup, obj2);
-    const tmp15 = closure_5(options(6971).TableRadioGroup, obj2);
+    cResult[11] = closure_5(options(6970).TableRadioGroup, obj2);
+    const tmp15 = closure_5(options(6970).TableRadioGroup, obj2);
   }
   cResult[2] = subtitle;
   cResult[3] = title;
-  cResult[4] = closure_5(options(7232).BottomSheetTitleHeader, { title, subtitle });
-  closure_5(options(7232).BottomSheetTitleHeader, { title, subtitle });
+  cResult[4] = closure_5(options(7233).BottomSheetTitleHeader, { title, subtitle });
+  closure_5(options(7233).BottomSheetTitleHeader, { title, subtitle });
 }) : (function ExplicitMediaSettingsActionSheet(options) {
   let TableRadioGroup;
   let obj3;
@@ -124,9 +124,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExplicitMedi
     }
   }, items);
   BottomSheet = options(5251).BottomSheet;
-  const items1 = [closure_5(options(7232).BottomSheetTitleHeader, { title, subtitle }), ];
+  const items1 = [closure_5(options(7233).BottomSheetTitleHeader, { title, subtitle }), ];
   let obj = { style: tmp.content, children: closure_5(TableRadioGroup, obj3) };
-  TableRadioGroup = options(6971).TableRadioGroup;
+  TableRadioGroup = options(6970).TableRadioGroup;
   const tmp3 = closure_6;
   const tmp4 = options;
   const tmp7 = View;

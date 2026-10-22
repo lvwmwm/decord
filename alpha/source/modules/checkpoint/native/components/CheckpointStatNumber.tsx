@@ -1,15 +1,15 @@
-// Module ID: 12902
-// Function ID: 12903
+// Module ID: 12919
+// Function ID: 12920
 // Name: CheckpointStatNumber
-// Dependencies: [19, 17, 6002, 21, 4969, 558, 576, 12893, 5103, 2]
-// Exports: getCheckpointStatNumberWidth
+// Dependencies: [19, 17, 6001, 21, 4969, 558, 576, 12911, 5103, 2]
+// Exports: getCheckpointStatNumberWidth, isCheckpointStatNumberShrunk
 
-// Module 12902 (CheckpointStatNumber)
+// Module 12919 (CheckpointStatNumber)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import CheckpointConstants from "CheckpointConstants" /* 6002 */;
-import CheckpointTextDefault from "CheckpointText" /* 12893 */;
+import CheckpointConstants from "CheckpointConstants" /* 6001 */;
+import CheckpointTextDefault from "CheckpointText" /* 12911 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -36,7 +36,7 @@ const CHECKPOINT_PRIMARY = CheckpointConstants.CHECKPOINT_PRIMARY;
 const jsx = Fragment.jsx;
 let c7 = 2.5675675675675675;
 let c8 = 28.7;
-let closure_9 = { 1: 3, 2: 4, 3: 4, 5: 4, 7: 4, ".": 2, ",": 2 };
+let closure_9 = { 1: 3, 2: 4, 3: 4, 5: 4, 7: 4, ".": 2, ",": 2, ":": 2, A: 4, M: 6, P: 4, a: 4, m: 6, p: 4 };
 let closure_10 = createStyles.createStyles({ rive: { position: "absolute", top: 0, left: 0 } });
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointStatNumber(arg0) {
   let color;
@@ -237,4 +237,12 @@ let size = size_mod;
 let result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointStatNumber.tsx");
 
 export default tmp2;
+export const isCheckpointStatNumberShrunk = function isCheckpointStatNumberShrunk(value) {
+  const tmp = getTextPixels(value);
+  let num = 1;
+  if (tmp > c8) {
+    num = c8 / tmp;
+  }
+  return num < 1;
+};
 export { getCheckpointStatNumberWidth };

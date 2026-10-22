@@ -1,9 +1,9 @@
-// Module ID: 16112
-// Function ID: 16113
+// Module ID: 16130
+// Function ID: 16131
 // Name: FamilyCenterActivityRow
-// Dependencies: [19, 17, 1392, 7629, 7630, 1087, 21, 4969, 587, 1202, 558, 576, 38, 573, 11, 5018, 5220, 8112, 6869, 6873, 1128, 2536, 16113, 16116, 16117, 2]
+// Dependencies: [19, 17, 1392, 7630, 7631, 1087, 21, 4969, 587, 1202, 558, 576, 38, 573, 11, 5018, 5220, 8113, 6868, 6872, 1128, 2536, 16131, 16134, 16135, 2]
 
-// Module 16112 (FamilyCenterActivityRow)
+// Module 16130 (FamilyCenterActivityRow)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
@@ -13,16 +13,16 @@ import Constants from "Constants" /* 1087 */;
 import native from "native" /* 1202 */;
 import _modDef2536 from "module_2536" /* 2536 */;
 import UserUtilsDefault from "UserUtils" /* 5018 */;
-import GuildIconDefault from "GuildIcon" /* 6869 */;
-import GuildBadgeDefault from "GuildBadge" /* 6873 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7630 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8112 */;
-import FamilyCenterActivityPurchaseRowDefault from "FamilyCenterActivityPurchaseRow" /* 16113 */;
-import FamilyCenterActivityGiftRowUtils from "FamilyCenterActivityGiftRowUtils" /* 16116 */;
-import FamilyCenterActivityGiftRowDefault from "FamilyCenterActivityGiftRow" /* 16117 */;
+import GuildIconDefault from "GuildIcon" /* 6868 */;
+import GuildBadgeDefault from "GuildBadge" /* 6872 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7631 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8113 */;
+import FamilyCenterActivityPurchaseRowDefault from "FamilyCenterActivityPurchaseRow" /* 16131 */;
+import FamilyCenterActivityGiftRowUtils from "FamilyCenterActivityGiftRowUtils" /* 16134 */;
+import FamilyCenterActivityGiftRowDefault from "FamilyCenterActivityGiftRow" /* 16135 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7629 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7630 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -114,8 +114,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           const _Date = Date;
           const self = this;
           const self2 = this;
-          const formatUserActivityTimestamp = action(8112).formatUserActivityTimestamp;
-          action(8112);
+          const formatUserActivityTimestamp = action(8113).formatUserActivityTimestamp;
+          action(8113);
           const date = new Date(extractTimestampResult);
           const result = formatUserActivityTimestamp(date.getTime(), value.timestampFormatter);
           if (cResult[14] === Text) {
@@ -224,8 +224,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const _Date = Date;
     const self = this;
     const self2 = this;
-    formatUserActivityTimestamp = action(8112).formatUserActivityTimestamp;
-    action(8112);
+    formatUserActivityTimestamp = action(8113).formatUserActivityTimestamp;
+    action(8113);
     date = new Date(extractTimestampResult);
     items2[1] = closure_8(Text2, obj7);
     items1[1] = closure_9(View, obj5);
@@ -412,7 +412,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((actio
       }
     }
     ({ avatar: obj3.style, avatarText: obj3.textStyle } = tmp4);
-    const obj11 = { style: null, textStyle: null, guild: stateFromStores, size: action(6869).GuildIconSizes.NORMAL, animate: true };
+    const obj11 = { style: null, textStyle: null, guild: stateFromStores, size: action(6868).GuildIconSizes.NORMAL, animate: true };
     const tmp10Result2 = GuildIconDefault;
     const tmp18 = closure_8(tmp10Result2, obj11);
     cResult[5] = stateFromStores;
@@ -448,7 +448,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((actio
     const name = stateFromStores.name;
     const obj2 = { style: tmp.container, children: items1 };
     ({ avatar: obj3.style, avatarText: obj3.textStyle } = tmp);
-    const obj4 = { style: null, textStyle: null, guild: stateFromStores, size: action(6869).GuildIconSizes.NORMAL, animate: true };
+    const obj4 = { style: null, textStyle: null, guild: stateFromStores, size: action(6868).GuildIconSizes.NORMAL, animate: true };
     const tmp6Result = GuildIconDefault;
     items1 = [closure_8(tmp6Result, obj4), ];
     const obj5 = { style: tmp.text, children: items3 };

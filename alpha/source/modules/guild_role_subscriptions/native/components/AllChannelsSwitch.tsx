@@ -1,9 +1,9 @@
-// Module ID: 19185
-// Function ID: 19186
+// Module ID: 19208
+// Function ID: 19209
 // Name: AllChannelsSwitch
-// Dependencies: [19, 17, 16479, 1087, 21, 4969, 587, 6637, 558, 576, 5025, 1202, 9010, 1128, 19186, 19187, 2]
+// Dependencies: [19, 17, 16501, 1087, 21, 4969, 587, 6636, 558, 576, 5025, 1202, 9017, 1128, 19209, 19210, 2]
 
-// Module 19185 (AllChannelsSwitch)
+// Module 19208 (AllChannelsSwitch)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,14 +11,14 @@ import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import react_native2 from "react-native" /* 5025 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9010 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16479 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19186 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 19187 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9017 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16501 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19209 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 19210 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
-import TextStyles_mod from "TextStyles" /* 6637 */;
+import TextStyles_mod from "TextStyles" /* 6636 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

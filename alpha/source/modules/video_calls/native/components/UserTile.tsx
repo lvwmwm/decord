@@ -1,9 +1,9 @@
-// Module ID: 11386
-// Function ID: 11387
+// Module ID: 11397
+// Function ID: 11398
 // Name: UserTile
-// Dependencies: [32, 19, 17, 5993, 11387, 502, 4821, 2014, 1087, 5618, 5704, 21, 4969, 587, 4966, 558, 576, 504, 11388, 1202, 11391, 5220, 1128, 8712, 11376, 11375, 11392, 11393, 11394, 11395, 6767, 10870, 11396, 10853, 11364, 5283, 11397, 2]
+// Dependencies: [32, 19, 17, 5992, 11398, 502, 4821, 2014, 1087, 5618, 5704, 21, 4969, 587, 4966, 558, 576, 504, 11399, 1202, 11402, 5220, 1128, 8719, 11387, 11386, 11403, 11404, 11405, 11406, 6766, 10878, 11407, 10861, 11375, 5283, 11408, 2]
 
-// Module 11386 (UserTile)
+// Module 11397 (UserTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -12,16 +12,16 @@ import native from "native" /* 1202 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import CallConstants from "CallConstants" /* 5618 */;
 import Constants2 from "Constants" /* 5704 */;
-import VoiceChannelEffectsStore2 from "VoiceChannelEffectsStore" /* 11387 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11391 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11392 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11393 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11394 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 11395 */;
-import mediaEngineContextFromParticipantTypeDefault from "mediaEngineContextFromParticipantType" /* 11396 */;
+import VoiceChannelEffectsStore2 from "VoiceChannelEffectsStore" /* 11398 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11402 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11403 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11404 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 11405 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 11406 */;
+import mediaEngineContextFromParticipantTypeDefault from "mediaEngineContextFromParticipantType" /* 11407 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SoundboardStore from "SoundboardStore" /* 5993 */;
+import SoundboardStore from "SoundboardStore" /* 5992 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;

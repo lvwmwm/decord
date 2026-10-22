@@ -1,18 +1,18 @@
-// Module ID: 16446
-// Function ID: 16447
+// Module ID: 16468
+// Function ID: 16469
 // Name: QuestDockBountyHeader
-// Dependencies: [19, 17, 6696, 16331, 21, 587, 4969, 558, 576, 16359, 16332, 5038, 5233, 8732, 16440, 1384, 16439, 16328, 16347, 6699, 7785, 16447, 7154, 5655, 5220, 1128, 6894, 16429, 2]
+// Dependencies: [19, 17, 6695, 16354, 21, 587, 4969, 558, 576, 16382, 16355, 5038, 5233, 8739, 16462, 1384, 16461, 16351, 16370, 6698, 7786, 16469, 7153, 5655, 5220, 1128, 6893, 16451, 2]
 
-// Module 16446 (QuestDockBountyHeader)
+// Module 16468 (QuestDockBountyHeader)
 import nativeDefault from "native" /* 587 */;
 import spring from "spring" /* 5233 */;
-import QuestTypes from "QuestTypes" /* 6699 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7785 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 16347 */;
+import QuestTypes from "QuestTypes" /* 6698 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7786 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 16370 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import QuestConstants from "QuestConstants" /* 6696 */;
-import QuestDockConstants from "QuestDockConstants" /* 16331 */;
+import QuestConstants from "QuestConstants" /* 6695 */;
+import QuestDockConstants from "QuestDockConstants" /* 16354 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -62,14 +62,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp = activeQuestDockMode;
   let obj = activeQuestDockMode(576);
   const cResult = obj.c(67);
-  let obj2 = activeQuestDockMode(16359);
+  let obj2 = activeQuestDockMode(16382);
   const questDockBounty = obj2.useQuestDockBounty();
   const tmp5 = closure_11();
   let str = questDockBounty.productName;
   if (str == null) {
     str = "";
   }
-  activeQuestDockMode = react.useContext(tmp(16332).QuestDockGestureContext).activeQuestDockMode;
+  activeQuestDockMode = react.useContext(tmp(16355).QuestDockGestureContext).activeQuestDockMode;
   const fn = function o() {
     const withSpring = spring.withSpring;
     let num = 1;
@@ -103,8 +103,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ({ withSpring: tmp(5233).withSpring, activeQuestDockMode, QuestDockMode, PROMOTED_LABEL_OPACITY, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED });
   const animatedStyle1 = tmpResult7.useAnimatedStyle(fn2);
   const EXPANDED = QuestDockMode.EXPANDED;
-  const tmp9 = bountyCreative(8732)(activeQuestDockMode);
-  const tmpResult8 = tmp(16440);
+  const tmp9 = bountyCreative(8739)(activeQuestDockMode);
+  const tmpResult8 = tmp(16462);
   const isBountiesAndroidQuestBarSmokeAnimationEnabled = tmpResult8.useIsBountiesAndroidQuestBarSmokeAnimationEnabled(constants.QUESTS_BAR_MOBILE);
   if (cResult[0] !== isBountiesAndroidQuestBarSmokeAnimationEnabled) {
     const tmpResult9 = tmp(1384);
@@ -116,7 +116,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     tmp11 = cResult[1];
   }
-  const tmpResult10 = tmp(16439);
+  const tmpResult10 = tmp(16461);
   const smokeArtSize = tmpResult10.useSmokeArtSize();
   ({ width, height } = smokeArtSize);
   if (cResult[2] === height) {
@@ -126,9 +126,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     if (cResult[3] === width) {
       tmp14 = cResult[4];
     }
-    const tmpResult11 = tmp(16359);
+    const tmpResult11 = tmp(16382);
     bountyCreative = tmpResult11.useBountyCreative(questDockBounty);
-    const tmpResult12 = tmp(16328);
+    const tmpResult12 = tmp(16351);
     const actionSheetPressHandler = tmpResult12.useActionSheetPressHandler(bountyCreative);
     if (cResult[5] !== bountyCreative) {
       const fn3 = function v() {
@@ -145,7 +145,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp21 = closure_8(bountyCreative(16447), {});
+      const tmp21 = closure_8(bountyCreative(16469), {});
       cResult[7] = tmp21;
       tmp19 = tmp21;
     } else {
@@ -167,8 +167,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           tmp23 = cResult[13];
         }
         if (cResult[14] !== (tmp9 === EXPANDED)) {
-          const obj5 = { surface: tmp(16439).QuestDockBountySmokeSurface.COLLAPSED, paused: tmp9 === EXPANDED };
-          const tmp8Result = bountyCreative(16439);
+          const obj5 = { surface: tmp(16461).QuestDockBountySmokeSurface.COLLAPSED, paused: tmp9 === EXPANDED };
+          const tmp8Result = bountyCreative(16461);
           const tmp28 = closure_8(tmp8Result, obj5);
           cResult[14] = tmp9 === EXPANDED;
           cResult[15] = tmp28;
@@ -247,7 +247,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                 }
                                 if (cResult[45] !== tmp17) {
                                   const obj7 = { onPress: tmp17, accessibilityRole: "button", children: tmp51 };
-                                  const tmp56 = closure_8(tmp(6894).PressableOpacity, obj7);
+                                  const tmp56 = closure_8(tmp(6893).PressableOpacity, obj7);
                                   cResult[45] = tmp17;
                                   cResult[46] = tmp56;
                                   tmp54 = tmp56;
@@ -287,9 +287,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                                     return tmp73;
                                                   }
                                                 }
-                                                const obj8 = { onSubmenuPress: actionSheetPressHandler, hideBlurWhenCollapsed: true, promotedLabelLeading: true, collapsedContent: tmp19, secondaryContentWidth: tmp(16447).QUEST_DOCK_BOUNTY_ILLUSTRATION_RESERVED_WIDTH, children: items };
+                                                const obj8 = { onSubmenuPress: actionSheetPressHandler, hideBlurWhenCollapsed: true, promotedLabelLeading: true, collapsedContent: tmp19, secondaryContentWidth: tmp(16469).QUEST_DOCK_BOUNTY_ILLUSTRATION_RESERVED_WIDTH, children: items };
                                                 items = [tmp32, tmp69];
-                                                const tmp8Result2 = bountyCreative(16429);
+                                                const tmp8Result2 = bountyCreative(16451);
                                                 const tmp76 = closure_9(tmp8Result2, obj8);
                                                 cResult[63] = actionSheetPressHandler;
                                                 cResult[64] = tmp69;
@@ -318,7 +318,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                         tmp65 = tmp68;
                                       }
                                       const obj11 = { style: tmp50, children: tmp58 };
-                                      const tmp64 = closure_8(bountyCreative(7154), obj11);
+                                      const tmp64 = closure_8(bountyCreative(7153), obj11);
                                       cResult[52] = tmp50;
                                       cResult[53] = tmp58;
                                       cResult[54] = tmp64;
@@ -342,7 +342,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                               tmp50 = items3;
                             }
                             const obj13 = { style: tmp39, children: tmp43 };
-                            const tmp49 = closure_8(bountyCreative(7154), obj13);
+                            const tmp49 = closure_8(bountyCreative(7153), obj13);
                             cResult[38] = tmp39;
                             cResult[39] = tmp43;
                             cResult[40] = tmp49;
@@ -393,7 +393,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           }
         }
         const obj19 = { style: tmp23, needsOffscreenAlphaCompositing: tmp11, children: tmp25 };
-        const tmp31 = closure_8(bountyCreative(7154), obj19, str3);
+        const tmp31 = closure_8(bountyCreative(7153), obj19, str3);
         cResult[16] = tmp11;
         cResult[17] = str3;
         cResult[18] = tmp23;

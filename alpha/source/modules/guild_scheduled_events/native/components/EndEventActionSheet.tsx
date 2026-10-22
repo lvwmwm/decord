@@ -1,16 +1,16 @@
-// Module ID: 9121
-// Function ID: 9122
+// Module ID: 9128
+// Function ID: 9129
 // Name: EndEventActionSheet
-// Dependencies: [19, 17, 4827, 1087, 21, 4969, 587, 558, 576, 8991, 5196, 9122, 8856, 1128, 1202, 5220, 5230, 14121, 2]
+// Dependencies: [19, 17, 4827, 1087, 21, 4969, 587, 558, 576, 8998, 5196, 9129, 8863, 1128, 1202, 5220, 5230, 14135, 2]
 
-// Module 9121 (EndEventActionSheet)
+// Module 9128 (EndEventActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4827 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8856 */;
-import CallsUtils from "CallsUtils" /* 9122 */;
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8863 */;
+import CallsUtils from "CallsUtils" /* 9129 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -39,7 +39,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndEventActi
   const cResult = obj.c(29);
   channel = channel.channel;
   const tmp4 = closure_7();
-  let obj2 = channel(8991);
+  let obj2 = channel(8998);
   const activeEvent = obj2.useActiveEvent(channel.id);
   if (null == activeEvent) {
     return null;
@@ -174,7 +174,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndEventActi
           const obj7 = { children: closure_6(View, obj8) };
           obj8 = { style: container, children: items };
           items = [tmp11, tmp16, tmp24, tmp33];
-          const tmp40 = activeEvent(14121);
+          const tmp40 = activeEvent(14135);
           const tmp43 = closure_5(tmp40, obj7);
           cResult[23] = tmp4.container;
           cResult[24] = tmp24;
@@ -223,7 +223,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndEventActi
   let obj9;
   channel = channel.channel;
   const tmp = closure_7();
-  let obj = channel(8991);
+  let obj = channel(8998);
   const activeEvent = obj.useActiveEvent(channel.id);
   if (null == activeEvent) {
     return null;
@@ -236,7 +236,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndEventActi
     }
     let obj2 = { children: closure_6(View, obj3) };
     obj3 = { style: tmp.container, children: items };
-    const tmp7 = activeEvent(14121);
+    const tmp7 = activeEvent(14135);
     const obj4 = { style: tmp.title, accessibilityRole: "header", children: intl.string(channel(1128).t["4Ao8LC"]) };
     const LegacyText = tmp2(1202).LegacyText;
     intl = tmp2(1128).intl;

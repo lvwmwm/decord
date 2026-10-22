@@ -1,16 +1,16 @@
-// Module ID: 17030
-// Function ID: 17031
+// Module ID: 17052
+// Function ID: 17053
 // Name: UserSettingsDesignSystemLegacyButton
-// Dependencies: [32, 19, 17, 21, 1202, 558, 576, 5220, 5230, 4969, 587, 5964, 8919, 2]
+// Dependencies: [32, 19, 17, 21, 1202, 558, 576, 5220, 5230, 4969, 587, 5963, 8926, 2]
 
-// Module 17030 (UserSettingsDesignSystemLegacyButton)
+// Module 17052 (UserSettingsDesignSystemLegacyButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import components_Button_Button from "components/Button/Button" /* 5230 */;
-import Stack_Stack from "Stack/Stack" /* 5964 */;
-import Form from "Form" /* 8919 */;
+import Stack_Stack from "Stack/Stack" /* 5963 */;
+import Form from "Form" /* 8926 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

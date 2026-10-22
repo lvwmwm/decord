@@ -1,16 +1,16 @@
-// Module ID: 16719
-// Function ID: 16720
+// Module ID: 16741
+// Function ID: 16742
 // Name: SaveCameraUploadsToDeviceSetting
-// Dependencies: [1209, 8317, 558, 576, 504, 5855, 11172, 1128, 2]
+// Dependencies: [1209, 8318, 558, 576, 504, 5854, 11181, 1128, 2]
 
-// Module 16719 (SaveCameraUploadsToDeviceSetting)
+// Module 16741 (SaveCameraUploadsToDeviceSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5855 */;
-import SettingsConstants from "SettingsConstants" /* 8317 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5854 */;
+import SettingsConstants from "SettingsConstants" /* 8318 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1209 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11172 */;
+import SettingBuilders from "SettingBuilders" /* 11181 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

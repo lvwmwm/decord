@@ -1,9 +1,9 @@
-// Module ID: 18310
-// Function ID: 18311
+// Module ID: 18332
+// Function ID: 18333
 // Name: NitroFileUploadAnnouncementPromoSheet
-// Dependencies: [19, 17, 4818, 21, 4969, 587, 558, 576, 5249, 18311, 1128, 2638, 5230, 10820, 2]
+// Dependencies: [19, 17, 4818, 21, 4969, 587, 558, 576, 5249, 18333, 1128, 2638, 5230, 10828, 2]
 
-// Module 18310 (NitroFileUploadAnnouncementPromoSheet)
+// Module 18332 (NitroFileUploadAnnouncementPromoSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -85,7 +85,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroFileU
         closure_2(ContentDismissActionType.USER_DISMISS);
       }
     }
-    const tmp10 = jsx(tmp(18311).FileUploadSpotIllustration, { accessible: false, resizeMode: "contain" });
+    const tmp10 = jsx(tmp(18333).FileUploadSpotIllustration, { accessible: false, resizeMode: "contain" });
     cResult[6] = tmp10;
     tmp9 = tmp10;
   } else {
@@ -173,8 +173,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroFileU
   cResult[14] = tmp8;
   cResult[15] = tmp11;
   cResult[16] = tmp21;
-  cResult[17] = jsx(tmp(10820).PromoSheet, { illustration: tmp11, title: tmp14, description: tmp15, onDismiss: tmp8, actions: tmp21 });
-  jsx(tmp(10820).PromoSheet, { illustration: tmp11, title: tmp14, description: tmp15, onDismiss: tmp8, actions: tmp21 });
+  cResult[17] = jsx(tmp(10828).PromoSheet, { illustration: tmp11, title: tmp14, description: tmp15, onDismiss: tmp8, actions: tmp21 });
+  jsx(tmp(10828).PromoSheet, { illustration: tmp11, title: tmp14, description: tmp15, onDismiss: tmp8, actions: tmp21 });
 }) : (function NitroFileUploadAnnouncementPromoSheet(markAsDismissed) {
   let intl3;
   let ref;

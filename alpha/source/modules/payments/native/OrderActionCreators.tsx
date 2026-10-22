@@ -1,10 +1,10 @@
-// Module ID: 7525
-// Function ID: 7526
+// Module ID: 7526
+// Function ID: 7527
 // Name: payments/OrderActionCreators
-// Dependencies: [5, 5684, 1087, 3, 1297, 4785, 584, 7328, 2]
+// Dependencies: [5, 5684, 1087, 3, 1297, 4785, 584, 7329, 2]
 // Exports: cancelOrderSigning, discardOrder, getOrCreateOrder, markOrderAsSigningInProgress, patchOrder, patchOrderLineItem, updateOrder
 
-// Module 7525 (payments/OrderActionCreators)
+// Module 7526 (payments/OrderActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;

@@ -1,20 +1,20 @@
-// Module ID: 19255
-// Function ID: 19256
+// Module ID: 19278
+// Function ID: 19279
 // Name: AVErrorManager
-// Dependencies: [109, 6628, 4872, 5616, 11368, 3, 19256, 7200, 5884, 584, 19276, 2]
+// Dependencies: [109, 6627, 4872, 5616, 11379, 3, 19279, 7199, 5883, 584, 19299, 2]
 
-// Module 19255 (AVErrorManager)
+// Module 19278 (AVErrorManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import AVError from "AVError" /* 5884 */;
-import ErrorDefinitions from "ErrorDefinitions" /* 19256 */;
-import AVErrorAnalytics from "AVErrorAnalytics" /* 19276 */;
+import AVError from "AVError" /* 5883 */;
+import ErrorDefinitions from "ErrorDefinitions" /* 19279 */;
+import AVErrorAnalytics from "AVErrorAnalytics" /* 19299 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6628 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6627 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
 import VoiceStateStore from "VoiceStateStore" /* 5616 */;
-import AVErrorStore from "AVErrorStore" /* 11368 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7200 */;
+import AVErrorStore from "AVErrorStore" /* 11379 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7199 */;
 import size from "module_2" /* 2 */;
 
 let map;

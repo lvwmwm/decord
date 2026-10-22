@@ -1,17 +1,17 @@
-// Module ID: 9097
-// Function ID: 9098
+// Module ID: 9104
+// Function ID: 9105
 // Name: InstantInviteAgeText
-// Dependencies: [19, 17, 9020, 21, 4969, 558, 576, 7061, 504, 9021, 5220, 6894, 9019, 1128, 2]
+// Dependencies: [19, 17, 9027, 21, 4969, 558, 576, 7060, 504, 9028, 5220, 6893, 9026, 1128, 2]
 
-// Module 9097 (InstantInviteAgeText)
+// Module 9104 (InstantInviteAgeText)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl3 from "intl" /* 1128 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7061 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9019 */;
-import InstantInviteUtils from "InstantInviteUtils" /* 9021 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7060 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9026 */;
+import InstantInviteUtils from "InstantInviteUtils" /* 9028 */;
 import react from "react" /* 19 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 9020 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 9027 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -220,7 +220,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInv
         hitSlop: { top: 8, left: 8, bottom: 8, right: 8 },
         children: closure_5(Text2, obj6)
       };
-      const PressableOpacity = tmp2(6894).PressableOpacity;
+      const PressableOpacity = tmp2(6893).PressableOpacity;
       intl = tmp2(1128).intl;
       Text2 = tmp2(5220).Text;
       if (manaTypeConsolidationExperiment) {

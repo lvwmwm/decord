@@ -1,13 +1,13 @@
-// Module ID: 11938
-// Function ID: 11939
+// Module ID: 11952
+// Function ID: 11953
 // Name: UserProfileApplicationWidgetBottomStatsLayout
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 11847, 11933, 5220, 11934, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 11861, 11947, 5220, 11948, 2]
 
-// Module 11938 (UserProfileApplicationWidgetBottomStatsLayout)
+// Module 11952 (UserProfileApplicationWidgetBottomStatsLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import _mod11847 from "module_11847" /* 11847 */;
-import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 11933 */;
+import _mod11861 from "module_11861" /* 11861 */;
+import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 11947 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -84,7 +84,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
           } else {
             tmp5Result = null;
             if ("skeleton" === value.label.status) {
-              tmp5Result = tmp5(tmp6(11934).TextSkeleton, { variant: "text-xs/normal", widthChars: 6 });
+              tmp5Result = tmp5(tmp6(11948).TextSkeleton, { variant: "text-xs/normal", widthChars: 6 });
             }
           }
           items[1] = tmp5Result;
@@ -99,8 +99,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
     }
   }
   const mapped1 = first.map((item) => {
-    const resolveStatComponentValues = _mod11847.resolveStatComponentValues;
-    _mod11847;
+    const resolveStatComponentValues = _mod11861.resolveStatComponentValues;
+    _mod11861;
     return resolveStatComponentValues(bottomConfig.components["stat_" + item], resolveFieldValue, numberFormat, UserProfileApplicationWidgetFieldUtils.formatDurationNarrow, true);
   });
   cResult[1] = bottomConfig;
@@ -115,8 +115,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
   const stat = tmp;
   let items = [1, 2, 3, 4, 5, 6];
   const mapped = items.map((item) => {
-    const resolveStatComponentValues = _mod11847.resolveStatComponentValues;
-    _mod11847;
+    const resolveStatComponentValues = _mod11861.resolveStatComponentValues;
+    _mod11861;
     return resolveStatComponentValues(require.components["stat_" + item], dependencyMap, View, UserProfileApplicationWidgetFieldUtils.formatDurationNarrow, true);
   });
   let obj = {
@@ -137,7 +137,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
         } else {
           tmp5Result = null;
           if ("skeleton" === value.label.status) {
-            tmp5Result = tmp5(tmp6(11934).TextSkeleton, { variant: "text-xs/normal", widthChars: 6 });
+            tmp5Result = tmp5(tmp6(11948).TextSkeleton, { variant: "text-xs/normal", widthChars: 6 });
           }
         }
         items[1] = tmp5Result;

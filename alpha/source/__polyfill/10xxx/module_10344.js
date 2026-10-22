@@ -1,68 +1,142 @@
 // Module ID: 10344
 // Function ID: 10345
-// Dependencies: [41, 42, 93, 95, 98, 10339, 10187, 10188, 10341]
+// Dependencies: [10345, 10347, 10349, 10350, 10351, 10352, 10353, 10354, 10355, 10356, 10357, 10188, 10195, 10197, 10221, 10358, 10233, 10228]
+// Exports: createCasualConfiguration, parse, parseDate
 
 // Module 10344
-import EmptyDuration from "EmptyDuration" /* 10187 */;
-import ReferenceWithTimezone from "ReferenceWithTimezone" /* 10188 */;
-import _mod10339 from "module_10339" /* 10339 */;
-import _mod10341 from "module_10341" /* 10341 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import _mod10221 from "module_10221" /* 10221 */;
+import includeCommonConfiguration2 from "includeCommonConfiguration" /* 10228 */;
+import _mod10233 from "module_10233" /* 10233 */;
+import _mod10345 from "module_10345" /* 10345 */;
+import _mod10347 from "module_10347" /* 10347 */;
+import _mod10349 from "module_10349" /* 10349 */;
+import _mod10350 from "module_10350" /* 10350 */;
+import _mod10351 from "module_10351" /* 10351 */;
+import _mod10352 from "module_10352" /* 10352 */;
+import _mod10353 from "module_10353" /* 10353 */;
+import _mod10354 from "module_10354" /* 10354 */;
+import _mod10355 from "module_10355" /* 10355 */;
+import _mod10356 from "module_10356" /* 10356 */;
+import _mod10357 from "module_10357" /* 10357 */;
+import _mod10358 from "module_10358" /* 10358 */;
+import { Chrono } from "module_10188" /* 10188 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+const require = globalThis.__r;
 
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
+function createConfiguration(flag) {
+  let items;
+  let items1;
+  const obj = { parsers: items, refiners: items1 };
+  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
+  items = [new module_10233.default(), , , , , , ];
+  new module_10233.default();
+  items[1] = new module_10221.default(true);
+  new module_10221.default(true);
+  items[2] = new module_10345.default();
+  new module_10345.default();
+  items[3] = new module_10347.default();
+  new module_10347.default();
+  items[4] = new module_10356.default();
+  new module_10356.default();
+  items[5] = new module_10350.default(flag);
+  new module_10350.default(flag);
+  items[6] = new module_10351.default();
+  new module_10351.default();
+  items1 = [new module_10353.default(), ];
+  new module_10353.default();
+  items1[1] = new module_10352.default();
+  new module_10352.default();
+  return includeCommonConfiguration(obj, flag);
 }
-class UKTimeUnitAgoFormatParser {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, UKTimeUnitAgoFormatParser);
-    const obj = _getPrototypeOf(UKTimeUnitAgoFormatParser);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
+const fn = this && this.__importDefault || ((__esModule) => {
+  let tmp2;
+  const tmp = __esModule;
+  if (!tmp) {
+    tmp2 = { default: __esModule };
+    const obj = { default: __esModule };
+  } else {
+    tmp2 = __esModule;
   }
+  return tmp2;
+});
+function createCasualConfiguration() {
+  const tmp = createConfiguration(false);
+  const parsers = tmp.parsers;
+  const unshift = parsers.unshift;
+  const _default = new module_10354.default();
+  unshift(_default);
+  const parsers1 = tmp.parsers;
+  const unshift2 = parsers1.unshift;
+  const _default1 = new module_10355.default();
+  unshift2(_default1);
+  const parsers2 = tmp.parsers;
+  const unshift3 = parsers2.unshift;
+  const _default2 = new module_10349.default();
+  unshift3(_default2);
+  const parsers3 = tmp.parsers;
+  const unshift4 = parsers3.unshift;
+  const _default3 = new module_10357.default();
+  unshift4(_default3);
+  const parsers4 = tmp.parsers;
+  const unshift5 = parsers4.unshift;
+  const _default4 = new module_10358.default();
+  unshift5(_default4);
+  return tmp;
 }
-_inherits(UKTimeUnitAgoFormatParser, _mod10341.AbstractParserWithLeftBoundaryChecking);
-const entry = {
-  key: "innerPatternString",
-  value: function innerPatternString(arg0) {
-    return "(" + _mod10339.TIME_UNITS_PATTERN + ")\\s{0,5}\u0442\u043E\u043C\u0443(?=(?:\\W|$))";
-  }
+const module_10345 = fn(_mod10345);
+const module_10347 = fn(_mod10347);
+const module_10349 = fn(_mod10349);
+const module_10350 = fn(_mod10350);
+const module_10351 = fn(_mod10351);
+const module_10352 = fn(_mod10352);
+const module_10353 = fn(_mod10353);
+const module_10354 = fn(_mod10354);
+const module_10355 = fn(_mod10355);
+const module_10356 = fn(_mod10356);
+const module_10357 = fn(_mod10357);
+const module_10221 = fn(_mod10221);
+const module_10358 = fn(_mod10358);
+const module_10233 = fn(_mod10233);
+const configuration = createConfiguration(false);
+let parsers = configuration.parsers;
+let unshift = parsers.unshift;
+let _default = new module_10354.default();
+unshift(_default);
+let parsers1 = configuration.parsers;
+let unshift2 = parsers1.unshift;
+let _default1 = new module_10355.default();
+unshift2(_default1);
+let parsers2 = configuration.parsers;
+let unshift3 = parsers2.unshift;
+let _default2 = new module_10349.default();
+unshift3(_default2);
+let parsers3 = configuration.parsers;
+let unshift4 = parsers3.unshift;
+let _default3 = new module_10357.default();
+unshift4(_default3);
+let parsers4 = configuration.parsers;
+let unshift5 = parsers4.unshift;
+let _default4 = new module_10358.default();
+unshift5(_default4);
+const chrono = new Chrono(configuration);
+const chrono1 = new require("module_10188").Chrono(createConfiguration(true));
+const Chrono_export = require("module_10188").Chrono;
+
+export { createCasualConfiguration };
+export { createConfiguration };
+export const parse = function parse(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parse(arg0, arg1, arg2);
 };
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const parseDurationResult = _mod10339.parseDuration(arg1[1]);
-      const reverseDurationResult = EmptyDuration.reverseDuration(parseDurationResult);
-      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
-    }
-  }
-];
-
-export default _createClass(UKTimeUnitAgoFormatParser, items);
+export const parseDate = function parseDate(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parseDate(arg0, arg1, arg2);
+};
+export { Chrono_export as Chrono };
+export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
+export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
+export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
+export const Meridiem = require("Meridiem").Meridiem;
+export const Weekday = require("Meridiem").Weekday;
+export const casual = chrono;
+export const strict = chrono1;

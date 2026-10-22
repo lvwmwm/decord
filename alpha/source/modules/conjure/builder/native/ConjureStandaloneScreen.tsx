@@ -1,21 +1,21 @@
-// Module ID: 11690
-// Function ID: 11691
+// Module ID: 11701
+// Function ID: 11702
 // Name: ConjureStandaloneScreen
-// Dependencies: [32, 19, 4881, 4843, 4901, 7305, 1087, 21, 558, 576, 1505, 11691, 504, 6794, 10690, 6910, 1128, 3830, 11692, 11800, 12470, 7081, 11822, 2]
+// Dependencies: [32, 19, 4881, 4843, 4901, 7306, 1087, 21, 558, 576, 1505, 11702, 504, 6793, 10697, 6909, 1128, 3830, 11703, 11812, 12481, 7080, 11836, 2]
 
-// Module 11690 (ConjureStandaloneScreen)
+// Module 11701 (ConjureStandaloneScreen)
 import Constants from "Constants" /* 1087 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10690 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11691 */;
-import ConjureProjectListDefault from "ConjureProjectList" /* 11692 */;
-import ConjureChatSceneDefault from "ConjureChatScene" /* 11800 */;
-import ConjureDebugSceneDefault from "ConjureDebugScene" /* 12470 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10697 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11702 */;
+import ConjureProjectListDefault from "ConjureProjectList" /* 11703 */;
+import ConjureChatSceneDefault from "ConjureChatScene" /* 11812 */;
+import ConjureDebugSceneDefault from "ConjureDebugScene" /* 12481 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 4881 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
-import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 7305 */;
+import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 7306 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

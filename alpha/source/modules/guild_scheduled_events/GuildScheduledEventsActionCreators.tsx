@@ -1,18 +1,18 @@
-// Module ID: 8856
-// Function ID: 8857
+// Module ID: 8863
+// Function ID: 8864
 // Name: GuildScheduledEventsActionCreators
-// Dependencies: [5, 502, 6770, 4827, 1087, 1297, 6620, 1114, 8857, 6369, 584, 8862, 8863, 8864, 11, 2]
+// Dependencies: [5, 502, 6769, 4827, 1087, 1297, 6619, 1114, 8864, 6368, 584, 8869, 8870, 8871, 11, 2]
 
-// Module 8856 (GuildScheduledEventsActionCreators)
+// Module 8863 (GuildScheduledEventsActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import router_utils from "router_utils" /* 1114 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6620 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8857 */;
-import guildEventEmbedFetchQueue from "guildEventEmbedFetchQueue" /* 8863 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6619 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 8864 */;
+import guildEventEmbedFetchQueue from "guildEventEmbedFetchQueue" /* 8870 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6770 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6769 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4827 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;

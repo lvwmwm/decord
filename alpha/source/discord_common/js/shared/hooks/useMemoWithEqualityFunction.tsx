@@ -1,12 +1,12 @@
-// Module ID: 17448
-// Function ID: 17449
+// Module ID: 17470
+// Function ID: 17471
 // Name: useMemoWithEqualityFunction
-// Dependencies: [19, 17449, 2]
+// Dependencies: [19, 17471, 2]
 // Exports: default
 
-// Module 17448 (useMemoWithEqualityFunction)
+// Module 17470 (useMemoWithEqualityFunction)
 import react from "react" /* 19 */;
-import reactDefault from "react" /* 17449 */;
+import reactDefault from "react" /* 17471 */;
 import size from "module_2" /* 2 */;
 
 const useRef = react.useRef;

@@ -1,14 +1,14 @@
-// Module ID: 6820
-// Function ID: 6821
+// Module ID: 6819
+// Function ID: 6820
 // Name: transitionToMemberVerification
-// Dependencies: [4843, 4996, 1114, 4998, 6821, 6857, 2]
+// Dependencies: [4843, 4996, 1114, 4998, 6820, 6856, 2]
 // Exports: transitionToMemberVerification
 
-// Module 6820 (transitionToMemberVerification)
+// Module 6819 (transitionToMemberVerification)
 import router_utils from "router_utils" /* 1114 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4998 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6821 */;
-import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 6857 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6820 */;
+import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 6856 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4996 */;
 import size from "module_2" /* 2 */;

@@ -1,9 +1,9 @@
-// Module ID: 6765
-// Function ID: 6766
+// Module ID: 6764
+// Function ID: 6765
 // Name: VideoStreamStore
 // Dependencies: [1087, 5704, 504, 584, 2]
 
-// Module 6765 (VideoStreamStore)
+// Module 6764 (VideoStreamStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;

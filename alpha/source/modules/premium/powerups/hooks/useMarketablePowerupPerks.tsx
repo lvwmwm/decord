@@ -1,11 +1,11 @@
-// Module ID: 14823
-// Function ID: 14824
+// Module ID: 14837
+// Function ID: 14838
 // Name: useMarketablePowerupPerks
-// Dependencies: [19, 5167, 5168, 5171, 558, 576, 504, 13421, 5173, 2]
+// Dependencies: [19, 5167, 5168, 5171, 558, 576, 504, 13435, 5173, 2]
 
-// Module 14823 (useMarketablePowerupPerks)
+// Module 14837 (useMarketablePowerupPerks)
 import Powerups from "Powerups" /* 5171 */;
-import useGameServerPerkDefault from "useGameServerPerk" /* 13421 */;
+import useGameServerPerkDefault from "useGameServerPerk" /* 13435 */;
 import react from "react" /* 19 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 5167 */;
 import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5168 */;
@@ -129,7 +129,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMarketa
     }
     return tmp2;
   });
-  let tmp2 = stateFromStores(13421)(arg0);
+  let tmp2 = stateFromStores(13435)(arg0);
   dependencyMap = tmp2;
   const obj2 = require("ServerThemeExperiment");
   const serverThemeRollbackEnabled = obj2.useServerThemeRollbackEnabled(arg0, "useMarketablePowerupPerks");

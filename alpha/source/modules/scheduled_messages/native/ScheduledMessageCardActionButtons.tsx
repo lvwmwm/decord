@@ -1,19 +1,19 @@
-// Module ID: 13976
-// Function ID: 13977
+// Module ID: 13990
+// Function ID: 13991
 // Name: ScheduledMessageCardActionButtons
-// Dependencies: [109, 21, 558, 576, 1128, 5666, 9664, 10090, 5677, 7004, 7943, 9108, 9731, 2]
+// Dependencies: [109, 21, 558, 576, 1128, 5666, 9671, 10097, 5677, 7003, 7944, 9115, 9738, 2]
 
-// Module 13976 (ScheduledMessageCardActionButtons)
+// Module 13990 (ScheduledMessageCardActionButtons)
 import Fragment from "Fragment" /* 21 */;
 import intl5 from "intl" /* 1128 */;
 import SendMessageIcon from "SendMessageIcon" /* 5666 */;
 import ClockIcon from "ClockIcon" /* 5677 */;
-import CircleXIcon from "CircleXIcon" /* 7004 */;
-import IconButton2 from "IconButton" /* 7943 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9108 */;
-import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9664 */;
-import ContextMenu from "ContextMenu" /* 9731 */;
-import PencilIcon from "PencilIcon" /* 10090 */;
+import CircleXIcon from "CircleXIcon" /* 7003 */;
+import IconButton2 from "IconButton" /* 7944 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9115 */;
+import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9671 */;
+import ContextMenu from "ContextMenu" /* 9738 */;
+import PencilIcon from "PencilIcon" /* 10097 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledM
   if (cResult[4] !== scheduledMessage) {
     const obj3 = {
       label: tmp7,
-      IconComponent: tmp(10090).PencilIcon,
+      IconComponent: tmp(10097).PencilIcon,
       action() {
           const obj = ScheduledMessagesUtils;
           return obj.openScheduledMessageEditContentModal(scheduledMessage);
@@ -114,7 +114,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledM
   if (cResult[10] !== scheduledMessage) {
     const obj5 = {
       label: tmp13,
-      IconComponent: tmp(7004).CircleXIcon,
+      IconComponent: tmp(7003).CircleXIcon,
       action() {
           const obj = ScheduledMessagesUtils;
           return obj.cancelScheduledMessage(scheduledMessage.scheduledMessageId);
@@ -157,7 +157,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledM
           }
           return tmp18;
         }
-        const tmp20 = jsx(tmp(9731).ContextMenu, { items: tmp16, keyboardShouldPersistTaps: "handled", triggerOnTap: true, children: tmp17 });
+        const tmp20 = jsx(tmp(9738).ContextMenu, { items: tmp16, keyboardShouldPersistTaps: "handled", triggerOnTap: true, children: tmp17 });
         cResult[19] = tmp16;
         cResult[20] = tmp17;
         cResult[21] = tmp20;

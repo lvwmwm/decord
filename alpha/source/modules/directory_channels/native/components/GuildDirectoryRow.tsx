@@ -1,15 +1,15 @@
-// Module ID: 13139
-// Function ID: 13140
+// Module ID: 13155
+// Function ID: 13156
 // Name: GuildDirectoryRow
-// Dependencies: [5, 32, 19, 17, 4821, 4843, 1087, 21, 4969, 587, 504, 7206, 7433, 6816, 9031, 1211, 7303, 1417, 1128, 6891, 6869, 4835, 5220, 13117, 5230, 2]
+// Dependencies: [5, 32, 19, 17, 4821, 4843, 1087, 21, 4969, 587, 504, 7205, 7434, 6815, 9038, 1211, 7304, 1417, 1128, 6890, 6868, 4835, 5220, 13133, 5230, 2]
 
-// Module 13139 (GuildDirectoryRow)
+// Module 13155 (GuildDirectoryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import GuildIconDefault from "GuildIcon" /* 6869 */;
-import GuildDirectoryMoreMenuDefault from "GuildDirectoryMoreMenu" /* 13117 */;
+import GuildIconDefault from "GuildIcon" /* 6868 */;
+import GuildDirectoryMoreMenuDefault from "GuildDirectoryMoreMenu" /* 13133 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -192,7 +192,7 @@ const memoResult = react.memo(function GuildDirectoryRow(entry) {
   const tmp4 = null != obj.useStateFromStores(items, () => GuildStore.getGuild(entry.guildId));
   importDefault = tmp4;
   dependencyMap = react.useRef(0);
-  let obj2 = entry(7206);
+  let obj2 = entry(7205);
   const items1 = [entry.guildId];
   const tmp5 = obj(obj2.useRecyclingState(false, items1, () => {
     ref.current = ref.current + 1;
@@ -212,7 +212,7 @@ const memoResult = react.memo(function GuildDirectoryRow(entry) {
   obj6 = { style: tmp.guildWrapper, children: items8 };
   let obj7 = { style: tmp.headerContainer, children: items7 };
   let obj8 = { style: tmp.titleContainer, children: items2 };
-  const Card = tmp2(6891).Card;
+  const Card = tmp2(6890).Card;
   let obj9 = { style: tmp.guildIcon, icon: guildIconURL, guild: result, selected: false };
   result = undefined;
   const tmp7Result = GuildIconDefault;

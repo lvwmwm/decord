@@ -1,15 +1,15 @@
-// Module ID: 7012
-// Function ID: 7013
+// Module ID: 7011
+// Function ID: 7012
 // Name: NativeTextInput
-// Dependencies: [19, 17, 1501, 1087, 21, 558, 576, 7013, 5249, 5253, 7014, 5023, 5125, 2]
+// Dependencies: [19, 17, 1501, 1087, 21, 558, 576, 7012, 5249, 5253, 7013, 5023, 5125, 2]
 // Exports: NativeTextInput
 
-// Module 7012 (NativeTextInput)
+// Module 7011 (NativeTextInput)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import native from "native" /* 5023 */;
 import native2 from "native" /* 5125 */;
-import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 7014 */;
+import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 7013 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1501 */;
@@ -114,7 +114,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCon
         const mountLayoutEffect = tmpResult.useMountLayoutEffect(tmp8);
         const _Symbol = Symbol;
         if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj2 = { value: "r", defaultValue: "emoji" };
+          const obj2 = { value: "Array", defaultValue: "Reflect" };
           cResult[8] = obj2;
           tmp11 = obj2;
         } else {
@@ -180,7 +180,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCon
       current.setNativeProps(obj);
     }
   });
-  return { value: "r", defaultValue: "emoji" };
+  return { value: "Array", defaultValue: "Reflect" };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePanGestureWrapper(arg0) {

@@ -1,11 +1,11 @@
-// Module ID: 17319
-// Function ID: 17320
+// Module ID: 17341
+// Function ID: 17342
 // Name: useOrientationLock
-// Dependencies: [19, 4926, 1630, 558, 576, 7023, 8788, 2]
+// Dependencies: [19, 4926, 1630, 558, 576, 7022, 8795, 2]
 
-// Module 17319 (useOrientationLock)
+// Module 17341 (useOrientationLock)
 import DeviceUtils from "DeviceUtils" /* 4926 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7023 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7022 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ let _require;
 
 let tmp;
 const MetaQuestUtils = tmp(1630);
-const DeviceOrientation = tmp(8788);
+const DeviceOrientation = tmp(8795);
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePortraitOrientationOnly() {
   let tmp3;
   let tmp4;

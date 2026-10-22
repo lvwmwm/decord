@@ -1,21 +1,21 @@
-// Module ID: 18488
-// Function ID: 18489
+// Module ID: 18510
+// Function ID: 18511
 // Name: VoicePanelVoiceChannelApp
-// Dependencies: [19, 17, 4821, 6790, 10863, 21, 4969, 587, 558, 576, 10864, 5238, 1899, 18387, 5038, 18489, 18490, 7154, 18374, 18449, 504, 2]
+// Dependencies: [19, 17, 4821, 6789, 10871, 21, 4969, 587, 558, 576, 10872, 5238, 1899, 18409, 5038, 18511, 18512, 7153, 18396, 18471, 504, 2]
 
-// Module 18488 (VoicePanelVoiceChannelApp)
+// Module 18510 (VoicePanelVoiceChannelApp)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10863 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10864 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 18374 */;
-import useVoiceChannelAppSurface from "useVoiceChannelAppSurface" /* 18449 */;
-import voiceChannelAppLayerLayout from "voiceChannelAppLayerLayout" /* 18489 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10871 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10872 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 18396 */;
+import useVoiceChannelAppSurface from "useVoiceChannelAppSurface" /* 18471 */;
+import voiceChannelAppLayerLayout from "voiceChannelAppLayerLayout" /* 18511 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import VoicePanelStore from "VoicePanelStore" /* 6790 */;
+import VoicePanelStore from "VoicePanelStore" /* 6789 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

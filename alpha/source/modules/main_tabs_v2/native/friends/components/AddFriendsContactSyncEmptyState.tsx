@@ -1,18 +1,18 @@
-// Module ID: 18117
-// Function ID: 18118
+// Module ID: 18139
+// Function ID: 18140
 // Name: AddFriendsContactSyncEmptyState
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 13501, 18118, 1128, 5220, 13505, 5230, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 13515, 18140, 1128, 5220, 13519, 5230, 2]
 
-// Module 18117 (AddFriendsContactSyncEmptyState)
+// Module 18139 (AddFriendsContactSyncEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import components_Button_Button from "components/Button/Button" /* 5230 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13501 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13505 */;
-import CompassSpotIllustration from "CompassSpotIllustration" /* 18118 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13515 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13519 */;
+import CompassSpotIllustration from "CompassSpotIllustration" /* 18140 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;

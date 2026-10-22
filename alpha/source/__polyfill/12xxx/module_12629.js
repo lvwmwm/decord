@@ -1,25 +1,19 @@
 // Module ID: 12629
 // Function ID: 12630
-// Dependencies: [12510]
-// Exports: vercelWaitUntil
+// Dependencies: []
+// Exports: flatten
 
 // Module 12629
-import _mod12510 from "module_12510" /* 12510 */;
 
-
-export const vercelWaitUntil = function vercelWaitUntil(arg0) {
-  const obj = _mod12510.GLOBAL_OBJ[Symbol.for(Symbol, "@vercel/request-context")];
-  if (obj) {
-    if (obj.get) {
-      let obj1;
-      if (obj.get()) {
-        obj1 = obj.get();
-      }
-      const tmp = obj1 && obj1.waitUntil;
-      if (tmp) {
-        obj1.waitUntil(arg0);
-      }
+export const flatten = function flatten(arr) {
+  const f148789 = (arr) => {
+    if (Array.isArray(arr)) {
+      const item = arr.forEach(f148789);
+    } else {
+      items.push(arr);
     }
-  }
-  obj1 = {};
+  };
+  const items = [];
+  let item = arr.forEach(f148789);
+  return items;
 };

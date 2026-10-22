@@ -1,17 +1,17 @@
-// Module ID: 18063
-// Function ID: 18064
+// Module ID: 18085
+// Function ID: 18086
 // Name: ThreadsScreen
-// Dependencies: [19, 17, 4821, 1087, 1127, 21, 4969, 587, 558, 576, 7353, 5579, 13268, 5693, 18064, 573, 1506, 2]
+// Dependencies: [19, 17, 4821, 1087, 1127, 21, 4969, 587, 558, 576, 7354, 5579, 13282, 5693, 18086, 573, 1506, 2]
 
-// Module 18063 (ThreadsScreen)
+// Module 18085 (ThreadsScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import ThreadConstants from "ThreadConstants" /* 1127 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5579 */;
-import navigateToThreadCreation from "navigateToThreadCreation" /* 13268 */;
-import ThreadListDefault from "ThreadList" /* 18064 */;
+import navigateToThreadCreation from "navigateToThreadCreation" /* 13282 */;
+import ThreadListDefault from "ThreadList" /* 18086 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -37,7 +37,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
   const cResult = obj.c(16);
   ({ style, channel } = arg0);
   const tmp3 = closure_9();
-  let obj2 = channel(7353);
+  let obj2 = channel(7354);
   const canStartThread = obj2.useCanStartThread(channel);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { includeKeyboardHeight: true };
@@ -128,7 +128,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
   channel = channel.channel;
   const style = channel.style;
   const tmp = closure_9();
-  let obj = channel(7353);
+  let obj = channel(7354);
   const canStartThread = obj.useCanStartThread(channel);
   const items = [channel];
   const insets = useSafeAreaInsetsKeyboardAwareDefault({ includeKeyboardHeight: true }).insets;

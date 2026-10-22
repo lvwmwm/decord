@@ -1,17 +1,17 @@
-// Module ID: 14060
-// Function ID: 14061
+// Module ID: 14074
+// Function ID: 14075
 // Name: trackAppStoreOverlaySurfaceClicked
-// Dependencies: [7776, 7785, 9542, 9545, 9577, 6699, 6703, 2]
+// Dependencies: [7777, 7786, 9549, 9552, 9584, 6698, 6702, 2]
 // Exports: trackAppStoreOverlaySurfaceClickedForAdContent, trackAppStoreOverlaySurfaceClickedForQuest
 
-// Module 14060 (trackAppStoreOverlaySurfaceClicked)
-import QuestTypes from "QuestTypes" /* 6699 */;
-import AdCreativeType from "AdCreativeType" /* 6703 */;
-import AnalyticsActions from "AnalyticsActions" /* 7776 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7785 */;
-import captureAdUserAction4 from "captureAdUserAction" /* 9542 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9545 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9577 */;
+// Module 14074 (trackAppStoreOverlaySurfaceClicked)
+import QuestTypes from "QuestTypes" /* 6698 */;
+import AdCreativeType from "AdCreativeType" /* 6702 */;
+import AnalyticsActions from "AnalyticsActions" /* 7777 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7786 */;
+import captureAdUserAction4 from "captureAdUserAction" /* 9549 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9552 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9584 */;
 import size from "module_2" /* 2 */;
 
 function captureAppStoreOverlaySurfaceClickForMigration(overlaySurface, arg1, arg2) {
@@ -47,11 +47,11 @@ export const trackAppStoreOverlaySurfaceClickedForQuest = function trackAppStore
   let trackingCtx;
   ({ questId, trackingCtx, overlaySurface } = arg0);
   if (AnalyticsActions.AppStoreOverlaySurfaces.MAIN_CTA === overlaySurface) {
-    EXPAND = tmp(7785).QuestContentCTA.GAME_STORE_OPEN_GAME_LINK;
+    EXPAND = tmp(7786).QuestContentCTA.GAME_STORE_OPEN_GAME_LINK;
   } else if (AnalyticsActions.AppStoreOverlaySurfaces.RATING_STAT === overlaySurface) {
-    EXPAND = tmp(7785).QuestContentCTA.GAME_STORE_OPEN_REVIEWS;
+    EXPAND = tmp(7786).QuestContentCTA.GAME_STORE_OPEN_REVIEWS;
   } else if (AnalyticsActions.AppStoreOverlaySurfaces.SEE_MORE === overlaySurface) {
-    EXPAND = tmp(7785).QuestContentCTA.EXPAND;
+    EXPAND = tmp(7786).QuestContentCTA.EXPAND;
   }
   const tmpResult = AdAnalyticsInterfaceExperiment;
   if (tmpResult.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_3_CLICKED_EXTERNAL, "app_store_overlay_surface_click")) {
@@ -76,11 +76,11 @@ export const trackAppStoreOverlaySurfaceClickedForAdContent = function trackAppS
   ({ adContentId, adCreativeType, trackingCtx, overlaySurface } = relatedQuestId);
   relatedQuestId = relatedQuestId.relatedQuestId;
   if (AnalyticsActions.AppStoreOverlaySurfaces.MAIN_CTA === overlaySurface) {
-    EXPAND = tmp(7785).QuestContentCTA.GAME_STORE_OPEN_GAME_LINK;
+    EXPAND = tmp(7786).QuestContentCTA.GAME_STORE_OPEN_GAME_LINK;
   } else if (AnalyticsActions.AppStoreOverlaySurfaces.RATING_STAT === overlaySurface) {
-    EXPAND = tmp(7785).QuestContentCTA.GAME_STORE_OPEN_REVIEWS;
+    EXPAND = tmp(7786).QuestContentCTA.GAME_STORE_OPEN_REVIEWS;
   } else if (AnalyticsActions.AppStoreOverlaySurfaces.SEE_MORE === overlaySurface) {
-    EXPAND = tmp(7785).QuestContentCTA.EXPAND;
+    EXPAND = tmp(7786).QuestContentCTA.EXPAND;
   }
   const tmpResult = AdAnalyticsInterfaceExperiment;
   if (tmpResult.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_3_CLICKED_EXTERNAL, "app_store_overlay_surface_click")) {

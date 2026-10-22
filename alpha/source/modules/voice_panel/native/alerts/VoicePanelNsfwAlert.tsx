@@ -1,11 +1,11 @@
-// Module ID: 18519
-// Function ID: 18520
+// Module ID: 18541
+// Function ID: 18542
 // Name: VoicePanelNsfwAlert
-// Dependencies: [19, 4839, 4843, 21, 558, 576, 5901, 6816, 1128, 5901, 2]
+// Dependencies: [19, 4839, 4843, 21, 558, 576, 5900, 6815, 1128, 5900, 2]
 
-// Module 18519 (VoicePanelNsfwAlert)
+// Module 18541 (VoicePanelNsfwAlert)
 import GuildRecord from "GuildRecord" /* 4839 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6816 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6815 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import Fragment from "Fragment" /* 21 */;
@@ -184,10 +184,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanel
   let stringResult;
   guildId = guildId.guildId;
   const onConnect = guildId.onConnect;
-  let obj = guildId(5901);
+  let obj = guildId(5900);
   dependencyMap = obj.useDismissModalCallback();
   const tmp3 = isGuildNSFW(GuildStore.getGuild(guildId));
-  const AlertModal = guildId(5901).AlertModal;
+  const AlertModal = guildId(5900).AlertModal;
   const intl = guildId(1128).intl;
   const string = intl.string;
   const t = guildId(1128).t;
@@ -206,7 +206,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanel
     string2Result = string2(t2.E4Cd5I);
   }
   obj3 = { children: items };
-  AlertActions = tmp(5901).AlertActions;
+  AlertActions = tmp(5900).AlertActions;
   const obj4 = {
     variant: "primary",
     onPress: function handleAgree() {
@@ -217,7 +217,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanel
     },
     text: intl3.string(guildId(1128).t.wVq7uo)
   };
-  const AlertActionButton = tmp(5901).AlertActionButton;
+  const AlertActionButton = tmp(5900).AlertActionButton;
   intl3 = tmp(1128).intl;
   items = [closure_5(AlertActionButton, obj4, "confirm"), ];
   const obj5 = {
@@ -229,7 +229,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanel
     },
     text: intl4.string(guildId(1128).t["/g10LC"])
   };
-  const AlertActionButton2 = tmp(5901).AlertActionButton;
+  const AlertActionButton2 = tmp(5900).AlertActionButton;
   intl4 = tmp(1128).intl;
   items[1] = closure_5(AlertActionButton2, obj5, "add-profile-picture");
   return closure_5(AlertModal, obj2);

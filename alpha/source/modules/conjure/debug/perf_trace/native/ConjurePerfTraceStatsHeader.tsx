@@ -1,13 +1,13 @@
-// Module ID: 12473
-// Function ID: 12474
+// Module ID: 12484
+// Function ID: 12485
 // Name: ConjurePerfTraceStatsHeader
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 12474, 10704, 5220, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 12485, 10711, 5220, 2]
 
-// Module 12473 (ConjurePerfTraceStatsHeader)
+// Module 12484 (ConjurePerfTraceStatsHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 12474 */;
+import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 12485 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -57,7 +57,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
   const cResult = obj.c(25);
   stats = stats.stats;
   if (cResult[0] !== stats) {
-    const tmpResult = tmp(12474);
+    const tmpResult = tmp(12485);
     const perfModelSummaryResult = tmpResult.perfModelSummary(stats);
     cResult[0] = stats;
     cResult[1] = perfModelSummaryResult;
@@ -134,7 +134,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
           }
         }
       }
-      const PERF_CATEGORIES = tmp(10704).PERF_CATEGORIES;
+      const PERF_CATEGORIES = tmp(10711).PERF_CATEGORIES;
       const mapped = PERF_CATEGORIES.map((item) => {
         let items;
         let items1;
@@ -207,7 +207,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
   let items;
   stats = stats.stats;
   let tmp = stats;
-  let obj = stats(12474);
+  let obj = stats(12485);
   const perfModelSummaryResult = obj.perfModelSummary(stats);
   let tmp4 = closure_6();
   dependencyMap = tmp4;
@@ -263,7 +263,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
       return tmp4(tmp5, obj2, item);
     })
   };
-  PERF_CATEGORIES = stats(10704).PERF_CATEGORIES;
+  PERF_CATEGORIES = stats(10711).PERF_CATEGORIES;
   items[1] = closure_3(closure_2, obj4);
   let tmp7Result = null;
   const tmp7 = closure_3;

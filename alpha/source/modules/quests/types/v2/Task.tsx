@@ -1,14 +1,14 @@
-// Module ID: 7770
-// Function ID: 7771
+// Module ID: 7771
+// Function ID: 7772
 // Name: Task
-// Dependencies: [7771, 6704, 7772, 7773, 2]
+// Dependencies: [7772, 6703, 7773, 7774, 2]
 // Exports: questTaskConfigFromServer, questTaskConfigV2FromServer
 
-// Module 7770 (Task)
-import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 6704 */;
-import QuestTaskConfigTypes from "QuestTaskConfigTypes" /* 7771 */;
-import v2_Video from "v2/Video" /* 7772 */;
-import QuestTaskJoinOperator from "QuestTaskJoinOperator" /* 7773 */;
+// Module 7771 (Task)
+import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 6703 */;
+import QuestTaskConfigTypes from "QuestTaskConfigTypes" /* 7772 */;
+import v2_Video from "v2/Video" /* 7773 */;
+import QuestTaskJoinOperator from "QuestTaskJoinOperator" /* 7774 */;
 import size from "module_2" /* 2 */;
 
 function _firstPartyTasksFromServer(tasks) {

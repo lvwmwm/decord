@@ -1,11 +1,11 @@
-// Module ID: 8067
-// Function ID: 8068
+// Module ID: 8068
+// Function ID: 8069
 // Name: PlayAgeSignals
-// Dependencies: [5, 8068, 8069, 2]
+// Dependencies: [5, 8069, 8070, 2]
 // Exports: getAgeSignals
 
-// Module 8067 (PlayAgeSignals)
-import react_nativeDefault from "react-native" /* 8068 */;
+// Module 8068 (PlayAgeSignals)
+import react_nativeDefault from "react-native" /* 8069 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

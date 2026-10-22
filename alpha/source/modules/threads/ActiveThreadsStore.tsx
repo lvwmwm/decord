@@ -1,9 +1,9 @@
-// Module ID: 6776
-// Function ID: 6777
+// Module ID: 6775
+// Function ID: 6776
 // Name: ActiveThreadsStore
 // Dependencies: [4825, 4821, 12, 504, 11, 584, 2]
 
-// Module 6776 (ActiveThreadsStore)
+// Module 6775 (ActiveThreadsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -16,7 +16,7 @@ let closure_5, importDefault;
 
 let c2;
 let c3;
-const f96300 = (type) => set.has(type.type);
+const f96398 = (type) => set.has(type.type);
 function handleThreadCreateOrUpdate(channel) {
   channel = channel.channel;
   if (set.has(channel.type)) {
@@ -140,7 +140,7 @@ let obj = {
       if (tmp) {
         closure_5[threads.id] = {};
         threads = threads.threads;
-        const found = threads.filter(f96300);
+        const found = threads.filter(f96398);
         const item = found.forEach((id) => {
           id = threads.id;
           const parent_id = id.parent_id;
@@ -183,7 +183,7 @@ let obj = {
     if (tmp) {
       closure_5[guild.id] = {};
       const threads = guild.threads;
-      const found = threads.filter(f96300);
+      const found = threads.filter(f96398);
       const item = found.forEach((id) => {
         id = threads.id;
         const parent_id = id.parent_id;

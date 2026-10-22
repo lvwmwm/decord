@@ -1,10 +1,10 @@
-// Module ID: 19032
-// Function ID: 19033
+// Module ID: 19055
+// Function ID: 19056
 // Name: GuildSettingsRoleEditPermissions
-// Dependencies: [32, 19, 17, 4839, 4901, 1392, 1087, 21, 4969, 587, 4906, 38, 5220, 1128, 5196, 19033, 2002, 18182, 19030, 7131, 1267, 1099, 18186, 7279, 6973, 1202, 8967, 2]
+// Dependencies: [32, 19, 17, 4839, 4901, 1392, 1087, 21, 4969, 587, 4906, 38, 5220, 1128, 5196, 19056, 2002, 18204, 19053, 7130, 1267, 1099, 18208, 7280, 6972, 1202, 8974, 2]
 // Exports: default
 
-// Module 19032 (GuildSettingsRoleEditPermissions)
+// Module 19055 (GuildSettingsRoleEditPermissions)
 import nativeDefault from "native" /* 587 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
@@ -118,7 +118,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           ActionSheetActionCreatorsDefault;
           const obj = { permissionsEdited, onPermissionsChanged: dependencyMap, guildId: guild.id };
-          const tmp3 = asyncRequire(19033, dependencyMap.paths);
+          const tmp3 = asyncRequire(19056, dependencyMap.paths);
           openLazy(tmp3, "role-permission-templates-" + guild.id + "-" + role.id, obj);
         },
       accessibilityRole: "button"
@@ -126,7 +126,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
     tmp19Result = tmp19(Text, obj3);
   }
   const tmp19Result3 = closure_14(closure_6, { children: tmp19Result });
-  const tmp15Result = role(18182);
+  const tmp15Result = role(18204);
   const guildPermissionSpec = tmp15Result.generateGuildPermissionSpec(guild);
   const mapped = guildPermissionSpec.map((permissions) => {
     const obj = {
@@ -146,8 +146,8 @@ export default function GuildSettingsRoleEditPermission(guild) {
   const mapped1 = found.map((title) => ({ title: title.title, data: title.permissions }));
   const children = [, , , ];
   const tmp25 = mapped1.length > 0;
-  children[0] = closure_14(role(19030), { role });
-  let obj6 = { children: tmp19(guild(7131).SearchField, obj7) };
+  children[0] = closure_14(role(19053), { role });
+  let obj6 = { children: tmp19(guild(7130).SearchBar, obj7) };
   obj7 = {
     size: "md",
     onChange: function handleSearchQuery(str) {
@@ -256,7 +256,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
     };
     tmp19Result4 = tmp19(closure_8, obj8);
   } else {
-    const obj9 = { Illustration: guild(8967).NoResultsAlt, style: null, bodyStyle: null, body: intl2.format(guild(1128).t.Psh5OO, obj11) };
+    const obj9 = { Illustration: guild(8974).NoResultsAlt, style: null, bodyStyle: null, body: intl2.format(guild(1128).t.Psh5OO, obj11) };
     const EmptyState = tmp28(1202).EmptyState;
     ({ emptyState: obj10.style, emptyStateText: obj10.bodyStyle } = tmp);
     intl2 = tmp28(1128).intl;

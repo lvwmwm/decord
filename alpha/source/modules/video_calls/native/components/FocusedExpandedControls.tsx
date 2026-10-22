@@ -1,9 +1,9 @@
-// Module ID: 11618
-// Function ID: 11619
+// Module ID: 11629
+// Function ID: 11630
 // Name: FocusedExpandedControls
-// Dependencies: [19, 17, 6628, 502, 5704, 21, 4969, 587, 558, 576, 1202, 5655, 11619, 11620, 8919, 504, 11621, 1128, 1384, 11568, 9122, 9129, 11539, 11622, 11589, 11623, 11624, 2]
+// Dependencies: [19, 17, 6627, 502, 5704, 21, 4969, 587, 558, 576, 1202, 5655, 11630, 11631, 8926, 504, 11632, 1128, 1384, 11579, 9129, 9136, 11550, 11633, 11600, 11634, 11635, 2]
 
-// Module 11618 (FocusedExpandedControls)
+// Module 11629 (FocusedExpandedControls)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -13,18 +13,18 @@ import native from "native" /* 1202 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import FastImageDefault from "FastImage" /* 5655 */;
 import Constants from "Constants" /* 5704 */;
-import Form from "Form" /* 8919 */;
-import CallsUtils from "CallsUtils" /* 9122 */;
-import showAudioOutputSelector from "showAudioOutputSelector" /* 9129 */;
-import useScreenshareUtilsDefault from "useScreenshareUtils" /* 11539 */;
-import VolumeSliderDefault from "VolumeSlider" /* 11568 */;
-import VoiceActionUtils from "VoiceActionUtils" /* 11589 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11619 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11620 */;
-import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 11621 */;
-import useDeafStatesDefault from "useDeafStates" /* 11622 */;
+import Form from "Form" /* 8926 */;
+import CallsUtils from "CallsUtils" /* 9129 */;
+import showAudioOutputSelector from "showAudioOutputSelector" /* 9136 */;
+import useScreenshareUtilsDefault from "useScreenshareUtils" /* 11550 */;
+import VolumeSliderDefault from "VolumeSlider" /* 11579 */;
+import VoiceActionUtils from "VoiceActionUtils" /* 11600 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11630 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11631 */;
+import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 11632 */;
+import useDeafStatesDefault from "useDeafStates" /* 11633 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6628 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6627 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -167,7 +167,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Expand
       }
     }
     const obj2 = { tintColor: nativeDefault.unsafe_rawColors.BRAND_500, renderIosBackground: true, value: switchValue, disabled, onValueChange: onSwitchValueChange };
-    const FormSwitch = tmp(8919).FormSwitch;
+    const FormSwitch = tmp(8926).FormSwitch;
     const tmp10 = metroImportDefault(FormSwitch, obj2);
     cResult[0] = disabled;
     cResult[1] = onSwitchValueChange;
@@ -362,7 +362,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamVolume
       let tmp31 = null;
       if (null != stateFromStores) {
         const obj4 = { label: tmp26 };
-        tmp31 = metroImportDefault(tmp(8919).FormRow, obj4);
+        tmp31 = metroImportDefault(tmp(8926).FormRow, obj4);
       }
       cResult[14] = stateFromStores;
       cResult[15] = tmp26;
@@ -441,7 +441,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AudioRouteBu
   const cResult = obj.c(7);
   channelId = channelId.channelId;
   const isConnectedToVoiceChannel = channelId.isConnectedToVoiceChannel;
-  const obj2 = channelId(9122);
+  const obj2 = channelId(9129);
   const routeSource = obj2.useMaskedSpeakerStates().routeSource;
   if (cResult[0] === channelId) {
     let tmp4;
@@ -572,7 +572,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeafenButton
     tmp7 = cResult[1];
   }
   const onPress = tmp7.onPress;
-  const tmp5Result = tmp5(tmp7.deaf ? 11623 : 11624);
+  const tmp5Result = tmp5(tmp7.deaf ? 11634 : 11635);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
     const stringResult = intl.string(intl3.t.wjcRFX);
@@ -606,7 +606,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeafenButton
   const tmp3 = useDeafStatesDefault(channel);
   const obj = VoiceActionUtils;
   const deafHandler = obj.createDeafHandler(tmp3);
-  const obj2 = { disabled: flag, onPress: deafHandler.onPress, iconSource: importDefault(deafHandler.deaf ? 11623 : 11624), label: intl.string(intl3.t.wjcRFX) };
+  const obj2 = { disabled: flag, onPress: deafHandler.onPress, iconSource: importDefault(deafHandler.deaf ? 11634 : 11635), label: intl.string(intl3.t.wjcRFX) };
   intl = tmp4(1128).intl;
   return metroImportDefault(closure_12, obj2);
 });

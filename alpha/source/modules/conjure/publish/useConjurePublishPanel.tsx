@@ -1,13 +1,13 @@
-// Module ID: 12235
-// Function ID: 12236
+// Module ID: 12246
+// Function ID: 12247
 // Name: useConjurePublishPanel
-// Dependencies: [5, 32, 19, 6759, 6760, 3830, 12236, 11748, 12237, 12238, 11752, 11819, 10690, 1128, 2]
+// Dependencies: [5, 32, 19, 6758, 6759, 3830, 12247, 11759, 12248, 12249, 11763, 11831, 10697, 1128, 2]
 // Exports: default
 
-// Module 12235 (useConjurePublishPanel)
+// Module 12246 (useConjurePublishPanel)
 import _modDef3830 from "module_3830" /* 3830 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6759 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6760 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6758 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6759 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -26,7 +26,7 @@ const items3 = [ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET, _mod
 items1[2] = items3;
 const items4 = [ConjureProjectTypes.ConjureSupportedSurface.AUTOMOD, _modDef3830.Q9ruoM];
 items1[3] = items4;
-let obj = { screen_capture: _modDef3830["8/7kE7"] };
+let obj = { screen_capture: _modDef3830["8/7kE7"], connect_user_to_voice: _modDef3830.uvDWXa };
 let obj2 = { initial: _modDef3830.NUZBwo, notPublished: _modDef3830.Gdz7pg, published: _modDef3830["6E9W4F"] };
 let result = size.fileFinishedImporting("modules/conjure/publish/useConjurePublishPanel.tsx");
 

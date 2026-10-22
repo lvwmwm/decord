@@ -1,9 +1,9 @@
-// Module ID: 14688
-// Function ID: 14689
+// Module ID: 14702
+// Function ID: 14703
 // Name: ReferralProgramShareConfirmationActionSheet
-// Dependencies: [17, 1087, 21, 4969, 587, 558, 576, 5018, 7547, 5196, 7395, 1202, 5220, 1128, 8527, 5230, 2067, 7232, 14689, 5964, 5251, 2]
+// Dependencies: [17, 1087, 21, 4969, 587, 558, 576, 5018, 7548, 5196, 7396, 1202, 5220, 1128, 8528, 5230, 2067, 7233, 14703, 5963, 5251, 2]
 
-// Module 14688 (ReferralProgramShareConfirmationActionSheet)
+// Module 14702 (ReferralProgramShareConfirmationActionSheet)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,11 +14,11 @@ import UserUtilsDefault from "UserUtils" /* 5018 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5251 */;
-import Stack_Stack from "Stack/Stack" /* 5964 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7232 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7395 */;
-import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7547 */;
-import FistBumpSpotIllustration from "FistBumpSpotIllustration" /* 14689 */;
+import Stack_Stack from "Stack/Stack" /* 5963 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7233 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7396 */;
+import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7548 */;
+import FistBumpSpotIllustration from "FistBumpSpotIllustration" /* 14703 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -67,7 +67,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharedU
   } else {
     tmp5 = cResult[1];
   }
-  const FAIL = tmp(7547).CreateReferralStatus.FAIL;
+  const FAIL = tmp(7548).CreateReferralStatus.FAIL;
   if (cResult[2] !== user.id) {
     function handlePress() {
       const obj = ActionSheetActionCreatorsDefault;
@@ -112,7 +112,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharedU
             const intl2 = tmp(1128).intl;
             const stringResult = intl2.string(user(1128).t["g33r/P"]);
             let obj3 = { size: "xs", color: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT };
-            const ChatIcon = tmp(8527).ChatIcon;
+            const ChatIcon = tmp(8528).ChatIcon;
             const tmp26 = closure_5(ChatIcon, obj3);
             cResult[14] = stringResult;
             cResult[15] = tmp26;
@@ -200,7 +200,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharedU
   const tmp = closure_8();
   let obj = UserUtilsDefault;
   const name = obj.getName(user);
-  const tmp6 = trialCreationResult === user(7547).CreateReferralStatus.FAIL;
+  const tmp6 = trialCreationResult === user(7548).CreateReferralStatus.FAIL;
   let obj2 = { style: tmp.recipientRow, children: items1 };
   const items = [tmp.avatarContainer, ];
   let erroredAvatar = tmp6;
@@ -243,7 +243,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharedU
   const Button = tmp5(5230).Button;
   intl2 = tmp5(1128).intl;
   obj10 = { size: "xs", color: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT };
-  ChatIcon = tmp5(8527).ChatIcon;
+  ChatIcon = tmp5(8528).ChatIcon;
   items1[2] = closure_5(Button, obj9);
   return closure_7(tmp8, obj2);
 });
@@ -431,12 +431,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReferralProg
   let obj = { helpdeskArticle: obj2.getArticleURL(HelpdeskArticles.REFERRAL_PROGRAM) };
   const AwGSWl = tmp5(1128).t.AwGSWl;
   obj2 = HelpdeskUtilsDefault;
-  const obj3 = { startExpanded: true, contentStyles: tmp.content, header: closure_5(tmp5(7232).BottomSheetTitleHeader, { title: null }), children: closure_7(Stack, obj4) };
+  const obj3 = { startExpanded: true, contentStyles: tmp.content, header: closure_5(tmp5(7233).BottomSheetTitleHeader, { title: null }), children: closure_7(Stack, obj4) };
   const formatResult = format(AwGSWl, obj);
   BottomSheet = tmp5(5251).BottomSheet;
   obj4 = { children: items };
-  const obj5 = { style: tmp.headerAsset, children: closure_5(tmp5(14689).FistBumpSpotIllustration, {}) };
-  Stack = tmp5(5964).Stack;
+  const obj5 = { style: tmp.headerAsset, children: closure_5(tmp5(14703).FistBumpSpotIllustration, {}) };
+  Stack = tmp5(5963).Stack;
   items = [closure_5(View, obj5), , , ];
   const obj6 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.header, children: stringResult };
   items[1] = closure_5(tmp5(5220).Text, obj6);

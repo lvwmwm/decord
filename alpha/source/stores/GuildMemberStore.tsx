@@ -30,9 +30,9 @@ import size from "module_2" /* 2 */;
 
 let closure_12, closure_14, hasOwnProperty;
 
-const f93296 = (member) => member.member;
-const f93299 = (item) => null != item;
-const f93301 = (item) => {
+const f93394 = (member) => member.member;
+const f93397 = (item) => null != item;
+const f93399 = (item) => {
   mergeMessageResolvedMembers(item);
 };
 function trackCommunicationDisabled(guildId, tmp10Result) {
@@ -108,7 +108,7 @@ function computeDerivedMemberState(unsafeMutableRoles, roles) {
   let tmp3;
   let tmp4;
   if (0 === roles.length) {
-    return { colorString: null, colorStrings: null, colorRoleId: "ix", hoistRoleId: "useEffect", iconRoleId: "a", highestRoleId: "application" };
+    return { colorString: null, colorStrings: null, colorRoleId: "application", hoistRoleId: "w", iconRoleId: "T", highestRoleId: "r" };
   } else {
     const iter = roles[Symbol.iterator]();
     while (iter !== undefined) {
@@ -566,7 +566,7 @@ function handleIncomingMessage(arg0) {
       }
       let tmp4 = null != members && null != guild_id;
       if (tmp4) {
-        obj = { id: guild_id, members: mapped.filter(f93299) };
+        obj = { id: guild_id, members: mapped.filter(f93397) };
         const _Object = Object;
         const entries = Object.entries(resolved.members);
         mapped = entries.map((item) => {
@@ -601,7 +601,7 @@ function handleIncomingMessage(arg0) {
   let tmp3 = null != members && null != guildId;
   if (tmp3) {
     const _Object = Object;
-    obj = { id: guildId, members: mapped.filter(f93299) };
+    obj = { id: guildId, members: mapped.filter(f93397) };
     const entries = Object.entries(resolved.members);
     mapped = entries.map((item) => {
       let tmp;
@@ -655,7 +655,7 @@ function mergeMessageResolvedMembers(channel_id) {
       }
       let tmp4 = null != members && null != guild_id;
       if (tmp4) {
-        obj = { id: guild_id, members: mapped.filter(f93299) };
+        obj = { id: guild_id, members: mapped.filter(f93397) };
         const _Object = Object;
         const entries = Object.entries(resolved.members);
         mapped = entries.map((item) => {
@@ -689,7 +689,7 @@ function mergeMessageResolvedMembers(channel_id) {
   }
   const tmp5 = null != members && null != guild_id;
   if (tmp5) {
-    obj = { id: guild_id, members: mapped.filter(f93299) };
+    obj = { id: guild_id, members: mapped.filter(f93397) };
     let _Object = Object;
     let entries = Object.entries(resolved.members);
     mapped = entries.map((item) => {
@@ -714,7 +714,7 @@ function mergeMessageResolvedMembers(channel_id) {
 }
 function handleLoadMessages(messages) {
   messages = messages.messages;
-  const item = messages.forEach(f93301);
+  const item = messages.forEach(f93399);
 }
 function handleLoadSearchResults(data) {
   data = data.data;
@@ -727,7 +727,7 @@ function handleLoadSearchResults(data) {
       });
     });
   });
-  const item1 = items.forEach(f93301);
+  const item1 = items.forEach(f93399);
 }
 let closure_3 = useCommunicationDisabledNoticeStore.clearCommunicationDisabledNotice;
 const GuildMemberFlags = GuildMemberConstants.GuildMemberFlags;
@@ -997,7 +997,7 @@ obj = {
         const item = activity_instances.forEach((participants) => {
           let found;
           participants = participants.participants;
-          obj = { id, members: found.map(f93296) };
+          obj = { id, members: found.map(f93394) };
           found = participants.filter(isActivityParticipantValidGuildMemberDefault);
           buildMembers(obj);
         });
@@ -1829,7 +1829,7 @@ obj = {
     let tmp3 = null != embeddedActivityLocationGuildId;
     if (tmp3) {
       const participants = instance.participants;
-      const obj2 = { id: embeddedActivityLocationGuildId, members: found.map(f93296) };
+      const obj2 = { id: embeddedActivityLocationGuildId, members: found.map(f93394) };
       found = participants.filter(isActivityParticipantValidGuildMemberDefault);
       tmp3 = buildMembers(obj2);
     }
@@ -1850,7 +1850,7 @@ obj = {
     let tmp4 = null != members && null != guild_id;
     if (tmp4) {
       const _Object = Object;
-      obj = { id: guild_id, members: mapped.filter(f93299) };
+      obj = { id: guild_id, members: mapped.filter(f93397) };
       const entries = Object.entries(resolved.members);
       mapped = entries.map((item) => {
         let tmp;

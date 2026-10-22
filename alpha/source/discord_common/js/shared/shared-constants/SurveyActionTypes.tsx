@@ -1,9 +1,9 @@
-// Module ID: 7847
-// Function ID: 7848
+// Module ID: 7848
+// Function ID: 7849
 // Name: SurveyActionTypes
 // Dependencies: [2]
 
-// Module 7847 (SurveyActionTypes)
+// Module 7848 (SurveyActionTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/SurveyActionTypes.tsx");

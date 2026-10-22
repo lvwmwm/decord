@@ -1,14 +1,14 @@
-// Module ID: 6901
-// Function ID: 6902
+// Module ID: 6900
+// Function ID: 6901
 // Name: DragIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 6902, 5654, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 6901, 5654, 2]
 
-// Module 6901 (DragIcon)
+// Module 6900 (DragIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5654 */;
-import AssetRegistry from "AssetRegistry" /* 6902 */;
+import AssetRegistry from "AssetRegistry" /* 6901 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

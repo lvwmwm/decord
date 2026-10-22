@@ -1,19 +1,19 @@
-// Module ID: 11625
-// Function ID: 11626
+// Module ID: 11636
+// Function ID: 11637
 // Name: GestureContainer
-// Dependencies: [19, 17, 10847, 11313, 21, 4969, 587, 558, 576, 1499, 5038, 5283, 6658, 5192, 1202, 2]
+// Dependencies: [19, 17, 10855, 11322, 21, 4969, 587, 558, 576, 1499, 5038, 5283, 6657, 5192, 1202, 2]
 
-// Module 11625 (GestureContainer)
+// Module 11636 (GestureContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
 import timing from "timing" /* 5192 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6658 */;
-import ChannelCallStore from "ChannelCallStore" /* 10847 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6657 */;
+import ChannelCallStore from "ChannelCallStore" /* 10855 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 11313 */;
+import Constants from "Constants" /* 11322 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -98,7 +98,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GestureConta
       obj2.runOnJS(ModalActionCreatorsDefault.pop)();
     }
   }
-  let obj3 = { position: sharedValue, THRESHOLD_VELOCITY, runOnJS: tmp(5038).runOnJS, ModalActionCreators: sharedValue(6658), withTiming: tmp(5192).withTiming, DECELERATED_EASING: tmp(1202).DECELERATED_EASING };
+  let obj3 = { position: sharedValue, THRESHOLD_VELOCITY, runOnJS: tmp(5038).runOnJS, ModalActionCreators: sharedValue(6657), withTiming: tmp(5192).withTiming, DECELERATED_EASING: tmp(1202).DECELERATED_EASING };
   O.__closure = obj3;
   O.__workletHash = 4811943867759;
   O.__initData = __initData;
@@ -199,7 +199,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GestureConta
       obj2.runOnJS(ModalActionCreatorsDefault.pop)();
     }
   }
-  let obj3 = { position: sharedValue, THRESHOLD_VELOCITY, runOnJS: height(5038).runOnJS, ModalActionCreators: sharedValue(6658), withTiming: height(5192).withTiming, DECELERATED_EASING: height(1202).DECELERATED_EASING };
+  let obj3 = { position: sharedValue, THRESHOLD_VELOCITY, runOnJS: height(5038).runOnJS, ModalActionCreators: sharedValue(6657), withTiming: height(5192).withTiming, DECELERATED_EASING: height(1202).DECELERATED_EASING };
   T.__closure = obj3;
   T.__workletHash = 6850090802761;
   T.__initData = __initData4;

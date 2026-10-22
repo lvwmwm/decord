@@ -1,16 +1,16 @@
-// Module ID: 15362
-// Function ID: 15363
+// Module ID: 15375
+// Function ID: 15376
 // Name: RoleDot
-// Dependencies: [19, 17, 21, 4969, 587, 1384, 558, 576, 5239, 5975, 5244, 1388, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 1384, 558, 576, 5239, 5974, 5244, 1388, 2]
 
-// Module 15362 (RoleDot)
+// Module 15375 (RoleDot)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import useFontScale from "useFontScale" /* 5239 */;
-import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 5975 */;
+import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 5974 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;

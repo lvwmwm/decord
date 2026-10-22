@@ -1,9 +1,9 @@
-// Module ID: 12427
-// Function ID: 12428
+// Module ID: 12437
+// Function ID: 12438
 // Name: ConjureRatingFeedbackSheet
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 8632, 12426, 1128, 3830, 1896, 7232, 7166, 5230, 7282, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 8639, 12436, 1128, 3830, 1896, 7233, 7165, 5230, 7283, 2]
 
-// Module 12427 (ConjureRatingFeedbackSheet)
+// Module 12437 (ConjureRatingFeedbackSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1896 */;
@@ -37,10 +37,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRatin
   const cResult = obj.c(20);
   rating = rating.rating;
   const tmp4 = closure_6();
-  const obj2 = bottomSheetClose(8632);
+  const obj2 = bottomSheetClose(8639);
   const bottomSheetRef1 = obj2.useBottomSheetRef();
   ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef1);
-  const obj3 = bottomSheetClose(12426);
+  const obj3 = bottomSheetClose(12436);
   const conjureRatingFeedback = obj3.useConjureRatingFeedback(rating);
   ({ text, setText, send } = conjureRatingFeedback);
   const canSend = conjureRatingFeedback.canSend;
@@ -62,7 +62,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRatin
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { title: first };
-      const tmp13 = closure_4(bottomSheetClose(7232).BottomSheetTitleHeader, obj4);
+      const tmp13 = closure_4(bottomSheetClose(7233).BottomSheetTitleHeader, obj4);
       cResult[4] = tmp13;
       tmp11 = tmp13;
     } else {
@@ -112,7 +112,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRatin
               return tmp31;
             }
             const obj5 = { ref: bottomSheetRef, startExpanded: true, keyboardShouldPersistTaps: "handled", header: tmp11, children: tmp27 };
-            const tmp33 = closure_4(bottomSheetClose(7282).ActionSheet, obj5);
+            const tmp33 = closure_4(bottomSheetClose(7283).ActionSheet, obj5);
             cResult[17] = bottomSheetRef;
             cResult[18] = tmp27;
             cResult[19] = tmp33;
@@ -135,8 +135,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRatin
       cResult[12] = tmp26;
       tmp24 = tmp26;
     }
-    const obj8 = { accessibilityLabel: first, placeholder: tmp14, maxLength: bottomSheetClose(12426).CONJURE_RATING_FEEDBACK_MAX_LENGTH, value: text, onChange: setText };
-    const TextArea = tmp(7166).TextArea;
+    const obj8 = { accessibilityLabel: first, placeholder: tmp14, maxLength: bottomSheetClose(12436).CONJURE_RATING_FEEDBACK_MAX_LENGTH, value: text, onChange: setText };
+    const TextArea = tmp(7165).TextArea;
     const tmp19 = closure_4(TextArea, obj8);
     cResult[6] = setText;
     cResult[7] = text;

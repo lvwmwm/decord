@@ -1,21 +1,21 @@
-// Module ID: 10755
-// Function ID: 10756
+// Module ID: 10762
+// Function ID: 10763
 // Name: ConjurePublishActionCreators
-// Dependencies: [5, 1392, 6759, 10684, 1087, 10688, 1297, 10690, 584, 8643, 10756, 10710, 10759, 2]
+// Dependencies: [5, 1392, 6758, 10691, 1087, 10695, 1297, 10697, 584, 8650, 10763, 10717, 10766, 2]
 // Exports: refreshPreviewApplication, refreshPublishedProject, trackPublishFailed, unpublishUserApp
 
-// Module 10755 (ConjurePublishActionCreators)
+// Module 10762 (ConjurePublishActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 10688 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10690 */;
-import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 10710 */;
-import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 10756 */;
-import conjureLiveRelaunch from "conjureLiveRelaunch" /* 10759 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 10695 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10697 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 10717 */;
+import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 10763 */;
+import conjureLiveRelaunch from "conjureLiveRelaunch" /* 10766 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1392 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6759 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10684 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6758 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10691 */;
 import size from "module_2" /* 2 */;
 
 let also_remove_preview_bot, closure_4, ok;
@@ -175,7 +175,7 @@ obj = function _unpublishUserApp() {
             } else {
               tmp = closure_130_6.getPublishStatus(projectId);
               if (null != tmp) {
-                const obj7 = { type: "CONJURE_PROJECT_PUBLISH_STATUS_UPDATE", projectId, published: false, hasUnpublishedChanges: false, surface: tmp.surface, previewAppChannels: tmp.previewAppChannels, previewDevicePermissions: tmp.previewDevicePermissions };
+                const obj7 = { type: "CONJURE_PROJECT_PUBLISH_STATUS_UPDATE", projectId, publishState: "not_live", surface: tmp.surface, previewAppChannels: tmp.previewAppChannels, previewDevicePermissions: tmp.previewDevicePermissions };
                 obj = closure_130_1(closure_130_2[8]);
                 obj.dispatch(obj7);
               }

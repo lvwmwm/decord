@@ -1,15 +1,15 @@
-// Module ID: 6879
-// Function ID: 6880
+// Module ID: 6878
+// Function ID: 6879
 // Name: MemberVerificationForm
-// Dependencies: [5, 32, 19, 17, 6861, 1087, 21, 4969, 5649, 1128, 558, 576, 6863, 4998, 5585, 504, 6880, 6835, 6881, 7019, 5230, 2]
+// Dependencies: [5, 32, 19, 17, 6860, 1087, 21, 4969, 5649, 1128, 558, 576, 6862, 4998, 5585, 504, 6879, 6834, 6880, 7018, 5230, 2]
 // Exports: default
 
-// Module 6879 (MemberVerificationForm)
+// Module 6878 (MemberVerificationForm)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4998 */;
 import useInitialValueDefault from "useInitialValue" /* 5585 */;
-import MemberVerificationFormStore2 from "MemberVerificationFormStore" /* 6861 */;
+import MemberVerificationFormStore2 from "MemberVerificationFormStore" /* 6860 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

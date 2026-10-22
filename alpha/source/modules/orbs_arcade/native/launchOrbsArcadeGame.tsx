@@ -1,18 +1,18 @@
-// Module ID: 16316
-// Function ID: 16317
+// Module ID: 16338
+// Function ID: 16339
 // Name: launchOrbsArcadeGame
-// Dependencies: [5, 2045, 16298, 6762, 5649, 1128, 6795, 11309, 10736, 5196, 5137, 10735, 584, 2]
+// Dependencies: [5, 2045, 16316, 6761, 5649, 1128, 6794, 11318, 10743, 5196, 5137, 10742, 584, 2]
 // Exports: default
 
-// Module 16316 (launchOrbsArcadeGame)
+// Module 16338 (launchOrbsArcadeGame)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl2 from "intl" /* 1128 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5649 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6795 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6794 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16298 */;
-import FramesConstants from "FramesConstants" /* 6762 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16316 */;
+import FramesConstants from "FramesConstants" /* 6761 */;
 import size from "module_2" /* 2 */;
 
 let analyticsLocations, closure_2, closure_3, closure_4, frameId, navigation;

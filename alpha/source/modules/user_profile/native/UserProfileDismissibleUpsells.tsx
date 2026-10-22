@@ -1,20 +1,20 @@
-// Module ID: 14347
-// Function ID: 14348
+// Module ID: 14361
+// Function ID: 14362
 // Name: UserProfileDismissibleUpsells
-// Dependencies: [19, 17, 1392, 8645, 7528, 4818, 21, 4969, 587, 558, 576, 14348, 8652, 504, 2053, 4805, 10378, 1202, 5220, 1128, 6894, 6917, 5230, 9394, 12072, 2]
+// Dependencies: [19, 17, 1392, 8652, 7529, 4818, 21, 4969, 587, 558, 576, 14362, 8659, 504, 2053, 4805, 10385, 1202, 5220, 1128, 6893, 6916, 5230, 9401, 12082, 2]
 
-// Module 14347 (UserProfileDismissibleUpsells)
+// Module 14361 (UserProfileDismissibleUpsells)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import dismissible_content from "dismissible_content" /* 4805 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
-import XSmallIcon from "XSmallIcon" /* 6917 */;
-import ColorConstants from "ColorConstants" /* 7528 */;
-import Constants from "Constants" /* 8645 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9394 */;
-import ShopIcon from "ShopIcon" /* 12072 */;
+import XSmallIcon from "XSmallIcon" /* 6916 */;
+import ColorConstants from "ColorConstants" /* 7529 */;
+import Constants from "Constants" /* 8652 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9401 */;
+import ShopIcon from "ShopIcon" /* 12082 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
@@ -182,7 +182,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
                             },
                           children: metroImportAll(XSmallIcon.XSmallIcon, { size: "sm" })
                         };
-                        const PressableOpacity = tmp(6894).PressableOpacity;
+                        const PressableOpacity = tmp(6893).PressableOpacity;
                         intl2 = tmp(1128).intl;
                         items[1] = metroImportAll(PressableOpacity, obj6);
                         items1 = [React4(View, obj4), ];
@@ -339,7 +339,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
                 },
               children: metroImportAll(XSmallIcon.XSmallIcon, { size: "sm" })
             };
-            const PressableOpacity = tmp(6894).PressableOpacity;
+            const PressableOpacity = tmp(6893).PressableOpacity;
             intl2 = tmp(1128).intl;
             items[1] = metroImportAll(PressableOpacity, obj6);
             items1 = [React4(View, obj4), ];

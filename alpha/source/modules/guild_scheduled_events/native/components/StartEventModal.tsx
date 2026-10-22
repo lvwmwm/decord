@@ -1,20 +1,20 @@
-// Module ID: 9002
-// Function ID: 9003
+// Module ID: 9009
+// Function ID: 9010
 // Name: StartEventModal
-// Dependencies: [5, 32, 19, 17, 4821, 4843, 4827, 8852, 21, 4969, 587, 6658, 558, 576, 1128, 1202, 7170, 6894, 5220, 8996, 504, 8912, 9003, 7866, 9006, 5230, 7207, 2]
+// Dependencies: [5, 32, 19, 17, 4821, 4843, 4827, 8859, 21, 4969, 587, 6657, 558, 576, 1128, 1202, 7169, 6893, 5220, 9003, 504, 8919, 9010, 7867, 9013, 5230, 7206, 2]
 
-// Module 9002 (StartEventModal)
+// Module 9009 (StartEventModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6658 */;
-import Pressables from "Pressables" /* 6894 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7170 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 8852 */;
-import GuildEventCardDefault from "GuildEventCard" /* 8996 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6657 */;
+import Pressables from "Pressables" /* 6893 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7169 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 8859 */;
+import GuildEventCardDefault from "GuildEventCard" /* 9003 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

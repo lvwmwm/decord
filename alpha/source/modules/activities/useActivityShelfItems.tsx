@@ -1,9 +1,9 @@
-// Module ID: 11957
-// Function ID: 11958
+// Module ID: 11971
+// Function ID: 11972
 // Name: useActivityShelfItems
-// Dependencies: [19, 5611, 558, 576, 504, 11958, 11959, 11960, 2]
+// Dependencies: [19, 5611, 558, 576, 504, 11972, 11973, 11974, 2]
 
-// Module 11957 (useActivityShelfItems)
+// Module 11971 (useActivityShelfItems)
 import react from "react" /* 19 */;
 import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5611 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -38,10 +38,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityS
   }
   const tmp2Result = enableFilter(504);
   const filter = tmp2Result.useStateFromStoresObject(tmp6, tmp7).filter;
-  const tmp2Result3 = enableFilter(11958);
+  const tmp2Result3 = enableFilter(11972);
   const activityShelfData = tmp2Result3.useActivityShelfData(guildId);
-  const tmp10 = filter(11959)(activityShelfData);
-  const tmp2Result4 = enableFilter(11960);
+  const tmp10 = filter(11973)(activityShelfData);
+  const tmp2Result4 = enableFilter(11974);
   const developerActivityShelfItems = tmp2Result4.useDeveloperActivityShelfItems();
   if (cResult[2] === tmp5) {
     let tmp12;
@@ -113,11 +113,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityS
     const obj = { filter: filter.getFilter() };
     return obj;
   }).filter;
-  const obj2 = flag(11958);
+  const obj2 = flag(11972);
   const activityShelfData = obj2.useActivityShelfData(guildId);
-  const tmp2 = filter(11959)(activityShelfData);
+  const tmp2 = filter(11973)(activityShelfData);
   dependencyMap = tmp2;
-  const obj3 = flag(11960);
+  const obj3 = flag(11974);
   const developerActivityShelfItems = obj3.useDeveloperActivityShelfItems();
   const items1 = [developerActivityShelfItems, flag, filter, tmp2];
   return developerActivityShelfItems.useMemo(() => {

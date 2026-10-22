@@ -1,18 +1,18 @@
-// Module ID: 10604
-// Function ID: 10605
+// Module ID: 10611
+// Function ID: 10612
 // Name: ActivityStatus
-// Dependencies: [19, 17, 5698, 4911, 1392, 10605, 1087, 21, 4969, 558, 576, 504, 10606, 10607, 10608, 10609, 10614, 10615, 10623, 10625, 10613, 2]
+// Dependencies: [19, 17, 5698, 4911, 1392, 10612, 1087, 21, 4969, 558, 576, 504, 10613, 10614, 10615, 10616, 10621, 10622, 10630, 10632, 10620, 2]
 
-// Module 10604 (ActivityStatus)
+// Module 10611 (ActivityStatus)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
-import ActivityStatusConstants from "ActivityStatusConstants" /* 10605 */;
-import ApplicationStreamActivityStatusDefault from "ApplicationStreamActivityStatus" /* 10609 */;
-import ActivityStatusTextDefault from "ActivityStatusText" /* 10613 */;
-import isGameActivityDefault from "isGameActivity" /* 10614 */;
-import PresenceActivityStatusDefault from "PresenceActivityStatus" /* 10615 */;
-import VoiceActivityStatusDefault from "VoiceActivityStatus" /* 10623 */;
-import ActivityEmojiDefault from "ActivityEmoji" /* 10625 */;
+import ActivityStatusConstants from "ActivityStatusConstants" /* 10612 */;
+import ApplicationStreamActivityStatusDefault from "ApplicationStreamActivityStatus" /* 10616 */;
+import ActivityStatusTextDefault from "ActivityStatusText" /* 10620 */;
+import isGameActivityDefault from "isGameActivity" /* 10621 */;
+import PresenceActivityStatusDefault from "PresenceActivityStatus" /* 10622 */;
+import VoiceActivityStatusDefault from "VoiceActivityStatus" /* 10630 */;
+import ActivityEmojiDefault from "ActivityEmoji" /* 10632 */;
 import react from "react" /* 19 */;
 import PresenceStore_mod from "PresenceStore" /* 5698 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
@@ -354,8 +354,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityStat
   const items1 = [PresenceStore];
   const obj2 = userId(504);
   const stateFromStores1 = obj2.useStateFromStores(items1, () => PresenceStore.getActivities(userId));
-  const tmp6 = stateFromStores1(10606)(userId);
-  const voiceChannel = stateFromStores1(10607)({ userId, guildId }).voiceChannel;
+  const tmp6 = stateFromStores1(10613)(userId);
+  const voiceChannel = stateFromStores1(10614)({ userId, guildId }).voiceChannel;
   const items2 = [stateFromStores1];
   const memo = react.useMemo(() => {
     let found;
@@ -387,8 +387,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityStat
     }
   }, items2);
   let state;
-  const useGameMentionsAsPlainText = userId(10608).useGameMentionsAsPlainText;
-  userId(10608);
+  const useGameMentionsAsPlainText = userId(10615).useGameMentionsAsPlainText;
+  userId(10615);
   const tmp2 = userId;
   if (memo != null) {
     state = memo.state;
@@ -411,9 +411,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityStat
     if (null != tmp6) {
       let found;
       const tmp19 = closure_10;
-      const tmp5Result = stateFromStores1(10609);
+      const tmp5Result = stateFromStores1(10616);
       if (stateFromStores1 != null) {
-        found = stateFromStores1.find(tmp5(10614));
+        found = stateFromStores1.find(tmp5(10621));
       }
       const obj3 = { game: found, iconStyle: items4, textStyle, maxFontSizeMultiplier, hideIcon: true === bot, hideText: null != state1 };
       items4 = [tmp.icon, iconStyle];
@@ -429,13 +429,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityStat
       if (null != found1) {
         const obj4 = { activity: found1, iconStyle: items5, textStyle, maxFontSizeMultiplier, hideIcon: true === bot, hideText: null != state1 };
         items5 = [tmp.icon, iconStyle];
-        tmp19Result = closure_10(tmp5(10615), obj4);
+        tmp19Result = closure_10(tmp5(10622), obj4);
       } else {
         tmp19Result = null;
         if (null != voiceChannel) {
           const obj5 = { channel: voiceChannel, iconStyle: items6, textStyle, maxFontSizeMultiplier, hideIcon: true === bot, hideText: null != state1 };
           items6 = [tmp.icon, iconStyle];
-          tmp19Result = closure_10(tmp5(10623), obj5);
+          tmp19Result = closure_10(tmp5(10630), obj5);
         }
       }
     }
@@ -451,13 +451,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityStat
         }
         if (tmp26) {
           const obj6 = { emoji: memo.emoji, size: emojiSize, animate, style: tmp.emoji };
-          tmp26 = closure_10(tmp5(10625), obj6);
+          tmp26 = closure_10(tmp5(10632), obj6);
         }
         const items7 = [tmp26, ];
         let tmp28 = null != memo.state;
         if (tmp28) {
           const obj7 = { variant: "text-xs/normal", style: textStyle, maxFontSizeMultiplier, children: gameMentionsAsPlainText };
-          tmp28 = closure_10(tmp5(10613), obj7);
+          tmp28 = closure_10(tmp5(10620), obj7);
         }
         const obj8 = { children: items7 };
         items7[1] = tmp28;
@@ -475,7 +475,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityStat
     }
     if (tmp32) {
       const obj10 = { variant: "text-xs/normal", style: textStyle, maxFontSizeMultiplier, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: DOT_UNICODE };
-      tmp32 = closure_10(tmp5(10613), obj10);
+      tmp32 = closure_10(tmp5(10620), obj10);
     }
     items8[1] = tmp32;
     items8[2] = tmp22;

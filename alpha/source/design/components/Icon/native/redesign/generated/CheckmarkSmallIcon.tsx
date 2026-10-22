@@ -1,14 +1,14 @@
-// Module ID: 7216
-// Function ID: 7217
+// Module ID: 7215
+// Function ID: 7216
 // Name: CheckmarkSmallIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 7217, 5654, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 7216, 5654, 2]
 
-// Module 7216 (CheckmarkSmallIcon)
+// Module 7215 (CheckmarkSmallIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5654 */;
-import AssetRegistry from "AssetRegistry" /* 7217 */;
+import AssetRegistry from "AssetRegistry" /* 7216 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

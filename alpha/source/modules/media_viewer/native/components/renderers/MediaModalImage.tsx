@@ -1,16 +1,16 @@
-// Module ID: 14170
-// Function ID: 14171
+// Module ID: 14184
+// Function ID: 14185
 // Name: MediaModalImage
-// Dependencies: [19, 21, 1384, 14171, 558, 576, 14167, 14168, 5655, 14169, 2]
+// Dependencies: [19, 21, 1384, 14185, 558, 576, 14181, 14182, 5655, 14183, 2]
 
-// Module 14170 (MediaModalImage)
+// Module 14184 (MediaModalImage)
 import react2 from "react" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import useMediaLoadingDefault from "useMediaLoading" /* 14167 */;
-import MediaModalLoadingOverlayDefault from "MediaModalLoadingOverlay" /* 14168 */;
-import MediaModalSpoilerOverlayDefault from "MediaModalSpoilerOverlay" /* 14169 */;
-import AndroidMediaViewerFullResolutionExperiment from "AndroidMediaViewerFullResolutionExperiment" /* 14171 */;
+import useMediaLoadingDefault from "useMediaLoading" /* 14181 */;
+import MediaModalLoadingOverlayDefault from "MediaModalLoadingOverlay" /* 14182 */;
+import MediaModalSpoilerOverlayDefault from "MediaModalSpoilerOverlay" /* 14183 */;
+import AndroidMediaViewerFullResolutionExperiment from "AndroidMediaViewerFullResolutionExperiment" /* 14185 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -172,7 +172,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                               let tmp16 = null;
                               if (isLoadingVisible) {
                                 const obj6 = { style, status: "loading", progress };
-                                tmp16 = React3(tmp5(14168), obj6);
+                                tmp16 = React3(tmp5(14182), obj6);
                               }
                               cResult[25] = isLoadingVisible;
                               cResult[26] = progress;
@@ -245,7 +245,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp4 = react;
   if (hasError) {
     const obj = { style, status: "error" };
-    tmp7Result = React3(tmp(14168), obj);
+    tmp7Result = React3(tmp(14182), obj);
   } else {
     const Fragment = tmp4.Fragment;
     size = { accessibilityRole: "image", accessibilityLabel: source.description, fadeDuration, height: source.height, onError: handleError, onLoad: handleLoad, onLoadStart: handleLoadStart, onProgress: callback, pointerEvents, resizeMethod: str, source: tmp6, style, width: source.width };
@@ -263,7 +263,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
               const _Math2 = Math;
               const bound = Math.max(source.width, source.height);
               if (bound / Math.min(source.width, source.height) > 2) {
-                const tmp10Result = tmp10(14171);
+                const tmp10Result = tmp10(14185);
                 if (tmp10Result.getAndroidMediaViewerFullResolutionEnabled("MediaModal")) {
                   str = "none";
                 }
@@ -277,7 +277,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     let tmp8Result = null;
     if (isLoadingVisible) {
       const obj3 = { style, status: "loading", progress };
-      tmp8Result = tmp8(tmp(14168), obj3);
+      tmp8Result = tmp8(tmp(14182), obj3);
     }
     const obj4 = { children: items1 };
     items1[1] = tmp8Result;

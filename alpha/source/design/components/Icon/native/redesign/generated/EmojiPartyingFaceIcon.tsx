@@ -1,14 +1,14 @@
-// Module ID: 16638
-// Function ID: 16639
+// Module ID: 16660
+// Function ID: 16661
 // Name: EmojiPartyingFaceIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 16639, 5654, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 16661, 5654, 2]
 
-// Module 16638 (EmojiPartyingFaceIcon)
+// Module 16660 (EmojiPartyingFaceIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5654 */;
-import AssetRegistry from "AssetRegistry" /* 16639 */;
+import AssetRegistry from "AssetRegistry" /* 16661 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

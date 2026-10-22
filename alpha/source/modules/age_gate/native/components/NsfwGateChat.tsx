@@ -1,15 +1,15 @@
-// Module ID: 10858
-// Function ID: 10859
+// Module ID: 10866
+// Function ID: 10867
 // Name: NsfwGateChat
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5655, 10859, 1128, 5220, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5655, 10867, 1128, 5220, 2]
 
-// Module 10858 (NsfwGateChat)
+// Module 10866 (NsfwGateChat)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10859 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10867 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

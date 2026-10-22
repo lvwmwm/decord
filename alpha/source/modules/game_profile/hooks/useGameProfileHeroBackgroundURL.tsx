@@ -1,9 +1,9 @@
-// Module ID: 9273
-// Function ID: 9274
+// Module ID: 9280
+// Function ID: 9281
 // Name: useGameProfileHeroBackgroundURL
 // Dependencies: [32, 19, 558, 576, 2]
 
-// Module 9273 (useGameProfileHeroBackgroundURL)
+// Module 9280 (useGameProfileHeroBackgroundURL)
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

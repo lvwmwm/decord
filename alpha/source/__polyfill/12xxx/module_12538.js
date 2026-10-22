@@ -1,23 +1,31 @@
 // Module ID: 12538
 // Function ID: 12539
-// Dependencies: [12515]
-// Exports: getCapturedScopesOnSpan, setCapturedScopesOnSpan
+// Dependencies: [12521, 12522]
+// Exports: getMainCarrier, getSentryCarrier
 
 // Module 12538
-import _mod12515 from "module_12515" /* 12515 */;
+import _mod12521 from "module_12521" /* 12521 */;
+import _mod12522 from "module_12522" /* 12522 */;
 
-const _sentryScope = "_sentryScope";
-const _sentryIsolationScope = "_sentryIsolationScope";
 
-export const getCapturedScopesOnSpan = function getCapturedScopesOnSpan(scope) {
-  return { scope: scope[_sentryScope], isolationScope: scope[_sentryIsolationScope] };
+export const getMainCarrier = function getMainCarrier() {
+  const GLOBAL_OBJ = _mod12521.GLOBAL_OBJ;
+  const tmp3 = GLOBAL_OBJ.__SENTRY__ || {};
+  GLOBAL_OBJ.__SENTRY__ = tmp3;
+  tmp3.version = tmp3.version || _mod12522.SDK_VERSION;
+  tmp3.version || _mod12522.SDK_VERSION;
+  const SDK_VERSION = tmp(12522).SDK_VERSION;
+  tmp3[SDK_VERSION] = tmp3[_mod12522.SDK_VERSION] || {};
+  tmp3[_mod12522.SDK_VERSION] || {};
+  return _mod12521.GLOBAL_OBJ;
 };
-export const setCapturedScopesOnSpan = function setCapturedScopesOnSpan(arg0, arg1, arg2) {
-  const tmp = arg0;
-  if (tmp) {
-    const obj = _mod12515;
-    const result = obj.addNonEnumerableProperty(arg0, _sentryIsolationScope, arg2);
-    const obj2 = _mod12515;
-    const result1 = obj2.addNonEnumerableProperty(arg0, _sentryScope, arg1);
-  }
+export const getSentryCarrier = function getSentryCarrier(__SENTRY__) {
+  const tmp = __SENTRY__.__SENTRY__ || {};
+  __SENTRY__.__SENTRY__ = tmp;
+  const SDK_VERSION = tmp.version || _mod12522.SDK_VERSION;
+  tmp.version = SDK_VERSION;
+  const SDK_VERSION2 = _mod12522.SDK_VERSION;
+  const tmp4 = tmp[_mod12522.SDK_VERSION] || {};
+  tmp[SDK_VERSION2] = tmp4;
+  return tmp4;
 };

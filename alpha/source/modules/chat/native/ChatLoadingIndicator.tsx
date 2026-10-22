@@ -1,21 +1,21 @@
-// Module ID: 13958
-// Function ID: 13959
+// Module ID: 13972
+// Function ID: 13973
 // Name: ChatLoadingIndicator
-// Dependencies: [32, 19, 17, 4970, 6482, 5997, 4872, 1392, 2001, 1087, 21, 4969, 587, 5896, 5965, 2002, 558, 576, 504, 5220, 13959, 5038, 5192, 1128, 6894, 2]
+// Dependencies: [32, 19, 17, 4970, 6481, 5996, 4872, 1392, 2001, 1087, 21, 4969, 587, 5895, 5964, 2002, 558, 576, 504, 5220, 13973, 5038, 5192, 1128, 6893, 2]
 
-// Module 13958 (ChatLoadingIndicator)
+// Module 13972 (ChatLoadingIndicator)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
 import timing from "timing" /* 5192 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5896 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5895 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6482 */;
-import MessageStore from "MessageStore" /* 5997 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6481 */;
+import MessageStore from "MessageStore" /* 5996 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
 import UserStore from "UserStore" /* 1392 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
@@ -599,7 +599,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelHeade
         let tmp24;
         if (cResult[11] !== tmp19) {
           let obj4 = { onPress: openLoadingIndicatorDebugBody, children: tmp19 };
-          const tmp27 = closure_13(stateFromStores(6894).PressableOpacity, obj4);
+          const tmp27 = closure_13(stateFromStores(6893).PressableOpacity, obj4);
           cResult[11] = tmp19;
           cResult[12] = tmp27;
           tmp24 = tmp27;
@@ -709,7 +709,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelHeade
   const tmp7 = closure_13;
   if (stateFromStores1) {
     const obj8 = { onPress: openLoadingIndicatorDebugBody, children: tmp8 };
-    tmp7Result = tmp7(tmp2(6894).PressableOpacity, obj8);
+    tmp7Result = tmp7(tmp2(6893).PressableOpacity, obj8);
   }
   return tmp7Result;
 });

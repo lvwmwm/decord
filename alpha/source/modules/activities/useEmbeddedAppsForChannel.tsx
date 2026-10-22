@@ -1,12 +1,12 @@
-// Module ID: 11977
-// Function ID: 11978
+// Module ID: 11991
+// Function ID: 11992
 // Name: useEmbeddedAppsForChannel
-// Dependencies: [19, 5698, 1392, 4820, 558, 576, 504, 4890, 7241, 1388, 2]
+// Dependencies: [19, 5698, 1392, 4820, 558, 576, 504, 4890, 7242, 1388, 2]
 
-// Module 11977 (useEmbeddedAppsForChannel)
+// Module 11991 (useEmbeddedAppsForChannel)
 import EmbeddedActivitiesStore2 from "EmbeddedActivitiesStore" /* 4820 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4890 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7241 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7242 */;
 import react from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 5698 */;
 import UserStore from "UserStore" /* 1392 */;

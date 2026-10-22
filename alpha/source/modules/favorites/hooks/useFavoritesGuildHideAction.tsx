@@ -1,14 +1,14 @@
-// Module ID: 17462
-// Function ID: 17463
+// Module ID: 17484
+// Function ID: 17485
 // Name: useFavoritesGuildHideAction
-// Dependencies: [19, 4995, 1087, 558, 576, 10809, 4846, 1114, 1128, 3412, 2]
+// Dependencies: [19, 4995, 1087, 558, 576, 10817, 4846, 1114, 1128, 3412, 2]
 
-// Module 17462 (useFavoritesGuildHideAction)
+// Module 17484 (useFavoritesGuildHideAction)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import _modDef3412 from "module_3412" /* 3412 */;
 import FavoritesUtils from "FavoritesUtils" /* 4846 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10809 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10817 */;
 import react from "react" /* 19 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

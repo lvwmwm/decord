@@ -1,9 +1,9 @@
-// Module ID: 12450
-// Function ID: 12451
+// Module ID: 12460
+// Function ID: 12461
 // Name: ChatInputNativeComponent
 // Dependencies: [26, 106, 65, 114, 2]
 
-// Module 12450 (ChatInputNativeComponent)
+// Module 12460 (ChatInputNativeComponent)
 import _mod26 from "module_26" /* 26 */;
 import renderElement from "renderElement" /* 114 */;
 import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
@@ -12,7 +12,7 @@ import size from "module_2" /* 2 */;
 
 let obj2;
 const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "DCDChatInput", directEventTypes: { topChangeContentSize: { registrationName: "onChangeContentSize" }, topEndBlur: { registrationName: "onEndBlur" }, topBeginFocus: { registrationName: "onBeginFocus" }, topSelectionOrTextChange: { registrationName: "onSelectionOrTextChange" }, topTextFlushed: { registrationName: "onTextFlushed" }, topPasteImage: { registrationName: "onPasteImage" }, topPasteCommand: { registrationName: "onPasteCommand" }, topRequestSend: { registrationName: "onRequestSend" }, topTapAction: { registrationName: "onTapAction" } }, validAttributes: obj2 };
-obj2 = { textColor: _mod26.colorAttribute, editable: true, shouldShowCursor: true, placeholder: true, placeholderColor: _mod26.colorAttribute, markAsSpoilerTitle: true, keyboardAppearance: true, selectionColor: _mod26.colorAttribute, setNoExtractUI: true, keyboardType: true, maxHeight: true, verticalInset: true };
+obj2 = { textColor: _mod26.colorAttribute, editable: true, shouldShowCursor: true, placeholder: true, placeholderColor: _mod26.colorAttribute, markAsSpoilerTitle: true, showFormatMenu: true, keyboardAppearance: true, selectionColor: _mod26.colorAttribute, setNoExtractUI: true, keyboardType: true, maxHeight: true, verticalInset: true };
 const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onChangeContentSize: true, onEndBlur: true, onBeginFocus: true, onSelectionOrTextChange: true, onTextFlushed: true, onPasteImage: true, onPasteCommand: true, onRequestSend: true, onTapAction: true }));
 const obj3 = {
   backspace(arg0) {

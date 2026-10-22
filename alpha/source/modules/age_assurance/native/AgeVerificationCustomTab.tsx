@@ -1,10 +1,10 @@
-// Module ID: 7900
-// Function ID: 7901
+// Module ID: 7901
+// Function ID: 7902
 // Name: AgeVerificationCustomTab
 // Dependencies: [5, 3, 570, 5680, 1384, 558, 576, 2]
 // Exports: getIsAgeVerificationCustomTabAwaitingResult, openAgeVerificationCustomTab, resumeAgeVerificationCustomTab, setAgeVerificationCustomTabCopy
 
-// Module 7900 (AgeVerificationCustomTab)
+// Module 7901 (AgeVerificationCustomTab)
 import LoggerDefault from "Logger" /* 3 */;
 import react from "react" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;

@@ -1,14 +1,14 @@
-// Module ID: 8932
-// Function ID: 8933
+// Module ID: 8939
+// Function ID: 8940
 // Name: FormRadioGroup
-// Dependencies: [109, 19, 17, 21, 558, 576, 6972, 6971, 8926, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 6971, 6970, 8933, 2]
 
-// Module 8932 (FormRadioGroup)
+// Module 8939 (FormRadioGroup)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import TableRadioGroup from "TableRadioGroup" /* 6971 */;
-import RedesignCompat from "RedesignCompat" /* 6972 */;
-import FormSectionDefault from "FormSection" /* 8926 */;
+import TableRadioGroup from "TableRadioGroup" /* 6970 */;
+import RedesignCompat from "RedesignCompat" /* 6971 */;
+import FormSectionDefault from "FormSection" /* 8933 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

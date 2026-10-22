@@ -1,20 +1,20 @@
-// Module ID: 14486
-// Function ID: 14487
+// Module ID: 14500
+// Function ID: 14501
 // Name: EmbeddedActivityInstanceEmbed
-// Dependencies: [4820, 2045, 502, 4821, 5698, 1392, 9974, 12956, 1128, 12957, 14475, 14487, 12958, 12959, 6795, 12066, 2]
+// Dependencies: [4820, 2045, 502, 4821, 5698, 1392, 9981, 12975, 1128, 12976, 14489, 14501, 12977, 12978, 6794, 12076, 2]
 // Exports: createActivityInstanceEmbed
 
-// Module 14486 (EmbeddedActivityInstanceEmbed)
+// Module 14500 (EmbeddedActivityInstanceEmbed)
 import intl10 from "intl" /* 1128 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6795 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 9974 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 12066 */;
-import ContentClassificationVisibility from "ContentClassificationVisibility" /* 12956 */;
-import CodedLinksTypes from "CodedLinksTypes" /* 12957 */;
-import getPlayInContext from "getPlayInContext" /* 12958 */;
-import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 12959 */;
-import useEmbeddedActivityParticipantAvatarUris from "useEmbeddedActivityParticipantAvatarUris" /* 14475 */;
-import EmbeddedApplicationInstanceUtils from "EmbeddedApplicationInstanceUtils" /* 14487 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6794 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 9981 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 12076 */;
+import ContentClassificationVisibility from "ContentClassificationVisibility" /* 12975 */;
+import CodedLinksTypes from "CodedLinksTypes" /* 12976 */;
+import getPlayInContext from "getPlayInContext" /* 12977 */;
+import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 12978 */;
+import useEmbeddedActivityParticipantAvatarUris from "useEmbeddedActivityParticipantAvatarUris" /* 14489 */;
+import EmbeddedApplicationInstanceUtils from "EmbeddedApplicationInstanceUtils" /* 14501 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

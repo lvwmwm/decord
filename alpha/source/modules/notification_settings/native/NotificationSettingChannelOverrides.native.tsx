@@ -1,20 +1,20 @@
-// Module ID: 19217
-// Function ID: 19218
+// Module ID: 19240
+// Function ID: 19241
 // Name: NotificationSettingChannelOverrides
-// Dependencies: [32, 19, 17, 4825, 7193, 4911, 1392, 1087, 21, 4969, 587, 558, 576, 504, 5579, 7194, 5590, 6813, 1128, 4978, 7130, 6889, 6897, 8487, 10594, 7131, 1202, 8696, 7136, 2]
+// Dependencies: [32, 19, 17, 4825, 7192, 4911, 1392, 1087, 21, 4969, 587, 558, 576, 504, 5579, 7193, 5590, 6812, 1128, 4978, 7129, 6888, 6896, 8488, 10601, 7130, 1202, 8703, 7135, 2]
 
-// Module 19217 (NotificationSettingChannelOverrides)
+// Module 19240 (NotificationSettingChannelOverrides)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import ChannelRecord from "ChannelRecord" /* 4825 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4978 */;
 import useChannelName from "useChannelName" /* 5590 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6813 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 7194 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6812 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 7193 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7193 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7192 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
@@ -114,13 +114,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const tmp19 = navigation(stateFromStores[20])();
           if (cResult[18] === channels) {
             let tmp20;
-            let tmp26;
+            let tmp23;
+            let tmp29;
             if (cResult[19] === navigation) {
               tmp20 = cResult[20];
             }
             const tmp21 = navigation(stateFromStores[24])();
             const _Symbol = Symbol;
-            class Q {
+            class B {
               constructor(arg0, arg1) {
                 tmp = channels[arg1];
                 closure_0 = tmp;
@@ -142,44 +143,56 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                 return closure_1_12(TableRow, obj);
               }
             }
-            class F {
-              constructor() {
-                if (null != first1) {
-                  if ("" !== tmp) {
-                    let formatToPlainStringResult;
-                    if (channels.length > 0) {
-                      const intl2 = intl4.intl;
-                      const obj = { count: channels.length };
-                      formatToPlainStringResult = intl2.formatToPlainString(intl4.t.ZGVL3g, obj);
-                    } else {
-                      const intl = intl4.intl;
-                      formatToPlainStringResult = intl.string(intl4.t.f5cMAg);
-                    }
-                    const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                    AccessibilityAnnouncer.announce(formatToPlainStringResult);
-                  }
+            if (cResult[22] !== tmp4.searchContainer) {
+              let obj2 = { style: tmp4.searchContainer, children: null };
+              class B {
+                constructor(arg0, arg1) {
+                  tmp = channels[arg1];
+                  closure_0 = tmp;
+                  obj = { icon: null, start: null, end: null, label: null, labelLineClamp: 1, arrow: true, onPress: null };
+                  TableRow = guildId(closure_2[21]).TableRow;
+                  obj1 = { IconComponent: null };
+                  TableRowIcon = guildId(closure_2[22]).TableRowIcon;
+                  obj3 = guildId(closure_2[23]);
+                  obj1.IconComponent = obj3.getChannelIconComponent(tmp);
+                  obj.icon = closure_1_12(TableRowIcon, obj1);
+                  obj.start = 0 === arg1;
+                  obj.end = arg1 === channels.length - 1;
+                  obj4 = guildId(closure_2[16]);
+                  obj.label = obj4.computeChannelName(tmp, closure_1_9, closure_1_8);
+                  obj.onPress = function onPress() {
+                    const obj = { channelId: id.id };
+                    navigation.push(unpackModuleId.CHANNEL_OVERRIDE, obj);
+                  };
+                  return closure_1_12(TableRow, obj);
                 }
               }
+              const tmp26 = closure_12(View, obj2);
+              cResult[22] = tmp4.searchContainer;
+              cResult[23] = tmp26;
+              tmp23 = tmp26;
+            } else {
+              tmp23 = cResult[23];
             }
             if (cResult[24] === channels.length) {
               if (cResult[25] === insets) {
                 if (cResult[26] === tmp19) {
                   if (cResult[27] === tmp20) {
                     if (cResult[28] === tmp21) {
-                      let tmp24;
+                      let tmp27;
                       if (cResult[29] === sections) {
-                        tmp24 = cResult[30];
+                        tmp27 = cResult[30];
                       }
                       if (cResult[31] === tmp4.container) {
                         if (cResult[32] === tmp23) {
-                          let tmp30;
-                          if (cResult[33] === tmp24) {
-                            tmp30 = cResult[34];
+                          let tmp31;
+                          if (cResult[33] === tmp27) {
+                            tmp31 = cResult[34];
                           }
-                          return tmp30;
+                          return tmp31;
                         }
                       }
-                      class Q {
+                      class B {
                         constructor(arg0, arg1) {
                           tmp = channels[arg1];
                           closure_0 = tmp;
@@ -201,42 +214,24 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                           return closure_1_12(TableRow, obj);
                         }
                       }
-                      class F {
-                        constructor() {
-                          if (null != first1) {
-                            if ("" !== tmp) {
-                              let formatToPlainStringResult;
-                              if (channels.length > 0) {
-                                const intl2 = intl4.intl;
-                                const obj = { count: channels.length };
-                                formatToPlainStringResult = intl2.formatToPlainString(intl4.t.ZGVL3g, obj);
-                              } else {
-                                const intl = intl4.intl;
-                                formatToPlainStringResult = intl.string(intl4.t.f5cMAg);
-                              }
-                              const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                              AccessibilityAnnouncer.announce(formatToPlainStringResult);
-                            }
-                          }
-                        }
-                      }
-                      const items2 = [tmp23, tmp24];
-                      tmp33[1] = items2;
-                      const tmp34 = closure_13(View, tmp33);
+                      tmp34[0] = tmp4.container;
+                      const items2 = [tmp23, tmp27];
+                      tmp34[1] = items2;
+                      const tmp35 = closure_13(View, tmp34);
                       cResult[31] = tmp4.container;
                       cResult[32] = tmp23;
-                      cResult[33] = tmp24;
-                      cResult[34] = tmp34;
-                      tmp30 = tmp34;
+                      cResult[33] = tmp27;
+                      cResult[34] = tmp35;
+                      tmp31 = tmp35;
                     }
                   }
                 }
               }
             }
             if (0 === channels.length) {
-              let obj2 = { Illustration: tmp(tmp2[27]).NoResults, title: tmp29(tmp(tmp2[18]).t.wM7uRI), body: intl.string(tmp(tmp2[18]).t.f5cMAg) };
+              let obj4 = { Illustration: tmp(tmp2[27]).NoResults, title: obj8.string(tmp(tmp2[18]).t.wM7uRI), body: intl.string(tmp(tmp2[18]).t.f5cMAg) };
               const EmptyState = tmp(tmp2[26]).EmptyState;
-              class Q {
+              class B {
                 constructor(arg0, arg1) {
                   tmp = channels[arg1];
                   closure_0 = tmp;
@@ -256,32 +251,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                     navigation.push(unpackModuleId.CHANNEL_OVERRIDE, obj);
                   };
                   return closure_1_12(TableRow, obj);
-                }
-              }
-              class F {
-                constructor() {
-                  if (null != first1) {
-                    if ("" !== tmp) {
-                      let formatToPlainStringResult;
-                      if (channels.length > 0) {
-                        const intl2 = intl4.intl;
-                        const obj = { count: channels.length };
-                        formatToPlainStringResult = intl2.formatToPlainString(intl4.t.ZGVL3g, obj);
-                      } else {
-                        const intl = intl4.intl;
-                        formatToPlainStringResult = intl.string(intl4.t.f5cMAg);
-                      }
-                      const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                      AccessibilityAnnouncer.announce(formatToPlainStringResult);
-                    }
-                  }
                 }
               }
               intl = tmp(tmp2[18]).intl;
-              tmp26 = closure_12(EmptyState, obj2);
+              tmp29 = closure_12(EmptyState, obj4);
             } else {
-              let obj4 = { sections, renderItem: tmp20, itemSize: null, insetEnd: null, estimatedListSize: "windowSize", placeholderConfig: tmp21, wrapChildren: true };
-              class Q {
+              const obj5 = { sections, renderItem: tmp20, itemSize: null, insetEnd: insets.bottom, estimatedListSize: "windowSize", placeholderConfig: tmp21, wrapChildren: true };
+              class B {
                 constructor(arg0, arg1) {
                   tmp = channels[arg1];
                   closure_0 = tmp;
@@ -303,26 +279,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                   return closure_1_12(TableRow, obj);
                 }
               }
-              class F {
-                constructor() {
-                  if (null != first1) {
-                    if ("" !== tmp) {
-                      let formatToPlainStringResult;
-                      if (channels.length > 0) {
-                        const intl2 = intl4.intl;
-                        const obj = { count: channels.length };
-                        formatToPlainStringResult = intl2.formatToPlainString(intl4.t.ZGVL3g, obj);
-                      } else {
-                        const intl = intl4.intl;
-                        formatToPlainStringResult = intl.string(intl4.t.f5cMAg);
-                      }
-                      const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                      AccessibilityAnnouncer.announce(formatToPlainStringResult);
-                    }
-                  }
-                }
-              }
-              tmp26 = closure_12(tmp9(tmp2[28]), obj4);
+              tmp29 = closure_12(tmp9(tmp2[28]), obj5);
             }
             cResult[24] = channels.length;
             cResult[25] = insets;
@@ -330,10 +287,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             cResult[27] = tmp20;
             cResult[28] = tmp21;
             cResult[29] = sections;
-            cResult[30] = tmp26;
-            tmp24 = tmp26;
+            cResult[30] = tmp29;
+            tmp27 = tmp29;
           }
-          class Q {
+          class B {
             constructor(arg0, arg1) {
               tmp = channels[arg1];
               closure_0 = tmp;
@@ -355,84 +312,44 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
               return closure_1_12(TableRow, obj);
             }
           }
-          class F {
-            constructor() {
-              if (null != first1) {
-                if ("" !== tmp) {
-                  let formatToPlainStringResult;
-                  if (channels.length > 0) {
-                    const intl2 = intl4.intl;
-                    const obj = { count: channels.length };
-                    formatToPlainStringResult = intl2.formatToPlainString(intl4.t.ZGVL3g, obj);
-                  } else {
-                    const intl = intl4.intl;
-                    formatToPlainStringResult = intl.string(intl4.t.f5cMAg);
-                  }
-                  const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                  AccessibilityAnnouncer.announce(formatToPlainStringResult);
-                }
-              }
-            }
-          }
           cResult[18] = channels;
           cResult[19] = navigation;
-          cResult[20] = Q;
-          tmp20 = Q;
+          cResult[20] = B;
+          tmp20 = B;
         }
         const items3 = [channels, ];
-        class F {
-          constructor() {
-            if (null != first1) {
-              if ("" !== tmp) {
-                let formatToPlainStringResult;
-                if (channels.length > 0) {
-                  const intl2 = intl4.intl;
-                  const obj = { count: channels.length };
-                  formatToPlainStringResult = intl2.formatToPlainString(intl4.t.ZGVL3g, obj);
-                } else {
-                  const intl = intl4.intl;
-                  formatToPlainStringResult = intl.string(intl4.t.f5cMAg);
-                }
-                const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                AccessibilityAnnouncer.announce(formatToPlainStringResult);
-              }
-            }
-          }
-        }
         cResult[15] = channels;
         cResult[16] = first1;
         cResult[17] = items3;
         tmp17 = items3;
       }
-      class F {
-        constructor() {
-          if (null != first1) {
-            if ("" !== tmp) {
-              let formatToPlainStringResult;
-              if (channels.length > 0) {
-                const intl2 = intl4.intl;
-                const obj = { count: channels.length };
-                formatToPlainStringResult = intl2.formatToPlainString(intl4.t.ZGVL3g, obj);
-              } else {
-                const intl = intl4.intl;
-                formatToPlainStringResult = intl.string(intl4.t.f5cMAg);
-              }
-              const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-              AccessibilityAnnouncer.announce(formatToPlainStringResult);
+      const fn2 = function x() {
+        if (null != first1) {
+          if ("" !== tmp) {
+            let formatToPlainStringResult;
+            if (channels.length > 0) {
+              const intl2 = intl4.intl;
+              const obj = { count: channels.length };
+              formatToPlainStringResult = intl2.formatToPlainString(intl4.t.ZGVL3g, obj);
+            } else {
+              const intl = intl4.intl;
+              formatToPlainStringResult = intl.string(intl4.t.f5cMAg);
             }
+            const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+            AccessibilityAnnouncer.announce(formatToPlainStringResult);
           }
         }
-      }
+      };
       cResult[12] = channels.length;
       cResult[13] = first1;
-      cResult[14] = F;
-      tmp16 = F;
+      cResult[14] = fn2;
+      tmp16 = fn2;
     }
-    const obj5 = { channels: null, sections: null };
+    const obj6 = { channels: null, sections: tmp14 };
     cResult[9] = arr2;
     cResult[10] = tmp14;
-    cResult[11] = obj5;
-    tmp15 = obj5;
+    cResult[11] = obj6;
+    tmp15 = obj6;
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     class L {
@@ -477,13 +394,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   cResult[5] = mapped;
   arr2 = mapped;
 }) : (function NotificationSettingChannelOverrides(arg0) {
-  let SearchField;
+  let SearchBar;
   let intl;
   let intl2;
   let intl3;
   let items4;
   let obj4;
-  let require;
   let tmp16Result;
   ({ guildId: require, navigation } = arg0);
   let stateFromStores;
@@ -493,7 +409,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp3 = stateFromStores;
   let obj = require("get initialized");
   let items = [GuildCategoryStore];
-  stateFromStores = obj.useStateFromStores(items, () => GuildCategoryStore.getCategories(_require));
+  stateFromStores = obj.useStateFromStores(items, () => GuildCategoryStore.getCategories(require));
   const insets = navigation(stateFromStores[14])().insets;
   const tmp6 = first(channels.useState(""), 2);
   first = tmp6[0];
@@ -576,11 +492,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     return closure_1_12(TableRow, obj);
   }, items3);
   let obj2 = { style: tmp.container, children: items4 };
-  let obj3 = { style: tmp.searchContainer, children: closure_12(SearchField, obj4) };
+  let obj3 = { style: tmp.searchContainer, children: closure_12(SearchBar, obj4) };
   let tmp14 = closure_13;
   const tmp13 = navigation(stateFromStores[24])();
   obj4 = { placeholder: intl.string(require("intl").t["5h0QOP"]), onChange: tmp8 };
-  SearchField = require("SearchField").SearchField;
+  SearchBar = require("SearchBar").SearchBar;
   intl = require("intl").intl;
   items4 = [closure_12(View, obj3), ];
   const tmp15 = View;

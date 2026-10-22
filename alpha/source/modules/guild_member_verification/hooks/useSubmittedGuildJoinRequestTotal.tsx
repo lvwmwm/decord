@@ -1,10 +1,10 @@
-// Module ID: 17541
-// Function ID: 17542
+// Module ID: 17563
+// Function ID: 17564
 // Name: useSubmittedGuildJoinRequestTotal
-// Dependencies: [6830, 558, 576, 504, 2]
+// Dependencies: [6829, 558, 576, 504, 2]
 
-// Module 17541 (useSubmittedGuildJoinRequestTotal)
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6830 */;
+// Module 17563 (useSubmittedGuildJoinRequestTotal)
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6829 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

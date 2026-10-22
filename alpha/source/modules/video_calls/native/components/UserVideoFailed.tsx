@@ -1,18 +1,18 @@
-// Module ID: 18464
-// Function ID: 18465
+// Module ID: 18486
+// Function ID: 18487
 // Name: UserVideoFailed
-// Dependencies: [109, 17, 1087, 21, 4969, 587, 558, 576, 5884, 11379, 5725, 5838, 1128, 5220, 5230, 2]
+// Dependencies: [109, 17, 1087, 21, 4969, 587, 558, 576, 5883, 11390, 5725, 5837, 1128, 5220, 5230, 2]
 
-// Module 18464 (UserVideoFailed)
+// Module 18486 (UserVideoFailed)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 5725 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5838 */;
-import AVError from "AVError" /* 5884 */;
-import VideoStreamReadyActionCreators from "VideoStreamReadyActionCreators" /* 11379 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5837 */;
+import AVError from "AVError" /* 5883 */;
+import VideoStreamReadyActionCreators from "VideoStreamReadyActionCreators" /* 11390 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;

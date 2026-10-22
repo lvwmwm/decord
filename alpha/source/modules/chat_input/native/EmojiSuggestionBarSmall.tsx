@@ -1,15 +1,15 @@
-// Module ID: 13256
-// Function ID: 13257
+// Module ID: 13270
+// Function ID: 13271
 // Name: EmojiSuggestionBarSmall
-// Dependencies: [109, 19, 9798, 21, 587, 4969, 558, 576, 13246, 5038, 9881, 9906, 5023, 2]
+// Dependencies: [109, 19, 9805, 21, 587, 4969, 558, 576, 13262, 5038, 9888, 9913, 5023, 2]
 
-// Module 13256 (EmojiSuggestionBarSmall)
+// Module 13270 (EmojiSuggestionBarSmall)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9798 */;
-import EmojiPickerListRow from "EmojiPickerListRow" /* 9881 */;
-import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 13246 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9805 */;
+import EmojiPickerListRow from "EmojiPickerListRow" /* 9888 */;
+import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 13262 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -103,7 +103,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiS
       if (locked) {
         let openEmojiActionSheet = handlePressEmojiUnavailable;
       } else {
-        openEmojiActionSheet = tmp2(9906).openEmojiActionSheet;
+        openEmojiActionSheet = tmp2(9913).openEmojiActionSheet;
       }
       const tmp2Result = EmojiSuggestionBarUtils;
       return <EmojiEntranceAnimation key={tmp2Result.getEmojiEntranceKey(displayEmojis, arg1)} index={arg1} reducedMotion={reducedMotion}>{null}</EmojiEntranceAnimation>;
@@ -129,7 +129,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiS
   ({ reducedMotion: importDefault, handlePress: dependencyMap, handlePressEmojiUnavailable: closure_3, transitionState } = displayEmojis);
   ({ onOccupiedHeightChange, cleanUp } = displayEmojis);
   const tmp = closure_9(displayEmojis.anchorTop);
-  let obj = displayEmojis(13246);
+  let obj = displayEmojis(13262);
   const suggestionBarHeight = obj.useSuggestionBarHeight(transitionState, cleanUp, CONTAINER_SMALL_WRAPPER_HEIGHT, onOccupiedHeightChange);
   let obj2 = displayEmojis(5038);
   const fn = function j() {
@@ -155,7 +155,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiS
     if (locked) {
       let openEmojiActionSheet = closure_3;
     } else {
-      openEmojiActionSheet = tmp2(9906).openEmojiActionSheet;
+      openEmojiActionSheet = tmp2(9913).openEmojiActionSheet;
     }
     const tmp2Result = EmojiSuggestionBarUtils;
     return <EmojiEntranceAnimation key={tmp2Result.getEmojiEntranceKey(displayEmojis, arg1)} index={arg1} reducedMotion={importDefault}>{null}</EmojiEntranceAnimation>;
@@ -193,7 +193,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiSuggest
     tmp7 = cResult[4];
   }
   const tmpResult = require("EmojiSuggestionBarUtils");
-  const emojiSuggestionBarState = tmpResult.useEmojiSuggestionBarState(tmp6, tmp(13246).MAX_SUGGESTIONS_LARGE, 1, tmp7);
+  const emojiSuggestionBarState = tmpResult.useEmojiSuggestionBarState(tmp6, tmp(13262).MAX_SUGGESTIONS_LARGE, 1, tmp7);
   ({ unlockedEmojis, lockedEmojis, reducedMotion, handlePress, handlePressEmojiUnavailable } = emojiSuggestionBarState);
   if (0 !== unlockedEmojis.length) {
     if (cResult[5] === lockedEmojis) {

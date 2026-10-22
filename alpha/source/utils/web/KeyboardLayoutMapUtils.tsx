@@ -1,17 +1,17 @@
-// Module ID: 15311
-// Function ID: 15312
+// Module ID: 15324
+// Function ID: 15325
 // Name: KeyboardLayoutMapUtils
-// Dependencies: [32, 5, 1372, 7597, 3, 1384, 15310, 510, 2]
+// Dependencies: [32, 5, 1372, 7598, 3, 1384, 15323, 510, 2]
 // Exports: __DEV_overrideLayoutMapKey, getKeyboardEventShapeFromAny, getKeyboardEventShapeFromKey, getKeyboardEventShapeFromKeycode, getLayoutMap, initializeKeyboardMapper, resetKeyboardMapper
 
-// Module 15311 (KeyboardLayoutMapUtils)
+// Module 15324 (KeyboardLayoutMapUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
-import keyCodeDefault from "keyCode" /* 15310 */;
+import keyCodeDefault from "keyCode" /* 15323 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1372 */;
-import KeyboardConstants from "KeyboardConstants" /* 7597 */;
+import KeyboardConstants from "KeyboardConstants" /* 7598 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let WindowsKeyToCode;
 function createKeyboardMapper() {
   return obj(...arguments);
 }
-const f123117 = (item) => {
+const f123254 = (item) => {
   let tmp;
   [tmp, obj] = item;
   const items = [tmp, ];
@@ -389,8 +389,8 @@ class DiscordKeyboardLayoutMap {
     }
     obj = Object.create(new.target.prototype);
     const entries = Object.entries(tmp);
-    obj.map = new Map(entries.map(f123117));
-    new Map(entries.map(f123117));
+    obj.map = new Map(entries.map(f123254));
+    new Map(entries.map(f123254));
     return obj;
   }
   get(arg0) {
@@ -430,7 +430,7 @@ Object.defineProperty(DiscordKeyboardLayoutMap.prototype, "size", {
 });
 obj = Object.create(DiscordKeyboardLayoutMap.prototype);
 let entries = Object.entries(frozen);
-let map = new Map(entries.map(f123117));
+let map = new Map(entries.map(f123254));
 obj.map = map;
 let c15 = "keyboard-layout-map";
 class BaseKeyboardMapper {

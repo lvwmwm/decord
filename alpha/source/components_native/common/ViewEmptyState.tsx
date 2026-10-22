@@ -1,9 +1,9 @@
-// Module ID: 7134
-// Function ID: 7135
+// Module ID: 7133
+// Function ID: 7134
 // Name: ViewEmptyState
-// Dependencies: [19, 17, 1087, 21, 4969, 6637, 587, 558, 576, 5655, 1202, 2]
+// Dependencies: [19, 17, 1087, 21, 4969, 6636, 587, 558, 576, 5655, 1202, 2]
 
-// Module 7134 (ViewEmptyState)
+// Module 7133 (ViewEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,7 +13,7 @@ import FastImageDefault from "FastImage" /* 5655 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
-import TextStyles from "TextStyles" /* 6637 */;
+import TextStyles from "TextStyles" /* 6636 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

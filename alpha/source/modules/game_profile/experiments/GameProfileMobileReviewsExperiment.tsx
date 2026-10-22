@@ -1,9 +1,9 @@
-// Module ID: 9301
-// Function ID: 9302
+// Module ID: 9308
+// Function ID: 9309
 // Name: GameProfileMobileReviewsExperiment
 // Dependencies: [1455, 558, 576, 2]
 
-// Module 9301 (GameProfileMobileReviewsExperiment)
+// Module 9308 (GameProfileMobileReviewsExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

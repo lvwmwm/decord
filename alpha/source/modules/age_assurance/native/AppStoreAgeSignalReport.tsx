@@ -1,12 +1,12 @@
-// Module ID: 8070
-// Function ID: 8071
+// Module ID: 8071
+// Function ID: 8072
 // Name: AppStoreAgeSignalReport
-// Dependencies: [32, 5, 1392, 2001, 1087, 8066, 7915, 1257, 1384, 8062, 8063, 1267, 5630, 5708, 2]
+// Dependencies: [32, 5, 1392, 2001, 1087, 8067, 7916, 1257, 1384, 8063, 8064, 1267, 5630, 5708, 2]
 // Exports: beginAppStoreAgeSignalReport, queueAppStoreAgeSignalSubmit, resumeAppStoreAgeSignalReport, settleAppStoreAgeSignalReport
 
-// Module 8070 (AppStoreAgeSignalReport)
+// Module 8071 (AppStoreAgeSignalReport)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 7915 */;
+import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 7916 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1392 */;

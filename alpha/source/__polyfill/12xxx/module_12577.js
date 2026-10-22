@@ -1,28 +1,56 @@
 // Module ID: 12577
 // Function ID: 12578
-// Dependencies: []
-// Exports: isSentryRequestUrl
+// Dependencies: [42, 41, 93, 95, 98, 158]
 
 // Module 12577
+import _createClass from "_createClass" /* 42 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import map from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import _wrapNativeSuper from "_wrapNativeSuper" /* 158 */;
 
-export const isSentryRequestUrl = function isSentryRequestUrl(arr, getDsn) {
-  const tmp = getDsn && getDsn.getDsn();
-  arr = getDsn && getDsn.getOptions().tunnel;
-  let tmp2 = tmp && arr.includes(tmp.host);
-  if (!tmp2) {
-    let flag = false;
-    if (arr) {
-      let substr = arr;
-      if ("/" === arr[arr.length - 1]) {
-        substr = arr.slice(0, -1);
-      }
-      let substr1 = arr;
-      if ("/" === arr[arr.length - 1]) {
-        substr1 = arr.slice(0, -1);
-      }
-      flag = substr === substr1;
-    }
-    tmp2 = flag;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  return tmp2;
-};
+}
+class SentryError {
+  constructor(message) {
+    let constructResult;
+    let str = arg1;
+    if (arg1 === undefined) {
+      str = "warn";
+    }
+    const self = this;
+    _classCallCheck(this, SentryError);
+    const items = [message];
+    const obj = _getPrototypeOf(SentryError);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = map;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items);
+    }
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.message = message;
+    tmp3Result.logLevel = str;
+    return tmp3Result;
+  }
+}
+_inherits(SentryError, _wrapNativeSuper(Error));
+const SentryError_export = _createClass(SentryError);
+
+export { SentryError_export as SentryError };

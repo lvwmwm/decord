@@ -1,9 +1,9 @@
-// Module ID: 16439
-// Function ID: 16440
+// Module ID: 16461
+// Function ID: 16462
 // Name: QuestDockBountySmokeLayer
-// Dependencies: [32, 19, 17, 4970, 6696, 21, 558, 16440, 1384, 16441, 16442, 576, 1499, 1633, 16330, 5655, 504, 16443, 8763, 16444, 16417, 16445, 2]
+// Dependencies: [32, 19, 17, 4970, 6695, 21, 558, 16462, 1384, 16463, 16464, 576, 1499, 1633, 16353, 5655, 504, 16465, 8770, 16466, 16439, 16467, 2]
 
-// Module 16439 (QuestDockBountySmokeLayer)
+// Module 16461 (QuestDockBountySmokeLayer)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -11,13 +11,13 @@ import PlatformUtils from "PlatformUtils" /* 1384 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import QuestConstants from "QuestConstants" /* 6696 */;
-import QuestDockUtils from "QuestDockUtils" /* 16330 */;
-import reactDefault from "react" /* 16417 */;
-import BountiesAndroidQuestBarSmokeAnimationExperiment from "BountiesAndroidQuestBarSmokeAnimationExperiment" /* 16440 */;
-import _modDef16441 from "module_16441" /* 16441 */;
-import _modDef16442 from "module_16442" /* 16442 */;
-import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 16443 */;
+import QuestConstants from "QuestConstants" /* 6695 */;
+import QuestDockUtils from "QuestDockUtils" /* 16353 */;
+import reactDefault from "react" /* 16439 */;
+import BountiesAndroidQuestBarSmokeAnimationExperiment from "BountiesAndroidQuestBarSmokeAnimationExperiment" /* 16462 */;
+import _modDef16463 from "module_16463" /* 16463 */;
+import _modDef16464 from "module_16464" /* 16464 */;
+import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 16465 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
@@ -32,8 +32,8 @@ let c9;
 let metroImportAll;
 let obj3;
 let tmp9;
-const _modDef16444 = tmp9(16444);
-const _modDef16445 = tmp9(16445);
+const _modDef16466 = tmp9(16466);
+const _modDef16467 = tmp9(16467);
 let _slicedToArray = _slicedToArray_mod;
 const StyleSheet = react_native.StyleSheet;
 const QuestsExperimentLocations = QuestConstants.QuestsExperimentLocations;
@@ -48,11 +48,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestDock
   if (obj2.isAndroid()) {
     let tmp3;
     if (isBountiesAndroidQuestBarSmokeAnimationEnabled) {
-      tmp3 = _modDef16442;
+      tmp3 = _modDef16464;
     }
     return tmp3;
   }
-  tmp3 = _modDef16441;
+  tmp3 = _modDef16463;
 }) : (function useQuestDockBountySmokeCollapsedPlaceholderUrl() {
   const obj = BountiesAndroidQuestBarSmokeAnimationExperiment;
   const isBountiesAndroidQuestBarSmokeAnimationEnabled = obj.useIsBountiesAndroidQuestBarSmokeAnimationEnabled(QuestsExperimentLocations.QUESTS_BAR_MOBILE);
@@ -60,11 +60,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestDock
   if (obj2.isAndroid()) {
     let tmp3;
     if (isBountiesAndroidQuestBarSmokeAnimationEnabled) {
-      tmp3 = _modDef16442;
+      tmp3 = _modDef16464;
     }
     return tmp3;
   }
-  tmp3 = _modDef16441;
+  tmp3 = _modDef16463;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let obj2 = { video: StyleSheet.absoluteFillObject, hiddenVideo: obj3 };
@@ -118,7 +118,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { source: obj3, style: StyleSheet.absoluteFillObject, resizeMode: "cover", accessible: false, importantForAccessibility: "no-hide-descendants" };
-    obj3 = { uri: _modDef16441 };
+    obj3 = { uri: _modDef16463 };
     const tmp6 = FastImageDefault;
     const tmp8 = metroImportAll(tmp6, obj2);
     cResult[0] = tmp8;
@@ -130,7 +130,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
 }) : (function QuestDockBountySmokePlaceholder() {
   let obj2;
   const obj = { source: obj2, style: StyleSheet.absoluteFillObject, resizeMode: "cover", accessible: false, importantForAccessibility: "no-hide-descendants" };
-  obj2 = { uri: _modDef16441 };
+  obj2 = { uri: _modDef16463 };
   const tmp = FastImageDefault;
   return metroImportAll(tmp, obj);
 });
@@ -213,8 +213,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
       }
     }
     const obj2 = { style: tmp12 ? closure_13.video : closure_13.hiddenVideo, source: obj3, resizeMode: "cover", paused: undefined !== paused && paused || !tmp10, muted: true, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants", onReadyForDisplay: tmp18, onError: tmp19 };
-    obj3 = { uri: _modDef16444 };
-    const VideoComponent = tmp(8763).VideoComponent;
+    obj3 = { uri: _modDef16466 };
+    const VideoComponent = tmp(8770).VideoComponent;
     tmp21Result = tmp21(VideoComponent, obj2);
   }
   cResult[4] = tmp10;
@@ -258,8 +258,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
   const tmp16 = closure_9;
   if (!stateFromStores) {
     const obj3 = { style: tmp7 ? closure_13.video : closure_13.hiddenVideo, source: obj4, resizeMode: "cover", paused: flag, muted: true, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants", onReadyForDisplay: callback, onError: tmp14 };
-    obj4 = { uri: _modDef16444 };
-    const VideoComponent = tmp(8763).VideoComponent;
+    obj4 = { uri: _modDef16466 };
+    const VideoComponent = tmp(8770).VideoComponent;
     const tmp18 = closure_8;
     if (!flag) {
       flag = !tmp5;
@@ -356,7 +356,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
   if (!stateFromStores) {
     tmp9Result = null;
     if (tmp16) {
-      tmp9Result = _modDef16445;
+      tmp9Result = _modDef16467;
     }
   }
   const tmp11Result = tmp11(react.useState(tmp9Result), 2);
@@ -478,7 +478,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
     }
     const obj2 = { style: closure_13.video, source: obj4, resizeMode: "cover", paused: tmp38, muted: true, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants", onLoad: tmp32, onError: tmp33 };
     obj4 = { uri: tmp9Result };
-    const VideoComponent = tmp(8763).VideoComponent;
+    const VideoComponent = tmp(8770).VideoComponent;
     if (!(undefined !== paused && paused)) {
       class U {
         constructor() {
@@ -556,7 +556,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
   if (!stateFromStores) {
     tmp4Result = null;
     if (tmp11) {
-      tmp4Result = tmp4(16445);
+      tmp4Result = tmp4(16467);
     }
   }
   const tmp6Result = tmp6(react.useState(tmp4Result), 2);
@@ -590,7 +590,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
   if (tmp28Result) {
     const obj3 = { style: closure_13.video, source: obj4, resizeMode: "cover", paused: flag, muted: true, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants", onLoad: callback, onError: tmp24 };
     obj4 = { uri: tmp4Result };
-    const VideoComponent = tmp(8763).VideoComponent;
+    const VideoComponent = tmp(8770).VideoComponent;
     const tmp28 = closure_8;
     if (!flag) {
       flag = !tmp5;
@@ -601,7 +601,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
   let tmp30 = !tmp8;
   if (tmp30) {
     const obj5 = { source: obj6, style: StyleSheet.absoluteFillObject, resizeMode: "cover", accessible: false, importantForAccessibility: "no-hide-descendants" };
-    obj6 = { uri: _modDef16442 };
+    obj6 = { uri: _modDef16464 };
     const tmp4Result2 = FastImageDefault;
     tmp30 = closure_8(tmp4Result2, obj5);
   }

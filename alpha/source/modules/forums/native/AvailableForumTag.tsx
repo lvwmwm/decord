@@ -1,16 +1,16 @@
-// Module ID: 10971
-// Function ID: 10972
+// Module ID: 10979
+// Function ID: 10980
 // Name: AvailableForumTag
-// Dependencies: [109, 19, 6711, 1395, 21, 4969, 587, 558, 576, 504, 8881, 7213, 1417, 5220, 10381, 2]
+// Dependencies: [109, 19, 6710, 1395, 21, 4969, 587, 558, 576, 504, 8888, 7212, 1417, 5220, 10388, 2]
 
-// Module 10971 (AvailableForumTag)
+// Module 10979 (AvailableForumTag)
 import nativeDefault from "native" /* 587 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
-import EmojiDefault from "Emoji" /* 7213 */;
-import native from "native" /* 8881 */;
+import EmojiDefault from "Emoji" /* 7212 */;
+import native from "native" /* 8888 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6711 */;
+import EmojiStore from "EmojiStore" /* 6710 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

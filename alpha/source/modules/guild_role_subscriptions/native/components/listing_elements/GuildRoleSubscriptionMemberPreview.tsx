@@ -1,9 +1,9 @@
-// Module ID: 16489
-// Function ID: 16490
+// Module ID: 16511
+// Function ID: 16512
 // Name: GuildRoleSubscriptionMemberPreview
-// Dependencies: [19, 17, 1392, 21, 4969, 587, 558, 576, 1128, 504, 5976, 1417, 7267, 5655, 1105, 5220, 1202, 7285, 2]
+// Dependencies: [19, 17, 1392, 21, 4969, 587, 558, 576, 1128, 504, 5975, 1417, 7268, 5655, 1105, 5220, 1202, 7286, 2]
 
-// Module 16489 (GuildRoleSubscriptionMemberPreview)
+// Module 16511 (GuildRoleSubscriptionMemberPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -14,9 +14,9 @@ import native from "native" /* 1202 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5976 */;
-import RoleIconUtils from "RoleIconUtils" /* 7267 */;
-import RoleIconDefault from "RoleIcon" /* 7285 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5975 */;
+import RoleIconUtils from "RoleIconUtils" /* 7268 */;
+import RoleIconDefault from "RoleIcon" /* 7286 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;

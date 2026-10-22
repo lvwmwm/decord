@@ -1,9 +1,9 @@
-// Module ID: 10681
-// Function ID: 10682
+// Module ID: 10688
+// Function ID: 10689
 // Name: ConjureLiveReloadStore
 // Dependencies: [504, 584, 2]
 
-// Module 10681 (ConjureLiveReloadStore)
+// Module 10688 (ConjureLiveReloadStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

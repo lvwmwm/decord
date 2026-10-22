@@ -1,12 +1,12 @@
-// Module ID: 11452
-// Function ID: 11453
+// Module ID: 11463
+// Function ID: 11464
 // Name: EmbeddedActivityBackgroundImageWithOverlay
-// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 11453, 5655, 2]
+// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 11464, 5655, 2]
 
-// Module 11452 (EmbeddedActivityBackgroundImageWithOverlay)
+// Module 11463 (EmbeddedActivityBackgroundImageWithOverlay)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11453 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11464 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

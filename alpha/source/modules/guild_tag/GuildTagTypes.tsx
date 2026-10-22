@@ -1,10 +1,10 @@
-// Module ID: 8982
-// Function ID: 8983
+// Module ID: 8989
+// Function ID: 8990
 // Name: GuildTagTypes
 // Dependencies: [2]
 // Exports: toServerGuildProfile
 
-// Module 8982 (GuildTagTypes)
+// Module 8989 (GuildTagTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_tag/GuildTagTypes.tsx");

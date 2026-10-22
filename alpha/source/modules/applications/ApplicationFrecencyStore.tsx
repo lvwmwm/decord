@@ -1,9 +1,9 @@
-// Module ID: 9620
-// Function ID: 9621
+// Module ID: 9627
+// Function ID: 9628
 // Name: ApplicationFrecencyStore
 // Dependencies: [4820, 1246, 1375, 1097, 2000, 5716, 12, 504, 584, 2]
 
-// Module 9620 (ApplicationFrecencyStore)
+// Module 9627 (ApplicationFrecencyStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;

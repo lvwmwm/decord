@@ -1,15 +1,15 @@
-// Module ID: 12704
-// Function ID: 12705
+// Module ID: 12723
+// Function ID: 12724
 // Name: RoleName
-// Dependencies: [19, 17, 4970, 21, 4969, 587, 558, 576, 504, 8304, 1202, 5220, 2]
+// Dependencies: [19, 17, 4970, 21, 4969, 587, 558, 576, 504, 8305, 1202, 5220, 2]
 
-// Module 12704 (RoleName)
+// Module 12723 (RoleName)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8304 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8305 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
 import Fragment from "Fragment" /* 21 */;

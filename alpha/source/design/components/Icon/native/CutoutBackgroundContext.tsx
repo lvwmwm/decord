@@ -1,9 +1,9 @@
-// Module ID: 9376
-// Function ID: 9377
+// Module ID: 9383
+// Function ID: 9384
 // Name: CutoutBackgroundContext
-// Dependencies: [19, 21, 558, 576, 683, 9377, 587, 5238, 2]
+// Dependencies: [19, 21, 558, 576, 683, 9384, 587, 5238, 2]
 
-// Module 9376 (CutoutBackgroundContext)
+// Module 9383 (CutoutBackgroundContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,7 +14,7 @@ import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const colors = tmp(9377);
+const colors = tmp(9384);
 const jsx = Fragment.jsx;
 let context = react.createContext(undefined);
 let ReactCompilerGating = ReactCompilerGating_mod;

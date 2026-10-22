@@ -1,21 +1,21 @@
-// Module ID: 11161
-// Function ID: 11162
+// Module ID: 11170
+// Function ID: 11171
 // Name: ConjureRichPresenceStore
-// Dependencies: [32, 5, 6619, 4872, 4995, 6759, 1087, 4828, 10616, 6794, 1297, 10668, 2002, 504, 584, 2]
+// Dependencies: [32, 5, 6618, 4872, 4995, 6758, 1087, 4828, 10623, 6793, 1297, 10675, 2002, 504, 584, 2]
 
-// Module 11161 (ConjureRichPresenceStore)
+// Module 11170 (ConjureRichPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ChannelConstants from "ChannelConstants" /* 4828 */;
-import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6794 */;
-import conjurePresenceActivity from "conjurePresenceActivity" /* 10616 */;
+import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6793 */;
+import conjurePresenceActivity from "conjurePresenceActivity" /* 10623 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import IdleStore from "IdleStore" /* 6619 */;
+import IdleStore from "IdleStore" /* 6618 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6759 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6758 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ function updateActivity(withGracePeriod) {
   let obj3;
   let timeout;
   let timeout2;
-  const f108908 = () => {
+  const f109008 = () => {
     let found;
     let timeout = null;
     if (null != _null) {
@@ -46,7 +46,7 @@ function updateActivity(withGracePeriod) {
         timeout = null;
       }
       const _setTimeout = setTimeout;
-      timeout = setTimeout(f108908, closure_1_11);
+      timeout = setTimeout(f109008, closure_1_11);
       conjureRichPresenceStore.emitChange();
     }
   };
@@ -178,7 +178,7 @@ function updateActivity(withGracePeriod) {
           timeout2 = null;
         }
         let _setTimeout = setTimeout;
-        timeout2 = setTimeout(f108908, c11);
+        timeout2 = setTimeout(f109008, c11);
         flag = true;
       }
     }

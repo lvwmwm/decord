@@ -1,9 +1,9 @@
-// Module ID: 9431
-// Function ID: 9432
+// Module ID: 9438
+// Function ID: 9439
 // Name: CollectiblesShopPricePlaceholder
 // Dependencies: [19, 21, 4969, 587, 558, 576, 5038, 5192, 2]
 
-// Module 9431 (CollectiblesShopPricePlaceholder)
+// Module 9438 (CollectiblesShopPricePlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;

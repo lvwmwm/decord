@@ -1,7 +1,7 @@
 // Module ID: 5642
 // Function ID: 5643
 // Name: openURL
-// Dependencies: [5, 5643, 8833, 2002, 2]
+// Dependencies: [5, 5643, 8840, 2002, 2]
 // Exports: default
 
 // Module 5642 (openURL)

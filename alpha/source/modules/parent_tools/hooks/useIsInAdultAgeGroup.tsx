@@ -1,11 +1,11 @@
-// Module ID: 8110
-// Function ID: 8111
+// Module ID: 8111
+// Function ID: 8112
 // Name: useIsInAdultAgeGroup
-// Dependencies: [7629, 558, 576, 504, 2]
+// Dependencies: [7630, 558, 576, 504, 2]
 
-// Module 8110 (useIsInAdultAgeGroup)
+// Module 8111 (useIsInAdultAgeGroup)
 import react from "react" /* 576 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7629 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7630 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

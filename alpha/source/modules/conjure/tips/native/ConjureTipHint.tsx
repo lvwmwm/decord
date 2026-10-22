@@ -1,15 +1,15 @@
-// Module ID: 12284
-// Function ID: 12285
+// Module ID: 12295
+// Function ID: 12296
 // Name: ConjureTipHint
-// Dependencies: [19, 17, 21, 4969, 587, 5220, 558, 576, 7943, 6917, 1128, 12285, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 5220, 558, 576, 7944, 6916, 1128, 12296, 2]
 
-// Module 12284 (ConjureTipHint)
+// Module 12295 (ConjureTipHint)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import ConjureTipGutterRowDefault from "ConjureTipGutterRow" /* 12285 */;
+import ConjureTipGutterRowDefault from "ConjureTipGutterRow" /* 12296 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -97,9 +97,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureTipHi
     if (null != onDismiss) {
       const obj5 = { style: tmp4.dismiss, children: React3(IconButton, obj6) };
       obj6 = { variant: "tertiary", size: "sm", icon: React3(XSmallIcon, obj7), onPress: onDismiss, accessibilityLabel: intl.string(intl2.t.WAI6xu) };
-      IconButton = tmp(7943).IconButton;
+      IconButton = tmp(7944).IconButton;
       obj7 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-      XSmallIcon = tmp(6917).XSmallIcon;
+      XSmallIcon = tmp(6916).XSmallIcon;
       intl = tmp(1128).intl;
       tmp12 = React3(View, obj5);
     }
@@ -140,9 +140,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureTipHi
   if (null != onDismiss) {
     const obj5 = { style: tmp.dismiss, children: React3(IconButton, obj6) };
     obj6 = { variant: "tertiary", size: "sm", icon: React3(XSmallIcon, obj7), onPress: onDismiss, accessibilityLabel: intl.string(intl2.t.WAI6xu) };
-    IconButton = tmp8(7943).IconButton;
+    IconButton = tmp8(7944).IconButton;
     obj7 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-    XSmallIcon = tmp8(6917).XSmallIcon;
+    XSmallIcon = tmp8(6916).XSmallIcon;
     intl = tmp8(1128).intl;
     tmp2Result = tmp2(tmp7, obj5);
   }

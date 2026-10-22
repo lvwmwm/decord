@@ -1,109 +1,140 @@
 // Module ID: 12610
 // Function ID: 12611
-// Dependencies: [32, 12515]
-// Exports: getBucketKey, sanitizeMetricKey, sanitizeTags, sanitizeUnit, serializeMetricBuckets, simpleHash
+// Dependencies: [12576, 12527, 12565, 12526, 12529, 12548, 12520]
 
 // Module 12610
-import _mod12515 from "module_12515" /* 12515 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import _mod12526 from "module_12526" /* 12526 */;
+import _mod12527 from "module_12527" /* 12527 */;
+import module_12576 from "module_12576" /* 12576 */;
 
-let hasOwnProperty;
 
-let items = [["\n", "\\n"], ["\r", "\\r"], ["\t", "\\t"], ["\\", "\\\\"], ["|", "\\u{7c}"], [",", "\\u{2c}"]];
-
-export const getBucketKey = function getBucketKey(metricType, sanitizeMetricKeyResult, sanitizeUnitResult, sanitizeTagsResult) {
-  const obj = _mod12515;
-  const entries1 = entries(obj.dropUndefinedKeys(sanitizeTagsResult));
-  return "" + metricType + sanitizeMetricKeyResult + sanitizeUnitResult + entries1.sort((arg0, arg1) => {
-    const first = arg0[0];
-    return first.localeCompare(arg1[0]);
-  });
-};
-export const sanitizeMetricKey = function sanitizeMetricKey(str) {
-  return str.replace(/[^\w\-.]+/gi, "_");
-};
-export const sanitizeTags = function sanitizeTags(tags) {
-  let obj = {};
-  for (const key10007 in tags) {
-    let tmp5 = key10007;
-    let _Object = Object;
-    hasOwnProperty = Object.prototype.hasOwnProperty;
-    if (!hasOwnProperty.call(tags, key10007)) {
-      continue;
-    } else {
-      let _String = String;
-      let replaced = key10007.replace(/[^\w\-./]+/gi, "");
-      items = [];
-      let tmp3 = items;
-      let arraySpreadResult = HermesBuiltin.arraySpread(items, String(tags[key10007]), 0);
-      obj[replaced] = items.reduce((acc, item) => {
-        function getCharOrReplacement(item) {
-          const obj = closure_1_3[Symbol.iterator]();
-          while (obj !== undefined) {
-            let tmp4 = closure_1_2(tmp2, 2);
-            if (item === tmp4[0]) {
-              obj.return();
-              return tmp5;
+export const extraErrorDataIntegration = module_12576.defineIntegration(() => {
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
+  }
+  let closure_1;
+  const depth = obj.depth;
+  let num = 3;
+  if (undefined !== depth) {
+    num = depth;
+  }
+  const captureErrorCause = obj.captureErrorCause;
+  closure_1 = undefined === captureErrorCause || captureErrorCause;
+  let obj2 = {
+    name: "ExtraErrorData",
+    processEvent(contexts, arg1, getOptions) {
+      function _extractErrorData(originalException, arg1, maxValueLength) {
+        try {
+          const items = ["name", "message", "stack", "line", "column", "fileName", "lineNumber", "columnNumber", "toJSON"];
+          const obj = {};
+          const _Object = Object;
+          const keys = Object.keys(originalException);
+          const iter = keys[Symbol.iterator]();
+          const nextResult = iter.next();
+          while (iter !== undefined) {
+            let tmp8 = nextResult;
+            if (-1 === items.indexOf(nextResult)) {
+              let tmp11 = originalException[tmp8];
+              let tmp12 = tmp11;
+              let tmp15 = num;
+              let tmp17 = closure_1_1;
+              let obj2 = num(closure_1_1[1]);
+              if (!obj2.isError(tmp11)) {
+                let truncateResult;
+                if (typeof tmp12 !== "string") {
+                  truncateResult = tmp11;
+                }
+                obj[tmp8] = truncateResult;
+              }
+              let tmp15Result = tmp15(tmp17[4]);
+              let _HermesInternal = HermesInternal;
+              truncateResult = tmp15Result.truncate("" + tmp12, maxValueLength);
+            }
+            continue;
+          }
+          const tmp23 = arg1 && undefined !== originalException.cause;
+          if (tmp23) {
+            let str1;
+            const obj4 = -1(closure_1_1[1]);
+            if (obj4.isError(originalException.cause)) {
+              str1 = str2.toString();
+            } else {
+              str1 = str2;
+            }
+            obj.cause = str1;
+          }
+          if (typeof originalException.toJSON === "function") {
+            const toJSONResult = originalException.toJSON();
+            const _Object2 = Object;
+            const keys1 = Object.keys(toJSONResult);
+            const tmp48 = toJSONResult;
+            for (const item10067 of keys1) {
+              let str5;
+              let tmp32 = tmp48[item10067];
+              let str3 = tmp32;
+              let obj5 = num(closure_1_1[1]);
+              if (obj5.isError(tmp32)) {
+                str5 = str3.toString();
+              } else {
+                str5 = str3;
+              }
+              obj[item10067] = str5;
+              continue;
             }
           }
-          return item;
+          return obj;
+        } catch (tmp40) {
+          const tmp41 = num;
+          const tmp43 = closure_1_1;
+          if (num(closure_1_1[5]).DEBUG_BUILD) {
+            const logger = tmp41(tmp43[6]).logger;
+            logger.error("Unable to extract extra data from the Error object:", tmp40);
+          }
+          return null;
         }
-        return acc + getCharOrReplacement(item);
-      }, "");
-      continue;
+      }
+      const maxValueLength = getOptions.getOptions().maxValueLength;
+      num = 250;
+      const tmp = num;
+      const tmp2 = closure_1;
+      if (undefined !== maxValueLength) {
+        num = maxValueLength;
+      }
+      let obj = arg1;
+      if (arg1 === undefined) {
+        obj = {};
+      }
+      let tmp3 = contexts;
+      if (obj.originalException) {
+        let obj2 = _mod12527;
+        tmp3 = contexts;
+        if (obj2.isError(obj.originalException)) {
+          const tmp6 = obj.originalException.name || obj.originalException.constructor.name;
+          const tmp7 = _extractErrorData(obj.originalException, tmp2, num);
+          tmp3 = contexts;
+          if (tmp7) {
+            const obj3 = {};
+            let tmp8 = obj3;
+            const merged = Object.assign(contexts.contexts);
+            const normalizer = tmp4(12565);
+            const normalizeResult = normalizer.normalize(tmp7, tmp);
+            const tmp4Result = _mod12527;
+            if (tmp4Result.isPlainObject(normalizeResult)) {
+              const tmp4Result2 = _mod12526;
+              const result = tmp4Result2.addNonEnumerableProperty(normalizeResult, "__sentry_skip_normalization__", true);
+              obj3[tmp6] = normalizeResult;
+            }
+            let obj4 = { contexts: obj3 };
+            let tmp12 = obj4;
+            let tmp13 = contexts;
+            const merged1 = Object.assign(contexts);
+            tmp3 = obj4;
+          }
+        }
+      }
+      return tmp3;
     }
-    continue;
-  }
-  return obj;
-};
-export const sanitizeUnit = function sanitizeUnit(none) {
-  return none.replace(/[^\w]+/gi, "_");
-};
-export const serializeMetricBuckets = function serializeMetricBuckets(arg0) {
-  let str = "";
-  const iter = arg0[Symbol.iterator]();
-  const nextResult = iter.next();
-  while (iter !== undefined) {
-    let tmp2 = nextResult;
-    let _Object = Object;
-    let entries = Object.entries(nextResult.tags);
-    let arr2 = entries;
-    let str2 = "";
-    if (entries.length > 0) {
-      let mapped = arr2.map((item) => {
-        let tmp;
-        let tmp2;
-        [tmp, tmp2] = item;
-        return "" + tmp + ":" + tmp2;
-      });
-      let _HermesInternal = HermesInternal;
-      str2 = "|#" + mapped.join(",");
-    }
-    let _HermesInternal2 = HermesInternal;
-    let str3 = "";
-    let str4 = "@";
-    let str5 = ":";
-    let str6 = "|";
-    let str7 = "|T";
-    let str8 = "\n";
-    str = str + "" + tmp2.name + "@" + tmp2.unit + ":" + tmp2.metric + "|" + tmp2.metricType + str2 + "|T" + tmp2.timestamp + "\n";
-    continue;
-  }
-  return str;
-};
-export const simpleHash = function simpleHash(item) {
-  let length;
-  let num = 0;
-  let num2 = 0;
-  let num3 = 0;
-  if (0 < item.length) {
-    do {
-      let sum = (num2 << 5) - num2 + item.charCodeAt(num);
-      num2 = sum & sum;
-      num = num + 1;
-      num3 = num2;
-      length = item.length;
-    } while (num < length);
-  }
-  return num3 >>> 0;
-};
+  };
+  return obj2;
+});

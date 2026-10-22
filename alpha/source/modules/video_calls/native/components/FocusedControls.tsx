@@ -1,19 +1,19 @@
-// Module ID: 11512
-// Function ID: 11513
+// Module ID: 11523
+// Function ID: 11524
 // Name: FocusedControls
-// Dependencies: [19, 17, 1087, 21, 4969, 1202, 558, 576, 5038, 11513, 5192, 7207, 1499, 7946, 11514, 11519, 11314, 5253, 7237, 7262, 11400, 1267, 11522, 2]
+// Dependencies: [19, 17, 1087, 21, 4969, 1202, 558, 576, 5038, 11524, 5192, 7206, 1499, 7947, 11525, 11530, 11323, 5253, 7238, 7263, 11411, 1267, 11533, 2]
 
-// Module 11512 (FocusedControls)
+// Module 11523 (FocusedControls)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import native from "native" /* 1202 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5253 */;
-import inlineStyles from "inlineStyles" /* 7946 */;
-import RevealProvider from "RevealProvider" /* 11314 */;
-import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 11514 */;
-import GlobalStatusIndicator from "GlobalStatusIndicator" /* 11519 */;
+import inlineStyles from "inlineStyles" /* 7947 */;
+import RevealProvider from "RevealProvider" /* 11323 */;
+import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 11525 */;
+import GlobalStatusIndicator from "GlobalStatusIndicator" /* 11530 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -61,7 +61,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
   fn.__workletHash = 15509217225804;
   fn.__initData = __initData;
   const derivedValue = obj2.useDerivedValue(fn);
-  const tmp7 = derivedValue(11513)();
+  const tmp7 = derivedValue(11524)();
   let obj3 = reveal(5038);
   const fn2 = function o() {
     let items;
@@ -105,7 +105,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
       }
     }
     const rect = { top: !tmp7, left: isTouchingLeftScreenEdge, right: true, children: tmp10 };
-    const tmp14 = closure_7(tmp(7207).SafeAreaPaddingView, rect);
+    const tmp14 = closure_7(tmp(7206).SafeAreaPaddingView, rect);
     let num = 3;
     cResult[3] = isTouchingLeftScreenEdge;
     cResult[4] = !tmp7;
@@ -140,7 +140,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
   fn.__workletHash = 17020662047758;
   fn.__initData = __initData3;
   const derivedValue = TIMING_CONFIG.useDerivedValue(fn);
-  const tmp3 = derivedValue(11513)();
+  const tmp3 = derivedValue(11524)();
   let obj2 = reveal(5038);
   const fn2 = function c() {
     let items;
@@ -160,7 +160,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
   const View = derivedValue(5038).View;
   rect = { top: !tmp3, left: isTouchingLeftScreenEdge, right: true, children: closure_7(closure_5, obj5) };
   obj5 = { style: tmp.headerContainer, children: header };
-  SafeAreaPaddingView = reveal(7207).SafeAreaPaddingView;
+  SafeAreaPaddingView = reveal(7206).SafeAreaPaddingView;
   return closure_7(View, obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -192,9 +192,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { children: metroImportAll(LinearGradient, obj4) };
-      const Defs = tmp(7946).Defs;
+      const Defs = tmp(7947).Defs;
       obj4 = { id: "grad", y1: "0%", x1: "0", x2: "0", y2: "100%", children: items };
-      LinearGradient = tmp(7946).LinearGradient;
+      LinearGradient = tmp(7947).LinearGradient;
       items = [metroImportDefault(inlineStyles.Stop, { offset: "0%", stopColor: "black", stopOpacity: ".8" }), metroImportDefault(inlineStyles.Stop, { offset: "66%", stopColor: "black", stopOpacity: ".51" }), metroImportDefault(inlineStyles.Stop, { offset: "100%", stopColor: "black", stopOpacity: "0" })];
       const tmp11 = metroImportDefault(Defs, obj3);
       cResult[5] = tmp11;
@@ -294,13 +294,13 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   ({ header, expandedControls, actionBar, children, forceReveal, disableGradient, containerStyle, omitPTT, bottomHeader, onDrawerClose, channel } = isTouchingLeftScreenEdge);
   isTouchingLeftScreenEdge = isTouchingLeftScreenEdge.isTouchingLeftScreenEdge;
   const tmp4 = undefined !== forceReveal && forceReveal;
-  const tmpResult = tmp(11514);
+  const tmpResult = tmp(11525);
   const globalStatusIndicatorState = tmpResult.useGlobalStatusIndicatorState();
-  const tmpResult6 = tmp(11519);
+  const tmpResult6 = tmp(11530);
   const globalStatusIndicatorHeightSharedValue = tmpResult6.useGlobalStatusIndicatorHeightSharedValue(globalStatusIndicatorState);
-  const tmp9 = globalStatusIndicatorHeightSharedValue(11513)();
+  const tmp9 = globalStatusIndicatorHeightSharedValue(11524)();
   dependencyMap = tmp9;
-  reveal = reveal.useContext(tmp(11314).RevealContext).reveal;
+  reveal = reveal.useContext(tmp(11323).RevealContext).reveal;
   const tmpResult7 = tmp(5253);
   const isScreenReaderEnabled = tmpResult7.useIsScreenReaderEnabled();
   if (!reveal) {
@@ -348,9 +348,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   fn3.__workletHash = 6179540517245;
   fn3.__initData = __initData7;
   const animatedStyle = tmpResult10.useAnimatedStyle(fn3);
-  const tmp8Result = globalStatusIndicatorHeightSharedValue(7237);
-  const analyticsLocations = tmp8Result(tmp8(7262).FOCUSED_VOICE_CONTROLS).analyticsLocations;
-  const tmp15 = globalStatusIndicatorHeightSharedValue(11400)();
+  const tmp8Result = globalStatusIndicatorHeightSharedValue(7238);
+  const analyticsLocations = tmp8Result(tmp8(7263).FOCUSED_VOICE_CONTROLS).analyticsLocations;
+  const tmp15 = globalStatusIndicatorHeightSharedValue(11411)();
   let closure_7 = tmp15;
   if (cResult[0] === analyticsLocations) {
     if (cResult[1] === channel.guild_id) {
@@ -446,7 +446,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                   tmp36 = null;
                   if (null != expandedControls) {
                     const obj4 = { onDrawerOpen: tmp21, omitPTT, actionBar, expandedControls, header: bottomHeader, onDrawerClose, reveal, children };
-                    tmp36 = closure_7(tmp8(11522), obj4);
+                    tmp36 = closure_7(tmp8(11533), obj4);
                   }
                 }
                 cResult[15] = actionBar;
@@ -548,7 +548,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const globalStatusIndicatorState = TIMING_CONFIG.useGlobalStatusIndicatorState();
   let obj2 = GlobalStatusIndicator;
   const globalStatusIndicatorHeightSharedValue = obj2.useGlobalStatusIndicatorHeightSharedValue(globalStatusIndicatorState);
-  const tmp6 = globalStatusIndicatorHeightSharedValue(11513)();
+  const tmp6 = globalStatusIndicatorHeightSharedValue(11524)();
   dependencyMap = tmp6;
   reveal = reveal.useContext(RevealProvider.RevealContext).reveal;
   let obj3 = useIsScreenReaderEnabled;
@@ -602,9 +602,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   fn.__initData = __initData10;
   ({ withTiming: timing.withTiming, top: derivedValue, TIMING_CONFIG, revealOpacity: derivedValue1 });
   const animatedStyle = tmpResult4.useAnimatedStyle(fn);
-  const tmp5Result = globalStatusIndicatorHeightSharedValue(7237);
-  analyticsLocations = tmp5Result(tmp5(7262).FOCUSED_VOICE_CONTROLS).analyticsLocations;
-  closure_7 = tmp5(11400)();
+  const tmp5Result = globalStatusIndicatorHeightSharedValue(7238);
+  analyticsLocations = tmp5Result(tmp5(7263).FOCUSED_VOICE_CONTROLS).analyticsLocations;
+  closure_7 = tmp5(11411)();
   const View = tmp5(5038).View;
   const tmp12 = closure_8;
   if (containerStyle == null) {
@@ -652,7 +652,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         reveal,
         children
       };
-      tmp17Result = tmp17(tmp5(11522), obj6);
+      tmp17Result = tmp17(tmp5(11533), obj6);
     }
   }
   items1[2] = tmp17Result;

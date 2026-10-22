@@ -1,10 +1,10 @@
 // Module ID: 10301
 // Function ID: 10302
-// Dependencies: [41, 42, 93, 95, 98, 10300, 10187, 10192]
+// Dependencies: [41, 42, 93, 95, 98, 10300, 10194, 10199]
 
 // Module 10301
-import EmptyDuration from "EmptyDuration" /* 10187 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10192 */;
+import EmptyDuration from "EmptyDuration" /* 10194 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10199 */;
 import _mod10300 from "module_10300" /* 10300 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
@@ -28,13 +28,13 @@ function _isNativeReflectConstruct() {
   }
 }
 const keys = Object.keys(_mod10300.NUMBER);
-const regExp = new RegExp("(\\d+|[" + keys.join("") + "]+|\u534A|\u5E7E)(?:\\s*)(?:\u500B)?(\u79D2(?:\u9418)?|\u5206\u9418|\u5C0F\u6642|\u9418|\u65E5|\u5929|\u661F\u671F|\u79AE\u62DC|\u6708|\u5E74)(?:(?:\u4E4B|\u904E)?\u5F8C|(?:\u4E4B)?\u5167)", "i");
-class ZHHantDeadlineFormatParser {
+const regExp = new RegExp("(\\d+|[" + keys.join("") + "]+|\u534A|\u51E0)(?:\\s*)(?:\u4E2A)?(\u79D2(?:\u949F)?|\u5206\u949F|\u5C0F\u65F6|\u949F|\u65E5|\u5929|\u661F\u671F|\u793C\u62DC|\u6708|\u5E74)(?:(?:\u4E4B|\u8FC7)?\u540E|(?:\u4E4B)?\u5185)", "i");
+class ZHHansDeadlineFormatParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ZHHantDeadlineFormatParser);
-    const obj = _getPrototypeOf(ZHHantDeadlineFormatParser);
+    _classCallCheck(this, ZHHansDeadlineFormatParser);
+    const obj = _getPrototypeOf(ZHHansDeadlineFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -46,7 +46,7 @@ class ZHHantDeadlineFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ZHHantDeadlineFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ZHHansDeadlineFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
@@ -65,7 +65,7 @@ const items = [
       }
       if (isNaN(num)) {
         num = 3;
-        if ("\u5E7E" !== index[1]) {
+        if ("\u51E0" !== index[1]) {
           num = 0.5;
           if ("\u534A" !== index[1]) {
             return null;
@@ -73,11 +73,11 @@ const items = [
         }
       }
       const obj = {};
-      if (index[2][0].match(/[日天星禮月年]/)) {
+      if (index[2][0].match(/[日天星礼月年]/)) {
         if ("\u65E5" != index[2][0]) {
           if ("\u5929" != index[2][0]) {
             if ("\u661F" != index[2][0]) {
-              if ("\u79AE" != index[2][0]) {
+              if ("\u793C" != index[2][0]) {
                 if ("\u6708" == index[2][0]) {
                   obj.month = num;
                 } else if ("\u5E74" == index[2][0]) {
@@ -103,7 +103,7 @@ const items = [
         } else if ("\u5206" == index[2][0]) {
           obj.minute = num;
         } else {
-          const tmp6 = "\u5C0F" != str3 && "\u9418" != str3;
+          const tmp6 = "\u5C0F" != str3 && "\u949F" != str3;
           if (!tmp6) {
             obj.hour = num;
           }
@@ -127,4 +127,4 @@ const items = [
   }
 ];
 
-export default _createClass(ZHHantDeadlineFormatParser, items);
+export default _createClass(ZHHansDeadlineFormatParser, items);

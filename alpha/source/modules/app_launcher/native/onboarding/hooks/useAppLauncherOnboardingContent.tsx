@@ -1,18 +1,18 @@
-// Module ID: 11955
-// Function ID: 11956
+// Module ID: 11969
+// Function ID: 11970
 // Name: useAppLauncherOnboardingContent
-// Dependencies: [32, 9620, 4821, 4818, 558, 576, 4994, 4805, 504, 11956, 11961, 7480, 2]
+// Dependencies: [32, 9627, 4821, 4818, 558, 576, 4994, 4805, 504, 11970, 11975, 7481, 2]
 
-// Module 11955 (useAppLauncherOnboardingContent)
+// Module 11969 (useAppLauncherOnboardingContent)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import dismissible_content from "dismissible_content" /* 4805 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4994 */;
-import useActivityApplications2 from "useActivityApplications" /* 11956 */;
-import useCanShowAppLauncherOnboardingDefault from "useCanShowAppLauncherOnboarding" /* 11961 */;
+import useActivityApplications2 from "useActivityApplications" /* 11970 */;
+import useCanShowAppLauncherOnboardingDefault from "useCanShowAppLauncherOnboarding" /* 11975 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9620 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9627 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -113,7 +113,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasU
     guild_id = channel.guild_id;
   }
   const obj4 = { guildId: guild_id, fetchesShelf: !result };
-  const useActivityApplications = tmp(11956).useActivityApplications;
+  const useActivityApplications = tmp(11970).useActivityApplications;
   useActivityApplications2;
   if (result) {
     result = result1;
@@ -200,7 +200,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppLaun
   } else {
     tmp14 = cResult[7];
   }
-  const tmpResult2 = channelId(7480);
+  const tmpResult2 = channelId(7481);
   [tmp17, tmp18] = tmpResult2.useSelectedDismissibleContent(items1, tmp14);
   _slicedToArray(tmpResult2.useSelectedDismissibleContent(items1, tmp14), 2);
   if (cResult[8] === tmp18) {
@@ -237,7 +237,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppLaun
     }
   }
   const obj3 = { groupName: constants.APP_LAUNCHER_ONBOARDING };
-  const tmpResult = channelId(7480);
+  const tmpResult = channelId(7481);
   const tmp7 = _slicedToArray(tmpResult.useSelectedDismissibleContent(items, obj3), 2);
   return { visibleContent: tmp7[0], markAsDismissed: tmp7[1] };
 });

@@ -1,9 +1,9 @@
-// Module ID: 15229
-// Function ID: 15230
+// Module ID: 15242
+// Function ID: 15243
 // Name: useFocusRefOnNavigation
-// Dependencies: [19, 558, 576, 1506, 7119, 2]
+// Dependencies: [19, 558, 576, 1506, 7118, 2]
 
-// Module 15229 (useFocusRefOnNavigation)
+// Module 15242 (useFocusRefOnNavigation)
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

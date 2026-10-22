@@ -1,15 +1,15 @@
-// Module ID: 6982
-// Function ID: 6983
+// Module ID: 6981
+// Function ID: 6982
 // Name: ResendEmail
-// Dependencies: [32, 19, 17, 4815, 1392, 1087, 21, 4969, 558, 576, 1505, 38, 504, 6983, 6907, 6654, 5649, 1128, 6984, 5220, 5230, 2]
+// Dependencies: [32, 19, 17, 4815, 1392, 1087, 21, 4969, 558, 576, 1505, 38, 504, 6982, 6906, 6653, 5649, 1128, 6983, 5220, 5230, 2]
 
-// Module 6982 (ResendEmail)
+// Module 6981 (ResendEmail)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import intl5 from "intl" /* 1128 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5649 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6654 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6907 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6653 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6906 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 4815 */;
@@ -89,7 +89,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ResendEmail(
   const tmpResult2 = tmp(504);
   const stateFromStores1 = tmpResult2.useStateFromStores(tmp10, tmp11);
   if (cResult[4] !== stateFromStores1) {
-    const obj5 = verified(6983);
+    const obj5 = verified(6982);
     const result = obj5.isEmailReverification(stateFromStores1);
     class E {
       constructor() {
@@ -239,7 +239,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ResendEmail(
         return;
       }
     }
-    closure_9(tmp(6984).EnvelopeOpenSpotIllustration, { scale: 0.75 });
+    closure_9(tmp(6983).EnvelopeOpenSpotIllustration, { scale: 0.75 });
     class E {
       constructor() {
         currentUser = closure_1_7.getCurrentUser();
@@ -456,7 +456,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ResendEmail(
   const items1 = [UserRequiredActionStore];
   const obj3 = navigation(504);
   const stateFromStores1 = obj3.useStateFromStores(items1, () => action.getAction());
-  const obj4 = verified(6983);
+  const obj4 = verified(6982);
   const result = obj4.isEmailReverification(stateFromStores1);
   let tmp16Result = !result;
   [tmp10, dependencyMap] = ref(react.useState(false), 2);
@@ -478,7 +478,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ResendEmail(
   const callback = react.useCallback(() => {
     navigation.push(VerificationModalScenes.ENTER_EMAIL);
   }, items3);
-  items4 = [closure_9(navigation(6984).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
+  items4 = [closure_9(navigation(6983).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
   const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(navigation(1128).t.fUtddV) };
   const Text = navigation(5220).Text;
   intl = navigation(1128).intl;

@@ -1,20 +1,20 @@
-// Module ID: 16297
-// Function ID: 16298
+// Module ID: 16315
+// Function ID: 16316
 // Name: OrbsArcadeQuestHomeSection
-// Dependencies: [19, 16298, 16300, 21, 4969, 587, 558, 576, 16301, 504, 9585, 5964, 5220, 1128, 16305, 9443, 2]
+// Dependencies: [19, 16316, 16318, 21, 4969, 587, 558, 576, 16319, 504, 9592, 5963, 5220, 1128, 16323, 9450, 2]
 
-// Module 16297 (OrbsArcadeQuestHomeSection)
+// Module 16315 (OrbsArcadeQuestHomeSection)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import Stack_Stack from "Stack/Stack" /* 5964 */;
-import GameControllerIcon from "GameControllerIcon" /* 9585 */;
-import OrbsArcadeNativeConstants from "OrbsArcadeNativeConstants" /* 16300 */;
-import useFetchOrbsArcadeGamesDefault from "useFetchOrbsArcadeGames" /* 16301 */;
-import OrbsArcadeGameTileDefault from "OrbsArcadeGameTile" /* 16305 */;
+import Stack_Stack from "Stack/Stack" /* 5963 */;
+import GameControllerIcon from "GameControllerIcon" /* 9592 */;
+import OrbsArcadeNativeConstants from "OrbsArcadeNativeConstants" /* 16318 */;
+import useFetchOrbsArcadeGamesDefault from "useFetchOrbsArcadeGames" /* 16319 */;
+import OrbsArcadeGameTileDefault from "OrbsArcadeGameTile" /* 16323 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16298 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16316 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -94,7 +94,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
     const _Symbol2 = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { direction: "horizontal", spacing: nativeDefault.space.PX_8, children: items2 };
-      const Stack = tmp(5964).Stack;
+      const Stack = tmp(5963).Stack;
       items2 = [tmp15, ];
       const obj3 = { variant: "text-lg/semibold", color: "text-strong", children: intl.string(intl3.t["2L068F"]) };
       const Heading = tmp(5220).Heading;
@@ -143,7 +143,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
           }
         }
         const obj6 = { spacing: nativeDefault.space.PX_16, style: tmp4.section, children: items4 };
-        const Stack2 = tmp(5964).Stack;
+        const Stack2 = tmp(5963).Stack;
         items4 = [tmp25, tmp28];
         const tmp33 = hasOwnProperty(Stack2, obj6);
         cResult[13] = tmp4.section;
@@ -160,7 +160,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
       });
     } else {
       const obj7 = { style: tmp4.skeletonTile };
-      mapped = React3(tmp5(9443), obj7);
+      mapped = React3(tmp5(9450), obj7);
     }
     cResult[9] = stateFromStores1;
     cResult[10] = stateFromStores;
@@ -190,11 +190,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
   if (!stateFromStores1) {
     let mapped;
     const obj3 = { spacing: nativeDefault.space.PX_16, style: tmp.section, children: items4 };
-    const Stack = tmp5(5964).Stack;
+    const Stack = tmp5(5963).Stack;
     const obj4 = { style: tmp.sectionHeader, children: items3 };
-    const Stack2 = tmp5(5964).Stack;
+    const Stack2 = tmp5(5963).Stack;
     const obj5 = { direction: "horizontal", spacing: nativeDefault.space.PX_8, children: items2 };
-    const Stack3 = tmp5(5964).Stack;
+    const Stack3 = tmp5(5963).Stack;
     items2 = [React3(GameControllerIcon.GameControllerIcon, {}), ];
     const obj6 = { variant: "text-lg/semibold", color: "text-strong", children: intl.string(intl3.t["2L068F"]) };
     const Heading = tmp5(5220).Heading;
@@ -215,7 +215,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
       });
     } else {
       const obj8 = { style: tmp.skeletonTile };
-      mapped = tmp9(tmp2(9443), obj8);
+      mapped = tmp9(tmp2(9450), obj8);
     }
     items4[1] = mapped;
     tmp8Result = tmp8(Stack, obj3);

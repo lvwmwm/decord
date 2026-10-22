@@ -1,14 +1,14 @@
-// Module ID: 6825
-// Function ID: 6826
+// Module ID: 6824
+// Function ID: 6825
 // Name: MemberVerificationAlert
-// Dependencies: [109, 19, 17, 21, 4969, 587, 558, 576, 5220, 5965, 2]
+// Dependencies: [109, 19, 17, 21, 4969, 587, 558, 576, 5220, 5964, 2]
 
-// Module 6825 (MemberVerificationAlert)
+// Module 6824 (MemberVerificationAlert)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import AlertDefault from "Alert" /* 5965 */;
+import AlertDefault from "Alert" /* 5964 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,10 +1,10 @@
-// Module ID: 18886
-// Function ID: 18887
+// Module ID: 18909
+// Function ID: 18910
 // Name: useChannelsAllowedToUnlink
-// Dependencies: [4899, 4901, 10787, 558, 576, 504, 2]
+// Dependencies: [4899, 4901, 10795, 558, 576, 504, 2]
 // Exports: getChannelsAllowedToUnlink
 
-// Module 18886 (useChannelsAllowedToUnlink)
+// Module 18909 (useChannelsAllowedToUnlink)
 import GuildChannelStore2 from "GuildChannelStore" /* 4899 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 const GuildChannelStore = GuildChannelStore2;
 let _require;
 
-const f137705 = (channel) => channel.channel;
+const f137919 = (channel) => channel.channel;
 let closure_3 = GuildChannelStore2.GUILD_SELECTABLE_CHANNELS_KEY;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelsAllowedToUnlink(arg0) {
   let first;
@@ -46,7 +46,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelsA
               const obj = closure_2_0(closure_2_1[2]);
               return obj.canUnlinkLobbyChannel(channel.channel, closure_0);
             });
-            items = found.map(f137705);
+            items = found.map(f137919);
           }
           return items;
         }
@@ -78,7 +78,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelsA
             const obj = closure_2_0(closure_2_1[2]);
             return obj.canUnlinkLobbyChannel(channel.channel, closure_0);
           });
-          items = found.map(f137705);
+          items = found.map(f137919);
         }
         return items;
       }
@@ -104,7 +104,7 @@ function getChannelsAllowedToUnlink(arg0) {
       const obj = closure_2_0(closure_2_1[2]);
       return obj.canUnlinkLobbyChannel(channel.channel, closure_0);
     });
-    items = found.map(f137705);
+    items = found.map(f137919);
   }
   return items;
 }

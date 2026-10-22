@@ -2,34 +2,39 @@
 // Function ID: 5919
 // Name: react-native
 // Dependencies: [17]
-// Exports: parseAndroidIconToNativeProps
+// Exports: enableFreeze, enableScreens, freezeEnabled, screensEnabled
 
 // Module 5918 (react-native)
 import react_native from "react-native" /* 17 */;
 
-const Image = react_native.Image;
+let Platform;
+let _window;
+({ Platform, UIManager: _window } = react_native);
+let flag = false;
 
-export const parseAndroidIconToNativeProps = function parseAndroidIconToNativeProps(icon) {
-  const tmp = icon;
-  if (tmp) {
-    if ("imageSource" === icon.type) {
-      const assetSource = Image.resolveAssetSource(icon.imageSource);
-      if (!assetSource) {
-        const _console = console;
-        console.error("[RNScreens] Failed to resolve an asset.");
-      }
-      const obj2 = { imageIconResource: tmp9 };
-      return obj2;
-    } else if ("drawableResource" === icon.type) {
-      return { drawableIconResourceName: icon.name };
-    } else {
-      const _Error = Error;
-      const self = this;
-      const self2 = this;
-      const error = new Error("[RNScreens] Incorrect icon format for Android. You must provide `imageSource` or `drawableResource`.");
-      throw error;
-    }
-  } else {
-    return {};
+export const isNativePlatformSupported = true;
+export const enableScreens = function enableScreens() {
+  flag = arg0;
+  if (arg0 === undefined) {
+    flag = true;
+  }
+  if (flag) {
+    flag = !_window.getViewManagerConfig("RNSScreen");
+  }
+  if (flag) {
+    const _console = console;
+    console.error("Screen native module hasn't been linked. Please check the react-native-screens README for more details");
   }
 };
+export function enableFreeze() {
+  flag = arg0;
+  if (arg0 === undefined) {
+    flag = true;
+  }
+}
+export function screensEnabled() {
+  return flag;
+}
+export function freezeEnabled() {
+  return flag;
+}

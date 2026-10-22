@@ -1,132 +1,158 @@
 // Module ID: 12563
 // Function ID: 12564
-// Dependencies: [12556]
-// Exports: getEnvelopeEndpointWithUrlEncodedAuth, getReportDialogEndpoint
+// Dependencies: [12519, 12520, 12564, 12567, 12556, 12525]
+// Exports: createEventEnvelope, createSessionEnvelope, createSpanEnvelope
 
 // Module 12563
-import _mod12556 from "module_12556" /* 12556 */;
+import _mod12525 from "module_12525" /* 12525 */;
+import _mod12564 from "module_12564" /* 12564 */;
+import _mod12567 from "module_12567" /* 12567 */;
+import DEBUG_BUILD from "module_12519" /* 12519 */;
+import CONSOLE_LEVELS from "module_12520" /* 12520 */;
+
+const require = globalThis.__r;
+let _require, integrations;
 
 
-export const getEnvelopeEndpointWithUrlEncodedAuth = function getEnvelopeEndpointWithUrlEncodedAuth(protocol, arg1, name) {
-  let combined1 = arg1;
-  if (!combined1) {
-    let str2 = "";
-    if (protocol.protocol) {
-      const _HermesInternal = HermesInternal;
-      str2 = "" + protocol.protocol + ":";
+export const createEventEnvelope = function createEventEnvelope(type, arg1, sdk, arg3) {
+  const obj = _mod12564;
+  const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(sdk);
+  let str = "event";
+  const tmp2 = type;
+  if (type.type) {
+    str = "event";
+    if ("replay_event" !== type.type) {
+      str = type.type;
     }
-    let str4 = "";
-    if (protocol.port) {
-      const _HermesInternal2 = HermesInternal;
-      str4 = ":" + protocol.port;
-    }
-    const host = protocol.host;
-    let str6 = "";
-    if (protocol.path) {
-      const _HermesInternal3 = HermesInternal;
-      str6 = "/" + protocol.path;
-    }
-    const _HermesInternal4 = HermesInternal;
-    const _HermesInternal5 = HermesInternal;
-    const obj = { sentry_version: "7" };
-    const combined = "" + "" + str2 + "//" + host + str4 + str6 + "/api/" + protocol.projectId + "/envelope/";
-    if (protocol.publicKey) {
-      obj.sentry_key = protocol.publicKey;
-    }
-    const tmp12 = name;
-    if (tmp12) {
-      const _HermesInternal6 = HermesInternal;
-      obj.sentry_client = "" + name.name + "/" + name.version;
-    }
-    const _URLSearchParams = URLSearchParams;
-    const self = this;
-    const self2 = this;
-    const _HermesInternal7 = HermesInternal;
-    const str13 = new URLSearchParams(obj);
-    combined1 = "" + combined + "?" + str13.toString();
   }
-  return combined1;
+  if (sdk && sdk.sdk) {
+    type.sdk = type.sdk || {};
+    let name = type.sdk.name;
+    sdk = type.sdk;
+    if (!name) {
+      name = tmp6.name;
+    }
+    sdk.name = name;
+    let version = type.sdk.version;
+    const sdk2 = type.sdk;
+    if (!version) {
+      version = tmp6.version;
+    }
+    sdk2.version = version;
+    integrations = type.sdk.integrations;
+    const sdk3 = type.sdk;
+    if (!integrations) {
+      integrations = [];
+    }
+    const items = [];
+    const arraySpreadResult = HermesBuiltin.arraySpread(items, integrations, 0);
+    const tmp10 = (sdk && sdk.sdk).integrations || [];
+    HermesBuiltin.arraySpread(items, tmp10, arraySpreadResult);
+    sdk3.integrations = items;
+    let packages = type.sdk.packages;
+    const sdk4 = type.sdk;
+    if (!packages) {
+      packages = [];
+    }
+    const items1 = [];
+    const arraySpreadResult5 = HermesBuiltin.arraySpread(items1, packages, 0);
+    const tmp18 = (sdk && sdk.sdk).packages || [];
+    HermesBuiltin.arraySpread(items1, tmp18, arraySpreadResult5);
+    sdk4.packages = items1;
+  }
+  const tmp3Result = _mod12564;
+  const eventEnvelopeHeaders = tmp3Result.createEventEnvelopeHeaders(type, sdkMetadataForEnvelopeHeader, arg3, arg1);
+  delete tmp2["sdkProcessingMetadata"];
+  const items2 = [{ type: str }, type];
+  const items3 = [items2];
+  const tmp3Result2 = _mod12564;
+  return tmp3Result2.createEnvelope(eventEnvelopeHeaders, items3);
 };
-export const getReportDialogEndpoint = function getReportDialogEndpoint(arg0, user) {
-  const obj = _mod12556;
-  const url = obj.makeDsn(arg0);
-  if (url) {
-    let str = "";
-    if (url.protocol) {
-      const _HermesInternal = HermesInternal;
-      str = "" + url.protocol + ":";
-    }
-    let str3 = "";
-    if (url.port) {
-      const _HermesInternal2 = HermesInternal;
-      str3 = ":" + url.port;
-    }
-    const host = url.host;
-    let str5 = "";
-    if (url.path) {
-      const _HermesInternal3 = HermesInternal;
-      str5 = "/" + url.path;
-    }
-    const _HermesInternal4 = HermesInternal;
-    const _HermesInternal5 = HermesInternal;
-    const combined = "" + "" + str + "//" + host + str3 + str5 + "/api/" + "embed/error-page/";
-    const _HermesInternal6 = HermesInternal;
-    const tmp2Result = _mod12556;
-    let combined1 = "dsn=" + tmp2Result.dsnToString(url);
-    let tmp16 = combined1;
-    const keys = Object.keys();
-    if (keys !== undefined) {
-      tmp16 = combined1;
-      while (keys[tmp] !== undefined) {
-        if ("dsn" === tmp19) {
-          continue;
-        } else {
-          combined1 = tmp18;
-          if ("onClose" === tmp19) {
-            continue;
-          } else {
-            if ("user" === tmp19) {
-              user = user.user;
-              combined1 = tmp18;
-              if (!user) {
-                continue;
-              } else {
-                let sum = tmp18;
-                if (user.name) {
-                  let _encodeURIComponent3 = encodeURIComponent;
-                  let _HermesInternal8 = HermesInternal;
-                  sum = tmp18 + "&name=" + encodeURIComponent(user.name);
-                }
-                combined1 = sum;
-                if (!user.email) {
-                  continue;
-                } else {
-                  let _encodeURIComponent4 = encodeURIComponent;
-                  let _HermesInternal9 = HermesInternal;
-                  combined1 = sum + "&email=" + encodeURIComponent(user.email);
-                  continue;
-                }
-                continue;
-              }
-              continue;
-            } else {
-              let _encodeURIComponent = encodeURIComponent;
-              let _encodeURIComponent2 = encodeURIComponent;
-              let encodeURIComponentResult = encodeURIComponent(tmp19);
-              let _HermesInternal7 = HermesInternal;
-              combined1 = tmp18 + "&" + encodeURIComponentResult + "=" + encodeURIComponent(user[tmp19]);
-              continue;
-            }
-            continue;
-          }
-          continue;
-        }
-        continue;
-      }
-    }
-    const _HermesInternal10 = HermesInternal;
-    return "" + combined + "?" + tmp16;
-  } else {
-    return "";
+export const createSessionEnvelope = function createSessionEnvelope(toJSON, arg1, arg2, arg3) {
+  let date;
+  let items1;
+  let tmpResult;
+  const obj = _mod12564;
+  const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(arg2);
+  const obj2 = { sent_at: date.toISOString() };
+  let tmp4 = sdkMetadataForEnvelopeHeader;
+  date = new Date();
+  if (tmp4) {
+    tmp4 = { sdk: sdkMetadataForEnvelopeHeader };
+    const obj3 = { sdk: sdkMetadataForEnvelopeHeader };
   }
+  const merged = Object.assign(tmp4);
+  let tmp6 = arg3 && arg1;
+  if (tmp6) {
+    const obj4 = { dsn: tmpResult.dsnToString(arg1) };
+    tmp6 = obj4;
+    tmpResult = _mod12567;
+  }
+  const merged1 = Object.assign(tmp6);
+  if ("aggregates" in toJSON) {
+    const items = [{ type: "sessions" }, toJSON];
+    items1 = items;
+  } else {
+    items1 = [{ type: "session" }, toJSON.toJSON()];
+  }
+  const items2 = [items1];
+  const tmpResult2 = _mod12564;
+  return tmpResult2.createEnvelope(obj2, items2);
+};
+export const createSpanEnvelope = function createSpanEnvelope(arg0, getDsn) {
+  let closure_0;
+  let date;
+  let tmp2Result;
+  function dscHasRequiredProps(dynamicSamplingContextFromSpan) {
+    return dynamicSamplingContextFromSpan.trace_id && dynamicSamplingContextFromSpan.public_key;
+  }
+  let tmp = _require;
+  let tmp3 = dependencyMap;
+  let obj = require("module_12556");
+  const dynamicSamplingContextFromSpan = obj.getDynamicSamplingContextFromSpan(arg0[0]);
+  const tmp6 = getDsn && getDsn.getDsn();
+  const obj2 = { sent_at: date.toISOString() };
+  const tmp7 = getDsn && getDsn.getOptions().tunnel;
+  date = new Date();
+  let tmp8 = dscHasRequiredProps(dynamicSamplingContextFromSpan);
+  const tmp2 = _require;
+  if (tmp8) {
+    tmp8 = { trace: dynamicSamplingContextFromSpan };
+    const obj3 = { trace: dynamicSamplingContextFromSpan };
+  }
+  const merged = Object.assign(tmp8);
+  let tmp10 = tmp7 && tmp6;
+  if (tmp10) {
+    const obj4 = { dsn: tmp2Result.dsnToString(tmp6) };
+    tmp10 = obj4;
+    tmp2Result = tmp2(12567);
+  }
+  const merged1 = Object.assign(tmp10);
+  const tmp14 = getDsn && getDsn.getOptions().beforeSendSpan;
+  _require = tmp14;
+  const items = [];
+  const tmp15 = tmp14 ? ((arg0) => {
+    const obj = _mod12525;
+    const tmp3 = closure_0(obj.spanToJSON(arg0));
+    if (!tmp3) {
+      const tmpResult = _mod12525;
+      tmpResult.showSpanDropWarning();
+    }
+    return tmp3;
+  }) : ((arg0) => {
+    const obj = closure_0(dependencyMap[5]);
+    return obj.spanToJSON(arg0);
+  });
+  const iter = arg0[Symbol.iterator]();
+  while (iter !== undefined) {
+    let tmp15Result = tmp15(iter.next());
+    if (tmp15Result) {
+      let push = items.push;
+      let obj7 = require("module_12564");
+      let arr = push(obj7.createSpanEnvelopeItem(tmp17));
+    }
+    continue;
+  }
+  const obj8 = require("module_12564");
+  return obj8.createEnvelope(obj2, items);
 };

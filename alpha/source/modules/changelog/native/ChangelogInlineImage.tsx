@@ -1,9 +1,9 @@
-// Module ID: 8457
-// Function ID: 8458
+// Module ID: 8458
+// Function ID: 8459
 // Name: ChangelogInlineImage
-// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 1499, 4797, 8455, 5655, 1128, 8458, 2]
+// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 1499, 4797, 8456, 5655, 1128, 8459, 2]
 
-// Module 8457 (ChangelogInlineImage)
+// Module 8458 (ChangelogInlineImage)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
@@ -27,8 +27,8 @@ let tmp;
 let tmp2;
 let tmp5;
 const FastImageDefault = tmp5(5655);
-const ChangelogImageUtils = tmp(8455);
-const GifTagDefault = tmp2(8458);
+const ChangelogImageUtils = tmp(8456);
+const GifTagDefault = tmp2(8459);
 ({ Pressable: hasOwnProperty, View: metroRequire } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let c9 = 0.5625;

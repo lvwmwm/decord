@@ -1,9 +1,9 @@
-// Module ID: 17751
-// Function ID: 17752
+// Module ID: 17773
+// Function ID: 17774
 // Name: MentionActionCreators
 // Dependencies: [1087, 584, 1297, 2]
 
-// Module 17751 (MentionActionCreators)
+// Module 17773 (MentionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import Constants from "Constants" /* 1087 */;

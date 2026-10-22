@@ -1,11 +1,11 @@
-// Module ID: 18271
-// Function ID: 18272
+// Module ID: 18293
+// Function ID: 18294
 // Name: NativeMenuPresenter
-// Dependencies: [10060, 558, 576, 504, 2]
+// Dependencies: [10067, 558, 576, 504, 2]
 
-// Module 18271 (NativeMenuPresenter)
+// Module 18293 (NativeMenuPresenter)
 import react from "react" /* 576 */;
-import NativeMenuStore from "NativeMenuStore" /* 10060 */;
+import NativeMenuStore from "NativeMenuStore" /* 10067 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

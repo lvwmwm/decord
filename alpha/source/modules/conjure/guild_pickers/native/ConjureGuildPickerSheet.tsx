@@ -1,14 +1,14 @@
-// Module ID: 11778
-// Function ID: 11779
+// Module ID: 11790
+// Function ID: 11791
 // Name: ConjureGuildPickerSheet
-// Dependencies: [32, 19, 4821, 4843, 21, 6009, 558, 576, 11774, 11775, 7210, 8588, 5196, 11779, 8487, 6897, 8987, 11782, 2]
+// Dependencies: [32, 19, 4821, 4843, 21, 6008, 558, 576, 11786, 11787, 7209, 8589, 5196, 11791, 8488, 6896, 8994, 11794, 2]
 
-// Module 11778 (ConjureGuildPickerSheet)
+// Module 11790 (ConjureGuildPickerSheet)
 import Fragment from "Fragment" /* 21 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6009 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8487 */;
-import MentionableSelectOptionParts from "MentionableSelectOptionParts" /* 11779 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6008 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8488 */;
+import MentionableSelectOptionParts from "MentionableSelectOptionParts" /* 11791 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
@@ -203,7 +203,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureGuild
   let channelFilter;
   let str;
   let title;
-  const f147474 = (id) => ({ id: id.value, label: id.label });
+  const f147692 = (id) => ({ id: id.value, label: id.label });
   guildId = guildId.guildId;
   const type = guildId.type;
   const maxPicks = guildId.maxPicks;
@@ -282,7 +282,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureGuild
       }
       let tmp8 = null;
       if (null != channelIconWithGuild) {
-        tmp8 = jsx(tmp(6897).TableRowIcon, { source: channelIconWithGuild });
+        tmp8 = jsx(tmp(6896).TableRowIcon, { source: channelIconWithGuild });
       }
       return tmp8;
     }
@@ -306,7 +306,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureGuild
         } else {
           items = [value];
         }
-        onSubmit(items.map(f147474));
+        onSubmit(items.map(f147692));
         obj = ActionSheetActionCreatorsDefault;
         obj.hideActionSheet();
       } else if (hasItem) {
@@ -318,7 +318,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureGuild
       }
     },
     submitSelection() {
-      onSubmit(first.map(f147474));
+      onSubmit(first.map(f147692));
       obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
     },

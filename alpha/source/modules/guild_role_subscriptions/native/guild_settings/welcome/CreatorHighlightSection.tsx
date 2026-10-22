@@ -1,9 +1,9 @@
-// Module ID: 19133
-// Function ID: 19134
+// Module ID: 19156
+// Function ID: 19157
 // Name: CreatorHighlightSection
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5220, 1202, 9833, 1128, 7060, 19134, 5646, 19106, 5655, 16491, 5231, 7206, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5220, 1202, 9840, 1128, 7059, 19157, 5646, 19129, 5655, 16513, 5231, 7205, 2]
 
-// Module 19133 (CreatorHighlightSection)
+// Module 19156 (CreatorHighlightSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,8 +11,8 @@ import intl5 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import LinkingDefault from "Linking" /* 5646 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9833 */;
-import EmojiIconDefault from "EmojiIcon" /* 16491 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9840 */;
+import EmojiIconDefault from "EmojiIcon" /* 16513 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -30,7 +30,7 @@ let obj4;
 let obj5;
 let obj6;
 let tmp;
-const defaultMVCPConfig = tmp(7206);
+const defaultMVCPConfig = tmp(7205);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -177,7 +177,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Creator
   const typeConsolidationEyebrow = obj2.useTypeConsolidationEyebrow("CreatorHighlightSection", "text-xs/semibold");
   const guild_id = highlightedCreatorGuild.guild_id;
   ({ quote, quote_attribution, quote_attribution_title } = highlightedCreatorGuild);
-  const tmp7 = guild_id(19134)(guild_id, 3, 60);
+  const tmp7 = guild_id(19157)(guild_id, 3, 60);
   dependencyMap = tmp7;
   const hasAllImperativeDetails = tmp7.hasAllImperativeDetails;
   if (cResult[0] === tmp7.details) {
@@ -190,7 +190,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Creator
       let tmp68;
       const _Symbol2 = Symbol;
       if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp67 = closure_5(guild_id(19106), {});
+        const tmp67 = closure_5(guild_id(19129), {});
         cResult[3] = tmp67;
         tmp65 = tmp67;
       } else {
@@ -509,12 +509,12 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Creator
   const guild_id = highlightedCreatorGuild.guild_id;
   let quote_attribution_title = highlightedCreatorGuild.quote_attribution_title;
   ({ quote, quote_attribution } = highlightedCreatorGuild);
-  const tmp6 = guild_id(19134)(guild_id, 3, 60);
+  const tmp6 = guild_id(19157)(guild_id, 3, 60);
   dependencyMap = tmp6;
   const hasAllImperativeDetails = tmp6.hasAllImperativeDetails;
   let items = [hasAllImperativeDetails, tmp6];
   if (tmp6.isLoading) {
-    const obj2 = { style: tmp.cardContainer, children: closure_5(guild_id(19106), {}) };
+    const obj2 = { style: tmp.cardContainer, children: closure_5(guild_id(19129), {}) };
     return closure_5(View, obj2);
   } else if (hasAllImperativeDetails) {
     const details = tmp6.details;

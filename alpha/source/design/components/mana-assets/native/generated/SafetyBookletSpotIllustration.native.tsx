@@ -1,28 +1,28 @@
-// Module ID: 10913
-// Function ID: 10914
+// Module ID: 10921
+// Function ID: 10922
 // Name: SafetyBookletSpotIllustration
-// Dependencies: [19, 21, 10914, 10915, 10916, 558, 576, 6981, 5655, 2]
+// Dependencies: [19, 21, 10922, 10923, 10924, 558, 576, 6980, 5655, 2]
 
-// Module 10913 (SafetyBookletSpotIllustration)
+// Module 10921 (SafetyBookletSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import react_native from "react-native" /* 6981 */;
-import _modDef10914 from "module_10914" /* 10914 */;
-import _modDef10915 from "module_10915" /* 10915 */;
-import _modDef10916 from "module_10916" /* 10916 */;
+import react_native from "react-native" /* 6980 */;
+import _modDef10922 from "module_10922" /* 10922 */;
+import _modDef10923 from "module_10923" /* 10923 */;
+import _modDef10924 from "module_10924" /* 10924 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef10914 };
+let obj2 = { uri: _modDef10922 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef10915 };
+let obj3 = { uri: _modDef10923 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef10916 };
-({ uri: _modDef10916 });
+obj[3] = { uri: _modDef10924 };
+({ uri: _modDef10924 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyBookletSpotIllustration(arg0) {
   let accessibilityLabel;
   let accessible;

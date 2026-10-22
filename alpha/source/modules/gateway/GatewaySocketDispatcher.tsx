@@ -1,17 +1,17 @@
-// Module ID: 14889
-// Function ID: 14890
+// Module ID: 14903
+// Function ID: 14904
 // Name: GatewaySocketDispatcher
-// Dependencies: [32, 14890, 3, 14891, 14894, 5708, 14895, 14893, 14896, 504, 14897, 2]
+// Dependencies: [32, 14904, 3, 14905, 14908, 5708, 14909, 14907, 14910, 504, 14911, 2]
 
-// Module 14889 (GatewaySocketDispatcher)
+// Module 14903 (GatewaySocketDispatcher)
 import LoggerDefault from "Logger" /* 3 */;
 import TimeUtils from "TimeUtils" /* 5708 */;
-import DispatcherWorkConstants from "DispatcherWorkConstants" /* 14890 */;
-import WorkSchedulerTelemetry from "WorkSchedulerTelemetry" /* 14893 */;
-import GatewaySocketAnalytics from "GatewaySocketAnalytics" /* 14894 */;
-import VoiceServerUpdateImmediateExperiment from "VoiceServerUpdateImmediateExperiment" /* 14895 */;
-import ConnectionStateDefault from "ConnectionState" /* 14896 */;
-import ActionBatcherDefault from "ActionBatcher" /* 14897 */;
+import DispatcherWorkConstants from "DispatcherWorkConstants" /* 14904 */;
+import WorkSchedulerTelemetry from "WorkSchedulerTelemetry" /* 14907 */;
+import GatewaySocketAnalytics from "GatewaySocketAnalytics" /* 14908 */;
+import VoiceServerUpdateImmediateExperiment from "VoiceServerUpdateImmediateExperiment" /* 14909 */;
+import ConnectionStateDefault from "ConnectionState" /* 14910 */;
+import ActionBatcherDefault from "ActionBatcher" /* 14911 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -33,11 +33,11 @@ class GatewaySocketDispatcher {
   constructor(socket) {
     let logger;
     const obj3 = Object.create(new.target.prototype);
-    let obj = obj3(14891);
+    let obj = obj3(14905);
     obj3.scheduler = obj.createDispatcherWorkScheduler();
     obj3.queue = [];
     obj3.paused = true;
-    const obj2 = obj3(14894);
+    const obj2 = obj3(14908);
     obj3.resumeAnalytics = obj2.createResumeAnalytics();
     obj3.getDispatchHandler = null;
     obj3.flush = function flush(arg0) {
@@ -317,7 +317,7 @@ class GatewaySocketDispatcher {
         if (closure_5.length > 0) {
           let telemetry = self.scheduler.telemetry;
           let tmp8 = closure_5;
-          telemetry.measure(tmp21(14893).WorkSchedulerTelemetryMeasurement.COUNT_DISPATCHES_LEFT_AFTER_YIELD, closure_5.length);
+          telemetry.measure(tmp21(14907).WorkSchedulerTelemetryMeasurement.COUNT_DISPATCHES_LEFT_AFTER_YIELD, closure_5.length);
           const queue = self.queue;
           const unshift = queue.unshift;
           let tmp10 = closure_5;
@@ -375,7 +375,7 @@ class GatewaySocketDispatcher {
       if (dispatchHandler != null) {
         dispatchHandler.dispatch(data, type, preloadedData, receivedAt);
       }
-      const tmp16Result = tmp16(14894);
+      const tmp16Result = tmp16(14908);
       const result = tmp16Result.logReadyPayloadReceived(self.socket, data, nowResult, compressionAnalytics, readyPayloadByteSizeAnalytics);
     } else if ("RESUMED" === type) {
       const dispatchHandler1 = self.getDispatchHandler(type);

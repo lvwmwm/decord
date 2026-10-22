@@ -1,9 +1,9 @@
-// Module ID: 14258
-// Function ID: 14259
+// Module ID: 14272
+// Function ID: 14273
 // Name: GroupAvatar
-// Dependencies: [19, 17, 4970, 21, 4969, 587, 558, 576, 4976, 6871, 573, 5038, 5192, 5233, 7061, 5220, 5655, 2]
+// Dependencies: [19, 17, 4970, 21, 4969, 587, 558, 576, 4976, 6870, 573, 5038, 5192, 5233, 7060, 5220, 5655, 2]
 
-// Module 14258 (GroupAvatar)
+// Module 14272 (GroupAvatar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import react3 from "react" /* 576 */;
@@ -11,7 +11,7 @@ import nativeDefault from "native" /* 587 */;
 import timing from "timing" /* 5192 */;
 import spring from "spring" /* 5233 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7061 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7060 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;

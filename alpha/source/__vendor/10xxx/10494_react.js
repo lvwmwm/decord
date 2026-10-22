@@ -1,51 +1,98 @@
 // Module ID: 10494
 // Function ID: 10495
 // Name: react
-// Dependencies: [19]
-// Exports: usePropsErrorBoundary
+// Dependencies: [19, 10495]
+// Exports: useInitProps
 
 // Module 10494 (react)
-import react from "react" /* 19 */;
+import convertToSharedIndex from "convertToSharedIndex" /* 10495 */;
+import react_mod from "react" /* 19 */;
 
-let size;
+let react = react_mod;
 
-
-export const usePropsErrorBoundary = function usePropsErrorBoundary(arg0) {
-  let closure_0 = arg0;
-  const items = [arg0];
-  const effect = react.useEffect(function() {
-    let dataLength;
-    let defaultIndex;
-    size = closure_0;
-    ({ defaultIndex, dataLength } = closure_0);
-    if (typeof defaultIndex === "number") {
-      if (dataLength > 0) {
-        const _Error3 = Error;
-        const self5 = this;
-        const self6 = this;
-        const error = new Error("DefaultIndex must be in the range of data length.");
-        throw error;
-      }
+export const useInitProps = function useInitProps(defaultIndex) {
+  let height;
+  let width;
+  defaultIndex = defaultIndex.defaultIndex;
+  let num = 0;
+  if (undefined !== defaultIndex) {
+    num = defaultIndex;
+  }
+  let data = defaultIndex.data;
+  if (undefined === data) {
+    data = [];
+  }
+  const loop = tmp;
+  const autoPlayInterval = defaultIndex.autoPlayInterval;
+  let num2 = 1000;
+  if (undefined !== autoPlayInterval) {
+    num2 = autoPlayInterval;
+  }
+  const scrollAnimationDuration = defaultIndex.scrollAnimationDuration;
+  let num3 = 500;
+  if (undefined !== scrollAnimationDuration) {
+    num3 = scrollAnimationDuration;
+  }
+  let style = defaultIndex.style;
+  if (undefined === style) {
+    style = {};
+  }
+  const autoFillData = defaultIndex.autoFillData;
+  react = tmp2;
+  const enabled = defaultIndex.enabled;
+  const pagingEnabled = defaultIndex.pagingEnabled;
+  const overscrollEnabled = defaultIndex.overscrollEnabled;
+  let snapEnabled = defaultIndex.snapEnabled;
+  const tmp3 = undefined === enabled || enabled;
+  const tmp4 = undefined === pagingEnabled || pagingEnabled;
+  const tmp5 = undefined === overscrollEnabled || overscrollEnabled;
+  if (undefined === snapEnabled) {
+    let flag = defaultIndex.enableSnap;
+    if (flag == null) {
+      flag = true;
     }
-    if (!size.mode) {
-      if (!size.vertical) {
-        if (!size.width) {
-          const _Error = Error;
-          const self = this;
-          const self2 = this;
-          const error1 = new Error("`width` must be specified for horizontal carousels.");
-          throw error1;
-        }
-      }
-      if (size.vertical) {
-        if (!size.height) {
-          const _Error2 = Error;
-          const self3 = this;
-          const self4 = this;
-          const error2 = new Error("`height` must be specified for vertical carousels.");
-          throw error2;
-        }
-      }
-    }
+    snapEnabled = flag;
+  }
+  ({ width, height } = defaultIndex);
+  const _Math = Math;
+  if (!width) {
+    width = 0;
+  }
+  const _Math2 = Math;
+  const round2 = Math.round;
+  const roundResult = round(width);
+  if (!height) {
+    height = 0;
+  }
+  const items = [data, undefined === loop || loop, undefined === autoFillData || autoFillData];
+  const round2Result = round2(height);
+  const bound = Math.max(num2, 0);
+  const memo = react.useMemo(() => {
+    const obj = convertToSharedIndex;
+    const obj2 = { loop, autoFillData, data, dataLength: data.length };
+    return obj.computedFillDataWithAutoFillData(obj2);
   }, items);
+  let tmp10 = "vertical-stack" !== defaultIndex.mode;
+  const length2 = data.length;
+  if (tmp10) {
+    tmp10 = "horizontal-stack" !== defaultIndex.mode;
+  }
+  if (!tmp10) {
+    if (!defaultIndex.modeConfig) {
+      defaultIndex.modeConfig = {};
+    }
+    const modeConfig2 = defaultIndex.modeConfig;
+    let showLength;
+    const modeConfig = defaultIndex.modeConfig;
+    if (modeConfig2 != null) {
+      showLength = modeConfig2.showLength;
+    }
+    if (showLength == null) {
+      showLength = length - 1;
+    }
+    modeConfig.showLength = showLength;
+  }
+  let obj = { defaultIndex: num, autoFillData: undefined === autoFillData || autoFillData, data: memo, dataLength: memo.length, rawData: data, rawDataLength: length2, loop: undefined === loop || loop, enabled: tmp3, autoPlayInterval: bound, scrollAnimationDuration: num3, style, pagingEnabled: tmp4, snapEnabled, overscrollEnabled: tmp5, width: roundResult, height: round2Result };
+  const merged = Object.assign(defaultIndex);
+  return obj;
 };

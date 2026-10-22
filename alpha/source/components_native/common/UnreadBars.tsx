@@ -1,9 +1,9 @@
-// Module ID: 17697
-// Function ID: 17698
+// Module ID: 17719
+// Function ID: 17720
 // Name: UnreadBars
-// Dependencies: [19, 17, 4970, 1087, 21, 4969, 6637, 587, 4966, 5023, 5198, 5199, 1202, 1128, 558, 576, 504, 13243, 2]
+// Dependencies: [19, 17, 4970, 1087, 21, 4969, 6636, 587, 4966, 5023, 5198, 5199, 1202, 1128, 558, 576, 504, 13259, 2]
 
-// Module 17697 (UnreadBars)
+// Module 17719 (UnreadBars)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -12,13 +12,13 @@ import native from "native" /* 1202 */;
 import native2 from "native" /* 5023 */;
 import HapticUtils from "HapticUtils" /* 5198 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5199 */;
-import TransitionGroup2 from "TransitionGroup" /* 13243 */;
+import TransitionGroup2 from "TransitionGroup" /* 13259 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
-import TextStyles from "TextStyles" /* 6637 */;
+import TextStyles from "TextStyles" /* 6636 */;
 import ColorUtils_mod from "ColorUtils" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -282,7 +282,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadBars
                   tmp20[0] = react.Fragment;
                   const items1 = [tmp11, tmp16];
                   tmp20[1] = items1;
-                  const tmp22 = closure_9(scrollToLocation(13243).TransitionGroup, tmp20);
+                  const tmp22 = closure_9(scrollToLocation(13259).TransitionGroup, tmp20);
                   cResult[18] = tmp11;
                   cResult[19] = tmp16;
                   cResult[20] = tmp22;

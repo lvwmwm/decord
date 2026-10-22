@@ -1,11 +1,11 @@
-// Module ID: 6002
-// Function ID: 6003
+// Module ID: 6001
+// Function ID: 6002
 // Name: CheckpointConstants
-// Dependencies: [6003, 3088, 2]
+// Dependencies: [6002, 3088, 2]
 
-// Module 6002 (CheckpointConstants)
+// Module 6001 (CheckpointConstants)
 import _modDef3088 from "module_3088" /* 3088 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6003 */;
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6002 */;
 import size from "module_2" /* 2 */;
 
 const obj = { [CheckpointTraitRarity.CheckpointTraitRarity.DEFAULT]: "#FFE047", [CheckpointTraitRarity.CheckpointTraitRarity.COMMON]: "#35ED7E", [CheckpointTraitRarity.CheckpointTraitRarity.RARE]: "#EF3054", [CheckpointTraitRarity.CheckpointTraitRarity.EPIC]: "#7D53DE", [CheckpointTraitRarity.CheckpointTraitRarity.ULTRA]: "#FC7A1E" };
@@ -18,6 +18,7 @@ obj2[CheckpointTraitRarity.CheckpointTraitRarity.EPIC] = _modDef3088.hAmdLZ;
 obj2[CheckpointTraitRarity.CheckpointTraitRarity.ULTRA] = _modDef3088.Tv4xyf;
 obj2[CheckpointTraitRarity.CheckpointTraitRarity.NITRO] = _modDef3088["0ModIv"];
 const items = [CheckpointTraitRarity.CheckpointTraitRarity.ULTRA, CheckpointTraitRarity.CheckpointTraitRarity.EPIC, CheckpointTraitRarity.CheckpointTraitRarity.RARE, CheckpointTraitRarity.CheckpointTraitRarity.COMMON, CheckpointTraitRarity.CheckpointTraitRarity.DEFAULT, CheckpointTraitRarity.CheckpointTraitRarity.NITRO];
+const items1 = [CheckpointTraitRarity.CheckpointTraitRarity.DEFAULT, CheckpointTraitRarity.CheckpointTraitRarity.COMMON, CheckpointTraitRarity.CheckpointTraitRarity.RARE, CheckpointTraitRarity.CheckpointTraitRarity.EPIC, CheckpointTraitRarity.CheckpointTraitRarity.ULTRA, CheckpointTraitRarity.CheckpointTraitRarity.NITRO];
 const result = size.fileFinishedImporting("modules/checkpoint/CheckpointConstants.tsx");
 
 export const CheckpointVersions = { V2025: 0, [0]: "V2025", V2026: 1, [1]: "V2026" };
@@ -46,4 +47,5 @@ export const CHECKPOINT_2026_POWER_BAR_MIN_FILLED_UNITS = 1;
 export const CHECKPOINT_2026_POWER_BAR_MAX_FILLED_UNITS = 5;
 export const CHECKPOINT_RARITY_COLORS = obj;
 export const CHECKPOINT_RARITY_LABEL_MESSAGES = obj2;
-export const CHECKPOINT_RARITY_ORDER = items;
+export const CHECKPOINT_RARITY_ORDER_MOBILE = items;
+export const CHECKPOINT_RARITY_ORDER_WEB = items1;

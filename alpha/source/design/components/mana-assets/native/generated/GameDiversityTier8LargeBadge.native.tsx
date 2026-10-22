@@ -1,28 +1,28 @@
-// Module ID: 14296
-// Function ID: 14297
+// Module ID: 14310
+// Function ID: 14311
 // Name: GameDiversityTier8LargeBadge
-// Dependencies: [19, 21, 14297, 14298, 14299, 558, 576, 6981, 5655, 2]
+// Dependencies: [19, 21, 14311, 14312, 14313, 558, 576, 6980, 5655, 2]
 
-// Module 14296 (GameDiversityTier8LargeBadge)
+// Module 14310 (GameDiversityTier8LargeBadge)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import react_native from "react-native" /* 6981 */;
-import _modDef14297 from "module_14297" /* 14297 */;
-import _modDef14298 from "module_14298" /* 14298 */;
-import _modDef14299 from "module_14299" /* 14299 */;
+import react_native from "react-native" /* 6980 */;
+import _modDef14311 from "module_14311" /* 14311 */;
+import _modDef14312 from "module_14312" /* 14312 */;
+import _modDef14313 from "module_14313" /* 14313 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef14297 };
+let obj2 = { uri: _modDef14311 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef14298 };
+let obj3 = { uri: _modDef14312 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef14299 };
-({ uri: _modDef14299 });
+obj[3] = { uri: _modDef14313 };
+({ uri: _modDef14313 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameDiversityTier8LargeBadge(arg0) {
   let accessibilityLabel;
   let accessible;

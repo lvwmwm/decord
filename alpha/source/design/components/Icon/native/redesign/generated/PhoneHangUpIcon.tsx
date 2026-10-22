@@ -1,14 +1,14 @@
-// Module ID: 9692
-// Function ID: 9693
+// Module ID: 9699
+// Function ID: 9700
 // Name: PhoneHangUpIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 9693, 5654, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 9700, 5654, 2]
 
-// Module 9692 (PhoneHangUpIcon)
+// Module 9699 (PhoneHangUpIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5654 */;
-import AssetRegistry from "AssetRegistry" /* 9693 */;
+import AssetRegistry from "AssetRegistry" /* 9700 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

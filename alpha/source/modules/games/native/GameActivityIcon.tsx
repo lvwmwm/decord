@@ -1,9 +1,9 @@
-// Module ID: 14118
-// Function ID: 14119
+// Module ID: 14132
+// Function ID: 14133
 // Name: GameActivityIcon
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5023, 4976, 8058, 5655, 1417, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5023, 4976, 8059, 5655, 1417, 2]
 
-// Module 14118 (GameActivityIcon)
+// Module 14132 (GameActivityIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -19,7 +19,7 @@ let obj2;
 let tmp;
 const AvatarUtils = tmp(1417);
 const shared = tmp(4976);
-const UnknownGameIcon2 = tmp(8058);
+const UnknownGameIcon2 = tmp(8059);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { icon: obj2 };
@@ -149,7 +149,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     } else {
       const obj2 = { size: "custom", style: items1, color: isThemeDarkResult ? colors.WHITE : colors.BLACK };
       items1 = [tmp.icon, size1];
-      const UnknownGameIcon = tmp2(8058).UnknownGameIcon;
+      const UnknownGameIcon = tmp2(8059).UnknownGameIcon;
       const tmp2Result = shared;
       isThemeDarkResult = tmp2Result.isThemeDark(theme);
       colors = nativeDefault.colors;

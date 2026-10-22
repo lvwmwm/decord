@@ -1,14 +1,14 @@
-// Module ID: 8534
-// Function ID: 8535
+// Module ID: 8535
+// Function ID: 8536
 // Name: TextLockIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8513, 5654, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8514, 5654, 2]
 
-// Module 8534 (TextLockIcon)
+// Module 8535 (TextLockIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5654 */;
-import AssetRegistry from "AssetRegistry" /* 8513 */;
+import AssetRegistry from "AssetRegistry" /* 8514 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

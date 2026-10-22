@@ -1,20 +1,20 @@
-// Module ID: 7058
-// Function ID: 7059
+// Module ID: 7057
+// Function ID: 7058
 // Name: JoinServer
-// Dependencies: [19, 17, 7059, 21, 4969, 587, 558, 576, 7060, 1128, 5220, 5579, 1505, 1499, 6993, 5230, 2]
+// Dependencies: [19, 17, 7058, 21, 4969, 587, 558, 576, 7059, 1128, 5220, 5579, 1505, 1499, 6992, 5230, 2]
 
-// Module 7058 (JoinServer)
+// Module 7057 (JoinServer)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl10 from "intl" /* 1128 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5579 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6993 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7060 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6992 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7059 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 7059 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 7058 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

@@ -1,18 +1,18 @@
-// Module ID: 17918
-// Function ID: 17919
+// Module ID: 17940
+// Function ID: 17941
 // Name: StandaloneMembersView
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 9680, 10595, 1505, 1633, 8974, 6910, 1128, 17919, 12702, 12716, 12720, 7081, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 9687, 10602, 1505, 1633, 8981, 6909, 1128, 17941, 12721, 12735, 12739, 7080, 2]
 
-// Module 17918 (StandaloneMembersView)
+// Module 17940 (StandaloneMembersView)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8974 */;
-import useActiveTheme from "useActiveTheme" /* 9680 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10595 */;
-import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 12702 */;
-import KickConfirmDefault from "KickConfirm" /* 12716 */;
-import BanConfirmDefault from "BanConfirm" /* 12720 */;
-import GuildSettingsModalMembersWithTabsDefault from "GuildSettingsModalMembersWithTabs" /* 17919 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8981 */;
+import useActiveTheme from "useActiveTheme" /* 9687 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10602 */;
+import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 12721 */;
+import KickConfirmDefault from "KickConfirm" /* 12735 */;
+import BanConfirmDefault from "BanConfirm" /* 12739 */;
+import GuildSettingsModalMembersWithTabsDefault from "GuildSettingsModalMembersWithTabs" /* 17941 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -155,7 +155,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function StandaloneMe
   }
   dependencyMap = tmp10;
   if (cResult[5] !== navigation) {
-    const tmpResult = tmp(6910);
+    const tmpResult = tmp(6909);
     const headerCloseButton = tmpResult.getHeaderCloseButton(() => navigation.goBack());
     cResult[5] = navigation;
     cResult[6] = headerCloseButton;

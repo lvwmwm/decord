@@ -1,16 +1,16 @@
-// Module ID: 11782
-// Function ID: 11783
+// Module ID: 11794
+// Function ID: 11795
 // Name: SelectComponentActionSheet
-// Dependencies: [19, 17, 4821, 4872, 5252, 21, 4969, 587, 558, 576, 1128, 5230, 7232, 8962, 5025, 6887, 9104, 6889, 5579, 4978, 1633, 1499, 5254, 504, 5196, 7206, 5251, 2]
+// Dependencies: [19, 17, 4821, 4872, 5252, 21, 4969, 587, 558, 576, 1128, 5230, 7233, 8969, 5025, 6886, 9111, 6888, 5579, 4978, 1633, 1499, 5254, 504, 5196, 7205, 5251, 2]
 
-// Module 11782 (SelectComponentActionSheet)
+// Module 11794 (SelectComponentActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react_native2 from "react-native" /* 5025 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
 import ActionSheetConstants from "ActionSheetConstants" /* 5252 */;
-import TableRow2 from "TableRow" /* 6889 */;
+import TableRow2 from "TableRow" /* 6888 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
@@ -296,7 +296,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Select
     return mapped;
   }, items);
   let label;
-  const BottomSheetTitleHeader = renderIcon(7232).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = renderIcon(7233).BottomSheetTitleHeader;
   const tmp3 = closure_10;
   const tmp4 = closure_9;
   if (labelComponent != null) {
@@ -361,7 +361,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Select
             }
       };
       tmp5Result3 = undefined;
-      const tmp13 = selectedOptions(8962);
+      const tmp13 = selectedOptions(8969);
       if (tmp2) {
         if (0 !== memo.length) {
           tmp5Result3 = tmp5(onQueryChange, {});
@@ -682,7 +682,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Select
     trailing: tmp13(tmp14, obj3)
   };
   result = undefined;
-  const TableRow = tmp2(6889).TableRow;
+  const TableRow = tmp2(6888).TableRow;
   if (itemAccessibilityLabel != null) {
     result = itemAccessibilityLabel(item);
   }
@@ -705,7 +705,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Select
   }
   items1 = [renderOptionSuffixResult, ];
   if (clearable) {
-    const FormCheckbox = tmp2(6887).FormCheckbox;
+    const FormCheckbox = tmp2(6886).FormCheckbox;
     if (!selected) {
       selected = false;
     }
@@ -714,7 +714,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Select
   } else {
     tmp8Result2 = null;
     if (true === selected) {
-      tmp8Result2 = tmp8(tmp2(9104).CheckmarkSmallBoldIcon, { color: "text-brand" });
+      tmp8Result2 = tmp8(tmp2(9111).CheckmarkSmallBoldIcon, { color: "text-brand" });
     }
   }
   items1[1] = tmp8Result2;

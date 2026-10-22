@@ -1,9 +1,9 @@
-// Module ID: 12096
-// Function ID: 12097
+// Module ID: 12107
+// Function ID: 12108
 // Name: useOptionAnimations
 // Dependencies: [32, 19, 5192, 558, 576, 5038, 2]
 
-// Module 12096 (useOptionAnimations)
+// Module 12107 (useOptionAnimations)
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
 import timing from "timing" /* 5192 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -123,7 +123,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOptionE
           let obj = { duration: 250, easing: Easing.bezier(0.25, 1.75, 0.25, 1.25) };
           const withTiming = tmp.withTiming;
           Easing = sharedValue(closure_1[5]).Easing;
-          const obj3 = { animations: obj4, initialValues: obj8, callback() { /* body not rendered: F159239 */ } };
+          const obj3 = { animations: obj4, initialValues: obj8, callback() { /* body not rendered: F159495 */ } };
           const withTimingResult = withTiming(1, obj);
           obj4 = { opacity: obj5.withDelay(200, withTimingResult1), transform: items };
           const obj2 = sharedValue(closure_1[2]);
@@ -162,7 +162,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOptionE
           let obj = { duration: 250, easing: Easing.bezier(0.25, 1.75, 0.25, 1.25) };
           const withTiming = tmp.withTiming;
           Easing = sharedValue(closure_1[5]).Easing;
-          const obj3 = { animations: obj4, initialValues: obj8, callback() { /* body not rendered: F159239 */ } };
+          const obj3 = { animations: obj4, initialValues: obj8, callback() { /* body not rendered: F159495 */ } };
           const withTimingResult = withTiming(1, obj);
           obj4 = { opacity: obj5.withDelay(200, withTimingResult1), transform: items };
           const obj2 = sharedValue(closure_1[2]);
@@ -200,7 +200,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOptionE
           let obj = { duration: 250, easing: Easing.bezier(0.25, 1.75, 0.25, 1.25) };
           const withTiming = tmp.withTiming;
           Easing = sharedValue(closure_1[5]).Easing;
-          const obj3 = { animations: obj4, initialValues: obj8, callback() { /* body not rendered: F159239 */ } };
+          const obj3 = { animations: obj4, initialValues: obj8, callback() { /* body not rendered: F159495 */ } };
           const withTimingResult = withTiming(1, obj);
           obj4 = { opacity: obj5.withDelay(200, withTimingResult1), transform: items };
           const obj2 = sharedValue(closure_1[2]);

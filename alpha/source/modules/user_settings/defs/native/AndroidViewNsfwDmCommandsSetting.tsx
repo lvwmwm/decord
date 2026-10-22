@@ -1,21 +1,21 @@
-// Module ID: 16052
-// Function ID: 16053
+// Module ID: 16070
+// Function ID: 16071
 // Name: AndroidViewNsfwDmCommandsSetting
-// Dependencies: [8317, 558, 7300, 576, 6648, 7301, 6640, 1384, 7867, 6643, 4797, 11172, 1128, 2]
+// Dependencies: [8318, 558, 7301, 576, 6647, 7302, 6639, 1384, 7868, 6642, 4797, 11181, 1128, 2]
 
-// Module 16052 (AndroidViewNsfwDmCommandsSetting)
+// Module 16070 (AndroidViewNsfwDmCommandsSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6640 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6643 */;
-import AgeGateUtils from "AgeGateUtils" /* 6648 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7300 */;
-import useNSFWAllowed from "useNSFWAllowed" /* 7301 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7867 */;
-import SettingsConstants from "SettingsConstants" /* 8317 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6639 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6642 */;
+import AgeGateUtils from "AgeGateUtils" /* 6647 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7301 */;
+import useNSFWAllowed from "useNSFWAllowed" /* 7302 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7868 */;
+import SettingsConstants from "SettingsConstants" /* 8318 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11172 */;
+import SettingBuilders from "SettingBuilders" /* 11181 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

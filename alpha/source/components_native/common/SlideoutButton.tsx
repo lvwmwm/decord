@@ -1,15 +1,15 @@
-// Module ID: 9952
-// Function ID: 9953
+// Module ID: 9959
+// Function ID: 9960
 // Name: SlideoutButton
-// Dependencies: [19, 17, 1087, 21, 4969, 4966, 587, 558, 576, 1202, 6894, 2]
+// Dependencies: [19, 17, 1087, 21, 4969, 4966, 587, 558, 576, 1202, 6893, 2]
 
-// Module 9952 (SlideoutButton)
+// Module 9959 (SlideoutButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import native from "native" /* 1202 */;
-import Pressables from "Pressables" /* 6894 */;
+import Pressables from "Pressables" /* 6893 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;

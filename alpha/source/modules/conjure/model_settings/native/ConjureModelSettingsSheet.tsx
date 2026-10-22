@@ -1,23 +1,23 @@
-// Module ID: 11790
-// Function ID: 11791
+// Module ID: 11802
+// Function ID: 11803
 // Name: ConjureModelSettingsSheet
-// Dependencies: [32, 19, 17, 10668, 10682, 21, 558, 576, 504, 10708, 11791, 11714, 1128, 3830, 5220, 5964, 587, 7232, 7282, 2]
+// Dependencies: [32, 19, 17, 10675, 10689, 21, 558, 576, 504, 10715, 11803, 11725, 1128, 3830, 5220, 5963, 587, 7233, 7283, 2]
 
-// Module 11790 (ConjureModelSettingsSheet)
+// Module 11802 (ConjureModelSettingsSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7232 */;
-import ActionSheet2 from "ActionSheet" /* 7282 */;
-import conjureModelSettingsConnection from "conjureModelSettingsConnection" /* 10708 */;
-import ConjureEffortPickerDefault from "ConjureEffortPicker" /* 11714 */;
-import useConjureModelSettingsDraftDefault from "useConjureModelSettingsDraft" /* 11791 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7233 */;
+import ActionSheet2 from "ActionSheet" /* 7283 */;
+import conjureModelSettingsConnection from "conjureModelSettingsConnection" /* 10715 */;
+import ConjureEffortPickerDefault from "ConjureEffortPicker" /* 11725 */;
+import useConjureModelSettingsDraftDefault from "useConjureModelSettingsDraft" /* 11803 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10668 */;
-import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 10682 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10675 */;
+import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 10689 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -190,7 +190,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ModelS
             return tmp23;
           }
           const obj3 = { direction: "vertical", spacing: nativeDefault.space.PX_16, children: items2 };
-          const Stack = tmp(5964).Stack;
+          const Stack = tmp(5963).Stack;
           items2 = [tmp15, tmp20];
           const tmp25 = closure_9(Stack, obj3);
           cResult[16] = tmp15;
@@ -230,7 +230,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ModelS
   [tmp4, tmp5] = useConjureModelSettingsDraftDefault(tierSettings, callback);
   const obj2 = { direction: "vertical", spacing: nativeDefault.space.PX_16, children: items3 };
   _slicedToArray(useConjureModelSettingsDraftDefault(tierSettings, callback), 2);
-  const Stack = projectId(5964).Stack;
+  const Stack = projectId(5963).Stack;
   items3 = [, ];
   const obj3 = { settings: tmp4, tiers: modelSettings.tiers, choices: modelSettings.choices, disabled: tmp, onChange: tmp5 };
   items3[0] = closure_8(ConjureEffortPickerDefault, obj3);
@@ -260,7 +260,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMod
   projectId = projectId.projectId;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: intl.string(_modDef3830["3E7Yc0"]) };
-    const BottomSheetTitleHeader = tmp(7232).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(7233).BottomSheetTitleHeader;
     intl = tmp(1128).intl;
     const tmp7 = metroImportAll(BottomSheetTitleHeader, obj2);
     cResult[0] = tmp7;
@@ -272,7 +272,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMod
     const obj3 = { header: first, children: metroImportAll(View, obj4) };
     obj4 = { children: metroImportAll(closure_10, obj5) };
     obj5 = { projectId };
-    const ActionSheet = tmp(7282).ActionSheet;
+    const ActionSheet = tmp(7283).ActionSheet;
     const tmp12 = metroImportAll(ActionSheet, obj3);
     cResult[1] = projectId;
     cResult[2] = tmp12;

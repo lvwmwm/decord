@@ -1,24 +1,24 @@
-// Module ID: 15912
-// Function ID: 15913
+// Module ID: 15930
+// Function ID: 15931
 // Name: SettingSearchBar
-// Dependencies: [19, 17, 15900, 21, 4969, 587, 558, 576, 1896, 15906, 7131, 2]
+// Dependencies: [19, 17, 15918, 21, 4969, 587, 558, 576, 1896, 15924, 7130, 2]
 
-// Module 15912 (SettingSearchBar)
+// Module 15930 (SettingSearchBar)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1896 */;
-import settings_tracking_Tracking from "settings/tracking/Tracking" /* 15906 */;
+import settings_tracking_Tracking from "settings/tracking/Tracking" /* 15924 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 15900 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 15918 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const SearchField2 = tmp(7131);
+const SearchBar2 = tmp(7130);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { container: obj2 };
@@ -27,7 +27,7 @@ let closure_6 = createStyles.createStyles(obj);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingSearchBar() {
   let first;
   let tmp10;
-  let tmp13;
+  let tmp14;
   let tmp7;
   let tmp8;
   let tmp9;
@@ -67,61 +67,32 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingSea
     tmp8 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class F {
-      constructor(query) {
-        const obj = { query };
-        UserSettingSearchStore.setState(obj);
-      }
-    }
-    cResult[3] = F;
-    tmp9 = F;
+    const fn4 = function v(query) {
+      const obj = { query };
+      UserSettingSearchStore.setState(obj);
+    };
+    cResult[3] = fn4;
+    tmp9 = fn4;
   } else {
-    class F {
-      constructor(query) {
-        const obj = { query };
-        UserSettingSearchStore.setState(obj);
-      }
-    }
+    tmp9 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class F {
-      constructor(query) {
-        const obj = { query };
-        UserSettingSearchStore.setState(obj);
-      }
-    }
-    const SearchField = SearchField2.SearchField;
-    const tmp12 = <SearchField ref={ref} testID="user_settings_search_input" size="md" onFocus={tmp7} onBlur={tmp8} onClear={first} defaultValue={UserSettingSearchStore.getField("query")} onChange={tmp9} />;
-    cResult[4] = tmp12;
-    tmp10 = tmp12;
+    const SearchBar = SearchBar2.SearchBar;
+    const tmp13 = <SearchBar ref={ref} testID="user_settings_search_input" size="md" onFocus={tmp7} onBlur={tmp8} onClear={first} defaultValue={UserSettingSearchStore.getField("query")} onChange={tmp9} />;
+    cResult[4] = tmp13;
+    tmp10 = tmp13;
   } else {
-    class F {
-      constructor(query) {
-        const obj = { query };
-        UserSettingSearchStore.setState(obj);
-      }
-    }
+    tmp10 = cResult[4];
   }
   if (cResult[5] !== tmp4.container) {
-    class F {
-      constructor(query) {
-        const obj = { query };
-        UserSettingSearchStore.setState(obj);
-      }
-    }
-    const tmp15 = <View style={tmp4.container}>{tmp10}</View>;
+    const tmp17 = <View style={tmp4.container}>{tmp10}</View>;
     cResult[5] = tmp4.container;
-    cResult[6] = tmp15;
-    tmp13 = tmp15;
+    cResult[6] = tmp17;
+    tmp14 = tmp17;
   } else {
-    class F {
-      constructor(query) {
-        const obj = { query };
-        UserSettingSearchStore.setState(obj);
-      }
-    }
+    tmp14 = cResult[6];
   }
-  return tmp13;
+  return tmp14;
 }) : (function SettingSearchBar() {
   const tmp = closure_6();
   const ref = react.useRef(null);
@@ -143,7 +114,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingSea
     UserSettingSearchStore.setState(obj);
   }, []);
   ({ ref, testID: "user_settings_search_input", size: "md", onFocus: callback1, onBlur: callback2, onClear: callback, defaultValue: UserSettingSearchStore.getField("query"), onChange: callback3 });
-  const SearchField = SearchField2.SearchField;
+  const SearchBar = SearchBar2.SearchBar;
   return <View style={tmp.container}>{null}</View>;
 });
 let result = size.fileFinishedImporting("modules/settings/native/search/SettingSearchBar.tsx");

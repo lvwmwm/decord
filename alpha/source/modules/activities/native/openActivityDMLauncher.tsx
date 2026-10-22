@@ -1,18 +1,18 @@
-// Module ID: 15171
-// Function ID: 15172
+// Module ID: 15184
+// Function ID: 15185
 // Name: openActivityDMLauncher
-// Dependencies: [5, 1504, 6795, 7395, 14131, 11979, 7262, 5620, 5145, 1631, 2]
+// Dependencies: [5, 1504, 14145, 11315, 7263, 5620, 6794, 7396, 5145, 1631, 2]
 // Exports: default
 
-// Module 15171 (openActivityDMLauncher)
+// Module 15184 (openActivityDMLauncher)
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
-let application, channelId, closure_6;
+let application, closure_5;
 
 let obj = function _openActivityDMLauncher() {
-  obj = _asyncToGenerator(async (targetApplicationId, referrerId, arg2, arg3) => {
+  obj = _asyncToGenerator(async (applicationId, referrerId, arg2, arg3) => {
     let closure_2 = arg2;
     let closure_3 = arg3;
     let closure_4 = arg4;
@@ -20,10 +20,10 @@ let obj = function _openActivityDMLauncher() {
     let c8 = 0;
     const iter = (async (arg0, value, arg2, arg3) => {
       let items;
-      let obj13;
-      let obj17;
-      let obj6;
-      let obj9;
+      let obj12;
+      let obj18;
+      let obj3;
+      let tmp58Result;
       if (c8 === 2) {
         c8 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -38,8 +38,8 @@ let obj = function _openActivityDMLauncher() {
       } else {
         try {
           let flag;
-          let id;
           let customId;
+          let id;
           c8 = 2;
           if (0 === c7) {
             if (arg0 === 1) {
@@ -49,16 +49,15 @@ let obj = function _openActivityDMLauncher() {
               c8 = 3;
               return { value, done: true };
             } else {
-              closure_6 = tmp;
-              application = tmp4;
+              application = tmp;
+              closure_5 = tmp4;
               flag = closure_4;
               if (closure_4 === undefined) {
                 flag = false;
               }
+              customId = undefined;
               application = undefined;
               id = undefined;
-              channelId = undefined;
-              customId = undefined;
               c7 = 1;
               c8 = 1;
               return { value: "Reflect", done: true };
@@ -73,12 +72,39 @@ let obj = function _openActivityDMLauncher() {
             } else {
               c7 = 2;
               c8 = 1;
-              const obj7 = { value: obj13.fetchApplication(targetApplicationId), done: false };
-              obj13 = closure_134_1(closure_134_2[2]);
-              return obj7;
+              const obj6 = { value: obj12.getCustomActivityLinkParams(applicationId, closure_3, closure_2), done: false };
+              obj12 = closure_134_0(closure_134_2[2]);
+              return obj6;
+            }
+          } else if (2 === c7) {
+            if (arg0 === 1) {
+              c8 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c8 = 3;
+              return { value, done: true };
+            } else {
+              customId = value.customId;
+              if (flag) {
+                c7 = 3;
+                c8 = 1;
+                const obj8 = { value: tmp58Result.fetchApplication(applicationId), done: false };
+                tmp58Result = closure_134_1(closure_134_2[6]);
+                return obj8;
+              } else {
+                const obj9 = { applicationId, fromLink: true, customId, referrerId, analyticsLocations: items, commandOrigin: closure_134_0(closure_134_2[5]).CommandOrigin.ACTIVITY_BOOKMARK_EMBED };
+                const launch = closure_134_1(closure_134_2[3]).launch;
+                items = [];
+                closure_134_1(closure_134_2[3]);
+                items[0] = closure_134_1(closure_134_2[4]).ACTIVITY_BOOKMARK;
+                c7 = 4;
+                c8 = 1;
+                const obj10 = { value: launch(obj9), done: false };
+                return obj10;
+              }
             }
           } else {
-            if (2 === c7) {
+            if (3 === c7) {
               if (arg0 === 1) {
                 c8 = 3;
                 throw value;
@@ -92,31 +118,14 @@ let obj = function _openActivityDMLauncher() {
                 if (bot != null) {
                   id = bot.id;
                 }
-                if (null != application) {
-                  if (null != id) {
-                    c7 = 3;
-                    c8 = 1;
-                    const obj10 = { recipientIds: id };
-                    const obj11 = { value: obj9.openPrivateChannel(obj10), done: false };
-                    obj9 = closure_134_1(closure_134_2[3]);
-                    return obj11;
-                  }
+                if (null != id) {
+                  c7 = 5;
+                  c8 = 1;
+                  const obj13 = { recipientIds: id };
+                  const obj14 = { value: obj3.openPrivateChannel(obj13), done: false };
+                  obj3 = closure_134_1(closure_134_2[7]);
+                  return obj14;
                 }
-              }
-            } else if (3 === c7) {
-              if (arg0 === 1) {
-                c8 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c8 = 3;
-                return { value, done: true };
-              } else {
-                channelId = value;
-                c7 = 4;
-                c8 = 1;
-                const obj14 = { value: obj6.getCustomActivityLinkParams(targetApplicationId, closure_3, closure_2), done: false };
-                obj6 = closure_134_0(closure_134_2[4]);
-                return obj14;
               }
             } else if (4 === c7) {
               if (arg0 === 1) {
@@ -125,28 +134,6 @@ let obj = function _openActivityDMLauncher() {
               } else if (arg0 === 2) {
                 c8 = 3;
                 return { value, done: true };
-              } else {
-                customId = value.customId;
-                const tmp54 = flag;
-                if (tmp54) {
-                  const obj4 = closure_134_0(closure_134_2[8]);
-                  const bestActiveInput = obj4.getBestActiveInput();
-                  if (bestActiveInput != null) {
-                    const openCustomKeyboard = bestActiveInput.openCustomKeyboard;
-                    const obj16 = { type: closure_134_0(closure_134_2[9]).KeyboardTypes.APP_LAUNCHER, context: obj17 };
-                    obj17 = { application, initialRouteName: closure_134_4.APPLICATION_VIEW, customId, referrerId };
-                    openCustomKeyboard(obj16);
-                  }
-                } else {
-                  const obj18 = { targetApplicationId, locationObject: {}, channelId, analyticsLocations: items, commandOrigin: closure_134_0(closure_134_2[7]).CommandOrigin.ACTIVITY_BOOKMARK_EMBED, referrerId, customId };
-                  items = [];
-                  const tmp9 = closure_134_1(closure_134_2[5]);
-                  items[0] = closure_134_1(closure_134_2[6]).ACTIVITY_BOOKMARK;
-                  c7 = 5;
-                  c8 = 1;
-                  const obj19 = { value: tmp9(obj18), done: false };
-                  return obj19;
-                }
               }
             } else if (arg0 === 1) {
               c8 = 3;
@@ -154,13 +141,22 @@ let obj = function _openActivityDMLauncher() {
             } else if (arg0 === 2) {
               c8 = 3;
               return { value, done: true };
+            } else {
+              const obj17 = closure_134_0(closure_134_2[8]);
+              const bestActiveInput = obj17.getBestActiveInput();
+              if (bestActiveInput != null) {
+                const openCustomKeyboard = bestActiveInput.openCustomKeyboard;
+                const obj16 = { type: closure_134_0(closure_134_2[9]).KeyboardTypes.APP_LAUNCHER, context: obj18 };
+                obj18 = { application, initialRouteName: closure_134_4.APPLICATION_VIEW, customId, referrerId };
+                openCustomKeyboard(obj16);
+              }
             }
             c8 = 3;
             return { value: "IconComponent", done: null };
           }
-        } catch (tmp49) {
+        } catch (tmp33) {
           c8 = 3;
-          throw tmp49;
+          throw tmp33;
         }
       }
     })();

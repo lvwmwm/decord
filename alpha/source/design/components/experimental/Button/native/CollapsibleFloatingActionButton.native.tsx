@@ -1,16 +1,16 @@
-// Module ID: 8887
-// Function ID: 8888
+// Module ID: 8894
+// Function ID: 8895
 // Name: CollapsibleFloatingActionButton
-// Dependencies: [109, 19, 21, 5236, 4969, 558, 576, 5038, 5233, 5234, 5231, 8888, 587, 2]
+// Dependencies: [109, 19, 21, 5236, 4969, 558, 576, 5038, 5233, 5234, 5231, 8895, 587, 2]
 
-// Module 8887 (CollapsibleFloatingActionButton)
+// Module 8894 (CollapsibleFloatingActionButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
 import spring from "spring" /* 5233 */;
 import springPresets from "springPresets" /* 5234 */;
-import FloatingActionButton from "FloatingActionButton" /* 8888 */;
+import FloatingActionButton from "FloatingActionButton" /* 8895 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ButtonConstants from "ButtonConstants" /* 5236 */;
@@ -201,10 +201,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollapsibleF
     tmp13 = tmp14;
   }
   if (DEFAULT_POSITION_OFFSET2 == null) {
-    DEFAULT_POSITION_OFFSET2 = tmp(8888).DEFAULT_POSITION_OFFSET;
+    DEFAULT_POSITION_OFFSET2 = tmp(8895).DEFAULT_POSITION_OFFSET;
   }
   if (DEFAULT_POSITION_OFFSET == null) {
-    DEFAULT_POSITION_OFFSET = tmp(8888).DEFAULT_POSITION_OFFSET;
+    DEFAULT_POSITION_OFFSET = tmp(8895).DEFAULT_POSITION_OFFSET;
   }
   if (cResult[10] === DEFAULT_POSITION_OFFSET2) {
     let tmp19;
@@ -297,11 +297,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollapsibleF
   }
   const items = [styles.button, ];
   if (positionRight == null) {
-    positionRight = tmp3(8888).DEFAULT_POSITION_OFFSET;
+    positionRight = tmp3(8895).DEFAULT_POSITION_OFFSET;
   }
   const rect = { position: "absolute", right: positionRight, bottom: positionBottom };
   if (positionBottom == null) {
-    positionBottom = tmp3(8888).DEFAULT_POSITION_OFFSET;
+    positionBottom = tmp3(8895).DEFAULT_POSITION_OFFSET;
   }
   items[1] = rect;
   if (null != state) {

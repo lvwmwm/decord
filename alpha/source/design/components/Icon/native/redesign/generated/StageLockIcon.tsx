@@ -1,14 +1,14 @@
-// Module ID: 8552
-// Function ID: 8553
+// Module ID: 8553
+// Function ID: 8554
 // Name: StageLockIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8502, 5654, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8503, 5654, 2]
 
-// Module 8552 (StageLockIcon)
+// Module 8553 (StageLockIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5654 */;
-import AssetRegistry from "AssetRegistry" /* 8502 */;
+import AssetRegistry from "AssetRegistry" /* 8503 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

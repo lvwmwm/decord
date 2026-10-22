@@ -1,9 +1,9 @@
-// Module ID: 6693
-// Function ID: 6694
+// Module ID: 6692
+// Function ID: 6693
 // Name: LegacyTokens
 // Dependencies: [17, 4969, 4976, 587, 4966, 2]
 
-// Module 6693 (LegacyTokens)
+// Module 6692 (LegacyTokens)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import shared from "shared" /* 4976 */;

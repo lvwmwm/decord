@@ -1,13 +1,13 @@
-// Module ID: 16720
-// Function ID: 16721
+// Module ID: 16742
+// Function ID: 16743
 // Name: EmbedAndLinkPreviewsSetting
-// Dependencies: [8317, 11172, 1128, 4797, 2]
+// Dependencies: [8318, 11181, 1128, 4797, 2]
 
-// Module 16720 (EmbedAndLinkPreviewsSetting)
+// Module 16742 (EmbedAndLinkPreviewsSetting)
 import intl2 from "intl" /* 1128 */;
 import UserSettings from "UserSettings" /* 4797 */;
-import SettingsConstants from "SettingsConstants" /* 8317 */;
-import SettingBuilders from "SettingBuilders" /* 11172 */;
+import SettingsConstants from "SettingsConstants" /* 8318 */;
+import SettingBuilders from "SettingBuilders" /* 11181 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

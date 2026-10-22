@@ -1,18 +1,18 @@
-// Module ID: 17849
-// Function ID: 17850
+// Module ID: 17871
+// Function ID: 17872
 // Name: useReplyActions
-// Dependencies: [5, 19, 4821, 7615, 1392, 1395, 4974, 504, 8598, 9634, 7395, 17850, 5018, 7739, 7550, 17848, 5196, 5649, 1128, 16099, 8809, 9795, 5211, 17850, 2002, 2]
+// Dependencies: [5, 19, 4821, 7616, 1392, 1395, 4974, 504, 8599, 9641, 7396, 17872, 5018, 7740, 7551, 17870, 5196, 5649, 1128, 16117, 8816, 9802, 5211, 17872, 2002, 2]
 // Exports: useReplyActions
 
-// Module 17849 (useReplyActions)
+// Module 17871 (useReplyActions)
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import MessageConstants from "MessageConstants" /* 4974 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import DraftStore from "DraftStore" /* 7615 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8598 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8809 */;
-import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9795 */;
+import DraftStore from "DraftStore" /* 7616 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8599 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8816 */;
+import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9802 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
@@ -255,7 +255,7 @@ export const useReplyActions = function useReplyActions(cResult) {
             obj2.feedItemActioned(obj3);
             const obj5 = { content, author: tmp, sendMessage, onPressEmoji: callback1 };
             const obj4 = ActionSheetActionCreatorsDefault;
-            obj4.openLazy(asyncRequire(17850, tmp10.paths), "ReactActionSheet", obj5);
+            obj4.openLazy(asyncRequire(17872, tmp10.paths), "ReactActionSheet", obj5);
           }
         }, items6),
       openEmojiPicker: callback2

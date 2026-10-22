@@ -1,8 +1,8 @@
-// Module ID: 6053
-// Function ID: 6054
+// Module ID: 6052
+// Function ID: 6053
 // Dependencies: [2]
 
-// Module 6053
+// Module 6052
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/base/liquid.png.js");

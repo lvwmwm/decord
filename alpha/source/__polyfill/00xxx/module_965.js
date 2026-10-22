@@ -120,7 +120,7 @@ function makeReplayDebugLogger() {
   }
   return obj;
 }
-const f86398 = (item) => {
+const f86496 = (item) => {
   mirror = mirror.mirror;
   return mirror.getId(item);
 };
@@ -3167,7 +3167,7 @@ function initInputObserver(sampling) {
       HermesBuiltin.arraySpread(items7, items1.map((item) => {
         let tmp;
         let tmp2;
-        const f86338 = () => {
+        const f86436 = () => {
           let ownPropertyDescriptor;
           const tmp3 = ownPropertyDescriptor || {};
           closure_0 = tmp;
@@ -3177,7 +3177,7 @@ function initInputObserver(sampling) {
           ownPropertyDescriptor = _Object.getOwnPropertyDescriptor(tmp, tmp2);
           const _Object2 = window.Object;
           _Object2.defineProperty(closure_0, closure_1, tmp3);
-          return f86338;
+          return f86436;
         };
         [tmp, tmp2] = item;
         obj = {
@@ -3238,7 +3238,7 @@ function initInputObserver(sampling) {
           }
         };
         _Object2.defineProperty(tmp, tmp2, obj2);
-        return f86338;
+        return f86436;
       }), 0);
       const tmp8 = mapped;
       HermesBuiltin.apply(push, items7, mapped);
@@ -3427,7 +3427,7 @@ function initObservers(doc) {
     ({ mousemoveCb: closure_0, sampling, doc, mirror: closure_1 } = doc);
     closure_2 = undefined;
     closure_3 = undefined;
-    let f86336;
+    let f86434;
     items = undefined;
     if (false === sampling.mousemove) {
       return () => {
@@ -3468,7 +3468,7 @@ function initObservers(doc) {
         closure_2 = {};
         let c3 = null;
         let c4 = 0;
-        f86336 = function() {
+        f86434 = function() {
           function clearTimeout$2() {
             items = [...arguments];
             const tmp = closure_1_71("clearTimeout");
@@ -6177,7 +6177,7 @@ function getLargestContentfulPaint(arg0) {
   mapped = undefined;
   obj.browserPerformanceTimeOrigin() || _mod693.GLOBAL_OBJ.performance.timeOrigin;
   if (tmp3) {
-    mapped = tmp3.map(f86398);
+    mapped = tmp3.map(f86496);
   }
   return obj2;
 }
@@ -6239,7 +6239,7 @@ function getInteractionToNextPaint(arg0) {
   mapped = undefined;
   obj.browserPerformanceTimeOrigin() || _mod693.GLOBAL_OBJ.performance.timeOrigin;
   if (tmp3) {
-    mapped = tmp3.map(f86398);
+    mapped = tmp3.map(f86496);
   }
   return obj2;
 }
@@ -6255,7 +6255,7 @@ function getWebVital(value, name, items1, items) {
   mapped = undefined;
   obj.browserPerformanceTimeOrigin() || _mod693.GLOBAL_OBJ.performance.timeOrigin;
   if (items1) {
-    mapped = items1.map(f86398);
+    mapped = items1.map(f86496);
   }
   return obj2;
 }
@@ -9359,7 +9359,7 @@ let closure_82 = (() => {
                     } while (-2 === id1);
                     if (-1 !== id) {
                       if (-1 !== id1) {
-                        let obj3 = { doc: null, mirror: null, blockClass: null, blockSelector: null, maskAllText: null, unblockSelector: null, maskTextClass: null, unmaskTextClass: null, maskTextSelector: null, unmaskTextSelector: null, skipChild: true, newlyAddedElement: true, inlineStylesheet: null, maskInputOptions: null, maskAttributeFn: null, maskTextFn: null, maskInputFn: null, slimDOMOptions: null, dataURLOptions: null, recordCanvas: null, inlineImages: null, onSerialize() { /* body not rendered: F160969 */ }, onIframeLoad() { /* body not rendered: F160970 */ }, onStylesheetLoad() { /* body not rendered: F160971 */ }, onBlockedImageLoad() { /* body not rendered: F160972 */ }, ignoreCSSAttributes: self.ignoreCSSAttributes };
+                        let obj3 = { doc: null, mirror: null, blockClass: null, blockSelector: null, maskAllText: null, unblockSelector: null, maskTextClass: null, unmaskTextClass: null, maskTextSelector: null, unmaskTextSelector: null, skipChild: true, newlyAddedElement: true, inlineStylesheet: null, maskInputOptions: null, maskAttributeFn: null, maskTextFn: null, maskInputFn: null, slimDOMOptions: null, dataURLOptions: null, recordCanvas: null, inlineImages: null, onSerialize() { /* body not rendered: F161229 */ }, onIframeLoad() { /* body not rendered: F161230 */ }, onStylesheetLoad() { /* body not rendered: F161231 */ }, onBlockedImageLoad() { /* body not rendered: F161232 */ }, ignoreCSSAttributes: self.ignoreCSSAttributes };
                         ({ doc: obj2.doc, mirror: obj2.mirror, blockClass: obj2.blockClass, blockSelector: obj2.blockSelector, maskAllText: obj2.maskAllText, unblockSelector: obj2.unblockSelector, maskTextClass: obj2.maskTextClass, unmaskTextClass: obj2.unmaskTextClass, maskTextSelector: obj2.maskTextSelector, unmaskTextSelector: obj2.unmaskTextSelector, inlineStylesheet: obj2.inlineStylesheet, maskInputOptions: obj2.maskInputOptions, maskAttributeFn: obj2.maskAttributeFn, maskTextFn: obj2.maskTextFn, maskInputFn: obj2.maskInputFn, slimDOMOptions: obj2.slimDOMOptions, dataURLOptions: obj2.dataURLOptions, recordCanvas: obj2.recordCanvas, inlineImages: obj2.inlineImages } = self);
                         const tmp25 = closure_3_58(value, obj3);
                         if (tmp25) {
@@ -9719,7 +9719,7 @@ let closure_82 = (() => {
                 let addedSet2;
                 let id1;
                 let tmp28;
-                const f86342 = () => { /* body not rendered: F86342 */ };
+                const f86440 = () => { /* body not rendered: F86440 */ };
                 const mirror = self.mirror;
                 const id = mirror.getId(childNodes);
                 target = target.target;
@@ -9755,7 +9755,7 @@ let closure_82 = (() => {
                     addedSet2.delete(childNodes);
                     childNodes = childNodes.childNodes;
                     if (childNodes != null) {
-                      let item = childNodes.forEach(f86342);
+                      let item = childNodes.forEach(f86440);
                     }
                     const droppedSet = tmp.droppedSet;
                     droppedSet.add(childNodes);
@@ -9839,7 +9839,7 @@ let closure_82 = (() => {
                             movedSet2.delete(childNodes);
                             const childNodes1 = childNodes.childNodes;
                             if (childNodes1 != null) {
-                              const item1 = childNodes1.forEach(f86342);
+                              const item1 = childNodes1.forEach(f86440);
                             }
                           }
                         } else {
@@ -10997,14 +10997,14 @@ try {
           });
         }
         const arr = closure_111.push(fn);
-        const f86392 = () => {
+        const f86490 = () => {
 
         };
         this._teardown = () => {
-          if (typeof f86392 === "function") {
+          if (typeof f86490 === "function") {
             let num2 = -1;
             if (closure_1_111) {
-              num2 = arr.indexOf(f86392);
+              num2 = arr.indexOf(f86490);
             }
             if (num2 > -1) {
               closure_1_111.splice(num2, 1);
@@ -12063,14 +12063,14 @@ try {
         const debounce = tmp4.debounce;
         let merged = Object.assign(obj2);
         this._debouncedFlush = debounce(() => self._flush(), flushMinDelay, obj3);
-        const f140736 = (timestamp, arg1) => {
+        const f140950 = (timestamp, arg1) => {
           let resolved;
           let flag = false;
-          if (f140736.eventBuffer) {
+          if (f140950.eventBuffer) {
             flag = false;
-            if (!f140736.isPaused()) {
+            if (!f140950.isPaused()) {
               flag = false;
-              if (f140736.isEnabled()) {
+              if (f140950.isEnabled()) {
                 timestamp = timestamp.timestamp;
                 let result = timestamp;
                 if (timestamp <= 9999999999) {
@@ -13765,7 +13765,7 @@ try {
           }
         }
         function setupPerformanceObserver(self) {
-          const f86397 = (metric) => {
+          const f86495 = (metric) => {
             const prop = closure_1.replayPerformanceEntries;
             prop.push(closure_0(metric.metric));
           };
@@ -13792,14 +13792,14 @@ try {
           let push = items.push;
           obj = performanceEntries(addPerformanceEntry[9]);
           performanceEntries = closure_125;
-          const result = obj.addLcpInstrumentationHandler(f86397);
+          const result = obj.addLcpInstrumentationHandler(f86495);
           const obj2 = performanceEntries(addPerformanceEntry[9]);
           performanceEntries = closure_127;
-          const result1 = obj2.addClsInstrumentationHandler(f86397);
+          const result1 = obj2.addClsInstrumentationHandler(f86495);
           const obj3 = performanceEntries(addPerformanceEntry[9]);
           performanceEntries = closure_128;
           closure_1 = self;
-          push(result, result1, obj3.addInpInstrumentationHandler(f86397));
+          push(result, result1, obj3.addInpInstrumentationHandler(f86495));
           return () => {
             const item = items.forEach((fn) => fn());
           };
@@ -14422,7 +14422,7 @@ try {
         let maskFn;
         let onError;
         let workerUrl;
-        const f86427 = (item) => item.toLowerCase();
+        const f86525 = (item) => item.toLowerCase();
         obj = arg0;
         if (arg0 === undefined) {
           obj = {};
@@ -14590,8 +14590,8 @@ try {
         const merged = Object.assign(obj2);
         this._recordingOptions = obj3;
         obj4 = { flushMinDelay: num, flushMaxDelay: num2, minReplayDuration: Math.min(num3, 50000), maxReplayDuration: Math.min(num4, c15), stickySession: flag, useCompression: flag2, workerUrl, blockAllMedia: flag5, maskAllInputs: flag4, maskAllText: flag3, mutationBreadcrumbLimit: num5, mutationLimit: num6, slowClickTimeout: num7, slowClickIgnoreSelectors: prop, networkDetailAllowUrls: prop1, networkDetailDenyUrls: prop2, networkCaptureBodies: flag6, networkRequestHeaders: items5, networkResponseHeaders: items6, beforeAddRecordingEvent, beforeErrorSampling, onError, attachRawBodyFromRequest, _experiments };
-        items5 = [...closure_180, ...prop3.map(f86427)];
-        items6 = [...closure_180, ...prop4.map(f86427)];
+        items5 = [...closure_180, ...prop3.map(f86525)];
+        items6 = [...closure_180, ...prop4.map(f86525)];
         this._initialOptions = obj4;
         if (this._initialOptions.blockAllMedia) {
           let combined;

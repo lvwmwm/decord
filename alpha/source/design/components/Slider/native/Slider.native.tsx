@@ -1,14 +1,14 @@
-// Module ID: 15232
-// Function ID: 15233
+// Module ID: 15245
+// Function ID: 15246
 // Name: Slider
-// Dependencies: [109, 19, 17, 21, 4969, 587, 558, 576, 5198, 5199, 8742, 2]
+// Dependencies: [109, 19, 17, 21, 4969, 587, 558, 576, 5198, 5199, 8749, 2]
 
-// Module 15232 (Slider)
+// Module 15245 (Slider)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import HapticUtils from "HapticUtils" /* 5198 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5199 */;
-import _modDef8742 from "module_8742" /* 8742 */;
+import _modDef8749 from "module_8749" /* 8749 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -141,7 +141,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Slider(step)
           }
         }
         const obj4 = { style: tmp18, step: tmp7, onValueChange: tmp13, minimumTrackTintColor: tmp12.minimumTrackTintColor.backgroundColor, maximumTrackTintColor: tmp12.maximumTrackTintColor.backgroundColor, tapToSeek: true };
-        const tmp22 = _modDef8742;
+        const tmp22 = _modDef8749;
         const merged = Object.assign(tmp5);
         const tmp26 = closure_7(tmp22, obj4);
         cResult[16] = tmp13;
@@ -213,7 +213,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Slider(step)
   }
   items1 = [tmp6, , ];
   const obj3 = { style: items2, step, onValueChange: callback, minimumTrackTintColor: tmp2.minimumTrackTintColor.backgroundColor, maximumTrackTintColor: tmp2.maximumTrackTintColor.backgroundColor, tapToSeek: true };
-  const tmp9 = step(8742);
+  const tmp9 = step(8749);
   const merged1 = Object.assign(merged);
   items2 = [tmp2.slider, style];
   items1[1] = closure_7(tmp9, obj3);

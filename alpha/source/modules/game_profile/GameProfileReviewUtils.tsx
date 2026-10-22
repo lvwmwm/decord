@@ -1,15 +1,15 @@
-// Module ID: 9290
-// Function ID: 9291
+// Module ID: 9297
+// Function ID: 9298
 // Name: GameProfileReviewUtils
-// Dependencies: [1128, 9214, 9291, 2042, 9244, 2]
+// Dependencies: [1128, 9221, 9298, 2042, 9251, 2]
 // Exports: canShowOpenCriticReview, getMobileStoreReviews, getSteamReviewScoreDescriptionColor, getSteamReviewScoreDescriptionIntl
 
-// Module 9290 (GameProfileReviewUtils)
+// Module 9297 (GameProfileReviewUtils)
 import intl11 from "intl" /* 1128 */;
 import GameDetectionTypes from "GameDetectionTypes" /* 2042 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9214 */;
-import SteamReleaseStatus from "SteamReleaseStatus" /* 9244 */;
-import GameProfileMobileStoreLinkUtils from "GameProfileMobileStoreLinkUtils" /* 9291 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9221 */;
+import SteamReleaseStatus from "SteamReleaseStatus" /* 9251 */;
+import GameProfileMobileStoreLinkUtils from "GameProfileMobileStoreLinkUtils" /* 9298 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

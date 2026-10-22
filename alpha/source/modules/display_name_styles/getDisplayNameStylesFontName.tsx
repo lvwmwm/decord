@@ -1,10 +1,10 @@
-// Module ID: 15803
-// Function ID: 15804
+// Module ID: 15815
+// Function ID: 15816
 // Name: getDisplayNameStylesFontName
 // Dependencies: [1412, 2928, 2]
 // Exports: default
 
-// Module 15803 (getDisplayNameStylesFontName)
+// Module 15815 (getDisplayNameStylesFontName)
 import DisplayNameFont from "DisplayNameFont" /* 1412 */;
 import _modDef2928 from "module_2928" /* 2928 */;
 import size from "module_2" /* 2 */;

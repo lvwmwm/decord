@@ -1,15 +1,15 @@
-// Module ID: 18073
-// Function ID: 18074
+// Module ID: 18095
+// Function ID: 18096
 // Name: SearchTabsTransitionGroup
-// Dependencies: [19, 21, 558, 576, 4797, 11792, 5038, 5023, 5233, 5234, 13254, 2]
+// Dependencies: [19, 21, 558, 576, 4797, 11804, 5038, 5023, 5233, 5234, 13268, 2]
 
-// Module 18073 (SearchTabsTransitionGroup)
+// Module 18095 (SearchTabsTransitionGroup)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
 import spring from "spring" /* 5233 */;
 import springPresets from "springPresets" /* 5234 */;
-import Tabs2 from "Tabs" /* 11792 */;
+import Tabs2 from "Tabs" /* 11804 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

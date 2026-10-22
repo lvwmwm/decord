@@ -1,31 +1,55 @@
 // Module ID: 10266
 // Function ID: 10267
-// Dependencies: []
-// Exports: parseYear
+// Dependencies: [41, 42, 10262, 10193]
 
 // Module 10266
+import findMostLikelyADYear from "findMostLikelyADYear" /* 10193 */;
+import NUMBER from "NUMBER" /* 10262 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
-export const parseYear = function parseYear(match) {
-  if (match.match(/^[0-9]{1,4}$/)) {
-    const _parseInt3 = parseInt;
-    const parsed = parseInt(match);
-    let sum = parsed;
-    if (parsed < 100) {
-      let num3 = 2000;
-      if (parsed > 50) {
-        num3 = 1900;
-      }
-      sum = parsed + num3;
-    }
-    return sum;
-  } else if (match.match(/a\.?\s*c\.?/i)) {
-    const _parseInt2 = parseInt;
-    return -parseInt(match.replace(/a\.?\s*c\.?/i, ""));
-  } else {
-    const _parseInt = parseInt;
-    return parseInt(match);
+const regExp = new RegExp("([0-9\uFF10-\uFF19]{4}[\\/|\\\uFF0F])?([0-1\uFF10-\uFF11]{0,1}[0-9\uFF10-\uFF19]{1})(?:[\\/|\\\uFF0F]([0-3\uFF10-\uFF13]{0,1}[0-9\uFF10-\uFF19]{1}))", "i");
+class JPSlashDateFormatParser {
+  constructor() {
+    _classCallCheck(this, JPSlashDateFormatParser);
+  }
+}
+const entry = {
+  key: "pattern",
+  value: function pattern() {
+    return regExp;
   }
 };
-export const WEEKDAY_DICTIONARY = { domingo: 0, dom: 0, segunda: 1, "segunda-feira": 1, seg: 1, "ter\u00e7a": 2, "ter\u00e7a-feira": 2, ter: 2, quarta: 3, "quarta-feira": 3, qua: 3, quinta: 4, "quinta-feira": 4, qui: 4, sexta: 5, "sexta-feira": 5, sex: 5, "s\u00e1bado": 6, sabado: 6, sab: 6 };
-export const MONTH_DICTIONARY = { janeiro: 1, jan: 1, "jan.": 1, fevereiro: 2, fev: 2, "fev.": 2, "mar\u00e7o": 3, mar: 3, "mar.": 3, abril: 4, abr: 4, "abr.": 4, maio: 5, mai: 5, "mai.": 5, junho: 6, jun: 6, "jun.": 6, julho: 7, jul: 7, "jul.": 7, agosto: 8, ago: 8, "ago.": 8, setembro: 9, set: 9, "set.": 9, outubro: 10, out: 10, "out.": 10, novembro: 11, nov: 11, "nov.": 11, dezembro: 12, dez: 12, "dez.": 12 };
-export const YEAR_PATTERN = "[0-9]{1,4}(?![^\\s]\\d)(?:\\s*[a|d]\\.?\\s*c\\.?|\\s*a\\.?\\s*d\\.?)?";
+const items = [
+  entry,
+  {
+    key: "extract",
+    value: function extract(createParsingComponents, arg1) {
+      const parsingComponents = createParsingComponents.createParsingComponents();
+      const parsed = parseInt(NUMBER.toHankaku(arg1[2]));
+      const parsed1 = parseInt(NUMBER.toHankaku(arg1[3]));
+      if (parsed >= 1) {
+        if (parsed <= 12) {
+          if (parsed1 >= 1) {
+            if (parsed1 <= 31) {
+              parsingComponents.assign("day", parsed1);
+              parsingComponents.assign("month", parsed);
+              if (arg1[1]) {
+                const _parseInt = parseInt;
+                const parsed2 = parseInt(tmp(10262).toHankaku(arg1[1]));
+                parsingComponents.assign("year", findMostLikelyADYear.findMostLikelyADYear(parsed2));
+              } else {
+                parsingComponents.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingComponents.reference.instant, parsed1, parsed));
+              }
+              return parsingComponents;
+            }
+          }
+          return null;
+        }
+      }
+      return null;
+    }
+  }
+];
+
+export default _createClass(JPSlashDateFormatParser, items);

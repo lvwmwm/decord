@@ -1,17 +1,17 @@
-// Module ID: 8828
-// Function ID: 8829
+// Module ID: 8835
+// Function ID: 8836
 // Name: MaskedLinkUtils
-// Dependencies: [8829, 4821, 4843, 8830, 5997, 4911, 4872, 1087, 1951, 5895, 1128, 1267, 8831, 6807, 8832, 8833, 5642, 14137, 14141, 5972, 14142, 14144, 2]
+// Dependencies: [8836, 4821, 4843, 8837, 5996, 4911, 4872, 1087, 1951, 5894, 1128, 1267, 8838, 6806, 8839, 8840, 5642, 14151, 14155, 5971, 14156, 14158, 2]
 // Exports: handleClick, isLinkTrusted
 
-// Module 8828 (MaskedLinkUtils)
+// Module 8835 (MaskedLinkUtils)
 import openURLDefault from "openURL" /* 5642 */;
-import LinkAnalyticsUtilsDefault from "LinkAnalyticsUtils" /* 8832 */;
-import BlockedDomainStore from "BlockedDomainStore" /* 8829 */;
+import LinkAnalyticsUtilsDefault from "LinkAnalyticsUtils" /* 8839 */;
+import BlockedDomainStore from "BlockedDomainStore" /* 8836 */;
 import ChannelStore_mod from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import MaskedLinkStore from "MaskedLinkStore" /* 8830 */;
-import MessageStore from "MessageStore" /* 5997 */;
+import MaskedLinkStore from "MaskedLinkStore" /* 8837 */;
+import MessageStore from "MessageStore" /* 5996 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
 import Constants from "Constants" /* 1087 */;
@@ -80,8 +80,8 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
       preventDefault.preventDefault();
     }
     let obj2 = { title: intl.string(require("intl").t.x87gan), body: intl2.format(require("intl").t["9rqRwl"], obj3), isDismissable: true, contextKey };
-    const show3 = tmp(5895).show;
-    tmp(5895);
+    const show3 = tmp(5894).show;
+    tmp(5894);
     intl = require("intl").intl;
     intl2 = require("intl").intl;
     obj3 = { url: href.href };
@@ -228,13 +228,13 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
         obj4 = require("MaskedLinkStoreMethodsAdditional");
         track(URL_CLICKED, obj5);
       }
-      if (tmp(6807)(channelId)) {
+      if (tmp(6806)(channelId)) {
         const obj6 = { cta_type: "inline_link", target: tmp6 };
         const tmpResult9 = tmp(1267);
         tmpResult9.track(constants2.CHANGE_LOG_CTA_CLICKED, obj6);
       }
     }
-    const tmpResult10 = tmp(8832);
+    const tmpResult10 = tmp(8839);
     tmpResult10.trackLinkClicked(tmp6);
     if (null == onClick) {
       const obj7 = { skipExtensionCheck: "a", analyticsLocations: items, messageId, channelId };
@@ -244,7 +244,7 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
       if (preventDefault != null) {
         preventDefault.preventDefault();
       }
-      const tmpResult11 = tmp(14137);
+      const tmpResult11 = tmp(14151);
       tmpResult11.show(tmp6);
       onCancel();
     } else {
@@ -277,8 +277,8 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
         }
         if (!("http:" === protocol || "https:" === protocol)) {
           const obj8 = { url: tmp6, trustUrl: require("MaskedLinkActionCreators").trustProtocol, onConfirm: handleConfirm, onCancel, isProtocol: true, contextKey };
-          const show2 = tmp(14142).show;
-          tmp(14142);
+          const show2 = tmp(14156).show;
+          tmp(14156);
           show2(obj8);
         } else {
           const tmp52Result = require("MarkupLinkRule");
@@ -288,8 +288,8 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
             displayTarget = punycodeLinkResult.displayTarget;
           }
           const obj10 = { url: displayTarget, trustUrl: require("MaskedLinkActionCreators").trustDomain, onConfirm: handleConfirm, onCancel, isProtocol: false, contextKey };
-          const show = tmp(14142).show;
-          tmp(14142);
+          const show = tmp(14156).show;
+          tmp(14156);
           show(obj10);
         }
       }
@@ -297,7 +297,7 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
         handleConfirm();
       } else if (flag2) {
         const obj11 = { messageId: tmp11, channelId, guildId: tmp12, sourceChannelId: tmp10, sourceGuildId: tmp9 };
-        const tmpResult14 = tmp(8832);
+        const tmpResult14 = tmp(8839);
         let result = tmpResult14.trackAnnouncementMessageLinkClicked(obj11);
       }
     }

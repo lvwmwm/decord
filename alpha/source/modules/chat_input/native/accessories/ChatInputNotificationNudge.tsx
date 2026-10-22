@@ -1,23 +1,23 @@
-// Module ID: 13228
-// Function ID: 13229
+// Module ID: 13244
+// Function ID: 13245
 // Name: ChatInputNotificationNudge
-// Dependencies: [32, 19, 17, 4903, 6690, 13229, 1087, 4818, 13230, 21, 4969, 587, 558, 576, 1267, 13231, 13232, 10839, 5220, 1128, 6894, 6917, 504, 12079, 13240, 7480, 4805, 2]
+// Dependencies: [32, 19, 17, 4903, 6689, 13245, 1087, 4818, 13246, 21, 4969, 587, 558, 576, 1267, 13247, 13248, 10847, 5220, 1128, 6893, 6916, 504, 12090, 13256, 7481, 4805, 2]
 
-// Module 13228 (ChatInputNotificationNudge)
+// Module 13244 (ChatInputNotificationNudge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
-import useIsAppDMDefault from "useIsAppDM" /* 12079 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13229 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13231 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13232 */;
+import useIsAppDMDefault from "useIsAppDM" /* 12090 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13245 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13247 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13248 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4903 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6690 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6689 */;
 import Constants from "Constants" /* 1087 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13230 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13246 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -37,7 +37,7 @@ let hasOwnProperty;
 let map1;
 let tmp9;
 let unpackModuleId;
-const PostReactionPermissionNudgeExperimentDefault = tmp9(13240);
+const PostReactionPermissionNudgeExperimentDefault = tmp9(13256);
 ({ useCallback: closure_4, useEffect: hasOwnProperty } = react);
 const View = react_native.View;
 const PermissionPromptType = PushNotificationPermissionStore.PermissionPromptType;
@@ -366,7 +366,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputNot
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
   const tmp10 = !stateFromStores && !useIsAppDMDefault(channel);
-  const tmpResult5 = tmp(13231);
+  const tmpResult5 = tmp(13247);
   const shouldShowPushNotificationNudgeByPromptType = tmpResult5.useShouldShowPushNotificationNudgeByPromptType(PermissionPromptType.CHANNEL_BANNER);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { location: "ChatInputNotificationNudge" };
@@ -377,7 +377,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputNot
   }
   const tmp9Result = PostReactionPermissionNudgeExperimentDefault;
   const enabled = tmp9Result.useConfig(tmp13).enabled;
-  const tmpResult6 = tmp(13231);
+  const tmpResult6 = tmp(13247);
   const shouldShowPushNotificationNudgeByPromptType1 = tmpResult6.useShouldShowPushNotificationNudgeByPromptType(tmp11.POST_REACTION_BANNER);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { cooldownDurationMs };
@@ -387,8 +387,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputNot
     tmp15 = cResult[4];
   }
   let prop = null;
-  const useSelectedTimeRecurringDismissibleContent = tmp(7480).useSelectedTimeRecurringDismissibleContent;
-  tmp(7480);
+  const useSelectedTimeRecurringDismissibleContent = tmp(7481).useSelectedTimeRecurringDismissibleContent;
+  tmp(7481);
   if (tmp10) {
     prop = null;
     if (shouldShowPushNotificationNudgeByPromptType) {
@@ -407,8 +407,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputNot
     tmp23 = cResult[5];
   }
   let prop1 = null;
-  const useSelectedTimeRecurringDismissibleContent2 = tmp(7480).useSelectedTimeRecurringDismissibleContent;
-  tmp(7480);
+  const useSelectedTimeRecurringDismissibleContent2 = tmp(7481).useSelectedTimeRecurringDismissibleContent;
+  tmp(7481);
   if (tmp10) {
     prop1 = null;
     if (enabled) {
@@ -574,15 +574,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputNot
     return isMutedResult;
   });
   const tmp5 = !stateFromStores && !useIsAppDMDefault(channel);
-  const tmpResult = tmp(13231);
+  const tmpResult = tmp(13247);
   const shouldShowPushNotificationNudgeByPromptType = tmpResult.useShouldShowPushNotificationNudgeByPromptType(PermissionPromptType.CHANNEL_BANNER);
   const tmp4Result = PostReactionPermissionNudgeExperimentDefault;
   const enabled = tmp4Result.useConfig({ location: "ChatInputNotificationNudge" }).enabled;
-  const tmpResult4 = tmp(13231);
+  const tmpResult4 = tmp(13247);
   const shouldShowPushNotificationNudgeByPromptType1 = tmpResult4.useShouldShowPushNotificationNudgeByPromptType(PermissionPromptType.POST_REACTION_BANNER);
   let prop = null;
-  const useSelectedTimeRecurringDismissibleContent = tmp(7480).useSelectedTimeRecurringDismissibleContent;
-  tmp(7480);
+  const useSelectedTimeRecurringDismissibleContent = tmp(7481).useSelectedTimeRecurringDismissibleContent;
+  tmp(7481);
   if (tmp5) {
     prop = null;
     if (shouldShowPushNotificationNudgeByPromptType) {
@@ -594,8 +594,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputNot
   importDefault = tmp15;
   _slicedToArray(useSelectedTimeRecurringDismissibleContent(prop, obj2, undefined, true), 2);
   let prop1 = null;
-  const useSelectedTimeRecurringDismissibleContent2 = tmp(7480).useSelectedTimeRecurringDismissibleContent;
-  tmp(7480);
+  const useSelectedTimeRecurringDismissibleContent2 = tmp(7481).useSelectedTimeRecurringDismissibleContent;
+  tmp(7481);
   const tmp11 = cooldownDurationMs;
   const tmp12 = _slicedToArray;
   if (tmp5) {

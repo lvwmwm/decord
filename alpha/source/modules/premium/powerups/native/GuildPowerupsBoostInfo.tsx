@@ -1,17 +1,17 @@
-// Module ID: 13398
-// Function ID: 13399
+// Module ID: 13412
+// Function ID: 13413
 // Name: GuildPowerupsBoostInfo
-// Dependencies: [17, 5168, 21, 4969, 587, 558, 576, 7061, 13399, 9778, 5220, 2]
+// Dependencies: [17, 5168, 21, 4969, 587, 558, 576, 7060, 13413, 9785, 5220, 2]
 
-// Module 13398 (GuildPowerupsBoostInfo)
+// Module 13412 (GuildPowerupsBoostInfo)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5168 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7061 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 9778 */;
-import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 13399 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7060 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 9785 */;
+import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 13413 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

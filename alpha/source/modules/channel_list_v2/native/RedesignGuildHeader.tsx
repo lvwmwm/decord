@@ -1,9 +1,9 @@
-// Module ID: 17457
-// Function ID: 17458
+// Module ID: 17479
+// Function ID: 17480
 // Name: RedesignGuildHeader
-// Dependencies: [19, 17, 4970, 5197, 12003, 1087, 21, 558, 576, 9679, 5191, 4976, 5239, 17458, 4846, 17428, 11023, 5238, 587, 5236, 12014, 4969, 5038, 10595, 5039, 17459, 1499, 504, 1506, 5233, 5234, 15090, 1417, 5655, 17503, 2]
+// Dependencies: [19, 17, 4970, 5197, 12014, 1087, 21, 558, 576, 9686, 5191, 4976, 5239, 17480, 4846, 17450, 11032, 5238, 587, 5236, 12025, 4969, 5038, 10602, 5039, 17481, 1499, 504, 1506, 5233, 5234, 15103, 1417, 5655, 17525, 2]
 
-// Module 17457 (RedesignGuildHeader)
+// Module 17479 (RedesignGuildHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -16,19 +16,19 @@ import spring from "spring" /* 5233 */;
 import springPresets from "springPresets" /* 5234 */;
 import useToken from "useToken" /* 5238 */;
 import useFontScale from "useFontScale" /* 5239 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9679 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10595 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11023 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12014 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 15090 */;
-import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 17428 */;
-import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 17458 */;
-import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 17459 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9686 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10602 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11032 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12025 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 15103 */;
+import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 17450 */;
+import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 17480 */;
+import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 17481 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
 import ActionSheetStore from "ActionSheetStore" /* 5197 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12003 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12014 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -319,12 +319,13 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildI
   let tmp15;
   let tmp7;
   let tmp9;
+  const tmp2 = dependencyMap;
   let obj = react2;
   const cResult = obj.c(20);
   ({ guild, scrollPosition } = bannerHeight);
   bannerHeight = bannerHeight.bannerHeight;
   const tmp4 = closure_19();
-  const obj2 = ReanimatedRexport;
+  let obj2 = ReanimatedRexport;
   const fn = function t() {
     let items;
     const obj = { transform: items };
@@ -336,6 +337,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildI
   fn.__workletHash = 6302330113586;
   fn.__initData = __initData;
   const animatedStyle = obj2.useAnimatedStyle(fn);
+  let obj3 = ReanimatedRexport;
   const fn2 = function l() {
     let items;
     const obj = { transform: items };
@@ -346,7 +348,6 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildI
   fn2.__closure = { scrollPosition, bannerHeight };
   fn2.__workletHash = 16710117141903;
   fn2.__initData = __initData2;
-  const obj3 = ReanimatedRexport;
   const animatedStyle1 = obj3.useAnimatedStyle(fn2);
   if (cResult[0] !== guild.id) {
     const tmpResult = FavoritesUtils;
@@ -358,7 +359,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildI
     tmp7 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { overflow: "hidden" };
+    let obj4 = { overflow: "hidden" };
     cResult[2] = obj4;
     tmp9 = obj4;
   } else {

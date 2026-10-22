@@ -1,18 +1,18 @@
-// Module ID: 14848
-// Function ID: 14849
+// Module ID: 14862
+// Function ID: 14863
 // Name: GuildBoostingMarketingTopPerksCards
-// Dependencies: [19, 17, 4970, 21, 4969, 587, 1128, 5655, 14849, 5214, 14850, 14851, 558, 576, 5220, 13413, 2]
+// Dependencies: [19, 17, 4970, 21, 4969, 587, 1128, 5655, 14863, 5214, 14864, 14865, 558, 576, 5220, 13427, 2]
 
-// Module 14848 (GuildBoostingMarketingTopPerksCards)
+// Module 14862 (GuildBoostingMarketingTopPerksCards)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import LottieAnimationViewDefault from "LottieAnimationView" /* 5214 */;
 import Text_Text from "Text/Text" /* 5220 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14849 */;
-import _mod14850 from "module_14850" /* 14850 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14851 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14863 */;
+import _mod14864 from "module_14864" /* 14864 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14865 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
 import Fragment from "Fragment" /* 21 */;
@@ -62,7 +62,7 @@ let items = [
       return intl.string(intl2.t.wOYbTv);
     },
     getGraphic(style) {
-      const obj = { source: _mod14850, autoPlay: !AccessibilityStore.useReducedMotion, style };
+      const obj = { source: _mod14864, autoPlay: !AccessibilityStore.useReducedMotion, style };
       const tmp = LottieAnimationViewDefault;
       return hasOwnProperty(tmp, obj);
     }
@@ -145,7 +145,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoost
             tmp17 = tmp20;
           }
           const obj4 = { itemCount: items.length, cardWidth: 324, cardMarginRight: 16, contentContainerStyle: tmp10, children: tmp11 };
-          const tmp16 = closure_5(tmp(13413).MarketingCardsScroller, obj4);
+          const tmp16 = closure_5(tmp(13427).MarketingCardsScroller, obj4);
           cResult[9] = tmp4.scrollerContent;
           cResult[10] = tmp11;
           cResult[11] = tmp16;

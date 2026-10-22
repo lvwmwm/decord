@@ -1,10 +1,10 @@
-// Module ID: 10731
-// Function ID: 10732
+// Module ID: 10738
+// Function ID: 10739
 // Name: conjurePreviewControlLease
 // Dependencies: [19, 558, 576, 2]
 // Exports: acquireConjureControlLease, beginConjureControlOperation, endConjureControlOperation, getConjureControlActiveProjectIds, isConjureControlActive, releaseConjureControlLeases, setConjureControlTuning, subscribeConjureControlReleased
 
-// Module 10731 (conjurePreviewControlLease)
+// Module 10738 (conjurePreviewControlLease)
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

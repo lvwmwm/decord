@@ -1,9 +1,9 @@
-// Module ID: 16365
-// Function ID: 16366
+// Module ID: 16388
+// Function ID: 16389
 // Name: QuestModalContentCloudBackground
-// Dependencies: [19, 17, 21, 4969, 558, 576, 5191, 4991, 5244, 16366, 16367, 5655, 2]
+// Dependencies: [19, 17, 21, 4969, 558, 576, 5191, 4991, 5244, 16389, 16390, 5655, 2]
 
-// Module 16365 (QuestModalContentCloudBackground)
+// Module 16388 (QuestModalContentCloudBackground)
 import react2 from "react" /* 576 */;
 import themes from "themes" /* 4991 */;
 import useTheme from "useTheme" /* 5191 */;
@@ -31,11 +31,11 @@ let closure_7 = createStyles.createStyles((arg0) => {
   const obj = { height: 380, zIndex: 1 };
   const merged = Object.assign(absoluteFillObject.absoluteFillObject);
   const obj2 = { wrapper: obj, cloudsImage: obj3, cloudsImageLight: obj5, gradient: obj6, solidBackground: obj7 };
-  const tmp3 = arg0 ? { top: "Array" } : { bottom: "Array" };
+  const tmp3 = arg0 ? { top: "r" } : { bottom: "r" };
   const merged1 = Object.assign(tmp3);
   obj3 = { width: "100%" };
   const merged2 = Object.assign(tmp.absoluteFillObject);
-  const tmp6 = arg0 ? { top: "Array" } : { bottom: "Array" };
+  const tmp6 = arg0 ? { top: "r" } : { bottom: "r" };
   const merged3 = Object.assign(tmp6);
   if (arg0) {
     obj4 = {};
@@ -103,7 +103,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestModalCo
             if (cResult[11] === tmp14) {
               tmp15 = cResult[12];
             }
-            const tmp16Result = importDefault(tmp6 ? 16366 : 16367);
+            const tmp16Result = importDefault(tmp6 ? 16389 : 16390);
             if (cResult[13] === str2) {
               if (cResult[14] === tmp15) {
                 let tmp18;
@@ -200,7 +200,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestModalCo
     tmp9 = tmp7;
   }
   items1 = [tmp7Result, ];
-  const obj5 = { style: items2, source: importDefault(isThemeDarkResult ? 16366 : 16367), resizeMode: str2 };
+  const obj5 = { style: items2, source: importDefault(isThemeDarkResult ? 16389 : 16390), resizeMode: str2 };
   items2 = [isThemeDarkResult ? tmp.cloudsImage : tmp.cloudsImageLight, imgStyle];
   const tmp12 = FastImageDefault;
   items1[1] = tmp9(tmp12, obj5);

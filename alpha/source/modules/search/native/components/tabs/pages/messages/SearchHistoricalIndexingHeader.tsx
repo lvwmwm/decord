@@ -1,14 +1,14 @@
-// Module ID: 18057
-// Function ID: 18058
+// Module ID: 18079
+// Function ID: 18080
 // Name: SearchHistoricalIndexingHeader
-// Dependencies: [19, 2068, 9684, 21, 4969, 558, 576, 13163, 1128, 5220, 6891, 2]
+// Dependencies: [19, 2068, 9691, 21, 4969, 558, 576, 13179, 1128, 5220, 6890, 2]
 
-// Module 18057 (SearchHistoricalIndexingHeader)
+// Module 18079 (SearchHistoricalIndexingHeader)
 import Fragment from "Fragment" /* 21 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13163 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13179 */;
 import react_mod from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
-import SearchConstants from "SearchConstants" /* 9684 */;
+import SearchConstants from "SearchConstants" /* 9691 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -82,7 +82,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Historical
         }
         return tmp19;
       }
-      const tmp21 = jsx(searchContext(6891).Card, { variant: "primary", border: "subtle", style: tmp13, children: tmp16 });
+      const tmp21 = jsx(searchContext(6890).Card, { variant: "primary", border: "subtle", style: tmp13, children: tmp16 });
       cResult[13] = tmp13;
       cResult[14] = tmp16;
       cResult[15] = tmp21;

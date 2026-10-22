@@ -1,17 +1,17 @@
-// Module ID: 8912
-// Function ID: 8913
+// Module ID: 8919
+// Function ID: 8920
 // Name: useManageResourcePermissions
-// Dependencies: [32, 19, 4901, 1392, 8911, 1098, 1099, 558, 576, 4835, 504, 2]
+// Dependencies: [32, 19, 4901, 1392, 8918, 1098, 1099, 558, 576, 4835, 504, 2]
 // Exports: attachChannelPermissions, getManageResourcePermissions
 
-// Module 8912 (useManageResourcePermissions)
+// Module 8919 (useManageResourcePermissions)
 import Constants from "Constants" /* 1098 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
 import UserStore_mod from "UserStore" /* 1392 */;
-import PermissionsConstants from "PermissionsConstants" /* 8911 */;
+import PermissionsConstants from "PermissionsConstants" /* 8918 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

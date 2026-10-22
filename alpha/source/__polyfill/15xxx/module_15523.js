@@ -1,7 +1,9 @@
 // Module ID: 15523
 // Function ID: 15524
-// Dependencies: []
+// Dependencies: [15509]
 
 // Module 15523
+import _mod15509 from "module_15509" /* 15509 */;
 
-export default (arg0, value) => ({ enumerable: !(1 & arg0), configurable: !(2 & arg0), writable: !(4 & arg0), value });
+
+export default (arg0) => Object(_mod15509(arg0));

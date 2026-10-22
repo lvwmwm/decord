@@ -1,23 +1,23 @@
-// Module ID: 10986
-// Function ID: 10987
+// Module ID: 10994
+// Function ID: 10995
 // Name: ChatBanner
-// Dependencies: [19, 17, 6482, 6757, 10987, 1087, 21, 4969, 587, 558, 576, 10988, 10989, 11, 504, 1267, 5697, 7195, 1128, 5220, 5230, 8272, 7353, 6894, 7192, 10990, 2]
+// Dependencies: [19, 17, 6481, 6756, 10995, 1087, 21, 4969, 587, 558, 576, 10996, 10997, 11, 504, 1267, 5697, 7194, 1128, 5220, 5230, 8273, 7354, 6893, 7191, 10998, 2]
 
-// Module 10986 (ChatBanner)
+// Module 10994 (ChatBanner)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5697 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7192 */;
-import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7195 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8272 */;
-import ChatOverlayConstants from "ChatOverlayConstants" /* 10987 */;
-import useShowChannelOptInNoticeDefault from "useShowChannelOptInNotice" /* 10988 */;
-import useAllowedChatOverlaysDefault from "useAllowedChatOverlays" /* 10989 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7191 */;
+import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7194 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8273 */;
+import ChatOverlayConstants from "ChatOverlayConstants" /* 10995 */;
+import useShowChannelOptInNoticeDefault from "useShowChannelOptInNotice" /* 10996 */;
+import useAllowedChatOverlaysDefault from "useAllowedChatOverlays" /* 10997 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6482 */;
-import ReadStateStore from "ReadStateStore" /* 6757 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6481 */;
+import ReadStateStore from "ReadStateStore" /* 6756 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -470,7 +470,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Archiv
   } else {
     tmp8 = cResult[4];
   }
-  const tmpResult = tmp(7353);
+  const tmpResult = tmp(7354);
   const canUnarchiveThread = tmpResult.useCanUnarchiveThread(channel);
   if (cResult[5] !== channel) {
     let stringResult;
@@ -559,7 +559,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Archiv
     const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
     track(CHANNEL_BANNER_VIEWED, obj);
   }, items);
-  let obj = channel(7353);
+  let obj = channel(7354);
   let canUnarchiveThread = obj.useCanUnarchiveThread(channel);
   let obj2 = { style: tmp.threadBannerContainer, children: items1 };
   let obj3 = { lineClamp: 4, style: tmp.threadBannerTitle, variant: "text-sm/medium", color: "text-default", children: stringResult };
@@ -660,7 +660,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Locked
   } else {
     tmp8 = cResult[4];
   }
-  const tmpResult = tmp(7353);
+  const tmpResult = tmp(7354);
   const isThreadModerator = tmpResult.useIsThreadModerator(channel);
   if (cResult[5] !== channel) {
     let stringResult;
@@ -749,7 +749,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Locked
     const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
     track(CHANNEL_BANNER_VIEWED, obj);
   }, items);
-  let obj = channel(7353);
+  let obj = channel(7354);
   let isThreadModerator = obj.useIsThreadModerator(channel);
   let obj2 = { style: tmp.threadBannerContainer, children: items1 };
   let obj3 = { lineClamp: 4, style: tmp.threadBannerTitle, variant: "text-sm/medium", color: "text-default", children: stringResult };
@@ -893,7 +893,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewMes
                   }
                 }
                 const obj3 = { size: "sm", color: nativeDefault.colors.WHITE };
-                const XSmallBoldIcon = tmp(10990).XSmallBoldIcon;
+                const XSmallBoldIcon = tmp(10998).XSmallBoldIcon;
                 const tmp25 = closure_12(XSmallBoldIcon, obj3);
                 cResult[16] = tmp25;
                 tmp23 = tmp25;
@@ -934,12 +934,12 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewMes
               const obj5 = { style: newMessageBarCloseButton, accessibilityRole: "button", accessibilityLabel: tmp20, onPress: tmp22, children: tmp23 };
               cResult[17] = tmp4.newMessageBarCloseButton;
               cResult[18] = tmp22;
-              cResult[19] = closure_12(channel(6894).PressableOpacity, obj5);
-              const tmp28 = closure_12(channel(6894).PressableOpacity, obj5);
+              cResult[19] = closure_12(channel(6893).PressableOpacity, obj5);
+              const tmp28 = closure_12(channel(6893).PressableOpacity, obj5);
             }
           }
           const obj6 = { accessibilityRole: "button", style: tmp11, onPress: handleScrollToNewMessages, children: tmp14 };
-          const tmp19 = closure_12(channel(6894).PressableOpacity, obj6);
+          const tmp19 = closure_12(channel(6893).PressableOpacity, obj6);
           cResult[9] = handleScrollToNewMessages;
           cResult[10] = tmp4.newMessageBarTextContainer;
           cResult[11] = tmp14;
@@ -993,7 +993,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewMes
       let obj2 = { style: tmp.newMessageBar, children: items1 };
       const obj3 = { accessibilityRole: "button", style: tmp.newMessageBarTextContainer, onPress: handleScrollToNewMessages, children: closure_12(Text, obj4) };
       const tmp8 = isEstimatedResult ? t.wvtbbG : t["BctFH/"];
-      const PressableOpacity = tmp2(6894).PressableOpacity;
+      const PressableOpacity = tmp2(6893).PressableOpacity;
       obj4 = { variant: "text-sm/semibold", color: "text-overlay-light", children: intl.format(tmp8, obj5) };
       Text = tmp2(5220).Text;
       intl = tmp2(1128).intl;
@@ -1010,10 +1010,10 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewMes
             },
         children: closure_12(XSmallBoldIcon, obj7)
       };
-      const PressableOpacity2 = tmp2(6894).PressableOpacity;
+      const PressableOpacity2 = tmp2(6893).PressableOpacity;
       intl2 = tmp2(1128).intl;
       obj7 = { size: "sm", color: nativeDefault.colors.WHITE };
-      XSmallBoldIcon = tmp2(10990).XSmallBoldIcon;
+      XSmallBoldIcon = tmp2(10998).XSmallBoldIcon;
       items1[1] = closure_12(PressableOpacity2, obj6);
       tmp5 = closure_13(closure_4, obj2);
     }

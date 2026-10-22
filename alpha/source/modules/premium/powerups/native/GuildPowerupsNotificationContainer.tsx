@@ -1,16 +1,16 @@
-// Module ID: 13400
-// Function ID: 13401
+// Module ID: 13414
+// Function ID: 13415
 // Name: GuildPowerupsNotificationContainer
-// Dependencies: [17, 21, 4969, 587, 558, 576, 7061, 5220, 13401, 13402, 1128, 2568, 13405, 2]
+// Dependencies: [17, 21, 4969, 587, 558, 576, 7060, 5220, 13415, 13416, 1128, 2568, 13419, 2]
 
-// Module 13400 (GuildPowerupsNotificationContainer)
+// Module 13414 (GuildPowerupsNotificationContainer)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef2568 from "module_2568" /* 2568 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7061 */;
-import useGuildPowerupTier3OverrideConfigDefault from "useGuildPowerupTier3OverrideConfig" /* 13401 */;
-import useGuildPowerupExpiringNotificationsConfigDefault from "useGuildPowerupExpiringNotificationsConfig" /* 13402 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7060 */;
+import useGuildPowerupTier3OverrideConfigDefault from "useGuildPowerupTier3OverrideConfig" /* 13415 */;
+import useGuildPowerupExpiringNotificationsConfigDefault from "useGuildPowerupExpiringNotificationsConfig" /* 13416 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -159,7 +159,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
       if (shouldShow2) {
         const obj5 = { guildId, powerupNames: null, warnings: null };
         ({ expiringPowerupNames: obj4.powerupNames, warnings: obj4.warnings } = tmp7);
-        shouldShow2 = React3(tmp5(13405), obj5);
+        shouldShow2 = React3(tmp5(13419), obj5);
       }
       cResult[7] = tmp7.expiringPowerupNames;
       cResult[8] = tmp7.shouldShow;
@@ -220,7 +220,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
     if (shouldShow2) {
       const obj9 = { guildId, powerupNames: null, warnings: null };
       ({ expiringPowerupNames: obj5.powerupNames, warnings: obj5.warnings } = tmp5);
-      shouldShow2 = tmp11(tmp2(13405), obj9);
+      shouldShow2 = tmp11(tmp2(13419), obj9);
     }
     items[2] = shouldShow2;
     tmp9Result = tmp9(tmp10, obj2);

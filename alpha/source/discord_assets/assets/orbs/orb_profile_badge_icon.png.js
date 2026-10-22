@@ -1,8 +1,8 @@
-// Module ID: 9418
-// Function ID: 9419
+// Module ID: 9425
+// Function ID: 9426
 // Dependencies: [2]
 
-// Module 9418
+// Module 9425
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/orbs/orb_profile_badge_icon.png.js");

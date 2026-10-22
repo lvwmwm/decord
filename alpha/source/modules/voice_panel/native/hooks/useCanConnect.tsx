@@ -1,11 +1,11 @@
-// Module ID: 18446
-// Function ID: 18447
+// Module ID: 18468
+// Function ID: 18469
 // Name: useCanConnect
-// Dependencies: [4821, 4843, 4901, 5616, 1098, 558, 576, 5981, 504, 2]
+// Dependencies: [4821, 4843, 4901, 5616, 1098, 558, 576, 5980, 504, 2]
 
-// Module 18446 (useCanConnect)
+// Module 18468 (useCanConnect)
 import Constants from "Constants" /* 1098 */;
-import ChannelUtils from "ChannelUtils" /* 5981 */;
+import ChannelUtils from "ChannelUtils" /* 5980 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import PermissionStore from "PermissionStore" /* 4901 */;

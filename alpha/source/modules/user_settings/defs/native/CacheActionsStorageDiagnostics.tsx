@@ -1,10 +1,10 @@
-// Module ID: 16829
-// Function ID: 16830
+// Module ID: 16851
+// Function ID: 16852
 // Name: CacheActionsStorageDiagnostics
-// Dependencies: [5, 32, 19, 21, 5649, 5672, 16827, 1128, 5964, 5220, 5230, 2]
+// Dependencies: [5, 32, 19, 21, 5649, 5672, 16849, 1128, 5963, 5220, 5230, 2]
 // Exports: default
 
-// Module 16829 (CacheActionsStorageDiagnostics)
+// Module 16851 (CacheActionsStorageDiagnostics)
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5649 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 5672 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -144,7 +144,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
   [tmp2, c1] = tmp;
   dependencyMap = react.useRef(false);
   obj = { children: items };
-  const Stack = onBusyChange(5964).Stack;
+  const Stack = onBusyChange(5963).Stack;
   let obj2 = { variant: "text-sm/normal", color: "text-subtle", children: intl.string(onBusyChange(1128).t.Fzi4HX) };
   const Text = onBusyChange(5220).Text;
   intl = onBusyChange(1128).intl;

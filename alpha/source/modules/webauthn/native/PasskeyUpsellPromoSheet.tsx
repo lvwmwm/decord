@@ -1,15 +1,15 @@
-// Module ID: 16944
-// Function ID: 16945
+// Module ID: 16966
+// Function ID: 16967
 // Name: PasskeyUpsellPromoSheet
-// Dependencies: [19, 1087, 4818, 21, 558, 576, 5655, 16945, 16946, 16943, 7028, 7474, 1128, 1384, 5230, 10820, 6682, 2]
+// Dependencies: [19, 1087, 4818, 21, 558, 576, 5655, 16967, 16968, 16965, 7027, 7475, 1128, 1384, 5230, 10828, 6681, 2]
 
-// Module 16944 (PasskeyUpsellPromoSheet)
+// Module 16966 (PasskeyUpsellPromoSheet)
 import Constants from "Constants" /* 1087 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
 import FastImageDefault from "FastImage" /* 5655 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 7028 */;
-import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 16943 */;
-import PasskeyUpsellManagerDefault from "PasskeyUpsellManager" /* 16946 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 7027 */;
+import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 16965 */;
+import PasskeyUpsellManagerDefault from "PasskeyUpsellManager" /* 16968 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -42,7 +42,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwordless
   let obj = require("react");
   const cResult = obj.c(8);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { source: tmp(16945), style: { height: 190, width: 220, resizeMode: "contain" } };
+    let obj2 = { source: tmp(16967), style: { height: 190, width: 220, resizeMode: "contain" } };
     const tmp7 = FastImageDefault;
     const tmp8 = closure_6(tmp7, obj2);
     cResult[0] = tmp8;
@@ -142,10 +142,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwordless
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     let obj4 = { illustration: first, title: tmp11, description: tmp12, onDismiss: tmp13, actions: closure_7(ButtonGroup, obj5) };
-    const PromoSheet = tmp(10820).PromoSheet;
+    const PromoSheet = tmp(10828).PromoSheet;
     obj5 = { children: items };
     items = [tmp17, ];
-    ButtonGroup = tmp(6682).ButtonGroup;
+    ButtonGroup = tmp(6681).ButtonGroup;
     const obj6 = { size: "lg", variant: "secondary", onPress: tmp10, text: intl4.string(tmp(1128).t["7J6/nG"]) };
     const Button2 = tmp(5230).Button;
     intl4 = tmp(1128).intl;
@@ -194,7 +194,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwordless
     stringResult = string(t.d6uxJy);
   }
   obj4 = { children: items };
-  ButtonGroup = tmp4(6682).ButtonGroup;
+  ButtonGroup = tmp4(6681).ButtonGroup;
   const obj5 = {
     size: "lg",
     onPress: function registerPasskey() {

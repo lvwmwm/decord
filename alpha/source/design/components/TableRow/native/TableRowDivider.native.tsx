@@ -1,15 +1,15 @@
-// Module ID: 6884
-// Function ID: 6885
+// Module ID: 6883
+// Function ID: 6884
 // Name: TableRowDivider
-// Dependencies: [19, 17, 6885, 21, 4969, 587, 558, 576, 5238, 2]
+// Dependencies: [19, 17, 6884, 21, 4969, 587, 558, 576, 5238, 2]
 
-// Module 6884 (TableRowDivider)
+// Module 6883 (TableRowDivider)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 5238 */;
-import TableRowConstants from "TableRowConstants" /* 6885 */;
+import TableRowConstants from "TableRowConstants" /* 6884 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

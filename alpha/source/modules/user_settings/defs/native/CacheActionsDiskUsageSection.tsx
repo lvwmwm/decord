@@ -1,19 +1,19 @@
-// Module ID: 16826
-// Function ID: 16827
+// Module ID: 16848
+// Function ID: 16849
 // Name: CacheActionsDiskUsageSection
-// Dependencies: [5, 32, 19, 21, 4969, 587, 16827, 4847, 4978, 1128, 558, 576, 5220, 6365, 5964, 1384, 6891, 16829, 2]
+// Dependencies: [5, 32, 19, 21, 4969, 587, 16849, 4847, 4978, 1128, 558, 576, 5220, 6364, 5963, 1384, 6890, 16851, 2]
 // Exports: useDiskUsageMeasurement
 
-// Module 16826 (CacheActionsDiskUsageSection)
+// Module 16848 (CacheActionsDiskUsageSection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl24 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import Text_Text from "Text/Text" /* 5220 */;
-import Stack_Stack from "Stack/Stack" /* 5964 */;
-import FileSizeUtils from "FileSizeUtils" /* 6365 */;
-import Card_Card from "Card/Card" /* 6891 */;
-import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 16829 */;
+import Stack_Stack from "Stack/Stack" /* 5963 */;
+import FileSizeUtils from "FileSizeUtils" /* 6364 */;
+import Card_Card from "Card/Card" /* 6890 */;
+import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 16851 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -80,7 +80,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function SizeRo
         return tmp14;
       }
       const obj2 = { direction: "horizontal", justify: "space-between", spacing: nativeDefault.space.PX_16, children: items };
-      const Stack = tmp(5964).Stack;
+      const Stack = tmp(5963).Stack;
       items = [tmp6, tmp11];
       const tmp17 = metroImportDefault(Stack, obj2);
       cResult[8] = tmp6;

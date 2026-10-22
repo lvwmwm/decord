@@ -1,16 +1,16 @@
-// Module ID: 6621
-// Function ID: 6622
+// Module ID: 6620
+// Function ID: 6621
 // Name: SelectedChannelActionCreatorsAdditional
-// Dependencies: [4821, 4843, 6622, 4901, 4872, 4995, 1392, 5616, 6623, 5981, 6624, 5648, 6625, 6626, 5196, 6679, 2002, 5848, 14880, 1281, 584, 2]
+// Dependencies: [4821, 4843, 6621, 4901, 4872, 4995, 1392, 5616, 6622, 5980, 6623, 5648, 6624, 6625, 5196, 6678, 2002, 5847, 14894, 1281, 584, 2]
 // Exports: getChannelSelectionOrigin, selectVoiceChannelAdditional
 
-// Module 6621 (SelectedChannelActionCreatorsAdditional)
+// Module 6620 (SelectedChannelActionCreatorsAdditional)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import v1 from "v1" /* 1281 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6623 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6622 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6622 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6621 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;

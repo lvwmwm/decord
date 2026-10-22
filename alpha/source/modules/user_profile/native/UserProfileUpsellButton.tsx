@@ -1,13 +1,13 @@
-// Module ID: 15778
-// Function ID: 15779
+// Module ID: 15792
+// Function ID: 15793
 // Name: UserProfileUpsellButton
-// Dependencies: [19, 1087, 1394, 21, 4969, 558, 576, 7237, 7540, 1267, 9641, 1128, 9394, 5230, 2]
+// Dependencies: [19, 1087, 1394, 21, 4969, 558, 576, 7238, 7541, 1267, 9648, 1128, 9401, 5230, 2]
 
-// Module 15778 (UserProfileUpsellButton)
+// Module 15792 (UserProfileUpsellButton)
 import Fragment from "Fragment" /* 21 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9641 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9648 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -29,8 +29,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   analyticsObject = analyticsObject.analyticsObject;
   const label = analyticsObject.label;
   const tmp4 = closure_10();
-  analyticsLocations = analyticsLocations(7237)().analyticsLocations;
-  let obj2 = analyticsObject(7540);
+  analyticsLocations = analyticsLocations(7238)().analyticsLocations;
+  let obj2 = analyticsObject(7541);
   const nitroTrialCtaOverride = obj2.useNitroTrialCtaOverride("user_profile_upsell_button");
   if (cResult[0] === analyticsLocations) {
     let tmp6;
@@ -52,7 +52,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
           tmp11 = cResult[9];
         }
         if (cResult[10] !== tmp4.nitroWheel) {
-          const tmp16 = jsx(analyticsObject(9394).NitroWheelIcon, { color: "white", size: "sm", style: tmp4.nitroWheel });
+          const tmp16 = jsx(analyticsObject(9401).NitroWheelIcon, { color: "white", size: "sm", style: tmp4.nitroWheel });
           cResult[10] = tmp4.nitroWheel;
           cResult[11] = tmp16;
           tmp14 = tmp16;
@@ -123,8 +123,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   let analyticsLocations;
   const label = analyticsObject.label;
   const tmp = closure_10();
-  analyticsLocations = analyticsLocations(7237)().analyticsLocations;
-  let obj = analyticsObject(7540);
+  analyticsLocations = analyticsLocations(7238)().analyticsLocations;
+  let obj = analyticsObject(7541);
   let nitroTrialCtaOverride = obj.useNitroTrialCtaOverride("user_profile_upsell_button");
   const items = [analyticsLocations, analyticsObject];
   const effect = react.useEffect(() => {

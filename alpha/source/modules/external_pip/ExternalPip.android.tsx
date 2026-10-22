@@ -81,6 +81,10 @@ class ExternalPip {
     const obj = react_native;
     obj.refreshPipUi();
   }
+  setPipContentReady() {
+    const obj = react_native;
+    obj.setPipContentReady();
+  }
   updateSourceTrackingView() {
 
   }

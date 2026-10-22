@@ -1,16 +1,16 @@
-// Module ID: 9486
-// Function ID: 9487
+// Module ID: 9493
+// Function ID: 9494
 // Name: GameProfileFloatingNav
-// Dependencies: [109, 32, 19, 17, 21, 587, 5038, 4969, 9487, 558, 576, 14094, 5220, 8881, 1633, 14099, 5238, 683, 5192, 9264, 9585, 1128, 8545, 5244, 2]
+// Dependencies: [109, 32, 19, 17, 21, 587, 5038, 4969, 9494, 558, 576, 14108, 5220, 8888, 1633, 14113, 5238, 683, 5192, 9271, 9592, 1128, 8546, 5244, 2]
 
-// Module 9486 (GameProfileFloatingNav)
+// Module 9493 (GameProfileFloatingNav)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
 import timing from "timing" /* 5192 */;
-import YouBannerDecorations from "YouBannerDecorations" /* 9487 */;
-import YouScreenNavIconMeasurer2 from "YouScreenNavIconMeasurer" /* 14094 */;
+import YouBannerDecorations from "YouBannerDecorations" /* 9494 */;
+import YouScreenNavIconMeasurer2 from "YouScreenNavIconMeasurer" /* 14108 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -28,7 +28,7 @@ let metroImportAll;
 let metroImportDefault;
 let tmp;
 const Text_Text = tmp(5220);
-const native = tmp(8881);
+const native = tmp(8888);
 let closure_3 = ["game"];
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
@@ -243,7 +243,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Floati
   } else {
     first = cResult[0];
   }
-  const tmpResult = tmp(14099);
+  const tmpResult = tmp(14113);
   const isGameProfileCommunitiesMobileEnabled = tmpResult.useIsGameProfileCommunitiesMobileEnabled(first);
   const tmpResult3 = tmp(5238);
   const token = tmpResult3.useToken(tmp4(587).colors.BACKGROUND_BASE_LOWEST);
@@ -422,8 +422,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Floati
             });
           }
         }
-        tmp25[0] = tmp(9264).GameProfileNavTab.OVERVIEW;
-        tmp25[1] = tmp(9585).GameControllerIcon;
+        tmp25[0] = tmp(9271).GameProfileNavTab.OVERVIEW;
+        tmp25[1] = tmp(9592).GameControllerIcon;
         const intl = tmp(1128).intl;
         tmp25[2] = intl.string(tmp(1128).t.qHmbyh);
         cResult[8] = tmp25;
@@ -487,7 +487,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Floati
           }
         }
         tmp26[0] = tmp24;
-        let obj6 = { tab: tmp(9264).GameProfileNavTab.COMMUNITIES, IconComponent: tmp(8545).GroupIcon, label: intl2.string(tmp(1128).t["3xFZEo"]) };
+        let obj6 = { tab: tmp(9271).GameProfileNavTab.COMMUNITIES, IconComponent: tmp(8546).GroupIcon, label: intl2.string(tmp(1128).t["3xFZEo"]) };
         intl2 = tmp(1128).intl;
         tmp26[1] = obj6;
         cResult[9] = tmp26;
@@ -579,7 +579,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Floati
               });
             }
           }
-          const tmp31 = closure_9(tmp(8881).BackgroundBlurFill, {});
+          const tmp31 = closure_9(tmp(8888).BackgroundBlurFill, {});
           cResult[13] = tmp31;
           tmp30 = tmp31;
         } else {
@@ -748,7 +748,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Floati
                       return closure_1_9(closure_1_18, obj, tab);
                     })
           };
-          const YouScreenNavIconMeasurer = tmp(14094).YouScreenNavIconMeasurer;
+          const YouScreenNavIconMeasurer = tmp(14108).YouScreenNavIconMeasurer;
           cResult[19] = selectTab;
           cResult[20] = selectedTab;
           cResult[21] = tmp5.item;
@@ -894,7 +894,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Floati
   const onLayout = navigation.onLayout;
   const tmp3 = closure_17(selectTab(1633)().bottom);
   dependencyMap = tmp3;
-  let obj = selectedTab(14099);
+  let obj = selectedTab(14113);
   const isGameProfileCommunitiesMobileEnabled = obj.useIsGameProfileCommunitiesMobileEnabled({ location: "GameProfileFloatingNav" });
   let obj2 = selectedTab(5238);
   const token = obj2.useToken(selectTab(587).colors.BACKGROUND_BASE_LOWEST);
@@ -961,17 +961,17 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Floati
   fn.__workletHash = 5966559078959;
   fn.__initData = __initData2;
   if (isGameProfileCommunitiesMobileEnabled) {
-    let obj4 = { tab: tmp4(9264).GameProfileNavTab.OVERVIEW, IconComponent: tmp4(9585).GameControllerIcon, label: intl.string(tmp4(1128).t.qHmbyh) };
+    let obj4 = { tab: tmp4(9271).GameProfileNavTab.OVERVIEW, IconComponent: tmp4(9592).GameControllerIcon, label: intl.string(tmp4(1128).t.qHmbyh) };
     intl = tmp4(1128).intl;
     const items1 = [obj4, ];
-    let obj5 = { tab: tmp4(9264).GameProfileNavTab.COMMUNITIES, IconComponent: tmp4(8545).GroupIcon, label: intl2.string(tmp4(1128).t["3xFZEo"]) };
+    let obj5 = { tab: tmp4(9271).GameProfileNavTab.COMMUNITIES, IconComponent: tmp4(8546).GroupIcon, label: intl2.string(tmp4(1128).t["3xFZEo"]) };
     intl2 = tmp4(1128).intl;
     items1[1] = obj5;
     let obj6 = { style: tmp3.wrap, pointerEvents: "box-none", onLayout, children: items2 };
     const obj7 = { colors: memo, style: tmp3.scrim, pointerEvents: "none" };
     items2 = [closure_9(tmp(5244), obj7), ];
     const obj8 = { style: tmp3.pill, accessibilityRole: "tablist", children: items3 };
-    const obj9 = { style: tmp3.pillBlur, pointerEvents: "none", children: closure_9(selectedTab(8881).BackgroundBlurFill, {}) };
+    const obj9 = { style: tmp3.pillBlur, pointerEvents: "none", children: closure_9(selectedTab(8888).BackgroundBlurFill, {}) };
     items3 = [closure_9(closure_7, obj9), ];
     const obj11 = { style: items4, pointerEvents: "none" };
     items4 = [tmp3.selection, tmp12];
@@ -996,7 +996,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Floati
           return closure_1_9(closure_1_18, obj, tab);
         })
     };
-    const YouScreenNavIconMeasurer = tmp4(14094).YouScreenNavIconMeasurer;
+    const YouScreenNavIconMeasurer = tmp4(14108).YouScreenNavIconMeasurer;
     items5[1] = closure_9(YouScreenNavIconMeasurer, obj12);
     items3[1] = closure_10(closure_7, obj10);
     items2[1] = closure_10(closure_7, obj8);

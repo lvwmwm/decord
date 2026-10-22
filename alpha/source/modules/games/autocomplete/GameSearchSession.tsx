@@ -1,20 +1,20 @@
-// Module ID: 9044
-// Function ID: 9045
+// Module ID: 9051
+// Function ID: 9052
 // Name: GameSearchSession
-// Dependencies: [1087, 8565, 1267, 2]
+// Dependencies: [1087, 8566, 1267, 2]
 // Exports: getGameSearchSession
 
-// Module 9044 (GameSearchSession)
+// Module 9051 (GameSearchSession)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8565 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8566 */;
 import size from "module_2" /* 2 */;
 
 let results;
 
 let tmp;
 const AnalyticsUtils = tmp(1267);
-const f102094 = (id) => id.id;
+const f102192 = (id) => id.id;
 function onQuery(c2) {
   let tmpResult;
   const obj = GameAutocompleteUtils;
@@ -115,7 +115,7 @@ class GameSearchSession {
             }
           }
           obj2.selectedQuery = normalizeGameAutocompleteQuery(name);
-          const obj = { search_session_id: state.id, surface: null, filter_group: null, query: state.query, query_length: state.query.length, results_query: query, results_stale: query1 !== state.query, game_id, result_index: num, num_results: num2, result_game_ids: substr.map(f102094), num_result_sets: null, selection_number: null, ms_since_session_start: timestamp - state.startedAt };
+          const obj = { search_session_id: state.id, surface: null, filter_group: null, query: state.query, query_length: state.query.length, results_query: query, results_stale: query1 !== state.query, game_id, result_index: num, num_results: num2, result_game_ids: substr.map(f102192), num_result_sets: null, selection_number: null, ms_since_session_start: timestamp - state.startedAt };
           ({ surface: obj.surface, filterGroup: obj.filter_group } = obj2);
           query = undefined;
           const track = AnalyticsUtilsDefault.track;
@@ -167,7 +167,7 @@ class GameSearchSession {
     this.state = null;
     this.selectedQuery = null;
     if (null != state) {
-      const obj = { search_session_id: state.id, surface: null, filter_group: null, query: state.lastQuery, query_length: state.lastQuery.length, max_query_length: null, results_query: query, num_results: num, result_game_ids: substr.map(f102094), saw_any_results: null, num_result_sets: null, num_selections: null, duration_ms: lastActivityAt - state.startedAt };
+      const obj = { search_session_id: state.id, surface: null, filter_group: null, query: state.lastQuery, query_length: state.lastQuery.length, max_query_length: null, results_query: query, num_results: num, result_game_ids: substr.map(f102192), saw_any_results: null, num_result_sets: null, num_selections: null, duration_ms: lastActivityAt - state.startedAt };
       ({ surface: obj.surface, filterGroup: obj.filter_group } = this);
       ({ maxQueryLength: obj.max_query_length, displayed: displayed3 } = state);
       query = undefined;
@@ -282,7 +282,7 @@ export const getGameSearchSession = function getGameSearchSession(CHAT_MENTION, 
               }
             }
             obj2.selectedQuery = normalizeGameAutocompleteQuery(name);
-            const obj = { search_session_id: state.id, surface: null, filter_group: null, query: state.query, query_length: state.query.length, results_query: query, results_stale: query1 !== state.query, game_id, result_index: num, num_results: num2, result_game_ids: substr.map(f102094), num_result_sets: null, selection_number: null, ms_since_session_start: timestamp - state.startedAt };
+            const obj = { search_session_id: state.id, surface: null, filter_group: null, query: state.query, query_length: state.query.length, results_query: query, results_stale: query1 !== state.query, game_id, result_index: num, num_results: num2, result_game_ids: substr.map(f102192), num_result_sets: null, selection_number: null, ms_since_session_start: timestamp - state.startedAt };
             ({ surface: obj.surface, filterGroup: obj.filter_group } = obj2);
             query = undefined;
             const track = AnalyticsUtilsDefault.track;

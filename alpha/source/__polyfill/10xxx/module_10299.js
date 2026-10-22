@@ -1,9 +1,9 @@
 // Module ID: 10299
 // Function ID: 10300
-// Dependencies: [41, 42, 93, 95, 98, 10300, 10192]
+// Dependencies: [41, 42, 93, 95, 98, 10300, 10199]
 
 // Module 10299
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10192 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10199 */;
 import _mod10300 from "module_10300" /* 10300 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
@@ -26,12 +26,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class ZHHantDateParser {
+class ZHHansDateParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ZHHantDateParser);
-    const obj = _getPrototypeOf(ZHHantDateParser);
+    _classCallCheck(this, ZHHansDateParser);
+    const obj = _getPrototypeOf(ZHHansDateParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -43,7 +43,7 @@ class ZHHantDateParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ZHHantDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ZHHansDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
@@ -54,7 +54,7 @@ const entry = {
     const keys2 = Object.keys(_mod10300.NUMBER);
     const text2 = `${tmp2}]{2})?(?:\\s*)(?:年)?(?:[\\s|,|，]*)(\\d{1,2}|[${obj3.join("")}`;
     const keys3 = Object.keys(_mod10300.NUMBER);
-    const regExp = new RegExp(text2 + "]{1,2})(?:\\s*)(?:\u6708)(?:\\s*)(\\d{1,2}|[" + keys3.join("") + "]{1,2})?(?:\\s*)(?:\u65E5|\u865F)?");
+    const regExp = new RegExp(text2 + "]{1,3})(?:\\s*)(?:\u6708)(?:\\s*)(\\d{1,2}|[" + keys3.join("") + "]{1,3})?(?:\\s*)(?:\u65E5|\u53F7)?");
     return regExp;
   }
 };
@@ -105,4 +105,4 @@ const items = [
   }
 ];
 
-export default _createClass(ZHHantDateParser, items);
+export default _createClass(ZHHansDateParser, items);

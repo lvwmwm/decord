@@ -1,9 +1,9 @@
-// Module ID: 11435
-// Function ID: 11436
+// Module ID: 11446
+// Function ID: 11447
 // Name: WebViewContext
 // Dependencies: [32, 19, 17, 21, 4969, 558, 576, 2]
 
-// Module 11435 (WebViewContext)
+// Module 11446 (WebViewContext)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -32,10 +32,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebViewCon
   [tmp4, closure_129_0] = _slicedToArray(react.useState(0), 2);
   const tmp3 = _slicedToArray(react.useState(0), 2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function u(__nativeTag) {
-      const tmp = __nativeTag;
+    const fn = function u(_nativeTag) {
+      const tmp = _nativeTag;
       if (tmp) {
-        closure_1_0(__nativeTag.__nativeTag);
+        closure_1_0(_nativeTag._nativeTag);
       }
     };
     cResult[0] = fn;
@@ -81,10 +81,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebViewCon
   items1 = [, ];
   const obj2 = {
     style: tmp.placeholderWebView,
-    ref: react.useCallback((__nativeTag) => {
-      const tmp = __nativeTag;
+    ref: react.useCallback((_nativeTag) => {
+      const tmp = _nativeTag;
       if (tmp) {
-        closure_0(__nativeTag.__nativeTag);
+        closure_0(_nativeTag._nativeTag);
       }
     }, items),
     pointerEvents: "none"

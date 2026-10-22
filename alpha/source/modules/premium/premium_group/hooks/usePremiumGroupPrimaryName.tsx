@@ -1,13 +1,13 @@
-// Module ID: 14731
-// Function ID: 14732
+// Module ID: 14745
+// Function ID: 14746
 // Name: usePremiumGroupPrimaryName
-// Dependencies: [558, 576, 14732, 14736, 5018, 2]
+// Dependencies: [558, 576, 14746, 14750, 5018, 2]
 
-// Module 14731 (usePremiumGroupPrimaryName)
+// Module 14745 (usePremiumGroupPrimaryName)
 import react from "react" /* 576 */;
 import UserUtils from "UserUtils" /* 5018 */;
-import usePremiumGroupMembershipDefault from "usePremiumGroupMembership" /* 14732 */;
-import usePremiumGroupMembersDefault from "usePremiumGroupMembers" /* 14736 */;
+import usePremiumGroupMembershipDefault from "usePremiumGroupMembership" /* 14746 */;
+import usePremiumGroupMembersDefault from "usePremiumGroupMembers" /* 14750 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumGr
         tmp9 = cResult[7];
       }
       let subscriptionId;
-      const tmp8Result = tmp8(14736);
+      const tmp8Result = tmp8(14750);
       if (premiumGroupMembership != null) {
         subscriptionId = premiumGroupMembership.subscriptionId;
       }

@@ -1,19 +1,19 @@
 // Module ID: 2020
 // Function ID: 2021
 // Name: ClipsStore
-// Dependencies: [5, 2021, 502, 8133, 1087, 5800, 4783, 15239, 1405, 15240, 15242, 504, 584, 2]
+// Dependencies: [5, 2021, 502, 8134, 1087, 5800, 4783, 15252, 1405, 15253, 15255, 504, 584, 2]
 
 // Module 2020 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
 import DiscordNativeDefault from "DiscordNative" /* 4783 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 15240 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 15242 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 15253 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 15255 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import RunningGameStore from "RunningGameStore" /* 2021 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ClipsConstants from "ClipsConstants" /* 8133 */;
+import ClipsConstants from "ClipsConstants" /* 8134 */;
 import Constants from "Constants" /* 1087 */;
 import StreamSettingsConstants from "StreamSettingsConstants" /* 5800 */;
 import size from "module_2" /* 2 */;

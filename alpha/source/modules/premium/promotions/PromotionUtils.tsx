@@ -1,10 +1,10 @@
-// Module ID: 9529
-// Function ID: 9530
+// Module ID: 9536
+// Function ID: 9537
 // Name: PromotionUtils
-// Dependencies: [5, 1246, 9490, 9489, 1394, 1087, 4976, 1297, 1384, 1267, 1405, 4805, 11, 4806, 9527, 2]
+// Dependencies: [5, 1246, 9497, 9496, 1394, 1087, 4976, 1297, 1384, 1267, 1405, 4805, 11, 4806, 9534, 2]
 // Exports: claimOutboundPromotion, getClaimedEndedOutboundPromotions, getClaimedOutboundPromotionCodeMap, getNextUnseenOutboundPromotionId, getOutboundPromotionRedemptionUrl, getPromotionImageURL, isDedicatedSurfacePromotion, isRecurringPromotion, shouldShowOutboundPromotionNotice, shouldShowOutboundPromotionOnPlatform
 
-// Module 9529 (PromotionUtils)
+// Module 9536 (PromotionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
@@ -12,11 +12,11 @@ import FlagUtils from "FlagUtils" /* 1405 */;
 import dismissible_content from "dismissible_content" /* 4805 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 4806 */;
 import shared from "shared" /* 4976 */;
-import constants from "constants" /* 9527 */;
+import constants from "constants" /* 9534 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import PromotionRecord from "PromotionRecord" /* 9490 */;
-import PromotionsStore from "PromotionsStore" /* 9489 */;
+import PromotionRecord from "PromotionRecord" /* 9497 */;
+import PromotionsStore from "PromotionsStore" /* 9496 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let closure_4, location_stack, name, partner, promotion_id, set;
 let c10;
 let c9;
 let metroImportAll;
-const f103381 = (startDate, startDate2) => {
+const f103479 = (startDate, startDate2) => {
   let num = 1;
   const date = new Date(startDate.startDate);
   const date1 = new Date(startDate2.startDate);
@@ -221,7 +221,7 @@ export const getNextUnseenOutboundPromotionId = function getNextUnseenOutboundPr
   }
   let id = null;
   if (0 !== found1.length) {
-    id = found1.sort(f103381)[0].id;
+    id = found1.sort(f103479)[0].id;
   }
   return id;
 };
@@ -262,7 +262,7 @@ export const shouldShowOutboundPromotionNotice = function shouldShowOutboundProm
   }
   let id = null;
   if (0 !== found1.length) {
-    id = found1.sort(f103381)[0].id;
+    id = found1.sort(f103479)[0].id;
   }
   let tmp6 = null != id;
   if (tmp6) {

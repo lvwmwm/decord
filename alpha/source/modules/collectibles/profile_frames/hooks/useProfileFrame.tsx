@@ -1,12 +1,12 @@
-// Module ID: 8676
-// Function ID: 8677
+// Module ID: 8683
+// Function ID: 8684
 // Name: useProfileFrame
-// Dependencies: [7634, 7649, 7641, 558, 576, 504, 2]
+// Dependencies: [7635, 7650, 7642, 558, 576, 504, 2]
 
-// Module 8676 (useProfileFrame)
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7641 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7634 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7649 */;
+// Module 8683 (useProfileFrame)
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7642 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7635 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7650 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

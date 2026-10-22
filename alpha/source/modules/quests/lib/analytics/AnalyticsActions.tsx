@@ -1,24 +1,24 @@
-// Module ID: 7776
-// Function ID: 7777
+// Module ID: 7777
+// Function ID: 7778
 // Name: AnalyticsActions
-// Dependencies: [5, 7777, 1372, 7760, 1087, 7555, 7779, 7756, 7780, 7782, 7785, 6703, 5697, 1267, 7786, 7734, 1384, 1281, 7791, 6699, 2]
-// Exports: createAppStoreOverlayCarouselScrollTracker, getAppStoreOverlayStoreAppIds, trackAdContentAppStoreOverlayEvent, trackAdContentClicked, trackAdContentQuestBarOrDockModeChange, trackAppStoreOverlayCarouselScroll, trackAppStoreOverlayEvent, trackBountyCarouselEmptyStateViewed, trackBountyVerticalScroll, trackQuestContentClicked, trackQuestContentQuestBarOrDockModeChange, trackQuestEmbedFallbackViewed, trackQuestHomeCarouselScroll, trackQuestHomeOrbShopCarouselScroll, trackQuestHomeOrbShopCarouselViewed, trackQuestHomeSearchClosed, trackQuestHomeSearchEntered, trackQuestHomeSearchQuerySubmitted
+// Dependencies: [5, 7778, 1372, 7761, 1087, 7556, 7780, 7757, 7781, 7783, 7786, 6702, 5697, 1267, 7787, 7735, 1384, 1281, 7792, 6698, 2]
+// Exports: createAppStoreOverlayCarouselScrollTracker, getAppStoreOverlayStoreAppIds, trackAdContentAppStoreOverlayEvent, trackAdContentClicked, trackAdContentQuestBarOrDockModeChange, trackAdContentRenderingFailure, trackAppStoreOverlayCarouselScroll, trackAppStoreOverlayEvent, trackBountyCarouselEmptyStateViewed, trackBountyVerticalScroll, trackQuestContentClicked, trackQuestContentQuestBarOrDockModeChange, trackQuestContentRenderingFailure, trackQuestEmbedFallbackViewed, trackQuestHomeCarouselScroll, trackQuestHomeOrbShopCarouselScroll, trackQuestHomeOrbShopCarouselViewed, trackQuestHomeSearchClosed, trackQuestHomeSearchEntered, trackQuestHomeSearchQuerySubmitted
 
-// Module 7776 (AnalyticsActions)
+// Module 7777 (AnalyticsActions)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5697 */;
-import QuestTypes from "QuestTypes" /* 6699 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7555 */;
-import QuestDataUtils from "QuestDataUtils" /* 7756 */;
-import SessionAdGenerator from "SessionAdGenerator" /* 7779 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7780 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7782 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7785 */;
+import QuestTypes from "QuestTypes" /* 6698 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7556 */;
+import QuestDataUtils from "QuestDataUtils" /* 7757 */;
+import SessionAdGenerator from "SessionAdGenerator" /* 7780 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7781 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7783 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7786 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7777 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7778 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1372 */;
-import QuestStore from "QuestStore" /* 7760 */;
+import QuestStore from "QuestStore" /* 7761 */;
 import size from "module_2" /* 2 */;
 
 let _null, _null2, _null3;
@@ -50,7 +50,7 @@ function trackQuestEvent(questId) {
     }
     const id = value.id;
     tmp24Result = AnalyticsTypes;
-    const QUEST = tmp24(6703).AdCreativeType.QUEST;
+    const QUEST = tmp24(6702).AdCreativeType.QUEST;
     const tmp24Result5 = SessionAdGenerator;
     let uuid = tmp24Result5.getOrRefreshAdSession(shouldExtendSession).uuid;
     const tmp24Result6 = QuestDataUtils;
@@ -830,6 +830,31 @@ export const trackAdContentQuestBarOrDockModeChange = function trackAdContentQue
   obj = AnalyticsTypes;
   const contentProperties = obj.getContentProperties(questContent);
   const obj2 = { adContentId, adCreativeType, event: AnalyticEvents.QUEST_BAR_MODE_CHANGED, properties: { content_id: contentProperties.content_id, content_name: contentProperties.content_name, mode, previous_mode: prevMode }, sourceQuestContent };
+  trackAdContentEvent(obj2);
+};
+export const trackQuestContentRenderingFailure = function trackQuestContentRenderingFailure(arg0) {
+  let impressionId;
+  let questContent;
+  let questId;
+  let reason;
+  let sourceQuestContent;
+  ({ questId, questContent, sourceQuestContent, reason, impressionId } = arg0);
+  obj = AnalyticsTypes;
+  const contentProperties = obj.getContentProperties(questContent);
+  const obj2 = { questId, event: AnalyticEvents.QUEST_CONTENT_RENDERING_FAILURE, properties: { content_id: contentProperties.content_id, content_name: contentProperties.content_name, reason, impression_id: impressionId }, sourceQuestContent };
+  trackQuestEvent(obj2);
+};
+export const trackAdContentRenderingFailure = function trackAdContentRenderingFailure(arg0) {
+  let adContentId;
+  let adCreativeType;
+  let impressionId;
+  let questContent;
+  let reason;
+  let sourceQuestContent;
+  ({ adContentId, adCreativeType, questContent, sourceQuestContent, reason, impressionId } = arg0);
+  obj = AnalyticsTypes;
+  const contentProperties = obj.getContentProperties(questContent);
+  const obj2 = { adContentId, adCreativeType, event: AnalyticEvents.QUEST_CONTENT_RENDERING_FAILURE, properties: { content_id: contentProperties.content_id, content_name: contentProperties.content_name, reason, impression_id: impressionId }, sourceQuestContent };
   trackAdContentEvent(obj2);
 };
 export const trackQuestEmbedFallbackViewed = function trackQuestEmbedFallbackViewed(questId, EXCLUDED_QUEST) {

@@ -1,15 +1,15 @@
-// Module ID: 9696
-// Function ID: 9697
+// Module ID: 9703
+// Function ID: 9704
 // Name: ForumPostUnreadCountStore
-// Dependencies: [6776, 4821, 6757, 504, 38, 584, 2]
+// Dependencies: [6775, 4821, 6756, 504, 38, 584, 2]
 
-// Module 9696 (ForumPostUnreadCountStore)
+// Module 9703 (ForumPostUnreadCountStore)
 import _modDef38 from "module_38" /* 38 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6776 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6775 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import ReadStateStore from "ReadStateStore" /* 6757 */;
+import ReadStateStore from "ReadStateStore" /* 6756 */;
 import size from "module_2" /* 2 */;
 
 let closure_5;

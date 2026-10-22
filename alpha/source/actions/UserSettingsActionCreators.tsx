@@ -1,10 +1,10 @@
-// Module ID: 5855
-// Function ID: 5856
+// Module ID: 5854
+// Function ID: 5855
 // Name: UserSettingsActionCreators
 // Dependencies: [5, 4993, 1208, 1207, 1087, 1210, 4802, 1211, 1242, 584, 5022, 4797, 2]
 // Exports: saveClientTheme, saveGuildFolders
 
-// Module 5855 (UserSettingsActionCreators)
+// Module 5854 (UserSettingsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;

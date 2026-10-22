@@ -1,32 +1,31 @@
-// Module ID: 18328
-// Function ID: 18329
+// Module ID: 18350
+// Function ID: 18351
 // Name: FramePool
-// Dependencies: [32, 19, 17, 6761, 6762, 21, 4969, 558, 576, 1499, 504, 11830, 11435, 11410, 10736, 18329, 2]
+// Dependencies: [32, 19, 17, 6760, 6761, 21, 4969, 558, 576, 1499, 504, 11844, 11446, 11421, 10743, 18351, 2]
 
-// Module 18328 (FramePool)
+// Module 18350 (FramePool)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10736 */;
-import makeIframeIdDefault from "makeIframeId" /* 11410 */;
-import FramePoolManagerDefault from "FramePoolManager" /* 11830 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10743 */;
+import makeIframeIdDefault from "makeIframeId" /* 11421 */;
+import FramePoolManagerDefault from "FramePoolManager" /* 11844 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6761 */;
-import FramesConstants from "FramesConstants" /* 6762 */;
+import FramesStore from "FramesStore" /* 6760 */;
+import FramesConstants from "FramesConstants" /* 6761 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-const require = globalThis.__r;
 let dependencyMap;
 
 let metroImportAll;
 let metroImportDefault;
 let tmp;
 const get_initialized = tmp(504);
-const WebViewContext = tmp(11435);
+const WebViewContext = tmp(11446);
 const View = react_native.View;
 ({ FrameLayoutModes: metroImportDefault, isLaunched: metroImportAll } = FramesConstants);
 const jsx = Fragment.jsx;
@@ -35,6 +34,7 @@ let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FramePool() {
   let allFrames;
   let height;
+  let require;
   let tmp10;
   let tmp11;
   let tmp20;
@@ -66,37 +66,89 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FramePool() 
   [tmp10, require] = react.useState(0);
   _slicedToArray(react.useState(0), 2);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function p(__nativeTag) {
-      let num = 0;
-      if (null != __nativeTag) {
-        let num2 = __nativeTag.__nativeTag;
-        if (num2 == null) {
-          num2 = 0;
+    class E {
+      constructor(_nativeTag) {
+        let num = 0;
+        if (null != _nativeTag) {
+          let num2 = _nativeTag._nativeTag;
+          if (num2 == null) {
+            num2 = 0;
+          }
+          num = num2;
         }
-        num = num2;
+        _require(num);
+        const obj = FramePoolManagerDefault;
+        obj.setPoolNodeTag(num);
       }
-      require(num);
-      const obj = FramePoolManagerDefault;
-      obj.setPoolNodeTag(num);
-    };
-    cResult[2] = fn2;
-    tmp11 = fn2;
+    }
+    cResult[2] = E;
+    tmp11 = E;
   } else {
-    tmp11 = cResult[2];
+    class E {
+      constructor(_nativeTag) {
+        let num = 0;
+        if (null != _nativeTag) {
+          let num2 = _nativeTag._nativeTag;
+          if (num2 == null) {
+            num2 = 0;
+          }
+          num = num2;
+        }
+        _require(num);
+        const obj = FramePoolManagerDefault;
+        obj.setPoolNodeTag(num);
+      }
+    }
   }
   if (cResult[3] === height) {
-    let tmp12;
-    if (cResult[4] === width) {
-      tmp12 = cResult[5];
+    class E {
+      constructor(_nativeTag) {
+        let num = 0;
+        if (null != _nativeTag) {
+          let num2 = _nativeTag._nativeTag;
+          if (num2 == null) {
+            num2 = 0;
+          }
+          num = num2;
+        }
+        _require(num);
+        const obj = FramePoolManagerDefault;
+        obj.setPoolNodeTag(num);
+      }
     }
     if (cResult[6] === tmp4.pool) {
-      let tmp13;
-      if (cResult[7] === tmp12) {
-        tmp13 = cResult[8];
+      class E {
+        constructor(_nativeTag) {
+          let num = 0;
+          if (null != _nativeTag) {
+            let num2 = _nativeTag._nativeTag;
+            if (num2 == null) {
+              num2 = 0;
+            }
+            num = num2;
+          }
+          _require(num);
+          const obj = FramePoolManagerDefault;
+          obj.setPoolNodeTag(num);
+        }
       }
       if (cResult[9] !== stateFromStoresArray) {
         let tmp15;
-        const _Symbol = Symbol;
+        class E {
+          constructor(_nativeTag) {
+            let num = 0;
+            if (null != _nativeTag) {
+              let num2 = _nativeTag._nativeTag;
+              if (num2 == null) {
+                num2 = 0;
+              }
+              num = num2;
+            }
+            _require(num);
+            const obj = FramePoolManagerDefault;
+            obj.setPoolNodeTag(num);
+          }
+        }
         if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
           class M {
             constructor(frame) {
@@ -171,16 +223,15 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FramePool() 
     cResult[6] = tmp4.pool;
     cResult[7] = tmp12;
     cResult[8] = items1;
-    tmp13 = items1;
   }
   size = { width, height };
   cResult[3] = height;
   cResult[4] = width;
   cResult[5] = size;
-  tmp12 = size;
 }) : (function FramePool() {
   let allFrames;
   let height;
+  let require;
   let tmp4;
   let width;
   let tmp = closure_10();
@@ -203,16 +254,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FramePool() 
     })
   });
   const Provider = WebViewContext.WebViewContext.Provider;
-  return <View ref={react.useCallback((__nativeTag) => {
+  return <View ref={react.useCallback((_nativeTag) => {
     let num = 0;
-    if (null != __nativeTag) {
-      let num2 = __nativeTag.__nativeTag;
+    if (null != _nativeTag) {
+      let num2 = _nativeTag._nativeTag;
       if (num2 == null) {
         num2 = 0;
       }
       num = num2;
     }
-    require(num);
+    _require(num);
     const obj = FramePoolManagerDefault;
     obj.setPoolNodeTag(num);
   }, [])} style={items1} pointerEvents="none">{null}</View>;
@@ -317,7 +368,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pooled
         }
       }
     }
-    const syncExternalStore = obj2.useSyncExternalStore(first1(11830).subscribe, tmp14);
+    const syncExternalStore = obj2.useSyncExternalStore(first1(11844).subscribe, tmp14);
     const tmp15 = first1;
     if (cResult[11] !== syncExternalStore) {
       class P {
@@ -358,8 +409,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pooled
     cResult[13] = frame;
     cResult[14] = first1;
     cResult[15] = tmp17;
-    cResult[16] = jsx(tmp15(18329), { frame, iframeId: first1, onActivityCrash: tmp12, presentation: tmp17 }, first1);
-    const tmp23 = jsx(tmp15(18329), { frame, iframeId: first1, onActivityCrash: tmp12, presentation: tmp17 }, first1);
+    cResult[16] = jsx(tmp15(18351), { frame, iframeId: first1, onActivityCrash: tmp12, presentation: tmp17 }, first1);
+    const tmp23 = jsx(tmp15(18351), { frame, iframeId: first1, onActivityCrash: tmp12, presentation: tmp17 }, first1);
   }
   const fn2 = function v() {
     let obj = FramePoolManagerDefault;
@@ -405,13 +456,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pooled
   const callback = react.useCallback(() => {
     closure_2(makeIframeIdDefault());
   }, []);
-  let syncExternalStore = react.useSyncExternalStore(iframeId(11830).subscribe, () => {
+  let syncExternalStore = react.useSyncExternalStore(iframeId(11844).subscribe, () => {
     const obj = FramePoolManagerDefault;
     return obj.getWinningTargetState(id);
   });
   let obj = { frame, iframeId, onActivityCrash: callback, presentation: syncExternalStore };
   const tmp7 = jsx;
-  const tmp8 = iframeId(18329);
+  const tmp8 = iframeId(18351);
   if (syncExternalStore == null) {
     let obj2 = { layoutMode: constants.FOCUSED };
     syncExternalStore = obj2;
