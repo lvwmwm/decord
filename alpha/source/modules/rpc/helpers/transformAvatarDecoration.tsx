@@ -1,10 +1,10 @@
-// Module ID: 9223
-// Function ID: 9224
+// Module ID: 9232
+// Function ID: 9233
 // Name: transformAvatarDecoration
 // Dependencies: [1987, 2]
 // Exports: default
 
-// Module 9223 (transformAvatarDecoration)
+// Module 9232 (transformAvatarDecoration)
 import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1987 */;
 import size from "module_2" /* 2 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 5587
-// Function ID: 5588
+// Module ID: 5591
+// Function ID: 5592
 // Name: isAccessibleNonStaticChannelPath
-// Dependencies: [4873, 5588, 2]
+// Dependencies: [4873, 5592, 2]
 // Exports: default
 
-// Module 5587 (isAccessibleNonStaticChannelPath)
-import LinkUtils from "LinkUtils" /* 5588 */;
+// Module 5591 (isAccessibleNonStaticChannelPath)
+import LinkUtils from "LinkUtils" /* 5592 */;
 import GatedChannelStore from "GatedChannelStore" /* 4873 */;
 import size from "module_2" /* 2 */;
 

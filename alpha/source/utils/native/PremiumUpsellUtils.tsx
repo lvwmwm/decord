@@ -1,25 +1,25 @@
-// Module ID: 9629
-// Function ID: 9630
+// Module ID: 9641
+// Function ID: 9642
 // Name: PremiumUpsellUtils
-// Dependencies: [19, 1392, 1087, 1394, 21, 9630, 1128, 9631, 9632, 9633, 2053, 9634, 9635, 9636, 5889, 9822, 2002, 558, 576, 7534, 9751, 5141, 1267, 5192, 9750, 2]
+// Dependencies: [19, 1392, 1087, 1394, 21, 9642, 1128, 9643, 9644, 9645, 2053, 9646, 9647, 9648, 5896, 9834, 2002, 558, 576, 7541, 9763, 5145, 1267, 5196, 9762, 2]
 // Exports: getUpsellItems
 
-// Module 9629 (PremiumUpsellUtils)
+// Module 9641 (PremiumUpsellUtils)
 import Fragment from "Fragment" /* 21 */;
 import intl20 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import PremiumUtils from "PremiumUtils" /* 2053 */;
-import ChatInputUtils from "ChatInputUtils" /* 5141 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9630 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9631 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 9632 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 9633 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 9634 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 9635 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9750 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9751 */;
+import ChatInputUtils from "ChatInputUtils" /* 5145 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9642 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9643 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 9644 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 9645 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 9646 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 9647 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9762 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9763 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
@@ -414,7 +414,7 @@ let obj = {
           importer() {
                 let imageSource;
                 let largestFileSize;
-                const promise = asyncRequire(9822, dependencyMap.paths);
+                const promise = asyncRequire(9834, dependencyMap.paths);
                 return promise.then((result) => {
                   let closure_0 = result.default;
                   return (arg0) => {

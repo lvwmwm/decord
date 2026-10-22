@@ -1,13 +1,13 @@
-// Module ID: 9614
-// Function ID: 9615
+// Module ID: 9626
+// Function ID: 9627
 // Name: ApplicationCommandFrecencyHooks
-// Dependencies: [19, 9609, 1097, 558, 576, 4802, 504, 2]
+// Dependencies: [19, 9621, 1097, 558, 576, 4802, 504, 2]
 
-// Module 9614 (ApplicationCommandFrecencyHooks)
+// Module 9626 (ApplicationCommandFrecencyHooks)
 import react2 from "react" /* 576 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import react from "react" /* 19 */;
-import ApplicationCommandFrecencyStore_mod from "ApplicationCommandFrecencyStore" /* 9609 */;
+import ApplicationCommandFrecencyStore_mod from "ApplicationCommandFrecencyStore" /* 9621 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 7178
-// Function ID: 7179
+// Module ID: 7185
+// Function ID: 7186
 // Name: doGuildOnboardingHelpers
-// Dependencies: [4881, 4887, 1405, 7179, 2]
+// Dependencies: [4881, 4887, 1405, 7186, 2]
 // Exports: waitForOnboardingCompletion
 
-// Module 7178 (doGuildOnboardingHelpers)
+// Module 7185 (doGuildOnboardingHelpers)
 import FlagUtils from "FlagUtils" /* 1405 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 4887 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7179 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7186 */;
 import GuildMemberStore from "GuildMemberStore" /* 4881 */;
 import size from "module_2" /* 2 */;
 

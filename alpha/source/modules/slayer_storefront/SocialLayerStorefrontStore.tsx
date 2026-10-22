@@ -1,9 +1,9 @@
-// Module ID: 7309
-// Function ID: 7310
+// Module ID: 7316
+// Function ID: 7317
 // Name: SocialLayerStorefrontStore
 // Dependencies: [2068, 502, 504, 584, 2]
 
-// Module 7309 (SocialLayerStorefrontStore)
+// Module 7316 (SocialLayerStorefrontStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
@@ -35,7 +35,7 @@ obj = { state: "idle" };
 let set1 = new Set();
 let set = set1;
 let closure_17 = {};
-const authStore5 = {};
+const authStore4 = {};
 let closure_19 = {};
 let closure_20 = {};
 const set2 = new Set();

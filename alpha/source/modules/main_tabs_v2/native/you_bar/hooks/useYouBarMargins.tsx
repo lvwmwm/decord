@@ -1,15 +1,15 @@
-// Module ID: 16263
-// Function ID: 16264
+// Module ID: 16333
+// Function ID: 16334
 // Name: useYouBarMargins
-// Dependencies: [16264, 558, 1633, 1385, 5234, 587, 2]
+// Dependencies: [16334, 558, 1633, 1385, 5238, 587, 2]
 // Exports: useYouBarHorizontalMargin
 
-// Module 16263 (useYouBarMargins)
+// Module 16333 (useYouBarMargins)
 import nativeDefault from "native" /* 587 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import useToken from "useToken" /* 5234 */;
-import YouBarConstants from "YouBarConstants" /* 16264 */;
+import useToken from "useToken" /* 5238 */;
+import YouBarConstants from "YouBarConstants" /* 16334 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

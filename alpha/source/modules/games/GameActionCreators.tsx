@@ -1,10 +1,10 @@
-// Module ID: 7384
-// Function ID: 7385
+// Module ID: 7391
+// Function ID: 7392
 // Name: GameActionCreators
 // Dependencies: [5, 2022, 1087, 1297, 584, 4816, 12, 2]
 // Exports: fetchGamesWithSupplementalData
 
-// Module 7384 (GameActionCreators)
+// Module 7391 (GameActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;

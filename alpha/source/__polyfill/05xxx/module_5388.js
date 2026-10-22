@@ -1,19 +1,16 @@
 // Module ID: 5388
 // Function ID: 5389
-// Dependencies: [5387, 5338]
-// Exports: useExclusiveGestures
+// Dependencies: [5389, 5364]
 
 // Module 5388
-import ComposedGestureName from "ComposedGestureName" /* 5338 */;
-import _mod5387 from "module_5387" /* 5387 */;
+import _mod5364 from "module_5364" /* 5364 */;
+import _mod5389 from "module_5389" /* 5389 */;
 
-
-export const useExclusiveGestures = function useExclusiveGestures() {
-  const items = [...arguments];
-  const useComposedGesture = _mod5387.useComposedGesture;
-  _mod5387;
-  const items1 = [ComposedGestureName.ComposedGestureName.Exclusive, ...items];
-  const applyResult = useComposedGesture.apply(items1);
-  applyResult.type = ComposedGestureName.ComposedGestureName.Exclusive;
-  return applyResult;
-};
+for (const key10013 in _mod5389) {
+  exports[key10013] = _mod5389[key10013];
+  continue;
+}
+for (const key10017 in _mod5364) {
+  exports[key10017] = _mod5364[key10017];
+  continue;
+}

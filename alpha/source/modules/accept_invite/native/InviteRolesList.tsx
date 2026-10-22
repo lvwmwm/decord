@@ -1,15 +1,15 @@
-// Module ID: 13549
-// Function ID: 13550
+// Module ID: 13585
+// Function ID: 13586
 // Name: InviteRolesList
-// Dependencies: [19, 17, 21, 4966, 558, 576, 4879, 5216, 1128, 10785, 5957, 2]
+// Dependencies: [19, 17, 21, 4969, 558, 576, 4879, 5220, 1128, 10802, 5964, 2]
 
-// Module 13549 (InviteRolesList)
+// Module 13585 (InviteRolesList)
 import react_native from "react-native" /* 17 */;
 import GuildRoleUtils from "GuildRoleUtils" /* 4879 */;
-import RolePillDefault from "RolePill" /* 10785 */;
+import RolePillDefault from "RolePill" /* 10802 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -69,7 +69,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteRole
           const _Symbol = Symbol;
           if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
             const obj2 = { variant: "text-sm/semibold", color: "text-default", children: intl.string(guild(1128).t.stcSfI) };
-            const Text = tmp2(5216).Text;
+            const Text = tmp2(5220).Text;
             intl = tmp2(1128).intl;
             const tmp14 = closure_5(Text, obj2);
             cResult[6] = tmp14;
@@ -96,7 +96,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteRole
               }
               const obj3 = { spacing: 4, style, children: items1 };
               items1 = [tmp12, tmp19];
-              const tmp25 = closure_6(guild(5957).Stack, obj3);
+              const tmp25 = closure_6(guild(5964).Stack, obj3);
               cResult[15] = style;
               cResult[16] = tmp19;
               cResult[17] = tmp25;
@@ -168,9 +168,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteRole
     tmp2 = null;
     if (0 !== memo.length) {
       let obj = { spacing: 4, style, children: items1 };
-      const Stack = guild(5957).Stack;
+      const Stack = guild(5964).Stack;
       const obj2 = { variant: "text-sm/semibold", color: "text-default", children: intl.string(guild(1128).t.stcSfI) };
-      const Text = guild(5216).Text;
+      const Text = guild(5220).Text;
       intl = guild(1128).intl;
       items1 = [closure_5(Text, obj2), ];
       const obj3 = {

@@ -1,132 +1,108 @@
 // Module ID: 15576
 // Function ID: 15577
-// Dependencies: [41, 42, 93, 95, 98, 19, 17, 21]
+// Dependencies: [41, 42]
+// Exports: memoize
 
 // Module 15576
+import _createClassDefault from "_createClass" /* 42 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import Fragment from "Fragment" /* 21 */;
 
-let value;
-let weakMap;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
+function monadic(call, get, fn, num) {
+  let tmp2 = num;
+  const tmp = null == num || typeof num === "number" || typeof num === "boolean";
+  if (!tmp) {
+    tmp2 = fn(num);
   }
-}
-if (typeof WeakMap === "function") {
-  const _WeakMap = WeakMap;
-  let self = this;
-  const self2 = this;
-  weakMap = new WeakMap();
-  const _WeakMap2 = WeakMap;
-  const self3 = this;
-  const weakMap1 = new WeakMap();
-}
-if (!react) {
-  const merged = Object.assign({ default: null });
-  merged[0] = react;
-  value = merged;
-  if (null !== react) {
-    if (typeof react === "object") {
-      if (!weakMap) {
-        value = merged;
-        const keys = Object.keys();
-        if (keys !== undefined) {
-          value = merged;
-          while (keys[tmp] !== undefined) {
-            let callResult = "default" !== tmp12;
-            if (callResult) {
-              let hasOwnProperty = {}.hasOwnProperty;
-              callResult = hasOwnProperty.call(react, tmp12);
-            }
-            if (!callResult) {
-              continue;
-            } else {
-              let _Object = Object;
-              let ownPropertyDescriptor = defineProperty;
-              if (ownPropertyDescriptor) {
-                let _Object2 = Object;
-                ownPropertyDescriptor = Object.getOwnPropertyDescriptor(react, tmp12);
-              }
-              if (!ownPropertyDescriptor) {
-                merged[tmp12] = react[tmp12];
-                continue;
-              } else {
-                let definePropertyResult1 = defineProperty(merged, tmp12, ownPropertyDescriptor);
-                continue;
-              }
-              continue;
-            }
-            continue;
-          }
-        }
-      } else if (weakMap.has(react)) {
-        value = weakMap.get(react);
-      } else {
-        const result = weakMap.set(react, merged);
-      }
-    } else {
-      value = merged;
-    }
+  let value = get.get(tmp2);
+  if (undefined === value) {
+    const callResult = call.call(this, num);
+    const result = get.set(tmp2, callResult);
+    value = callResult;
   }
-} else {
-  value = react;
+  return value;
 }
-class StorybookSwitcher {
-  constructor(emitter) {
-    let constructResult;
+function variadic(apply, get, fn) {
+  const callResult = slice.call(arguments, 3);
+  const tmp2 = fn(callResult);
+  let value = get.get(tmp2);
+  if (undefined === value) {
     const self = this;
-    _classCallCheck(this, StorybookSwitcher);
-    const items = [emitter];
-    let obj = _getPrototypeOf(StorybookSwitcher);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items);
-    }
-    const tmp3Result = tmp3(self, constructResult);
-    let closure_0 = tmp3Result;
-    tmp3Result.state = { showStorybook: false };
-    emitter = emitter.emitter;
-    emitter.on("storybook", (showStorybook) => {
-      const obj = { showStorybook };
-      state.setState(obj);
-    });
-    return tmp3Result;
+    const applyResult = apply.apply(this, callResult);
+    const result = get.set(tmp2, applyResult);
+    value = applyResult;
+  }
+  return value;
+}
+function strategyDefault(c165, cache) {
+  cache = cache.cache;
+  const obj = 1 === c165.length ? monadic : variadic;
+  return obj.bind(this, c165, cache.create(), cache.serializer);
+}
+function serializerDefault() {
+  return JSON.stringify(arguments);
+}
+class ObjectWithoutPrototypeCache {
+  constructor() {
+    _classCallCheck(this, ObjectWithoutPrototypeCache);
+    this.cache = Object.create(null);
   }
 }
-_inherits(StorybookSwitcher, value.Component);
 const entry = {
-  key: "render",
-  value: function render() {
-    let children = this.props.children;
-    const jsx = Fragment.jsx;
-    const View = react_native.View;
-    if (this.state.showStorybook) {
-      children = <tmp />;
-    }
-    return <View style={{ flex: 1 }}>{children}</View>;
+  key: "get",
+  value: function get(arg0) {
+    return this.cache[arg0];
   }
 };
-let items = [entry];
+const items = [
+  entry,
+  {
+    key: "set",
+    value: function set(arg0, arg1) {
+      this.cache[arg0] = arg1;
+    }
+  }
+];
+let closure_5 = _createClassDefault(ObjectWithoutPrototypeCache, items);
+let closure_6 = {
+  create() {
+    const tmp = new closure_5();
+    return tmp;
+  }
+};
+let obj = {
+  variadic: function strategyVariadic(c165, cache) {
+    cache = cache.cache;
+    return variadic.bind(this, c165, cache.create(), cache.serializer);
+  },
+  monadic: function strategyMonadic(c165, cache) {
+    cache = cache.cache;
+    return monadic.bind(this, c165, cache.create(), cache.serializer);
+  }
+};
 
-export default _createClass(StorybookSwitcher, items);
+export const memoize = function memoize(arg0, cache) {
+  const tmp = cache;
+  if (tmp) {
+    if (cache.cache) {
+      cache = cache.cache;
+    }
+    if (cache) {
+      let serializer;
+      if (cache.serializer) {
+        serializer = cache.serializer;
+      }
+      if (cache) {
+        let strategy;
+        if (cache.strategy) {
+          strategy = cache.strategy;
+        }
+        const obj = { cache, serializer };
+        return strategy(arg0, obj);
+      }
+      strategy = strategyDefault;
+    }
+    serializer = serializerDefault;
+  }
+  cache = closure_6;
+};
+export const strategies = obj;

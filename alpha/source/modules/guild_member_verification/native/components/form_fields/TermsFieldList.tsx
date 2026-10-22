@@ -1,19 +1,19 @@
-// Module ID: 6876
-// Function ID: 6877
+// Module ID: 6883
+// Function ID: 6884
 // Name: TermsFieldList
-// Dependencies: [19, 17, 21, 4966, 587, 558, 576, 1128, 5216, 5687, 6877, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 1128, 5220, 5691, 6884, 2]
 
-// Module 6876 (TermsFieldList)
+// Module 6883 (TermsFieldList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5687 */;
-import TableRowDivider from "TableRowDivider" /* 6877 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5691 */;
+import TableRowDivider from "TableRowDivider" /* 6884 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -164,7 +164,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TermsFieldLi
   }
   if (cResult[1] !== tmp4.title) {
     let obj2 = { style: title, accessibilityRole: "header", variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: first };
-    const tmp9 = closure_5(tmp(5216).Text, obj2);
+    const tmp9 = closure_5(tmp(5220).Text, obj2);
     cResult[1] = tmp4.title;
     cResult[2] = tmp9;
     tmp7 = tmp9;
@@ -269,7 +269,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TermsFieldLi
   dependencyMap = tmp;
   let obj = { children: items };
   let obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.string(rules(1128).t.prJqwT) };
-  const Text = rules(5216).Text;
+  const Text = rules(5220).Text;
   intl = rules(1128).intl;
   items = [closure_5(Text, obj2), ];
   const obj3 = {

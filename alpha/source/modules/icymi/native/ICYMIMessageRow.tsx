@@ -1,28 +1,28 @@
-// Module ID: 17768
-// Function ID: 17769
+// Module ID: 17838
+// Function ID: 17839
 // Name: ICYMIMessageRow
-// Dependencies: [19, 17, 4821, 4881, 4843, 4911, 6683, 1392, 17765, 1087, 21, 587, 17727, 1384, 558, 576, 17728, 8721, 8795, 504, 17769, 17770, 5216, 1128, 1202, 5969, 6809, 17730, 8800, 10649, 10032, 17766, 11, 8978, 6887, 17772, 17773, 2]
+// Dependencies: [19, 17, 4821, 4881, 4843, 4911, 6690, 1392, 17835, 1087, 21, 587, 17797, 1384, 558, 576, 17798, 8730, 8804, 504, 17839, 17840, 5220, 1128, 1202, 5976, 6816, 17800, 8809, 10661, 10044, 17836, 11, 8987, 6894, 17842, 17843, 2]
 
-// Module 17768 (ICYMIMessageRow)
+// Module 17838 (ICYMIMessageRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6809 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8800 */;
-import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 10032 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10649 */;
-import DesignConstants from "DesignConstants" /* 17765 */;
-import ICYMIShared from "ICYMIShared" /* 17766 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6816 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8809 */;
+import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 10044 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10661 */;
+import DesignConstants from "DesignConstants" /* 17835 */;
+import ICYMIShared from "ICYMIShared" /* 17836 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildMemberStore from "GuildMemberStore" /* 4881 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6683 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6690 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 17727 */;
+import createICYMIStyles from "createICYMIStyles" /* 17797 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRowCo
     num = lineClamp;
   }
   const tmp5 = closure_18();
-  const context = react.useContext(tmp(17728).ICYMIContext);
+  const context = react.useContext(tmp(17798).ICYMIContext);
   if (cResult[0] === channel.guild_id) {
     let arr;
     let tmp9;
@@ -192,7 +192,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRowCo
             }
           }
           const obj2 = { message, muted: stateFromStores, lineClamp: num, messageOptions: undefined, pointerEvents: "none" };
-          const MessageRowPreview = tmp(17769).MessageRowPreview;
+          const MessageRowPreview = tmp(17839).MessageRowPreview;
           if (0 === arr.length) {
             class A {
               constructor(content_type) {
@@ -275,8 +275,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRowCo
     cResult[10] = undefined !== nested && nested;
     cResult[11] = tmp21;
   }
-  const tmpResult2 = channel(8721);
-  const result = tmpResult2.extractMediaSourcesFromMessage(message, message, channel.guild_id, tmp(8795).GRAVITY_VALID_EMBED_TYPES);
+  const tmpResult2 = channel(8730);
+  const result = tmpResult2.extractMediaSourcesFromMessage(message, message, channel.guild_id, tmp(8804).GRAVITY_VALID_EMBED_TYPES);
   cResult[0] = channel.guild_id;
   cResult[1] = message;
   cResult[2] = result;
@@ -304,9 +304,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRowCo
   const tmp = closure_18();
   let tmp2 = message;
   let tmp3 = dependencyMap;
-  const context = react.useContext(message(17728).ICYMIContext);
-  const obj = message(8721);
-  const result = obj.extractMediaSourcesFromMessage(message, message, channel.guild_id, message(8795).GRAVITY_VALID_EMBED_TYPES);
+  const context = react.useContext(message(17798).ICYMIContext);
+  const obj = message(8730);
+  const result = obj.extractMediaSourcesFromMessage(message, message, channel.guild_id, message(8804).GRAVITY_VALID_EMBED_TYPES);
   const items = [UserGuildSettingsStore];
   const obj2 = message(504);
   const stateFromStores = obj2.useStateFromStores(items, () => UserGuildSettingsStore.isChannelMuted(channel.getGuildId(), channel.id));
@@ -342,7 +342,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRowCo
   if (tmp12Result) {
     const obj5 = { message, muted: stateFromStores, lineClamp: num, messageOptions: obj6, pointerEvents: str };
     obj6 = undefined;
-    const MessageRowPreview = tmp2(17769).MessageRowPreview;
+    const MessageRowPreview = tmp2(17839).MessageRowPreview;
     const tmp12 = closure_14;
     if (0 === result.length) {
       if (message.attachments.length > 0) {
@@ -360,14 +360,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRowCo
   items3 = [tmp12Result, , ];
   let tmp13 = result.length > 0;
   if (tmp13) {
-    const obj7 = { style: tmp.media, children: closure_14(channel(17770), obj8) };
+    const obj7 = { style: tmp.media, children: closure_14(channel(17840), obj8) };
     obj8 = { message, visible: flag2, itemType: "message" };
     tmp13 = closure_14(tmp9, obj7);
   }
   items3[1] = tmp13;
   let tmp16 = 0 === result.length && message.embeds.length > 0;
   if (tmp16) {
-    const obj9 = { style: tmp.media, children: closure_14(tmp2(17769).NonMediaEmbedsRowPreview, obj10) };
+    const obj9 = { style: tmp.media, children: closure_14(tmp2(17839).NonMediaEmbedsRowPreview, obj10) };
     obj10 = { message, muted: stateFromStores, lineClamp: 3 };
     tmp16 = closure_14(tmp9, obj9);
   }
@@ -391,7 +391,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReplyM
   message = message.message;
   ({ channel, guild } = message);
   const tmp4 = closure_18();
-  const context = react.useContext(message(17728).ICYMIContext);
+  const context = react.useContext(message(17798).ICYMIContext);
   const obj2 = react;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
@@ -433,7 +433,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReplyM
     if (colorString == null) {
       colorString = closure_12;
     }
-    const width = obj2.useContext(tmp(17728).ICYMIContext).width;
+    const width = obj2.useContext(tmp(17798).ICYMIContext).width;
     const diff = width - 2 * PX_12 - 30 - PX_8 - 2;
     if (cResult[7] === context.inset) {
       if (cResult[8] === context.margin) {
@@ -449,7 +449,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReplyM
           const replyPreview = tmp4.replyPreview;
           if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
             const obj3 = { variant: "text-sm/semibold", color: "text-muted", style: { fontStyle: "italic" }, children: intl.string(message(1128).t.mPPcez) };
-            const Text = tmp(5216).Text;
+            const Text = tmp(5220).Text;
             intl = tmp(1128).intl;
             const tmp22 = closure_14(Text, obj3);
             cResult[11] = tmp22;
@@ -551,7 +551,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReplyM
                         tmp43 = tmp46;
                       }
                       const obj10 = { value: tmp19, children: tmp36 };
-                      const tmp42 = closure_14(message(17728).ICYMIContext.Provider, obj10);
+                      const tmp42 = closure_14(message(17798).ICYMIContext.Provider, obj10);
                       cResult[30] = tmp19;
                       cResult[31] = tmp36;
                       cResult[32] = tmp42;
@@ -567,14 +567,14 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReplyM
                   tmp36 = tmp39;
                 }
                 const obj12 = { variant: "text-md/semibold", style: tmp30, lineClamp: 1, children: tmp31 };
-                const tmp35 = closure_14(message(5216).Text, obj12);
+                const tmp35 = closure_14(message(5220).Text, obj12);
                 cResult[23] = tmp30;
                 cResult[24] = tmp31;
                 cResult[25] = tmp35;
                 tmp33 = tmp35;
               }
             }
-            const tmpResult4 = message(5969);
+            const tmpResult4 = message(5976);
             const name = tmpResult4.getName(guild.id, channel.id, stateFromStores);
             cResult[19] = stateFromStores;
             cResult[20] = channel.id;
@@ -1391,7 +1391,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRowWr
   const obj = gravityMessage(576);
   const cResult = obj.c(15);
   ({ messageContext, visible, message } = arg0);
-  const obj2 = gravityMessage(17730);
+  const obj2 = gravityMessage(17800);
   gravityMessage = obj2.useGravityMessage(message);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ChannelStore];
@@ -1501,7 +1501,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRowWr
   let visible;
   let gravityMessage;
   ({ message, messageContext, visible } = arg0);
-  const obj = gravityMessage(17730);
+  const obj = gravityMessage(17800);
   gravityMessage = obj.useGravityMessage(message);
   const items = [ChannelStore];
   const obj2 = gravityMessage(504);

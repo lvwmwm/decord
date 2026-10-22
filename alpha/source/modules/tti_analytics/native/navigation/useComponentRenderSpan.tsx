@@ -1,14 +1,14 @@
-// Module ID: 17809
-// Function ID: 17810
+// Module ID: 17879
+// Function ID: 17880
 // Name: useComponentRenderSpan
-// Dependencies: [19, 3, 558, 576, 12738, 12742, 12739, 17810, 2]
+// Dependencies: [19, 3, 558, 576, 12770, 12774, 12771, 17880, 2]
 // Exports: useNavigationTTIRegionMeasurement
 
-// Module 17809 (useComponentRenderSpan)
+// Module 17879 (useComponentRenderSpan)
 import LoggerDefault from "Logger" /* 3 */;
-import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 12739 */;
-import NavigationSpanTypes from "NavigationSpanTypes" /* 12742 */;
-import NavigationTTIRegionDebugState from "NavigationTTIRegionDebugState" /* 17810 */;
+import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 12771 */;
+import NavigationSpanTypes from "NavigationSpanTypes" /* 12774 */;
+import NavigationTTIRegionDebugState from "NavigationTTIRegionDebugState" /* 17880 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;

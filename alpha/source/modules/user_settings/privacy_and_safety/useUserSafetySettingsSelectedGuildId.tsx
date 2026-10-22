@@ -1,13 +1,13 @@
-// Module ID: 17104
-// Function ID: 17105
+// Module ID: 17173
+// Function ID: 17174
 // Name: useUserSafetySettingsSelectedGuildId
-// Dependencies: [4843, 17100, 1087, 558, 576, 504, 2]
+// Dependencies: [4843, 17169, 1087, 558, 576, 504, 2]
 // Exports: useAllServersOptionSelected
 
-// Module 17104 (useUserSafetySettingsSelectedGuildId)
+// Module 17173 (useUserSafetySettingsSelectedGuildId)
 import Constants from "Constants" /* 1087 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 17100 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 17169 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

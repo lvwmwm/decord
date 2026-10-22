@@ -1,35 +1,35 @@
-// Module ID: 18405
-// Function ID: 18406
+// Module ID: 18473
+// Function ID: 18474
 // Name: ActivityShelfItem
-// Dependencies: [19, 1087, 1206, 21, 4966, 587, 4963, 558, 576, 12054, 11954, 6865, 18403, 1900, 5616, 11436, 9412, 18402, 11996, 1202, 18406, 5020, 6887, 18404, 5969, 12059, 1128, 13625, 5216, 2]
+// Dependencies: [19, 1087, 1206, 21, 4969, 587, 4966, 558, 576, 12075, 11975, 6872, 18471, 1900, 5620, 11453, 9423, 18470, 12017, 1202, 18474, 5023, 6894, 18472, 5976, 12080, 1128, 13661, 5220, 2]
 
-// Module 18405 (ActivityShelfItem)
+// Module 18473 (ActivityShelfItem)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import native from "native" /* 1202 */;
 import FormConstants from "FormConstants" /* 1206 */;
 import react_nativeDefault from "react-native" /* 1900 */;
-import native2 from "native" /* 5020 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5616 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5969 */;
-import NativeViewDefault from "NativeView" /* 6865 */;
-import Pressables from "Pressables" /* 6887 */;
-import TestModeUtils from "TestModeUtils" /* 9412 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11436 */;
-import useActivityShelfItem from "useActivityShelfItem" /* 11954 */;
-import useLaunchingActivityButtonStateDefault from "useLaunchingActivityButtonState" /* 12054 */;
-import getItemSubtitleForMaxPlayers from "getItemSubtitleForMaxPlayers" /* 12059 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13625 */;
-import ActivityShelfItemBackgroundDefault from "ActivityShelfItemBackground" /* 18402 */;
-import ActivityShelfItemSummaryDefault from "ActivityShelfItemSummary" /* 18403 */;
-import useActivityUsersDefault from "useActivityUsers" /* 18404 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18406 */;
+import native2 from "native" /* 5023 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5620 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5976 */;
+import NativeViewDefault from "NativeView" /* 6872 */;
+import Pressables from "Pressables" /* 6894 */;
+import TestModeUtils from "TestModeUtils" /* 9423 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11453 */;
+import useActivityShelfItem from "useActivityShelfItem" /* 11975 */;
+import useLaunchingActivityButtonStateDefault from "useLaunchingActivityButtonState" /* 12075 */;
+import getItemSubtitleForMaxPlayers from "getItemSubtitleForMaxPlayers" /* 12080 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13661 */;
+import ActivityShelfItemBackgroundDefault from "ActivityShelfItemBackground" /* 18470 */;
+import ActivityShelfItemSummaryDefault from "ActivityShelfItemSummary" /* 18471 */;
+import useActivityUsersDefault from "useActivityUsers" /* 18472 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18474 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
-import ColorUtils_mod from "ColorUtils" /* 4963 */;
+import createStyles_mod from "createStyles" /* 4969 */;
+import ColorUtils_mod from "ColorUtils" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -123,10 +123,10 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
         cResult[11] = tmp16;
         tmp14 = tmp16;
       }
-      let tmp11 = action === tmp(11954).ActivityAction.LEAVE;
+      let tmp11 = action === tmp(11975).ActivityAction.LEAVE;
       if (tmp11) {
         const obj4 = { style: tmp8.ongoingActivityJoinedContainer };
-        tmp11 = metroRequire(tmp6(6865), obj4);
+        tmp11 = metroRequire(tmp6(6872), obj4);
       }
       cResult[4] = action;
       cResult[5] = tmp8;
@@ -159,12 +159,12 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
       return null;
     }
   }
-  let tmp8 = action === tmp4(11954).ActivityAction.LEAVE;
+  let tmp8 = action === tmp4(11975).ActivityAction.LEAVE;
   const tmp6 = metroImportAll;
   const tmp7 = metroImportDefault;
   if (tmp8) {
     const obj = { style: tmp3.ongoingActivityJoinedContainer };
-    tmp8 = metroRequire(tmp(6865), obj);
+    tmp8 = metroRequire(tmp(6872), obj);
   }
   const items = [tmp8, ];
   let id1;
@@ -244,7 +244,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShel
                 if (cResult[11] === result) {
                   tmp14 = cResult[12];
                 }
-                let tmp15 = tmp7(11436)(tmp14);
+                let tmp15 = tmp7(11453)(tmp14);
                 if (cResult[13] === activityAction) {
                   let tmp16;
                   if (cResult[14] === (undefined !== disableBadges && disableBadges)) {
@@ -333,7 +333,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShel
                                                   tmp51 = tmp54;
                                                 }
                                               }
-                                              let tmp46Result = activityAction === tmp(11954).ActivityAction.START;
+                                              let tmp46Result = activityAction === tmp(11975).ActivityAction.START;
                                               if (tmp46Result) {
                                                 const obj3 = { action: activityAction, channelId: id1, guildId: guildId1, activityItem };
                                                 id1 = undefined;
@@ -382,7 +382,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShel
                                     let tmp34 = null;
                                     if (tmp16) {
                                       const obj7 = { labelType };
-                                      tmp34 = metroRequire(tmp7(11996), obj7);
+                                      tmp34 = metroRequire(tmp7(12017), obj7);
                                     }
                                     cResult[35] = tmp16;
                                     cResult[36] = labelType;
@@ -511,10 +511,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShel
   const tmp8Result = TestModeUtils;
   const isTestModeForApplication = tmp8Result.useIsTestModeForApplication(activityItem.application.id);
   const obj3 = { activeOpacity: 0.7, onPress: onActivityItemSelected2, disabled: activityAction === useActivityShelfItem.ActivityAction.LEAVE, androidRippleConfig: ANDROID_FOREGROUND_RIPPLE, style: items1, children: items4 };
-  const PressableOpacity = tmp8(6887).PressableOpacity;
+  const PressableOpacity = tmp8(6894).PressableOpacity;
   items1 = [tmp.container, { width, height }];
   const obj4 = { theme: ThemeTypes.DARK, children: items3 };
-  const ThemeContextProvider = tmp8(5020).ThemeContextProvider;
+  const ThemeContextProvider = tmp8(5023).ThemeContextProvider;
   const obj5 = { style: tmp.imageOuterContainer, children: items2 };
   const obj6 = { accessibilityLabel: activityItem.application.name, imageBackground: tmp10, aspectRatio: width / height };
   const tmp3Result = NativeViewDefault;
@@ -529,7 +529,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShel
   let tmp15Result = null;
   if (tmp11) {
     const obj8 = { labelType };
-    tmp15Result = tmp15(tmp3(11996), obj8);
+    tmp15Result = tmp15(tmp3(12017), obj8);
   }
   items3[1] = tmp15Result;
   let tmp15Result3 = null;
@@ -545,7 +545,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShel
   }
   items3[2] = tmp15Result3;
   items4 = [metroImportAll(ThemeContextProvider, obj4), ];
-  let tmp15Result4 = activityAction === tmp8(11954).ActivityAction.START;
+  let tmp15Result4 = activityAction === tmp8(11975).ActivityAction.START;
   if (tmp15Result4) {
     const obj11 = { action: activityAction, channelId: id1, guildId: guildId1, activityItem };
     id1 = undefined;
@@ -677,7 +677,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Partic
     } else {
       tmp18 = cResult[20];
     }
-    const Text = tmp(5216).Text;
+    const Text = tmp(5220).Text;
     const participantsText = tmp4.participantsText;
     if (action === useActivityShelfItem.ActivityAction.START) {
       let num4 = activityItem.application.maxParticipants;

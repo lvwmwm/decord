@@ -1,49 +1,43 @@
 // Module ID: 15499
 // Function ID: 15500
-// Dependencies: [15468, 15500, 15443, 15496]
+// Dependencies: [15500, 15511, 15513, 15516, 15519, 15520]
 
 // Module 15499
-import _mod15443 from "module_15443" /* 15443 */;
-import _mod15468 from "module_15468" /* 15468 */;
-import defineProperty2 from "defineProperty2" /* 15496 */;
 import _mod15500 from "module_15500" /* 15500 */;
+import _mod15511 from "module_15511" /* 15511 */;
+import _mod15513 from "module_15513" /* 15513 */;
+import _mod15516 from "module_15516" /* 15516 */;
+import _mod15519 from "module_15519" /* 15519 */;
+import _mod15520 from "module_15520" /* 15520 */;
 
+let closure_3 = _mod15500("toPrimitive");
 
-export default (arg0, arg1, value, arg3) => {
-  const obj = arg3 || {};
-  let flag = obj.enumerable;
-  let name = arg1;
-  const tmp = arg1;
-  if (undefined !== obj.name) {
-    name = obj.name;
-  }
-  if (_mod15468(value)) {
-    _mod15500(value, name, obj);
-  }
-  if (obj.global) {
-    if (flag) {
-      arg0[arg1] = value;
-    } else {
-      _mod15443(arg1, value);
-    }
-  } else {
-    try {
-      if (obj.unsafe) {
-        if (arg0[arg1]) {
-          flag = true;
+export default function(arg0, arg1) {
+  if (_mod15511(arg0)) {
+    if (!_mod15513(arg0)) {
+      let str = arg1;
+      const tmp4 = _mod15516(arg0, closure_3);
+      if (tmp4) {
+        if (undefined === str) {
+          str = "default";
         }
+        const tmp5 = _mod15519(tmp4, arg0, str);
+        if (_mod15511(tmp5)) {
+          if (!_mod15513(tmp5)) {
+            const self = this;
+            const self2 = this;
+            const tmp7 = new TypeError("Can't convert object to primitive value");
+            throw tmp7;
+          }
+        }
+        return tmp5;
       } else {
-        delete tmp5[tmp];
+        let str2 = str;
+        if (undefined === str) {
+          str2 = "number";
+        }
+        return _mod15520(arg0, str2);
       }
-    } catch (err) {
-    }
-    const tmp6 = flag;
-    if (tmp6) {
-      arg0[arg1] = value;
-    } else {
-      const obj2 = { value, enumerable: false, configurable: !obj.nonConfigurable, writable: !obj.nonWritable };
-      const tmp2Result = defineProperty2;
-      tmp2Result.f(arg0, arg1, obj2);
     }
   }
   return arg0;

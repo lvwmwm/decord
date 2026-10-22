@@ -1,19 +1,19 @@
-// Module ID: 13802
-// Function ID: 13803
+// Module ID: 13838
+// Function ID: 13839
 // Name: GiftingBadgeLevelUpProgress
-// Dependencies: [19, 17, 8645, 21, 4966, 587, 558, 576, 10460, 10463, 5216, 1128, 2632, 2]
+// Dependencies: [19, 17, 8654, 21, 4969, 587, 558, 576, 10472, 10475, 5220, 1128, 2632, 2]
 
-// Module 13802 (GiftingBadgeLevelUpProgress)
+// Module 13838 (GiftingBadgeLevelUpProgress)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef2632 from "module_2632" /* 2632 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8645 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10460 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10463 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8654 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10472 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10475 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -224,7 +224,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingBadge
                 tmp37 = cResult[42];
               }
               const labels = tmp4.labels;
-              const Text = tmp(5216).Text;
+              const Text = tmp(5220).Text;
               const intl = tmp(1128).intl;
               const obj8 = { count: progress, threshold: tmp16 };
               const formatResult = intl.format(_modDef2632.iIpfQe, obj8);
@@ -339,7 +339,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingBadge
   items3 = [metroRequire(View, obj2), ];
   const obj8 = { style: tmp.labels, children: hasOwnProperty(Text, obj9) };
   obj9 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(_modDef2632.iIpfQe, { count: progress, threshold: tmp7 }) };
-  Text = tmp2(5216).Text;
+  Text = tmp2(5220).Text;
   intl = tmp2(1128).intl;
   items3[1] = hasOwnProperty(View, obj8);
   return metroRequire(View, obj);

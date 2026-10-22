@@ -1,12 +1,12 @@
-// Module ID: 12609
-// Function ID: 12610
+// Module ID: 12639
+// Function ID: 12640
 // Name: openChannelCallModalForChannelId
-// Dependencies: [4821, 7854, 7843, 2]
+// Dependencies: [4821, 7862, 7851, 2]
 // Exports: default
 
-// Module 12609 (openChannelCallModalForChannelId)
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7843 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7854 */;
+// Module 12639 (openChannelCallModalForChannelId)
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7851 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7862 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import size from "module_2" /* 2 */;
 

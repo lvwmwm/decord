@@ -1,9 +1,9 @@
-// Module ID: 10945
-// Function ID: 10946
+// Module ID: 10962
+// Function ID: 10963
 // Name: ForumPostReactionButton
-// Dependencies: [19, 17, 21, 4966, 587, 558, 576, 10946, 1128, 5216, 6887, 5207, 9741, 10943, 4797, 9941, 1105, 1417, 4913, 7206, 10962, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 10963, 1128, 5220, 6894, 5211, 9753, 10960, 4797, 9953, 1105, 1417, 4913, 7213, 10979, 2]
 
-// Module 10945 (ForumPostReactionButton)
+// Module 10962 (ForumPostReactionButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,18 +11,18 @@ import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
 import intl2 from "intl" /* 1128 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import ReactionUtils from "ReactionUtils" /* 4913 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5207 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import Pressables from "Pressables" /* 6887 */;
-import EmojiDefault from "Emoji" /* 7206 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9741 */;
-import useEmojiColorPalette from "useEmojiColorPalette" /* 9941 */;
-import useReactionPermissionsDefault from "useReactionPermissions" /* 10943 */;
-import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10946 */;
-import AnimatedCounterDefault from "AnimatedCounter" /* 10962 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5211 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import Pressables from "Pressables" /* 6894 */;
+import EmojiDefault from "Emoji" /* 7213 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9753 */;
+import useEmojiColorPalette from "useEmojiColorPalette" /* 9953 */;
+import useReactionPermissionsDefault from "useReactionPermissions" /* 10960 */;
+import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10963 */;
+import AnimatedCounterDefault from "AnimatedCounter" /* 10979 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -196,7 +196,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddReactionB
   const cResult = obj.c(13);
   ({ threadId, containerStyle, reactionType } = arg0);
   if (undefined === reactionType) {
-    reactionType = tmp(5207).ReactionTypes.NORMAL;
+    reactionType = tmp(5211).ReactionTypes.NORMAL;
   }
   const tmp4 = closure_7();
   if (cResult[0] === reactionType) {

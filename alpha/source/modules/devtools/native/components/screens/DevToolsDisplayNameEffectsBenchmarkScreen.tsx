@@ -1,25 +1,25 @@
-// Module ID: 16933
-// Function ID: 16934
+// Module ID: 17002
+// Function ID: 17003
 // Name: DevToolsDisplayNameEffectsBenchmarkScreen
-// Dependencies: [32, 19, 17, 1392, 1410, 21, 1411, 10626, 1128, 10622, 2928, 4966, 587, 558, 576, 5216, 5226, 5957, 10619, 10620, 504, 16934, 13966, 6882, 6966, 6348, 2]
+// Dependencies: [32, 19, 17, 1392, 1410, 21, 1411, 10638, 1128, 10634, 2928, 4969, 587, 558, 576, 5220, 5230, 5964, 10631, 10632, 504, 17003, 14002, 6889, 6973, 6355, 2]
 
-// Module 16933 (DevToolsDisplayNameEffectsBenchmarkScreen)
+// Module 17002 (DevToolsDisplayNameEffectsBenchmarkScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1410 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1411 */;
 import _modDef2928 from "module_2928" /* 2928 */;
-import components_Button_Button from "components/Button/Button" /* 5226 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10619 */;
-import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10622 */;
-import _mod10626 from "module_10626" /* 10626 */;
+import components_Button_Button from "components/Button/Button" /* 5230 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10631 */;
+import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10634 */;
+import _mod10638 from "module_10638" /* 10638 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,9 +32,9 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const Text_Text = tmp(5216);
-const Stack_Stack = tmp(5957);
-const types = tmp(10620);
+const Text_Text = tmp(5220);
+const Stack_Stack = tmp(5964);
+const types = tmp(10632);
 function effectName(arg0) {
   const intl = intl2.intl;
   const string = intl.string;
@@ -485,7 +485,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDisp
   const memo = first1.useMemo(() => items1.find((key) => key.key === first2).name, items2);
   const items3 = [memo];
   const memo1 = first1.useMemo(() => {
-    const obj = _mod10626;
+    const obj = _mod10638;
     return obj.splitGraphemes(memo).length;
   }, items3);
   const items4 = [first];
@@ -612,7 +612,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDisp
               const length = String(Math.max(run.params.rowCount - 1, 0)).length;
               const StringResult = String(arg1);
               const padStartResult = StringResult.padStart(length, "0");
-              const obj3 = _mod10626;
+              const obj3 = _mod10638;
               const splitGraphemesResult = obj3.splitGraphemes(name);
               sum = padStartResult;
               const tmp = metroImportAll;

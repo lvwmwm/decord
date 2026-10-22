@@ -1,47 +1,41 @@
-// Module ID: 12910
-// Function ID: 12911
+// Module ID: 12944
+// Function ID: 12945
 // Name: TraitPicker
-// Dependencies: [32, 19, 17, 4967, 1392, 12843, 5995, 21, 587, 4966, 12911, 558, 576, 6341, 1128, 3088, 12861, 5216, 504, 5249, 1991, 6343, 5996, 5581, 5035, 5188, 12913, 2]
+// Dependencies: [32, 19, 17, 4970, 21, 587, 4969, 12945, 558, 576, 6348, 1128, 3088, 12893, 5220, 504, 5253, 12947, 5585, 5038, 5192, 12948, 12949, 2]
 
-// Module 12910 (TraitPicker)
+// Module 12944 (TraitPicker)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import _modDef3088 from "module_3088" /* 3088 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
-import timing from "timing" /* 5188 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import CheckpointConstants from "CheckpointConstants" /* 5995 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5996 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6341 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6343 */;
-import CheckpointTextDefault from "CheckpointText" /* 12861 */;
-import TraitOptionList from "TraitOptionList" /* 12911 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
+import timing from "timing" /* 5192 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6348 */;
+import CheckpointTextDefault from "CheckpointText" /* 12893 */;
+import TraitOptionList from "TraitOptionList" /* 12945 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 4967 */;
-import UserStore_mod from "UserStore" /* 1392 */;
-import CheckpointStore from "CheckpointStore" /* 12843 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 4970 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap;
+const require = globalThis.__r;
+let dependencyMap, importDefault;
 
-let c10;
+let metroImportAll;
+let metroImportDefault;
 let obj2;
 let obj3;
 let obj4;
-let unpackModuleId;
 let _slicedToArray = _slicedToArray_mod;
 let View = react_native.View;
 let AccessibilityStore = AccessibilityStore_mod;
-let UserStore = UserStore_mod;
-const CHECKPOINT_RARITY_ORDER = CheckpointConstants.CHECKPOINT_RARITY_ORDER;
-({ jsx: c10, jsxs: unpackModuleId } = Fragment);
-let c12 = 600;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let c9 = 600;
 const PX_12 = nativeDefault.space.PX_12;
 let createStyles = createStyles_mod;
 let obj = { container: obj2, earnedRow: obj3, details: obj4 };
@@ -49,9 +43,9 @@ obj2 = { gap: TraitOptionList.TRAIT_OPTION_SPACING };
 createStyles = createStyles.createStyles;
 obj3 = { paddingHorizontal: TraitOptionList.CONTENT_INSET };
 obj4 = { paddingHorizontal: TraitOptionList.CONTENT_INSET };
-let closure_14 = createStyles(obj);
+let closure_11 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function EarnedCountHeader(arg0) {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function EarnedCountHeader(arg0) {
   let customizationOption;
   let earnedCount;
   let tmp5;
@@ -60,7 +54,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Earned
   let obj = react2;
   const cResult = obj.c(14);
   ({ customizationOption, earnedCount, totalCount } = arg0);
-  const tmp4 = closure_14();
+  const tmp4 = closure_11();
   if (cResult[0] !== customizationOption) {
     const tmpResult = CheckpointCustomizationUtils;
     const customizationOptionName = tmpResult.getCustomizationOptionName(customizationOption);
@@ -93,7 +87,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Earned
         }
       }
       const obj2 = { variant: "experimental/body-sm/medium", color: "text-default", style: tmp13, accessibilityRole: "header", accessibilityLabel: combined, children: tmp14 };
-      const tmp20 = authStore(Text_Text.Text, obj2);
+      const tmp20 = metroImportDefault(Text_Text.Text, obj2);
       cResult[10] = combined;
       cResult[11] = tmp4.earnedRow;
       cResult[12] = tmp14;
@@ -105,7 +99,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Earned
       class S {
         constructor(arg0, arg1) {
           obj = { variant: "experimental/mono-md/bold", children: arg0 };
-          return closure_1_10(closure_1_1(closure_1_2[16]), obj, arg1);
+          return closure_1_7(closure_1_1(closure_1_2[13]), obj, arg1);
         }
       }
       cResult[9] = S;
@@ -114,7 +108,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Earned
       class S {
         constructor(arg0, arg1) {
           obj = { variant: "experimental/mono-md/bold", children: arg0 };
-          return closure_1_10(closure_1_1(closure_1_2[16]), obj, arg1);
+          return closure_1_7(closure_1_1(closure_1_2[13]), obj, arg1);
         }
       }
     }
@@ -130,7 +124,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Earned
     class S {
       constructor(arg0, arg1) {
         obj = { variant: "experimental/mono-md/bold", children: arg0 };
-        return closure_1_10(closure_1_1(closure_1_2[16]), obj, arg1);
+        return closure_1_7(closure_1_1(closure_1_2[13]), obj, arg1);
       }
     }
     cResult[5] = tmp9;
@@ -139,7 +133,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Earned
     class S {
       constructor(arg0, arg1) {
         obj = { variant: "experimental/mono-md/bold", children: arg0 };
-        return closure_1_10(closure_1_1(closure_1_2[16]), obj, arg1);
+        return closure_1_7(closure_1_1(closure_1_2[13]), obj, arg1);
       }
     }
   }
@@ -156,7 +150,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Earned
   let totalCount;
   ({ earnedCount, totalCount } = customizationOption);
   customizationOption = customizationOption.customizationOption;
-  const tmp = closure_14();
+  const tmp = closure_11();
   let obj = CheckpointCustomizationUtils;
   const customizationOptionName = obj.getCustomizationOptionName(customizationOption);
   const intl = intl3.intl;
@@ -176,718 +170,512 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Earned
     totalCount,
     countHook(children, arg1) {
       const obj = { variant: "experimental/mono-md/bold", children };
-      return closure_1_10(CheckpointTextDefault, obj, arg1);
+      return closure_1_7(CheckpointTextDefault, obj, arg1);
     }
   };
-  return authStore(Text, obj3);
+  return metroImportDefault(Text, obj3);
 });
 const __initData = { code: "function TraitPickerTsx1(){const{INTRO_DETAILS_DURATION_MS,Easing,withTiming,isDetailsVisible,INTRO_DETAILS_OFFSET_Y}=this.__closure;const timing={duration:INTRO_DETAILS_DURATION_MS,easing:Easing.out(Easing.cubic)};return{opacity:withTiming(isDetailsVisible?1:0,timing),transform:[{translateY:withTiming(isDetailsVisible?0:INTRO_DETAILS_OFFSET_Y,timing)}]};}" };
 const __initData2 = { code: "function TraitPickerTsx2(){const{INTRO_DETAILS_DURATION_MS,Easing,withTiming,isDetailsVisible,INTRO_DETAILS_OFFSET_Y}=this.__closure;const timing={duration:INTRO_DETAILS_DURATION_MS,easing:Easing.out(Easing.cubic)};return{opacity:withTiming(isDetailsVisible?1:0,timing),transform:[{translateY:withTiming(isDetailsVisible?0:INTRO_DETAILS_OFFSET_Y,timing)}]};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(arg0) {
-  let closure_2;
-  let closure_3;
-  let currentUser;
+  let closure_1;
   let customizationOption;
   let disabled;
+  let earnedCount;
   let hideDescriptionAndRarity;
-  let items3;
+  let items1;
   let onSelectOption;
   let options;
   let savedOptionId;
   let selectedOptionId;
   let showEarnedCount;
   let skipIntro;
-  let stats;
+  let stateFromStores;
   let style;
-  let tmp11;
-  let tmp12;
-  let tmp16;
-  let tmp17;
-  let tmp21;
-  let tmp22;
+  let tmp10;
+  let tmp9;
   let totalCount;
   let useReducedMotion;
-  let visibleTraitOptions;
-  let tmp = selectedOptionId;
-  let obj = selectedOptionId(576);
-  const cResult = obj.c(61);
+  const tmp = selectedOptionId;
+  let obj = selectedOptionId(stateFromStores[9]);
+  const cResult = obj.c(46);
   ({ style, customizationOption, disabled, options, savedOptionId, selectedOptionId } = arg0);
   ({ hideDescriptionAndRarity, skipIntro, showEarnedCount, onSelectOption } = arg0);
-  dependencyMap = tmp6;
-  _slicedToArray = tmp8;
-  const tmp10 = closure_14();
+  importDefault = tmp6;
+  const tmp8 = closure_11();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [AccessibilityStore];
-    class R {
+    class E {
       constructor() {
-        return AccessibilityStore.useReducedMotion;
+        return useReducedMotion.useReducedMotion;
       }
     }
     let num = 0;
     cResult[0] = items;
     let num2 = 1;
-    cResult[1] = R;
-    tmp11 = items;
-    tmp12 = R;
+    cResult[1] = E;
+    tmp10 = E;
+    tmp9 = items;
   } else {
-    [tmp11, tmp12] = cResult;
+    [tmp9, tmp10] = cResult;
   }
-  const tmp2Result = selectedOptionId(504);
-  const stateFromStores = tmp2Result.useStateFromStores(tmp11, tmp12);
-  const tmp2Result5 = selectedOptionId(5249);
-  const isScreenReaderEnabled = tmp2Result5.useIsScreenReaderEnabled();
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [stats];
-    class R {
-      constructor() {
-        return AccessibilityStore.useReducedMotion;
+  const tmpResult = tmp(tmp2[15]);
+  stateFromStores = tmpResult.useStateFromStores(tmp9, tmp10);
+  const tmpResult5 = tmp(stateFromStores[16]);
+  const isScreenReaderEnabled = tmpResult5.useIsScreenReaderEnabled();
+  if (cResult[2] === customizationOption) {
+    if (cResult[3] === options) {
+      let tmp14;
+      if (cResult[4] === savedOptionId) {
+        tmp14 = cResult[5];
       }
-    }
-    cResult[2] = items1;
-    cResult[3] = tmp19;
-    tmp17 = tmp19;
-    tmp16 = items1;
-  } else {
-    tmp16 = cResult[2];
-    tmp17 = cResult[3];
-  }
-  const tmp2Result6 = selectedOptionId(504);
-  const stateFromStores1 = tmp2Result6.useStateFromStores(tmp16, tmp17);
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [UserStore];
-    class U {
-      constructor() {
-        const obj = selectedOptionId(closure_2[20]);
-        return obj.isPremium(currentUser.getCurrentUser());
+      const tmpResult6 = tmp(stateFromStores[17]);
+      const traitPickerOptions = tmpResult6.useTraitPickerOptions(tmp14);
+      class E {
+        constructor() {
+          return useReducedMotion.useReducedMotion;
+        }
       }
-    }
-    cResult[4] = U;
-    cResult[5] = items2;
-    tmp22 = items2;
-    tmp21 = U;
-  } else {
-    tmp21 = cResult[4];
-    tmp22 = cResult[5];
-  }
-  const tmp2Result7 = selectedOptionId(504);
-  const stateFromStores2 = tmp2Result7.useStateFromStores(tmp22, tmp21);
-  if (cResult[6] === customizationOption) {
-    if (cResult[7] === stateFromStores2) {
-      if (cResult[8] === options) {
-        if (cResult[9] === savedOptionId) {
-          let tmp25;
-          if (cResult[10] === stateFromStores1) {
-            tmp25 = cResult[11];
-          }
-          ({ visibleTraitOptions, totalCount } = tmp25);
-          class U {
-            constructor() {
-              const obj = selectedOptionId(closure_2[20]);
-              return obj.isPremium(currentUser.getCurrentUser());
-            }
-          }
-          AccessibilityStore = tmp50;
-          UserStore = tmp52;
-          if (cResult[13] === tmp50) {
-            if (cResult[14] === null != selectedOptionId) {
-              if (cResult[15] === stateFromStores) {
-                if (cResult[16] === isScreenReaderEnabled) {
-                  let tmp53;
-                  let tmp73;
-                  if (cResult[17] === (undefined !== skipIntro && skipIntro)) {
-                    tmp53 = cResult[18];
-                  }
-                  const tmp54 = onSelectOption;
-                  class U {
-                    constructor() {
-                      const obj = selectedOptionId(closure_2[20]);
-                      return obj.isPremium(currentUser.getCurrentUser());
+      ({ totalCount, earnedCount } = traitPickerOptions);
+      let closure_5 = tmp17;
+      if (cResult[6] === earnedCount) {
+        if (cResult[7] === null != selectedOptionId) {
+          if (cResult[8] === stateFromStores) {
+            if (cResult[9] === isScreenReaderEnabled) {
+              let tmp18;
+              if (cResult[10] === (undefined !== skipIntro && skipIntro)) {
+                tmp18 = cResult[11];
+              }
+              const tmp20 = require("useInitialValue")(tmp18);
+              const tmp19 = importDefault;
+              class E {
+                constructor() {
+                  return useReducedMotion.useReducedMotion;
+                }
+              }
+              AccessibilityStore = tmp21;
+              tmp(stateFromStores[19]);
+              const fn = function j() {
+                let Easing;
+                let items;
+                const obj = { duration, easing: Easing.out(ReanimatedRexport.Easing.cubic) };
+                Easing = ReanimatedRexport.Easing;
+                let num = 0;
+                const withTiming = timing.withTiming;
+                timing;
+                if (useReducedMotion) {
+                  num = 1;
+                }
+                let num2 = 0;
+                const obj2 = { opacity: withTiming(num, obj), transform: items };
+                const withTiming2 = tmp(5192).withTiming;
+                timing;
+                if (!useReducedMotion) {
+                  num2 = PX_12;
+                }
+                items = [{ translateY: withTiming2(num2, obj) }];
+                ({ translateY: withTiming2(num2, obj) });
+                return obj2;
+              };
+              let obj2 = { INTRO_DETAILS_DURATION_MS: v600, Easing: tmp(tmp2[19]).Easing, withTiming: tmp(tmp2[20]).withTiming, isDetailsVisible: tmp21, INTRO_DETAILS_OFFSET_Y: PX_12 };
+              class H {
+                constructor() {
+                  let num = 0;
+                  if (!closure_5) {
+                    num = 0;
+                    if (!closure_1) {
+                      num = 0;
+                      if (!stateFromStores) {
+                        num = 0;
+                        if (!isScreenReaderEnabled) {
+                          const _Math = Math;
+                          num = Math.max(earnedCount - 1, 0);
+                        }
+                      }
                     }
                   }
-                  const tmp57 = onSelectOption(5581)(tmp53);
-                  stats = tmp58;
-                  function st() {
-                    let Easing;
-                    let items;
-                    const obj = { duration, easing: Easing.out(ReanimatedRexport.Easing.cubic) };
-                    Easing = ReanimatedRexport.Easing;
-                    let num = 0;
-                    const withTiming = timing.withTiming;
-                    timing;
-                    if (stats) {
-                      num = 1;
+                  return num;
+                }
+              }
+              fn.__closure = obj2;
+              fn.__workletHash = 9456849062820;
+              fn.__initData = __initData;
+              const tmp23Result = tmp23(fn);
+              const tmp30 = isScreenReaderEnabled(earnedCount.useState(tmp20), 2);
+              const first = tmp30[0];
+              let tmp33 = tmp4;
+              const tmp32 = tmp30[1];
+              if (!(undefined !== disabled && disabled)) {
+                tmp33 = !tmp17 && first > 0;
+                const tmp34 = !tmp17 && first > 0;
+              }
+              if (cResult[12] === onSelectOption) {
+                if (cResult[13] === selectedOptionId) {
+                  if (cResult[14] === tmp33) {
+                    let tmp35;
+                    let diff;
+                    if (cResult[15] === arr2) {
+                      tmp35 = cResult[16];
                     }
-                    let num2 = 0;
-                    const obj2 = { opacity: withTiming(num, obj), transform: items };
-                    const withTiming2 = tmp(5188).withTiming;
-                    timing;
-                    if (!stats) {
-                      num2 = PX_12;
+                    const tmpResult8 = tmp(stateFromStores[21]);
+                    const autoSelectTraitOption = tmpResult8.useAutoSelectTraitOption(tmp35);
+                    class E {
+                      constructor() {
+                        return useReducedMotion.useReducedMotion;
+                      }
                     }
-                    items = [{ translateY: withTiming2(num2, obj) }];
-                    ({ translateY: withTiming2(num2, obj) });
-                    return obj2;
-                  }
-                  let obj2 = { INTRO_DETAILS_DURATION_MS: v600, Easing: selectedOptionId(tmp56[24]).Easing, withTiming: selectedOptionId(tmp56[25]).withTiming, isDetailsVisible: tmp58, INTRO_DETAILS_OFFSET_Y: PX_12 };
-                  const useAnimatedStyle = selectedOptionId(tmp56[24]).useAnimatedStyle;
-                  selectedOptionId(tmp56[24]);
-                  st.__closure = obj2;
-                  st.__workletHash = 9456849062820;
-                  st.__initData = __initData;
-                  const animatedStyle = useAnimatedStyle(st);
-                  const first = _slicedToArray(stateFromStores.useState(tmp57), 2)[0];
-                  const first1 = visibleTraitOptions[0];
-                  _slicedToArray(stateFromStores.useState(tmp57), 2);
-                  const obj11 = stateFromStores;
-                  if (cResult[19] === selectedOptionId) {
-                    let tmp72;
-                    if (cResult[20] === visibleTraitOptions) {
-                      tmp72 = cResult[21];
+                    if (null == selectedOptionId) {
+                      diff = earnedCount - first;
                     }
-                    let closure_11 = tmp72;
-                    if (cResult[24] === (undefined !== disabled && disabled)) {
-                      if (cResult[25] === first1) {
-                        if (cResult[26] === null != selectedOptionId) {
-                          if (cResult[27] === first) {
-                            if (cResult[28] === tmp72) {
-                              let tmp75;
-                              let tmp76;
-                              if (cResult[29] === onSelectOption) {
-                                tmp75 = cResult[30];
-                                tmp76 = cResult[31];
+                    if (cResult[17] === selectedOptionId) {
+                      let tmp38;
+                      if (cResult[18] === arr2) {
+                        tmp38 = cResult[19];
+                      }
+                      if (cResult[20] === style) {
+                        if (cResult[23] === customizationOption) {
+                          if (cResult[24] === diff) {
+                            if (cResult[25] === (undefined !== showEarnedCount && showEarnedCount)) {
+                              let tmp41;
+                              if (cResult[26] === totalCount) {
+                                tmp41 = cResult[27];
                               }
-                              const effect = obj11.useEffect(tmp75, tmp76);
-                              class Ot {
-                                constructor() {
-                                  let tmp = closure_2 || null == first1 || closure_11;
-                                  if (!tmp) {
-                                    tmp = !currentUser && first > 0;
-                                    const tmp5 = !currentUser && first > 0;
-                                  }
-                                  if (!tmp) {
-                                    onSelectOption(first1.trait, first1.optionId);
-                                  }
-                                }
-                              }
-                              if (cResult[32] === selectedOptionId) {
-                                let tmp79;
-                                if (cResult[33] === visibleTraitOptions) {
-                                  tmp79 = cResult[34];
-                                }
-                                if (cResult[35] === style) {
-                                  let tmp81;
-                                  if (cResult[36] === tmp10.container) {
-                                    tmp81 = cResult[37];
-                                  }
-                                  if (cResult[38] === customizationOption) {
-                                    if (cResult[39] === tmp50) {
-                                      if (cResult[40] === (undefined !== showEarnedCount && showEarnedCount)) {
-                                        let tmp82;
-                                        if (cResult[41] === totalCount) {
-                                          tmp82 = cResult[42];
-                                        }
-                                        if (cResult[43] === customizationOption) {
-                                          if (cResult[44] === (undefined !== disabled && disabled)) {
-                                            if (cResult[45] === (undefined !== hideDescriptionAndRarity && hideDescriptionAndRarity)) {
-                                              if (cResult[46] === tmp57) {
-                                                if (cResult[47] === onSelectOption) {
-                                                  if (cResult[48] === selectedOptionId) {
-                                                    let tmp84;
-                                                    if (cResult[49] === visibleTraitOptions) {
-                                                      tmp84 = cResult[50];
-                                                    }
-                                                    if (cResult[51] === animatedStyle) {
-                                                      if (cResult[52] === (undefined !== hideDescriptionAndRarity && hideDescriptionAndRarity)) {
-                                                        if (cResult[53] === tmp79) {
-                                                          let tmp87;
-                                                          if (cResult[54] === tmp10.details) {
-                                                            tmp87 = cResult[55];
-                                                          }
-                                                          if (cResult[56] === tmp81) {
-                                                            if (cResult[57] === tmp82) {
-                                                              if (cResult[58] === tmp84) {
-                                                                let tmp89;
-                                                                if (cResult[59] === tmp87) {
-                                                                  tmp89 = cResult[60];
-                                                                }
-                                                                return tmp89;
-                                                              }
-                                                            }
-                                                          }
-                                                          class Ot {
-                                                            constructor() {
-                                                              let tmp = closure_2 || null == first1 || closure_11;
-                                                              if (!tmp) {
-                                                                tmp = !currentUser && first > 0;
-                                                                const tmp5 = !currentUser && first > 0;
-                                                              }
-                                                              if (!tmp) {
-                                                                onSelectOption(first1.trait, first1.optionId);
-                                                              }
-                                                            }
-                                                          }
-                                                          const obj3 = { style: tmp81, children: items3 };
-                                                          items3 = [tmp82, tmp84, tmp87];
-                                                          const tmp91 = closure_11(isScreenReaderEnabled, obj3);
-                                                          cResult[56] = tmp81;
-                                                          cResult[57] = tmp82;
-                                                          cResult[58] = tmp84;
-                                                          cResult[59] = tmp87;
-                                                          cResult[60] = tmp91;
-                                                          tmp89 = tmp91;
-                                                        }
+                              if (cResult[28] === customizationOption) {
+                                if (cResult[29] === (undefined !== disabled && disabled)) {
+                                  if (cResult[30] === (undefined !== hideDescriptionAndRarity && hideDescriptionAndRarity)) {
+                                    if (cResult[31] === tmp20) {
+                                      if (cResult[32] === onSelectOption) {
+                                        if (cResult[33] === selectedOptionId) {
+                                          let tmp43;
+                                          if (cResult[34] === arr2) {
+                                            tmp43 = cResult[35];
+                                          }
+                                          if (cResult[36] === tmp23Result) {
+                                            if (cResult[37] === (undefined !== hideDescriptionAndRarity && hideDescriptionAndRarity)) {
+                                              if (cResult[38] === tmp38) {
+                                                let tmp47;
+                                                if (cResult[39] === tmp8.details) {
+                                                  tmp47 = cResult[40];
+                                                }
+                                                if (cResult[41] === tmp40) {
+                                                  if (cResult[42] === tmp41) {
+                                                    if (cResult[43] === tmp43) {
+                                                      let tmp49;
+                                                      if (cResult[44] === tmp47) {
+                                                        tmp49 = cResult[45];
                                                       }
+                                                      return tmp49;
                                                     }
-                                                    class Ot {
-                                                      constructor() {
-                                                        let tmp = closure_2 || null == first1 || closure_11;
-                                                        if (!tmp) {
-                                                          tmp = !currentUser && first > 0;
-                                                          const tmp5 = !currentUser && first > 0;
-                                                        }
-                                                        if (!tmp) {
-                                                          onSelectOption(first1.trait, first1.optionId);
-                                                        }
-                                                      }
-                                                    }
-                                                    cResult[51] = animatedStyle;
-                                                    cResult[52] = undefined !== hideDescriptionAndRarity && hideDescriptionAndRarity;
-                                                    cResult[53] = tmp79;
-                                                    cResult[54] = tmp10.details;
-                                                    cResult[55] = null != tmp79;
-                                                    tmp87 = tmp88;
                                                   }
                                                 }
+                                                class E {
+                                                  constructor() {
+                                                    return useReducedMotion.useReducedMotion;
+                                                  }
+                                                }
+                                                const obj3 = { style: tmp40, children: items1 };
+                                                items1 = [tmp41, tmp43, tmp47];
+                                                class H {
+                                                  constructor() {
+                                                    let num = 0;
+                                                    if (!closure_5) {
+                                                      num = 0;
+                                                      if (!closure_1) {
+                                                        num = 0;
+                                                        if (!stateFromStores) {
+                                                          num = 0;
+                                                          if (!isScreenReaderEnabled) {
+                                                            const _Math = Math;
+                                                            num = Math.max(earnedCount - 1, 0);
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                    return num;
+                                                  }
+                                                }
+                                                cResult[41] = tmp40;
+                                                cResult[42] = tmp41;
+                                                cResult[43] = tmp43;
+                                                cResult[44] = tmp47;
+                                                cResult[45] = tmp51;
+                                                tmp49 = tmp51;
                                               }
                                             }
                                           }
-                                        }
-                                        class Ot {
-                                          constructor() {
-                                            let tmp = closure_2 || null == first1 || closure_11;
-                                            if (!tmp) {
-                                              tmp = !currentUser && first > 0;
-                                              const tmp5 = !currentUser && first > 0;
-                                            }
-                                            if (!tmp) {
-                                              onSelectOption(first1.trait, first1.optionId);
+                                          class E {
+                                            constructor() {
+                                              return useReducedMotion.useReducedMotion;
                                             }
                                           }
+                                          cResult[36] = tmp23Result;
+                                          cResult[37] = undefined !== hideDescriptionAndRarity && hideDescriptionAndRarity;
+                                          cResult[38] = tmp38;
+                                          class H {
+                                            constructor() {
+                                              let num = 0;
+                                              if (!closure_5) {
+                                                num = 0;
+                                                if (!closure_1) {
+                                                  num = 0;
+                                                  if (!stateFromStores) {
+                                                    num = 0;
+                                                    if (!isScreenReaderEnabled) {
+                                                      const _Math = Math;
+                                                      num = Math.max(earnedCount - 1, 0);
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                              return num;
+                                            }
+                                          }
+                                          cResult[40] = null != tmp38;
+                                          tmp47 = tmp48;
                                         }
-                                        const obj4 = { customizationOption, options: visibleTraitOptions, selectedOptionId, disabled: undefined !== disabled && disabled, hideRarity: undefined !== hideDescriptionAndRarity && hideDescriptionAndRarity, introStartIndex: tmp57, onIntroStep: tmp70, onSelectOption };
-                                        const tmp86 = first1(tmp54(tmp56[10]), obj4);
-                                        cResult[43] = customizationOption;
-                                        cResult[44] = undefined !== disabled && disabled;
-                                        cResult[45] = undefined !== hideDescriptionAndRarity && hideDescriptionAndRarity;
-                                        cResult[46] = tmp57;
-                                        cResult[47] = onSelectOption;
-                                        cResult[48] = selectedOptionId;
-                                        cResult[49] = visibleTraitOptions;
-                                        cResult[50] = tmp86;
-                                        tmp84 = tmp86;
                                       }
-                                    }
-                                  }
-                                  class Ot {
-                                    constructor() {
-                                      let tmp = closure_2 || null == first1 || closure_11;
-                                      if (!tmp) {
-                                        tmp = !currentUser && first > 0;
-                                        const tmp5 = !currentUser && first > 0;
-                                      }
-                                      if (!tmp) {
-                                        onSelectOption(first1.trait, first1.optionId);
-                                      }
-                                    }
-                                  }
-                                  cResult[38] = customizationOption;
-                                  cResult[39] = tmp50;
-                                  cResult[40] = undefined !== showEarnedCount && showEarnedCount;
-                                  cResult[41] = totalCount;
-                                  cResult[42] = undefined !== showEarnedCount && showEarnedCount;
-                                  tmp82 = tmp83;
-                                }
-                                const items4 = [, ];
-                                class Ot {
-                                  constructor() {
-                                    let tmp = closure_2 || null == first1 || closure_11;
-                                    if (!tmp) {
-                                      tmp = !currentUser && first > 0;
-                                      const tmp5 = !currentUser && first > 0;
-                                    }
-                                    if (!tmp) {
-                                      onSelectOption(first1.trait, first1.optionId);
                                     }
                                   }
                                 }
-                                items4[1] = style;
-                                cResult[35] = style;
-                                cResult[36] = tmp10.container;
-                                cResult[37] = items4;
-                                tmp81 = items4;
                               }
-                              let found = visibleTraitOptions.find((optionId) => optionId.optionId === selectedOptionId);
-                              if (found == null) {
-                                found = visibleTraitOptions[0];
+                              class E {
+                                constructor() {
+                                  return useReducedMotion.useReducedMotion;
+                                }
                               }
-                              cResult[32] = selectedOptionId;
-                              cResult[33] = visibleTraitOptions;
-                              cResult[34] = found;
-                              tmp79 = found;
+                              tmp45[0] = customizationOption;
+                              tmp45[1] = arr2;
+                              tmp45[2] = selectedOptionId;
+                              tmp45[3] = undefined !== disabled && disabled;
+                              tmp45[4] = undefined !== hideDescriptionAndRarity && hideDescriptionAndRarity;
+                              tmp45[5] = tmp20;
+                              tmp45[6] = tmp32;
+                              class H {
+                                constructor() {
+                                  let num = 0;
+                                  if (!closure_5) {
+                                    num = 0;
+                                    if (!closure_1) {
+                                      num = 0;
+                                      if (!stateFromStores) {
+                                        num = 0;
+                                        if (!isScreenReaderEnabled) {
+                                          const _Math = Math;
+                                          num = Math.max(earnedCount - 1, 0);
+                                        }
+                                      }
+                                    }
+                                  }
+                                  return num;
+                                }
+                              }
+                              const tmp46 = closure_7(tmp19(stateFromStores[7]), tmp45);
+                              cResult[28] = customizationOption;
+                              cResult[29] = undefined !== disabled && disabled;
+                              cResult[30] = undefined !== hideDescriptionAndRarity && hideDescriptionAndRarity;
+                              cResult[31] = tmp20;
+                              cResult[32] = onSelectOption;
+                              cResult[33] = selectedOptionId;
+                              cResult[34] = arr2;
+                              cResult[35] = tmp46;
+                              tmp43 = tmp46;
                             }
                           }
                         }
+                        class E {
+                          constructor() {
+                            return useReducedMotion.useReducedMotion;
+                          }
+                        }
+                        cResult[23] = customizationOption;
+                        cResult[24] = diff;
+                        cResult[25] = undefined !== showEarnedCount && showEarnedCount;
+                        class H {
+                          constructor() {
+                            let num = 0;
+                            if (!closure_5) {
+                              num = 0;
+                              if (!closure_1) {
+                                num = 0;
+                                if (!stateFromStores) {
+                                  num = 0;
+                                  if (!isScreenReaderEnabled) {
+                                    const _Math = Math;
+                                    num = Math.max(earnedCount - 1, 0);
+                                  }
+                                }
+                              }
+                            }
+                            return num;
+                          }
+                        }
+                        cResult[27] = undefined !== showEarnedCount && showEarnedCount;
+                        tmp41 = tmp42;
+                      }
+                      const items2 = [, ];
+                      class E {
+                        constructor() {
+                          return useReducedMotion.useReducedMotion;
+                        }
+                      }
+                      items2[1] = style;
+                      cResult[20] = style;
+                      cResult[21] = tmp8.container;
+                      cResult[22] = items2;
+                      class H {
+                        constructor() {
+                          let num = 0;
+                          if (!closure_5) {
+                            num = 0;
+                            if (!closure_1) {
+                              num = 0;
+                              if (!stateFromStores) {
+                                num = 0;
+                                if (!isScreenReaderEnabled) {
+                                  const _Math = Math;
+                                  num = Math.max(earnedCount - 1, 0);
+                                }
+                              }
+                            }
+                          }
+                          return num;
+                        }
                       }
                     }
-                    class Ot {
+                    let found = arr2.find((optionId) => optionId.optionId === selectedOptionId);
+                    if (found == null) {
+                      found = arr2[0];
+                    }
+                    cResult[17] = selectedOptionId;
+                    class H {
                       constructor() {
-                        let tmp = closure_2 || null == first1 || closure_11;
-                        if (!tmp) {
-                          tmp = !currentUser && first > 0;
-                          const tmp5 = !currentUser && first > 0;
+                        let num = 0;
+                        if (!closure_5) {
+                          num = 0;
+                          if (!closure_1) {
+                            num = 0;
+                            if (!stateFromStores) {
+                              num = 0;
+                              if (!isScreenReaderEnabled) {
+                                const _Math = Math;
+                                num = Math.max(earnedCount - 1, 0);
+                              }
+                            }
+                          }
                         }
-                        if (!tmp) {
-                          onSelectOption(first1.trait, first1.optionId);
-                        }
+                        return num;
                       }
                     }
-                    const items5 = [tmp6, first1, null != selectedOptionId, first, tmp72, onSelectOption];
-                    cResult[24] = undefined !== disabled && disabled;
-                    cResult[25] = first1;
-                    cResult[26] = null != selectedOptionId;
-                    cResult[27] = first;
-                    cResult[28] = tmp72;
-                    cResult[29] = onSelectOption;
-                    cResult[30] = Ot;
-                    cResult[31] = items5;
-                    tmp76 = items5;
-                    tmp75 = Ot;
+                    cResult[19] = found;
+                    tmp38 = found;
                   }
-                  if (cResult[22] !== selectedOptionId) {
-                    function dt(optionId) {
-                      return optionId.optionId === selectedOptionId;
-                    }
-                    cResult[22] = selectedOptionId;
-                    class Ot {
-                      constructor() {
-                        let tmp = closure_2 || null == first1 || closure_11;
-                        if (!tmp) {
-                          tmp = !currentUser && first > 0;
-                          const tmp5 = !currentUser && first > 0;
-                        }
-                        if (!tmp) {
-                          onSelectOption(first1.trait, first1.optionId);
-                        }
-                      }
-                    }
-                    cResult[23] = dt;
-                    tmp73 = dt;
-                  } else {
-                    tmp73 = cResult[23];
-                  }
-                  const someResult = visibleTraitOptions.some(tmp73);
-                  cResult[19] = selectedOptionId;
-                  cResult[20] = visibleTraitOptions;
-                  cResult[21] = someResult;
-                  tmp72 = someResult;
                 }
               }
+              const obj4 = { visibleTraitOptions: arr2, selectedOptionId, onSelectOption, paused: tmp33 };
+              cResult[12] = onSelectOption;
+              cResult[13] = selectedOptionId;
+              cResult[14] = tmp33;
+              cResult[15] = arr2;
+              cResult[16] = obj4;
+              tmp35 = obj4;
             }
           }
-          function it() {
-            let num = 0;
-            if (!currentUser) {
-              num = 0;
-              if (!closure_3) {
-                num = 0;
-                if (!stateFromStores) {
-                  num = 0;
-                  if (!isScreenReaderEnabled) {
-                    const _Math = Math;
-                    num = Math.max(AccessibilityStore - 1, 0);
-                  }
-                }
-              }
-            }
-            return num;
-          }
-          cResult[13] = tmp50;
-          cResult[14] = null != selectedOptionId;
-          cResult[15] = stateFromStores;
-          cResult[16] = isScreenReaderEnabled;
-          cResult[17] = undefined !== skipIntro && skipIntro;
-          cResult[18] = it;
-          tmp53 = it;
         }
       }
-    }
-  }
-  const tmp2Result8 = selectedOptionId(6343);
-  const visibleTraitRarities = tmp2Result8.getVisibleTraitRarities(tmp2(6341).CUSTOMIZATION_OPTION_TRAITS[customizationOption], stateFromStores1);
-  const items6 = [];
-  let num7 = 0;
-  let num8 = 0;
-  const iter = options[Symbol.iterator]();
-  const nextResult = iter.next();
-  while (iter !== undefined) {
-    let tmp27 = nextResult;
-    let hasItem = null == nextResult.rarity;
-    if (!hasItem) {
-      hasItem = visibleTraitRarities.has(tmp27.rarity);
-    }
-    class Ot {
-      constructor() {
-        let tmp = closure_2 || null == first1 || closure_11;
-        if (!tmp) {
-          tmp = !currentUser && first > 0;
-          const tmp5 = !currentUser && first > 0;
-        }
-        if (!tmp) {
-          onSelectOption(first1.trait, first1.optionId);
-        }
-      }
-    }
-    let tmp35 = tmp27.rarity === selectedOptionId(5996).CheckpointTraitRarity.NITRO && !stateFromStores2;
-    let tmp36 = tmp35;
-    if (null != tmp27.rarity) {
-      num7 = num7 + 1;
-    }
-    let tmp39 = hasItem;
-    if (!tmp39) {
-      tmp39 = savedOptionId === tmp27.optionId;
-    }
-    if (tmp39) {
-      let obj5 = { locked: tmp36 };
-      class Ot {
+      class H {
         constructor() {
-          let tmp = closure_2 || null == first1 || closure_11;
-          if (!tmp) {
-            tmp = !currentUser && first > 0;
-            const tmp5 = !currentUser && first > 0;
+          let num = 0;
+          if (!closure_5) {
+            num = 0;
+            if (!closure_1) {
+              num = 0;
+              if (!stateFromStores) {
+                num = 0;
+                if (!isScreenReaderEnabled) {
+                  const _Math = Math;
+                  num = Math.max(earnedCount - 1, 0);
+                }
+              }
+            }
           }
-          if (!tmp) {
-            onSelectOption(first1.trait, first1.optionId);
-          }
+          return num;
         }
       }
-      let push = items6.push;
-      let merged = Object.assign(nextResult);
-      let arr = push(obj5);
-      let tmp46 = null == tmp27.rarity || tmp35;
-      if (!tmp46) {
-        num8 = num8 + 1;
-      }
-    }
-    continue;
-  }
-  if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-    class Z {
-      constructor(rarity, rarity2) {
-        let arr;
-        let length;
-        let length2;
-        if (null == rarity.rarity) {
-          length = first.length;
-          arr = first;
-        } else {
-          arr = first;
-          length = first.indexOf(rarity.rarity);
-          if (-1 === length) {
-            length = arr.length;
-          }
-        }
-        if (null == rarity2.rarity) {
-          length2 = arr.length;
-        } else {
-          length2 = arr.indexOf(rarity2.rarity);
-          if (-1 === length2) {
-            length2 = arr.length;
-          }
-        }
-        return length - length2;
-      }
-    }
-    cResult[12] = Z;
-    class Ot {
-      constructor() {
-        let tmp = closure_2 || null == first1 || closure_11;
-        if (!tmp) {
-          tmp = !currentUser && first > 0;
-          const tmp5 = !currentUser && first > 0;
-        }
-        if (!tmp) {
-          onSelectOption(first1.trait, first1.optionId);
-        }
-      }
-    }
-  } else {
-    class Z {
-      constructor(rarity, rarity2) {
-        let arr;
-        let length;
-        let length2;
-        if (null == rarity.rarity) {
-          length = first.length;
-          arr = first;
-        } else {
-          arr = first;
-          length = first.indexOf(rarity.rarity);
-          if (-1 === length) {
-            length = arr.length;
-          }
-        }
-        if (null == rarity2.rarity) {
-          length2 = arr.length;
-        } else {
-          length2 = arr.indexOf(rarity2.rarity);
-          if (-1 === length2) {
-            length2 = arr.length;
-          }
-        }
-        return length - length2;
-      }
+      cResult[6] = earnedCount;
+      cResult[7] = null != selectedOptionId;
+      cResult[8] = stateFromStores;
+      cResult[9] = isScreenReaderEnabled;
+      cResult[10] = undefined !== skipIntro && skipIntro;
+      cResult[11] = H;
+      tmp18 = H;
     }
   }
-  const sorted = items6.sort(tmp48);
-  const obj6 = { visibleTraitOptions: items6, totalCount: num7, earnedCount: num8 };
-  cResult[6] = customizationOption;
-  cResult[7] = stateFromStores2;
-  cResult[8] = options;
-  cResult[9] = savedOptionId;
-  cResult[10] = stateFromStores1;
-  cResult[11] = obj6;
-  tmp25 = obj6;
-}) : (function TraitPicker(customizationOption) {
-  let closure_13;
+  const obj5 = { customizationOption, options, savedOptionId };
+  cResult[2] = customizationOption;
+  cResult[3] = options;
+  cResult[4] = savedOptionId;
+  cResult[5] = obj5;
+  tmp14 = obj5;
+}) : (function TraitPicker(style) {
+  let closure_2;
+  let closure_3;
+  let customizationOption;
+  let disabled;
   let earnedCount;
-  let items5;
-  let items6;
-  let items7;
-  let obj10;
+  let hideDescriptionAndRarity;
+  let items1;
+  let items2;
+  let items3;
+  let obj9;
+  let options;
+  let savedOptionId;
+  let tmp11;
+  let tmp12;
+  let tmp14;
   let visibleTraitOptions;
-  customizationOption = customizationOption.customizationOption;
-  let flag = customizationOption.disabled;
-  const style = customizationOption.style;
+  ({ customizationOption, disabled } = style);
+  style = style.style;
+  if (disabled === undefined) {
+    disabled = false;
+  }
+  const selectedOptionId = style.selectedOptionId;
+  ({ hideDescriptionAndRarity, options, savedOptionId } = style);
+  if (hideDescriptionAndRarity === undefined) {
+    hideDescriptionAndRarity = false;
+  }
+  let flag = style.skipIntro;
   if (flag === undefined) {
     flag = false;
   }
-  const options = customizationOption.options;
-  const savedOptionId = customizationOption.savedOptionId;
-  const selectedOptionId = customizationOption.selectedOptionId;
-  let flag2 = customizationOption.hideDescriptionAndRarity;
+  let flag2 = style.showEarnedCount;
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let flag3 = customizationOption.skipIntro;
-  if (flag3 === undefined) {
-    flag3 = false;
-  }
-  let flag4 = customizationOption.showEarnedCount;
-  if (flag4 === undefined) {
-    flag4 = false;
-  }
-  const onSelectOption = customizationOption.onSelectOption;
+  const onSelectOption = style.onSelectOption;
+  dependencyMap = undefined;
   earnedCount = undefined;
-  INTRO_DETAILS_OFFSET_Y = undefined;
-  let first;
-  let first1;
-  let c16;
-  let tmp = first();
-  let tmp3 = options;
-  let obj = customizationOption(options[18]);
-  let items = [onSelectOption];
-  const currentUser = obj.useStateFromStores(items, () => onSelectOption.useReducedMotion);
-  let obj2 = customizationOption(options[19]);
-  const stats = obj2.useIsScreenReaderEnabled();
-  const obj3 = customizationOption(options[18]);
-  const items1 = [stats];
-  const stateFromStores = obj3.useStateFromStores(items1, () => stats.stats);
-  const items2 = [currentUser];
-  const obj4 = customizationOption(options[18]);
-  const stateFromStores1 = obj4.useStateFromStores(items2, () => {
-    const obj = customizationOption(options[20]);
-    return obj.isPremium(currentUser.getCurrentUser());
-  });
-  const items3 = [customizationOption, stateFromStores1, options, savedOptionId, stateFromStores];
-  const memo = selectedOptionId.useMemo(() => {
-    const obj = CheckpointCharacterTraits;
-    const visibleTraitRarities = obj.getVisibleTraitRarities(CheckpointCustomizationUtils.CUSTOMIZATION_OPTION_TRAITS[customizationOption], stateFromStores);
-    const visibleTraitOptions = [];
-    let totalCount = 0;
-    earnedCount = 0;
-    const iter = options[Symbol.iterator]();
-    const nextResult = iter.next();
-    while (iter !== undefined) {
-      let tmp3 = nextResult;
-      let hasItem = null == nextResult.rarity;
-      if (!hasItem) {
-        hasItem = visibleTraitRarities.has(tmp3.rarity);
-      }
-      let tmp10 = tmp3.rarity === CheckpointTraitRarity.CheckpointTraitRarity.NITRO;
-      if (tmp10) {
-        tmp10 = !stateFromStores1;
-      }
-      let tmp12 = tmp10;
-      if (null != tmp3.rarity) {
-        totalCount = totalCount + 1;
-      }
-      let tmp15 = hasItem;
-      if (!tmp15) {
-        tmp15 = savedOptionId === tmp3.optionId;
-      }
-      if (tmp15) {
-        let obj2 = { locked: tmp12 };
-        let push = visibleTraitOptions.push;
-        let merged = Object.assign(nextResult);
-        let arr = push(obj2);
-        let tmp24 = null == tmp3.rarity || tmp10;
-        if (!tmp24) {
-          earnedCount = earnedCount + 1;
-        }
-      }
-      continue;
-    }
-    const sorted = visibleTraitOptions.sort((rarity, rarity2) => {
-      let arr;
-      let length;
-      let length2;
-      if (null == rarity.rarity) {
-        length = stateFromStores.length;
-        arr = stateFromStores;
-      } else {
-        arr = stateFromStores;
-        length = stateFromStores.indexOf(rarity.rarity);
-        if (-1 === length) {
-          length = arr.length;
-        }
-      }
-      if (null == rarity2.rarity) {
-        length2 = arr.length;
-      } else {
-        length2 = arr.indexOf(rarity2.rarity);
-        if (-1 === length2) {
-          length2 = arr.length;
-        }
-      }
-      return length - length2;
-    });
-    return { visibleTraitOptions, totalCount, earnedCount };
-  }, items3);
-  ({ visibleTraitOptions, earnedCount } = memo);
-  let tmp7 = null != selectedOptionId;
-  const v600 = tmp7;
-  let tmp8 = flag;
-  let totalCount = memo.totalCount;
-  let tmp9 = flag(options[23])(() => {
+  let useReducedMotion;
+  const tmp = closure_11();
+  let obj = selectedOptionId(504);
+  let items = [useReducedMotion];
+  dependencyMap = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  let obj2 = selectedOptionId(5253);
+  _slicedToArray = obj2.useIsScreenReaderEnabled();
+  const obj3 = selectedOptionId(12947);
+  const traitPickerOptions = obj3.useTraitPickerOptions({ customizationOption, options, savedOptionId });
+  ({ visibleTraitOptions, earnedCount } = traitPickerOptions);
+  let closure_5 = tmp5;
+  const totalCount = traitPickerOptions.totalCount;
+  const tmp7 = flag(5585)(() => {
     let num = 0;
-    if (!duration) {
+    if (!closure_5) {
       num = 0;
-      if (!flag3) {
+      if (!flag) {
         num = 0;
-        if (!currentUser) {
+        if (!closure_2) {
           num = 0;
-          if (!stats) {
+          if (!closure_3) {
             const _Math = Math;
             num = Math.max(earnedCount - 1, 0);
           }
@@ -896,14 +684,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
     }
     return num;
   });
-  let tmp10 = tmp7;
-  if (!tmp10) {
+  let tmp8 = tmp5;
+  if (!tmp8) {
     let num = 0;
-    tmp10 = 0 === tmp9;
+    tmp8 = 0 === tmp7;
   }
-  INTRO_DETAILS_OFFSET_Y = tmp10;
-  const tmp2Result = customizationOption(tmp3[24]);
-  class N {
+  useReducedMotion = tmp8;
+  const tmp2Result = selectedOptionId(5038);
+  class C {
     constructor() {
       let Easing;
       let items;
@@ -912,14 +700,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
       let num = 0;
       const withTiming = timing.withTiming;
       timing;
-      if (closure_13) {
+      if (useReducedMotion) {
         num = 1;
       }
       let num2 = 0;
       const obj2 = { opacity: withTiming(num, obj), transform: items };
-      const withTiming2 = tmp(5188).withTiming;
+      const withTiming2 = tmp(5192).withTiming;
       timing;
-      if (!closure_13) {
+      if (!useReducedMotion) {
         num2 = PX_12;
       }
       items = [{ translateY: withTiming2(num2, obj) }];
@@ -927,58 +715,53 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
       return obj2;
     }
   }
-  N.__closure = { INTRO_DETAILS_DURATION_MS: v600, Easing: customizationOption(tmp3[24]).Easing, withTiming: customizationOption(tmp3[25]).withTiming, isDetailsVisible: tmp10, INTRO_DETAILS_OFFSET_Y };
-  N.__workletHash = 13382203050567;
-  N.__initData = __initData2;
-  ({ INTRO_DETAILS_DURATION_MS: v600, Easing: customizationOption(tmp3[24]).Easing, withTiming: customizationOption(tmp3[25]).withTiming, isDetailsVisible: tmp10, INTRO_DETAILS_OFFSET_Y });
-  const animatedStyle = tmp2Result.useAnimatedStyle(N);
-  let tmp12 = savedOptionId(obj5.useState(tmp9), 2);
-  first = tmp12[0];
-  first1 = visibleTraitOptions[0];
-  let tmp14 = tmp12[1];
-  const someResult = visibleTraitOptions.some((optionId) => optionId.optionId === selectedOptionId);
-  c16 = someResult;
-  const items4 = [flag, first1, tmp7, first, someResult, onSelectOption];
-  const effect = obj5.useEffect(() => {
-    let tmp = flag || null == first1 || c16;
-    if (!tmp) {
-      tmp = !duration && first > 0;
-      const tmp5 = !duration && first > 0;
+  C.__closure = { INTRO_DETAILS_DURATION_MS: v600, Easing: selectedOptionId(5038).Easing, withTiming: selectedOptionId(5192).withTiming, isDetailsVisible: tmp8, INTRO_DETAILS_OFFSET_Y: PX_12 };
+  C.__workletHash = 13382203050567;
+  C.__initData = __initData2;
+  ({ INTRO_DETAILS_DURATION_MS: v600, Easing: selectedOptionId(5038).Easing, withTiming: selectedOptionId(5192).withTiming, isDetailsVisible: tmp8, INTRO_DETAILS_OFFSET_Y: PX_12 });
+  const animatedStyle = tmp2Result.useAnimatedStyle(C);
+  [tmp11, tmp12] = earnedCount.useState(tmp7);
+  _slicedToArray(earnedCount.useState(tmp7), 2);
+  const obj5 = { visibleTraitOptions, selectedOptionId, onSelectOption, paused: tmp14 };
+  tmp14 = disabled;
+  const useAutoSelectTraitOption = tmp2(12948).useAutoSelectTraitOption;
+  selectedOptionId(12948);
+  if (!disabled) {
+    let tmp15 = !tmp5;
+    if (tmp15) {
+      let num2 = 0;
+      tmp15 = tmp11 > 0;
     }
-    if (!tmp) {
-      onSelectOption(first1.trait, first1.optionId);
-    }
-  }, items4);
+    tmp14 = tmp15;
+  }
+  const autoSelectTraitOption = useAutoSelectTraitOption(obj5);
   let diff = earnedCount;
-  if (!tmp7) {
-    diff = earnedCount - first;
+  if (null == selectedOptionId) {
+    diff = earnedCount - tmp11;
   }
   let found = visibleTraitOptions.find((optionId) => optionId.optionId === selectedOptionId);
   if (found == null) {
     found = visibleTraitOptions[0];
   }
-  const obj7 = { style: items5, children: items6 };
-  items5 = [tmp.container, style];
-  let tmp20 = earnedCount;
-  const tmp21 = flag3;
-  if (flag4) {
-    let tmp22 = stateFromStores1;
-    const obj8 = { customizationOption, earnedCount: diff, totalCount };
-    flag4 = stateFromStores1(first1, obj8);
+  const obj6 = { style: items1, children: items2 };
+  items1 = [tmp.container, style];
+  const tmp19 = closure_8;
+  const tmp20 = closure_5;
+  if (flag2) {
+    const obj7 = { customizationOption, earnedCount: diff, totalCount };
+    flag2 = closure_7(closure_12, obj7);
   }
-  items6 = [flag4, , ];
-  let tmp24 = stateFromStores1;
-  items6[1] = stateFromStores1(tmp8(tmp3[10]), { customizationOption, options: visibleTraitOptions, selectedOptionId, disabled: flag, hideRarity: flag2, introStartIndex: tmp9, onIntroStep: tmp14, onSelectOption });
-  let tmp24Result = null != found;
-  if (tmp24Result) {
-    const obj9 = { style: items7, children: tmp24(tmp8(tmp3[26]), obj10) };
-    items7 = [tmp.details, animatedStyle];
-    View = tmp8(tmp3[24]).View;
-    obj10 = { asset: found, hideDescriptionAndRarity: flag2 };
-    tmp24Result = tmp24(View, obj9);
+  items2 = [flag2, closure_7(flag(12945), { customizationOption, options: visibleTraitOptions, selectedOptionId, disabled, hideRarity: hideDescriptionAndRarity, introStartIndex: tmp7, onIntroStep: tmp12, onSelectOption }), ];
+  let tmp23Result = null != found;
+  if (tmp23Result) {
+    const obj8 = { style: items3, children: closure_7(flag(12949), obj9) };
+    items3 = [tmp.details, animatedStyle];
+    View = tmp6(5038).View;
+    obj9 = { asset: found, hideDescriptionAndRarity };
+    tmp23Result = tmp23(View, obj8);
   }
-  items6[2] = tmp24Result;
-  return tmp20(tmp21, obj7);
+  items2[2] = tmp23Result;
+  return tmp19(tmp20, obj6);
 });
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/customization/TraitPicker.tsx");
 

@@ -1,18 +1,18 @@
-// Module ID: 13372
-// Function ID: 13373
+// Module ID: 13408
+// Function ID: 13409
 // Name: GuildPowerupsLevelsSection
-// Dependencies: [19, 17, 21, 587, 1385, 4966, 558, 576, 13361, 1128, 2568, 13373, 13377, 2]
+// Dependencies: [19, 17, 21, 587, 1385, 4969, 558, 576, 13397, 1128, 2568, 13409, 13413, 2]
 
-// Module 13372 (GuildPowerupsLevelsSection)
+// Module 13408 (GuildPowerupsLevelsSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import GuildPowerupsLevelCardDefault from "GuildPowerupsLevelCard" /* 13373 */;
-import MarketingCardsScroller2 from "MarketingCardsScroller" /* 13377 */;
+import GuildPowerupsLevelCardDefault from "GuildPowerupsLevelCard" /* 13409 */;
+import MarketingCardsScroller2 from "MarketingCardsScroller" /* 13413 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1385 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -170,7 +170,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
     isScrollingRef.current = current;
   }, []);
   let obj2 = { title: intl.string(listings(2568)["TXY/b0"]), description: intl2.string(listings(2568).aJv4PB) };
-  const tmp3 = listings(13361);
+  const tmp3 = listings(13397);
   intl = intl3.intl;
   intl2 = intl3.intl;
   items1 = [closure_5(tmp3, obj2), ];

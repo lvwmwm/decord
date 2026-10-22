@@ -1,15 +1,15 @@
-// Module ID: 9006
-// Function ID: 9007
+// Module ID: 9015
+// Function ID: 9016
 // Name: DeleteEventAlert
-// Dependencies: [5, 19, 6763, 21, 4966, 558, 576, 504, 8847, 5192, 1128, 5216, 5894, 2]
+// Dependencies: [5, 19, 6770, 21, 4969, 558, 576, 504, 8856, 5196, 1128, 5220, 5901, 2]
 
-// Module 9006 (DeleteEventAlert)
+// Module 9015 (DeleteEventAlert)
 import Fragment from "Fragment" /* 21 */;
 import intl7 from "intl" /* 1128 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6763 */;
-import createStyles from "createStyles" /* 4966 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6770 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

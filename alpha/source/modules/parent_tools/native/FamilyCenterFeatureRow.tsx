@@ -1,28 +1,28 @@
-// Module ID: 16055
-// Function ID: 16056
+// Module ID: 16097
+// Function ID: 16098
 // Name: FamilyCenterFeatureRow
-// Dependencies: [19, 17, 21, 4966, 587, 558, 576, 1128, 2536, 12771, 16056, 16057, 13154, 7042, 9058, 16052, 5216, 5957, 6966, 6882, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 1128, 2536, 12803, 16098, 16099, 13190, 7049, 9067, 16094, 5220, 5964, 6973, 6889, 2]
 
-// Module 16055 (FamilyCenterFeatureRow)
+// Module 16097 (FamilyCenterFeatureRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl11 from "intl" /* 1128 */;
 import _modDef2536 from "module_2536" /* 2536 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import Stack_Stack from "Stack/Stack" /* 5957 */;
-import TableRow2 from "TableRow" /* 6882 */;
-import TableRowGroup2 from "TableRowGroup" /* 6966 */;
-import EyeIcon from "EyeIcon" /* 7042 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9058 */;
-import useAgeSpecificText4 from "useAgeSpecificText" /* 12771 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13154 */;
-import QrCodeIcon from "QrCodeIcon" /* 16052 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 16056 */;
-import ChatCheckIcon from "ChatCheckIcon" /* 16057 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import Stack_Stack from "Stack/Stack" /* 5964 */;
+import TableRow2 from "TableRow" /* 6889 */;
+import TableRowGroup2 from "TableRowGroup" /* 6973 */;
+import EyeIcon from "EyeIcon" /* 7049 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9067 */;
+import useAgeSpecificText4 from "useAgeSpecificText" /* 12803 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13190 */;
+import QrCodeIcon from "QrCodeIcon" /* 16094 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 16098 */;
+import ChatCheckIcon from "ChatCheckIcon" /* 16099 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -157,7 +157,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
       const _Symbol = Symbol;
       if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
         const obj5 = { accessibilityRole: "header", variant: "text-sm/semibold", color: "text-muted", children: intl10.string(_modDef2536["6JkHSg"]) };
-        const Text = tmp(5216).Text;
+        const Text = tmp(5220).Text;
         intl10 = tmp(1128).intl;
         const tmp41 = React3(Text, obj5);
         cResult[19] = tmp41;
@@ -168,7 +168,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
       if (cResult[20] !== arr) {
         const obj6 = { spacing: 8, children: items };
         items = [tmp38, ];
-        const Stack = tmp(5957).Stack;
+        const Stack = tmp(5964).Stack;
         const obj7 = {
           hasIcons: true,
           children: arr.map((header) => {
@@ -182,7 +182,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
                   return closure_1_4(TableRow, obj, header);
                 })
         };
-        const TableRowGroup = tmp(6966).TableRowGroup;
+        const TableRowGroup = tmp(6973).TableRowGroup;
         items[1] = React3(TableRowGroup, obj7);
         const tmp45 = hasOwnProperty(Stack, obj6);
         cResult[20] = arr;

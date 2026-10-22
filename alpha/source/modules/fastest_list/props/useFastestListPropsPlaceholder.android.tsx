@@ -1,13 +1,13 @@
-// Module ID: 7135
-// Function ID: 7136
+// Module ID: 7142
+// Function ID: 7143
 // Name: useFastestListPropsPlaceholder
-// Dependencies: [19, 17, 7136, 4963, 558, 576, 2]
+// Dependencies: [19, 17, 7143, 4966, 558, 576, 2]
 
-// Module 7135 (useFastestListPropsPlaceholder)
+// Module 7142 (useFastestListPropsPlaceholder)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import ColorUtils from "ColorUtils" /* 4963 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7136 */;
+import ColorUtils from "ColorUtils" /* 4966 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7143 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ function createNativePlaceholderConfig(listFooter) {
   if (type == null) {
     NONE = FastestListPropsPlaceholder.FastestListPropsPlaceholderType.NONE;
   }
-  size = { borderRadius: "Array", borderTopLeftRadius: "op", borderTopRightRadius: "unicodeVersion", borderBottomLeftRadius: "ti", borderBottomRightRadius: "guild_id", divider: "unicodeVersion", dividerColor: "nativeEvent", dividerPaddingLeft: "lineClamp", dividerPaddingRight: "unicodeVersion", placeholderShape: "shapes", placeholderShapeColor: "ref", placeholderShapeCount: "unicodeVersion", placeholderShapeGap: "accessibilityLabel", placeholderShapePaddingHorizontal: "guild_id", placeholderShapePaddingVertical: "unicodeVersion", placeholderFeedBackgroundColor: "backgroundColor", placeholderFeedColor: "guild_id", placeholderFeedLabelPadding: "disabled", placeholderFeedLabelPaddingInnerRatio: "y", placeholderFeedLabelSize: "toCharArray$esjava$1", placeholderFeedLabelSecondarySize: "length", placeholderFeedPadding: "to", placeholderFeedShape: "Boolean", placeholderFeedShapeSize: "toCharArray$esjava$1", placeholderType: NONE, width: false, height: false, verticalAlignment: false, horizontalAlignment: false };
+  size = { borderRadius: "Array", borderTopLeftRadius: "defineProperty", borderTopRightRadius: "ix", borderBottomLeftRadius: "jsxs", borderBottomRightRadius: "useEffect", divider: "PX_16", dividerColor: "Array", dividerPaddingLeft: "toCharArray$esjava$1", dividerPaddingRight: "toCharArray$esjava$1", placeholderShape: "toCharArray$esjava$1", placeholderShapeColor: "HermesInternal", placeholderShapeCount: "toCharArray$esjava$1", placeholderShapeGap: "toCharArray$esjava$1", placeholderShapePaddingHorizontal: "toCharArray$esjava$1", placeholderShapePaddingVertical: "PX_16", placeholderFeedBackgroundColor: "paddingHorizontal", placeholderFeedColor: "toCharArray$esjava$1", placeholderFeedLabelPadding: "toCharArray$esjava$1", placeholderFeedLabelPaddingInnerRatio: "Icon", placeholderFeedLabelSize: "toCharArray$esjava$1", placeholderFeedLabelSecondarySize: "toCharArray$esjava$1", placeholderFeedPadding: "toCharArray$esjava$1", placeholderFeedShape: "Button", placeholderFeedShapeSize: "toCharArray$esjava$1", placeholderType: NONE, width: "toCharArray$esjava$1", height: "split", verticalAlignment: "paddingHorizontal", horizontalAlignment: "toCharArray$esjava$1" };
   if (null == listFooter) {
     return size;
   } else {

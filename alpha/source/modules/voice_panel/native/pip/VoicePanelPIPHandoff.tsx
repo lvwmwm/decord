@@ -1,9 +1,9 @@
-// Module ID: 10856
-// Function ID: 10857
+// Module ID: 10873
+// Function ID: 10874
 // Name: VoicePanelPIPHandoff
 // Dependencies: [19, 558, 576, 2]
 
-// Module 10856 (VoicePanelPIPHandoff)
+// Module 10873 (VoicePanelPIPHandoff)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

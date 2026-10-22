@@ -1,8 +1,8 @@
-// Module ID: 5092
-// Function ID: 5093
+// Module ID: 5096
+// Function ID: 5097
 // Dependencies: [2]
 
-// Module 5092
+// Module 5096
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/rive/native/CheckpointCard.riv.js");

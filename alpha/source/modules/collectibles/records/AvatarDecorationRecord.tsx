@@ -1,10 +1,10 @@
-// Module ID: 7632
-// Function ID: 7633
+// Module ID: 7639
+// Function ID: 7640
 // Name: AvatarDecorationRecord
 // Dependencies: [1994, 1995, 2]
 // Exports: isAvatarDecorationRecord
 
-// Module 7632 (AvatarDecorationRecord)
+// Module 7639 (AvatarDecorationRecord)
 import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
 import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1994 */;
 import size from "module_2" /* 2 */;

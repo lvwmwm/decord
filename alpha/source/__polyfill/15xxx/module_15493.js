@@ -1,18 +1,23 @@
 // Module ID: 15493
 // Function ID: 15494
-// Dependencies: [15491]
+// Dependencies: [15494]
 
 // Module 15493
-import _mod15491 from "module_15491" /* 15491 */;
+import module_15494_mod from "module_15494" /* 15494 */;
 
+const call = prototype.call;
+let module_15494 = module_15494_mod;
+if (module_15494) {
+  const bind = prototype.bind;
+  module_15494 = bind.bind(call, call);
+}
+if (!module_15494) {
+  module_15494 = (arg0) => {
+    let closure_0 = arg0;
+    return function() {
+      return call(...arguments);
+    };
+  };
+}
 
-export default (arg0, arg1) => {
-  let tmp3;
-  const tmp = _mod15491(arg0);
-  if (tmp < 0) {
-    tmp3 = max(tmp + arg1, 0);
-  } else {
-    tmp3 = min(tmp, arg1);
-  }
-  return tmp3;
-};
+export default module_15494;

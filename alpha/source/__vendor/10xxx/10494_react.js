@@ -2,74 +2,50 @@
 // Function ID: 10495
 // Name: react
 // Dependencies: [19]
-// Exports: useAutoPlay
+// Exports: usePropsErrorBoundary
 
 // Module 10494 (react)
 import react from "react" /* 19 */;
 
+let size;
 
-export const useAutoPlay = function useAutoPlay(autoPlay) {
-  autoPlay = autoPlay.autoPlay;
-  let tmp = undefined !== autoPlay && autoPlay;
-  let closure_0 = tmp;
-  const autoPlayReverse = autoPlay.autoPlayReverse;
-  const tmp2 = undefined !== autoPlayReverse && autoPlayReverse;
-  let closure_1 = tmp2;
-  const autoPlayInterval = autoPlay.autoPlayInterval;
-  const prev = iter.prev;
-  const next = iter.next;
-  let closure_5 = react.useRef();
-  let closure_6 = react.useRef(!tmp);
-  const items = [tmp2, autoPlayInterval, prev, next];
-  const callback = react.useCallback(() => {
-    let onFinished;
-    if (!ref2.current) {
-      let tmp = ref;
-      if (ref.current) {
-        const _clearTimeout = clearTimeout;
-        clearTimeout(tmp.current);
+
+export const usePropsErrorBoundary = function usePropsErrorBoundary(arg0) {
+  let closure_0 = arg0;
+  const items = [arg0];
+  const effect = react.useEffect(function() {
+    let dataLength;
+    let defaultIndex;
+    size = closure_0;
+    ({ defaultIndex, dataLength } = closure_0);
+    if (typeof defaultIndex === "number") {
+      if (dataLength > 0) {
+        const _Error3 = Error;
+        const self5 = this;
+        const self6 = this;
+        const error = new Error("DefaultIndex must be in the range of data length.");
+        throw error;
       }
-      const _setTimeout = setTimeout;
-      tmp.current = setTimeout(() => {
-        const tmp = closure_1_1;
-        if (tmp) {
-          const obj2 = { onFinished };
-          prev(obj2);
-        } else {
-          const obj = { onFinished };
-          next(obj);
+    }
+    if (!size.mode) {
+      if (!size.vertical) {
+        if (!size.width) {
+          const _Error = Error;
+          const self = this;
+          const self2 = this;
+          const error1 = new Error("`width` must be specified for horizontal carousels.");
+          throw error1;
         }
-      }, autoPlayInterval);
+      }
+      if (size.vertical) {
+        if (!size.height) {
+          const _Error2 = Error;
+          const self3 = this;
+          const self4 = this;
+          const error2 = new Error("`height` must be specified for vertical carousels.");
+          throw error2;
+        }
+      }
     }
   }, items);
-  const items1 = [tmp];
-  const pause = react.useCallback(() => {
-    const tmp = closure_0;
-    if (tmp) {
-      if (ref.current) {
-        const _clearTimeout = clearTimeout;
-        clearTimeout(tmp2.current);
-      }
-      ref2.current = true;
-    }
-  }, items1);
-  const items2 = [callback, tmp];
-  const start = react.useCallback(() => {
-    const tmp = closure_0;
-    if (tmp) {
-      ref2.current = false;
-      callback();
-    }
-  }, items2);
-  const items3 = [pause, start, tmp];
-  const effect = react.useEffect(() => {
-    const tmp = closure_0;
-    if (tmp) {
-      start();
-    } else {
-      pause();
-    }
-    return pause;
-  }, items3);
-  return { pause, start };
 };

@@ -1,19 +1,19 @@
-// Module ID: 19220
-// Function ID: 19221
+// Module ID: 19285
+// Function ID: 19286
 // Name: NavigationTTIDispatcherManager
-// Dependencies: [4821, 5990, 4872, 17803, 12739, 12937, 7193, 2]
+// Dependencies: [4821, 5997, 4872, 17873, 12771, 12973, 7200, 2]
 
-// Module 19220 (NavigationTTIDispatcherManager)
-import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 12739 */;
-import navigationTTIEnabled from "navigationTTIEnabled" /* 17803 */;
+// Module 19285 (NavigationTTIDispatcherManager)
+import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 12771 */;
+import navigationTTIEnabled from "navigationTTIEnabled" /* 17873 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import MessageStore from "MessageStore" /* 5990 */;
+import MessageStore from "MessageStore" /* 5997 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7193 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7200 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const NavigationTTIDefinition = tmp(12937);
+const NavigationTTIDefinition = tmp(12973);
 function handleChannelSelect(arg0) {
   let channelId;
   let fromChannelId;

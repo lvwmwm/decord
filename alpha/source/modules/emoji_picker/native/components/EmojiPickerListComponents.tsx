@@ -1,21 +1,21 @@
-// Module ID: 9868
-// Function ID: 9869
+// Module ID: 9880
+// Function ID: 9881
 // Name: EmojiPickerListComponents
-// Dependencies: [19, 17, 9786, 21, 4966, 587, 558, 576, 1202, 8609, 1128, 5216, 9866, 2]
+// Dependencies: [19, 17, 9798, 21, 4969, 587, 558, 576, 1202, 8618, 1128, 5220, 9878, 2]
 
-// Module 9868 (EmojiPickerListComponents)
+// Module 9880 (EmojiPickerListComponents)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8609 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9866 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8618 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9878 */;
 import react from "react" /* 19 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9786 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9798 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -122,7 +122,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
       let tmp9 = null;
       if ("" !== label) {
         const obj2 = { lineClamp: 1, color: "interactive-text-default", variant: "heading-sm/semibold", children: label };
-        tmp9 = React3(tmp(5216).Text, obj2);
+        tmp9 = React3(tmp(5220).Text, obj2);
       }
       cResult[3] = label;
       cResult[4] = tmp9;
@@ -151,7 +151,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
   let tmp6 = isSectionNitroLocked;
   if (tmp6) {
     const obj4 = { useTier0UpsellContent };
-    tmp6 = React3(tmp(9866).PremiumUpsellGradientBackground, obj4);
+    tmp6 = React3(tmp(9878).PremiumUpsellGradientBackground, obj4);
   }
   cResult[0] = isSectionNitroLocked;
   cResult[1] = useTier0UpsellContent;

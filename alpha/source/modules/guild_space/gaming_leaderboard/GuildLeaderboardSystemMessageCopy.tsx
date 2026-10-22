@@ -1,10 +1,10 @@
-// Module ID: 8332
-// Function ID: 8333
+// Module ID: 8341
+// Function ID: 8342
 // Name: GuildLeaderboardSystemMessageCopy
 // Dependencies: [4889, 2440, 1104, 1128, 2]
 // Exports: getLeaderboardSystemMessage, getMobileLeaderboardSystemMessage, resolveGuildSpaceLeaderboardMessage
 
-// Module 8332 (GuildLeaderboardSystemMessageCopy)
+// Module 8341 (GuildLeaderboardSystemMessageCopy)
 import DurationsDefault from "Durations" /* 1104 */;
 import intl3 from "intl" /* 1128 */;
 import _modDef2440 from "module_2440" /* 2440 */;

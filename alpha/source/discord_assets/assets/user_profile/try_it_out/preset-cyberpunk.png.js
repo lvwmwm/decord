@@ -1,8 +1,8 @@
-// Module ID: 15802
-// Function ID: 15803
+// Module ID: 15844
+// Function ID: 15845
 // Dependencies: [2]
 
-// Module 15802
+// Module 15844
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/user_profile/try_it_out/preset-cyberpunk.png.js");

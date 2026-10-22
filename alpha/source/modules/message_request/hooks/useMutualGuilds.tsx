@@ -1,12 +1,12 @@
-// Module ID: 18163
-// Function ID: 18164
+// Module ID: 18233
+// Function ID: 18234
 // Name: useMutualGuilds
-// Dependencies: [19, 7680, 1392, 558, 576, 504, 8640, 2]
+// Dependencies: [19, 7687, 1392, 558, 576, 504, 8649, 2]
 
-// Module 18163 (useMutualGuilds)
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8640 */;
+// Module 18233 (useMutualGuilds)
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8649 */;
 import react from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7680 */;
+import UserProfileStore from "UserProfileStore" /* 7687 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

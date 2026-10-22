@@ -1,10 +1,10 @@
-// Module ID: 17181
-// Function ID: 17182
+// Module ID: 17251
+// Function ID: 17252
 // Name: PlainTextExperiment
 // Dependencies: [1455, 2]
 // Exports: usePlainTextExperiment
 
-// Module 17181 (PlainTextExperiment)
+// Module 17251 (PlainTextExperiment)
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 

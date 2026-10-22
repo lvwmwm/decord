@@ -1,21 +1,21 @@
-// Module ID: 17395
-// Function ID: 17396
+// Module ID: 17465
+// Function ID: 17466
 // Name: FavoritesGuildCleanupModal
-// Dependencies: [19, 17, 21, 4966, 587, 6651, 558, 576, 1633, 17396, 5216, 1128, 3412, 6987, 6964, 6963, 5957, 5226, 6966, 11096, 5586, 17398, 6879, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 6658, 558, 576, 1633, 17466, 5220, 1128, 3412, 6994, 6971, 6970, 5964, 5230, 6973, 11113, 5590, 17468, 6886, 2]
 
-// Module 17395 (FavoritesGuildCleanupModal)
+// Module 17465 (FavoritesGuildCleanupModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3412 from "module_3412" /* 3412 */;
-import useChannelNameDefault from "useChannelName" /* 5586 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6651 */;
-import TableRadioRow2 from "TableRadioRow" /* 6963 */;
-import Modal from "Modal" /* 11096 */;
-import useFavoritesCleanupActivityDefault from "useFavoritesCleanupActivity" /* 17398 */;
+import useChannelNameDefault from "useChannelName" /* 5590 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6658 */;
+import TableRadioRow2 from "TableRadioRow" /* 6970 */;
+import Modal from "Modal" /* 11113 */;
+import useFavoritesCleanupActivityDefault from "useFavoritesCleanupActivity" /* 17468 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const TableCheckboxRow2 = tmp(6879);
+const TableCheckboxRow2 = tmp(6886);
 function closeCleanup() {
   const obj = ModalActionCreatorsDefault;
   obj.popWithKey("FavoritesGuildCleanupModal");

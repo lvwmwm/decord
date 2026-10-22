@@ -1,13 +1,13 @@
-// Module ID: 11291
-// Function ID: 11292
+// Module ID: 12641
+// Function ID: 12642
 // Name: joinFrameActivity
-// Dependencies: [5, 4821, 4901, 1087, 2026, 584, 11292, 11159, 10735, 6354, 10740, 1128, 9215, 11275, 10678, 2]
+// Dependencies: [5, 4821, 4901, 1087, 2026, 584, 12642, 11176, 10747, 6361, 10752, 1128, 9224, 11292, 10690, 2]
 // Exports: default
 
-// Module 11291 (joinFrameActivity)
+// Module 12641 (joinFrameActivity)
 import Constants2 from "Constants" /* 2026 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10678 */;
-import UserActivityActionCreators from "UserActivityActionCreators" /* 11275 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10690 */;
+import UserActivityActionCreators from "UserActivityActionCreators" /* 11292 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import PermissionStore from "PermissionStore" /* 4901 */;

@@ -1,118 +1,26 @@
 // Module ID: 8203
 // Function ID: 8204
-// Dependencies: [8190, 8193]
+// Dependencies: [8204, 8202]
 
 // Module 8203
-import _mod8190 from "module_8190" /* 8190 */;
-import _modDef8193 from "module_8193" /* 8193 */;
+import _modDef8202 from "module_8202" /* 8202 */;
+import _modDef8204 from "module_8204" /* 8204 */;
 
 
 export default {
-  isWebpFile(dataView) {
-    let tmp = dataView;
+  isTiffFile(byteLength) {
+    let tmp = byteLength && byteLength.byteLength >= 4;
     if (tmp) {
-      const obj = _mod8190;
-      tmp = obj.getStringFromDataView(dataView, 0, 4) === "RIFF";
-    }
-    if (tmp) {
-      const obj2 = _mod8190;
-      tmp = obj2.getStringFromDataView(dataView, 8, 4) === "WEBP";
+      const uint16 = byteLength.getUint16(0);
+      tmp = byteLength.getUint16(2, uint16 === _modDef8204.LITTLE_ENDIAN) === 42;
     }
     return tmp;
   },
-  findOffsets(byteLength) {
-    let tmp;
-    let tmp2;
-    let tmp3;
-    let flag = false;
-    let num = 12;
-    let hasAppMarkers = false;
-    let vp8xChunkOffset;
-    let iccChunks;
-    let xmpChunks;
-    let tiffHeaderOffset;
-    if (20 < byteLength.byteLength) {
-      while (true) {
-        let tmp4;
-        let sum4;
-        let tmp20;
-        let tmp21;
-        let tmp22;
-        let tmp9 = require;
-        let obj = _mod8190;
-        let stringFromDataView = obj.getStringFromDataView(byteLength, num, 4);
-        let uint32 = byteLength.getUint32(num + 4, true);
-        let tmp13 = importDefault;
-        let flag3 = flag;
-        if (_modDef8193.USE_EXIF) {
-          if ("EXIF" === stringFromDataView) {
-            let tmp9Result = tmp9(8190);
-            let sum = num + 8;
-            let sum1 = sum;
-            if (tmp9Result.getStringFromDataView(byteLength, sum, 6) === "Exif\0\0") {
-              sum1 = sum + 6;
-            }
-            tmp22 = sum1;
-            flag3 = true;
-            sum4 = tmp;
-            tmp20 = tmp2;
-            tmp21 = tmp3;
-            let sum2 = uint32;
-            if (uint32 % 2 !== 0) {
-              sum2 = uint32 + 1;
-            }
-            let sum3 = num + (8 + sum2);
-            flag = flag3;
-            num = sum3;
-            tmp = sum4;
-            tmp2 = tmp20;
-            tmp3 = tmp21;
-            tmp4 = tmp22;
-            hasAppMarkers = flag3;
-            vp8xChunkOffset = sum4;
-            iccChunks = tmp20;
-            xmpChunks = tmp21;
-            tiffHeaderOffset = tmp22;
-            if (sum3 + 8 >= byteLength.byteLength) {
-              break;
-            }
-          }
-        }
-        if (tmp13(8193).USE_XMP) {
-          if ("XMP " === stringFromDataView) {
-            let obj2 = { dataOffset: num + 8, length: uint32 };
-            let items = [obj2];
-            flag3 = true;
-            sum4 = tmp;
-            tmp20 = tmp2;
-            tmp21 = items;
-            tmp22 = tmp4;
-          }
-        }
-        if (tmp13(8193).USE_ICC) {
-          if ("ICCP" === stringFromDataView) {
-            let obj3 = { offset: num + 8, length: uint32, chunkNumber: 1, chunksTotal: 1 };
-            let items1 = [obj3];
-            flag3 = true;
-            sum4 = tmp;
-            tmp20 = items1;
-            tmp21 = tmp3;
-            tmp22 = tmp4;
-          }
-        }
-        sum4 = tmp;
-        tmp20 = tmp2;
-        tmp21 = tmp3;
-        tmp22 = tmp4;
-        if ("VP8X" === stringFromDataView) {
-          sum4 = num + 8;
-          flag3 = true;
-          tmp20 = tmp2;
-          tmp21 = tmp3;
-          tmp22 = tmp4;
-        }
-      }
+  findTiffOffsets() {
+    if (_modDef8202.USE_EXIF) {
+      return { hasAppMarkers: true, tiffHeaderOffset: 0 };
+    } else {
+      return {};
     }
-    return { hasAppMarkers, tiffHeaderOffset, xmpChunks, iccChunks, vp8xChunkOffset };
   }
 };

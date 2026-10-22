@@ -1,25 +1,25 @@
-// Module ID: 15976
-// Function ID: 15977
+// Module ID: 16018
+// Function ID: 16019
 // Name: IgnoredUsersList
-// Dependencies: [19, 17, 4911, 21, 4966, 587, 558, 576, 7230, 7255, 1202, 15969, 1128, 5216, 15977, 6966, 7200, 504, 2]
+// Dependencies: [19, 17, 4911, 21, 4969, 587, 558, 576, 7237, 7262, 1202, 16011, 1128, 5220, 16019, 6973, 7207, 504, 2]
 
-// Module 15976 (IgnoredUsersList)
+// Module 16018 (IgnoredUsersList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import TableRowGroup2 from "TableRowGroup" /* 6966 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7200 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7230 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7255 */;
-import Blocked from "Blocked" /* 15969 */;
-import IgnoredUserRowDefault from "IgnoredUserRow" /* 15977 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import TableRowGroup2 from "TableRowGroup" /* 6973 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7207 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7237 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7262 */;
+import Blocked from "Blocked" /* 16011 */;
+import IgnoredUserRowDefault from "IgnoredUserRow" /* 16019 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

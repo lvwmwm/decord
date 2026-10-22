@@ -1,28 +1,29 @@
-// Module ID: 14284
-// Function ID: 14285
+// Module ID: 14327
+// Function ID: 14328
 // Name: UserProfilePersonalWidgetCard
-// Dependencies: [32, 19, 17, 502, 1087, 21, 4966, 587, 558, 576, 14285, 14286, 5216, 1128, 4797, 14287, 5651, 5240, 8449, 5020, 504, 9383, 14282, 7280, 2]
+// Dependencies: [32, 19, 17, 502, 1087, 21, 4969, 587, 558, 576, 14328, 14329, 5220, 1128, 4797, 14330, 5655, 5244, 8458, 5023, 504, 9394, 14325, 7287, 2]
 
-// Module 14284 (UserProfilePersonalWidgetCard)
+// Module 14327 (UserProfilePersonalWidgetCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
+import intl2 from "intl" /* 1128 */;
 import UserSettings from "UserSettings" /* 4797 */;
-import native from "native" /* 5020 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import LinearGradientDefault from "LinearGradient" /* 5240 */;
-import FastImageDefault from "FastImage" /* 5651 */;
-import UserProfileCardDefault from "UserProfileCard" /* 7280 */;
-import GifTagDefault from "GifTag" /* 8449 */;
-import UserProfileWidgetReportButtonDefault from "UserProfileWidgetReportButton" /* 14282 */;
-import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 14285 */;
-import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 14286 */;
+import native from "native" /* 5023 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import LinearGradientDefault from "LinearGradient" /* 5244 */;
+import FastImageDefault from "FastImage" /* 5655 */;
+import UserProfileCardDefault from "UserProfileCard" /* 7287 */;
+import GifTagDefault from "GifTag" /* 8458 */;
+import UserProfileWidgetReportButtonDefault from "UserProfileWidgetReportButton" /* 14325 */;
+import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 14328 */;
+import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 14329 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -44,8 +45,7 @@ let rect1;
 let size;
 let tmp;
 let unpackModuleId;
-const intl2 = tmp(1128);
-const WidgetAssetUtils = tmp(14287);
+const WidgetAssetUtils = tmp(14330);
 let _slicedToArray = _slicedToArray_mod;
 ({ Pressable: hasOwnProperty, StyleSheet: metroRequire, View: metroImportDefault } = react_native);
 const ThemeTypes = Constants.ThemeTypes;
@@ -215,7 +215,6 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Person
   let obj3;
   let obj4;
   let tmp5Result;
-  const tmp = require;
   const obj = PersonalWidgetExpandCollapseContext;
   const personalWidgetExpandCollapse = obj.usePersonalWidgetExpandCollapse();
   ({ isExpanded, setIsExpanded: closure_129_0 } = personalWidgetExpandCollapse);
@@ -230,10 +229,10 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Person
       children: authStore(Text, obj4)
     };
     obj3 = { expanded: isExpanded };
-    Text = Text_Text.Text;
-    const intl = intl2.intl;
+    Text = tmp(5220).Text;
+    const intl = tmp(1128).intl;
     const string = intl.string;
-    const t = intl2.t;
+    const t = tmp(1128).t;
     obj4 = { variant: "text-sm/medium", color: "text-subtle", children: string(isExpanded ? t["6MwJo/"] : t.lBeKY2) };
     tmp5Result = tmp5(hasOwnProperty, obj2);
   } else {
@@ -289,7 +288,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWid
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F149505 */ });
+        return closure_0(() => { /* body not rendered: F150297 */ });
       }
     }
     cResult[6] = T;
@@ -297,21 +296,21 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWid
   } else {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F149505 */ });
+        return closure_0(() => { /* body not rendered: F150297 */ });
       }
     }
   }
   if (null != tmp7 && tmp7.isAnimated && !(setting || tmp5[0])) {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F149505 */ });
+        return closure_0(() => { /* body not rendered: F150297 */ });
       }
     }
   }
   if (cResult[7] === tmp8) {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F149505 */ });
+        return closure_0(() => { /* body not rendered: F150297 */ });
       }
     }
   }
@@ -471,7 +470,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function CoverS
                     const obj4 = { theme: ThemeTypes.DARK, primaryColor: null, secondaryColor: null, children: unpackModuleId(metroImportDefault, obj5) };
                     obj5 = { style: tmp4.coverContainer, children: items };
                     items = [tmp21, tmp29, tmp16, tmp36];
-                    const ThemeContextProvider = tmp(5020).ThemeContextProvider;
+                    const ThemeContextProvider = tmp(5023).ThemeContextProvider;
                     const tmp45 = authStore(ThemeContextProvider, obj4);
                     cResult[22] = tmp16;
                     cResult[23] = tmp4.coverContainer;
@@ -603,7 +602,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function CoverS
     if (null != source) {
       if ("" !== section.title) {
         const obj9 = { colors, locations, style: tmp15.absoluteFill, pointerEvents: "none" };
-        tmp24Result4 = tmp24(tmp14(5240), obj9);
+        tmp24Result4 = tmp24(tmp14(5244), obj9);
       } else {
         tmp24Result4 = null;
       }
@@ -613,7 +612,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function CoverS
     let tmp24Result5 = null;
     if (showGifTag) {
       const obj10 = { style: tmp.gifTag };
-      tmp24Result5 = tmp24(tmp14(8449), obj10);
+      tmp24Result5 = tmp24(tmp14(8458), obj10);
     }
     items2[3] = tmp24Result5;
     tmp24Result6 = tmp24(ThemeContextProvider, obj4);
@@ -923,7 +922,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPr
     }
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp13 = closure_10(userId(9383).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
+      const tmp13 = closure_10(userId(9394).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
       cResult[6] = tmp13;
       tmp11 = tmp13;
     } else {
@@ -1044,13 +1043,13 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPr
   let obj = userId(504);
   const items = [AuthenticationStore];
   const stateFromStores = obj.useStateFromStores(items, () => AuthenticationStore.getId() === userId);
-  let obj2 = { style: cardStyle, titleLeadingIcon: closure_10(userId(9383).NitroWheelIcon, { size: "xs", color: "icon-subtle" }), title: widget.header, trailingAction: tmp4Result, children: tmp8(tmp9, obj4) };
+  let obj2 = { style: cardStyle, titleLeadingIcon: closure_10(userId(9394).NitroWheelIcon, { size: "xs", color: "icon-subtle" }), title: widget.header, trailingAction: tmp4Result, children: tmp8(tmp9, obj4) };
   tmp4Result = !stateFromStores && !disableInteraction;
   const tmp5 = disableInteraction;
-  const tmp6 = disableInteraction(7280);
+  const tmp6 = disableInteraction(7287);
   if (tmp4Result) {
     const obj3 = { userId, widget };
-    tmp4Result = tmp4(tmp5(14282), obj3);
+    tmp4Result = tmp4(tmp5(14325), obj3);
   }
   const sections = widget.sections;
   obj4 = { style: tmp.sectionsContainer, children: items1 };

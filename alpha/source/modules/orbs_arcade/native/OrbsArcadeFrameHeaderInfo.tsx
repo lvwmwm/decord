@@ -1,17 +1,17 @@
-// Module ID: 18194
-// Function ID: 18195
+// Module ID: 18264
+// Function ID: 18265
 // Name: OrbsArcadeFrameHeaderInfo
-// Dependencies: [19, 17, 2045, 18195, 21, 4966, 587, 5232, 558, 576, 504, 9409, 5216, 13852, 2]
+// Dependencies: [19, 17, 2045, 16298, 21, 4969, 587, 5236, 558, 576, 504, 9420, 5220, 13888, 2]
 
-// Module 18194 (OrbsArcadeFrameHeaderInfo)
+// Module 18264 (OrbsArcadeFrameHeaderInfo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ButtonConstants from "ButtonConstants" /* 5232 */;
+import ButtonConstants from "ButtonConstants" /* 5236 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 18195 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16298 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -76,7 +76,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeFr
   }
   const tmpResult = applicationId(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp8, tmp9);
-  const tmpResult2 = applicationId(9409);
+  const tmpResult2 = applicationId(9420);
   const balance = tmpResult2.useFetchVirtualCurrencyBalance().balance;
   if (cResult[4] === stateFromStores) {
     if (cResult[5] === tmp4.namePill) {
@@ -87,7 +87,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeFr
       }
       if (cResult[8] !== balance) {
         const obj2 = { balance };
-        const tmp17 = closure_5(applicationId(13852).BalanceWidgetPill, obj2);
+        const tmp17 = closure_5(applicationId(13888).BalanceWidgetPill, obj2);
         cResult[8] = balance;
         cResult[9] = tmp17;
         tmp15 = tmp17;
@@ -117,7 +117,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeFr
   if (null != stateFromStores) {
     tmp12 = null;
     if ("" !== stateFromStores) {
-      const obj4 = { style: tmp4.namePill, children: closure_5(applicationId(5216).Text, obj5) };
+      const obj4 = { style: tmp4.namePill, children: closure_5(applicationId(5220).Text, obj5) };
       obj5 = { variant: "text-sm/semibold", color: "none", lineClamp: 1, maxFontSizeMultiplier: 1, style: tmp4.nameText, children: stateFromStores };
       tmp12 = closure_5(View, obj4);
     }
@@ -154,18 +154,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeFr
   }, items1);
   let tmp7 = null;
   const obj3 = { style: tmp.container, children: items2 };
-  const obj2 = applicationId(9409);
+  const obj2 = applicationId(9420);
   const balance = obj2.useFetchVirtualCurrencyBalance().balance;
   const tmp5 = closure_6;
   if (null != stateFromStores) {
     tmp7 = null;
     if ("" !== stateFromStores) {
-      const obj4 = { style: tmp.namePill, children: closure_5(applicationId(5216).Text, obj5) };
+      const obj4 = { style: tmp.namePill, children: closure_5(applicationId(5220).Text, obj5) };
       obj5 = { variant: "text-sm/semibold", color: "none", lineClamp: 1, maxFontSizeMultiplier: 1, style: tmp.nameText, children: stateFromStores };
       tmp7 = closure_5(tmp6, obj4);
     }
   }
-  items2 = [tmp7, closure_5(applicationId(13852).BalanceWidgetPill, { balance })];
+  items2 = [tmp7, closure_5(applicationId(13888).BalanceWidgetPill, { balance })];
   return tmp5(View, obj3);
 });
 const result = size.fileFinishedImporting("modules/orbs_arcade/native/OrbsArcadeFrameHeaderInfo.tsx");

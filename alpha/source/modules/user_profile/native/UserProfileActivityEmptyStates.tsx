@@ -1,23 +1,23 @@
-// Module ID: 14294
-// Function ID: 14295
+// Module ID: 14337
+// Function ID: 14338
 // Name: UserProfileActivityEmptyStates
-// Dependencies: [32, 19, 17, 1087, 21, 1128, 4966, 587, 558, 576, 5216, 5969, 12, 7388, 5192, 5226, 7467, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 1128, 4969, 587, 558, 576, 5220, 5976, 12, 7395, 5196, 5230, 7474, 2]
 
-// Module 14294 (UserProfileActivityEmptyStates)
+// Module 14337 (UserProfileActivityEmptyStates)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import components_Button_Button from "components/Button/Button" /* 5226 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7388 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import components_Button_Button from "components/Button/Button" /* 5230 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7395 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -308,8 +308,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         }
         const obj4 = { size: "sm", variant: "secondary", text: tmp15, onPress: tmp13 };
         cResult[10] = tmp13;
-        cResult[11] = closure_7(tmp(5226).Button, obj4);
-        const tmp18 = closure_7(tmp(5226).Button, obj4);
+        cResult[11] = closure_7(tmp(5230).Button, obj4);
+        const tmp18 = closure_7(tmp(5230).Button, obj4);
       } else {
         class A {
           constructor() {
@@ -359,7 +359,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       const tmp22 = closure_7(View, obj6);
     }
   }
-  let obj2 = user(5969);
+  let obj2 = user(5976);
   name = obj2.getName(guildId, channelId, user);
   const intl = tmp(1128).intl;
   const formatToPlainStringResult = intl.formatToPlainString(tmp(1128).t.sjSitP, { name });
@@ -380,7 +380,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let name;
   ({ guildId, channelId } = user);
   let tmp = closure_10();
-  let obj = name(5969);
+  let obj = name(5976);
   name = obj.getName(guildId, channelId, user);
   const intl = user(1128).intl;
   items = [user.id];
@@ -407,7 +407,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     obj3.hideAllActionSheets();
   }, items);
   obj4 = { size: "sm", variant: "secondary", text: intl2.string(user(1128).t["g33r/P"]), onPress: callback };
-  Button = user(5226).Button;
+  Button = user(5230).Button;
   intl2 = user(1128).intl;
   return closure_7(closure_11, obj2);
 }));
@@ -451,7 +451,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { size: "sm", variant: "secondary", text: intl3.string(intl4.t["/Hl24U"]), onPress: first };
-    const Button = tmp(5226).Button;
+    const Button = tmp(5230).Button;
     intl3 = tmp(1128).intl;
     const tmp12 = metroImportDefault(Button, obj2);
     cResult[3] = tmp12;

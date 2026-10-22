@@ -1,16 +1,16 @@
-// Module ID: 12434
-// Function ID: 12435
+// Module ID: 12464
+// Function ID: 12465
 // Name: ConjureMentionSuggestions
-// Dependencies: [19, 21, 4966, 587, 558, 576, 6966, 1128, 3830, 6882, 1202, 5015, 12207, 2]
+// Dependencies: [19, 21, 4969, 587, 558, 576, 6973, 1128, 3830, 6889, 1202, 5018, 11769, 2]
 
-// Module 12434 (ConjureMentionSuggestions)
+// Module 12464 (ConjureMentionSuggestions)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import TableRowGroup3 from "TableRowGroup" /* 6966 */;
+import TableRowGroup3 from "TableRowGroup" /* 6973 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -137,7 +137,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMenti
               return closure_1_3(TableRow, obj, user.user.id);
             })
       };
-      const TableRowGroup = tmp(6966).TableRowGroup;
+      const TableRowGroup = tmp(6973).TableRowGroup;
       intl = tmp(1128).intl;
       tmp15 = closure_3(TableRowGroup, obj3);
     }
@@ -166,7 +166,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMenti
               return closure_1_3(TableRow, obj, file.file.id);
             })
       };
-      const TableRowGroup2 = tmp(6966).TableRowGroup;
+      const TableRowGroup2 = tmp(6973).TableRowGroup;
       intl2 = tmp(1128).intl;
       tmp16 = closure_3(TableRowGroup2, obj4);
     }

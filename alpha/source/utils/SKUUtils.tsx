@@ -1,15 +1,15 @@
-// Module ID: 9263
-// Function ID: 9264
+// Module ID: 9272
+// Function ID: 9273
 // Name: SKUUtils
-// Dependencies: [32, 1087, 4997, 1128, 6362, 1384, 2049, 2]
+// Dependencies: [32, 1087, 5000, 1128, 6369, 1384, 2049, 2]
 // Exports: canUserInstall, getGenreIdFromURLSlug, getGenreText, getGenreURLSlugFromId, getReadablePreorderReleaseDate, getSKUIdFromURL, isThirdPartySKU
 
-// Module 9263 (SKUUtils)
+// Module 9272 (SKUUtils)
 import intl71 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import _modDef2049 from "module_2049" /* 2049 */;
-import matchPathCompat from "matchPathCompat" /* 4997 */;
-import StoreUtils from "StoreUtils" /* 6362 */;
+import matchPathCompat from "matchPathCompat" /* 5000 */;
+import StoreUtils from "StoreUtils" /* 6369 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;

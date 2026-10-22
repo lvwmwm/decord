@@ -1,17 +1,17 @@
-// Module ID: 18353
-// Function ID: 18354
+// Module ID: 18421
+// Function ID: 18422
 // Name: useSoundboardSoundLock
-// Dependencies: [19, 1392, 5988, 558, 576, 504, 7429, 2053, 18354, 9637, 9640, 5645, 1128, 9766, 2]
+// Dependencies: [19, 1392, 5995, 558, 576, 504, 7436, 2053, 18422, 9649, 9652, 5649, 1128, 9778, 2]
 
-// Module 18353 (useSoundboardSoundLock)
+// Module 18421 (useSoundboardSoundLock)
 import intl3 from "intl" /* 1128 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2053 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5645 */;
-import SoundboardConstants from "SoundboardConstants" /* 5988 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9637 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9640 */;
-import BoostGemIcon from "BoostGemIcon" /* 9766 */;
-import SoundboardSoundPreviewMenuExperiment2 from "SoundboardSoundPreviewMenuExperiment" /* 18354 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5649 */;
+import SoundboardConstants from "SoundboardConstants" /* 5995 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9649 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9652 */;
+import BoostGemIcon from "BoostGemIcon" /* 9778 */;
+import SoundboardSoundPreviewMenuExperiment2 from "SoundboardSoundPreviewMenuExperiment" /* 18422 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -248,7 +248,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundbo
       tmp11 = tmp13;
     }
   }
-  const tmpResult2 = tmp(7429);
+  const tmpResult2 = tmp(7436);
   const result1 = tmpResult2.canUseSoundboardSound(stateFromStores, guildId, guild_id);
   cResult[2] = guild_id;
   cResult[3] = stateFromStores;

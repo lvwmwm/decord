@@ -1,9 +1,9 @@
-// Module ID: 9520
-// Function ID: 9521
+// Module ID: 9531
+// Function ID: 9532
 // Name: MarketingComponentPlatform
 // Dependencies: [2]
 
-// Module 9520 (MarketingComponentPlatform)
+// Module 9531 (MarketingComponentPlatform)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/MarketingComponentPlatform.tsx");

@@ -1,15 +1,15 @@
-// Module ID: 19198
-// Function ID: 19199
+// Module ID: 19263
+// Function ID: 19264
 // Name: AVErrorStreamSendHighPacketLoss
-// Dependencies: [6621, 7789, 6624, 19196, 5877, 19193, 2]
+// Dependencies: [6628, 7798, 6631, 19261, 5884, 19258, 2]
 
-// Module 19198 (AVErrorStreamSendHighPacketLoss)
-import AVError from "AVError" /* 5877 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6624 */;
-import AVErrorContext from "AVErrorContext" /* 19193 */;
-import AVErrorUtils from "AVErrorUtils" /* 19196 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6621 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7789 */;
+// Module 19263 (AVErrorStreamSendHighPacketLoss)
+import AVError from "AVError" /* 5884 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6631 */;
+import AVErrorContext from "AVErrorContext" /* 19258 */;
+import AVErrorUtils from "AVErrorUtils" /* 19261 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6628 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7798 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

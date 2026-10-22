@@ -1,25 +1,25 @@
-// Module ID: 8082
-// Function ID: 8083
+// Module ID: 8091
+// Function ID: 8092
 // Name: StageSettingsActionSheet
-// Dependencies: [19, 17, 6751, 4821, 4901, 4826, 6616, 1087, 21, 4966, 587, 5192, 558, 576, 504, 4829, 6666, 7845, 7467, 8083, 10051, 8910, 1128, 1202, 8891, 14488, 14489, 14490, 14491, 7275, 2]
+// Dependencies: [19, 17, 6758, 4821, 4901, 4826, 6623, 1087, 21, 4969, 587, 5196, 558, 576, 504, 4829, 6673, 7853, 7474, 8092, 10063, 8919, 1128, 1202, 8900, 14532, 14533, 14534, 14535, 7282, 2]
 
-// Module 8082 (StageSettingsActionSheet)
+// Module 8091 (StageSettingsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import StageChannelPermissions from "StageChannelPermissions" /* 4829 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6616 */;
-import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 7845 */;
-import ReportModals from "ReportModals" /* 8083 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10051 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6623 */;
+import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 7853 */;
+import ReportModals from "ReportModals" /* 8092 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10063 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6751 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6758 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
 import StageInstanceStore from "StageInstanceStore" /* 4826 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

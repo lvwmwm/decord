@@ -1,18 +1,18 @@
-// Module ID: 12856
-// Function ID: 12857
+// Module ID: 12888
+// Function ID: 12889
 // Name: CheckpointBackground
-// Dependencies: [19, 5995, 1087, 21, 4966, 558, 576, 5240, 12857, 5651, 2]
+// Dependencies: [19, 6002, 1087, 21, 4969, 558, 576, 5244, 12889, 5655, 2]
 
-// Module 12856 (CheckpointBackground)
+// Module 12888 (CheckpointBackground)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import LinearGradientDefault from "LinearGradient" /* 5240 */;
-import FastImageDefault from "FastImage" /* 5651 */;
-import CheckpointConstants from "CheckpointConstants" /* 5995 */;
-import _modDef12857 from "module_12857" /* 12857 */;
+import LinearGradientDefault from "LinearGradient" /* 5244 */;
+import FastImageDefault from "FastImage" /* 5655 */;
+import CheckpointConstants from "CheckpointConstants" /* 6002 */;
+import _modDef12889 from "module_12889" /* 12889 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { uri: _modDef12857 };
+      const obj2 = { uri: _modDef12889 };
       cResult[5] = obj2;
       tmp10 = obj2;
     } else {
@@ -104,7 +104,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
   const obj2 = { colors: memo, start: VerticalGradient.START, end: VerticalGradient.END, style: tmp2.background };
   items1[0] = closure_6(LinearGradientDefault, obj2);
   const obj3 = { source: obj4, style: tmp2.background, resizeMode: "cover" };
-  obj4 = { uri: _modDef12857 };
+  obj4 = { uri: _modDef12889 };
   const tmp4 = FastImageDefault;
   items1[1] = closure_6(tmp4, obj3);
   return closure_8(closure_7, obj);

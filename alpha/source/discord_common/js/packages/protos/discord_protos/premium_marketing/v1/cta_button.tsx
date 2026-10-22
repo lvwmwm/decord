@@ -1,12 +1,12 @@
-// Module ID: 9485
-// Function ID: 9486
+// Module ID: 9496
+// Function ID: 9497
 // Name: cta_button
-// Dependencies: [32, 1212, 9483, 1242, 2]
+// Dependencies: [32, 1212, 9494, 1242, 2]
 
-// Module 9485 (cta_button)
+// Module 9496 (cta_button)
 import _mod1212 from "module_1212" /* 1212 */;
 import wrappers from "wrappers" /* 1242 */;
-import localized_string from "localized_string" /* 9483 */;
+import localized_string from "localized_string" /* 9494 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

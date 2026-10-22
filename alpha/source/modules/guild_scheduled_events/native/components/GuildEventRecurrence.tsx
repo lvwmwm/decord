@@ -1,19 +1,19 @@
-// Module ID: 8991
-// Function ID: 8992
+// Module ID: 9000
+// Function ID: 9001
 // Name: GuildEventRecurrence
-// Dependencies: [19, 17, 4821, 4843, 6763, 21, 4966, 587, 558, 576, 504, 8856, 8903, 8857, 8849, 1128, 8865, 8861, 6887, 5216, 1202, 8992, 2]
+// Dependencies: [19, 17, 4821, 4843, 6770, 21, 4969, 587, 558, 576, 504, 8865, 8912, 8866, 8858, 1128, 8874, 8870, 6894, 5220, 1202, 9001, 2]
 
-// Module 8991 (GuildEventRecurrence)
+// Module 9000 (GuildEventRecurrence)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ScheduleUtils from "ScheduleUtils" /* 8849 */;
-import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8865 */;
+import ScheduleUtils from "ScheduleUtils" /* 8858 */;
+import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8874 */;
 import react from "react" /* 19 */;
 import ChannelStore_mod from "ChannelStore" /* 4821 */;
 import GuildStore_mod from "GuildStore" /* 4843 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6763 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6770 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -444,7 +444,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEvent
   const stateFromStores = obj.useStateFromStores(items, () => GuildScheduledEventStore.getGuildScheduledEvent(guildEventId));
   let id;
   const tmp5 = guildEventId;
-  const tmp6 = guildEventId(8856);
+  const tmp6 = guildEventId(8865);
   if (stateFromStores != null) {
     id = stateFromStores.id;
   }
@@ -469,13 +469,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEvent
     }
     return getChannel(channel_id);
   });
-  const useManageResourcePermissions = tmp2(8903).useManageResourcePermissions;
-  tmp2(8903);
+  const useManageResourcePermissions = tmp2(8912).useManageResourcePermissions;
+  tmp2(8912);
   if (stateFromStores2 == null) {
     stateFromStores2 = stateFromStores1;
   }
   closure_5 = useManageResourcePermissions(stateFromStores2).canManageGuildEvent(stateFromStores);
-  const tmp2Result6 = tmp2(8857);
+  const tmp2Result6 = tmp2(8866);
   const eventScheduleById = tmp2Result6.useEventScheduleById(guildEventId, recurrenceId);
   let toISOStringResult;
   if (eventScheduleById != null) {
@@ -535,15 +535,15 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEvent
           }
         },
       style: tmp.eventHeader,
-      children: closure_8(tmp2(8861).GuildEventCardHeader, obj5)
+      children: closure_8(tmp2(8870).GuildEventCardHeader, obj5)
     };
-    const PressableOpacity = tmp2(6887).PressableOpacity;
+    const PressableOpacity = tmp2(6894).PressableOpacity;
     obj5 = { isActive, event: stateFromStores, showUserCount: false, showCreator: false, recurrenceId };
     items5 = [closure_8(PressableOpacity, obj4), ];
     const obj6 = { style: tmp.actions, children: items6 };
     if (tmp22Result) {
       const obj7 = { variant: "text-sm/semibold", color: "text-feedback-critical", children: intl2.string(tmp2(1128).t.fyBVRm) };
-      const Text = tmp2(5216).Text;
+      const Text = tmp2(5220).Text;
       intl2 = tmp2(1128).intl;
       tmp22Result = tmp22(Text, obj7);
     }
@@ -564,10 +564,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEvent
       style: tmp.secondarySmallButton,
       children: closure_8(Icon, obj9)
     };
-    const PressableOpacity2 = tmp2(6887).PressableOpacity;
+    const PressableOpacity2 = tmp2(6894).PressableOpacity;
     intl3 = tmp2(1128).intl;
     const _HermesInternal3 = HermesInternal;
-    obj9 = { source: tmp5(8992), size: tmp2(1202).Icon.Sizes.REFRESH_SMALL_16, style: tmp.secondarySmallIcon };
+    obj9 = { source: tmp5(9001), size: tmp2(1202).Icon.Sizes.REFRESH_SMALL_16, style: tmp.secondarySmallIcon };
     Icon = tmp2(1202).Icon;
     items6[1] = closure_8(PressableOpacity2, obj8);
     items5[1] = closure_9(stateFromStores1, obj6);

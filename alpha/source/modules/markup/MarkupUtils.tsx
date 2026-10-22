@@ -1,13 +1,13 @@
-// Module ID: 5687
-// Function ID: 5688
+// Module ID: 5691
+// Function ID: 5692
 // Name: MarkupUtils
-// Dependencies: [5688, 5961, 12, 5962, 8320, 2]
+// Dependencies: [5692, 5968, 12, 5969, 8329, 2]
 
-// Module 5687 (MarkupUtils)
-import MarkupReactRules from "MarkupReactRules" /* 5688 */;
-import combineMarkupRulesDefault from "combineMarkupRules" /* 5961 */;
-import MarkupRulesDefault from "MarkupRules" /* 5962 */;
-import MarkupParserAll from "MarkupParser" /* 8320 */;
+// Module 5691 (MarkupUtils)
+import MarkupReactRules from "MarkupReactRules" /* 5692 */;
+import combineMarkupRulesDefault from "combineMarkupRules" /* 5968 */;
+import MarkupRulesDefault from "MarkupRules" /* 5969 */;
+import MarkupParserAll from "MarkupParser" /* 8329 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 

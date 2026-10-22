@@ -1,29 +1,29 @@
-// Module ID: 13617
-// Function ID: 13618
+// Module ID: 13653
+// Function ID: 13654
 // Name: GuildWelcomeActionSheet
-// Dependencies: [19, 17, 6704, 4821, 4843, 4901, 13614, 13618, 1087, 1395, 1098, 21, 4966, 587, 6630, 558, 576, 504, 5586, 1114, 5192, 1417, 5651, 4915, 5216, 1202, 12638, 8910, 13616, 1267, 13548, 1128, 7275, 2]
+// Dependencies: [19, 17, 6711, 4821, 4843, 4901, 13650, 13654, 1087, 1395, 1098, 21, 4969, 587, 6637, 558, 576, 504, 5590, 1114, 5196, 1417, 5655, 4915, 5220, 1202, 12670, 8919, 13652, 1267, 13584, 1128, 7282, 2]
 
-// Module 13617 (GuildWelcomeActionSheet)
+// Module 13653 (GuildWelcomeActionSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants2 from "Constants" /* 1098 */;
 import router_utils from "router_utils" /* 1114 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import WelcomeScreenStore2 from "WelcomeScreenStore" /* 13614 */;
-import WelcomeScreenActionCreators from "WelcomeScreenActionCreators" /* 13616 */;
-import WelcomeScreenConstants from "WelcomeScreenConstants" /* 13618 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import WelcomeScreenStore2 from "WelcomeScreenStore" /* 13650 */;
+import WelcomeScreenActionCreators from "WelcomeScreenActionCreators" /* 13652 */;
+import WelcomeScreenConstants from "WelcomeScreenConstants" /* 13654 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmojiStore_mod from "EmojiStore" /* 6704 */;
+import EmojiStore_mod from "EmojiStore" /* 6711 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
-import TextStyles_mod from "TextStyles" /* 6630 */;
+import createStyles_mod from "createStyles" /* 4969 */;
+import TextStyles_mod from "TextStyles" /* 6637 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -770,12 +770,12 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildWelcom
     if (null != welcomeScreen) {
       const obj3 = { startExpanded: true, children: closure_18(hasError, obj4) };
       obj4 = { contentContainerStyle: tmp.container, children: items9 };
-      const ActionSheet = tmp2(7275).ActionSheet;
-      const obj5 = { style: tmp.guildIcon, guild: stateFromStores, size: onHide(13548).Sizes.MEDIUM, textScale: 2 };
-      const tmp17 = onHide(13548);
+      const ActionSheet = tmp2(7282).ActionSheet;
+      const obj5 = { style: tmp.guildIcon, guild: stateFromStores, size: onHide(13584).Sizes.MEDIUM, textScale: 2 };
+      const tmp17 = onHide(13584);
       items9 = [closure_17(tmp17, obj5), , , , ];
       const obj6 = { style: tmp.header, variant: "heading-xl/extrabold", color: "text-default", children: intl.format(guildId(1128).t["0aydCN"], obj7) };
-      const Text = tmp2(5216).Text;
+      const Text = tmp2(5220).Text;
       intl = tmp2(1128).intl;
       obj7 = {
         guildName: stateFromStores.name,
@@ -786,9 +786,9 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildWelcom
       };
       items9[1] = closure_17(Text, obj6);
       const obj8 = { style: tmp.guildDescription, variant: "text-sm/medium", color: "text-default", children: welcomeScreen.description };
-      items9[2] = closure_17(guildId(5216).Text, obj8);
+      items9[2] = closure_17(guildId(5220).Text, obj8);
       const obj9 = { style: tmp.channelsTitle, variant: "eyebrow", color: "text-default", children: str.toUpperCase() };
-      const Text2 = tmp2(5216).Text;
+      const Text2 = tmp2(5220).Text;
       const intl2 = tmp2(1128).intl;
       str = intl2.string(guildId(1128).t["haj5+i"]);
       items9[3] = closure_17(Text2, obj9);

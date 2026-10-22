@@ -1,12 +1,12 @@
-// Module ID: 10976
-// Function ID: 10977
+// Module ID: 10993
+// Function ID: 10994
 // Name: GameOrganizationInviteStore
-// Dependencies: [10977, 504, 584, 2]
+// Dependencies: [10994, 504, 584, 2]
 
-// Module 10976 (GameOrganizationInviteStore)
+// Module 10993 (GameOrganizationInviteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 10977 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 10994 */;
 import size from "module_2" /* 2 */;
 
 let set;

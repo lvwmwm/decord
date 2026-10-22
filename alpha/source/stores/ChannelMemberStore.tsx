@@ -1,25 +1,25 @@
-// Module ID: 7349
-// Function ID: 7350
+// Module ID: 7356
+// Function ID: 7357
 // Name: ChannelMemberStore
-// Dependencies: [5172, 6621, 502, 4821, 5176, 4881, 4875, 4843, 5694, 6477, 1392, 1087, 1128, 4906, 1266, 12, 1099, 504, 584, 2]
+// Dependencies: [5176, 6628, 502, 4821, 5180, 4881, 4875, 4843, 5698, 6484, 1392, 1087, 1128, 4906, 1266, 12, 1099, 504, 584, 2]
 
-// Module 7349 (ChannelMemberStore)
+// Module 7356 (ChannelMemberStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import _modDef1266 from "module_1266" /* 1266 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4906 */;
-import ExperimentStore from "ExperimentStore" /* 5172 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6621 */;
+import ExperimentStore from "ExperimentStore" /* 5176 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6628 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5176 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5180 */;
 import GuildMemberStore from "GuildMemberStore" /* 4881 */;
 import GuildRoleStore from "GuildRoleStore" /* 4875 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import PresenceStore from "PresenceStore" /* 5694 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6477 */;
+import PresenceStore from "PresenceStore" /* 5698 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6484 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
@@ -219,7 +219,7 @@ class MemberList {
             if (null != guild) {
               role = GuildRoleStore.getRole(guild.id, id);
             }
-            obj2 = { type: obj.GROUP, key: id, id, title: str, count, index: "applicationId" };
+            obj2 = { type: obj.GROUP, key: id, id, title: str, count, index: "application" };
             str = "";
             if (null != role) {
               str = role.name;
@@ -304,7 +304,7 @@ class MemberList {
             if (null != guild) {
               role = GuildRoleStore.getRole(guild.id, id);
             }
-            obj2 = { type: obj.GROUP, key: id, id, title: str, count, index: "applicationId" };
+            obj2 = { type: obj.GROUP, key: id, id, title: str, count, index: "application" };
             str = "";
             if (null != role) {
               str = role.name;

@@ -1,10 +1,10 @@
-// Module ID: 7846
-// Function ID: 7847
+// Module ID: 7854
+// Function ID: 7855
 // Name: useIsOnStartStageScreenStore
-// Dependencies: [19, 4901, 4872, 570, 1274, 558, 576, 504, 4829, 7847, 2]
+// Dependencies: [19, 4901, 4872, 570, 1274, 558, 576, 504, 4829, 7855, 2]
 // Exports: setIsOnStartStageScreen
 
-// Module 7846 (useIsOnStartStageScreenStore)
+// Module 7854 (useIsOnStartStageScreenStore)
 import react_native from "react-native" /* 1274 */;
 import StageChannelPermissions from "StageChannelPermissions" /* 4829 */;
 import react from "react" /* 19 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const f98750 = () => {
+const f99197 = () => {
   obj = { isOnStartStageScreen };
   return state.setState(obj);
 };
@@ -83,7 +83,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUpdateIsO
   }
   const tmpResult2 = tmp(504);
   const stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp10, tmp11);
-  const tmp13 = stateFromStores1 && !stateFromStores(7847)(id.id);
+  const tmp13 = stateFromStores1 && !stateFromStores(7855)(id.id);
   dependencyMap = tmp13;
   if (cResult[7] === tmp13) {
     class I {
@@ -98,12 +98,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUpdateIsO
       if (!closure_2) {
         let c0 = false;
         const obj2 = react_native;
-        obj2.batchUpdates(f98750);
+        obj2.batchUpdates(f99197);
       }
     } else {
       let closure_0 = tmp;
       obj = react_native;
-      obj.batchUpdates(f98750);
+      obj.batchUpdates(f99197);
     }
   };
   items3 = [stateFromStores, tmp13];
@@ -121,7 +121,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUpdateIsO
   const items1 = [PermissionStore];
   const items2 = [id];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => PermissionStore.can(StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS, id), items2);
-  const tmp3 = stateFromStores1 && !stateFromStores(7847)(id.id);
+  const tmp3 = stateFromStores1 && !stateFromStores(7855)(id.id);
   dependencyMap = tmp3;
   const items3 = [stateFromStores, tmp3];
   const effect = react.useEffect(() => {
@@ -130,12 +130,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUpdateIsO
       if (!closure_2) {
         let c0 = false;
         const obj2 = react_native;
-        obj2.batchUpdates(f98750);
+        obj2.batchUpdates(f99197);
       }
     } else {
       let closure_0 = tmp;
       obj = react_native;
-      obj.batchUpdates(f98750);
+      obj.batchUpdates(f99197);
     }
   }, items3);
 });
@@ -143,7 +143,7 @@ function setIsOnStartStageScreen(arg0) {
   let closure_0;
   _require = arg0;
   obj = require("react-native");
-  obj.batchUpdates(f98750);
+  obj.batchUpdates(f99197);
 }
 const result = size.fileFinishedImporting("modules/stage_channels/useIsOnStartStageScreenStore.tsx");
 

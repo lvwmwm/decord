@@ -46,20 +46,20 @@ let obj = {
   unsafe_rawColors: RawColors,
   shadows: mapValuesDefault(Shadows, (arg0) => {
     function resolve(isAndroid) {
-      return f85104(closure_0[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
+      return f85541(closure_0[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
     }
     let closure_0 = arg0;
-    const f85100 = (shadowOffset, arg1) => {
+    const f85537 = (shadowOffset, arg1) => {
       shadowOffset = undefined;
       if (!arg1) {
         shadowOffset = shadowOffset.shadowOffset;
       }
       return shadowOffset;
     };
-    const f85101 = (shadowColorAndroid, arg1) => arg1 ? shadowColorAndroid.shadowColorAndroid : shadowColorAndroid.shadowColor;
-    const f85102 = (shadowOpacity) => shadowOpacity.shadowOpacity;
-    const f85103 = (shadowRadius) => shadowRadius.shadowRadius;
-    const f85104 = (elevation) => elevation.elevation;
+    const f85538 = (shadowColorAndroid, arg1) => arg1 ? shadowColorAndroid.shadowColorAndroid : shadowColorAndroid.shadowColor;
+    const f85539 = (shadowOpacity) => shadowOpacity.shadowOpacity;
+    const f85540 = (shadowRadius) => shadowRadius.shadowRadius;
+    const f85541 = (elevation) => elevation.elevation;
     return { shadowOffset: { resolve }, shadowColor: { resolve }, shadowOpacity: { resolve }, shadowRadius: { resolve }, elevation: { resolve } };
   }),
   radii: Radius.Radius,
@@ -98,7 +98,7 @@ let obj = {
     getSemanticColorName(BACKGROUND_BASE_LOW) {
       return BACKGROUND_BASE_LOW[closure_6];
     },
-    resolveSemanticColor(theme, TEXT_FEEDBACK_CRITICAL, semanticColorContextFromThemeContext) {
+    resolveSemanticColor(theme, BACKGROUND_SURFACE_HIGH, semanticColorContextFromThemeContext) {
       sanitizeTheme(theme);
       const category = tmp3.category;
       let result = RawColors[tmp4.raw];
@@ -110,7 +110,7 @@ let obj = {
       }
       if (null != enabledExperiments1) {
         if (semanticColorContextFromThemeContext.enabledExperiments.length > 0) {
-          if (null != SemanticColorExperiments[TEXT_FEEDBACK_CRITICAL[tmp2]]) {
+          if (null != SemanticColorExperiments[BACKGROUND_SURFACE_HIGH[tmp2]]) {
             const enabledExperiments = semanticColorContextFromThemeContext.enabledExperiments;
             for (const item10035 of enabledExperiments) {
               let tmp12;
@@ -137,7 +137,7 @@ let obj = {
       }
       if (isProfileTheme) {
         let hexResult;
-        if ("userProfileThemes" in SemanticColors[TEXT_FEEDBACK_CRITICAL[closure_6]]) {
+        if ("userProfileThemes" in SemanticColors[BACKGROUND_SURFACE_HIGH[closure_6]]) {
           let theme1;
           const userProfileThemes = tmp3.userProfileThemes;
           if (semanticColorContextFromThemeContext != null) {
@@ -192,7 +192,7 @@ let obj = {
       }
       if (null != gradient1) {
         let gradient2 = null;
-        if ("gradient" in SemanticColors[TEXT_FEEDBACK_CRITICAL[closure_6]]) {
+        if ("gradient" in SemanticColors[BACKGROUND_SURFACE_HIGH[closure_6]]) {
           gradient2 = tmp3.gradient;
         }
         let tmp22 = gradient2;
@@ -202,7 +202,7 @@ let obj = {
         }
         if (null != enabledExperiments3) {
           if (semanticColorContextFromThemeContext.enabledExperiments.length > 0) {
-            if (null != SemanticColorExperiments[TEXT_FEEDBACK_CRITICAL[closure_6]]) {
+            if (null != SemanticColorExperiments[BACKGROUND_SURFACE_HIGH[closure_6]]) {
               const enabledExperiments2 = semanticColorContextFromThemeContext.enabledExperiments;
               for (const item10067 of enabledExperiments2) {
                 let gradient3;

@@ -1,26 +1,26 @@
-// Module ID: 16409
-// Function ID: 16410
+// Module ID: 16478
+// Function ID: 16479
 // Name: GuildRoleSubscriptionListingEditStateUtils
-// Dependencies: [5, 32, 19, 6704, 4894, 16410, 16387, 1087, 1394, 558, 576, 504, 5581, 6362, 16411, 16412, 1105, 4892, 16413, 16394, 16414, 1274, 38, 6809, 7332, 12, 9901, 16415, 1281, 2]
+// Dependencies: [5, 32, 19, 6711, 4894, 16479, 16456, 1087, 1394, 558, 576, 504, 5585, 6369, 16480, 16481, 1105, 4892, 16482, 16463, 16483, 1274, 38, 6816, 7339, 12, 9913, 16484, 1281, 2]
 // Exports: useCreateOrUpdateListingFromEditState
 
-// Module 16409 (GuildRoleSubscriptionListingEditStateUtils)
+// Module 16478 (GuildRoleSubscriptionListingEditStateUtils)
 import react2 from "react" /* 576 */;
 import v1 from "v1" /* 1281 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import RolePermissionUtils from "RolePermissionUtils" /* 4892 */;
-import useInitialValueDefault from "useInitialValue" /* 5581 */;
-import StoreUtils from "StoreUtils" /* 6362 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16387 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16394 */;
-import useSubscriptionRoleDefault from "useSubscriptionRole" /* 16411 */;
-import useTrialIntervalOptionsDefault from "useTrialIntervalOptions" /* 16414 */;
+import useInitialValueDefault from "useInitialValue" /* 5585 */;
+import StoreUtils from "StoreUtils" /* 6369 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16456 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16463 */;
+import useSubscriptionRoleDefault from "useSubscriptionRole" /* 16480 */;
+import useTrialIntervalOptionsDefault from "useTrialIntervalOptions" /* 16483 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6704 */;
+import EmojiStore from "EmojiStore" /* 6711 */;
 import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4894 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16410 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16479 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -34,9 +34,9 @@ let closure_12;
 let map1;
 let tmp;
 const utils_ColorUtils = tmp(1105);
-const Contants = tmp(16412);
-const f126283 = (id) => id.id;
-const f151009 = () => {
+const Contants = tmp(16481);
+const f126988 = (id) => id.id;
+const f151817 = () => {
   state.setState((listings) => {
     let obj2;
     obj = { listings: obj2 };
@@ -58,14 +58,14 @@ function getRoleEmojis(arr, arg1) {
     const _Set = Set;
     const self = this;
     const self2 = this;
-    set = new Set(found.map(f126283));
+    set = new Set(found.map(f126988));
     return set;
   }
 }
 function clearEditState(NEW_LISTING_EDIT_STATE_ID) {
   _require = NEW_LISTING_EDIT_STATE_ID;
   obj = require("react-native");
-  obj.batchUpdates(f151009);
+  obj.batchUpdates(f151817);
 }
 let obj = function _updateListingPeripheralsFromEditState() {
   obj = _asyncToGenerator(async (arg0, value) => {
@@ -591,7 +591,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useClearEdit
       return () => {
         closure_0 = closure_1_0;
         obj = closure_0(dependencyMap[21]);
-        obj.batchUpdates(f151009);
+        obj.batchUpdates(f151817);
       };
     };
     const items = [arg0];
@@ -612,7 +612,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useClearEdit
     let state;
     closure_0 = closure_1_0;
     obj = closure_0(dependencyMap[21]);
-    obj.batchUpdates(f151009);
+    obj.batchUpdates(f151817);
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -1207,7 +1207,7 @@ const tmp18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTierEm
       const _Set = Set;
       const self = this;
       const self2 = this;
-      set = new Set(found.map(f126283));
+      set = new Set(found.map(f126988));
     }
     cResult[4] = stateFromStoresArray;
     cResult[5] = tmp4.id;
@@ -1240,7 +1240,7 @@ const tmp18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTierEm
         const _Set = Set;
         const self = this;
         const self2 = this;
-        set = new Set(found.map(f126283));
+        set = new Set(found.map(f126988));
       }
     }
     return set;
@@ -1538,7 +1538,7 @@ const tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEditSt
   } else {
     tmp4 = cResult[1];
   }
-  const tmpResult = tmp(16394);
+  const tmpResult = tmp(16463);
   const subscriptionListingsForGroup = tmpResult.useSubscriptionListingsForGroup(arg0, tmp4);
   if (cResult[2] !== arg1) {
     const fn = function s(arg0) {

@@ -1,9 +1,9 @@
-// Module ID: 14306
-// Function ID: 14307
+// Module ID: 14348
+// Function ID: 14349
 // Name: UserProfilePrivacyNotice
-// Dependencies: [32, 19, 17, 1087, 4818, 21, 4966, 587, 1211, 1128, 558, 576, 8099, 4797, 4805, 7473, 5216, 7467, 5668, 6910, 6887, 2]
+// Dependencies: [32, 19, 17, 1087, 4818, 21, 4969, 587, 1211, 1128, 558, 576, 8108, 4797, 4805, 7480, 5220, 7474, 5672, 6917, 6894, 2]
 
-// Module 14306 (UserProfilePrivacyNotice)
+// Module 14348 (UserProfilePrivacyNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,14 +13,14 @@ import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
 import UserSettings from "UserSettings" /* 4797 */;
 import dismissible_content from "dismissible_content" /* 4805 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5668 */;
-import XSmallIcon from "XSmallIcon" /* 6910 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7473 */;
-import useUserIsTeen from "useUserIsTeen" /* 8099 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5672 */;
+import XSmallIcon from "XSmallIcon" /* 6917 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7480 */;
+import useUserIsTeen from "useUserIsTeen" /* 8108 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -272,7 +272,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileP
     } else {
       tmp21 = cResult[15];
     }
-    const Text = tmp(5216).Text;
+    const Text = tmp(5220).Text;
     const text = tmp4.text;
     const intl = tmp(1128).intl;
     const obj7 = { privacySettingsLink: first1 };
@@ -341,7 +341,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileP
     const obj3 = { style: tmp.icon, children: closure_7(CircleInformationIcon.CircleInformationIcon, { size: "xs", color: "icon-feedback-info" }) };
     items = [closure_7(View, obj3), , ];
     const obj4 = { style: tmp.text, variant: "text-sm/normal", color: "text-default", children: intl.format(dqQ7AN, obj5) };
-    const Text = tmp3(5216).Text;
+    const Text = tmp3(5220).Text;
     intl = tmp3(1128).intl;
     obj5 = { privacySettingsLink: callback };
     items[1] = closure_7(Text, obj4);
@@ -354,7 +354,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileP
       style: tmp.closeButton,
       children: closure_7(XSmallIcon.XSmallIcon, { size: "xs", color: "icon-feedback-info" })
     };
-    const PressableOpacity = tmp3(6887).PressableOpacity;
+    const PressableOpacity = tmp3(6894).PressableOpacity;
     intl2 = tmp3(1128).intl;
     items[2] = closure_7(PressableOpacity, obj6);
     return closure_8(View, obj2);

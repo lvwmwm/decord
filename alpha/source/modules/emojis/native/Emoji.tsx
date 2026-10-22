@@ -1,16 +1,16 @@
-// Module ID: 7206
-// Function ID: 7207
+// Module ID: 7213
+// Function ID: 7214
 // Name: Emoji
-// Dependencies: [19, 17, 1207, 21, 558, 576, 1384, 4919, 1202, 5651, 4973, 7207, 7208, 2]
+// Dependencies: [19, 17, 1207, 21, 558, 576, 1384, 4919, 1202, 5655, 4976, 7214, 7215, 2]
 
-// Module 7206 (Emoji)
+// Module 7213 (Emoji)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 4919 */;
-import shared from "shared" /* 4973 */;
-import FastImageDefault from "FastImage" /* 5651 */;
+import shared from "shared" /* 4976 */;
+import FastImageDefault from "FastImage" /* 5655 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -74,9 +74,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Emoji(arg0
           const tmp10 = jsx;
           const tmpResult = shared;
           if (tmpResult.isThemeDark(ThemeStore.theme)) {
-            tmp11Result = tmp11(7207);
+            tmp11Result = tmp11(7214);
           } else {
-            tmp11Result = tmp11(7208);
+            tmp11Result = tmp11(7215);
           }
           obj5 = { uri: tmp4 };
           tmp10Result = tmp10(tmp12, obj4);
@@ -138,9 +138,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Emoji(arg0
         const tmp10 = FastImageDefault;
         const tmpResult = shared;
         if (tmpResult.isThemeDark(ThemeStore.theme)) {
-          tmp9Result = tmp9(7207);
+          tmp9Result = tmp9(7214);
         } else {
-          tmp9Result = tmp9(7208);
+          tmp9Result = tmp9(7215);
         }
         obj5 = { uri: uRL };
         tmp6Result = tmp6(tmp10, obj4);

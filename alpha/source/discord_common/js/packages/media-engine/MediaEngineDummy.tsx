@@ -1,12 +1,12 @@
-// Module ID: 5793
-// Function ID: 5794
+// Module ID: 5798
+// Function ID: 5799
 // Name: MediaEngineDummy
-// Dependencies: [5700, 5723, 5729, 2]
+// Dependencies: [5704, 5728, 5734, 2]
 
-// Module 5793 (MediaEngineDummy)
-import MediaEngineEvent from "MediaEngineEvent" /* 5729 */;
-import Constants from "Constants" /* 5700 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 5723 */;
+// Module 5798 (MediaEngineDummy)
+import MediaEngineEvent from "MediaEngineEvent" /* 5734 */;
+import Constants from "Constants" /* 5704 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 5728 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -101,6 +101,18 @@ class MediaEngineDummy extends TypedEventEmitter {
   }
   setClipsSource() {
 
+  }
+  startSnapshotCapture() {
+
+  }
+  stopSnapshotCapture() {
+
+  }
+  setSnapshotSource() {
+
+  }
+  getSnapshotStats() {
+    return Promise.resolve(null);
   }
   setClipsQualitySettings() {
     return false;

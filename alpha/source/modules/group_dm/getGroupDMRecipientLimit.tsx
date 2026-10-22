@@ -1,13 +1,13 @@
-// Module ID: 11237
-// Function ID: 11238
+// Module ID: 11254
+// Function ID: 11255
 // Name: getGroupDMRecipientLimit
-// Dependencies: [1392, 11238, 1087, 1394, 1991, 11239, 2]
+// Dependencies: [1392, 11255, 1087, 1394, 1991, 11256, 2]
 // Exports: default
 
-// Module 11237 (getGroupDMRecipientLimit)
+// Module 11254 (getGroupDMRecipientLimit)
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1991 */;
-import GroupDMConstants from "GroupDMConstants" /* 11238 */;
+import GroupDMConstants from "GroupDMConstants" /* 11255 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
@@ -41,7 +41,7 @@ export default function getGroupDMRecipientLimit() {
       const obj3 = PremiumTypeUtils;
       const tmp2 = require;
       if (obj3.isPremium(currentUser, PremiumTypes.TIER_2)) {
-        const tmp2Result = tmp2(11239);
+        const tmp2Result = tmp2(11256);
         if (tmp2Result.getGroupDMNitroCapConfig("getGroupDMRecipientLimit").enabled) {
           tmp5 = closure_3;
         }

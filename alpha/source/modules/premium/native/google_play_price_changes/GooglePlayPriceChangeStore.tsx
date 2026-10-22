@@ -1,9 +1,9 @@
-// Module ID: 18223
-// Function ID: 18224
+// Module ID: 18291
+// Function ID: 18292
 // Name: GooglePlayPriceChangeStore
 // Dependencies: [2058, 1087, 1384, 504, 584, 2]
 
-// Module 18223 (GooglePlayPriceChangeStore)
+// Module 18291 (GooglePlayPriceChangeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;

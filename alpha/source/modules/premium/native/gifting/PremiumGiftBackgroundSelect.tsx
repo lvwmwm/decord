@@ -1,19 +1,19 @@
-// Module ID: 10543
-// Function ID: 10544
+// Module ID: 10555
+// Function ID: 10556
 // Name: PremiumGiftBackgroundSelect
-// Dependencies: [32, 19, 17, 21, 5035, 4966, 587, 558, 576, 1499, 5188, 1202, 10544, 10408, 2]
+// Dependencies: [32, 19, 17, 21, 5038, 4969, 587, 558, 576, 1499, 5192, 1202, 10556, 10420, 2]
 
-// Module 10543 (PremiumGiftBackgroundSelect)
+// Module 10555 (PremiumGiftBackgroundSelect)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import timing from "timing" /* 5188 */;
-import NativeGiftContext from "NativeGiftContext" /* 10408 */;
+import timing from "timing" /* 5192 */;
+import NativeGiftContext from "NativeGiftContext" /* 10420 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
-import createStyles from "createStyles" /* 4966 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,22 +1,22 @@
-// Module ID: 7051
-// Function ID: 7052
+// Module ID: 7058
+// Function ID: 7059
 // Name: JoinServer
-// Dependencies: [19, 17, 7052, 21, 4966, 587, 558, 576, 7053, 1128, 5216, 5575, 1505, 1499, 6986, 5226, 2]
+// Dependencies: [19, 17, 7059, 21, 4969, 587, 558, 576, 7060, 1128, 5220, 5579, 1505, 1499, 6993, 5230, 2]
 
-// Module 7051 (JoinServer)
+// Module 7058 (JoinServer)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl10 from "intl" /* 1128 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5575 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6986 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7053 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5579 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6993 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7060 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 7052 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 7059 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -250,7 +250,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinServer(a
                 }
                 if (cResult[20] !== tmp4.exampleText) {
                   const obj5 = { style: exampleText, variant: "text-sm/medium", color: "text-muted", children: tmp26 };
-                  const tmp31 = closure_8(navigation(5216).Text, obj5);
+                  const tmp31 = closure_8(navigation(5220).Text, obj5);
                   cResult[20] = tmp4.exampleText;
                   cResult[21] = tmp31;
                   tmp29 = tmp31;
@@ -322,7 +322,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinServer(a
                       }
                       if (cResult[36] !== tmp8) {
                         const obj7 = { size: "lg", variant: "secondary", text: tmp51, accessibilityLabel: tmp52, onPress: tmp8 };
-                        const tmp57 = closure_8(navigation(5226).Button, obj7);
+                        const tmp57 = closure_8(navigation(5230).Button, obj7);
                         cResult[36] = tmp8;
                         cResult[37] = tmp57;
                         tmp55 = tmp57;
@@ -364,7 +364,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinServer(a
                       tmp58 = tmp61;
                     }
                     const obj11 = { size: "lg", text: tmp40, accessibilityLabel: tmp41, loading: submitting, disabled: submitting, onPress: onDone };
-                    const tmp46 = closure_8(navigation(5226).Button, obj11);
+                    const tmp46 = closure_8(navigation(5230).Button, obj11);
                     cResult[30] = onDone;
                     cResult[31] = submitting;
                     cResult[32] = tmp46;
@@ -398,11 +398,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinServer(a
     if (!tmp7) {
       const obj14 = { children: items3 };
       const obj15 = { style: tmp4.header, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: intl.string(navigation(1128).t.jlfuFW) };
-      const Text = tmp(5216).Text;
+      const Text = tmp(5220).Text;
       intl = tmp(1128).intl;
       items3 = [closure_8(Text, obj15), ];
       const obj28 = { style: tmp4.description, variant: "text-sm/medium", color: "text-default", children: intl2.string(navigation(1128).t.lVvN3A) };
-      const Text2 = tmp(5216).Text;
+      const Text2 = tmp(5220).Text;
       intl2 = tmp(1128).intl;
       items3[1] = closure_8(Text2, obj28);
       tmp13 = closure_9(closure_10, obj14);
@@ -460,11 +460,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinServer(a
   if (height > closure_6) {
     const obj4 = { children: items2 };
     const obj5 = { style: tmp.header, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: intl.string(navigation(1128).t.jlfuFW) };
-    const Text = tmp4(5216).Text;
+    const Text = tmp4(5220).Text;
     intl = tmp4(1128).intl;
     items2 = [closure_8(Text, obj5), ];
     const obj6 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.string(navigation(1128).t.lVvN3A) };
-    const Text2 = tmp4(5216).Text;
+    const Text2 = tmp4(5220).Text;
     intl2 = tmp4(1128).intl;
     items2[1] = closure_8(Text2, obj6);
     tmp7Result = tmp7(closure_10, obj4);
@@ -477,7 +477,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinServer(a
   intl4 = tmp4(1128).intl;
   items3[1] = closure_8(tmp2Result, obj8);
   const obj9 = { style: tmp.exampleText, variant: "text-sm/medium", color: "text-muted", children: intl5.format(navigation(1128).t.vwWaTe, obj10) };
-  const Text3 = tmp4(5216).Text;
+  const Text3 = tmp4(5220).Text;
   intl5 = tmp4(1128).intl;
   obj10 = {
     example1: items[0],
@@ -495,13 +495,13 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinServer(a
   const obj12 = { style: tmp.growSpacing };
   items5[0] = closure_8(closure_4, obj12);
   const obj13 = { size: "lg", text: intl6.string(navigation(1128).t["+H/coT"]), accessibilityLabel: intl7.string(navigation(1128).t["+H/coT"]), loading: submitting, disabled: submitting, onPress: onDone };
-  const Button = tmp4(5226).Button;
+  const Button = tmp4(5230).Button;
   intl6 = tmp4(1128).intl;
   intl7 = tmp4(1128).intl;
   items5[1] = closure_8(Button, obj13);
   items5[2] = closure_8(closure_14, {});
   const obj14 = { size: "lg", variant: "secondary", text: intl8.string(navigation(1128).t["MOqX/G"]), accessibilityLabel: intl9.string(navigation(1128).t["MOqX/G"]), onPress: callback };
-  const Button2 = tmp4(5226).Button;
+  const Button2 = tmp4(5230).Button;
   intl8 = tmp4(1128).intl;
   intl9 = tmp4(1128).intl;
   items5[3] = closure_8(Button2, obj14);

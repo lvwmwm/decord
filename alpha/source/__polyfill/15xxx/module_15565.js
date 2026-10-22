@@ -1,20 +1,44 @@
 // Module ID: 15565
 // Function ID: 15566
 // Dependencies: []
-// Exports: default
 
 // Module 15565
-let size;
-
-
-export default () => (arg0) => {
-  let closure_0 = arg0;
-  return {
-    features: {
-      image(dependencyMap) {
-        size = { uri: dependencyMap.uri, preview: dependencyMap.preview, filename: dependencyMap.filename, width: dependencyMap.width, height: dependencyMap.height, caption: dependencyMap.caption };
-        return closure_0.send("image", size);
-      }
+const obj = {
+  isASCIIDigit(decodeResult) {
+    return decodeResult >= 48 && decodeResult <= 57;
+  },
+  isASCIIAlpha(input) {
+    let tmp = input >= 65 && input <= 90;
+    if (!tmp) {
+      tmp = input >= 97 && input <= 122;
+      const tmp2 = input >= 97 && input <= 122;
     }
-  };
+    return tmp;
+  },
+  isASCIIAlphanumeric(arg0) {
+    let tmp = arg0 >= 65 && arg0 <= 90;
+    if (!tmp) {
+      tmp = arg0 >= 97 && arg0 <= 122;
+      const tmp2 = arg0 >= 97 && arg0 <= 122;
+    }
+    if (!tmp) {
+      tmp = arg0 >= 48 && arg0 <= 57;
+      const tmp3 = arg0 >= 48 && arg0 <= 57;
+    }
+    return tmp;
+  },
+  isASCIIHex(decodeResult) {
+    let tmp = decodeResult >= 48 && decodeResult <= 57;
+    if (!tmp) {
+      tmp = decodeResult >= 65 && decodeResult <= 70;
+      const tmp2 = decodeResult >= 65 && decodeResult <= 70;
+    }
+    if (!tmp) {
+      tmp = decodeResult >= 97 && decodeResult <= 102;
+      const tmp3 = decodeResult >= 97 && decodeResult <= 102;
+    }
+    return tmp;
+  }
 };
+
+export default obj;

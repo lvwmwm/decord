@@ -1,17 +1,17 @@
-// Module ID: 13385
-// Function ID: 13386
+// Module ID: 13421
+// Function ID: 13422
 // Name: useGameServerPerk
-// Dependencies: [19, 8348, 5165, 5164, 558, 576, 5182, 504, 13386, 1128, 2992, 13387, 2]
+// Dependencies: [19, 8357, 5169, 5168, 558, 576, 5186, 504, 13422, 1128, 2992, 13423, 2]
 
-// Module 13385 (useGameServerPerk)
+// Module 13421 (useGameServerPerk)
 import intl3 from "intl" /* 1128 */;
 import _modDef2992 from "module_2992" /* 2992 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5164 */;
-import GameServerConstants from "GameServerConstants" /* 5165 */;
-import useGameServerFeaturedGameNamesDefault from "useGameServerFeaturedGameNames" /* 13386 */;
-import _modDef13387 from "module_13387" /* 13387 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5168 */;
+import GameServerConstants from "GameServerConstants" /* 5169 */;
+import useGameServerFeaturedGameNamesDefault from "useGameServerFeaturedGameNames" /* 13422 */;
+import _modDef13423 from "module_13423" /* 13423 */;
 import react from "react" /* 19 */;
-import GameServerStore from "GameServerStore" /* 8348 */;
+import GameServerStore from "GameServerStore" /* 8357 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -87,7 +87,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameSer
           }
           tmp11 = tmp17;
         }
-        const obj3 = { skuId, title: tmp12, description: tmp14, cost: stateFromStores, dependencies: tmp16, type: GuildPowerupType.PERK, animatedImageUrl: _modDef13387, staticImageUrl: _modDef13387 };
+        const obj3 = { skuId, title: tmp12, description: tmp14, cost: stateFromStores, dependencies: tmp16, type: GuildPowerupType.PERK, animatedImageUrl: _modDef13423, staticImageUrl: _modDef13423 };
         cResult[8] = stateFromStores;
         cResult[9] = tmp14;
         cResult[10] = obj3;
@@ -125,7 +125,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameSer
     if (gameServerEnabled) {
       tmp = null;
       if (null != stateFromStores) {
-        const obj = { skuId, title: intl.string(_modDef2992["B3OfL/"]), description: intl2.format(_modDef2992["+UqyGU"], obj2), cost: tmp2, dependencies: [], type: GuildPowerupType.PERK, animatedImageUrl: _modDef13387, staticImageUrl: _modDef13387 };
+        const obj = { skuId, title: intl.string(_modDef2992["B3OfL/"]), description: intl2.format(_modDef2992["+UqyGU"], obj2), cost: tmp2, dependencies: [], type: GuildPowerupType.PERK, animatedImageUrl: _modDef13423, staticImageUrl: _modDef13423 };
         intl = intl3.intl;
         intl2 = intl3.intl;
         tmp = obj;

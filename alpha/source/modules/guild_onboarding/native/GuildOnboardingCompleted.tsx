@@ -1,23 +1,23 @@
-// Module ID: 7256
-// Function ID: 7257
+// Module ID: 7263
+// Function ID: 7264
 // Name: GuildOnboardingCompleted
-// Dependencies: [19, 17, 4967, 4875, 4843, 1392, 7174, 21, 4966, 587, 558, 576, 1505, 504, 7203, 5020, 7257, 1417, 1900, 1388, 5249, 5035, 5188, 5651, 1128, 5216, 1202, 7258, 6862, 2049, 7283, 5226, 7200, 2]
+// Dependencies: [19, 17, 4970, 4875, 4843, 1392, 7181, 21, 4969, 587, 558, 576, 1505, 504, 7210, 5023, 7264, 1417, 1900, 1388, 5253, 5038, 5192, 5655, 1128, 5220, 1202, 7265, 6869, 2049, 7290, 5230, 7207, 2]
 
-// Module 7256 (GuildOnboardingCompleted)
+// Module 7263 (GuildOnboardingCompleted)
 import nativeDefault from "native" /* 587 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
-import timing from "timing" /* 5188 */;
-import UserProfileRolesCard from "UserProfileRolesCard" /* 7258 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
+import timing from "timing" /* 5192 */;
+import UserProfileRolesCard from "UserProfileRolesCard" /* 7265 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4967 */;
+import AccessibilityStore from "AccessibilityStore" /* 4970 */;
 import GuildRoleStore from "GuildRoleStore" /* 4875 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import UserStore from "UserStore" /* 1392 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7174 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7181 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -610,7 +610,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
       num = tmp6;
     }
     const obj7 = { duration: num, easing: Easing3.out(ReanimatedRexport.Easing.ease) };
-    Easing3 = tmp(5035).Easing;
+    Easing3 = tmp(5038).Easing;
     const obj8 = { opacity: withSequenceResult, transform: items };
     const obj9 = { rotate: withSequence3(withTimingResult2, withDelay3Result, tmpResult8.withTiming("-5deg", { duration })) };
     const withSequence2Result = withSequence2(withTimingResult1, withDelay2Result, withTiming3(1, obj7));

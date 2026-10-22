@@ -1,19 +1,19 @@
-// Module ID: 7673
-// Function ID: 7674
+// Module ID: 7680
+// Function ID: 7681
 // Name: ReferencedMessageStore
-// Dependencies: [32, 7674, 7678, 4821, 5990, 1087, 1459, 5992, 7679, 504, 584, 2]
+// Dependencies: [32, 7681, 7685, 4821, 5997, 1087, 1459, 5999, 7686, 504, 584, 2]
 
-// Module 7673 (ReferencedMessageStore)
+// Module 7680 (ReferencedMessageStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import LRUCacheDefault from "LRUCache" /* 1459 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5992 */;
-import handleExplicitMediaScanTimeoutForMessage from "handleExplicitMediaScanTimeoutForMessage" /* 7679 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5999 */;
+import handleExplicitMediaScanTimeoutForMessage from "handleExplicitMediaScanTimeoutForMessage" /* 7686 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7674 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7678 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7681 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7685 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import MessageStore from "MessageStore" /* 5990 */;
+import MessageStore from "MessageStore" /* 5997 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

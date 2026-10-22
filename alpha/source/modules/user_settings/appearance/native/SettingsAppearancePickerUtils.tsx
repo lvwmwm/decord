@@ -1,20 +1,20 @@
-// Module ID: 16483
-// Function ID: 16484
+// Module ID: 16552
+// Function ID: 16553
 // Name: SettingsAppearancePickerUtils
-// Dependencies: [19, 1098, 5184, 1256, 4964, 4963, 587, 558, 576, 1245, 5234, 1128, 2]
+// Dependencies: [19, 1098, 5188, 1256, 4967, 4966, 587, 558, 576, 1245, 5238, 1128, 2]
 // Exports: convertThemesToAnimatedThemes
 
-// Module 16483 (SettingsAppearancePickerUtils)
+// Module 16552 (SettingsAppearancePickerUtils)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
 import intl2 from "intl" /* 1128 */;
 import getSystemThemeDefault from "getSystemTheme" /* 1245 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1256 */;
-import ColorUtils from "ColorUtils" /* 4963 */;
-import utils_ColorDefault from "utils/Color" /* 4964 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 5184 */;
-import useToken from "useToken" /* 5234 */;
+import ColorUtils from "ColorUtils" /* 4966 */;
+import utils_ColorDefault from "utils/Color" /* 4967 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 5188 */;
+import useToken from "useToken" /* 5238 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -82,7 +82,7 @@ function convertBackgroundGradientToAnimatedTheme(theme, prop, prop1) {
       num8 = 0.3;
     }
     const obj2 = { hex: mixColorsResult.toHexString(), stop: stop.stop };
-    const mixColors = tmp13(4963).mixColors;
+    const mixColors = tmp13(4966).mixColors;
     ColorUtils;
     const tmp16 = new utils_ColorDefault(r, g, b, num8);
     mixColorsResult = mixColors(tmp72, tmp16);
@@ -175,9 +175,9 @@ function convertCustomBackgroundGradientToAnimatedTheme(theme, prop, prop1) {
       num8 = 0.3;
     }
     const obj2 = { hex: mixColorsResult.toHexString(), stop: num9 };
-    const mixColors = tmp15(4963).mixColors;
+    const mixColors = tmp15(4966).mixColors;
     ColorUtils;
-    const tmp18 = new tmp11(4964)(r, g, b, num8);
+    const tmp18 = new tmp11(4967)(r, g, b, num8);
     num9 = 0;
     mixColorsResult = mixColors(tmp72, tmp18);
     if (theme.customThemeSettings.colors.length > 1) {
@@ -263,7 +263,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLaunchW
   let token;
   let tmp = importDefault;
   const tmp4 = getSystemThemeDefault() === ThemeTypes.LIGHT ? ThemeTypes.LIGHT : ThemeTypes.DARK;
-  let obj = token(5234);
+  let obj = token(5238);
   token = obj.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW, tmp4);
   let items = [token];
   return react.useMemo(() => {

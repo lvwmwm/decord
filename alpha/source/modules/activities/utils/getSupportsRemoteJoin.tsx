@@ -1,12 +1,12 @@
-// Module ID: 11286
-// Function ID: 11287
+// Module ID: 11303
+// Function ID: 11304
 // Name: getSupportsRemoteJoin
-// Dependencies: [1087, 7386, 2]
+// Dependencies: [1087, 7393, 2]
 // Exports: getSupportsRemoteJoin
 
-// Module 11286 (getSupportsRemoteJoin)
+// Module 11303 (getSupportsRemoteJoin)
 import Constants from "Constants" /* 1087 */;
-import hasFlagDefault from "hasFlag" /* 7386 */;
+import hasFlagDefault from "hasFlag" /* 7393 */;
 import size from "module_2" /* 2 */;
 
 const ActivityFlags = Constants.ActivityFlags;

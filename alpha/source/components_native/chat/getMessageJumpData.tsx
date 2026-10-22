@@ -1,13 +1,13 @@
-// Module ID: 11168
-// Function ID: 11169
+// Module ID: 11185
+// Function ID: 11186
 // Name: getMessageJumpData
-// Dependencies: [32, 19, 1501, 1392, 558, 576, 1384, 1899, 5183, 11, 2]
+// Dependencies: [32, 19, 1501, 1392, 558, 576, 1384, 1899, 5187, 11, 2]
 // Exports: default
 
-// Module 11168 (getMessageJumpData)
+// Module 11185 (getMessageJumpData)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import flow_Client from "flow/Client" /* 5183 */;
+import flow_Client from "flow/Client" /* 5187 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1501 */;

@@ -1,14 +1,13 @@
-// Module ID: 12293
-// Function ID: 12294
+// Module ID: 12317
+// Function ID: 12318
 // Name: conjureSettingsRequest
 // Dependencies: [2]
-// Exports: conjureSettingsRequestBlocks
+// Exports: conjureSettingsRequestBlocks, conjureSettingsRequestIsPickOnly, conjureSettingsRequestKeys
 
-// Module 12293 (conjureSettingsRequest)
+// Module 12317 (conjureSettingsRequest)
 import size from "module_2" /* 2 */;
 
-let set;
-
+let set = new Set(["select", "channel", "role", "user"]);
 const result = size.fileFinishedImporting("modules/conjure/settings/conjureSettingsRequest.tsx");
 
 export const conjureSettingsRequestBlocks = function conjureSettingsRequestBlocks(arg0, settings) {
@@ -38,4 +37,30 @@ export const conjureSettingsRequestBlocks = function conjureSettingsRequestBlock
     });
   }
   return someResult;
+};
+export const conjureSettingsRequestIsPickOnly = function conjureSettingsRequestIsPickOnly(arg0, arg1) {
+  let schema = arg1;
+  let keys = arg0.keys;
+  if (keys == null) {
+    keys = [];
+  }
+  const everyResult = null != arg1 && 0 !== keys.length && keys.every((item) => {
+    schema = item;
+    schema = schema.schema;
+    const found = schema.find((key) => key.key === closure_0);
+    const hasItem = null != found && set.has(found.type);
+    return hasItem;
+  });
+  return everyResult;
+};
+export const conjureSettingsRequestKeys = function conjureSettingsRequestKeys(settingsRequest, settings) {
+  let keys = settingsRequest.keys;
+  if (keys == null) {
+    keys = [];
+  }
+  if (keys.length <= 0) {
+    const schema = settings.schema;
+    keys = schema.map((key) => key.key);
+  }
+  return keys;
 };

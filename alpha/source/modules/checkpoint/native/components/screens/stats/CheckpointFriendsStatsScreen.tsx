@@ -1,41 +1,41 @@
-// Module ID: 12898
-// Function ID: 12899
+// Module ID: 12932
+// Function ID: 12933
 // Name: CheckpointFriendsStatsScreen
-// Dependencies: [5, 32, 19, 17, 4967, 1392, 12843, 5995, 21, 1385, 4966, 587, 1417, 558, 576, 504, 12899, 12900, 1499, 5015, 6342, 1128, 3056, 12876, 5093, 12861, 3088, 12863, 5648, 8518, 12868, 11574, 12901, 12844, 5644, 1202, 10404, 7255, 12774, 5662, 2]
+// Dependencies: [5, 32, 19, 17, 4970, 1392, 12875, 6002, 21, 1385, 4969, 587, 1417, 558, 576, 504, 12933, 12934, 1499, 5018, 6349, 5097, 12893, 1128, 3088, 3056, 12895, 5652, 8527, 12902, 11591, 12935, 12876, 5648, 1202, 10416, 7262, 12806, 5666, 2]
 
-// Module 12898 (CheckpointFriendsStatsScreen)
+// Module 12932 (CheckpointFriendsStatsScreen)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl7 from "intl" /* 1128 */;
+import intl6 from "intl" /* 1128 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import _modDef3056 from "module_3056" /* 3056 */;
 import _modDef3088 from "module_3088" /* 3088 */;
-import UserUtils from "UserUtils" /* 5015 */;
-import CheckpointFriendsRive2 from "CheckpointFriendsRive" /* 5093 */;
-import FriendsIcon from "FriendsIcon" /* 5648 */;
-import CheckpointNavigation from "CheckpointNavigation" /* 6342 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7255 */;
-import ChatIcon from "ChatIcon" /* 8518 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10404 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 11574 */;
-import CheckpointTextDefault from "CheckpointText" /* 12861 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 12863 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 12868 */;
-import useFriendsAnimationState from "useFriendsAnimationState" /* 12899 */;
-import useSidekickLeave from "useSidekickLeave" /* 12900 */;
+import UserUtils from "UserUtils" /* 5018 */;
+import CheckpointFriendsRive2 from "CheckpointFriendsRive" /* 5097 */;
+import FriendsIcon from "FriendsIcon" /* 5652 */;
+import CheckpointNavigation from "CheckpointNavigation" /* 6349 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7262 */;
+import ChatIcon from "ChatIcon" /* 8527 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10416 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 11591 */;
+import CheckpointTextDefault from "CheckpointText" /* 12893 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12895 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 12902 */;
+import useFriendsAnimationState from "useFriendsAnimationState" /* 12933 */;
+import useSidekickLeave from "useSidekickLeave" /* 12934 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4967 */;
+import AccessibilityStore from "AccessibilityStore" /* 4970 */;
 import UserStore from "UserStore" /* 1392 */;
-import CheckpointStore from "CheckpointStore" /* 12843 */;
-import CheckpointConstants from "CheckpointConstants" /* 5995 */;
+import CheckpointStore from "CheckpointStore" /* 12875 */;
+import CheckpointConstants from "CheckpointConstants" /* 6002 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1385 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -118,7 +118,7 @@ function SidekickMessageInput(user) {
                 c1 = 3;
                 c4 = 1;
                 const obj5 = { value: obj2.sendSidekickMessage(importDefault, id.id), done: false };
-                obj2 = tmp(closure_2[33]);
+                obj2 = tmp(closure_2[32]);
                 return obj5;
               }
             }
@@ -129,10 +129,10 @@ function SidekickMessageInput(user) {
           } else {
             if (2 === c1) {
               c3 = 1;
-              const presentError = tmp(closure_2[34]).presentError;
-              const tmp16 = tmp(closure_2[34]);
-              const intl = tmp(closure_2[21]).intl;
-              presentError(intl.string(tmp(closure_2[21]).t.fEptJP));
+              const presentError = tmp(closure_2[33]).presentError;
+              const tmp16 = tmp(closure_2[33]);
+              const intl = tmp(closure_2[23]).intl;
+              presentError(intl.string(tmp(closure_2[23]).t.fEptJP));
             } else if (arg0 === 1) {
               c4 = 3;
               throw value;
@@ -176,7 +176,7 @@ function SidekickMessageInput(user) {
   [tmp7, c4] = _slicedToArray(react.useState(false), 2);
   let tmp10 = null != value;
   const tmp6 = _slicedToArray(react.useState(false), 2);
-  const tmp9 = value(12901)(user.id);
+  const tmp9 = value(12935)(user.id);
   if (tmp10) {
     tmp10 = value.length > 0;
   }
@@ -220,7 +220,7 @@ function SidekickMessageInput(user) {
         },
       accessibilityRole: "button",
       accessibilityLabel: intl2.string(tmp15(1128).t.Ve9Ge6),
-      children: tmp14(tmp15(12774).GiftIcon, obj6)
+      children: tmp14(tmp15(12806).GiftIcon, obj6)
     };
     intl2 = tmp15(1128).intl;
     obj6 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
@@ -234,7 +234,7 @@ function SidekickMessageInput(user) {
       accessibilityRole: "button",
       accessibilityLabel: intl3.string(user(1128).t.oeb1vg),
       accessibilityState: obj8,
-      children: closure_13(user(5662).SendMessageIcon, obj9)
+      children: closure_13(user(5666).SendMessageIcon, obj9)
     };
     disabled = undefined;
     const tmp19 = obj;
@@ -295,17 +295,17 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointFr
   let tmp10;
   let tmp13;
   let tmp14;
-  let tmp20;
-  let tmp28;
+  let tmp21;
   let tmp29;
   let tmp30;
+  let tmp31;
   let tmp6;
   let tmp7;
   let tmp83;
   let tmp9;
   let useReducedMotion;
   const obj = react2;
-  const cResult = obj.c(70);
+  const cResult = obj.c(66);
   ({ route, onNextStep, onPreviousStep } = arg0);
   const tmp4 = closure_17();
   const items = [CheckpointStore];
@@ -360,14 +360,14 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointFr
   const stateFromStores2 = tmpResult9.useStateFromStores(tmp9, tmp10);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const items3 = [AccessibilityStore];
-    class M {
+    class R {
       constructor() {
-        return useReducedMotion.useReducedMotion;
+        return currentUser.getCurrentUser();
       }
     }
     cResult[4] = items3;
-    cResult[5] = M;
-    tmp14 = M;
+    cResult[5] = tmp16;
+    tmp14 = tmp16;
     tmp13 = items3;
   } else {
     tmp13 = cResult[4];
@@ -379,97 +379,96 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointFr
   const friendsAnimationState = tmpResult11.useFriendsAnimationState(route, stateFromStores3);
   const tmpResult12 = useSidekickLeave;
   const sidekickLeave = tmpResult12.useSidekickLeave(route, stateFromStores3, onNextStep, onPreviousStep);
-  const tmp19 = friendsAnimationState === useFriendsAnimationState.FriendsAnimationState.BEST || friendsAnimationState === useFriendsAnimationState.FriendsAnimationState.LEAVE;
+  const tmp20 = friendsAnimationState === useFriendsAnimationState.FriendsAnimationState.BEST || friendsAnimationState === useFriendsAnimationState.FriendsAnimationState.LEAVE;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { ignoreKeyboard: true };
     cResult[6] = obj3;
-    class M {
+    class R {
       constructor() {
-        return useReducedMotion.useReducedMotion;
+        return currentUser.getCurrentUser();
       }
     }
   } else {
-    tmp20 = cResult[6];
+    tmp21 = cResult[6];
   }
-  size = useWindowDimensionsDefault(tmp20);
+  size = useWindowDimensionsDefault(tmp21);
   const height = size.height;
   let num8 = 0;
   const width = size.width;
   const result = -height / 2;
-  if (tmp19) {
-    num8 = tmp21(587).space.PX_48;
+  if (tmp20) {
+    num8 = tmp22(587).space.PX_48;
   }
   const diff = result - num8;
   const sum = width + height;
   if (cResult[7] === diff) {
-    let tmp25;
-    let tmp31;
-    let tmp33;
-    let tmp35;
+    let tmp26;
+    let tmp32;
+    let tmp34;
+    let tmp36;
     let str5;
-    let tmp41;
     if (cResult[8] === sum) {
-      tmp25 = cResult[9];
+      tmp26 = cResult[9];
     }
-    class M {
+    class R {
       constructor() {
-        return useReducedMotion.useReducedMotion;
+        return currentUser.getCurrentUser();
       }
     }
-    [tmp28, tmp29, tmp30] = tmp27;
+    [tmp29, tmp30, tmp31] = tmp28;
     const tmpResult13 = UserUtils;
-    let str = tmpResult13.useName(tmp28);
+    let str = tmpResult13.useName(tmp29);
     if (str == null) {
       str = "";
     }
     if (cResult[10] !== str) {
       const toLocaleUpperCaseResult = str.toLocaleUpperCase();
       cResult[10] = str;
-      class M {
+      class R {
         constructor() {
-          return useReducedMotion.useReducedMotion;
+          return currentUser.getCurrentUser();
         }
       }
       cResult[11] = toLocaleUpperCaseResult;
-      tmp31 = toLocaleUpperCaseResult;
+      tmp32 = toLocaleUpperCaseResult;
     } else {
-      tmp31 = cResult[11];
+      tmp32 = cResult[11];
     }
     const tmpResult14 = UserUtils;
-    let str2 = tmpResult14.useName(tmp29);
+    let str2 = tmpResult14.useName(tmp30);
     if (str2 == null) {
       str2 = "";
     }
     if (cResult[12] !== str2) {
       const toLocaleUpperCaseResult1 = str2.toLocaleUpperCase();
       cResult[12] = str2;
-      class M {
+      class R {
         constructor() {
-          return useReducedMotion.useReducedMotion;
+          return currentUser.getCurrentUser();
         }
       }
       cResult[13] = toLocaleUpperCaseResult1;
-      tmp33 = toLocaleUpperCaseResult1;
+      tmp34 = toLocaleUpperCaseResult1;
     } else {
-      tmp33 = cResult[13];
+      tmp34 = cResult[13];
     }
     const tmpResult15 = UserUtils;
-    let str3 = tmpResult15.useName(tmp30);
+    let str3 = tmpResult15.useName(tmp31);
     if (str3 == null) {
       str3 = "";
     }
     if (cResult[14] !== str3) {
       const toLocaleUpperCaseResult2 = str3.toLocaleUpperCase();
       cResult[14] = str3;
-      class M {
+      class R {
         constructor() {
-          return useReducedMotion.useReducedMotion;
+          return currentUser.getCurrentUser();
         }
       }
       cResult[15] = toLocaleUpperCaseResult2;
-      tmp35 = toLocaleUpperCaseResult2;
+      tmp36 = toLocaleUpperCaseResult2;
     } else {
-      tmp35 = cResult[15];
+      tmp36 = cResult[15];
     }
     let user;
     const useName = UserUtils.useName;
@@ -481,7 +480,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointFr
     if (str4 == null) {
       str4 = "";
     }
-    const tmp40 = route === CheckpointNavigation.CheckpointRoute.SIDEKICK || route === CheckpointNavigation.CheckpointRoute.SIDEKICK_LEAVE;
+    const tmp41 = route === CheckpointNavigation.CheckpointRoute.SIDEKICK || route === CheckpointNavigation.CheckpointRoute.SIDEKICK_LEAVE;
     if (stateFromStores.length < 3) {
       let str6 = "twoFriends";
       if (stateFromStores3) {
@@ -494,321 +493,284 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointFr
         str5 = "threeFriends-reducedMotion";
       }
     }
-    if (tmp40) {
-      tmp41 = null == stateFromStores1;
-    } else {
-      tmp41 = 0 === stateFromStores.length;
-    }
-    if (tmp41) {
-      let tmp97;
-      let tmp100;
-      if (cResult[16] !== tmp40) {
-        const string = tmp(1128).intl.string;
-        _modDef3056;
-        class M {
-          constructor() {
-            return useReducedMotion.useReducedMotion;
-          }
-        }
-        cResult[16] = tmp40;
-        cResult[17] = tmp99;
-        tmp97 = tmp99;
-      } else {
-        tmp97 = cResult[17];
+    if (cResult[16] === tmp26) {
+      let tmp43;
+      let tmp44;
+      let tmp48;
+      let tmp54;
+      let tmp58;
+      let tmp62;
+      if (cResult[17] === tmp4.animation) {
+        tmp43 = cResult[18];
       }
-      if (cResult[18] !== tmp97) {
-        class M {
+      if (cResult[19] !== tmp29) {
+        let userAvatarURL;
+        if (null != tmp29) {
+          const tmp22Result = AvatarUtilsDefault;
+          class R {
+            constructor() {
+              return currentUser.getCurrentUser();
+            }
+          }
+          userAvatarURL = tmp22Result.getUserAvatarURL(tmp29, false, 64, "png");
+        }
+        class R {
           constructor() {
-            return useReducedMotion.useReducedMotion;
+            return currentUser.getCurrentUser();
           }
         }
-        cResult[18] = tmp97;
-        cResult[19] = tmp102;
-        tmp100 = tmp102;
+        cResult[20] = userAvatarURL;
+        tmp44 = userAvatarURL;
       } else {
-        tmp100 = cResult[19];
+        tmp44 = cResult[20];
       }
-      return tmp100;
-    } else {
-      if (cResult[20] === tmp25) {
-        let tmp43;
-        let tmp44;
-        let tmp48;
-        let tmp54;
-        let tmp58;
-        let tmp62;
-        if (cResult[21] === tmp4.animation) {
-          tmp43 = cResult[22];
-        }
-        if (cResult[23] !== tmp28) {
-          let userAvatarURL;
-          if (null != tmp28) {
-            const tmp21Result6 = AvatarUtilsDefault;
-            class M {
-              constructor() {
-                return useReducedMotion.useReducedMotion;
-              }
-            }
-            userAvatarURL = tmp21Result6.getUserAvatarURL(tmp28, false, 64, "png");
-          }
-          class M {
+      if (cResult[21] !== tmp31) {
+        let userAvatarURL1;
+        if (null != tmp31) {
+          const tmp22Result5 = AvatarUtilsDefault;
+          class R {
             constructor() {
-              return useReducedMotion.useReducedMotion;
+              return currentUser.getCurrentUser();
             }
           }
-          cResult[24] = userAvatarURL;
-          tmp44 = userAvatarURL;
-        } else {
-          tmp44 = cResult[24];
+          userAvatarURL1 = tmp22Result5.getUserAvatarURL(tmp31, false, 64, "png");
         }
-        if (cResult[25] !== tmp30) {
-          let userAvatarURL1;
-          if (null != tmp30) {
-            const tmp21Result7 = AvatarUtilsDefault;
-            class M {
-              constructor() {
-                return useReducedMotion.useReducedMotion;
-              }
-            }
-            userAvatarURL1 = tmp21Result7.getUserAvatarURL(tmp30, false, 64, "png");
-          }
-          class M {
-            constructor() {
-              return useReducedMotion.useReducedMotion;
-            }
-          }
-          cResult[26] = userAvatarURL1;
-          tmp48 = userAvatarURL1;
-        } else {
-          tmp48 = cResult[26];
-        }
-        class M {
+        class R {
           constructor() {
-            return useReducedMotion.useReducedMotion;
+            return currentUser.getCurrentUser();
           }
         }
-        let user1;
-        if (stateFromStores1 != null) {
-          user1 = stateFromStores1.user;
+        cResult[22] = userAvatarURL1;
+        tmp48 = userAvatarURL1;
+      } else {
+        tmp48 = cResult[22];
+      }
+      class R {
+        constructor() {
+          return currentUser.getCurrentUser();
         }
-        if (cResult[29] !== user1) {
-          let userAvatarURL2;
-          if (null != user1) {
-            const tmp21Result8 = AvatarUtilsDefault;
-            class M {
-              constructor() {
-                return useReducedMotion.useReducedMotion;
-              }
-            }
-            userAvatarURL2 = tmp21Result8.getUserAvatarURL(user1, false, 64, "png");
-          }
-          class M {
+      }
+      let user1;
+      if (stateFromStores1 != null) {
+        user1 = stateFromStores1.user;
+      }
+      if (cResult[25] !== user1) {
+        let userAvatarURL2;
+        if (null != user1) {
+          const tmp22Result6 = AvatarUtilsDefault;
+          class R {
             constructor() {
-              return useReducedMotion.useReducedMotion;
+              return currentUser.getCurrentUser();
             }
           }
-          cResult[30] = userAvatarURL2;
-          tmp54 = userAvatarURL2;
-        } else {
-          tmp54 = cResult[30];
+          userAvatarURL2 = tmp22Result6.getUserAvatarURL(user1, false, 64, "png");
         }
-        if (cResult[31] !== stateFromStores2) {
-          let userAvatarURL3;
-          if (null != stateFromStores2) {
-            const tmp21Result9 = AvatarUtilsDefault;
-            class M {
-              constructor() {
-                return useReducedMotion.useReducedMotion;
-              }
-            }
-            userAvatarURL3 = tmp21Result9.getUserAvatarURL(stateFromStores2, false, 64, "png");
+        class R {
+          constructor() {
+            return currentUser.getCurrentUser();
           }
-          class M {
+        }
+        cResult[26] = userAvatarURL2;
+        tmp54 = userAvatarURL2;
+      } else {
+        tmp54 = cResult[26];
+      }
+      if (cResult[27] !== stateFromStores2) {
+        let userAvatarURL3;
+        if (null != stateFromStores2) {
+          const tmp22Result7 = AvatarUtilsDefault;
+          class R {
             constructor() {
-              return useReducedMotion.useReducedMotion;
+              return currentUser.getCurrentUser();
             }
           }
-          cResult[32] = userAvatarURL3;
-          tmp58 = userAvatarURL3;
-        } else {
-          tmp58 = cResult[32];
+          userAvatarURL3 = tmp22Result7.getUserAvatarURL(stateFromStores2, false, 64, "png");
         }
-        if (cResult[33] !== str4) {
-          const toLocaleUpperCaseResult3 = str4.toLocaleUpperCase();
-          cResult[33] = str4;
-          class M {
-            constructor() {
-              return useReducedMotion.useReducedMotion;
-            }
+        class R {
+          constructor() {
+            return currentUser.getCurrentUser();
           }
-          cResult[34] = toLocaleUpperCaseResult3;
-          tmp62 = toLocaleUpperCaseResult3;
-        } else {
-          tmp62 = cResult[34];
         }
-        if (cResult[35] === friendsAnimationState) {
-          if (cResult[36] === tmp31) {
-            if (cResult[37] === tmp33) {
-              if (cResult[38] === tmp44) {
-                if (cResult[39] === tmp48) {
-                  if (cResult[40] === tmp52) {
-                    if (cResult[41] === tmp54) {
-                      if (cResult[42] === tmp58) {
-                        if (cResult[43] === tmp62) {
-                          if (cResult[44] === tmp35) {
-                            let tmp64;
-                            if (cResult[45] === stateFromStores.length < 3) {
-                              tmp64 = cResult[46];
+        cResult[28] = userAvatarURL3;
+        tmp58 = userAvatarURL3;
+      } else {
+        tmp58 = cResult[28];
+      }
+      if (cResult[29] !== str4) {
+        const toLocaleUpperCaseResult3 = str4.toLocaleUpperCase();
+        cResult[29] = str4;
+        class R {
+          constructor() {
+            return currentUser.getCurrentUser();
+          }
+        }
+        cResult[30] = toLocaleUpperCaseResult3;
+        tmp62 = toLocaleUpperCaseResult3;
+      } else {
+        tmp62 = cResult[30];
+      }
+      if (cResult[31] === friendsAnimationState) {
+        if (cResult[32] === tmp32) {
+          if (cResult[33] === tmp34) {
+            if (cResult[34] === tmp44) {
+              if (cResult[35] === tmp48) {
+                if (cResult[36] === tmp52) {
+                  if (cResult[37] === tmp54) {
+                    if (cResult[38] === tmp58) {
+                      if (cResult[39] === tmp62) {
+                        if (cResult[40] === tmp36) {
+                          let tmp64;
+                          if (cResult[41] === stateFromStores.length < 3) {
+                            tmp64 = cResult[42];
+                          }
+                          if (cResult[43] === str5) {
+                            let tmp68;
+                            if (cResult[44] === tmp64) {
+                              tmp68 = cResult[45];
                             }
-                            if (cResult[47] === str5) {
-                              let tmp68;
-                              if (cResult[48] === tmp64) {
-                                tmp68 = cResult[49];
+                            if (cResult[46] === tmp43) {
+                              let tmp73;
+                              if (cResult[47] === tmp68) {
+                                tmp73 = cResult[48];
                               }
-                              if (cResult[50] === tmp43) {
-                                let tmp73;
-                                if (cResult[51] === tmp68) {
-                                  tmp73 = cResult[52];
+                              if (cResult[49] === route) {
+                                let tmp76;
+                                let tmp78;
+                                if (cResult[50] === tmp4.transition) {
+                                  tmp76 = cResult[51];
                                 }
-                                if (cResult[53] === route) {
-                                  let tmp76;
-                                  let tmp78;
-                                  if (cResult[54] === tmp4.transition) {
-                                    tmp76 = cResult[55];
-                                  }
-                                  if (cResult[56] !== route) {
-                                    let tmp79 = route === tmp(6342).CheckpointRoute.SQUAD;
-                                    if (tmp79) {
-                                      const obj5 = { title: obj20.string(_modDef3056.OzY5Ns), description: intl.string(_modDef3088.EqdLDd) };
-                                      class M {
-                                        constructor() {
-                                          return useReducedMotion.useReducedMotion;
-                                        }
-                                      }
-                                      intl = tmp(1128).intl;
-                                      tmp79 = map1(closure_18, obj5);
-                                    }
-                                    class M {
+                                if (cResult[52] !== route) {
+                                  let tmp79 = route === tmp(6349).CheckpointRoute.SQUAD;
+                                  if (tmp79) {
+                                    const obj4 = { title: obj20.string(_modDef3056.OzY5Ns), description: intl.string(_modDef3088.EqdLDd) };
+                                    class R {
                                       constructor() {
-                                        return useReducedMotion.useReducedMotion;
+                                        return currentUser.getCurrentUser();
                                       }
                                     }
-                                    cResult[57] = tmp79;
-                                    tmp78 = tmp79;
-                                  } else {
-                                    tmp78 = cResult[57];
+                                    intl = tmp(1128).intl;
+                                    tmp79 = map1(closure_18, obj4);
                                   }
-                                  if (cResult[58] === tmp40) {
-                                    if (cResult[59] === stateFromStores1) {
-                                      if (cResult[60] === str4) {
-                                        if (cResult[61] === tmp4.sidekick) {
-                                          let tmp82;
-                                          if (cResult[62] === tmp4.sidekickDetails) {
-                                            tmp82 = cResult[63];
-                                          }
-                                          if (cResult[64] === tmp4.container) {
-                                            if (cResult[65] === tmp73) {
-                                              if (cResult[66] === tmp76) {
-                                                if (cResult[67] === tmp78) {
-                                                  let tmp90;
-                                                  if (cResult[68] === tmp82) {
-                                                    tmp90 = cResult[69];
-                                                  }
-                                                  return tmp90;
+                                  class R {
+                                    constructor() {
+                                      return currentUser.getCurrentUser();
+                                    }
+                                  }
+                                  cResult[53] = tmp79;
+                                  tmp78 = tmp79;
+                                } else {
+                                  tmp78 = cResult[53];
+                                }
+                                if (cResult[54] === tmp41) {
+                                  if (cResult[55] === stateFromStores1) {
+                                    if (cResult[56] === str4) {
+                                      if (cResult[57] === tmp4.sidekick) {
+                                        let tmp82;
+                                        if (cResult[58] === tmp4.sidekickDetails) {
+                                          tmp82 = cResult[59];
+                                        }
+                                        if (cResult[60] === tmp4.container) {
+                                          if (cResult[61] === tmp73) {
+                                            if (cResult[62] === tmp76) {
+                                              if (cResult[63] === tmp78) {
+                                                let tmp90;
+                                                if (cResult[64] === tmp82) {
+                                                  tmp90 = cResult[65];
                                                 }
+                                                return tmp90;
                                               }
                                             }
                                           }
-                                          class M {
-                                            constructor() {
-                                              return useReducedMotion.useReducedMotion;
-                                            }
-                                          }
-                                          const obj6 = { style: tmp42, children: items4 };
-                                          items4 = [tmp73, tmp76, tmp78, tmp82];
-                                          const tmp21Result10 = CheckpointScreenDefault;
-                                          tmp93[0] = syncedClientThemes(metroImportDefault, obj6);
-                                          const tmp96 = map1(tmp21Result10, tmp93);
-                                          cResult[64] = tmp4.container;
-                                          cResult[65] = tmp73;
-                                          cResult[66] = tmp76;
-                                          cResult[67] = tmp78;
-                                          cResult[68] = tmp82;
-                                          cResult[69] = tmp96;
-                                          tmp90 = tmp96;
                                         }
+                                        class R {
+                                          constructor() {
+                                            return currentUser.getCurrentUser();
+                                          }
+                                        }
+                                        const obj5 = { style: tmp42, children: items4 };
+                                        items4 = [tmp73, tmp76, tmp78, tmp82];
+                                        const tmp22Result8 = CheckpointScreenDefault;
+                                        tmp93[0] = syncedClientThemes(metroImportDefault, obj5);
+                                        const tmp96 = map1(tmp22Result8, tmp93);
+                                        cResult[60] = tmp4.container;
+                                        cResult[61] = tmp73;
+                                        cResult[62] = tmp76;
+                                        cResult[63] = tmp78;
+                                        cResult[64] = tmp82;
+                                        cResult[65] = tmp96;
+                                        tmp90 = tmp96;
                                       }
                                     }
                                   }
-                                  class M {
-                                    constructor() {
-                                      return useReducedMotion.useReducedMotion;
-                                    }
-                                  }
-                                  if (tmp83) {
-                                    const obj7 = { style: null, children: items6 };
-                                    class M {
-                                      constructor() {
-                                        return useReducedMotion.useReducedMotion;
-                                      }
-                                    }
-                                    const obj8 = { style: tmp4.sidekickDetails, children: items5 };
-                                    const obj9 = { title: intl2.string(_modDef3056["+uwOHt"]), description: intl3.string(_modDef3088["/ctmGw"]) };
-                                    intl2 = tmp(1128).intl;
-                                    intl3 = tmp(1128).intl;
-                                    items5 = [map1(closure_18, obj9), ];
-                                    const obj10 = { sidekick: stateFromStores1 };
-                                    items5[1] = map1(closure_19, obj10);
-                                    items6 = [syncedClientThemes(metroImportDefault, obj8), ];
-                                    const obj11 = { user: stateFromStores1.user, username: str4 };
-                                    items6[1] = map1(SidekickMessageInput, obj11);
-                                    tmp83 = syncedClientThemes(metroImportDefault, obj7);
-                                  }
-                                  cResult[58] = tmp40;
-                                  cResult[59] = stateFromStores1;
-                                  cResult[60] = str4;
-                                  cResult[61] = tmp4.sidekick;
-                                  cResult[62] = tmp4.sidekickDetails;
-                                  cResult[63] = tmp83;
-                                  tmp82 = tmp83;
                                 }
-                                const tmp77 = route === CheckpointNavigation.CheckpointRoute.SQUAD_TRANSITION;
-                                class M {
+                                class R {
                                   constructor() {
-                                    return useReducedMotion.useReducedMotion;
+                                    return currentUser.getCurrentUser();
                                   }
                                 }
-                                cResult[53] = route;
-                                cResult[54] = tmp4.transition;
-                                cResult[55] = tmp77;
-                                tmp76 = tmp77;
+                                if (tmp83) {
+                                  const obj6 = { style: null, children: items6 };
+                                  class R {
+                                    constructor() {
+                                      return currentUser.getCurrentUser();
+                                    }
+                                  }
+                                  const obj7 = { style: tmp4.sidekickDetails, children: items5 };
+                                  const obj8 = { title: intl2.string(_modDef3056["+uwOHt"]), description: intl3.string(_modDef3088["/ctmGw"]) };
+                                  intl2 = tmp(1128).intl;
+                                  intl3 = tmp(1128).intl;
+                                  items5 = [map1(closure_18, obj8), ];
+                                  const obj9 = { sidekick: stateFromStores1 };
+                                  items5[1] = map1(closure_19, obj9);
+                                  items6 = [syncedClientThemes(metroImportDefault, obj7), ];
+                                  const obj10 = { user: stateFromStores1.user, username: str4 };
+                                  items6[1] = map1(SidekickMessageInput, obj10);
+                                  tmp83 = syncedClientThemes(metroImportDefault, obj6);
+                                }
+                                cResult[54] = tmp41;
+                                cResult[55] = stateFromStores1;
+                                cResult[56] = str4;
+                                cResult[57] = tmp4.sidekick;
+                                cResult[58] = tmp4.sidekickDetails;
+                                cResult[59] = tmp83;
+                                tmp82 = tmp83;
                               }
-                              class M {
+                              const tmp77 = route === CheckpointNavigation.CheckpointRoute.SQUAD_TRANSITION;
+                              class R {
                                 constructor() {
-                                  return useReducedMotion.useReducedMotion;
+                                  return currentUser.getCurrentUser();
                                 }
                               }
-                              const obj12 = { style: tmp43, pointerEvents: "none", children: tmp68 };
-                              const tmp75 = map1(metroImportDefault, obj12);
-                              cResult[50] = tmp43;
-                              cResult[51] = tmp68;
-                              cResult[52] = tmp75;
-                              tmp73 = tmp75;
+                              cResult[49] = route;
+                              cResult[50] = tmp4.transition;
+                              cResult[51] = tmp77;
+                              tmp76 = tmp77;
                             }
-                            class M {
+                            class R {
                               constructor() {
-                                return useReducedMotion.useReducedMotion;
+                                return currentUser.getCurrentUser();
                               }
                             }
-                            tmp70[0] = obj;
-                            tmp70[1] = str5;
-                            tmp70[2] = tmp64;
-                            const tmp72 = map1(CheckpointFriendsRive2.CheckpointFriendsRive, tmp70);
-                            cResult[47] = str5;
-                            cResult[48] = tmp64;
-                            cResult[49] = tmp72;
-                            tmp68 = tmp72;
+                            const obj11 = { style: tmp43, pointerEvents: "none", children: tmp68 };
+                            const tmp75 = map1(metroImportDefault, obj11);
+                            cResult[46] = tmp43;
+                            cResult[47] = tmp68;
+                            cResult[48] = tmp75;
+                            tmp73 = tmp75;
                           }
+                          class R {
+                            constructor() {
+                              return currentUser.getCurrentUser();
+                            }
+                          }
+                          tmp70[0] = obj;
+                          tmp70[1] = str5;
+                          tmp70[2] = tmp64;
+                          const tmp72 = map1(CheckpointFriendsRive2.CheckpointFriendsRive, tmp70);
+                          cResult[43] = str5;
+                          cResult[44] = tmp64;
+                          cResult[45] = tmp72;
+                          tmp68 = tmp72;
                         }
                       }
                     }
@@ -818,39 +780,34 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointFr
             }
           }
         }
-        const obj13 = { AnimationState: friendsAnimationState, "Avatar01/img": tmp44, "Avatar02/img": tmp48, "Avatar03/img": tmp52, "Avatar04/img": tmp54, "Avatar05/img": tmp58, "Avatar01/Username": tmp31, "Avatar02/Username": tmp35, "Avatar03/Username": tmp33, "Avatar04/Username": tmp62, twoFriends: stateFromStores.length < 3 };
-        const merged = Object.assign(closure_15);
-        cResult[35] = friendsAnimationState;
-        cResult[36] = tmp31;
-        cResult[37] = tmp33;
-        cResult[38] = tmp44;
-        cResult[39] = tmp48;
-        cResult[40] = tmp52;
-        cResult[41] = tmp54;
-        cResult[42] = tmp58;
-        cResult[43] = tmp62;
-        cResult[44] = tmp35;
-        cResult[45] = stateFromStores.length < 3;
-        cResult[46] = obj13;
-        tmp64 = obj13;
       }
-      const items7 = [tmp4.animation, ];
-      class M {
-        constructor() {
-          return useReducedMotion.useReducedMotion;
-        }
-      }
-      cResult[20] = tmp25;
-      cResult[21] = tmp4.animation;
-      cResult[22] = items7;
-      tmp43 = items7;
+      const obj12 = { AnimationState: friendsAnimationState, "Avatar01/img": tmp44, "Avatar02/img": tmp48, "Avatar03/img": tmp52, "Avatar04/img": tmp54, "Avatar05/img": tmp58, "Avatar01/Username": tmp32, "Avatar02/Username": tmp36, "Avatar03/Username": tmp34, "Avatar04/Username": tmp62, twoFriends: stateFromStores.length < 3 };
+      const merged = Object.assign(closure_15);
+      cResult[31] = friendsAnimationState;
+      cResult[32] = tmp32;
+      cResult[33] = tmp34;
+      cResult[34] = tmp44;
+      cResult[35] = tmp48;
+      cResult[36] = tmp52;
+      cResult[37] = tmp54;
+      cResult[38] = tmp58;
+      cResult[39] = tmp62;
+      cResult[40] = tmp36;
+      cResult[41] = stateFromStores.length < 3;
+      cResult[42] = obj12;
+      tmp64 = obj12;
     }
+    const items7 = [tmp4.animation, tmp26];
+    cResult[16] = tmp26;
+    cResult[17] = tmp4.animation;
+    cResult[18] = items7;
+    tmp43 = items7;
   }
-  const obj14 = { top: diff, height: sum };
+  const obj13 = { top: diff, height: sum };
   cResult[7] = diff;
   cResult[8] = sum;
-  cResult[9] = obj14;
-  tmp25 = obj14;
+  cResult[9] = obj13;
+  tmp26 = obj13;
 }) : (function CheckpointFriendsStatsScreen(arg0) {
   let CheckpointFriendsRive;
   let closure_0;
@@ -864,19 +821,17 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointFr
   let items6;
   let items7;
   let items8;
+  let obj4;
   let obj5;
-  let obj6;
-  let obj8;
+  let obj7;
   let onNextStep;
   let onPreviousStep;
   let route;
   let str5;
-  let tmp11Result16;
+  let tmp11Result12;
   let tmp14;
   let tmp15;
   let tmp16;
-  let tmp24;
-  let tmp25Result;
   let useReducedMotion;
   let userAvatarURL;
   let userAvatarURL1;
@@ -967,7 +922,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointFr
   if (str4 == null) {
     str4 = "";
   }
-  const tmp23 = route === require("CheckpointNavigation").CheckpointRoute.SIDEKICK || route === require("CheckpointNavigation").CheckpointRoute.SIDEKICK_LEAVE;
+  let tmp26Result = route === tmp2(tmp3[20]).CheckpointRoute.SIDEKICK || route === tmp2(tmp3[20]).CheckpointRoute.SIDEKICK_LEAVE;
   if (stateFromStores.length < 3) {
     let str6 = "twoFriends";
     if (stateFromStores3) {
@@ -980,95 +935,82 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointFr
       str5 = "threeFriends-reducedMotion";
     }
   }
-  if (tmp23) {
-    tmp24 = null == stateFromStores1;
-  } else {
-    let num = 0;
-    tmp24 = 0 === stateFromStores.length;
+  const obj2 = { style: tmp.container, children: items6 };
+  const obj3 = { style: items5, pointerEvents: "none", children: closure_13(CheckpointFriendsRive, obj4) };
+  items5 = [tmp.animation, memo];
+  obj4 = { referencedAssets, defaultViewModelInstance: str5, dataBinding: obj5 };
+  obj5 = { AnimationState: friendsAnimationState, "Avatar01/img": userAvatarURL, "Avatar02/img": userAvatarURL1, "Avatar03/img": userAvatarURL2, "Avatar04/img": userAvatarURL3, "Avatar05/img": userAvatarURL4, "Avatar01/Username": toLocaleUpperCaseResult, "Avatar02/Username": toLocaleUpperCaseResult2, "Avatar03/Username": toLocaleUpperCaseResult1, "Avatar04/Username": str4.toLocaleUpperCase(), twoFriends: stateFromStores.length < 3 };
+  const tmp11Result = width(height[26]);
+  CheckpointFriendsRive = tmp2(tmp3[21]).CheckpointFriendsRive;
+  const merged = Object.assign(closure_15);
+  userAvatarURL = undefined;
+  if (null != tmp14) {
+    let num = 64;
+    const tmp11Result7 = width(height[12]);
+    userAvatarURL = tmp11Result7.getUserAvatarURL(tmp14, false, 64, "png");
   }
-  if (tmp24) {
-    const tmp11Result = width(height[23]);
-    const intl6 = tmp2(tmp3[21]).intl;
-    const string = intl6.string;
-    const tmp11Result9 = width(height[22]);
-    const obj2 = { name: string(tmp23 ? tmp11Result9["+uwOHt"] : tmp11Result9.OzY5Ns) };
-    tmp25Result = tmp25(tmp11Result, obj2);
-  } else {
-    const obj3 = { style: tmp.container, children: items6 };
-    const obj4 = { style: items5, pointerEvents: "none", children: closure_13(CheckpointFriendsRive, obj5) };
-    items5 = [tmp.animation, memo];
-    obj5 = { referencedAssets, defaultViewModelInstance: str5, dataBinding: obj6 };
-    obj6 = { AnimationState: friendsAnimationState, "Avatar01/img": userAvatarURL, "Avatar02/img": userAvatarURL1, "Avatar03/img": userAvatarURL2, "Avatar04/img": userAvatarURL3, "Avatar05/img": userAvatarURL4, "Avatar01/Username": toLocaleUpperCaseResult, "Avatar02/Username": toLocaleUpperCaseResult2, "Avatar03/Username": toLocaleUpperCaseResult1, "Avatar04/Username": str4.toLocaleUpperCase(), twoFriends: stateFromStores.length < 3 };
-    const tmp11Result10 = width(height[27]);
-    CheckpointFriendsRive = tmp2(tmp3[24]).CheckpointFriendsRive;
-    const merged = Object.assign(closure_15);
-    userAvatarURL = undefined;
-    if (null != tmp14) {
-      const tmp11Result11 = width(height[12]);
-      userAvatarURL = tmp11Result11.getUserAvatarURL(tmp14, false, 64, "png");
-    }
-    userAvatarURL1 = undefined;
-    if (null != tmp16) {
-      const tmp11Result12 = width(height[12]);
-      userAvatarURL1 = tmp11Result12.getUserAvatarURL(tmp16, false, 64, "png");
-    }
-    userAvatarURL2 = undefined;
-    if (null != tmp15) {
-      const tmp11Result13 = width(height[12]);
-      userAvatarURL2 = tmp11Result13.getUserAvatarURL(tmp15, false, 64, "png");
-    }
-    let user1;
-    if (stateFromStores1 != null) {
-      user1 = stateFromStores1.user;
-    }
-    userAvatarURL3 = undefined;
-    if (null != user1) {
-      const tmp11Result14 = width(height[12]);
-      userAvatarURL3 = tmp11Result14.getUserAvatarURL(user1, false, 64, "png");
-    }
-    userAvatarURL4 = undefined;
-    if (null != stateFromStores2) {
-      const tmp11Result15 = width(height[12]);
-      userAvatarURL4 = tmp11Result15.getUserAvatarURL(stateFromStores2, false, 64, "png");
-    }
-    items6 = [closure_13(closure_7, obj4), , , ];
-    let tmp25Result3 = route === tmp2(tmp3[20]).CheckpointRoute.SQUAD_TRANSITION;
-    if (tmp25Result3) {
-      const obj7 = { style: tmp.transition, children: closure_13(tmp11Result16, obj8) };
-      obj8 = { variant: "heading-lg/medium", children: intl.string(width(height[26])["6RSp5q"]) };
-      tmp11Result16 = width(height[25]);
-      intl = tmp2(tmp3[21]).intl;
-      tmp25Result3 = tmp25(tmp28, obj7);
-    }
-    items6[1] = tmp25Result3;
-    let tmp25Result4 = route === tmp2(tmp3[20]).CheckpointRoute.SQUAD;
-    if (tmp25Result4) {
-      const obj9 = { title: intl2.string(width(height[22]).OzY5Ns), description: intl3.string(width(height[26]).EqdLDd) };
-      intl2 = tmp2(tmp3[21]).intl;
-      intl3 = tmp2(tmp3[21]).intl;
-      tmp25Result4 = tmp25(closure_18, obj9);
-    }
-    items6[2] = tmp25Result4;
-    let tmp27Result = tmp23 && null != stateFromStores1;
-    if (tmp27Result) {
-      const obj10 = { style: tmp.sidekick, children: items8 };
-      const obj11 = { style: tmp.sidekickDetails, children: items7 };
-      const obj12 = { title: intl4.string(width(height[22])["+uwOHt"]), description: intl5.string(width(height[26])["/ctmGw"]) };
-      intl4 = tmp2(tmp3[21]).intl;
-      intl5 = tmp2(tmp3[21]).intl;
-      items7 = [closure_13(closure_18, obj12), ];
-      const obj13 = { sidekick: stateFromStores1 };
-      items7[1] = closure_13(closure_19, obj13);
-      items8 = [closure_14(closure_7, obj11), ];
-      const obj14 = { user: stateFromStores1.user, username: str4 };
-      items8[1] = closure_13(SidekickMessageInput, obj14);
-      tmp27Result = tmp27(tmp28, obj10);
-    }
-    items6[3] = tmp27Result;
-    const obj15 = { children: closure_14(closure_7, obj3) };
-    tmp25Result = tmp25(tmp11Result10, obj15);
+  userAvatarURL1 = undefined;
+  if (null != tmp16) {
+    const tmp11Result8 = width(height[12]);
+    userAvatarURL1 = tmp11Result8.getUserAvatarURL(tmp16, false, 64, "png");
   }
-  return tmp25Result;
+  userAvatarURL2 = undefined;
+  if (null != tmp15) {
+    const tmp11Result9 = width(height[12]);
+    userAvatarURL2 = tmp11Result9.getUserAvatarURL(tmp15, false, 64, "png");
+  }
+  let user1;
+  if (stateFromStores1 != null) {
+    user1 = stateFromStores1.user;
+  }
+  userAvatarURL3 = undefined;
+  if (null != user1) {
+    const tmp11Result10 = width(height[12]);
+    userAvatarURL3 = tmp11Result10.getUserAvatarURL(user1, false, 64, "png");
+  }
+  userAvatarURL4 = undefined;
+  if (null != stateFromStores2) {
+    const tmp11Result11 = width(height[12]);
+    userAvatarURL4 = tmp11Result11.getUserAvatarURL(stateFromStores2, false, 64, "png");
+  }
+  items6 = [closure_13(closure_7, obj3), , , ];
+  let tmp24Result = route === tmp2(tmp3[20]).CheckpointRoute.SQUAD_TRANSITION;
+  if (tmp24Result) {
+    const obj6 = { style: tmp.transition, children: closure_13(tmp11Result12, obj7) };
+    obj7 = { variant: "heading-lg/medium", children: intl.string(width(height[24])["6RSp5q"]) };
+    tmp11Result12 = width(height[22]);
+    intl = tmp2(tmp3[23]).intl;
+    tmp24Result = tmp24(tmp27, obj6);
+  }
+  items6[1] = tmp24Result;
+  let tmp24Result2 = route === tmp2(tmp3[20]).CheckpointRoute.SQUAD;
+  if (tmp24Result2) {
+    const obj8 = { title: intl2.string(width(height[25]).OzY5Ns), description: intl3.string(width(height[24]).EqdLDd) };
+    intl2 = tmp2(tmp3[23]).intl;
+    intl3 = tmp2(tmp3[23]).intl;
+    tmp24Result2 = tmp24(closure_18, obj8);
+  }
+  items6[2] = tmp24Result2;
+  if (tmp26Result) {
+    tmp26Result = null != stateFromStores1;
+  }
+  if (tmp26Result) {
+    const obj10 = { style: tmp.sidekickDetails, children: items7 };
+    const obj9 = { style: tmp.sidekick, children: items8 };
+    const obj11 = { title: intl4.string(width(height[25])["+uwOHt"]), description: intl5.string(width(height[24])["/ctmGw"]) };
+    intl4 = tmp2(tmp3[23]).intl;
+    intl5 = tmp2(tmp3[23]).intl;
+    items7 = [closure_13(closure_18, obj11), ];
+    const obj12 = { sidekick: stateFromStores1 };
+    items7[1] = closure_13(closure_19, obj12);
+    items8 = [closure_14(closure_7, obj10), ];
+    const obj13 = { user: stateFromStores1.user, username: str4 };
+    items8[1] = closure_13(SidekickMessageInput, obj13);
+    tmp26Result = tmp26(tmp27, obj9);
+  }
+  items6[3] = tmp26Result;
+  const obj14 = { children: closure_14(closure_7, obj2) };
+  return closure_13(tmp11Result, obj14);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function FriendsHeader(arg0) {
@@ -1206,7 +1148,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
   items[0] = map1(FriendsIcon.FriendsIcon, obj4);
   const obj5 = { variant: "heading-md/extrabold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
   const tmp2 = CheckpointTextDefault;
-  const intl = intl7.intl;
+  const intl = intl6.intl;
   stringResult = intl.string(_modDef3056.ZQakPR);
   items[1] = map1(tmp2, obj5);
   items1 = [syncedClientThemes(metroImportDefault, obj3), ];
@@ -1394,9 +1336,9 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sideki
   const tmp = closure_17();
   const rounded = Math.round(sidekick.numMessagesSent);
   const rounded1 = Math.round(sidekick.numVoiceMinutes);
-  const intl = intl7.intl;
+  const intl = intl6.intl;
   const stringResult = intl.string(_modDef3056.wWKySP);
-  const intl2 = intl7.intl;
+  const intl2 = intl6.intl;
   const obj = { style: tmp.stats, children: items1 };
   const formatToPlainStringResult = intl2.formatToPlainString(_modDef3056.UZbUtl, { numMinutes: rounded1 });
   const obj2 = { accessible: true, accessibilityLabel: "" + rounded + " " + stringResult.toLocaleLowerCase(), style: tmp.stat, children: items };

@@ -1,13 +1,13 @@
-// Module ID: 12743
-// Function ID: 12744
+// Module ID: 12775
+// Function ID: 12776
 // Name: TTIFirstContentfulPaint
-// Dependencies: [19, 21, 558, 576, 5133, 9, 7715, 12744, 2]
+// Dependencies: [19, 21, 558, 576, 5137, 9, 7724, 12776, 2]
 
-// Module 12743 (TTIFirstContentfulPaint)
+// Module 12775 (TTIFirstContentfulPaint)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import Fragment from "Fragment" /* 21 */;
-import RootNavigationRef from "RootNavigationRef" /* 5133 */;
-import PostTTIScheduler from "PostTTIScheduler" /* 7715 */;
+import RootNavigationRef from "RootNavigationRef" /* 5137 */;
+import PostTTIScheduler from "PostTTIScheduler" /* 7724 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -42,7 +42,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TTIFirstCo
     tmp4 = cResult[1];
   }
   if (cResult[2] !== tmp4) {
-    const tmp7 = jsx(tmp(12744).TTIMeasurementView, { onMeasurement: tmp4 });
+    const tmp7 = jsx(tmp(12776).TTIMeasurementView, { onMeasurement: tmp4 });
     cResult[2] = tmp4;
     cResult[3] = tmp7;
     tmp5 = tmp7;
@@ -67,7 +67,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TTIFirstCo
     const obj3 = PostTTIScheduler;
     obj3.notifyAboutTTI();
   }, items);
-  return jsx(checkFocusedScreen(12744).TTIMeasurementView, { onMeasurement });
+  return jsx(checkFocusedScreen(12776).TTIMeasurementView, { onMeasurement });
 });
 const result = size.fileFinishedImporting("modules/tti_analytics/native/TTIFirstContentfulPaint.tsx");
 

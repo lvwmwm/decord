@@ -1,9 +1,9 @@
-// Module ID: 15592
-// Function ID: 15593
+// Module ID: 15636
+// Function ID: 15637
 // Name: NotifTypes
 // Dependencies: [2]
 
-// Module 15592 (NotifTypes)
+// Module 15636 (NotifTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/NotifTypes.tsx");

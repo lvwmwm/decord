@@ -1,20 +1,20 @@
-// Module ID: 18255
-// Function ID: 18256
+// Module ID: 18323
+// Function ID: 18324
 // Name: AppToastContainer
-// Dependencies: [19, 21, 558, 576, 1633, 15179, 16257, 16266, 2]
+// Dependencies: [19, 21, 558, 576, 1633, 15223, 16327, 16336, 2]
 
-// Module 18255 (AppToastContainer)
+// Module 18323 (AppToastContainer)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import QuestHooks from "QuestHooks" /* 16257 */;
-import useYouBarTotalHeight from "useYouBarTotalHeight" /* 16266 */;
+import QuestHooks from "QuestHooks" /* 16327 */;
+import useYouBarTotalHeight from "useYouBarTotalHeight" /* 16336 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ToastContainer = tmp(15179);
+const ToastContainer = tmp(15223);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManaToastSurface(bottomInset) {

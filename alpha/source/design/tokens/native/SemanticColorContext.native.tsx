@@ -1,15 +1,15 @@
-// Module ID: 5120
-// Function ID: 5121
+// Module ID: 5124
+// Function ID: 5125
 // Name: SemanticColorContext
-// Dependencies: [1105, 683, 5121, 5125, 5126, 2]
+// Dependencies: [1105, 683, 5125, 5129, 5130, 2]
 // Exports: getSemanticColorContextFromThemeContext
 
-// Module 5120 (SemanticColorContext)
+// Module 5124 (SemanticColorContext)
 import _modDef683 from "module_683" /* 683 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
-import native from "native" /* 5121 */;
-import getGradientThemeFromFlags from "getGradientThemeFromFlags" /* 5125 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5126 */;
+import native from "native" /* 5125 */;
+import getGradientThemeFromFlags from "getGradientThemeFromFlags" /* 5129 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5130 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/tokens/native/SemanticColorContext.native.tsx");

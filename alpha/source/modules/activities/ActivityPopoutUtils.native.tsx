@@ -1,10 +1,10 @@
-// Module ID: 5610
-// Function ID: 5611
+// Module ID: 5614
+// Function ID: 5615
 // Name: ActivityPopoutUtils
 // Dependencies: [2]
 // Exports: shouldOpenActivityInPopoutWindow, wrapPreemptiveActivityPopout
 
-// Module 5610 (ActivityPopoutUtils)
+// Module 5614 (ActivityPopoutUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/ActivityPopoutUtils.native.tsx");

@@ -1,370 +1,50 @@
 // Module ID: 15258
 // Function ID: 15259
-// Dependencies: [15245, 15244, 15230, 15247]
+// Dependencies: [15259, 15266, 15267, 15268, 15269, 15270, 15271, 15272, 15273, 15274, 15275, 15276, 15277, 15278, 15279, 15280, 15281, 15282, 15283, 15284, 15285, 15286, 15287, 15288, 15289, 15291, 15292, 15293, 15294, 15295, 15296, 15297, 15298, 15299, 15300, 15301, 15302, 15260, 15264, 15262, 15265]
 
 // Module 15258
-import _mod15230 from "module_15230" /* 15230 */;
-import _mod15244 from "module_15244" /* 15244 */;
-import _mod15245 from "module_15245" /* 15245 */;
-import _mod15247 from "module_15247" /* 15247 */;
+import _mod15259 from "module_15259" /* 15259 */;
+import _mod15260 from "module_15260" /* 15260 */;
+import _mod15262 from "module_15262" /* 15262 */;
+import _mod15264 from "module_15264" /* 15264 */;
+import _mod15265 from "module_15265" /* 15265 */;
+import _mod15266 from "module_15266" /* 15266 */;
+import _mod15267 from "module_15267" /* 15267 */;
+import _mod15268 from "module_15268" /* 15268 */;
+import _mod15269 from "module_15269" /* 15269 */;
+import _mod15270 from "module_15270" /* 15270 */;
+import _mod15271 from "module_15271" /* 15271 */;
+import _mod15272 from "module_15272" /* 15272 */;
+import _mod15273 from "module_15273" /* 15273 */;
+import _mod15274 from "module_15274" /* 15274 */;
+import _mod15275 from "module_15275" /* 15275 */;
+import _mod15276 from "module_15276" /* 15276 */;
+import _mod15277 from "module_15277" /* 15277 */;
+import _mod15278 from "module_15278" /* 15278 */;
+import _mod15279 from "module_15279" /* 15279 */;
+import _mod15280 from "module_15280" /* 15280 */;
+import _mod15281 from "module_15281" /* 15281 */;
+import _mod15282 from "module_15282" /* 15282 */;
+import _mod15283 from "module_15283" /* 15283 */;
+import _mod15284 from "module_15284" /* 15284 */;
+import _mod15285 from "module_15285" /* 15285 */;
+import _mod15286 from "module_15286" /* 15286 */;
+import _mod15287 from "module_15287" /* 15287 */;
+import _mod15288 from "module_15288" /* 15288 */;
+import _mod15289 from "module_15289" /* 15289 */;
+import _mod15291 from "module_15291" /* 15291 */;
+import _mod15292 from "module_15292" /* 15292 */;
+import _mod15293 from "module_15293" /* 15293 */;
+import _mod15294 from "module_15294" /* 15294 */;
+import _mod15295 from "module_15295" /* 15295 */;
+import _mod15296 from "module_15296" /* 15296 */;
+import _mod15297 from "module_15297" /* 15297 */;
+import _mod15298 from "module_15298" /* 15298 */;
+import _mod15299 from "module_15299" /* 15299 */;
+import _mod15300 from "module_15300" /* 15300 */;
+import _mod15301 from "module_15301" /* 15301 */;
+import _mod15302 from "module_15302" /* 15302 */;
 
-let set;
+({ parse: _mod15259, valid: _mod15266, clean: _mod15267, inc: _mod15268, diff: _mod15269, major: _mod15270, minor: _mod15271, patch: _mod15272, prerelease: _mod15273, compare: _mod15274, rcompare: _mod15275, compareLoose: _mod15276, compareBuild: _mod15277, sort: _mod15278, rsort: _mod15279, gt: _mod15280, lt: _mod15281, eq: _mod15282, neq: _mod15283, gte: _mod15284, lte: _mod15285, cmp: _mod15286, coerce: _mod15287, Comparator: _mod15288, Range: _mod15289, satisfies: _mod15291, toComparators: _mod15292, maxSatisfying: _mod15293, minSatisfying: _mod15294, minVersion: _mod15295, validRange: _mod15296, outside: _mod15297, gtr: _mod15298, ltr: _mod15299, intersects: _mod15300, simplifyRange: _mod15301, subset: _mod15302, SemVer: _mod15260, re: _mod15264.re, src: _mod15264.src, tokens: _mod15264.t, SEMVER_SPEC_VERSION: _mod15262.SEMVER_SPEC_VERSION, RELEASE_TYPES: _mod15262.RELEASE_TYPES, compareIdentifiers: _mod15265.compareIdentifiers, rcompareIdentifiers: _mod15265.rcompareIdentifiers });
 
-let tmp = new _mod15244(">=0.0.0-0");
-const items = [tmp];
-let tmp2 = new _mod15244(">=0.0.0");
-const items1 = [tmp2];
-function simpleSubset(arg0, item10015, includePrerelease) {
-  let tmp;
-  let tmp2;
-  let tmp3;
-  let tmp4;
-  if (arg0 === item10015) {
-    return true;
-  } else {
-    let tmp9 = arg0;
-    if (1 === arg0.length) {
-      tmp9 = arg0;
-      const tmp6 = require;
-      if (arg0[0].semver === _mod15244.ANY) {
-        if (1 === item10015.length) {
-          if (item10015[0].semver === tmp6(15244).ANY) {
-            return true;
-          }
-        }
-        tmp9 = includePrerelease.includePrerelease ? items : items1;
-      }
-    }
-    let tmp12 = item10015;
-    if (1 === item10015.length) {
-      tmp12 = item10015;
-      if (item10015[0].semver === _mod15244.ANY) {
-        if (includePrerelease.includePrerelease) {
-          return true;
-        } else {
-          tmp12 = items1;
-        }
-      }
-    }
-    const _Set = Set;
-    const self = this;
-    const self2 = this;
-    set = new Set();
-    const iter = tmp9[Symbol.iterator]();
-    const nextResult = iter.next();
-    const tmp18 = set;
-    while (iter !== undefined) {
-      let tmp23 = nextResult;
-      if (">" !== nextResult.operator) {
-        if (">=" !== tmp23.operator) {
-          if ("<" !== tmp23.operator) {
-            if ("<=" !== tmp23.operator) {
-              let addResult = set.add(tmp23.semver);
-            }
-          }
-          tmp2 = lowerLT(tmp2, tmp23, includePrerelease);
-        }
-        continue;
-      }
-      tmp = higherGT(tmp, tmp23, includePrerelease);
-    }
-    if (set.size > 1) {
-      return null;
-    } else {
-      let tmp36;
-      if (tmp) {
-        if (tmp2) {
-          const tmp43 = _mod15230(tmp.semver, tmp2.semver, includePrerelease);
-          if (tmp43 > 0) {
-            return null;
-          } else {
-            tmp36 = tmp43;
-            if (0 === tmp43) {
-              if (">=" === tmp.operator) {
-                tmp36 = tmp43;
-              }
-              return null;
-            }
-          }
-        }
-      }
-      const iter2 = tmp18[Symbol.iterator]();
-      const nextResult1 = iter2.next();
-      if (iter2 === undefined) {
-        includePrerelease = !tmp2;
-        if (tmp2) {
-          includePrerelease = includePrerelease.includePrerelease;
-        }
-        if (!includePrerelease) {
-          includePrerelease = !tmp2.semver.prerelease.length;
-        }
-        const semver = !includePrerelease && tmp2.semver;
-        let flag3 = semver;
-        let includePrerelease2 = !tmp;
-        if (tmp) {
-          includePrerelease2 = includePrerelease.includePrerelease;
-        }
-        if (!includePrerelease2) {
-          includePrerelease2 = !tmp.semver.prerelease.length;
-        }
-        const semver2 = !includePrerelease2 && tmp.semver;
-        let flag4 = semver2;
-        const tmp86 = flag3 && 1 === flag3.prerelease.length && "<" === tmp2.operator && 0 === flag3.prerelease[0];
-        if (tmp86) {
-          flag3 = false;
-        }
-        const iter3 = tmp12[Symbol.iterator]();
-        const nextResult2 = iter3.next();
-        while (iter3 !== undefined) {
-          let tmp94 = nextResult2;
-          let tmp95 = tmp4;
-          if (!tmp95) {
-            tmp95 = ">" === tmp94.operator;
-          }
-          if (!tmp95) {
-            tmp95 = ">=" === tmp94.operator;
-          }
-          tmp4 = tmp95;
-          let tmp98 = tmp3;
-          if (!tmp98) {
-            tmp98 = "<" === tmp94.operator;
-          }
-          if (!tmp98) {
-            tmp98 = "<=" === tmp94.operator;
-          }
-          tmp3 = tmp98;
-          let tmp101 = tmp;
-          if (tmp101) {
-            let length = flag4;
-            if (length) {
-              length = tmp94.semver.prerelease;
-            }
-            if (length) {
-              length = tmp94.semver.prerelease.length;
-            }
-            if (length) {
-              length = tmp94.semver.major === flag4.major;
-            }
-            if (length) {
-              length = tmp94.semver.minor === flag4.minor;
-            }
-            if (length) {
-              length = tmp94.semver.patch === flag4.patch;
-            }
-            if (length) {
-              flag4 = false;
-            }
-            if (">" !== tmp94.operator) {
-              if (">=" !== tmp94.operator) {
-                if (">=" === tmp.operator) {
-                  let _String4 = String;
-                  let tmp117 = _mod15247;
-                  if (!tmp117(tmp.semver, String(tmp94), includePrerelease)) {
-                    iter3.return();
-                    return false;
-                  }
-                }
-              }
-            }
-            let tmp124 = higherGT(tmp, tmp94, includePrerelease);
-            if (tmp124 === tmp94) {
-              if (tmp125 !== tmp) {
-                iter3.return();
-                return false;
-              }
-            }
-          }
-          let tmp128 = tmp2;
-          if (tmp128) {
-            let length2 = flag3;
-            if (length2) {
-              length2 = tmp94.semver.prerelease;
-            }
-            if (length2) {
-              length2 = tmp94.semver.prerelease.length;
-            }
-            if (length2) {
-              length2 = tmp94.semver.major === flag3.major;
-            }
-            if (length2) {
-              length2 = tmp94.semver.minor === flag3.minor;
-            }
-            if (length2) {
-              length2 = tmp94.semver.patch === flag3.patch;
-            }
-            if (length2) {
-              flag3 = false;
-            }
-            if ("<" !== tmp94.operator) {
-              if ("<=" !== tmp94.operator) {
-                if ("<=" === tmp2.operator) {
-                  let _String5 = String;
-                  let tmp144 = _mod15247;
-                  if (!tmp144(tmp2.semver, String(tmp94), includePrerelease)) {
-                    iter3.return();
-                    return false;
-                  }
-                }
-              }
-            }
-            let tmp151 = lowerLT(tmp2, tmp94, includePrerelease);
-            if (tmp151 === tmp94) {
-              if (tmp152 !== tmp2) {
-                iter3.return();
-                return false;
-              }
-            }
-          }
-          if (!tmp94.operator) {
-            let tmp156 = tmp2;
-            if (tmp156) {
-              if (0 !== tmp36) {
-                iter3.return();
-                return false;
-              }
-            }
-          }
-          continue;
-        }
-        let tmp163 = !(tmp && tmp3 && !tmp2 && 0 !== tmp36);
-        const tmp161 = tmp && tmp3 && !tmp2 && 0 !== tmp36;
-        if (tmp163) {
-          if (tmp2) {
-            tmp2 = tmp4;
-          }
-          if (tmp2) {
-            tmp2 = !tmp;
-          }
-          if (tmp2) {
-            tmp2 = 0 !== tmp36;
-          }
-          let tmp164 = !tmp2;
-          if (tmp164) {
-            tmp164 = !flag4 && !flag3;
-          }
-          tmp163 = tmp164;
-        }
-        return tmp163;
-      } else {
-        const tmp49 = tmp;
-        if (tmp49) {
-          const _String = String;
-          const tmp54 = _mod15247;
-          if (!tmp54(nextResult1, String(tmp), includePrerelease)) {
-            iter2.return();
-            return null;
-          }
-        }
-        const tmp59 = tmp2;
-        if (tmp59) {
-          const _String2 = String;
-          const tmp64 = _mod15247;
-          if (!tmp64(nextResult1, String(tmp2), includePrerelease)) {
-            iter2.return();
-            return null;
-          }
-        }
-        for (const item10133 of tmp12) {
-          let _String3 = String;
-          let tmp75 = _mod15247;
-          if (tmp75(tmp48, String(item10133), includePrerelease)) {
-            continue;
-          } else {
-            obj2.return();
-            iter2.return();
-            let flag = false;
-            return false;
-          }
-        }
-        iter2.return();
-        return true;
-      }
-    }
-  }
-}
-function higherGT(semver, semver2, includePrerelease) {
-  if (semver) {
-    const tmp4 = _mod15230(semver.semver, semver2.semver, includePrerelease);
-    let tmp5 = semver;
-    if (tmp4 <= 0) {
-      let tmp6;
-      if (tmp4 < 0) {
-        tmp6 = semver2;
-      } else {
-        tmp6 = semver;
-        if (">" === semver2.operator) {
-          tmp6 = semver;
-        }
-      }
-      tmp5 = tmp6;
-    }
-    return tmp5;
-  } else {
-    return semver2;
-  }
-}
-function lowerLT(semver, semver2, includePrerelease) {
-  if (semver) {
-    const tmp4 = _mod15230(semver.semver, semver2.semver, includePrerelease);
-    let tmp5 = semver;
-    if (tmp4 >= 0) {
-      let tmp6;
-      if (tmp4 > 0) {
-        tmp6 = semver2;
-      } else {
-        tmp6 = semver;
-        if ("<" === semver2.operator) {
-          tmp6 = semver;
-        }
-      }
-      tmp5 = tmp6;
-    }
-    return tmp5;
-  } else {
-    return semver2;
-  }
-}
-
-export default function(arg0, arg1, includePrerelease) {
-  let obj = includePrerelease;
-  if (includePrerelease === undefined) {
-    obj = {};
-  }
-  if (arg0 === arg1) {
-    return true;
-  } else {
-    const self = this;
-    const self2 = this;
-    const self3 = this;
-    const self4 = this;
-    const tmp20 = new _mod15245(arg0, obj);
-    let flag = false;
-    const tmp23 = new _mod15245(arg1, obj);
-    const iter = tmp20.set[Symbol.iterator]();
-    const nextResult = iter.next();
-    label0:
-    while (iter !== undefined) {
-      set = tmp23.set;
-      for (const item10015 of set) {
-        let tmp9 = simpleSubset(tmp4, item10015, obj);
-        let tmp10 = flag;
-        if (!tmp10) {
-          tmp10 = null !== tmp9;
-        }
-        flag = tmp10;
-        let tmp12 = tmp9;
-        if (tmp12) {
-          obj2.return();
-          continue label0;
-        }
-        continue;
-      }
-      let tmp14 = flag;
-      if (tmp14) {
-        iter.return();
-        return false;
-      }
-    }
-    return true;
-  }
-};
+export default { parse: _mod15259, valid: _mod15266, clean: _mod15267, inc: _mod15268, diff: _mod15269, major: _mod15270, minor: _mod15271, patch: _mod15272, prerelease: _mod15273, compare: _mod15274, rcompare: _mod15275, compareLoose: _mod15276, compareBuild: _mod15277, sort: _mod15278, rsort: _mod15279, gt: _mod15280, lt: _mod15281, eq: _mod15282, neq: _mod15283, gte: _mod15284, lte: _mod15285, cmp: _mod15286, coerce: _mod15287, Comparator: _mod15288, Range: _mod15289, satisfies: _mod15291, toComparators: _mod15292, maxSatisfying: _mod15293, minSatisfying: _mod15294, minVersion: _mod15295, validRange: _mod15296, outside: _mod15297, gtr: _mod15298, ltr: _mod15299, intersects: _mod15300, simplifyRange: _mod15301, subset: _mod15302, SemVer: _mod15260, re: _mod15264.re, src: _mod15264.src, tokens: _mod15264.t, SEMVER_SPEC_VERSION: _mod15262.SEMVER_SPEC_VERSION, RELEASE_TYPES: _mod15262.RELEASE_TYPES, compareIdentifiers: _mod15265.compareIdentifiers, rcompareIdentifiers: _mod15265.rcompareIdentifiers };

@@ -1,19 +1,19 @@
-// Module ID: 5169
-// Function ID: 5170
+// Module ID: 5173
+// Function ID: 5174
 // Name: ServerThemeExperiment
-// Dependencies: [1087, 5170, 5181, 558, 576, 2]
+// Dependencies: [1087, 5174, 5185, 558, 576, 2]
 // Exports: getServerThemeEnabled, getServerThemeRollbackEnabled, resolveServerThemeConfig
 
-// Module 5169 (ServerThemeExperiment)
+// Module 5173 (ServerThemeExperiment)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import createExperiment from "module_5170" /* 5170 */;
+import createExperiment from "module_5174" /* 5174 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let items;
 let tmp;
-const ServerThemeApexShadowExperiment2 = tmp(5181);
+const ServerThemeApexShadowExperiment2 = tmp(5185);
 const EMPTY_STRING_SNOWFLAKE_ID = Constants.EMPTY_STRING_SNOWFLAKE_ID;
 let obj = { kind: "guild", id: "2026-04_server_theme", label: "Server Theme", defaultConfig: { enabled: false, inExperiment: false, gatesApex: false, rollbackEnabled: false }, treatments: items };
 items = [{ id: 0, label: "Control", config: { enabled: false, inExperiment: true, gatesApex: false, rollbackEnabled: false } }, { id: 1, label: "Enable Server Theme", config: { enabled: true, inExperiment: true, gatesApex: false, rollbackEnabled: false } }, { id: 2, label: "Rollback UI for Server Theme", config: { enabled: true, inExperiment: true, gatesApex: false, rollbackEnabled: true } }];

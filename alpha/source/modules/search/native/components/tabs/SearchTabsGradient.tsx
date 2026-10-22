@@ -1,20 +1,20 @@
-// Module ID: 18004
-// Function ID: 18005
+// Module ID: 18074
+// Function ID: 18075
 // Name: SearchTabsGradient
-// Dependencies: [19, 21, 558, 576, 5234, 587, 4963, 13589, 2]
+// Dependencies: [19, 21, 558, 576, 5238, 587, 4966, 13625, 2]
 
-// Module 18004 (SearchTabsGradient)
+// Module 18074 (SearchTabsGradient)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 5234 */;
-import TabsGradientDefault from "TabsGradient" /* 13589 */;
+import useToken from "useToken" /* 5238 */;
+import TabsGradientDefault from "TabsGradient" /* 13625 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ColorUtils = tmp(4963);
+const ColorUtils = tmp(4966);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGradientColors() {
@@ -46,7 +46,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGrad
   tmp7 = items;
 }) : (function useGradientColors() {
   let token;
-  let obj = token(5234);
+  let obj = token(5238);
   token = obj.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
   let items = [token];
   return react.useMemo(() => {

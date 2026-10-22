@@ -188,7 +188,7 @@ class GameRecord extends Record {
     const obj = { keepAspectRatio: true, size };
     return tmp(id, banner, obj);
   }
-  getCoverURL(c8) {
+  getCoverURL(coverImageSize) {
     const media = this.media;
     let cover;
     const id = this.id;
@@ -200,7 +200,7 @@ class GameRecord extends Record {
     if (AvatarUtils.SUPPORTS_WEBP) {
       str = "webp";
     }
-    const obj = { keepAspectRatio: true, format: str, size: c8 };
+    const obj = { keepAspectRatio: true, format: str, size: coverImageSize };
     return tmp2(id, cover, obj);
   }
   getArtworkURLs(size) {

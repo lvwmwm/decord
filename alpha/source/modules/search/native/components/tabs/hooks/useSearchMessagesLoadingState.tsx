@@ -1,15 +1,15 @@
-// Module ID: 17984
-// Function ID: 17985
+// Module ID: 18054
+// Function ID: 18055
 // Name: useSearchMessagesLoadingState
-// Dependencies: [6771, 13120, 9672, 558, 576, 17914, 13113, 504, 2]
+// Dependencies: [6778, 13156, 9684, 558, 576, 17984, 13149, 504, 2]
 
-// Module 17984 (useSearchMessagesLoadingState)
+// Module 18054 (useSearchMessagesLoadingState)
 import get_initialized from "get initialized" /* 504 */;
-import SearchConstants from "SearchConstants" /* 9672 */;
-import SearchUtils from "SearchUtils" /* 13113 */;
-import usePlaceholderStyles from "usePlaceholderStyles" /* 17914 */;
-import SearchMessageStore from "SearchMessageStore" /* 6771 */;
-import SearchQueryStore from "SearchQueryStore" /* 13120 */;
+import SearchConstants from "SearchConstants" /* 9684 */;
+import SearchUtils from "SearchUtils" /* 13149 */;
+import usePlaceholderStyles from "usePlaceholderStyles" /* 17984 */;
+import SearchMessageStore from "SearchMessageStore" /* 6778 */;
+import SearchQueryStore from "SearchQueryStore" /* 13156 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

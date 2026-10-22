@@ -1,42 +1,42 @@
-// Module ID: 11796
-// Function ID: 11797
+// Module ID: 11822
+// Function ID: 11823
 // Name: ConjureNativePreview
-// Dependencies: [32, 19, 17, 6754, 502, 4821, 6750, 2001, 11768, 6752, 1087, 6755, 21, 4966, 587, 558, 576, 5216, 6884, 10686, 10723, 11797, 10719, 504, 11799, 10700, 10724, 5575, 11800, 11801, 11802, 11806, 11808, 11810, 1128, 3830, 5226, 7685, 11818, 10698, 7388, 7185, 10839, 1384, 11930, 2]
+// Dependencies: [32, 19, 17, 6761, 502, 4821, 6757, 2001, 11801, 6759, 1087, 6762, 21, 4969, 587, 558, 576, 5220, 6891, 10698, 10735, 11823, 10731, 504, 11825, 10712, 10736, 5579, 11826, 11827, 11828, 11832, 11834, 11836, 1128, 3830, 5230, 7692, 11844, 10710, 7395, 7192, 10856, 1384, 11951, 2]
 // Exports: leaveConjurePreviewFrame
 
-// Module 11796 (ConjureNativePreview)
+// Module 11822 (ConjureNativePreview)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl9 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import components_Button_Button from "components/Button/Button" /* 5226 */;
-import FramesConstants from "FramesConstants" /* 6755 */;
-import Card_Card from "Card/Card" /* 6884 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7185 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7388 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7685 */;
-import conjurePreviewSurface2 from "conjurePreviewSurface" /* 10686 */;
-import ConjurePlatformUtils from "ConjurePlatformUtils" /* 10700 */;
-import leaveFrame from "leaveFrame" /* 10723 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10724 */;
-import useEdgeOnlySwipeExitDefault from "useEdgeOnlySwipeExit" /* 11797 */;
-import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 11800 */;
-import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 11818 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import components_Button_Button from "components/Button/Button" /* 5230 */;
+import FramesConstants from "FramesConstants" /* 6762 */;
+import Card_Card from "Card/Card" /* 6891 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7192 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7395 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7692 */;
+import conjurePreviewSurface2 from "conjurePreviewSurface" /* 10698 */;
+import ConjurePlatformUtils from "ConjurePlatformUtils" /* 10712 */;
+import leaveFrame from "leaveFrame" /* 10735 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10736 */;
+import useEdgeOnlySwipeExitDefault from "useEdgeOnlySwipeExit" /* 11823 */;
+import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 11826 */;
+import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 11844 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import FramesStore_mod from "FramesStore" /* 6754 */;
+import FramesStore_mod from "FramesStore" /* 6761 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import ReadStateStore from "ReadStateStore" /* 6750 */;
+import ReadStateStore from "ReadStateStore" /* 6757 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
-import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 11768 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6752 */;
+import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 11801 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6759 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -119,14 +119,14 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Status
                   return tmp21;
                 }
                 const obj2 = { style: tmp4.centered, children: tmp18 };
-                const tmp24 = authStore6(metroImportDefault, obj2);
+                const tmp24 = authStore5(metroImportDefault, obj2);
                 cResult[17] = tmp4.centered;
                 cResult[18] = tmp18;
                 cResult[19] = tmp24;
                 tmp21 = tmp24;
               }
               const obj3 = { variant: "primary", style: tmp4.card, children: tmp14 };
-              const tmp20 = authStore6(Card_Card.Card, obj3);
+              const tmp20 = authStore5(Card_Card.Card, obj3);
               cResult[14] = tmp4.card;
               cResult[15] = tmp14;
               cResult[16] = tmp20;
@@ -155,7 +155,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Status
     let tmp8 = null;
     if (null != body) {
       const obj6 = { variant: "text-sm/normal", color: "text-muted", style: tmp4.cardText, children: body };
-      tmp8 = authStore6(tmp(5216).Text, obj6);
+      tmp8 = authStore5(tmp(5220).Text, obj6);
     }
     cResult[3] = body;
     cResult[4] = tmp4.cardText;
@@ -163,7 +163,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Status
     tmp7 = tmp8;
   }
   const obj7 = { variant: "heading-md/semibold", color: "text-default", style: tmp4.cardText, children: title };
-  const tmp6 = authStore6(Text_Text.Text, obj7);
+  const tmp6 = authStore5(Text_Text.Text, obj7);
   cResult[0] = tmp4.cardText;
   cResult[1] = title;
   cResult[2] = tmp6;
@@ -179,14 +179,14 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Status
   body = body.body;
   ({ title, children } = body);
   const tmp = closure_24();
-  const obj = { style: tmp.centered, children: authStore6(Card, obj2) };
+  const obj = { style: tmp.centered, children: authStore5(Card, obj2) };
   obj2 = { variant: "primary", style: tmp.card, children: closure_23(metroImportDefault, obj3) };
   obj3 = { style: tmp.cardBody, children: items1 };
   const obj4 = { style: tmp.cardCopy, children: items };
   Card = Card_Card.Card;
   items = [, ];
   const obj5 = { variant: "heading-md/semibold", color: "text-default", style: tmp.cardText, children: title };
-  items[0] = authStore6(Text_Text.Text, obj5);
+  items[0] = authStore5(Text_Text.Text, obj5);
   let tmp2Result = null;
   if (null != body) {
     const obj6 = { variant: "text-sm/normal", color: "text-muted", style: tmp.cardText, children: body };
@@ -194,7 +194,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Status
   }
   items[1] = tmp2Result;
   items1 = [closure_23(metroImportDefault, obj4), children];
-  return authStore6(metroImportDefault, obj);
+  return authStore5(metroImportDefault, obj);
 });
 let context = react.createContext(false);
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -650,7 +650,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     const self = this;
     const self2 = this;
     const obj2 = { applicationId };
-    const applicationWidget = new tmp(7685).ApplicationWidget(obj2);
+    const applicationWidget = new tmp(7692).ApplicationWidget(obj2);
     cResult[2] = applicationId;
     cResult[3] = applicationWidget;
     tmp9 = applicationWidget;
@@ -664,7 +664,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
       const obj3 = { title: intl.string(_modDef3830["08U+YO"]), body: intl2.string(_modDef3830.pKBfrc) };
       intl = tmp(1128).intl;
       intl2 = tmp(1128).intl;
-      const tmp25 = authStore6(closure_25, obj3);
+      const tmp25 = authStore5(closure_25, obj3);
       cResult[4] = tmp25;
       tmp21 = tmp25;
     } else {
@@ -683,14 +683,14 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
         }
       }
       const obj4 = { contentContainerStyle: tmp4.widget, children: tmp13 };
-      const tmp20 = authStore6(metroRequire, obj4);
+      const tmp20 = authStore5(metroRequire, obj4);
       cResult[8] = tmp4.widget;
       cResult[9] = tmp13;
       cResult[10] = tmp20;
       tmp17 = tmp20;
     }
     const obj5 = { userId: stateFromStores, widget: tmp9 };
-    const tmp16 = authStore6(UserProfileApplicationWidgetCardDefault, obj5);
+    const tmp16 = authStore5(UserProfileApplicationWidgetCardDefault, obj5);
     cResult[5] = stateFromStores;
     cResult[6] = tmp9;
     cResult[7] = tmp16;
@@ -1102,7 +1102,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     intl = tmp7(1128).intl;
     intl2 = tmp7(1128).intl;
     obj4 = { variant: "secondary", size: "sm", text: intl3.string(projectId(1128).t["5911Lb"]), onPress: callback };
-    Button = tmp7(5226).Button;
+    Button = tmp7(5230).Button;
     intl3 = tmp7(1128).intl;
     tmp28Result = closure_22(closure_25, obj3);
   } else if (null == stateFromStores) {
@@ -1111,14 +1111,14 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
   } else {
     const obj6 = { style: tmp.dm, children: items8 };
     const obj7 = { guildId, channelId: stateFromStores.id, chatInputRef: tmp19, screenIndex: "conjure-preview", alwaysRespectKeyboard: true, disableGradient: true };
-    items8 = [closure_22(previewApplicationId(10839), obj7, stateFromStores.id), ];
+    items8 = [closure_22(previewApplicationId(10856), obj7, stateFromStores.id), ];
     let tmp30Result = null;
     const tmp28 = closure_23;
     const tmp29 = id;
     const tmp30 = closure_22;
     const tmp7Result4 = projectId(1384);
     if (tmp7Result4.isAndroid()) {
-      tmp30Result = tmp30(tmp7(11930).PortalKeyboardRenderer, { portal: true });
+      tmp30Result = tmp30(tmp7(11951).PortalKeyboardRenderer, { portal: true });
     }
     items8[1] = tmp30Result;
     tmp28Result = tmp28(tmp29, obj6);
@@ -1174,7 +1174,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNati
         return tmp46;
       }
       const obj2 = { style: centered, children: tmp43 };
-      const tmp49 = authStore6(metroImportDefault, obj2);
+      const tmp49 = authStore5(metroImportDefault, obj2);
       cResult[4] = tmp4.centered;
       cResult[5] = tmp43;
       cResult[6] = tmp49;
@@ -1182,7 +1182,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNati
     }
     const obj3 = { variant: "primary", size: "sm", text: first, onPress: null, loading: null };
     ({ onReviewPermissions: obj9.onPress, loading: obj9.loading } = permissionsGate);
-    const tmp45 = authStore6(components_Button_Button.Button, obj3);
+    const tmp45 = authStore5(components_Button_Button.Button, obj3);
     cResult[1] = permissionsGate.loading;
     cResult[2] = permissionsGate.onReviewPermissions;
     cResult[3] = tmp45;
@@ -1221,10 +1221,10 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNati
       }
       return tmp35;
     }
-    const obj4 = { title: tmp27, body: tmp28, children: authStore6(components_Button_Button.Button, obj5) };
+    const obj4 = { title: tmp27, body: tmp28, children: authStore5(components_Button_Button.Button, obj5) };
     obj5 = { variant: "primary", size: "sm", text: tmp32, onPress: null, loading: null };
     ({ onReviewPermissions: obj8.onPress, loading: obj8.loading } = permissionsGate);
-    const tmp38 = authStore6(closure_25, obj4);
+    const tmp38 = authStore5(closure_25, obj4);
     cResult[10] = permissionsGate.loading;
     cResult[11] = permissionsGate.onReviewPermissions;
     cResult[12] = tmp38;
@@ -1271,7 +1271,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNati
     let tmp17 = null;
     if (null != widgetApplicationId) {
       const obj10 = { applicationId: widgetApplicationId, revoked: "unavailable-authorization-revoked" === availability.profileState };
-      tmp17 = authStore6(closure_29, obj10);
+      tmp17 = authStore5(closure_29, obj10);
     }
     cResult[19] = availability;
     cResult[20] = widgetApplicationId;
@@ -1286,7 +1286,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNati
       return tmp12;
     }
     const obj19 = { projectId, previewApplicationId };
-    const tmp15 = authStore6(closure_30, obj19);
+    const tmp15 = authStore5(closure_30, obj19);
     cResult[22] = previewApplicationId;
     cResult[23] = projectId;
     cResult[24] = tmp15;
@@ -1300,7 +1300,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNati
       const obj20 = { title: intl.string(_modDef3830["7k4GyN"]), body: intl2.string(_modDef3830.zdIy3R) };
       intl = tmp(1128).intl;
       intl2 = tmp(1128).intl;
-      const tmp11 = authStore6(closure_25, obj20);
+      const tmp11 = authStore5(closure_25, obj20);
       cResult[25] = tmp11;
       tmp7 = tmp11;
     } else {
@@ -1338,21 +1338,21 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNati
     previewBotMissing = permissionsGate.previewBotMissing;
   }
   if (true === previewBotMissing) {
-    const obj2 = { style: tmp.centered, children: authStore6(Button2, obj3) };
+    const obj2 = { style: tmp.centered, children: authStore5(Button2, obj3) };
     obj3 = { variant: "primary", size: "sm", text: intl8.string(_modDef3830.FH2Udn), onPress: null, loading: null };
     Button2 = components_Button_Button.Button;
     intl8 = intl9.intl;
     ({ onReviewPermissions: obj9.onPress, loading: obj9.loading } = permissionsGate);
-    return authStore6(metroImportDefault, obj2);
+    return authStore5(metroImportDefault, obj2);
   } else if (null != permissionsGate) {
-    const obj4 = { title: intl5.string(_modDef3830.xu1I8B), body: intl6.string(_modDef3830["8qJtGr"]), children: authStore6(Button, obj5) };
+    const obj4 = { title: intl5.string(_modDef3830.xu1I8B), body: intl6.string(_modDef3830["8qJtGr"]), children: authStore5(Button, obj5) };
     intl5 = intl9.intl;
     intl6 = intl9.intl;
     obj5 = { variant: "primary", size: "sm", text: intl7.string(_modDef3830["Nub/J6"]), onPress: null, loading: null };
     Button = components_Button_Button.Button;
     intl7 = intl9.intl;
     ({ onReviewPermissions: obj7.onPress, loading: obj7.loading } = permissionsGate);
-    return authStore6(closure_25, obj4);
+    return authStore5(closure_25, obj4);
   } else if ("frame" === mode) {
     let tmp13Result;
     if (frameHostAvailable) {
@@ -1369,19 +1369,19 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNati
     let tmp10 = null;
     if (null != widgetApplicationId) {
       const obj17 = { applicationId: widgetApplicationId, revoked: "unavailable-authorization-revoked" === availability.profileState };
-      tmp10 = authStore6(closure_29, obj17);
+      tmp10 = authStore5(closure_29, obj17);
     }
     return tmp10;
   } else if ("bot" === mode) {
     const obj18 = { projectId, previewApplicationId };
-    return authStore6(closure_30, obj18);
+    return authStore5(closure_30, obj18);
   } else if ("overlay" === mode) {
     return null;
   } else if (null === mode) {
     const obj = { title: intl.string(_modDef3830["7k4GyN"]), body: intl2.string(_modDef3830.zdIy3R) };
     intl = intl9.intl;
     intl2 = intl9.intl;
-    return authStore6(closure_25, obj);
+    return authStore5(closure_25, obj);
   }
 });
 const result1 = size.fileFinishedImporting("modules/conjure/preview/native/ConjureNativePreview.tsx");

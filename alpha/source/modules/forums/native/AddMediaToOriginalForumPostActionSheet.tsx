@@ -1,25 +1,25 @@
-// Module ID: 12978
-// Function ID: 12979
+// Module ID: 13014
+// Function ID: 13015
 // Name: AddMediaToOriginalForumPostActionSheet
-// Dependencies: [32, 5, 19, 17, 4821, 7608, 4843, 5990, 1087, 21, 4966, 587, 10054, 8126, 8142, 5192, 9625, 9622, 11, 8121, 9624, 8263, 1297, 12979, 7543, 8562, 5889, 1128, 558, 576, 504, 7230, 8265, 8130, 12980, 5216, 5227, 5247, 2]
+// Dependencies: [32, 5, 19, 17, 4821, 7615, 4843, 5997, 1087, 21, 4969, 587, 10066, 8135, 8151, 5196, 9637, 9634, 11, 8130, 9636, 8272, 1297, 13015, 7550, 8571, 5896, 1128, 558, 576, 504, 7237, 8274, 8139, 13016, 5220, 5231, 5251, 2]
 
-// Module 12978 (AddMediaToOriginalForumPostActionSheet)
+// Module 13014 (AddMediaToOriginalForumPostActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
-import DraftStore from "DraftStore" /* 7608 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8130 */;
-import Tracking from "Tracking" /* 8265 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
+import DraftStore from "DraftStore" /* 7615 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8139 */;
+import Tracking from "Tracking" /* 8274 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import MessageStore from "MessageStore" /* 5990 */;
+import MessageStore from "MessageStore" /* 5997 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

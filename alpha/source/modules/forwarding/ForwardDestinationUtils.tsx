@@ -1,17 +1,17 @@
-// Module ID: 12796
-// Function ID: 12797
+// Module ID: 12828
+// Function ID: 12829
 // Name: ForwardDestinationUtils
-// Dependencies: [19, 6745, 4825, 4821, 4901, 4911, 1392, 1087, 558, 576, 12794, 1388, 504, 1108, 6467, 2000, 6641, 6633, 5626, 6638, 12797, 1128, 6465, 7736, 5015, 5586, 2]
+// Dependencies: [19, 6752, 4825, 4821, 4901, 4911, 1392, 1087, 558, 576, 12826, 1388, 504, 1108, 6474, 2000, 6648, 6640, 5630, 6645, 12829, 1128, 6472, 7745, 5018, 5590, 2]
 // Exports: getDestinationIsUnavailable, isRatelimitedInChannel
 
-// Module 12796 (ForwardDestinationUtils)
+// Module 12828 (ForwardDestinationUtils)
 import ChannelTypes from "ChannelTypes" /* 1108 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import StickersUtils from "StickersUtils" /* 6467 */;
-import SlowmodeUtils from "SlowmodeUtils" /* 7736 */;
-import ForwardAgeRestrictedDestinationsExperimentDefault from "ForwardAgeRestrictedDestinationsExperiment" /* 12797 */;
+import StickersUtils from "StickersUtils" /* 6474 */;
+import SlowmodeUtils from "SlowmodeUtils" /* 7745 */;
+import ForwardAgeRestrictedDestinationsExperimentDefault from "ForwardAgeRestrictedDestinationsExperiment" /* 12829 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 6745 */;
+import StickersStore from "StickersStore" /* 6752 */;
 import ChannelRecord from "ChannelRecord" /* 4825 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
@@ -42,7 +42,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedD
   const obj = require("react");
   const cResult = obj.c(8);
   if (cResult[0] !== arr) {
-    const mapped = arr.map(tmp(12794).getChannelIdFromDestinationId);
+    const mapped = arr.map(tmp(12826).getChannelIdFromDestinationId);
     const found = mapped.find(tmp(1388).isNotNullish);
     cResult[0] = arr;
     cResult[1] = found;
@@ -89,7 +89,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedD
   return tmp11;
 }) : (function useSelectedDestinationChannel(arr) {
   let found;
-  const mapped = arr.map(found(12794).getChannelIdFromDestinationId);
+  const mapped = arr.map(found(12826).getChannelIdFromDestinationId);
   found = mapped.find(found(1388).isNotNullish);
   let obj = found(504);
   const items = [ChannelStore];
@@ -378,7 +378,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
           let result = tmp13Result9.shouldShowTiggerPawtect();
           if (result) {
             const tmp13Result10 = require("RegionalFeatureConfigUtils");
-            result = tmp13Result10.isFeatureAgeGated(tmp13(6638).AgeGatedFeature.AGE_GATED_SPACES);
+            result = tmp13Result10.isFeatureAgeGated(tmp13(6645).AgeGatedFeature.AGE_GATED_SPACES);
           }
           let disableAgeRestrictedDestinations = !(false !== nsfwAllowed && !result);
           if (disableAgeRestrictedDestinations) {

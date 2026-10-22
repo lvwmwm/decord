@@ -1,21 +1,21 @@
-// Module ID: 10698
-// Function ID: 10699
+// Module ID: 10710
+// Function ID: 10711
 // Name: ConjurePreviewActionCreators
-// Dependencies: [5, 4825, 6752, 10699, 1087, 10700, 6753, 584, 10723, 10741, 1297, 2]
+// Dependencies: [5, 4825, 6759, 10711, 1087, 10712, 6760, 584, 10735, 10753, 1297, 2]
 // Exports: loadConjurePreviewDm, pauseConjurePreview, reloadConjureAppFrames, reloadConjureProjectFrames, resumeConjurePreview, setBuilderPreviewApplicationId, setBuilderPreviewLandscape, setBuilderPreviewMobile, wakeConjurePreview
 
-// Module 10698 (ConjurePreviewActionCreators)
+// Module 10710 (ConjurePreviewActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import ChannelRecord from "ChannelRecord" /* 4825 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6753 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10700 */;
-import leaveFrame from "leaveFrame" /* 10723 */;
-import conjurePausedPreviewViews from "conjurePausedPreviewViews" /* 10741 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6760 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10712 */;
+import leaveFrame from "leaveFrame" /* 10735 */;
+import conjurePausedPreviewViews from "conjurePausedPreviewViews" /* 10753 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6752 */;
-import ConjurePreviewPauseStore from "ConjurePreviewPauseStore" /* 10699 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6759 */;
+import ConjurePreviewPauseStore from "ConjurePreviewPauseStore" /* 10711 */;
 import size from "module_2" /* 2 */;
 
 let obj = function _loadConjurePreviewDm() {
@@ -45,8 +45,8 @@ export const reloadConjureAppFrames = function reloadConjureAppFrames(applicatio
   obj = ConjurePlatformUtilsDefault;
   obj.reloadAppFrames(application_id);
 };
-export const reloadConjureProjectFrames = function reloadConjureProjectFrames(arg0) {
-  const project = ConjureProjectStore.getProject(arg0);
+export const reloadConjureProjectFrames = function reloadConjureProjectFrames(projectId) {
+  const project = ConjureProjectStore.getProject(projectId);
   if (null != project) {
     const application_id = project.application_id;
     obj = ConjurePlatformUtilsDefault;
@@ -58,7 +58,7 @@ export const reloadConjureProjectFrames = function reloadConjureProjectFrames(ar
       if (prop == null) {
         prop = null;
       }
-      const tmp2Result = tmp2(10700);
+      const tmp2Result = tmp2(10712);
       tmp2Result.reloadAppFrames(prop);
     }
   }

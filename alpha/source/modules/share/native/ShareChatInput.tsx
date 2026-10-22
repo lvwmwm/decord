@@ -1,21 +1,21 @@
-// Module ID: 12824
-// Function ID: 12825
+// Module ID: 12856
+// Function ID: 12857
 // Name: ShareChatInput
-// Dependencies: [32, 19, 17, 1087, 21, 4966, 587, 1384, 558, 576, 9619, 1128, 8916, 9308, 6887, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 4969, 587, 1384, 558, 576, 9631, 1128, 8925, 9319, 6894, 2]
 
-// Module 12824 (ShareChatInput)
+// Module 12856 (ShareChatInput)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
-import Pressables from "Pressables" /* 6887 */;
-import ReactionIcon from "ReactionIcon" /* 9308 */;
-import useMessageMaxLengthDefault from "useMessageMaxLength" /* 9619 */;
+import Pressables from "Pressables" /* 6894 */;
+import ReactionIcon from "ReactionIcon" /* 9319 */;
+import useMessageMaxLengthDefault from "useMessageMaxLength" /* 9631 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp6;
-const FormInputDefault = tmp6(8916);
+const FormInputDefault = tmp6(8925);
 const View = react_native.View;
 const Fonts = Constants.Fonts;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);

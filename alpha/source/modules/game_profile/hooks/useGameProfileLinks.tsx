@@ -1,11 +1,11 @@
-// Module ID: 9441
-// Function ID: 9442
+// Module ID: 9458
+// Function ID: 9459
 // Name: useGameProfileLinks
-// Dependencies: [19, 558, 576, 9233, 9280, 1388, 2]
+// Dependencies: [19, 558, 576, 9242, 9291, 1388, 2]
 
-// Module 9441 (useGameProfileLinks)
+// Module 9458 (useGameProfileLinks)
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import GameProfileMobileStoreLinkUtils from "GameProfileMobileStoreLinkUtils" /* 9280 */;
+import GameProfileMobileStoreLinkUtils from "GameProfileMobileStoreLinkUtils" /* 9291 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -60,7 +60,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameProfi
     websites = websites.websites;
     const found = websites.filter(tmp6);
     const _Object = Object;
-    const values = Object.values(tmp(9280).MOBILE_STORES);
+    const values = Object.values(tmp(9291).MOBILE_STORES);
     const mapped = values.map((item) => {
       const obj = GameProfileMobileStoreLinkUtils;
       return obj.getMobileStoreLink(websites, item);

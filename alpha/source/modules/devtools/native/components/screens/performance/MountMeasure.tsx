@@ -1,9 +1,9 @@
-// Module ID: 16942
-// Function ID: 16943
+// Module ID: 17011
+// Function ID: 17012
 // Name: MountMeasure
-// Dependencies: [19, 17, 21, 558, 576, 5245, 2]
+// Dependencies: [19, 17, 21, 558, 576, 5249, 2]
 
-// Module 16942 (MountMeasure)
+// Module 17011 (MountMeasure)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -12,7 +12,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useMountEffect = tmp(5245);
+const useMountEffect = tmp(5249);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MountMeasure(batchKey) {

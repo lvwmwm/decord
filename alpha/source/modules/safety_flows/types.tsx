@@ -1,9 +1,9 @@
-// Module ID: 19223
-// Function ID: 19224
+// Module ID: 19288
+// Function ID: 19289
 // Name: types
 // Dependencies: [1128, 2832, 2]
 
-// Module 19223 (types)
+// Module 19288 (types)
 import intl5 from "intl" /* 1128 */;
 import _modDef2832 from "module_2832" /* 2832 */;
 import size from "module_2" /* 2 */;

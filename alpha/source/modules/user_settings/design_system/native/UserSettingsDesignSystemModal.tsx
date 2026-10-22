@@ -1,22 +1,22 @@
-// Module ID: 16996
-// Function ID: 16997
+// Module ID: 17065
+// Function ID: 17066
 // Name: UserSettingsDesignSystemModal
-// Dependencies: [32, 19, 17, 21, 4966, 587, 558, 576, 6903, 6651, 7462, 1128, 6987, 5642, 7074, 11096, 12619, 5216, 7877, 12777, 15186, 12827, 7876, 12826, 7272, 6966, 5226, 2]
+// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 6910, 6658, 7469, 1128, 6994, 5646, 7081, 11113, 12651, 5220, 7885, 12809, 15230, 12859, 7884, 12858, 7279, 6973, 5230, 2]
 
-// Module 16996 (UserSettingsDesignSystemModal)
+// Module 17065 (UserSettingsDesignSystemModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import components_Button_Button from "components/Button/Button" /* 5226 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6651 */;
-import NavigatorHeader from "NavigatorHeader" /* 6903 */;
-import ModalScreen2 from "ModalScreen" /* 7876 */;
-import ModalContent2 from "ModalContent" /* 7877 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import components_Button_Button from "components/Button/Button" /* 5230 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6658 */;
+import NavigatorHeader from "NavigatorHeader" /* 6910 */;
+import ModalScreen2 from "ModalScreen" /* 7884 */;
+import ModalContent2 from "ModalContent" /* 7885 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -27,9 +27,9 @@ let metroRequire;
 let obj2;
 let size;
 let tmp;
-const Navigator = tmp(7074);
-const Modal = tmp(11096);
-const StepModal = tmp(12619);
+const Navigator = tmp(7081);
+const Modal = tmp(11113);
+const StepModal = tmp(12651);
 function openDemoModal() {
   const arr = ModalActionCreatorsDefault;
   arr.push(closure_12);
@@ -474,23 +474,23 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoSc
             let tmp27Result = footer;
             if (footer == null) {
               let tmp19 = null != disclaimer;
-              const ModalFooter = tmp(12777).ModalFooter;
+              const ModalFooter = tmp(12809).ModalFooter;
               const tmp27 = metroImportAll;
               if (tmp19) {
                 const obj3 = { children: disclaimer };
-                tmp19 = metroImportDefault(tmp(15186).ModalDisclaimer, obj3);
+                tmp19 = metroImportDefault(tmp(15230).ModalDisclaimer, obj3);
               }
               const items1 = [tmp19, , ];
               let tmp20 = null != action;
               if (tmp20) {
                 const obj4 = { variant: "primary", text: action, onPress: onAction };
-                tmp20 = metroImportDefault(tmp(12827).ModalActionButton, obj4);
+                tmp20 = metroImportDefault(tmp(12859).ModalActionButton, obj4);
               }
               items1[1] = tmp20;
               let tmp22 = null != secondaryAction;
               if (tmp22) {
                 const obj5 = { variant: "secondary", text: secondaryAction, onPress: onSecondaryAction };
-                tmp22 = metroImportDefault(tmp(12827).ModalActionButton, obj5);
+                tmp22 = metroImportDefault(tmp(12859).ModalActionButton, obj5);
               }
               const obj6 = { children: items1 };
               items1[2] = tmp22;
@@ -565,22 +565,22 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoSc
   const children1 = [metroImportAll(ModalContent, obj3), ];
   if (footer == null) {
     let tmp8Result = null != disclaimer;
-    const ModalFooter = tmp3(12777).ModalFooter;
+    const ModalFooter = tmp3(12809).ModalFooter;
     if (tmp8Result) {
       const obj5 = { children: disclaimer };
-      tmp8Result = tmp8(tmp3(15186).ModalDisclaimer, obj5);
+      tmp8Result = tmp8(tmp3(15230).ModalDisclaimer, obj5);
     }
     const items2 = [tmp8Result, , ];
     let tmp8Result3 = null != action;
     if (tmp8Result3) {
       const obj6 = { variant: "primary", text: action, onPress: onAction };
-      tmp8Result3 = tmp8(tmp3(12827).ModalActionButton, obj6);
+      tmp8Result3 = tmp8(tmp3(12859).ModalActionButton, obj6);
     }
     items2[1] = tmp8Result3;
     let tmp8Result4 = null != secondaryAction;
     if (tmp8Result4) {
       const obj7 = { variant: "secondary", text: secondaryAction, onPress: onSecondaryAction };
-      tmp8Result4 = tmp8(tmp3(12827).ModalActionButton, obj7);
+      tmp8Result4 = tmp8(tmp3(12859).ModalActionButton, obj7);
     }
     const obj8 = { children: items2 };
     items2[2] = tmp8Result4;
@@ -650,8 +650,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Switch
   cResult[4] = onAction;
   cResult[5] = tmp4.screen.backgroundColor;
   cResult[6] = tmp7;
-  cResult[7] = closure_7(tmp(12826).ModalFloatingAction, obj3);
-  closure_7(tmp(12826).ModalFloatingAction, obj3);
+  cResult[7] = closure_7(tmp(12858).ModalFloatingAction, obj3);
+  closure_7(tmp(12858).ModalFloatingAction, obj3);
 }) : (function SwitchesScreen(onAction) {
   let ModalFloatingAction;
   let TableRowGroup;
@@ -660,16 +660,16 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Switch
   let items;
   let obj2;
   let obj4;
-  const f128000 = () => false;
+  const f128705 = () => false;
   c1 = undefined;
   onAction = onAction.onAction;
   let tmp = closure_9();
   let parts = "I said ooh ah fhqwhgads, I said ooh ah fhqhgads!".split(" ");
-  [arr2, c1] = react.useState(parts.map(f128000));
+  [arr2, c1] = react.useState(parts.map(f128705));
   let obj = { title: "Everybody come on fhqwhgads.", emoji: "\u{1F44F}", footer: closure_7(ModalFloatingAction, obj2), children: items };
   obj2 = { isVisible: arr2.some((item) => item), floatingBackgroundColor: tmp.screen.backgroundColor, text: "Come on fhqwhgads", onPress: onAction };
-  _slicedToArray(react.useState(parts.map(f128000)), 2);
-  ModalFloatingAction = parts(12826).ModalFloatingAction;
+  _slicedToArray(react.useState(parts.map(f128705)), 2);
+  ModalFloatingAction = parts(12858).ModalFloatingAction;
   const obj3 = { style: tmp.tableRows, children: closure_7(TableRowGroup, obj4) };
   obj4 = {
     hasIcons: false,
@@ -692,8 +692,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Switch
       return closure_1_7(parts(dependencyMap[24]).TableSwitchRow, obj, index);
     })
   };
-  TableRowGroup = parts(6966).TableRowGroup;
-  items = [closure_7(closure_5, obj3), closure_7(parts(12826).ModalFloatingActionSpacer, {})];
+  TableRowGroup = parts(6973).TableRowGroup;
+  items = [closure_7(closure_5, obj3), closure_7(parts(12858).ModalFloatingActionSpacer, {})];
   return closure_8(closure_14, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;

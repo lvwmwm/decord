@@ -1,15 +1,15 @@
-// Module ID: 14578
-// Function ID: 14579
+// Module ID: 14622
+// Function ID: 14623
 // Name: WhatYouLoseProfileTier1
-// Dependencies: [19, 21, 8688, 14579, 14580, 14581, 558, 576, 4973, 5651, 2]
+// Dependencies: [19, 21, 8697, 14623, 14624, 14625, 558, 576, 4976, 5655, 2]
 // Exports: getWhatYouLoseProfileTier1Source
 
-// Module 14578 (WhatYouLoseProfileTier1)
+// Module 14622 (WhatYouLoseProfileTier1)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import shared from "shared" /* 4973 */;
-import FastImageDefault from "FastImage" /* 5651 */;
-import _mod8688 from "module_8688" /* 8688 */;
+import shared from "shared" /* 4976 */;
+import FastImageDefault from "FastImage" /* 5655 */;
+import _mod8697 from "module_8697" /* 8697 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -35,7 +35,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWhatYouLo
   const theme = obj2.useThemeContext().theme;
   if (cResult[0] !== theme) {
     const obj3 = { dark, darker, light };
-    const tmpResult = _mod8688;
+    const tmpResult = _mod8697;
     const illustrationSource = tmpResult.getIllustrationSource(theme, obj3);
     cResult[0] = theme;
     cResult[1] = illustrationSource;
@@ -47,7 +47,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWhatYouLo
 }) : (function useWhatYouLoseProfileTier1Source() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8688;
+  const obj2 = _mod8697;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 });
@@ -78,7 +78,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WhatYouLoseP
   return <tmp2 source={tmp} />;
 });
 function getWhatYouLoseProfileTier1Source(theme) {
-  const obj = _mod8688;
+  const obj = _mod8697;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }

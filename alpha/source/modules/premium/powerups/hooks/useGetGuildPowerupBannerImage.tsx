@@ -1,12 +1,12 @@
-// Module ID: 13327
-// Function ID: 13328
+// Module ID: 13363
+// Function ID: 13364
 // Name: useGetGuildPowerupBannerImage
-// Dependencies: [4967, 558, 576, 504, 2]
+// Dependencies: [4970, 558, 576, 504, 2]
 // Exports: getGuildPowerupBannerImage
 
-// Module 13327 (useGetGuildPowerupBannerImage)
+// Module 13363 (useGetGuildPowerupBannerImage)
 import react from "react" /* 576 */;
-import AccessibilityStore from "AccessibilityStore" /* 4967 */;
+import AccessibilityStore from "AccessibilityStore" /* 4970 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 13893
-// Function ID: 13894
+// Module ID: 13929
+// Function ID: 13930
 // Name: EmojiReactionRowButton
-// Dependencies: [19, 17, 1395, 21, 4966, 587, 558, 576, 4973, 1128, 9308, 6887, 7206, 1417, 4918, 2]
+// Dependencies: [19, 17, 1395, 21, 4969, 587, 558, 576, 4976, 1128, 9319, 6894, 7213, 1417, 4918, 2]
 // Exports: getEmojiKey
 
-// Module 13893 (EmojiReactionRowButton)
+// Module 13929 (EmojiReactionRowButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -12,12 +12,12 @@ import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import EmojiTypes from "EmojiTypes" /* 4918 */;
-import shared from "shared" /* 4973 */;
-import Pressables from "Pressables" /* 6887 */;
-import EmojiDefault from "Emoji" /* 7206 */;
-import ReactionIcon2 from "ReactionIcon" /* 9308 */;
+import shared from "shared" /* 4976 */;
+import Pressables from "Pressables" /* 6894 */;
+import EmojiDefault from "Emoji" /* 7213 */;
+import ReactionIcon2 from "ReactionIcon" /* 9319 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -112,10 +112,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiPickerR
   const isThemeLightResult = obj2.isThemeLight(theme);
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   const tmp5 = isThemeLightResult ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300;
-  const PressableOpacity = tmp2(6887).PressableOpacity;
+  const PressableOpacity = tmp2(6894).PressableOpacity;
   const intl = tmp2(1128).intl;
   const items = [tmp.emojiContainer, styles];
-  const ReactionIcon = tmp2(9308).ReactionIcon;
+  const ReactionIcon = tmp2(9319).ReactionIcon;
   if (str == null) {
     str = "md";
   }

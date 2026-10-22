@@ -1,10 +1,10 @@
-// Module ID: 9476
-// Function ID: 9477
+// Module ID: 9487
+// Function ID: 9488
 // Name: YouBannerDecorations
-// Dependencies: [19, 17, 2069, 1392, 4818, 1394, 21, 1385, 587, 4966, 558, 9477, 7536, 4991, 4805, 1128, 504, 8639, 8682, 8693, 4973, 683, 2053, 9521, 9523, 6787, 9524, 9525, 6692, 5192, 14057, 2002, 14058, 12264, 3830, 14061, 14063, 9383, 7465, 14060, 5240, 2]
+// Dependencies: [19, 17, 2069, 1392, 4818, 1394, 21, 1385, 587, 4969, 558, 9488, 7543, 4994, 4805, 1128, 504, 8648, 8691, 8702, 4976, 683, 2053, 9532, 9534, 6794, 9535, 9536, 6699, 5196, 14091, 2002, 14092, 12287, 3830, 14095, 14097, 9394, 7472, 14094, 5244, 2]
 // Exports: getFloatingNavBottomMargin
 
-// Module 9476 (YouBannerDecorations)
+// Module 9487 (YouBannerDecorations)
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
@@ -12,17 +12,17 @@ import PremiumConstants from "PremiumConstants" /* 1394 */;
 import IntlLoaderStore from "IntlLoaderStore" /* 2069 */;
 import dismissible_content from "dismissible_content" /* 4805 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4991 */;
-import QuestTypes from "QuestTypes" /* 6692 */;
-import useTrialOffer from "useTrialOffer" /* 7536 */;
-import PromotionsHooks from "PromotionsHooks" /* 9477 */;
-import tracking_Tracking from "tracking/Tracking" /* 9524 */;
-import QuestUtils from "QuestUtils" /* 9525 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4994 */;
+import QuestTypes from "QuestTypes" /* 6699 */;
+import useTrialOffer from "useTrialOffer" /* 7543 */;
+import PromotionsHooks from "PromotionsHooks" /* 9488 */;
+import tracking_Tracking from "tracking/Tracking" /* 9535 */;
+import QuestUtils from "QuestUtils" /* 9536 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

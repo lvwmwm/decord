@@ -20,7 +20,7 @@ export const useAnimatedKeyboard = function useAnimatedKeyboard() {
   let ref;
   let obj = arg0;
   if (arg0 === undefined) {
-    obj = { isStatusBarTranslucentAndroid: "toCharArray$esjava$1", isNavigationBarTranslucentAndroid: "Symbol" };
+    obj = { isStatusBarTranslucentAndroid: "r", isNavigationBarTranslucentAndroid: "emoji" };
   }
   let ref2;
   let obj2;

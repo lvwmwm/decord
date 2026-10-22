@@ -1,12 +1,12 @@
-// Module ID: 16999
-// Function ID: 17000
+// Module ID: 17068
+// Function ID: 17069
 // Name: DesignSystemTagGroupSetting
-// Dependencies: [8308, 1087, 11155, 17000, 2]
+// Dependencies: [8317, 1087, 11172, 17069, 2]
 
-// Module 16999 (DesignSystemTagGroupSetting)
+// Module 17068 (DesignSystemTagGroupSetting)
 import Constants from "Constants" /* 1087 */;
-import SettingsConstants from "SettingsConstants" /* 8308 */;
-import SettingBuilders from "SettingBuilders" /* 11155 */;
+import SettingsConstants from "SettingsConstants" /* 8317 */;
+import SettingBuilders from "SettingBuilders" /* 11172 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

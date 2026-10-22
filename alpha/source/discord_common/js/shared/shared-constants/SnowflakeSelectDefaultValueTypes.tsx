@@ -1,9 +1,9 @@
-// Module ID: 8580
-// Function ID: 8581
+// Module ID: 8589
+// Function ID: 8590
 // Name: SnowflakeSelectDefaultValueTypes
 // Dependencies: [2]
 
-// Module 8580 (SnowflakeSelectDefaultValueTypes)
+// Module 8589 (SnowflakeSelectDefaultValueTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/SnowflakeSelectDefaultValueTypes.tsx");

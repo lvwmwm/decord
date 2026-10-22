@@ -1,25 +1,25 @@
-// Module ID: 19150
-// Function ID: 19151
+// Module ID: 19217
+// Function ID: 19218
 // Name: NotificationSettingChannelOverrides
-// Dependencies: [32, 19, 17, 4825, 7186, 4911, 1392, 1087, 21, 4966, 587, 558, 576, 504, 5575, 7187, 5586, 6806, 1128, 4975, 7123, 6882, 6890, 8478, 10582, 7124, 1202, 8687, 7129, 2]
+// Dependencies: [32, 19, 17, 4825, 7193, 4911, 1392, 1087, 21, 4969, 587, 558, 576, 504, 5579, 7194, 5590, 6813, 1128, 4978, 7130, 6889, 6897, 8487, 10594, 7131, 1202, 8696, 7136, 2]
 
-// Module 19150 (NotificationSettingChannelOverrides)
+// Module 19217 (NotificationSettingChannelOverrides)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import ChannelRecord from "ChannelRecord" /* 4825 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4975 */;
-import useChannelName from "useChannelName" /* 5586 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6806 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 7187 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4978 */;
+import useChannelName from "useChannelName" /* 5590 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6813 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 7194 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7186 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7193 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

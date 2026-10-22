@@ -1,11 +1,11 @@
-// Module ID: 9996
-// Function ID: 9997
+// Module ID: 10008
+// Function ID: 10009
 // Name: ApplicationInteractionInfoUtils
-// Dependencies: [5999, 2000, 2]
+// Dependencies: [6006, 2000, 2]
 // Exports: canViewInteractionInfo, isPrimaryEntryPointCommandMessage
 
-// Module 9996 (ApplicationInteractionInfoUtils)
-import InteractionTypes from "InteractionTypes" /* 5999 */;
+// Module 10008 (ApplicationInteractionInfoUtils)
+import InteractionTypes from "InteractionTypes" /* 6006 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;

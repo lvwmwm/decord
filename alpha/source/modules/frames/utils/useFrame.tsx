@@ -1,10 +1,10 @@
-// Module ID: 17872
-// Function ID: 17873
+// Module ID: 17942
+// Function ID: 17943
 // Name: useFrame
-// Dependencies: [6754, 558, 576, 504, 2]
+// Dependencies: [6761, 558, 576, 504, 2]
 
-// Module 17872 (useFrame)
-import FramesStore from "FramesStore" /* 6754 */;
+// Module 17942 (useFrame)
+import FramesStore from "FramesStore" /* 6761 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

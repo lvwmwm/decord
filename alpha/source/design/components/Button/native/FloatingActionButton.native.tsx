@@ -1,17 +1,17 @@
-// Module ID: 8879
-// Function ID: 8880
+// Module ID: 8888
+// Function ID: 8889
 // Name: FloatingActionButton
-// Dependencies: [109, 19, 21, 4966, 587, 5232, 558, 576, 5035, 5229, 7936, 2]
+// Dependencies: [109, 19, 21, 4969, 587, 5236, 558, 576, 5038, 5233, 7944, 2]
 
-// Module 8879 (FloatingActionButton)
+// Module 8888 (FloatingActionButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5035 */;
-import spring from "spring" /* 5229 */;
-import ButtonConstants from "ButtonConstants" /* 5232 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5038 */;
+import spring from "spring" /* 5233 */;
+import ButtonConstants from "ButtonConstants" /* 5236 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -92,7 +92,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FloatingActi
     tmp8 = cResult[5];
   }
   const tmp12 = styles();
-  const tmpResult = tmp(5035);
+  const tmpResult = tmp(5038);
   class T {
     constructor() {
       tmp = closure_0;
@@ -115,10 +115,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FloatingActi
       return rect;
     }
   }
-  T.__closure = { withSpring: tmp(5229).withSpring, positionBottom: tmp6, DEFAULT_POSITION_OFFSET, SPRING_CONFIG, positionRight: tmp7 };
+  T.__closure = { withSpring: tmp(5233).withSpring, positionBottom: tmp6, DEFAULT_POSITION_OFFSET, SPRING_CONFIG, positionRight: tmp7 };
   T.__workletHash = 10049262876607;
   T.__initData = __initData;
-  ({ withSpring: tmp(5229).withSpring, positionBottom: tmp6, DEFAULT_POSITION_OFFSET, SPRING_CONFIG, positionRight: tmp7 });
+  ({ withSpring: tmp(5233).withSpring, positionBottom: tmp6, DEFAULT_POSITION_OFFSET, SPRING_CONFIG, positionRight: tmp7 });
   const animatedStyle = tmpResult.useAnimatedStyle(T);
   if (cResult[6] !== tmp5) {
     let cloneElementResult = tmp5;
@@ -179,7 +179,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FloatingActi
       }
     }
   }
-  const BaseIconButton = tmp(7936).BaseIconButton;
+  const BaseIconButton = tmp(7944).BaseIconButton;
   const merged = Object.assign(tmp8);
   ({ button: obj5.style, iconButtonPill: obj5.pillStyle } = tmp12);
   const tmp20 = <BaseIconButton accessibilityLabel={tmp4} size="lg" variant="primary" icon={tmp14} />;
@@ -201,7 +201,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FloatingActi
   const accessibilityLabel = positionRight.accessibilityLabel;
   const merged = Object.assign(positionRight, Object.assign({ icon: 0, positionBottom: 0, positionRight: 0, accessibilityLabel: 0 }));
   const tmp2 = styles();
-  const obj = positionBottom(5035);
+  const obj = positionBottom(5038);
   class F {
     constructor() {
       tmp = closure_0;
@@ -224,16 +224,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FloatingActi
       return rect;
     }
   }
-  F.__closure = { withSpring: positionBottom(5229).withSpring, positionBottom, DEFAULT_POSITION_OFFSET, SPRING_CONFIG, positionRight };
+  F.__closure = { withSpring: positionBottom(5233).withSpring, positionBottom, DEFAULT_POSITION_OFFSET, SPRING_CONFIG, positionRight };
   F.__workletHash = 9924952956188;
   F.__initData = __initData2;
   let tmp5 = jsx;
-  ({ withSpring: positionBottom(5229).withSpring, positionBottom, DEFAULT_POSITION_OFFSET, SPRING_CONFIG, positionRight });
+  ({ withSpring: positionBottom(5233).withSpring, positionBottom, DEFAULT_POSITION_OFFSET, SPRING_CONFIG, positionRight });
   const animatedStyle = obj.useAnimatedStyle(F);
   const obj3 = { style: animatedStyle, children: tmp5(BaseIconButton, obj5) };
-  const View = positionRight(5035).View;
+  const View = positionRight(5038).View;
   obj5 = { accessibilityLabel, size: "lg", variant: "primary", icon: cloneElementResult };
-  BaseIconButton = positionBottom(7936).BaseIconButton;
+  BaseIconButton = positionBottom(7944).BaseIconButton;
   const merged1 = Object.assign(merged);
   cloneElementResult = icon;
   const tmp6 = positionRight;

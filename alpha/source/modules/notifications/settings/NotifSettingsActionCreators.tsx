@@ -1,17 +1,17 @@
-// Module ID: 17162
-// Function ID: 17163
+// Module ID: 17232
+// Function ID: 17233
 // Name: NotifSettingsActionCreators
-// Dependencies: [5, 14884, 1087, 3, 584, 1248, 14885, 1297, 1104, 2]
+// Dependencies: [5, 14928, 1087, 3, 584, 1248, 14929, 1297, 1104, 2]
 // Exports: schedulePersistPendingEditsIfNeeded, updateNotifSettingRadioValue, updateNotifSettingToggleValue
 
-// Module 17162 (NotifSettingsActionCreators)
+// Module 17232 (NotifSettingsActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1248 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import notification_settings from "notification_settings" /* 14885 */;
+import notification_settings from "notification_settings" /* 14929 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 14884 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 14928 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -332,13 +332,13 @@ function scheduleEditIfNeeded(timeout, minRescheduleDelayMillis) {
     timeout.timeout = _setTimeout(tmp4, num);
   }
 }
-function updateNotifSettingValue(GAMING_DEFAULT, arg1) {
+function updateNotifSettingValue(CALLS, arg1) {
   let cloneResult;
   let createNew;
   let update;
   ({ createNew, update } = arg1);
   const orCreatePendingEdit = NotifSettingsProtoStore.getOrCreatePendingEdit();
-  const setting = NotifSettingsProtoStore.getSetting(GAMING_DEFAULT);
+  const setting = NotifSettingsProtoStore.getSetting(CALLS);
   const tmp = NotifSettingsProtoStore;
   if (null != setting) {
     const DeclarativeNotifSetting2 = notification_settings.DeclarativeNotifSetting;
@@ -354,7 +354,7 @@ function updateNotifSettingValue(GAMING_DEFAULT, arg1) {
     }
   }
   if (update(cloneResult)) {
-    orCreatePendingEdit.partialSettings.values[GAMING_DEFAULT] = cloneResult;
+    orCreatePendingEdit.partialSettings.values[CALLS] = cloneResult;
     const tmp9 = null != orCreatePendingEdit.timeout || tmp.isApplyingEdit;
     if (!tmp9) {
       let num = {}.minRescheduleDelayMillis;
@@ -390,7 +390,7 @@ export const schedulePersistPendingEditsIfNeeded = function schedulePersistPendi
     }
   }
 };
-export const updateNotifSettingToggleValue = function updateNotifSettingToggleValue(GAMING_DEFAULT, toggle) {
+export const updateNotifSettingToggleValue = function updateNotifSettingToggleValue(CALLS, toggle) {
   obj = {
     createNew() {
       const DeclarativeNotifSetting = toggle(dependencyMap[6]).DeclarativeNotifSetting;
@@ -403,9 +403,9 @@ export const updateNotifSettingToggleValue = function updateNotifSettingToggleVa
       return toggle.toggle !== toggle;
     }
   };
-  updateNotifSettingValue(GAMING_DEFAULT, obj);
+  updateNotifSettingValue(CALLS, obj);
 };
-export const updateNotifSettingRadioValue = function updateNotifSettingRadioValue(GAMING_DEFAULT, arg1) {
+export const updateNotifSettingRadioValue = function updateNotifSettingRadioValue(CALLS, arg1) {
   let closure_0 = arg1;
   obj = {
     update(radio) {
@@ -413,5 +413,5 @@ export const updateNotifSettingRadioValue = function updateNotifSettingRadioValu
       return radio.radio !== radio;
     }
   };
-  updateNotifSettingValue(GAMING_DEFAULT, obj);
+  updateNotifSettingValue(CALLS, obj);
 };

@@ -1,22 +1,22 @@
-// Module ID: 12868
-// Function ID: 12869
+// Module ID: 12902
+// Function ID: 12903
 // Name: CheckpointStatNumber
-// Dependencies: [19, 17, 5995, 21, 4966, 558, 576, 12861, 5099, 2]
+// Dependencies: [19, 17, 6002, 21, 4969, 558, 576, 12893, 5103, 2]
 // Exports: getCheckpointStatNumberWidth
 
-// Module 12868 (CheckpointStatNumber)
+// Module 12902 (CheckpointStatNumber)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import CheckpointConstants from "CheckpointConstants" /* 5995 */;
-import CheckpointTextDefault from "CheckpointText" /* 12861 */;
+import CheckpointConstants from "CheckpointConstants" /* 6002 */;
+import CheckpointTextDefault from "CheckpointText" /* 12893 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp;
-const CheckpointNumbersRive2 = tmp(5099);
+const CheckpointNumbersRive2 = tmp(5103);
 function getTextPixels(value) {
   let num = 0;
   const StringResult = String(value);
@@ -226,12 +226,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSt
   const CheckpointNumbersRive = require("CheckpointNumbersRive").CheckpointNumbersRive;
   return <c4 style={memo}>{null}</c4>;
 });
-function getCheckpointStatNumberWidth(value, arg1) {
-  let num = arg1;
-  if (arg1 === undefined) {
+function getCheckpointStatNumberWidth(end, size) {
+  let num = size;
+  if (size === undefined) {
     num = 40;
   }
-  return Math.min(getTextPixels(value), c8) * num * 0.08675000000000001;
+  return Math.min(getTextPixels(end), c8) * num * 0.08675000000000001;
 }
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointStatNumber.tsx");

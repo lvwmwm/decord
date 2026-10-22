@@ -1,7 +1,7 @@
 // Module ID: 4872
 // Function ID: 4873
 // Name: SelectedChannelStore
-// Dependencies: [4873, 4825, 502, 4821, 4899, 4843, 2014, 4901, 4992, 1087, 4828, 510, 12, 1388, 1099, 5132, 1114, 5587, 504, 584, 2]
+// Dependencies: [4873, 4825, 502, 4821, 4899, 4843, 2014, 4901, 4995, 1087, 4828, 510, 12, 1388, 1099, 5136, 1114, 5591, 504, 584, 2]
 // Exports: findFirstVoiceChannelId, handleConnectionOpen
 
 // Module 4872 (SelectedChannelStore)
@@ -13,8 +13,8 @@ import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import router_utils from "router_utils" /* 1114 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import ChannelConstants from "ChannelConstants" /* 4828 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5132 */;
-import isAccessibleNonStaticChannelPathDefault from "isAccessibleNonStaticChannelPath" /* 5587 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5136 */;
+import isAccessibleNonStaticChannelPathDefault from "isAccessibleNonStaticChannelPath" /* 5591 */;
 import GatedChannelStore from "GatedChannelStore" /* 4873 */;
 import ChannelRecord from "ChannelRecord" /* 4825 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -23,7 +23,7 @@ import GuildChannelStore from "GuildChannelStore" /* 4899 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4992 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -326,7 +326,7 @@ class SelectedChannelStore extends Store {
     }
     let guildId = arg0;
     let tmp2 = null;
-    if (arg0 !== authStore6) {
+    if (arg0 !== authStore5) {
       if (guildId == null) {
         guildId = SelectedGuildStore.getGuildId();
       }

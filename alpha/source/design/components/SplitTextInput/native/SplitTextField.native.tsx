@@ -1,15 +1,15 @@
-// Module ID: 7039
-// Function ID: 7040
+// Module ID: 7046
+// Function ID: 7047
 // Name: SplitTextField
-// Dependencies: [109, 19, 17, 21, 558, 576, 7002, 6995, 6996, 7000, 7004, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 7009, 7002, 7003, 7007, 7011, 2]
 
-// Module 7039 (SplitTextField)
+// Module 7046 (SplitTextField)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useTextField from "useTextField" /* 6995 */;
-import useInputClearButton from "useInputClearButton" /* 6996 */;
-import useInputAttachments from "useInputAttachments" /* 7000 */;
-import InputFieldContainer from "InputFieldContainer" /* 7002 */;
+import useTextField from "useTextField" /* 7002 */;
+import useInputClearButton from "useInputClearButton" /* 7003 */;
+import useInputAttachments from "useInputAttachments" /* 7007 */;
+import InputFieldContainer from "InputFieldContainer" /* 7009 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -92,7 +92,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SplitTextFie
               }
             }
           }
-          const BaseTextField = tmp(7004).BaseTextField;
+          const BaseTextField = tmp(7011).BaseTextField;
           const merged = Object.assign(inputProps);
           const tmp31 = <BaseTextField ref={innerRef} leading={tmp19} trailing={trailing} inputStyle={inputStyle} />;
           cResult[13] = inputStyle;
@@ -180,7 +180,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SplitTextFie
       tmp2Result2 = useInputAttachments;
     }
   }
-  const BaseTextField = tmp2(7004).BaseTextField;
+  const BaseTextField = tmp2(7011).BaseTextField;
   const merged2 = Object.assign(inputProps);
   return <BaseTextField ref={innerRef} leading={tmp9} trailing={trailing} inputStyle={inputStyle} />;
 });

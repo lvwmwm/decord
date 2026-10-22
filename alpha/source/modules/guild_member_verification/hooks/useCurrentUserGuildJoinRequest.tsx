@@ -1,10 +1,10 @@
-// Module ID: 6826
-// Function ID: 6827
+// Module ID: 6833
+// Function ID: 6834
 // Name: useCurrentUserGuildJoinRequest
-// Dependencies: [4993, 558, 576, 504, 2]
+// Dependencies: [4996, 558, 576, 504, 2]
 
-// Module 6826 (useCurrentUserGuildJoinRequest)
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4993 */;
+// Module 6833 (useCurrentUserGuildJoinRequest)
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4996 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

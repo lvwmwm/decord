@@ -1,9 +1,9 @@
-// Module ID: 13215
-// Function ID: 13216
+// Module ID: 13251
+// Function ID: 13252
 // Name: useEmojiSuggestionNuxCoachmark
-// Dependencies: [32, 19, 4818, 21, 558, 576, 1647, 5578, 5143, 1633, 5234, 587, 1384, 1631, 4805, 7473, 12945, 1128, 13216, 9798, 2]
+// Dependencies: [32, 19, 4818, 21, 558, 576, 1647, 5582, 5147, 1633, 5238, 587, 1384, 1631, 4805, 7480, 12981, 1128, 13252, 9810, 2]
 
-// Module 13215 (useEmojiSuggestionNuxCoachmark)
+// Module 13251 (useEmojiSuggestionNuxCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,10 +13,10 @@ import KeyboardTypes from "KeyboardTypes" /* 1631 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1647 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 5143 */;
-import useToken from "useToken" /* 5234 */;
-import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5578 */;
-import MobileEmojiSuggestionsExperiment from "MobileEmojiSuggestionsExperiment" /* 12945 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 5147 */;
+import useToken from "useToken" /* 5238 */;
+import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5582 */;
+import MobileEmojiSuggestionsExperiment from "MobileEmojiSuggestionsExperiment" /* 12981 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

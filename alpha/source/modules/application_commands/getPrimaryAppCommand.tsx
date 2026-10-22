@@ -1,19 +1,19 @@
-// Module ID: 11329
-// Function ID: 11330
+// Module ID: 11346
+// Function ID: 11347
 // Name: getPrimaryAppCommand
-// Dependencies: [5, 19, 4821, 9607, 2000, 9613, 558, 576, 9611, 5585, 2]
+// Dependencies: [5, 19, 4821, 9619, 2000, 9625, 558, 576, 9623, 5589, 2]
 // Exports: default, isPrimaryAppCommandUsableInAppDM
 
-// Module 11329 (getPrimaryAppCommand)
+// Module 11346 (getPrimaryAppCommand)
 import react2 from "react" /* 576 */;
 import Server from "Server" /* 2000 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5585 */;
-import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 9611 */;
-import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9613 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5589 */;
+import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 9623 */;
+import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9625 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 9607 */;
+import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 9619 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -218,7 +218,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPrimary
         let hasItem = null != tmp4.integration_types;
         if (hasItem) {
           const integration_types = tmp4.integration_types;
-          hasItem = integration_types.includes(tmp(5585).ApplicationIntegrationType.USER_INSTALL);
+          hasItem = integration_types.includes(tmp(5589).ApplicationIntegrationType.USER_INSTALL);
         }
         let hasItem1 = null != tmp4.contexts;
         if (hasItem1) {

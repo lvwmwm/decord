@@ -1,17 +1,17 @@
-// Module ID: 14950
-// Function ID: 14951
+// Module ID: 14994
+// Function ID: 14995
 // Name: getApplicationIdForActivity
-// Dependencies: [14445, 14951, 14952, 2026, 10609, 8713, 14183, 2]
+// Dependencies: [14489, 14995, 14996, 2026, 10621, 8722, 14221, 2]
 // Exports: default
 
-// Module 14950 (getApplicationIdForActivity)
+// Module 14994 (getApplicationIdForActivity)
 import Constants from "Constants" /* 2026 */;
-import isStreamingDefault from "isStreaming" /* 8713 */;
-import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10609 */;
-import isOnXboxDefault from "isOnXbox" /* 14183 */;
-import SpotifyApplicationRecord from "SpotifyApplicationRecord" /* 14445 */;
-import TwitchApplicationRecord from "TwitchApplicationRecord" /* 14951 */;
-import XboxApplicationRecord from "XboxApplicationRecord" /* 14952 */;
+import isStreamingDefault from "isStreaming" /* 8722 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10621 */;
+import isOnXboxDefault from "isOnXbox" /* 14221 */;
+import SpotifyApplicationRecord from "SpotifyApplicationRecord" /* 14489 */;
+import TwitchApplicationRecord from "TwitchApplicationRecord" /* 14995 */;
+import XboxApplicationRecord from "XboxApplicationRecord" /* 14996 */;
 import size from "module_2" /* 2 */;
 
 const SpotifyApplication = SpotifyApplicationRecord.SpotifyApplication;

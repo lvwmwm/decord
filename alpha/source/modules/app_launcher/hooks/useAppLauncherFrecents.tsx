@@ -1,22 +1,22 @@
-// Module ID: 12031
-// Function ID: 12032
+// Module ID: 12052
+// Function ID: 12053
 // Name: useAppLauncherFrecents
-// Dependencies: [19, 7182, 1392, 12032, 2026, 5963, 2000, 558, 576, 10162, 504, 7236, 8786, 12033, 10164, 9606, 11329, 2]
+// Dependencies: [19, 7189, 1392, 12053, 2026, 5970, 2000, 558, 576, 10174, 504, 7243, 8795, 12054, 10176, 9618, 11346, 2]
 
-// Module 12031 (useAppLauncherFrecents)
+// Module 12052 (useAppLauncherFrecents)
 import react2 from "react" /* 576 */;
 import Server from "Server" /* 2000 */;
 import Constants from "Constants" /* 2026 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7182 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7236 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9606 */;
-import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 10162 */;
-import isApplicationAgeRestrictedDefault from "isApplicationAgeRestricted" /* 10164 */;
-import getPrimaryAppCommand from "getPrimaryAppCommand" /* 11329 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7189 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7243 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9618 */;
+import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 10174 */;
+import isApplicationAgeRestrictedDefault from "isApplicationAgeRestricted" /* 10176 */;
+import getPrimaryAppCommand from "getPrimaryAppCommand" /* 11346 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import AppLauncherLastUsedCommandStore from "AppLauncherLastUsedCommandStore" /* 12032 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5963 */;
+import AppLauncherLastUsedCommandStore from "AppLauncherLastUsedCommandStore" /* 12053 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5970 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -423,7 +423,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFre
           if (tmp) {
             tmp2 = closure_5;
             newestTokens = closure_5.getNewestTokens();
-            found = newestTokens.filter(() => { /* body not rendered: F147097 */ });
+            found = newestTokens.filter(() => { /* body not rendered: F147834 */ });
           } else {
             found = [];
           }
@@ -445,7 +445,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFre
           if (tmp) {
             tmp2 = closure_5;
             newestTokens = closure_5.getNewestTokens();
-            found = newestTokens.filter(() => { /* body not rendered: F147097 */ });
+            found = newestTokens.filter(() => { /* body not rendered: F147834 */ });
           } else {
             found = [];
           }
@@ -462,7 +462,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFre
           if (tmp) {
             tmp2 = closure_5;
             newestTokens = closure_5.getNewestTokens();
-            found = newestTokens.filter(() => { /* body not rendered: F147097 */ });
+            found = newestTokens.filter(() => { /* body not rendered: F147834 */ });
           } else {
             found = [];
           }

@@ -1,22 +1,22 @@
-// Module ID: 9884
-// Function ID: 9885
+// Module ID: 9896
+// Function ID: 9897
 // Name: EmojiPickerListComponent
-// Dependencies: [19, 6704, 6707, 9786, 1243, 21, 4966, 5035, 9885, 5251, 1630, 558, 576, 4915, 7144, 9873, 2]
+// Dependencies: [19, 6711, 6714, 9798, 1243, 21, 4969, 5038, 9897, 5255, 1630, 558, 576, 4915, 7151, 9885, 2]
 
-// Module 9884 (EmojiPickerListComponent)
+// Module 9896 (EmojiPickerListComponent)
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1243 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4915 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5035 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6707 */;
-import PortalToNativeViewDefault from "PortalToNativeView" /* 7144 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9786 */;
-import EmojiPickerPremiumSearchUpsell from "EmojiPickerPremiumSearchUpsell" /* 9873 */;
-import EmojiPickerNativeComponent2 from "EmojiPickerNativeComponent" /* 9885 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5038 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6714 */;
+import PortalToNativeViewDefault from "PortalToNativeView" /* 7151 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9798 */;
+import EmojiPickerPremiumSearchUpsell from "EmojiPickerPremiumSearchUpsell" /* 9885 */;
+import EmojiPickerNativeComponent2 from "EmojiPickerNativeComponent" /* 9897 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6704 */;
+import EmojiStore from "EmojiStore" /* 6711 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
-import BottomSheetModal from "BottomSheetModal" /* 5251 */;
+import createStyles from "createStyles" /* 4969 */;
+import BottomSheetModal from "BottomSheetModal" /* 5255 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

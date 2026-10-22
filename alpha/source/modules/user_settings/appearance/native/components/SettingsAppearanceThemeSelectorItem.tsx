@@ -1,28 +1,28 @@
-// Module ID: 16457
-// Function ID: 16458
+// Module ID: 16526
+// Function ID: 16527
 // Name: SettingsAppearanceThemeSelectorItem
-// Dependencies: [19, 17, 1207, 16456, 1098, 21, 4966, 587, 4964, 558, 576, 4988, 10583, 1202, 16458, 573, 5234, 16459, 1256, 5022, 1128, 6887, 2]
+// Dependencies: [19, 17, 1207, 16525, 1098, 21, 4969, 587, 4967, 558, 576, 4991, 10595, 1202, 16527, 573, 5238, 16528, 1256, 5025, 1128, 6894, 2]
 
-// Module 16457 (SettingsAppearanceThemeSelectorItem)
+// Module 16526 (SettingsAppearanceThemeSelectorItem)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1256 */;
-import utils_ColorDefault from "utils/Color" /* 4964 */;
-import themes from "themes" /* 4988 */;
-import react_native2 from "react-native" /* 5022 */;
-import useToken from "useToken" /* 5234 */;
-import Pressables from "Pressables" /* 6887 */;
-import ThemedGradient from "ThemedGradient" /* 10583 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16458 */;
-import SynchronizeIconNativeDefault from "SynchronizeIconNative" /* 16459 */;
+import utils_ColorDefault from "utils/Color" /* 4967 */;
+import themes from "themes" /* 4991 */;
+import react_native2 from "react-native" /* 5025 */;
+import useToken from "useToken" /* 5238 */;
+import Pressables from "Pressables" /* 6894 */;
+import ThemedGradient from "ThemedGradient" /* 10595 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16527 */;
+import SynchronizeIconNativeDefault from "SynchronizeIconNative" /* 16528 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 16456 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 16525 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -416,7 +416,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Custom
   items[1] = obj2;
   const obj4 = { componentStyles: obj5, mix: true, mixColorOverride: isThemeDarkResult ? closure_10 : closure_11, customTheme: item };
   obj5 = { borderRadius: nativeDefault.radii.sm };
-  const CustomThemedGradient = tmp(10583).CustomThemedGradient;
+  const CustomThemedGradient = tmp(10595).CustomThemedGradient;
   items1 = [metroRequire(CustomThemedGradient, obj4), ];
   if (isThemeLocked) {
     const obj6 = { source: AssetRegistryDefault, style: tmp4.lock };
@@ -604,7 +604,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThemeSelecto
   const radioA11yNative = tmp4Result.useRadioA11yNative({ selected: isSelected, disabled: isPreview });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   const obj4 = { style: tmp.themeSelectorItemContainer, androidRippleConfig: tmp.rippleColor, onPress, accessibilityRole, accessibilityLabel: themePreset.getName(), accessibilityState, accessibilityHint: stringResult, children: tmp16(View, obj5) };
-  const PressableOpacity = tmp4(6887).PressableOpacity;
+  const PressableOpacity = tmp4(6894).PressableOpacity;
   stringResult = undefined;
   if (isPreview) {
     const intl = tmp4(1128).intl;

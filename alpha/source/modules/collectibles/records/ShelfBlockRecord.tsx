@@ -1,10 +1,10 @@
-// Module ID: 7663
-// Function ID: 7664
+// Module ID: 7670
+// Function ID: 7671
 // Name: ShelfBlockRecord
-// Dependencies: [5622, 2]
+// Dependencies: [5626, 2]
 
-// Module 7663 (ShelfBlockRecord)
-import ShopBlockType from "ShopBlockType" /* 5622 */;
+// Module 7670 (ShelfBlockRecord)
+import ShopBlockType from "ShopBlockType" /* 5626 */;
 import size from "module_2" /* 2 */;
 
 class ShelfBlockRecord {

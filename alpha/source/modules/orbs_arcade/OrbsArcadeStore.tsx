@@ -1,12 +1,12 @@
-// Module ID: 18195
-// Function ID: 18196
+// Module ID: 16298
+// Function ID: 16299
 // Name: OrbsArcadeStore
-// Dependencies: [502, 18196, 504, 584, 2]
+// Dependencies: [502, 16299, 504, 584, 2]
 
-// Module 18195 (OrbsArcadeStore)
+// Module 16298 (OrbsArcadeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 18196 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16299 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
@@ -23,6 +23,14 @@ class OrbsArcadeStore extends Store {
   initialize() {
     this.waitFor(AuthenticationStore);
   }
+  getGame(arg0) {
+    let closure_0 = arg0;
+    let found = orbsArcadeGames.find((id) => id.id === closure_0);
+    if (found == null) {
+      found = null;
+    }
+    return found;
+  }
   getGameStateForGame(id) {
     let value = map.get(id);
     if (value == null) {
@@ -33,8 +41,8 @@ class OrbsArcadeStore extends Store {
   isClaimingRewards(arg0) {
     return set.has(arg0);
   }
-  isLaunchingGame(arg0) {
-    return set.has(arg0);
+  isLaunchingGame(id) {
+    return set.has(id);
   }
 }
 const prototype = OrbsArcadeStore.prototype;

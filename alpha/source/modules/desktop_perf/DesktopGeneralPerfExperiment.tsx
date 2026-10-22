@@ -1,10 +1,10 @@
-// Module ID: 5813
-// Function ID: 5814
+// Module ID: 5819
+// Function ID: 5820
 // Name: DesktopGeneralPerfExperiment
 // Dependencies: [1455, 2]
 // Exports: getDesktopGeneralPerfExperimentConfig
 
-// Module 5813 (DesktopGeneralPerfExperiment)
+// Module 5819 (DesktopGeneralPerfExperiment)
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 

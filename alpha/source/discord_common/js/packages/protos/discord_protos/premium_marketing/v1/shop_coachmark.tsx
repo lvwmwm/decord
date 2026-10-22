@@ -1,12 +1,12 @@
-// Module ID: 9515
-// Function ID: 9516
+// Module ID: 9526
+// Function ID: 9527
 // Name: shop_coachmark
-// Dependencies: [32, 1212, 9493, 9483, 2]
+// Dependencies: [32, 1212, 9504, 9494, 2]
 
-// Module 9515 (shop_coachmark)
+// Module 9526 (shop_coachmark)
 import _mod1212 from "module_1212" /* 1212 */;
-import localized_string from "localized_string" /* 9483 */;
-import theme_aware_asset from "theme_aware_asset" /* 9493 */;
+import localized_string from "localized_string" /* 9494 */;
+import theme_aware_asset from "theme_aware_asset" /* 9504 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

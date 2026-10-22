@@ -1,19 +1,19 @@
-// Module ID: 17034
-// Function ID: 17035
+// Module ID: 17103
+// Function ID: 17104
 // Name: CollectiblesShopFeaturedPage
-// Dependencies: [19, 17, 1089, 21, 4966, 558, 576, 1202, 8687, 1128, 17035, 2]
+// Dependencies: [19, 17, 1089, 21, 4969, 558, 576, 1202, 8696, 1128, 17104, 2]
 
-// Module 17034 (CollectiblesShopFeaturedPage)
+// Module 17103 (CollectiblesShopFeaturedPage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import generated_NoResults from "generated/NoResults" /* 8687 */;
-import ShopBlockItemDefault from "ShopBlockItem" /* 17035 */;
+import generated_NoResults from "generated/NoResults" /* 8696 */;
+import ShopBlockItemDefault from "ShopBlockItem" /* 17104 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

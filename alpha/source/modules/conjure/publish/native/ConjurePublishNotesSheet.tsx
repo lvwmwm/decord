@@ -1,20 +1,20 @@
-// Module ID: 12298
-// Function ID: 12299
+// Module ID: 12324
+// Function ID: 12325
 // Name: ConjurePublishNotesSheet
-// Dependencies: [5, 32, 19, 17, 4899, 4843, 4911, 1392, 4971, 21, 4966, 587, 5575, 504, 7322, 9619, 12299, 10751, 5192, 11747, 1128, 3830, 7730, 7543, 7275, 7225, 7159, 5216, 5586, 5226, 2]
+// Dependencies: [5, 32, 19, 17, 4899, 4843, 4911, 1392, 4974, 21, 4969, 587, 5579, 504, 7329, 9631, 12325, 10765, 5196, 11776, 1128, 3830, 7739, 7550, 7282, 7232, 7166, 5220, 5590, 5230, 2]
 // Exports: default
 
-// Module 12298 (ConjurePublishNotesSheet)
+// Module 12324 (ConjurePublishNotesSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl10 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import GuildChannelStore2 from "GuildChannelStore" /* 4899 */;
-import MessageConstants from "MessageConstants" /* 4971 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5192 */;
-import ConjureUtils from "ConjureUtils" /* 7322 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11747 */;
-import ConjurePatchNotesChannel from "ConjurePatchNotesChannel" /* 12299 */;
+import MessageConstants from "MessageConstants" /* 4974 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5196 */;
+import ConjureUtils from "ConjureUtils" /* 7329 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11776 */;
+import ConjurePatchNotesChannel from "ConjurePatchNotesChannel" /* 12325 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -22,7 +22,7 @@ import GuildStore from "GuildStore" /* 4843 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import size from "module_2" /* 2 */;
 
 const GuildChannelStore = GuildChannelStore2;

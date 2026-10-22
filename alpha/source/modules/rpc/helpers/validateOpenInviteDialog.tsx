@@ -1,17 +1,17 @@
-// Module ID: 15631
-// Function ID: 15632
+// Module ID: 15675
+// Function ID: 15676
 // Name: validateOpenInviteDialog
-// Dependencies: [4821, 4843, 4901, 1087, 9218, 9224, 6757, 6756, 9228, 8863, 2]
+// Dependencies: [4821, 4843, 4901, 1087, 9227, 9233, 6764, 6763, 9237, 8872, 2]
 // Exports: validateOpenInviteDialog
 
-// Module 15631 (validateOpenInviteDialog)
+// Module 15675 (validateOpenInviteDialog)
 import Constants from "Constants" /* 1087 */;
-import EmbeddedAppTypes from "EmbeddedAppTypes" /* 6756 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6757 */;
-import canViewInviteModal from "canViewInviteModal" /* 8863 */;
-import isPostMessageSocketDefault from "isPostMessageSocket" /* 9218 */;
-import RPCErrorDefault from "RPCError" /* 9224 */;
-import getGuildIdForEmbeddedSurfaceDefault from "getGuildIdForEmbeddedSurface" /* 9228 */;
+import EmbeddedAppTypes from "EmbeddedAppTypes" /* 6763 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6764 */;
+import canViewInviteModal from "canViewInviteModal" /* 8872 */;
+import isPostMessageSocketDefault from "isPostMessageSocket" /* 9227 */;
+import RPCErrorDefault from "RPCError" /* 9233 */;
+import getGuildIdForEmbeddedSurfaceDefault from "getGuildIdForEmbeddedSurface" /* 9237 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import PermissionStore from "PermissionStore" /* 4901 */;

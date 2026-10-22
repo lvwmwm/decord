@@ -1,13 +1,13 @@
-// Module ID: 14538
-// Function ID: 14539
+// Module ID: 14582
+// Function ID: 14583
 // Name: useCheckoutPlanPriceString
-// Dependencies: [19, 7513, 558, 576, 1384, 7495, 2]
+// Dependencies: [19, 7520, 558, 576, 1384, 7502, 2]
 
-// Module 14538 (useCheckoutPlanPriceString)
+// Module 14582 (useCheckoutPlanPriceString)
 import react2 from "react" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 7495 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7513 */;
+import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 7502 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7520 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,17 +1,17 @@
-// Module ID: 16758
-// Function ID: 16759
+// Module ID: 16827
+// Function ID: 16828
 // Name: DiskUsageManager
-// Dependencies: [5, 1392, 1087, 3, 1369, 510, 10056, 1384, 16759, 1267, 7561, 7193, 13697, 13698, 2]
+// Dependencies: [5, 1392, 1087, 3, 1369, 510, 10068, 1384, 16828, 1267, 7568, 7200, 13733, 13734, 2]
 
-// Module 16758 (DiskUsageManager)
+// Module 16827 (DiskUsageManager)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 1369 */;
-import BackgroundTaskManagerDefault from "BackgroundTaskManager" /* 10056 */;
-import react_nativeDefault from "react-native" /* 16759 */;
+import BackgroundTaskManagerDefault from "BackgroundTaskManager" /* 10068 */;
+import react_nativeDefault from "react-native" /* 16828 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7193 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7200 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2, c3, c5, c6, closure_3;

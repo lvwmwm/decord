@@ -1,21 +1,21 @@
-// Module ID: 11174
-// Function ID: 11175
+// Module ID: 11191
+// Function ID: 11192
 // Name: createSocialLayerStorefrontProductDetailsEmbed
-// Dependencies: [19, 2045, 6803, 7784, 8251, 1128, 11175, 7312, 7307, 3700, 558, 576, 5685, 11176, 1388, 504, 7234, 2]
+// Dependencies: [19, 2045, 6810, 7793, 8260, 1128, 11192, 7319, 7314, 3700, 558, 576, 5689, 11193, 1388, 504, 7241, 2]
 // Exports: createSocialLayerStorefrontProductDetailsEmbed
 
-// Module 11174 (createSocialLayerStorefrontProductDetailsEmbed)
+// Module 11191 (createSocialLayerStorefrontProductDetailsEmbed)
 import intl4 from "intl" /* 1128 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7234 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7307 */;
-import StorefrontUtils from "StorefrontUtils" /* 7312 */;
-import Constants from "Constants" /* 7784 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8251 */;
-import isSocialLayerApplicationDefault from "isSocialLayerApplication" /* 11175 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7241 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7314 */;
+import StorefrontUtils from "StorefrontUtils" /* 7319 */;
+import Constants from "Constants" /* 7793 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8260 */;
+import isSocialLayerApplicationDefault from "isSocialLayerApplication" /* 11192 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
-import SKUStore from "SKUStore" /* 6803 */;
+import SKUStore from "SKUStore" /* 6810 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -86,11 +86,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchSoci
   }
   if (cResult[4] !== tmp4) {
     const fn2 = function s() {
-      const f146220 = (applicationId) => applicationId.applicationId;
+      const f146937 = (applicationId) => applicationId.applicationId;
       const mapped = closure_0.map((item) => closure_1_5.get(item));
       const found = mapped.filter(GlobalUtils.isNotNullish);
-      const items = [...new Set(found.map(f146220))];
-      new Set(found.map(f146220));
+      const items = [...new Set(found.map(f146937))];
+      new Set(found.map(f146937));
       return items;
     };
     const items1 = [tmp4];
@@ -139,14 +139,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchSoci
   const items2 = [memo];
   const obj = require("get initialized");
   const stateFromStoresArray = obj.useStateFromStoresArray(items1, () => {
-    const f146223 = (applicationId) => applicationId.applicationId;
+    const f146940 = (applicationId) => applicationId.applicationId;
     const mapped = memo.map((item) => closure_1_5.get(item));
     const found = mapped.filter(GlobalUtils.isNotNullish);
-    const items = [...new Set(found.map(f146223))];
-    new Set(found.map(f146223));
+    const items = [...new Set(found.map(f146940))];
+    new Set(found.map(f146940));
     return items;
   }, items2);
-  let tmp3 = memo(7234)(stateFromStoresArray);
+  let tmp3 = memo(7241)(stateFromStoresArray);
 });
 let result = size.fileFinishedImporting("modules/slayer_storefront/native/createSocialLayerStorefrontProductDetailsEmbed.tsx");
 

@@ -1,12 +1,12 @@
-// Module ID: 8261
-// Function ID: 8262
+// Module ID: 8270
+// Function ID: 8271
 // Name: MessageReactionsStore
-// Dependencies: [4902, 1406, 4821, 1392, 504, 8262, 584, 2]
+// Dependencies: [4902, 1406, 4821, 1392, 504, 8271, 584, 2]
 
-// Module 8261 (MessageReactionsStore)
+// Module 8270 (MessageReactionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ReactionActionCreatorsAll from "ReactionActionCreators" /* 8262 */;
+import ReactionActionCreatorsAll from "ReactionActionCreators" /* 8271 */;
 import LurkingStore from "LurkingStore" /* 4902 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
@@ -107,6 +107,9 @@ let obj = {
       const tmp = new UserRecord(id);
       return set(id, tmp);
     });
+  },
+  MESSAGE_REACTION_SET_FETCHED: function handleSetFetched(messageId) {
+    Reaction.ensure(messageId.messageId, messageId.emoji, messageId.reactionType).fetched = true;
   }
 };
 const messageReactionsStore = new MessageReactionsStore(DispatcherDefault, obj);

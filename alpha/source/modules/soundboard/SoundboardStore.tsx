@@ -1,9 +1,9 @@
-// Module ID: 5986
-// Function ID: 5987
+// Module ID: 5993
+// Function ID: 5994
 // Name: SoundboardStore
-// Dependencies: [32, 1246, 5696, 1392, 5987, 5988, 1087, 1097, 5712, 2049, 12, 4797, 1267, 5839, 11, 504, 5989, 584, 2]
+// Dependencies: [32, 1246, 5700, 1392, 5994, 5995, 1087, 1097, 5716, 2049, 12, 4797, 1267, 5846, 11, 504, 5996, 584, 2]
 
-// Module 5986 (SoundboardStore)
+// Module 5993 (SoundboardStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -12,15 +12,15 @@ import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import _modDef2049 from "module_2049" /* 2049 */;
 import UserSettings from "UserSettings" /* 4797 */;
-import FrecencyDefault from "Frecency" /* 5712 */;
-import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5839 */;
-import SoundboardFavoritesExperiment2 from "SoundboardFavoritesExperiment" /* 5989 */;
+import FrecencyDefault from "Frecency" /* 5716 */;
+import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5846 */;
+import SoundboardFavoritesExperiment2 from "SoundboardFavoritesExperiment" /* 5996 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5696 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5700 */;
 import UserStore from "UserStore" /* 1392 */;
-import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 5987 */;
-import SoundboardConstants from "SoundboardConstants" /* 5988 */;
+import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 5994 */;
+import SoundboardConstants from "SoundboardConstants" /* 5995 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -223,8 +223,8 @@ class SoundboardStore extends Store {
   hasFetchedDefaultSounds() {
     return FETCHED === obj.FETCHED;
   }
-  isUserPlayingSounds(userId) {
-    const value = map3.get(userId);
+  isUserPlayingSounds(id) {
+    const value = map3.get(id);
     return null != value && value > 0;
   }
   isPlayingSound(soundId) {

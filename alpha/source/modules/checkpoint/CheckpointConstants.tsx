@@ -1,11 +1,11 @@
-// Module ID: 5995
-// Function ID: 5996
+// Module ID: 6002
+// Function ID: 6003
 // Name: CheckpointConstants
-// Dependencies: [5996, 3088, 2]
+// Dependencies: [6003, 3088, 2]
 
-// Module 5995 (CheckpointConstants)
+// Module 6002 (CheckpointConstants)
 import _modDef3088 from "module_3088" /* 3088 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5996 */;
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6003 */;
 import size from "module_2" /* 2 */;
 
 const obj = { [CheckpointTraitRarity.CheckpointTraitRarity.DEFAULT]: "#FFE047", [CheckpointTraitRarity.CheckpointTraitRarity.COMMON]: "#35ED7E", [CheckpointTraitRarity.CheckpointTraitRarity.RARE]: "#EF3054", [CheckpointTraitRarity.CheckpointTraitRarity.EPIC]: "#7D53DE", [CheckpointTraitRarity.CheckpointTraitRarity.ULTRA]: "#FC7A1E" };
@@ -31,6 +31,7 @@ export const CHECKPOINT_ORANGE = "#FC7A1E";
 export const CHECKPOINT_DARK_CYAN = "#1482A7";
 export const CHECKPOINT_BUTTON_SHADOW = "#3FC7D2";
 export const CHECKPOINT_GUILD_CARD_BACKGROUND = "#04363ABF";
+export const CHECKPOINT_WEB_BACKGROUND_GRADIENT_START = "#3BD4F2";
 export const CHECKPOINT_NITRO_GRADIENT_COLORS = ["#DFDFDF", "#5E5E5E"];
 export const CHECKPOINT_NITRO_BADGE_GRADIENT_ID = "checkpointRarityBadgeNitroGradient";
 export const CHECKPOINT_BACKGROUND_GRADIENT = ["#12606D", "#0B1624"];

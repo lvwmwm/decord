@@ -1,19 +1,19 @@
-// Module ID: 9888
-// Function ID: 9889
+// Module ID: 9900
+// Function ID: 9901
 // Name: PremiumExpressionPickerFeatureUpsell
-// Dependencies: [19, 17, 21, 4966, 587, 558, 576, 1633, 7006, 1107, 5035, 9889, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 1633, 7013, 1107, 5038, 9901, 2]
 
-// Module 9888 (PremiumExpressionPickerFeatureUpsell)
+// Module 9900 (PremiumExpressionPickerFeatureUpsell)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
-import useKeyboardIsOpenDefault from "useKeyboardIsOpen" /* 7006 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
+import useKeyboardIsOpenDefault from "useKeyboardIsOpen" /* 7013 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

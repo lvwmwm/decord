@@ -1,10 +1,10 @@
-// Module ID: 10756
-// Function ID: 10757
+// Module ID: 10768
+// Function ID: 10769
 // Name: conjureDevicePermissions
 // Dependencies: [1384, 1128, 3830, 2]
 // Exports: getConjureDevicePermissionLabel, getConjureDevicePermissionPromptTitle, isConjureDevicePermissionName, isConjureDevicePermissionSupported
 
-// Module 10756 (conjureDevicePermissions)
+// Module 10768 (conjureDevicePermissions)
 import intl2 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import _modDef3830 from "module_3830" /* 3830 */;
@@ -31,8 +31,8 @@ export const isConjureDevicePermissionName = function isConjureDevicePermissionN
 export const isConjureDevicePermissionSupported = function isConjureDevicePermissionSupported(permission) {
   return obj[permission].isSupported();
 };
-export const getConjureDevicePermissionLabel = function getConjureDevicePermissionLabel(item) {
-  return obj[item].getLabel();
+export const getConjureDevicePermissionLabel = function getConjureDevicePermissionLabel(arg0) {
+  return obj[arg0].getLabel();
 };
 export const getConjureDevicePermissionPromptTitle = function getConjureDevicePermissionPromptTitle(app) {
   const intl = intl2.intl;

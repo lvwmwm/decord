@@ -1,26 +1,26 @@
-// Module ID: 15883
-// Function ID: 15884
+// Module ID: 15925
+// Function ID: 15926
 // Name: AccountAgeGroupSetting
-// Dependencies: [17, 8308, 1087, 21, 4966, 587, 558, 576, 9977, 15884, 15891, 4805, 6882, 11155, 1128, 15892, 15852, 15893, 2]
+// Dependencies: [17, 8317, 1087, 21, 4969, 587, 558, 576, 9989, 15926, 15933, 4805, 6889, 11172, 1128, 15934, 15894, 15935, 2]
 
-// Module 15883 (AccountAgeGroupSetting)
+// Module 15925 (AccountAgeGroupSetting)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import dismissible_content from "dismissible_content" /* 4805 */;
-import TableRow from "TableRow" /* 6882 */;
-import SettingsConstants from "SettingsConstants" /* 8308 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 9977 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 15852 */;
-import TinyBroncoLazy from "TinyBroncoLazy" /* 15884 */;
-import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 15891 */;
+import TableRow from "TableRow" /* 6889 */;
+import SettingsConstants from "SettingsConstants" /* 8317 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 9989 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 15894 */;
+import TinyBroncoLazy from "TinyBroncoLazy" /* 15926 */;
+import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 15933 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11155 */;
-import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 15892 */;
+import SettingBuilders from "SettingBuilders" /* 11172 */;
+import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 15934 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

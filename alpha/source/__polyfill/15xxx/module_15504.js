@@ -1,16 +1,18 @@
 // Module ID: 15504
 // Function ID: 15505
-// Dependencies: [15468, 15442]
+// Dependencies: [15505]
 
 // Module 15504
-import _mod15442 from "module_15442" /* 15442 */;
-import module_15468 from "module_15468" /* 15468 */;
+import prop_mod from "module_15505" /* 15505 */;
 
-let _moduleResult = module_15468(_mod15442.WeakMap);
-if (_moduleResult) {
-  const _String = String;
-  const obj = /native code/;
-  _moduleResult = obj.test(String(_mod15442.WeakMap));
+let prop = prop_mod;
+if (prop) {
+  const _Symbol = Symbol;
+  prop = !Symbol.sham;
+}
+if (prop) {
+  const _Symbol2 = Symbol;
+  prop = typeof Symbol.iterator === "symbol";
 }
 
-export default _moduleResult;
+export default prop;

@@ -1,14 +1,14 @@
-// Module ID: 12229
-// Function ID: 12230
+// Module ID: 12252
+// Function ID: 12253
 // Name: ConjureSecretRequestState
-// Dependencies: [32, 19, 1128, 3830, 10658, 558, 576, 2]
+// Dependencies: [32, 19, 1128, 3830, 10670, 558, 576, 2]
 // Exports: markMcpSecretRequestSaved, secretRequestStatuses, unmarkMcpSecretRequestSaved
 
-// Module 12229 (ConjureSecretRequestState)
+// Module 12252 (ConjureSecretRequestState)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import conjureChatTurns from "conjureChatTurns" /* 10658 */;
+import conjureChatTurns from "conjureChatTurns" /* 10670 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -131,11 +131,11 @@ export const unmarkMcpSecretRequestSaved = function unmarkMcpSecretRequestSaved(
     set.delete(request_id);
   }
 };
-export const secretRequestStatuses = function secretRequestStatuses(memo, stateFromStores11) {
+export const secretRequestStatuses = function secretRequestStatuses(memo, secrets) {
   let set1 = null;
-  if (null != stateFromStores11) {
+  if (null != secrets) {
     const _Set = Set;
-    const found = stateFromStores11.filter((set) => set.set);
+    const found = secrets.filter((set) => set.set);
     const self = this;
     const self2 = this;
     set1 = new Set(found.map((name) => name.name));

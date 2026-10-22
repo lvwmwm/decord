@@ -1,34 +1,41 @@
 // Module ID: 12549
 // Function ID: 12550
-// Dependencies: [12481]
-// Exports: applySdkMetadata
+// Dependencies: [12537, 12509]
+// Exports: parseSampleRate
 
 // Module 12549
-import _mod12481 from "module_12481" /* 12481 */;
+import _mod12537 from "module_12537" /* 12537 */;
 
 
-export const applySdkMetadata = function applySdkMetadata(_metadata, arg1) {
-  let arr = arg2;
-  if (arg2 === undefined) {
-    const items = [arg1];
-    arr = items;
+export const parseSampleRate = function parseSampleRate(flag) {
+  if (typeof flag === "boolean") {
+    const _Number = Number;
+    return Number(flag);
+  } else {
+    let parsed = flag;
+    if (typeof flag === "string") {
+      const _parseFloat = parseFloat;
+      parsed = parseFloat(flag);
+    }
+    if (typeof parsed === "number") {
+      const _isNaN = isNaN;
+      if (!isNaN(parsed)) {
+        if (parsed >= 0) {
+          if (parsed <= 1) {
+            return parsed;
+          }
+        }
+      }
+    }
+    const tmp = require;
+    if (_mod12537.DEBUG_BUILD) {
+      const logger = tmp(12509).logger;
+      const _JSON = JSON;
+      const warn = logger.warn;
+      const json = JSON.stringify(flag);
+      const _JSON2 = JSON;
+      const _HermesInternal = HermesInternal;
+      warn("[Tracing] Given sample rate is invalid. Sample rate must be a boolean or a number between 0 and 1. Got " + json + " of type " + JSON.stringify(typeof flag) + ".");
+    }
   }
-  let str = arg3;
-  if (arg3 === undefined) {
-    str = "npm";
-  }
-  const tmp = _metadata._metadata || {};
-  if (!tmp.sdk) {
-    let obj = {
-      name: "sentry.javascript." + arg1,
-      packages: arr.map((item) => {
-          const obj = { name: "" + str + ":@sentry/" + item, version: _mod12481.SDK_VERSION };
-          return obj;
-        }),
-      version: str(12481).SDK_VERSION
-    };
-    const _HermesInternal = HermesInternal;
-    tmp.sdk = obj;
-  }
-  _metadata._metadata = tmp;
 };

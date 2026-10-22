@@ -1,20 +1,20 @@
-// Module ID: 11794
-// Function ID: 11795
+// Module ID: 11820
+// Function ID: 11821
 // Name: conjurePreviewTargets
-// Dependencies: [5608, 11777, 1128, 3830, 2]
+// Dependencies: [5612, 11811, 1128, 3830, 2]
 // Exports: activePreviewTarget, getPreviewTargetLabel, previewTargetKey, previewTargets, selectPreviewTarget
 
-// Module 11794 (conjurePreviewTargets)
+// Module 11820 (conjurePreviewTargets)
 import intl5 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import ConjurePreviewMode from "ConjurePreviewMode" /* 11777 */;
+import ConjurePreviewMode from "ConjurePreviewMode" /* 11811 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewTargets.tsx");
 
-export const previewTargets = function previewTargets(modes, frameSurfaceOptions, stateFromStores4) {
-  let items = stateFromStores4;
-  if (stateFromStores4 === undefined) {
+export const previewTargets = function previewTargets(modes, frameSurfaceOptions, stateFromStores3) {
+  let items = stateFromStores3;
+  if (stateFromStores3 === undefined) {
     items = [];
   }
   return modes.flatMap((mode) => {

@@ -1,22 +1,22 @@
-// Module ID: 19053
-// Function ID: 19054
+// Module ID: 19120
+// Function ID: 19121
 // Name: HowItWorksSection
-// Dependencies: [19, 17, 21, 4966, 587, 558, 576, 5216, 5651, 1128, 19054, 1202, 19055, 19056, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5220, 5655, 1128, 19121, 1202, 19122, 19123, 2]
 
-// Module 19053 (HowItWorksSection)
+// Module 19120 (HowItWorksSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import FastImageDefault from "FastImage" /* 5651 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19054 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 19055 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 19056 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import FastImageDefault from "FastImage" /* 5655 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19121 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 19122 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 19123 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

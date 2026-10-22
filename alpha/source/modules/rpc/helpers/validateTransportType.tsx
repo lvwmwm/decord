@@ -1,13 +1,13 @@
-// Module ID: 15648
-// Function ID: 15649
+// Module ID: 15692
+// Function ID: 15693
 // Name: validateTransportType
-// Dependencies: [6357, 1087, 9224, 2]
+// Dependencies: [6364, 1087, 9233, 2]
 // Exports: validateTransportType
 
-// Module 15648 (validateTransportType)
+// Module 15692 (validateTransportType)
 import Constants from "Constants" /* 1087 */;
-import Constants2 from "Constants" /* 6357 */;
-import RPCErrorDefault from "RPCError" /* 9224 */;
+import Constants2 from "Constants" /* 6364 */;
+import RPCErrorDefault from "RPCError" /* 9233 */;
 import size from "module_2" /* 2 */;
 
 const TransportTypes = Constants2.TransportTypes;

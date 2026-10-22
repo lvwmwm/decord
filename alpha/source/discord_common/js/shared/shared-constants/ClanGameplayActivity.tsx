@@ -1,9 +1,9 @@
-// Module ID: 14067
-// Function ID: 14068
+// Module ID: 14101
+// Function ID: 14102
 // Name: ClanGameplayActivity
 // Dependencies: [2]
 
-// Module 14067 (ClanGameplayActivity)
+// Module 14101 (ClanGameplayActivity)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ClanGameplayActivity.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 15678
-// Function ID: 15679
+// Module ID: 15720
+// Function ID: 15721
 // Name: transformGuildMember
-// Dependencies: [9223, 2]
+// Dependencies: [9232, 2]
 // Exports: default
 
-// Module 15678 (transformGuildMember)
-import transformAvatarDecorationDefault from "transformAvatarDecoration" /* 9223 */;
+// Module 15720 (transformGuildMember)
+import transformAvatarDecorationDefault from "transformAvatarDecoration" /* 9232 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/rpc/helpers/transformGuildMember.tsx");

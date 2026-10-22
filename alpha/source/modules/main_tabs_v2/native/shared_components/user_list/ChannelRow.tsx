@@ -1,27 +1,27 @@
-// Module ID: 10648
-// Function ID: 10649
+// Module ID: 10660
+// Function ID: 10661
 // Name: ChannelRow
-// Dependencies: [109, 19, 17, 4821, 4843, 6750, 4911, 1392, 10574, 6684, 21, 4966, 587, 558, 576, 504, 5586, 10649, 12830, 8535, 8527, 5216, 4794, 2049, 6879, 6882, 2]
+// Dependencies: [109, 19, 17, 4821, 4843, 6757, 4911, 1392, 10586, 6691, 21, 4969, 587, 558, 576, 504, 5590, 10661, 12862, 8544, 8536, 5220, 4794, 2049, 6886, 6889, 2]
 
-// Module 10648 (ChannelRow)
+// Module 10660 (ChannelRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import DateUtils from "DateUtils" /* 4794 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import useChannelName from "useChannelName" /* 5586 */;
-import ReadStateConstants from "ReadStateConstants" /* 6684 */;
-import UserRowConstants from "UserRowConstants" /* 10574 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10649 */;
-import GuildIconWithChannelType2 from "GuildIconWithChannelType" /* 12830 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import useChannelName from "useChannelName" /* 5590 */;
+import ReadStateConstants from "ReadStateConstants" /* 6691 */;
+import UserRowConstants from "UserRowConstants" /* 10586 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10661 */;
+import GuildIconWithChannelType2 from "GuildIconWithChannelType" /* 12862 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import ReadStateStore from "ReadStateStore" /* 6750 */;
+import ReadStateStore from "ReadStateStore" /* 6757 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -251,7 +251,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             return closure_9.lastMessageTimestamp(closure_0.id, ReadStateTypes.CHANNEL);
           }
         }
-        let obj2 = { "aria-label": "", style: null, guild: stateFromStores, channel: tmp4, size: tmp(12830).GuildIconWithChannelTypeSizes.SMALL_32 };
+        let obj2 = { "aria-label": "", style: null, guild: stateFromStores, channel: tmp4, size: tmp(12862).GuildIconWithChannelTypeSizes.SMALL_32 };
         class J {
           constructor() {
             if (null == closure_1) {
@@ -267,7 +267,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             return;
           }
         }
-        const GuildIconWithChannelType = tmp(12830).GuildIconWithChannelType;
+        const GuildIconWithChannelType = tmp(12862).GuildIconWithChannelType;
         tmp34 = closure_14(GuildIconWithChannelType, obj2);
       }
       cResult[26] = tmp4;
@@ -418,9 +418,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
       if (channel.isForumPost()) {
-        TextIcon = tmp3(8535).ForumIcon;
+        TextIcon = tmp3(8544).ForumIcon;
       } else {
-        TextIcon = tmp3(8527).TextIcon;
+        TextIcon = tmp3(8536).TextIcon;
       }
       const obj = { style: closure_7.subLabel, children: items };
       const obj2 = { color: nativeDefault.colors.TEXT_SUBTLE, style: closure_7.subLabelIcon };
@@ -439,10 +439,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         const Text = Text_Text.Text;
         obj7 = DateUtils;
         items1[1] = syncedClientThemes(Text, obj6);
-        tmp5Result = tmp5(authStore3, obj4);
+        tmp5Result = tmp5(closure_15, obj4);
       }
       items[2] = tmp5Result;
-      return authStore4(tmp6, obj);
+      return authStore3(tmp6, obj);
     }
   }, items7);
   const memo3 = obj4.useMemo(() => {

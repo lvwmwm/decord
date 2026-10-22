@@ -1,11 +1,11 @@
-// Module ID: 13227
-// Function ID: 13228
+// Module ID: 13263
+// Function ID: 13264
 // Name: useShouldBlockDMInputForQuarantinedUser
-// Dependencies: [5990, 1087, 558, 576, 13042, 504, 2]
+// Dependencies: [5997, 1087, 558, 576, 13078, 504, 2]
 
-// Module 13227 (useShouldBlockDMInputForQuarantinedUser)
+// Module 13263 (useShouldBlockDMInputForQuarantinedUser)
 import Constants from "Constants" /* 1087 */;
-import MessageStore from "MessageStore" /* 5990 */;
+import MessageStore from "MessageStore" /* 5997 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

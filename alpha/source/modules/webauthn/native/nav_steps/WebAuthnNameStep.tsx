@@ -1,19 +1,19 @@
-// Module ID: 15962
-// Function ID: 15963
+// Module ID: 16004
+// Function ID: 16005
 // Name: WebAuthnNameStep
-// Dependencies: [5, 32, 19, 17, 1087, 21, 4966, 7069, 1505, 6656, 5645, 1128, 8910, 1202, 5226, 2]
+// Dependencies: [5, 32, 19, 17, 1087, 21, 4969, 7076, 1505, 6663, 5649, 1128, 8919, 1202, 5230, 2]
 // Exports: default
 
-// Module 15962 (WebAuthnNameStep)
+// Module 16004 (WebAuthnNameStep)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import useNavigation from "useNavigation" /* 1505 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7069 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7076 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import size from "module_2" /* 2 */;
 
 let c1, c4, dependencyMap;
@@ -23,8 +23,8 @@ let metroImportAll;
 let tmp;
 const intl4 = tmp(1128);
 const native = tmp(1202);
-const components_Button_Button = tmp(5226);
-const Form2 = tmp(8910);
+const components_Button_Button = tmp(5230);
+const Form2 = tmp(8919);
 const View = react_native.View;
 const UserSettingsSections = Constants.UserSettingsSections;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);

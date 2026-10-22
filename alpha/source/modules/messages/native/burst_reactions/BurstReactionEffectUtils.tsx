@@ -1,12 +1,12 @@
-// Module ID: 4924
-// Function ID: 4925
+// Module ID: 4927
+// Function ID: 4928
 // Name: burst_reactions/BurstReactionEffectUtils
-// Dependencies: [5, 32, 19, 17, 558, 576, 4919, 4925, 1901, 1384, 4962, 2]
+// Dependencies: [5, 32, 19, 17, 558, 576, 4919, 4928, 1901, 1384, 4965, 2]
 
-// Module 4924 (burst_reactions/BurstReactionEffectUtils)
+// Module 4927 (burst_reactions/BurstReactionEffectUtils)
 import react_native from "react-native" /* 17 */;
 import EmojiUtils from "EmojiUtils" /* 4919 */;
-import getBurstAnimation from "getBurstAnimation" /* 4925 */;
+import getBurstAnimation from "getBurstAnimation" /* 4928 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

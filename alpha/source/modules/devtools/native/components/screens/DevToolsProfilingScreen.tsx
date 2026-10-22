@@ -1,22 +1,22 @@
-// Module ID: 16851
-// Function ID: 16852
+// Module ID: 16920
+// Function ID: 16921
 // Name: DevToolsProfilingScreen
-// Dependencies: [32, 19, 17, 1087, 21, 4966, 587, 558, 576, 13696, 6966, 6882, 5216, 16852, 5957, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 4969, 587, 558, 576, 13732, 6973, 6889, 5220, 16921, 5964, 2]
 
-// Module 16851 (DevToolsProfilingScreen)
+// Module 16920 (DevToolsProfilingScreen)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import Stack_Stack from "Stack/Stack" /* 5957 */;
-import TableRow2 from "TableRow" /* 6882 */;
-import TableRowGroup3 from "TableRowGroup" /* 6966 */;
-import ComponentProfiler from "ComponentProfiler" /* 13696 */;
-import DevToolsProfilingUseStateFromStores from "DevToolsProfilingUseStateFromStores" /* 16852 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import Stack_Stack from "Stack/Stack" /* 5964 */;
+import TableRow2 from "TableRow" /* 6889 */;
+import TableRowGroup3 from "TableRowGroup" /* 6973 */;
+import ComponentProfiler from "ComponentProfiler" /* 13732 */;
+import DevToolsProfilingUseStateFromStores from "DevToolsProfilingUseStateFromStores" /* 16921 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -95,7 +95,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsProf
     if (arr.length > 0) {
       let obj2 = { children: items };
       let obj3 = { title: "Component Profiler", hasIcons: false, children: closure_5(require("TableRow").TableRow, obj4) };
-      const TableRowGroup2 = tmp(6966).TableRowGroup;
+      const TableRowGroup2 = tmp(6973).TableRowGroup;
       obj4 = { variant: "danger", arrow: true, label: "Reset Stats", onPress: first };
       items = [closure_5(TableRowGroup2, obj3), ];
       const _Object2 = Object;
@@ -133,11 +133,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsProf
       tmp12 = closure_7(closure_6, obj2);
     } else {
       const obj5 = { title: "Component Profiler", hasIcons: false, children: closure_5(TableRow, obj6) };
-      let TableRowGroup = tmp(6966).TableRowGroup;
+      let TableRowGroup = tmp(6973).TableRowGroup;
       obj6 = { label: "No components rendered yet.", subLabel: closure_7(Text, obj7) };
-      TableRow = tmp(6882).TableRow;
+      TableRow = tmp(6889).TableRow;
       obj7 = { variant: "text-xs/medium", color: "text-subtle", children: items1 };
-      Text = tmp(5216).Text;
+      Text = tmp(5220).Text;
       const obj8 = { variant: "text-xs/semibold", style: tmp5.monospace, children: "<ComponentProfiler />" };
       items1 = ["Make sure you wrap your component in ", closure_5(require("Text/Text").Text, obj8), " to enable measurements."];
       tmp12 = closure_5(TableRowGroup, obj5);
@@ -211,7 +211,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsProf
   if (tmp7) {
     let obj3 = { children: items };
     let obj4 = { title: "Component Profiler", hasIcons: false, children: closure_5(TableRow2.TableRow, obj5) };
-    const TableRowGroup2 = tmp4(6966).TableRowGroup;
+    const TableRowGroup2 = tmp4(6973).TableRowGroup;
     obj5 = { variant: "danger", arrow: true, label: "Reset Stats", onPress: callback };
     items = [closure_5(TableRowGroup2, obj4), ];
     const _Object = Object;
@@ -249,11 +249,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsProf
     tmp8Result = tmp10(closure_6, obj3);
   } else {
     const obj6 = { title: "Component Profiler", hasIcons: false, children: closure_5(TableRow, obj7) };
-    let TableRowGroup = tmp4(6966).TableRowGroup;
+    let TableRowGroup = tmp4(6973).TableRowGroup;
     obj7 = { label: "No components rendered yet.", subLabel: closure_7(Text, obj8) };
-    TableRow = tmp4(6882).TableRow;
+    TableRow = tmp4(6889).TableRow;
     obj8 = { variant: "text-xs/medium", color: "text-subtle", children: items1 };
-    Text = tmp4(5216).Text;
+    Text = tmp4(5220).Text;
     const obj9 = { variant: "text-xs/semibold", style: tmp3.monospace, children: "<ComponentProfiler />" };
     items1 = ["Make sure you wrap your component in ", closure_5(Text_Text.Text, obj9), " to enable measurements."];
     tmp8Result = tmp8(TableRowGroup, obj6);

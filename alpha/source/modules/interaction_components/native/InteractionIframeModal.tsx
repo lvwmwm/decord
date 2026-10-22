@@ -1,20 +1,20 @@
-// Module ID: 18675
-// Function ID: 18676
+// Module ID: 18743
+// Function ID: 18744
 // Name: InteractionIframeModal
-// Dependencies: [32, 19, 17, 1375, 21, 4966, 587, 558, 576, 18663, 11393, 5575, 8779, 18676, 5952, 5645, 1128, 10615, 6887, 5216, 9094, 6756, 11434, 18266, 2]
+// Dependencies: [32, 19, 17, 1375, 21, 4969, 587, 558, 576, 18731, 11410, 5579, 8788, 18744, 5959, 5649, 1128, 10627, 6894, 5220, 9103, 6763, 11451, 18334, 2]
 
-// Module 18675 (InteractionIframeModal)
+// Module 18743 (InteractionIframeModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import ApplicationConstants from "ApplicationConstants" /* 1375 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5645 */;
-import makeIframeIdDefault from "makeIframeId" /* 11393 */;
-import closeIFrameModalDefault from "closeIFrameModal" /* 18676 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5649 */;
+import makeIframeIdDefault from "makeIframeId" /* 11410 */;
+import closeIFrameModalDefault from "closeIFrameModal" /* 18744 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Interactio
       constructor() {
         obj = id(closure_2[12]);
         lockOrientationResult = obj.lockOrientation("PORTRAIT");
-        return () => { /* body not rendered: F154699 */ };
+        return () => { /* body not rendered: F155505 */ };
       }
     }
     const items = [];
@@ -81,7 +81,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Interactio
       constructor() {
         obj = id(closure_2[12]);
         lockOrientationResult = obj.lockOrientation("PORTRAIT");
-        return () => { /* body not rendered: F154699 */ };
+        return () => { /* body not rendered: F155505 */ };
       }
     }
     tmp10 = cResult[2];

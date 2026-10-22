@@ -1,25 +1,25 @@
-// Module ID: 14036
-// Function ID: 14037
+// Module ID: 14072
+// Function ID: 14073
 // Name: BountyActionCreators
-// Dependencies: [5, 7748, 5870, 7750, 7751, 6689, 1087, 3, 584, 6696, 9540, 7749, 6354, 7548, 7770, 1297, 6692, 14037, 7747, 2]
+// Dependencies: [5, 7757, 5877, 7759, 7760, 6696, 1087, 3, 584, 6703, 9551, 7758, 6361, 7555, 7779, 1297, 6699, 9550, 7756, 2]
 // Exports: claimBountyReward, dismissAdContent, fetchBountyPreview, fetchQuestBarCreativePreview, fetchQuestHomeBounties, resetCreativePreviewDeliveryState, resetPreviewDeliveryStateLookback, setBountyVideoProgress
 
-// Module 14036 (BountyActionCreators)
+// Module 14072 (BountyActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import QuestConstants from "QuestConstants" /* 6689 */;
-import QuestTypes from "QuestTypes" /* 6692 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7548 */;
-import QuestDataUtils from "QuestDataUtils" /* 7747 */;
-import SessionAdGenerator from "SessionAdGenerator" /* 7770 */;
-import BountiesDesktopQuestBarExperiment2 from "BountiesDesktopQuestBarExperiment" /* 14037 */;
+import QuestConstants from "QuestConstants" /* 6696 */;
+import QuestTypes from "QuestTypes" /* 6699 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7555 */;
+import QuestDataUtils from "QuestDataUtils" /* 7756 */;
+import SessionAdGenerator from "SessionAdGenerator" /* 7779 */;
+import BountiesDesktopQuestBarExperiment2 from "BountiesDesktopQuestBarExperiment" /* 9550 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7748 */;
-import NetworkStore from "NetworkStore" /* 5870 */;
-import BountyStore from "BountyStore" /* 7750 */;
-import QuestStore from "QuestStore" /* 7751 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7757 */;
+import NetworkStore from "NetworkStore" /* 5877 */;
+import BountyStore from "BountyStore" /* 7759 */;
+import QuestStore from "QuestStore" /* 7760 */;
 import size from "module_2" /* 2 */;
 
 let _null, bounties, closure_2, error, map, uuid2;

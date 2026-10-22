@@ -1,21 +1,21 @@
-// Module ID: 13888
-// Function ID: 13889
+// Module ID: 13924
+// Function ID: 13925
 // Name: AppInteractionInfoActionSheet
-// Dependencies: [19, 17, 1406, 4843, 1392, 21, 4966, 558, 576, 1633, 13889, 5585, 504, 8634, 6862, 5216, 1128, 8632, 1202, 6887, 5247, 2]
+// Dependencies: [19, 17, 1406, 4843, 1392, 21, 4969, 558, 576, 1633, 13925, 5589, 504, 8643, 6869, 5220, 1128, 8641, 1202, 6894, 5251, 2]
 
-// Module 13888 (AppInteractionInfoActionSheet)
+// Module 13924 (AppInteractionInfoActionSheet)
 import react_native from "react-native" /* 17 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import GuildIconDefault from "GuildIcon" /* 6862 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8632 */;
-import UserActionCreators from "UserActionCreators" /* 8634 */;
-import ContextMenuSubmenuActionSheetHeaderDefault from "ContextMenuSubmenuActionSheetHeader" /* 13889 */;
+import GuildIconDefault from "GuildIcon" /* 6869 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8641 */;
+import UserActionCreators from "UserActionCreators" /* 8643 */;
+import ContextMenuSubmenuActionSheetHeaderDefault from "ContextMenuSubmenuActionSheetHeader" /* 13925 */;
 import react_mod from "react" /* 19 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -59,13 +59,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInterac
   const interactionMetadata = message.interactionMetadata;
   let tmp9;
   if (interactionMetadata != null) {
-    tmp9 = interactionMetadata.authorizing_integration_owners[tmp(undefined, 5585).ApplicationIntegrationType.USER_INSTALL];
+    tmp9 = interactionMetadata.authorizing_integration_owners[tmp(undefined, 5589).ApplicationIntegrationType.USER_INSTALL];
   }
   importDefault = tmp9;
   const interactionMetadata2 = message.interactionMetadata;
   let tmp10;
   if (interactionMetadata2 != null) {
-    tmp10 = interactionMetadata2.authorizing_integration_owners[tmp(undefined, 5585).ApplicationIntegrationType.GUILD_INSTALL];
+    tmp10 = interactionMetadata2.authorizing_integration_owners[tmp(undefined, 5589).ApplicationIntegrationType.GUILD_INSTALL];
   }
   dependencyMap = tmp10;
   const interactionMetadata3 = message.interactionMetadata;
@@ -191,7 +191,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInterac
             return UserStore.getUser(id);
           }
         }
-        const obj3 = { guild: stateFromStores1, size: tmp(6862).GuildIconSizes.SMALL_32 };
+        const obj3 = { guild: stateFromStores1, size: tmp(6869).GuildIconSizes.SMALL_32 };
         const tmp5Result = GuildIconDefault;
         cResult[15] = stateFromStores1;
         cResult[16] = closure_8(tmp5Result, obj3);
@@ -212,8 +212,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInterac
         }
         const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores1.name };
         cResult[17] = stateFromStores1.name;
-        cResult[18] = closure_8(tmp(5216).Text, obj4);
-        const tmp37 = closure_8(tmp(5216).Text, obj4);
+        cResult[18] = closure_8(tmp(5220).Text, obj4);
+        const tmp37 = closure_8(tmp(5220).Text, obj4);
       } else {
         class F {
           constructor() {
@@ -246,8 +246,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInterac
         }
         const obj6 = { variant: "text-xs/medium", color: "text-subtle", children: tmp38 };
         cResult[21] = tmp38;
-        cResult[22] = closure_8(tmp(5216).Text, obj6);
-        const tmp41 = closure_8(tmp(5216).Text, obj6);
+        cResult[22] = closure_8(tmp(5220).Text, obj6);
+        const tmp41 = closure_8(tmp(5220).Text, obj6);
       } else {
         class F {
           constructor() {
@@ -338,15 +338,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInterac
         return showUserProfileActionSheetDefault(obj);
       };
       const obj9 = { style: tmp4.itemContainer, children: items4 };
-      const PressableOpacity = tmp(6887).PressableOpacity;
+      const PressableOpacity = tmp(6894).PressableOpacity;
       const obj10 = { user: tmp25, size: tmp(1202).AvatarSizes.REFRESH_MEDIUM_32, guildId };
       const Avatar = tmp(1202).Avatar;
       items4 = [closure_8(Avatar, obj10), ];
       const obj11 = { style: tmp4.itemLabel, children: items5 };
       const obj12 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp25.username };
-      items5 = [closure_8(tmp(5216).Text, obj12), ];
+      items5 = [closure_8(tmp(5220).Text, obj12), ];
       const obj13 = { variant: "text-xs/medium", color: "text-subtle", children: intl.string(tmp(1128).t["04gxNg"]) };
-      const Text = tmp(5216).Text;
+      const Text = tmp(5220).Text;
       intl = tmp(1128).intl;
       items5[1] = closure_8(Text, obj13);
       items4[1] = closure_9(stateFromStores, obj11);
@@ -411,13 +411,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInterac
   }, items);
   const tmp2 = onBack;
   if (interactionMetadata != null) {
-    tmp5 = interactionMetadata.authorizing_integration_owners[message(undefined, 5585).ApplicationIntegrationType.USER_INSTALL];
+    tmp5 = interactionMetadata.authorizing_integration_owners[message(undefined, 5589).ApplicationIntegrationType.USER_INSTALL];
   }
   dependencyMap = tmp5;
   const interactionMetadata2 = message.interactionMetadata;
   let tmp7;
   if (interactionMetadata2 != null) {
-    tmp7 = interactionMetadata2.authorizing_integration_owners[message(undefined, 5585).ApplicationIntegrationType.GUILD_INSTALL];
+    tmp7 = interactionMetadata2.authorizing_integration_owners[message(undefined, 5589).ApplicationIntegrationType.GUILD_INSTALL];
   }
   react = tmp7;
   const interactionMetadata3 = message.interactionMetadata;
@@ -459,14 +459,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInterac
   }
   if (null != stateFromStores1) {
     const obj5 = { style: tmp.itemContainer, children: items5 };
-    const obj6 = { guild: stateFromStores1, size: message(6862).GuildIconSizes.SMALL_32 };
-    const tmp2Result = tmp2(6862);
+    const obj6 = { guild: stateFromStores1, size: message(6869).GuildIconSizes.SMALL_32 };
+    const tmp2Result = tmp2(6869);
     items5 = [closure_8(tmp2Result, obj6), ];
     const obj7 = { style: tmp.itemLabel, children: items6 };
     const obj8 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores1.name };
-    items6 = [closure_8(message(5216).Text, obj8), ];
+    items6 = [closure_8(message(5220).Text, obj8), ];
     const obj9 = { variant: "text-xs/medium", color: "text-subtle", children: intl2.format(message(1128).t.ShLXXB, obj10) };
-    const Text2 = tmp10(5216).Text;
+    const Text2 = tmp10(5220).Text;
     intl2 = tmp10(1128).intl;
     obj10 = { application: message.author.username };
     items6[1] = closure_8(Text2, obj9);
@@ -483,15 +483,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInterac
         children: closure_9(id, obj12)
       };
       obj12 = { style: tmp.itemContainer, children: items7 };
-      const PressableOpacity = tmp10(6887).PressableOpacity;
+      const PressableOpacity = tmp10(6894).PressableOpacity;
       const obj13 = { user: stateFromStores, size: message(1202).AvatarSizes.REFRESH_MEDIUM_32, guildId };
       const Avatar = tmp10(1202).Avatar;
       items7 = [closure_8(Avatar, obj13), ];
       const obj14 = { style: tmp.itemLabel, children: items8 };
       const obj15 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores.username };
-      items8 = [closure_8(message(5216).Text, obj15), ];
+      items8 = [closure_8(message(5220).Text, obj15), ];
       const obj16 = { variant: "text-xs/medium", color: "text-subtle", children: intl.format(message(1128).t.ShLXXB, obj17) };
-      const Text = tmp10(5216).Text;
+      const Text = tmp10(5220).Text;
       intl = tmp10(1128).intl;
       obj17 = { application: message.author.username };
       items8[1] = closure_8(Text, obj16);
@@ -502,7 +502,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInterac
   const obj18 = { header: memo, bodyStyles: { paddingBottom: bottom }, children: items9 };
   items9 = [tmp24, ];
   let tmp30 = null;
-  BottomSheet = tmp10(5247).BottomSheet;
+  BottomSheet = tmp10(5251).BottomSheet;
   if (null != tmp15) {
     const obj19 = {
       onPress() {
@@ -512,15 +512,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInterac
       children: closure_9(id, obj20)
     };
     obj20 = { style: tmp.itemContainer, children: items10 };
-    const PressableOpacity2 = tmp10(6887).PressableOpacity;
+    const PressableOpacity2 = tmp10(6894).PressableOpacity;
     const obj21 = { user: tmp15, size: message(1202).AvatarSizes.REFRESH_MEDIUM_32, guildId };
     const Avatar2 = tmp10(1202).Avatar;
     items10 = [closure_8(Avatar2, obj21), ];
     const obj22 = { style: tmp.itemLabel, children: items11 };
     const obj23 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp15.username };
-    items11 = [closure_8(message(5216).Text, obj23), ];
+    items11 = [closure_8(message(5220).Text, obj23), ];
     const obj24 = { variant: "text-xs/medium", color: "text-subtle", children: intl3.string(message(1128).t["04gxNg"]) };
-    const Text3 = tmp10(5216).Text;
+    const Text3 = tmp10(5220).Text;
     intl3 = tmp10(1128).intl;
     items11[1] = closure_8(Text3, obj24);
     items10[1] = closure_9(id, obj22);

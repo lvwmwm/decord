@@ -1,14 +1,14 @@
-// Module ID: 9819
-// Function ID: 9820
+// Module ID: 9831
+// Function ID: 9832
 // Name: CreatorRevenueButton
-// Dependencies: [19, 21, 4966, 558, 576, 9820, 2]
+// Dependencies: [19, 21, 4969, 558, 576, 9832, 2]
 
-// Module 9819 (CreatorRevenueButton)
+// Module 9831 (CreatorRevenueButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ShinyButtonDefault from "ShinyButton" /* 9820 */;
+import ShinyButtonDefault from "ShinyButton" /* 9832 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

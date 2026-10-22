@@ -1,14 +1,14 @@
-// Module ID: 11301
-// Function ID: 11302
+// Module ID: 11318
+// Function ID: 11319
 // Name: ChannelCallLifecycleStore
-// Dependencies: [4872, 10831, 8779, 1357, 504, 584, 2]
+// Dependencies: [4872, 10848, 8788, 1357, 504, 584, 2]
 
-// Module 11301 (ChannelCallLifecycleStore)
+// Module 11318 (ChannelCallLifecycleStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _modDef1357 from "module_1357" /* 1357 */;
-import DeviceOrientation from "DeviceOrientation" /* 8779 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10831 */;
+import DeviceOrientation from "DeviceOrientation" /* 8788 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10848 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -20,9 +20,9 @@ let c5 = false;
 let c6 = false;
 let visible = false;
 let obj = {};
-let size = { x: "Array", y: "Symbol", width: "y", height: "IconComponent", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: false, isInitialized: null, isVisible: null };
+let size = { x: "Array", y: "test", width: "y", height: "IconComponent", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: false, isInitialized: null, isVisible: null };
 obj[VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON] = size;
-const size1 = { x: "Array", y: "Symbol", width: "y", height: "IconComponent", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: false, isInitialized: null, isVisible: null };
+const size1 = { x: "Array", y: "test", width: "y", height: "IconComponent", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: false, isInitialized: null, isVisible: null };
 obj[VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE] = size1;
 let c10 = true;
 const Store = get_initializedDefault.Store;

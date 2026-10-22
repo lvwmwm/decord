@@ -1,17 +1,17 @@
-// Module ID: 15659
-// Function ID: 15660
+// Module ID: 15703
+// Function ID: 15704
 // Name: commands/conjureDevicePermissions
-// Dependencies: [5, 2045, 15660, 6357, 1087, 10756, 15621, 15605, 15661, 584, 2]
+// Dependencies: [5, 2045, 10767, 6364, 1087, 10768, 15665, 15649, 10769, 584, 2]
 
-// Module 15659 (commands/conjureDevicePermissions)
+// Module 15703 (commands/conjureDevicePermissions)
 import Constants2 from "Constants" /* 1087 */;
-import conjureDevicePermissions from "conjureDevicePermissions" /* 10756 */;
-import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 15605 */;
+import conjureDevicePermissions from "conjureDevicePermissions" /* 10768 */;
+import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 15649 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
-import ConjureDevicePermissionStore from "ConjureDevicePermissionStore" /* 15660 */;
-import Constants from "Constants" /* 6357 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15621 */;
+import ConjureDevicePermissionStore from "ConjureDevicePermissionStore" /* 10767 */;
+import Constants from "Constants" /* 6364 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15665 */;
 import size from "module_2" /* 2 */;
 
 let allowed, c5, closure_2, importDefault;
@@ -52,7 +52,7 @@ let obj3 = {
         return obj3;
       })
     };
-    prop = frame(10756).CONJURE_DEVICE_PERMISSION_NAMES;
+    prop = frame(10768).CONJURE_DEVICE_PERMISSION_NAMES;
     return obj;
   }
 };

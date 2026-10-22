@@ -1,25 +1,25 @@
-// Module ID: 8876
-// Function ID: 8877
+// Module ID: 8885
+// Function ID: 8886
 // Name: InputButton
-// Dependencies: [109, 19, 17, 21, 4966, 587, 558, 576, 5232, 7002, 5227, 2]
+// Dependencies: [109, 19, 17, 21, 4969, 587, 558, 576, 5236, 7009, 5231, 2]
 
-// Module 8876 (InputButton)
+// Module 8885 (InputButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ButtonConstants from "ButtonConstants" /* 5232 */;
-import InputFieldContainer from "InputFieldContainer" /* 7002 */;
+import ButtonConstants from "ButtonConstants" /* 5236 */;
+import InputFieldContainer from "InputFieldContainer" /* 7009 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
 let obj3;
 let tmp6;
-const BaseTextButton2 = tmp6(5227);
+const BaseTextButton2 = tmp6(5231);
 let closure_2 = ["ref"];
 let closure_3 = ["size", "round", "text", "value", "icon", "iconPosition", "accessibilityLabel", "accessibilityValue", "maxFontSizeMultiplier"];
 let closure_4 = ["size", "round", "text", "value", "icon", "iconPosition", "accessibilityLabel", "accessibilityValue", "maxFontSizeMultiplier"];
@@ -56,7 +56,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InputButton(
     str2 = iconPosition;
   }
   if (undefined === maxFontSizeMultiplier) {
-    maxFontSizeMultiplier = tmp(5232).BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
+    maxFontSizeMultiplier = tmp(5236).BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
   }
   const obj2 = { size: str, round: tmp6, hasLeadingIcon: "start" === str2 };
   const tmpResult = InputFieldContainer;
@@ -74,7 +74,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InputButton(
   } else {
     obj5 = {};
   }
-  const BaseTextButton = tmp(5227).BaseTextButton;
+  const BaseTextButton = tmp(5231).BaseTextButton;
   if (cResult[0] === inputStyles.padding) {
     let tmp10;
     if (cResult[1] === inputStyles.radius) {

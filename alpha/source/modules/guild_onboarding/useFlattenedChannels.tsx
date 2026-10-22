@@ -1,9 +1,9 @@
-// Module ID: 7184
-// Function ID: 7185
+// Module ID: 7191
+// Function ID: 7192
 // Name: useFlattenedChannels
 // Dependencies: [4821, 12, 1388, 558, 576, 504, 2]
 
-// Module 7184 (useFlattenedChannels)
+// Module 7191 (useFlattenedChannels)
 import _modDef12 from "module_12" /* 12 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import ChannelStore_mod from "ChannelStore" /* 4821 */;

@@ -1,13 +1,13 @@
-// Module ID: 17526
-// Function ID: 17527
+// Module ID: 17596
+// Function ID: 17597
 // Name: useDefaultAuthorizationNotifiers
-// Dependencies: [19, 2001, 1087, 558, 576, 504, 5675, 6639, 5645, 1128, 3282, 2]
+// Dependencies: [19, 2001, 1087, 558, 576, 504, 5679, 6646, 5649, 1128, 3282, 2]
 
-// Module 17526 (useDefaultAuthorizationNotifiers)
+// Module 17596 (useDefaultAuthorizationNotifiers)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef3282 from "module_3282" /* 3282 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5645 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5649 */;
 import react_mod from "react" /* 19 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -62,7 +62,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDefaultAu
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
-  const tmpResult3 = tmp(5675);
+  const tmpResult3 = tmp(5679);
   const isInAppBrowserOpen = tmpResult3.useIsInAppBrowserOpen();
   if (cResult[4] !== arg0) {
     const fn2 = function _(arg0) {
@@ -81,7 +81,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDefaultAu
     if (cResult[7] === value) {
       tmp13 = cResult[8];
     }
-    const tmpResult4 = tmp(6639);
+    const tmpResult4 = tmp(6646);
     const previousWhen = tmpResult4.usePreviousWhen(tmp13);
     if (cResult[9] === (stateFromStores && !isInAppBrowserOpen)) {
       if (cResult[10] === value) {
@@ -102,8 +102,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDefaultAu
       if (ref.current) {
         if (false === previousWhen) {
           if (true === closure_1) {
-            const tmp10 = state;
-            if (tmp10) {
+            const tmp3 = state;
+            if (tmp3) {
               tmp.current = false;
               if (closure_2) {
                 const obj = { text: intl.string(_modDef3282.uG6teD) };
@@ -174,8 +174,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDefaultAu
     if (ref.current) {
       if (false === previousWhen) {
         if (true === closure_1) {
-          const tmp10 = stateFromStores;
-          if (tmp10) {
+          const tmp3 = stateFromStores;
+          if (tmp3) {
             tmp.current = false;
             if (false) {
               const obj = { text: intl.string(_modDef3282.uG6teD) };

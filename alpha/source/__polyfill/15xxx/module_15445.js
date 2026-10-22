@@ -1,16 +1,25 @@
 // Module ID: 15445
 // Function ID: 15446
-// Dependencies: [15446]
+// Dependencies: [1174]
+// Exports: isMissingLocaleDataError
 
 // Module 15445
-import _mod15446 from "module_15446" /* 15446 */;
+import module_1174 from "module_1174" /* 1174 */;
 
+module_1174.__extends(function MissingLocaleDataError() {
+  const self = this;
+  let applyResult = null !== Error;
+  const obj = Error;
+  if (applyResult) {
+    applyResult = obj(...arguments);
+  }
+  if (!applyResult) {
+    applyResult = self;
+  }
+  applyResult.type = "MISSING_LOCALE_DATA";
+  return applyResult;
+}, Error);
 
-export default !_mod15446(() => {
-  const obj = {
-    get() {
-      return 7;
-    }
-  };
-  return 7 !== Object.defineProperty({}, 1, obj)[1];
-});
+export const isMissingLocaleDataError = function isMissingLocaleDataError(type) {
+  return "MISSING_LOCALE_DATA" === type.type;
+};

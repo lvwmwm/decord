@@ -1,15 +1,15 @@
-// Module ID: 18980
-// Function ID: 18981
+// Module ID: 19047
+// Function ID: 19048
 // Name: InviteEmpty
-// Dependencies: [19, 21, 8688, 10788, 18981, 10787, 558, 576, 4973, 5651, 2]
+// Dependencies: [19, 21, 8697, 10805, 19048, 10804, 558, 576, 4976, 5655, 2]
 // Exports: getInviteEmptySource
 
-// Module 18980 (InviteEmpty)
+// Module 19047 (InviteEmpty)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import shared from "shared" /* 4973 */;
-import FastImageDefault from "FastImage" /* 5651 */;
-import _mod8688 from "module_8688" /* 8688 */;
+import shared from "shared" /* 4976 */;
+import FastImageDefault from "FastImage" /* 5655 */;
+import _mod8697 from "module_8697" /* 8697 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -35,7 +35,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInviteEmp
   const theme = obj2.useThemeContext().theme;
   if (cResult[0] !== theme) {
     const obj3 = { dark, darker, light };
-    const tmpResult = _mod8688;
+    const tmpResult = _mod8697;
     const illustrationSource = tmpResult.getIllustrationSource(theme, obj3);
     cResult[0] = theme;
     cResult[1] = illustrationSource;
@@ -47,7 +47,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInviteEmp
 }) : (function useInviteEmptySource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8688;
+  const obj2 = _mod8697;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 });
@@ -78,7 +78,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteEmpty(
   return <tmp2 source={tmp} />;
 });
 function getInviteEmptySource(theme) {
-  const obj = _mod8688;
+  const obj = _mod8697;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }

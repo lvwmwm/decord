@@ -1,32 +1,32 @@
-// Module ID: 7805
-// Function ID: 7806
+// Module ID: 7813
+// Function ID: 7814
 // Name: StreamActionCreators
-// Dependencies: [5, 5697, 7806, 7807, 6621, 502, 4821, 4843, 4872, 5612, 1087, 6622, 584, 6624, 38, 5974, 7808, 5692, 7842, 1297, 1104, 6655, 1275, 5858, 6613, 7388, 7390, 2]
+// Dependencies: [5, 5701, 7814, 7815, 6628, 502, 4821, 4843, 4872, 5616, 1087, 6629, 584, 6631, 38, 5981, 7816, 5696, 7850, 1297, 1104, 6662, 1275, 5865, 6620, 7395, 7397, 2]
 // Exports: changeStreamRegion, closeStream, fetchStreamPreview, joinPrivateChannelAndWatchStream, notifyStreamStart, setLayout, setStreamPaused, startStream, stopOwnStream, stopStream, toggleSelfStreamHidden, updateStreamSettings, watchStreamAndTransitionToStream
 
-// Module 7805 (StreamActionCreators)
+// Module 7813 (StreamActionCreators)
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import StreamQualityUtils from "StreamQualityUtils" /* 5858 */;
-import ChannelUtils from "ChannelUtils" /* 5974 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6613 */;
-import Constants2 from "Constants" /* 6622 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6624 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6655 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7388 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 7390 */;
-import transitionToStreamDefault from "transitionToStream" /* 7842 */;
+import StreamQualityUtils from "StreamQualityUtils" /* 5865 */;
+import ChannelUtils from "ChannelUtils" /* 5981 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6620 */;
+import Constants2 from "Constants" /* 6629 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6631 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6662 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7395 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 7397 */;
+import transitionToStreamDefault from "transitionToStream" /* 7850 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GameConsoleStore from "GameConsoleStore" /* 5697 */;
-import PopoutWindowStore from "PopoutWindowStore" /* 7806 */;
-import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 7807 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6621 */;
+import GameConsoleStore from "GameConsoleStore" /* 5701 */;
+import PopoutWindowStore from "PopoutWindowStore" /* 7814 */;
+import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 7815 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6628 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
-import VoiceStateStore from "VoiceStateStore" /* 5612 */;
+import VoiceStateStore from "VoiceStateStore" /* 5616 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -59,7 +59,7 @@ function watchStream(stream, forceMultiple) {
       obj3.dispatch(obj4);
       const tmp18 = importDefault;
       if (null != guildId) {
-        const tmp12Result = tmp12(7808);
+        const tmp12Result = tmp12(7816);
         const result = tmp12Result.maybeSetGuildRoomVideoOverlay(true, guildId, channelId);
       }
       let forceFocus;
@@ -78,7 +78,7 @@ function watchStream(stream, forceMultiple) {
         tmp22 = forceMultiple;
       }
       if (!tmp22) {
-        const tmp18Result = tmp18(5692);
+        const tmp18Result = tmp18(5696);
         const participant = tmp18Result.selectParticipant(stream.channelId, encodeStreamKeyResult);
       }
     } else {

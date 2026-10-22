@@ -1,9 +1,9 @@
-// Module ID: 11765
-// Function ID: 11766
+// Module ID: 11798
+// Function ID: 11799
 // Name: MentionsBadge
 // Dependencies: [19, 21, 558, 576, 1202, 2]
 
-// Module 11765 (MentionsBadge)
+// Module 11798 (MentionsBadge)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;

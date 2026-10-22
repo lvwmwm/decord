@@ -1,25 +1,25 @@
-// Module ID: 9869
-// Function ID: 9870
+// Module ID: 9881
+// Function ID: 9882
 // Name: EmojiPickerListRow
-// Dependencies: [109, 19, 17, 1207, 9786, 1243, 21, 4966, 587, 1384, 683, 558, 576, 8542, 9870, 5651, 4973, 7207, 7208, 1202, 6887, 9871, 2]
+// Dependencies: [109, 19, 17, 1207, 9798, 1243, 21, 4969, 587, 1384, 683, 558, 576, 8551, 9882, 5655, 4976, 7214, 7215, 1202, 6894, 9883, 2]
 
-// Module 9869 (EmojiPickerListRow)
+// Module 9881 (EmojiPickerListRow)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1243 */;
-import shared from "shared" /* 4973 */;
-import FastImageDefault from "FastImage" /* 5651 */;
-import Pressables from "Pressables" /* 6887 */;
-import getEmojiItemUrlDefault from "getEmojiItemUrl" /* 9870 */;
-import EmojiPickerListRowViewDefault from "EmojiPickerListRowView" /* 9871 */;
+import shared from "shared" /* 4976 */;
+import FastImageDefault from "FastImage" /* 5655 */;
+import Pressables from "Pressables" /* 6894 */;
+import getEmojiItemUrlDefault from "getEmojiItemUrl" /* 9882 */;
+import EmojiPickerListRowViewDefault from "EmojiPickerListRowView" /* 9883 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9786 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9798 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -33,7 +33,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const LockIcon = tmp(8542);
+const LockIcon = tmp(8551);
 let closure_3 = ["nativeRow"];
 ({ View: hasOwnProperty, StyleSheet } = react_native);
 const IMAGE_SIZE = EmojiPickerListConstants.IMAGE_SIZE;
@@ -183,9 +183,9 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiItem(em
               const tmp15 = React4;
               const tmpResult = shared;
               if (tmpResult.isThemeDark(ThemeStore.theme)) {
-                tmp16Result = tmp16(7207);
+                tmp16Result = tmp16(7214);
               } else {
-                tmp16Result = tmp16(7208);
+                tmp16Result = tmp16(7215);
               }
               obj4 = { uri: tmp5 };
               tmp15Result = tmp15(tmp17, obj3);
@@ -276,9 +276,9 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiItem(em
     const tmp2Result = FastImageDefault;
     const tmp6Result = shared;
     if (tmp6Result.isThemeDark(ThemeStore.theme)) {
-      tmp2Result2 = tmp2(7207);
+      tmp2Result2 = tmp2(7214);
     } else {
-      tmp2Result2 = tmp2(7208);
+      tmp2Result2 = tmp2(7215);
     }
     obj3 = { uri: tmp4 };
     tmp10Result = tmp10(tmp2Result, obj2);
@@ -354,7 +354,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function E
                     class R {
                       constructor(arg0) {
                         closure_0 = emojis;
-                        found = emojis.find(() => { /* body not rendered: F145257 */ });
+                        found = emojis.find(() => { /* body not rendered: F145967 */ });
                         if (null != found) {
                           tmp2 = onLongPressEmoji;
                           tmp3 = onLongPressEmoji(found);
@@ -374,7 +374,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function E
                   class R {
                     constructor(arg0) {
                       closure_0 = emojis;
-                      found = emojis.find(() => { /* body not rendered: F145257 */ });
+                      found = emojis.find(() => { /* body not rendered: F145967 */ });
                       if (null != found) {
                         tmp2 = onLongPressEmoji;
                         tmp3 = onLongPressEmoji(found);
@@ -391,7 +391,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function E
               class C {
                 constructor(arg0) {
                   closure_0 = emojis;
-                  found = emojis.find(() => { /* body not rendered: F145256 */ });
+                  found = emojis.find(() => { /* body not rendered: F145966 */ });
                   if (null != found) {
                     tmp2 = onPressEmoji;
                     tmp3 = category;
@@ -429,7 +429,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function E
       class R {
         constructor(arg0) {
           closure_0 = emojis;
-          found = emojis.find(() => { /* body not rendered: F145257 */ });
+          found = emojis.find(() => { /* body not rendered: F145967 */ });
           if (null != found) {
             tmp2 = onLongPressEmoji;
             tmp3 = onLongPressEmoji(found);

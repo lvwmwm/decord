@@ -1,13 +1,13 @@
-// Module ID: 16604
-// Function ID: 16605
+// Module ID: 16673
+// Function ID: 16674
 // Name: AnimateEmojiSetting
-// Dependencies: [8308, 11155, 1128, 4797, 2]
+// Dependencies: [8317, 11172, 1128, 4797, 2]
 
-// Module 16604 (AnimateEmojiSetting)
+// Module 16673 (AnimateEmojiSetting)
 import intl2 from "intl" /* 1128 */;
 import UserSettings from "UserSettings" /* 4797 */;
-import SettingsConstants from "SettingsConstants" /* 8308 */;
-import SettingBuilders from "SettingBuilders" /* 11155 */;
+import SettingsConstants from "SettingsConstants" /* 8317 */;
+import SettingBuilders from "SettingBuilders" /* 11172 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

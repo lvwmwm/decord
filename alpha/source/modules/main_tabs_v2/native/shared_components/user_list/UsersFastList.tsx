@@ -1,27 +1,27 @@
-// Module ID: 10580
-// Function ID: 10581
+// Module ID: 10592
+// Function ID: 10593
 // Name: UsersFastList
-// Dependencies: [32, 19, 17, 10581, 21, 4966, 587, 558, 576, 10582, 6882, 9666, 5035, 1202, 5216, 6887, 10583, 1633, 7123, 10584, 10585, 10645, 10648, 13773, 13774, 7129, 2]
+// Dependencies: [32, 19, 17, 10593, 21, 4969, 587, 558, 576, 10594, 6889, 9678, 5038, 1202, 5220, 6894, 10595, 1633, 7130, 10596, 10597, 10657, 10660, 13809, 13810, 7136, 2]
 
-// Module 10580 (UsersFastList)
+// Module 10592 (UsersFastList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import Pressables from "Pressables" /* 6887 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 9666 */;
-import useFastestListTableRowPlaceholderConfig from "useFastestListTableRowPlaceholderConfig" /* 10582 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10583 */;
-import UserRowDefault from "UserRow" /* 10585 */;
-import GroupDMRowDefault from "GroupDMRow" /* 10645 */;
-import ChannelRowDefault from "ChannelRow" /* 10648 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import Pressables from "Pressables" /* 6894 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 9678 */;
+import useFastestListTableRowPlaceholderConfig from "useFastestListTableRowPlaceholderConfig" /* 10594 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10595 */;
+import UserRowDefault from "UserRow" /* 10597 */;
+import GroupDMRowDefault from "GroupDMRow" /* 10657 */;
+import ChannelRowDefault from "ChannelRow" /* 10660 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UsersFastListConstants from "UsersFastListConstants" /* 10581 */;
+import UsersFastListConstants from "UsersFastListConstants" /* 10593 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let obj6;
 let obj7;
 let rect;
 let tmp;
-const TableRow2 = tmp(6882);
+const TableRow2 = tmp(6889);
 let View = react_native.View;
 const USERS_LIST_PADDING_BETWEEN_SECTIONS = UsersFastListConstants.USERS_LIST_PADDING_BETWEEN_SECTIONS;
 const USERS_LIST_SECTION_BOTTOM_PADDING = UsersFastListConstants.USERS_LIST_SECTION_BOTTOM_PADDING;
@@ -377,7 +377,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
                                       return { opacity };
                                     }
                                   }
-                                  const View2 = tmp39(5035).View;
+                                  const View2 = tmp39(5038).View;
                                   tmp41 = metroImportDefault(View2, obj6);
                                 }
                                 const items = [tmp41, tmp33];
@@ -450,7 +450,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
                               return { opacity };
                             }
                           }
-                          const PressableOpacity = tmp(6887).PressableOpacity;
+                          const PressableOpacity = tmp(6894).PressableOpacity;
                           obj9 = { variant: "text-sm/semibold", color: "text-brand", children: actionTitle };
                           tmp31 = metroImportDefault(PressableOpacity, obj8);
                         }
@@ -676,7 +676,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
   const obj6 = { maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-md/medium", color: "text-subtle", style: memo, children: items3 };
   items3 = [title, ];
   let tmp12 = null;
-  const Text = tmp3(5216).Text;
+  const Text = tmp3(5220).Text;
   if (null != badge) {
     const obj7 = { style: tmp.badgeWrapper, children: metroImportDefault(native.Badge, obj8) };
     obj8 = { style: tmp.badge, value: badge };
@@ -693,7 +693,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
   let tmp18 = tmp11Result4;
   if (null != onTitlePress) {
     const obj10 = { accessibilityRole: "button", style: tmp.titlePressable, onPress: onTitlePress, children: tmp11Result4 };
-    tmp18 = metroImportDefault(tmp3(6887).PressableOpacity, obj10);
+    tmp18 = metroImportDefault(tmp3(6894).PressableOpacity, obj10);
   }
   const obj11 = { style: memo1, children: items5 };
   items5 = [tmp18, ];
@@ -701,7 +701,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
   const tmp20 = View;
   if (null != actionTitle) {
     const obj12 = { onPress: action, children: metroImportDefault(Text_Text.Text, obj13) };
-    const PressableOpacity = tmp3(6887).PressableOpacity;
+    const PressableOpacity = tmp3(6894).PressableOpacity;
     obj13 = { variant: "text-sm/semibold", color: "text-brand", children: actionTitle };
     tmp21 = metroImportDefault(PressableOpacity, obj12);
   }
@@ -714,7 +714,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
     View = ReanimatedRexportDefault.View;
     if (!disableThemedGradient) {
       const obj15 = { style: animatedStyle1, children: metroImportDefault(ThemedGradientDefault, { absolute: true, tall: true, wide: true, mix: true }) };
-      const View2 = tmp25(5035).View;
+      const View2 = tmp25(5038).View;
       tmp26 = metroImportDefault(View2, obj15);
     }
     items6 = [tmp26, tmp11Result5];

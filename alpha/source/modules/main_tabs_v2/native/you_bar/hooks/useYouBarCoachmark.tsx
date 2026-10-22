@@ -1,18 +1,18 @@
-// Module ID: 17636
-// Function ID: 17637
+// Module ID: 17706
+// Function ID: 17707
 // Name: useYouBarCoachmark
-// Dependencies: [32, 19, 4992, 4818, 558, 576, 1128, 4805, 5035, 15884, 1506, 14904, 5704, 504, 7473, 17637, 9798, 2]
+// Dependencies: [32, 19, 4995, 4818, 558, 576, 1128, 4805, 5038, 15926, 1506, 14948, 5708, 504, 7480, 17707, 9810, 2]
 
-// Module 17636 (useYouBarCoachmark)
+// Module 17706 (useYouBarCoachmark)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
 import Link from "Link" /* 1506 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
-import TinyBroncoLazy from "TinyBroncoLazy" /* 15884 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
+import TinyBroncoLazy from "TinyBroncoLazy" /* 15926 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4992 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,9 +21,9 @@ let obj1;
 let tmp;
 const get_initialized = tmp(504);
 const dismissible_content = tmp(4805);
-const useSelectedDismissibleContent = tmp(7473);
-const useCoachmark = tmp(9798);
-const usePrivateProfileCoachmarkProps = tmp(17637);
+const useSelectedDismissibleContent = tmp(7480);
+const useCoachmark = tmp(9810);
+const usePrivateProfileCoachmarkProps = tmp(17707);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 let closure_6 = [];
 let ReactCompilerGating = ReactCompilerGating_mod;

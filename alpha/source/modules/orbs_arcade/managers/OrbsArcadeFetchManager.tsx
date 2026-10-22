@@ -1,18 +1,18 @@
-// Module ID: 19169
-// Function ID: 19170
+// Module ID: 19236
+// Function ID: 19237
 // Name: OrbsArcadeFetchManager
-// Dependencies: [18195, 1104, 7193, 19170, 19171, 18196, 2]
+// Dependencies: [16298, 1104, 7200, 16303, 16304, 16299, 2]
 
-// Module 19169 (OrbsArcadeFetchManager)
+// Module 19236 (OrbsArcadeFetchManager)
 import DurationsDefault from "Durations" /* 1104 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 18196 */;
-import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 19170 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 19171 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 18195 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7193 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16299 */;
+import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 16303 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16304 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16298 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7200 */;
 import size from "module_2" /* 2 */;
 
-let gameStateForGame, orbsArcadeGames;
+let game, gameStateForGame;
 
 const MINUTE = DurationsDefault.Millis.MINUTE;
 let closure_4 = 5 * DurationsDefault.Millis.MINUTE;
@@ -59,23 +59,20 @@ class OrbsArcadeFetchManager extends AutomaticLifecycleManager {
         const _Date2 = Date;
         require.lastLocaleRefetchAt = Date.now();
         const obj = OrbsArcadeActionCreators;
-        orbsArcadeGames = obj.fetchOrbsArcadeGames();
+        const orbsArcadeGames = obj.fetchOrbsArcadeGames();
       }
     };
-    applyArgumentsResult.handleGameStateUpdate = function handleGameStateUpdate(arg0) {
-      let closure_129_0;
-      let game_state;
-      ({ game_id: closure_129_0, game_state } = arg0);
-      orbsArcadeGames = orbsArcadeGames.orbsArcadeGames;
-      const found = orbsArcadeGames.find((id) => id.id === closure_1_0);
-      if (null != found) {
-        let tmp4 = null != found.endsAt;
-        const versionId = found.versionId;
+    applyArgumentsResult.handleGameStateUpdate = function handleGameStateUpdate(game_state) {
+      game_state = game_state.game_state;
+      game = game.getGame(game_state.game_id);
+      if (null != game) {
+        let tmp4 = null != game.endsAt;
+        const versionId = game.versionId;
         const game_version_id = game_state.game_version_id;
         if (tmp4) {
           const _Date = Date;
           const _Date2 = Date;
-          const parsed = Date.parse(found.endsAt);
+          const parsed = Date.parse(game.endsAt);
           tmp4 = parsed <= Date.now();
         }
         let result = !tmp4;
@@ -88,7 +85,7 @@ class OrbsArcadeFetchManager extends AutomaticLifecycleManager {
         const tmp9 = versionId !== game_version_id || result;
         if (tmp9) {
           const obj2 = OrbsArcadeActionCreators;
-          const orbsArcadeGames1 = obj2.fetchOrbsArcadeGames();
+          const orbsArcadeGames = obj2.fetchOrbsArcadeGames();
         }
       }
     };
@@ -101,7 +98,7 @@ class OrbsArcadeFetchManager extends AutomaticLifecycleManager {
       if (require.hasFetched()) {
         const _Date = Date;
         let closure_0 = Date.now();
-        orbsArcadeGames = OrbsArcadeStore.orbsArcadeGames;
+        let orbsArcadeGames = OrbsArcadeStore.orbsArcadeGames;
         let items = [];
         HermesBuiltin.arraySpread(items, orbsArcadeGames.flatMap((id) => {
           const items = [, , ];
@@ -144,7 +141,7 @@ class OrbsArcadeFetchManager extends AutomaticLifecycleManager {
             closure_1_0.boundaryRefetchTimerId = null;
             closure_1_0.scheduledBoundaryAt = null;
             const obj = OrbsArcadeActionCreators;
-            orbsArcadeGames = obj.fetchOrbsArcadeGames();
+            const orbsArcadeGames = obj.fetchOrbsArcadeGames();
           }, min2(diff + Math.floor(Math.random() * closure_5), DAY));
         }
       }

@@ -1,10 +1,10 @@
-// Module ID: 8383
-// Function ID: 8384
+// Module ID: 8392
+// Function ID: 8393
 // Name: isCrosspost
 // Dependencies: [1087, 1405, 2]
 // Exports: default
 
-// Module 8383 (isCrosspost)
+// Module 8392 (isCrosspost)
 import FlagUtils from "FlagUtils" /* 1405 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;

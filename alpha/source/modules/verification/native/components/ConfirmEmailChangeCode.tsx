@@ -1,12 +1,12 @@
-// Module ID: 6984
-// Function ID: 6985
+// Module ID: 6991
+// Function ID: 6992
 // Name: ConfirmEmailChangeCode
-// Dependencies: [5, 19, 6902, 21, 558, 576, 1505, 1107, 6982, 1128, 6985, 2]
+// Dependencies: [5, 19, 6909, 21, 558, 576, 1505, 1107, 6989, 1128, 6992, 2]
 
-// Module 6984 (ConfirmEmailChangeCode)
+// Module 6991 (ConfirmEmailChangeCode)
 import Fragment from "Fragment" /* 21 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 6902 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 6909 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -122,7 +122,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmEmail
       tmp11 = cResult[6];
     }
     if (cResult[7] !== tmp5) {
-      const tmp18 = jsx(navigation(6985), { onFormSubmit: tmp7, onSuccess: tmp5, onResend: tmp9, headerText: tmp10, confirmButtonText: tmp11 });
+      const tmp18 = jsx(navigation(6992), { onFormSubmit: tmp7, onSuccess: tmp5, onResend: tmp9, headerText: tmp10, confirmButtonText: tmp11 });
       cResult[7] = tmp5;
       cResult[8] = tmp18;
       tmp15 = tmp18;
@@ -170,7 +170,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmEmail
       push(VerificationModalScenes.ENTER_EMAIL);
     }
   }, items);
-  navigation(6985);
+  navigation(6992);
   isChangeEmail = _asyncToGenerator(async (arg0) => {
     let c1;
     closure_0 = arg0;

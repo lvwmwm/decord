@@ -1,20 +1,20 @@
-// Module ID: 17798
-// Function ID: 17799
+// Module ID: 17868
+// Function ID: 17869
 // Name: NotificationNudgeBottomSheet
-// Dependencies: [19, 17, 13194, 1087, 4818, 21, 4966, 587, 558, 576, 1267, 5192, 13195, 17245, 5216, 1128, 5226, 6675, 5247, 2]
+// Dependencies: [19, 17, 13230, 1087, 4818, 21, 4969, 587, 558, 576, 1267, 5196, 13231, 17315, 5220, 1128, 5230, 6682, 5251, 2]
 
-// Module 17798 (NotificationNudgeBottomSheet)
+// Module 17868 (NotificationNudgeBottomSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13195 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13231 */;
 import react from "react" /* 19 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13194 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13230 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

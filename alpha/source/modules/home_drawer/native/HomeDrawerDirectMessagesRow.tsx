@@ -1,21 +1,21 @@
-// Module ID: 17586
-// Function ID: 17587
+// Module ID: 17656
+// Function ID: 17657
 // Name: HomeDrawerDirectMessagesRow
-// Dependencies: [19, 17, 5694, 4911, 1087, 21, 4966, 587, 558, 576, 504, 5216, 1128, 17582, 5138, 5135, 2]
+// Dependencies: [19, 17, 5698, 4911, 1087, 21, 4969, 587, 558, 576, 504, 5220, 1128, 17652, 5142, 5139, 2]
 
-// Module 17586 (HomeDrawerDirectMessagesRow)
+// Module 17656 (HomeDrawerDirectMessagesRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
-import HomeDrawerShared from "HomeDrawerShared" /* 17582 */;
+import HomeDrawerShared from "HomeDrawerShared" /* 17652 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5694 */;
+import PresenceStore from "PresenceStore" /* 5698 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let metroImportAll;
 let metroImportDefault;
 let size;
 let tmp;
-const HomeDrawerExperiment = tmp(5138);
+const HomeDrawerExperiment = tmp(5142);
 const View = react_native.View;
 const StatusTypes = Constants.StatusTypes;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -69,7 +69,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDr
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: intl2.string(intl3.t.YUU0RF) };
-      const Text2 = tmp(5216).Text;
+      const Text2 = tmp(5220).Text;
       intl2 = tmp(1128).intl;
       const tmp17 = metroImportDefault(Text2, obj2);
       cResult[5] = tmp17;
@@ -94,7 +94,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDr
     const obj5 = { style: tmp4.onlineDot };
     items1 = [metroImportDefault(View, obj5), ];
     const obj6 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: intl.format(intl3.t.N5UIKr, obj7) };
-    const Text = tmp(5216).Text;
+    const Text = tmp(5220).Text;
     intl = tmp(1128).intl;
     obj7 = { numFriends: stateFromStores };
     items1[1] = metroImportDefault(Text, obj6);
@@ -125,16 +125,16 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDr
     const obj3 = { style: tmp.onlineDot };
     items1 = [metroImportDefault(View, obj3), ];
     const obj4 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: intl.format(intl3.t.N5UIKr, obj5) };
-    const Text = tmp2(5216).Text;
+    const Text = tmp2(5220).Text;
     intl = tmp2(1128).intl;
     obj5 = { numFriends: stateFromStores };
     items1[1] = metroImportDefault(Text, obj4);
     tmp5 = metroImportAll(View, obj2);
   }
   const obj6 = { title: metroImportDefault(Text2, obj7), subtitle: tmp5 };
-  const HomeDrawerSharedItem = tmp2(17582).HomeDrawerSharedItem;
+  const HomeDrawerSharedItem = tmp2(17652).HomeDrawerSharedItem;
   obj7 = { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: intl2.string(intl3.t.YUU0RF) };
-  Text2 = tmp2(5216).Text;
+  Text2 = tmp2(5220).Text;
   intl2 = tmp2(1128).intl;
   return metroImportDefault(HomeDrawerSharedItem, obj6);
 });

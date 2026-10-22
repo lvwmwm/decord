@@ -1,14 +1,14 @@
 // Module ID: 2021
 // Function ID: 2022
 // Name: RunningGameStore
-// Dependencies: [2022, 2039, 2043, 15194, 504, 11147, 584, 2]
+// Dependencies: [2022, 2039, 2043, 15238, 504, 11164, 584, 2]
 // Exports: gameKey, getRawOverlayGameStatus, isDetectionEnabled, maybeTransformSubgame, transformForGameSettings
 
 // Module 2021 (RunningGameStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import SocialSdkGameResolver from "SocialSdkGameResolver" /* 11147 */;
-import OverlayTypes from "OverlayTypes" /* 15194 */;
+import SocialSdkGameResolver from "SocialSdkGameResolver" /* 11164 */;
+import OverlayTypes from "OverlayTypes" /* 15238 */;
 import GameStore from "GameStore" /* 2022 */;
 import DetectableGameStore from "DetectableGameStore" /* 2039 */;
 import LibraryApplicationStore from "LibraryApplicationStore" /* 2043 */;

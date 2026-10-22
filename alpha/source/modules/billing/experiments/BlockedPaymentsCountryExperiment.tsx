@@ -1,10 +1,10 @@
-// Module ID: 7506
-// Function ID: 7507
+// Module ID: 7513
+// Function ID: 7514
 // Name: BlockedPaymentsCountryExperiment
-// Dependencies: [1455, 558, 576, 7507, 2]
+// Dependencies: [1455, 558, 576, 7514, 2]
 // Exports: getIsPaymentsBlocked
 
-// Module 7506 (BlockedPaymentsCountryExperiment)
+// Module 7513 (BlockedPaymentsCountryExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

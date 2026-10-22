@@ -1,9 +1,9 @@
-// Module ID: 8907
-// Function ID: 8908
+// Module ID: 8916
+// Function ID: 8917
 // Name: StageChannelUpsellCardStore
 // Dependencies: [4827, 1269, 510, 1274, 558, 576, 4884, 2]
 
-// Module 8907 (StageChannelUpsellCardStore)
+// Module 8916 (StageChannelUpsellCardStore)
 import Storage2 from "Storage" /* 510 */;
 import react from "react" /* 576 */;
 import react_native from "react-native" /* 1274 */;

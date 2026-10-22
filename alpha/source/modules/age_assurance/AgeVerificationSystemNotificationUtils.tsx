@@ -1,24 +1,25 @@
-// Module ID: 12761
-// Function ID: 12762
+// Module ID: 12793
+// Function ID: 12794
 // Name: AgeVerificationSystemNotificationUtils
-// Dependencies: [10979, 5990, 1087, 7904, 2]
-// Exports: isAgeVerificationMessageWithConnectToTeenCta, isAgeVerificationMessageWithManualReviewCta, isAgeVerificationMessageWithRetryCta
+// Dependencies: [10996, 5997, 1087, 7912, 2]
+// Exports: isAgeVerificationMessageWithConfirmAgeCta, isAgeVerificationMessageWithConnectToTeenCta, isAgeVerificationMessageWithManualReviewCta, isAgeVerificationMessageWithRetryCta
 
-// Module 12761 (AgeVerificationSystemNotificationUtils)
+// Module 12793 (AgeVerificationSystemNotificationUtils)
 import Constants from "Constants" /* 1087 */;
-import ManualAgeAssuranceFallbackExperiment from "ManualAgeAssuranceFallbackExperiment" /* 7904 */;
-import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 10979 */;
-import MessageStore from "MessageStore" /* 5990 */;
+import ManualAgeAssuranceFallbackExperiment from "ManualAgeAssuranceFallbackExperiment" /* 7912 */;
+import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 10996 */;
+import MessageStore from "MessageStore" /* 5997 */;
 import size from "module_2" /* 2 */;
 
 const MessageEmbedTypes = Constants.MessageEmbedTypes;
 let obj2 = { RETRY: "retry", CONNECT_TO_TEEN: "connect_to_teen", REQUEST_MANUAL_REVIEW: "request_manual_review" };
+const obj3 = { VERIFIED_ADULT: "verified_adult", VERIFIED_TEEN: "verified_teen", ERROR: "error", FAE_FAILED: "fae_failed", ID_FAILED: "id_failed", UNDERAGE: "underage", MANUAL_REVIEW_SUBMITTED: "manual_review_submitted", TNS_SET_UNCONFIRMED: "tns_set_unconfirmed" };
 const obj = { CTAS: "ctas", CONTENT_TYPE: "content_type" };
 let result = size.fileFinishedImporting("modules/age_assurance/AgeVerificationSystemNotificationUtils.tsx");
 
 export const AgeVerificationSystemNotificationEmbedKeys = obj;
 export const AgeVerificationSystemNotificationCtaTypes = obj2;
-export const AgeVerificationSystemNotificationContentType = { VERIFIED_ADULT: "verified_adult", VERIFIED_TEEN: "verified_teen", ERROR: "error", FAE_FAILED: "fae_failed", ID_FAILED: "id_failed", UNDERAGE: "underage", MANUAL_REVIEW_SUBMITTED: "manual_review_submitted" };
+export const AgeVerificationSystemNotificationContentType = obj3;
 export const isAgeVerificationMessageWithRetryCta = function isAgeVerificationMessageWithRetryCta(channel_id, id) {
   const message = MessageStore.getMessage(channel_id, id);
   if (null != message) {
@@ -63,6 +64,27 @@ export const isAgeVerificationMessageWithManualReviewCta = function isAgeVerific
               result = obj2.isManualAgeAssuranceFallbackEnabled("isAgeVerificationMessageWithManualReviewCta");
             }
             return result;
+          }
+        }
+      }
+    }
+  }
+  return false;
+};
+export const isAgeVerificationMessageWithConfirmAgeCta = function isAgeVerificationMessageWithConfirmAgeCta(channel_id, id) {
+  const message = MessageStore.getMessage(channel_id, id);
+  if (null != message) {
+    if (null != message.embeds) {
+      if (0 !== message.embeds.length) {
+        if (null != message.embeds[0].fields) {
+          if (message.embeds[0].type === MessageEmbedTypes.AGE_VERIFICATION_SYSTEM_NOTIFICATION) {
+            const fields = message.embeds[0].fields;
+            const found = fields.find((rawName) => rawName.rawName === constants.CONTENT_TYPE);
+            let rawValue;
+            if (found != null) {
+              rawValue = found.rawValue;
+            }
+            return rawValue === obj3.TNS_SET_UNCONFIRMED;
           }
         }
       }

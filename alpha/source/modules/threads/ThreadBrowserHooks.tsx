@@ -1,24 +1,24 @@
-// Module ID: 13595
-// Function ID: 13596
+// Module ID: 13631
+// Function ID: 13632
 // Name: ThreadBrowserHooks
-// Dependencies: [32, 19, 13596, 4821, 4901, 6750, 6769, 8264, 4903, 1098, 558, 576, 8284, 12, 1388, 504, 11, 8263, 9685, 2]
+// Dependencies: [32, 19, 13632, 4821, 4901, 6757, 6776, 8273, 4903, 1098, 558, 576, 8293, 12, 1388, 504, 11, 8272, 9697, 2]
 
-// Module 13595 (ThreadBrowserHooks)
+// Module 13631 (ThreadBrowserHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1098 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8263 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 9685 */;
-import ReportToModChannelStore from "ReportToModChannelStore" /* 13596 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8272 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 9697 */;
+import ReportToModChannelStore from "ReportToModChannelStore" /* 13632 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
-import ReadStateStore from "ReadStateStore" /* 6750 */;
-import ActiveThreadsStore_mod from "ActiveThreadsStore" /* 6769 */;
-import ArchivedThreadsStore from "ArchivedThreadsStore" /* 8264 */;
+import ReadStateStore from "ReadStateStore" /* 6757 */;
+import ActiveThreadsStore_mod from "ActiveThreadsStore" /* 6776 */;
+import ArchivedThreadsStore from "ArchivedThreadsStore" /* 8273 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4903 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

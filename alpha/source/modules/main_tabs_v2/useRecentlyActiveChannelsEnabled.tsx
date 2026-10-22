@@ -1,12 +1,12 @@
-// Module ID: 7621
-// Function ID: 7622
+// Module ID: 7628
+// Function ID: 7629
 // Name: useRecentlyActiveChannelsEnabled
-// Dependencies: [6906, 558, 6905, 2]
+// Dependencies: [6913, 558, 6912, 2]
 // Exports: isRecentlyActiveChannelsEnabled, useRecentlyActiveChannelsEnabled
 
-// Module 7621 (useRecentlyActiveChannelsEnabled)
-import useDesignToggleDefault from "useDesignToggle" /* 6905 */;
-import DesignTogglesStore from "DesignTogglesStore" /* 6906 */;
+// Module 7628 (useRecentlyActiveChannelsEnabled)
+import useDesignToggleDefault from "useDesignToggle" /* 6912 */;
+import DesignTogglesStore from "DesignTogglesStore" /* 6913 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

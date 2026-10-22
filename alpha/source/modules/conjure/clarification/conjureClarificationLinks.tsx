@@ -1,76 +1,19 @@
-// Module ID: 12384
-// Function ID: 12385
+// Module ID: 12410
+// Function ID: 12411
 // Name: conjureClarificationLinks
-// Dependencies: [5, 10749, 2]
+// Dependencies: [11784, 2]
 // Exports: sendAfterLinkingApps
 
-// Module 12384 (conjureClarificationLinks)
-import conjureWorkerFetch from "conjureWorkerFetch" /* 10749 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+// Module 12410 (conjureClarificationLinks)
+import conjureLinkedApps from "conjureLinkedApps" /* 11784 */;
 import size from "module_2" /* 2 */;
 
-let obj = function _approveCaller() {
-  obj = _asyncToGenerator(async (arg0, caller_project_id) => {
-    let closure_0 = arg0;
-    let c3 = 0;
-    let c2 = 0;
-    return (async (arg0, value) => {
-      let obj2;
-      let obj6;
-      if (c2 === 2) {
-        c2 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp2 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: null };
-        }
-      } else {
-        try {
-          c2 = 2;
-          if (0 === c3) {
-            if (arg0 === 1) {
-              c2 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c2 = 3;
-              return { value, done: true };
-            } else {
-              const obj5 = { method: "PUT", json: obj6 };
-              c3 = 1;
-              c2 = 1;
-              obj6 = { caller_project_id };
-              const obj7 = { value: obj2.fetchConjureWorker(closure_0, "/agent/linked-apps", obj5), done: false };
-              obj2 = conjureWorkerFetch;
-              return obj7;
-            }
-          } else if (arg0 === 1) {
-            c2 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c2 = 3;
-            return { value, done: true };
-          } else {
-            c2 = 3;
-            return { value: "IconComponent", done: null };
-          }
-        } catch (tmp8) {
-          c2 = 3;
-          throw tmp8;
-        }
-      }
-    })();
-  });
-  return obj(...arguments);
-};
 const result = size.fileFinishedImporting("modules/conjure/clarification/conjureClarificationLinks.tsx");
 
-export const sendAfterLinkingApps = function sendAfterLinkingApps(arg0, result1, arg2, fn) {
+export const sendAfterLinkingApps = function sendAfterLinkingApps(arg0, result1, arg2, first1, fn) {
   let closure_0 = arg0;
   let closure_1 = arg2;
+  let closure_2 = first1;
   const questions = result1.questions;
   const flatMapResult = questions.flatMap((link) => {
     if (true === link.link) {
@@ -80,17 +23,18 @@ export const sendAfterLinkingApps = function sendAfterLinkingApps(arg0, result1,
       }
       if ("entities" === kind) {
         const entities = tmp.entities;
-        const mapped = entities.map((id) => id.id);
+        const mapped = entities.map((id) => ({ target: id.id, build: first1[link.id] }));
       }
       return [];
     }
   });
   if (0 !== flatMapResult.length) {
     const allSettledResult = Promise.allSettled(flatMapResult.map((item) => {
-      function approveCaller() {
-        return closure_1_3(...arguments);
-      }
-      return approveCaller(item, closure_0);
+      let build;
+      let target;
+      ({ target, build } = item);
+      const obj = conjureLinkedApps;
+      return obj.linkConjureApp(target, closure_0, build);
     }));
     allSettledResult.then(fn);
   } else {

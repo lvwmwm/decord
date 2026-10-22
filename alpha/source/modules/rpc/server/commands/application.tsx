@@ -1,19 +1,19 @@
-// Module ID: 15614
-// Function ID: 15615
+// Module ID: 15658
+// Function ID: 15659
 // Name: application
-// Dependencies: [2045, 6357, 1087, 11404, 11407, 15615, 6790, 9224, 15616, 1267, 1297, 9412, 2]
+// Dependencies: [2045, 6364, 1087, 11421, 11424, 15659, 6797, 9233, 15660, 1267, 1297, 9423, 2]
 
-// Module 15614 (application)
+// Module 15658 (application)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import Constants2 from "Constants" /* 6357 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6790 */;
-import RPCErrorDefault from "RPCError" /* 9224 */;
-import TestModeUtils from "TestModeUtils" /* 9412 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11404 */;
-import RPCHelpers from "RPCHelpers" /* 11407 */;
-import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 15615 */;
-import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 15616 */;
+import Constants2 from "Constants" /* 6364 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6797 */;
+import RPCErrorDefault from "RPCError" /* 9233 */;
+import TestModeUtils from "TestModeUtils" /* 9423 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11421 */;
+import RPCHelpers from "RPCHelpers" /* 11424 */;
+import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 15659 */;
+import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 15660 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
@@ -87,20 +87,20 @@ let obj2 = {
   scope: RPC_LOCAL_SCOPE,
   handler(socket) {
     let obj2;
-    let obj4;
+    let obj3;
     const id = socket.socket.application.id;
     if (null == id) {
       const self = this;
       const self2 = this;
       const obj = { errorCode: metroRequire.INVALID_COMMAND };
-      const tmp5 = new RPCErrorDefault(obj, "No application.");
-      throw tmp5;
+      const tmp8 = new RPCErrorDefault(obj, "No application.");
+      throw tmp8;
     } else {
       const HTTP = HTTPUtils.HTTP;
       const request = { url: hasOwnProperty.APPLICATION_TICKET(id), body: obj2, retries: 3, oldFormErrors: true, rejectWithError: false };
       const post = HTTP.post;
-      obj2 = { test_mode: obj4.isTestModeForApplication(id) };
-      obj4 = TestModeUtils;
+      obj2 = { test_mode: obj3.isTestModeForApplication(id) };
+      obj3 = TestModeUtils;
       const postResult = post(request);
       return postResult.then((body) => body.body);
     }

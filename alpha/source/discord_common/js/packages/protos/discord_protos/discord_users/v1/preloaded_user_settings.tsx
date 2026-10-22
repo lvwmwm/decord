@@ -2168,7 +2168,7 @@ class VoiceAndVideoSettings$Type extends MessageType13 {
     return tmp2;
   }
   create(partialSettings) {
-    const obj = { videoBackgroundFilterDesktop: { oneofKind: "r" } };
+    const obj = { videoBackgroundFilterDesktop: { oneofKind: "Array" } };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
@@ -2528,7 +2528,7 @@ items12[1] = {
 };
 items12[2] = { no: 3, name: "gore_content_non_friend_dm", kind: "enum", T: T22 };
 let tmp22 = new "binaryReadMap12"("discord_protos.discord_users.v1.GoreContentSettings", items12, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-const __initData5 = tmp22;
+let internalBinaryWrite8 = tmp22;
 const MessageType16 = _mod1212.MessageType;
 class SelfHarmContentSettings$Type extends MessageType16 {
   constructor() {
@@ -8151,7 +8151,7 @@ items45[2] = {
 };
 items45[3] = { no: 4, name: "disable_double_tap", kind: "message", T: T61 };
 const tmp59 = new "binaryReadMap12"("discord_protos.discord_users.v1.DefaultReactionEmoji", items45, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-let internalBinaryWrite8 = tmp59;
+internalBinaryWrite8 = tmp59;
 const MessageType53 = _mod1212.MessageType;
 class InAppFeedbackSettings$Type extends MessageType53 {
   constructor() {

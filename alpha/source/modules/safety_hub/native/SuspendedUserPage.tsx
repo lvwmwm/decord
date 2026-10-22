@@ -1,24 +1,24 @@
-// Module ID: 18191
-// Function ID: 18192
+// Module ID: 18261
+// Function ID: 18262
 // Name: SuspendedUserPage
-// Dependencies: [19, 17, 7898, 7874, 21, 4966, 587, 558, 576, 504, 6647, 5642, 7935, 1128, 8090, 5216, 15909, 7200, 2]
+// Dependencies: [19, 17, 7906, 7882, 21, 4969, 587, 558, 576, 504, 6654, 5646, 7943, 1128, 8099, 5220, 15951, 7207, 2]
 
-// Module 18191 (SuspendedUserPage)
+// Module 18261 (SuspendedUserPage)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
-import LinkingDefault from "Linking" /* 5642 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6647 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7200 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8090 */;
-import SafetyHubPageDefault from "SafetyHubPage" /* 15909 */;
+import LinkingDefault from "Linking" /* 5646 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6654 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7207 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8099 */;
+import SafetyHubPageDefault from "SafetyHubPage" /* 15951 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7898 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7874 */;
+import SafetyHubStore from "SafetyHubStore" /* 7906 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7882 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -115,7 +115,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuspendedUse
         const rect = { top: true, right: true, left: true, children: metroImportAll(View, obj2) };
         obj2 = { style: tmp4.container, children: items1 };
         items1 = [tmp12, tmp18];
-        const SafeAreaPaddingView = tmp(7200).SafeAreaPaddingView;
+        const SafeAreaPaddingView = tmp(7207).SafeAreaPaddingView;
         const tmp26 = metroImportDefault(SafeAreaPaddingView, rect);
         cResult[10] = tmp4.container;
         cResult[11] = tmp12;
@@ -128,15 +128,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuspendedUse
   if (tmp13) {
     const obj3 = { style: tmp4.header, children: items2 };
     const obj4 = { variant: "destructive", accessibilityLabel: intl.string(intl4.t.cpT0Cq), onPress: tmp9, icon: AssetRegistryDefault };
-    const IconButton = tmp(7935).IconButton;
+    const IconButton = tmp(7943).IconButton;
     intl = tmp(1128).intl;
     items2 = [metroImportDefault(IconButton, obj4), ];
     const obj5 = { style: tmp4.text, onPress: tmp10, variant: "text-xs/medium", color: "control-critical-primary-text-default", children: items3 };
-    const Text = tmp(5216).Text;
+    const Text = tmp(5220).Text;
     const intl2 = tmp(1128).intl;
     items3 = [intl2.string(intl4.t["MG+Bzb"]), " ", ];
     const obj6 = { style: tmp4.link, variant: "text-xs/medium", color: "control-critical-primary-text-default", children: intl3.string(intl4.t["9JceHN"]) };
-    const Text2 = tmp(5216).Text;
+    const Text2 = tmp(5220).Text;
     intl3 = tmp(1128).intl;
     items3[2] = metroImportDefault(Text2, obj6);
     items2[1] = metroImportAll(Text, obj5);
@@ -172,7 +172,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuspendedUse
         },
       icon: AssetRegistryDefault
     };
-    const IconButton = tmp2(7935).IconButton;
+    const IconButton = tmp2(7943).IconButton;
     intl = tmp2(1128).intl;
     items1 = [metroImportDefault(IconButton, obj4), ];
     const obj5 = {
@@ -185,11 +185,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuspendedUse
       color: "control-critical-primary-text-default",
       children: items2
     };
-    const Text = tmp2(5216).Text;
+    const Text = tmp2(5220).Text;
     const intl2 = tmp2(1128).intl;
     items2 = [intl2.string(intl4.t["MG+Bzb"]), " ", ];
     const obj6 = { style: tmp.link, variant: "text-xs/medium", color: "control-critical-primary-text-default", children: intl3.string(intl4.t["9JceHN"]) };
-    const Text2 = tmp2(5216).Text;
+    const Text2 = tmp2(5220).Text;
     intl3 = tmp2(1128).intl;
     items2[2] = metroImportDefault(Text2, obj6);
     items1[1] = metroImportAll(Text, obj5);

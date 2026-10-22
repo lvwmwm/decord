@@ -1,100 +1,142 @@
 // Module ID: 10337
 // Function ID: 10338
-// Dependencies: [41, 42, 93, 95, 98, 10173, 10327, 10200, 10329]
+// Dependencies: [10338, 10340, 10342, 10343, 10344, 10345, 10346, 10347, 10348, 10349, 10350, 10181, 10188, 10190, 10214, 10351, 10226, 10221]
+// Exports: createCasualConfiguration, parse, parseDate
 
 // Module 10337
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10173 */;
-import _mod10327 from "module_10327" /* 10327 */;
-import _mod10329 from "module_10329" /* 10329 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import _mod10214 from "module_10214" /* 10214 */;
+import includeCommonConfiguration2 from "includeCommonConfiguration" /* 10221 */;
+import _mod10226 from "module_10226" /* 10226 */;
+import _mod10338 from "module_10338" /* 10338 */;
+import _mod10340 from "module_10340" /* 10340 */;
+import _mod10342 from "module_10342" /* 10342 */;
+import _mod10343 from "module_10343" /* 10343 */;
+import _mod10344 from "module_10344" /* 10344 */;
+import _mod10345 from "module_10345" /* 10345 */;
+import _mod10346 from "module_10346" /* 10346 */;
+import _mod10347 from "module_10347" /* 10347 */;
+import _mod10348 from "module_10348" /* 10348 */;
+import _mod10349 from "module_10349" /* 10349 */;
+import _mod10350 from "module_10350" /* 10350 */;
+import _mod10351 from "module_10351" /* 10351 */;
+import { Chrono } from "module_10181" /* 10181 */;
 
-let tmp2;
-const _mod10200 = tmp2(10200);
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+const require = globalThis.__r;
 
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
+function createConfiguration(flag) {
+  let items;
+  let items1;
+  const obj = { parsers: items, refiners: items1 };
+  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
+  items = [new module_10226.default(), , , , , , ];
+  new module_10226.default();
+  items[1] = new module_10214.default(true);
+  new module_10214.default(true);
+  items[2] = new module_10338.default();
+  new module_10338.default();
+  items[3] = new module_10340.default();
+  new module_10340.default();
+  items[4] = new module_10349.default();
+  new module_10349.default();
+  items[5] = new module_10343.default(flag);
+  new module_10343.default(flag);
+  items[6] = new module_10344.default();
+  new module_10344.default();
+  items1 = [new module_10346.default(), ];
+  new module_10346.default();
+  items1[1] = new module_10345.default();
+  new module_10345.default();
+  return includeCommonConfiguration(obj, flag);
 }
-class UKWeekdayParser {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, UKWeekdayParser);
-    const obj = _getPrototypeOf(UKWeekdayParser);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
+const fn = this && this.__importDefault || ((__esModule) => {
+  let tmp2;
+  const tmp = __esModule;
+  if (!tmp) {
+    tmp2 = { default: __esModule };
+    const obj = { default: __esModule };
+  } else {
+    tmp2 = __esModule;
   }
+  return tmp2;
+});
+function createCasualConfiguration() {
+  const tmp = createConfiguration(false);
+  const parsers = tmp.parsers;
+  const unshift = parsers.unshift;
+  const _default = new module_10347.default();
+  unshift(_default);
+  const parsers1 = tmp.parsers;
+  const unshift2 = parsers1.unshift;
+  const _default1 = new module_10348.default();
+  unshift2(_default1);
+  const parsers2 = tmp.parsers;
+  const unshift3 = parsers2.unshift;
+  const _default2 = new module_10342.default();
+  unshift3(_default2);
+  const parsers3 = tmp.parsers;
+  const unshift4 = parsers3.unshift;
+  const _default3 = new module_10350.default();
+  unshift4(_default3);
+  const parsers4 = tmp.parsers;
+  const unshift5 = parsers4.unshift;
+  const _default4 = new module_10351.default();
+  unshift5(_default4);
+  return tmp;
 }
-_inherits(UKWeekdayParser, _mod10329.AbstractParserWithLeftRightBoundaryChecking);
-const entry = {
-  key: "innerPatternString",
-  value: function innerPatternString(arg0) {
-    return "(?:(?:,|\\(|\uFF08)\\s*)?(?:\u0432\\s*?)?(?:\u0443\\s*?)?(?:(\u0446\u0435\u0439|\u043C\u0438\u043D\u0443\u043B\u043E\u0433\u043E|\u043C\u0438\u043D\u0443\u043B\u0438\u0439|\u043F\u043E\u043F\u0435\u0440\u0435\u0434\u043D\u0456\u0439|\u043F\u043E\u043F\u0435\u0440\u0435\u0434\u043D\u044C\u043E\u0433\u043E|\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u0433\u043E|\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u0438\u0439|\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u043C\u0443)\\s*)?(" + repeatedTimeunitPattern.matchAnyPattern(_mod10327.WEEKDAY_DICTIONARY) + ")(?:\\s*(?:,|\\)|\uFF09))?(?:\\s*(\u043D\u0430|\u0443|\u0432)\\s*(\u0446\u044C\u043E\u043C\u0443|\u043C\u0438\u043D\u0443\u043B\u043E\u043C\u0443|\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u043C\u0443)\\s*\u0442\u0438\u0436\u043D\u0456)?";
-  }
+const module_10338 = fn(_mod10338);
+const module_10340 = fn(_mod10340);
+const module_10342 = fn(_mod10342);
+const module_10343 = fn(_mod10343);
+const module_10344 = fn(_mod10344);
+const module_10345 = fn(_mod10345);
+const module_10346 = fn(_mod10346);
+const module_10347 = fn(_mod10347);
+const module_10348 = fn(_mod10348);
+const module_10349 = fn(_mod10349);
+const module_10350 = fn(_mod10350);
+const module_10214 = fn(_mod10214);
+const module_10351 = fn(_mod10351);
+const module_10226 = fn(_mod10226);
+const configuration = createConfiguration(false);
+let parsers = configuration.parsers;
+let unshift = parsers.unshift;
+let _default = new module_10347.default();
+unshift(_default);
+let parsers1 = configuration.parsers;
+let unshift2 = parsers1.unshift;
+let _default1 = new module_10348.default();
+unshift2(_default1);
+let parsers2 = configuration.parsers;
+let unshift3 = parsers2.unshift;
+let _default2 = new module_10342.default();
+unshift3(_default2);
+let parsers3 = configuration.parsers;
+let unshift4 = parsers3.unshift;
+let _default3 = new module_10350.default();
+unshift4(_default3);
+let parsers4 = configuration.parsers;
+let unshift5 = parsers4.unshift;
+let _default4 = new module_10351.default();
+unshift5(_default4);
+const chrono = new Chrono(configuration);
+const chrono1 = new require("module_10181").Chrono(createConfiguration(true));
+const Chrono_export = require("module_10181").Chrono;
+
+export { createCasualConfiguration };
+export { createConfiguration };
+export const parse = function parse(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parse(arg0, arg1, arg2);
 };
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      let str = arg1[1];
-      const obj = arg1[2];
-      const toLocaleLowerCaseResult = obj.toLocaleLowerCase();
-      const tmp4 = _mod10327.WEEKDAY_DICTIONARY[toLocaleLowerCaseResult];
-      if (!str) {
-        str = arg1[3];
-      }
-      if (!str) {
-        str = "";
-      }
-      const toLocaleLowerCaseResult1 = str.toLocaleLowerCase();
-      let str2 = "last";
-      if ("\u043C\u0438\u043D\u0443\u043B\u043E\u0433\u043E" != toLocaleLowerCaseResult1) {
-        str2 = "last";
-        if ("\u043C\u0438\u043D\u0443\u043B\u0438\u0439" != toLocaleLowerCaseResult1) {
-          str2 = "last";
-          if ("\u043F\u043E\u043F\u0435\u0440\u0435\u0434\u043D\u0456\u0439" != toLocaleLowerCaseResult1) {
-            str2 = "last";
-            if ("\u043F\u043E\u043F\u0435\u0440\u0435\u0434\u043D\u044C\u043E\u0433\u043E" != toLocaleLowerCaseResult1) {
-              str2 = "next";
-              if ("\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u0433\u043E" != toLocaleLowerCaseResult1) {
-                str2 = "next";
-                if ("\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u0438\u0439" != toLocaleLowerCaseResult1) {
-                  str2 = null;
-                  const tmp6 = "\u0446\u0435\u0439" != toLocaleLowerCaseResult1 && "\u0446\u044C\u043E\u0433\u043E" != toLocaleLowerCaseResult1 && "\u0446\u044C\u043E\u043C\u0443" != toLocaleLowerCaseResult1;
-                  if (!tmp6) {
-                    str2 = "this";
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      return _mod10200.createParsingComponentsAtWeekday(reference.reference, tmp4, str2);
-    }
-  }
-];
-
-export default _createClass(UKWeekdayParser, items);
+export const parseDate = function parseDate(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parseDate(arg0, arg1, arg2);
+};
+export { Chrono_export as Chrono };
+export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
+export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
+export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
+export const Meridiem = require("Meridiem").Meridiem;
+export const Weekday = require("Meridiem").Weekday;
+export const casual = chrono;
+export const strict = chrono1;

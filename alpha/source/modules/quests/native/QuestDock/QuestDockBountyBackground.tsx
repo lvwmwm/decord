@@ -1,33 +1,33 @@
-// Module ID: 16382
-// Function ID: 16383
+// Module ID: 16451
+// Function ID: 16452
 // Name: QuestDockBountyBackground
-// Dependencies: [19, 17, 16259, 6689, 16261, 21, 4966, 558, 576, 573, 16369, 16370, 16289, 9542, 5234, 587, 683, 16368, 2]
+// Dependencies: [19, 17, 16329, 6696, 16331, 21, 4969, 558, 576, 573, 16438, 16439, 16359, 9553, 5238, 587, 683, 16437, 2]
 
-// Module 16382 (QuestDockBountyBackground)
+// Module 16451 (QuestDockBountyBackground)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
-import useToken from "useToken" /* 5234 */;
-import QuestConstants from "QuestConstants" /* 6689 */;
-import AssetUtils from "AssetUtils" /* 9542 */;
-import QuestDockConstants from "QuestDockConstants" /* 16261 */;
-import QuestDockCreativeContext from "QuestDockCreativeContext" /* 16289 */;
-import QuestDockVideoBackground from "QuestDockVideoBackground" /* 16368 */;
-import useIsQuestDockModeActiveOrExitingDefault from "useIsQuestDockModeActiveOrExiting" /* 16369 */;
-import QuestDockBountySmokeLayer from "QuestDockBountySmokeLayer" /* 16370 */;
+import useToken from "useToken" /* 5238 */;
+import QuestConstants from "QuestConstants" /* 6696 */;
+import AssetUtils from "AssetUtils" /* 9553 */;
+import QuestDockConstants from "QuestDockConstants" /* 16331 */;
+import QuestDockCreativeContext from "QuestDockCreativeContext" /* 16359 */;
+import QuestDockVideoBackground from "QuestDockVideoBackground" /* 16437 */;
+import useIsQuestDockModeActiveOrExitingDefault from "useIsQuestDockModeActiveOrExiting" /* 16438 */;
+import QuestDockBountySmokeLayer from "QuestDockBountySmokeLayer" /* 16439 */;
 import react from "react" /* 19 */;
-import QuestDockStore from "QuestDockStore" /* 16259 */;
-import createStyles from "createStyles" /* 4966 */;
+import QuestDockStore from "QuestDockStore" /* 16329 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const QuestDockVideoBackgroundDefault = QuestDockVideoBackground;
 
 let tmp9;
-const QuestDockBountySmokeLayerDefault = tmp9(16370);
+const QuestDockBountySmokeLayerDefault = tmp9(16439);
 const View = react_native.View;
 const QuestDockMode = QuestConstants.QuestDockMode;
 const expandedHeight = QuestDockConstants.QUEST_DOCK_PORTRAIT_MEDIA_EXPANDED_HEIGHT;
@@ -115,8 +115,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
   const tmp = closure_9();
   const obj = width(573);
   const stateFromStores = obj.useStateFromStores(items, () => QuestDockStore.prevRestingQuestDockMode);
-  const tmp7 = height(16369)(QuestDockMode.EXPANDED);
-  const obj2 = width(16370);
+  const tmp7 = height(16438)(QuestDockMode.EXPANDED);
+  const obj2 = width(16439);
   size = obj2.useSmokeArtSize();
   const tmp2 = width;
   width = size.width;
@@ -127,8 +127,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
   const tmp6 = QuestDockMode;
   if (tmp7) {
     const items2 = [tmp.smokeArtWrapper, tmp8];
-    ({ surface: tmp2(16370).QuestDockBountySmokeSurface.EXPANDED, paused: stateFromStores !== tmp6.EXPANDED });
-    tmp5(16370);
+    ({ surface: tmp2(16439).QuestDockBountySmokeSurface.EXPANDED, paused: stateFromStores !== tmp6.EXPANDED });
+    tmp5(16439);
     tmp9 = <View style={items2}>{null}</View>;
   }
   return tmp9;
@@ -194,14 +194,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let questDockBounty;
   let token;
   previewImageUrl = previewImageUrl.previewImageUrl;
-  let obj = questDockBounty(16289);
+  let obj = questDockBounty(16359);
   questDockBounty = obj.useQuestDockBounty();
   const items = [questDockBounty.videoPreview];
   const memo = react.useMemo(() => {
     const obj = AssetUtils;
     return obj.getMimetype(questDockBounty.videoPreview);
   }, items);
-  const obj2 = questDockBounty(5234);
+  const obj2 = questDockBounty(5238);
   token = obj2.useToken(token(587).colors.BACKGROUND_BRAND);
   const items1 = [token];
   const memo1 = react.useMemo(() => {
@@ -209,8 +209,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const mixResult = obj.mix(token, nativeDefault.unsafe_rawColors.BLACK, 0.77, "rgb");
     return mixResult.hex();
   }, items1);
-  token(16368);
-  return <tmp5 imageUrl={previewImageUrl} videoUrl={questDockBounty.videoPreview} videoMimetype={memo} collapsedMediaMode={questDockBounty(16368).QuestDockBackgroundCollapsedMediaMode.HIDDEN} gradientBaseColor={memo1} backdropColor={memo1} expandedHeight={expandedHeight} foregroundContent={null} />;
+  token(16437);
+  return <tmp5 imageUrl={previewImageUrl} videoUrl={questDockBounty.videoPreview} videoMimetype={memo} collapsedMediaMode={questDockBounty(16437).QuestDockBackgroundCollapsedMediaMode.HIDDEN} gradientBaseColor={memo1} backdropColor={memo1} expandedHeight={expandedHeight} foregroundContent={null} />;
 }));
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockBountyBackground.tsx");

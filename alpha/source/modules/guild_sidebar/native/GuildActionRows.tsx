@@ -1,23 +1,23 @@
-// Module ID: 17464
-// Function ID: 17465
+// Module ID: 17534
+// Function ID: 17535
 // Name: GuildActionRows
-// Dependencies: [19, 17, 7618, 6750, 11982, 7171, 6684, 21, 4966, 587, 7418, 4991, 4805, 573, 7614, 6651, 11189, 2002, 13157, 13059, 1128, 14975, 2]
+// Dependencies: [19, 17, 7625, 6757, 12003, 7178, 6691, 21, 4969, 587, 7425, 4994, 4805, 573, 7621, 6658, 11206, 2002, 13193, 13095, 1128, 15019, 2]
 // Exports: GuildRolesAndChannelsRow
 
-// Module 17464 (GuildActionRows)
+// Module 17534 (GuildActionRows)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6651 */;
-import ReadStateConstants from "ReadStateConstants" /* 6684 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7171 */;
-import ChannelListState from "ChannelListState" /* 7614 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11982 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6658 */;
+import ReadStateConstants from "ReadStateConstants" /* 6691 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7178 */;
+import ChannelListState from "ChannelListState" /* 7621 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12003 */;
 import react from "react" /* 19 */;
-import NewChannelsStore from "NewChannelsStore" /* 7618 */;
-import ReadStateStore from "ReadStateStore" /* 6750 */;
-import createStyles from "createStyles" /* 4966 */;
+import NewChannelsStore from "NewChannelsStore" /* 7625 */;
+import ReadStateStore from "ReadStateStore" /* 6757 */;
+import createStyles from "createStyles" /* 4969 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -37,10 +37,10 @@ export const GuildRolesAndChannelsRow = function GuildRolesAndChannelsRow(guild)
   const selected = guild.selected;
   let id;
   const tmp = closure_10();
-  const tmp4 = id(7418)(guild);
+  const tmp4 = id(7425)(guild);
   const tmp2 = id;
   id = guild.id;
-  let obj = guild(4991);
+  let obj = guild(4994);
   const result = obj.useIsDismissibleContentDismissed_UNSAFE(guild(4805).DismissibleContent.CHANNEL_BROWSER_NEW_BADGE_NUX);
   let obj2 = guild(573);
   const items = [ReadStateStore];
@@ -52,11 +52,11 @@ export const GuildRolesAndChannelsRow = function GuildRolesAndChannelsRow(guild)
   const callback = react.useCallback(() => {
     const obj = ModalActionCreatorsDefault;
     const obj2 = { guildId: id };
-    obj.pushLazy(asyncRequire(11189, dependencyMap.paths), obj2, closure_7);
+    obj.pushLazy(asyncRequire(11206, dependencyMap.paths), obj2, closure_7);
   }, items2);
-  let SELECTED = guild(13157).ChannelModes.DEFAULT;
+  let SELECTED = guild(13193).ChannelModes.DEFAULT;
   if (selected) {
-    SELECTED = tmp5(13157).ChannelModes.SELECTED;
+    SELECTED = tmp5(13193).ChannelModes.SELECTED;
   }
   let tmp10 = !result;
   if (result) {
@@ -67,9 +67,9 @@ export const GuildRolesAndChannelsRow = function GuildRolesAndChannelsRow(guild)
   }
   let tmp11 = null;
   if (tmp10) {
-    tmp11 = <View style={tmp.channelInfoContainer}>{jsx(guild(13059).NewBadge, {})}</View>;
+    tmp11 = <View style={tmp.channelInfoContainer}>{jsx(guild(13095).NewBadge, {})}</View>;
   }
-  tmp2(13157);
+  tmp2(13193);
   const intl = tmp5(1128).intl;
   const string = intl.string;
   const t = tmp5(1128).t;
@@ -78,7 +78,7 @@ export const GuildRolesAndChannelsRow = function GuildRolesAndChannelsRow(guild)
   } else {
     stringResult = string(t.et6wav);
   }
-  const BaseChannelName = tmp5(13157).BaseChannelName;
+  const BaseChannelName = tmp5(13193).BaseChannelName;
   const intl2 = tmp5(1128).intl;
   const string2 = intl2.string;
   const t2 = tmp5(1128).t;
@@ -87,7 +87,7 @@ export const GuildRolesAndChannelsRow = function GuildRolesAndChannelsRow(guild)
   } else {
     string2(t2.et6wav);
   }
-  ({ mode: SELECTED, IconComponent: guild(14975).ChannelListMagnifyingGlassIcon });
-  const BaseChannelIcon = tmp5(13157).BaseChannelIcon;
+  ({ mode: SELECTED, IconComponent: guild(15019).ChannelListMagnifyingGlassIcon });
+  const BaseChannelIcon = tmp5(13193).BaseChannelIcon;
   return <tmp2Result onPress={callback} style={tmp.container} accessible accessibilityLabel={stringResult} accessibilityState={{ selected }} mode={SELECTED} name={null} icon={null} channelInfo={tmp11} />;
 };

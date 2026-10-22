@@ -1,55 +1,20 @@
 // Module ID: 12596
 // Function ID: 12597
 // Dependencies: []
-// Exports: makeFifoCache
+// Exports: severityLevelFromString
 
 // Module 12596
 
-export function makeFifoCache(arg0) {
-  let closure_0 = arg0;
-  let closure_1 = [];
-  let closure_2 = {};
-  return {
-    add(arg0, arg1) {
-      if (closure_1.length >= closure_0) {
-        do {
-          let arr = closure_1.shift();
-          if (undefined !== arr) {
-            delete closure_2[tmp2];
-          }
-        } while (closure_1.length >= closure_0);
-      }
-      if (closure_2[arg0]) {
-        const self = this;
-        this.delete(arg0);
-      }
-      closure_1.push(arg0);
-      closure_2[arg0] = arg1;
-    },
-    clear() {
-      closure_2 = {};
-      closure_1 = [];
-    },
-    get(arg0) {
-      return closure_2[arg0];
-    },
-    size() {
-      return closure_1.length;
-    },
-    delete: (arg0) => {
-      if (closure_2[arg0]) {
-        delete closure_2[tmp];
-        let num = 0;
-        if (0 < closure_1.length) {
-          while (closure_1[num] !== arg0) {
-            num = num + 1;
-          }
-          closure_1.splice(num, 1);
-        }
-        return true;
-      } else {
-        return false;
-      }
+export const severityLevelFromString = function severityLevelFromString(arg0) {
+  let str = "warning";
+  if ("warn" !== arg0) {
+    const items = ["fatal", "error", "warning", "log", "info", "debug"];
+    let str2 = "log";
+    if (items.includes(arg0)) {
+      str2 = arg0;
     }
-  };
-}
+    str = str2;
+  }
+  return str;
+};
+export const validSeverityLevels = ["fatal", "error", "warning", "log", "info", "debug"];

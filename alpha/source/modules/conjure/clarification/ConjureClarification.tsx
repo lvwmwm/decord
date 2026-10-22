@@ -1,10 +1,10 @@
-// Module ID: 12383
-// Function ID: 12384
+// Module ID: 12409
+// Function ID: 12410
 // Name: ConjureClarification
 // Dependencies: [4821, 1392, 1087, 1128, 3830, 2]
 // Exports: clarificationAnswerAttachments, clarificationAnswersPayload, clarificationChannelType, clarificationDraftPlaceholder, clarificationEntities, clarificationPickerPlaceholder, entityAnswer, followingClarificationStep, formatClarificationAnswers, isClarificationComplete, isTypedClarificationQuestion, multiSelectAnswer, nextClarificationStep, toggleClarificationOption
 
-// Module 12383 (ConjureClarification)
+// Module 12409 (ConjureClarification)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
@@ -238,18 +238,18 @@ export const clarificationEntities = function clarificationEntities(project, ite
     return obj;
   });
 };
-export const entityAnswer = function entityAnswer(input, entities, str, first1) {
+export const entityAnswer = function entityAnswer(input, c10, str, guildId) {
   let items;
   let items1;
   let obj2;
   let obj3;
   let closure_0 = input;
   const trimmed = str.trim();
-  obj = { kind: "entities", entities, text: items.join(", ") };
-  if (null == first1) {
+  obj = { kind: "entities", entities: c10, text: items.join(", ") };
+  if (null == guildId) {
     obj2 = {};
   } else {
-    obj2 = { guildId: first1 };
+    obj2 = { guildId };
   }
   const merged = Object.assign(obj2);
   if ("" === trimmed) {
@@ -259,7 +259,7 @@ export const entityAnswer = function entityAnswer(input, entities, str, first1) 
   }
   const merged1 = Object.assign(obj3);
   items = [
-    ...entities.map((name) => {
+    ...c10.map((name) => {
       let name2;
       name = name.name;
       const tmp = closure_6;

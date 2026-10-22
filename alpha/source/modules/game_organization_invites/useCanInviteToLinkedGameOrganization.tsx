@@ -1,10 +1,10 @@
-// Module ID: 15101
-// Function ID: 15102
+// Module ID: 15145
+// Function ID: 15146
 // Name: useCanInviteToLinkedGameOrganization
-// Dependencies: [4881, 4875, 4901, 1087, 558, 576, 14440, 504, 2]
+// Dependencies: [4881, 4875, 4901, 1087, 558, 576, 14484, 504, 2]
 // Exports: hasCanInviteRole
 
-// Module 15101 (useCanInviteToLinkedGameOrganization)
+// Module 15145 (useCanInviteToLinkedGameOrganization)
 import Constants from "Constants" /* 1087 */;
 import GuildMemberStore_mod from "GuildMemberStore" /* 4881 */;
 import GuildRoleStore from "GuildRoleStore" /* 4875 */;
@@ -70,7 +70,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanInvite
               id = tmp5.id;
               closure_1 = closure_3;
               roles = selfMember.roles;
-              someResult = roles.some(() => { /* body not rendered: F122245 */ });
+              someResult = roles.some(() => { /* body not rendered: F122868 */ });
             }
             return someResult;
           }

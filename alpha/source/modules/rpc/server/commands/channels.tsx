@@ -1,28 +1,28 @@
-// Module ID: 15620
-// Function ID: 15621
+// Module ID: 15664
+// Function ID: 15665
 // Name: channels
-// Dependencies: [4825, 4821, 4843, 4901, 4872, 5612, 6357, 1087, 15605, 5608, 9224, 15621, 8786, 9227, 11407, 12, 9218, 6757, 6613, 5974, 1114, 8825, 2]
+// Dependencies: [4825, 4821, 4843, 4901, 4872, 5616, 6364, 1087, 15649, 5612, 9233, 15665, 8795, 9236, 11424, 12, 9227, 6764, 6620, 5981, 1114, 8834, 2]
 
-// Module 15620 (channels)
+// Module 15664 (channels)
 import router_utils from "router_utils" /* 1114 */;
-import ChannelUtils from "ChannelUtils" /* 5974 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6613 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6757 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8786 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8825 */;
-import isPostMessageSocketDefault from "isPostMessageSocket" /* 9218 */;
-import RPCErrorDefault from "RPCError" /* 9224 */;
-import botScopedAccess from "botScopedAccess" /* 9227 */;
-import RPCHelpers from "RPCHelpers" /* 11407 */;
+import ChannelUtils from "ChannelUtils" /* 5981 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6620 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6764 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8795 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8834 */;
+import isPostMessageSocketDefault from "isPostMessageSocket" /* 9227 */;
+import RPCErrorDefault from "RPCError" /* 9233 */;
+import botScopedAccess from "botScopedAccess" /* 9236 */;
+import RPCHelpers from "RPCHelpers" /* 11424 */;
 import ChannelRecord from "ChannelRecord" /* 4825 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
-import VoiceStateStore from "VoiceStateStore" /* 5612 */;
-import Constants_mod from "Constants" /* 6357 */;
+import VoiceStateStore from "VoiceStateStore" /* 5616 */;
+import Constants_mod from "Constants" /* 6364 */;
 import Constants_mod2 from "Constants" /* 1087 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15621 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15665 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;
@@ -73,7 +73,7 @@ let obj2 = {
         const scopes = socket.authorization.scopes;
         const tmp = require;
         if (!scopes.has(OAuth2Scopes.OAuth2Scopes.RPC)) {
-          if (!scopes.has(tmp(8786).OAuth2Scopes.DM_CHANNELS_READ)) {
+          if (!scopes.has(tmp(8795).OAuth2Scopes.DM_CHANNELS_READ)) {
             const self = this;
             const self2 = this;
             const obj2 = { errorCode: constants2.INVALID_PERMISSIONS };
@@ -141,7 +141,7 @@ let obj4 = {
           const self = this;
           const self2 = this;
           const obj2 = { errorCode: constants2.INVALID_GUILD };
-          const tmpResult = tmp(9224);
+          const tmpResult = tmp(9233);
           const tmpResult1 = new tmpResult(obj2, "Invalid guild id: " + guild_id);
           throw tmpResult1;
         } else {
@@ -196,25 +196,23 @@ const obj6 = {
     }
   },
   handler(socket) {
+    let obj2;
     socket = socket.socket;
     let tmp3;
     if (isPostMessageSocketDefault(socket)) {
-      tmp3 = tmp(6757)(socket.context.surface);
+      tmp3 = tmp(6764)(socket.context.surface);
     }
     const channel = ChannelStore.getChannel(tmp3);
     if (null == channel) {
       const self = this;
       const self2 = this;
-      const obj2 = { errorCode: constants2.INVALID_CHANNEL };
-      const tmp9 = new RPCErrorDefault(obj2, "Invalid channel");
+      const obj3 = { errorCode: constants2.INVALID_CHANNEL };
+      const tmp9 = new RPCErrorDefault(obj3, "Invalid channel");
       throw tmp9;
     } else {
-      const str = PermissionStore.computePermissions(channel);
-      let str1 = str;
-      if (typeof str !== "bigint") {
-        str1 = str.toString();
-      }
-      return { permissions: str1 };
+      const obj = { permissions: obj2.transformBigFlag(PermissionStore.computePermissions(channel)) };
+      obj2 = RPCHelpers;
+      return obj;
     }
   }
 };

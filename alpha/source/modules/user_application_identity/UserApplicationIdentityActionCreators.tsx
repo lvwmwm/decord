@@ -1,11 +1,11 @@
-// Module ID: 11790
-// Function ID: 11791
+// Module ID: 10760
+// Function ID: 10761
 // Name: UserApplicationIdentityActionCreators
-// Dependencies: [5, 11788, 1087, 584, 1297, 504, 2]
+// Dependencies: [5, 10761, 1087, 584, 1297, 504, 2]
 
-// Module 11790 (UserApplicationIdentityActionCreators)
+// Module 10760 (UserApplicationIdentityActionCreators)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserApplicationIdentityStore from "UserApplicationIdentityStore" /* 11788 */;
+import UserApplicationIdentityStore from "UserApplicationIdentityStore" /* 10761 */;
 import Constants from "Constants" /* 1087 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
@@ -14,8 +14,8 @@ let c1, c4, c5;
 
 const Endpoints = Constants.Endpoints;
 let obj = {
-  fetchUserApplicationIdentitiesWithProfiles(arg0, arg1) {
-    let closure_0 = arg0;
+  fetchUserApplicationIdentitiesWithProfiles(id, arg1) {
+    let closure_0 = id;
     let closure_1 = arg1;
     return (async (arg0, value) => {
       if (c5 === 2) {
@@ -157,8 +157,8 @@ let obj2 = {
   get(arg0) {
     return UserApplicationIdentityStore.getUserIdentities(arg0);
   },
-  load(arg0) {
-    return obj.fetchUserApplicationIdentitiesWithProfiles(arg0);
+  load(id) {
+    return obj.fetchUserApplicationIdentitiesWithProfiles(id);
   }
 };
 const fetchStore = get_initialized.createFetchStore(UserApplicationIdentityStore, obj2);

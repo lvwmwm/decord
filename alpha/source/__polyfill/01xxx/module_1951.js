@@ -95,7 +95,7 @@ let fn = function t() {
       const _String = String;
       obj = { class: text };
       const str2 = String(tmp3);
-      return htmlTag("pre", htmlTag("code", str2.replace(re15, f141055), obj));
+      return htmlTag("pre", htmlTag("code", str2.replace(re15, f141743), obj));
     } else {
       throw new TypeError("Trying to call a non-function");
     }
@@ -288,7 +288,7 @@ let fn = function t() {
   };
   const parse9 = function parse(content, arg1, arg2) {
     let items;
-    obj = { type: "link", content: items, target: content[1], title: "unicodeVersion" };
+    obj = { type: "link", content: items, target: content[1], title: "ix" };
     items = [];
     const obj2 = { type: "text", content: content[1] };
     items[0] = obj2;
@@ -373,7 +373,7 @@ let fn = function t() {
     if (typeof sanitizeText === "function") {
       const _String = String;
       const str = String(tmp2);
-      return tmp("code", str.replace(re15, f141055));
+      return tmp("code", str.replace(re15, f141743));
     } else {
       throw new TypeError("Trying to call a non-function");
     }
@@ -404,12 +404,12 @@ let fn = function t() {
     if (typeof sanitizeText === "function") {
       const _String = String;
       const str = String(tmp);
-      return str.replace(re15, f141055);
+      return str.replace(re15, f141743);
     } else {
       throw new TypeError("Trying to call a non-function");
     }
   };
-  const f141055 = (arg0) => closure_1_16[arg0];
+  const f141743 = (arg0) => closure_1_16[arg0];
   const re7 = /\r\n?/g;
   const re8 = /\t/g;
   const re9 = /\f/g;
@@ -456,10 +456,10 @@ let fn = function t() {
           let tmp9 = re15;
           if (typeof tmp8 === "function") {
             let _String2 = String;
-            let text = `${" " + str3.replace(re15, f141055)}="`;
+            let text = `${" " + str3.replace(re15, f141743)}="`;
             let str4 = String(tmp15);
             let _HermesInternal = HermesInternal;
-            str = tmp5 + `${" " + str3.replace(re15, f141055)}="` + str4.replace(tmp9, f141055) + "\"";
+            str = tmp5 + `${" " + str3.replace(re15, f141743)}="` + str4.replace(tmp9, f141743) + "\"";
             continue;
           } else {
             let str7 = "Trying to call a non-function";
@@ -507,7 +507,7 @@ let fn = function t() {
   let closure_16 = { "<": "&lt;", ">": "&gt;", "&": "&amp;", "\"": "&quot;", "'": "&#x27;", "/": "&#x2F;", "`": "&#96;" };
   function sanitizeText(arg0) {
     const str = String(arg0);
-    return str.replace(re15, f141055);
+    return str.replace(re15, f141743);
   }
   const re18 = /\\([^0-9A-Za-z\s])/g;
   function unescapeUrl(str) {
@@ -1692,13 +1692,13 @@ let fn = function t() {
       let closure_0 = arg0;
       function nestedOutput(arr, arg1) {
         let joined;
-        const f156253 = (arr) => {
+        const f157049 = (arr) => {
           let joined;
           if (!obj) {
             obj = {};
           }
           if (Array.isArray(arr)) {
-            const mapped = arr.map(f156253);
+            const mapped = arr.map(f157049);
             joined = mapped.join("");
           } else {
             joined = closure_0(arr, nestedOutput, obj);
@@ -1707,7 +1707,7 @@ let fn = function t() {
         };
         obj = arg1 || {};
         if (Array.isArray(arr)) {
-          let mapped = arr.map(f156253);
+          let mapped = arr.map(f157049);
           joined = mapped.join("");
         } else {
           joined = obj(arr, nestedOutput, obj);

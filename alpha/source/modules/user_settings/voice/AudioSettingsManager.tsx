@@ -1,27 +1,27 @@
-// Module ID: 18582
-// Function ID: 18583
+// Module ID: 18650
+// Function ID: 18651
 // Name: AudioSettingsManager
-// Dependencies: [32, 5697, 5986, 502, 2014, 5700, 5838, 11, 1211, 510, 4802, 5837, 12, 15271, 11581, 7193, 2]
+// Dependencies: [32, 5701, 5993, 502, 2014, 5704, 5845, 11, 1211, 510, 4802, 5844, 12, 15315, 11598, 7200, 2]
 
-// Module 18582 (AudioSettingsManager)
+// Module 18650 (AudioSettingsManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Storage2 from "Storage" /* 510 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4802 */;
-import Constants from "Constants" /* 5700 */;
-import AudioSettingsUtils from "AudioSettingsUtils" /* 5837 */;
-import AudioSettingsDefaultVolumes from "AudioSettingsDefaultVolumes" /* 5838 */;
-import GameConsoleActionCreators from "GameConsoleActionCreators" /* 11581 */;
-import AudioSettingsPending from "AudioSettingsPending" /* 15271 */;
+import Constants from "Constants" /* 5704 */;
+import AudioSettingsUtils from "AudioSettingsUtils" /* 5844 */;
+import AudioSettingsDefaultVolumes from "AudioSettingsDefaultVolumes" /* 5845 */;
+import GameConsoleActionCreators from "GameConsoleActionCreators" /* 11598 */;
+import AudioSettingsPending from "AudioSettingsPending" /* 15315 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GameConsoleStore from "GameConsoleStore" /* 5697 */;
-import SoundboardStore from "SoundboardStore" /* 5986 */;
+import GameConsoleStore from "GameConsoleStore" /* 5701 */;
+import SoundboardStore from "SoundboardStore" /* 5993 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import module_12_mod from "module_12" /* 12 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7193 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7200 */;
 import size from "module_2" /* 2 */;
 
-const f136237 = async (arg0) => {
+const f136939 = async (arg0) => {
   let closure_0 = arg0;
   let closure_1 = false;
   let obj = closure_0(closure_2[13]);
@@ -210,7 +210,7 @@ function handleSetLocalMute(arg0) {
     const result = obj.updatePendingSettings(context, userId, obj2);
     closure_12.cancel();
     const PreloadedUserSettingsActionCreators = UserSettingsProtoActionCreators.PreloadedUserSettingsActionCreators;
-    PreloadedUserSettingsActionCreators.updateAsync("audioContextSettings", f136237, UserSettingsProtoActionCreators.UserSettingsDelay.INFREQUENT_USER_ACTION);
+    PreloadedUserSettingsActionCreators.updateAsync("audioContextSettings", f136939, UserSettingsProtoActionCreators.UserSettingsDelay.INFREQUENT_USER_ACTION);
   }
 }
 function handleSetLocalSoundboardMute(userId) {
@@ -223,7 +223,7 @@ function handleSetLocalSoundboardMute(userId) {
     const result1 = obj.updatePendingSettings(context, userId, obj2);
     closure_12.cancel();
     const PreloadedUserSettingsActionCreators = UserSettingsProtoActionCreators.PreloadedUserSettingsActionCreators;
-    PreloadedUserSettingsActionCreators.updateAsync("audioContextSettings", f136237, UserSettingsProtoActionCreators.UserSettingsDelay.INFREQUENT_USER_ACTION);
+    PreloadedUserSettingsActionCreators.updateAsync("audioContextSettings", f136939, UserSettingsProtoActionCreators.UserSettingsDelay.INFREQUENT_USER_ACTION);
   }
 }
 function handleResetMediaEngineSettings(arg0) {
@@ -253,7 +253,7 @@ function DEFAULT_VOLUME_FOR_CONTEXT(arg0) {
 let module_12 = module_12_mod;
 let closure_12 = module_12.debounce(() => {
   const PreloadedUserSettingsActionCreators = UserSettingsProtoActionCreators.PreloadedUserSettingsActionCreators;
-  PreloadedUserSettingsActionCreators.updateAsync("audioContextSettings", f136237, UserSettingsProtoActionCreators.UserSettingsDelay.INFREQUENT_USER_ACTION);
+  PreloadedUserSettingsActionCreators.updateAsync("audioContextSettings", f136939, UserSettingsProtoActionCreators.UserSettingsDelay.INFREQUENT_USER_ACTION);
 }, 2000);
 module_12 = module_12_mod;
 let closure_13 = module_12.debounce(GameConsoleActionCreators.remoteAudioSettingsUpdate, 500, { maxWait: 500 });

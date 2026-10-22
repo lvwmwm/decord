@@ -1,21 +1,21 @@
-// Module ID: 18112
-// Function ID: 18113
+// Module ID: 18182
+// Function ID: 18183
 // Name: PermissionSpecUtils
-// Dependencies: [4825, 4843, 1087, 7851, 18113, 7328, 12834, 18114, 1128, 2067, 7346, 6619, 18115, 7345, 18116, 8965, 8265, 2]
+// Dependencies: [4825, 4843, 1087, 7859, 18183, 7335, 12866, 18184, 1128, 2067, 7353, 6626, 18185, 7352, 18186, 8974, 8274, 2]
 
-// Module 18112 (PermissionSpecUtils)
+// Module 18182 (PermissionSpecUtils)
 import intl34 from "intl" /* 1128 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
 import ChannelRecord from "ChannelRecord" /* 4825 */;
-import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 7328 */;
-import GuildOfficialMessagesExperimentDefault from "GuildOfficialMessagesExperiment" /* 7345 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7851 */;
-import Tracking from "Tracking" /* 8265 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8965 */;
-import SoundmojiRenderingExperiment from "SoundmojiRenderingExperiment" /* 12834 */;
-import useGuildEligibleForStageChannels from "useGuildEligibleForStageChannels" /* 18113 */;
-import HangoutWindowExperiment from "HangoutWindowExperiment" /* 18114 */;
-import permissions_PermissionUtilsAll from "permissions/PermissionUtils" /* 18116 */;
+import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 7335 */;
+import GuildOfficialMessagesExperimentDefault from "GuildOfficialMessagesExperiment" /* 7352 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7859 */;
+import Tracking from "Tracking" /* 8274 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8974 */;
+import SoundmojiRenderingExperiment from "SoundmojiRenderingExperiment" /* 12866 */;
+import useGuildEligibleForStageChannels from "useGuildEligibleForStageChannels" /* 18183 */;
+import HangoutWindowExperiment from "HangoutWindowExperiment" /* 18184 */;
+import permissions_PermissionUtilsAll from "permissions/PermissionUtils" /* 18186 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
@@ -79,9 +79,9 @@ let obj = {
     const VoiceInThreadsExperiment = require("ThreadHooks").VoiceInThreadsExperiment;
     let obj2 = { guildId: guild_id, location: "3ad37d_1" };
     const enabled = VoiceInThreadsExperiment.getCurrentConfig(obj2).enabled && set.has(stateFromStores.type);
-    const tmp4Result = tmp4(6619);
+    const tmp4Result = tmp4(6626);
     const isStageVideoEnabledResult = tmp4Result.isStageVideoEnabled(guild_id);
-    const tmp4Result2 = tmp4(18115);
+    const tmp4Result2 = tmp4(18185);
     let result = tmp4Result2.canCurrentUserManageMessageFilters(guild_id);
     const isMediaChannelResult = stateFromStores.isMediaChannel();
     importDefault = isMediaChannelResult;
@@ -219,7 +219,7 @@ let obj = {
       }
       const obj9 = { sectionDescription: formatResult1, inSoundmojiExperiment };
       items4[5] = generateChannelVoiceChatSection(tmp3, stringResult1, obj9);
-      const generateChannelAppsSection2 = tmp33(18116).generateChannelAppsSection;
+      const generateChannelAppsSection2 = tmp33(18186).generateChannelAppsSection;
       permissions_PermissionUtilsAll;
       const intl15 = tmp4(1128).intl;
       items4[6] = generateChannelAppsSection2(tmp3, intl15.string(tmp4(1128).t["rrh/W6"]), { showActivities: false });
@@ -248,7 +248,7 @@ let obj = {
           const intl33 = tmp4(1128).intl;
           items5[3] = generateChannelAppsSection5(tmp3, intl33.string(tmp4(1128).t["rrh/W6"]));
           if (enabled) {
-            const generateChannelVoiceSection = tmp64(18116).generateChannelVoiceSection;
+            const generateChannelVoiceSection = tmp64(18186).generateChannelVoiceSection;
             permissions_PermissionUtilsAll;
             const intl = tmp4(1128).intl;
             const items6 = [generateChannelVoiceSection(tmp3, intl.string(tmp4(1128).t["46Ra1b"]))];

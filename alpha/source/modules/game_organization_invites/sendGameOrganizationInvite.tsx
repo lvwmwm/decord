@@ -1,20 +1,19 @@
-// Module ID: 15103
-// Function ID: 15104
+// Module ID: 15147
+// Function ID: 15148
 // Name: sendGameOrganizationInvite
-// Dependencies: [5, 9091, 10977, 7784, 4973, 1128, 15104, 6354, 2]
+// Dependencies: [5, 9100, 7793, 4976, 1128, 15148, 2]
 // Exports: default
 
-// Module 15103 (sendGameOrganizationInvite)
+// Module 15147 (sendGameOrganizationInvite)
 import intl4 from "intl" /* 1128 */;
-import shared from "shared" /* 4973 */;
-import Constants from "Constants" /* 7784 */;
-import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9091 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 10977 */;
-import GameOrganizationInviteSendActionCreatorsDefault from "GameOrganizationInviteSendActionCreators" /* 15104 */;
+import shared from "shared" /* 4976 */;
+import Constants from "Constants" /* 7793 */;
+import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9100 */;
+import GameOrganizationInviteSendActionCreatorsDefault from "GameOrganizationInviteSendActionCreators" /* 15148 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
-let AccessibilityAnnouncer, closure_6, code;
+let AccessibilityAnnouncer, closure_5;
 
 let obj = function _sendGameOrganizationInvite() {
   obj = _asyncToGenerator(async (arg0, arg1, arg2, arg3) => {
@@ -22,14 +21,14 @@ let obj = function _sendGameOrganizationInvite() {
     let user = arg1;
     let closure_2 = arg2;
     let closure_3 = arg3;
-    let c8 = 0;
-    let c9 = 0;
     let c7 = 0;
+    let c8 = 0;
+    let c6 = 0;
     return (async (arg0, value, arg2, arg3) => {
       let obj3;
       let obj5;
-      if (c9 === 2) {
-        c9 = 3;
+      if (c8 === 2) {
+        c8 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -43,95 +42,89 @@ let obj = function _sendGameOrganizationInvite() {
         try {
           let combined;
           let closure_4;
-          c9 = 2;
-          if (0 === c8) {
+          c8 = 2;
+          if (0 === c7) {
             if (arg0 === 1) {
-              c9 = 3;
+              c8 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c9 = 3;
+              c8 = 3;
               return { value, done: true };
             } else {
-              code = tmp;
+              closure_5 = tmp;
               user = closure_2;
               closure_2 = closure_3;
               setSendState(closure_0, closure_2.id, constants.SENDING);
               const AccessibilityAnnouncer3 = shared.AccessibilityAnnouncer;
-              const announce3 = AccessibilityAnnouncer3.announce;
+              const announce2 = AccessibilityAnnouncer3.announce;
               const intl3 = intl4.intl;
-              announce3(intl3.string(intl4.t.kC3ZRG));
-              c7 = 1;
+              announce2(intl3.string(intl4.t.kC3ZRG));
+              c6 = 1;
               const _HermesInternal = HermesInternal;
               combined = "" + closure_0 + ":" + closure_2.id;
               closure_4 = map.get(combined);
               AccessibilityAnnouncer = closure_4;
-              const tmp71 = closure_2;
+              const tmp60 = closure_2;
               if (null == closure_4) {
-                c8 = 2;
-                c9 = 1;
-                const obj6 = { value: obj5.createInvite(user.applicationId, user.gameOrganizationId, tmp71.id), done: false };
+                c7 = 2;
+                c8 = 1;
+                const obj6 = { value: obj5.createInvite(user.applicationId, user.gameOrganizationId, tmp60.id), done: false };
                 obj5 = GameOrganizationInviteSendActionCreatorsDefault;
                 return obj6;
               }
             }
           } else {
-            if (1 === c8) {
-              c7 = 0;
-              code = closure_6;
-              closure_133_4(closure_0, user.id, closure_133_6.ERROR);
-              const AccessibilityAnnouncer2 = closure_133_0(closure_133_2[4]).AccessibilityAnnouncer;
-              const announce = AccessibilityAnnouncer2.announce;
-              const intl = closure_133_0(closure_133_2[5]).intl;
-              announce(intl.string(closure_133_0(closure_133_2[5]).t.fEptJP));
-              AccessibilityAnnouncer = closure_133_1;
-              const tmp29 = code instanceof closure_133_1(closure_133_2[7]) && code.code === closure_133_5;
-              if (tmp29) {
-                closure_2();
-              }
-            } else if (2 === c8) {
+            if (1 === c7) {
+              c6 = 0;
+              closure_133_4(closure_0, user.id, closure_133_5.ERROR);
+              const AccessibilityAnnouncer2 = closure_133_0(closure_133_2[3]).AccessibilityAnnouncer;
+              AccessibilityAnnouncer = AccessibilityAnnouncer2.announce;
+              const intl = closure_133_0(closure_133_2[4]).intl;
+              const result = AccessibilityAnnouncer(intl.string(closure_133_0(closure_133_2[4]).t.fEptJP));
+              closure_2();
+            } else if (2 === c7) {
               if (arg0 === 1) {
-                c9 = 3;
+                c8 = 3;
                 throw value;
               } else if (arg0 === 2) {
-                c7 = 0;
-                c9 = 3;
+                c6 = 0;
+                c8 = 3;
                 return { value, done: true };
               } else {
                 closure_4 = value;
-                const result = closure_133_7.set(combined, closure_4);
+                const result1 = closure_133_6.set(combined, closure_4);
               }
             } else if (arg0 === 1) {
-              c9 = 3;
+              c8 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c7 = 0;
-              c9 = 3;
+              c6 = 0;
+              c8 = 3;
               return { value, done: true };
             } else {
-              closure_133_7.delete(combined);
-              closure_133_4(closure_0, user.id, closure_133_6.SENT);
-              AccessibilityAnnouncer = closure_133_0(closure_133_2[4]).AccessibilityAnnouncer;
-              const announce2 = AccessibilityAnnouncer.announce;
-              const intl2 = closure_133_0(closure_133_2[5]).intl;
-              announce2(intl2.string(closure_133_0(closure_133_2[5]).t.PuLLzP));
-              c7 = 0;
+              closure_133_6.delete(combined);
+              closure_133_4(closure_0, user.id, closure_133_5.SENT);
+              AccessibilityAnnouncer = closure_133_0(closure_133_2[3]).AccessibilityAnnouncer;
+              const announce = AccessibilityAnnouncer.announce;
+              const intl2 = closure_133_0(closure_133_2[4]).intl;
+              announce(intl2.string(closure_133_0(closure_133_2[4]).t.PuLLzP));
+              c6 = 0;
             }
-            c9 = 3;
+            c8 = 3;
             return { value: "IconComponent", done: null };
           }
           AccessibilityAnnouncer = closure_4;
-          c8 = 3;
-          c9 = 1;
+          c7 = 3;
+          c8 = 1;
           const obj8 = { value: obj3.sendInvite(user.id, closure_4), done: false };
-          obj3 = closure_133_1(closure_133_2[6]);
+          obj3 = closure_133_1(closure_133_2[5]);
           return obj8;
-        } catch (tmp44) {
-          closure_6 = tmp44;
-          if (0 === c7) {
-            c9 = 3;
-            throw tmp44;
+        } catch (tmp34) {
+          if (0 === c6) {
+            c8 = 3;
+            throw tmp34;
           } else {
-            c8 = 1;
+            c7 = 1;
           }
         }
       }
@@ -140,7 +133,6 @@ let obj = function _sendGameOrganizationInvite() {
   return obj(...arguments);
 };
 const setSendState = InstantInviteSendStateStore.setSendState;
-let closure_5 = GameOrganizationInviteConstants.GAME_ORGANIZATION_INVITE_TOO_MANY_INVITES_ERROR_CODE;
 const InviteSendStates = Constants.InviteSendStates;
 const map = new Map();
 let result = size.fileFinishedImporting("modules/game_organization_invites/sendGameOrganizationInvite.tsx");

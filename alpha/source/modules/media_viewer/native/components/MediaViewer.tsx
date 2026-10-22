@@ -1,14 +1,14 @@
-// Module ID: 14138
-// Function ID: 14139
+// Module ID: 14172
+// Function ID: 14173
 // Name: MediaViewer
-// Dependencies: [32, 19, 17, 21, 1384, 558, 576, 5035, 14139, 14140, 8723, 7146, 5279, 7230, 7255, 8748, 14144, 5952, 5188, 8718, 8779, 10837, 5036, 11299, 2]
+// Dependencies: [32, 19, 17, 21, 1384, 558, 576, 5038, 14173, 14174, 8732, 7153, 5283, 7237, 7262, 8757, 14178, 14179, 5959, 5192, 8727, 8788, 10854, 5039, 14180, 11316, 2]
 
-// Module 14138 (MediaViewer)
+// Module 14172 (MediaViewer)
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
-import timing from "timing" /* 5188 */;
-import useVideoControls from "useVideoControls" /* 8718 */;
-import MediaViewerItem2 from "MediaViewerItem" /* 14140 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
+import timing from "timing" /* 5192 */;
+import useVideoControls from "useVideoControls" /* 8727 */;
+import MediaViewerItem2 from "MediaViewerItem" /* 14174 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -25,7 +25,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const MediaViewerDimensionsContext = tmp(8748);
+const MediaViewerDimensionsContext = tmp(8757);
 function MediaViewer(arg0) {
   let closure_2;
   let height;
@@ -36,7 +36,9 @@ function MediaViewer(arg0) {
   let onContentSizeChange;
   let onLongPress;
   let onScroll;
+  let onScrollWorklets;
   let originLayout;
+  let pagerIndex;
   let ref;
   let ref2;
   let renderMedia;
@@ -49,20 +51,19 @@ function MediaViewer(arg0) {
   let tmp5;
   let tmp6;
   let useItemVisible;
-  let useViewerProps;
   let width;
   let zoomed;
-  ({ onClose, syncer } = arg0);
-  ({ index, sources } = syncer);
+  ({ onClose, onLongPress, originLayout, renderMedia, syncer } = arg0);
+  ({ index, sources, zoomed } = syncer);
   height = undefined;
   let sharedValue;
   let sharedValue1;
   __initData2 = undefined;
-  ({ onLongPress, originLayout, renderMedia, renderOverlay, swipeVelocityThreshold } = arg0);
-  ({ useViewerProps, zoomed } = syncer);
   let tmp = height;
-  let tmp3 = height(7230);
-  let items = [height(7255).MEDIA_VIEWER];
+  ({ renderOverlay, swipeVelocityThreshold } = arg0);
+  const useViewerProps = syncer.useViewerProps;
+  let tmp3 = height(7237);
+  let items = [height(7262).MEDIA_VIEWER];
   const analyticsLocations = tmp3(items).analyticsLocations;
   const tmp4 = sharedValue(sharedValue1.useState(true), 2);
   [tmp5, tmp6] = tmp4;
@@ -70,7 +71,7 @@ function MediaViewer(arg0) {
   let obj = require("MediaViewerDimensionsContext");
   const mediaViewerDimensions = obj.useMediaViewerDimensions();
   ({ width, height } = mediaViewerDimensions);
-  const tmp9 = height(14144)({ index, onClose, sources, windowHeight: height, windowWidth: width });
+  const tmp9 = height(14178)({ index, onClose, sources, windowHeight: height, windowWidth: width });
   dependencyMap = tmp9;
   let obj2 = require("ReanimatedRexport");
   sharedValue = obj2.useSharedValue(0);
@@ -79,25 +80,27 @@ function MediaViewer(arg0) {
   const obj4 = require("ReanimatedRexport");
   const animatedRef = obj4.useAnimatedRef();
   let closure_6 = tmp13;
-  const viewerProps = useViewerProps();
-  ({ ref, onScroll, onContentSizeChange, useItemVisible } = viewerProps);
-  const obj5 = require("useMediaViewerPanGesture");
-  const mediaViewerPanGestureConfig = obj5.useMediaViewerPanGestureConfig(tmp9, swipeVelocityThreshold, onClose);
+  const obj5 = require("MediaViewerImprovementsExperiment");
+  const isMediaViewerImprovementsEnabled = obj5.useIsMediaViewerImprovementsEnabled();
+  const viewerProps = useViewerProps(isMediaViewerImprovementsEnabled);
+  ({ useItemVisible, ref, onScroll, onScrollWorklets, pagerIndex, onContentSizeChange } = viewerProps);
+  const obj6 = require("useMediaViewerPanGesture");
+  const mediaViewerPanGestureConfig = obj6.useMediaViewerPanGestureConfig(tmp9, swipeVelocityThreshold, onClose);
   const dismiss = mediaViewerPanGestureConfig.dismiss;
   const translatePos = mediaViewerPanGestureConfig.translatePos;
   const isClosing = mediaViewerPanGestureConfig.isClosing;
   const isInteracting = mediaViewerPanGestureConfig.isInteracting;
   const overlayEnabled = mediaViewerPanGestureConfig.overlayEnabled;
   const items1 = [dismiss, isClosing];
-  const tmp16 = height(5952);
-  tmp16(sharedValue1.useCallback(() => {
+  const tmp17 = height(5959);
+  tmp17(sharedValue1.useCallback(() => {
     if (!isClosing.get()) {
       dismiss();
     }
     return true;
   }, items1));
   const absoluteFillObject = closure_6.absoluteFillObject;
-  function ee() {
+  function te() {
     let items;
     let min;
     let obj2;
@@ -110,17 +113,17 @@ function MediaViewer(arg0) {
     obj2 = ReanimatedRexport;
     return obj;
   }
-  const obj6 = require("ReanimatedRexport");
-  ee.__closure = { absoluteFillObject, windowHeight: height, entranceAnimationDriver: sharedValue, interpolate: require("ReanimatedRexport").interpolate, translatePos, closePosition: tmp9 };
-  ee.__workletHash = 5943145829824;
-  ee.__initData = __initData2;
-  const obj8 = { backgroundColor: "transparent" };
+  const obj7 = require("ReanimatedRexport");
+  te.__closure = { absoluteFillObject, windowHeight: height, entranceAnimationDriver: sharedValue, interpolate: require("ReanimatedRexport").interpolate, translatePos, closePosition: tmp9 };
+  te.__workletHash = 5943145829824;
+  te.__initData = __initData2;
+  const obj9 = { backgroundColor: "transparent" };
   ({ absoluteFillObject, windowHeight: height, entranceAnimationDriver: sharedValue, interpolate: require("ReanimatedRexport").interpolate, translatePos, closePosition: tmp9 });
-  const animatedStyle = obj6.useAnimatedStyle(ee);
+  const animatedStyle = obj7.useAnimatedStyle(te);
   const useState = sharedValue1.useState;
   let merged = Object.assign(closure_6.absoluteFillObject);
-  const first = sharedValue(useState(obj8), 1)[0];
-  function ne() {
+  const first = sharedValue(useState(obj9), 1)[0];
+  function re() {
     let opacity = 0;
     if (!isClosing.get()) {
       opacity = 0;
@@ -151,26 +154,26 @@ function MediaViewer(arg0) {
     }
     return { opacity };
   }
-  const obj9 = require("ReanimatedRexport");
-  ne.__closure = { isClosing, hideRelayoutSharedValue: sharedValue1, overlayEnabled, isInteracting, withTiming: require("timing").withTiming, Easing: require("ReanimatedRexport").Easing, runOnJS: require("ReanimatedRexport").runOnJS, setShowHeader: tmp6 };
-  ne.__workletHash = 6649973616396;
-  ne.__initData = __initData3;
+  const obj10 = require("ReanimatedRexport");
+  re.__closure = { isClosing, hideRelayoutSharedValue: sharedValue1, overlayEnabled, isInteracting, withTiming: require("timing").withTiming, Easing: require("ReanimatedRexport").Easing, runOnJS: require("ReanimatedRexport").runOnJS, setShowHeader: tmp6 };
+  re.__workletHash = 6649973616396;
+  re.__initData = __initData3;
   ({ isClosing, hideRelayoutSharedValue: sharedValue1, overlayEnabled, isInteracting, withTiming: require("timing").withTiming, Easing: require("ReanimatedRexport").Easing, runOnJS: require("ReanimatedRexport").runOnJS, setShowHeader: tmp6 });
-  const animatedStyle1 = obj9.useAnimatedStyle(ne);
-  function te() {
+  const animatedStyle1 = obj10.useAnimatedStyle(re);
+  function oe() {
     const value = overlayEnabled.get() && !isInteracting.get();
     if (value) {
       const obj = ReanimatedRexport;
       obj.runOnJS(c0)(true);
     }
   }
-  const obj11 = require("ReanimatedRexport");
-  te.__closure = { overlayEnabled, isInteracting, runOnJS: require("ReanimatedRexport").runOnJS, setShowHeader: tmp6 };
-  te.__workletHash = 1909187618991;
-  te.__initData = __initData4;
+  const obj12 = require("ReanimatedRexport");
+  oe.__closure = { overlayEnabled, isInteracting, runOnJS: require("ReanimatedRexport").runOnJS, setShowHeader: tmp6 };
+  oe.__workletHash = 1909187618991;
+  oe.__initData = __initData4;
   ({ overlayEnabled, isInteracting, runOnJS: require("ReanimatedRexport").runOnJS, setShowHeader: tmp6 });
-  const derivedValue = obj11.useDerivedValue(te);
-  function le() {
+  const derivedValue = obj12.useDerivedValue(oe);
+  function ce() {
     let items;
     let num;
     const obj = { alignItems: "center", justifyContent: "center", transform: items, opacity: num };
@@ -186,12 +189,12 @@ function MediaViewer(arg0) {
     }
     return obj;
   }
-  const obj13 = require("ReanimatedRexport");
-  le.__closure = { absoluteFillObject, translatePos, hideRelayoutSharedValue: sharedValue1, withTiming: require("timing").withTiming, Easing: require("ReanimatedRexport").Easing };
-  le.__workletHash = 3255262686776;
-  le.__initData = __initData5;
+  const obj14 = require("ReanimatedRexport");
+  ce.__closure = { absoluteFillObject, translatePos, hideRelayoutSharedValue: sharedValue1, withTiming: require("timing").withTiming, Easing: require("ReanimatedRexport").Easing };
+  ce.__workletHash = 3255262686776;
+  ce.__initData = __initData5;
   ({ absoluteFillObject, translatePos, hideRelayoutSharedValue: sharedValue1, withTiming: require("timing").withTiming, Easing: require("ReanimatedRexport").Easing });
-  const animatedStyle2 = obj13.useAnimatedStyle(le);
+  const animatedStyle2 = obj14.useAnimatedStyle(ce);
   ref = sharedValue1.useRef(null);
   const items2 = [tmp13, animatedRef, sharedValue1];
   const callback = sharedValue1.useCallback(() => {
@@ -230,29 +233,35 @@ function MediaViewer(arg0) {
       const result = obj.unpauseCurrentVideoIfNeeded();
     }
   }, items5);
-  const obj15 = require("DeviceOrientation");
-  const orientationListener = obj15.useOrientationListener(callback2);
-  const obj16 = { style: closure_6.absoluteFill, onAccessibilityEscape: dismiss, onLayout: callback1, children: items6 };
+  const obj16 = require("DeviceOrientation");
+  const orientationListener = obj16.useOrientationListener(callback2);
+  let tmp30Result = dismiss(callback, { entranceAnimationDriver: sharedValue, onContentSizeChange, onScroll, onLongPress, originLayout, panGestureConfig: mediaViewerPanGestureConfig, ref, renderMedia, sources, useItemVisible, windowHeight: height, windowWidth: width, index, zoomed });
+  const obj17 = { style: closure_6.absoluteFill, onAccessibilityEscape: dismiss, onLayout: callback1, children: items6 };
   items6 = [, , , , ];
-  const obj17 = { barStyle: "light-content", hidden: !tmp5 };
-  const tmp30 = dismiss(callback, { entranceAnimationDriver: sharedValue, onContentSizeChange, onScroll, onLongPress, originLayout, panGestureConfig: mediaViewerPanGestureConfig, ref, renderMedia, sources, useItemVisible, windowHeight: height, windowWidth: width, index, zoomed });
-  items6[0] = dismiss(height(10837), obj17);
-  items6[1] = dismiss(height(5035).View, { style: animatedStyle });
-  items6[2] = dismiss(height(5036), { ref: animatedRef, style: animatedStyle2, children: tmp30 });
-  const obj18 = { style: items7, pointerEvents: str, children: renderOverlay(dismiss, overlayEnabled) };
+  const obj18 = { barStyle: "light-content", hidden: !tmp5 };
+  items6[0] = dismiss(height(10854), obj18);
+  items6[1] = dismiss(height(5038).View, { style: animatedStyle });
+  const obj19 = { ref: animatedRef, style: animatedStyle2, children: tmp30Result };
+  const tmp32 = translatePos;
+  const tmp33 = animatedRef;
+  const tmp34 = height(5039);
+  const tmp7 = _require;
+  if (isMediaViewerImprovementsEnabled) {
+    const obj20 = { entranceAnimationDriver: sharedValue, onLongPress, onScrollWorklets, originLayout, pagerIndex, panGestureConfig: mediaViewerPanGestureConfig, renderMedia, sources, useItemVisible, windowWidth: width, windowHeight: height, zoomed };
+    tmp30Result = tmp30(tmp(14180), obj20);
+  }
+  items6[2] = dismiss(tmp34, obj19);
+  const obj21 = { style: items7, pointerEvents: str, children: renderOverlay(dismiss, overlayEnabled) };
   items7 = [first, animatedStyle1];
   str = "none";
-  const tmp31 = translatePos;
-  const tmp32 = animatedRef;
-  const tmp33 = height(5036);
-  const tmp7 = _require;
+  const tmpResult = tmp(5039);
   if (tmp5) {
     str = "box-none";
   }
-  items6[3] = dismiss(tmp33, obj18);
-  items6[4] = dismiss(tmp(11299), {});
-  const children = tmp31(tmp32, obj16);
-  return dismiss(tmp7(7230).AnalyticsLocationProvider, { value: analyticsLocations, children });
+  items6[3] = dismiss(tmpResult, obj21);
+  items6[4] = dismiss(tmp(11316), {});
+  const children = tmp32(tmp33, obj17);
+  return dismiss(tmp7(7237).AnalyticsLocationProvider, { value: analyticsLocations, children });
 }
 ({ View: hasOwnProperty, StyleSheet: metroRequire } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -328,7 +337,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function M
       }
     }
   }
-  const fn3 = function z(arg0, index) {
+  const fn3 = function x(arg0, index) {
     const obj = { originLayout, renderMedia, onLongPress, windowWidth, windowHeight, panGestureConfig, entranceAnimationDriver, source: sources[index], index, zoomed, panGesture: panGestureGenerator(index), useItemVisible };
     const MediaViewerItem = MediaViewerItem2.MediaViewerItem;
     return metroImportDefault(MediaViewerItem, obj);
@@ -394,16 +403,16 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function M
     return metroImportDefault(MediaViewerItem, obj);
   }, items2);
   const obj4 = entranceAnimationDriver(originLayout[7]);
-  class T {
+  class I {
     constructor() {
       const obj = { scrollEnabled: derivedValue.get() };
       return obj;
     }
   }
-  T.__closure = { scrollEnabled: derivedValue };
-  T.__workletHash = 14892821132407;
-  T.__initData = __initData;
-  const animatedProps = obj4.useAnimatedProps(T);
+  I.__closure = { scrollEnabled: derivedValue };
+  I.__workletHash = 14892821132407;
+  I.__initData = __initData;
+  const animatedProps = obj4.useAnimatedProps(I);
   const obj5 = { gesture: nativeGesture, children: windowWidth(entranceAnimationDriver(originLayout[11]).AnimatedFastList, obj6) };
   const tmp8 = onLongPress(originLayout[10])(index);
   const GestureDetector = entranceAnimationDriver(originLayout[12]).GestureDetector;

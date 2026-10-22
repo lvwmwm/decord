@@ -1,14 +1,14 @@
-// Module ID: 5015
-// Function ID: 5016
+// Module ID: 5018
+// Function ID: 5019
 // Name: UserUtils
-// Dependencies: [5016, 1392, 1087, 558, 576, 504, 1128, 2]
+// Dependencies: [5019, 1392, 1087, 558, 576, 504, 1128, 2]
 // Exports: accountAgeInRange, ageEligibleForPremiumUpsell, getFormattedName, getGlobalName, getName, getUserIsStaff, getUserTag, humanizeStatus, isNewUser, useName
 
-// Module 5015 (UserUtils)
+// Module 5018 (UserUtils)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import intl7 from "intl" /* 1128 */;
-import StreamerModeStore from "StreamerModeStore" /* 5016 */;
+import StreamerModeStore from "StreamerModeStore" /* 5019 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

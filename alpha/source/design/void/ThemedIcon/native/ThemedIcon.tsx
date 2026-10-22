@@ -1,19 +1,19 @@
-// Module ID: 15296
-// Function ID: 15297
+// Module ID: 15340
+// Function ID: 15341
 // Name: ThemedIcon
-// Dependencies: [109, 19, 21, 558, 576, 5234, 5228, 2]
+// Dependencies: [109, 19, 21, 558, 576, 5238, 5232, 2]
 
-// Module 15296 (ThemedIcon)
+// Module 15340 (ThemedIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import IconDefault from "Icon" /* 5228 */;
+import IconDefault from "Icon" /* 5232 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useToken = tmp(5234);
+const useToken = tmp(5238);
 let closure_3 = ["themedColor"];
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThemedIcon(themedColor) {

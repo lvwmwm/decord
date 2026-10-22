@@ -1,11 +1,11 @@
-// Module ID: 15989
-// Function ID: 15990
+// Module ID: 16031
+// Function ID: 16032
 // Name: ParentalControlledUserSettingsDefinitions
-// Dependencies: [7625, 558, 576, 504, 7624, 2]
+// Dependencies: [7632, 558, 576, 504, 7631, 2]
 // Exports: defineParentalControlledSetting, wrapParentalControlledSettingWithExperimentDefaults
 
-// Module 15989 (ParentalControlledUserSettingsDefinitions)
-import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7625 */;
+// Module 16031 (ParentalControlledUserSettingsDefinitions)
+import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7632 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

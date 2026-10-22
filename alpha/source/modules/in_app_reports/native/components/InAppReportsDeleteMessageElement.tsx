@@ -1,16 +1,16 @@
-// Module ID: 14480
-// Function ID: 14481
+// Module ID: 14524
+// Function ID: 14525
 // Name: InAppReportsDeleteMessageElement
-// Dependencies: [32, 19, 5990, 1087, 21, 558, 576, 504, 5693, 7543, 1128, 5671, 14476, 2]
+// Dependencies: [32, 19, 5997, 1087, 21, 558, 576, 504, 5697, 7550, 1128, 5675, 14520, 2]
 
-// Module 14480 (InAppReportsDeleteMessageElement)
+// Module 14524 (InAppReportsDeleteMessageElement)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5693 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7543 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5697 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7550 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 5990 */;
+import MessageStore from "MessageStore" /* 5997 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -122,7 +122,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteMess
           dependencyMap(stateFromStores);
         }
       }
-      const tmp22 = jsx(message(5671).TrashIcon, { color: "text-feedback-critical" });
+      const tmp22 = jsx(message(5675).TrashIcon, { color: "text-feedback-critical" });
       cResult[13] = tmp22;
       tmp21 = tmp22;
     } else {
@@ -140,7 +140,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteMess
       }
       return tmp23;
     }
-    const tmp26 = jsx(reportId(14476), { title: tmp15, disabledTitle: tmp16, description: tmp17, disabled: tmp5, variant: "danger", onPress: tmp14, icon: tmp21 });
+    const tmp26 = jsx(reportId(14520), { title: tmp15, disabledTitle: tmp16, description: tmp17, disabled: tmp5, variant: "danger", onPress: tmp14, icon: tmp21 });
     cResult[14] = tmp14;
     cResult[15] = tmp5;
     cResult[16] = tmp26;
@@ -184,7 +184,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteMess
     const obj3 = MessageActionCreatorsDefault;
     obj3.deleteMessage(message.getChannelId(), message.id);
   }, items3);
-  reportId(14476);
+  reportId(14520);
   const intl = message(1128).intl;
   const intl2 = message(1128).intl;
   const intl3 = message(1128).intl;

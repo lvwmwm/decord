@@ -1,16 +1,16 @@
-// Module ID: 9051
-// Function ID: 9052
+// Module ID: 9060
+// Function ID: 9061
 // Name: InstantInviteShareApps
-// Dependencies: [32, 19, 17, 9052, 21, 4966, 587, 558, 576, 5235, 5279, 9087, 7935, 9056, 2]
+// Dependencies: [32, 19, 17, 9061, 21, 4969, 587, 558, 576, 5239, 5283, 9096, 7943, 9065, 2]
 
-// Module 9051 (InstantInviteShareApps)
+// Module 9060 (InstantInviteShareApps)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import InstantInviteConstants from "components/InstantInviteConstants" /* 9052 */;
-import createStyles from "createStyles" /* 4966 */;
+import InstantInviteConstants from "components/InstantInviteConstants" /* 9061 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   onItemPressed = onItemPressed.onItemPressed;
   const contentContainerStyle = onItemPressed.contentContainerStyle;
   let tmp4 = closure_10();
-  let obj2 = onItemPressed(5235);
+  let obj2 = onItemPressed(5239);
   const fontScale = obj2.useFontScale();
   let obj3 = react;
   [arr, dependencyMap] = react.useState(closure_8);
@@ -50,7 +50,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     first = cResult[0];
   }
-  let tmpResult = tmp(5279);
+  let tmpResult = tmp(5283);
   const nativeGesture = tmpResult.useNativeGesture(first);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function x() {
@@ -145,7 +145,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           }
           tmp21[0] = nativeGesture;
           tmp21[1] = tmp16;
-          const tmp22 = jsx(tmp(5279).GestureDetector, tmp21);
+          const tmp22 = jsx(tmp(5283).GestureDetector, tmp21);
           cResult[16] = nativeGesture;
           cResult[17] = tmp16;
           cResult[18] = tmp22;
@@ -319,11 +319,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   dependencyMap = undefined;
   const contentContainerStyle = onItemPressed.contentContainerStyle;
   let tmp = closure_10();
-  const obj = onItemPressed(5235);
+  const obj = onItemPressed(5239);
   let closure_1 = obj.useFontScale();
   const tmp2 = _slicedToArray(react.useState(closure_8), 2);
   [arr, c2] = tmp2;
-  let obj2 = onItemPressed(5279);
+  let obj2 = onItemPressed(5283);
   const gesture = obj2.useNativeGesture({ disallowInterruption: true });
   const effect = react.useEffect(() => {
     const allPromises = Promise.all(metroImportDefault.map((isAvailable) => isAvailable.isAvailable));
@@ -381,7 +381,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     return <tmp2 key={type} style={obj2}>{tmpResult}</tmp2>;
   })}</closure_6>;
-  return jsx(onItemPressed(5279).GestureDetector, { gesture, children });
+  return jsx(onItemPressed(5283).GestureDetector, { gesture, children });
 }));
 const result = size.fileFinishedImporting("modules/instant_invite/native/components/InstantInviteShareApps.tsx");
 

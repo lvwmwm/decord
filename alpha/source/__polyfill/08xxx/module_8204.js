@@ -1,25 +1,25 @@
 // Module ID: 8204
 // Function ID: 8205
-// Dependencies: [8190]
+// Dependencies: []
 
 // Module 8204
-import _mod8190 from "module_8190" /* 8190 */;
+let c0 = 18761;
+let c1 = 19789;
 
-let obj = {
-  isGifFile(dataView) {
-    let hasItem = dataView;
-    if (hasItem) {
-      includes = includes.includes;
-      const obj = _mod8190;
-      hasItem = includes(obj.getStringFromDataView(dataView, 0, c2));
+export default {
+  BIG_ENDIAN: 19789,
+  LITTLE_ENDIAN: 18761,
+  getByteOrder(getUint16, c5) {
+    if (getUint16.getUint16(c5) === c0) {
+      return c0;
+    } else if (getUint16.getUint16(c5) === c1) {
+      return c1;
+    } else {
+      const _Error = Error;
+      const self = this;
+      const self2 = this;
+      const error = new Error("Illegal byte order value. Faulty image.");
+      throw error;
     }
-    return hasItem;
-  },
-  findOffsets() {
-    return { gifHeaderOffset: 0 };
   }
 };
-let c2 = 6;
-let includes = ["GIF87a", "GIF89a"];
-
-export default obj;

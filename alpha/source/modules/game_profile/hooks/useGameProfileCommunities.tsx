@@ -1,21 +1,21 @@
-// Module ID: 9465
-// Function ID: 9466
+// Module ID: 9476
+// Function ID: 9477
 // Name: useGameProfileCommunities
-// Dependencies: [5, 2022, 9466, 504, 9467, 1104, 2]
+// Dependencies: [5, 2022, 9477, 504, 9478, 1104, 2]
 
-// Module 9465 (useGameProfileCommunities)
+// Module 9476 (useGameProfileCommunities)
 import DurationsDefault from "Durations" /* 1104 */;
-import DiscoverableGuildsActionCreators from "DiscoverableGuildsActionCreators" /* 9467 */;
+import DiscoverableGuildsActionCreators from "DiscoverableGuildsActionCreators" /* 9478 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GameStore from "GameStore" /* 2022 */;
-import DiscoverableGuildsStore from "DiscoverableGuildsStore" /* 9466 */;
+import DiscoverableGuildsStore from "DiscoverableGuildsStore" /* 9477 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
 
-function getCommunityGuildIds(gameId) {
-  const game = GameStore.getGame(gameId);
+function getCommunityGuildIds(arg0) {
+  const game = GameStore.getGame(arg0);
   let communityGuildIds;
   if (game != null) {
     communityGuildIds = game.communityGuildIds;
@@ -27,8 +27,8 @@ function getCommunityGuildIds(gameId) {
 }
 let closure_4 = [];
 let obj = {
-  getQueryId(gameId) {
-    const game = GameStore.getGame(gameId);
+  getQueryId(arg0) {
+    const game = GameStore.getGame(arg0);
     let communityGuildIds;
     if (game != null) {
       communityGuildIds = game.communityGuildIds;
@@ -39,13 +39,13 @@ let obj = {
     let combined = null;
     if (communityGuildIds.length > 0) {
       const _HermesInternal = HermesInternal;
-      combined = "game-community-guilds/" + gameId;
+      combined = "game-community-guilds/" + arg0;
     }
     return combined;
   },
-  get(gameId) {
+  get(arg0) {
     const getGuilds = DiscoverableGuildsStore.getGuilds;
-    const game = GameStore.getGame(gameId);
+    const game = GameStore.getGame(arg0);
     let communityGuildIds;
     if (game != null) {
       communityGuildIds = game.communityGuildIds;

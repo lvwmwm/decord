@@ -1,21 +1,21 @@
-// Module ID: 18396
-// Function ID: 18397
+// Module ID: 18464
+// Function ID: 18465
 // Name: UserVideoFailed
-// Dependencies: [109, 17, 1087, 21, 4966, 587, 558, 576, 5877, 11362, 5720, 5831, 1128, 5216, 5226, 2]
+// Dependencies: [109, 17, 1087, 21, 4969, 587, 558, 576, 5884, 11379, 5725, 5838, 1128, 5220, 5230, 2]
 
-// Module 18396 (UserVideoFailed)
+// Module 18464 (UserVideoFailed)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5720 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5831 */;
-import AVError from "AVError" /* 5877 */;
-import VideoStreamReadyActionCreators from "VideoStreamReadyActionCreators" /* 11362 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5725 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5838 */;
+import AVError from "AVError" /* 5884 */;
+import VideoStreamReadyActionCreators from "VideoStreamReadyActionCreators" /* 11379 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -155,7 +155,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserVideoF
                       let tmp35 = !tmp6;
                       if (tmp35) {
                         const obj4 = { variant: "secondary", size: "md", text: intl3.string(require("intl").t["hxmQ/e"]), onPress: tmp15 };
-                        const Button = tmp(5226).Button;
+                        const Button = tmp(5230).Button;
                         intl3 = tmp(1128).intl;
                         tmp35 = closure_7(Button, obj4);
                       }
@@ -228,7 +228,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserVideoF
     } else {
       tmp27 = cResult[30];
     }
-    const Text = tmp(5216).Text;
+    const Text = tmp(5220).Text;
     const text2 = tmp12.text;
     const intl2 = tmp(1128).intl;
     const obj7 = { errorCode };
@@ -314,7 +314,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserVideoF
           }, 1000);
         }
     };
-    const Button = tmp3(5226).Button;
+    const Button = tmp3(5230).Button;
     intl3 = tmp3(1128).intl;
     tmp8Result = tmp8(Button, obj6);
   }

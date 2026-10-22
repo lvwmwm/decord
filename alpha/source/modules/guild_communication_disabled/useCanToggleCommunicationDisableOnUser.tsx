@@ -1,9 +1,9 @@
-// Module ID: 12669
-// Function ID: 12670
+// Module ID: 12701
+// Function ID: 12702
 // Name: useCanToggleCommunicationDisableOnUser
 // Dependencies: [4839, 4843, 4901, 1392, 1087, 4906, 558, 576, 504, 2]
 
-// Module 12669 (useCanToggleCommunicationDisableOnUser)
+// Module 12701 (useCanToggleCommunicationDisableOnUser)
 import Constants from "Constants" /* 1087 */;
 import GuildRecord from "GuildRecord" /* 4839 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4906 */;

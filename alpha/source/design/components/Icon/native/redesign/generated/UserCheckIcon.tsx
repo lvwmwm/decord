@@ -1,14 +1,14 @@
-// Module ID: 14242
-// Function ID: 14243
+// Module ID: 14280
+// Function ID: 14281
 // Name: UserCheckIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8421, 5650, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8430, 5654, 2]
 
-// Module 14242 (UserCheckIcon)
+// Module 14280 (UserCheckIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 5650 */;
-import AssetRegistry from "AssetRegistry" /* 8421 */;
+import BaseIconImage2 from "BaseIconImage" /* 5654 */;
+import AssetRegistry from "AssetRegistry" /* 8430 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCheckI
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(5650).BaseIconImage;
+  const BaseIconImage = tmp(5654).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

@@ -1,15 +1,15 @@
-// Module ID: 17598
-// Function ID: 17599
+// Module ID: 17668
+// Function ID: 17669
 // Name: MentionSubtitle
-// Dependencies: [19, 17, 21, 558, 576, 17599, 8478, 8527, 1128, 5216, 2]
+// Dependencies: [19, 17, 21, 558, 576, 17669, 8487, 8536, 1128, 5220, 2]
 
-// Module 17598 (MentionSubtitle)
+// Module 17668 (MentionSubtitle)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8478 */;
-import useSubtitleStyles from "useSubtitleStyles" /* 17599 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8487 */;
+import useSubtitleStyles from "useSubtitleStyles" /* 17669 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -103,7 +103,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MentionSub
     channelIconComponentWithGuild = tmpResult.getChannelIconComponentWithGuild(channel, guild);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(8527).TextIcon;
+    channelIconComponentWithGuild = tmp(8536).TextIcon;
   }
   cResult[0] = channel;
   cResult[1] = guild;
@@ -126,14 +126,14 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MentionSub
     channelIconComponentWithGuild = tmpResult.getChannelIconComponentWithGuild(channel, guild);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(8527).TextIcon;
+    channelIconComponentWithGuild = tmp(8536).TextIcon;
   }
   const obj2 = { style: subtitleStyles.subtitleRow, children: items };
   items = [, ];
   const obj3 = { size: "xxs", color: "icon-muted", style: subtitleStyles.channelIcon };
   items[0] = _false(channelIconComponentWithGuild, obj3);
   const obj4 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, style: subtitleStyles.subtitleText, children: intl.format(intl2.t.L9YdGH, obj5) };
-  const Text = tmp(5216).Text;
+  const Text = tmp(5220).Text;
   intl = tmp(1128).intl;
   obj5 = {
     channelName,

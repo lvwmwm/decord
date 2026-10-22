@@ -1,9 +1,9 @@
-// Module ID: 4921
-// Function ID: 4922
+// Module ID: 4924
+// Function ID: 4925
 // Name: SubscriptionRoleStore
 // Dependencies: [4839, 4876, 4881, 4875, 4843, 1392, 1087, 4891, 504, 584, 2]
 
-// Module 4921 (SubscriptionRoleStore)
+// Module 4924 (SubscriptionRoleStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import GuildRecord from "GuildRecord" /* 4839 */;

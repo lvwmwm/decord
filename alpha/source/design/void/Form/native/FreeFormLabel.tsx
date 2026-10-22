@@ -1,9 +1,9 @@
-// Module ID: 7009
-// Function ID: 7010
+// Module ID: 7016
+// Function ID: 7017
 // Name: FreeFormLabel
-// Dependencies: [19, 21, 558, 576, 5216, 2]
+// Dependencies: [19, 21, 558, 576, 5220, 2]
 
-// Module 7009 (FreeFormLabel)
+// Module 7016 (FreeFormLabel)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
@@ -11,7 +11,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Text_Text = tmp(5216);
+const Text_Text = tmp(5220);
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FreeFormLabel(arg0) {
   let children;

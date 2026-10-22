@@ -1,11 +1,11 @@
-// Module ID: 9254
-// Function ID: 9255
+// Module ID: 9263
+// Function ID: 9264
 // Name: useGameProfileNavigation
-// Dependencies: [32, 19, 9255, 9205, 558, 576, 2]
+// Dependencies: [32, 19, 9264, 9214, 558, 576, 2]
 
-// Module 9254 (useGameProfileNavigation)
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9205 */;
-import GameProfileNavTypes from "GameProfileNavTypes" /* 9255 */;
+// Module 9263 (useGameProfileNavigation)
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9214 */;
+import GameProfileNavTypes from "GameProfileNavTypes" /* 9264 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

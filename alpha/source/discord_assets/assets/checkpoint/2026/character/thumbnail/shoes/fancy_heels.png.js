@@ -1,8 +1,8 @@
-// Module ID: 6053
-// Function ID: 6054
+// Module ID: 6060
+// Function ID: 6061
 // Dependencies: [2]
 
-// Module 6053
+// Module 6060
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/shoes/fancy_heels.png.js");

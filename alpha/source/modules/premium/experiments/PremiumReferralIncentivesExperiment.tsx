@@ -1,9 +1,9 @@
-// Module ID: 14636
-// Function ID: 14637
+// Module ID: 14680
+// Function ID: 14681
 // Name: PremiumReferralIncentivesExperiment
 // Dependencies: [1455, 558, 576, 2]
 
-// Module 14636 (PremiumReferralIncentivesExperiment)
+// Module 14680 (PremiumReferralIncentivesExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

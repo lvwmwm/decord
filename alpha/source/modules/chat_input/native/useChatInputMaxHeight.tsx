@@ -1,21 +1,21 @@
-// Module ID: 12436
-// Function ID: 12437
+// Module ID: 12466
+// Function ID: 12467
 // Name: useChatInputMaxHeight
-// Dependencies: [32, 19, 1501, 12432, 1899, 5578, 5143, 1631, 1499, 12437, 12438, 558, 576, 12439, 5188, 5191, 5035, 2]
+// Dependencies: [32, 19, 1501, 12462, 1899, 5582, 5147, 1631, 1499, 12467, 12468, 558, 576, 12469, 5192, 5195, 5038, 2]
 // Exports: getChatInputHeightAnimationTiming, getChatInputHeightAnimationTimingWorklet, getChatInputMinHeight
 
-// Module 12436 (useChatInputMaxHeight)
+// Module 12466 (useChatInputMaxHeight)
 import KeyboardTypes from "KeyboardTypes" /* 1631 */;
 import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 1899 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
-import useKeyboardType from "useKeyboardType" /* 5143 */;
-import timing from "timing" /* 5188 */;
-import timingPresets from "timingPresets" /* 5191 */;
-import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 5578 */;
-import ChatInputConstants from "ChatInputConstants" /* 12432 */;
-import useKeyboardStateSharedValue from "useKeyboardStateSharedValue" /* 12437 */;
-import useWindowDimensionsSharedValue from "useWindowDimensionsSharedValue" /* 12438 */;
-import subscribeToWindowDimensionsDefault from "subscribeToWindowDimensions" /* 12439 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
+import useKeyboardType from "useKeyboardType" /* 5147 */;
+import timing from "timing" /* 5192 */;
+import timingPresets from "timingPresets" /* 5195 */;
+import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 5582 */;
+import ChatInputConstants from "ChatInputConstants" /* 12462 */;
+import useKeyboardStateSharedValue from "useKeyboardStateSharedValue" /* 12467 */;
+import useWindowDimensionsSharedValue from "useWindowDimensionsSharedValue" /* 12468 */;
+import subscribeToWindowDimensionsDefault from "subscribeToWindowDimensions" /* 12469 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1501 */;

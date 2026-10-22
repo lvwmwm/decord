@@ -1,22 +1,22 @@
-// Module ID: 19237
-// Function ID: 19238
+// Module ID: 19302
+// Function ID: 19303
 // Name: ParentalConsentConnectionHeader
-// Dependencies: [19, 17, 1392, 21, 4966, 5250, 587, 558, 576, 1633, 504, 6647, 1128, 2832, 5216, 2]
+// Dependencies: [19, 17, 1392, 21, 4969, 5254, 587, 558, 576, 1633, 504, 6654, 1128, 2832, 5220, 2]
 
-// Module 19237 (ParentalConsentConnectionHeader)
+// Module 19302 (ParentalConsentConnectionHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import NavigatorConstants from "NavigatorConstants" /* 5250 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6647 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import NavigatorConstants from "NavigatorConstants" /* 5254 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6654 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -107,7 +107,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParentalConsentC
     let tmp19 = null != stateFromStores;
     if (tmp19) {
       const obj4 = { accessibilityRole: "header", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores };
-      tmp19 = hasOwnProperty(tmp(5216).Text, obj4);
+      tmp19 = hasOwnProperty(tmp(5220).Text, obj4);
     }
     cResult[8] = stateFromStores;
     cResult[9] = tmp19;

@@ -1,15 +1,15 @@
-// Module ID: 12267
-// Function ID: 12268
+// Module ID: 12290
+// Function ID: 12291
 // Name: ConjureIdeasIntroTip
-// Dependencies: [19, 21, 12253, 12268, 9919, 1128, 3830, 5226, 2]
+// Dependencies: [19, 21, 12276, 12291, 9931, 1128, 3830, 5230, 2]
 
-// Module 12267 (ConjureIdeasIntroTip)
+// Module 12290 (ConjureIdeasIntroTip)
 import intl4 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import components_Button_Button from "components/Button/Button" /* 5226 */;
-import LightbulbIcon from "LightbulbIcon" /* 9919 */;
-import conjureIdeasIntroTip from "conjureIdeasIntroTip" /* 12253 */;
-import ConjureTipCallout from "ConjureTipCallout" /* 12268 */;
+import components_Button_Button from "components/Button/Button" /* 5230 */;
+import LightbulbIcon from "LightbulbIcon" /* 9931 */;
+import conjureIdeasIntroTip from "conjureIdeasIntroTip" /* 12276 */;
+import ConjureTipCallout from "ConjureTipCallout" /* 12291 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

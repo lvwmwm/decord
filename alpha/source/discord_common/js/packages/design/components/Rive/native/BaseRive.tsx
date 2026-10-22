@@ -1,15 +1,15 @@
-// Module ID: 5029
-// Function ID: 5030
+// Module ID: 5032
+// Function ID: 5033
 // Name: BaseRive
-// Dependencies: [19, 17, 21, 5030, 4980, 5078, 5079, 5080, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5033, 4983, 5082, 5083, 5084, 558, 576, 2]
 // Exports: useArtboardBinding
 
-// Module 5029 (BaseRive)
+// Module 5032 (BaseRive)
 import react2 from "react" /* 576 */;
-import DataBindByName from "DataBindByName" /* 5030 */;
-import ManaContext from "ManaContext" /* 5078 */;
-import useRivePlayback2 from "useRivePlayback" /* 5079 */;
-import RiveTypes from "RiveTypes" /* 5080 */;
+import DataBindByName from "DataBindByName" /* 5033 */;
+import ManaContext from "ManaContext" /* 5082 */;
+import useRivePlayback2 from "useRivePlayback" /* 5083 */;
+import RiveTypes from "RiveTypes" /* 5084 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -17,7 +17,7 @@ import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap;
+let _require, current, dependencyMap;
 
 let Platform;
 let StyleSheet;
@@ -296,7 +296,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBooleanBi
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useColorBinding(arg0, arg1, arg2, cResult, arg4) {
   let closure_0 = arg2;
-  let closure_1 = cResult;
+  dependencyMap = cResult;
   let closure_2 = arg4;
   let obj = react2;
   cResult = obj.c(11);
@@ -319,38 +319,44 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useColorBind
       const effect = react.useEffect(tmp2, tmp3);
       let closure_5 = react.useRef(cResult);
       if (cResult[5] !== cResult) {
-        const fn2 = function p() {
-          ref.current = current;
-        };
+        class E {
+          constructor() {
+            ref.current = current;
+          }
+        }
         const items = [cResult];
         cResult[5] = cResult;
-        cResult[6] = fn2;
+        cResult[6] = E;
         cResult[7] = items;
         tmp6 = items;
-        tmp5 = fn2;
+        tmp5 = E;
       } else {
-        tmp5 = cResult[6];
+        class E {
+          constructor() {
+            ref.current = current;
+          }
+        }
         tmp6 = cResult[7];
       }
       const effect1 = obj3.useEffect(tmp5, tmp6);
       if (cResult[8] !== value) {
-        const fn3 = function y() {
-          const obj = value;
-          if (null != value) {
-            current = ref.current;
-            if (current != null) {
-              current(obj.toInt());
-            }
+        class E {
+          constructor() {
+            ref.current = current;
           }
-        };
+        }
         const items1 = [value];
         cResult[8] = value;
-        cResult[9] = fn3;
+        cResult[9] = tmp10;
         cResult[10] = items1;
         tmp9 = items1;
-        tmp8 = fn3;
+        tmp8 = tmp10;
       } else {
-        tmp8 = cResult[9];
+        class E {
+          constructor() {
+            ref.current = current;
+          }
+        }
         tmp9 = cResult[10];
       }
       const effect2 = obj3.useEffect(tmp8, tmp9);
@@ -546,103 +552,115 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTriggerBi
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
+let c10 = 1000;
 const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useImageBinding(arg0, arg1, arg2, cResult, arg4) {
   let closure_0;
   let closure_1;
   let closure_2;
+  let tmp11;
+  let tmp12;
+  let tmp2;
+  let tmp3;
   _require = arg0;
   dependencyMap = arg1;
   react = arg2;
-  let current = cResult;
+  current = cResult;
   let closure_4 = arg4;
   let obj = require("react");
-  cResult = obj.c(13);
-  if (cResult[0] === arg1) {
-    if (cResult[1] === arg0) {
-      if (cResult[2] === arg4) {
-        let tmp2;
-        let tmp3;
-        let tmp6;
-        let tmp5;
-        if (cResult[3] === arg2) {
-          tmp2 = cResult[4];
-          tmp3 = cResult[5];
+  cResult = obj.c(15);
+  let closure_5 = react.useRef(null);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function c() {
+      let ref;
+      return () => {
+        if (null != ref.current) {
+          current = tmp.current;
+          const _setTimeout = setTimeout;
+          const timerId = setTimeout(() => current.dispose(), closure_2_10);
         }
-        const effect = react.useEffect(tmp2, tmp3);
-        let closure_5 = react.useRef(cResult);
-        if (cResult[6] !== cResult) {
-          const fn2 = function b() {
-            closure_5.current = current;
-          };
-          const items = [cResult];
-          cResult[6] = cResult;
-          cResult[7] = fn2;
-          class E {
-            constructor() {
-              let ref;
-              const obj = closure_1;
-              if (null != closure_1) {
-                const imagePropertyResult = obj.imageProperty(closure_0);
-                if (null != imagePropertyResult) {
-                  return imagePropertyResult.addListener(() => {
-                    current = ref.current;
-                    let currentResult;
-                    if (current != null) {
-                      currentResult = current();
-                    }
-                    return currentResult;
-                  });
-                }
-              }
-            }
-          }
-          cResult[8] = items;
-          tmp6 = items;
-          tmp5 = fn2;
-        } else {
-          tmp5 = cResult[7];
-          tmp6 = cResult[8];
+        ref.current = null;
+      };
+    };
+    const items = [];
+    cResult[0] = fn;
+    cResult[1] = items;
+    tmp3 = items;
+    tmp2 = fn;
+  } else {
+    [tmp2, tmp3] = cResult;
+  }
+  const effect = obj2.useEffect(tmp2, tmp3);
+  if (cResult[2] === arg1) {
+    if (cResult[3] === arg0) {
+      if (cResult[4] === arg4) {
+        let tmp5;
+        let tmp6;
+        let tmp9;
+        let tmp8;
+        if (cResult[5] === arg2) {
+          tmp5 = cResult[6];
+          tmp6 = cResult[7];
         }
         const effect1 = obj2.useEffect(tmp5, tmp6);
-        if (cResult[9] === arg1) {
-          let tmp8;
-          let tmp9;
-          if (cResult[10] === arg0) {
-            tmp8 = cResult[11];
-            tmp9 = cResult[12];
-          }
-          const effect2 = obj2.useEffect(tmp8, tmp9);
-        }
-        class E {
-          constructor() {
-            let ref;
-            const obj = closure_1;
-            if (null != closure_1) {
-              const imagePropertyResult = obj.imageProperty(closure_0);
-              if (null != imagePropertyResult) {
-                return imagePropertyResult.addListener(() => {
-                  current = ref.current;
-                  let currentResult;
-                  if (current != null) {
-                    currentResult = current();
-                  }
-                  return currentResult;
-                });
-              }
+        let closure_6 = obj2.useRef(cResult);
+        if (cResult[8] !== cResult) {
+          class E {
+            constructor() {
+              closure_6.current = current;
             }
           }
+          const items1 = [cResult];
+          cResult[8] = cResult;
+          cResult[9] = E;
+          cResult[10] = items1;
+          tmp9 = items1;
+          tmp8 = E;
+        } else {
+          class E {
+            constructor() {
+              closure_6.current = current;
+            }
+          }
+          tmp9 = cResult[10];
         }
-        const items1 = [arg0, arg1];
-        cResult[9] = arg1;
-        cResult[10] = arg0;
-        cResult[11] = E;
-        cResult[12] = items1;
-        tmp9 = items1;
-        tmp8 = E;
+        const effect2 = obj2.useEffect(tmp8, tmp9);
+        if (cResult[11] === arg1) {
+          class E {
+            constructor() {
+              closure_6.current = current;
+            }
+          }
+          const effect3 = obj2.useEffect(tmp11, tmp12);
+        }
+        const fn3 = function y() {
+          let ref;
+          const obj = closure_1;
+          if (null != closure_1) {
+            const imagePropertyResult = obj.imageProperty(closure_0);
+            if (null != imagePropertyResult) {
+              return imagePropertyResult.addListener(() => {
+                current = ref.current;
+                let currentResult;
+                if (current != null) {
+                  currentResult = current();
+                }
+                return currentResult;
+              });
+            }
+          }
+        };
+        const items2 = [arg0, arg1];
+        cResult[11] = arg1;
+        cResult[12] = arg0;
+        cResult[13] = fn3;
+        cResult[14] = items2;
+        tmp11 = fn3;
+        tmp12 = items2;
       }
     }
   }
-  const fn = function c() {
+  const fn2 = function v() {
+    let ref;
     if (null != closure_1) {
       let tmp = closure_2;
       if (null != closure_2) {
@@ -654,15 +672,23 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useImageB
           uri = closure_4.resolveAssetSource(tmp).uri;
         }
         const fromURLAsync = loadFromURLAsync(uri);
-        const nextPromise = fromURLAsync.then((result) => {
+        const nextPromise = fromURLAsync.then((dispose) => {
           const tmp = c0;
-          if (!tmp) {
+          if (tmp) {
+            dispose.dispose();
+          } else {
             const imagePropertyResult = closure_1.imageProperty(closure_0);
             if (imagePropertyResult != null) {
-              result = imagePropertyResult.set(result);
+              const result = imagePropertyResult.set(dispose);
             }
+            if (null != ref.current) {
+              current = tmp6.current;
+              const _setTimeout = setTimeout;
+              const timerId = setTimeout(() => current.dispose(), c10);
+            }
+            ref.current = dispose;
             if (closure_4 != null) {
-              tmp7();
+              tmp10();
             }
           }
         });
@@ -675,24 +701,37 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useImageB
       }
     }
   };
-  const items2 = [arg0, arg1, arg2, arg4];
-  cResult[0] = arg1;
-  cResult[1] = arg0;
-  cResult[2] = arg4;
-  cResult[3] = arg2;
-  cResult[4] = fn;
-  cResult[5] = items2;
-  tmp3 = items2;
-  tmp2 = fn;
+  const items3 = [arg0, arg1, arg2, arg4];
+  cResult[2] = arg1;
+  cResult[3] = arg0;
+  cResult[4] = arg4;
+  cResult[5] = arg2;
+  cResult[6] = fn2;
+  cResult[7] = items3;
+  tmp6 = items3;
+  tmp5 = fn2;
 }) : (function useImageBinding(arg0, arg1, arg2, cResult, arg4) {
   let closure_2;
   let closure_0 = arg0;
   let closure_1 = arg1;
   react = arg2;
-  let current = cResult;
+  current = cResult;
   let closure_4 = arg4;
-  const items = [arg0, arg1, arg2, arg4];
+  let closure_5 = react.useRef(null);
   const effect = react.useEffect(() => {
+    let ref;
+    return () => {
+      if (null != ref.current) {
+        current = tmp.current;
+        const _setTimeout = setTimeout;
+        const timerId = setTimeout(() => current.dispose(), closure_2_10);
+      }
+      ref.current = null;
+    };
+  }, []);
+  const items = [arg0, arg1, arg2, arg4];
+  const effect1 = react.useEffect(() => {
+    let ref;
     if (null != closure_1) {
       let tmp = closure_2;
       if (null != closure_2) {
@@ -704,15 +743,23 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useImageB
           uri = closure_4.resolveAssetSource(tmp).uri;
         }
         const fromURLAsync = loadFromURLAsync(uri);
-        const nextPromise = fromURLAsync.then((result) => {
+        const nextPromise = fromURLAsync.then((dispose) => {
           const tmp = c0;
-          if (!tmp) {
+          if (tmp) {
+            dispose.dispose();
+          } else {
             const imagePropertyResult = closure_1.imageProperty(closure_0);
             if (imagePropertyResult != null) {
-              result = imagePropertyResult.set(result);
+              const result = imagePropertyResult.set(dispose);
             }
+            if (null != ref.current) {
+              current = tmp6.current;
+              const _setTimeout = setTimeout;
+              const timerId = setTimeout(() => current.dispose(), c10);
+            }
+            ref.current = dispose;
             if (closure_4 != null) {
-              tmp7();
+              tmp10();
             }
           }
         });
@@ -725,13 +772,13 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useImageB
       }
     }
   }, items);
-  let closure_5 = react.useRef(cResult);
+  let closure_6 = react.useRef(cResult);
   const items1 = [cResult];
-  const effect1 = react.useEffect(() => {
-    closure_5.current = current;
+  const effect2 = react.useEffect(() => {
+    closure_6.current = current;
   }, items1);
   const items2 = [arg0, arg1];
-  const effect2 = react.useEffect(() => {
+  const effect3 = react.useEffect(() => {
     let ref;
     const obj = closure_1;
     if (null != closure_1) {
@@ -788,7 +835,7 @@ class BaseRiveInner {
     const rive = tmpResult.useRive();
     const riveViewRef = rive.riveViewRef;
     const setHybridRef = rive.setHybridRef;
-    const enabled = react.useContext(tmp(4980).AccessibilityPreferencesContext).reducedMotion.enabled;
+    const enabled = react.useContext(tmp(4983).AccessibilityPreferencesContext).reducedMotion.enabled;
     const tmpResult4 = ManaContext;
     const experiments = tmpResult4.useManaContext().experiments;
     let flag;
@@ -823,7 +870,7 @@ class BaseRiveInner {
     let instance = useViewModelInstance(tmp13, { artboardName: artboard, instanceName: memo }).instance;
     let None = instance;
     if (instance == null) {
-      None = tmp(5030).DataBindMode.None;
+      None = tmp(5033).DataBindMode.None;
     }
     let reducedMotion;
     if (artboardProperties[artboard] != null) {
@@ -849,7 +896,7 @@ class BaseRiveInner {
     const items2 = [container.container, ];
     let hidden;
     const tmp23 = metroImportDefault;
-    const tmp24 = _false;
+    const tmp24 = c3;
     if (null == riveViewRef) {
       hidden = tmp25.hidden;
     }
@@ -863,7 +910,7 @@ class BaseRiveInner {
       let obj13;
       const obj5 = { file: riveFile, hybridRef: setHybridRef, artboardName: artboard, autoPlay: true, dataBind: None, style: items3 };
       items3 = [container.fill, style];
-      const RiveView = tmp(5030).RiveView;
+      const RiveView = tmp(5033).RiveView;
       const tmp28 = metroRequire;
       if (null != stateMachine) {
         obj7 = { stateMachineName: stateMachine };

@@ -1,13 +1,13 @@
-// Module ID: 13578
-// Function ID: 13579
+// Module ID: 13614
+// Function ID: 13615
 // Name: ChannelPrompt
-// Dependencies: [5, 32, 19, 17, 4899, 4843, 21, 4966, 5250, 504, 1505, 6903, 1128, 7388, 6353, 7200, 6862, 1417, 5216, 6986, 5226, 7012, 2]
+// Dependencies: [5, 32, 19, 17, 4899, 4843, 21, 4969, 5254, 504, 1505, 6910, 1128, 7395, 6360, 7207, 6869, 1417, 5220, 6993, 5230, 7019, 2]
 // Exports: default
 
-// Module 13578 (ChannelPrompt)
+// Module 13614 (ChannelPrompt)
 import intl5 from "intl" /* 1128 */;
-import NavigatorConstants from "NavigatorConstants" /* 5250 */;
-import NavigatorHeader from "NavigatorHeader" /* 6903 */;
+import NavigatorConstants from "NavigatorConstants" /* 5254 */;
+import NavigatorHeader from "NavigatorHeader" /* 6910 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -15,7 +15,7 @@ import react_native from "react-native" /* 17 */;
 import GuildChannelStore from "GuildChannelStore" /* 4899 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, navigation;

@@ -1,19 +1,19 @@
-// Module ID: 12999
-// Function ID: 13000
+// Module ID: 13035
+// Function ID: 13036
 // Name: ForumPostMessageCount
-// Dependencies: [19, 17, 21, 4966, 587, 1384, 558, 576, 9683, 1128, 8518, 5216, 10962, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 1384, 558, 576, 9695, 1128, 8527, 5220, 10979, 2]
 
-// Module 12999 (ForumPostMessageCount)
+// Module 13035 (ForumPostMessageCount)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import ChatIcon2 from "ChatIcon" /* 8518 */;
-import ForumHooks from "ForumHooks" /* 9683 */;
-import AnimatedCounterDefault from "AnimatedCounter" /* 10962 */;
+import ChatIcon2 from "ChatIcon" /* 8527 */;
+import ForumHooks from "ForumHooks" /* 9695 */;
+import AnimatedCounterDefault from "AnimatedCounter" /* 10979 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -128,7 +128,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostM
             let tmp19 = null != unreadCount;
             if (tmp19) {
               const obj5 = { variant: "text-sm/semibold", color: "text-brand", style: tmp4.messageUnreadCount, children: items1 };
-              const Text = tmp(5216).Text;
+              const Text = tmp(5220).Text;
               const intl2 = tmp(1128).intl;
               const obj6 = { count: unreadCount };
               items1 = ["(", intl2.format(intl3.t.z3PEth, obj6), ")"];
@@ -143,7 +143,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostM
       }
       if (isMaxMessageCount) {
         const obj7 = { variant: "text-sm/semibold", color: str, children: messageCountText };
-        tmp14Result = tmp14(tmp(5216).Text, obj7);
+        tmp14Result = tmp14(tmp(5220).Text, obj7);
       } else {
         const obj8 = { count: messageCount, textVariant: "text-sm/semibold", textColor: str, animate: false };
         tmp14Result = tmp14(AnimatedCounterDefault, obj8);
@@ -196,7 +196,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostM
   intl = tmp2(1128).intl;
   const obj3 = { size: "xs", style: hasUnreads ? tmp.iconUnread : tmp.iconRead, color: str2 };
   str2 = "icon-muted";
-  const ChatIcon = tmp2(8518).ChatIcon;
+  const ChatIcon = tmp2(8527).ChatIcon;
   const tmp6 = View;
   if (hasUnreads) {
     str2 = "interactive-text-default";
@@ -204,7 +204,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostM
   items1 = [React3(ChatIcon, obj3), , ];
   if (isMaxMessageCount) {
     const obj4 = { variant: "text-sm/semibold", color: str, children: messageCountText };
-    tmp7Result = tmp7(tmp2(5216).Text, obj4);
+    tmp7Result = tmp7(tmp2(5220).Text, obj4);
   } else {
     const obj5 = { count: messageCount, textVariant: "text-sm/semibold", textColor: str, animate: false };
     tmp7Result = tmp7(AnimatedCounterDefault, obj5);
@@ -213,7 +213,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostM
   let tmp5Result = null != unreadCount;
   if (tmp5Result) {
     const obj6 = { variant: "text-sm/semibold", color: "text-brand", style: tmp.messageUnreadCount, children: items2 };
-    const Text = tmp2(5216).Text;
+    const Text = tmp2(5220).Text;
     const intl2 = tmp2(1128).intl;
     const obj7 = { count: unreadCount };
     items2 = ["(", intl2.format(intl3.t.z3PEth, obj7), ")"];

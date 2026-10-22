@@ -1,20 +1,20 @@
-// Module ID: 14716
-// Function ID: 14717
+// Module ID: 14760
+// Function ID: 14761
 // Name: PremiumGroupEducationActionSheet
-// Dependencies: [17, 2066, 21, 4966, 587, 558, 576, 6991, 5216, 1128, 3250, 5247, 2]
+// Dependencies: [17, 2066, 21, 4969, 587, 558, 576, 6998, 5220, 1128, 3250, 5251, 2]
 
-// Module 14716 (PremiumGroupEducationActionSheet)
+// Module 14760 (PremiumGroupEducationActionSheet)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import PremiumGroupConstants from "PremiumGroupConstants" /* 2066 */;
 import _modDef3250 from "module_3250" /* 3250 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5247 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6991 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5251 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6998 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -103,7 +103,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGro
         const obj6 = { children: metroRequire(View, obj7) };
         obj7 = { style: container, children: items };
         items = [tmp13, tmp22];
-        BottomSheet = tmp(5247).BottomSheet;
+        BottomSheet = tmp(5251).BottomSheet;
         const tmp29 = hasOwnProperty(BottomSheet, obj6);
         cResult[14] = tmp4.container;
         cResult[15] = tmp13;

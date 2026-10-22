@@ -1,35 +1,35 @@
-// Module ID: 13538
-// Function ID: 13539
+// Module ID: 13574
+// Function ID: 13575
 // Name: GuildInvite
-// Dependencies: [32, 19, 17, 9091, 4821, 9011, 4899, 9025, 7052, 1087, 21, 4966, 5250, 587, 1267, 558, 576, 8536, 1128, 6882, 9090, 7199, 1505, 5249, 504, 5951, 9042, 5245, 6903, 4973, 9021, 13498, 9010, 5693, 5216, 13539, 1202, 9057, 6887, 9088, 5226, 7200, 2]
+// Dependencies: [32, 19, 17, 9100, 4821, 9020, 4899, 9034, 7059, 1087, 21, 4969, 5254, 587, 1267, 558, 576, 8545, 1128, 6889, 9099, 7206, 1505, 5253, 504, 5958, 9051, 5249, 6910, 4976, 9030, 13534, 9019, 5697, 5220, 13575, 1202, 9066, 6894, 9097, 5230, 7207, 2]
 
-// Module 13538 (GuildInvite)
+// Module 13574 (GuildInvite)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
-import NavigatorConstants from "NavigatorConstants" /* 5250 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5693 */;
-import react_native from "react-native" /* 5951 */;
-import TableRow2 from "TableRow" /* 6882 */;
-import NavigatorHeader from "NavigatorHeader" /* 6903 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 7052 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 7199 */;
-import GroupIcon from "GroupIcon" /* 8536 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9010 */;
-import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 9042 */;
-import InstantInviteRowDefault from "InstantInviteRow" /* 9090 */;
-import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9091 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13498 */;
+import NavigatorConstants from "NavigatorConstants" /* 5254 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5697 */;
+import react_native from "react-native" /* 5958 */;
+import TableRow2 from "TableRow" /* 6889 */;
+import NavigatorHeader from "NavigatorHeader" /* 6910 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 7059 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7206 */;
+import GroupIcon from "GroupIcon" /* 8545 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9019 */;
+import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 9051 */;
+import InstantInviteRowDefault from "InstantInviteRow" /* 9099 */;
+import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9100 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13534 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 9011 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 9020 */;
 import GuildChannelStore_mod from "GuildChannelStore" /* 4899 */;
-import InviteSuggestionsStore from "InviteSuggestionsStore" /* 9025 */;
+import InviteSuggestionsStore from "InviteSuggestionsStore" /* 9034 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -221,7 +221,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildI
         }
       }
       const obj3 = { data: tmp5, renderItem: tmp7, contentContainerStyle: tmp4.suggestionRowsContainer, ListFooterComponent: tmp8, ItemSeparatorComponent: tmp12, keyExtractor: tmp14, getItemType: tmp15 };
-      const tmp18 = closure_17(tmp(7199).FlashList, obj3);
+      const tmp18 = closure_17(tmp(7206).FlashList, obj3);
       cResult[11] = tmp5;
       cResult[12] = tmp7;
       cResult[13] = tmp4.suggestionRowsContainer;
@@ -744,7 +744,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInvit
       if (stateFromStores != null) {
         code = stateFromStores.code;
       }
-      const tmp2Result = tmp2(9010);
+      const tmp2Result = tmp2(9019);
       handleOpenShareSheet(code, tmp, tmp2Result.getShareMessage(inviteSuggestionRows));
       closure_6(true);
     }

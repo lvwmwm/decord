@@ -1,16 +1,16 @@
-// Module ID: 12297
-// Function ID: 12298
+// Module ID: 12323
+// Function ID: 12324
 // Name: useConjurePatchNotesLink
-// Dependencies: [19, 6752, 10672, 1087, 558, 576, 11772, 504, 1114, 2]
+// Dependencies: [19, 6759, 10684, 1087, 558, 576, 11816, 504, 1114, 2]
 // Exports: conjurePatchNotesEditorProps, openConjureSentPatchNotes
 
-// Module 12297 (useConjurePatchNotesLink)
+// Module 12323 (useConjurePatchNotesLink)
 import Constants from "Constants" /* 1087 */;
 import router_utils from "router_utils" /* 1114 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6752 */;
-import useConjurePublishAction from "useConjurePublishAction" /* 11772 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6759 */;
+import useConjurePublishAction from "useConjurePublishAction" /* 11816 */;
 import react from "react" /* 19 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10672 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10684 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

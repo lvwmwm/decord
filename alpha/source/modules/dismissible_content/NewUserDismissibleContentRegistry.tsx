@@ -1,13 +1,13 @@
-// Module ID: 5013
-// Function ID: 5014
+// Module ID: 5016
+// Function ID: 5017
 // Name: NewUserDismissibleContentRegistry
-// Dependencies: [502, 4808, 4805, 558, 576, 5014, 573, 11, 2]
+// Dependencies: [502, 4808, 4805, 558, 576, 5017, 573, 11, 2]
 // Exports: disableNewUserDismissibleContent, isUserAccountOldEnough
 
-// Module 5013 (NewUserDismissibleContentRegistry)
+// Module 5016 (NewUserDismissibleContentRegistry)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import dismissible_content from "dismissible_content" /* 4805 */;
-import DcfNewUserCooldownExperiment from "DcfNewUserCooldownExperiment" /* 5014 */;
+import DcfNewUserCooldownExperiment from "DcfNewUserCooldownExperiment" /* 5017 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4808 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -26,7 +26,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNewUserDi
   const tmp2 = dependencyMap;
   let obj = dcfNewUserCooldown(576);
   const cResult = obj.c(9);
-  const obj2 = dcfNewUserCooldown(5014);
+  const obj2 = dcfNewUserCooldown(5017);
   dcfNewUserCooldown = obj2.useDcfNewUserCooldown();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AuthenticationStore, ];

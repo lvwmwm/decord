@@ -1,27 +1,27 @@
-// Module ID: 14738
-// Function ID: 14739
+// Module ID: 14782
+// Function ID: 14783
 // Name: GuildBoostingGuildList
-// Dependencies: [19, 17, 4843, 6680, 1087, 21, 4966, 587, 558, 576, 5187, 7426, 7066, 504, 8347, 6862, 5216, 5651, 10140, 1128, 14707, 9001, 2]
+// Dependencies: [19, 17, 4843, 6687, 1087, 21, 4969, 587, 558, 576, 5191, 7433, 7073, 504, 8356, 6869, 5220, 5655, 10152, 1128, 14751, 9010, 2]
 
-// Module 14738 (GuildBoostingGuildList)
+// Module 14782 (GuildBoostingGuildList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import useThemeDefault from "useTheme" /* 5187 */;
-import FastImageDefault from "FastImage" /* 5651 */;
-import GuildIconDefault from "GuildIcon" /* 6862 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7066 */;
-import transitionToGuild from "transitionToGuild" /* 7426 */;
-import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 8347 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9001 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10140 */;
-import BoostedGuildTierProgressCircleDefault from "BoostedGuildTierProgressCircle" /* 14707 */;
+import useThemeDefault from "useTheme" /* 5191 */;
+import FastImageDefault from "FastImage" /* 5655 */;
+import GuildIconDefault from "GuildIcon" /* 6869 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7073 */;
+import transitionToGuild from "transitionToGuild" /* 7433 */;
+import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 8356 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9010 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10152 */;
+import BoostedGuildTierProgressCircleDefault from "BoostedGuildTierProgressCircle" /* 14751 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import SortedGuildStore from "SortedGuildStore" /* 6680 */;
+import SortedGuildStore from "SortedGuildStore" /* 6687 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -102,7 +102,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildB
       const guildCardDescription = tmp4.guildCardDescription;
       if (cResult[8] !== stateFromStores.name) {
         let obj2 = { variant: "text-md/bold", children: stateFromStores.name };
-        const tmp20 = closure_7(guildId(5216).Text, obj2);
+        const tmp20 = closure_7(guildId(5220).Text, obj2);
         cResult[8] = stateFromStores.name;
         cResult[9] = tmp20;
         tmp18 = tmp20;
@@ -132,7 +132,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildB
       }
       if (cResult[14] !== tmp25) {
         const obj5 = { variant: "text-xs/medium", children: tmp25 };
-        const tmp29 = closure_7(guildId(5216).Text, obj5);
+        const tmp29 = closure_7(guildId(5220).Text, obj5);
         cResult[14] = tmp25;
         cResult[15] = tmp29;
         tmp27 = tmp29;
@@ -207,7 +207,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildB
       cResult[19] = tmp33;
       tmp30 = tmp33;
     }
-    const obj10 = { guild: stateFromStores, size: guildId(6862).GuildIconSizes.LARGE, style: tmp4.guildIcon, selected: false };
+    const obj10 = { guild: stateFromStores, size: guildId(6869).GuildIconSizes.LARGE, style: tmp4.guildIcon, selected: false };
     const tmp5Result4 = GuildIconDefault;
     const tmp17 = closure_7(tmp5Result4, obj10);
     cResult[5] = stateFromStores;
@@ -245,19 +245,19 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildB
         },
       children: items1
     };
-    const obj3 = { guild: stateFromStores, size: guildId(6862).GuildIconSizes.LARGE, style: tmp.guildIcon, selected: false };
+    const obj3 = { guild: stateFromStores, size: guildId(6869).GuildIconSizes.LARGE, style: tmp.guildIcon, selected: false };
     const tmp2Result = TouchableHitBoxDefault;
     const tmp2Result3 = GuildIconDefault;
     items1 = [closure_7(tmp2Result3, obj3), , ];
     const obj4 = { style: tmp.guildCardDescription, children: items2 };
     const obj5 = { variant: "text-md/bold", children: stateFromStores.name };
-    items2 = [closure_7(guildId(5216).Text, obj5), ];
+    items2 = [closure_7(guildId(5220).Text, obj5), ];
     const obj6 = { style: tmp.subscriptionInfo, children: items3 };
     const obj7 = { source: AssetRegistryDefault, style: tmp.premiumGuildImage, resizeMode: "contain", resizeMethod: "resize" };
     const tmp2Result4 = FastImageDefault;
     items3 = [closure_7(tmp2Result4, obj7), ];
     const obj8 = { variant: "text-xs/medium", children: intl.format(guildId(1128).t.If4iTS, obj9) };
-    const Text = tmp5(5216).Text;
+    const Text = tmp5(5220).Text;
     intl = tmp5(1128).intl;
     obj9 = { subscriberCount: tmp8 };
     items3[1] = closure_7(Text, obj8);

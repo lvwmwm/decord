@@ -1,9 +1,9 @@
-// Module ID: 17102
-// Function ID: 17103
+// Module ID: 17171
+// Function ID: 17172
 // Name: useDMPermissionsOverrideCount
-// Dependencies: [4843, 558, 576, 4797, 17103, 504, 2]
+// Dependencies: [4843, 558, 576, 4797, 17172, 504, 2]
 
-// Module 17102 (useDMPermissionsOverrideCount)
+// Module 17171 (useDMPermissionsOverrideCount)
 import GuildStore from "GuildStore" /* 4843 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

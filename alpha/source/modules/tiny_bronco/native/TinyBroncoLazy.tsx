@@ -1,11 +1,11 @@
-// Module ID: 15884
-// Function ID: 15885
+// Module ID: 15926
+// Function ID: 15927
 // Name: TinyBroncoLazy
-// Dependencies: [2, 15885, 15886]
+// Dependencies: [2, 15927, 15928]
 
-// Module 15884 (TinyBroncoLazy)
-import TinyBroncoNoticeVisibility from "TinyBroncoNoticeVisibility" /* 15885 */;
-import useShowTinyBroncoPromoSheet from "useShowTinyBroncoPromoSheet" /* 15886 */;
+// Module 15926 (TinyBroncoLazy)
+import TinyBroncoNoticeVisibility from "TinyBroncoNoticeVisibility" /* 15927 */;
+import useShowTinyBroncoPromoSheet from "useShowTinyBroncoPromoSheet" /* 15928 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/tiny_bronco/native/TinyBroncoLazy.tsx");

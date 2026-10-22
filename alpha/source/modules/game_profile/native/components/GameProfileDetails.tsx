@@ -1,21 +1,28 @@
-// Module ID: 9440
-// Function ID: 9441
+// Module ID: 9451
+// Function ID: 9452
 // Name: GameProfileDetails
-// Dependencies: [19, 17, 8798, 21, 4966, 587, 558, 576, 5642, 9441, 9263, 1128, 2000, 4794, 9442, 9449, 5216, 2]
+// Dependencies: [19, 17, 8807, 21, 8798, 9452, 7039, 9261, 9454, 9456, 4969, 587, 558, 576, 5646, 9458, 9459, 9272, 1128, 2000, 4794, 9460, 5220, 2]
 
-// Module 9440 (GameProfileDetails)
+// Module 9451 (GameProfileDetails)
 import nativeDefault from "native" /* 587 */;
 import intl13 from "intl" /* 1128 */;
 import Server from "Server" /* 2000 */;
 import DateUtilsAll from "DateUtils" /* 4794 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import LinkingDefault from "Linking" /* 5642 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 8798 */;
-import SKUUtils from "SKUUtils" /* 9263 */;
-import react from "react" /* 19 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import LinkingDefault from "Linking" /* 5646 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 7039 */;
+import PlatformType from "PlatformType" /* 8798 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 8807 */;
+import XboxNeutralIcon from "XboxNeutralIcon" /* 9261 */;
+import SKUUtils from "SKUUtils" /* 9272 */;
+import ScreenIcon from "ScreenIcon" /* 9452 */;
+import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9454 */;
+import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 9456 */;
+import useGameProfilePlatformsDefault from "useGameProfilePlatforms" /* 9459 */;
+import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +32,7 @@ let c9;
 let hasOwnProperty;
 let metroImportAll;
 let metroRequire;
-let obj2;
+let obj10;
 let obj3;
 let obj4;
 let obj5;
@@ -33,28 +40,34 @@ let obj6;
 let obj7;
 let obj8;
 let obj9;
+let react = react_mod;
 ({ View: hasOwnProperty, Pressable: metroRequire } = react_native);
 const IGDB_ATTRIBUTION_LINK = ContentInventoryConstants.IGDB_ATTRIBUTION_LINK;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+let obj = { mobile: MobilePhoneIcon.MobilePhoneIcon };
+obj[PlatformType.PlatformType.DESKTOP] = ScreenIcon.ScreenIcon;
+obj[PlatformType.PlatformType.XBOX] = XboxNeutralIcon.XboxNeutralIcon;
+obj[PlatformType.PlatformType.PLAYSTATION] = PlaystationNeutralIcon.PlaystationNeutralIcon;
+obj[PlatformType.PlatformType.NINTENDO] = NintendoSwitchNeutralIcon.NintendoSwitchNeutralIcon;
 let createStyles = createStyles_mod;
-let obj = { container: obj2, headerText: obj3, detailsContainer: obj4, detailsRow: obj5, detailsRowValue: obj6, detailsRowBottomBorder: obj7, platformsContainer: obj8, linksContainer: obj9 };
-obj2 = { gap: nativeDefault.space.PX_8 };
+let obj2 = { container: obj3, headerText: obj4, detailsContainer: obj5, detailsRow: obj6, detailsRowValue: obj7, detailsRowBottomBorder: obj8, platformsContainer: obj9, linksContainer: obj10 };
+obj3 = { gap: nativeDefault.space.PX_8 };
 createStyles = createStyles.createStyles;
-obj3 = { paddingHorizontal: nativeDefault.space.PX_8 };
-obj4 = { borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-obj5 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: nativeDefault.space.PX_12 };
-obj6 = { flexDirection: "column", flexShrink: 1, paddingLeft: nativeDefault.space.PX_32 };
-obj7 = { borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE };
-obj8 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12 };
+obj4 = { paddingHorizontal: nativeDefault.space.PX_8 };
+obj5 = { borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+obj6 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: nativeDefault.space.PX_12 };
+obj7 = { flexDirection: "column", flexShrink: 1, paddingLeft: nativeDefault.space.PX_32 };
+obj8 = { borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE };
 obj9 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12 };
-let closure_10 = createStyles(obj);
+obj10 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12 };
+let closure_11 = createStyles(obj2);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileWebsiteButton(url) {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileWebsiteButton(url) {
   let action;
   let icon;
   let title;
   let trackAction;
-  let obj = action(576);
+  obj = action(576);
   const cResult = obj.c(8);
   ({ icon, action } = url);
   ({ title, trackAction } = url);
@@ -84,7 +97,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GamePr
     }
   }
   const fn = function l() {
-    const obj = LinkingDefault;
+    obj = LinkingDefault;
     obj.openURL(url);
     trackAction(action);
   };
@@ -101,11 +114,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GamePr
   const url = action.url;
   const items = [trackAction, action, url];
   ({ icon, title } = action);
-  let obj = {
+  obj = {
     accessibilityRole: "button",
     accessibilityLabel: title,
     onPress: react.useCallback(() => {
-      const obj = LinkingDefault;
+      obj = LinkingDefault;
       obj.openURL(url);
       trackAction(action);
     }, items),
@@ -116,45 +129,48 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GamePr
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileDetails(arg0) {
-  let arr2;
+  let arr3;
   let closure_1;
   let container;
   let game;
   let headerText;
   let tmp23;
   let tmp32;
-  let tmp56;
+  let tmp55;
   let trackAction;
   let tmp = trackAction;
   let tmp2 = dependencyMap;
-  let obj = trackAction(576);
-  const cResult = obj.c(74);
+  obj = trackAction(576);
+  const cResult = obj.c(75);
   ({ game, trackAction } = arg0);
-  const tmp4 = closure_10();
+  const tmp4 = closure_11();
   importDefault = tmp4;
-  let obj2 = trackAction(9441);
+  let obj2 = trackAction(9458);
   const gameProfileLinks = obj2.useGameProfileLinks(game);
+  const arr2 = useGameProfilePlatformsDefault(game);
   if (null != game) {
     let tmp9;
     let tmp17;
     let tmp26;
+    let tmp58;
     let tmp59;
-    let tmp60;
     if (cResult[1] === game) {
       if (cResult[2] === gameProfileLinks) {
-        if (cResult[3] === tmp4.linksContainer) {
-          if (cResult[4] === tmp4.platformsContainer) {
-            let tmp6;
-            if (cResult[5] === trackAction) {
-              tmp6 = cResult[6];
+        if (cResult[3] === arr2) {
+          if (cResult[4] === tmp4.linksContainer) {
+            if (cResult[5] === tmp4.platformsContainer) {
+              let tmp6;
+              if (cResult[6] === trackAction) {
+                tmp6 = cResult[7];
+              }
+              arr3 = tmp6;
             }
-            arr2 = tmp6;
           }
         }
       }
     }
     let genres;
-    let tmp7 = cResult[7];
+    let tmp7 = cResult[8];
     if (game != null) {
       genres = game.genres;
     }
@@ -162,24 +178,24 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
       let joined;
       if (game != null) {
         const genres1 = game.genres;
-        const mapped = genres1.map(tmp(9263).getGenreText);
+        const mapped = genres1.map(tmp(9272).getGenreText);
         joined = mapped.join(", ");
       }
       let genres2;
       if (game != null) {
         genres2 = game.genres;
       }
-      cResult[7] = genres2;
-      cResult[8] = joined;
+      cResult[8] = genres2;
+      cResult[9] = joined;
       tmp9 = joined;
     } else {
-      tmp9 = cResult[8];
+      tmp9 = cResult[9];
     }
     let items = [];
     if (null != tmp9) {
       if ("" !== tmp9) {
         let tmp12;
-        if (cResult[9] !== game.genres.length) {
+        if (cResult[10] !== game.genres.length) {
           let stringResult;
           if (1 !== game.genres.length) {
             const intl2 = tmp(1128).intl;
@@ -188,43 +204,43 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
             const intl = tmp(1128).intl;
             stringResult = intl.string(tmp(1128).t.mjFKqn);
           }
-          cResult[9] = game.genres.length;
-          cResult[10] = stringResult;
+          cResult[10] = game.genres.length;
+          cResult[11] = stringResult;
           tmp12 = stringResult;
         } else {
-          tmp12 = cResult[10];
+          tmp12 = cResult[11];
         }
-        if (cResult[11] === tmp9) {
+        if (cResult[12] === tmp9) {
           let tmp14;
-          if (cResult[12] === tmp12) {
-            tmp14 = cResult[13];
+          if (cResult[13] === tmp12) {
+            tmp14 = cResult[14];
           }
           items.push(tmp14);
         }
         let obj3 = { label: tmp12, value: tmp9 };
-        cResult[11] = tmp9;
-        cResult[12] = tmp12;
-        cResult[13] = obj3;
+        cResult[12] = tmp9;
+        cResult[13] = tmp12;
+        cResult[14] = obj3;
         tmp14 = obj3;
       }
     }
-    if (cResult[14] !== game) {
+    if (cResult[15] !== game) {
       let tmp20;
       let companyByRole;
       if (game != null) {
         companyByRole = game.getCompanyByRole(tmp(2000).GameCompanyRole.PUBLISHER);
       }
       const _Symbol2 = Symbol;
-      if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-        class T {
+      if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
+        class L {
           constructor(name) {
             return name.name;
           }
         }
-        cResult[17] = T;
-        tmp20 = T;
+        cResult[18] = L;
+        tmp20 = L;
       } else {
-        class T {
+        class L {
           constructor(name) {
             return name.name;
           }
@@ -232,32 +248,32 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
       }
       const mapped1 = companyByRole.map(tmp20);
       const joined1 = mapped1.join(", ");
-      cResult[14] = game;
-      cResult[15] = companyByRole;
-      cResult[16] = joined1;
+      cResult[15] = game;
+      cResult[16] = companyByRole;
+      cResult[17] = joined1;
       tmp17 = joined1;
     } else {
-      class T {
+      class L {
         constructor(name) {
           return name.name;
         }
       }
-      tmp17 = cResult[16];
+      tmp17 = cResult[17];
     }
     if (null != tmp17) {
-      class T {
+      class L {
         constructor(name) {
           return name.name;
         }
       }
       if ("" !== tmp17) {
-        class T {
+        class L {
           constructor(name) {
             return name.name;
           }
         }
-        if (cResult[20] === tmp17) {
-          class T {
+        if (cResult[21] === tmp17) {
+          class L {
             constructor(name) {
               return name.name;
             }
@@ -265,22 +281,22 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
           items.push(tmp23);
         }
         const obj4 = { label: tmp22, value: tmp17 };
-        cResult[20] = tmp17;
-        cResult[21] = tmp22;
-        cResult[22] = obj4;
+        cResult[21] = tmp17;
+        cResult[22] = tmp22;
+        cResult[23] = obj4;
         tmp23 = obj4;
       }
     }
-    if (cResult[23] !== game) {
+    if (cResult[24] !== game) {
       let tmp27Result;
       let tmp29;
-      class T {
+      class L {
         constructor(name) {
           return name.name;
         }
       }
       if (game != null) {
-        class T {
+        class L {
           constructor(name) {
             return name.name;
           }
@@ -288,16 +304,16 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
         tmp27Result = tmp27(tmp(2000).GameCompanyRole.DEVELOPER);
       }
       const _Symbol3 = Symbol;
-      if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
-        class D {
+      if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
+        class O {
           constructor(name) {
             return name.name;
           }
         }
-        cResult[26] = D;
-        tmp29 = D;
+        cResult[27] = O;
+        tmp29 = O;
       } else {
-        class D {
+        class O {
           constructor(name) {
             return name.name;
           }
@@ -305,32 +321,32 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
       }
       const mapped2 = tmp27Result.map(tmp29);
       const joined2 = mapped2.join(", ");
-      cResult[23] = game;
-      cResult[24] = tmp27Result;
-      cResult[25] = joined2;
+      cResult[24] = game;
+      cResult[25] = tmp27Result;
+      cResult[26] = joined2;
       tmp26 = joined2;
     } else {
-      class D {
+      class O {
         constructor(name) {
           return name.name;
         }
       }
-      tmp26 = cResult[25];
+      tmp26 = cResult[26];
     }
     if (null != tmp26) {
-      class D {
+      class O {
         constructor(name) {
           return name.name;
         }
       }
       if ("" !== tmp26) {
-        class D {
+        class O {
           constructor(name) {
             return name.name;
           }
         }
-        if (cResult[29] === tmp26) {
-          class D {
+        if (cResult[30] === tmp26) {
+          class O {
             constructor(name) {
               return name.name;
             }
@@ -338,21 +354,21 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
           items.push(tmp32);
         }
         const obj5 = { label: tmp31, value: tmp26 };
-        cResult[29] = tmp26;
-        cResult[30] = tmp31;
-        cResult[31] = obj5;
+        cResult[30] = tmp26;
+        cResult[31] = tmp31;
+        cResult[32] = obj5;
         tmp32 = obj5;
       }
     }
     if (game != null) {
-      class D {
+      class O {
         constructor(name) {
           return name.name;
         }
       }
     }
     if (null != undefined) {
-      class D {
+      class O {
         constructor(name) {
           return name.name;
         }
@@ -360,30 +376,30 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
       if ("" !== undefined) {
         let tmp35;
         let tmp43;
-        class D {
+        class O {
           constructor(name) {
             return name.name;
           }
         }
         const _Symbol7 = Symbol;
-        if (cResult[32] === Symbol.for("react.memo_cache_sentinel")) {
-          class D {
+        if (cResult[33] === Symbol.for("react.memo_cache_sentinel")) {
+          class O {
             constructor(name) {
               return name.name;
             }
           }
           const stringResult1 = obj9.string(tmp(1128).t.H3mPDT);
-          cResult[32] = stringResult1;
+          cResult[33] = stringResult1;
           tmp35 = stringResult1;
         } else {
-          class D {
+          class O {
             constructor(name) {
               return name.name;
             }
           }
         }
-        if (cResult[33] !== undefined) {
-          class D {
+        if (cResult[34] !== undefined) {
+          class O {
             constructor(name) {
               return name.name;
             }
@@ -391,32 +407,32 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
           const _Date = Date;
           const self = this;
           const self2 = this;
-          const dateFormat = arr2(4794).dateFormat;
-          arr2(4794);
+          const dateFormat = arr3(4794).dateFormat;
+          arr3(4794);
           const date = new Date(undefined);
-          cResult[33] = undefined;
-          cResult[34] = dateFormat(date, "LL");
+          cResult[34] = undefined;
+          cResult[35] = dateFormat(date, "LL");
           const dateFormatResult = dateFormat(date, "LL");
         } else {
-          class D {
+          class O {
             constructor(name) {
               return name.name;
             }
           }
         }
-        if (cResult[35] !== tmp37) {
-          class D {
+        if (cResult[36] !== tmp37) {
+          class O {
             constructor(name) {
               return name.name;
             }
           }
           tmp44[0] = tmp35;
           tmp44[1] = tmp37;
-          cResult[35] = tmp37;
-          cResult[36] = tmp44;
+          cResult[36] = tmp37;
+          cResult[37] = tmp44;
           tmp43 = tmp44;
         } else {
-          class D {
+          class O {
             constructor(name) {
               return name.name;
             }
@@ -425,196 +441,182 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
         items.push(tmp43);
       }
     }
-    if (game != null) {
-      class D {
+    if (arr2.length > 0) {
+      class O {
         constructor(name) {
           return name.name;
         }
       }
-    }
-    if (null != undefined) {
-      class D {
-        constructor(name) {
-          return name.name;
-        }
-      }
-      if (undefined.length > 0) {
-        class D {
+      const platformsContainer = tmp4.platformsContainer;
+      if (cResult[40] !== arr2) {
+        let tmp48;
+        class O {
           constructor(name) {
             return name.name;
           }
         }
-        const platformsContainer = tmp4.platformsContainer;
-        if (cResult[39] !== undefined) {
-          let tmp49;
-          class D {
+        const _Symbol4 = Symbol;
+        if (cResult[42] === Symbol.for("react.memo_cache_sentinel")) {
+          class O {
             constructor(name) {
               return name.name;
             }
           }
-          const _Symbol4 = Symbol;
-          if (cResult[41] === Symbol.for("react.memo_cache_sentinel")) {
-            class D {
-              constructor(name) {
-                return name.name;
-              }
-            }
-            cResult[41] = tmp50;
-            tmp49 = tmp50;
-          } else {
-            class D {
-              constructor(name) {
-                return name.name;
-              }
-            }
-          }
-          const mapped3 = tmp46.map(tmp49);
-          cResult[39] = undefined;
-          cResult[40] = mapped3;
+          cResult[42] = tmp49;
+          tmp48 = tmp49;
         } else {
-          class D {
+          class O {
             constructor(name) {
               return name.name;
             }
           }
         }
-        if (cResult[42] === tmp4.platformsContainer) {
-          class D {
-            constructor(name) {
-              return name.name;
-            }
+        const mapped3 = arr2.map(tmp48);
+        cResult[40] = arr2;
+        cResult[41] = mapped3;
+      } else {
+        class O {
+          constructor(name) {
+            return name.name;
           }
-          if (cResult[45] === tmp47) {
-            class D {
-              constructor(name) {
-                return name.name;
-              }
-            }
-            items.push(tmp56);
-          }
-          const obj6 = { label: tmp47, value: tmp52 };
-          cResult[45] = tmp47;
-          cResult[46] = tmp52;
-          cResult[47] = obj6;
-          tmp56 = obj6;
         }
-        const obj7 = { style: platformsContainer, children: tmp48 };
-        cResult[42] = tmp4.platformsContainer;
-        cResult[43] = tmp48;
-        cResult[44] = closure_8(closure_5, obj7);
-        const tmp55 = closure_8(closure_5, obj7);
       }
+      if (cResult[43] === tmp4.platformsContainer) {
+        class O {
+          constructor(name) {
+            return name.name;
+          }
+        }
+        if (cResult[46] === tmp46) {
+          class O {
+            constructor(name) {
+              return name.name;
+            }
+          }
+          items.push(tmp55);
+        }
+        const obj6 = { label: tmp46, value: tmp51 };
+        cResult[46] = tmp46;
+        cResult[47] = tmp51;
+        cResult[48] = obj6;
+        tmp55 = obj6;
+      }
+      const obj7 = { style: platformsContainer, children: tmp47 };
+      cResult[43] = tmp4.platformsContainer;
+      cResult[44] = tmp47;
+      cResult[45] = closure_8(closure_5, obj7);
+      const tmp54 = closure_8(closure_5, obj7);
     }
     const _Symbol5 = Symbol;
-    if (cResult[48] === Symbol.for("react.memo_cache_sentinel")) {
-      class X {
+    if (cResult[49] === Symbol.for("react.memo_cache_sentinel")) {
+      class H {
         constructor(arg0) {
-          const tmp = closure_1(dependencyMap[15]);
-          return tmp(arg0, closure_1(dependencyMap[5]).colors.ICON_SUBTLE);
+          const tmp = closure_1(dependencyMap[21]);
+          return tmp(arg0, closure_1(dependencyMap[11]).colors.ICON_SUBTLE);
         }
       }
-      cResult[48] = X;
-      tmp59 = X;
+      cResult[49] = H;
+      tmp58 = H;
     } else {
-      class X {
+      class H {
         constructor(arg0) {
-          const tmp = closure_1(dependencyMap[15]);
-          return tmp(arg0, closure_1(dependencyMap[5]).colors.ICON_SUBTLE);
+          const tmp = closure_1(dependencyMap[21]);
+          return tmp(arg0, closure_1(dependencyMap[11]).colors.ICON_SUBTLE);
         }
       }
     }
     const _Symbol6 = Symbol;
-    if (cResult[49] === Symbol.for("react.memo_cache_sentinel")) {
-      class H {
+    if (cResult[50] === Symbol.for("react.memo_cache_sentinel")) {
+      class F {
         constructor(arg0) {
           return null != arg0;
         }
       }
-      cResult[49] = H;
-      tmp60 = H;
+      cResult[50] = F;
+      tmp59 = F;
     } else {
-      class H {
+      class F {
         constructor(arg0) {
           return null != arg0;
         }
       }
     }
-    const mapped4 = gameProfileLinks.map(tmp59);
-    const found = mapped4.filter(tmp60);
+    const mapped4 = gameProfileLinks.map(tmp58);
+    const found = mapped4.filter(tmp59);
     if (found.length > 0) {
-      let tmp61;
-      let tmp63;
-      let tmp68;
-      class H {
+      let tmp60;
+      let tmp62;
+      let tmp67;
+      class F {
         constructor(arg0) {
           return null != arg0;
         }
       }
-      if (cResult[50] === Symbol.for("react.memo_cache_sentinel")) {
-        class H {
+      if (cResult[51] === Symbol.for("react.memo_cache_sentinel")) {
+        class F {
           constructor(arg0) {
             return null != arg0;
           }
         }
         const stringResult2 = obj12.string(tmp(1128).t["Oj3o1/"]);
-        cResult[50] = stringResult2;
-        tmp61 = stringResult2;
+        cResult[51] = stringResult2;
+        tmp60 = stringResult2;
       } else {
-        class H {
+        class F {
           constructor(arg0) {
             return null != arg0;
           }
         }
       }
-      if (cResult[51] !== trackAction) {
-        class H {
+      if (cResult[52] !== trackAction) {
+        class F {
           constructor(arg0) {
             return null != arg0;
           }
         }
-        cResult[51] = trackAction;
-        cResult[52] = tmp64;
-        tmp63 = tmp64;
+        cResult[52] = trackAction;
+        cResult[53] = tmp63;
+        tmp62 = tmp63;
       } else {
-        class H {
+        class F {
           constructor(arg0) {
             return null != arg0;
           }
         }
       }
-      const obj8 = { style: tmp4.linksContainer, children: found.map(tmp63) };
-      const tmp67 = closure_8(closure_5, obj8);
-      if (cResult[53] !== tmp67) {
-        class H {
+      const obj8 = { style: tmp4.linksContainer, children: found.map(tmp62) };
+      const tmp66 = closure_8(closure_5, obj8);
+      if (cResult[54] !== tmp66) {
+        class F {
           constructor(arg0) {
             return null != arg0;
           }
         }
-        tmp69[0] = tmp61;
-        tmp69[1] = tmp67;
-        cResult[53] = tmp67;
-        cResult[54] = tmp69;
-        tmp68 = tmp69;
+        tmp68[0] = tmp60;
+        tmp68[1] = tmp66;
+        cResult[54] = tmp66;
+        cResult[55] = tmp68;
+        tmp67 = tmp68;
       } else {
-        class H {
+        class F {
           constructor(arg0) {
             return null != arg0;
           }
         }
       }
-      items.push(tmp68);
+      items.push(tmp67);
     }
     if (items.length > 0) {
-      let tmp72;
       let tmp71;
-      let tmp76;
-      class H {
+      let tmp70;
+      let tmp75;
+      class F {
         constructor(arg0) {
           return null != arg0;
         }
       }
-      if (cResult[55] === Symbol.for("react.memo_cache_sentinel")) {
-        class H {
+      if (cResult[56] === Symbol.for("react.memo_cache_sentinel")) {
+        class F {
           constructor(arg0) {
             return null != arg0;
           }
@@ -623,137 +625,138 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
         const intl3 = tmp(1128).intl;
         const obj10 = { igdbLink: IGDB_ATTRIBUTION_LINK };
         const formatResult = intl3.format(tmp(1128).t.XPFZVl, obj10);
-        cResult[55] = stringResult3;
-        cResult[56] = formatResult;
-        tmp72 = formatResult;
-        tmp71 = stringResult3;
+        cResult[56] = stringResult3;
+        cResult[57] = formatResult;
+        tmp71 = formatResult;
+        tmp70 = stringResult3;
       } else {
-        class H {
+        class F {
           constructor(arg0) {
             return null != arg0;
           }
         }
-        tmp72 = cResult[56];
+        tmp71 = cResult[57];
       }
-      if (cResult[57] !== tmp72) {
-        class H {
+      if (cResult[58] !== tmp71) {
+        class F {
           constructor(arg0) {
             return null != arg0;
           }
         }
-        tmp77[0] = tmp71;
-        tmp77[1] = tmp72;
-        cResult[57] = tmp72;
-        cResult[58] = tmp77;
-        tmp76 = tmp77;
+        tmp76[0] = tmp70;
+        tmp76[1] = tmp71;
+        cResult[58] = tmp71;
+        cResult[59] = tmp76;
+        tmp75 = tmp76;
       } else {
-        class H {
+        class F {
           constructor(arg0) {
             return null != arg0;
           }
         }
       }
-      items.push(tmp76);
+      items.push(tmp75);
     }
     cResult[1] = game;
     cResult[2] = gameProfileLinks;
-    cResult[3] = tmp4.linksContainer;
-    cResult[4] = tmp4.platformsContainer;
-    cResult[5] = trackAction;
-    cResult[6] = items;
+    cResult[3] = arr2;
+    cResult[4] = tmp4.linksContainer;
+    cResult[5] = tmp4.platformsContainer;
+    cResult[6] = trackAction;
+    cResult[7] = items;
     tmp6 = items;
   } else {
-    class H {
+    class F {
       constructor(arg0) {
         return null != arg0;
       }
     }
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      class H {
+      class F {
         constructor(arg0) {
           return null != arg0;
         }
       }
       cResult[0] = tmp5;
-      arr2 = tmp5;
+      arr3 = tmp5;
     } else {
-      class H {
+      class F {
         constructor(arg0) {
           return null != arg0;
         }
       }
     }
   }
-  if (0 === arr2.length) {
-    class H {
+  if (0 === arr3.length) {
+    class F {
       constructor(arg0) {
         return null != arg0;
       }
     }
   } else {
-    let tmp79;
-    class H {
+    let tmp78;
+    class F {
       constructor(arg0) {
         return null != arg0;
       }
     }
     const _Symbol8 = Symbol;
     ({ container, headerText } = tmp4);
-    if (cResult[59] === Symbol.for("react.memo_cache_sentinel")) {
-      class H {
+    if (cResult[60] === Symbol.for("react.memo_cache_sentinel")) {
+      class F {
         constructor(arg0) {
           return null != arg0;
         }
       }
       const stringResult4 = obj16.string(tmp(1128).t["7OjmmH"]);
-      cResult[59] = stringResult4;
-      tmp79 = stringResult4;
+      cResult[60] = stringResult4;
+      tmp78 = stringResult4;
     } else {
-      class H {
+      class F {
         constructor(arg0) {
           return null != arg0;
         }
       }
     }
-    if (cResult[60] !== tmp4.headerText) {
-      class H {
+    if (cResult[61] !== tmp4.headerText) {
+      class F {
         constructor(arg0) {
           return null != arg0;
         }
       }
-      const obj11 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: headerText, children: tmp79 };
-      cResult[60] = tmp4.headerText;
-      cResult[61] = closure_8(tmp(5216).Text, obj11);
-      const tmp82 = closure_8(tmp(5216).Text, obj11);
+      const obj11 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: headerText, children: tmp78 };
+      cResult[61] = tmp4.headerText;
+      cResult[62] = closure_8(tmp(5220).Text, obj11);
+      const tmp81 = closure_8(tmp(5220).Text, obj11);
     } else {
-      class H {
+      class F {
         constructor(arg0) {
           return null != arg0;
         }
       }
     }
-    if (cResult[62] === arr2) {
-      class H {
+    if (cResult[63] === arr3) {
+      class F {
         constructor(arg0) {
           return null != arg0;
         }
       }
     }
-    const mapped5 = arr2.map((children, index) => {
+    const mapped5 = arr3.map((children, index) => {
       let items1;
       let value;
       const items = [closure_1.detailsRow, ];
       let prop = null;
       const tmp = React4;
       const tmp2 = hasOwnProperty;
-      if (arr2.length > 1) {
+      if (arr3.length > 1) {
         prop = null;
         if (index < arr2.length - 1) {
           prop = tmp3.detailsRowBottomBorder;
         }
       }
-      const obj = { style: items, children: items1 };
+      obj = { style: items, children: items1 };
       items[1] = prop;
       items1 = [, ];
       const obj2 = { variant: "text-sm/medium", color: "text-subtle", lineClamp: 1, children: children.label };
@@ -768,31 +771,34 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
       items1[1] = value;
       return tmp(tmp2, obj, children.label);
     });
-    cResult[62] = arr2;
-    cResult[63] = tmp4.detailsRow;
-    cResult[64] = tmp4.detailsRowBottomBorder;
-    cResult[65] = tmp4.detailsRowValue;
-    cResult[66] = mapped5;
+    cResult[63] = arr3;
+    cResult[64] = tmp4.detailsRow;
+    cResult[65] = tmp4.detailsRowBottomBorder;
+    cResult[66] = tmp4.detailsRowValue;
+    cResult[67] = mapped5;
   }
 }) : (function GameProfileDetails(game) {
   let intl;
   let items1;
+  let length;
   game = game.game;
   const trackAction = game.trackAction;
   let gameProfileLinks;
-  let memo;
-  let tmp = closure_10();
+  let tmp = closure_11();
   let closure_2 = tmp;
   let tmp2 = game;
   const tmp3 = gameProfileLinks;
-  let obj = game(gameProfileLinks[9]);
+  obj = game(gameProfileLinks[15]);
   gameProfileLinks = obj.useGameProfileLinks(game);
-  let items = [, , , , ];
+  const tmp5 = trackAction(gameProfileLinks[16])(game);
+  react = tmp5;
+  let items = [, , , , , ];
   ({ linksContainer: arr[0], platformsContainer: arr[1] } = tmp);
   items[2] = game;
   items[3] = gameProfileLinks;
-  items[4] = trackAction;
-  memo = memo.useMemo(function() {
+  items[4] = tmp5;
+  items[5] = trackAction;
+  const memo = react.useMemo(function() {
     let date;
     let dateFormat;
     let intl10;
@@ -802,7 +808,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
     let obj11;
     let obj7;
     let obj9;
-    let obj = game;
+    obj = game;
     if (null == game) {
       return [];
     } else {
@@ -825,7 +831,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
           const intl = intl13.intl;
           stringResult = intl.string(intl13.t.mjFKqn);
         }
-        const obj2 = { label: stringResult, value: joined };
+        let obj2 = { label: stringResult, value: joined };
         push(obj2);
       }
       let companyByRole;
@@ -885,15 +891,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
         date = new Date(firstReleaseDate);
         push4(obj5);
       }
-      let platforms;
-      if (obj != null) {
-        platforms = obj.platforms;
-      }
-      const tmp60 = null != platforms && platforms.length > 0;
-      if (tmp60) {
+      if (length.length > 0) {
         let stringResult3;
         const push5 = items.push;
-        if (1 !== obj.platforms.length) {
+        if (1 !== length.length) {
           const intl9 = intl13.intl;
           stringResult3 = intl9.string(intl13.t.PNqxNe);
         } else {
@@ -903,17 +904,19 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
         const obj6 = { label: stringResult3, value: metroImportAll(hasOwnProperty, obj7) };
         obj7 = {
           style: closure_2.platformsContainer,
-          children: platforms.map((platform) => {
-                const obj = { platform, size: "md", color: trackAction(gameProfileLinks[5]).colors.ICON_SUBTLE };
-                const GameUpdatePlatformIcon = game(gameProfileLinks[14]).GameUpdatePlatformIcon;
-                return closure_1_8(GameUpdatePlatformIcon, obj, platform);
+          children: length.map((item) => {
+                let obj2;
+                obj = { size: "md", color: trackAction(gameProfileLinks[11]).colors.ICON_SUBTLE, accessibilityLabel: obj2.getGameProfilePlatformText(item) };
+                const tmp = closure_1_10[item];
+                obj2 = game(gameProfileLinks[16]);
+                return closure_1_8(tmp, obj, item);
               })
         };
         push5(obj6);
       }
       const mapped3 = gameProfileLinks.map((item) => {
-        const tmp = trackAction(gameProfileLinks[15]);
-        return tmp(item, trackAction(gameProfileLinks[5]).colors.ICON_SUBTLE);
+        const tmp = trackAction(gameProfileLinks[21]);
+        return tmp(item, trackAction(gameProfileLinks[11]).colors.ICON_SUBTLE);
       });
       const found = mapped3.filter((item) => null != item);
       if (found.length > 0) {
@@ -924,8 +927,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
           style: closure_2.linksContainer,
           children: found.map((icon) => {
                 const url = icon.url;
-                const obj = { icon: icon.icon, action: icon.action, title: icon.title, url, trackAction };
-                return closure_2_8(closure_2_11, obj, url);
+                obj = { icon: icon.icon, action: icon.action, title: icon.title, url, trackAction };
+                return closure_2_8(closure_2_12, obj, url);
               })
         };
         push6(obj8);
@@ -941,14 +944,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
       return items;
     }
   }, items);
-  let tmp5 = null;
+  let tmp6 = null;
   if (0 !== memo.length) {
-    let tmp6 = closure_9;
-    let tmp7 = closure_5;
+    let tmp7 = closure_9;
     let obj2 = { style: tmp.container, children: items1 };
-    let obj3 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: tmp.headerText, children: intl.string(tmp2(tmp3[11]).t["7OjmmH"]) };
-    const Text = tmp2(tmp3[16]).Text;
-    intl = tmp2(tmp3[11]).intl;
+    let obj3 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: tmp.headerText, children: intl.string(tmp2(tmp3[18]).t["7OjmmH"]) };
+    const Text = tmp2(tmp3[22]).Text;
+    intl = tmp2(tmp3[18]).intl;
     items1 = [closure_8(Text, obj3), ];
     let obj4 = {
       style: tmp.detailsContainer,
@@ -965,7 +967,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
               prop = tmp3.detailsRowBottomBorder;
             }
           }
-          const obj = { style: items, children: items1 };
+          obj = { style: items, children: items1 };
           items[1] = prop;
           items1 = [, ];
           const obj2 = { variant: "text-sm/medium", color: "text-subtle", lineClamp: 1, children: children.label };
@@ -981,10 +983,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
           return tmp(tmp2, obj, children.label);
         })
     };
-    items1[1] = closure_8(closure_5, obj4);
-    tmp5 = closure_9(closure_5, obj2);
+    items1[1] = closure_8(memo, obj4);
+    tmp6 = closure_9(memo, obj2);
   }
-  return tmp5;
+  return tmp6;
 });
 const result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileDetails.tsx");
 

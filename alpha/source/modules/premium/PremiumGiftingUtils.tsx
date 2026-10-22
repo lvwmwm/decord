@@ -1,12 +1,12 @@
-// Module ID: 8427
-// Function ID: 8428
+// Module ID: 8436
+// Function ID: 8437
 // Name: PremiumGiftingUtils
-// Dependencies: [5, 4821, 4971, 7388, 38, 6351, 7543, 7730, 2]
+// Dependencies: [5, 4821, 4974, 7395, 38, 6358, 7550, 7739, 2]
 // Exports: sendGiftMessage, unhandledGiftIntent
 
-// Module 8427 (PremiumGiftingUtils)
-import MessageConstants from "MessageConstants" /* 4971 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7388 */;
+// Module 8436 (PremiumGiftingUtils)
+import MessageConstants from "MessageConstants" /* 4974 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7395 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import size from "module_2" /* 2 */;

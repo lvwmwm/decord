@@ -1,21 +1,21 @@
-// Module ID: 11633
-// Function ID: 11634
+// Module ID: 11650
+// Function ID: 11651
 // Name: SpeakerTileStatuses
-// Dependencies: [19, 17, 2014, 5612, 6665, 21, 4966, 587, 558, 576, 504, 11576, 11376, 11377, 1202, 11634, 11635, 7041, 2]
+// Dependencies: [19, 17, 2014, 5616, 6672, 21, 4969, 587, 558, 576, 504, 11593, 11393, 11394, 1202, 11651, 11652, 7048, 2]
 
-// Module 11633 (SpeakerTileStatuses)
+// Module 11650 (SpeakerTileStatuses)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7041 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11635 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7048 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11652 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import VoiceStateStore from "VoiceStateStore" /* 5612 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 6665 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import VoiceStateStore from "VoiceStateStore" /* 5616 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 6672 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -135,7 +135,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           return MediaEngineStore.isLocalMute(userId);
         }
       }
-      tmp15 = channelId(11576);
+      tmp15 = channelId(11593);
     } else {
       class S {
         constructor() {
@@ -194,15 +194,15 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     flag2 = false;
   }
   if (stateFromStores) {
-    tmp5 = channelId(11576);
+    tmp5 = channelId(11593);
     flag3 = true;
   } else if (flag2) {
-    tmp5 = channelId(11376);
+    tmp5 = channelId(11393);
     flag3 = false;
   } else {
     flag3 = false;
     if (flag) {
-      tmp5 = channelId(11377);
+      tmp5 = channelId(11394);
       flag3 = false;
     }
   }
@@ -241,7 +241,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
     let tmp9;
     const tmpResult = userId(504);
     if (tmpResult.useStateFromStores(first, tmp7, tmp8)) {
-      tmp9 = channelId(11634);
+      tmp9 = channelId(11651);
     }
     let tmp11 = null;
     if (null != tmp9) {
@@ -301,7 +301,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
   const tmp = closure_8();
   const obj = userId(504);
   if (obj.useStateFromStores(items, () => StageChannelRoleStore.isModerator(userId, channelId), items1)) {
-    tmp4 = channelId(11634);
+    tmp4 = channelId(11651);
   }
   let tmp6 = null;
   if (null != tmp4) {

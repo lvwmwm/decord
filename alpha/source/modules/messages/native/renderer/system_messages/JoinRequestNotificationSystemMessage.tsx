@@ -1,21 +1,21 @@
-// Module ID: 8392
-// Function ID: 8393
+// Module ID: 8401
+// Function ID: 8402
 // Name: JoinRequestNotificationSystemMessage
-// Dependencies: [6823, 4993, 4843, 1392, 1087, 1128, 11, 8298, 2]
+// Dependencies: [6830, 4996, 4843, 1392, 1087, 1128, 11, 8307, 2]
 // Exports: createJoinRequestNotificationSystemMessage
 
-// Module 8392 (JoinRequestNotificationSystemMessage)
+// Module 8401 (JoinRequestNotificationSystemMessage)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1087 */;
 import intl7 from "intl" /* 1128 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6823 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4993 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6830 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4996 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const createCommonMessageDefault = tmp(8298);
+const createCommonMessageDefault = tmp(8307);
 const MessageTypes = Constants.MessageTypes;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/JoinRequestNotificationSystemMessage.tsx");
 

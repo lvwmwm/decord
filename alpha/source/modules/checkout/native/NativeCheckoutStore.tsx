@@ -1,18 +1,18 @@
-// Module ID: 7513
-// Function ID: 7514
+// Module ID: 7520
+// Function ID: 7521
 // Name: NativeCheckoutStore
-// Dependencies: [5, 32, 19, 7514, 5680, 7517, 558, 4884, 1269, 7518, 12, 7321, 4785, 7519, 2]
+// Dependencies: [5, 32, 19, 7521, 5684, 7524, 558, 4884, 1269, 7525, 12, 7328, 4785, 7526, 2]
 // Exports: createNativeStore, useNativeCheckoutStoreOrNull
 
-// Module 7513 (NativeCheckoutStore)
+// Module 7520 (NativeCheckoutStore)
 import _mod1269 from "module_1269" /* 1269 */;
 import _slicedToArray2 from "_slicedToArray" /* 4884 */;
-import PaymentConstants from "PaymentConstants" /* 5680 */;
-import ContextUtilsDefault from "ContextUtils" /* 7517 */;
+import PaymentConstants from "PaymentConstants" /* 5684 */;
+import ContextUtilsDefault from "ContextUtils" /* 7524 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import OrderRecord from "OrderRecord" /* 7514 */;
+import OrderRecord from "OrderRecord" /* 7521 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

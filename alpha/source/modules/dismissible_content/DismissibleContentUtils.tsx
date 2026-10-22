@@ -1,7 +1,7 @@
 // Module ID: 4806
 // Function ID: 4807
 // Name: DismissibleContentUtils
-// Dependencies: [32, 5, 1246, 4807, 4808, 4813, 4818, 1087, 4812, 4819, 11, 4802, 5013, 558, 576, 504, 4805, 584, 5623, 1267, 4809, 5624, 2]
+// Dependencies: [32, 5, 1246, 4807, 4808, 4813, 4818, 1087, 4812, 4819, 11, 4802, 5016, 558, 576, 504, 4805, 584, 5627, 1267, 4809, 5628, 2]
 // Exports: UNSAFE_addGuildDismissedContent, UNSAFE_addSnowflakeBoundGuildDismissedContent, UNSAFE_addTimeRecurringGuildDismissedContent, UNSAFE_isSnowflakeBoundGuildDismissibleContentDismissed, UNSAFE_isTimeRecurringGuildDismissibleContentDismissed, UNSAFE_removeGuildDismissedContent, UNSAFE_removeSnowflakeBoundGuildDismissedContent, UNSAFE_removeTimeRecurringGuildDismissedContent, getDismissedRecurringDismissibleContentState, getGuildNextNumTimesDismissed, isDismissibleContentBlockedByOverlay, isTimeRecurringDismissibleContentDismissed, isTimeRecurringSnowflakeBoundDismissibleContentDismissed, isVersionedDismissibleContentDismissed, markLatestVersionDismissibleContentAsDismissed, markSnowflakeBoundDismissibleContentAsDismissed, markTimeRecurringDismissibleContentAsDismissed, requestMarkDismissibleContentAsShown
 
 // Module 4806 (DismissibleContentUtils)
@@ -15,9 +15,9 @@ import DCFEventStore from "DCFEventStore" /* 4807 */;
 import DismissibleContentTypes from "DismissibleContentTypes" /* 4812 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
 import VersionedDismissibleContentUtils from "VersionedDismissibleContentUtils" /* 4819 */;
-import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 5013 */;
-import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5623 */;
-import trackDismissibleContentActioned from "trackDismissibleContentActioned" /* 5624 */;
+import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 5016 */;
+import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5627 */;
+import trackDismissibleContentActioned from "trackDismissibleContentActioned" /* 5628 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
@@ -704,7 +704,7 @@ export const isTimeRecurringDismissibleContentDismissed = function isTimeRecurri
       }
     }
     if (undefined === tmp5) {
-      return { isDismissed: false, lastDismissedAtMs: "a" };
+      return { isDismissed: false, lastDismissedAtMs: "Array" };
     } else {
       let flag = true;
       if (null != cooldownConfig) {

@@ -1,12 +1,12 @@
-// Module ID: 17258
-// Function ID: 17259
+// Module ID: 17328
+// Function ID: 17329
 // Name: isJankScreenReportingEnabled
-// Dependencies: [1384, 559, 4923, 2]
+// Dependencies: [1384, 559, 4926, 2]
 // Exports: isJankScreenReportingEnabled
 
-// Module 17258 (isJankScreenReportingEnabled)
+// Module 17328 (isJankScreenReportingEnabled)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import DeviceUtils from "DeviceUtils" /* 4923 */;
+import DeviceUtils from "DeviceUtils" /* 4926 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/jank_stats/native/isJankScreenReportingEnabled.tsx");

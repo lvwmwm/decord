@@ -1,15 +1,15 @@
-// Module ID: 11353
-// Function ID: 11354
+// Module ID: 11370
+// Function ID: 11371
 // Name: StreamEnded
-// Dependencies: [19, 21, 8688, 11354, 11355, 558, 576, 4973, 5651, 2]
+// Dependencies: [19, 21, 8697, 11371, 11372, 558, 576, 4976, 5655, 2]
 // Exports: getStreamEndedSource
 
-// Module 11353 (StreamEnded)
+// Module 11370 (StreamEnded)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import shared from "shared" /* 4973 */;
-import FastImageDefault from "FastImage" /* 5651 */;
-import _mod8688 from "module_8688" /* 8688 */;
+import shared from "shared" /* 4976 */;
+import FastImageDefault from "FastImage" /* 5655 */;
+import _mod8697 from "module_8697" /* 8697 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStreamEnd
   const theme = obj2.useThemeContext().theme;
   if (cResult[0] !== theme) {
     const obj3 = { dark, darker };
-    const tmpResult = _mod8688;
+    const tmpResult = _mod8697;
     const illustrationSource = tmpResult.getIllustrationSource(theme, obj3);
     cResult[0] = theme;
     cResult[1] = illustrationSource;
@@ -44,7 +44,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStreamEnd
 }) : (function useStreamEndedSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8688;
+  const obj2 = _mod8697;
   const obj3 = { dark, darker };
   return obj2.getIllustrationSource(theme, obj3);
 });
@@ -75,7 +75,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamEnded(
   return <tmp2 source={tmp} />;
 });
 function getStreamEndedSource(theme) {
-  const obj = _mod8688;
+  const obj = _mod8697;
   const obj2 = { dark, darker };
   return obj.getIllustrationSource(theme, obj2);
 }

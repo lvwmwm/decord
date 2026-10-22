@@ -1,21 +1,21 @@
-// Module ID: 10934
-// Function ID: 10935
+// Module ID: 10951
+// Function ID: 10952
 // Name: SafetyToolsAboutActionSheet
-// Dependencies: [32, 19, 17, 10874, 1087, 21, 4966, 587, 558, 576, 10919, 5192, 10887, 10888, 10935, 1128, 5644, 2067, 5216, 5226, 10924, 2]
+// Dependencies: [32, 19, 17, 10891, 1087, 21, 4969, 587, 558, 576, 10936, 5196, 10904, 10905, 10952, 1128, 5648, 2067, 5220, 5230, 10941, 2]
 
-// Module 10934 (SafetyToolsAboutActionSheet)
+// Module 10951 (SafetyToolsAboutActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import Constants2 from "Constants" /* 10874 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10887 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10888 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import Constants2 from "Constants" /* 10891 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10904 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10905 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

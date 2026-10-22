@@ -1,12 +1,12 @@
-// Module ID: 14289
-// Function ID: 14290
+// Module ID: 14332
+// Function ID: 14333
 // Name: useUserProfileWidgets
-// Dependencies: [502, 7680, 11924, 558, 576, 504, 2]
+// Dependencies: [502, 7687, 14322, 558, 576, 504, 2]
 
-// Module 14289 (useUserProfileWidgets)
+// Module 14332 (useUserProfileWidgets)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserProfileStore from "UserProfileStore" /* 7680 */;
-import WidgetStore from "WidgetStore" /* 11924 */;
+import UserProfileStore from "UserProfileStore" /* 7687 */;
+import WidgetStore from "WidgetStore" /* 14322 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

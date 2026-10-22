@@ -1,20 +1,20 @@
-// Module ID: 17877
-// Function ID: 17878
+// Module ID: 17947
+// Function ID: 17948
 // Name: conjureBackgroundFramePlatform
-// Dependencies: [5591, 6755, 10724, 11804, 5608, 5689, 2]
+// Dependencies: [5595, 6762, 10736, 11830, 5612, 5693, 2]
 
-// Module 17877 (conjureBackgroundFramePlatform)
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5591 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5608 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10724 */;
-import FramePoolManagerDefault from "FramePoolManager" /* 11804 */;
-import FramesConstants from "FramesConstants" /* 6755 */;
+// Module 17947 (conjureBackgroundFramePlatform)
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5595 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5612 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10736 */;
+import FramePoolManagerDefault from "FramePoolManager" /* 11830 */;
+import FramesConstants from "FramesConstants" /* 6762 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const transitionToChannel = tmp(5689);
+const transitionToChannel = tmp(5693);
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 ({ asLaunched: closure_4, FrameLayoutModes: hasOwnProperty } = FramesConstants);
 let obj = {

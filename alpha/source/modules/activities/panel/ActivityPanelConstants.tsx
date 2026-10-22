@@ -1,9 +1,9 @@
-// Module ID: 5591
-// Function ID: 5592
+// Module ID: 5595
+// Function ID: 5596
 // Name: ActivityPanelConstants
 // Dependencies: [2]
 
-// Module 5591 (ActivityPanelConstants)
+// Module 5595 (ActivityPanelConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/panel/ActivityPanelConstants.tsx");

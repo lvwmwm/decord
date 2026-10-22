@@ -1,11 +1,11 @@
-// Module ID: 13771
-// Function ID: 13772
+// Module ID: 13807
+// Function ID: 13808
 // Name: useConjureAppProject
-// Dependencies: [19, 6752, 558, 576, 6787, 10678, 504, 2]
+// Dependencies: [19, 6759, 558, 576, 6794, 10690, 504, 2]
 
-// Module 13771 (useConjureAppProject)
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6752 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10678 */;
+// Module 13807 (useConjureAppProject)
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6759 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10690 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -35,7 +35,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAp
   } else {
     tmp5 = cResult[1];
   }
-  const tmpResult = tmp(6787);
+  const tmpResult = tmp(6794);
   const tmp7 = tmpResult.useIsConjureGuildEnabled(tmp5) && null != arg1;
   if (cResult[2] === arg0) {
     let tmp8;

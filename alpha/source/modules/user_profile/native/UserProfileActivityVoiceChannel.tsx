@@ -1,21 +1,21 @@
-// Module ID: 14205
-// Function ID: 14206
+// Module ID: 14243
+// Function ID: 14244
 // Name: UserProfileActivityVoiceChannel
-// Dependencies: [17, 4839, 4901, 1098, 21, 4966, 1384, 7230, 8643, 5249, 14206, 5586, 504, 8544, 8548, 1128, 6862, 6887, 5645, 7282, 5216, 8978, 7843, 5192, 14207, 2002, 8632, 14208, 1202, 2]
+// Dependencies: [17, 4839, 4901, 1098, 21, 4969, 1384, 7237, 8652, 5253, 14244, 5590, 504, 8553, 8557, 1128, 6869, 6894, 5649, 7289, 5220, 8987, 7851, 5196, 14245, 2002, 8641, 14246, 1202, 2]
 // Exports: default
 
-// Module 14205 (UserProfileActivityVoiceChannel)
+// Module 14243 (UserProfileActivityVoiceChannel)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1098 */;
 import native from "native" /* 1202 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import GuildRecord from "GuildRecord" /* 4839 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5645 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7843 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5649 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7851 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import size from "module_2" /* 2 */;
 
@@ -161,7 +161,7 @@ export default function UserProfileActivityVoiceChannel(guild) {
           return tmp(obj);
         }
       };
-      obj.openLazy(asyncRequire(14207, dependencyMap.paths), "UserProfileActivityVoiceChannelUsers", obj2, "stack");
+      obj.openLazy(asyncRequire(14245, dependencyMap.paths), "UserProfileActivityVoiceChannelUsers", obj2, "stack");
     },
     children: tmp13(AvatarPile, obj17)
   };

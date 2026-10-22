@@ -1,12 +1,12 @@
-// Module ID: 5728
-// Function ID: 5729
+// Module ID: 5733
+// Function ID: 5734
 // Name: Camera
-// Dependencies: [19, 21, 558, 576, 5724, 2]
+// Dependencies: [19, 21, 558, 576, 5729, 2]
 
-// Module 5728 (Camera)
+// Module 5733 (Camera)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import VideoDefault from "Video" /* 5724 */;
+import VideoDefault from "Video" /* 5729 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;

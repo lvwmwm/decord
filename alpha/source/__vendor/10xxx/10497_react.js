@@ -1,21 +1,36 @@
 // Module ID: 10497
 // Function ID: 10498
 // Name: react
-// Dependencies: [19]
-// Exports: useUpdateGestureConfig
+// Dependencies: [19, 10498]
+// Exports: useLayoutConfig
 
 // Module 10497 (react)
+import Layouts5 from "Layouts" /* 10498 */;
 import react from "react" /* 19 */;
 
-const useEffect = react.useEffect;
 
-export const useUpdateGestureConfig = (arg0, enabled) => {
-  let closure_0 = arg0;
-  enabled = enabled.enabled;
-  const items = [enabled, arg0];
-  const tmp = useEffect(() => {
-    if (undefined !== enabled) {
-      closure_0.enabled(tmp);
+export const useLayoutConfig = function useLayoutConfig(size) {
+  size = size.size;
+  const vertical = size.vertical;
+  const items = [, , , ];
+  ({ mode: arr[0], modeConfig: arr[1] } = size);
+  items[2] = size;
+  items[3] = vertical;
+  return vertical.useMemo(() => {
+    const obj = { size, vertical };
+    const mode = size.mode;
+    if ("parallax" === mode) {
+      const Layouts4 = Layouts5.Layouts;
+      return Layouts4.parallax(obj, size.modeConfig);
+    } else if ("horizontal-stack" === mode) {
+      const Layouts3 = Layouts5.Layouts;
+      return Layouts3.horizontalStack(size.modeConfig);
+    } else if ("vertical-stack" === mode) {
+      const Layouts2 = Layouts5.Layouts;
+      return Layouts2.verticalStack(size.modeConfig);
+    } else {
+      const Layouts = Layouts5.Layouts;
+      return Layouts.normal(obj);
     }
   }, items);
 };

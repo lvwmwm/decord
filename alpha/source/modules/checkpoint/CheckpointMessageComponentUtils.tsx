@@ -1,21 +1,21 @@
-// Module ID: 6016
-// Function ID: 6017
+// Module ID: 6023
+// Function ID: 6024
 // Name: checkpoint/CheckpointMessageComponentUtils
-// Dependencies: [5995, 11, 6017, 6018, 6019, 6339, 6340, 6004, 1128, 3088, 4915, 3056, 1900, 2000, 2]
-// Exports: getCharacterLayerUrls, getCheckpointDataFromMessage, getCheckpointLabel, transformCheckpoint2026CardComponent, transformCheckpoint2026CardToRowGeneratedComponent
+// Dependencies: [6002, 11, 6024, 6025, 6026, 6346, 6347, 1128, 6011, 3088, 4915, 3056, 1900, 2000, 2]
+// Exports: formatCheckpoint2026PowerLevel, getCharacterLayerUrls, getCheckpoint2026PowerBarUnits, getCheckpointDataFromMessage, getCheckpointLabel, transformCheckpoint2026CardComponent, transformCheckpoint2026CardToRowGeneratedComponent
 
-// Module 6016 (checkpoint/CheckpointMessageComponentUtils)
+// Module 6023 (checkpoint/CheckpointMessageComponentUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl19 from "intl" /* 1128 */;
 import Server from "Server" /* 2000 */;
 import _modDef3056 from "module_3056" /* 3056 */;
 import _modDef3088 from "module_3088" /* 3088 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4915 */;
-import CheckpointUtils from "CheckpointUtils" /* 6004 */;
-import CheckpointExperiments from "CheckpointExperiments" /* 6017 */;
-import CheckpointTrait from "CheckpointTrait" /* 6018 */;
-import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 6019 */;
-import CheckpointConstants from "CheckpointConstants" /* 5995 */;
+import CheckpointUtils from "CheckpointUtils" /* 6011 */;
+import CheckpointExperiments from "CheckpointExperiments" /* 6024 */;
+import CheckpointTrait from "CheckpointTrait" /* 6025 */;
+import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 6026 */;
+import CheckpointConstants from "CheckpointConstants" /* 6002 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -56,11 +56,13 @@ function transformCheckpoint2026StatsToRowGeneratedComponent(stats) {
   let obj6;
   let obj7;
   let obj9;
+  let powerLevel;
   let tmpResult2;
   let toLocaleStringResult;
   let toLocaleStringResult1;
   let voiceDurationString;
-  obj = { powerLevel: numberFormat.format(stats.powerLevel), powerLevelUnits: Math.min(Math.max(Math.round(stats.powerLevelPercentile / 100 * hasOwnProperty), React3), _false), voice: obj3, messages: obj6, topGuildDaysInteracted: obj9, topGuildName: obj13, reactions: obj16, topEmojiName: obj19, daysPlayed: obj22, topGameName: obj25, topEmoji: null, topGuild: null, topGame: null };
+  obj = { powerLevel: numberFormat.format(powerLevel), powerLevelUnits: Math.min(Math.max(Math.round(stats.powerLevelPercentile / 100 * hasOwnProperty), React3), _false), voice: obj3, messages: obj6, topGuildDaysInteracted: obj9, topGuildName: obj13, reactions: obj16, topEmojiName: obj19, daysPlayed: obj22, topGameName: obj25, topEmoji: null, topGuild: null, topGame: null };
+  powerLevel = stats.powerLevel;
   numberFormat = new Intl.NumberFormat(intl19.intl.currentLocale, { notation: "compact", compactDisplay: "short" });
   const rounded = Math.round(stats.totalVoiceMinutes);
   if (rounded > 0) {
@@ -250,6 +252,13 @@ export const getCharacterLayerUrls = function getCharacterLayerUrls(character, a
   });
   return items;
 };
+export const formatCheckpoint2026PowerLevel = function formatCheckpoint2026PowerLevel(arg0) {
+  const numberFormat = new Intl.NumberFormat(intl19.intl.currentLocale, { notation: "compact", compactDisplay: "short" });
+  return numberFormat.format(arg0);
+};
+export const getCheckpoint2026PowerBarUnits = function getCheckpoint2026PowerBarUnits(arg0) {
+  return Math.min(Math.max(Math.round(arg0 / 100 * hasOwnProperty), React3), _false);
+};
 export { transformCheckpoint2026StatsToRowGeneratedComponent };
 export const transformCheckpoint2026CardToRowGeneratedComponent = function transformCheckpoint2026CardToRowGeneratedComponent(checkpointData) {
   let character;
@@ -303,7 +312,7 @@ export const transformCheckpoint2026CardToRowGeneratedComponent = function trans
   const tmp11 = character;
   if (obj4.getIsCheckpointEnabled("getCheckpointClickable")) {
     const obj3 = { ariaDescription: intl.string(tmp(items[11]).r8GEbK) };
-    intl = tmp11(tmp2[8]).intl;
+    intl = tmp11(tmp2[7]).intl;
     tmp12 = obj3;
   }
   return obj;

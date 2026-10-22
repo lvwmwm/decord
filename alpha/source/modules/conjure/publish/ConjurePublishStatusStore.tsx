@@ -1,13 +1,13 @@
-// Module ID: 10672
-// Function ID: 10673
+// Module ID: 10684
+// Function ID: 10685
 // Name: ConjurePublishStatusStore
-// Dependencies: [6752, 504, 568, 584, 2]
+// Dependencies: [6759, 504, 568, 584, 2]
 
-// Module 10672 (ConjurePublishStatusStore)
+// Module 10684 (ConjurePublishStatusStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import shallowEqual from "shallowEqual" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6752 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6759 */;
 import size from "module_2" /* 2 */;
 
 const map = new Map();

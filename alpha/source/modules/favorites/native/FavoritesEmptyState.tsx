@@ -1,23 +1,23 @@
-// Module ID: 18021
-// Function ID: 18022
+// Module ID: 18091
+// Function ID: 18092
 // Name: FavoritesEmptyState
-// Dependencies: [19, 17, 21, 4966, 587, 558, 576, 13755, 10798, 1128, 3412, 5216, 5957, 5226, 11098, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 13791, 10815, 1128, 3412, 5220, 5964, 5230, 11115, 2]
 
-// Module 18021 (FavoritesEmptyState)
+// Module 18091 (FavoritesEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import _modDef3412 from "module_3412" /* 3412 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import components_Button_Button from "components/Button/Button" /* 5226 */;
-import Stack_Stack from "Stack/Stack" /* 5957 */;
-import FavoritesSpotIllustration from "FavoritesSpotIllustration" /* 10798 */;
-import PlusMediumIcon from "PlusMediumIcon" /* 11098 */;
-import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 13755 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import components_Button_Button from "components/Button/Button" /* 5230 */;
+import Stack_Stack from "Stack/Stack" /* 5964 */;
+import FavoritesSpotIllustration from "FavoritesSpotIllustration" /* 10815 */;
+import PlusMediumIcon from "PlusMediumIcon" /* 11115 */;
+import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 13791 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -104,7 +104,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesE
     const _Symbol = Symbol;
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { variant: "primary", text: intl3.string(_modDef3412["6kk0gM"]), icon: hasOwnProperty(PlusMediumIcon.PlusMediumIcon, {}), onPress: first };
-      const Button = tmp(5226).Button;
+      const Button = tmp(5230).Button;
       intl3 = tmp(1128).intl;
       const tmp26 = hasOwnProperty(Button, obj4);
       cResult[11] = tmp26;
@@ -128,7 +128,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesE
     tmp27 = tmp30;
   }
   const obj6 = { spacing: nativeDefault.space.PX_8, align: "center", children: items1 };
-  const Stack = tmp(5957).Stack;
+  const Stack = tmp(5964).Stack;
   items1 = [tmp12, tmp18];
   const tmp22 = metroRequire(Stack, obj6);
   cResult[8] = tmp12;

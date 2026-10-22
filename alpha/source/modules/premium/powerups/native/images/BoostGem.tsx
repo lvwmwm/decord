@@ -1,11 +1,11 @@
-// Module ID: 13329
-// Function ID: 13330
+// Module ID: 13365
+// Function ID: 13366
 // Name: BoostGem
-// Dependencies: [19, 21, 558, 576, 7938, 2]
+// Dependencies: [19, 21, 558, 576, 7946, 2]
 
-// Module 13329 (BoostGem)
+// Module 13365 (BoostGem)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 7938 */;
+import inlineStyles from "inlineStyles" /* 7946 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

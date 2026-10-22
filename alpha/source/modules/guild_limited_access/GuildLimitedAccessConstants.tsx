@@ -1,9 +1,9 @@
-// Module ID: 6629
-// Function ID: 6630
+// Module ID: 6636
+// Function ID: 6637
 // Name: GuildLimitedAccessConstants
 // Dependencies: [2]
 
-// Module 6629 (GuildLimitedAccessConstants)
+// Module 6636 (GuildLimitedAccessConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_limited_access/GuildLimitedAccessConstants.tsx");

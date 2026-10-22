@@ -1,21 +1,21 @@
-// Module ID: 10939
-// Function ID: 10940
+// Module ID: 10956
+// Function ID: 10957
 // Name: notficationSettingsChannelFlagUtils
-// Dependencies: [32, 4821, 6683, 1087, 6684, 1097, 558, 576, 573, 8275, 10937, 7194, 10940, 7189, 2]
+// Dependencies: [32, 4821, 6690, 1087, 6691, 1097, 558, 576, 573, 8284, 10954, 7201, 10957, 7196, 2]
 // Exports: updateChannelNotificationSetting, updateChannelPreset, updateChannelToGuildDefault, updateChannelUnreadSetting
 
-// Module 10939 (notficationSettingsChannelFlagUtils)
+// Module 10956 (notficationSettingsChannelFlagUtils)
 import Constants from "Constants" /* 1087 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
-import ReadStateConstants from "ReadStateConstants" /* 6684 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7189 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7194 */;
-import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 8275 */;
-import notifications_NotificationUtils from "notifications/NotificationUtils" /* 10937 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10940 */;
+import ReadStateConstants from "ReadStateConstants" /* 6691 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7196 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7201 */;
+import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 8284 */;
+import notifications_NotificationUtils from "notifications/NotificationUtils" /* 10954 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10957 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6683 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6690 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

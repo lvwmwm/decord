@@ -1,9 +1,9 @@
-// Module ID: 10366
-// Function ID: 10367
+// Module ID: 10378
+// Function ID: 10379
 // Name: SelectedDismissibleContent
-// Dependencies: [32, 19, 21, 558, 576, 7473, 2]
+// Dependencies: [32, 19, 21, 558, 576, 7480, 2]
 
-// Module 10366 (SelectedDismissibleContent)
+// Module 10378 (SelectedDismissibleContent)
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -14,7 +14,7 @@ import size from "module_2" /* 2 */;
 let c3;
 let closure_4;
 let tmp;
-const useSelectedDismissibleContent = tmp(7473);
+const useSelectedDismissibleContent = tmp(7480);
 ({ Fragment: c3, jsx: closure_4 } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
 const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectedDismissibleContent(arg0) {

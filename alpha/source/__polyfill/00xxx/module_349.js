@@ -43,12 +43,12 @@ const cloneElement = react2.cloneElement;
 class ScrollView {
   constructor(arg0) {
     let constructResult;
-    const f84522 = (arg0) => {
+    const f84959 = (arg0) => {
       let closure_0 = arg0;
       return (nativeInstance) => {
         let tmp = null;
         if (null != nativeInstance) {
-          tmp = f139437(nativeInstance);
+          tmp = f140125(nativeInstance);
         }
         obj3.nativeInstance = nativeInstance;
         obj3.publicInstance = tmp;
@@ -249,15 +249,15 @@ class ScrollView {
         props.onContentSizeChange(tmp, tmp2);
       }
     };
-    const f139436 = (arg0) => arg0;
+    const f140124 = (arg0) => arg0;
     new Map();
-    let obj2 = { getForwardingRef: memoizeOneDefault(f84522), nativeInstance: null, publicInstance: null };
+    let obj2 = { getForwardingRef: memoizeOneDefault(f84959), nativeInstance: null, publicInstance: null };
     tmp3Result._innerView = obj2;
-    const f139437 = (arg0) => {
-      const obj = { getScrollResponder: f139437.getScrollResponder, getScrollableNode: f139437.getScrollableNode, getInnerViewNode: f139437.getInnerViewNode, getInnerViewRef: f139437.getInnerViewRef, getNativeScrollRef: f139437.getNativeScrollRef, scrollTo: f139437.scrollTo, scrollToEnd: f139437.scrollToEnd, flashScrollIndicators: f139437.flashScrollIndicators, scrollResponderZoomTo: f139437.scrollResponderZoomTo, scrollResponderScrollNativeHandleToKeyboard: f139437.scrollResponderScrollNativeHandleToKeyboard };
+    const f140125 = (arg0) => {
+      const obj = { getScrollResponder: f140125.getScrollResponder, getScrollableNode: f140125.getScrollableNode, getInnerViewNode: f140125.getInnerViewNode, getInnerViewRef: f140125.getInnerViewRef, getNativeScrollRef: f140125.getNativeScrollRef, scrollTo: f140125.scrollTo, scrollToEnd: f140125.scrollToEnd, flashScrollIndicators: f140125.flashScrollIndicators, scrollResponderZoomTo: f140125.scrollResponderZoomTo, scrollResponderScrollNativeHandleToKeyboard: f140125.scrollResponderScrollNativeHandleToKeyboard };
       return Object.assign(arg0, obj);
     };
-    let obj3 = { getForwardingRef: memoizeOneDefault(f84522), nativeInstance: null, publicInstance: null };
+    let obj3 = { getForwardingRef: memoizeOneDefault(f84959), nativeInstance: null, publicInstance: null };
     tmp3Result._scrollView = obj3;
     tmp3Result.scrollResponderKeyboardWillShow = (endCoordinates) => {
       closure_0._keyboardMetrics = endCoordinates.endCoordinates;

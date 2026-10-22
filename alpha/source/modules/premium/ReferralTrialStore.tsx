@@ -1,18 +1,18 @@
-// Module ID: 7539
-// Function ID: 7540
+// Module ID: 7546
+// Function ID: 7547
 // Name: ReferralTrialStore
-// Dependencies: [1392, 1087, 7540, 1103, 504, 584, 2]
+// Dependencies: [1392, 1087, 7547, 1103, 504, 584, 2]
 
-// Module 7539 (ReferralTrialStore)
+// Module 7546 (ReferralTrialStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import MessageTypes from "MessageTypes" /* 1103 */;
-import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7540 */;
+import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7547 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 
-let closure_14, closure_15;
+let closure_14;
 
 function emitChanges() {
   return true;
@@ -63,7 +63,7 @@ let c11 = 0;
 let c12 = null;
 let set3 = new Set();
 const syncedClientThemes = [];
-const authStore3 = [];
+let closure_15 = [];
 let c16 = false;
 let c17 = false;
 let refresh_at = null;

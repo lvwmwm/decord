@@ -1,29 +1,27 @@
-// Module ID: 12874
-// Function ID: 12875
+// Module ID: 12907
+// Function ID: 12908
 // Name: CheckpointServersStatsScreen
-// Dependencies: [19, 17, 12843, 5995, 21, 4966, 587, 558, 576, 504, 12866, 12869, 12861, 1128, 3056, 3088, 12863, 9603, 12875, 5216, 6862, 11574, 8518, 2]
+// Dependencies: [19, 17, 12875, 6002, 21, 4969, 587, 558, 576, 504, 12898, 12903, 12893, 1128, 3056, 3088, 12895, 9615, 12908, 12909, 5220, 6869, 2]
 
-// Module 12874 (CheckpointServersStatsScreen)
+// Module 12907 (CheckpointServersStatsScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl6 from "intl" /* 1128 */;
 import _modDef3056 from "module_3056" /* 3056 */;
 import _modDef3088 from "module_3088" /* 3088 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import GuildIcon from "GuildIcon" /* 6862 */;
-import ChatIcon from "ChatIcon" /* 8518 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 11574 */;
-import CheckpointTextDefault from "CheckpointText" /* 12861 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 12863 */;
-import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12866 */;
-import _modDef12869 from "module_12869" /* 12869 */;
-import CheckpointRankTagDefault from "CheckpointRankTag" /* 12875 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import GuildIcon from "GuildIcon" /* 6869 */;
+import CheckpointTextDefault from "CheckpointText" /* 12893 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12895 */;
+import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12898 */;
+import _modDef12903 from "module_12903" /* 12903 */;
+import CheckpointGuildStatsDefault from "CheckpointGuildStats" /* 12908 */;
+import CheckpointRankTagDefault from "CheckpointRankTag" /* 12909 */;
 import react from "react" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 12843 */;
-import CheckpointConstants from "CheckpointConstants" /* 5995 */;
+import CheckpointStore from "CheckpointStore" /* 12875 */;
+import CheckpointConstants from "CheckpointConstants" /* 6002 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -38,8 +36,6 @@ let metroRequire;
 let obj10;
 let obj11;
 let obj12;
-let obj13;
-let obj14;
 let obj2;
 let obj3;
 let obj4;
@@ -56,7 +52,7 @@ const CHECKPOINT_PRIMARY = CheckpointConstants.CHECKPOINT_PRIMARY;
 ({ CHECKPOINT_GUILD_CARD_BACKGROUND, CHECKPOINT_WHITE } = CheckpointConstants);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: obj2, globalContainer: obj3, header: obj4, heading: obj5, globalHeading: obj6, globe: { width: 75, height: 56 }, title: obj7, titleText: { flexShrink: 1 }, guilds: obj8, globalGuilds: obj9, guildCard: obj10, guildContent: obj11, guildRankRow: { flexDirection: "row" }, guildDetails: obj12, guildName: { color: CHECKPOINT_WHITE }, guildStats: obj13, guildStat: obj14, guildStatText: { fontSize: 16, lineHeight: 20 }, topGuildIcon: size, guildIcon: size1, globalGuildIcon: size2 };
+let obj = { container: obj2, globalContainer: obj3, header: obj4, heading: obj5, globalHeading: obj6, globe: { width: 75, height: 56 }, title: obj7, titleText: { flexShrink: 1 }, guilds: obj8, globalGuilds: obj9, guildCard: obj10, guildContent: obj11, guildRankRow: { flexDirection: "row" }, guildDetails: obj12, guildName: { color: CHECKPOINT_WHITE }, topGuildIcon: size, guildIcon: size1, globalGuildIcon: size2 };
 obj2 = { width: "100%", flexGrow: 1, justifyContent: "center", gap: nativeDefault.space.PX_40, paddingBottom: nativeDefault.space.PX_64 };
 createStyles = createStyles.createStyles;
 obj3 = { justifyContent: "flex-start", gap: nativeDefault.space.PX_24 };
@@ -69,8 +65,6 @@ obj9 = { gap: nativeDefault.space.PX_16 };
 obj10 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12, borderWidth: 1, borderColor: CHECKPOINT_PRIMARY, backgroundColor: CHECKPOINT_GUILD_CARD_BACKGROUND };
 obj11 = { flex: 1, alignSelf: "stretch", gap: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_12 };
 obj12 = { gap: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_12 };
-obj13 = { flexDirection: "row", flexWrap: "wrap", columnGap: nativeDefault.space.PX_16 };
-obj14 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
 size = { width: 96, height: 96, borderRadius: nativeDefault.radii.none };
 size1 = { width: 72, height: 72, borderRadius: nativeDefault.radii.none };
 size2 = { width: 64, height: 64, borderRadius: nativeDefault.radii.none };
@@ -105,6 +99,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
   const tmp4 = closure_8();
   _require = tmp4;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp7 = CheckpointStore;
     const items = [CheckpointStore];
     const fn = function o() {
       let guildsByMembers;
@@ -146,7 +141,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
       ({ container, header, heading, title } = tmp4);
       if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
         let obj2 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
-        const tmp12 = closure_6(tmp(9603).ServerIcon, obj2);
+        const tmp12 = closure_6(tmp(9615).ServerIcon, obj2);
         cResult[26] = tmp12;
         tmp9 = tmp12;
       } else {
@@ -229,7 +224,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
                           return tmp48;
                         }
                       }
-                      class K {
+                      class B {
                         constructor(arg0, arg1) {
                           let guild;
                           let numMessagesSent;
@@ -239,7 +234,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
                           const obj = { guild, rank: arg1 + 1, iconStyle: tmp ? globalGuildIcon.topGuildIcon : globalGuildIcon.guildIcon, children: tmp };
                           const tmp3 = closure_9;
                           if (tmp) {
-                            const tmp5 = closure_10;
+                            const tmp7 = CheckpointGuildStatsDefault;
                             if (numMessagesSent == null) {
                               numMessagesSent = 0;
                             }
@@ -247,7 +242,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
                             if (numVoiceMinutes == null) {
                               numVoiceMinutes = 0;
                             }
-                            tmp = tmp2(tmp5, obj2);
+                            tmp = tmp2(tmp7, obj2);
                           }
                           return metroRequire(tmp3, obj, guild.id);
                         }
@@ -263,7 +258,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
                       cResult[56] = tmp53;
                       tmp48 = tmp53;
                     }
-                    class K {
+                    class B {
                       constructor(arg0, arg1) {
                         let guild;
                         let numMessagesSent;
@@ -273,7 +268,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
                         const obj = { guild, rank: arg1 + 1, iconStyle: tmp ? globalGuildIcon.topGuildIcon : globalGuildIcon.guildIcon, children: tmp };
                         const tmp3 = closure_9;
                         if (tmp) {
-                          const tmp5 = closure_10;
+                          const tmp7 = CheckpointGuildStatsDefault;
                           if (numMessagesSent == null) {
                             numMessagesSent = 0;
                           }
@@ -281,7 +276,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
                           if (numVoiceMinutes == null) {
                             numVoiceMinutes = 0;
                           }
-                          tmp = tmp2(tmp5, obj2);
+                          tmp = tmp2(tmp7, obj2);
                         }
                         return metroRequire(tmp3, obj, guild.id);
                       }
@@ -300,7 +295,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
                     tmp43 = cResult[49];
                   }
                   const mapped = guilds.map(tmp43);
-                  class K {
+                  class B {
                     constructor(arg0, arg1) {
                       let guild;
                       let numMessagesSent;
@@ -310,7 +305,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
                       const obj = { guild, rank: arg1 + 1, iconStyle: tmp ? globalGuildIcon.topGuildIcon : globalGuildIcon.guildIcon, children: tmp };
                       const tmp3 = closure_9;
                       if (tmp) {
-                        const tmp5 = closure_10;
+                        const tmp7 = CheckpointGuildStatsDefault;
                         if (numMessagesSent == null) {
                           numMessagesSent = 0;
                         }
@@ -318,7 +313,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
                         if (numVoiceMinutes == null) {
                           numVoiceMinutes = 0;
                         }
-                        tmp = tmp2(tmp5, obj2);
+                        tmp = tmp2(tmp7, obj2);
                       }
                       return metroRequire(tmp3, obj, guild.id);
                     }
@@ -328,7 +323,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
                   cResult[46] = mapped;
                   tmp42 = mapped;
                 }
-                class K {
+                class B {
                   constructor(arg0, arg1) {
                     let guild;
                     let numMessagesSent;
@@ -338,7 +333,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
                     const obj = { guild, rank: arg1 + 1, iconStyle: tmp ? globalGuildIcon.topGuildIcon : globalGuildIcon.guildIcon, children: tmp };
                     const tmp3 = closure_9;
                     if (tmp) {
-                      const tmp5 = closure_10;
+                      const tmp7 = CheckpointGuildStatsDefault;
                       if (numMessagesSent == null) {
                         numMessagesSent = 0;
                       }
@@ -346,15 +341,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
                       if (numVoiceMinutes == null) {
                         numVoiceMinutes = 0;
                       }
-                      tmp = tmp2(tmp5, obj2);
+                      tmp = tmp2(tmp7, obj2);
                     }
                     return metroRequire(tmp3, obj, guild.id);
                   }
                 }
                 cResult[47] = tmp4.guildIcon;
                 cResult[48] = tmp4.topGuildIcon;
-                cResult[49] = K;
-                tmp43 = K;
+                cResult[49] = B;
+                tmp43 = B;
               }
               const obj8 = { style: header, children: items2 };
               items2 = [tmp28, tmp32];
@@ -398,8 +393,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
       tmp54 = cResult[4];
     }
     if (cResult[5] !== tmp4.globe) {
-      const obj12 = { uri: _modDef12869, style: tmp4.globe };
-      class K {
+      const obj12 = { uri: _modDef12903, style: tmp4.globe };
+      class B {
         constructor(arg0, arg1) {
           let guild;
           let numMessagesSent;
@@ -409,7 +404,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
           const obj = { guild, rank: arg1 + 1, iconStyle: tmp ? globalGuildIcon.topGuildIcon : globalGuildIcon.guildIcon, children: tmp };
           const tmp3 = closure_9;
           if (tmp) {
-            const tmp5 = closure_10;
+            const tmp7 = CheckpointGuildStatsDefault;
             if (numMessagesSent == null) {
               numMessagesSent = 0;
             }
@@ -417,7 +412,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
             if (numVoiceMinutes == null) {
               numVoiceMinutes = 0;
             }
-            tmp = tmp2(tmp5, obj2);
+            tmp = tmp2(tmp7, obj2);
           }
           return metroRequire(tmp3, obj, guild.id);
         }
@@ -430,7 +425,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
       tmp55 = cResult[6];
     }
     const _Symbol4 = Symbol;
-    class K {
+    class B {
       constructor(arg0, arg1) {
         let guild;
         let numMessagesSent;
@@ -440,7 +435,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
         const obj = { guild, rank: arg1 + 1, iconStyle: tmp ? globalGuildIcon.topGuildIcon : globalGuildIcon.guildIcon, children: tmp };
         const tmp3 = closure_9;
         if (tmp) {
-          const tmp5 = closure_10;
+          const tmp7 = CheckpointGuildStatsDefault;
           if (numMessagesSent == null) {
             numMessagesSent = 0;
           }
@@ -448,14 +443,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
           if (numVoiceMinutes == null) {
             numVoiceMinutes = 0;
           }
-          tmp = tmp2(tmp5, obj2);
+          tmp = tmp2(tmp7, obj2);
         }
         return metroRequire(tmp3, obj, guild.id);
       }
     }
     if (tmp60 === Symbol.for("react.memo_cache_sentinel")) {
       const obj13 = { variant: "display-lg", children: stringResult2.toLocaleUpperCase() };
-      class K {
+      class B {
         constructor(arg0, arg1) {
           let guild;
           let numMessagesSent;
@@ -465,7 +460,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
           const obj = { guild, rank: arg1 + 1, iconStyle: tmp ? globalGuildIcon.topGuildIcon : globalGuildIcon.guildIcon, children: tmp };
           const tmp3 = closure_9;
           if (tmp) {
-            const tmp5 = closure_10;
+            const tmp7 = CheckpointGuildStatsDefault;
             if (numMessagesSent == null) {
               numMessagesSent = 0;
             }
@@ -473,7 +468,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
             if (numVoiceMinutes == null) {
               numVoiceMinutes = 0;
             }
-            tmp = tmp2(tmp5, obj2);
+            tmp = tmp2(tmp7, obj2);
           }
           return metroRequire(tmp3, obj, guild.id);
         }
@@ -493,7 +488,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
           tmp66 = cResult[11];
         }
         const _Symbol5 = Symbol;
-        class K {
+        class B {
           constructor(arg0, arg1) {
             let guild;
             let numMessagesSent;
@@ -503,7 +498,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
             const obj = { guild, rank: arg1 + 1, iconStyle: tmp ? globalGuildIcon.topGuildIcon : globalGuildIcon.guildIcon, children: tmp };
             const tmp3 = closure_9;
             if (tmp) {
-              const tmp5 = closure_10;
+              const tmp7 = CheckpointGuildStatsDefault;
               if (numMessagesSent == null) {
                 numMessagesSent = 0;
               }
@@ -511,7 +506,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
               if (numVoiceMinutes == null) {
                 numVoiceMinutes = 0;
               }
-              tmp = tmp2(tmp5, obj2);
+              tmp = tmp2(tmp7, obj2);
             }
             return metroRequire(tmp3, obj, guild.id);
           }
@@ -540,7 +535,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
                   return tmp81;
                 }
               }
-              class K {
+              class B {
                 constructor(arg0, arg1) {
                   let guild;
                   let numMessagesSent;
@@ -550,7 +545,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
                   const obj = { guild, rank: arg1 + 1, iconStyle: tmp ? globalGuildIcon.topGuildIcon : globalGuildIcon.guildIcon, children: tmp };
                   const tmp3 = closure_9;
                   if (tmp) {
-                    const tmp5 = closure_10;
+                    const tmp7 = CheckpointGuildStatsDefault;
                     if (numMessagesSent == null) {
                       numMessagesSent = 0;
                     }
@@ -558,7 +553,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
                     if (numVoiceMinutes == null) {
                       numVoiceMinutes = 0;
                     }
-                    tmp = tmp2(tmp5, obj2);
+                    tmp = tmp2(tmp7, obj2);
                   }
                   return metroRequire(tmp3, obj, guild.id);
                 }
@@ -574,7 +569,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
               cResult[25] = tmp86;
               tmp81 = tmp86;
             }
-            class K {
+            class B {
               constructor(arg0, arg1) {
                 let guild;
                 let numMessagesSent;
@@ -584,7 +579,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
                 const obj = { guild, rank: arg1 + 1, iconStyle: tmp ? globalGuildIcon.topGuildIcon : globalGuildIcon.guildIcon, children: tmp };
                 const tmp3 = closure_9;
                 if (tmp) {
-                  const tmp5 = closure_10;
+                  const tmp7 = CheckpointGuildStatsDefault;
                   if (numMessagesSent == null) {
                     numMessagesSent = 0;
                   }
@@ -592,7 +587,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
                   if (numVoiceMinutes == null) {
                     numVoiceMinutes = 0;
                   }
-                  tmp = tmp2(tmp5, obj2);
+                  tmp = tmp2(tmp7, obj2);
                 }
                 return metroRequire(tmp3, obj, guild.id);
               }
@@ -604,7 +599,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
             cResult[21] = tmp80;
             tmp78 = tmp80;
           }
-          class K {
+          class B {
             constructor(arg0, arg1) {
               let guild;
               let numMessagesSent;
@@ -614,7 +609,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
               const obj = { guild, rank: arg1 + 1, iconStyle: tmp ? globalGuildIcon.topGuildIcon : globalGuildIcon.guildIcon, children: tmp };
               const tmp3 = closure_9;
               if (tmp) {
-                const tmp5 = closure_10;
+                const tmp7 = CheckpointGuildStatsDefault;
                 if (numMessagesSent == null) {
                   numMessagesSent = 0;
                 }
@@ -622,7 +617,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
                 if (numVoiceMinutes == null) {
                   numVoiceMinutes = 0;
                 }
-                tmp = tmp2(tmp5, obj2);
+                tmp = tmp2(tmp7, obj2);
               }
               return metroRequire(tmp3, obj, guild.id);
             }
@@ -715,7 +710,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
       const obj5 = { style: tmp.heading, children: items2 };
       const obj7 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
       const tmp16 = CheckpointScreenDefault;
-      items1[0] = closure_6(tmp2(9603).ServerIcon, obj7);
+      items1[0] = closure_6(tmp2(9615).ServerIcon, obj7);
       const obj8 = { variant: "heading-md/extrabold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
       const tmp20 = CheckpointTextDefault;
       const intl3 = tmp2(1128).intl;
@@ -744,7 +739,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
               const obj = { guild, rank: index + 1, iconStyle: tmp ? globalGuildIcon.topGuildIcon : globalGuildIcon.guildIcon, children: tmp };
               const tmp3 = closure_9;
               if (tmp) {
-                const tmp5 = closure_10;
+                const tmp7 = CheckpointGuildStatsDefault;
                 if (numMessagesSent == null) {
                   numMessagesSent = 0;
                 }
@@ -752,7 +747,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
                 if (numVoiceMinutes == null) {
                   numVoiceMinutes = 0;
                 }
-                tmp = tmp2(tmp5, obj2);
+                tmp = tmp2(tmp7, obj2);
               }
               return metroRequire(tmp3, obj, guild.id);
             })
@@ -762,14 +757,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
     }
     return tmp5Result;
   }
-  let tmp5 = closure_6;
   const obj12 = { style: items5, children: items8 };
   items5 = [, ];
   ({ container: arr2[0], globalContainer: arr2[1] } = tmp);
   const obj13 = { style: tmp.header, children: items7 };
   const obj14 = { style: tmp.globalHeading, children: items6 };
+  let tmp7 = closure_7;
   const tmp6 = CheckpointScreenDefault;
-  const obj15 = { uri: _modDef12869, style: tmp.globe };
+  const obj15 = { uri: _modDef12903, style: tmp.globe };
   const tmp9 = CheckpointApngPlayerDefault;
   items6 = [closure_6(tmp9, obj15), ];
   const obj16 = { variant: "display-lg", children: stringResult2.toLocaleUpperCase() };
@@ -785,7 +780,6 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
   items8 = [closure_7(View, obj13), ];
   const obj18 = { style: tmp.globalGuilds, children: mapped };
   mapped = undefined;
-  const tmp7 = closure_7;
   if (globalGuilds != null) {
     mapped = globalGuilds.map((guild, index) => {
       const obj = { guild, rank: index + 1, iconStyle: globalGuildIcon.globalGuildIcon };
@@ -793,7 +787,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
     });
   }
   const obj19 = { children: tmp7(View, obj12) };
-  items8[1] = tmp5(View, obj18);
+  items8[1] = closure_6(View, obj18);
   tmp5Result = tmp5(tmp6, obj19);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -930,216 +924,6 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildCa
   const obj6 = { guild, size: GuildIcon.GuildIconSizes.XXLARGE, style: iconStyle };
   const tmp2 = GuildIconDefault;
   items2[1] = metroRequire(tmp2, obj6);
-  return metroImportDefault(View, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildStats(arg0) {
-  let flag;
-  let items;
-  let items1;
-  let items2;
-  let numMessagesSent;
-  let numVoiceMinutes;
-  let tmp10;
-  let tmp11;
-  let tmp13;
-  let tmp18;
-  let tmp5;
-  let tmp6;
-  let tmp7;
-  let tmp8;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(38);
-  ({ numVoiceMinutes, numMessagesSent } = arg0);
-  const tmp4 = closure_8();
-  if (cResult[0] === numMessagesSent) {
-    if (cResult[1] === numVoiceMinutes) {
-      if (cResult[2] === tmp4.guildStat) {
-        if (cResult[3] === tmp4.guildStatText) {
-          let tmp30;
-          if (cResult[4] === tmp4.guildStats) {
-            tmp5 = cResult[5];
-            tmp6 = cResult[6];
-            tmp7 = cResult[7];
-            tmp8 = cResult[8];
-            tmp9 = cResult[9];
-            flag = cResult[10];
-            tmp10 = cResult[11];
-            tmp11 = cResult[12];
-          }
-          const _HermesInternal = HermesInternal;
-          const combined = "" + tmp8 + " " + tmp9;
-          const _Symbol = Symbol;
-          if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
-            const obj2 = { size: "xs", color: CHECKPOINT_PRIMARY };
-            const tmp33 = metroRequire(ChatIcon.ChatIcon, obj2);
-            cResult[23] = tmp33;
-            tmp30 = tmp33;
-          } else {
-            tmp30 = cResult[23];
-          }
-          if (cResult[24] === tmp7) {
-            let tmp34;
-            if (cResult[25] === tmp4.guildStatText) {
-              tmp34 = cResult[26];
-            }
-            if (cResult[27] === tmp5) {
-              if (cResult[28] === tmp4.guildStat) {
-                if (cResult[29] === flag) {
-                  if (cResult[30] === combined) {
-                    let tmp38;
-                    if (cResult[31] === tmp34) {
-                      tmp38 = cResult[32];
-                    }
-                    if (cResult[33] === tmp6) {
-                      if (cResult[34] === tmp10) {
-                        if (cResult[35] === tmp11) {
-                          let tmp41;
-                          if (cResult[36] === tmp38) {
-                            tmp41 = cResult[37];
-                          }
-                          return tmp41;
-                        }
-                      }
-                    }
-                    const obj3 = { style: tmp10, children: items };
-                    items = [tmp11, tmp38];
-                    const tmp43 = metroImportDefault(tmp6, obj3);
-                    cResult[33] = tmp6;
-                    cResult[34] = tmp10;
-                    cResult[35] = tmp11;
-                    cResult[36] = tmp38;
-                    cResult[37] = tmp43;
-                    tmp41 = tmp43;
-                  }
-                }
-              }
-            }
-            const obj4 = { accessible: flag, accessibilityLabel: combined, style: tmp4.guildStat, children: items1 };
-            items1 = [tmp30, tmp34];
-            const tmp40 = metroImportDefault(tmp5, obj4);
-            cResult[27] = tmp5;
-            cResult[28] = tmp4.guildStat;
-            cResult[29] = flag;
-            cResult[30] = combined;
-            cResult[31] = tmp34;
-            cResult[32] = tmp40;
-            tmp38 = tmp40;
-          }
-          const obj5 = { variant: "experimental/mono-md/bold", style: tmp4.guildStatText, children: tmp7 };
-          const tmp37 = metroRequire(CheckpointTextDefault, obj5);
-          cResult[24] = tmp7;
-          cResult[25] = tmp4.guildStatText;
-          cResult[26] = tmp37;
-          tmp34 = tmp37;
-        }
-      }
-    }
-  }
-  const rounded = Math.round(numVoiceMinutes);
-  if (cResult[13] !== numMessagesSent) {
-    const _Math = Math;
-    const rounded1 = Math.round(numMessagesSent);
-    cResult[13] = numMessagesSent;
-    cResult[14] = rounded1;
-    tmp13 = rounded1;
-  } else {
-    tmp13 = cResult[14];
-  }
-  const intl = tmp(1128).intl;
-  const formatToPlainStringResult = intl.formatToPlainString(_modDef3056.UZbUtl, { numMinutes: rounded });
-  const intl2 = tmp(1128).intl;
-  const guildStats = tmp4.guildStats;
-  const stringResult = intl2.string(_modDef3056.wWKySP);
-  const combined1 = "" + rounded + " " + formatToPlainStringResult.toLocaleLowerCase();
-  if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj6 = { size: "xs", color: CHECKPOINT_PRIMARY };
-    const tmp21 = metroRequire(MicrophoneIcon.MicrophoneIcon, obj6);
-    cResult[15] = tmp21;
-    tmp18 = tmp21;
-  } else {
-    tmp18 = cResult[15];
-  }
-  if (cResult[16] === tmp4.guildStatText) {
-    let tmp22;
-    if (cResult[17] === rounded) {
-      tmp22 = cResult[18];
-    }
-    if (cResult[19] === tmp4.guildStat) {
-      if (cResult[20] === combined1) {
-        let tmp24;
-        if (cResult[21] === tmp22) {
-          tmp24 = cResult[22];
-        }
-        const toLocaleLowerCaseResult = stringResult.toLocaleLowerCase();
-        cResult[0] = numMessagesSent;
-        cResult[1] = numVoiceMinutes;
-        cResult[2] = tmp4.guildStat;
-        cResult[3] = tmp4.guildStatText;
-        cResult[4] = tmp4.guildStats;
-        cResult[5] = View;
-        cResult[6] = View;
-        cResult[7] = tmp13;
-        cResult[8] = tmp13;
-        cResult[9] = toLocaleLowerCaseResult;
-        cResult[10] = true;
-        cResult[11] = guildStats;
-        cResult[12] = tmp24;
-        tmp11 = tmp24;
-        tmp10 = guildStats;
-        flag = true;
-        tmp9 = toLocaleLowerCaseResult;
-        tmp8 = tmp13;
-        tmp7 = tmp13;
-        tmp6 = tmp16;
-        tmp5 = tmp16;
-      }
-    }
-    const obj7 = { accessible: true, accessibilityLabel: combined1, style: tmp4.guildStat, children: items2 };
-    items2 = [tmp18, tmp22];
-    const tmp26 = metroImportDefault(View, obj7);
-    cResult[19] = tmp4.guildStat;
-    cResult[20] = combined1;
-    cResult[21] = tmp22;
-    cResult[22] = tmp26;
-    tmp24 = tmp26;
-  }
-  const obj8 = { variant: "experimental/mono-md/bold", style: tmp4.guildStatText, children: rounded };
-  const tmp23 = metroRequire(CheckpointTextDefault, obj8);
-  cResult[16] = tmp4.guildStatText;
-  cResult[17] = rounded;
-  cResult[18] = tmp23;
-  tmp22 = tmp23;
-}) : (function GuildStats(arg0) {
-  let items;
-  let items1;
-  let items2;
-  let numMessagesSent;
-  let numVoiceMinutes;
-  ({ numVoiceMinutes, numMessagesSent } = arg0);
-  const tmp = closure_8();
-  const rounded = Math.round(numVoiceMinutes);
-  const rounded1 = Math.round(numMessagesSent);
-  const intl = intl6.intl;
-  const formatToPlainStringResult = intl.formatToPlainString(_modDef3056.UZbUtl, { numMinutes: rounded });
-  const intl2 = intl6.intl;
-  const obj = { style: tmp.guildStats, children: items1 };
-  const stringResult = intl2.string(_modDef3056.wWKySP);
-  const obj2 = { accessible: true, accessibilityLabel: "" + rounded + " " + formatToPlainStringResult.toLocaleLowerCase(), style: tmp.guildStat, children: items };
-  items = [, ];
-  const obj3 = { size: "xs", color: CHECKPOINT_PRIMARY };
-  items[0] = metroRequire(MicrophoneIcon.MicrophoneIcon, obj3);
-  const obj4 = { variant: "experimental/mono-md/bold", style: tmp.guildStatText, children: rounded };
-  items[1] = metroRequire(CheckpointTextDefault, obj4);
-  items1 = [metroImportDefault(View, obj2), ];
-  const obj5 = { accessible: true, accessibilityLabel: "" + rounded1 + " " + stringResult.toLocaleLowerCase(), style: tmp.guildStat, children: items2 };
-  items2 = [, ];
-  const obj6 = { size: "xs", color: CHECKPOINT_PRIMARY };
-  items2[0] = metroRequire(ChatIcon.ChatIcon, obj6);
-  const obj7 = { variant: "experimental/mono-md/bold", style: tmp.guildStatText, children: rounded1 };
-  items2[1] = metroRequire(CheckpointTextDefault, obj7);
-  items1[1] = metroImportDefault(View, obj5);
   return metroImportDefault(View, obj);
 });
 size = size_mod;

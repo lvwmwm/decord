@@ -1,11 +1,9 @@
 // Module ID: 15515
 // Function ID: 15516
-// Dependencies: [15516, 15523]
+// Dependencies: [15493]
 
 // Module 15515
-import _mod15516 from "module_15516" /* 15516 */;
-import _mod15523 from "module_15523" /* 15523 */;
+import _mod15493 from "module_15493" /* 15493 */;
 
 
-export const URL = _mod15516;
-export const URLSearchParams = _mod15523;
+export default _mod15493({}.isPrototypeOf);

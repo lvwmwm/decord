@@ -1,9 +1,9 @@
-// Module ID: 17449
-// Function ID: 17450
+// Module ID: 17519
+// Function ID: 17520
 // Name: UnclaimedGamesStore
 // Dependencies: [504, 584, 2]
 
-// Module 17449 (UnclaimedGamesStore)
+// Module 17519 (UnclaimedGamesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

@@ -1,7 +1,7 @@
 // Module ID: 15
 // Function ID: 16
 // Name: fast_connect
-// Dependencies: [16, 17, 499, 3, 500, 1275, 10058, 14874, 15338, 7697, 14856, 14843, 10, 9, 2]
+// Dependencies: [16, 17, 499, 3, 500, 1275, 10070, 14918, 15382, 7706, 14900, 14887, 10, 9, 2]
 // Exports: closeFastConnectSocket, createFastConnectSocket, getLastFastConnectIdentifyUserId, identifyWebSocket
 
 // Module 15 (fast_connect)
@@ -12,10 +12,10 @@ import react_native from "react-native" /* 17 */;
 import KvCacheVersionConstants from "KvCacheVersionConstants" /* 499 */;
 import QosToken from "QosToken" /* 500 */;
 import discord_common_AnalyticsUtilsAll from "discord_common/AnalyticsUtils" /* 1275 */;
-import isCacheEnabled from "isCacheEnabled" /* 7697 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10058 */;
-import GatewayCapabilities from "GatewayCapabilities" /* 14874 */;
-import react_nativeDefault from "react-native" /* 15338 */;
+import isCacheEnabled from "isCacheEnabled" /* 7706 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10070 */;
+import GatewayCapabilities from "GatewayCapabilities" /* 14918 */;
+import react_nativeDefault from "react-native" /* 15382 */;
 import checkEnv from "checkEnv" /* 16 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ function createFastConnectSocket() {
   let obj;
   let obj3;
   if (null != window.WebSocket) {
-    obj = obj3(14856);
+    obj = obj3(14900);
     constants = obj.getConstants();
     let flag;
     if (constants != null) {
@@ -45,7 +45,7 @@ function createFastConnectSocket() {
     obj.log(`[FAST CONNECT] ${tmp7}`);
     const _Date = Date;
     let closure_0 = Date.now();
-    const tmp9 = obj3(14843)(combined);
+    const tmp9 = obj3(14887)(combined);
     const _parseFloat = parseFloat;
     const parsed = parseFloat(tmp9._socketId);
     const _isNaN = isNaN;
@@ -53,7 +53,7 @@ function createFastConnectSocket() {
     if (isNaN(parsed)) {
       obj2.log("[FAST CONNECT] Unable to create socketId from NaN value ", tmp9._socketId);
     } else {
-      const tmp3Result = obj3(14856);
+      const tmp3Result = obj3(14900);
       if (flag) {
         const result = tmp3Result.enableZstdStreamSupport(parsed);
       } else {

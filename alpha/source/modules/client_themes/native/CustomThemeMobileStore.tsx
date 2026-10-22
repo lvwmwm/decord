@@ -1,7 +1,7 @@
 // Module ID: 1253
 // Function ID: 1254
 // Name: CustomThemeMobileStore
-// Dependencies: [1208, 1207, 1209, 1246, 1097, 1254, 5018, 1211, 584, 504, 2]
+// Dependencies: [1208, 1207, 1209, 1246, 1097, 1254, 5021, 1211, 584, 504, 2]
 
 // Module 1253 (CustomThemeMobileStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -9,7 +9,7 @@ import DispatcherDefault from "Dispatcher" /* 584 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1254 */;
-import isPerModeThemingActive from "isPerModeThemingActive" /* 5018 */;
+import isPerModeThemingActive from "isPerModeThemingActive" /* 5021 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1208 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1209 */;
@@ -98,7 +98,7 @@ class CustomThemeMobileStore extends PersistedStore {
       obj = { theme, customTheme: prop };
       const obj2 = { theme, customTheme: prop };
     } else {
-      obj = { theme: "toCharArray$esjava$1", customTheme: "Symbol" };
+      obj = { theme: "r", customTheme: "emoji" };
     }
     return obj;
   }

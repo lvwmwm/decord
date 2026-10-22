@@ -1,14 +1,14 @@
-// Module ID: 10596
-// Function ID: 10597
+// Module ID: 10608
+// Function ID: 10609
 // Name: useGameMentionsAsPlainText
-// Dependencies: [19, 2022, 1392, 5964, 558, 576, 7383, 2033, 8557, 1128, 504, 2]
+// Dependencies: [19, 2022, 1392, 5971, 558, 576, 7390, 2033, 8566, 1128, 504, 2]
 
-// Module 10596 (useGameMentionsAsPlainText)
+// Module 10608 (useGameMentionsAsPlainText)
 import StringUtils from "StringUtils" /* 2033 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2022 */;
 import UserStore from "UserStore" /* 1392 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5964 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -69,9 +69,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameMen
         if (currentUser != null) {
           nsfwAllowed = currentUser.nsfwAllowed;
         }
-        return closure_0.replace(metroRequire, (arg0, gameId) => {
+        return closure_0.replace(metroRequire, (arg0, arg1) => {
           let stringResult;
-          game = game.getGame(gameId);
+          game = game.getGame(arg1);
           const obj = closure_2_0(length[8]);
           if (obj.isGameProfileObscured(game, nsfwAllowed)) {
             const intl2 = tmp2(tmp3[9]).intl;
@@ -126,9 +126,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameMen
         if (currentUser != null) {
           nsfwAllowed = currentUser.nsfwAllowed;
         }
-        return closure_0.replace(metroRequire, (arg0, gameId) => {
+        return closure_0.replace(metroRequire, (arg0, arg1) => {
           let stringResult;
-          game = game.getGame(gameId);
+          game = game.getGame(arg1);
           const obj = closure_2_0(memo[8]);
           if (obj.isGameProfileObscured(game, nsfwAllowed)) {
             const intl2 = tmp2(tmp3[9]).intl;

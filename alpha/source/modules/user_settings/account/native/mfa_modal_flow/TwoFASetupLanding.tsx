@@ -1,21 +1,21 @@
-// Module ID: 15928
-// Function ID: 15929
+// Module ID: 15970
+// Function ID: 15971
 // Name: TwoFASetupLanding
-// Dependencies: [19, 17, 21, 4966, 558, 576, 15929, 5651, 15930, 5216, 1128, 7200, 15925, 2]
+// Dependencies: [19, 17, 21, 4969, 558, 576, 15971, 5655, 15972, 5220, 1128, 7207, 15967, 2]
 
-// Module 15928 (TwoFASetupLanding)
+// Module 15970 (TwoFASetupLanding)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import FastImageDefault from "FastImage" /* 5651 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7200 */;
-import TwoFASetupModal from "TwoFASetupModal" /* 15925 */;
-import TwoFASetupStyles from "TwoFASetupStyles" /* 15929 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15930 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import FastImageDefault from "FastImage" /* 5655 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7207 */;
+import TwoFASetupModal from "TwoFASetupModal" /* 15967 */;
+import TwoFASetupStyles from "TwoFASetupStyles" /* 15971 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15972 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetupLa
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl3.t["9E74Dx"]) };
-    const Heading = tmp(5216).Heading;
+    const Heading = tmp(5220).Heading;
     intl = tmp(1128).intl;
     const tmp13 = React3(Heading, obj4);
     cResult[2] = tmp13;
@@ -98,7 +98,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetupLa
         }
         const obj6 = { children: React3(View, obj7) };
         obj7 = { style: container, children: tmp20 };
-        const TwoFASetupModalScreen = tmp(15925).TwoFASetupModalScreen;
+        const TwoFASetupModalScreen = tmp(15967).TwoFASetupModalScreen;
         const tmp26 = React3(TwoFASetupModalScreen, obj6);
         cResult[13] = tmp4.container;
         cResult[14] = tmp20;

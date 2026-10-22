@@ -1,8 +1,8 @@
-// Module ID: 6009
-// Function ID: 6010
+// Module ID: 6016
+// Function ID: 6017
 // Dependencies: [2]
 
-// Module 6009
+// Module 6016
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/card-disco.png.js");

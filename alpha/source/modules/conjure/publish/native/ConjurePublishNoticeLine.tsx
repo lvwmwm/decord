@@ -1,18 +1,18 @@
-// Module ID: 12295
-// Function ID: 12296
+// Module ID: 12321
+// Function ID: 12322
 // Name: ConjurePublishNoticeLine
-// Dependencies: [19, 21, 558, 576, 12291, 12296, 1128, 12225, 5216, 12297, 3830, 5192, 12298, 2]
+// Dependencies: [19, 21, 558, 576, 12315, 12322, 1128, 12248, 5220, 12323, 3830, 5196, 12324, 2]
 
-// Module 12295 (ConjurePublishNoticeLine)
+// Module 12321 (ConjurePublishNoticeLine)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5192 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import conjurePublishCard from "conjurePublishCard" /* 12225 */;
-import useConjurePublishedAppNameDefault from "useConjurePublishedAppName" /* 12291 */;
-import useConjurePublishedServerNameDefault from "useConjurePublishedServerName" /* 12296 */;
-import useConjurePatchNotesLink from "useConjurePatchNotesLink" /* 12297 */;
-import ConjurePublishNotesSheet from "ConjurePublishNotesSheet" /* 12298 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5196 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import conjurePublishCard from "conjurePublishCard" /* 12248 */;
+import useConjurePublishedAppNameDefault from "useConjurePublishedAppName" /* 12315 */;
+import useConjurePublishedServerNameDefault from "useConjurePublishedServerName" /* 12322 */;
+import useConjurePatchNotesLink from "useConjurePatchNotesLink" /* 12323 */;
+import ConjurePublishNotesSheet from "ConjurePublishNotesSheet" /* 12324 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

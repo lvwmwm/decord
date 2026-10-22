@@ -1,20 +1,20 @@
-// Module ID: 9478
-// Function ID: 9479
+// Module ID: 9489
+// Function ID: 9490
 // Name: PromotionsStore
-// Dependencies: [1246, 9479, 1392, 9480, 9516, 504, 9517, 584, 2]
+// Dependencies: [1246, 9490, 1392, 9491, 9527, 504, 9528, 584, 2]
 
-// Module 9478 (PromotionsStore)
+// Module 9489 (PromotionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import selectActiveMarketingComponentDefault from "selectActiveMarketingComponent" /* 9517 */;
+import selectActiveMarketingComponentDefault from "selectActiveMarketingComponent" /* 9528 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import PromotionRecord from "PromotionRecord" /* 9479 */;
+import PromotionRecord from "PromotionRecord" /* 9490 */;
 import UserStore from "UserStore" /* 1392 */;
-import MarketingComponentRecord from "MarketingComponentRecord" /* 9480 */;
+import MarketingComponentRecord from "MarketingComponentRecord" /* 9491 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let closure_12, componentType, hasBogoReward;
+let closure_12, hasBogoReward;
 
 function createEmptyPromotionsByType() {
   return { [closure_1_0(closure_1_2[4]).PromotionTypes.THIRD_PARTY]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.BOGO]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.THIRD_PARTY_DIRECT_FULFILLMENT]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.MARKETING_MOMENT]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.THIRD_PARTY_INBOUND]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.THIRD_PARTY_OUTBOUND]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.GIFT_PROMOTION]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]: {} };
@@ -62,7 +62,7 @@ let locale = null;
 const authStore2 = createEmptyPromotionsByType();
 let closure_13 = null;
 let map = new Map();
-const authStore3 = null;
+let componentType = null;
 let closure_16 = [];
 let c17 = false;
 const PersistedStore = get_initializedDefault.PersistedStore;

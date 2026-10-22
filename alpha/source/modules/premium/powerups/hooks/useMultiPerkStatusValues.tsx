@@ -1,13 +1,13 @@
-// Module ID: 13382
-// Function ID: 13383
+// Module ID: 13418
+// Function ID: 13419
 // Name: useMultiPerkStatusValues
-// Dependencies: [5164, 558, 576, 13309, 1128, 2568, 2]
+// Dependencies: [5168, 558, 576, 13345, 1128, 2568, 2]
 
-// Module 13382 (useMultiPerkStatusValues)
+// Module 13418 (useMultiPerkStatusValues)
 import react from "react" /* 576 */;
 import _modDef2568 from "module_2568" /* 2568 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5164 */;
-import usePowerupActiveStatus from "usePowerupActiveStatus" /* 13309 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5168 */;
+import usePowerupActiveStatus from "usePowerupActiveStatus" /* 13345 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

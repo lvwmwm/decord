@@ -1,10 +1,10 @@
-// Module ID: 6763
-// Function ID: 6764
+// Module ID: 6770
+// Function ID: 6771
 // Name: GuildScheduledEventStore
 // Dependencies: [502, 4881, 4827, 4896, 12, 11, 504, 584, 2]
 // Exports: eventScheduledToStartWithin, isEventUpcoming, isGuildEventEnded, isGuildScheduledEventActive, scheduledEventSort
 
-// Module 6763 (GuildScheduledEventStore)
+// Module 6770 (GuildScheduledEventStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -584,19 +584,6 @@ let obj2 = {
       closure_9 = closure_9 + 1;
       return true;
     }
-  },
-  GUILD_SCHEDULED_EVENT_EXCEPTIONS_DELETE: function handleGuildScheduledEventExceptionsDelete(eventId) {
-    const value = secondaryIndexMap.get(eventId.eventId);
-    let flag = null != value;
-    const obj = secondaryIndexMap;
-    if (flag) {
-      const obj2 = { guild_scheduled_event_exceptions: [] };
-      const merged = Object.assign(value);
-      const result = obj.set(obj2.id, obj2);
-      closure_9 = closure_9 + 1;
-      flag = true;
-    }
-    return flag;
   },
   LOGOUT: function handleLogout() {
     secondaryIndexMap.clear();

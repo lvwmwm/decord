@@ -1,30 +1,30 @@
-// Module ID: 13651
-// Function ID: 13652
+// Module ID: 13687
+// Function ID: 13688
 // Name: MessagePreviewText
-// Dependencies: [19, 17, 4821, 13643, 1098, 21, 4966, 1385, 587, 558, 576, 13652, 13653, 13642, 5216, 5651, 1105, 13654, 6345, 13657, 13658, 1109, 5584, 1128, 5625, 2]
+// Dependencies: [19, 17, 4821, 13679, 1098, 21, 4969, 1385, 587, 558, 576, 13688, 13689, 13678, 5220, 5655, 1105, 13690, 6352, 13693, 13694, 1109, 5588, 1128, 5629, 2]
 
-// Module 13651 (MessagePreviewText)
+// Module 13687 (MessagePreviewText)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
 import MessageEmbedTypes from "MessageEmbedTypes" /* 1109 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import isForwardMessageDefault from "isForwardMessage" /* 5584 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5625 */;
-import FastImageDefault from "FastImage" /* 5651 */;
-import useMessageAuthor from "useMessageAuthor" /* 6345 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 13642 */;
-import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 13652 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 13654 */;
-import usePreviewableMediaText from "usePreviewableMediaText" /* 13657 */;
-import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 13658 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import isForwardMessageDefault from "isForwardMessage" /* 5588 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5629 */;
+import FastImageDefault from "FastImage" /* 5655 */;
+import useMessageAuthor from "useMessageAuthor" /* 6352 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 13678 */;
+import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 13688 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 13690 */;
+import usePreviewableMediaText from "usePreviewableMediaText" /* 13693 */;
+import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 13694 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 13643 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 13679 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1385 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -39,7 +39,7 @@ let obj5;
 let obj6;
 let size;
 let tmp;
-const ChannelRowPreview2 = tmp(13653);
+const ChannelRowPreview2 = tmp(13689);
 const View = react_native.View;
 ({ IN_APP_NOTIFICATION_MAX_HEIGHT: metroRequire, NOTIFICATION_PREVIEW_LINE_CLAMP: metroImportDefault } = InAppNotificationConstants);
 const Fonts = Constants.Fonts;
@@ -55,7 +55,7 @@ obj4 = { borderRadius: nativeDefault.radii.sm, paddingTop: nativeDefault.space.P
 const createStyles2 = createStyles.createStyles;
 obj5 = { width: 4, marginTop: -nativeDefault.space.PX_8, marginBottom: -nativeDefault.space.PX_8, alignSelf: "stretch" };
 obj6 = { flex: 1, gap: nativeDefault.space.PX_4, paddingVertical: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_8 };
-size = { borderRadius: nativeDefault.radii.xs, overflow: "hidden", height: 60, width: "end" };
+size = { borderRadius: nativeDefault.radii.xs, overflow: "hidden", height: 60, width: "enabled" };
 let closure_11 = createStyles2(obj3);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeMessagePreviewContent(arg0) {
@@ -281,7 +281,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmbedC
       let tmp15 = null != name;
       if (tmp15) {
         const obj2 = { variant: "text-xxs/normal", color: "text-subtle", lineClamp: 1, children: name };
-        tmp15 = metroImportAll(tmp(5216).Text, obj2);
+        tmp15 = metroImportAll(tmp(5220).Text, obj2);
       }
       cResult[5] = name;
       cResult[6] = tmp15;
@@ -293,7 +293,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmbedC
       let tmp18 = null != name1;
       if (tmp18) {
         const obj3 = { variant: "text-xs/medium", color: "text-default", lineClamp: 1, children: name1 };
-        tmp18 = metroImportAll(tmp(5216).Text, obj3);
+        tmp18 = metroImportAll(tmp(5220).Text, obj3);
       }
       cResult[7] = name1;
       cResult[8] = tmp18;
@@ -311,7 +311,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmbedC
         let tmp24 = null != embed.rawDescription;
         if (tmp24) {
           const obj4 = { variant: "text-xs/medium", color: "text-default", lineClamp: 3, children: embed.rawDescription };
-          tmp24 = metroImportAll(tmp(5216).Text, obj4);
+          tmp24 = metroImportAll(tmp(5220).Text, obj4);
         }
         cResult[12] = embed.rawDescription;
         cResult[13] = tmp24;
@@ -378,7 +378,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmbedC
     let tmp22Result = null != rawTitle;
     if (tmp22Result) {
       let num8 = 1;
-      const Text = tmp(5216).Text;
+      const Text = tmp(5220).Text;
       const tmp22 = metroImportAll;
       if (null == name && null == name1) {
         num8 = 3;
@@ -500,7 +500,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePrevi
   const tmpResult = usePreviewableMedia;
   const previewableMedia = tmpResult.usePreviewableMedia(message);
   let tmp6 = null;
-  const useNullableMessageAuthor = tmp(6345).useNullableMessageAuthor;
+  const useNullableMessageAuthor = tmp(6352).useNullableMessageAuthor;
   useMessageAuthor;
   if (tmp4) {
     tmp6 = message;
@@ -650,7 +650,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePrevi
               return tmp;
             }
           }
-          tmp15 = tmp16 === tmp(13654).PreviewableMediaTypes.GIF;
+          tmp15 = tmp16 === tmp(13690).PreviewableMediaTypes.GIF;
         }
         if (previewableMedia.length > 0) {
           let tmp23;
@@ -777,7 +777,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePrevi
   } else if (isForwardMessageDefault(message)) {
     let tmp30 = previewableMedia.length > 0;
     if (tmp30) {
-      tmp30 = previewableMedia[0].type === tmp(13654).PreviewableMediaTypes.GIF;
+      tmp30 = previewableMedia[0].type === tmp(13690).PreviewableMediaTypes.GIF;
     }
     if (previewableMedia.length > 0) {
       let formatResult;
@@ -800,7 +800,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePrevi
       InAppNotificationUtils;
       if (null != channel) {
         const obj9 = { channel, message, color: "text-default", layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COZY, variant: tmp25, muted: false, lineClamp: metroImportDefault };
-        const ChannelRowPreview = tmp(13653).ChannelRowPreview;
+        const ChannelRowPreview = tmp(13689).ChannelRowPreview;
         return metroImportAll(ChannelRowPreview, obj9);
       }
     }
@@ -817,7 +817,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePrevi
         const tmp18 = metroImportAll;
         if (tmp18Result) {
           const obj12 = { variant: "redesign/message-preview/medium", color: "text-link", lineClamp: metroImportDefault, children: secondaryText };
-          tmp18Result = tmp18(tmp(5216).Text, obj12);
+          tmp18Result = tmp18(tmp(5220).Text, obj12);
         }
         const obj13 = { children: items2 };
         items2[1] = tmp18Result;

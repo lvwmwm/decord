@@ -1,14 +1,14 @@
-// Module ID: 8751
-// Function ID: 8752
+// Module ID: 8760
+// Function ID: 8761
 // Name: MediaModalTiktok
-// Dependencies: [32, 19, 21, 8752, 558, 576, 6639, 8717, 8718, 8719, 2]
+// Dependencies: [32, 19, 21, 8761, 558, 576, 6646, 8726, 8727, 8728, 2]
 // Exports: createTiktokVideoControls
 
-// Module 8751 (MediaModalTiktok)
+// Module 8760 (MediaModalTiktok)
 import Fragment from "Fragment" /* 21 */;
-import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8717 */;
-import useVideoControls from "useVideoControls" /* 8718 */;
-import MediaModalWebViewBase from "MediaModalWebViewBase" /* 8752 */;
+import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8726 */;
+import useVideoControls from "useVideoControls" /* 8727 */;
+import MediaModalWebViewBase from "MediaModalWebViewBase" /* 8761 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -453,17 +453,17 @@ export const createTiktokVideoControls = function createTiktokVideoControls() {
       if (c5 !== arg0) {
         c5 = arg0;
         let str = "play";
-        const tmp8 = ref;
+        const tmp = ref;
         if (arg0) {
           str = "pause";
         }
         const _JSON = JSON;
         obj = { type: str };
         const merged = Object.assign(obj);
-        const current = tmp8.current;
+        const current = tmp.current;
         if (current != null) {
           const _HermesInternal = HermesInternal;
-          current.injectJavaScript("\n    window.postMessage(" + tmp5 + ", '*')\n  ");
+          current.injectJavaScript("\n    window.postMessage(" + tmp6 + ", '*')\n  ");
         }
       }
     },

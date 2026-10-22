@@ -1,9 +1,9 @@
-// Module ID: 8630
-// Function ID: 8631
+// Module ID: 8639
+// Function ID: 8640
 // Name: ProductDetailsActionSheet
-// Dependencies: [109, 32, 19, 17, 7627, 1089, 1087, 1098, 21, 3, 4966, 587, 5232, 5020, 558, 576, 4973, 1128, 7042, 1995, 8631, 8632, 8629, 7638, 9754, 7255, 7230, 14338, 14339, 9318, 1275, 9319, 1267, 504, 14340, 9381, 9384, 7639, 9386, 9387, 9389, 14341, 14351, 14362, 1202, 5251, 14363, 14374, 5247, 9434, 10448, 8687, 5226, 14377, 8627, 2]
+// Dependencies: [109, 32, 19, 17, 7634, 1089, 1087, 1098, 21, 3, 4969, 587, 5236, 5023, 558, 576, 4976, 1128, 7049, 1995, 8640, 8641, 8638, 7645, 9766, 7262, 7237, 14381, 14382, 9329, 1275, 9330, 1267, 504, 14383, 9392, 9395, 7646, 9397, 9398, 9400, 14384, 14394, 14405, 1202, 5255, 14406, 14417, 5251, 9445, 10460, 8696, 5230, 14420, 8636, 2]
 
-// Module 8630 (ProductDetailsActionSheet)
+// Module 8639 (ProductDetailsActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,24 +12,24 @@ import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import Constants2 from "Constants" /* 1098 */;
 import intl4 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import components_Button_Button from "components/Button/Button" /* 5226 */;
-import ButtonConstants from "ButtonConstants" /* 5232 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7638 */;
-import ShopStandalonePdpMobileExperiment from "ShopStandalonePdpMobileExperiment" /* 8627 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8632 */;
-import generated_NoResults from "generated/NoResults" /* 8687 */;
-import useCollectiblesShopProducts from "useCollectiblesShopProducts" /* 9434 */;
-import useFetchCollectiblesCategoriesAndPurchases from "useFetchCollectiblesCategoriesAndPurchases" /* 10448 */;
-import ProductDetailsActionSheetSkeletonDefault from "ProductDetailsActionSheetSkeleton" /* 14377 */;
+import components_Button_Button from "components/Button/Button" /* 5230 */;
+import ButtonConstants from "ButtonConstants" /* 5236 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7645 */;
+import ShopStandalonePdpMobileExperiment from "ShopStandalonePdpMobileExperiment" /* 8636 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8641 */;
+import generated_NoResults from "generated/NoResults" /* 8696 */;
+import useCollectiblesShopProducts from "useCollectiblesShopProducts" /* 9445 */;
+import useFetchCollectiblesCategoriesAndPurchases from "useFetchCollectiblesCategoriesAndPurchases" /* 10460 */;
+import ProductDetailsActionSheetSkeletonDefault from "ProductDetailsActionSheetSkeleton" /* 14420 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import "react";
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7627 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7634 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
-import native_mod from "native" /* 5020 */;
+import createStyles_mod from "createStyles" /* 4969 */;
+import native_mod from "native" /* 5023 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -51,8 +51,8 @@ let rect;
 let rect1;
 let size;
 let tmp;
-const Sheet_BottomSheet = tmp(5247);
-const CollectiblesAnalyticsContext = tmp(9318);
+const Sheet_BottomSheet = tmp(5251);
+const CollectiblesAnalyticsContext = tmp(9329);
 let closure_3 = ["shopAnalyticsContext"];
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
@@ -88,9 +88,9 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
   const onTrackPress = handlePreviewPress.onTrackPress;
   const tmp4 = closure_19();
   dependencyMap = tmp4;
-  const obj2 = handlePreviewPress(5020);
+  const obj2 = handlePreviewPress(5023);
   const theme = obj2.useThemeContext().theme;
-  const obj3 = handlePreviewPress(4973);
+  const obj3 = handlePreviewPress(4976);
   const isThemeLightResult = obj3.isThemeLight(theme);
   closure_3 = tmp6;
   const tmp7 = isThemeLightResult ? tmp4.previewProfileButtonLight : tmp4.previewProfileButtonDark;
@@ -117,7 +117,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
               const intl = tmp(1128).intl;
               const stringResult = intl.string(handlePreviewPress(1128).t["3Qcx6K"]);
               const obj4 = { size: "md", color: onTrackPress(587).colors.INTERACTIVE_ICON_DEFAULT };
-              const EyeIcon = tmp(7042).EyeIcon;
+              const EyeIcon = tmp(7049).EyeIcon;
               const tmp17 = closure_15(EyeIcon, obj4);
               cResult[9] = stringResult;
               cResult[10] = tmp17;
@@ -178,9 +178,9 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
   const onTrackPress = handlePreviewPress.onTrackPress;
   const tmp = closure_19();
   dependencyMap = tmp;
-  const obj = handlePreviewPress(5020);
+  const obj = handlePreviewPress(5023);
   const theme = obj.useThemeContext().theme;
-  const obj2 = handlePreviewPress(4973);
+  const obj2 = handlePreviewPress(4976);
   const isThemeLightResult = obj2.isThemeLight(theme);
   closure_3 = theme === ThemeTypes.ONYX;
   let closure_4 = isThemeLightResult ? tmp.previewProfileButtonLight : tmp.previewProfileButtonDark;
@@ -206,7 +206,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
   };
   intl = tmp2(1128).intl;
   obj4 = { size: "md", color: onTrackPress(587).colors.INTERACTIVE_ICON_DEFAULT };
-  EyeIcon = tmp2(7042).EyeIcon;
+  EyeIcon = tmp2(7049).EyeIcon;
   return closure_15(closure_9, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -1003,7 +1003,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
   let tmp48;
   let tmp50;
   let type;
-  const f100260 = () => {
+  const f100716 = () => {
     let tmp;
     if (closure_6) {
       const first = require.items[0];
@@ -1105,8 +1105,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
   const tmp32Result = closure_21(obj7);
   const tmp34 = product.type === require("CollectiblesItemType").CollectiblesItemType.BUNDLE;
   react = tmp34;
-  [type, c7] = obj.useState(f100260);
-  _slicedToArray(obj.useState(f100260), 2);
+  [type, c7] = obj.useState(f100716);
+  _slicedToArray(obj.useState(f100716), 2);
   const tmp36 = c7((type) => {
     _undefined(type);
     _undefined2(type.type);
@@ -1292,9 +1292,9 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
       }
     }
   }
-  const obj2 = { scrollable: true, startExpanded: true, onExpand: tmp6, onDismiss: tmp7, ref, children: authStore3(closure_22, { ref: ref1, product, initialVariantIndex, analyticsLocations, stageCollectibleChangeForEditProfile }) };
+  const obj2 = { scrollable: true, startExpanded: true, onExpand: tmp6, onDismiss: tmp7, ref, children: closure_15(closure_22, { ref: ref1, product, initialVariantIndex, analyticsLocations, stageCollectibleChangeForEditProfile }) };
   BottomSheet = Sheet_BottomSheet.BottomSheet;
-  const tmp9 = authStore3(BottomSheet, obj2);
+  const tmp9 = closure_15(BottomSheet, obj2);
   cResult[2] = analyticsLocations;
   cResult[3] = initialVariantIndex;
   cResult[4] = product;
@@ -1329,10 +1329,10 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
       return notifyDismissedResult;
     },
     ref,
-    children: authStore3(closure_22, { ref: ref1, product, initialVariantIndex, analyticsLocations, stageCollectibleChangeForEditProfile })
+    children: closure_15(closure_22, { ref: ref1, product, initialVariantIndex, analyticsLocations, stageCollectibleChangeForEditProfile })
   };
   BottomSheet = Sheet_BottomSheet.BottomSheet;
-  return authStore3(BottomSheet, obj);
+  return closure_15(BottomSheet, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManagedProductDetailsActionSheetInner(skuId) {
@@ -1456,10 +1456,10 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
           return skuId.skuId === skuId;
         }
       }
-      const obj3 = { Illustration: generated_NoResults.NoResults, body: tmp17, children: authStore3(components_Button_Button.Button, obj4) };
+      const obj3 = { Illustration: generated_NoResults.NoResults, body: tmp17, children: closure_15(components_Button_Button.Button, obj4) };
       const EmptyState = tmp(1202).EmptyState;
       obj4 = { text: tmp19, onPress: retry };
-      const tmp22 = authStore3(EmptyState, obj3);
+      const tmp22 = closure_15(EmptyState, obj3);
       cResult[13] = retry;
       cResult[14] = tmp22;
     } else {
@@ -1481,7 +1481,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
           return skuId.skuId === skuId;
         }
       }
-      const tmp16 = authStore3(ProductDetailsActionSheetSkeletonDefault, {});
+      const tmp16 = closure_15(ProductDetailsActionSheetSkeletonDefault, {});
       cResult[15] = tmp16;
     } else {
       class T {
@@ -1509,12 +1509,12 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
   const initialVariantIndex = skuId.initialVariantIndex;
   const tmp = skuId;
   ({ analyticsLocations, stageCollectibleChangeForEditProfile } = skuId);
-  let obj = skuId(9434);
+  let obj = skuId(9445);
   const collectiblesShopProduct = obj.useCollectiblesShopProduct(skuId, { needsCategory: false, seedCategoryStore: true });
   const product = collectiblesShopProduct.product;
   dependencyMap = product;
   ({ state, retry } = collectiblesShopProduct);
-  const obj2 = skuId(10448);
+  const obj2 = skuId(10460);
   const getOrFetchPurchases = obj2.useGetOrFetchPurchases();
   ({ hasPreviouslyFetched, fetchPurchasesError } = getOrFetchPurchases);
   const ref = react.useRef(null);
@@ -1551,21 +1551,21 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
         ref,
         children: tmp10
       };
-      return tmp8(tmp(5247).BottomSheet, obj4);
+      return tmp8(tmp(5251).BottomSheet, obj4);
     }
   }
   if ("error" === state) {
-    const obj5 = { Illustration: tmp(8687).NoResults, body: intl.string(tmp(1128).t.eAn6z2), children: closure_15(Button, obj6) };
+    const obj5 = { Illustration: tmp(8696).NoResults, body: intl.string(tmp(1128).t.eAn6z2), children: closure_15(Button, obj6) };
     const EmptyState = tmp(1202).EmptyState;
     intl = tmp(1128).intl;
     obj6 = { text: intl2.string(tmp(1128).t["+hivLW"]), onPress: retry };
-    Button = tmp(5226).Button;
+    Button = tmp(5230).Button;
     intl2 = tmp(1128).intl;
     tmp13 = closure_15(EmptyState, obj5);
     tmp11 = closure_15;
   } else {
     tmp11 = closure_15;
-    tmp13 = closure_15(initialVariantIndex(14377), {});
+    tmp13 = closure_15(initialVariantIndex(14420), {});
   }
   tmp8 = tmp11;
   tmp10 = tmp13;
@@ -1594,7 +1594,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
     }
     const obj3 = { skuId, initialVariantIndex: null, analyticsLocations: null, stageCollectibleChangeForEditProfile: null };
     ({ initialVariantIndex: obj4.initialVariantIndex, analyticsLocations: obj4.analyticsLocations, stageCollectibleChangeForEditProfile: obj4.stageCollectibleChangeForEditProfile } = skuId);
-    const tmp15 = authStore3(closure_24, obj3);
+    const tmp15 = closure_15(closure_24, obj3);
     cResult[0] = skuId.analyticsLocations;
     cResult[1] = skuId.initialVariantIndex;
     cResult[2] = skuId.stageCollectibleChangeForEditProfile;
@@ -1608,7 +1608,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
       if (cResult[5] !== skuId) {
         const obj6 = {};
         const merged = Object.assign(skuId);
-        const tmp11 = authStore3(closure_23, obj6);
+        const tmp11 = closure_15(closure_23, obj6);
         cResult[5] = skuId;
         cResult[6] = tmp11;
         tmp5 = tmp11;
@@ -1627,7 +1627,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
   const obj = ShopStandalonePdpMobileExperiment;
   if (obj.useIsShopStandalonePdpMobileEnabled("product_details_action_sheet")) {
     const tmp10 = closure_24;
-    const tmp9 = authStore3;
+    const tmp9 = closure_15;
     if ("skuId" in skuId) {
       skuId = skuId.skuId;
     } else {
@@ -1639,7 +1639,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
   } else if ("product" in skuId) {
     const obj5 = {};
     const merged = Object.assign(skuId);
-    tmp9Result = authStore3(closure_23, obj5);
+    tmp9Result = closure_15(closure_23, obj5);
   } else {
     logger.error("ProductDetailsActionSheet opened with a skuId but no product, and the experiment is disabled");
     tmp9Result = null;
@@ -1671,7 +1671,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductDetai
   if (cResult[3] !== tmp4) {
     const obj2 = {};
     const merged = Object.assign(tmp4);
-    const tmp15 = authStore3(closure_25, obj2);
+    const tmp15 = closure_15(closure_25, obj2);
     cResult[3] = tmp4;
     cResult[4] = tmp15;
     tmp9 = tmp15;
@@ -1685,7 +1685,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductDetai
     }
     return tmp16;
   }
-  const tmp17 = authStore3(CollectiblesAnalyticsContext.CollectiblesAnalyticsProvider, { newValue: tmp5, children: tmp9 });
+  const tmp17 = closure_15(CollectiblesAnalyticsContext.CollectiblesAnalyticsProvider, { newValue: tmp5, children: tmp9 });
   cResult[5] = tmp5;
   cResult[6] = tmp9;
   cResult[7] = tmp17;
@@ -1697,11 +1697,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductDetai
     shopAnalyticsContext = closure_17;
   }
   const merged = Object.assign(shopAnalyticsContext, Object.assign({ shopAnalyticsContext: 0 }));
-  const obj = { newValue: shopAnalyticsContext, children: authStore3(closure_25, obj2) };
+  const obj = { newValue: shopAnalyticsContext, children: closure_15(closure_25, obj2) };
   obj2 = {};
   const CollectiblesAnalyticsProvider = CollectiblesAnalyticsContext.CollectiblesAnalyticsProvider;
   const merged1 = Object.assign(merged);
-  return authStore3(CollectiblesAnalyticsProvider, obj);
+  return closure_15(CollectiblesAnalyticsProvider, obj);
 });
 size = size_mod;
 let result = size.fileFinishedImporting("modules/collectibles/native/ProductDetailsActionSheet.tsx");

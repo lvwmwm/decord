@@ -1,17 +1,17 @@
-// Module ID: 9364
-// Function ID: 9365
+// Module ID: 9375
+// Function ID: 9376
 // Name: ClipView
-// Dependencies: [109, 19, 17, 21, 558, 576, 9365, 9367, 5035, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 9376, 9378, 5038, 2]
 
-// Module 9364 (ClipView)
+// Module 9375 (ClipView)
 import react2 from "react" /* 576 */;
-import ClipViewNativeComponentDefault from "ClipViewNativeComponent" /* 9367 */;
+import ClipViewNativeComponentDefault from "ClipViewNativeComponent" /* 9378 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -20,7 +20,7 @@ let metroImportDefault;
 let metroRequire;
 let obj3;
 let tmp;
-const CutoutBackgroundContext = tmp(9365);
+const CutoutBackgroundContext = tmp(9376);
 let closure_3 = ["children", "cutouts", "style"];
 ({ StyleSheet, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);

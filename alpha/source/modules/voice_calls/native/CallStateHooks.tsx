@@ -1,15 +1,15 @@
-// Module ID: 14521
-// Function ID: 14522
+// Module ID: 14565
+// Function ID: 14566
 // Name: CallStateHooks
-// Dependencies: [6751, 502, 6476, 5696, 1087, 5614, 504, 11499, 2]
+// Dependencies: [6758, 502, 6483, 5700, 1087, 5618, 504, 11516, 2]
 // Exports: default
 
-// Module 14521 (CallStateHooks)
-import CallConstants from "CallConstants" /* 5614 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6751 */;
+// Module 14565 (CallStateHooks)
+import CallConstants from "CallConstants" /* 5618 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6758 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 6476 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5696 */;
+import CallStore from "CallStore" /* 6483 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5700 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let metroImportDefault;
 ({ EMPTY_STRING_SNOWFLAKE_ID: metroImportDefault, RTCConnectionStates: metroImportAll } = Constants);
 const ParticipantTypes = CallConstants.ParticipantTypes;
 let obj = {};
-const merged = Object.assign({ initialized: false, callId: "a" });
+const merged = Object.assign({ initialized: false, callId: "Array" });
 let obj2 = { DISCONNECTED: "disconneted", DISCONNECTING: "disconnecting", CONNECTING: "connecting", RINGING: "ringing", CONNECTED: "connected" };
 const result = size.fileFinishedImporting("modules/voice_calls/native/CallStateHooks.tsx");
 
@@ -64,7 +64,7 @@ export default function _default() {
   }, items1);
   const participants = stateFromStores.getParticipants(tmp);
   let found = participants.filter((type) => type.type !== ParticipantTypes.ACTIVITY && type.user.id !== id);
-  const tmp3 = id(11499)();
+  const tmp3 = id(11516)();
   dependencyMap = tmp3;
   obj2 = require("get initialized");
   const items2 = [RTCConnectionStore];

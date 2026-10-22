@@ -1,20 +1,20 @@
-// Module ID: 12364
-// Function ID: 12365
+// Module ID: 12390
+// Function ID: 12391
 // Name: conjurePlanBot
-// Dependencies: [2000, 12365, 6753, 2]
+// Dependencies: [2000, 12391, 6760, 2]
 // Exports: getConjurePlanBotExchanges, getConjurePlanBotInteraction, getConjurePlanExperienceBotExchanges, getConjurePlanSectionBotExchanges, mergeConjurePlanBotExchanges
 
-// Module 12364 (conjurePlanBot)
+// Module 12390 (conjurePlanBot)
 import Server from "Server" /* 2000 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6753 */;
-import conjurePlanTags from "conjurePlanTags" /* 12365 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6760 */;
+import conjurePlanTags from "conjurePlanTags" /* 12391 */;
 import size from "module_2" /* 2 */;
 
-const f113456 = (bot) => {
+const f113942 = (bot) => {
   const str = bot.bot;
   return "" !== str.trim();
 };
-const f113457 = (item) => {
+const f113943 = (item) => {
   let bot;
   let obj2;
   let user;
@@ -32,7 +32,7 @@ const f113457 = (item) => {
   }
   return obj2;
 };
-const f113458 = (kind) => {
+const f113944 = (kind) => {
   let tmp = "command" === kind.kind;
   if (!tmp) {
     tmp = "user_command" === kind.kind || "message_command" === kind.kind;
@@ -127,14 +127,14 @@ export const getConjurePlanBotInteraction = function getConjurePlanBotInteractio
   return tmp2;
 };
 export const getConjurePlanExperienceBotExchanges = function getConjurePlanExperienceBotExchanges(arr) {
-  const found = arr.filter(f113456);
+  const found = arr.filter(f113942);
   const substr = found.slice(0, 3);
-  return substr.map(f113457);
+  return substr.map(f113943);
 };
 export const mergeConjurePlanBotExchanges = function mergeConjurePlanBotExchanges(arr, arg1) {
   if (0 !== arg1.length) {
     let items;
-    if (!arr.some(f113458)) {
+    if (!arr.some(f113944)) {
       items = [];
       items[HermesBuiltin.arraySpread(items, arr.slice(0, 2), 0)] = arg1[0];
     }
@@ -151,15 +151,15 @@ export const getConjurePlanSectionBotExchanges = function getConjurePlanSectionB
       example_exchanges = [];
     }
     let arr2 = botExchanges;
-    const found = example_exchanges.filter(f113456);
+    const found = example_exchanges.filter(f113942);
     const substr = found.slice(0, 3);
-    const mapped = substr.map(f113457);
+    const mapped = substr.map(f113943);
     if (mapped.length > 0) {
       arr2 = mapped;
     }
     if (0 !== conjurePlanCommandExchanges.length) {
       let items;
-      if (!arr2.some(f113458)) {
+      if (!arr2.some(f113944)) {
         items = [];
         let tmp2 = items;
         items[HermesBuiltin.arraySpread(items, arr2.slice(0, 2), 0)] = conjurePlanCommandExchanges[0];

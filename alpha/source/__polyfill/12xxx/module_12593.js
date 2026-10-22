@@ -1,49 +1,48 @@
 // Module ID: 12593
 // Function ID: 12594
-// Dependencies: [12594]
-// Exports: isNodeEnv, loadModule
+// Dependencies: []
+// Exports: parseCookie
 
 // Module 12593
-import _mod12594 from "module_12594" /* 12594 */;
 
-function dynamicRequire(require, arg1) {
-  return require.require(arg1);
-}
-
-export { dynamicRequire };
-export const isNodeEnv = function isNodeEnv() {
-  const obj = _mod12594;
-  let tmp2 = !obj.isBrowserBundle();
-  obj.isBrowserBundle();
-  if (tmp2) {
-    const _Object = Object;
-    const _process = process;
-    let num = 0;
-    const call = toString.call;
-    if (typeof process !== "undefined") {
-      num = process;
+export const parseCookie = function parseCookie(arr) {
+  const obj = {};
+  let num = 0;
+  if (0 < arr.length) {
+    const index = arr.indexOf("=", num);
+    if (-1 !== index) {
+      let length = arr.indexOf(";", num);
+      if (-1 === length) {
+        length = arr.length;
+      } else {
+        let sum;
+        if (length < index) {
+          sum = arr.lastIndexOf(";", index - 1) + 1;
+        }
+        num = sum;
+      }
+      const str = arr.slice(num, index);
+      const trimmed = str.trim();
+      if (undefined === obj[trimmed]) {
+        const str2 = arr.slice(index + 1, length);
+        const trimmed1 = str2.trim();
+        let substr = trimmed1;
+        if (34 === trimmed1.charCodeAt(0)) {
+          substr = trimmed1.slice(1, -1);
+        }
+        try {
+          let decodeURIComponentResult = substr;
+          if (-1 !== substr.indexOf("%")) {
+            const _decodeURIComponent = decodeURIComponent;
+            decodeURIComponentResult = decodeURIComponent(substr);
+          }
+          obj[trimmed] = decodeURIComponentResult;
+        } catch (err) {
+          obj[trimmed] = substr;
+        }
+      }
+      sum = length + 1;
     }
-    tmp2 = "[object process]" === call(num);
   }
-  return tmp2;
-};
-export const loadModule = function loadModule(arg0) {
-  let tmp = arg1;
-  if (arg1 === undefined) {
-    tmp = module;
-  }
-  let tmp2;
-  try {
-    tmp2 = dynamicRequire(tmp, arg0);
-  } catch (err) {
-  }
-  const tmp4 = tmp2;
-  if (!tmp4) {
-    try {
-      const _HermesInternal = HermesInternal;
-      tmp2 = dynamicRequire(tmp, "" + dynamicRequire(tmp, "process").cwd() + "/node_modules/" + arg0);
-    } catch (err) {
-    }
-  }
-  return tmp2;
+  return obj;
 };

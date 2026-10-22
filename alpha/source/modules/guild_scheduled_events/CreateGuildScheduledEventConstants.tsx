@@ -1,9 +1,9 @@
-// Module ID: 8850
-// Function ID: 8851
+// Module ID: 8859
+// Function ID: 8860
 // Name: CreateGuildScheduledEventConstants
 // Dependencies: [2]
 
-// Module 8850 (CreateGuildScheduledEventConstants)
+// Module 8859 (CreateGuildScheduledEventConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/CreateGuildScheduledEventConstants.tsx");

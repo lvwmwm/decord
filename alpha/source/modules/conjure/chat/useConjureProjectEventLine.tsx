@@ -1,10 +1,10 @@
-// Module ID: 12290
-// Function ID: 12291
+// Module ID: 12314
+// Function ID: 12315
 // Name: useConjureProjectEventLine
-// Dependencies: [19, 4843, 1392, 558, 576, 12274, 504, 5015, 12291, 1128, 3830, 2]
+// Dependencies: [19, 4843, 1392, 558, 576, 12297, 504, 5018, 12315, 1128, 3830, 2]
 
-// Module 12290 (useConjureProjectEventLine)
-import conjureMessageAuthors from "conjureMessageAuthors" /* 12274 */;
+// Module 12314 (useConjureProjectEventLine)
+import conjureMessageAuthors from "conjureMessageAuthors" /* 12297 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import UserStore from "UserStore" /* 1392 */;

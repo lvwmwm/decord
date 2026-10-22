@@ -1,20 +1,20 @@
-// Module ID: 7747
-// Function ID: 7748
+// Module ID: 7756
+// Function ID: 7757
 // Name: QuestDataUtils
-// Dependencies: [7748, 2068, 7750, 7751, 6689, 6692, 1405, 7757, 7749, 1257, 2]
+// Dependencies: [7757, 2068, 7759, 7760, 6696, 6699, 1405, 7766, 7758, 1257, 2]
 // Exports: captureQuestsException, earnedDecisionIsValid, findQuestOrReplacement, getAdContext, getAdDecisionData, getAdMetadataSealed, getAdProvenanceMetadataSealed, getAdTrafficMetadataSealed, getBountyByPlacementAndId, getIsQuestExpiredButWithinThirtyDayLookback, getQuestFormattedDate, getQuestPlacementFromQuestContent, hasUnclaimedReward, isBillableQuestContent, isBountyQuestHomePlacement, isDismissed, isDismissible
 
-// Module 7747 (QuestDataUtils)
+// Module 7756 (QuestDataUtils)
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
-import QuestTypes from "QuestTypes" /* 6692 */;
-import AdDecisionUtils from "AdDecisionUtils" /* 7749 */;
-import QuestExpirationUtils from "QuestExpirationUtils" /* 7757 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7748 */;
+import QuestTypes from "QuestTypes" /* 6699 */;
+import AdDecisionUtils from "AdDecisionUtils" /* 7758 */;
+import QuestExpirationUtils from "QuestExpirationUtils" /* 7766 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7757 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
-import BountyStore from "BountyStore" /* 7750 */;
-import QuestStore from "QuestStore" /* 7751 */;
-import QuestConstants from "QuestConstants" /* 6689 */;
+import BountyStore from "BountyStore" /* 7759 */;
+import QuestStore from "QuestStore" /* 7760 */;
+import QuestConstants from "QuestConstants" /* 6696 */;
 import size from "module_2" /* 2 */;
 
 let map, map1;

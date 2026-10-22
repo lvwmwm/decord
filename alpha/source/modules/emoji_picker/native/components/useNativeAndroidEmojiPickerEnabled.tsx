@@ -1,10 +1,10 @@
-// Module ID: 9813
-// Function ID: 9814
+// Module ID: 9825
+// Function ID: 9826
 // Name: useNativeAndroidEmojiPickerEnabled
 // Dependencies: [502, 1384, 4864, 2]
 // Exports: default
 
-// Module 9813 (useNativeAndroidEmojiPickerEnabled)
+// Module 9825 (useNativeAndroidEmojiPickerEnabled)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import DatabaseManagerDefault from "DatabaseManager" /* 4864 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

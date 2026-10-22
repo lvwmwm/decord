@@ -1,15 +1,15 @@
-// Module ID: 9641
-// Function ID: 9642
+// Module ID: 9653
+// Function ID: 9654
 // Name: PremiumFeatureUpsellUtils
-// Dependencies: [1087, 7422, 9640, 1257, 1107, 2]
+// Dependencies: [1087, 7429, 9652, 1257, 1107, 2]
 // Exports: getAnalyticsPage, getUpsellType, isEmojiPickerUpsellFeature, isSoundboardSectionNitroLocked
 
-// Module 9641 (PremiumFeatureUpsellUtils)
+// Module 9653 (PremiumFeatureUpsellUtils)
 import Constants from "Constants" /* 1087 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
-import SoundboardTypes from "SoundboardTypes" /* 7422 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9640 */;
+import SoundboardTypes from "SoundboardTypes" /* 7429 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9652 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticsPages = Constants.AnalyticsPages;

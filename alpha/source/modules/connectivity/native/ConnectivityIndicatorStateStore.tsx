@@ -1,17 +1,17 @@
-// Module ID: 14890
-// Function ID: 14891
+// Module ID: 14934
+// Function ID: 14935
 // Name: ConnectivityIndicatorStateStore
-// Dependencies: [7562, 502, 5990, 4872, 2001, 1087, 3, 14891, 504, 1483, 584, 2]
+// Dependencies: [7569, 502, 5997, 4872, 2001, 1087, 3, 14935, 504, 1483, 584, 2]
 
-// Module 14890 (ConnectivityIndicatorStateStore)
+// Module 14934 (ConnectivityIndicatorStateStore)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import NetworkUtilsDefault from "NetworkUtils" /* 1483 */;
-import CacheStore from "CacheStore" /* 7562 */;
+import CacheStore from "CacheStore" /* 7569 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MessageStore from "MessageStore" /* 5990 */;
+import MessageStore from "MessageStore" /* 5997 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
 import size from "module_2" /* 2 */;
@@ -60,7 +60,7 @@ function updateState() {
           } else if (tmp10.CONNECTING === UNKNOWN) {
             const obj4 = { state: obj.WAITING_FOR_NETWORK, delayMs: tmp24 };
             if (CacheStore.hasCache()) {
-              const obj16 = state(14891);
+              const obj16 = state(14935);
               let num2 = obj16.getConfig({ location: "ConnectivityIndicatorStateStore" }).timeoutMs;
               if (num2 == null) {
                 num2 = 10000;
@@ -85,7 +85,7 @@ function updateState() {
           } else if (tmp10.CONNECTING === UNKNOWN) {
             const obj8 = { state: obj.WAITING_FOR_NETWORK, delayMs: tmp19 };
             if (CacheStore.hasCache()) {
-              const obj11 = state(14891);
+              const obj11 = state(14935);
               let num = obj11.getConfig({ location: "ConnectivityIndicatorStateStore" }).timeoutMs;
               if (num == null) {
                 num = 10000;

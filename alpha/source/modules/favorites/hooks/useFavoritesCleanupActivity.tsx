@@ -1,15 +1,15 @@
-// Module ID: 17398
-// Function ID: 17399
+// Module ID: 17468
+// Function ID: 17469
 // Name: useFavoritesCleanupActivity
-// Dependencies: [32, 19, 6750, 558, 576, 6801, 504, 1128, 3412, 1104, 2]
+// Dependencies: [32, 19, 6757, 558, 576, 6808, 504, 1128, 3412, 1104, 2]
 
-// Module 17398 (useFavoritesCleanupActivity)
+// Module 17468 (useFavoritesCleanupActivity)
 import DurationsDefault from "Durations" /* 1104 */;
 import _modDef3412 from "module_3412" /* 3412 */;
-import getThreadAutoArchiveTimeOnce from "getThreadAutoArchiveTimeOnce" /* 6801 */;
+import getThreadAutoArchiveTimeOnce from "getThreadAutoArchiveTimeOnce" /* 6808 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 6750 */;
+import ReadStateStore from "ReadStateStore" /* 6757 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

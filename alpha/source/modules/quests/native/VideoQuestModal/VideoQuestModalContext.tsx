@@ -1,9 +1,9 @@
-// Module ID: 16294
-// Function ID: 16295
+// Module ID: 16364
+// Function ID: 16365
 // Name: VideoQuestModalContext
 // Dependencies: [19, 558, 38, 2]
 
-// Module 16294 (VideoQuestModalContext)
+// Module 16364 (VideoQuestModalContext)
 import _modDef38 from "module_38" /* 38 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,11 +1,11 @@
-// Module ID: 6817
-// Function ID: 6818
+// Module ID: 6824
+// Function ID: 6825
 // Name: MemberVerificationAlertPending
-// Dependencies: [109, 19, 21, 558, 576, 6814, 1128, 5226, 6818, 6819, 2]
+// Dependencies: [109, 19, 21, 558, 576, 6821, 1128, 5230, 6825, 6826, 2]
 
-// Module 6817 (MemberVerificationAlertPending)
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6814 */;
-import MemberVerificationAlertDefault from "MemberVerificationAlert" /* 6818 */;
+// Module 6824 (MemberVerificationAlertPending)
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6821 */;
+import MemberVerificationAlertDefault from "MemberVerificationAlert" /* 6825 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -79,7 +79,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
     }
     if (cResult[10] !== tmp5) {
       let obj2 = { variant: "secondary", text: tmp16, onPress: tmp5 };
-      const tmp20 = closure_6(tmp(5226).Button, obj2);
+      const tmp20 = closure_6(tmp(5230).Button, obj2);
       cResult[10] = tmp5;
       cResult[11] = tmp20;
       tmp18 = tmp20;
@@ -97,7 +97,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
     }
     if (cResult[13] !== tmp10) {
       const obj3 = { text: tmp21, variant: "destructive", onPress: tmp10 };
-      const tmp25 = closure_6(tmp(5226).Button, obj3);
+      const tmp25 = closure_6(tmp(5230).Button, obj3);
       cResult[13] = tmp10;
       cResult[14] = tmp25;
       tmp23 = tmp25;
@@ -116,7 +116,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
         }
         return tmp30;
       }
-      const obj4 = { icon: tmp(6819).ClipboardListIcon, header: tmp12, subtitle: tmp13, buttons: tmp26 };
+      const obj4 = { icon: tmp(6826).ClipboardListIcon, header: tmp12, subtitle: tmp13, buttons: tmp26 };
       const tmp33 = MemberVerificationAlertDefault;
       const merged = Object.assign(tmp6);
       const tmp37 = closure_6(tmp33, obj4);
@@ -164,18 +164,18 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
     const obj2 = { guildId };
     const result = obj.openMemberVerificationCancelPendingAlert(obj2);
   }, items);
-  let obj = { icon: guildId(6819).ClipboardListIcon, header: intl.string(guildId(1128).t.zhfXbs), subtitle: intl2.string(guildId(1128).t["SRM/e/"]), buttons: closure_8(closure_7, obj2) };
-  const tmp3 = onClose(6818);
+  let obj = { icon: guildId(6826).ClipboardListIcon, header: intl.string(guildId(1128).t.zhfXbs), subtitle: intl2.string(guildId(1128).t["SRM/e/"]), buttons: closure_8(closure_7, obj2) };
+  const tmp3 = onClose(6825);
   const merged1 = Object.assign(merged);
   intl = guildId(1128).intl;
   intl2 = guildId(1128).intl;
   obj2 = { children: items1 };
   const obj3 = { variant: "secondary", text: intl3.string(guildId(1128).t.f293OM), onPress: onClose };
-  const Button = guildId(5226).Button;
+  const Button = guildId(5230).Button;
   intl3 = guildId(1128).intl;
   items1 = [closure_6(Button, obj3), ];
   const obj4 = { text: intl4.string(guildId(1128).t.mqtdmQ), variant: "destructive", onPress: callback };
-  const Button2 = guildId(5226).Button;
+  const Button2 = guildId(5230).Button;
   intl4 = guildId(1128).intl;
   items1[1] = closure_6(Button2, obj4);
   return closure_6(tmp3, obj);

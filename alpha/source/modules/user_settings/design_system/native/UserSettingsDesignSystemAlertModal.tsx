@@ -1,18 +1,18 @@
-// Module ID: 16971
-// Function ID: 16972
+// Module ID: 17040
+// Function ID: 17041
 // Name: UserSettingsDesignSystemAlertModal
-// Dependencies: [5, 19, 17, 21, 558, 576, 5894, 5890, 4966, 5226, 2]
+// Dependencies: [5, 19, 17, 21, 558, 576, 5901, 5897, 4969, 5230, 2]
 
-// Module 16971 (UserSettingsDesignSystemAlertModal)
+// Module 17040 (UserSettingsDesignSystemAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useAlertStore from "useAlertStore" /* 5890 */;
-import AlertModal2 from "AlertModal" /* 5894 */;
+import useAlertStore from "useAlertStore" /* 5897 */;
+import AlertModal2 from "AlertModal" /* 5901 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;
@@ -20,7 +20,7 @@ let c0, c1;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const components_Button_Button = tmp(5226);
+const components_Button_Button = tmp(5230);
 function openDemoModal() {
   const obj = useAlertStore;
   obj.openAlert("demo-1", <closure_7 />);
@@ -95,8 +95,8 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoMod
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const tmp7 = jsx;
-    const AlertModal = tmp(5894).AlertModal;
-    const items = [jsx(tmp(5894).AlertActionButton, { variant: "destructive", onPress: first, text: "Clear" }, "clear"), ];
+    const AlertModal = tmp(5901).AlertModal;
+    const items = [jsx(tmp(5901).AlertActionButton, { variant: "destructive", onPress: first, text: "Clear" }, "clear"), ];
     items[1] = jsx(AlertModal2.AlertActionButton, { variant: "secondary", onPress: first, text: "Cancel" }, "cancel");
     const tmp8 = <AlertModal title="Are you sure?" content="This will clear 3 incoming friend requests. The users who sent them won’t be informed." actions={items} />;
     cResult[1] = tmp8;

@@ -1,20 +1,43 @@
 // Module ID: 8773
 // Function ID: 8774
-// Dependencies: [8769, 8770, 8771, 5000, 8761]
+// Dependencies: [8774, 8775, 8782, 5003]
 
 // Module 8773
-import normalizeColor2 from "normalizeColor" /* 8761 */;
-import _mod8769 from "module_8769" /* 8769 */;
-import normalizeColor3 from "normalizeColor" /* 8770 */;
-import merged22 from "merged2" /* 8771 */;
-import "module_5000";
-import module_5000_mod from "module_5000" /* 5000 */;
+import _mod8774 from "module_8774" /* 8774 */;
+import _mod8782 from "module_8782" /* 8782 */;
+import DeprecatedStyleSheetPropType_mod from "DeprecatedStyleSheetPropType" /* 8775 */;
+import module_5003_mod from "module_5003" /* 5003 */;
+import "module_5003";
 
-let module_5000;
-const obj = { resizeMode: module_5000.oneOf(["center", "contain", "cover", "repeat", "stretch"]), backfaceVisibility: module_5000.oneOf(["visible", "hidden"]), backgroundColor: normalizeColor2, borderColor: normalizeColor2, borderWidth: module_5000.number, borderRadius: module_5000.number, overflow: module_5000.oneOf(["visible", "hidden"]), tintColor: normalizeColor2, opacity: module_5000.number, overlayColor: module_5000.string, borderTopLeftRadius: module_5000.number, borderTopRightRadius: module_5000.number, borderBottomLeftRadius: module_5000.number, borderBottomRightRadius: module_5000.number };
-const size = Object.assign(_mod8769);
-const normalizeColor = Object.assign(normalizeColor3);
-const merged2 = Object.assign(merged22);
-module_5000 = module_5000_mod;
+let DeprecatedStyleSheetPropType;
+let items;
+let items1;
+let module_5003;
+let oneOfType;
+let oneOfType2;
+const obj = { style: DeprecatedStyleSheetPropType(_mod8782), source: oneOfType(items), blurRadius: module_5003.number, defaultSource: module_5003.number, loadingIndicatorSource: oneOfType2(items1), progressiveRenderingEnabled: module_5003.bool, fadeDuration: module_5003.number, internal_analyticTag: module_5003.string, onLoadStart: module_5003.func, onError: module_5003.func, onLoad: module_5003.func, onLoadEnd: module_5003.func, testID: module_5003.string, resizeMethod: module_5003.oneOf(["auto", "resize", "scale"]), resizeMode: module_5003.oneOf(["cover", "contain", "stretch", "repeat", "center"]) };
+const module_8774 = Object.assign(_mod8774);
+DeprecatedStyleSheetPropType = DeprecatedStyleSheetPropType_mod;
+module_5003 = module_5003_mod;
+oneOfType = module_5003.oneOfType;
+module_5003 = module_5003_mod;
+const shape = module_5003.shape;
+const obj2 = { uri: module_5003.string, headers: module_5003.objectOf(module_5003.string) };
+module_5003 = module_5003_mod;
+items = [shape(obj2), module_5003.number, ];
+module_5003 = module_5003_mod;
+const arrayOf = module_5003.arrayOf;
+module_5003 = module_5003_mod;
+const size = { uri: module_5003.string, width: module_5003.number, height: module_5003.number, headers: module_5003.objectOf(module_5003.string) };
+const shape2 = module_5003.shape;
+items[2] = arrayOf(shape2(size));
+module_5003 = module_5003_mod;
+oneOfType2 = module_5003.oneOfType;
+module_5003 = module_5003_mod;
+items1 = [, ];
+const obj3 = { uri: module_5003.string };
+items1[0] = module_5003.shape(obj3);
+items1[1] = module_5003.number;
+module_5003 = module_5003_mod;
 
 export default obj;

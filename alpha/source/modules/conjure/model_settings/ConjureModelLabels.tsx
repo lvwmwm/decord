@@ -1,10 +1,10 @@
-// Module ID: 11699
-// Function ID: 11700
+// Module ID: 11716
+// Function ID: 11717
 // Name: ConjureModelLabels
 // Dependencies: [3830, 1128, 2]
 // Exports: modelTierMessage, tierTooltip
 
-// Module 11699 (ConjureModelLabels)
+// Module 11716 (ConjureModelLabels)
 import intl2 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import size from "module_2" /* 2 */;
@@ -46,4 +46,3 @@ export const tierTooltip = function tierTooltip(title, arg1) {
   return obj;
 };
 export const THINKING_LABELS = { low: "Low", medium: "Medium", high: "High", xhigh: "Extra high", max: "Max" };
-export const PROVIDER_LABELS = { anthropic: "Anthropic", openai: "OpenAI", deepseek: "DeepSeek", xai: "xAI", moonshotai: "Moonshot AI" };

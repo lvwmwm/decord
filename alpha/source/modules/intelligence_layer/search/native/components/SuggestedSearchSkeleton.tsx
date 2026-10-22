@@ -1,18 +1,18 @@
-// Module ID: 17971
-// Function ID: 17972
+// Module ID: 18041
+// Function ID: 18042
 // Name: SuggestedSearchSkeleton
-// Dependencies: [19, 17, 13108, 9672, 21, 4966, 587, 558, 576, 5035, 5188, 2]
+// Dependencies: [19, 17, 13144, 9684, 21, 4969, 587, 558, 576, 5038, 5192, 2]
 
-// Module 17971 (SuggestedSearchSkeleton)
+// Module 18041 (SuggestedSearchSkeleton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
-import timing from "timing" /* 5188 */;
-import SearchConstants from "SearchConstants" /* 9672 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 13108 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
+import timing from "timing" /* 5192 */;
+import SearchConstants from "SearchConstants" /* 9684 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 13144 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuggestedSea
   let obj = sharedValue(576);
   const cResult = obj.c(17);
   const tmp4 = closure_7();
-  const obj2 = sharedValue(5035);
+  const obj2 = sharedValue(5038);
   sharedValue = obj2.useSharedValue(0.4);
   if (cResult[0] !== sharedValue) {
     const fn = function o() {
@@ -74,7 +74,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuggestedSea
   fn2.__closure = { opacity: sharedValue };
   fn2.__workletHash = 9760194902231;
   fn2.__initData = __initData;
-  const tmpResult = tmp(5035);
+  const tmpResult = tmp(5038);
   const animatedStyle = tmpResult.useAnimatedStyle(fn2);
   if (cResult[3] === animatedStyle) {
     let tmp10;
@@ -142,7 +142,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuggestedSea
   let obj6;
   let sharedValue;
   const tmp = closure_7();
-  let obj = sharedValue(5035);
+  let obj = sharedValue(5038);
   sharedValue = obj.useSharedValue(0.4);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
@@ -159,7 +159,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuggestedSea
   fn.__closure = { opacity: sharedValue };
   fn.__workletHash = 16042492079220;
   fn.__initData = __initData2;
-  const obj2 = sharedValue(5035);
+  const obj2 = sharedValue(5038);
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const obj3 = { style: items1, "aria-hidden": true, children: items2 };
   items1 = [tmp.row, animatedStyle];

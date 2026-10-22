@@ -1,19 +1,19 @@
-// Module ID: 14291
-// Function ID: 14292
+// Module ID: 14334
+// Function ID: 14335
 // Name: useUserProfileActivityTabContent
-// Dependencies: [19, 9344, 5694, 6477, 5612, 7680, 1087, 3, 558, 576, 14292, 14221, 14223, 8788, 504, 2]
+// Dependencies: [19, 9355, 5698, 6484, 5616, 7687, 1087, 3, 558, 576, 14335, 14259, 14261, 8797, 504, 2]
 
-// Module 14291 (useUserProfileActivityTabContent)
+// Module 14334 (useUserProfileActivityTabContent)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1087 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8788 */;
-import maybeFetchContentInventoryOutboxDefault from "maybeFetchContentInventoryOutbox" /* 14292 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8797 */;
+import maybeFetchContentInventoryOutboxDefault from "maybeFetchContentInventoryOutbox" /* 14335 */;
 import react_mod from "react" /* 19 */;
-import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9344 */;
-import PresenceStore from "PresenceStore" /* 5694 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6477 */;
-import VoiceStateStore from "VoiceStateStore" /* 5612 */;
-import UserProfileStore from "UserProfileStore" /* 7680 */;
+import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9355 */;
+import PresenceStore from "PresenceStore" /* 5698 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6484 */;
+import VoiceStateStore from "VoiceStateStore" /* 5616 */;
+import UserProfileStore from "UserProfileStore" /* 7687 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 15615
-// Function ID: 15616
+// Module ID: 15659
+// Function ID: 15660
 // Name: getCurrentEmbeddedActivityChannel
 // Dependencies: [4820, 4821, 2]
 // Exports: default
 
-// Module 15615 (getCurrentEmbeddedActivityChannel)
+// Module 15659 (getCurrentEmbeddedActivityChannel)
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import size from "module_2" /* 2 */;

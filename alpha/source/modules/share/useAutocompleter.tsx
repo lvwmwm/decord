@@ -1,11 +1,11 @@
-// Module ID: 12812
-// Function ID: 12813
+// Module ID: 12844
+// Function ID: 12845
 // Name: useAutocompleter
-// Dependencies: [32, 19, 558, 576, 9027, 5581, 2]
+// Dependencies: [32, 19, 558, 576, 9036, 5585, 2]
 
-// Module 12812 (useAutocompleter)
-import useInitialValueDefault from "useInitialValue" /* 5581 */;
-import _modDef9027 from "module_9027" /* 9027 */;
+// Module 12844 (useAutocompleter)
+import useInitialValueDefault from "useInitialValue" /* 5585 */;
+import _modDef9036 from "module_9036" /* 9036 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -36,7 +36,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAutocompl
   const tmp4 = _slicedToArray(react.useState(first), 2);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function c() {
-      let obj = new _modDef9027((results, query) => {
+      let obj = new _modDef9036((results, query) => {
         const obj = { results, query };
         closure_1_1(obj);
       });
@@ -147,7 +147,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAutocompl
   let tmp = _slicedToArray(react.useState({ results: [], query: "" }), 2);
   [tmp2, c1] = tmp;
   const tmp3 = useInitialValueDefault(() => {
-    let obj = new _modDef9027((results, query) => {
+    let obj = new _modDef9036((results, query) => {
       const obj = { results, query };
       closure_1_1(obj);
     });

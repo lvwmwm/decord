@@ -1,17 +1,17 @@
-// Module ID: 14299
-// Function ID: 14300
+// Module ID: 14342
+// Function ID: 14343
 // Name: WishlistUtils
-// Dependencies: [32, 2047, 9331, 9332, 9333, 1087, 1394, 1128, 7312, 2]
+// Dependencies: [32, 2047, 9342, 9343, 9344, 1087, 1394, 1128, 7319, 2]
 // Exports: buildReorderedWishlistData, createNitroSuggestedSku, isEligibleWishlistItemOnMobile
 
-// Module 14299 (WishlistUtils)
+// Module 14342 (WishlistUtils)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import StorefrontUtils from "StorefrontUtils" /* 7312 */;
-import CollectiblesWishlistItemRecord from "CollectiblesWishlistItemRecord" /* 9331 */;
-import PremiumWishlistItemRecord from "PremiumWishlistItemRecord" /* 9332 */;
-import SKUWishlistItemRecord from "SKUWishlistItemRecord" /* 9333 */;
+import StorefrontUtils from "StorefrontUtils" /* 7319 */;
+import CollectiblesWishlistItemRecord from "CollectiblesWishlistItemRecord" /* 9342 */;
+import PremiumWishlistItemRecord from "PremiumWishlistItemRecord" /* 9343 */;
+import SKUWishlistItemRecord from "SKUWishlistItemRecord" /* 9344 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import SKURecord from "SKURecord" /* 2047 */;
 import size from "module_2" /* 2 */;

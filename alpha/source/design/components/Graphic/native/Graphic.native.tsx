@@ -1,18 +1,18 @@
-// Module ID: 9808
-// Function ID: 9809
+// Module ID: 9820
+// Function ID: 9821
 // Name: Graphic
-// Dependencies: [109, 19, 17, 21, 4966, 558, 576, 5651, 5020, 5119, 2]
+// Dependencies: [109, 19, 17, 21, 4969, 558, 576, 5655, 5023, 5123, 2]
 
-// Module 9808 (Graphic)
+// Module 9820 (Graphic)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import native from "native" /* 5020 */;
-import GraphicTypes from "GraphicTypes" /* 5119 */;
-import FastImageDefault from "FastImage" /* 5651 */;
+import native from "native" /* 5023 */;
+import GraphicTypes from "GraphicTypes" /* 5123 */;
+import FastImageDefault from "FastImage" /* 5655 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

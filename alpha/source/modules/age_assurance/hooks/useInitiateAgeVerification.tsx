@@ -1,13 +1,13 @@
-// Module ID: 7923
-// Function ID: 7924
+// Module ID: 7931
+// Function ID: 7932
 // Name: useInitiateAgeVerification
-// Dependencies: [5, 32, 19, 1392, 1087, 7393, 504, 584, 7859, 7399, 558, 576, 7872, 2]
+// Dependencies: [5, 32, 19, 1392, 1087, 7400, 504, 584, 7867, 7406, 558, 576, 7880, 2]
 
-// Module 7923 (useInitiateAgeVerification)
+// Module 7931 (useInitiateAgeVerification)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
-import Constants2 from "Constants" /* 7393 */;
-import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 7872 */;
+import Constants2 from "Constants" /* 7400 */;
+import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 7880 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

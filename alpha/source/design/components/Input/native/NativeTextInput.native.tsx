@@ -1,15 +1,15 @@
-// Module ID: 7005
-// Function ID: 7006
+// Module ID: 7012
+// Function ID: 7013
 // Name: NativeTextInput
-// Dependencies: [19, 17, 1501, 1087, 21, 558, 576, 7006, 5245, 5249, 7007, 5020, 5121, 2]
+// Dependencies: [19, 17, 1501, 1087, 21, 558, 576, 7013, 5249, 5253, 7014, 5023, 5125, 2]
 // Exports: NativeTextInput
 
-// Module 7005 (NativeTextInput)
+// Module 7012 (NativeTextInput)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import native from "native" /* 5020 */;
-import native2 from "native" /* 5121 */;
-import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 7007 */;
+import native from "native" /* 5023 */;
+import native2 from "native" /* 5125 */;
+import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 7014 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1501 */;
@@ -27,7 +27,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const useMountEffect = tmp(5245);
+const useMountEffect = tmp(5249);
 let react = react_mod;
 ({ Pressable: closure_4, TextInput: hasOwnProperty, StyleSheet: metroRequire, View: metroImportDefault } = react_native);
 const KeyboardThemes = Constants.KeyboardThemes;
@@ -114,7 +114,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCon
         const mountLayoutEffect = tmpResult.useMountLayoutEffect(tmp8);
         const _Symbol = Symbol;
         if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj2 = { value: "toCharArray$esjava$1", defaultValue: "Symbol" };
+          const obj2 = { value: "r", defaultValue: "emoji" };
           cResult[8] = obj2;
           tmp11 = obj2;
         } else {
@@ -180,7 +180,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCon
       current.setNativeProps(obj);
     }
   });
-  return { value: "toCharArray$esjava$1", defaultValue: "Symbol" };
+  return { value: "r", defaultValue: "emoji" };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePanGestureWrapper(arg0) {

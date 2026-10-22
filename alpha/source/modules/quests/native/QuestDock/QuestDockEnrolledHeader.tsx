@@ -1,24 +1,24 @@
-// Module ID: 16356
-// Function ID: 16357
+// Module ID: 16425
+// Function ID: 16426
 // Name: QuestDockEnrolledHeader
-// Dependencies: [32, 19, 17, 16261, 21, 587, 4966, 558, 576, 16289, 9528, 14043, 6692, 11006, 16299, 5216, 2]
+// Dependencies: [32, 19, 17, 16331, 21, 587, 4969, 558, 576, 16359, 9539, 14077, 6699, 11023, 16369, 5220, 2]
 
-// Module 16356 (QuestDockEnrolledHeader)
+// Module 16425 (QuestDockEnrolledHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import QuestTypes from "QuestTypes" /* 6692 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9528 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11006 */;
-import QuestCopyHooks from "QuestCopyHooks" /* 14043 */;
-import QuestDockConstants from "QuestDockConstants" /* 16261 */;
-import QuestDockCreativeContext from "QuestDockCreativeContext" /* 16289 */;
-import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 16299 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import QuestTypes from "QuestTypes" /* 6699 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9539 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11023 */;
+import QuestCopyHooks from "QuestCopyHooks" /* 14077 */;
+import QuestDockConstants from "QuestDockConstants" /* 16331 */;
+import QuestDockCreativeContext from "QuestDockCreativeContext" /* 16359 */;
+import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 16369 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -121,7 +121,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         let tmp30 = null;
         if (tmp15 <= tmp16) {
           const obj9 = { variant: tmp14, color: "text-muted", lineClamp: 1, children: questBarSubtitle };
-          tmp30 = hasOwnProperty(tmp(5216).Text, obj9);
+          tmp30 = hasOwnProperty(tmp(5220).Text, obj9);
         }
         cResult[11] = tmp15 <= tmp16;
         cResult[12] = questBarSubtitle;

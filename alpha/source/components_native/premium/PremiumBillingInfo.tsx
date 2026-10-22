@@ -1,25 +1,25 @@
-// Module ID: 14593
-// Function ID: 14594
+// Module ID: 14637
+// Function ID: 14638
 // Name: PremiumBillingInfo
-// Dependencies: [32, 19, 17, 1087, 21, 4966, 587, 558, 576, 2065, 1128, 2053, 5216, 7230, 7255, 14589, 14594, 7490, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 4969, 587, 558, 576, 2065, 1128, 2053, 5220, 7237, 7262, 14633, 14638, 7497, 2]
 
-// Module 14593 (PremiumBillingInfo)
+// Module 14637 (PremiumBillingInfo)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import PremiumUtils from "PremiumUtils" /* 2053 */;
 import BillingPlatformUtils from "BillingPlatformUtils" /* 2065 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7230 */;
-import PremiumManagementUtils from "PremiumManagementUtils" /* 7490 */;
-import PremiumSubscriptionInvoice from "PremiumSubscriptionInvoice" /* 14589 */;
-import BillingInformation from "BillingInformation" /* 14594 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7237 */;
+import PremiumManagementUtils from "PremiumManagementUtils" /* 7497 */;
+import PremiumSubscriptionInvoice from "PremiumSubscriptionInvoice" /* 14633 */;
+import BillingInformation from "BillingInformation" /* 14638 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp5;
-const AnalyticsLocationDefault = tmp5(7255);
+const AnalyticsLocationDefault = tmp5(7262);
 const View = react_native.View;
 ({ SubscriptionStatusTypes: hasOwnProperty, USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING } = Constants);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -92,7 +92,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GoogleManagement
     tmp3 = null;
     if (subscription.isPurchasedViaGoogle) {
       const obj2 = { style, variant: "text-sm/medium", color: "text-link", children: format(prop, obj3) };
-      const Text = tmp(5216).Text;
+      const Text = tmp(5220).Text;
       const intl = tmp(1128).intl;
       format = intl.format;
       obj3 = { onClick: tmpResult.getExternalSubscriptionMethodUrl(subscription.paymentGateway, "SUBSCRIPTION_MANAGEMENT") };
@@ -172,7 +172,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumBilli
         const _Symbol2 = Symbol;
         if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
           const obj3 = { variant: "text-md/semibold", children: intl2.string(intl3.t.KXQjfc) };
-          const Text = tmp(5216).Text;
+          const Text = tmp(5220).Text;
           intl2 = tmp(1128).intl;
           const tmp26 = metroRequire(Text, obj3);
           cResult[11] = tmp26;
@@ -225,7 +225,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumBilli
                 let tmp39 = null;
                 if (null != tmp16) {
                   const obj5 = { style: tmp4.externalSubtext, variant: "text-sm/medium", children: tmp16 };
-                  tmp39 = metroRequire(tmp(5216).Text, obj5);
+                  tmp39 = metroRequire(tmp(5220).Text, obj5);
                 }
                 cResult[22] = tmp16;
                 cResult[23] = tmp4.externalSubtext;
@@ -290,12 +290,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumBilli
     const externalManagementMessage = tmp2Result.getExternalManagementMessage(subscription, { shouldAllowExternalManagement: true });
     const obj5 = { style, children: items };
     const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "eyebrow", color: "text-default", children: intl.string(intl3.t.Sb6wI1) };
-    const Text = tmp2(5216).Text;
+    const Text = tmp2(5220).Text;
     intl = tmp2(1128).intl;
     items = [metroRequire(Text, obj6), , ];
     const obj7 = { style: tmp.billingContainer, children: items1 };
     const obj8 = { variant: "text-md/semibold", children: intl2.string(intl3.t.KXQjfc) };
-    const Text2 = tmp2(5216).Text;
+    const Text2 = tmp2(5220).Text;
     intl2 = tmp2(1128).intl;
     items1 = [metroRequire(Text2, obj8), , ];
     const obj9 = { style: tmp.billingRenewalInfo, variant: "text-sm/medium", children: tmp7 };
@@ -309,7 +309,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumBilli
     const tmp12 = metroRequire;
     if (null != externalManagementMessage) {
       const obj11 = { style: tmp.externalSubtext, variant: "text-sm/medium", children: externalManagementMessage };
-      tmp12Result = tmp12(tmp2(5216).Text, obj11);
+      tmp12Result = tmp12(tmp2(5220).Text, obj11);
     }
     items[2] = tmp12Result;
     return tmp10(tmp11, obj5);

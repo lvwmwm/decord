@@ -1,9 +1,9 @@
-// Module ID: 5175
-// Function ID: 5176
+// Module ID: 5179
+// Function ID: 5180
 // Name: AuthInviteStore
 // Dependencies: [4835, 504, 584, 2]
 
-// Module 5175 (AuthInviteStore)
+// Module 5179 (AuthInviteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 4835 */;

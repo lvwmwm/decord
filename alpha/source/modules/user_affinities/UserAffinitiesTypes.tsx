@@ -1,9 +1,9 @@
-// Module ID: 9044
-// Function ID: 9045
+// Module ID: 9053
+// Function ID: 9054
 // Name: UserAffinitiesTypes
 // Dependencies: [2]
 
-// Module 9044 (UserAffinitiesTypes)
+// Module 9053 (UserAffinitiesTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_affinities/UserAffinitiesTypes.tsx");

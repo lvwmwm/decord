@@ -1,28 +1,28 @@
-// Module ID: 8949
-// Function ID: 8950
+// Module ID: 8958
+// Function ID: 8959
 // Name: ChannelOverwritesItem
-// Dependencies: [109, 19, 17, 1392, 7851, 21, 4966, 5894, 1128, 7388, 5644, 558, 576, 6997, 6887, 8950, 8932, 6882, 5216, 1202, 8951, 8952, 5022, 6880, 2]
+// Dependencies: [109, 19, 17, 1392, 7859, 21, 4969, 5901, 1128, 7395, 5648, 558, 576, 7004, 6894, 8959, 8941, 6889, 5220, 1202, 8960, 8961, 5025, 6887, 2]
 
-// Module 8949 (ChannelOverwritesItem)
+// Module 8958 (ChannelOverwritesItem)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import react_native2 from "react-native" /* 5022 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import AlertModal from "AlertModal" /* 5894 */;
-import FormCheckbox from "FormCheckbox" /* 6880 */;
-import TableRow2 from "TableRow" /* 6882 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7851 */;
-import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8932 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 8950 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8951 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8952 */;
+import react_native2 from "react-native" /* 5025 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import AlertModal from "AlertModal" /* 5901 */;
+import FormCheckbox from "FormCheckbox" /* 6887 */;
+import TableRow2 from "TableRow" /* 6889 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7859 */;
+import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8941 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 8959 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8960 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8961 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -72,7 +72,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
         if (cResult[5] !== prop) {
           let obj2 = { style: prop };
           cResult[5] = prop;
-          const tmp11 = closure_10(tmp(6997).CircleXIcon, obj2);
+          const tmp11 = closure_10(tmp(7004).CircleXIcon, obj2);
           class R {
             constructor() {
               if (null != onRemove) {
@@ -100,7 +100,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
                 obj.content = intl2.format(closure_0(closure_3[8]).t.xERCnZ, obj1);
                 intl3 = closure_0(closure_3[8]).intl;
                 obj.confirmText = intl3.string(closure_0(closure_3[8]).t.fKxYb0);
-                obj.onConfirm = function onConfirm() { /* body not rendered: F101243 */ };
+                obj.onConfirm = function onConfirm() { /* body not rendered: F101699 */ };
                 showConfirmModalResult = showConfirmModal(obj);
                 return;
               }
@@ -147,13 +147,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
               obj.content = intl2.format(closure_0(closure_3[8]).t.xERCnZ, obj1);
               intl3 = closure_0(closure_3[8]).intl;
               obj.confirmText = intl3.string(closure_0(closure_3[8]).t.fKxYb0);
-              obj.onConfirm = function onConfirm() { /* body not rendered: F101243 */ };
+              obj.onConfirm = function onConfirm() { /* body not rendered: F101699 */ };
               showConfirmModalResult = showConfirmModal(obj);
               return;
             }
           }
         }
-        const tmp14 = closure_10(tmp(6887).PressableOpacity, obj3);
+        const tmp14 = closure_10(tmp(6894).PressableOpacity, obj3);
         cResult[7] = item.disabled;
         cResult[8] = tmp7;
         cResult[9] = tmp9;
@@ -188,7 +188,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
           obj.content = intl2.format(closure_0(closure_3[8]).t.xERCnZ, obj1);
           intl3 = closure_0(closure_3[8]).intl;
           obj.confirmText = intl3.string(closure_0(closure_3[8]).t.fKxYb0);
-          obj.onConfirm = function onConfirm() { /* body not rendered: F101243 */ };
+          obj.onConfirm = function onConfirm() { /* body not rendered: F101699 */ };
           showConfirmModalResult = showConfirmModal(obj);
           return;
         }
@@ -251,10 +251,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
         },
       children: tmp3(CircleXIcon, obj2)
     };
-    const PressableOpacity = item(6887).PressableOpacity;
+    const PressableOpacity = item(6894).PressableOpacity;
     intl = item(1128).intl;
     let prop;
-    CircleXIcon = item(6997).CircleXIcon;
+    CircleXIcon = item(7004).CircleXIcon;
     if (item.disabled) {
       prop = tmp.rowRemoveIconDisabled;
     }
@@ -601,7 +601,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
   }
   items1[1] = tmp4Result;
   const tmp2Result = tmp2(tmp3, obj);
-  const TableRow = tmp5(6882).TableRow;
+  const TableRow = tmp5(6889).TableRow;
   const Avatar = tmp5(1202).Avatar;
   const user = UserStore.getUser(item.id);
   let avatarSource;

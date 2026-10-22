@@ -1,9 +1,9 @@
-// Module ID: 9426
-// Function ID: 9427
+// Module ID: 9437
+// Function ID: 9438
 // Name: useIsVariantColorLight
 // Dependencies: [19, 558, 576, 1105, 2]
 
-// Module 9426 (useIsVariantColorLight)
+// Module 9437 (useIsVariantColorLight)
 import react2 from "react" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
 import react from "react" /* 19 */;

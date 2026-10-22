@@ -1,27 +1,27 @@
-// Module ID: 17661
-// Function ID: 17662
+// Module ID: 17731
+// Function ID: 17732
 // Name: YouBarAvatar
-// Dependencies: [5, 32, 19, 17, 4967, 6477, 1392, 16264, 1087, 21, 4966, 587, 558, 576, 504, 1202, 5020, 5035, 6761, 9364, 5229, 5234, 9363, 8610, 5194, 7467, 2002, 5279, 2]
+// Dependencies: [5, 32, 19, 17, 4970, 6484, 1392, 16334, 1087, 21, 4969, 587, 558, 576, 504, 1202, 5023, 5038, 6768, 9375, 5233, 5238, 9374, 8619, 5198, 7474, 2002, 5283, 2]
 
-// Module 17661 (YouBarAvatar)
+// Module 17731 (YouBarAvatar)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import native from "native" /* 1202 */;
-import native2 from "native" /* 5020 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
-import spring from "spring" /* 5229 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5279 */;
-import ClipView from "ClipView" /* 9364 */;
+import native2 from "native" /* 5023 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
+import spring from "spring" /* 5233 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5283 */;
+import ClipView from "ClipView" /* 9375 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4967 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6477 */;
+import AccessibilityStore from "AccessibilityStore" /* 4970 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6484 */;
 import UserStore from "UserStore" /* 1392 */;
-import YouBarConstants from "YouBarConstants" /* 16264 */;
+import YouBarConstants from "YouBarConstants" /* 16334 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -111,31 +111,31 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouBar
   const result = tmp(1202).AVATAR_SIZE_MAP[closure_13] / closure_20;
   dependencyMap = result;
   const result1 = (closure_20 - tmp(1202).AVATAR_SIZE_MAP[closure_13]) / 2;
-  const tmp16 = transitionState === tmp(5020).TransitionStates.MOUNTED;
+  const tmp16 = transitionState === tmp(5023).TransitionStates.MOUNTED;
   let num5 = 0;
-  const useSharedValue = tmp(5035).useSharedValue;
-  tmp(5035);
+  const useSharedValue = tmp(5038).useSharedValue;
+  tmp(5038);
   if (tmp16) {
     num5 = 1;
   }
   const sharedValue = useSharedValue(num5);
   let num6 = 1;
-  const useSharedValue2 = tmp(5035).useSharedValue;
-  tmp(5035);
+  const useSharedValue2 = tmp(5038).useSharedValue;
+  tmp(5038);
   if (!tmp16) {
     num6 = result;
   }
   const sharedValue2 = useSharedValue2(num6);
-  const useSharedValue3 = tmp(5035).useSharedValue;
-  tmp(5035);
+  const useSharedValue3 = tmp(5038).useSharedValue;
+  tmp(5038);
   if (tmp16) {
     tmp22 = -closure_17;
   } else {
     tmp22 = -result1;
   }
   const sharedValue3 = useSharedValue3(tmp22);
-  const useSharedValue4 = tmp(5035).useSharedValue;
-  tmp(5035);
+  const useSharedValue4 = tmp(5038).useSharedValue;
+  tmp(5038);
   if (tmp16) {
     diff = -closure_17 - (tmp13 - closure_15) / 2;
   } else {
@@ -238,16 +238,16 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouBar
             ({ transitionState, TransitionStates: native2.TransitionStates, runOnJS: ReanimatedRexport.runOnJS, cleanup });
             return rect;
           }
-          let rect = { withSpring: tmp(5229).withSpring, scale: sharedValue2, YOU_BAR_SPRING_CONFIG, left: sharedValue3, top: sharedValue4, opacity: sharedValue, transitionState, TransitionStates: tmp(5020).TransitionStates, runOnJS: tmp(5035).runOnJS, cleanup };
-          const useAnimatedStyle = tmp(5035).useAnimatedStyle;
-          tmp(5035);
+          let rect = { withSpring: tmp(5233).withSpring, scale: sharedValue2, YOU_BAR_SPRING_CONFIG, left: sharedValue3, top: sharedValue4, opacity: sharedValue, transitionState, TransitionStates: tmp(5023).TransitionStates, runOnJS: tmp(5038).runOnJS, cleanup };
+          const useAnimatedStyle = tmp(5038).useAnimatedStyle;
+          tmp(5038);
           et.__closure = rect;
           et.__workletHash = 15831722009842;
           et.__initData = __initData;
           const animatedStyle = useAnimatedStyle(et);
-          const tmpResult17 = tmp(5234);
+          const tmpResult17 = tmp(5238);
           const token = tmpResult17.useToken(cleanup(587).colors.MOBILE_FLOATINGBAR_BACKGROUND);
-          const tmpResult18 = tmp(5234);
+          const tmpResult18 = tmp(5238);
           const token1 = tmpResult18.useToken(cleanup(587).colors.BORDER_SUBTLE);
           if (null == stateFromStores1) {
             return null;
@@ -308,7 +308,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouBar
       if (tmp) {
         diff = -result1;
       } else {
-        diff = -closure_17 - (closure_20 - authStore3) / 2;
+        diff = -closure_17 - (closure_20 - closure_15) / 2;
       }
       set4(diff);
     }
@@ -418,7 +418,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouBar
     if (tmp) {
       diff = -result1;
     } else {
-      diff = -closure_17 - (closure_20 - authStore3) / 2;
+      diff = -closure_17 - (closure_20 - closure_15) / 2;
     }
     set4(diff);
   }, items2);
@@ -712,7 +712,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouBar
           tmp24 = tmp26;
         }
       }
-      const obj4 = { user: stateFromStores, guildId: "Array", size: tmp27, animate: true, needsOffscreenAlphaCompositing: null, avatarDecoration, status: OFFLINE, autoStatusCutout: "/assets/.cache/intl/bW9kdWxlcy9naWZ0X2NhcmRzL21lc3NhZ2Vz" };
+      const obj4 = { user: stateFromStores, guildId: "Array", size: tmp27, animate: true, needsOffscreenAlphaCompositing: null, avatarDecoration, status: OFFLINE, autoStatusCutout: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi" };
       const tmp23 = closure_22(tmp(sharedValue[15]).Avatar, obj4);
       cResult[11] = avatarDecoration;
       cResult[12] = OFFLINE;
@@ -805,7 +805,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouBar
     const obj5 = { style: items3, children: closure_22(Avatar, obj6) };
     items3 = [rect, animatedStyle];
     const View = cleanup(tmp2[17]).View;
-    obj6 = { user: stateFromStores, guildId: "Array", size: size2, animate: true, needsOffscreenAlphaCompositing: null, avatarDecoration, status: OFFLINE, autoStatusCutout: "/assets/.cache/intl/bW9kdWxlcy9naWZ0X2NhcmRzL21lc3NhZ2Vz" };
+    obj6 = { user: stateFromStores, guildId: "Array", size: size2, animate: true, needsOffscreenAlphaCompositing: null, avatarDecoration, status: OFFLINE, autoStatusCutout: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi" };
     Avatar = tmp(tmp2[15]).Avatar;
     if (OFFLINE === StatusTypes.UNKNOWN) {
       OFFLINE = StatusTypes.OFFLINE;

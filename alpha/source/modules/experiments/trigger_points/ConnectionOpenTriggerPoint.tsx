@@ -1,12 +1,12 @@
-// Module ID: 14895
-// Function ID: 14896
+// Module ID: 14939
+// Function ID: 14940
 // Name: ConnectionOpenTriggerPoint
-// Dependencies: [5173, 14896, 10522, 2]
+// Dependencies: [5177, 14940, 10534, 2]
 
-// Module 14895 (ConnectionOpenTriggerPoint)
-import ExperimentConstants from "ExperimentConstants" /* 5173 */;
-import Helpers from "Helpers" /* 10522 */;
-import ContentInventoryExperiments from "ContentInventoryExperiments" /* 14896 */;
+// Module 14939 (ConnectionOpenTriggerPoint)
+import ExperimentConstants from "ExperimentConstants" /* 5177 */;
+import Helpers from "Helpers" /* 10534 */;
+import ContentInventoryExperiments from "ContentInventoryExperiments" /* 14940 */;
 import size from "module_2" /* 2 */;
 
 const CommonTriggerPoints = ExperimentConstants.CommonTriggerPoints;

@@ -1,17 +1,17 @@
-// Module ID: 10675
-// Function ID: 10676
+// Module ID: 10687
+// Function ID: 10688
 // Name: conjureChatConnection
-// Dependencies: [584, 10661, 1128, 3830, 10676, 10677, 10678, 2]
+// Dependencies: [584, 10673, 1128, 3830, 10688, 10689, 10690, 2]
 // Exports: appendTurnStep, sendFailedStep, sendQueuedMessageAction
 
-// Module 10675 (conjureChatConnection)
+// Module 10687 (conjureChatConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import conjureAgentReaction from "conjureAgentReaction" /* 10661 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 10676 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10677 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10678 */;
+import conjureAgentReaction from "conjureAgentReaction" /* 10673 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 10688 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10689 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10690 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -129,7 +129,7 @@ let obj2 = {
       const tmp13Result = tmp13(584);
       tmp13Result.dispatch(obj3);
       const obj6 = { message: stringResult };
-      const trackConjureErrored = tmp11(10676).trackConjureErrored;
+      const trackConjureErrored = tmp11(10688).trackConjureErrored;
       ConjureAnalytics;
       const merged = Object.assign(tmp);
       trackConjureErrored(projectId, obj6);
@@ -230,7 +230,7 @@ let obj2 = {
       const tmp13Result = tmp13(584);
       tmp13Result.dispatch(obj3);
       const obj6 = { message: stringResult };
-      const trackConjureErrored = tmp11(10676).trackConjureErrored;
+      const trackConjureErrored = tmp11(10688).trackConjureErrored;
       ConjureAnalytics;
       const merged = Object.assign(tmp);
       trackConjureErrored(projectId, obj6);

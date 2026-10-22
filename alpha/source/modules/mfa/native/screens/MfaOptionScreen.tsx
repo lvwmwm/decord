@@ -1,17 +1,17 @@
-// Module ID: 16865
-// Function ID: 16866
+// Module ID: 16934
+// Function ID: 16935
 // Name: MfaOptionScreen
-// Dependencies: [19, 17, 21, 558, 576, 7016, 16866, 5216, 5957, 16867, 7200, 7047, 2]
+// Dependencies: [19, 17, 21, 558, 576, 7023, 16935, 5220, 5964, 16936, 7207, 7054, 2]
 
-// Module 16865 (MfaOptionScreen)
+// Module 16934 (MfaOptionScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import Stack_Stack from "Stack/Stack" /* 5957 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7016 */;
-import BackgroundImageDefault from "BackgroundImage" /* 7047 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7200 */;
-import MfaScreenUtilsDefault from "MfaScreenUtils" /* 16866 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import Stack_Stack from "Stack/Stack" /* 5964 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7023 */;
+import BackgroundImageDefault from "BackgroundImage" /* 7054 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7207 */;
+import MfaScreenUtilsDefault from "MfaScreenUtils" /* 16935 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -58,7 +58,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MFAOptionS
       let tmp14 = null != subtitle;
       if (tmp14) {
         const obj3 = { variant: "heading-sm/normal", color: "text-default", children: subtitle };
-        tmp14 = React3(tmp(5216).Text, obj3);
+        tmp14 = React3(tmp(5220).Text, obj3);
       }
       cResult[3] = subtitle;
       cResult[4] = tmp14;
@@ -70,7 +70,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MFAOptionS
       let tmp17 = null != error;
       if (tmp17) {
         const obj4 = { variant: "text-sm/normal", color: "text-feedback-critical", children: error };
-        tmp17 = React3(tmp(5216).Text, obj4);
+        tmp17 = React3(tmp(5220).Text, obj4);
       }
       cResult[5] = error;
       cResult[6] = tmp17;
@@ -172,7 +172,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MFAOptionS
               let tmp27 = tmp25;
               if (tmp27) {
                 const obj8 = { props: screenProps };
-                tmp27 = React3(tmp4(16867), obj8);
+                tmp27 = React3(tmp4(16936), obj8);
               }
               cResult[16] = screenProps;
               cResult[17] = type === mfaMethod;
@@ -246,13 +246,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MFAOptionS
   let tmp10Result = null != subtitle;
   if (tmp10Result) {
     const obj4 = { variant: "heading-sm/normal", color: "text-default", children: subtitle };
-    tmp10Result = tmp10(tmp8(5216).Text, obj4);
+    tmp10Result = tmp10(tmp8(5220).Text, obj4);
   }
   items[2] = tmp10Result;
   let tmp10Result4 = null != error;
   if (tmp10Result4) {
     const obj5 = { variant: "text-sm/normal", color: "text-feedback-critical", children: error };
-    tmp10Result4 = tmp10(tmp8(5216).Text, obj5);
+    tmp10Result4 = tmp10(tmp8(5220).Text, obj5);
   }
   let tmp10Result5 = type === mfaMethod;
   const obj6 = { children: items1 };
@@ -261,10 +261,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MFAOptionS
   items2 = [hasOwnProperty(Stack, obj6), content, ];
   const obj7 = { style: screenStyles.submit, children: items3 };
   items3 = [submit, ];
-  const Stack3 = tmp8(5957).Stack;
+  const Stack3 = tmp8(5964).Stack;
   if (tmp10Result5) {
     const obj8 = { props: screenProps };
-    tmp10Result5 = tmp10(tmp(16867), obj8);
+    tmp10Result5 = tmp10(tmp(16936), obj8);
   }
   items3[1] = tmp10Result5;
   items2[2] = hasOwnProperty(Stack3, obj7);

@@ -1,32 +1,32 @@
-// Module ID: 9394
-// Function ID: 9395
+// Module ID: 9405
+// Function ID: 9406
 // Name: CollectiblesShopCardAssetTileV2
-// Dependencies: [32, 19, 17, 1089, 21, 9315, 587, 4966, 558, 576, 9176, 8542, 7638, 1995, 8624, 9348, 9395, 5651, 1090, 9396, 9361, 9350, 9373, 9375, 4963, 5234, 9316, 2]
+// Dependencies: [32, 19, 17, 1089, 21, 9326, 587, 4969, 558, 576, 9185, 8551, 7645, 1995, 8633, 9359, 9406, 5655, 1090, 9407, 9372, 9361, 9384, 9386, 4966, 5238, 9327, 2]
 
-// Module 9394 (CollectiblesShopCardAssetTileV2)
+// Module 9405 (CollectiblesShopCardAssetTileV2)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
-import ColorUtils from "ColorUtils" /* 4963 */;
-import useToken from "useToken" /* 5234 */;
-import FastImageDefault from "FastImage" /* 5651 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7638 */;
-import useShopProductItems from "useShopProductItems" /* 8624 */;
-import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9315 */;
-import useDefaultVariantIndex from "useDefaultVariantIndex" /* 9316 */;
-import BundleSampleV2Default from "BundleSampleV2" /* 9348 */;
-import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 9350 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9361 */;
-import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9373 */;
-import NameplateCardPreviewDefault from "NameplateCardPreview" /* 9375 */;
-import _modDef9395 from "module_9395" /* 9395 */;
-import FractionalNitroCoinIllustration2 from "FractionalNitroCoinIllustration" /* 9396 */;
+import ColorUtils from "ColorUtils" /* 4966 */;
+import useToken from "useToken" /* 5238 */;
+import FastImageDefault from "FastImage" /* 5655 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7645 */;
+import useShopProductItems from "useShopProductItems" /* 8633 */;
+import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9326 */;
+import useDefaultVariantIndex from "useDefaultVariantIndex" /* 9327 */;
+import BundleSampleV2Default from "BundleSampleV2" /* 9359 */;
+import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 9361 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9372 */;
+import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9384 */;
+import NameplateCardPreviewDefault from "NameplateCardPreview" /* 9386 */;
+import _modDef9406 from "module_9406" /* 9406 */;
+import FractionalNitroCoinIllustration2 from "FractionalNitroCoinIllustration" /* 9407 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -39,8 +39,8 @@ let obj3;
 let size;
 let size1;
 let tmp;
-const LockIcon = tmp(8542);
-const CheckmarkLargeBoldIcon = tmp(9176);
+const LockIcon = tmp(8551);
+const CheckmarkLargeBoldIcon = tmp(9185);
 ({ View: hasOwnProperty, StyleSheet } = react_native);
 const EXTERNAL_PRODUCT_SKU_IDS = CollectiblesShopConstants.EXTERNAL_PRODUCT_SKU_IDS;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -259,7 +259,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
   const shopProductItems = obj2.useShopProductItems(product);
   ({ firstProfileEffect, firstAvatarDecoration, firstNameplate } = shopProductItems);
   if (cardWidth == null) {
-    cardWidth = tmp(9315).COLLECTIBLES_SHOP_CARD_WIDTH;
+    cardWidth = tmp(9326).COLLECTIBLES_SHOP_CARD_WIDTH;
   }
   if (cResult[0] !== cardWidth) {
     size = { width: cardWidth, height: CollectiblesShopCardV2.COLLECTIBLES_SHOP_CARD_HEIGHT };
@@ -303,7 +303,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
     let tmp42;
     const _Symbol = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj4 = { uri: _modDef9395 };
+      const obj4 = { uri: _modDef9406 };
       cResult[10] = obj4;
       tmp40 = obj4;
     } else {
@@ -325,7 +325,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
       let tmp36;
       if (cResult[13] !== product.skuId) {
         const size1 = { skuId: product.skuId, width: FractionalNitroCoinIllustration2.FRACTIONAL_NITRO_COIN_SIZE.CARD, height: FractionalNitroCoinIllustration2.FRACTIONAL_NITRO_COIN_SIZE.CARD };
-        const FractionalNitroCoinIllustration = tmp(9396).FractionalNitroCoinIllustration;
+        const FractionalNitroCoinIllustration = tmp(9407).FractionalNitroCoinIllustration;
         const tmp38 = metroImportDefault(FractionalNitroCoinIllustration, size1);
         cResult[13] = product.skuId;
         cResult[14] = tmp38;
@@ -433,7 +433,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
   ({ product, cardWidth } = arg0);
   ({ disableBundleStaticBackground, muteBundleStaticBackground } = arg0);
   const tmp = closure_10();
-  const obj = cardWidth(8624);
+  const obj = cardWidth(8633);
   const shopProductItems = obj.useShopProductItems(product);
   const items = [cardWidth];
   ({ firstProfileEffect, firstAvatarDecoration, firstNameplate } = shopProductItems);
@@ -450,14 +450,14 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
     return closure_7(BundleSampleV2Default, obj2);
   } else if (product.skuId === EXTERNAL_PRODUCT_SKU_IDS.ORB_PROFILE_BADGE) {
     const obj3 = { source: obj4, style: tmp.externalProductImage };
-    obj4 = { uri: _modDef9395 };
+    obj4 = { uri: _modDef9406 };
     const tmp25 = FastImageDefault;
     return closure_7(tmp25, obj3);
   } else {
     const ALL = tmp2(1090).FractionalPremiumSKUsSets.ALL;
     if (ALL.has(product.skuId)) {
-      size = { skuId: product.skuId, width: tmp2(9396).FRACTIONAL_NITRO_COIN_SIZE.CARD, height: tmp2(9396).FRACTIONAL_NITRO_COIN_SIZE.CARD };
-      const FractionalNitroCoinIllustration = tmp2(9396).FractionalNitroCoinIllustration;
+      size = { skuId: product.skuId, width: tmp2(9407).FRACTIONAL_NITRO_COIN_SIZE.CARD, height: tmp2(9407).FRACTIONAL_NITRO_COIN_SIZE.CARD };
+      const FractionalNitroCoinIllustration = tmp2(9407).FractionalNitroCoinIllustration;
       return closure_7(FractionalNitroCoinIllustration, size);
     } else {
       const first = _slicedToArray(product.items, 1)[0];
@@ -474,7 +474,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
         return closure_7(closure_5, obj6);
       } else if (cardWidth(1995).CollectiblesItemType.PROFILE_FRAME === type) {
         const obj8 = { style: tmp.profileFrameContainer, children: closure_7(tmp15, obj9) };
-        obj9 = { profileFrame: first, previewWidth: cardWidth(9315).COLLECTIBLES_SHOP_CARD_WIDTH - nativeDefault.space.PX_32, previewHeight, profileBackgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+        obj9 = { profileFrame: first, previewWidth: cardWidth(9326).COLLECTIBLES_SHOP_CARD_WIDTH - nativeDefault.space.PX_32, previewHeight, profileBackgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
         tmp15 = ProfileFrameSamplePreviewDefault;
         return closure_7(closure_5, obj8);
       } else if (cardWidth(1995).CollectiblesItemType.NAMEPLATE === type) {

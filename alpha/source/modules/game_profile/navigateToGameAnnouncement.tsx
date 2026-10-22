@@ -1,10 +1,10 @@
-// Module ID: 9313
-// Function ID: 9314
+// Module ID: 9324
+// Function ID: 9325
 // Name: navigateToGameAnnouncement
-// Dependencies: [5, 4843, 1087, 38, 7425, 8825, 1114, 2]
+// Dependencies: [5, 4843, 1087, 38, 7432, 8834, 1114, 2]
 // Exports: default
 
-// Module 9313 (navigateToGameAnnouncement)
+// Module 9324 (navigateToGameAnnouncement)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import Constants from "Constants" /* 1087 */;

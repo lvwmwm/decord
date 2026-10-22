@@ -1,9 +1,9 @@
-// Module ID: 11417
-// Function ID: 11418
+// Module ID: 11434
+// Function ID: 11435
 // Name: BaseEmbeddedAppWebView
-// Dependencies: [5, 32, 19, 17, 5607, 1087, 2026, 21, 4966, 3, 1384, 558, 576, 10732, 11418, 7883, 11419, 11420, 1383, 11403, 11421, 11422, 11423, 11414, 1267, 573, 5888, 1128, 11424, 5605, 1297, 11425, 11426, 1386, 10716, 6639, 2]
+// Dependencies: [5, 32, 19, 17, 5611, 1087, 2026, 21, 4969, 3, 1384, 558, 576, 10744, 11435, 7891, 11436, 11437, 1383, 11420, 11438, 11439, 11440, 11431, 1267, 573, 5895, 1128, 11441, 5609, 1297, 11442, 11443, 1386, 10728, 6646, 2]
 
-// Module 11417 (BaseEmbeddedAppWebView)
+// Module 11434 (BaseEmbeddedAppWebView)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -13,16 +13,16 @@ import intl4 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import URLUtilsDefault from "URLUtils" /* 1386 */;
 import Constants2 from "Constants" /* 2026 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5888 */;
-import usePreviousDefault from "usePrevious" /* 6639 */;
-import WebView2 from "WebView" /* 7883 */;
-import useEmbeddedAppCSPDefault from "useEmbeddedAppCSP" /* 10732 */;
-import isAllowedFrameNavigation from "isAllowedFrameNavigation" /* 11426 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5895 */;
+import usePreviousDefault from "usePrevious" /* 6646 */;
+import WebView2 from "WebView" /* 7891 */;
+import useEmbeddedAppCSPDefault from "useEmbeddedAppCSP" /* 10744 */;
+import isAllowedFrameNavigation from "isAllowedFrameNavigation" /* 11443 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5607 */;
-import createStyles from "createStyles" /* 4966 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5611 */;
+import createStyles from "createStyles" /* 4969 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

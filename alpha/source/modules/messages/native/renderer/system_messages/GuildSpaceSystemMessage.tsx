@@ -1,16 +1,16 @@
-// Module ID: 8433
-// Function ID: 8434
+// Module ID: 8442
+// Function ID: 8443
 // Name: GuildSpaceSystemMessage
-// Dependencies: [32, 4821, 1392, 1388, 1128, 2440, 8294, 8296, 8298, 8434, 8436, 2]
+// Dependencies: [32, 4821, 1392, 1388, 1128, 2440, 8303, 8305, 8307, 8443, 8445, 2]
 // Exports: createGuildSpaceSystemMessage
 
-// Module 8433 (GuildSpaceSystemMessage)
+// Module 8442 (GuildSpaceSystemMessage)
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import _modDef2440 from "module_2440" /* 2440 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8294 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8296 */;
-import GuildSpaceLeaderboardSystemMessage from "GuildSpaceLeaderboardSystemMessage" /* 8434 */;
-import GuildSpaceMusicSystemMessage from "GuildSpaceMusicSystemMessage" /* 8436 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8303 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8305 */;
+import GuildSpaceLeaderboardSystemMessage from "GuildSpaceLeaderboardSystemMessage" /* 8443 */;
+import GuildSpaceMusicSystemMessage from "GuildSpaceMusicSystemMessage" /* 8445 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -58,12 +58,12 @@ export const createGuildSpaceSystemMessage = function createGuildSpaceSystemMess
         obj4 = { userId: tmp22.id, message, author: userAuthorWithProcessedColor, roleStyle };
         if (null != tmp23) {
           const obj5 = { userId: tmp23.id, message, author: userAuthorWithProcessedColor1, roleStyle };
-          tmp12 = tmp15(8296)(obj5);
+          tmp12 = tmp15(8305)(obj5);
         }
         formatToPartsResult = formatToParts(zUiZPF, obj3);
       }
       const obj6 = { content: formatToPartsResult };
-      const merged = Object.assign(tmp15(8298)(message));
+      const merged = Object.assign(tmp15(8307)(message));
       guildSpaceLeaderboardSystemMessage = obj6;
     }
     const intl = tmp9(1128).intl;

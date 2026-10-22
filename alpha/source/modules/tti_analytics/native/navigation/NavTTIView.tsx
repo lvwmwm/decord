@@ -1,18 +1,18 @@
-// Module ID: 17808
-// Function ID: 17809
+// Module ID: 17878
+// Function ID: 17879
 // Name: NavTTIView
-// Dependencies: [109, 19, 17, 5219, 21, 558, 576, 17809, 17811, 17812, 504, 17803, 2]
+// Dependencies: [109, 19, 17, 5223, 21, 558, 576, 17879, 17881, 17882, 504, 17873, 2]
 
-// Module 17808 (NavTTIView)
+// Module 17878 (NavTTIView)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import navigationTTIEnabled from "navigationTTIEnabled" /* 17803 */;
-import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 17811 */;
-import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 17812 */;
+import navigationTTIEnabled from "navigationTTIEnabled" /* 17873 */;
+import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 17881 */;
+import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 17882 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 5219 */;
+import DevSettingsStore from "DevSettingsStore" /* 5223 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -22,7 +22,7 @@ let tmp3Result;
 let closure_14;
 let closure_15;
 let tmp;
-const useComponentRenderSpan = tmp(17809);
+const useComponentRenderSpan = tmp(17879);
 let closure_2 = ["measurementProps", "onLayout", "children"];
 let closure_3 = ["name"];
 let closure_4 = ["tracking", "descendantTracking", "name"];
@@ -268,7 +268,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Visual
                   const obj2 = { measurementProps, children: items };
                   const merged = Object.assign(tmp5);
                   items = [tmp12, tmp14];
-                  const tmp23 = authStore3(closure_16, obj2);
+                  const tmp23 = closure_15(closure_16, obj2);
                   cResult[18] = measurementProps;
                   cResult[19] = tmp5;
                   cResult[20] = tmp12;
@@ -323,7 +323,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Visual
   items[0] = syncedClientThemes(NavigationTTIRegionHierarchy.NavigationTTIRegionHierarchyContext.Provider, obj2);
   const obj3 = { name: str, regionId: hierarchy.regionId, tracking, descendantTracking, includedDescendants: hierarchy.includedDescendants, excludedDescendants: hierarchy.excludedDescendants, hierarchyDepth: hierarchy.depth, violation: hierarchy.violation };
   items[1] = syncedClientThemes(NavigationTTIRegionDebugOverlay.NavigationTTIRegionDebugOverlay, obj3);
-  return authStore3(closure_16, obj);
+  return closure_15(closure_16, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function VisualizedIncludedNavTTIView(children) {

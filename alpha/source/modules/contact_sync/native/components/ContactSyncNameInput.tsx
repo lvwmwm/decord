@@ -1,17 +1,17 @@
-// Module ID: 13487
-// Function ID: 13488
+// Module ID: 13523
+// Function ID: 13524
 // Name: ContactSyncNameInput
-// Dependencies: [32, 19, 17, 21, 4966, 587, 558, 576, 5575, 1128, 5216, 1202, 5226, 13484, 2]
+// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 5579, 1128, 5220, 1202, 5230, 13520, 2]
 
-// Module 13487 (ContactSyncNameInput)
+// Module 13523 (ContactSyncNameInput)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5575 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5579 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,9 +23,9 @@ let tmp;
 let tmp10;
 const intl7 = tmp(1128);
 const native = tmp(1202);
-const Text_Text = tmp(5216);
-const components_Button_Button = tmp(5226);
-const ContactSyncErrorDefault = tmp10(13484);
+const Text_Text = tmp(5220);
+const components_Button_Button = tmp(5230);
+const ContactSyncErrorDefault = tmp10(13520);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -410,7 +410,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncN
   items = [tmp.content, { paddingBottom: insets.bottom }];
   const obj2 = { style: tmp.flex, children: items1 };
   const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: string2Result };
-  const Text = tmp10(5216).Text;
+  const Text = tmp10(5220).Text;
   const intl2 = tmp10(1128).intl;
   const string2 = intl2.string;
   const t2 = tmp10(1128).t;
@@ -421,7 +421,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncN
   }
   items1 = [metroRequire(Text, obj3), , , , ];
   const obj4 = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default", children: string3Result };
-  const Text2 = tmp10(5216).Text;
+  const Text2 = tmp10(5220).Text;
   const intl3 = tmp10(1128).intl;
   const string3 = intl3.string;
   const t3 = tmp10(1128).t;
@@ -432,7 +432,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncN
   }
   items1[1] = metroRequire(Text2, obj4);
   const obj5 = { variant: "eyebrow", color: "interactive-text-default", children: intl4.string(tmp10(1128).t["42/D2U"]) };
-  const Text3 = tmp10(5216).Text;
+  const Text3 = tmp10(5220).Text;
   intl4 = tmp10(1128).intl;
   items1[2] = metroRequire(Text3, obj5);
   const obj6 = { value: first, onChangeText: tmp4, style: tmp.input, autoFocus: true, showBorder: false, showTopContainer: false, clearButtonVisibility: tmp10(1202).ClearButtonVisibility.WITH_CONTENT, autoCorrect: true, autoComplete: "name", textContentType: "name" };
@@ -441,14 +441,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncN
   let tmp13Result = null;
   if (flag) {
     const obj7 = { style: tmp.formSubtitle, variant: "text-xs/medium", color: "text-default", children: intl5.string(tmp10(1128).t.bCQt9K) };
-    const Text4 = tmp10(5216).Text;
+    const Text4 = tmp10(5220).Text;
     intl5 = tmp10(1128).intl;
     tmp13Result = tmp13(Text4, obj7);
   }
   items1[4] = tmp13Result;
   items2 = [metroImportDefault(View, obj2), , , ];
   let str = "lg";
-  const Button = tmp10(5226).Button;
+  const Button = tmp10(5230).Button;
   if (null != onRemoveName) {
     str = "md";
   }
@@ -478,7 +478,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncN
           return tmp;
         }
     };
-    Button2 = tmp10(5226).Button;
+    Button2 = tmp10(5230).Button;
     intl6 = tmp10(1128).intl;
     tmp13Result2 = tmp13(tmp12, obj9);
   }

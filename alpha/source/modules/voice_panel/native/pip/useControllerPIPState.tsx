@@ -1,21 +1,21 @@
-// Module ID: 18486
-// Function ID: 18487
+// Module ID: 18554
+// Function ID: 18555
 // Name: useControllerPIPState
-// Dependencies: [32, 19, 4820, 6754, 4821, 14943, 10848, 5591, 6755, 558, 576, 18306, 4890, 8841, 504, 9934, 5035, 18424, 18487, 18275, 18488, 18489, 2]
+// Dependencies: [32, 19, 4820, 6761, 4821, 14987, 10865, 5595, 6762, 558, 576, 18374, 4890, 8850, 504, 9946, 5038, 18492, 18555, 18343, 18556, 18557, 2]
 // Exports: useControllerPIPState
 
-// Module 18486 (useControllerPIPState)
+// Module 18554 (useControllerPIPState)
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4890 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5591 */;
-import FramesConstants from "FramesConstants" /* 6755 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10848 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 18275 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5595 */;
+import FramesConstants from "FramesConstants" /* 6762 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10865 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 18343 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
-import FramesStore from "FramesStore" /* 6754 */;
+import FramesStore from "FramesStore" /* 6761 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import PIPSpeakerStore from "PIPSpeakerStore" /* 14943 */;
+import PIPSpeakerStore from "PIPSpeakerStore" /* 14987 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSho
   const cResult = obj.c(6);
   channelId = channelId.channelId;
   const mode = channelId.mode;
-  let tmp4 = mode(18306)(channelId);
+  let tmp4 = mode(18374)(channelId);
   dependencyMap = tmp4;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [EmbeddedActivitiesStore, FramesStore, ChannelStore];
@@ -84,7 +84,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSho
       const activityPanelMode = obj3.getActivityPanelMode();
       const tmp14 = require;
       if (result) {
-        const tmp14Result = tmp14(8841);
+        const tmp14Result = tmp14(8850);
         result = tmp14Result.isActivityInTextSupportedForChannel(channel1);
       }
       if (result) {
@@ -112,7 +112,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSho
   let closure_2;
   channelId = channelId.channelId;
   const mode = channelId.mode;
-  const tmp = mode(18306)(channelId);
+  const tmp = mode(18374)(channelId);
   dependencyMap = tmp;
   let obj = channelId(504);
   const items = [EmbeddedActivitiesStore, FramesStore, ChannelStore];
@@ -148,7 +148,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSho
       const activityPanelMode = obj3.getActivityPanelMode();
       const tmp14 = require;
       if (result) {
-        const tmp14Result = tmp14(8841);
+        const tmp14Result = tmp14(8850);
         result = tmp14Result.isActivityInTextSupportedForChannel(channel1);
       }
       if (result) {
@@ -180,7 +180,7 @@ export const useControllerPIPState = function useControllerPIPState(channelId) {
   let participant;
   let tmp11;
   let windowDimensions;
-  const f135720 = () => layoutManager.getTargetDimensions(focusedId);
+  const f136422 = () => layoutManager.getTargetDimensions(focusedId);
   channelId = channelId.channelId;
   ({ connected, focusedId } = channelId);
   const layoutManager = channelId.layoutManager;
@@ -195,14 +195,14 @@ export const useControllerPIPState = function useControllerPIPState(channelId) {
   let obj = channelId(layoutManager[17]);
   const sharedValue = useSharedValue(obj.getVoicePanelPIPScaleCached());
   let obj2 = pipAvoidanceSpecs;
-  const ref = pipAvoidanceSpecs.useRef({ id: "enumerable", mode: "toCharArray$esjava$1", width: false, height: null, containerHeight: "box-none", showSecondaryPIP: null, scale: sharedValue });
+  const ref = pipAvoidanceSpecs.useRef({ id: "end", mode: "toCharArray$esjava$1", width: false, height: null, containerHeight: "sku", showSecondaryPIP: null, scale: sharedValue });
   const items = [obj6];
   const obj3 = channelId(layoutManager[14]);
   const stateFromStores = obj3.useStateFromStores(items, () => PIPSpeakerStore.getSpeakerId(channelId));
   const tmp7 = closure_12({ channelId, mode });
   const tmp9 = focusedId(layoutManager[18])(channelId);
-  [tmp11, c7] = windowDimensions(pipAvoidanceSpecs.useState(f135720), 2);
-  windowDimensions(pipAvoidanceSpecs.useState(f135720), 2);
+  [tmp11, c7] = windowDimensions(pipAvoidanceSpecs.useState(f136422), 2);
+  windowDimensions(pipAvoidanceSpecs.useState(f136422), 2);
   const obj4 = channelId(layoutManager[19]);
   const pIPMode = obj4.getPIPMode({ channelId, connected, manuallyFocusedId: focusedId, mode, selfHasVideo: tmp9 });
   const obj5 = { connected, mode, focusedId, participantTargetDimensions: tmp11, selfHasVideo: tmp9, showSecondaryPIP: tmp7 };
@@ -253,7 +253,7 @@ export const useControllerPIPState = function useControllerPIPState(channelId) {
   const animatedReaction = tmpResult2.useAnimatedReaction(C, fn);
   const items1 = [focusedId, layoutManager, tmp11];
   const effect1 = obj2.useEffect(() => {
-    const f159709 = (safeAreaState) => {
+    const f160530 = (safeAreaState) => {
       targetDimensions = targetDimensions.getTargetDimensions(closure_1_1);
       const obj = channelId(layoutManager[15]);
       if (obj.cheapWorkletShallowEqual(safeAreaState, targetDimensions)) {
@@ -261,9 +261,9 @@ export const useControllerPIPState = function useControllerPIPState(channelId) {
       }
       return targetDimensions;
     };
-    _undefined(f159709);
+    _undefined(f160530);
     return layoutManager.subscribeFromItem(function updateParticipantDimensions() {
-      _undefined(f159709);
+      _undefined(f160530);
     });
   }, items1);
   tmp8(layoutManager[21])(channelId, layoutManager, pIPMode);

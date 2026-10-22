@@ -1,12 +1,13 @@
-// Module ID: 10760
-// Function ID: 10761
+// Module ID: 10777
+// Function ID: 10778
 // Name: conjureSettingsConnection
-// Dependencies: [5, 584, 10749, 2]
+// Dependencies: [5, 584, 10710, 10763, 2]
 // Exports: requestProjectRebuild, submitProjectSettings
 
-// Module 10760 (conjureSettingsConnection)
+// Module 10777 (conjureSettingsConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureWorkerFetch from "conjureWorkerFetch" /* 10749 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 10710 */;
+import conjureWorkerFetch from "conjureWorkerFetch" /* 10763 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -106,9 +107,13 @@ settingsFrameHandlers = {
     obj = DispatcherDefault;
     const obj2 = { type: "CONJURE_SETTINGS_SET", projectId, settings: { schema: schema.schema, values: schema.values, secrets: schema.secrets, connections: schema.connections } };
     obj.dispatch(obj2);
+    if (true === schema.values_changed) {
+      const obj3 = ConjurePreviewActionCreators;
+      const result = obj3.reloadConjureProjectFrames(projectId);
+    }
   }
 };
-const result = size.fileFinishedImporting("modules/conjure/settings/conjureSettingsConnection.tsx");
+let result = size.fileFinishedImporting("modules/conjure/settings/conjureSettingsConnection.tsx");
 
 export { settingsFrameHandlers };
 export const submitProjectSettings = function submitProjectSettings() {
@@ -147,7 +152,7 @@ export const requestProjectRebuild = function requestProjectRebuild(arg0) {
               return obj4;
             } else {
               c1 = 1;
-              const obj2 = c0(closure_1_2[2]);
+              const obj2 = c0(closure_1_2[3]);
               c0 = 1;
               const obj5 = { value: obj2.fetchConjureWorker(closure_2_0, "/agent/rebuild", { method: "POST" }), done: false };
               return obj5;

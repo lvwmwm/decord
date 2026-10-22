@@ -1,26 +1,26 @@
-// Module ID: 17841
-// Function ID: 17842
+// Module ID: 17911
+// Function ID: 17912
 // Name: GuildOnboardingNewMemberActions
-// Dependencies: [19, 17, 6704, 4821, 4881, 4843, 4901, 7302, 8277, 1087, 1395, 4887, 21, 4966, 587, 558, 576, 504, 5586, 1417, 13052, 5651, 4915, 5216, 1202, 12638, 1128, 13057, 17842, 6887, 1405, 17843, 2]
+// Dependencies: [19, 17, 6711, 4821, 4881, 4843, 4901, 7309, 8286, 1087, 1395, 4887, 21, 4969, 587, 558, 576, 504, 5590, 1417, 13088, 5655, 4915, 5220, 1202, 12670, 1128, 13093, 17912, 6894, 1405, 17913, 2]
 
-// Module 17841 (GuildOnboardingNewMemberActions)
+// Module 17911 (GuildOnboardingNewMemberActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 4887 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 13052 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 13088 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6704 */;
+import EmojiStore from "EmojiStore" /* 6711 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildMemberStore from "GuildMemberStore" /* 4881 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7302 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8277 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7309 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8286 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -528,7 +528,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboa
                   let flag;
                   const obj = { channelId: channelId.channelId, title: channelId.title, emoji: channelId.emoji, icon: channelId.icon, completed: flag };
                   flag = undefined;
-                  const tmp = authStore3;
+                  const tmp = closure_15;
                   const tmp2 = closure_18;
                   if (stateFromStores1 != null) {
                     flag = tmp3[channelId.channelId];

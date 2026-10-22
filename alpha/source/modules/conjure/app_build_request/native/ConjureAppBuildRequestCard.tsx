@@ -1,21 +1,21 @@
-// Module ID: 12391
-// Function ID: 12392
+// Module ID: 12418
+// Function ID: 12419
 // Name: ConjureAppBuildRequestCard
-// Dependencies: [19, 17, 21, 4966, 587, 558, 576, 12237, 1128, 3830, 5192, 12392, 11742, 5216, 6910, 7935, 6966, 6882, 7159, 5226, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 12260, 1128, 3830, 5196, 12419, 11759, 5220, 6917, 7943, 6973, 6889, 7166, 5230, 2]
 
-// Module 12391 (ConjureAppBuildRequestCard)
+// Module 12418 (ConjureAppBuildRequestCard)
 import nativeDefault from "native" /* 587 */;
 import intl8 from "intl" /* 1128 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5192 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import XSmallIcon from "XSmallIcon" /* 6910 */;
-import IconButton2 from "IconButton" /* 7935 */;
-import ConjureAppBuildRequest from "ConjureAppBuildRequest" /* 12237 */;
-import ConjureAppBuildRequestProjectsSheetDefault from "ConjureAppBuildRequestProjectsSheet" /* 12392 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5196 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import XSmallIcon from "XSmallIcon" /* 6917 */;
+import IconButton2 from "IconButton" /* 7943 */;
+import ConjureAppBuildRequest from "ConjureAppBuildRequest" /* 12260 */;
+import ConjureAppBuildRequestProjectsSheetDefault from "ConjureAppBuildRequestProjectsSheet" /* 12419 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,10 +28,10 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp2;
-const components_Button_Button = tmp2(5226);
-const TableRow2 = tmp2(6882);
-const TableRowGroup2 = tmp2(6966);
-const TextArea2 = tmp2(7159);
+const components_Button_Button = tmp2(5230);
+const TableRow2 = tmp2(6889);
+const TableRowGroup2 = tmp2(6973);
+const TextArea2 = tmp2(7166);
 ({ Keyboard: c3, View: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 const ConjureAppBuildRequestProjectSheet = "ConjureAppBuildRequestProjectSheet";
@@ -319,7 +319,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureApp
   const obj3 = { style: tmp.header, children: items };
   const obj4 = { style: tmp.heading, children: closure_5(Text_Text.Text, obj5) };
   obj5 = { variant: "text-md/semibold", color: "text-default", accessibilityRole: "header", children: request.summary };
-  const tmp8 = conjureAppBuildRequestForm(11742);
+  const tmp8 = conjureAppBuildRequestForm(11759);
   items = [closure_5(closure_4, obj4), ];
   const obj6 = { variant: "tertiary", size: "sm", icon: closure_5(XSmallIcon.XSmallIcon, { size: "sm" }), onPress: conjureAppBuildRequestForm.dismiss, accessibilityLabel: intl2.string(conjureAppBuildRequestForm(3830).KQUuAZ) };
   const IconButton = IconButton2.IconButton;

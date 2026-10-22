@@ -1,20 +1,20 @@
-// Module ID: 5972
-// Function ID: 5973
+// Module ID: 5979
+// Function ID: 5980
 // Name: MarkupChannelMentionRule
-// Dependencies: [4873, 4821, 4843, 4901, 4911, 1392, 1087, 2033, 1417, 1128, 5973, 5974, 5586, 5982, 5588, 5971, 1951, 2]
+// Dependencies: [4873, 4821, 4843, 4901, 4911, 1392, 1087, 2033, 1417, 1128, 5980, 5981, 5590, 5989, 5592, 5978, 1951, 2]
 // Exports: getGuildIdFromChannelId
 
-// Module 5972 (MarkupChannelMentionRule)
+// Module 5979 (MarkupChannelMentionRule)
 import intl3 from "intl" /* 1128 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import _modDef1951 from "module_1951" /* 1951 */;
 import StringUtils from "StringUtils" /* 2033 */;
-import useChannelName from "useChannelName" /* 5586 */;
-import LinkUtils from "LinkUtils" /* 5588 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 5971 */;
-import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5973 */;
-import ChannelUtils from "ChannelUtils" /* 5974 */;
-import markup_ChannelUtils from "markup/ChannelUtils" /* 5982 */;
+import useChannelName from "useChannelName" /* 5590 */;
+import LinkUtils from "LinkUtils" /* 5592 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 5978 */;
+import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5980 */;
+import ChannelUtils from "ChannelUtils" /* 5981 */;
+import markup_ChannelUtils from "markup/ChannelUtils" /* 5989 */;
 import GatedChannelStore from "GatedChannelStore" /* 4873 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;
@@ -157,7 +157,7 @@ function parseChannel(channel, messageId, guildIdFromChannelId, url) {
           obj11 = obj4;
           obj20 = StringUtils;
         } else if (null != url) {
-          const obj9 = { type: "link", content: items4, target: url, title: "unicodeVersion" };
+          const obj9 = { type: "link", content: items4, target: url, title: "ix" };
           items4 = [{ type: "text", content: url }];
           obj11 = obj9;
           const obj10 = { type: "text", content: url };
@@ -343,7 +343,7 @@ obj3 = {
     [tmp, tmp2, tmp3, tmp4] = arg0;
     LinkUtils;
     if (null == tmp3) {
-      const obj = { type: "link", content: items, target: tmp, title: "unicodeVersion" };
+      const obj = { type: "link", content: items, target: tmp, title: "ix" };
       items = [{ type: "text", content: tmp }];
       return obj;
     } else {
@@ -427,7 +427,7 @@ obj4 = {
         }
       }
     }
-    const obj = { type: "link", content: items, target: tmp, title: "unicodeVersion" };
+    const obj = { type: "link", content: items, target: tmp, title: "ix" };
     items = [{ type: "text", content: tmp }];
     return obj;
   }

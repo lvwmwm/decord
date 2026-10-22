@@ -1,8 +1,8 @@
-// Module ID: 6011
-// Function ID: 6012
+// Module ID: 6018
+// Function ID: 6019
 // Dependencies: [2]
 
-// Module 6011
+// Module 6018
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/card-snail.png.js");

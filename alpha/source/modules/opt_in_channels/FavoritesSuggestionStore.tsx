@@ -1,14 +1,14 @@
-// Module ID: 7616
-// Function ID: 7617
+// Module ID: 7623
+// Function ID: 7624
 // Name: FavoritesSuggestionStore
-// Dependencies: [4821, 4872, 6683, 504, 584, 2]
+// Dependencies: [4821, 4872, 6690, 504, 584, 2]
 
-// Module 7616 (FavoritesSuggestionStore)
+// Module 7623 (FavoritesSuggestionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6683 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6690 */;
 import size from "module_2" /* 2 */;
 
 let set;

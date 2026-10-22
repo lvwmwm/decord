@@ -1,18 +1,18 @@
-// Module ID: 13619
-// Function ID: 13620
+// Module ID: 13655
+// Function ID: 13656
 // Name: GuildDirectoryNicknameUpsellModalActionCreators
-// Dependencies: [6651, 13620, 2002, 2]
+// Dependencies: [6658, 13656, 2002, 2]
 
-// Module 13619 (GuildDirectoryNicknameUpsellModalActionCreators)
+// Module 13655 (GuildDirectoryNicknameUpsellModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6651 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6658 */;
 import size from "module_2" /* 2 */;
 
 const GUILD_DIRECTORY_NICKNAME_UPSELL_MODAL_KEY = "GUILD_DIRECTORY_NICKNAME_UPSELL_MODAL_KEY";
 let obj = {
   open(merged) {
     const obj = ModalActionCreatorsDefault;
-    obj.pushLazy(asyncRequire(13620, dependencyMap.paths), merged, GUILD_DIRECTORY_NICKNAME_UPSELL_MODAL_KEY);
+    obj.pushLazy(asyncRequire(13656, dependencyMap.paths), merged, GUILD_DIRECTORY_NICKNAME_UPSELL_MODAL_KEY);
   },
   close() {
     const obj = ModalActionCreatorsDefault;

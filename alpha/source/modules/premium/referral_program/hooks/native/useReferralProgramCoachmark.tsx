@@ -1,9 +1,9 @@
-// Module ID: 18065
-// Function ID: 18066
+// Module ID: 18135
+// Function ID: 18136
 // Name: useReferralProgramCoachmark
-// Dependencies: [32, 19, 17, 1087, 4818, 21, 4966, 558, 576, 5651, 18066, 4991, 4805, 8403, 7473, 1128, 7467, 587, 2]
+// Dependencies: [32, 19, 17, 1087, 4818, 21, 4969, 558, 576, 5655, 18136, 4994, 4805, 8412, 7480, 1128, 7474, 587, 2]
 
-// Module 18065 (useReferralProgramCoachmark)
+// Module 18135 (useReferralProgramCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -11,12 +11,12 @@ import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
-import FastImageDefault from "FastImage" /* 5651 */;
-import openUserSettings from "openUserSettings" /* 7467 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18066 */;
+import FastImageDefault from "FastImage" /* 5655 */;
+import openUserSettings from "openUserSettings" /* 7474 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18136 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

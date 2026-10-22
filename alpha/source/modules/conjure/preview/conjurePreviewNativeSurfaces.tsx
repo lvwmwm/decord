@@ -1,12 +1,12 @@
-// Module ID: 10720
-// Function ID: 10721
+// Module ID: 10732
+// Function ID: 10733
 // Name: conjurePreviewNativeSurfaces
-// Dependencies: [1087, 9229, 2]
+// Dependencies: [1087, 9238, 2]
 // Exports: beginNativeSurfaceSessionForFrame
 
-// Module 10720 (conjurePreviewNativeSurfaces)
+// Module 10732 (conjurePreviewNativeSurfaces)
 import Constants from "Constants" /* 1087 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 9229 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 9238 */;
 import size from "module_2" /* 2 */;
 
 function asString(str) {
@@ -59,29 +59,30 @@ function answerFor(cmd) {
   } else if (null == obj[cmd.cmd]) {
     return null;
   } else {
-    const tmp10Result = obj[cmd.cmd](cmd);
-    ({ options, subject } = tmp10Result);
-    const result = tmp10Result.result;
+    const tmp11Result = obj[cmd.cmd](cmd);
+    ({ options, subject } = tmp11Result);
+    const result = tmp11Result.result;
     if (found.recorded.length < 20) {
       const recorded = found.recorded;
-      const obj2 = { command: cmd.cmd, answered: tmp12 };
+      obj = { command: cmd.cmd, answered: tmp13 };
       if (null != options) {
         let obj5;
+        let obj4;
         if (options.length > 0) {
-          obj = { options };
-          const obj3 = { options };
+          obj5 = { options };
+          const obj2 = { options };
         }
-        const merged = Object.assign(obj);
+        const merged = Object.assign(obj5);
         if (null != subject) {
-          obj5 = { subject };
-          const obj4 = { subject };
+          obj4 = { subject };
+          const obj3 = { subject };
         } else {
-          obj5 = {};
+          obj4 = {};
         }
-        const merged1 = Object.assign(obj5);
-        tmp13(obj2);
+        const merged1 = Object.assign(obj4);
+        tmp2(obj);
       }
-      obj = {};
+      obj5 = {};
     }
     return { result };
   }
@@ -145,17 +146,18 @@ let obj = {
   },
   [RPCCommands.REQUEST_DEVICE_PERMISSIONS]: (args) => {
     let found;
-    const f107139 = (permission) => ({ permission, state: "denied" });
+    const f107604 = (permission) => ({ permission, state: "denied" });
     if (Array.isArray(args.args.permissions)) {
       const permissions = args.args.permissions;
       found = permissions.filter((item) => typeof item === "string");
     } else {
       found = [];
     }
-    obj = { result: { permissions: found.map(f107139) }, answered: "denied; an agent may not grant device access", options: found };
-    ({ permissions: found.map(f107139) });
+    obj = { result: { permissions: found.map(f107604) }, answered: "denied; an agent may not grant device access", options: found };
+    ({ permissions: found.map(f107604) });
     return obj;
   },
+  [RPCCommands.CAPTURE_SCREEN]: () => ({ result: { status: "permission_denied" }, answered: "denied; an agent may not capture the screen" }),
   [RPCCommands.OPEN_USER_PROFILE]: () => ({ result: { opened: true }, answered: "opened" }),
   [RPCCommands.OPEN_USER_POPOUT]: () => ({ result: { opened: true }, answered: "opened" }),
   [RPCCommands.OPEN_GAME_PROFILE]: () => ({ result: { opened: true }, answered: "opened" }),
@@ -163,8 +165,8 @@ let obj = {
   [RPCCommands.HIDE_TOOLTIP]: () => ({ result: { hidden: true }, answered: "hidden" }),
   [RPCCommands.OPEN_MEDIA_VIEWER]: () => ({ result: { opened: true }, answered: "opened" }),
   [RPCCommands.SHOW_TOAST]: () => ({ result: { shown: true }, answered: "shown" }),
-  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "unicodeVersion", answered: 31058513 }),
-  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "unicodeVersion", answered: 31058513 })
+  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "ix", answered: false }),
+  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "ix", answered: false })
 };
 let closure_5 = {
   drain() {
@@ -198,7 +200,7 @@ export const beginNativeSurfaceSessionForFrame = function beginNativeSurfaceSess
       closure_6.unshift(obj2);
     }
     if (1 === arr.length) {
-      obj = obj2(9229);
+      obj = obj2(9238);
       let result = obj.setRpcCommandInterceptor(answerFor);
     }
     return {

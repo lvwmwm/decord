@@ -1,11 +1,11 @@
-// Module ID: 7323
-// Function ID: 7324
+// Module ID: 7330
+// Function ID: 7331
 // Name: useAppChannelApplication
-// Dependencies: [1087, 558, 6788, 2]
+// Dependencies: [1087, 558, 6795, 2]
 
-// Module 7323 (useAppChannelApplication)
+// Module 7330 (useAppChannelApplication)
 import Constants from "Constants" /* 1087 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6788 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6795 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

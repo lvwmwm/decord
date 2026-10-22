@@ -1,35 +1,35 @@
-// Module ID: 18443
-// Function ID: 18444
+// Module ID: 18511
+// Function ID: 18512
 // Name: VoicePanelMicButton
-// Dependencies: [32, 19, 5697, 4874, 502, 4821, 2014, 4901, 1392, 5612, 21, 3, 4966, 558, 576, 7430, 11572, 504, 11605, 10847, 5035, 18319, 5194, 11509, 5279, 18444, 18445, 1128, 11574, 5216, 9131, 11573, 2]
+// Dependencies: [32, 19, 5701, 4874, 502, 4821, 2014, 4901, 1392, 5616, 21, 3, 4969, 558, 576, 7437, 11589, 504, 11622, 10864, 5038, 18387, 5198, 11526, 5283, 18512, 18513, 1128, 11591, 5220, 9140, 11590, 2]
 // Exports: PTTButton
 
-// Module 18443 (VoicePanelMicButton)
+// Module 18511 (VoicePanelMicButton)
 import LoggerDefault from "Logger" /* 3 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
-import HapticUtils from "HapticUtils" /* 5194 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5279 */;
-import useMuteStates from "useMuteStates" /* 7430 */;
-import MicrophoneDenyIcon from "MicrophoneDenyIcon" /* 9131 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10847 */;
-import MediaEngineActionCreators from "MediaEngineActionCreators" /* 11509 */;
-import VoiceActionUtils from "VoiceActionUtils" /* 11572 */;
-import VoicePanelRiveMicButton2 from "VoicePanelRiveMicButton" /* 11573 */;
-import useDeafStates from "useDeafStates" /* 11605 */;
-import VoicePanelStyles from "VoicePanelStyles" /* 18444 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
+import HapticUtils from "HapticUtils" /* 5198 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5283 */;
+import useMuteStates from "useMuteStates" /* 7437 */;
+import MicrophoneDenyIcon from "MicrophoneDenyIcon" /* 9140 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10864 */;
+import MediaEngineActionCreators from "MediaEngineActionCreators" /* 11526 */;
+import VoiceActionUtils from "VoiceActionUtils" /* 11589 */;
+import VoicePanelRiveMicButton2 from "VoicePanelRiveMicButton" /* 11590 */;
+import useDeafStates from "useDeafStates" /* 11622 */;
+import VoicePanelStyles from "VoicePanelStyles" /* 18512 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 5697 */;
+import GameConsoleStore from "GameConsoleStore" /* 5701 */;
 import ImpersonateStore from "ImpersonateStore" /* 4874 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
 import UserStore from "UserStore" /* 1392 */;
-import VoiceStateStore from "VoiceStateStore" /* 5612 */;
+import VoiceStateStore from "VoiceStateStore" /* 5616 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let closure_14;
 let closure_15;
 let map1;
 let tmp4;
-const VoicePanelAnimatedButtonWrapperDefault = tmp4(18445);
+const VoicePanelAnimatedButtonWrapperDefault = tmp4(18513);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = Fragment);
@@ -336,10 +336,10 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MicButton(props)
     let tmp3Result;
     if (dominantMuteState === VoiceActionUtils.DominantMuteState.SERVER_MUTE) {
       const obj2 = { color: voicePanelButtonStyles.iconFillRed.color };
-      tmp3Result = map1(tmp(9131).MicrophoneDenyIcon, obj2);
+      tmp3Result = map1(tmp(9140).MicrophoneDenyIcon, obj2);
     } else {
       let color;
-      const VoicePanelRiveMicButton = tmp(11573).VoicePanelRiveMicButton;
+      const VoicePanelRiveMicButton = tmp(11590).VoicePanelRiveMicButton;
       const tmp3 = map1;
       if (mute) {
         color = tmp5.iconFillRed.color;

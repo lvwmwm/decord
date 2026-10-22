@@ -1,20 +1,20 @@
-// Module ID: 13147
-// Function ID: 13148
+// Module ID: 13183
+// Function ID: 13184
 // Name: SuggestedSearchActionCreators
-// Dependencies: [5, 13107, 13108, 1087, 569, 13146, 13130, 584, 1297, 2]
+// Dependencies: [5, 13143, 13144, 1087, 569, 13182, 13166, 584, 1297, 2]
 // Exports: advanceSuggestedSearches, fetchInitialSuggestedSearches
 
-// Module 13147 (SuggestedSearchActionCreators)
+// Module 13183 (SuggestedSearchActionCreators)
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import SmartSearchExperiments from "SmartSearchExperiments" /* 13146 */;
+import SmartSearchExperiments from "SmartSearchExperiments" /* 13182 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SuggestedSearchStore from "SuggestedSearchStore" /* 13107 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 13108 */;
+import SuggestedSearchStore from "SuggestedSearchStore" /* 13143 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 13144 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
-let c2, c3, closure_6, parentSuggestedSearch, responseStatusCode, status, suggestedSearches;
+let c2, c3, closure_6, contextualProperties, responseStatusCode, status, suggestedSearches;
 
 let SUGGESTED_SEARCHES_RETRY_MAX_MS;
 let SUGGESTED_SEARCHES_RETRY_MIN_MS;
@@ -35,20 +35,19 @@ function performSuggestedSearchesFetch() {
   return obj(...arguments);
 }
 let obj = function _performSuggestedSearchesFetch() {
-  obj = _asyncToGenerator(async (arg0, arg1, windowSize) => {
+  obj = _asyncToGenerator(async (scope, arg1, windowSize) => {
     let closure_4;
-    let closure_0 = arg0;
     let closure_1 = arg1;
     let c8 = 0;
     let c9 = 0;
     let c7 = 0;
     const iter = (async (arg0, value) => {
       let obj7;
-      const guildId = smartSearchQuery.guildId;
-      const channelIds = smartSearchQuery.channelIds;
+      const guildId = scope.guildId;
+      const channelIds = scope.channelIds;
       const obj12 = closure_133_1(closure_133_2[6]);
-      parentSuggestedSearch = obj12.getParentSuggestedSearch(smartSearchQuery.queryText);
-      const obj6 = { type: "SUGGESTED_SEARCHES_FETCH_START", scope: smartSearchQuery };
+      contextualProperties = obj12.getContextualProperties(scope, closure_1);
+      const obj6 = { type: "SUGGESTED_SEARCHES_FETCH_START", scope };
       const obj13 = closure_133_1(closure_133_2[7]);
       obj13.dispatch(obj6);
       const _performance3 = performance;
@@ -61,12 +60,12 @@ let obj = function _performSuggestedSearchesFetch() {
       if (2 === c8) {
         c7 = 0;
         closure_133_8.fail(closure_133_7);
-        const obj10 = { type: "SUGGESTED_SEARCHES_FETCH_FAILURE", scope: smartSearchQuery, windowSize };
+        const obj10 = { type: "SUGGESTED_SEARCHES_FETCH_FAILURE", scope, windowSize };
         const obj2 = closure_133_1(closure_133_2[7]);
         obj2.dispatch(obj10);
         const _performance = performance;
         status = undefined;
-        const obj11 = { smartSearchQuery, requestId: null, durationMs: performance.now() - closure_6, responseStatusCode, suggestedSearches: [], parentSuggestedSearch };
+        const obj11 = { requestId: null, durationMs: performance.now() - closure_6, responseStatusCode, suggestedSearches: [], contextualProperties };
         const trackSuggestedSearchesReturned = closure_133_1(closure_133_2[6]).trackSuggestedSearchesReturned;
         if (status != null) {
           status = status.status;
@@ -75,7 +74,7 @@ let obj = function _performSuggestedSearchesFetch() {
         if (status == null) {
           responseStatusCode = null;
         }
-        const result = trackSuggestedSearchesReturned(obj11, closure_1);
+        const result = trackSuggestedSearchesReturned(obj11);
       } else if (arg0 === 1) {
         let c9 = 3;
         throw value;
@@ -88,22 +87,22 @@ let obj = function _performSuggestedSearchesFetch() {
         closure_133_8.succeed();
         const suggestions = closure_7.body.suggestions;
         suggestedSearches = suggestions.map((suggestionId) => ({ suggestionId: suggestionId.suggestion_id, suggestedSearchText: suggestionId.suggested_search_text }));
-        const obj14 = { type: "SUGGESTED_SEARCHES_FETCH_SUCCESS", scope: smartSearchQuery, requestId: closure_7.body.request_id, suggestedSearches, windowSize };
+        const obj14 = { type: "SUGGESTED_SEARCHES_FETCH_SUCCESS", scope, requestId: closure_7.body.request_id, suggestedSearches, windowSize };
         const obj9 = closure_133_1(closure_133_2[7]);
         obj9.dispatch(obj14);
         const _performance2 = performance;
-        const obj15 = { smartSearchQuery, requestId: closure_7.body.request_id, durationMs: performance.now() - closure_6, responseStatusCode: closure_7.status, suggestedSearches, parentSuggestedSearch };
+        const obj15 = { requestId: closure_7.body.request_id, durationMs: performance.now() - closure_6, responseStatusCode: closure_7.status, suggestedSearches, contextualProperties };
         const trackSuggestedSearchesReturned2 = closure_133_1(closure_133_2[6]).trackSuggestedSearchesReturned;
-        const result1 = trackSuggestedSearchesReturned2(obj15, closure_1);
+        const result1 = trackSuggestedSearchesReturned2(obj15);
         c7 = 0;
       }
       await "IconComponent";
-      parentSuggestedSearch = tmp;
-      let tmp30 = closure_2;
+      contextualProperties = tmp;
+      let tmp28 = closure_2;
       if (closure_2 === undefined) {
-        tmp30 = null;
+        tmp28 = null;
       }
-      windowSize = tmp30;
+      windowSize = tmp28;
       return "Reflect";
     })();
     iter.next();

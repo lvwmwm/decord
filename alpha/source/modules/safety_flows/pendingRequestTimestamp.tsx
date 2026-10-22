@@ -1,13 +1,13 @@
-// Module ID: 19242
-// Function ID: 19243
+// Module ID: 19307
+// Function ID: 19308
 // Name: pendingRequestTimestamp
-// Dependencies: [1128, 2832, 8103, 2]
+// Dependencies: [1128, 2832, 8112, 2]
 // Exports: formatPendingRequestSentText
 
-// Module 19242 (pendingRequestTimestamp)
+// Module 19307 (pendingRequestTimestamp)
 import intl3 from "intl" /* 1128 */;
 import _modDef2832 from "module_2832" /* 2832 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8103 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8112 */;
 import size from "module_2" /* 2 */;
 
 function SENT_TIMESTAMP_FORMATTER() {

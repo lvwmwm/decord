@@ -1,11 +1,11 @@
-// Module ID: 10466
-// Function ID: 10467
+// Module ID: 10478
+// Function ID: 10479
 // Name: useShouldShowGiftingPromotionDeco
-// Dependencies: [1394, 558, 10408, 2]
+// Dependencies: [1394, 558, 10420, 2]
 
-// Module 10466 (useShouldShowGiftingPromotionDeco)
+// Module 10478 (useShouldShowGiftingPromotionDeco)
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import NativeGiftContext from "NativeGiftContext" /* 10408 */;
+import NativeGiftContext from "NativeGiftContext" /* 10420 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

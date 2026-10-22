@@ -1,13 +1,13 @@
-// Module ID: 12193
-// Function ID: 12194
+// Module ID: 12214
+// Function ID: 12215
 // Name: ConjureVersionRestoreConfirm
-// Dependencies: [32, 19, 21, 558, 576, 1128, 3830, 6966, 6879, 5894, 5890, 2]
+// Dependencies: [32, 19, 21, 558, 576, 1128, 3830, 6973, 6886, 5901, 5897, 2]
 // Exports: confirmRestoreVersion
 
-// Module 12193 (ConjureVersionRestoreConfirm)
+// Module 12214 (ConjureVersionRestoreConfirm)
 import react2 from "react" /* 576 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import useAlertStore from "useAlertStore" /* 5890 */;
+import useAlertStore from "useAlertStore" /* 5897 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -19,9 +19,9 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 const intl7 = tmp(1128);
-const AlertModal2 = tmp(5894);
-const TableCheckboxRow2 = tmp(6879);
-const TableRowGroup2 = tmp(6966);
+const AlertModal2 = tmp(5901);
+const TableCheckboxRow2 = tmp(6886);
+const TableRowGroup2 = tmp(6973);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureVersionRestoreAlert(matchingBackup) {
   let TableCheckboxRow;
@@ -174,9 +174,9 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
   tmp4Result = undefined;
   if (null != matchingBackup) {
     let obj2 = { hasIcons: false, children: tmp4(TableCheckboxRow, obj3) };
-    const TableRowGroup = tmp5(6966).TableRowGroup;
+    const TableRowGroup = tmp5(6973).TableRowGroup;
     obj3 = { label: intl3.string(tmp7(3830)["+/pFME"]), subLabel: intl4.string(tmp7(3830)["+I112y"]), checked: first, onPress: tmp3 };
-    TableCheckboxRow = tmp5(6879).TableCheckboxRow;
+    TableCheckboxRow = tmp5(6886).TableCheckboxRow;
     intl3 = tmp5(1128).intl;
     intl4 = tmp5(1128).intl;
     tmp4Result = tmp4(TableRowGroup, obj2);
@@ -197,11 +197,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
       return tmp(tmp2);
     }
   };
-  const AlertActionButton = tmp5(5894).AlertActionButton;
+  const AlertActionButton = tmp5(5901).AlertActionButton;
   intl5 = tmp5(1128).intl;
   items = [tmp4(AlertActionButton, obj5), ];
   const obj6 = { variant: "secondary", text: intl6.string(intl7.t["ETE/oC"]) };
-  const AlertActionButton2 = tmp5(5894).AlertActionButton;
+  const AlertActionButton2 = tmp5(5901).AlertActionButton;
   intl6 = tmp5(1128).intl;
   items[1] = tmp4(AlertActionButton2, obj6);
   return tmp4(AlertModal, obj);

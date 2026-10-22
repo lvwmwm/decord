@@ -1,21 +1,21 @@
-// Module ID: 16069
-// Function ID: 16070
+// Module ID: 16111
+// Function ID: 16112
 // Name: FamilyCenterActivitySection
-// Dependencies: [32, 19, 17, 7623, 21, 4966, 587, 558, 576, 8101, 8103, 16064, 5216, 12768, 1128, 2536, 16070, 6887, 2]
+// Dependencies: [32, 19, 17, 7630, 21, 4969, 587, 558, 576, 8110, 8112, 16106, 5220, 12800, 1128, 2536, 16112, 6894, 2]
 
-// Module 16069 (FamilyCenterActivitySection)
+// Module 16111 (FamilyCenterActivitySection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8101 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8103 */;
-import useFamilyCenterActivities from "useFamilyCenterActivities" /* 16064 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8110 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8112 */;
+import useFamilyCenterActivities from "useFamilyCenterActivities" /* 16106 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7623 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7630 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -104,7 +104,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
       let tmp17 = null;
       if (null !== tmp11) {
         const obj4 = { variant: "text-sm/medium", color: "text-muted", style: tmp4.description, children: tmp11 };
-        tmp17 = React4(tmp(5216).Text, obj4);
+        tmp17 = React4(tmp(5220).Text, obj4);
       }
       cResult[3] = tmp11;
       cResult[4] = tmp4.description;
@@ -160,7 +160,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
     const tmp14 = React4;
     if (null !== tmp10) {
       const obj3 = { variant: "text-sm/medium", color: "text-muted", style: tmp.description, children: tmp10 };
-      tmp14Result = tmp14(tmp3(5216).Text, obj3);
+      tmp14Result = tmp14(tmp3(5220).Text, obj3);
     }
     const obj6 = { children: items };
     items[1] = tmp14Result;
@@ -192,9 +192,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   const cResult = obj.c(36);
   displayType = displayType.displayType;
   const tmp4 = closure_13();
-  const obj2 = displayType(16064);
+  const obj2 = displayType(16106);
   const actionsForDisplayType = obj2.useActionsForDisplayType(displayType);
-  const obj3 = displayType(16064);
+  const obj3 = displayType(16106);
   const actionTotalsForDisplayType = obj3.useActionTotalsForDisplayType(displayType);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = {};
@@ -203,7 +203,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   } else {
     first = cResult[0];
   }
-  const tmpResult = displayType(12768);
+  const tmpResult = displayType(12800);
   const familyCenterActions = tmpResult.useFamilyCenterActions(first);
   const loadMore = familyCenterActions.loadMore;
   const isMoreLoading = familyCenterActions.isMoreLoading;
@@ -276,8 +276,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
                   obj8 = { style: tmp4.loadMoreButton, animating: true, color: "#fff", size: "small" };
                   tmp33Result = tmp33(tmp34, obj7);
                 } else {
-                  const obj9 = { style: tmp4.loadMore, accessibilityLabel: tmp13, accessibilityRole: "button", onPress: tmp12, children: closure_9(displayType(5216).Text, obj10) };
-                  const PressableOpacity = tmp(6887).PressableOpacity;
+                  const obj9 = { style: tmp4.loadMore, accessibilityLabel: tmp13, accessibilityRole: "button", onPress: tmp12, children: closure_9(displayType(5220).Text, obj10) };
+                  const PressableOpacity = tmp(6894).PressableOpacity;
                   obj10 = { style: tmp4.loadMoreButton, variant: "text-xs/semibold", color: "text-overlay-light", children: tmp13 };
                   tmp33Result = tmp33(PressableOpacity, obj9);
                 }
@@ -397,11 +397,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   let tmp19Result;
   displayType = displayType.displayType;
   const tmp = closure_13();
-  let obj = displayType(16064);
+  let obj = displayType(16106);
   const actionsForDisplayType = obj.useActionsForDisplayType(displayType);
-  const obj2 = displayType(16064);
+  const obj2 = displayType(16106);
   const actionTotalsForDisplayType = obj2.useActionTotalsForDisplayType(displayType);
-  const obj3 = displayType(12768);
+  const obj3 = displayType(12800);
   const familyCenterActions = obj3.useFamilyCenterActions({});
   const loadMore = familyCenterActions.loadMore;
   const isMoreLoading = familyCenterActions.isMoreLoading;
@@ -438,8 +438,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
         obj9 = { style: tmp.loadMoreButton, animating: true, color: "#fff", size: "small" };
         tmp19Result = tmp19(tmp18, obj8);
       } else {
-        const obj10 = { style: tmp.loadMore, accessibilityLabel: formatToPlainStringResult, accessibilityRole: "button", onPress: tmp8, children: closure_9(displayType(5216).Text, obj11) };
-        const PressableOpacity = tmp2(6887).PressableOpacity;
+        const obj10 = { style: tmp.loadMore, accessibilityLabel: formatToPlainStringResult, accessibilityRole: "button", onPress: tmp8, children: closure_9(displayType(5220).Text, obj11) };
+        const PressableOpacity = tmp2(6894).PressableOpacity;
         obj11 = { style: tmp.loadMoreButton, variant: "text-xs/semibold", color: "text-overlay-light", children: formatToPlainStringResult };
         tmp19Result = tmp19(PressableOpacity, obj10);
       }

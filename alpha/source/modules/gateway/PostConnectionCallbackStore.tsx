@@ -1,12 +1,12 @@
-// Module ID: 6838
-// Function ID: 6839
+// Module ID: 6845
+// Function ID: 6846
 // Name: PostConnectionCallbackStore
-// Dependencies: [6839, 6475, 584, 2]
+// Dependencies: [6846, 6482, 584, 2]
 // Exports: addPostConnectionCallback
 
-// Module 6838 (PostConnectionCallbackStore)
-import NewUserStore from "NewUserStore" /* 6839 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6475 */;
+// Module 6845 (PostConnectionCallbackStore)
+import NewUserStore from "NewUserStore" /* 6846 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6482 */;
 import Dispatcher_mod from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 

@@ -1,20 +1,20 @@
-// Module ID: 17735
-// Function ID: 17736
+// Module ID: 17805
+// Function ID: 17806
 // Name: ItemDetailsActionSheet
-// Dependencies: [19, 17, 4821, 4843, 8782, 21, 4966, 587, 558, 576, 504, 5586, 6905, 6862, 1202, 8799, 10961, 17736, 6966, 6882, 7275, 2]
+// Dependencies: [19, 17, 4821, 4843, 8791, 21, 4969, 587, 558, 576, 504, 5590, 6912, 6869, 1202, 8808, 10978, 17806, 6973, 6889, 7282, 2]
 
-// Module 17735 (ItemDetailsActionSheet)
+// Module 17805 (ItemDetailsActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
-import useChannelNameDefault from "useChannelName" /* 5586 */;
-import useDesignToggleDefault from "useDesignToggle" /* 6905 */;
+import useChannelNameDefault from "useChannelName" /* 5590 */;
+import useDesignToggleDefault from "useDesignToggle" /* 6912 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import ICYMIStore from "ICYMIStore" /* 8782 */;
+import ICYMIStore from "ICYMIStore" /* 8791 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,14 +25,14 @@ let obj2;
 let tmp;
 let tmp5;
 const native = tmp(1202);
-const GuildIcon = tmp(6862);
-const GuildIconDefault = tmp5(6862);
-const TableRow2 = tmp(6882);
-const TableRowGroup2 = tmp(6966);
-const ActionSheet2 = tmp(7275);
-const ICYMIUtils = tmp(8799);
-const ActionSheetIconHeader2 = tmp(10961);
-const ICYMIContentSettingControl = tmp(17736);
+const GuildIcon = tmp(6869);
+const GuildIconDefault = tmp5(6869);
+const TableRow2 = tmp(6889);
+const TableRowGroup2 = tmp(6973);
+const ActionSheet2 = tmp(7282);
+const ICYMIUtils = tmp(8808);
+const ActionSheetIconHeader2 = tmp(10978);
+const ICYMIContentSettingControl = tmp(17806);
 const View = react_native.View;
 ({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
 let obj = { divider: obj2 };

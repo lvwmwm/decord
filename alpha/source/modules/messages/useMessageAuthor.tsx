@@ -1,14 +1,14 @@
-// Module ID: 6345
-// Function ID: 6346
+// Module ID: 6352
+// Function ID: 6353
 // Name: useMessageAuthor
-// Dependencies: [4821, 4881, 4875, 4843, 4911, 1392, 558, 38, 576, 504, 5015, 6346, 2]
+// Dependencies: [4821, 4881, 4875, 4843, 4911, 1392, 558, 38, 576, 504, 5018, 6353, 2]
 // Exports: getMessageAuthor
 
-// Module 6345 (useMessageAuthor)
+// Module 6352 (useMessageAuthor)
 import _modDef38 from "module_38" /* 38 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import UserUtilsDefault from "UserUtils" /* 5015 */;
+import UserUtilsDefault from "UserUtils" /* 5018 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildMemberStore from "GuildMemberStore" /* 4881 */;
 import GuildRoleStore from "GuildRoleStore" /* 4875 */;
@@ -126,8 +126,8 @@ function useNullableMessageAuthor(message) {
       }
       const tmp27Result7 = get_initialized;
       let stateFromStores2 = tmp27Result7.useStateFromStores(tmp42, tmp44, tmp45);
-      const useName2 = stateFromStores6(5015).useName;
-      stateFromStores6(5015);
+      const useName2 = stateFromStores6(5018).useName;
+      stateFromStores6(5018);
       const tmp47 = stateFromStores6;
       if (message != null) {
         class R {
@@ -256,7 +256,7 @@ function useNullableMessageAuthor(message) {
                 return guild.getGuild(guild_id);
               }
             }
-            const tmp65 = tmp47(6346)(tmp64);
+            const tmp65 = tmp47(6353)(tmp64);
             if (null != message) {
               class F {
                 constructor() {
@@ -412,8 +412,8 @@ function useNullableMessageAuthor(message) {
         return role;
       }
     }
-    const useName = stateFromStores6(5015).useName;
-    stateFromStores6(5015);
+    const useName = stateFromStores6(5018).useName;
+    stateFromStores6(5018);
     if (message != null) {
       class F {
         constructor() {

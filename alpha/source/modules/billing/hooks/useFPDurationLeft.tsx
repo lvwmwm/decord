@@ -1,13 +1,13 @@
-// Module ID: 14663
-// Function ID: 14664
+// Module ID: 14707
+// Function ID: 14708
 // Name: useFPDurationLeft
-// Dependencies: [558, 576, 1128, 7531, 4794, 1257, 2]
+// Dependencies: [558, 576, 1128, 7538, 4794, 1257, 2]
 
-// Module 14663 (useFPDurationLeft)
+// Module 14707 (useFPDurationLeft)
 import react from "react" /* 576 */;
 import intl from "intl" /* 1128 */;
 import DateUtils from "DateUtils" /* 4794 */;
-import useCountdownDefault from "useCountdown" /* 7531 */;
+import useCountdownDefault from "useCountdown" /* 7538 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

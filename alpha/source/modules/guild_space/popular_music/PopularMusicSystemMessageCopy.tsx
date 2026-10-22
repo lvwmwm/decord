@@ -1,12 +1,12 @@
-// Module ID: 8331
-// Function ID: 8332
+// Module ID: 8340
+// Function ID: 8341
 // Name: PopularMusicSystemMessageCopy
-// Dependencies: [8330, 2440, 2]
+// Dependencies: [8339, 2440, 2]
 // Exports: getMobileMusicSystemMessage, getMusicSystemMessage
 
-// Module 8331 (PopularMusicSystemMessageCopy)
+// Module 8340 (PopularMusicSystemMessageCopy)
 import _modDef2440 from "module_2440" /* 2440 */;
-import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 8330 */;
+import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 8339 */;
 import size from "module_2" /* 2 */;
 
 function getMusicSystemMessageFor(trackTitle, name2, BlHpAk) {

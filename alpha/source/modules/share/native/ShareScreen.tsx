@@ -1,17 +1,17 @@
-// Module ID: 15038
-// Function ID: 15039
+// Module ID: 15082
+// Function ID: 15083
 // Name: ShareScreen
-// Dependencies: [5, 32, 19, 17, 4825, 4821, 4901, 1087, 12793, 10574, 21, 4966, 587, 1128, 15039, 12794, 15040, 15041, 1267, 9675, 5689, 1384, 8811, 9624, 12829, 2002, 5890, 15042, 15043, 6912, 12804, 1630, 12805, 15044, 2]
+// Dependencies: [5, 32, 19, 17, 4825, 4821, 4901, 1087, 12825, 10586, 21, 4969, 587, 1128, 15083, 12826, 15084, 15085, 1267, 9687, 5693, 1384, 8820, 9636, 12861, 2002, 5897, 15086, 15087, 6919, 12836, 1630, 12837, 15088, 2]
 // Exports: default
 
-// Module 15038 (ShareScreen)
+// Module 15082 (ShareScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1128 */;
-import UserRowConstants from "UserRowConstants" /* 10574 */;
-import ForwardConstants from "ForwardConstants" /* 12793 */;
-import ShareAttachmentsDefault from "ShareAttachments" /* 15042 */;
-import ShareEmbedDefault from "ShareEmbed" /* 15043 */;
+import UserRowConstants from "UserRowConstants" /* 10586 */;
+import ForwardConstants from "ForwardConstants" /* 12825 */;
+import ShareAttachmentsDefault from "ShareAttachments" /* 15086 */;
+import ShareEmbedDefault from "ShareEmbed" /* 15087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -20,7 +20,7 @@ import ChannelStore from "ChannelStore" /* 4821 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import size from "module_2" /* 2 */;
 
 let React, attachment_mimetypes, c4, channelId, closure_0, closure_1, closure_4, destination;
@@ -473,12 +473,12 @@ export default function ShareScreen(appEntryKey) {
     let tmp4Result;
     if (null != embed) {
       const obj = { attachments: sharedContent.attachments, isRevamp: true };
-      const items = [authStore4(ShareAttachmentsDefault, obj), ];
+      const items = [authStore3(ShareAttachmentsDefault, obj), ];
       embed = undefined;
       const tmp10 = ShareEmbedDefault;
-      const tmp4 = authStore5;
+      const tmp4 = authStore4;
       const tmp5 = closure_17;
-      const tmp6 = authStore4;
+      const tmp6 = authStore3;
       if (embed != null) {
         embed = tmp.embed;
       }

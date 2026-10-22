@@ -1,63 +1,88 @@
 // Module ID: 10206
 // Function ID: 10207
-// Dependencies: [41, 42]
+// Dependencies: [41, 42, 93, 95, 98, 10207, 10204]
 
 // Module 10206
+import _mod10204 from "module_10204" /* 10204 */;
+import mergeDateTimeComponent from "mergeDateTimeComponent" /* 10207 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-class OverlapRemovalRefiner {
-  constructor() {
-    _classCallCheck(this, OverlapRemovalRefiner);
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
-const entry = {
-  key: "refine",
-  value: function refine(debug, arg1) {
+class AbstractMergeDateTimeRefiner {
+  constructor() {
+    let constructResult;
     const self = this;
-    if (arg1.length < 2) {
-      return arg1;
+    _classCallCheck(this, AbstractMergeDateTimeRefiner);
+    const obj = _getPrototypeOf(AbstractMergeDateTimeRefiner);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      const items = [];
-      let first = arg1[0];
-      let num = 1;
-      let num2 = 1;
-      let tmp8 = first;
-      if (1 < arg1.length) {
-        do {
-          let tmp4;
-          let tmp = arg1[num];
-          if (tmp.index >= first.index + first.text.length) {
-            let arr = items.push(first);
-            tmp4 = tmp;
-          } else {
-            first = null;
-            let closure_1 = null;
-            if (tmp.text.length > first.text.length) {
-              first = tmp;
-              closure_1 = first;
-              tmp4 = tmp;
-            } else {
-              closure_1 = tmp;
-              tmp4 = first;
-            }
-            let debugResult = debug.debug(() => {
-              console.log("" + self.constructor.name + " remove " + closure_1 + " by " + first);
-            });
-          }
-          num = num2 + 1;
-          first = tmp4;
-          tmp8 = tmp4;
-          num2 = num;
-        } while (num < arg1.length);
-      }
-      if (null != tmp8) {
-        items.push(tmp8);
-      }
-      return items;
+      constructResult = obj(...arguments);
     }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(AbstractMergeDateTimeRefiner, _mod10204.MergingRefiner);
+const entry = {
+  key: "shouldMergeResults",
+  value: function shouldMergeResults(str, start, start2) {
+    start = start.start;
+    let isOnlyDateResult = start.isOnlyDate();
+    if (isOnlyDateResult) {
+      start2 = start2.start;
+      isOnlyDateResult = start2.isOnlyTime();
+    }
+    if (!isOnlyDateResult) {
+      const start3 = start2.start;
+      let isOnlyDateResult1 = start3.isOnlyDate();
+      if (isOnlyDateResult1) {
+        const start4 = start.start;
+        isOnlyDateResult1 = start4.isOnlyTime();
+      }
+      isOnlyDateResult = isOnlyDateResult1;
+    }
+    if (isOnlyDateResult) {
+      const self = this;
+      isOnlyDateResult = null != str.match(this.patternBetween());
+    }
+    return isOnlyDateResult;
   }
 };
-let items = [entry];
+const items = [
+  entry,
+  {
+    key: "mergeResults",
+    value: function mergeResults(arg0, start, text) {
+      start = start.start;
+      const isOnlyDateResult = start.isOnlyDate();
+      const mergeDateTimeResult = mergeDateTimeComponent.mergeDateTimeResult;
+      const tmp2 = isOnlyDateResult ? mergeDateTimeResult(start, text) : mergeDateTimeResult(text, start);
+      tmp2.index = start.index;
+      tmp2.text = start.text + arg0 + text.text;
+      return tmp2;
+    }
+  }
+];
 
-export default _createClass(OverlapRemovalRefiner, items);
+export default _createClass(AbstractMergeDateTimeRefiner, items);

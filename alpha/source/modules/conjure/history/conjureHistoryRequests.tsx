@@ -1,11 +1,11 @@
-// Module ID: 12183
-// Function ID: 12184
+// Module ID: 12204
+// Function ID: 12205
 // Name: conjureHistoryRequests
-// Dependencies: [5, 10749, 10743, 12184, 10698, 2]
+// Dependencies: [5, 10763, 10755, 12205, 10710, 2]
 // Exports: createDatabaseRestorePoint, fetchDatabaseRestorePoints, fetchDatabaseRestoreWindow, fetchVersionHistory, restoreDatabaseToPoint, restoreDatabaseToTimestamp, restoreSourceHistoryEntry
 
-// Module 12183 (conjureHistoryRequests)
-import conjureWorkerFetch from "conjureWorkerFetch" /* 10749 */;
+// Module 12204 (conjureHistoryRequests)
+import conjureWorkerFetch from "conjureWorkerFetch" /* 10763 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -242,7 +242,7 @@ obj = function _fetchDatabaseRestorePoints() {
     let c4 = 0;
     return (async function(arg0, value) {
       let obj5;
-      let obj8;
+      let obj6;
       if (c4 === 2) {
         c4 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -268,13 +268,13 @@ obj = function _fetchDatabaseRestorePoints() {
               closure_2 = tmp;
               closure_0 = undefined;
               environment = undefined;
-              const obj4 = { query: obj5 };
+              const obj4 = { query: obj6 };
               c3 = 1;
               c4 = 1;
-              obj5 = { environment };
-              const obj6 = { value: obj8.fetchConjureWorker(closure_0, "/agent/database/restore-points", obj4), done: false };
-              obj8 = conjureWorkerFetch;
-              return obj6;
+              obj6 = { environment };
+              const obj7 = { value: obj5.fetchConjureWorker(closure_0, "/agent/database/restore-points", obj4), done: false };
+              obj5 = conjureWorkerFetch;
+              return obj7;
             }
           } else if (1 === tmp4) {
             if (arg0 === 1) {
@@ -317,9 +317,9 @@ obj = function _fetchDatabaseRestorePoints() {
             c4 = 3;
             return { value: restorePoints, done: true };
           }
-        } catch (tmp15) {
+        } catch (tmp19) {
           c4 = 3;
-          throw tmp15;
+          throw tmp19;
         }
       }
     })();

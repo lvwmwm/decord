@@ -1,31 +1,7 @@
 // Module ID: 8202
 // Function ID: 8203
-// Dependencies: [8199]
+// Dependencies: []
 
 // Module 8202
-import _mod8199 from "module_8199" /* 8199 */;
 
-
-export default {
-  isAvifFile(getUint32) {
-    if (getUint32) {
-      try {
-        const obj = _mod8199;
-        let parseBoxResult = obj.parseBox(getUint32, 0);
-        const tmp4 = parseBoxResult;
-        if (tmp4) {
-          parseBoxResult = "avif" === parseBoxResult.majorBrand;
-        }
-        return parseBoxResult;
-      } catch (err) {
-        return false;
-      }
-    } else {
-      return false;
-    }
-  },
-  findAvifOffsets(byteLength) {
-    const obj = _mod8199;
-    return obj.findOffsets(byteLength);
-  }
-};
+export default { USE_FILE: true, USE_JFIF: true, USE_PNG_FILE: true, USE_EXIF: true, USE_IPTC: true, USE_XMP: true, USE_ICC: true, USE_MPF: true, USE_PHOTOSHOP: true, USE_THUMBNAIL: true, USE_TIFF: true, USE_JPEG: true, USE_PNG: true, USE_HEIC: true, USE_AVIF: true, USE_WEBP: true, USE_GIF: true, USE_MAKER_NOTES: true };

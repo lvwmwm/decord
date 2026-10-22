@@ -1,10 +1,10 @@
-// Module ID: 8310
-// Function ID: 8311
+// Module ID: 8319
+// Function ID: 8320
 // Name: useUserCommunicationDisabled
 // Dependencies: [4881, 1392, 558, 576, 504, 4888, 2]
 // Exports: userCommunicationDisabled
 
-// Module 8310 (useUserCommunicationDisabled)
+// Module 8319 (useUserCommunicationDisabled)
 import react from "react" /* 576 */;
 import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4888 */;
 import GuildMemberStore from "GuildMemberStore" /* 4881 */;

@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 
 let closure_3 = ["_state", "_version"];
 const Store = Store2.Store;
-let closure_6 = { _state: "toCharArray$esjava$1", _version: "Symbol" };
+let closure_6 = { _state: "r", _version: "emoji" };
 let c7 = null;
 class PersistedStore extends Store {
   constructor(arg0, arg1, arg2) {

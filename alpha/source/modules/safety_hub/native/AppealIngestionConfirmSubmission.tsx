@@ -1,23 +1,23 @@
-// Module ID: 12751
-// Function ID: 12752
+// Module ID: 12783
+// Function ID: 12784
 // Name: AppealIngestionConfirmSubmission
-// Dependencies: [19, 17, 7898, 1087, 21, 4966, 504, 12722, 1128, 12728, 12752, 7873, 5216, 5192, 12750, 2002, 584, 12731, 12747, 2]
+// Dependencies: [19, 17, 7906, 1087, 21, 4969, 504, 12754, 1128, 12760, 12784, 7881, 5220, 5196, 12782, 2002, 584, 12763, 12779, 2]
 // Exports: default
 
-// Module 12751 (AppealIngestionConfirmSubmission)
+// Module 12783 (AppealIngestionConfirmSubmission)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1087 */;
 import intl5 from "intl" /* 1128 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7873 */;
-import useSafetyHubClassifications from "useSafetyHubClassifications" /* 12722 */;
-import AppealIngestionModal from "AppealIngestionModal" /* 12728 */;
-import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 12747 */;
-import AppealIngestionBreadcrumbsDefault from "AppealIngestionBreadcrumbs" /* 12752 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7881 */;
+import useSafetyHubClassifications from "useSafetyHubClassifications" /* 12754 */;
+import AppealIngestionModal from "AppealIngestionModal" /* 12760 */;
+import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 12779 */;
+import AppealIngestionBreadcrumbsDefault from "AppealIngestionBreadcrumbs" /* 12784 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7898 */;
+import SafetyHubStore from "SafetyHubStore" /* 7906 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -64,7 +64,7 @@ export default function AppealIngestionConfirmSubmission(isDsaEligible) {
   const stringResult = intl.string(intl5.t["C5q+pW"]);
   const intl2 = tmp2(1128).intl;
   const stringResult1 = intl2.string(intl5.t["G2g/g5"]);
-  const AppealIngestionModalScreen = tmp2(12728).AppealIngestionModalScreen;
+  const AppealIngestionModalScreen = tmp2(12760).AppealIngestionModalScreen;
   const items3 = [metroRequire(AppealIngestionModal.AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), ];
   let obj2 = { style: tmp.container, children: items5 };
   let obj3 = { reasons: items4.filter((item) => item.length > 0) };
@@ -99,7 +99,7 @@ export default function AppealIngestionConfirmSubmission(isDsaEligible) {
         },
       children: stringResult2
     };
-    const Text = tmp2(5216).Text;
+    const Text = tmp2(5220).Text;
     if (stateFromStores2.length > 0) {
       const intl4 = tmp2(1128).intl;
       stringResult2 = intl4.string(tmp2(1128).t.tnE3bZ);
@@ -113,7 +113,7 @@ export default function AppealIngestionConfirmSubmission(isDsaEligible) {
   let tmp12Result = flagged_content.length > 0;
   if (tmp12Result) {
     const obj5 = { flaggedContent: flagged_content };
-    tmp12Result = tmp12(tmp14(12731), obj5);
+    tmp12Result = tmp12(tmp14(12763), obj5);
   }
   const obj6 = { children: items3 };
   items5[2] = tmp12Result;

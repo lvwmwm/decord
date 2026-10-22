@@ -1,13 +1,13 @@
-// Module ID: 9040
-// Function ID: 9041
+// Module ID: 9049
+// Function ID: 9050
 // Name: ReadStateUtils
-// Dependencies: [6750, 6683, 6684, 558, 576, 504, 2]
+// Dependencies: [6757, 6690, 6691, 558, 576, 504, 2]
 // Exports: getHasImportantUnread
 
-// Module 9040 (ReadStateUtils)
-import ReadStateConstants from "ReadStateConstants" /* 6684 */;
-import ReadStateStore from "ReadStateStore" /* 6750 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6683 */;
+// Module 9049 (ReadStateUtils)
+import ReadStateConstants from "ReadStateConstants" /* 6691 */;
+import ReadStateStore from "ReadStateStore" /* 6757 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6690 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

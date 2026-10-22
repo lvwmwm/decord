@@ -1,7 +1,7 @@
 // Module ID: 1207
 // Function ID: 1208
 // Name: ThemeStore
-// Dependencies: [1208, 1209, 1246, 1210, 1097, 1087, 1245, 1252, 15282, 504, 4802, 584, 2]
+// Dependencies: [1208, 1209, 1246, 1210, 1097, 1087, 1245, 1252, 15326, 504, 4802, 584, 2]
 
 // Module 1207 (ThemeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -17,13 +17,11 @@ import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
 import ThemeConstants from "ThemeConstants" /* 1210 */;
 import size from "module_2" /* 2 */;
 
-let syncedThemesEnabled;
-
 let THEME_PREFERENCES_MOBILE;
 let THEME_PREFERENCES_WEB_REFRESH;
 let metroRequire;
 let tmp;
-const updateBackgroundColorDefault = tmp(15282);
+const updateBackgroundColorDefault = tmp(15326);
 function handleThemeChange() {
   const tmp3 = resolveThemeDefault(systemTheme, THEME_PREFERENCES_MOBILE, c15);
   let flag = tmp3 !== closure_13;
@@ -43,7 +41,7 @@ let tmp3 = getSystemThemeDefault();
 let systemTheme = tmp3;
 let closure_13 = THEME_PREFERENCES_MOBILE[tmp3];
 let syncedClientThemes = {};
-const authStore3 = false;
+let c15 = false;
 const PersistedStore = get_initializedDefault.PersistedStore;
 class ThemeStore extends PersistedStore {
   initialize(theme) {
@@ -62,7 +60,7 @@ class ThemeStore extends PersistedStore {
         syncedClientThemes = theme.syncedClientThemes;
       }
       if (null != theme.syncedThemesEnabled) {
-        syncedThemesEnabled = theme.syncedThemesEnabled;
+        let c15 = theme.syncedThemesEnabled;
       }
     }
     this.waitFor(UnsyncedUserSettingsStore, SelectivelySyncedUserSettingsStore, UserSettingsProtoStore);
@@ -162,7 +160,7 @@ let obj2 = {
       const tmp2 = importDefault;
       if (flag) {
         closure_13 = tmp7;
-        tmp2(15282)(closure_13);
+        tmp2(15326)(closure_13);
         flag = true;
       }
       tmp = flag;

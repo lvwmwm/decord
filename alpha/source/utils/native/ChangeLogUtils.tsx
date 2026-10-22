@@ -1,21 +1,21 @@
-// Module ID: 8445
-// Function ID: 8446
+// Module ID: 8454
+// Function ID: 8455
 // Name: utils/ChangeLogUtils
-// Dependencies: [19, 17, 21, 4966, 587, 6686, 5959, 5216, 558, 576, 8446, 7054, 8447, 8448, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 6693, 5966, 5220, 558, 576, 8455, 7061, 8456, 8457, 2]
 
-// Module 8445 (utils/ChangeLogUtils)
+// Module 8454 (utils/ChangeLogUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment2 from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import LegacyTokens from "LegacyTokens" /* 6686 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7054 */;
-import MarkupRulesUtils from "MarkupRulesUtils" /* 8447 */;
-import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 8448 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import LegacyTokens from "LegacyTokens" /* 6693 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7061 */;
+import MarkupRulesUtils from "MarkupRulesUtils" /* 8456 */;
+import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 8457 */;
 import React from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4966 */;
-import CustomMarkup from "CustomMarkup" /* 5959 */;
+import createStyles_mod from "createStyles" /* 4969 */;
+import CustomMarkup from "CustomMarkup" /* 5966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -270,7 +270,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
     Paragraph = components.Paragraph;
   }
   if (Paragraph == null) {
-    Paragraph = tmp(5216).Text;
+    Paragraph = tmp(5220).Text;
   }
   if (cResult[0] === Paragraph) {
     if (cResult[1] === node.content) {
@@ -306,10 +306,10 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
     }
   }
   const forResult = Symbol.for("react.early_return_sentinel");
-  const tmpResult = output(8446);
+  const tmpResult = output(8455);
   const result = tmpResult.splitParagraphAtImages(node.content);
   if (true !== state.changelogImagesDisabled) {
-    const tmpResult2 = output(8446);
+    const tmpResult2 = output(8455);
     if (tmpResult2.hasImageSegment(result)) {
       if (cResult[18] === Paragraph) {
         if (cResult[19] === output) {
@@ -470,15 +470,15 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
     Paragraph = components.Paragraph;
   }
   if (Paragraph == null) {
-    Paragraph = output(5216).Text;
+    Paragraph = output(5220).Text;
   }
   let tmp6 = dependencyMap;
-  const obj = output(8446);
+  const obj = output(8455);
   const result = obj.splitParagraphAtImages(node.content);
   const tmp5 = output;
   if (true !== state.changelogImagesDisabled) {
     let tmp7;
-    const tmp5Result = tmp5(8446);
+    const tmp5Result = tmp5(8455);
     if (tmp5Result.hasImageSegment(result)) {
       tmp7 = <View key={state.key}>{result.map((type, index) => {
         let tmp6;
@@ -570,7 +570,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
   const obj = ManaTypeConsolidationExperiment;
   if (obj.useManaTypeConsolidationExperiment("ChangeLogStrong")) {
     let str;
-    const Text = tmp(5216).Text;
+    const Text = tmp(5220).Text;
     const tmp5 = jsx;
     if (state != null) {
       str = state.textColor;

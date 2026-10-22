@@ -1,13 +1,13 @@
-// Module ID: 10056
-// Function ID: 10057
+// Module ID: 10068
+// Function ID: 10069
 // Name: BackgroundTaskManager
-// Dependencies: [5, 17, 1384, 10057, 10059, 2]
+// Dependencies: [5, 17, 1384, 10069, 10071, 2]
 // Exports: backgroundify, endBackgroundTask
 
-// Module 10056 (BackgroundTaskManager)
+// Module 10068 (BackgroundTaskManager)
 import react_native from "react-native" /* 17 */;
-import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 10057 */;
-import ForegroundServiceManagerTypes from "ForegroundServiceManagerTypes" /* 10059 */;
+import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 10069 */;
+import ForegroundServiceManagerTypes from "ForegroundServiceManagerTypes" /* 10071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import size from "module_2" /* 2 */;

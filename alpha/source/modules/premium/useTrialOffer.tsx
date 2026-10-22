@@ -1,14 +1,14 @@
-// Module ID: 7536
-// Function ID: 7537
+// Module ID: 7543
+// Function ID: 7544
 // Name: useTrialOffer
-// Dependencies: [32, 19, 1392, 7537, 558, 576, 504, 2053, 4816, 2]
+// Dependencies: [32, 19, 1392, 7544, 558, 576, 504, 2053, 4816, 2]
 // Exports: hasUserTrialOfferExpired
 
-// Module 7536 (useTrialOffer)
+// Module 7543 (useTrialOffer)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import UserOfferStore from "UserOfferStore" /* 7537 */;
+import UserOfferStore from "UserOfferStore" /* 7544 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -139,7 +139,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrialOffe
                 }
                 const obj = timeout;
                 if (timeout != null) {
-                  obj.start(num, f157090);
+                  obj.start(num, f157887);
                 }
               }
             });
@@ -194,7 +194,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrialOffe
   }
   const items2 = [first, stateFromStores];
   const effect = obj3.useEffect(function() {
-    const f157091 = () => {
+    const f157888 = () => {
       const tmp = first;
       if (!tmp) {
         if (stateFromStores.hasExpired) {
@@ -211,7 +211,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrialOffe
         }
         const obj = timeout;
         if (timeout != null) {
-          obj.start(num, f157091);
+          obj.start(num, f157888);
         }
       }
     };
@@ -229,7 +229,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrialOffe
             let time = expiresAt.getTime();
             num = time - Date.now();
           }
-          timeout.start(num, f157091);
+          timeout.start(num, f157888);
         }
         return () => timeout.stop();
       }

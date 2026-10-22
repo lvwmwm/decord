@@ -1,31 +1,31 @@
-// Module ID: 15728
-// Function ID: 15729
+// Module ID: 15770
+// Function ID: 15771
 // Name: ProfileCustomizationSettingScreen
-// Dependencies: [5, 109, 32, 19, 17, 11071, 8613, 1097, 1087, 21, 4966, 1128, 15729, 15836, 558, 576, 15845, 5234, 587, 1505, 7069, 8860, 11018, 7057, 15749, 15837, 573, 5693, 11136, 6903, 9657, 1506, 11759, 11094, 2]
+// Dependencies: [5, 109, 32, 19, 17, 11088, 8622, 1097, 1087, 21, 4969, 1128, 15771, 15878, 558, 576, 15887, 5238, 587, 1505, 7076, 8869, 11035, 7064, 15791, 15879, 573, 5697, 11153, 6910, 9669, 1506, 11792, 11111, 2]
 
-// Module 15728 (ProfileCustomizationSettingScreen)
+// Module 15770 (ProfileCustomizationSettingScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import intl2 from "intl" /* 1128 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5693 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7057 */;
-import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11018 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11136 */;
-import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 15729 */;
-import useUserProfileEditFormDefault from "useUserProfileEditForm" /* 15749 */;
-import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 15836 */;
-import useGuildProfileEditFormDefault from "useGuildProfileEditForm" /* 15837 */;
-import useMaybeFetchCollectiblesRecommendationsDefault from "useMaybeFetchCollectiblesRecommendations" /* 15845 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5697 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7064 */;
+import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11035 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11153 */;
+import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 15771 */;
+import useUserProfileEditFormDefault from "useUserProfileEditForm" /* 15791 */;
+import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 15878 */;
+import useGuildProfileEditFormDefault from "useGuildProfileEditForm" /* 15879 */;
+import useMaybeFetchCollectiblesRecommendationsDefault from "useMaybeFetchCollectiblesRecommendations" /* 15887 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11071 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8613 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11088 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8622 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -96,13 +96,13 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const cResult = obj.c(56);
   useMaybeFetchCollectiblesRecommendationsDefault();
   closure_19();
-  let obj2 = token(5234);
+  let obj2 = token(5238);
   token = obj2.useToken(nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND);
   [first, importDefault] = stateFromStores.useState(0);
   [dependencyMap, closure_3] = stateFromStores.useState(false);
   let obj3 = token(1505);
   const nativeStackNavigation = obj3.useNativeStackNavigation();
-  let obj4 = token(7069);
+  let obj4 = token(7076);
   const params = obj4.useSettingNavigationRoute().params;
   let autoFocusElement;
   if (params != null) {
@@ -148,7 +148,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       }
     }
   }
-  const useSegmentedControlState = tmp(8860).useSegmentedControlState;
+  const useSegmentedControlState = tmp(8869).useSegmentedControlState;
   const obj6 = {
     items: tmp14,
     pageWidth: first,
@@ -160,7 +160,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       return tmp(obj);
     }
   };
-  const tmpResult = tmp(8860);
+  const tmpResult = tmp(8869);
   if (field === ProfileCustomizationSubsection.GUILD) {
     class H {
       constructor(arg0) {

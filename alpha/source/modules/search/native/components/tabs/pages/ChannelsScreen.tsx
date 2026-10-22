@@ -1,19 +1,19 @@
-// Module ID: 17981
-// Function ID: 17982
+// Module ID: 18051
+// Function ID: 18052
 // Name: ChannelsScreen
-// Dependencies: [19, 5699, 13133, 13120, 9672, 9671, 21, 558, 576, 13113, 504, 17495, 17910, 1128, 4975, 17914, 13127, 17974, 17906, 17918, 2]
+// Dependencies: [19, 5703, 13169, 13156, 9684, 9683, 21, 558, 576, 13149, 504, 17565, 17980, 1128, 4978, 17984, 13163, 18044, 17976, 17988, 2]
 
-// Module 17981 (ChannelsScreen)
+// Module 18051 (ChannelsScreen)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1128 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4975 */;
-import TrackingConstants from "TrackingConstants" /* 9671 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13127 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4978 */;
+import TrackingConstants from "TrackingConstants" /* 9683 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13163 */;
 import react from "react" /* 19 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5699 */;
-import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 13133 */;
-import SearchQueryStore from "SearchQueryStore" /* 13120 */;
-import SearchConstants from "SearchConstants" /* 9672 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5703 */;
+import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 13169 */;
+import SearchQueryStore from "SearchQueryStore" /* 13156 */;
+import SearchConstants from "SearchConstants" /* 9684 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

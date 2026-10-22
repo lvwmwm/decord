@@ -1,10 +1,10 @@
-// Module ID: 17772
-// Function ID: 17773
+// Module ID: 17842
+// Function ID: 17843
 // Name: ICYMICardInteractionRow
-// Dependencies: [32, 19, 17, 7380, 4821, 6615, 4901, 1087, 1395, 21, 4913, 8262, 4966, 587, 1384, 4963, 558, 576, 504, 7388, 7543, 9783, 1128, 9308, 5216, 6887, 9941, 1105, 1417, 9739, 5651, 10613, 10962, 12801, 12373, 17766, 8518, 5207, 8305, 10037, 8800, 12789, 10045, 5234, 5240, 683, 7282, 2]
+// Dependencies: [32, 19, 17, 7387, 4821, 6622, 4901, 1087, 1395, 21, 4913, 8271, 4969, 587, 1384, 4966, 558, 576, 504, 7395, 7550, 9795, 1128, 9319, 5220, 6894, 9953, 1105, 1417, 9751, 5655, 10625, 10979, 12833, 12399, 17836, 8527, 5211, 8314, 10049, 8809, 12821, 10057, 5238, 5244, 683, 7289, 2]
 // Exports: onAddReaction
 
-// Module 17772 (ICYMICardInteractionRow)
+// Module 17842 (ICYMICardInteractionRow)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
@@ -12,30 +12,30 @@ import PlatformUtils from "PlatformUtils" /* 1384 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import ReactionUtils from "ReactionUtils" /* 4913 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5207 */;
-import Pressables from "Pressables" /* 6887 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7388 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7543 */;
-import ReactionActionCreators from "ReactionActionCreators" /* 8262 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 8305 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8800 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9739 */;
-import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9783 */;
-import PendingReplyActionCreators from "PendingReplyActionCreators" /* 10045 */;
-import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 12373 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 12789 */;
-import ForwardingIconDefault from "ForwardingIcon" /* 12801 */;
-import ICYMIShared from "ICYMIShared" /* 17766 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5211 */;
+import Pressables from "Pressables" /* 6894 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7395 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7550 */;
+import ReactionActionCreators from "ReactionActionCreators" /* 8271 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 8314 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8809 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9751 */;
+import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9795 */;
+import PendingReplyActionCreators from "PendingReplyActionCreators" /* 10057 */;
+import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 12399 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 12821 */;
+import ForwardingIconDefault from "ForwardingIcon" /* 12833 */;
+import ICYMIShared from "ICYMIShared" /* 17836 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7380 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7387 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6615 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6622 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ let map1;
 let metroRequire;
 let tmp4;
 let unpackModuleId;
-const ColorUtils = tmp4(4963);
+const ColorUtils = tmp4(4966);
 function EmojiReaction(messageId) {
   let backgroundColor1;
   let items5;
@@ -580,7 +580,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Forwar
       if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
         const intl = tmp(1128).intl;
         const stringResult = intl.string(intl3.t.xIUfJS);
-        const tmp13 = authStore3(ForwardingIconDefault, { size: "sm" });
+        const tmp13 = closure_15(ForwardingIconDefault, { size: "sm" });
         cResult[4] = stringResult;
         cResult[5] = tmp13;
         tmp9 = tmp13;
@@ -599,7 +599,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Forwar
         }
       }
       const obj2 = { onPress, style: tmp6, accessible: true, disabled, accessibilityLabel: tmp8, children: tmp9 };
-      const tmp16 = authStore3(Pressables.PressableOpacity, obj2);
+      const tmp16 = closure_15(Pressables.PressableOpacity, obj2);
       cResult[6] = disabled;
       cResult[7] = onPress;
       cResult[8] = tmp6;
@@ -621,7 +621,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Forwar
   disabled = disabled.disabled;
   const onPress = disabled.onPress;
   const tmp = closure_19();
-  const obj = { onPress, style: items, accessible: true, disabled, accessibilityLabel: intl.string(intl3.t.xIUfJS), children: authStore3(ForwardingIconDefault, { size: "sm" }) };
+  const obj = { onPress, style: items, accessible: true, disabled, accessibilityLabel: intl.string(intl3.t.xIUfJS), children: closure_15(ForwardingIconDefault, { size: "sm" }) };
   items = [, , ];
   ({ emojiContainer: arr[0], addEmojiContainer: arr[1] } = tmp);
   let disabled1 = null;
@@ -631,7 +631,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Forwar
   }
   items[2] = disabled1;
   intl = tmp3(1128).intl;
-  return authStore3(PressableOpacity, obj);
+  return closure_15(PressableOpacity, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReplyButton(arg0) {
@@ -657,7 +657,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReplyB
       if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
         const intl = tmp(1128).intl;
         const stringResult = intl.string(intl3.t["5NwaNY"]);
-        const tmp12 = authStore3(ArrowAngleLeftUpIcon.ArrowAngleLeftUpIcon, { size: "sm" });
+        const tmp12 = closure_15(ArrowAngleLeftUpIcon.ArrowAngleLeftUpIcon, { size: "sm" });
         cResult[4] = stringResult;
         cResult[5] = tmp12;
         tmp9 = tmp12;
@@ -676,7 +676,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReplyB
         }
       }
       const obj2 = { onPress, style: tmp6, accessible: true, disabled, accessibilityLabel: tmp8, children: tmp9 };
-      const tmp15 = authStore3(Pressables.PressableOpacity, obj2);
+      const tmp15 = closure_15(Pressables.PressableOpacity, obj2);
       cResult[6] = disabled;
       cResult[7] = onPress;
       cResult[8] = tmp6;
@@ -698,7 +698,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReplyB
   disabled = disabled.disabled;
   const onPress = disabled.onPress;
   const tmp = closure_19();
-  const obj = { onPress, style: items, accessible: true, disabled, accessibilityLabel: intl.string(intl3.t["5NwaNY"]), children: authStore3(ArrowAngleLeftUpIcon.ArrowAngleLeftUpIcon, { size: "sm" }) };
+  const obj = { onPress, style: items, accessible: true, disabled, accessibilityLabel: intl.string(intl3.t["5NwaNY"]), children: closure_15(ArrowAngleLeftUpIcon.ArrowAngleLeftUpIcon, { size: "sm" }) };
   items = [, , ];
   ({ emojiContainer: arr[0], addEmojiContainer: arr[1] } = tmp);
   let disabled1 = null;
@@ -708,7 +708,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReplyB
   }
   items[2] = disabled1;
   intl = tmp3(1128).intl;
-  return authStore3(PressableOpacity, obj);
+  return closure_15(PressableOpacity, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadAsCommentsButton(parentMessage) {
@@ -1270,8 +1270,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMICardInt
         tmp23Result,
         memo.map((reaction, index) => {
               const obj = { messageId: message.id, channel, reaction, count: reaction.type === MessageReactionsTypes.ReactionTypes.BURST ? reaction.burst_count : reaction.count, isBurstReaction: reaction.type === MessageReactionsTypes.ReactionTypes.BURST, handleItemInteracted };
-              const obj2 = { children: authStore3(EmojiReaction, obj) };
-              return authStore3(hasOwnProperty, obj2, "reaction-" + index);
+              const obj2 = { children: closure_15(EmojiReaction, obj) };
+              return closure_15(hasOwnProperty, obj2, "reaction-" + index);
             }),
 
       ];

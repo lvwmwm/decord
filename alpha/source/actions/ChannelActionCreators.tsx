@@ -1,25 +1,24 @@
-// Module ID: 7388
-// Function ID: 7389
+// Module ID: 7395
+// Function ID: 7396
 // Name: ChannelActionCreators
-// Dependencies: [32, 5, 7389, 4825, 4821, 6750, 1087, 7390, 1297, 6811, 5133, 5689, 6613, 584, 6800, 1267, 1114, 4973, 1128, 7401, 5691, 6362, 2]
+// Dependencies: [32, 5, 7396, 4825, 4821, 6757, 1087, 7397, 1297, 6818, 5137, 5693, 6620, 584, 6807, 1267, 1114, 4976, 1128, 7408, 5695, 6369, 2]
 
-// Module 7388 (ChannelActionCreators)
+// Module 7395 (ChannelActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import router_utils from "router_utils" /* 1114 */;
 import intl2 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import ChannelRecord from "ChannelRecord" /* 4825 */;
-import shared from "shared" /* 4973 */;
-import RootNavigationRef from "RootNavigationRef" /* 5133 */;
-import preloadChannelDefault from "preloadChannel" /* 5691 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6613 */;
-import isChangelogChannelDefault from "isChangelogChannel" /* 6800 */;
+import shared from "shared" /* 4976 */;
+import RootNavigationRef from "RootNavigationRef" /* 5137 */;
+import preloadChannelDefault from "preloadChannel" /* 5695 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6620 */;
+import isChangelogChannelDefault from "isChangelogChannel" /* 6807 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChangelogStore from "ChangelogStore" /* 7389 */;
+import ChangelogStore from "ChangelogStore" /* 7396 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import ReadStateStore from "ReadStateStore" /* 6750 */;
+import ReadStateStore from "ReadStateStore" /* 6757 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +30,7 @@ let closure_12;
 let map1;
 let tmp5;
 let unpackModuleId;
-const transitionToChannel = tmp5(5689);
+const transitionToChannel = tmp5(5693);
 let closure_6 = ChannelRecord.createChannelRecordFromServer;
 ({ AnalyticEvents: c9, AbortCodes: c10, Endpoints: unpackModuleId, Routes: closure_12, ChannelTypes: map1 } = Constants);
 let obj = {
@@ -301,7 +300,7 @@ let obj = {
         const tmp6 = require;
         if (null != obj2.getRootNavigationRef()) {
           const obj4 = { navigationReplace: flag2 };
-          const tmp6Result = tmp6(5689);
+          const tmp6Result = tmp6(5693);
           tmp6Result.transitionToChannel(channel.id, obj4);
           tmp3 = channel;
         } else {
@@ -447,7 +446,7 @@ let obj = {
     return tmp;
   },
   closePrivateChannel(id, arg1, arg2) {
-    let obj6;
+    let obj7;
     let flag = arg1;
     if (arg1 === undefined) {
       flag = false;
@@ -456,6 +455,7 @@ let obj = {
     if (arg2 === undefined) {
       flag2 = false;
     }
+    let flag3;
     if (isChangelogChannelDefault(id)) {
       const obj = { last_changelog_id: ChangelogStore.latestChangelogId(), unread_count: ReadStateStore.getUnreadCount(id) };
       const track = AnalyticsUtilsDefault.track;
@@ -463,29 +463,41 @@ let obj = {
       AnalyticsUtilsDefault;
       track(CHANGE_LOG_DM_REMOVED, obj);
     }
-    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "toCharArray$esjava$1" }, silent: flag2 };
+    const channel = ChannelStore.getChannel(id);
+    flag3 = undefined;
+    if (channel != null) {
+      flag3 = channel.isMultiUserDM();
+    }
+    if (flag3 == null) {
+      flag3 = false;
+    }
+    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "r", parent_id: "toCharArray$esjava$1" }, silent: flag2 };
     const tmpResult2 = DispatcherDefault;
     tmpResult2.dispatch(obj2);
     if (flag) {
-      const obj4 = router_utils;
-      obj4.transitionTo(constants2.FRIENDS);
+      const obj5 = flag3(1114);
+      obj5.transitionTo(constants2.FRIENDS);
     }
-    const HTTP = HTTPUtils.HTTP;
-    const request = { url: unpackModuleId.CHANNEL(id), query: { silent: flag2 }, oldFormErrors: true, rejectWithError: obj6.rejectWithMigratedError() };
+    const HTTP = flag3(1297).HTTP;
+    const request = { url: closure_11.CHANNEL(id), query: { silent: flag2 }, oldFormErrors: true, rejectWithError: obj7.rejectWithMigratedError() };
     const del = HTTP.del;
-    obj6 = HTTPUtils;
+    obj7 = flag3(1297);
     const delResult = del(request);
     const nextPromise = delResult.then(() => {
-      const AccessibilityAnnouncer = require("shared").AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
-      const intl = require("intl").intl;
-      announce(intl.string(require("intl").t.nRbucl));
+      const intl = intl2.intl;
+      const string = intl.string;
+      const t = intl2.t;
+      announce(string(flag3 ? t["Gdj/qt"] : t.nRbucl));
     });
     return nextPromise.catch(() => {
-      const AccessibilityAnnouncer = require("shared").AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
-      const intl = require("intl").intl;
-      announce(intl.string(require("intl").t.ndXVI5));
+      const intl = intl2.intl;
+      const string = intl.string;
+      const t = intl2.t;
+      announce(string(flag3 ? t.AKajgt : t.ndXVI5));
     });
   },
   bulkLeaveGroupDMs(channel_ids) {

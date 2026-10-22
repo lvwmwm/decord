@@ -1,19 +1,19 @@
-// Module ID: 6966
-// Function ID: 6967
+// Module ID: 6973
+// Function ID: 6974
 // Name: TableRowGroup
-// Dependencies: [19, 17, 21, 4966, 587, 558, 576, 5216, 5234, 6877, 6883, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5220, 5238, 6884, 6890, 2]
 // Exports: TableRowGroup
 
-// Module 6966 (TableRowGroup)
+// Module 6973 (TableRowGroup)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 5234 */;
-import TableRowDivider from "TableRowDivider" /* 6877 */;
-import react3 from "react" /* 6883 */;
+import useToken from "useToken" /* 5238 */;
+import TableRowDivider from "TableRowDivider" /* 6884 */;
+import react3 from "react" /* 6890 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const Text_Text = tmp(5216);
+const Text_Text = tmp(5220);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;

@@ -1,55 +1,34 @@
 // Module ID: 15488
 // Function ID: 15489
-// Dependencies: [15447, 15489, 15493]
+// Dependencies: [15489, 15491, 15498, 15521, 15509, 15523, 15519, 15524]
 
 // Module 15488
-import _mod15447 from "module_15447" /* 15447 */;
 import _mod15489 from "module_15489" /* 15489 */;
+import _mod15491 from "module_15491" /* 15491 */;
+import _mod15498 from "module_15498" /* 15498 */;
+import _mod15509 from "module_15509" /* 15509 */;
+import _mod15519 from "module_15519" /* 15519 */;
+import _mod15521 from "module_15521" /* 15521 */;
+import _mod15523 from "module_15523" /* 15523 */;
+import propertyIsEnumerable from "propertyIsEnumerable" /* 15524 */;
 
-let tmp;
-const _mod15493 = tmp(15493);
-const f122811 = (arg0, arg1, arg2) => {
-  const tmp3 = _mod15447(arg0);
-  const tmp4 = _mod15489(tmp3);
-  if (0 === tmp4) {
-    return !c0 && -1;
-  } else {
-    let sum = _mod15493(arg2, tmp4);
-    const tmp16 = c0;
-    if (tmp16) {
-      if (arg1 != arg1) {
-        if (tmp4 > sum) {
-          while (tmp3[+sum] == tmp3[+sum]) {
-            sum = tmp7 + 1;
-          }
-          return true;
-        }
+if (!_mod15489) {
+  getOwnPropertyDescriptor = function getOwnPropertyDescriptor(arg0, arg1) {
+    const tmp3 = _mod15491(arg0);
+    const tmp4 = _mod15498(arg1);
+    if (!_mod15521) {
+      if (_mod15509(tmp3, tmp4)) {
+        const tmpResult = _mod15523;
+        const tmpResult2 = _mod15519;
+        return tmpResult(!tmpResult2(propertyIsEnumerable.f, tmp3, tmp4), tmp3[tmp4]);
       }
-      return !c0 && -1;
+    } else {
+      try {
+        return getOwnPropertyDescriptor(tmp3, tmp4);
+      } catch (err) {
+      }
     }
-    let sum1 = sum;
-    if (tmp4 > sum) {
-      let num;
-      while (true) {
-        num = c0;
-        if (c0) {
-          if (tmp3[sum1] === arg1) {
-            break;
-          }
-        }
-        sum1 = sum1 + 1;
-      }
-      if (!num) {
-        num = sum1;
-      }
-      if (!num) {
-        num = 0;
-      }
-      return num;
-    }
-  }
-};
-let c0 = false;
-const obj = { includes: f122811, indexOf: f122811 };
+  };
+}
 
-export default obj;
+export const f = getOwnPropertyDescriptor;

@@ -1,22 +1,22 @@
-// Module ID: 10024
-// Function ID: 10025
+// Module ID: 10036
+// Function ID: 10037
 // Name: FeedbackActionSheet
-// Dependencies: [32, 19, 17, 10003, 21, 4966, 587, 5192, 6639, 12, 10006, 5245, 6651, 10025, 2002, 1633, 5247, 7225, 7270, 5251, 5216, 10007, 6966, 6882, 6879, 1128, 2]
+// Dependencies: [32, 19, 17, 10015, 21, 4969, 587, 5196, 6646, 12, 10018, 5249, 6658, 10037, 2002, 1633, 5251, 7232, 7277, 5255, 5220, 10019, 6973, 6889, 6886, 1128, 2]
 // Exports: default
 
-// Module 10024 (FeedbackActionSheet)
+// Module 10036 (FeedbackActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6651 */;
-import Constants from "Constants" /* 10003 */;
-import FeedbackUtils from "FeedbackUtils" /* 10006 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6658 */;
+import Constants from "Constants" /* 10015 */;
+import FeedbackUtils from "FeedbackUtils" /* 10018 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet, onPress;
@@ -128,7 +128,7 @@ export default function FeedbackActionSheet(feedbackReasons) {
       tmp16 = undefined;
       obj3 = { rating, reason, dontShowAgain: first1 };
       ModalActionCreatorsDefault;
-      const tmp11 = asyncRequire(10025, dependencyMap.paths);
+      const tmp11 = asyncRequire(10037, dependencyMap.paths);
       if (View != null) {
         tmp16 = View(reason);
       }

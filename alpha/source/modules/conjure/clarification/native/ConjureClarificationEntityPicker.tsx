@@ -1,21 +1,21 @@
-// Module ID: 12389
-// Function ID: 12390
+// Module ID: 12415
+// Function ID: 12416
 // Name: ConjureClarificationEntityPicker
-// Dependencies: [19, 4899, 4843, 4911, 1392, 21, 558, 576, 12238, 5192, 12390, 12383, 6966, 6882, 11745, 504, 7322, 11747, 1128, 3830, 5586, 11749, 2]
+// Dependencies: [19, 4899, 4843, 4911, 1392, 21, 558, 576, 12261, 5196, 12416, 12409, 6973, 6889, 11774, 504, 7329, 11776, 1128, 3830, 5590, 11778, 2]
 
-// Module 12389 (ConjureClarificationEntityPicker)
+// Module 12415 (ConjureClarificationEntityPicker)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5192 */;
-import TableRow2 from "TableRow" /* 6882 */;
-import TableRowGroup2 from "TableRowGroup" /* 6966 */;
-import ConjureUtils from "ConjureUtils" /* 7322 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11747 */;
-import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 11749 */;
-import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 12238 */;
-import ConjureClarification from "ConjureClarification" /* 12383 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5196 */;
+import TableRow2 from "TableRow" /* 6889 */;
+import TableRowGroup2 from "TableRowGroup" /* 6973 */;
+import ConjureUtils from "ConjureUtils" /* 7329 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11776 */;
+import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 11778 */;
+import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 12261 */;
+import ConjureClarification from "ConjureClarification" /* 12409 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 4899 */;
 import GuildStore from "GuildStore" /* 4843 */;
@@ -166,7 +166,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Project
       name = first.name;
     }
     if (name == null) {
-      const tmp4Result = tmp4(12383);
+      const tmp4Result = tmp4(12409);
       name = tmp4Result.clarificationPickerPlaceholder("project", false);
     }
     let obj = { hasIcons: false, children: null };

@@ -1,8 +1,8 @@
-// Module ID: 6199
-// Function ID: 6200
+// Module ID: 6206
+// Function ID: 6207
 // Dependencies: [2]
 
-// Module 6199
+// Module 6206
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/mech_viper.png.js");

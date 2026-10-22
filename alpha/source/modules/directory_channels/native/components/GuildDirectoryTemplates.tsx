@@ -1,17 +1,17 @@
-// Module ID: 13091
-// Function ID: 13092
+// Module ID: 13127
+// Function ID: 13128
 // Name: GuildDirectoryTemplates
-// Dependencies: [19, 17, 13073, 13078, 21, 4966, 558, 576, 1202, 13092, 13100, 1505, 1633, 1128, 5216, 6966, 7009, 13077, 2]
+// Dependencies: [19, 17, 13109, 13114, 21, 4969, 558, 576, 1202, 13128, 13136, 1505, 1633, 1128, 5220, 6973, 7016, 13113, 2]
 
-// Module 13091 (GuildDirectoryTemplates)
+// Module 13127 (GuildDirectoryTemplates)
 import native from "native" /* 1202 */;
-import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 13078 */;
-import GuildDirectoryTemplatesIcons from "GuildDirectoryTemplatesIcons" /* 13092 */;
+import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 13114 */;
+import GuildDirectoryTemplatesIcons from "GuildDirectoryTemplatesIcons" /* 13128 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildDirectoryConstants from "GuildDirectoryConstants" /* 13073 */;
+import GuildDirectoryConstants from "GuildDirectoryConstants" /* 13109 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildTemplat
       }
     }
     const obj2 = { Icon: tmp3, message: guildTemplate.label, onPress: tmp4 };
-    const tmp8 = closure_9(onGuildTemplatePress(13100), obj2);
+    const tmp8 = closure_9(onGuildTemplatePress(13136), obj2);
     cResult[5] = guildTemplate.label;
     cResult[6] = tmp3;
     cResult[7] = tmp4;
@@ -91,7 +91,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildTemplat
       return onGuildTemplatePress(guildTemplate);
     }
   };
-  return closure_9(onGuildTemplatePress(13100), obj);
+  return closure_9(onGuildTemplatePress(13136), obj);
 });
 let closure_12 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;

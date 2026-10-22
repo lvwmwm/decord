@@ -1,15 +1,15 @@
-// Module ID: 18666
-// Function ID: 18667
+// Module ID: 18734
+// Function ID: 18735
 // Name: TextInputActionComponent
-// Dependencies: [32, 19, 21, 558, 576, 8571, 18663, 2000, 6994, 7160, 6988, 2]
+// Dependencies: [32, 19, 21, 558, 576, 8580, 18731, 2000, 7001, 7167, 6995, 2]
 
-// Module 18666 (TextInputActionComponent)
+// Module 18734 (TextInputActionComponent)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Server from "Server" /* 2000 */;
-import Input from "Input" /* 6988 */;
-import ComponentStateContext from "ComponentStateContext" /* 8571 */;
-import InteractionModalUtils from "InteractionModalUtils" /* 18663 */;
+import Input from "Input" /* 6995 */;
+import ComponentStateContext from "ComponentStateContext" /* 8580 */;
+import InteractionModalUtils from "InteractionModalUtils" /* 18731 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -71,7 +71,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                     if (Server.TextInputComponentStyle.SMALL === style) {
                       let tmp22;
                       if (cResult[17] !== tmp14) {
-                        const TextField = tmp(6994).TextField;
+                        const TextField = tmp(7001).TextField;
                         const merged = Object.assign(tmp14);
                         class F {
                           constructor(arg0) {
@@ -98,7 +98,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                     } else if (Server.TextInputComponentStyle.PARAGRAPH === style) {
                       let tmp16;
                       if (cResult[19] !== tmp14) {
-                        const TextAreaField = tmp(7160).TextAreaField;
+                        const TextAreaField = tmp(7167).TextAreaField;
                         const merged1 = Object.assign(tmp14);
                         class F {
                           constructor(arg0) {
@@ -293,17 +293,17 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }
   items = [type, executeStateUpdate];
   if (Server.TextInputComponentStyle.SMALL === style) {
-    const TextField = tmp(6994).TextField;
+    const TextField = tmp(7001).TextField;
     const merged = Object.assign(obj2);
     tmp8 = <TextField />;
   } else if (Server.TextInputComponentStyle.PARAGRAPH === style) {
-    const TextAreaField = tmp(7160).TextAreaField;
+    const TextAreaField = tmp(7167).TextAreaField;
     const merged1 = Object.assign(obj2);
     tmp8 = <TextAreaField />;
   }
   let tmp17 = tmp8;
   if (null != label) {
-    tmp17 = jsx(tmp(6988).Input, { label, required, errorMessage: error, children: tmp8 });
+    tmp17 = jsx(tmp(6995).Input, { label, required, errorMessage: error, children: tmp8 });
   }
   return tmp17;
 }));

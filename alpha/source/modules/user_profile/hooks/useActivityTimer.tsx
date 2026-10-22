@@ -1,12 +1,12 @@
-// Module ID: 14204
-// Function ID: 14205
+// Module ID: 14242
+// Function ID: 14243
 // Name: useActivityTimer
-// Dependencies: [32, 19, 1104, 8593, 558, 576, 4816, 2]
+// Dependencies: [32, 19, 1104, 8602, 558, 576, 4816, 2]
 // Exports: formatTime, formatTimeForA11yLabel
 
-// Module 14204 (useActivityTimer)
+// Module 14242 (useActivityTimer)
 import DurationsDefault from "Durations" /* 1104 */;
-import utils from "utils" /* 8593 */;
+import utils from "utils" /* 8602 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

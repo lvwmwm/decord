@@ -1,17 +1,17 @@
-// Module ID: 13145
-// Function ID: 13146
+// Module ID: 13181
+// Function ID: 13182
 // Name: SmartSearchActionCreators
-// Dependencies: [5, 4911, 13110, 13107, 1087, 13109, 13146, 13147, 13130, 584, 1297, 13111, 5992, 2]
+// Dependencies: [5, 4911, 13146, 13143, 1087, 13145, 13182, 13183, 13166, 584, 1297, 13147, 5999, 2]
 // Exports: fetchAnswer, setResultFeedback
 
-// Module 13145 (SmartSearchActionCreators)
+// Module 13181 (SmartSearchActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
-import SmartSearchResultsStoreDefault from "SmartSearchResultsStore" /* 13110 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13130 */;
+import SmartSearchResultsStoreDefault from "SmartSearchResultsStore" /* 13146 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13166 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
-import SuggestedSearchStore from "SuggestedSearchStore" /* 13107 */;
+import SuggestedSearchStore from "SuggestedSearchStore" /* 13143 */;
 import size from "module_2" /* 2 */;
 
 let obj = function _fetchAnswer() {
@@ -21,9 +21,9 @@ let obj = function _fetchAnswer() {
     let c2;
     let closure_1;
     let closure_8;
+    let contextualProperties;
     let message_citations;
     let obj10;
-    let parentSuggestedSearch;
     let smartSearchQuery;
     let str;
     function hydrateAndFilterCitations(message_citations) {
@@ -81,7 +81,7 @@ let obj = function _fetchAnswer() {
                 const _performance2 = performance;
                 closure_8 = performance.now();
                 const obj6 = closure_130_1(closure_130_2[8]);
-                parentSuggestedSearch = obj6.getParentSuggestedSearch(queryText);
+                contextualProperties = obj6.getContextualProperties(smartSearchQuery, c2);
                 const obj9 = { type: "SMART_SEARCH_FETCH_START", smartSearchQuery };
                 const obj7 = closure_130_1(closure_130_2[9]);
                 obj7.dispatch(obj9);
@@ -114,14 +114,14 @@ let obj = function _fetchAnswer() {
       let obj2 = closure_130_1(closure_130_2[9]);
       const obj12 = { type: "SMART_SEARCH_FETCH_FAILURE", smartSearchQuery, status: ERROR };
       obj2.dispatch(obj12);
-      const obj13 = { smartSearchQuery, requestId: null, durationMs: performance.now() - closure_8, responseStatus: str, smartSearchStatus: ERROR, answerText: "", citations: [], parentSuggestedSearch };
+      const obj13 = { smartSearchQuery, requestId: null, durationMs: performance.now() - closure_8, responseStatus: str, smartSearchStatus: ERROR, answerText: "", citations: [], contextualProperties };
       const _performance = performance;
       const trackSmartSearchAnswerReturned = closure_130_1(closure_130_2[8]).trackSmartSearchAnswerReturned;
       str = "error";
       if (404 === status) {
         str = "no_results";
       }
-      const result = trackSmartSearchAnswerReturned(obj13, c2);
+      const result = trackSmartSearchAnswerReturned(obj13);
     } else if (arg0 === 1) {
       c6 = 3;
       throw value;
@@ -139,10 +139,10 @@ let obj = function _fetchAnswer() {
       const dispatch = closure_130_1(closure_130_2[9]).dispatch;
       const tmp83 = closure_130_1(closure_130_2[9]);
       dispatch(obj14);
-      const obj15 = { smartSearchQuery, requestId: closure_10.body.request_id, durationMs: performance.now() - closure_8, responseStatus: closure_10.body.search_status, smartSearchStatus, answerText: closure_10.body.answer_text, citations, parentSuggestedSearch };
+      const obj15 = { smartSearchQuery, requestId: closure_10.body.request_id, durationMs: performance.now() - closure_8, responseStatus: closure_10.body.search_status, smartSearchStatus, answerText: closure_10.body.answer_text, citations, contextualProperties };
       const _performance3 = performance;
       const trackSmartSearchAnswerReturned2 = closure_130_1(closure_130_2[8]).trackSmartSearchAnswerReturned;
-      const result1 = trackSmartSearchAnswerReturned2(obj15, c2);
+      const result1 = trackSmartSearchAnswerReturned2(obj15);
       c4 = 0;
     }
     await "IconComponent";

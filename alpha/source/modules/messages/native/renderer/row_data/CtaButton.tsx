@@ -1,30 +1,29 @@
-// Module ID: 14464
-// Function ID: 14465
+// Module ID: 14508
+// Function ID: 14509
 // Name: CtaButton
-// Dependencies: [7367, 12759, 6633, 1128, 12761, 3154, 2]
+// Dependencies: [7374, 12791, 6640, 1128, 12793, 3154, 2]
 // Exports: createCtaButtons
 
-// Module 14464 (CtaButton)
+// Module 14508 (CtaButton)
 import intl5 from "intl" /* 1128 */;
 import _modDef3154 from "module_3154" /* 3154 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6633 */;
-import CtaButtonUtils from "CtaButtonUtils" /* 12759 */;
-import AgeVerificationSystemNotificationUtils from "AgeVerificationSystemNotificationUtils" /* 12761 */;
-import ExplicitMediaStore from "ExplicitMediaStore" /* 7367 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6640 */;
+import CtaButtonUtils from "CtaButtonUtils" /* 12791 */;
+import AgeVerificationSystemNotificationUtils from "AgeVerificationSystemNotificationUtils" /* 12793 */;
+import ExplicitMediaStore from "ExplicitMediaStore" /* 7374 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/CtaButton.tsx");
 
 export const createCtaButtons = function createCtaButtons(id, channel_id, arg2) {
   let intl;
-  let intl2;
   let intl3;
   let intl4;
   let obj19;
   let prop;
   let prop1;
   let prop2;
-  let tmp6;
+  let tmp7;
   const obj = CtaButtonUtils;
   const ctaButtonType = obj.getCtaButtonType(id, channel_id);
   const obj2 = AgeVerificationUtils;
@@ -32,34 +31,38 @@ export const createCtaButtons = function createCtaButtons(id, channel_id, arg2) 
   if (CtaButtonUtils.CtaButtonType.MARK_AS_FALSE_POSITIVE === ctaButtonType) {
     const obj3 = { text: intl4.string(intl5.t["4q1Elf"]), textColor: null, backgroundColor: null, callback: prop };
     intl4 = tmp(1128).intl;
-    ({ reportFpTextColor: obj9.textColor, reportFpBackgroundColor: obj9.backgroundColor } = arg2);
+    ({ reportFpTextColor: obj10.textColor, reportFpBackgroundColor: obj10.backgroundColor } = arg2);
     prop = undefined;
     if (ExplicitMediaStore.canSubmitFpReport(id)) {
-      prop = tmp(12759).CtaButtonType.MARK_AS_FALSE_POSITIVE;
+      prop = tmp(12791).CtaButtonType.MARK_AS_FALSE_POSITIVE;
     }
     return { ctaButton: obj3 };
   } else if (CtaButtonUtils.CtaButtonType.AGE_VERIFICATION_RETRY === ctaButtonType) {
-    const obj7 = { text: intl2.string(intl5.t["/nicWo"]), textColor: null, backgroundColor: null, callback: prop1 };
-    intl2 = tmp(1128).intl;
-    ({ retryTextColor: obj5.textColor, retryBackgroundColor: obj5.backgroundColor } = arg2);
+    const intl2 = tmp(1128).intl;
+    const string = intl2.string;
+    const tmpResult = AgeVerificationSystemNotificationUtils;
+    const result1 = tmpResult.isAgeVerificationMessageWithConfirmAgeCta(channel_id, id);
+    const t = tmp(1128).t;
+    ({ retryTextColor: obj6.textColor, retryBackgroundColor: obj6.backgroundColor } = arg2);
+    const obj7 = { text: string(result1 ? t.DVywUB : t["/nicWo"]), textColor: null, backgroundColor: null, callback: prop1 };
     prop1 = undefined;
     if (result) {
-      prop1 = tmp(12759).CtaButtonType.AGE_VERIFICATION_RETRY;
+      prop1 = tmp(12791).CtaButtonType.AGE_VERIFICATION_RETRY;
     }
-    const obj10 = { ctaButton: obj7, secondaryCtaButton: tmp6 };
-    tmp6 = undefined;
-    const tmpResult = AgeVerificationSystemNotificationUtils;
-    if (tmpResult.isAgeVerificationMessageWithManualReviewCta(channel_id, id)) {
-      const obj17 = { text: intl3.string(_modDef3154.Z61nkt), textColor: null, backgroundColor: null, callback: prop2 };
+    const obj8 = { ctaButton: obj7, secondaryCtaButton: tmp7 };
+    tmp7 = undefined;
+    const tmpResult2 = AgeVerificationSystemNotificationUtils;
+    if (tmpResult2.isAgeVerificationMessageWithManualReviewCta(channel_id, id)) {
+      const obj11 = { text: intl3.string(_modDef3154.Z61nkt), textColor: null, backgroundColor: null, callback: prop2 };
       intl3 = tmp(1128).intl;
-      ({ reportFpTextColor: obj8.textColor, reportFpBackgroundColor: obj8.backgroundColor } = arg2);
+      ({ reportFpTextColor: obj9.textColor, reportFpBackgroundColor: obj9.backgroundColor } = arg2);
       prop2 = undefined;
       if (result) {
-        prop2 = tmp(12759).CtaButtonType.AGE_VERIFICATION_MANUAL_REVIEW;
+        prop2 = tmp(12791).CtaButtonType.AGE_VERIFICATION_MANUAL_REVIEW;
       }
-      tmp6 = obj17;
+      tmp7 = obj11;
     }
-    return obj10;
+    return obj8;
   } else if (CtaButtonUtils.CtaButtonType.CONNECT_TO_TEEN === ctaButtonType) {
     const obj18 = { ctaButton: obj19 };
     obj19 = { text: intl.string(intl5.t.n8a49k), textColor: null, backgroundColor: null, callback: CtaButtonUtils.CtaButtonType.CONNECT_TO_TEEN };

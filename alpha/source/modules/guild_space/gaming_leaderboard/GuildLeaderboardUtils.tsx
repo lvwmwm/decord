@@ -1,15 +1,15 @@
-// Module ID: 10630
-// Function ID: 10631
+// Module ID: 10642
+// Function ID: 10643
 // Name: GuildLeaderboardUtils
-// Dependencies: [32, 10631, 1128, 2440, 4889, 1104, 2]
+// Dependencies: [32, 10643, 1128, 2440, 4889, 1104, 2]
 // Exports: decodeWinnerData, encodeWinnerData, getLeaderboardLeaderBadgeText, getLeaderboardLeaderDetailText, getLeaderboardWinnerBadgeText, getLeaderboardWinnerDetailText
 
-// Module 10630 (GuildLeaderboardUtils)
+// Module 10642 (GuildLeaderboardUtils)
 import DurationsDefault from "Durations" /* 1104 */;
 import intl6 from "intl" /* 1128 */;
 import _modDef2440 from "module_2440" /* 2440 */;
 import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4889 */;
-import GuildLeaderboardStatCopy from "GuildLeaderboardStatCopy" /* 10631 */;
+import GuildLeaderboardStatCopy from "GuildLeaderboardStatCopy" /* 10643 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

@@ -1,30 +1,30 @@
-// Module ID: 11622
-// Function ID: 11623
+// Module ID: 11639
+// Function ID: 11640
 // Name: RTCDebugOverlay
-// Dependencies: [109, 32, 19, 17, 4821, 4843, 5696, 5718, 7789, 1392, 5700, 21, 4966, 4963, 587, 558, 576, 1202, 504, 5586, 11623, 5719, 1128, 5226, 7200, 2]
+// Dependencies: [109, 32, 19, 17, 4821, 4843, 5700, 5723, 7798, 1392, 5704, 21, 4969, 4966, 587, 558, 576, 1202, 504, 5590, 11640, 5724, 1128, 5230, 7207, 2]
 
-// Module 11622 (RTCDebugOverlay)
+// Module 11639 (RTCDebugOverlay)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import components_Button_Button from "components/Button/Button" /* 5226 */;
-import Constants from "Constants" /* 5700 */;
-import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 5719 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7200 */;
-import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 11623 */;
+import components_Button_Button from "components/Button/Button" /* 5230 */;
+import Constants from "Constants" /* 5704 */;
+import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 5724 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7207 */;
+import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 11640 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5696 */;
-import RTCDebugStore from "RTCDebugStore" /* 5718 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7789 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5700 */;
+import RTCDebugStore from "RTCDebugStore" /* 5723 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7798 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
-import ColorUtils_mod from "ColorUtils" /* 4963 */;
+import createStyles_mod from "createStyles" /* 4969 */;
+import ColorUtils_mod from "ColorUtils" /* 4966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ let obj3;
 let tmp;
 const get_initialized = tmp(504);
 const native = tmp(1202);
-const f110109 = (data, index) => {
+const f110582 = (data, index) => {
   const obj = { data };
   return closure_1_17(closure_1_25, obj, index);
 };
@@ -104,7 +104,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sectio
   if (cResult[0] !== title) {
     const obj2 = { children: items };
     items = [title, ":"];
-    const tmp6 = authStore5(closure_22, obj2);
+    const tmp6 = authStore4(closure_22, obj2);
     cResult[0] = title;
     cResult[1] = tmp6;
     tmp3 = tmp6;
@@ -125,7 +125,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sectio
     }
     const obj3 = { children: items1 };
     items1 = [tmp3, tmp7];
-    const tmp12 = authStore5(closure_19, obj3);
+    const tmp12 = authStore4(closure_19, obj3);
     cResult[5] = tmp3;
     cResult[6] = tmp7;
     cResult[7] = tmp12;
@@ -148,10 +148,10 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sectio
   const obj = { children: items1 };
   items1 = [, ];
   const tmp = closure_21();
-  items1[0] = authStore5(closure_22, obj2);
+  items1[0] = authStore4(closure_22, obj2);
   const obj3 = { style: tmp.indent, children };
   items1[1] = closure_17(metroImportAll, obj3);
-  return authStore5(closure_19, obj);
+  return authStore4(closure_19, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 if (ReactCompilerGating.isReactCompilerEnabled()) {
@@ -495,7 +495,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDeb
   }
   const tmpResult4 = guildId(504);
   const stateFromStores1 = tmpResult4.useStateFromStores(tmp14, tmp16, tmp17);
-  const tmp19 = channelId(5586)(stateFromStores1);
+  const tmp19 = channelId(5590)(stateFromStores1);
   let name = null;
   if (null != stateFromStores) {
     name = stateFromStores.name;
@@ -560,7 +560,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDeb
   const stateFromStores1 = obj3.useStateFromStores(items3, () => ChannelStore.getChannel(channelId), items4);
   obj4 = { id: guildId, name };
   name = null;
-  const tmp4 = channelId(5586)(stateFromStores1);
+  const tmp4 = channelId(5590)(stateFromStores1);
   const tmp6 = closure_23;
   const tmp7 = ObjectKV;
   if (null != stateFromStores) {
@@ -740,7 +740,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDeb
           let obj3;
           let tmp4 = null;
           const obj = { title: "" + context + " - " + mediaEngineConnectionId.mediaEngineConnectionId, children: items };
-          const tmp = authStore5;
+          const tmp = authStore4;
           if (null != obj4[context]) {
             tmp4 = closure_17(tmp3, {});
           }
@@ -749,7 +749,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDeb
           obj3 = { obj: mediaEngineConnectionId.transport };
           items[1] = closure_17(closure_23, obj2);
           const outbound = mediaEngineConnectionId.rtp.outbound;
-          obj4 = { title: "outbound", children: outbound.map(f110109) };
+          obj4 = { title: "outbound", children: outbound.map(f110582) };
           items[2] = closure_17(closure_23, obj4);
           const inbound = mediaEngineConnectionId.rtp.inbound;
           const keys = Object.keys(inbound);
@@ -797,7 +797,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDeb
         let obj3;
         let obj = { title: "" + context + " - " + mediaEngineConnectionId.mediaEngineConnectionId, children: items };
         let tmp4 = null;
-        const tmp = authStore5;
+        const tmp = authStore4;
         if (null != obj4[context]) {
           tmp4 = closure_17(tmp3, {});
         }
@@ -806,7 +806,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDeb
         obj3 = { obj: mediaEngineConnectionId.transport };
         items[1] = closure_17(closure_23, obj2);
         const outbound = mediaEngineConnectionId.rtp.outbound;
-        obj4 = { title: "outbound", children: outbound.map(f110109) };
+        obj4 = { title: "outbound", children: outbound.map(f110582) };
         items[2] = closure_17(closure_23, obj4);
         const inbound = mediaEngineConnectionId.rtp.inbound;
         const keys = Object.keys(inbound);
@@ -887,7 +887,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDebugOver
     if (cResult[7] !== tmp4.scroller) {
       const obj2 = { style: scroller, indicatorStyle: "white", children: items1 };
       items1 = [tmp9, tmp10];
-      const tmp19 = authStore5(React4, obj2);
+      const tmp19 = authStore4(React4, obj2);
       cResult[7] = tmp4.scroller;
       cResult[8] = tmp19;
       tmp16 = tmp19;
@@ -929,7 +929,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDebugOver
       }
       const rect = { top: true, left: true, right: true, bottom: true, style: tmp8, children: items2 };
       items2 = [tmp16, tmp25];
-      const tmp31 = authStore5(common_SafeAreaView.SafeAreaPaddingView, rect);
+      const tmp31 = authStore4(common_SafeAreaView.SafeAreaPaddingView, rect);
       cResult[15] = tmp25;
       cResult[16] = tmp8;
       cResult[17] = tmp16;
@@ -974,13 +974,13 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDebugOver
     const obj = { context };
     return closure_1_17(closure_1_29, obj, context);
   });
-  items2 = [authStore5(React4, obj), ];
+  items2 = [authStore4(React4, obj), ];
   const obj2 = { style: tmp.buttonClose, children: closure_17(Button, obj3) };
   obj3 = { text: intl.string(intl2.t.cpT0Cq), onPress: onClose };
   Button = components_Button_Button.Button;
   intl = intl2.intl;
   items2[1] = closure_17(metroImportAll, obj2);
-  return authStore5(SafeAreaPaddingView, rect);
+  return authStore4(SafeAreaPaddingView, rect);
 });
 const result = size.fileFinishedImporting("components_native/calls/RTCDebugOverlay.tsx");
 

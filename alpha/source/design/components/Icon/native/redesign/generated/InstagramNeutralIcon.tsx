@@ -1,14 +1,14 @@
-// Module ID: 8456
-// Function ID: 8457
+// Module ID: 8465
+// Function ID: 8466
 // Name: InstagramNeutralIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8457, 5650, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8466, 5654, 2]
 
-// Module 8456 (InstagramNeutralIcon)
+// Module 8465 (InstagramNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 5650 */;
-import AssetRegistry from "AssetRegistry" /* 8457 */;
+import BaseIconImage2 from "BaseIconImage" /* 5654 */;
+import AssetRegistry from "AssetRegistry" /* 8466 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstagramN
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(5650).BaseIconImage;
+  const BaseIconImage = tmp(5654).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

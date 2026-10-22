@@ -1,16 +1,16 @@
-// Module ID: 16899
-// Function ID: 16900
+// Module ID: 16968
+// Function ID: 16969
 // Name: OrbCheckoutMenu
-// Dependencies: [32, 19, 21, 4966, 6651, 14364, 2002, 5645, 6884, 5216, 6987, 5226, 2]
+// Dependencies: [32, 19, 21, 4969, 6658, 14407, 2002, 5649, 6891, 5220, 6994, 5230, 2]
 // Exports: default
 
-// Module 16899 (OrbCheckoutMenu)
+// Module 16968 (OrbCheckoutMenu)
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6651 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6658 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -37,13 +37,13 @@ export default function OrbCheckoutMenu() {
             obj.open("ORB_CHECKOUT_SUCCESS", { text: "Successfully redeemed item with Orbs" });
           }
       };
-      obj.pushLazy(asyncRequire(14364, dependencyMap.paths), obj2);
+      obj.pushLazy(asyncRequire(14407, dependencyMap.paths), obj2);
     }
   }, items);
   let obj = { children: items1 };
-  const Card = value(6884).Card;
+  const Card = value(6891).Card;
   let obj2 = { style: tmp.title, variant: "text-md/bold", children: "Redeem SKU for Orbs" };
-  items1 = [closure_5(value(5216).Text, obj2), , , ];
+  items1 = [closure_5(value(5220).Text, obj2), , , ];
   const obj3 = {
     containerStyle: tmp.textInput,
     label: "SKU ID",
@@ -53,10 +53,10 @@ export default function OrbCheckoutMenu() {
     },
     clearable: true
   };
-  items1[1] = closure_5(value(6987).TextInput, obj3);
+  items1[1] = closure_5(value(6994).TextInput, obj3);
   const obj4 = { style: tmp.title, variant: "text-md/bold", children: "Checkout will open with the orb price of the product, if it exists" };
-  items1[2] = closure_5(value(5216).Text, obj4);
+  items1[2] = closure_5(value(5220).Text, obj4);
   const obj5 = { text: "Open Orbs Checkout", variant: "primary", onPress: callback, disabled: null == value };
-  items1[3] = closure_5(value(5226).Button, obj5);
+  items1[3] = closure_5(value(5230).Button, obj5);
   return closure_6(Card, obj);
 };

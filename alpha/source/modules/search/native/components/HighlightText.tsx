@@ -1,16 +1,16 @@
-// Module ID: 11988
-// Function ID: 11989
+// Module ID: 12009
+// Function ID: 12010
 // Name: HighlightText
-// Dependencies: [19, 1087, 21, 4966, 4963, 587, 558, 576, 1202, 2]
+// Dependencies: [19, 1087, 21, 4969, 4966, 587, 558, 576, 1202, 2]
 
-// Module 11988 (HighlightText)
+// Module 12009 (HighlightText)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4966 */;
-import ColorUtils_mod from "ColorUtils" /* 4963 */;
+import createStyles_mod from "createStyles" /* 4969 */;
+import ColorUtils_mod from "ColorUtils" /* 4966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

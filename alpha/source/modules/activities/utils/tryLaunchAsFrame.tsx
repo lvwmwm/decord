@@ -1,13 +1,13 @@
-// Module ID: 11325
-// Function ID: 11326
+// Module ID: 11342
+// Function ID: 11343
 // Name: tryLaunchAsFrame
-// Dependencies: [2045, 6755, 11290, 10724, 2]
+// Dependencies: [2045, 6762, 11309, 10736, 2]
 // Exports: tryLaunchAsFrame
 
-// Module 11325 (tryLaunchAsFrame)
-import FramesConstants from "FramesConstants" /* 6755 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10724 */;
-import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 11290 */;
+// Module 11342 (tryLaunchAsFrame)
+import FramesConstants from "FramesConstants" /* 6762 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10736 */;
+import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 11309 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
 import size from "module_2" /* 2 */;
 

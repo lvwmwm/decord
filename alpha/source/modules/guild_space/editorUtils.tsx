@@ -1,26 +1,22 @@
-// Module ID: 18827
-// Function ID: 18828
+// Module ID: 18894
+// Function ID: 18895
 // Name: editorUtils
-// Dependencies: [32, 18828, 18829, 1297, 6353, 2]
-// Exports: createDraftWidget, filterCatalogWidgetsAtMaxInstances, getWidgetSaveError, isDraftWidgetId, toWidgetConfigUpdateRequest
+// Dependencies: [32, 18895, 18896, 1297, 6360, 2]
+// Exports: createDefaultDraftWidgets, filterCatalogWidgetsAtMaxInstances, getWidgetSaveError, isDraftWidgetId, toWidgetConfigUpdateRequest
 
-// Module 18827 (editorUtils)
+// Module 18894 (editorUtils)
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import guildSpaceWidgetLayout from "guildSpaceWidgetLayout" /* 18828 */;
-import GuildSpaceTypes from "GuildSpaceTypes" /* 18829 */;
+import guildSpaceWidgetLayout from "guildSpaceWidgetLayout" /* 18895 */;
+import GuildSpaceTypes from "GuildSpaceTypes" /* 18896 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
 
 let tmp;
-const V6OrEarlierAPIError = tmp(6353);
-let c3 = "draft:";
-let closure_4 = 0;
-let result = size.fileFinishedImporting("modules/guild_space/editorUtils.tsx");
-
-export const createDraftWidget = function createDraftWidget(type, default_title, locked) {
-  const obj = { id: "" + c3 + +closure_4, position: { column: guildSpaceWidgetLayout.LEFT_COLUMN, order: 0 }, requires_hydration: false, default_title, locked };
+const V6OrEarlierAPIError = tmp(6360);
+function createDraftWidget(type, name, locked) {
+  const obj = { id: "" + c3 + +closure_4, position: { column: guildSpaceWidgetLayout.LEFT_COLUMN, order: 0 }, requires_hydration: false, default_title: name, locked };
   closure_4 = tmp + 1;
   ({ column: guildSpaceWidgetLayout.LEFT_COLUMN, order: 0 });
   if (GuildSpaceTypes.GuildSpaceWidgetType.IMAGE_TEXT === type) {
@@ -32,6 +28,29 @@ export const createDraftWidget = function createDraftWidget(type, default_title,
     const merged1 = Object.assign(obj);
     return obj5;
   }
+}
+let c3 = "draft:";
+let closure_4 = 0;
+let items = [GuildSpaceTypes.GuildSpaceWidgetType.POPULAR_MUSIC, GuildSpaceTypes.GuildSpaceWidgetType.LEADERBOARD];
+let result = size.fileFinishedImporting("modules/guild_space/editorUtils.tsx");
+
+export { createDraftWidget };
+export const createDefaultDraftWidgets = function createDefaultDraftWidgets(arg0) {
+  let closure_0 = arg0;
+  return items.flatMap((item, order) => {
+    let obj2;
+    closure_0 = item;
+    const found = closure_0.find((type) => type.type === closure_0);
+    if (null == found) {
+      items = [];
+    } else {
+      const obj = { position: obj2 };
+      const merged = Object.assign(createDraftWidget(item, found.name, found.locked));
+      items = [obj];
+      obj2 = { column: guildSpaceWidgetLayout.LEFT_COLUMN, order };
+    }
+    return items;
+  });
 };
 export const isDraftWidgetId = function isDraftWidgetId(widget_id) {
   return widget_id.startsWith(c3);

@@ -1,14 +1,14 @@
-// Module ID: 12370
-// Function ID: 12371
+// Module ID: 12396
+// Function ID: 12397
 // Name: ConjurePlanAutomodOutcomes
-// Dependencies: [4883, 1128, 3830, 5687, 2]
+// Dependencies: [4883, 1128, 3830, 5691, 2]
 // Exports: groupPlanAutomodExamples, planAutomodReasonText, renderPlanAutomodExampleContent
 
-// Module 12370 (ConjurePlanAutomodOutcomes)
+// Module 12396 (ConjurePlanAutomodOutcomes)
 import intl7 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4883 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5687 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5691 */;
 import size from "module_2" /* 2 */;
 
 const getFriendlyDurationString = GuildDisableCommunicationConstants.getFriendlyDurationString;

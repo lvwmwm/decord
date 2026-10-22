@@ -1,9 +1,9 @@
-// Module ID: 5947
-// Function ID: 5948
+// Module ID: 5954
+// Function ID: 5955
 // Name: Dialog
-// Dependencies: [109, 19, 17, 21, 558, 576, 5948, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 5955, 2]
 
-// Module 5947 (Dialog)
+// Module 5954 (Dialog)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -13,7 +13,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const AccessibilityView2 = tmp(5948);
+const AccessibilityView2 = tmp(5955);
 let closure_2 = ["dialogKey", "onDismiss", "zIndex"];
 const StyleSheet = react_native.StyleSheet;
 const jsx = Fragment.jsx;

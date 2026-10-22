@@ -1,10 +1,10 @@
-// Module ID: 13606
-// Function ID: 13607
+// Module ID: 13642
+// Function ID: 13643
 // Name: getApplicationIdsForGame
 // Dependencies: [2045, 2022, 558, 576, 504, 2]
 // Exports: default
 
-// Module 13606 (getApplicationIdsForGame)
+// Module 13642 (getApplicationIdsForGame)
 import ApplicationStore from "ApplicationStore" /* 2045 */;
 import GameStore from "GameStore" /* 2022 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -13,18 +13,18 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, set;
 
-function getApplicationIdsForGame(gameId) {
+function getApplicationIdsForGame(arg0) {
   set = new Set();
-  if (null != gameId) {
-    set.add(gameId);
-    const game = GameStore.getGame(gameId);
+  if (null != arg0) {
+    set.add(arg0);
+    const game = GameStore.getGame(arg0);
     if (game != null) {
       const linkedApplications = game.linkedApplications;
       if (linkedApplications != null) {
         const item = linkedApplications.forEach((id) => set.add(id.id));
       }
     }
-    const application = ApplicationStore.getApplication(gameId);
+    const application = ApplicationStore.getApplication(arg0);
     if (application != null) {
       const linkedGames = application.linkedGames;
       if (linkedGames != null) {

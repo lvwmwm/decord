@@ -1,18 +1,18 @@
-// Module ID: 17815
-// Function ID: 17816
+// Module ID: 17885
+// Function ID: 17886
 // Name: GuildRoleSubscriptionPurchasePage
-// Dependencies: [19, 17, 1207, 4821, 4843, 1087, 21, 4966, 587, 558, 576, 5216, 1128, 1202, 11492, 7053, 16392, 16394, 16395, 573, 17816, 5586, 17818, 17819, 17820, 8478, 5651, 6862, 17821, 9915, 17823, 17824, 5642, 17825, 2]
+// Dependencies: [19, 17, 1207, 4821, 4843, 1087, 21, 4969, 587, 558, 576, 5220, 1128, 1202, 11509, 7060, 16461, 16463, 16464, 573, 17886, 5590, 17888, 17889, 17890, 8487, 5655, 6869, 17891, 9927, 17893, 17894, 5646, 17895, 2]
 
-// Module 17815 (GuildRoleSubscriptionPurchasePage)
+// Module 17885 (GuildRoleSubscriptionPurchasePage)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import LinkingDefault from "Linking" /* 5642 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8478 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11492 */;
-import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 17825 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import LinkingDefault from "Linking" /* 5646 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8487 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11509 */;
+import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 17895 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
@@ -20,7 +20,7 @@ import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -89,7 +89,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function LegalD
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(intl6.t.FSPTDI, obj5) };
-    const Text = tmp(5216).Text;
+    const Text = tmp(5220).Text;
     intl = tmp(1128).intl;
     obj5 = { termsURL: null, paidURL: null };
     ({ TERMS: obj3.termsURL, PAID_TERMS: obj3.paidURL } = map1);
@@ -160,7 +160,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
       }
       const obj3 = { style: tmp4.socialBadge, activeOpacity: num, onPress, children: items };
       items = [tmp6, tmp8, tmp11];
-      const tmp18 = authStore3(hasOwnProperty, obj3);
+      const tmp18 = closure_15(hasOwnProperty, obj3);
       cResult[8] = onPress;
       cResult[9] = tmp4.socialBadge;
       cResult[10] = num;
@@ -198,7 +198,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
   let tmp5Result = null != onPress;
   const obj = { style: tmp.socialBadge, activeOpacity: num, onPress, children: items };
   num = 1;
-  const tmp3 = authStore3;
+  const tmp3 = closure_15;
   const tmp4 = hasOwnProperty;
   if (tmp5Result) {
     num = 0.5;
@@ -573,7 +573,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                               items[2] = syncedClientThemes(native.Spacer, { size: 3 });
                               const obj4 = { variant: "text-xs/semibold", color: "text-default", children };
                               items[3] = syncedClientThemes(Text_Text.Text, obj4);
-                              return authStore3(metroRequire, obj);
+                              return closure_15(metroRequire, obj);
                             }
               };
               formatResult = intl2.format(tmp(tmp2[12]).t.A1L1hU, obj7);

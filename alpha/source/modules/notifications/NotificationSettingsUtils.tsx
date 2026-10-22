@@ -1,18 +1,18 @@
-// Module ID: 15595
-// Function ID: 15596
+// Module ID: 15639
+// Function ID: 15640
 // Name: notifications/NotificationSettingsUtils
-// Dependencies: [32, 19, 15590, 15596, 15597, 558, 576, 1455, 504, 2]
+// Dependencies: [32, 19, 15634, 15640, 15641, 558, 576, 1455, 504, 2]
 // Exports: getAssignedNotifSettingsAndMappings, useNotifCategoryVisibility
 
-// Module 15595 (notifications/NotificationSettingsUtils)
+// Module 15639 (notifications/NotificationSettingsUtils)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
-import NotificationSettingsExperiments from "NotificationSettingsExperiments" /* 15596 */;
-import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 15597 */;
+import NotificationSettingsExperiments from "NotificationSettingsExperiments" /* 15640 */;
+import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 15641 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15590 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15634 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -181,11 +181,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNotifSett
     throw new TypeError("Trying to call a non-function");
   }
 });
-function useNotifCategoryVisibility(CATEGORY_OTHER) {
+function useNotifCategoryVisibility(CATEGORY_CALLS_MESSAGES) {
   if (typeof useIsDeclarativeSettingsUIAvailable === "function") {
     const _HermesInternal = HermesInternal;
     const obj = DeclarativeNotificationSettingsRedesignExperiment;
-    return obj.useIsDeclarativeNotificationSettingsRedesignEnabled("useIsDeclarativeSettingsUIAvailable:" + CATEGORY_OTHER);
+    return obj.useIsDeclarativeNotificationSettingsRedesignEnabled("useIsDeclarativeSettingsUIAvailable:" + CATEGORY_CALLS_MESSAGES);
   } else {
     throw new TypeError("Trying to call a non-function");
   }

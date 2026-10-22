@@ -1,17 +1,17 @@
-// Module ID: 11068
-// Function ID: 11069
+// Module ID: 11085
+// Function ID: 11086
 // Name: openBadgeDirectoryScreen
-// Dependencies: [1384, 7017, 6651, 11069, 2002, 2]
+// Dependencies: [1384, 7024, 6658, 11086, 2002, 2]
 // Exports: closeBadgeDirectoryScreen, isBadgeDirectoryIOSPageSheet, openBadgeDirectoryScreen
 
-// Module 11068 (openBadgeDirectoryScreen)
+// Module 11085 (openBadgeDirectoryScreen)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6651 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6658 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useIsWindowLarge = tmp(7017);
+const useIsWindowLarge = tmp(7024);
 let c3 = "badge-directory";
 const result = size.fileFinishedImporting("modules/badges/native/openBadgeDirectoryScreen.tsx");
 
@@ -35,7 +35,7 @@ export const openBadgeDirectoryScreen = function openBadgeDirectoryScreen(arg0) 
   const pushLazy = ModalActionCreatorsDefault.pushLazy;
   ModalActionCreatorsDefault;
   const obj2 = { targetUserId };
-  const tmp4 = asyncRequire(11069, dependencyMap.paths);
+  const tmp4 = asyncRequire(11086, dependencyMap.paths);
   const obj3 = PlatformUtils;
   const tmp5 = c3;
   if (!obj3.isIOS()) {

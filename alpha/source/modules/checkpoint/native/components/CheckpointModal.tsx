@@ -1,29 +1,29 @@
-// Module ID: 12842
-// Function ID: 12843
+// Module ID: 12874
+// Function ID: 12875
 // Name: CheckpointModal
-// Dependencies: [5, 32, 19, 17, 4912, 12843, 5995, 1098, 21, 4966, 587, 1633, 12844, 12847, 504, 6342, 8600, 11552, 8548, 12850, 12851, 12852, 6341, 12854, 6651, 5644, 1128, 5020, 12855, 12856, 12858, 12866, 12904, 12905, 6910, 12906, 12909, 12915, 2000, 6002, 12789, 558, 576, 12917, 2]
+// Dependencies: [5, 32, 19, 17, 4912, 12875, 6002, 1098, 21, 4969, 587, 1633, 12876, 12879, 504, 6349, 8609, 11569, 8557, 12882, 12883, 12884, 6348, 12886, 6658, 5648, 1128, 5023, 12887, 12888, 12890, 12898, 12938, 12939, 6917, 12940, 12943, 12951, 2000, 6009, 12821, 558, 576, 12953, 2]
 
-// Module 12842 (CheckpointModal)
+// Module 12874 (CheckpointModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
 import Server from "Server" /* 2000 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6002 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6651 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 12789 */;
-import CheckpointStore2 from "CheckpointStore" /* 12843 */;
-import CheckpointFlows from "CheckpointFlows" /* 12847 */;
-import useCheckpointPreloaderDefault from "useCheckpointPreloader" /* 12917 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6009 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6658 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 12821 */;
+import CheckpointStore2 from "CheckpointStore" /* 12875 */;
+import CheckpointFlows from "CheckpointFlows" /* 12879 */;
+import useCheckpointPreloaderDefault from "useCheckpointPreloader" /* 12953 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import MessageRecord from "MessageRecord" /* 4912 */;
-import CheckpointConstants from "CheckpointConstants" /* 5995 */;
+import CheckpointConstants from "CheckpointConstants" /* 6002 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import size from "module_2" /* 2 */;
+import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c1, c4, closure_2, importDefault;
@@ -42,6 +42,7 @@ let obj2;
 let obj3;
 let rect;
 let rect1;
+let size;
 let sum;
 function CheckpointModal(didPlayerShareDataWithDiscord) {
   let VoiceNormalIcon;
@@ -111,7 +112,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
       const tmp7 = first;
       if (null != adjacentCheckpointRoute) {
         ref.current = timestamp;
-        const SILENT_CHECKPOINT_ROUTES = tmp4(6342).SILENT_CHECKPOINT_ROUTES;
+        const SILENT_CHECKPOINT_ROUTES = tmp4(6349).SILENT_CHECKPOINT_ROUTES;
         if (!SILENT_CHECKPOINT_ROUTES.has(tmp7)) {
           closure_7();
         }
@@ -448,10 +449,11 @@ const CheckpointFetchStates = CheckpointStore2.CheckpointFetchStates;
 const ThemeTypes = Constants.ThemeTypes;
 ({ jsx: closure_15, Fragment: closure_16, jsxs: closure_17 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { loader: obj2, container: { height: "100%" }, layer: { position: "absolute", width: "100%", height: "100%" }, coveredCharacterLayer: { opacity: 0 }, nav: rect, logo: { width: CHECKPOINT_LOGO_SIZE, height: CHECKPOINT_LOGO_SIZE }, headerActions: obj3, customizationSection: rect1 };
+let obj = { loader: obj2, container: { height: "100%" }, layer: { position: "absolute", width: "100%", height: "100%" }, coveredCharacterLayer: { opacity: 0 }, nav: rect, logo: size, headerActions: obj3, customizationSection: rect1 };
 obj2 = { flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.colors.BLACK };
 createStyles = createStyles.createStyles;
 rect = { position: "absolute", top: 0, left: nativeDefault.space.PX_16, right: nativeDefault.space.PX_16, height: CHECKPOINT_NAV_HEIGHT, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
+size = { width: CHECKPOINT_LOGO_SIZE + 6, height: CHECKPOINT_LOGO_SIZE + 6, margin: -3 };
 obj3 = { flexDirection: "row", gap: nativeDefault.space.PX_12 };
 rect1 = { position: "absolute", left: 0, right: 0, bottom: sum + nativeDefault.space.PX_24, gap: nativeDefault.space.PX_12 };
 sum = CHECKPOINT_CONTROL_SIZE + nativeDefault.space.PX_16;
@@ -467,7 +469,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointLo
     if (cResult[3] !== arg0) {
       const obj2 = {};
       const merged = Object.assign(arg0);
-      const tmp20 = authStore3(CheckpointModal, obj2);
+      const tmp20 = closure_15(CheckpointModal, obj2);
       cResult[3] = arg0;
       cResult[4] = tmp20;
       tmp14 = tmp20;
@@ -479,7 +481,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointLo
     let first;
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp8 = authStore3(metroRequire, {});
+      const tmp8 = closure_15(metroRequire, {});
       cResult[0] = tmp8;
       first = tmp8;
     } else {
@@ -487,7 +489,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointLo
     }
     if (cResult[1] !== tmp3.loader) {
       const obj3 = { style: tmp3.loader, children: first };
-      const tmp12 = authStore3(metroImportDefault, obj3);
+      const tmp12 = closure_15(metroImportDefault, obj3);
       cResult[1] = tmp3.loader;
       cResult[2] = tmp12;
       tmp9 = tmp12;
@@ -504,11 +506,12 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointLo
     const merged = Object.assign(arg0);
     tmp3Result = tmp3(CheckpointModal, obj2);
   } else {
-    const obj = { style: tmp2.loader, children: authStore3(metroRequire, {}) };
+    const obj = { style: tmp2.loader, children: closure_15(metroRequire, {}) };
     tmp3Result = tmp3(metroImportDefault, obj);
   }
   return tmp3Result;
 });
+size = size_mod;
 let result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointModal.tsx");
 
 export default tmp7;

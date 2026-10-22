@@ -1,10 +1,10 @@
-// Module ID: 14391
-// Function ID: 14392
+// Module ID: 14435
+// Function ID: 14436
 // Name: didReplyMention
 // Dependencies: [2]
 // Exports: default
 
-// Module 14391 (didReplyMention)
+// Module 14435 (didReplyMention)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/replies/didReplyMention.tsx");

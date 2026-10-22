@@ -1,19 +1,19 @@
-// Module ID: 15882
-// Function ID: 15883
+// Module ID: 15924
+// Function ID: 15925
 // Name: AccountPhoneSetting
-// Dependencies: [1392, 8308, 7117, 558, 576, 504, 6651, 7116, 2002, 7119, 11155, 1128, 2]
+// Dependencies: [1392, 8317, 7124, 558, 576, 504, 6658, 7123, 2002, 7126, 11172, 1128, 2]
 
-// Module 15882 (AccountPhoneSetting)
+// Module 15924 (AccountPhoneSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6651 */;
-import PhoneConstants from "PhoneConstants" /* 7117 */;
-import PhoneActionCreators from "PhoneActionCreators" /* 7119 */;
-import SettingsConstants from "SettingsConstants" /* 8308 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6658 */;
+import PhoneConstants from "PhoneConstants" /* 7124 */;
+import PhoneActionCreators from "PhoneActionCreators" /* 7126 */;
+import SettingsConstants from "SettingsConstants" /* 8317 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11155 */;
+import SettingBuilders from "SettingBuilders" /* 11172 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;
@@ -69,7 +69,7 @@ let obj = {
     const pushLazy = ModalActionCreatorsDefault.pushLazy;
     const obj = { allowDeletePhone: true, reason: PhoneActionCreators.ChangePhoneReason.USER_SETTINGS_UPDATE };
     ModalActionCreatorsDefault;
-    const tmp2 = asyncRequire(7116, dependencyMap.paths);
+    const tmp2 = asyncRequire(7123, dependencyMap.paths);
     pushLazy(tmp2, obj, closure_4);
   },
   withArrow: true

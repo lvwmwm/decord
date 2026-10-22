@@ -1,9 +1,9 @@
-// Module ID: 10052
-// Function ID: 10053
+// Module ID: 10064
+// Function ID: 10065
 // Name: ChannelSettingsStore
-// Dependencies: [4825, 8827, 1406, 4821, 1087, 1127, 4913, 4915, 4830, 4831, 1297, 584, 12, 4835, 2049, 504, 2]
+// Dependencies: [4825, 8836, 1406, 4821, 1087, 1127, 4913, 4915, 4830, 4831, 1297, 584, 12, 4835, 2049, 504, 2]
 
-// Module 10052 (ChannelSettingsStore)
+// Module 10064 (ChannelSettingsStore)
 import _mod12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -16,7 +16,7 @@ import ForumLayout from "ForumLayout" /* 4831 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 4835 */;
 import ReactionUtils from "ReactionUtils" /* 4913 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4915 */;
-import InviteRecord from "InviteRecord" /* 8827 */;
+import InviteRecord from "InviteRecord" /* 8836 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import Constants from "Constants" /* 1087 */;
@@ -29,13 +29,13 @@ let FormStates;
 let closure_14;
 let closure_15;
 let map1;
-const f104586 = (body) => {
+const f105048 = (body) => {
   c21 = false;
   const obj = DispatcherDefault;
   const obj2 = { type: "CHANNEL_SETTINGS_LOADED_INVITES", invites: body.body };
   obj.dispatch(obj2);
 };
-const f104587 = () => {
+const f105049 = () => {
   c21 = false;
   return false;
 };
@@ -300,10 +300,10 @@ invites = {
       if (tmp15) {
         let c21 = true;
         const HTTP = HTTPUtils.HTTP;
-        let obj2 = { url: authStore3.INSTANT_INVITES(channel.id), oldFormErrors: true, rejectWithError: true };
+        let obj2 = { url: closure_15.INSTANT_INVITES(channel.id), oldFormErrors: true, rejectWithError: true };
         const get = HTTP.get;
         const value = get(obj2);
-        value.then(f104586, f104587);
+        value.then(f105048, f105049);
       }
       return true;
     }
@@ -468,9 +468,9 @@ invites = {
       let c21 = true;
       const HTTP = HTTPUtils.HTTP;
       const get = HTTP.get;
-      const obj = { url: authStore3.INSTANT_INVITES(channel.id), oldFormErrors: true, rejectWithError: true };
+      const obj = { url: closure_15.INSTANT_INVITES(channel.id), oldFormErrors: true, rejectWithError: true };
       const value = get(obj);
-      value.then(f104586, f104587);
+      value.then(f105048, f105049);
     }
   },
   CHANNEL_SETTINGS_LOADED_INVITES: function handleLoadedInvites(invites) {

@@ -1,21 +1,21 @@
-// Module ID: 8842
-// Function ID: 8843
+// Module ID: 8851
+// Function ID: 8852
 // Name: GuildScheduledEventModalActionCreators
-// Dependencies: [5, 4827, 8843, 5192, 8844, 2002, 8849, 9112, 2]
+// Dependencies: [5, 4827, 8852, 5196, 8853, 2002, 8858, 9121, 2]
 // Exports: openEndEventModal, transitionToEventDetailsFromInvite
 
-// Module 8842 (GuildScheduledEventModalActionCreators)
+// Module 8851 (GuildScheduledEventModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2002 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4827 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 8843 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 8852 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_3;
 
 let tmp3;
-const ScheduleUtils = tmp3(8849);
+const ScheduleUtils = tmp3(8858);
 function openGuildEventDetails(arg0) {
   let event;
   let eventId;
@@ -26,7 +26,7 @@ function openGuildEventDetails(arg0) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   obj = { eventId, event, onCloseActionSheet: onClose, recurrenceId };
-  const tmp4 = asyncRequire(8844, dependencyMap.paths);
+  const tmp4 = asyncRequire(8853, dependencyMap.paths);
   const tmp5 = closure_5;
   if (recurrenceId == null) {
     const tmp3Result = ScheduleUtils;
@@ -106,5 +106,5 @@ export const transitionToEventDetailsFromInvite = function transitionToEventDeta
 export const openEndEventModal = function openEndEventModal(channel) {
   obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channel };
-  obj.openLazy(asyncRequire(9112, dependencyMap.paths), closure_4, obj2);
+  obj.openLazy(asyncRequire(9121, dependencyMap.paths), closure_4, obj2);
 };

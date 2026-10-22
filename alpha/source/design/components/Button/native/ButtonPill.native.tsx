@@ -1,25 +1,25 @@
-// Module ID: 5238
-// Function ID: 5239
+// Module ID: 5242
+// Function ID: 5243
 // Name: ButtonPill
-// Dependencies: [32, 19, 17, 21, 5232, 4966, 587, 558, 576, 5233, 5020, 5234, 5239, 5240, 5035, 4973, 5244, 4980, 5229, 5230, 2]
+// Dependencies: [32, 19, 17, 21, 5236, 4969, 587, 558, 576, 5237, 5023, 5238, 5243, 5244, 5038, 4976, 5248, 4983, 5233, 5234, 2]
 
-// Module 5238 (ButtonPill)
+// Module 5242 (ButtonPill)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import shared from "shared" /* 4973 */;
-import native from "native" /* 5020 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
-import spring from "spring" /* 5229 */;
-import springPresets from "springPresets" /* 5230 */;
-import ButtonHooks from "ButtonHooks" /* 5233 */;
-import useToken from "useToken" /* 5234 */;
-import LinearGradientDefault from "LinearGradient" /* 5240 */;
+import shared from "shared" /* 4976 */;
+import native from "native" /* 5023 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
+import spring from "spring" /* 5233 */;
+import springPresets from "springPresets" /* 5234 */;
+import ButtonHooks from "ButtonHooks" /* 5237 */;
+import useToken from "useToken" /* 5238 */;
+import LinearGradientDefault from "LinearGradient" /* 5244 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ButtonConstants_mod from "ButtonConstants" /* 5232 */;
-import createStyles from "createStyles" /* 4966 */;
+import ButtonConstants_mod from "ButtonConstants" /* 5236 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const ButtonEllipsis = tmp(5244);
+const ButtonEllipsis = tmp(5248);
 ({ View: hasOwnProperty, StyleSheet: metroRequire } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
 let c10 = 300;
@@ -191,7 +191,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function PillWr
               const obj4 = { style: items4, children: metroImportDefault(ExpressiveButtonRive, obj5) };
               items4 = [metroRequire.absoluteFill, tmp7.expressivePill];
               obj5 = { withReducedMotion: "short-loop", ref: expressiveRiveRef, fit: "layout", artboard: str4, dataBinding: obj6 };
-              ExpressiveButtonRive = tmp(5020).ExpressiveButtonRive;
+              ExpressiveButtonRive = tmp(5023).ExpressiveButtonRive;
               str4 = "Mobile Expressive Button Dark Mode";
               const tmp21 = hasOwnProperty;
               const tmpResult12 = shared;
@@ -294,7 +294,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function PillWr
       let tmp16 = null;
       if (tmp4) {
         const obj10 = { variant };
-        tmp16 = metroImportDefault(tmp(5239).ButtonShine, obj10);
+        tmp16 = metroImportDefault(tmp(5243).ButtonShine, obj10);
       }
       cResult[5] = tmp4;
       cResult[6] = variant;
@@ -351,7 +351,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function PillWr
   let tmp7 = null;
   if (shiny) {
     const obj7 = { variant };
-    tmp7 = metroImportDefault(tmp(5239).ButtonShine, obj7);
+    tmp7 = metroImportDefault(tmp(5243).ButtonShine, obj7);
   }
   if ("experimental_premium-primary" !== variant) {
     let obj11;
@@ -361,7 +361,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function PillWr
         const obj8 = { style: items2, children: metroImportDefault(ExpressiveButtonRive, obj9) };
         items2 = [metroRequire.absoluteFill, tmp5.expressivePill];
         obj9 = { withReducedMotion: "short-loop", ref: expressiveRiveRef, fit: "layout", artboard: str, dataBinding: obj10 };
-        ExpressiveButtonRive = tmp(5020).ExpressiveButtonRive;
+        ExpressiveButtonRive = tmp(5023).ExpressiveButtonRive;
         str = "Mobile Expressive Button Dark Mode";
         const tmp12 = hasOwnProperty;
         const tmpResult = shared;

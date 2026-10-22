@@ -1,19 +1,19 @@
-// Module ID: 18274
-// Function ID: 18275
+// Module ID: 18342
+// Function ID: 18343
 // Name: useExternalPipParticipant
-// Dependencies: [19, 6751, 14943, 6621, 502, 2014, 5696, 5614, 10848, 558, 576, 18275, 10853, 504, 2]
+// Dependencies: [19, 6758, 14987, 6628, 502, 2014, 5700, 5618, 10865, 558, 576, 18343, 10870, 504, 2]
 
-// Module 18274 (useExternalPipParticipant)
-import CallConstants from "CallConstants" /* 5614 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10848 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 18275 */;
+// Module 18342 (useExternalPipParticipant)
+import CallConstants from "CallConstants" /* 5618 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10865 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 18343 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6751 */;
-import PIPSpeakerStore from "PIPSpeakerStore" /* 14943 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6621 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6758 */;
+import PIPSpeakerStore from "PIPSpeakerStore" /* 14987 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6628 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5696 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5700 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ function getExternalPipSelectedParticipant(batchedStoreListener, selectedPartici
         obj = { participantType: null, selectedParticipantId: null, selectedParticipantSpeaking: participant.type === tmp12.USER && participant.speaking, selectedParticipantStreamId: tmp3, selectedParticipantUserId: participant.user.id };
         ({ type: obj.participantType, id: obj.selectedParticipantId } = participant);
         tmp3 = undefined;
-        const tmp7Result = tmp7(10853);
+        const tmp7Result = tmp7(10870);
         if (tmp7Result.canRenderParticipantVideo(participant)) {
           const streamId = participant.streamId;
           tmp3 = streamId;
@@ -98,7 +98,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSetH
     }
   }, items);
 });
-let closure_10 = { participantType: "Reflect", selectedParticipantId: "default", selectedParticipantSpeaking: null, selectedParticipantStreamId: null, selectedParticipantUserId: null };
+let closure_10 = { participantType: "Reflect", selectedParticipantId: "ddd", selectedParticipantSpeaking: null, selectedParticipantStreamId: null, selectedParticipantUserId: null };
 let items = [ChannelRTCStore, ApplicationStreamingStore, AuthenticationStore, MediaEngineStore];
 ReactCompilerGating = ReactCompilerGating_mod;
 const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExternalPipParticipant() {

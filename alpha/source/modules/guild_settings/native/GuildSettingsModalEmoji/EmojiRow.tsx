@@ -1,28 +1,28 @@
-// Module ID: 18896
-// Function ID: 18897
+// Module ID: 18963
+// Function ID: 18964
 // Name: GuildSettingsModalEmoji/EmojiRow
-// Dependencies: [32, 19, 17, 4843, 1392, 21, 4966, 587, 1384, 558, 576, 7199, 504, 8903, 9901, 4919, 18897, 5249, 5216, 1202, 5645, 1128, 5651, 1417, 5969, 5015, 6887, 18899, 6882, 2]
+// Dependencies: [32, 19, 17, 4843, 1392, 21, 4969, 587, 1384, 558, 576, 7206, 504, 8912, 9913, 4919, 18964, 5253, 5220, 1202, 5649, 1128, 5655, 1417, 5976, 5018, 6894, 18966, 6889, 2]
 
-// Module 18896 (GuildSettingsModalEmoji/EmojiRow)
+// Module 18963 (GuildSettingsModalEmoji/EmojiRow)
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 4919 */;
-import UserUtilsDefault from "UserUtils" /* 5015 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5249 */;
-import FastImageDefault from "FastImage" /* 5651 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5969 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9901 */;
-import showEmojiOverflowActionSheetDefault from "showEmojiOverflowActionSheet" /* 18897 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18899 */;
+import UserUtilsDefault from "UserUtils" /* 5018 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5253 */;
+import FastImageDefault from "FastImage" /* 5655 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5976 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9913 */;
+import showEmojiOverflowActionSheetDefault from "showEmojiOverflowActionSheet" /* 18964 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18966 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore_mod from "GuildStore" /* 4843 */;
 import UserStore_mod from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

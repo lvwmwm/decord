@@ -1,10 +1,10 @@
-// Module ID: 7419
-// Function ID: 7420
+// Module ID: 7426
+// Function ID: 7427
 // Name: compareChannelsByScoreAndPosition
 // Dependencies: [4821, 1087, 2]
 // Exports: default
 
-// Module 7419 (compareChannelsByScoreAndPosition)
+// Module 7426 (compareChannelsByScoreAndPosition)
 import Constants from "Constants" /* 1087 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import size from "module_2" /* 2 */;

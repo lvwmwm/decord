@@ -1,12 +1,12 @@
-// Module ID: 11150
-// Function ID: 11151
+// Module ID: 11167
+// Function ID: 11168
 // Name: SwipeToReplyExperiment
-// Dependencies: [11151, 558, 11152, 11153, 2]
+// Dependencies: [11168, 558, 11169, 11170, 2]
 
-// Module 11150 (SwipeToReplyExperiment)
-import LaunchPadConstants from "LaunchPadConstants" /* 11151 */;
-import useLaunchPadTypeDefault from "useLaunchPadType" /* 11152 */;
-import SwipeToMemberListUtils from "SwipeToMemberListUtils" /* 11153 */;
+// Module 11167 (SwipeToReplyExperiment)
+import LaunchPadConstants from "LaunchPadConstants" /* 11168 */;
+import useLaunchPadTypeDefault from "useLaunchPadType" /* 11169 */;
+import SwipeToMemberListUtils from "SwipeToMemberListUtils" /* 11170 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 9722
-// Function ID: 9723
+// Module ID: 9734
+// Function ID: 9735
 // Name: UID
-// Dependencies: [6652, 558, 576, 5581, 2]
+// Dependencies: [6659, 558, 576, 5585, 2]
 // Exports: uid
 
-// Module 9722 (UID)
+// Module 9734 (UID)
 import react from "react" /* 576 */;
-import useInitialValueDefault from "useInitialValue" /* 5581 */;
-import uniqueIdDefault from "uniqueId" /* 6652 */;
+import useInitialValueDefault from "useInitialValue" /* 5585 */;
+import uniqueIdDefault from "uniqueId" /* 6659 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

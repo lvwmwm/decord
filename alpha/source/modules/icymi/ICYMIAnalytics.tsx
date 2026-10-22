@@ -1,12 +1,12 @@
-// Module ID: 15546
-// Function ID: 15547
+// Module ID: 15590
+// Function ID: 15591
 // Name: ICYMIAnalytics
-// Dependencies: [8782, 1087, 8589, 1267, 2]
+// Dependencies: [8791, 1087, 8598, 1267, 2]
 
-// Module 15546 (ICYMIAnalytics)
+// Module 15590 (ICYMIAnalytics)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8589 */;
-import ICYMIStore from "ICYMIStore" /* 8782 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8598 */;
+import ICYMIStore from "ICYMIStore" /* 8791 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

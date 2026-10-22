@@ -1,19 +1,19 @@
-// Module ID: 17165
-// Function ID: 17166
+// Module ID: 17235
+// Function ID: 17236
 // Name: VEVOO
-// Dependencies: [19, 17, 5219, 585, 21, 4966, 587, 558, 576, 5035, 5229, 5230, 17166, 17168, 17169, 8910, 10614, 6910, 504, 16892, 2]
+// Dependencies: [19, 17, 5223, 585, 21, 4969, 587, 558, 576, 5038, 5233, 5234, 17236, 17238, 17239, 8919, 10626, 6917, 504, 16961, 2]
 
-// Module 17165 (VEVOO)
+// Module 17235 (VEVOO)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 585 */;
 import nativeDefault from "native" /* 587 */;
-import spring from "spring" /* 5229 */;
-import springPresets from "springPresets" /* 5230 */;
+import spring from "spring" /* 5233 */;
+import springPresets from "springPresets" /* 5234 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 5219 */;
+import DevSettingsStore from "DevSettingsStore" /* 5223 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

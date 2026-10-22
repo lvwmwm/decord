@@ -1,22 +1,22 @@
-// Module ID: 12617
-// Function ID: 12618
+// Module ID: 12649
+// Function ID: 12650
 // Name: GameOrganizationJoinModal
-// Dependencies: [19, 10976, 10977, 21, 4966, 587, 6651, 558, 576, 504, 12618, 5957, 5216, 5226, 1128, 2406, 6903, 7074, 12619, 2]
+// Dependencies: [19, 10993, 10994, 21, 4969, 587, 6658, 558, 576, 504, 12650, 5964, 5220, 5230, 1128, 2406, 6910, 7081, 12651, 2]
 
-// Module 12617 (GameOrganizationJoinModal)
+// Module 12649 (GameOrganizationJoinModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef2406 from "module_2406" /* 2406 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6651 */;
-import NavigatorHeader from "NavigatorHeader" /* 6903 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 10977 */;
-import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 12618 */;
-import StepModal2 from "StepModal" /* 12619 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6658 */;
+import NavigatorHeader from "NavigatorHeader" /* 6910 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 10994 */;
+import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 12650 */;
+import StepModal2 from "StepModal" /* 12651 */;
 import react from "react" /* 19 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 10976 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 10993 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -105,7 +105,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Confir
     }
     const obj2 = { displayNoun: stateFromStores.displayNoun };
     const tmp17 = getGameOrganizationDisplayNounDefault(obj2);
-    const Stack = tmp(5957).Stack;
+    const Stack = tmp(5964).Stack;
     const PX_24 = nativeDefault.space.PX_24;
     const container = tmp4.container;
     const tmp16 = importDefault;
@@ -116,7 +116,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Confir
           arr.pop();
         }
       }
-      const Button = tmp(5226).Button;
+      const Button = tmp(5230).Button;
       const intl = tmp(1128).intl;
       const obj3 = { noun: tmp17 };
       cResult[4] = stateFromStores.displayNoun;
@@ -134,8 +134,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Confir
     const obj4 = { variant: "heading-xl/bold", style: tmp4.text, children: stateFromStores.organization.name };
     cResult[14] = stateFromStores.organization.name;
     cResult[15] = tmp4.text;
-    cResult[16] = closure_6(code(5216).Text, obj4);
-    const tmp20 = closure_6(code(5216).Text, obj4);
+    cResult[16] = closure_6(code(5220).Text, obj4);
+    const tmp20 = closure_6(code(5220).Text, obj4);
   }
 }) : (function ConfirmStep(code) {
   let intl;
@@ -164,11 +164,11 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Confir
     const obj2 = { displayNoun: stateFromStores.displayNoun };
     const obj3 = { spacing: nativeDefault.space.PX_24, style: tmp.container, children: items1 };
     const tmp7 = getGameOrganizationDisplayNounDefault(obj2);
-    const Stack = tmp2(5957).Stack;
+    const Stack = tmp2(5964).Stack;
     const obj4 = { variant: "heading-xl/bold", style: tmp.text, children: stateFromStores.organization.name };
-    items1 = [closure_6(code(5216).Text, obj4), ];
+    items1 = [closure_6(code(5220).Text, obj4), ];
     const obj5 = { text: intl.formatToPlainString(_modDef2406["Cz/ZUM"], obj6), size: "lg", onPress: tmp5 };
-    const Button = tmp2(5226).Button;
+    const Button = tmp2(5230).Button;
     intl = tmp2(1128).intl;
     obj6 = { noun: tmp7 };
     items1[1] = closure_6(Button, obj5);
@@ -214,7 +214,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScr
     tmp4 = cResult[1];
     tmp5 = cResult[2];
   }
-  const tmpResult = tmp(7074);
+  const tmpResult = tmp(7081);
   return tmpResult.useNavigatorScreens(tmp4, tmp5);
 }) : (function useScreens(arg0) {
   let closure_0;

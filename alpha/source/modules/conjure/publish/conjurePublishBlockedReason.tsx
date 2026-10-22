@@ -1,10 +1,10 @@
-// Module ID: 10755
-// Function ID: 10756
+// Module ID: 10773
+// Function ID: 10774
 // Name: conjurePublishBlockedReason
 // Dependencies: [1128, 3830, 2]
 // Exports: getConjurePublishBlockedCopy
 
-// Module 10755 (conjurePublishBlockedReason)
+// Module 10773 (conjurePublishBlockedReason)
 import intl13 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import size from "module_2" /* 2 */;

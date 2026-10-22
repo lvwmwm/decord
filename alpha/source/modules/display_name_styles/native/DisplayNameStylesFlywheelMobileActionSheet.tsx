@@ -1,22 +1,22 @@
-// Module ID: 18227
-// Function ID: 18228
+// Module ID: 18295
+// Function ID: 18296
 // Name: DisplayNameStylesFlywheelMobileActionSheet
-// Dependencies: [19, 17, 1392, 1087, 4818, 21, 558, 576, 4980, 4973, 5187, 7053, 504, 2053, 15752, 1128, 2928, 4991, 4805, 15820, 7467, 7112, 5564, 18228, 1384, 5651, 18232, 9359, 5216, 5226, 7200, 5247, 4966, 587, 2]
+// Dependencies: [19, 17, 1392, 1087, 4818, 21, 558, 576, 4983, 4976, 5191, 7060, 504, 2053, 15794, 1128, 2928, 4994, 4805, 15862, 7474, 7119, 5568, 18296, 1384, 5655, 18300, 9370, 5220, 5230, 7207, 5251, 4969, 587, 2]
 
-// Module 18227 (DisplayNameStylesFlywheelMobileActionSheet)
+// Module 18295 (DisplayNameStylesFlywheelMobileActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import dismissible_content from "dismissible_content" /* 4805 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4991 */;
-import openUserSettings from "openUserSettings" /* 7467 */;
-import openPremiumTryItOutModal from "openPremiumTryItOutModal" /* 15820 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4994 */;
+import openUserSettings from "openUserSettings" /* 7474 */;
+import openPremiumTryItOutModal from "openPremiumTryItOutModal" /* 15862 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import size_mod from "module_2" /* 2 */;
 
 let BottomSheet, dependencyMap;
@@ -44,11 +44,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   const cResult = obj.c(56);
   markAsDismissed = markAsDismissed.markAsDismissed;
   const ref = enabled2.useRef(null);
-  const enabled = enabled2.useContext(markAsDismissed(4980).AccessibilityPreferencesContext).reducedMotion.enabled;
-  let obj2 = markAsDismissed(4973);
-  obj2.isThemeDark(ref(5187)());
+  const enabled = enabled2.useContext(markAsDismissed(4983).AccessibilityPreferencesContext).reducedMotion.enabled;
+  let obj2 = markAsDismissed(4976);
+  obj2.isThemeDark(ref(5191)());
   const tmp7 = closure_11();
-  let obj3 = markAsDismissed(7053);
+  let obj3 = markAsDismissed(7060);
   const typeConsolidationTextTransform = obj3.useTypeConsolidationTextTransform("DisplayNameStylesFlywheel");
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
@@ -74,7 +74,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
     tmp13 = cResult[3];
   }
   dependencyMap = tmp13;
-  const tmpResult2 = tmp(15752);
+  const tmpResult2 = tmp(15794);
   enabled2 = tmpResult2.useTryItOutMobileRefreshConfig("DisplayNameStylesFlywheelMobileActionSheet").enabled;
   if (cResult[4] !== tmp13) {
     let stringResult;
@@ -141,8 +141,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
                 }
         };
         cResult[14] = markAsDismissed;
-        cResult[15] = closure_9(tmp(5564).ActionSheetHeaderBar, obj4);
-        const tmp23 = closure_9(tmp(5564).ActionSheetHeaderBar, obj4);
+        cResult[15] = closure_9(tmp(5568).ActionSheetHeaderBar, obj4);
+        const tmp23 = closure_9(tmp(5568).ActionSheetHeaderBar, obj4);
       } else {
         class L {
           constructor() {
@@ -162,7 +162,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
               markAsDismissed(ContentDismissActionType.USER_DISMISS);
             }
           }
-          tmp25 = closure_9(tmp(18228).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
+          tmp25 = closure_9(tmp(18296).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
         }
         cResult[16] = enabled;
         cResult[17] = tmp25;
@@ -208,11 +208,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
               markAsDismissed(ContentDismissActionType.USER_DISMISS);
             }
           }
-          const obj6 = { uri: ref(18232) };
+          const obj6 = { uri: ref(18300) };
           tmp32[0] = obj6;
           tmp32[1] = tmp7.image;
           tmp32[3] = !enabled;
-          const tmp5Result4 = ref(5651);
+          const tmp5Result4 = ref(5655);
           tmp28Result = tmp28(tmp5Result4, tmp32);
         } else {
           class L {
@@ -220,8 +220,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
               markAsDismissed(ContentDismissActionType.USER_DISMISS);
             }
           }
-          const APNGPlayer = tmp(9359).APNGPlayer;
-          tmp29[0] = ref(18232);
+          const APNGPlayer = tmp(9370).APNGPlayer;
+          tmp29[0] = ref(18300);
           tmp29[1] = tmp7.image;
           tmp28Result = tmp28(APNGPlayer, tmp29);
         }
@@ -284,11 +284,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   let obj = enabled2;
   const ref = enabled2.useRef(null);
   let tmp2 = markAsDismissed;
-  const enabled = enabled2.useContext(markAsDismissed(4980).AccessibilityPreferencesContext).reducedMotion.enabled;
-  let obj2 = markAsDismissed(4973);
-  const isThemeDarkResult = obj2.isThemeDark(ref(5187)());
+  const enabled = enabled2.useContext(markAsDismissed(4983).AccessibilityPreferencesContext).reducedMotion.enabled;
+  let obj2 = markAsDismissed(4976);
+  const isThemeDarkResult = obj2.isThemeDark(ref(5191)());
   const tmp6 = closure_11();
-  let obj3 = markAsDismissed(7053);
+  let obj3 = markAsDismissed(7060);
   const typeConsolidationTextTransform = obj3.useTypeConsolidationTextTransform("DisplayNameStylesFlywheel");
   let obj4 = markAsDismissed(504);
   const items = [UserStore];
@@ -296,7 +296,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   const obj5 = ref(2053);
   let result = obj5.canUsePremiumProfileCustomization(stateFromStores);
   dependencyMap = result;
-  const obj6 = markAsDismissed(15752);
+  const obj6 = markAsDismissed(15794);
   enabled2 = obj6.useTryItOutMobileRefreshConfig("DisplayNameStylesFlywheelMobileActionSheet").enabled;
   const intl = markAsDismissed(1128).intl;
   const string = intl.string;
@@ -345,9 +345,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
     markAsDismissed(ContentDismissActionType.USER_DISMISS);
   }, items3);
   const obj7 = { ref, onDismiss: callback2, startExpanded: true, handleDisabled: true, children: tmp15(SafeAreaPaddingView, obj16) };
-  BottomSheet = tmp2(5247).BottomSheet;
+  BottomSheet = tmp2(5251).BottomSheet;
   const obj8 = { style: tmp6.content, children: items4 };
-  SafeAreaPaddingView = tmp2(7200).SafeAreaPaddingView;
+  SafeAreaPaddingView = tmp2(7207).SafeAreaPaddingView;
   items4 = [, , , , ];
   const obj9 = {
     onPress() {
@@ -358,22 +358,22 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
       markAsDismissed(ContentDismissActionType.USER_DISMISS);
     }
   };
-  items4[0] = closure_9(tmp2(5564).ActionSheetHeaderBar, obj9);
+  items4[0] = closure_9(tmp2(5568).ActionSheetHeaderBar, obj9);
   const obj10 = { style: tmp6.imageContainer, children: items5 };
-  items5 = [enabled && tmp15(tmp2(18228).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" }), ];
+  items5 = [enabled && tmp15(tmp2(18296).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" }), ];
   let tmp19 = !enabled;
-  enabled && tmp15(tmp2(18228).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
+  enabled && tmp15(tmp2(18296).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
   if (tmp19) {
     let tmp15Result;
     const tmp2Result = tmp2(1384);
     if (tmp2Result.isIOS()) {
       const obj11 = { source: obj12, style: tmp6.image, resizeMode: "contain", enableAnimation: !enabled };
-      obj12 = { uri: ref(18232) };
-      const tmp4Result = ref(5651);
+      obj12 = { uri: ref(18300) };
+      const tmp4Result = ref(5655);
       tmp15Result = tmp15(tmp4Result, obj11);
     } else {
-      const obj13 = { url: ref(18232), style: tmp6.image, autoplay: true };
-      const APNGPlayer = tmp2(9359).APNGPlayer;
+      const obj13 = { url: ref(18300), style: tmp6.image, autoplay: true };
+      const APNGPlayer = tmp2(9370).APNGPlayer;
       tmp15Result = tmp15(APNGPlayer, obj13);
     }
     tmp19 = tmp15Result;
@@ -384,14 +384,14 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   items6 = [tmp6.title, typeConsolidationTextTransform];
   let str = "text-overlay-dark";
   str2 = "text-overlay-dark";
-  const Text = tmp2(5216).Text;
+  const Text = tmp2(5220).Text;
   if (isThemeDarkResult) {
     str2 = "text-overlay-light";
   }
   intl2 = tmp2(1128).intl;
   items4[2] = tmp15(Text, obj14);
   const obj15 = { variant: "text-lg/medium", style: tmp6.subtitle, color: str, children: stringResult };
-  const Text2 = tmp2(5216).Text;
+  const Text2 = tmp2(5220).Text;
   if (isThemeDarkResult) {
     str = "text-overlay-light";
   }
@@ -399,11 +399,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   items4[3] = tmp15(Text2, obj15);
   const obj17 = { style: tmp6.actions, children: items7 };
   const obj18 = { text: intl3.string(tmp2(1128).t["4P5I8V"]), variant: "primary", size: "lg", onPress: callback };
-  const Button = tmp2(5226).Button;
+  const Button = tmp2(5230).Button;
   intl3 = tmp2(1128).intl;
   items7 = [tmp15(Button, obj18), ];
   const obj19 = { text: intl4.string(tmp2(1128).t.TulDPl), variant: "secondary", size: "lg", onPress: callback1 };
-  const Button2 = tmp2(5226).Button;
+  const Button2 = tmp2(5230).Button;
   intl4 = tmp2(1128).intl;
   items7[1] = tmp15(Button2, obj19);
   items4[4] = closure_10(View, obj17);

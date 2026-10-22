@@ -1,16 +1,19 @@
-// Module ID: 10751
-// Function ID: 10752
+// Module ID: 10765
+// Function ID: 10766
 // Name: conjurePublishConnection
-// Dependencies: [5, 10672, 584, 10752, 10753, 2002, 10756, 10743, 10677, 2]
+// Dependencies: [5, 2045, 6759, 10684, 584, 10766, 10770, 10771, 2002, 10768, 10755, 10689, 2]
 // Exports: draftPatchNotes, preparePublish, publishProject, recordPatchNotesSent, rejectPendingPublish, requestPublishOptions
 
-// Module 10751 (conjurePublishConnection)
+// Module 10765 (conjurePublishConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10677 */;
-import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 10743 */;
-import conjureDevicePermissions from "conjureDevicePermissions" /* 10756 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10689 */;
+import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 10755 */;
+import promptConjureDevicePermissionsOnInstallDefault from "promptConjureDevicePermissionsOnInstall" /* 10766 */;
+import conjureDevicePermissions from "conjureDevicePermissions" /* 10768 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10672 */;
+import ApplicationStore from "ApplicationStore" /* 2045 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6759 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10684 */;
 import size from "module_2" /* 2 */;
 
 let paths;
@@ -139,15 +142,15 @@ let obj2 = {
               const obj4 = { value, done: true };
               return obj4;
             } else {
-              const obj7 = tmp(paths[3]);
+              const obj7 = tmp(paths[6]);
               const tmp16 = tmp;
               if (obj7.validPublishApproval(tmp.approval_url, tmp.approval_kind)) {
                 const obj5 = { type: "CONJURE_PROJECT_PUBLISH_APPROVAL", projectId, approvalUrl: tmp.approval_url };
-                const obj2 = projectId(paths[2]);
+                const obj2 = projectId(paths[4]);
                 obj2.dispatch(obj5);
                 projectId = 1;
                 paths = 1;
-                const obj6 = { value: tmp16(paths[5])(paths[4], paths.paths), done: false };
+                const obj6 = { value: tmp16(paths[8])(paths[7], paths.paths), done: false };
                 return obj6;
               }
             }
@@ -257,6 +260,7 @@ let obj2 = {
     dispatch(obj);
   },
   publish_result(ok, projectId) {
+    let name;
     projectId = projectId.projectId;
     const obj = DispatcherDefault;
     obj.dispatch({ type: "CONJURE_PROJECT_PUBLISH_APPROVAL", projectId, approvalUrl: null });
@@ -268,20 +272,49 @@ let obj2 = {
       value.resolve(ok);
     }
     if (true !== ok.ok) {
-      let str = ok.error;
+      let str2 = ok.error;
       const trackPublishFailed = ConjurePublishActionCreators.trackPublishFailed;
       ConjurePublishActionCreators;
-      if (str == null) {
-        str = "publish_result not ok";
+      if (str2 == null) {
+        str2 = "publish_result not ok";
       }
-      trackPublishFailed(projectId, str, false);
+      trackPublishFailed(projectId, str2, false);
     } else {
+      let previewDevicePermissions;
       const publishStatus = ConjurePublishStatusStore.getPublishStatus(projectId);
+      const obj5 = ConjurePublishStatusStore;
       if (null != publishStatus) {
         const obj2 = { type: "CONJURE_PROJECT_PUBLISH_STATUS_UPDATE", projectId, published: true, hasUnpublishedChanges: false, surface: null, previewAppChannels: null, previewDevicePermissions: null, publishedRevision: null, publishedAt: null };
         ({ surface: obj4.surface, previewAppChannels: obj4.previewAppChannels, previewDevicePermissions: obj4.previewDevicePermissions, publishedRevision: obj4.publishedRevision, publishedAt: obj4.publishedAt } = publishStatus);
         const tmpResult = DispatcherDefault;
         tmpResult.dispatch(obj2);
+      }
+      const project = ConjureProjectStore.getProject(projectId);
+      const publishStatus1 = obj5.getPublishStatus(projectId);
+      if (publishStatus1 != null) {
+        previewDevicePermissions = publishStatus1.previewDevicePermissions;
+      }
+      let install_scope;
+      if (project != null) {
+        install_scope = project.install_scope;
+      }
+      if ("user" === install_scope) {
+        if ("" !== project.application_id) {
+          if (null != previewDevicePermissions) {
+            const application_id = project.application_id;
+            const obj3 = { applicationId: application_id, appName: name, permissions: previewDevicePermissions };
+            const tmpResult2 = promptConjureDevicePermissionsOnInstallDefault;
+            const application = ApplicationStore.getApplication(application_id);
+            name = undefined;
+            if (application != null) {
+              name = application.name;
+            }
+            if (name == null) {
+              name = project.name;
+            }
+            tmpResult2(obj3);
+          }
+        }
       }
     }
   },
@@ -333,7 +366,7 @@ export const publishProject = function publishProject(id, selected_destination_i
       } else {
         const _setTimeout = setTimeout;
         const timerId = setTimeout(function() {
-          const obj = selected_destination_id(c2[2]);
+          const obj = selected_destination_id(c2[4]);
           const obj2 = { type: "CONJURE_PROJECT_PUBLISH_APPROVAL", projectId, approvalUrl: null };
           obj.dispatch(obj2);
           const value = map2.get(projectId);

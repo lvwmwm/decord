@@ -1,11 +1,11 @@
-// Module ID: 5222
-// Function ID: 5223
+// Module ID: 5226
+// Function ID: 5227
 // Name: typographyVariantRemap
-// Dependencies: [32, 5223, 2]
+// Dependencies: [32, 5227, 2]
 // Exports: remapTypographyVariant
 
-// Module 5222 (typographyVariantRemap)
-import TypographyVariantRemap from "TypographyVariantRemap" /* 5223 */;
+// Module 5226 (typographyVariantRemap)
+import TypographyVariantRemap from "TypographyVariantRemap" /* 5227 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

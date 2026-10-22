@@ -1,22 +1,22 @@
-// Module ID: 17101
-// Function ID: 17102
+// Module ID: 17170
+// Function ID: 17171
 // Name: SettingsPrivacyAndSafetyGuildSelectActionSheet
-// Dependencies: [32, 19, 4843, 6680, 17100, 21, 4966, 587, 6002, 4835, 1128, 558, 576, 504, 5192, 15859, 6862, 11753, 6687, 2]
+// Dependencies: [32, 19, 4843, 6687, 17169, 21, 4969, 587, 6009, 4835, 1128, 558, 576, 504, 5196, 15901, 6869, 11782, 6694, 2]
 
-// Module 17101 (SettingsPrivacyAndSafetyGuildSelectActionSheet)
+// Module 17170 (SettingsPrivacyAndSafetyGuildSelectActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 4835 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6002 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6687 */;
-import SelectComponentActionSheetDefault from "SelectComponentActionSheet" /* 11753 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6009 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6694 */;
+import SelectComponentActionSheetDefault from "SelectComponentActionSheet" /* 11782 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import SortedGuildStore from "SortedGuildStore" /* 6680 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 17100 */;
-import createStyles from "createStyles" /* 4966 */;
+import SortedGuildStore from "SortedGuildStore" /* 6687 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 17169 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -105,7 +105,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSel
     let tmp10;
     if (null != stateFromStores) {
       if (cResult[4] !== stateFromStores) {
-        const obj2 = { type: selectedGuildId(6002).SelectOptionType.GUILD, guild: stateFromStores, label: null, value: null };
+        const obj2 = { type: selectedGuildId(6009).SelectOptionType.GUILD, guild: stateFromStores, label: null, value: null };
         ({ name: obj3.label, id: obj3.value } = stateFromStores);
         cResult[4] = stateFromStores;
         cResult[5] = obj2;
@@ -117,7 +117,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSel
     return tmp10;
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { type: selectedGuildId(6002).SelectOptionType.GUILD, guild: dangerouslyConstructGuildRecordFromUntypedObject(obj5), label: intl2.string(selectedGuildId(1128).t["32u1Dx"]), value: id };
+    const obj4 = { type: selectedGuildId(6009).SelectOptionType.GUILD, guild: dangerouslyConstructGuildRecordFromUntypedObject(obj5), label: intl2.string(selectedGuildId(1128).t["32u1Dx"]), value: id };
     obj5 = { id, name: intl.string(selectedGuildId(1128).t["32u1Dx"]) };
     dangerouslyConstructGuildRecordFromUntypedObject = selectedGuildId(4835).dangerouslyConstructGuildRecordFromUntypedObject;
     selectedGuildId(4835);
@@ -141,12 +141,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSel
   if (selectedGuildId !== id) {
     let obj3;
     if (null != stateFromStores) {
-      obj3 = { type: selectedGuildId(6002).SelectOptionType.GUILD, guild: stateFromStores, label: null, value: null };
+      obj3 = { type: selectedGuildId(6009).SelectOptionType.GUILD, guild: stateFromStores, label: null, value: null };
       ({ name: obj2.label, id: obj2.value } = stateFromStores);
     }
     return obj3;
   }
-  const obj4 = { type: selectedGuildId(6002).SelectOptionType.GUILD, guild: dangerouslyConstructGuildRecordFromUntypedObject(obj7), label: intl2.string(selectedGuildId(1128).t["32u1Dx"]), value: id };
+  const obj4 = { type: selectedGuildId(6009).SelectOptionType.GUILD, guild: dangerouslyConstructGuildRecordFromUntypedObject(obj7), label: intl2.string(selectedGuildId(1128).t["32u1Dx"]), value: id };
   obj7 = { id, name: intl.string(selectedGuildId(1128).t["32u1Dx"]) };
   dangerouslyConstructGuildRecordFromUntypedObject = selectedGuildId(4835).dangerouslyConstructGuildRecordFromUntypedObject;
   selectedGuildId(4835);

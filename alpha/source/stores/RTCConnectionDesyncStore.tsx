@@ -1,22 +1,22 @@
-// Module ID: 14957
-// Function ID: 14958
+// Module ID: 15001
+// Function ID: 15002
 // Name: RTCConnectionDesyncStore
-// Dependencies: [5613, 4821, 5696, 1392, 5612, 5699, 1087, 5614, 2040, 5969, 6761, 5720, 504, 584, 2]
+// Dependencies: [5617, 4821, 5700, 1392, 5616, 5703, 1087, 5618, 2040, 5976, 6768, 5725, 504, 584, 2]
 
-// Module 14957 (RTCConnectionDesyncStore)
+// Module 15001 (RTCConnectionDesyncStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import CachedEntriesMapDefault from "CachedEntriesMap" /* 2040 */;
-import CallConstants from "CallConstants" /* 5614 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5699 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5720 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5969 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 6761 */;
-import VoiceStateRecord from "VoiceStateRecord" /* 5613 */;
+import CallConstants from "CallConstants" /* 5618 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5703 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5725 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5976 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 6768 */;
+import VoiceStateRecord from "VoiceStateRecord" /* 5617 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5696 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5700 */;
 import UserStore from "UserStore" /* 1392 */;
-import VoiceStateStore from "VoiceStateStore" /* 5612 */;
+import VoiceStateStore from "VoiceStateStore" /* 5616 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ function retryFailedUsers() {
             tmp6 = React4;
           }
           const result = closure_12.set(user.id, tmp22(tmp21, tmp6, user.id));
-          const obj = { type: ParticipantTypes.USER, user, id: user.id, streamId: null, voiceState: tmp21, voicePlatform: null, speaking: false, lastSpoke: 0, soundsharing: false, ringing: false, userNick: obj2.getName(guildId, channelId, user), userAvatarDecoration: obj3.getAvatarDecoration(user, guildId), localVideoDisabled: false, isPoppedOut: false };
+          const obj = { type: ParticipantTypes.USER, user, id: user.id, streamId: null, voiceState: tmp21, voicePlatform: null, speaking: false, playingSoundboard: false, lastSpoke: 0, soundsharing: false, ringing: false, userNick: obj2.getName(guildId, channelId, user), userAvatarDecoration: obj3.getAvatarDecoration(user, guildId), localVideoDisabled: false, isPoppedOut: false };
           obj2 = NicknameUtilsDefault;
           obj3 = useAvatarDecoration;
           const result1 = set2.set(user.id, obj);
@@ -174,7 +174,7 @@ let obj = {
               tmp2 = React4;
             }
             const result = closure_12.set(user.id, tmp20(tmp19, tmp2, user.id));
-            const obj = { type: ParticipantTypes.USER, user, id: user.id, streamId: null, voiceState: tmp19, voicePlatform: null, speaking: false, lastSpoke: 0, soundsharing: false, ringing: false, userNick: obj2.getName(require, importDefault, user), userAvatarDecoration: obj3.getAvatarDecoration(user, require), localVideoDisabled: false, isPoppedOut: false };
+            const obj = { type: ParticipantTypes.USER, user, id: user.id, streamId: null, voiceState: tmp19, voicePlatform: null, speaking: false, playingSoundboard: false, lastSpoke: 0, soundsharing: false, ringing: false, userNick: obj2.getName(require, importDefault, user), userAvatarDecoration: obj3.getAvatarDecoration(user, require), localVideoDisabled: false, isPoppedOut: false };
             obj2 = NicknameUtilsDefault;
             obj3 = useAvatarDecoration;
             const result1 = set2.set(user.id, obj);

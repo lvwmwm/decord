@@ -1,23 +1,23 @@
-// Module ID: 15754
-// Function ID: 15755
+// Module ID: 15796
+// Function ID: 15797
 // Name: EditUserProfileAvatar
-// Dependencies: [19, 17, 4967, 21, 4966, 7230, 7255, 2053, 8612, 8622, 15755, 5192, 15756, 2002, 15745, 15745, 8610, 8619, 504, 4797, 8711, 15757, 15747, 1128, 6887, 11739, 1202, 2]
+// Dependencies: [19, 17, 4970, 21, 4969, 7237, 7262, 2053, 8621, 8631, 15797, 5196, 15798, 2002, 15787, 15787, 8619, 8628, 504, 4797, 8720, 15799, 15789, 1128, 6894, 11756, 1202, 2]
 // Exports: default
 
-// Module 15754 (EditUserProfileAvatar)
+// Module 15796 (EditUserProfileAvatar)
 import react_native from "react-native" /* 17 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4967 */;
+import AccessibilityStore from "AccessibilityStore" /* 4970 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
 let metroRequire;
 let tmp3;
-const ProfileCustomizationUtils = tmp3(8619);
+const ProfileCustomizationUtils = tmp3(8628);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ editIcon: { position: "absolute", right: -3 }, editButton: { position: "absolute", top: -8, right: -8 } });
@@ -110,7 +110,7 @@ export default function EditUserProfileAvatar(user) {
       handleEditAvatarDecorationSelect: editAvatarDecoration,
       showRemoveAvatar: tmp3Result.showRemoveAvatar(pendingAvatar, user.avatar)
     };
-    const tmp4 = asyncRequire(15756, dependencyMap.paths);
+    const tmp4 = asyncRequire(15798, dependencyMap.paths);
     if (!flag) {
       editAvatarDecoration = function editAvatarDecoration() {
         const obj = user(flag2[16]);

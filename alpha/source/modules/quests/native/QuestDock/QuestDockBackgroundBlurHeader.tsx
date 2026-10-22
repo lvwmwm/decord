@@ -1,19 +1,19 @@
-// Module ID: 16360
-// Function ID: 16361
+// Module ID: 16429
+// Function ID: 16430
 // Name: QuestDockBackgroundBlurHeader
-// Dependencies: [32, 19, 17, 6689, 16261, 21, 4966, 587, 5229, 558, 576, 16262, 1385, 5234, 16350, 5035, 6887, 5216, 1128, 13867, 16361, 16327, 7147, 16363, 9601, 2]
+// Dependencies: [32, 19, 17, 6696, 16331, 21, 4969, 587, 5233, 558, 576, 16332, 1385, 5238, 16419, 5038, 6894, 5220, 1128, 13903, 16430, 16396, 7154, 16432, 9613, 2]
 
-// Module 16360 (QuestDockBackgroundBlurHeader)
+// Module 16429 (QuestDockBackgroundBlurHeader)
 import nativeDefault from "native" /* 587 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
-import spring from "spring" /* 5229 */;
-import QuestConstants from "QuestConstants" /* 6689 */;
+import spring from "spring" /* 5233 */;
+import QuestConstants from "QuestConstants" /* 6696 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import QuestDockConstants from "QuestDockConstants" /* 16261 */;
+import QuestDockConstants from "QuestDockConstants" /* 16331 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -113,7 +113,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ({ blurHash, children, collapsedContent, secondaryContentWidth, withPressableDisclosure, promotedLabelLeading, hideBlurWhenCollapsed, onDisclosurePress, onSubmenuPress } = arg0);
   let obj2 = react;
   const tmp6 = undefined !== hideBlurWhenCollapsed && hideBlurWhenCollapsed;
-  const context = react.useContext(tmp(16262).QuestDockGestureContext);
+  const context = react.useContext(tmp(16332).QuestDockGestureContext);
   activeQuestDockMode = context.activeQuestDockMode;
   const questDockWrapperSpecs = context.questDockWrapperSpecs;
   [tmp9, dependencyMap] = token(react.useState(false), 2);
@@ -139,11 +139,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     [tmp10, tmp11] = cResult;
   }
   const effect = obj2.useEffect(tmp10, tmp11);
-  const tmpResult = tmp(5234);
+  const tmpResult = tmp(5238);
   token = tmpResult.useToken(questDockWrapperSpecs(587).modules.mobile.QUEST_DOCK_BORDER_RADIUS);
-  const tmp15 = questDockWrapperSpecs(16350)(token);
+  const tmp15 = questDockWrapperSpecs(16419)(token);
   react = tmp15;
-  const tmpResult10 = tmp(5035);
+  const tmpResult10 = tmp(5038);
   class J {
     constructor() {
       let items;
@@ -176,7 +176,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       items = [{ translateX: withSpring(num2, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED) }, ];
       ({ translateX: withSpring(num2, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED) });
-      const withSpring2 = tmp15(5229).withSpring;
+      const withSpring2 = tmp15(5233).withSpring;
       let num3 = 0;
       spring;
       if (activeQuestDockMode.get() === QuestDockMode.EXPANDED) {
@@ -187,7 +187,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       return obj2;
     }
   }
-  let obj3 = { activeQuestDockMode, QuestDockMode, QUEST_DOCK_CONTENT_BORDER_RADII, questDockBorderRadius: token, withSpring: tmp(5229).withSpring, questDockAnimatedBorderRadius: tmp15, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED, questDockWrapperSpecs, QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED: closure_11 };
+  let obj3 = { activeQuestDockMode, QuestDockMode, QUEST_DOCK_CONTENT_BORDER_RADII, questDockBorderRadius: token, withSpring: tmp(5233).withSpring, questDockAnimatedBorderRadius: tmp15, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED, questDockWrapperSpecs, QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED: closure_11 };
   J.__closure = obj3;
   J.__workletHash = 17202411570804;
   J.__initData = __initData;
@@ -202,8 +202,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj = { opacity: withSpring(num, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED) };
     return obj;
   };
-  const tmpResult11 = tmp(5035);
-  let obj4 = { withSpring: tmp(5229).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
+  const tmpResult11 = tmp(5038);
+  let obj4 = { withSpring: tmp(5233).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
   fn2.__closure = obj4;
   fn2.__workletHash = 5804990093011;
   fn2.__initData = __initData2;
@@ -219,7 +219,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ee.__closure = obj5;
   ee.__workletHash = 14001429324395;
   ee.__initData = __initData3;
-  const tmpResult12 = tmp(5035);
+  const tmpResult12 = tmp(5038);
   const animatedStyle2 = tmpResult12.useAnimatedStyle(ee);
   function te() {
     const withSpring = spring.withSpring;
@@ -231,8 +231,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj = { opacity: withSpring(num, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED) };
     return obj;
   }
-  const tmpResult13 = tmp(5035);
-  const obj6 = { withSpring: tmp(5229).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
+  const tmpResult13 = tmp(5038);
+  const obj6 = { withSpring: tmp(5233).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
   te.__closure = obj6;
   te.__workletHash = 6229744150165;
   te.__initData = __initData4;
@@ -247,7 +247,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   oe.__closure = { activeQuestDockMode, QuestDockMode, QUEST_DOCK_HORIZONTAL_EDGE_GUTTER_COLLAPSED: closure_10 };
   oe.__workletHash = 10870034799551;
   oe.__initData = __initData5;
-  const tmpResult14 = tmp(5035);
+  const tmpResult14 = tmp(5038);
   const animatedStyle4 = tmpResult14.useAnimatedStyle(oe);
   function ie() {
     let pointerEvents = "none";
@@ -259,9 +259,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ie.__closure = { activeQuestDockMode, QuestDockMode };
   ie.__workletHash = 800759970563;
   ie.__initData = __initData6;
-  const tmpResult15 = tmp(5035);
+  const tmpResult15 = tmp(5038);
   const animatedProps = tmpResult15.useAnimatedProps(ie);
-  const tmpResult16 = tmp(5035);
+  const tmpResult16 = tmp(5038);
   class De {
     constructor() {
       let withSpringResult;
@@ -282,10 +282,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       return obj2;
     }
   }
-  De.__closure = { activeQuestDockMode, QuestDockMode, QUEST_DOCK_CONTENT_BORDER_RADII, questDockBorderRadius: token, withSpring: tmp(5229).withSpring, questDockAnimatedBorderRadius: tmp15, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED, questDockWrapperSpecs };
+  De.__closure = { activeQuestDockMode, QuestDockMode, QUEST_DOCK_CONTENT_BORDER_RADII, questDockBorderRadius: token, withSpring: tmp(5233).withSpring, questDockAnimatedBorderRadius: tmp15, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED, questDockWrapperSpecs };
   De.__workletHash = 8904986205240;
   De.__initData = __initData7;
-  ({ activeQuestDockMode, QuestDockMode, QUEST_DOCK_CONTENT_BORDER_RADII, questDockBorderRadius: token, withSpring: tmp(5229).withSpring, questDockAnimatedBorderRadius: tmp15, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED, questDockWrapperSpecs });
+  ({ activeQuestDockMode, QuestDockMode, QUEST_DOCK_CONTENT_BORDER_RADII, questDockBorderRadius: token, withSpring: tmp(5233).withSpring, questDockAnimatedBorderRadius: tmp15, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED, questDockWrapperSpecs });
   const animatedStyle5 = tmpResult16.useAnimatedStyle(De);
   function re() {
     const withSpring = spring.withSpring;
@@ -297,12 +297,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj = { opacity: withSpring(num, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED) };
     return obj;
   }
-  const useAnimatedStyle = tmp(5035).useAnimatedStyle;
-  const tmpResult17 = tmp(5035);
-  re.__closure = { withSpring: tmp(5229).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
+  const useAnimatedStyle = tmp(5038).useAnimatedStyle;
+  const tmpResult17 = tmp(5038);
+  re.__closure = { withSpring: tmp(5233).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
   re.__workletHash = 10022958892825;
   re.__initData = __initData8;
-  ({ withSpring: tmp(5229).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED });
+  ({ withSpring: tmp(5233).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED });
   if (tmp6) {
     animatedStyle6 = useAnimatedStyle(re);
   }
@@ -387,7 +387,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                       const _Symbol2 = Symbol;
                                       if (cResult[45] === Symbol.for("react.memo_cache_sentinel")) {
                                         const obj9 = { color: questDockWrapperSpecs(587).colors.INTERACTIVE_TEXT_ACTIVE };
-                                        const MoreHorizontalIcon = tmp(9601).MoreHorizontalIcon;
+                                        const MoreHorizontalIcon = tmp(9613).MoreHorizontalIcon;
                                         const tmp69 = closure_12(MoreHorizontalIcon, obj9);
                                         cResult[45] = tmp69;
                                         tmp67 = tmp69;
@@ -430,7 +430,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                                     }
                                                     const obj10 = { style: tmp32, layout: questDockHeaderLayoutAnimation, children: items1 };
                                                     items1 = [tmp33, tmp40, tmp80];
-                                                    const tmp87 = closure_14(questDockWrapperSpecs(7147), obj10);
+                                                    const tmp87 = closure_14(questDockWrapperSpecs(7154), obj10);
                                                     cResult[61] = tmp80;
                                                     cResult[62] = tmp32;
                                                     cResult[63] = tmp33;
@@ -450,7 +450,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                               }
                                             }
                                             const obj12 = { animatedProps, style: tmp58, layout: questDockHeaderLayoutAnimation, children: tmp73 };
-                                            const tmp79 = closure_12(questDockWrapperSpecs(7147), obj12);
+                                            const tmp79 = closure_12(questDockWrapperSpecs(7154), obj12);
                                             cResult[53] = animatedProps;
                                             cResult[54] = tmp58;
                                             cResult[55] = tmp73;
@@ -460,7 +460,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                         }
                                         const obj13 = { style: tmp59, children: items3 };
                                         items3 = [tmp60, tmp70];
-                                        const tmp75 = closure_14(questDockWrapperSpecs(7147), obj13);
+                                        const tmp75 = closure_14(questDockWrapperSpecs(7154), obj13);
                                         cResult[49] = tmp59;
                                         cResult[50] = tmp60;
                                         cResult[51] = tmp70;
@@ -468,7 +468,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                         tmp73 = tmp75;
                                       }
                                       const obj14 = { accessibilityRole: "button", accessibilityLabel: tmp65, onPress: onSubmenuPress, style: tmp25.tertiaryContent, children: tmp67 };
-                                      const tmp72 = closure_12(tmp(6887).PressableOpacity, obj14);
+                                      const tmp72 = closure_12(tmp(6894).PressableOpacity, obj14);
                                       cResult[46] = onSubmenuPress;
                                       cResult[47] = tmp25.tertiaryContent;
                                       cResult[48] = tmp72;
@@ -477,7 +477,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                     let tmp61 = !tmp5;
                                     if (tmp61) {
                                       const obj15 = { children: items4 };
-                                      items4 = [tmp26, closure_12(tmp13(16363), {})];
+                                      items4 = [tmp26, closure_12(tmp13(16432), {})];
                                       tmp61 = closure_14(closure_13, obj15);
                                     }
                                     cResult[41] = tmp26;
@@ -498,14 +498,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                 tmp58 = items6;
                               }
                               const obj16 = { style: tmp48, layout: questDockHeaderLayoutAnimation, children: tmp49 };
-                              const tmp55 = closure_12(questDockWrapperSpecs(7147), obj16);
+                              const tmp55 = closure_12(questDockWrapperSpecs(7154), obj16);
                               cResult[32] = tmp48;
                               cResult[33] = tmp49;
                               cResult[34] = tmp55;
                               tmp52 = tmp55;
                             }
                             const obj17 = { style: animatedStyle1, children: collapsedContent };
-                            const tmp51 = closure_12(questDockWrapperSpecs(7147), obj17);
+                            const tmp51 = closure_12(questDockWrapperSpecs(7154), obj17);
                             cResult[29] = collapsedContent;
                             cResult[30] = animatedStyle1;
                             cResult[31] = tmp51;
@@ -554,7 +554,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
               let tmp37;
               if (null != blurHash) {
                 const obj20 = { placeholder: blurHash, layoutAnimatedStyle: animatedStyle5, opacityAnimatedStyle: animatedStyle6, layoutAnimation: questDockHeaderLayoutAnimation };
-                tmp37 = closure_12(tmp13(16361), obj20);
+                tmp37 = closure_12(tmp13(16430), obj20);
               }
               cResult[11] = blurHash;
               cResult[12] = animatedStyle5;
@@ -564,7 +564,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
               tmp33 = tmp37;
             }
             const obj21 = { layoutAnimatedStyle: animatedStyle5, opacityAnimatedStyle: animatedStyle6, layoutAnimation: questDockHeaderLayoutAnimation };
-            tmp37 = closure_12(tmp13(16327), obj21);
+            tmp37 = closure_12(tmp13(16396), obj21);
           }
           const items10 = [tmp25.header, animatedStyle];
           let num3 = 8;
@@ -581,13 +581,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     items11 = [, ];
     ({ actionDisclosures: arr3[0], tertiaryContent: arr3[1] } = tmp25);
     obj23 = { children: items12 };
-    const PressableOpacity = tmp(6887).PressableOpacity;
+    const PressableOpacity = tmp(6894).PressableOpacity;
     const obj24 = { color: "interactive-text-active", variant: "text-sm/medium", children: intl2.string(tmp(1128).t.o6FLcF) };
-    const Text2 = tmp(5216).Text;
+    const Text2 = tmp(5220).Text;
     intl2 = tmp(1128).intl;
     items12 = [closure_12(Text2, obj24), ];
     const obj25 = { color: questDockWrapperSpecs(587).colors.INTERACTIVE_TEXT_ACTIVE, style: tmp25.actionDisclosuresIcon };
-    const CircleQuestionIcon = tmp(13867).CircleQuestionIcon;
+    const CircleQuestionIcon = tmp(13903).CircleQuestionIcon;
     items12[1] = closure_12(CircleQuestionIcon, obj25);
     tmp27Result = tmp27(PressableOpacity, obj22);
   } else {
@@ -595,7 +595,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     items13 = [, ];
     ({ actionDisclosures: arr2[0], tertiaryContent: arr2[1] } = tmp25);
     obj27 = { color: "text-default", variant: "text-sm/medium", children: intl.string(tmp(1128).t.o6FLcF) };
-    Text = tmp(5216).Text;
+    Text = tmp(5220).Text;
     intl = tmp(1128).intl;
     tmp27Result = tmp27(closure_6, obj26);
   }
@@ -658,7 +658,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   react = undefined;
   const tmp = activeQuestDockMode;
   ({ onDisclosurePress, onSubmenuPress } = collapsedContent);
-  const context = react.useContext(activeQuestDockMode(16262).QuestDockGestureContext);
+  const context = react.useContext(activeQuestDockMode(16332).QuestDockGestureContext);
   activeQuestDockMode = context.activeQuestDockMode;
   const questDockWrapperSpecs = context.questDockWrapperSpecs;
   [tmp5, c2] = token(react.useState(false), 2);
@@ -672,11 +672,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       return () => closure_0.remove();
     }
   }, []);
-  let obj = activeQuestDockMode(5234);
+  let obj = activeQuestDockMode(5238);
   token = obj.useToken(questDockWrapperSpecs(587).modules.mobile.QUEST_DOCK_BORDER_RADIUS);
-  const tmp9 = questDockWrapperSpecs(16350)(token);
+  const tmp9 = questDockWrapperSpecs(16419)(token);
   react = tmp9;
-  let obj2 = activeQuestDockMode(5035);
+  let obj2 = activeQuestDockMode(5038);
   const fn = function q() {
     let items;
     let width;
@@ -708,7 +708,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     items = [{ translateX: withSpring(num2, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED) }, ];
     ({ translateX: withSpring(num2, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED) });
-    const withSpring2 = tmp15(5229).withSpring;
+    const withSpring2 = tmp15(5233).withSpring;
     let num3 = 0;
     spring;
     if (activeQuestDockMode.get() === QuestDockMode.EXPANDED) {
@@ -718,12 +718,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     ({ translateY: withSpring2(num3, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED) });
     return obj2;
   };
-  let obj3 = { activeQuestDockMode, QuestDockMode, QUEST_DOCK_CONTENT_BORDER_RADII, questDockBorderRadius: token, withSpring: activeQuestDockMode(5229).withSpring, questDockAnimatedBorderRadius: tmp9, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED, questDockWrapperSpecs, QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED: closure_11 };
+  let obj3 = { activeQuestDockMode, QuestDockMode, QUEST_DOCK_CONTENT_BORDER_RADII, questDockBorderRadius: token, withSpring: activeQuestDockMode(5233).withSpring, questDockAnimatedBorderRadius: tmp9, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED, questDockWrapperSpecs, QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED: closure_11 };
   fn.__closure = obj3;
   fn.__workletHash = 3882883093351;
   fn.__initData = __initData9;
   const animatedStyle = obj2.useAnimatedStyle(fn);
-  let obj4 = activeQuestDockMode(5035);
+  let obj4 = activeQuestDockMode(5038);
   class W {
     constructor() {
       const withSpring = spring.withSpring;
@@ -736,12 +736,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       return obj;
     }
   }
-  const obj5 = { withSpring: activeQuestDockMode(5229).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
+  const obj5 = { withSpring: activeQuestDockMode(5233).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
   W.__closure = obj5;
   W.__workletHash = 5461767762400;
   W.__initData = __initData10;
   const animatedStyle1 = obj4.useAnimatedStyle(W);
-  const obj6 = activeQuestDockMode(5035);
+  const obj6 = activeQuestDockMode(5038);
   class Z {
     constructor() {
       let right = 0;
@@ -756,7 +756,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   Z.__workletHash = 17147681641180;
   Z.__initData = __initData11;
   const animatedStyle2 = obj6.useAnimatedStyle(Z);
-  const obj8 = activeQuestDockMode(5035);
+  const obj8 = activeQuestDockMode(5038);
   class F {
     constructor() {
       const withSpring = spring.withSpring;
@@ -769,12 +769,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       return obj;
     }
   }
-  F.__closure = { withSpring: activeQuestDockMode(5229).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
+  F.__closure = { withSpring: activeQuestDockMode(5233).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
   F.__workletHash = 17362940839906;
   F.__initData = __initData12;
-  ({ withSpring: activeQuestDockMode(5229).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED });
+  ({ withSpring: activeQuestDockMode(5233).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED });
   const animatedStyle3 = obj8.useAnimatedStyle(F);
-  const obj10 = activeQuestDockMode(5035);
+  const obj10 = activeQuestDockMode(5038);
   class V {
     constructor() {
       let right = 0;
@@ -798,7 +798,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   fn2.__closure = { activeQuestDockMode, QuestDockMode };
   fn2.__workletHash = 1087474161008;
   fn2.__initData = __initData14;
-  const obj11 = activeQuestDockMode(5035);
+  const obj11 = activeQuestDockMode(5038);
   const animatedProps = obj11.useAnimatedProps(fn2);
   const fn3 = function z() {
     let withSpringResult;
@@ -818,13 +818,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     return obj2;
   };
-  const obj12 = activeQuestDockMode(5035);
-  fn3.__closure = { activeQuestDockMode, QuestDockMode, QUEST_DOCK_CONTENT_BORDER_RADII, questDockBorderRadius: token, withSpring: activeQuestDockMode(5229).withSpring, questDockAnimatedBorderRadius: tmp9, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED, questDockWrapperSpecs };
+  const obj12 = activeQuestDockMode(5038);
+  fn3.__closure = { activeQuestDockMode, QuestDockMode, QUEST_DOCK_CONTENT_BORDER_RADII, questDockBorderRadius: token, withSpring: activeQuestDockMode(5233).withSpring, questDockAnimatedBorderRadius: tmp9, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED, questDockWrapperSpecs };
   fn3.__workletHash = 5464365691303;
   fn3.__initData = __initData15;
-  ({ activeQuestDockMode, QuestDockMode, QUEST_DOCK_CONTENT_BORDER_RADII, questDockBorderRadius: token, withSpring: activeQuestDockMode(5229).withSpring, questDockAnimatedBorderRadius: tmp9, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED, questDockWrapperSpecs });
+  ({ activeQuestDockMode, QuestDockMode, QUEST_DOCK_CONTENT_BORDER_RADII, questDockBorderRadius: token, withSpring: activeQuestDockMode(5233).withSpring, questDockAnimatedBorderRadius: tmp9, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED, questDockWrapperSpecs });
   const animatedStyle5 = obj12.useAnimatedStyle(fn3);
-  const tmp17 = activeQuestDockMode(5035);
+  const tmp17 = activeQuestDockMode(5038);
   class J {
     constructor() {
       const withSpring = spring.withSpring;
@@ -838,11 +838,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
   }
   const useAnimatedStyle = tmp17.useAnimatedStyle;
-  J.__closure = { withSpring: activeQuestDockMode(5229).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
+  J.__closure = { withSpring: activeQuestDockMode(5233).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
   J.__workletHash = 7025233131750;
   J.__initData = __initData16;
   let animatedStyle6;
-  ({ withSpring: activeQuestDockMode(5229).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED });
+  ({ withSpring: activeQuestDockMode(5233).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED });
   if (flag2) {
     animatedStyle6 = useAnimatedStyle(J);
   }
@@ -852,13 +852,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     items = [, ];
     ({ actionDisclosures: arr2[0], tertiaryContent: arr2[1] } = tmp19);
     obj16 = { children: items1 };
-    const PressableOpacity = tmp(6887).PressableOpacity;
+    const PressableOpacity = tmp(6894).PressableOpacity;
     const obj17 = { color: "interactive-text-active", variant: "text-sm/medium", children: intl2.string(tmp(1128).t.o6FLcF) };
-    const Text2 = tmp(5216).Text;
+    const Text2 = tmp(5220).Text;
     intl2 = tmp(1128).intl;
     items1 = [closure_12(Text2, obj17), ];
     const obj18 = { color: questDockWrapperSpecs(587).colors.INTERACTIVE_TEXT_ACTIVE, style: tmp19.actionDisclosuresIcon };
-    const CircleQuestionIcon = tmp(13867).CircleQuestionIcon;
+    const CircleQuestionIcon = tmp(13903).CircleQuestionIcon;
     items1[1] = closure_12(CircleQuestionIcon, obj18);
     tmp20Result = tmp20(PressableOpacity, obj15);
     tmp23 = tmp20;
@@ -867,20 +867,20 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     items2 = [, ];
     ({ actionDisclosures: arr[0], tertiaryContent: arr[1] } = tmp19);
     obj20 = { color: "text-default", variant: "text-sm/medium", children: intl.string(tmp(1128).t.o6FLcF) };
-    Text = tmp(5216).Text;
+    Text = tmp(5220).Text;
     intl = tmp(1128).intl;
     tmp20Result = tmp20(closure_6, obj19);
     tmp23 = tmp20;
   }
   const obj21 = { style: items3, layout: questDockHeaderLayoutAnimation, children: null };
   items3 = [tmp19.header, animatedStyle];
-  const tmp7Result = questDockWrapperSpecs(7147);
+  const tmp7Result = questDockWrapperSpecs(7154);
   const tmpResult = tmp(1385);
   if (tmpResult.isAndroid()) {
     let tmp23Result;
     if (null != blurHash) {
       const obj22 = { placeholder: blurHash, layoutAnimatedStyle: animatedStyle5, opacityAnimatedStyle: animatedStyle6, layoutAnimation: questDockHeaderLayoutAnimation };
-      tmp23Result = tmp23(tmp7(16361), obj22);
+      tmp23Result = tmp23(tmp7(16430), obj22);
     }
     const items4 = [tmp23Result, , ];
     let tmp23Result2 = children;
@@ -900,14 +900,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     const obj25 = { style: items5, children: items8 };
     items5[1] = tmp35;
-    const obj26 = { style: items7, layout: questDockHeaderLayoutAnimation, children: tmp23(questDockWrapperSpecs(7147), obj27) };
+    const obj26 = { style: items7, layout: questDockHeaderLayoutAnimation, children: tmp23(questDockWrapperSpecs(7154), obj27) };
     items7 = [tmp19.secondaryContentOverlay, animatedStyle2];
     obj27 = { style: animatedStyle1, children: collapsedContent };
-    const tmp7Result4 = questDockWrapperSpecs(7147);
+    const tmp7Result4 = questDockWrapperSpecs(7154);
     items8 = [tmp23(tmp7Result4, obj26), ];
     let secondaryContentOverlay = null != secondaryContentWidth;
     const obj28 = { animatedProps, style: items9, layout: questDockHeaderLayoutAnimation, children: closure_14(tmp7Result6, obj29) };
-    const tmp7Result5 = questDockWrapperSpecs(7147);
+    const tmp7Result5 = questDockWrapperSpecs(7154);
     if (secondaryContentOverlay) {
       secondaryContentOverlay = tmp19.secondaryContentOverlay;
     }
@@ -915,18 +915,18 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     obj29 = { style: items10, children: items12 };
     items10 = [tmp19.expandedContent, animatedStyle3];
     let tmp26Result = !flag;
-    tmp7Result6 = questDockWrapperSpecs(7147);
+    tmp7Result6 = questDockWrapperSpecs(7154);
     if (!flag) {
       const obj30 = { children: items11 };
-      items11 = [tmp20Result, tmp23(tmp7(16363), {})];
+      items11 = [tmp20Result, tmp23(tmp7(16432), {})];
       tmp26Result = tmp26(closure_13, obj30);
     }
     items12 = [tmp26Result, ];
     const obj31 = { accessibilityRole: "button", accessibilityLabel: intl3.string(tmp(1128).t.PdRCRg), onPress: onSubmenuPress, style: tmp19.tertiaryContent, children: tmp23(MoreHorizontalIcon, obj32) };
-    const PressableOpacity2 = tmp(6887).PressableOpacity;
+    const PressableOpacity2 = tmp(6894).PressableOpacity;
     intl3 = tmp(1128).intl;
     obj32 = { color: questDockWrapperSpecs(587).colors.INTERACTIVE_TEXT_ACTIVE };
-    MoreHorizontalIcon = tmp(9601).MoreHorizontalIcon;
+    MoreHorizontalIcon = tmp(9613).MoreHorizontalIcon;
     items12[1] = tmp23(PressableOpacity2, obj31);
     items8[1] = tmp23(tmp7Result5, obj28);
     items4[2] = closure_14(tmp33, obj25);
@@ -944,7 +944,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     return closure_14(tmp7Result, obj21);
   }
-  tmp23Result = tmp23(tmp7(16327), { layoutAnimatedStyle: animatedStyle5, opacityAnimatedStyle: animatedStyle6, layoutAnimation: tmp28 });
+  tmp23Result = tmp23(tmp7(16396), { layoutAnimatedStyle: animatedStyle5, opacityAnimatedStyle: animatedStyle6, layoutAnimation: tmp28 });
 }));
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockBackgroundBlurHeader.tsx");

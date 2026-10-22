@@ -1,18 +1,18 @@
-// Module ID: 8405
-// Function ID: 8406
+// Module ID: 8414
+// Function ID: 8415
 // Name: PremiumSubscriptionOfferUtil
-// Dependencies: [32, 19, 2058, 1394, 558, 7534, 8406, 8407, 576, 504, 2049, 8408, 8409, 2000, 8412, 2]
+// Dependencies: [32, 19, 2058, 1394, 558, 7541, 8415, 8416, 576, 504, 2049, 8417, 8418, 2000, 8421, 2]
 // Exports: renewalInvoiceChurnDiscountInfo, useIsNUXEligible
 
-// Module 8405 (PremiumSubscriptionOfferUtil)
+// Module 8414 (PremiumSubscriptionOfferUtil)
 import react2 from "react" /* 576 */;
 import Server from "Server" /* 2000 */;
 import _modDef2049 from "module_2049" /* 2049 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7534 */;
-import PremiumSubscriptionTrialUtil from "PremiumSubscriptionTrialUtil" /* 8406 */;
-import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8407 */;
-import useDiscountOfferDefault from "useDiscountOffer" /* 8408 */;
-import ReverseTrialUtils from "ReverseTrialUtils" /* 8412 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7541 */;
+import PremiumSubscriptionTrialUtil from "PremiumSubscriptionTrialUtil" /* 8415 */;
+import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8416 */;
+import useDiscountOfferDefault from "useDiscountOffer" /* 8417 */;
+import ReverseTrialUtils from "ReverseTrialUtils" /* 8421 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 2058 */;
@@ -38,7 +38,7 @@ let metroRequire;
 let tmp;
 let unpackModuleId;
 const get_initialized = tmp(504);
-const UserOfferActionCreators = tmp(8409);
+const UserOfferActionCreators = tmp(8418);
 function getDiscountInfo(active_discount_id) {
   if (authStore !== active_discount_id) {
     if (authStore2 !== active_discount_id) {
@@ -49,7 +49,7 @@ function getDiscountInfo(active_discount_id) {
       } else {
         if (unpackModuleId !== active_discount_id) {
           if (syncedClientThemes !== active_discount_id) {
-            if (authStore3 !== active_discount_id) {
+            if (closure_15 !== active_discount_id) {
               if (map1 === active_discount_id) {
                 return { duration: 1, percentage: 40, discountId: active_discount_id };
               } else if (metroRequire === active_discount_id) {
@@ -60,9 +60,9 @@ function getDiscountInfo(active_discount_id) {
                 return { duration: 12, percentage: 20, discountId: active_discount_id };
               } else if (React4 === active_discount_id) {
                 return { duration: 12, percentage: 30, discountId: active_discount_id };
-              } else if (authStore4 === active_discount_id) {
+              } else if (authStore3 === active_discount_id) {
                 return { duration: 1, percentage: 40, discountId: active_discount_id };
-              } else if (authStore5 === active_discount_id) {
+              } else if (authStore4 === active_discount_id) {
                 return { duration: 3, percentage: 30, discountId: active_discount_id };
               } else if (closure_17 === active_discount_id) {
                 return { duration: 1, percentage: 30, discountId: active_discount_id };

@@ -1,19 +1,19 @@
-// Module ID: 11802
-// Function ID: 11803
+// Module ID: 11828
+// Function ID: 11829
 // Name: FrameRenderTarget
-// Dependencies: [19, 21, 4966, 558, 576, 11803, 7883, 2]
+// Dependencies: [19, 21, 4969, 558, 576, 11829, 7891, 2]
 
-// Module 11802 (FrameRenderTarget)
+// Module 11828 (FrameRenderTarget)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useFramePoolBorrowDefault from "useFramePoolBorrow" /* 11803 */;
+import useFramePoolBorrowDefault from "useFramePoolBorrow" /* 11829 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const WebView = tmp(7883);
+const WebView = tmp(7891);
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ target: { flex: 1 } });
 let ReactCompilerGating = ReactCompilerGating_mod;

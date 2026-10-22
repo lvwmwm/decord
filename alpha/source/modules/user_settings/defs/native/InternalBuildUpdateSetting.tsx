@@ -1,18 +1,18 @@
-// Module ID: 16945
-// Function ID: 16946
+// Module ID: 17014
+// Function ID: 17015
 // Name: InternalBuildUpdateSetting
-// Dependencies: [15539, 21, 15045, 558, 576, 504, 2049, 16012, 5666, 11712, 11155, 2]
+// Dependencies: [15583, 21, 15089, 558, 576, 504, 2049, 16054, 5670, 11729, 11172, 2]
 
-// Module 16945 (InternalBuildUpdateSetting)
+// Module 17014 (InternalBuildUpdateSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import _modDef2049 from "module_2049" /* 2049 */;
-import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 15045 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16012 */;
-import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 15539 */;
+import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 15089 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16054 */;
+import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 15583 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11155 */;
+import SettingBuilders from "SettingBuilders" /* 11172 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -143,9 +143,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstallNativ
     let RefreshIcon;
     const tmp9 = jsx;
     if (stateFromStores) {
-      RefreshIcon = tmp(5666).DownloadIcon;
+      RefreshIcon = tmp(5670).DownloadIcon;
     } else {
-      RefreshIcon = tmp(11712).RefreshIcon;
+      RefreshIcon = tmp(11729).RefreshIcon;
     }
     const tmp9Result = tmp9(RefreshIcon, {});
     cResult[2] = stateFromStores;
@@ -161,9 +161,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstallNativ
   const obj = get_initialized;
   const tmp3 = jsx;
   if (obj.useStateFromStores(items, () => null !== MobileNativeUpdateStore.latestFetchedBuild().newBuild)) {
-    RefreshIcon = tmp(5666).DownloadIcon;
+    RefreshIcon = tmp(5670).DownloadIcon;
   } else {
-    RefreshIcon = tmp(11712).RefreshIcon;
+    RefreshIcon = tmp(11729).RefreshIcon;
   }
   return tmp3(RefreshIcon, {});
 });

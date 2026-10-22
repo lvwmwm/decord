@@ -1,25 +1,25 @@
-// Module ID: 15612
-// Function ID: 15613
+// Module ID: 15656
+// Function ID: 15657
 // Name: NativeRPCImplementation
-// Dependencies: [4967, 1207, 1246, 15613, 15668, 15669, 15670, 15672, 15673, 15674, 15675, 15677, 15680, 15681, 9219, 11398, 2]
+// Dependencies: [4970, 1207, 1246, 15657, 15710, 15711, 15712, 15714, 15715, 15716, 15717, 15719, 15722, 15723, 9228, 11415, 2]
 
-// Module 15612 (NativeRPCImplementation)
-import NativeRPCServerDefault from "NativeRPCServer" /* 9219 */;
-import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 11398 */;
-import crossPlatformRPCCommands from "crossPlatformRPCCommands" /* 15613 */;
-import commands_activitiesDefault from "commands/activities" /* 15668 */;
-import audioSessionDefault from "audioSession" /* 15669 */;
-import authDefault from "auth" /* 15670 */;
-import setRunsInBackgroundDefault from "setRunsInBackground" /* 15672 */;
-import frameRelaunchDeepLinkDefault from "frameRelaunchDeepLink" /* 15673 */;
-import voiceSettingsDefault from "voiceSettings" /* 15674 */;
-import unsupportedDefault from "unsupported" /* 15675 */;
-import crossPlatformRPCEventHandlersDefault from "crossPlatformRPCEventHandlers" /* 15677 */;
-import voiceSettingsEventHandlers from "voiceSettingsEventHandlers" /* 15681 */;
-import AccessibilityStore from "AccessibilityStore" /* 4967 */;
+// Module 15656 (NativeRPCImplementation)
+import NativeRPCServerDefault from "NativeRPCServer" /* 9228 */;
+import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 11415 */;
+import crossPlatformRPCCommands from "crossPlatformRPCCommands" /* 15657 */;
+import commands_activitiesDefault from "commands/activities" /* 15710 */;
+import audioSessionDefault from "audioSession" /* 15711 */;
+import authDefault from "auth" /* 15712 */;
+import setRunsInBackgroundDefault from "setRunsInBackground" /* 15714 */;
+import frameRelaunchDeepLinkDefault from "frameRelaunchDeepLink" /* 15715 */;
+import voiceSettingsDefault from "voiceSettings" /* 15716 */;
+import unsupportedDefault from "unsupported" /* 15717 */;
+import crossPlatformRPCEventHandlersDefault from "crossPlatformRPCEventHandlers" /* 15719 */;
+import voiceSettingsEventHandlers from "voiceSettingsEventHandlers" /* 15723 */;
+import AccessibilityStore from "AccessibilityStore" /* 4970 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import discordEnvironmentEvents from "discordEnvironmentEvents" /* 15680 */;
+import discordEnvironmentEvents from "discordEnvironmentEvents" /* 15722 */;
 import size from "module_2" /* 2 */;
 
 let items;

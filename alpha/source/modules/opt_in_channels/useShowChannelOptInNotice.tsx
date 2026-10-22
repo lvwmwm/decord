@@ -1,12 +1,12 @@
-// Module ID: 10971
-// Function ID: 10972
+// Module ID: 10988
+// Function ID: 10989
 // Name: useShowChannelOptInNotice
-// Dependencies: [6683, 1087, 4828, 558, 576, 6792, 504, 7301, 2]
+// Dependencies: [6690, 1087, 4828, 558, 576, 6799, 504, 7308, 2]
 
-// Module 10971 (useShowChannelOptInNotice)
+// Module 10988 (useShowChannelOptInNotice)
 import Constants from "Constants" /* 1087 */;
 import ChannelConstants from "ChannelConstants" /* 4828 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6683 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6690 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,8 +50,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowCha
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp9);
   let guild_id;
-  const useCanSeeOnboardingHome = tmp(7301).useCanSeeOnboardingHome;
-  tmp(7301);
+  const useCanSeeOnboardingHome = tmp(7308).useCanSeeOnboardingHome;
+  tmp(7308);
   if (getGuildId != null) {
     guild_id = getGuildId.guild_id;
   }
@@ -109,8 +109,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowCha
     return result;
   });
   let guild_id;
-  const useCanSeeOnboardingHome = tmp(7301).useCanSeeOnboardingHome;
-  tmp(7301);
+  const useCanSeeOnboardingHome = tmp(7308).useCanSeeOnboardingHome;
+  tmp(7308);
   if (getGuildId != null) {
     guild_id = getGuildId.guild_id;
   }

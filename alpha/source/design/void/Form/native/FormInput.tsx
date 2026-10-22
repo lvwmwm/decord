@@ -1,22 +1,22 @@
-// Module ID: 8916
-// Function ID: 8917
+// Module ID: 8925
+// Function ID: 8926
 // Name: FormInput
-// Dependencies: [109, 19, 1087, 21, 4966, 587, 558, 576, 1384, 5020, 4973, 6965, 7159, 6987, 1202, 2]
+// Dependencies: [109, 19, 1087, 21, 4969, 587, 558, 576, 1384, 5023, 4976, 6972, 7166, 6994, 1202, 2]
 
-// Module 8916 (FormInput)
+// Module 8925 (FormInput)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import shared from "shared" /* 4973 */;
-import native from "native" /* 5020 */;
-import RedesignCompat from "RedesignCompat" /* 6965 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 6987 */;
-import TextArea2 from "TextArea" /* 7159 */;
+import shared from "shared" /* 4976 */;
+import native from "native" /* 5023 */;
+import RedesignCompat from "RedesignCompat" /* 6972 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 6994 */;
+import TextArea2 from "TextArea" /* 7166 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -661,11 +661,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormInput(
     if (flag3) {
       const obj2 = { ref: ref1, returnKeyType: "default", onChange, keyboardAppearance, keyboardType: str2, placeholderTextColor: tmp4.placeholderText.color, placeholder, secureTextEntry: tmp12, disabled: flag2, autoFocus: flag4, autoCapitalize, autoCorrect, maxLength: null, onEndEditing: null, value, errorMessage: error };
       ({ maxLength: obj8.maxLength, onEndEditing: obj8.onEndEditing } = merged);
-      const TextArea = tmp5(7159).TextArea;
+      const TextArea = tmp5(7166).TextArea;
       tmp16Result = tmp16(TextArea, obj2);
     } else {
       const obj4 = { ref: ref1, returnKeyType: "done", onChange, keyboardAppearance, keyboardType: str2, placeholderTextColor: tmp4.placeholderText.color, placeholder, secureTextEntry: tmp12, disabled: flag2, autoFocus: flag4, autoCapitalize, autoCorrect, onEndEditing: merged.onEndEditing, value: tmp21, errorMessage: error };
-      const TextInput = tmp5(6987).TextInput;
+      const TextInput = tmp5(6994).TextInput;
       tmp16Result = tmp16(TextInput, obj4);
       tmp21 = value;
     }

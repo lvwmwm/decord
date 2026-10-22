@@ -1,15 +1,15 @@
-// Module ID: 13870
-// Function ID: 13871
+// Module ID: 13906
+// Function ID: 13907
 // Name: PremiumGiftAnalytics
-// Dependencies: [19, 1087, 558, 576, 10408, 10406, 1384, 1267, 1128, 10521, 2]
+// Dependencies: [19, 1087, 558, 576, 10420, 10418, 1384, 1267, 1128, 10533, 2]
 
-// Module 13870 (PremiumGiftAnalytics)
+// Module 13906 (PremiumGiftAnalytics)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10406 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10521 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10418 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10533 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -56,7 +56,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGif
         if (cResult[7] !== basePurchaseAnalytics) {
           class E {
             constructor() {
-              return () => { /* body not rendered: F149160 */ };
+              return () => { /* body not rendered: F149908 */ };
             }
           }
           const items = [basePurchaseAnalytics, ref];
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGif
         } else {
           class E {
             constructor() {
-              return () => { /* body not rendered: F149160 */ };
+              return () => { /* body not rendered: F149908 */ };
             }
           }
           tmp10 = cResult[9];

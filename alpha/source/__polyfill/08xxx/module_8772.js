@@ -1,7 +1,10 @@
 // Module ID: 8772
 // Function ID: 8773
-// Dependencies: []
+// Dependencies: [5003]
 
 // Module 8772
+import module_5003 from "module_5003" /* 5003 */;
 
-export default { DeprecatedAccessibilityRoles: ["none", "button", "togglebutton", "link", "search", "image", "keyboardkey", "text", "adjustable", "imagebutton", "header", "summary", "alert", "checkbox", "combobox", "menu", "menubar", "menuitem", "progressbar", "radio", "radiogroup", "scrollbar", "spinbutton", "switch", "tab", "tablist", "timer", "toolbar"] };
+const rect = { top: module_5003.number, left: module_5003.number, bottom: module_5003.number, right: module_5003.number };
+
+export default module_5003.shape(rect);

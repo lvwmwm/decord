@@ -1,20 +1,20 @@
-// Module ID: 12218
-// Function ID: 12219
+// Module ID: 12241
+// Function ID: 12242
 // Name: ConjureProjectHeaderTitle
-// Dependencies: [19, 17, 21, 4966, 587, 558, 576, 1128, 3830, 11763, 6887, 5216, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 1128, 3830, 11796, 6894, 5220, 2]
 
-// Module 12218 (ConjureProjectHeaderTitle)
+// Module 12241 (ConjureProjectHeaderTitle)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import Pressables from "Pressables" /* 6887 */;
-import ConjureProjectIconDefault from "ConjureProjectIcon" /* 11763 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import Pressables from "Pressables" /* 6894 */;
+import ConjureProjectIconDefault from "ConjureProjectIcon" /* 11796 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

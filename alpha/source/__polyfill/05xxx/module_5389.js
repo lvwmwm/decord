@@ -1,17 +1,13 @@
 // Module ID: 5389
 // Function ID: 5390
-// Dependencies: [5387, 5338]
-// Exports: useSimultaneousGestures
+// Dependencies: [5390, 5392, 5393]
 
 // Module 5389
-import ComposedGestureName from "ComposedGestureName" /* 5338 */;
-import _mod5387 from "module_5387" /* 5387 */;
+import _mod5390 from "module_5390" /* 5390 */;
+import _mod5392 from "module_5392" /* 5392 */;
+import _mod5393 from "module_5393" /* 5393 */;
 
 
-export const useSimultaneousGestures = function useSimultaneousGestures() {
-  const items = [...arguments];
-  const useComposedGesture = _mod5387.useComposedGesture;
-  _mod5387;
-  const items1 = [ComposedGestureName.ComposedGestureName.Simultaneous, ...items];
-  return useComposedGesture.apply(items1);
-};
+export const useCompetingGestures = _mod5390.useCompetingGestures;
+export const useExclusiveGestures = _mod5392.useExclusiveGestures;
+export const useSimultaneousGestures = _mod5393.useSimultaneousGestures;

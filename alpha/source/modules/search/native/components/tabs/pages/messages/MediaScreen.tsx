@@ -1,23 +1,23 @@
-// Module ID: 17982
-// Function ID: 17983
+// Module ID: 18052
+// Function ID: 18053
 // Name: MediaScreen
-// Dependencies: [19, 6662, 4821, 6771, 13120, 9672, 13122, 1087, 21, 17976, 17913, 17983, 504, 17984, 13106, 5132, 13113, 8716, 17910, 15996, 7859, 6636, 17985, 17989, 17917, 2]
+// Dependencies: [19, 6669, 4821, 6778, 13156, 9684, 13158, 1087, 21, 18046, 17983, 18053, 504, 18054, 13142, 5136, 13149, 8725, 17980, 16038, 7867, 6643, 18055, 18059, 17987, 2]
 
-// Module 17982 (MediaScreen)
+// Module 18052 (MediaScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6636 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7859 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 13106 */;
-import SearchPlatformConstants from "SearchPlatformConstants" /* 13122 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15996 */;
-import BaseMessagesScreen from "BaseMessagesScreen" /* 17985 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6643 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7867 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 13142 */;
+import SearchPlatformConstants from "SearchPlatformConstants" /* 13158 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16038 */;
+import BaseMessagesScreen from "BaseMessagesScreen" /* 18055 */;
 import react from "react" /* 19 */;
-import ChannelSpoilerAgreeStore from "ChannelSpoilerAgreeStore" /* 6662 */;
+import ChannelSpoilerAgreeStore from "ChannelSpoilerAgreeStore" /* 6669 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import SearchMessageStore from "SearchMessageStore" /* 6771 */;
-import SearchQueryStore from "SearchQueryStore" /* 13120 */;
-import SearchConstants from "SearchConstants" /* 9672 */;
+import SearchMessageStore from "SearchMessageStore" /* 6778 */;
+import SearchQueryStore from "SearchQueryStore" /* 13156 */;
+import SearchConstants from "SearchConstants" /* 9684 */;
 import size from "module_2" /* 2 */;
 
 const SearchPlatformUtilsDefault = SearchPlatformUtils;
@@ -42,11 +42,11 @@ const memoResult = react.memo(function MediaScreen(searchContext) {
   let placeholderCount;
   let memo;
   ({ isFocused, width } = searchContext);
-  let obj = searchContext(17976);
+  let obj = searchContext(18046);
   const contentContainerStyles = obj.useContentContainerStyles();
-  let tmp2 = tab(17913)(width);
+  let tmp2 = tab(17983)(width);
   dependencyMap = tmp2;
-  let obj2 = searchContext(17983);
+  let obj2 = searchContext(18053);
   const searchMessages = obj2.useSearchMessages(searchContext, tab);
   let obj3 = searchContext(504);
   let items = [placeholderCount, memo];
@@ -77,7 +77,7 @@ const memoResult = react.memo(function MediaScreen(searchContext) {
     }
     return found;
   }, items1);
-  let obj4 = searchContext(17984);
+  let obj4 = searchContext(18054);
   let obj5 = { searchContext, tab, placeholderHeight: tmp2, numColumns };
   const searchMessagesLoadingState = obj4.useSearchMessagesLoadingState(obj5);
   placeholderCount = searchMessagesLoadingState.placeholderCount;
@@ -120,7 +120,7 @@ const memoResult = react.memo(function MediaScreen(searchContext) {
       }
     });
   }, items3);
-  const obj6 = searchContext(17910);
+  const obj6 = searchContext(17980);
   const onPressMediaItem = obj6.useOnPressMediaItem({ searchContext, allMediaResults: memo, onEndReached: callback, onEndReachedThreshold: 500 });
   const items4 = [onPressMediaItem, searchContext, searchMessages];
   const callback1 = searchMessages.useCallback((media, index) => {
@@ -187,8 +187,8 @@ const memoResult = react.memo(function MediaScreen(searchContext) {
     }
     return items;
   }, items5);
-  tab(17985);
-  return <tmp11 data={memo1} searchContext={searchContext} tab={tab} isFocused={isFocused} contentContainerStyle={contentContainerStyles.mediaContentContainer} ItemSeparatorComponent={searchContext(17917).MediaVerticalSeparator} numColumns={numColumns} isFirstPageLoading={isFirstPageLoading} isNextPageLoading={isNextPageLoading} />;
+  tab(18055);
+  return <tmp11 data={memo1} searchContext={searchContext} tab={tab} isFocused={isFocused} contentContainerStyle={contentContainerStyles.mediaContentContainer} ItemSeparatorComponent={searchContext(17987).MediaVerticalSeparator} numColumns={numColumns} isFirstPageLoading={isFirstPageLoading} isNextPageLoading={isNextPageLoading} />;
 });
 let result = size.fileFinishedImporting("modules/search/native/components/tabs/pages/messages/MediaScreen.tsx");
 

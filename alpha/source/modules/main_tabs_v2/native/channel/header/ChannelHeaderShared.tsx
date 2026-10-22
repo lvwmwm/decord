@@ -1,10 +1,10 @@
-// Module ID: 13924
-// Function ID: 13925
+// Module ID: 13960
+// Function ID: 13961
 // Name: ChannelHeaderShared
-// Dependencies: [32, 19, 17, 4911, 1392, 21, 4966, 587, 558, 576, 1384, 6887, 10619, 5216, 1202, 13925, 10646, 5234, 8478, 7054, 13926, 1128, 5586, 5651, 1417, 9094, 2]
+// Dependencies: [32, 19, 17, 4911, 1392, 21, 4969, 587, 558, 576, 1384, 6894, 10631, 5220, 1202, 13961, 10658, 5238, 8487, 7061, 13962, 1128, 5590, 5655, 1417, 9103, 2]
 // Exports: renderAppSubTitle, renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 13924 (ChannelHeaderShared)
+// Module 13960 (ChannelHeaderShared)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,24 +12,24 @@ import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import useToken from "useToken" /* 5234 */;
-import useChannelName from "useChannelName" /* 5586 */;
-import FastImageDefault from "FastImage" /* 5651 */;
-import Pressables from "Pressables" /* 6887 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7054 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8478 */;
-import BotTagDefault from "BotTag" /* 9094 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10619 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10646 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13925 */;
-import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 13926 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import useToken from "useToken" /* 5238 */;
+import useChannelName from "useChannelName" /* 5590 */;
+import FastImageDefault from "FastImage" /* 5655 */;
+import Pressables from "Pressables" /* 6894 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7061 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8487 */;
+import BotTagDefault from "BotTag" /* 9103 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10631 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10658 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13961 */;
+import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 13962 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -280,7 +280,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     tmp9 = metroImportAll(UsernameWithEffectsDefault, obj7);
   } else {
     const obj13 = { variant: "redesign/heading-18/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: tmp5.channelName, accessibilityLabel: accessibleTitle, accessibilityRole: "header", maxFontSizeMultiplier: 2, children: title };
-    tmp9 = metroImportAll(tmp(5216).Text, obj13);
+    tmp9 = metroImportAll(tmp(5220).Text, obj13);
   }
   cResult[0] = accessibleTitle;
   cResult[1] = guildId;
@@ -392,7 +392,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserAv
       }
     }
   }
-  const obj2 = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status: tmp5, isMobileOnline, isVROnline, style: tmp4.channelIcon, autoStatusCutout: null };
+  const obj2 = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status: tmp5, isMobileOnline, isVROnline, style: tmp4.channelIcon, autoStatusCutout: "jsona" };
   const Avatar = tmp(1202).Avatar;
   const tmp7 = metroImportAll(Avatar, obj2);
   cResult[0] = isMobileOnline;
@@ -410,7 +410,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserAv
   let tmp3;
   user = user.user;
   ({ status, isMobileOnline, isVROnline } = user);
-  const obj = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status: tmp3, isMobileOnline, isVROnline, style: tmp.channelIcon, autoStatusCutout: null };
+  const obj = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status: tmp3, isMobileOnline, isVROnline, style: tmp.channelIcon, autoStatusCutout: "jsona" };
   tmp = closure_12();
   const Avatar = native.Avatar;
   tmp3 = null;
@@ -527,7 +527,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
         let tmp8 = null;
         if (withSeparator) {
           const obj3 = { variant: str2, color: "text-subtle", children: "\u2022" };
-          tmp8 = metroImportAll(tmp(5216).Text, obj3);
+          tmp8 = metroImportAll(tmp(5220).Text, obj3);
         }
         cResult[5] = str2;
         cResult[6] = withSeparator;

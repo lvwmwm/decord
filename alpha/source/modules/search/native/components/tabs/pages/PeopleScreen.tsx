@@ -1,17 +1,17 @@
-// Module ID: 17973
-// Function ID: 17974
+// Module ID: 18043
+// Function ID: 18044
 // Name: PeopleScreen
-// Dependencies: [5, 19, 13135, 13120, 9672, 9671, 21, 558, 576, 13113, 504, 17914, 17910, 7388, 13127, 17974, 17906, 17918, 2]
+// Dependencies: [5, 19, 13171, 13156, 9684, 9683, 21, 558, 576, 13149, 504, 17984, 17980, 7395, 13163, 18044, 17976, 17988, 2]
 
-// Module 17973 (PeopleScreen)
+// Module 18043 (PeopleScreen)
 import Fragment from "Fragment" /* 21 */;
-import TrackingConstants from "TrackingConstants" /* 9671 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13127 */;
+import TrackingConstants from "TrackingConstants" /* 9683 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13163 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import SearchPeopleTabStore from "SearchPeopleTabStore" /* 13135 */;
-import SearchQueryStore_mod from "SearchQueryStore" /* 13120 */;
-import SearchConstants from "SearchConstants" /* 9672 */;
+import SearchPeopleTabStore from "SearchPeopleTabStore" /* 13171 */;
+import SearchQueryStore_mod from "SearchQueryStore" /* 13156 */;
+import SearchConstants from "SearchConstants" /* 9684 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

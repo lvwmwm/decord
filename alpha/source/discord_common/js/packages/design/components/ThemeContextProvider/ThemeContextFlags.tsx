@@ -1,12 +1,12 @@
-// Module ID: 4986
-// Function ID: 4987
+// Module ID: 4989
+// Function ID: 4990
 // Name: ThemeContextFlags
-// Dependencies: [558, 576, 4983, 2]
+// Dependencies: [558, 576, 4986, 2]
 // Exports: hasThemeFlag, setThemeFlag
 
-// Module 4986 (ThemeContextFlags)
+// Module 4989 (ThemeContextFlags)
 import react from "react" /* 576 */;
-import ThemeContext from "ThemeContext" /* 4983 */;
+import ThemeContext from "ThemeContext" /* 4986 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

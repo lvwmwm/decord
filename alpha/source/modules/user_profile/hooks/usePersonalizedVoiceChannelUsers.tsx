@@ -1,14 +1,14 @@
-// Module ID: 14206
-// Function ID: 14207
+// Module ID: 14244
+// Function ID: 14245
 // Name: usePersonalizedVoiceChannelUsers
-// Dependencies: [7707, 6649, 1392, 5699, 1087, 558, 576, 504, 2]
+// Dependencies: [7716, 6656, 1392, 5703, 1087, 558, 576, 504, 2]
 
-// Module 14206 (usePersonalizedVoiceChannelUsers)
+// Module 14244 (usePersonalizedVoiceChannelUsers)
 import Constants from "Constants" /* 1087 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7707 */;
-import ConsentStore from "ConsentStore" /* 6649 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7716 */;
+import ConsentStore from "ConsentStore" /* 6656 */;
 import UserStore from "UserStore" /* 1392 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5699 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5703 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

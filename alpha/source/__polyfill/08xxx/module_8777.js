@@ -1,22 +1,20 @@
 // Module ID: 8777
 // Function ID: 8778
-// Dependencies: [8768, 8761, 5000]
+// Dependencies: [8778, 8779, 8780, 5003, 8770]
 
 // Module 8777
-import normalizeColor from "normalizeColor" /* 8761 */;
-import _mod8768 from "module_8768" /* 8768 */;
-import "module_5000";
-import module_5000_mod from "module_5000" /* 5000 */;
+import normalizeColor2 from "normalizeColor" /* 8770 */;
+import _mod8778 from "module_8778" /* 8778 */;
+import normalizeColor3 from "normalizeColor" /* 8779 */;
+import merged22 from "merged2" /* 8780 */;
+import "module_5003";
+import module_5003_mod from "module_5003" /* 5003 */;
 
-let arrayOf;
-let module_5000;
-let size;
-const obj = { color: normalizeColor, fontFamily: module_5000.string, fontSize: module_5000.number, fontStyle: module_5000.oneOf(["normal", "italic"]), fontWeight: module_5000.oneOf(["normal", "bold", "100", "200", "300", "400", "500", "600", "700", "800", "900"]), fontVariant: arrayOf(module_5000.oneOf(["small-caps", "oldstyle-nums", "lining-nums", "tabular-nums", "proportional-nums"])), textShadowOffset: module_5000.shape(size), textShadowRadius: module_5000.number, textShadowColor: normalizeColor, letterSpacing: module_5000.number, lineHeight: module_5000.number, textAlign: module_5000.oneOf(["auto", "left", "right", "center", "justify"]), textAlignVertical: module_5000.oneOf(["auto", "top", "bottom", "center"]), includeFontPadding: module_5000.bool, textDecorationLine: module_5000.oneOf(["none", "underline", "line-through", "underline line-through"]), textDecorationStyle: module_5000.oneOf(["solid", "double", "dotted", "dashed"]), textDecorationColor: normalizeColor, textTransform: module_5000.oneOf(["none", "capitalize", "uppercase", "lowercase"]), writingDirection: module_5000.oneOf(["auto", "ltr", "rtl"]) };
-const module_8768 = Object.assign(_mod8768);
-module_5000 = module_5000_mod;
-arrayOf = module_5000.arrayOf;
-module_5000 = module_5000_mod;
-size = { width: module_5000.number, height: module_5000.number };
-module_5000 = module_5000_mod;
+let module_5003;
+const obj = { backfaceVisibility: module_5003.oneOf(["visible", "hidden"]), backgroundColor: normalizeColor2, borderColor: normalizeColor2, borderTopColor: normalizeColor2, borderRightColor: normalizeColor2, borderBottomColor: normalizeColor2, borderLeftColor: normalizeColor2, borderStartColor: normalizeColor2, borderEndColor: normalizeColor2, borderRadius: module_5003.number, borderTopLeftRadius: module_5003.number, borderTopRightRadius: module_5003.number, borderTopStartRadius: module_5003.number, borderTopEndRadius: module_5003.number, borderBottomLeftRadius: module_5003.number, borderBottomRightRadius: module_5003.number, borderBottomStartRadius: module_5003.number, borderBottomEndRadius: module_5003.number, borderStyle: module_5003.oneOf(["solid", "dotted", "dashed"]), borderWidth: module_5003.number, borderTopWidth: module_5003.number, borderRightWidth: module_5003.number, borderBottomWidth: module_5003.number, borderLeftWidth: module_5003.number, opacity: module_5003.number, elevation: module_5003.number };
+const size = Object.assign(_mod8778);
+const normalizeColor = Object.assign(normalizeColor3);
+const merged2 = Object.assign(merged22);
+module_5003 = module_5003_mod;
 
 export default obj;

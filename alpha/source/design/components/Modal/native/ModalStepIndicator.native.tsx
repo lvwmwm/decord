@@ -1,18 +1,18 @@
-// Module ID: 12620
-// Function ID: 12621
+// Module ID: 12652
+// Function ID: 12653
 // Name: ModalStepIndicator
-// Dependencies: [19, 17, 21, 4966, 558, 576, 587, 5035, 5234, 5229, 1128, 2081, 2]
+// Dependencies: [19, 17, 21, 4969, 558, 576, 587, 5038, 5238, 5233, 1128, 2081, 2]
 
-// Module 12620 (ModalStepIndicator)
+// Module 12652 (ModalStepIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef2081 from "module_2081" /* 2081 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
-import spring from "spring" /* 5229 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
+import spring from "spring" /* 5233 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

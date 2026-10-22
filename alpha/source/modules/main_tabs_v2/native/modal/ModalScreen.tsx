@@ -1,18 +1,18 @@
-// Module ID: 18154
-// Function ID: 18155
+// Module ID: 18224
+// Function ID: 18225
 // Name: modal/ModalScreen
-// Dependencies: [109, 19, 17, 1087, 21, 4966, 587, 558, 576, 6651, 1275, 9319, 7561, 1633, 18155, 1384, 11930, 2]
+// Dependencies: [109, 19, 17, 1087, 21, 4969, 587, 558, 576, 6658, 1275, 9330, 7568, 1633, 18225, 1384, 11951, 2]
 
-// Module 18154 (modal/ModalScreen)
+// Module 18224 (modal/ModalScreen)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9319 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 9330 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -337,7 +337,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Modal(route)
   let tmp16;
   const tmp14 = closure_11;
   const tmp15 = closure_7;
-  const tmp7Result = modal(18155);
+  const tmp7Result = modal(18225);
   if (!tmp7Result.shouldExcludeSafeAreaForModalKey(modal.key)) {
     const items1 = [tmp.containerWithPadding, ];
     const obj3 = { paddingLeft: left, paddingRight: right };
@@ -347,7 +347,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Modal(route)
   const obj4 = { style: items, onAccessibilityEscape: pop, children: items2 };
   items[1] = tmp16;
   if (modal.closable) {
-    pop = tmp4(6651).pop;
+    pop = tmp4(6658).pop;
   } else {
     pop = NOOP;
   }
@@ -356,8 +356,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Modal(route)
   const merged = Object.assign(tmp2);
   items2 = [<modal2 style={undefined} transitionState={null} onClose={callback} />, ];
   const tmp7Result2 = modal(1384);
-  items2[1] = tmp7Result2.isIOS() && closure_10(tmp7(11930).PortalKeyboardRenderer, { portal: false });
-  const isIOSResult = tmp7Result2.isIOS() && closure_10(tmp7(11930).PortalKeyboardRenderer, { portal: false });
+  items2[1] = tmp7Result2.isIOS() && closure_10(tmp7(11951).PortalKeyboardRenderer, { portal: false });
+  const isIOSResult = tmp7Result2.isIOS() && closure_10(tmp7(11951).PortalKeyboardRenderer, { portal: false });
   return tmp14(tmp15, obj4);
 });
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/modal/ModalScreen.tsx");

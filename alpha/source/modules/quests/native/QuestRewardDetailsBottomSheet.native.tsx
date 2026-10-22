@@ -1,24 +1,24 @@
-// Module ID: 9527
-// Function ID: 9528
+// Module ID: 9538
+// Function ID: 9539
 // Name: QuestRewardDetailsBottomSheet
-// Dependencies: [19, 17, 1392, 21, 4966, 587, 558, 576, 9525, 5192, 9528, 9547, 7756, 1128, 504, 14038, 5216, 5957, 5247, 2]
+// Dependencies: [19, 17, 1392, 21, 4969, 587, 558, 576, 9536, 5196, 9539, 9558, 7765, 1128, 504, 14073, 5220, 5964, 5251, 2]
 
-// Module 9527 (QuestRewardDetailsBottomSheet)
+// Module 9538 (QuestRewardDetailsBottomSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5192 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 7756 */;
-import QuestUtils from "QuestUtils" /* 9525 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9547 */;
-import QuestRewardTileDefault from "QuestRewardTile" /* 14038 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 7765 */;
+import QuestUtils from "QuestUtils" /* 9536 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9558 */;
+import QuestRewardTileDefault from "QuestRewardTile" /* 14073 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const hooks_QuestHooks = tmp(9528);
+const hooks_QuestHooks = tmp(9539);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
@@ -194,7 +194,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
     }
     if (tmp22 === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { variant: "eyebrow", color: "text-subtle", children: obj8.string(intl3.t["jyYgZ+"]) };
-      const Text = tmp(5216).Text;
+      const Text = tmp(5220).Text;
       class C {
         constructor() {
           return closure_1_5.getCurrentUser();
@@ -247,9 +247,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
               return closure_1_5.getCurrentUser();
             }
           }
-          BottomSheet = tmp(5247).BottomSheet;
+          BottomSheet = tmp(5251).BottomSheet;
           const obj4 = { direction: "vertical", spacing: nativeDefault.space.PX_16, style: tmp4.wrapper, children: items1 };
-          const Stack3 = tmp(5957).Stack;
+          const Stack3 = tmp(5964).Stack;
           items1 = [tmp33, tmp38];
           tmp46[1] = metroImportDefault(Stack3, obj4);
           const tmp49 = metroRequire(BottomSheet, tmp46);
@@ -287,7 +287,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
           return closure_1_5.getCurrentUser();
         }
       }
-      const Stack2 = tmp(5957).Stack;
+      const Stack2 = tmp(5964).Stack;
       tmp35[2] = nativeDefault.space.PX_16;
       const items3 = [tmp18, tmp29];
       tmp35[3] = items3;
@@ -298,7 +298,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
       tmp33 = tmp37;
     }
     const obj9 = { direction: "vertical", spacing: nativeDefault.space.PX_4, style: tmp4.rewardDetailsCopy, children: items4 };
-    const Stack = tmp(5957).Stack;
+    const Stack = tmp(5964).Stack;
     items4 = [tmp23, tmp26];
     const tmp32 = metroImportDefault(Stack, obj9);
     cResult[15] = tmp4.rewardDetailsCopy;
@@ -345,20 +345,20 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
   let obj = quest(504);
   const items2 = [UserStore];
   const stateFromStores = obj.useStateFromStores(items2, () => currentUser.getCurrentUser());
-  const obj2 = quest(9547);
+  const obj2 = quest(9558);
   const defaultRewardName = obj2.getDefaultRewardName(quest.config, stateFromStores);
-  BottomSheet = quest(5247).BottomSheet;
+  BottomSheet = quest(5251).BottomSheet;
   const obj3 = { direction: "vertical", spacing: memo(587).space.PX_16, style: tmp.wrapper, children: items5 };
-  const Stack = quest(5957).Stack;
+  const Stack = quest(5964).Stack;
   const obj4 = { align: "center", direction: "horizontal", spacing: memo(587).space.PX_16, children: items3 };
-  const Stack2 = quest(5957).Stack;
-  items3 = [closure_6(memo(14038), { quest, height: 56, width: 56, withAnimation: true }), ];
+  const Stack2 = quest(5964).Stack;
+  items3 = [closure_6(memo(14073), { quest, height: 56, width: 56, withAnimation: true }), ];
   const obj5 = { direction: "vertical", spacing: memo(587).space.PX_4, style: tmp.rewardDetailsCopy, children: items4 };
-  const Stack3 = quest(5957).Stack;
+  const Stack3 = quest(5964).Stack;
   const obj6 = { variant: "eyebrow", color: "text-subtle", children: intl.string(quest(1128).t["jyYgZ+"]) };
-  const Text = quest(5216).Text;
+  const Text = quest(5220).Text;
   intl = quest(1128).intl;
-  items4 = [closure_6(Text, obj6), closure_6(quest(5216).Text, { variant: "heading-lg/semibold", color: "text-strong", children: defaultRewardName })];
+  items4 = [closure_6(Text, obj6), closure_6(quest(5220).Text, { variant: "heading-lg/semibold", color: "text-strong", children: defaultRewardName })];
   items3[1] = closure_7(Stack3, obj5);
   items5 = [closure_7(Stack2, obj4), ];
   let tmp9Result = null != memo1;
@@ -368,7 +368,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
     const obj8 = { style: tmp.separator };
     items6 = [closure_6(View, obj8), ];
     const obj9 = { variant: "text-md/normal", color: "text-subtle", children: memo1 };
-    items6[1] = closure_6(tmp4(5216).Text, obj9);
+    items6[1] = closure_6(tmp4(5220).Text, obj9);
     tmp9Result = tmp9(closure_8, obj7);
   }
   items5[1] = tmp9Result;

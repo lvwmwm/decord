@@ -1,9 +1,9 @@
-// Module ID: 18567
-// Function ID: 18568
+// Module ID: 18635
+// Function ID: 18636
 // Name: ExistingUserAgeGateConstants
 // Dependencies: [2]
 
-// Module 18567 (ExistingUserAgeGateConstants)
+// Module 18635 (ExistingUserAgeGateConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/age_gate/native/ExistingUserAgeGateConstants.tsx");

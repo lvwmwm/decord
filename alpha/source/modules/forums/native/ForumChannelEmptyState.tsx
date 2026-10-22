@@ -1,18 +1,18 @@
-// Module ID: 13600
-// Function ID: 13601
+// Module ID: 13636
+// Function ID: 13637
 // Name: ForumChannelEmptyState
-// Dependencies: [19, 17, 21, 4966, 558, 576, 4973, 1633, 13601, 13602, 5651, 1128, 5216, 2]
+// Dependencies: [19, 17, 21, 4969, 558, 576, 4976, 1633, 13637, 13638, 5655, 1128, 5220, 2]
 
-// Module 13600 (ForumChannelEmptyState)
+// Module 13636 (ForumChannelEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import shared from "shared" /* 4973 */;
-import Text_Text from "Text/Text" /* 5216 */;
-import FastImageDefault from "FastImage" /* 5651 */;
+import shared from "shared" /* 4976 */;
+import Text_Text from "Text/Text" /* 5220 */;
+import FastImageDefault from "FastImage" /* 5655 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -56,9 +56,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
     const tmpResult2 = shared;
     if (tmpResult2.isThemeLight(theme)) {
-      tmp5Result = tmp5(13601);
+      tmp5Result = tmp5(13637);
     } else {
-      tmp5Result = tmp5(13602);
+      tmp5Result = tmp5(13638);
     }
     if (cResult[5] === tmp4.image) {
       let tmp11;
@@ -187,15 +187,15 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const tmp6 = hasOwnProperty;
   const tmp7 = View;
   if (obj3.isThemeLight(theme)) {
-    tmp4Result = tmp4(13601);
+    tmp4Result = tmp4(13637);
   } else {
-    tmp4Result = tmp4(13602);
+    tmp4Result = tmp4(13638);
   }
   items1 = [, , ];
   const obj4 = { source: tmp4Result, style: tmp.image };
   items1[0] = React3(tmp9, obj4);
   const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: formatToPlainStringResult };
-  const Text = tmp2(5216).Text;
+  const Text = tmp2(5220).Text;
   const intl = tmp2(1128).intl;
   if (tagFilter.size > 0) {
     const obj6 = { numTags: tagFilter.size };
@@ -205,7 +205,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }
   items1[1] = React3(Text, obj5);
   const obj7 = { style: tmp.subtext, variant: "text-sm/medium", color: "text-default", children: formatToPlainStringResult1 };
-  const Text2 = tmp2(5216).Text;
+  const Text2 = tmp2(5220).Text;
   const intl2 = tmp2(1128).intl;
   const formatToPlainString = intl2.formatToPlainString;
   const t = tmp2(1128).t;

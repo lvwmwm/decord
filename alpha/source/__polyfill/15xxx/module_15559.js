@@ -1,36 +1,11 @@
 // Module ID: 15559
 // Function ID: 15560
-// Dependencies: []
-// Exports: default
+// Dependencies: [15560, 15567]
 
 // Module 15559
-let closure_0 = { url: "http://localhost:8081" };
+import _mod15560 from "module_15560" /* 15560 */;
+import _mod15567 from "module_15567" /* 15567 */;
 
-export default () => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  return () => {
-    closure_0 = Object.assign({}, closure_0, obj);
-    obj = {
-      onCommand(type) {
-        if ("editor.open" === type.type) {
-          const payload = type.payload;
-          let num = payload.lineNumber;
-          const _HermesInternal = HermesInternal;
-          obj = { file: payload.file, lineNumber: num };
-          const combined = "" + url.url + "/open-stack-frame";
-          if (!num) {
-            num = 1;
-          }
-          const _fetch = fetch;
-          const request = { method: "POST", body: JSON.stringify(obj) };
-          const _JSON = JSON;
-          const response = fetch(combined, request);
-        }
-      }
-    };
-    return obj;
-  };
-};
+
+export const URL = _mod15560;
+export const URLSearchParams = _mod15567;

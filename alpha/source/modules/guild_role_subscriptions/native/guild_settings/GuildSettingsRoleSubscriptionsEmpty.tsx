@@ -1,16 +1,16 @@
-// Module ID: 19037
-// Function ID: 19038
+// Module ID: 19104
+// Function ID: 19105
 // Name: GuildSettingsRoleSubscriptionsEmpty
-// Dependencies: [19, 4843, 1087, 1375, 21, 558, 576, 1505, 19038, 19039, 19040, 504, 2]
+// Dependencies: [19, 4843, 1087, 1375, 21, 558, 576, 1505, 19105, 19106, 19107, 504, 2]
 
-// Module 19037 (GuildSettingsRoleSubscriptionsEmpty)
+// Module 19104 (GuildSettingsRoleSubscriptionsEmpty)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import ApplicationConstants from "ApplicationConstants" /* 1375 */;
 import useNavigation from "useNavigation" /* 1505 */;
-import useGuildApplicationDefault from "useGuildApplication" /* 19038 */;
-import PlaceholderDefault from "Placeholder" /* 19039 */;
-import GuildSettingsRoleSubscriptionWelcomeViewDefault from "GuildSettingsRoleSubscriptionWelcomeView" /* 19040 */;
+import useGuildApplicationDefault from "useGuildApplication" /* 19105 */;
+import PlaceholderDefault from "Placeholder" /* 19106 */;
+import GuildSettingsRoleSubscriptionWelcomeViewDefault from "GuildSettingsRoleSubscriptionWelcomeView" /* 19107 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import Constants from "Constants" /* 1087 */;
@@ -74,14 +74,14 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSe
   const str = obj.useNavigation();
   const tmp3 = useGuildApplicationDefault(guild.id, ApplicationTypes.GUILD_ROLE_SUBSCRIPTIONS);
   if (tmp3.loading) {
-    tmp7 = jsx(tmp2(19039), {});
+    tmp7 = jsx(tmp2(19106), {});
   } else {
     const features = guild.features;
     const tmp5 = constants;
     if (!features.has(constants.CREATOR_MONETIZABLE)) {
       const features2 = guild.features;
       if (!features2.has(tmp5.CREATOR_MONETIZABLE_PROVISIONAL)) {
-        tmp7 = jsx(tmp2(19040), { guild });
+        tmp7 = jsx(tmp2(19107), { guild });
       }
     }
     if (null == tmp4) {

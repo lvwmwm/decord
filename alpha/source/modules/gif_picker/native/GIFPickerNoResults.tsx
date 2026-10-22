@@ -1,20 +1,20 @@
-// Module ID: 10102
-// Function ID: 10103
+// Module ID: 10114
+// Function ID: 10115
 // Name: GIFPickerNoResults
-// Dependencies: [19, 17, 1087, 21, 4966, 587, 558, 576, 10086, 9878, 1128, 9882, 5251, 1202, 2]
+// Dependencies: [19, 17, 1087, 21, 4969, 587, 558, 576, 10098, 9890, 1128, 9894, 5255, 1202, 2]
 
-// Module 10102 (GIFPickerNoResults)
+// Module 10114 (GIFPickerNoResults)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import native from "native" /* 1202 */;
-import SearchEmpty from "SearchEmpty" /* 9878 */;
-import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 9882 */;
-import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 10086 */;
+import SearchEmpty from "SearchEmpty" /* 9890 */;
+import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 9894 */;
+import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 10098 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -76,7 +76,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmpResult2 = useModalDismissGuardRefreshControl;
   const modalDismissGuardRefreshControl = tmpResult2.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    BottomSheetScrollView = tmp(5251).BottomSheetScrollView;
+    BottomSheetScrollView = tmp(5255).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }
@@ -137,7 +137,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp4Result = useModalDismissGuardRefreshControl;
   const modalDismissGuardRefreshControl = tmp4Result.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp4(5251).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp4(5255).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }

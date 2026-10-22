@@ -1,9 +1,9 @@
-// Module ID: 5186
-// Function ID: 5187
+// Module ID: 5190
+// Function ID: 5191
 // Name: useCustomThemeDisplaySettings
 // Dependencies: [32, 1253, 558, 576, 504, 1254, 2]
 
-// Module 5186 (useCustomThemeDisplaySettings)
+// Module 5190 (useCustomThemeDisplaySettings)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1254 */;
@@ -107,14 +107,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCustomT
   let tmp5;
   let tmp6;
   let tmpResult;
-  const f93378 = () => {
+  const f93822 = () => {
     const items = [CustomThemeMobileStore.getCustomTheme(), CustomThemeMobileStore.getBaseTheme(), CustomThemeMobileStore.getPreviewTheme()];
     return items;
   };
   let items = [CustomThemeMobileStore];
   const obj = get_initialized;
-  [tmp4, tmp5, tmp6] = obj.useStateFromStoresArray(items, f93378);
-  _slicedToArray(obj.useStateFromStoresArray(items, f93378), 3);
+  [tmp4, tmp5, tmp6] = obj.useStateFromStoresArray(items, f93822);
+  _slicedToArray(obj.useStateFromStoresArray(items, f93822), 3);
   if (undefined !== tmp6) {
     return tmp6;
   } else {

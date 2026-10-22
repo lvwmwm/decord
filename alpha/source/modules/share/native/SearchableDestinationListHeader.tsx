@@ -1,18 +1,18 @@
-// Module ID: 12804
-// Function ID: 12805
+// Module ID: 12836
+// Function ID: 12837
 // Name: SearchableDestinationListHeader
-// Dependencies: [19, 21, 4966, 587, 558, 576, 1633, 1506, 1384, 9657, 6903, 6912, 2]
+// Dependencies: [19, 21, 4969, 587, 558, 576, 1633, 1506, 1384, 9669, 6910, 6919, 2]
 
-// Module 12804 (SearchableDestinationListHeader)
+// Module 12836 (SearchableDestinationListHeader)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import Link from "Link" /* 1506 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import NavigatorHeader from "NavigatorHeader" /* 6903 */;
-import HeaderShared from "HeaderShared" /* 9657 */;
+import NavigatorHeader from "NavigatorHeader" /* 6910 */;
+import HeaderShared from "HeaderShared" /* 9669 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Searchable
     if (cResult[3] !== onClose) {
       let headerCloseButton;
       if (null != onClose) {
-        const tmpResult = subtitle(6903);
+        const tmpResult = subtitle(6910);
         headerCloseButton = tmpResult.getHeaderCloseButton(onClose);
       }
       cResult[3] = onClose;
@@ -99,7 +99,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Searchable
       }
     }
     ({ headerLeftContainer: obj4.headerLeftContainerStyle, headerRightContainer: obj4.headerRightContainerStyle } = tmp4);
-    const tmp17 = jsx(subtitle(6912).Header, { headerStyle: tmp4.header, title, headerTitle: tmp10, headerTitleAlign: "center", headerLeft: tmp11, headerRight, headerLeftContainerStyle: null, headerRightContainerStyle: null, headerStatusBarHeight });
+    const tmp17 = jsx(subtitle(6919).Header, { headerStyle: tmp4.header, title, headerTitle: tmp10, headerTitleAlign: "center", headerLeft: tmp11, headerRight, headerLeftContainerStyle: null, headerRightContainerStyle: null, headerStatusBarHeight });
     cResult[5] = headerRight;
     cResult[6] = tmp4.header;
     cResult[7] = tmp4.headerLeftContainer;
@@ -157,7 +157,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Searchable
     headerStatusBarHeight
   };
   headerCloseButton = undefined;
-  const Header = tmp4(6912).Header;
+  const Header = tmp4(6919).Header;
   const tmp9 = jsx;
   if (null != onClose) {
     const tmp4Result = NavigatorHeader;

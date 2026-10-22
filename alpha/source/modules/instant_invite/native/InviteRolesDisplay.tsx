@@ -1,15 +1,15 @@
-// Module ID: 10784
-// Function ID: 10785
+// Module ID: 10801
+// Function ID: 10802
 // Name: InviteRolesDisplay
-// Dependencies: [19, 17, 4875, 21, 4966, 558, 576, 504, 1128, 5216, 10785, 2]
+// Dependencies: [19, 17, 4875, 21, 4969, 558, 576, 504, 1128, 5220, 10802, 2]
 
-// Module 10784 (InviteRolesDisplay)
+// Module 10801 (InviteRolesDisplay)
 import react_native from "react-native" /* 17 */;
-import RolePillDefault from "RolePill" /* 10785 */;
+import RolePillDefault from "RolePill" /* 10802 */;
 import react from "react" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 4875 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteRolesD
       }
       if (cResult[6] !== tmp4.label) {
         const obj2 = { variant: "text-xs/semibold", color: "text-muted", style: label, children: tmp9 };
-        const tmp13 = closure_5(roleIds(5216).Text, obj2);
+        const tmp13 = closure_5(roleIds(5220).Text, obj2);
         cResult[6] = tmp4.label;
         cResult[7] = tmp13;
         tmp11 = tmp13;
@@ -159,7 +159,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteRolesD
   if (0 !== stateFromStoresArray.length) {
     const obj2 = { style: tmp.container, children: items2 };
     const obj3 = { variant: "text-xs/semibold", color: "text-muted", style: tmp.label, children: intl.string(roleIds(1128).t.stcSfI) };
-    const Text = tmp2(5216).Text;
+    const Text = tmp2(5220).Text;
     intl = tmp2(1128).intl;
     items2 = [closure_5(Text, obj3), ];
     const obj4 = {

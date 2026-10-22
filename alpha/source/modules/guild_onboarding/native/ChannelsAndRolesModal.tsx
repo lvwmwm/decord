@@ -1,21 +1,21 @@
-// Module ID: 11189
-// Function ID: 11190
+// Module ID: 11206
+// Function ID: 11207
 // Name: ChannelsAndRolesModal
-// Dependencies: [32, 19, 17, 4843, 7175, 21, 4966, 587, 558, 576, 573, 7418, 1128, 8860, 9106, 11190, 11196, 9988, 2]
+// Dependencies: [32, 19, 17, 4843, 7182, 21, 4969, 587, 558, 576, 573, 7425, 1128, 8869, 9115, 11207, 11213, 10000, 2]
 
-// Module 11189 (ChannelsAndRolesModal)
+// Module 11206 (ChannelsAndRolesModal)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7175 */;
-import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7418 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 9988 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7182 */;
+import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7425 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10000 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -241,7 +241,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelsAndR
   }
   const tmpResult = guildId(573);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  const tmp9 = defaultTab(7418)(stateFromStores);
+  const tmp9 = defaultTab(7425)(stateFromStores);
   const tmp8 = defaultTab;
   if (cResult[3] !== tmp9) {
     let stringResult;
@@ -272,7 +272,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelsAndR
       return tmp13;
     }
     const obj2 = { screenKey: "channelAndRolesModal", title: tmp10, render: tmp12 };
-    const tmp15 = closure_8(tmp8(9988), obj2);
+    const tmp15 = closure_8(tmp8(10000), obj2);
     cResult[8] = tmp10;
     cResult[9] = tmp12;
     cResult[10] = tmp15;

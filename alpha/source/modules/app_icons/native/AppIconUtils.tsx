@@ -1,22 +1,22 @@
-// Module ID: 14657
-// Function ID: 14658
+// Module ID: 14701
+// Function ID: 14702
 // Name: AppIconUtils
-// Dependencies: [32, 5, 19, 9823, 1087, 1394, 3, 14658, 9824, 558, 576, 584, 5245, 1267, 5645, 1128, 7467, 1630, 2]
+// Dependencies: [32, 5, 19, 9835, 1087, 1394, 3, 14702, 9836, 558, 576, 584, 5249, 1267, 5649, 1128, 7474, 1630, 2]
 // Exports: isAppIconsSupported, navigateToAppIconSettings, setAppIcon
 
-// Module 14657 (AppIconUtils)
+// Module 14701 (AppIconUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
-import useMountEffectDefault from "useMountEffect" /* 5245 */;
-import openUserSettings from "openUserSettings" /* 7467 */;
-import react_nativeDefault from "react-native" /* 14658 */;
+import useMountEffectDefault from "useMountEffect" /* 5249 */;
+import openUserSettings from "openUserSettings" /* 7474 */;
+import react_nativeDefault from "react-native" /* 14702 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AppIconConstants from "AppIconConstants" /* 9823 */;
+import AppIconConstants from "AppIconConstants" /* 9835 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -283,7 +283,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentAp
   } else {
     tmp7 = cResult[1];
   }
-  first1(5245)(tmp7);
+  first1(5249)(tmp7);
   return first;
 }) : (function useCurrentAppIcon() {
   let first;

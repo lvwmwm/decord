@@ -1,8 +1,8 @@
-// Module ID: 5096
-// Function ID: 5097
+// Module ID: 5100
+// Function ID: 5101
 // Dependencies: [2]
 
-// Module 5096
+// Module 5100
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/rive/native/CheckpointIntro.riv.js");

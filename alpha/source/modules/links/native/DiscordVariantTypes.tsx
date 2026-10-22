@@ -1,9 +1,9 @@
-// Module ID: 17656
-// Function ID: 17657
+// Module ID: 17726
+// Function ID: 17727
 // Name: DiscordVariantTypes
 // Dependencies: [587, 2]
 
-// Module 17656 (DiscordVariantTypes)
+// Module 17726 (DiscordVariantTypes)
 import nativeDefault from "native" /* 587 */;
 import size from "module_2" /* 2 */;
 

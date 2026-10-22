@@ -1,9 +1,9 @@
-// Module ID: 9469
-// Function ID: 9470
+// Module ID: 9480
+// Function ID: 9481
 // Name: GameProfileCommunitiesLocaleFilterStore
 // Dependencies: [570, 558, 576, 2]
 
-// Module 9469 (GameProfileCommunitiesLocaleFilterStore)
+// Module 9480 (GameProfileCommunitiesLocaleFilterStore)
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

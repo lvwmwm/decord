@@ -1,20 +1,19 @@
-// Module ID: 12294
-// Function ID: 12295
+// Module ID: 12318
+// Function ID: 12319
 // Name: ConjureSettingsRequestCard
-// Dependencies: [19, 21, 4966, 587, 558, 576, 5192, 11726, 5216, 1128, 3830, 5226, 11742, 2]
+// Dependencies: [19, 21, 4969, 587, 558, 576, 12319, 5196, 11743, 5220, 1128, 3830, 11759, 5230, 2]
 
-// Module 12294 (ConjureSettingsRequestCard)
+// Module 12318 (ConjureSettingsRequestCard)
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5192 */;
-import ConjureSettingsSheet from "ConjureSettingsSheet" /* 11726 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5196 */;
+import ConjureSettingsSheet from "ConjureSettingsSheet" /* 11743 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const ConjureSettingsSheetDefault = ConjureSettingsSheet;
-let dependencyMap;
 
 let closure_4;
 let hasOwnProperty;
@@ -23,100 +22,187 @@ let obj2;
 let obj = { card: obj2 };
 obj2 = { marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
 let closure_6 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSettingsRequestCard(projectId) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSettingsRequestCard(projectId) {
+  let done;
   let intl;
+  let intl2;
+  let intl5;
   let items;
+  let items1;
+  let markSaved;
+  let notifyAgent;
+  let summary;
   let tmp = projectId;
-  let obj = projectId(576);
-  const cResult = obj.c(17);
+  let obj = projectId(notifyAgent[5]);
+  const cResult = obj.c(27);
   projectId = projectId.projectId;
   const request = projectId.request;
-  const notifyAgent = projectId.notifyAgent;
-  dependencyMap = tmp4;
+  notifyAgent = projectId.notifyAgent;
+  let tmp4 = undefined === notifyAgent;
+  const askId = projectId.askId;
+  if (!tmp4) {
+    tmp4 = notifyAgent;
+  }
+  notifyAgent = tmp4;
   const tmp5 = closure_6();
-  if (cResult[0] === (undefined === notifyAgent || notifyAgent)) {
-    if (cResult[1] === projectId) {
-      if (cResult[2] === request.keys) {
-        let tmp6;
-        let tmp8;
-        let tmp12;
-        let tmp15;
-        let tmp18;
-        let tmp21;
-        if (cResult[3] === request.note) {
-          tmp6 = cResult[4];
-        }
-        const _Symbol = Symbol;
-        const card = tmp5.card;
-        if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-          let obj2 = { variant: "text-xs/semibold", color: "text-muted", children: intl.string(request(3830)["jZjP+I"]) };
-          const Text = tmp(5216).Text;
-          intl = tmp(1128).intl;
-          const tmp11 = closure_4(Text, obj2);
-          cResult[5] = tmp11;
-          tmp8 = tmp11;
-        } else {
-          tmp8 = cResult[5];
-        }
-        if (cResult[6] !== request.note) {
-          if (null != request.note) {
-            let note;
-            if ("" !== request.note) {
-              note = request.note;
-            }
-            cResult[6] = request.note;
-            cResult[7] = note;
-            tmp12 = note;
+  const tmpResult = tmp(notifyAgent[6]);
+  const conjureSettingsAsk = tmpResult.useConjureSettingsAsk(projectId, request, askId);
+  ({ done, summary, markSaved } = conjureSettingsAsk);
+  if (cResult[0] === markSaved) {
+    if (cResult[1] === tmp4) {
+      if (cResult[2] === projectId) {
+        if (cResult[3] === request.keys) {
+          let tmp8;
+          if (cResult[4] === request.note) {
+            tmp8 = cResult[5];
           }
-          const intl2 = tmp(1128).intl;
-          note = intl2.string(request(3830).XuOf5s);
-        } else {
-          tmp12 = cResult[7];
-        }
-        if (cResult[8] !== tmp12) {
-          const obj3 = { variant: "text-sm/normal", color: "text-default", children: tmp12 };
-          const tmp17 = closure_4(tmp(5216).Text, obj3);
-          cResult[8] = tmp12;
-          cResult[9] = tmp17;
-          tmp15 = tmp17;
-        } else {
-          tmp15 = cResult[9];
-        }
-        const _Symbol2 = Symbol;
-        if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl3 = tmp(1128).intl;
-          const stringResult = intl3.string(request(3830).d49riY);
-          cResult[10] = stringResult;
-          tmp18 = stringResult;
-        } else {
-          tmp18 = cResult[10];
-        }
-        if (cResult[11] !== tmp6) {
-          const obj4 = { variant: "secondary", size: "sm", onPress: tmp6, text: tmp18 };
-          const tmp23 = closure_4(tmp(5226).Button, obj4);
-          cResult[11] = tmp6;
-          cResult[12] = tmp23;
-          tmp21 = tmp23;
-        } else {
-          tmp21 = cResult[12];
-        }
-        if (cResult[13] === tmp5.card) {
-          if (cResult[14] === tmp15) {
-            let tmp24;
-            if (cResult[15] === tmp21) {
-              tmp24 = cResult[16];
+          if (tmp7) {
+            if (!done) {
+              let tmp10;
+              let tmp14;
+              const _Symbol = Symbol;
+              if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+                let obj2 = { variant: "text-xs/semibold", color: "text-muted", children: intl.string(request(notifyAgent[11])["+uXDk+"]) };
+                const Text = tmp(tmp2[9]).Text;
+                intl = tmp(tmp2[10]).intl;
+                const tmp13 = closure_4(Text, obj2);
+                cResult[6] = tmp13;
+                tmp10 = tmp13;
+              } else {
+                tmp10 = cResult[6];
+              }
+              if (cResult[7] !== tmp5.card) {
+                const obj3 = { style: tmp5.card, children: tmp10 };
+                const tmp17 = closure_4(request(notifyAgent[12]), obj3);
+                cResult[7] = tmp5.card;
+                cResult[8] = tmp17;
+                tmp14 = tmp17;
+              } else {
+                tmp14 = cResult[8];
+              }
+              return tmp14;
             }
-            return tmp24;
+          }
+          if (done) {
+            let tmp40;
+            let tmp44;
+            const _Symbol4 = Symbol;
+            if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+              const obj4 = { variant: "text-xs/semibold", color: "text-feedback-positive", children: intl5.string(request(notifyAgent[11]).AxBLLy) };
+              const Text3 = tmp(tmp2[9]).Text;
+              intl5 = tmp(tmp2[10]).intl;
+              const tmp43 = closure_4(Text3, obj4);
+              cResult[9] = tmp43;
+              tmp40 = tmp43;
+            } else {
+              tmp40 = cResult[9];
+            }
+            if (cResult[10] !== summary) {
+              let tmp45 = null;
+              if (summary.length > 0) {
+                const obj5 = { variant: "text-sm/normal", color: "text-default", children: summary.join(" \u00B7 ") };
+                const Text4 = tmp(tmp2[9]).Text;
+                tmp45 = closure_4(Text4, obj5);
+              }
+              cResult[10] = summary;
+              cResult[11] = tmp45;
+              tmp44 = tmp45;
+            } else {
+              tmp44 = cResult[11];
+            }
+            if (cResult[12] === tmp5.card) {
+              let tmp47;
+              if (cResult[13] === tmp44) {
+                tmp47 = cResult[14];
+              }
+              return tmp47;
+            }
+            const obj6 = { style: tmp5.card, children: items };
+            items = [tmp40, tmp44];
+            const tmp50 = closure_5(request(notifyAgent[12]), obj6);
+            cResult[12] = tmp5.card;
+            cResult[13] = tmp44;
+            cResult[14] = tmp50;
+            tmp47 = tmp50;
+          } else {
+            let tmp19;
+            let tmp23;
+            let tmp26;
+            let tmp29;
+            let tmp32;
+            const _Symbol2 = Symbol;
+            const card = tmp5.card;
+            if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+              const obj7 = { variant: "text-xs/semibold", color: "text-muted", children: intl2.string(request(notifyAgent[11])["jZjP+I"]) };
+              const Text2 = tmp(tmp2[9]).Text;
+              intl2 = tmp(tmp2[10]).intl;
+              const tmp22 = closure_4(Text2, obj7);
+              cResult[15] = tmp22;
+              tmp19 = tmp22;
+            } else {
+              tmp19 = cResult[15];
+            }
+            if (cResult[16] !== request.note) {
+              if (null != request.note) {
+                let note;
+                if ("" !== request.note) {
+                  note = request.note;
+                }
+                cResult[16] = request.note;
+                cResult[17] = note;
+                tmp23 = note;
+              }
+              const intl3 = tmp(tmp2[10]).intl;
+              note = intl3.string(request(tmp2[11]).XuOf5s);
+            } else {
+              tmp23 = cResult[17];
+            }
+            if (cResult[18] !== tmp23) {
+              const obj8 = { variant: "text-sm/normal", color: "text-default", children: tmp23 };
+              const tmp28 = closure_4(tmp(notifyAgent[9]).Text, obj8);
+              cResult[18] = tmp23;
+              cResult[19] = tmp28;
+              tmp26 = tmp28;
+            } else {
+              tmp26 = cResult[19];
+            }
+            const _Symbol3 = Symbol;
+            if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
+              const intl4 = tmp(tmp2[10]).intl;
+              const stringResult = intl4.string(request(notifyAgent[11]).d49riY);
+              cResult[20] = stringResult;
+              tmp29 = stringResult;
+            } else {
+              tmp29 = cResult[20];
+            }
+            if (cResult[21] !== tmp8) {
+              const obj9 = { variant: "secondary", size: "sm", onPress: tmp8, text: tmp29 };
+              const tmp34 = closure_4(tmp(notifyAgent[13]).Button, obj9);
+              cResult[21] = tmp8;
+              cResult[22] = tmp34;
+              tmp32 = tmp34;
+            } else {
+              tmp32 = cResult[22];
+            }
+            if (cResult[23] === tmp5.card) {
+              if (cResult[24] === tmp26) {
+                let tmp35;
+                if (cResult[25] === tmp32) {
+                  tmp35 = cResult[26];
+                }
+                return tmp35;
+              }
+            }
+            const obj10 = { style: card, children: items1 };
+            items1 = [tmp19, tmp26, tmp32];
+            const tmp38 = closure_5(request(notifyAgent[12]), obj10);
+            cResult[23] = tmp5.card;
+            cResult[24] = tmp26;
+            cResult[25] = tmp32;
+            cResult[26] = tmp38;
+            tmp35 = tmp38;
           }
         }
-        const obj5 = { style: card, children: items };
-        items = [tmp8, tmp15, tmp21];
-        const tmp27 = closure_5(request(11742), obj5);
-        cResult[13] = tmp5.card;
-        cResult[14] = tmp15;
-        cResult[15] = tmp21;
-        cResult[16] = tmp27;
-        tmp24 = tmp27;
       }
     }
   }
@@ -125,57 +211,100 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSetti
     const tmp = ActionSheetActionCreators;
     const showActionSheet = tmp.showActionSheet;
     const obj = { content: React3(ConjureSettingsSheetDefault, obj2), key: ConjureSettingsSheet.CONJURE_SETTINGS_SHEET_KEY };
-    obj2 = { projectId, scopeKeys: request.keys, note: request.note, notifyAgent, isPreview: true };
+    obj2 = { projectId, scopeKeys: request.keys, note: request.note, notifyAgent, onSaved: markSaved, isPreview: true };
     showActionSheet(obj);
   };
-  cResult[0] = undefined === notifyAgent || notifyAgent;
-  cResult[1] = projectId;
-  cResult[2] = request.keys;
-  cResult[3] = request.note;
-  cResult[4] = fn;
-  tmp6 = fn;
+  cResult[0] = markSaved;
+  cResult[1] = tmp4;
+  cResult[2] = projectId;
+  cResult[3] = request.keys;
+  cResult[4] = request.note;
+  cResult[5] = fn;
+  tmp8 = fn;
 }) : (function ConjureSettingsRequestCard(projectId) {
+  let Text;
+  let done;
   let intl;
-  let intl3;
+  let intl2;
+  let intl4;
+  let intl5;
+  let markSaved;
+  let obj3;
+  let summary;
+  let tmp16;
   projectId = projectId.projectId;
   const request = projectId.request;
   let flag = projectId.notifyAgent;
+  const askId = projectId.askId;
   if (flag === undefined) {
     flag = true;
   }
-  const items = [flag, projectId, request];
+  markSaved = undefined;
   let tmp = closure_6();
-  const callback = react.useCallback(() => {
+  let obj = projectId(flag[6]);
+  const conjureSettingsAsk = obj.useConjureSettingsAsk(projectId, request, askId);
+  ({ done, summary, markSaved } = conjureSettingsAsk);
+  const items = [markSaved, flag, projectId, request];
+  const superseded = conjureSettingsAsk.superseded;
+  const callback = markSaved.useCallback(() => {
     let obj2;
     const tmp = ActionSheetActionCreators;
     const showActionSheet = tmp.showActionSheet;
     const obj = { content: React3(ConjureSettingsSheetDefault, obj2), key: ConjureSettingsSheet.CONJURE_SETTINGS_SHEET_KEY };
-    obj2 = { projectId, scopeKeys: request.keys, note: request.note, notifyAgent: flag, isPreview: true };
+    obj2 = { projectId, scopeKeys: request.keys, note: request.note, notifyAgent: flag, onSaved: markSaved, isPreview: true };
     showActionSheet(obj);
   }, items);
-  let obj = { style: tmp.card, children: null };
-  let obj2 = { variant: "text-xs/semibold", color: "text-muted", children: intl.string(request(flag[10])["jZjP+I"]) };
-  const tmp6 = request(flag[12]);
-  const Text = projectId(flag[8]).Text;
-  intl = projectId(flag[9]).intl;
-  const items1 = [closure_4(Text, obj2), , ];
-  const tmp3 = closure_5;
-  if (null != request.note) {
-    let note;
-    if ("" !== request.note) {
-      note = request.note;
+  if (superseded) {
+    let tmp10Result;
+    if (!done) {
+      let obj2 = { style: tmp.card, children: closure_4(Text, obj3) };
+      obj3 = { variant: "text-xs/semibold", color: "text-muted", children: intl.string(request(flag[11])["+uXDk+"]) };
+      const tmp8 = request(flag[12]);
+      Text = tmp2(tmp3[9]).Text;
+      intl = tmp2(tmp3[10]).intl;
+      tmp10Result = closure_4(tmp8, obj2);
     }
-    const obj3 = { variant: "text-sm/normal", color: "text-default", children: note };
-    items1[1] = closure_4(tmp9, obj3);
-    const obj4 = { variant: "secondary", size: "sm", onPress: callback, text: intl3.string(request(flag[10]).d49riY) };
-    const Button = tmp8(tmp5[11]).Button;
-    intl3 = tmp8(tmp5[9]).intl;
-    items1[2] = closure_4(Button, obj4);
-    obj.children = items1;
-    return tmp3(tmp6, obj);
+    return tmp10Result;
   }
-  const intl2 = tmp8(tmp5[9]).intl;
-  note = intl2.string(tmp4(tmp5[10]).XuOf5s);
+  const obj4 = { style: tmp.card, children: null };
+  const tmp12 = request(flag[12]);
+  const Text2 = tmp2(tmp3[9]).Text;
+  const tmp10 = closure_5;
+  if (done) {
+    const obj5 = { variant: "text-xs/semibold", color: "text-feedback-positive", children: intl5.string(request(flag[11]).AxBLLy) };
+    intl5 = tmp2(tmp3[10]).intl;
+    const items1 = [closure_4(Text2, obj5), ];
+    let tmp13Result = null;
+    if (summary.length > 0) {
+      const obj6 = { variant: "text-sm/normal", color: "text-default", children: summary.join(" \u00B7 ") };
+      const Text3 = tmp2(tmp3[9]).Text;
+      tmp13Result = tmp13(Text3, obj6);
+    }
+    items1[1] = tmp13Result;
+    obj4.children = items1;
+    tmp16 = obj4;
+  } else {
+    const obj7 = { variant: "text-xs/semibold", color: "text-muted", children: intl2.string(request(flag[11])["jZjP+I"]) };
+    intl2 = tmp2(tmp3[10]).intl;
+    const items2 = [closure_4(Text2, obj7), , ];
+    if (null != request.note) {
+      let note;
+      if ("" !== request.note) {
+        note = request.note;
+      }
+      const obj8 = { variant: "text-sm/normal", color: "text-default", children: note };
+      items2[1] = closure_4(tmp14, obj8);
+      const obj9 = { variant: "secondary", size: "sm", onPress: callback, text: intl4.string(request(flag[11]).d49riY) };
+      const Button = tmp2(tmp3[13]).Button;
+      intl4 = tmp2(tmp3[10]).intl;
+      items2[2] = closure_4(Button, obj9);
+      obj4.children = items2;
+      tmp16 = obj4;
+    }
+    const intl3 = tmp2(tmp3[10]).intl;
+    note = intl3.string(tmp11(tmp3[11]).XuOf5s);
+  }
+  tmp10Result = tmp10(tmp12, tmp16);
 });
 const result = size.fileFinishedImporting("modules/conjure/settings/native/ConjureSettingsRequestCard.tsx");
 

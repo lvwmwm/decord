@@ -1,14 +1,14 @@
-// Module ID: 10864
-// Function ID: 10865
+// Module ID: 10881
+// Function ID: 10882
 // Name: useSafeAreaInsetsSharedValue
-// Dependencies: [5035, 1633, 10865, 10852, 1646, 558, 1502, 2]
+// Dependencies: [5038, 1633, 10882, 10869, 1646, 558, 1502, 2]
 
-// Module 10864 (useSafeAreaInsetsSharedValue)
+// Module 10881 (useSafeAreaInsetsSharedValue)
 import AppEntryKeyContext from "AppEntryKeyContext" /* 1502 */;
 import AppEntryKey from "AppEntryKey" /* 1646 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10852 */;
-import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 10865 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 5035 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10869 */;
+import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 10882 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 5038 */;
 import useSafeAreaInsets_mod from "useSafeAreaInsets" /* 1633 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

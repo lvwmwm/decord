@@ -1,17 +1,17 @@
-// Module ID: 14020
-// Function ID: 14021
+// Module ID: 14056
+// Function ID: 14057
 // Name: AppStoreOverlayMediaModalWrapper
-// Dependencies: [109, 19, 5193, 1087, 21, 558, 576, 14019, 6651, 8743, 8744, 2]
+// Dependencies: [109, 19, 5197, 1087, 21, 558, 576, 14055, 6658, 8752, 8753, 2]
 
-// Module 14020 (AppStoreOverlayMediaModalWrapper)
+// Module 14056 (AppStoreOverlayMediaModalWrapper)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6651 */;
-import MediaModalSheetWrapperDefault from "MediaModalSheetWrapper" /* 8743 */;
-import MediaModalDefault from "MediaModal" /* 8744 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6658 */;
+import MediaModalSheetWrapperDefault from "MediaModalSheetWrapper" /* 8752 */;
+import MediaModalDefault from "MediaModal" /* 8753 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 5193 */;
+import ActionSheetStore from "ActionSheetStore" /* 5197 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOv
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     class M {
       constructor() {
-        return () => { /* body not rendered: F149267 */ };
+        return () => { /* body not rendered: F150015 */ };
       }
     }
     const items = [];
@@ -55,7 +55,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOv
   } else {
     class M {
       constructor() {
-        return () => { /* body not rendered: F149267 */ };
+        return () => { /* body not rendered: F150015 */ };
       }
     }
     tmp9 = cResult[4];
@@ -64,7 +64,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOv
   if (cResult[5] !== tmp3) {
     class M {
       constructor() {
-        return () => { /* body not rendered: F149267 */ };
+        return () => { /* body not rendered: F150015 */ };
       }
     }
     cResult[5] = tmp3;
@@ -72,14 +72,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOv
   } else {
     class M {
       constructor() {
-        return () => { /* body not rendered: F149267 */ };
+        return () => { /* body not rendered: F150015 */ };
       }
     }
   }
   if (ActionSheetStore.isOpen()) {
     class M {
       constructor() {
-        return () => { /* body not rendered: F149267 */ };
+        return () => { /* body not rendered: F150015 */ };
       }
     }
     MediaModalSheetWrapperDefault;
@@ -91,7 +91,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOv
   } else {
     class M {
       constructor() {
-        return () => { /* body not rendered: F149267 */ };
+        return () => { /* body not rendered: F150015 */ };
       }
     }
     MediaModalDefault;

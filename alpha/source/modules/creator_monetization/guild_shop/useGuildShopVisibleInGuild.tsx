@@ -1,16 +1,16 @@
-// Module ID: 7339
-// Function ID: 7340
+// Module ID: 7346
+// Function ID: 7347
 // Name: useGuildShopVisibleInGuild
-// Dependencies: [1087, 558, 576, 7335, 7327, 7340, 7330, 2]
+// Dependencies: [1087, 558, 576, 7342, 7334, 7347, 7337, 2]
 // Exports: isGuildShopVisibleInGuild
 
-// Module 7339 (useGuildShopVisibleInGuild)
+// Module 7346 (useGuildShopVisibleInGuild)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import useRoleSubscriptionsVisibleInGuild2 from "useRoleSubscriptionsVisibleInGuild" /* 7327 */;
-import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7330 */;
-import GuildProductsEligibility from "GuildProductsEligibility" /* 7335 */;
-import useGuildShopPreviewVisible from "useGuildShopPreviewVisible" /* 7340 */;
+import useRoleSubscriptionsVisibleInGuild2 from "useRoleSubscriptionsVisibleInGuild" /* 7334 */;
+import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7337 */;
+import GuildProductsEligibility from "GuildProductsEligibility" /* 7342 */;
+import useGuildShopPreviewVisible from "useGuildShopPreviewVisible" /* 7347 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -80,7 +80,7 @@ export const isGuildShopVisibleInGuild = function isGuildShopVisibleInGuild(id, 
   }
   const result = isGuildEligibleForGuildProducts(id);
   let id1;
-  const areRoleSubscriptionsVisibleInGuild = tmp(7327).areRoleSubscriptionsVisibleInGuild;
+  const areRoleSubscriptionsVisibleInGuild = tmp(7334).areRoleSubscriptionsVisibleInGuild;
   useRoleSubscriptionsVisibleInGuild2;
   if (id != null) {
     id1 = id.id;

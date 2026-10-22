@@ -1,9 +1,9 @@
-// Module ID: 12223
-// Function ID: 12224
+// Module ID: 12246
+// Function ID: 12247
 // Name: useConjureIncompleteAppNotice
-// Dependencies: [32, 19, 4843, 558, 576, 11772, 504, 1128, 3830, 2]
+// Dependencies: [32, 19, 4843, 558, 576, 11816, 504, 1128, 3830, 2]
 
-// Module 12223 (useConjureIncompleteAppNotice)
+// Module 12246 (useConjureIncompleteAppNotice)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4843 */;
@@ -26,7 +26,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureIn
   let tmp2 = dependencyMap;
   const obj = require("react");
   const cResult = obj.c(11);
-  const tmp4 = guildId(11772)(arg0);
+  const tmp4 = guildId(11816)(arg0);
   guildId = undefined;
   if (tmp4 != null) {
     guildId = tmp4.guildId;
@@ -152,7 +152,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureIn
   _require = arg0;
   const tmp = guildId;
   let tmp2 = dependencyMap;
-  const tmp3 = guildId(11772)(arg0);
+  const tmp3 = guildId(11816)(arg0);
   guildId = undefined;
   if (tmp3 != null) {
     guildId = tmp3.guildId;
@@ -198,9 +198,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureIn
       } else {
         Lm7IRC = tmp(3830).Lm7IRC;
       }
-      let str = stateFromStores;
+      let str2 = stateFromStores;
       if (stateFromStores == null) {
-        str = "";
+        str2 = "";
       }
       const obj2 = {
         message: format(Lm7IRC, obj3),
@@ -209,7 +209,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureIn
             }
       };
       tmp10 = obj2;
-      obj3 = { server: str };
+      obj3 = { server: str2 };
     }
   }
   return tmp10;

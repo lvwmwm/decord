@@ -1,9 +1,9 @@
-// Module ID: 18829
-// Function ID: 18830
+// Module ID: 18896
+// Function ID: 18897
 // Name: GuildSpaceTypes
 // Dependencies: [2]
 
-// Module 18829 (GuildSpaceTypes)
+// Module 18896 (GuildSpaceTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_space/GuildSpaceTypes.tsx");

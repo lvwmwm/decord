@@ -1,9 +1,10 @@
 // Module ID: 15466
 // Function ID: 15467
-// Dependencies: [15452]
+// Dependencies: []
+// Exports: shouldPolyfill
 
 // Module 15466
-import _mod15452 from "module_15452" /* 15452 */;
 
-
-export default (arg0) => Object(_mod15452(arg0));
+export const shouldPolyfill = function shouldPolyfill() {
+  return !("supportedValuesOf" in Intl);
+};

@@ -1,11 +1,11 @@
-// Module ID: 15311
-// Function ID: 15312
+// Module ID: 15355
+// Function ID: 15356
 // Name: useFlashListAnimationDisabler
-// Dependencies: [19, 558, 576, 5035, 2]
+// Dependencies: [19, 558, 576, 5038, 2]
 
-// Module 15311 (useFlashListAnimationDisabler)
+// Module 15355 (useFlashListAnimationDisabler)
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5035 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

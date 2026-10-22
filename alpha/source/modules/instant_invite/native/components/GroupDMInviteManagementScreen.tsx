@@ -1,24 +1,24 @@
-// Module ID: 10768
-// Function ID: 10769
+// Module ID: 10785
+// Function ID: 10786
 // Name: GroupDMInviteManagementScreen
-// Dependencies: [5, 32, 19, 17, 8827, 10052, 1087, 21, 4966, 587, 558, 576, 1297, 5245, 12, 10769, 7113, 1202, 10787, 10788, 1128, 7199, 6903, 1275, 7074, 2]
+// Dependencies: [5, 32, 19, 17, 8836, 10064, 1087, 21, 4969, 587, 558, 576, 1297, 5249, 12, 10786, 7120, 1202, 10804, 10805, 1128, 7206, 6910, 1275, 7081, 2]
 
-// Module 10768 (GroupDMInviteManagementScreen)
+// Module 10785 (GroupDMInviteManagementScreen)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
-import useMountEffectDefault from "useMountEffect" /* 5245 */;
-import NavigatorHeader from "NavigatorHeader" /* 6903 */;
+import useMountEffectDefault from "useMountEffect" /* 5249 */;
+import NavigatorHeader from "NavigatorHeader" /* 6910 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import InviteRecord from "InviteRecord" /* 8827 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 10052 */;
+import InviteRecord from "InviteRecord" /* 8836 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 10064 */;
 import Constants from "Constants" /* 1087 */;
-import createStyles from "createStyles" /* 4966 */;
+import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -250,7 +250,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupD
         return <metroRequire style={{ marginHorizontal: nativeDefault.space.PX_12 }}>{null}</metroRequire>;
       }
     }
-    tmp17 = jsx(tmp(7113).SceneLoadingIndicator, {});
+    tmp17 = jsx(tmp(7120).SceneLoadingIndicator, {});
   } else {
     class F {
       constructor(invite) {
@@ -268,7 +268,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupD
       const EmptyState = tmp(1202).EmptyState;
       const intl = tmp(1128).intl;
       const intl2 = tmp(1128).intl;
-      tmp17 = <EmptyState lightSource={tmp10(10787)} darkSource={tmp10(10788)} title={intl.string(tmp(1128).t["+nLJkZ"])} body={intl2.string(tmp(1128).t.F53CAc)} />;
+      tmp17 = <EmptyState lightSource={tmp10(10804)} darkSource={tmp10(10805)} title={intl.string(tmp(1128).t["+nLJkZ"])} body={intl2.string(tmp(1128).t.F53CAc)} />;
     } else {
       class F {
         constructor(invite) {
@@ -276,7 +276,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupD
           return <metroRequire style={{ marginHorizontal: nativeDefault.space.PX_12 }}>{null}</metroRequire>;
         }
       }
-      tmp17 = jsx(tmp(7199).FlashList, { contentContainerStyle: tmp4.listContent, data: tmp12, keyExtractor: tmp15, renderItem: tmp16 });
+      tmp17 = jsx(tmp(7206).FlashList, { contentContainerStyle: tmp4.listContent, data: tmp12, keyExtractor: tmp15, renderItem: tmp16 });
     }
   }
   cResult[8] = arr2;
@@ -297,7 +297,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupD
   const tmp = closure_11();
   [first, dependencyMap] = react.useState([]);
   [first1, closure_3] = react.useState(true);
-  first(5245)(() => {
+  first(5249)(() => {
     function fetchInvites() {
       return obj(...arguments);
     }
@@ -393,15 +393,15 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupD
   }, items);
   const callback = react.useCallback((code) => code.code, []);
   if (first1) {
-    tmp13 = jsx(channelId(7113).SceneLoadingIndicator, {});
+    tmp13 = jsx(channelId(7120).SceneLoadingIndicator, {});
   } else if (0 === first.length) {
     const EmptyState = channelId(1202).EmptyState;
     const intl = channelId(1128).intl;
     const intl2 = channelId(1128).intl;
-    tmp13 = <EmptyState lightSource={tmp5(10787)} darkSource={tmp5(10788)} title={intl.string(channelId(1128).t["+nLJkZ"])} body={intl2.string(channelId(1128).t.F53CAc)} />;
+    tmp13 = <EmptyState lightSource={tmp5(10804)} darkSource={tmp5(10805)} title={intl.string(channelId(1128).t["+nLJkZ"])} body={intl2.string(channelId(1128).t.F53CAc)} />;
   } else {
     const tmp12 = channelId;
-    tmp13 = jsx(channelId(7199).FlashList, { contentContainerStyle: tmp.listContent, data: memo, keyExtractor: callback, renderItem: tmp10 });
+    tmp13 = jsx(channelId(7206).FlashList, { contentContainerStyle: tmp.listContent, data: memo, keyExtractor: callback, renderItem: tmp10 });
   }
   return tmp13;
 });
@@ -422,7 +422,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       tmp4 = cResult[2];
     }
     if (cResult[3] !== tmp4) {
-      const tmp8 = jsx(channelId(7074).Navigator, { screens: tmp4, initialRouteName: constants.INSTANT_INVITES_MANAGEMENT });
+      const tmp8 = jsx(channelId(7081).Navigator, { screens: tmp4, initialRouteName: constants.INSTANT_INVITES_MANAGEMENT });
       cResult[3] = tmp4;
       cResult[4] = tmp8;
       tmp5 = tmp8;
@@ -448,7 +448,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   cResult[1] = onClose;
   cResult[2] = obj3;
   tmp4 = obj3;
-  tmpResult = channelId(6903);
+  tmpResult = channelId(6910);
 }) : (function GroupDMInviteManagementScreen(channelId) {
   channelId = channelId.channelId;
   const onClose = channelId.onClose;
@@ -473,7 +473,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     obj3 = NavigatorHeader;
     return obj;
   }, items);
-  return jsx(channelId(7074).Navigator, { screens: memo, initialRouteName: constants.INSTANT_INVITES_MANAGEMENT });
+  return jsx(channelId(7081).Navigator, { screens: memo, initialRouteName: constants.INSTANT_INVITES_MANAGEMENT });
 }));
 const result = size.fileFinishedImporting("modules/instant_invite/native/components/GroupDMInviteManagementScreen.tsx");
 

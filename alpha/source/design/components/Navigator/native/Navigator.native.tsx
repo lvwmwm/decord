@@ -1,26 +1,26 @@
-// Module ID: 7074
-// Function ID: 7075
+// Module ID: 7081
+// Function ID: 7082
 // Name: Navigator
-// Dependencies: [109, 32, 19, 17, 21, 4966, 587, 558, 576, 7075, 6903, 5234, 7076, 1633, 1128, 12, 7109, 1506, 5955, 5187, 7115, 1258, 6912, 2]
+// Dependencies: [109, 32, 19, 17, 21, 4969, 587, 558, 576, 7082, 6910, 5238, 7083, 1633, 1128, 12, 7116, 1506, 5962, 5191, 7122, 1258, 6919, 2]
 // Exports: useNavigatorScreens
 
-// Module 7074 (Navigator)
+// Module 7081 (Navigator)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import SentryInitUtils from "SentryInitUtils" /* 1258 */;
 import Link from "Link" /* 1506 */;
-import BackPressTracking from "BackPressTracking" /* 5955 */;
-import NavigatorHeader from "NavigatorHeader" /* 6903 */;
-import _mod6912 from "module_6912" /* 6912 */;
-import useNavigatorShouldCrossfade from "useNavigatorShouldCrossfade" /* 7075 */;
-import NavigatorScreen2 from "NavigatorScreen" /* 7109 */;
-import useNavigationTheme from "useNavigationTheme" /* 7115 */;
+import BackPressTracking from "BackPressTracking" /* 5962 */;
+import NavigatorHeader from "NavigatorHeader" /* 6910 */;
+import _mod6919 from "module_6919" /* 6919 */;
+import useNavigatorShouldCrossfade from "useNavigatorShouldCrossfade" /* 7082 */;
+import NavigatorScreen2 from "NavigatorScreen" /* 7116 */;
+import useNavigationTheme from "useNavigationTheme" /* 7122 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -237,13 +237,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Naviga
                                                               return obj;
                                                             };
                                                           } else {
-                                                            fn2 = tmp3(7076).CardStyleInterpolators.forHorizontalIOS;
+                                                            fn2 = tmp3(7083).CardStyleInterpolators.forHorizontalIOS;
                                                           }
                                                           const tmp8 = disableHeaderAnimation;
                                                           if (tmp8) {
-                                                            fn3 = tmp3(7076).HeaderStyleInterpolators.forNoAnimation;
+                                                            fn3 = tmp3(7083).HeaderStyleInterpolators.forNoAnimation;
                                                           } else if (navigatorShouldCrossfade) {
-                                                            fn3 = tmp3(7076).HeaderStyleInterpolators.forFade;
+                                                            fn3 = tmp3(7083).HeaderStyleInterpolators.forFade;
                                                           } else {
                                                             fn3 = (arg0) => {
                                                               let current;
@@ -341,13 +341,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Naviga
                                                       return obj;
                                                     };
                                                   } else {
-                                                    fn2 = tmp3(7076).CardStyleInterpolators.forHorizontalIOS;
+                                                    fn2 = tmp3(7083).CardStyleInterpolators.forHorizontalIOS;
                                                   }
                                                   const tmp8 = disableHeaderAnimation;
                                                   if (tmp8) {
-                                                    fn3 = tmp3(7076).HeaderStyleInterpolators.forNoAnimation;
+                                                    fn3 = tmp3(7083).HeaderStyleInterpolators.forNoAnimation;
                                                   } else if (navigatorShouldCrossfade) {
-                                                    fn3 = tmp3(7076).HeaderStyleInterpolators.forFade;
+                                                    fn3 = tmp3(7083).HeaderStyleInterpolators.forFade;
                                                   } else {
                                                     fn3 = (arg0) => {
                                                       let current;
@@ -488,13 +488,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Naviga
             return obj;
           };
         } else {
-          fn2 = tmp3(7076).CardStyleInterpolators.forHorizontalIOS;
+          fn2 = tmp3(7083).CardStyleInterpolators.forHorizontalIOS;
         }
         const tmp8 = disableHeaderAnimation;
         if (tmp8) {
-          fn3 = tmp3(7076).HeaderStyleInterpolators.forNoAnimation;
+          fn3 = tmp3(7083).HeaderStyleInterpolators.forNoAnimation;
         } else if (navigatorShouldCrossfade) {
-          fn3 = tmp3(7076).HeaderStyleInterpolators.forFade;
+          fn3 = tmp3(7083).HeaderStyleInterpolators.forFade;
         } else {
           fn3 = (arg0) => {
             let current;
@@ -699,13 +699,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Naviga
           return obj;
         };
       } else {
-        fn2 = tmp3(7076).CardStyleInterpolators.forHorizontalIOS;
+        fn2 = tmp3(7083).CardStyleInterpolators.forHorizontalIOS;
       }
       const tmp8 = disableHeaderAnimation;
       if (tmp8) {
-        fn3 = tmp3(7076).HeaderStyleInterpolators.forNoAnimation;
+        fn3 = tmp3(7083).HeaderStyleInterpolators.forNoAnimation;
       } else if (navigatorShouldCrossfade) {
-        fn3 = tmp3(7076).HeaderStyleInterpolators.forFade;
+        fn3 = tmp3(7083).HeaderStyleInterpolators.forFade;
       } else {
         fn3 = (arg0) => {
           let current;
@@ -804,7 +804,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Wrappe
   }
   const tmpResult = tmp(1506);
   const navigationContainerRef = tmpResult.useNavigationContainerRef();
-  const tmpResult3 = tmp(5955);
+  const tmpResult3 = tmp(5962);
   const trackNavigationBackPress = tmpResult3.useTrackNavigationBackPress(navigationContainerRef);
   if (cResult[7] !== tmp5) {
     class N {
@@ -835,8 +835,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Wrappe
     }
   }
   const first = _slicedToArray(react.useState(tmp15), 1)[0];
-  const tmp17 = navigationContainerRef(5187)();
-  const tmpResult4 = tmp(7115);
+  const tmp17 = navigationContainerRef(5191)();
+  const tmpResult4 = tmp(7122);
   const navigationTheme1 = tmpResult4.useNavigationTheme(tmp17);
   if (null != tmp7) {
     class N {
@@ -915,7 +915,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Wrappe
       }
     }
     const NavigationIndependentTree = tmp(1506).NavigationIndependentTree;
-    const Provider = tmp(6912).HeaderBackContext.Provider;
+    const Provider = tmp(6919).HeaderBackContext.Provider;
     const tmp26 = <NavigationIndependentTree>{null}</NavigationIndependentTree>;
     cResult[14] = navigationContainerRef;
     cResult[15] = tmp8;
@@ -951,11 +951,11 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Wrappe
     }
     return tmp2;
   }), 1)[0];
-  const tmp5 = navigationContainerRef(5187)();
+  const tmp5 = navigationContainerRef(5191)();
   const obj3 = useNavigationTheme;
   let navigationTheme1 = obj3.useNavigationTheme(tmp5);
   const NavigationIndependentTree = Link.NavigationIndependentTree;
-  const Provider = _mod6912.HeaderBackContext.Provider;
+  const Provider = _mod6919.HeaderBackContext.Provider;
   const NavigationContainer = Link.NavigationContainer;
   if (null != navigationTheme) {
     navigationTheme1 = navigationTheme;

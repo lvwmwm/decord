@@ -1,31 +1,31 @@
-// Module ID: 18041
-// Function ID: 18042
+// Module ID: 18111
+// Function ID: 18112
 // Name: AddFriendsScreen
-// Dependencies: [32, 5, 19, 17, 7706, 4911, 1392, 13489, 1087, 13467, 21, 4966, 587, 13465, 8825, 5644, 1128, 9021, 558, 576, 13469, 1384, 7230, 7255, 7123, 18042, 1267, 5245, 8632, 12, 5015, 573, 17299, 7234, 6882, 5648, 8537, 18043, 18044, 18046, 10583, 9051, 6859, 10580, 18047, 2]
+// Dependencies: [32, 5, 19, 17, 7715, 4911, 1392, 13525, 1087, 13503, 21, 4969, 587, 13501, 8834, 5648, 1128, 9030, 558, 576, 13505, 1384, 7237, 7262, 7130, 18112, 1267, 5249, 8641, 12, 5018, 573, 17369, 7241, 6889, 5652, 8546, 18113, 18114, 18116, 10595, 9060, 6866, 10592, 18117, 2]
 
-// Module 18041 (AddFriendsScreen)
+// Module 18111 (AddFriendsScreen)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8632 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8825 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13465 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13467 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13469 */;
-import FriendsScreenConstants from "FriendsScreenConstants" /* 13489 */;
-import IncomingRequestRow from "IncomingRequestRow" /* 18044 */;
-import ContactSuggestionRow2 from "ContactSuggestionRow" /* 18046 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8641 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8834 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13501 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 13503 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13505 */;
+import FriendsScreenConstants from "FriendsScreenConstants" /* 13525 */;
+import IncomingRequestRow from "IncomingRequestRow" /* 18114 */;
+import ContactSuggestionRow2 from "ContactSuggestionRow" /* 18116 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7706 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7715 */;
 import RelationshipStore_mod from "RelationshipStore" /* 4911 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -137,12 +137,12 @@ let props = function _handleShare() {
   return obj(...arguments);
 };
 function areHydratedGameFriendRequestRowStatesEqual(arr, arg1) {
-  const f132875 = (user, index) => user.user === closure_0[index].user && user.applicationId === closure_0[index].applicationId;
+  const f133581 = (user, index) => user.user === closure_0[index].user && user.applicationId === closure_0[index].applicationId;
   let closure_0 = arg1;
   let tmp = arr === arg1;
   if (!tmp) {
-    tmp = arr.length === arg1.length && arr.every(f132875);
-    const tmp2 = arr.length === arg1.length && arr.every(f132875);
+    tmp = arr.length === arg1.length && arr.every(f133581);
+    const tmp2 = arr.length === arg1.length && arr.every(f133581);
   }
   return tmp;
 }
@@ -176,7 +176,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSho
   const obj2 = require("ContactSyncUtils");
   const contactSyncAccount = obj2.useContactSyncAccount();
   if (cResult[0] !== contactSyncAccount) {
-    let tmpResult = tmp(13469);
+    let tmpResult = tmp(13505);
     const isContactSyncEnabledResult = tmpResult.isContactSyncEnabled(contactSyncAccount);
     cResult[0] = contactSyncAccount;
     cResult[1] = isContactSyncEnabledResult;
@@ -216,7 +216,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSho
     tmp10 = cResult[3];
   }
   const effect = obj4.useEffect(tmp9, tmp10);
-  const tmpResult2 = tmp(13469);
+  const tmpResult2 = tmp(13505);
   let result = tmpResult2.isContactSyncAvailable();
   if (result) {
     let tmp13 = !tmp5;

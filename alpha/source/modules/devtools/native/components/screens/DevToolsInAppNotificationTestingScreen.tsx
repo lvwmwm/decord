@@ -1,22 +1,22 @@
-// Module ID: 16932
-// Function ID: 16933
+// Module ID: 17001
+// Function ID: 17002
 // Name: DevToolsInAppNotificationTestingScreen
-// Dependencies: [19, 17, 6745, 4825, 4912, 4821, 4843, 4872, 1392, 1087, 21, 4966, 587, 5645, 13642, 13644, 6468, 11, 558, 576, 1633, 1202, 6966, 6882, 16774, 6891, 2]
+// Dependencies: [19, 17, 6752, 4825, 4912, 4821, 4843, 4872, 1392, 1087, 21, 4969, 587, 5649, 13678, 13680, 6475, 11, 558, 576, 1633, 1202, 6973, 6889, 16843, 6898, 2]
 
-// Module 16932 (DevToolsInAppNotificationTestingScreen)
+// Module 17001 (DevToolsInAppNotificationTestingScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import ChannelRecord from "ChannelRecord" /* 4825 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5645 */;
-import StickersTypes from "StickersTypes" /* 6468 */;
-import TableRowGroup2 from "TableRowGroup" /* 6966 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 13642 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 13644 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5649 */;
+import StickersTypes from "StickersTypes" /* 6475 */;
+import TableRowGroup2 from "TableRowGroup" /* 6973 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 13678 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 13680 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 6745 */;
+import StickersStore from "StickersStore" /* 6752 */;
 import MessageRecord from "MessageRecord" /* 4912 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;
@@ -24,7 +24,7 @@ import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4966 */;
+import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -577,7 +577,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsInAp
         const obj3 = { size: nativeDefault.space.PX_16 };
         const Spacer = native.Spacer;
         items[1] = syncedClientThemes(Spacer, obj3);
-        return authStore3(Fragment, obj, title.title);
+        return closure_15(Fragment, obj, title.title);
       });
       cResult[6] = tmp14;
       cResult[7] = mapped;
@@ -607,7 +607,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsInAp
               return closure_1_14(TableRow, obj, label.label);
             })
       };
-      let TableRowGroup = tmp(6966).TableRowGroup;
+      let TableRowGroup = tmp(6973).TableRowGroup;
       const tmp20 = closure_14(TableRowGroup, obj4);
       cResult[8] = tmp20;
       tmp17 = tmp20;
@@ -679,7 +679,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsInAp
       const obj3 = { size: nativeDefault.space.PX_16 };
       const Spacer = native.Spacer;
       items[1] = syncedClientThemes(Spacer, obj3);
-      return authStore3(Fragment, obj, title.title);
+      return closure_15(Fragment, obj, title.title);
     }),
 
   ];
