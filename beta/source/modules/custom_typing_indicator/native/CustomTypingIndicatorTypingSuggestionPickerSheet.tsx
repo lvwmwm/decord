@@ -1,7 +1,7 @@
 // Module ID: 16420
 // Function ID: 16421
 // Name: CustomTypingIndicatorTypingSuggestionPickerSheet
-// Dependencies: [32, 19, 21, 5191, 587, 558, 576, 7117, 1128, 3885, 12833, 6539, 6540, 7175, 2]
+// Dependencies: [32, 19, 21, 5191, 587, 558, 576, 7117, 1128, 3885, 12828, 6539, 6540, 7175, 2]
 
 // Module 16420 (CustomTypingIndicatorTypingSuggestionPickerSheet)
 import Fragment from "Fragment" /* 21 */;
@@ -60,7 +60,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTypi
     tmp9 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = onChange(12833);
+    const tmpResult = onChange(12828);
     const customTypingIndicatorSuggestionPresets = tmpResult.getCustomTypingIndicatorSuggestionPresets();
     const mapped = customTypingIndicatorSuggestionPresets.map((value) => {
       const TableRadioRow = onChange(dependencyMap[11]).TableRadioRow;
@@ -128,7 +128,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTypi
     })
   });
   const TableRadioGroup = onChange(6540).TableRadioGroup;
-  const obj4 = onChange(12833);
+  const obj4 = onChange(12828);
   customTypingIndicatorSuggestionPresets = obj4.getCustomTypingIndicatorSuggestionPresets();
   return <ActionSheet contentStyles={tmp.content} header={null} dismissAccessibilityLabel={intl2.string(_modDef3885.hrl2cG)}>{null}</ActionSheet>;
 });

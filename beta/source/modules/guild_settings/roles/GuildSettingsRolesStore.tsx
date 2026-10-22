@@ -1,7 +1,7 @@
 // Module ID: 18806
 // Function ID: 18807
 // Name: GuildSettingsRolesStore
-// Dependencies: [2083, 18807, 2123, 2122, 8911, 18801, 1087, 18808, 13082, 5508, 1388, 1099, 4850, 1105, 2125, 12, 504, 584, 2]
+// Dependencies: [2083, 18807, 2123, 2122, 8911, 18801, 1087, 18808, 13077, 5508, 1388, 1099, 4850, 1105, 2125, 12, 504, 584, 2]
 
 // Module 18806 (GuildSettingsRolesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -14,7 +14,7 @@ import GuildRoleRecord from "GuildRoleRecord" /* 2123 */;
 import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 2125 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
 import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5508 */;
-import DragAndDropUtilsDefault from "DragAndDropUtils" /* 13082 */;
+import DragAndDropUtilsDefault from "DragAndDropUtils" /* 13077 */;
 import GuildSettingsConstants from "GuildSettingsConstants" /* 18801 */;
 import GuildRoleConnectionsConfigurationStore from "GuildRoleConnectionsConfigurationStore" /* 18807 */;
 import GuildRoleStore from "GuildRoleStore" /* 2122 */;
@@ -868,13 +868,13 @@ let obj2 = {
     let id;
     let role;
     let roles;
-    const f136508 = (item) => map1.get(item);
-    const f136509 = (item, index) => {
+    const f136517 = (item) => map1.get(item);
+    const f136518 = (item, index) => {
       if (!set1.has(index)) {
         found1.push(item);
       }
     };
-    const f136510 = (item, index) => {
+    const f136519 = (item, index) => {
       const obj = { position: length - 1 - index };
       const merged = Object.assign(item);
       return obj;
@@ -885,22 +885,22 @@ let obj2 = {
       return items;
     }));
     let result = map.set(role.id, role);
-    const mapped = roles.map(f136508);
+    const mapped = roles.map(f136517);
     const found = mapped.filter(id(1388).isNotNullish);
     set = new Set(roles);
-    const item = map.forEach(f136509);
-    items = found.map(f136510);
+    const item = map.forEach(f136518);
+    items = found.map(f136519);
     map1 = new Map(items2.map((id) => {
       items = [id.id, id];
       return items;
     }));
     const result1 = map1.set(role.id, role);
-    const mapped1 = roles.map(f136508);
+    const mapped1 = roles.map(f136517);
     const found1 = mapped1.filter(id(1388).isNotNullish);
     const set1 = new Set(roles);
-    const item1 = map1.forEach(f136509);
+    const item1 = map1.forEach(f136518);
     const length = found1.length;
-    items2 = found1.map(f136510);
+    items2 = found1.map(f136519);
     id = undefined;
     if (user != null) {
       id = user.id;

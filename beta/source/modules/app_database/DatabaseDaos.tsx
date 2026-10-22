@@ -26,7 +26,7 @@ class DatabaseDaos extends Store {
       }
       let tmp5 = null;
       if (null != databaseResult) {
-        tmp5 = f88652(databaseResult);
+        tmp5 = f88661(databaseResult);
       }
       return tmp5;
     };
@@ -41,93 +41,93 @@ class DatabaseDaos extends Store {
       }
       return database(id);
     };
-    const f88635 = (database) => {
-      const guildEntityDao = new f88635(closure_1_2[1]).GuildEntityDao("guild_channels", f88635(closure_1_2[1]).TableId.KvCache, database);
+    const f88644 = (database) => {
+      const guildEntityDao = new f88644(closure_1_2[1]).GuildEntityDao("guild_channels", f88644(closure_1_2[1]).TableId.KvCache, database);
       return guildEntityDao;
     };
     applyArgumentsResult.channels = channels;
-    const f88636 = (database) => {
-      const guildDao = new f88636(closure_1_2[1]).GuildDao("guild_channels_temp", f88636(closure_1_2[1]).TableId.KvCache, database);
+    const f88645 = (database) => {
+      const guildDao = new f88645(closure_1_2[1]).GuildDao("guild_channels_temp", f88645(closure_1_2[1]).TableId.KvCache, database);
       return guildDao;
     };
     applyArgumentsResult.channelsTemp = channels;
-    const f88637 = (database) => {
-      const dao = new f88637(closure_1_2[1]).Dao("basic_channels", f88637(closure_1_2[1]).TableId.KvCache, database);
+    const f88646 = (database) => {
+      const dao = new f88646(closure_1_2[1]).Dao("basic_channels", f88646(closure_1_2[1]).TableId.KvCache, database);
       return dao;
     };
     applyArgumentsResult.basicChannels = channels;
-    const f88638 = (database) => {
-      const dao = new f88638(closure_1_2[1]).Dao("basic_channels_synced", f88638(closure_1_2[1]).TableId.KvCache, database);
+    const f88647 = (database) => {
+      const dao = new f88647(closure_1_2[1]).Dao("basic_channels_synced", f88647(closure_1_2[1]).TableId.KvCache, database);
       return dao;
     };
     applyArgumentsResult.syncedBasicChannels = channels;
-    const f88639 = (database) => {
-      const dao = new f88639(closure_1_2[1]).Dao("cache", f88639(closure_1_2[1]).TableId.KvCache, database);
+    const f88648 = (database) => {
+      const dao = new f88648(closure_1_2[1]).Dao("cache", f88648(closure_1_2[1]).TableId.KvCache, database);
       return dao;
     };
     applyArgumentsResult.cache = channels;
-    const f88640 = (database) => {
-      const dao = new f88640(closure_1_2[1]).Dao("force_resync_version", f88640(closure_1_2[1]).TableId.KvCache, database);
+    const f88649 = (database) => {
+      const dao = new f88649(closure_1_2[1]).Dao("force_resync_version", f88649(closure_1_2[1]).TableId.KvCache, database);
       return dao;
     };
     applyArgumentsResult.forceResyncVersion = channels;
-    const f88641 = (database) => {
-      const guildEntityDao = new f88641(closure_1_2[1]).GuildEntityDao("guild_emojis", f88641(closure_1_2[1]).TableId.KvCache, database);
+    const f88650 = (database) => {
+      const guildEntityDao = new f88650(closure_1_2[1]).GuildEntityDao("guild_emojis", f88650(closure_1_2[1]).TableId.KvCache, database);
       return guildEntityDao;
     };
     applyArgumentsResult.emojis = channels;
-    const f88642 = (database) => {
-      const entityDao = new f88642(closure_1_2[1]).EntityDao("guilds", f88642(closure_1_2[1]).TableId.KvCache, database);
+    const f88651 = (database) => {
+      const entityDao = new f88651(closure_1_2[1]).EntityDao("guilds", f88651(closure_1_2[1]).TableId.KvCache, database);
       return entityDao;
     };
     applyArgumentsResult.guilds = channels;
-    const f88643 = (database) => {
-      const entityDao = new f88643(closure_1_2[1]).EntityDao("guilds_requiring_deleted_ids_sync", f88643(closure_1_2[1]).TableId.KvCache, database);
+    const f88652 = (database) => {
+      const entityDao = new f88652(closure_1_2[1]).EntityDao("guilds_requiring_deleted_ids_sync", f88652(closure_1_2[1]).TableId.KvCache, database);
       return entityDao;
     };
     applyArgumentsResult.guildsRequiringDeletedIdsSync = channels;
-    const f88644 = (database) => {
-      const entityDao = new f88644(closure_1_2[1]).EntityDao("guilds_requiring_channel_sync", f88644(closure_1_2[1]).TableId.KvCache, database);
+    const f88653 = (database) => {
+      const entityDao = new f88653(closure_1_2[1]).EntityDao("guilds_requiring_channel_sync", f88653(closure_1_2[1]).TableId.KvCache, database);
       return entityDao;
     };
     applyArgumentsResult.guildsRequiringChannelSync = channels;
-    const f88645 = (database) => {
-      const messageDao = new f88645(closure_1_2[1]).MessageDao("messages", f88645(closure_1_2[1]).TableId.Messages, database);
+    const f88654 = (database) => {
+      const messageDao = new f88654(closure_1_2[1]).MessageDao("messages", f88654(closure_1_2[1]).TableId.Messages, database);
       return messageDao;
     };
     applyArgumentsResult.messages = channels;
-    const f88646 = (database) => {
-      const guildEntityDao = new f88646(closure_1_2[1]).GuildEntityDao("guild_stickers", f88646(closure_1_2[1]).TableId.KvCache, database);
+    const f88655 = (database) => {
+      const guildEntityDao = new f88655(closure_1_2[1]).GuildEntityDao("guild_stickers", f88655(closure_1_2[1]).TableId.KvCache, database);
       return guildEntityDao;
     };
     applyArgumentsResult.stickers = channels;
-    const f88647 = (database) => {
-      const entityDao = new f88647(closure_1_2[1]).EntityDao("guild_versions", f88647(closure_1_2[1]).TableId.KvCache, database);
+    const f88656 = (database) => {
+      const entityDao = new f88656(closure_1_2[1]).EntityDao("guild_versions", f88656(closure_1_2[1]).TableId.KvCache, database);
       return entityDao;
     };
     applyArgumentsResult.guildVersions = channels;
-    const f88648 = (database) => {
-      const entityDao = new f88648(closure_1_2[1]).EntityDao("non_guild_versions", f88648(closure_1_2[1]).TableId.KvCache, database);
+    const f88657 = (database) => {
+      const entityDao = new f88657(closure_1_2[1]).EntityDao("non_guild_versions", f88657(closure_1_2[1]).TableId.KvCache, database);
       return entityDao;
     };
     applyArgumentsResult.nonGuildVersions = channels;
-    const f88649 = (database) => {
-      const entityDao = new f88649(closure_1_2[1]).EntityDao("user_settings", f88649(closure_1_2[1]).TableId.KvCache, database);
+    const f88658 = (database) => {
+      const entityDao = new f88658(closure_1_2[1]).EntityDao("user_settings", f88658(closure_1_2[1]).TableId.KvCache, database);
       return entityDao;
     };
     applyArgumentsResult.userSettings = channels;
-    const f88650 = (database) => {
-      const dao = new f88650(closure_1_2[1]).Dao("read_states", f88650(closure_1_2[1]).TableId.KvCache, database);
+    const f88659 = (database) => {
+      const dao = new f88659(closure_1_2[1]).Dao("read_states", f88659(closure_1_2[1]).TableId.KvCache, database);
       return dao;
     };
     applyArgumentsResult.readStates = channels;
-    const f88651 = (database) => {
-      const dao = new f88651(closure_1_2[1]).Dao("user_guild_settings", f88651(closure_1_2[1]).TableId.KvCache, database);
+    const f88660 = (database) => {
+      const dao = new f88660(closure_1_2[1]).Dao("user_guild_settings", f88660(closure_1_2[1]).TableId.KvCache, database);
       return dao;
     };
     applyArgumentsResult.userGuildSettings = channels;
-    const f88652 = (database) => {
-      const entityDao = new f88652(closure_1_2[1]).EntityDao("user_search_items", f88652(closure_1_2[1]).TableId.KvCache, database);
+    const f88661 = (database) => {
+      const entityDao = new f88661(closure_1_2[1]).EntityDao("user_search_items", f88661(closure_1_2[1]).TableId.KvCache, database);
       return entityDao;
     };
     applyArgumentsResult.userSearchItems = channels;

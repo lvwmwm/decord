@@ -1,7 +1,7 @@
 // Module ID: 18094
 // Function ID: 18095
 // Name: GiftingBadgesCoachmarkActionSheet
-// Dependencies: [19, 17, 8590, 2065, 21, 5191, 587, 558, 576, 10406, 5155, 5073, 10409, 1128, 2685, 5187, 5479, 7118, 10350, 7155, 18095, 5128, 12673, 8582, 504, 2]
+// Dependencies: [19, 17, 8590, 2065, 21, 5191, 587, 558, 576, 10406, 5155, 5073, 10409, 1128, 2685, 5187, 5479, 7118, 10350, 7155, 18095, 5128, 12668, 8582, 504, 2]
 
 // Module 18094 (GiftingBadgesCoachmarkActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -706,7 +706,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewBad
   Button = markAsDismissed(5479).Button;
   intl3 = markAsDismissed(1128).intl;
   obj11 = { size: "sm", color: nativeDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-  GiftIcon = markAsDismissed(12673).GiftIcon;
+  GiftIcon = markAsDismissed(12668).GiftIcon;
   items2[2] = closure_7(View, obj9);
   return closure_7(BottomSheet, obj);
 });

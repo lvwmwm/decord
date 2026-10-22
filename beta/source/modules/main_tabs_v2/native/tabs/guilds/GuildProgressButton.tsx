@@ -1,16 +1,16 @@
 // Module ID: 17325
 // Function ID: 17326
 // Name: GuildProgressButton
-// Dependencies: [19, 21, 12038, 587, 10839, 558, 576, 13162, 13165, 8857, 17326, 1128, 13283, 2]
+// Dependencies: [19, 21, 12033, 587, 10839, 558, 576, 13157, 13160, 8857, 17326, 1128, 13278, 2]
 // Exports: getScaledGuildProgressButtonHeight
 
 // Module 17325 (GuildProgressButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10839 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12038 */;
-import GuildProgressUtils from "GuildProgressUtils" /* 13162 */;
-import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 13165 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12033 */;
+import GuildProgressUtils from "GuildProgressUtils" /* 13157 */;
+import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 13160 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProgr
   let obj = guild(576);
   const cResult = obj.c(15);
   guild = guild.guild;
-  let obj2 = guild(13162);
+  let obj2 = guild(13157);
   const guildProgressStep = obj2.useGuildProgressStep(guild);
   ({ percentComplete, subtitle, completed } = guildProgressStep);
   if (cResult[0] === completed) {
@@ -58,7 +58,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProgr
         tmp12 = cResult[8];
       }
       if (cResult[9] !== percentComplete) {
-        const tmp20 = jsx(completed(13283), { percent: percentComplete });
+        const tmp20 = jsx(completed(13278), { percent: percentComplete });
         cResult[9] = percentComplete;
         cResult[10] = tmp20;
         tmp17 = tmp20;
@@ -113,7 +113,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProgr
   let percentComplete;
   let subtitle;
   guild = guild.guild;
-  let obj = guild(13162);
+  let obj = guild(13157);
   const guildProgressStep = obj.useGuildProgressStep(guild);
   const completed = guildProgressStep.completed;
   const items = [completed, guild.id];

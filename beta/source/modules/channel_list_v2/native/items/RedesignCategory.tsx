@@ -1,7 +1,7 @@
 // Module ID: 17236
 // Function ID: 17237
 // Name: RedesignCategory
-// Dependencies: [19, 17, 7520, 7084, 6222, 11900, 21, 5191, 1384, 587, 5187, 10931, 6462, 10859, 558, 576, 11128, 10595, 504, 5521, 13634, 17237, 17238, 7080, 1128, 7168, 11129, 6573, 2]
+// Dependencies: [19, 17, 7520, 7084, 6222, 11895, 21, 5191, 1384, 587, 5187, 10931, 6462, 10859, 558, 576, 11128, 10595, 504, 5521, 13629, 17237, 17238, 7080, 1128, 7168, 11129, 6573, 2]
 
 // Module 17236 (RedesignCategory)
 import react_native from "react-native" /* 17 */;
@@ -14,14 +14,14 @@ import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7080 */
 import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7168 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10595 */;
 import CategoryCollapseActionCreators from "CategoryCollapseActionCreators" /* 11128 */;
-import useFavoritesGuildCategoryAddActionDefault from "useFavoritesGuildCategoryAddAction" /* 13634 */;
+import useFavoritesGuildCategoryAddActionDefault from "useFavoritesGuildCategoryAddAction" /* 13629 */;
 import useFavoritesGuildCategoryFullNoticeDefault from "useFavoritesGuildCategoryFullNotice" /* 17237 */;
 import useFavoritesGuildCategoryLongPressDefault from "useFavoritesGuildCategoryLongPress" /* 17238 */;
 import react from "react" /* 19 */;
 import RecentlyActiveCollapseStore from "RecentlyActiveCollapseStore" /* 7520 */;
 import CategoryCollapseStore from "CategoryCollapseStore" /* 7084 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6222 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11900 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11895 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

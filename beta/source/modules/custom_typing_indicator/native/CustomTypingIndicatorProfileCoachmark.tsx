@@ -1,7 +1,7 @@
 // Module ID: 17935
 // Function ID: 17936
 // Name: CustomTypingIndicatorProfileCoachmark
-// Dependencies: [19, 17, 1087, 2065, 21, 5191, 587, 558, 576, 1128, 3885, 7130, 7155, 7370, 9742, 12840, 12841, 12839, 1400, 2]
+// Dependencies: [19, 17, 1087, 2065, 21, 5191, 587, 558, 576, 1128, 3885, 7130, 7155, 7370, 9742, 12835, 12836, 12834, 1400, 2]
 
 // Module 17935 (CustomTypingIndicatorProfileCoachmark)
 import react_native from "react-native" /* 17 */;
@@ -13,9 +13,9 @@ import intl4 from "intl" /* 1128 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
 import _modDef3885 from "module_3885" /* 3885 */;
 import openUserSettings from "openUserSettings" /* 7370 */;
-import CustomTypingIndicatorDynamicAssetDefault from "CustomTypingIndicatorDynamicAsset" /* 12839 */;
-import _modDef12840 from "module_12840" /* 12840 */;
-import _modDef12841 from "module_12841" /* 12841 */;
+import CustomTypingIndicatorDynamicAssetDefault from "CustomTypingIndicatorDynamicAsset" /* 12834 */;
+import _modDef12835 from "module_12835" /* 12835 */;
+import _modDef12836 from "module_12836" /* 12836 */;
 import react_mod from "react" /* 19 */;
 import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -208,7 +208,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Coachma
   const cResult = obj.c(6);
   const tmp4 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [_modDef12840, _modDef12841, _modDef12840];
+    const items = [_modDef12835, _modDef12836, _modDef12835];
     cResult[0] = items;
     first = items;
   } else {
@@ -240,7 +240,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Coachma
   const tmp = closure_8();
   ({ name: "Locke", suggestion: user.TypingSuggestion.YAPPING, emojiSize: 16, spacing: 8, emojiGap: 4, textVariant: "text-xs/medium", textColor: "text-subtle", textStyle: tmp.typingText, emojiSource: items });
   CustomTypingIndicatorDynamicAssetDefault;
-  items = [_modDef12840, _modDef12841, _modDef12840];
+  items = [_modDef12835, _modDef12836, _modDef12835];
   return <View style={tmp.coachmarkImageContainer}>{null}</View>;
 });
 const result = size.fileFinishedImporting("modules/custom_typing_indicator/native/CustomTypingIndicatorProfileCoachmark.tsx");

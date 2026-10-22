@@ -1,7 +1,7 @@
 // Module ID: 14277
 // Function ID: 14278
 // Name: GiftCodeEmbed
-// Dependencies: [17, 502, 10815, 1392, 6310, 1087, 1394, 14278, 14279, 14280, 14281, 14282, 14283, 14284, 14285, 14286, 14287, 14288, 13666, 5057, 8156, 5065, 5031, 1128, 12540, 12541, 587, 4797, 8017, 8158, 14289, 14290, 14291, 14292, 14293, 7207, 4864, 2]
+// Dependencies: [17, 502, 10815, 1392, 6310, 1087, 1394, 14278, 14279, 14280, 14281, 14282, 14283, 14284, 14285, 14286, 14287, 14288, 13661, 5057, 8156, 5065, 5031, 1128, 12535, 12536, 587, 4797, 8017, 8158, 14289, 14290, 14291, 14292, 14293, 7207, 4864, 2]
 // Exports: createGiftCodeEmbed
 
 // Module 14277 (GiftCodeEmbed)
@@ -12,7 +12,7 @@ import shared from "shared" /* 5065 */;
 import react_native from "react-native" /* 8017 */;
 import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8156 */;
 import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8158 */;
-import _modDef13666 from "module_13666" /* 13666 */;
+import _modDef13661 from "module_13661" /* 13661 */;
 import AssetRegistryDefault from "AssetRegistry" /* 14278 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 14279 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 14280 */;
@@ -69,7 +69,7 @@ function getGiftStyleUrl(giftStyle) {
   } else if (unpackModuleId.SEASONAL_COFFEE === giftStyle) {
     return AssetRegistryDefault11;
   } else if (unpackModuleId.NITROWEEN_STANDARD === giftStyle) {
-    const obj = { uri: _modDef13666 };
+    const obj = { uri: _modDef13661 };
     return obj;
   } else {
     return AssetRegistryDefault4;
@@ -143,10 +143,10 @@ export const createGiftCodeEmbed = function createGiftCodeEmbed(message, forcedT
               titleColor = titleColor.resolveAssetSource;
               const obj19 = shared;
               if (obj19.isThemeDark(forcedTheme)) {
-                tmp117Result = tmp117(12540);
+                tmp117Result = tmp117(12535);
                 tmp119 = tmp117;
               } else {
-                tmp117Result = tmp117(12541);
+                tmp117Result = tmp117(12536);
                 tmp119 = tmp117;
               }
               const obj2 = { thumbnailUrl: titleColor(tmp117Result).uri, headerText: str8.toUpperCase(), titleText: intl14.string(intl17.t.SdKbX2), titleColor: tmp121, headerColor: dependencyMap, thumbnailBackgroundColor, subtitle: stringResult, subtitleColor };

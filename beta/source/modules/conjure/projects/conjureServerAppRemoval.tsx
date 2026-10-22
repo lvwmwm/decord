@@ -1,10 +1,10 @@
-// Module ID: 12584
-// Function ID: 12585
+// Module ID: 12579
+// Function ID: 12580
 // Name: conjureServerAppRemoval
 // Dependencies: [5, 19, 5540, 4843, 2128, 2090, 4845, 4855, 1392, 1087, 11006, 5521, 558, 576, 504, 12, 6377, 7222, 6357, 2]
 // Exports: conjureDeleteAppChannelItems, conjureKickAppItems, loadConjureServerApp
 
-// Module 12584 (conjureServerAppRemoval)
+// Module 12579 (conjureServerAppRemoval)
 import Constants from "Constants" /* 1087 */;
 import GuildChannelStore2 from "GuildChannelStore" /* 4843 */;
 import ApplicationActionCreators from "ApplicationActionCreators" /* 6357 */;
@@ -26,11 +26,11 @@ const require = globalThis.__r;
 const GuildChannelStore = GuildChannelStore2;
 let _require, c1, c2, c4, set, user;
 
-const f113743 = (id) => {
+const f113715 = (id) => {
   obj = { key: "channel:" + id.id, kind: "channel", label: "#" + id.name };
   return obj;
 };
-const f113744 = () => {
+const f113716 = () => {
 
 };
 function conjureApplicationIdForBot(userId) {
@@ -228,7 +228,7 @@ function fetchMissingApplication(item10010) {
   if (!tmp) {
     const obj2 = ApplicationActionCreators;
     const application = obj2.fetchApplication(item10010);
-    application.catch(f113744);
+    application.catch(f113716);
   }
 }
 function loadMissingApplication() {
@@ -354,7 +354,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSe
           if (!tmp2) {
             const obj2 = ApplicationActionCreators;
             const application = obj2.fetchApplication(tmp);
-            application.catch(f113744);
+            application.catch(f113716);
           }
         }
       }
@@ -373,7 +373,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSe
           if (!tmp2) {
             const obj2 = ApplicationActionCreators;
             const application = obj2.fetchApplication(tmp);
-            application.catch(f113744);
+            application.catch(f113716);
           }
         }
       }
@@ -390,7 +390,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSe
           if (!tmp2) {
             const obj2 = ApplicationActionCreators;
             const application = obj2.fetchApplication(tmp);
-            application.catch(f113744);
+            application.catch(f113716);
           }
         }
       }
@@ -406,7 +406,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSe
             if (!tmp2) {
               const obj2 = ApplicationActionCreators;
               const application = obj2.fetchApplication(tmp);
-              application.catch(f113744);
+              application.catch(f113716);
             }
           }
         }
@@ -421,7 +421,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSe
             if (!tmp2) {
               const obj2 = ApplicationActionCreators;
               const application = obj2.fetchApplication(tmp);
-              application.catch(f113744);
+              application.catch(f113716);
             }
           }
         }
@@ -435,7 +435,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSe
             if (!tmp2) {
               const obj2 = ApplicationActionCreators;
               const application = obj2.fetchApplication(tmp);
-              application.catch(f113744);
+              application.catch(f113716);
             }
           }
         }
@@ -498,7 +498,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSe
       if (!tmp2) {
         const obj2 = ApplicationActionCreators;
         const application = obj2.fetchApplication(tmp);
-        application.catch(f113744);
+        application.catch(f113716);
       }
     }
   }, items2);
@@ -863,7 +863,7 @@ export const loadConjureServerApp = function loadConjureServerApp() {
 };
 export const conjureKickAppItems = function conjureKickAppItems(rest) {
   const channels = rest.channels;
-  const items = [...channels.map(f113743)];
+  const items = [...channels.map(f113715)];
   if (rest.targetIsPreview) {
     obj = { key: "main-app", kind: "app", label: rest.appName };
     const obj2 = { key: "main-app", kind: "app", label: rest.appName };
@@ -877,7 +877,7 @@ export const conjureDeleteAppChannelItems = function conjureDeleteAppChannelItem
   let closure_0 = channelId;
   const channels = rest.channels;
   const found = channels.filter((id) => id.id !== channelId);
-  const items = [...found.map(f113743), obj, obj2];
+  const items = [...found.map(f113715), obj, obj2];
   obj = { key: "main-app", kind: "app", label: rest.appName };
   return items;
 };

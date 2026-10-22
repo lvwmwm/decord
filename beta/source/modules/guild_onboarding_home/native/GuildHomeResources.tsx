@@ -1,7 +1,7 @@
 // Module ID: 17715
 // Function ID: 17716
 // Name: GuildHomeResources
-// Dependencies: [19, 17, 2068, 4843, 5532, 4845, 1087, 21, 5191, 587, 558, 576, 504, 8752, 12872, 17716, 7445, 12934, 1417, 5187, 5179, 5128, 6462, 17709, 1114, 1128, 17717, 5479, 2]
+// Dependencies: [19, 17, 2068, 4843, 5532, 4845, 1087, 21, 5191, 587, 558, 576, 504, 8752, 12867, 17716, 7445, 12929, 1417, 5187, 5179, 5128, 6462, 17709, 1114, 1128, 17717, 5479, 2]
 
 // Module 17715 (GuildHomeResources)
 import react_native from "react-native" /* 17 */;
@@ -9,7 +9,7 @@ import nativeDefault from "native" /* 587 */;
 import router_utils from "router_utils" /* 1114 */;
 import FastImageDefault from "FastImage" /* 5128 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 7445 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 12934 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 12929 */;
 import useResourceChannelsDefault from "useResourceChannels" /* 17709 */;
 import AssetRegistryDefault from "AssetRegistry" /* 17717 */;
 import react from "react" /* 19 */;
@@ -189,7 +189,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Resour
         return MessageStore.getMessages(channelId);
       }
     }
-    const tmpResult10 = tmp(12872);
+    const tmpResult10 = tmp(12867);
     const shouldObscure = tmpResult10.useSharedMediaProps(obj2).shouldObscure;
     stateFromStores(17716)(tmp14);
     if (cResult[14] === stateFromStores) {
@@ -295,7 +295,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Resour
   if (length > 0) {
     first = forumPostMediaProperties[0];
   }
-  const tmp2Result = channelId(12872);
+  const tmp2Result = channelId(12867);
   let flag = tmp2Result.useSharedMediaProps({ channel: stateFromStores, media: first }).shouldObscure;
   const tmp11 = stateFromStores(17716)(firstResult);
   const tmp12 = null != stateFromStores && null == stateFromStores2.first() && !stateFromStores2.loadingMore && !stateFromStores2.ready && !stateFromStores2.hasFetched;
@@ -365,7 +365,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Resour
             tmp19Result6 = null;
             if (null != first) {
               const obj17 = { channel: stateFromStores, media: first, isEmbed: firstMediaIsEmbed, embedLeftBorderColor: getEmbedColor(firstResult, flag), firstMessageId: id, containerStyle: tmp.thumbnail };
-              const ForumPostMediaThumbnail = tmp2(12872).ForumPostMediaThumbnail;
+              const ForumPostMediaThumbnail = tmp2(12867).ForumPostMediaThumbnail;
               getEmbedColor = tmp2(8752).getEmbedColor;
               channelId(8752);
               if (flag == null) {

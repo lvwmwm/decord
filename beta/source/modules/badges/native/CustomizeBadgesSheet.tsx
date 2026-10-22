@@ -1,7 +1,7 @@
 // Module ID: 15643
 // Function ID: 15644
 // Name: CustomizeBadgesSheet
-// Dependencies: [19, 17, 8558, 1392, 8590, 1087, 7119, 1394, 21, 5191, 587, 5156, 9664, 15644, 558, 576, 1128, 6929, 6927, 9662, 5145, 10896, 5187, 6459, 10905, 8817, 6923, 4945, 5192, 5195, 14172, 9663, 6612, 4923, 10898, 1633, 504, 4864, 7130, 7155, 7120, 9693, 9694, 8589, 1267, 8595, 4904, 1499, 11911, 15645, 6433, 7118, 7117, 6584, 2]
+// Dependencies: [19, 17, 8558, 1392, 8590, 1087, 7119, 1394, 21, 5191, 587, 5156, 9664, 15644, 558, 576, 1128, 6929, 6927, 9662, 5145, 10896, 5187, 6459, 10905, 8817, 6923, 4945, 5192, 5195, 14172, 9663, 6612, 4923, 10898, 1633, 504, 4864, 7130, 7155, 7120, 9693, 9694, 8589, 1267, 8595, 4904, 1499, 11906, 15645, 6433, 7118, 7117, 6584, 2]
 // Exports: default
 
 // Module 15643 (CustomizeBadgesSheet)
@@ -31,7 +31,7 @@ import openPremiumModalDefault from "openPremiumModal" /* 9693 */;
 import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9694 */;
 import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 10896 */;
 import BadgeUtils from "BadgeUtils" /* 10905 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11911 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11906 */;
 import PendingBadgeSettings from "PendingBadgeSettings" /* 14172 */;
 import BadgeGrid from "BadgeGrid" /* 15644 */;
 import react from "react" /* 19 */;

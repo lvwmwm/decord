@@ -1,7 +1,7 @@
 // Module ID: 17791
 // Function ID: 17792
 // Name: guild_channels/VoiceOrStageSummaryRow
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 11901, 5187, 1202, 17792, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 11896, 5187, 1202, 17792, 2]
 
 // Module 17791 (guild_channels/VoiceOrStageSummaryRow)
 import react_native from "react-native" /* 17 */;
@@ -54,7 +54,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     num = max;
   }
   if (cResult[0] !== layout) {
-    const tmpResult = tmp(11901);
+    const tmpResult = tmp(11896);
     const layoutStyles = tmpResult.getLayoutStyles(layout);
     cResult[0] = layout;
     cResult[1] = layoutStyles;

@@ -1,18 +1,18 @@
-// Module ID: 12176
-// Function ID: 12177
+// Module ID: 12171
+// Function ID: 12172
 // Name: ConjureMessageAuthor
-// Dependencies: [19, 17, 21, 5191, 587, 12162, 558, 576, 12177, 5187, 6462, 1128, 12173, 5057, 12178, 3883, 1202, 8506, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 12157, 558, 576, 12172, 5187, 6462, 1128, 12168, 5057, 12173, 3883, 1202, 8506, 2]
 
-// Module 12176 (ConjureMessageAuthor)
+// Module 12171 (ConjureMessageAuthor)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef3883 from "module_3883" /* 3883 */;
 import Text_Text from "Text/Text" /* 5187 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12162 */;
-import ConjureMessageTime from "ConjureMessageTime" /* 12177 */;
-import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 12178 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12157 */;
+import ConjureMessageTime from "ConjureMessageTime" /* 12172 */;
+import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 12173 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
@@ -172,7 +172,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUserH
   let obj = messageAuthorUser(576);
   const cResult = obj.c(6);
   ({ at, userId } = arg0);
-  const obj2 = messageAuthorUser(12173);
+  const obj2 = messageAuthorUser(12168);
   messageAuthorUser = obj2.useMessageAuthorUser(userId);
   const obj3 = messageAuthorUser(5057);
   const name = obj3.useName(messageAuthorUser);
@@ -217,7 +217,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUserH
   let userId;
   let messageAuthorUser;
   ({ userId, at } = arg0);
-  let obj = messageAuthorUser(12173);
+  let obj = messageAuthorUser(12168);
   messageAuthorUser = obj.useMessageAuthorUser(userId);
   const obj2 = messageAuthorUser(5057);
   const name = obj2.useName(messageAuthorUser);
@@ -277,7 +277,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUserA
   if (undefined === size) {
     size = tmp(1202).AvatarSizes.NORMAL;
   }
-  const tmpResult = tmp(12173);
+  const tmpResult = tmp(12168);
   messageAuthorUser = tmpResult.useMessageAuthorUser(userId);
   if (cResult[0] !== messageAuthorUser) {
     const fn = function t() {
@@ -323,7 +323,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUserA
       cResult[8] = tmp15;
       tmp13 = tmp15;
     }
-    const obj3 = { size, user: messageAuthorUser, guildId: "Array" };
+    const obj3 = { size, user: messageAuthorUser, guildId: "r" };
     const tmp12 = closure_5(tmp(1202).Avatar, obj3);
     cResult[3] = size;
     cResult[4] = messageAuthorUser;
@@ -342,7 +342,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUserA
     NORMAL = messageAuthorUser(1202).AvatarSizes.NORMAL;
   }
   messageAuthorUser = undefined;
-  let obj = messageAuthorUser(12173);
+  let obj = messageAuthorUser(12168);
   messageAuthorUser = obj.useMessageAuthorUser(userId);
   const items = [messageAuthorUser];
   const callback = react.useCallback(() => {
@@ -356,7 +356,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUserA
     const obj2 = { onPress: callback, onLongPress: callback, accessibilityRole: "button", accessibilityLabel: intl.string(messageAuthorUser(1128).t.iXAna6), children: closure_5(messageAuthorUser(1202).Avatar, obj3) };
     const PressableOpacity = tmp3(6462).PressableOpacity;
     intl = tmp3(1128).intl;
-    obj3 = { size: NORMAL, user: messageAuthorUser, guildId: "Array" };
+    obj3 = { size: NORMAL, user: messageAuthorUser, guildId: "r" };
     tmp7 = closure_5(PressableOpacity, obj2);
   }
   return tmp7;

@@ -1,7 +1,7 @@
 // Module ID: 15652
 // Function ID: 15653
 // Name: UserProfileEffectEditButton
-// Dependencies: [19, 17, 7181, 9293, 1098, 21, 5191, 587, 8564, 10831, 5155, 15653, 2002, 1128, 15640, 6433, 5128, 13655, 9296, 1202, 14260, 2]
+// Dependencies: [19, 17, 7181, 9293, 1098, 21, 5191, 587, 8564, 10831, 5155, 15653, 2002, 1128, 15640, 6433, 5128, 13650, 9296, 1202, 14260, 2]
 // Exports: default
 
 // Module 15652 (UserProfileEffectEditButton)

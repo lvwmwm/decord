@@ -1,9 +1,9 @@
-// Module ID: 13795
-// Function ID: 13796
+// Module ID: 13790
+// Function ID: 13791
 // Name: ChatLoadingIndicator
-// Dependencies: [32, 19, 17, 5181, 6013, 5532, 2119, 1392, 2001, 1087, 21, 5191, 587, 5400, 5498, 2002, 558, 576, 504, 5187, 13796, 4945, 5192, 1128, 6462, 2]
+// Dependencies: [32, 19, 17, 5181, 6013, 5532, 2119, 1392, 2001, 1087, 21, 5191, 587, 5400, 5498, 2002, 558, 576, 504, 5187, 13791, 4945, 5192, 1128, 6462, 2]
 
-// Module 13795 (ChatLoadingIndicator)
+// Module 13790 (ChatLoadingIndicator)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

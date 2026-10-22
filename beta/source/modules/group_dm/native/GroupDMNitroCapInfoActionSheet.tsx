@@ -1,9 +1,9 @@
-// Module ID: 12040
-// Function ID: 12041
+// Module ID: 12035
+// Function ID: 12036
 // Name: GroupDMNitroCapInfoActionSheet
 // Dependencies: [19, 17, 11168, 21, 5191, 587, 558, 576, 5155, 1128, 5187, 5479, 7118, 2]
 
-// Module 12040 (GroupDMNitroCapInfoActionSheet)
+// Module 12035 (GroupDMNitroCapInfoActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

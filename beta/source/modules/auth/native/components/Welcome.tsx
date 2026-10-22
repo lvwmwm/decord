@@ -1,7 +1,7 @@
 // Module ID: 17067
 // Function ID: 17068
 // Name: Welcome
-// Dependencies: [19, 17, 17068, 5112, 7446, 13079, 1406, 5173, 8960, 1087, 7306, 7689, 21, 5191, 587, 558, 576, 13429, 1128, 38, 1202, 5057, 5187, 5128, 14308, 6904, 6940, 14871, 1505, 1633, 504, 7463, 1267, 510, 5496, 6186, 6447, 17069, 17064, 1506, 5479, 6214, 6536, 12642, 4922, 2]
+// Dependencies: [19, 17, 17068, 5112, 7446, 13074, 1406, 5173, 8960, 1087, 7306, 7689, 21, 5191, 587, 558, 576, 13424, 1128, 38, 1202, 5057, 5187, 5128, 14308, 6904, 6940, 14871, 1505, 1633, 504, 7463, 1267, 510, 5496, 6186, 6447, 17069, 17064, 1506, 5479, 6214, 6536, 12637, 4922, 2]
 
 // Module 17067 (Welcome)
 import _modDef38 from "module_38" /* 38 */;
@@ -19,7 +19,7 @@ import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform
 import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7306 */;
 import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7463 */;
 import Constants2 from "Constants" /* 7689 */;
-import GuildInviteIconDefault from "GuildInviteIcon" /* 13429 */;
+import GuildInviteIconDefault from "GuildInviteIcon" /* 13424 */;
 import AssetRegistryDefault from "AssetRegistry" /* 14308 */;
 import AssetRegistry from "AssetRegistry" /* 14871 */;
 import RegistrationStepsUtils from "RegistrationStepsUtils" /* 17064 */;
@@ -28,7 +28,7 @@ import react_native from "react-native" /* 17 */;
 import AgeGateStore from "AgeGateStore" /* 17068 */;
 import ExperimentStore from "ExperimentStore" /* 5112 */;
 import GuildTemplateStore from "GuildTemplateStore" /* 7446 */;
-import MultiAccountStore from "MultiAccountStore" /* 13079 */;
+import MultiAccountStore from "MultiAccountStore" /* 13074 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import InviteStore from "InviteStore" /* 5173 */;
 import DisplayedInviteStore from "DisplayedInviteStore" /* 8960 */;
@@ -135,7 +135,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
         tmp21 = cResult[4];
       }
       if (cResult[5] !== tmp21) {
-        const obj4 = { user: tmp21, guildId: "e" };
+        const obj4 = { user: tmp21, guildId: "a" };
         const tmp28 = closure_20(native.Avatar, obj4);
         cResult[5] = tmp21;
         cResult[6] = tmp28;
@@ -179,7 +179,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
         tmp6 = cResult[11];
       }
       if (cResult[12] !== tmp6) {
-        const obj5 = { user: tmp6, guildId: "e" };
+        const obj5 = { user: tmp6, guildId: "a" };
         const tmp13 = closure_20(native.Avatar, obj5);
         cResult[12] = tmp6;
         cResult[13] = tmp13;
@@ -303,7 +303,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
       _modDef38(null != inviter, "Null inviter");
       const self = this;
       const self2 = this;
-      const obj = { user: tmp10, guildId: "e" };
+      const obj = { user: tmp10, guildId: "a" };
       const Avatar = native.Avatar;
       tmp10 = new UserRecord(inviter);
       tmp12 = closure_20(Avatar, obj);
@@ -318,7 +318,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
     } else {
       const self3 = this;
       const self4 = this;
-      const obj4 = { user: tmp29, guildId: "e" };
+      const obj4 = { user: tmp29, guildId: "a" };
       const Avatar2 = native.Avatar;
       tmp29 = new UserRecord(inviter);
       const tmp31 = closure_20(Avatar2, obj4);

@@ -1,7 +1,7 @@
 // Module ID: 16634
 // Function ID: 16635
 // Name: DiskUsageManager
-// Dependencies: [5, 1392, 1087, 3, 1369, 510, 10001, 1384, 16635, 1267, 7463, 7085, 13578, 13579, 2]
+// Dependencies: [5, 1392, 1087, 3, 1369, 510, 10001, 1384, 16635, 1267, 7463, 7085, 13573, 13574, 2]
 
 // Module 16634 (DiskUsageManager)
 import LoggerDefault from "Logger" /* 3 */;

@@ -22,7 +22,7 @@ class ICYMIManager extends LifecycleManager {
   }
   handlePostConnectionOpen() {
     let timeout;
-    const f122225 = () => {
+    const f122234 = () => {
       let timeout;
       const obj = ICYMIActionCreatorsDefault;
       const dehydrated = obj.fetchDehydrated({ isInitialLoad: false });
@@ -32,7 +32,7 @@ class ICYMIManager extends LifecycleManager {
         const _clearTimeout = clearTimeout;
         clearTimeout(timeout);
       }
-      timeout = setTimeout(f122225, 15 * tmp(tmp2[1]).Millis.MINUTE);
+      timeout = setTimeout(f122234, 15 * tmp(tmp2[1]).Millis.MINUTE);
     };
     let tmp = dependencyMap;
     let obj = ICYMIExperiment;
@@ -46,7 +46,7 @@ class ICYMIManager extends LifecycleManager {
         clearTimeout(timeout);
       }
       const _setTimeout = setTimeout;
-      timeout = setTimeout(f122225, 15 * tmp2(1104).Millis.MINUTE);
+      timeout = setTimeout(f122234, 15 * tmp2(1104).Millis.MINUTE);
       const tmp2Result = tmp2(8745);
       const guildChannelScores = tmp2Result.getGuildChannelScores();
       const tmp2Result2 = tmp2(8745);

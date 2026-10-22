@@ -1,9 +1,9 @@
-// Module ID: 12269
-// Function ID: 12270
+// Module ID: 12264
+// Function ID: 12265
 // Name: useConjurePlanBotPreviewItems
-// Dependencies: [19, 5540, 2072, 1406, 1392, 6293, 1087, 558, 576, 504, 8579, 5534, 10111, 5542, 12270, 1128, 3883, 5057, 2]
+// Dependencies: [19, 5540, 2072, 1406, 1392, 6293, 1087, 558, 576, 504, 8579, 5534, 10111, 5542, 12265, 1128, 3883, 5057, 2]
 
-// Module 12269 (useConjurePlanBotPreviewItems)
+// Module 12264 (useConjurePlanBotPreviewItems)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import ChannelRecord from "ChannelRecord" /* 2072 */;
@@ -12,7 +12,7 @@ import MessageRecordUtils from "MessageRecordUtils" /* 5534 */;
 import InteractionTypes from "InteractionTypes" /* 5542 */;
 import UserActionCreators from "UserActionCreators" /* 8579 */;
 import createMessage from "createMessage" /* 10111 */;
-import conjurePlanBot from "conjurePlanBot" /* 12270 */;
+import conjurePlanBot from "conjurePlanBot" /* 12265 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5540 */;
 import UserRecord from "UserRecord" /* 1406 */;

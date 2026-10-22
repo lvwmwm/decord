@@ -1,56 +1,170 @@
 // Module ID: 12428
 // Function ID: 12429
-// Dependencies: [12391, 12414, 12386, 12401]
-// Exports: setMeasurement, timedEventsToMeasurements
+// Dependencies: [32, 12381, 12380]
+// Exports: dsnToString, makeDsn
 
 // Module 12428
-import _mod12391 from "module_12391" /* 12391 */;
-import SEMANTIC_ATTRIBUTE_CACHE_HIT from "SEMANTIC_ATTRIBUTE_CACHE_HIT" /* 12401 */;
-import _mod12414 from "module_12414" /* 12414 */;
+import _mod12381 from "module_12381" /* 12381 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-
-export const setMeasurement = function setMeasurement(arg0, arg1, arg2) {
-  let activeSpan = arg3;
-  if (arg3 === undefined) {
-    const obj = _mod12391;
-    activeSpan = obj.getActiveSpan();
-  }
-  let rootSpan = activeSpan;
-  if (rootSpan) {
-    const obj3 = _mod12391;
-    rootSpan = obj3.getRootSpan(activeSpan);
-  }
-  if (rootSpan) {
-    if (_mod12414.DEBUG_BUILD) {
-      const logger = tmp9(12386).logger;
-      const _HermesInternal = HermesInternal;
-      logger.log("[Measurement] Setting measurement on root span: " + arg0 + " = " + arg1 + " " + arg2);
+function dsnFromString(arg0) {
+  let closure_0 = arg0;
+  const match = re3.exec(arg0);
+  if (match) {
+    const tmp5 = _slicedToArray(match.slice(1), 6);
+    let str = tmp5[1];
+    let str3 = "";
+    const first = tmp5[0];
+    if (undefined !== tmp5[2]) {
+      str3 = tmp7;
     }
-    const obj2 = {};
-    obj2[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE] = arg1;
-    obj2[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT] = arg2;
-    rootSpan.addEvent(arg0, obj2);
+    let str4 = "";
+    if (undefined !== tmp5[3]) {
+      str4 = tmp8;
+    }
+    let str5 = "";
+    if (undefined !== tmp5[4]) {
+      str5 = tmp9;
+    }
+    let str6 = "";
+    if (undefined !== tmp5[5]) {
+      str6 = tmp10;
+    }
+    const parts = str6.split("/");
+    let str8 = str6;
+    let str9 = "";
+    if (parts.length > 1) {
+      const substr = parts.slice(0, -1);
+      str9 = substr.join("/");
+      str8 = parts.pop();
+    }
+    let first1 = str8;
+    if (first1) {
+      const match1 = str8.match(/^\d+/);
+      first1 = str8;
+      if (match1) {
+        first1 = match1[0];
+      }
+    }
+    const url = { protocol: first, publicKey: str, pass: str3, host: str4, port: str5, path: str9, projectId: first1 };
+    if (!str) {
+      str = "";
+    }
+    if (!str3) {
+      str3 = "";
+    }
+    if (!str5) {
+      str5 = "";
+    }
+    if (!str9) {
+      str9 = "";
+    }
+    return url;
+  } else {
+    const obj = _mod12381;
+    obj.consoleSandbox(() => {
+      console.error("Invalid Sentry Dsn: " + closure_0);
+    });
   }
+}
+const re3 = /^(?:(\w+):)\/\/(?:(\w+)(?::(\w+)?)?@)([\w.-]+)(?::(\d+))?\/(.+)/;
+
+export { dsnFromString };
+export const dsnToString = function dsnToString(arg0) {
+  let host;
+  let pass;
+  let path;
+  let port;
+  let projectId;
+  let protocol;
+  let publicKey;
+  let flag = arg1;
+  if (arg1 === undefined) {
+    flag = false;
+  }
+  ({ host, path, pass, port, projectId, protocol, publicKey } = arg0);
+  let str = "";
+  if (flag) {
+    str = "";
+    if (pass) {
+      const _HermesInternal = HermesInternal;
+      str = ":" + pass;
+    }
+  }
+  let str3 = "";
+  if (port) {
+    const _HermesInternal2 = HermesInternal;
+    str3 = ":" + port;
+  }
+  let combined = path;
+  if (combined) {
+    const _HermesInternal3 = HermesInternal;
+    combined = "" + path + "/";
+  }
+  return "" + protocol + "://" + publicKey + str + "@" + host + str3 + "/" + combined + projectId;
 };
-export const timedEventsToMeasurements = function timedEventsToMeasurements(arr) {
-  let tmp = arr;
-  if (tmp) {
-    if (0 !== arr.length) {
-      let obj = {};
-      const item = arr.forEach((attributes) => {
-        const tmp = attributes.attributes || {};
-        const tmp2 = tmp[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT];
-        const tmp3 = tmp[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE];
-        let tmp4 = typeof tmp2 === "string";
-        if (typeof tmp2 === "string") {
-          tmp4 = typeof tmp3 === "number";
+export const makeDsn = function makeDsn(protocol) {
+  let port;
+  let projectId;
+  let url;
+  if (typeof protocol === "string") {
+    url = dsnFromString(protocol);
+  } else {
+    url = { protocol: protocol.protocol, publicKey: protocol.publicKey || "", pass: protocol.pass || "", host: protocol.host, port: protocol.port || "", path: protocol.path || "", projectId: protocol.projectId };
+  }
+  if (url) {
+    let flag = true;
+    if (url(12380).DEBUG_BUILD) {
+      ({ port, projectId, protocol } = url);
+      const items = ["protocol", "publicKey", "host", "projectId"];
+      let found = items.find((item) => {
+        let flag = !url[item];
+        if (flag) {
+          const logger = _mod12381.logger;
+          const _HermesInternal = HermesInternal;
+          logger.error("Invalid Sentry Dsn: " + item + " missing");
+          flag = true;
         }
-        if (tmp4) {
-          obj = { value: tmp3, unit: tmp2 };
-          obj[attributes.name] = obj;
-        }
+        return flag;
       });
-      return obj;
+      if (!found) {
+        let num;
+        if (projectId.match(/^\d+$/)) {
+          let num2;
+          const tmp7 = "http" === protocol || "https" === protocol;
+          if (tmp7) {
+            let num3 = port;
+            if (num3) {
+              const _isNaN = isNaN;
+              const _parseInt = parseInt;
+              num3 = isNaN(parseInt(port, 10));
+            }
+            if (num3) {
+              const logger3 = tmp2(12381).logger;
+              const _HermesInternal3 = HermesInternal;
+              logger3.error("Invalid Sentry Dsn: Invalid port " + port);
+              num3 = 1;
+            }
+            num2 = num3;
+          } else {
+            const logger2 = tmp2(12381).logger;
+            const _HermesInternal2 = HermesInternal;
+            logger2.error("Invalid Sentry Dsn: Invalid protocol " + protocol);
+            num2 = 1;
+          }
+          num = num2;
+        } else {
+          let logger = tmp2(12381).logger;
+          let _HermesInternal = HermesInternal;
+          logger.error("Invalid Sentry Dsn: Invalid projectId " + projectId);
+          num = 1;
+        }
+        found = num;
+      }
+      flag = !found;
+    }
+    if (flag) {
+      return url;
     }
   }
 };

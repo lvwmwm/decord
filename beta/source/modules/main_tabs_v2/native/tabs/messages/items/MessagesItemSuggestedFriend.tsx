@@ -1,7 +1,7 @@
 // Module ID: 17171
 // Function ID: 17172
 // Name: MessagesItemSuggestedFriend
-// Dependencies: [32, 19, 17, 4855, 1087, 21, 5191, 587, 10839, 8577, 2002, 573, 1128, 5057, 17172, 17173, 1267, 6462, 1202, 5187, 5479, 5139, 558, 576, 7091, 13649, 2]
+// Dependencies: [32, 19, 17, 4855, 1087, 21, 5191, 587, 10839, 8577, 2002, 573, 1128, 5057, 17172, 17173, 1267, 6462, 1202, 5187, 5479, 5139, 558, 576, 7091, 13644, 2]
 // Exports: getMessagesItemSuggestedFriendHeight
 
 // Module 17171 (MessagesItemSuggestedFriend)
@@ -13,7 +13,7 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import UserUtilsDefault from "UserUtils" /* 5057 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10839 */;
-import LegendList from "LegendList" /* 13649 */;
+import LegendList from "LegendList" /* 13644 */;
 import FriendSuggestionUtils from "FriendSuggestionUtils" /* 17172 */;
 import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17173 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

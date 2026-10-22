@@ -1,9 +1,9 @@
-// Module ID: 12308
-// Function ID: 12309
+// Module ID: 12303
+// Function ID: 12304
 // Name: ConjureRestoreProposalCard
 // Dependencies: [19, 21, 558, 576, 11698, 5187, 1128, 3883, 5477, 5479, 11662, 2]
 
-// Module 12308 (ConjureRestoreProposalCard)
+// Module 12303 (ConjureRestoreProposalCard)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
 import _modDef3883 from "module_3883" /* 3883 */;

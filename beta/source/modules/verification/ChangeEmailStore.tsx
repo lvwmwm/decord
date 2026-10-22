@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const f94555 = () => state.setState((errors) => {
+const f94564 = () => state.setState((errors) => {
   let obj2;
   const obj = { errors: obj2 };
   obj2 = {};
@@ -50,7 +50,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChangeEma
     const fn2 = function l(arg0) {
       let closure_1 = arg0;
       const obj = react_native;
-      obj.batchUpdates(f94555);
+      obj.batchUpdates(f94564);
     };
     cResult[2] = arg0;
     cResult[3] = fn2;
@@ -86,7 +86,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChangeEma
       let state;
       let closure_1 = arg0;
       let obj = react_native;
-      obj.batchUpdates(f94555);
+      obj.batchUpdates(f94564);
     }
   ];
   return items;
@@ -97,7 +97,7 @@ function setChangeEmailError(arg0, arg1) {
   _require = arg0;
   dependencyMap = arg1;
   const obj = require("react-native");
-  obj.batchUpdates(f94555);
+  obj.batchUpdates(f94564);
 }
 const result = size.fileFinishedImporting("modules/verification/ChangeEmailStore.tsx");
 

@@ -1,7 +1,7 @@
 // Module ID: 18286
 // Function ID: 18287
 // Name: VoicePanelPreJoinContent
-// Dependencies: [109, 5, 32, 19, 17, 2067, 5210, 14810, 6153, 502, 2068, 2014, 4845, 5211, 1392, 5212, 5215, 10680, 10683, 1087, 14814, 5216, 21, 5191, 10686, 587, 558, 576, 10679, 504, 6180, 7759, 6145, 7710, 6156, 1128, 5187, 14093, 6439, 7134, 4834, 18274, 1499, 4945, 11315, 11318, 11354, 18272, 5479, 6462, 1275, 9263, 6567, 9069, 5509, 6457, 11911, 10803, 7130, 7155, 1267, 18184, 18235, 18287, 5478, 4922, 7039, 18171, 18289, 2]
+// Dependencies: [109, 5, 32, 19, 17, 2067, 5210, 14810, 6153, 502, 2068, 2014, 4845, 5211, 1392, 5212, 5215, 10680, 10683, 1087, 14814, 5216, 21, 5191, 10686, 587, 558, 576, 10679, 504, 6180, 7759, 6145, 7710, 6156, 1128, 5187, 14088, 6439, 7134, 4834, 18274, 1499, 4945, 11315, 11318, 11354, 18272, 5479, 6462, 1275, 9263, 6567, 9069, 5509, 6457, 11906, 10803, 7130, 7155, 1267, 18184, 18235, 18287, 5478, 4922, 7039, 18171, 18289, 2]
 
 // Module 18286 (VoicePanelPreJoinContent)
 import react_native from "react-native" /* 17 */;
@@ -27,7 +27,7 @@ import useTrackImpressionDefault from "useTrackImpression" /* 9263 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 10680 */;
 import VoicePanelCardConstants from "VoicePanelCardConstants" /* 10683 */;
 import calculateVoicePanelHeaderSpecs from "calculateVoicePanelHeaderSpecs" /* 10686 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11911 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11906 */;
 import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 14814 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;

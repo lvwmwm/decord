@@ -100,11 +100,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAlertIfSe
           tmp6 = globalThis;
           _setTimeout = setTimeout;
           num = 1000;
-          tmp2.current = setTimeout(() => { /* body not rendered: F143501 */ }, 1000);
+          tmp2.current = setTimeout(() => { /* body not rendered: F143510 */ }, 1000);
           tmp4 = tmp2;
         }
         current = tmp4.current;
-        return () => { /* body not rendered: F143502 */ };
+        return () => { /* body not rendered: F143511 */ };
       }
       tmp4 = closure_5;
       clearTimeoutResult = clearTimeout(closure_5.current);

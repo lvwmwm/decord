@@ -1,7 +1,7 @@
 // Module ID: 17400
 // Function ID: 17401
 // Name: GuildUpsellChannelList
-// Dependencies: [19, 17, 14791, 6188, 17401, 1087, 21, 5191, 587, 1128, 14040, 17402, 17406, 558, 576, 14794, 504, 17410, 1267, 13379, 5187, 6459, 5479, 16142, 17411, 2]
+// Dependencies: [19, 17, 14791, 6188, 17401, 1087, 21, 5191, 587, 1128, 14035, 17402, 17406, 558, 576, 14794, 504, 17410, 1267, 13374, 5187, 6459, 5479, 16142, 17411, 2]
 
 // Module 17400 (GuildUpsellChannelList)
 import nativeDefault from "native" /* 587 */;
@@ -9,7 +9,7 @@ import intl7 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import components_Button_Button from "components/Button/Button" /* 5479 */;
 import Card_Card from "Card/Card" /* 6459 */;
-import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 14040 */;
+import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 14035 */;
 import MobileGameCommunitiesConstants from "MobileGameCommunitiesConstants" /* 17401 */;
 import ChatControllersSpotIllustration from "ChatControllersSpotIllustration" /* 17402 */;
 import MiniaturesSpotIllustration from "MiniaturesSpotIllustration" /* 17406 */;

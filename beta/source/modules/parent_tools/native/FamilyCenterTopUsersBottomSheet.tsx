@@ -48,7 +48,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRow
       if (tmp7 === Symbol.for("react.early_return_sentinel")) {
         let tmp19;
         if (cResult[11] !== tmp8) {
-          const obj2 = { size: native.AvatarSizes.SMALL, user: tmp8, guildId: "Array" };
+          const obj2 = { size: native.AvatarSizes.SMALL, user: tmp8, guildId: "r" };
           const Avatar = tmp(1202).Avatar;
           const tmp21 = React3(Avatar, obj2);
           cResult[11] = tmp8;
@@ -132,7 +132,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRow
     const obj2 = { label: obj3.getName(user), subLabel: topUserOrGuildDescription, icon: React3(Avatar, obj4) };
     const TableRow = TableRow2.TableRow;
     obj3 = UserUtilsDefault;
-    obj4 = { size: native.AvatarSizes.SMALL, user, guildId: "Array" };
+    obj4 = { size: native.AvatarSizes.SMALL, user, guildId: "r" };
     Avatar = native.Avatar;
     return React3(TableRow, obj2);
   }

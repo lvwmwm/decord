@@ -1752,7 +1752,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChanne
   let closure_0;
   let initialStack;
   let screens;
-  const f100344 = () => {
+  const f100353 = () => {
     let obj2;
     const obj = { name: constants.CREATE_CHANNEL, params: obj2 };
     obj2 = {};
@@ -1762,8 +1762,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChanne
     return obj3;
   };
   _require = arg0;
-  ({ screens, initialStack } = useInitialValueDefault(f100344));
-  useInitialValueDefault(f100344);
+  ({ screens, initialStack } = useInitialValueDefault(f100353));
+  useInitialValueDefault(f100353);
   return closure_20(require("Navigator").Navigator, { screens, initialRouteStack });
 });
 let result = size.fileFinishedImporting("components_native/CreateChannelModal.tsx");

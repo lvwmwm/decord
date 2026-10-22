@@ -1,7 +1,7 @@
 // Module ID: 17120
 // Function ID: 17121
 // Name: RedesignNotificationModal
-// Dependencies: [19, 17, 13075, 13076, 1087, 21, 5191, 587, 558, 576, 13077, 1267, 13078, 17121, 1128, 13358, 2]
+// Dependencies: [19, 17, 13070, 13071, 1087, 21, 5191, 587, 558, 576, 13072, 1267, 13073, 17121, 1128, 13353, 2]
 
 // Module 17120 (RedesignNotificationModal)
 import react_native from "react-native" /* 17 */;
@@ -10,12 +10,12 @@ import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13075 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13077 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13078 */;
-import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 13358 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13070 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13072 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13073 */;
+import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 13353 */;
 import react from "react" /* 19 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13076 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13071 */;
 import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

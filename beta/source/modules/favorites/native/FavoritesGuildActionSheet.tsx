@@ -1,7 +1,7 @@
 // Module ID: 17267
 // Function ID: 17268
 // Name: FavoritesGuildActionSheet
-// Dependencies: [19, 2071, 21, 558, 576, 17268, 17269, 17270, 504, 7117, 1128, 7171, 8473, 11982, 17271, 6927, 5148, 7175, 2]
+// Dependencies: [19, 2071, 21, 558, 576, 17268, 17269, 17270, 504, 7117, 1128, 7171, 8473, 11977, 17271, 6927, 5148, 7175, 2]
 
 // Module 17267 (FavoritesGuildActionSheet)
 import useFavoritesGuildHideActionDefault from "useFavoritesGuildHideAction" /* 17268 */;
@@ -239,7 +239,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
                 closure_1.perform();
               }
             }
-            obj12 = { IconComponent: onClose(11982).ArrowsUpDownIcon };
+            obj12 = { IconComponent: onClose(11977).ArrowsUpDownIcon };
             Icon2 = tmp(7171).ActionSheetRow.Icon;
             tmp18 = closure_4(Group2, obj10);
           }
@@ -335,7 +335,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
     };
     ActionSheetRow = tmp5(7171).ActionSheetRow;
     intl2 = tmp5(1128).intl;
-    obj10 = { IconComponent: onClose(11982).ArrowsUpDownIcon };
+    obj10 = { IconComponent: onClose(11977).ArrowsUpDownIcon };
     Icon2 = tmp5(7171).ActionSheetRow.Icon;
     tmp8Result3 = tmp8(Group2, obj8);
   }

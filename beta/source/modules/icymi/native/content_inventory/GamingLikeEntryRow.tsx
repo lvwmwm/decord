@@ -1,7 +1,7 @@
 // Module ID: 17647
 // Function ID: 17648
 // Name: GamingLikeEntryRow
-// Dependencies: [19, 17, 1392, 21, 14063, 8544, 14068, 17598, 587, 504, 5884, 9126, 7134, 8542, 9151, 9150, 8540, 17648, 2002, 8745, 12690, 17650, 1128, 17652, 5187, 5057, 6337, 11, 683, 6462, 5128, 17653, 2]
+// Dependencies: [19, 17, 1392, 21, 14058, 8544, 14063, 17598, 587, 504, 5884, 9126, 7134, 8542, 9151, 9150, 8540, 17648, 2002, 8745, 12685, 17650, 1128, 17652, 5187, 5057, 6337, 11, 683, 6462, 5128, 17653, 2]
 // Exports: default
 
 // Module 17647 (GamingLikeEntryRow)
@@ -11,8 +11,8 @@ import asyncRequire from "asyncRequire" /* 2002 */;
 import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8540 */;
 import utils from "utils" /* 8544 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8745 */;
-import BadgesAll from "Badges" /* 14063 */;
-import TrendingType from "TrendingType" /* 14068 */;
+import BadgesAll from "Badges" /* 14058 */;
+import TrendingType from "TrendingType" /* 14063 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;

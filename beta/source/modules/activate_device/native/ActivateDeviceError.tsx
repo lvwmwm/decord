@@ -1,7 +1,7 @@
 // Module ID: 14900
 // Function ID: 14901
 // Name: ActivateDeviceError
-// Dependencies: [19, 17, 21, 5191, 558, 576, 5128, 13852, 5187, 14898, 1128, 5479, 2]
+// Dependencies: [19, 17, 21, 5191, 558, 576, 5128, 13847, 5187, 14898, 1128, 5479, 2]
 
 // Module 14900 (ActivateDeviceError)
 import react_native from "react-native" /* 17 */;
@@ -10,7 +10,7 @@ import intl4 from "intl" /* 1128 */;
 import FastImageDefault from "FastImage" /* 5128 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import components_Button_Button from "components/Button/Button" /* 5479 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13852 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13847 */;
 import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 14898 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

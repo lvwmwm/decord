@@ -1,15 +1,15 @@
 // Module ID: 17284
 // Function ID: 17285
 // Name: GuildHeaderCoachmarks
-// Dependencies: [32, 19, 4845, 1087, 2065, 21, 558, 576, 504, 17285, 17287, 13202, 17294, 13195, 13196, 2052, 7376, 13192, 17295, 17296, 17298, 2]
+// Dependencies: [32, 19, 4845, 1087, 2065, 21, 558, 576, 504, 17285, 17287, 13197, 17294, 13190, 13191, 2052, 7376, 13187, 17295, 17296, 17298, 2]
 
 // Module 17284 (GuildHeaderCoachmarks)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import dismissible_content from "dismissible_content" /* 2052 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
-import useBoostToUnlockFeaturedPowerupDefault from "useBoostToUnlockFeaturedPowerup" /* 13195 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13202 */;
+import useBoostToUnlockFeaturedPowerupDefault from "useBoostToUnlockFeaturedPowerup" /* 13190 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13197 */;
 import useShouldShowGuildThemeMemberCoachmarkDefault from "useShouldShowGuildThemeMemberCoachmark" /* 17285 */;
 import useGuildThemeNuxTriggerDefault from "useGuildThemeNuxTrigger" /* 17287 */;
 import useIsCurrentUserEligibleForPowerupUpsellsDefault from "useIsCurrentUserEligibleForPowerupUpsells" /* 17294 */;
@@ -112,11 +112,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildHeade
   const tmp5 = stateFromStores(17285)(guild.id);
   dependencyMap = tmp5;
   let tmp6 = stateFromStores(17287)(guild.id);
-  const tmp7 = stateFromStores(13202)(guild.id);
+  const tmp7 = stateFromStores(13197)(guild.id);
   const tmp8 = stateFromStores(17294)();
-  const tmp9 = stateFromStores(13195)(guild.id);
+  const tmp9 = stateFromStores(13190)(guild.id);
   const items2 = [stateFromStores, guild.premiumProgressBarEnabled, tmp5];
-  const tmp10 = stateFromStores(13196)();
+  const tmp10 = stateFromStores(13191)();
   const memo = react.useMemo(() => {
     const items = [];
     const tmp = stateFromStores && !guild.premiumProgressBarEnabled;
@@ -134,8 +134,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildHeade
   [tmp15, tmp16] = obj2.useSelectedDismissibleContent(memo, obj3);
   _slicedToArray(obj2.useSelectedDismissibleContent(memo, obj3), 2);
   let tmp18 = false === tmp7;
-  const useBoostToUnlockCoachmarkDCF = guild(13192).useBoostToUnlockCoachmarkDCF;
-  guild(13192);
+  const useBoostToUnlockCoachmarkDCF = guild(13187).useBoostToUnlockCoachmarkDCF;
+  guild(13187);
   const tmp12 = constants;
   const tmp13 = _slicedToArray;
   if (tmp18) {

@@ -1,7 +1,7 @@
 // Module ID: 17317
 // Function ID: 17318
 // Name: renderRedesignChannelListItem
-// Dependencies: [19, 17, 6152, 2072, 2068, 4843, 5215, 11900, 2075, 7523, 21, 17316, 17318, 17322, 587, 7038, 7517, 17235, 1128, 12945, 17311, 17323, 17257, 5484, 17325, 17327, 17329, 17333, 17335, 17336, 17337, 17338, 17339, 17342, 17344, 17347, 17351, 17243, 17355, 1108, 17362, 17365, 17367, 2093, 17368, 17250, 6206, 17248, 17369, 2]
+// Dependencies: [19, 17, 6152, 2072, 2068, 4843, 5215, 11895, 2075, 7523, 21, 17316, 17318, 17322, 587, 7038, 7517, 17235, 1128, 12940, 17311, 17323, 17257, 5484, 17325, 17327, 17329, 17333, 17335, 17336, 17337, 17338, 17339, 17342, 17344, 17347, 17351, 17243, 17355, 1108, 17362, 17365, 17367, 2093, 17368, 17250, 6206, 17248, 17369, 2]
 // Exports: calculateVoiceSummary, getChannelListItemSize, getChannelListSectionFooterSize, getChannelListSectionHasFooterDivider, getChannelListSectionHeaderSize, getFastListRecyclerKey, renderChannelListItem, renderChannelListSectionFooter, renderChannelListSectionHeader
 
 // Module 17317 (renderRedesignChannelListItem)
@@ -14,7 +14,7 @@ import FavoritesUtils from "FavoritesUtils" /* 2093 */;
 import StageChannelParticipants from "StageChannelParticipants" /* 6206 */;
 import FastList from "FastList" /* 7038 */;
 import ChannelListState from "ChannelListState" /* 7517 */;
-import Divider from "Divider" /* 12945 */;
+import Divider from "Divider" /* 12940 */;
 import CategoryChannel from "CategoryChannel" /* 17235 */;
 import ThreadChannelDefault from "ThreadChannel" /* 17243 */;
 import VoiceUsers from "VoiceUsers" /* 17248 */;
@@ -34,7 +34,7 @@ import ChannelRecord from "ChannelRecord" /* 2072 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildChannelStore from "GuildChannelStore" /* 4843 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5215 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11900 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11895 */;
 import GuildSidebarConstants from "GuildSidebarConstants" /* 7523 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -317,7 +317,7 @@ export const getChannelListSectionFooterSize = function getChannelListSectionFoo
     }
     let num5 = 0;
     if (flag) {
-      num5 = tmp3(12945).DIVIDER_HEIGHT;
+      num5 = tmp3(12940).DIVIDER_HEIGHT;
     }
     return num5;
   } else {
@@ -455,7 +455,7 @@ export const renderChannelListItem = function renderChannelListItem(arg0) {
         const obj17 = { children: items };
         const obj18 = { style: obj.nonChannelContainer, children: closure_18(tmp(17338).NewMemberActionsProgress, obj19) };
         obj19 = { guildId: guild.id };
-        items = [closure_18(View, obj18), closure_18(selectedChannelId(12945), {})];
+        items = [closure_18(View, obj18), closure_18(selectedChannelId(12940), {})];
         tmp51Result = closure_19(View, obj17);
       } else if (constants2.GUILD_HUB_HEADER_OPTIONS === row2) {
         const obj20 = { guild };
@@ -472,7 +472,7 @@ export const renderChannelListItem = function renderChannelListItem(arg0) {
       } else if (constants2.GUILD_PREMIUM_PROGRESS_BAR === row2) {
         const obj24 = { children: items1 };
         const obj25 = { guildId: guild.id };
-        items1 = [closure_18(selectedChannelId(17351), obj25), closure_18(selectedChannelId(12945), {})];
+        items1 = [closure_18(selectedChannelId(17351), obj25), closure_18(selectedChannelId(12940), {})];
         tmp51Result = closure_19(View, obj24);
       } else {
         tmp51Result = null;
@@ -617,14 +617,14 @@ export const getChannelListItemSize = function getChannelListItemSize(liveChanne
                   num4 = tmp25;
                   if (constants2.GUILD_CONJURE !== row2) {
                     if (constants2.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR === row2) {
-                      num4 = 48 + tmp(12945).DIVIDER_HEIGHT;
+                      num4 = 48 + tmp(12940).DIVIDER_HEIGHT;
                     } else {
                       num4 = listViewportHeight;
                       if (constants2.GUILD_HUB_HEADER_OPTIONS !== row2) {
                         num4 = 0;
                         if (constants2.GUILD_SCHEDULED_EVENTS !== row2) {
                           if (constants2.GUILD_PREMIUM_PROGRESS_BAR === row2) {
-                            num4 = tmp(17351).BOOST_PROGRESS_BAR_HEIGHT + tmp(12945).DIVIDER_HEIGHT;
+                            num4 = tmp(17351).BOOST_PROGRESS_BAR_HEIGHT + tmp(12940).DIVIDER_HEIGHT;
                           } else {
                             num4 = 0;
                             if (constants2.GUILD_FAVORITES !== row2) {

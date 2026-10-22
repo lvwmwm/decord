@@ -1,13 +1,13 @@
-// Module ID: 12965
-// Function ID: 12966
+// Module ID: 12960
+// Function ID: 12961
 // Name: GuildDirectoryEditDescriptionModal
-// Dependencies: [5, 19, 17, 21, 5191, 6536, 558, 576, 12966, 12964, 1128, 5187, 12967, 7092, 6478, 6965, 2]
+// Dependencies: [5, 19, 17, 21, 5191, 6536, 558, 576, 12961, 12959, 1128, 5187, 12962, 7092, 6478, 6965, 2]
 
-// Module 12965 (GuildDirectoryEditDescriptionModal)
+// Module 12960 (GuildDirectoryEditDescriptionModal)
 import NavigatorConstants from "NavigatorConstants" /* 6536 */;
-import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 12964 */;
-import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 12966 */;
-import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 12967 */;
+import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 12959 */;
+import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 12961 */;
+import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 12962 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -285,7 +285,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
     entry,
     directoryChannelId: entry.channelId
   };
-  const tmp2 = obj(12967);
+  const tmp2 = obj(12962);
   intl2 = entry(1128).intl;
   items[1] = closure_7(tmp2, obj6);
   return closure_7(SafeAreaPaddingView, obj);

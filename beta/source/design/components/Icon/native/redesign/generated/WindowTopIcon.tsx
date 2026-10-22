@@ -1,14 +1,14 @@
-// Module ID: 12283
-// Function ID: 12284
+// Module ID: 12278
+// Function ID: 12279
 // Name: WindowTopIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 12284, 4912, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 12279, 4912, 2]
 
-// Module 12283 (WindowTopIcon)
+// Module 12278 (WindowTopIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4912 */;
-import AssetRegistry from "AssetRegistry" /* 12284 */;
+import AssetRegistry from "AssetRegistry" /* 12279 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

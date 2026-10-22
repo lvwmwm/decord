@@ -1,9 +1,9 @@
-// Module ID: 13215
-// Function ID: 13216
+// Module ID: 13210
+// Function ID: 13211
 // Name: useGuildPowerupLevelPerks
 // Dependencies: [19, 1394, 5104, 558, 576, 1128, 2621, 1388, 2]
 
-// Module 13215 (useGuildPowerupLevelPerks)
+// Module 13210 (useGuildPowerupLevelPerks)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;

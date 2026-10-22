@@ -38,7 +38,7 @@ let c9;
 let closure_20;
 let closure_21;
 let metroImportAll;
-const f129032 = () => {
+const f129041 = () => {
   c0 = true;
 };
 function getMissingFavoriteThreadIds(includeLoading) {
@@ -94,7 +94,7 @@ function computeFavoritesState(favoriteChannels, arg1) {
   let channelMuted;
   let closure_2;
   let closure_3;
-  const f150883 = (arg0) => {
+  const f150892 = (arg0) => {
     let position;
     let record;
     let sum;
@@ -271,7 +271,7 @@ function computeFavoritesState(favoriteChannels, arg1) {
           activeJoinedUnreadThreadsForParent = closure_3_6.getActiveJoinedRelevantThreadsForParent(isPrivate.guild_id, isPrivate.id);
         });
         const found = mapped.filter(favoriteChannels(closure_2[26]).isNotNullish);
-        const iter = found.sortBy(f150883);
+        const iter = found.sortBy(f150892);
         closure_6 = iter.value();
       }
       return closure_6;
@@ -414,7 +414,7 @@ function computeFavoritesState(favoriteChannels, arg1) {
               });
               let tmp4 = items;
               const found = mapped.filter(items(closure_1_2[26]).isNotNullish);
-              const iter = found.sortBy(f150883);
+              const iter = found.sortBy(f150892);
               closure_1 = iter.value();
             }
             return closure_1;
@@ -788,7 +788,7 @@ const tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavori
           }
         }
       }
-      obj4.forEachShownChannel(f129032);
+      obj4.forEachShownChannel(f129041);
       flag2 = !closure_129_0;
     }
     cResult[11] = obj4;
@@ -887,7 +887,7 @@ const tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavori
   const tmp5 = getMissingFavoriteThreadIds({ limit: 1, includeLoading: true }).length > 0;
   if (obj2.getSections().length <= flag(7517).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
     c0 = false;
-    obj2.forEachShownChannel(f129032);
+    obj2.forEachShownChannel(f129041);
     flag2 = !c0;
   }
   return { guildChannels: obj2, shouldShowEmptyState: flag2 && !tmp5, hasNoChannels: flag2 };

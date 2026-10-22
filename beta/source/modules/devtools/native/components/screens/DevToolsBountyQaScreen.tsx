@@ -1,7 +1,7 @@
 // Module ID: 16732
 // Function ID: 16733
 // Name: DevToolsBountyQaScreen
-// Dependencies: [5, 32, 19, 17, 7653, 21, 5191, 587, 4904, 558, 576, 1633, 6231, 7654, 504, 13909, 9474, 6235, 5187, 6539, 6540, 12098, 6457, 16149, 6929, 6542, 2]
+// Dependencies: [5, 32, 19, 17, 7653, 21, 5191, 587, 4904, 558, 576, 1633, 6231, 7654, 504, 13904, 9474, 6235, 5187, 6539, 6540, 12093, 6457, 16149, 6929, 6542, 2]
 
 // Module 16732 (DevToolsBountyQaScreen)
 import react_native from "react-native" /* 17 */;
@@ -192,7 +192,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
           }
           const _Symbol2 = Symbol;
           if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp32 = closure_8(tmp(12098).UndoIcon, {});
+            const tmp32 = closure_8(tmp(12093).UndoIcon, {});
             cResult[23] = tmp32;
             tmp30 = tmp32;
           } else {

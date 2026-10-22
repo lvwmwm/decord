@@ -1,9 +1,9 @@
-// Module ID: 11867
-// Function ID: 11868
+// Module ID: 11862
+// Function ID: 11863
 // Name: FrecencySection
-// Dependencies: [109, 32, 19, 17, 2067, 11868, 1087, 21, 5191, 587, 558, 576, 9548, 1388, 7134, 11869, 10948, 504, 10949, 5206, 4945, 5192, 1128, 9040, 11870, 11866, 2000, 8817, 11871, 5187, 10859, 9662, 6462, 11872, 7513, 5128, 11878, 2]
+// Dependencies: [109, 32, 19, 17, 2067, 11863, 1087, 21, 5191, 587, 558, 576, 9548, 1388, 7134, 11864, 10948, 504, 10949, 5206, 4945, 5192, 1128, 9040, 11865, 11861, 2000, 8817, 11866, 5187, 10859, 9662, 6462, 11867, 7513, 5128, 11873, 2]
 
-// Module 11867 (FrecencySection)
+// Module 11862 (FrecencySection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -16,9 +16,9 @@ import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5206 */;
 import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7134 */;
 import AppLauncherUtils from "AppLauncherUtils" /* 9548 */;
 import AppLauncherTypes from "AppLauncherTypes" /* 10949 */;
-import FrecencySectionStore2 from "FrecencySectionStore" /* 11868 */;
-import usePlaceholderSize from "usePlaceholderSize" /* 11869 */;
-import FrecencySectionStoreActionCreators from "FrecencySectionStoreActionCreators" /* 11870 */;
+import FrecencySectionStore2 from "FrecencySectionStore" /* 11863 */;
+import usePlaceholderSize from "usePlaceholderSize" /* 11864 */;
+import FrecencySectionStoreActionCreators from "FrecencySectionStoreActionCreators" /* 11865 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -877,7 +877,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Frecen
   let onActivityItemSelected;
   let tmp6;
   let tmp7;
-  const f110873 = () => {
+  const f110845 = () => {
     const items = [EmbeddedActivitiesStore.isLaunchingActivity(), ];
     let id;
     const getLaunchState = EmbeddedActivitiesStore.getLaunchState;
@@ -897,8 +897,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Frecen
   let id = react.useId();
   let items = [EmbeddedActivitiesStore];
   const obj3 = context(handleActivityItemSelected[17]);
-  [tmp6, tmp7] = obj3.useStateFromStoresArray(items, f110873);
-  _slicedToArray(obj3.useStateFromStoresArray(items, f110873), 2);
+  [tmp6, tmp7] = obj3.useStateFromStoresArray(items, f110845);
+  _slicedToArray(obj3.useStateFromStoresArray(items, f110845), 2);
   let isLaunching = null != tmp7;
   const obj4 = context(handleActivityItemSelected[33]);
   const obj5 = { context, applicationId: app.applicationId };
@@ -943,7 +943,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Frecen
   } else {
     let name;
     if (cResult[0] !== app.section.application) {
-      const tmpResult = tmp(11866);
+      const tmpResult = tmp(11861);
       const appLauncherIconSource = tmpResult.getAppLauncherIconSource(app.section.application);
       cResult[0] = app.section.application;
       cResult[1] = appLauncherIconSource;
@@ -1133,7 +1133,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Frecen
   if (null == app.section) {
     return null;
   } else {
-    const obj4 = app(11866);
+    const obj4 = app(11861);
     const appLauncherIconSource = obj4.getAppLauncherIconSource(app.section.application);
     let obj = {
       style: disabled ? tmp.appContainerDisabled : tmp.appContainer,
@@ -1169,7 +1169,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Frecen
     }
     items = [tmp3, ];
     const obj3 = { submitting, style: tmp.submittingOverlay };
-    items[1] = closure_13(tmp7(11878).SubmittingOverlay, obj3);
+    items[1] = closure_13(tmp7(11873).SubmittingOverlay, obj3);
     return tmp10(PressableOpacity, obj, app.applicationId);
   }
 });

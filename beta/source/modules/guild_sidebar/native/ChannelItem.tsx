@@ -1,7 +1,7 @@
 // Module ID: 17258
 // Function ID: 17259
 // Name: ChannelItem
-// Dependencies: [109, 19, 17, 5207, 4855, 1392, 1087, 2075, 6223, 21, 5191, 587, 6225, 13039, 558, 576, 1417, 5128, 17259, 8475, 8431, 504, 1202, 5513, 1114, 17260, 5521, 2]
+// Dependencies: [109, 19, 17, 5207, 4855, 1392, 1087, 2075, 6223, 21, 5191, 587, 6225, 13034, 558, 576, 1417, 5128, 17259, 8475, 8431, 504, 1202, 5513, 1114, 17260, 5521, 2]
 
 // Module 17258 (ChannelItem)
 import react_native from "react-native" /* 17 */;
@@ -15,7 +15,7 @@ import ReadStateConstants from "ReadStateConstants" /* 6223 */;
 import LegacyTokens from "LegacyTokens" /* 6225 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8431 */;
 import BookCheckIcon2 from "BookCheckIcon" /* 8475 */;
-import BaseChannelItem from "BaseChannelItem" /* 13039 */;
+import BaseChannelItem from "BaseChannelItem" /* 13034 */;
 import AssetRegistryDefault from "AssetRegistry" /* 17259 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -218,7 +218,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
       }
     }
     const obj10 = { mode, source: tmp12, isChannelLive, style: channelIconLive };
-    const BaseChannelIcon = tmp(13039).BaseChannelIcon;
+    const BaseChannelIcon = tmp(13034).BaseChannelIcon;
     const merged = Object.assign(tmp17);
     const tmp24 = syncedClientThemes(BaseChannelIcon, obj10);
     cResult[18] = tmp12;
@@ -278,7 +278,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     }
     const obj8 = { mode: tmp3, source: tmp13, isChannelLive, style: channelIconLive };
     channelIconLive = undefined;
-    const BaseChannelIcon = tmp10(13039).BaseChannelIcon;
+    const BaseChannelIcon = tmp10(13034).BaseChannelIcon;
     const tmp17 = syncedClientThemes;
     if (isChannelLive) {
       channelIconLive = tmp.channelIconLive;

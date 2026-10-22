@@ -220,10 +220,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Enroll
   }
   class S {
     constructor() {
-      closure_0 = closure_3(function() { /* body not rendered: F158036 */ });
+      closure_0 = closure_3(function() { /* body not rendered: F158045 */ });
       tmp = closure_4;
       if (tmp) {
-        tmp2 = (function maybeOpenVideoQuestModal() { /* body not rendered: F158037 */ })();
+        tmp2 = (function maybeOpenVideoQuestModal() { /* body not rendered: F158046 */ })();
       }
       return;
     }

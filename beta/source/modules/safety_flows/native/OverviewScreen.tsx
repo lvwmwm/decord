@@ -1,7 +1,7 @@
 // Module ID: 19089
 // Function ID: 19090
 // Name: OverviewScreen
-// Dependencies: [19, 21, 5191, 558, 576, 19090, 1505, 19091, 1128, 2885, 5187, 7970, 19085, 6542, 5477, 587, 7782, 19092, 12676, 12726, 7781, 2]
+// Dependencies: [19, 21, 5191, 558, 576, 19090, 1505, 19091, 1128, 2885, 5187, 7970, 19085, 6542, 5477, 587, 7782, 19092, 12671, 12721, 7781, 2]
 
 // Module 19089 (OverviewScreen)
 import SafetyFlowsUtils from "SafetyFlowsUtils" /* 19091 */;
@@ -169,9 +169,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OverviewSc
         if (cResult[20] !== tmp6) {
           const obj9 = { children: items1 };
           items1 = [tmp40, ];
-          const ModalFooter = tmp(12676).ModalFooter;
+          const ModalFooter = tmp(12671).ModalFooter;
           const obj10 = { variant: "primary", text: tmp44, onPress: tmp6 };
-          items1[1] = closure_4(tmp(12726).ModalActionButton, obj10);
+          items1[1] = closure_4(tmp(12721).ModalActionButton, obj10);
           const tmp50 = closure_5(ModalFooter, obj9);
           cResult[20] = tmp6;
           cResult[21] = tmp50;
@@ -280,10 +280,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OverviewSc
   items1[2] = closure_5(Stack2, obj6);
   items3 = [closure_4(ModalContent, obj8), ];
   const obj10 = { children: items4 };
-  const ModalFooter = tmp2(12676).ModalFooter;
+  const ModalFooter = tmp2(12671).ModalFooter;
   items4 = [closure_4(navigation(19092), {}), ];
   const obj11 = { variant: "primary", text: intl4.string(navigation(2885).Ks6opt), onPress: callback };
-  const ModalActionButton = tmp2(12726).ModalActionButton;
+  const ModalActionButton = tmp2(12721).ModalActionButton;
   intl4 = tmp2(1128).intl;
   items4[1] = closure_4(ModalActionButton, obj11);
   items3[1] = closure_5(ModalFooter, obj10);

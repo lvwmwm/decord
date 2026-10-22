@@ -1,7 +1,7 @@
 // Module ID: 16163
 // Function ID: 16164
 // Name: QuestBottomSheet
-// Dependencies: [32, 19, 17, 7656, 6228, 21, 5191, 587, 558, 576, 7663, 9474, 4904, 1128, 9473, 9506, 6231, 16133, 504, 13919, 7678, 16164, 16166, 7118, 13915, 9504, 7681, 9476, 9477, 9480, 6235, 16202, 16204, 16205, 7676, 7838, 5187, 2]
+// Dependencies: [32, 19, 17, 7656, 6228, 21, 5191, 587, 558, 576, 7663, 9474, 4904, 1128, 9473, 9506, 6231, 16133, 504, 13914, 7678, 16164, 16166, 7118, 13910, 9504, 7681, 9476, 9477, 9480, 6235, 16202, 16204, 16205, 7676, 7838, 5187, 2]
 
 // Module 16163 (QuestBottomSheet)
 import react_native from "react-native" /* 17 */;
@@ -1123,7 +1123,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEnrolledQ
   quest = undefined;
   ({ initialStep, location: _location } = quest);
   const tmp = quest;
-  let obj = quest(13915);
+  let obj = quest(13910);
   dependencyMap = obj.useTrackQuestContentClickedWithImpression();
   let obj2 = quest(9504);
   quest = obj2.useGetQuestImpressionId();

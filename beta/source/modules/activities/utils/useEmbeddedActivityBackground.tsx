@@ -84,7 +84,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedA
                 tmp3 = closure_1;
                 obj = applicationId(closure_1[4]);
                 assets = obj.getAssets(tmp);
-                nextPromise = assets.then(() => { /* body not rendered: F145342 */ });
+                nextPromise = assets.then(() => { /* body not rendered: F145351 */ });
               }
               return;
             }
@@ -104,7 +104,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedA
                 tmp3 = closure_1;
                 obj = applicationId(closure_1[4]);
                 assets = obj.getAssets(tmp);
-                nextPromise = assets.then(() => { /* body not rendered: F145342 */ });
+                nextPromise = assets.then(() => { /* body not rendered: F145351 */ });
               }
               return;
             }
@@ -121,7 +121,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedA
                 tmp3 = closure_1;
                 obj = applicationId(closure_1[4]);
                 assets = obj.getAssets(tmp);
-                nextPromise = assets.then(() => { /* body not rendered: F145342 */ });
+                nextPromise = assets.then(() => { /* body not rendered: F145351 */ });
               }
               return;
             }

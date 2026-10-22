@@ -1,7 +1,7 @@
 // Module ID: 17316
 // Function ID: 17317
 // Name: GuildLiveChannelNotice
-// Dependencies: [19, 17, 6152, 2073, 6153, 4845, 5215, 2074, 1098, 21, 587, 1202, 5179, 11908, 8399, 10839, 1384, 5484, 5191, 558, 576, 5187, 13219, 11901, 6180, 1896, 7748, 7759, 5127, 9609, 5065, 5479, 5521, 504, 1128, 8431, 8952, 8797, 8834, 8787, 6212, 6206, 6151, 8927, 8497, 17315, 10595, 6459, 2]
+// Dependencies: [19, 17, 6152, 2073, 6153, 4845, 5215, 2074, 1098, 21, 587, 1202, 5179, 11903, 8399, 10839, 1384, 5484, 5191, 558, 576, 5187, 13214, 11896, 6180, 1896, 7748, 7759, 5127, 9609, 5065, 5479, 5521, 504, 1128, 8431, 8952, 8797, 8834, 8787, 6212, 6206, 6151, 8927, 8497, 17315, 10595, 6459, 2]
 // Exports: getScaledLiveChannelNoticeHeight
 
 // Module 17316 (GuildLiveChannelNotice)
@@ -29,7 +29,7 @@ import CalendarIcon from "CalendarIcon" /* 8952 */;
 import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9609 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10595 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10839 */;
-import MarkupInlineChannelMentionRules from "MarkupInlineChannelMentionRules" /* 11908 */;
+import MarkupInlineChannelMentionRules from "MarkupInlineChannelMentionRules" /* 11903 */;
 import react from "react" /* 19 */;
 import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6152 */;
 import StageInstanceStore from "StageInstanceStore" /* 2073 */;
@@ -202,8 +202,8 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSu
               items2 = [, ];
               ({ badge: arr2[0], audienceBadge: arr2[1] } = tmp5);
               let obj6 = { size: "custom", style: tmpResult.makeSizeStyle(14) };
-              const HeadphonesIcon = tmp(13219).HeadphonesIcon;
-              tmpResult = tmp(11901);
+              const HeadphonesIcon = tmp(13214).HeadphonesIcon;
+              tmpResult = tmp(11896);
               items3 = [tmp14(HeadphonesIcon, obj6), ];
               let obj7 = { variant: "text-xs/semibold", style: { marginLeft: 4 }, maxFontSizeMultiplier: 1, children: audienceCount };
               items3[1] = tmp14(tmp(5187).Text, obj7);
@@ -367,8 +367,8 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSu
       items2 = [, ];
       ({ badge: arr3[0], audienceBadge: arr3[1] } = tmp);
       let obj4 = { size: "custom", style: obj5.makeSizeStyle(14) };
-      const HeadphonesIcon = max(13219).HeadphonesIcon;
-      obj5 = max(11901);
+      const HeadphonesIcon = max(13214).HeadphonesIcon;
+      obj5 = max(11896);
       items3 = [tmp8(HeadphonesIcon, obj4), ];
       let obj6 = { variant: "text-xs/semibold", style: { marginLeft: 4 }, maxFontSizeMultiplier: 1, children: audienceCount };
       items3[1] = closure_13(max(5187).Text, obj6);

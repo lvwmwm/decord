@@ -1,16 +1,16 @@
-// Module ID: 12188
-// Function ID: 12189
+// Module ID: 12183
+// Function ID: 12184
 // Name: ConjureFileThumbnail
-// Dependencies: [19, 21, 558, 576, 587, 11611, 12008, 12189, 5128, 2]
+// Dependencies: [19, 21, 558, 576, 587, 11611, 12003, 12184, 5128, 2]
 
-// Module 12188 (ConjureFileThumbnail)
+// Module 12183 (ConjureFileThumbnail)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import FastImageDefault from "FastImage" /* 5128 */;
 import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 11611 */;
-import FileIcon from "FileIcon" /* 12008 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 12189 */;
+import FileIcon from "FileIcon" /* 12003 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 12184 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

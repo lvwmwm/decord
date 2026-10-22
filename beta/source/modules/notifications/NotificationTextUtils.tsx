@@ -1,10 +1,10 @@
-// Module ID: 13516
-// Function ID: 13517
+// Module ID: 13511
+// Function ID: 13512
 // Name: NotificationTextUtils
-// Dependencies: [2067, 4846, 6333, 4847, 6352, 2072, 2068, 2090, 5209, 4855, 2119, 5034, 6015, 6222, 2062, 1392, 13517, 1087, 6298, 1127, 6180, 2044, 1405, 13518, 6368, 5888, 5073, 6350, 7638, 5521, 1128, 8667, 5509, 6364, 8271, 3, 7278, 5057, 2000, 7635, 13519, 558, 576, 504, 2]
+// Dependencies: [2067, 4846, 6333, 4847, 6352, 2072, 2068, 2090, 5209, 4855, 2119, 5034, 6015, 6222, 2062, 1392, 13512, 1087, 6298, 1127, 6180, 2044, 1405, 13513, 6368, 5888, 5073, 6350, 7638, 5521, 1128, 8667, 5509, 6364, 8271, 3, 7278, 5057, 2000, 7635, 13514, 558, 576, 504, 2]
 // Exports: allowInAppNotifications, makeTextChatNotification, shouldIncludeSelectedChannel, shouldNotify, shouldNotifyForForumThreadCreation, shouldNotifyForReaction, shouldNotifyForSelectedChannel
 
-// Module 13516 (NotificationTextUtils)
+// Module 13511 (NotificationTextUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react from "react" /* 576 */;
 import ThreadConstants from "ThreadConstants" /* 1127 */;
@@ -26,8 +26,8 @@ import MessageParserDefault from "MessageParser" /* 7635 */;
 import IsolateString from "IsolateString" /* 7638 */;
 import SystemMessageUtilsDefault from "SystemMessageUtils" /* 8271 */;
 import getDisplayFilenameDefault from "getDisplayFilename" /* 8667 */;
-import ChannelVisibilityUtils from "ChannelVisibilityUtils" /* 13518 */;
-import FocusModeUtils from "FocusModeUtils" /* 13519 */;
+import ChannelVisibilityUtils from "ChannelVisibilityUtils" /* 13513 */;
+import FocusModeUtils from "FocusModeUtils" /* 13514 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
 import LurkingStore from "LurkingStore" /* 4846 */;
 import MessageRequestStore from "MessageRequestStore" /* 6333 */;
@@ -44,7 +44,7 @@ import SelfPresenceStore from "SelfPresenceStore" /* 6015 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6222 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 2062 */;
 import UserStore from "UserStore" /* 1392 */;
-import RpcNotificationSettingsStore from "RpcNotificationSettingsStore" /* 13517 */;
+import RpcNotificationSettingsStore from "RpcNotificationSettingsStore" /* 13512 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,7 +1,7 @@
 // Module ID: 10596
 // Function ID: 10597
 // Name: ChannelLongPressActionSheet
-// Dependencies: [5, 19, 10597, 6201, 2073, 6338, 2072, 7084, 2068, 7516, 2090, 4845, 6291, 4855, 2119, 6222, 1392, 2075, 1087, 9927, 21, 7759, 2002, 7748, 1128, 10598, 8577, 5135, 7290, 5521, 5399, 10023, 9928, 5137, 6190, 10600, 3465, 9545, 1114, 10621, 8474, 10623, 10638, 3883, 10639, 8955, 10641, 7080, 5073, 6485, 10643, 7838, 10644, 10645, 10647, 10649, 10650, 10652, 6929, 7077, 10654, 9045, 7086, 7081, 10656, 9996, 8473, 10658, 10659, 8497, 8471, 5155, 10660, 13630, 5205, 7750, 9873, 7988, 13631, 6927, 6377, 7368, 5141, 8880, 10316, 7162, 4903, 558, 576, 7130, 7155, 10625, 504, 2076, 6361, 9625, 2044, 6436, 1202, 13633, 10792, 13634, 13640, 7222, 13645, 7175, 1630, 10793, 7171, 2]
+// Dependencies: [5, 19, 10597, 6201, 2073, 6338, 2072, 7084, 2068, 7516, 2090, 4845, 6291, 4855, 2119, 6222, 1392, 2075, 1087, 9927, 21, 7759, 2002, 7748, 1128, 10598, 8577, 5135, 7290, 5521, 5399, 10023, 9928, 5137, 6190, 10600, 3465, 9545, 1114, 10621, 8474, 10623, 10638, 3883, 10639, 8955, 10641, 7080, 5073, 6485, 10643, 7838, 10644, 10645, 10647, 10649, 10650, 10652, 6929, 7077, 10654, 9045, 7086, 7081, 10656, 9996, 8473, 10658, 10659, 8497, 8471, 5155, 10660, 13625, 5205, 7750, 9873, 7988, 13626, 6927, 6377, 7368, 5141, 8880, 10316, 7162, 4903, 558, 576, 7130, 7155, 10625, 504, 2076, 6361, 9625, 2044, 6436, 1202, 13628, 10792, 13629, 13635, 7222, 13640, 7175, 1630, 10793, 7171, 2]
 
 // Module 10596 (ChannelLongPressActionSheet)
 import Fragment from "Fragment" /* 21 */;
@@ -39,8 +39,8 @@ import MessageRequestActionCreators from "MessageRequestActionCreators" /* 10647
 import markChannelUnreadDefault from "markChannelUnread" /* 10652 */;
 import showThreadBrowserModalDefault from "showThreadBrowserModal" /* 10658 */;
 import ChannelCollapseActionCreatorsDefault from "ChannelCollapseActionCreators" /* 10659 */;
-import hideLaunchPadDefault from "hideLaunchPad" /* 13630 */;
-import openAppChannelToChatDefault from "openAppChannelToChat" /* 13631 */;
+import hideLaunchPadDefault from "hideLaunchPad" /* 13625 */;
+import openAppChannelToChatDefault from "openAppChannelToChat" /* 13626 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import ChannelSpoilerAgreeStore from "ChannelSpoilerAgreeStore" /* 6201 */;

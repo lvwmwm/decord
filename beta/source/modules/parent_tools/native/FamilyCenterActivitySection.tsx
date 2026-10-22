@@ -1,7 +1,7 @@
 // Module ID: 15945
 // Function ID: 15946
 // Name: FamilyCenterActivitySection
-// Dependencies: [32, 19, 17, 7526, 21, 5191, 587, 558, 576, 8006, 8008, 15940, 5187, 12667, 1128, 2589, 15946, 6462, 2]
+// Dependencies: [32, 19, 17, 7526, 21, 5191, 587, 558, 576, 8006, 8008, 15940, 5187, 12662, 1128, 2589, 15946, 6462, 2]
 
 // Module 15945 (FamilyCenterActivitySection)
 import react2 from "react" /* 576 */;
@@ -203,7 +203,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   } else {
     first = cResult[0];
   }
-  const tmpResult = displayType(12667);
+  const tmpResult = displayType(12662);
   const familyCenterActions = tmpResult.useFamilyCenterActions(first);
   const loadMore = familyCenterActions.loadMore;
   const isMoreLoading = familyCenterActions.isMoreLoading;
@@ -401,7 +401,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   const actionsForDisplayType = obj.useActionsForDisplayType(displayType);
   const obj2 = displayType(15940);
   const actionTotalsForDisplayType = obj2.useActionTotalsForDisplayType(displayType);
-  const obj3 = displayType(12667);
+  const obj3 = displayType(12662);
   const familyCenterActions = obj3.useFamilyCenterActions({});
   const loadMore = familyCenterActions.loadMore;
   const isMoreLoading = familyCenterActions.isMoreLoading;

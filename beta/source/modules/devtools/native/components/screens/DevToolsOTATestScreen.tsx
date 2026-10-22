@@ -1,14 +1,14 @@
 // Module ID: 16724
 // Function ID: 16725
 // Name: DevToolsOTATestScreen
-// Dependencies: [5, 32, 19, 17, 1098, 21, 5191, 587, 558, 576, 7117, 5187, 7118, 12521, 7162, 5155, 16625, 6457, 6542, 9641, 5143, 16725, 5477, 2]
+// Dependencies: [5, 32, 19, 17, 1098, 21, 5191, 587, 558, 576, 7117, 5187, 7118, 12516, 7162, 5155, 16625, 6457, 6542, 9641, 5143, 16725, 5477, 2]
 
 // Module 16724 (DevToolsOTATestScreen)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import ClipboardUtils from "ClipboardUtils" /* 7162 */;
-import BundleUpdaterDefault from "BundleUpdater" /* 12521 */;
+import BundleUpdaterDefault from "BundleUpdater" /* 12516 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

@@ -1,7 +1,7 @@
 // Module ID: 18099
 // Function ID: 18100
 // Name: IncentivizedAccountLinkConfirmationBottomSheet
-// Dependencies: [19, 5181, 1087, 21, 558, 576, 504, 5155, 4901, 2131, 5128, 16937, 1384, 9304, 16938, 5479, 1128, 13807, 587, 3367, 10635, 2]
+// Dependencies: [19, 5181, 1087, 21, 558, 576, 504, 5155, 4901, 2131, 5128, 16937, 1384, 9304, 16938, 5479, 1128, 13802, 587, 3367, 10635, 2]
 
 // Module 18099 (IncentivizedAccountLinkConfirmationBottomSheet)
 import Fragment from "Fragment" /* 21 */;
@@ -114,7 +114,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Incentiviz
     const Button = tmp(5479).Button;
     const intl = tmp(1128).intl;
     ({ size: "sm", color: nativeDefault.colors.WHITE });
-    const WindowLaunchIcon = tmp(13807).WindowLaunchIcon;
+    const WindowLaunchIcon = tmp(13802).WindowLaunchIcon;
     const tmp25 = <Button text={intl.string(intl4.t.aRIFWD)} icon={null} iconPosition="end" size="lg" onPress={tmp8} />;
     cResult[6] = tmp25;
     tmp22 = tmp25;
@@ -202,7 +202,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Incentiviz
   const Button = tmp(5479).Button;
   intl = tmp(1128).intl;
   obj8 = { size: "sm", color: tmp8(587).colors.WHITE };
-  WindowLaunchIcon = tmp(13807).WindowLaunchIcon;
+  WindowLaunchIcon = tmp(13802).WindowLaunchIcon;
   const obj9 = {
     title: intl2.string(tmp8(3367).ublzTG),
     description: intl3.string(tmp8(3367).JgM2xu),

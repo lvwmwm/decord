@@ -1,14 +1,14 @@
-// Module ID: 13285
-// Function ID: 13286
+// Module ID: 13280
+// Function ID: 13281
 // Name: useDMMessageToReport
-// Dependencies: [558, 576, 13286, 13287, 11835, 13125, 13288, 2]
+// Dependencies: [558, 576, 13281, 13282, 11835, 13120, 13283, 2]
 
-// Module 13285 (useDMMessageToReport)
+// Module 13280 (useDMMessageToReport)
 import react from "react" /* 576 */;
-import useLongestChannelMessageBeforeReply from "useLongestChannelMessageBeforeReply" /* 13125 */;
-import useIsRelationshipTypeSpamReportable from "useIsRelationshipTypeSpamReportable" /* 13286 */;
-import getApplicationFromBotUserIdDefault from "getApplicationFromBotUserId" /* 13287 */;
-import useMessageRequestPreview from "useMessageRequestPreview" /* 13288 */;
+import useLongestChannelMessageBeforeReply from "useLongestChannelMessageBeforeReply" /* 13120 */;
+import useIsRelationshipTypeSpamReportable from "useIsRelationshipTypeSpamReportable" /* 13281 */;
+import getApplicationFromBotUserIdDefault from "getApplicationFromBotUserId" /* 13282 */;
+import useMessageRequestPreview from "useMessageRequestPreview" /* 13283 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

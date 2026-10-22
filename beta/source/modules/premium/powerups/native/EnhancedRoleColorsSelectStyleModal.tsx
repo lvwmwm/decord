@@ -1,7 +1,7 @@
 // Module ID: 18826
 // Function ID: 18827
 // Name: EnhancedRoleColorsSelectStyleModal
-// Dependencies: [17, 18806, 18808, 18805, 1098, 21, 5191, 587, 558, 576, 5127, 5508, 1128, 18827, 8013, 7117, 5155, 9673, 2125, 8247, 13623, 5187, 2621, 7118, 2]
+// Dependencies: [17, 18806, 18808, 18805, 1098, 21, 5191, 587, 558, 576, 5127, 5508, 1128, 18827, 8013, 7117, 5155, 9673, 2125, 8247, 13618, 5187, 2621, 7118, 2]
 
 // Module 18826 (EnhancedRoleColorsSelectStyleModal)
 import nativeDefault from "native" /* 587 */;
@@ -15,7 +15,7 @@ import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7117 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7118 */;
 import RowGeneratorDefault from "RowGenerator" /* 8013 */;
 import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8247 */;
-import _modDef13623 from "module_13623" /* 13623 */;
+import _modDef13618 from "module_13618" /* 13618 */;
 import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 18805 */;
 import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 18806 */;
 import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 18808 */;
@@ -248,7 +248,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnhancedRoleColo
         const obj2 = enhanced_role_colors_EnhancedRoleColorUtils;
         message.roleColors = obj2.processColorStrings(result);
         message.message.shouldShowRoleOnName = true;
-        message.message.avatarURL = _modDef13623;
+        message.message.avatarURL = _modDef13618;
       }
     };
     items1 = [closure_1_9(onStyleChanged(button[17]), obj2), ];
@@ -346,7 +346,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnhancedRoleColo
           const obj2 = enhanced_role_colors_EnhancedRoleColorUtils;
           message.roleColors = obj2.processColorStrings(result);
           message.message.shouldShowRoleOnName = true;
-          message.message.avatarURL = _modDef13623;
+          message.message.avatarURL = _modDef13618;
         }
       };
       items1 = [closure_1_9(require("ChatItem"), obj2), ];

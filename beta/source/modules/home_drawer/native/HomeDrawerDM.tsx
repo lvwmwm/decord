@@ -1,7 +1,7 @@
 // Module ID: 17486
 // Function ID: 17487
 // Name: HomeDrawerDM
-// Dependencies: [19, 17, 2072, 4855, 6222, 1392, 1098, 21, 5191, 558, 576, 504, 5521, 17487, 16377, 13608, 10654, 5187, 13534, 9615, 17453, 5078, 5075, 2]
+// Dependencies: [19, 17, 2072, 4855, 6222, 1392, 1098, 21, 5191, 558, 576, 504, 5521, 17487, 16377, 13603, 10654, 5187, 13529, 9615, 17453, 5078, 5075, 2]
 
 // Module 17486 (HomeDrawerDM)
 import react_native from "react-native" /* 17 */;
@@ -11,7 +11,7 @@ import ChannelRecord from "ChannelRecord" /* 2072 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import useChannelName from "useChannelName" /* 5521 */;
 import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9615 */;
-import ChannelRowPreview2 from "ChannelRowPreview" /* 13534 */;
+import ChannelRowPreview2 from "ChannelRowPreview" /* 13529 */;
 import useMessagePreviewsDefault from "useMessagePreviews" /* 16377 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
@@ -162,7 +162,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDr
           isTemporary = tmp22.isTemporary;
         }
         if (isTemporary) {
-          BellSlashIcon = tmp(13608).BellZIcon;
+          BellSlashIcon = tmp(13603).BellZIcon;
         } else {
           BellSlashIcon = tmp(10654).BellSlashIcon;
         }
@@ -202,7 +202,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDr
                 }
               }
               const obj5 = { channel, message: tmp16, variant: "text-xs/medium", color: "text-strong", layout: tmp(9615).ChannelListLayoutTypes.COZY, muted: tmp22.isMuted };
-              const ChannelRowPreview = tmp(13534).ChannelRowPreview;
+              const ChannelRowPreview = tmp(13529).ChannelRowPreview;
               const tmp47 = closure_10(ChannelRowPreview, obj5);
               cResult[28] = channel;
               cResult[29] = tmp16;
@@ -357,7 +357,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDr
         isTemporary = tmp.isTemporary;
       }
       if (isTemporary) {
-        BellSlashIcon = tmp5(13608).BellZIcon;
+        BellSlashIcon = tmp5(13603).BellZIcon;
       } else {
         BellSlashIcon = tmp5(10654).BellSlashIcon;
       }

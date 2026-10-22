@@ -69,9 +69,9 @@ export const canBotScopeReadMessages = function canBotScopeReadMessages(socket, 
     return type === metroRequire.GUILD_APP && null != channel.application_id && channel.application_id === socket.application.id;
   }
 };
-export const validateBotScopeHasGuildAccess = function validateBotScopeHasGuildAccess(context, guild_id) {
-  if (isPostMessageSocketDefault(context)) {
-    if (guild_id !== getGuildIdForEmbeddedSurfaceDefault(context.context.surface)) {
+export const validateBotScopeHasGuildAccess = function validateBotScopeHasGuildAccess(socket, guild_id) {
+  if (isPostMessageSocketDefault(socket)) {
+    if (guild_id !== getGuildIdForEmbeddedSurfaceDefault(socket.context.surface)) {
       const self3 = this;
       const self4 = this;
       const obj2 = { errorCode: metroImportAll.INVALID_PERMISSIONS };

@@ -1,274 +1,325 @@
 // Module ID: 12430
 // Function ID: 12431
-// Dependencies: [32, 12387, 12431, 12392, 12433]
-// Exports: addItemToEnvelope, createAttachmentEnvelopeItem, createEnvelope, createEventEnvelopeHeaders, createSpanEnvelopeItem, envelopeContainsItemType, envelopeItemTypeToDataCategory, getSdkMetadataForEnvelopeHeader, parseEnvelope, serializeEnvelope
+// Dependencies: [12392, 12395, 12408, 12431, 12432, 12418, 12390, 12433, 12426, 12402]
+// Exports: parseEventHintOrCaptureContext, prepareEvent
 
 // Module 12430
-import _mod12387 from "module_12387" /* 12387 */;
-import _mod12392 from "module_12392" /* 12392 */;
-import _mod12431 from "module_12431" /* 12431 */;
+import _mod12390 from "module_12390" /* 12390 */;
+import _mod12402 from "module_12402" /* 12402 */;
+import _mod12418 from "module_12418" /* 12418 */;
+import _mod12426 from "module_12426" /* 12426 */;
 import _mod12433 from "module_12433" /* 12433 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
 
-let _require;
+let breadcrumbs, data, filename, integrations;
 
-function forEachEnvelopeItem(arg0, fn) {
-  const tmp = arg0[1];
-  for (const item10007 of tmp) {
-    if (fn(item10007, item10007[0].type)) {
-      obj.return();
-      let flag = true;
-      return true;
-    }
+function applyClientOptions(environment, environment2) {
+  let dist;
+  let maxValueLength;
+  let release;
+  ({ release, dist, maxValueLength } = environment2);
+  let num = 250;
+  environment = environment2.environment;
+  if (undefined !== maxValueLength) {
+    num = maxValueLength;
   }
-  return false;
-}
-let closure_4 = { session: "session", sessions: "session", attachment: "attachment", transaction: "transaction", event: "error", client_report: "internal", user_report: "default", profile: "profile", profile_chunk: "profile", replay_event: "replay", replay_recording: "replay", check_in: "monitor", feedback: "feedback", span: "span", statsd: "metric_bucket", raw_security: "security" };
-
-export const addItemToEnvelope = function addItemToEnvelope(arg0, arg1) {
-  const tmp2 = _slicedToArray(arg0, 2);
-  const items = [tmp2[0], ];
-  const items1 = [];
-  items1[HermesBuiltin.arraySpread(items1, tmp2[1], 0)] = arg1;
-  items[1] = items1;
-  return items;
-};
-export const createAttachmentEnvelopeItem = function createAttachmentEnvelopeItem(data) {
-  let data1;
-  if (typeof data.data === "string") {
-    data = data.data;
-    if (_mod12387.GLOBAL_OBJ.__SENTRY__) {
-      let encodePolyfillResult;
-      if (_mod12387.GLOBAL_OBJ.__SENTRY__.encodePolyfill) {
-        const __SENTRY__ = tmp(12387).GLOBAL_OBJ.__SENTRY__;
-        encodePolyfillResult = __SENTRY__.encodePolyfill(data);
-      }
-      data1 = encodePolyfillResult;
-    }
-    const _TextEncoder = TextEncoder;
-    const self = this;
-    const self2 = this;
-    const encoder = new TextEncoder();
-    encodePolyfillResult = encoder.encode(data);
-  } else {
-    data1 = data.data;
+  const DEFAULT_ENVIRONMENT = environment.environment || environment || _mod12418.DEFAULT_ENVIRONMENT;
+  environment.environment = DEFAULT_ENVIRONMENT;
+  const tmp3 = !environment.release && release;
+  if (tmp3) {
+    environment.release = release;
   }
-  const items = [, ];
-  const obj = _mod12392;
-  const obj2 = { type: "attachment", length: data1.length, filename: data.filename, content_type: data.contentType, attachment_type: data.attachmentType };
-  items[0] = obj.dropUndefinedKeys(obj2);
-  items[1] = data1;
-  return items;
-};
-export function createEnvelope(arg0) {
-  let items = arg1;
-  if (arg1 === undefined) {
-    items = [];
-  }
-  const items1 = [arg0, items];
-  return items1;
-}
-export const createEventEnvelopeHeaders = function createEventEnvelopeHeaders(event_id, sdk, arg2, arg3) {
-  let date;
-  let dropUndefinedKeys;
-  let obj5;
-  let obj6;
-  const obj = { event_id: event_id.event_id, sent_at: date.toISOString() };
-  let tmp2 = sdk;
-  date = new Date();
-  if (tmp2) {
-    tmp2 = { sdk };
-    const obj2 = { sdk };
-  }
-  const merged = Object.assign(tmp2);
-  let tmp4 = arg2 && arg3;
+  const tmp4 = !environment.dist && dist;
   if (tmp4) {
-    const obj3 = { dsn: obj5.dsnToString(arg3) };
-    tmp4 = obj3;
-    obj5 = _mod12433;
+    environment.dist = dist;
   }
-  const merged1 = Object.assign(tmp4);
-  let tmp8 = tmp;
-  if (tmp8) {
-    const obj4 = { trace: dropUndefinedKeys(obj6) };
-    obj6 = {};
-    dropUndefinedKeys = _mod12392.dropUndefinedKeys;
-    _mod12392;
-    const merged2 = Object.assign(tmp);
-    tmp8 = obj4;
+  if (environment.message) {
+    const obj = _mod12390;
+    environment.message = obj.truncate(environment.message, num);
   }
-  const merged3 = Object.assign(tmp8);
-  return obj;
-};
-export function createSpanEnvelopeItem(arg0) {
-  const items = [{ type: "span" }, arg0];
-  return items;
+  const tmp7 = environment.exception && environment.exception.values && environment.exception.values[0] && (environment.exception && environment.exception.values && environment.exception.values[0]).value;
+  if (tmp7) {
+    const obj2 = _mod12390;
+    (environment.exception && environment.exception.values && environment.exception.values[0]).value = obj2.truncate((environment.exception && environment.exception.values && environment.exception.values[0]).value, num);
+  }
+  const request = environment.request;
+  const tmp10 = request && request.url;
+  if (tmp10) {
+    const obj3 = _mod12390;
+    request.url = obj3.truncate(request.url, num);
+  }
 }
-export const envelopeContainsItemType = function envelopeContainsItemType(arg0, arg1) {
-  let closure_0 = arg1;
-  return forEachEnvelopeItem(arg0, (arg0, arg1) => closure_0.includes(arg1));
-};
-export const envelopeItemTypeToDataCategory = function envelopeItemTypeToDataCategory(arg0) {
-  return closure_4[arg0];
-};
-export { forEachEnvelopeItem };
-export const getSdkMetadataForEnvelopeHeader = function getSdkMetadataForEnvelopeHeader(sdk) {
-  const tmp = sdk;
-  if (tmp) {
-    if (sdk.sdk) {
-      const obj = { name: null, version: null };
-      ({ name: obj.name, version: obj.version } = sdk.sdk);
-      return obj;
-    }
-  }
-};
-export const parseEnvelope = function parseEnvelope(arr) {
-  let tmp = arr;
-  if (typeof arr === "string") {
-    if (require("module_12387").GLOBAL_OBJ.__SENTRY__) {
-      let encodePolyfillResult;
-      if (require("module_12387").GLOBAL_OBJ.__SENTRY__.encodePolyfill) {
-        let __SENTRY__ = tmp12(12387).GLOBAL_OBJ.__SENTRY__;
-        encodePolyfillResult = __SENTRY__.encodePolyfill(arr);
-      }
-      tmp = encodePolyfillResult;
-    }
-    const _TextEncoder = TextEncoder;
-    const self = this;
-    const self2 = this;
-    const encoder = new TextEncoder();
-    const tmp3 = encoder;
-    encodePolyfillResult = encoder.encode(arr);
-  }
-  function readJson() {
-    let length = closure_0.indexOf(10);
-    if (length < 0) {
-      length = closure_0.length;
-    }
-    const _JSON = JSON;
-    const subarrayResult = closure_0.subarray(0, length);
-    closure_0 = closure_0.subarray(length + 1);
-    if (_mod12387.GLOBAL_OBJ.__SENTRY__) {
-      let decodePolyfillResult;
-      if (_mod12387.GLOBAL_OBJ.__SENTRY__.decodePolyfill) {
-        const __SENTRY__ = tmp3(12387).GLOBAL_OBJ.__SENTRY__;
-        decodePolyfillResult = __SENTRY__.decodePolyfill(subarrayResult);
-      }
-      return parse(decodePolyfillResult);
-    }
-    const decoder = new TextDecoder();
-    decodePolyfillResult = decoder.decode(subarrayResult);
-  }
-  _require = tmp;
-  const items = [];
-  const json = readJson();
-  while (_require.length) {
-    let subarrayResult;
-    let json1 = readJson();
-    let length;
-    if (typeof json1.length === "number") {
-      length = json1.length;
-    }
-    let items1 = [json1, ];
-    let push = items.push;
-    if (length) {
-      subarrayResult = require("Discord");
-      _require = _require.subarray(length + 1);
-    } else {
-      subarrayResult = readJson();
-    }
-    items1[1] = subarrayResult;
-    arr = push(items1);
-  }
-  const items2 = [json, items];
-  return items2;
-};
-export const serializeEnvelope = function serializeEnvelope(arg0) {
-  let sum;
-  let tmp4;
-  function concatBuffers(arr) {
-    const uint8Array = new Uint8Array(arr.reduce((acc, item) => acc + item.length, 0));
-    let num = 0;
-    const iter = arr[Symbol.iterator]();
-    const nextResult = iter.next();
-    while (iter !== undefined) {
-      let result = uint8Array.set(nextResult, num);
-      num = num + nextResult.length;
-      continue;
-    }
-    return uint8Array;
-  }
-  function append(json) {
-    let require;
-    if (typeof require === "string") {
-      if (typeof json === "string") {
-        require = arr + json;
-      } else {
-        if (_mod12387.GLOBAL_OBJ.__SENTRY__) {
-          let encodePolyfillResult;
-          if (_mod12387.GLOBAL_OBJ.__SENTRY__.encodePolyfill) {
-            const __SENTRY__2 = tmp11(12387).GLOBAL_OBJ.__SENTRY__;
-            encodePolyfillResult = __SENTRY__2.encodePolyfill(arr);
-          }
-          require = [encodePolyfillResult, json];
+function applyDebugIds(exception, arg1) {
+  const obj = _mod12433;
+  const filenameToDebugIdMap = obj.getFilenameToDebugIdMap(arg1);
+  try {
+    const values = exception.exception.values;
+    let item = values.forEach((stacktrace) => {
+      const frames = stacktrace.stacktrace.frames;
+      const item = frames.forEach((filename) => {
+        filename = closure_1_0 && filename.filename;
+        if (filename) {
+          filename.debug_id = closure_1_0[filename.filename];
         }
-        const _TextEncoder2 = TextEncoder;
-        const self3 = this;
-        const self4 = this;
-        const encoder2 = new TextEncoder();
-        encodePolyfillResult = encoder2.encode(arr);
-      }
-    } else {
-      let tmp4 = json;
-      const push = arr.push;
-      if (typeof json === "string") {
-        if (_mod12387.GLOBAL_OBJ.__SENTRY__) {
-          let encodePolyfillResult1;
-          if (_mod12387.GLOBAL_OBJ.__SENTRY__.encodePolyfill) {
-            const __SENTRY__ = tmp9(12387).GLOBAL_OBJ.__SENTRY__;
-            encodePolyfillResult1 = __SENTRY__.encodePolyfill(json);
-          }
-          tmp4 = encodePolyfillResult1;
-        }
-        const _TextEncoder = TextEncoder;
-        const self = this;
-        const self2 = this;
-        const encoder = new TextEncoder();
-        encodePolyfillResult1 = encoder.encode(json);
-      }
-      push(tmp4);
-    }
+      });
+    });
+  } catch (err) {
   }
-  let tmp = _slicedToArray(arg0, 2);
-  const tmp2 = tmp[1];
-  let require = JSON.stringify(tmp[0]);
-  const tmp3 = tmp2[Symbol.iterator]();
-  if (tmp3 === undefined) {
-    let tmp20 = require;
-    if (typeof require !== "string") {
-      tmp20 = concatBuffers(tmp19);
+}
+function applyDebugMeta(exception) {
+  const obj = {};
+  try {
+    const values = exception.exception.values;
+    let item = values.forEach((stacktrace) => {
+      const frames = stacktrace.stacktrace.frames;
+      const item = frames.forEach((debug_id) => {
+        if (debug_id.debug_id) {
+          if (debug_id.abs_path) {
+            obj[debug_id.abs_path] = debug_id.debug_id;
+          } else if (debug_id.filename) {
+            obj[debug_id.filename] = debug_id.debug_id;
+          }
+          delete tmp["debug_id"];
+        }
+      });
+    });
+  } catch (err) {
+  }
+  if (0 !== Object.keys(obj).length) {
+    exception.debug_meta = exception.debug_meta || {};
+    let images = exception.debug_meta.images;
+    const debug_meta = exception.debug_meta;
+    if (!images) {
+      images = [];
     }
-    return tmp20;
+    debug_meta.images = images;
+    images = exception.debug_meta.images;
+    const _Object = Object;
+    const entries = Object.entries(obj);
+    const item1 = entries.forEach((item) => {
+      let tmp;
+      let tmp2;
+      [tmp, tmp2] = item;
+      images.push({ type: "sourcemap", code_file: tmp, debug_id: tmp2 });
+    });
+  }
+}
+let closure_5 = ["user", "level", "extra", "contexts", "tags", "fingerprint", "requestSession", "propagationContext"];
+
+export { applyClientOptions };
+export { applyDebugIds };
+export { applyDebugMeta };
+export const parseEventHintOrCaptureContext = function parseEventHintOrCaptureContext(captureContext) {
+  if (captureContext) {
+    let tmp5;
+    const tmp3 = captureContext instanceof _mod12402.Scope || typeof captureContext === "function";
+    if (tmp3) {
+      tmp5 = { captureContext };
+      const obj = { captureContext };
+    } else {
+      const _Object = Object;
+      const keys = Object.keys(captureContext);
+      tmp5 = captureContext;
+    }
+    return tmp5;
+  }
+};
+export const prepareEvent = function prepareEvent(normalizeDepth, event_id, event_id2, clone, emit, getScopeData) {
+  let timestamp;
+  let uuid4Result;
+  normalizeDepth = normalizeDepth.normalizeDepth;
+  let num = 3;
+  if (undefined !== normalizeDepth) {
+    num = normalizeDepth;
+  }
+  const normalizeMaxBreadth = normalizeDepth.normalizeMaxBreadth;
+  let num2 = 1000;
+  if (undefined !== normalizeMaxBreadth) {
+    num2 = normalizeMaxBreadth;
+  }
+  let obj = { event_id: uuid4Result, timestamp };
+  let merged = Object.assign(event_id);
+  uuid4Result = event_id.event_id || event_id2.event_id;
+  if (!uuid4Result) {
+    const tmp4 = num;
+    let tmp5 = num2;
+    let obj2 = num(num2[0]);
+    uuid4Result = obj2.uuid4();
+  }
+  timestamp = event_id.timestamp;
+  if (!timestamp) {
+    let obj3 = num(num2[1]);
+    timestamp = obj3.dateTimestampInSeconds();
+  }
+  integrations = event_id2.integrations;
+  if (!integrations) {
+    const integrations1 = normalizeDepth.integrations;
+    integrations = integrations1.map((name) => name.name);
+  }
+  applyClientOptions(obj, normalizeDepth);
+  if (integrations.length > 0) {
+    obj.sdk = obj.sdk || {};
+    let integrations2 = obj.sdk.integrations;
+    const sdk = obj.sdk;
+    if (!integrations2) {
+      integrations2 = [];
+    }
+    const items = [];
+    HermesBuiltin.arraySpread(items, integrations, HermesBuiltin.arraySpread(items, integrations2, 0));
+    sdk.integrations = items;
+  }
+  const tmp14 = emit;
+  if (tmp14) {
+    emit.emit("applyFrameMetadata", event_id);
+  }
+  if (undefined === event_id.type) {
+    applyDebugIds(obj, normalizeDepth.stackParser);
+  }
+  const captureContext = event_id2.captureContext;
+  let obj4 = clone;
+  if (captureContext) {
+    let cloneResult;
+    if (clone) {
+      cloneResult = clone.clone();
+    } else {
+      const self = this;
+      const self2 = this;
+      cloneResult = new num(num2[9]).Scope();
+    }
+    cloneResult.update(captureContext);
+    obj4 = cloneResult;
+  }
+  if (event_id2.mechanism) {
+    const obj6 = num(num2[0]);
+    const result = obj6.addExceptionMechanism(obj, event_id2.mechanism);
+  }
+  if (emit) {
+    let eventProcessors = emit.getEventProcessors();
   } else {
-    const tmp6 = _slicedToArray(tmp4, 2);
-    const _JSON = JSON;
-    const _HermesInternal = HermesInternal;
-    append("\n" + JSON.stringify(tmp6[0]) + "\n");
-    if (typeof tmp6[1] !== "string") {
-      const _Uint8Array = Uint8Array;
-      if (!(tmp6[1] instanceof Uint8Array)) {
-        let json;
-        try {
-          const _JSON2 = JSON;
-          json = JSON.stringify(tmp8);
-        } catch (err) {
-          const _JSON3 = JSON;
-          const normalizer = _mod12431;
-          json = stringify(normalizer.normalize(tmp8));
+    eventProcessors = [];
+  }
+  const obj7 = num(num2[2]);
+  const globalScope = obj7.getGlobalScope();
+  const scopeData = globalScope.getScopeData();
+  if (getScopeData) {
+    const scopeData1 = getScopeData.getScopeData();
+    const tmp24Result = num(num2[3]);
+    tmp24Result.mergeScopeData(scopeData, scopeData1);
+  }
+  if (obj4) {
+    const scopeData2 = obj4.getScopeData();
+    const tmp24Result4 = num(num2[3]);
+    tmp24Result4.mergeScopeData(scopeData, scopeData2);
+  }
+  let tmp31 = event_id2.attachments || [];
+  const items1 = [...scopeData.attachments];
+  if (items1.length) {
+    event_id2.attachments = items1;
+  }
+  const tmp24Result5 = num(num2[3]);
+  const result1 = tmp24Result5.applyScopeDataToEvent(obj, scopeData);
+  const items2 = [...scopeData.eventProcessors];
+  const tmp24Result6 = num(num2[4]);
+  const result2 = tmp24Result6.notifyEventProcessors(items2, obj, event_id2);
+  return result2.then((breadcrumbs) => {
+    let breadcrumbs1;
+    let normalizer;
+    let normalizer2;
+    let normalizer3;
+    const tmp = breadcrumbs;
+    if (tmp) {
+      applyDebugMeta(breadcrumbs);
+    }
+    let tmp5 = breadcrumbs;
+    if (typeof num === "number") {
+      num2 = 0;
+      tmp5 = breadcrumbs;
+      if (num > 0) {
+        let closure_0 = tmp4;
+        let closure_1 = num2;
+        let tmp31 = null;
+        if (breadcrumbs) {
+          let obj = {};
+          let merged = Object.assign(breadcrumbs);
+          breadcrumbs = breadcrumbs.breadcrumbs;
+          if (breadcrumbs) {
+            let obj2 = {
+              breadcrumbs: breadcrumbs1.map((data) => {
+                        let normalizer;
+                        const obj = {};
+                        const merged = Object.assign(data);
+                        data = data.data;
+                        if (data) {
+                          const obj2 = { data: normalizer.normalize(data.data, closure_0, closure_1) };
+                          normalizer = num(num2[8]);
+                          data = obj2;
+                        }
+                        const merged1 = Object.assign(data);
+                        return obj;
+                      })
+            };
+            breadcrumbs1 = breadcrumbs.breadcrumbs;
+            breadcrumbs = obj2;
+          }
+          let merged1 = Object.assign(breadcrumbs);
+          let user = breadcrumbs.user;
+          if (user) {
+            const obj3 = { user: normalizer.normalize(breadcrumbs.user, num, num2) };
+            normalizer = _mod12426;
+            user = obj3;
+          }
+          const merged2 = Object.assign(user);
+          let contexts = breadcrumbs.contexts;
+          if (contexts) {
+            const obj4 = { contexts: normalizer2.normalize(breadcrumbs.contexts, num, num2) };
+            normalizer2 = _mod12426;
+            contexts = obj4;
+          }
+          const merged3 = Object.assign(contexts);
+          let extra = breadcrumbs.extra;
+          if (extra) {
+            const obj5 = { extra: normalizer3.normalize(breadcrumbs.extra, num, num2) };
+            normalizer3 = _mod12426;
+            extra = obj5;
+          }
+          const merged4 = Object.assign(extra);
+          const tmp27 = breadcrumbs.contexts && breadcrumbs.contexts.trace && obj.contexts;
+          if (tmp27) {
+            obj.contexts.trace = breadcrumbs.contexts.trace;
+            if (breadcrumbs.contexts.trace.data) {
+              const trace = obj.contexts.trace;
+              const normalizer4 = _mod12426;
+              trace.data = normalizer4.normalize(breadcrumbs.contexts.trace.data, num, num2);
+            }
+          }
+          if (breadcrumbs.spans) {
+            const spans = breadcrumbs.spans;
+            obj.spans = spans.map((data) => {
+              let normalizer;
+              const obj = {};
+              const merged = Object.assign(data);
+              data = data.data;
+              if (data) {
+                const obj2 = { data: normalizer.normalize(data.data, closure_0, closure_1) };
+                normalizer = num(num2[8]);
+                data = obj2;
+              }
+              const merged1 = Object.assign(data);
+              return obj;
+            });
+          }
+          tmp31 = obj;
+          const tmp30 = breadcrumbs.contexts && breadcrumbs.contexts.flags && obj.contexts;
+          if (tmp30) {
+            const contexts2 = obj.contexts;
+            const normalizer5 = _mod12426;
+            num = 3;
+            contexts2.flags = normalizer5.normalize(breadcrumbs.contexts.flags, 3, num2);
+            tmp31 = obj;
+          }
         }
-        append(json);
+        tmp5 = tmp31;
       }
     }
-    append(tmp6[1]);
-  }
+    return tmp5;
+  });
 };

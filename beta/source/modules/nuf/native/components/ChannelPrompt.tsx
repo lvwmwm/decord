@@ -1,10 +1,10 @@
-// Module ID: 13459
-// Function ID: 13460
+// Module ID: 13454
+// Function ID: 13455
 // Name: ChannelPrompt
 // Dependencies: [5, 32, 19, 17, 4843, 2090, 21, 5191, 6536, 504, 1505, 6478, 1128, 7290, 5891, 7092, 6436, 1417, 5187, 6562, 5479, 6899, 2]
 // Exports: default
 
-// Module 13459 (ChannelPrompt)
+// Module 13454 (ChannelPrompt)
 import intl5 from "intl" /* 1128 */;
 import NavigatorHeader from "NavigatorHeader" /* 6478 */;
 import NavigatorConstants from "NavigatorConstants" /* 6536 */;

@@ -1,7 +1,7 @@
 // Module ID: 16065
 // Function ID: 16066
 // Name: useBountyPauseAppStoreSheet
-// Dependencies: [19, 6228, 1087, 9484, 558, 576, 9504, 16063, 1123, 6233, 7681, 9506, 7672, 6235, 13897, 16060, 2]
+// Dependencies: [19, 6228, 1087, 9484, 558, 576, 9504, 16063, 1123, 6233, 7681, 9506, 7672, 6235, 13892, 16060, 2]
 
 // Module 16065 (useBountyPauseAppStoreSheet)
 import Constants from "Constants" /* 1087 */;
@@ -9,7 +9,7 @@ import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import QuestConstants from "QuestConstants" /* 6228 */;
 import AdCreativeType from "AdCreativeType" /* 6235 */;
 import AnalyticsActions from "AnalyticsActions" /* 7672 */;
-import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 13897 */;
+import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 13892 */;
 import AdsVideoTypes from "AdsVideoTypes" /* 16060 */;
 import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 16063 */;
 import react from "react" /* 19 */;
@@ -150,7 +150,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountyPau
       if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
         class T {
           constructor() {
-            return () => { /* body not rendered: F149493 */ };
+            return () => { /* body not rendered: F149502 */ };
           }
         }
         const items = [tmp15];
@@ -179,7 +179,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountyPau
       } else {
         class T {
           constructor() {
-            return () => { /* body not rendered: F149493 */ };
+            return () => { /* body not rendered: F149502 */ };
           }
         }
         tmp18 = cResult[11];
@@ -188,7 +188,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountyPau
       if (cResult[12] === bounty.cta) {
         class T {
           constructor() {
-            return () => { /* body not rendered: F149493 */ };
+            return () => { /* body not rendered: F149502 */ };
           }
         }
       }
@@ -210,11 +210,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountyPau
           obj1 = { link: url, directLink: directAppStoreLinkFromCta, inlineStoreParams: null, allowExternalOpen: false, trackOverlayEvent: null, trackOverlaySurfaceClick: null, appStoreOverlayCarouselScrollContext: null };
           tmpResult = tmp(tmp2[11]);
           obj1.inlineStoreParams = tmpResult.getInlineStoreParamsFromCta(tmp3.cta);
-          obj1.trackOverlayEvent = function trackOverlayEvent() { /* body not rendered: F149494 */ };
-          obj1.trackOverlaySurfaceClick = function trackOverlaySurfaceClick() { /* body not rendered: F149495 */ };
+          obj1.trackOverlayEvent = function trackOverlayEvent() { /* body not rendered: F149503 */ };
+          obj1.trackOverlaySurfaceClick = function trackOverlaySurfaceClick() { /* body not rendered: F149504 */ };
           obj1.appStoreOverlayCarouselScrollContext = { adContentId: tmp3.id };
           openAppStoreOrUrlResult = openAppStoreOrUrl(obj1);
-          return openAppStoreOrUrlResult.then(() => { /* body not rendered: F149496 */ });
+          return openAppStoreOrUrlResult.then(() => { /* body not rendered: F149505 */ });
         }
       }
       cResult[12] = bounty.cta;

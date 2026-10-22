@@ -1,13 +1,13 @@
 // Module ID: 17770
 // Function ID: 17771
 // Name: useSuggestedSearches
-// Dependencies: [19, 12989, 12990, 558, 576, 13028, 504, 13012, 13010, 2]
+// Dependencies: [19, 12984, 12985, 558, 576, 13023, 504, 13007, 13005, 2]
 
 // Module 17770 (useSuggestedSearches)
-import SuggestedSearchStore2 from "SuggestedSearchStore" /* 12989 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 12990 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13010 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13012 */;
+import SuggestedSearchStore2 from "SuggestedSearchStore" /* 12984 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 12985 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13005 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13007 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -31,8 +31,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSuggested
   const trackShown = source.trackShown;
   dependencyMap = tmp4;
   guildId = undefined;
-  const useIsNlpSearchEnabled = tmp(13028).useIsNlpSearchEnabled;
-  tmp(13028);
+  const useIsNlpSearchEnabled = tmp(13023).useIsNlpSearchEnabled;
+  tmp(13023);
   if (guildId != null) {
     guildId = guildId.guildId;
   }

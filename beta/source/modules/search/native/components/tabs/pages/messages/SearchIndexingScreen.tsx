@@ -1,11 +1,11 @@
 // Module ID: 17855
 // Function ID: 17856
 // Name: SearchIndexingScreen
-// Dependencies: [19, 21, 558, 576, 13009, 12995, 17773, 2]
+// Dependencies: [19, 21, 558, 576, 13004, 12990, 17773, 2]
 
 // Module 17855 (SearchIndexingScreen)
 import Fragment from "Fragment" /* 21 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13009 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13004 */;
 import ErrorScreenDefault from "ErrorScreen" /* 17773 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -39,7 +39,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchInde
   }
   const effect = react.useEffect(tmp4, tmp5);
   if (cResult[3] !== searchContext) {
-    const tmpResult = tmp(12995);
+    const tmpResult = tmp(12990);
     const indexingErrorText = tmpResult.getIndexingErrorText(searchContext);
     cResult[3] = searchContext;
     cResult[4] = indexingErrorText;
@@ -64,7 +64,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchInde
     const obj2 = { searchContext };
     obj.trackSearchIndexing(obj2);
   }, items);
-  let obj = searchContext(12995);
+  let obj = searchContext(12990);
   const text = obj.getIndexingErrorText(searchContext);
   return jsx(ErrorScreenDefault, { text });
 });

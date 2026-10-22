@@ -1,18 +1,18 @@
-// Module ID: 12888
-// Function ID: 12889
+// Module ID: 12883
+// Function ID: 12884
 // Name: ForumPostListFooter
-// Dependencies: [19, 17, 1087, 21, 5191, 587, 558, 576, 12830, 7256, 12881, 12889, 12882, 10774, 2]
+// Dependencies: [19, 17, 1087, 21, 5191, 587, 558, 576, 12825, 7256, 12876, 12884, 12877, 10774, 2]
 
-// Module 12888 (ForumPostListFooter)
+// Module 12883 (ForumPostListFooter)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7256 */;
-import useTypingUsersIds from "useTypingUsersIds" /* 12830 */;
-import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 12881 */;
-import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 12882 */;
-import GameInviteVoiceCountDefault from "GameInviteVoiceCount" /* 12889 */;
+import useTypingUsersIds from "useTypingUsersIds" /* 12825 */;
+import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 12876 */;
+import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 12877 */;
+import GameInviteVoiceCountDefault from "GameInviteVoiceCount" /* 12884 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;
@@ -159,7 +159,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLis
   items = [hasOwnProperty(ForumPostMessageCountDefault, { thread, hasUnreads }), , , ];
   if (isGameInvitesPost) {
     const obj4 = { channel: thread };
-    isGameInvitesPost = tmp8(tmp9(12889), obj4);
+    isGameInvitesPost = tmp8(tmp9(12884), obj4);
   }
   items[1] = isGameInvitesPost;
   if (tmp6Result) {

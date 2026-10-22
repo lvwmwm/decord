@@ -1,7 +1,7 @@
 // Module ID: 17220
 // Function ID: 17221
 // Name: HappeningNowActions
-// Dependencies: [19, 17, 4843, 2090, 2119, 16354, 1087, 21, 5191, 587, 1267, 558, 576, 8880, 1128, 17221, 8910, 17222, 8955, 17223, 12958, 13488, 5128, 5187, 16355, 2]
+// Dependencies: [19, 17, 4843, 2090, 2119, 16354, 1087, 21, 5191, 587, 1267, 558, 576, 8880, 1128, 17221, 8910, 17222, 8955, 17223, 12953, 13483, 5128, 5187, 16355, 2]
 
 // Module 17220 (HappeningNowActions)
 import react_native from "react-native" /* 17 */;
@@ -12,8 +12,8 @@ import FastImageDefault from "FastImage" /* 5128 */;
 import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8880 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8910 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8955 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 12958 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13488 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 12953 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13483 */;
 import HappeningNowCardDefault from "HappeningNowCard" /* 16355 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 17221 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 17222 */;

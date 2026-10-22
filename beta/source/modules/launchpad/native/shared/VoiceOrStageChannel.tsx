@@ -1,7 +1,7 @@
 // Module ID: 18396
 // Function ID: 18397
 // Name: VoiceOrStageChannel
-// Dependencies: [5, 19, 17, 6152, 2073, 2132, 6222, 5215, 1087, 1206, 2075, 21, 1128, 7748, 2002, 5513, 8460, 6424, 1114, 558, 576, 7329, 13630, 10595, 5191, 5127, 9609, 5065, 17797, 10666, 17487, 504, 6212, 6206, 11874, 17796, 5521, 18391, 5486, 11898, 17360, 12941, 18393, 18388, 18397, 18389, 6462, 17366, 2]
+// Dependencies: [5, 19, 17, 6152, 2073, 2132, 6222, 5215, 1087, 1206, 2075, 21, 1128, 7748, 2002, 5513, 8460, 6424, 1114, 558, 576, 7329, 13625, 10595, 5191, 5127, 9609, 5065, 17797, 10666, 17487, 504, 6212, 6206, 11869, 17796, 5521, 18391, 5486, 11893, 17360, 12936, 18393, 18388, 18397, 18389, 6462, 17366, 2]
 
 // Module 18396 (VoiceOrStageChannel)
 import react_native from "react-native" /* 17 */;
@@ -12,8 +12,8 @@ import ChannelConstants from "ChannelConstants" /* 2075 */;
 import StageChannelParticipants from "StageChannelParticipants" /* 6206 */;
 import transitionToGuild from "transitionToGuild" /* 7329 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10595 */;
-import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11898 */;
-import hideLaunchPadDefault from "hideLaunchPad" /* 13630 */;
+import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11893 */;
+import hideLaunchPadDefault from "hideLaunchPad" /* 13625 */;
 import useStageChannelSpeakerVoiceStates from "useStageChannelSpeakerVoiceStates" /* 17366 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -32,7 +32,7 @@ let _require;
 
 let closure_14;
 let closure_15;
-const f153327 = function() {
+const f153336 = function() {
   return closure_0(...arguments);
 };
 function getStageChannelAccessibilityProps(arg0) {
@@ -198,7 +198,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoi
       }
     })();
   });
-  const callback = useCallback(f153327, []);
+  const callback = useCallback(f153336, []);
   if (cResult[0] === id) {
     let tmp3;
     let tmp4;
@@ -314,7 +314,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoi
       }
     })();
   });
-  const callback = useCallback(f153327, []);
+  const callback = useCallback(f153336, []);
   obj = {
     onPress: react.useCallback(() => {
       if (null != id.guild_id) {
@@ -410,7 +410,7 @@ let closure_22 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
   const tmpResult9 = tmp(6212);
   const stageParticipantsCount = tmpResult9.useStageParticipantsCount(channel.id, tmp(6206).StageChannelParticipantNamedIndex.AUDIENCE);
   closure_19(channel);
-  const arr2 = subtitle(11874)(channel);
+  const arr2 = subtitle(11869)(channel);
   if (cResult[6] === channel) {
     class G {
       constructor() {
@@ -471,7 +471,7 @@ let closure_22 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
   const stageParticipantsCount = obj5.useStageParticipantsCount(channel.id, channel(6206).StageChannelParticipantNamedIndex.AUDIENCE);
   const sum = stageParticipantsCount + voiceStates.length;
   const tmp13 = closure_19(channel);
-  const arr3 = subtitle(11874)(channel);
+  const arr3 = subtitle(11869)(channel);
   const obj6 = channel(17796);
   const obj7 = { channel, unread, mentionCount, voiceStates, embeddedActivitiesCount: arr3.length };
   let channelAccessibilityProps = obj6.getChannelAccessibilityProps(obj7);
@@ -538,7 +538,7 @@ let closure_22 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
   } else {
     tmp31 = closure_14;
     const obj13 = { channel, voiceStates };
-    tmp32 = closure_14(tmp5(12941).VocalChannelJoinButton, obj13);
+    tmp32 = closure_14(tmp5(12936).VocalChannelJoinButton, obj13);
   }
   items6 = [tmpResult2(obj11), ];
   let tmp31Result = null;

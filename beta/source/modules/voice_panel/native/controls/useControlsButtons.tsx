@@ -1,13 +1,13 @@
 // Module ID: 18312
 // Function ID: 18313
 // Name: useControlsButtons
-// Dependencies: [19, 2014, 10678, 1087, 21, 18313, 18316, 18322, 18324, 18326, 18328, 18330, 18335, 18196, 1630, 10679, 18171, 504, 4945, 12929, 8668, 2]
+// Dependencies: [19, 2014, 10678, 1087, 21, 18313, 18316, 18322, 18324, 18326, 18328, 18330, 18335, 18196, 1630, 10679, 18171, 504, 4945, 12924, 8668, 2]
 // Exports: default
 
 // Module 18312 (useControlsButtons)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
-import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 12929 */;
+import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 12924 */;
 import VoicePanelMicButton from "VoicePanelMicButton" /* 18313 */;
 import VoicePanelConnectButtonDefault from "VoicePanelConnectButton" /* 18316 */;
 import VoicePanelChatButtonDefault from "VoicePanelChatButton" /* 18322 */;
@@ -105,7 +105,7 @@ export default function useControlsButtons() {
     const width = windowDimensions.get().width;
     return getControlsDefaultWidth(width, safeArea.get().left, safeArea.get().right);
   };
-  let obj4 = { getControlsDefaultWidth: windowDimensions(12929).getControlsDefaultWidth, windowDimensions, safeArea };
+  let obj4 = { getControlsDefaultWidth: windowDimensions(12924).getControlsDefaultWidth, windowDimensions, safeArea };
   fn.__closure = obj4;
   fn.__workletHash = 16456936876254;
   fn.__initData = __initData;

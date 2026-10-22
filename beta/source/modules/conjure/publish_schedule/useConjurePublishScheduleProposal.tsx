@@ -1,9 +1,9 @@
-// Module ID: 12310
-// Function ID: 12311
+// Module ID: 12305
+// Function ID: 12306
 // Name: useConjurePublishScheduleProposal
 // Dependencies: [5, 32, 19, 6293, 558, 576, 504, 11066, 11067, 1128, 3883, 11676, 2]
 
-// Module 12310 (useConjurePublishScheduleProposal)
+// Module 12305 (useConjurePublishScheduleProposal)
 import _modDef3883 from "module_3883" /* 3883 */;
 import ConjureProjectStore2 from "ConjureProjectStore" /* 6293 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

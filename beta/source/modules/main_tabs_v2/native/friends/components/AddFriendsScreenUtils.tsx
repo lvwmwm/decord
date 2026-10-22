@@ -1,7 +1,7 @@
 // Module ID: 17173
 // Function ID: 17174
 // Name: AddFriendsScreenUtils
-// Dependencies: [5, 2068, 1087, 5185, 10533, 7290, 4903, 1128, 12923, 7445, 7293, 2]
+// Dependencies: [5, 2068, 1087, 5185, 10533, 7290, 4903, 1128, 12918, 7445, 7293, 2]
 // Exports: acceptIncomingRequest, addContactSuggestion, dismissIncomingRequest, sendWave
 
 // Module 17173 (AddFriendsScreenUtils)

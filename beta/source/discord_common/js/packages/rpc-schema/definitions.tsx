@@ -579,6 +579,71 @@ class Message {
     return objectResult.meta({ className: "Message" });
   }
 }
+class Role {
+  constructor(object) {
+    let allowResult2;
+    let allowResult3;
+    let booleanResult;
+    let booleanResult1;
+    let booleanResult2;
+    let metaResult;
+    let numberResult;
+    let numberResult1;
+    let numberResult4;
+    let numberResult5;
+    let object1Result;
+    let object4Result;
+    let optionalResult;
+    let optionalResult1;
+    let requiredResult;
+    let stringResult1;
+    let stringResult5;
+    let stringResult6;
+    let stringResult7;
+    let validResult;
+    let validResult3;
+    let validResult4;
+    object = object.object;
+    const obj = { id: requiredResult.meta({ className: "GuildRoleId" }), name: stringResult1.required(), color: numberResult.required(), colors: object1Result.required(), hoist: booleanResult.required(), position: numberResult4.required(), permissions: metaResult.required(), managed: booleanResult1.required(), mentionable: booleanResult2.required(), icon: allowResult2.required(), unicode_emoji: allowResult3.required(), tags: object4Result.required(), flags: numberResult5.required() };
+    const stringResult = object.string();
+    requiredResult = stringResult.required();
+    stringResult1 = object.string();
+    numberResult = object.number();
+    const object2 = object.object;
+    const obj2 = { primary_color: numberResult1.required(), secondary_color: optionalResult.required(), tertiary_color: optionalResult1.required() };
+    numberResult1 = object.number();
+    const numberResult2 = object.number();
+    const allowResult = numberResult2.allow(null);
+    optionalResult = allowResult.optional();
+    const numberResult3 = object.number();
+    const allowResult1 = numberResult3.allow(null);
+    optionalResult1 = allowResult1.optional();
+    object1Result = object2(obj2);
+    booleanResult = object.boolean();
+    numberResult4 = object.number();
+    const stringResult2 = object.string();
+    const regexResult = stringResult2.regex(/^\d+$/);
+    metaResult = regexResult.meta({ format: "bigint", className: "SerializedBigFlag" });
+    booleanResult1 = object.boolean();
+    booleanResult2 = object.boolean();
+    const stringResult3 = object.string();
+    allowResult2 = stringResult3.allow(null);
+    const stringResult4 = object.string();
+    allowResult3 = stringResult4.allow(null);
+    const object3 = object.object;
+    const obj3 = { bot_id: stringResult5.optional(), integration_id: stringResult6.optional(), premium_subscriber: validResult.optional(), subscription_listing_id: stringResult7.optional(), available_for_purchase: validResult3.optional(), guild_connections: validResult4.optional() };
+    stringResult5 = object.string();
+    stringResult6 = object.string();
+    validResult = object.valid(null);
+    stringResult7 = object.string();
+    validResult3 = object.valid(null);
+    validResult4 = object.valid(null);
+    object4Result = object3(obj3);
+    numberResult5 = object.number();
+    const objectResult = object(obj);
+    return objectResult.meta({ className: "Role" });
+  }
+}
 class Sku {
   constructor(object) {
     let allowResult;
@@ -1715,7 +1780,7 @@ let obj26 = {
     return obj;
   }
 };
-let items = [, , , , , ];
+let items = [, , , , , , ];
 const obj27 = {
   request(array) {
     let maxResult;
@@ -1941,6 +2006,14 @@ const obj37 = {
 };
 const obj38 = {
   embeddedAppSDK: true,
+  request: "Array",
+  response(arg0) {
+    const obj = User(arg0);
+    return obj.allow(null);
+  }
+};
+const obj39 = {
+  embeddedAppSDK: true,
   request(string) {
     let requiredResult;
     const obj = { quest_id: requiredResult.meta({ className: "QuestId" }) };
@@ -1960,7 +2033,7 @@ const obj38 = {
     return obj;
   }
 };
-const obj39 = {
+const obj40 = {
   embeddedAppSDK: true,
   request(string) {
     let requiredResult;
@@ -1976,7 +2049,7 @@ const obj39 = {
     return obj;
   }
 };
-const obj40 = {
+const obj41 = {
   embeddedAppSDK: true,
   request: "Array",
   response(string) {
@@ -1994,7 +2067,7 @@ const obj40 = {
     return obj;
   }
 };
-const obj41 = {
+const obj42 = {
   embeddedAppSDK: true,
   request: "Array",
   response(string) {
@@ -2004,7 +2077,7 @@ const obj41 = {
     return obj;
   }
 };
-const obj42 = {
+const obj43 = {
   request(boolean) {
     let booleanResult;
     const obj = { enabled: booleanResult.required() };
@@ -2018,7 +2091,7 @@ const obj42 = {
     return obj;
   }
 };
-const obj43 = {
+const obj44 = {
   embeddedAppSDK: true,
   request(string) {
     let maxResult;
@@ -2032,7 +2105,7 @@ const obj43 = {
   },
   response: "Reflect"
 };
-const obj44 = {
+const obj45 = {
   embeddedAppSDK: true,
   request: "Array",
   response(boolean) {
@@ -2042,7 +2115,7 @@ const obj44 = {
     return obj;
   }
 };
-const obj45 = {
+const obj46 = {
   embeddedAppSDK: true,
   request: "Array",
   response(boolean) {
@@ -2052,7 +2125,7 @@ const obj45 = {
     return obj;
   }
 };
-const obj46 = {
+const obj47 = {
   embeddedAppSDK: true,
   request: "Array",
   response(string) {
@@ -2062,7 +2135,7 @@ const obj46 = {
     return obj;
   }
 };
-const obj47 = {
+const obj48 = {
   embeddedAppSDK: true,
   request(number) {
     let obj2;
@@ -2076,7 +2149,7 @@ const obj47 = {
   },
   response: "Reflect"
 };
-const obj48 = {
+const obj49 = {
   embeddedAppSDK: true,
   request(boolean) {
     let booleanResult;
@@ -2091,7 +2164,7 @@ const obj48 = {
     return obj;
   }
 };
-const obj49 = {
+const obj50 = {
   embeddedAppSDK: true,
   request(string) {
     let maxResult;
@@ -2110,7 +2183,7 @@ const obj49 = {
     return objectResult.default({ opened: null });
   }
 };
-const obj50 = {
+const obj51 = {
   embeddedAppSDK: true,
   request: "Array",
   response(string) {
@@ -2122,7 +2195,7 @@ const obj50 = {
     return obj;
   }
 };
-const obj51 = {
+const obj52 = {
   embeddedAppSDK: true,
   request: "Array",
   response(array) {
@@ -2133,7 +2206,7 @@ const obj51 = {
     return obj;
   }
 };
-const obj52 = {
+const obj53 = {
   embeddedAppSDK: true,
   request: "Array",
   response(array) {
@@ -2144,7 +2217,7 @@ const obj52 = {
     return obj;
   }
 };
-const obj53 = {
+const obj54 = {
   embeddedAppSDK: true,
   request(string) {
     let numberResult;
@@ -2161,7 +2234,7 @@ const obj53 = {
     return itemsResult.allow(null);
   }
 };
-const obj54 = {
+const obj55 = {
   embeddedAppSDK: true,
   request(string) {
     let requiredResult;
@@ -2174,7 +2247,7 @@ const obj54 = {
     return Channel(arg0);
   }
 };
-const obj55 = {
+const obj56 = {
   embeddedAppSDK: true,
   request(string) {
     let optionalResult;
@@ -2203,14 +2276,14 @@ const obj55 = {
     return obj;
   }
 };
-const obj56 = {
+const obj57 = {
   request: "Array",
   response(arg0) {
     const obj = Channel(arg0);
     return obj.allow(null);
   }
 };
-const obj57 = {
+const obj58 = {
   request(string) {
     let booleanResult;
     let booleanResult1;
@@ -2232,7 +2305,7 @@ const obj57 = {
     return obj.allow(null);
   }
 };
-const obj58 = {
+const obj59 = {
   request(string) {
     let maxResult;
     let optionalResult;
@@ -2250,7 +2323,7 @@ const obj58 = {
     return obj.allow(null);
   }
 };
-const obj59 = {
+const obj60 = {
   request(string) {
     let allowResult1;
     let booleanResult;
@@ -2318,7 +2391,7 @@ const obj59 = {
     return obj;
   }
 };
-const obj60 = {
+const obj61 = {
   embeddedAppSDK: true,
   request(string) {
     let maxResult;
@@ -2347,7 +2420,7 @@ const obj60 = {
     return obj;
   }
 };
-const obj61 = {
+const obj62 = {
   request: "Array",
   response(array) {
     let allowResult;
@@ -2368,7 +2441,24 @@ const obj61 = {
     return obj;
   }
 };
-const obj62 = {
+const obj63 = {
+  embeddedAppSDK: true,
+  request(string) {
+    let requiredResult;
+    const obj = { guild_id: requiredResult.meta({ className: "GuildId" }) };
+    const stringResult = string.string();
+    requiredResult = stringResult.required();
+    return obj;
+  },
+  response(array) {
+    let itemsResult;
+    const obj = { roles: itemsResult.required() };
+    const arrayResult = array.array();
+    itemsResult = arrayResult.items(Role(array));
+    return obj;
+  }
+};
+const obj64 = {
   embeddedAppSDK: true,
   request(string) {
     let _try2Result;
@@ -2420,7 +2510,7 @@ const obj62 = {
     return obj;
   }
 };
-const obj63 = {
+const obj65 = {
   embeddedAppSDK: true,
   request(number) {
     let NAME;
@@ -2579,10 +2669,11 @@ items[3] = function ActivityParticipant(string) {
   return keys1.meta({ className: "ActivityParticipant" });
 };
 items[4] = Message;
-items[5] = Sku;
+items[5] = Role;
+items[6] = Sku;
 let size = size_mod;
 const result = size.fileFinishedImporting("../discord_common/js/packages/rpc-schema/definitions.tsx");
 
 export { RPCEnums };
-export const RPCCommandSchemas = { [helpers.RPCCommand.INITIATE_IMAGE_UPLOAD]: obj10, [helpers.RPCCommand.OPEN_SHARE_MOMENT_DIALOG]: obj11, [helpers.RPCCommand.AUTHENTICATE]: obj12, [helpers.RPCCommand.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: obj13, [helpers.RPCCommand.RELAUNCH_FRAME]: obj14, [helpers.RPCCommand.GET_VOICE_CAPABILITIES]: obj15, [helpers.RPCCommand.GET_VOICE_SESSION_PARTICIPANTS]: obj16, [helpers.RPCCommand.START_VOICE_SESSION]: obj17, [helpers.RPCCommand.UPDATE_VOICE_SPATIAL]: obj18, [helpers.RPCCommand.SET_VOICE_SPATIAL_ACOUSTICS]: obj19, [helpers.RPCCommand.ENABLE_VOICE_SPATIAL]: obj7, [helpers.RPCCommand.DISABLE_VOICE_SPATIAL]: obj7, [helpers.RPCCommand.STOP_VOICE_SESSION]: obj7, [helpers.RPCCommand.GET_APPLICATION_STREAMING_VIEW_CAPABILITIES]: obj20, [helpers.RPCCommand.START_APPLICATION_STREAMING_VIEW]: obj9, [helpers.RPCCommand.SUSPEND_APPLICATION_STREAMING_VIEW]: obj7, [helpers.RPCCommand.RESUME_APPLICATION_STREAMING_VIEW]: obj7, [helpers.RPCCommand.SET_APPLICATION_STREAMING_VIEW_FIT]: obj8, [helpers.RPCCommand.WATCH_APPLICATION_STREAMING_VIEW_ON_DISCORD]: obj7, [helpers.RPCCommand.STOP_APPLICATION_STREAMING_VIEW]: obj7, [helpers.RPCCommand.GET_CAMERA_VIEW_CAPABILITIES]: obj21, [helpers.RPCCommand.START_CAMERA_VIEW]: obj9, [helpers.RPCCommand.SUSPEND_CAMERA_VIEW]: obj7, [helpers.RPCCommand.RESUME_CAMERA_VIEW]: obj7, [helpers.RPCCommand.SET_CAMERA_VIEW_FIT]: obj8, [helpers.RPCCommand.STOP_CAMERA_VIEW]: obj7, [helpers.RPCCommand.SHARE_INTERACTION]: obj22, [helpers.RPCCommand.SHARE_LINK]: obj23, [helpers.RPCCommand.SHARE_CONTENT]: obj24, [helpers.RPCCommand.OPEN_CONTEXT_MENU]: obj25, [helpers.RPCCommand.OPEN_USER_POPOUT]: obj26, [helpers.RPCCommand.OPEN_MEDIA_VIEWER]: obj27, [helpers.RPCCommand.OPEN_USER_PROFILE]: obj28, [helpers.RPCCommand.OPEN_GAME_PROFILE]: obj29, [helpers.RPCCommand.SHOW_TOOLTIP]: obj30, [helpers.RPCCommand.HIDE_TOOLTIP]: obj31, [helpers.RPCCommand.SHOW_TOAST]: obj32, [helpers.RPCCommand.SHOW_CONFIRM_MODAL]: obj33, [helpers.RPCCommand.GET_RELATIONSHIPS]: obj34, [helpers.RPCCommand.INVITE_USER_EMBEDDED]: obj35, [helpers.RPCCommand.GET_CONTEXT]: obj36, [helpers.RPCCommand.GET_USER]: obj37, [helpers.RPCCommand.GET_QUEST_ENROLLMENT_STATUS]: obj38, [helpers.RPCCommand.QUEST_START_TIMER]: obj39, [helpers.RPCCommand.GET_QUEST]: obj40, [helpers.RPCCommand.REQUEST_PROXY_TICKET_REFRESH]: obj41, [helpers.RPCCommand.SET_RUNS_IN_BACKGROUND]: obj42, [helpers.RPCCommand.CAPTURE_LOG]: obj43, [helpers.RPCCommand.ENCOURAGE_HW_ACCELERATION]: obj44, [helpers.RPCCommand.GET_PLATFORM_BEHAVIORS]: obj45, [helpers.RPCCommand.USER_SETTINGS_GET_LOCALE]: obj46, [helpers.RPCCommand.SET_ORIENTATION_LOCK_STATE]: obj47, [helpers.RPCCommand.SET_CONFIG]: obj48, [helpers.RPCCommand.OPEN_INVITE_DIALOG]: { embeddedAppSDK: true, request: "context", response: "add" }, [helpers.RPCCommand.OPEN_EXTERNAL_LINK]: obj49, [helpers.RPCCommand.GET_CHANNEL_PERMISSIONS]: obj50, [helpers.RPCCommand.GET_SKUS_EMBEDDED]: obj51, [helpers.RPCCommand.GET_ENTITLEMENTS_EMBEDDED]: obj52, [helpers.RPCCommand.START_PURCHASE]: obj53, [helpers.RPCCommand.GET_CHANNEL]: obj54, [helpers.RPCCommand.GET_CHANNELS]: obj55, [helpers.RPCCommand.GET_SELECTED_VOICE_CHANNEL]: obj56, [helpers.RPCCommand.SELECT_VOICE_CHANNEL]: obj57, [helpers.RPCCommand.SELECT_TEXT_CHANNEL]: obj58, [helpers.RPCCommand.CREATE_CHANNEL_INVITE]: obj59, [helpers.RPCCommand.GET_GUILD]: obj60, [helpers.RPCCommand.GET_GUILDS]: obj61, [helpers.RPCCommand.AUTHORIZE]: obj62, [helpers.RPCCommand.SET_ACTIVITY]: obj63 };
+export const RPCCommandSchemas = { [helpers.RPCCommand.INITIATE_IMAGE_UPLOAD]: obj10, [helpers.RPCCommand.OPEN_SHARE_MOMENT_DIALOG]: obj11, [helpers.RPCCommand.AUTHENTICATE]: obj12, [helpers.RPCCommand.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: obj13, [helpers.RPCCommand.RELAUNCH_FRAME]: obj14, [helpers.RPCCommand.GET_VOICE_CAPABILITIES]: obj15, [helpers.RPCCommand.GET_VOICE_SESSION_PARTICIPANTS]: obj16, [helpers.RPCCommand.START_VOICE_SESSION]: obj17, [helpers.RPCCommand.UPDATE_VOICE_SPATIAL]: obj18, [helpers.RPCCommand.SET_VOICE_SPATIAL_ACOUSTICS]: obj19, [helpers.RPCCommand.ENABLE_VOICE_SPATIAL]: obj7, [helpers.RPCCommand.DISABLE_VOICE_SPATIAL]: obj7, [helpers.RPCCommand.STOP_VOICE_SESSION]: obj7, [helpers.RPCCommand.GET_APPLICATION_STREAMING_VIEW_CAPABILITIES]: obj20, [helpers.RPCCommand.START_APPLICATION_STREAMING_VIEW]: obj9, [helpers.RPCCommand.SUSPEND_APPLICATION_STREAMING_VIEW]: obj7, [helpers.RPCCommand.RESUME_APPLICATION_STREAMING_VIEW]: obj7, [helpers.RPCCommand.SET_APPLICATION_STREAMING_VIEW_FIT]: obj8, [helpers.RPCCommand.WATCH_APPLICATION_STREAMING_VIEW_ON_DISCORD]: obj7, [helpers.RPCCommand.STOP_APPLICATION_STREAMING_VIEW]: obj7, [helpers.RPCCommand.GET_CAMERA_VIEW_CAPABILITIES]: obj21, [helpers.RPCCommand.START_CAMERA_VIEW]: obj9, [helpers.RPCCommand.SUSPEND_CAMERA_VIEW]: obj7, [helpers.RPCCommand.RESUME_CAMERA_VIEW]: obj7, [helpers.RPCCommand.SET_CAMERA_VIEW_FIT]: obj8, [helpers.RPCCommand.STOP_CAMERA_VIEW]: obj7, [helpers.RPCCommand.SHARE_INTERACTION]: obj22, [helpers.RPCCommand.SHARE_LINK]: obj23, [helpers.RPCCommand.SHARE_CONTENT]: obj24, [helpers.RPCCommand.OPEN_CONTEXT_MENU]: obj25, [helpers.RPCCommand.OPEN_USER_POPOUT]: obj26, [helpers.RPCCommand.OPEN_MEDIA_VIEWER]: obj27, [helpers.RPCCommand.OPEN_USER_PROFILE]: obj28, [helpers.RPCCommand.OPEN_GAME_PROFILE]: obj29, [helpers.RPCCommand.SHOW_TOOLTIP]: obj30, [helpers.RPCCommand.HIDE_TOOLTIP]: obj31, [helpers.RPCCommand.SHOW_TOAST]: obj32, [helpers.RPCCommand.SHOW_CONFIRM_MODAL]: obj33, [helpers.RPCCommand.GET_RELATIONSHIPS]: obj34, [helpers.RPCCommand.INVITE_USER_EMBEDDED]: obj35, [helpers.RPCCommand.GET_CONTEXT]: obj36, [helpers.RPCCommand.GET_USER]: obj37, [helpers.RPCCommand.GET_CURRENT_USER]: obj38, [helpers.RPCCommand.GET_QUEST_ENROLLMENT_STATUS]: obj39, [helpers.RPCCommand.QUEST_START_TIMER]: obj40, [helpers.RPCCommand.GET_QUEST]: obj41, [helpers.RPCCommand.REQUEST_PROXY_TICKET_REFRESH]: obj42, [helpers.RPCCommand.SET_RUNS_IN_BACKGROUND]: obj43, [helpers.RPCCommand.CAPTURE_LOG]: obj44, [helpers.RPCCommand.ENCOURAGE_HW_ACCELERATION]: obj45, [helpers.RPCCommand.GET_PLATFORM_BEHAVIORS]: obj46, [helpers.RPCCommand.USER_SETTINGS_GET_LOCALE]: obj47, [helpers.RPCCommand.SET_ORIENTATION_LOCK_STATE]: obj48, [helpers.RPCCommand.SET_CONFIG]: obj49, [helpers.RPCCommand.OPEN_INVITE_DIALOG]: { embeddedAppSDK: true, request: "code", response: "size" }, [helpers.RPCCommand.OPEN_EXTERNAL_LINK]: obj50, [helpers.RPCCommand.GET_CHANNEL_PERMISSIONS]: obj51, [helpers.RPCCommand.GET_SKUS_EMBEDDED]: obj52, [helpers.RPCCommand.GET_ENTITLEMENTS_EMBEDDED]: obj53, [helpers.RPCCommand.START_PURCHASE]: obj54, [helpers.RPCCommand.GET_CHANNEL]: obj55, [helpers.RPCCommand.GET_CHANNELS]: obj56, [helpers.RPCCommand.GET_SELECTED_VOICE_CHANNEL]: obj57, [helpers.RPCCommand.SELECT_VOICE_CHANNEL]: obj58, [helpers.RPCCommand.SELECT_TEXT_CHANNEL]: obj59, [helpers.RPCCommand.CREATE_CHANNEL_INVITE]: obj60, [helpers.RPCCommand.GET_GUILD]: obj61, [helpers.RPCCommand.GET_GUILDS]: obj62, [helpers.RPCCommand.GET_ROLES]: obj63, [helpers.RPCCommand.AUTHORIZE]: obj64, [helpers.RPCCommand.SET_ACTIVITY]: obj65 };
 export const RPCNamedSchemas = items;

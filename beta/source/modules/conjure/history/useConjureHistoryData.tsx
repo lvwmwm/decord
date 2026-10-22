@@ -1,13 +1,13 @@
-// Module ID: 12111
-// Function ID: 12112
+// Module ID: 12106
+// Function ID: 12107
 // Name: useConjureHistoryData
-// Dependencies: [32, 19, 558, 576, 12100, 12112, 11698, 2]
+// Dependencies: [32, 19, 558, 576, 12095, 12107, 11698, 2]
 
-// Module 12111 (useConjureHistoryData)
+// Module 12106 (useConjureHistoryData)
 import react2 from "react" /* 576 */;
 import ConjureHistoryFormat from "ConjureHistoryFormat" /* 11698 */;
-import conjureHistoryRequests from "conjureHistoryRequests" /* 12100 */;
-import ConjureRestorePanelOp from "ConjureRestorePanelOp" /* 12112 */;
+import conjureHistoryRequests from "conjureHistoryRequests" /* 12095 */;
+import ConjureRestorePanelOp from "ConjureRestorePanelOp" /* 12107 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap, map, set;
 
-const f111963 = (result) => {
+const f111935 = (result) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = result;
@@ -210,7 +210,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHi
   const cResult = obj.c(38);
   const tmp2 = _require;
   if (cResult[0] !== arg1) {
-    const tmp2Result = tmp2(12112);
+    const tmp2Result = tmp2(12107);
     const result = tmp2Result.restorePanelEnvironments(arg1);
     cResult[0] = arg1;
     cResult[1] = result;
@@ -247,7 +247,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHi
       const obj2 = conjureHistoryRequests;
       items[1] = obj2.fetchDatabaseRestoreWindow(closure_0, "stable");
       const allResult = all(items);
-      return allResult.then(f111963);
+      return allResult.then(f111935);
     };
     cResult[6] = arg0;
     cResult[7] = fn2;
@@ -504,7 +504,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHi
     const obj2 = conjureHistoryRequests;
     items[1] = obj2.fetchDatabaseRestoreWindow(closure_0, "stable");
     const allResult = all(items);
-    return allResult.then(f111963);
+    return allResult.then(f111935);
   }, items2));
   react = tmp3;
   const items3 = [arg0, hasItem];

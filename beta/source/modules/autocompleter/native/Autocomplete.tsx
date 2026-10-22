@@ -1,9 +1,9 @@
-// Module ID: 13047
-// Function ID: 13048
+// Module ID: 13042
+// Function ID: 13043
 // Name: Autocomplete
-// Dependencies: [19, 17, 2090, 4855, 1392, 1087, 10016, 21, 5191, 587, 558, 576, 8855, 504, 5057, 1202, 9038, 6468, 6457, 1128, 8534, 8431, 5521, 5187, 5128, 13048, 10057, 10073, 6462, 12, 8428, 13049, 2033, 2034, 7955, 13050, 2]
+// Dependencies: [19, 17, 2090, 4855, 1392, 1087, 10016, 21, 5191, 587, 558, 576, 8855, 504, 5057, 1202, 9038, 6468, 6457, 1128, 8534, 8431, 5521, 5187, 5128, 13043, 10057, 10073, 6462, 12, 8428, 13044, 2033, 2034, 7955, 13045, 2]
 
-// Module 13047 (Autocomplete)
+// Module 13042 (Autocomplete)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -22,8 +22,8 @@ import AssetRegistryDefault from "AssetRegistry" /* 8534 */;
 import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10016 */;
 import StickersHooks from "StickersHooks" /* 10057 */;
 import StickerDefault from "Sticker" /* 10073 */;
-import ChannelAutocompleteEmojiUpsellDefault from "ChannelAutocompleteEmojiUpsell" /* 13048 */;
-import GameSearchRowExperimentDefault from "GameSearchRowExperiment" /* 13049 */;
+import ChannelAutocompleteEmojiUpsellDefault from "ChannelAutocompleteEmojiUpsell" /* 13043 */;
+import GameSearchRowExperimentDefault from "GameSearchRowExperiment" /* 13044 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
@@ -1015,7 +1015,7 @@ let obj9 = {
         let tmp16;
         if (extraChromeEnabled) {
           const obj6 = { platforms: game.platformAvailability };
-          tmp16 = React4(tmp6(13050), obj6);
+          tmp16 = React4(tmp6(13045), obj6);
         }
         cResult[7] = extraChromeEnabled;
         cResult[8] = game.platformAvailability;
@@ -1067,7 +1067,7 @@ let obj9 = {
     tmp8Result = undefined;
     if (extraChromeEnabled) {
       const obj8 = { platforms: game.platformAvailability };
-      tmp8Result = tmp8(tmp2(13050), obj8);
+      tmp8Result = tmp8(tmp2(13045), obj8);
     }
     return tmp8(FormRow, obj6);
   }),

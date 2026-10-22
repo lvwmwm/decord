@@ -1,7 +1,7 @@
 // Module ID: 15964
 // Function ID: 15965
 // Name: FamilyCenterAcceptedLinks
-// Dependencies: [19, 17, 7526, 21, 5191, 587, 558, 576, 8006, 8005, 12670, 1128, 2589, 5187, 15965, 15966, 6462, 6190, 15969, 2002, 1202, 15971, 2]
+// Dependencies: [19, 17, 7526, 21, 5191, 587, 558, 576, 8006, 8005, 12665, 1128, 2589, 5187, 15965, 15966, 6462, 6190, 15969, 2002, 1202, 15971, 2]
 
 // Module 15964 (FamilyCenterAcceptedLinks)
 import react_native from "react-native" /* 17 */;
@@ -13,7 +13,7 @@ import Text_Text from "Text/Text" /* 5187 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
 import useUserLinks from "useUserLinks" /* 8005 */;
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8006 */;
-import useAgeSpecificText2 from "useAgeSpecificText" /* 12670 */;
+import useAgeSpecificText2 from "useAgeSpecificText" /* 12665 */;
 import FamilyCenterEmptyDefault from "FamilyCenterEmpty" /* 15965 */;
 import FamilyCenterLinkRowDefault from "FamilyCenterLinkRow" /* 15966 */;
 import react from "react" /* 19 */;
@@ -162,7 +162,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
     tmp14 = tmp16;
   }
   const obj8 = { count: activeLinkUsers.length, max: tmp7 };
-  const useAgeSpecificText = tmp(12670).useAgeSpecificText;
+  const useAgeSpecificText = tmp(12665).useAgeSpecificText;
   const intl = tmp(1128).intl;
   const formatToPlainStringResult = intl.formatToPlainString(_modDef2589["+tnO34"], obj8);
   const intl2 = tmp(1128).intl;

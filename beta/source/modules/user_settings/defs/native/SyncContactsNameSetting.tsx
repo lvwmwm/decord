@@ -1,7 +1,7 @@
 // Module ID: 15892
 // Function ID: 15893
 // Name: SyncContactsNameSetting
-// Dependencies: [8260, 1087, 1267, 6190, 15891, 2002, 558, 13350, 11084, 1128, 2]
+// Dependencies: [8260, 1087, 1267, 6190, 15891, 2002, 558, 13345, 11084, 1128, 2]
 
 // Module 15892 (SyncContactsNameSetting)
 import Constants from "Constants" /* 1087 */;
@@ -10,7 +10,7 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
 import SettingsConstants from "SettingsConstants" /* 8260 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13350 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13345 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;

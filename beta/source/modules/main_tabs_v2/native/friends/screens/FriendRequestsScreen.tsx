@@ -1,7 +1,7 @@
 // Module ID: 17923
 // Function ID: 17924
 // Name: FriendRequestsScreen
-// Dependencies: [32, 19, 17, 6335, 4855, 1392, 10520, 1087, 10536, 21, 5191, 587, 17924, 2002, 5401, 558, 576, 6336, 573, 2044, 17558, 6337, 11, 7130, 7155, 1267, 14118, 7134, 17925, 1357, 8577, 1128, 1505, 6542, 6457, 5187, 8805, 10529, 9051, 6462, 12712, 16156, 10526, 2]
+// Dependencies: [32, 19, 17, 6335, 4855, 1392, 10520, 1087, 10536, 21, 5191, 587, 17924, 2002, 5401, 558, 576, 6336, 573, 2044, 17558, 6337, 11, 7130, 7155, 1267, 14113, 7134, 17925, 1357, 8577, 1128, 1505, 6542, 6457, 5187, 8805, 10529, 9051, 6462, 12707, 16156, 10526, 2]
 
 // Module 17923 (FriendRequestsScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -305,9 +305,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FriendReques
   }), 2);
   first = tmp8[0];
   dependencyMap = tmp10;
-  let obj2 = analyticsLocations(14118);
+  let obj2 = analyticsLocations(14113);
   gameRelationshipsByType = obj2.useGameRelationshipsByType(ignoredUsers.PENDING_INCOMING);
-  let obj3 = analyticsLocations(14118);
+  let obj3 = analyticsLocations(14113);
   gameRelationshipsByType1 = obj3.useGameRelationshipsByType(ignoredUsers.PENDING_OUTGOING);
   let items1 = [gameRelationshipsByType, gameRelationshipsByType1];
   const memo = gameRelationshipsByType1.useMemo(() => {
@@ -554,7 +554,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FriendReques
   if (tmp25) {
     let stringResult;
     const obj15 = { style: tmp.noResultsContainer, children: outgoingData(tmp2Result, obj16) };
-    tmp2Result = tmp2(12712);
+    tmp2Result = tmp2(12707);
     if (first1 === Outgoing.Incoming) {
       const intl5 = tmp7(1128).intl;
       stringResult = intl5.string(tmp7(1128).t["7uvAKe"]);

@@ -1,7 +1,7 @@
 // Module ID: 18100
 // Function ID: 18101
 // Name: CollectiblesMobileAnnouncementActionSheet
-// Dependencies: [19, 17, 1089, 7119, 2065, 21, 5191, 587, 558, 576, 1499, 6584, 1633, 4945, 18101, 5128, 5187, 7529, 7155, 18102, 1128, 13402, 13390, 18103, 5479, 7118, 2]
+// Dependencies: [19, 17, 1089, 7119, 2065, 21, 5191, 587, 558, 576, 1499, 6584, 1633, 4945, 18101, 5128, 5187, 7529, 7155, 18102, 1128, 13397, 13385, 18103, 5479, 7118, 2]
 
 // Module 18100 (CollectiblesMobileAnnouncementActionSheet)
 import react2 from "react" /* 576 */;
@@ -404,7 +404,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
     tmp25 = cResult[15];
   }
   if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj6 = { icon: closure_8(markAsDismissed(13402).PaintIllocon, obj7), text: intl2.string(markAsDismissed(1128).t["6ZWB0C"]) };
+    const obj6 = { icon: closure_8(markAsDismissed(13397).PaintIllocon, obj7), text: intl2.string(markAsDismissed(1128).t["6ZWB0C"]) };
     obj7 = { size };
     intl2 = tmp(1128).intl;
     const tmp32 = closure_8(closure_15, obj6);
@@ -414,7 +414,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
     tmp28 = cResult[16];
   }
   if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj8 = { icon: closure_8(markAsDismissed(13390).HeartIllocon, obj9), text: intl3.string(markAsDismissed(1128).t.MkVbBY) };
+    const obj8 = { icon: closure_8(markAsDismissed(13385).HeartIllocon, obj9), text: intl3.string(markAsDismissed(1128).t.MkVbBY) };
     obj9 = { size };
     intl3 = tmp(1128).intl;
     const tmp37 = closure_8(closure_15, obj8);
@@ -554,11 +554,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
   intl = markAsDismissed(1128).intl;
   items3[1] = closure_8(Text, obj5);
   const obj6 = { style: tmp.featureRows, children: items4 };
-  const obj7 = { icon: closure_8(markAsDismissed(13402).PaintIllocon, obj8), text: intl2.string(markAsDismissed(1128).t["6ZWB0C"]) };
+  const obj7 = { icon: closure_8(markAsDismissed(13397).PaintIllocon, obj8), text: intl2.string(markAsDismissed(1128).t["6ZWB0C"]) };
   obj8 = { size };
   intl2 = markAsDismissed(1128).intl;
   items4 = [closure_8(closure_15, obj7), , ];
-  const obj9 = { icon: closure_8(markAsDismissed(13390).HeartIllocon, obj10), text: intl3.string(markAsDismissed(1128).t.MkVbBY) };
+  const obj9 = { icon: closure_8(markAsDismissed(13385).HeartIllocon, obj10), text: intl3.string(markAsDismissed(1128).t.MkVbBY) };
   obj10 = { size };
   intl3 = markAsDismissed(1128).intl;
   items4[1] = closure_8(closure_15, obj9);

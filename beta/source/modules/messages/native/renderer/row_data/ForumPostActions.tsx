@@ -61,7 +61,7 @@ export const createDefaultReaction = function createDefaultReaction(arg0) {
       obj2 = emojiId(str2[13]);
       obj9 = {
         expensive() {
-              const obj2 = { id: "Array", name: str, animated: 83740 };
+              const obj2 = { id: "Array", name: str, animated: null };
               const obj = ReactionUtils;
               return obj.getAccessibleEmojiDisplayName(false, 0, obj2);
             },

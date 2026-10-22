@@ -1,15 +1,15 @@
 // Module ID: 17667
 // Function ID: 17668
 // Name: useNotificationPermissionPrompt
-// Dependencies: [19, 2061, 6013, 2062, 13075, 558, 576, 504, 2064, 13084, 17668, 17670, 2]
+// Dependencies: [19, 2061, 6013, 2062, 13070, 558, 576, 504, 2064, 13079, 17668, 17670, 2]
 
 // Module 17667 (useNotificationPermissionPrompt)
-import NotificationUtilsDefault from "NotificationUtils" /* 13084 */;
+import NotificationUtilsDefault from "NotificationUtils" /* 13079 */;
 import react from "react" /* 19 */;
 import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2061 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6013 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 2062 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13075 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13070 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

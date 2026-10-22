@@ -1,7 +1,7 @@
 // Module ID: 16197
 // Function ID: 16198
 // Name: VideoQuestModalHeader
-// Dependencies: [19, 17, 7658, 21, 5191, 587, 558, 576, 16170, 9473, 7678, 4828, 13902, 1128, 5187, 16192, 2]
+// Dependencies: [19, 17, 7658, 21, 5191, 587, 558, 576, 16170, 9473, 7678, 4828, 13897, 1128, 5187, 16192, 2]
 
 // Module 16197 (VideoQuestModalHeader)
 import react_native from "react-native" /* 17 */;
@@ -177,7 +177,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoQuestMo
     }
     let videoQuestProgressRemainingAccessibilityLabel;
     if (tmp14) {
-      const tmpResult4 = tmp(13902);
+      const tmpResult4 = tmp(13897);
       videoQuestProgressRemainingAccessibilityLabel = tmpResult4.getVideoQuestProgressRemainingAccessibilityLabel(questTaskDetails, tmp12);
     }
     cResult[3] = null != completedAt;
@@ -245,7 +245,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoQuestMo
     completedAt = userStatus.completedAt;
   }
   if (null == completedAt) {
-    const tmp3Result = quest(13902);
+    const tmp3Result = quest(13897);
     videoQuestProgressRemainingAccessibilityLabel = tmp3Result.getVideoQuestProgressRemainingAccessibilityLabel(questTaskDetails, tmp8);
   }
   let obj3 = { style: items, children: items2 };

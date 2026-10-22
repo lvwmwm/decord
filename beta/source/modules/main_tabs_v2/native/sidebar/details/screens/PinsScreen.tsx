@@ -1,7 +1,7 @@
 // Module ID: 18011
 // Function ID: 18012
 // Name: PinsScreen
-// Dependencies: [19, 17, 2068, 9614, 21, 5191, 587, 558, 576, 1508, 504, 12949, 17868, 2]
+// Dependencies: [19, 17, 2068, 9614, 21, 5191, 587, 558, 576, 1508, 504, 12944, 17868, 2]
 
 // Module 18011 (PinsScreen)
 import react_native from "react-native" /* 17 */;
@@ -56,7 +56,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }
   const tmpResult = channelId(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  const tmpResult2 = channelId(12949);
+  const tmpResult2 = channelId(12944);
   const channelDetailsSearchContext = tmpResult2.useChannelDetailsSearchContext(channelId, stateFromStores);
   const tmp9 = closure_7();
   if (cResult[3] !== channelDetailsSearchContext) {
@@ -93,7 +93,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
     return guild_id;
   });
-  const obj3 = channelId(12949);
+  const obj3 = channelId(12944);
   const channelDetailsSearchContext = obj3.useChannelDetailsSearchContext(channelId, stateFromStores);
   return <View style={closure_7().container}>{null}</View>;
 }));

@@ -1,7 +1,7 @@
 // Module ID: 18844
 // Function ID: 18845
 // Name: GuildSettingsModalInstantInvites
-// Dependencies: [32, 19, 17, 11115, 8772, 2068, 2090, 8911, 1087, 21, 5191, 587, 558, 576, 1128, 2131, 5187, 6465, 14686, 6454, 13031, 504, 12, 8315, 8313, 5155, 12560, 2002, 4904, 10601, 7004, 1202, 18845, 7091, 7005, 2]
+// Dependencies: [32, 19, 17, 11115, 8772, 2068, 2090, 8911, 1087, 21, 5191, 587, 558, 576, 1128, 2131, 5187, 6465, 14686, 6454, 13026, 504, 12, 8315, 8313, 5155, 12555, 2002, 4904, 10601, 7004, 1202, 18845, 7091, 7005, 2]
 
 // Module 18844 (GuildSettingsModalInstantInvites)
 import _modDef12 from "module_12" /* 12 */;
@@ -154,7 +154,7 @@ function GuildSettingsModalInstantInvites(invites) {
         obj2 = GuildAntiRaidUtils;
         const obj4 = { guild, analyticsData: obj };
         const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.openLazy(asyncRequire(12560, dependencyMap.paths), "GuildIncidentActionsActionSheet", obj4);
+        obj3.openLazy(asyncRequire(12555, dependencyMap.paths), "GuildIncidentActionsActionSheet", obj4);
         closure_7(false);
       } catch (tmp16) {
         closure_7(false);

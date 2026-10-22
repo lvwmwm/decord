@@ -1,7 +1,7 @@
 // Module ID: 15974
 // Function ID: 15975
 // Name: FamilyCenterModalDecline
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 8006, 6190, 4903, 1128, 12667, 38, 15970, 7995, 2589, 5187, 15938, 7782, 5479, 12676, 6214, 7781, 6478, 10929, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 8006, 6190, 4903, 1128, 12662, 38, 15970, 7995, 2589, 5187, 15938, 7782, 5479, 12671, 6214, 7781, 6478, 10929, 2]
 
 // Module 15974 (FamilyCenterModalDecline)
 import react_native from "react-native" /* 17 */;
@@ -84,7 +84,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
   } else {
     tmp9 = cResult[2];
   }
-  const tmpResult = tmp(12667);
+  const tmpResult = tmp(12662);
   const familyCenterActions = tmpResult.useFamilyCenterActions(tmp9);
   declineLinkRequest = familyCenterActions.declineLinkRequest;
   const isDeclineLoading = familyCenterActions.isDeclineLoading;
@@ -217,7 +217,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
                 }
                 if (cResult[33] !== tmp46) {
                   const obj9 = { children: closure_6(tmp(6214).ButtonGroup, obj10) };
-                  const ModalFooter = tmp(12676).ModalFooter;
+                  const ModalFooter = tmp(12671).ModalFooter;
                   obj10 = { children: items };
                   items = [tmp46, tmp49];
                   const tmp55 = closure_5(ModalFooter, obj9);
@@ -318,7 +318,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
     const intl = otherUser(dependencyMap[10]).intl;
     presentFailedToast(intl.string(otherUser(dependencyMap[10]).t.R0RpRX));
   }, []);
-  const obj = otherUser(12667);
+  const obj = otherUser(12662);
   const familyCenterActions = obj.useFamilyCenterActions({ onSuccess: callback, onError: callback1 });
   declineLinkRequest = familyCenterActions.declineLinkRequest;
   const isDeclineLoading = familyCenterActions.isDeclineLoading;
@@ -353,7 +353,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
   items2[1] = closure_6(View, obj7);
   items4 = [closure_6(ModalContent, obj3), ];
   const obj10 = { children: closure_6(ButtonGroup, obj11) };
-  const ModalFooter = otherUser(12676).ModalFooter;
+  const ModalFooter = otherUser(12671).ModalFooter;
   obj11 = { children: items5 };
   ButtonGroup = otherUser(6214).ButtonGroup;
   const obj12 = { variant: "destructive", disabled: isDeclineLoading, loading: isDeclineLoading, text: intl4.string(declineLinkRequest(2589).dKxFcn), onPress: callback2 };

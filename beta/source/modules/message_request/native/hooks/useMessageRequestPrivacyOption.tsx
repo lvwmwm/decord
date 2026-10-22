@@ -1,13 +1,13 @@
 // Module ID: 14924
 // Function ID: 14925
 // Name: useMessageRequestPrivacyOption
-// Dependencies: [19, 21, 558, 576, 2044, 6961, 1128, 7171, 13120, 2]
+// Dependencies: [19, 21, 558, 576, 2044, 6961, 1128, 7171, 13115, 2]
 
 // Module 14924 (useMessageRequestPrivacyOption)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 6961 */;
-import useIsStricterMessageRequestsDefault from "useIsStricterMessageRequests" /* 13120 */;
+import useIsStricterMessageRequestsDefault from "useIsStricterMessageRequests" /* 13115 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

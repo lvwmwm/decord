@@ -1,9 +1,9 @@
-// Module ID: 13802
-// Function ID: 13803
+// Module ID: 13797
+// Function ID: 13798
 // Name: useIsForumChannelSearchActive
-// Dependencies: [8172, 558, 576, 13784, 504, 2]
+// Dependencies: [8172, 558, 576, 13779, 504, 2]
 
-// Module 13802 (useIsForumChannelSearchActive)
+// Module 13797 (useIsForumChannelSearchActive)
 import ForumSearchStore from "ForumSearchStore" /* 8172 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -196,6 +196,7 @@ const obj6 = {
     }
   },
   handler(socket) {
+    let obj2;
     socket = socket.socket;
     let tmp3;
     if (isPostMessageSocketDefault(socket)) {
@@ -205,16 +206,13 @@ const obj6 = {
     if (null == channel) {
       const self = this;
       const self2 = this;
-      const obj2 = { errorCode: constants2.INVALID_CHANNEL };
-      const tmp9 = new RPCErrorDefault(obj2, "Invalid channel");
+      const obj3 = { errorCode: constants2.INVALID_CHANNEL };
+      const tmp9 = new RPCErrorDefault(obj3, "Invalid channel");
       throw tmp9;
     } else {
-      const str = PermissionStore.computePermissions(channel);
-      let str1 = str;
-      if (typeof str !== "bigint") {
-        str1 = str.toString();
-      }
-      return { permissions: str1 };
+      const obj = { permissions: obj2.transformBigFlag(PermissionStore.computePermissions(channel)) };
+      obj2 = RPCHelpers;
+      return obj;
     }
   }
 };

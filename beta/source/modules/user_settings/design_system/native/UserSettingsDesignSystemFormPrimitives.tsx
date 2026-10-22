@@ -1,7 +1,7 @@
 // Module ID: 16883
 // Function ID: 16884
 // Name: UserSettingsDesignSystemFormPrimitives
-// Dependencies: [32, 19, 17, 1087, 21, 5191, 558, 576, 5187, 6540, 6539, 6542, 7172, 13839, 6454, 6457, 15065, 11470, 8501, 5477, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 5191, 558, 576, 5187, 6540, 6539, 6542, 7172, 13834, 6454, 6457, 15065, 11470, 8501, 5477, 2]
 
 // Module 16883 (UserSettingsDesignSystemFormPrimitives)
 import react_native from "react-native" /* 17 */;
@@ -29,7 +29,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 const Stack_Stack = tmp(5477);
-const Checkbox = tmp(13839);
+const Checkbox = tmp(13834);
 const ScrollView = react_native.ScrollView;
 const NOOP = Constants.NOOP;
 ({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);

@@ -1,16 +1,16 @@
-// Module ID: 13526
-// Function ID: 13527
+// Module ID: 13521
+// Function ID: 13522
 // Name: GuildAntiRaidHooks
-// Dependencies: [1246, 2090, 4845, 5034, 1392, 11115, 8314, 1087, 558, 576, 573, 11, 8313, 1099, 4850, 13527, 2]
+// Dependencies: [1246, 2090, 4845, 5034, 1392, 11115, 8314, 1087, 558, 576, 573, 11, 8313, 1099, 4850, 13522, 2]
 // Exports: getDisabledActions, shouldShowRaidInAppNotification, shouldShowRaidNotificationNagbar
 
-// Module 13526 (GuildAntiRaidHooks)
+// Module 13521 (GuildAntiRaidHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
 import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8313 */;
 import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8314 */;
-import GuildAntiRaidPermissionsUtils from "GuildAntiRaidPermissionsUtils" /* 13527 */;
+import GuildAntiRaidPermissionsUtils from "GuildAntiRaidPermissionsUtils" /* 13522 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import PermissionStore from "PermissionStore" /* 4845 */;

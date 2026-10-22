@@ -1,7 +1,7 @@
 // Module ID: 18287
 // Function ID: 18288
 // Name: VoicePanelGamesSection
-// Dependencies: [19, 21, 558, 576, 7285, 9150, 9151, 1128, 13958, 6457, 18288, 9069, 2]
+// Dependencies: [19, 21, 558, 576, 7285, 9150, 9151, 1128, 13953, 6457, 18288, 9069, 2]
 
 // Module 18287 (VoicePanelGamesSection)
 import Fragment from "Fragment" /* 21 */;
@@ -17,7 +17,7 @@ import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp5;
-const GameActivityIconDefault = tmp5(13958);
+const GameActivityIconDefault = tmp5(13953);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameRow(gameId) {

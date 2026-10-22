@@ -1,7 +1,7 @@
 // Module ID: 17425
 // Function ID: 17426
 // Name: FavoritesGuildSidebarHeader
-// Dependencies: [19, 17, 17330, 21, 5191, 587, 558, 576, 13635, 5187, 1128, 3465, 8480, 8501, 8471, 5477, 2]
+// Dependencies: [19, 17, 17330, 21, 5191, 587, 558, 576, 13630, 5187, 1128, 3465, 8480, 8501, 8471, 5477, 2]
 
 // Module 17425 (FavoritesGuildSidebarHeader)
 import react_native from "react-native" /* 17 */;
@@ -14,7 +14,7 @@ import Stack_Stack from "Stack/Stack" /* 5477 */;
 import ChatIcon2 from "ChatIcon" /* 8471 */;
 import TextIcon2 from "TextIcon" /* 8480 */;
 import VoiceNormalIcon2 from "VoiceNormalIcon" /* 8501 */;
-import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 13635 */;
+import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 13630 */;
 import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17330 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

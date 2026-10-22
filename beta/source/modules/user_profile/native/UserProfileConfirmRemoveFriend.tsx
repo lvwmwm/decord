@@ -1,9 +1,9 @@
-// Module ID: 13314
-// Function ID: 13315
+// Module ID: 13309
+// Function ID: 13310
 // Name: UserProfileConfirmRemoveFriend
 // Dependencies: [19, 21, 558, 576, 1128, 5405, 5405, 2]
 
-// Module 13314 (UserProfileConfirmRemoveFriend)
+// Module 13309 (UserProfileConfirmRemoveFriend)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1128 */;
 import AlertModal2 from "AlertModal" /* 5405 */;

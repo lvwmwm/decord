@@ -1,7 +1,7 @@
 // Module ID: 17788
 // Function ID: 17789
 // Name: SearchHistoryRow
-// Dependencies: [109, 5, 19, 17, 2068, 6291, 1392, 9614, 21, 5191, 587, 558, 576, 13013, 6485, 6462, 17777, 13009, 5187, 7017, 17772, 573, 17787, 8579, 7290, 17786, 17789, 17802, 1128, 2]
+// Dependencies: [109, 5, 19, 17, 2068, 6291, 1392, 9614, 21, 5191, 587, 558, 576, 13008, 6485, 6462, 17777, 13004, 5187, 7017, 17772, 573, 17787, 8579, 7290, 17786, 17789, 17802, 1128, 2]
 
 // Module 17788 (SearchHistoryRow)
 import react_native from "react-native" /* 17 */;
@@ -10,8 +10,8 @@ import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import UserActionCreators from "UserActionCreators" /* 8579 */;
 import SearchConstants from "SearchConstants" /* 9614 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13009 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13013 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13004 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13008 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

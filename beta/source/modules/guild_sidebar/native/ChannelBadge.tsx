@@ -1,7 +1,7 @@
 // Module ID: 17346
 // Function ID: 17347
 // Name: ChannelBadge
-// Dependencies: [19, 17, 2132, 21, 5191, 558, 576, 573, 11684, 12946, 1903, 5187, 2]
+// Dependencies: [19, 17, 2132, 21, 5191, 558, 576, 573, 11684, 12941, 1903, 5187, 2]
 
 // Module 17346 (ChannelBadge)
 import react_native from "react-native" /* 17 */;
@@ -11,7 +11,7 @@ import react2 from "react" /* 576 */;
 import NumberUtils from "NumberUtils" /* 1903 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import MentionsBadgeDefault from "MentionsBadge" /* 11684 */;
-import NewBadgeDefault from "NewBadge" /* 12946 */;
+import NewBadgeDefault from "NewBadge" /* 12941 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2132 */;
 import createStyles from "createStyles" /* 5191 */;

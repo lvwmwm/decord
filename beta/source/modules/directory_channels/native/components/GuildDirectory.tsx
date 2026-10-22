@@ -1,9 +1,9 @@
-// Module ID: 13340
-// Function ID: 13341
+// Module ID: 13335
+// Function ID: 13336
 // Name: GuildDirectory
-// Dependencies: [19, 17, 2090, 6291, 12962, 12955, 12960, 1087, 21, 5191, 587, 558, 13341, 13342, 12985, 12986, 576, 5187, 13343, 5128, 1128, 7017, 5479, 12642, 13344, 12957, 12958, 10931, 6462, 504, 1633, 7463, 9, 7077, 5045, 12966, 1267, 12950, 13469, 13471, 2]
+// Dependencies: [19, 17, 2090, 6291, 12957, 12950, 12955, 1087, 21, 5191, 587, 558, 13336, 13337, 12980, 12981, 576, 5187, 13338, 5128, 1128, 7017, 5479, 12637, 13339, 12952, 12953, 10931, 6462, 504, 1633, 7463, 9, 7077, 5045, 12961, 1267, 12945, 13464, 13466, 2]
 
-// Module 13340 (GuildDirectory)
+// Module 13335 (GuildDirectory)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,25 +14,25 @@ import components_Button_Button from "components/Button/Button" /* 5479 */;
 import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7017 */;
 import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7463 */;
 import PlusMediumIcon from "PlusMediumIcon" /* 10931 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12642 */;
-import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 12950 */;
-import GuildDirectoryConstants2 from "GuildDirectoryConstants" /* 12955 */;
-import useCanManageGuildDirectoryEntry from "useCanManageGuildDirectoryEntry" /* 12957 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 12958 */;
-import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 12966 */;
-import GuildDirectoryRowDefault from "GuildDirectoryRow" /* 12985 */;
-import GuildDirectoryPlaceholderRowDefault from "GuildDirectoryPlaceholderRow" /* 12986 */;
-import HubProgressBarUtils from "HubProgressBarUtils" /* 13341 */;
-import GuildDirectoryRowGenerator from "GuildDirectoryRowGenerator" /* 13342 */;
-import AssetRegistry from "AssetRegistry" /* 13343 */;
-import HubProgressHeaderDefault from "HubProgressHeader" /* 13344 */;
-import GuildDirectoryCategorySelectorDefault from "GuildDirectoryCategorySelector" /* 13469 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12637 */;
+import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 12945 */;
+import GuildDirectoryConstants2 from "GuildDirectoryConstants" /* 12950 */;
+import useCanManageGuildDirectoryEntry from "useCanManageGuildDirectoryEntry" /* 12952 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 12953 */;
+import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 12961 */;
+import GuildDirectoryRowDefault from "GuildDirectoryRow" /* 12980 */;
+import GuildDirectoryPlaceholderRowDefault from "GuildDirectoryPlaceholderRow" /* 12981 */;
+import HubProgressBarUtils from "HubProgressBarUtils" /* 13336 */;
+import GuildDirectoryRowGenerator from "GuildDirectoryRowGenerator" /* 13337 */;
+import AssetRegistry from "AssetRegistry" /* 13338 */;
+import HubProgressHeaderDefault from "HubProgressHeader" /* 13339 */;
+import GuildDirectoryCategorySelectorDefault from "GuildDirectoryCategorySelector" /* 13464 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import ReadStateStore from "ReadStateStore" /* 6291 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 12962 */;
-import GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 12960 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 12957 */;
+import GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 12955 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
@@ -386,7 +386,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
   const channel = guild.channel;
   const hideFooter = guild.hideFooter;
   const tmp4 = closure_22();
-  let obj2 = guild(12957);
+  let obj2 = guild(12952);
   let tmp5 = null;
   if (obj2.useCanCreateOrAddGuildInDirectory(channel)) {
     tmp5 = null;
@@ -1063,8 +1063,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirecto
         const obj8 = { style: tmp.border };
         items9 = [closure_18(currentCategoryId, obj8), , ];
         const obj9 = { guild: stateFromStores, channel };
-        items9[1] = closure_18(tmp5(13471), obj9);
-        items9[2] = closure_18(tmp2(12642).TTIFirstContentfulPaint, { label: "guild_directory_empty" });
+        items9[1] = closure_18(tmp5(13466), obj9);
+        items9[2] = closure_18(tmp2(12637).TTIFirstContentfulPaint, { label: "guild_directory_empty" });
         tmp25 = closure_19(currentCategoryId, obj6);
       }
       tmp18 = tmp25;

@@ -1,7 +1,7 @@
 // Module ID: 17678
 // Function ID: 17679
 // Name: StandaloneChannelScreen
-// Dependencies: [109, 19, 17, 2068, 9600, 1087, 2075, 21, 5191, 587, 558, 576, 1506, 1633, 9608, 2093, 504, 1128, 9545, 5072, 9662, 9601, 13790, 9611, 7124, 17679, 11082, 5513, 7201, 5127, 5075, 13802, 6355, 9617, 1202, 10529, 17684, 17701, 17719, 11591, 17737, 17741, 10671, 17751, 17752, 12819, 2]
+// Dependencies: [109, 19, 17, 2068, 9600, 1087, 2075, 21, 5191, 587, 558, 576, 1506, 1633, 9608, 2093, 504, 1128, 9545, 5072, 9662, 9601, 13785, 9611, 7124, 17679, 11082, 5513, 7201, 5127, 5075, 13797, 6355, 9617, 1202, 10529, 17684, 17701, 17719, 11591, 17737, 17741, 10671, 17751, 17752, 12814, 2]
 
 // Module 17678 (StandaloneChannelScreen)
 import nativeDefault from "native" /* 587 */;
@@ -1183,7 +1183,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     return items;
   }, items1);
   let tmp15 = !isChatLockedOpen;
-  const tmp2Result = channelId(13802);
+  const tmp2Result = channelId(13797);
   const isForumChannelSearchActive = tmp2Result.useIsForumChannelSearchActive(channelId);
   if (isChatLockedOpen) {
     tmp15 = isNavigationScreen;
@@ -1273,7 +1273,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
               const obj21 = {
                 name: "channel_screen",
                 navigationKey: channelId,
-                definition: channelId(12819).CHANNEL_NAVIGATION_TTI,
+                definition: channelId(12814).CHANNEL_NAVIGATION_TTI,
                 visibilityMode: "prerendered",
                 isVisible: isNavigationTTIVisible,
                 descendantTracking: "included",

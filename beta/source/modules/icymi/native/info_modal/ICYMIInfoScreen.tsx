@@ -1,7 +1,7 @@
 // Module ID: 17616
 // Function ID: 17617
 // Name: ICYMIInfoScreen
-// Dependencies: [32, 5, 19, 17, 1098, 21, 5191, 587, 6536, 1633, 5127, 1505, 15428, 17617, 6190, 9599, 9607, 1128, 5128, 17619, 17620, 17621, 17622, 5187, 9545, 14064, 7144, 5155, 17623, 2002, 5479, 2]
+// Dependencies: [32, 5, 19, 17, 1098, 21, 5191, 587, 6536, 1633, 5127, 1505, 15428, 17617, 6190, 9599, 9607, 1128, 5128, 17619, 17620, 17621, 17622, 5187, 9545, 14059, 7144, 5155, 17623, 2002, 5479, 2]
 // Exports: default
 
 // Module 17616 (ICYMIInfoScreen)
@@ -226,7 +226,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   items10[1] = closure_9(closure_6, obj19);
   const obj20 = { style: tmp.infoRow, children: items11 };
   items11 = [, ];
-  const obj21 = { style: tmp.infoIcon, children: closure_9(extendedOnboarding(14064).NewUserIcon, { size: "sm", color: "interactive-text-active" }) };
+  const obj21 = { style: tmp.infoIcon, children: closure_9(extendedOnboarding(14059).NewUserIcon, { size: "sm", color: "interactive-text-active" }) };
   items11[0] = closure_9(closure_6, obj21);
   const obj22 = { variant: "text-md/medium", color: "mobile-text-heading-primary", style: tmp.infoText, children: intl5.string(extendedOnboarding(1128).t.BnUXZi) };
   const Text4 = tmp6(5187).Text;

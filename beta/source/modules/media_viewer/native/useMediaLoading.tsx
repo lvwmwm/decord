@@ -1,9 +1,9 @@
-// Module ID: 14007
-// Function ID: 14008
+// Module ID: 14002
+// Function ID: 14003
 // Name: useMediaLoading
 // Dependencies: [32, 19, 558, 576, 6924, 2]
 
-// Module 14007 (useMediaLoading)
+// Module 14002 (useMediaLoading)
 import react2 from "react" /* 576 */;
 import hooks_useStableCallbackDefault from "hooks/useStableCallback" /* 6924 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

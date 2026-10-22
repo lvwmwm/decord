@@ -1,14 +1,14 @@
 // Module ID: 17454
 // Function ID: 17455
 // Name: GuildsBarPendingGuildFolder
-// Dependencies: [19, 5034, 1087, 21, 558, 576, 17441, 12523, 504, 17434, 4945, 5156, 6377, 1128, 17440, 11845, 2]
+// Dependencies: [19, 5034, 1087, 21, 558, 576, 17441, 12518, 504, 17434, 4945, 5156, 6377, 1128, 17440, 11840, 2]
 
 // Module 17454 (GuildsBarPendingGuildFolder)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import HapticUtils from "HapticUtils" /* 5156 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6377 */;
-import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 12523 */;
+import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 12518 */;
 import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 17434 */;
 import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 17441 */;
 import react from "react" /* 19 */;

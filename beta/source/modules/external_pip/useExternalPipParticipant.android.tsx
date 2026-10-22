@@ -141,7 +141,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSel
                     _setTimeout = setTimeout;
                     num = 3000;
                     closure_0 = setTimeout(() => {
-                      closure_1_3(() => { /* body not rendered: F158462 */ });
+                      closure_1_3(() => { /* body not rendered: F158471 */ });
                     }, 3000);
                     return () => {
                       clearTimeout(closure_0);
@@ -165,7 +165,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSel
                     _setTimeout = setTimeout;
                     num = 3000;
                     closure_0 = setTimeout(() => {
-                      closure_1_3(() => { /* body not rendered: F158462 */ });
+                      closure_1_3(() => { /* body not rendered: F158471 */ });
                     }, 3000);
                     return () => {
                       clearTimeout(closure_0);
@@ -319,7 +319,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSel
         return obj;
       }
     }
-    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "end" };
+    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "unicodeVersion" };
   };
   cResult[1] = channelId;
   cResult[2] = focusedParticipantStreamId;
@@ -467,7 +467,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSel
         return obj;
       }
     }
-    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "end" };
+    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "unicodeVersion" };
   }, items1);
   const items2 = [stateFromStoresObject.selectedParticipantSpeaking];
   const effect = react.useEffect(() => {

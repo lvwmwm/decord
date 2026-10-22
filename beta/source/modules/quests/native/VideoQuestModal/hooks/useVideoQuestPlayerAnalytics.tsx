@@ -1,7 +1,7 @@
 // Module ID: 16178
 // Function ID: 16179
 // Name: useVideoQuestPlayerAnalytics
-// Dependencies: [5, 19, 17, 5382, 1087, 9504, 7682, 7681, 6233, 16069, 7672, 7630, 1384, 7652, 7663, 13902, 16179, 16060, 7659, 6231, 16070, 5985, 5990, 6235, 2]
+// Dependencies: [5, 19, 17, 5382, 1087, 9504, 7682, 7681, 6233, 16069, 7672, 7630, 1384, 7652, 7663, 13897, 16179, 16060, 7659, 6231, 16070, 5985, 5990, 6235, 2]
 // Exports: default
 
 // Module 16178 (useVideoQuestPlayerAnalytics)
@@ -16,7 +16,7 @@ import DiscordVideoPlayerTypes from "DiscordVideoPlayerTypes" /* 7659 */;
 import AnalyticsActions from "AnalyticsActions" /* 7672 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 7681 */;
 import AdDataUtils from "AdDataUtils" /* 7682 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 13902 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 13897 */;
 import AdsVideoTypes from "AdsVideoTypes" /* 16060 */;
 import AdsVideoUtils from "AdsVideoUtils" /* 16070 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

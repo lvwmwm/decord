@@ -1,7 +1,7 @@
 // Module ID: 18608
 // Function ID: 18609
 // Name: NotificationsManager
-// Dependencies: [5, 4847, 502, 2068, 6222, 13075, 1087, 7749, 13076, 5155, 18609, 2002, 1275, 4797, 7772, 13078, 13516, 1267, 1384, 7085, 16544, 1107, 2]
+// Dependencies: [5, 4847, 502, 2068, 6222, 13070, 1087, 7749, 13071, 5155, 18609, 2002, 1275, 4797, 7772, 13073, 13511, 1267, 1384, 7085, 16544, 1107, 2]
 
 // Module 18608 (NotificationsManager)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
@@ -10,15 +10,15 @@ import _modDef4797 from "module_4797" /* 4797 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 7749 */;
 import react_nativeDefault from "react-native" /* 7772 */;
-import PushNotificationPermissionStore2 from "PushNotificationPermissionStore" /* 13075 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13078 */;
+import PushNotificationPermissionStore2 from "PushNotificationPermissionStore" /* 13070 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13073 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4847 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6222 */;
 import Constants from "Constants" /* 1087 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13076 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13071 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
 import size from "module_2" /* 2 */;
 

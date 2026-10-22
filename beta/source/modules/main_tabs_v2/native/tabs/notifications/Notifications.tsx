@@ -1,7 +1,7 @@
 // Module ID: 17546
 // Function ID: 17547
 // Name: notifications/Notifications
-// Dependencies: [19, 17, 10963, 2065, 21, 5191, 587, 5073, 558, 576, 6904, 17547, 6462, 1128, 17548, 5187, 17549, 9981, 17550, 7092, 7130, 7155, 7463, 6484, 17554, 17555, 12642, 7124, 5068, 1633, 17144, 10529, 4922, 2]
+// Dependencies: [19, 17, 10963, 2065, 21, 5191, 587, 5073, 558, 576, 6904, 17547, 6462, 1128, 17548, 5187, 17549, 9981, 17550, 7092, 7130, 7155, 7463, 6484, 17554, 17555, 12637, 7124, 5068, 1633, 17144, 10529, 4922, 2]
 
 // Module 17546 (notifications/Notifications)
 import react_native from "react-native" /* 17 */;
@@ -18,7 +18,7 @@ import LayerScope2 from "LayerScope" /* 7124 */;
 import useAnalyticsLocations from "useAnalyticsLocations" /* 7130 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7155 */;
 import MainTabsConstants from "MainTabsConstants" /* 10963 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12642 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12637 */;
 import TabsPerformanceTracker from "TabsPerformanceTracker" /* 17144 */;
 import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 17547 */;
 import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 17549 */;

@@ -1,7 +1,7 @@
 // Module ID: 16646
 // Function ID: 16647
 // Name: DevToolsAnalyticsScreen
-// Dependencies: [32, 19, 17, 1392, 15426, 1087, 21, 5191, 587, 558, 576, 5187, 10054, 6457, 4797, 9038, 6462, 7162, 5141, 504, 11982, 7172, 5148, 16641, 6542, 7016, 5477, 7091, 2]
+// Dependencies: [32, 19, 17, 1392, 15426, 1087, 21, 5191, 587, 558, 576, 5187, 10054, 6457, 4797, 9038, 6462, 7162, 5141, 504, 11977, 7172, 5148, 16641, 6542, 7016, 5477, 7091, 2]
 
 // Module 16646 (DevToolsAnalyticsScreen)
 import react_native from "react-native" /* 17 */;
@@ -145,21 +145,21 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Logged
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     class E {
       constructor() {
-        return closure_2(() => { /* body not rendered: F150013 */ });
+        return closure_2(() => { /* body not rendered: F150022 */ });
       }
     }
     cResult[5] = E;
   } else {
     class E {
       constructor() {
-        return closure_2(() => { /* body not rendered: F150013 */ });
+        return closure_2(() => { /* body not rendered: F150022 */ });
       }
     }
   }
   if (cResult[6] === end) {
     class E {
       constructor() {
-        return closure_2(() => { /* body not rendered: F150013 */ });
+        return closure_2(() => { /* body not rendered: F150022 */ });
       }
     }
   }
@@ -349,7 +349,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAnal
     }
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp19 = closure_8(trimmed(11982).ArrowsUpDownIcon, {});
+      const tmp19 = closure_8(trimmed(11977).ArrowsUpDownIcon, {});
       cResult[6] = tmp19;
       tmp17 = tmp19;
     } else {
@@ -563,7 +563,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAnal
   const Stack = tmp2(5477).Stack;
   const obj3 = { title: "Actions", hasIcons: true, children: items2 };
   const TableRowGroup = tmp2(6542).TableRowGroup;
-  const obj4 = { icon: closure_8(trimmed(11982).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp7 };
+  const obj4 = { icon: closure_8(trimmed(11977).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp7 };
   const TableSwitchRow = tmp2(7172).TableSwitchRow;
   items2 = [closure_8(TableSwitchRow, obj4), ];
   const obj5 = { arrow: true, variant: "danger", icon: closure_8(trimmed(5148).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(16641).clearAnalyticsLog };

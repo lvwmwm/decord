@@ -1,7 +1,7 @@
 // Module ID: 19125
 // Function ID: 19126
 // Name: receiveNotification
-// Dependencies: [5, 6412, 6332, 502, 2068, 1392, 6189, 1087, 6154, 2074, 13080, 3, 4904, 1128, 5145, 5073, 1123, 7759, 5202, 7329, 8787, 5072, 17560, 6336, 8577, 7155, 7290, 7292, 1267, 5206, 1384, 12516, 11, 17558, 7463, 10, 7464, 6013, 14714, 13083, 504, 11579, 9618, 5168, 1107, 9949, 8745, 8740, 584, 6190, 1114, 7747, 14859, 2]
+// Dependencies: [5, 6412, 6332, 502, 2068, 1392, 6189, 1087, 6154, 2074, 13075, 3, 4904, 1128, 5145, 5073, 1123, 7759, 5202, 7329, 8787, 5072, 17560, 6336, 8577, 7155, 7290, 7292, 1267, 5206, 1384, 12511, 11, 17558, 7463, 10, 7464, 6013, 14714, 13078, 504, 11579, 9618, 5168, 1107, 9949, 8745, 8740, 584, 6190, 1114, 7747, 14859, 2]
 // Exports: default
 
 // Module 19125 (receiveNotification)
@@ -20,7 +20,7 @@ import PushNotificationConstants from "PushNotificationConstants" /* 6189 */;
 import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6412 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8745 */;
 import MessageManagerDefault from "MessageManager" /* 9618 */;
-import Constants3 from "Constants" /* 13080 */;
+import Constants3 from "Constants" /* 13075 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6332 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -36,7 +36,7 @@ let closure_12;
 let closure_14;
 let map1;
 let unpackModuleId;
-const f137569 = (arg0) => {
+const f137578 = (arg0) => {
   addPostConnectionCallback(arg0);
 };
 function onStageConnectionError() {
@@ -48,7 +48,7 @@ function onStageConnectionError() {
   open("STAGE_DISCOVERY_CONNECTION_ERROR_GENERIC", obj);
 }
 function waitForConnection() {
-  const promise = new Promise(f137569);
+  const promise = new Promise(f137578);
   return promise;
 }
 function waitForDataOrConnection() {
@@ -973,7 +973,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
   const maybeAckNotificationCenter2 = function maybeAckNotificationCenter() {
     return obj(...arguments);
   };
-  const f154281 = () => {
+  const f154290 = () => {
     obj = router_utils;
     const obj2 = { navigationReplace: true, openChannel: true, isAppStartupNavigation };
     obj.transitionTo(syncedClientThemes.CHANNEL(data.guild_id, data.channel_id), obj2);
@@ -1191,10 +1191,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f137569;
+          fn = f137578;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f154281;
+          fn2 = f154290;
           promise.then(fn2);
           break;
         }
@@ -1365,10 +1365,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f137569;
+          fn = f137578;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f154281;
+          fn2 = f154290;
           promise.then(fn2);
           break;
         }
@@ -1539,10 +1539,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f137569;
+          fn = f137578;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f154281;
+          fn2 = f154290;
           promise.then(fn2);
           break;
         }
@@ -1713,10 +1713,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f137569;
+          fn = f137578;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f154281;
+          fn2 = f154290;
           promise.then(fn2);
           break;
         }
@@ -1887,10 +1887,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f137569;
+          fn = f137578;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f154281;
+          fn2 = f154290;
           promise.then(fn2);
           break;
         }
@@ -2061,10 +2061,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f137569;
+          fn = f137578;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f154281;
+          fn2 = f154290;
           promise.then(fn2);
           break;
         }
@@ -2235,10 +2235,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f137569;
+          fn = f137578;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f154281;
+          fn2 = f154290;
           promise.then(fn2);
           break;
         }
@@ -2409,10 +2409,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f137569;
+          fn = f137578;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f154281;
+          fn2 = f154290;
           promise.then(fn2);
           break;
         }
@@ -2583,10 +2583,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f137569;
+          fn = f137578;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f154281;
+          fn2 = f154290;
           promise.then(fn2);
           break;
         }
@@ -2757,10 +2757,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f137569;
+          fn = f137578;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f154281;
+          fn2 = f154290;
           promise.then(fn2);
           break;
         }

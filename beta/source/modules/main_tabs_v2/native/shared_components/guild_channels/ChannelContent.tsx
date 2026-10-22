@@ -1,7 +1,7 @@
 // Module ID: 17794
 // Function ID: 17795
 // Name: ChannelContent
-// Dependencies: [19, 17, 11900, 6223, 21, 5191, 1384, 558, 576, 11901, 7073, 17795, 8495, 7838, 17260, 5187, 2]
+// Dependencies: [19, 17, 11895, 6223, 21, 5191, 1384, 558, 576, 11896, 7073, 17795, 8495, 7838, 17260, 5187, 2]
 // Exports: renderChannelContent
 
 // Module 17794 (ChannelContent)
@@ -9,8 +9,8 @@ import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import ReadStateConstants from "ReadStateConstants" /* 6223 */;
 import isRoleRequiredDefault from "isRoleRequired" /* 7073 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11900 */;
-import ChannelListLayout from "ChannelListLayout" /* 11901 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11895 */;
+import ChannelListLayout from "ChannelListLayout" /* 11896 */;
 import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 17260 */;
 import guild_channels_ChannelTitleDefault from "guild_channels/ChannelTitle" /* 17795 */;
 import react from "react" /* 19 */;

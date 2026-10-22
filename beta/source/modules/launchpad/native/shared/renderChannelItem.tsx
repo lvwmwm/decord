@@ -1,7 +1,7 @@
 // Module ID: 17796
 // Function ID: 17797
 // Name: renderChannelItem
-// Dependencies: [19, 17, 2090, 4855, 1392, 6223, 21, 8923, 1128, 5191, 587, 558, 576, 17797, 504, 6436, 12042, 6337, 17798, 10592, 17800, 5521, 2]
+// Dependencies: [19, 17, 2090, 4855, 1392, 6223, 21, 8923, 1128, 5191, 587, 558, 576, 17797, 504, 6436, 12037, 6337, 17798, 10592, 17800, 5521, 2]
 // Exports: default, getChannelAccessibilityProps
 
 // Module 17796 (renderChannelItem)
@@ -89,7 +89,7 @@ function LaunchpadChannelIcon(channel) {
       }
       if (cResult[9] !== channel2) {
         const obj3 = { channel: channel2, size: "sm", wrapperSize: 32 };
-        const tmp38 = closure_8(channel(12042).ChannelIcon, obj3);
+        const tmp38 = closure_8(channel(12037).ChannelIcon, obj3);
         cResult[9] = channel2;
         cResult[10] = tmp38;
         tmp36 = tmp38;
@@ -129,7 +129,7 @@ function LaunchpadChannelIcon(channel) {
     obj9 = { guild: stateFromStores1, size: tmp6.icon.guildBadgeIconSize };
     items3 = [closure_8(View, obj8), ];
     const obj10 = { channel, size: "sm", wrapperSize: 32 };
-    items3[1] = closure_8(channel(12042).ChannelIcon, obj10);
+    items3[1] = closure_8(channel(12037).ChannelIcon, obj10);
     tmp14 = closure_10(closure_9, obj7);
   }
   return tmp14;

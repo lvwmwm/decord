@@ -12,7 +12,7 @@ import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const f120939 = (name) => {
+const f120948 = (name) => {
   let tmp = "settings" === name.name;
   if (!tmp) {
     const state = name.state;
@@ -23,7 +23,7 @@ const f120939 = (name) => {
     let someResult = null != routes1;
     if (someResult) {
       const routes = state.routes;
-      someResult = routes.some(f120939);
+      someResult = routes.some(f120948);
     }
     tmp = someResult;
   }
@@ -43,7 +43,7 @@ function isUserSettingsOpen() {
     let someResult = null != routes1;
     if (someResult) {
       const routes = rootState.routes;
-      someResult = routes.some(f120939);
+      someResult = routes.some(f120948);
     }
     tmp2 = someResult;
   }
@@ -75,7 +75,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsUserSet
             let someResult = null != routes1;
             if (someResult) {
               const routes = rootState.routes;
-              someResult = routes.some(f120939);
+              someResult = routes.some(f120948);
             }
             rootNavigationRef(someResult);
           }
@@ -113,7 +113,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsUserSet
         let someResult = null != routes1;
         if (someResult) {
           let routes = rootState.routes;
-          someResult = routes.some(f120939);
+          someResult = routes.some(f120948);
         }
         _require(someResult);
       }

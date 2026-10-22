@@ -1,7 +1,7 @@
 // Module ID: 15665
 // Function ID: 15666
 // Name: UserProfileTypingIndicatorEditButton
-// Dependencies: [32, 19, 1087, 2065, 21, 558, 576, 1505, 12833, 2052, 7376, 7130, 7155, 1128, 3885, 15640, 12846, 2]
+// Dependencies: [32, 19, 1087, 2065, 21, 558, 576, 1505, 12828, 2052, 7376, 7130, 7155, 1128, 3885, 15640, 12841, 2]
 
 // Module 15665 (UserProfileTypingIndicatorEditButton)
 import react from "react" /* 19 */;
@@ -28,7 +28,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   isTryItOut = isTryItOut.isTryItOut;
   const obj2 = isTryItOut(1505);
   const nativeStackNavigation = obj2.useNativeStackNavigation();
-  const obj3 = isTryItOut(12833);
+  const obj3 = isTryItOut(12828);
   const currentCustomTypingIndicatorConfig = obj3.useCurrentCustomTypingIndicatorConfig(isTryItOut);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [tmp(2052).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_BADGE_PROFILE_PAGE];
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
         if (cResult[7] !== currentCustomTypingIndicatorConfig.typingSuggestion) {
           const intl = tmp(1128).intl;
           const string = intl.string;
-          const tmpResult2 = isTryItOut(12833);
+          const tmpResult2 = isTryItOut(12828);
           const stringResult = string(tmpResult2.getCustomTypingIndicatorSuggestionMessage(currentCustomTypingIndicatorConfig.typingSuggestion));
           cResult[7] = currentCustomTypingIndicatorConfig.typingSuggestion;
           cResult[8] = stringResult;
@@ -89,7 +89,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
           tmp20 = cResult[11];
         }
         if (cResult[12] !== currentCustomTypingIndicatorConfig) {
-          const tmp25 = jsx(nativeStackNavigation(12846), { config: currentCustomTypingIndicatorConfig, size: 24 });
+          const tmp25 = jsx(nativeStackNavigation(12841), { config: currentCustomTypingIndicatorConfig, size: 24 });
           cResult[12] = currentCustomTypingIndicatorConfig;
           cResult[13] = tmp25;
           tmp23 = tmp25;
@@ -155,7 +155,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   let analyticsLocations;
   let obj = isTryItOut(1505);
   const nativeStackNavigation = obj.useNativeStackNavigation();
-  const obj2 = isTryItOut(12833);
+  const obj2 = isTryItOut(12828);
   const currentCustomTypingIndicatorConfig = obj2.useCurrentCustomTypingIndicatorConfig(isTryItOut);
   const useSelectedDismissibleContent = isTryItOut(7376).useSelectedDismissibleContent;
   const items = [];
@@ -181,7 +181,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   }, items1);
   const intl = tmp(1128).intl;
   const string = intl.string;
-  const tmpResult = isTryItOut(12833);
+  const tmpResult = isTryItOut(12828);
   const stringResult = string(tmpResult.getCustomTypingIndicatorSuggestionMessage(currentCustomTypingIndicatorConfig.typingSuggestion));
   const UserProfileEditFormButton = tmp(15640).UserProfileEditFormButton;
   const intl2 = tmp(1128).intl;

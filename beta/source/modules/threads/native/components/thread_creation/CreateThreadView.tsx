@@ -1,7 +1,7 @@
 // Module ID: 17737
 // Function ID: 17738
 // Name: CreateThreadView
-// Dependencies: [5, 32, 19, 17, 7510, 7640, 1087, 21, 5191, 587, 558, 576, 9562, 8186, 7130, 7155, 1633, 6942, 10529, 8473, 17738, 7172, 1128, 17740, 12849, 12823, 13334, 10701, 1506, 1267, 5206, 5080, 1114, 9998, 17739, 5081, 2]
+// Dependencies: [5, 32, 19, 17, 7510, 7640, 1087, 21, 5191, 587, 558, 576, 9562, 8186, 7130, 7155, 1633, 6942, 10529, 8473, 17738, 7172, 1128, 17740, 12844, 12818, 13329, 10701, 1506, 1267, 5206, 5080, 1114, 9998, 17739, 5081, 2]
 
 // Module 17737 (CreateThreadView)
 import react2 from "react" /* 576 */;
@@ -428,7 +428,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Create
                                           }
                                           if (cResult[54] !== parentChannel.id) {
                                             const obj8 = { channelId: parentChannel.id };
-                                            const tmp75 = closure_13(parentChannel(13334), obj8);
+                                            const tmp75 = closure_13(parentChannel(13329), obj8);
                                             cResult[54] = parentChannel.id;
                                             cResult[55] = tmp75;
                                             tmp73 = tmp75;
@@ -477,7 +477,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Create
                                         }
                                       }
                                       const obj11 = { ref, channel: parentChannel, onJumpToPresent, screenIndex, secondaryTextFieldRef: ref1, threadCreationCallback: tmp14 };
-                                      const tmp72 = closure_13(parentChannel(12823), obj11);
+                                      const tmp72 = closure_13(parentChannel(12818), obj11);
                                       cResult[50] = tmp14;
                                       cResult[51] = parentChannel;
                                       cResult[52] = screenIndex;
@@ -486,7 +486,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Create
                                     }
                                     let tmp65 = null;
                                     if (parentChannel.rateLimitPerUser > 0) {
-                                      const obj12 = { style: tmp4.typingWrapper, children: closure_13(parentChannel(12849), obj13) };
+                                      const obj12 = { style: tmp4.typingWrapper, children: closure_13(parentChannel(12844), obj13) };
                                       obj13 = { channel: parentChannel, hasTypingText: false, slowmodeType: SlowmodeType.CreateThread };
                                       tmp65 = closure_13(closure_6, obj12);
                                     }
@@ -708,15 +708,15 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Create
   items3[1] = closure_13(tmp19, obj6);
   let tmp17Result2 = null;
   if (parentChannel.rateLimitPerUser > 0) {
-    const obj15 = { style: tmp.typingWrapper, children: closure_13(parentChannel(12849), obj16) };
+    const obj15 = { style: tmp.typingWrapper, children: closure_13(parentChannel(12844), obj16) };
     obj16 = { channel: parentChannel, hasTypingText: false, slowmodeType: SlowmodeType.CreateThread };
     tmp17Result2 = tmp17(tmp18, obj15);
   }
   items3[2] = tmp17Result2;
   const obj17 = { ref, channel: parentChannel, onJumpToPresent, screenIndex, secondaryTextFieldRef: ref1, threadCreationCallback: tmp8 };
-  items3[3] = closure_13(parentChannel(12823), obj17);
+  items3[3] = closure_13(parentChannel(12818), obj17);
   const obj18 = { channelId: parentChannel.id };
-  items3[4] = closure_13(parentChannel(13334), obj18);
+  items3[4] = closure_13(parentChannel(13329), obj18);
   items1[1] = closure_14(closure_6, obj4);
   return closure_14(AnalyticsLocationProvider, obj3);
 });

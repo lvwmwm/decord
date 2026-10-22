@@ -1,7 +1,7 @@
 // Module ID: 18376
 // Function ID: 18377
 // Name: LaunchPadPullTab
-// Dependencies: [19, 17, 11080, 12339, 21, 5191, 587, 558, 11699, 4945, 12345, 576, 18377, 5478, 1128, 14851, 18062, 2]
+// Dependencies: [19, 17, 11080, 12334, 21, 5191, 587, 558, 11699, 4945, 12340, 576, 18377, 5478, 1128, 14851, 18062, 2]
 
 // Module 18376 (LaunchPadPullTab)
 import react_native from "react-native" /* 17 */;
@@ -9,8 +9,8 @@ import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
 import spring from "spring" /* 5478 */;
-import ChatInputConstants from "ChatInputConstants" /* 12339 */;
-import useWindowDimensionsSharedValue from "useWindowDimensionsSharedValue" /* 12345 */;
+import ChatInputConstants from "ChatInputConstants" /* 12334 */;
+import useWindowDimensionsSharedValue from "useWindowDimensionsSharedValue" /* 12340 */;
 import react from "react" /* 19 */;
 import LaunchPadConstants from "LaunchPadConstants" /* 11080 */;
 import createStyles_mod from "createStyles" /* 5191 */;

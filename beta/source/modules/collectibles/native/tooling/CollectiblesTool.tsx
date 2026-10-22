@@ -1,7 +1,7 @@
 // Module ID: 16796
 // Function ID: 16797
 // Name: CollectiblesTool
-// Dependencies: [32, 19, 17, 10355, 1392, 7530, 7546, 8603, 1087, 1394, 21, 5191, 587, 558, 576, 9259, 5187, 10818, 5480, 573, 10394, 13719, 16797, 1202, 2]
+// Dependencies: [32, 19, 17, 10355, 1392, 7530, 7546, 8603, 1087, 1394, 21, 5191, 587, 558, 576, 9259, 5187, 10818, 5480, 573, 10394, 13714, 16797, 1202, 2]
 
 // Module 16796 (CollectiblesTool)
 import react2 from "react" /* 576 */;
@@ -13,7 +13,7 @@ import BaseTextButton from "BaseTextButton" /* 5480 */;
 import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8603 */;
 import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 9259 */;
 import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 10818 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 13719 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 13714 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

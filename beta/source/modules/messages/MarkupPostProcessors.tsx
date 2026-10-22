@@ -14,11 +14,11 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f99157 = (content) => {
+const f99166 = (content) => {
   let someResult;
   let closure_0 = fn;
   if (content instanceof Array) {
-    someResult = content.some(f99157);
+    someResult = content.some(f99166);
   } else {
     someResult = tmp(content);
     if (null == someResult) {
@@ -30,7 +30,7 @@ const f99157 = (content) => {
         closure_0 = tmp;
         const _Array2 = Array;
         if (content instanceof Array) {
-          someResult1 = content.some(f99157);
+          someResult1 = content.some(f99166);
         } else {
           someResult1 = tmp(content);
           if (null == someResult1) {
@@ -43,7 +43,7 @@ const f99157 = (content) => {
               someResult2 = content.items instanceof Array;
               if (someResult2) {
                 const items2 = content.items;
-                someResult2 = items2.some(f99158);
+                someResult2 = items2.some(f99167);
               }
             }
             someResult1 = someResult2;
@@ -55,7 +55,7 @@ const f99157 = (content) => {
         someResult3 = content.items instanceof Array;
         if (someResult3) {
           const items = content.items;
-          someResult3 = items.some(f99158);
+          someResult3 = items.some(f99167);
         }
       }
       someResult = someResult3;
@@ -63,11 +63,11 @@ const f99157 = (content) => {
   }
   return someResult;
 };
-const f99158 = (content) => {
+const f99167 = (content) => {
   let someResult;
   let closure_0 = fn;
   if (content instanceof Array) {
-    someResult = content.some(f99157);
+    someResult = content.some(f99166);
   } else {
     someResult = tmp(content);
     if (null == someResult) {
@@ -79,7 +79,7 @@ const f99158 = (content) => {
         closure_0 = tmp;
         const _Array2 = Array;
         if (content instanceof Array) {
-          someResult1 = content.some(f99157);
+          someResult1 = content.some(f99166);
         } else {
           someResult1 = tmp(content);
           if (null == someResult1) {
@@ -92,7 +92,7 @@ const f99158 = (content) => {
               someResult2 = content.items instanceof Array;
               if (someResult2) {
                 const items2 = content.items;
-                someResult2 = items2.some(f99158);
+                someResult2 = items2.some(f99167);
               }
             }
             someResult1 = someResult2;
@@ -104,7 +104,7 @@ const f99158 = (content) => {
         someResult3 = content.items instanceof Array;
         if (someResult3) {
           const items = content.items;
-          someResult3 = items.some(f99158);
+          someResult3 = items.some(f99167);
         }
       }
       someResult = someResult3;
@@ -112,13 +112,13 @@ const f99158 = (content) => {
   }
   return someResult;
 };
-const f99163 = (type) => {
+const f99172 = (type) => {
   const hasItem = set.has(type.type) && null != type.content;
   if (hasItem) {
     const _Array = Array;
     const content = type.content;
     if (Array.isArray(type.content)) {
-      const item = content.forEach(f99163);
+      const item = content.forEach(f99172);
     } else if (typeof content === "string") {
       const str = type.content;
       type.content = str.replace(/\n/g, " ");
@@ -133,14 +133,14 @@ const f99163 = (type) => {
 };
 function checkSpoilerEmbeds(ast1, inline) {
   let tmp2;
-  const f99159 = (content) => {
+  const f99168 = (content) => {
     let tmp = null;
     if ("spoiler" === content.type) {
       let someResult;
       fn = (content) => "link" === content.type || "attachmentLink" === content.type || null;
       let _Array5 = Array;
       if (content instanceof Array) {
-        someResult = content.some(f99157);
+        someResult = content.some(f99166);
       } else {
         someResult = "link" === content.type || "attachmentLink" === content.type || null;
         if (null == someResult) {
@@ -151,7 +151,7 @@ function checkSpoilerEmbeds(ast1, inline) {
             content = content.content;
             let _Array2 = Array;
             if (content instanceof Array) {
-              someResult1 = content.some(f99157);
+              someResult1 = content.some(f99166);
             } else {
               someResult1 = fn(content);
               if (null == someResult1) {
@@ -164,7 +164,7 @@ function checkSpoilerEmbeds(ast1, inline) {
                   someResult2 = content.items instanceof Array;
                   if (someResult2) {
                     let items2 = content.items;
-                    someResult2 = items2.some(f99158);
+                    someResult2 = items2.some(f99167);
                   }
                 }
                 someResult1 = someResult2;
@@ -176,7 +176,7 @@ function checkSpoilerEmbeds(ast1, inline) {
             someResult3 = content.items instanceof Array;
             if (someResult3) {
               let items = content.items;
-              someResult3 = items.some(f99158);
+              someResult3 = items.some(f99167);
             }
           }
           someResult = someResult3;
@@ -189,10 +189,10 @@ function checkSpoilerEmbeds(ast1, inline) {
   let tmp = inline;
   if (tmp) {
     let someResult;
-    const fn2 = f99159;
+    const fn2 = f99168;
     const _Array7 = Array;
     if (ast1 instanceof Array) {
-      someResult = ast1.some(f99157);
+      someResult = ast1.some(f99166);
     } else {
       someResult = fn2(ast1);
       if (null == someResult) {
@@ -203,7 +203,7 @@ function checkSpoilerEmbeds(ast1, inline) {
           const content3 = ast1.content;
           const _Array9 = Array;
           if (content3 instanceof Array) {
-            someResult1 = content3.some(f99157);
+            someResult1 = content3.some(f99166);
           } else {
             someResult1 = fn2(content3);
             if (null == someResult1) {
@@ -216,7 +216,7 @@ function checkSpoilerEmbeds(ast1, inline) {
                 someResult2 = content3.items instanceof Array;
                 if (someResult2) {
                   const items4 = content3.items;
-                  someResult2 = items4.some(f99158);
+                  someResult2 = items4.some(f99167);
                 }
               }
               someResult1 = someResult2;
@@ -228,7 +228,7 @@ function checkSpoilerEmbeds(ast1, inline) {
           someResult3 = ast1.items instanceof Array;
           if (someResult3) {
             const items3 = ast1.items;
-            someResult3 = items3.some(f99158);
+            someResult3 = items3.some(f99167);
           }
         }
         someResult = someResult3;
@@ -245,10 +245,10 @@ function checkSpoilerEmbeds(ast1, inline) {
     if (tmp2) {
       let someResult4;
       let content = ast1[0].content;
-      let fn = f99159;
+      let fn = f99168;
       let _Array2 = Array;
       if (content instanceof Array) {
-        someResult4 = content.some(f99157);
+        someResult4 = content.some(f99166);
       } else {
         someResult4 = fn(content);
         if (null == someResult4) {
@@ -259,7 +259,7 @@ function checkSpoilerEmbeds(ast1, inline) {
             const content2 = content.content;
             let _Array4 = Array;
             if (content2 instanceof Array) {
-              someResult5 = content2.some(f99157);
+              someResult5 = content2.some(f99166);
             } else {
               someResult5 = fn(content2);
               if (null == someResult5) {
@@ -272,7 +272,7 @@ function checkSpoilerEmbeds(ast1, inline) {
                   someResult6 = content2.items instanceof Array;
                   if (someResult6) {
                     let items2 = content2.items;
-                    someResult6 = items2.some(f99158);
+                    someResult6 = items2.some(f99167);
                   }
                 }
                 someResult5 = someResult6;
@@ -284,7 +284,7 @@ function checkSpoilerEmbeds(ast1, inline) {
             someResult7 = content.items instanceof Array;
             if (someResult7) {
               let items = content.items;
-              someResult7 = items.some(f99158);
+              someResult7 = items.some(f99167);
             }
           }
           someResult4 = someResult7;
@@ -298,7 +298,7 @@ function checkSpoilerEmbeds(ast1, inline) {
 function containsMatchingNode(content, fn) {
   let closure_0 = fn;
   if (content instanceof Array) {
-    return content.some(f99157);
+    return content.some(f99166);
   } else {
     let tmp = fn(content);
     if (null == tmp) {
@@ -311,7 +311,7 @@ function containsMatchingNode(content, fn) {
         someResult = content.items instanceof Array;
         if (someResult) {
           const items = content.items;
-          someResult = items.some(f99158);
+          someResult = items.some(f99167);
         }
       }
       tmp = someResult;
@@ -384,7 +384,7 @@ export const removeRedundantLinks = function removeRedundantLinks(arr) {
   });
 };
 export const convertNewlinesInContent = function convertNewlinesInContent(arr) {
-  const item = arr.forEach(f99163);
+  const item = arr.forEach(f99172);
   return arr;
 };
 export const runMessageMarkupPostProcessors = function runMessageMarkupPostProcessors(arg0) {
@@ -399,7 +399,7 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
   let obj2;
   let obj6;
   let toAST;
-  const f99154 = (type) => {
+  const f99163 = (type) => {
     let tmp = "emoji" !== type.type && "customEmoji" !== type.type;
     if (tmp) {
       let tmp2 = typeof type.content !== "string";
@@ -411,7 +411,7 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
     }
     return tmp;
   };
-  const f99155 = (type) => {
+  const f99164 = (type) => {
     const tmp = "emoji" !== type.type && "customEmoji" !== type.type;
     if (!tmp) {
       closure_0 = closure_0 + 1;
@@ -420,7 +420,7 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
       return false;
     }
   };
-  const f99156 = (item) => {
+  const f99165 = (item) => {
     item.jumboable = true;
   };
   ({ ast, inline, message, contentMessage, messageContent, formatInline } = arg0);
@@ -461,11 +461,11 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
   const tmp8 = formatInline || message.type === MessageTypes.MEDIA_MENTION_MESSAGE;
   if (!tmp8) {
     if (inline) {
-      if (!arr3.some(f99154)) {
+      if (!arr3.some(f99163)) {
         const v0 = 0;
-        let item = arr3.forEach(f99155);
+        let item = arr3.forEach(f99164);
         if (v0 <= MAX_EMOJI_TO_BE_JUMBO) {
-          const item1 = arr3.forEach(f99156);
+          const item1 = arr3.forEach(f99165);
         }
       }
     } else {
@@ -479,11 +479,11 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
         let content = arr3[0].content;
         _require = undefined;
         const first = arr3[0];
-        if (!content.some(f99154)) {
+        if (!content.some(f99163)) {
           _require = 0;
-          const item2 = content.forEach(f99155);
+          const item2 = content.forEach(f99164);
           if (_require <= MAX_EMOJI_TO_BE_JUMBO) {
-            const item3 = content.forEach(f99156);
+            const item3 = content.forEach(f99165);
           }
         }
         first.content = content;
@@ -535,7 +535,7 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
     hasSpoilerEmbeds = checkSpoilerEmbeds(ast1, inline);
   }
   if (formatInline) {
-    const item4 = ast1.forEach(f99163);
+    const item4 = ast1.forEach(f99172);
   }
   return { ast: ast1, hasSpoilerEmbeds };
 };

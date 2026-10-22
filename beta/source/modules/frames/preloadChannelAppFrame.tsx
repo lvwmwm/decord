@@ -1,10 +1,10 @@
-// Module ID: 13632
-// Function ID: 13633
+// Module ID: 13627
+// Function ID: 13628
 // Name: preloadChannelAppFrame
 // Dependencies: [2068, 4845, 6295, 6296, 1087, 2063, 11041, 6180, 6200, 6299, 11044, 2]
 // Exports: cancelChannelAppFramePreload, claimPreloadedFrame, preloadChannelAppFrame
 
-// Module 13632 (preloadChannelAppFrame)
+// Module 13627 (preloadChannelAppFrame)
 import getURLForApplicationDefault from "getURLForApplication" /* 6299 */;
 import leaveFrame from "leaveFrame" /* 11041 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
@@ -30,7 +30,7 @@ export const preloadChannelAppFrame = function preloadChannelAppFrame(id) {
   let frameId;
   let timeout;
   let timeout1;
-  const f117554 = () => {
+  const f117526 = () => {
     const value = map.get(frameId);
     const obj = map;
     if (null != value) {
@@ -83,13 +83,13 @@ export const preloadChannelAppFrame = function preloadChannelAppFrame(id) {
       if (value == null) {
         const self3 = this;
         const self4 = this;
-        const obj4 = { stopTimer: timeout, launchRequestId: "e" };
+        const obj4 = { stopTimer: timeout, launchRequestId: "a" };
         timeout = new frameId(2063).Timeout();
         value = obj4;
       }
       const result = obj9.set(frameId, value);
       const stopTimer2 = value.stopTimer;
-      stopTimer2.start(5000, f117554);
+      stopTimer2.start(5000, f117526);
     } else {
       let obj2 = FramesStore;
       if (null == FramesStore.getFrame(frameId)) {
@@ -103,13 +103,13 @@ export const preloadChannelAppFrame = function preloadChannelAppFrame(id) {
                 if (value3 == null) {
                   const self = this;
                   const self2 = this;
-                  const obj5 = { stopTimer: timeout1, launchRequestId: "e" };
+                  const obj5 = { stopTimer: timeout1, launchRequestId: "a" };
                   timeout1 = new tmp7(2063).Timeout();
                   value3 = obj5;
                 }
                 const result1 = obj9.set(frameId, value3);
                 let stopTimer = value3.stopTimer;
-                stopTimer.start(5000, f117554);
+                stopTimer.start(5000, f117526);
                 const obj6 = { applicationId, surface, showErrorModal: false };
                 const tmp7Result2 = frameId(11044);
                 const launchFrameResult = tmp7Result2.launchFrame(obj6);

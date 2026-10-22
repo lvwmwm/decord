@@ -1,9 +1,9 @@
-// Module ID: 13110
-// Function ID: 13111
+// Module ID: 13105
+// Function ID: 13106
 // Name: usePendingGameProfileReturn
 // Dependencies: [32, 19, 2022, 9158, 1087, 558, 576, 504, 9156, 9150, 2]
 
-// Module 13110 (usePendingGameProfileReturn)
+// Module 13105 (usePendingGameProfileReturn)
 import Constants from "Constants" /* 1087 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9150 */;
 import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9156 */;

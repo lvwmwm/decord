@@ -1,14 +1,14 @@
-// Module ID: 14082
-// Function ID: 14083
+// Module ID: 14077
+// Function ID: 14078
 // Name: AvatarPile
-// Dependencies: [19, 21, 558, 576, 14083, 12332, 12731, 12730, 9308, 2]
+// Dependencies: [19, 21, 558, 576, 14078, 12327, 12726, 12725, 9308, 2]
 
-// Module 14082 (AvatarPile)
+// Module 14077 (AvatarPile)
 import react2 from "react" /* 576 */;
 import ClipView from "ClipView" /* 9308 */;
-import ListUtils from "ListUtils" /* 12332 */;
-import Pile2 from "Pile" /* 12730 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14083 */;
+import ListUtils from "ListUtils" /* 12327 */;
+import Pile2 from "Pile" /* 12725 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14078 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -17,7 +17,7 @@ import size_mod from "module_2" /* 2 */;
 let c3;
 let closure_4;
 let tmp2;
-const PileOverflow = tmp2(12731);
+const PileOverflow = tmp2(12726);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AvatarPile(size) {
   let children;
@@ -60,7 +60,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AvatarPile
           }
         }
         const obj2 = { "aria-label": tmp6, shape: ClipView.CutoutShape.Circle, size: tmp5, gap: num3, depthX: 0.4, children: items };
-        const Pile = tmp(12730).Pile;
+        const Pile = tmp(12725).Pile;
         items = [children, tmp8];
         const tmp14 = React3(Pile, obj2);
         cResult[7] = tmp5;
@@ -75,7 +75,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AvatarPile
     let tmp10 = null != totalCount && countResult < totalCount;
     if (tmp10) {
       const obj3 = { size: tmp5, borderRadius: tmp5 / 2, value: totalCount - countResult };
-      tmp10 = _false(tmp(12731).PileOverflow, obj3);
+      tmp10 = _false(tmp(12726).PileOverflow, obj3);
     }
     cResult[3] = tmp5;
     cResult[4] = countResult;

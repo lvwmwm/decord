@@ -1,9 +1,9 @@
-// Module ID: 13758
-// Function ID: 13759
+// Module ID: 13753
+// Function ID: 13754
 // Name: ChannelPinsStore
 // Dependencies: [2132, 2068, 2128, 2090, 5532, 4855, 1392, 5534, 12, 7585, 504, 584, 2]
 
-// Module 13758 (ChannelPinsStore)
+// Module 13753 (ChannelPinsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;

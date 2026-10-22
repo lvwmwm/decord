@@ -1,7 +1,7 @@
 // Module ID: 17562
 // Function ID: 17563
 // Name: ForYouItems
-// Dependencies: [5, 32, 19, 17, 5181, 5540, 2068, 2090, 1392, 17556, 1087, 6189, 21, 5191, 5187, 587, 558, 5499, 576, 17561, 1128, 1405, 8341, 8165, 12871, 10096, 7985, 504, 8410, 1202, 13320, 17563, 1505, 5168, 14859, 6336, 1267, 14275, 9863, 9945, 4904, 9968, 2002, 5155, 17564, 5148, 17558, 7167, 17565, 17566, 11, 6462, 17567, 6337, 14200, 1506, 2044, 9615, 17577, 17578, 17579, 17580, 17581, 17587, 686, 17588, 17589, 1388, 17560, 17590, 7091, 2]
+// Dependencies: [5, 32, 19, 17, 5181, 5540, 2068, 2090, 1392, 17556, 1087, 6189, 21, 5191, 5187, 587, 558, 5499, 576, 17561, 1128, 1405, 8341, 8165, 12866, 10096, 7985, 504, 8410, 1202, 13315, 17563, 1505, 5168, 14859, 6336, 1267, 14275, 9863, 9945, 4904, 9968, 2002, 5155, 17564, 5148, 17558, 7167, 17565, 17566, 11, 6462, 17567, 6337, 14200, 1506, 2044, 9615, 17577, 17578, 17579, 17580, 17581, 17587, 686, 17588, 17589, 1388, 17560, 17590, 7091, 2]
 
 // Module 17562 (ForYouItems)
 import react2 from "react" /* 576 */;
@@ -18,7 +18,7 @@ import PushNotificationConstants from "PushNotificationConstants" /* 6189 */;
 import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6336 */;
 import PollsUtils from "PollsUtils" /* 8165 */;
 import parsePollResultSystemMessageEmbedDefault from "parsePollResultSystemMessageEmbed" /* 8341 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13320 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13315 */;
 import handleSupportedURLDefault from "handleSupportedURL" /* 14859 */;
 import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 17560 */;
 import ForYouReadSectionHeader from "ForYouReadSectionHeader" /* 17577 */;
@@ -517,7 +517,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYou
         const obj6 = { style: tmp4.messagePreviewIconV2Container, children: closure_21(Icon, obj7) };
         Icon = tmp(1202).Icon;
         if (constants4.ATTACHMENT === iconType) {
-          tmp38 = guild_id(12871);
+          tmp38 = guild_id(12866);
         } else if (constants4.STICKER === iconType) {
           tmp38 = guild_id(10096);
         } else {
@@ -705,7 +705,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYou
     const obj9 = { style: tmp.messagePreviewIconV2Container, children: closure_21(Icon, obj10) };
     Icon = tmp5(1202).Icon;
     if (constants4.ATTACHMENT === iconType) {
-      tmp17 = guild_id(12871);
+      tmp17 = guild_id(12866);
     } else if (constants4.STICKER === iconType) {
       tmp17 = guild_id(10096);
     } else {

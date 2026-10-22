@@ -1,14 +1,14 @@
-// Module ID: 14012
-// Function ID: 14013
+// Module ID: 14007
+// Function ID: 14008
 // Name: MediaViewer
-// Dependencies: [32, 19, 17, 21, 1384, 558, 576, 4945, 14013, 14014, 8668, 7038, 6612, 7130, 7155, 8693, 14018, 5472, 5192, 8663, 8724, 10669, 4946, 11230, 2]
+// Dependencies: [32, 19, 17, 21, 1384, 558, 576, 4945, 14008, 14009, 8668, 7038, 6612, 7130, 7155, 8693, 14013, 5472, 5192, 8663, 8724, 10669, 4946, 11230, 2]
 
-// Module 14012 (MediaViewer)
+// Module 14007 (MediaViewer)
 import react2 from "react" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
 import timing from "timing" /* 5192 */;
 import useVideoControls from "useVideoControls" /* 8663 */;
-import MediaViewerItem2 from "MediaViewerItem" /* 14014 */;
+import MediaViewerItem2 from "MediaViewerItem" /* 14009 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -70,7 +70,7 @@ function MediaViewer(arg0) {
   let obj = require("MediaViewerDimensionsContext");
   const mediaViewerDimensions = obj.useMediaViewerDimensions();
   ({ width, height } = mediaViewerDimensions);
-  const tmp9 = height(14018)({ index, onClose, sources, windowHeight: height, windowWidth: width });
+  const tmp9 = height(14013)({ index, onClose, sources, windowHeight: height, windowWidth: width });
   dependencyMap = tmp9;
   let obj2 = require("ReanimatedRexport");
   sharedValue = obj2.useSharedValue(0);

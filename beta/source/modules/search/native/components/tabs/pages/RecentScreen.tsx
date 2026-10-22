@@ -1,7 +1,7 @@
 // Module ID: 17775
 // Function ID: 17776
 // Name: RecentScreen
-// Dependencies: [32, 5, 19, 6340, 13015, 17776, 13002, 9614, 13004, 1087, 21, 558, 576, 13013, 1128, 5187, 6462, 10522, 17777, 7290, 13009, 12995, 504, 12991, 17770, 1506, 17780, 12988, 15872, 7764, 6174, 17781, 17782, 17785, 2]
+// Dependencies: [32, 5, 19, 6340, 13010, 17776, 12997, 9614, 12999, 1087, 21, 558, 576, 13008, 1128, 5187, 6462, 10522, 17777, 7290, 13004, 12990, 504, 12986, 17770, 1506, 17780, 12983, 15872, 7764, 6174, 17781, 17782, 17785, 2]
 
 // Module 17775 (RecentScreen)
 import Fragment from "Fragment" /* 21 */;
@@ -11,21 +11,21 @@ import intl3 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import Pressables from "Pressables" /* 6462 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7764 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 12988 */;
-import SmartSearchUtils from "SmartSearchUtils" /* 12991 */;
-import SearchUtils from "SearchUtils" /* 12995 */;
-import SearchPlatformConstants from "SearchPlatformConstants" /* 13004 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13009 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13013 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 12983 */;
+import SmartSearchUtils from "SmartSearchUtils" /* 12986 */;
+import SearchUtils from "SearchUtils" /* 12990 */;
+import SearchPlatformConstants from "SearchPlatformConstants" /* 12999 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13004 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13008 */;
 import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15872 */;
 import MediaGridPlaceholder from "MediaGridPlaceholder" /* 17782 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import SearchMessageStore from "SearchMessageStore" /* 6340 */;
-import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 13015 */;
+import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 13010 */;
 import SearchHistoryStore from "SearchHistoryStore" /* 17776 */;
-import SearchQueryStore from "SearchQueryStore" /* 13002 */;
+import SearchQueryStore from "SearchQueryStore" /* 12997 */;
 import SearchConstants from "SearchConstants" /* 9614 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -732,7 +732,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function R
   const messages = stateFromStoresObject.messages;
   ({ isLoadingMediaGrid, isInitialSearchQuery } = stateFromStoresObject);
   if (cResult[3] !== searchContext) {
-    const tmp2Result2 = tmp2(12995);
+    const tmp2Result2 = tmp2(12990);
     const searchContextId = tmp2Result2.getSearchContextId(searchContext);
     cResult[3] = searchContext;
     cResult[4] = searchContextId;
@@ -756,7 +756,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function R
       items1 = [];
       const obj4 = messages[Symbol.iterator]();
       while (obj4 !== undefined) {
-        let obj5 = searchContext(12988);
+        let obj5 = searchContext(12983);
         let items2 = [tmp19];
         let media = obj5.getMedia(searchContext, items2);
         let item = media.forEach((item) => items1.push(item));

@@ -1,9 +1,9 @@
-// Module ID: 14063
-// Function ID: 14064
+// Module ID: 14058
+// Function ID: 14059
 // Name: Badges
-// Dependencies: [19, 17, 2132, 21, 587, 5191, 558, 576, 14061, 8544, 5187, 504, 9514, 11180, 14064, 1128, 14066, 14068, 13942, 11632, 1104, 9211, 2]
+// Dependencies: [19, 17, 2132, 21, 587, 5191, 558, 576, 14056, 8544, 5187, 504, 9514, 11180, 14059, 1128, 14061, 14063, 13937, 11632, 1104, 9211, 2]
 
-// Module 14063 (Badges)
+// Module 14058 (Badges)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -16,11 +16,11 @@ import TrophyIcon from "TrophyIcon" /* 9211 */;
 import GameControllerIcon from "GameControllerIcon" /* 9514 */;
 import TimerIcon2 from "TimerIcon" /* 11180 */;
 import RetryIcon from "RetryIcon" /* 11632 */;
-import FireIcon from "FireIcon" /* 13942 */;
-import useTimestampTickedNow from "useTimestampTickedNow" /* 14061 */;
-import NewUserIcon from "NewUserIcon" /* 14064 */;
-import FlashIcon2 from "FlashIcon" /* 14066 */;
-import TrendingType from "TrendingType" /* 14068 */;
+import FireIcon from "FireIcon" /* 13937 */;
+import useTimestampTickedNow from "useTimestampTickedNow" /* 14056 */;
+import NewUserIcon from "NewUserIcon" /* 14059 */;
+import FlashIcon2 from "FlashIcon" /* 14061 */;
+import TrendingType from "TrendingType" /* 14063 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2132 */;
 import Fragment from "Fragment" /* 21 */;
@@ -137,7 +137,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActiveTimest
 }) : (function ActiveTimestamp(entry) {
   entry = entry.entry;
   const style = entry.style;
-  obj = entry(14061);
+  obj = entry(14056);
   const now = obj.useTimestampTickedNow().now;
   const items = [entry, now];
   const children = react.useMemo(() => {
@@ -641,7 +641,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreakBadge
         tmp19 = null;
         if (streakCount >= 2) {
           tmp24 = closure_16;
-          FlashIcon = tmp(14066).FlashIcon;
+          FlashIcon = tmp(14061).FlashIcon;
           const intl = tmp(1128).intl;
           const obj3 = { days: streakCount };
           formatToPlainStringResult = intl.formatToPlainString(tmp(1128).t["Klie/P"], obj3);

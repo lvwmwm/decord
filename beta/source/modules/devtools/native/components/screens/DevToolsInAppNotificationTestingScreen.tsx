@@ -1,7 +1,7 @@
 // Module ID: 16808
 // Function ID: 16809
 // Name: DevToolsInAppNotificationTestingScreen
-// Dependencies: [19, 17, 6286, 2072, 4856, 2068, 2090, 2119, 1392, 1087, 21, 5191, 587, 4904, 13523, 13525, 6006, 11, 558, 576, 1633, 1202, 6542, 6457, 16650, 6466, 2]
+// Dependencies: [19, 17, 6286, 2072, 4856, 2068, 2090, 2119, 1392, 1087, 21, 5191, 587, 4904, 13518, 13520, 6006, 11, 558, 576, 1633, 1202, 6542, 6457, 16650, 6466, 2]
 
 // Module 16808 (DevToolsInAppNotificationTestingScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -13,8 +13,8 @@ import ChannelRecord from "ChannelRecord" /* 2072 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4904 */;
 import StickersTypes from "StickersTypes" /* 6006 */;
 import TableRowGroup2 from "TableRowGroup" /* 6542 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 13523 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 13525 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 13518 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 13520 */;
 import react from "react" /* 19 */;
 import StickersStore from "StickersStore" /* 6286 */;
 import MessageRecord from "MessageRecord" /* 4856 */;

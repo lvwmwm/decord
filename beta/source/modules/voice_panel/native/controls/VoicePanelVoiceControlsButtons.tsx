@@ -1,7 +1,7 @@
 // Module ID: 18341
 // Function ID: 18342
 // Name: VoicePanelVoiceControlsButtons
-// Dependencies: [32, 19, 2067, 6292, 1209, 11232, 6153, 502, 2014, 5212, 1087, 18342, 5216, 21, 5400, 18343, 2002, 1128, 558, 576, 11496, 6542, 11408, 504, 4904, 13959, 13960, 6465, 6457, 10679, 18301, 8506, 8471, 18329, 13217, 11440, 1267, 11522, 1384, 11469, 587, 5343, 9074, 18237, 7172, 9058, 9065, 6466, 18197, 18198, 10639, 11488, 5205, 11187, 11439, 18344, 9711, 11046, 10724, 18345, 584, 14365, 11459, 7368, 18236, 2]
+// Dependencies: [32, 19, 2067, 6292, 1209, 11232, 6153, 502, 2014, 5212, 1087, 18342, 5216, 21, 5400, 18343, 2002, 1128, 558, 576, 11496, 6542, 11408, 504, 4904, 13954, 13955, 6465, 6457, 10679, 18301, 8506, 8471, 18329, 13212, 11440, 1267, 11522, 1384, 11469, 587, 5343, 9074, 18237, 7172, 9058, 9065, 6466, 18197, 18198, 10639, 11488, 5205, 11187, 11439, 18344, 9711, 11046, 10724, 18345, 584, 14365, 11459, 7368, 18236, 2]
 
 // Module 18341 (VoicePanelVoiceControlsButtons)
 import Fragment from "Fragment" /* 21 */;
@@ -29,7 +29,7 @@ import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 11408 */;
 import ChannelCallConnectingScreen from "ChannelCallConnectingScreen" /* 11459 */;
 import VolumeSliderDefault from "VolumeSlider" /* 11469 */;
 import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 11522 */;
-import SoundboardIcon from "SoundboardIcon" /* 13217 */;
+import SoundboardIcon from "SoundboardIcon" /* 13212 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 14365 */;
 import useCanInviteMembers from "useCanInviteMembers" /* 18197 */;
 import useInviteMembersCallback from "useInviteMembersCallback" /* 18198 */;
@@ -1194,7 +1194,7 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? (function HideSelfVid
       const tmp2 = _require;
       if (!tmp2) {
         const VIDEO = constants.VIDEO;
-        const f153175 = () => f153175(!VIDEO);
+        const f153184 = () => f153184(!VIDEO);
         const obj2 = { importer, isDismissable: false };
         const obj = actions_AlertActionCreatorsDefault;
         obj.openLazy(obj2);
@@ -1231,7 +1231,7 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? (function HideSelfVid
         const tmp2 = closure_0;
         if (!tmp2) {
           const VIDEO = constants.VIDEO;
-          const f153176 = () => f153176(!VIDEO);
+          const f153185 = () => f153185(!VIDEO);
           let obj = actions_AlertActionCreatorsDefault;
           const obj2 = { importer, isDismissable: false };
           obj.openLazy(obj2);

@@ -1,7 +1,7 @@
 // Module ID: 18744
 // Function ID: 18745
 // Name: AuditLogActionIcon
-// Dependencies: [19, 17, 18739, 1087, 21, 5191, 587, 18745, 18679, 9252, 5145, 16003, 5137, 9873, 8489, 17879, 8497, 8952, 8473, 13222, 10946, 13217, 18747, 13740, 8471, 11643, 18749, 18750, 18751, 558, 576, 1202, 2]
+// Dependencies: [19, 17, 18739, 1087, 21, 5191, 587, 18745, 18679, 9252, 5145, 16003, 5137, 9873, 8489, 17879, 8497, 8952, 8473, 13217, 10946, 13212, 18747, 13735, 8471, 11643, 18749, 18750, 18751, 558, 576, 1202, 2]
 
 // Module 18744 (AuditLogActionIcon)
 import react_native from "react-native" /* 17 */;
@@ -19,9 +19,9 @@ import ReactionIcon from "ReactionIcon" /* 9252 */;
 import FlagIcon from "FlagIcon" /* 9873 */;
 import SlashBoxIcon from "SlashBoxIcon" /* 10946 */;
 import RobotIcon2 from "RobotIcon" /* 11643 */;
-import SoundboardIcon from "SoundboardIcon" /* 13217 */;
-import StickerIcon from "StickerIcon" /* 13222 */;
-import CircleQuestionIcon from "CircleQuestionIcon" /* 13740 */;
+import SoundboardIcon from "SoundboardIcon" /* 13212 */;
+import StickerIcon from "StickerIcon" /* 13217 */;
+import CircleQuestionIcon from "CircleQuestionIcon" /* 13735 */;
 import PuzzlePieceIcon from "PuzzlePieceIcon" /* 16003 */;
 import WebhookIcon from "WebhookIcon" /* 17879 */;
 import ChannelListIcon from "ChannelListIcon" /* 18679 */;

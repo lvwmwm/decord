@@ -81,8 +81,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DynamicBad
             tmp = globalThis;
             _setTimeout = setTimeout;
             num = 2500;
-            closure_0 = setTimeout(() => { /* body not rendered: F148403 */ }, 2500);
-            return () => { /* body not rendered: F148404 */ };
+            closure_0 = setTimeout(() => { /* body not rendered: F148412 */ }, 2500);
+            return () => { /* body not rendered: F148413 */ };
           } else {
             return;
           }
@@ -101,8 +101,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DynamicBad
             tmp = globalThis;
             _setTimeout = setTimeout;
             num = 2500;
-            closure_0 = setTimeout(() => { /* body not rendered: F148403 */ }, 2500);
-            return () => { /* body not rendered: F148404 */ };
+            closure_0 = setTimeout(() => { /* body not rendered: F148412 */ }, 2500);
+            return () => { /* body not rendered: F148413 */ };
           } else {
             return;
           }
@@ -115,7 +115,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DynamicBad
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
       class E {
         constructor() {
-          tmp = closure_1(() => { /* body not rendered: F148405 */ });
+          tmp = closure_1(() => { /* body not rendered: F148414 */ });
           return;
         }
       }
@@ -124,7 +124,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DynamicBad
     } else {
       class E {
         constructor() {
-          tmp = closure_1(() => { /* body not rendered: F148405 */ });
+          tmp = closure_1(() => { /* body not rendered: F148414 */ });
           return;
         }
       }
@@ -132,7 +132,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DynamicBad
     if (cResult[9] === accessibilityLabel) {
       class E {
         constructor() {
-          tmp = closure_1(() => { /* body not rendered: F148405 */ });
+          tmp = closure_1(() => { /* body not rendered: F148414 */ });
           return;
         }
       }

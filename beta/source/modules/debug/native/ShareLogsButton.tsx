@@ -1,7 +1,7 @@
 // Module ID: 16629
 // Function ID: 16630
 // Name: ShareLogsButton
-// Dependencies: [19, 21, 558, 576, 6462, 1128, 8755, 7, 13985, 2]
+// Dependencies: [19, 21, 558, 576, 6462, 1128, 8755, 7, 13980, 2]
 
 // Module 16629 (ShareLogsButton)
 import LogAggregator from "LogAggregator" /* 7 */;

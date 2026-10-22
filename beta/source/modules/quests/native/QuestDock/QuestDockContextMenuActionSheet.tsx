@@ -1,7 +1,7 @@
 // Module ID: 16145
 // Function ID: 16146
 // Name: QuestDockContextMenuActionSheet
-// Dependencies: [5, 19, 6228, 1087, 21, 558, 576, 16144, 13908, 6235, 9495, 1128, 6231, 7681, 9476, 9477, 9480, 7672, 7171, 14360, 8855, 9506, 5155, 7676, 16146, 9470, 6485, 9474, 16148, 13909, 7175, 9473, 9211, 16149, 12098, 16151, 6929, 7370, 5141, 7162, 13740, 16153, 2]
+// Dependencies: [5, 19, 6228, 1087, 21, 558, 576, 16144, 13903, 6235, 9495, 1128, 6231, 7681, 9476, 9477, 9480, 7672, 7171, 14360, 8855, 9506, 5155, 7676, 16146, 9470, 6485, 9474, 16148, 13904, 7175, 9473, 9211, 16149, 12093, 16151, 6929, 7370, 5141, 7162, 13735, 16153, 2]
 
 // Module 16145 (QuestDockContextMenuActionSheet)
 import Constants from "Constants" /* 1087 */;
@@ -79,7 +79,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockCon
   } else {
     tmp6 = cResult[2];
   }
-  const QuestHomeBountiesFeatureGateExperiment = tmp(13908).QuestHomeBountiesFeatureGateExperiment;
+  const QuestHomeBountiesFeatureGateExperiment = tmp(13903).QuestHomeBountiesFeatureGateExperiment;
   const tmp8 = creative.type === creative(6235).AdCreativeType.BOUNTY && !QuestHomeBountiesFeatureGateExperiment.useConfig(tmp6).enabled;
   let type = creative.type;
   if (creative(6235).AdCreativeType.QUEST === type) {
@@ -1175,7 +1175,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDo
     }
   };
   const ActionSheetRow3 = quest(7171).ActionSheetRow;
-  obj10 = { IconComponent: quest(12098).UndoIcon };
+  obj10 = { IconComponent: quest(12093).UndoIcon };
   Icon3 = quest(7171).ActionSheetRow.Icon;
   obj11 = { text: intl4.string(quest(1128).t.taqkwK) };
   FormLabel3 = quest(8855).FormLabel;
@@ -1338,7 +1338,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
   const cResult = obj.c(4);
   creative = creative.creative;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { IconComponent: creative(13740).CircleQuestionIcon };
+    let obj2 = { IconComponent: creative(13735).CircleQuestionIcon };
     const Icon = tmp(7171).ActionSheetRow.Icon;
     const tmp6 = closure_6(Icon, obj2);
     cResult[0] = tmp6;
@@ -1397,7 +1397,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
     }
   };
   const ActionSheetRow = creative(7171).ActionSheetRow;
-  obj2 = { IconComponent: creative(13740).CircleQuestionIcon };
+  obj2 = { IconComponent: creative(13735).CircleQuestionIcon };
   Icon = creative(7171).ActionSheetRow.Icon;
   obj3 = { text: intl.string(creative(1128).t.GcsZKJ) };
   FormLabel = creative(8855).FormLabel;

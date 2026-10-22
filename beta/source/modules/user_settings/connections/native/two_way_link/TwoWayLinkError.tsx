@@ -1,9 +1,9 @@
-// Module ID: 13851
-// Function ID: 13852
+// Module ID: 13846
+// Function ID: 13847
 // Name: TwoWayLinkError
-// Dependencies: [19, 17, 21, 5191, 558, 576, 9517, 5128, 13852, 5187, 1128, 5479, 5477, 7092, 2]
+// Dependencies: [19, 17, 21, 5191, 558, 576, 9517, 5128, 13847, 5187, 1128, 5479, 5477, 7092, 2]
 
-// Module 13851 (TwoWayLinkError)
+// Module 13846 (TwoWayLinkError)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
@@ -13,7 +13,7 @@ import Stack_Stack from "Stack/Stack" /* 5477 */;
 import components_Button_Button from "components/Button/Button" /* 5479 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7092 */;
 import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9517 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13852 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13847 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;

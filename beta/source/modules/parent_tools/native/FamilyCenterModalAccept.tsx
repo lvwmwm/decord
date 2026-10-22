@@ -1,7 +1,7 @@
 // Module ID: 15973
 // Function ID: 15974
 // Name: FamilyCenterModalAccept
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 6190, 4903, 1128, 12667, 15970, 5138, 2589, 5187, 15938, 12669, 7782, 5479, 12676, 6214, 7781, 6478, 10929, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 6190, 4903, 1128, 12662, 15970, 5138, 2589, 5187, 15938, 12664, 7782, 5479, 12671, 6214, 7781, 6478, 10929, 2]
 
 // Module 15973 (FamilyCenterModalAccept)
 import react_native from "react-native" /* 17 */;
@@ -80,7 +80,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
   } else {
     tmp7 = cResult[2];
   }
-  const tmpResult = tmp(12667);
+  const tmpResult = tmp(12662);
   const familyCenterActions = tmpResult.useFamilyCenterActions(tmp7);
   const acceptLinkRequest = familyCenterActions.acceptLinkRequest;
   const isAcceptLoading = familyCenterActions.isAcceptLoading;
@@ -136,7 +136,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
             }
             const _Symbol2 = Symbol;
             if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-              const tmp33 = closure_5(acceptLinkRequest(12669), {});
+              const tmp33 = closure_5(acceptLinkRequest(12664), {});
               cResult[19] = tmp33;
               tmp30 = tmp33;
             } else {
@@ -193,7 +193,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
                   }
                   if (cResult[33] !== tmp46) {
                     const obj7 = { children: closure_6(tmp(6214).ButtonGroup, obj8) };
-                    const ModalFooter = tmp(12676).ModalFooter;
+                    const ModalFooter = tmp(12671).ModalFooter;
                     obj8 = { children: items };
                     items = [tmp46, tmp49];
                     const tmp56 = closure_5(ModalFooter, obj7);
@@ -291,7 +291,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
     const intl = otherUser(dependencyMap[9]).intl;
     presentFailedToast(intl.string(otherUser(dependencyMap[9]).t.R0RpRX));
   }, []);
-  const obj = otherUser(12667);
+  const obj = otherUser(12662);
   const familyCenterActions = obj.useFamilyCenterActions({ onSuccess: callback, onError: callback1 });
   const acceptLinkRequest = familyCenterActions.acceptLinkRequest;
   const isAcceptLoading = familyCenterActions.isAcceptLoading;
@@ -312,7 +312,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
   intl = otherUser(1128).intl;
   items1[1] = closure_5(Text, obj6);
   items1[2] = closure_5(acceptLinkRequest(15938), { user: otherUser });
-  items2 = [closure_6(View, obj4), closure_5(acceptLinkRequest(12669), {}), ];
+  items2 = [closure_6(View, obj4), closure_5(acceptLinkRequest(12664), {}), ];
   const obj7 = { style: tmp.disclaimer, variant: "text-xs/normal", color: "text-default", children: intl2.format(acceptLinkRequest(2589).snlFqR, obj8) };
   const Text2 = otherUser(5187).Text;
   intl2 = otherUser(1128).intl;
@@ -320,7 +320,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
   items2[2] = closure_5(Text2, obj7);
   items3 = [closure_6(ModalContent, obj3), ];
   const obj9 = { children: closure_6(ButtonGroup, obj10) };
-  const ModalFooter = otherUser(12676).ModalFooter;
+  const ModalFooter = otherUser(12671).ModalFooter;
   obj10 = { children: items4 };
   ButtonGroup = otherUser(6214).ButtonGroup;
   const obj11 = { variant: "primary", disabled: isAcceptLoading, loading: isAcceptLoading, text: intl3.string(acceptLinkRequest(2589)["wI/jo3"]), onPress: callback2 };

@@ -1,58 +1,148 @@
 // Module ID: 12384
 // Function ID: 12385
-// Dependencies: [12385, 12386, 12389]
-// Exports: addHandler, maybeInstrument, resetInstrumentationHandlers, triggerHandlers
+// Dependencies: []
+// Exports: getFramesFromEvent, getFunctionName, stackParserFromStackParserOptions
 
 // Module 12384
-import _mod12385 from "module_12385" /* 12385 */;
-import _mod12389 from "module_12389" /* 12389 */;
+let filename;
 
-let closure_2 = {};
-let closure_3 = {};
-
-export const addHandler = function addHandler(arg0, arg1) {
-  const tmp2 = closure_2[arg0] || [];
-  closure_2[arg0] = tmp2;
-  const arr = closure_2[arg0];
-  arr.push(arg1);
-};
-export const maybeInstrument = function maybeInstrument(arg0, fn) {
-  if (!closure_3[arg0]) {
-    tmp[arg0] = true;
-    try {
-      fn();
-    } catch (tmp4) {
-      const tmp5 = require;
-      if (_mod12385.DEBUG_BUILD) {
-        const logger = tmp5(12386).logger;
-        const _HermesInternal = HermesInternal;
-        logger.error("Error while instrumenting " + arg0, tmp4);
-      }
+function createStackParser() {
+  let items = [...arguments];
+  const sorted = items.sort((arg0, arg1) => arg0[0] - arg1[0]);
+  let closure_0 = sorted.map((item) => item[1]);
+  return (str) => {
+    let num = arg1;
+    if (arg1 === undefined) {
+      num = 0;
     }
-  }
-};
-export const resetInstrumentationHandlers = function resetInstrumentationHandlers() {
-  const keys = Object.keys(closure_2);
-  const item = keys.forEach((item) => {
-    closure_1_2[item] = undefined;
-  });
-};
-export const triggerHandlers = function triggerHandlers(arg0, arg1) {
-  if (arg0 && closure_2[arg0]) {
-    const iter = (arg0 && closure_2[arg0])[Symbol.iterator]();
-    const nextResult = iter.next();
-    if (iter !== undefined) {
-      try {
-        nextResult(arg1);
-      } catch (tmp11) {
-        if (_mod12385.DEBUG_BUILD) {
-          const logger = tmp12(12386).logger;
-          const error = logger.error;
-          const _HermesInternal = HermesInternal;
-          const tmp12Result = _mod12389;
-          error("Error while triggering instrumentation handler.\nType: " + arg0 + "\nName: " + tmp12Result.getFunctionName(nextResult) + "\nError:", tmp11);
+    let num2 = arg2;
+    if (arg2 === undefined) {
+      num2 = 0;
+    }
+    const items = [];
+    const parts = str.split("\n");
+    if (num < parts.length) {
+      while (true) {
+        let arr3 = parts[num];
+        if (arr3.length <= 1024) {
+          let tmp10 = re0;
+          str = arr3;
+          if (re0.test(arr3)) {
+            str = arr3.replace(tmp10, "$1");
+          }
+          if (!str.match(/\S*Error: /)) {
+            for (const item10026 of closure_0) {
+              let item10026Result = item10026(str);
+              if (item10026Result) {
+                let arr = items.push(tmp6);
+                obj.return();
+                break;
+              }
+              continue;
+            }
+            if (items.length >= 50 + num2) {
+              break;
+            }
+          }
+          break;
+        }
+        num = num + 1;
+        if (num >= parts.length) {
+          break;
         }
       }
     }
+    return stripSentryFramesAndReverse(items.slice(num2));
+  };
+}
+function stripSentryFramesAndReverse(arg0) {
+  if (arg0.length) {
+    const _Array = Array;
+    const arr = Array.from(arg0);
+    let obj = arr[arr.length - 1];
+    const test = /sentryWrapped/.test;
+    const tmp2 = /sentryWrapped/;
+    if (!obj) {
+      obj = {};
+    }
+    const tmp3 = obj.function || "";
+    if (test(tmp3)) {
+      arr.pop();
+    }
+    const reversed = arr.reverse();
+    let obj2 = arr[arr.length - 1];
+    const test2 = re1.test;
+    const tmp6 = re1;
+    if (!obj2) {
+      obj2 = {};
+    }
+    const tmp7 = obj2.function || "";
+    if (test2(tmp7)) {
+      arr.pop();
+      let obj3 = arr[arr.length - 1];
+      const test3 = tmp6.test;
+      if (!obj3) {
+        obj3 = {};
+      }
+      const tmp9 = obj3.function || "";
+      if (test3(tmp9)) {
+        arr.pop();
+      }
+    }
+    const substr = arr.slice(0, 50);
+    return substr.map((filename) => {
+      const obj = { filename, function: filename.function || "?" };
+      const merged = Object.assign(filename);
+      filename = filename.filename;
+      if (!filename) {
+        filename = (arr[arr.length - 1] || {}).filename;
+      }
+      return obj;
+    });
+  } else {
+    return [];
+  }
+}
+const re0 = /\(error: (.*)\)/;
+const re1 = /captureMessage|captureException/;
+let c4 = "<anonymous>";
+
+export const UNKNOWN_FUNCTION = "?";
+export { createStackParser };
+export const getFramesFromEvent = function getFramesFromEvent(exception) {
+  exception = exception.exception;
+  if (exception) {
+    let items = [];
+    try {
+      const values = exception.values;
+      const item = values.forEach((stacktrace) => {
+        if (stacktrace.stacktrace.frames) {
+          const push = items.push;
+          items = [];
+          HermesBuiltin.arraySpread(items, stacktrace.stacktrace.frames, 0);
+          HermesBuiltin.apply(push, items, items);
+        }
+      });
+      return items;
+    } catch (err) {
+    }
   }
 };
+export const getFunctionName = function getFunctionName(name) {
+  try {
+    name = name && typeof name === "function" && name.name || c4;
+    return name;
+  } catch (err) {
+    return c4;
+  }
+};
+export const stackParserFromStackParserOptions = function stackParserFromStackParserOptions(arg0) {
+  let applyResult = arg0;
+  if (Array.isArray(arg0)) {
+    const items = [];
+    HermesBuiltin.arraySpread(items, arg0, 0);
+    applyResult = HermesBuiltin.apply(createStackParser, items, undefined);
+  }
+  return applyResult;
+};
+export { stripSentryFramesAndReverse };

@@ -1,7 +1,7 @@
 // Module ID: 16214
 // Function ID: 16215
 // Name: QuestCardPreview
-// Dependencies: [21, 558, 576, 16215, 1128, 16132, 587, 6231, 13919, 2]
+// Dependencies: [21, 558, 576, 16215, 1128, 16132, 587, 6231, 13914, 2]
 
 // Module 16214 (QuestCardPreview)
 import Fragment from "Fragment" /* 21 */;
@@ -41,7 +41,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestCardP
     }
     return tmp5;
   }
-  const QuestContentImpressionTrackerNative = tmp(13919).QuestContentImpressionTrackerNative;
+  const QuestContentImpressionTrackerNative = tmp(13914).QuestContentImpressionTrackerNative;
   const tmp6 = <QuestContentImpressionTrackerNative questOrQuests={quest} questContent={tmp(6231).QuestContent.INTERNAL_PREVIEW_TOOL} sourceQuestContent={tmp(6231).QuestContent.INTERNAL_PREVIEW_TOOL} trackGuildAndChannelMetadata={false}>{tmp4}</QuestContentImpressionTrackerNative>;
   cResult[2] = quest;
   cResult[3] = tmp4;
@@ -49,7 +49,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestCardP
   tmp5 = tmp6;
 }) : (function QuestCardPreview(quest) {
   quest = quest.quest;
-  const QuestContentImpressionTrackerNative = quest(13919).QuestContentImpressionTrackerNative;
+  const QuestContentImpressionTrackerNative = quest(13914).QuestContentImpressionTrackerNative;
   return <QuestContentImpressionTrackerNative questOrQuests={quest} questContent={quest(6231).QuestContent.INTERNAL_PREVIEW_TOOL} sourceQuestContent={quest(6231).QuestContent.INTERNAL_PREVIEW_TOOL} trackGuildAndChannelMetadata={false}>{function children() {
     MobileQuestPreviewContainerDefault;
     const intl = intl2.intl;

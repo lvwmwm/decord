@@ -1,7 +1,7 @@
 // Module ID: 18373
 // Function ID: 18374
 // Name: useLaunchPadGesture
-// Dependencies: [19, 11080, 5072, 1633, 6612, 1384, 12345, 10684, 4945, 5156, 2]
+// Dependencies: [19, 11080, 5072, 1633, 6612, 1384, 12340, 10684, 4945, 5156, 2]
 // Exports: default
 
 // Module 18373 (useLaunchPadGesture)
@@ -160,7 +160,7 @@ export default function useLaunchPadGesture(launchPadType) {
           }
         }
       }
-      let obj2 = { gestureState, State: tmp4(6612).State, getWindowDimensionsWorklet: tmp4(12345).getWindowDimensionsWorklet, launchPadType: tmp, LaunchPadTypes: tmp2, LAUNCH_PAD_EDGE_GESTURE_AFFORDANCE, LAUNCH_PAD_PULL_TAB_WIDTH, LAUNCH_PAD_PULL_TAB_HIT_SLOP: metroImportAll, launchPadPullTabState, LAUNCH_PAD_PULL_TAB_HEIGHT: metroImportDefault, updaters, LAUNCH_PAD_PULL_TAB_SCALE_FACTOR, launchPadSharedState, MANUAL_ACTIVATION_THRESHOLD: 3 };
+      let obj2 = { gestureState, State: tmp4(6612).State, getWindowDimensionsWorklet: tmp4(12340).getWindowDimensionsWorklet, launchPadType: tmp, LaunchPadTypes: tmp2, LAUNCH_PAD_EDGE_GESTURE_AFFORDANCE, LAUNCH_PAD_PULL_TAB_WIDTH, LAUNCH_PAD_PULL_TAB_HIT_SLOP: metroImportAll, launchPadPullTabState, LAUNCH_PAD_PULL_TAB_HEIGHT: metroImportDefault, updaters, LAUNCH_PAD_PULL_TAB_SCALE_FACTOR, launchPadSharedState, MANUAL_ACTIVATION_THRESHOLD: 3 };
       X.__closure = obj2;
       X.__workletHash = 6468417986054;
       X.__initData = __initData5;
@@ -214,7 +214,7 @@ export default function useLaunchPadGesture(launchPadType) {
           }
         }
       }
-      let obj3 = { gestureState, getWindowDimensionsWorklet: tmp4(12345).getWindowDimensionsWorklet, POP_RESISTANCE: 0.5, launchPadType: tmp, LaunchPadTypes: tmp2, PIP_POP_DISTANCE: 70, updaters, updateSharedValueIfChanged: updateSharedValueIfChangedDefault, runOnJS: tmp4(4945).runOnJS, triggerHapticFeedback: tmp4(5156).triggerHapticFeedback, HapticFeedbackTypes: tmp4(5156).HapticFeedbackTypes };
+      let obj3 = { gestureState, getWindowDimensionsWorklet: tmp4(12340).getWindowDimensionsWorklet, POP_RESISTANCE: 0.5, launchPadType: tmp, LaunchPadTypes: tmp2, PIP_POP_DISTANCE: 70, updaters, updateSharedValueIfChanged: updateSharedValueIfChangedDefault, runOnJS: tmp4(4945).runOnJS, triggerHapticFeedback: tmp4(5156).triggerHapticFeedback, HapticFeedbackTypes: tmp4(5156).HapticFeedbackTypes };
       I.__closure = obj3;
       I.__workletHash = 3899618169934;
       I.__initData = __initData4;

@@ -1,7 +1,7 @@
 // Module ID: 17929
 // Function ID: 17930
 // Name: YouScreen
-// Dependencies: [32, 19, 17, 7586, 2132, 15734, 6362, 1392, 17515, 1087, 1089, 2065, 7181, 21, 4945, 8645, 5191, 1385, 587, 683, 5073, 558, 576, 573, 1128, 17548, 6462, 8630, 9263, 1275, 8584, 1633, 8627, 5127, 8643, 5075, 1499, 2044, 1506, 17930, 1417, 8647, 6904, 9419, 8588, 8600, 8601, 8613, 7155, 8624, 2052, 7376, 5128, 17931, 12831, 7124, 17934, 17935, 4922, 17936, 8620, 8607, 8637, 1105, 10340, 9296, 17938, 12642, 8585, 9271, 7370, 7529, 10841, 7463, 2]
+// Dependencies: [32, 19, 17, 7586, 2132, 15734, 6362, 1392, 17515, 1087, 1089, 2065, 7181, 21, 4945, 8645, 5191, 1385, 587, 683, 5073, 558, 576, 573, 1128, 17548, 6462, 8630, 9263, 1275, 8584, 1633, 8627, 5127, 8643, 5075, 1499, 2044, 1506, 17930, 1417, 8647, 6904, 9419, 8588, 8600, 8601, 8613, 7155, 8624, 2052, 7376, 5128, 17931, 12826, 7124, 17934, 17935, 4922, 17936, 8620, 8607, 8637, 1105, 10340, 9296, 17938, 12637, 8585, 9271, 7370, 7529, 10841, 7463, 2]
 
 // Module 17929 (YouScreen)
 import useStateFromStores from "useStateFromStores" /* 573 */;
@@ -318,7 +318,7 @@ function UnconnectedYouScreen(arg0) {
       const tmp12Result22 = navigateToSettings(17931);
       youSettingsCoachmark = tmp12Result22.useYouSettingsCoachmark(obj11);
       let tmp65 = null != youSettingsCoachmark;
-      const tmp12Result23 = navigateToSettings(12831);
+      const tmp12Result23 = navigateToSettings(12826);
       const customTypingIndicatorConfig = tmp12Result23.useCustomTypingIndicatorConfig("YouScreen");
       if ("settings" === customTypingIndicatorConfig.entryPoint) {
         if (customTypingIndicatorConfig.canSet) {
@@ -507,7 +507,7 @@ function UnconnectedYouScreen(arg0) {
               const obj38 = { user, userTheme: tmp15, scrollViewRef: ref, scrollPosition: sharedValue, style: items21, navigateToProfileCustomization, navigateToCustomStatus, navigateToFriends, navigateToPremium, navigateToShop, initialTab, animateAvatar: !tmp28 };
               items21 = [tmp10.content, contentAnimatedStyle];
               items18[2] = closure_20(navigateToShop(17938), obj38);
-              items18[3] = closure_20(navigateToSettings(12642).TTIFirstContentfulPaint, { label: "you_screen" });
+              items18[3] = closure_20(navigateToSettings(12637).TTIFirstContentfulPaint, { label: "you_screen" });
               items10[2] = closure_21(tmp95, obj22);
               let tmp84Result9 = null != tmp5Result1Result;
               if (tmp84Result9) {

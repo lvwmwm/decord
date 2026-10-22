@@ -1,9 +1,9 @@
-// Module ID: 13316
-// Function ID: 13317
+// Module ID: 13311
+// Function ID: 13312
 // Name: UserProfileConfirmVideoUnstableConnection
 // Dependencies: [19, 21, 558, 576, 1128, 5405, 5405, 2]
 
-// Module 13316 (UserProfileConfirmVideoUnstableConnection)
+// Module 13311 (UserProfileConfirmVideoUnstableConnection)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1128 */;
 import AlertModal2 from "AlertModal" /* 5405 */;

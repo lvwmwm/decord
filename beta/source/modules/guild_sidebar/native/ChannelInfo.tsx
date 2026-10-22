@@ -1,14 +1,14 @@
 // Module ID: 17357
 // Function ID: 17358
 // Name: ChannelInfo
-// Dependencies: [19, 7521, 2090, 4845, 6291, 5212, 1087, 21, 5191, 558, 576, 504, 11874, 9626, 17358, 17346, 5515, 1202, 17359, 17360, 17260, 6151, 12944, 17246, 17361, 14063, 2]
+// Dependencies: [19, 7521, 2090, 4845, 6291, 5212, 1087, 21, 5191, 558, 576, 504, 11869, 9626, 17358, 17346, 5515, 1202, 17359, 17360, 17260, 6151, 12939, 17246, 17361, 14058, 2]
 
 // Module 17357 (ChannelInfo)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import StageMediaHooks from "StageMediaHooks" /* 6151 */;
-import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 11874 */;
-import useShowConnectedUserLimitDefault from "useShowConnectedUserLimit" /* 12944 */;
+import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 11869 */;
+import useShowConnectedUserLimitDefault from "useShowConnectedUserLimit" /* 12939 */;
 import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 17260 */;
 import ChannelBadgeDefault from "ChannelBadge" /* 17346 */;
 import showChannelBadgeDefault from "showChannelBadge" /* 17358 */;
@@ -29,7 +29,7 @@ let Fonts;
 let c9;
 let metroImportAll;
 let tmp;
-const Badges = tmp(14063);
+const Badges = tmp(14058);
 ({ GuildFeatures: metroImportAll, Permissions: c9, Fonts } = Constants);
 const jsx = Fragment.jsx;
 let obj = { activeTimestamp: { fontFamily: Fonts.CODE_NORMAL, fontSize: 12, lineHeight: 16 } };

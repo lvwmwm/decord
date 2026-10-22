@@ -1,7 +1,7 @@
 // Module ID: 18378
 // Function ID: 18379
 // Name: LaunchPad
-// Dependencies: [32, 19, 17, 4897, 7515, 6351, 6290, 2072, 502, 2068, 7674, 6362, 2090, 14830, 6291, 6219, 6222, 5212, 1087, 21, 587, 5191, 558, 576, 6462, 5187, 504, 4945, 5081, 7016, 1128, 14066, 9045, 16642, 1384, 15599, 13630, 8984, 5072, 8985, 8972, 1499, 1633, 8973, 11586, 1267, 18379, 18386, 16823, 18399, 18400, 2]
+// Dependencies: [32, 19, 17, 4897, 7515, 6351, 6290, 2072, 502, 2068, 7674, 6362, 2090, 14830, 6291, 6219, 6222, 5212, 1087, 21, 587, 5191, 558, 576, 6462, 5187, 504, 4945, 5081, 7016, 1128, 14061, 9045, 16642, 1384, 15599, 13625, 8984, 5072, 8985, 8972, 1499, 1633, 8973, 11586, 1267, 18379, 18386, 16823, 18399, 18400, 2]
 
 // Module 18378 (LaunchPad)
 import react_native from "react-native" /* 17 */;
@@ -17,7 +17,7 @@ import _mod8972 from "module_8972" /* 8972 */;
 import AutocompleterDefault from "Autocompleter" /* 8973 */;
 import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 8984 */;
 import RouteManagerDefault from "RouteManager" /* 11586 */;
-import hideLaunchPadDefault from "hideLaunchPad" /* 13630 */;
+import hideLaunchPadDefault from "hideLaunchPad" /* 13625 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ActionSheetStore_mod from "ActionSheetStore" /* 4897 */;

@@ -1,7 +1,7 @@
 // Module ID: 18203
 // Function ID: 18204
 // Name: VoicePanelFloatingCTAUtils
-// Dependencies: [32, 19, 17, 6292, 18204, 6332, 2068, 2074, 21, 558, 576, 5127, 10679, 18171, 8927, 573, 8848, 8794, 8790, 5155, 8810, 18205, 9048, 8857, 8952, 1128, 6485, 18198, 10639, 18206, 7377, 8668, 5033, 6567, 2052, 18207, 13217, 8233, 2]
+// Dependencies: [32, 19, 17, 6292, 18204, 6332, 2068, 2074, 21, 558, 576, 5127, 10679, 18171, 8927, 573, 8848, 8794, 8790, 5155, 8810, 18205, 9048, 8857, 8952, 1128, 6485, 18198, 10639, 18206, 7377, 8668, 5033, 6567, 2052, 18207, 13212, 8233, 2]
 
 // Module 18203 (VoicePanelFloatingCTAUtils)
 import react_native from "react-native" /* 17 */;
@@ -34,7 +34,7 @@ let _require, dependencyMap;
 let tmp;
 const intl4 = tmp(1128);
 const getDeviceSpecificString2 = tmp(8233);
-const SoundboardIcon = tmp(13217);
+const SoundboardIcon = tmp(13212);
 function getBadConnectionCTAProps(arg0) {
   let closure_0;
   let intl;

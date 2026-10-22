@@ -1,10 +1,10 @@
-// Module ID: 13584
-// Function ID: 13585
+// Module ID: 13579
+// Function ID: 13580
 // Name: ReactionNotification
-// Dependencies: [19, 17, 5181, 13524, 1087, 1098, 21, 5191, 1385, 587, 558, 576, 2044, 13535, 5187, 1417, 10777, 7098, 1128, 7278, 13523, 13533, 13534, 13539, 10592, 1202, 6436, 12, 5883, 504, 6190, 5202, 13525, 13541, 2002, 13560, 13564, 2]
+// Dependencies: [19, 17, 5181, 13519, 1087, 1098, 21, 5191, 1385, 587, 558, 576, 2044, 13530, 5187, 1417, 10777, 7098, 1128, 7278, 13518, 13528, 13529, 13534, 10592, 1202, 6436, 12, 5883, 504, 6190, 5202, 13520, 13536, 2002, 13555, 13559, 2]
 // Exports: default
 
-// Module 13584 (ReactionNotification)
+// Module 13579 (ReactionNotification)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -22,14 +22,14 @@ import EmojiDefault from "Emoji" /* 7098 */;
 import isForwardMessageDefault from "isForwardMessage" /* 7278 */;
 import GroupDMAvatarDefault from "GroupDMAvatar" /* 10592 */;
 import ForumPostReactionButton from "ForumPostReactionButton" /* 10777 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 13523 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 13525 */;
-import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 13533 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 13535 */;
-import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 13539 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 13518 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 13520 */;
+import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 13528 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 13530 */;
+import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 13534 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5181 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 13524 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 13519 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
@@ -737,7 +737,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reacti
       tmp16 = null;
       if (null != messagePreview) {
         const obj4 = { message: messagePreview, lineClamp: 1, maxHeight: metroRequire, textColor: "text-subtle", gradientStyles, gradientColors };
-        tmp16 = authStore(tmp(13534).NativeChannelRowPreview, obj4);
+        tmp16 = authStore(tmp(13529).NativeChannelRowPreview, obj4);
       }
     }
     cResult[6] = gradientColors;
@@ -783,7 +783,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reacti
     tmp8Result2 = null;
     if (null != messagePreview) {
       const obj4 = { message: messagePreview, lineClamp: 1, maxHeight: metroRequire, textColor: "text-subtle", gradientStyles, gradientColors };
-      tmp8Result2 = tmp8(tmp2(13534).NativeChannelRowPreview, obj4);
+      tmp8Result2 = tmp8(tmp2(13529).NativeChannelRowPreview, obj4);
     }
   }
   children[2] = tmp8Result2;
@@ -1114,7 +1114,7 @@ export default function ReactionNotification(notification) {
   const callback1 = obj.useCallback(() => {
     const obj = ModalActionCreatorsDefault;
     const obj2 = { channelId: id };
-    return obj.pushLazy(asyncRequire(13541, dependencyMap.paths), obj2, "in-app-notification-settings-modal");
+    return obj.pushLazy(asyncRequire(13536, dependencyMap.paths), obj2, "in-app-notification-settings-modal");
   }, items4);
   let obj3 = { icon: closure_10(ReactorNotificationIcon, { notification, isMilestone: result }), accessoryLabelNode: tmp14Result, header: memo1, onPress: callback, onSettingsPress: callback1, notification, rightAccessory: closure_10(notification(guild[36]).MediaPreviewRightAccessory, { message }), children: closure_10(id1, obj4) };
   const NotificationPressable = tmp3(tmp4[35]).NotificationPressable;

@@ -1,9 +1,9 @@
-// Module ID: 12774
-// Function ID: 12775
+// Module ID: 12769
+// Function ID: 12770
 // Name: CheckpointServersStatsScreen
-// Dependencies: [17, 12742, 5537, 21, 5191, 587, 558, 576, 504, 9545, 1128, 3141, 12764, 3109, 12766, 12775, 5187, 11492, 8471, 6436, 2]
+// Dependencies: [17, 12737, 5537, 21, 5191, 587, 558, 576, 504, 9545, 1128, 3141, 12759, 3109, 12761, 12770, 5187, 11492, 8471, 6436, 2]
 
-// Module 12774 (CheckpointServersStatsScreen)
+// Module 12769 (CheckpointServersStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
@@ -14,10 +14,10 @@ import Text_Text from "Text/Text" /* 5187 */;
 import GuildIcon from "GuildIcon" /* 6436 */;
 import ChatIcon from "ChatIcon" /* 8471 */;
 import MicrophoneIcon from "MicrophoneIcon" /* 11492 */;
-import CheckpointTextDefault from "CheckpointText" /* 12764 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 12766 */;
-import CheckpointRankTagDefault from "CheckpointRankTag" /* 12775 */;
-import CheckpointStore from "CheckpointStore" /* 12742 */;
+import CheckpointTextDefault from "CheckpointText" /* 12759 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12761 */;
+import CheckpointRankTagDefault from "CheckpointRankTag" /* 12770 */;
+import CheckpointStore from "CheckpointStore" /* 12737 */;
 import CheckpointConstants from "CheckpointConstants" /* 5537 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;

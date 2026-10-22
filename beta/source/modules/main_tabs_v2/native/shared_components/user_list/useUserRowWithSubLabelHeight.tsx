@@ -1,7 +1,7 @@
 // Module ID: 17909
 // Function ID: 17910
 // Name: useUserRowWithSubLabelHeight
-// Dependencies: [558, 576, 4913, 587, 10839, 5486, 17584, 11911, 2]
+// Dependencies: [558, 576, 4913, 587, 10839, 5486, 17584, 11906, 2]
 // Exports: getUserRowWithSubLabelHeight
 
 // Module 17909 (useUserRowWithSubLabelHeight)
@@ -15,7 +15,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const roundToNearestPixelDefault = tmp4(11911);
+const roundToNearestPixelDefault = tmp4(11906);
 function getUserRowWithSubLabelHeight(rowHeight) {
   return Math.max(rowHeight.rowHeight, 2 * rowHeight.rowPadding + rowHeight.labelLineHeight + rowHeight.subLabelLines * rowHeight.subLabelLineHeight);
 }

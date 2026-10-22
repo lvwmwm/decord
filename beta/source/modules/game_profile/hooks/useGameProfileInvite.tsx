@@ -22,7 +22,7 @@ let _require, c3, c4, current;
 
 let QueryIds;
 let metroImportDefault;
-const f101309 = (category) => category.category === closure_1_0(closure_1_2[6]).ThirdPartyGameApplicationWebsiteCategory.DISCORD;
+const f101318 = (category) => category.category === closure_1_0(closure_1_2[6]).ThirdPartyGameApplicationWebsiteCategory.DISCORD;
 function isUsableGameProfileInvite(state) {
   let tmp = null != state && state.state !== metroImportDefault.RESOLVING;
   if (tmp) {
@@ -180,7 +180,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGamePro
     if (websites != null) {
       websites = websites.websites;
       if (websites != null) {
-        found = websites.find(f101309);
+        found = websites.find(f101318);
       }
     }
     let arr;
@@ -317,7 +317,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGamePro
   if (websites != null) {
     websites = websites.websites;
     if (websites != null) {
-      found = websites.find(f101309);
+      found = websites.find(f101318);
     }
   }
   let arr;
@@ -408,7 +408,7 @@ export const preloadGameProfileInvite = function preloadGameProfileInvite(arg0) 
     if (game != null) {
       const websites = game.websites;
       if (websites != null) {
-        found = websites.find(f101309);
+        found = websites.find(f101318);
       }
     }
     let arr;

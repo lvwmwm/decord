@@ -1,10 +1,10 @@
-// Module ID: 13592
-// Function ID: 13593
+// Module ID: 13587
+// Function ID: 13588
 // Name: SavedMessagesActions
 // Dependencies: [5, 9980, 1087, 1297, 9981, 584, 2]
 // Exports: deleteSavedMessage, fetchAndUpdateSavedMessages, fetchBookmarks, upsertSavedMessage
 
-// Module 13592 (SavedMessagesActions)
+// Module 13587 (SavedMessagesActions)
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

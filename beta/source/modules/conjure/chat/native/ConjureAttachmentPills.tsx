@@ -1,9 +1,9 @@
-// Module ID: 12190
-// Function ID: 12191
+// Module ID: 12185
+// Function ID: 12186
 // Name: ConjureAttachmentPills
 // Dependencies: [19, 17, 21, 5191, 587, 558, 576, 11612, 4901, 6459, 1128, 3883, 5187, 2]
 
-// Module 12190 (ConjureAttachmentPills)
+// Module 12185 (ConjureAttachmentPills)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;

@@ -1,9 +1,9 @@
-// Module ID: 12961
-// Function ID: 12962
+// Module ID: 12956
+// Function ID: 12957
 // Name: GuildDirectoryCreateOrAdd
-// Dependencies: [32, 19, 17, 12962, 12960, 21, 5191, 587, 558, 576, 504, 6436, 12963, 6457, 1128, 8805, 5187, 9051, 1633, 5479, 1505, 6438, 12968, 7091, 12959, 2]
+// Dependencies: [32, 19, 17, 12957, 12955, 21, 5191, 587, 558, 576, 504, 6436, 12958, 6457, 1128, 8805, 5187, 9051, 1633, 5479, 1505, 6438, 12963, 7091, 12954, 2]
 
-// Module 12961 (GuildDirectoryCreateOrAdd)
+// Module 12956 (GuildDirectoryCreateOrAdd)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
@@ -14,11 +14,11 @@ import GuildIconDefault from "GuildIcon" /* 6436 */;
 import TableRow2 from "TableRow" /* 6457 */;
 import SegmentedControlState from "SegmentedControlState" /* 8805 */;
 import SegmentedControl from "SegmentedControl" /* 9051 */;
-import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 12960 */;
+import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 12955 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 12962 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 12957 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -79,7 +79,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
       }
       if (cResult[7] !== stateFromStores) {
         const obj2 = { entry: stateFromStores };
-        const tmp16 = closure_9(directoryChannelId(12963), obj2);
+        const tmp16 = closure_9(directoryChannelId(12958), obj2);
         cResult[7] = stateFromStores;
         cResult[8] = tmp16;
         tmp13 = tmp16;
@@ -134,7 +134,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
   const tmp = closure_11();
   const obj = guild(504);
   const stateFromStores = obj.useStateFromStores(items, () => GuildDirectoryStore.getDirectoryEntry(directoryChannelId, guild.id));
-  const obj2 = { label: guild.name, icon: closure_9(directoryChannelId(6436), obj3), trailing: closure_9(directoryChannelId(12963), { entry: stateFromStores }), start, end };
+  const obj2 = { label: guild.name, icon: closure_9(directoryChannelId(6436), obj3), trailing: closure_9(directoryChannelId(12958), { entry: stateFromStores }), start, end };
   const TableRow = guild(6457).TableRow;
   obj3 = { style: tmp.guildIcon, guild };
   return closure_9(TableRow, obj2);

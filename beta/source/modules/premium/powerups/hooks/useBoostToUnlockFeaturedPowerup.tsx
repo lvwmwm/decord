@@ -1,9 +1,9 @@
-// Module ID: 13195
-// Function ID: 13196
+// Module ID: 13190
+// Function ID: 13191
 // Name: useBoostToUnlockFeaturedPowerup
 // Dependencies: [32, 19, 2090, 5103, 5104, 1087, 5107, 558, 576, 504, 8299, 2]
 
-// Module 13195 (useBoostToUnlockFeaturedPowerup)
+// Module 13190 (useBoostToUnlockFeaturedPowerup)
 import Constants from "Constants" /* 1087 */;
 import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5104 */;
 import Powerups from "Powerups" /* 5107 */;

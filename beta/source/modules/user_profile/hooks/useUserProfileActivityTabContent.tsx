@@ -1,7 +1,7 @@
 // Module ID: 14165
 // Function ID: 14166
 // Name: useUserProfileActivityTabContent
-// Dependencies: [19, 9288, 5207, 6015, 5212, 7586, 1087, 3, 558, 576, 14166, 14095, 14097, 8733, 504, 2]
+// Dependencies: [19, 9288, 5207, 6015, 5212, 7586, 1087, 3, 558, 576, 14166, 14090, 14092, 8733, 504, 2]
 
 // Module 14165 (useUserProfileActivityTabContent)
 import LoggerDefault from "Logger" /* 3 */;

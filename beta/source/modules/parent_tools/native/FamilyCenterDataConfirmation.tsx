@@ -1,9 +1,9 @@
-// Module ID: 12669
-// Function ID: 12670
+// Module ID: 12664
+// Function ID: 12665
 // Name: FamilyCenterDataConfirmation
-// Dependencies: [19, 21, 558, 576, 5187, 6457, 6542, 5477, 1128, 2589, 12670, 5131, 9545, 8488, 12671, 7824, 12673, 9873, 5150, 12674, 7368, 6485, 2]
+// Dependencies: [19, 21, 558, 576, 5187, 6457, 6542, 5477, 1128, 2589, 12665, 5131, 9545, 8488, 12666, 7824, 12668, 9873, 5150, 12669, 7368, 6485, 2]
 
-// Module 12669 (FamilyCenterDataConfirmation)
+// Module 12664 (FamilyCenterDataConfirmation)
 import react2 from "react" /* 576 */;
 import _modDef2589 from "module_2589" /* 2589 */;
 import Text_Text from "Text/Text" /* 5187 */;
@@ -27,10 +27,10 @@ const CreditCardIcon = tmp(7824);
 const ForumIcon = tmp(8488);
 const ServerIcon = tmp(9545);
 const FlagIcon = tmp(9873);
-const useAgeSpecificText12 = tmp(12670);
-const PhoneIcon = tmp(12671);
-const GiftIcon = tmp(12673);
-const PiggyBankIcon = tmp(12674);
+const useAgeSpecificText12 = tmp(12665);
+const PhoneIcon = tmp(12666);
+const GiftIcon = tmp(12668);
+const PiggyBankIcon = tmp(12669);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RowGroup(arg0) {

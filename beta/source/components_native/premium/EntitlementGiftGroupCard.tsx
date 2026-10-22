@@ -1,7 +1,7 @@
 // Module ID: 14641
 // Function ID: 14642
 // Name: EntitlementGiftGroupCard
-// Dependencies: [19, 17, 5540, 502, 10815, 4869, 6310, 1087, 1394, 21, 5191, 587, 4922, 10816, 5187, 1128, 5479, 7207, 9320, 1202, 7138, 10859, 7182, 14281, 14283, 14284, 14282, 14285, 14286, 14287, 14288, 13666, 14289, 14292, 14293, 14642, 504, 10827, 2]
+// Dependencies: [19, 17, 5540, 502, 10815, 4869, 6310, 1087, 1394, 21, 5191, 587, 4922, 10816, 5187, 1128, 5479, 7207, 9320, 1202, 7138, 10859, 7182, 14281, 14283, 14284, 14282, 14285, 14286, 14287, 14288, 13661, 14289, 14292, 14293, 14642, 504, 10827, 2]
 
 // Module 14641 (EntitlementGiftGroupCard)
 import nativeDefault from "native" /* 587 */;
@@ -16,7 +16,7 @@ import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7207 */;
 import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9320 */;
 import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 10816 */;
 import SubscriptionUtils from "SubscriptionUtils" /* 10827 */;
-import _modDef13666 from "module_13666" /* 13666 */;
+import _modDef13661 from "module_13661" /* 13661 */;
 import AssetRegistryDefault from "AssetRegistry" /* 14281 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 14282 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 14283 */;
@@ -231,7 +231,7 @@ class EntitlementGiftGroupCard extends Component {
     } else if (map1.SEASONAL_COFFEE === giftStyle) {
       return AssetRegistryDefault8;
     } else if (map1.NITROWEEN_STANDARD === giftStyle) {
-      const obj = { uri: _modDef13666 };
+      const obj = { uri: _modDef13661 };
       return obj;
     } else if (TIER_0.TIER_0 === id) {
       return AssetRegistryDefault9;

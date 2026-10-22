@@ -1,7 +1,7 @@
 // Module ID: 16632
 // Function ID: 16633
 // Name: CacheActionsSetting
-// Dependencies: [5, 32, 19, 6013, 21, 5155, 4904, 5145, 1128, 558, 576, 504, 2044, 16633, 7117, 11636, 16637, 6457, 16634, 12008, 6433, 16638, 5152, 6542, 7175, 11084, 2]
+// Dependencies: [5, 32, 19, 6013, 21, 5155, 4904, 5145, 1128, 558, 576, 504, 2044, 16633, 7117, 11636, 16637, 6457, 16634, 12003, 6433, 16638, 5152, 6542, 7175, 11084, 2]
 
 // Module 16632 (CacheActionsSetting)
 import react from "react" /* 19 */;
@@ -36,7 +36,7 @@ const TableRowGroup2 = tmp(6542);
 const BottomSheetTitleHeader2 = tmp(7117);
 const ActionSheet2 = tmp(7175);
 const FileUpIcon = tmp(11636);
-const FileIcon = tmp(12008);
+const FileIcon = tmp(12003);
 function handleCacheActionPress(text) {
   const obj = ToastActionCreatorsDefault;
   const obj2 = { text, icon: CircleInformationIcon.CircleInformationIcon };
@@ -349,7 +349,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function CacheA
   }
   let tmp25Result2 = null != DiskUsageManagerDefault.calculateSize;
   if (tmp25Result2) {
-    const obj9 = { icon: closure_7(tmp(12008).FileIcon, {}), label: string(isCalculating ? t.Ynmbie : t.iAFGRu), trailing: tmp25Result, disabled: first, accessibilityState: obj10, onPress: handleCalculateSize };
+    const obj9 = { icon: closure_7(tmp(12003).FileIcon, {}), label: string(isCalculating ? t.Ynmbie : t.iAFGRu), trailing: tmp25Result, disabled: first, accessibilityState: obj10, onPress: handleCalculateSize };
     const TableRow = tmp(6457).TableRow;
     const intl4 = tmp(1128).intl;
     string = intl4.string;

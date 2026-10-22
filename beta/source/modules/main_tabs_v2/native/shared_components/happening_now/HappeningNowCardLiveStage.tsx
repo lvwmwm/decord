@@ -1,7 +1,7 @@
 // Module ID: 17200
 // Function ID: 17201
 // Name: HappeningNowCardLiveStage
-// Dependencies: [19, 17, 16354, 1087, 21, 5191, 587, 1267, 12516, 2002, 17201, 17202, 17203, 16355, 8497, 1202, 17212, 558, 576, 5521, 1128, 5509, 2]
+// Dependencies: [19, 17, 16354, 1087, 21, 5191, 587, 1267, 12511, 2002, 17201, 17202, 17203, 16355, 8497, 1202, 17212, 558, 576, 5521, 1128, 5509, 2]
 
 // Module 17200 (HappeningNowCardLiveStage)
 import react_native from "react-native" /* 17 */;
@@ -181,7 +181,7 @@ const memoResult = react.memo(function HappeningNowCardLiveStage(arg0) {
     const obj = AnalyticsUtilsDefault;
     const obj2 = { order: index, guild_id, type: hasOwnProperty.GUILD_LIVE_STAGE_CARD, destination_channel_id: channel_id };
     obj.track(AnalyticEvents.ACTIVITY_CARD_CLICKED, obj2);
-    const promise = asyncRequire(12516, dependencyMap.paths);
+    const promise = asyncRequire(12511, dependencyMap.paths);
     promise.then((result) => {
       result.default(channel_id, true);
     });

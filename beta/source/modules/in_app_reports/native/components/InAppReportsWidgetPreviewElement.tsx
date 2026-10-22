@@ -1,7 +1,7 @@
 // Module ID: 14343
 // Function ID: 14344
 // Name: InAppReportsWidgetPreviewElement
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 6940, 8641, 7592, 14158, 7588, 14148, 1128, 5187, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 6940, 8641, 7592, 14158, 7588, 14143, 1128, 5187, 2]
 
 // Module 14343 (InAppReportsWidgetPreviewElement)
 import react_native from "react-native" /* 17 */;
@@ -135,7 +135,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WidgetPrevie
       if (widget.games.length > 0) {
         const obj6 = { userId, widget, disableInteraction: true, cardStyle: items3 };
         items3 = [tmp7.card, tmp4.card];
-        tmp9 = React3(tmp(14148).WidgetSection, obj6);
+        tmp9 = React3(tmp(14143).WidgetSection, obj6);
       }
     }
   }
@@ -170,7 +170,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WidgetPrevie
       if (widget.games.length > 0) {
         const obj3 = { userId, widget, disableInteraction: true, cardStyle: items1 };
         items1 = [tmp6.card, tmp.card];
-        tmp7 = React3(tmp2(14148).WidgetSection, obj3);
+        tmp7 = React3(tmp2(14143).WidgetSection, obj3);
       }
     }
   }

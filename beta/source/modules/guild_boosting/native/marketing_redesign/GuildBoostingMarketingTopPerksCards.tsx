@@ -1,7 +1,7 @@
 // Module ID: 14679
 // Function ID: 14680
 // Name: GuildBoostingMarketingTopPerksCards
-// Dependencies: [19, 17, 5181, 21, 5191, 587, 1128, 5128, 14680, 6385, 14681, 14682, 558, 576, 5187, 13259, 2]
+// Dependencies: [19, 17, 5181, 21, 5191, 587, 1128, 5128, 14680, 6385, 14681, 14682, 558, 576, 5187, 13254, 2]
 
 // Module 14679 (GuildBoostingMarketingTopPerksCards)
 import react_native from "react-native" /* 17 */;
@@ -145,7 +145,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoost
             tmp17 = tmp20;
           }
           const obj4 = { itemCount: items.length, cardWidth: 324, cardMarginRight: 16, contentContainerStyle: tmp10, children: tmp11 };
-          const tmp16 = closure_5(tmp(13259).MarketingCardsScroller, obj4);
+          const tmp16 = closure_5(tmp(13254).MarketingCardsScroller, obj4);
           cResult[9] = tmp4.scrollerContent;
           cResult[10] = tmp11;
           cResult[11] = tmp16;

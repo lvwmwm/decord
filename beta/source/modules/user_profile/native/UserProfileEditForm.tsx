@@ -1,7 +1,7 @@
 // Module ID: 15606
 // Function ID: 15607
 // Name: UserProfileEditForm
-// Dependencies: [19, 17, 8590, 10904, 7181, 1087, 1097, 15607, 21, 6956, 15608, 558, 576, 4864, 7130, 7155, 8564, 15609, 1128, 15622, 8641, 15624, 8560, 6582, 4945, 6942, 587, 10849, 15625, 10394, 12607, 8584, 10837, 12831, 8567, 8642, 10898, 504, 8595, 14172, 15628, 8627, 8638, 15629, 5187, 4922, 10857, 15630, 10838, 10858, 15634, 8562, 15635, 15641, 15647, 8565, 15651, 15652, 15656, 15660, 15665, 15666, 15669, 15670, 15696, 15710, 15711, 2]
+// Dependencies: [19, 17, 8590, 10904, 7181, 1087, 1097, 15607, 21, 6956, 15608, 558, 576, 4864, 7130, 7155, 8564, 15609, 1128, 15622, 8641, 15624, 8560, 6582, 4945, 6942, 587, 10849, 15625, 10394, 12602, 8584, 10837, 12826, 8567, 8642, 10898, 504, 8595, 14172, 15628, 8627, 8638, 15629, 5187, 4922, 10857, 15630, 10838, 10858, 15634, 8562, 15635, 15641, 15647, 8565, 15651, 15652, 15656, 15660, 15665, 15666, 15669, 15670, 15696, 15710, 15711, 2]
 
 // Module 15606 (UserProfileEditForm)
 import react2 from "react" /* 576 */;
@@ -573,7 +573,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileE
   const pendingBadgeHiddenBadges = tmp14.pendingBadgeHiddenBadges;
   ({ pendingDisplayNameStyles, pendingAvatar, pendingBanner, pendingProfileFrame, pendingNameplate, pendingAccentColor, tryItOutBanner, tryItOutAvatarDecoration, tryItOutProfileEffect, tryItOutDisplayNameStyles, pendingPrimaryGuildId } = tmp14);
   sharedValue(10394)();
-  const obj9 = str(12607);
+  const obj9 = str(12602);
   const guildAutomodProfileQuarantineErrors = obj9.useGuildAutomodProfileQuarantineErrors();
   let str2 = str.id;
   const tmp17 = sharedValue(8584);
@@ -583,7 +583,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileE
   const tmp17Result = tmp17(str2);
   const tmp5Result = str(10837);
   const customStatusActivity = tmp5Result.useCustomStatusActivity();
-  const tmp5Result8 = str(12831);
+  const tmp5Result8 = str(12826);
   const entryPoint = tmp5Result8.useCustomTypingIndicatorConfig("UserProfileEditForm").entryPoint;
   const obj10 = { userId: str.id, image: pendingAvatar };
   const tmp5Result9 = str(8567);

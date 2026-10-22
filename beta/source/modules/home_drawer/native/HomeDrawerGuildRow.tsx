@@ -1,7 +1,7 @@
 // Module ID: 17462
 // Function ID: 17463
 // Name: HomeDrawerGuildRow
-// Dependencies: [19, 17, 4847, 2072, 2068, 4843, 6362, 2090, 6291, 4855, 6222, 1392, 1087, 6223, 21, 5191, 558, 576, 504, 5078, 5075, 13608, 10654, 5187, 17463, 17464, 5521, 11, 17465, 17466, 12832, 17467, 17468, 17469, 17471, 17472, 17453, 2]
+// Dependencies: [19, 17, 4847, 2072, 2068, 4843, 6362, 2090, 6291, 4855, 6222, 1392, 1087, 6223, 21, 5191, 558, 576, 504, 5078, 5075, 13603, 10654, 5187, 17463, 17464, 5521, 11, 17465, 17466, 12827, 17467, 17468, 17469, 17471, 17472, 17453, 2]
 
 // Module 17462 (HomeDrawerGuildRow)
 import react_native from "react-native" /* 17 */;
@@ -338,7 +338,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildR
     if (memo.isMuted) {
       let BellSlashIcon;
       if (memo.isTemporary) {
-        BellSlashIcon = tmp3(13608).BellZIcon;
+        BellSlashIcon = tmp3(13603).BellZIcon;
       } else {
         BellSlashIcon = tmp3(10654).BellSlashIcon;
       }

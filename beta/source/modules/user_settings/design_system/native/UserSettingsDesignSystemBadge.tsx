@@ -1,7 +1,7 @@
 // Module ID: 16878
 // Function ID: 16879
 // Name: UserSettingsDesignSystemBadge
-// Dependencies: [32, 19, 17, 21, 5191, 587, 10915, 10917, 10919, 10921, 9851, 558, 576, 5187, 13098, 6539, 6540, 6563, 7172, 5477, 6459, 1202, 2]
+// Dependencies: [32, 19, 17, 21, 5191, 587, 10915, 10917, 10919, 10921, 9851, 558, 576, 5187, 13093, 6539, 6540, 6563, 7172, 5477, 6459, 1202, 2]
 
 // Module 16878 (UserSettingsDesignSystemBadge)
 import react2 from "react" /* 576 */;
@@ -14,7 +14,7 @@ import TableRadioGroup3 from "TableRadioGroup" /* 6540 */;
 import TableSwitchRow from "TableSwitchRow" /* 7172 */;
 import StarIcon3 from "StarIcon" /* 9851 */;
 import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 10919 */;
-import Badge_Badge from "Badge/Badge" /* 13098 */;
+import Badge_Badge from "Badge/Badge" /* 13093 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -381,7 +381,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Varian
       }
       items1[3] = metroImportDefault(Badge, obj7);
       const obj8 = { type: { text: "Custom" }, variant, icon: StarIcon2 };
-      const Badge2 = tmp2(13098).Badge;
+      const Badge2 = tmp2(13093).Badge;
       if ("rarity-common" === variant) {
         StarIcon2 = tmp2(10915).ExperimentalCommonIcon;
       } else if ("rarity-rare" === variant) {
@@ -462,7 +462,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Varian
       }
       items1[3] = metroImportDefault(Badge, obj7);
       const obj8 = { type: { text: "Custom" }, variant, icon: StarIcon2 };
-      const Badge2 = tmp2(13098).Badge;
+      const Badge2 = tmp2(13093).Badge;
       if ("rarity-common" === variant) {
         StarIcon2 = tmp2(10915).ExperimentalCommonIcon;
       } else if ("rarity-rare" === variant) {
@@ -530,7 +530,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Trunca
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { type: obj6, variant: "primary", icon: StarIcon3.StarIcon };
     obj6 = { text };
-    const Badge = tmp(13098).Badge;
+    const Badge = tmp(13093).Badge;
     const tmp21 = metroImportDefault(Badge, obj5);
     cResult[5] = tmp21;
     tmp18 = tmp21;
@@ -549,7 +549,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Trunca
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     const obj8 = { type: obj9, variant: "rarity-epic", icon: ExperimentalEpicIcon.ExperimentalEpicIcon };
     obj9 = { text };
-    const Badge2 = tmp(13098).Badge;
+    const Badge2 = tmp(13093).Badge;
     const tmp29 = metroImportDefault(Badge2, obj8);
     cResult[8] = tmp29;
     tmp26 = tmp29;

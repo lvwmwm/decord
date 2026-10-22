@@ -1,7 +1,7 @@
 // Module ID: 17897
 // Function ID: 17898
 // Name: FriendsScreen
-// Dependencies: [19, 17, 7612, 4855, 21, 5191, 587, 558, 576, 1505, 7130, 7155, 1633, 17898, 504, 1896, 8577, 17899, 17902, 1128, 17586, 5139, 6457, 5479, 12712, 16156, 10521, 12642, 2]
+// Dependencies: [19, 17, 7612, 4855, 21, 5191, 587, 558, 576, 1505, 7130, 7155, 1633, 17898, 504, 1896, 8577, 17899, 17902, 1128, 17586, 5139, 6457, 5479, 12707, 16156, 10521, 12637, 2]
 
 // Module 17897 (FriendsScreen)
 import react_native from "react-native" /* 17 */;
@@ -12,7 +12,7 @@ import SendMessageIcon from "SendMessageIcon" /* 5139 */;
 import components_Button_Button from "components/Button/Button" /* 5479 */;
 import TableRow2 from "TableRow" /* 6457 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8577 */;
-import NoResultsDefault from "NoResults" /* 12712 */;
+import NoResultsDefault from "NoResults" /* 12707 */;
 import WumpusCouchSpotIllustration from "WumpusCouchSpotIllustration" /* 16156 */;
 import AssetRegistryDefault from "AssetRegistry" /* 17586 */;
 import react from "react" /* 19 */;

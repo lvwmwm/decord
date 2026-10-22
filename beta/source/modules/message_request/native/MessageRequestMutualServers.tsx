@@ -1,7 +1,7 @@
 // Module ID: 18029
 // Function ID: 18030
 // Name: MessageRequestMutualServers
-// Dependencies: [19, 17, 21, 5191, 558, 576, 6436, 18030, 1128, 13311, 5187, 6462, 2]
+// Dependencies: [19, 17, 21, 5191, 558, 576, 6436, 18030, 1128, 13306, 5187, 6462, 2]
 
 // Module 18029 (MessageRequestMutualServers)
 import react_native from "react-native" /* 17 */;
@@ -148,7 +148,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
               return React3(GuildIconDefault, obj, guild.id);
             })
       };
-      const GuildIconPile = tmp(13311).GuildIconPile;
+      const GuildIconPile = tmp(13306).GuildIconPile;
       tmp13 = closure_4(GuildIconPile, obj6);
     }
     cResult[0] = mutualGuildsForMessageRequests.length;
@@ -215,7 +215,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
           return React3(GuildIconDefault, obj, guild.id);
         })
     };
-    const GuildIconPile = tmp4(13311).GuildIconPile;
+    const GuildIconPile = tmp4(13306).GuildIconPile;
     tmp9 = closure_4(GuildIconPile, obj4);
   }
   items1 = [tmp9, ];

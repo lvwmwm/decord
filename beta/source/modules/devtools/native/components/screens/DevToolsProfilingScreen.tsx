@@ -1,7 +1,7 @@
 // Module ID: 16727
 // Function ID: 16728
 // Name: DevToolsProfilingScreen
-// Dependencies: [32, 19, 17, 1087, 21, 5191, 587, 558, 576, 13577, 6542, 6457, 5187, 16728, 5477, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 5191, 587, 558, 576, 13572, 6542, 6457, 5187, 16728, 5477, 2]
 
 // Module 16727 (DevToolsProfilingScreen)
 import nativeDefault from "native" /* 587 */;
@@ -10,7 +10,7 @@ import Text_Text from "Text/Text" /* 5187 */;
 import Stack_Stack from "Stack/Stack" /* 5477 */;
 import TableRow2 from "TableRow" /* 6457 */;
 import TableRowGroup3 from "TableRowGroup" /* 6542 */;
-import ComponentProfiler from "ComponentProfiler" /* 13577 */;
+import ComponentProfiler from "ComponentProfiler" /* 13572 */;
 import DevToolsProfilingUseStateFromStores from "DevToolsProfilingUseStateFromStores" /* 16728 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

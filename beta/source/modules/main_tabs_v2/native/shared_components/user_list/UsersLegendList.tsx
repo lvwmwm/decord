@@ -1,9 +1,9 @@
-// Module ID: 13647
-// Function ID: 13648
+// Module ID: 13642
+// Function ID: 13643
 // Name: UsersLegendList
-// Dependencies: [32, 19, 17, 21, 5191, 6584, 558, 576, 4945, 1499, 7030, 13648, 2]
+// Dependencies: [32, 19, 17, 21, 5191, 6584, 558, 576, 4945, 1499, 7030, 13643, 2]
 
-// Module 13647 (UsersLegendList)
+// Module 13642 (UsersLegendList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;

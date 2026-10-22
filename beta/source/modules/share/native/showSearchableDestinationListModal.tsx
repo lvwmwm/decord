@@ -1,10 +1,10 @@
-// Module ID: 12690
-// Function ID: 12691
+// Module ID: 12685
+// Function ID: 12686
 // Name: showSearchableDestinationListModal
 // Dependencies: [5081, 6190, 1384, 6904, 2]
 // Exports: default
 
-// Module 12690 (showSearchableDestinationListModal)
+// Module 12685 (showSearchableDestinationListModal)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import ChatInputUtils from "ChatInputUtils" /* 5081 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;

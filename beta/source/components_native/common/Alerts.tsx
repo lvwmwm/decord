@@ -710,7 +710,7 @@ function renderAlertItem(arg0, item, transitionState, cleanUp) {
   const obj = { item, transitionState, cleanUp };
   return authStore2(closure_22, obj, arg0);
 }
-let closure_26 = Object.freeze({ renderAlert: "Array", renderKey: "ix", props: "method" });
+let closure_26 = Object.freeze({ renderAlert: "Array", renderKey: "ix", props: "key" });
 ReactCompilerGating = ReactCompilerGating_mod;
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function Alerts() {
   let alertDismissable;
@@ -758,7 +758,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             return <component />;
           };
         } else {
-          return { renderAlert: "Array", renderKey: "ix", props: "method" };
+          return { renderAlert: "Array", renderKey: "ix", props: "key" };
         }
       }
     };
@@ -876,7 +876,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           return <component />;
         };
       } else {
-        return { renderAlert: "Array", renderKey: "ix", props: "method" };
+        return { renderAlert: "Array", renderKey: "ix", props: "key" };
       }
     }
   });

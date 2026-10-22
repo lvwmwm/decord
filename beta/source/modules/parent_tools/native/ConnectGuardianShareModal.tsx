@@ -1,7 +1,7 @@
 // Module ID: 18616
 // Function ID: 18617
 // Name: ConnectGuardianShareModal
-// Dependencies: [19, 17, 7525, 21, 5191, 587, 1128, 2589, 4903, 6190, 12667, 573, 15926, 7781, 7782, 5477, 5187, 15927, 6433, 6478, 558, 576, 10929, 2]
+// Dependencies: [19, 17, 7525, 21, 5191, 587, 1128, 2589, 4903, 6190, 12662, 573, 15926, 7781, 7782, 5477, 5187, 15927, 6433, 6478, 558, 576, 10929, 2]
 
 // Module 18616 (ConnectGuardianShareModal)
 import react_native from "react-native" /* 17 */;
@@ -47,7 +47,7 @@ function ConnectGuardianShareScreen() {
     const arr = ModalActionCreatorsDefault;
     arr.pop();
   }, []);
-  const obj2 = getLinkCode(12667);
+  const obj2 = getLinkCode(12662);
   getLinkCode = obj2.useFamilyCenterActions({ onError: callback }).getLinkCode;
   const items = [FamilyCenterStore];
   const obj3 = getLinkCode(573);

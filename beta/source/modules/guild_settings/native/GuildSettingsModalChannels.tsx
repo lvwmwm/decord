@@ -1,7 +1,7 @@
 // Module ID: 17275
 // Function ID: 17276
 // Name: GuildSettingsModalChannels
-// Dependencies: [19, 17, 2068, 2090, 4845, 4855, 1392, 17273, 1087, 21, 5191, 6162, 587, 2093, 4922, 1128, 5065, 1105, 8855, 1202, 17276, 558, 576, 504, 8431, 5521, 6462, 1633, 7167, 8880, 9371, 5479, 7365, 4850, 13644, 17277, 7005, 9996, 17278, 17274, 12537, 16357, 10624, 11185, 6377, 5399, 1505, 38, 5486, 2]
+// Dependencies: [19, 17, 2068, 2090, 4845, 4855, 1392, 17273, 1087, 21, 5191, 6162, 587, 2093, 4922, 1128, 5065, 1105, 8855, 1202, 17276, 558, 576, 504, 8431, 5521, 6462, 1633, 7167, 8880, 9371, 5479, 7365, 4850, 13639, 17277, 7005, 9996, 17278, 17274, 12532, 16357, 10624, 11185, 6377, 5399, 1505, 38, 5486, 2]
 
 // Module 17275 (GuildSettingsModalChannels)
 import _modDef38 from "module_38" /* 38 */;
@@ -27,8 +27,8 @@ import Form from "Form" /* 8855 */;
 import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8880 */;
 import ChannelSettingsActionCreators from "ChannelSettingsActionCreators" /* 9996 */;
 import FavoritesActionCreators from "FavoritesActionCreators" /* 10624 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12537 */;
-import ChannelSortingUtils from "ChannelSortingUtils" /* 13644 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12532 */;
+import ChannelSortingUtils from "ChannelSortingUtils" /* 13639 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 16357 */;
 import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 17274 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 17276 */;

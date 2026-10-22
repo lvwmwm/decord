@@ -1,7 +1,7 @@
 // Module ID: 17624
 // Function ID: 17625
 // Name: ICYMITopicsScreen
-// Dependencies: [5, 32, 19, 17, 17618, 17625, 21, 9514, 10545, 8488, 17626, 10551, 8475, 16320, 12674, 11643, 12550, 9867, 17627, 9869, 13750, 5191, 587, 558, 576, 4927, 5479, 1633, 1505, 17629, 2002, 8745, 4904, 1128, 504, 15428, 5187, 2]
+// Dependencies: [5, 32, 19, 17, 17618, 17625, 21, 9514, 10545, 8488, 17626, 10551, 8475, 16320, 12669, 11643, 12545, 9867, 17627, 9869, 13745, 5191, 587, 558, 576, 4927, 5479, 1633, 1505, 17629, 2002, 8745, 4904, 1128, 504, 15428, 5187, 2]
 // Exports: default
 
 // Module 17624 (ICYMITopicsScreen)
@@ -18,9 +18,9 @@ import BicycleIcon from "BicycleIcon" /* 9869 */;
 import TvIcon from "TvIcon" /* 10545 */;
 import MusicIcon from "MusicIcon" /* 10551 */;
 import RobotIcon from "RobotIcon" /* 11643 */;
-import MedalIcon from "MedalIcon" /* 12550 */;
-import PiggyBankIcon from "PiggyBankIcon" /* 12674 */;
-import PencilSparkleIcon from "PencilSparkleIcon" /* 13750 */;
+import MedalIcon from "MedalIcon" /* 12545 */;
+import PiggyBankIcon from "PiggyBankIcon" /* 12669 */;
+import PencilSparkleIcon from "PencilSparkleIcon" /* 13745 */;
 import ICYMIAnalytics2 from "ICYMIAnalytics" /* 15428 */;
 import PaintPaletteIcon from "PaintPaletteIcon" /* 16320 */;
 import GuildSettingsDiscoveryConstants from "GuildSettingsDiscoveryConstants" /* 17625 */;

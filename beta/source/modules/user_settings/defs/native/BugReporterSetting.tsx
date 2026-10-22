@@ -1,16 +1,16 @@
 // Module ID: 16819
 // Function ID: 16820
 // Name: BugReporterSetting
-// Dependencies: [13568, 6190, 13569, 2002, 558, 576, 13582, 11084, 1128, 12118, 2]
+// Dependencies: [13563, 6190, 13564, 2002, 558, 576, 13577, 11084, 1128, 12113, 2]
 
 // Module 16819 (BugReporterSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
-import BugIcon from "BugIcon" /* 12118 */;
-import BugReporterExperimentDefault from "BugReporterExperiment" /* 13582 */;
-import BugReportStore from "BugReportStore" /* 13568 */;
+import BugIcon from "BugIcon" /* 12113 */;
+import BugReporterExperimentDefault from "BugReporterExperiment" /* 13577 */;
+import BugReportStore from "BugReportStore" /* 13563 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
@@ -44,7 +44,7 @@ let obj = {
     if (!BugReportStore.getField("isReportOpen")) {
       obj.setState({ isReportOpen: true });
       const obj2 = ModalActionCreatorsDefault;
-      obj2.pushLazy(asyncRequire(13569, dependencyMap.paths));
+      obj2.pushLazy(asyncRequire(13564, dependencyMap.paths));
     }
   },
   withArrow: true,

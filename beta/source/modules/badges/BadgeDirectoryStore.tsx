@@ -200,7 +200,7 @@ let obj = {
   BADGE_DIRECTORY_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
     let badges;
     let userId;
-    const f99520 = (badge_id) => {
+    const f99529 = (badge_id) => {
       const items = [badge_id.badge_id, badge_id];
       return items;
     };
@@ -215,10 +215,10 @@ let obj = {
       peekResult = obj2;
       map = new Map();
     }
-    peekResult.badges = new Map(badges.map(f99520));
+    peekResult.badges = new Map(badges.map(f99529));
     peekResult.catalogFetched = true;
     peekResult.fetchError = false;
-    new Map(badges.map(f99520));
+    new Map(badges.map(f99529));
     peekResult.fetchedAt = Date.now();
     const result = obj.set(userId, peekResult);
   },

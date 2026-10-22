@@ -1,8 +1,8 @@
-// Module ID: 12250
-// Function ID: 12251
+// Module ID: 12245
+// Function ID: 12246
 // Dependencies: [2]
 
-// Module 12250
+// Module 12245
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BeeIllocon-2x.png.js");

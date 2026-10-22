@@ -1,11 +1,11 @@
-// Module ID: 13120
-// Function ID: 13121
+// Module ID: 13115
+// Function ID: 13116
 // Name: useIsStricterMessageRequests
-// Dependencies: [558, 13085, 2]
+// Dependencies: [558, 13080, 2]
 // Exports: default
 
-// Module 13120 (useIsStricterMessageRequests)
-import RegionalTeenUtils from "RegionalTeenUtils" /* 13085 */;
+// Module 13115 (useIsStricterMessageRequests)
+import RegionalTeenUtils from "RegionalTeenUtils" /* 13080 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

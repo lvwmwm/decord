@@ -1,10 +1,10 @@
-// Module ID: 11960
-// Function ID: 11961
+// Module ID: 11955
+// Function ID: 11956
 // Name: AppDetailContent
-// Dependencies: [5, 19, 17, 9549, 1504, 1087, 5503, 21, 5191, 11961, 587, 558, 576, 11869, 6457, 10948, 7509, 11261, 11934, 1128, 1633, 10107, 2000, 11965, 9548, 7513, 11866, 1384, 11967, 5187, 11969, 11931, 11971, 9547, 1202, 11978, 11980, 5155, 5206, 11019, 2]
+// Dependencies: [5, 19, 17, 9549, 1504, 1087, 5503, 21, 5191, 11956, 587, 558, 576, 11864, 6457, 10948, 7509, 11261, 11929, 1128, 1633, 10107, 2000, 11960, 9548, 7513, 11861, 1384, 11962, 5187, 11964, 11926, 11966, 9547, 1202, 11973, 11975, 5155, 5206, 11019, 2]
 // Exports: default
 
-// Module 11960 (AppDetailContent)
+// Module 11955 (AppDetailContent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -18,12 +18,12 @@ import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7509 */;
 import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7513 */;
 import AppLauncherUtils from "AppLauncherUtils" /* 9548 */;
 import AppLauncherContext from "AppLauncherContext" /* 10948 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11866 */;
-import usePlaceholderSize from "usePlaceholderSize" /* 11869 */;
-import CommandRowButtonDefault from "CommandRowButton" /* 11934 */;
-import Header from "Header" /* 11961 */;
-import BillIcon from "BillIcon" /* 11967 */;
-import ShopIcon from "ShopIcon" /* 11969 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11861 */;
+import usePlaceholderSize from "usePlaceholderSize" /* 11864 */;
+import CommandRowButtonDefault from "CommandRowButton" /* 11929 */;
+import Header from "Header" /* 11956 */;
+import BillIcon from "BillIcon" /* 11962 */;
+import ShopIcon from "ShopIcon" /* 11964 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9549 */;
@@ -494,8 +494,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRow(c
     sectionName
   };
   fn = undefined;
-  const useCommandRowSend = command(11934).useCommandRowSend;
-  const tmp5 = command(11934);
+  const useCommandRowSend = command(11929).useCommandRowSend;
+  const tmp5 = command(11929);
   if (installOnDemand) {
     let closure_0 = _asyncToGenerator(async (arg0, value) => {
       let obj5;

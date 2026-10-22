@@ -1,7 +1,7 @@
 // Module ID: 18024
 // Function ID: 18025
 // Name: MessageRequestsScreenWithTabs
-// Dependencies: [32, 19, 17, 21, 5191, 587, 558, 576, 1128, 18025, 18041, 8805, 9051, 10927, 12642, 2]
+// Dependencies: [32, 19, 17, 21, 5191, 587, 558, 576, 1128, 18025, 18041, 8805, 9051, 10927, 12637, 2]
 
 // Module 18024 (MessageRequestsScreenWithTabs)
 import react_native from "react-native" /* 17 */;
@@ -25,7 +25,7 @@ const intl5 = tmp(1128);
 const SegmentedControlState = tmp(8805);
 const SegmentedControl = tmp(9051);
 const SegmentedControlPages = tmp(10927);
-const TTIFirstContentfulPaint = tmp(12642);
+const TTIFirstContentfulPaint = tmp(12637);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const constants = { REQUEST: "REQUEST", SPAM: "SPAM" };

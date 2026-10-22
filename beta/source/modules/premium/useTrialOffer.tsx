@@ -139,7 +139,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrialOffe
                 }
                 const obj = timeout;
                 if (timeout != null) {
-                  obj.start(num, f155889);
+                  obj.start(num, f155898);
                 }
               }
             });
@@ -194,7 +194,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrialOffe
   }
   const items2 = [first, stateFromStores];
   const effect = obj3.useEffect(function() {
-    const f155890 = () => {
+    const f155899 = () => {
       const tmp = first;
       if (!tmp) {
         if (stateFromStores.hasExpired) {
@@ -211,7 +211,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrialOffe
         }
         const obj = timeout;
         if (timeout != null) {
-          obj.start(num, f155890);
+          obj.start(num, f155899);
         }
       }
     };
@@ -229,7 +229,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrialOffe
             let time = expiresAt.getTime();
             num = time - Date.now();
           }
-          timeout.start(num, f155890);
+          timeout.start(num, f155899);
         }
         return () => timeout.stop();
       }

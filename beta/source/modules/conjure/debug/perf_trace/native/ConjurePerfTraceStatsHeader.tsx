@@ -1,13 +1,13 @@
-// Module ID: 12350
-// Function ID: 12351
+// Module ID: 12345
+// Function ID: 12346
 // Name: ConjurePerfTraceStatsHeader
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 12351, 11009, 5187, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 12346, 11009, 5187, 2]
 
-// Module 12350 (ConjurePerfTraceStatsHeader)
+// Module 12345 (ConjurePerfTraceStatsHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5187 */;
-import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 12351 */;
+import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 12346 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
@@ -57,7 +57,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
   const cResult = obj.c(25);
   stats = stats.stats;
   if (cResult[0] !== stats) {
-    const tmpResult = tmp(12351);
+    const tmpResult = tmp(12346);
     const perfModelSummaryResult = tmpResult.perfModelSummary(stats);
     cResult[0] = stats;
     cResult[1] = perfModelSummaryResult;
@@ -207,7 +207,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
   let items;
   stats = stats.stats;
   let tmp = stats;
-  let obj = stats(12351);
+  let obj = stats(12346);
   const perfModelSummaryResult = obj.perfModelSummary(stats);
   let tmp4 = closure_6();
   dependencyMap = tmp4;

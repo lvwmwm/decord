@@ -1,7 +1,7 @@
 // Module ID: 16855
 // Function ID: 16856
 // Name: UserSettingsDesignSystemContextMenu
-// Dependencies: [109, 19, 17, 21, 13488, 7060, 8252, 11139, 5151, 16856, 16857, 11134, 5191, 587, 12, 558, 576, 5479, 9662, 5187, 6459, 2]
+// Dependencies: [109, 19, 17, 21, 13483, 7060, 8252, 11139, 5151, 16856, 16857, 11134, 5191, 587, 12, 558, 576, 5479, 9662, 5187, 6459, 2]
 
 // Module 16855 (UserSettingsDesignSystemContextMenu)
 import _mod12 from "module_12" /* 12 */;
@@ -15,7 +15,7 @@ import AssetRegistryDefault2 from "AssetRegistry" /* 7060 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 8252 */;
 import AssetRegistryDefault4 from "AssetRegistry" /* 11134 */;
 import AssetRegistryDefault5 from "AssetRegistry" /* 11139 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 13488 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 13483 */;
 import AssetRegistryDefault7 from "AssetRegistry" /* 16856 */;
 import AssetRegistryDefault8 from "AssetRegistry" /* 16857 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;

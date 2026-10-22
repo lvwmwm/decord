@@ -1,7 +1,7 @@
 // Module ID: 18690
 // Function ID: 18691
 // Name: GuildSettingsModalOverview
-// Dependencies: [19, 2086, 2068, 4843, 5116, 4845, 4855, 1392, 8911, 1087, 21, 5191, 587, 1128, 4922, 4903, 6478, 7365, 8910, 13135, 18691, 1405, 7167, 5400, 5498, 6563, 5521, 6542, 6457, 8277, 18469, 7206, 7172, 6540, 6539, 2131, 18695, 1417, 9914, 1202, 7051, 6404, 8855, 5477, 7005, 558, 576, 1505, 504, 2]
+// Dependencies: [19, 2086, 2068, 4843, 5116, 4845, 4855, 1392, 8911, 1087, 21, 5191, 587, 1128, 4922, 4903, 6478, 7365, 8910, 13130, 18691, 1405, 7167, 5400, 5498, 6563, 5521, 6542, 6457, 8277, 18469, 7206, 7172, 6540, 6539, 2131, 18695, 1417, 9914, 1202, 7051, 6404, 8855, 5477, 7005, 558, 576, 1505, 504, 2]
 
 // Module 18690 (GuildSettingsModalOverview)
 import nativeDefault from "native" /* 587 */;
@@ -31,7 +31,7 @@ import HeaderActionButton2 from "HeaderActionButton" /* 7365 */;
 import Form2 from "Form" /* 8855 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8910 */;
 import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 9914 */;
-import openChannelPickerDefault from "openChannelPicker" /* 13135 */;
+import openChannelPickerDefault from "openChannelPicker" /* 13130 */;
 import AssetChooserDefault from "AssetChooser" /* 18695 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;

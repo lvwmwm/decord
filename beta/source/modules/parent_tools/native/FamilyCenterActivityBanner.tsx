@@ -1,7 +1,7 @@
 // Module ID: 15921
 // Function ID: 15922
 // Name: FamilyCenterActivityBanner
-// Dependencies: [19, 17, 21, 5191, 558, 576, 8005, 8006, 15922, 587, 1128, 2589, 12670, 15929, 15930, 5128, 5187, 2]
+// Dependencies: [19, 17, 21, 5191, 558, 576, 8005, 8006, 15922, 587, 1128, 2589, 12665, 15929, 15930, 5128, 5187, 2]
 
 // Module 15921 (FamilyCenterActivityBanner)
 import react_native from "react-native" /* 17 */;
@@ -13,7 +13,7 @@ import FastImageDefault from "FastImage" /* 5128 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import useUserLinks from "useUserLinks" /* 8005 */;
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8006 */;
-import useAgeSpecificText3 from "useAgeSpecificText" /* 12670 */;
+import useAgeSpecificText3 from "useAgeSpecificText" /* 12665 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;

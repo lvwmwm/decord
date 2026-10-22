@@ -1,75 +1,274 @@
 // Module ID: 12425
 // Function ID: 12426
-// Dependencies: [12418, 12413, 12426, 12414, 12386]
-// Exports: sampleSpan
+// Dependencies: [32, 12382, 12426, 12387, 12428]
+// Exports: addItemToEnvelope, createAttachmentEnvelopeItem, createEnvelope, createEventEnvelopeHeaders, createSpanEnvelopeItem, envelopeContainsItemType, envelopeItemTypeToDataCategory, getSdkMetadataForEnvelopeHeader, parseEnvelope, serializeEnvelope
 
 // Module 12425
-import _mod12413 from "module_12413" /* 12413 */;
-import _mod12414 from "module_12414" /* 12414 */;
-import _mod12418 from "module_12418" /* 12418 */;
+import _mod12382 from "module_12382" /* 12382 */;
+import _mod12387 from "module_12387" /* 12387 */;
 import _mod12426 from "module_12426" /* 12426 */;
+import _mod12428 from "module_12428" /* 12428 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
+let _require;
 
-export const sampleSpan = function sampleSpan(tracesSampler, normalizedRequest) {
-  const obj = _mod12418;
-  if (obj.hasTracingEnabled(tracesSampler)) {
-    let num;
-    let items3;
-    const tmpResult = _mod12413;
-    const isolationScope = tmpResult.getIsolationScope();
-    const obj2 = { normalizedRequest: normalizedRequest.normalizedRequest || normalizedRequest };
-    normalizedRequest = isolationScope.getScopeData().sdkProcessingMetadata.normalizedRequest;
-    const merged = Object.assign(normalizedRequest);
-    if (typeof tracesSampler.tracesSampler === "function") {
-      num = tracesSampler.tracesSampler(obj2);
-    } else if (undefined !== obj2.parentSampled) {
-      num = obj2.parentSampled;
-    } else {
-      num = 1;
-      if (undefined !== tracesSampler.tracesSampleRate) {
-        num = tracesSampler.tracesSampleRate;
-      }
+function forEachEnvelopeItem(arg0, fn) {
+  const tmp = arg0[1];
+  for (const item10007 of tmp) {
+    if (fn(item10007, item10007[0].type)) {
+      obj.return();
+      let flag = true;
+      return true;
     }
-    const tmpResult2 = _mod12426;
-    const parseSampleRateResult = tmpResult2.parseSampleRate(num);
-    if (undefined === parseSampleRateResult) {
-      if (_mod12414.DEBUG_BUILD) {
-        const logger3 = tmp(12386).logger;
-        logger3.warn("[Tracing] Discarding transaction because of invalid sample rate.");
+  }
+  return false;
+}
+let closure_4 = { session: "session", sessions: "session", attachment: "attachment", transaction: "transaction", event: "error", client_report: "internal", user_report: "default", profile: "profile", profile_chunk: "profile", replay_event: "replay", replay_recording: "replay", check_in: "monitor", feedback: "feedback", span: "span", statsd: "metric_bucket", raw_security: "security" };
+
+export const addItemToEnvelope = function addItemToEnvelope(arg0, arg1) {
+  const tmp2 = _slicedToArray(arg0, 2);
+  const items = [tmp2[0], ];
+  const items1 = [];
+  items1[HermesBuiltin.arraySpread(items1, tmp2[1], 0)] = arg1;
+  items[1] = items1;
+  return items;
+};
+export const createAttachmentEnvelopeItem = function createAttachmentEnvelopeItem(data) {
+  let data1;
+  if (typeof data.data === "string") {
+    data = data.data;
+    if (_mod12382.GLOBAL_OBJ.__SENTRY__) {
+      let encodePolyfillResult;
+      if (_mod12382.GLOBAL_OBJ.__SENTRY__.encodePolyfill) {
+        const __SENTRY__ = tmp(12382).GLOBAL_OBJ.__SENTRY__;
+        encodePolyfillResult = __SENTRY__.encodePolyfill(data);
       }
-      const items = [false];
-      items3 = items;
-    } else if (parseSampleRateResult) {
-      let items2;
-      const _Math = Math;
-      if (Math.random() < parseSampleRateResult) {
-        const items1 = [true, parseSampleRateResult];
-        items2 = items1;
-      } else {
-        if (_mod12414.DEBUG_BUILD) {
-          const logger2 = tmp(12386).logger;
-          const _Number = Number;
-          const _HermesInternal = HermesInternal;
-          logger2.log("[Tracing] Discarding transaction because it's not included in the random sample (sampling rate = " + Number(num) + ")");
-        }
-        items2 = [false, parseSampleRateResult];
-      }
-      items3 = items2;
-    } else {
-      if (_mod12414.DEBUG_BUILD) {
-        const logger = tmp(12386).logger;
-        let str = "a negative sampling decision was inherited or tracesSampleRate is set to 0";
-        const log = logger.log;
-        if (typeof tracesSampler.tracesSampler === "function") {
-          str = "tracesSampler returned 0 or false";
-        }
-        log(`[Tracing] Discarding transaction because ${str}`);
-      }
-      items3 = [false, parseSampleRateResult];
+      data1 = encodePolyfillResult;
     }
-    return items3;
+    const _TextEncoder = TextEncoder;
+    const self = this;
+    const self2 = this;
+    const encoder = new TextEncoder();
+    encodePolyfillResult = encoder.encode(data);
   } else {
-    const items4 = [false];
-    return items4;
+    data1 = data.data;
+  }
+  const items = [, ];
+  const obj = _mod12387;
+  const obj2 = { type: "attachment", length: data1.length, filename: data.filename, content_type: data.contentType, attachment_type: data.attachmentType };
+  items[0] = obj.dropUndefinedKeys(obj2);
+  items[1] = data1;
+  return items;
+};
+export function createEnvelope(arg0) {
+  let items = arg1;
+  if (arg1 === undefined) {
+    items = [];
+  }
+  const items1 = [arg0, items];
+  return items1;
+}
+export const createEventEnvelopeHeaders = function createEventEnvelopeHeaders(event_id, sdk, arg2, arg3) {
+  let date;
+  let dropUndefinedKeys;
+  let obj5;
+  let obj6;
+  const obj = { event_id: event_id.event_id, sent_at: date.toISOString() };
+  let tmp2 = sdk;
+  date = new Date();
+  if (tmp2) {
+    tmp2 = { sdk };
+    const obj2 = { sdk };
+  }
+  const merged = Object.assign(tmp2);
+  let tmp4 = arg2 && arg3;
+  if (tmp4) {
+    const obj3 = { dsn: obj5.dsnToString(arg3) };
+    tmp4 = obj3;
+    obj5 = _mod12428;
+  }
+  const merged1 = Object.assign(tmp4);
+  let tmp8 = tmp;
+  if (tmp8) {
+    const obj4 = { trace: dropUndefinedKeys(obj6) };
+    obj6 = {};
+    dropUndefinedKeys = _mod12387.dropUndefinedKeys;
+    _mod12387;
+    const merged2 = Object.assign(tmp);
+    tmp8 = obj4;
+  }
+  const merged3 = Object.assign(tmp8);
+  return obj;
+};
+export function createSpanEnvelopeItem(arg0) {
+  const items = [{ type: "span" }, arg0];
+  return items;
+}
+export const envelopeContainsItemType = function envelopeContainsItemType(arg0, arg1) {
+  let closure_0 = arg1;
+  return forEachEnvelopeItem(arg0, (arg0, arg1) => closure_0.includes(arg1));
+};
+export const envelopeItemTypeToDataCategory = function envelopeItemTypeToDataCategory(arg0) {
+  return closure_4[arg0];
+};
+export { forEachEnvelopeItem };
+export const getSdkMetadataForEnvelopeHeader = function getSdkMetadataForEnvelopeHeader(sdk) {
+  const tmp = sdk;
+  if (tmp) {
+    if (sdk.sdk) {
+      const obj = { name: null, version: null };
+      ({ name: obj.name, version: obj.version } = sdk.sdk);
+      return obj;
+    }
+  }
+};
+export const parseEnvelope = function parseEnvelope(arr) {
+  let tmp = arr;
+  if (typeof arr === "string") {
+    if (require("module_12382").GLOBAL_OBJ.__SENTRY__) {
+      let encodePolyfillResult;
+      if (require("module_12382").GLOBAL_OBJ.__SENTRY__.encodePolyfill) {
+        let __SENTRY__ = tmp12(12382).GLOBAL_OBJ.__SENTRY__;
+        encodePolyfillResult = __SENTRY__.encodePolyfill(arr);
+      }
+      tmp = encodePolyfillResult;
+    }
+    const _TextEncoder = TextEncoder;
+    const self = this;
+    const self2 = this;
+    const encoder = new TextEncoder();
+    const tmp3 = encoder;
+    encodePolyfillResult = encoder.encode(arr);
+  }
+  function readJson() {
+    let length = closure_0.indexOf(10);
+    if (length < 0) {
+      length = closure_0.length;
+    }
+    const _JSON = JSON;
+    const subarrayResult = closure_0.subarray(0, length);
+    closure_0 = closure_0.subarray(length + 1);
+    if (_mod12382.GLOBAL_OBJ.__SENTRY__) {
+      let decodePolyfillResult;
+      if (_mod12382.GLOBAL_OBJ.__SENTRY__.decodePolyfill) {
+        const __SENTRY__ = tmp3(12382).GLOBAL_OBJ.__SENTRY__;
+        decodePolyfillResult = __SENTRY__.decodePolyfill(subarrayResult);
+      }
+      return parse(decodePolyfillResult);
+    }
+    const decoder = new TextDecoder();
+    decodePolyfillResult = decoder.decode(subarrayResult);
+  }
+  _require = tmp;
+  const items = [];
+  const json = readJson();
+  while (_require.length) {
+    let subarrayResult;
+    let json1 = readJson();
+    let length;
+    if (typeof json1.length === "number") {
+      length = json1.length;
+    }
+    let items1 = [json1, ];
+    let push = items.push;
+    if (length) {
+      subarrayResult = require("Discord");
+      _require = _require.subarray(length + 1);
+    } else {
+      subarrayResult = readJson();
+    }
+    items1[1] = subarrayResult;
+    arr = push(items1);
+  }
+  const items2 = [json, items];
+  return items2;
+};
+export const serializeEnvelope = function serializeEnvelope(arg0) {
+  let sum;
+  let tmp4;
+  function concatBuffers(arr) {
+    const uint8Array = new Uint8Array(arr.reduce((acc, item) => acc + item.length, 0));
+    let num = 0;
+    const iter = arr[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let result = uint8Array.set(nextResult, num);
+      num = num + nextResult.length;
+      continue;
+    }
+    return uint8Array;
+  }
+  function append(json) {
+    let require;
+    if (typeof require === "string") {
+      if (typeof json === "string") {
+        require = arr + json;
+      } else {
+        if (_mod12382.GLOBAL_OBJ.__SENTRY__) {
+          let encodePolyfillResult;
+          if (_mod12382.GLOBAL_OBJ.__SENTRY__.encodePolyfill) {
+            const __SENTRY__2 = tmp11(12382).GLOBAL_OBJ.__SENTRY__;
+            encodePolyfillResult = __SENTRY__2.encodePolyfill(arr);
+          }
+          require = [encodePolyfillResult, json];
+        }
+        const _TextEncoder2 = TextEncoder;
+        const self3 = this;
+        const self4 = this;
+        const encoder2 = new TextEncoder();
+        encodePolyfillResult = encoder2.encode(arr);
+      }
+    } else {
+      let tmp4 = json;
+      const push = arr.push;
+      if (typeof json === "string") {
+        if (_mod12382.GLOBAL_OBJ.__SENTRY__) {
+          let encodePolyfillResult1;
+          if (_mod12382.GLOBAL_OBJ.__SENTRY__.encodePolyfill) {
+            const __SENTRY__ = tmp9(12382).GLOBAL_OBJ.__SENTRY__;
+            encodePolyfillResult1 = __SENTRY__.encodePolyfill(json);
+          }
+          tmp4 = encodePolyfillResult1;
+        }
+        const _TextEncoder = TextEncoder;
+        const self = this;
+        const self2 = this;
+        const encoder = new TextEncoder();
+        encodePolyfillResult1 = encoder.encode(json);
+      }
+      push(tmp4);
+    }
+  }
+  let tmp = _slicedToArray(arg0, 2);
+  const tmp2 = tmp[1];
+  let require = JSON.stringify(tmp[0]);
+  const tmp3 = tmp2[Symbol.iterator]();
+  if (tmp3 === undefined) {
+    let tmp20 = require;
+    if (typeof require !== "string") {
+      tmp20 = concatBuffers(tmp19);
+    }
+    return tmp20;
+  } else {
+    const tmp6 = _slicedToArray(tmp4, 2);
+    const _JSON = JSON;
+    const _HermesInternal = HermesInternal;
+    append("\n" + JSON.stringify(tmp6[0]) + "\n");
+    if (typeof tmp6[1] !== "string") {
+      const _Uint8Array = Uint8Array;
+      if (!(tmp6[1] instanceof Uint8Array)) {
+        let json;
+        try {
+          const _JSON2 = JSON;
+          json = JSON.stringify(tmp8);
+        } catch (err) {
+          const _JSON3 = JSON;
+          const normalizer = _mod12426;
+          json = stringify(normalizer.normalize(tmp8));
+        }
+        append(json);
+      }
+    }
+    append(tmp6[1]);
   }
 };

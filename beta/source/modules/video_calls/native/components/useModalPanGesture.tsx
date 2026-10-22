@@ -1,9 +1,9 @@
-// Module ID: 12515
-// Function ID: 12516
+// Module ID: 12510
+// Function ID: 12511
 // Name: useModalPanGesture
 // Dependencies: [558, 576, 4945, 5478, 6190, 6612, 2]
 
-// Module 12515 (useModalPanGesture)
+// Module 12510 (useModalPanGesture)
 import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
 import spring from "spring" /* 5478 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
@@ -187,7 +187,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useModalPa
       }
       set2 = tmp.set;
       obj3 = closure_0(closure_2[3]);
-      fn = function o() { /* body not rendered: F146666 */ };
+      fn = function o() { /* body not rendered: F146669 */ };
       obj1 = { runOnJS: closure_0(closure_2[2]).runOnJS, ModalActionCreators: closure_1(closure_2[4]) };
       fn.__closure = obj1;
       fn.__workletHash = 16884819962399;

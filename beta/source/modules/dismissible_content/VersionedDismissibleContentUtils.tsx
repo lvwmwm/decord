@@ -1,7 +1,7 @@
 // Module ID: 2066
 // Function ID: 2067
 // Name: VersionedDismissibleContentUtils
-// Dependencies: [2067, 7545, 2052, 13938, 15072, 2000, 15073, 2080, 2]
+// Dependencies: [2067, 7545, 2052, 13933, 15072, 2000, 15073, 2080, 2]
 // Exports: getVersionedDismissibleContentCurrentVersion
 
 // Module 2066 (VersionedDismissibleContentUtils)
@@ -18,7 +18,7 @@ const result = size.fileFinishedImporting("modules/dismissible_content/Versioned
 
 export const getVersionedDismissibleContentCurrentVersion = function getVersionedDismissibleContentCurrentVersion(id) {
   if (dismissible_content.DismissibleContent.COLLECTIBLES_SHOP_ENTRY_MARKETING === id) {
-    const marketingBySurface = CollectiblesMarketingsStore.getMarketingBySurface(tmp(13938).CollectiblesMarketingSurface.MOBILE_SHOP_BUTTON);
+    const marketingBySurface = CollectiblesMarketingsStore.getMarketingBySurface(tmp(13933).CollectiblesMarketingSurface.MOBILE_SHOP_BUTTON);
     let num5;
     if (marketingBySurface != null) {
       num5 = marketingBySurface.version;

@@ -1,7 +1,7 @@
 // Module ID: 17158
 // Function ID: 17159
 // Name: MessageRequestsButton
-// Dependencies: [109, 19, 17, 6333, 6334, 21, 5191, 558, 576, 504, 17159, 5479, 1128, 7840, 13777, 9025, 2]
+// Dependencies: [109, 19, 17, 6333, 6334, 21, 5191, 558, 576, 504, 17159, 5479, 1128, 7840, 13772, 9025, 2]
 
 // Module 17158 (MessageRequestsButton)
 import react_native from "react-native" /* 17 */;
@@ -11,7 +11,7 @@ import intl4 from "intl" /* 1128 */;
 import components_Button_Button from "components/Button/Button" /* 5479 */;
 import IconButton2 from "IconButton" /* 7840 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9025 */;
-import IconActionButtonDefault from "IconActionButton" /* 13777 */;
+import IconActionButtonDefault from "IconActionButton" /* 13772 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import MessageRequestStore from "MessageRequestStore" /* 6333 */;
@@ -204,7 +204,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
         tmp29 = cResult[7];
       }
       if (cResult[8] !== tmp11.requestCount) {
-        const tmp43 = str > 0 && React4(tmp(13777).ButtonBadge, { badgePosition: "right" });
+        const tmp43 = str > 0 && React4(tmp(13772).ButtonBadge, { badgePosition: "right" });
         cResult[8] = tmp11.requestCount;
         cResult[9] = tmp43;
         tmp42 = tmp43;
@@ -334,8 +334,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
       const merged2 = Object.assign(merged);
       tmp24 = React4(IconButton, obj4);
     }
-    items = [tmp24, tmp3.requestCount > 0 && tmp27(tmp26(13777).ButtonBadge, { badgePosition: "right" })];
-    tmp3.requestCount > 0 && tmp27(tmp26(13777).ButtonBadge, { badgePosition: "right" });
+    items = [tmp24, tmp3.requestCount > 0 && tmp27(tmp26(13772).ButtonBadge, { badgePosition: "right" })];
+    tmp3.requestCount > 0 && tmp27(tmp26(13772).ButtonBadge, { badgePosition: "right" });
     return tmp15(tmp16, obj2);
   } else {
     const obj = { source: AssetRegistryDefault, IconComponent, accessibilityLabel: intl.string(intl4.t.e7GWjQ), buttonText: str2, badge: tmp3.requestCount > 0, badgePosition: "right" };

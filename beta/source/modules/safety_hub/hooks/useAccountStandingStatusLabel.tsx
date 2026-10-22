@@ -1,13 +1,13 @@
 // Module ID: 15781
 // Function ID: 15782
 // Name: useAccountStandingStatusLabel
-// Dependencies: [558, 576, 12623, 12657, 15782, 1128, 15783, 2]
+// Dependencies: [558, 576, 12618, 12652, 15782, 1128, 15783, 2]
 
 // Module 15781 (useAccountStandingStatusLabel)
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
-import useSafetyHubAccountStanding from "useSafetyHubAccountStanding" /* 12623 */;
-import useSafetyHubInitialized from "useSafetyHubInitialized" /* 12657 */;
+import useSafetyHubAccountStanding from "useSafetyHubAccountStanding" /* 12618 */;
+import useSafetyHubInitialized from "useSafetyHubInitialized" /* 12652 */;
 import useSafetyHubFetchError from "useSafetyHubFetchError" /* 15782 */;
 import SafetyHubAccountStandingLabels from "SafetyHubAccountStandingLabels" /* 15783 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

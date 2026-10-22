@@ -1,128 +1,85 @@
 // Module ID: 12393
 // Function ID: 12394
-// Dependencies: []
-// Exports: isDOMError, isDOMException, isElement, isError, isErrorEvent, isEvent, isParameterizedString, isPlainObject, isPrimitive, isRegExp, isString, isSyntheticEvent, isThenable, isVueViewModel
+// Dependencies: [12394, 12391]
+// Exports: extractTraceparentData, generateSentryTraceHeader, propagationContextFromHeaders
 
 // Module 12393
-function isInstanceOf(arg0, arg1) {
-  try {
-    return arg0 instanceof arg1;
-  } catch (err) {
-    return false;
-  }
-}
+import generatePropagationContext from "generatePropagationContext" /* 12391 */;
+import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 12394 */;
 
-export const isDOMError = function isDOMError(arg0) {
-  const callResult = toString.call(arg0);
-  return callResult === "[object " + "DOMError" + "]";
-};
-export const isDOMException = function isDOMException(arg0) {
-  const callResult = toString.call(arg0);
-  return callResult === "[object " + "DOMException" + "]";
-};
-export const isElement = function isElement(arg0) {
-  let tmp = typeof globalThis.Element !== "undefined";
-  if (typeof globalThis.Element !== "undefined") {
-    tmp = isInstanceOf(arg0, globalThis.Element);
-  }
-  return tmp;
-};
-export const isError = function isError(arg0) {
-  const callResult = toString.call(arg0);
-  if ("[object Error]" !== callResult) {
-    if ("[object Exception]" !== callResult) {
-      if ("[object DOMException]" !== callResult) {
-        if ("[object WebAssembly.Exception]" !== callResult) {
-          const _Error = Error;
-          return isInstanceOf(arg0, Error);
+const regExp = new RegExp("^[ \\t]*([0-9a-f]{32})?-?([0-9a-f]{16})?-?([01])?[ \\t]*$");
+
+export const TRACEPARENT_REGEXP = regExp;
+export const extractTraceparentData = function extractTraceparentData(str) {
+  const tmp = str;
+  if (tmp) {
+    const match = str.match(regExp);
+    if (match) {
+      let flag = true;
+      if ("1" !== match[3]) {
+        if ("0" === match[3]) {
+          flag = false;
         }
       }
+      return { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
     }
   }
-  return true;
 };
-export const isErrorEvent = function isErrorEvent(arg0) {
-  const callResult = toString.call(arg0);
-  return callResult === "[object " + "ErrorEvent" + "]";
-};
-export const isEvent = function isEvent(arg0) {
-  let tmp = typeof Event !== "undefined";
-  if (typeof Event !== "undefined") {
-    const _Event = Event;
-    tmp = isInstanceOf(arg0, Event);
+export const generateSentryTraceHeader = function generateSentryTraceHeader() {
+  let traceId = arg0;
+  if (arg0 === undefined) {
+    const obj = generatePropagationContext;
+    traceId = obj.generateTraceId();
   }
-  return tmp;
-};
-export { isInstanceOf };
-export const isParameterizedString = function isParameterizedString(obj) {
-  let tmp = typeof obj === "object";
-  if (typeof obj === "object") {
-    tmp = null !== obj;
+  let spanId = arg1;
+  if (arg1 === undefined) {
+    const obj2 = generatePropagationContext;
+    spanId = obj2.generateSpanId();
   }
+  let str = "";
+  if (undefined !== arg2) {
+    let str2 = "-0";
+    if (arg2) {
+      str2 = "-1";
+    }
+    str = str2;
+  }
+  return "" + traceId + "-" + spanId + str;
+};
+export const propagationContextFromHeaders = function propagationContextFromHeaders(str, arg1) {
+  let parentSampled;
+  let tmp4Result;
+  let tmp4Result3;
+  let tmp4Result4;
+  let tmp;
+  if (str) {
+    const match = str.match(regExp);
+    if (match) {
+      let flag = true;
+      if ("1" !== match[3]) {
+        if ("0" === match[3]) {
+          flag = false;
+        }
+      }
+      tmp = { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
+      const obj = { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
+    }
+  }
+  const obj2 = BAGGAGE_HEADER_NAME;
+  let result = obj2.baggageHeaderToDynamicSamplingContext(arg1);
   if (tmp) {
-    tmp = "__sentry_template_string__" in obj;
-  }
-  if (tmp) {
-    tmp = "__sentry_template_values__" in obj;
-  }
-  return tmp;
-};
-export const isPlainObject = function isPlainObject(arg0) {
-  const callResult = toString.call(arg0);
-  return callResult === "[object " + "Object" + "]";
-};
-export const isPrimitive = function isPrimitive(obj) {
-  let tmp = null === obj;
-  if (!tmp) {
-    let tmp2 = typeof obj === "object";
-    if (typeof obj === "object") {
-      tmp2 = null !== obj;
+    if (tmp.traceId) {
+      const obj3 = { traceId: null, parentSpanId: null, spanId: tmp4Result.generateSpanId(), sampled: parentSampled, dsc: result };
+      ({ traceId: obj7.traceId, parentSpanId: obj7.parentSpanId, parentSampled } = tmp);
+      tmp4Result = generatePropagationContext;
+      if (!result) {
+        result = {};
+      }
+      return obj3;
     }
-    if (tmp2) {
-      tmp2 = "__sentry_template_string__" in obj;
-    }
-    if (tmp2) {
-      tmp2 = "__sentry_template_values__" in obj;
-    }
-    tmp = tmp2;
   }
-  if (!tmp) {
-    let tmp3 = typeof obj !== "object";
-    if (typeof obj !== "object") {
-      tmp3 = typeof obj !== "function";
-    }
-    tmp = tmp3;
-  }
-  return tmp;
-};
-export const isRegExp = function isRegExp(arg0) {
-  const callResult = toString.call(arg0);
-  return callResult === "[object " + "RegExp" + "]";
-};
-export const isString = function isString(arg0) {
-  const callResult = toString.call(arg0);
-  return callResult === "[object " + "String" + "]";
-};
-export const isSyntheticEvent = function isSyntheticEvent(arg0) {
-  const callResult = toString.call(arg0);
-  const tmp2 = callResult === "[object " + "Object" + "]" && "nativeEvent" in arg0 && "preventDefault" in arg0 && "stopPropagation" in arg0;
-  return tmp2;
-};
-export const isThenable = function isThenable(arg0) {
-  let then = arg0;
-  const _Boolean = Boolean;
-  if (arg0) {
-    then = arg0.then;
-  }
-  if (then) {
-    then = typeof arg0.then === "function";
-  }
-  return _Boolean(then);
-};
-export const isVueViewModel = function isVueViewModel(__isVue) {
-  let tmp = typeof __isVue !== "object" || null === __isVue;
-  if (!tmp) {
-    tmp = !__isVue.__isVue && !__isVue._isVue;
-  }
-  return !tmp;
+  const obj4 = { traceId: tmp4Result3.generateTraceId(), spanId: tmp4Result4.generateSpanId() };
+  tmp4Result3 = generatePropagationContext;
+  tmp4Result4 = generatePropagationContext;
+  return obj4;
 };

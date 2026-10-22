@@ -53,7 +53,7 @@ function attributeValueToTypedAttributeValue(value, flag) {
   }
   let tmp = value;
   if (!isAttributeObject(value)) {
-    const obj = { value, unit: "e" };
+    const obj = { value, unit: "a" };
     tmp = obj;
   }
   ({ value, unit } = tmp);

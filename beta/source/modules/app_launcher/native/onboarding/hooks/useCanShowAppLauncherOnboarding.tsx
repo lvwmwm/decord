@@ -1,9 +1,9 @@
-// Module ID: 11858
-// Function ID: 11859
+// Module ID: 11853
+// Function ID: 11854
 // Name: useCanShowAppLauncherOnboarding
-// Dependencies: [32, 2068, 5116, 1392, 11859, 11860, 5503, 1104, 558, 576, 504, 11, 2052, 7376, 5033, 2]
+// Dependencies: [32, 2068, 5116, 1392, 11854, 11855, 5503, 1104, 558, 576, 504, 11, 2052, 7376, 5033, 2]
 
-// Module 11858 (useCanShowAppLauncherOnboarding)
+// Module 11853 (useCanShowAppLauncherOnboarding)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react from "react" /* 576 */;
 import DurationsDefault from "Durations" /* 1104 */;
@@ -14,8 +14,8 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 5116 */;
 import UserStore from "UserStore" /* 1392 */;
-import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 11859 */;
-import AppLauncherOnboardingStore from "AppLauncherOnboardingStore" /* 11860 */;
+import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 11854 */;
+import AppLauncherOnboardingStore from "AppLauncherOnboardingStore" /* 11855 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,28 +1,28 @@
-// Module ID: 13386
-// Function ID: 13387
+// Module ID: 13381
+// Function ID: 13382
 // Name: ControllerIllocon
-// Dependencies: [19, 21, 13387, 13388, 13389, 558, 576, 6550, 5128, 2]
+// Dependencies: [19, 21, 13382, 13383, 13384, 558, 576, 6550, 5128, 2]
 
-// Module 13386 (ControllerIllocon)
+// Module 13381 (ControllerIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5128 */;
 import react_native from "react-native" /* 6550 */;
-import _modDef13387 from "module_13387" /* 13387 */;
-import _modDef13388 from "module_13388" /* 13388 */;
-import _modDef13389 from "module_13389" /* 13389 */;
+import _modDef13382 from "module_13382" /* 13382 */;
+import _modDef13383 from "module_13383" /* 13383 */;
+import _modDef13384 from "module_13384" /* 13384 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef13387 };
+let obj2 = { uri: _modDef13382 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef13388 };
-({ uri: _modDef13388 });
-obj[3] = { uri: _modDef13389 };
-({ uri: _modDef13389 });
+obj[2] = { uri: _modDef13383 };
+({ uri: _modDef13383 });
+obj[3] = { uri: _modDef13384 };
+({ uri: _modDef13384 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ControllerIllocon(arg0) {
   let accessibilityLabel;
   let accessible;

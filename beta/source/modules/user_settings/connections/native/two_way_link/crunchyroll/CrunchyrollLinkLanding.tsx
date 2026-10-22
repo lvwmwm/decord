@@ -1,13 +1,13 @@
-// Module ID: 13868
-// Function ID: 13869
+// Module ID: 13863
+// Function ID: 13864
 // Name: CrunchyrollLinkLanding
-// Dependencies: [19, 13867, 1087, 21, 5191, 1128, 8674, 558, 576, 1505, 2131, 9516, 13869, 2]
+// Dependencies: [19, 13862, 1087, 21, 5191, 1128, 8674, 558, 576, 1505, 2131, 9516, 13864, 2]
 
-// Module 13868 (CrunchyrollLinkLanding)
+// Module 13863 (CrunchyrollLinkLanding)
 import Fragment from "Fragment" /* 21 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
-import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 13867 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13869 */;
+import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 13862 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13864 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import createStyles from "createStyles" /* 5191 */;

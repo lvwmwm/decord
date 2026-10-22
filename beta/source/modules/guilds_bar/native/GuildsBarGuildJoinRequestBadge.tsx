@@ -1,7 +1,7 @@
 // Module ID: 17446
 // Function ID: 17447
 // Name: GuildsBarGuildJoinRequestBadge
-// Dependencies: [19, 17, 21, 5191, 587, 6225, 5037, 17447, 17448, 17449, 12939, 558, 576, 5128, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 6225, 5037, 17447, 17448, 17449, 12934, 558, 576, 5128, 2]
 
 // Module 17446 (GuildsBarGuildJoinRequestBadge)
 import react_native from "react-native" /* 17 */;
@@ -11,7 +11,7 @@ import nativeDefault from "native" /* 587 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 5037 */;
 import FastImageDefault from "FastImage" /* 5128 */;
 import LegacyTokens from "LegacyTokens" /* 6225 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12939 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12934 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 17447 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 17448 */;
 import AssetRegistryDefault4 from "AssetRegistry" /* 17449 */;

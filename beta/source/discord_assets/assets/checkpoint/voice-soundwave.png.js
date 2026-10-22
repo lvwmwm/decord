@@ -1,8 +1,8 @@
-// Module ID: 12769
-// Function ID: 12770
+// Module ID: 12764
+// Function ID: 12765
 // Dependencies: [2]
 
-// Module 12769
+// Module 12764
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/voice-soundwave.png.js");

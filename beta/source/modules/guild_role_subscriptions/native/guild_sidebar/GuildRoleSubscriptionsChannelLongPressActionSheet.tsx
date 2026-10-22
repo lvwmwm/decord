@@ -1,7 +1,7 @@
 // Module ID: 17334
 // Function ID: 17335
 // Name: GuildRoleSubscriptionsChannelLongPressActionSheet
-// Dependencies: [19, 17, 2075, 21, 5191, 587, 558, 576, 1202, 13507, 1128, 7117, 17228, 8855, 10643, 7175, 2]
+// Dependencies: [19, 17, 2075, 21, 5191, 587, 558, 576, 1202, 13502, 1128, 7117, 17228, 8855, 10643, 7175, 2]
 
 // Module 17334 (GuildRoleSubscriptionsChannelLongPressActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -13,7 +13,7 @@ import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7117 */;
 import ActionSheet2 from "ActionSheet" /* 7175 */;
 import Form from "Form" /* 8855 */;
 import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10643 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13507 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13502 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 17228 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -45,7 +45,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   const onClose = guildId.onClose;
   const tmp4 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { disableColor: true, source: onClose(13507) };
+    const obj2 = { disableColor: true, source: onClose(13502) };
     const Icon = tmp(1202).Icon;
     const tmp8 = closure_5(Icon, obj2);
     cResult[0] = tmp8;

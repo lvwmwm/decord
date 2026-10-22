@@ -1,7 +1,7 @@
 // Module ID: 15666
 // Function ID: 15667
 // Name: UserProfilePrimaryGuildEditButton
-// Dependencies: [19, 2090, 8155, 21, 5191, 587, 504, 15667, 13948, 8563, 8562, 1128, 1384, 5187, 15640, 5155, 15668, 2002, 6436, 9130, 2]
+// Dependencies: [19, 2090, 8155, 21, 5191, 587, 504, 15667, 13943, 8563, 8562, 1128, 1384, 5187, 15640, 5155, 15668, 2002, 6436, 9130, 2]
 // Exports: default
 
 // Module 15666 (UserProfilePrimaryGuildEditButton)

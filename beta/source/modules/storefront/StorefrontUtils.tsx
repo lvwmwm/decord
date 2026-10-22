@@ -1053,12 +1053,12 @@ export const transformStorefrontPricesServer = function transformStorefrontPrice
       let obj = _modDef12;
       return obj.mapValues(arg0, (user_price) => {
         let obj2;
-        const f96340 = (currency) => ({ currency: currency.currency, amount: currency.amount });
+        const f96349 = (currency) => ({ currency: currency.currency, amount: currency.amount });
         let obj = {
-          userPrice: user_price.map(f96340),
+          userPrice: user_price.map(f96349),
           prices: obj2.mapValues(user_price.prices, (arg0) => {
             const obj = closure_1_1(closure_1_2[6]);
-            return obj.mapValues(arg0, (arr) => arr.map(f96340));
+            return obj.mapValues(arg0, (arr) => arr.map(f96349));
           })
         };
         user_price = user_price.user_price;

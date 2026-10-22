@@ -1,9 +1,9 @@
-// Module ID: 12728
-// Function ID: 12729
+// Module ID: 12723
+// Function ID: 12724
 // Name: DestinationFailedAlertModal
-// Dependencies: [19, 17, 2068, 2090, 5207, 4855, 1392, 1098, 21, 5191, 587, 558, 576, 5521, 10592, 1202, 5187, 504, 5057, 12729, 5405, 5405, 1128, 2]
+// Dependencies: [19, 17, 2068, 2090, 5207, 4855, 1392, 1098, 21, 5191, 587, 558, 576, 5521, 10592, 1202, 5187, 504, 5057, 12724, 5405, 5405, 1128, 2]
 
-// Module 12728 (DestinationFailedAlertModal)
+// Module 12723 (DestinationFailedAlertModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -333,8 +333,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Failed
     cResult[8] = tmp17;
     tmp15 = tmp17;
   }
-  const obj4 = { "aria-label": "", guild: stateFromStores, channel, size: channel(12729).GuildIconWithChannelTypeSizes.SMALL_32 };
-  const GuildIconWithChannelType = tmp(12729).GuildIconWithChannelType;
+  const obj4 = { "aria-label": "", guild: stateFromStores, channel, size: channel(12724).GuildIconWithChannelTypeSizes.SMALL_32 };
+  const GuildIconWithChannelType = tmp(12724).GuildIconWithChannelType;
   const tmp14 = closure_10(GuildIconWithChannelType, obj4);
   cResult[3] = channel;
   cResult[4] = stateFromStores;
@@ -355,9 +355,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Failed
     return getGuild(guild_id);
   });
   const obj2 = { style: tmp.row, children: items1 };
-  const obj3 = { "aria-label": "", guild: stateFromStores, channel, size: channel(12729).GuildIconWithChannelTypeSizes.SMALL_32 };
+  const obj3 = { "aria-label": "", guild: stateFromStores, channel, size: channel(12724).GuildIconWithChannelTypeSizes.SMALL_32 };
   const tmp3 = useChannelNameDefault(channel);
-  const GuildIconWithChannelType = channel(12729).GuildIconWithChannelType;
+  const GuildIconWithChannelType = channel(12724).GuildIconWithChannelType;
   items1 = [closure_10(GuildIconWithChannelType, obj3), ];
   const obj4 = { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: tmp3 };
   items1[1] = closure_10(channel(5187).Text, obj4);

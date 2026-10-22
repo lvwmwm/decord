@@ -55,7 +55,7 @@ let tmp2;
 const TableRow2 = tmp(6457);
 const TableRadioGroup2 = tmp2(6540);
 const ClydeIcon = tmp(10475);
-const f122835 = () => _undefined.locale;
+const f122844 = () => _undefined.locale;
 function RouteSettingSearchResult(setting) {
   let IconComponent;
   let breadcrumbs;
@@ -170,7 +170,7 @@ let closure_18 = react.memo(function RouteSetting(arg0) {
   const stackNavigation = obj.useStackNavigation();
   let obj2 = screen(preNavigationAction[13]);
   const items = [LocaleStore];
-  const stateFromStores = obj2.useStateFromStores(items, f122835);
+  const stateFromStores = obj2.useStateFromStores(items, f122844);
   preNavigationAction = undefined;
   const title = useTitle();
   if (usePreNavigationAction != null) {
@@ -444,7 +444,7 @@ let closure_22 = react.memo(function PressableSetting(arg0) {
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   const items = [LocaleStore];
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f122835);
+  const stateFromStores = obj2.useStateFromStores(items, f122844);
   let description;
   const title = useTitle();
   if (useDescription != null) {
@@ -603,7 +603,7 @@ let closure_24 = react.memo(function ToggleSetting(arg0) {
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   const items = [LocaleStore];
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f122835);
+  const stateFromStores = obj2.useStateFromStores(items, f122844);
   const title = useTitle();
   const value = useValue();
   let description;
@@ -703,7 +703,7 @@ let closure_26 = react.memo(function RadioSetting(arg0) {
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   const items = [LocaleStore];
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f122835);
+  const stateFromStores = obj2.useStateFromStores(items, f122844);
   const title = useTitle();
   const value = useValue();
   const options = useOptions();
@@ -762,7 +762,7 @@ let closure_27 = react.memo(function StaticSetting(arg0) {
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   let obj2 = trailing(504);
   const items = [LocaleStore];
-  const stateFromStores = obj2.useStateFromStores(items, f122835);
+  const stateFromStores = obj2.useStateFromStores(items, f122844);
   trailing = undefined;
   const title = useTitle();
   if (useTrailing != null) {
@@ -827,7 +827,7 @@ let closure_28 = react.memo(function VolumeSliderSetting(arg0) {
   const items = [LocaleStore];
   const tmp4 = closure_17();
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f122835);
+  const stateFromStores = obj2.useStateFromStores(items, f122844);
   const title = useTitle();
   let value;
   if (useValue != null) {
@@ -882,7 +882,7 @@ let closure_29 = react.memo(function SliderSetting(useTrailing) {
   ({ useTitle, start, end, useProps } = useTrailing);
   let obj = onSlidingComplete(num2[13]);
   const items = [c9];
-  const stateFromStores = obj.useStateFromStores(items, f122835);
+  const stateFromStores = obj.useStateFromStores(items, f122844);
   const title = useTitle();
   const props = useProps();
   onSlidingComplete = props.onSlidingComplete;

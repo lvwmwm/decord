@@ -1,7 +1,7 @@
 // Module ID: 18678
 // Function ID: 18679
 // Name: GuildSettingsModalLanding
-// Dependencies: [19, 4843, 2090, 4845, 1392, 17273, 8911, 1087, 21, 5206, 5191, 558, 576, 1128, 6457, 5145, 4850, 18679, 16003, 8913, 9365, 18681, 5137, 14308, 6542, 9252, 13222, 13770, 8489, 8895, 18682, 11643, 6393, 11621, 16658, 10054, 4913, 587, 1505, 504, 8910, 18684, 7237, 7244, 4903, 1417, 18000, 18685, 5477, 8855, 7005, 2]
+// Dependencies: [19, 4843, 2090, 4845, 1392, 17273, 8911, 1087, 21, 5206, 5191, 558, 576, 1128, 6457, 5145, 4850, 18679, 16003, 8913, 9365, 18681, 5137, 14308, 6542, 9252, 13217, 13765, 8489, 8895, 18682, 11643, 6393, 11621, 16658, 10054, 4913, 587, 1505, 504, 8910, 18684, 7237, 7244, 4903, 1417, 18000, 18685, 5477, 8855, 7005, 2]
 
 // Module 18678 (GuildSettingsModalLanding)
 import intl8 from "intl" /* 1128 */;
@@ -601,7 +601,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Expres
     }
     const _Symbol4 = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj5 = { IconComponent: pushScreen(13222).StickerIcon };
+      const obj5 = { IconComponent: pushScreen(13217).StickerIcon };
       const Icon2 = tmp(6457).TableRow.Icon;
       const tmp18 = closure_15(Icon2, obj5);
       cResult[9] = tmp18;
@@ -642,7 +642,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Expres
     }
     const _Symbol6 = Symbol;
     if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj7 = { IconComponent: pushScreen(13770).StampIcon };
+      const obj7 = { IconComponent: pushScreen(13765).StampIcon };
       const Icon3 = tmp(6457).TableRow.Icon;
       const tmp28 = closure_15(Icon3, obj7);
       cResult[13] = tmp28;
@@ -711,7 +711,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Expres
     };
     const TableRow2 = pushScreen(6457).TableRow;
     intl2 = pushScreen(1128).intl;
-    obj4 = { IconComponent: pushScreen(13222).StickerIcon };
+    obj4 = { IconComponent: pushScreen(13217).StickerIcon };
     Icon2 = pushScreen(6457).TableRow.Icon;
     items.push(closure_15(TableRow2, obj3, "stickers"));
   }
@@ -726,7 +726,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Expres
     };
     const TableRow3 = pushScreen(6457).TableRow;
     intl3 = pushScreen(1128).intl;
-    obj6 = { IconComponent: pushScreen(13770).StampIcon };
+    obj6 = { IconComponent: pushScreen(13765).StampIcon };
     Icon3 = pushScreen(6457).TableRow.Icon;
     items.push(closure_15(TableRow3, obj5, "official-messages"));
   }

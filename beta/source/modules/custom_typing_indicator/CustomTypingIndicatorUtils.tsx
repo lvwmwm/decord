@@ -1,10 +1,10 @@
-// Module ID: 12833
-// Function ID: 12834
+// Module ID: 12828
+// Function ID: 12829
 // Name: CustomTypingIndicatorUtils
 // Dependencies: [6243, 8558, 2068, 6219, 1392, 1087, 1395, 1400, 3885, 4859, 4863, 1413, 1099, 4850, 558, 576, 504, 2]
 // Exports: getCustomTypingIndicatorSuggestionMessage, getCustomTypingIndicatorSuggestionPresets, getCustomTypingIndicatorSuggestionWithNameMessage, getRandomCustomTypingIndicatorAnimation, getRandomCustomTypingIndicatorSuggestion, getSurpriseMeEmojiPool, getViewableCustomTypingIndicatorConfig, pickRandomCustomTypingIndicatorEmojis
 
-// Module 12833 (CustomTypingIndicatorUtils)
+// Module 12828 (CustomTypingIndicatorUtils)
 import Constants from "Constants" /* 1087 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
@@ -163,7 +163,7 @@ export const getSurpriseMeEmojiPool = function getSurpriseMeEmojiPool() {
   HermesBuiltin.arraySpread(items, flattenedGuildIds.flatMap((item) => {
     usableGuildEmoji = usableGuildEmoji.getUsableGuildEmoji(item);
     const found = usableGuildEmoji.filter((emoji) => {
-      obj2 = { emoji, channel: null, guildId: "Array", intention: constants.TYPING_INDICATOR, bypassPremiumEmojiEntitlement: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZl" };
+      obj2 = { emoji, channel: null, guildId: "Array", intention: constants.TYPING_INDICATOR, bypassPremiumEmojiEntitlement: null };
       obj = closure_1_1(closure_1_3[10]);
       return null == obj.getEmojiUnavailableReason(obj2);
     });

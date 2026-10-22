@@ -1,7 +1,7 @@
 // Module ID: 18390
 // Function ID: 18391
 // Name: shared/TextChannel
-// Dependencies: [19, 17, 6290, 2132, 2068, 1206, 6223, 21, 5191, 17797, 587, 558, 576, 17487, 7246, 504, 5521, 9626, 16377, 6200, 5486, 18391, 5513, 11874, 13534, 9615, 18393, 8786, 17360, 18389, 6462, 18394, 17796, 18387, 18388, 2]
+// Dependencies: [19, 17, 6290, 2132, 2068, 1206, 6223, 21, 5191, 17797, 587, 558, 576, 17487, 7246, 504, 5521, 9626, 16377, 6200, 5486, 18391, 5513, 11869, 13529, 9615, 18393, 8786, 17360, 18389, 6462, 18394, 17796, 18387, 18388, 2]
 
 // Module 18390 (shared/TextChannel)
 import react_native from "react-native" /* 17 */;
@@ -10,7 +10,7 @@ import FormConstants from "FormConstants" /* 1206 */;
 import useChannelRoleSubscriptionStatusDefault from "useChannelRoleSubscriptionStatus" /* 5513 */;
 import useChannelNameDefault from "useChannelName" /* 5521 */;
 import ReadStateConstants from "ReadStateConstants" /* 6223 */;
-import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 11874 */;
+import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 11869 */;
 import useMessagePreviewsDefault from "useMessagePreviews" /* 16377 */;
 import ChannelItemEmbeddedActivitiesDefault from "ChannelItemEmbeddedActivities" /* 17360 */;
 import renderChannelItemDefault from "renderChannelItem" /* 17796 */;
@@ -180,7 +180,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             return locale.locale;
           }
         }
-        const ChannelRowPreview = tmp(13534).ChannelRowPreview;
+        const ChannelRowPreview = tmp(13529).ChannelRowPreview;
         const tmp35 = closure_10(ChannelRowPreview, obj3);
         cResult[11] = channel;
         cResult[12] = tmp23;
@@ -475,12 +475,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp17 = arr4(18391)();
   ({ isSubscriptionGated, needSubscriptionToAccess } = arr4(5513)(channel.id));
   arr4(5513)(channel.id);
-  arr4 = tmp8(11874)(channel);
+  arr4 = tmp8(11869)(channel);
   if (null != tmp8ResultResult) {
     let result;
     if (!isChannelSpoilerGated) {
       const obj5 = { channel, message: tmp8ResultResult, color: "text-muted", muted: flag, layout: channel(9615).ChannelListLayoutTypes.COMPACT };
-      const ChannelRowPreview = tmp2(13534).ChannelRowPreview;
+      const ChannelRowPreview = tmp2(13529).ChannelRowPreview;
       result = closure_10(ChannelRowPreview, obj5);
     }
     dependencyMap = tmp22;

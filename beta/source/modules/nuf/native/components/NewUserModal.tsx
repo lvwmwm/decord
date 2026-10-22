@@ -1,7 +1,7 @@
 // Module ID: 18597
 // Function ID: 18598
 // Name: NewUserModal
-// Dependencies: [19, 17, 21, 9644, 5191, 587, 18598, 2002, 5401, 558, 576, 6965, 18596, 6190, 18595, 6484, 1384, 17120, 18599, 13367, 13355, 18600, 18606, 2]
+// Dependencies: [19, 17, 21, 9644, 5191, 587, 18598, 2002, 5401, 558, 576, 6965, 18596, 6190, 18595, 6484, 1384, 17120, 18599, 13362, 13350, 18600, 18606, 2]
 
 // Module 18597 (NewUserModal)
 import react_native from "react-native" /* 17 */;
@@ -21,7 +21,7 @@ let _require, closure_0, dependencyMap;
 let hasOwnProperty;
 let metroRequire;
 let obj2;
-const f135546 = () => closure_1_0(paths[7])(paths[6], paths.paths);
+const f135555 = () => closure_1_0(paths[7])(paths[6], paths.paths);
 let react = react_mod;
 const NativeModules = react_native.NativeModules;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -146,7 +146,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewUserModal
                   let obj = {
                     onPress() {
                       closure_0 = closure_1_4;
-                      const lazyResult = React.lazy(f135546);
+                      const lazyResult = React.lazy(f135555);
                       const obj = closure_2_0(closure_2_2[8]);
                       const obj2 = {
                         onConfirm() {
@@ -365,7 +365,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewUserModal
             onPress() {
               let paths;
               closure_0 = closure_1_4;
-              const lazyResult = React.lazy(f135546);
+              const lazyResult = React.lazy(f135555);
               const obj = closure_2_0(closure_2_2[8]);
               const obj2 = {
                 onConfirm() {

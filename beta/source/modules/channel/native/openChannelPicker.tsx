@@ -1,10 +1,10 @@
-// Module ID: 13135
-// Function ID: 13136
+// Module ID: 13130
+// Function ID: 13131
 // Name: openChannelPicker
 // Dependencies: [4843, 2090, 5155, 11667, 2002, 1128, 2]
 // Exports: default
 
-// Module 13135 (openChannelPicker)
+// Module 13130 (openChannelPicker)
 import intl2 from "intl" /* 1128 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;

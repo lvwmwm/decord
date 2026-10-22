@@ -1,7 +1,7 @@
 // Module ID: 16762
 // Function ID: 16763
 // Name: PremiumTrialOfferActionSheetContent
-// Dependencies: [19, 17, 1394, 21, 5191, 587, 558, 576, 11671, 1128, 13832, 8474, 8027, 4864, 16763, 5187, 16767, 9327, 5479, 2]
+// Dependencies: [19, 17, 1394, 21, 5191, 587, 558, 576, 11671, 1128, 13827, 8474, 8027, 4864, 16763, 5187, 16767, 9327, 5479, 2]
 
 // Module 16762 (PremiumTrialOfferActionSheetContent)
 import react_native from "react-native" /* 17 */;
@@ -15,7 +15,7 @@ import components_Button_Button from "components/Button/Button" /* 5479 */;
 import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 8027 */;
 import FolderIcon from "FolderIcon" /* 8474 */;
 import UserIcon from "UserIcon" /* 11671 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 13832 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 13827 */;
 import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 16763 */;
 import PremiumPerksListDefault from "PremiumPerksList" /* 16767 */;
 import react from "react" /* 19 */;

@@ -1,7 +1,7 @@
 // Module ID: 14312
 // Function ID: 14313
 // Name: QuestEmbed
-// Dependencies: [17, 1207, 7656, 6228, 1087, 7689, 1384, 1128, 7678, 13916, 6231, 5065, 9487, 1630, 14313, 7652, 7672, 7676, 8156, 2]
+// Dependencies: [17, 1207, 7656, 6228, 1087, 7689, 1384, 1128, 7678, 13911, 6231, 5065, 9487, 1630, 14313, 7652, 7672, 7676, 8156, 2]
 // Exports: createQuestsEmbed
 
 // Module 14312 (QuestEmbed)
@@ -19,7 +19,7 @@ import QuestTaskUtils from "QuestTaskUtils" /* 7678 */;
 import Constants2 from "Constants" /* 7689 */;
 import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8156 */;
 import AssetUtils from "AssetUtils" /* 9487 */;
-import QuestCopyHooks from "QuestCopyHooks" /* 13916 */;
+import QuestCopyHooks from "QuestCopyHooks" /* 13911 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
 import QuestStore from "QuestStore" /* 7656 */;
 import QuestConstants from "QuestConstants" /* 6228 */;

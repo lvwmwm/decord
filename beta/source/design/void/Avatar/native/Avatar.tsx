@@ -1,7 +1,7 @@
 // Module ID: 15194
 // Function ID: 15195
 // Name: Avatar
-// Dependencies: [19, 17, 1087, 1203, 21, 5191, 587, 14083, 15183, 15184, 9308, 8555, 558, 576, 9307, 15185, 5481, 11307, 11308, 15195, 2]
+// Dependencies: [19, 17, 1087, 1203, 21, 5191, 587, 14078, 15183, 15184, 9308, 8555, 558, 576, 9307, 15185, 5481, 11307, 11308, 15195, 2]
 
 // Module 15194 (Avatar)
 import react_native from "react-native" /* 17 */;
@@ -13,7 +13,7 @@ import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 93
 import ClipView from "ClipView" /* 9308 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11307 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 11308 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14083 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14078 */;
 import Status_StatusUtils from "Status/StatusUtils" /* 15183 */;
 import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15184 */;
 import Status from "Status" /* 15185 */;

@@ -1,7 +1,7 @@
 // Module ID: 14299
 // Function ID: 14300
 // Name: GroupDMInvite
-// Dependencies: [2068, 4855, 1392, 7689, 8156, 9908, 1128, 14085, 1420, 5521, 2]
+// Dependencies: [2068, 4855, 1392, 7689, 8156, 9908, 1128, 14080, 1420, 5521, 2]
 // Exports: createGroupDMInvite
 
 // Module 14299 (GroupDMInvite)
@@ -72,7 +72,7 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, th
   }
   let channelIconSource = null;
   if (null != channel) {
-    const tmp8Result = tmp8(14085);
+    const tmp8Result = tmp8(14080);
     channelIconSource = tmp8Result.getChannelIconSource(channel);
   }
   let uri = null;

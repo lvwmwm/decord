@@ -1,16 +1,16 @@
-// Module ID: 12775
-// Function ID: 12776
+// Module ID: 12770
+// Function ID: 12771
 // Name: CheckpointRankTag
-// Dependencies: [32, 19, 17, 5537, 21, 5191, 587, 558, 576, 7843, 12754, 5187, 2]
+// Dependencies: [32, 19, 17, 5537, 21, 5191, 587, 558, 576, 7843, 12749, 5187, 2]
 
-// Module 12775 (CheckpointRankTag)
+// Module 12770 (CheckpointRankTag)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import CheckpointConstants from "CheckpointConstants" /* 5537 */;
 import inlineStyles from "inlineStyles" /* 7843 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 12754 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 12749 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

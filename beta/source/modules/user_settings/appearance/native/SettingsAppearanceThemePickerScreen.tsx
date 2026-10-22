@@ -1,7 +1,7 @@
 // Module ID: 16326
 // Function ID: 16327
 // Name: SettingsAppearanceThemePickerScreen
-// Dependencies: [32, 19, 17, 5032, 1253, 1208, 1207, 1209, 1210, 1098, 21, 5191, 587, 1384, 1128, 16327, 13625, 16329, 558, 576, 1499, 573, 5124, 1211, 1256, 4920, 16219, 6447, 1506, 7130, 7155, 6487, 8805, 4945, 5063, 5031, 5192, 5195, 4922, 9606, 5187, 6462, 6484, 16220, 16331, 9051, 16337, 16349, 16358, 7092, 10669, 2]
+// Dependencies: [32, 19, 17, 5032, 1253, 1208, 1207, 1209, 1210, 1098, 21, 5191, 587, 1384, 1128, 16327, 13620, 16329, 558, 576, 1499, 573, 5124, 1211, 1256, 4920, 16219, 6447, 1506, 7130, 7155, 6487, 8805, 4945, 5063, 5031, 5192, 5195, 4922, 9606, 5187, 6462, 6484, 16220, 16331, 9051, 16337, 16349, 16358, 7092, 10669, 2]
 
 // Module 16326 (SettingsAppearanceThemePickerScreen)
 import react_native from "react-native" /* 17 */;
@@ -16,7 +16,7 @@ import Text_Text from "Text/Text" /* 5187 */;
 import timing from "timing" /* 5192 */;
 import timingPresets from "timingPresets" /* 5195 */;
 import Pressables from "Pressables" /* 6462 */;
-import ThemeDarkIcon from "ThemeDarkIcon" /* 13625 */;
+import ThemeDarkIcon from "ThemeDarkIcon" /* 13620 */;
 import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 16219 */;
 import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 16220 */;
 import ThemeLightIcon from "ThemeLightIcon" /* 16327 */;

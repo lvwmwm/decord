@@ -1,7 +1,7 @@
 // Module ID: 17355
 // Function ID: 17356
 // Name: TextChannel
-// Dependencies: [19, 17, 2067, 2120, 2068, 4845, 6291, 6222, 11900, 21, 5191, 587, 17259, 8475, 8431, 13039, 558, 576, 5513, 504, 7290, 13632, 5202, 1126, 10595, 17258, 8786, 5521, 5187, 13040, 8923, 17356, 17357, 8817, 6439, 2]
+// Dependencies: [19, 17, 2067, 2120, 2068, 4845, 6291, 6222, 11895, 21, 5191, 587, 17259, 8475, 8431, 13034, 558, 576, 5513, 504, 7290, 13627, 5202, 1126, 10595, 17258, 8786, 5521, 5187, 13035, 8923, 17356, 17357, 8817, 6439, 2]
 
 // Module 17355 (TextChannel)
 import react_native from "react-native" /* 17 */;
@@ -11,7 +11,7 @@ import transitionToChannel2 from "transitionToChannel" /* 5202 */;
 import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5513 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7290 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10595 */;
-import preloadChannelAppFrame from "preloadChannelAppFrame" /* 13632 */;
+import preloadChannelAppFrame from "preloadChannelAppFrame" /* 13627 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
 import GatedChannelStore from "GatedChannelStore" /* 2120 */;
@@ -19,7 +19,7 @@ import ChannelStore from "ChannelStore" /* 2068 */;
 import PermissionStore from "PermissionStore" /* 4845 */;
 import ReadStateStore from "ReadStateStore" /* 6291 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6222 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11900 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11895 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,7 +1,7 @@
 // Module ID: 17668
 // Function ID: 17669
 // Name: GuildOpenNotificationNudge
-// Dependencies: [32, 19, 2128, 2090, 5034, 6222, 13075, 13076, 1087, 21, 558, 576, 504, 1128, 17669, 16544, 13077, 7072, 5052, 7376, 2052, 13078, 5155, 17668, 2002, 2]
+// Dependencies: [32, 19, 2128, 2090, 5034, 6222, 13070, 13071, 1087, 21, 558, 576, 504, 1128, 17669, 16544, 13072, 7072, 5052, 7376, 2052, 13073, 5155, 17668, 2002, 2]
 // Exports: useGuildOpenNudge
 
 // Module 17668 (GuildOpenNotificationNudge)
@@ -9,8 +9,8 @@ import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
 import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7072 */;
-import PushNotificationPermissionStore2 from "PushNotificationPermissionStore" /* 13075 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13078 */;
+import PushNotificationPermissionStore2 from "PushNotificationPermissionStore" /* 13070 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13073 */;
 import NotificationNudgeBottomSheetDefault from "NotificationNudgeBottomSheet" /* 17669 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -18,7 +18,7 @@ import GuildMemberStore from "GuildMemberStore" /* 2128 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6222 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13076 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13071 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -156,7 +156,7 @@ export const useGuildOpenNudge = function useGuildOpenNudge() {
   });
   let obj2 = stateFromStores3(16544);
   const inHoldout = obj2.useConfig({ location: "useGuildOpenNudge" }).inHoldout;
-  let obj3 = stateFromStores(13077);
+  let obj3 = stateFromStores(13072);
   const canSeePushNotificationNudge = obj3.useCanSeePushNotificationNudge();
   const items1 = [UserGuildSettingsStore];
   const obj4 = stateFromStores(504);

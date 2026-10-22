@@ -1,15 +1,15 @@
 // Module ID: 18124
 // Function ID: 18125
 // Name: AppComponents
-// Dependencies: [21, 11847, 1384, 5072, 17666, 18059, 5087, 18078, 13510, 15047, 5405, 18125, 4924, 18132, 18140, 18173, 18182, 18361, 2]
+// Dependencies: [21, 11842, 1384, 5072, 17666, 18059, 5087, 18078, 13505, 15047, 5405, 18125, 4924, 18132, 18140, 18173, 18182, 18361, 2]
 
 // Module 18124 (AppComponents)
 import AccessibilityAnnouncerLiveRegion from "AccessibilityAnnouncerLiveRegion" /* 4924 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5072 */;
 import PortalKeyboard from "PortalKeyboard" /* 5087 */;
 import AlertModal from "AlertModal" /* 5405 */;
-import PortalKeyboardRenderer from "PortalKeyboardRenderer" /* 11847 */;
-import common_NotificationsDefault from "common/Notifications" /* 13510 */;
+import PortalKeyboardRenderer from "PortalKeyboardRenderer" /* 11842 */;
+import common_NotificationsDefault from "common/Notifications" /* 13505 */;
 import ContextMenuContainer from "ContextMenuContainer" /* 15047 */;
 import MainShared from "MainShared" /* 18059 */;
 import MainViewTooltipActionSheetsV2Default from "MainViewTooltipActionSheetsV2" /* 18078 */;

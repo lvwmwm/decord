@@ -1,7 +1,7 @@
 // Module ID: 17999
 // Function ID: 18000
 // Name: IntegrationsSettingsEditWebhook
-// Dependencies: [19, 4843, 4845, 4855, 1392, 1087, 21, 5191, 587, 4922, 1384, 9606, 6478, 9599, 1128, 17992, 13135, 1297, 7162, 5400, 5498, 5187, 8855, 5477, 18000, 1417, 6563, 6542, 6457, 5521, 1202, 8431, 558, 576, 1505, 7005, 2]
+// Dependencies: [19, 4843, 4845, 4855, 1392, 1087, 21, 5191, 587, 4922, 1384, 9606, 6478, 9599, 1128, 17992, 13130, 1297, 7162, 5400, 5498, 5187, 8855, 5477, 18000, 1417, 6563, 6542, 6457, 5521, 1202, 8431, 558, 576, 1505, 7005, 2]
 
 // Module 17999 (IntegrationsSettingsEditWebhook)
 import react2 from "react" /* 576 */;
@@ -17,7 +17,7 @@ import AlertDefault from "Alert" /* 5498 */;
 import ClipboardUtils from "ClipboardUtils" /* 7162 */;
 import HeaderShared from "HeaderShared" /* 9599 */;
 import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 9606 */;
-import openChannelPickerDefault from "openChannelPicker" /* 13135 */;
+import openChannelPickerDefault from "openChannelPicker" /* 13130 */;
 import WebhooksActionCreatorsDefault from "WebhooksActionCreators" /* 17992 */;
 import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4845 */;
@@ -240,7 +240,7 @@ class EditWebhook extends PureComponent {
                 const obj = { navigation, type: "back" };
                 return unpackModuleId(PressableNavigatorModalIconDefault, obj);
               },
-          headerBackVisible: 83740
+          headerBackVisible: null
         };
         navigation.setOptions(obj3);
       }

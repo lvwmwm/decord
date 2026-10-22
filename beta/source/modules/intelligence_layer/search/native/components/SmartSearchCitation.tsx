@@ -1,7 +1,7 @@
 // Module ID: 17827
 // Function ID: 17828
 // Name: SmartSearchCitation
-// Dependencies: [5, 19, 9614, 21, 558, 576, 17777, 13012, 13010, 17828, 17808, 2]
+// Dependencies: [5, 19, 9614, 21, 558, 576, 17777, 13007, 13005, 17828, 17808, 2]
 
 // Module 17827 (SmartSearchCitation)
 import Fragment from "Fragment" /* 21 */;

@@ -1,7 +1,7 @@
 // Module ID: 18554
 // Function ID: 18555
 // Name: MessageCodedLinkManager
-// Dependencies: [5, 7446, 2068, 5173, 5172, 5177, 18555, 8770, 7304, 14314, 18562, 18564, 11888, 7085, 18567, 2]
+// Dependencies: [5, 7446, 2068, 5173, 5172, 5177, 18555, 8770, 7304, 14314, 18562, 18564, 11883, 7085, 18567, 2]
 
 // Module 18554 (MessageCodedLinkManager)
 import findCodedLinksDefault from "findCodedLinks" /* 5172 */;
@@ -19,7 +19,7 @@ let tmp;
 let tmp2;
 let tmp3;
 function resolveMessageCodedLinks(content) {
-  const f135446 = (item) => {
+  const f135455 = (item) => {
     let code;
     let type;
     ({ type, code } = item);
@@ -202,7 +202,7 @@ function resolveMessageCodedLinks(content) {
     tmp2 = 0 !== arr.length;
   }
   if (tmp2) {
-    let item = arr.forEach(f135446);
+    let item = arr.forEach(f135455);
   }
   const message_snapshots = content.message_snapshots;
   if (message_snapshots != null) {
@@ -213,7 +213,7 @@ function resolveMessageCodedLinks(content) {
         tmp = 0 !== arr.length;
       }
       if (tmp) {
-        const item = arr.forEach(f135446);
+        const item = arr.forEach(f135455);
       }
     });
   }

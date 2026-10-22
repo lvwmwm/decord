@@ -1,10 +1,10 @@
-// Module ID: 13880
-// Function ID: 13881
+// Module ID: 13875
+// Function ID: 13876
 // Name: AppStoreOverlayTelemetryManager
 // Dependencies: [1087, 7085, 1384, 1107, 2]
 // Exports: clearAppStoreOverlayOpen, setAppStoreOverlayOpen
 
-// Module 13880 (AppStoreOverlayTelemetryManager)
+// Module 13875 (AppStoreOverlayTelemetryManager)
 import Constants from "Constants" /* 1087 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;

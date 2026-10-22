@@ -1,14 +1,14 @@
 // Module ID: 14825
 // Function ID: 14826
 // Name: getApplicationIdForActivity
-// Dependencies: [14320, 14826, 14827, 2026, 10555, 8658, 14057, 2]
+// Dependencies: [14320, 14826, 14827, 2026, 10555, 8658, 14052, 2]
 // Exports: default
 
 // Module 14825 (getApplicationIdForActivity)
 import Constants from "Constants" /* 2026 */;
 import isStreamingDefault from "isStreaming" /* 8658 */;
 import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10555 */;
-import isOnXboxDefault from "isOnXbox" /* 14057 */;
+import isOnXboxDefault from "isOnXbox" /* 14052 */;
 import SpotifyApplicationRecord from "SpotifyApplicationRecord" /* 14320 */;
 import TwitchApplicationRecord from "TwitchApplicationRecord" /* 14826 */;
 import XboxApplicationRecord from "XboxApplicationRecord" /* 14827 */;

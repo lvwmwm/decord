@@ -1,7 +1,7 @@
 // Module ID: 14882
 // Function ID: 14883
 // Name: QRScannerModal
-// Dependencies: [32, 19, 17, 1087, 7526, 21, 1384, 14883, 558, 576, 587, 7003, 1633, 1386, 14857, 6190, 14872, 2002, 7370, 12664, 4901, 5400, 1128, 8946, 7055, 1202, 2]
+// Dependencies: [32, 19, 17, 1087, 7526, 21, 1384, 14883, 558, 576, 587, 7003, 1633, 1386, 14857, 6190, 14872, 2002, 7370, 12659, 4901, 5400, 1128, 8946, 7055, 1202, 2]
 // Exports: default
 
 // Module 14882 (QRScannerModal)
@@ -18,7 +18,7 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
 import openUserSettings from "openUserSettings" /* 7370 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 7526 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 8946 */;
-import FamilyCenterNativeUtils from "FamilyCenterNativeUtils" /* 12664 */;
+import FamilyCenterNativeUtils from "FamilyCenterNativeUtils" /* 12659 */;
 import QRLoginUtils from "QRLoginUtils" /* 14857 */;
 import QRScannerNativeComponentDefault from "QRScannerNativeComponent" /* 14883 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

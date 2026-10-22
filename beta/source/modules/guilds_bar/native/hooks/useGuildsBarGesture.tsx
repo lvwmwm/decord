@@ -1,7 +1,7 @@
 // Module ID: 17431
 // Function ID: 17432
 // Name: useGuildsBarGesture
-// Dependencies: [5, 19, 17, 2090, 6219, 17432, 17429, 4945, 551, 5156, 5065, 12, 1257, 1128, 7038, 17152, 4913, 587, 4828, 11911, 1274, 6377, 5360, 9663, 1384, 1633, 5462, 17433, 17434, 9663, 16141, 6612, 2]
+// Dependencies: [5, 19, 17, 2090, 6219, 17432, 17429, 4945, 551, 5156, 5065, 12, 1257, 1128, 7038, 17152, 4913, 587, 4828, 11906, 1274, 6377, 5360, 9663, 1384, 1633, 5462, 17433, 17434, 9663, 16141, 6612, 2]
 // Exports: default
 
 // Module 17431 (useGuildsBarGesture)
@@ -16,7 +16,7 @@ import SortedGuildStore2 from "SortedGuildStore" /* 6219 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6612 */;
 import FastList from "FastList" /* 7038 */;
 import ContextMenuState from "ContextMenuState" /* 9663 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11911 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11906 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2090 */;

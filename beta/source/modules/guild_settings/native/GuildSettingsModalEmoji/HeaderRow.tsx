@@ -1,7 +1,7 @@
 // Module ID: 18765
 // Function ID: 18766
 // Name: HeaderRow
-// Dependencies: [12901, 5, 32, 19, 17, 18759, 1087, 1395, 21, 5191, 587, 8848, 9845, 1267, 1128, 1281, 8035, 5479, 5187, 558, 576, 504, 2]
+// Dependencies: [12896, 5, 32, 19, 17, 18759, 1087, 1395, 21, 5191, 587, 8848, 9845, 1267, 1128, 1281, 8035, 5479, 5187, 558, 576, 504, 2]
 
 // Module 18765 (HeaderRow)
 import react_native from "react-native" /* 17 */;
@@ -9,7 +9,7 @@ import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import Text_Text from "Text/Text" /* 5187 */;
-import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 12901 */;
+import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 12896 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

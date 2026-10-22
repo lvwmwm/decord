@@ -1,7 +1,7 @@
 // Module ID: 16620
 // Function ID: 16621
 // Name: CopyClientInfoSetting
-// Dependencies: [10808, 21, 1383, 5155, 12519, 7162, 4903, 558, 576, 1128, 11113, 7171, 7117, 1384, 7175, 5141, 5167, 11084, 6393, 2044, 2]
+// Dependencies: [10808, 21, 1383, 5155, 12514, 7162, 4903, 558, 576, 1128, 11113, 7171, 7117, 1384, 7175, 5141, 5167, 11084, 6393, 2044, 2]
 // Exports: getClientInfoString
 
 // Module 16620 (CopyClientInfoSetting)
@@ -14,7 +14,7 @@ import DeviceUtils from "DeviceUtils" /* 5167 */;
 import ClipboardListIcon from "ClipboardListIcon" /* 6393 */;
 import ClipboardUtils from "ClipboardUtils" /* 7162 */;
 import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 11113 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12519 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12514 */;
 import BuildOverrideStore from "BuildOverrideStore" /* 10808 */;
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 1383 */;

@@ -1,9 +1,9 @@
-// Module ID: 13040
-// Function ID: 13041
+// Module ID: 13035
+// Function ID: 13036
 // Name: StaticChannelIndicator
 // Dependencies: [17, 6223, 21, 5191, 587, 558, 576, 4913, 2]
 
-// Module 13040 (StaticChannelIndicator)
+// Module 13035 (StaticChannelIndicator)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

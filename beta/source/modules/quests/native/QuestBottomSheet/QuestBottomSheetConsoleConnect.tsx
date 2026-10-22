@@ -1,7 +1,7 @@
 // Module ID: 16205
 // Function ID: 16206
 // Name: QuestBottomSheetConsoleConnect
-// Dependencies: [109, 19, 17, 1087, 21, 587, 5191, 9473, 13915, 9504, 9506, 5155, 7370, 16163, 2002, 9476, 9477, 9480, 6235, 7681, 6231, 9507, 558, 576, 6457, 1128, 6468, 6542, 9388, 9197, 6459, 2]
+// Dependencies: [109, 19, 17, 1087, 21, 587, 5191, 9473, 13910, 9504, 9506, 5155, 7370, 16163, 2002, 9476, 9477, 9480, 6235, 7681, 6231, 9507, 558, 576, 6457, 1128, 6468, 6542, 9388, 9197, 6459, 2]
 // Exports: default
 
 // Module 16205 (QuestBottomSheetConsoleConnect)
@@ -321,7 +321,7 @@ export default function QuestBottomSheetConsoleConnect(quest) {
   }
   let obj = quest(9473);
   const xboxAndPlaystationAccounts = obj.useConnectedAccounts().xboxAndPlaystationAccounts;
-  let obj2 = quest(13915);
+  let obj2 = quest(13910);
   let closure_4 = obj2.useTrackQuestContentClickedWithImpression();
   let obj3 = quest(9504);
   react = obj3.useGetQuestImpressionId();

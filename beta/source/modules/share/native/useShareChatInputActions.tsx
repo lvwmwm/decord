@@ -1,9 +1,9 @@
-// Module ID: 12714
-// Function ID: 12715
+// Module ID: 12709
+// Function ID: 12710
 // Name: useShareChatInputActions
 // Dependencies: [32, 19, 1395, 558, 576, 9726, 2]
 
-// Module 12714 (useShareChatInputActions)
+// Module 12709 (useShareChatInputActions)
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9726 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

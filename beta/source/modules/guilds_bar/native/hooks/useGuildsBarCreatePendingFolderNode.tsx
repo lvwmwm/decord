@@ -1,11 +1,11 @@
 // Module ID: 17500
 // Function ID: 17501
 // Name: useGuildsBarCreatePendingFolderNode
-// Dependencies: [19, 5035, 6220, 558, 576, 504, 12523, 17501, 6396, 6224, 1128, 2]
+// Dependencies: [19, 5035, 6220, 558, 576, 504, 12518, 17501, 6396, 6224, 1128, 2]
 
 // Module 17500 (useGuildsBarCreatePendingFolderNode)
 import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6396 */;
-import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 12523 */;
+import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 12518 */;
 import react from "react" /* 19 */;
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5035 */;
 import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6220 */;

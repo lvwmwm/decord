@@ -1,7 +1,7 @@
 // Module ID: 18074
 // Function ID: 18075
 // Name: SoundPlayer
-// Dependencies: [19, 2067, 5540, 15489, 6293, 6295, 5210, 2072, 6153, 502, 2068, 2090, 2014, 13512, 5209, 2119, 6203, 5212, 5215, 1087, 6296, 21, 558, 576, 504, 11372, 17364, 5516, 6156, 18075, 4834, 1388, 6313, 11032, 7222, 2]
+// Dependencies: [19, 2067, 5540, 15489, 6293, 6295, 5210, 2072, 6153, 502, 2068, 2090, 2014, 13507, 5209, 2119, 6203, 5212, 5215, 1087, 6296, 21, 558, 576, 504, 11372, 17364, 5516, 6156, 18075, 4834, 1388, 6313, 11032, 7222, 2]
 
 // Module 18074 (SoundPlayer)
 import react2 from "react" /* 576 */;
@@ -23,7 +23,7 @@ import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 13512 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 13507 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import SpeakingStore from "SpeakingStore" /* 6203 */;

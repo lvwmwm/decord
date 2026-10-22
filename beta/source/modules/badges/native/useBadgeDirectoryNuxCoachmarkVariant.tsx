@@ -1,12 +1,12 @@
-// Module ID: 14119
-// Function ID: 14120
+// Module ID: 14114
+// Function ID: 14115
 // Name: useBadgeDirectoryNuxCoachmarkVariant
-// Dependencies: [32, 19, 558, 576, 10899, 14120, 2]
+// Dependencies: [32, 19, 558, 576, 10899, 14115, 2]
 
-// Module 14119 (useBadgeDirectoryNuxCoachmarkVariant)
+// Module 14114 (useBadgeDirectoryNuxCoachmarkVariant)
 import react2 from "react" /* 576 */;
 import useCanOpenBadgeDirectoryFromProfile from "useCanOpenBadgeDirectoryFromProfile" /* 10899 */;
-import useBadgeDirectoryNuxPopoverVariant from "useBadgeDirectoryNuxPopoverVariant" /* 14120 */;
+import useBadgeDirectoryNuxPopoverVariant from "useBadgeDirectoryNuxPopoverVariant" /* 14115 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

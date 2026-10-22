@@ -1,7 +1,7 @@
 // Module ID: 18702
 // Function ID: 18703
 // Name: GuildSettingsAutomodRuleStore
-// Dependencies: [5, 1087, 1128, 1269, 12, 1388, 1274, 18703, 18708, 18704, 8149, 18701, 12603, 5891, 4828, 2]
+// Dependencies: [5, 1087, 1128, 1269, 12, 1388, 1274, 18703, 18708, 18704, 8149, 18701, 12598, 5891, 4828, 2]
 // Exports: useAutomodEditingRuleActions, useAutomodEditingRuleState
 
 // Module 18702 (GuildSettingsAutomodRuleStore)

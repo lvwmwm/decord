@@ -1,7 +1,7 @@
 // Module ID: 18044
 // Function ID: 18045
 // Name: MessageRequestsPreviewScreen
-// Dependencies: [19, 6291, 1087, 21, 558, 576, 13116, 9618, 18045, 10671, 13509, 2]
+// Dependencies: [19, 6291, 1087, 21, 558, 576, 13111, 9618, 18045, 10671, 13504, 2]
 
 // Module 18044 (MessageRequestsPreviewScreen)
 import Fragment from "Fragment" /* 21 */;
@@ -25,7 +25,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReq
   channelId = route.route.params.channelId;
   let obj2 = react;
   const ref = react.useRef(null);
-  const obj3 = channelId(13116);
+  const obj3 = channelId(13111);
   const isMessageRequestRestrictedViewer = obj3.useIsMessageRequestRestrictedViewer();
   if (cResult[0] !== channelId) {
     const fn = function l() {
@@ -56,7 +56,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReq
       }
       return tmp14;
     }
-    const tmp17 = jsx(tmp(13509).ChannelContainer, { guildId: ME, channelId, children: tmp9 });
+    const tmp17 = jsx(tmp(13504).ChannelContainer, { guildId: ME, channelId, children: tmp9 });
     cResult[6] = channelId;
     cResult[7] = tmp9;
     cResult[8] = tmp17;
@@ -77,7 +77,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReq
   let tmp5Result;
   const channelId = route.route.params.channelId;
   const ref = react.useRef(null);
-  let obj = channelId(13116);
+  let obj = channelId(13111);
   const items = [channelId];
   const isMessageRequestRestrictedViewer = obj.useIsMessageRequestRestrictedViewer();
   const effect = react.useEffect(() => {
@@ -85,7 +85,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReq
     const obj2 = { channelId, messageId: ReadStateStore.lastMessageId(channelId) };
     const messages = obj.fetchMessages(obj2);
   }, items);
-  const ChannelContainer = channelId(13509).ChannelContainer;
+  const ChannelContainer = channelId(13504).ChannelContainer;
   if (isMessageRequestRestrictedViewer) {
     const obj3 = { channelId };
     tmp5Result = tmp5(tmp7(18045), obj3);

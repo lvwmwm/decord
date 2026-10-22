@@ -1,14 +1,14 @@
-// Module ID: 14095
-// Function ID: 14096
+// Module ID: 14090
+// Function ID: 14091
 // Name: useUserProfileActivity
-// Dependencies: [19, 9288, 2014, 5207, 5216, 558, 576, 504, 10540, 14096, 8544, 8733, 8729, 2]
+// Dependencies: [19, 9288, 2014, 5207, 5216, 558, 576, 504, 10540, 14091, 8544, 8733, 8729, 2]
 
-// Module 14095 (useUserProfileActivity)
+// Module 14090 (useUserProfileActivity)
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 5216 */;
 import utils from "utils" /* 8544 */;
 import ContentInventoryTypes from "ContentInventoryTypes" /* 8733 */;
-import UserProfileStackedActivityCardUtils from "UserProfileStackedActivityCardUtils" /* 14096 */;
+import UserProfileStackedActivityCardUtils from "UserProfileStackedActivityCardUtils" /* 14091 */;
 import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9288 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import PresenceStore from "PresenceStore" /* 5207 */;
@@ -194,7 +194,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfi
       }
     }
     found = arr5.filter((extra) => {
-      const f148282 = (item) => {
+      const f148285 = (item) => {
         let result = null != item;
         if (result) {
           const obj = closure_2_0(closure_2_2[12]);
@@ -210,8 +210,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfi
         let result;
         const tmpResult = ContentInventoryTypes;
         if (tmpResult.isListenedSessionEntry(extra)) {
-          result = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f148282);
-          const tmp7 = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f148282);
+          result = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f148285);
+          const tmp7 = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f148285);
         } else {
           const tmpResult3 = ContentInventoryTypes;
           if (tmpResult3.isWatchedMediaEntry(extra)) {
@@ -277,7 +277,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfi
     if (stateFromStores2 != null) {
       const entries = stateFromStores2.entries;
       found = entries.filter((extra) => {
-        const f157704 = (item) => {
+        const f157711 = (item) => {
           let result = null != item;
           if (result) {
             const obj = userProfileLiveActivities(closure_2_2[12]);
@@ -293,8 +293,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfi
           let result;
           const tmpResult = closure_2_0(stateFromStores2[11]);
           if (tmpResult.isListenedSessionEntry(extra)) {
-            result = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f157704);
-            const tmp7 = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f157704);
+            result = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f157711);
+            const tmp7 = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f157711);
           } else {
             const tmpResult3 = closure_2_0(stateFromStores2[11]);
             if (tmpResult3.isWatchedMediaEntry(extra)) {

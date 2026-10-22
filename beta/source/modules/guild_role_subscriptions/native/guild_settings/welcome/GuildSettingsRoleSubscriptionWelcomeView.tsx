@@ -1,7 +1,7 @@
 // Module ID: 18905
 // Function ID: 18906
 // Name: GuildSettingsRoleSubscriptionWelcomeView
-// Dependencies: [32, 19, 17, 16263, 1087, 18906, 21, 5191, 587, 558, 576, 12081, 1128, 18907, 5187, 18908, 1505, 5155, 18910, 2002, 18910, 8855, 5479, 1202, 5480, 11305, 18918, 18922, 18931, 18934, 18939, 18940, 1506, 1275, 9263, 6536, 18904, 4903, 5128, 18941, 7092, 2]
+// Dependencies: [32, 19, 17, 16263, 1087, 18906, 21, 5191, 587, 558, 576, 12076, 1128, 18907, 5187, 18908, 1505, 5155, 18910, 2002, 18910, 8855, 5479, 1202, 5480, 11305, 18918, 18922, 18931, 18934, 18939, 18940, 1506, 1275, 9263, 6536, 18904, 4903, 5128, 18941, 7092, 2]
 
 // Module 18905 (GuildSettingsRoleSubscriptionWelcomeView)
 import react2 from "react" /* 576 */;
@@ -12,7 +12,7 @@ import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import NavigatorConstants from "NavigatorConstants" /* 6536 */;
-import ErrorBlockDefault from "ErrorBlock" /* 12081 */;
+import ErrorBlockDefault from "ErrorBlock" /* 12076 */;
 import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16263 */;
 import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 18906 */;
 import WarningNoticeDefault from "WarningNotice" /* 18907 */;

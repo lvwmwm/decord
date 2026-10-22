@@ -1,7 +1,7 @@
 // Module ID: 18227
 // Function ID: 18228
 // Name: VoicePanelTitleButton
-// Dependencies: [19, 17, 5540, 2073, 2068, 5214, 21, 5191, 558, 576, 13956, 1128, 5480, 7111, 504, 5521, 9082, 8817, 587, 10679, 5509, 18228, 8436, 18165, 5477, 18201, 8440, 8668, 1108, 18200, 18229, 2]
+// Dependencies: [19, 17, 5540, 2073, 2068, 5214, 21, 5191, 558, 576, 13951, 1128, 5480, 7111, 504, 5521, 9082, 8817, 587, 10679, 5509, 18228, 8436, 18165, 5477, 18201, 8440, 8668, 1108, 18200, 18229, 2]
 
 // Module 18227 (VoicePanelTitleButton)
 import react_native from "react-native" /* 17 */;
@@ -16,7 +16,7 @@ import AssetRegistryDefault from "AssetRegistry" /* 7111 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 8436 */;
 import native from "native" /* 8817 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10679 */;
-import ShieldLockIcon2 from "ShieldLockIcon" /* 13956 */;
+import ShieldLockIcon2 from "ShieldLockIcon" /* 13951 */;
 import QuestActivityButtonDefault from "QuestActivityButton" /* 18165 */;
 import VoicePanelHeaderUserState from "VoicePanelHeaderUserState" /* 18201 */;
 import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 18229 */;
@@ -51,7 +51,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   const tmp4 = closure_11();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", accessibilityLabel: intl.string(intl3.t.VHXh8a) };
-    const ShieldLockIcon = tmp(13956).ShieldLockIcon;
+    const ShieldLockIcon = tmp(13951).ShieldLockIcon;
     intl = tmp(1128).intl;
     const tmp8 = React4(ShieldLockIcon, obj2);
     const obj3 = { source: AssetRegistryDefault };

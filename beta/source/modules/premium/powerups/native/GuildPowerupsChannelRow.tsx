@@ -1,7 +1,7 @@
 // Module ID: 17347
 // Function ID: 17348
 // Name: GuildPowerupsChannelRow
-// Dependencies: [19, 17, 11900, 21, 558, 576, 13186, 6567, 587, 1202, 5191, 17299, 17348, 7125, 13182, 13199, 13039, 13170, 7155, 1128, 2621, 17349, 12941, 7124, 2]
+// Dependencies: [19, 17, 11895, 21, 558, 576, 13181, 6567, 587, 1202, 5191, 17299, 17348, 7125, 13177, 13194, 13034, 13165, 7155, 1128, 2621, 17349, 12936, 7124, 2]
 
 // Module 17347 (GuildPowerupsChannelRow)
 import react_native from "react-native" /* 17 */;
@@ -9,9 +9,9 @@ import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7155 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11900 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 13170 */;
-import GuildPowerupsNotification from "GuildPowerupsNotification" /* 13186 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11895 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 13165 */;
+import GuildPowerupsNotification from "GuildPowerupsNotification" /* 13181 */;
 import useGuildPowerupsCoachmarkDefault from "useGuildPowerupsCoachmark" /* 17299 */;
 import SidebarCoachmarkOverlay from "SidebarCoachmarkOverlay" /* 17348 */;
 import react from "react" /* 19 */;
@@ -169,9 +169,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
   guildId = guildId.guildId;
   const tmp4 = closure_8();
   const ref = react.useRef(null);
-  const tmp7 = dismissNewBadgeIfShown(13182)(guildId);
+  const tmp7 = dismissNewBadgeIfShown(13177)(guildId);
   let indicator;
-  const tmp8 = dismissNewBadgeIfShown(13199);
+  const tmp8 = dismissNewBadgeIfShown(13194);
   if (tmp7 != null) {
     indicator = tmp7.indicator;
   }
@@ -189,7 +189,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
   if (tmp7 != null) {
     showUnread = tmp7.showUnread;
   }
-  const ChannelModes = tmp(13039).ChannelModes;
+  const ChannelModes = tmp(13034).ChannelModes;
   const tmp15 = true === showUnread ? ChannelModes.UNREAD_IMPORTANT : ChannelModes.DEFAULT;
   if (cResult[0] === dismissNewBadgeIfShown) {
     let tmp16;
@@ -236,9 +236,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
       }
       if (cResult[9] !== tmp15) {
         const obj3 = { name: tmp26, mode: tmp15 };
-        const tmp31 = closure_5(guildId(13039).BaseChannelName, obj3);
+        const tmp31 = closure_5(guildId(13034).BaseChannelName, obj3);
         const obj4 = { mode: tmp15, IconComponent: guildId(17349).BoostTier2Icon };
-        const BaseChannelIcon = tmp(13039).BaseChannelIcon;
+        const BaseChannelIcon = tmp(13034).BaseChannelIcon;
         const tmp32 = closure_5(BaseChannelIcon, obj4);
         cResult[9] = tmp15;
         cResult[10] = tmp31;
@@ -292,7 +292,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
           }
         }
         const obj7 = { onPress: tmp16, style: container, accessible: true, mode: tmp15, unread: true === showUnread, accessibilityLabel: tmp23, accessibilityState: tmp24, name: tmp28, icon: tmp29, channelInfo: tmp35 };
-        const tmp43 = closure_5(dismissNewBadgeIfShown(13039), obj7);
+        const tmp43 = closure_5(dismissNewBadgeIfShown(13034), obj7);
         cResult[15] = tmp16;
         cResult[16] = tmp15;
         cResult[17] = true === showUnread;
@@ -304,7 +304,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
         tmp41 = tmp43;
       }
       if (showNewBadgeOnRow) {
-        tmp36Result = tmp36(tmp(12941).NewBadge, {});
+        tmp36Result = tmp36(tmp(12936).NewBadge, {});
       } else {
         let indicator2;
         const tmp37 = closure_7;
@@ -357,9 +357,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
   let obj = react;
   const tmp = closure_8();
   const ref = react.useRef(null);
-  const tmp5 = dismissNewBadgeIfShown(13182)(guildId);
+  const tmp5 = dismissNewBadgeIfShown(13177)(guildId);
   let indicator;
-  const tmp6 = dismissNewBadgeIfShown(13199);
+  const tmp6 = dismissNewBadgeIfShown(13194);
   if (tmp5 != null) {
     indicator = tmp5.indicator;
   }
@@ -378,7 +378,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
   if (tmp5 != null) {
     showUnread = tmp5.showUnread;
   }
-  const ChannelModes = guildId(13039).ChannelModes;
+  const ChannelModes = guildId(13034).ChannelModes;
   if (true === showUnread) {
     DEFAULT = ChannelModes.UNREAD_IMPORTANT;
     tmp14 = tmp13;
@@ -405,15 +405,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
   }
   items1 = [closure_5(tmp19, obj3), ];
   const obj4 = { onPress: callback, style: tmp.container, accessible: true, mode: DEFAULT, unread: true === showUnread, accessibilityLabel: intl.string(dismissNewBadgeIfShown(2621).yv3DJJ), accessibilityState: { selected: false }, name: closure_5(BaseChannelName, obj5), icon: closure_5(BaseChannelIcon, obj6), channelInfo: tmp16Result };
-  const tmp3Result = dismissNewBadgeIfShown(13039);
+  const tmp3Result = dismissNewBadgeIfShown(13034);
   intl = tmp14(1128).intl;
   obj5 = { name: intl2.string(dismissNewBadgeIfShown(2621).yv3DJJ), mode: DEFAULT };
-  BaseChannelName = tmp14(13039).BaseChannelName;
+  BaseChannelName = tmp14(13034).BaseChannelName;
   intl2 = tmp14(1128).intl;
   obj6 = { mode: DEFAULT, IconComponent: tmp14(17349).BoostTier2Icon };
-  BaseChannelIcon = tmp14(13039).BaseChannelIcon;
+  BaseChannelIcon = tmp14(13034).BaseChannelIcon;
   if (showNewBadgeOnRow) {
-    tmp16Result = tmp16(tmp14(12941).NewBadge, {});
+    tmp16Result = tmp16(tmp14(12936).NewBadge, {});
   } else {
     let indicator1;
     const tmp22 = closure_7;

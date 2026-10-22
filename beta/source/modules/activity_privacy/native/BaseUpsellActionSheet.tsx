@@ -1,7 +1,7 @@
 // Module ID: 15899
 // Function ID: 15900
 // Name: BaseUpsellActionSheet
-// Dependencies: [19, 17, 2090, 21, 5191, 587, 558, 576, 504, 6436, 15897, 1128, 5187, 13311, 13020, 5155, 4904, 5479, 7118, 2]
+// Dependencies: [19, 17, 2090, 21, 5191, 587, 558, 576, 504, 6436, 15897, 1128, 5187, 13306, 13015, 5155, 4904, 5479, 7118, 2]
 
 // Module 15899 (BaseUpsellActionSheet)
 import nativeDefault from "native" /* 587 */;
@@ -226,7 +226,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
   if (cResult[10] !== tmp14) {
     class B {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F149342 */ });
+        return closure_1.map(() => { /* body not rendered: F149351 */ });
       }
     }
     const items2 = [tmp14];
@@ -238,7 +238,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
   } else {
     class B {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F149342 */ });
+        return closure_1.map(() => { /* body not rendered: F149351 */ });
       }
     }
     tmp18 = cResult[12];
@@ -249,7 +249,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
   if (cResult[13] !== guildIds.length) {
     class B {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F149342 */ });
+        return closure_1.map(() => { /* body not rendered: F149351 */ });
       }
     }
     const obj2 = { count: guildIds.length };
@@ -259,14 +259,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
   } else {
     class B {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F149342 */ });
+        return closure_1.map(() => { /* body not rendered: F149351 */ });
       }
     }
   }
   if (cResult[15] !== tmp20) {
     class B {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F149342 */ });
+        return closure_1.map(() => { /* body not rendered: F149351 */ });
       }
     }
     const obj3 = { variant: "text-md/semibold", color: "text-strong", children: tmp20 };
@@ -276,7 +276,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
   } else {
     class B {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F149342 */ });
+        return closure_1.map(() => { /* body not rendered: F149351 */ });
       }
     }
   }
@@ -285,32 +285,32 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
   if (direction === arr(15897).ChangeDirection.RESTRICTING) {
     class B {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F149342 */ });
+        return closure_1.map(() => { /* body not rendered: F149351 */ });
       }
     }
   }
   if (cResult[17] === tmp10) {
     class B {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F149342 */ });
+        return closure_1.map(() => { /* body not rendered: F149351 */ });
       }
     }
     if (cResult[20] === undefined) {
       class B {
         constructor() {
-          return closure_1.map(() => { /* body not rendered: F149342 */ });
+          return closure_1.map(() => { /* body not rendered: F149351 */ });
         }
       }
       if (cResult[23] === tmp4.guildSummary) {
         class B {
           constructor() {
-            return closure_1.map(() => { /* body not rendered: F149342 */ });
+            return closure_1.map(() => { /* body not rendered: F149351 */ });
           }
         }
         if (cResult[26] === tmp4.statusRow) {
           class B {
             constructor() {
-              return closure_1.map(() => { /* body not rendered: F149342 */ });
+              return closure_1.map(() => { /* body not rendered: F149351 */ });
             }
           }
         }

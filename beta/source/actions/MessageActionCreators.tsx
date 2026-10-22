@@ -1,7 +1,7 @@
 // Module ID: 7445
 // Function ID: 7446
 // Name: MessageActionCreators
-// Dependencies: [32, 5, 6013, 6397, 7446, 7447, 7631, 7633, 7579, 6286, 6153, 502, 2068, 7634, 2090, 5173, 5532, 4845, 5207, 6291, 7640, 1392, 1087, 7642, 7306, 5185, 17, 3, 5172, 7643, 5177, 7646, 7647, 5206, 7652, 6233, 7672, 1267, 5174, 7688, 7691, 5889, 7693, 1128, 2131, 8026, 584, 10111, 6001, 10106, 8515, 1297, 5534, 7200, 9, 7476, 6008, 11, 2094, 2114, 7465, 6011, 14404, 10001, 8966, 14405, 4864, 7637, 1405, 7244, 8165, 14406, 8020, 11208, 14410, 9568, 13811, 13817, 6398, 1104, 8149, 2000, 8169, 5065, 10401, 5399, 2]
+// Dependencies: [32, 5, 6013, 6397, 7446, 7447, 7631, 7633, 7579, 6286, 6153, 502, 2068, 7634, 2090, 5173, 5532, 4845, 5207, 6291, 7640, 1392, 1087, 7642, 7306, 5185, 17, 3, 5172, 7643, 5177, 7646, 7647, 5206, 7652, 6233, 7672, 1267, 5174, 7688, 7691, 5889, 7693, 1128, 2131, 8026, 584, 10111, 6001, 10106, 8515, 1297, 5534, 7200, 9, 7476, 6008, 11, 2094, 2114, 7465, 6011, 14404, 10001, 8966, 14405, 4864, 7637, 1405, 7244, 8165, 14406, 8020, 11208, 14410, 9568, 13806, 13812, 6398, 1104, 8149, 2000, 8169, 5065, 10401, 5399, 2]
 
 // Module 7445 (MessageActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
@@ -454,7 +454,7 @@ let obj17 = {
   sendExplicitMediaClydeError(c0, attachments, EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED) {
     let message;
     let messageName;
-    const f97148 = () => {
+    const f97157 = () => {
       let intl;
       const obj = { message: intl.string(require("intl").t.i4AbAS), messageName: "BOT_GUILD_EXPLICIT_CONTENT" };
       intl = require("intl").intl;
@@ -478,8 +478,8 @@ let obj17 = {
         intl = require("intl").intl;
         return obj;
       });
-      ({ message, messageName } = withResult1.otherwise(f97148));
-      withResult1.otherwise(f97148);
+      ({ message, messageName } = withResult1.otherwise(f97157));
+      withResult1.otherwise(f97157);
       const obj8 = createNonce;
       const nonce = obj8.createNonce();
       obj17.sendBotMessage(c0, message, messageName, nonce);
@@ -2667,9 +2667,9 @@ let obj17 = {
         const obj = id(c3[46]);
         const obj2 = { type: "MESSAGE_DELETE", id, channelId, local };
         const dispatchResult = obj.dispatch(obj2);
-        dispatchResult.then(f159268);
+        dispatchResult.then(f159277);
       }
-      const f159268 = () => {
+      const f159277 = () => {
         const AccessibilityAnnouncer = channelId(closure_1_3[83]).AccessibilityAnnouncer;
         const announce = AccessibilityAnnouncer.announce;
         const intl = channelId(closure_1_3[43]).intl;
@@ -2730,7 +2730,7 @@ let obj17 = {
               const obj = id(c3[46]);
               const obj2 = { type: "MESSAGE_DELETE", id, channelId, local };
               const dispatchResult = obj.dispatch(obj2);
-              dispatchResult.then(f159268);
+              dispatchResult.then(f159277);
             });
           }
           c3 = 3;

@@ -1,7 +1,7 @@
 // Module ID: 14598
 // Function ID: 14599
 // Name: GuildBoostingUpsell
-// Dependencies: [19, 17, 6219, 1394, 21, 5191, 587, 14577, 1128, 9709, 14599, 14600, 14602, 8895, 14603, 9252, 14604, 13222, 14605, 13219, 14606, 9705, 14607, 9851, 558, 576, 504, 14476, 14608, 5127, 5128, 14440, 5065, 14449, 14450, 5187, 9723, 14612, 14613, 14614, 2]
+// Dependencies: [19, 17, 6219, 1394, 21, 5191, 587, 14577, 1128, 9709, 14599, 14600, 14602, 8895, 14603, 9252, 14604, 13217, 14605, 13214, 14606, 9705, 14607, 9851, 558, 576, 504, 14476, 14608, 5127, 5128, 14440, 5065, 14449, 14450, 5187, 9723, 14612, 14613, 14614, 2]
 
 // Module 14598 (GuildBoostingUpsell)
 import get_initialized from "get initialized" /* 504 */;
@@ -19,8 +19,8 @@ import UploadIcon from "UploadIcon" /* 9705 */;
 import BoostGemIcon from "BoostGemIcon" /* 9709 */;
 import PremiumFeatureListDefault from "PremiumFeatureList" /* 9723 */;
 import StarIcon from "StarIcon" /* 9851 */;
-import HeadphonesIcon from "HeadphonesIcon" /* 13219 */;
-import StickerIcon from "StickerIcon" /* 13222 */;
+import HeadphonesIcon from "HeadphonesIcon" /* 13214 */;
+import StickerIcon from "StickerIcon" /* 13217 */;
 import AssetRegistryDefault from "AssetRegistry" /* 14440 */;
 import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 14476 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 14577 */;

@@ -1,9 +1,9 @@
-// Module ID: 12698
-// Function ID: 12699
+// Module ID: 12693
+// Function ID: 12694
 // Name: ForwardStaffToNonStaffWarningModal
 // Dependencies: [21, 558, 576, 1128, 5405, 2]
 
-// Module 12698 (ForwardStaffToNonStaffWarningModal)
+// Module 12693 (ForwardStaffToNonStaffWarningModal)
 import react from "react" /* 576 */;
 import intl5 from "intl" /* 1128 */;
 import AlertModal2 from "AlertModal" /* 5405 */;

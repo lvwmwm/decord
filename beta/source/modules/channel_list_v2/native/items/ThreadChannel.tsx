@@ -1,7 +1,7 @@
 // Module ID: 17243
 // Function ID: 17244
 // Name: ThreadChannel
-// Dependencies: [19, 17, 4847, 2068, 4845, 6291, 2119, 1392, 5212, 5215, 11900, 1087, 6223, 1127, 21, 5191, 587, 558, 576, 7843, 5486, 504, 12944, 5202, 10779, 17244, 8923, 17246, 1202, 17248, 17257, 5514, 17258, 2]
+// Dependencies: [19, 17, 4847, 2068, 4845, 6291, 2119, 1392, 5212, 5215, 11895, 1087, 6223, 1127, 21, 5191, 587, 558, 576, 7843, 5486, 504, 12939, 5202, 10779, 17244, 8923, 17246, 1202, 17248, 17257, 5514, 17258, 2]
 
 // Module 17243 (ThreadChannel)
 import react_native from "react-native" /* 17 */;
@@ -23,7 +23,7 @@ import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import UserStore from "UserStore" /* 1392 */;
 import VoiceStateStore from "VoiceStateStore" /* 5212 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5215 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11900 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11895 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

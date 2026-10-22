@@ -1,16 +1,16 @@
-// Module ID: 13246
-// Function ID: 13247
+// Module ID: 13241
+// Function ID: 13242
 // Name: GuildPowerupsNotificationContainer
-// Dependencies: [17, 21, 5191, 587, 558, 576, 6941, 5187, 13247, 13248, 1128, 2621, 13251, 2]
+// Dependencies: [17, 21, 5191, 587, 558, 576, 6941, 5187, 13242, 13243, 1128, 2621, 13246, 2]
 
-// Module 13246 (GuildPowerupsNotificationContainer)
+// Module 13241 (GuildPowerupsNotificationContainer)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef2621 from "module_2621" /* 2621 */;
 import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6941 */;
-import useGuildPowerupTier3OverrideConfigDefault from "useGuildPowerupTier3OverrideConfig" /* 13247 */;
-import useGuildPowerupExpiringNotificationsConfigDefault from "useGuildPowerupExpiringNotificationsConfig" /* 13248 */;
+import useGuildPowerupTier3OverrideConfigDefault from "useGuildPowerupTier3OverrideConfig" /* 13242 */;
+import useGuildPowerupExpiringNotificationsConfigDefault from "useGuildPowerupExpiringNotificationsConfig" /* 13243 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -159,7 +159,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
       if (shouldShow2) {
         const obj5 = { guildId, powerupNames: null, warnings: null };
         ({ expiringPowerupNames: obj4.powerupNames, warnings: obj4.warnings } = tmp7);
-        shouldShow2 = React3(tmp5(13251), obj5);
+        shouldShow2 = React3(tmp5(13246), obj5);
       }
       cResult[7] = tmp7.expiringPowerupNames;
       cResult[8] = tmp7.shouldShow;
@@ -220,7 +220,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
     if (shouldShow2) {
       const obj9 = { guildId, powerupNames: null, warnings: null };
       ({ expiringPowerupNames: obj5.powerupNames, warnings: obj5.warnings } = tmp5);
-      shouldShow2 = tmp11(tmp2(13251), obj9);
+      shouldShow2 = tmp11(tmp2(13246), obj9);
     }
     items[2] = shouldShow2;
     tmp9Result = tmp9(tmp10, obj2);

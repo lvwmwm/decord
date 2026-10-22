@@ -847,7 +847,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceMemberL
   let ownerId;
   let reduced;
   let tmp25Result2;
-  const f119991 = (user) => stateFromStoresArray.includes(user.user.id);
+  const f120000 = (user) => stateFromStoresArray.includes(user.user.id);
   channel = channel.channel;
   let flag = channel.isActionSheet;
   if (flag === undefined) {
@@ -921,8 +921,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceMemberL
           str = "";
         }
         const tmp3Result = flag(tmp4[40]);
-        [arr10, arr11] = _slicedToArray(tmp3Result.partition(stateFromStores, f119991), 2);
-        const tmp15 = _slicedToArray(tmp3Result.partition(stateFromStores, f119991), 2);
+        [arr10, arr11] = _slicedToArray(tmp3Result.partition(stateFromStores, f120000), 2);
+        const tmp15 = _slicedToArray(tmp3Result.partition(stateFromStores, f120000), 2);
         if (arr10.length > 0) {
           const push = items5.push;
           const obj5 = { type: constants4.SPECTATING, title: intl.formatToPlainString(channel(tmp4[23]).t.Fb0eT9, obj6), data: arr10 };

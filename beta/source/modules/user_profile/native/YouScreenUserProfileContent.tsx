@@ -1,7 +1,7 @@
 // Module ID: 17938
 // Function ID: 17939
 // Name: YouScreenUserProfileContent
-// Dependencies: [32, 19, 17, 2060, 6015, 7586, 8581, 7181, 2065, 15607, 21, 558, 576, 9469, 17514, 1384, 8655, 8641, 14144, 14145, 14148, 14164, 4913, 587, 8588, 2052, 10023, 6433, 1128, 5479, 14047, 17939, 17944, 17935, 15636, 10898, 17945, 14119, 12831, 7376, 14122, 10858, 14123, 1506, 8584, 10837, 8642, 504, 8627, 8638, 13976, 17946, 14162, 14146, 14174, 14175, 14176, 10844, 17947, 14179, 16773, 14049, 10939, 8859, 14182, 17949, 14106, 14187, 14191, 8805, 10838, 8923, 11678, 10927, 4945, 7124, 2]
+// Dependencies: [32, 19, 17, 2060, 6015, 7586, 8581, 7181, 2065, 15607, 21, 558, 576, 9469, 17514, 1384, 8655, 8641, 14139, 14140, 14143, 14164, 4913, 587, 8588, 2052, 10023, 6433, 1128, 5479, 14042, 17939, 17944, 17935, 15636, 10898, 17945, 14114, 12826, 7376, 14117, 10858, 14118, 1506, 8584, 10837, 8642, 504, 8627, 8638, 13971, 17946, 14162, 14141, 14174, 14175, 14176, 10844, 17947, 14179, 16773, 14044, 10939, 8859, 14182, 17949, 14101, 14187, 14191, 8805, 10838, 8923, 11678, 10927, 4945, 7124, 2]
 
 // Module 17938 (YouScreenUserProfileContent)
 import react2 from "react" /* 576 */;
@@ -20,14 +20,14 @@ import getRandomCustomStatusPromptDefault from "getRandomCustomStatusPrompt" /* 
 import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 10858 */;
 import BadgeManagementExperiment from "BadgeManagementExperiment" /* 10898 */;
 import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 10939 */;
-import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 12831 */;
-import UserProfileActivityDefault from "UserProfileActivity" /* 14049 */;
-import UserProfileNoteDefault from "UserProfileNote" /* 14106 */;
-import useBadgeDirectoryNuxCoachmarkVariant from "useBadgeDirectoryNuxCoachmarkVariant" /* 14119 */;
-import useBadgeDirectoryNuxEntryPoint from "useBadgeDirectoryNuxEntryPoint" /* 14122 */;
-import UserProfileWidgetsBoardEditNoticeDefault from "UserProfileWidgetsBoardEditNotice" /* 14144 */;
-import ConjureCustomWidgetAddOptionDefault from "ConjureCustomWidgetAddOption" /* 14145 */;
-import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 14148 */;
+import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 12826 */;
+import UserProfileActivityDefault from "UserProfileActivity" /* 14044 */;
+import UserProfileNoteDefault from "UserProfileNote" /* 14101 */;
+import useBadgeDirectoryNuxCoachmarkVariant from "useBadgeDirectoryNuxCoachmarkVariant" /* 14114 */;
+import useBadgeDirectoryNuxEntryPoint from "useBadgeDirectoryNuxEntryPoint" /* 14117 */;
+import UserProfileWidgetsBoardEditNoticeDefault from "UserProfileWidgetsBoardEditNotice" /* 14139 */;
+import ConjureCustomWidgetAddOptionDefault from "ConjureCustomWidgetAddOption" /* 14140 */;
+import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 14143 */;
 import UserProfileConnections from "UserProfileConnections" /* 14182 */;
 import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 14187 */;
 import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 14191 */;
@@ -680,7 +680,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScr
                         let tmp40 = null != badgeDirectoryNuxCoachmarkVariant.variantProps;
                         if (tmp40) {
                           const obj7 = { targetRef: entryPointRef, userId: id, variantProps: badgeDirectoryNuxCoachmarkVariant.variantProps, visible: tmp28, markAsDismissed: tmp27 };
-                          tmp40 = syncedClientThemes(tmp4(14123), obj7);
+                          tmp40 = syncedClientThemes(tmp4(14118), obj7);
                         }
                         cResult[20] = badgeDirectoryNuxCoachmarkVariant.variantProps;
                         cResult[21] = entryPointRef;
@@ -804,7 +804,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScr
   const tmp26 = metroRequire;
   if (tmp27Result) {
     const obj7 = { targetRef: entryPointRef, userId: id, variantProps: badgeDirectoryNuxCoachmarkVariant.variantProps, visible: tmp23, markAsDismissed: tmp22 };
-    tmp27Result = tmp27(tmp(14123), obj7);
+    tmp27Result = tmp27(tmp(14118), obj7);
   }
   items2[1] = tmp27Result;
   items2[2] = syncedClientThemes(closure_21, { navigateToProfileCustomization, isProfileLoaded, visibleContent: tmp21, markAsDismissed: tmp22 });

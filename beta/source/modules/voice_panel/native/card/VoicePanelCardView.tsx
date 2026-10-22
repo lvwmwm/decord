@@ -1,7 +1,7 @@
 // Module ID: 18255
 // Function ID: 18256
 // Name: VoicePanelCardView
-// Dependencies: [32, 19, 17, 6292, 10680, 10678, 18187, 10683, 5214, 21, 18256, 558, 4945, 9878, 10679, 4913, 587, 10686, 11911, 5478, 576, 18188, 6438, 5430, 7039, 18285, 504, 12, 4923, 1128, 4922, 2]
+// Dependencies: [32, 19, 17, 6292, 10680, 10678, 18187, 10683, 5214, 21, 18256, 558, 4945, 9878, 10679, 4913, 587, 10686, 11906, 5478, 576, 18188, 6438, 5430, 7039, 18285, 504, 12, 4923, 1128, 4922, 2]
 
 // Module 18255 (VoicePanelCardView)
 import _modDef12 from "module_12" /* 12 */;
@@ -40,7 +40,7 @@ let tmp2;
 let tmp3;
 const ReanimatedRexport = tmp2(4945);
 const react3 = tmp(5430);
-const roundToNearestPixelDefault = tmp3(11911);
+const roundToNearestPixelDefault = tmp3(11906);
 function getCardKey(type) {
   return "" + type.type + "-" + type.id;
 }

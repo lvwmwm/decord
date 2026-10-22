@@ -1,123 +1,86 @@
 // Module ID: 12466
 // Function ID: 12467
-// Dependencies: [32, 109, 12467, 12442]
+// Dependencies: [12381, 12382, 12467, 12408, 12437, 12468, 12392, 12390, 12429]
 
 // Module 12466
-import DEFAULT_USER_INCLUDES from "DEFAULT_USER_INCLUDES" /* 12467 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import module_12442 from "module_12442" /* 12442 */;
+import _mod12408 from "module_12408" /* 12408 */;
+import _mod12468 from "module_12468" /* 12468 */;
+import module_12437 from "module_12437" /* 12437 */;
 
-let closure_4 = ["ip", "user"];
-let obj = { include: { cookies: true, data: true, headers: true, ip: false, query_string: true, url: true, user: { id: true, username: true, email: true } }, transactionNamingScheme: "methodPath" };
 
-export const requestDataIntegration = module_12442.defineIntegration(() => {
-  obj = arg0;
+export const captureConsoleIntegration = module_12437.defineIntegration(() => {
+  let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
   }
-  let obj2 = {};
-  let tmp = obj;
-  const merged = Object.assign(obj);
-  const merged1 = Object.assign(obj);
-  let obj3 = {};
-  const merged2 = Object.assign(obj.include);
-  const merged3 = Object.assign(obj.include);
-  if (obj.include) {
-    let user;
-    if (typeof obj.include.user === "boolean") {
-      user = obj.include.user;
-    }
-    obj3.user = user;
-    obj2.include = obj3;
-    return {
-      name: "RequestData",
-      processEvent(sdkProcessingMetadata) {
-          let normalizedRequest;
-          let request;
-          function convertReqDataIntegrationOptsToAddReqDataOpts(include) {
-            let tmp15;
-            include = include.include;
-            const user = include.user;
-            const transactionNamingScheme = include.transactionNamingScheme;
-            const ip = include.ip;
-            const items = ["method"];
-            const entries = Object.entries(closure_1_3(include, closure_1_4));
-            const tmp2 = entries[Symbol.iterator]();
-            while (tmp2 !== undefined) {
-              let tmp5 = closure_1_2(tmp3, 2);
-              let first = tmp5[0];
-              if (tmp5[1]) {
-                let arr = items.push(first);
-              }
-              continue;
-            }
-            let flag = true;
-            if (undefined !== user) {
-              flag = user;
-              if (typeof user !== "boolean") {
-                const items1 = [];
-                const _Object = Object;
-                const entries1 = Object.entries(user);
-                flag = items1;
-                for (const item10032 of entries1) {
-                  let tmp11 = closure_1_2(item10032, 2);
-                  let first1 = tmp11[0];
-                  if (tmp11[1]) {
-                    let arr2 = items1.push(first1);
-                  }
-                  continue;
-                }
-              }
-            }
-            const include2 = { ip, user: flag, request: tmp15, transaction: transactionNamingScheme };
-            tmp15 = undefined;
-            if (0 !== items.length) {
-              tmp15 = items;
-            }
-            return { include: include2 };
-          }
-          let prop = sdkProcessingMetadata.sdkProcessingMetadata;
-          if (undefined === prop) {
-            prop = {};
-          }
-          ({ request, normalizedRequest } = prop);
-          const tmp = convertReqDataIntegrationOptsToAddReqDataOpts(obj2);
-          if (normalizedRequest) {
-            let tmp5;
-            if (request) {
-              let ip = request.ip;
-              if (!ip) {
-                ip = request.socket && request.socket.remoteAddress;
-              }
-              tmp5 = ip;
-            }
-            let user;
-            if (request) {
-              user = request.user;
-            }
-            const obj3 = DEFAULT_USER_INCLUDES;
-            obj = { ipAddress: tmp5, user };
-            let tmp10 = obj3;
-            let tmp11 = sdkProcessingMetadata;
-            let tmp13 = obj;
-            const result = obj3.addNormalizedRequestDataToEvent(sdkProcessingMetadata, normalizedRequest, obj, tmp);
-            return sdkProcessingMetadata;
-          } else {
-            let result1 = sdkProcessingMetadata;
-            if (request) {
-              const tmp3 = require;
-              let tmp4 = dependencyMap;
-              obj2 = DEFAULT_USER_INCLUDES;
-              result1 = obj2.addRequestDataToEvent(sdkProcessingMetadata, request, tmp);
-            }
-            return result1;
-          }
-        }
-    };
+  let handled;
+  let CONSOLE_LEVELS = obj.levels;
+  if (!CONSOLE_LEVELS) {
+    let tmp = CONSOLE_LEVELS;
+    let tmp2 = handled;
+    CONSOLE_LEVELS = CONSOLE_LEVELS(handled[0]).CONSOLE_LEVELS;
   }
-  user = {};
-  const merged4 = Object.assign(tmp.include.user);
-  let tmp7 = obj.include || {};
-  const merged5 = Object.assign(tmp7.user);
+  handled = obj.handled;
+  let obj2 = {
+    name: "CaptureConsole",
+    setup(arg0) {
+      let closure_0 = arg0;
+      const tmp2 = handled;
+      const tmp = CONSOLE_LEVELS;
+      if ("console" in CONSOLE_LEVELS(handled[1]).GLOBAL_OBJ) {
+        let tmpResult = tmp(tmp2[2]);
+        let result = tmpResult.addConsoleInstrumentationHandler((arg0) => {
+          let args;
+          let level;
+          let obj3;
+          let tmpResult;
+          ({ args, level } = arg0);
+          let obj = _mod12408;
+          let hasItem = obj.getClient() === closure_0;
+          if (hasItem) {
+            let tmp4 = CONSOLE_LEVELS;
+            hasItem = CONSOLE_LEVELS.includes(level);
+          }
+          if (hasItem) {
+            let closure_2 = handled;
+            let obj2 = { level: tmpResult.severityLevelFromString(level), extra: obj3 };
+            obj3 = { arguments: args };
+            tmpResult = _mod12468;
+            const tmpResult2 = _mod12408;
+            tmpResult2.withScope((addEventProcessor) => {
+              addEventProcessor.addEventProcessor((arg0) => {
+                arg0.logger = "console";
+                const obj = args(level[6]);
+                obj2 = { handled, type: "console" };
+                const result = obj.addExceptionMechanism(arg0, obj2);
+                return arg0;
+              });
+              if ("assert" !== level) {
+                const found = args.find((item) => item instanceof Error);
+                const tmp12 = args;
+                if (found) {
+                  const tmp14Result = closure_2_0(closure_2_1[8]);
+                  tmp14Result.captureException(found, obj2);
+                } else {
+                  const tmp14Result2 = closure_2_0(closure_2_1[7]);
+                  const safeJoinResult = tmp14Result2.safeJoin(tmp12, " ");
+                  const obj4 = closure_2_0(closure_2_1[8]);
+                  obj4.captureMessage(safeJoinResult, obj2);
+                }
+              } else if (!args[0]) {
+                let obj = closure_2_0(closure_2_1[7]);
+                const _HermesInternal = HermesInternal;
+                const tmp4 = obj.safeJoin(args.slice(1), " ") || "console.assert";
+                const combined = "Assertion failed: " + tmp4;
+                addEventProcessor.setExtra("arguments", args.slice(1));
+                obj2 = closure_2_0(closure_2_1[8]);
+                obj2.captureMessage(combined, obj2);
+              }
+            });
+          }
+        });
+      }
+    }
+  };
+  return obj2;
 });

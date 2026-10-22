@@ -1,7 +1,7 @@
 // Module ID: 18025
 // Function ID: 18026
 // Name: MessageRequestList
-// Dependencies: [19, 17, 1087, 21, 5191, 587, 1128, 558, 576, 4904, 5202, 6190, 13117, 1267, 18026, 1202, 14302, 6462, 15971, 8855, 1633, 18031, 18033, 13116, 18036, 1384, 5187, 7091, 2]
+// Dependencies: [19, 17, 1087, 21, 5191, 587, 1128, 558, 576, 4904, 5202, 6190, 13112, 1267, 18026, 1202, 14302, 6462, 15971, 8855, 1633, 18031, 18033, 13111, 18036, 1384, 5187, 7091, 2]
 
 // Module 18025 (MessageRequestList)
 import nativeDefault from "native" /* 587 */;
@@ -808,7 +808,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
   data = data(18031)();
   let obj = goToMessageRequestPreview(18033);
   dependencyMap = obj.useListHasSingleMessageRequest();
-  const obj2 = goToMessageRequestPreview(13116);
+  const obj2 = goToMessageRequestPreview(13111);
   const isRestricted = obj2.useIsMessageRequestRestrictedViewer();
   if (0 === data.length) {
     const obj3 = { bodyText: intl2.string(goToMessageRequestPreview(1128).t.SXrqTf) };

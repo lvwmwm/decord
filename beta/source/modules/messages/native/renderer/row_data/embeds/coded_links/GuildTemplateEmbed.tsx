@@ -1,7 +1,7 @@
 // Module ID: 14307
 // Function ID: 14308
 // Name: GuildTemplateEmbed
-// Dependencies: [17, 7446, 7306, 7689, 8156, 1128, 8017, 587, 5065, 12540, 12541, 14308, 2]
+// Dependencies: [17, 7446, 7306, 7689, 8156, 1128, 8017, 587, 5065, 12535, 12536, 14308, 2]
 // Exports: createGuildTemplateEmbed
 
 // Module 14307 (GuildTemplateEmbed)
@@ -57,9 +57,9 @@ export const createGuildTemplateEmbed = function createGuildTemplateEmbed(code, 
     resolveAssetSource = Image.resolveAssetSource;
     const obj3 = shared;
     if (obj3.isThemeDark(arg1)) {
-      tmpResult = tmp(12540);
+      tmpResult = tmp(12535);
     } else {
-      tmpResult = tmp(12541);
+      tmpResult = tmp(12536);
     }
     return obj;
   } else {

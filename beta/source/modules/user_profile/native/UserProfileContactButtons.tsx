@@ -1,7 +1,7 @@
 // Module ID: 14204
 // Function ID: 14205
 // Name: UserProfileContactButtons
-// Dependencies: [109, 19, 17, 4855, 1087, 21, 5191, 587, 558, 576, 5479, 7130, 8588, 14118, 504, 5057, 14205, 5131, 1128, 13312, 7293, 10951, 5155, 6190, 7290, 14207, 8471, 7840, 9621, 13788, 2]
+// Dependencies: [109, 19, 17, 4855, 1087, 21, 5191, 587, 558, 576, 5479, 7130, 8588, 14113, 504, 5057, 14205, 5131, 1128, 13307, 7293, 10951, 5155, 6190, 7290, 14207, 8471, 7840, 9621, 13783, 2]
 
 // Module 14204 (UserProfileContactButtons)
 import react_native from "react-native" /* 17 */;
@@ -13,8 +13,8 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7290 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7293 */;
 import navigateToLastChannelDefault from "navigateToLastChannel" /* 10951 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13312 */;
-import ConfirmStartCall from "ConfirmStartCall" /* 13788 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13307 */;
+import ConfirmStartCall from "ConfirmStartCall" /* 13783 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
@@ -170,7 +170,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
     tmp5 = cResult[1];
   }
   dependencyMap = tmp5;
-  const tmpResult = tmp(14118);
+  const tmpResult = tmp(14113);
   const gameFriendsForUser = tmpResult.useGameFriendsForUser(user.id);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [RelationshipStore];
@@ -329,7 +329,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
     _location = newestAnalyticsLocation;
   }
   dependencyMap = { location: _location };
-  const tmp3Result = user(14118);
+  const tmp3Result = user(14113);
   const gameFriendsForUser = tmp3Result.useGameFriendsForUser(user.id);
   const items = [RelationshipStore];
   const tmp3Result2 = user(504);
@@ -442,7 +442,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
   }
   const tmpResult = user(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmpResult2 = user(14118);
+  const tmpResult2 = user(14113);
   const gameFriendsForUser = tmpResult2.useGameFriendsForUser(user.id);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     function closeUserProfile() {

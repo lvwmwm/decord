@@ -1,9 +1,9 @@
-// Module ID: 11921
-// Function ID: 11922
+// Module ID: 11916
+// Function ID: 11917
 // Name: RecommendationsBanner
-// Dependencies: [19, 17, 1406, 1087, 21, 5191, 558, 576, 10948, 11912, 11354, 5128, 8584, 8646, 1417, 8541, 2]
+// Dependencies: [19, 17, 1406, 1087, 21, 5191, 558, 576, 10948, 11907, 11354, 5128, 8584, 8646, 1417, 8541, 2]
 
-// Module 11921 (RecommendationsBanner)
+// Module 11916 (RecommendationsBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -27,7 +27,7 @@ let tmp;
 let tmp3;
 const FastImageDefault = tmp3(5128);
 const UserProfileBannerDefault = tmp3(8646);
-const HeroMedia = tmp(11912);
+const HeroMedia = tmp(11907);
 const View = react_native.View;
 ({ BANNER_HEIGHT: metroRequire, EMPTY_STRING_SNOWFLAKE_ID: metroImportDefault } = Constants);
 const jsx = Fragment.jsx;
@@ -153,7 +153,7 @@ let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function R
   const tmp = dependencyMap;
   let obj = heroMediaDimensions(10948);
   const width = obj.useRequiredAppLauncherContext().width;
-  let obj2 = heroMediaDimensions(11912);
+  let obj2 = heroMediaDimensions(11907);
   heroMediaDimensions = obj2.useHeroMediaDimensions({ width });
   let obj3 = { applicationId, size: heroMediaDimensions.width, names: ["embedded_cover"] };
   const tmp4 = useEmbeddedActivityBackgroundDefault(obj3);

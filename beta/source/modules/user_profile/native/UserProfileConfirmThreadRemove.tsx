@@ -1,9 +1,9 @@
-// Module ID: 13318
-// Function ID: 13319
+// Module ID: 13313
+// Function ID: 13314
 // Name: UserProfileConfirmThreadRemove
 // Dependencies: [19, 21, 558, 576, 5057, 1128, 5405, 5405, 2]
 
-// Module 13318 (UserProfileConfirmThreadRemove)
+// Module 13313 (UserProfileConfirmThreadRemove)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1128 */;
 import UserUtilsDefault from "UserUtils" /* 5057 */;

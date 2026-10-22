@@ -1,10 +1,10 @@
-// Module ID: 13039
-// Function ID: 13040
+// Module ID: 13034
+// Function ID: 13035
 // Name: BaseChannelItem
-// Dependencies: [109, 19, 17, 11900, 6223, 21, 5191, 587, 558, 576, 1385, 5187, 1202, 13040, 8817, 13041, 2]
+// Dependencies: [109, 19, 17, 11895, 6223, 21, 5191, 587, 558, 576, 1385, 5187, 1202, 13035, 8817, 13036, 2]
 // Exports: getChannelSubtitleTextProps, useChannelNameTextProps
 
-// Module 13039 (BaseChannelItem)
+// Module 13034 (BaseChannelItem)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,11 +12,11 @@ import native from "native" /* 1202 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import ReadStateConstants from "ReadStateConstants" /* 6223 */;
-import StaticChannelIndicatorDefault from "StaticChannelIndicator" /* 13040 */;
-import TouchableBackgroundDefault from "TouchableBackground" /* 13041 */;
+import StaticChannelIndicatorDefault from "StaticChannelIndicator" /* 13035 */;
+import TouchableBackgroundDefault from "TouchableBackground" /* 13036 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11900 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11895 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -628,7 +628,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseChannelI
   if (!hideIcon) {
     const obj2 = { style: tmp2.unreadIndicator, unread, resolvedUnreadSetting: ALL_MESSAGES };
     const tmp6 = closure_10;
-    const tmp9 = hideIcon(13040);
+    const tmp9 = hideIcon(13035);
     if (mode === obj.UNREAD_LESS_IMPORTANT) {
       ALL_MESSAGES = UnreadSetting.ONLY_MENTIONS;
     } else {
@@ -639,7 +639,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseChannelI
   items1 = [tmp6Result, !hideIcon && icon, name, channelInfo];
   const tmp3Result = closure_11(tmp4, obj);
   if (flag) {
-    AnimatedPressableHighlight = hideIcon(13041);
+    AnimatedPressableHighlight = hideIcon(13036);
   } else {
     AnimatedPressableHighlight = mode(8817).AnimatedPressableHighlight;
   }

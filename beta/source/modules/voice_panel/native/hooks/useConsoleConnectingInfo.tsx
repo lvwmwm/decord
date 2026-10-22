@@ -1,11 +1,11 @@
 // Module ID: 18303
 // Function ID: 18304
 // Name: useConsoleConnectingInfo
-// Dependencies: [5210, 5211, 558, 576, 11417, 573, 18304, 13960, 18305, 18306, 2]
+// Dependencies: [5210, 5211, 558, 576, 11417, 573, 18304, 13955, 18305, 18306, 2]
 
 // Module 18303 (useConsoleConnectingInfo)
 import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 11417 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 13960 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 13955 */;
 import useShouldDisplayCancelConsoleTransferDefault from "useShouldDisplayCancelConsoleTransfer" /* 18304 */;
 import getConsoleColorDefault from "getConsoleColor" /* 18306 */;
 import GameConsoleStore from "GameConsoleStore" /* 5210 */;

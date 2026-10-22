@@ -1,7 +1,7 @@
 // Module ID: 17782
 // Function ID: 17783
 // Name: MediaGridPlaceholder
-// Dependencies: [19, 17, 9614, 21, 5191, 587, 558, 576, 17781, 17783, 4945, 12, 1128, 5187, 12988, 17784, 2]
+// Dependencies: [19, 17, 9614, 21, 5191, 587, 558, 576, 17781, 17783, 4945, 12, 1128, 5187, 12983, 17784, 2]
 
 // Module 17782 (MediaGridPlaceholder)
 import _mod12 from "module_12" /* 12 */;
@@ -11,7 +11,7 @@ import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4945 */;
 import Text_Text from "Text/Text" /* 5187 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 12988 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 12983 */;
 import usePlaceholderStyles from "usePlaceholderStyles" /* 17781 */;
 import GridItemPlaceholderDefault from "GridItemPlaceholder" /* 17783 */;
 import react from "react" /* 19 */;
@@ -221,7 +221,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RecentsMedia
                     class O {
                       constructor(arg0, arg1) {
                         closure_0 = arg1;
-                        obj = { style: closure_1.row, children: size.map(() => { /* body not rendered: F151467 */ }) };
+                        obj = { style: closure_1.row, children: size.map(() => { /* body not rendered: F151476 */ }) };
                         tmp = closure_1_8;
                         Fragment = closure_3.Fragment;
                         tmp2 = closure_1_7;
@@ -259,7 +259,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RecentsMedia
                     class O {
                       constructor(arg0, arg1) {
                         closure_0 = arg1;
-                        obj = { style: closure_1.row, children: size.map(() => { /* body not rendered: F151467 */ }) };
+                        obj = { style: closure_1.row, children: size.map(() => { /* body not rendered: F151476 */ }) };
                         tmp = closure_1_8;
                         Fragment = closure_3.Fragment;
                         tmp2 = closure_1_7;
@@ -286,7 +286,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RecentsMedia
               class O {
                 constructor(arg0, arg1) {
                   closure_0 = arg1;
-                  obj = { style: closure_1.row, children: size.map(() => { /* body not rendered: F151467 */ }) };
+                  obj = { style: closure_1.row, children: size.map(() => { /* body not rendered: F151476 */ }) };
                   tmp = closure_1_8;
                   Fragment = closure_3.Fragment;
                   tmp2 = closure_1_7;

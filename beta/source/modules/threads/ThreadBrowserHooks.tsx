@@ -1,9 +1,9 @@
-// Module ID: 13476
-// Function ID: 13477
+// Module ID: 13471
+// Function ID: 13472
 // Name: ThreadBrowserHooks
-// Dependencies: [32, 19, 13477, 2068, 4845, 6291, 6338, 8170, 4847, 1098, 558, 576, 8190, 12, 1388, 504, 11, 8169, 9628, 2]
+// Dependencies: [32, 19, 13472, 2068, 4845, 6291, 6338, 8170, 4847, 1098, 558, 576, 8190, 12, 1388, 504, 11, 8169, 9628, 2]
 
-// Module 13476 (ThreadBrowserHooks)
+// Module 13471 (ThreadBrowserHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
@@ -11,7 +11,7 @@ import Constants from "Constants" /* 1098 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8169 */;
 import ForumActionCreatorsDefault from "ForumActionCreators" /* 9628 */;
-import ReportToModChannelStore from "ReportToModChannelStore" /* 13477 */;
+import ReportToModChannelStore from "ReportToModChannelStore" /* 13472 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;

@@ -1,14 +1,14 @@
-// Module ID: 14113
-// Function ID: 14114
+// Module ID: 14108
+// Function ID: 14109
 // Name: PaperPlusIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 14114, 4912, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 14109, 4912, 2]
 
-// Module 14113 (PaperPlusIcon)
+// Module 14108 (PaperPlusIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4912 */;
-import AssetRegistry from "AssetRegistry" /* 14114 */;
+import AssetRegistry from "AssetRegistry" /* 14109 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

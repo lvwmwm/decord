@@ -1,7 +1,7 @@
 // Module ID: 16823
 // Function ID: 16824
 // Name: DevToolsContent
-// Dependencies: [32, 19, 17, 10808, 5112, 1261, 21, 5191, 587, 558, 576, 12519, 504, 16824, 5187, 5156, 12376, 6462, 12378, 1505, 1633, 6457, 4904, 15599, 6542, 2]
+// Dependencies: [32, 19, 17, 10808, 5112, 1261, 21, 5191, 587, 558, 576, 12514, 504, 16824, 5187, 5156, 12371, 6462, 12373, 1505, 1633, 6457, 4904, 15599, 6542, 2]
 
 // Module 16823 (DevToolsContent)
 import react2 from "react" /* 576 */;
@@ -10,8 +10,8 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import HapticUtils from "HapticUtils" /* 5156 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import Pressables from "Pressables" /* 6462 */;
-import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 12376 */;
-import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 12378 */;
+import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 12371 */;
+import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 12373 */;
 import DevToolsNavigator from "DevToolsNavigator" /* 15599 */;
 import useSortedDevToolsScreens from "useSortedDevToolsScreens" /* 16824 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -281,7 +281,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToo
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp11 = closure_10(screenKey(12376).ArrowSmallUpIcon, {});
+      const tmp11 = closure_10(screenKey(12371).ArrowSmallUpIcon, {});
       cResult[5] = tmp11;
       tmp9 = tmp11;
     } else {
@@ -330,7 +330,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToo
                 obj2.updateSortOrder(screenKey, "down");
               }
             }
-            const tmp19 = closure_10(screenKey(12378).ArrowSmallDownIcon, {});
+            const tmp19 = closure_10(screenKey(12373).ArrowSmallDownIcon, {});
             cResult[15] = tmp19;
             tmp18 = tmp19;
           } else {

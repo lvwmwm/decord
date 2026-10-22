@@ -1,9 +1,9 @@
-// Module ID: 14028
-// Function ID: 14029
+// Module ID: 14023
+// Function ID: 14024
 // Name: useSheetDismissPointerEvents
 // Dependencies: [558, 6584, 4945, 6612, 2]
 
-// Module 14028 (useSheetDismissPointerEvents)
+// Module 14023 (useSheetDismissPointerEvents)
 import LegacyBaseButton from "LegacyBaseButton" /* 6612 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,7 +1,7 @@
 // Module ID: 18398
 // Function ID: 18399
 // Name: LaunchPadSearchResultUser
-// Dependencies: [19, 5181, 2132, 2068, 5207, 12829, 6222, 1087, 6223, 21, 5191, 587, 558, 576, 17797, 7290, 5486, 504, 11, 6337, 18389, 6462, 17798, 18387, 8658, 1202, 13534, 9615, 17800, 5057, 18388, 17487, 16377, 2]
+// Dependencies: [19, 5181, 2132, 2068, 5207, 12824, 6222, 1087, 6223, 21, 5191, 587, 558, 576, 17797, 7290, 5486, 504, 11, 6337, 18389, 6462, 17798, 18387, 8658, 1202, 13529, 9615, 17800, 5057, 18388, 17487, 16377, 2]
 
 // Module 18398 (LaunchPadSearchResultUser)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -24,7 +24,7 @@ import AccessibilityStore from "AccessibilityStore" /* 5181 */;
 import LocaleStore from "LocaleStore" /* 2132 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import PresenceStore from "PresenceStore" /* 5207 */;
-import TypingStore from "TypingStore" /* 12829 */;
+import TypingStore from "TypingStore" /* 12824 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6222 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;
@@ -547,7 +547,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRe
   if (null != lastMessage) {
     if (null != channel) {
       const obj9 = { channel, message: lastMessage, color: str, muted: flag, layout: user(9615).ChannelListLayoutTypes.COMPACT };
-      const ChannelRowPreview = tmp6(13534).ChannelRowPreview;
+      const ChannelRowPreview = tmp6(13529).ChannelRowPreview;
       tmp14Result = tmp14(ChannelRowPreview, obj9);
     }
   }

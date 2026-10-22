@@ -1,7 +1,7 @@
 // Module ID: 17146
 // Function ID: 17147
 // Name: MainChannels
-// Dependencies: [32, 19, 17, 17147, 1087, 17137, 21, 558, 576, 17149, 6438, 5191, 587, 5075, 1633, 17150, 17151, 17233, 17427, 17428, 4945, 17152, 17134, 17139, 17136, 17505, 5078, 12822, 2]
+// Dependencies: [32, 19, 17, 17147, 1087, 17137, 21, 558, 576, 17149, 6438, 5191, 587, 5075, 1633, 17150, 17151, 17233, 17427, 17428, 4945, 17152, 17134, 17139, 17136, 17505, 5078, 12817, 2]
 
 // Module 17146 (MainChannels)
 import react2 from "react" /* 576 */;
@@ -9,7 +9,7 @@ import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import useChatLayoutDefault from "useChatLayout" /* 5075 */;
 import useRefValueDefault from "useRefValue" /* 6438 */;
-import StartupProfilerDefault from "StartupProfiler" /* 12822 */;
+import StartupProfilerDefault from "StartupProfiler" /* 12817 */;
 import isJankScreenReportingEnabled from "isJankScreenReportingEnabled" /* 17134 */;
 import getJankScreenName from "getJankScreenName" /* 17136 */;
 import JankScreenConstants from "JankScreenConstants" /* 17137 */;
@@ -41,7 +41,7 @@ let rect;
 let tmp;
 let unpackModuleId;
 const HomeDrawerExperiment = tmp(5078);
-const StartupProfiler = tmp(12822);
+const StartupProfiler = tmp(12817);
 function resolveHomeDrawerName() {
   return HOME_DRAWER_SCREEN;
 }

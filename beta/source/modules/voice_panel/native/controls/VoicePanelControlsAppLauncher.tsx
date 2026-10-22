@@ -1,7 +1,7 @@
 // Module ID: 18351
 // Function ID: 18352
 // Name: VoicePanelControlsAppLauncher
-// Dependencies: [19, 2068, 10678, 1087, 21, 5191, 558, 576, 9608, 10679, 8668, 504, 38, 12929, 1123, 10948, 10949, 4945, 11896, 12930, 1128, 2]
+// Dependencies: [19, 2068, 10678, 1087, 21, 5191, 558, 576, 9608, 10679, 8668, 504, 38, 12924, 1123, 10948, 10949, 4945, 11891, 12925, 1128, 2]
 
 // Module 18351 (VoicePanelControlsAppLauncher)
 import Constants from "Constants" /* 1087 */;
@@ -220,7 +220,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const stateFromStores = obj2.useStateFromStores(items, () => ChannelStore.getChannel(c2));
   setControlsMode(38)(null != stateFromStores, "channel should not be null");
   const items1 = [setControlsMode];
-  const obj3 = gestureSpecs(12929);
+  const obj3 = gestureSpecs(12924);
   const controlsDrawerOpenWidth = obj3.getControlsDrawerOpenWidth(tmp4.width, rect.left, rect.right);
   const callback = react.useCallback(() => {
     const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
@@ -277,9 +277,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   View = setControlsMode(4945).View;
   items3 = [, ];
   const obj12 = { bottomSheetIndex: sharedValue1, bottomSheetPosition: sharedValue, bottomSheetExpandReasonRef: ref1, context: { type: "channel", channel: stateFromStores }, chatInputRef: appLauncherChatInputRefDummy, entrypoint: VOICE, keyboardCloseReasonRef: ref, onActivityItemSelected: callback, width: controlsDrawerOpenWidth };
-  items3[0] = closure_7(setControlsMode(11896), obj12);
+  items3[0] = closure_7(setControlsMode(11891), obj12);
   const obj13 = { title: intl.string(gestureSpecs(1128).t.shUONg), disablePill: true };
-  const tmp17 = setControlsMode(12930);
+  const tmp17 = setControlsMode(12925);
   intl = gestureSpecs(1128).intl;
   items3[1] = closure_7(tmp17, obj13);
   return closure_7(closure_9, obj10);

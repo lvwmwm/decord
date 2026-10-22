@@ -1,9 +1,9 @@
-// Module ID: 13019
-// Function ID: 13020
+// Module ID: 13014
+// Function ID: 13015
 // Name: NewMessagesTagListInput
-// Dependencies: [19, 17, 1392, 21, 5191, 587, 1384, 558, 576, 1388, 10523, 6462, 1128, 13020, 10936, 5187, 4923, 8898, 2]
+// Dependencies: [19, 17, 1392, 21, 5191, 587, 1384, 558, 576, 1388, 10523, 6462, 1128, 13015, 10936, 5187, 4923, 8898, 2]
 
-// Module 13019 (NewMessagesTagListInput)
+// Module 13014 (NewMessagesTagListInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -188,7 +188,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       const obj5 = { accessibilityRole: "button", accessibilityLabel: stringResult2, onPress: onForceSearchResults, style: tmp4.showSearchButton, children: null };
       if (forceSearchResults) {
-        let CirclePlusIcon = tmp(13020).ChevronLargeRightIcon;
+        let CirclePlusIcon = tmp(13015).ChevronLargeRightIcon;
       } else {
         CirclePlusIcon = tmp(10936).CirclePlusIcon;
       }

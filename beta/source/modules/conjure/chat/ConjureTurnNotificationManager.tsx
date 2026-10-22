@@ -1,7 +1,7 @@
 // Module ID: 18471
 // Function ID: 18472
 // Name: ConjureTurnNotificationManager
-// Dependencies: [7525, 1246, 13512, 2119, 5034, 6015, 6293, 1087, 2075, 7085, 11017, 2044, 11002, 11372, 7222, 12174, 2]
+// Dependencies: [7525, 1246, 13507, 2119, 5034, 6015, 6293, 1087, 2075, 7085, 11017, 2044, 11002, 11372, 7222, 12169, 2]
 
 // Module 18471 (ConjureTurnNotificationManager)
 import UserSettings from "UserSettings" /* 2044 */;
@@ -10,10 +10,10 @@ import ConjureUtils from "ConjureUtils" /* 7222 */;
 import conjureProjectMute from "conjureProjectMute" /* 11002 */;
 import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 11017 */;
 import SoundUtils from "SoundUtils" /* 11372 */;
-import conjureMentions from "conjureMentions" /* 12174 */;
+import conjureMentions from "conjureMentions" /* 12169 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 7525 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 13512 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 13507 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 6015 */;

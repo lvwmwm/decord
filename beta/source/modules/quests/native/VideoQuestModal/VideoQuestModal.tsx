@@ -1,7 +1,7 @@
 // Module ID: 16169
 // Function ID: 16170
 // Name: VideoQuestModal
-// Dependencies: [32, 19, 17, 16137, 1087, 21, 5191, 587, 558, 576, 16170, 13925, 7672, 16138, 8668, 4945, 5478, 1633, 7039, 16171, 16174, 16201, 7092, 9470, 9473, 13919, 6231, 10929, 2]
+// Dependencies: [32, 19, 17, 16137, 1087, 21, 5191, 587, 558, 576, 16170, 13920, 7672, 16138, 8668, 4945, 5478, 1633, 7039, 16171, 16174, 16201, 7092, 9470, 9473, 13914, 6231, 10929, 2]
 
 // Module 16169 (VideoQuestModal)
 import nativeDefault from "native" /* 587 */;
@@ -11,8 +11,8 @@ import spring from "spring" /* 5478 */;
 import QuestTypes from "QuestTypes" /* 6231 */;
 import AnalyticsActions from "AnalyticsActions" /* 7672 */;
 import QuestUtils from "QuestUtils" /* 9470 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 13919 */;
-import applyOrientationLock2 from "applyOrientationLock" /* 13925 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 13914 */;
+import applyOrientationLock2 from "applyOrientationLock" /* 13920 */;
 import QuestDockConstants from "QuestDockConstants" /* 16137 */;
 import QuestDockGestureContext from "QuestDockGestureContext" /* 16138 */;
 import VideoQuestModalContextDefault from "VideoQuestModalContext" /* 16170 */;

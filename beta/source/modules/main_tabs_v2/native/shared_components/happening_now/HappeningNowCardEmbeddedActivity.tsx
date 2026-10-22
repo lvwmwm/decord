@@ -1,7 +1,7 @@
 // Module ID: 17215
 // Function ID: 17216
 // Name: HappeningNowCardEmbeddedActivity
-// Dependencies: [32, 19, 17, 1392, 16354, 1087, 21, 5191, 587, 573, 17216, 7134, 1267, 7155, 12516, 2002, 17188, 4945, 9263, 1275, 17199, 16355, 8506, 5128, 17212, 2]
+// Dependencies: [32, 19, 17, 1392, 16354, 1087, 21, 5191, 587, 573, 17216, 7134, 1267, 7155, 12511, 2002, 17188, 4945, 9263, 1275, 17199, 16355, 8506, 5128, 17212, 2]
 // Exports: default
 
 // Module 17215 (HappeningNowCardEmbeddedActivity)
@@ -132,7 +132,7 @@ export default function HappeningNowCardEmbeddedActivity(guildId) {
     }
     items1 = [userId];
     track(ACTIVITY_CARD_CLICKED, obj);
-    const promise = asyncRequire(12516, tmp.paths);
+    const promise = asyncRequire(12511, tmp.paths);
     promise.then((result) => {
       if (null != channelId) {
         tmp(tmp2, true);

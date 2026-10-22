@@ -1,7 +1,7 @@
 // Module ID: 18782
 // Function ID: 18783
 // Name: GuildSettingsModalServerTag
-// Dependencies: [5, 32, 19, 17, 8890, 2090, 8911, 1087, 8155, 21, 5191, 587, 1505, 8913, 504, 8891, 8563, 8892, 8910, 4903, 1128, 13170, 5107, 6478, 7365, 1506, 5400, 1202, 7004, 13953, 5187, 6542, 7172, 6457, 5477, 14930, 8855, 14928, 18783, 2]
+// Dependencies: [5, 32, 19, 17, 8890, 2090, 8911, 1087, 8155, 21, 5191, 587, 1505, 8913, 504, 8891, 8563, 8892, 8910, 4903, 1128, 13165, 5107, 6478, 7365, 1506, 5400, 1202, 7004, 13948, 5187, 6542, 7172, 6457, 5477, 14930, 8855, 14928, 18783, 2]
 // Exports: default
 
 // Module 18782 (GuildSettingsModalServerTag)
@@ -12,7 +12,7 @@ import Powerups from "Powerups" /* 5107 */;
 import GuildProfileStore from "GuildProfileStore" /* 8890 */;
 import GuildProfileActionCreators from "GuildProfileActionCreators" /* 8892 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8910 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 13170 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 13165 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -383,7 +383,7 @@ export default function GuildSettingsModalServerTag(guildId) {
                   return obj.getGuildProfile(guildId, true);
                 }
         };
-        return closure_13(navigation(13953), obj8);
+        return closure_13(navigation(13948), obj8);
       } else if (null == stateFromStores1) {
         return closure_13(tmp2(7004).SceneLoadingIndicator, {});
       } else {

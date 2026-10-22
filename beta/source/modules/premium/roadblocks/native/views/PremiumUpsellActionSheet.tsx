@@ -1,7 +1,7 @@
 // Module ID: 9580
 // Function ID: 9581
 // Name: PremiumUpsellActionSheet
-// Dependencies: [19, 17, 5181, 1207, 5209, 5034, 1392, 1394, 1087, 5311, 9581, 21, 5191, 587, 558, 576, 4913, 4864, 9582, 8047, 8031, 9583, 9584, 1128, 9588, 9592, 9593, 5155, 9579, 9594, 13819, 13823, 1107, 1384, 9303, 5128, 5491, 504, 7130, 9571, 7436, 8359, 13824, 9834, 1267, 9818, 5081, 7175, 13826, 5187, 5479, 8350, 2]
+// Dependencies: [19, 17, 5181, 1207, 5209, 5034, 1392, 1394, 1087, 5311, 9581, 21, 5191, 587, 558, 576, 4913, 4864, 9582, 8047, 8031, 9583, 9584, 1128, 9588, 9592, 9593, 5155, 9579, 9594, 13814, 13818, 1107, 1384, 9303, 5128, 5491, 504, 7130, 9571, 7436, 8359, 13819, 9834, 1267, 9818, 5081, 7175, 13821, 5187, 5479, 8350, 2]
 
 // Module 9580 (PremiumUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -20,7 +20,7 @@ import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9581 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9592 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 9593 */;
 import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9594 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13823 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13818 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5181 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
@@ -60,7 +60,7 @@ const EntitlementFeatureNames = tmp(9582);
 const PremiumFeatureUpsellUtils = tmp(9583);
 const ReactionsSpotIllustration = tmp(9584);
 const StickersSpotIllustration = tmp(9588);
-const NitroScheduleMessageSpotIllustration = tmp(13819);
+const NitroScheduleMessageSpotIllustration = tmp(13814);
 const View = react_native.View;
 ({ PremiumSubscriptionSKUs: c10, PremiumTypes: unpackModuleId, PremiumUpsellTypes: closure_12 } = PremiumConstants);
 ({ AnalyticEvents: map1, AnalyticsPages: closure_14, ThemeTypes: closure_15 } = Constants);

@@ -1,9 +1,9 @@
-// Module ID: 13112
-// Function ID: 13113
+// Module ID: 13107
+// Function ID: 13108
 // Name: useChangelogRenderedAnalytics
-// Dependencies: [19, 2132, 6291, 7291, 1087, 558, 576, 13113, 504, 6369, 8395, 1267, 2]
+// Dependencies: [19, 2132, 6291, 7291, 1087, 558, 576, 13108, 504, 6369, 8395, 1267, 2]
 
-// Module 13112 (useChangelogRenderedAnalytics)
+// Module 13107 (useChangelogRenderedAnalytics)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 8395 */;

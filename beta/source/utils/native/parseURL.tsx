@@ -1,7 +1,7 @@
 // Module ID: 5168
 // Function ID: 5169
 // Name: parseURL
-// Dependencies: [32, 1087, 1089, 5169, 5170, 5171, 1493, 1951, 1389, 5172, 5177, 13976, 5889, 14857, 1386, 5522, 11, 9528, 7394, 1630, 1384, 9111, 1267, 1280, 14858, 2]
+// Dependencies: [32, 1087, 1089, 5169, 5170, 5171, 1493, 1951, 1389, 5172, 5177, 13971, 5889, 14857, 1386, 5522, 11, 9528, 7394, 1630, 1384, 9111, 1267, 1280, 14858, 2]
 // Exports: default
 
 // Module 5168 (parseURL)
@@ -22,7 +22,7 @@ import GiftCodeUtils from "GiftCodeUtils" /* 5889 */;
 import MobileWebRedirectCheckoutUtils from "MobileWebRedirectCheckoutUtils" /* 7394 */;
 import SecureFramesDeeplinkExperiment from "SecureFramesDeeplinkExperiment" /* 9111 */;
 import Authorize from "Authorize" /* 9528 */;
-import useVirtualCurrencyMobileEnabled from "useVirtualCurrencyMobileEnabled" /* 13976 */;
+import useVirtualCurrencyMobileEnabled from "useVirtualCurrencyMobileEnabled" /* 13971 */;
 import QRLoginUtils from "QRLoginUtils" /* 14857 */;
 import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 14858 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

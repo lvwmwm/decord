@@ -1,9 +1,9 @@
-// Module ID: 13337
-// Function ID: 13338
+// Module ID: 13332
+// Function ID: 13333
 // Name: VoiceMessageOverlay
-// Dependencies: [32, 19, 17, 5181, 2068, 12825, 12826, 1087, 12339, 21, 4945, 1202, 5187, 12, 7843, 5191, 587, 6225, 558, 576, 504, 4913, 6438, 1128, 5192, 8468, 10782, 13338, 6942, 13073, 5462, 5471, 1123, 12608, 11350, 12920, 12915, 7840, 5149, 5139, 11492, 12335, 13339, 2]
+// Dependencies: [32, 19, 17, 5181, 2068, 12820, 12821, 1087, 12334, 21, 4945, 1202, 5187, 12, 7843, 5191, 587, 6225, 558, 576, 504, 4913, 6438, 1128, 5192, 8468, 10782, 13333, 6942, 13068, 5462, 5471, 1123, 12603, 11350, 12915, 12910, 7840, 5149, 5139, 11492, 12330, 13334, 2]
 
-// Module 13337 (VoiceMessageOverlay)
+// Module 13332 (VoiceMessageOverlay)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -17,9 +17,9 @@ import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5462 */;
 import LegacyTokens from "LegacyTokens" /* 6225 */;
 import useRefValueDefault from "useRefValue" /* 6438 */;
 import inlineStyles from "inlineStyles" /* 7843 */;
-import ChatInputConstants from "ChatInputConstants" /* 12339 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 12825 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 12826 */;
+import ChatInputConstants from "ChatInputConstants" /* 12334 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 12820 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 12821 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;

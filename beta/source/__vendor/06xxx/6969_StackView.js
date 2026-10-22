@@ -258,7 +258,7 @@ const entry1 = {
     let arr3;
     let closingRouteKeys;
     let openingRouteKeys;
-    const f95624 = (item, index) => Object.is(item, arr3[index]);
+    const f95633 = (item, index) => Object.is(item, arr3[index]);
     _require = state;
     dependencyMap = previousState;
     const items = [...state.state.preloadedRoutes];
@@ -279,7 +279,7 @@ const entry1 = {
       let tmp11;
       let found4;
       let arr11;
-      const tmp6 = mapped.length === mapped1.length && mapped.every(f95624);
+      const tmp6 = mapped.length === mapped1.length && mapped.every(f95633);
       if (tmp6) {
         if (previousState.routes.length) {
           let routes = previousState.routes;
@@ -320,7 +320,7 @@ const entry1 = {
           }
           if (typeof tmp5 === "function") {
             let mapped2 = substr;
-            const tmp73 = items.length === arr3.length && items.every(f95624);
+            const tmp73 = items.length === arr3.length && items.every(f95633);
             if (!tmp73) {
               closure_2 = items.reduce((acc, key) => {
                 acc[key.key] = key;

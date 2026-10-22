@@ -1,9 +1,9 @@
-// Module ID: 13481
-// Function ID: 13482
+// Module ID: 13476
+// Function ID: 13477
 // Name: ForumChannelEmptyState
-// Dependencies: [19, 17, 21, 5191, 558, 576, 5065, 1633, 13482, 13483, 5128, 1128, 5187, 2]
+// Dependencies: [19, 17, 21, 5191, 558, 576, 5065, 1633, 13477, 13478, 5128, 1128, 5187, 2]
 
-// Module 13481 (ForumChannelEmptyState)
+// Module 13476 (ForumChannelEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
@@ -56,9 +56,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
     const tmpResult2 = shared;
     if (tmpResult2.isThemeLight(theme)) {
-      tmp5Result = tmp5(13482);
+      tmp5Result = tmp5(13477);
     } else {
-      tmp5Result = tmp5(13483);
+      tmp5Result = tmp5(13478);
     }
     if (cResult[5] === tmp4.image) {
       let tmp11;
@@ -187,9 +187,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const tmp6 = hasOwnProperty;
   const tmp7 = View;
   if (obj3.isThemeLight(theme)) {
-    tmp4Result = tmp4(13482);
+    tmp4Result = tmp4(13477);
   } else {
-    tmp4Result = tmp4(13483);
+    tmp4Result = tmp4(13478);
   }
   items1 = [, , ];
   const obj4 = { source: tmp4Result, style: tmp.image };

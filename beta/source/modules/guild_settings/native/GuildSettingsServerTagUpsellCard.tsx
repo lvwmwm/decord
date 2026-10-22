@@ -1,14 +1,14 @@
 // Module ID: 18783
 // Function ID: 18784
 // Name: GuildSettingsServerTagUpsellCard
-// Dependencies: [19, 17, 5103, 21, 5191, 587, 558, 576, 5107, 504, 13209, 13179, 5491, 13212, 1128, 5187, 5477, 17349, 5479, 2]
+// Dependencies: [19, 17, 5103, 21, 5191, 587, 558, 576, 5107, 504, 13204, 13174, 5491, 13207, 1128, 5187, 5477, 17349, 5479, 2]
 
 // Module 18783 (GuildSettingsServerTagUpsellCard)
 import nativeDefault from "native" /* 587 */;
 import Powerups from "Powerups" /* 5107 */;
 import LinearGradientDefault from "LinearGradient" /* 5491 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13179 */;
-import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 13209 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13174 */;
+import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 13204 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 5103 */;
@@ -353,7 +353,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
       }
     }
     const obj9 = { imageUrl: tmp11, style: tmp4.powerupImage };
-    tmp30 = closure_6(tmp10(13212), obj9);
+    tmp30 = closure_6(tmp10(13207), obj9);
   }
   cResult[15] = tmp11;
   cResult[16] = tmp4.powerupImage;
@@ -406,7 +406,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   tmp10Result = null != tmp6;
   if (tmp10Result) {
     const obj8 = { imageUrl: tmp6, style: tmp.powerupImage };
-    tmp10Result = tmp10(tmp5(13212), obj8);
+    tmp10Result = tmp10(tmp5(13207), obj8);
   }
   items5 = [closure_6(closure_4, obj7), , ];
   const obj9 = { spacing: nativeDefault.space.PX_8, style: tmp.textBlock, children: items6 };

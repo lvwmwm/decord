@@ -1,7 +1,7 @@
 // Module ID: 18711
 // Function ID: 18712
 // Name: BaseActionInfo
-// Dependencies: [2068, 4855, 1392, 12598, 2130, 1128, 5521, 2]
+// Dependencies: [2068, 4855, 1392, 12593, 2130, 1128, 5521, 2]
 // Exports: getBaseActionInfo
 
 // Module 18711 (BaseActionInfo)
@@ -11,7 +11,7 @@ import useChannelName from "useChannelName" /* 5521 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
 import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 12598 */;
+import Constants from "Constants" /* 12593 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

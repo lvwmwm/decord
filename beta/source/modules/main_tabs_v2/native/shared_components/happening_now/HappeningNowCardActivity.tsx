@@ -1,7 +1,7 @@
 // Module ID: 17203
 // Function ID: 17204
 // Name: HappeningNowCardActivity
-// Dependencies: [19, 17, 2073, 1392, 16354, 1087, 1098, 21, 17204, 17205, 5191, 587, 7130, 504, 7134, 1267, 12516, 2002, 8577, 17199, 5509, 17206, 16355, 17200, 1202, 17209, 10555, 17210, 10551, 14057, 9197, 8497, 9514, 1128, 558, 576, 5063, 1384, 11559, 5128, 17201, 17212, 11562, 8547, 17214, 8648, 2]
+// Dependencies: [19, 17, 2073, 1392, 16354, 1087, 1098, 21, 17204, 17205, 5191, 587, 7130, 504, 7134, 1267, 12511, 2002, 8577, 17199, 5509, 17206, 16355, 17200, 1202, 17209, 10555, 17210, 10551, 14052, 9197, 8497, 9514, 1128, 558, 576, 5063, 1384, 11559, 5128, 17201, 17212, 11562, 8547, 17214, 8648, 2]
 
 // Module 17203 (HappeningNowCardActivity)
 import react2 from "react" /* 576 */;
@@ -55,7 +55,7 @@ let size;
 let tmp;
 let tmp4;
 let unpackModuleId;
-const isOnXboxDefault = tmp(14057);
+const isOnXboxDefault = tmp(14052);
 const AssetRegistryDefault3 = tmp4(17214);
 function getActivityA11yLabel(activity) {
   let stringResult;
@@ -202,7 +202,7 @@ const memoResult = react.memo(function ActivityCard(userId) {
     }
     track(ACTIVITY_CARD_CLICKED, obj);
     if (null != stream) {
-      const promise2 = asyncRequire(12516, dependencyMap.paths);
+      const promise2 = asyncRequire(12511, dependencyMap.paths);
       promise2.then((result) => result.default(channelId.channelId, true));
     } else {
       const promise = asyncRequire(8577, dependencyMap.paths);

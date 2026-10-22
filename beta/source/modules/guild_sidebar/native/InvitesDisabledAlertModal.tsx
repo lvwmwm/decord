@@ -1,9 +1,9 @@
-// Module ID: 12948
-// Function ID: 12949
+// Module ID: 12943
+// Function ID: 12944
 // Name: InvitesDisabledAlertModal
 // Dependencies: [19, 21, 558, 576, 1128, 5405, 5405, 2]
 
-// Module 12948 (InvitesDisabledAlertModal)
+// Module 12943 (InvitesDisabledAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;

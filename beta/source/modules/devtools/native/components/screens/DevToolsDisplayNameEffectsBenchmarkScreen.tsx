@@ -1,7 +1,7 @@
 // Module ID: 16809
 // Function ID: 16810
 // Name: DevToolsDisplayNameEffectsBenchmarkScreen
-// Dependencies: [32, 19, 17, 1392, 1410, 21, 1411, 10572, 1128, 10568, 2981, 5191, 587, 558, 576, 5187, 5479, 5477, 10565, 10566, 504, 16810, 13839, 6457, 6542, 5886, 2]
+// Dependencies: [32, 19, 17, 1392, 1410, 21, 1411, 10572, 1128, 10568, 2981, 5191, 587, 558, 576, 5187, 5479, 5477, 10565, 10566, 504, 16810, 13834, 6457, 6542, 5886, 2]
 
 // Module 16809 (DevToolsDisplayNameEffectsBenchmarkScreen)
 import react2 from "react" /* 576 */;

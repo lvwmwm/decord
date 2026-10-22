@@ -1,7 +1,7 @@
 // Module ID: 17165
 // Function ID: 17166
 // Name: MessagesItemChannelContent
-// Dependencies: [19, 17, 6291, 6223, 21, 5191, 587, 558, 576, 1202, 8598, 6928, 10788, 10642, 5127, 4920, 504, 16377, 4797, 6369, 11, 17166, 5521, 17167, 4913, 10565, 10566, 5187, 9130, 9039, 13534, 9615, 10538, 1128, 17169, 2]
+// Dependencies: [19, 17, 6291, 6223, 21, 5191, 587, 558, 576, 1202, 8598, 6928, 10788, 10642, 5127, 4920, 504, 16377, 4797, 6369, 11, 17166, 5521, 17167, 4913, 10565, 10566, 5187, 9130, 9039, 13529, 9615, 10538, 1128, 17169, 2]
 
 // Module 17165 (MessagesItemChannelContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -478,7 +478,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         let str6 = "text-muted";
         const obj20 = { message: tmp11, channel, color: str7, layout: channel(9615).ChannelListLayoutTypes.COZY_DRAWER_SMOL, muted };
         str7 = "text-muted";
-        const ChannelRowPreview = tmp(13534).ChannelRowPreview;
+        const ChannelRowPreview = tmp(13529).ChannelRowPreview;
         if (!((muted || ignored || blocked) && !channelSelected)) {
           if (channelSelected) {
             str6 = "mobile-text-heading-primary";

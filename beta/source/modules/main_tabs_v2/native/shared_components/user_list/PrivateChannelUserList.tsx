@@ -1,15 +1,15 @@
-// Module ID: 12037
-// Function ID: 12038
+// Module ID: 12032
+// Function ID: 12033
 // Name: PrivateChannelUserList
-// Dependencies: [32, 19, 17, 2068, 4855, 1392, 1087, 21, 558, 576, 7130, 504, 12, 1388, 11164, 11167, 11166, 4913, 587, 12038, 1128, 9327, 12039, 8577, 10526, 2]
+// Dependencies: [32, 19, 17, 2068, 4855, 1392, 1087, 21, 558, 576, 7130, 504, 12, 1388, 11164, 11167, 11166, 4913, 587, 12033, 1128, 9327, 12034, 8577, 10526, 2]
 
-// Module 12037 (PrivateChannelUserList)
+// Module 12032 (PrivateChannelUserList)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1128 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8577 */;
-import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 12039 */;
+import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 12034 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;

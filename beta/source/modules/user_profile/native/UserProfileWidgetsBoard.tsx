@@ -1,9 +1,9 @@
-// Module ID: 14148
-// Function ID: 14149
+// Module ID: 14143
+// Function ID: 14144
 // Name: UserProfileWidgetsBoard
-// Dependencies: [32, 19, 17, 502, 8581, 21, 5191, 587, 558, 576, 9150, 9151, 8588, 5128, 14149, 5187, 14153, 2034, 14154, 504, 12, 7587, 1128, 11840, 14156, 7180, 7591, 11735, 7592, 14158, 14162, 2]
+// Dependencies: [32, 19, 17, 502, 8581, 21, 5191, 587, 558, 576, 9150, 9151, 8588, 5128, 14144, 5187, 14149, 2034, 14150, 504, 12, 7587, 1128, 14152, 14156, 7180, 7591, 11735, 7592, 14158, 14162, 2]
 
-// Module 14148 (UserProfileWidgetsBoard)
+// Module 14143 (UserProfileWidgetsBoard)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,7 +13,7 @@ import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes
 import Constants from "Constants" /* 8581 */;
 import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9151 */;
 import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 11735 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 14153 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 14149 */;
 import UserProfilePersonalWidgetCardDefault from "UserProfilePersonalWidgetCard" /* 14158 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -597,7 +597,7 @@ let closure_18 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   if (tmp6Result) {
     const obj6 = { style: tmp.comment, children: items3 };
     const obj7 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-    const QuoteIcon = tmp9(14154).QuoteIcon;
+    const QuoteIcon = tmp9(14150).QuoteIcon;
     items3 = [React4(QuoteIcon, obj7), ];
     const obj8 = { variant: "text-sm/normal", color: "text-muted", lineClamp: 3, style: tmp.commentText, children: game.comment };
     items3[1] = React4(Text_Text.Text, obj8);
@@ -1236,7 +1236,7 @@ const memo6Result = memo6(ReactCompilerGating.isReactCompilerEnabled() ? (functi
     arr3 = substr1;
   }
   if (cResult[51] !== widget) {
-    const tmpResult2 = userId(11840);
+    const tmpResult2 = userId(14152);
     const widgetTitle = tmpResult2.getWidgetTitle(widget);
     cResult[51] = widget;
     cResult[52] = widgetTitle;

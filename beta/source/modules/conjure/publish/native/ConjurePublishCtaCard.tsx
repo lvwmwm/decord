@@ -1,14 +1,14 @@
-// Module ID: 12305
-// Function ID: 12306
+// Module ID: 12300
+// Function ID: 12301
 // Name: ConjurePublishCtaCard
-// Dependencies: [19, 2090, 21, 558, 576, 504, 5479, 5477, 5187, 1128, 3883, 6436, 12128, 11692, 12306, 2]
+// Dependencies: [19, 2090, 21, 558, 576, 504, 5479, 5477, 5187, 1128, 3883, 6436, 12123, 11692, 12301, 2]
 
-// Module 12305 (ConjurePublishCtaCard)
+// Module 12300 (ConjurePublishCtaCard)
 import react2 from "react" /* 576 */;
 import _modDef3883 from "module_3883" /* 3883 */;
 import useConjurePublishActionDefault from "useConjurePublishAction" /* 11692 */;
-import conjurePublishCard from "conjurePublishCard" /* 12128 */;
-import ConjureTipInlineCalloutDefault from "ConjureTipInlineCallout" /* 12306 */;
+import conjurePublishCard from "conjurePublishCard" /* 12123 */;
+import ConjureTipInlineCalloutDefault from "ConjureTipInlineCallout" /* 12301 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import Fragment from "Fragment" /* 21 */;
@@ -87,7 +87,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publish
             items1[1] = closure_4(tmp16, obj4);
             const obj5 = { variant: "text-sm/medium", color: "text-default", lineClamp: 1, children: tmpResult2.publishCardServerName(stateFromStores.name) };
             const Text2 = tmp(5187).Text;
-            tmpResult2 = tmp(12128);
+            tmpResult2 = tmp(12123);
             items1[2] = closure_4(Text2, obj5);
             tmp12 = closure_5(Stack, obj2);
           }
@@ -164,7 +164,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publish
     items2[1] = closure_4(tmp8, obj5);
     const obj6 = { variant: "text-sm/medium", color: "text-default", lineClamp: 1, children: tmpResult.publishCardServerName(stateFromStores.name) };
     const Text2 = tmp(5187).Text;
-    tmpResult = tmp(12128);
+    tmpResult = tmp(12123);
     items2[2] = closure_4(Text2, obj6);
     tmp4Result = tmp4(Stack2, obj3);
   }

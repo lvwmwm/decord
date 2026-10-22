@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 
 let tmp;
 const _slicedToArray = tmp(4828);
-let closure_2 = Object.freeze({ name: "", emojiId: "ix", emojiName: "Reflect", description: "gap", refId: "w" });
+let closure_2 = Object.freeze({ name: "", emojiId: "gap", emojiName: "w", description: "ix", refId: "kind" });
 let closure_3 = module_1269.createWithEqualityFn((arg0) => {
   let closure_0 = arg0;
   let obj = {

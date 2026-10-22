@@ -1,18 +1,18 @@
-// Module ID: 12358
-// Function ID: 12359
+// Module ID: 12353
+// Function ID: 12354
 // Name: ConjureDebugLogsTab
-// Dependencies: [32, 19, 17, 10988, 21, 5191, 587, 558, 576, 12359, 10859, 7182, 12352, 5187, 1128, 3883, 6462, 6459, 1633, 504, 12360, 8805, 9051, 7016, 12362, 12363, 7091, 2]
+// Dependencies: [32, 19, 17, 10988, 21, 5191, 587, 558, 576, 12354, 10859, 7182, 12347, 5187, 1128, 3883, 6462, 6459, 1633, 504, 12355, 8805, 9051, 7016, 12357, 12358, 7091, 2]
 
-// Module 12358 (ConjureDebugLogsTab)
+// Module 12353 (ConjureDebugLogsTab)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import _modDef3883 from "module_3883" /* 3883 */;
 import Text_Text from "Text/Text" /* 5187 */;
-import ConjureTimeFormat from "ConjureTimeFormat" /* 12352 */;
-import ConjureDebugJson from "ConjureDebugJson" /* 12359 */;
-import ConjureDebugLabels from "ConjureDebugLabels" /* 12360 */;
+import ConjureTimeFormat from "ConjureTimeFormat" /* 12347 */;
+import ConjureDebugJson from "ConjureDebugJson" /* 12354 */;
+import ConjureDebugLabels from "ConjureDebugLabels" /* 12355 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ConjureDebugLogStore from "ConjureDebugLogStore" /* 10988 */;
@@ -338,7 +338,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
   let obj = { style: tmp.row, children: items2 };
   const obj2 = { style: tmp.rowHead, children: items1 };
   const Text = tmp6(5187).Text;
-  const tmp6Result = tmp6(12352);
+  const tmp6Result = tmp6(12347);
   let ts = tmp6Result.formatClockTime(entry.ts);
   if (ts == null) {
     ts = entry.ts;
@@ -523,7 +523,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
           return tmp(str);
         }
     };
-    DEBUG_LOG_FILTERS = tmp(12360).DEBUG_LOG_FILTERS;
+    DEBUG_LOG_FILTERS = tmp(12355).DEBUG_LOG_FILTERS;
     cResult[8] = obj2;
     tmp21 = obj2;
   } else {
@@ -724,8 +724,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
         const obj7 = { state: stateFromStores1, hasRows: stateFromStores.length > 0 };
         cResult[21] = stateFromStores1;
         cResult[22] = stateFromStores.length > 0;
-        cResult[23] = closure_7(tmp(12362).ConjureHistoryNotice, obj7);
-        const tmp38 = closure_7(tmp(12362).ConjureHistoryNotice, obj7);
+        cResult[23] = closure_7(tmp(12357).ConjureHistoryNotice, obj7);
+        const tmp38 = closure_7(tmp(12357).ConjureHistoryNotice, obj7);
       }
       const fn3 = function q(item) {
         item = item.item;
@@ -737,7 +737,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
       cResult[17] = fn3;
     }
   }
-  const tmpResult6 = tmp(12360);
+  const tmpResult6 = tmp(12355);
   cResult[9] = tmp17;
   cResult[10] = stateFromStores;
   cResult[11] = first1;

@@ -1,7 +1,7 @@
 // Module ID: 18021
 // Function ID: 18022
 // Name: modal/ModalScreen
-// Dependencies: [109, 19, 17, 1087, 21, 5191, 587, 558, 576, 6190, 1275, 9263, 7463, 1633, 18022, 1384, 11847, 2]
+// Dependencies: [109, 19, 17, 1087, 21, 5191, 587, 558, 576, 6190, 1275, 9263, 7463, 1633, 18022, 1384, 11842, 2]
 
 // Module 18021 (modal/ModalScreen)
 import nativeDefault from "native" /* 587 */;
@@ -356,8 +356,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Modal(route)
   const merged = Object.assign(tmp2);
   items2 = [<modal2 style={undefined} transitionState={null} onClose={callback} />, ];
   const tmp7Result2 = modal(1384);
-  items2[1] = tmp7Result2.isIOS() && closure_10(tmp7(11847).PortalKeyboardRenderer, { portal: false });
-  const isIOSResult = tmp7Result2.isIOS() && closure_10(tmp7(11847).PortalKeyboardRenderer, { portal: false });
+  items2[1] = tmp7Result2.isIOS() && closure_10(tmp7(11842).PortalKeyboardRenderer, { portal: false });
+  const isIOSResult = tmp7Result2.isIOS() && closure_10(tmp7(11842).PortalKeyboardRenderer, { portal: false });
   return tmp14(tmp15, obj4);
 });
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/modal/ModalScreen.tsx");

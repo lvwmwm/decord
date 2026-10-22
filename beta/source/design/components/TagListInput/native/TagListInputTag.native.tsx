@@ -116,7 +116,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TagListInput
   let start;
   let str;
   let tag;
-  const f100462 = () => closure_1_0("remove");
+  const f100471 = () => closure_1_0("remove");
   ({ tag, selected, onPress: closure_129_0, start } = end);
   if (start === undefined) {
     start = false;
@@ -129,10 +129,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TagListInput
   const intl = intl2.intl;
   const obj = { text: tag.text };
   const formatToPlainStringResult = intl.formatToPlainString(intl2.t["0Vb9FQ"], obj);
-  ({ onAccessibilityAction, accessibilityActions } = useAccessibilityPressDefault(f100462, formatToPlainStringResult));
+  ({ onAccessibilityAction, accessibilityActions } = useAccessibilityPressDefault(f100471, formatToPlainStringResult));
   const items = [tmp.tagWrapper, , , ];
   let prop;
-  useAccessibilityPressDefault(f100462, formatToPlainStringResult);
+  useAccessibilityPressDefault(f100471, formatToPlainStringResult);
   const PressableOpacity = Pressables.PressableOpacity;
   const tmp6 = hasOwnProperty;
   if (selected) {

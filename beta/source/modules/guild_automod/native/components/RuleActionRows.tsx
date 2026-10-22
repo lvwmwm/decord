@@ -1,7 +1,7 @@
 // Module ID: 18730
 // Function ID: 18731
 // Name: RuleActionRows
-// Dependencies: [19, 2068, 4843, 12598, 21, 5191, 587, 18707, 13135, 1128, 5155, 18731, 2002, 18732, 558, 576, 18710, 6457, 5187, 5477, 6455, 18704, 6542, 2]
+// Dependencies: [19, 2068, 4843, 12593, 21, 5191, 587, 18707, 13130, 1128, 5155, 18731, 2002, 18732, 558, 576, 18710, 6457, 5187, 5477, 6455, 18704, 6542, 2]
 
 // Module 18730 (RuleActionRows)
 import react2 from "react" /* 576 */;
@@ -12,7 +12,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155
 import Text_Text from "Text/Text" /* 5187 */;
 import FormCheckbox from "FormCheckbox" /* 6455 */;
 import TableRow2 from "TableRow" /* 6457 */;
-import Constants from "Constants" /* 12598 */;
+import Constants from "Constants" /* 12593 */;
 import AutomodActionUtils from "AutomodActionUtils" /* 18707 */;
 import getActionInfo from "getActionInfo" /* 18710 */;
 import react from "react" /* 19 */;
@@ -71,7 +71,7 @@ function openAlertChannelPicker(rule) {
     }
   };
   channel = null;
-  const tmp5 = onChangeRule(13135);
+  const tmp5 = onChangeRule(13130);
   if (null != channelId) {
     channel = ChannelStore.getChannel(channelId);
   }

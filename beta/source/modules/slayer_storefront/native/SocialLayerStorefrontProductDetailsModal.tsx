@@ -1407,7 +1407,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
   let tmp43;
   let tmp70;
   let type;
-  const f105600 = () => {
+  const f105609 = () => {
     let result;
     let applicationId1;
     if (stateFromStores != null) {
@@ -1529,9 +1529,9 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
     track(SLAYER_STOREFRONT_PDP_ELEMENT_CLICKED, obj);
   }, items5);
   const items6 = [stateFromStores, stateFromStores2];
-  [arr8, arr9] = mobileStoreFront(stateFromStores.useMemo(f105600, items6), 2);
+  [arr8, arr9] = mobileStoreFront(stateFromStores.useMemo(f105609, items6), 2);
   let num = 0;
-  mobileStoreFront(stateFromStores.useMemo(f105600, items6), 2);
+  mobileStoreFront(stateFromStores.useMemo(f105609, items6), 2);
   if (first < arr9.length) {
     num = first;
   }

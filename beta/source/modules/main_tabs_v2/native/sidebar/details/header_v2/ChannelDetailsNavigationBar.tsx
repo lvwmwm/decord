@@ -1,7 +1,7 @@
 // Module ID: 17881
 // Function ID: 17882
 // Name: ChannelDetailsNavigationBar
-// Dependencies: [19, 17, 4846, 4847, 2068, 6222, 9612, 9927, 1087, 9613, 21, 5191, 13030, 587, 558, 576, 4913, 504, 1505, 1128, 10655, 8161, 7840, 12949, 13009, 6180, 7018, 10595, 9996, 7369, 17882, 4922, 4945, 5192, 17755, 5195, 11186, 6482, 6462, 2]
+// Dependencies: [19, 17, 4846, 4847, 2068, 6222, 9612, 9927, 1087, 9613, 21, 5191, 13025, 587, 558, 576, 4913, 504, 1505, 1128, 10655, 8161, 7840, 12944, 13004, 6180, 7018, 10595, 9996, 7369, 17882, 4922, 4945, 5192, 17755, 5195, 11186, 6482, 6462, 2]
 
 // Module 17881 (ChannelDetailsNavigationBar)
 import react_native from "react-native" /* 17 */;
@@ -16,9 +16,9 @@ import TrackingConstants from "TrackingConstants" /* 9613 */;
 import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9996 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10595 */;
 import ChannelDetailsUtils from "ChannelDetailsUtils" /* 11186 */;
-import useSearchContext from "useSearchContext" /* 12949 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13009 */;
-import SearchButton2 from "SearchButton" /* 13030 */;
+import useSearchContext from "useSearchContext" /* 12944 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13004 */;
+import SearchButton2 from "SearchButton" /* 13025 */;
 import ChannelDetailsMoreButtonDefault from "ChannelDetailsMoreButton" /* 17882 */;
 import react_mod from "react" /* 19 */;
 import LurkingStore from "LurkingStore" /* 4846 */;

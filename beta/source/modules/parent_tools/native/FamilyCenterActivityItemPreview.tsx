@@ -1,7 +1,7 @@
 // Module ID: 15949
 // Function ID: 15950
 // Name: FamilyCenterActivityItemPreview
-// Dependencies: [19, 17, 8621, 21, 5191, 15948, 587, 558, 576, 5128, 9314, 8601, 9317, 11969, 9709, 9327, 1995, 1992, 2]
+// Dependencies: [19, 17, 8621, 21, 5191, 15948, 587, 558, 576, 5128, 9314, 8601, 9317, 11964, 9709, 9327, 1995, 1992, 2]
 
 // Module 15949 (FamilyCenterActivityItemPreview)
 import react_native from "react-native" /* 17 */;
@@ -14,7 +14,7 @@ import FastImageDefault from "FastImage" /* 5128 */;
 import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8601 */;
 import ProfileFrameConstants from "ProfileFrameConstants" /* 8621 */;
 import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9317 */;
-import ShopIcon from "ShopIcon" /* 11969 */;
+import ShopIcon from "ShopIcon" /* 11964 */;
 import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 15948 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5191 */;

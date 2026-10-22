@@ -1,9 +1,9 @@
-// Module ID: 13160
-// Function ID: 13161
+// Module ID: 13155
+// Function ID: 13156
 // Name: GuildProgressHooks
-// Dependencies: [19, 502, 2068, 4843, 5116, 2090, 13161, 5532, 4845, 1087, 558, 576, 8808, 504, 11, 12, 6364, 2]
+// Dependencies: [19, 502, 2068, 4843, 5116, 2090, 13156, 5532, 4845, 1087, 558, 576, 8808, 504, 11, 12, 6364, 2]
 
-// Module 13160 (GuildProgressHooks)
+// Module 13155 (GuildProgressHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
@@ -14,7 +14,7 @@ import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildChannelStore_mod from "GuildChannelStore" /* 4843 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 5116 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import LayerStore from "LayerStore" /* 13161 */;
+import LayerStore from "LayerStore" /* 13156 */;
 import MessageStore from "MessageStore" /* 5532 */;
 import PermissionStore from "PermissionStore" /* 4845 */;
 import Constants from "Constants" /* 1087 */;

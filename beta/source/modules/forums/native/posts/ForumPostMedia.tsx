@@ -1,9 +1,9 @@
-// Module ID: 12872
-// Function ID: 12873
+// Module ID: 12867
+// Function ID: 12868
 // Name: ForumPostMedia
-// Dependencies: [32, 19, 17, 1207, 1206, 21, 5191, 587, 558, 576, 5128, 5465, 12873, 8515, 12874, 1384, 7271, 7764, 6174, 6462, 12875, 5065, 2044, 10778, 1498, 2]
+// Dependencies: [32, 19, 17, 1207, 1206, 21, 5191, 587, 558, 576, 5128, 5465, 12868, 8515, 12869, 1384, 7271, 7764, 6174, 6462, 12870, 5065, 2044, 10778, 1498, 2]
 
-// Module 12872 (ForumPostMedia)
+// Module 12867 (ForumPostMedia)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import FormConstants from "FormConstants" /* 1206 */;
@@ -12,8 +12,8 @@ import shared from "shared" /* 5065 */;
 import FastImageDefault from "FastImage" /* 5128 */;
 import VisualEffectViewDefault from "VisualEffectView" /* 5465 */;
 import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10778 */;
-import SpoilerIconDefault from "SpoilerIcon" /* 12873 */;
-import MessageAttachmentUtils from "MessageAttachmentUtils" /* 12875 */;
+import SpoilerIconDefault from "SpoilerIcon" /* 12868 */;
+import MessageAttachmentUtils from "MessageAttachmentUtils" /* 12870 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -309,7 +309,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumP
     let tmp21;
     if (cResult[0] !== obscureReason) {
       const obj3 = {};
-      const tmp24 = ref(12874);
+      const tmp24 = ref(12869);
       const merged = Object.assign(obscureReason);
       const tmp28 = closure_9(tmp24, obj3);
       cResult[0] = obscureReason;
@@ -471,7 +471,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumP
   const shouldAgeVerifyForReason = obj.useShouldAgeVerifyForReason(obscureReason.obscureReason);
   if (obscureReason.isMediaPost) {
     let obj2 = {};
-    const tmp19 = ref(12874);
+    const tmp19 = ref(12869);
     const merged = Object.assign(obscureReason);
     tmp6Result = closure_9(tmp19, obj2);
     tmp12 = closure_9;

@@ -1,10 +1,10 @@
-// Module ID: 13522
-// Function ID: 13523
+// Module ID: 13517
+// Function ID: 13518
 // Name: useFormattedMessagePreview
 // Dependencies: [502, 4855, 1392, 1087, 1103, 558, 576, 504, 8266, 5883, 1128, 5519, 7278, 12, 8271, 8369, 2]
 // Exports: isMessageContentPreviewable
 
-// Module 13522 (useFormattedMessagePreview)
+// Module 13517 (useFormattedMessagePreview)
 import Constants from "Constants" /* 1087 */;
 import MessageTypes from "MessageTypes" /* 1103 */;
 import intl30 from "intl" /* 1128 */;

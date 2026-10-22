@@ -1,14 +1,14 @@
-// Module ID: 13772
-// Function ID: 13773
+// Module ID: 13767
+// Function ID: 13768
 // Name: StampXIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 13773, 4912, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 13768, 4912, 2]
 
-// Module 13772 (StampXIcon)
+// Module 13767 (StampXIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4912 */;
-import AssetRegistry from "AssetRegistry" /* 13773 */;
+import AssetRegistry from "AssetRegistry" /* 13768 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,7 +1,7 @@
 // Module ID: 16122
 // Function ID: 16123
 // Name: BountiesCtaHeader
-// Dependencies: [19, 17, 5181, 9463, 6228, 21, 587, 5484, 5191, 558, 576, 504, 16100, 8699, 1128, 5479, 5187, 16109, 16123, 6235, 7672, 6231, 7681, 16048, 16050, 1202, 16124, 16125, 16126, 13915, 4922, 16103, 13919, 2]
+// Dependencies: [19, 17, 5181, 9463, 6228, 21, 587, 5484, 5191, 558, 576, 504, 16100, 8699, 1128, 5479, 5187, 16109, 16123, 6235, 7672, 6231, 7681, 16048, 16050, 1202, 16124, 16125, 16126, 13910, 4922, 16103, 13914, 2]
 
 // Module 16122 (BountiesCtaHeader)
 import get_initialized from "get initialized" /* 504 */;
@@ -346,7 +346,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
   if (cResult[3] !== bounties) {
     class I {
       constructor() {
-        return bounties.some(() => { /* body not rendered: F149553 */ });
+        return bounties.some(() => { /* body not rendered: F149562 */ });
       }
     }
     const items1 = [bounties];
@@ -358,7 +358,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
   } else {
     class I {
       constructor() {
-        return bounties.some(() => { /* body not rendered: F149553 */ });
+        return bounties.some(() => { /* body not rendered: F149562 */ });
       }
     }
     tmp13 = cResult[5];
@@ -368,7 +368,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
   if (cResult[6] !== bounties[0]) {
     class I {
       constructor() {
-        return bounties.some(() => { /* body not rendered: F149553 */ });
+        return bounties.some(() => { /* body not rendered: F149562 */ });
       }
     }
     cResult[6] = bounties[0];
@@ -376,14 +376,14 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
   } else {
     class I {
       constructor() {
-        return bounties.some(() => { /* body not rendered: F149553 */ });
+        return bounties.some(() => { /* body not rendered: F149562 */ });
       }
     }
   }
   if (null == footer) {
     class I {
       constructor() {
-        return bounties.some(() => { /* body not rendered: F149553 */ });
+        return bounties.some(() => { /* body not rendered: F149562 */ });
       }
     }
   }
@@ -391,27 +391,27 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
     let tmp39Result;
     class I {
       constructor() {
-        return bounties.some(() => { /* body not rendered: F149553 */ });
+        return bounties.some(() => { /* body not rendered: F149562 */ });
       }
     }
     if (cResult[11] === tmp8) {
       class I {
         constructor() {
-          return bounties.some(() => { /* body not rendered: F149553 */ });
+          return bounties.some(() => { /* body not rendered: F149562 */ });
         }
       }
     }
     if (null != replaceHeaderMediaWith) {
       class I {
         constructor() {
-          return bounties.some(() => { /* body not rendered: F149553 */ });
+          return bounties.some(() => { /* body not rendered: F149562 */ });
         }
       }
       const items2 = [tmp5.headerReplaceMedia, ];
       if (null == footer) {
         class I {
           constructor() {
-            return bounties.some(() => { /* body not rendered: F149553 */ });
+            return bounties.some(() => { /* body not rendered: F149562 */ });
           }
         }
       }
@@ -424,7 +424,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
       if (tmp31Result) {
         class I {
           constructor() {
-            return bounties.some(() => { /* body not rendered: F149553 */ });
+            return bounties.some(() => { /* body not rendered: F149562 */ });
           }
         }
         ({ newPillInline: tmp34[1], newPillText: tmp34[2] } = tmp5);
@@ -440,14 +440,14 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
       if (!(undefined !== isEmptyOrCompleted && isEmptyOrCompleted)) {
         class I {
           constructor() {
-            return bounties.some(() => { /* body not rendered: F149553 */ });
+            return bounties.some(() => { /* body not rendered: F149562 */ });
           }
         }
       }
       if (tmp31Result2) {
         class I {
           constructor() {
-            return bounties.some(() => { /* body not rendered: F149553 */ });
+            return bounties.some(() => { /* body not rendered: F149562 */ });
           }
         }
         tmp37[0] = tmp5.headerReplaceMediaCta;
@@ -460,7 +460,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
     } else {
       class I {
         constructor() {
-          return bounties.some(() => { /* body not rendered: F149553 */ });
+          return bounties.some(() => { /* body not rendered: F149562 */ });
         }
       }
       const obj9 = { uri: _modDef16125, style: items5, children: items6 };
@@ -469,7 +469,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
       if (null == footer) {
         class I {
           constructor() {
-            return bounties.some(() => { /* body not rendered: F149553 */ });
+            return bounties.some(() => { /* body not rendered: F149562 */ });
           }
         }
       }
@@ -478,7 +478,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
       if (tmp21) {
         class I {
           constructor() {
-            return bounties.some(() => { /* body not rendered: F149553 */ });
+            return bounties.some(() => { /* body not rendered: F149562 */ });
           }
         }
         const obj10 = { variant: "text-xs/bold", containerStyle: null, textStyle: null };
@@ -491,7 +491,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
       if (null != footer) {
         class I {
           constructor() {
-            return bounties.some(() => { /* body not rendered: F149553 */ });
+            return bounties.some(() => { /* body not rendered: F149562 */ });
           }
         }
       }
@@ -504,14 +504,14 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
       if (!(undefined !== isEmptyOrCompleted && isEmptyOrCompleted)) {
         class I {
           constructor() {
-            return bounties.some(() => { /* body not rendered: F149553 */ });
+            return bounties.some(() => { /* body not rendered: F149562 */ });
           }
         }
       }
       if (tmp24Result) {
         class I {
           constructor() {
-            return bounties.some(() => { /* body not rendered: F149553 */ });
+            return bounties.some(() => { /* body not rendered: F149562 */ });
           }
         }
         const obj13 = { variant: tmp8, onPress: tmp15 };
@@ -741,7 +741,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           return authStore(closure_20, obj);
         }
     };
-    const QuestContentImpressionTrackerNative = tmp(13919).QuestContentImpressionTrackerNative;
+    const QuestContentImpressionTrackerNative = tmp(13914).QuestContentImpressionTrackerNative;
     tmp11Result = tmp11(QuestContentImpressionTrackerNative, obj4);
   }
   const tmp11Result2 = closure_10(ThemeContextProvider, obj2);
@@ -796,7 +796,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           return authStore(closure_20, obj);
         }
     };
-    const QuestContentImpressionTrackerNative = tmp7(13919).QuestContentImpressionTrackerNative;
+    const QuestContentImpressionTrackerNative = tmp7(13914).QuestContentImpressionTrackerNative;
     tmp9Result = tmp9(QuestContentImpressionTrackerNative, obj4);
   }
   return closure_10(ThemeContextProvider, obj2);

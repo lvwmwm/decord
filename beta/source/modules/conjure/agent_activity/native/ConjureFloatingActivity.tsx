@@ -1,16 +1,16 @@
-// Module ID: 12312
-// Function ID: 12313
+// Module ID: 12307
+// Function ID: 12308
 // Name: ConjureFloatingActivity
-// Dependencies: [32, 19, 17, 21, 5191, 587, 558, 576, 4945, 5192, 12261, 1128, 3883, 12163, 5187, 6462, 12313, 6394, 2]
+// Dependencies: [32, 19, 17, 21, 5191, 587, 558, 576, 4945, 5192, 12256, 1128, 3883, 12158, 5187, 6462, 12308, 6394, 2]
 
-// Module 12312 (ConjureFloatingActivity)
+// Module 12307 (ConjureFloatingActivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3883 from "module_3883" /* 3883 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4945 */;
 import timing from "timing" /* 5192 */;
 import AssetRegistryDefault from "AssetRegistry" /* 6394 */;
-import ConjureTodoListDefault from "ConjureTodoList" /* 12261 */;
+import ConjureTodoListDefault from "ConjureTodoList" /* 12256 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -205,7 +205,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureFloat
   const PressableOpacity = tmp2(6462).PressableOpacity;
   intl = tmp2(1128).intl;
   const obj8 = { size: "xs", color: nativeDefault.colors.TEXT_BRAND };
-  const MagicWandIcon = tmp2(12163).MagicWandIcon;
+  const MagicWandIcon = tmp2(12158).MagicWandIcon;
   items3 = [closure_6(MagicWandIcon, obj8), ];
   const obj9 = { style: tmp.label, children: closure_6(sharedValue(5187).Text, { variant: "text-sm/medium", color: "text-default", lineClamp: 1, children: line }) };
   items3[1] = closure_6(View, obj9);
@@ -214,7 +214,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureFloat
   if (null != todos) {
     const obj10 = { style: tmp.checklistButton, children: closure_6(ToggleIconButton, obj11) };
     obj11 = { variant: "default", size: "sm", icon: AssetRegistryDefault, pressed: tmp8, accessibilityLabel: intl2.string(_modDef3883.Qp2isI), onPress: callback };
-    ToggleIconButton = tmp2(12313).ToggleIconButton;
+    ToggleIconButton = tmp2(12308).ToggleIconButton;
     intl2 = tmp2(1128).intl;
     tmp16Result = tmp16(tmp15, obj10);
   }

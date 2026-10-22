@@ -54,10 +54,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
   if (cResult[1] !== guild.id) {
     class T {
       constructor() {
-        handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F151312 */ };
+        handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F151321 */ };
         obj = id(closure_2[9]);
         subscription = obj.subscribe("GUILD_PRUNE_UPDATE", handlePruneUpdate);
-        return () => { /* body not rendered: F151313 */ };
+        return () => { /* body not rendered: F151322 */ };
       }
     }
     cResult[1] = guild.id;
@@ -66,30 +66,30 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
   } else {
     class T {
       constructor() {
-        handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F151312 */ };
+        handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F151321 */ };
         obj = id(closure_2[9]);
         subscription = obj.subscribe("GUILD_PRUNE_UPDATE", handlePruneUpdate);
-        return () => { /* body not rendered: F151313 */ };
+        return () => { /* body not rendered: F151322 */ };
       }
     }
   }
   if (cResult[3] === first) {
     class T {
       constructor() {
-        handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F151312 */ };
+        handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F151321 */ };
         obj = id(closure_2[9]);
         subscription = obj.subscribe("GUILD_PRUNE_UPDATE", handlePruneUpdate);
-        return () => { /* body not rendered: F151313 */ };
+        return () => { /* body not rendered: F151322 */ };
       }
     }
     const effect = obj2.useEffect(tmp6, items2);
     if (cResult[6] === first) {
       class T {
         constructor() {
-          handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F151312 */ };
+          handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F151321 */ };
           obj = id(closure_2[9]);
           subscription = obj.subscribe("GUILD_PRUNE_UPDATE", handlePruneUpdate);
-          return () => { /* body not rendered: F151313 */ };
+          return () => { /* body not rendered: F151322 */ };
         }
       }
     }

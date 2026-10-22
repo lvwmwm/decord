@@ -1,9 +1,9 @@
-// Module ID: 11916
-// Function ID: 11917
+// Module ID: 11911
+// Function ID: 11912
 // Name: AppLauncherStore
 // Dependencies: [10949, 504, 584, 2]
 
-// Module 11916 (AppLauncherStore)
+// Module 11911 (AppLauncherStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AppLauncherTypes from "AppLauncherTypes" /* 10949 */;

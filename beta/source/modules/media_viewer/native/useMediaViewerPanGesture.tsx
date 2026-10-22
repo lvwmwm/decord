@@ -1,9 +1,9 @@
-// Module ID: 14013
-// Function ID: 14014
+// Module ID: 14008
+// Function ID: 14009
 // Name: useMediaViewerPanGesture
 // Dependencies: [19, 558, 576, 4945, 8663, 8662, 5478, 6923, 6612, 2]
 
-// Module 14013 (useMediaViewerPanGesture)
+// Module 14008 (useMediaViewerPanGesture)
 import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
 import spring from "spring" /* 5478 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6612 */;

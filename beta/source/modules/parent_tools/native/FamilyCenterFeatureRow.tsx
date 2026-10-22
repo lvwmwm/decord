@@ -1,7 +1,7 @@
 // Module ID: 15931
 // Function ID: 15932
 // Name: FamilyCenterFeatureRow
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1128, 2589, 12670, 15932, 15933, 13036, 6929, 9003, 15928, 5187, 5477, 6542, 6457, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1128, 2589, 12665, 15932, 15933, 13031, 6929, 9003, 15928, 5187, 5477, 6542, 6457, 2]
 
 // Module 15931 (FamilyCenterFeatureRow)
 import react_native from "react-native" /* 17 */;
@@ -15,8 +15,8 @@ import TableRow2 from "TableRow" /* 6457 */;
 import TableRowGroup2 from "TableRowGroup" /* 6542 */;
 import EyeIcon from "EyeIcon" /* 6929 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9003 */;
-import useAgeSpecificText4 from "useAgeSpecificText" /* 12670 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13036 */;
+import useAgeSpecificText4 from "useAgeSpecificText" /* 12665 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13031 */;
 import QrCodeIcon from "QrCodeIcon" /* 15928 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 15932 */;
 import ChatCheckIcon from "ChatCheckIcon" /* 15933 */;

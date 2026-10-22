@@ -1,7 +1,7 @@
 // Module ID: 17368
 // Function ID: 17369
 // Name: UnknownChannel
-// Dependencies: [19, 11900, 6223, 21, 5191, 587, 4904, 1128, 5145, 558, 576, 5521, 10595, 17258, 2]
+// Dependencies: [19, 11895, 6223, 21, 5191, 587, 4904, 1128, 5145, 558, 576, 5521, 10595, 17258, 2]
 
 // Module 17368 (UnknownChannel)
 import Fragment from "Fragment" /* 21 */;
@@ -12,7 +12,7 @@ import CircleInformationIcon from "CircleInformationIcon" /* 5145 */;
 import useChannelNameDefault from "useChannelName" /* 5521 */;
 import ReadStateConstants from "ReadStateConstants" /* 6223 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10595 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11900 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11895 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

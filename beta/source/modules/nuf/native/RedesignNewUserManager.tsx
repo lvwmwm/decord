@@ -1,7 +1,7 @@
 // Module ID: 18591
 // Function ID: 18592
 // Name: RedesignNewUserManager
-// Dependencies: [13347, 502, 2062, 6413, 18592, 5073, 5072, 18595, 7085, 8955, 18596, 6190, 18597, 2002, 1384, 2]
+// Dependencies: [13342, 502, 2062, 6413, 18592, 5073, 5072, 18595, 7085, 8955, 18596, 6190, 18597, 2002, 1384, 2]
 
 // Module 18591 (RedesignNewUserManager)
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5072 */;
@@ -9,7 +9,7 @@ import RootNavigationRef from "RootNavigationRef" /* 5073 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8955 */;
 import isFullScreenVerificationModalRequiredDefault from "isFullScreenVerificationModalRequired" /* 18592 */;
 import NewUserUtils from "NewUserUtils" /* 18596 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 13347 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 13342 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 2062 */;
 import NewUserStore from "NewUserStore" /* 6413 */;
@@ -23,7 +23,7 @@ class RedesignNewUserManager extends AutomaticLifecycleManager {
   constructor() {
     let action;
     let id;
-    const f135532 = (item) => {
+    const f135541 = (item) => {
       const obj = closure_1_0(closure_1_2[6]);
       const coerceModalRouteResult = obj.coerceModalRoute(item);
       let key;
@@ -86,7 +86,7 @@ class RedesignNewUserManager extends AutomaticLifecycleManager {
             null == rootNavigationRef || !rootNavigationRef.isReady();
             if (someResult) {
               const routes = rootNavigationRef.getRootState().routes;
-              someResult = routes.some(f135532);
+              someResult = routes.some(f135541);
             }
             if (!someResult) {
               const tmp4Result = require("NewUserUtils");
@@ -131,7 +131,7 @@ class RedesignNewUserManager extends AutomaticLifecycleManager {
           null == rootNavigationRef || !rootNavigationRef.isReady();
           if (someResult) {
             const routes = rootNavigationRef.getRootState().routes;
-            someResult = routes.some(f135532);
+            someResult = routes.some(f135541);
           }
           if (!someResult) {
             require.startOnboarding();

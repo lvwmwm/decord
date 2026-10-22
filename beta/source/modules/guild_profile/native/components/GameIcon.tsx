@@ -1,9 +1,9 @@
-// Module ID: 13940
-// Function ID: 13941
+// Module ID: 13935
+// Function ID: 13936
 // Name: components/GameIcon
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1417, 13941, 5128, 13942, 6462, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1417, 13936, 5128, 13937, 6462, 2]
 
-// Module 13940 (components/GameIcon)
+// Module 13935 (components/GameIcon)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -23,8 +23,8 @@ let size;
 let size1;
 let tmp;
 const Pressables = tmp(6462);
-const ClanGameplayActivity = tmp(13941);
-const FireIcon3 = tmp(13942);
+const ClanGameplayActivity = tmp(13936);
+const FireIcon3 = tmp(13937);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -283,7 +283,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameIcon(arg
       if (tmp14Result) {
         const obj4 = { style: tmp.gameIconMask, children: hasOwnProperty(FireIcon2, obj5) };
         obj5 = { style: tmp.fireIcon, color: tmp15(587).unsafe_rawColors.ORANGE_260 };
-        FireIcon2 = tmp7(13942).FireIcon;
+        FireIcon2 = tmp7(13937).FireIcon;
         tmp14Result = tmp14(View, obj4);
       }
       items2[1] = tmp14Result;
@@ -299,7 +299,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameIcon(arg
       if (tmp19Result) {
         const obj8 = { style: tmp.gameIconMask, children: hasOwnProperty(FireIcon, obj9) };
         obj9 = { style: tmp.fireIcon, color: tmp20(587).unsafe_rawColors.ORANGE_330 };
-        FireIcon = tmp7(13942).FireIcon;
+        FireIcon = tmp7(13937).FireIcon;
         tmp19Result = tmp19(tmp18, obj8);
       }
       items4[1] = tmp19Result;

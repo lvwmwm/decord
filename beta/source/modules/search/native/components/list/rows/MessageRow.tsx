@@ -1,7 +1,7 @@
 // Module ID: 17808
 // Function ID: 17809
 // Name: MessageRow
-// Dependencies: [109, 19, 17, 5181, 2071, 2068, 2090, 6222, 1087, 21, 5191, 587, 558, 576, 504, 8431, 5521, 1202, 5187, 10788, 10062, 9039, 5057, 8579, 17809, 13608, 17810, 5883, 8247, 6200, 1128, 13534, 9615, 17772, 2]
+// Dependencies: [109, 19, 17, 5181, 2071, 2068, 2090, 6222, 1087, 21, 5191, 587, 558, 576, 504, 8431, 5521, 1202, 5187, 10788, 10062, 9039, 5057, 8579, 17809, 13603, 17810, 5883, 8247, 6200, 1128, 13529, 9615, 17772, 2]
 
 // Module 17808 (MessageRow)
 import get_initialized from "get initialized" /* 504 */;
@@ -411,7 +411,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Privat
               let tmp33 = null;
               if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
                 const obj7 = { size: "xs", style: tmp4.suppressNotificationsIcon };
-                tmp33 = closure_14(tmp(13608).BellZIcon, obj7);
+                tmp33 = closure_14(tmp(13603).BellZIcon, obj7);
               }
               cResult[21] = message;
               cResult[22] = tmp4.suppressNotificationsIcon;
@@ -500,7 +500,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Privat
   let tmp9Result = null;
   if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
     const obj7 = { size: "xs", style: tmp.suppressNotificationsIcon };
-    tmp9Result = tmp9(tmp4(13608).BellZIcon, obj7);
+    tmp9Result = tmp9(tmp4(13603).BellZIcon, obj7);
   }
   items3[2] = tmp9Result;
   let tmp9Result2 = null;
@@ -632,7 +632,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
                     let tmp36 = null;
                     if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
                       const obj4 = { size: "xs", style: tmp4.suppressNotificationsIcon };
-                      tmp36 = syncedClientThemes(tmp(13608).BellZIcon, obj4);
+                      tmp36 = syncedClientThemes(tmp(13603).BellZIcon, obj4);
                     }
                     cResult[21] = message;
                     cResult[22] = tmp4.suppressNotificationsIcon;
@@ -741,7 +741,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
     let tmp21Result = null;
     if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
       const obj8 = { size: "xs", style: tmp.suppressNotificationsIcon };
-      tmp21Result = tmp21(tmp2(13608).BellZIcon, obj8);
+      tmp21Result = tmp21(tmp2(13603).BellZIcon, obj8);
     }
     items2[2] = tmp21Result;
     let tmp21Result2 = null;
@@ -966,7 +966,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Messag
                 tmp16Result = tmp16(Text, obj3);
               } else {
                 const obj4 = { message, channel, muted: false, layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COZY, color: "interactive-text-default", lineClamp, messageSizeCacheRef };
-                const NativeMessageChannelRowPreview = tmp(13534).NativeMessageChannelRowPreview;
+                const NativeMessageChannelRowPreview = tmp(13529).NativeMessageChannelRowPreview;
                 tmp16Result = tmp16(NativeMessageChannelRowPreview, obj4);
               }
               cResult[12] = channel;
@@ -1038,7 +1038,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Messag
     tmp4Result = tmp4(Text, obj2);
   } else {
     const obj3 = { message, channel, muted: false, layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COZY, color: "interactive-text-default", lineClamp, messageSizeCacheRef };
-    const NativeMessageChannelRowPreview = tmp5(13534).NativeMessageChannelRowPreview;
+    const NativeMessageChannelRowPreview = tmp5(13529).NativeMessageChannelRowPreview;
     tmp4Result = tmp4(NativeMessageChannelRowPreview, obj3);
   }
   return syncedClientThemes(SearchListRow, obj);

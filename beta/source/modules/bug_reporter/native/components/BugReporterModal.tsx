@@ -1,9 +1,9 @@
-// Module ID: 13569
-// Function ID: 13570
+// Module ID: 13564
+// Function ID: 13565
 // Name: BugReporterModal
-// Dependencies: [5, 32, 19, 17, 1392, 13568, 21, 5191, 587, 683, 1104, 6190, 1505, 504, 1128, 6478, 8025, 8024, 4904, 13570, 569, 13571, 7365, 6539, 5128, 1417, 1384, 8036, 11599, 1647, 7052, 5477, 5187, 6459, 12010, 6462, 1202, 7995, 5479, 6563, 6542, 6457, 5155, 13580, 2002, 6540, 7051, 1373, 13581, 10073, 558, 576, 6965, 2]
+// Dependencies: [5, 32, 19, 17, 1392, 13563, 21, 5191, 587, 683, 1104, 6190, 1505, 504, 1128, 6478, 8025, 8024, 4904, 13565, 569, 13566, 7365, 6539, 5128, 1417, 1384, 8036, 11599, 1647, 7052, 5477, 5187, 6459, 12005, 6462, 1202, 7995, 5479, 6563, 6542, 6457, 5155, 13575, 2002, 6540, 7051, 1373, 13576, 10073, 558, 576, 6965, 2]
 
-// Module 13569 (BugReporterModal)
+// Module 13564 (BugReporterModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import DurationsDefault from "Durations" /* 1104 */;
@@ -24,7 +24,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;
-import BugReportStore from "BugReportStore" /* 13568 */;
+import BugReportStore from "BugReportStore" /* 13563 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
 import module_683 from "module_683" /* 683 */;
@@ -805,7 +805,7 @@ class BugCreateScreen {
         onPress() {
             obj = ActionSheetActionCreatorsDefault;
             const obj2 = { features: null != first7 ? first7.features : [], feature: first8, setFeature };
-            return obj.openLazy(asyncRequire(13580, dependencyMap.paths), "BugReporterFeatureActionSheet", obj2);
+            return obj.openLazy(asyncRequire(13575, dependencyMap.paths), "BugReporterFeatureActionSheet", obj2);
           },
         label: name,
         arrow: true
@@ -849,7 +849,7 @@ class BugCreateScreen {
     if (num == null) {
       num = -1;
     }
-    const tmp25Result = tmp25(13571);
+    const tmp25Result = tmp25(13566);
     priorities = tmp25Result.getPriorities();
     items8[3] = first4(TableRadioGroup, obj13);
     let obj14 = { label: intl8.string(tmp25(1128).t["1SplH2"]), placeholder: intl9.string(tmp25(1128).t.CQmAZd), onChange: tmp7, autoCorrect: true, autoCapitalize: "sentences" };

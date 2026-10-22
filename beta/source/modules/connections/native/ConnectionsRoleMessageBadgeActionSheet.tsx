@@ -1,9 +1,9 @@
-// Module ID: 12553
-// Function ID: 12554
+// Module ID: 12548
+// Function ID: 12549
 // Name: ConnectionsRoleMessageBadgeActionSheet
-// Dependencies: [32, 19, 17, 1406, 502, 2128, 2122, 2090, 12554, 7153, 1087, 21, 5191, 587, 558, 576, 1128, 7152, 6473, 5187, 5127, 12, 4913, 6019, 11136, 9039, 1202, 1417, 5065, 38, 7130, 7155, 504, 1267, 5206, 6377, 8577, 5155, 11140, 7176, 5479, 7118, 2]
+// Dependencies: [32, 19, 17, 1406, 502, 2128, 2122, 2090, 12549, 7153, 1087, 21, 5191, 587, 558, 576, 1128, 7152, 6473, 5187, 5127, 12, 4913, 6019, 11136, 9039, 1202, 1417, 5065, 38, 7130, 7155, 504, 1267, 5206, 6377, 8577, 5155, 11140, 7176, 5479, 7118, 2]
 
-// Module 12553 (ConnectionsRoleMessageBadgeActionSheet)
+// Module 12548 (ConnectionsRoleMessageBadgeActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -31,7 +31,7 @@ import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore_mod from "GuildMemberStore" /* 2128 */;
 import GuildRoleStore from "GuildRoleStore" /* 2122 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import GuildRoleConnectionEligibilityStore from "GuildRoleConnectionEligibilityStore" /* 12554 */;
+import GuildRoleConnectionEligibilityStore from "GuildRoleConnectionEligibilityStore" /* 12549 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;

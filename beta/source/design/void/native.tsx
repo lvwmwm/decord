@@ -1,7 +1,7 @@
 // Module ID: 1202
 // Function ID: 1203
 // Name: native
-// Dependencies: [1203, 1204, 2, 1205, 15166, 13826, 15167, 15170, 15171, 15172, 7835, 15173, 15174, 5406, 15175, 15177, 8900, 15178, 15179, 15181, 15182, 15183, 15184, 15185, 5481, 14083, 15194, 15196, 15176, 15009, 15007, 15198, 15199, 15200, 15008, 15201, 15202, 8871, 15203, 15204, 15205, 15206, 15207, 15208, 8870, 8855, 6462, 14385, 8946, 10024]
+// Dependencies: [1203, 1204, 2, 1205, 15166, 13821, 15167, 15170, 15171, 15172, 7835, 15173, 15174, 5406, 15175, 15177, 8900, 15178, 15179, 15181, 15182, 15183, 15184, 15185, 5481, 14078, 15194, 15196, 15176, 15009, 15007, 15198, 15199, 15200, 15008, 15201, 15202, 8871, 15203, 15204, 15205, 15206, 15207, 15208, 8870, 8855, 6462, 14385, 8946, 10024]
 
 // Module 1202 (native)
 import StatusConstants from "StatusConstants" /* 1203 */;
@@ -17,8 +17,8 @@ import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8871 */;
 import void_TextInput_TextInputDefault from "void/TextInput/TextInput" /* 8900 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 8946 */;
 import RoleLabel from "RoleLabel" /* 10024 */;
-import BetaTag from "BetaTag" /* 13826 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14083 */;
+import BetaTag from "BetaTag" /* 13821 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14078 */;
 import IconButton_IconButton from "IconButton/IconButton" /* 14385 */;
 import Easing from "Easing" /* 15007 */;
 import Shadows from "Shadows" /* 15008 */;

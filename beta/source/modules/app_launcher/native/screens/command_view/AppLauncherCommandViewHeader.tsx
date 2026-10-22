@@ -1,15 +1,15 @@
-// Module ID: 11985
-// Function ID: 11986
+// Module ID: 11980
+// Function ID: 11981
 // Name: AppLauncherCommandViewHeader
-// Dependencies: [19, 17, 1504, 21, 11962, 5191, 587, 558, 576, 11866, 4945, 4913, 8541, 5128, 5187, 1202, 2]
+// Dependencies: [19, 17, 1504, 21, 11957, 5191, 587, 558, 576, 11861, 4945, 4913, 8541, 5128, 5187, 1202, 2]
 
-// Module 11985 (AppLauncherCommandViewHeader)
+// Module 11980 (AppLauncherCommandViewHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
 import useAvatarColorDefault from "useAvatarColor" /* 8541 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11866 */;
-import AppLauncherBackButton from "AppLauncherBackButton" /* 11962 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11861 */;
+import AppLauncherBackButton from "AppLauncherBackButton" /* 11957 */;
 import react from "react" /* 19 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
 import Fragment from "Fragment" /* 21 */;
@@ -71,7 +71,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
     application = section.application;
   }
   if (cResult[0] !== application) {
-    const tmpResult = scrollOffsetY(11866);
+    const tmpResult = scrollOffsetY(11861);
     const appLauncherIconSource = tmpResult.getAppLauncherIconSource(application);
     cResult[0] = application;
     cResult[1] = appLauncherIconSource;
@@ -473,7 +473,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   items2[1] = prop;
   const obj11 = { style: items3 };
   items3 = [tmp.headerBannerOverlay, animatedStyle2];
-  items4 = [tmp16(section(4945).View, obj11), tmp16(section(11962), { onPress: onPressBack }), , , ];
+  items4 = [tmp16(section(4945).View, obj11), tmp16(section(11957), { onPress: onPressBack }), , , ];
   const obj12 = { lineClamp: 1, animated: true, style: items5, variant: "heading-lg/bold", color: "text-overlay-light", children: displayName };
   items5 = [tmp.appSmallName, animatedStyle];
   displayName = undefined;

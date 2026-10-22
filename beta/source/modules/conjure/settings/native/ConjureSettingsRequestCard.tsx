@@ -1,9 +1,9 @@
-// Module ID: 12304
-// Function ID: 12305
+// Module ID: 12299
+// Function ID: 12300
 // Name: ConjureSettingsRequestCard
 // Dependencies: [19, 21, 5191, 587, 558, 576, 5155, 11646, 5187, 1128, 3883, 5479, 11662, 2]
 
-// Module 12304 (ConjureSettingsRequestCard)
+// Module 12299 (ConjureSettingsRequestCard)
 import nativeDefault from "native" /* 587 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5155 */;
 import ConjureSettingsSheet from "ConjureSettingsSheet" /* 11646 */;

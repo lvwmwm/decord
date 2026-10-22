@@ -1,7 +1,7 @@
 // Module ID: 8764
 // Function ID: 8765
 // Name: MaskedLinkUtils
-// Dependencies: [8765, 2068, 2090, 8766, 5532, 4855, 2119, 1087, 1951, 5399, 1128, 1267, 8767, 6369, 8768, 8769, 4895, 13977, 13981, 5505, 13982, 13984, 2]
+// Dependencies: [8765, 2068, 2090, 8766, 5532, 4855, 2119, 1087, 1951, 5399, 1128, 1267, 8767, 6369, 8768, 8769, 4895, 13972, 13976, 5505, 13977, 13979, 2]
 // Exports: handleClick, isLinkTrusted
 
 // Module 8764 (MaskedLinkUtils)
@@ -244,7 +244,7 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
       if (preventDefault != null) {
         preventDefault.preventDefault();
       }
-      const tmpResult11 = tmp(13977);
+      const tmpResult11 = tmp(13972);
       tmpResult11.show(tmp6);
       onCancel();
     } else {
@@ -277,8 +277,8 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
         }
         if (!("http:" === protocol || "https:" === protocol)) {
           const obj8 = { url: tmp6, trustUrl: require("MaskedLinkActionCreators").trustProtocol, onConfirm: handleConfirm, onCancel, isProtocol: true, contextKey };
-          const show2 = tmp(13982).show;
-          tmp(13982);
+          const show2 = tmp(13977).show;
+          tmp(13977);
           show2(obj8);
         } else {
           const tmp52Result = require("MarkupLinkRule");
@@ -288,8 +288,8 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
             displayTarget = punycodeLinkResult.displayTarget;
           }
           const obj10 = { url: displayTarget, trustUrl: require("MaskedLinkActionCreators").trustDomain, onConfirm: handleConfirm, onCancel, isProtocol: false, contextKey };
-          const show = tmp(13982).show;
-          tmp(13982);
+          const show = tmp(13977).show;
+          tmp(13977);
           show(obj10);
         }
       }

@@ -1,7 +1,7 @@
 // Module ID: 14187
 // Function ID: 14188
 // Name: UserProfileWishlistGrid
-// Dependencies: [5, 19, 17, 7530, 13678, 9272, 9275, 9273, 1392, 6310, 7586, 8581, 1087, 1089, 1394, 21, 3, 5191, 587, 558, 576, 4922, 5065, 1128, 5187, 14035, 8588, 7130, 10403, 9698, 504, 14188, 8572, 14173, 14189, 5073, 4904, 5155, 11172, 4864, 7398, 5400, 10350, 7155, 1385, 10460, 7212, 10459, 8577, 4877, 7529, 13651, 7309, 4879, 8574, 14190, 2002, 5145, 5479, 10931, 7840, 10023, 13676, 2]
+// Dependencies: [5, 19, 17, 7530, 13673, 9272, 9275, 9273, 1392, 6310, 7586, 8581, 1087, 1089, 1394, 21, 3, 5191, 587, 558, 576, 4922, 5065, 1128, 5187, 14030, 8588, 7130, 10403, 9698, 504, 14188, 8572, 14173, 14189, 5073, 4904, 5155, 11172, 4864, 7398, 5400, 10350, 7155, 1385, 10460, 7212, 10459, 8577, 4877, 7529, 13646, 7309, 4879, 8574, 14190, 2002, 5145, 5479, 10931, 7840, 10023, 13671, 2]
 // Exports: default
 
 // Module 14187 (UserProfileWishlistGrid)
@@ -23,7 +23,7 @@ import CollectiblesWishlistItemRecord from "CollectiblesWishlistItemRecord" /* 9
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7530 */;
-import SentGiftsStore from "SentGiftsStore" /* 13678 */;
+import SentGiftsStore from "SentGiftsStore" /* 13673 */;
 import WishlistStore from "WishlistStore" /* 9272 */;
 import UserStore from "UserStore" /* 1392 */;
 import SKUStore from "SKUStore" /* 6310 */;

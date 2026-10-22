@@ -1,7 +1,7 @@
 // Module ID: 18404
 // Function ID: 18405
 // Name: NativeAppStartup
-// Dependencies: [32, 5, 18405, 18407, 17, 18430, 2133, 2119, 2001, 7449, 18431, 1087, 9, 3, 19117, 1384, 7480, 19118, 10, 19120, 19121, 12521, 504, 1274, 1259, 19122, 2005, 19123, 15568, 584, 19124, 7463, 1257, 19125, 19126, 11028, 510, 1267, 15220, 2111, 9552, 2144, 1167, 19127, 2002, 8724, 19129, 15417, 7627, 19147, 19148, 19149, 9618, 7476, 7464, 5074, 1207, 5181, 15467, 18122, 18123, 1113, 15217, 7448, 15471, 15484, 6362, 19150, 6612, 7450, 7464, 2]
+// Dependencies: [32, 5, 18405, 18407, 17, 18430, 2133, 2119, 2001, 7449, 18431, 1087, 9, 3, 19117, 1384, 7480, 19118, 10, 19120, 19121, 12516, 504, 1274, 1259, 19122, 2005, 19123, 15568, 584, 19124, 7463, 1257, 19125, 19126, 11028, 510, 1267, 15220, 2111, 9552, 2144, 1167, 19127, 2002, 8724, 19129, 15417, 7627, 19147, 19148, 19149, 9618, 7476, 7464, 5074, 1207, 5181, 15467, 18122, 18123, 1113, 15217, 7448, 15471, 15484, 6362, 19150, 6612, 7450, 7464, 2]
 // Exports: init, initHeadlessTask
 
 // Module 18404 (NativeAppStartup)
@@ -156,11 +156,11 @@ let obj = function _getInitialURLs() {
 function sharedInit() {
   let _true;
   let closure_1;
-  const f153336 = () => _true(handleNotification[33]);
+  const f153345 = () => _true(handleNotification[33]);
   function handleNotification(arg0) {
     const tmp = c0;
     if (tmp) {
-      timeRequireDefault("receiveNotification", f153336).default(arg0, false);
+      timeRequireDefault("receiveNotification", f153345).default(arg0, false);
       TTITrackerDefault.extraProperties.tapped_notification = true;
     } else {
       closure_1.push(arg0);
@@ -294,7 +294,7 @@ function sharedInit() {
     if (state !== constants.ACTIVE) {
       const tmp4 = c0;
       if (tmp4) {
-        timeRequireDefault("receiveNotification", f153336).default(arg0, false);
+        timeRequireDefault("receiveNotification", f153345).default(arg0, false);
         TTITrackerDefault.extraProperties.tapped_notification = true;
       } else {
         closure_1.push(arg0);

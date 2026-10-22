@@ -1,14 +1,14 @@
 // Module ID: 18700
 // Function ID: 18701
 // Name: AutomodStore
-// Dependencies: [32, 5, 19, 12598, 1087, 1269, 18701, 1274, 12603, 5891, 4828, 558, 576, 2]
+// Dependencies: [32, 5, 19, 12593, 1087, 1269, 18701, 1274, 12598, 5891, 4828, 558, 576, 2]
 // Exports: getRuleCountByTriggerType, useSyncAutomodRules
 
 // Module 18700 (AutomodStore)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import _slicedToArray2 from "_slicedToArray" /* 4828 */;
-import Constants2 from "Constants" /* 12598 */;
+import Constants2 from "Constants" /* 12593 */;
 import SystemRulesUtils from "SystemRulesUtils" /* 18701 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -19,7 +19,7 @@ import size from "module_2" /* 2 */;
 
 let _require, c0, c1, c6, c7, closure_5;
 
-const f135991 = (arg0) => {
+const f136000 = (arg0) => {
   const items = [, ];
   ({ syncRules: arr[0], fetching: arr[1] } = arg0);
   return items;
@@ -241,7 +241,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncAutom
   first1 = undefined;
   let obj2 = react;
   [first, closure_1] = react.useState(false);
-  [first1, tmp6] = withEqualityFn(f135991, _slicedToArray2.shallow);
+  [first1, tmp6] = withEqualityFn(f136000, _slicedToArray2.shallow);
   let closure_3 = tmp6;
   const items = [first, ];
   const items1 = [arg0, tmp6, first1];
@@ -406,7 +406,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncAutom
   let tmp8;
   _require = arg0;
   [first, closure_1] = react.useState(false);
-  [first1, tmp5] = withEqualityFn(f135991, require("_slicedToArray").shallow);
+  [first1, tmp5] = withEqualityFn(f136000, require("_slicedToArray").shallow);
   let closure_3 = tmp5;
   let items = [first, ];
   const items1 = [arg0, tmp5, first1];
@@ -583,7 +583,7 @@ function useSyncAutomodRules(arg0) {
   let first;
   let closure_0 = arg0;
   [first, closure_1] = react.useState(false);
-  const tmp3 = _slicedToArray(withEqualityFn(f135991, _slicedToArray2.shallow), 2);
+  const tmp3 = _slicedToArray(withEqualityFn(f136000, _slicedToArray2.shallow), 2);
   const first1 = tmp3[0];
   let closure_3 = tmp5;
   const items = [first, ];

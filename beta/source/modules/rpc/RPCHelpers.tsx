@@ -2,7 +2,7 @@
 // Function ID: 11336
 // Name: RPCHelpers
 // Dependencies: [5, 5540, 2024, 2072, 2090, 2014, 5532, 5207, 1392, 5212, 5895, 1087, 1386, 5176, 1104, 12, 7445, 11336, 5509, 9167, 1389, 8731, 1297, 9169, 6299, 11338, 2]
-// Exports: containsSameValues, getDeprecatedVoiceSettingsWithShortcut, getVoiceConnectionState, getVoiceSettingsWithShortcut, hasMessageReadPermission, isMatchingOrigin, processSocketThrottlers, transformApplicationRelationship, transformBaseRelationship, transformChannel, transformVoiceState, validateActivityInvite, validateApplication, validateOriginAndUpdateSocket, validatePostMessageTransport, validateSocketApplication
+// Exports: containsSameValues, getDeprecatedVoiceSettingsWithShortcut, getVoiceConnectionState, getVoiceSettingsWithShortcut, hasMessageReadPermission, isMatchingOrigin, processSocketThrottlers, transformApplicationRelationship, transformBaseRelationship, transformBigFlag, transformChannel, transformRole, transformVoiceState, validateActivityInvite, validateApplication, validateOriginAndUpdateSocket, validatePostMessageTransport, validateSocketApplication
 
 // Module 11335 (RPCHelpers)
 import _modDef12 from "module_12" /* 12 */;
@@ -303,6 +303,13 @@ if (str2.includes(".")) {
   }
   tmp5 = str2;
 }
+function transformBigFlag(permissions) {
+  let str = permissions;
+  if (typeof permissions !== "bigint") {
+    str = permissions.toString();
+  }
+  return str;
+}
 function transformVoiceState(arg0, id, userId) {
   let deaf;
   let mute;
@@ -345,6 +352,25 @@ export const containsSameValues = function containsSameValues(arg0, arg1) {
   return isEqual(arg0, obj.pick(arg1, Object.keys(arg0)));
 };
 export { validateOrigin };
+export { transformBigFlag };
+export const transformRole = function transformRole(id) {
+  let colors;
+  let permissions;
+  let str;
+  obj = { id: id.id, name: id.name, color: id.color, colors, hoist: null, position: null, permissions: str, managed: null, mentionable: null, icon: null, unicode_emoji: null, tags: null, flags: null };
+  colors = id.colors;
+  if (colors == null) {
+    colors = { primary_color: id.color, secondary_color: null, tertiary_color: null };
+    const obj2 = { primary_color: id.color, secondary_color: null, tertiary_color: null };
+  }
+  ({ hoist: obj.hoist, position: obj.position, permissions } = id);
+  str = permissions;
+  if (typeof permissions !== "bigint") {
+    str = permissions.toString();
+  }
+  ({ managed: obj.managed, mentionable: obj.mentionable, icon: obj.icon, unicodeEmoji: obj.unicode_emoji, tags: obj.tags, flags: obj.flags } = id);
+  return obj;
+};
 export const transformChannel = function transformChannel(channel, result) {
   let closure_1 = result;
   const items = [];
@@ -531,18 +557,18 @@ export const getDeprecatedVoiceSettingsWithShortcut = function getDeprecatedVoic
   let sorted;
   let sorted1;
   let tmp2;
-  const f145323 = (index, index2) => index.index - index2.index;
-  const f145324 = (id) => ({ id: id.id, name: id.name });
+  const f145332 = (index, index2) => index.index - index2.index;
+  const f145333 = (id) => ({ id: id.id, name: id.name });
   const settings = MediaEngineStore.getSettings();
   obj = { input: obj3, output: obj5, mode: { type: settings.mode, auto_threshold: settings.modeOptions.autoThreshold, threshold: settings.modeOptions.threshold, shortcut: tmp2, delay: settings.modeOptions.delay }, automatic_gain_control: null, echo_cancellation: null, noise_suppression: null, qos: null, silence_warning: null, deaf: null, mute: null };
-  obj3 = { available_devices: sorted.map(f145324), device_id: null, volume: null };
+  obj3 = { available_devices: sorted.map(f145333), device_id: null, volume: null };
   tmp2 = fn(settings);
   const values = Object.values(MediaEngineStore.getInputDevices());
-  sorted = values.sort(f145323);
+  sorted = values.sort(f145332);
   ({ inputDeviceId: obj2.device_id, inputVolume: obj2.volume } = settings);
-  obj5 = { available_devices: sorted1.map(f145324), device_id: null, volume: null };
+  obj5 = { available_devices: sorted1.map(f145333), device_id: null, volume: null };
   const values2 = Object.values(MediaEngineStore.getOutputDevices());
-  sorted1 = values2.sort(f145323);
+  sorted1 = values2.sort(f145332);
   ({ outputDeviceId: obj4.device_id, outputVolume: obj4.volume } = settings);
   ({ automaticGainControl: obj.automatic_gain_control, echoCancellation: obj.echo_cancellation, noiseSuppression: obj.noise_suppression, qos: obj.qos, silenceWarning: obj.silence_warning, deaf: obj.deaf, mute: obj.mute } = settings);
   return obj;

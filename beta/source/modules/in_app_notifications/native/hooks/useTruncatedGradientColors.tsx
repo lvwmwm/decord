@@ -1,9 +1,9 @@
-// Module ID: 13533
-// Function ID: 13534
+// Module ID: 13528
+// Function ID: 13529
 // Name: useTruncatedGradientColors
 // Dependencies: [19, 5191, 558, 576, 4913, 587, 683, 2]
 
-// Module 13533 (useTruncatedGradientColors)
+// Module 13528 (useTruncatedGradientColors)
 import react from "react" /* 19 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

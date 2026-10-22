@@ -1,22 +1,22 @@
 // Module ID: 17849
 // Function ID: 17850
 // Name: MediaScreen
-// Dependencies: [19, 6201, 2068, 6340, 13002, 9614, 13004, 1087, 21, 17843, 17780, 17850, 504, 17851, 12988, 5072, 12995, 8661, 17777, 15872, 7764, 6174, 17852, 17856, 17784, 2]
+// Dependencies: [19, 6201, 2068, 6340, 12997, 9614, 12999, 1087, 21, 17843, 17780, 17850, 504, 17851, 12983, 5072, 12990, 8661, 17777, 15872, 7764, 6174, 17852, 17856, 17784, 2]
 
 // Module 17849 (MediaScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6174 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7764 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 12988 */;
-import SearchPlatformConstants from "SearchPlatformConstants" /* 13004 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 12983 */;
+import SearchPlatformConstants from "SearchPlatformConstants" /* 12999 */;
 import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15872 */;
 import BaseMessagesScreen from "BaseMessagesScreen" /* 17852 */;
 import react from "react" /* 19 */;
 import ChannelSpoilerAgreeStore from "ChannelSpoilerAgreeStore" /* 6201 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import SearchMessageStore from "SearchMessageStore" /* 6340 */;
-import SearchQueryStore from "SearchQueryStore" /* 13002 */;
+import SearchQueryStore from "SearchQueryStore" /* 12997 */;
 import SearchConstants from "SearchConstants" /* 9614 */;
 import size from "module_2" /* 2 */;
 

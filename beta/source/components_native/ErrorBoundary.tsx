@@ -1,7 +1,7 @@
 // Module ID: 17046
 // Function ID: 17047
 // Name: components_native/ErrorBoundary
-// Dependencies: [5, 32, 19, 17, 10808, 21, 5191, 558, 576, 12519, 504, 1128, 5479, 4922, 1257, 584, 1202, 8990, 5187, 2]
+// Dependencies: [5, 32, 19, 17, 10808, 21, 5191, 558, 576, 12514, 504, 1128, 5479, 4922, 1257, 584, 1202, 8990, 5187, 2]
 
 // Module 17046 (components_native/ErrorBoundary)
 import react2 from "react" /* 576 */;

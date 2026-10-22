@@ -1,7 +1,7 @@
 // Module ID: 16771
 // Function ID: 16772
 // Name: SimpleRequestOTPActionSheet
-// Dependencies: [5, 32, 19, 17, 1392, 6310, 1087, 1394, 21, 3, 1633, 10354, 504, 10831, 7529, 1991, 9699, 13658, 5155, 5400, 7542, 5477, 5187, 6459, 5479, 10489, 558, 576, 1281, 10352, 7118, 10479, 2]
+// Dependencies: [5, 32, 19, 17, 1392, 6310, 1087, 1394, 21, 3, 1633, 10354, 504, 10831, 7529, 1991, 9699, 13653, 5155, 5400, 7542, 5477, 5187, 6459, 5479, 10489, 558, 576, 1281, 10352, 7118, 10479, 2]
 
 // Module 16771 (SimpleRequestOTPActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
@@ -46,7 +46,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
   let obj7;
   let tmp16;
   let tmp17;
-  const f126377 = () => {
+  const f126386 = () => {
     let items;
     if (null == c5) {
       items = ["Loading...", "Loading..."];
@@ -284,10 +284,10 @@ function GiftPurchaseSKUView(selectedSkuId) {
     giftParams: obj7
   };
   obj7 = { isGift: true, options: { recipient_id: giftRecipientId, custom_message: giftMessage, gift_style: giftStyle } };
-  closure_8 = tmp(13658)(obj6);
+  closure_8 = tmp(13653)(obj6);
   const items5 = [product];
-  [tmp16, tmp17] = tmp3(obj.useMemo(f126377, items5), 2);
-  tmp3(obj.useMemo(f126377, items5), 2);
+  [tmp16, tmp17] = tmp3(obj.useMemo(f126386, items5), 2);
+  tmp3(obj.useMemo(f126386, items5), 2);
   if (!isFetching) {
     isFetching = first;
   }

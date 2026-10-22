@@ -18,7 +18,7 @@ export const debug = function debug(message, attributes) {
   }
   const scope = obj.scope;
   const obj2 = _INTERNAL_captureLog;
-  const obj3 = { level: "debug", message, attributes, severityNumber: "IconComponent" };
+  const obj3 = { level: "debug", message, attributes, severityNumber: "application" };
   obj2._INTERNAL_captureLog(obj3, scope);
 };
 export const error = function error(message, attributes) {
@@ -28,7 +28,7 @@ export const error = function error(message, attributes) {
   }
   const scope = obj.scope;
   const obj2 = _INTERNAL_captureLog;
-  const obj3 = { level: "error", message, attributes, severityNumber: "e" };
+  const obj3 = { level: "error", message, attributes, severityNumber: "IconComponent" };
   obj2._INTERNAL_captureLog(obj3, scope);
 };
 export const fatal = function fatal(message, attributes) {
@@ -38,7 +38,7 @@ export const fatal = function fatal(message, attributes) {
   }
   const scope = obj.scope;
   const obj2 = _INTERNAL_captureLog;
-  const obj3 = { level: "fatal", message, attributes, severityNumber: "application" };
+  const obj3 = { level: "fatal", message, attributes, severityNumber: "e" };
   obj2._INTERNAL_captureLog(obj3, scope);
 };
 export const info = function info(message, attributes) {

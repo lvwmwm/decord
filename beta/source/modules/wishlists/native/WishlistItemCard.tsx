@@ -1,15 +1,15 @@
-// Module ID: 13676
-// Function ID: 13677
+// Module ID: 13671
+// Function ID: 13672
 // Name: WishlistItemCard
-// Dependencies: [109, 19, 1087, 21, 558, 576, 13677, 13679, 13680, 2]
+// Dependencies: [109, 19, 1087, 21, 558, 576, 13672, 13674, 13675, 2]
 
-// Module 13676 (WishlistItemCard)
+// Module 13671 (WishlistItemCard)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import CollectiblesWishlistItemCardDefault from "CollectiblesWishlistItemCard" /* 13677 */;
-import PremiumWishlistItemCardDefault from "PremiumWishlistItemCard" /* 13679 */;
-import SocialLayerStorefrontWishlistItemCardDefault from "SocialLayerStorefrontWishlistItemCard" /* 13680 */;
+import CollectiblesWishlistItemCardDefault from "CollectiblesWishlistItemCard" /* 13672 */;
+import PremiumWishlistItemCardDefault from "PremiumWishlistItemCard" /* 13674 */;
+import SocialLayerStorefrontWishlistItemCardDefault from "SocialLayerStorefrontWishlistItemCard" /* 13675 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

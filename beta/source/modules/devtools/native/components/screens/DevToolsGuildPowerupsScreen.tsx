@@ -1,7 +1,7 @@
 // Module ID: 16779
 // Function ID: 16780
 // Name: DevToolsGuildPowerupsScreen
-// Dependencies: [5, 19, 17, 1246, 13253, 2090, 5034, 16780, 1087, 21, 5191, 587, 1297, 4797, 8296, 13179, 558, 576, 16683, 7172, 13185, 2049, 2052, 1633, 504, 5187, 6457, 6542, 2]
+// Dependencies: [5, 19, 17, 1246, 13248, 2090, 5034, 16780, 1087, 21, 5191, 587, 1297, 4797, 8296, 13174, 558, 576, 16683, 7172, 13180, 2049, 2052, 1633, 504, 5187, 6457, 6542, 2]
 
 // Module 16779 (DevToolsGuildPowerupsScreen)
 import react2 from "react" /* 576 */;
@@ -12,13 +12,13 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2049 */;
 import dismissible_content from "dismissible_content" /* 2052 */;
 import _modDef4797 from "module_4797" /* 4797 */;
-import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 13185 */;
+import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 13180 */;
 import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 16683 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 13253 */;
+import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 13248 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
 import DevToolsGuildPowerupsConstants from "DevToolsGuildPowerupsConstants" /* 16780 */;

@@ -1,7 +1,7 @@
 // Module ID: 15972
 // Function ID: 15973
 // Name: FamilyCenterPendingLinks
-// Dependencies: [19, 17, 7526, 21, 5191, 587, 558, 576, 8005, 1128, 2589, 12670, 5187, 8006, 6462, 6190, 15973, 2002, 1202, 14302, 15974, 15971, 15975, 15966, 2]
+// Dependencies: [19, 17, 7526, 21, 5191, 587, 558, 576, 8005, 1128, 2589, 12665, 5187, 8006, 6462, 6190, 15973, 2002, 1202, 14302, 15974, 15971, 15975, 15966, 2]
 
 // Module 15972 (FamilyCenterPendingLinks)
 import react_native from "react-native" /* 17 */;
@@ -15,7 +15,7 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 7526 */;
 import useUserLinks from "useUserLinks" /* 8005 */;
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8006 */;
-import useAgeSpecificText from "useAgeSpecificText" /* 12670 */;
+import useAgeSpecificText from "useAgeSpecificText" /* 12665 */;
 import AssetRegistryDefault from "AssetRegistry" /* 14302 */;
 import FamilyCenterLinkRowDefault from "FamilyCenterLinkRow" /* 15966 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 15971 */;

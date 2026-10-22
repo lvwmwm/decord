@@ -27,7 +27,7 @@ let c9;
 let closure_4;
 let hasOwnProperty;
 let unpackModuleId;
-const f127821 = () => guildId.getGuildId();
+const f127830 = () => guildId.getGuildId();
 function getGuildsComponent() {
   return require("guilds/Guilds").default;
 }
@@ -54,7 +54,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const ref = react.useRef(undefined);
   const items = [SelectedGuildStore];
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f127821);
+  const stateFromStores = obj2.useStateFromStores(items, f127830);
   const tmp6 = null == ref.current && null != stateFromStores;
   if (tmp6) {
     const obj3 = { guildId: stateFromStores, channelId };
@@ -190,7 +190,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp3 = accessibilityNativeStackOptions;
   let obj2 = current(accessibilityNativeStackOptions[10]);
   let items = [SelectedGuildStore];
-  const stateFromStores = obj2.useStateFromStores(items, f127821);
+  const stateFromStores = obj2.useStateFromStores(items, f127830);
   const tmp5 = null == ref.current && null != stateFromStores;
   if (tmp5) {
     let obj3 = { guildId: stateFromStores, channelId };

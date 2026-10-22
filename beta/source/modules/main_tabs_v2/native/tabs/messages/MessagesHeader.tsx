@@ -1,7 +1,7 @@
 // Module ID: 17157
 // Function ID: 17158
 // Name: MessagesHeader
-// Dependencies: [19, 17, 1087, 21, 587, 12038, 10839, 5484, 5191, 558, 576, 4945, 5478, 17152, 5073, 12988, 6479, 10621, 7840, 1128, 5187, 7018, 17158, 5479, 5132, 2]
+// Dependencies: [19, 17, 1087, 21, 587, 12033, 10839, 5484, 5191, 558, 576, 4945, 5478, 17152, 5073, 12983, 6479, 10621, 7840, 1128, 5187, 7018, 17158, 5479, 5132, 2]
 // Exports: getMessagesHeaderHeight
 
 // Module 17157 (MessagesHeader)
@@ -14,7 +14,7 @@ import ButtonConstants from "ButtonConstants" /* 5484 */;
 import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 6479 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 7018 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10839 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12038 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12033 */;
 import MessageRequestsButtonDefault from "MessageRequestsButton" /* 17158 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

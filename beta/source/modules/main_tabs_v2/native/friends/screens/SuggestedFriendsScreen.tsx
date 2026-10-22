@@ -1,7 +1,7 @@
 // Module ID: 17920
 // Function ID: 17921
 // Name: SuggestedFriendsScreen
-// Dependencies: [19, 17, 1087, 21, 5191, 587, 558, 576, 7130, 7155, 1267, 17175, 17909, 8577, 17913, 10529, 10526, 12712, 1128, 2]
+// Dependencies: [19, 17, 1087, 21, 5191, 587, 558, 576, 7130, 7155, 1267, 17175, 17909, 8577, 17913, 10529, 10526, 12707, 1128, 2]
 
 // Module 17920 (SuggestedFriendsScreen)
 import react_native from "react-native" /* 17 */;
@@ -155,7 +155,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuggestedFri
         itemType: str,
         key: tmp.user.id,
         component() {
-              const obj = { added: added.includes(suggestedFriend), suggestedFriend, start: 0 === closure_0, end, onPress, onAddSuggestion() { /* body not rendered: F158422 */ }, location: metroRequire.FRIENDS_SUGGESTED_FRIENDS_MODAL };
+              const obj = { added: added.includes(suggestedFriend), suggestedFriend, start: 0 === closure_0, end, onPress, onAddSuggestion() { /* body not rendered: F158431 */ }, location: metroRequire.FRIENDS_SUGGESTED_FRIENDS_MODAL };
               const ContactSuggestionRow = ContactSuggestionRow2.ContactSuggestionRow;
               return metroImportDefault(ContactSuggestionRow, obj);
             }

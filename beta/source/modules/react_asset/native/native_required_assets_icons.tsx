@@ -1,7 +1,7 @@
 // Module ID: 19132
 // Function ID: 19133
 // Name: native_required_assets_icons
-// Dependencies: [8439, 8436, 12280, 12702, 6483, 19133, 10328, 13609, 9710, 14852, 6474, 13154, 7102, 10860, 6467, 19134, 19135, 16196, 16021, 12590, 19136, 19137, 17545, 17543, 5144, 6930, 6928, 8546, 8381, 8437, 11406, 18748, 19138, 8455, 8456, 5138, 8468, 10782, 12293, 11391, 11493, 9079, 9044, 8389, 9642, 8677, 8252, 9622, 9624, 10642, 8675, 9389, 10326, 9253, 11631, 9387, 14850, 10947, 17211, 8440, 13223, 9708, 8433, 16266, 11195, 8373, 8441, 11471, 7839, 13808, 6486, 9198, 2]
+// Dependencies: [8439, 8436, 12275, 12697, 6483, 19133, 10328, 13604, 9710, 14852, 6474, 13149, 7102, 10860, 6467, 19134, 19135, 16196, 16021, 12585, 19136, 19137, 17545, 17543, 5144, 6930, 6928, 8546, 8381, 8437, 11406, 18748, 19138, 8455, 8456, 5138, 8468, 10782, 12288, 11391, 11493, 9079, 9044, 8389, 9642, 8677, 8252, 9622, 9624, 10642, 8675, 9389, 10326, 9253, 11631, 9387, 14850, 10947, 17211, 8440, 13218, 9708, 8433, 16266, 11195, 8373, 8441, 11471, 7839, 13803, 6486, 9198, 2]
 
 // Module 19132 (native_required_assets_icons)
 import AssetRegistryDefault from "AssetRegistry" /* 5138 */;
@@ -53,14 +53,14 @@ import AssetRegistryDefault46 from "AssetRegistry" /* 11406 */;
 import AssetRegistryDefault47 from "AssetRegistry" /* 11471 */;
 import AssetRegistryDefault48 from "AssetRegistry" /* 11493 */;
 import AssetRegistryDefault49 from "AssetRegistry" /* 11631 */;
-import AssetRegistryDefault50 from "AssetRegistry" /* 12280 */;
-import AssetRegistryDefault51 from "AssetRegistry" /* 12293 */;
-import AssetRegistryDefault52 from "AssetRegistry" /* 12590 */;
-import AssetRegistryDefault53 from "AssetRegistry" /* 12702 */;
-import AssetRegistryDefault54 from "AssetRegistry" /* 13154 */;
-import AssetRegistryDefault55 from "AssetRegistry" /* 13223 */;
-import AssetRegistryDefault56 from "AssetRegistry" /* 13609 */;
-import AssetRegistryDefault57 from "AssetRegistry" /* 13808 */;
+import AssetRegistryDefault50 from "AssetRegistry" /* 12275 */;
+import AssetRegistryDefault51 from "AssetRegistry" /* 12288 */;
+import AssetRegistryDefault52 from "AssetRegistry" /* 12585 */;
+import AssetRegistryDefault53 from "AssetRegistry" /* 12697 */;
+import AssetRegistryDefault54 from "AssetRegistry" /* 13149 */;
+import AssetRegistryDefault55 from "AssetRegistry" /* 13218 */;
+import AssetRegistryDefault56 from "AssetRegistry" /* 13604 */;
+import AssetRegistryDefault57 from "AssetRegistry" /* 13803 */;
 import AssetRegistryDefault58 from "AssetRegistry" /* 14850 */;
 import AssetRegistryDefault59 from "AssetRegistry" /* 14852 */;
 import AssetRegistryDefault60 from "AssetRegistry" /* 16021 */;

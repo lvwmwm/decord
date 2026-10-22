@@ -1,7 +1,7 @@
 // Module ID: 16631
 // Function ID: 16632
 // Name: UserSettingsPushNotificationLogs
-// Dependencies: [5, 32, 19, 17, 1087, 21, 5191, 587, 6579, 558, 576, 510, 13574, 1633, 7016, 1128, 8755, 13575, 13985, 6462, 5187, 7091, 2]
+// Dependencies: [5, 32, 19, 17, 1087, 21, 5191, 587, 6579, 558, 576, 510, 13569, 1633, 7016, 1128, 8755, 13570, 13980, 6462, 5187, 7091, 2]
 
 // Module 16631 (UserSettingsPushNotificationLogs)
 import react_native from "react-native" /* 17 */;
@@ -98,7 +98,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     class I {
       constructor() {
         closure_0 = function _load() {
-          obj = _asyncToGenerator(function() { /* body not rendered: F158111 */ });
+          obj = _asyncToGenerator(function() { /* body not rendered: F158120 */ });
           return obj(...arguments);
         };
         tmp = !(function load() {
@@ -116,7 +116,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     class I {
       constructor() {
         closure_0 = function _load() {
-          obj = _asyncToGenerator(function() { /* body not rendered: F158111 */ });
+          obj = _asyncToGenerator(function() { /* body not rendered: F158120 */ });
           return obj(...arguments);
         };
         tmp = !(function load() {
@@ -135,7 +135,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     class I {
       constructor() {
         closure_0 = function _load() {
-          obj = _asyncToGenerator(function() { /* body not rendered: F158111 */ });
+          obj = _asyncToGenerator(function() { /* body not rendered: F158120 */ });
           return obj(...arguments);
         };
         tmp = !(function load() {
@@ -153,7 +153,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       class I {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F158111 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F158120 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -170,7 +170,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       class I {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F158111 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F158120 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -186,7 +186,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       class I {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F158111 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F158120 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -254,7 +254,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       function t12() {
         return closure_0(...arguments);
       }
-      const tmp29 = closure_7(tmp(13985).ShareIcon, {});
+      const tmp29 = closure_7(tmp(13980).ShareIcon, {});
       cResult[11] = stringResult;
       cResult[12] = t12;
       cResult[13] = tmp29;
@@ -265,7 +265,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       class I {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F158111 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F158120 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -281,7 +281,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       class I {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F158111 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F158120 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -298,7 +298,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       class I {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F158111 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F158120 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -312,7 +312,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       class I {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F158111 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F158120 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -345,7 +345,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
             let str = "i";
             const self2 = this;
             const regExp = new RegExp(closure_0, "i");
-            closure_1_3(first2.filter(() => { /* body not rendered: F158112 */ }));
+            closure_1_3(first2.filter(() => { /* body not rendered: F158121 */ }));
             const Storage = first1(closure_2[11]).Storage;
             let str2 = "push-notification-logs-query";
             const result = Storage.set("push-notification-logs-query", closure_0);
@@ -567,7 +567,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
         }
       }
     }),
-    children: closure_7(defaultValue(13985).ShareIcon, {})
+    children: closure_7(defaultValue(13980).ShareIcon, {})
   };
   const PressableOpacity = defaultValue(6462).PressableOpacity;
   intl = defaultValue(1128).intl;

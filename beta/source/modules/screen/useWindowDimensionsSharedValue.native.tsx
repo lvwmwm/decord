@@ -1,12 +1,12 @@
-// Module ID: 12345
-// Function ID: 12346
+// Module ID: 12340
+// Function ID: 12341
 // Name: useWindowDimensionsSharedValue
-// Dependencies: [4945, 1499, 12346, 10684, 2]
+// Dependencies: [4945, 1499, 12341, 10684, 2]
 // Exports: default, getWindowDimensionsWorklet
 
-// Module 12345 (useWindowDimensionsSharedValue)
+// Module 12340 (useWindowDimensionsSharedValue)
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10684 */;
-import subscribeToWindowDimensionsDefault from "subscribeToWindowDimensions" /* 12346 */;
+import subscribeToWindowDimensionsDefault from "subscribeToWindowDimensions" /* 12341 */;
 import ReanimatedRexport_mod from "ReanimatedRexport" /* 4945 */;
 import useWindowDimensions_mod from "useWindowDimensions" /* 1499 */;
 import size from "module_2" /* 2 */;

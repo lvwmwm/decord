@@ -1,9 +1,9 @@
-// Module ID: 13835
-// Function ID: 13836
+// Module ID: 13830
+// Function ID: 13831
 // Name: AuthorizeScopes
 // Dependencies: [19, 17, 21, 5191, 558, 576, 1128, 6573, 587, 7144, 5187, 9529, 6447, 9536, 8731, 2]
 
-// Module 13835 (AuthorizeScopes)
+// Module 13830 (AuthorizeScopes)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

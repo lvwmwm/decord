@@ -1,7 +1,7 @@
 // Module ID: 17554
 // Function ID: 17555
 // Name: NotificationCenterPermissionNudge
-// Dependencies: [32, 19, 17, 1087, 2065, 13076, 21, 5191, 587, 558, 576, 1267, 13077, 10654, 5187, 1128, 5479, 6485, 6462, 16544, 7376, 2052, 2]
+// Dependencies: [32, 19, 17, 1087, 2065, 13071, 21, 5191, 587, 558, 576, 1267, 13072, 10654, 5187, 1128, 5479, 6485, 6462, 16544, 7376, 2052, 2]
 
 // Module 17554 (NotificationCenterPermissionNudge)
 import react_native from "react-native" /* 17 */;
@@ -12,7 +12,7 @@ import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHo
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13076 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13071 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

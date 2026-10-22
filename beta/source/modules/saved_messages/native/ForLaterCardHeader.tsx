@@ -1,9 +1,9 @@
-// Module ID: 13612
-// Function ID: 13613
+// Module ID: 13607
+// Function ID: 13608
 // Name: ForLaterCardHeader
 // Dependencies: [17, 2090, 21, 5191, 587, 558, 576, 7182, 504, 6436, 10592, 1202, 8471, 5521, 8431, 1128, 5187, 2]
 
-// Module 13612 (ForLaterCardHeader)
+// Module 13607 (ForLaterCardHeader)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

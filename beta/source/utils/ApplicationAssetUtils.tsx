@@ -20,7 +20,7 @@ let PlatformTypes;
 let metroRequire;
 let tmp;
 const LoggerDefault = tmp(3);
-const f99353 = (item) => {
+const f99362 = (item) => {
   let startsWithResult;
   if (item != null) {
     startsWithResult = item.startsWith("http:");
@@ -183,7 +183,7 @@ obj = function _resolveExternalAssets() {
 };
 function updateUrlAssetIds(arr, arg1) {
   let num = 0;
-  if (arr.filter(f99353).length > 0) {
+  if (arr.filter(f99362).length > 0) {
     let num3 = 0;
     let num4 = 0;
     num = 0;
@@ -522,7 +522,7 @@ export { fetchAssetIds };
 export const getAssetIds = function getAssetIds(id, arr) {
   const items = [];
   let num = 0;
-  if (arr.filter(f99353).length > 0) {
+  if (arr.filter(f99362).length > 0) {
     let num3 = 0;
     let num4 = 0;
     num = 0;

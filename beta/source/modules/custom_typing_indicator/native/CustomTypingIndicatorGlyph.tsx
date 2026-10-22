@@ -1,12 +1,12 @@
-// Module ID: 12846
-// Function ID: 12847
+// Module ID: 12841
+// Function ID: 12842
 // Name: CustomTypingIndicatorGlyph
-// Dependencies: [19, 17, 21, 5191, 558, 576, 1413, 1202, 587, 12847, 2]
+// Dependencies: [19, 17, 21, 5191, 558, 576, 1413, 1202, 587, 12842, 2]
 
-// Module 12846 (CustomTypingIndicatorGlyph)
+// Module 12841 (CustomTypingIndicatorGlyph)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import CustomTypingIndicatorAnimatedEmojiDefault from "CustomTypingIndicatorAnimatedEmoji" /* 12847 */;
+import CustomTypingIndicatorAnimatedEmojiDefault from "CustomTypingIndicatorAnimatedEmoji" /* 12842 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

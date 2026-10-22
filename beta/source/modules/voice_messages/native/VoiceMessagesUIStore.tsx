@@ -1,13 +1,13 @@
-// Module ID: 12825
-// Function ID: 12826
+// Module ID: 12820
+// Function ID: 12821
 // Name: VoiceMessagesUIStore
-// Dependencies: [12826, 570, 4945, 1274, 5478, 2]
+// Dependencies: [12821, 570, 4945, 1274, 5478, 2]
 // Exports: addVoiceMessageWave, hideVoiceMessagesTooltip, resetVoiceMessageState, setIsUsingHoldGesture, setIsVoiceMessageButtonMounted, setSavedVoiceMessageUploadData, setShowRecordingOverlay, setVoiceMessageAnimationState, setVoiceMessageRecordingId, setVoiceMessageRecordingState, setVoiceMessageStartTimeMillis, showVoiceMessagesTooltip
 
-// Module 12825 (VoiceMessagesUIStore)
+// Module 12820 (VoiceMessagesUIStore)
 import react_native from "react-native" /* 1274 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 12826 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 12821 */;
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
@@ -110,7 +110,7 @@ export const resetVoiceMessageState = function resetVoiceMessageState() {
   let state;
   obj = react_native;
   obj.batchUpdates(() => {
-    state.setState({ waveform: [], waveformVersion: 0, showRecordingOverlay: false, startTimeMillis: "Boolean", savedVoiceMessageUploadData: "end" });
+    state.setState({ waveform: [], waveformVersion: 0, showRecordingOverlay: false, startTimeMillis: "Boolean", savedVoiceMessageUploadData: "unicodeVersion" });
   });
   const currWaveHeight = obj.getState().currWaveHeight;
   if (null != currWaveHeight) {

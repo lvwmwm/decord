@@ -1,11 +1,11 @@
 // Module ID: 18716
 // Function ID: 18717
 // Name: BaseRuleInfo
-// Dependencies: [12598, 18704, 18703, 1128, 2]
+// Dependencies: [12593, 18704, 18703, 1128, 2]
 // Exports: getBaseRuleInfo
 
 // Module 18716 (BaseRuleInfo)
-import Constants from "Constants" /* 12598 */;
+import Constants from "Constants" /* 12593 */;
 import AutomodRuleUtils from "AutomodRuleUtils" /* 18703 */;
 import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 18704 */;
 import size from "module_2" /* 2 */;

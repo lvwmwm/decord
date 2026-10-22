@@ -1,7 +1,7 @@
 // Module ID: 17331
 // Function ID: 17332
 // Name: SearchableDestinationListRow
-// Dependencies: [109, 19, 21, 558, 576, 8972, 12693, 7615, 10531, 10591, 10594, 1388, 2]
+// Dependencies: [109, 19, 21, 558, 576, 8972, 12688, 7615, 10531, 10591, 10594, 1388, 2]
 
 // Module 17331 (SearchableDestinationListRow)
 import Fragment from "Fragment" /* 21 */;
@@ -11,7 +11,7 @@ import _mod8972 from "module_8972" /* 8972 */;
 import UserRowDefault from "UserRow" /* 10531 */;
 import GroupDMRowDefault from "GroupDMRow" /* 10591 */;
 import ChannelRowDefault from "ChannelRow" /* 10594 */;
-import formatResults from "formatResults" /* 12693 */;
+import formatResults from "formatResults" /* 12688 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

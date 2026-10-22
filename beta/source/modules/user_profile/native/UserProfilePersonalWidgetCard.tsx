@@ -7,6 +7,7 @@
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
+import intl2 from "intl" /* 1128 */;
 import UserSettings from "UserSettings" /* 2044 */;
 import native from "native" /* 4922 */;
 import FastImageDefault from "FastImage" /* 5128 */;
@@ -44,7 +45,6 @@ let rect1;
 let size;
 let tmp;
 let unpackModuleId;
-const intl2 = tmp(1128);
 const WidgetAssetUtils = tmp(14161);
 let _slicedToArray = _slicedToArray_mod;
 ({ Pressable: hasOwnProperty, StyleSheet: metroRequire, View: metroImportDefault } = react_native);
@@ -215,7 +215,6 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Person
   let obj3;
   let obj4;
   let tmp5Result;
-  const tmp = require;
   const obj = PersonalWidgetExpandCollapseContext;
   const personalWidgetExpandCollapse = obj.usePersonalWidgetExpandCollapse();
   ({ isExpanded, setIsExpanded: closure_129_0 } = personalWidgetExpandCollapse);
@@ -230,10 +229,10 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Person
       children: authStore(Text, obj4)
     };
     obj3 = { expanded: isExpanded };
-    Text = Text_Text.Text;
-    const intl = intl2.intl;
+    Text = tmp(5187).Text;
+    const intl = tmp(1128).intl;
     const string = intl.string;
-    const t = intl2.t;
+    const t = tmp(1128).t;
     obj4 = { variant: "text-sm/medium", color: "text-subtle", children: string(isExpanded ? t["6MwJo/"] : t.lBeKY2) };
     tmp5Result = tmp5(hasOwnProperty, obj2);
   } else {
@@ -289,7 +288,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWid
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F148336 */ });
+        return closure_0(() => { /* body not rendered: F148345 */ });
       }
     }
     cResult[6] = T;
@@ -297,21 +296,21 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWid
   } else {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F148336 */ });
+        return closure_0(() => { /* body not rendered: F148345 */ });
       }
     }
   }
   if (null != tmp7 && tmp7.isAnimated && !(setting || tmp5[0])) {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F148336 */ });
+        return closure_0(() => { /* body not rendered: F148345 */ });
       }
     }
   }
   if (cResult[7] === tmp8) {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F148336 */ });
+        return closure_0(() => { /* body not rendered: F148345 */ });
       }
     }
   }

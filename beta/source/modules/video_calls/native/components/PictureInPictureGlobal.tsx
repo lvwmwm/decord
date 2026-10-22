@@ -664,11 +664,11 @@ let closure_20 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
 }) : (function PIPContentContainer(channel) {
   let tmp2;
   let tmp3;
-  const f132800 = () => constants.TOP_RIGHT;
+  const f132809 = () => constants.TOP_RIGHT;
   channel = channel.channel;
-  [tmp2, tmp3] = react.useState(f132800);
+  [tmp2, tmp3] = react.useState(f132809);
   const obj = { channel, preferredPosition: tmp2, onMove: tmp3, children: authStore3(closure_19, { channel }) };
-  _slicedToArray(react.useState(f132800), 2);
+  _slicedToArray(react.useState(f132809), 2);
   const tmp4 = PictureInPictureDefault;
   return authStore3(tmp4, obj);
 }));

@@ -1,10 +1,10 @@
-// Module ID: 13797
-// Function ID: 13798
+// Module ID: 13792
+// Function ID: 13793
 // Name: ChannelHeaderShared
-// Dependencies: [32, 19, 17, 4855, 1392, 21, 5191, 587, 558, 576, 1384, 6462, 10565, 5187, 1202, 13798, 10592, 4913, 8431, 6941, 13799, 1128, 5521, 5128, 1417, 9039, 2]
+// Dependencies: [32, 19, 17, 4855, 1392, 21, 5191, 587, 558, 576, 1384, 6462, 10565, 5187, 1202, 13793, 10592, 4913, 8431, 6941, 13794, 1128, 5521, 5128, 1417, 9039, 2]
 // Exports: renderAppSubTitle, renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 13797 (ChannelHeaderShared)
+// Module 13792 (ChannelHeaderShared)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -22,8 +22,8 @@ import utils_ChannelUtils from "utils/ChannelUtils" /* 8431 */;
 import BotTagDefault from "BotTag" /* 9039 */;
 import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10565 */;
 import GroupDMAvatarDefault from "GroupDMAvatar" /* 10592 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13798 */;
-import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 13799 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13793 */;
+import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 13794 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;

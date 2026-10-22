@@ -1,7 +1,7 @@
 // Module ID: 17265
 // Function ID: 17266
 // Name: ChannelListStickyHeader
-// Dependencies: [19, 17, 1087, 21, 4945, 5191, 587, 558, 576, 17234, 2093, 1128, 17266, 14922, 17264, 6464, 4913, 9851, 5187, 9141, 1202, 7182, 17279, 12947, 17283, 17284, 2]
+// Dependencies: [19, 17, 1087, 21, 4945, 5191, 587, 558, 576, 17234, 2093, 1128, 17266, 14922, 17264, 6464, 4913, 9851, 5187, 9141, 1202, 7182, 17279, 12942, 17283, 17284, 2]
 
 // Module 17265 (ChannelListStickyHeader)
 import nativeDefault from "native" /* 587 */;
@@ -284,7 +284,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelLis
                                                     let tmp67 = null;
                                                     if (undefined === showExtraButtons || showExtraButtons) {
                                                       const obj7 = { guild, useButtonComponent: true, useEventsButton: true };
-                                                      tmp67 = closure_6(tmp8(12947), obj7);
+                                                      tmp67 = closure_6(tmp8(12942), obj7);
                                                     }
                                                     cResult[57] = guild;
                                                     cResult[58] = undefined === showExtraButtons || showExtraButtons;
@@ -586,7 +586,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelLis
   let tmp24Result6 = null;
   if (flag) {
     const obj16 = { guild, useButtonComponent: true, useEventsButton: true };
-    tmp24Result6 = tmp24(tmp2(12947), obj16);
+    tmp24Result6 = tmp24(tmp2(12942), obj16);
   }
   items7[1] = tmp24Result6;
   if (tmp24Result7) {

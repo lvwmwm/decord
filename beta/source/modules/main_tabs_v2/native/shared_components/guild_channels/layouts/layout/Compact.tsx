@@ -1,15 +1,15 @@
-// Module ID: 11904
-// Function ID: 11905
+// Module ID: 11899
+// Function ID: 11900
 // Name: Compact
-// Dependencies: [587, 1202, 6436, 7138, 11903, 2]
+// Dependencies: [587, 1202, 6436, 7138, 11898, 2]
 // Exports: getCompactStyles
 
-// Module 11904 (Compact)
+// Module 11899 (Compact)
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import GuildIcon from "GuildIcon" /* 6436 */;
 import GameIcon from "GameIcon" /* 7138 */;
-import deepmergeDefault from "deepmerge" /* 11903 */;
+import deepmergeDefault from "deepmerge" /* 11898 */;
 import size from "module_2" /* 2 */;
 
 let items;

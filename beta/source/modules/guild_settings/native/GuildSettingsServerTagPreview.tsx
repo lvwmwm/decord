@@ -1,7 +1,7 @@
 // Module ID: 14928
 // Function ID: 14929
 // Name: GuildSettingsServerTagPreview
-// Dependencies: [5, 32, 19, 17, 1392, 8155, 21, 5191, 587, 558, 576, 504, 5509, 1417, 14929, 1128, 5187, 5128, 13550, 9130, 14930, 14974, 5479, 5477, 6459, 2]
+// Dependencies: [5, 32, 19, 17, 1392, 8155, 21, 5191, 587, 558, 576, 504, 5509, 1417, 14929, 1128, 5187, 5128, 13545, 9130, 14930, 14974, 5479, 5477, 6459, 2]
 
 // Module 14928 (GuildSettingsServerTagPreview)
 import react_native from "react-native" /* 17 */;
@@ -154,7 +154,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
             tmp28 = cResult[15];
           }
           if (cResult[16] !== tmp4.avatar) {
-            let obj2 = { source: tmp8(13550), style: tmp4.avatar, importantForAccessibility: "no" };
+            let obj2 = { source: tmp8(13545), style: tmp4.avatar, importantForAccessibility: "no" };
             const tmp8Result = onAdopted(5128);
             const tmp32 = closure_9(tmp8Result, obj2);
             cResult[16] = tmp4.avatar;
@@ -718,7 +718,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   let obj5 = { style: items3, children: items4 };
   items3 = [, ];
   ({ message: arr4[0], unfocused: arr4[1] } = tmp);
-  const obj6 = { source: tmp4(13550), style: tmp.avatar, importantForAccessibility: "no" };
+  const obj6 = { source: tmp4(13545), style: tmp.avatar, importantForAccessibility: "no" };
   const tmp4Result = tmp4(5128);
   items4 = [tmp17(tmp4Result, obj6), ];
   const obj7 = { style: tmp.messageBody, children: items5 };

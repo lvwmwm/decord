@@ -1,7 +1,7 @@
 // Module ID: 17318
 // Function ID: 17319
 // Name: GameClaimCoachmark
-// Dependencies: [5, 19, 17, 1087, 2065, 21, 587, 17319, 10839, 5484, 5191, 558, 576, 17320, 1128, 14153, 6485, 6462, 5187, 7972, 5479, 7309, 7313, 6459, 2]
+// Dependencies: [5, 19, 17, 1087, 2065, 21, 587, 17319, 10839, 5484, 5191, 558, 576, 17320, 1128, 14149, 6485, 6462, 5187, 7972, 5479, 7309, 7313, 6459, 2]
 // Exports: getScaledGameClaimNoticeHeight
 
 // Module 17318 (GameClaimCoachmark)
@@ -10,7 +10,7 @@ import nativeDefault from "native" /* 587 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
 import ButtonConstants from "ButtonConstants" /* 5484 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10839 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 14153 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 14149 */;
 import GameClaimCardStack from "GameClaimCardStack" /* 17319 */;
 import UnclaimedGamesActionCreators from "UnclaimedGamesActionCreators" /* 17320 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

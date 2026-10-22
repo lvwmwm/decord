@@ -1,7 +1,7 @@
 // Module ID: 16174
 // Function ID: 16175
 // Name: VideoQuestModalContentInProgress
-// Dependencies: [109, 32, 19, 17, 6228, 1098, 21, 683, 587, 16175, 5191, 558, 576, 1384, 9487, 4945, 5192, 1633, 16177, 16192, 4922, 7039, 16193, 16171, 16194, 5477, 6462, 5187, 16195, 5128, 5479, 9495, 7840, 1128, 9001, 10605, 7092, 9473, 13902, 16138, 8668, 5491, 16197, 10604, 16084, 16080, 16082, 13985, 9543, 16170, 5155, 16198, 2002, 9504, 7676, 9476, 9477, 9480, 6235, 7681, 6231, 7672, 8755, 16199, 9470, 16200, 6236, 2]
+// Dependencies: [109, 32, 19, 17, 6228, 1098, 21, 683, 587, 16175, 5191, 558, 576, 1384, 9487, 4945, 5192, 1633, 16177, 16192, 4922, 7039, 16193, 16171, 16194, 5477, 6462, 5187, 16195, 5128, 5479, 9495, 7840, 1128, 9001, 10605, 7092, 9473, 13897, 16138, 8668, 5491, 16197, 10604, 16084, 16080, 16082, 13980, 9543, 16170, 5155, 16198, 2002, 9504, 7676, 9476, 9477, 9480, 6235, 7681, 6231, 7672, 8755, 16199, 9470, 16200, 6236, 2]
 
 // Module 16174 (VideoQuestModalContentInProgress)
 import react2 from "react" /* 576 */;
@@ -48,7 +48,7 @@ let tmp;
 let unpackModuleId;
 const native = tmp(4922);
 const Pressables = tmp(6462);
-const VideoQuestUtils = tmp(13902);
+const VideoQuestUtils = tmp(13897);
 const QuestDockGestureContext = tmp(16138);
 const VideoQuestPlayer2 = tmp(16177);
 let closure_3 = ["ref"];
@@ -1132,7 +1132,7 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
   const tmp19 = quest.config.taskConfigV2.tasks[sourceQuestContent(undefined, 6236).FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE];
   let tmp20 = null == tmp19;
   if (!tmp20) {
-    const tmpResult = tmp(13902);
+    const tmpResult = tmp(13897);
     tmp20 = "portrait" === tmpResult.getVideoOrientation(tmp19);
   }
   const obj6 = { quest, captionsEnabled: tmp6, contentWidth, handleClose: onClose, handleAdvertiserDetailsPress: callback3, handlePrimaryCtaPress: callback4, handleRewardDetailsPress: callback5, handleShareQuest: callback2, handleOpenTranscript: callback1, handleToggleCaptions: callback, isFullscreen, onNavigateToPostWatchVideo, onEnd, setIsFullscreen, externallyPaused: videoExternallyPaused, sourceQuestContent, hasCaptionAsset: null != memo, hasTranscriptAsset: null != memo1, isShareable: isShareableQuestResult };

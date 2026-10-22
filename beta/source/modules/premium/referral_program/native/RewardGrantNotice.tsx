@@ -1,7 +1,7 @@
 // Module ID: 14530
 // Function ID: 14531
 // Name: RewardGrantNotice
-// Dependencies: [19, 17, 14509, 21, 5191, 587, 558, 576, 14511, 13725, 5187, 1128, 7101, 2]
+// Dependencies: [19, 17, 14509, 21, 5191, 587, 558, 576, 14511, 13720, 5187, 1128, 7101, 2]
 
 // Module 14530 (RewardGrantNotice)
 import react_native from "react-native" /* 17 */;
@@ -10,7 +10,7 @@ import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7101 */;
-import BalanceWidgetPill from "BalanceWidgetPill" /* 13725 */;
+import BalanceWidgetPill from "BalanceWidgetPill" /* 13720 */;
 import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 14511 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 14509 */;

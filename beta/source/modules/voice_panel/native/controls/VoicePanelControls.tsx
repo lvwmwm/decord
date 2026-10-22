@@ -1,7 +1,7 @@
 // Module ID: 18299
 // Function ID: 18300
 // Name: VoicePanelControls
-// Dependencies: [32, 19, 17, 6292, 10680, 10683, 10678, 1087, 21, 5191, 587, 1630, 558, 576, 18300, 8817, 10679, 4945, 18184, 4913, 6612, 18301, 10686, 12929, 5156, 5462, 12345, 9878, 18302, 18203, 18303, 4922, 18307, 18309, 6438, 18312, 5478, 7039, 18171, 18217, 1274, 18336, 18337, 1123, 1633, 1499, 11911, 18308, 18338, 18311, 18339, 18192, 11932, 2]
+// Dependencies: [32, 19, 17, 6292, 10680, 10683, 10678, 1087, 21, 5191, 587, 1630, 558, 576, 18300, 8817, 10679, 4945, 18184, 4913, 6612, 18301, 10686, 12924, 5156, 5462, 12340, 9878, 18302, 18203, 18303, 4922, 18307, 18309, 6438, 18312, 5478, 7039, 18171, 18217, 1274, 18336, 18337, 1123, 1633, 1499, 11906, 18308, 18338, 18311, 18339, 18192, 11927, 2]
 
 // Module 18299 (VoicePanelControls)
 import react2 from "react" /* 576 */;
@@ -15,8 +15,8 @@ import LegacyBaseButton from "LegacyBaseButton" /* 6612 */;
 import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9878 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10679 */;
 import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 10686 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11911 */;
-import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 12929 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11906 */;
+import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 12924 */;
 import useControlsLockDefault from "useControlsLock" /* 18184 */;
 import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 18203 */;
 import useDrawerToggleDefault from "useDrawerToggle" /* 18300 */;
@@ -433,7 +433,7 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWra
   } else {
     first = cResult[0];
   }
-  const tmp6 = isScreenReaderEnabled(12345)(first);
+  const tmp6 = isScreenReaderEnabled(12340)(first);
   dependencyMap = tmp6;
   const context = windowDimensions.useContext(isScreenReaderEnabled(10679));
   const controlsSpecs = context.controlsSpecs;
@@ -520,7 +520,7 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWra
       }
     }
   };
-  let obj4 = { cheapWorkletShallowEqual: tmp(9878).cheapWorkletShallowEqual, VoicePanelModes, wrapperSpecs, VoicePanelControlsModes, runOnJS: tmp(4945).runOnJS, setControlsMode, isScreenReaderEnabled, EDGE_GUTTER, getControlsDefaultWidth: tmp(12929).getControlsDefaultWidth, getDrawerSpec: tmp(18302).getDrawerSpec, getControlsDrawerOpenWidth: tmp(12929).getControlsDrawerOpenWidth };
+  let obj4 = { cheapWorkletShallowEqual: tmp(9878).cheapWorkletShallowEqual, VoicePanelModes, wrapperSpecs, VoicePanelControlsModes, runOnJS: tmp(4945).runOnJS, setControlsMode, isScreenReaderEnabled, EDGE_GUTTER, getControlsDefaultWidth: tmp(12924).getControlsDefaultWidth, getDrawerSpec: tmp(18302).getDrawerSpec, getControlsDrawerOpenWidth: tmp(12924).getControlsDrawerOpenWidth };
   fn2.__closure = obj4;
   fn2.__workletHash = 12616753127721;
   fn2.__initData = __initData4;
@@ -531,7 +531,7 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWra
   _require = wrapperSpecs;
   let obj = require("useIsScreenReaderEnabled");
   const isScreenReaderEnabled = obj.useIsScreenReaderEnabled();
-  const tmp2 = isScreenReaderEnabled(12345)({ ignoreKeyboard: true });
+  const tmp2 = isScreenReaderEnabled(12340)({ ignoreKeyboard: true });
   dependencyMap = tmp2;
   const context = windowDimensions.useContext(isScreenReaderEnabled(10679));
   const controlsSpecs = context.controlsSpecs;
@@ -1199,7 +1199,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                         const obj = gestureState(channelId[41]);
                         const obj2 = { tab, disableControlsUpdate, controlsProps };
                         const result = obj.reportJankVoicePanelTabRequest(channelId, obj2, tmp2);
-                        chatOpen(function() { /* body not rendered: F158492 */ });
+                        chatOpen(function() { /* body not rendered: F158501 */ });
                         const tmp = constants;
                         const tmp3 = channelId;
                         const tmp4 = channelId;
@@ -1282,7 +1282,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                       const obj = gestureState(channelId[41]);
                       const obj2 = { tab, disableControlsUpdate, controlsProps };
                       const result = obj.reportJankVoicePanelTabRequest(channelId, obj2, tmp2);
-                      chatOpen(function() { /* body not rendered: F158492 */ });
+                      chatOpen(function() { /* body not rendered: F158501 */ });
                       const tmp = constants;
                       const tmp3 = channelId;
                       const tmp4 = channelId;
@@ -1556,7 +1556,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                         const obj = gestureState(channelId[41]);
                         const obj2 = { tab, disableControlsUpdate, controlsProps };
                         const result = obj.reportJankVoicePanelTabRequest(channelId, obj2, tmp2);
-                        chatOpen(function() { /* body not rendered: F158492 */ });
+                        chatOpen(function() { /* body not rendered: F158501 */ });
                         const tmp = constants;
                         const tmp3 = channelId;
                         const tmp4 = channelId;
@@ -1661,7 +1661,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                 const obj = gestureState(channelId[41]);
                 const obj2 = { tab, disableControlsUpdate, controlsProps };
                 const result = obj.reportJankVoicePanelTabRequest(channelId, obj2, tmp2);
-                chatOpen(function() { /* body not rendered: F158492 */ });
+                chatOpen(function() { /* body not rendered: F158501 */ });
                 const tmp = constants;
                 const tmp3 = channelId;
                 const tmp4 = channelId;
@@ -1728,7 +1728,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
               const obj = gestureState(channelId[41]);
               const obj2 = { tab, disableControlsUpdate, controlsProps };
               const result = obj.reportJankVoicePanelTabRequest(channelId, obj2, tmp2);
-              chatOpen(function() { /* body not rendered: F158492 */ });
+              chatOpen(function() { /* body not rendered: F158501 */ });
               const tmp = constants;
               const tmp3 = channelId;
               const tmp4 = channelId;
@@ -1762,7 +1762,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const obj = gestureState(channelId[41]);
           const obj2 = { tab, disableControlsUpdate, controlsProps };
           const result = obj.reportJankVoicePanelTabRequest(channelId, obj2, tmp2);
-          chatOpen(function() { /* body not rendered: F158492 */ });
+          chatOpen(function() { /* body not rendered: F158501 */ });
           const tmp = constants;
           const tmp3 = channelId;
           const tmp4 = channelId;

@@ -1,28 +1,28 @@
 // Module ID: 17766
 // Function ID: 17767
 // Name: SearchTabsLayout
-// Dependencies: [19, 17, 6340, 13002, 13014, 9614, 1087, 21, 5191, 12, 13009, 558, 576, 504, 12991, 17767, 17768, 17773, 1128, 12995, 17774, 13010, 13012, 12988, 17869, 13100, 6612, 4945, 13013, 13022, 13023, 1123, 17870, 17871, 10927, 17872, 17873, 17874, 17875, 2]
+// Dependencies: [19, 17, 6340, 12997, 13009, 9614, 1087, 21, 5191, 12, 13004, 558, 576, 504, 12986, 17767, 17768, 17773, 1128, 12990, 17774, 13005, 13007, 12983, 17869, 13095, 6612, 4945, 13008, 13017, 13018, 1123, 17870, 17871, 10927, 17872, 17873, 17874, 17875, 2]
 
 // Module 17766 (SearchTabsLayout)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6612 */;
-import SmartSearchUtils from "SmartSearchUtils" /* 12991 */;
-import SearchUtils from "SearchUtils" /* 12995 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13009 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13010 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13012 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13013 */;
-import SearchActionCreatorsDefault from "SearchActionCreators" /* 13022 */;
-import SearchTabsFetchManagerDefault from "SearchTabsFetchManager" /* 13023 */;
+import SmartSearchUtils from "SmartSearchUtils" /* 12986 */;
+import SearchUtils from "SearchUtils" /* 12990 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13004 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13005 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13007 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13008 */;
+import SearchActionCreatorsDefault from "SearchActionCreators" /* 13017 */;
+import SearchTabsFetchManagerDefault from "SearchTabsFetchManager" /* 13018 */;
 import SmartSearchEmptyScreenDefault from "SmartSearchEmptyScreen" /* 17768 */;
 import ErrorScreenDefault from "ErrorScreen" /* 17773 */;
 import SearchTabsPageDefault from "SearchTabsPage" /* 17774 */;
 import react from "react" /* 19 */;
 import SearchMessageStore from "SearchMessageStore" /* 6340 */;
-import SearchQueryStore from "SearchQueryStore" /* 13002 */;
-import SearchTabsLayoutStore from "SearchTabsLayoutStore" /* 13014 */;
+import SearchQueryStore from "SearchQueryStore" /* 12997 */;
+import SearchTabsLayoutStore from "SearchTabsLayoutStore" /* 13009 */;
 import SearchConstants from "SearchConstants" /* 9614 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;
@@ -39,7 +39,7 @@ let closure_14;
 let map1;
 let metroImportAll;
 let tmp;
-const SearchPlatformUtilsDefault = tmp(12988);
+const SearchPlatformUtilsDefault = tmp(12983);
 const View = react_native.View;
 ({ MESSAGE_SEARCH_RESULT_TABS_SET: metroImportAll, SEARCH_MESSAGE_TAB_SENTINEL: c9, SearchTabs: c10 } = SearchConstants);
 const ComponentActions = Constants.ComponentActions;
@@ -185,7 +185,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoSear
     }
     const effect = react.useEffect(tmp12, tmp13);
     if (null != tmp9) {
-      const tmpResult5 = searchContext(12991);
+      const tmpResult5 = searchContext(12986);
       if (tmpResult5.isSmartSearchEmptyOrErrored(smartSearchStatus)) {
         let tmp22;
         if (cResult[10] !== tmp9) {
@@ -213,7 +213,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoSear
       tmp17 = cResult[12];
     }
   }
-  const tmpResult6 = searchContext(12991);
+  const tmpResult6 = searchContext(12986);
   const smartSearchQuery = tmpResult6.getSmartSearchQuery(searchContext, stateFromStores);
   cResult[4] = searchContext;
   cResult[5] = stateFromStores;
@@ -241,7 +241,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoSear
   }, items3);
   if (null != memo) {
     let tmp8;
-    const tmpResult = searchContext(12991);
+    const tmpResult = searchContext(12986);
     if (tmpResult.isSmartSearchEmptyOrErrored(smartSearchStatus)) {
       const obj3 = { smartSearchQuery: memo };
       tmp8 = closure_12(stateFromStores(17768), obj3);

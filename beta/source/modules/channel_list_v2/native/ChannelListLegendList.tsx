@@ -1,7 +1,7 @@
 // Module ID: 17385
 // Function ID: 17386
 // Name: ChannelListLegendList
-// Dependencies: [19, 21, 17386, 4945, 7038, 13648, 2]
+// Dependencies: [19, 21, 17386, 4945, 7038, 13643, 2]
 
 // Module 17385 (ChannelListLegendList)
 import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;

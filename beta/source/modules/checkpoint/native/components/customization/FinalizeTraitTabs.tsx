@@ -1,17 +1,17 @@
-// Module ID: 12787
-// Function ID: 12788
+// Module ID: 12782
+// Function ID: 12783
 // Name: FinalizeTraitTabs
-// Dependencies: [19, 17, 5537, 21, 12754, 5155, 12788, 2002, 5191, 587, 558, 576, 1384, 1128, 5187, 12789, 12790, 4913, 3141, 10859, 2]
+// Dependencies: [19, 17, 5537, 21, 12749, 5155, 12783, 2002, 5191, 587, 558, 576, 1384, 1128, 5187, 12784, 12785, 4913, 3141, 10859, 2]
 
-// Module 12787 (FinalizeTraitTabs)
+// Module 12782 (FinalizeTraitTabs)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 12754 */;
-import CheckpointPressable from "CheckpointPressable" /* 12789 */;
-import showNitroLockedToastDefault from "showNitroLockedToast" /* 12790 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 12749 */;
+import CheckpointPressable from "CheckpointPressable" /* 12784 */;
+import showNitroLockedToastDefault from "showNitroLockedToast" /* 12785 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import CheckpointConstants from "CheckpointConstants" /* 5537 */;
@@ -256,7 +256,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTrai
   dependencyMap = tmp4;
   let closure_3 = tmp5;
   const tmp6 = closure_11();
-  const tmp7 = tmp(12754).CUSTOMIZATION_OPTION_TRAITS[activeCustomizationOption];
+  const tmp7 = tmp(12749).CUSTOMIZATION_OPTION_TRAITS[activeCustomizationOption];
   let closure_4 = tmp7;
   if (cResult[0] === tmp7) {
     if (cResult[1] === tmp4) {
@@ -417,7 +417,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTrai
                               const intl = tmp(1128).intl;
                               stringResult1 = intl.string(onSelectOption(3141)["iXpQc+"]);
                             } else {
-                              const tmpResult7 = tmp(12754);
+                              const tmpResult7 = tmp(12749);
                               stringResult1 = tmpResult7.getCustomizationOptionName(activeCustomizationOption);
                             }
                             cResult[23] = activeCustomizationOption;
@@ -464,7 +464,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTrai
                 } else {
                   const obj = { selectedOption: activeCustomizationOption, onSelectOption };
                   const obj2 = ActionSheetActionCreatorsDefault;
-                  obj2.openLazy(asyncRequire(12788, dependencyMap.paths), "CheckpointFinalizeTraitPicker", obj);
+                  obj2.openLazy(asyncRequire(12783, dependencyMap.paths), "CheckpointFinalizeTraitPicker", obj);
                 }
               }
             }
@@ -500,7 +500,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTrai
   let nitroLockedMessage;
   if (tmp4) {
     if (!(undefined !== disabled && disabled)) {
-      const tmpResult8 = tmp(12790);
+      const tmpResult8 = tmp(12785);
       nitroLockedMessage = tmpResult8.getNitroLockedMessage(tmp7);
     }
   }
@@ -615,7 +615,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTrai
         } else {
           const obj = { selectedOption: activeCustomizationOption, onSelectOption: importDefault };
           const obj2 = ActionSheetActionCreatorsDefault;
-          obj2.openLazy(asyncRequire(12788, dependencyMap.paths), "CheckpointFinalizeTraitPicker", obj);
+          obj2.openLazy(asyncRequire(12783, dependencyMap.paths), "CheckpointFinalizeTraitPicker", obj);
         }
       }
     },

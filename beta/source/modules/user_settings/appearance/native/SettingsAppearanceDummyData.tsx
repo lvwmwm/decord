@@ -1,13 +1,13 @@
 // Module ID: 16337
 // Function ID: 16338
 // Name: SettingsAppearanceDummyData
-// Dependencies: [1087, 1128, 16338, 16339, 16340, 16341, 16342, 16343, 16344, 16345, 16346, 16347, 14974, 13550, 16348, 2]
+// Dependencies: [1087, 1128, 16338, 16339, 16340, 16341, 16342, 16343, 16344, 16345, 16346, 16347, 14974, 13545, 16348, 2]
 // Exports: default
 
 // Module 16337 (SettingsAppearanceDummyData)
 import Constants from "Constants" /* 1087 */;
 import intl32 from "intl" /* 1128 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13550 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13545 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 14974 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 16338 */;
 import AssetRegistryDefault4 from "AssetRegistry" /* 16339 */;

@@ -1,10 +1,10 @@
-// Module ID: 12685
-// Function ID: 12686
+// Module ID: 12680
+// Function ID: 12681
 // Name: jumpToReferencedMessage
 // Dependencies: [7445, 2]
 // Exports: default
 
-// Module 12685 (jumpToReferencedMessage)
+// Module 12680 (jumpToReferencedMessage)
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 7445 */;
 import size from "module_2" /* 2 */;
 

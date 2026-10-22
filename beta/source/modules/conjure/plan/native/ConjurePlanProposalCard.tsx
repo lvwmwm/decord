@@ -1,21 +1,21 @@
-// Module ID: 12263
-// Function ID: 12264
+// Module ID: 12258
+// Function ID: 12259
 // Name: ConjurePlanProposalCard
-// Dependencies: [19, 17, 6293, 21, 5191, 587, 558, 576, 12189, 5128, 5179, 12204, 12264, 12266, 12269, 12272, 504, 12270, 1128, 12273, 12274, 12275, 12277, 3883, 12262, 5187, 12281, 12282, 5479, 11662, 2]
+// Dependencies: [19, 17, 6293, 21, 5191, 587, 558, 576, 12184, 5128, 5179, 12199, 12259, 12261, 12264, 12267, 504, 12265, 1128, 12268, 12269, 12270, 12272, 3883, 12257, 5187, 12276, 12277, 5479, 11662, 2]
 
-// Module 12263 (ConjurePlanProposalCard)
+// Module 12258 (ConjurePlanProposalCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl9 from "intl" /* 1128 */;
 import FastImageDefault from "FastImage" /* 5128 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 5179 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 12189 */;
-import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 12204 */;
-import conjurePlanBot from "conjurePlanBot" /* 12270 */;
-import conjurePlanDesign from "conjurePlanDesign" /* 12273 */;
-import ConjurePlanWidgetDefault from "ConjurePlanWidget" /* 12274 */;
-import ConjurePlanAutomodExamplesDefault from "ConjurePlanAutomodExamples" /* 12275 */;
-import ConjurePlanBotPreviewDefault from "ConjurePlanBotPreview" /* 12277 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 12184 */;
+import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 12199 */;
+import conjurePlanBot from "conjurePlanBot" /* 12265 */;
+import conjurePlanDesign from "conjurePlanDesign" /* 12268 */;
+import ConjurePlanWidgetDefault from "ConjurePlanWidget" /* 12269 */;
+import ConjurePlanAutomodExamplesDefault from "ConjurePlanAutomodExamples" /* 12270 */;
+import ConjurePlanBotPreviewDefault from "ConjurePlanBotPreview" /* 12272 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6293 */;

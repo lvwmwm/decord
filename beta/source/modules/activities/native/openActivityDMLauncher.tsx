@@ -1,7 +1,7 @@
 // Module ID: 15002
 // Function ID: 15003
 // Name: openActivityDMLauncher
-// Dependencies: [5, 1504, 6357, 7290, 13971, 11876, 7155, 7513, 5081, 1631, 2]
+// Dependencies: [5, 1504, 6357, 7290, 13966, 11871, 7155, 7513, 5081, 1631, 2]
 // Exports: default
 
 // Module 15002 (openActivityDMLauncher)

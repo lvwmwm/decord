@@ -1,7 +1,7 @@
 // Module ID: 14237
 // Function ID: 14238
 // Name: ProductDetailsActionSheetPurchaseSection
-// Dependencies: [32, 19, 17, 7546, 1089, 1087, 10963, 1394, 21, 5191, 587, 558, 576, 12673, 5155, 13651, 1128, 7840, 14235, 9373, 9336, 1505, 7130, 6190, 14238, 2002, 7529, 14242, 1090, 14243, 13719, 9331, 5187, 5480, 1995, 8576, 504, 10862, 4864, 7542, 7541, 9352, 9698, 8572, 10962, 14245, 14246, 1633, 5479, 14247, 1257, 1384, 5986, 5400, 2]
+// Dependencies: [32, 19, 17, 7546, 1089, 1087, 10963, 1394, 21, 5191, 587, 558, 576, 12668, 5155, 13646, 1128, 7840, 14235, 9373, 9336, 1505, 7130, 6190, 14238, 2002, 7529, 14242, 1090, 14243, 13714, 9331, 5187, 5480, 1995, 8576, 504, 10862, 4864, 7542, 7541, 9352, 9698, 8572, 10962, 14245, 14246, 1633, 5479, 14247, 1257, 1384, 5986, 5400, 2]
 
 // Module 14237 (ProductDetailsActionSheetPurchaseSection)
 import react_native from "react-native" /* 17 */;
@@ -22,8 +22,8 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7130 */;
 import OrbsIcon from "OrbsIcon" /* 9331 */;
 import MainTabsConstants from "MainTabsConstants" /* 10963 */;
-import openGiftModal from "openGiftModal" /* 13651 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 13719 */;
+import openGiftModal from "openGiftModal" /* 13646 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 13714 */;
 import UnlockWithNitroButton from "UnlockWithNitroButton" /* 14247 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

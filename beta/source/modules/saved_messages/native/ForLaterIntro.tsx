@@ -1,9 +1,9 @@
-// Module ID: 13614
-// Function ID: 13615
+// Module ID: 13609
+// Function ID: 13610
 // Name: ForLaterIntro
-// Dependencies: [17, 7119, 21, 5191, 587, 558, 576, 9981, 13615, 13619, 1128, 5187, 13623, 5128, 13597, 5150, 7182, 2]
+// Dependencies: [17, 7119, 21, 5191, 587, 558, 576, 9981, 13610, 13614, 1128, 5187, 13618, 5128, 13592, 5150, 7182, 2]
 
-// Module 13614 (ForLaterIntro)
+// Module 13609 (ForLaterIntro)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
@@ -12,8 +12,8 @@ import ClockIcon from "ClockIcon" /* 5150 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import ActionSheetConstants from "ActionSheetConstants" /* 7119 */;
 import SavedMessagesTypes from "SavedMessagesTypes" /* 9981 */;
-import BookmarkIcon from "BookmarkIcon" /* 13597 */;
-import _modDef13623 from "module_13623" /* 13623 */;
+import BookmarkIcon from "BookmarkIcon" /* 13592 */;
+import _modDef13618 from "module_13618" /* 13618 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
@@ -72,9 +72,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterIntr
   const tmp4 = closure_7();
   const tmp5 = type === SavedMessagesTypes.SavedMessageSortTypes.REMINDER;
   if (tmp5) {
-    BookmarksSpotIllustration = tmp(13615).ReminderWatchSpotIllustration;
+    BookmarksSpotIllustration = tmp(13610).ReminderWatchSpotIllustration;
   } else {
-    BookmarksSpotIllustration = tmp(13619).BookmarksSpotIllustration;
+    BookmarksSpotIllustration = tmp(13614).BookmarksSpotIllustration;
   }
   ({ scrollView, pageContainer, container } = tmp4);
   if (cResult[0] !== BookmarksSpotIllustration) {
@@ -227,9 +227,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterIntr
   const tmp = closure_7();
   const tmp4 = type === SavedMessagesTypes.SavedMessageSortTypes.REMINDER;
   if (tmp4) {
-    BookmarksSpotIllustration = tmp2(13615).ReminderWatchSpotIllustration;
+    BookmarksSpotIllustration = tmp2(13610).ReminderWatchSpotIllustration;
   } else {
-    BookmarksSpotIllustration = tmp2(13619).BookmarksSpotIllustration;
+    BookmarksSpotIllustration = tmp2(13614).BookmarksSpotIllustration;
   }
   const obj = { style: tmp.scrollView, contentContainerStyle: tmp.pageContainer, children: metroRequire(React3, obj2) };
   obj2 = { style: tmp.container, children: items };
@@ -281,7 +281,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function IntroDe
   const tmp4 = closure_7();
   const demo = tmp4.demo;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef13623 };
+    const obj2 = { uri: _modDef13618 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -466,7 +466,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function IntroDe
   const obj = { style: tmp.demo, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: items2 };
   const obj2 = { style: tmp.messages, children: items };
   const obj3 = { source: obj4, style: tmp.avatar };
-  obj4 = { uri: _modDef13623 };
+  obj4 = { uri: _modDef13618 };
   const tmp2 = FastImageDefault;
   items = [hasOwnProperty(tmp2, obj3), ];
   const obj5 = { style: tmp.messageLines, children: items1 };

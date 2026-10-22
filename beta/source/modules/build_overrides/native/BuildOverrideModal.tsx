@@ -1,12 +1,12 @@
 // Module ID: 14884
 // Function ID: 14885
 // Name: BuildOverrideModal
-// Dependencies: [19, 17, 10808, 21, 5191, 587, 558, 576, 5127, 5065, 14885, 14886, 504, 12519, 4797, 7092, 5128, 1128, 5187, 5479, 6190, 2]
+// Dependencies: [19, 17, 10808, 21, 5191, 587, 558, 576, 5127, 5065, 14885, 14886, 504, 12514, 4797, 7092, 5128, 1128, 5187, 5479, 6190, 2]
 
 // Module 14884 (BuildOverrideModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12519 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12514 */;
 import react from "react" /* 19 */;
 import BuildOverrideStore from "BuildOverrideStore" /* 10808 */;
 import Fragment from "Fragment" /* 21 */;
@@ -100,7 +100,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BuildOverr
   if (override != null) {
     const targetBuildOverride = override.targetBuildOverride;
     if (targetBuildOverride != null) {
-      const tmp13 = targetBuildOverride[tmp(undefined, 12519).DEVICE_FIELD];
+      const tmp13 = targetBuildOverride[tmp(undefined, 12514).DEVICE_FIELD];
       if (tmp13 != null) {
         id = tmp13.id;
       }
@@ -402,7 +402,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BuildOverr
   if (override != null) {
     const targetBuildOverride = override.targetBuildOverride;
     if (targetBuildOverride != null) {
-      const tmp9 = targetBuildOverride[str(undefined, 12519).DEVICE_FIELD];
+      const tmp9 = targetBuildOverride[str(undefined, 12514).DEVICE_FIELD];
       if (tmp9 != null) {
         id = tmp9.id;
       }

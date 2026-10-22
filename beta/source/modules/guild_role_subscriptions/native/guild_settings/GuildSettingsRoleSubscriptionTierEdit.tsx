@@ -1,7 +1,7 @@
 // Module ID: 18996
 // Function ID: 18997
 // Name: GuildSettingsRoleSubscriptionTierEdit
-// Dependencies: [32, 19, 17, 4838, 18953, 16263, 1087, 2065, 21, 5191, 587, 558, 576, 1505, 18971, 18959, 7230, 8949, 5187, 1202, 18997, 5479, 7092, 18991, 18989, 18965, 16270, 18948, 12081, 1128, 18998, 16285, 4903, 6478, 7365, 8805, 2052, 18999, 2002, 10312, 10313, 9051, 2]
+// Dependencies: [32, 19, 17, 4838, 18953, 16263, 1087, 2065, 21, 5191, 587, 558, 576, 1505, 18971, 18959, 7230, 8949, 5187, 1202, 18997, 5479, 7092, 18991, 18989, 18965, 16270, 18948, 12076, 1128, 18998, 16285, 4903, 6478, 7365, 8805, 2052, 18999, 2002, 10312, 10313, 9051, 2]
 // Exports: default
 
 // Module 18996 (GuildSettingsRoleSubscriptionTierEdit)
@@ -19,7 +19,7 @@ import components_Button_Button from "components/Button/Button" /* 5479 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7092 */;
 import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7230 */;
 import FormHeaderDefault from "FormHeader" /* 8949 */;
-import ErrorBlockDefault from "ErrorBlock" /* 12081 */;
+import ErrorBlockDefault from "ErrorBlock" /* 12076 */;
 import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16263 */;
 import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16270 */;
 import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18948 */;
@@ -561,7 +561,7 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
   let obj7;
   let obj8;
   let tmp17;
-  const f137143 = (currentScene) => {
+  const f137152 = (currentScene) => {
     let DETAILS = currentScene.currentScene;
     if (DETAILS == null) {
       DETAILS = handleCreateOrUpdateFromEditState.DETAILS;
@@ -641,9 +641,9 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
       presentError(anyErrorMessage);
     }
   }, items1);
-  [tmp17, c14] = _slicedToArray(loading.useRoleTierEditStore(f137143), 2);
+  [tmp17, c14] = _slicedToArray(loading.useRoleTierEditStore(f137152), 2);
   const items2 = [navigation, hasChanges, first1, loading, callback];
-  _slicedToArray(loading.useRoleTierEditStore(f137143), 2);
+  _slicedToArray(loading.useRoleTierEditStore(f137152), 2);
   const layoutEffect1 = obj.useLayoutEffect(() => {
     let onPress;
     let title;

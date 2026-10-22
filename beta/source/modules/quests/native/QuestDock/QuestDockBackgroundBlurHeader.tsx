@@ -1,7 +1,7 @@
 // Module ID: 16236
 // Function ID: 16237
 // Name: QuestDockBackgroundBlurHeader
-// Dependencies: [32, 19, 17, 6228, 16137, 21, 5191, 587, 5478, 558, 576, 16138, 1385, 4913, 16226, 4945, 6462, 5187, 1128, 13740, 16237, 16203, 7039, 16239, 9543, 2]
+// Dependencies: [32, 19, 17, 6228, 16137, 21, 5191, 587, 5478, 558, 576, 16138, 1385, 4913, 16226, 4945, 6462, 5187, 1128, 13735, 16237, 16203, 7039, 16239, 9543, 2]
 
 // Module 16236 (QuestDockBackgroundBlurHeader)
 import nativeDefault from "native" /* 587 */;
@@ -587,7 +587,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     intl2 = tmp(1128).intl;
     items12 = [closure_12(Text2, obj24), ];
     const obj25 = { color: questDockWrapperSpecs(587).colors.INTERACTIVE_TEXT_ACTIVE, style: tmp25.actionDisclosuresIcon };
-    const CircleQuestionIcon = tmp(13740).CircleQuestionIcon;
+    const CircleQuestionIcon = tmp(13735).CircleQuestionIcon;
     items12[1] = closure_12(CircleQuestionIcon, obj25);
     tmp27Result = tmp27(PressableOpacity, obj22);
   } else {
@@ -858,7 +858,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     intl2 = tmp(1128).intl;
     items1 = [closure_12(Text2, obj17), ];
     const obj18 = { color: questDockWrapperSpecs(587).colors.INTERACTIVE_TEXT_ACTIVE, style: tmp19.actionDisclosuresIcon };
-    const CircleQuestionIcon = tmp(13740).CircleQuestionIcon;
+    const CircleQuestionIcon = tmp(13735).CircleQuestionIcon;
     items1[1] = closure_12(CircleQuestionIcon, obj18);
     tmp20Result = tmp20(PressableOpacity, obj15);
     tmp23 = tmp20;

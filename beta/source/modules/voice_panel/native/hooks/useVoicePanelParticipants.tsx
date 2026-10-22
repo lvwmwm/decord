@@ -457,7 +457,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChunked
   if (cResult[2] !== first1) {
     class T {
       constructor() {
-        return () => { /* body not rendered: F153079 */ };
+        return () => { /* body not rendered: F153088 */ };
       }
     }
     let items = [first1];
@@ -469,7 +469,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChunked
   } else {
     class T {
       constructor() {
-        return () => { /* body not rendered: F153079 */ };
+        return () => { /* body not rendered: F153088 */ };
       }
     }
     tmp11 = cResult[4];
@@ -478,7 +478,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChunked
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     class T {
       constructor() {
-        return () => { /* body not rendered: F153079 */ };
+        return () => { /* body not rendered: F153088 */ };
       }
     }
     let items1 = [VoiceStateStore, ];
@@ -487,14 +487,14 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChunked
   } else {
     class T {
       constructor() {
-        return () => { /* body not rendered: F153079 */ };
+        return () => { /* body not rendered: F153088 */ };
       }
     }
   }
   if (cResult[6] === first1) {
     class T {
       constructor() {
-        return () => { /* body not rendered: F153079 */ };
+        return () => { /* body not rendered: F153088 */ };
       }
     }
   }
@@ -513,7 +513,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChunked
           _Set = Set;
           self = this;
           self2 = this;
-          set = new Set((() => { /* body not rendered: F153080 */ })());
+          set = new Set((() => { /* body not rendered: F153089 */ })());
           tmp3 = set;
           tmp4 = set;
           for (const item10013 of set) {

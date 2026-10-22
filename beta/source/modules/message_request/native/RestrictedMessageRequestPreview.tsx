@@ -1,7 +1,7 @@
 // Module ID: 18045
 // Function ID: 18046
 // Name: RestrictedMessageRequestPreview
-// Dependencies: [32, 19, 17, 2068, 5532, 1392, 21, 5191, 587, 558, 576, 1633, 504, 18046, 18048, 13115, 2]
+// Dependencies: [32, 19, 17, 2068, 5532, 1392, 21, 5191, 587, 558, 576, 1633, 504, 18046, 18048, 13110, 2]
 
 // Module 18045 (RestrictedMessageRequestPreview)
 import nativeDefault from "native" /* 587 */;
@@ -298,7 +298,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedMe
       const obj7 = { channelId };
       items8[1] = closure_10(ref(18048), obj7);
       items9 = [closure_11(tmp15, obj5), ];
-      const obj8 = { style: items10, children: closure_10(ref(13115), obj10) };
+      const obj8 = { style: items10, children: closure_10(ref(13110), obj10) };
       items10 = [tmp.footer, ];
       items10[1] = { paddingBottom: ref(587).space.PX_8 + bottom };
       obj10 = { channel: stateFromStores };

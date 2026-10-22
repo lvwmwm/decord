@@ -1,7 +1,7 @@
 // Module ID: 17581
 // Function ID: 17582
 // Name: ForYouSuggestedFriendRow
-// Dependencies: [19, 17, 5181, 4855, 1087, 21, 5191, 11901, 587, 1384, 7130, 5486, 573, 8577, 2002, 5057, 17172, 1128, 4945, 17582, 6462, 17583, 1202, 5187, 17584, 17585, 1267, 2]
+// Dependencies: [19, 17, 5181, 4855, 1087, 21, 5191, 11896, 587, 1384, 7130, 5486, 573, 8577, 2002, 5057, 17172, 1128, 4945, 17582, 6462, 17583, 1202, 5187, 17584, 17585, 1267, 2]
 // Exports: default
 
 // Module 17581 (ForYouSuggestedFriendRow)
@@ -12,7 +12,7 @@ import PlatformUtils from "PlatformUtils" /* 1384 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import UserUtilsDefault from "UserUtils" /* 5057 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7130 */;
-import ChannelListLayout from "ChannelListLayout" /* 11901 */;
+import ChannelListLayout from "ChannelListLayout" /* 11896 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5181 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
@@ -72,11 +72,11 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
   let sharedValue;
   let stateFromStores;
   let tmp = suggestedFriend;
-  let obj = suggestedFriend(11901);
+  let obj = suggestedFriend(11896);
   const messagesTabLayout = obj.useMessagesTabLayout(panelVariant);
   const tmp4 = closure_12(messagesTabLayout);
   const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
-  let obj2 = suggestedFriend(11901);
+  let obj2 = suggestedFriend(11896);
   const layoutStyles = obj2.getLayoutStyles(messagesTabLayout);
   const obj3 = suggestedFriend(5486);
   const fontScale = obj3.useFontScale();
@@ -166,7 +166,7 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
       };
       const ContactSuggestionActions = tmp(17585).ContactSuggestionActions;
       str4 = "sm";
-      const tmpResult14 = tmp(11901);
+      const tmpResult14 = tmp(11896);
       if (tmpResult14.isLayoutCozy(messagesTabLayout)) {
         str4 = "md";
       }

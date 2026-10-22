@@ -1,10 +1,10 @@
-// Module ID: 12289
-// Function ID: 12290
+// Module ID: 12284
+// Function ID: 12285
 // Name: ConjureClarification
 // Dependencies: [2068, 1392, 1087, 1128, 3883, 2]
 // Exports: clarificationAnswerAttachments, clarificationAnswersPayload, clarificationChannelType, clarificationDraftPlaceholder, clarificationEntities, clarificationPickerPlaceholder, entityAnswer, followingClarificationStep, formatClarificationAnswers, isClarificationComplete, isTypedClarificationQuestion, multiSelectAnswer, nextClarificationStep, toggleClarificationOption
 
-// Module 12289 (ConjureClarification)
+// Module 12284 (ConjureClarification)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef3883 from "module_3883" /* 3883 */;

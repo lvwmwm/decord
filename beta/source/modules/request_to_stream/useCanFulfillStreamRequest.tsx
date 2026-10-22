@@ -1,9 +1,9 @@
-// Module ID: 12518
-// Function ID: 12519
+// Module ID: 12513
+// Function ID: 12514
 // Name: useCanFulfillStreamRequest
 // Dependencies: [2021, 6153, 502, 2068, 2090, 4845, 5207, 5209, 1087, 11435, 1384, 11208, 558, 576, 504, 2]
 
-// Module 12518 (useCanFulfillStreamRequest)
+// Module 12513 (useCanFulfillStreamRequest)
 import RunningGameStore from "RunningGameStore" /* 2021 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6153 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

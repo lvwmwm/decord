@@ -1,7 +1,7 @@
 // Module ID: 11586
 // Function ID: 11587
 // Name: RouteManager
-// Dependencies: [6013, 11587, 1087, 1114, 11588, 12381, 2]
+// Dependencies: [6013, 11587, 1087, 1114, 11588, 12376, 2]
 
 // Module 11586 (RouteManager)
 import Constants from "Constants" /* 1087 */;
@@ -107,7 +107,7 @@ class RouteManager {
         let pathname = obj2.getHistory().location.pathname;
         let tmp7Result = tmp7(location, REPLACE);
         if (null != tmp7Result) {
-          let tmp9Result = tmp9(12381);
+          let tmp9Result = tmp9(12376);
           let obj3 = { message: "RouteManager.handleRouteChange: A route rewrite is replacing the current route", data: obj4 };
           obj4 = { replacePath: tmp7Result.path, previousPath: pathname };
           let addBreadcrumbResult = tmp9Result.addBreadcrumb(obj3);

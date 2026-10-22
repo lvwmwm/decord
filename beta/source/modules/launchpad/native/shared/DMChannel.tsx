@@ -1,7 +1,7 @@
 // Module ID: 18395
 // Function ID: 18396
 // Name: shared/DMChannel
-// Dependencies: [19, 6223, 21, 558, 576, 5202, 10595, 5191, 587, 17797, 17487, 16377, 11, 5486, 18389, 6462, 18387, 13534, 9615, 17796, 5521, 2]
+// Dependencies: [19, 6223, 21, 558, 576, 5202, 10595, 5191, 587, 17797, 17487, 16377, 11, 5486, 18389, 6462, 18387, 13529, 9615, 17796, 5521, 2]
 
 // Module 18395 (shared/DMChannel)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -219,7 +219,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     let tmp23 = null != tmp13;
     if (tmp23) {
-      const ChannelRowPreview = tmp(13534).ChannelRowPreview;
+      const ChannelRowPreview = tmp(13529).ChannelRowPreview;
       tmp23 = <ChannelRowPreview channel={channel} message={tmp13} color={str} muted={undefined !== muted && muted} layout={ChannelListLayoutTypes.ChannelListLayoutTypes.COMPACT} />;
     }
     cResult[9] = channel;
@@ -277,7 +277,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp2Result4 = renderChannelItemDefault;
   if (tmp11Result) {
     const obj5 = { channel, message: tmp7, color: str, muted, layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COMPACT };
-    const ChannelRowPreview = tmp5(13534).ChannelRowPreview;
+    const ChannelRowPreview = tmp5(13529).ChannelRowPreview;
     tmp11Result = tmp11(ChannelRowPreview, obj5);
   }
   return tmp2Result3(<PressableHighlight style={items} underlayColor={tmp.pressableUnderlayColor.backgroundColor}>{tmp2Result4(obj3)}</PressableHighlight>);

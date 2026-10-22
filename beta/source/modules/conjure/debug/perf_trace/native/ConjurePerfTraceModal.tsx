@@ -1,18 +1,18 @@
-// Module ID: 12349
-// Function ID: 12350
+// Module ID: 12344
+// Function ID: 12345
 // Name: ConjurePerfTraceModal
-// Dependencies: [19, 17, 10983, 21, 5191, 587, 558, 576, 12350, 7182, 10859, 5187, 7838, 12351, 12353, 1633, 12354, 11009, 5479, 504, 6478, 6190, 10929, 2]
+// Dependencies: [19, 17, 10983, 21, 5191, 587, 558, 576, 12345, 7182, 10859, 5187, 7838, 12346, 12348, 1633, 12349, 11009, 5479, 504, 6478, 6190, 10929, 2]
 
-// Module 12349 (ConjurePerfTraceModal)
+// Module 12344 (ConjurePerfTraceModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import NavigatorHeader from "NavigatorHeader" /* 6478 */;
 import ChevronSmallRightIcon2 from "ChevronSmallRightIcon" /* 7182 */;
-import ConjurePerfTraceStatsHeaderDefault from "ConjurePerfTraceStatsHeader" /* 12350 */;
-import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 12351 */;
-import useConjurePerfTraceTreeDefault from "useConjurePerfTraceTree" /* 12354 */;
+import ConjurePerfTraceStatsHeaderDefault from "ConjurePerfTraceStatsHeader" /* 12345 */;
+import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 12346 */;
+import useConjurePerfTraceTreeDefault from "useConjurePerfTraceTree" /* 12349 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ConjureDebugStore from "ConjureDebugStore" /* 10983 */;
@@ -46,7 +46,7 @@ let obj9;
 let rect;
 let size;
 let tmp;
-const ConjurePerfTraceStats = tmp(12353);
+const ConjurePerfTraceStats = tmp(12348);
 ({ Pressable: closure_4, ScrollView: hasOwnProperty, View: metroRequire } = react_native);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 const perf_trace = "perf_trace";
@@ -550,7 +550,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Waterf
   const detail = tmp;
   let tmp2 = node;
   let tmp3 = dependencyMap;
-  let obj = node(12350);
+  let obj = node(12345);
   const perfCategoryColors = obj.usePerfCategoryColors();
   if (collapsed) {
     ChevronSmallDownIcon = tmp2(7182).ChevronSmallRightIcon;
@@ -646,7 +646,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Waterf
   items2[6] = tmp14Result5;
   const obj16 = { variant: "text-xs/normal", color: "text-muted", children: tmp2Result.perfNodeDuration(node) };
   const Text2 = tmp2(5187).Text;
-  tmp2Result = tmp2(12351);
+  tmp2Result = tmp2(12346);
   items2[7] = tmp14(Text2, obj16);
   items4 = [tmp6(closure_6, obj4), , ];
   const obj17 = { style: tmp.track, children: tmp14(closure_6, obj18) };
@@ -706,7 +706,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Waterf
     items6 = [tmp.detail, ];
     items6[1] = { paddingLeft: node.depth * selected(587).space.PX_12 };
     const obj21 = { paddingLeft: node.depth * selected(587).space.PX_12 };
-    const tmp2Result2 = tmp2(12351);
+    const tmp2Result2 = tmp2(12346);
     perfNodeSectionsResult = tmp2Result2.perfNodeSections(node);
     tmp14Result6 = tmp14(tmp10, obj20);
   }

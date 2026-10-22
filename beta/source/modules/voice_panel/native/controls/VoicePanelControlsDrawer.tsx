@@ -1,7 +1,7 @@
 // Module ID: 18339
 // Function ID: 18340
 // Name: VoicePanelControlsDrawer
-// Dependencies: [32, 19, 17, 10680, 21, 5191, 587, 558, 576, 6438, 5430, 12928, 10679, 4945, 12929, 5478, 9878, 18340, 18351, 17134, 18336, 2]
+// Dependencies: [32, 19, 17, 10680, 21, 5191, 587, 558, 576, 6438, 5430, 12923, 10679, 4945, 12924, 5478, 9878, 18340, 18351, 17134, 18336, 2]
 
 // Module 18339 (VoicePanelControlsDrawer)
 import react2 from "react" /* 576 */;
@@ -10,8 +10,8 @@ import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
 import spring from "spring" /* 5478 */;
 import useRefValueDefault from "useRefValue" /* 6438 */;
 import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 9878 */;
-import VoicePanelChatViewDefault from "VoicePanelChatView" /* 12928 */;
-import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 12929 */;
+import VoicePanelChatViewDefault from "VoicePanelChatView" /* 12923 */;
+import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 12924 */;
 import VoicePanelVoiceControlsDefault from "VoicePanelVoiceControls" /* 18340 */;
 import VoicePanelControlsAppLauncherDefault from "VoicePanelControlsAppLauncher" /* 18351 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

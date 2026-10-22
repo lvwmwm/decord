@@ -1,10 +1,10 @@
-// Module ID: 13673
-// Function ID: 13674
+// Module ID: 13668
+// Function ID: 13669
 // Name: GiftingBadgeConstants
 // Dependencies: [8590, 2]
 // Exports: getNextTierForProgress, getRemainingGiftsToNextTier, getTierForProgress
 
-// Module 13673 (GiftingBadgeConstants)
+// Module 13668 (GiftingBadgeConstants)
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8590 */;
 import size from "module_2" /* 2 */;
 

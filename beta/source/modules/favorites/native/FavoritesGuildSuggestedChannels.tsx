@@ -1,7 +1,7 @@
 // Module ID: 17329
 // Function ID: 17330
 // Name: FavoritesGuildSuggestedChannels
-// Dependencies: [19, 17, 17330, 1087, 11900, 21, 587, 5191, 558, 576, 17236, 1128, 3465, 6485, 7015, 17331, 17332, 5479, 12693, 2]
+// Dependencies: [19, 17, 17330, 1087, 11895, 21, 587, 5191, 558, 576, 17236, 1128, 3465, 6485, 7015, 17331, 17332, 5479, 12688, 2]
 // Exports: getFavoritesSuggestionsNoticeHeight
 
 // Module 17329 (FavoritesGuildSuggestedChannels)
@@ -13,7 +13,7 @@ import _modDef3465 from "module_3465" /* 3465 */;
 import components_Button_Button from "components/Button/Button" /* 5479 */;
 import XSmallIcon from "XSmallIcon" /* 6485 */;
 import useScaledRowHeightDefault from "useScaledRowHeight" /* 7015 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11900 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11895 */;
 import SearchableDestinationListRowDefault from "SearchableDestinationListRow" /* 17331 */;
 import handleFavoritesGuildAddSuggestedChannelDefault from "handleFavoritesGuildAddSuggestedChannel" /* 17332 */;
 import react_mod from "react" /* 19 */;

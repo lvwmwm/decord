@@ -1,12 +1,12 @@
-// Module ID: 13023
-// Function ID: 13024
+// Module ID: 13018
+// Function ID: 13019
 // Name: SearchTabsFetchManager
-// Dependencies: [109, 9614, 1087, 13024, 13025, 2]
+// Dependencies: [109, 9614, 1087, 13019, 13020, 2]
 
-// Module 13023 (SearchTabsFetchManager)
+// Module 13018 (SearchTabsFetchManager)
 import Constants from "Constants" /* 1087 */;
-import AbstractSearchFetchManager2 from "AbstractSearchFetchManager" /* 13024 */;
-import SearchFetcher from "SearchFetcher" /* 13025 */;
+import AbstractSearchFetchManager2 from "AbstractSearchFetchManager" /* 13019 */;
+import SearchFetcher from "SearchFetcher" /* 13020 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import SearchConstants from "SearchConstants" /* 9614 */;
 import size from "module_2" /* 2 */;

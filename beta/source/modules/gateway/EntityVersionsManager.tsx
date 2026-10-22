@@ -44,7 +44,7 @@ function handleDeletedEntityIds(guild_id) {
         let obj3;
         if (!set.has(id)) {
           const obj2 = { type: "CHANNEL_DELETE", channel: obj3 };
-          obj3 = { guild_id: guild_id2, id, parent_id: "Array" };
+          obj3 = { guild_id: guild_id2, id, parent_id: "r" };
           const obj = guild_id(closure_2_1[8]);
           obj.dispatch(obj2);
         }

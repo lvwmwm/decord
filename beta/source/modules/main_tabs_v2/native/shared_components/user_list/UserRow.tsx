@@ -453,7 +453,7 @@ const memoResult = react.memo(function UserRow(type) {
     let zFfSFQ2;
     const items = [];
     if (NONE !== UserRowModes.ACTIONS) {
-      let obj2 = { accessibilityActions: items, actions: "e" };
+      let obj2 = { accessibilityActions: items, actions: "a" };
       return obj2;
     } else {
       let tmp9;

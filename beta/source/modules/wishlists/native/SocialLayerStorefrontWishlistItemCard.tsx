@@ -1,16 +1,16 @@
-// Module ID: 13680
-// Function ID: 13681
+// Module ID: 13675
+// Function ID: 13676
 // Name: SocialLayerStorefrontWishlistItemCard
-// Dependencies: [109, 19, 5540, 13678, 21, 5191, 587, 558, 576, 504, 9320, 5128, 9268, 2]
+// Dependencies: [109, 19, 5540, 13673, 21, 5191, 587, 558, 576, 504, 9320, 5128, 9268, 2]
 
-// Module 13680 (SocialLayerStorefrontWishlistItemCard)
+// Module 13675 (SocialLayerStorefrontWishlistItemCard)
 import nativeDefault from "native" /* 587 */;
 import WishlistItemCardBaseDefault from "WishlistItemCardBase" /* 9268 */;
 import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9320 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5540 */;
-import SentGiftsStore from "SentGiftsStore" /* 13678 */;
+import SentGiftsStore from "SentGiftsStore" /* 13673 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

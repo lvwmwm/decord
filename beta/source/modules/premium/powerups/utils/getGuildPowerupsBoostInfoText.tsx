@@ -1,10 +1,10 @@
-// Module ID: 13245
-// Function ID: 13246
+// Module ID: 13240
+// Function ID: 13241
 // Name: getGuildPowerupsBoostInfoText
 // Dependencies: [5104, 1128, 2621, 2]
 // Exports: getGuildPowerupsBoostInfoText
 
-// Module 13245 (getGuildPowerupsBoostInfoText)
+// Module 13240 (getGuildPowerupsBoostInfoText)
 import intl4 from "intl" /* 1128 */;
 import _modDef2621 from "module_2621" /* 2621 */;
 import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5104 */;

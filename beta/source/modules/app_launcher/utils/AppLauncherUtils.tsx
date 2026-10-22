@@ -1,7 +1,7 @@
 // Module ID: 9548
 // Function ID: 9549
 // Name: AppLauncherUtils
-// Dependencies: [109, 5, 9549, 2024, 11916, 1087, 5503, 5185, 1128, 2032, 6297, 6359, 11855, 1384, 2000, 7513, 10101, 7635, 7445, 5399, 1417, 10949, 11953, 7509, 11262, 2]
+// Dependencies: [109, 5, 9549, 2024, 11911, 1087, 5503, 5185, 1128, 2032, 6297, 6359, 11850, 1384, 2000, 7513, 10101, 7635, 7445, 5399, 1417, 10949, 11948, 7509, 11262, 2]
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getEmbeddedActivityConfig, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isActivityApp, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isPartnerApplication, isPromotedApplication, isRealApplication
 
 // Module 9548 (AppLauncherUtils)
@@ -18,13 +18,13 @@ import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6359 */;
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7509 */;
 import AppLauncherTypes from "AppLauncherTypes" /* 10949 */;
 import ApplicationInstallUtils from "ApplicationInstallUtils" /* 11262 */;
-import getPlatformDefault from "getPlatform" /* 11855 */;
-import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 11953 */;
+import getPlatformDefault from "getPlatform" /* 11850 */;
+import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 11948 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9549 */;
 import ApplicationRecord from "ApplicationRecord" /* 2024 */;
-import AppLauncherStore from "AppLauncherStore" /* 11916 */;
+import AppLauncherStore from "AppLauncherStore" /* 11911 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

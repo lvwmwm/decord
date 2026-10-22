@@ -1,14 +1,14 @@
-// Module ID: 13152
-// Function ID: 13153
+// Module ID: 13147
+// Function ID: 13148
 // Name: ChatInputGuardAutomodUserProfileQuarantine
-// Dependencies: [19, 502, 2128, 4831, 21, 558, 576, 4851, 504, 12597, 1128, 13153, 13123, 2]
+// Dependencies: [19, 502, 2128, 4831, 21, 558, 576, 4851, 504, 12592, 1128, 13148, 13118, 2]
 
-// Module 13152 (ChatInputGuardAutomodUserProfileQuarantine)
+// Module 13147 (ChatInputGuardAutomodUserProfileQuarantine)
 import Fragment from "Fragment" /* 21 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 4831 */;
 import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4851 */;
-import GuildAutomodActionActionCreators from "GuildAutomodActionActionCreators" /* 12597 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 13123 */;
+import GuildAutomodActionActionCreators from "GuildAutomodActionActionCreators" /* 12592 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 13118 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2128 */;
@@ -214,7 +214,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         return;
       }
     }
-    const tmp18 = jsx(tmp(13153).ChatXIcon, {});
+    const tmp18 = jsx(tmp(13148).ChatXIcon, {});
     cResult[12] = tmp18;
   } else {
     class R {

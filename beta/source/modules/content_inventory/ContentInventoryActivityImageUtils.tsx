@@ -1,10 +1,10 @@
-// Module ID: 14050
-// Function ID: 14051
+// Module ID: 14045
+// Function ID: 14046
 // Name: ContentInventoryActivityImageUtils
-// Dependencies: [19, 5540, 1087, 2026, 8733, 8547, 1128, 558, 576, 14051, 7285, 14053, 10556, 1417, 14057, 6019, 14058, 10550, 7134, 504, 1267, 8736, 2]
+// Dependencies: [19, 5540, 1087, 2026, 8733, 8547, 1128, 558, 576, 14046, 7285, 14048, 10556, 1417, 14052, 6019, 14053, 10550, 7134, 504, 1267, 8736, 2]
 // Exports: getApplicationImage
 
-// Module 14050 (ContentInventoryActivityImageUtils)
+// Module 14045 (ContentInventoryActivityImageUtils)
 import react from "react" /* 19 */;
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1128 */;
@@ -18,10 +18,10 @@ import ContentInventoryTypes from "ContentInventoryTypes" /* 8733 */;
 import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8736 */;
 import conjurePresenceActivity from "conjurePresenceActivity" /* 10550 */;
 import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 10556 */;
-import useEntryActivityAndApplicationDefault from "useEntryActivityAndApplication" /* 14051 */;
-import useConjurePresenceActivityImageDefault from "useConjurePresenceActivityImage" /* 14053 */;
-import isOnXboxDefault from "isOnXbox" /* 14057 */;
-import isOnPlayStationDefault from "isOnPlayStation" /* 14058 */;
+import useEntryActivityAndApplicationDefault from "useEntryActivityAndApplication" /* 14046 */;
+import useConjurePresenceActivityImageDefault from "useConjurePresenceActivityImage" /* 14048 */;
+import isOnXboxDefault from "isOnXbox" /* 14052 */;
+import isOnPlayStationDefault from "isOnPlayStation" /* 14053 */;
 import ApplicationStore from "ApplicationStore" /* 5540 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -96,9 +96,9 @@ function computeImageForActivity(arg0) {
         tmp16 = { src: guildIconURL };
         const obj3 = { src: guildIconURL };
       }
-      return { largeImage: tmp16, smallImage: "e" };
+      return { largeImage: tmp16, smallImage: "a" };
     } else if (isOnXboxDefault(activity)) {
-      const obj5 = { largeImage: obj6, smallImage: "e" };
+      const obj5 = { largeImage: obj6, smallImage: "a" };
       obj6 = { src: tmp2Result.get(metroRequire.XBOX).icon.customPNG, alt: intl4.string(intl5.t.Nfvo72) };
       tmp2Result = PlatformsDefault;
       intl4 = tmp17(1128).intl;
@@ -106,7 +106,7 @@ function computeImageForActivity(arg0) {
     } else {
       if (null == smallImage) {
         if (isOnPlayStationDefault(activity)) {
-          const obj7 = { largeImage: obj8, smallImage: "e" };
+          const obj7 = { largeImage: obj8, smallImage: "a" };
           obj8 = { src: tmp2Result2.get(metroRequire.PLAYSTATION).icon.lightPNG, alt: intl3.string(intl5.t.fFl4jo) };
           tmp2Result2 = PlatformsDefault;
           intl3 = tmp17(1128).intl;
@@ -120,7 +120,7 @@ function computeImageForActivity(arg0) {
         if (activity != null) {
           name1 = activity.name;
         }
-        return { largeImage: obj9, smallImage: "e" };
+        return { largeImage: obj9, smallImage: "a" };
       } else {
         let name;
         let obj14;
@@ -148,7 +148,7 @@ function computeImageForActivity(arg0) {
           obj14 = { largeImage: tmp5, smallImage };
           const obj13 = { largeImage: tmp5, smallImage };
         } else {
-          obj14 = { largeImage: smallImage, smallImage: "e" };
+          obj14 = { largeImage: smallImage, smallImage: "a" };
         }
         return obj14;
       }
@@ -234,7 +234,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useImageForC
   } else if (null != tmp11) {
     let tmp16;
     if (cResult[9] !== tmp11) {
-      const obj4 = { largeImage: tmp11, smallImage: "e" };
+      const obj4 = { largeImage: tmp11, smallImage: "a" };
       cResult[9] = tmp11;
       cResult[10] = obj4;
       tmp16 = obj4;
@@ -247,7 +247,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useImageForC
       if (tmp4) {
         let tmp15;
         if (cResult[11] !== tmp9) {
-          const obj5 = { largeImage: obj6, smallImage: "e" };
+          const obj5 = { largeImage: obj6, smallImage: "a" };
           obj6 = { src: tmp9 };
           cResult[11] = tmp9;
           cResult[12] = obj5;
@@ -259,7 +259,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useImageForC
       }
     }
     if (cResult[13] !== largeImage2) {
-      const obj7 = { largeImage: largeImage2, smallImage: "e" };
+      const obj7 = { largeImage: largeImage2, smallImage: "a" };
       cResult[13] = largeImage2;
       cResult[14] = obj7;
       tmp14 = obj7;
@@ -333,17 +333,17 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useImageForC
     obj7 = { largeImage, smallImage };
     const obj3 = { largeImage, smallImage };
   } else if (null != tmp6) {
-    obj7 = { largeImage: tmp6, smallImage: "e" };
-    const obj4 = { largeImage: tmp6, smallImage: "e" };
+    obj7 = { largeImage: tmp6, smallImage: "a" };
+    const obj4 = { largeImage: tmp6, smallImage: "a" };
   } else {
     if (null != coverURL) {
       if (showCoverImage) {
-        const obj5 = { largeImage: obj6, smallImage: "e" };
+        const obj5 = { largeImage: obj6, smallImage: "a" };
         obj7 = obj5;
         obj6 = { src: coverURL };
       }
     }
-    obj7 = { largeImage: largeImage2, smallImage: "e" };
+    obj7 = { largeImage: largeImage2, smallImage: "a" };
   }
   const obj8 = { activity, application: fallbackApplication, largeImageSrc: src, trackingSource };
   const tmp7 = closure_11;

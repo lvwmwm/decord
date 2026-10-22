@@ -1,7 +1,7 @@
 // Module ID: 16645
 // Function ID: 16646
 // Name: DevToolsScreens
-// Dependencies: [19, 21, 6393, 16646, 11630, 16647, 16650, 12544, 9641, 16652, 16653, 11671, 16654, 11636, 16680, 16320, 16681, 16682, 16686, 9415, 16689, 5143, 16724, 11180, 16727, 9211, 16732, 12163, 16733, 12674, 16760, 10023, 16783, 16412, 16785, 10733, 16787, 11643, 16788, 11969, 16795, 16796, 16798, 16660, 16799, 5137, 16806, 11447, 16807, 16808, 16809, 2]
+// Dependencies: [19, 21, 6393, 16646, 11630, 16647, 16650, 12539, 9641, 16652, 16653, 11671, 16654, 11636, 16680, 16320, 16681, 16682, 16686, 9415, 16689, 5143, 16724, 11180, 16727, 9211, 16732, 12158, 16733, 12669, 16760, 10023, 16783, 16412, 16785, 10733, 16787, 11643, 16788, 11964, 16795, 16796, 16798, 16660, 16799, 5137, 16806, 11447, 16807, 16808, 16809, 2]
 
 // Module 16645 (DevToolsScreens)
 import Fragment from "Fragment" /* 21 */;
@@ -19,10 +19,10 @@ import RefreshIcon from "RefreshIcon" /* 11630 */;
 import FileUpIcon from "FileUpIcon" /* 11636 */;
 import RobotIcon from "RobotIcon" /* 11643 */;
 import UserIcon from "UserIcon" /* 11671 */;
-import ShopIcon from "ShopIcon" /* 11969 */;
-import MagicWandIcon from "MagicWandIcon" /* 12163 */;
-import DevToolsExperimentsScreen from "DevToolsExperimentsScreen" /* 12544 */;
-import PiggyBankIcon from "PiggyBankIcon" /* 12674 */;
+import ShopIcon from "ShopIcon" /* 11964 */;
+import MagicWandIcon from "MagicWandIcon" /* 12158 */;
+import DevToolsExperimentsScreen from "DevToolsExperimentsScreen" /* 12539 */;
+import PiggyBankIcon from "PiggyBankIcon" /* 12669 */;
 import PaintPaletteIcon from "PaintPaletteIcon" /* 16320 */;
 import EyeDropperIcon from "EyeDropperIcon" /* 16412 */;
 import DevToolsAnalyticsScreen from "DevToolsAnalyticsScreen" /* 16646 */;

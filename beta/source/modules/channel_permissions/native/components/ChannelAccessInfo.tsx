@@ -1,9 +1,9 @@
-// Module ID: 13159
-// Function ID: 13160
+// Module ID: 13154
+// Function ID: 13155
 // Name: ChannelAccessInfo
-// Dependencies: [19, 17, 2086, 2128, 2122, 21, 5191, 587, 558, 576, 1128, 8877, 504, 11183, 1388, 5187, 6462, 1202, 13158, 8489, 8897, 8895, 11410, 2]
+// Dependencies: [19, 17, 2086, 2128, 2122, 21, 5191, 587, 558, 576, 1128, 8877, 504, 11183, 1388, 5187, 6462, 1202, 13153, 8489, 8897, 8895, 11410, 2]
 
-// Module 13159 (ChannelAccessInfo)
+// Module 13154 (ChannelAccessInfo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
@@ -241,7 +241,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelAcc
           const MEMBERS = constants.MEMBERS;
           items5 = [, ];
           const length = existingMembers.length;
-          const tmp57 = channel(13158);
+          const tmp57 = channel(13153);
           items5[0] = tmp32(MEMBERS, length, tmp57, guild(8489).GroupIcon);
           const ROLES = constants.ROLES;
           const length2 = stateFromStoresArray.length;
@@ -485,7 +485,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelAcc
     obj9 = { children: items5 };
     const MEMBERS = constants.MEMBERS;
     const length = existingMembers.length;
-    channel(13158);
+    channel(13153);
     items5 = [renderCounts(MEMBERS, length, 0, tmp2(8489).GroupIcon), ];
     const ROLES = constants.ROLES;
     const length2 = stateFromStoresArray.length;

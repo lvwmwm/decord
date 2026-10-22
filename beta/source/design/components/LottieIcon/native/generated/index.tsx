@@ -1,11 +1,11 @@
 // Module ID: 17159
 // Function ID: 17160
-// Dependencies: [2, 15015, 15017, 15019, 15021, 15023, 11436, 15025, 15027, 15029, 15031, 15033, 15035, 15037, 15039, 15041, 15043, 13731, 13729]
+// Dependencies: [2, 15015, 15017, 15019, 15021, 15023, 11436, 15025, 15027, 15029, 15031, 15033, 15035, 15037, 15039, 15041, 15043, 13726, 13724]
 
 // Module 17159
 import CameraLottie from "CameraLottie" /* 11436 */;
-import SpendEarnOrbsLightThemeLottie from "SpendEarnOrbsLightThemeLottie" /* 13729 */;
-import SpendEarnOrbsLottie from "SpendEarnOrbsLottie" /* 13731 */;
+import SpendEarnOrbsLightThemeLottie from "SpendEarnOrbsLightThemeLottie" /* 13724 */;
+import SpendEarnOrbsLottie from "SpendEarnOrbsLottie" /* 13726 */;
 import MessagesTabLottie from "MessagesTabLottie" /* 15015 */;
 import ServerTabLottie from "ServerTabLottie" /* 15017 */;
 import YouTabLottie from "YouTabLottie" /* 15019 */;

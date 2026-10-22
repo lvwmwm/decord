@@ -1,7 +1,7 @@
 // Module ID: 17212
 // Function ID: 17213
 // Name: HappeningNowAvatarStack
-// Dependencies: [32, 19, 17, 2132, 14084, 21, 5191, 587, 1202, 558, 576, 4945, 573, 5478, 9308, 1903, 5187, 17213, 2]
+// Dependencies: [32, 19, 17, 2132, 14079, 21, 5191, 587, 1202, 558, 576, 4945, 573, 5478, 9308, 1903, 5187, 17213, 2]
 
 // Module 17212 (HappeningNowAvatarStack)
 import react_native from "react-native" /* 17 */;
@@ -10,7 +10,7 @@ import native from "native" /* 1202 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
 import spring from "spring" /* 5478 */;
 import ClipView from "ClipView" /* 9308 */;
-import ChannelAnimationConstants from "ChannelAnimationConstants" /* 14084 */;
+import ChannelAnimationConstants from "ChannelAnimationConstants" /* 14079 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import LocaleStore_mod from "LocaleStore" /* 2132 */;

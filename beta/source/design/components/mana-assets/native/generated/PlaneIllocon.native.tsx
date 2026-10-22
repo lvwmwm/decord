@@ -1,14 +1,14 @@
 // Module ID: 19105
 // Function ID: 19106
 // Name: PlaneIllocon
-// Dependencies: [19, 21, 19106, 13169, 19107, 558, 576, 6550, 5128, 2]
+// Dependencies: [19, 21, 19106, 13164, 19107, 558, 576, 6550, 5128, 2]
 
 // Module 19105 (PlaneIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5128 */;
 import react_native from "react-native" /* 6550 */;
-import _modDef13169 from "module_13169" /* 13169 */;
+import _modDef13164 from "module_13164" /* 13164 */;
 import _modDef19106 from "module_19106" /* 19106 */;
 import _modDef19107 from "module_19107" /* 19107 */;
 import react from "react" /* 19 */;
@@ -19,8 +19,8 @@ const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
 let obj2 = { uri: _modDef19106 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef13169 };
-({ uri: _modDef13169 });
+obj[2] = { uri: _modDef13164 };
+({ uri: _modDef13164 });
 obj[3] = { uri: _modDef19107 };
 ({ uri: _modDef19107 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlaneIllocon(arg0) {

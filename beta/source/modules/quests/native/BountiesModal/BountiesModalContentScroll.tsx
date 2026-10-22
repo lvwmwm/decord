@@ -1,7 +1,7 @@
 // Module ID: 16051
 // Function ID: 16052
 // Name: BountiesModalContentScroll
-// Dependencies: [32, 19, 17, 7655, 6228, 16052, 1087, 2065, 21, 1385, 587, 558, 576, 5191, 4945, 1499, 1633, 16053, 9473, 7652, 16048, 5192, 5195, 7672, 13880, 1123, 504, 16056, 16057, 1281, 7681, 16058, 9474, 6235, 6233, 13902, 16059, 16096, 13919, 16097, 7091, 16101, 5491, 16102, 16062, 4922, 16103, 2]
+// Dependencies: [32, 19, 17, 7655, 6228, 16052, 1087, 2065, 21, 1385, 587, 558, 576, 5191, 4945, 1499, 1633, 16053, 9473, 7652, 16048, 5192, 5195, 7672, 13875, 1123, 504, 16056, 16057, 1281, 7681, 16058, 9474, 6235, 6233, 13897, 16059, 16096, 13914, 16097, 7091, 16101, 5491, 16102, 16062, 4922, 16103, 2]
 
 // Module 16051 (BountiesModalContentScroll)
 import react2 from "react" /* 576 */;
@@ -20,8 +20,8 @@ import QuestDataUtils from "QuestDataUtils" /* 7652 */;
 import AnalyticsActions from "AnalyticsActions" /* 7672 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 7681 */;
 import QuestActionCreators from "QuestActionCreators" /* 9474 */;
-import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 13880 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 13902 */;
+import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 13875 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 13897 */;
 import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 16048 */;
 import useBountiesRecapScroll from "useBountiesRecapScroll" /* 16057 */;
 import BountiesScrollVideoItem2 from "BountiesScrollVideoItem" /* 16059 */;
@@ -1351,7 +1351,7 @@ let closure_84 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
               return callback2(BountiesScrollRecapPage.BountiesScrollRecapPage, obj);
             }
       };
-      QuestContentImpressionTrackerNative = tmp5(13919).QuestContentImpressionTrackerNative;
+      QuestContentImpressionTrackerNative = tmp5(13914).QuestContentImpressionTrackerNative;
       tmp86Result = tmp86(View, obj41);
     }
     items25 = [tmp86Result, , , , , ];

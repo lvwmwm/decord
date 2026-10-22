@@ -1,14 +1,14 @@
 // Module ID: 17867
 // Function ID: 17868
 // Name: useSmartSearchMessages
-// Dependencies: [19, 12989, 9614, 558, 576, 12991, 17767, 13028, 504, 12993, 2]
+// Dependencies: [19, 12984, 9614, 558, 576, 12986, 17767, 13023, 504, 12988, 2]
 
 // Module 17867 (useSmartSearchMessages)
 import SearchConstants from "SearchConstants" /* 9614 */;
-import SmartSearchUtils from "SmartSearchUtils" /* 12991 */;
-import SmartSearchTypes from "SmartSearchTypes" /* 12993 */;
+import SmartSearchUtils from "SmartSearchUtils" /* 12986 */;
+import SmartSearchTypes from "SmartSearchTypes" /* 12988 */;
 import react from "react" /* 19 */;
-import SuggestedSearchStore from "SuggestedSearchStore" /* 12989 */;
+import SuggestedSearchStore from "SuggestedSearchStore" /* 12984 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,8 +35,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSmartSear
     const tmpResult = tmp(17767);
     const smartSearchStatus = tmpResult.useSmartSearchStatus(tmp5);
     let guildId;
-    const useIsNlpSearchEnabled = tmp(13028).useIsNlpSearchEnabled;
-    tmp(13028);
+    const useIsNlpSearchEnabled = tmp(13023).useIsNlpSearchEnabled;
+    tmp(13023);
     if (tmp5 != null) {
       guildId = tmp5.guildId;
     }
@@ -64,8 +64,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSmartSear
         tmp20 = null;
         if (!tmp4) {
           tmp20 = null;
-          if (smartSearchStatus !== tmp(12993).SmartSearchStatus.NOT_QUALIFIED) {
-            const tmpResult7 = tmp(12991);
+          if (smartSearchStatus !== tmp(12988).SmartSearchStatus.NOT_QUALIFIED) {
+            const tmpResult7 = tmp(12986);
             if (!tmpResult7.isSmartSearchEmptyOrErrored(smartSearchStatus)) {
               if (cResult[7] === hasKeywordResults) {
                 let tmp21;
@@ -100,7 +100,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSmartSear
     cResult[12] = obj3;
     tmp23 = obj3;
   }
-  const tmpResult8 = tmp(12991);
+  const tmpResult8 = tmp(12986);
   const smartSearchQuery = tmpResult8.getSmartSearchQuery(searchContext, searchQueryString);
   cResult[0] = searchContext;
   cResult[1] = searchQueryString;
@@ -151,7 +151,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSmartSear
             const tmp5 = smartSearchStatus;
             const tmp6 = require;
             if (smartSearchStatus !== SmartSearchTypes.SmartSearchStatus.NOT_QUALIFIED) {
-              const tmp6Result = tmp6(12991);
+              const tmp6Result = tmp6(12986);
               if (!tmp6Result.isSmartSearchEmptyOrErrored(tmp5)) {
                 const element = { type: SearchListItemTypes.SMART_SEARCH, props: obj };
                 tmp2 = element;

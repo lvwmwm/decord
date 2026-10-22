@@ -74,7 +74,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChanne
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       class I {
         constructor() {
-          return closure_0(() => { /* body not rendered: F151339 */ });
+          return closure_0(() => { /* body not rendered: F151348 */ });
         }
       }
       cResult[6] = I;
@@ -82,21 +82,21 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChanne
     } else {
       class I {
         constructor() {
-          return closure_0(() => { /* body not rendered: F151339 */ });
+          return closure_0(() => { /* body not rendered: F151348 */ });
         }
       }
     }
     if (tmp11 != null) {
       class I {
         constructor() {
-          return closure_0(() => { /* body not rendered: F151339 */ });
+          return closure_0(() => { /* body not rendered: F151348 */ });
         }
       }
     }
     if (cResult[7] !== (undefined === tmp3 && tmp11.isClosed)) {
       class I {
         constructor() {
-          return closure_0(() => { /* body not rendered: F151339 */ });
+          return closure_0(() => { /* body not rendered: F151348 */ });
         }
       }
       tmp29[0] = undefined === tmp3 && tmp11.isClosed;
@@ -107,7 +107,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChanne
     } else {
       class I {
         constructor() {
-          return closure_0(() => { /* body not rendered: F151339 */ });
+          return closure_0(() => { /* body not rendered: F151348 */ });
         }
       }
     }

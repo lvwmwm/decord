@@ -1,24 +1,17 @@
 // Module ID: 12496
 // Function ID: 12497
 // Dependencies: []
-// Exports: getBreadcrumbLogLevelFromHttpStatusCode
+// Exports: getSDKSource, isBrowserBundle
 
 // Module 12496
 
-export const getBreadcrumbLogLevelFromHttpStatusCode = function getBreadcrumbLogLevelFromHttpStatusCode(arg0) {
-  let tmp;
-  if (undefined !== arg0) {
-    let str;
-    if (arg0 < 400) {
-      let str2;
-      if (arg0 >= 500) {
-        str2 = "error";
-      }
-      str = str2;
-    } else {
-      str = "warning";
-    }
-    tmp = str;
+export function getSDKSource() {
+  return "npm";
+}
+export const isBrowserBundle = function isBrowserBundle() {
+  let prop = typeof globalThis.__SENTRY_BROWSER_BUNDLE__ !== "undefined";
+  if (typeof globalThis.__SENTRY_BROWSER_BUNDLE__ !== "undefined") {
+    prop = globalThis.__SENTRY_BROWSER_BUNDLE__;
   }
-  return tmp;
+  return prop;
 };

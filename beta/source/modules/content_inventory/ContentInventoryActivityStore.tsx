@@ -1,9 +1,9 @@
-// Module ID: 14052
-// Function ID: 14053
+// Module ID: 14047
+// Function ID: 14048
 // Name: ContentInventoryActivityStore
 // Dependencies: [5207, 8728, 1087, 8540, 8544, 8751, 8733, 8729, 12, 504, 584, 2]
 
-// Module 14052 (ContentInventoryActivityStore)
+// Module 14047 (ContentInventoryActivityStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;

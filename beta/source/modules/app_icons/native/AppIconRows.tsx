@@ -1,7 +1,7 @@
 // Module ID: 16590
 // Function ID: 16591
 // Name: AppIconRows
-// Dependencies: [32, 12901, 19, 17, 1392, 21, 5191, 558, 576, 9768, 6542, 1128, 16591, 14532, 504, 1991, 2]
+// Dependencies: [32, 12896, 19, 17, 1392, 21, 5191, 558, 576, 9768, 6542, 1128, 16591, 14532, 504, 1991, 2]
 
 // Module 16590 (AppIconRows)
 import react_native from "react-native" /* 17 */;
@@ -14,7 +14,7 @@ import AppIconTypes from "AppIconTypes" /* 9768 */;
 import AppIconUtils from "AppIconUtils" /* 14532 */;
 import AppIconRowDefault from "AppIconRow" /* 16591 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 12901 */;
+import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 12896 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;

@@ -1,7 +1,7 @@
 // Module ID: 9069
 // Function ID: 9070
 // Name: FormComponents
-// Dependencies: [109, 19, 5207, 21, 5191, 587, 558, 576, 6542, 6439, 9070, 1202, 7130, 9071, 9082, 7302, 5884, 9126, 8577, 7691, 504, 9127, 9129, 5187, 1128, 5057, 9130, 13956, 5479, 7292, 13958, 6457, 2]
+// Dependencies: [109, 19, 5207, 21, 5191, 587, 558, 576, 6542, 6439, 9070, 1202, 7130, 9071, 9082, 7302, 5884, 9126, 8577, 7691, 504, 9127, 9129, 5187, 1128, 5057, 9130, 13951, 5479, 7292, 13953, 6457, 2]
 // Exports: VoicePanelFormSection
 
 // Module 9069 (FormComponents)
@@ -17,7 +17,7 @@ import CallActionCreatorsDefault from "CallActionCreators" /* 7292 */;
 import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7691 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8577 */;
 import VoiceStateIcons from "VoiceStateIcons" /* 9070 */;
-import ShieldLockIcon from "ShieldLockIcon" /* 13956 */;
+import ShieldLockIcon from "ShieldLockIcon" /* 13951 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 5207 */;

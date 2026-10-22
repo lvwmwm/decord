@@ -1,7 +1,7 @@
 // Module ID: 15748
 // Function ID: 15749
 // Name: AccountUsernameSetting
-// Dependencies: [19, 1392, 8260, 1087, 21, 558, 576, 5057, 504, 12607, 5187, 11084, 1128, 15749, 2]
+// Dependencies: [19, 1392, 8260, 1087, 21, 558, 576, 5057, 504, 12602, 5187, 11084, 1128, 15749, 2]
 
 // Module 15748 (AccountUsernameSetting)
 import Fragment from "Fragment" /* 21 */;
@@ -10,7 +10,7 @@ import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import UserUtilsDefault from "UserUtils" /* 5057 */;
 import SettingsConstants from "SettingsConstants" /* 8260 */;
-import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 12607 */;
+import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 12602 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

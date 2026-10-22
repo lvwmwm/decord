@@ -1,9 +1,9 @@
-// Module ID: 12607
-// Function ID: 12608
+// Module ID: 12602
+// Function ID: 12603
 // Name: AutomodQuarantineUtils
 // Dependencies: [19, 10904, 502, 2128, 2090, 4845, 5034, 1087, 4831, 1097, 558, 576, 4851, 573, 1128, 10968, 10969, 7370, 2]
 
-// Module 12607 (AutomodQuarantineUtils)
+// Module 12602 (AutomodQuarantineUtils)
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import intl4 from "intl" /* 1128 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 4831 */;

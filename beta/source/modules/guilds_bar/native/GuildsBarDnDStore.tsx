@@ -79,7 +79,7 @@ const withEqualityFn = module_1269.createWithEqualityFn((arg0, arg1) => {
       } else {
         const obj4 = dropSpecs(tmp2[3]);
         obj4.batchUpdates(() => {
-          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "application" };
+          const obj = { dropSpecs, dragSpecs: "r", overSpecs: "toCharArray$esjava$1" };
           return dropSpecs(obj);
         });
         const _clearTimeout = clearTimeout;

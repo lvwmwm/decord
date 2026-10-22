@@ -1,9 +1,9 @@
-// Module ID: 14023
-// Function ID: 14024
+// Module ID: 14018
+// Function ID: 14019
 // Name: GuildInviteActionSheet
-// Dependencies: [32, 19, 17, 21, 5191, 587, 558, 576, 1128, 1202, 14024, 14025, 14021, 14026, 5187, 6942, 10856, 7117, 7016, 8957, 7118, 2]
+// Dependencies: [32, 19, 17, 21, 5191, 587, 558, 576, 1128, 1202, 14019, 14020, 14016, 14021, 5187, 6942, 10856, 7117, 7016, 8957, 7118, 2]
 
-// Module 14023 (GuildInviteActionSheet)
+// Module 14018 (GuildInviteActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,9 +14,9 @@ import SearchField2 from "SearchField" /* 7016 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7117 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7118 */;
 import InstantInviteUtilsDefault from "InstantInviteUtils" /* 8957 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14024 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14025 */;
-import GuildInviteRowDefault from "GuildInviteRow" /* 14026 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14019 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14020 */;
+import GuildInviteRowDefault from "GuildInviteRow" /* 14021 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -99,7 +99,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildL
   const query = recipientId.query;
   const tmp4 = closure_8();
   dependencyMap = tmp4;
-  const obj2 = recipientId(14021);
+  const obj2 = recipientId(14016);
   [arr, arr2] = _slicedToArray(obj2.useServerInviteRows(recipientId, query), 2);
   const tmp5 = _slicedToArray(obj2.useServerInviteRows(recipientId, query), 2);
   if (cResult[0] === (0 === arr.length && 0 === arr2.length)) {
@@ -265,7 +265,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildL
   dependencyMap = closure_8();
   let tmp = recipientId;
   let tmp2 = dependencyMap;
-  let obj = recipientId(14021);
+  let obj = recipientId(14016);
   [arr, arr2] = _slicedToArray(obj.useServerInviteRows(recipientId, query), 2);
   const tmp3 = _slicedToArray(obj.useServerInviteRows(recipientId, query), 2);
   if (0 === arr.length) {

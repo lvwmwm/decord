@@ -1,13 +1,13 @@
 // Module ID: 17907
 // Function ID: 17908
 // Name: AddFriendScreen
-// Dependencies: [32, 19, 17, 1392, 1087, 13348, 21, 5191, 587, 558, 576, 13350, 5057, 1267, 1128, 8755, 9599, 1384, 10529, 5187, 14864, 14866, 2]
+// Dependencies: [32, 19, 17, 1392, 1087, 13343, 21, 5191, 587, 558, 576, 13345, 5057, 1267, 1128, 8755, 9599, 1384, 10529, 5187, 14864, 14866, 2]
 
 // Module 17907 (AddFriendScreen)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13348 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13350 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 13343 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13345 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -54,10 +54,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddFriendScr
   navigation = navigation.navigation;
   const sourcePage = navigation.route.params.sourcePage;
   const tmp4 = closure_13();
-  let obj2 = navigation(13350);
+  let obj2 = navigation(13345);
   const contactSyncAccount = obj2.useContactSyncAccount();
   if (cResult[0] !== contactSyncAccount) {
-    const tmpResult = tmp(13350);
+    const tmpResult = tmp(13345);
     const isContactSyncEnabledResult = tmpResult.isContactSyncEnabled(contactSyncAccount);
     cResult[0] = contactSyncAccount;
     cResult[1] = isContactSyncEnabledResult;
@@ -600,11 +600,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddFriendScr
           const tmp40 = closure_11(closure_12, obj9);
           class P {
             constructor() {
-              obj = { headerRight() { /* body not rendered: F152419 */ } };
+              obj = { headerRight() { /* body not rendered: F152428 */ } };
               setOptionsResult = navigation.setOptions(obj);
               obj2 = closure_0(closure_2[11]);
               result = obj2.checkContactPermissions();
-              nextPromise = result.then(() => { /* body not rendered: F152420 */ });
+              nextPromise = result.then(() => { /* body not rendered: F152429 */ });
               return;
             }
           }
@@ -657,22 +657,22 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddFriendScr
     closure_10(contactSyncAccount(14864), obj13);
     class P {
       constructor() {
-        obj = { headerRight() { /* body not rendered: F152419 */ } };
+        obj = { headerRight() { /* body not rendered: F152428 */ } };
         setOptionsResult = navigation.setOptions(obj);
         obj2 = closure_0(closure_2[11]);
         result = obj2.checkContactPermissions();
-        nextPromise = result.then(() => { /* body not rendered: F152420 */ });
+        nextPromise = result.then(() => { /* body not rendered: F152429 */ });
         return;
       }
     }
   }
   class P {
     constructor() {
-      obj = { headerRight() { /* body not rendered: F152419 */ } };
+      obj = { headerRight() { /* body not rendered: F152428 */ } };
       setOptionsResult = navigation.setOptions(obj);
       obj2 = closure_0(closure_2[11]);
       result = obj2.checkContactPermissions();
-      nextPromise = result.then(() => { /* body not rendered: F152420 */ });
+      nextPromise = result.then(() => { /* body not rendered: F152429 */ });
       return;
     }
   }
@@ -697,10 +697,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddFriendScr
   const sourcePage = navigation.route.params.sourcePage;
   const tmp = closure_13();
   let tmp2 = dependencyMap;
-  let obj = navigation(13350);
+  let obj = navigation(13345);
   const contactSyncAccount = obj.useContactSyncAccount();
   const useState = react.useState;
-  let obj2 = navigation(13350);
+  let obj2 = navigation(13345);
   const tmp4 = callback(useState(!obj2.isContactSyncEnabled(contactSyncAccount)), 2);
   [tmp5, c2] = tmp4;
   callback = react.useCallback(() => {

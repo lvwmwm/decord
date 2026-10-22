@@ -1,65 +1,142 @@
 // Module ID: 12437
 // Function ID: 12438
-// Dependencies: [12410, 12414, 12386, 12393]
-// Exports: notifyEventProcessors
+// Dependencies: [32, 12409, 12381, 12408]
+// Exports: addIntegration, afterSetupIntegrations, defineIntegration, getIntegrationsToSetup, setupIntegrations
 
 // Module 12437
-const require = globalThis.__r;
-let _require, closure_3, dependencyMap;
+import _mod12408 from "module_12408" /* 12408 */;
+import _mod12409 from "module_12409" /* 12409 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
+let integrations;
 
-export const notifyEventProcessors = function notifyEventProcessors(arg0, arg1, arg2) {
-  let closure_0;
-  let closure_1;
-  let num;
-  const f113226 = function(fn, arg1) {
-    closure_0 = fn;
-    let tmp3 = closure_0[closure_3];
-    let tmp4 = closure_1;
-    if (null !== closure_1) {
-      if (typeof tmp3 === "function") {
-        let obj = {};
-        let tmp13 = obj;
-        let tmp14 = tmp4;
-        let merged = Object.assign(tmp4);
-        let tmp16 = closure_2;
-        let tmp3Result = tmp3(obj, closure_2);
-        let tmp17 = closure_0;
-        let tmp18 = closure_1;
-        let tmp5 = closure_0(closure_1[1]).DEBUG_BUILD && tmp3.id && null === tmp3Result;
-        if (tmp5) {
-          let logger = tmp17(tmp18[2]).logger;
-          let tmp6 = globalThis;
-          let _HermesInternal = HermesInternal;
-          let str = "\" dropped event";
-          let str2 = "Event processor \"";
-          let logResult = logger.log("Event processor \"" + tmp3.id + "\" dropped event");
-        }
-        let tmp8 = arg1;
-        let tmp17Result = tmp17(tmp18[3]);
-        if (tmp17Result.isThenable(tmp3Result)) {
-          let nextPromise = tmp3Result.then(f146589);
-          let nextPromise1 = nextPromise.then(null, arg1);
-        } else {
-          let num = 1;
-          closure_0 = tmp;
-          closure_1 = tmp3Result;
-          closure_2 = tmp16;
-          closure_3 = tmp2 + 1;
-          let self = this;
-          let self2 = this;
-          let syncPromise = new tmp17(tmp18[0]).SyncPromise(f113226);
-          let tmp9 = syncPromise;
-          let nextPromise2 = syncPromise.then(fn);
-          let nextPromise3 = nextPromise2.then(null, arg1);
-        }
-      }
+function setupIntegration(on, name, arg2) {
+  let closure_0 = on;
+  if (arg2[name.name]) {
+    const tmp10 = require;
+    if (_mod12409.DEBUG_BUILD) {
+      const logger2 = tmp10(12381).logger;
+      const _HermesInternal2 = HermesInternal;
+      logger2.log("Integration skipped because it was already installed: " + name.name);
     }
-    let tmp12 = fn(tmp4);
-  };
-  _require = arg0;
-  dependencyMap = arg1;
-  let closure_2 = arg2;
-  const syncPromise = new require("module_12410").SyncPromise(f113226);
-  return syncPromise;
+  } else {
+    arg2[name.name] = name;
+    const arr = items;
+    const tmp = -1 === items.indexOf(name.name) && typeof name.setupOnce === "function";
+    if (tmp) {
+      name.setupOnce();
+      arr.push(name.name);
+    }
+    const tmp4 = name.setup && typeof name.setup === "function";
+    if (tmp4) {
+      name.setup(on);
+    }
+    if (typeof name.preprocessEvent === "function") {
+      const preprocessEvent = name.preprocessEvent;
+      let closure_1 = preprocessEvent.bind(name);
+      on.on("preprocessEvent", (arg0, arg1) => closure_1(arg0, arg1, closure_0));
+    }
+    if (typeof name.processEvent === "function") {
+      const processEvent = name.processEvent;
+      let closure_2 = processEvent.bind(name);
+      const _Object = Object;
+      const obj = { id: name.name };
+      on.addEventProcessor(Object.assign((arg0, arg1) => closure_2(arg0, arg1, closure_0), obj));
+    }
+    const tmp6 = require;
+    if (_mod12409.DEBUG_BUILD) {
+      const logger = tmp6(12381).logger;
+      const _HermesInternal = HermesInternal;
+      logger.log("Integration installed: " + name.name);
+    }
+  }
+}
+let items = [];
+
+export const addIntegration = function addIntegration(name) {
+  const obj = _mod12408;
+  const client = obj.getClient();
+  if (client) {
+    client.addIntegration(name);
+  } else if (_mod12409.DEBUG_BUILD) {
+    const logger = tmp(12381).logger;
+    const _HermesInternal = HermesInternal;
+    logger.warn("Cannot add integration \"" + name.name + "\" because no SDK Client is available.");
+  }
+};
+export const afterSetupIntegrations = function afterSetupIntegrations(arg0, arg1) {
+  const iter = arg1[Symbol.iterator]();
+  let afterAllSetup = iter.next();
+  while (iter !== undefined) {
+    let obj = afterAllSetup;
+    if (obj) {
+      afterAllSetup = obj.afterAllSetup;
+    }
+    if (afterAllSetup) {
+      let afterAllSetupResult = obj.afterAllSetup(arg0);
+    }
+    continue;
+  }
+};
+export function defineIntegration(arg0) {
+  return arg0;
+}
+export const getIntegrationsToSetup = function getIntegrationsToSetup(defaultIntegrations) {
+  let arr2;
+  const arr = defaultIntegrations.defaultIntegrations || [];
+  integrations = defaultIntegrations.integrations;
+  const item = arr.forEach((item) => {
+    item.isDefaultInstance = true;
+  });
+  if (Array.isArray(integrations)) {
+    items = [];
+    HermesBuiltin.arraySpread(items, integrations, HermesBuiltin.arraySpread(items, arr, 0));
+    arr2 = items;
+  } else {
+    arr2 = arr;
+    if (typeof integrations === "function") {
+      const integrationsResult = integrations(arr);
+      const _Array = Array;
+      let tmp3 = integrationsResult;
+      if (!Array.isArray(integrationsResult)) {
+        const items1 = [integrationsResult];
+        tmp3 = items1;
+      }
+      arr2 = tmp3;
+    }
+  }
+  const obj = {};
+  const item1 = arr2.forEach((name) => {
+    name = name.name;
+    let isDefaultInstance = tmp2;
+    const tmp = obj;
+    if (obj[name]) {
+      isDefaultInstance = !tmp2.isDefaultInstance;
+    }
+    if (isDefaultInstance) {
+      isDefaultInstance = name.isDefaultInstance;
+    }
+    if (!isDefaultInstance) {
+      tmp[name] = name;
+    }
+  });
+  const values = Object.values(obj);
+  const findIndexResult = values.findIndex((name) => "Debug" === name.name);
+  if (findIndexResult > -1) {
+    values.push(_slicedToArray(values.splice(findIndexResult, 1), 1)[0]);
+  }
+  return values;
+};
+export const installedIntegrations = items;
+export { setupIntegration };
+export const setupIntegrations = function setupIntegrations(arg0, arr) {
+  let closure_0 = arg0;
+  const obj = {};
+  const item = arr.forEach((item) => {
+    const tmp = item;
+    if (tmp) {
+      setupIntegration(closure_0, item, obj);
+    }
+  });
+  return obj;
 };

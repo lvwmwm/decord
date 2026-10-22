@@ -1,14 +1,14 @@
 // Module ID: 18677
 // Function ID: 18678
 // Name: GuildSettingsModal
-// Dependencies: [32, 19, 2090, 8911, 1087, 21, 17274, 8910, 1275, 1128, 6478, 18678, 18690, 18698, 18699, 18718, 18737, 18742, 18757, 18758, 18770, 18782, 18784, 17990, 17999, 18792, 18796, 18797, 18001, 17275, 18798, 18799, 18819, 18840, 18844, 18847, 18850, 12569, 12583, 12587, 18851, 18856, 18857, 18879, 18902, 18942, 18943, 18957, 18996, 19000, 19001, 19004, 19012, 19013, 558, 576, 1633, 6447, 504, 6965, 2]
+// Dependencies: [32, 19, 2090, 8911, 1087, 21, 17274, 8910, 1275, 1128, 6478, 18678, 18690, 18698, 18699, 18718, 18737, 18742, 18757, 18758, 18770, 18782, 18784, 17990, 17999, 18792, 18796, 18797, 18001, 17275, 18798, 18799, 18819, 18840, 18844, 18847, 18850, 12564, 12578, 12582, 18851, 18856, 18857, 18879, 18902, 18942, 18943, 18957, 18996, 19000, 19001, 19004, 19012, 19013, 558, 576, 1633, 6447, 504, 6965, 2]
 
 // Module 18677 (GuildSettingsModal)
 import Fragment from "Fragment" /* 21 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8910 */;
-import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 12569 */;
-import KickConfirmDefault from "KickConfirm" /* 12583 */;
-import BanConfirmDefault from "BanConfirm" /* 12587 */;
+import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 12564 */;
+import KickConfirmDefault from "KickConfirm" /* 12578 */;
+import BanConfirmDefault from "BanConfirm" /* 12582 */;
 import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 17274 */;
 import GuildSettingsModalChannelsDefault from "GuildSettingsModalChannels" /* 17275 */;
 import IntegrationsSettingsWebhooksOverviewDefault from "IntegrationsSettingsWebhooksOverview" /* 17990 */;

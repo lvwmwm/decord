@@ -1,7 +1,7 @@
 // Module ID: 17250
 // Function ID: 17251
 // Name: VoiceUserItem
-// Dependencies: [19, 17, 1087, 21, 1202, 10839, 5191, 587, 11901, 558, 576, 9127, 9129, 1267, 1417, 17251, 9076, 9078, 9072, 9074, 11187, 13960, 8436, 13958, 2]
+// Dependencies: [19, 17, 1087, 21, 1202, 10839, 5191, 587, 11896, 558, 576, 9127, 9129, 1267, 1417, 17251, 9076, 9078, 9072, 9074, 11187, 13955, 8436, 13953, 2]
 // Exports: getVoiceUserHeight
 
 // Module 17250 (VoiceUserItem)
@@ -18,13 +18,13 @@ import MicrophoneDenyIcon from "MicrophoneDenyIcon" /* 9076 */;
 import MicrophoneSlashIcon from "MicrophoneSlashIcon" /* 9078 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10839 */;
 import VideoIcon from "VideoIcon" /* 11187 */;
-import GameActivityIconDefault from "GameActivityIcon" /* 13958 */;
-import getConsoleIcon from "getConsoleIcon" /* 13960 */;
+import GameActivityIconDefault from "GameActivityIcon" /* 13953 */;
+import getConsoleIcon from "getConsoleIcon" /* 13955 */;
 import VoiceUserNameItemDefault from "VoiceUserNameItem" /* 17251 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
-import ChannelListLayout from "ChannelListLayout" /* 11901 */;
+import ChannelListLayout from "ChannelListLayout" /* 11896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

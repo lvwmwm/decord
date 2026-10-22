@@ -1,7 +1,7 @@
 // Module ID: 14294
 // Function ID: 14295
 // Name: CodedLinks
-// Dependencies: [32, 4846, 2090, 1392, 7643, 12801, 5177, 14295, 14296, 14307, 14309, 14301, 14311, 14304, 11093, 12539, 11105, 11103, 14312, 14314, 14315, 1388, 2]
+// Dependencies: [32, 4846, 2090, 1392, 7643, 12796, 5177, 14295, 14296, 14307, 14309, 14301, 14311, 14304, 11093, 12534, 11105, 11103, 14312, 14314, 14315, 1388, 2]
 // Exports: createCodedLinkEmbeds
 
 // Module 14294 (CodedLinks)
@@ -11,8 +11,8 @@ import ApplicationCodedLink from "ApplicationCodedLink" /* 7643 */;
 import useCodedLinksExperimentEmbeds from "useCodedLinksExperimentEmbeds" /* 11093 */;
 import createSocialLayerStorefrontProductDetailsEmbed2 from "createSocialLayerStorefrontProductDetailsEmbed" /* 11103 */;
 import storefrontCodedLink from "storefrontCodedLink" /* 11105 */;
-import ExperimentEmbed from "ExperimentEmbed" /* 12539 */;
-import createAppMessageEmbed from "createAppMessageEmbed" /* 12801 */;
+import ExperimentEmbed from "ExperimentEmbed" /* 12534 */;
+import createAppMessageEmbed from "createAppMessageEmbed" /* 12796 */;
 import createActivityMessageEmbed from "createActivityMessageEmbed" /* 14295 */;
 import InviteEmbed from "InviteEmbed" /* 14296 */;
 import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 14301 */;

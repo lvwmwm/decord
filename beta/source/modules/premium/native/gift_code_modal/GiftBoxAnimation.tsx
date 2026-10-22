@@ -302,7 +302,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
   }
 }) : (function GiftBoxAnimation(giftStyle) {
   let useReducedMotion;
-  const f107195 = () => require("module_10494");
+  const f107204 = () => require("module_10494");
   giftStyle = giftStyle.giftStyle;
   get_initialized;
   [][0] = AccessibilityStore;
@@ -322,8 +322,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
     const withResult8 = withResult7.with(PremiumGiftStyles.SEASONAL_CAKE, () => require("module_10509"));
     const withResult9 = withResult8.with(PremiumGiftStyles.SEASONAL_CHEST, () => require("module_10512"));
     const withResult10 = withResult9.with(PremiumGiftStyles.SEASONAL_COFFEE, () => require("module_10515"));
-    withResult10.otherwise(f107195);
-    return jsx(LottieAnimationViewDefault, { source: withResult10.otherwise(f107195), autoPlay: !tmp4, style: { width: 320, height: 212 } });
+    withResult10.otherwise(f107204);
+    return jsx(LottieAnimationViewDefault, { source: withResult10.otherwise(f107204), autoPlay: !tmp4, style: { width: 320, height: 212 } });
   }
 });
 const result = size.fileFinishedImporting("modules/premium/native/gift_code_modal/GiftBoxAnimation.tsx");

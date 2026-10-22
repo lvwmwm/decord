@@ -115,7 +115,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
                           closure_0 = arg0;
                           const obj = onSelectColors(displayNameStylesEffectConfig[13]);
                           const result = obj.triggerHapticFeedback(onSelectColors(displayNameStylesEffectConfig[13]).HapticFeedbackTypes.IMPACT_MEDIUM);
-                          closure_1_5((arr) => arr.map(function() { /* body not rendered: F159846 */ }));
+                          closure_1_5((arr) => arr.map(function() { /* body not rendered: F159855 */ }));
                         },
               actionButtonVariant: "primary"
             };
@@ -140,7 +140,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
                           closure_0 = arg0;
                           const obj = onSelectColors(displayNameStylesEffectConfig[13]);
                           const result = obj.triggerHapticFeedback(onSelectColors(displayNameStylesEffectConfig[13]).HapticFeedbackTypes.IMPACT_MEDIUM);
-                          closure_1_5((arr) => arr.map(function() { /* body not rendered: F159846 */ }));
+                          closure_1_5((arr) => arr.map(function() { /* body not rendered: F159855 */ }));
                         },
               actionButtonVariant: "primary"
             };

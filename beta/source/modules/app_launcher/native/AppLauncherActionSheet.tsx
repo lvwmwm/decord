@@ -1,9 +1,9 @@
-// Module ID: 12051
-// Function ID: 12052
+// Module ID: 12046
+// Function ID: 12047
 // Name: AppLauncherActionSheet
-// Dependencies: [32, 19, 1504, 21, 558, 576, 4945, 10948, 10949, 10950, 12052, 11896, 7118, 7120, 2]
+// Dependencies: [32, 19, 1504, 21, 558, 576, 4945, 10948, 10949, 10950, 12047, 11891, 7118, 7120, 2]
 
-// Module 12051 (AppLauncherActionSheet)
+// Module 12046 (AppLauncherActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
@@ -13,8 +13,8 @@ import reactDefault from "react" /* 7120 */;
 import AppLauncherContext from "AppLauncherContext" /* 10948 */;
 import AppLauncherTypes from "AppLauncherTypes" /* 10949 */;
 import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 10950 */;
-import AppLauncherNavigatorDefault from "AppLauncherNavigator" /* 11896 */;
-import getAppDMApplication from "getAppDMApplication" /* 12052 */;
+import AppLauncherNavigatorDefault from "AppLauncherNavigator" /* 11891 */;
+import getAppDMApplication from "getAppDMApplication" /* 12047 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

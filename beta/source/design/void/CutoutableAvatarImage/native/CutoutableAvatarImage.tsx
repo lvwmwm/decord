@@ -1,9 +1,9 @@
-// Module ID: 14083
-// Function ID: 14084
+// Module ID: 14078
+// Function ID: 14079
 // Name: CutoutableAvatarImage
-// Dependencies: [19, 17, 14084, 21, 3, 1417, 14085, 558, 576, 14086, 5128, 9308, 4945, 5478, 1281, 7843, 568, 2]
+// Dependencies: [19, 17, 14079, 21, 3, 1417, 14080, 558, 576, 14081, 5128, 9308, 4945, 5478, 1281, 7843, 568, 2]
 
-// Module 14083 (CutoutableAvatarImage)
+// Module 14078 (CutoutableAvatarImage)
 import LoggerDefault from "Logger" /* 3 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import react2 from "react" /* 576 */;
@@ -13,8 +13,8 @@ import FastImageDefault from "FastImage" /* 5128 */;
 import spring from "spring" /* 5478 */;
 import inlineStyles from "inlineStyles" /* 7843 */;
 import ClipView from "ClipView" /* 9308 */;
-import ChannelAnimationConstants from "ChannelAnimationConstants" /* 14084 */;
-import getReactNativeSVGImageSourceDefault from "getReactNativeSVGImageSource" /* 14086 */;
+import ChannelAnimationConstants from "ChannelAnimationConstants" /* 14079 */;
+import getReactNativeSVGImageSourceDefault from "getReactNativeSVGImageSource" /* 14081 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -31,7 +31,7 @@ let metroImportDefault;
 let obj3;
 let obj4;
 let tmp;
-const getChannelIcon = tmp(14085);
+const getChannelIcon = tmp(14080);
 function CutoutAvatarImage(arg0) {
   let cutout;
   let cutout2;

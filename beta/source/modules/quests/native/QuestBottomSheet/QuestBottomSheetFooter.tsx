@@ -1,7 +1,7 @@
 // Module ID: 16166
 // Function ID: 16167
 // Name: QuestBottomSheetFooter
-// Dependencies: [32, 19, 17, 5181, 1392, 7656, 7119, 21, 587, 5191, 6231, 9473, 9492, 9495, 10831, 504, 4913, 7540, 9470, 558, 576, 16167, 13903, 5479, 9506, 16133, 13916, 16161, 16163, 7840, 1128, 6482, 13915, 9504, 9476, 9477, 9480, 6235, 7681, 11630, 1633, 1499, 4945, 5192, 5484, 2]
+// Dependencies: [32, 19, 17, 5181, 1392, 7656, 7119, 21, 587, 5191, 6231, 9473, 9492, 9495, 10831, 504, 4913, 7540, 9470, 558, 576, 16167, 13898, 5479, 9506, 16133, 13911, 16161, 16163, 7840, 1128, 6482, 13910, 9504, 9476, 9477, 9480, 6235, 7681, 11630, 1633, 1499, 4945, 5192, 5484, 2]
 
 // Module 16166 (QuestBottomSheetFooter)
 import react_native from "react-native" /* 17 */;
@@ -26,9 +26,9 @@ import QuestCopyUtils from "QuestCopyUtils" /* 9495 */;
 import ContentImpressionTrackerHooks from "ContentImpressionTrackerHooks" /* 9504 */;
 import QuestPlatformUtils from "QuestPlatformUtils" /* 9506 */;
 import RefreshIcon from "RefreshIcon" /* 11630 */;
-import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 13903 */;
-import AnalyticsHooks from "AnalyticsHooks" /* 13915 */;
-import QuestCopyHooks from "QuestCopyHooks" /* 13916 */;
+import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 13898 */;
+import AnalyticsHooks from "AnalyticsHooks" /* 13910 */;
+import QuestCopyHooks from "QuestCopyHooks" /* 13911 */;
 import QuestHooks from "QuestHooks" /* 16133 */;
 import openQuestAccessSuspendedBottomSheetDefault from "openQuestAccessSuspendedBottomSheet" /* 16161 */;
 import QuestBottomSheet from "QuestBottomSheet" /* 16163 */;
@@ -606,7 +606,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBotto
   const obj6 = quest(16133);
   const mobileActivityQuest = obj6.useMobileActivityQuest(quest);
   ({ isMobileActivityQuest, launchMobileActivity, questApplication } = mobileActivityQuest);
-  const obj7 = quest(13916);
+  const obj7 = quest(13911);
   const primaryCtaCopy = obj7.usePrimaryCtaCopy({ quest, application: questApplication });
   const userStatus = quest.userStatus;
   let completedAt;

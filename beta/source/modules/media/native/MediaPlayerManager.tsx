@@ -53,13 +53,13 @@ const useMediaPlayerManagerStore = module_570.create((arg0) => {
     wasPipClosedByUser: null,
     progress: null,
     rate: "Reflect",
-    showPip: 2462,
+    showPip: "locateFirstIndexInRow",
     closePip() {
       const obj = react_native;
       obj.batchUpdates(() => closure_1_0({ showPip: false }));
     },
     displayedMediaItemIdsPerChannel: {},
-    currentlyDisplayedChannelId: 2465
+    currentlyDisplayedChannelId: 6
   };
   return obj;
 });

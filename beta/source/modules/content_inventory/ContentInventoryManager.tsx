@@ -1,7 +1,7 @@
 // Module ID: 19032
 // Function ID: 19033
 // Name: ContentInventoryManager
-// Dependencies: [5, 6013, 6017, 6144, 6344, 12737, 8728, 8743, 1087, 1104, 12, 14167, 584, 14771, 19033, 7085, 2]
+// Dependencies: [5, 6013, 6017, 6144, 6344, 12732, 8728, 8743, 1087, 1104, 12, 14167, 584, 14771, 19033, 7085, 2]
 
 // Module 19032 (ContentInventoryManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -16,7 +16,7 @@ import GatewayConnectionStore from "GatewayConnectionStore" /* 6013 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6017 */;
 import IdleStore from "IdleStore" /* 6144 */;
 import WindowStore from "WindowStore" /* 6344 */;
-import ContentInventoryPersistedStore from "ContentInventoryPersistedStore" /* 12737 */;
+import ContentInventoryPersistedStore from "ContentInventoryPersistedStore" /* 12732 */;
 import ContentInventoryStore from "ContentInventoryStore" /* 8728 */;
 import module_12 from "module_12" /* 12 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;

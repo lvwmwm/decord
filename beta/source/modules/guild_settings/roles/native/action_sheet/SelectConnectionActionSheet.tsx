@@ -53,7 +53,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identit
     if (cResult[0] !== bot) {
       let tmp6 = null;
       if (null != bot) {
-        const obj3 = { user: bot, size: native.AvatarSizes.XSMALL, guildId: "Array" };
+        const obj3 = { user: bot, size: native.AvatarSizes.XSMALL, guildId: "r" };
         const Avatar = tmp(1202).Avatar;
         tmp6 = metroRequire(Avatar, obj3);
       }
@@ -101,7 +101,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identit
     let tmp6Result = null;
     const TableRow = tmp(6457).TableRow;
     if (null != bot) {
-      const obj2 = { user: bot, size: native.AvatarSizes.XSMALL, guildId: "Array" };
+      const obj2 = { user: bot, size: native.AvatarSizes.XSMALL, guildId: "r" };
       const Avatar = tmp(1202).Avatar;
       tmp6Result = tmp6(Avatar, obj2);
     }
@@ -200,7 +200,7 @@ tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectConnection
                   }
               };
               const TableRow = addConnection(excludedApplications[8]).TableRow;
-              obj2 = { user: application.bot, size: addConnection(excludedApplications[7]).AvatarSizes.XSMALL, guildId: "Array" };
+              obj2 = { user: application.bot, size: addConnection(excludedApplications[7]).AvatarSizes.XSMALL, guildId: "r" };
               Avatar = addConnection(excludedApplications[7]).Avatar;
               description = undefined;
               const tmp2 = closure_1_6;
@@ -538,7 +538,7 @@ tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectConnection
             }
         };
         const TableRow = TableRow2.TableRow;
-        obj2 = { user: application.bot, size: native.AvatarSizes.XSMALL, guildId: "Array" };
+        obj2 = { user: application.bot, size: native.AvatarSizes.XSMALL, guildId: "r" };
         Avatar = native.Avatar;
         description = undefined;
         const tmp2 = closure_1_6;

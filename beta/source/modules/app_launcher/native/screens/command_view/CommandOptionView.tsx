@@ -1,15 +1,15 @@
-// Module ID: 11991
-// Function ID: 11992
+// Module ID: 11986
+// Function ID: 11987
 // Name: CommandOptionView
-// Dependencies: [19, 17, 5181, 21, 2000, 5191, 587, 558, 576, 504, 4945, 11992, 5187, 11993, 1202, 10090, 12000, 2]
+// Dependencies: [19, 17, 5181, 21, 2000, 5191, 587, 558, 576, 504, 4945, 11987, 5187, 11988, 1202, 10090, 11995, 2]
 
-// Module 11991 (CommandOptionView)
+// Module 11986 (CommandOptionView)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Server from "Server" /* 2000 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4945 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10090 */;
-import AppLauncherCommandOptionDefault from "AppLauncherCommandOption" /* 11993 */;
+import AppLauncherCommandOptionDefault from "AppLauncherCommandOption" /* 11988 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5181 */;
 import Fragment from "Fragment" /* 21 */;
@@ -164,7 +164,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandOptio
   const stateFromStores = obj.useStateFromStores(items, () => AccessibilityStore.useReducedMotion);
   const ReduceMotion = option(4945).ReduceMotion;
   const tmp5 = stateFromStores ? ReduceMotion.Always : ReduceMotion.Never;
-  const tmp2Result = option(11992);
+  const tmp2Result = option(11987);
   const optionEnteringAnimation = tmp2Result.useOptionEnteringAnimation();
   let fn = optionEnteringAnimation.registerAnimationCompleteCallback;
   const EnteringAnimation = optionEnteringAnimation.EnteringAnimation;
@@ -191,12 +191,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandOptio
     const obj3 = { skipEntering: option.required || isPreSelectedOption, children: closure_5(AwaitAnimationContext, obj4) };
     const LayoutAnimationConfig = tmp2(4945).LayoutAnimationConfig;
     obj4 = { handleQueuedCallback: fn, children: closure_5(View, obj5) };
-    AwaitAnimationContext = tmp2(12000).AwaitAnimationContext;
+    AwaitAnimationContext = tmp2(11995).AwaitAnimationContext;
     obj5 = {
       collapsable: false,
       entering: EnteringAnimation,
-      exiting: option(11992).ExitingAnimation,
-      layout: option(11992).LayoutAnimation,
+      exiting: option(11987).ExitingAnimation,
+      layout: option(11987).LayoutAnimation,
       onLayout(arg0) {
           importDefault(arg0, option);
         },

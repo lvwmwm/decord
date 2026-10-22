@@ -1,7 +1,7 @@
 // Module ID: 18165
 // Function ID: 18166
 // Name: QuestActivityButton
-// Dependencies: [19, 17, 5181, 7656, 18166, 6228, 21, 4945, 7843, 5191, 587, 9473, 504, 6190, 18167, 2002, 5155, 18168, 5192, 6385, 16176, 18169, 13935, 1128, 13905, 2]
+// Dependencies: [19, 17, 5181, 7656, 18166, 6228, 21, 4945, 7843, 5191, 587, 9473, 504, 6190, 18167, 2002, 5155, 18168, 5192, 6385, 16176, 18169, 13930, 1128, 13900, 2]
 
 // Module 18165 (QuestActivityButton)
 import react_native from "react-native" /* 17 */;
@@ -12,7 +12,7 @@ import timing from "timing" /* 5192 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
 import QuestConstants from "QuestConstants" /* 6228 */;
 import inlineStyles from "inlineStyles" /* 7843 */;
-import QuestMatchingUtils from "QuestMatchingUtils" /* 13905 */;
+import QuestMatchingUtils from "QuestMatchingUtils" /* 13900 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5181 */;
 import QuestStore from "QuestStore" /* 7656 */;
@@ -202,7 +202,7 @@ function QuestActivityButtonInner(quest) {
   tmp21 = stateFromStores(6385);
   items6 = [closure_9(closure_4, obj5), , , ];
   const obj7 = { style: tmp15.buttonWrapper, children: closure_9(tmp22, obj8) };
-  obj8 = { icon: stateFromStores(13935), onPress: callback, accessibilityLabel: intl.string(tmp(1128).t.JALI2K) };
+  obj8 = { icon: stateFromStores(13930), onPress: callback, accessibilityLabel: intl.string(tmp(1128).t.JALI2K) };
   tmp22 = stateFromStores(18169);
   intl = tmp(1128).intl;
   items6[1] = closure_9(closure_4, obj7);

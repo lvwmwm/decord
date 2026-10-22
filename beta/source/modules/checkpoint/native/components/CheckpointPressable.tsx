@@ -1,9 +1,9 @@
-// Module ID: 12789
-// Function ID: 12790
+// Module ID: 12784
+// Function ID: 12785
 // Name: CheckpointPressable
 // Dependencies: [109, 17, 5537, 21, 587, 5191, 558, 576, 2]
 
-// Module 12789 (CheckpointPressable)
+// Module 12784 (CheckpointPressable)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;

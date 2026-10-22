@@ -1,18 +1,18 @@
-// Module ID: 12627
-// Function ID: 12628
+// Module ID: 12622
+// Function ID: 12623
 // Name: AppealIngestionModal
-// Dependencies: [5, 32, 19, 17, 7803, 7779, 1087, 21, 5191, 587, 558, 576, 5187, 504, 12621, 1505, 7780, 12626, 12622, 7778, 7092, 1128, 5479, 6478, 12628, 1275, 12648, 12650, 12652, 12654, 12655, 6447, 6965, 2]
+// Dependencies: [5, 32, 19, 17, 7803, 7779, 1087, 21, 5191, 587, 558, 576, 5187, 504, 12616, 1505, 7780, 12621, 12617, 7778, 7092, 1128, 5479, 6478, 12623, 1275, 12643, 12645, 12647, 12649, 12650, 6447, 6965, 2]
 
-// Module 12627 (AppealIngestionModal)
+// Module 12622 (AppealIngestionModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import Text_Text from "Text/Text" /* 5187 */;
-import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 12626 */;
-import AppealIngestionSpeedBumpDefault from "AppealIngestionSpeedBump" /* 12628 */;
-import AppealIngestionCollectSignalDefault from "AppealIngestionCollectSignal" /* 12648 */;
-import AppealIngestionConfirmSubmissionDefault from "AppealIngestionConfirmSubmission" /* 12650 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 12621 */;
+import AppealIngestionSpeedBumpDefault from "AppealIngestionSpeedBump" /* 12623 */;
+import AppealIngestionCollectSignalDefault from "AppealIngestionCollectSignal" /* 12643 */;
+import AppealIngestionConfirmSubmissionDefault from "AppealIngestionConfirmSubmission" /* 12645 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -48,7 +48,7 @@ function getScreens(isDsaEligible, isSpam, isCoppa, isDeveloperClassification) {
   const obj2 = {
     headerLeft: obj3.getHeaderCloseButton(AppealIngestionModalActionCreatorsDefault.close),
     headerTitle() {
-      return closure_1_12(isDsaEligible(isDeveloperClassification[12]).Text, { variant: "text-md/normal", children: "application" });
+      return closure_1_12(isDsaEligible(isDeveloperClassification[12]).Text, { variant: "text-md/normal", children: "__packager_asset" });
     },
     render() {
       const obj = { isDsaEligible, isSpam, isCoppa, isDeveloperClassification };
@@ -63,7 +63,7 @@ function getScreens(isDsaEligible, isSpam, isCoppa, isDeveloperClassification) {
   const obj4 = {
     headerLeft: obj5.getHeaderBackButton(),
     headerTitle() {
-      return closure_1_12(isDsaEligible(isDeveloperClassification[12]).Text, { variant: "text-md/normal", children: "application" });
+      return closure_1_12(isDsaEligible(isDeveloperClassification[12]).Text, { variant: "text-md/normal", children: "__packager_asset" });
     },
     render() {
       const obj = { isDsaEligible };
@@ -78,7 +78,7 @@ function getScreens(isDsaEligible, isSpam, isCoppa, isDeveloperClassification) {
   const obj6 = {
     headerLeft: obj7.getHeaderBackButton(),
     headerTitle() {
-      return closure_1_12(isDsaEligible(isDeveloperClassification[12]).Text, { variant: "text-md/normal", children: "application" });
+      return closure_1_12(isDsaEligible(isDeveloperClassification[12]).Text, { variant: "text-md/normal", children: "__packager_asset" });
     },
     render() {
       const obj = { isDsaEligible };
@@ -93,7 +93,7 @@ function getScreens(isDsaEligible, isSpam, isCoppa, isDeveloperClassification) {
   const obj8 = {
     headerLeft: obj9.getHeaderCloseButton(AppealIngestionModalActionCreatorsDefault.close),
     headerTitle() {
-      return closure_1_12(isDsaEligible(isDeveloperClassification[12]).Text, { variant: "text-md/normal", children: "application" });
+      return closure_1_12(isDsaEligible(isDeveloperClassification[12]).Text, { variant: "text-md/normal", children: "__packager_asset" });
     },
     render() {
       return closure_1_12(isSpam(isDeveloperClassification[28]), {});
@@ -107,7 +107,7 @@ function getScreens(isDsaEligible, isSpam, isCoppa, isDeveloperClassification) {
   const obj10 = {
     headerLeft: obj11.getHeaderCloseButton(AppealIngestionModalActionCreatorsDefault.close),
     headerTitle() {
-      return closure_1_12(isDsaEligible(isDeveloperClassification[12]).Text, { variant: "text-md/normal", children: "application" });
+      return closure_1_12(isDsaEligible(isDeveloperClassification[12]).Text, { variant: "text-md/normal", children: "__packager_asset" });
     },
     render() {
       return closure_1_12(isSpam(isDeveloperClassification[29]), {});
@@ -121,7 +121,7 @@ function getScreens(isDsaEligible, isSpam, isCoppa, isDeveloperClassification) {
   const obj12 = {
     headerLeft: obj13.getHeaderCloseButton(AppealIngestionModalActionCreatorsDefault.close),
     headerTitle() {
-      return closure_1_12(isDsaEligible(isDeveloperClassification[12]).Text, { variant: "text-md/normal", children: "application" });
+      return closure_1_12(isDsaEligible(isDeveloperClassification[12]).Text, { variant: "text-md/normal", children: "__packager_asset" });
     },
     render() {
       return closure_1_12(isSpam(isDeveloperClassification[30]), {});

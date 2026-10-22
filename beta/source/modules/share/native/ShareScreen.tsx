@@ -1,7 +1,7 @@
 // Module ID: 14914
 // Function ID: 14915
 // Name: ShareScreen
-// Dependencies: [5, 32, 19, 17, 2072, 2068, 4845, 1087, 12692, 10520, 21, 5191, 587, 1128, 14915, 12693, 14916, 14917, 1267, 9618, 5202, 1384, 8756, 9566, 12728, 2002, 5401, 14918, 14919, 6487, 12703, 1630, 12704, 14920, 2]
+// Dependencies: [5, 32, 19, 17, 2072, 2068, 4845, 1087, 12687, 10520, 21, 5191, 587, 1128, 14915, 12688, 14916, 14917, 1267, 9618, 5202, 1384, 8756, 9566, 12723, 2002, 5401, 14918, 14919, 6487, 12698, 1630, 12699, 14920, 2]
 // Exports: default
 
 // Module 14914 (ShareScreen)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1128 */;
 import UserRowConstants from "UserRowConstants" /* 10520 */;
-import ForwardConstants from "ForwardConstants" /* 12692 */;
+import ForwardConstants from "ForwardConstants" /* 12687 */;
 import ShareAttachmentsDefault from "ShareAttachments" /* 14918 */;
 import ShareEmbedDefault from "ShareEmbed" /* 14919 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

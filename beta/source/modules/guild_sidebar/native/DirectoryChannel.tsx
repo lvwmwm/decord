@@ -1,7 +1,7 @@
 // Module ID: 17337
 // Function ID: 17338
 // Name: DirectoryChannel
-// Dependencies: [19, 2068, 4843, 11900, 6223, 21, 5191, 587, 558, 576, 573, 1114, 10595, 8923, 17258, 2]
+// Dependencies: [19, 2068, 4843, 11895, 6223, 21, 5191, 587, 558, 576, 573, 1114, 10595, 8923, 17258, 2]
 
 // Module 17337 (DirectoryChannel)
 import Fragment from "Fragment" /* 21 */;
@@ -9,7 +9,7 @@ import nativeDefault from "native" /* 587 */;
 import router_utils from "router_utils" /* 1114 */;
 import ReadStateConstants from "ReadStateConstants" /* 6223 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10595 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11900 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11895 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildChannelStore from "GuildChannelStore" /* 4843 */;

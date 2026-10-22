@@ -1,7 +1,7 @@
 // Module ID: 5180
 // Function ID: 5181
 // Name: MarkupReactRules
-// Dependencies: [109, 19, 17, 5181, 2068, 2122, 1087, 2075, 1098, 21, 558, 576, 5187, 5191, 587, 5202, 5522, 5073, 6190, 8577, 5399, 1128, 7162, 4903, 6436, 1202, 1386, 8764, 4901, 9916, 9971, 8399, 504, 5063, 8247, 5155, 11162, 2002, 11, 2044, 5128, 11135, 14849, 14851, 5137, 11118, 14853, 10945, 5500, 11907, 5502, 8424, 1384, 8431, 14854, 11909, 2]
+// Dependencies: [109, 19, 17, 5181, 2068, 2122, 1087, 2075, 1098, 21, 558, 576, 5187, 5191, 587, 5202, 5522, 5073, 6190, 8577, 5399, 1128, 7162, 4903, 6436, 1202, 1386, 8764, 4901, 9916, 9971, 8399, 504, 5063, 8247, 5155, 11162, 2002, 11, 2044, 5128, 11135, 14849, 14851, 5137, 11118, 14853, 10945, 5500, 11902, 5502, 8424, 1384, 8431, 14854, 11904, 2]
 // Exports: default, plainMentionRenderer, plainSpoilerRenderer
 
 // Module 5180 (MarkupReactRules)
@@ -28,8 +28,8 @@ import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 85
 import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 9971 */;
 import MarkupReactCommandRuleDefault from "MarkupReactCommandRule" /* 10945 */;
 import openStaticChannelRouteDefault from "openStaticChannelRoute" /* 11118 */;
-import SpoilerDefault from "Spoiler" /* 11907 */;
-import TimestampDefault from "Timestamp" /* 11909 */;
+import SpoilerDefault from "Spoiler" /* 11902 */;
+import TimestampDefault from "Timestamp" /* 11904 */;
 import MarkupReactGameMentionRule from "MarkupReactGameMentionRule" /* 14854 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;

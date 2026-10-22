@@ -63,44 +63,44 @@ function getGiftCodeHeaderText(isSubscription) {
   let sku;
   let subscriptionGiftStartHeaderText;
   let subscriptionPlan;
-  const f106787 = () => {
+  const f106796 = () => {
     const intl = intl7.intl;
     const obj = { sender };
     return intl.formatToPlainString(intl7.t.JUV1tL, obj);
   };
-  const f106788 = () => {
+  const f106797 = () => {
     const intl = sender(dependencyMap[10]).intl;
     return intl.string(sender(dependencyMap[10]).t.iJ8823);
   };
-  const f106789 = () => {
+  const f106798 = () => {
     const intl = intl7.intl;
     const obj = { sender };
     return intl.formatToPlainString(intl7.t.SKduyh, obj);
   };
-  const f106790 = () => {
+  const f106799 = () => {
     const intl = intl7.intl;
     const obj = { sender };
     return intl.formatToPlainString(intl7.t["1w42T2"], obj);
   };
-  const f106791 = () => {
+  const f106800 = () => {
     const intl = intl7.intl;
     const obj = { sender };
     return intl.formatToPlainString(intl7.t.vFiQlU, obj);
   };
-  const f106792 = () => {
+  const f106801 = () => {
     const intl = intl7.intl;
     const obj = { sender };
     return intl.formatToPlainString(intl7.t["UH/EQL"], obj);
   };
-  const f106793 = () => {
+  const f106802 = () => {
     const intl = sender(dependencyMap[10]).intl;
     return intl.string(sender(dependencyMap[10]).t["2ZO6CC"]);
   };
-  const f106794 = () => {
+  const f106803 = () => {
     const intl = sender(dependencyMap[10]).intl;
     return intl.string(sender(dependencyMap[10]).t["2NxdjX"]);
   };
-  const f106795 = () => {
+  const f106804 = () => {
     const intl = sender(dependencyMap[10]).intl;
     return intl.string(sender(dependencyMap[10]).t.v7F232);
   };
@@ -130,36 +130,36 @@ function getGiftCodeHeaderText(isSubscription) {
     const _with = match.with;
     P = tmp2(6001).P;
     const obj4 = { isBundle: true, sender: sender(6001).P.nullish };
-    const _with2 = _with(obj3, f106787).with;
-    _with(obj3, f106787);
+    const _with2 = _with(obj3, f106796).with;
+    _with(obj3, f106796);
     const obj5 = { type: sender(1995).CollectiblesItemType.AVATAR_DECORATION, sender: P2.not(sender(6001).P.nullish) };
-    const _with3 = _with2(obj4, f106788).with;
-    _with2(obj4, f106788);
+    const _with3 = _with2(obj4, f106797).with;
+    _with2(obj4, f106797);
     P2 = tmp2(6001).P;
     const obj6 = { type: sender(1995).CollectiblesItemType.PROFILE_EFFECT, sender: P3.not(sender(6001).P.nullish) };
-    const _with4 = _with3(obj5, f106789).with;
-    _with3(obj5, f106789);
+    const _with4 = _with3(obj5, f106798).with;
+    _with3(obj5, f106798);
     P3 = tmp2(6001).P;
     const obj7 = { type: sender(1995).CollectiblesItemType.NAMEPLATE, sender: P4.not(sender(6001).P.nullish) };
-    const _with5 = _with4(obj6, f106790).with;
-    _with4(obj6, f106790);
+    const _with5 = _with4(obj6, f106799).with;
+    _with4(obj6, f106799);
     P4 = tmp2(6001).P;
     const obj8 = { type: sender(1995).CollectiblesItemType.PROFILE_FRAME, sender: P5.not(sender(6001).P.nullish) };
-    const _with6 = _with5(obj7, f106791).with;
-    _with5(obj7, f106791);
+    const _with6 = _with5(obj7, f106800).with;
+    _with5(obj7, f106800);
     P5 = tmp2(6001).P;
     const obj9 = { type: sender(1995).CollectiblesItemType.AVATAR_DECORATION, sender: sender(6001).P.nullish };
-    const _with7 = _with6(obj8, f106792).with;
-    _with6(obj8, f106792);
+    const _with7 = _with6(obj8, f106801).with;
+    _with6(obj8, f106801);
     const obj10 = { type: sender(1995).CollectiblesItemType.PROFILE_EFFECT, sender: sender(6001).P.nullish };
-    const _with8 = _with7(obj9, f106793).with;
-    _with7(obj9, f106793);
+    const _with8 = _with7(obj9, f106802).with;
+    _with7(obj9, f106802);
     const obj11 = { type: sender(1995).CollectiblesItemType.NAMEPLATE, sender: sender(6001).P.nullish };
-    const _with9 = _with8(obj10, f106794).with;
-    _with8(obj10, f106794);
+    const _with9 = _with8(obj10, f106803).with;
+    _with8(obj10, f106803);
     const obj12 = { type: sender(1995).CollectiblesItemType.PROFILE_FRAME, sender: sender(6001).P.nullish };
-    const _with10 = _with9(obj11, f106795).with;
-    _with9(obj11, f106795);
+    const _with10 = _with9(obj11, f106804).with;
+    _with9(obj11, f106804);
     const _with10Result = _with10(obj12, () => {
       const intl = sender(dependencyMap[10]).intl;
       return intl.string(sender(dependencyMap[10]).t["1+tgC0"]);

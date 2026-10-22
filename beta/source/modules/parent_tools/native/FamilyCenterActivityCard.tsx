@@ -1,7 +1,7 @@
 // Module ID: 15935
 // Function ID: 15936
 // Name: FamilyCenterActivityCard
-// Dependencies: [32, 19, 17, 7526, 1087, 21, 5191, 587, 8006, 8005, 8008, 12670, 1128, 2589, 1202, 15936, 5187, 8946, 6190, 15937, 2002, 14467, 558, 576, 15938, 15939, 12667, 5155, 4903, 5057, 8829, 1267, 11410, 15940, 15941, 15942, 15945, 15952, 2]
+// Dependencies: [32, 19, 17, 7526, 1087, 21, 5191, 587, 8006, 8005, 8008, 12665, 1128, 2589, 1202, 15936, 5187, 8946, 6190, 15937, 2002, 14467, 558, 576, 15938, 15939, 12662, 5155, 4903, 5057, 8829, 1267, 11410, 15940, 15941, 15942, 15945, 15952, 2]
 
 // Module 15935 (FamilyCenterActivityCard)
 import react_native from "react-native" /* 17 */;
@@ -18,7 +18,7 @@ import useUserLinks from "useUserLinks" /* 8005 */;
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8006 */;
 import FamilyCenterUtils from "FamilyCenterUtils" /* 8008 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 8946 */;
-import useAgeSpecificText2 from "useAgeSpecificText" /* 12670 */;
+import useAgeSpecificText2 from "useAgeSpecificText" /* 12665 */;
 import AssetRegistryDefault from "AssetRegistry" /* 14467 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 15936 */;
 import FamilyCenterUsernameHeaderDefault from "FamilyCenterUsernameHeader" /* 15938 */;

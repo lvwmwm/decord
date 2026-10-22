@@ -1,7 +1,7 @@
 // Module ID: 14240
 // Function ID: 14241
 // Name: OrbCheckoutModalComponents
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 6567, 5477, 5187, 13654, 1128, 13656, 14239, 7219, 5127, 14241, 5065, 9331, 5479, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 6567, 5477, 5187, 13649, 1128, 13651, 14239, 7219, 5127, 14241, 5065, 9331, 5479, 2]
 
 // Module 14240 (OrbCheckoutModalComponents)
 import react2 from "react" /* 576 */;
@@ -15,8 +15,8 @@ import components_Button_Button from "components/Button/Button" /* 5479 */;
 import CircleErrorIcon from "CircleErrorIcon" /* 6567 */;
 import OrbCheckoutUtils from "OrbCheckoutUtils" /* 7219 */;
 import OrbsIcon2 from "OrbsIcon" /* 9331 */;
-import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 13654 */;
-import OrbCheckoutAmountTagDefault from "OrbCheckoutAmountTag" /* 13656 */;
+import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 13649 */;
+import OrbCheckoutAmountTagDefault from "OrbCheckoutAmountTag" /* 13651 */;
 import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 14239 */;
 import useVirtualCurrencyBalance from "useVirtualCurrencyBalance" /* 14241 */;
 import react from "react" /* 19 */;

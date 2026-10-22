@@ -1,9 +1,9 @@
-// Module ID: 13031
-// Function ID: 13032
+// Module ID: 13026
+// Function ID: 13027
 // Name: GuildInvitesDisabledUtils
 // Dependencies: [11115, 4845, 1087, 558, 576, 504, 2]
 
-// Module 13031 (GuildInvitesDisabledUtils)
+// Module 13026 (GuildInvitesDisabledUtils)
 import GuildIncidentsStore from "GuildIncidentsStore" /* 11115 */;
 import PermissionStore from "PermissionStore" /* 4845 */;
 import Constants from "Constants" /* 1087 */;

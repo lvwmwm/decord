@@ -1,7 +1,7 @@
 // Module ID: 15715
 // Function ID: 15716
 // Name: GuildProfileEmptyState
-// Dependencies: [5, 19, 17, 21, 5191, 15716, 5187, 1128, 5479, 13379, 2002, 2]
+// Dependencies: [5, 19, 17, 21, 5191, 15716, 5187, 1128, 5479, 13374, 2002, 2]
 // Exports: default
 
 // Module 15715 (GuildProfileEmptyState)

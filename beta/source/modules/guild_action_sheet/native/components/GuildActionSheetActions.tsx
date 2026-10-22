@@ -1,7 +1,7 @@
 // Module ID: 14925
 // Function ID: 14926
 // Name: GuildActionSheetActions
-// Dependencies: [19, 17, 7521, 1246, 2086, 6362, 2122, 4845, 6291, 6222, 1392, 1087, 7063, 8155, 6223, 21, 5191, 587, 558, 576, 504, 1128, 10659, 7171, 7321, 5033, 2052, 7517, 5155, 6190, 11119, 2002, 12941, 5509, 7130, 7155, 10967, 1202, 9038, 14926, 1211, 2049, 8913, 14927, 8563, 9130, 5187, 2044, 6961, 7086, 10769, 7081, 14975, 10787, 14976, 8926, 7152, 8880, 8810, 11140, 14314, 2459, 14977, 14983, 5401, 38, 14924, 13527, 13526, 6361, 11125, 14984, 7988, 8315, 12560, 7161, 7162, 4903, 1417, 2]
+// Dependencies: [19, 17, 7521, 1246, 2086, 6362, 2122, 4845, 6291, 6222, 1392, 1087, 7063, 8155, 6223, 21, 5191, 587, 558, 576, 504, 1128, 10659, 7171, 7321, 5033, 2052, 7517, 5155, 6190, 11119, 2002, 12936, 5509, 7130, 7155, 10967, 1202, 9038, 14926, 1211, 2049, 8913, 14927, 8563, 9130, 5187, 2044, 6961, 7086, 10769, 7081, 14975, 10787, 14976, 8926, 7152, 8880, 8810, 11140, 14314, 2459, 14977, 14983, 5401, 38, 14924, 13522, 13521, 6361, 11125, 14984, 7988, 8315, 12555, 7161, 7162, 4903, 1417, 2]
 // Exports: GuildActionSheetGameOrganizationActions, GuildActionSheetSecondaryActions, GuildUnreadAction, handleLeaveServer
 
 // Module 14925 (GuildActionSheetActions)
@@ -116,7 +116,7 @@ function BrowseChannelsOption(guild) {
       }
       tmp9Result = tmp9(tmp10, obj4);
     }
-    tmp9Result2 = tmp9(tmp3(12941).NewBadge, {});
+    tmp9Result2 = tmp9(tmp3(12936).NewBadge, {});
   }
   return tmp9Result;
 }
@@ -1563,9 +1563,9 @@ export const GuildActionSheetSecondaryActions = function GuildActionSheetSeconda
   guild = guild.guild;
   const currentUser = UserStore.getCurrentUser();
   const tmp2 = closure_7(guild, currentUser);
-  let obj = guild(13527);
+  let obj = guild(13522);
   const canReportRaid = obj.useCanReportRaid(guild);
-  let obj2 = guild(13526);
+  let obj2 = guild(13521);
   const guildIncidentsState = obj2.useGuildIncidentsState(guild.id);
   const items = [];
   ({ shouldShowIncidentActions, isUnderLockdown } = guildIncidentsState);
@@ -1648,7 +1648,7 @@ export const GuildActionSheetSecondaryActions = function GuildActionSheetSeconda
           const obj2 = { source: GuildAntiRaidTypes.GuildIncidentActionSources.GUILD_PROFILE };
           const obj3 = ActionSheetActionCreatorsDefault;
           const obj4 = { guild, analyticsData: obj2 };
-          obj3.openLazy(asyncRequire(12560, dependencyMap.paths), "GuildIncidentActionsActionSheet", obj4);
+          obj3.openLazy(asyncRequire(12555, dependencyMap.paths), "GuildIncidentActionsActionSheet", obj4);
         }
     };
     push4(closure_23(ActionSheetRow3, obj7));

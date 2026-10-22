@@ -1,9 +1,9 @@
-// Module ID: 13778
-// Function ID: 13779
+// Module ID: 13773
+// Function ID: 13774
 // Name: useAppChannelOverflowMenuItems
-// Dependencies: [19, 6296, 558, 576, 6297, 11716, 7223, 1128, 11040, 11630, 11041, 11384, 5145, 8577, 9873, 13779, 2]
+// Dependencies: [19, 6296, 558, 576, 6297, 11716, 7223, 1128, 11040, 11630, 11041, 11384, 5145, 8577, 9873, 13774, 2]
 
-// Module 13778 (useAppChannelOverflowMenuItems)
+// Module 13773 (useAppChannelOverflowMenuItems)
 import intl5 from "intl" /* 1128 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 5145 */;
 import FramesConstants from "FramesConstants" /* 6296 */;
@@ -14,7 +14,7 @@ import restartFrames from "restartFrames" /* 11040 */;
 import leaveFrame from "leaveFrame" /* 11041 */;
 import DoorExitIcon from "DoorExitIcon" /* 11384 */;
 import RefreshIcon from "RefreshIcon" /* 11630 */;
-import openAppChannelReportModalDefault from "openAppChannelReportModal" /* 13779 */;
+import openAppChannelReportModalDefault from "openAppChannelReportModal" /* 13774 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

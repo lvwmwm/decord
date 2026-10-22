@@ -1,7 +1,7 @@
 // Module ID: 17670
 // Function ID: 17671
 // Name: PostCallDisconnectNudge
-// Dependencies: [32, 19, 2119, 5212, 13075, 13076, 21, 558, 576, 1128, 17669, 16544, 13077, 504, 7376, 2052, 13078, 5155, 17670, 2002, 2]
+// Dependencies: [32, 19, 2119, 5212, 13070, 13071, 21, 558, 576, 1128, 17669, 16544, 13072, 504, 7376, 2052, 13073, 5155, 17670, 2002, 2]
 // Exports: usePostCallDisconnectNudge
 
 // Module 17670 (PostCallDisconnectNudge)
@@ -10,14 +10,14 @@ import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13075 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13078 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13070 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13073 */;
 import NotificationNudgeBottomSheetDefault from "NotificationNudgeBottomSheet" /* 17669 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import VoiceStateStore from "VoiceStateStore" /* 5212 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13076 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13071 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -88,7 +88,7 @@ export const usePostCallDisconnectNudge = function usePostCallDisconnectNudge() 
   let obj = stateFromStores1(16544);
   const inHoldout = obj.useConfig({ location: "usePostCallDisconnectNudge" }).inHoldout;
   let tmp2 = stateFromStores;
-  let obj2 = stateFromStores(13077);
+  let obj2 = stateFromStores(13072);
   const canSeePushNotificationNudge = obj2.useCanSeePushNotificationNudge();
   let obj3 = stateFromStores(504);
   const items = [VoiceStateStore];

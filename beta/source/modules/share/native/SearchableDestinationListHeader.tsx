@@ -1,9 +1,9 @@
-// Module ID: 12703
-// Function ID: 12704
+// Module ID: 12698
+// Function ID: 12699
 // Name: SearchableDestinationListHeader
 // Dependencies: [19, 21, 5191, 587, 558, 576, 1633, 1506, 1384, 9599, 6478, 6487, 2]
 
-// Module 12703 (SearchableDestinationListHeader)
+// Module 12698 (SearchableDestinationListHeader)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;

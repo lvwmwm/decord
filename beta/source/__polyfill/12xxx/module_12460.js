@@ -1,42 +1,85 @@
 // Module ID: 12460
 // Function ID: 12461
-// Dependencies: [12392, 12413, 12442]
+// Dependencies: [12382]
+// Exports: addMetadataToStackFrames, stripMetadataFromStackFrames
 
 // Module 12460
-import module_12442 from "module_12442" /* 12442 */;
+import _mod12382 from "module_12382" /* 12382 */;
 
-let has, toString;
+function getMetadataForUrl(fn, arg1) {
+  function ensureMetadataStacksAreParsed(fn) {
+    const tmp2 = require;
+    const tmp4 = dependencyMap;
+    if (_mod12382.GLOBAL_OBJ._sentryModuleMetadata) {
+      const _Object = Object;
+      const keys = Object.keys(tmp2(tmp4[0]).GLOBAL_OBJ._sentryModuleMetadata);
+      for (const item10026 of keys) {
+        let tmp11 = item10026;
+        let tmp16 = _mod12382.GLOBAL_OBJ._sentryModuleMetadata[item10026];
+        let obj = set;
+        if (!set.has(item10026)) {
+          let addResult = obj.add(tmp11);
+          let obj2 = fn(tmp11);
+          let reversed = obj2.reverse();
+          for (const item10050 of reversed) {
+            if (item10050.filename) {
+              let result = map.set(tmp22.filename, tmp16);
+              obj3.return();
+              break;
+            }
+            continue;
+          }
+        }
+        continue;
+      }
+    }
+  }
+  const tmp = ensureMetadataStacksAreParsed(fn);
+  return map.get(arg1);
+}
+const map = new Map();
+const set = new Set();
 
-const weakMap = new WeakMap();
-
-export const functionToStringIntegration = module_12442.defineIntegration(() => {
-  let obj = {
-    name: "FunctionToString",
-    setupOnce() {
-      toString = Function.prototype.toString;
-      try {
-        const _Function = Function;
-        Function.prototype.toString = function() {
-          const items = [...arguments];
-          const obj = closure_1_0(closure_1_1[0]);
-          const originalFunction = obj.getOriginalFunction(this);
-          has = has.has;
-          let self = this;
-          const obj2 = closure_1_0(closure_1_1[1]);
-          if (has(obj2.getClient())) {
-            self = this;
-            if (undefined !== originalFunction) {
-              self = originalFunction;
+export const addMetadataToStackFrames = function addMetadataToStackFrames(arg0, exception) {
+  let closure_0 = arg0;
+  try {
+    let tmp = exception;
+    const values = exception.exception.values;
+    const item = values.forEach((stacktrace) => {
+      if (stacktrace.stacktrace) {
+        const tmp = stacktrace.stacktrace.frames || [];
+        for (const item10010 of tmp) {
+          let tmp4 = item10010;
+          if (item10010.filename) {
+            if (!tmp4.module_metadata) {
+              let tmp9 = getMetadataForUrl(closure_0, tmp4.filename);
+              if (tmp9) {
+                tmp4.module_metadata = tmp10;
+              }
             }
           }
-          return toString.apply(self, items);
-        };
-      } catch (err) {
+          continue;
+        }
       }
-    },
-    setup(arg0) {
-      const result = weakMap.set(arg0, true);
-    }
-  };
-  return obj;
-});
+    });
+  } catch (err) {
+  }
+};
+export { getMetadataForUrl };
+export const stripMetadataFromStackFrames = function stripMetadataFromStackFrames(exception) {
+  try {
+    let tmp = exception;
+    const values = exception.exception.values;
+    const item = values.forEach((stacktrace) => {
+      if (stacktrace.stacktrace) {
+        const tmp = stacktrace.stacktrace.frames || [];
+        const iter = tmp[Symbol.iterator]();
+        while (iter !== undefined) {
+          delete iter.next()[`module_metadata`];
+          continue;
+        }
+      }
+    });
+  } catch (err) {
+  }
+};

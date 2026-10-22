@@ -43,7 +43,7 @@ let obj3;
 let tmp;
 const get_initialized = tmp(504);
 const native = tmp(1202);
-const f109226 = (data, index) => {
+const f109235 = (data, index) => {
   const obj = { data };
   return closure_1_17(closure_1_25, obj, index);
 };
@@ -749,7 +749,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDeb
           obj3 = { obj: mediaEngineConnectionId.transport };
           items[1] = closure_17(closure_23, obj2);
           const outbound = mediaEngineConnectionId.rtp.outbound;
-          obj4 = { title: "outbound", children: outbound.map(f109226) };
+          obj4 = { title: "outbound", children: outbound.map(f109235) };
           items[2] = closure_17(closure_23, obj4);
           const inbound = mediaEngineConnectionId.rtp.inbound;
           const keys = Object.keys(inbound);
@@ -806,7 +806,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDeb
         obj3 = { obj: mediaEngineConnectionId.transport };
         items[1] = closure_17(closure_23, obj2);
         const outbound = mediaEngineConnectionId.rtp.outbound;
-        obj4 = { title: "outbound", children: outbound.map(f109226) };
+        obj4 = { title: "outbound", children: outbound.map(f109235) };
         items[2] = closure_17(closure_23, obj4);
         const inbound = mediaEngineConnectionId.rtp.inbound;
         const keys = Object.keys(inbound);

@@ -1,7 +1,7 @@
 // Module ID: 17813
 // Function ID: 17814
 // Name: LinkGridItem
-// Dependencies: [32, 19, 17, 2068, 6340, 9614, 21, 5191, 504, 1128, 8410, 17814, 5187, 8471, 12988, 5137, 9916, 17806, 6462, 558, 576, 17804, 38, 8764, 2]
+// Dependencies: [32, 19, 17, 2068, 6340, 9614, 21, 5191, 504, 1128, 8410, 17814, 5187, 8471, 12983, 5137, 9916, 17806, 6462, 558, 576, 17804, 38, 8764, 2]
 
 // Module 17813 (LinkGridItem)
 import _modDef38 from "module_38" /* 38 */;
@@ -13,7 +13,7 @@ import renderMessageMarkup from "renderMessageMarkup" /* 8410 */;
 import ChatIcon from "ChatIcon" /* 8471 */;
 import MaskedLinkUtils from "MaskedLinkUtils" /* 8764 */;
 import MarkupReactLinkUtils from "MarkupReactLinkUtils" /* 9916 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 12988 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 12983 */;
 import SearchMediaImage from "SearchMediaImage" /* 17804 */;
 import SearchResultLinkPreviewMarkup from "SearchResultLinkPreviewMarkup" /* 17814 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -35,9 +35,9 @@ let closure_12;
 let hasOwnProperty;
 let metroRequire;
 let unpackModuleId;
-const f131216 = (type) => {
+const f131225 = (type) => {
   if (Array.isArray(type)) {
-    const item = type.forEach(f131216);
+    const item = type.forEach(f131225);
   } else {
     if ("link" !== type.type) {
       if ("channelMention" !== type.type) {
@@ -47,7 +47,7 @@ const f131216 = (type) => {
           closure_1 = tmp2;
           const _Array = Array;
           if (Array.isArray(content)) {
-            const item1 = content.forEach(f131216);
+            const item1 = content.forEach(f131225);
           } else {
             if ("link" !== content.type) {
               if ("channelMention" !== content.type) {
@@ -72,7 +72,7 @@ const f131216 = (type) => {
       closure_1 = tmp2;
       const _Array2 = Array;
       if (Array.isArray(type)) {
-        const item2 = type.forEach(f131216);
+        const item2 = type.forEach(f131225);
       } else {
         if ("link" !== type.type) {
           if ("channelMention" !== type.type) {
@@ -95,7 +95,7 @@ function getLinkNodeAtIndex(content, diff, fn) {
   let closure_0 = diff;
   let closure_1 = fn;
   if (Array.isArray(content)) {
-    const item = content.forEach(f131216);
+    const item = content.forEach(f131225);
   } else {
     if ("link" !== content.type) {
       if ("channelMention" !== content.type) {
@@ -148,7 +148,7 @@ function LinkParsedGridItem(author) {
     let closure_0 = linkIndex;
     let closure_1 = closure_11;
     if (Array.isArray(type)) {
-      let item = type.forEach(f131216);
+      let item = type.forEach(f131225);
     } else {
       if ("link" !== type.type) {
         if ("channelMention" !== type.type) {
@@ -158,7 +158,7 @@ function LinkParsedGridItem(author) {
             closure_1 = tmp2;
             let _Array = Array;
             if (Array.isArray(content)) {
-              let item1 = content.forEach(f131216);
+              let item1 = content.forEach(f131225);
             } else {
               if ("link" !== content.type) {
                 if ("channelMention" !== content.type) {
@@ -183,7 +183,7 @@ function LinkParsedGridItem(author) {
         closure_1 = tmp2;
         let _Array2 = Array;
         if (Array.isArray(type)) {
-          let item2 = type.forEach(f131216);
+          let item2 = type.forEach(f131225);
         } else {
           if ("link" !== type.type) {
             if ("channelMention" !== type.type) {

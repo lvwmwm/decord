@@ -1,7 +1,7 @@
 // Module ID: 17587
 // Function ID: 17588
 // Name: ForYouShowAllRow
-// Dependencies: [19, 17, 1087, 13370, 21, 5191, 11901, 587, 1384, 558, 576, 1505, 1267, 1202, 5486, 15064, 1128, 5187, 7111, 17583, 6462, 17582, 2]
+// Dependencies: [19, 17, 1087, 13365, 21, 5191, 11896, 587, 1384, 558, 576, 1505, 1267, 1202, 5486, 15064, 1128, 5187, 7111, 17583, 6462, 17582, 2]
 
 // Module 17587 (ForYouShowAllRow)
 import react_native from "react-native" /* 17 */;
@@ -16,8 +16,8 @@ import Text_Text from "Text/Text" /* 5187 */;
 import useFontScale from "useFontScale" /* 5486 */;
 import Pressables from "Pressables" /* 6462 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7111 */;
-import ChannelListLayout from "ChannelListLayout" /* 11901 */;
-import FriendsScreenConstants from "FriendsScreenConstants" /* 13370 */;
+import ChannelListLayout from "ChannelListLayout" /* 11896 */;
+import FriendsScreenConstants from "FriendsScreenConstants" /* 13365 */;
 import AvatarDuoPile2 from "AvatarDuoPile" /* 15064 */;
 import ChannelPressableWrapper from "ChannelPressableWrapper" /* 17582 */;
 import ChannelWrapper from "ChannelWrapper" /* 17583 */;

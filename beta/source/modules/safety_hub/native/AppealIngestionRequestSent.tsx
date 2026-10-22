@@ -1,13 +1,13 @@
-// Module ID: 12652
-// Function ID: 12653
+// Module ID: 12647
+// Function ID: 12648
 // Name: AppealIngestionRequestSent
-// Dependencies: [19, 17, 7779, 21, 5191, 558, 576, 12629, 1128, 5128, 12653, 12627, 5187, 12647, 2]
+// Dependencies: [19, 17, 7779, 21, 5191, 558, 576, 12624, 1128, 5128, 12648, 12622, 5187, 12642, 2]
 
-// Module 12652 (AppealIngestionRequestSent)
+// Module 12647 (AppealIngestionRequestSent)
 import react_native from "react-native" /* 17 */;
 import FastImageDefault from "FastImage" /* 5128 */;
-import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 12647 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12653 */;
+import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 12642 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12648 */;
 import react from "react" /* 19 */;
 import SafetyHubConstants from "SafetyHubConstants" /* 7779 */;
 import Fragment from "Fragment" /* 21 */;
@@ -42,7 +42,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
   let tmp8;
   const obj = emitAppealIngestionEvent(576);
   const cResult = obj.c(20);
-  const obj2 = emitAppealIngestionEvent(12629);
+  const obj2 = emitAppealIngestionEvent(12624);
   emitAppealIngestionEvent = obj2.useEmitAppealIngestionEvent();
   const tmp5 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -74,7 +74,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { headerText: first, subHeaderText: tmp8 };
-    const tmp17 = closure_6(emitAppealIngestionEvent(12627).AppealIngestionModalHeader, obj4);
+    const tmp17 = closure_6(emitAppealIngestionEvent(12622).AppealIngestionModalHeader, obj4);
     cResult[4] = tmp17;
     tmp15 = tmp17;
   } else {
@@ -160,7 +160,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
   const obj8 = { children: closure_7(View, obj9) };
   obj9 = { style: container, children: items };
   items = [tmp10, tmp15, tmp20, tmp25, tmp32];
-  const AppealIngestionModalScreen = tmp(12627).AppealIngestionModalScreen;
+  const AppealIngestionModalScreen = tmp(12622).AppealIngestionModalScreen;
   const tmp38 = closure_6(AppealIngestionModalScreen, obj8);
   cResult[14] = tmp5.container;
   cResult[15] = tmp32;

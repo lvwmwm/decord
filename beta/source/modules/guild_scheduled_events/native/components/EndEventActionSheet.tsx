@@ -1,7 +1,7 @@
 // Module ID: 9057
 // Function ID: 9058
 // Name: EndEventActionSheet
-// Dependencies: [19, 17, 2074, 1087, 21, 5191, 587, 558, 576, 8927, 5155, 9058, 8792, 1128, 1202, 5187, 5479, 13961, 2]
+// Dependencies: [19, 17, 2074, 1087, 21, 5191, 587, 558, 576, 8927, 5155, 9058, 8792, 1128, 1202, 5187, 5479, 13956, 2]
 
 // Module 9057 (EndEventActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -174,7 +174,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndEventActi
           const obj7 = { children: closure_6(View, obj8) };
           obj8 = { style: container, children: items };
           items = [tmp11, tmp16, tmp24, tmp33];
-          const tmp40 = activeEvent(13961);
+          const tmp40 = activeEvent(13956);
           const tmp43 = closure_5(tmp40, obj7);
           cResult[23] = tmp4.container;
           cResult[24] = tmp24;
@@ -236,7 +236,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndEventActi
     }
     let obj2 = { children: closure_6(View, obj3) };
     obj3 = { style: tmp.container, children: items };
-    const tmp7 = activeEvent(13961);
+    const tmp7 = activeEvent(13956);
     const obj4 = { style: tmp.title, accessibilityRole: "header", children: intl.string(channel(1128).t["4Ao8LC"]) };
     const LegacyText = tmp2(1202).LegacyText;
     intl = tmp2(1128).intl;

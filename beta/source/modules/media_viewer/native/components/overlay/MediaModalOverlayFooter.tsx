@@ -1,10 +1,10 @@
-// Module ID: 13999
-// Function ID: 14000
+// Module ID: 13994
+// Function ID: 13995
 // Name: MediaModalOverlayFooter
-// Dependencies: [32, 19, 17, 21, 5191, 587, 4945, 11109, 5192, 1202, 14000, 6612, 4946, 7092, 7122, 14001, 13991, 2]
+// Dependencies: [32, 19, 17, 21, 5191, 587, 4945, 11109, 5192, 1202, 13995, 6612, 4946, 7092, 7122, 13996, 13986, 2]
 // Exports: MediaModalOverlayFooter
 
-// Module 13999 (MediaModalOverlayFooter)
+// Module 13994 (MediaModalOverlayFooter)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;

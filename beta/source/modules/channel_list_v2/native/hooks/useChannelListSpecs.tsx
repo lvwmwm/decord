@@ -1,17 +1,17 @@
 // Module ID: 17262
 // Function ID: 17263
 // Name: useChannelListSpecs
-// Dependencies: [19, 11900, 558, 576, 17263, 1499, 17150, 5486, 1633, 11911, 2]
+// Dependencies: [19, 11895, 558, 576, 17263, 1499, 17150, 5486, 1633, 11906, 2]
 
 // Module 17262 (useChannelListSpecs)
 import react2 from "react" /* 576 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11911 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11906 */;
 import useChannelListWidthDefault from "useChannelListWidth" /* 17150 */;
 import RedesignGuildHeader from "RedesignGuildHeader" /* 17263 */;
 import react from "react" /* 19 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11900 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11895 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

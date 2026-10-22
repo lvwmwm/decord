@@ -1,14 +1,14 @@
 // Module ID: 17428
 // Function ID: 17429
 // Name: HomePanelContent
-// Dependencies: [19, 17, 17147, 1087, 17429, 21, 5191, 558, 576, 17152, 17430, 1499, 4945, 11911, 10529, 17155, 9610, 4913, 587, 1385, 5471, 17504, 2]
+// Dependencies: [19, 17, 17147, 1087, 17429, 21, 5191, 558, 576, 17152, 17430, 1499, 4945, 11906, 10529, 17155, 9610, 4913, 587, 1385, 5471, 17504, 2]
 
 // Module 17428 (HomePanelContent)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11911 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11906 */;
 import useHomeDrawerGesture from "useHomeDrawerGesture" /* 17152 */;
 import GuildsBarConstants from "GuildsBarConstants" /* 17429 */;
 import GuildsBarDefault from "GuildsBar" /* 17430 */;
@@ -136,10 +136,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
     return obj;
   };
   const tmpResult = tmp(4945);
-  fn.__closure = { roundToNearestPixel: guildsBarPullX(11911), offsetX, guildsBarPullX };
+  fn.__closure = { roundToNearestPixel: guildsBarPullX(11906), offsetX, guildsBarPullX };
   fn.__workletHash = 7539125302557;
   fn.__initData = __initData;
-  ({ roundToNearestPixel: guildsBarPullX(11911), offsetX, guildsBarPullX });
+  ({ roundToNearestPixel: guildsBarPullX(11906), offsetX, guildsBarPullX });
   const animatedStyle = tmpResult.useAnimatedStyle(fn);
   if (cResult[1] !== animatedStyle) {
     let items = [closure_4.absoluteFill, animatedStyle];
@@ -188,10 +188,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
     tmp = roundToNearestPixelDefault;
     return obj;
   };
-  fn.__closure = { roundToNearestPixel: guildsBarPullX(11911), offsetX, guildsBarPullX };
+  fn.__closure = { roundToNearestPixel: guildsBarPullX(11906), offsetX, guildsBarPullX };
   fn.__workletHash = 6557055008030;
   fn.__initData = __initData2;
-  ({ roundToNearestPixel: guildsBarPullX(11911), offsetX, guildsBarPullX });
+  ({ roundToNearestPixel: guildsBarPullX(11906), offsetX, guildsBarPullX });
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const obj4 = { pointerEvents: "none", style: items, children: closure_9(guildsBarPullX(10529), obj5) };
   items = [closure_4.absoluteFill, animatedStyle];

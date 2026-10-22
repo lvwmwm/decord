@@ -1,9 +1,9 @@
-// Module ID: 11964
-// Function ID: 11965
+// Module ID: 11959
+// Function ID: 11960
 // Name: AppDetailsOverflowMenu
 // Dependencies: [109, 19, 21, 558, 576, 9548, 11262, 1128, 10936, 2044, 7162, 4903, 10316, 7840, 9044, 9662, 2]
 
-// Module 11964 (AppDetailsOverflowMenu)
+// Module 11959 (AppDetailsOverflowMenu)
 import Fragment from "Fragment" /* 21 */;
 import ToastUtils from "ToastUtils" /* 4903 */;
 import ClipboardUtils from "ClipboardUtils" /* 7162 */;

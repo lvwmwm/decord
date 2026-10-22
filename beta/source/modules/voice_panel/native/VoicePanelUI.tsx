@@ -1,7 +1,7 @@
 // Module ID: 18183
 // Function ID: 18184
 // Name: VoicePanelUI
-// Dependencies: [32, 19, 17, 6292, 8690, 6352, 10680, 10678, 5214, 10681, 21, 3, 5478, 5191, 587, 4945, 1630, 558, 576, 10679, 1633, 6612, 9878, 10684, 18184, 18185, 5156, 18186, 4913, 10686, 11415, 18188, 18189, 11911, 5320, 5986, 7039, 7130, 7155, 1274, 18190, 7124, 18191, 18192, 11043, 18193, 18195, 18255, 18286, 18290, 18293, 18299, 2]
+// Dependencies: [32, 19, 17, 6292, 8690, 6352, 10680, 10678, 5214, 10681, 21, 3, 5478, 5191, 587, 4945, 1630, 558, 576, 10679, 1633, 6612, 9878, 10684, 18184, 18185, 5156, 18186, 4913, 10686, 11415, 18188, 18189, 11906, 5320, 5986, 7039, 7130, 7155, 1274, 18190, 7124, 18191, 18192, 11043, 18193, 18195, 18255, 18286, 18290, 18293, 18299, 2]
 
 // Module 18183 (VoicePanelUI)
 import LoggerDefault from "Logger" /* 3 */;
@@ -23,7 +23,7 @@ import MorphablePanelConstants from "MorphablePanelConstants" /* 10681 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10684 */;
 import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 10686 */;
 import closeVoicePanelsDefault from "closeVoicePanels" /* 11043 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11911 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11906 */;
 import triggerIOSHapticDefault from "triggerIOSHaptic" /* 18185 */;
 import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 18186 */;
 import PanelSizeUtils from "PanelSizeUtils" /* 18189 */;
@@ -165,7 +165,7 @@ function useWrapperStyles(wrapperOffset) {
       }
     }
   };
-  let obj6 = { cheapWorkletShallowEqual: require("cheapWorkletShallowEqual").cheapWorkletShallowEqual, VoicePanelModes: animatedStyle1, wrapperDimensions, updateSharedValueIfChanged: height(10684), wrapperOffset, getMaxPanelWidth: require("PanelSizeUtils").getMaxPanelWidth, getPanelX: require("PanelSizeUtils").getPanelX, roundToNearestPixel: height(11911), windowDimensions };
+  let obj6 = { cheapWorkletShallowEqual: require("cheapWorkletShallowEqual").cheapWorkletShallowEqual, VoicePanelModes: animatedStyle1, wrapperDimensions, updateSharedValueIfChanged: height(10684), wrapperOffset, getMaxPanelWidth: require("PanelSizeUtils").getMaxPanelWidth, getPanelX: require("PanelSizeUtils").getPanelX, roundToNearestPixel: height(11906), windowDimensions };
   fn3.__closure = obj6;
   fn3.__workletHash = 7580692586417;
   fn3.__initData = __initData32;

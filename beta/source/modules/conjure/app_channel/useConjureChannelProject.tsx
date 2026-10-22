@@ -1,9 +1,9 @@
-// Module ID: 13645
-// Function ID: 13646
+// Module ID: 13640
+// Function ID: 13641
 // Name: useConjureChannelProject
 // Dependencies: [19, 2128, 2090, 4845, 6293, 1087, 558, 576, 7222, 504, 10999, 11, 6294, 2]
 
-// Module 13645 (useConjureChannelProject)
+// Module 13640 (useConjureChannelProject)
 import Constants from "Constants" /* 1087 */;
 import ConjureProjectStore2 from "ConjureProjectStore" /* 6293 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 10999 */;

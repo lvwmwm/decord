@@ -1,9 +1,9 @@
-// Module ID: 13486
-// Function ID: 13487
+// Module ID: 13481
+// Function ID: 13482
 // Name: useCreateGameInvitePost
-// Dependencies: [5, 32, 19, 10974, 6015, 7640, 1087, 2075, 558, 576, 7256, 13487, 11215, 504, 9562, 7641, 2]
+// Dependencies: [5, 32, 19, 10974, 6015, 7640, 1087, 2075, 558, 576, 7256, 13482, 11215, 504, 9562, 7641, 2]
 
-// Module 13486 (useCreateGameInvitePost)
+// Module 13481 (useCreateGameInvitePost)
 import Constants from "Constants" /* 1087 */;
 import ChannelConstants from "ChannelConstants" /* 2075 */;
 import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7256 */;

@@ -1,14 +1,14 @@
 // Module ID: 19024
 // Function ID: 19025
 // Name: MediaPostEmbedManager
-// Dependencies: [2120, 502, 2128, 10811, 1087, 1109, 5517, 1405, 12610, 7085, 18567, 2]
+// Dependencies: [2120, 502, 2128, 10811, 1087, 1109, 5517, 1405, 12605, 7085, 18567, 2]
 
 // Module 19024 (MediaPostEmbedManager)
 import Constants from "Constants" /* 1087 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
 import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 5517 */;
 import MediaPostEmbedStore2 from "MediaPostEmbedStore" /* 10811 */;
-import MediaChannelActionCreators from "MediaChannelActionCreators" /* 12610 */;
+import MediaChannelActionCreators from "MediaChannelActionCreators" /* 12605 */;
 import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 18567 */;
 import GatedChannelStore from "GatedChannelStore" /* 2120 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

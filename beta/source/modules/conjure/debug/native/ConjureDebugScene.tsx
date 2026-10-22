@@ -1,9 +1,9 @@
-// Module ID: 12347
-// Function ID: 12348
+// Module ID: 12342
+// Function ID: 12343
 // Name: ConjureDebugScene
-// Dependencies: [32, 19, 17, 10978, 10983, 21, 5191, 587, 1128, 3883, 558, 576, 1505, 1633, 12114, 8805, 504, 11008, 11709, 12348, 7162, 12357, 4904, 5141, 11685, 9051, 12358, 12364, 12366, 2]
+// Dependencies: [32, 19, 17, 10978, 10983, 21, 5191, 587, 1128, 3883, 558, 576, 1505, 1633, 12109, 8805, 504, 11008, 11709, 12343, 7162, 12352, 4904, 5141, 11685, 9051, 12353, 12359, 12361, 2]
 
-// Module 12347 (ConjureDebugScene)
+// Module 12342 (ConjureDebugScene)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import _modDef3883 from "module_3883" /* 3883 */;
@@ -13,7 +13,7 @@ import ClipboardUtils from "ClipboardUtils" /* 7162 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 10978 */;
 import conjureDebugConnection from "conjureDebugConnection" /* 11008 */;
 import conjureTraceRequests2 from "conjureTraceRequests" /* 11709 */;
-import ConjureDebugSnapshot from "ConjureDebugSnapshot" /* 12357 */;
+import ConjureDebugSnapshot from "ConjureDebugSnapshot" /* 12352 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -265,7 +265,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDeb
         const tmp4 = projectId;
         if (null != result) {
           setActiveIndex(arr.indexOf("trace"), false);
-          const tmp2Result = tmp2(12348);
+          const tmp2Result = tmp2(12343);
           tmp2Result.openPerfTrace(tmp4, result);
         }
       }
@@ -360,7 +360,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDeb
       const tmp4 = projectId;
       if (null != result) {
         setActiveIndex(memo.indexOf("trace"), false);
-        const tmp2Result = tmp2(12348);
+        const tmp2Result = tmp2(12343);
         tmp2Result.openPerfTrace(tmp4, result);
       }
     }

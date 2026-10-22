@@ -1,7 +1,7 @@
 // Module ID: 18799
 // Function ID: 18800
 // Name: GuildSettingsRoles
-// Dependencies: [32, 19, 17, 2123, 502, 5116, 2122, 2090, 4845, 7096, 18800, 18801, 1087, 21, 5191, 587, 6162, 558, 576, 1267, 18802, 504, 17274, 8910, 1505, 4850, 5206, 18803, 18812, 18813, 6542, 1128, 6462, 11982, 5187, 18814, 5479, 18818, 7365, 13488, 1384, 18810, 6377, 7097, 7016, 8855, 1202, 8897, 17523, 7005, 2]
+// Dependencies: [32, 19, 17, 2123, 502, 5116, 2122, 2090, 4845, 7096, 18800, 18801, 1087, 21, 5191, 587, 6162, 558, 576, 1267, 18802, 504, 17274, 8910, 1505, 4850, 5206, 18803, 18812, 18813, 6542, 1128, 6462, 11977, 5187, 18814, 5479, 18818, 7365, 13483, 1384, 18810, 6377, 7097, 7016, 8855, 1202, 8897, 17523, 7005, 2]
 
 // Module 18799 (GuildSettingsRoles)
 import nativeDefault from "native" /* 587 */;
@@ -1349,7 +1349,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedGui
         const PressableOpacity = tmp7(6462).PressableOpacity;
         intl2 = tmp7(1128).intl;
         const obj5 = { color: nativeDefault.colors.TEXT_LINK, size: "sm" };
-        const ArrowsUpDownIcon = tmp7(11982).ArrowsUpDownIcon;
+        const ArrowsUpDownIcon = tmp7(11977).ArrowsUpDownIcon;
         items2 = [closure_20(ArrowsUpDownIcon, obj5), ];
         const obj6 = { style: closure_1.reorderButtonText, variant: "text-sm/medium", color: "text-link", children: intl3.string(intl5.t["0dOFq+"]) };
         const Text = tmp7(5187).Text;

@@ -1,16 +1,16 @@
-// Module ID: 13791
-// Function ID: 13792
+// Module ID: 13786
+// Function ID: 13787
 // Name: GuildRoleSubscriptionsChannelHeader
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1202, 13507, 5187, 1128, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1202, 13502, 5187, 1128, 2]
 
-// Module 13791 (GuildRoleSubscriptionsChannelHeader)
+// Module 13786 (GuildRoleSubscriptionsChannelHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import Text_Text from "Text/Text" /* 5187 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13507 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13502 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;

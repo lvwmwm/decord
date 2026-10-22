@@ -1,7 +1,7 @@
 // Module ID: 18114
 // Function ID: 18115
 // Name: useMainViewTooltipActionSheetEligibilityMap
-// Dependencies: [32, 1261, 7441, 18084, 9421, 1246, 2062, 1087, 1394, 1097, 558, 576, 504, 18115, 1630, 8359, 18116, 8355, 7436, 18117, 14496, 10399, 10398, 10406, 5033, 2052, 18118, 18119, 18082, 18096, 15636, 12831, 2]
+// Dependencies: [32, 1261, 7441, 18084, 9421, 1246, 2062, 1087, 1394, 1097, 558, 576, 504, 18115, 1630, 8359, 18116, 8355, 7436, 18117, 14496, 10399, 10398, 10406, 5033, 2052, 18118, 18119, 18082, 18096, 15636, 12826, 2]
 
 // Module 18114 (useMainViewTooltipActionSheetEligibilityMap)
 import get_initialized from "get initialized" /* 504 */;
@@ -14,7 +14,7 @@ import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7436 */;
 import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8355 */;
 import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8359 */;
 import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10406 */;
-import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 12831 */;
+import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 12826 */;
 import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 14496 */;
 import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 15636 */;
 import RobloxConnectionCoachmark from "RobloxConnectionCoachmark" /* 18082 */;
@@ -884,12 +884,12 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
   let tmp38;
   let tmp8;
   let tmp9;
-  const f133045 = () => {
+  const f133054 = () => {
     const items = [, ];
     ({ shouldShowGooglePlayPriceChange: arr[0], priceChangeRecord: arr[1] } = GooglePlayPriceChangeStore);
     return items;
   };
-  const f133047 = () => {
+  const f133056 = () => {
     const items = [ReferralTrialStore.getReferralsRemaining({ bypassFetch: true }), ReferralTrialStore.getRecurringReminderStateId()];
     return items;
   };
@@ -914,8 +914,8 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
   }
   const items2 = [GooglePlayPriceChangeStore];
   const tmpResult21 = get_initialized;
-  [tmp8, tmp9] = tmpResult21.useStateFromStoresArray(items2, f133045);
-  _slicedToArray(tmpResult21.useStateFromStoresArray(items2, f133045), 2);
+  [tmp8, tmp9] = tmpResult21.useStateFromStoresArray(items2, f133054);
+  _slicedToArray(tmpResult21.useStateFromStoresArray(items2, f133054), 2);
   const tmpResult22 = usePremiumDiscountOffer;
   const premiumDiscountOffer = tmpResult22.usePremiumDiscountOffer();
   const items3 = [ApexExperimentStore];
@@ -929,8 +929,8 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
   const isEligibleSenderForReferralProgram = tmpResult24.useIsEligibleSenderForReferralProgram(!stateFromStores2);
   const items4 = [ReferralTrialStore];
   const tmpResult25 = get_initialized;
-  [tmp14, tmp15] = tmpResult25.useStateFromStoresArray(items4, f133047);
-  _slicedToArray(tmpResult25.useStateFromStoresArray(items4, f133047), 2);
+  [tmp14, tmp15] = tmpResult25.useStateFromStoresArray(items4, f133056);
+  _slicedToArray(tmpResult25.useStateFromStoresArray(items4, f133056), 2);
   const tmpResult26 = usePremiumTrialOffer;
   const premiumTrialOffer = tmpResult26.usePremiumTrialOffer();
   const PremiumTrialOfferActionSheetKillSwitchExperiment = tmp(18117).PremiumTrialOfferActionSheetKillSwitchExperiment;

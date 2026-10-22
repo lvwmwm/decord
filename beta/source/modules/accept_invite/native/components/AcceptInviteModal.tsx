@@ -1,7 +1,7 @@
 // Module ID: 18433
 // Function ID: 18434
 // Name: AcceptInviteModal
-// Dependencies: [19, 6939, 21, 1275, 5174, 13425, 9244, 558, 576, 6965, 2]
+// Dependencies: [19, 6939, 21, 1275, 5174, 13420, 9244, 558, 576, 6965, 2]
 
 // Module 18433 (AcceptInviteModal)
 import Fragment from "Fragment" /* 21 */;

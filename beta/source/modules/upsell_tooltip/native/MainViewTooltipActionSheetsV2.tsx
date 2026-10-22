@@ -1,7 +1,7 @@
 // Module ID: 18078
 // Function ID: 18079
 // Name: MainViewTooltipActionSheetsV2
-// Dependencies: [32, 109, 19, 4897, 1246, 1087, 2065, 21, 18079, 2002, 18081, 18082, 18083, 18085, 18086, 16761, 18088, 18094, 18096, 18100, 18107, 18112, 12836, 18113, 2052, 2059, 1267, 2056, 558, 576, 10313, 5033, 2053, 18114, 504, 10312, 2]
+// Dependencies: [32, 109, 19, 4897, 1246, 1087, 2065, 21, 18079, 2002, 18081, 18082, 18083, 18085, 18086, 16761, 18088, 18094, 18096, 18100, 18107, 18112, 12831, 18113, 2052, 2059, 1267, 2056, 558, 576, 10313, 5033, 2053, 18114, 504, 10312, 2]
 // Exports: default
 
 // Module 18078 (MainViewTooltipActionSheetsV2)
@@ -53,7 +53,7 @@ function NitroFileUploadUpsellPromoSheetImporter() {
   return asyncRequire(18112, dependencyMap.paths);
 }
 function CustomTypingIndicatorAnnounceActionSheetImporter() {
-  return asyncRequire(12836, dependencyMap.paths);
+  return asyncRequire(12831, dependencyMap.paths);
 }
 class GiftingPromotionCoachmarkImporter {
   constructor() {

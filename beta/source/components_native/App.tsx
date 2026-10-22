@@ -1,7 +1,7 @@
 // Module ID: 15420
 // Function ID: 15421
 // Name: App
-// Dependencies: [19, 15421, 502, 9059, 14765, 14775, 15422, 14795, 9421, 15080, 15423, 15424, 15425, 7598, 4870, 5181, 15426, 6901, 15427, 15429, 21, 15430, 2002, 558, 576, 15463, 5461, 15469, 15470, 15471, 10002, 15480, 14405, 15481, 15484, 10369, 15559, 15567, 15570, 8664, 15573, 15575, 15579, 15581, 15582, 15583, 15585, 7708, 15586, 1384, 8045, 11579, 504, 6186, 15588, 7772, 9, 14750, 15220, 12822, 15590, 17059, 2]
+// Dependencies: [19, 15421, 502, 9059, 14765, 14775, 15422, 14795, 9421, 15080, 15423, 15424, 15425, 7598, 4870, 5181, 15426, 6901, 15427, 15429, 21, 15430, 2002, 558, 576, 15463, 5461, 15469, 15470, 15471, 10002, 15480, 14405, 15481, 15484, 10369, 15559, 15567, 15570, 8664, 15573, 15575, 15579, 15581, 15582, 15583, 15585, 7708, 15586, 1384, 8045, 11579, 504, 6186, 15588, 7772, 9, 14750, 15220, 12817, 15590, 17059, 2]
 
 // Module 15420 (App)
 import TTITrackerDefault from "TTITracker" /* 9 */;
@@ -15,7 +15,7 @@ import VoiceEngineStreamingManagerDefault from "VoiceEngineStreamingManager" /* 
 import MediaPlayerMuteManagerDefault from "MediaPlayerMuteManager" /* 8664 */;
 import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 10002 */;
 import GPlayManagerDefault from "GPlayManager" /* 10369 */;
-import StartupProfilerDefault from "StartupProfiler" /* 12822 */;
+import StartupProfilerDefault from "StartupProfiler" /* 12817 */;
 import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 14405 */;
 import react_nativeDefault from "react-native" /* 15220 */;
 import AccessibilityManagerDefault from "AccessibilityManager" /* 15463 */;
@@ -65,7 +65,7 @@ let tmp;
 let tmp28;
 const IosImageTypesManagerDefault = tmp(8045);
 const RouteManagerUtils = tmp28(11579);
-const StartupProfiler = tmp(12822);
+const StartupProfiler = tmp(12817);
 const jsx = Fragment.jsx;
 if (global.__DEV__) {
   asyncRequire(15430, dependencyMap.paths);

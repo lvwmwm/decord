@@ -1,48 +1,42 @@
 // Module ID: 12459
 // Function ID: 12460
-// Dependencies: [12413, 12400, 12386]
-// Exports: addBreadcrumb
+// Dependencies: [12437, 12425, 12460]
 
 // Module 12459
-import _mod12386 from "module_12386" /* 12386 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12400 */;
-import _mod12413 from "module_12413" /* 12413 */;
+import _mod12460 from "module_12460" /* 12460 */;
+import module_12437 from "module_12437" /* 12437 */;
 
 
-export const addBreadcrumb = function addBreadcrumb(arg0, arg1) {
-  let tmpResult;
-  let closure_0 = arg1;
-  const obj = _mod12413;
-  const client = obj.getClient();
-  const obj3 = _mod12413;
-  const isolationScope = obj3.getIsolationScope();
-  if (client) {
-    const options = client.getOptions();
-    let beforeBreadcrumb = options.beforeBreadcrumb;
-    let tmp5 = null;
-    if (undefined !== beforeBreadcrumb) {
-      tmp5 = beforeBreadcrumb;
-    }
-    beforeBreadcrumb = tmp5;
-    const maxBreadcrumbs = options.maxBreadcrumbs;
-    let num = 100;
-    if (undefined !== maxBreadcrumbs) {
-      num = maxBreadcrumbs;
-    }
-    if (num > 0) {
-      let obj2 = { timestamp: tmpResult.dateTimestampInSeconds() };
-      tmpResult = _browserPerformanceTimeOriginMode;
-      const merged = Object.assign(arg0);
-      if (tmp5) {
-        const tmpResult2 = _mod12386;
-        obj2 = tmpResult2.consoleSandbox(() => beforeBreadcrumb(obj2, closure_0));
-      }
-      if (null !== obj2) {
-        if (client.emit) {
-          client.emit("beforeAddBreadcrumb", obj2, arg1);
+export const moduleMetadataIntegration = module_12437.defineIntegration(() => {
+  let obj = {
+    name: "ModuleMetadata",
+    setup(on) {
+      const options = on;
+      on.on("beforeEnvelope", (arg0) => {
+        let obj = options(closure_1_1[1]);
+        obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
+          if ("event" === arg1) {
+            const _Array = Array;
+            let tmp3;
+            if (Array.isArray(arg0)) {
+              tmp3 = arg0[1];
+            }
+            if (tmp3) {
+              const obj = options(closure_1_1[2]);
+              const result = obj.stripMetadataFromStackFrames(tmp3);
+              arg0[1] = tmp3;
+            }
+          }
+        });
+      });
+      on.on("applyFrameMetadata", (type) => {
+        if (!type.type) {
+          const stackParser = options.getOptions().stackParser;
+          const obj = _mod12460;
+          const result = obj.addMetadataToStackFrames(stackParser, type);
         }
-        isolationScope.addBreadcrumb(obj2, num);
-      }
+      });
     }
-  }
-};
+  };
+  return obj;
+});

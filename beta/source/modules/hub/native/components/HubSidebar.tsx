@@ -1,7 +1,7 @@
 // Module ID: 17339
 // Function ID: 17340
 // Name: HubSidebar
-// Dependencies: [19, 17, 4843, 2119, 1087, 11900, 21, 5191, 587, 558, 576, 13039, 1202, 504, 17340, 17341, 1128, 5202, 16660, 10931, 12958, 5131, 8955, 2]
+// Dependencies: [19, 17, 4843, 2119, 1087, 11895, 21, 5191, 587, 558, 576, 13034, 1202, 504, 17340, 17341, 1128, 5202, 16660, 10931, 12953, 5131, 8955, 2]
 
 // Module 17339 (HubSidebar)
 import react_native from "react-native" /* 17 */;
@@ -10,9 +10,9 @@ import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import transitionToChannel from "transitionToChannel" /* 5202 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8955 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11900 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 12958 */;
-import BaseChannelItem from "BaseChannelItem" /* 13039 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11895 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 12953 */;
+import BaseChannelItem from "BaseChannelItem" /* 13034 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 4843 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
@@ -131,7 +131,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubIte
     DEFAULT = ChannelModes.DEFAULT;
     tmp5 = tmp2;
   }
-  const obj = { style: tmp.container, accessibilityLabel: label, accessibilityRole: "menuitem", onPress: handleItemClick, disableHighlightOnPress: true, mode: DEFAULT, name: metroImportDefault(tmp5(13039).BaseChannelName, { name: label, mode: DEFAULT }), icon: metroImportDefault(tmp5(13039).BaseChannelIcon, { mode: DEFAULT, IconComponent }), channelInfo: tmp6Result };
+  const obj = { style: tmp.container, accessibilityLabel: label, accessibilityRole: "menuitem", onPress: handleItemClick, disableHighlightOnPress: true, mode: DEFAULT, name: metroImportDefault(tmp5(13034).BaseChannelName, { name: label, mode: DEFAULT }), icon: metroImportDefault(tmp5(13034).BaseChannelIcon, { mode: DEFAULT, IconComponent }), channelInfo: tmp6Result };
   tmp6Result = null;
   const tmp7 = BaseChannelItemDefault;
   if (null != unreadCount) {

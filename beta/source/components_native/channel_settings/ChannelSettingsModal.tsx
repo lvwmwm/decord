@@ -1,7 +1,7 @@
 // Module ID: 17951
 // Function ID: 17952
 // Name: ChannelSettingsModal
-// Dependencies: [19, 17, 1087, 9614, 21, 5191, 587, 17952, 1128, 13542, 17868, 17967, 17968, 17970, 17977, 17978, 17987, 17990, 17999, 18001, 18002, 18003, 18004, 18005, 2]
+// Dependencies: [19, 17, 1087, 9614, 21, 5191, 587, 17952, 1128, 13537, 17868, 17967, 17968, 17970, 17977, 17978, 17987, 17990, 17999, 18001, 18002, 18003, 18004, 18005, 2]
 // Exports: getChannelSettingsScreens
 
 // Module 17951 (ChannelSettingsModal)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import SearchConstants from "SearchConstants" /* 9614 */;
-import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 13542 */;
+import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 13537 */;
 import ChannelSettingsOverviewDefault from "ChannelSettingsOverview" /* 17952 */;
 import MessagePreviewDefault from "MessagePreview" /* 17967 */;
 import EasyChannelPermissionSettingsDefault from "EasyChannelPermissionSettings" /* 17970 */;

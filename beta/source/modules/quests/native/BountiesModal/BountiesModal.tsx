@@ -1,7 +1,7 @@
 // Module ID: 16049
 // Function ID: 16050
 // Name: BountiesModal
-// Dependencies: [19, 21, 558, 576, 16050, 16051, 16104, 13925, 10929, 2]
+// Dependencies: [19, 21, 558, 576, 16050, 16051, 16104, 13920, 10929, 2]
 
 // Module 16049 (BountiesModal)
 import Fragment from "Fragment" /* 21 */;

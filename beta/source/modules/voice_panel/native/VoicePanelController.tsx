@@ -1,7 +1,7 @@
 // Module ID: 18352
 // Function ID: 18353
 // Name: VoicePanelController
-// Dependencies: [32, 19, 17, 5181, 2067, 6292, 8690, 11361, 11232, 2068, 2014, 5209, 2119, 6352, 10680, 10678, 1087, 2026, 6298, 5214, 10681, 21, 558, 576, 18353, 4945, 9878, 1104, 504, 4904, 1128, 9078, 14101, 18354, 5343, 11254, 18203, 1499, 1633, 18189, 10688, 10682, 10684, 12, 1281, 1123, 1274, 10697, 12346, 5986, 1267, 8724, 6315, 18143, 4922, 18284, 5205, 5206, 5081, 7003, 18258, 18285, 4834, 18355, 18356, 18360, 18148, 18188, 5098, 10679, 2]
+// Dependencies: [32, 19, 17, 5181, 2067, 6292, 8690, 11361, 11232, 2068, 2014, 5209, 2119, 6352, 10680, 10678, 1087, 2026, 6298, 5214, 10681, 21, 558, 576, 18353, 4945, 9878, 1104, 504, 4904, 1128, 9078, 14096, 18354, 5343, 11254, 18203, 1499, 1633, 18189, 10688, 10682, 10684, 12, 1281, 1123, 1274, 10697, 12341, 5986, 1267, 8724, 6315, 18143, 4922, 18284, 5205, 5206, 5081, 7003, 18258, 18285, 4834, 18355, 18356, 18360, 18148, 18188, 5098, 10679, 2]
 
 // Module 18352 (VoicePanelController)
 import react_native from "react-native" /* 17 */;
@@ -29,7 +29,7 @@ import MorphablePanelConstants from "MorphablePanelConstants" /* 10681 */;
 import VoicePanelCardLayoutManagerDefault from "VoicePanelCardLayoutManager" /* 10682 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10684 */;
 import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 11254 */;
-import VideoSlashIcon from "VideoSlashIcon" /* 14101 */;
+import VideoSlashIcon from "VideoSlashIcon" /* 14096 */;
 import applyActivityOrientationLockDefault from "applyActivityOrientationLock" /* 18143 */;
 import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 18188 */;
 import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 18203 */;
@@ -1473,7 +1473,7 @@ let closure_58 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLay
               closure_10.current.timeout = setTimeout(() => {
                 clearTimeout(ref.current.timeout);
                 let obj = windowDimensions(contentDimensions[46]);
-                obj.batchUpdates(() => { /* body not rendered: F158496 */ });
+                obj.batchUpdates(() => { /* body not rendered: F158505 */ });
               }, 60);
               return;
             }
@@ -1486,7 +1486,7 @@ let closure_58 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLay
               closure_10.current.timeout = setTimeout(() => {
                 clearTimeout(ref.current.timeout);
                 let obj = windowDimensions(contentDimensions[46]);
-                obj.batchUpdates(() => { /* body not rendered: F158496 */ });
+                obj.batchUpdates(() => { /* body not rendered: F158505 */ });
               }, 60);
               return;
             }
@@ -1501,7 +1501,7 @@ let closure_58 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLay
               closure_10.current.timeout = setTimeout(() => {
                 clearTimeout(ref.current.timeout);
                 let obj = windowDimensions(contentDimensions[46]);
-                obj.batchUpdates(() => { /* body not rendered: F158496 */ });
+                obj.batchUpdates(() => { /* body not rendered: F158505 */ });
               }, 60);
               return;
             }
@@ -1518,7 +1518,7 @@ let closure_58 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLay
               closure_10.current.timeout = setTimeout(() => {
                 clearTimeout(ref.current.timeout);
                 let obj = windowDimensions(contentDimensions[46]);
-                obj.batchUpdates(() => { /* body not rendered: F158496 */ });
+                obj.batchUpdates(() => { /* body not rendered: F158505 */ });
               }, 60);
               return;
             }
@@ -1534,7 +1534,7 @@ let closure_58 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLay
               closure_10.current.timeout = setTimeout(() => {
                 clearTimeout(ref.current.timeout);
                 let obj = windowDimensions(contentDimensions[46]);
-                obj.batchUpdates(() => { /* body not rendered: F158496 */ });
+                obj.batchUpdates(() => { /* body not rendered: F158505 */ });
               }, 60);
               return;
             }
@@ -1547,7 +1547,7 @@ let closure_58 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLay
                 closure_10.current.timeout = setTimeout(() => {
                   clearTimeout(ref.current.timeout);
                   let obj = windowDimensions(contentDimensions[46]);
-                  obj.batchUpdates(() => { /* body not rendered: F158496 */ });
+                  obj.batchUpdates(() => { /* body not rendered: F158505 */ });
                 }, 60);
                 return;
               }

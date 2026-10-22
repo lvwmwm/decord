@@ -1,10 +1,10 @@
-// Module ID: 12706
-// Function ID: 12707
+// Module ID: 12701
+// Function ID: 12702
 // Name: QuickSwitcherActionCreators
-// Dependencies: [5, 32, 6227, 2072, 2068, 6301, 2119, 5034, 8971, 1087, 2075, 1089, 8972, 1267, 7299, 584, 7329, 5202, 5205, 6145, 7290, 11098, 9156, 9150, 7224, 12707, 7529, 7155, 12708, 8770, 2]
+// Dependencies: [5, 32, 6227, 2072, 2068, 6301, 2119, 5034, 8971, 1087, 2075, 1089, 8972, 1267, 7299, 584, 7329, 5202, 5205, 6145, 7290, 11098, 9156, 9150, 7224, 12702, 7529, 7155, 12703, 8770, 2]
 // Exports: hide, search, selectResult, switchToResultInNewTab, toggle, trackOpen
 
-// Module 12706 (QuickSwitcherActionCreators)
+// Module 12701 (QuickSwitcherActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
@@ -25,7 +25,7 @@ import _mod8972 from "module_8972" /* 8972 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9150 */;
 import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9156 */;
 import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 11098 */;
-import PlaygroundAccessExperiment from "PlaygroundAccessExperiment" /* 12707 */;
+import PlaygroundAccessExperiment from "PlaygroundAccessExperiment" /* 12702 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
@@ -535,7 +535,7 @@ export const switchToResultInNewTab = function switchToResultInNewTab(type) {
     let obj6 = DispatcherDefault;
     let obj4 = { type: "QUICKSWITCHER_SWITCH_TO", result: type };
     obj6.dispatch(obj4);
-    const tmpResult = tmp(12708);
+    const tmpResult = tmp(12703);
     tmpResult.openChannelTabActive(id, guildId);
   }
 };

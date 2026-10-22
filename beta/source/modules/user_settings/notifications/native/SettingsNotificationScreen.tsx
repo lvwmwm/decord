@@ -1,7 +1,7 @@
 // Module ID: 16542
 // Function ID: 16543
 // Name: SettingsNotificationScreen
-// Dependencies: [19, 17, 16543, 8260, 21, 5191, 587, 558, 576, 6941, 13077, 16544, 16545, 5187, 1128, 6459, 6567, 11084, 16546, 16547, 15732, 2]
+// Dependencies: [19, 17, 16543, 8260, 21, 5191, 587, 558, 576, 6941, 13072, 16544, 16545, 5187, 1128, 6459, 6567, 11084, 16546, 16547, 15732, 2]
 
 // Module 16542 (SettingsNotificationScreen)
 import react_native from "react-native" /* 17 */;
@@ -11,7 +11,7 @@ import intl7 from "intl" /* 1128 */;
 import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6941 */;
 import SettingsConstants from "SettingsConstants" /* 8260 */;
 import SettingBuilders from "SettingBuilders" /* 11084 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13077 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13072 */;
 import SettingLayoutDefault from "SettingLayout" /* 15732 */;
 import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 16543 */;
 import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 16544 */;

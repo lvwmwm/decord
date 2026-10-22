@@ -1,9 +1,9 @@
-// Module ID: 13744
-// Function ID: 13745
+// Module ID: 13739
+// Function ID: 13740
 // Name: useCanSetThumbnail
 // Dependencies: [2068, 558, 576, 573, 2]
 
-// Module 13744 (useCanSetThumbnail)
+// Module 13739 (useCanSetThumbnail)
 import ChannelStore from "ChannelStore" /* 2068 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

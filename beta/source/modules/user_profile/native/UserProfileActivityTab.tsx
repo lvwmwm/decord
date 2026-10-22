@@ -1,7 +1,7 @@
 // Module ID: 14164
 // Function ID: 14165
 // Name: UserProfileActivityTab
-// Dependencies: [19, 17, 1087, 21, 5191, 587, 558, 576, 5187, 1128, 8764, 2131, 14165, 14168, 14049, 14169, 2]
+// Dependencies: [19, 17, 1087, 21, 5191, 587, 558, 576, 5187, 1128, 8764, 2131, 14165, 14168, 14044, 14169, 2]
 
 // Module 14164 (UserProfileActivityTab)
 import react_native from "react-native" /* 17 */;
@@ -396,7 +396,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
       }
       let tmp17 = hasCurrentActivity;
       if (tmp17) {
-        const obj5 = { heading: intl.string(user(1128).t.J6STd9), children: closure_5(tmp5(14049), obj6) };
+        const obj5 = { heading: intl.string(user(1128).t.J6STd9), children: closure_5(tmp5(14044), obj6) };
         intl = tmp(1128).intl;
         obj6 = { user, currentUser, guildId, style: cardStyle };
         tmp17 = closure_5(closure_10, obj5);
@@ -455,7 +455,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
   const tmp10 = closure_6;
   const tmp11 = closure_7;
   if (hasCurrentActivity) {
-    const obj3 = { heading: intl.string(user(1128).t.J6STd9), children: closure_5(tmp(14049), obj4) };
+    const obj3 = { heading: intl.string(user(1128).t.J6STd9), children: closure_5(tmp(14044), obj4) };
     intl = user(1128).intl;
     obj4 = { user, currentUser, guildId, style: cardStyle };
     hasCurrentActivity = closure_5(closure_10, obj3);

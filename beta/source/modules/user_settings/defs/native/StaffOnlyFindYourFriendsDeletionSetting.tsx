@@ -1,7 +1,7 @@
 // Module ID: 15887
 // Function ID: 15888
 // Name: StaffOnlyFindYourFriendsDeletionSetting
-// Dependencies: [5, 17, 8260, 21, 1269, 1274, 558, 576, 4828, 13350, 1351, 4904, 11084, 15888, 2]
+// Dependencies: [5, 17, 8260, 21, 1269, 1274, 558, 576, 4828, 13345, 1351, 4904, 11084, 15888, 2]
 
 // Module 15887 (StaffOnlyFindYourFriendsDeletionSetting)
 import react_native from "react-native" /* 17 */;

@@ -1,7 +1,7 @@
 // Module ID: 17299
 // Function ID: 17300
 // Name: useGuildPowerupsCoachmark
-// Dependencies: [19, 5181, 2090, 5104, 1087, 2065, 1098, 21, 5191, 587, 558, 576, 504, 5127, 8299, 13202, 13186, 17300, 13170, 13210, 1128, 2621, 13212, 17301, 13209, 5107, 17297, 17302, 17303, 13242, 17304, 9742, 2]
+// Dependencies: [19, 5181, 2090, 5104, 1087, 2065, 1098, 21, 5191, 587, 558, 576, 504, 5127, 8299, 13197, 13181, 17300, 13165, 13205, 1128, 2621, 13207, 17301, 13204, 5107, 17297, 17302, 17303, 13237, 17304, 9742, 2]
 
 // Module 17299 (useGuildPowerupsCoachmark)
 import Fragment from "Fragment" /* 21 */;
@@ -9,12 +9,12 @@ import nativeDefault from "native" /* 587 */;
 import Constants2 from "Constants" /* 1098 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
 import useThemeDefault from "useTheme" /* 5127 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 13170 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13202 */;
-import useGetGuildPowerupBannerImage from "useGetGuildPowerupBannerImage" /* 13209 */;
-import GuildPowerupsBoostGemDefault from "GuildPowerupsBoostGem" /* 13210 */;
-import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 13212 */;
-import _modDef13242 from "module_13242" /* 13242 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 13165 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13197 */;
+import useGetGuildPowerupBannerImage from "useGetGuildPowerupBannerImage" /* 13204 */;
+import GuildPowerupsBoostGemDefault from "GuildPowerupsBoostGem" /* 13205 */;
+import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 13207 */;
+import _modDef13237 from "module_13237" /* 13237 */;
 import useGuildPowerupsBoostActionDefault from "useGuildPowerupsBoostAction" /* 17300 */;
 import _modDef17302 from "module_17302" /* 17302 */;
 import _modDef17303 from "module_17303" /* 17303 */;
@@ -131,7 +131,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
     type1 = type.type;
   }
   let powerup;
-  if (type1 === tmp(13186).GuildPowerupNotificationPopoutType.BOOST_TO_UNLOCK) {
+  if (type1 === tmp(13181).GuildPowerupNotificationPopoutType.BOOST_TO_UNLOCK) {
     powerup = type.powerup;
   }
   let num7 = 0;

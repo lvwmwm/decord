@@ -1,7 +1,7 @@
 // Module ID: 18947
 // Function ID: 18948
 // Name: FormGuildGatingModeSelector
-// Dependencies: [19, 17, 21, 5191, 558, 576, 18948, 5400, 1128, 5187, 18950, 12537, 18951, 2]
+// Dependencies: [19, 17, 21, 5191, 558, 576, 18948, 5400, 1128, 5187, 18950, 12532, 18951, 2]
 
 // Module 18947 (FormGuildGatingModeSelector)
 import react_native from "react-native" /* 17 */;
@@ -150,7 +150,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormGuildG
           tmp28 = tmp32;
         }
       }
-      const obj7 = { icon: onChange(12537), title: tmp10, description: tmp11, selected: !isFullServerGating, onPress: tmp6, disabled: roleSubscriptionSettingsDisabled };
+      const obj7 = { icon: onChange(12532), title: tmp10, description: tmp11, selected: !isFullServerGating, onPress: tmp6, disabled: roleSubscriptionSettingsDisabled };
       const tmp18 = onChange(18950);
       const tmp19 = closure_5(tmp18, obj7);
       cResult[10] = tmp6;
@@ -234,7 +234,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormGuildG
     }
     onChange(true);
   }, items1);
-  let obj3 = { icon: onChange(12537), title: intl.string(isFullServerGating(1128).t.rXqxhF), description: intl2.string(isFullServerGating(1128).t.yQiJne), selected: !isFullServerGating, onPress: callback, disabled: roleSubscriptionSettingsDisabled };
+  let obj3 = { icon: onChange(12532), title: intl.string(isFullServerGating(1128).t.rXqxhF), description: intl2.string(isFullServerGating(1128).t.yQiJne), selected: !isFullServerGating, onPress: callback, disabled: roleSubscriptionSettingsDisabled };
   const tmp5 = onChange(18950);
   intl = isFullServerGating(1128).intl;
   intl2 = isFullServerGating(1128).intl;

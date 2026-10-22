@@ -1,12 +1,12 @@
 // Module ID: 17430
 // Function ID: 17431
 // Name: GuildsBar
-// Dependencies: [19, 21, 5191, 558, 576, 1384, 5320, 17431, 17439, 17308, 7038, 17503, 6439, 12822, 6612, 2]
+// Dependencies: [19, 21, 5191, 558, 576, 1384, 5320, 17431, 17439, 17308, 7038, 17503, 6439, 12817, 6612, 2]
 
 // Module 17430 (GuildsBar)
 import NativeViewDefault from "NativeView" /* 6439 */;
 import FastListDefault from "FastList" /* 7038 */;
-import StartupProfilerDefault from "StartupProfiler" /* 12822 */;
+import StartupProfilerDefault from "StartupProfiler" /* 12817 */;
 import registerSidebarVisibilityMethods from "registerSidebarVisibilityMethods" /* 17308 */;
 import useGuildsBarGestureDefault from "useGuildsBarGesture" /* 17431 */;
 import useGuildsBarPropsDefault from "useGuildsBarProps" /* 17439 */;
@@ -252,7 +252,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                       }
                       return tmp26;
                     }
-                    const obj3 = { profile: fastListRef(12822).Profiles.Guilds, children: closure_4(fastListRef(6612).GestureDetector, obj4) };
+                    const obj3 = { profile: fastListRef(12817).Profiles.Guilds, children: closure_4(fastListRef(6612).GestureDetector, obj4) };
                     obj4 = { gesture, children: tmp23 };
                     const tmp6Result = StartupProfilerDefault;
                     const tmp29 = closure_4(tmp6Result, obj3);
@@ -324,7 +324,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const result = obj.registerGuildVisibilityMethod(fastListRef);
   }, items);
   closure_7(listProps, fastListRef);
-  let obj = { profile: fastListRef(12822).Profiles.Guilds, children: closure_4(GestureDetector, obj2) };
+  let obj = { profile: fastListRef(12817).Profiles.Guilds, children: closure_4(GestureDetector, obj2) };
   const tmp9 = StartupProfilerDefault;
   obj2 = { gesture, children: tmp10(tmp11, obj3) };
   GestureDetector = fastListRef(6612).GestureDetector;

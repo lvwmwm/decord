@@ -1,7 +1,7 @@
 // Module ID: 14653
 // Function ID: 14654
 // Name: GuildPowerupsMarketingHeader
-// Dependencies: [19, 17, 5103, 21, 5191, 587, 683, 558, 576, 5187, 14654, 13179, 13202, 14655, 1128, 2621, 2]
+// Dependencies: [19, 17, 5103, 21, 5191, 587, 683, 558, 576, 5187, 14654, 13174, 13197, 14655, 1128, 2621, 2]
 
 // Module 14653 (GuildPowerupsMarketingHeader)
 import react_native from "react-native" /* 17 */;
@@ -10,8 +10,8 @@ import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import intl3 from "intl" /* 1128 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13179 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13202 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13174 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13197 */;
 import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 14654 */;
 import orderMarketablePerksForDisplayDefault from "orderMarketablePerksForDisplay" /* 14655 */;
 import react from "react" /* 19 */;
@@ -88,7 +88,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
     tmp7 = cResult[2];
   }
   const effect = react.useEffect(tmp6, tmp7);
-  if (arr(13202)(guild.id)) {
+  if (arr(13197)(guild.id)) {
     let num4;
     if (arr != null) {
       num4 = arr.length;

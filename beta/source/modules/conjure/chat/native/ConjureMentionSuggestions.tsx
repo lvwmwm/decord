@@ -1,9 +1,9 @@
-// Module ID: 12341
-// Function ID: 12342
+// Module ID: 12336
+// Function ID: 12337
 // Name: ConjureMentionSuggestions
-// Dependencies: [19, 21, 5191, 587, 558, 576, 6542, 1128, 3883, 6457, 1202, 5057, 12188, 2]
+// Dependencies: [19, 21, 5191, 587, 558, 576, 6542, 1128, 3883, 6457, 1202, 5057, 12183, 2]
 
-// Module 12341 (ConjureMentionSuggestions)
+// Module 12336 (ConjureMentionSuggestions)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import _modDef3883 from "module_3883" /* 3883 */;
@@ -131,7 +131,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMenti
                 }
               };
               const TableRow = projectId(fileThumbnail[9]).TableRow;
-              obj2 = { user: user.user, size: projectId(fileThumbnail[10]).AvatarSizes.XSMALL, guildId: "Array" };
+              obj2 = { user: user.user, size: projectId(fileThumbnail[10]).AvatarSizes.XSMALL, guildId: "r" };
               Avatar = projectId(fileThumbnail[10]).Avatar;
               obj3 = projectId(fileThumbnail[11]);
               return closure_1_3(TableRow, obj, user.user.id);
@@ -217,7 +217,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMenti
                 }
               };
               const TableRow = require("TableRow").TableRow;
-              obj2 = { user: user.user, size: require("native").AvatarSizes.XSMALL, guildId: "Array" };
+              obj2 = { user: user.user, size: require("native").AvatarSizes.XSMALL, guildId: "r" };
               Avatar = require("native").Avatar;
               obj3 = require("UserUtils");
               return closure_1_3(TableRow, obj, user.user.id);

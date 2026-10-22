@@ -1,14 +1,14 @@
 // Module ID: 17802
 // Function ID: 17803
 // Name: GuildTextChannelRow
-// Dependencies: [109, 19, 9614, 21, 558, 576, 11, 17790, 12995, 17793, 2]
+// Dependencies: [109, 19, 9614, 21, 558, 576, 11, 17790, 12990, 17793, 2]
 
 // Module 17802 (GuildTextChannelRow)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import SearchConstants from "SearchConstants" /* 9614 */;
-import SearchUtils from "SearchUtils" /* 12995 */;
+import SearchUtils from "SearchUtils" /* 12990 */;
 import guild_channels_ChannelSubtitle from "guild_channels/ChannelSubtitle" /* 17790 */;
 import GuildChannelRowDefault from "GuildChannelRow" /* 17793 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;

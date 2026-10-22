@@ -1,7 +1,7 @@
 // Module ID: 15590
 // Function ID: 15591
 // Name: AppContainer
-// Dependencies: [32, 19, 17, 6351, 2068, 2119, 1087, 2075, 21, 5191, 587, 4945, 558, 576, 8600, 15591, 6193, 1123, 1258, 5073, 5407, 7001, 15593, 6353, 5072, 1114, 5127, 5475, 1267, 5074, 15594, 7007, 1506, 1388, 15595, 1384, 11586, 15596, 15597, 15598, 11344, 11580, 17046, 5088, 11700, 17047, 1502, 12822, 17048, 17056, 4988, 17058, 1257, 2]
+// Dependencies: [32, 19, 17, 6351, 2068, 2119, 1087, 2075, 21, 5191, 587, 4945, 558, 576, 8600, 15591, 6193, 1123, 1258, 5073, 5407, 7001, 15593, 6353, 5072, 1114, 5127, 5475, 1267, 5074, 15594, 7007, 1506, 1388, 15595, 1384, 11586, 15596, 15597, 15598, 11344, 11580, 17046, 5088, 11700, 17047, 1502, 12817, 17048, 17056, 4988, 17058, 1257, 2]
 
 // Module 15590 (AppContainer)
 import react_native from "react-native" /* 17 */;
@@ -25,7 +25,7 @@ import useNavigationTheme from "useNavigationTheme" /* 7007 */;
 import useIsScreenLandscape from "useIsScreenLandscape" /* 8600 */;
 import RouteManagerDefault from "RouteManager" /* 11586 */;
 import AnimatedKeyboardProviderDefault from "AnimatedKeyboardProvider" /* 11700 */;
-import StartupProfilerDefault from "StartupProfiler" /* 12822 */;
+import StartupProfilerDefault from "StartupProfiler" /* 12817 */;
 import DiscordGestureHandlerRootViewDefault from "DiscordGestureHandlerRootView" /* 15591 */;
 import useTrackNavigatorScreenImpression from "useTrackNavigatorScreenImpression" /* 15593 */;
 import useRequestGatewaySocket from "useRequestGatewaySocket" /* 15595 */;
@@ -65,7 +65,7 @@ const getInitialNavigationStateDefault = tmp4(5074);
 const Portal = tmp(5088);
 const WebViewContext = tmp(11344);
 const _mod11580 = tmp(11580);
-const StartupProfiler = tmp(12822);
+const StartupProfiler = tmp(12817);
 const MainNavigationLoggerDefault = tmp4(15594);
 const SafeAreaProvider2 = tmp(15597);
 const _mod17048 = tmp(17048);

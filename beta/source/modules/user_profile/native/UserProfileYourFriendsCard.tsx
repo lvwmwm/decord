@@ -1,7 +1,7 @@
 // Module ID: 17949
 // Function ID: 17950
 // Name: UserProfileYourFriendsCard
-// Dependencies: [32, 19, 17, 7613, 4855, 1392, 1087, 21, 1202, 5191, 558, 576, 504, 14118, 8988, 12, 1388, 5187, 1128, 6457, 2]
+// Dependencies: [32, 19, 17, 7613, 4855, 1392, 1087, 21, 1202, 5191, 558, 576, 504, 14113, 8988, 12, 1388, 5187, 1128, 6457, 2]
 
 // Module 17949 (UserProfileYourFriendsCard)
 import _modDef12 from "module_12" /* 12 */;

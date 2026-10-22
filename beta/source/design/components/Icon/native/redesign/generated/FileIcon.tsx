@@ -1,14 +1,14 @@
-// Module ID: 12008
-// Function ID: 12009
+// Module ID: 12003
+// Function ID: 12004
 // Name: FileIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 12009, 4912, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 12004, 4912, 2]
 
-// Module 12008 (FileIcon)
+// Module 12003 (FileIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4912 */;
-import AssetRegistry from "AssetRegistry" /* 12009 */;
+import AssetRegistry from "AssetRegistry" /* 12004 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

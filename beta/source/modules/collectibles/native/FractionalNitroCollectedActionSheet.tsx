@@ -1,7 +1,7 @@
 // Module ID: 14243
 // Function ID: 14244
 // Name: FractionalNitroCollectedActionSheet
-// Dependencies: [19, 17, 1087, 1394, 21, 5191, 587, 9340, 558, 576, 5128, 14244, 5127, 7574, 5065, 10384, 10385, 5187, 1128, 2131, 4901, 7422, 13740, 6462, 5479, 5155, 7122, 7118, 2]
+// Dependencies: [19, 17, 1087, 1394, 21, 5191, 587, 9340, 558, 576, 5128, 14244, 5127, 7574, 5065, 10384, 10385, 5187, 1128, 2131, 4901, 7422, 13735, 6462, 5479, 5155, 7122, 7118, 2]
 
 // Module 14243 (FractionalNitroCollectedActionSheet)
 import react2 from "react" /* 576 */;
@@ -221,7 +221,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalNi
             }
             if (cResult[16] !== tmp4.questionIcon) {
               const obj5 = { style: tmp4.questionIcon, color: nativeDefault.colors.WHITE };
-              const CircleQuestionIcon = tmp(13740).CircleQuestionIcon;
+              const CircleQuestionIcon = tmp(13735).CircleQuestionIcon;
               const tmp33 = React4(CircleQuestionIcon, obj5);
               cResult[16] = tmp4.questionIcon;
               cResult[17] = tmp33;
@@ -521,7 +521,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalNi
   const obj5 = { style: tmp.questionIconContainer, onPress: callback, children: tmp15(CircleQuestionIcon, obj6) };
   const PressableOpacity = tmp5(6462).PressableOpacity;
   obj6 = { style: tmp.questionIcon, color: tmp2(587).colors.WHITE };
-  CircleQuestionIcon = tmp5(13740).CircleQuestionIcon;
+  CircleQuestionIcon = tmp5(13735).CircleQuestionIcon;
   items2[1] = tmp15(PressableOpacity, obj5);
   const items3 = [tmp10(tmp11, obj4), , ];
   const obj7 = { style: tmp.body, children: tmp10Result };

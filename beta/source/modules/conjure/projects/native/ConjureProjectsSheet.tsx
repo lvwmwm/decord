@@ -1,9 +1,9 @@
-// Module ID: 13930
-// Function ID: 13931
+// Module ID: 13925
+// Function ID: 13926
 // Name: ConjureProjectsSheet
-// Dependencies: [19, 17, 5034, 6293, 7198, 21, 5191, 587, 5155, 5073, 13295, 558, 576, 12297, 11682, 6457, 6542, 6436, 504, 5187, 1128, 3883, 5477, 5479, 10999, 1633, 5496, 7117, 7175, 6584, 2]
+// Dependencies: [19, 17, 5034, 6293, 7198, 21, 5191, 587, 5155, 5073, 13290, 558, 576, 12292, 11682, 6457, 6542, 6436, 504, 5187, 1128, 3883, 5477, 5479, 10999, 1633, 5496, 7117, 7175, 6584, 2]
 
-// Module 13930 (ConjureProjectsSheet)
+// Module 13925 (ConjureProjectsSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -17,7 +17,7 @@ import TableRowGroup2 from "TableRowGroup" /* 6542 */;
 import BottomSheetModal from "BottomSheetModal" /* 6584 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7117 */;
 import ActionSheet2 from "ActionSheet" /* 7175 */;
-import openConjureProject from "openConjureProject" /* 13295 */;
+import openConjureProject from "openConjureProject" /* 13290 */;
 import react from "react" /* 19 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6293 */;
@@ -57,7 +57,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
     fallbackGuildId = entry.fallbackGuildId;
   }
   if (cResult[0] !== entry) {
-    const tmpResult = tmp(12297);
+    const tmpResult = tmp(12292);
     const result = tmpResult.describeConjureProjectRow(entry);
     let num = 0;
     cResult[0] = entry;
@@ -167,7 +167,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
   if (fallbackGuildId == null) {
     fallbackGuildId = entry.fallbackGuildId;
   }
-  let obj = entry(12297);
+  let obj = entry(12292);
   const result = obj.describeConjureProjectRow(entry);
   ({ serverName, label } = result);
   let obj2 = {
@@ -456,9 +456,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
   let obj = stateFromStores1(576);
   const cResult = obj.c(46);
   const tmp4 = closure_9(0);
-  const obj2 = stateFromStores1(12297);
+  const obj2 = stateFromStores1(12292);
   const conjureProjects = obj2.useConjureProjects(ConjureProjectsSheet_str);
-  const obj3 = stateFromStores1(12297);
+  const obj3 = stateFromStores1(12292);
   const conjureEligibleGuilds = obj3.useConjureEligibleGuilds(ConjureProjectsSheet_str);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ConjureProjectStore];

@@ -1,13 +1,13 @@
 // Module ID: 17233
 // Function ID: 17234
 // Name: RedesignChannelList
-// Dependencies: [109, 32, 19, 17, 5181, 7515, 17147, 2090, 2119, 5215, 1087, 21, 558, 576, 1508, 5072, 10952, 17234, 17235, 17262, 17307, 17308, 16141, 17152, 17309, 17263, 17311, 7524, 504, 6361, 17312, 17316, 7517, 17317, 11911, 17132, 16142, 17370, 17382, 17385, 17387, 12822, 7124, 17231, 17389, 17145, 17390, 17396, 17400, 17413, 2093, 17418, 9760, 17426, 12642, 2]
+// Dependencies: [109, 32, 19, 17, 5181, 7515, 17147, 2090, 2119, 5215, 1087, 21, 558, 576, 1508, 5072, 10952, 17234, 17235, 17262, 17307, 17308, 16141, 17152, 17309, 17263, 17311, 7524, 504, 6361, 17312, 17316, 7517, 17317, 11906, 17132, 16142, 17370, 17382, 17385, 17387, 12817, 7124, 17231, 17389, 17145, 17390, 17396, 17400, 17413, 2093, 17418, 9760, 17426, 12637, 2]
 
 // Module 17233 (RedesignChannelList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import ChannelListState from "ChannelListState" /* 7517 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11911 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11906 */;
 import useHomeDrawerGesture from "useHomeDrawerGesture" /* 17152 */;
 import RedesignGuildHeaderDefault from "RedesignGuildHeader" /* 17263 */;
 import registerSidebarVisibilityMethods from "registerSidebarVisibilityMethods" /* 17308 */;
@@ -40,7 +40,7 @@ let closure_17;
 let closure_18;
 let closure_19;
 let tmp;
-const TTIFirstContentfulPaint = tmp(12642);
+const TTIFirstContentfulPaint = tmp(12637);
 const GuildsRenderExperiment2 = tmp(17145);
 let closure_3 = ["shouldRender"];
 let closure_4 = ["selectedGuildId", "selectedChannelId"];

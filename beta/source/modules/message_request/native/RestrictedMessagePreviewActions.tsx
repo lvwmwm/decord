@@ -1,7 +1,7 @@
 // Module ID: 18047
 // Function ID: 18048
 // Name: RestrictedMessagePreviewActions
-// Dependencies: [19, 17, 4855, 1087, 10739, 21, 5191, 587, 13285, 504, 7293, 10533, 13312, 5057, 5155, 10740, 2002, 7988, 7290, 5479, 1128, 5187, 2]
+// Dependencies: [19, 17, 4855, 1087, 10739, 21, 5191, 587, 13280, 504, 7293, 10533, 13307, 5057, 5155, 10740, 2002, 7988, 7290, 5479, 1128, 5187, 2]
 // Exports: default
 
 // Module 18047 (RestrictedMessagePreviewActions)
@@ -14,7 +14,7 @@ import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 72
 import ReportModals from "ReportModals" /* 7988 */;
 import PeopleUtilsDefault from "PeopleUtils" /* 10533 */;
 import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 10739 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13312 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13307 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
 import Constants from "Constants" /* 1087 */;

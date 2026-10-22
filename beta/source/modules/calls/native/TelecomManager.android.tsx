@@ -1,7 +1,7 @@
 // Module ID: 18654
 // Function ID: 18655
 // Name: TelecomManager
-// Dependencies: [5, 17, 11373, 6153, 502, 6014, 2068, 2014, 13512, 5209, 4855, 5058, 1392, 1087, 5216, 3, 15568, 7085, 18655, 6145, 7292, 7748, 5343, 11435, 11440, 1630, 5521, 11372, 2]
+// Dependencies: [5, 17, 11373, 6153, 502, 6014, 2068, 2014, 13507, 5209, 4855, 5058, 1392, 1087, 5216, 3, 15568, 7085, 18655, 6145, 7292, 7748, 5343, 11435, 11440, 1630, 5521, 11372, 2]
 
 // Module 18654 (TelecomManager)
 import LoggerDefault from "Logger" /* 3 */;
@@ -24,7 +24,7 @@ import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import CallStore from "CallStore" /* 6014 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 13512 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 13507 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
 import StreamerModeStore from "StreamerModeStore" /* 5058 */;

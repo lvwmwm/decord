@@ -1,17 +1,17 @@
-// Module ID: 12906
-// Function ID: 12907
+// Module ID: 12901
+// Function ID: 12902
 // Name: ChatInputActionButtonGiftOrThread
-// Dependencies: [19, 17, 12339, 21, 5191, 12338, 12335, 1128, 12898, 12907, 558, 576, 4913, 587, 4922, 2]
+// Dependencies: [19, 17, 12334, 21, 5191, 12333, 12330, 1128, 12893, 12902, 558, 576, 4913, 587, 4922, 2]
 
-// Module 12906 (ChatInputActionButtonGiftOrThread)
+// Module 12901 (ChatInputActionButtonGiftOrThread)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 4913 */;
-import ChatInputActionButtonDefault from "ChatInputActionButton" /* 12335 */;
-import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 12338 */;
-import ChatInputConstants from "ChatInputConstants" /* 12339 */;
+import ChatInputActionButtonDefault from "ChatInputActionButton" /* 12330 */;
+import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 12333 */;
+import ChatInputConstants from "ChatInputConstants" /* 12334 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -37,7 +37,7 @@ function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, clea
       accessible,
       accessibilityLabel: intl.string(onPress(1128).t["4WNcpu"]),
       disabled: !canStartThreads,
-      IconComponent: onPress(12898).ThreadPlusIcon,
+      IconComponent: onPress(12893).ThreadPlusIcon,
       onPress(arg0) {
           return onPress(arg0, ChatInputActionType.THREAD);
         },
@@ -48,7 +48,7 @@ function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, clea
     tmpResult = tmp(tmp2Result, obj2);
   } else {
     const obj3 = { accessible, channel, onPress, style: styleButtonWrapper, styleButton };
-    tmpResult = tmp(tmp2(12907), obj3);
+    tmpResult = tmp(tmp2(12902), obj3);
   }
   return <tmp4 key={arg0} cleanup={arg3} state={arg2}>{tmpResult}</tmp4>;
 }

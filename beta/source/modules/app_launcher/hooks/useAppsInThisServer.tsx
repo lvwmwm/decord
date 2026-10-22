@@ -1,9 +1,9 @@
-// Module ID: 11952
-// Function ID: 11953
+// Module ID: 11947
+// Function ID: 11948
 // Name: useAppsInThisServer
-// Dependencies: [19, 9549, 1392, 5503, 558, 576, 504, 2000, 10107, 9557, 11951, 10109, 12, 2]
+// Dependencies: [19, 9549, 1392, 5503, 558, 576, 504, 2000, 10107, 9557, 11946, 10109, 12, 2]
 
-// Module 11952 (useAppsInThisServer)
+// Module 11947 (useAppsInThisServer)
 import _modDef12 from "module_12" /* 12 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5503 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9549 */;
@@ -177,7 +177,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppsInThi
         }
       }
     }
-    const tmpResult2 = tmp(11951);
+    const tmpResult2 = tmp(11946);
     const sortApplicationsViaFrecency = tmpResult2.useSortApplicationsViaFrecency(tmp24);
     if (cResult[14] === stateFromStores) {
       class I {
