@@ -1259,6 +1259,96 @@
             }
         ]
     },
+    "BADGE_INVERTED_BACKGROUND": {
+        "ash": [
+            "#ffffff",
+            {
+                "raw": "NEUTRAL_1",
+                "opacity": 1
+            }
+        ],
+        "light": [
+            "#000000",
+            {
+                "raw": "NEUTRAL_100",
+                "opacity": 1
+            }
+        ],
+        "onyx": [
+            "#ffffff",
+            {
+                "raw": "NEUTRAL_1",
+                "opacity": 1
+            }
+        ],
+        "dark": [
+            "#ffffff",
+            {
+                "raw": "NEUTRAL_1",
+                "opacity": 1
+            }
+        ]
+    },
+    "BADGE_INVERTED_BORDER": {
+        "ash": [
+            "#ffffff",
+            {
+                "raw": "NEUTRAL_1",
+                "opacity": 1
+            }
+        ],
+        "light": [
+            "#000000",
+            {
+                "raw": "NEUTRAL_100",
+                "opacity": 1
+            }
+        ],
+        "onyx": [
+            "#ffffff",
+            {
+                "raw": "NEUTRAL_1",
+                "opacity": 1
+            }
+        ],
+        "dark": [
+            "#ffffff",
+            {
+                "raw": "NEUTRAL_1",
+                "opacity": 1
+            }
+        ]
+    },
+    "BADGE_INVERTED_TEXT": {
+        "ash": [
+            "#000000",
+            {
+                "raw": "NEUTRAL_100",
+                "opacity": 1
+            }
+        ],
+        "light": [
+            "#ffffff",
+            {
+                "raw": "NEUTRAL_1",
+                "opacity": 1
+            }
+        ],
+        "onyx": [
+            "#000000",
+            {
+                "raw": "NEUTRAL_100",
+                "opacity": 1
+            }
+        ],
+        "dark": [
+            "#000000",
+            {
+                "raw": "NEUTRAL_100",
+                "opacity": 1
+            }
+        ]
+    },
     "BADGE_MYTHIC_BACKGROUND": {
         "ash": [
             "#fe6e0d3d",
@@ -1410,6 +1500,126 @@
         ]
     },
     "BADGE_NOTIFICATION_TEXT": {
+        "ash": [
+            "#ffffff",
+            {
+                "raw": "NEUTRAL_1",
+                "opacity": 1
+            }
+        ],
+        "light": [
+            "#ffffff",
+            {
+                "raw": "NEUTRAL_1",
+                "opacity": 1
+            }
+        ],
+        "onyx": [
+            "#ffffff",
+            {
+                "raw": "NEUTRAL_1",
+                "opacity": 1
+            }
+        ],
+        "dark": [
+            "#ffffff",
+            {
+                "raw": "NEUTRAL_1",
+                "opacity": 1
+            }
+        ]
+    },
+    "BADGE_PREMIUM_BACKGROUND_GRADIENT_END": {
+        "ash": [
+            "#ab5d8a",
+            {
+                "raw": "PREMIUM_TIER_2_PINK_FOR_GRADIENTS",
+                "opacity": 1
+            }
+        ],
+        "light": [
+            "#ab5d8a",
+            {
+                "raw": "PREMIUM_TIER_2_PINK_FOR_GRADIENTS",
+                "opacity": 1
+            }
+        ],
+        "onyx": [
+            "#ab5d8a",
+            {
+                "raw": "PREMIUM_TIER_2_PINK_FOR_GRADIENTS",
+                "opacity": 1
+            }
+        ],
+        "dark": [
+            "#ab5d8a",
+            {
+                "raw": "PREMIUM_TIER_2_PINK_FOR_GRADIENTS",
+                "opacity": 1
+            }
+        ]
+    },
+    "BADGE_PREMIUM_BACKGROUND_GRADIENT_MID": {
+        "ash": [
+            "#b845c1",
+            {
+                "raw": "PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS_2",
+                "opacity": 1
+            }
+        ],
+        "light": [
+            "#b845c1",
+            {
+                "raw": "PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS_2",
+                "opacity": 1
+            }
+        ],
+        "onyx": [
+            "#b845c1",
+            {
+                "raw": "PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS_2",
+                "opacity": 1
+            }
+        ],
+        "dark": [
+            "#b845c1",
+            {
+                "raw": "PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS_2",
+                "opacity": 1
+            }
+        ]
+    },
+    "BADGE_PREMIUM_BACKGROUND_GRADIENT_START": {
+        "ash": [
+            "#8547c6",
+            {
+                "raw": "PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS",
+                "opacity": 1
+            }
+        ],
+        "light": [
+            "#8547c6",
+            {
+                "raw": "PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS",
+                "opacity": 1
+            }
+        ],
+        "onyx": [
+            "#8547c6",
+            {
+                "raw": "PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS",
+                "opacity": 1
+            }
+        ],
+        "dark": [
+            "#8547c6",
+            {
+                "raw": "PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS",
+                "opacity": 1
+            }
+        ]
+    },
+    "BADGE_PREMIUM_TEXT": {
         "ash": [
             "#ffffff",
             {

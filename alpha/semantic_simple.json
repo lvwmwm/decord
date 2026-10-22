@@ -251,6 +251,24 @@
         "onyx": "#2f3035",
         "dark": "#2f3035"
     },
+    "BADGE_INVERTED_BACKGROUND": {
+        "ash": "#ffffff",
+        "light": "#000000",
+        "onyx": "#ffffff",
+        "dark": "#ffffff"
+    },
+    "BADGE_INVERTED_BORDER": {
+        "ash": "#ffffff",
+        "light": "#000000",
+        "onyx": "#ffffff",
+        "dark": "#ffffff"
+    },
+    "BADGE_INVERTED_TEXT": {
+        "ash": "#000000",
+        "light": "#ffffff",
+        "onyx": "#000000",
+        "dark": "#000000"
+    },
     "BADGE_MYTHIC_BACKGROUND": {
         "ash": "#fe6e0d3d",
         "light": "#fe6e0d3d",
@@ -282,6 +300,30 @@
         "dark": "#ffffff14"
     },
     "BADGE_NOTIFICATION_TEXT": {
+        "ash": "#ffffff",
+        "light": "#ffffff",
+        "onyx": "#ffffff",
+        "dark": "#ffffff"
+    },
+    "BADGE_PREMIUM_BACKGROUND_GRADIENT_END": {
+        "ash": "#ab5d8a",
+        "light": "#ab5d8a",
+        "onyx": "#ab5d8a",
+        "dark": "#ab5d8a"
+    },
+    "BADGE_PREMIUM_BACKGROUND_GRADIENT_MID": {
+        "ash": "#b845c1",
+        "light": "#b845c1",
+        "onyx": "#b845c1",
+        "dark": "#b845c1"
+    },
+    "BADGE_PREMIUM_BACKGROUND_GRADIENT_START": {
+        "ash": "#8547c6",
+        "light": "#8547c6",
+        "onyx": "#8547c6",
+        "dark": "#8547c6"
+    },
+    "BADGE_PREMIUM_TEXT": {
         "ash": "#ffffff",
         "light": "#ffffff",
         "onyx": "#ffffff",
