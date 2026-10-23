@@ -1,22 +1,22 @@
-// Module ID: 15695
-// Function ID: 15696
+// Module ID: 15716
+// Function ID: 15717
 // Name: ActivityShareLinkModal
-// Dependencies: [5, 32, 19, 17, 4821, 1392, 4820, 10593, 4974, 21, 4969, 587, 558, 576, 504, 12844, 12076, 15694, 7242, 1388, 15696, 7551, 7740, 5649, 1128, 7270, 5648, 7470, 5664, 1499, 1384, 12854, 10602, 12855, 12876, 2]
+// Dependencies: [5, 32, 19, 17, 4821, 1392, 4820, 10615, 4974, 21, 4969, 587, 558, 576, 504, 12863, 12095, 15715, 7255, 1388, 15717, 7564, 7753, 5661, 1128, 7283, 5660, 7483, 5676, 1499, 1384, 12873, 10624, 12874, 12895, 2]
 
-// Module 15695 (ActivityShareLinkModal)
+// Module 15716 (ActivityShareLinkModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import MessageConstants from "MessageConstants" /* 4974 */;
-import ToastUtils from "ToastUtils" /* 5648 */;
-import LinkIcon from "LinkIcon" /* 5664 */;
-import ClipboardUtils from "ClipboardUtils" /* 7270 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7470 */;
-import UserRowConstants from "UserRowConstants" /* 10593 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 12076 */;
-import formatResults from "formatResults" /* 12844 */;
-import openActivityShareLinkModal from "openActivityShareLinkModal" /* 15694 */;
+import ToastUtils from "ToastUtils" /* 5660 */;
+import LinkIcon from "LinkIcon" /* 5676 */;
+import ClipboardUtils from "ClipboardUtils" /* 7283 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7483 */;
+import UserRowConstants from "UserRowConstants" /* 10615 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 12095 */;
+import formatResults from "formatResults" /* 12863 */;
+import openActivityShareLinkModal from "openActivityShareLinkModal" /* 15715 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

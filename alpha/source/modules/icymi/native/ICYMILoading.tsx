@@ -1,17 +1,17 @@
-// Module ID: 17878
-// Function ID: 17879
+// Module ID: 17922
+// Function ID: 17923
 // Name: ICYMILoading
-// Dependencies: [19, 17, 21, 17819, 587, 558, 576, 13500, 5038, 17858, 2]
+// Dependencies: [19, 17, 21, 17863, 587, 558, 576, 13523, 5050, 17902, 2]
 
-// Module 17878 (ICYMILoading)
+// Module 17922 (ICYMILoading)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5038 */;
-import useChatPlaceholderAnimatedStylesDefault from "useChatPlaceholderAnimatedStyles" /* 13500 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5050 */;
+import useChatPlaceholderAnimatedStylesDefault from "useChatPlaceholderAnimatedStyles" /* 13523 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 17819 */;
+import createICYMIStyles from "createICYMIStyles" /* 17863 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const ICYMIShared = tmp(17858);
+const ICYMIShared = tmp(17902);
 let View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: metroImportDefault } = Fragment);
 let closure_8 = createICYMIStyles.createICYMIStyles((marginBottom) => {

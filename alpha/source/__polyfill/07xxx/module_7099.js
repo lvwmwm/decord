@@ -1,19 +1,22 @@
 // Module ID: 7099
 // Function ID: 7100
-// Dependencies: [7100]
-// Exports: getDistanceForDirection
+// Dependencies: [19, 21, 7100, 5295]
+// Exports: PanGestureHandler
 
 // Module 7099
-import _mod7100 from "module_7100" /* 7100 */;
+import Fragment from "Fragment" /* 21 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5295 */;
+import react2 from "react" /* 7100 */;
+import react from "react" /* 19 */;
 
+const jsx = Fragment.jsx;
 
-export const getDistanceForDirection = function getDistanceForDirection(layout, gestureDirection, arg2) {
-  const obj = _mod7100;
-  const invertedMultiplier = obj.getInvertedMultiplier(gestureDirection, arg2);
-  if ("vertical" !== gestureDirection) {
-    if ("vertical-inverted" !== gestureDirection) {
-      return layout.width * invertedMultiplier;
-    }
-  }
-  return layout.height * invertedMultiplier;
+export const PanGestureHandler = function PanGestureHandler(arg0) {
+  const ref = react.useRef(null);
+  const Provider = react2.GestureHandlerRefContext.Provider;
+  LegacyBaseButton.PanGestureHandler;
+  const merged = Object.assign(arg0);
+  return <Provider value={ref}>{null}</Provider>;
 };
+export const GestureHandlerRootView = LegacyBaseButton.GestureHandlerRootView;
+export const GestureState = LegacyBaseButton.State;

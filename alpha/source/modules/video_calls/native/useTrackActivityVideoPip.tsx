@@ -1,13 +1,13 @@
-// Module ID: 11468
-// Function ID: 11469
+// Module ID: 11488
+// Function ID: 11489
 // Name: useTrackActivityVideoPip
-// Dependencies: [19, 11327, 1087, 558, 576, 573, 6645, 11411, 1267, 2]
+// Dependencies: [19, 11350, 1087, 558, 576, 573, 6658, 11431, 1267, 2]
 
-// Module 11468 (useTrackActivityVideoPip)
+// Module 11488 (useTrackActivityVideoPip)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import react_mod from "react" /* 19 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11327 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11350 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,9 +42,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackActi
   }
   const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  const tmp8 = stateFromStores(6645)(stateFromStores);
+  const tmp8 = stateFromStores(6658)(stateFromStores);
   dependencyMap = tmp8;
-  const tmp9 = stateFromStores(11411)();
+  const tmp9 = stateFromStores(11431)();
   react = tmp9;
   if (cResult[2] === arg0) {
     if (cResult[3] === tmp9) {
@@ -92,9 +92,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackActi
   let obj = require("useStateFromStores");
   const items = [ChannelCallLifecycleStore];
   const stateFromStores = obj.useStateFromStores(items, () => pipEnabledWhileFocusedOnActivityOrStream.isPipEnabledWhileFocusedOnActivityOrStream());
-  const tmp2 = stateFromStores(6645)(stateFromStores);
+  const tmp2 = stateFromStores(6658)(stateFromStores);
   dependencyMap = tmp2;
-  const tmp3 = stateFromStores(11411)();
+  const tmp3 = stateFromStores(11431)();
   react = tmp3;
   const items1 = [stateFromStores, tmp2, arg0, tmp3];
   const effect = react.useEffect(() => {

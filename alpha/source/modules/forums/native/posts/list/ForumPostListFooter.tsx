@@ -1,18 +1,18 @@
-// Module ID: 13058
-// Function ID: 13059
+// Module ID: 13081
+// Function ID: 13082
 // Name: ForumPostListFooter
-// Dependencies: [19, 17, 1087, 21, 4969, 587, 558, 576, 13000, 7364, 13051, 13059, 13052, 10967, 2]
+// Dependencies: [19, 17, 1087, 21, 4969, 587, 558, 576, 13023, 7377, 13074, 13082, 13075, 10990, 2]
 
-// Module 13058 (ForumPostListFooter)
+// Module 13081 (ForumPostListFooter)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7364 */;
-import useTypingUsersIds from "useTypingUsersIds" /* 13000 */;
-import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 13051 */;
-import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 13052 */;
-import GameInviteVoiceCountDefault from "GameInviteVoiceCount" /* 13059 */;
+import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7377 */;
+import useTypingUsersIds from "useTypingUsersIds" /* 13023 */;
+import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 13074 */;
+import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 13075 */;
+import GameInviteVoiceCountDefault from "GameInviteVoiceCount" /* 13082 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -24,7 +24,7 @@ let metroImportDefault;
 let metroRequire;
 let size;
 let tmp;
-const ForumPostReactions = tmp(10967);
+const ForumPostReactions = tmp(10990);
 const View = react_native.View;
 const AnalyticsObjects = Constants.AnalyticsObjects;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -159,7 +159,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLis
   items = [hasOwnProperty(ForumPostMessageCountDefault, { thread, hasUnreads }), , , ];
   if (isGameInvitesPost) {
     const obj4 = { channel: thread };
-    isGameInvitesPost = tmp8(tmp9(13059), obj4);
+    isGameInvitesPost = tmp8(tmp9(13082), obj4);
   }
   items[1] = isGameInvitesPost;
   if (tmp6Result) {

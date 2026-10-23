@@ -1,11 +1,11 @@
-// Module ID: 5890
-// Function ID: 5891
+// Module ID: 5902
+// Function ID: 5903
 // Name: ThermalUtils
-// Dependencies: [17, 5891, 1384, 4926, 570, 1274, 2]
+// Dependencies: [17, 5903, 1384, 4926, 570, 1274, 2]
 
-// Module 5890 (ThermalUtils)
+// Module 5902 (ThermalUtils)
 import react_native from "react-native" /* 17 */;
-import react_nativeDefault from "react-native" /* 5891 */;
+import react_nativeDefault from "react-native" /* 5903 */;
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 

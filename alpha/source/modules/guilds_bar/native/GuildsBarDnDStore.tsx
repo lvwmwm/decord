@@ -1,13 +1,13 @@
-// Module ID: 17653
-// Function ID: 17654
+// Module ID: 17697
+// Function ID: 17698
 // Name: GuildsBarDnDStore
-// Dependencies: [6686, 1269, 5038, 1274, 1257, 558, 576, 4884, 2]
+// Dependencies: [6699, 1269, 5050, 1274, 1257, 558, 576, 4884, 2]
 
-// Module 17653 (GuildsBarDnDStore)
+// Module 17697 (GuildsBarDnDStore)
 import react from "react" /* 576 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import react_native from "react-native" /* 1274 */;
-import SortedGuildStore from "SortedGuildStore" /* 6686 */;
+import SortedGuildStore from "SortedGuildStore" /* 6699 */;
 import module_1269 from "module_1269" /* 1269 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -79,7 +79,7 @@ const withEqualityFn = module_1269.createWithEqualityFn((arg0, arg1) => {
       } else {
         const obj4 = dropSpecs(tmp2[3]);
         obj4.batchUpdates(() => {
-          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "toCharArray$esjava$1" };
+          const obj = { dropSpecs, dragSpecs: "end", overSpecs: "toCharArray$esjava$1" };
           return dropSpecs(obj);
         });
         const _clearTimeout = clearTimeout;

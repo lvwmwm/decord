@@ -1,23 +1,23 @@
-// Module ID: 12481
-// Function ID: 12482
+// Module ID: 12500
+// Function ID: 12501
 // Name: ConjureDebugScene
-// Dependencies: [32, 19, 17, 10675, 10681, 21, 4969, 587, 1128, 3830, 558, 576, 1505, 1633, 12237, 8876, 504, 10710, 11825, 12482, 7270, 12491, 5649, 5668, 11811, 9122, 12492, 12498, 12500, 2]
+// Dependencies: [32, 19, 17, 10697, 10703, 21, 4969, 587, 1128, 3830, 558, 576, 1505, 1633, 12256, 8899, 504, 10732, 11844, 12501, 7283, 12510, 5661, 5680, 11830, 9145, 12511, 12517, 12519, 2]
 
-// Module 12481 (ConjureDebugScene)
+// Module 12500 (ConjureDebugScene)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5649 */;
-import CopyIcon from "CopyIcon" /* 5668 */;
-import ClipboardUtils from "ClipboardUtils" /* 7270 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10675 */;
-import conjureDebugConnection from "conjureDebugConnection" /* 10710 */;
-import conjureTraceRequests2 from "conjureTraceRequests" /* 11825 */;
-import ConjureDebugSnapshot from "ConjureDebugSnapshot" /* 12491 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5661 */;
+import CopyIcon from "CopyIcon" /* 5680 */;
+import ClipboardUtils from "ClipboardUtils" /* 7283 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10697 */;
+import conjureDebugConnection from "conjureDebugConnection" /* 10732 */;
+import conjureTraceRequests2 from "conjureTraceRequests" /* 11844 */;
+import ConjureDebugSnapshot from "ConjureDebugSnapshot" /* 12510 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConjureDebugStore from "ConjureDebugStore" /* 10681 */;
+import ConjureDebugStore from "ConjureDebugStore" /* 10703 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -265,7 +265,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDeb
         const tmp4 = projectId;
         if (null != result) {
           setActiveIndex(arr.indexOf("trace"), false);
-          const tmp2Result = tmp2(12482);
+          const tmp2Result = tmp2(12501);
           tmp2Result.openPerfTrace(tmp4, result);
         }
       }
@@ -360,7 +360,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDeb
       const tmp4 = projectId;
       if (null != result) {
         setActiveIndex(memo.indexOf("trace"), false);
-        const tmp2Result = tmp2(12482);
+        const tmp2Result = tmp2(12501);
         tmp2Result.openPerfTrace(tmp4, result);
       }
     }

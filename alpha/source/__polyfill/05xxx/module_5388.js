@@ -1,16 +1,22 @@
 // Module ID: 5388
 // Function ID: 5389
-// Dependencies: [5389, 5364]
+// Dependencies: [5363, 5378, 5354]
+// Exports: useManualGesture
 
 // Module 5388
-import _mod5364 from "module_5364" /* 5364 */;
-import _mod5389 from "module_5389" /* 5389 */;
+import ComposedGestureName from "ComposedGestureName" /* 5354 */;
+import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 5363 */;
+import _mod5378 from "module_5378" /* 5378 */;
 
-for (const key10013 in _mod5389) {
-  exports[key10013] = _mod5389[key10013];
-  continue;
-}
-for (const key10017 in _mod5364) {
-  exports[key10017] = _mod5364[key10017];
-  continue;
-}
+let closure_2 = {};
+
+export const useManualGesture = function useManualGesture(cResult) {
+  let tmp = cResult;
+  if (cResult === undefined) {
+    tmp = closure_2;
+  }
+  const obj = maybeExtractNativeEvent;
+  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp);
+  const obj2 = _mod5378;
+  return obj2.useGesture(ComposedGestureName.SingleGestureName.Manual, clonedAndRemappedConfig);
+};

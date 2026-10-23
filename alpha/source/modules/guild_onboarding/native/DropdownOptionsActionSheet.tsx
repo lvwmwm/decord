@@ -1,18 +1,18 @@
-// Module ID: 7217
-// Function ID: 7218
+// Module ID: 7230
+// Function ID: 7231
 // Name: DropdownOptionsActionSheet
-// Dependencies: [19, 17, 6710, 7180, 1395, 21, 4969, 558, 576, 573, 7212, 1417, 7218, 5220, 7220, 1633, 5196, 7233, 1128, 1202, 5230, 5251, 5255, 2]
+// Dependencies: [19, 17, 6723, 7193, 1395, 21, 4969, 558, 576, 573, 7225, 1417, 7231, 5232, 7233, 1633, 5208, 7246, 1128, 1202, 5242, 5263, 5267, 2]
 
-// Module 7217 (DropdownOptionsActionSheet)
+// Module 7230 (DropdownOptionsActionSheet)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import intl4 from "intl" /* 1128 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6710 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7180 */;
+import EmojiStore from "EmojiStore" /* 6723 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7193 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -131,7 +131,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Dropdo
                   }
                   if (cResult[19] !== option.title) {
                     const obj2 = { variant: "text-md/normal", children: option.title };
-                    const tmp36 = closure_8(tmp(5220).Text, obj2);
+                    const tmp36 = closure_8(tmp(5232).Text, obj2);
                     cResult[19] = option.title;
                     cResult[20] = tmp36;
                     tmp34 = tmp36;
@@ -158,7 +158,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Dropdo
                         }
                       }
                       const obj3 = { label: tmp37, selected: tmp12, leading: tmp19, trailing: tmp31, onPress: tmp14 };
-                      const tmp44 = closure_8(onSelect(7220), obj3);
+                      const tmp44 = closure_8(onSelect(7233), obj3);
                       cResult[25] = tmp19;
                       cResult[26] = tmp14;
                       cResult[27] = tmp37;
@@ -181,7 +181,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Dropdo
                 if (canBeNew) {
                   tmp32 = null;
                   if (option.isUnseen) {
-                    tmp32 = closure_8(tmp(7218).Badge, { type: "new", variant: "primary" });
+                    tmp32 = closure_8(tmp(7231).Badge, { type: "new", variant: "primary" });
                   }
                 }
                 cResult[16] = canBeNew;
@@ -204,7 +204,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Dropdo
           emojiURL = undefined;
           const tmp24 = View;
           const tmp25 = onSelect;
-          tmp26 = onSelect(7212);
+          tmp26 = onSelect(7225);
           if (null != stateFromStores) {
             const obj9 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
             ({ id: obj6.id, animated: obj6.animated } = stateFromStores);
@@ -596,14 +596,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DropdownOp
     return null;
   } else {
     const obj3 = { title: intl.string(intl4.t.E2ICbC) };
-    const BottomSheetTitleHeader = tmp3(7233).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp3(7246).BottomSheetTitleHeader;
     intl = tmp3(1128).intl;
     const obj4 = { scrollable: true, header: closure_8(BottomSheetTitleHeader, obj3), children: closure_9(BottomSheetScrollView, obj5) };
     closure_8(BottomSheetTitleHeader, obj3);
-    BottomSheet = tmp3(5251).BottomSheet;
+    BottomSheet = tmp3(5263).BottomSheet;
     obj5 = { contentContainerStyle: obj6, children: items2 };
     obj6 = { paddingBottom: bottom };
-    BottomSheetScrollView = tmp3(5255).BottomSheetScrollView;
+    BottomSheetScrollView = tmp3(5267).BottomSheetScrollView;
     const obj7 = {
       accessibilityRole: "radiogroup",
       accessibilityLabel: intl2.string(intl4.t.E2ICbC),
@@ -618,7 +618,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DropdownOp
     items2 = [closure_8(CardSection, obj7), ];
     const obj8 = { style: tmp.closeButtonWrapper, children: closure_8(Button, obj9) };
     obj9 = { onPress: tmp5, text: intl3.string(intl4.t.cpT0Cq), grow: true };
-    Button = tmp3(5230).Button;
+    Button = tmp3(5242).Button;
     intl3 = tmp3(1128).intl;
     items2[1] = closure_8(responses, obj8);
     return closure_8(BottomSheet, obj4);

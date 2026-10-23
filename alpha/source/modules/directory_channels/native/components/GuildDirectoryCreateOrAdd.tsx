@@ -1,24 +1,24 @@
-// Module ID: 13131
-// Function ID: 13132
+// Module ID: 13154
+// Function ID: 13155
 // Name: GuildDirectoryCreateOrAdd
-// Dependencies: [32, 19, 17, 13132, 13130, 21, 4969, 587, 558, 576, 504, 6868, 13133, 6888, 1128, 8876, 5220, 9122, 1633, 5230, 1505, 6870, 13138, 7205, 13129, 2]
+// Dependencies: [32, 19, 17, 13155, 13153, 21, 4969, 587, 558, 576, 504, 6881, 13156, 6901, 1128, 8899, 5232, 9145, 1633, 5242, 1505, 6883, 13161, 7218, 13152, 2]
 
-// Module 13131 (GuildDirectoryCreateOrAdd)
+// Module 13154 (GuildDirectoryCreateOrAdd)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import components_Button_Button from "components/Button/Button" /* 5230 */;
-import GuildIconDefault from "GuildIcon" /* 6868 */;
-import TableRow2 from "TableRow" /* 6888 */;
-import SegmentedControlState from "SegmentedControlState" /* 8876 */;
-import SegmentedControl from "SegmentedControl" /* 9122 */;
-import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 13130 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import components_Button_Button from "components/Button/Button" /* 5242 */;
+import GuildIconDefault from "GuildIcon" /* 6881 */;
+import TableRow2 from "TableRow" /* 6901 */;
+import SegmentedControlState from "SegmentedControlState" /* 8899 */;
+import SegmentedControl from "SegmentedControl" /* 9145 */;
+import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 13153 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 13132 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 13155 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -79,7 +79,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
       }
       if (cResult[7] !== stateFromStores) {
         const obj2 = { entry: stateFromStores };
-        const tmp16 = closure_9(directoryChannelId(13133), obj2);
+        const tmp16 = closure_9(directoryChannelId(13156), obj2);
         cResult[7] = stateFromStores;
         cResult[8] = tmp16;
         tmp13 = tmp16;
@@ -100,7 +100,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
         }
       }
       const obj3 = { label: guild.name, icon: tmp9, trailing: tmp13, start, end };
-      const tmp19 = closure_9(guild(6888).TableRow, obj3);
+      const tmp19 = closure_9(guild(6901).TableRow, obj3);
       cResult[9] = end;
       cResult[10] = guild.name;
       cResult[11] = start;
@@ -110,7 +110,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
       tmp17 = tmp19;
     }
     const obj4 = { style: tmp4.guildIcon, guild };
-    const tmp12 = closure_9(directoryChannelId(6868), obj4);
+    const tmp12 = closure_9(directoryChannelId(6881), obj4);
     cResult[4] = guild;
     cResult[5] = tmp4.guildIcon;
     cResult[6] = tmp12;
@@ -134,8 +134,8 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
   const tmp = closure_11();
   const obj = guild(504);
   const stateFromStores = obj.useStateFromStores(items, () => GuildDirectoryStore.getDirectoryEntry(directoryChannelId, guild.id));
-  const obj2 = { label: guild.name, icon: closure_9(directoryChannelId(6868), obj3), trailing: closure_9(directoryChannelId(13133), { entry: stateFromStores }), start, end };
-  const TableRow = guild(6888).TableRow;
+  const obj2 = { label: guild.name, icon: closure_9(directoryChannelId(6881), obj3), trailing: closure_9(directoryChannelId(13156), { entry: stateFromStores }), start, end };
+  const TableRow = guild(6901).TableRow;
   obj3 = { style: tmp.guildIcon, guild };
   return closure_9(TableRow, obj2);
 }));

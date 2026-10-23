@@ -1,21 +1,21 @@
-// Module ID: 7264
-// Function ID: 7265
+// Module ID: 7277
+// Function ID: 7278
 // Name: GuildOnboardingCompleted
-// Dependencies: [19, 17, 4970, 4875, 4843, 1392, 7180, 21, 4969, 587, 558, 576, 1505, 504, 7209, 5023, 7265, 1417, 1900, 1388, 5253, 5038, 5192, 5655, 1128, 5220, 1202, 7266, 6868, 2049, 7291, 5230, 7206, 2]
+// Dependencies: [19, 17, 4970, 4875, 4843, 1392, 7193, 21, 4969, 587, 558, 576, 1505, 504, 7222, 5035, 7278, 1417, 1900, 1388, 5265, 5050, 5204, 5667, 1128, 5232, 1202, 7279, 6881, 2049, 7304, 5242, 7219, 2]
 
-// Module 7264 (GuildOnboardingCompleted)
+// Module 7277 (GuildOnboardingCompleted)
 import nativeDefault from "native" /* 587 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
-import timing from "timing" /* 5192 */;
-import UserProfileRolesCard from "UserProfileRolesCard" /* 7266 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5050 */;
+import timing from "timing" /* 5204 */;
+import UserProfileRolesCard from "UserProfileRolesCard" /* 7279 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
 import GuildRoleStore from "GuildRoleStore" /* 4875 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import UserStore from "UserStore" /* 1392 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7180 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7193 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -610,7 +610,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
       num = tmp6;
     }
     const obj7 = { duration: num, easing: Easing3.out(ReanimatedRexport.Easing.ease) };
-    Easing3 = tmp(5038).Easing;
+    Easing3 = tmp(5050).Easing;
     const obj8 = { opacity: withSequenceResult, transform: items };
     const obj9 = { rotate: withSequence3(withTimingResult2, withDelay3Result, tmpResult8.withTiming("-5deg", { duration })) };
     const withSequence2Result = withSequence2(withTimingResult1, withDelay2Result, withTiming3(1, obj7));

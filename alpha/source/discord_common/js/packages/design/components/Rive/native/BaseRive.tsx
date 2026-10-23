@@ -1,15 +1,15 @@
-// Module ID: 5032
-// Function ID: 5033
+// Module ID: 5044
+// Function ID: 5045
 // Name: BaseRive
-// Dependencies: [19, 17, 21, 5033, 4983, 5082, 5083, 5084, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5045, 4983, 5094, 5095, 5096, 558, 576, 2]
 // Exports: useArtboardBinding
 
-// Module 5032 (BaseRive)
+// Module 5044 (BaseRive)
 import react2 from "react" /* 576 */;
-import DataBindByName from "DataBindByName" /* 5033 */;
-import ManaContext from "ManaContext" /* 5082 */;
-import useRivePlayback2 from "useRivePlayback" /* 5083 */;
-import RiveTypes from "RiveTypes" /* 5084 */;
+import DataBindByName from "DataBindByName" /* 5045 */;
+import ManaContext from "ManaContext" /* 5094 */;
+import useRivePlayback2 from "useRivePlayback" /* 5095 */;
+import RiveTypes from "RiveTypes" /* 5096 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -870,7 +870,7 @@ class BaseRiveInner {
     let instance = useViewModelInstance(tmp13, { artboardName: artboard, instanceName: memo }).instance;
     let None = instance;
     if (instance == null) {
-      None = tmp(5033).DataBindMode.None;
+      None = tmp(5045).DataBindMode.None;
     }
     let reducedMotion;
     if (artboardProperties[artboard] != null) {
@@ -910,7 +910,7 @@ class BaseRiveInner {
       let obj13;
       const obj5 = { file: riveFile, hybridRef: setHybridRef, artboardName: artboard, autoPlay: true, dataBind: None, style: items3 };
       items3 = [container.fill, style];
-      const RiveView = tmp(5033).RiveView;
+      const RiveView = tmp(5045).RiveView;
       const tmp28 = metroRequire;
       if (null != stateMachine) {
         obj7 = { stateMachineName: stateMachine };

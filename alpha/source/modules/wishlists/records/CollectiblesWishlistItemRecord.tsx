@@ -1,19 +1,19 @@
-// Module ID: 9349
-// Function ID: 9350
+// Module ID: 9372
+// Function ID: 9373
 // Name: CollectiblesWishlistItemRecord
-// Dependencies: [7640, 7639, 1993, 7641, 7642, 2047, 9348, 1087, 1995, 2]
+// Dependencies: [7653, 7652, 1993, 7654, 7655, 2047, 9371, 1087, 1995, 2]
 // Exports: isCollectiblesWishlistItemRecord
 
-// Module 9349 (CollectiblesWishlistItemRecord)
+// Module 9372 (CollectiblesWishlistItemRecord)
 import Constants from "Constants" /* 1087 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
-import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7639 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7640 */;
+import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7652 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7653 */;
 import NameplateRecord from "NameplateRecord" /* 1993 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7641 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7642 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7654 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7655 */;
 import SKURecord from "SKURecord" /* 2047 */;
-import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 9348 */;
+import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 9371 */;
 import size from "module_2" /* 2 */;
 
 function createCollectiblesItemFromServerResponse(collectibles_item) {

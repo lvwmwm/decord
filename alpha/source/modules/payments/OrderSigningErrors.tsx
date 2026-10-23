@@ -1,12 +1,12 @@
-// Module ID: 9437
-// Function ID: 9438
+// Module ID: 9460
+// Function ID: 9461
 // Name: OrderSigningErrors
-// Dependencies: [5684, 4792, 2]
+// Dependencies: [5696, 4792, 2]
 // Exports: getOrderSigningError
 
-// Module 9437 (OrderSigningErrors)
+// Module 9460 (OrderSigningErrors)
 import BillingErrorDefault from "BillingError" /* 4792 */;
-import PaymentConstants from "PaymentConstants" /* 5684 */;
+import PaymentConstants from "PaymentConstants" /* 5696 */;
 import size from "module_2" /* 2 */;
 
 const OrderClientErrorCode = PaymentConstants.OrderClientErrorCode;

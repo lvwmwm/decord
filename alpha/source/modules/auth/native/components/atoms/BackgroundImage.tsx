@@ -1,13 +1,13 @@
-// Module ID: 7053
-// Function ID: 7054
+// Module ID: 7066
+// Function ID: 7067
 // Name: BackgroundImage
-// Dependencies: [19, 17, 21, 558, 576, 5191, 4976, 7054, 7055, 5655, 2]
+// Dependencies: [19, 17, 21, 558, 576, 5203, 4976, 7067, 7068, 5667, 2]
 
-// Module 7053 (BackgroundImage)
+// Module 7066 (BackgroundImage)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useThemeDefault from "useTheme" /* 5191 */;
-import FastImageDefault from "FastImage" /* 5655 */;
+import useThemeDefault from "useTheme" /* 5203 */;
+import FastImageDefault from "FastImage" /* 5667 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -41,9 +41,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Background
     let tmp5Result;
     const tmpResult = shared;
     if (tmpResult.isThemeDark(tmp6)) {
-      tmp5Result = tmp5(7054);
+      tmp5Result = tmp5(7067);
     } else {
-      tmp5Result = tmp5(7055);
+      tmp5Result = tmp5(7068);
     }
     backgroundImageSource = tmp5Result;
   }
@@ -77,7 +77,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Background
   if (flag === undefined) {
     flag = false;
   }
-  let tmp = flag(5191)();
+  let tmp = flag(5203)();
   dependencyMap = tmp;
   let items = [backgroundImageSource, flag, tmp];
   const memo = react.useMemo(() => {
@@ -90,16 +90,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Background
       let tmp5Result;
       const obj2 = shared;
       if (obj2.isThemeDark(closure_2)) {
-        tmp5Result = tmp5(7054);
+        tmp5Result = tmp5(7067);
       } else {
-        tmp5Result = tmp5(7055);
+        tmp5Result = tmp5(7068);
       }
       tmp = tmp5Result;
     }
     return obj;
   }, items);
   let obj2 = {};
-  flag(5655);
+  flag(5667);
   const merged = Object.assign(memo);
   return <closure_4 style={closure_5.absoluteFill}>{null}</closure_4>;
 });

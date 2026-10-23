@@ -1,15 +1,15 @@
-// Module ID: 11024
-// Function ID: 11025
+// Module ID: 11047
+// Function ID: 11048
 // Name: useFetchCollectiblesProduct
-// Dependencies: [32, 19, 6809, 7635, 1087, 558, 576, 573, 1995, 7634, 2]
+// Dependencies: [32, 19, 6822, 7648, 1087, 558, 576, 573, 1995, 7647, 2]
 
-// Module 11024 (useFetchCollectiblesProduct)
+// Module 11047 (useFetchCollectiblesProduct)
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7634 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7647 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import SKUStore_mod from "SKUStore" /* 6809 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7635 */;
+import SKUStore_mod from "SKUStore" /* 6822 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7648 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

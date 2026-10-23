@@ -1,50 +1,26 @@
 // Module ID: 15556
 // Function ID: 15557
-// Dependencies: [15525, 15557, 15500, 15553]
+// Dependencies: [15545, 15520]
 
 // Module 15556
-import _mod15500 from "module_15500" /* 15500 */;
-import _mod15525 from "module_15525" /* 15525 */;
-import defineProperty2 from "defineProperty2" /* 15553 */;
-import _mod15557 from "module_15557" /* 15557 */;
+import _mod15520 from "module_15520" /* 15520 */;
+import module_15545 from "module_15545" /* 15545 */;
 
+let _moduleResult = module_15545(_mod15520.document);
+if (_moduleResult) {
+  const _module1 = module_15545;
+  _moduleResult = _module1(_mod15520.document.createElement);
+}
+let c2 = _moduleResult;
 
-export default (arg0, arg1, value, arg3) => {
-  const obj = arg3 || {};
-  let flag = obj.enumerable;
-  let name = arg1;
-  const tmp = arg1;
-  if (undefined !== obj.name) {
-    name = obj.name;
-  }
-  if (_mod15525(value)) {
-    _mod15557(value, name, obj);
-  }
-  if (obj.global) {
-    if (flag) {
-      arg0[arg1] = value;
-    } else {
-      _mod15500(arg1, value);
-    }
+export default (arg0) => {
+  let element;
+  const tmp = c2;
+  if (tmp) {
+    const _document = _mod15520.document;
+    element = _document.createElement(arg0);
   } else {
-    try {
-      if (obj.unsafe) {
-        if (arg0[arg1]) {
-          flag = true;
-        }
-      } else {
-        delete tmp5[tmp];
-      }
-    } catch (err) {
-    }
-    const tmp6 = flag;
-    if (tmp6) {
-      arg0[arg1] = value;
-    } else {
-      const obj2 = { value, enumerable: false, configurable: !obj.nonConfigurable, writable: !obj.nonWritable };
-      const tmp2Result = defineProperty2;
-      tmp2Result.f(arg0, arg1, obj2);
-    }
+    element = {};
   }
-  return arg0;
+  return element;
 };

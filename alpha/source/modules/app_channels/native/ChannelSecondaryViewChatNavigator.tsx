@@ -1,21 +1,21 @@
-// Module ID: 18238
-// Function ID: 18239
+// Module ID: 18282
+// Function ID: 18283
 // Name: ChannelSecondaryViewChatNavigator
-// Dependencies: [19, 21, 9720, 4969, 587, 9676, 1384, 558, 576, 10864, 11965, 13678, 5132, 7080, 13967, 9688, 5023, 2]
+// Dependencies: [19, 21, 9742, 4969, 587, 9698, 1384, 558, 576, 10887, 11984, 13701, 5144, 7093, 13990, 9710, 5035, 2]
 
-// Module 18238 (ChannelSecondaryViewChatNavigator)
+// Module 18282 (ChannelSecondaryViewChatNavigator)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import HeaderShared from "HeaderShared" /* 9676 */;
-import ChannelActionsDefault from "ChannelActions" /* 9688 */;
-import ChatViewDefault from "ChatView" /* 10864 */;
-import PortalKeyboardRenderer from "PortalKeyboardRenderer" /* 11965 */;
-import ChannelContainer2 from "ChannelContainer" /* 13678 */;
-import ChannelHeaderDefault from "ChannelHeader" /* 13967 */;
+import HeaderShared from "HeaderShared" /* 9698 */;
+import ChannelActionsDefault from "ChannelActions" /* 9710 */;
+import ChatViewDefault from "ChatView" /* 10887 */;
+import PortalKeyboardRenderer from "PortalKeyboardRenderer" /* 11984 */;
+import ChannelContainer2 from "ChannelContainer" /* 13701 */;
+import ChannelHeaderDefault from "ChannelHeader" /* 13990 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9720 */;
+import NativeStackView from "NativeStackView" /* 9742 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -58,7 +58,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channel
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const tmpResult = PlatformUtils;
-      const isIOSResult = tmpResult.isIOS() && React3(tmp(11965).PortalKeyboardRenderer, { portal: false });
+      const isIOSResult = tmpResult.isIOS() && React3(tmp(11984).PortalKeyboardRenderer, { portal: false });
       cResult[3] = isIOSResult;
       tmp8 = isIOSResult;
     } else {
@@ -222,8 +222,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSec
   const params = navigation.route.params;
   const tmp = closure_7();
   dependencyMap = tmp;
-  const tmp2 = params(5132)();
-  let obj = navigation(7080);
+  const tmp2 = params(5144)();
+  let obj = navigation(7093);
   const accessibilityNativeStackOptions = obj.useAccessibilityNativeStackOptions();
   const channelId = params.channelId;
   const items = [channelId, tmp, navigation, accessibilityNativeStackOptions];
@@ -255,7 +255,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSec
       return React3(closure_9, obj);
     }
   };
-  const ThemeContextProvider = navigation(5023).ThemeContextProvider;
+  const ThemeContextProvider = navigation(5035).ThemeContextProvider;
   Navigator = closure_6.Navigator;
   return channelId(ThemeContextProvider, obj2);
 });

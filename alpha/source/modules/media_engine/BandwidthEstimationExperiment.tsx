@@ -1,10 +1,10 @@
-// Module ID: 5892
-// Function ID: 5893
+// Module ID: 5904
+// Function ID: 5905
 // Name: BandwidthEstimationExperiment
-// Dependencies: [5174, 2]
+// Dependencies: [5186, 2]
 
-// Module 5892 (BandwidthEstimationExperiment)
-import createExperiment from "module_5174" /* 5174 */;
+// Module 5904 (BandwidthEstimationExperiment)
+import createExperiment from "module_5186" /* 5186 */;
 import size from "module_2" /* 2 */;
 
 let items;

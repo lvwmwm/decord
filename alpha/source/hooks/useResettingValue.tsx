@@ -1,10 +1,10 @@
-// Module ID: 14821
-// Function ID: 14822
+// Module ID: 14845
+// Function ID: 14846
 // Name: useResettingValue
-// Dependencies: [32, 19, 558, 576, 4816, 5585, 2]
+// Dependencies: [32, 19, 558, 576, 4816, 5597, 2]
 
-// Module 14821 (useResettingValue)
-import useInitialValueDefault from "useInitialValue" /* 5585 */;
+// Module 14845 (useResettingValue)
+import useInitialValueDefault from "useInitialValue" /* 5597 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

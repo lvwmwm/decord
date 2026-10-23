@@ -1,13 +1,13 @@
-// Module ID: 10486
-// Function ID: 10487
+// Module ID: 10508
+// Function ID: 10509
 // Name: MarketingComponentHooks
-// Dependencies: [4970, 558, 576, 5191, 504, 4991, 2]
+// Dependencies: [4970, 558, 576, 5203, 504, 4991, 2]
 
-// Module 10486 (MarketingComponentHooks)
+// Module 10508 (MarketingComponentHooks)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import themes from "themes" /* 4991 */;
-import useThemeDefault from "useTheme" /* 5191 */;
+import useThemeDefault from "useTheme" /* 5203 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,19 +1,19 @@
-// Module ID: 17089
-// Function ID: 17090
+// Module ID: 17133
+// Function ID: 17134
 // Name: UserSettingsDesignSystemPile
-// Dependencies: [32, 19, 17, 21, 4969, 1202, 6868, 558, 576, 5963, 5220, 6890, 14260, 1420, 15244, 13479, 12881, 12463, 9382, 2]
+// Dependencies: [32, 19, 17, 21, 4969, 1202, 6881, 558, 576, 5975, 5232, 6903, 14284, 1420, 15269, 13502, 12900, 12482, 9405, 2]
 
-// Module 17089 (UserSettingsDesignSystemPile)
+// Module 17133 (UserSettingsDesignSystemPile)
 import react2 from "react" /* 576 */;
 import native from "native" /* 1202 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1420 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import Stack_Stack from "Stack/Stack" /* 5963 */;
-import GuildIcon from "GuildIcon" /* 6868 */;
-import Card_Card from "Card/Card" /* 6890 */;
-import ClipView from "ClipView" /* 9382 */;
-import ListUtils from "ListUtils" /* 12463 */;
-import AvatarDuoPile2 from "AvatarDuoPile" /* 15244 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import Stack_Stack from "Stack/Stack" /* 5975 */;
+import GuildIcon from "GuildIcon" /* 6881 */;
+import Card_Card from "Card/Card" /* 6903 */;
+import ClipView from "ClipView" /* 9405 */;
+import ListUtils from "ListUtils" /* 12482 */;
+import AvatarDuoPile2 from "AvatarDuoPile" /* 15269 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

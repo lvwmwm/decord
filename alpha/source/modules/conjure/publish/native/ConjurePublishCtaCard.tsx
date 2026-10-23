@@ -1,16 +1,16 @@
-// Module ID: 12433
-// Function ID: 12434
+// Module ID: 12452
+// Function ID: 12453
 // Name: ConjurePublishCtaCard
-// Dependencies: [19, 21, 558, 576, 11828, 12241, 5963, 5230, 12259, 12434, 12435, 2]
+// Dependencies: [19, 21, 558, 576, 11847, 12260, 5975, 5242, 12278, 12453, 12454, 2]
 
-// Module 12433 (ConjurePublishCtaCard)
+// Module 12452 (ConjurePublishCtaCard)
 import react2 from "react" /* 576 */;
-import components_Button_Button from "components/Button/Button" /* 5230 */;
-import Stack_Stack from "Stack/Stack" /* 5963 */;
-import useConjurePublishAction from "useConjurePublishAction" /* 11828 */;
-import ConjurePublishSheetDefault from "ConjurePublishSheet" /* 12241 */;
-import conjurePublishCard from "conjurePublishCard" /* 12259 */;
-import ConjureTipInlineCalloutDefault from "ConjureTipInlineCallout" /* 12434 */;
+import components_Button_Button from "components/Button/Button" /* 5242 */;
+import Stack_Stack from "Stack/Stack" /* 5975 */;
+import useConjurePublishAction from "useConjurePublishAction" /* 11847 */;
+import ConjurePublishSheetDefault from "ConjurePublishSheet" /* 12260 */;
+import conjurePublishCard from "conjurePublishCard" /* 12278 */;
+import ConjureTipInlineCalloutDefault from "ConjureTipInlineCallout" /* 12453 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -29,7 +29,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publish
   const cResult = obj.c(7);
   projectId = projectId.projectId;
   const publish = projectId.publish;
-  const context = react.useContext(projectId(11828).ConjurePublishActionContext);
+  const context = react.useContext(projectId(11847).ConjurePublishActionContext);
   if (cResult[0] === context) {
     let tmp6;
     if (cResult[1] === projectId) {
@@ -44,8 +44,8 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publish
         return tmp7;
       }
     }
-    const obj2 = { direction: "horizontal", children: closure_4(tmp(5230).Button, obj3) };
-    const Stack = tmp(5963).Stack;
+    const obj2 = { direction: "horizontal", children: closure_4(tmp(5242).Button, obj3) };
+    const Stack = tmp(5975).Stack;
     obj3 = { text: publish.label, variant: "primary", size: "sm", loading: publish.publishing && !publish.showsProgress, onPress: tmp6 };
     const tmp9 = closure_4(Stack, obj2);
     cResult[3] = publish.label;
@@ -117,13 +117,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePubli
     if (tmpResult.isConjurePublishCtaVisible(tmp5, cta)) {
       const obj2 = { projectId, publish: tmp5 };
       const tmp4Result = ConjureTipInlineCalloutDefault;
-      const Stack = tmp(5963).Stack;
+      const Stack = tmp(5975).Stack;
       const items = [React3(closure_6, obj2), ];
       let tmp8Result = null;
       const tmp10 = hasOwnProperty;
       if (null != turnId) {
         const obj3 = { projectId, turnId, cta, status: tmp5.status };
-        tmp8Result = tmp8(tmp4(12435), obj3, turnId);
+        tmp8Result = tmp8(tmp4(12454), obj3, turnId);
       }
       const obj4 = { children: tmp10(Stack, obj5) };
       obj5 = { spacing: 12, children: items };
@@ -152,13 +152,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePubli
     if (obj.isConjurePublishCtaVisible(tmp3, cta)) {
       const obj2 = { projectId, publish: tmp3 };
       const tmpResult = ConjureTipInlineCalloutDefault;
-      const Stack = tmp5(5963).Stack;
+      const Stack = tmp5(5975).Stack;
       const items = [React3(closure_6, obj2), ];
       let tmp6Result = null;
       const tmp8 = hasOwnProperty;
       if (null != turnId) {
         const obj3 = { projectId, turnId, cta, status: tmp3.status };
-        tmp6Result = tmp6(tmp(12435), obj3, turnId);
+        tmp6Result = tmp6(tmp(12454), obj3, turnId);
       }
       const obj4 = { children: tmp8(Stack, obj5) };
       obj5 = { spacing: 12, children: items };

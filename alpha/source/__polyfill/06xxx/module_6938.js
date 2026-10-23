@@ -1,15 +1,27 @@
 // Module ID: 6938
 // Function ID: 6939
-// Dependencies: []
-// Exports: getDefaultSidebarWidth
+// Dependencies: [19, 17, 21, 1506]
+// Exports: Background
 
 // Module 6938
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import Link from "Link" /* 1506 */;
+import react from "react" /* 19 */;
 
-export const getDefaultSidebarWidth = (width) => {
-  width = width.width;
-  let num = 360;
-  if (width - 56 <= 360) {
-    num = width - 56;
-  }
-  return num;
+const Animated = react_native.Animated;
+const jsx = Fragment.jsx;
+
+export const Background = function Background(style) {
+  style = style.style;
+  const merged = Object.assign(style, Object.assign({ style: 0 }));
+  const obj = Link;
+  const colors = obj.useTheme().colors;
+  const View = Animated.View;
+  const merged1 = Object.assign(merged);
+  const items = [, ];
+  const obj3 = { flex: 1, backgroundColor: colors.background };
+  items[0] = obj3;
+  items[1] = style;
+  return <View style={items} />;
 };

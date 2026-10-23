@@ -1,11 +1,11 @@
-// Module ID: 18379
-// Function ID: 18380
+// Module ID: 18423
+// Function ID: 18424
 // Name: MorphablePanelUtils
-// Dependencies: [10874, 2]
+// Dependencies: [10897, 2]
 // Exports: calculatePIPPositionFromVelocity, calculateXYDiff, getClampedPIPPosition
 
-// Module 18379 (MorphablePanelUtils)
-import MorphablePanelConstants from "MorphablePanelConstants" /* 10874 */;
+// Module 18423 (MorphablePanelUtils)
+import MorphablePanelConstants from "MorphablePanelConstants" /* 10897 */;
 import size from "module_2" /* 2 */;
 
 const MIN_PIP_TOSS_VELOCITY = MorphablePanelConstants.MIN_PIP_TOSS_VELOCITY;

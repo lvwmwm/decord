@@ -1,13 +1,13 @@
-// Module ID: 9466
-// Function ID: 9467
+// Module ID: 9489
+// Function ID: 9490
 // Name: useGameProfilePlatforms
-// Dependencies: [19, 8805, 1128, 558, 576, 2]
+// Dependencies: [19, 8828, 1128, 558, 576, 2]
 // Exports: getGameProfilePlatformText
 
-// Module 9466 (useGameProfilePlatforms)
+// Module 9489 (useGameProfilePlatforms)
 import react2 from "react" /* 576 */;
 import intl6 from "intl" /* 1128 */;
-import PlatformType from "PlatformType" /* 8805 */;
+import PlatformType from "PlatformType" /* 8828 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGamePro
     const self2 = this;
     set = new Set(platforms.platforms);
     let closure_0 = set;
-    let hasItem = set.has(tmp(8805).PlatformType.MACOS) || set.has(tmp(8805).PlatformType.LINUX);
+    let hasItem = set.has(tmp(8828).PlatformType.MACOS) || set.has(tmp(8828).PlatformType.LINUX);
     if (hasItem) {
       set.add(PlatformType.PlatformType.DESKTOP);
     }
@@ -33,7 +33,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGamePro
   } else {
     closure_0 = cResult[1];
   }
-  const hasItem1 = obj2.has(tmp(8805).PlatformType.IOS) || obj2.has(tmp(8805).PlatformType.ANDROID);
+  const hasItem1 = obj2.has(tmp(8828).PlatformType.IOS) || obj2.has(tmp(8828).PlatformType.ANDROID);
   if (cResult[2] === obj2) {
     let tmp9;
     if (cResult[3] === hasItem1) {
@@ -58,11 +58,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGamePro
   items = [platforms.platforms];
   return react.useMemo(() => {
     set = new Set(platforms.platforms);
-    let hasItem = set.has(PlatformType.PlatformType.MACOS) || set.has(tmp(8805).PlatformType.LINUX);
+    let hasItem = set.has(PlatformType.PlatformType.MACOS) || set.has(tmp(8828).PlatformType.LINUX);
     if (hasItem) {
       set.add(PlatformType.PlatformType.DESKTOP);
     }
-    const hasItem1 = set.has(tmp(8805).PlatformType.IOS) || set.has(tmp(8805).PlatformType.ANDROID);
+    const hasItem1 = set.has(tmp(8828).PlatformType.IOS) || set.has(tmp(8828).PlatformType.ANDROID);
     return items.filter((item) => {
       let hasItem;
       if ("mobile" === item) {

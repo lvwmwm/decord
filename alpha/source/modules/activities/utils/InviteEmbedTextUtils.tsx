@@ -1,14 +1,14 @@
-// Module ID: 14507
-// Function ID: 14508
+// Module ID: 14531
+// Function ID: 14532
 // Name: InviteEmbedTextUtils
-// Dependencies: [1392, 1087, 1128, 3024, 5975, 2]
+// Dependencies: [1392, 1087, 1128, 3024, 5987, 2]
 // Exports: getDeadGameInviteText, getHeaderText, getPartyText, getRequestToStreamFormattedText, getRequestToStreamText, getRequestToStreamTextParts
 
-// Module 14507 (InviteEmbedTextUtils)
+// Module 14531 (InviteEmbedTextUtils)
 import Constants from "Constants" /* 1087 */;
 import intl6 from "intl" /* 1128 */;
 import _modDef3024 from "module_3024" /* 3024 */;
-import NicknameUtils from "NicknameUtils" /* 5975 */;
+import NicknameUtils from "NicknameUtils" /* 5987 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 

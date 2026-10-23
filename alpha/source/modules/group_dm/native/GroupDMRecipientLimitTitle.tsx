@@ -1,17 +1,17 @@
-// Module ID: 18130
-// Function ID: 18131
+// Module ID: 18174
+// Function ID: 18175
 // Name: GroupDMRecipientLimitTitle
-// Dependencies: [19, 17, 1087, 21, 4969, 587, 1384, 558, 576, 11262, 5238, 1128, 5220, 9401, 12152, 2]
+// Dependencies: [19, 17, 1087, 21, 4969, 587, 1384, 558, 576, 11285, 5250, 1128, 5232, 9424, 12171, 2]
 
-// Module 18130 (GroupDMRecipientLimitTitle)
+// Module 18174 (GroupDMRecipientLimitTitle)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import useToken from "useToken" /* 5238 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11262 */;
-import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 12152 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import useToken from "useToken" /* 5250 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11285 */;
+import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 12171 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -179,7 +179,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMRec
         let tmp20Result = null;
         if ("entitled" === groupDMNitroAudience && recipientLimit > MAX_GROUP_DM_PARTICIPANTS) {
           let tmp21 = token2;
-          const NitroWheelIcon = tmp(9401).NitroWheelIcon;
+          const NitroWheelIcon = tmp(9424).NitroWheelIcon;
           const tmp20 = metroRequire;
           if (memberCount > MAX_GROUP_DM_PARTICIPANTS) {
             tmp21 = token1;
@@ -249,7 +249,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMRec
   const obj6 = { style: tmp.subtitleRow, children: items1 };
   const tmp14 = metroImportAll;
   if ("entitled" === groupDMNitroAudience && recipientLimit > MAX_GROUP_DM_PARTICIPANTS) {
-    const NitroWheelIcon = tmp2(9401).NitroWheelIcon;
+    const NitroWheelIcon = tmp2(9424).NitroWheelIcon;
     if (memberCount > MAX_GROUP_DM_PARTICIPANTS) {
       token2 = token1;
     }

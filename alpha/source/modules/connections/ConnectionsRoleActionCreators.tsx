@@ -1,29 +1,29 @@
-// Module ID: 11241
-// Function ID: 11242
+// Module ID: 11264
+// Function ID: 11265
 // Name: ConnectionsRoleActionCreators
-// Dependencies: [5, 1087, 1297, 584, 7211, 2]
+// Dependencies: [5, 1087, 1297, 584, 7224, 2]
 // Exports: fetchRoleConnectionsConfiguration, fetchUserApplicationRoleConnections, putRoleConnectionsConfigurations
 
-// Module 11241 (ConnectionsRoleActionCreators)
+// Module 11264 (ConnectionsRoleActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, body, closure_4, count;
+let _require, count, roleConnectionConfigurations;
 
 let obj = function _putRoleConnectionsConfigurations() {
-  obj = _asyncToGenerator(async (guildId, roleId, roleConnectionConfigurations) => {
+  obj = _asyncToGenerator(async (guildId, roleId, arg2) => {
+    let closure_2 = arg2;
     let c5 = 0;
     let c6 = 0;
     return (async (arg0, value, arg2) => {
       let obj6;
-      let putResult;
       if (c6 === 2) {
         c6 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp4 === 3) {
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
@@ -42,10 +42,10 @@ let obj = function _putRoleConnectionsConfigurations() {
               c6 = 3;
               return { value, done: true };
             } else {
-              closure_4 = tmp2;
+              closure_2 = undefined;
               roleConnectionConfigurations = undefined;
               count = undefined;
-              let mapped = roleConnectionConfigurations.map((arr) => arr.map((connectionType) => ({ connection_type: connectionType.connectionType, connection_metadata_field: connectionType.connectionMetadataField, application_id: connectionType.applicationId, operator: connectionType.operator, value: connectionType.value })));
+              let mapped = closure_2.map((arr) => arr.map((connectionType) => ({ connection_type: connectionType.connectionType, connection_metadata_field: connectionType.connectionMetadataField, application_id: connectionType.applicationId, operator: connectionType.operator, value: connectionType.value })));
               const HTTP = require("HTTPUtils").HTTP;
               const request = { url: Endpoints.GUILD_ROLE_CONNECTIONS_CONFIGURATION(guildId, roleId), body: mapped, oldFormErrors: true, rejectWithError: false };
               const put = HTTP.put;
@@ -54,20 +54,10 @@ let obj = function _putRoleConnectionsConfigurations() {
               }
               c5 = 1;
               c6 = 1;
-              const obj5 = {
-                value: putResult.then((body) => {
-                          if (body.body.length > 0) {
-                            body = body.body;
-                            const mapped = body.map((arr) => arr.map((connectionType) => ({ connectionType: connectionType.connection_type, connectionMetadataField: connectionType.connection_metadata_field, applicationId: connectionType.application_id, operator: connectionType.operator, value: connectionType.value })));
-                          }
-                          return [];
-                        }),
-                done: false
-              };
-              putResult = put(request);
+              const obj5 = { value: put(request), done: false };
               return obj5;
             }
-          } else if (1 === tmp5) {
+          } else if (1 === c5) {
             if (arg0 === 1) {
               c6 = 3;
               throw value;
@@ -75,7 +65,12 @@ let obj = function _putRoleConnectionsConfigurations() {
               c6 = 3;
               return { value, done: true };
             } else {
-              roleConnectionConfigurations = value;
+              closure_2 = value;
+              roleConnectionConfigurations = [];
+              if (closure_2.body.length > 0) {
+                const body = closure_2.body;
+                roleConnectionConfigurations = body.map((arr) => arr.map((connectionType) => ({ connectionType: connectionType.connection_type, connectionMetadataField: connectionType.connection_metadata_field, applicationId: connectionType.application_id, operator: connectionType.operator, value: connectionType.value })));
+              }
               c5 = 2;
               c6 = 1;
               const obj8 = { value: obj6.requestMembersForRole(guildId, roleId, false), done: false };
@@ -101,9 +96,9 @@ let obj = function _putRoleConnectionsConfigurations() {
             c6 = 3;
             return { value: "IconComponent", done: null };
           }
-        } catch (tmp27) {
+        } catch (tmp28) {
           c6 = 3;
-          throw tmp27;
+          throw tmp28;
         }
       }
     })();

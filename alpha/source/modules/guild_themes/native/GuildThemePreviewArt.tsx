@@ -1,16 +1,16 @@
-// Module ID: 17511
-// Function ID: 17512
+// Module ID: 17555
+// Function ID: 17556
 // Name: GuildThemePreviewArt
-// Dependencies: [19, 17, 21, 4969, 587, 5133, 558, 576, 17512, 5191, 5244, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 5145, 558, 576, 17556, 5203, 5256, 2]
 
-// Module 17511 (GuildThemePreviewArt)
+// Module 17555 (GuildThemePreviewArt)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import GuildThemePresets from "GuildThemePresets" /* 5133 */;
-import useThemeDefault from "useTheme" /* 5191 */;
-import GuildThemePreviewOverlayDefault from "GuildThemePreviewOverlay" /* 17512 */;
+import GuildThemePresets from "GuildThemePresets" /* 5145 */;
+import useThemeDefault from "useTheme" /* 5203 */;
+import GuildThemePreviewOverlayDefault from "GuildThemePreviewOverlay" /* 17556 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -20,9 +20,9 @@ let importDefault;
 
 let obj2;
 let tmp6;
-const LinearGradientDefault = tmp6(5244);
-const f130556 = (hex) => hex.hex;
-const f130557 = (stop) => stop.stop / 100;
+const LinearGradientDefault = tmp6(5256);
+const f130830 = (hex) => hex.hex;
+const f130831 = (stop) => stop.stop / 100;
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { previewArt: obj2, previewOverlay: { position: "absolute", top: 7.314, left: 7.461, width: 259.862, height: 154.514 } };
@@ -157,7 +157,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemePr
     if (null != guildThemePreset) {
       const tmp2Result4 = GuildThemePresets;
       const guildThemePresetAppearance = tmp2Result4.getGuildThemePresetAppearance(guildThemePreset, tmp7);
-      const obj5 = { colors: colors.map(f130556), locations: colors1.map(f130557), angle: guildThemePresetAppearance.angle };
+      const obj5 = { colors: colors.map(f130830), locations: colors1.map(f130831), angle: guildThemePresetAppearance.angle };
       colors = guildThemePresetAppearance.colors;
       colors1 = guildThemePresetAppearance.colors;
       tmp9 = obj5;
@@ -206,9 +206,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemePr
       tmp4 = null;
       const tmp6 = require;
       if (null != guildThemePreset) {
-        const tmp6Result = tmp6(5133);
+        const tmp6Result = tmp6(5145);
         const guildThemePresetAppearance = tmp6Result.getGuildThemePresetAppearance(guildThemePreset, tmp3);
-        const obj3 = { colors: colors.map(f130556), locations: colors1.map(f130557), angle: guildThemePresetAppearance.angle };
+        const obj3 = { colors: colors.map(f130830), locations: colors1.map(f130831), angle: guildThemePresetAppearance.angle };
         colors = guildThemePresetAppearance.colors;
         colors1 = guildThemePresetAppearance.colors;
         tmp4 = obj3;

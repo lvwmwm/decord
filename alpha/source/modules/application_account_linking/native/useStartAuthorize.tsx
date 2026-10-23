@@ -1,14 +1,14 @@
-// Module ID: 7239
-// Function ID: 7240
+// Module ID: 7252
+// Function ID: 7253
 // Name: useStartAuthorize
-// Dependencies: [5, 19, 7240, 1087, 7241, 7243, 5646, 1267, 7245, 2]
+// Dependencies: [5, 19, 7253, 1087, 7254, 7256, 5658, 1267, 7258, 2]
 // Exports: default
 
-// Module 7239 (useStartAuthorize)
+// Module 7252 (useStartAuthorize)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import LinkingDefault from "Linking" /* 5646 */;
-import ApplicationAccountLinkingConstants from "ApplicationAccountLinkingConstants" /* 7240 */;
+import LinkingDefault from "Linking" /* 5658 */;
+import ApplicationAccountLinkingConstants from "ApplicationAccountLinkingConstants" /* 7253 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -34,7 +34,7 @@ export default function useStartAuthorize(arg0) {
   const debug = obj.debug;
   const tmp = undefined !== debug && debug;
   const tmp3 = dependencyMap;
-  let obj2 = authorizationApp(7241);
+  let obj2 = authorizationApp(7254);
   authorizationApp = obj2.useAuthorizationApp(arg0);
   let prop;
   if (authorizationApp != null) {
@@ -45,8 +45,8 @@ export default function useStartAuthorize(arg0) {
     WEB = AuthorizeFlow.WEB;
   }
   let parentId;
-  const useAuthorizedAppsToken = tmp2(7243).useAuthorizedAppsToken;
-  authorizationApp(7243);
+  const useAuthorizedAppsToken = tmp2(7256).useAuthorizedAppsToken;
+  authorizationApp(7256);
   if (authorizationApp != null) {
     parentId = authorizationApp.parentId;
   }

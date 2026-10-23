@@ -1,18 +1,18 @@
-// Module ID: 7079
-// Function ID: 7080
+// Module ID: 7092
+// Function ID: 7093
 // Name: ChangeEmailComplete
-// Dependencies: [19, 17, 6908, 21, 4969, 587, 6906, 558, 576, 5655, 6989, 1128, 5220, 5230, 2]
+// Dependencies: [19, 17, 6921, 21, 4969, 587, 6919, 558, 576, 5667, 7002, 1128, 5232, 5242, 2]
 
-// Module 7079 (ChangeEmailComplete)
+// Module 7092 (ChangeEmailComplete)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import components_Button_Button from "components/Button/Button" /* 5230 */;
-import FastImageDefault from "FastImage" /* 5655 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6906 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 6908 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6989 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import components_Button_Button from "components/Button/Button" /* 5242 */;
+import FastImageDefault from "FastImage" /* 5667 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6919 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 6921 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7002 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -131,7 +131,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
         const _Symbol2 = Symbol;
         if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
           const obj6 = { text: intl4.string(intl5.t.BddRzS), onPress: handlePress, grow: true };
-          const Button = tmp(5230).Button;
+          const Button = tmp(5242).Button;
           intl4 = tmp(1128).intl;
           const tmp31 = metroRequire(Button, obj6);
           cResult[17] = tmp31;

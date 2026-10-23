@@ -1,15 +1,15 @@
-// Module ID: 13101
-// Function ID: 13102
+// Module ID: 13124
+// Function ID: 13125
 // Name: VoicePanelHeaderGlassBlur
-// Dependencies: [19, 17, 21, 4969, 1384, 558, 576, 5038, 5233, 5191, 4976, 5571, 6871, 7153, 2]
+// Dependencies: [19, 17, 21, 4969, 1384, 558, 576, 5050, 5245, 5203, 4976, 5583, 6884, 7166, 2]
 
-// Module 13101 (VoicePanelHeaderGlassBlur)
+// Module 13124 (VoicePanelHeaderGlassBlur)
 import react_native from "react-native" /* 17 */;
-import useThemeDefault from "useTheme" /* 5191 */;
-import spring from "spring" /* 5233 */;
-import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5571 */;
-import NativeViewDefault from "NativeView" /* 6871 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7153 */;
+import useThemeDefault from "useTheme" /* 5203 */;
+import spring from "spring" /* 5245 */;
+import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5583 */;
+import NativeViewDefault from "NativeView" /* 6884 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7166 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -54,7 +54,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   fn.__closure = obj3;
   fn.__workletHash = 3451055086565;
   fn.__initData = __initData;
-  const obj2 = shown(5038);
+  const obj2 = shown(5050);
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const fn2 = function k() {
     const withSpring = spring.withSpring;
@@ -66,11 +66,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj = { blurAmount: withSpring(num) };
     return obj;
   };
-  const obj4 = shown(5038);
-  fn2.__closure = { withSpring: shown(5233).withSpring, shown };
+  const obj4 = shown(5050);
+  fn2.__closure = { withSpring: shown(5245).withSpring, shown };
   fn2.__workletHash = 5642055202507;
   fn2.__initData = __initData2;
-  ({ withSpring: shown(5233).withSpring, shown });
+  ({ withSpring: shown(5245).withSpring, shown });
   const animatedProps = obj4.useAnimatedProps(fn2);
   const tmp8 = useThemeDefault();
   if (cResult[0] === animatedStyle) {
@@ -196,7 +196,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   shown = shown.shown;
   ({ blurStyle, style } = shown);
   const tmp = closure_6();
-  let obj = shown(5038);
+  let obj = shown(5050);
   const fn = function _() {
     let opacity = 0;
     if (shown.get()) {
@@ -223,11 +223,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj = { blurAmount: withSpring(num) };
     return obj;
   };
-  const obj3 = shown(5038);
-  fn2.__closure = { withSpring: shown(5233).withSpring, shown };
+  const obj3 = shown(5050);
+  fn2.__closure = { withSpring: shown(5245).withSpring, shown };
   fn2.__workletHash = 10766437578125;
   fn2.__initData = __initData4;
-  ({ withSpring: shown(5233).withSpring, shown });
+  ({ withSpring: shown(5245).withSpring, shown });
   const animatedProps = obj3.useAnimatedProps(fn2);
   const tmp7 = useThemeDefault();
   const obj5 = { style: items, children: items2 };

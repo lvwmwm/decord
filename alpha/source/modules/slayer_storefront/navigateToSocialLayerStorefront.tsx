@@ -1,16 +1,16 @@
-// Module ID: 14684
-// Function ID: 14685
+// Module ID: 14708
+// Function ID: 14709
 // Name: navigateToSocialLayerStorefront
-// Dependencies: [5, 4843, 7317, 1087, 10533, 7315, 1114, 7433, 8841, 2]
+// Dependencies: [5, 4843, 7330, 1087, 10555, 7328, 1114, 7446, 8864, 2]
 // Exports: default, eagerNavigateToSocialLayerStorefront, eagerNavigateToSocialLayerStorefrontForApplication
 
-// Module 14684 (navigateToSocialLayerStorefront)
+// Module 14708 (navigateToSocialLayerStorefront)
 import router_utils from "router_utils" /* 1114 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7315 */;
-import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10533 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7328 */;
+import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10555 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7317 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7330 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

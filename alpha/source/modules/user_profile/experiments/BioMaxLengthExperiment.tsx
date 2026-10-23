@@ -1,10 +1,10 @@
-// Module ID: 8631
-// Function ID: 8632
+// Module ID: 8649
+// Function ID: 8650
 // Name: BioMaxLengthExperiment
 // Dependencies: [1087, 1455, 558, 576, 2]
 // Exports: getBioMaxLength
 
-// Module 8631 (BioMaxLengthExperiment)
+// Module 8649 (BioMaxLengthExperiment)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;

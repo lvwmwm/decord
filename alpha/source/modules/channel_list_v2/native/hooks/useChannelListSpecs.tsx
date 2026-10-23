@@ -1,17 +1,17 @@
-// Module ID: 17478
-// Function ID: 17479
+// Module ID: 17522
+// Function ID: 17523
 // Name: useChannelListSpecs
-// Dependencies: [19, 12014, 558, 576, 17479, 1499, 17366, 5239, 1633, 12025, 2]
+// Dependencies: [19, 12033, 558, 576, 17523, 1499, 17410, 5251, 1633, 12044, 2]
 
-// Module 17478 (useChannelListSpecs)
+// Module 17522 (useChannelListSpecs)
 import react2 from "react" /* 576 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12025 */;
-import useChannelListWidthDefault from "useChannelListWidth" /* 17366 */;
-import RedesignGuildHeader from "RedesignGuildHeader" /* 17479 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12044 */;
+import useChannelListWidthDefault from "useChannelListWidth" /* 17410 */;
+import RedesignGuildHeader from "RedesignGuildHeader" /* 17523 */;
 import react from "react" /* 19 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12014 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12033 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let dependencyMap;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const useFontScale = tmp(5239);
+const useFontScale = tmp(5251);
 ({ STICKY_BANNER_ASPECT_RATIO: closure_4, BANNER_MAX_HEIGHT_PERCENTAGE: hasOwnProperty } = RedesignChannelListConstants);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelListSpecs(banner) {
   let first;
@@ -129,12 +129,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannel
   let closure_2;
   let height;
   let redesignGuildHeaderHeight;
-  let obj = redesignGuildHeaderHeight(17479);
+  let obj = redesignGuildHeaderHeight(17523);
   redesignGuildHeaderHeight = obj.useRedesignGuildHeaderHeight(banner);
   height = height(1499)({ ignoreKeyboard: true }).height;
-  const tmp2 = height(17366)();
+  const tmp2 = height(17410)();
   dependencyMap = tmp2;
-  const obj2 = redesignGuildHeaderHeight(5239);
+  const obj2 = redesignGuildHeaderHeight(5251);
   const fontScale = obj2.useFontScale();
   let closure_4 = tmp4;
   const top = height(1633)().top;

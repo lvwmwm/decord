@@ -1,10 +1,10 @@
-// Module ID: 8986
-// Function ID: 8987
+// Module ID: 9009
+// Function ID: 9010
 // Name: GuildSettingsVanityURLActionCreators
 // Dependencies: [1087, 1297, 584, 2]
 // Exports: fetchVanityUrl, resetCode, saveCode, setCode
 
-// Module 8986 (GuildSettingsVanityURLActionCreators)
+// Module 9009 (GuildSettingsVanityURLActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;

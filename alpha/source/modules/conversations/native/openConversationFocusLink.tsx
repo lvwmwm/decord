@@ -1,10 +1,10 @@
-// Module ID: 10048
-// Function ID: 10049
+// Module ID: 10070
+// Function ID: 10071
 // Name: openConversationFocusLink
-// Dependencies: [5, 10049, 9719, 2002, 2]
+// Dependencies: [5, 10071, 9741, 2002, 2]
 // Exports: default
 
-// Module 10048 (openConversationFocusLink)
+// Module 10070 (openConversationFocusLink)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

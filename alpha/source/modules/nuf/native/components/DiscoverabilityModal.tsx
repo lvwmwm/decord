@@ -1,9 +1,9 @@
-// Module ID: 13630
-// Function ID: 13631
+// Module ID: 13653
+// Function ID: 13654
 // Name: DiscoverabilityModal
-// Dependencies: [19, 17, 13516, 1392, 1087, 21, 4969, 587, 5254, 558, 576, 1505, 504, 13523, 1107, 13544, 13631, 13537, 1275, 7080, 1128, 2]
+// Dependencies: [19, 17, 13539, 1392, 1087, 21, 4969, 587, 5266, 558, 576, 1505, 504, 13546, 1107, 13567, 13654, 13560, 1275, 7093, 1128, 2]
 
-// Module 13630 (DiscoverabilityModal)
+// Module 13653 (DiscoverabilityModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -12,12 +12,12 @@ import Constants from "Constants" /* 1087 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
 import intl2 from "intl" /* 1128 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
-import NavigatorConstants from "NavigatorConstants" /* 5254 */;
-import Navigator2 from "Navigator" /* 7080 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 13516 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 13523 */;
-import ContactSyncNameInputDefault from "ContactSyncNameInput" /* 13537 */;
-import NUFActionCreators from "NUFActionCreators" /* 13544 */;
+import NavigatorConstants from "NavigatorConstants" /* 5266 */;
+import Navigator2 from "Navigator" /* 7093 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 13539 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 13546 */;
+import ContactSyncNameInputDefault from "ContactSyncNameInput" /* 13560 */;
+import NUFActionCreators from "NUFActionCreators" /* 13567 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -281,7 +281,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Discoverabil
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const Navigator = tmp(7080).Navigator;
+    const Navigator = tmp(7093).Navigator;
     const intl = tmp(1128).intl;
     const tmp7 = <Navigator screens={first} initialRouteName={ConstantsIOS.DiscoverabilityScenes.LANDING} headerBackTitle={intl.string(intl2.t["13/7kX"])} />;
     cResult[1] = tmp7;

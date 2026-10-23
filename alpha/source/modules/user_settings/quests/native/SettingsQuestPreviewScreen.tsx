@@ -1,19 +1,19 @@
-// Module ID: 16428
-// Function ID: 16429
+// Module ID: 16478
+// Function ID: 16479
 // Name: SettingsQuestPreviewScreen
-// Dependencies: [32, 19, 17, 7761, 1207, 21, 587, 4969, 558, 576, 1506, 504, 16429, 16431, 1128, 8876, 9547, 584, 16432, 9122, 11120, 16438, 2]
+// Dependencies: [32, 19, 17, 7774, 1207, 21, 587, 4969, 558, 576, 1506, 504, 16479, 16481, 1128, 8899, 9570, 584, 16482, 9145, 11143, 16485, 2]
 
-// Module 16428 (SettingsQuestPreviewScreen)
+// Module 16478 (SettingsQuestPreviewScreen)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
-import QuestActionCreators from "QuestActionCreators" /* 9547 */;
-import QuestCardPreview from "QuestCardPreview" /* 16429 */;
-import QuestEmbedPreview from "QuestEmbedPreview" /* 16431 */;
+import QuestActionCreators from "QuestActionCreators" /* 9570 */;
+import QuestCardPreview from "QuestCardPreview" /* 16479 */;
+import QuestEmbedPreview from "QuestEmbedPreview" /* 16481 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import QuestStore from "QuestStore" /* 7761 */;
+import QuestStore from "QuestStore" /* 7774 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;

@@ -1,26 +1,56 @@
 // Module ID: 12596
 // Function ID: 12597
-// Dependencies: [12597, 12580, 12576]
+// Dependencies: [42, 41, 93, 95, 98, 158]
 
 // Module 12596
-import eventFromMessage from "eventFromMessage" /* 12580 */;
-import _mod12597 from "module_12597" /* 12597 */;
-import module_12576 from "module_12576" /* 12576 */;
+import _createClass from "_createClass" /* 42 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import map from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import _wrapNativeSuper from "_wrapNativeSuper" /* 158 */;
 
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-export const linkedErrorsIntegration = module_12576.defineIntegration(() => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  let closure_0 = obj.limit || 5;
-  let closure_1 = obj.key || "cause";
-  return {
-    name: "LinkedErrors",
-    preprocessEvent(arg0, arg1, getOptions) {
-      const options = getOptions.getOptions();
-      const obj = _mod12597;
-      const result = obj.applyAggregateErrorsToEvent(eventFromMessage.exceptionFromError, options.stackParser, options.maxValueLength, closure_1, closure_0, arg0, arg1);
+}
+class SentryError {
+  constructor(message) {
+    let constructResult;
+    let str = arg1;
+    if (arg1 === undefined) {
+      str = "warn";
     }
-  };
-});
+    const self = this;
+    _classCallCheck(this, SentryError);
+    const items = [message];
+    const obj = _getPrototypeOf(SentryError);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = map;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items);
+    }
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.message = message;
+    tmp3Result.logLevel = str;
+    return tmp3Result;
+  }
+}
+_inherits(SentryError, _wrapNativeSuper(Error));
+const SentryError_export = _createClass(SentryError);
+
+export { SentryError_export as SentryError };

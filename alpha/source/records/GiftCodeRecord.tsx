@@ -1,14 +1,14 @@
-// Module ID: 10428
-// Function ID: 10429
+// Module ID: 10450
+// Function ID: 10451
 // Name: GiftCodeRecord
-// Dependencies: [1407, 7550, 9497, 2051, 1394, 2049, 1405, 2]
+// Dependencies: [1407, 7563, 9520, 2051, 1394, 2049, 1405, 2]
 
-// Module 10428 (GiftCodeRecord)
+// Module 10450 (GiftCodeRecord)
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import _modDef2049 from "module_2049" /* 2049 */;
 import Record from "Record" /* 1407 */;
-import SubscriptionTrialRecord from "SubscriptionTrialRecord" /* 7550 */;
-import PromotionRecord from "PromotionRecord" /* 9497 */;
+import SubscriptionTrialRecord from "SubscriptionTrialRecord" /* 7563 */;
+import PromotionRecord from "PromotionRecord" /* 9520 */;
 import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 2051 */;
 import size from "module_2" /* 2 */;
 

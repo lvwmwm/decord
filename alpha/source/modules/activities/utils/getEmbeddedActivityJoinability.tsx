@@ -1,17 +1,17 @@
-// Module ID: 11412
-// Function ID: 11413
+// Module ID: 11432
+// Function ID: 11433
 // Name: getEmbeddedActivityJoinability
-// Dependencies: [4821, 4843, 4901, 1392, 5616, 1087, 11413, 5980, 558, 576, 11342, 504, 6647, 2]
+// Dependencies: [4821, 4843, 4901, 1392, 5628, 1087, 11433, 5992, 558, 576, 11365, 504, 6660, 2]
 
-// Module 11412 (getEmbeddedActivityJoinability)
+// Module 11432 (getEmbeddedActivityJoinability)
 import Constants from "Constants" /* 1087 */;
-import ChannelUtils from "ChannelUtils" /* 5980 */;
-import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 11413 */;
+import ChannelUtils from "ChannelUtils" /* 5992 */;
+import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 11433 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
 import UserStore from "UserStore" /* 1392 */;
-import VoiceStateStore from "VoiceStateStore" /* 5616 */;
+import VoiceStateStore from "VoiceStateStore" /* 5628 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

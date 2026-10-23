@@ -1,18 +1,18 @@
-// Module ID: 12885
-// Function ID: 12886
+// Module ID: 12904
+// Function ID: 12905
 // Name: SoundmojiActionSheet
-// Dependencies: [19, 17, 21, 4969, 587, 1384, 558, 576, 5991, 7212, 12886, 5220, 1128, 5251, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 1384, 558, 576, 6003, 7225, 12905, 5232, 1128, 5263, 2]
 
-// Module 12885 (SoundmojiActionSheet)
+// Module 12904 (SoundmojiActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5251 */;
-import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 5991 */;
-import EmojiDefault from "Emoji" /* 7212 */;
-import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 12886 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5263 */;
+import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 6003 */;
+import EmojiDefault from "Emoji" /* 7225 */;
+import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 12905 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -81,7 +81,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundmojiAct
             const _Symbol = Symbol;
             if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
               const obj4 = { variant: "text-sm/normal", children: intl.string(intl2.t.Tj5Nwi) };
-              const Text = tmp(5220).Text;
+              const Text = tmp(5232).Text;
               intl = tmp(1128).intl;
               const tmp20 = hasOwnProperty(Text, obj4);
               cResult[10] = tmp20;

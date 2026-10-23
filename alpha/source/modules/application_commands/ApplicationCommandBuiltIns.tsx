@@ -1,31 +1,31 @@
-// Module ID: 9634
-// Function ID: 9635
+// Module ID: 9657
+// Function ID: 9658
 // Name: ApplicationCommandBuiltIns
-// Dependencies: [5, 4821, 4901, 1392, 5969, 1087, 9635, 4883, 4974, 5620, 1128, 9636, 2000, 4797, 9637, 9638, 7354, 9639, 1108, 9640, 7551, 7740, 6815, 5018, 1104, 12720, 2049, 7396, 38, 7333, 14007, 2]
+// Dependencies: [5, 4821, 4901, 1392, 5981, 1087, 9658, 4883, 4974, 5632, 1128, 9659, 2000, 4797, 9660, 9661, 7367, 9662, 1108, 9663, 7564, 7753, 6828, 5023, 1104, 12739, 2049, 7409, 38, 7346, 14031, 2]
 // Exports: getBuiltInCommands
 
-// Module 9634 (ApplicationCommandBuiltIns)
+// Module 9657 (ApplicationCommandBuiltIns)
 import Server from "Server" /* 2000 */;
 import UserSettings from "UserSettings" /* 4797 */;
 import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4883 */;
 import MessageConstants from "MessageConstants" /* 4974 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5620 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5969 */;
-import DiceRollActionCreators from "DiceRollActionCreators" /* 7333 */;
-import ThreadHooks from "ThreadHooks" /* 7354 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7551 */;
-import application_commands_ApplicationCommandBuiltIns from "application_commands/ApplicationCommandBuiltIns" /* 9636 */;
-import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 9637 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5632 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5981 */;
+import DiceRollActionCreators from "DiceRollActionCreators" /* 7346 */;
+import ThreadHooks from "ThreadHooks" /* 7367 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7564 */;
+import application_commands_ApplicationCommandBuiltIns from "application_commands/ApplicationCommandBuiltIns" /* 9659 */;
+import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 9660 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
-import DiceRollConstants from "DiceRollConstants" /* 9635 */;
+import DiceRollConstants from "DiceRollConstants" /* 9658 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c0, c2, c4, c5, closure_5, importDefault, recipientIds;
+let _require, c2, c4, c5, closure_5, importDefault;
 
 let ALLOWED_DICE_SIDES;
 let DISPLAY_NAME_MAX_LENGTH;
@@ -1370,13 +1370,13 @@ const obj32 = {
     let c1;
     let str2;
     let obj = function _handler4() {
+      let recipientIds;
       obj = _asyncToGenerator(async (arg0, value) => {
-        let openPrivateChannelResult;
-        let v1;
-        if (c0 === 2) {
-          c0 = 3;
+        let closure_1;
+        if (c3 === 2) {
+          c3 = 3;
           throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp2 === 3) {
+        } else if (tmp3 === 3) {
           if (arg0 === 1) {
             throw value;
           } else if (arg0 === 2) {
@@ -1387,57 +1387,57 @@ const obj32 = {
           }
         } else {
           try {
-            c0 = 2;
-            if (0 === recipientIds) {
+            let closure_0;
+            let tmp;
+            c3 = 2;
+            if (0 === c2) {
               if (arg0 === 1) {
-                c0 = 3;
+                c3 = 3;
                 throw value;
               } else if (arg0 === 2) {
-                c0 = 3;
+                c3 = 3;
                 const obj4 = { value, done: true };
                 return obj4;
               } else {
-                let obj2 = recipientIds(str2[27]);
+                closure_0 = undefined;
+                tmp = undefined;
                 const obj5 = { recipientIds };
-                recipientIds = 1;
-                c0 = 1;
-                const obj6 = {
-                  value: openPrivateChannelResult.then((result) => {
-                            channel = channel.getChannel(result);
-                            c1(closure_2_2[28])(null != channel, "Newly created PrivateChannel is null");
-                            const id = channel.id;
-                            const sendMessage = c1(closure_2_2[20]).sendMessage;
-                            c1(closure_2_2[20]);
-                            obj = c1(closure_2_2[21]);
-                            const obj2 = { location: constants.PRIVATE_MESSAGE_COMMAND };
-                            sendMessage(id, obj.parse(channel, closure_1_2), true, obj2);
-                          }),
-                  done: false
-                };
-                openPrivateChannelResult = obj2.openPrivateChannel(obj5);
+                const obj2 = tmp(c2[27]);
+                c2 = 1;
+                c3 = 1;
+                const obj6 = { value: obj2.openPrivateChannel(obj5), done: false };
                 return obj6;
               }
             } else if (arg0 === 1) {
-              c0 = 3;
+              c3 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c0 = 3;
+              c3 = 3;
               obj = { value, done: true };
               return obj;
             } else {
-              c0 = 3;
+              closure_0 = value;
+              tmp = channel.getChannel(closure_0);
+              tmp(c2[28])(null != tmp, "Newly created PrivateChannel is null");
+              const tmp23 = tmp(c2[20]);
+              const id = tmp.id;
+              const sendMessage = tmp23.sendMessage;
+              const obj8 = { location: constants.PRIVATE_MESSAGE_COMMAND };
+              const obj7 = tmp(c2[21]);
+              sendMessage(id, obj7.parse(tmp, closure_129_2), true, obj8);
+              c3 = 3;
               return { value: "IconComponent", done: null };
             }
-          } catch (tmp7) {
-            c0 = 3;
-            throw tmp7;
+          } catch (tmp8) {
+            c3 = 3;
+            throw tmp8;
           }
         }
       });
       return obj(...arguments);
     };
     if (null != channel) {
-      let tmp3 = arr;
+      const tmp3 = arr;
       const user = "user";
       const iter2 = arr.find((name) => name.name === size_str);
       let value;

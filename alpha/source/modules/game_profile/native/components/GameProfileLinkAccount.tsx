@@ -1,16 +1,16 @@
-// Module ID: 9310
-// Function ID: 9311
+// Module ID: 9333
+// Function ID: 9334
 // Name: GameProfileLinkAccount
-// Dependencies: [19, 17, 2045, 1392, 21, 4969, 587, 558, 576, 7023, 9311, 9313, 7239, 504, 9221, 1128, 5655, 1202, 5220, 9314, 5230, 2]
+// Dependencies: [19, 17, 2045, 1392, 21, 4969, 587, 558, 576, 7036, 9334, 9336, 7252, 504, 9244, 1128, 5667, 1202, 5232, 9337, 5242, 2]
 
-// Module 9310 (GameProfileLinkAccount)
+// Module 9333 (GameProfileLinkAccount)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7023 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9221 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 9311 */;
-import GameProfileSection from "GameProfileSection" /* 9313 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7036 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9244 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 9334 */;
+import GameProfileSection from "GameProfileSection" /* 9336 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -191,7 +191,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
                             }
                             const obj9 = { showViewAllSkeleton: false, skeletonTitleWidth: 90, children: metroImportDefault(View, obj10) };
                             obj10 = { style: tmp4.card, children: tmp47 };
-                            const GameProfileSectionSkeleton = tmp(9313).GameProfileSectionSkeleton;
+                            const GameProfileSectionSkeleton = tmp(9336).GameProfileSectionSkeleton;
                             const tmp53 = metroImportDefault(GameProfileSectionSkeleton, obj9);
                             cResult[38] = tmp4.card;
                             cResult[39] = tmp47;
@@ -223,7 +223,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
                 let tmp37 = !tmp6;
                 if (tmp37) {
                   const obj13 = { style: tmp4.skeletonCardContentBodySecondary };
-                  tmp37 = metroImportDefault(tmp5(9311), obj13);
+                  tmp37 = metroImportDefault(tmp5(9334), obj13);
                 }
                 cResult[25] = tmp6;
                 cResult[26] = tmp4.skeletonCardContentBodySecondary;
@@ -303,7 +303,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
   let tmp5Result = !tmp4;
   if (tmp5Result) {
     const obj13 = { style: tmp.skeletonCardContentBodySecondary };
-    tmp5Result = tmp5(tmp2(9311), obj13);
+    tmp5Result = tmp5(tmp2(9334), obj13);
   }
   items4[2] = tmp5Result;
   const obj14 = { showViewAllSkeleton: false, skeletonTitleWidth: 90, children: metroImportDefault(View, obj) };

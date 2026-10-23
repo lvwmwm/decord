@@ -1,8 +1,8 @@
-// Module ID: 14304
-// Function ID: 14305
+// Module ID: 14328
+// Function ID: 14329
 // Dependencies: [2]
 
-// Module 14304
+// Module 14328
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GameTimeTier9LargeBadge-2x.png.js");

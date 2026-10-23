@@ -1,17 +1,17 @@
-// Module ID: 9305
-// Function ID: 9306
+// Module ID: 9328
+// Function ID: 9329
 // Name: OpenCriticRatingCircle
-// Dependencies: [21, 558, 576, 7947, 2]
+// Dependencies: [21, 558, 576, 7960, 2]
 
-// Module 9305 (OpenCriticRatingCircle)
+// Module 9328 (OpenCriticRatingCircle)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import inlineStylesDefault from "inlineStyles" /* 7947 */;
+import inlineStylesDefault from "inlineStyles" /* 7960 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp;
-const inlineStyles = tmp(7947);
+const inlineStyles = tmp(7960);
 const jsx = Fragment.jsx;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OpenCriticRatingCircle(rating) {
   let strokeColor;

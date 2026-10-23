@@ -1,9 +1,9 @@
-// Module ID: 12757
-// Function ID: 12758
+// Module ID: 12776
+// Function ID: 12777
 // Name: AutomodUserProfileQuarantineAlert
-// Dependencies: [32, 109, 19, 17, 502, 4881, 4843, 12750, 1087, 4887, 21, 4969, 587, 558, 576, 1128, 1202, 12758, 5220, 5964, 12759, 7475, 573, 4907, 1267, 5249, 2]
+// Dependencies: [32, 109, 19, 17, 502, 4881, 4843, 12769, 1087, 4887, 21, 4969, 587, 558, 576, 1128, 1202, 12777, 5232, 5976, 12778, 7488, 573, 4907, 1267, 5261, 2]
 
-// Module 12757 (AutomodUserProfileQuarantineAlert)
+// Module 12776 (AutomodUserProfileQuarantineAlert)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,11 +12,11 @@ import native from "native" /* 1202 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 4887 */;
 import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4907 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import AlertDefault from "Alert" /* 5964 */;
-import Constants2 from "Constants" /* 12750 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12758 */;
-import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 12759 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import AlertDefault from "Alert" /* 5976 */;
+import Constants2 from "Constants" /* 12769 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12777 */;
+import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 12778 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -364,7 +364,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function PerSer
     const intl = intl6.intl;
     stringResult = intl.string(intl6.t.TBeZmG);
   }
-  const tmp2Result = tmp2(12759);
+  const tmp2Result = tmp2(12778);
   [closure_129_0, tmp8] = tmp2Result.useOpenFixQuarantinedProfileModal({ guildId });
   _slicedToArray(tmp2Result.useOpenFixQuarantinedProfileModal({ guildId }), 2);
   if (!tmp8) {
@@ -561,7 +561,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AutomodUserP
       if (cResult[12] === stateFromStores) {
         tmp18 = cResult[13];
       }
-      stateFromStores(5249)(tmp18);
+      stateFromStores(5261)(tmp18);
       if (stateFromStores2 !== GuildMemberFlags.AUTOMOD_QUARANTINED_BIO) {
         if (stateFromStores2 !== GuildMemberFlags.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) {
           if (stateFromStores2 === GuildMemberFlags.AUTOMOD_QUARANTINED_SERVER_TAG) {
@@ -677,7 +677,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AutomodUserP
       return obj2.getAutomodReason(automodQuarantinedGuildMemberFlags);
     }
   }, items4);
-  stateFromStores(5249)(() => {
+  stateFromStores(5261)(() => {
     const obj = AnalyticsUtilsDefault;
     const obj2 = { type: QUARANTINE_USER_ALERT_KEY, guild_id: guildId, other_user_id: stateFromStores };
     obj.track(constants.OPEN_MODAL, obj2);

@@ -1,12 +1,12 @@
-// Module ID: 13482
-// Function ID: 13483
+// Module ID: 13505
+// Function ID: 13506
 // Name: UserProfileConfirmRemoveFriend
-// Dependencies: [19, 21, 558, 576, 1128, 5900, 5900, 2]
+// Dependencies: [19, 21, 558, 576, 1128, 5912, 5912, 2]
 
-// Module 13482 (UserProfileConfirmRemoveFriend)
+// Module 13505 (UserProfileConfirmRemoveFriend)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1128 */;
-import AlertModal2 from "AlertModal" /* 5900 */;
+import AlertModal2 from "AlertModal" /* 5912 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -68,7 +68,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { variant: "secondary", text: intl4.string(intl5.t["eN6+rI"]) };
-    const AlertActionButton = tmp(5900).AlertActionButton;
+    const AlertActionButton = tmp(5912).AlertActionButton;
     intl4 = tmp(1128).intl;
     const tmp15 = React2(AlertActionButton, obj5, "nevermind");
     cResult[7] = tmp15;

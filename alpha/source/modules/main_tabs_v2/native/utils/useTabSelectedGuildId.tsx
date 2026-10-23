@@ -1,12 +1,12 @@
-// Module ID: 15898
-// Function ID: 15899
+// Module ID: 15931
+// Function ID: 15932
 // Name: useTabSelectedGuildId
-// Dependencies: [4995, 6686, 558, 576, 573, 2]
+// Dependencies: [5000, 6699, 558, 576, 573, 2]
 
-// Module 15898 (useTabSelectedGuildId)
+// Module 15931 (useTabSelectedGuildId)
 import react from "react" /* 576 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
-import SortedGuildStore from "SortedGuildStore" /* 6686 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5000 */;
+import SortedGuildStore from "SortedGuildStore" /* 6699 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

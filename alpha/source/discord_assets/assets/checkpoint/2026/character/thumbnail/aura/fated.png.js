@@ -1,8 +1,8 @@
-// Module ID: 6326
-// Function ID: 6327
+// Module ID: 6339
+// Function ID: 6340
 // Dependencies: [2]
 
-// Module 6326
+// Module 6339
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/aura/fated.png.js");

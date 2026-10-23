@@ -1,103 +1,101 @@
 // Module ID: 5366
 // Function ID: 5367
-// Dependencies: [19, 5305, 5288, 5367, 5351, 5327, 5314, 5287]
-// Exports: useGesture
+// Dependencies: [19, 5316, 5303]
+// Exports: runCallback, touchEventTypeToCallbackType, useMemoizedGestureCallbacks
 
 // Module 5366
-import handlerIDToTag from "handlerIDToTag" /* 5287 */;
-import selectProperties from "selectProperties" /* 5314 */;
-import NativeProxy2 from "NativeProxy" /* 5327 */;
-import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 5351 */;
 import react from "react" /* 19 */;
+import TouchEventType from "TouchEventType" /* 5303 */;
+import CALLBACK_TYPE from "CALLBACK_TYPE" /* 5316 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap;
-
-let c2;
-let c3;
-({ useEffect: c2, useMemo: c3 } = react);
-
-export const useGesture = function useGesture(Fling, clonedAndRemappedConfig) {
-  let config;
-  let jsEventHandler;
-  let type;
-  _require = Fling;
-  dependencyMap = clonedAndRemappedConfig;
-  const tmp2 = jsEventHandler(() => {
-    const obj = type(config[1]);
-    return obj.getNextHandlerTag();
-  }, []);
-  const handlerTag = tmp2;
-  if (clonedAndRemappedConfig.disableReanimated !== jsEventHandler(() => config.disableReanimated, [])) {
-    const _Error2 = Error;
-    let obj2 = require("tagMessage");
-    const self3 = this;
-    const self4 = this;
-    const error = new Error(obj2.tagMessage("The \"disableReanimated\" property must not be changed after the handler is created."));
-    throw error;
-  } else {
-    let obj3 = require("module_5367");
-    const gestureCallbacks = obj3.useGestureCallbacks(tmp2, clonedAndRemappedConfig);
-    jsEventHandler = gestureCallbacks.jsEventHandler;
-    const reanimatedEventHandler = gestureCallbacks.reanimatedEventHandler;
-    const animatedEventHandler = gestureCallbacks.animatedEventHandler;
-    const tmp16 = _require;
-    if (clonedAndRemappedConfig.shouldUseReanimatedDetector) {
-      if (!reanimatedEventHandler) {
-        const _Error = Error;
-        const self = this;
-        const self2 = this;
-        const tmp16Result = tmp16(5288);
-        const error1 = new Error(tmp16Result.tagMessage("Failed to create reanimated event handlers."));
-        throw error1;
-      }
-    }
-    const items = [tmp2, , , ];
-    ({ simultaneousWith: arr[1], requireToFail: arr[2], block: arr[3] } = clonedAndRemappedConfig);
-    const tmpResult = jsEventHandler(() => {
-      const obj = maybeExtractNativeEvent;
-      const obj2 = { simultaneousWith: config.simultaneousWith, requireToFail: config.requireToFail, block: config.block };
-      return obj.prepareRelations(obj2, handlerTag);
-    }, items);
-    const gestureRelations = tmpResult;
-    const items1 = [tmp2, Fling, clonedAndRemappedConfig, jsEventHandler, reanimatedEventHandler, animatedEventHandler, tmpResult];
-    const tmpResult2 = jsEventHandler(() => {
-      const obj = { handlerTag, type, config, detectorCallbacks: obj2, gestureRelations };
-      return obj;
-    }, items1);
-    let closure_7 = tmpResult2;
-    const items2 = [Fling, tmp2];
-    handlerTag(() => {
-      let NativeProxy = NativeProxy2.NativeProxy;
-      NativeProxy.createGestureHandler(type, handlerTag, {});
-      let obj = selectProperties;
-      let result = obj.scheduleFlushOperations();
-      return () => {
-        const NativeProxy = type(config[5]).NativeProxy;
-        NativeProxy.dropGestureHandler(handlerTag);
-        const obj = type(config[6]);
-        const result = obj.scheduleFlushOperations();
-      };
-    }, items2);
-    const items3 = [tmp2, clonedAndRemappedConfig, Fling, tmpResult2];
-    handlerTag(() => {
-      let obj = maybeExtractNativeEvent;
-      const result = obj.prepareConfigForNativeSide(type, config);
-      const NativeProxy = NativeProxy2.NativeProxy;
-      const result1 = NativeProxy.setGestureHandlerConfig(handlerTag, result);
-      let obj2 = selectProperties;
-      const result2 = obj2.scheduleFlushOperations();
-      const obj3 = maybeExtractNativeEvent;
-      obj3.bindSharedValues(config, handlerTag);
-      const obj4 = handlerIDToTag;
-      obj4.registerGesture(handlerTag, closure_7);
-      return () => {
-        const obj = type(closure_1[4]);
-        obj.unbindSharedValues(closure_1_1, handlerTag);
-        const obj2 = type(closure_1[7]);
-        obj2.unregisterGesture(handlerTag);
-      };
-    }, items3);
-    return tmpResult2;
+const useMemo = react.useMemo;
+function getHandler(arg0, onBegin) {
+  if (CALLBACK_TYPE.CALLBACK_TYPE.BEGAN === arg0) {
+    return onBegin.onBegin;
+  } else if (CALLBACK_TYPE.CALLBACK_TYPE.START === arg0) {
+    return onBegin.onActivate;
+  } else if (CALLBACK_TYPE.CALLBACK_TYPE.UPDATE === arg0) {
+    return onBegin.onUpdate;
+  } else if (CALLBACK_TYPE.CALLBACK_TYPE.END === arg0) {
+    return onBegin.onDeactivate;
+  } else if (CALLBACK_TYPE.CALLBACK_TYPE.FINALIZE === arg0) {
+    return onBegin.onFinalize;
+  } else if (CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_DOWN === arg0) {
+    return onBegin.onTouchesDown;
+  } else if (CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_MOVE === arg0) {
+    return onBegin.onTouchesMove;
+  } else if (CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_UP === arg0) {
+    return onBegin.onTouchesUp;
+  } else if (CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_CANCEL === arg0) {
+    return onBegin.onTouchesCancel;
   }
+}
+let obj = { CALLBACK_TYPE: CALLBACK_TYPE.CALLBACK_TYPE };
+getHandler.__closure = obj;
+getHandler.__workletHash = 8647314057396;
+getHandler.__initData = { code: "function getHandler_Pnpm_eventHandlersUtilsTs1(type,callbacks){const{CALLBACK_TYPE}=this.__closure;switch(type){case CALLBACK_TYPE.BEGAN:return callbacks.onBegin;case CALLBACK_TYPE.START:return callbacks.onActivate;case CALLBACK_TYPE.UPDATE:return callbacks.onUpdate;case CALLBACK_TYPE.END:return callbacks.onDeactivate;case CALLBACK_TYPE.FINALIZE:return callbacks.onFinalize;case CALLBACK_TYPE.TOUCHES_DOWN:return callbacks.onTouchesDown;case CALLBACK_TYPE.TOUCHES_MOVE:return callbacks.onTouchesMove;case CALLBACK_TYPE.TOUCHES_UP:return callbacks.onTouchesUp;case CALLBACK_TYPE.TOUCHES_CANCEL:return callbacks.onTouchesCancel;}}" };
+function touchEventTypeToCallbackType(arg0) {
+  if (TouchEventType.TouchEventType.TOUCHES_DOWN === arg0) {
+    return CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_DOWN;
+  } else if (TouchEventType.TouchEventType.TOUCHES_MOVE === arg0) {
+    return CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_MOVE;
+  } else if (TouchEventType.TouchEventType.TOUCHES_UP === arg0) {
+    return CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_UP;
+  } else if (TouchEventType.TouchEventType.TOUCHES_CANCEL === arg0) {
+    return CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_CANCEL;
+  } else {
+    return CALLBACK_TYPE.CALLBACK_TYPE.UNDEFINED;
+  }
+}
+touchEventTypeToCallbackType.__closure = { TouchEventType: TouchEventType.TouchEventType, CALLBACK_TYPE: CALLBACK_TYPE.CALLBACK_TYPE };
+touchEventTypeToCallbackType.__workletHash = 2066229974382;
+touchEventTypeToCallbackType.__initData = { code: "function touchEventTypeToCallbackType_Pnpm_eventHandlersUtilsTs2(eventType){const{TouchEventType,CALLBACK_TYPE}=this.__closure;switch(eventType){case TouchEventType.TOUCHES_DOWN:return CALLBACK_TYPE.TOUCHES_DOWN;case TouchEventType.TOUCHES_MOVE:return CALLBACK_TYPE.TOUCHES_MOVE;case TouchEventType.TOUCHES_UP:return CALLBACK_TYPE.TOUCHES_UP;case TouchEventType.TOUCHES_CANCEL:return CALLBACK_TYPE.TOUCHES_CANCEL;}return CALLBACK_TYPE.UNDEFINED;}" };
+function runCallback(arg0, arg1, arg2) {
+  const tmp = getHandler(arg0, arg1);
+  if (tmp) {
+    tmp(arg2);
+  }
+}
+runCallback.__closure = { getHandler };
+runCallback.__workletHash = 9892811129293;
+runCallback.__initData = { code: "function runCallback_Pnpm_eventHandlersUtilsTs3(type,callbacks,event){const{getHandler}=this.__closure;const handler=getHandler(type,callbacks);if(!handler){return;}handler(event);}" };
+({ TouchEventType: TouchEventType.TouchEventType, CALLBACK_TYPE: CALLBACK_TYPE.CALLBACK_TYPE });
+
+export const useMemoizedGestureCallbacks = function useMemoizedGestureCallbacks(disableReanimated) {
+  let closure_0 = disableReanimated;
+  const items = [, , , , , , , , ];
+  ({ onActivate: arr[0], onBegin: arr[1], onDeactivate: arr[2], onFinalize: arr[3], onTouchesCancel: arr[4], onTouchesDown: arr[5], onTouchesMove: arr[6], onTouchesUp: arr[7], onUpdate: arr[8] } = disableReanimated);
+  return useMemo(() => {
+    const obj = {};
+    if (onBegin.onBegin) {
+      obj.onBegin = onBegin.onBegin;
+    }
+    if (onBegin.onActivate) {
+      obj.onActivate = onBegin.onActivate;
+    }
+    if (onBegin.onDeactivate) {
+      obj.onDeactivate = onBegin.onDeactivate;
+    }
+    if (onBegin.onFinalize) {
+      obj.onFinalize = onBegin.onFinalize;
+    }
+    if (onBegin.onUpdate) {
+      obj.onUpdate = onBegin.onUpdate;
+    }
+    if (onBegin.onTouchesDown) {
+      obj.onTouchesDown = onBegin.onTouchesDown;
+    }
+    if (onBegin.onTouchesMove) {
+      obj.onTouchesMove = onBegin.onTouchesMove;
+    }
+    if (onBegin.onTouchesUp) {
+      obj.onTouchesUp = onBegin.onTouchesUp;
+    }
+    if (onBegin.onTouchesCancel) {
+      obj.onTouchesCancel = onBegin.onTouchesCancel;
+    }
+    return obj;
+  }, items);
 };
+export { touchEventTypeToCallbackType };
+export { runCallback };

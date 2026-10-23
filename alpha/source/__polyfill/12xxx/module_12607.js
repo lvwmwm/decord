@@ -1,20 +1,28 @@
 // Module ID: 12607
 // Function ID: 12608
 // Dependencies: []
-// Exports: severityLevelFromString
+// Exports: isSentryRequestUrl
 
 // Module 12607
 
-export const severityLevelFromString = function severityLevelFromString(arg0) {
-  let str = "warning";
-  if ("warn" !== arg0) {
-    const items = ["fatal", "error", "warning", "log", "info", "debug"];
-    let str2 = "log";
-    if (items.includes(arg0)) {
-      str2 = arg0;
+export const isSentryRequestUrl = function isSentryRequestUrl(arr, getDsn) {
+  const tmp = getDsn && getDsn.getDsn();
+  arr = getDsn && getDsn.getOptions().tunnel;
+  let tmp2 = tmp && arr.includes(tmp.host);
+  if (!tmp2) {
+    let flag = false;
+    if (arr) {
+      let substr = arr;
+      if ("/" === arr[arr.length - 1]) {
+        substr = arr.slice(0, -1);
+      }
+      let substr1 = arr;
+      if ("/" === arr[arr.length - 1]) {
+        substr1 = arr.slice(0, -1);
+      }
+      flag = substr === substr1;
     }
-    str = str2;
+    tmp2 = flag;
   }
-  return str;
+  return tmp2;
 };
-export const validSeverityLevels = ["fatal", "error", "warning", "log", "info", "debug"];

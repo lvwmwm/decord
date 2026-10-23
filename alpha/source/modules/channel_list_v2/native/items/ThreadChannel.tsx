@@ -1,29 +1,29 @@
-// Module ID: 17459
-// Function ID: 17460
+// Module ID: 17503
+// Function ID: 17504
 // Name: ThreadChannel
-// Dependencies: [19, 17, 4903, 4821, 4901, 6756, 4872, 1392, 5616, 5703, 12014, 1087, 6690, 1127, 21, 4969, 587, 558, 576, 7947, 5239, 504, 13114, 5693, 10972, 17460, 8994, 17462, 1202, 17464, 17473, 5980, 17474, 2]
+// Dependencies: [19, 17, 4903, 4821, 4901, 6769, 4872, 1392, 5628, 5715, 12033, 1087, 6703, 1127, 21, 4969, 587, 558, 576, 7960, 5251, 504, 13137, 5705, 10995, 17504, 9017, 17506, 1202, 17508, 17517, 5992, 17518, 2]
 
-// Module 17459 (ThreadChannel)
+// Module 17503 (ThreadChannel)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import ThreadConstants from "ThreadConstants" /* 1127 */;
-import transitionToChannel from "transitionToChannel" /* 5693 */;
-import ReadStateConstants from "ReadStateConstants" /* 6690 */;
-import inlineStylesDefault from "inlineStyles" /* 7947 */;
-import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 10972 */;
-import showThreadLongPressActionSheetDefault from "showThreadLongPressActionSheet" /* 17460 */;
+import transitionToChannel from "transitionToChannel" /* 5705 */;
+import ReadStateConstants from "ReadStateConstants" /* 6703 */;
+import inlineStylesDefault from "inlineStyles" /* 7960 */;
+import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 10995 */;
+import showThreadLongPressActionSheetDefault from "showThreadLongPressActionSheet" /* 17504 */;
 import react_mod from "react" /* 19 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4903 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
-import ReadStateStore from "ReadStateStore" /* 6756 */;
+import ReadStateStore from "ReadStateStore" /* 6769 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
 import UserStore from "UserStore" /* 1392 */;
-import VoiceStateStore from "VoiceStateStore" /* 5616 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5703 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12014 */;
+import VoiceStateStore from "VoiceStateStore" /* 5628 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5715 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12033 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -38,7 +38,7 @@ let obj2;
 let obj3;
 let size;
 let tmp;
-const inlineStyles = tmp(7947);
+const inlineStyles = tmp(7960);
 let react = react_mod;
 const View = react_native.View;
 ({ getScaledChannelRowHeight: map1, CHANNEL_MARGIN_VERTICAL } = RedesignChannelListConstants);

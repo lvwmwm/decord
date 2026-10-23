@@ -1,18 +1,18 @@
-// Module ID: 14526
-// Function ID: 14527
+// Module ID: 14550
+// Function ID: 14551
 // Name: InAppReportsWidgetPreviewElement
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 7059, 8712, 7694, 14341, 7690, 14326, 1128, 5220, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 7072, 8730, 7707, 14365, 7703, 14350, 1128, 5232, 2]
 
-// Module 14526 (InAppReportsWidgetPreviewElement)
+// Module 14550 (InAppReportsWidgetPreviewElement)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7059 */;
-import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7690 */;
-import UserProfilePersonalWidget from "UserProfilePersonalWidget" /* 7694 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8712 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7072 */;
+import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7703 */;
+import UserProfilePersonalWidget from "UserProfilePersonalWidget" /* 7707 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8730 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -23,7 +23,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp6;
-const UserProfilePersonalWidgetCardDefault = tmp6(14341);
+const UserProfilePersonalWidgetCardDefault = tmp6(14365);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, title: { lineHeight: 16, marginBottom: 8 }, card: obj2 };
@@ -135,7 +135,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WidgetPrevie
       if (widget.games.length > 0) {
         const obj6 = { userId, widget, disableInteraction: true, cardStyle: items3 };
         items3 = [tmp7.card, tmp4.card];
-        tmp9 = React3(tmp(14326).WidgetSection, obj6);
+        tmp9 = React3(tmp(14350).WidgetSection, obj6);
       }
     }
   }
@@ -170,7 +170,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WidgetPrevie
       if (widget.games.length > 0) {
         const obj3 = { userId, widget, disableInteraction: true, cardStyle: items1 };
         items1 = [tmp6.card, tmp.card];
-        tmp7 = React3(tmp2(14326).WidgetSection, obj3);
+        tmp7 = React3(tmp2(14350).WidgetSection, obj3);
       }
     }
   }
@@ -178,7 +178,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WidgetPrevie
   if (null !== tmp7) {
     let title;
     const obj4 = { style: tmp.container, children: items3 };
-    const Text = tmp2(5220).Text;
+    const Text = tmp2(5232).Text;
     const tmp12 = hasOwnProperty;
     const tmp13 = View;
     const tmp14 = React3;

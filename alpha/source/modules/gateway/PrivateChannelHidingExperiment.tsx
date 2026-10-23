@@ -1,12 +1,12 @@
-// Module ID: 14933
-// Function ID: 14934
+// Module ID: 14957
+// Function ID: 14958
 // Name: PrivateChannelHidingExperiment
-// Dependencies: [1455, 558, 576, 2, 14934]
+// Dependencies: [1455, 558, 576, 2, 14958]
 // Exports: isChannelMetadataIntegrityCheckEnabled, isChannelMetadataObfuscationEnabled
 
-// Module 14933 (PrivateChannelHidingExperiment)
+// Module 14957 (PrivateChannelHidingExperiment)
 import react from "react" /* 576 */;
-import PrivateChannelHidingExperimentCache from "PrivateChannelHidingExperimentCache" /* 14934 */;
+import PrivateChannelHidingExperimentCache from "PrivateChannelHidingExperimentCache" /* 14958 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

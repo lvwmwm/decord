@@ -1,19 +1,19 @@
-// Module ID: 17716
-// Function ID: 17717
+// Module ID: 17760
+// Function ID: 17761
 // Name: GuildsBarCreateJoinButton
-// Dependencies: [5, 19, 17, 4995, 1087, 1394, 21, 4969, 10116, 2002, 13548, 7292, 9648, 7263, 558, 576, 17662, 504, 17677, 1128, 17717, 587, 11129, 2]
+// Dependencies: [5, 19, 17, 5000, 1087, 1394, 21, 4969, 10138, 2002, 13571, 7305, 9671, 7276, 558, 576, 17706, 504, 17721, 1128, 17761, 587, 11152, 2]
 
-// Module 17716 (GuildsBarCreateJoinButton)
+// Module 17760 (GuildsBarCreateJoinButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import GuildCapUpsellHooks from "GuildCapUpsellHooks" /* 7292 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17662 */;
+import GuildCapUpsellHooks from "GuildCapUpsellHooks" /* 7305 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17706 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5000 */;
 import Constants from "Constants" /* 1087 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -30,8 +30,8 @@ let metroImportDefault;
 let tmp;
 const get_initialized = tmp(504);
 const intl2 = tmp(1128);
-const CirclePlusIcon2 = tmp(11129);
-const HomeDrawerAddServerRow = tmp(17717);
+const CirclePlusIcon2 = tmp(11152);
+const HomeDrawerAddServerRow = tmp(17761);
 function handleCreateJoinGuildPress() {
   return obj(...arguments);
 }
@@ -225,7 +225,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       tmp23 = tmp26;
     }
   }
-  const tmp22 = jsx(tmp17(17662), { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: tmp10, label: tmp11, expandedChildren: tmp12, children: tmp18 });
+  const tmp22 = jsx(tmp17(17706), { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: tmp10, label: tmp11, expandedChildren: tmp12, children: tmp18 });
   cResult[7] = stateFromStores;
   cResult[8] = tmp18;
   cResult[9] = guildsBarAnimatedWrapperStyles;
@@ -259,7 +259,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     };
     return obj;
   }, []);
-  obj4 = { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: intl.string(intl2.t.l5WIbf), expandedChildren: "a_6", children: jsx(CirclePlusIcon, obj5) };
+  obj4 = { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: intl.string(intl2.t.l5WIbf), expandedChildren: "favorite_emojis", children: jsx(CirclePlusIcon, obj5) };
   tmp7 = GuildsBarAnimatedItemWrapperDefault;
   intl = intl2.intl;
   CirclePlusIcon = CirclePlusIcon2.CirclePlusIcon;

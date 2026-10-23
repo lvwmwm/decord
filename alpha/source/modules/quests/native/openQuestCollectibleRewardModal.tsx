@@ -1,20 +1,20 @@
-// Module ID: 14104
-// Function ID: 14105
+// Module ID: 14128
+// Function ID: 14129
 // Name: openQuestCollectibleRewardModal
-// Dependencies: [1392, 6695, 21, 4969, 587, 558, 576, 504, 9565, 9546, 5220, 1128, 7768, 13896, 2]
+// Dependencies: [1392, 6708, 21, 4969, 587, 558, 576, 504, 9588, 9569, 5232, 1128, 7781, 13919, 2]
 // Exports: openQuestCollectibleRewardModal
 
-// Module 14104 (openQuestCollectibleRewardModal)
+// Module 14128 (openQuestCollectibleRewardModal)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import QuestConstants from "QuestConstants" /* 6695 */;
-import getQuestLogger from "getQuestLogger" /* 7768 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9546 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9565 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 13896 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import QuestConstants from "QuestConstants" /* 6708 */;
+import getQuestLogger from "getQuestLogger" /* 7781 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9569 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9588 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 13919 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -57,7 +57,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestCo
   const defaultRewardNameWithArticle = tmpResult3.getDefaultRewardNameWithArticle(quest.config, stateFromStores);
   const tmpResult4 = hooks_QuestHooks;
   const claimedCollectibleRewardMessage = tmpResult4.useClaimedCollectibleRewardMessage(quest.config);
-  const Text = tmp(5220).Text;
+  const Text = tmp(5232).Text;
   const title = tmp4.title;
   const intl = tmp(1128).intl;
   const formatResult = intl.format(intl2.t.YNaxMp, { itemName: defaultRewardNameWithArticle });

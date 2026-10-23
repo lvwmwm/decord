@@ -1,19 +1,19 @@
-// Module ID: 17547
-// Function ID: 17548
+// Module ID: 17591
+// Function ID: 17592
 // Name: GuildMFAWarning
-// Dependencies: [5, 19, 1087, 21, 4969, 587, 11032, 2067, 2002, 5646, 558, 576, 5655, 17548, 1128, 5220, 1202, 6893, 2]
+// Dependencies: [5, 19, 1087, 21, 4969, 587, 11055, 2067, 2002, 5658, 558, 576, 5667, 17592, 1128, 5232, 1202, 6906, 2]
 // Exports: getScaledGuildMFAWarningHeight
 
-// Module 17547 (GuildMFAWarning)
+// Module 17591 (GuildMFAWarning)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import FastImageDefault from "FastImage" /* 5655 */;
-import Pressables from "Pressables" /* 6893 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11032 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17548 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import FastImageDefault from "FastImage" /* 5667 */;
+import Pressables from "Pressables" /* 6906 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11055 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17592 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
@@ -141,7 +141,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildMFAWa
   if (cResult[4] !== tmp4.MFAWarningLink) {
     const obj3 = { variant: "text-xs/medium", color: "text-default", children: items };
     items = [tmp10, ];
-    const Text = tmp(5220).Text;
+    const Text = tmp(5232).Text;
     const obj4 = { style: MFAWarningLink, children: items1 };
     items1 = [" ", tmp12];
     items[1] = metroRequire(native.LegacyText, obj4);

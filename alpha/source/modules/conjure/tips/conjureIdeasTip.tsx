@@ -1,12 +1,12 @@
-// Module ID: 12286
-// Function ID: 12287
+// Module ID: 12305
+// Function ID: 12306
 // Name: conjureIdeasTip
-// Dependencies: [12287, 12285, 2]
+// Dependencies: [12306, 12304, 2]
 // Exports: resolveIdeasTip
 
-// Module 12286 (conjureIdeasTip)
-import conjureTipImpressions from "conjureTipImpressions" /* 12285 */;
-import conjureIdeasIntroTip from "conjureIdeasIntroTip" /* 12287 */;
+// Module 12305 (conjureIdeasTip)
+import conjureTipImpressions from "conjureTipImpressions" /* 12304 */;
+import conjureIdeasIntroTip from "conjureIdeasIntroTip" /* 12306 */;
 import size from "module_2" /* 2 */;
 
 function resolveIdeasTip(turn) {

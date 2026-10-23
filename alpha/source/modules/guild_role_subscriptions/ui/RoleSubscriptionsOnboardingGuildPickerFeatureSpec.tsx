@@ -1,13 +1,13 @@
-// Module ID: 15086
-// Function ID: 15087
+// Module ID: 15111
+// Function ID: 15112
 // Name: RoleSubscriptionsOnboardingGuildPickerFeatureSpec
-// Dependencies: [5176, 4839, 1128, 504, 7345, 7346, 4893, 2]
+// Dependencies: [5188, 4839, 1128, 504, 7358, 7359, 4893, 2]
 
-// Module 15086 (RoleSubscriptionsOnboardingGuildPickerFeatureSpec)
+// Module 15111 (RoleSubscriptionsOnboardingGuildPickerFeatureSpec)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1128 */;
 import GuildRecord from "GuildRecord" /* 4839 */;
-import ExperimentStore from "ExperimentStore" /* 5176 */;
+import ExperimentStore from "ExperimentStore" /* 5188 */;
 import size from "module_2" /* 2 */;
 
 const isGuildOwner = GuildRecord.isGuildOwner;

@@ -1,12 +1,12 @@
-// Module ID: 16219
-// Function ID: 16220
+// Module ID: 16252
+// Function ID: 16253
 // Name: PremiumManagePlanScreen
-// Dependencies: [19, 21, 558, 576, 14755, 2]
+// Dependencies: [19, 21, 558, 576, 14779, 2]
 
-// Module 16219 (PremiumManagePlanScreen)
+// Module 16252 (PremiumManagePlanScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import PremiumManagePlanDefault from "PremiumManagePlan" /* 14755 */;
+import PremiumManagePlanDefault from "PremiumManagePlan" /* 14779 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

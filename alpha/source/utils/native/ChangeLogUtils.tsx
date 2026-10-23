@@ -1,21 +1,21 @@
-// Module ID: 8455
-// Function ID: 8456
+// Module ID: 8467
+// Function ID: 8468
 // Name: utils/ChangeLogUtils
-// Dependencies: [19, 17, 21, 4969, 587, 6692, 5965, 5220, 558, 576, 8456, 7060, 8457, 8458, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 6705, 5977, 5232, 558, 576, 8468, 7073, 8469, 8470, 2]
 
-// Module 8455 (utils/ChangeLogUtils)
+// Module 8467 (utils/ChangeLogUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment2 from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import LegacyTokens from "LegacyTokens" /* 6692 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7060 */;
-import MarkupRulesUtils from "MarkupRulesUtils" /* 8457 */;
-import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 8458 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import LegacyTokens from "LegacyTokens" /* 6705 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7073 */;
+import MarkupRulesUtils from "MarkupRulesUtils" /* 8469 */;
+import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 8470 */;
 import React from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 4969 */;
-import CustomMarkup from "CustomMarkup" /* 5965 */;
+import CustomMarkup from "CustomMarkup" /* 5977 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -270,7 +270,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
     Paragraph = components.Paragraph;
   }
   if (Paragraph == null) {
-    Paragraph = tmp(5220).Text;
+    Paragraph = tmp(5232).Text;
   }
   if (cResult[0] === Paragraph) {
     if (cResult[1] === node.content) {
@@ -306,10 +306,10 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
     }
   }
   const forResult = Symbol.for("react.early_return_sentinel");
-  const tmpResult = output(8456);
+  const tmpResult = output(8468);
   const result = tmpResult.splitParagraphAtImages(node.content);
   if (true !== state.changelogImagesDisabled) {
-    const tmpResult2 = output(8456);
+    const tmpResult2 = output(8468);
     if (tmpResult2.hasImageSegment(result)) {
       if (cResult[18] === Paragraph) {
         if (cResult[19] === output) {
@@ -470,15 +470,15 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
     Paragraph = components.Paragraph;
   }
   if (Paragraph == null) {
-    Paragraph = output(5220).Text;
+    Paragraph = output(5232).Text;
   }
   let tmp6 = dependencyMap;
-  const obj = output(8456);
+  const obj = output(8468);
   const result = obj.splitParagraphAtImages(node.content);
   const tmp5 = output;
   if (true !== state.changelogImagesDisabled) {
     let tmp7;
-    const tmp5Result = tmp5(8456);
+    const tmp5Result = tmp5(8468);
     if (tmp5Result.hasImageSegment(result)) {
       tmp7 = <View key={state.key}>{result.map((type, index) => {
         let tmp6;
@@ -570,7 +570,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
   const obj = ManaTypeConsolidationExperiment;
   if (obj.useManaTypeConsolidationExperiment("ChangeLogStrong")) {
     let str;
-    const Text = tmp(5220).Text;
+    const Text = tmp(5232).Text;
     const tmp5 = jsx;
     if (state != null) {
       str = state.textColor;

@@ -1,9 +1,9 @@
-// Module ID: 7072
-// Function ID: 7073
+// Module ID: 7085
+// Function ID: 7086
 // Name: UserSettingsModalActionCreators
 // Dependencies: [584, 2]
 
-// Module 7072 (UserSettingsModalActionCreators)
+// Module 7085 (UserSettingsModalActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 

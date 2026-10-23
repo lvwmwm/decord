@@ -1,17 +1,17 @@
-// Module ID: 17319
-// Function ID: 17320
+// Module ID: 17363
+// Function ID: 17364
 // Name: PrivacyHint
-// Dependencies: [19, 17, 6654, 17281, 1087, 21, 4969, 558, 576, 1128, 5220, 5025, 6886, 8926, 17320, 2]
+// Dependencies: [19, 17, 6667, 17325, 1087, 21, 4969, 558, 576, 1128, 5232, 5037, 6899, 8949, 17364, 2]
 
-// Module 17319 (PrivacyHint)
+// Module 17363 (PrivacyHint)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
-import react_native from "react-native" /* 5025 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6654 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17281 */;
-import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 17320 */;
+import react_native from "react-native" /* 5037 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6667 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17325 */;
+import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 17364 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -165,10 +165,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Privac
   }
   if (undefined !== asCheckbox && asCheckbox) {
     const obj6 = { checked: consent };
-    tmp13Result = tmp13(tmp(6886).FormCheckbox, obj6);
+    tmp13Result = tmp13(tmp(6899).FormCheckbox, obj6);
   } else {
     const obj8 = { selected: consent };
-    tmp13Result = tmp13(tmp(8926).FormRow.Radio, obj8);
+    tmp13Result = tmp13(tmp(8949).FormRow.Radio, obj8);
   }
   cResult[4] = undefined !== asCheckbox && asCheckbox;
   cResult[5] = consent;
@@ -197,16 +197,16 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Privac
   const tmp6 = React3;
   if (asCheckbox) {
     const obj3 = { checked: consent };
-    tmp7Result = tmp7(tmp2(6886).FormCheckbox, obj3);
+    tmp7Result = tmp7(tmp2(6899).FormCheckbox, obj3);
     tmp9 = tmp7;
   } else {
     const obj4 = { selected: consent };
-    tmp7Result = tmp7(tmp2(8926).FormRow.Radio, obj4);
+    tmp7Result = tmp7(tmp2(8949).FormRow.Radio, obj4);
     tmp9 = tmp7;
   }
   items = [tmp7Result, ];
   const obj5 = { variant: "text-xs/medium", color: "text-muted", style: tmp.checkboxLabel, children: intl2.format(intl3.t.qMDAP0, obj6) };
-  const Text = tmp2(5220).Text;
+  const Text = tmp2(5232).Text;
   intl2 = tmp2(1128).intl;
   obj6 = { termsURL: MarketingURLs.TERMS, privacyURL: MarketingURLs.PRIVACY };
   items[1] = tmp9(Text, obj5);

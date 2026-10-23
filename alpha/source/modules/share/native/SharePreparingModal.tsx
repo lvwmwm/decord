@@ -1,18 +1,18 @@
-// Module ID: 8832
-// Function ID: 8833
+// Module ID: 8855
+// Function ID: 8856
 // Name: SharePreparingModal
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5570, 1128, 6916, 8833, 8834, 6865, 5220, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5582, 1128, 6929, 8856, 8857, 6878, 5232, 2]
 
-// Module 8832 (SharePreparingModal)
+// Module 8855 (SharePreparingModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import Backdrop from "Backdrop" /* 5570 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6865 */;
-import XSmallIcon from "XSmallIcon" /* 6916 */;
-import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 8833 */;
-import MediaModalOverlayHeaderWrapper2 from "MediaModalOverlayHeaderWrapper" /* 8834 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import Backdrop from "Backdrop" /* 5582 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6878 */;
+import XSmallIcon from "XSmallIcon" /* 6929 */;
+import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 8856 */;
+import MediaModalOverlayHeaderWrapper2 from "MediaModalOverlayHeaderWrapper" /* 8857 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -118,7 +118,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharePrepari
       const _Symbol2 = Symbol;
       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
         const obj3 = { variant: "text-sm/medium", color: "text-overlay-light", children: intl2.string(intl3.t.DwTQE5) };
-        const Text = tmp(5220).Text;
+        const Text = tmp(5232).Text;
         intl2 = tmp(1128).intl;
         const tmp31 = hasOwnProperty(Text, obj3);
         cResult[15] = tmp31;

@@ -1,9 +1,9 @@
-// Module ID: 11445
-// Function ID: 11446
+// Module ID: 11465
+// Function ID: 11466
 // Name: BaseEmbeddedAppWebView
-// Dependencies: [5, 32, 19, 17, 5611, 1087, 2026, 21, 4969, 3, 1384, 558, 576, 10751, 11446, 7892, 11447, 11448, 1383, 11431, 11449, 11450, 11451, 11442, 1267, 573, 5894, 1128, 11452, 5609, 1297, 11453, 11454, 1386, 10735, 6645, 2]
+// Dependencies: [5, 32, 19, 17, 5623, 1087, 2026, 21, 4969, 3, 1384, 558, 576, 10773, 11466, 7905, 11467, 11468, 1383, 11451, 11469, 11470, 11471, 11462, 1267, 573, 5906, 1128, 11472, 5621, 1297, 11473, 11474, 1386, 10757, 6658, 2]
 
-// Module 11445 (BaseEmbeddedAppWebView)
+// Module 11465 (BaseEmbeddedAppWebView)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -13,15 +13,15 @@ import intl4 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import URLUtilsDefault from "URLUtils" /* 1386 */;
 import Constants2 from "Constants" /* 2026 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5894 */;
-import usePreviousDefault from "usePrevious" /* 6645 */;
-import WebView2 from "WebView" /* 7892 */;
-import useEmbeddedAppCSPDefault from "useEmbeddedAppCSP" /* 10751 */;
-import isAllowedFrameNavigation from "isAllowedFrameNavigation" /* 11454 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5906 */;
+import usePreviousDefault from "usePrevious" /* 6658 */;
+import WebView2 from "WebView" /* 7905 */;
+import useEmbeddedAppCSPDefault from "useEmbeddedAppCSP" /* 10773 */;
+import isAllowedFrameNavigation from "isAllowedFrameNavigation" /* 11474 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5611 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5623 */;
 import createStyles from "createStyles" /* 4969 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -57,7 +57,7 @@ let closure_10 = Constants2.DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY;
 const jsx = Fragment.jsx;
 let closure_12 = createStyles.createStyles({ webView: { backgroundColor: "transparent" } });
 let tmp2 = new LoggerDefault("BaseEmbeddedAppWebView");
-const logger = tmp2;
+let closure_13 = tmp2;
 let closure_14 = PlatformUtils.isIOS();
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbeddedAppWebView(onLoadError) {
@@ -231,14 +231,17 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
   tmp7(obj2.useState(null), 2);
   const tmp17 = iframeId(tmp2[16])();
   let closure_19 = tmp17;
-  const tmpResult3 = tmp(tmp2[17]);
-  const embeddedAppShimVersion = tmpResult3.useEmbeddedAppShimVersion("BaseEmbeddedAppWebView");
+  let num3 = 1;
+  const tmpResult5 = tmp(tmp2[17]);
+  if (!setHasInvalidUrlError) {
+    num3 = tmpResult5.useEmbeddedAppShimVersion("BaseEmbeddedAppWebView");
+  }
   let obj5 = shellBridgeSecret(tmp2[18]);
   let obj3 = { frame_id: iframeId, platform: tmp(tmp2[19]).ActivityPlatform.MOBILE, mobile_app_version: constants.Version };
   constants = obj5.getConstants();
   const merged = Object.assign(queryParams);
   const merged1 = Object.assign(deepLinkQueryParams);
-  obj3[tmp(tmp2[20]).SHIM_VERSION_PARAM] = "" + embeddedAppShimVersion;
+  obj3[tmp(tmp2[20]).SHIM_VERSION_PARAM] = "" + num3;
   if (cResult[2] !== allowPopups) {
     let obj4 = { allowPopups };
     const tmp23 = tmp16(tmp2[21])(obj4);
@@ -254,8 +257,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
   if (cResult[4] !== framePolicy) {
     let result;
     if (null != framePolicy) {
-      const tmpResult4 = tmp(tmp2[22]);
-      result = tmpResult4.deriveIframeCSPAttributeFromPolicy(framePolicy.policy);
+      const tmpResult6 = tmp(tmp2[22]);
+      result = tmpResult6.deriveIframeCSPAttributeFromPolicy(framePolicy.policy);
     }
     cResult[4] = framePolicy;
     cResult[5] = result;
@@ -273,7 +276,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
               if (cResult[12] === tmp15) {
                 if (cResult[13] === shellBridgeSecret) {
                   let tmp28;
-                  if (cResult[14] === embeddedAppShimVersion) {
+                  if (cResult[14] === num3) {
                     tmp28 = cResult[15];
                   }
                   if (cResult[16] === tmp26) {
@@ -284,43 +287,26 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
                             if (cResult[21] === referrerPolicy) {
                               if (cResult[22] === shellBridgeSecret) {
                                 let tmp29;
-                                if (cResult[23] === embeddedAppShimVersion) {
+                                if (cResult[23] === num3) {
                                   tmp29 = cResult[24];
                                 }
                                 const effect = obj2.useEffect(tmp28, tmp29);
                                 if (cResult[25] !== applicationId) {
-                                  function pe(nativeEvent) {
+                                  function ve(nativeEvent) {
                                     hasInvalidUrlError.warn("activity WebView error for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
                                   }
                                   cResult[25] = applicationId;
-                                  cResult[26] = pe;
-                                  class Se {
-                                    constructor() {
-                                      hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
-                                      const obj = AnalyticsUtilsDefault;
-                                      const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
-                                      obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
-                                      onActivityCrash();
-                                    }
-                                  }
+                                  cResult[26] = ve;
+                                  let tmp31 = ve;
                                 } else {
-                                  let tmp31 = cResult[26];
+                                  tmp31 = cResult[26];
                                 }
                                 if (cResult[27] !== applicationId) {
-                                  function me(nativeEvent) {
+                                  function ge(nativeEvent) {
                                     hasInvalidUrlError.warn("activity WebView render process gone for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
                                   }
                                   cResult[27] = applicationId;
-                                  cResult[28] = me;
-                                  class Se {
-                                    constructor() {
-                                      hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
-                                      const obj = AnalyticsUtilsDefault;
-                                      const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
-                                      obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
-                                      onActivityCrash();
-                                    }
-                                  }
+                                  cResult[28] = ge;
                                 }
                                 if (cResult[29] === activitySessionId) {
                                   if (cResult[30] === applicationId) {
@@ -332,21 +318,13 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
                                         let str = "react.memo_cache_sentinel";
                                         if (cResult[35] === Symbol.for("react.memo_cache_sentinel")) {
                                           let items = [isPipOrGridMode];
-                                          function be() {
+                                          function we() {
                                             return isPipOrGridMode.getUseActivityUrlOverride();
                                           }
-                                          class Se {
-                                            constructor() {
-                                              hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
-                                              const obj = AnalyticsUtilsDefault;
-                                              const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
-                                              obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
-                                              onActivityCrash();
-                                            }
-                                          }
-                                          cResult[36] = be;
-                                          tmp35 = be;
-                                          class Ee {
+                                          cResult[35] = items;
+                                          cResult[36] = we;
+                                          tmp35 = we;
+                                          class Ae {
                                             constructor() {
                                               let tmp10;
                                               try {
@@ -369,16 +347,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
                                           tmp35 = cResult[36];
                                           tmp34 = cResult[35];
                                         }
-                                        class Se {
-                                          constructor() {
-                                            hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
-                                            const obj = AnalyticsUtilsDefault;
-                                            const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
-                                            obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
-                                            onActivityCrash();
-                                          }
-                                        }
-                                        const stateFromStores = obj9.useStateFromStores(tmp34, tmp35);
+                                        const tmpResult7 = tmp(tmp2[25]);
+                                        const stateFromStores = tmpResult7.useStateFromStores(tmp34, tmp35);
                                         if (cResult[37] === combined) {
                                           if (cResult[38] === stateFromStores) {
                                             if (cResult[39] === setHasInvalidUrlError) {
@@ -405,68 +375,64 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
                                                       if (cResult[51] === hasInvalidUrlError) {
                                                         let tmp44;
                                                         let tmp45;
+                                                        let androidWebViewShellConfig;
                                                         if (cResult[52] === onInvalidUrl) {
                                                           tmp44 = cResult[53];
                                                           tmp45 = cResult[54];
                                                         }
                                                         const effect3 = obj2.useEffect(tmp44, tmp45);
                                                         if (cResult[55] === tmp9) {
-                                                          let tmp47;
+                                                          let tmp48;
                                                           let combined1;
                                                           if (cResult[56] === tmp14) {
-                                                            tmp47 = cResult[57];
+                                                            tmp48 = cResult[57];
                                                           }
-                                                          const tmp49 = cResult[58];
-                                                          class Ce {
+                                                          const tmp50 = cResult[58];
+                                                          class Pe {
                                                             constructor() {
-                                                              let tmp2 = null != onInvalidUrl;
-                                                              const tmp = onInvalidUrl;
-                                                              if (tmp2) {
-                                                                tmp2 = !hadInvalidUrlError;
-                                                              }
-                                                              if (tmp2) {
-                                                                tmp2 = hasInvalidUrlError;
-                                                              }
-                                                              if (tmp2) {
-                                                                tmp();
+                                                              let intl;
+                                                              let intl2;
+                                                              let intl3;
+                                                              const tmp = !hadInvalidUrlError && hasInvalidUrlError;
+                                                              if (tmp) {
+                                                                const obj = { title: intl.string(intl4.t.PtobXW), body: intl2.string(intl4.t["55iAUT"]), confirmText: intl3.string(intl4.t.BddRzS) };
+                                                                const show = AlertActionCreatorsDefault.show;
+                                                                AlertActionCreatorsDefault;
+                                                                intl = intl4.intl;
+                                                                intl2 = intl4.intl;
+                                                                intl3 = intl4.intl;
+                                                                show(obj);
                                                               }
                                                             }
                                                           }
-                                                          if (tmp49 === undefined) {
+                                                          if (tmp50 === undefined) {
                                                             if (cResult[59] === tmp9) {
-                                                              let tmp61;
                                                               if (cResult[60] === tmp14) {
                                                                 combined1 = cResult[61];
                                                               }
-                                                              class Ce {
+                                                              let closure_26 = tmp56;
+                                                              class Pe {
                                                                 constructor() {
-                                                                  let tmp2 = null != onInvalidUrl;
-                                                                  const tmp = onInvalidUrl;
-                                                                  if (tmp2) {
-                                                                    tmp2 = !hadInvalidUrlError;
-                                                                  }
-                                                                  if (tmp2) {
-                                                                    tmp2 = hasInvalidUrlError;
-                                                                  }
-                                                                  if (tmp2) {
-                                                                    tmp();
+                                                                  let intl;
+                                                                  let intl2;
+                                                                  let intl3;
+                                                                  const tmp = !hadInvalidUrlError && hasInvalidUrlError;
+                                                                  if (tmp) {
+                                                                    const obj = { title: intl.string(intl4.t.PtobXW), body: intl2.string(intl4.t["55iAUT"]), confirmText: intl3.string(intl4.t.BddRzS) };
+                                                                    const show = AlertActionCreatorsDefault.show;
+                                                                    AlertActionCreatorsDefault;
+                                                                    intl = intl4.intl;
+                                                                    intl2 = intl4.intl;
+                                                                    intl3 = intl4.intl;
+                                                                    show(obj);
                                                                   }
                                                                 }
                                                               }
-                                                              let flag = false;
-                                                              class Se {
-                                                                constructor() {
-                                                                  hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
-                                                                  const obj = AnalyticsUtilsDefault;
-                                                                  const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
-                                                                  obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
-                                                                  onActivityCrash();
-                                                                }
-                                                              }
-                                                              let closure_27 = tmp58[1];
+                                                              const tmp7Result3 = tmp7(obj2.useState(false), 2);
+                                                              let closure_27 = tmp7Result3[1];
                                                               const _Symbol2 = Symbol;
-                                                              const first = tmp58[0];
-                                                              class Ee {
+                                                              const first = tmp7Result3[0];
+                                                              class Ae {
                                                                 constructor() {
                                                                   let tmp10;
                                                                   try {
@@ -485,95 +451,40 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
                                                                   }
                                                                 }
                                                               }
-                                                              if (tmp60 === Symbol.for("react.memo_cache_sentinel")) {
-                                                                const items1 = [];
-                                                                cResult[62] = items1;
-                                                                class Ce {
-                                                                  constructor() {
-                                                                    let tmp2 = null != onInvalidUrl;
-                                                                    const tmp = onInvalidUrl;
-                                                                    if (tmp2) {
-                                                                      tmp2 = !hadInvalidUrlError;
-                                                                    }
-                                                                    if (tmp2) {
-                                                                      tmp2 = hasInvalidUrlError;
-                                                                    }
-                                                                    if (tmp2) {
-                                                                      tmp();
-                                                                    }
-                                                                  }
-                                                                }
-                                                              } else {
-                                                                tmp61 = cResult[62];
-                                                              }
-                                                              const tmp7Result2 = tmp7(obj2.useState(tmp61), 2);
-                                                              const first1 = tmp7Result2[0];
-                                                              let closure_29 = tmp7Result2[1];
+                                                              const tmp7Result4 = tmp7(obj2.useState(tmp60), 2);
+                                                              const first1 = tmp7Result4[0];
+                                                              let closure_29 = tmp7Result4[1];
                                                               if (cResult[63] === applicationId) {
-                                                                let tmp65;
+                                                                let tmp63;
                                                                 let tmp64;
                                                                 if (cResult[64] === (setHasInvalidUrlError && null == framePolicy)) {
-                                                                  tmp65 = cResult[66];
-                                                                  tmp64 = cResult[65];
+                                                                  tmp63 = cResult[65];
+                                                                  tmp64 = cResult[66];
                                                                 }
-                                                                const effect4 = obj2.useEffect(tmp64, tmp65);
+                                                                const effect4 = obj2.useEffect(tmp63, tmp64);
                                                                 if (cResult[67] === first1) {
                                                                   if (cResult[68] === framePolicy) {
-                                                                    let origin;
+                                                                    let bottom2;
                                                                     let closure_30 = tmp68;
-                                                                    class Ne {
-                                                                      constructor(mainDocumentURL) {
-                                                                        mainDocumentURL = mainDocumentURL.mainDocumentURL;
-                                                                        if (null != combined1) {
-                                                                          if (null != mainDocumentURL) {
-                                                                            if (mainDocumentURL !== combined1) {
-                                                                              Linking.openURL(mainDocumentURL.url);
-                                                                              return false;
-                                                                            }
-                                                                          }
+                                                                    class Pe {
+                                                                      constructor() {
+                                                                        let intl;
+                                                                        let intl2;
+                                                                        let intl3;
+                                                                        const tmp = !hadInvalidUrlError && hasInvalidUrlError;
+                                                                        if (tmp) {
+                                                                          const obj = { title: intl.string(intl4.t.PtobXW), body: intl2.string(intl4.t["55iAUT"]), confirmText: intl3.string(intl4.t.BddRzS) };
+                                                                          const show = AlertActionCreatorsDefault.show;
+                                                                          AlertActionCreatorsDefault;
+                                                                          intl = intl4.intl;
+                                                                          intl2 = intl4.intl;
+                                                                          intl3 = intl4.intl;
+                                                                          show(obj);
                                                                         }
-                                                                        if (null != framePolicy) {
-                                                                          const obj2 = isAllowedFrameNavigation;
-                                                                          if (obj2.isAllowedFrameNavigation(mainDocumentURL.url, framePolicy.routerOrigin, framePolicy.policy)) {
-                                                                            return true;
-                                                                          }
-                                                                        } else {
-                                                                          const iter = first1[Symbol.iterator]();
-                                                                          const nextResult = iter.next();
-                                                                          while (iter !== undefined) {
-                                                                            let _RegExp = RegExp;
-                                                                            let self = this;
-                                                                            let self2 = this;
-                                                                            let regExp = new RegExp(nextResult);
-                                                                            if (regExp.test(mainDocumentURL.url)) {
-                                                                              iter.return();
-                                                                              let flag = true;
-                                                                              return true;
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                        const toURLSafe = URLUtilsDefault.toURLSafe;
-                                                                        URLUtilsDefault;
-                                                                        let str = DeveloperActivityShelfStore.getActivityUrlOverride();
-                                                                        if (str == null) {
-                                                                          str = "";
-                                                                        }
-                                                                        const toURLSafeResult = toURLSafe(str);
-                                                                        const tmp13Result = URLUtilsDefault;
-                                                                        const toURLSafeResult1 = tmp13Result.toURLSafe(mainDocumentURL.url);
-                                                                        return null != toURLSafeResult && null != toURLSafeResult1 && toURLSafeResult.origin + toURLSafeResult.pathname === toURLSafeResult1.origin + toURLSafeResult1.pathname;
                                                                       }
                                                                     }
                                                                     let closure_31 = tmp69;
-                                                                    class Se {
-                                                                      constructor() {
-                                                                        hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
-                                                                        const obj = AnalyticsUtilsDefault;
-                                                                        const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
-                                                                        obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
-                                                                        onActivityCrash();
-                                                                      }
-                                                                    }
+                                                                    let origin;
                                                                     if (tmp9 != null) {
                                                                       origin = tmp9.origin;
                                                                     }
@@ -583,53 +494,27 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
                                                                           if (safeAreasConfig != null) {
                                                                             let bottom = safeAreasConfig.bottom;
                                                                           }
-                                                                          class Ne {
-                                                                            constructor(mainDocumentURL) {
-                                                                              mainDocumentURL = mainDocumentURL.mainDocumentURL;
-                                                                              if (null != combined1) {
-                                                                                if (null != mainDocumentURL) {
-                                                                                  if (mainDocumentURL !== combined1) {
-                                                                                    Linking.openURL(mainDocumentURL.url);
-                                                                                    return false;
-                                                                                  }
-                                                                                }
+                                                                          class Pe {
+                                                                            constructor() {
+                                                                              let intl;
+                                                                              let intl2;
+                                                                              let intl3;
+                                                                              const tmp = !hadInvalidUrlError && hasInvalidUrlError;
+                                                                              if (tmp) {
+                                                                                const obj = { title: intl.string(intl4.t.PtobXW), body: intl2.string(intl4.t["55iAUT"]), confirmText: intl3.string(intl4.t.BddRzS) };
+                                                                                const show = AlertActionCreatorsDefault.show;
+                                                                                AlertActionCreatorsDefault;
+                                                                                intl = intl4.intl;
+                                                                                intl2 = intl4.intl;
+                                                                                intl3 = intl4.intl;
+                                                                                show(obj);
                                                                               }
-                                                                              if (null != framePolicy) {
-                                                                                const obj2 = isAllowedFrameNavigation;
-                                                                                if (obj2.isAllowedFrameNavigation(mainDocumentURL.url, framePolicy.routerOrigin, framePolicy.policy)) {
-                                                                                  return true;
-                                                                                }
-                                                                              } else {
-                                                                                const iter = first1[Symbol.iterator]();
-                                                                                const nextResult = iter.next();
-                                                                                while (iter !== undefined) {
-                                                                                  let _RegExp = RegExp;
-                                                                                  let self = this;
-                                                                                  let self2 = this;
-                                                                                  let regExp = new RegExp(nextResult);
-                                                                                  if (regExp.test(mainDocumentURL.url)) {
-                                                                                    iter.return();
-                                                                                    let flag = true;
-                                                                                    return true;
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                              const toURLSafe = URLUtilsDefault.toURLSafe;
-                                                                              URLUtilsDefault;
-                                                                              let str = DeveloperActivityShelfStore.getActivityUrlOverride();
-                                                                              if (str == null) {
-                                                                                str = "";
-                                                                              }
-                                                                              const toURLSafeResult = toURLSafe(str);
-                                                                              const tmp13Result = URLUtilsDefault;
-                                                                              const toURLSafeResult1 = tmp13Result.toURLSafe(mainDocumentURL.url);
-                                                                              return null != toURLSafeResult && null != toURLSafeResult1 && toURLSafeResult.origin + toURLSafeResult.pathname === toURLSafeResult1.origin + toURLSafeResult1.pathname;
                                                                             }
                                                                           }
                                                                         }
                                                                       }
                                                                     }
-                                                                    class Ee {
+                                                                    class Ae {
                                                                       constructor() {
                                                                         let tmp10;
                                                                         try {
@@ -651,11 +536,113 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
                                                                     cResult[71] = origin;
                                                                     cResult[72] = tmp17;
                                                                     cResult[73] = isPipOrGridMode;
-                                                                    let bottom1;
-                                                                    if (safeAreasConfig != null) {
-                                                                      bottom1 = safeAreasConfig.bottom;
+                                                                    class Je {
+                                                                      constructor() {
+                                                                        tmp = closure_26;
+                                                                        if (tmp) {
+                                                                          closure_0 = ["'self'"];
+                                                                          parseCsp = function parseCsp(arg0, str) {
+                                                                            const match = str.match(arg0);
+                                                                            if (null !== match) {
+                                                                              if (match.length >= 2) {
+                                                                                str = match[1];
+                                                                                const parts = str.split(" ");
+                                                                                const found = parts.filter((item) => !closure_1_0.includes(item));
+                                                                              }
+                                                                              return [];
+                                                                            }
+                                                                          };
+                                                                          closure_0 = undefined;
+                                                                          tmp2 = onActivityCrash;
+                                                                          closure_0 = onActivityCrash(function*(arg0, value) {
+                                                                            if (c5 === 2) {
+                                                                              c5 = 3;
+                                                                              throw new TypeError("Generator functions may not be called on executing generators");
+                                                                            } else if (tmp5 === 3) {
+                                                                              if (arg0 === 1) {
+                                                                                throw value;
+                                                                              } else if (arg0 === 2) {
+                                                                                const obj2 = { value, done: true };
+                                                                                return obj2;
+                                                                              } else {
+                                                                                return { value: "IconComponent", done: null };
+                                                                              }
+                                                                            } else {
+                                                                              try {
+                                                                                let items;
+                                                                                c5 = 2;
+                                                                                if (0 === c4) {
+                                                                                  if (arg0 === 1) {
+                                                                                    c5 = 3;
+                                                                                    throw value;
+                                                                                  } else if (arg0 === 2) {
+                                                                                    c5 = 3;
+                                                                                    const obj3 = { value, done: true };
+                                                                                    return obj3;
+                                                                                  } else {
+                                                                                    let closure_3 = tmp2;
+                                                                                    let closure_2 = tmp;
+                                                                                    closure_0 = undefined;
+                                                                                    content_security_policy = undefined;
+                                                                                    items = undefined;
+                                                                                    const obj6 = closure_0(applicationId[29]);
+                                                                                    const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(closure_2_3);
+                                                                                    const tmp29 = closure_0;
+                                                                                    closure_0 = nonTestModeUrlForApplication;
+                                                                                    const tmp30 = applicationId;
+                                                                                    const tmp31 = closure_2_3;
+                                                                                    if (nonTestModeUrlForApplication == null) {
+                                                                                      const _HermesInternal = HermesInternal;
+                                                                                      let str = ".discordsays.com";
+                                                                                      closure_0 = "https://" + tmp31 + ".discordsays.com";
+                                                                                    }
+                                                                                    const HTTP = tmp29(tmp30[30]).HTTP;
+                                                                                    const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
+                                                                                    const _HermesInternal2 = HermesInternal;
+                                                                                    const get = HTTP.get;
+                                                                                    c4 = 1;
+                                                                                    c5 = 1;
+                                                                                    const obj5 = { value: get(obj4), done: false };
+                                                                                    return obj5;
+                                                                                  }
+                                                                                } else if (arg0 === 1) {
+                                                                                  c5 = 3;
+                                                                                  throw value;
+                                                                                } else if (arg0 === 2) {
+                                                                                  c5 = 3;
+                                                                                  const obj = { value, done: true };
+                                                                                  return obj;
+                                                                                } else {
+                                                                                  content_security_policy = value.headers["content-security-policy"];
+                                                                                  items = ["about:blank", "file://*", closure_0];
+                                                                                  let closure_1 = 3;
+                                                                                  closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
+                                                                                  closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
+                                                                                  closure_2_29(items.map((item) => {
+                                                                                    const str = closure_1_1(closure_1_3[31])(item);
+                                                                                    return "^" + str.replace(/\\\*/g, ".*");
+                                                                                  }));
+                                                                                  closure_2_27(true);
+                                                                                  c5 = 3;
+                                                                                  return { value: "IconComponent", done: null };
+                                                                                }
+                                                                              } catch (tmp10) {
+                                                                                c5 = 3;
+                                                                                throw tmp10;
+                                                                              }
+                                                                            }
+                                                                          });
+                                                                          tmp3 = (function fetchAndParseCSP() {
+                                                                            return closure_0(...arguments);
+                                                                          })();
+                                                                        }
+                                                                        return;
+                                                                      }
                                                                     }
-                                                                    cResult[74] = bottom1;
+                                                                    if (safeAreasConfig != null) {
+                                                                      bottom2 = safeAreasConfig.bottom;
+                                                                    }
+                                                                    cResult[74] = bottom2;
                                                                     let left;
                                                                     if (safeAreasConfig != null) {
                                                                       left = safeAreasConfig.left;
@@ -670,216 +657,180 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
                                                                     if (safeAreasConfig != null) {
                                                                       top = safeAreasConfig.top;
                                                                     }
-                                                                    class De {
-                                                                      constructor() {
-                                                                        function tryInjectJavaScript() {
-                                                                          return closure_0(...arguments);
-                                                                        }
-                                                                        const tmp = closure_30;
-                                                                        if (tmp) {
-                                                                          const tmp3 = null;
-                                                                          if (null != closure_17) {
-                                                                            const tmp4 = onActivityCrash;
-                                                                            let closure_0 = onActivityCrash(function*(arg0, value) {
-                                                                              let bottom;
-                                                                              let obj5;
-                                                                              let right;
-                                                                              let top;
-                                                                              if (c9 === 2) {
-                                                                                c9 = 3;
-                                                                                throw new TypeError("Generator functions may not be called on executing generators");
-                                                                              } else if (tmp3 === 3) {
-                                                                                if (arg0 === 1) {
-                                                                                  throw value;
-                                                                                } else if (arg0 === 2) {
-                                                                                  const obj2 = { value, done: true };
-                                                                                  return obj2;
-                                                                                } else {
-                                                                                  return { value: "IconComponent", done: null };
-                                                                                }
+                                                                    function qe() {
+                                                                      function tryInjectJavaScript() {
+                                                                        return closure_0(...arguments);
+                                                                      }
+                                                                      const tmp = closure_30;
+                                                                      if (tmp) {
+                                                                        const tmp3 = null;
+                                                                        if (null != closure_17) {
+                                                                          const tmp4 = onActivityCrash;
+                                                                          let closure_0 = onActivityCrash(function*(arg0, value) {
+                                                                            let bottom;
+                                                                            let obj5;
+                                                                            let right;
+                                                                            let top;
+                                                                            if (c9 === 2) {
+                                                                              c9 = 3;
+                                                                              throw new TypeError("Generator functions may not be called on executing generators");
+                                                                            } else if (tmp3 === 3) {
+                                                                              if (arg0 === 1) {
+                                                                                throw value;
+                                                                              } else if (arg0 === 2) {
+                                                                                const obj2 = { value, done: true };
+                                                                                return obj2;
                                                                               } else {
-                                                                                let c7;
-                                                                                try {
-                                                                                  c9 = 2;
-                                                                                  if (0 === c8) {
-                                                                                    if (arg0 === 1) {
-                                                                                      c9 = 3;
-                                                                                      throw value;
-                                                                                    } else if (arg0 === 2) {
-                                                                                      c9 = 3;
-                                                                                      const obj3 = { value, done: true };
-                                                                                      return obj3;
-                                                                                    } else {
-                                                                                      let closure_5 = tmp;
-                                                                                      let closure_4 = tmp4;
-                                                                                      closure_0 = undefined;
-                                                                                      const obj8 = closure_1_17;
-                                                                                      if (null != closure_1_17) {
-                                                                                        if (null != origin) {
-                                                                                          let rect;
-                                                                                          const tmp14 = c8;
-                                                                                          if (tmp14) {
-                                                                                            rect = { top: 0, bottom: 0, left: 0, right: 0 };
-                                                                                          } else {
-                                                                                            rect = closure_1_19;
-                                                                                          }
-                                                                                          const rect2 = c9;
-                                                                                          let left;
-                                                                                          if (c9 != null) {
-                                                                                            left = rect2.left;
-                                                                                          }
-                                                                                          let left1;
-                                                                                          if (rect != null) {
-                                                                                            left1 = rect.left;
-                                                                                          }
-                                                                                          let c0 = left1;
-                                                                                          if (left1 == null) {
-                                                                                            c0 = 0;
-                                                                                          }
-                                                                                          const rect1 = { left: hadInvalidUrlError(left, c0), right: hadInvalidUrlError(right, c1), top: hadInvalidUrlError(top, c2), bottom: hadInvalidUrlError(bottom, c3) };
-                                                                                          right = undefined;
-                                                                                          if (rect2 != null) {
-                                                                                            right = rect2.right;
-                                                                                          }
-                                                                                          let right1;
-                                                                                          if (rect != null) {
-                                                                                            right1 = rect.right;
-                                                                                          }
-                                                                                          c1 = right1;
-                                                                                          if (right1 == null) {
-                                                                                            c1 = 0;
-                                                                                          }
-                                                                                          top = undefined;
-                                                                                          if (rect2 != null) {
-                                                                                            top = rect2.top;
-                                                                                          }
-                                                                                          let top1;
-                                                                                          if (rect != null) {
-                                                                                            top1 = rect.top;
-                                                                                          }
-                                                                                          c2 = top1;
-                                                                                          if (top1 == null) {
-                                                                                            c2 = 0;
-                                                                                          }
-                                                                                          bottom = undefined;
-                                                                                          if (rect2 != null) {
-                                                                                            bottom = rect2.bottom;
-                                                                                          }
-                                                                                          let bottom1;
-                                                                                          if (rect != null) {
-                                                                                            bottom1 = rect.bottom;
-                                                                                          }
-                                                                                          c3 = bottom1;
-                                                                                          if (bottom1 == null) {
-                                                                                            c3 = 0;
-                                                                                          }
-                                                                                          const obj4 = { type: "safeAreaUpdateEvent", data: obj5 };
-                                                                                          obj5 = { insets: rect1 };
-                                                                                          const tmp30 = iframeId(applicationId[34])(obj4, tmp13);
-                                                                                          closure_0 = tmp30;
-                                                                                          c7 = 1;
-                                                                                          c8 = 2;
-                                                                                          c9 = 1;
-                                                                                          const obj6 = { value: obj8.injectJavaScript(tmp30), done: false };
-                                                                                          return obj6;
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  } else if (1 === c8) {
-                                                                                    c7 = 0;
-                                                                                    if (null != ref.current) {
-                                                                                      const current = ref.current;
-                                                                                      current.injectJavaScript(closure_0);
-                                                                                    }
-                                                                                  } else if (arg0 === 1) {
+                                                                                return { value: "IconComponent", done: null };
+                                                                              }
+                                                                            } else {
+                                                                              let c7;
+                                                                              try {
+                                                                                c9 = 2;
+                                                                                if (0 === c8) {
+                                                                                  if (arg0 === 1) {
                                                                                     c9 = 3;
                                                                                     throw value;
                                                                                   } else if (arg0 === 2) {
-                                                                                    c7 = 0;
                                                                                     c9 = 3;
-                                                                                    const obj = { value, done: true };
-                                                                                    return obj;
+                                                                                    const obj3 = { value, done: true };
+                                                                                    return obj3;
                                                                                   } else {
-                                                                                    c7 = 0;
+                                                                                    let closure_5 = tmp;
+                                                                                    let closure_4 = tmp4;
+                                                                                    closure_0 = undefined;
+                                                                                    const obj8 = closure_1_17;
+                                                                                    if (null != closure_1_17) {
+                                                                                      if (null != origin) {
+                                                                                        let rect;
+                                                                                        const tmp14 = c8;
+                                                                                        if (tmp14) {
+                                                                                          rect = { top: 0, bottom: 0, left: 0, right: 0 };
+                                                                                        } else {
+                                                                                          rect = closure_1_19;
+                                                                                        }
+                                                                                        const rect2 = c9;
+                                                                                        let left;
+                                                                                        if (c9 != null) {
+                                                                                          left = rect2.left;
+                                                                                        }
+                                                                                        let left1;
+                                                                                        if (rect != null) {
+                                                                                          left1 = rect.left;
+                                                                                        }
+                                                                                        let c0 = left1;
+                                                                                        if (left1 == null) {
+                                                                                          c0 = 0;
+                                                                                        }
+                                                                                        const rect1 = { left: hadInvalidUrlError(left, c0), right: hadInvalidUrlError(right, c1), top: hadInvalidUrlError(top, c2), bottom: hadInvalidUrlError(bottom, c3) };
+                                                                                        right = undefined;
+                                                                                        if (rect2 != null) {
+                                                                                          right = rect2.right;
+                                                                                        }
+                                                                                        let right1;
+                                                                                        if (rect != null) {
+                                                                                          right1 = rect.right;
+                                                                                        }
+                                                                                        c1 = right1;
+                                                                                        if (right1 == null) {
+                                                                                          c1 = 0;
+                                                                                        }
+                                                                                        top = undefined;
+                                                                                        if (rect2 != null) {
+                                                                                          top = rect2.top;
+                                                                                        }
+                                                                                        let top1;
+                                                                                        if (rect != null) {
+                                                                                          top1 = rect.top;
+                                                                                        }
+                                                                                        c2 = top1;
+                                                                                        if (top1 == null) {
+                                                                                          c2 = 0;
+                                                                                        }
+                                                                                        bottom = undefined;
+                                                                                        if (rect2 != null) {
+                                                                                          bottom = rect2.bottom;
+                                                                                        }
+                                                                                        let bottom1;
+                                                                                        if (rect != null) {
+                                                                                          bottom1 = rect.bottom;
+                                                                                        }
+                                                                                        c3 = bottom1;
+                                                                                        if (bottom1 == null) {
+                                                                                          c3 = 0;
+                                                                                        }
+                                                                                        const obj4 = { type: "safeAreaUpdateEvent", data: obj5 };
+                                                                                        obj5 = { insets: rect1 };
+                                                                                        const tmp30 = iframeId(applicationId[34])(obj4, tmp13);
+                                                                                        closure_0 = tmp30;
+                                                                                        c7 = 1;
+                                                                                        c8 = 2;
+                                                                                        c9 = 1;
+                                                                                        const obj6 = { value: obj8.injectJavaScript(tmp30), done: false };
+                                                                                        return obj6;
+                                                                                      }
+                                                                                    }
                                                                                   }
+                                                                                } else if (1 === c8) {
+                                                                                  c7 = 0;
+                                                                                  if (null != ref.current) {
+                                                                                    const current = ref.current;
+                                                                                    current.injectJavaScript(closure_0);
+                                                                                  }
+                                                                                } else if (arg0 === 1) {
                                                                                   c9 = 3;
-                                                                                  return { value: "IconComponent", done: null };
-                                                                                } catch (tmp31) {
-                                                                                  let closure_6 = tmp31;
-                                                                                  if (0 === c7) {
-                                                                                    c9 = 3;
-                                                                                    throw tmp31;
-                                                                                  } else {
-                                                                                    c8 = 1;
-                                                                                  }
+                                                                                  throw value;
+                                                                                } else if (arg0 === 2) {
+                                                                                  c7 = 0;
+                                                                                  c9 = 3;
+                                                                                  const obj = { value, done: true };
+                                                                                  return obj;
+                                                                                } else {
+                                                                                  c7 = 0;
+                                                                                }
+                                                                                c9 = 3;
+                                                                                return { value: "IconComponent", done: null };
+                                                                              } catch (tmp31) {
+                                                                                let closure_6 = tmp31;
+                                                                                if (0 === c7) {
+                                                                                  c9 = 3;
+                                                                                  throw tmp31;
+                                                                                } else {
+                                                                                  c8 = 1;
                                                                                 }
                                                                               }
-                                                                            });
-                                                                            tryInjectJavaScript();
-                                                                          }
+                                                                            }
+                                                                          });
+                                                                          tryInjectJavaScript();
                                                                         }
                                                                       }
                                                                     }
                                                                     cResult[77] = top;
-                                                                    cResult[78] = null != tmp51 && null != tmp9 && null != tmp14;
+                                                                    cResult[78] = null != tmp52 && null != tmp9 && null != tmp14;
                                                                     cResult[79] = tmp11;
-                                                                    cResult[80] = De;
+                                                                    cResult[80] = qe;
                                                                   }
                                                                 }
-                                                                class Ne {
-                                                                  constructor(mainDocumentURL) {
-                                                                    mainDocumentURL = mainDocumentURL.mainDocumentURL;
-                                                                    if (null != combined1) {
-                                                                      if (null != mainDocumentURL) {
-                                                                        if (mainDocumentURL !== combined1) {
-                                                                          Linking.openURL(mainDocumentURL.url);
-                                                                          return false;
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                    if (null != framePolicy) {
-                                                                      const obj2 = isAllowedFrameNavigation;
-                                                                      if (obj2.isAllowedFrameNavigation(mainDocumentURL.url, framePolicy.routerOrigin, framePolicy.policy)) {
-                                                                        return true;
-                                                                      }
-                                                                    } else {
-                                                                      const iter = first1[Symbol.iterator]();
-                                                                      const nextResult = iter.next();
-                                                                      while (iter !== undefined) {
-                                                                        let _RegExp = RegExp;
-                                                                        let self = this;
-                                                                        let self2 = this;
-                                                                        let regExp = new RegExp(nextResult);
-                                                                        if (regExp.test(mainDocumentURL.url)) {
-                                                                          iter.return();
-                                                                          let flag = true;
-                                                                          return true;
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                    const toURLSafe = URLUtilsDefault.toURLSafe;
-                                                                    URLUtilsDefault;
-                                                                    let str = DeveloperActivityShelfStore.getActivityUrlOverride();
-                                                                    if (str == null) {
-                                                                      str = "";
-                                                                    }
-                                                                    const toURLSafeResult = toURLSafe(str);
-                                                                    const tmp13Result = URLUtilsDefault;
-                                                                    const toURLSafeResult1 = tmp13Result.toURLSafe(mainDocumentURL.url);
-                                                                    return null != toURLSafeResult && null != toURLSafeResult1 && toURLSafeResult.origin + toURLSafeResult.pathname === toURLSafeResult1.origin + toURLSafeResult1.pathname;
-                                                                  }
-                                                                }
-                                                                class Se {
+                                                                class Pe {
                                                                   constructor() {
-                                                                    hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
-                                                                    const obj = AnalyticsUtilsDefault;
-                                                                    const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
-                                                                    obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
-                                                                    onActivityCrash();
+                                                                    let intl;
+                                                                    let intl2;
+                                                                    let intl3;
+                                                                    const tmp = !hadInvalidUrlError && hasInvalidUrlError;
+                                                                    if (tmp) {
+                                                                      const obj = { title: intl.string(intl4.t.PtobXW), body: intl2.string(intl4.t["55iAUT"]), confirmText: intl3.string(intl4.t.BddRzS) };
+                                                                      const show = AlertActionCreatorsDefault.show;
+                                                                      AlertActionCreatorsDefault;
+                                                                      intl = intl4.intl;
+                                                                      intl2 = intl4.intl;
+                                                                      intl3 = intl4.intl;
+                                                                      show(obj);
+                                                                    }
                                                                   }
                                                                 }
+                                                                cResult[67] = first1;
                                                                 cResult[68] = framePolicy;
-                                                                class Ee {
+                                                                class Ae {
                                                                   constructor() {
                                                                     let tmp10;
                                                                     try {
@@ -898,184 +849,138 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
                                                                     }
                                                                   }
                                                                 }
-                                                                cResult[70] = Ne;
+                                                                cResult[70] = tmp67;
                                                               }
-                                                              function je() {
-                                                                function fetchAndParseCSP() {
-                                                                  return closure_0(...arguments);
-                                                                }
-                                                                const tmp = closure_26;
-                                                                if (tmp) {
-                                                                  let closure_0 = ["'self'"];
-                                                                  function parseCsp(arg0, str) {
-                                                                    const match = str.match(arg0);
-                                                                    if (null !== match) {
-                                                                      if (match.length >= 2) {
-                                                                        str = match[1];
-                                                                        const parts = str.split(" ");
-                                                                        const found = parts.filter((item) => !closure_1_0.includes(item));
+                                                              class Je {
+                                                                constructor() {
+                                                                  tmp = closure_26;
+                                                                  if (tmp) {
+                                                                    closure_0 = ["'self'"];
+                                                                    parseCsp = function parseCsp(arg0, str) {
+                                                                      const match = str.match(arg0);
+                                                                      if (null !== match) {
+                                                                        if (match.length >= 2) {
+                                                                          str = match[1];
+                                                                          const parts = str.split(" ");
+                                                                          const found = parts.filter((item) => !closure_1_0.includes(item));
+                                                                        }
+                                                                        return [];
                                                                       }
-                                                                      return [];
-                                                                    }
-                                                                  }
-                                                                  const tmp2 = onActivityCrash;
-                                                                  closure_0 = onActivityCrash(function*(arg0, value) {
-                                                                    if (c5 === 2) {
-                                                                      c5 = 3;
-                                                                      throw new TypeError("Generator functions may not be called on executing generators");
-                                                                    } else if (tmp5 === 3) {
-                                                                      if (arg0 === 1) {
-                                                                        throw value;
-                                                                      } else if (arg0 === 2) {
-                                                                        const obj2 = { value, done: true };
-                                                                        return obj2;
+                                                                    };
+                                                                    closure_0 = undefined;
+                                                                    tmp2 = onActivityCrash;
+                                                                    closure_0 = onActivityCrash(function*(arg0, value) {
+                                                                      if (c5 === 2) {
+                                                                        c5 = 3;
+                                                                        throw new TypeError("Generator functions may not be called on executing generators");
+                                                                      } else if (tmp5 === 3) {
+                                                                        if (arg0 === 1) {
+                                                                          throw value;
+                                                                        } else if (arg0 === 2) {
+                                                                          const obj2 = { value, done: true };
+                                                                          return obj2;
+                                                                        } else {
+                                                                          return { value: "IconComponent", done: null };
+                                                                        }
                                                                       } else {
-                                                                        return { value: "IconComponent", done: null };
-                                                                      }
-                                                                    } else {
-                                                                      try {
-                                                                        let items;
-                                                                        c5 = 2;
-                                                                        if (0 === c4) {
-                                                                          if (arg0 === 1) {
+                                                                        try {
+                                                                          let items;
+                                                                          c5 = 2;
+                                                                          if (0 === c4) {
+                                                                            if (arg0 === 1) {
+                                                                              c5 = 3;
+                                                                              throw value;
+                                                                            } else if (arg0 === 2) {
+                                                                              c5 = 3;
+                                                                              const obj3 = { value, done: true };
+                                                                              return obj3;
+                                                                            } else {
+                                                                              let closure_3 = tmp2;
+                                                                              let closure_2 = tmp;
+                                                                              closure_0 = undefined;
+                                                                              content_security_policy = undefined;
+                                                                              items = undefined;
+                                                                              const obj6 = closure_0(applicationId[29]);
+                                                                              const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(closure_2_3);
+                                                                              const tmp29 = closure_0;
+                                                                              closure_0 = nonTestModeUrlForApplication;
+                                                                              const tmp30 = applicationId;
+                                                                              const tmp31 = closure_2_3;
+                                                                              if (nonTestModeUrlForApplication == null) {
+                                                                                const _HermesInternal = HermesInternal;
+                                                                                let str = ".discordsays.com";
+                                                                                closure_0 = "https://" + tmp31 + ".discordsays.com";
+                                                                              }
+                                                                              const HTTP = tmp29(tmp30[30]).HTTP;
+                                                                              const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
+                                                                              const _HermesInternal2 = HermesInternal;
+                                                                              const get = HTTP.get;
+                                                                              c4 = 1;
+                                                                              c5 = 1;
+                                                                              const obj5 = { value: get(obj4), done: false };
+                                                                              return obj5;
+                                                                            }
+                                                                          } else if (arg0 === 1) {
                                                                             c5 = 3;
                                                                             throw value;
                                                                           } else if (arg0 === 2) {
                                                                             c5 = 3;
-                                                                            const obj3 = { value, done: true };
-                                                                            return obj3;
+                                                                            const obj = { value, done: true };
+                                                                            return obj;
                                                                           } else {
-                                                                            let closure_3 = tmp2;
-                                                                            let closure_2 = tmp;
-                                                                            closure_0 = undefined;
-                                                                            content_security_policy = undefined;
-                                                                            items = undefined;
-                                                                            const obj6 = closure_0(applicationId[29]);
-                                                                            const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(closure_2_3);
-                                                                            const tmp29 = closure_0;
-                                                                            closure_0 = nonTestModeUrlForApplication;
-                                                                            const tmp30 = applicationId;
-                                                                            const tmp31 = closure_2_3;
-                                                                            if (nonTestModeUrlForApplication == null) {
-                                                                              const _HermesInternal = HermesInternal;
-                                                                              let str = ".discordsays.com";
-                                                                              closure_0 = "https://" + tmp31 + ".discordsays.com";
-                                                                            }
-                                                                            const HTTP = tmp29(tmp30[30]).HTTP;
-                                                                            const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
-                                                                            const _HermesInternal2 = HermesInternal;
-                                                                            const get = HTTP.get;
-                                                                            c4 = 1;
-                                                                            c5 = 1;
-                                                                            const obj5 = { value: get(obj4), done: false };
-                                                                            return obj5;
+                                                                            content_security_policy = value.headers["content-security-policy"];
+                                                                            items = ["about:blank", "file://*", closure_0];
+                                                                            let closure_1 = 3;
+                                                                            closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
+                                                                            closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
+                                                                            closure_2_29(items.map((item) => {
+                                                                              const str = closure_1_1(closure_1_3[31])(item);
+                                                                              return "^" + str.replace(/\\\*/g, ".*");
+                                                                            }));
+                                                                            closure_2_27(true);
+                                                                            c5 = 3;
+                                                                            return { value: "IconComponent", done: null };
                                                                           }
-                                                                        } else if (arg0 === 1) {
+                                                                        } catch (tmp10) {
                                                                           c5 = 3;
-                                                                          throw value;
-                                                                        } else if (arg0 === 2) {
-                                                                          c5 = 3;
-                                                                          const obj = { value, done: true };
-                                                                          return obj;
-                                                                        } else {
-                                                                          content_security_policy = value.headers["content-security-policy"];
-                                                                          items = ["about:blank", "file://*", closure_0];
-                                                                          let closure_1 = 3;
-                                                                          closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
-                                                                          closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
-                                                                          closure_2_29(items.map((item) => {
-                                                                            const str = closure_1_1(closure_1_3[31])(item);
-                                                                            return "^" + str.replace(/\\\*/g, ".*");
-                                                                          }));
-                                                                          closure_2_27(true);
-                                                                          c5 = 3;
-                                                                          return { value: "IconComponent", done: null };
+                                                                          throw tmp10;
                                                                         }
-                                                                      } catch (tmp10) {
-                                                                        c5 = 3;
-                                                                        throw tmp10;
                                                                       }
-                                                                    }
-                                                                  });
-                                                                  fetchAndParseCSP();
+                                                                    });
+                                                                    tmp3 = (function fetchAndParseCSP() {
+                                                                      return closure_0(...arguments);
+                                                                    })();
+                                                                  }
+                                                                  return;
                                                                 }
                                                               }
-                                                              const items2 = [applicationId, setHasInvalidUrlError && null == framePolicy];
+                                                              const items1 = [applicationId, tmp18 && null == framePolicy];
                                                               cResult[63] = applicationId;
                                                               cResult[64] = setHasInvalidUrlError && null == framePolicy;
-                                                              cResult[65] = je;
-                                                              cResult[66] = items2;
-                                                              tmp65 = items2;
+                                                              cResult[65] = Je;
+                                                              cResult[66] = items1;
+                                                              tmp64 = items1;
+                                                              tmp63 = Je;
                                                             }
                                                           }
-                                                          class Se {
-                                                            constructor() {
-                                                              hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
-                                                              const obj = AnalyticsUtilsDefault;
-                                                              const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
-                                                              obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
-                                                              onActivityCrash();
-                                                            }
-                                                          }
+                                                          combined1 = null;
+                                                          let tmp53 = null;
                                                           if (null != tmp9) {
-                                                            const tmp53 = setHasInvalidUrlError;
-                                                            if (tmp53) {
+                                                            if (setHasInvalidUrlError) {
                                                               let _HermesInternal = HermesInternal;
                                                               combined1 = "file://" + tmp14;
                                                             } else {
                                                               combined1 = undefined;
-                                                              if (tmp47 != null) {
-                                                                combined1 = tmp47.uri;
+                                                              if (tmp48 != null) {
+                                                                combined1 = tmp48.uri;
                                                               }
                                                               if (combined1 == null) {
                                                                 combined1 = null;
                                                               }
                                                             }
-                                                            class Ne {
-                                                              constructor(mainDocumentURL) {
-                                                                mainDocumentURL = mainDocumentURL.mainDocumentURL;
-                                                                if (null != combined1) {
-                                                                  if (null != mainDocumentURL) {
-                                                                    if (mainDocumentURL !== combined1) {
-                                                                      Linking.openURL(mainDocumentURL.url);
-                                                                      return false;
-                                                                    }
-                                                                  }
-                                                                }
-                                                                if (null != framePolicy) {
-                                                                  const obj2 = isAllowedFrameNavigation;
-                                                                  if (obj2.isAllowedFrameNavigation(mainDocumentURL.url, framePolicy.routerOrigin, framePolicy.policy)) {
-                                                                    return true;
-                                                                  }
-                                                                } else {
-                                                                  const iter = first1[Symbol.iterator]();
-                                                                  const nextResult = iter.next();
-                                                                  while (iter !== undefined) {
-                                                                    let _RegExp = RegExp;
-                                                                    let self = this;
-                                                                    let self2 = this;
-                                                                    let regExp = new RegExp(nextResult);
-                                                                    if (regExp.test(mainDocumentURL.url)) {
-                                                                      iter.return();
-                                                                      let flag = true;
-                                                                      return true;
-                                                                    }
-                                                                  }
-                                                                }
-                                                                const toURLSafe = URLUtilsDefault.toURLSafe;
-                                                                URLUtilsDefault;
-                                                                let str = DeveloperActivityShelfStore.getActivityUrlOverride();
-                                                                if (str == null) {
-                                                                  str = "";
-                                                                }
-                                                                const toURLSafeResult = toURLSafe(str);
-                                                                const tmp13Result = URLUtilsDefault;
-                                                                const toURLSafeResult1 = tmp13Result.toURLSafe(mainDocumentURL.url);
-                                                                return null != toURLSafeResult && null != toURLSafeResult1 && toURLSafeResult.origin + toURLSafeResult.pathname === toURLSafeResult1.origin + toURLSafeResult1.pathname;
-                                                              }
-                                                            }
+                                                            tmp53 = combined1;
                                                           }
-                                                          class Ee {
+                                                          class Ae {
                                                             constructor() {
                                                               let tmp10;
                                                               try {
@@ -1096,35 +1001,56 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
                                                           }
                                                           cResult[58] = undefined;
                                                           cResult[59] = tmp9;
-                                                          cResult[60] = tmp14;
-                                                          cResult[61] = null;
+                                                          cResult[61] = tmp53;
                                                         }
-                                                        class Ce {
+                                                        class Pe {
                                                           constructor() {
-                                                            let tmp2 = null != onInvalidUrl;
-                                                            const tmp = onInvalidUrl;
-                                                            if (tmp2) {
-                                                              tmp2 = !hadInvalidUrlError;
-                                                            }
-                                                            if (tmp2) {
-                                                              tmp2 = hasInvalidUrlError;
-                                                            }
-                                                            if (tmp2) {
-                                                              tmp();
+                                                            let intl;
+                                                            let intl2;
+                                                            let intl3;
+                                                            const tmp = !hadInvalidUrlError && hasInvalidUrlError;
+                                                            if (tmp) {
+                                                              const obj = { title: intl.string(intl4.t.PtobXW), body: intl2.string(intl4.t["55iAUT"]), confirmText: intl3.string(intl4.t.BddRzS) };
+                                                              const show = AlertActionCreatorsDefault.show;
+                                                              AlertActionCreatorsDefault;
+                                                              intl = intl4.intl;
+                                                              intl2 = intl4.intl;
+                                                              intl3 = intl4.intl;
+                                                              show(obj);
                                                             }
                                                           }
                                                         }
-                                                        class Se {
-                                                          constructor() {
-                                                            hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
-                                                            const obj = AnalyticsUtilsDefault;
-                                                            const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
-                                                            obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
-                                                            onActivityCrash();
+                                                        if (!setHasInvalidUrlError) {
+                                                          androidWebViewShellConfig = null;
+                                                          if (null != tmp9) {
+                                                            androidWebViewShellConfig = null;
+                                                            if (null != tmp14) {
+                                                              let obj6 = { iframeUrl: tmp9, shellFilePath: null };
+                                                              const tmpResult8 = tmp(tmp2[28]);
+                                                              class Pe {
+                                                                constructor() {
+                                                                  let intl;
+                                                                  let intl2;
+                                                                  let intl3;
+                                                                  const tmp = !hadInvalidUrlError && hasInvalidUrlError;
+                                                                  if (tmp) {
+                                                                    const obj = { title: intl.string(intl4.t.PtobXW), body: intl2.string(intl4.t["55iAUT"]), confirmText: intl3.string(intl4.t.BddRzS) };
+                                                                    const show = AlertActionCreatorsDefault.show;
+                                                                    AlertActionCreatorsDefault;
+                                                                    intl = intl4.intl;
+                                                                    intl2 = intl4.intl;
+                                                                    intl3 = intl4.intl;
+                                                                    show(obj);
+                                                                  }
+                                                                }
+                                                              }
+                                                              androidWebViewShellConfig = tmpResult8.getAndroidWebViewShellConfig(obj6);
+                                                            }
                                                           }
                                                         }
                                                         cResult[55] = tmp9;
-                                                        class Ee {
+                                                        cResult[56] = tmp14;
+                                                        class Ae {
                                                           constructor() {
                                                             let tmp10;
                                                             try {
@@ -1143,38 +1069,29 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
                                                             }
                                                           }
                                                         }
-                                                        cResult[57] = null;
-                                                        tmp47 = tmp48;
+                                                        cResult[57] = androidWebViewShellConfig;
+                                                        tmp48 = androidWebViewShellConfig;
                                                       }
                                                     }
-                                                    class Ce {
+                                                    class Pe {
                                                       constructor() {
-                                                        let tmp2 = null != onInvalidUrl;
-                                                        const tmp = onInvalidUrl;
-                                                        if (tmp2) {
-                                                          tmp2 = !hadInvalidUrlError;
-                                                        }
-                                                        if (tmp2) {
-                                                          tmp2 = hasInvalidUrlError;
-                                                        }
-                                                        if (tmp2) {
-                                                          tmp();
+                                                        let intl;
+                                                        let intl2;
+                                                        let intl3;
+                                                        const tmp = !hadInvalidUrlError && hasInvalidUrlError;
+                                                        if (tmp) {
+                                                          const obj = { title: intl.string(intl4.t.PtobXW), body: intl2.string(intl4.t["55iAUT"]), confirmText: intl3.string(intl4.t.BddRzS) };
+                                                          const show = AlertActionCreatorsDefault.show;
+                                                          AlertActionCreatorsDefault;
+                                                          intl = intl4.intl;
+                                                          intl2 = intl4.intl;
+                                                          intl3 = intl4.intl;
+                                                          show(obj);
                                                         }
                                                       }
                                                     }
-                                                    const items3 = [, , ];
-                                                    class Se {
-                                                      constructor() {
-                                                        hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
-                                                        const obj = AnalyticsUtilsDefault;
-                                                        const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
-                                                        obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
-                                                        onActivityCrash();
-                                                      }
-                                                    }
-                                                    items3[1] = hadInvalidUrlError;
-                                                    items3[2] = onInvalidUrl;
-                                                    class Ee {
+                                                    const items2 = [hasInvalidUrlError, hadInvalidUrlError, onInvalidUrl];
+                                                    class Ae {
                                                       constructor() {
                                                         let tmp10;
                                                         try {
@@ -1195,12 +1112,11 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
                                                     }
                                                     cResult[51] = hasInvalidUrlError;
                                                     cResult[52] = onInvalidUrl;
-                                                    cResult[53] = Ce;
-                                                    cResult[54] = items3;
-                                                    tmp45 = items3;
-                                                    tmp44 = Ce;
+                                                    cResult[54] = items2;
+                                                    tmp45 = items2;
+                                                    tmp44 = tmp46;
                                                   }
-                                                  class Ie {
+                                                  class Pe {
                                                     constructor() {
                                                       let intl;
                                                       let intl2;
@@ -1217,19 +1133,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
                                                       }
                                                     }
                                                   }
-                                                  const items4 = [, ];
-                                                  class Se {
-                                                    constructor() {
-                                                      hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
-                                                      const obj = AnalyticsUtilsDefault;
-                                                      const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
-                                                      obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
-                                                      onActivityCrash();
-                                                    }
-                                                  }
-                                                  items4[1] = hasInvalidUrlError;
+                                                  const items3 = [hadInvalidUrlError, hasInvalidUrlError];
                                                   cResult[46] = hadInvalidUrlError;
-                                                  class Ee {
+                                                  class Ae {
                                                     constructor() {
                                                       let tmp10;
                                                       try {
@@ -1249,24 +1155,14 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
                                                     }
                                                   }
                                                   cResult[47] = hasInvalidUrlError;
-                                                  cResult[48] = Ie;
-                                                  cResult[49] = items4;
-                                                  tmp42 = items4;
-                                                  tmp41 = Ie;
+                                                  cResult[48] = Pe;
+                                                  cResult[49] = items3;
+                                                  tmp41 = Pe;
                                                 }
                                               }
-                                              const items5 = [, stateFromStores, ];
-                                              class Se {
-                                                constructor() {
-                                                  hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
-                                                  const obj = AnalyticsUtilsDefault;
-                                                  const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
-                                                  obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
-                                                  onActivityCrash();
-                                                }
-                                              }
+                                              const items4 = [, stateFromStores, setHasInvalidUrlError];
                                               cResult[42] = combined;
-                                              class Ee {
+                                              class Ae {
                                                 constructor() {
                                                   let tmp10;
                                                   try {
@@ -1286,12 +1182,12 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
                                                 }
                                               }
                                               cResult[44] = setHasInvalidUrlError;
-                                              cResult[45] = items5;
-                                              tmp39 = items5;
+                                              cResult[45] = items4;
+                                              tmp39 = items4;
                                             }
                                           }
                                         }
-                                        class Ee {
+                                        class Ae {
                                           constructor() {
                                             let tmp10;
                                             try {
@@ -1312,28 +1208,24 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
                                         }
                                         cResult[37] = combined;
                                         cResult[38] = stateFromStores;
-                                        cResult[39] = setHasInvalidUrlError;
                                         cResult[40] = tmp10;
-                                        cResult[41] = Ee;
-                                        tmp38 = Ee;
+                                        cResult[41] = Ae;
+                                        tmp38 = Ae;
                                       }
                                     }
                                   }
                                 }
-                                class Se {
-                                  constructor() {
-                                    hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
-                                    const obj = AnalyticsUtilsDefault;
-                                    const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
-                                    obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
-                                    onActivityCrash();
-                                  }
+                                function ye() {
+                                  hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
+                                  const obj = AnalyticsUtilsDefault;
+                                  const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
+                                  obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
+                                  onActivityCrash();
                                 }
                                 cResult[29] = activitySessionId;
                                 cResult[31] = channelId;
                                 cResult[32] = guildId;
-                                cResult[33] = onActivityCrash;
-                                cResult[34] = Se;
+                                cResult[34] = ye;
                               }
                             }
                           }
@@ -1341,7 +1233,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
                       }
                     }
                   }
-                  const items6 = [, tmp22, , referrerPolicy, iframeId, embeddedAppShimVersion, , tmp26];
+                  const items5 = [, tmp22, onLoadError, referrerPolicy, iframeId, num3, , tmp26];
                   cResult[16] = tmp26;
                   cResult[17] = iframeId;
                   cResult[18] = tmp22;
@@ -1349,8 +1241,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
                   cResult[20] = onLoadError;
                   cResult[21] = referrerPolicy;
                   cResult[22] = shellBridgeSecret;
-                  cResult[23] = embeddedAppShimVersion;
-                  cResult[24] = items6;
+                  cResult[23] = num3;
+                  cResult[24] = items5;
+                  tmp29 = items5;
                 }
               }
             }
@@ -1359,7 +1252,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
       }
     }
   }
-  function ue() {
+  function fe() {
     function loadHtml() {
       return closure_0(...arguments);
     }
@@ -1429,9 +1322,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
   cResult[11] = referrerPolicy;
   cResult[12] = tmp15;
   cResult[13] = shellBridgeSecret;
-  cResult[14] = embeddedAppShimVersion;
-  cResult[15] = ue;
-  tmp28 = ue;
+  cResult[14] = num3;
+  cResult[15] = fe;
+  tmp28 = fe;
 }) : (function BaseEmbeddedAppWebViewContent(framePolicy) {
   let _undefined;
   let activityUrl;
@@ -1479,6 +1372,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
   c16 = undefined;
   let memo;
   c18 = undefined;
+  let closure_21;
+  let combined;
   let c23;
   let stateFromStores;
   let combined1;
@@ -1509,24 +1404,29 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
   [tmp11, c18] = tmp10;
   let rect = iframeId(applicationId[16])();
   let obj3 = framePolicy(applicationId[17]);
-  const embeddedAppShimVersion = obj3.useEmbeddedAppShimVersion("BaseEmbeddedAppWebView");
-  let obj4 = shellBridgeSecret(applicationId[18]);
-  let obj = { frame_id: iframeId, platform: framePolicy(applicationId[19]).ActivityPlatform.MOBILE, mobile_app_version: constants.Version };
+  let tmp13 = setHasInvalidUrlError;
+  let num = 1;
+  const tmp12 = iframeId;
+  if (!setHasInvalidUrlError) {
+    num = obj3.useEmbeddedAppShimVersion("BaseEmbeddedAppWebView");
+  }
+  let obj4 = shellBridgeSecret(tmp3[18]);
+  let obj = { frame_id: iframeId, platform: tmp2(tmp3[19]).ActivityPlatform.MOBILE, mobile_app_version: constants.Version };
   constants = obj4.getConstants();
   const merged = Object.assign(queryParams);
   const merged1 = Object.assign(deepLinkQueryParams);
-  obj[framePolicy(applicationId[20]).SHIM_VERSION_PARAM] = "" + embeddedAppShimVersion;
-  const tmp16 = iframeId(applicationId[21])({ allowPopups });
-  let closure_21 = tmp16;
+  obj[tmp2(tmp3[20]).SHIM_VERSION_PARAM] = "" + num;
+  const tmp17 = tmp12(tmp3[21])({ allowPopups });
+  closure_21 = tmp17;
   const uRLSearchParams = new URLSearchParams(obj);
-  const combined = "" + activityUrl + "?" + uRLSearchParams;
+  combined = "" + activityUrl + "?" + uRLSearchParams;
   let result;
   if (null != framePolicy) {
     const tmp2Result = tmp2(tmp3[22]);
     result = tmp2Result.deriveIframeCSPAttributeFromPolicy(framePolicy.policy);
   }
   c23 = result;
-  const items1 = [combined, tmp16, onLoadError, referrerPolicy, iframeId, embeddedAppShimVersion, shellBridgeSecret, result];
+  const items1 = [combined, tmp17, onLoadError, referrerPolicy, iframeId, num, shellBridgeSecret, result];
   const effect = obj2.useEffect(() => {
     function loadHtml() {
       return obj(...arguments);
@@ -1660,7 +1560,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
     }
   }, items8);
   let androidWebViewShellConfig = null;
-  if (!setHasInvalidUrlError) {
+  if (!tmp13) {
     androidWebViewShellConfig = null;
     if (null != tmp8) {
       androidWebViewShellConfig = null;
@@ -1674,7 +1574,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
   combined1 = null;
   let tmp30 = null;
   if (null != tmp8) {
-    if (setHasInvalidUrlError) {
+    if (tmp13) {
       let _HermesInternal = HermesInternal;
       let str = "file://";
       combined1 = "file://" + tmp11;
@@ -2009,134 +1909,134 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
       if (safeAreasConfig != null) {
         left = safeAreasConfig.left;
       }
-      let num;
+      let num2;
       if (rect != null) {
-        num = rect.left;
+        num2 = rect.left;
       }
-      if (num == null) {
-        num = 0;
+      if (num2 == null) {
+        num2 = 0;
       }
-      let tmp44 = num;
+      let tmp44 = num2;
       if (null != left) {
-        let num3 = 0;
+        let num4 = 0;
         if (!left.disable) {
           let bound;
           if (null != left.override) {
             const _Math2 = Math;
             bound = Math.max(0, left.override);
           } else {
-            bound = num;
+            bound = num2;
             if (null != left.offset) {
               const _Math = Math;
-              bound = Math.max(0, num + left.offset);
+              bound = Math.max(0, num2 + left.offset);
             }
           }
-          num3 = bound;
+          num4 = bound;
         }
-        tmp44 = num3;
+        tmp44 = num4;
       }
       let rect1 = { left: tmp44, right: tmp47, top: tmp50, bottom: tmp53 };
       let right;
       if (safeAreasConfig != null) {
         right = safeAreasConfig.right;
       }
-      let num4;
+      let num5;
       if (rect != null) {
-        num4 = rect.right;
+        num5 = rect.right;
       }
-      if (num4 == null) {
-        num4 = 0;
+      if (num5 == null) {
+        num5 = 0;
       }
-      tmp47 = num4;
+      tmp47 = num5;
       if (null != right) {
-        let num6 = 0;
+        let num7 = 0;
         if (!right.disable) {
           let bound1;
           if (null != right.override) {
             const _Math4 = Math;
             bound1 = Math.max(0, right.override);
           } else {
-            bound1 = num4;
+            bound1 = num5;
             if (null != right.offset) {
               const _Math3 = Math;
-              bound1 = Math.max(0, num4 + right.offset);
+              bound1 = Math.max(0, num5 + right.offset);
             }
           }
-          num6 = bound1;
+          num7 = bound1;
         }
-        tmp47 = num6;
+        tmp47 = num7;
       }
       let top;
       if (safeAreasConfig != null) {
         top = safeAreasConfig.top;
       }
-      let num7;
+      let num8;
       if (rect != null) {
-        num7 = rect.top;
+        num8 = rect.top;
       }
-      if (num7 == null) {
-        num7 = 0;
+      if (num8 == null) {
+        num8 = 0;
       }
-      tmp50 = num7;
+      tmp50 = num8;
       if (null != top) {
-        let num9 = 0;
+        let num10 = 0;
         if (!top.disable) {
           let bound2;
           if (null != top.override) {
             const _Math6 = Math;
             bound2 = Math.max(0, top.override);
           } else {
-            bound2 = num7;
+            bound2 = num8;
             if (null != top.offset) {
               const _Math5 = Math;
-              bound2 = Math.max(0, num7 + top.offset);
+              bound2 = Math.max(0, num8 + top.offset);
             }
           }
-          num9 = bound2;
+          num10 = bound2;
         }
-        tmp50 = num9;
+        tmp50 = num10;
       }
       let bottom;
       if (safeAreasConfig != null) {
         bottom = safeAreasConfig.bottom;
       }
-      let num10;
+      let num11;
       if (rect != null) {
-        num10 = rect.bottom;
+        num11 = rect.bottom;
       }
-      if (num10 == null) {
-        num10 = 0;
+      if (num11 == null) {
+        num11 = 0;
       }
-      tmp53 = num10;
+      tmp53 = num11;
       if (null != bottom) {
-        let num12 = 0;
+        let num13 = 0;
         if (!bottom.disable) {
           let bound3;
           if (null != bottom.override) {
             const _Math8 = Math;
             bound3 = Math.max(0, bottom.override);
           } else {
-            bound3 = num10;
+            bound3 = num11;
             if (null != bottom.offset) {
               const _Math7 = Math;
-              bound3 = Math.max(0, num10 + bottom.offset);
+              bound3 = Math.max(0, num11 + bottom.offset);
             }
           }
-          num12 = bound3;
+          num13 = bound3;
         }
-        tmp53 = num12;
+        tmp53 = num13;
       }
       let obj6 = { insets: rect1, messageForDisallowedNavigationError: tmp56 };
       tmp56 = undefined;
       const createActivityFrameInjectedJavaScript = tmp2(tmp3[23]).createActivityFrameInjectedJavaScript;
       tmp2(tmp3[23]);
-      if (!setHasInvalidUrlError) {
+      if (!tmp13) {
         tmp56 = channelId;
       }
       const activityFrameInjectedJavaScript = createActivityFrameInjectedJavaScript(obj6);
       let tmp59Result = null;
       if (null != tmp11) {
-        const obj7 = { style: tmp.webView, ref, source: obj8, androidAssetLoaderConfig: assetLoaderConfig, mixedContentMode: str2, androidInjectedJavaScriptForOrigins: tmp62, originWhitelist: ["*"], overScrollMode: "never", scrollEnabled: false, cacheEnabled: true, onError: callback, onContentProcessDidTerminate: callback2, onRenderProcessGone: callback1, webViewKey: iframeId, temporaryParentNodeTag: context, messagingWithWebViewKeyEnabled: true, allowFileAccess: setHasInvalidUrlError, injectedJavaScript: tmp63, injectedJavaScriptForMainFrameOnly: false, onShouldStartLoadWithRequest: tmp64, mediaPlaybackRequiresUserAction: false, ignoreSilentHardwareSwitch, allowsInlineMediaPlayback: true, minimumFontSize: 1, bounces: false, allowsProtectedMedia: true };
+        const obj7 = { style: tmp.webView, ref, source: obj8, androidAssetLoaderConfig: assetLoaderConfig, mixedContentMode: str2, androidInjectedJavaScriptForOrigins: tmp62, originWhitelist: ["*"], overScrollMode: "never", scrollEnabled: false, cacheEnabled: true, onError: callback, onContentProcessDidTerminate: callback2, onRenderProcessGone: callback1, webViewKey: iframeId, temporaryParentNodeTag: context, messagingWithWebViewKeyEnabled: true, allowFileAccess: tmp13, injectedJavaScript: tmp63, injectedJavaScriptForMainFrameOnly: false, onShouldStartLoadWithRequest: tmp64, mediaPlaybackRequiresUserAction: false, ignoreSilentHardwareSwitch, allowsInlineMediaPlayback: true, minimumFontSize: 1, bounces: false, allowsProtectedMedia: true };
         obj8 = { uri: tmp30 };
         assetLoaderConfig = undefined;
         const WebView = tmp2(tmp3[15]).WebView;
@@ -2159,11 +2059,11 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
           const obj9 = { script: activityFrameInjectedJavaScript, allowedOriginRules: androidWebViewShellConfig.documentStartOriginRules };
         }
         tmp63 = undefined;
-        if (setHasInvalidUrlError) {
+        if (tmp13) {
           tmp63 = activityFrameInjectedJavaScript;
         }
         tmp64 = undefined;
-        if (setHasInvalidUrlError) {
+        if (tmp13) {
           tmp64 = callback3;
         }
         tmp59Result = tmp59(WebView, obj7);

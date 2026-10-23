@@ -1,18 +1,19 @@
-// Module ID: 7244
-// Function ID: 7245
+// Module ID: 7257
+// Function ID: 7258
 // Name: AuthorizedAppsActionCreators
-// Dependencies: [5, 7188, 1087, 4816, 584, 1297, 2]
+// Dependencies: [5, 7201, 1087, 4816, 584, 1297, 2]
 
-// Module 7244 (AuthorizedAppsActionCreators)
+// Module 7257 (AuthorizedAppsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import Timers from "Timers" /* 4816 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7188 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7201 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 const AuthorizedAppsStore = AuthorizedAppsStore2;
+let c4, c5;
 
 function tokensToAppTokensMap(arg0, arr) {
   let mapped;
@@ -40,77 +41,87 @@ function fetchAuthorizedApps() {
 }
 let obj = function _fetchAuthorizedApps() {
   let OAUTH2_TOKENS;
-  obj = _asyncToGenerator(async (application_ids) => {
-    let c2 = 0;
-    let c1 = 0;
-    return (async (arg0, value) => {
-      let obj4;
-      if (c1 === 2) {
-        c1 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp2 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          let obj2 = { value, done: true };
-          return obj2;
-        } else {
-          return { value: "IconComponent", done: null };
-        }
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let closure_0;
+    let obj4;
+    if (c5 === 2) {
+      c5 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        try {
-          c1 = 2;
-          if (0 === c2) {
-            if (arg0 === 1) {
-              c1 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c1 = 3;
-              return { value, done: true };
-            } else {
-              const HTTP = HTTPUtils.HTTP;
-              let request = { url: OAUTH2_TOKENS.OAUTH2_TOKENS, oldFormErrors: true, rejectWithError: true, query: obj4 };
-              obj4 = { application_ids };
-              value = HTTP.get(request);
-              c2 = 1;
-              c1 = 1;
-              const obj5 = {
-                value: value.then((body) => {
-                          obj = closure_2_1(closure_2_2[4]);
-                          const obj2 = { type: "USER_AUTHORIZED_APPS_UPDATE", isFullFetch: null == closure_0, tokens: closure_2_8(body.body, closure_0) };
-                          return obj.dispatch(obj2);
-                        }, () => {
-                          let request;
-                          const dispatch = closure_2_1(closure_2_2[4]).dispatch;
-                          closure_2_1(closure_2_2[4]);
-                          if (null == closure_0) {
-                            request = { type: "full" };
-                          } else {
-                            request = { type: "partial", applicationIds: tmp2 };
-                          }
-                          return dispatch({ type: "USER_AUTHORIZED_APPS_REQUEST_FAILED", request });
-                        }),
-                done: false
-              };
-              return obj5;
-            }
-          } else if (arg0 === 1) {
-            c1 = 3;
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      let c3;
+      try {
+        let body;
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c1 = 3;
-            obj = { value, done: true };
-            return obj;
+            c5 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
           } else {
-            c1 = 3;
-            return { value: "IconComponent", done: null };
+            let closure_2 = tmp;
+            body = undefined;
+            c3 = 1;
+            const HTTP = HTTPUtils.HTTP;
+            const request = { url: OAUTH2_TOKENS.OAUTH2_TOKENS, oldFormErrors: true, rejectWithError: true, query: obj4 };
+            obj4 = { application_ids: applicationIds };
+            c4 = 2;
+            c5 = 1;
+            const obj5 = { value: HTTP.get(request), done: false };
+            return obj5;
           }
-        } catch (tmp4) {
-          c1 = 3;
-          throw tmp4;
+        } else if (1 === c4) {
+          let obj6;
+          c3 = 0;
+          const dispatch2 = closure_130_1(closure_130_2[4]).dispatch;
+          const tmp18 = closure_130_1(closure_130_2[4]);
+          if (null == applicationIds) {
+            obj6 = { type: "full" };
+          } else {
+            obj6 = { type: "partial", applicationIds };
+          }
+          const obj7 = { type: "USER_AUTHORIZED_APPS_REQUEST_FAILED", request: obj6 };
+          c5 = 3;
+          const obj8 = { value: dispatch2(obj7), done: true };
+          return obj8;
+        } else if (arg0 === 1) {
+          c5 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c3 = 0;
+          c5 = 3;
+          const obj9 = { value, done: true };
+          return obj9;
+        } else {
+          body = value;
+          c3 = 0;
+          obj = { type: "USER_AUTHORIZED_APPS_UPDATE", isFullFetch: null == applicationIds, tokens: closure_130_8(body.body, applicationIds) };
+          const dispatch = closure_130_1(closure_130_2[4]).dispatch;
+          const tmp9 = closure_130_1(closure_130_2[4]);
+          c5 = 3;
+          const obj10 = { value: dispatch(obj), done: true };
+          return obj10;
+        }
+      } catch (tmp22) {
+        if (0 === c3) {
+          c5 = 3;
+          throw tmp22;
+        } else {
+          c4 = 1;
         }
       }
-    })();
+    }
   });
   return obj(...arguments);
 };

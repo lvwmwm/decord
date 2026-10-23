@@ -1,15 +1,15 @@
-// Module ID: 18508
-// Function ID: 18509
+// Module ID: 18552
+// Function ID: 18553
 // Name: useVoiceChannelGames
-// Dependencies: [19, 502, 5698, 6483, 1392, 558, 576, 9199, 504, 9200, 8567, 2]
+// Dependencies: [19, 502, 5710, 6496, 1392, 558, 576, 9222, 504, 9223, 8579, 2]
 
-// Module 18508 (useVoiceChannelGames)
-import useGameProfileObscured from "useGameProfileObscured" /* 8567 */;
-import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 9199 */;
+// Module 18552 (useVoiceChannelGames)
+import useGameProfileObscured from "useGameProfileObscured" /* 8579 */;
+import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 9222 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PresenceStore from "PresenceStore" /* 5698 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6483 */;
+import PresenceStore from "PresenceStore" /* 5710 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6496 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

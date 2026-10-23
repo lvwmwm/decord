@@ -1,14 +1,14 @@
-// Module ID: 9994
-// Function ID: 9995
+// Module ID: 10016
+// Function ID: 10017
 // Name: NsfwServerInviteWarningAlert
-// Dependencies: [19, 21, 558, 576, 5900, 9995, 7868, 6642, 5900, 1128, 5896, 2]
+// Dependencies: [19, 21, 558, 576, 5912, 10017, 7881, 6655, 5912, 1128, 5908, 2]
 // Exports: showNsfwServerInviteWarningAlert
 
-// Module 9994 (NsfwServerInviteWarningAlert)
+// Module 10016 (NsfwServerInviteWarningAlert)
 import Fragment from "Fragment" /* 21 */;
-import useAlertStore from "useAlertStore" /* 5896 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6642 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7868 */;
+import useAlertStore from "useAlertStore" /* 5908 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6655 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7881 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

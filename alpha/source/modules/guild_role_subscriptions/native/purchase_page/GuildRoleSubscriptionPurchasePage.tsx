@@ -1,18 +1,18 @@
-// Module ID: 17907
-// Function ID: 17908
+// Module ID: 17951
+// Function ID: 17952
 // Name: GuildRoleSubscriptionPurchasePage
-// Dependencies: [19, 17, 1207, 4821, 4843, 1087, 21, 4969, 587, 558, 576, 5220, 1128, 1202, 11520, 7059, 16483, 16485, 16486, 573, 17908, 5590, 17910, 17911, 17912, 8488, 5655, 6868, 17913, 9934, 17915, 17916, 5646, 17917, 2]
+// Dependencies: [19, 17, 1207, 4821, 4843, 1087, 21, 4969, 587, 558, 576, 5232, 1128, 1202, 11540, 7072, 16530, 16532, 16533, 573, 17952, 5602, 17954, 17955, 17956, 8500, 5667, 6881, 17957, 9956, 17959, 17960, 5658, 17961, 2]
 
-// Module 17907 (GuildRoleSubscriptionPurchasePage)
+// Module 17951 (GuildRoleSubscriptionPurchasePage)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import LinkingDefault from "Linking" /* 5646 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8488 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11520 */;
-import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 17917 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import LinkingDefault from "Linking" /* 5658 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8500 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11540 */;
+import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 17961 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
@@ -89,7 +89,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function LegalD
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(intl6.t.FSPTDI, obj5) };
-    const Text = tmp(5220).Text;
+    const Text = tmp(5232).Text;
     intl = tmp(1128).intl;
     obj5 = { termsURL: null, paidURL: null };
     ({ TERMS: obj3.termsURL, PAID_TERMS: obj3.paidURL } = map1);

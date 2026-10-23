@@ -1,19 +1,19 @@
-// Module ID: 12271
-// Function ID: 12272
+// Module ID: 12290
+// Function ID: 12291
 // Name: ConjureAppBuildRequest
-// Dependencies: [32, 19, 6758, 1128, 3830, 558, 576, 12272, 12267, 10180, 12273, 2]
+// Dependencies: [32, 19, 6771, 1128, 3830, 558, 576, 12291, 12286, 10202, 12292, 2]
 // Exports: appBuildRequestSentToast
 
-// Module 12271 (ConjureAppBuildRequest)
+// Module 12290 (ConjureAppBuildRequest)
 import intl2 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import createNonce from "createNonce" /* 10180 */;
-import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12267 */;
-import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 12272 */;
-import conjureSendToProject from "conjureSendToProject" /* 12273 */;
+import createNonce from "createNonce" /* 10202 */;
+import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12286 */;
+import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 12291 */;
+import conjureSendToProject from "conjureSendToProject" /* 12292 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6758 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6771 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

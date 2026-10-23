@@ -1,21 +1,21 @@
-// Module ID: 11183
-// Function ID: 11184
+// Module ID: 11206
+// Function ID: 11207
 // Name: useSubscribeMissingActivities
-// Dependencies: [32, 19, 11184, 5698, 558, 576, 504, 11186, 2]
+// Dependencies: [32, 19, 11207, 5710, 558, 576, 504, 11209, 2]
 
-// Module 11183 (useSubscribeMissingActivities)
+// Module 11206 (useSubscribeMissingActivities)
 import react2 from "react" /* 576 */;
-import PresenceSubscriptionsActionCreators from "PresenceSubscriptionsActionCreators" /* 11186 */;
+import PresenceSubscriptionsActionCreators from "PresenceSubscriptionsActionCreators" /* 11209 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PresenceSubscriptionsStore from "PresenceSubscriptionsStore" /* 11184 */;
-import PresenceStore from "PresenceStore" /* 5698 */;
+import PresenceSubscriptionsStore from "PresenceSubscriptionsStore" /* 11207 */;
+import PresenceStore from "PresenceStore" /* 5710 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let _require, application_id, dependencyMap;
 
-const f109025 = (application) => {
+const f109221 = (application) => {
   application = application.application;
   let id;
   if (application != null) {
@@ -32,7 +32,7 @@ const f109025 = (application) => {
   }
   return tmp2;
 };
-const f109026 = (id) => id.id;
+const f109222 = (id) => id.id;
 let closure_6 = [];
 let closure_7 = [];
 let closure_8 = [];
@@ -160,8 +160,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMiss
     tmp16 = items3;
   }
   if (isPrivate.isPrivate()) {
-    const found = arr.filter(f109025);
-    const items4 = [found, found.map(f109026)];
+    const found = arr.filter(f109221);
+    const items4 = [found, found.map(f109222)];
     items5 = items4;
   } else {
     items5 = [closure_8, closure_7];
@@ -181,8 +181,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMiss
     let items1;
     const arr = closure_0;
     if (_private.isPrivate()) {
-      const found = arr.filter(f109025);
-      const items = [found, found.map(f109026)];
+      const found = arr.filter(f109221);
+      const items = [found, found.map(f109222)];
       items1 = items;
     } else {
       items1 = [closure_8, ];

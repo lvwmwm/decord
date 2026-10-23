@@ -1,22 +1,22 @@
-// Module ID: 19057
-// Function ID: 19058
+// Module ID: 19101
+// Function ID: 19102
 // Name: GuildSettingsRoleMembers
-// Dependencies: [32, 19, 17, 7210, 1087, 21, 4969, 587, 5649, 1128, 19035, 7393, 504, 5894, 8981, 1202, 1267, 5196, 19036, 2002, 10805, 7944, 7003, 7130, 5672, 5220, 6888, 11129, 2]
+// Dependencies: [32, 19, 17, 7223, 1087, 21, 4969, 587, 5661, 1128, 19079, 7406, 504, 5906, 9004, 1202, 1267, 5208, 19080, 2002, 10828, 7957, 7016, 7143, 5684, 5232, 6901, 11152, 2]
 // Exports: default
 
-// Module 19057 (GuildSettingsRoleMembers)
+// Module 19101 (GuildSettingsRoleMembers)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl5 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5649 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8981 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5661 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9004 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7210 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7223 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import size from "module_2" /* 2 */;
@@ -147,7 +147,7 @@ export default function GuildSettingsRoleMembers(guild) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj2 = { guild, role };
-    const tmp3 = asyncRequire(19036, dependencyMap.paths);
+    const tmp3 = asyncRequire(19080, dependencyMap.paths);
     openLazy(tmp3, "role-add-members-" + guild.id + "-" + role.id, obj2);
   }, items3);
   closure_6 = found.useCallback((item) => {

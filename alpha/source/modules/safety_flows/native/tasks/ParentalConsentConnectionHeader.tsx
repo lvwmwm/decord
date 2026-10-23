@@ -1,18 +1,18 @@
-// Module ID: 19325
-// Function ID: 19326
+// Module ID: 19369
+// Function ID: 19370
 // Name: ParentalConsentConnectionHeader
-// Dependencies: [19, 17, 1392, 21, 4969, 5254, 587, 558, 576, 1633, 504, 6653, 1128, 2832, 5220, 2]
+// Dependencies: [19, 17, 1392, 21, 4969, 5266, 587, 558, 576, 1633, 504, 6666, 1128, 2832, 5232, 2]
 
-// Module 19325 (ParentalConsentConnectionHeader)
+// Module 19369 (ParentalConsentConnectionHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import NavigatorConstants from "NavigatorConstants" /* 5254 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6653 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import NavigatorConstants from "NavigatorConstants" /* 5266 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6666 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
@@ -107,7 +107,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParentalConsentC
     let tmp19 = null != stateFromStores;
     if (tmp19) {
       const obj4 = { accessibilityRole: "header", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores };
-      tmp19 = hasOwnProperty(tmp(5220).Text, obj4);
+      tmp19 = hasOwnProperty(tmp(5232).Text, obj4);
     }
     cResult[8] = stateFromStores;
     cResult[9] = tmp19;

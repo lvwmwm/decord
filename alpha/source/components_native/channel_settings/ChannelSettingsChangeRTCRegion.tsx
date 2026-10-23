@@ -1,22 +1,22 @@
-// Module ID: 18228
-// Function ID: 18229
+// Module ID: 18272
+// Function ID: 18273
 // Name: ChannelSettingsChangeRTCRegion
-// Dependencies: [729, 19, 4821, 18178, 21, 4969, 587, 5023, 1128, 10070, 6969, 6970, 8926, 558, 576, 504, 38, 2]
+// Dependencies: [729, 19, 4821, 18222, 21, 4969, 587, 5035, 1128, 10092, 6982, 6983, 8949, 558, 576, 504, 38, 2]
 
-// Module 18228 (ChannelSettingsChangeRTCRegion)
+// Module 18272 (ChannelSettingsChangeRTCRegion)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import native from "native" /* 5023 */;
-import TableRadioRow from "TableRadioRow" /* 6969 */;
-import TableRadioGroup from "TableRadioGroup" /* 6970 */;
-import Form2 from "Form" /* 8926 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10070 */;
+import native from "native" /* 5035 */;
+import TableRadioRow from "TableRadioRow" /* 6982 */;
+import TableRadioGroup from "TableRadioGroup" /* 6983 */;
+import Form2 from "Form" /* 8949 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10092 */;
 import _toArray from "_toArray" /* 729 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import RegionStore from "RegionStore" /* 18178 */;
+import RegionStore from "RegionStore" /* 18222 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -73,7 +73,7 @@ class ChannelSettingsChangeRTCRegion extends PureComponent {
       c0 = null;
       tmp = null;
     }
-    let obj = self(10070);
+    let obj = self(10092);
     obj.updateChannel({ rtcRegion: tmp });
     self.setState({ submitting: true }, () => {
       const obj = ChannelSettingsActionCreatorsDefault;

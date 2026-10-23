@@ -1,14 +1,14 @@
-// Module ID: 7864
-// Function ID: 7865
+// Module ID: 7877
+// Function ID: 7878
 // Name: StageLurkingManager
-// Dependencies: [4821, 4995, 2004, 584, 7420, 1388, 2]
+// Dependencies: [4821, 5000, 2004, 584, 7433, 1388, 2]
 
-// Module 7864 (StageLurkingManager)
+// Module 7877 (StageLurkingManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import LurkerActionCreators from "LurkerActionCreators" /* 7420 */;
+import LurkerActionCreators from "LurkerActionCreators" /* 7433 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5000 */;
 import LifecycleManager from "LifecycleManager" /* 2004 */;
 import size from "module_2" /* 2 */;
 

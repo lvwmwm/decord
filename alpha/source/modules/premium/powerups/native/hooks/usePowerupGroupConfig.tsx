@@ -1,15 +1,15 @@
-// Module ID: 13408
-// Function ID: 13409
+// Module ID: 13431
+// Function ID: 13432
 // Name: usePowerupGroupConfig
-// Dependencies: [19, 4843, 558, 576, 8634, 504, 1128, 2568, 13409, 13410, 1388, 2]
+// Dependencies: [19, 4843, 558, 576, 8652, 504, 1128, 2568, 13432, 13433, 1388, 2]
 
-// Module 13408 (usePowerupGroupConfig)
+// Module 13431 (usePowerupGroupConfig)
 import intl4 from "intl" /* 1128 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import _modDef2568 from "module_2568" /* 2568 */;
-import GuildTagUtils from "GuildTagUtils" /* 8634 */;
-import _modDef13409 from "module_13409" /* 13409 */;
-import _modDef13410 from "module_13410" /* 13410 */;
+import GuildTagUtils from "GuildTagUtils" /* 8652 */;
+import _modDef13432 from "module_13432" /* 13432 */;
+import _modDef13433 from "module_13433" /* 13433 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -65,7 +65,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerup
       const stringResult = intl.string(_modDef2568.KC9HRW);
       const intl2 = tmp(1128).intl;
       const stringResult1 = intl2.string(_modDef2568.GJiSmP);
-      const obj2 = { staticUrl: _modDef13409, animatedUrl: _modDef13410 };
+      const obj2 = { staticUrl: _modDef13432, animatedUrl: _modDef13433 };
       cResult[3] = stringResult;
       cResult[4] = stringResult1;
       cResult[5] = obj2;
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerup
       tmp14 = cResult[7];
     }
     if (cResult[8] !== tmp14) {
-      const obj3 = { title: tmp8, description: tmp9, image: tmp10, disabledReason: tmp14, badge: "IconComponent", forceStaticImages: "IconComponent" };
+      const obj3 = { title: tmp8, description: tmp9, image: tmp10, disabledReason: tmp14, badge: "IconComponent", forceStaticImages: false };
       cResult[8] = tmp14;
       cResult[9] = obj3;
       tmp17 = obj3;
@@ -122,11 +122,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerup
     let obj3;
     let stringResult;
     if ("guildTagsBadgePacks" === group.group) {
-      const obj2 = { title: intl.string(_modDef2568.KC9HRW), description: intl2.string(_modDef2568.GJiSmP), image: obj3, disabledReason: stringResult, badge: "IconComponent", forceStaticImages: "IconComponent" };
+      const obj2 = { title: intl.string(_modDef2568.KC9HRW), description: intl2.string(_modDef2568.GJiSmP), image: obj3, disabledReason: stringResult, badge: "IconComponent", forceStaticImages: false };
       intl = intl4.intl;
       intl2 = intl4.intl;
       stringResult = undefined;
-      obj3 = { staticUrl: _modDef13409, animatedUrl: _modDef13410 };
+      obj3 = { staticUrl: _modDef13432, animatedUrl: _modDef13433 };
       const tmp7 = importDefault;
       if (!stateFromStores) {
         const intl3 = intl4.intl;

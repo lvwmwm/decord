@@ -1,57 +1,85 @@
 // Module ID: 12618
 // Function ID: 12619
-// Dependencies: [12547, 12548, 12520]
+// Dependencies: [12540]
+// Exports: addMetadataToStackFrames, stripMetadataFromStackFrames
 
 // Module 12618
-import _mod12547 from "module_12547" /* 12547 */;
-import _mod12548 from "module_12548" /* 12548 */;
+import _mod12540 from "module_12540" /* 12540 */;
 
+function getMetadataForUrl(fn, arg1) {
+  function ensureMetadataStacksAreParsed(fn) {
+    const tmp2 = require;
+    const tmp4 = dependencyMap;
+    if (_mod12540.GLOBAL_OBJ._sentryModuleMetadata) {
+      const _Object = Object;
+      const keys = Object.keys(tmp2(tmp4[0]).GLOBAL_OBJ._sentryModuleMetadata);
+      for (const item10026 of keys) {
+        let tmp11 = item10026;
+        let tmp16 = _mod12540.GLOBAL_OBJ._sentryModuleMetadata[item10026];
+        let obj = set;
+        if (!set.has(item10026)) {
+          let addResult = obj.add(tmp11);
+          let obj2 = fn(tmp11);
+          let reversed = obj2.reverse();
+          for (const item10050 of reversed) {
+            if (item10050.filename) {
+              let result = map.set(tmp22.filename, tmp16);
+              obj3.return();
+              break;
+            }
+            continue;
+          }
+        }
+        continue;
+      }
+    }
+  }
+  const tmp = ensureMetadataStacksAreParsed(fn);
+  return map.get(arg1);
+}
+const map = new Map();
+const set = new Set();
 
-export const profiler = {
-  startProfiler() {
-    const obj = _mod12547;
-    const client = obj.getClient();
-    if (client) {
-      const integrationByName = client.getIntegrationByName("ProfilingIntegration");
-      if (integrationByName) {
-        const tmp6 = integrationByName && undefined !== integrationByName._profiler && typeof integrationByName._profiler.start === "function" && typeof integrationByName._profiler.stop === "function";
-        if (tmp6) {
-          const _profiler = integrationByName._profiler;
-          _profiler.start();
-        } else if (_mod12548.DEBUG_BUILD) {
-          const logger3 = tmp(12520).logger;
-          logger3.warn("Profiler is not available on profiling integration.");
+export const addMetadataToStackFrames = function addMetadataToStackFrames(arg0, exception) {
+  let closure_0 = arg0;
+  try {
+    let tmp = exception;
+    const values = exception.exception.values;
+    const item = values.forEach((stacktrace) => {
+      if (stacktrace.stacktrace) {
+        const tmp = stacktrace.stacktrace.frames || [];
+        for (const item10010 of tmp) {
+          let tmp4 = item10010;
+          if (item10010.filename) {
+            if (!tmp4.module_metadata) {
+              let tmp9 = getMetadataForUrl(closure_0, tmp4.filename);
+              if (tmp9) {
+                tmp4.module_metadata = tmp10;
+              }
+            }
+          }
+          continue;
         }
-      } else if (_mod12548.DEBUG_BUILD) {
-        const logger2 = tmp(12520).logger;
-        logger2.warn("ProfilingIntegration is not available");
       }
-    } else if (_mod12548.DEBUG_BUILD) {
-      const logger = tmp(12520).logger;
-      logger.warn("No Sentry client available, profiling is not started");
-    }
-  },
-  stopProfiler() {
-    const obj = _mod12547;
-    const client = obj.getClient();
-    if (client) {
-      const integrationByName = client.getIntegrationByName("ProfilingIntegration");
-      if (integrationByName) {
-        const tmp6 = integrationByName && undefined !== integrationByName._profiler && typeof integrationByName._profiler.start === "function" && typeof integrationByName._profiler.stop === "function";
-        if (tmp6) {
-          const _profiler = integrationByName._profiler;
-          _profiler.stop();
-        } else if (_mod12548.DEBUG_BUILD) {
-          const logger3 = tmp(12520).logger;
-          logger3.warn("Profiler is not available on profiling integration.");
+    });
+  } catch (err) {
+  }
+};
+export { getMetadataForUrl };
+export const stripMetadataFromStackFrames = function stripMetadataFromStackFrames(exception) {
+  try {
+    let tmp = exception;
+    const values = exception.exception.values;
+    const item = values.forEach((stacktrace) => {
+      if (stacktrace.stacktrace) {
+        const tmp = stacktrace.stacktrace.frames || [];
+        const iter = tmp[Symbol.iterator]();
+        while (iter !== undefined) {
+          delete iter.next()[`module_metadata`];
+          continue;
         }
-      } else if (_mod12548.DEBUG_BUILD) {
-        const logger2 = tmp(12520).logger;
-        logger2.warn("ProfilingIntegration is not available");
       }
-    } else if (_mod12548.DEBUG_BUILD) {
-      const logger = tmp(12520).logger;
-      logger.warn("No Sentry client available, profiling is not started");
-    }
+    });
+  } catch (err) {
   }
 };

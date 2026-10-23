@@ -1,10 +1,11 @@
-// Module ID: 11773
-// Function ID: 11774
+// Module ID: 10808
+// Function ID: 10809
 // Name: conjureSettingValues
-// Dependencies: [2]
-// Exports: conjureSecretsSubmission, conjureSettingBaseline, conjureSettingSubmitValue, conjureSettingValuesEqual
+// Dependencies: [32, 2]
+// Exports: conjureSecretsSubmission, conjureSettingBaseline, conjureSettingSubmitValue, conjureSettingValuesEqual, mergeSubmittedSettingValues
 
-// Module 11773 (conjureSettingValues)
+// Module 10808 (conjureSettingValues)
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/settings/conjureSettingValues.tsx");
@@ -101,4 +102,28 @@ export const conjureSecretsSubmission = function conjureSecretsSubmission(memo, 
     const merged = Object.assign(obj4);
     return obj;
   }
+};
+export const mergeSubmittedSettingValues = function mergeSubmittedSettingValues(values, values2) {
+  let tmp7;
+  let tmp8;
+  let obj = values2;
+  const obj3 = {};
+  const merged = Object.assign(values);
+  const _Object = Object;
+  if (values2 == null) {
+    obj = {};
+  }
+  const entries1 = entries(obj);
+  const tmp3 = entries1[Symbol.iterator]();
+  while (tmp3 !== undefined) {
+    let tmp6 = _slicedToArray(tmp4, 2);
+    [tmp7, tmp8] = tmp6;
+    if (null == tmp8) {
+      delete obj2[tmp7];
+    } else {
+      obj3[tmp7] = tmp9;
+    }
+    continue;
+  }
+  return obj3;
 };

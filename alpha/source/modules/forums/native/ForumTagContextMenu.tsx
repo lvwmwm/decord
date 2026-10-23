@@ -1,12 +1,12 @@
-// Module ID: 10388
-// Function ID: 10389
+// Module ID: 10410
+// Function ID: 10411
 // Name: ForumTagContextMenu
-// Dependencies: [21, 558, 576, 4797, 1128, 10389, 7270, 5648, 9738, 2]
+// Dependencies: [21, 558, 576, 4797, 1128, 10411, 7283, 5660, 9760, 2]
 
-// Module 10388 (ForumTagContextMenu)
+// Module 10410 (ForumTagContextMenu)
 import Fragment from "Fragment" /* 21 */;
-import ToastUtils from "ToastUtils" /* 5648 */;
-import ClipboardUtils from "ClipboardUtils" /* 7270 */;
+import ToastUtils from "ToastUtils" /* 5660 */;
+import ClipboardUtils from "ClipboardUtils" /* 7283 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumTagCo
   if (cResult[1] !== tagId) {
     let obj2 = {
       label: first,
-      IconComponent: tagId(10389).IdIcon,
+      IconComponent: tagId(10411).IdIcon,
       action() {
           const obj = ClipboardUtils;
           obj.copy(tagId);
@@ -55,7 +55,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumTagCo
       return tmp8;
     }
   }
-  const tmp9 = jsx(tagId(9738).ContextMenu, { triggerOnLongPress: true, items: tmp7, enabled: setting, children });
+  const tmp9 = jsx(tagId(9760).ContextMenu, { triggerOnLongPress: true, items: tmp7, enabled: setting, children });
   cResult[3] = children;
   cResult[4] = tmp7;
   cResult[5] = setting;
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumTagCo
   const DeveloperMode = tagId(4797).DeveloperMode;
   let obj = {
     label: intl.string(tagId(1128).t["8VG6IY"]),
-    IconComponent: tagId(10389).IdIcon,
+    IconComponent: tagId(10411).IdIcon,
     action() {
       const obj = ClipboardUtils;
       obj.copy(tagId);
@@ -79,7 +79,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumTagCo
   const enabled = DeveloperMode.useSetting();
   intl = tagId(1128).intl;
   const items = [obj];
-  return jsx(tagId(9738).ContextMenu, { triggerOnLongPress: true, items, enabled, children });
+  return jsx(tagId(9760).ContextMenu, { triggerOnLongPress: true, items, enabled, children });
 });
 const result = size.fileFinishedImporting("modules/forums/native/ForumTagContextMenu.tsx");
 

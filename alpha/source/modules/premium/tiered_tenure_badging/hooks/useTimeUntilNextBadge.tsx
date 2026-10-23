@@ -1,10 +1,10 @@
-// Module ID: 14688
-// Function ID: 14689
+// Module ID: 14712
+// Function ID: 14713
 // Name: useTimeUntilNextBadge
-// Dependencies: [19, 2049, 14689, 11083, 2]
+// Dependencies: [19, 2049, 14713, 11106, 2]
 // Exports: computeDaysUntilNextBadgeDate, useTimeUntilNextBadge
 
-// Module 14688 (useTimeUntilNextBadge)
+// Module 14712 (useTimeUntilNextBadge)
 import react from "react" /* 19 */;
 import _modDef2049 from "module_2049" /* 2049 */;
 import size from "module_2" /* 2 */;
@@ -20,9 +20,9 @@ export const computeDaysUntilNextBadgeDate = function computeDaysUntilNextBadgeD
 };
 export const useTimeUntilNextBadge = function useTimeUntilNextBadge() {
   let nextTenureBadge;
-  let obj = nextTenureBadge(14689);
+  let obj = nextTenureBadge(14713);
   nextTenureBadge = obj.useNextTenureBadge();
-  let obj2 = nextTenureBadge(11083);
+  let obj2 = nextTenureBadge(11106);
   const premiumSince = obj2.usePremiumSince();
   const items = [nextTenureBadge, premiumSince];
   return useMemo(() => {

@@ -1,16 +1,16 @@
-// Module ID: 12798
-// Function ID: 12799
+// Module ID: 12817
+// Function ID: 12818
 // Name: AppealIngestionPolicySummary
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 7882, 4966, 1128, 5220, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 7895, 4966, 1128, 5232, 2]
 
-// Module 12798 (AppealIngestionPolicySummary)
+// Module 12817 (AppealIngestionPolicySummary)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import ColorUtils from "ColorUtils" /* 4966 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7882 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7895 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -157,7 +157,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealInge
   const tmp2Result = ColorUtils;
   const obj2 = { style: tmp.sectionTitle, variant: "text-sm/bold", children: intl.string(intl2.t.xsdcxh) };
   const hexWithOpacityResult = tmp2Result.hexWithOpacity(tmp.borderColor.color, 0.08);
-  const Text = tmp2(5220).Text;
+  const Text = tmp2(5232).Text;
   intl = tmp2(1128).intl;
   items = [_false(Text, obj2), ];
   const obj3 = { style: items1, children: _false(Text_Text.Text, { variant: "text-md/semibold", children: capitalizeTextResult }) };

@@ -1,11 +1,11 @@
-// Module ID: 12837
-// Function ID: 12838
+// Module ID: 12856
+// Function ID: 12857
 // Name: handleForwardBreadcrumb
-// Dependencies: [5, 4821, 4843, 1087, 7433, 6815, 1267, 7332, 2]
+// Dependencies: [5, 4821, 4843, 1087, 7446, 6828, 1267, 7345, 2]
 // Exports: default
 
-// Module 12837 (handleForwardBreadcrumb)
-import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 7433 */;
+// Module 12856 (handleForwardBreadcrumb)
+import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 7446 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;

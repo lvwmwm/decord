@@ -1,17 +1,17 @@
-// Module ID: 13045
-// Function ID: 13046
+// Module ID: 13068
+// Function ID: 13069
 // Name: MessageAttachmentUtils
-// Dependencies: [4901, 1087, 7374, 7380, 7379, 8823, 558, 576, 573, 4797, 8743, 1128, 2]
+// Dependencies: [4901, 1087, 7387, 7393, 7392, 8846, 558, 576, 573, 4797, 8761, 1128, 2]
 // Exports: getObscureReasonForAttachment, getObscureReasonForEmbed, getObscureReasonForUnfurledMediaItem, getObscuredAlt
 
-// Module 13045 (MessageAttachmentUtils)
+// Module 13068 (MessageAttachmentUtils)
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7374 */;
-import ObscureMediaModels from "ObscureMediaModels" /* 7379 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7380 */;
-import computeGlobalSpoilerDisplayDefault from "computeGlobalSpoilerDisplay" /* 8743 */;
-import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8823 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7387 */;
+import ObscureMediaModels from "ObscureMediaModels" /* 7392 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7393 */;
+import computeGlobalSpoilerDisplayDefault from "computeGlobalSpoilerDisplay" /* 8761 */;
+import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8846 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -107,7 +107,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldObs
       return tmp9;
     }
   }
-  tmp(7374);
+  tmp(7387);
   if (cResult[7] === stateFromStores) {
     let tmp12;
     if (cResult[8] === setting) {
@@ -136,8 +136,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldObs
   });
   const RenderSpoilers = channel(4797).RenderSpoilers;
   const setting = RenderSpoilers.useSetting();
-  const obj2 = channel(7374);
-  const enabledHarmTypesBitmaskForChannelType = obj2.getEnabledHarmTypesBitmaskForChannelType(channel(7380).ContentHarmTypeChannel.GUILD);
+  const obj2 = channel(7387);
+  const enabledHarmTypesBitmaskForChannelType = obj2.getEnabledHarmTypesBitmaskForChannelType(channel(7393).ContentHarmTypeChannel.GUILD);
   return getForumPostShouldObscure(media, !computeGlobalSpoilerDisplayDefault(setting, stateFromStores), enabledHarmTypesBitmaskForChannelType);
 });
 const result = size.fileFinishedImporting("modules/messages/MessageAttachmentUtils.tsx");
@@ -156,11 +156,11 @@ export const getObscureReasonForAttachment = function getObscureReasonForAttachm
   if (mediaObscuredReasonFromBitmask.length > 0) {
     first = mediaObscuredReasonFromBitmask[0];
   } else if (tmp4) {
-    first = tmp(7379).ObscureReason.POTENTIAL_EXPLICIT_CONTENT;
+    first = tmp(7392).ObscureReason.POTENTIAL_EXPLICIT_CONTENT;
   } else {
     first = null;
     if (flag) {
-      first = tmp(7379).ObscureReason.SPOILER;
+      first = tmp(7392).ObscureReason.SPOILER;
     }
   }
   return first;
@@ -180,11 +180,11 @@ export const getObscureReasonForEmbed = function getObscureReasonForEmbed(embed,
   if (mediaObscuredReasonFromBitmask.length > 0) {
     first = mediaObscuredReasonFromBitmask[0];
   } else if (isMediaScanPendingResult) {
-    first = tmp(7379).ObscureReason.POTENTIAL_EXPLICIT_CONTENT;
+    first = tmp(7392).ObscureReason.POTENTIAL_EXPLICIT_CONTENT;
   } else {
     first = null;
     if (flag2) {
-      first = tmp(7379).ObscureReason.SPOILER;
+      first = tmp(7392).ObscureReason.SPOILER;
     }
   }
   return first;
@@ -210,17 +210,17 @@ export const getObscureReasonForUnfurledMediaItem = function getObscureReasonFor
     isMediaScanPendingResult = isMediaScanPending(obj3, enabledHarmTypesBitmaskForChannelAndAuthorId);
   }
   if (mediaObscuredReasonFromBitmask.includes(ObscureMediaModels.ObscureReason.EXPLICIT_CONTENT)) {
-    EXPLICIT_CONTENT = tmp(7379).ObscureReason.EXPLICIT_CONTENT;
+    EXPLICIT_CONTENT = tmp(7392).ObscureReason.EXPLICIT_CONTENT;
   } else if (mediaObscuredReasonFromBitmask.includes(ObscureMediaModels.ObscureReason.GORE_CONTENT)) {
-    EXPLICIT_CONTENT = tmp(7379).ObscureReason.GORE_CONTENT;
+    EXPLICIT_CONTENT = tmp(7392).ObscureReason.GORE_CONTENT;
   } else if (mediaObscuredReasonFromBitmask.includes(ObscureMediaModels.ObscureReason.SELF_HARM_CONTENT)) {
-    EXPLICIT_CONTENT = tmp(7379).ObscureReason.SELF_HARM_CONTENT;
+    EXPLICIT_CONTENT = tmp(7392).ObscureReason.SELF_HARM_CONTENT;
   } else if (isMediaScanPendingResult) {
-    EXPLICIT_CONTENT = tmp(7379).ObscureReason.POTENTIAL_EXPLICIT_CONTENT;
+    EXPLICIT_CONTENT = tmp(7392).ObscureReason.POTENTIAL_EXPLICIT_CONTENT;
   } else {
     EXPLICIT_CONTENT = null;
     if (flag) {
-      EXPLICIT_CONTENT = tmp(7379).ObscureReason.SPOILER;
+      EXPLICIT_CONTENT = tmp(7392).ObscureReason.SPOILER;
     }
   }
   return EXPLICIT_CONTENT;

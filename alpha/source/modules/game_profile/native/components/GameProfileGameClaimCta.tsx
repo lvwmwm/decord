@@ -1,12 +1,12 @@
-// Module ID: 9478
-// Function ID: 9479
+// Module ID: 9501
+// Function ID: 9502
 // Name: GameProfileGameClaimCta
-// Dependencies: [5, 19, 1087, 21, 558, 576, 9221, 7414, 7418, 2000, 1128, 5230, 2]
+// Dependencies: [5, 19, 1087, 21, 558, 576, 9244, 7427, 7431, 2000, 1128, 5242, 2]
 
-// Module 9478 (GameProfileGameClaimCta)
+// Module 9501 (GameProfileGameClaimCta)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
-import MobileWebHandoffLinkingDefault from "MobileWebHandoffLinking" /* 7414 */;
+import MobileWebHandoffLinkingDefault from "MobileWebHandoffLinking" /* 7427 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -103,7 +103,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileG
       tmp9 = cResult[2];
     }
     if (cResult[3] !== tmp4) {
-      const tmp13 = jsx(trackAction(5230).Button, { variant: "secondary", size: "md", text: tmp9, onPress: tmp4 });
+      const tmp13 = jsx(trackAction(5242).Button, { variant: "secondary", size: "md", text: tmp9, onPress: tmp4 });
       cResult[3] = tmp4;
       cResult[4] = tmp13;
       tmp11 = tmp13;
@@ -177,7 +177,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileG
   }
   if (someResult == null) {
     const tmp4 = jsx;
-    const Button = trackAction(5230).Button;
+    const Button = trackAction(5242).Button;
     const intl = trackAction(1128).intl;
     tmp3 = <Button variant="secondary" size="md" text={intl.string(trackAction(1128).t["mqg+to"])} onPress={callback} />;
   } else {

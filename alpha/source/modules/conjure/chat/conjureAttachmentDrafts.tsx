@@ -1,16 +1,16 @@
-// Module ID: 12267
-// Function ID: 12268
+// Module ID: 12286
+// Function ID: 12287
 // Name: conjureAttachmentDrafts
-// Dependencies: [109, 5149, 10675, 11724, 1128, 3830, 11723, 558, 576, 584, 2]
+// Dependencies: [109, 5161, 10697, 11744, 1128, 3830, 11743, 558, 576, 584, 2]
 // Exports: addConjureAttachmentDrafts, clearConjureAttachmentDrafts, conjureAttachmentTooLargeText, removeConjureAttachmentDraft, sendConjureCardReply, uploadConjureAttachment
 
-// Module 12267 (conjureAttachmentDrafts)
+// Module 12286 (conjureAttachmentDrafts)
 import intl2 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import ZustandStore from "ZustandStore" /* 5149 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10675 */;
-import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 11723 */;
-import conjureAttachmentRequests from "conjureAttachmentRequests" /* 11724 */;
+import ZustandStore from "ZustandStore" /* 5161 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10697 */;
+import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 11743 */;
+import conjureAttachmentRequests from "conjureAttachmentRequests" /* 11744 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import Dispatcher_mod from "Dispatcher" /* 584 */;
@@ -19,7 +19,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, closure_8;
 
-const f113701 = () => {
+const f113894 = () => {
 
 };
 function _toPropertyKey(obj) {
@@ -83,7 +83,7 @@ function discardDraft(projectId, item10010) {
     const id = item10010.ref.id;
     const obj = conjureAttachmentRequests;
     const result = obj.deleteStagedAttachment(projectId, id);
-    result.catch(f113701);
+    result.catch(f113894);
   }
 }
 function discardProject(projectId, deleteFromWorker) {
@@ -294,7 +294,7 @@ export const removeConjureAttachmentDraft = function removeConjureAttachmentDraf
       const id = found.ref.id;
       const obj2 = conjureAttachmentRequests;
       const result = obj2.deleteStagedAttachment(projectId, id);
-      result.catch(f113701);
+      result.catch(f113894);
     }
     const found1 = tmp2.filter((localId) => localId.localId !== closure_0);
     const draftsByProject = obj.getState().draftsByProject;

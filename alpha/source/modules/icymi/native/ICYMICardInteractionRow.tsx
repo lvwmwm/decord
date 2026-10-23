@@ -1,10 +1,10 @@
-// Module ID: 17864
-// Function ID: 17865
+// Module ID: 17908
+// Function ID: 17909
 // Name: ICYMICardInteractionRow
-// Dependencies: [32, 19, 17, 7388, 4821, 6621, 4901, 1087, 1395, 21, 4913, 8272, 4969, 587, 1384, 4966, 558, 576, 504, 7396, 7551, 9802, 1128, 9326, 5220, 6893, 9960, 1105, 1417, 9758, 5655, 10632, 10987, 12851, 12409, 17858, 8528, 5211, 8315, 10056, 8816, 12839, 10064, 5238, 5244, 683, 7290, 2]
+// Dependencies: [32, 19, 17, 7401, 4821, 6634, 4901, 1087, 1395, 21, 4913, 8284, 4969, 587, 1384, 4966, 558, 576, 504, 7409, 7564, 9824, 1128, 9349, 5232, 6906, 9982, 1105, 1417, 9780, 5667, 10654, 11010, 12870, 12428, 17902, 8540, 5223, 8327, 10078, 8839, 12858, 10086, 5250, 5256, 683, 7303, 2]
 // Exports: onAddReaction
 
-// Module 17864 (ICYMICardInteractionRow)
+// Module 17908 (ICYMICardInteractionRow)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
@@ -12,26 +12,26 @@ import PlatformUtils from "PlatformUtils" /* 1384 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import ReactionUtils from "ReactionUtils" /* 4913 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5211 */;
-import Pressables from "Pressables" /* 6893 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7396 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7551 */;
-import ReactionActionCreators from "ReactionActionCreators" /* 8272 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 8315 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8816 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9758 */;
-import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9802 */;
-import PendingReplyActionCreators from "PendingReplyActionCreators" /* 10064 */;
-import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 12409 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 12839 */;
-import ForwardingIconDefault from "ForwardingIcon" /* 12851 */;
-import ICYMIShared from "ICYMIShared" /* 17858 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5223 */;
+import Pressables from "Pressables" /* 6906 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7409 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7564 */;
+import ReactionActionCreators from "ReactionActionCreators" /* 8284 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 8327 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8839 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9780 */;
+import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9824 */;
+import PendingReplyActionCreators from "PendingReplyActionCreators" /* 10086 */;
+import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 12428 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 12858 */;
+import ForwardingIconDefault from "ForwardingIcon" /* 12870 */;
+import ICYMIShared from "ICYMIShared" /* 17902 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7388 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7401 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6621 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6634 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;

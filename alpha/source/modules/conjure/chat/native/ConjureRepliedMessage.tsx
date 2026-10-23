@@ -1,20 +1,20 @@
-// Module ID: 12307
-// Function ID: 12308
+// Module ID: 12326
+// Function ID: 12327
 // Name: chat/ConjureRepliedMessage
-// Dependencies: [19, 17, 21, 12297, 4969, 587, 558, 576, 12308, 5018, 11814, 12309, 1128, 3830, 12310, 1202, 5220, 12316, 2]
+// Dependencies: [19, 17, 21, 12316, 4969, 587, 558, 576, 12327, 5023, 11833, 12328, 1128, 3830, 12329, 1202, 5232, 12335, 2]
 
-// Module 12307 (chat/ConjureRepliedMessage)
+// Module 12326 (chat/ConjureRepliedMessage)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import UserUtils from "UserUtils" /* 5018 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import ConjureDesignFeedback from "ConjureDesignFeedback" /* 11814 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12297 */;
-import conjureMessageAuthors from "conjureMessageAuthors" /* 12308 */;
-import conjureMentions from "conjureMentions" /* 12309 */;
-import ConjureSelectedMentionDefault from "ConjureSelectedMention" /* 12316 */;
+import UserUtils from "UserUtils" /* 5023 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import ConjureDesignFeedback from "ConjureDesignFeedback" /* 11833 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12316 */;
+import conjureMessageAuthors from "conjureMessageAuthors" /* 12327 */;
+import conjureMentions from "conjureMentions" /* 12328 */;
+import ConjureSelectedMentionDefault from "ConjureSelectedMention" /* 12335 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -195,7 +195,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRep
     if (null != messageAuthorUser) {
       const obj9 = { style: tmp4.avatar, children: metroRequire(ConjureUserAvatar, obj10) };
       obj10 = { userId: replied.userId, size: native.AvatarSizes.SIZE_16 };
-      ConjureUserAvatar = tmp(12310).ConjureUserAvatar;
+      ConjureUserAvatar = tmp(12329).ConjureUserAvatar;
       tmp21 = metroRequire(hasOwnProperty, obj9);
     }
     cResult[9] = replied.userId;
@@ -219,9 +219,9 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRep
   replied = replied.replied;
   const onJump = replied.onJump;
   const tmp = closure_8();
-  let obj = replied(12308);
+  let obj = replied(12327);
   const messageAuthorUser = obj.useMessageAuthorUser(replied.userId);
-  const obj2 = replied(5018);
+  const obj2 = replied(5023);
   let str = obj2.useName(messageAuthorUser);
   if (str == null) {
     str = "";
@@ -232,8 +232,8 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRep
     return obj.parseConjureDesignRemark(replied.content);
   }, items);
   let body;
-  const useConjureMentionNames = replied(12309).useConjureMentionNames;
-  replied(12309);
+  const useConjureMentionNames = replied(12328).useConjureMentionNames;
+  replied(12328);
   if (memo != null) {
     body = memo.body;
   }
@@ -253,15 +253,15 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRep
   if (null != messageAuthorUser) {
     const obj5 = { style: tmp.avatar, children: closure_6(ConjureUserAvatar, obj6) };
     obj6 = { userId: replied.userId, size: replied(1202).AvatarSizes.SIZE_16 };
-    ConjureUserAvatar = tmp2(12310).ConjureUserAvatar;
+    ConjureUserAvatar = tmp2(12329).ConjureUserAvatar;
     tmp12Result = tmp12(tmp13, obj5);
   }
   items1[1] = tmp12Result;
   const obj7 = { variant: "text-xs/semibold", color: "text-default", style: tmp.name, lineClamp: 1, children: str };
-  items1[2] = closure_6(replied(5220).Text, obj7);
+  items1[2] = closure_6(replied(5232).Text, obj7);
   let tmp12Result2 = null;
   const obj8 = { variant: "text-xs/medium", color: "interactive-text-default", style: tmp.content, lineClamp: 1, children: items2 };
-  const Text = tmp2(5220).Text;
+  const Text = tmp2(5232).Text;
   if (null != memo) {
     const obj9 = { label: memo.label, variant: "text-xs/medium" };
     tmp12Result2 = tmp12(ConjureSelectedMentionDefault, obj9);

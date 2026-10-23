@@ -1,28 +1,28 @@
-// Module ID: 10442
-// Function ID: 10443
+// Module ID: 10464
+// Function ID: 10465
 // Name: GPlayManager
-// Dependencies: [109, 5, 19, 17, 7517, 7518, 502, 2058, 7509, 9776, 7510, 1087, 5684, 1394, 21, 3, 7504, 584, 9775, 1266, 2049, 7526, 4785, 6448, 1267, 5895, 1128, 10443, 2002, 6657, 7507, 2]
+// Dependencies: [109, 5, 19, 17, 7530, 7531, 502, 2058, 7522, 9798, 7523, 1087, 5696, 1394, 21, 3, 7517, 584, 9797, 1266, 2049, 7539, 4785, 6461, 1267, 5907, 1128, 10465, 2002, 6670, 7520, 2]
 
-// Module 10442 (GPlayManager)
+// Module 10464 (GPlayManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import PaymentConstants from "PaymentConstants" /* 5684 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6448 */;
-import ProductIds from "ProductIds" /* 7504 */;
-import GPlayActionCreators from "GPlayActionCreators" /* 9775 */;
-import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9776 */;
+import PaymentConstants from "PaymentConstants" /* 5696 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6461 */;
+import ProductIds from "ProductIds" /* 7517 */;
+import GPlayActionCreators from "GPlayActionCreators" /* 9797 */;
+import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9798 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GiftPromotionStore from "GiftPromotionStore" /* 7517 */;
-import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 7518 */;
+import GiftPromotionStore from "GiftPromotionStore" /* 7530 */;
+import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 7531 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import SubscriptionStore from "SubscriptionStore" /* 2058 */;
-import IAPStore from "IAPStore" /* 7509 */;
-import Constants_mod from "Constants" /* 7510 */;
+import IAPStore from "IAPStore" /* 7522 */;
+import Constants_mod from "Constants" /* 7523 */;
 import Constants_mod2 from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

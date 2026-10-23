@@ -1,9 +1,9 @@
-// Module ID: 5212
-// Function ID: 5213
+// Module ID: 5224
+// Function ID: 5225
 // Name: BurstReactionAnimation
-// Dependencies: [109, 19, 4970, 21, 4969, 558, 576, 4927, 504, 5213, 5214, 2]
+// Dependencies: [109, 19, 4970, 21, 4969, 558, 576, 4927, 504, 5225, 5226, 2]
 
-// Module 5212 (BurstReactionAnimation)
+// Module 5224 (BurstReactionAnimation)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -88,7 +88,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReact
           return null;
         } else {
           let obj4;
-          const tmp25 = importDefault(undefined === tmp10 || tmp10 ? 5213 : 5214);
+          const tmp25 = importDefault(undefined === tmp10 || tmp10 ? 5225 : 5226);
           if (cResult[15] === tmp8) {
             let tmp26;
             if (cResult[16] === (undefined === tmp10 || tmp10)) {
@@ -164,7 +164,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReact
     return null;
   } else {
     let obj3;
-    const tmp7 = importDefault(withFadeOut ? 5213 : 5214);
+    const tmp7 = importDefault(withFadeOut ? 5225 : 5226);
     if (withFadeOut) {
       obj3 = { onComplete };
       const obj2 = { onComplete };

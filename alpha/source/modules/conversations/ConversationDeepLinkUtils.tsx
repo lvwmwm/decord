@@ -1,14 +1,14 @@
-// Module ID: 10049
-// Function ID: 10050
+// Module ID: 10071
+// Function ID: 10072
 // Name: ConversationDeepLinkUtils
-// Dependencies: [5, 6844, 7686, 5593, 9713, 5592, 11, 2]
+// Dependencies: [5, 6857, 7699, 5605, 9735, 5604, 11, 2]
 // Exports: consumeConversationFocusParam
 
-// Module 10049 (ConversationDeepLinkUtils)
-import ConversationConstants from "ConversationConstants" /* 5593 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6844 */;
+// Module 10071 (ConversationDeepLinkUtils)
+import ConversationConstants from "ConversationConstants" /* 5605 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6857 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7686 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7699 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, conversationId, dependencyMap;
@@ -128,7 +128,7 @@ export const consumeConversationFocusParam = function consumeConversationFocusPa
   } else {
     let sum;
     str.delete(tmp);
-    let obj4 = channelId(5592);
+    let obj4 = channelId(5604);
     const tryParseChannelPathResult = obj4.tryParseChannelPath(pathname);
     channelId = undefined;
     if (tryParseChannelPathResult != null) {

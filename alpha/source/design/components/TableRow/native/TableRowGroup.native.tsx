@@ -1,16 +1,16 @@
-// Module ID: 6972
-// Function ID: 6973
+// Module ID: 6985
+// Function ID: 6986
 // Name: TableRowGroup
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5220, 5238, 6883, 6889, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5232, 5250, 6896, 6902, 2]
 // Exports: TableRowGroup
 
-// Module 6972 (TableRowGroup)
+// Module 6985 (TableRowGroup)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 5238 */;
-import TableRowDivider from "TableRowDivider" /* 6883 */;
-import react3 from "react" /* 6889 */;
+import useToken from "useToken" /* 5250 */;
+import TableRowDivider from "TableRowDivider" /* 6896 */;
+import react3 from "react" /* 6902 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -25,7 +25,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const Text_Text = tmp(5220);
+const Text_Text = tmp(5232);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;

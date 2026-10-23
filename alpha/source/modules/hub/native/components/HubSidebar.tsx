@@ -1,18 +1,18 @@
-// Module ID: 17559
-// Function ID: 17560
+// Module ID: 17603
+// Function ID: 17604
 // Name: HubSidebar
-// Dependencies: [19, 17, 4899, 4872, 1087, 12014, 21, 4969, 587, 558, 576, 13209, 1202, 504, 17560, 17561, 1128, 5693, 16875, 11124, 13128, 5658, 9026, 2]
+// Dependencies: [19, 17, 4899, 4872, 1087, 12033, 21, 4969, 587, 558, 576, 13232, 1202, 504, 17604, 17605, 1128, 5705, 16919, 11147, 13151, 5670, 9049, 2]
 
-// Module 17559 (HubSidebar)
+// Module 17603 (HubSidebar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import transitionToChannel from "transitionToChannel" /* 5693 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9026 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12014 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 13128 */;
-import BaseChannelItem from "BaseChannelItem" /* 13209 */;
+import transitionToChannel from "transitionToChannel" /* 5705 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9049 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12033 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 13151 */;
+import BaseChannelItem from "BaseChannelItem" /* 13232 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 4899 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
@@ -131,7 +131,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubIte
     DEFAULT = ChannelModes.DEFAULT;
     tmp5 = tmp2;
   }
-  const obj = { style: tmp.container, accessibilityLabel: label, accessibilityRole: "menuitem", onPress: handleItemClick, disableHighlightOnPress: true, mode: DEFAULT, name: metroImportDefault(tmp5(13209).BaseChannelName, { name: label, mode: DEFAULT }), icon: metroImportDefault(tmp5(13209).BaseChannelIcon, { mode: DEFAULT, IconComponent }), channelInfo: tmp6Result };
+  const obj = { style: tmp.container, accessibilityLabel: label, accessibilityRole: "menuitem", onPress: handleItemClick, disableHighlightOnPress: true, mode: DEFAULT, name: metroImportDefault(tmp5(13232).BaseChannelName, { name: label, mode: DEFAULT }), icon: metroImportDefault(tmp5(13232).BaseChannelIcon, { mode: DEFAULT, IconComponent }), channelInfo: tmp6Result };
   tmp6Result = null;
   const tmp7 = BaseChannelItemDefault;
   if (null != unreadCount) {
@@ -346,7 +346,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubSidebar(g
     const tmp2 = null != stateFromStores && SelectedChannelStore.getChannelId() === tmp.id;
     return tmp2;
   });
-  guild(17560);
+  guild(17604);
   let tmp9Result = null;
   if (null != stateFromStores) {
     let row = null;
@@ -357,10 +357,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubSidebar(g
     }
     const obj4 = { style: row, children: items4 };
     const obj5 = { guild };
-    items4 = [closure_7(stateFromStores(17561), obj5), , , ];
+    items4 = [closure_7(stateFromStores(17605), obj5), , , ];
     const obj6 = {
       active: stateFromStores1,
-      IconComponent: tmp(16875).CompassIcon,
+      IconComponent: tmp(16919).CompassIcon,
       label: intl.string(tmp(1128).t.K50GHd),
       handleItemClick() {
           const obj = transitionToChannel;
@@ -371,7 +371,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubSidebar(g
     intl = tmp(1128).intl;
     items4[1] = closure_7(closure_10, obj6);
     const obj7 = {
-      IconComponent: tmp(11124).PlusMediumIcon,
+      IconComponent: tmp(11147).PlusMediumIcon,
       label: intl2.string(tmp(1128).t.emRpdS),
       handleItemClick() {
           const obj = GuildDirectoryAddModalActionCreatorsDefault;
@@ -382,7 +382,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubSidebar(g
     intl2 = tmp(1128).intl;
     items4[2] = closure_7(closure_10, obj7);
     const obj8 = {
-      IconComponent: tmp(5658).UserPlusIcon,
+      IconComponent: tmp(5670).UserPlusIcon,
       label: intl3.string(tmp(1128).t.MJQOuJ),
       handleItemClick() {
           const obj = instant_invite_InstantInviteUtils;

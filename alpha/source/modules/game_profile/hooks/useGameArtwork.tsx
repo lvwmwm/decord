@@ -1,10 +1,10 @@
-// Module ID: 9282
-// Function ID: 9283
+// Module ID: 9305
+// Function ID: 9306
 // Name: useGameArtwork
 // Dependencies: [32, 19, 2032, 558, 576, 2]
 // Exports: getGameArtworkSource, hasGameArtwork
 
-// Module 9282 (useGameArtwork)
+// Module 9305 (useGameArtwork)
 import react2 from "react" /* 576 */;
 import getGameMediaRefURL from "getGameMediaRefURL" /* 2032 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

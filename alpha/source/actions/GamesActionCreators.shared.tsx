@@ -1,22 +1,22 @@
-// Module ID: 11317
-// Function ID: 11318
+// Module ID: 11340
+// Function ID: 11341
 // Name: tryJoinAsFrame
-// Dependencies: [5, 4820, 6757, 4821, 5698, 1087, 6761, 7394, 11318, 11316, 11319, 4890, 12652, 2031, 5612, 11351, 11350, 10743, 6765, 12653, 12654, 7396, 2]
+// Dependencies: [5, 4820, 6770, 4821, 5710, 1087, 6774, 7407, 11341, 11339, 11342, 4890, 12671, 2031, 5624, 11374, 11373, 10765, 6778, 12672, 12673, 7409, 2]
 // Exports: tryJoinAsFrame, tryStartAsEmbeddedApp
 
-// Module 11317 (tryJoinAsFrame)
+// Module 11340 (tryJoinAsFrame)
 import Constants from "Constants" /* 1087 */;
-import FramesConstants from "FramesConstants" /* 6761 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7396 */;
-import getOrFetchApplicationDefault from "getOrFetchApplication" /* 11316 */;
-import canLaunchContextlessFrame2 from "canLaunchContextlessFrame" /* 11318 */;
-import handleJoinEmbeddedActivityDefault from "handleJoinEmbeddedActivity" /* 11319 */;
-import handleUsePrimaryEntryPointAppCommandDefault from "handleUsePrimaryEntryPointAppCommand" /* 12654 */;
+import FramesConstants from "FramesConstants" /* 6774 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7409 */;
+import getOrFetchApplicationDefault from "getOrFetchApplication" /* 11339 */;
+import canLaunchContextlessFrame2 from "canLaunchContextlessFrame" /* 11341 */;
+import handleJoinEmbeddedActivityDefault from "handleJoinEmbeddedActivity" /* 11342 */;
+import handleUsePrimaryEntryPointAppCommandDefault from "handleUsePrimaryEntryPointAppCommand" /* 12673 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6757 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6770 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import PresenceStore from "PresenceStore" /* 5698 */;
+import PresenceStore from "PresenceStore" /* 5710 */;
 import size from "module_2" /* 2 */;
 
 let c8, c9, customId, embeddedActivitiesForChannel, inviterUserId, referrerId, source, user;

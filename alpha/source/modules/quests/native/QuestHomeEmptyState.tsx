@@ -1,21 +1,21 @@
-// Module ID: 16290
-// Function ID: 16291
+// Module ID: 16322
+// Function ID: 16323
 // Name: QuestHomeEmptyState
-// Dependencies: [19, 17, 1087, 21, 4969, 587, 558, 576, 1128, 5238, 5139, 1384, 5220, 5655, 16291, 5244, 7206, 2]
+// Dependencies: [19, 17, 1087, 21, 4969, 587, 558, 576, 1128, 5250, 5151, 1384, 5232, 5667, 16323, 5256, 7219, 2]
 
-// Module 16290 (QuestHomeEmptyState)
+// Module 16322 (QuestHomeEmptyState)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import useChatLayoutDefault from "useChatLayout" /* 5139 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import useToken from "useToken" /* 5238 */;
-import LinearGradientDefault from "LinearGradient" /* 5244 */;
-import FastImageDefault from "FastImage" /* 5655 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7206 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16291 */;
+import useChatLayoutDefault from "useChatLayout" /* 5151 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import useToken from "useToken" /* 5250 */;
+import LinearGradientDefault from "LinearGradient" /* 5256 */;
+import FastImageDefault from "FastImage" /* 5667 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7219 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16323 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -30,18 +30,21 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
+let obj4;
 ({ View: c3, StyleSheet } = react_native);
 const VerticalGradient = Constants.VerticalGradient;
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: { flex: 1 }, emptyStateContainer: { justifyContent: "center", alignItems: "center", flex: 1 }, emptyStateContentContainer: obj2, emptyStateContentTitle: { textAlign: "center" }, emptyStateContentDescription: { textAlign: "center", marginTop: 4 }, emptyImage: { flex: 1, width: "100%", aspectRatio: 1.6375545851528384, minWidth: "100%", position: "absolute", bottom: 0, zIndex: -1 }, backgroundImage: obj3, gradient: { height: 22, width: "100%", position: "absolute", bottom: 0 }, actionWrapper: { marginTop: 16, alignSelf: "center" } };
-obj2 = { top: -55, paddingHorizontal: nativeDefault.space.PX_32 };
+let obj = { container: { flex: 1 }, emptyStateContainer: { justifyContent: "center", alignItems: "center", flex: 1 }, emptyStateContainerBelowContent: obj2, emptyStateContentContainer: obj3, emptyStateContentContainerScreenCentered: { top: -55 }, emptyStateContentTitle: { textAlign: "center" }, emptyStateContentDescription: { textAlign: "center", marginTop: 4 }, emptyImage: { flex: 1, width: "100%", aspectRatio: 1.6375545851528384, minWidth: "100%", position: "absolute", bottom: 0, zIndex: -1 }, backgroundImage: obj4, gradient: { height: 22, width: "100%", position: "absolute", bottom: 0 }, actionWrapper: { marginTop: 16, alignSelf: "center" } };
+obj2 = { justifyContent: "flex-start", paddingTop: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
-obj3 = { width: "100%", height: undefined };
+obj3 = { paddingHorizontal: nativeDefault.space.PX_32 };
+obj4 = { width: "100%", height: undefined };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_8 = createStyles(obj);
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeEmptyState(arg0) {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeEmptyState(arg0) {
   let action;
+  let hasContentAbove;
   let items;
   let items1;
   let items2;
@@ -49,13 +52,13 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeE
   let obj7;
   let subtitle;
   let title;
-  let tmp11;
-  let tmp4;
-  let tmp6;
-  let tmp9Result;
+  let tmp10Result;
+  let tmp12;
+  let tmp5;
+  let tmp7;
   const obj = react2;
-  const cResult = obj.c(35);
-  ({ action, title, subtitle } = arg0);
+  const cResult = obj.c(41);
+  ({ hasContentAbove, action, title, subtitle } = arg0);
   if (cResult[0] !== title) {
     let stringResult = title;
     if (undefined === title) {
@@ -64,9 +67,9 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeE
     }
     cResult[0] = title;
     cResult[1] = stringResult;
-    tmp4 = stringResult;
+    tmp5 = stringResult;
   } else {
-    tmp4 = cResult[1];
+    tmp5 = cResult[1];
   }
   if (cResult[2] !== subtitle) {
     let stringResult1 = subtitle;
@@ -76,11 +79,11 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeE
     }
     cResult[2] = subtitle;
     cResult[3] = stringResult1;
-    tmp6 = stringResult1;
+    tmp7 = stringResult1;
   } else {
-    tmp6 = cResult[3];
+    tmp7 = cResult[3];
   }
-  const tmp8 = closure_8();
+  const tmp9 = closure_8();
   const tmpResult = useToken;
   const token = tmpResult.useToken(nativeDefault.colors.BACKGROUND_BASE_LOWER);
   const isChatLockedOpen = useChatLayoutDefault().isChatLockedOpen;
@@ -88,159 +91,185 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeE
     const tmpResult2 = PlatformUtils;
     const isAndroidResult = tmpResult2.isAndroid();
     cResult[4] = isAndroidResult;
-    tmp11 = isAndroidResult;
+    tmp12 = isAndroidResult;
   } else {
-    tmp11 = cResult[4];
+    tmp12 = cResult[4];
   }
-  if (cResult[5] === tmp8.emptyStateContentTitle) {
-    let tmp13;
-    if (cResult[6] === tmp4) {
-      tmp13 = cResult[7];
+  if (cResult[5] === tmp9.emptyStateContainer) {
+    let tmp15;
+    if (cResult[6] === (undefined !== hasContentAbove && hasContentAbove && tmp9.emptyStateContainerBelowContent)) {
+      tmp15 = cResult[7];
     }
-    if (cResult[8] === tmp8.emptyStateContentDescription) {
-      let tmp15;
-      if (cResult[9] === tmp6) {
-        tmp15 = cResult[10];
+    if (cResult[8] === tmp9.emptyStateContentContainer) {
+      let tmp17;
+      if (cResult[9] === (!(undefined !== hasContentAbove && hasContentAbove) && tmp9.emptyStateContentContainerScreenCentered)) {
+        tmp17 = cResult[10];
       }
-      if (cResult[11] === action) {
+      if (cResult[11] === tmp9.emptyStateContentTitle) {
         let tmp18;
-        if (cResult[12] === tmp8.actionWrapper) {
+        if (cResult[12] === tmp5) {
           tmp18 = cResult[13];
         }
-        if (cResult[14] === tmp8.emptyStateContentContainer) {
-          if (cResult[15] === tmp13) {
-            if (cResult[16] === tmp15) {
-              let tmp23;
-              if (cResult[17] === tmp18) {
-                tmp23 = cResult[18];
-              }
-              if (cResult[19] === token) {
-                if (cResult[20] === isChatLockedOpen) {
-                  if (cResult[21] === tmp8.backgroundImage) {
-                    if (cResult[22] === tmp8.emptyImage) {
-                      let tmp27;
-                      if (cResult[23] === tmp8.gradient) {
-                        tmp27 = cResult[24];
-                      }
-                      if (cResult[25] === tmp8.emptyStateContainer) {
-                        if (cResult[26] === tmp27) {
-                          let tmp35;
-                          if (cResult[27] === tmp23) {
-                            tmp35 = cResult[28];
+        if (cResult[14] === tmp9.emptyStateContentDescription) {
+          let tmp21;
+          if (cResult[15] === tmp7) {
+            tmp21 = cResult[16];
+          }
+          if (cResult[17] === action) {
+            let tmp24;
+            if (cResult[18] === tmp9.actionWrapper) {
+              tmp24 = cResult[19];
+            }
+            if (cResult[20] === tmp17) {
+              if (cResult[21] === tmp18) {
+                if (cResult[22] === tmp21) {
+                  let tmp29;
+                  if (cResult[23] === tmp24) {
+                    tmp29 = cResult[24];
+                  }
+                  if (cResult[25] === token) {
+                    if (cResult[26] === isChatLockedOpen) {
+                      if (cResult[27] === tmp9.backgroundImage) {
+                        if (cResult[28] === tmp9.emptyImage) {
+                          let tmp33;
+                          if (cResult[29] === tmp9.gradient) {
+                            tmp33 = cResult[30];
                           }
-                          if (cResult[29] === tmp8.container) {
-                            let tmp39;
-                            if (cResult[30] === tmp35) {
-                              tmp39 = cResult[31];
-                            }
-                            if (cResult[32] === tmp8.container) {
-                              let tmp43;
-                              if (cResult[33] === tmp39) {
-                                tmp43 = cResult[34];
+                          if (cResult[31] === tmp29) {
+                            if (cResult[32] === tmp33) {
+                              let tmp41;
+                              if (cResult[33] === tmp15) {
+                                tmp41 = cResult[34];
                               }
-                              return tmp43;
+                              if (cResult[35] === tmp9.container) {
+                                let tmp45;
+                                if (cResult[36] === tmp41) {
+                                  tmp45 = cResult[37];
+                                }
+                                if (cResult[38] === tmp9.container) {
+                                  let tmp49;
+                                  if (cResult[39] === tmp45) {
+                                    tmp49 = cResult[40];
+                                  }
+                                  return tmp49;
+                                }
+                                const obj2 = { bottom: tmp12, style: tmp9.container, children: tmp45 };
+                                const tmp51 = hasOwnProperty(common_SafeAreaView.SafeAreaPaddingView, obj2);
+                                cResult[38] = tmp9.container;
+                                cResult[39] = tmp45;
+                                cResult[40] = tmp51;
+                                tmp49 = tmp51;
+                              }
+                              const obj3 = { style: tmp9.container, children: tmp41 };
+                              const tmp48 = hasOwnProperty(_false, obj3);
+                              cResult[35] = tmp9.container;
+                              cResult[36] = tmp41;
+                              cResult[37] = tmp48;
+                              tmp45 = tmp48;
                             }
-                            const obj2 = { bottom: tmp11, style: tmp8.container, children: tmp39 };
-                            const tmp45 = hasOwnProperty(common_SafeAreaView.SafeAreaPaddingView, obj2);
-                            cResult[32] = tmp8.container;
-                            cResult[33] = tmp39;
-                            cResult[34] = tmp45;
-                            tmp43 = tmp45;
                           }
-                          const obj3 = { style: tmp8.container, children: tmp35 };
-                          const tmp42 = hasOwnProperty(_false, obj3);
-                          cResult[29] = tmp8.container;
-                          cResult[30] = tmp35;
-                          cResult[31] = tmp42;
-                          tmp39 = tmp42;
+                          const obj4 = { style: tmp15, children: items };
+                          items = [tmp29, tmp33];
+                          const tmp44 = metroRequire(_false, obj4);
+                          cResult[31] = tmp29;
+                          cResult[32] = tmp33;
+                          cResult[33] = tmp15;
+                          cResult[34] = tmp44;
+                          tmp41 = tmp44;
                         }
                       }
-                      const obj4 = { style: tmp8.emptyStateContainer, children: items };
-                      items = [tmp23, tmp27];
-                      const tmp38 = metroRequire(_false, obj4);
-                      cResult[25] = tmp8.emptyStateContainer;
-                      cResult[26] = tmp27;
-                      cResult[27] = tmp23;
-                      cResult[28] = tmp38;
-                      tmp35 = tmp38;
                     }
                   }
+                  let tmp34 = null;
+                  if (!isChatLockedOpen) {
+                    const obj5 = { children: items1 };
+                    const obj6 = { style: tmp9.emptyImage, children: hasOwnProperty(tmp10Result, obj7) };
+                    obj7 = { style: tmp9.backgroundImage, source: AssetRegistryDefault, resizeMode: "cover" };
+                    tmp10Result = FastImageDefault;
+                    items1 = [hasOwnProperty(_false, obj6), ];
+                    const obj8 = { style: tmp9.gradient, end: null, start: null, colors: items2 };
+                    ({ END: obj11.end, START: obj11.start } = VerticalGradient);
+                    items2 = ["rgba(0, 0, 0, 0)", token];
+                    items1[1] = hasOwnProperty(LinearGradientDefault, obj8);
+                    tmp34 = metroRequire(metroImportDefault, obj5);
+                  }
+                  cResult[25] = token;
+                  cResult[26] = isChatLockedOpen;
+                  cResult[27] = tmp9.backgroundImage;
+                  cResult[28] = tmp9.emptyImage;
+                  cResult[29] = tmp9.gradient;
+                  cResult[30] = tmp34;
+                  tmp33 = tmp34;
                 }
               }
-              let tmp28 = null;
-              if (!isChatLockedOpen) {
-                const obj5 = { children: items1 };
-                const obj6 = { style: tmp8.emptyImage, children: hasOwnProperty(tmp9Result, obj7) };
-                obj7 = { style: tmp8.backgroundImage, source: AssetRegistryDefault, resizeMode: "cover" };
-                tmp9Result = FastImageDefault;
-                items1 = [hasOwnProperty(_false, obj6), ];
-                const obj8 = { style: tmp8.gradient, end: null, start: null, colors: items2 };
-                ({ END: obj11.end, START: obj11.start } = VerticalGradient);
-                items2 = ["rgba(0, 0, 0, 0)", token];
-                items1[1] = hasOwnProperty(LinearGradientDefault, obj8);
-                tmp28 = metroRequire(metroImportDefault, obj5);
-              }
-              cResult[19] = token;
-              cResult[20] = isChatLockedOpen;
-              cResult[21] = tmp8.backgroundImage;
-              cResult[22] = tmp8.emptyImage;
-              cResult[23] = tmp8.gradient;
-              cResult[24] = tmp28;
-              tmp27 = tmp28;
             }
+            const obj9 = { style: tmp17, children: items3 };
+            items3 = [tmp18, tmp21, tmp24];
+            const tmp32 = metroRequire(_false, obj9);
+            cResult[20] = tmp17;
+            cResult[21] = tmp18;
+            cResult[22] = tmp21;
+            cResult[23] = tmp24;
+            cResult[24] = tmp32;
+            tmp29 = tmp32;
           }
+          let tmp26 = null != action;
+          if (tmp26) {
+            const obj10 = { style: tmp9.actionWrapper, children: action };
+            tmp26 = hasOwnProperty(_false, obj10);
+          }
+          cResult[17] = action;
+          cResult[18] = tmp9.actionWrapper;
+          cResult[19] = tmp26;
+          tmp24 = tmp26;
         }
-        const obj9 = { style: tmp8.emptyStateContentContainer, children: items3 };
-        items3 = [tmp13, tmp15, tmp18];
-        const tmp26 = metroRequire(_false, obj9);
-        cResult[14] = tmp8.emptyStateContentContainer;
-        cResult[15] = tmp13;
-        cResult[16] = tmp15;
-        cResult[17] = tmp18;
-        cResult[18] = tmp26;
-        tmp23 = tmp26;
+        const obj12 = { variant: "text-md/normal", color: "text-default", style: tmp9.emptyStateContentDescription, children: tmp7 };
+        const tmp23 = hasOwnProperty(Text_Text.Text, obj12);
+        cResult[14] = tmp9.emptyStateContentDescription;
+        cResult[15] = tmp7;
+        cResult[16] = tmp23;
+        tmp21 = tmp23;
       }
-      let tmp20 = null != action;
-      if (tmp20) {
-        const obj10 = { style: tmp8.actionWrapper, children: action };
-        tmp20 = hasOwnProperty(_false, obj10);
-      }
-      cResult[11] = action;
-      cResult[12] = tmp8.actionWrapper;
+      const obj13 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp9.emptyStateContentTitle, children: tmp5 };
+      const tmp20 = hasOwnProperty(Text_Text.Text, obj13);
+      cResult[11] = tmp9.emptyStateContentTitle;
+      cResult[12] = tmp5;
       cResult[13] = tmp20;
       tmp18 = tmp20;
     }
-    const obj12 = { variant: "text-md/normal", color: "text-default", style: tmp8.emptyStateContentDescription, children: tmp6 };
-    const tmp17 = hasOwnProperty(Text_Text.Text, obj12);
-    cResult[8] = tmp8.emptyStateContentDescription;
-    cResult[9] = tmp6;
-    cResult[10] = tmp17;
-    tmp15 = tmp17;
+    const items4 = [tmp9.emptyStateContentContainer, !(undefined !== hasContentAbove && hasContentAbove) && tmp9.emptyStateContentContainerScreenCentered];
+    cResult[8] = tmp9.emptyStateContentContainer;
+    cResult[9] = !(undefined !== hasContentAbove && hasContentAbove) && tmp9.emptyStateContentContainerScreenCentered;
+    cResult[10] = items4;
+    tmp17 = items4;
   }
-  const obj13 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp8.emptyStateContentTitle, children: tmp4 };
-  const tmp14 = hasOwnProperty(Text_Text.Text, obj13);
-  cResult[5] = tmp8.emptyStateContentTitle;
-  cResult[6] = tmp4;
-  cResult[7] = tmp14;
-  tmp13 = tmp14;
-}) : (function QuestHomeEmptyState(subtitle) {
+  const items5 = [tmp9.emptyStateContainer, undefined !== hasContentAbove && hasContentAbove && tmp9.emptyStateContainerBelowContent];
+  cResult[5] = tmp9.emptyStateContainer;
+  cResult[6] = undefined !== hasContentAbove && hasContentAbove && tmp9.emptyStateContainerBelowContent;
+  cResult[7] = items5;
+  tmp15 = items5;
+}) : (function QuestHomeEmptyState(hasContentAbove) {
   let action;
-  let items;
-  let items1;
   let items2;
   let items3;
+  let items4;
+  let items5;
   let obj12;
   let obj3;
   let obj4;
   let obj5;
   let title;
-  let tmp7Result;
-  ({ action, title } = subtitle);
+  let tmp8Result;
+  let flag = hasContentAbove.hasContentAbove;
+  if (flag === undefined) {
+    flag = false;
+  }
+  ({ action, title } = hasContentAbove);
   if (title === undefined) {
     const intl = intl3.intl;
     title = intl.string(intl3.t.SdlRnK);
   }
-  subtitle = subtitle.subtitle;
+  let subtitle = hasContentAbove.subtitle;
   if (subtitle === undefined) {
     const intl2 = intl3.intl;
     subtitle = intl2.string(intl3.t["R7mv+G"]);
@@ -252,35 +281,41 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeE
   const obj2 = { bottom: obj3.isAndroid(), style: tmp5.container, children: hasOwnProperty(_false, obj4) };
   const SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
   obj3 = PlatformUtils;
+  const items = [tmp5.emptyStateContainer, ];
   obj4 = { style: tmp5.container, children: metroRequire(_false, obj5) };
-  const obj6 = { style: tmp5.emptyStateContentContainer, children: items };
-  items = [, , ];
-  obj5 = { style: tmp5.emptyStateContainer, children: items1 };
+  obj5 = { style: items, children: items3 };
+  const tmp13 = flag && tmp5.emptyStateContainerBelowContent;
+  items[1] = tmp13;
+  const items1 = [tmp5.emptyStateContentContainer, ];
+  const obj6 = { style: items1, children: items2 };
+  const tmp14 = !flag && tmp5.emptyStateContentContainerScreenCentered;
+  items1[1] = tmp14;
+  items2 = [, , ];
   const obj7 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp5.emptyStateContentTitle, children: title };
-  items[0] = hasOwnProperty(Text_Text.Text, obj7);
+  items2[0] = hasOwnProperty(Text_Text.Text, obj7);
   const obj8 = { variant: "text-md/normal", color: "text-default", style: tmp5.emptyStateContentDescription, children: subtitle };
-  items[1] = hasOwnProperty(Text_Text.Text, obj8);
-  let tmp9Result = null != action;
-  if (tmp9Result) {
+  items2[1] = hasOwnProperty(Text_Text.Text, obj8);
+  let tmp10Result = null != action;
+  if (tmp10Result) {
     const obj9 = { style: tmp5.actionWrapper, children: action };
-    tmp9Result = tmp9(tmp10, obj9);
+    tmp10Result = tmp10(tmp11, obj9);
   }
-  items[2] = tmp9Result;
-  items1 = [metroRequire(_false, obj6), ];
-  let tmp11Result = null;
+  items2[2] = tmp10Result;
+  items3 = [metroRequire(_false, obj6), ];
+  let tmp12Result = null;
   if (!isChatLockedOpen) {
-    const obj10 = { children: items2 };
-    const obj11 = { style: tmp5.emptyImage, children: hasOwnProperty(tmp7Result, obj12) };
+    const obj10 = { children: items4 };
+    const obj11 = { style: tmp5.emptyImage, children: hasOwnProperty(tmp8Result, obj12) };
     obj12 = { style: tmp5.backgroundImage, source: AssetRegistryDefault, resizeMode: "cover" };
-    tmp7Result = FastImageDefault;
-    items2 = [hasOwnProperty(_false, obj11), ];
-    const obj24 = { style: tmp5.gradient, end: null, start: null, colors: items3 };
+    tmp8Result = FastImageDefault;
+    items4 = [hasOwnProperty(_false, obj11), ];
+    const obj24 = { style: tmp5.gradient, end: null, start: null, colors: items5 };
     ({ END: obj13.end, START: obj13.start } = VerticalGradient);
-    items3 = ["rgba(0, 0, 0, 0)", token];
-    items2[1] = hasOwnProperty(LinearGradientDefault, obj24);
-    tmp11Result = tmp11(metroImportDefault, obj10);
+    items5 = ["rgba(0, 0, 0, 0)", token];
+    items4[1] = hasOwnProperty(LinearGradientDefault, obj24);
+    tmp12Result = tmp12(metroImportDefault, obj10);
   }
-  items1[1] = tmp11Result;
+  items3[1] = tmp12Result;
   return hasOwnProperty(SafeAreaPaddingView, obj2);
 });
 const result = size.fileFinishedImporting("modules/quests/native/QuestHomeEmptyState.tsx");

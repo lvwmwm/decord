@@ -1,14 +1,14 @@
-// Module ID: 7901
-// Function ID: 7902
+// Module ID: 7914
+// Function ID: 7915
 // Name: AgeVerificationCustomTab
-// Dependencies: [5, 3, 570, 5680, 1384, 558, 576, 2]
+// Dependencies: [5, 3, 570, 5692, 1384, 558, 576, 2]
 // Exports: getIsAgeVerificationCustomTabAwaitingResult, openAgeVerificationCustomTab, resumeAgeVerificationCustomTab, setAgeVerificationCustomTabCopy
 
-// Module 7901 (AgeVerificationCustomTab)
+// Module 7914 (AgeVerificationCustomTab)
 import LoggerDefault from "Logger" /* 3 */;
 import react from "react" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import react_nativeDefault from "react-native" /* 5680 */;
+import react_nativeDefault from "react-native" /* 5692 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

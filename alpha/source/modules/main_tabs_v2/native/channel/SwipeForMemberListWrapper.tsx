@@ -1,25 +1,25 @@
-// Module ID: 17976
-// Function ID: 17977
+// Module ID: 18020
+// Function ID: 18021
 // Name: SwipeForMemberListWrapper
-// Dependencies: [32, 19, 17, 9689, 9677, 1087, 21, 3, 4969, 587, 558, 576, 5697, 11838, 5139, 5038, 5249, 5191, 7118, 5145, 11196, 1123, 17346, 8739, 17357, 11696, 5137, 5136, 5958, 1506, 17898, 17350, 17355, 17352, 17892, 17977, 12989, 10602, 5583, 17978, 5283, 13268, 2]
+// Dependencies: [32, 19, 17, 9711, 9699, 1087, 21, 3, 4969, 587, 558, 576, 5709, 11857, 5151, 5050, 5261, 5203, 7131, 5157, 11219, 1123, 17390, 8757, 17401, 11716, 5149, 5148, 5970, 1506, 17942, 17394, 17399, 17396, 17936, 18021, 13012, 10624, 5595, 18022, 5295, 13291, 2]
 
-// Module 17976 (SwipeForMemberListWrapper)
+// Module 18020 (SwipeForMemberListWrapper)
 import LoggerDefault from "Logger" /* 3 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5136 */;
-import RootNavigationRef from "RootNavigationRef" /* 5137 */;
-import useChatLayout from "useChatLayout" /* 5139 */;
-import ChatInputUtils from "ChatInputUtils" /* 5145 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5697 */;
-import react_native from "react-native" /* 9677 */;
-import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 11838 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 17357 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5148 */;
+import RootNavigationRef from "RootNavigationRef" /* 5149 */;
+import useChatLayout from "useChatLayout" /* 5151 */;
+import ChatInputUtils from "ChatInputUtils" /* 5157 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5709 */;
+import react_native from "react-native" /* 9699 */;
+import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 11857 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 17401 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 9689 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 9711 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -43,9 +43,9 @@ let obj5;
 let tmp;
 let tmp4;
 let unpackModuleId;
-const ReanimatedRexport = tmp(5038);
-const useChatLayoutDefault = tmp4(5139);
-const useMountEffect = tmp(5249);
+const ReanimatedRexport = tmp(5050);
+const useChatLayoutDefault = tmp4(5151);
+const useMountEffect = tmp(5261);
 let _slicedToArray = _slicedToArray_mod;
 let StyleSheet = react_native2.StyleSheet;
 let View = react_native2.View;

@@ -1,26 +1,27 @@
-// Module ID: 12925
-// Function ID: 12926
+// Module ID: 12947
+// Function ID: 12948
 // Name: CheckpointServersStatsScreen
-// Dependencies: [19, 17, 12893, 6001, 21, 4969, 587, 558, 576, 504, 12916, 12921, 12926, 1128, 3056, 12911, 3088, 12913, 9622, 12927, 12928, 5220, 6868, 2]
+// Dependencies: [19, 17, 12912, 6013, 21, 4969, 587, 558, 576, 504, 12935, 12941, 12942, 12948, 1128, 3056, 12930, 3088, 12932, 9645, 12949, 12950, 5232, 6881, 2]
 
-// Module 12925 (CheckpointServersStatsScreen)
+// Module 12947 (CheckpointServersStatsScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3056 from "module_3056" /* 3056 */;
 import _modDef3088 from "module_3088" /* 3088 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import GuildIcon from "GuildIcon" /* 6868 */;
-import CheckpointTextDefault from "CheckpointText" /* 12911 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 12913 */;
-import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12916 */;
-import _modDef12921 from "module_12921" /* 12921 */;
-import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 12926 */;
-import CheckpointGuildStatsDefault from "CheckpointGuildStats" /* 12927 */;
-import CheckpointRankTagDefault from "CheckpointRankTag" /* 12928 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import GuildIcon from "GuildIcon" /* 6881 */;
+import CheckpointTextDefault from "CheckpointText" /* 12930 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12932 */;
+import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12935 */;
+import _modDef12941 from "module_12941" /* 12941 */;
+import _modDef12942 from "module_12942" /* 12942 */;
+import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 12948 */;
+import CheckpointGuildStatsDefault from "CheckpointGuildStats" /* 12949 */;
+import CheckpointRankTagDefault from "CheckpointRankTag" /* 12950 */;
 import react from "react" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 12893 */;
-import CheckpointConstants from "CheckpointConstants" /* 6001 */;
+import CheckpointStore from "CheckpointStore" /* 12912 */;
+import CheckpointConstants from "CheckpointConstants" /* 6013 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -142,7 +143,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
       ({ container, header, heading, title } = tmp4);
       if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
         let obj2 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
-        const tmp12 = closure_6(tmp(9622).ServerIcon, obj2);
+        const tmp12 = closure_6(tmp(9645).ServerIcon, obj2);
         cResult[26] = tmp12;
         tmp9 = tmp12;
       } else {
@@ -394,7 +395,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
       tmp54 = cResult[4];
     }
     if (cResult[5] !== tmp4.globe) {
-      const obj12 = { uri: _modDef12921, style: tmp4.globe };
+      const obj12 = { animatedUri: _modDef12941, staticUri: _modDef12942, style: tmp4.globe };
       class B {
         constructor(arg0, arg1) {
           let guild;
@@ -711,7 +712,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
       const obj5 = { style: tmp.heading, children: items2 };
       const obj7 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
       const tmp16 = CheckpointScreenDefault;
-      items1[0] = closure_6(tmp2(9622).ServerIcon, obj7);
+      items1[0] = closure_6(tmp2(9645).ServerIcon, obj7);
       const obj8 = { variant: "heading-md/extrabold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
       const tmp20 = CheckpointTextDefault;
       const intl3 = tmp2(1128).intl;
@@ -765,7 +766,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSe
   const obj14 = { style: tmp.globalHeading, children: items6 };
   let tmp7 = closure_7;
   const tmp6 = CheckpointScreenDefault;
-  const obj15 = { uri: _modDef12921, style: tmp.globe };
+  const obj15 = { animatedUri: _modDef12941, staticUri: _modDef12942, style: tmp.globe };
   const tmp9 = CheckpointApngPlayerDefault;
   items6 = [closure_6(tmp9, obj15), ];
   const obj16 = { children: stringResult2.toLocaleUpperCase() };

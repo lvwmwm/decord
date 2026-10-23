@@ -1,9 +1,9 @@
-// Module ID: 11986
-// Function ID: 11987
+// Module ID: 12005
+// Function ID: 12006
 // Name: usePlaceholderSize
 // Dependencies: [19, 558, 2]
 
-// Module 11986 (usePlaceholderSize)
+// Module 12005 (usePlaceholderSize)
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

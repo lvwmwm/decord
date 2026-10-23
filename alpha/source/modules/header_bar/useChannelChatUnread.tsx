@@ -1,10 +1,10 @@
-// Module ID: 9692
-// Function ID: 9693
+// Module ID: 9714
+// Function ID: 9715
 // Name: useChannelChatUnread
-// Dependencies: [6756, 558, 576, 504, 2]
+// Dependencies: [6769, 558, 576, 504, 2]
 
-// Module 9692 (useChannelChatUnread)
-import ReadStateStore from "ReadStateStore" /* 6756 */;
+// Module 9714 (useChannelChatUnread)
+import ReadStateStore from "ReadStateStore" /* 6769 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

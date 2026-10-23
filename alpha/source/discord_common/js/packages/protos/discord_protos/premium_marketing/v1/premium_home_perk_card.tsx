@@ -1,11 +1,11 @@
-// Module ID: 9529
-// Function ID: 9530
+// Module ID: 9552
+// Function ID: 9553
 // Name: premium_home_perk_card
-// Dependencies: [32, 1212, 9511, 2]
+// Dependencies: [32, 1212, 9534, 2]
 
-// Module 9529 (premium_home_perk_card)
+// Module 9552 (premium_home_perk_card)
 import _mod1212 from "module_1212" /* 1212 */;
-import theme_aware_asset from "theme_aware_asset" /* 9511 */;
+import theme_aware_asset from "theme_aware_asset" /* 9534 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

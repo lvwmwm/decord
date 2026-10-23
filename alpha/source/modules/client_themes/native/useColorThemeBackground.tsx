@@ -1,16 +1,16 @@
-// Module ID: 5132
-// Function ID: 5133
+// Module ID: 5144
+// Function ID: 5145
 // Name: useColorThemeBackground
-// Dependencies: [19, 1207, 4993, 1128, 1256, 5133, 558, 576, 5135, 573, 5188, 2]
+// Dependencies: [19, 1207, 4993, 1128, 1256, 5145, 558, 576, 5147, 573, 5200, 2]
 
-// Module 5132 (useColorThemeBackground)
+// Module 5144 (useColorThemeBackground)
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1256 */;
-import GuildThemePresets from "GuildThemePresets" /* 5133 */;
-import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 5135 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 5188 */;
+import GuildThemePresets from "GuildThemePresets" /* 5145 */;
+import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 5147 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 5200 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4993 */;
@@ -49,7 +49,7 @@ function getGuildThemeBackground(type, stateFromStores) {
     }
     GUILD_THEME_DEFAULT_BASE_MIX = customUserThemeSettings.baseMix;
     if (GUILD_THEME_DEFAULT_BASE_MIX == null) {
-      GUILD_THEME_DEFAULT_BASE_MIX = tmp3(5133).GUILD_THEME_DEFAULT_BASE_MIX;
+      GUILD_THEME_DEFAULT_BASE_MIX = tmp3(5145).GUILD_THEME_DEFAULT_BASE_MIX;
     }
     return obj;
   } else {
@@ -125,7 +125,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useColorTh
   let gradientPreset;
   let stateFromStores;
   let theme;
-  const tmp = stateFromStores(5135)();
+  const tmp = stateFromStores(5147)();
   _require = tmp;
   const items = [ThemeStore];
   const obj = require("useStateFromStores");

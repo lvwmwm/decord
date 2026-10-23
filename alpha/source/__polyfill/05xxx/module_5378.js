@@ -1,138 +1,103 @@
 // Module ID: 5378
 // Function ID: 5379
-// Dependencies: [5351, 5366, 5342]
-// Exports: usePanGesture
+// Dependencies: [19, 5317, 5300, 5379, 5363, 5339, 5326, 5299]
+// Exports: useGesture
 
 // Module 5378
-import ComposedGestureName from "ComposedGestureName" /* 5342 */;
-import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 5351 */;
-import _mod5366 from "module_5366" /* 5366 */;
+import handlerIDToTag from "handlerIDToTag" /* 5299 */;
+import selectProperties from "selectProperties" /* 5326 */;
+import NativeProxy2 from "NativeProxy" /* 5339 */;
+import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 5363 */;
+import react from "react" /* 19 */;
 
-function transformPanProps(activeOffsetY) {
-  activeOffsetY = activeOffsetY.activeOffsetY;
-  if (undefined !== activeOffsetY) {
-    const _Array = Array;
-    if (Array.isArray(activeOffsetY)) {
-      const _HermesInternal3 = HermesInternal;
-      activeOffsetY["" + "activeOffsetY" + "Start"] = activeOffsetY[0];
-      const _HermesInternal4 = HermesInternal;
-      activeOffsetY["" + "activeOffsetY" + "End"] = activeOffsetY[1];
-    } else {
+const require = globalThis.__r;
+let _require, dependencyMap;
+
+let c2;
+let c3;
+({ useEffect: c2, useMemo: c3 } = react);
+
+export const useGesture = function useGesture(Fling, clonedAndRemappedConfig) {
+  let config;
+  let jsEventHandler;
+  let type;
+  _require = Fling;
+  dependencyMap = clonedAndRemappedConfig;
+  const tmp2 = jsEventHandler(() => {
+    const obj = type(config[1]);
+    return obj.getNextHandlerTag();
+  }, []);
+  const handlerTag = tmp2;
+  if (clonedAndRemappedConfig.disableReanimated !== jsEventHandler(() => config.disableReanimated, [])) {
+    const _Error2 = Error;
+    let obj2 = require("tagMessage");
+    const self3 = this;
+    const self4 = this;
+    const error = new Error(obj2.tagMessage("The \"disableReanimated\" property must not be changed after the handler is created."));
+    throw error;
+  } else {
+    let obj3 = require("module_5379");
+    const gestureCallbacks = obj3.useGestureCallbacks(tmp2, clonedAndRemappedConfig);
+    jsEventHandler = gestureCallbacks.jsEventHandler;
+    const reanimatedEventHandler = gestureCallbacks.reanimatedEventHandler;
+    const animatedEventHandler = gestureCallbacks.animatedEventHandler;
+    const tmp16 = _require;
+    if (clonedAndRemappedConfig.shouldUseReanimatedDetector) {
+      if (!reanimatedEventHandler) {
+        const _Error = Error;
+        const self = this;
+        const self2 = this;
+        const tmp16Result = tmp16(5300);
+        const error1 = new Error(tmp16Result.tagMessage("Failed to create reanimated event handlers."));
+        throw error1;
+      }
+    }
+    const items = [tmp2, , , ];
+    ({ simultaneousWith: arr[1], requireToFail: arr[2], block: arr[3] } = clonedAndRemappedConfig);
+    const tmpResult = jsEventHandler(() => {
       const obj = maybeExtractNativeEvent;
-      if (obj.maybeUnpackValue(activeOffsetY) < 0) {
-        const _HermesInternal2 = HermesInternal;
-        activeOffsetY["" + "activeOffsetY" + "Start"] = activeOffsetY;
-      } else {
-        const _HermesInternal = HermesInternal;
-        activeOffsetY["" + "activeOffsetY" + "End"] = activeOffsetY;
-      }
-    }
-    delete activeOffsetY["activeOffsetY"];
-  }
-  const failOffsetX = activeOffsetY.failOffsetX;
-  if (undefined !== failOffsetX) {
-    const _Array2 = Array;
-    if (Array.isArray(failOffsetX)) {
-      const _HermesInternal7 = HermesInternal;
-      activeOffsetY["" + "failOffsetX" + "Start"] = failOffsetX[0];
-      const _HermesInternal8 = HermesInternal;
-      activeOffsetY["" + "failOffsetX" + "End"] = failOffsetX[1];
-    } else {
-      const obj2 = maybeExtractNativeEvent;
-      if (obj2.maybeUnpackValue(failOffsetX) < 0) {
-        const _HermesInternal6 = HermesInternal;
-        activeOffsetY["" + "failOffsetX" + "Start"] = failOffsetX;
-      } else {
-        const _HermesInternal5 = HermesInternal;
-        activeOffsetY["" + "failOffsetX" + "End"] = failOffsetX;
-      }
-    }
-    delete activeOffsetY["failOffsetX"];
-  }
-  const failOffsetY = activeOffsetY.failOffsetY;
-  if (undefined !== failOffsetY) {
-    const _Array3 = Array;
-    if (Array.isArray(failOffsetY)) {
-      const _HermesInternal11 = HermesInternal;
-      activeOffsetY["" + "failOffsetY" + "Start"] = failOffsetY[0];
-      const _HermesInternal12 = HermesInternal;
-      activeOffsetY["" + "failOffsetY" + "End"] = failOffsetY[1];
-    } else {
+      const obj2 = { simultaneousWith: config.simultaneousWith, requireToFail: config.requireToFail, block: config.block };
+      return obj.prepareRelations(obj2, handlerTag);
+    }, items);
+    const gestureRelations = tmpResult;
+    const items1 = [tmp2, Fling, clonedAndRemappedConfig, jsEventHandler, reanimatedEventHandler, animatedEventHandler, tmpResult];
+    const tmpResult2 = jsEventHandler(() => {
+      const obj = { handlerTag, type, config, detectorCallbacks: obj2, gestureRelations };
+      return obj;
+    }, items1);
+    let closure_7 = tmpResult2;
+    const items2 = [Fling, tmp2];
+    handlerTag(() => {
+      let NativeProxy = NativeProxy2.NativeProxy;
+      NativeProxy.createGestureHandler(type, handlerTag, {});
+      let obj = selectProperties;
+      let result = obj.scheduleFlushOperations();
+      return () => {
+        const NativeProxy = type(config[5]).NativeProxy;
+        NativeProxy.dropGestureHandler(handlerTag);
+        const obj = type(config[6]);
+        const result = obj.scheduleFlushOperations();
+      };
+    }, items2);
+    const items3 = [tmp2, clonedAndRemappedConfig, Fling, tmpResult2];
+    handlerTag(() => {
+      let obj = maybeExtractNativeEvent;
+      const result = obj.prepareConfigForNativeSide(type, config);
+      const NativeProxy = NativeProxy2.NativeProxy;
+      const result1 = NativeProxy.setGestureHandlerConfig(handlerTag, result);
+      let obj2 = selectProperties;
+      const result2 = obj2.scheduleFlushOperations();
       const obj3 = maybeExtractNativeEvent;
-      if (obj3.maybeUnpackValue(failOffsetY) < 0) {
-        const _HermesInternal10 = HermesInternal;
-        activeOffsetY["" + "failOffsetY" + "Start"] = failOffsetY;
-      } else {
-        const _HermesInternal9 = HermesInternal;
-        activeOffsetY["" + "failOffsetY" + "End"] = failOffsetY;
-      }
-    }
-    delete activeOffsetY["failOffsetY"];
+      obj3.bindSharedValues(config, handlerTag);
+      const obj4 = handlerIDToTag;
+      obj4.registerGesture(handlerTag, closure_7);
+      return () => {
+        const obj = type(closure_1[4]);
+        obj.unbindSharedValues(closure_1_1, handlerTag);
+        const obj2 = type(closure_1[7]);
+        obj2.unregisterGesture(handlerTag);
+      };
+    }, items3);
+    return tmpResult2;
   }
-  const activeOffsetX = activeOffsetY.activeOffsetX;
-  if (undefined !== activeOffsetX) {
-    const _Array4 = Array;
-    if (Array.isArray(activeOffsetX)) {
-      const _HermesInternal15 = HermesInternal;
-      activeOffsetY["" + "activeOffsetX" + "Start"] = activeOffsetX[0];
-      const _HermesInternal16 = HermesInternal;
-      activeOffsetY["" + "activeOffsetX" + "End"] = activeOffsetX[1];
-    } else {
-      const obj4 = maybeExtractNativeEvent;
-      if (obj4.maybeUnpackValue(activeOffsetX) < 0) {
-        const _HermesInternal14 = HermesInternal;
-        activeOffsetY["" + "activeOffsetX" + "Start"] = activeOffsetX;
-      } else {
-        const _HermesInternal13 = HermesInternal;
-        activeOffsetY["" + "activeOffsetX" + "End"] = activeOffsetX;
-      }
-    }
-    delete activeOffsetY["activeOffsetX"];
-  }
-  const obj5 = maybeExtractNativeEvent;
-  activeOffsetY.changeEventCalculator = obj5.getChangeEventCalculator(diffCalculator);
-  activeOffsetY.fillInDefaultValues = fillInDefaultValues;
-  return activeOffsetY;
-}
-const items = [["minDistance", "minDist"], ["averageTouches", "avgTouches"]];
-const map = new Map(items);
-function diffCalculator(translationX, translationX2) {
-  let diff;
-  let diff1;
-  translationX = translationX.translationX;
-  if (translationX2) {
-    diff = translationX - translationX2.translationX;
-  } else {
-    diff = translationX;
-  }
-  const translationY = translationX.translationY;
-  const obj = { changeX: diff, changeY: diff1 };
-  if (translationX2) {
-    diff1 = translationY - translationX2.translationY;
-  } else {
-    diff1 = translationY;
-  }
-  return obj;
-}
-diffCalculator.__closure = {};
-diffCalculator.__workletHash = 4211053881938;
-diffCalculator.__initData = { code: "function diffCalculator_Pnpm_usePanGestureTs1(current,previous){return{changeX:previous?current.translationX-previous.translationX:current.translationX,changeY:previous?current.translationY-previous.translationY:current.translationY};}" };
-function fillInDefaultValues(arg0) {
-  arg0.changeX = 0;
-  arg0.changeY = 0;
-}
-fillInDefaultValues.__closure = {};
-fillInDefaultValues.__workletHash = 12221662243929;
-fillInDefaultValues.__initData = { code: "function fillInDefaultValues_Pnpm_usePanGestureTs2(event){event.changeX=0;event.changeY=0;}" };
-let closure_6 = {};
-
-export const usePanGesture = function usePanGesture(cResult) {
-  let tmp = cResult;
-  if (cResult === undefined) {
-    tmp = closure_6;
-  }
-  const obj = maybeExtractNativeEvent;
-  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformPanProps);
-  const obj2 = _mod5366;
-  return obj2.useGesture(ComposedGestureName.SingleGestureName.Pan, clonedAndRemappedConfig);
 };

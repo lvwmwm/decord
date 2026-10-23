@@ -1,9 +1,9 @@
-// Module ID: 15382
-// Function ID: 15383
+// Module ID: 15403
+// Function ID: 15404
 // Name: Badges/Badges
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5220, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5232, 2]
 
-// Module 15382 (Badges/Badges)
+// Module 15403 (Badges/Badges)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 let obj2;
 let obj3;
 let tmp;
-const Text_Text = tmp(5220);
+const Text_Text = tmp(5232);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;

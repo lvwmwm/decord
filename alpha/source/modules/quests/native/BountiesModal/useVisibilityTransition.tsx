@@ -1,11 +1,11 @@
-// Module ID: 16239
-// Function ID: 16240
+// Module ID: 16272
+// Function ID: 16273
 // Name: useVisibilityTransition
-// Dependencies: [32, 19, 558, 576, 5038, 5192, 2]
+// Dependencies: [32, 19, 558, 576, 5050, 5204, 2]
 
-// Module 16239 (useVisibilityTransition)
-import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
-import timing from "timing" /* 5192 */;
+// Module 16272 (useVisibilityTransition)
+import ReanimatedRexport from "ReanimatedRexport" /* 5050 */;
+import timing from "timing" /* 5204 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

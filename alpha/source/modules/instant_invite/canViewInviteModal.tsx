@@ -1,10 +1,10 @@
-// Module ID: 8879
-// Function ID: 8880
+// Module ID: 8902
+// Function ID: 8903
 // Name: canViewInviteModal
 // Dependencies: [1087, 2]
 // Exports: canViewInviteModal
 
-// Module 8879 (canViewInviteModal)
+// Module 8902 (canViewInviteModal)
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

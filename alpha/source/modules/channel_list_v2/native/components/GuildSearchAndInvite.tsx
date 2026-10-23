@@ -1,24 +1,24 @@
-// Module ID: 13117
-// Function ID: 13118
+// Module ID: 13140
+// Function ID: 13141
 // Name: GuildSearchAndInvite
-// Dependencies: [19, 17, 4821, 4899, 4843, 4872, 12014, 1087, 21, 4969, 587, 13118, 2002, 5896, 558, 576, 1505, 13119, 13120, 13158, 7042, 6895, 7944, 10833, 1128, 9024, 5230, 7132, 13200, 5038, 9029, 504, 9026, 13201, 13202, 13204, 2]
+// Dependencies: [19, 17, 4821, 4899, 4843, 4872, 12033, 1087, 21, 4969, 587, 13141, 2002, 5908, 558, 576, 1505, 13142, 13143, 13181, 7055, 6908, 7957, 10856, 1128, 9047, 5242, 7145, 13223, 5050, 9052, 504, 9049, 13224, 13225, 13227, 2]
 
-// Module 13117 (GuildSearchAndInvite)
+// Module 13140 (GuildSearchAndInvite)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1128 */;
-import useAlertStore from "useAlertStore" /* 5896 */;
-import useStableCallbackDefault from "useStableCallback" /* 7042 */;
-import IconButton4 from "IconButton" /* 7944 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9024 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9026 */;
-import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 9029 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10833 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12014 */;
-import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 13120 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13158 */;
-import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 13202 */;
-import useEventsButtonPropsDefault from "useEventsButtonProps" /* 13204 */;
+import useAlertStore from "useAlertStore" /* 5908 */;
+import useStableCallbackDefault from "useStableCallback" /* 7055 */;
+import IconButton4 from "IconButton" /* 7957 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9047 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9049 */;
+import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 9052 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10856 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12033 */;
+import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 13143 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13181 */;
+import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 13225 */;
+import useEventsButtonPropsDefault from "useEventsButtonProps" /* 13227 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildChannelStore from "GuildChannelStore" /* 4899 */;
@@ -471,7 +471,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
   }
   const tmp12 = useStableCallbackDefault(tmp11);
-  const tmpResult2 = guild(13201);
+  const tmpResult2 = guild(13224);
   const shouldShowInvitesDisabledNotif = tmpResult2.useShouldShowInvitesDisabledNotif(guild);
   useCanSeeEventsInChannelListDefault(guild.id);
   ({ hasUnread, handlePress, handleLongPress } = useEventsButtonPropsDefault(guild));
@@ -532,7 +532,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj = instant_invite_InstantInviteUtils;
     const result = obj.handleOpenInviteActionsheet(guild, channelId, channels, unpackModuleId.GUILD_HEADER);
   });
-  const obj2 = guild(13201);
+  const obj2 = guild(13224);
   const shouldShowInvitesDisabledNotif = obj2.useShouldShowInvitesDisabledNotif(guild);
   const tmp4 = useCanSeeEventsInChannelListDefault(guild.id);
   const tmp5 = useEventsButtonPropsDefault(guild);

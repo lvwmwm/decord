@@ -1,15 +1,38 @@
 // Module ID: 5229
 // Function ID: 5230
-// Dependencies: [17, 26, 65]
+// Dependencies: [106, 65, 114]
 
 // Module 5229
-import react_native from "react-native" /* 17 */;
-import _mod26 from "module_26" /* 26 */;
+import renderElement from "renderElement" /* 114 */;
+import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;
 
-const codegenNativeComponent = react_native.codegenNativeComponent;
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNPlainText", validAttributes: { text: true, color: _mod26.colorAttribute, fontSize: true, fontFamily: true, fontWeight: true, fontStyle: true, fontVariant: true, fontVariationSettings: true, lineHeight: true, letterSpacing: true, hasLetterSpacing: true, textAlign: true, textAlignVertical: true, textDecorationLine: true, textTransform: true, numberOfLines: true, ellipsizeMode: true, allowFontScaling: true, maxFontSizeMultiplier: true, experiment: true, lineHeightClippingIos: true, includeFontPadding: true } };
-({ text: true, color: _mod26.colorAttribute, fontSize: true, fontFamily: true, fontWeight: true, fontStyle: true, fontVariant: true, fontVariationSettings: true, lineHeight: true, letterSpacing: true, hasLetterSpacing: true, textAlign: true, textAlignVertical: true, textDecorationLine: true, textTransform: true, numberOfLines: true, ellipsizeMode: true, allowFontScaling: true, maxFontSizeMultiplier: true, experiment: true, lineHeightClippingIos: true, includeFontPadding: true });
+let obj2;
+let obj3;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "LottieAnimationView", bubblingEventTypes: obj2, validAttributes: obj3 };
+obj2 = { topAnimationFinish: { phasedRegistrationNames: { captured: "onAnimationFinishCapture", bubbled: "onAnimationFinish" } }, topAnimationFailure: { phasedRegistrationNames: { captured: "onAnimationFailureCapture", bubbled: "onAnimationFailure" } }, topAnimationLoaded: { phasedRegistrationNames: { captured: "onAnimationLoadedCapture", bubbled: "onAnimationLoaded" } } };
+obj3 = { resizeMode: true, renderMode: true, sourceName: true, sourceJson: true, sourceURL: true, sourceDotLottieURI: true, imageAssetsFolder: true, progress: true, speed: true, loop: true, autoPlay: true, enableMergePathsAndroidForKitKatAndAbove: true, enableSafeModeAndroid: true, hardwareAccelerationAndroid: true, cacheComposition: true, colorFilters: true, dummy: true, textFiltersAndroid: true, textFiltersIOS: true };
+const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onAnimationFinish: true, onAnimationFailure: true, onAnimationLoaded: true }));
+const obj4 = {
+  play(arg0, arg1, arg2) {
+    const items = [arg1, arg2];
+    const obj = renderElement;
+    obj.dispatchCommand(arg0, "play", items);
+  },
+  reset(arg0) {
+    const obj = renderElement;
+    obj.dispatchCommand(arg0, "reset", []);
+  },
+  pause(arg0) {
+    const obj = renderElement;
+    obj.dispatchCommand(arg0, "pause", []);
+  },
+  resume(arg0) {
+    const obj = renderElement;
+    obj.dispatchCommand(arg0, "resume", []);
+  }
+};
 
-export default module_65.get("RNPlainText", () => obj);
+export default module_65.get("LottieAnimationView", () => obj);
 export { __INTERNAL_VIEW_CONFIG };
+export const Commands = obj4;

@@ -1,9 +1,9 @@
-// Module ID: 12006
-// Function ID: 12007
+// Module ID: 12025
+// Function ID: 12026
 // Name: MyGuildApplicationsStore
 // Dependencies: [1104, 504, 584, 2]
 
-// Module 12006 (MyGuildApplicationsStore)
+// Module 12025 (MyGuildApplicationsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1104 */;

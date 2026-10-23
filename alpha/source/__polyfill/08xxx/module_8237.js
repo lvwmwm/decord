@@ -1,77 +1,34 @@
 // Module ID: 8237
 // Function ID: 8238
 // Dependencies: []
-// Exports: addMissingNamespaces, isMissingNamespaceError
+// Exports: getCalculatedGpsValue, getEncodedString, getStringValue
 
 // Module 8237
-let closure_0 = { xmp: "http://ns.adobe.com/xap/1.0/", tiff: "http://ns.adobe.com/tiff/1.0/", exif: "http://ns.adobe.com/exif/1.0/", dc: "http://purl.org/dc/elements/1.1/", xmpMM: "http://ns.adobe.com/xap/1.0/mm/", stEvt: "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#", stRef: "http://ns.adobe.com/xap/1.0/sType/ResourceRef#", photoshop: "http://ns.adobe.com/photoshop/1.0/" };
+const f100363 = (item) => String.fromCharCode(item);
 
-export const isMissingNamespaceError = function isMissingNamespaceError(message) {
-  const items = ["prefix is non-null and namespace is null", "prefix not bound to a namespace", "prefix inte bundet till en namnrymd", /Namespace prefix .+ is not defined/];
-  let num = 0;
-  if (0 < items.length) {
-    const _RegExp = RegExp;
-    const self = this;
-    const self2 = this;
-    const regExp = new RegExp(items[num]);
-    while (!regExp.test(message.message)) {
-      num = num + 1;
-    }
-    return true;
-  }
-  return false;
+export const getStringValue = function getStringValue(value) {
+  const mapped = value.map(f100363);
+  return mapped.join("");
 };
-export const addMissingNamespaces = function addMissingNamespaces(tmp7Result) {
-  const match = tmp7Result.match(/<([A-Za-z_][A-Za-z0-9._-]*)([^>]*)>/);
-  if (match) {
-    const items = [];
-    const obj = /xmlns:([\w-]+)=["'][^"']+["']/g;
-    let match1 = obj.exec(tmp7Result);
-    if (null !== match1) {
-      do {
-        if (-1 === items.indexOf(match1[1])) {
-          let arr = items.push(match1[1]);
-        }
-        match1 = obj.exec(tmp7Result);
-      } while (null !== match1);
+export const getEncodedString = function getEncodedString(arr) {
+  if (arr.length >= 8) {
+    const substr = arr.slice(0, 8);
+    const mapped = substr.map(f100363);
+    const joined = mapped.join("");
+    if ("ASCII\0\0\0" === joined) {
+      const substr1 = arr.slice(8);
+      const mapped1 = substr1.map(f100363);
+      return mapped1.join("");
+    } else if ("JIS\0\0\0\0\0" === joined) {
+      return "[JIS encoded text]";
+    } else if ("UNICODE\0" === joined) {
+      return "[Unicode encoded text]";
+    } else if ("\0\0\0\0\0\0\0\0" === joined) {
+      return "[Undefined encoding]";
     }
-    const items1 = [];
-    const obj2 = /\b([A-Za-z_][A-Za-z0-9._-]*):[A-Za-z_][A-Za-z0-9._-]*\b/g;
-    let match2 = obj2.exec(tmp7Result);
-    if (null !== match2) {
-      do {
-        let tmp8 = match2[1];
-        let tmp9 = "xmlns" !== tmp8 && "xml" !== tmp8;
-        if (tmp9) {
-          if (-1 === items1.indexOf(tmp8)) {
-            let arr2 = items1.push(tmp8);
-          }
-        }
-        match2 = obj2.exec(tmp7Result);
-      } while (null !== match2);
-    }
-    const found = items1.filter((item) => -1 === items.indexOf(item));
-    let replaced = tmp7Result;
-    if (0 !== found.length) {
-      let num3;
-      const items2 = [];
-      for (let num3 = 0; num3 < found.length; num3 = num3 + 1) {
-        let tmp12 = found[num3];
-        let text = closure_0[tmp12];
-        if (!text) {
-          text = `http://fallback.namespace/${tmp12}`;
-        }
-        let arr3 = items2.push(` xmlns:${tmp12}="${tmp14}"`);
-      }
-      const _RegExp = RegExp;
-      const self = this;
-      const self2 = this;
-      const joined = items2.join("");
-      const regExp = new RegExp("<" + tmp2 + "([^>]*)>");
-      replaced = tmp7Result.replace(regExp, `<${tmp2}$1${tmp17}>`);
-    }
-    return replaced;
-  } else {
-    return tmp7Result;
   }
+  return "Undefined";
+};
+export const getCalculatedGpsValue = function getCalculatedGpsValue(value) {
+  return value[0][0] / value[0][1] + value[1][0] / value[1][1] / 60 + value[2][0] / value[2][1] / 3600;
 };

@@ -1,16 +1,16 @@
-// Module ID: 18089
-// Function ID: 18090
+// Module ID: 18133
+// Function ID: 18134
 // Name: ThreadListEmpty
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 1202, 13069, 1128, 5220, 5230, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 1202, 13092, 1128, 5232, 5242, 2]
 
-// Module 18089 (ThreadListEmpty)
+// Module 18133 (ThreadListEmpty)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13069 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13092 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -99,7 +99,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     let tmp25 = null != onCreateThreadPress;
     if (tmp25) {
       const obj6 = { onPress: onCreateThreadPress, text: intl3.string(intl4.t.rBIGBL) };
-      const Button = tmp(5230).Button;
+      const Button = tmp(5242).Button;
       intl3 = tmp(1128).intl;
       tmp25 = React3(Button, obj6);
     }
@@ -160,7 +160,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const tmp4 = React3;
   if (tmp4Result) {
     const obj6 = { onPress: onCreateThreadPress, text: intl3.string(intl4.t.rBIGBL) };
-    const Button = tmp5(5230).Button;
+    const Button = tmp5(5242).Button;
     intl3 = tmp5(1128).intl;
     tmp4Result = tmp4(Button, obj6);
   }

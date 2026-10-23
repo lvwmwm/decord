@@ -1,21 +1,21 @@
-// Module ID: 17190
-// Function ID: 17191
+// Module ID: 17234
+// Function ID: 17235
 // Name: SafetyGuildSettingGuildSelect
-// Dependencies: [19, 6686, 15918, 17191, 8318, 5196, 17192, 2002, 558, 576, 17193, 1128, 11181, 2]
+// Dependencies: [19, 6699, 15951, 17235, 8330, 5208, 17236, 2002, 558, 576, 17237, 1128, 11204, 2]
 
-// Module 17190 (SafetyGuildSettingGuildSelect)
+// Module 17234 (SafetyGuildSettingGuildSelect)
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import SettingsConstants from "SettingsConstants" /* 8318 */;
-import useDMPermissionsOverrideCount from "useDMPermissionsOverrideCount" /* 17193 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
+import SettingsConstants from "SettingsConstants" /* 8330 */;
+import useDMPermissionsOverrideCount from "useDMPermissionsOverrideCount" /* 17237 */;
 import react from "react" /* 19 */;
-import SortedGuildStore from "SortedGuildStore" /* 6686 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 15918 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 17191 */;
+import SortedGuildStore from "SortedGuildStore" /* 6699 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 15951 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 17235 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11181 */;
+import SettingBuilders from "SettingBuilders" /* 11204 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -108,7 +108,7 @@ let obj = {
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   onPress: function onGuildSelectPress() {
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequire(17192, dependencyMap.paths), "SettingsPrivacyAndSafetyGuildSelectActionSheet");
+    obj.openLazy(asyncRequire(17236, dependencyMap.paths), "SettingsPrivacyAndSafetyGuildSelectActionSheet");
   }
 };
 const guildSelector = SettingBuilders.createGuildSelector(obj);

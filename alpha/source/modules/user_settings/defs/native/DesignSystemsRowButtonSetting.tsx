@@ -1,12 +1,12 @@
-// Module ID: 17055
-// Function ID: 17056
+// Module ID: 17099
+// Function ID: 17100
 // Name: DesignSystemsRowButtonSetting
-// Dependencies: [8318, 1087, 11181, 17056, 2]
+// Dependencies: [8330, 1087, 11204, 17100, 2]
 
-// Module 17055 (DesignSystemsRowButtonSetting)
+// Module 17099 (DesignSystemsRowButtonSetting)
 import Constants from "Constants" /* 1087 */;
-import SettingsConstants from "SettingsConstants" /* 8318 */;
-import SettingBuilders from "SettingBuilders" /* 11181 */;
+import SettingsConstants from "SettingsConstants" /* 8330 */;
+import SettingBuilders from "SettingBuilders" /* 11204 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

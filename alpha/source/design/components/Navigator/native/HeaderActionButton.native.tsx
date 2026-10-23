@@ -1,16 +1,16 @@
-// Module ID: 7470
-// Function ID: 7471
+// Module ID: 7483
+// Function ID: 7484
 // Name: HeaderActionButton
-// Dependencies: [19, 1206, 21, 4969, 587, 558, 576, 5220, 5236, 5232, 6893, 2]
+// Dependencies: [19, 1206, 21, 4969, 587, 558, 576, 5232, 5248, 5244, 6906, 2]
 
-// Module 7470 (HeaderActionButton)
+// Module 7483 (HeaderActionButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import FormConstants from "FormConstants" /* 1206 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import IconDefault from "Icon" /* 5232 */;
-import ButtonConstants from "ButtonConstants" /* 5236 */;
-import Pressables from "Pressables" /* 6893 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import IconDefault from "Icon" /* 5244 */;
+import ButtonConstants from "ButtonConstants" /* 5248 */;
+import Pressables from "Pressables" /* 6906 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -65,7 +65,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderAction
           tmp9 = tmp14;
         }
         const obj2 = { style: tmp13, variant: "text-md/semibold", lineClamp: 1, maxFontSizeMultiplier: ButtonConstants.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER, children: text };
-        const Text = tmp(5220).Text;
+        const Text = tmp(5232).Text;
         const tmp16 = React3(Text, obj2);
         cResult[4] = tmp13;
         cResult[5] = text;

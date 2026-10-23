@@ -1,19 +1,19 @@
-// Module ID: 9370
-// Function ID: 9371
+// Module ID: 9393
+// Function ID: 9394
 // Name: ProfileEffect
-// Dependencies: [32, 19, 17, 4970, 2001, 21, 4969, 558, 576, 1499, 9371, 9372, 9373, 9375, 504, 1107, 9376, 9374, 5655, 8697, 2]
+// Dependencies: [32, 19, 17, 4970, 2001, 21, 4969, 558, 576, 1499, 9394, 9395, 9396, 9398, 504, 1107, 9399, 9397, 5667, 8715, 2]
 
-// Module 9370 (ProfileEffect)
+// Module 9393 (ProfileEffect)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
-import useProfileEffectDefault from "useProfileEffect" /* 8697 */;
-import utils from "utils" /* 9371 */;
-import constants from "constants" /* 9372 */;
-import ProfileEffectUtils from "ProfileEffectUtils" /* 9373 */;
-import ProfileEffectLayerDefault from "ProfileEffectLayer" /* 9376 */;
+import useProfileEffectDefault from "useProfileEffect" /* 8715 */;
+import utils from "utils" /* 9394 */;
+import constants from "constants" /* 9395 */;
+import ProfileEffectUtils from "ProfileEffectUtils" /* 9396 */;
+import ProfileEffectLayerDefault from "ProfileEffectLayer" /* 9399 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

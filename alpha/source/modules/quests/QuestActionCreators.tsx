@@ -1,33 +1,33 @@
-// Module ID: 9547
-// Function ID: 9548
+// Module ID: 9570
+// Function ID: 9571
 // Name: QuestActionCreators
-// Dependencies: [5, 7758, 9548, 6687, 5876, 6686, 7761, 7763, 6695, 1087, 6698, 1297, 584, 6360, 1128, 7769, 1257, 6661, 1275, 9549, 9552, 6702, 9553, 7757, 7841, 7848, 9554, 7556, 7780, 9555, 5013, 9556, 9557, 9558, 7759, 9574, 1267, 7735, 9575, 9560, 1104, 9576, 2]
+// Dependencies: [5, 7771, 9571, 6700, 5888, 6699, 7774, 7776, 6708, 1087, 6711, 1297, 584, 6373, 1128, 7782, 1257, 6674, 1275, 9572, 9575, 6715, 9576, 7770, 7854, 7861, 9577, 7569, 7793, 9578, 5018, 9579, 9580, 9581, 7772, 9597, 1267, 7748, 9598, 9583, 1104, 9599, 2]
 // Exports: claimQuestReward, clearQuestAdDecision, completeQuestPreview, dismissProgressTrackingFailureNotice, dismissQuestActivityModal, dismissQuestContent, enrollInQuest, fetchClaimedQuests, fetchCurrentQuests, fetchEarnedQuestToDeliver, fetchQuest, fetchQuestHomeHero, fetchQuestHomeHeroPreview, fetchQuestPreview, fetchQuestRewardCode, fetchQuestToDeliver, fetchVideoTranscript, manualStopConsoleQuest, manuallyStartConsoleQuest, markAdContentSeen, markAdContentUnseen, markQuestDiscovered, overrideQuestForPlacement, questsVisibleMobileMessagesChanged, resetOptimisticProgress, resetQuestDismissibilityStatus, resetQuestPreviewStatus, resetRecentQuestCompletions, selectTaskPlatform, sendHeartbeat, setAutoEnroll, updateOptimisticProgress, updatePrevRestingQuestDockMode, updateQuestDockVisibilityEligibility, updateVideoProgress
 
-// Module 9547 (QuestActionCreators)
+// Module 9570 (QuestActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6661 */;
-import QuestConstants from "QuestConstants" /* 6695 */;
-import QuestTypes from "QuestTypes" /* 6698 */;
-import AdCreativeType from "AdCreativeType" /* 6702 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7556 */;
-import QuestDataUtils from "QuestDataUtils" /* 7757 */;
-import VideoQuestUIStore2 from "VideoQuestUIStore" /* 7763 */;
-import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 9548 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9549 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9552 */;
-import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 9553 */;
-import QuestDecisionRoundtripTrackerDefault from "QuestDecisionRoundtripTracker" /* 9554 */;
-import EarnedDecisionRoundtripTrackerDefault from "EarnedDecisionRoundtripTracker" /* 9575 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6674 */;
+import QuestConstants from "QuestConstants" /* 6708 */;
+import QuestTypes from "QuestTypes" /* 6711 */;
+import AdCreativeType from "AdCreativeType" /* 6715 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7569 */;
+import QuestDataUtils from "QuestDataUtils" /* 7770 */;
+import VideoQuestUIStore2 from "VideoQuestUIStore" /* 7776 */;
+import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 9571 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9572 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9575 */;
+import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 9576 */;
+import QuestDecisionRoundtripTrackerDefault from "QuestDecisionRoundtripTracker" /* 9577 */;
+import EarnedDecisionRoundtripTrackerDefault from "EarnedDecisionRoundtripTracker" /* 9598 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7758 */;
-import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6687 */;
-import NetworkStore from "NetworkStore" /* 5876 */;
-import SortedGuildStore from "SortedGuildStore" /* 6686 */;
-import QuestStore from "QuestStore" /* 7761 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7771 */;
+import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6700 */;
+import NetworkStore from "NetworkStore" /* 5888 */;
+import SortedGuildStore from "SortedGuildStore" /* 6699 */;
+import QuestStore from "QuestStore" /* 7774 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

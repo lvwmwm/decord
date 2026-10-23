@@ -1,14 +1,14 @@
-// Module ID: 14188
-// Function ID: 14189
+// Module ID: 14212
+// Function ID: 14213
 // Name: MediaViewerItem
-// Dependencies: [32, 19, 17, 21, 1384, 5145, 14189, 14190, 8737, 8736, 10057, 8732, 5283, 14191, 11394, 2]
+// Dependencies: [32, 19, 17, 21, 1384, 5157, 14213, 14214, 8755, 8754, 10079, 8750, 5295, 14215, 11417, 2]
 
-// Module 14188 (MediaViewerItem)
+// Module 14212 (MediaViewerItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5283 */;
-import useMediaViewerSources from "useMediaViewerSources" /* 8732 */;
-import useEntranceAnimation from "useEntranceAnimation" /* 14190 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5295 */;
+import useMediaViewerSources from "useMediaViewerSources" /* 8750 */;
+import useEntranceAnimation from "useEntranceAnimation" /* 14214 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
@@ -205,7 +205,7 @@ const memoResult = react.memo(function MediaViewerItem(index) {
     }
     const maxDistanceResult = maxDistance(num2);
     const onStartResult = maxDistanceResult.onStart(callback5);
-    const Gesture2 = tmp(5283).Gesture;
+    const Gesture2 = tmp(5295).Gesture;
     const TapResult1 = Gesture2.Tap();
     const runOnJSResult1 = TapResult1.runOnJS(true);
     const enabledResult1 = runOnJSResult1.enabled(!mediaItemHasSpoiler);
@@ -218,7 +218,7 @@ const memoResult = react.memo(function MediaViewerItem(index) {
     }
     const maxDistance2Result = maxDistance2(num3);
     const onStartResult1 = maxDistance2Result.onStart(callback4);
-    const Gesture3 = tmp(5283).Gesture;
+    const Gesture3 = tmp(5295).Gesture;
     const TapResult2 = Gesture3.Tap();
     let tmp9 = tmp3;
     const enabled = TapResult2.runOnJS(true).enabled;
@@ -235,14 +235,14 @@ const memoResult = react.memo(function MediaViewerItem(index) {
     }
     const maxDistance3Result = maxDistance3(num);
     const onStartResult2 = maxDistance3Result.onStart(callback6);
-    const Gesture4 = tmp(5283).Gesture;
+    const Gesture4 = tmp(5295).Gesture;
     const ExclusiveResult = Gesture4.Exclusive(onStartResult2, onStartResult, onStartResult1);
-    const Gesture5 = tmp(5283).Gesture;
+    const Gesture5 = tmp(5295).Gesture;
     const LongPressResult = Gesture5.LongPress();
     const runOnJSResult3 = LongPressResult.runOnJS(true);
     const enabledResult3 = runOnJSResult3.enabled(!mediaItemHasSpoiler);
     const onStartResult3 = enabledResult3.onStart(callback3);
-    const Gesture6 = tmp(5283).Gesture;
+    const Gesture6 = tmp(5295).Gesture;
     return Gesture6.Simultaneous(ExclusiveResult, onStartResult3, panGesture);
   }, items6);
   ref3 = obj.useRef(false);

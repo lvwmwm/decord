@@ -1,15 +1,15 @@
-// Module ID: 16697
-// Function ID: 16698
+// Module ID: 16741
+// Function ID: 16742
 // Name: LanguageSetting
-// Dependencies: [2068, 1087, 558, 576, 504, 1128, 11181, 9490, 16698, 2]
+// Dependencies: [2068, 1087, 558, 576, 504, 1128, 11204, 9513, 16742, 2]
 
-// Module 16697 (LanguageSetting)
+// Module 16741 (LanguageSetting)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import LanguageIcon from "LanguageIcon" /* 9490 */;
+import LanguageIcon from "LanguageIcon" /* 9513 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11181 */;
+import SettingBuilders from "SettingBuilders" /* 11204 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

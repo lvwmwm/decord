@@ -1,14 +1,14 @@
-// Module ID: 17502
-// Function ID: 17503
+// Module ID: 17546
+// Function ID: 17547
 // Name: FolderPlusIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 17049, 5654, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 17093, 5666, 2]
 
-// Module 17502 (FolderPlusIcon)
+// Module 17546 (FolderPlusIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 5654 */;
-import AssetRegistry from "AssetRegistry" /* 17049 */;
+import BaseIconImage2 from "BaseIconImage" /* 5666 */;
+import AssetRegistry from "AssetRegistry" /* 17093 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FolderPlus
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(5654).BaseIconImage;
+  const BaseIconImage = tmp(5666).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

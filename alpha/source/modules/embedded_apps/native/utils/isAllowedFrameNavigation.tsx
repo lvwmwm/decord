@@ -1,10 +1,10 @@
-// Module ID: 11454
-// Function ID: 11455
+// Module ID: 11474
+// Function ID: 11475
 // Name: isAllowedFrameNavigation
-// Dependencies: [32, 11455, 2]
+// Dependencies: [32, 11475, 2]
 // Exports: isAllowedFrameNavigation
 
-// Module 11454 (isAllowedFrameNavigation)
+// Module 11474 (isAllowedFrameNavigation)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -104,7 +104,7 @@ export const isAllowedFrameNavigation = function isAllowedFrameNavigation(url, r
     }
     return prop;
   }
-  const obj = uRL(11455);
+  const obj = uRL(11475);
   const tmp = uRL;
   if (!obj.isAboutBlankUrl(url)) {
     if (!url.startsWith("file://")) {
@@ -117,7 +117,7 @@ export const isAllowedFrameNavigation = function isAllowedFrameNavigation(url, r
         url = uRL;
         const _HermesInternal = HermesInternal;
         if ("" + url.protocol + "//" + url.host === routerOrigin) {
-          const tmpResult = tmp(11455);
+          const tmpResult = tmp(11475);
           someResult = !tmpResult.isTooLongForCloudflare(tmp6.href, routerOrigin);
         } else {
           const obj2 = getFrameSources(policy);

@@ -1,9 +1,9 @@
-// Module ID: 8450
-// Function ID: 8451
+// Module ID: 8462
+// Function ID: 8463
 // Name: NativeMarkdownExperiment
 // Dependencies: [1455, 558, 576, 2]
 
-// Module 8450 (NativeMarkdownExperiment)
+// Module 8462 (NativeMarkdownExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

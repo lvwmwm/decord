@@ -1,14 +1,14 @@
-// Module ID: 13057
-// Function ID: 13058
+// Module ID: 13080
+// Function ID: 13081
 // Name: useNativeForumPostContent
-// Dependencies: [1087, 4969, 558, 576, 1128, 6801, 6473, 2]
+// Dependencies: [1087, 4969, 558, 576, 1128, 6814, 6486, 2]
 
-// Module 13057 (useNativeForumPostContent)
+// Module 13080 (useNativeForumPostContent)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl10 from "intl" /* 1128 */;
-import StickersUtils from "StickersUtils" /* 6473 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6801 */;
+import StickersUtils from "StickersUtils" /* 6486 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6814 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

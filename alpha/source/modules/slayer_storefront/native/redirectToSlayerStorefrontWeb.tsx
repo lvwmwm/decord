@@ -1,10 +1,10 @@
-// Module ID: 10538
-// Function ID: 10539
+// Module ID: 10560
+// Function ID: 10561
 // Name: redirectToSlayerStorefrontWeb
-// Dependencies: [5, 1087, 3, 5649, 1128, 7414, 4785, 2]
+// Dependencies: [5, 1087, 3, 5661, 1128, 7427, 4785, 2]
 // Exports: default
 
-// Module 10538 (redirectToSlayerStorefrontWeb)
+// Module 10560 (redirectToSlayerStorefrontWeb)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

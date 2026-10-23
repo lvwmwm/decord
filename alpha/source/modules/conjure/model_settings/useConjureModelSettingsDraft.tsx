@@ -1,9 +1,9 @@
-// Module ID: 11803
-// Function ID: 11804
+// Module ID: 11822
+// Function ID: 11823
 // Name: useConjureModelSettingsDraft
 // Dependencies: [32, 19, 558, 576, 2]
 
-// Module 11803 (useConjureModelSettingsDraft)
+// Module 11822 (useConjureModelSettingsDraft)
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

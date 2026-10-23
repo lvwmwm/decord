@@ -1,18 +1,18 @@
-// Module ID: 12683
-// Function ID: 12684
+// Module ID: 12702
+// Function ID: 12703
 // Name: GuildIconUploader
-// Dependencies: [19, 17, 1207, 21, 4969, 587, 5023, 5655, 4976, 12684, 12685, 5220, 1128, 12686, 12687, 6893, 2]
+// Dependencies: [19, 17, 1207, 21, 4969, 587, 5035, 5667, 4976, 12703, 12704, 5232, 1128, 12705, 12706, 6906, 2]
 
-// Module 12683 (GuildIconUploader)
+// Module 12702 (GuildIconUploader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import shared from "shared" /* 4976 */;
-import native from "native" /* 5023 */;
-import FastImageDefault from "FastImage" /* 5655 */;
-import Pressables from "Pressables" /* 6893 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12686 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12687 */;
+import native from "native" /* 5035 */;
+import FastImageDefault from "FastImage" /* 5667 */;
+import Pressables from "Pressables" /* 6906 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12705 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12706 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
 import Fragment from "Fragment" /* 21 */;
@@ -61,14 +61,14 @@ class GuildIconUploader extends PureComponent {
       const tmp7 = metroRequire;
       const tmp8 = View;
       if (obj6.isThemeDark(ThemeStore.theme)) {
-        tmp10Result = tmp10(12684);
+        tmp10Result = tmp10(12703);
       } else {
-        tmp10Result = tmp10(12685);
+        tmp10Result = tmp10(12704);
       }
       const obj = { source: tmp10Result };
       items2 = [hasOwnProperty(tmp12, obj), ];
       const obj5 = { style: tmp.emptyGuildIconText, variant: "text-xs/bold", color: "text-default", children: str.toUpperCase() };
-      const Text = tmp13(5220).Text;
+      const Text = tmp13(5232).Text;
       const intl = tmp13(1128).intl;
       str = intl.string(intl3.t["3UB9ad"]);
       items2[1] = hasOwnProperty(Text, obj5);

@@ -1,18 +1,18 @@
-// Module ID: 8709
-// Function ID: 8710
+// Module ID: 8727
+// Function ID: 8728
 // Name: useUserProfileColors
-// Dependencies: [4970, 1098, 558, 576, 5191, 7265, 504, 5238, 587, 8700, 1105, 2]
+// Dependencies: [4970, 1098, 558, 576, 5203, 7278, 504, 5250, 587, 8718, 1105, 2]
 
-// Module 8709 (useUserProfileColors)
+// Module 8727 (useUserProfileColors)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
-import useThemeDefault from "useTheme" /* 5191 */;
-import useToken from "useToken" /* 5238 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 7265 */;
-import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8700 */;
+import useThemeDefault from "useTheme" /* 5203 */;
+import useToken from "useToken" /* 5250 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 7278 */;
+import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8718 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

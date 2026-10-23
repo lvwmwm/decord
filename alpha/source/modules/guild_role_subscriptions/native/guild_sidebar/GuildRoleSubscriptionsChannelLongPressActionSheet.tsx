@@ -1,20 +1,20 @@
-// Module ID: 17554
-// Function ID: 17555
+// Module ID: 17598
+// Function ID: 17599
 // Name: GuildRoleSubscriptionsChannelLongPressActionSheet
-// Dependencies: [19, 17, 4828, 21, 4969, 587, 558, 576, 1202, 13676, 1128, 7233, 17444, 8926, 10836, 7283, 2]
+// Dependencies: [19, 17, 4828, 21, 4969, 587, 558, 576, 1202, 13699, 1128, 7246, 17488, 8949, 10859, 7296, 2]
 
-// Module 17554 (GuildRoleSubscriptionsChannelLongPressActionSheet)
+// Module 17598 (GuildRoleSubscriptionsChannelLongPressActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import ChannelConstants from "ChannelConstants" /* 4828 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7233 */;
-import ActionSheet2 from "ActionSheet" /* 7283 */;
-import Form from "Form" /* 8926 */;
-import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10836 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13676 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17444 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7246 */;
+import ActionSheet2 from "ActionSheet" /* 7296 */;
+import Form from "Form" /* 8949 */;
+import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10859 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13699 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17488 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -45,7 +45,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   const onClose = guildId.onClose;
   const tmp4 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { disableColor: true, source: onClose(13676) };
+    const obj2 = { disableColor: true, source: onClose(13699) };
     const Icon = tmp(1202).Icon;
     const tmp8 = closure_5(Icon, obj2);
     cResult[0] = tmp8;
@@ -72,7 +72,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   }
   if (cResult[4] !== tmp9) {
     const obj4 = { leading: tmp9, title: tmp13 };
-    const tmp17 = closure_5(guildId(7233).BottomSheetTitleHeader, obj4);
+    const tmp17 = closure_5(guildId(7246).BottomSheetTitleHeader, obj4);
     cResult[4] = tmp9;
     cResult[5] = tmp17;
     tmp15 = tmp17;
@@ -80,7 +80,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     tmp15 = cResult[5];
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj5 = { source: onClose(17444) };
+    const obj5 = { source: onClose(17488) };
     const Icon2 = tmp(1202).Icon;
     const tmp21 = closure_5(Icon2, obj5);
     cResult[6] = tmp21;
@@ -90,7 +90,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj6 = { text: intl2.string(guildId(1128).t.WqhZss) };
-    const FormLabel = tmp(8926).FormLabel;
+    const FormLabel = tmp(8949).FormLabel;
     intl2 = tmp(1128).intl;
     const tmp24 = closure_5(FormLabel, obj6);
     cResult[7] = tmp24;
@@ -112,7 +112,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     }
     const obj7 = { children: items };
     items = [tmp15, tmp25];
-    const tmp29 = closure_6(guildId(7283).ActionSheet, obj7);
+    const tmp29 = closure_6(guildId(7296).ActionSheet, obj7);
     cResult[11] = tmp15;
     cResult[12] = tmp25;
     cResult[13] = tmp29;
@@ -127,7 +127,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
       const result = obj.copyGuildChannelOrThreadLink(guildId, StaticChannelRoute.ROLE_SUBSCRIPTIONS);
     }
   };
-  const tmp26 = closure_5(guildId(8926).FormRow, obj8);
+  const tmp26 = closure_5(guildId(8949).FormRow, obj8);
   cResult[8] = guildId;
   cResult[9] = onClose;
   cResult[10] = tmp26;

@@ -1,14 +1,14 @@
-// Module ID: 18146
-// Function ID: 18147
+// Module ID: 18190
+// Function ID: 18191
 // Name: FriendRequestsSettingsScreen
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 10602, 18147, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 10624, 18191, 2]
 
-// Module 18146 (FriendRequestsSettingsScreen)
+// Module 18190 (FriendRequestsSettingsScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10602 */;
-import UserSettingsFriendRequestsDefault from "UserSettingsFriendRequests" /* 18147 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10624 */;
+import UserSettingsFriendRequestsDefault from "UserSettingsFriendRequests" /* 18191 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;

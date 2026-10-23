@@ -1,17 +1,17 @@
-// Module ID: 17610
-// Function ID: 17611
+// Module ID: 17654
+// Function ID: 17655
 // Name: useShouldRenderChannelList
-// Dependencies: [32, 19, 7570, 6481, 1087, 558, 576, 5136, 5137, 1123, 2]
+// Dependencies: [32, 19, 7583, 6494, 1087, 558, 576, 5148, 5149, 1123, 2]
 
-// Module 17610 (useShouldRenderChannelList)
+// Module 17654 (useShouldRenderChannelList)
 import Constants from "Constants" /* 1087 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5136 */;
-import RootNavigationRef from "RootNavigationRef" /* 5137 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5148 */;
+import RootNavigationRef from "RootNavigationRef" /* 5149 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CacheStore from "CacheStore" /* 7570 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6481 */;
+import CacheStore from "CacheStore" /* 7583 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6494 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,10 +35,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldR
         if (tmp) {
           return;
         } else {
-          allowRender = function allowRender() { /* body not rendered: F153102 */ };
-          checkGatewayConnection = function checkGatewayConnection() { /* body not rendered: F153103 */ };
-          checkCacheLoadStatus = function checkCacheLoadStatus() { /* body not rendered: F153104 */ };
-          checkNavigationState = function checkNavigationState() { /* body not rendered: F153105 */ };
+          allowRender = function allowRender() { /* body not rendered: F153403 */ };
+          checkGatewayConnection = function checkGatewayConnection() { /* body not rendered: F153404 */ };
+          checkCacheLoadStatus = function checkCacheLoadStatus() { /* body not rendered: F153405 */ };
+          checkNavigationState = function checkNavigationState() { /* body not rendered: F153406 */ };
           obj = closure_1_5;
           result = closure_1_5.addReactChangeListener(checkGatewayConnection);
           obj2 = closure_1_4;
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldR
             tmp12 = checkGatewayConnection;
             tmp13 = checkGatewayConnection(true);
           }
-          return () => { /* body not rendered: F153106 */ };
+          return () => { /* body not rendered: F153407 */ };
         }
       }
     }
@@ -85,10 +85,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldR
         if (tmp) {
           return;
         } else {
-          allowRender = function allowRender() { /* body not rendered: F153102 */ };
-          checkGatewayConnection = function checkGatewayConnection() { /* body not rendered: F153103 */ };
-          checkCacheLoadStatus = function checkCacheLoadStatus() { /* body not rendered: F153104 */ };
-          checkNavigationState = function checkNavigationState() { /* body not rendered: F153105 */ };
+          allowRender = function allowRender() { /* body not rendered: F153403 */ };
+          checkGatewayConnection = function checkGatewayConnection() { /* body not rendered: F153404 */ };
+          checkCacheLoadStatus = function checkCacheLoadStatus() { /* body not rendered: F153405 */ };
+          checkNavigationState = function checkNavigationState() { /* body not rendered: F153406 */ };
           obj = closure_1_5;
           result = closure_1_5.addReactChangeListener(checkGatewayConnection);
           obj2 = closure_1_4;
@@ -118,7 +118,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldR
             tmp12 = checkGatewayConnection;
             tmp13 = checkGatewayConnection(true);
           }
-          return () => { /* body not rendered: F153106 */ };
+          return () => { /* body not rendered: F153407 */ };
         }
       }
     }

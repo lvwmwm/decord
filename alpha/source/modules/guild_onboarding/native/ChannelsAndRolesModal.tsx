@@ -1,16 +1,16 @@
-// Module ID: 11215
-// Function ID: 11216
+// Module ID: 11238
+// Function ID: 11239
 // Name: ChannelsAndRolesModal
-// Dependencies: [32, 19, 17, 4843, 7181, 21, 4969, 587, 558, 576, 573, 7426, 1128, 8876, 9122, 11216, 11222, 10007, 2]
+// Dependencies: [32, 19, 17, 4843, 7194, 21, 4969, 587, 558, 576, 573, 7439, 1128, 8899, 9145, 11239, 11245, 10029, 2]
 
-// Module 11215 (ChannelsAndRolesModal)
+// Module 11238 (ChannelsAndRolesModal)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7181 */;
-import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7426 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10007 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7194 */;
+import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7439 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10029 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4843 */;
@@ -241,7 +241,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelsAndR
   }
   const tmpResult = guildId(573);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  const tmp9 = defaultTab(7426)(stateFromStores);
+  const tmp9 = defaultTab(7439)(stateFromStores);
   const tmp8 = defaultTab;
   if (cResult[3] !== tmp9) {
     let stringResult;
@@ -272,7 +272,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelsAndR
       return tmp13;
     }
     const obj2 = { screenKey: "channelAndRolesModal", title: tmp10, render: tmp12 };
-    const tmp15 = closure_8(tmp8(10007), obj2);
+    const tmp15 = closure_8(tmp8(10029), obj2);
     cResult[8] = tmp10;
     cResult[9] = tmp12;
     cResult[10] = tmp15;

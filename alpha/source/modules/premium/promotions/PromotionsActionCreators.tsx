@@ -1,20 +1,20 @@
-// Module ID: 9537
-// Function ID: 9538
+// Module ID: 9560
+// Function ID: 9561
 // Name: PromotionsActionCreators
-// Dependencies: [5, 2068, 1392, 9496, 1394, 1087, 584, 9538, 1297, 7493, 4802, 1242, 9536, 2]
+// Dependencies: [5, 2068, 1392, 9519, 1394, 1087, 584, 9561, 1297, 7506, 4802, 1242, 9559, 2]
 // Exports: addClaimedOutboundPromotionCode, clearActivePromotions, dismissOutboundPromotionNotice, fetchClaimedOutboundPromotionCodes, maybeFetchActivePromotions
 
-// Module 9537 (PromotionsActionCreators)
+// Module 9560 (PromotionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import wrappers from "wrappers" /* 1242 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import MarketingComponentPlatform from "MarketingComponentPlatform" /* 9538 */;
+import MarketingComponentPlatform from "MarketingComponentPlatform" /* 9561 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
 import UserStore from "UserStore" /* 1392 */;
-import PromotionsStore from "PromotionsStore" /* 9496 */;
+import PromotionsStore from "PromotionsStore" /* 9519 */;
 import size from "module_2" /* 2 */;
 
 let c3, c5, c6;

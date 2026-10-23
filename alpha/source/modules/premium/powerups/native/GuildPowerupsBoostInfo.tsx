@@ -1,17 +1,17 @@
-// Module ID: 13412
-// Function ID: 13413
+// Module ID: 13435
+// Function ID: 13436
 // Name: GuildPowerupsBoostInfo
-// Dependencies: [17, 5168, 21, 4969, 587, 558, 576, 7060, 13413, 9785, 5220, 2]
+// Dependencies: [17, 5180, 21, 4969, 587, 558, 576, 7073, 13436, 9807, 5232, 2]
 
-// Module 13412 (GuildPowerupsBoostInfo)
+// Module 13435 (GuildPowerupsBoostInfo)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5168 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7060 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 9785 */;
-import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 13413 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5180 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7073 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 9807 */;
+import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 13436 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -167,7 +167,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
   }
   items = [hasOwnProperty(BoostGemIcon, { size: "sm", color: TEXT_MUTED }), ];
   let str = "text-lg/medium";
-  const Text = tmp2(5220).Text;
+  const Text = tmp2(5232).Text;
   if (manaTypeConsolidationExperiment) {
     str = "experimental/body-lg/semibold";
   }
@@ -179,7 +179,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
   items[1] = hasOwnProperty(Text, obj5);
   items1 = [metroRequire(View, obj4), ];
   let str3 = "text-md/normal";
-  const Text2 = tmp2(5220).Text;
+  const Text2 = tmp2(5232).Text;
   if (manaTypeConsolidationExperiment) {
     str3 = "text-sm/normal";
   }

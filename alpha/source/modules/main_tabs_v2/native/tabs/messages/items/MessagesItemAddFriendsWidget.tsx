@@ -1,21 +1,21 @@
-// Module ID: 17443
-// Function ID: 17444
+// Module ID: 17487
+// Function ID: 17488
 // Name: MessagesItemAddFriendsWidget
-// Dependencies: [5, 19, 17, 1087, 21, 13954, 587, 4969, 8841, 5648, 1128, 9026, 9037, 558, 576, 5137, 5220, 6893, 15044, 17444, 2]
+// Dependencies: [5, 19, 17, 1087, 21, 13977, 587, 4969, 8864, 5660, 1128, 9049, 9060, 558, 576, 5149, 5232, 6906, 15069, 17488, 2]
 
-// Module 17443 (MessagesItemAddFriendsWidget)
+// Module 17487 (MessagesItemAddFriendsWidget)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl5 from "intl" /* 1128 */;
-import RootNavigationRef from "RootNavigationRef" /* 5137 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import Pressables from "Pressables" /* 6893 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8841 */;
-import IconActionButton from "IconActionButton" /* 13954 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15044 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17444 */;
+import RootNavigationRef from "RootNavigationRef" /* 5149 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import Pressables from "Pressables" /* 6906 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8864 */;
+import IconActionButton from "IconActionButton" /* 13977 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15069 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17488 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -291,7 +291,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, maxFontSizeMultiplier: 2, children: intl2.string(intl5.t.afcl67) };
-    const Text = tmp(5220).Text;
+    const Text = tmp(5232).Text;
     intl2 = tmp(1128).intl;
     const tmp10 = metroImportDefault(Text, obj2);
     cResult[2] = tmp10;

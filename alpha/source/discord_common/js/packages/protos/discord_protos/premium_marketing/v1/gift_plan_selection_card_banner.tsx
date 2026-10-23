@@ -1,13 +1,13 @@
-// Module ID: 9512
-// Function ID: 9513
+// Module ID: 9535
+// Function ID: 9536
 // Name: gift_plan_selection_card_banner
-// Dependencies: [32, 1212, 9511, 9509, 9501, 2]
+// Dependencies: [32, 1212, 9534, 9532, 9524, 2]
 
-// Module 9512 (gift_plan_selection_card_banner)
+// Module 9535 (gift_plan_selection_card_banner)
 import _mod1212 from "module_1212" /* 1212 */;
-import localized_string from "localized_string" /* 9501 */;
-import gradient2 from "gradient" /* 9509 */;
-import theme_aware_asset from "theme_aware_asset" /* 9511 */;
+import localized_string from "localized_string" /* 9524 */;
+import gradient2 from "gradient" /* 9532 */;
+import theme_aware_asset from "theme_aware_asset" /* 9534 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

@@ -1,19 +1,19 @@
-// Module ID: 13236
-// Function ID: 13237
+// Module ID: 13259
+// Function ID: 13260
 // Name: ApplicationCommandsCategories
-// Dependencies: [19, 17, 4881, 13231, 21, 4969, 587, 558, 576, 504, 13063, 5655, 1128, 6893, 5198, 5199, 7205, 2]
+// Dependencies: [19, 17, 4881, 13254, 21, 4969, 587, 558, 576, 504, 13086, 5667, 1128, 6906, 5210, 5211, 7218, 2]
 
-// Module 13236 (ApplicationCommandsCategories)
+// Module 13259 (ApplicationCommandsCategories)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import HapticUtils from "HapticUtils" /* 5198 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5199 */;
-import FastImageDefault from "FastImage" /* 5655 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 13063 */;
+import HapticUtils from "HapticUtils" /* 5210 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5211 */;
+import FastImageDefault from "FastImage" /* 5667 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 13086 */;
 import react_mod from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 4881 */;
-import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 13231 */;
+import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 13254 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -182,7 +182,7 @@ let closure_9 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function Ca
     return obj.getApplicationCommandsIconSource(section, stateFromStores);
   }, items1);
   null != memo && jsx(FastImageDefault, { style: tmp.categoryImage, source: memo });
-  const PressableOpacity = tmp2(6893).PressableOpacity;
+  const PressableOpacity = tmp2(6906).PressableOpacity;
   const intl = tmp2(1128).intl;
   const formatToPlainString = intl.formatToPlainString;
   const t = tmp2(1128).t;

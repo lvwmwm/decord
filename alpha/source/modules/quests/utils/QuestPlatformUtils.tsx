@@ -1,29 +1,29 @@
-// Module ID: 9583
-// Function ID: 9584
+// Module ID: 9606
+// Function ID: 9607
 // Name: QuestPlatformUtils
-// Dependencies: [6695, 1087, 7783, 6703, 9584, 9549, 9552, 6702, 7777, 9585, 1128, 1384, 9570, 5679, 14057, 1123, 9579, 5642, 14058, 14060, 1281, 14072, 14074, 14075, 7786, 7475, 584, 2]
+// Dependencies: [6708, 1087, 7796, 6716, 9607, 9572, 9575, 6715, 7790, 9608, 1128, 1384, 9593, 5691, 14081, 1123, 9602, 5654, 14082, 14084, 1281, 14096, 14098, 14099, 7799, 7488, 584, 2]
 // Exports: getExpiredCredentialsHintMessage, getPlatformTypeForHintMessage, isQuestSupportedOnWeb, openAdGameLinkDirectly, openAdGameLinkDirectlyFromBountyEntireVideoTap, openAddConsoleConnectionModal, openAuthorizationConnectionModal, openConsoleConnectionSettings, openGameLinkDirectly, openSingleConsoleConnectionModal, supportedTaskPlatforms
 
-// Module 9583 (QuestPlatformUtils)
+// Module 9606 (QuestPlatformUtils)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import openURLDefault from "openURL" /* 5642 */;
-import BrowserManager from "BrowserManager" /* 5679 */;
-import QuestConstants from "QuestConstants" /* 6695 */;
-import AdCreativeType from "AdCreativeType" /* 6702 */;
-import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 6703 */;
-import openUserSettings from "openUserSettings" /* 7475 */;
-import AnalyticsActions from "AnalyticsActions" /* 7777 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7783 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7786 */;
-import captureAdUserAction3 from "captureAdUserAction" /* 9549 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9552 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9584 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 9585 */;
-import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 14057 */;
-import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 14074 */;
-import IosAttributionImpressionRegistry from "IosAttributionImpressionRegistry" /* 14075 */;
+import openURLDefault from "openURL" /* 5654 */;
+import BrowserManager from "BrowserManager" /* 5691 */;
+import QuestConstants from "QuestConstants" /* 6708 */;
+import AdCreativeType from "AdCreativeType" /* 6715 */;
+import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 6716 */;
+import openUserSettings from "openUserSettings" /* 7488 */;
+import AnalyticsActions from "AnalyticsActions" /* 7790 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7796 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7799 */;
+import captureAdUserAction3 from "captureAdUserAction" /* 9572 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9575 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9607 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 9608 */;
+import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 14081 */;
+import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 14098 */;
+import IosAttributionImpressionRegistry from "IosAttributionImpressionRegistry" /* 14099 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ function supportedConsoles(quest) {
     let tmp2 = require;
     if (FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.PLAY_ON_XBOX === item10013) {
       let arr = items.push(metroRequire.XBOX);
-    } else if (tmp2(6703).FirstPartyQuestTaskTypes.PLAY_ON_PLAYSTATION === item10013) {
+    } else if (tmp2(6716).FirstPartyQuestTaskTypes.PLAY_ON_PLAYSTATION === item10013) {
       let arr3 = items.push(metroRequire.PLAYSTATION);
     }
     continue;
@@ -360,8 +360,8 @@ function openAdGameLinkDirectlyImpl(adContentId, impressionId, preferExternalApp
   if (null != impressionId) {
     const ios = cta.ios;
     let iosAppId;
-    const getIosAttributionClickFramework = tmp2(14072).getIosAttributionClickFramework;
-    adContentId(14072);
+    const getIosAttributionClickFramework = tmp2(14096).getIosAttributionClickFramework;
+    adContentId(14096);
     if (ios != null) {
       iosAppId = ios.iosAppId;
     }
@@ -573,7 +573,7 @@ export const openGameLinkDirectly = function openGameLinkDirectly(quest, impress
   if (null != impressionId) {
     const ctaConfig2 = quest.config.ctaConfig;
     let iosAppId;
-    const getIosAttributionClickFramework = tmp(14072).getIosAttributionClickFramework;
+    const getIosAttributionClickFramework = tmp(14096).getIosAttributionClickFramework;
     require("IosAttributionEligibility");
     if (ctaConfig2 != null) {
       const ios = ctaConfig2.ios;

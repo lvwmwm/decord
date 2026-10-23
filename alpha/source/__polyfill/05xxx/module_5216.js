@@ -1,216 +1,72 @@
 // Module ID: 5216
 // Function ID: 5217
-// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 5217, 5218]
+// Dependencies: [19, 5213, 5217]
+// Exports: useHaptics
 
 // Module 5216
-import Fragment from "Fragment" /* 21 */;
-import _mod5217 from "module_5217" /* 5217 */;
-import react_native from "react-native" /* 5218 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import metroRequire from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
 import react from "react" /* 19 */;
-import react_native2 from "react-native" /* 17 */;
+import _modDef5213 from "module_5213" /* 5213 */;
 
-const _modDef5217 = _mod5217;
+const useMemo = react.useMemo;
 
-let c9;
-let metroImportAll;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
+export const useHaptics = function useHaptics(enableVibrateFallback) {
+  let closure_0 = enableVibrateFallback;
+  let prop;
+  if (enableVibrateFallback != null) {
+    prop = enableVibrateFallback.enableVibrateFallback;
   }
-}
-let closure_3 = ["style", "source", "autoPlay", "duration", "textFiltersAndroid", "textFiltersIOS", "resizeMode", "containerStyle"];
-({ View: metroImportAll, processColor: c9 } = react_native2);
-const jsx = Fragment.jsx;
-let obj = { source: "enabled", progress: null, speed: true, loop: false, autoPlay: false, enableMergePathsAndroidForKitKatAndAbove: false, enableSafeModeAndroid: true, cacheComposition: false, useNativeLooping: "contain", resizeMode: null, colorFilters: [], textFiltersAndroid: [], textFiltersIOS: [] };
-class LottieView {
-  constructor(arg0) {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, LottieView);
-    const items = [arg0];
-    const obj = _getPrototypeOf(LottieView);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = metroRequire;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items);
-    }
-    const tmp3Result = tmp3(self, constructResult);
-    let closure_0 = tmp3Result;
-    tmp3Result.onAnimationFinish = (nativeEvent) => {
-      const props = closure_0.props;
-      const onAnimationFinish = props.onAnimationFinish;
-      if (onAnimationFinish != null) {
-        onAnimationFinish(nativeEvent.nativeEvent.isCancelled);
-      }
-    };
-    tmp3Result.onAnimationFailure = (nativeEvent) => {
-      const props = closure_0.props;
-      const onAnimationFailure = props.onAnimationFailure;
-      if (onAnimationFailure != null) {
-        onAnimationFailure(nativeEvent.nativeEvent.error);
-      }
-    };
-    tmp3Result.onAnimationLoaded = () => {
-      const props = closure_0.props;
-      const onAnimationLoaded = props.onAnimationLoaded;
-      if (onAnimationLoaded != null) {
-        onAnimationLoaded();
-      }
-    };
-    const play = tmp3Result.play;
-    tmp3Result.play = play.bind(tmp3Result);
-    const reset = tmp3Result.reset;
-    tmp3Result.reset = reset.bind(tmp3Result);
-    const pause = tmp3Result.pause;
-    tmp3Result.pause = pause.bind(tmp3Result);
-    const resume = tmp3Result.resume;
-    tmp3Result.resume = resume.bind(tmp3Result);
-    let onAnimationFinish = tmp3Result.onAnimationFinish;
-    tmp3Result.onAnimationFinish = onAnimationFinish.bind(tmp3Result);
-    const captureRef = tmp3Result.captureRef;
-    tmp3Result.captureRef = captureRef.bind(tmp3Result);
-    return tmp3Result;
+  let prop1;
+  if (enableVibrateFallback != null) {
+    prop1 = enableVibrateFallback.ignoreAndroidSystemSettings;
   }
-}
-_inherits(LottieView, react.PureComponent);
-const entry = {
-  key: "play",
-  value: function play(arg0, arg1) {
-    let num = arg0;
-    const Commands = _mod5217.Commands;
-    const play = Commands.play;
-    const lottieAnimationViewRef = this.lottieAnimationViewRef;
-    if (arg0 == null) {
-      num = -1;
-    }
-    let num2 = arg1;
-    if (arg1 == null) {
-      num2 = -1;
-    }
-    play(lottieAnimationViewRef, num, num2);
-  }
+  const items = [prop, prop1];
+  return useMemo(() => {
+    let obj = {
+      trigger(arg0, arg1) {
+        const trigger = _modDef5213.trigger;
+        const obj = {};
+        _modDef5213;
+        const merged = Object.assign(enableVibrateFallback);
+        const merged1 = Object.assign(arg1);
+        trigger(arg0, obj);
+      },
+      triggerPattern(arg0, arg1) {
+        const triggerPattern = _modDef5213.triggerPattern;
+        const obj = {};
+        _modDef5213;
+        const merged = Object.assign(enableVibrateFallback);
+        const merged1 = Object.assign(arg1);
+        triggerPattern(arg0, obj);
+      },
+      stop() {
+        const obj = closure_1_1(closure_1_2[1]);
+        obj.stop();
+      },
+      isSupported() {
+        const obj = closure_1_1(closure_1_2[1]);
+        return obj.isSupported();
+      },
+      playHaptic(arg0, arg1, arg2) {
+        const playHaptic = closure_0(dependencyMap[2]).playHaptic;
+        const obj = {};
+        closure_0(dependencyMap[2]);
+        const merged = Object.assign(closure_1_0);
+        const merged1 = Object.assign(arg2);
+        return playHaptic(arg0, arg1, obj);
+      },
+      impact(arg0, arg1, arg2) {
+        const impact = _modDef5213.impact;
+        const obj = {};
+        _modDef5213;
+        const merged = Object.assign(enableVibrateFallback);
+        const merged1 = Object.assign(arg2);
+        impact(arg0, arg1, obj);
+      },
+      setEnabled: _modDef5213.setEnabled,
+      isEnabled: _modDef5213.isEnabled,
+      getSystemHapticStatus: _modDef5213.getSystemHapticStatus,
+      playAHAP: _modDef5213.playAHAP
+    };
+    return obj;
+  }, items);
 };
-let items = [
-  entry,
-  {
-    key: "reset",
-    value: function reset() {
-      const Commands = _mod5217.Commands;
-      Commands.reset(this.lottieAnimationViewRef);
-    }
-  },
-  {
-    key: "pause",
-    value: function pause() {
-      const Commands = _mod5217.Commands;
-      Commands.pause(this.lottieAnimationViewRef);
-    }
-  },
-  {
-    key: "resume",
-    value: function resume() {
-      const Commands = _mod5217.Commands;
-      Commands.resume(this.lottieAnimationViewRef);
-    }
-  },
-  {
-    key: "captureRef",
-    value: function captureRef(lottieAnimationViewRef) {
-      if (null !== lottieAnimationViewRef) {
-        const self = this;
-        this.lottieAnimationViewRef = lottieAnimationViewRef;
-        if (true === this.props.autoPlay) {
-          self.play();
-        }
-      }
-    }
-  },
-  {
-    key: "renderLottieView",
-    value: function renderLottieView() {
-      let autoPlay;
-      let containerStyle;
-      let duration;
-      let resizeMode;
-      let source;
-      let style;
-      let textFiltersAndroid;
-      let textFiltersIOS;
-      const self = this;
-      const props = this.props;
-      ({ source, duration, containerStyle } = props);
-      ({ style, autoPlay, textFiltersAndroid, textFiltersIOS, resizeMode } = props);
-      const tmp = _objectWithoutProperties(props, closure_3);
-      let obj = react_native;
-      const parsePossibleSourcesResult = obj.parsePossibleSources(source);
-      if (duration) {
-        if (parsePossibleSourcesResult.sourceJson) {
-          let speed;
-          if (source.fr) {
-            const _Math = Math;
-            speed = Math.round(source.op / source.fr * 1000 / duration);
-          }
-          const colorFilters = self.props.colorFilters;
-          let mapped;
-          if (colorFilters != null) {
-            mapped = colorFilters.map((color) => {
-              const obj = { color: closure_1_9(color.color) };
-              const merged = Object.assign(color);
-              return obj;
-            });
-          }
-          _modDef5217;
-          let merged = Object.assign(tmp);
-          ({ onAnimationFinish: obj2.onAnimationFinish, onAnimationFailure: obj2.onAnimationFailure, onAnimationLoaded: obj2.onAnimationLoaded } = self);
-          const merged1 = Object.assign(parsePossibleSourcesResult);
-          return <tmp9 ref={self.captureRef} colorFilters={mapped} textFiltersAndroid={textFiltersAndroid} textFiltersIOS={textFiltersIOS} speed={speed} style={style} autoPlay={autoPlay} resizeMode={resizeMode} />;
-        }
-      }
-      speed = self.props.speed;
-    }
-  },
-  {
-    key: "render",
-    value: function render() {
-      let containerStyle;
-      let renderLottieViewResult;
-      let source;
-      const self = this;
-      ({ source, containerStyle } = this.props);
-      if (null == source) {
-        const _console = console;
-        console.warn("LottieView needs `source` parameter, provided value for source:", source);
-        renderLottieViewResult = null;
-      } else if (containerStyle) {
-        renderLottieViewResult = <metroImportAll style={containerStyle} collapsable={false}>{self.renderLottieView()}</metroImportAll>;
-      } else {
-        renderLottieViewResult = self.renderLottieView();
-      }
-      return renderLottieViewResult;
-    }
-  }
-];
-const importDefaultResultResult = _createClass(LottieView, items);
-importDefaultResultResult.defaultProps = obj;
-const LottieView_export = importDefaultResultResult;
-
-export { LottieView_export as LottieView };

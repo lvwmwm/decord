@@ -1,14 +1,14 @@
-// Module ID: 10991
-// Function ID: 10992
+// Module ID: 11014
+// Function ID: 11015
 // Name: UnreadSettingNotice
-// Dependencies: [19, 17, 1097, 21, 4969, 587, 558, 576, 10992, 5220, 1128, 10993, 6893, 2]
+// Dependencies: [19, 17, 1097, 21, 4969, 587, 558, 576, 11015, 5232, 1128, 11016, 6906, 2]
 
-// Module 10991 (UnreadSettingNotice)
+// Module 11014 (UnreadSettingNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
-import UnreadSettingNoticeImpressionTrackingDefault from "UnreadSettingNoticeImpressionTracking" /* 10992 */;
-import updateChannelUnreadSettingsDefault from "updateChannelUnreadSettings" /* 10993 */;
+import UnreadSettingNoticeImpressionTrackingDefault from "UnreadSettingNoticeImpressionTracking" /* 11015 */;
+import updateChannelUnreadSettingsDefault from "updateChannelUnreadSettings" /* 11016 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -54,7 +54,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadSett
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-md/semibold", children: intl.string(require("intl").t.i4xQ5o) };
-    const Text = tmp(5220).Text;
+    const Text = tmp(5232).Text;
     intl = tmp(1128).intl;
     const tmp11 = closure_5(Text, obj3);
     cResult[2] = tmp11;
@@ -84,7 +84,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadSett
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { variant: "text-xs/medium", color: "text-link", children: intl2.string(require("intl").t.KyUKhT) };
-    const Text2 = tmp(5220).Text;
+    const Text2 = tmp(5232).Text;
     intl2 = tmp(1128).intl;
     const tmp19 = closure_5(Text2, obj5);
     cResult[7] = tmp19;

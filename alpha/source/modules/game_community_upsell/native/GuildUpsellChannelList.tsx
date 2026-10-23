@@ -1,25 +1,25 @@
-// Module ID: 17621
-// Function ID: 17622
+// Module ID: 17665
+// Function ID: 17666
 // Name: GuildUpsellChannelList
-// Dependencies: [19, 17, 14974, 6655, 17622, 1087, 21, 4969, 587, 1128, 14218, 17623, 17627, 558, 576, 504, 17631, 1267, 13548, 5220, 6890, 5230, 16359, 17632, 2]
+// Dependencies: [19, 17, 14998, 6668, 17666, 1087, 21, 4969, 587, 1128, 14242, 17667, 17671, 558, 576, 504, 17675, 1267, 13571, 5232, 6903, 5242, 16409, 17676, 2]
 
-// Module 17621 (GuildUpsellChannelList)
+// Module 17665 (GuildUpsellChannelList)
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import components_Button_Button from "components/Button/Button" /* 5230 */;
-import Card_Card from "Card/Card" /* 6890 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13548 */;
-import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 14218 */;
-import MobileGameCommunitiesConstants from "MobileGameCommunitiesConstants" /* 17622 */;
-import ChatControllersSpotIllustration from "ChatControllersSpotIllustration" /* 17623 */;
-import MiniaturesSpotIllustration from "MiniaturesSpotIllustration" /* 17627 */;
-import MobileGameCommunitiesActionCreatorsAll from "MobileGameCommunitiesActionCreators" /* 17631 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import components_Button_Button from "components/Button/Button" /* 5242 */;
+import Card_Card from "Card/Card" /* 6903 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13571 */;
+import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 14242 */;
+import MobileGameCommunitiesConstants from "MobileGameCommunitiesConstants" /* 17666 */;
+import ChatControllersSpotIllustration from "ChatControllersSpotIllustration" /* 17667 */;
+import MiniaturesSpotIllustration from "MiniaturesSpotIllustration" /* 17671 */;
+import MobileGameCommunitiesActionCreatorsAll from "MobileGameCommunitiesActionCreators" /* 17675 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 14974 */;
-import ConsentStore from "ConsentStore" /* 6655 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 14998 */;
+import ConsentStore from "ConsentStore" /* 6668 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -200,7 +200,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildUpsellC
       }
     }
     let obj2 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", children: intl.string(require("intl").t["abaDI+"]) };
-    let Text = tmp(5220).Text;
+    let Text = tmp(5232).Text;
     intl = tmp(1128).intl;
     cResult[9] = closure_12(Text, obj2);
     const tmp19 = closure_12(Text, obj2);
@@ -400,11 +400,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildUpsellC
     if (tmpResult) {
       const obj8 = { style: closure_0.joinSection, children: items2 };
       const obj9 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", children: intl5.string(intl7.t.rJRote) };
-      const Text3 = tmp5(5220).Text;
+      const Text3 = tmp5(5232).Text;
       intl5 = tmp5(1128).intl;
       items2 = [authStore2(Text3, obj9), ];
       const obj10 = { variant: "text-sm/medium", color: "text-subtle", style: closure_0.descriptionSpacing, children: intl6.string(intl7.t.pJT2DK) };
-      const Text4 = tmp5(5220).Text;
+      const Text4 = tmp5(5232).Text;
       intl6 = tmp5(1128).intl;
       items2[1] = authStore2(Text4, obj10);
       tmpResult = tmp(tmp2, obj8);

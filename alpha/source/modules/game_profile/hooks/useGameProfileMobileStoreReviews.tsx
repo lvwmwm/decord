@@ -1,15 +1,15 @@
-// Module ID: 9307
-// Function ID: 9308
+// Module ID: 9330
+// Function ID: 9331
 // Name: useGameProfileMobileStoreReviews
-// Dependencies: [558, 576, 9308, 2]
+// Dependencies: [558, 576, 9331, 2]
 
-// Module 9307 (useGameProfileMobileStoreReviews)
+// Module 9330 (useGameProfileMobileStoreReviews)
 import react from "react" /* 576 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const GameProfileMobileReviewsExperiment = tmp(9308);
+const GameProfileMobileReviewsExperiment = tmp(9331);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameProfileMobileStoreReviews(arg0) {
   let first;
   const obj = react;

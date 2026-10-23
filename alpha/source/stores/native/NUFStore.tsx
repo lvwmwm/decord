@@ -1,9 +1,9 @@
-// Module ID: 7701
-// Function ID: 7702
+// Module ID: 7714
+// Function ID: 7715
 // Name: NUFStore
 // Dependencies: [4843, 4911, 504, 584, 2]
 
-// Module 7701 (NUFStore)
+// Module 7714 (NUFStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import GuildStore from "GuildStore" /* 4843 */;

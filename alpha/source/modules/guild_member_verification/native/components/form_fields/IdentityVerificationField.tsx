@@ -1,16 +1,16 @@
-// Module ID: 6903
-// Function ID: 6904
+// Module ID: 6916
+// Function ID: 6917
 // Name: IdentityVerificationField
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5220, 1128, 6904, 5230, 4998, 6906, 6657, 7122, 2002, 7125, 7161, 7038, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5232, 1128, 6917, 5242, 5003, 6919, 6670, 7135, 2002, 7138, 7174, 7051, 2]
 
-// Module 6903 (IdentityVerificationField)
+// Module 6916 (IdentityVerificationField)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4998 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 6904 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5003 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 6917 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -23,20 +23,20 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp2;
-const MobilePhoneIcon = tmp2(7038);
-const EnvelopeIcon2 = tmp2(7161);
-const f96733 = () => {
+const MobilePhoneIcon = tmp2(7051);
+const EnvelopeIcon2 = tmp2(7174);
+const f96914 = () => {
   const obj = require("EmailVerificationModalActionCreators");
   obj.open();
 };
-const f96734 = () => {
+const f96915 = () => {
   const pushLazy = require("ModalActionCreators").pushLazy;
   const obj = { reason: require("PhoneActionCreators").ChangePhoneReason.GUILD_PHONE_REQUIRED };
   require("ModalActionCreators");
   const tmp2 = require("asyncRequire")(paths[14], paths.paths);
   pushLazy(tmp2, obj);
 };
-const f96735 = () => {
+const f96916 = () => {
 
 };
 function getLabel(arg0, arg1) {
@@ -136,7 +136,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseIde
       } else {
         obj4 = { style: tmp4.ctaButton, children: React3(Button, obj5) };
         obj5 = { variant: "primary", size: "sm", grow: true, text: intl.string(intl4.t["13ofGu"]), onPress };
-        Button = tmp(5230).Button;
+        Button = tmp(5242).Button;
         intl = tmp(1128).intl;
       }
       const tmp12Result = React3(tmp13, obj4);
@@ -193,7 +193,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseIde
   } else {
     obj5 = { style: tmp.ctaButton, children: React3(Button, obj6) };
     obj6 = { variant: "primary", size: "sm", grow: true, text: intl.string(intl4.t["13ofGu"]), onPress };
-    Button = tmp7(5230).Button;
+    Button = tmp7(5242).Button;
     intl = tmp7(1128).intl;
   }
   items[2] = React3(View, obj5);
@@ -216,11 +216,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function IdentityVeri
     if (cResult[3] !== platform) {
       let EnvelopeIcon;
       if (MemberVerificationTypes.UserVerificationFieldPlatforms.EMAIL === platform) {
-        EnvelopeIcon = tmp(7161).EnvelopeIcon;
+        EnvelopeIcon = tmp(7174).EnvelopeIcon;
       } else if (MemberVerificationTypes.UserVerificationFieldPlatforms.PHONE === platform) {
-        EnvelopeIcon = tmp(7038).MobilePhoneIcon;
+        EnvelopeIcon = tmp(7051).MobilePhoneIcon;
       } else {
-        EnvelopeIcon = tmp(7161).EnvelopeIcon;
+        EnvelopeIcon = tmp(7174).EnvelopeIcon;
       }
       cResult[3] = platform;
       cResult[4] = EnvelopeIcon;
@@ -231,9 +231,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function IdentityVeri
     if (cResult[5] !== platform) {
       let fn;
       if (MemberVerificationTypes.UserVerificationFieldPlatforms.EMAIL === platform) {
-        fn = f96733;
+        fn = f96914;
       } else {
-        fn = tmp(4998).UserVerificationFieldPlatforms.PHONE === platform ? f96734 : f96735;
+        fn = tmp(5003).UserVerificationFieldPlatforms.PHONE === platform ? f96915 : f96916;
       }
       cResult[5] = platform;
       cResult[6] = fn;
@@ -283,9 +283,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function IdentityVeri
     icon = EnvelopeIcon2.EnvelopeIcon;
   }
   if (MemberVerificationTypes.UserVerificationFieldPlatforms.EMAIL === platform) {
-    onPress = f96733;
+    onPress = f96914;
   } else {
-    onPress = MemberVerificationTypes.UserVerificationFieldPlatforms.PHONE === platform ? f96734 : f96735;
+    onPress = MemberVerificationTypes.UserVerificationFieldPlatforms.PHONE === platform ? f96915 : f96916;
   }
   return React3(closure_7, { label, icon, passesVerification, onPress });
 });

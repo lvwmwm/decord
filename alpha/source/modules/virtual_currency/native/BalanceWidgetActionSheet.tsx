@@ -1,20 +1,20 @@
-// Module ID: 13913
-// Function ID: 13914
+// Module ID: 13936
+// Function ID: 13937
 // Name: BalanceWidgetActionSheet
-// Dependencies: [19, 17, 1087, 4818, 21, 13914, 13915, 13916, 1128, 5642, 2067, 4983, 5238, 587, 1267, 4994, 4805, 5023, 5251, 5655, 8770, 5568, 13917, 9405, 5220, 5230, 4969, 1384, 2]
+// Dependencies: [19, 17, 1087, 4818, 21, 13937, 13938, 13939, 1128, 5654, 2067, 4983, 5250, 587, 1267, 4999, 4805, 5035, 5263, 5667, 8788, 5580, 13940, 9428, 5232, 5242, 4969, 1384, 2]
 // Exports: default
 
-// Module 13913 (BalanceWidgetActionSheet)
+// Module 13936 (BalanceWidgetActionSheet)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import dismissible_content from "dismissible_content" /* 4805 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4994 */;
-import _mod13914 from "module_13914" /* 13914 */;
-import _mod13915 from "module_13915" /* 13915 */;
-import _mod13916 from "module_13916" /* 13916 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4999 */;
+import _mod13937 from "module_13937" /* 13937 */;
+import _mod13938 from "module_13938" /* 13938 */;
+import _mod13939 from "module_13939" /* 13939 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
@@ -103,7 +103,7 @@ export default function _default(balance) {
     let intl;
     let tmp = null;
     if (num > 4100) {
-      const obj = { backgroundVideo: _mod13914.default, backgroundImage: _mod13915.default, bannerImage: _mod13916.default, bannerText: intl.string(intl3.t.LaMEFL) };
+      const obj = { backgroundVideo: _mod13937.default, backgroundImage: _mod13938.default, bannerImage: _mod13939.default, bannerText: intl.string(intl3.t.LaMEFL) };
       intl = intl3.intl;
       tmp = obj;
     }

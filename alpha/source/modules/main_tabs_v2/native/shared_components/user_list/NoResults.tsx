@@ -1,11 +1,11 @@
-// Module ID: 12863
-// Function ID: 12864
+// Module ID: 12882
+// Function ID: 12883
 // Name: NoResults
-// Dependencies: [19, 17, 21, 4969, 558, 576, 5220, 2]
+// Dependencies: [19, 17, 21, 4969, 558, 576, 5232, 2]
 
-// Module 12863 (NoResults)
+// Module 12882 (NoResults)
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 5220 */;
+import Text_Text from "Text/Text" /* 5232 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -115,7 +115,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoResults(ar
           let tmp16 = null;
           if (null != subtitle) {
             const obj5 = { variant: "text-xs/medium", color: "interactive-text-default", style: tmp4.text, children: subtitle };
-            tmp16 = React3(tmp(5220).Text, obj5);
+            tmp16 = React3(tmp(5232).Text, obj5);
           }
           cResult[10] = tmp4.text;
           cResult[11] = subtitle;

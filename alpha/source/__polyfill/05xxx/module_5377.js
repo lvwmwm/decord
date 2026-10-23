@@ -1,22 +1,24 @@
 // Module ID: 5377
 // Function ID: 5378
-// Dependencies: [5351, 5366, 5342]
-// Exports: useNativeGesture
+// Dependencies: [5363, 5378, 5354]
+// Exports: useTapGesture
 
 // Module 5377
-import ComposedGestureName from "ComposedGestureName" /* 5342 */;
-import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 5351 */;
-import _mod5366 from "module_5366" /* 5366 */;
+import ComposedGestureName from "ComposedGestureName" /* 5354 */;
+import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 5363 */;
+import _mod5378 from "module_5378" /* 5378 */;
 
-let closure_2 = {};
+const items = [["maxDistance", "maxDist"], ["maxDuration", "maxDurationMs"], ["maxDelay", "maxDelayMs"]];
+const map = new Map(items);
+let closure_3 = {};
 
-export const useNativeGesture = function useNativeGesture(cResult) {
+export const useTapGesture = function useTapGesture(cResult) {
   let tmp = cResult;
   if (cResult === undefined) {
-    tmp = closure_2;
+    tmp = closure_3;
   }
   const obj = maybeExtractNativeEvent;
-  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp);
-  const obj2 = _mod5366;
-  return obj2.useGesture(ComposedGestureName.SingleGestureName.Native, clonedAndRemappedConfig);
+  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map);
+  const obj2 = _mod5378;
+  return obj2.useGesture(ComposedGestureName.SingleGestureName.Tap, clonedAndRemappedConfig);
 };

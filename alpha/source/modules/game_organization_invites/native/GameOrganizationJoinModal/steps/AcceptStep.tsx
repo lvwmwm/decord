@@ -1,22 +1,22 @@
-// Module ID: 12668
-// Function ID: 12669
+// Module ID: 12687
+// Function ID: 12688
 // Name: AcceptStep
-// Dependencies: [19, 17, 12662, 21, 4969, 587, 558, 576, 5655, 5220, 5963, 12664, 1128, 2406, 12669, 7886, 5230, 12667, 6681, 7885, 2]
+// Dependencies: [19, 17, 12681, 21, 4969, 587, 558, 576, 5667, 5232, 5975, 12683, 1128, 2406, 12688, 7899, 5242, 12686, 6694, 7898, 2]
 
-// Module 12668 (AcceptStep)
+// Module 12687 (AcceptStep)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
 import _modDef2406 from "module_2406" /* 2406 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import FastImageDefault from "FastImage" /* 5655 */;
-import Stack_Stack from "Stack/Stack" /* 5963 */;
-import ModalScreen2 from "ModalScreen" /* 7885 */;
-import ModalContent2 from "ModalContent" /* 7886 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12662 */;
-import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12664 */;
-import GameOrganizationLinkedServerCardDefault from "GameOrganizationLinkedServerCard" /* 12669 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import FastImageDefault from "FastImage" /* 5667 */;
+import Stack_Stack from "Stack/Stack" /* 5975 */;
+import ModalScreen2 from "ModalScreen" /* 7898 */;
+import ModalContent2 from "ModalContent" /* 7899 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12681 */;
+import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12683 */;
+import GameOrganizationLinkedServerCardDefault from "GameOrganizationLinkedServerCard" /* 12688 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -68,7 +68,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Benefit
       }
     }
     const obj3 = { spacing: nativeDefault.space.PX_16, style: tmp4.benefitCard, children: items };
-    const Stack = tmp(5963).Stack;
+    const Stack = tmp(5975).Stack;
     items = [tmp5, tmp11];
     const tmp17 = metroImportDefault(Stack, obj3);
     cResult[5] = tmp4.benefitCard;
@@ -130,9 +130,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptStep(c
   let items3;
   let items4;
   let items5;
+  let linkedGuild;
   let obj10;
   let obj13;
-  let organization;
   const obj = react2;
   const cResult = obj.c(20);
   code = code.code;
@@ -151,7 +151,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptStep(c
     return null;
   } else {
     let tmp8;
-    ({ displayNoun, organization } = tmp6);
+    ({ displayNoun, linkedGuild } = tmp6);
     const text = tmp4.text;
     if (cResult[1] !== displayNoun) {
       const intl = tmp(1128).intl;
@@ -175,10 +175,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptStep(c
       if (cResult[4] === tmp8) {
         tmp10 = cResult[5];
       }
-      if (cResult[6] !== organization.iconUrl) {
-        const obj3 = { name: "Fang\u2019s Corner", iconUrl: organization.iconUrl, presenceCount: 20, memberCount: 200 };
+      if (cResult[6] !== linkedGuild) {
+        const obj3 = { linkedGuild };
         const tmp15 = metroRequire(GameOrganizationLinkedServerCardDefault, obj3);
-        cResult[6] = organization.iconUrl;
+        cResult[6] = linkedGuild;
         cResult[7] = tmp15;
         tmp13 = tmp15;
       } else {
@@ -199,7 +199,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptStep(c
         const _Symbol = Symbol;
         if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
           const obj4 = { variant: "heading-lg/semibold", children: intl2.string(_modDef2406.yFqGy8) };
-          const Text = tmp(5220).Text;
+          const Text = tmp(5232).Text;
           intl2 = tmp(1128).intl;
           const tmp21 = metroRequire(Text, obj4);
           cResult[11] = tmp21;
@@ -220,10 +220,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptStep(c
         const _Symbol3 = Symbol;
         if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
           const obj6 = { spacing: nativeDefault.space.PX_24, children: items };
-          const Stack2 = tmp(5963).Stack;
+          const Stack2 = tmp(5975).Stack;
           items = [tmp19, ];
           const obj7 = { direction: "horizontal", spacing: nativeDefault.space.PX_16, children: items1 };
-          const Stack3 = tmp(5963).Stack;
+          const Stack3 = tmp(5975).Stack;
           items1 = [tmp22, ];
           const obj8 = { text: intl4.string(_modDef2406.MEQJ1m) };
           intl4 = tmp(1128).intl;
@@ -237,9 +237,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptStep(c
         }
         if (cResult[14] !== tmp16) {
           const obj9 = { children: metroImportDefault(Stack4, obj10) };
-          const ModalContent = tmp(7886).ModalContent;
+          const ModalContent = tmp(7899).ModalContent;
           obj10 = { spacing: nativeDefault.space.PX_48, children: items2 };
-          Stack4 = tmp(5963).Stack;
+          Stack4 = tmp(5975).Stack;
           items2 = [tmp16, tmp26];
           const tmp34 = metroRequire(ModalContent, obj9);
           cResult[14] = tmp16;
@@ -251,7 +251,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptStep(c
         const _Symbol4 = Symbol;
         if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
           const obj11 = { text: intl5.string(_modDef2406.BaZ6nt), size: "lg", onPress: first };
-          const Button = tmp(5230).Button;
+          const Button = tmp(5242).Button;
           intl5 = tmp(1128).intl;
           const tmp37 = metroRequire(Button, obj11);
           cResult[16] = tmp37;
@@ -262,12 +262,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptStep(c
         const _Symbol5 = Symbol;
         if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
           const obj12 = { children: metroImportDefault(ButtonGroup, obj13) };
-          const ModalFooter = tmp(12667).ModalFooter;
+          const ModalFooter = tmp(12686).ModalFooter;
           obj13 = { children: items3 };
           items3 = [tmp35, ];
-          ButtonGroup = tmp(6681).ButtonGroup;
+          ButtonGroup = tmp(6694).ButtonGroup;
           const obj14 = { text: intl6.string(intl7.t["ETE/oC"]), size: "lg", variant: "secondary", onPress };
-          const Button2 = tmp(5230).Button;
+          const Button2 = tmp(5242).Button;
           intl6 = tmp(1128).intl;
           items3[1] = metroRequire(Button2, obj14);
           const tmp42 = metroRequire(ModalFooter, obj12);
@@ -289,7 +289,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptStep(c
         return tmp43;
       }
       const obj16 = { spacing: nativeDefault.space.PX_24, children: items5 };
-      const Stack = tmp(5963).Stack;
+      const Stack = tmp(5975).Stack;
       items5 = [tmp10, tmp13];
       const tmp18 = metroImportDefault(Stack, obj16);
       cResult[8] = tmp10;
@@ -328,7 +328,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptStep(c
     return null;
   } else {
     let str = tmp4.displayNoun;
-    const organization = tmp4.organization;
+    const linkedGuild = tmp4.linkedGuild;
     const ModalScreen = ModalScreen2.ModalScreen;
     const ModalContent = ModalContent2.ModalContent;
     const obj2 = { spacing: nativeDefault.space.PX_48, children: items1 };
@@ -347,17 +347,17 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptStep(c
     const obj5 = { children: metroImportDefault(Stack3, obj2) };
     obj6 = { displayNoun: str };
     items = [metroRequire(Text2, obj4), ];
-    const obj7 = { name: "Fang\u2019s Corner", iconUrl: organization.iconUrl, presenceCount: 20, memberCount: 200 };
+    const obj7 = { linkedGuild };
     items[1] = metroRequire(GameOrganizationLinkedServerCardDefault, obj7);
     items1 = [metroImportDefault(Stack4, obj3), ];
     const obj8 = { spacing: nativeDefault.space.PX_24, children: items2 };
-    const Stack = tmp9(5963).Stack;
+    const Stack = tmp9(5975).Stack;
     const obj9 = { variant: "heading-lg/semibold", children: intl.string(_modDef2406.yFqGy8) };
-    const Text = tmp9(5220).Text;
+    const Text = tmp9(5232).Text;
     intl = tmp9(1128).intl;
     items2 = [metroRequire(Text, obj9), ];
     const obj10 = { direction: "horizontal", spacing: nativeDefault.space.PX_16, children: items3 };
-    const Stack2 = tmp9(5963).Stack;
+    const Stack2 = tmp9(5975).Stack;
     const obj11 = { text: intl2.string(_modDef2406.WUVzdk) };
     intl2 = tmp9(1128).intl;
     items3 = [metroRequire(closure_9, obj11), ];
@@ -368,15 +368,15 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptStep(c
     items1[1] = metroImportDefault(Stack, obj8);
     items4 = [metroRequire(ModalContent, obj5), ];
     const obj13 = { children: metroImportDefault(ButtonGroup, obj14) };
-    const ModalFooter = tmp9(12667).ModalFooter;
+    const ModalFooter = tmp9(12686).ModalFooter;
     obj14 = { children: items5 };
-    ButtonGroup = tmp9(6681).ButtonGroup;
+    ButtonGroup = tmp9(6694).ButtonGroup;
     const obj15 = { text: intl4.string(_modDef2406.BaZ6nt), size: "lg", onPress: tmp5 };
-    const Button = tmp9(5230).Button;
+    const Button = tmp9(5242).Button;
     intl4 = tmp9(1128).intl;
     items5 = [metroRequire(Button, obj15), ];
     const obj16 = { text: intl5.string(intl7.t["ETE/oC"]), size: "lg", variant: "secondary", onPress };
-    const Button2 = tmp9(5230).Button;
+    const Button2 = tmp9(5242).Button;
     intl5 = tmp9(1128).intl;
     items5[1] = metroRequire(Button2, obj16);
     items4[1] = metroRequire(ModalFooter, obj13);

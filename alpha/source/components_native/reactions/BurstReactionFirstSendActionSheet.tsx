@@ -1,7 +1,7 @@
 // Module ID: 4968
 // Function ID: 4969
 // Name: BurstReactionFirstSendActionSheet
-// Dependencies: [19, 17, 21, 4969, 587, 5196, 558, 576, 5209, 1128, 5210, 5211, 1202, 5220, 5230, 5251, 4927, 4994, 4805, 4968, 2002, 584, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 5208, 558, 576, 5221, 1128, 5222, 5223, 1202, 5232, 5242, 5263, 4927, 4999, 4805, 4968, 2002, 584, 2]
 // Exports: openBurstReactionFirstSendActionSheet
 
 // Module 4968 (BurstReactionFirstSendActionSheet)
@@ -13,14 +13,14 @@ import native from "native" /* 1202 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import dismissible_content from "dismissible_content" /* 4805 */;
 import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 4927 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import getDeviceSpecificString2 from "getDeviceSpecificString" /* 5209 */;
-import BurstReactionAnimationPreviewDefault from "BurstReactionAnimationPreview" /* 5210 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5211 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import components_Button_Button from "components/Button/Button" /* 5230 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5251 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
+import getDeviceSpecificString2 from "getDeviceSpecificString" /* 5221 */;
+import BurstReactionAnimationPreviewDefault from "BurstReactionAnimationPreview" /* 5222 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5223 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import components_Button_Button from "components/Button/Button" /* 5242 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5263 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -97,7 +97,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReact
         const _Symbol = Symbol;
         if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
           const obj4 = { variant: "heading-xl/bold", children: intl.string(intl3.t.NX7HI7) };
-          const Text = tmp(5220).Text;
+          const Text = tmp(5232).Text;
           intl = tmp(1128).intl;
           const tmp20 = React3(Text, obj4);
           cResult[10] = tmp20;
@@ -129,7 +129,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReact
             const _Symbol2 = Symbol;
             if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
               const obj6 = { text: intl2.string(intl3.t["+IrDzN"]), onPress: onDismiss };
-              const Button = tmp(5230).Button;
+              const Button = tmp(5242).Button;
               intl2 = tmp(1128).intl;
               const tmp35 = React3(Button, obj6);
               cResult[19] = tmp35;
@@ -153,7 +153,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReact
                   }
                 }
                 const obj7 = { backdropOpacity: burst_reactions_BurstReactionEffectUtils.BACKDROP_OPACITY, contentStyles: tmp4.content, backdropChildren: tmp11, onDismiss, children: tmp36 };
-                BottomSheet = tmp(5251).BottomSheet;
+                BottomSheet = tmp(5263).BottomSheet;
                 const tmp43 = React3(BottomSheet, obj7);
                 cResult[24] = tmp4.content;
                 cResult[25] = tmp36;

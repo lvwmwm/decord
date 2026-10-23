@@ -1,16 +1,16 @@
-// Module ID: 18776
-// Function ID: 18777
+// Module ID: 18820
+// Function ID: 18821
 // Name: JSWatchdogManager
-// Dependencies: [5, 1087, 3, 1104, 7199, 18777, 1257, 1267, 7569, 7566, 7556, 2]
+// Dependencies: [5, 1087, 3, 1104, 7212, 18821, 1257, 1267, 7582, 7579, 7569, 2]
 
-// Module 18776 (JSWatchdogManager)
+// Module 18820 (JSWatchdogManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7569 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7582 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1087 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7199 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7212 */;
 import size from "module_2" /* 2 */;
 
 let c2, c4, c5, closure_2;

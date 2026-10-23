@@ -1,13 +1,13 @@
-// Module ID: 9488
-// Function ID: 9489
+// Module ID: 9511
+// Function ID: 9512
 // Name: GameProfileCommunitiesLocaleFilterActionSheet
-// Dependencies: [19, 21, 4969, 587, 558, 576, 1633, 9489, 1128, 7233, 6885, 6972, 7283, 5255, 2]
+// Dependencies: [19, 21, 4969, 587, 558, 576, 1633, 9512, 1128, 7246, 6898, 6985, 7296, 5267, 2]
 
-// Module 9488 (GameProfileCommunitiesLocaleFilterActionSheet)
+// Module 9511 (GameProfileCommunitiesLocaleFilterActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import useGameProfileCommunitiesLocaleOptionsDefault from "useGameProfileCommunitiesLocaleOptions" /* 9489 */;
+import useGameProfileCommunitiesLocaleOptionsDefault from "useGameProfileCommunitiesLocaleOptions" /* 9512 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -45,7 +45,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp10 = jsx(toggleLocale(7233).BottomSheetTitleHeader, { title: first });
+    const tmp10 = jsx(toggleLocale(7246).BottomSheetTitleHeader, { title: first });
     cResult[1] = tmp10;
     tmp8 = tmp10;
   } else {
@@ -58,7 +58,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
       tmp12 = cResult[4];
     }
     if (cResult[7] !== tmp12) {
-      const tmp17 = jsx(toggleLocale(6972).TableRowGroup, { hasIcons: false, children: tmp12 });
+      const tmp17 = jsx(toggleLocale(6985).TableRowGroup, { hasIcons: false, children: tmp12 });
       cResult[7] = tmp12;
       cResult[8] = tmp17;
       tmp15 = tmp17;
@@ -72,7 +72,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
       }
       return tmp18;
     }
-    const ActionSheet = tmp(7283).ActionSheet;
+    const ActionSheet = tmp(7296).ActionSheet;
     const tmp20 = <ActionSheet scrollable header={tmp8} dismissAccessibilityLabel={first}>{null}</ActionSheet>;
     cResult[9] = tmp4.content;
     cResult[10] = tmp15;

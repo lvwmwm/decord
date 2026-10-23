@@ -1,28 +1,28 @@
-// Module ID: 8101
-// Function ID: 8102
+// Module ID: 8114
+// Function ID: 8115
 // Name: NodeView
-// Dependencies: [32, 109, 19, 17, 5223, 4821, 4901, 8102, 8099, 1087, 1098, 21, 4969, 587, 558, 576, 5965, 5585, 5220, 4966, 5672, 504, 8103, 6893, 1505, 5253, 5957, 8096, 8094, 5697, 8105, 8109, 8110, 7206, 8114, 8115, 8116, 8117, 14525, 14526, 14527, 14528, 14529, 14530, 14531, 14532, 14533, 14535, 14536, 14537, 14538, 14539, 14540, 14541, 14542, 14545, 2]
+// Dependencies: [32, 109, 19, 17, 5235, 4821, 4901, 8115, 8112, 1087, 1098, 21, 4969, 587, 558, 576, 5977, 5597, 5232, 4966, 5684, 504, 8116, 6906, 1505, 5265, 5969, 8109, 8107, 5709, 8118, 8122, 8123, 7219, 8127, 8128, 8129, 8130, 14549, 14550, 14551, 14552, 14553, 14554, 14555, 14556, 14557, 14559, 14560, 14561, 14562, 14563, 14564, 14565, 14566, 14569, 2]
 // Exports: default
 
-// Module 8101 (NodeView)
+// Module 8114 (NodeView)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants2 from "Constants" /* 1098 */;
 import ColorUtils from "ColorUtils" /* 4966 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import useInitialValueDefault from "useInitialValue" /* 5585 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5672 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5697 */;
-import CustomMarkupAll from "CustomMarkup" /* 5965 */;
-import MenuTypes from "MenuTypes" /* 8094 */;
-import InAppReportsConstants from "InAppReportsConstants" /* 8099 */;
-import MenuConstants from "MenuConstants" /* 8102 */;
-import ArrowDefault from "Arrow" /* 8103 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import useInitialValueDefault from "useInitialValue" /* 5597 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5684 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5709 */;
+import CustomMarkupAll from "CustomMarkup" /* 5977 */;
+import MenuTypes from "MenuTypes" /* 8107 */;
+import InAppReportsConstants from "InAppReportsConstants" /* 8112 */;
+import MenuConstants from "MenuConstants" /* 8115 */;
+import ArrowDefault from "Arrow" /* 8116 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import DevSettingsStore from "DevSettingsStore" /* 5223 */;
+import DevSettingsStore from "DevSettingsStore" /* 5235 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
 import Constants from "Constants" /* 1087 */;
@@ -130,7 +130,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
             tmp16 = null;
             if (description.length > 0) {
               const obj3 = { style: tmp4.description, variant: "text-xs/medium", color: "text-default", children: description };
-              tmp16 = authStore4(tmp(5220).Text, obj3);
+              tmp16 = authStore4(tmp(5232).Text, obj3);
             }
           }
           cResult[9] = description;
@@ -144,7 +144,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
         tmp12 = null;
         if (subheader.length > 0) {
           const obj4 = { style: tmp4.subheader, variant: "text-md/medium", color: "text-default", children: tmp6(subheader) };
-          const Text = tmp(5220).Text;
+          const Text = tmp(5232).Text;
           tmp12 = authStore4(Text, obj4);
         }
       }
@@ -158,7 +158,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
   let tmp8 = null != header && "" !== header;
   if (tmp8) {
     const obj5 = { ref: headerRef, style: tmp4.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: header };
-    tmp8 = authStore4(tmp(5220).Text, obj5);
+    tmp8 = authStore4(tmp(5232).Text, obj5);
   }
   cResult[1] = header;
   cResult[2] = headerRef;
@@ -532,16 +532,16 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChildI
   const obj2 = { style: tmp.childButton, accessibilityRole: "button", onPress: first, children: closure_19(closure_8, obj3) };
   obj3 = { style: tmp.childContainer, children: items2 };
   const obj4 = { style: tmp.childContent, children: items1 };
-  const PressableHighlight = tmp6(6893).PressableHighlight;
+  const PressableHighlight = tmp6(6906).PressableHighlight;
   items1 = [, ];
   const obj5 = { style: tmp.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp3 };
-  items1[0] = closure_18(child(5220).Text, obj5);
+  items1[0] = closure_18(child(5232).Text, obj5);
   if (stateFromStores) {
     stateFromStores = null != report_type;
   }
   if (stateFromStores) {
     const obj6 = { style: tmp.debugText, variant: "text-xs/normal", color: "text-muted", children: report_type };
-    stateFromStores = tmp10(tmp6(5220).Text, obj6);
+    stateFromStores = tmp10(tmp6(5232).Text, obj6);
   }
   items1[1] = stateFromStores;
   items2 = [closure_19(closure_8, obj4), closure_18(ArrowDefault, {})];

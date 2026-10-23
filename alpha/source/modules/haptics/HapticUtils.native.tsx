@@ -1,13 +1,13 @@
-// Module ID: 5198
-// Function ID: 5199
+// Module ID: 5210
+// Function ID: 5211
 // Name: HapticUtils
-// Dependencies: [5199, 5200, 1384, 4926, 2]
+// Dependencies: [5211, 5212, 1384, 4926, 2]
 // Exports: triggerHapticFeedback
 
-// Module 5198 (HapticUtils)
+// Module 5210 (HapticUtils)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5199 */;
-import Patterns from "Patterns" /* 5200 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5211 */;
+import Patterns from "Patterns" /* 5212 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/haptics/HapticUtils.native.tsx");

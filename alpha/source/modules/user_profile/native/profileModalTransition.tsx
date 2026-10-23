@@ -1,9 +1,9 @@
-// Module ID: 18155
-// Function ID: 18156
+// Module ID: 18199
+// Function ID: 18200
 // Name: profileModalTransition
 // Dependencies: [19, 558, 576, 1505, 2]
 
-// Module 18155 (profileModalTransition)
+// Module 18199 (profileModalTransition)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -11,7 +11,7 @@ import size from "module_2" /* 2 */;
 
 let bound, navigation;
 
-const f133976 = (fn) => fn();
+const f134250 = (fn) => fn();
 let c3 = 0;
 const set = new Set();
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -32,7 +32,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReportPro
           const _Math = Math;
           bound = Math.max(0, bound - 1);
           if (bound !== bound) {
-            const item = closure_2_4.forEach(f133976);
+            const item = closure_2_4.forEach(f134250);
           }
         }
       }
@@ -44,7 +44,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReportPro
             const _Math = Math;
             bound = Math.max(0, bound + 1);
             if (bound !== bound) {
-              const item = closure_2_4.forEach(f133976);
+              const item = closure_2_4.forEach(f134250);
             }
           }
         }),
@@ -59,7 +59,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReportPro
           const _Math = Math;
           bound = Math.max(0, bound - 1);
           if (bound !== bound) {
-            const item1 = closure_2_4.forEach(f133976);
+            const item1 = closure_2_4.forEach(f134250);
           }
         }
       };
@@ -87,7 +87,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReportPro
         const _Math = Math;
         bound = Math.max(0, bound - 1);
         if (bound !== bound) {
-          const item = closure_2_4.forEach(f133976);
+          const item = closure_2_4.forEach(f134250);
         }
       }
     }
@@ -100,7 +100,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReportPro
           const _Math = Math;
           bound = Math.max(0, bound + 1);
           if (bound !== bound) {
-            const item = closure_2_4.forEach(f133976);
+            const item = closure_2_4.forEach(f134250);
           }
         }
       }),
@@ -115,7 +115,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReportPro
         const _Math = Math;
         bound = Math.max(0, bound - 1);
         if (bound !== bound) {
-          const item1 = closure_2_4.forEach(f133976);
+          const item1 = closure_2_4.forEach(f134250);
         }
       }
     };

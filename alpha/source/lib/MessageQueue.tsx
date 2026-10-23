@@ -1,22 +1,22 @@
-// Module ID: 8125
-// Function ID: 8126
+// Module ID: 8138
+// Function ID: 8139
 // Name: MessageQueue
-// Dependencies: [109, 5223, 502, 5876, 1087, 4974, 1104, 8126, 3, 5697, 8127, 7554, 1297, 6005, 38, 8128, 8131, 8152, 8136, 2]
+// Dependencies: [109, 5235, 502, 5888, 1087, 4974, 1104, 8139, 3, 5709, 8140, 7567, 1297, 6017, 38, 8141, 8144, 8164, 8148, 2]
 // Exports: getFailedMessageId, isMessageDataCommand, isMessageDataEdit, isMessageDataSend
 
-// Module 8125 (MessageQueue)
+// Module 8138 (MessageQueue)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import MessageConstants from "MessageConstants" /* 4974 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5697 */;
-import NetStats from "NetStats" /* 7554 */;
-import getOverlayMessageAnaylticsLocationDefault from "getOverlayMessageAnaylticsLocation" /* 8127 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5709 */;
+import NetStats from "NetStats" /* 7567 */;
+import getOverlayMessageAnaylticsLocationDefault from "getOverlayMessageAnaylticsLocation" /* 8140 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import DevSettingsStore from "DevSettingsStore" /* 5223 */;
+import DevSettingsStore from "DevSettingsStore" /* 5235 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NetworkStore from "NetworkStore" /* 5876 */;
+import NetworkStore from "NetworkStore" /* 5888 */;
 import Constants from "Constants" /* 1087 */;
-import Queue from "Queue" /* 8126 */;
+import Queue from "Queue" /* 8139 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

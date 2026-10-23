@@ -1,10 +1,10 @@
-// Module ID: 15158
-// Function ID: 15159
+// Module ID: 15183
+// Function ID: 15184
 // Name: useCanInviteToLinkedGameOrganization
-// Dependencies: [4881, 4875, 4901, 1087, 558, 576, 14498, 504, 2]
+// Dependencies: [4881, 4875, 4901, 1087, 558, 576, 14522, 504, 2]
 // Exports: canInviteToLinkedGameOrganization, hasCanInviteRole
 
-// Module 15158 (useCanInviteToLinkedGameOrganization)
+// Module 15183 (useCanInviteToLinkedGameOrganization)
 import Constants from "Constants" /* 1087 */;
 import GuildMemberStore from "GuildMemberStore" /* 4881 */;
 import GuildRoleStore from "GuildRoleStore" /* 4875 */;

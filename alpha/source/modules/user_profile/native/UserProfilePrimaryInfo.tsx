@@ -1,36 +1,36 @@
-// Module ID: 11051
-// Function ID: 11052
+// Module ID: 11074
+// Function ID: 11075
 // Name: UserProfilePrimaryInfo
-// Dependencies: [19, 17, 1392, 8652, 7289, 1087, 8260, 8663, 21, 4969, 587, 1384, 558, 576, 10638, 10639, 9110, 11052, 6893, 5220, 11054, 5137, 11086, 8653, 7475, 5649, 8713, 9549, 9552, 6698, 1128, 11088, 5655, 11089, 11091, 11092, 11094, 11098, 11123, 1499, 11124, 8634, 9201, 5018, 2]
+// Dependencies: [19, 17, 1392, 8670, 7302, 1087, 8272, 8681, 21, 4969, 587, 1384, 558, 576, 10660, 10661, 9133, 11075, 6906, 5232, 11077, 5149, 11109, 8671, 7488, 5661, 8731, 9572, 9575, 6711, 1128, 11111, 5667, 11112, 11114, 11115, 11117, 11121, 11146, 1499, 11147, 8652, 9224, 5023, 2]
 
-// Module 11051 (UserProfilePrimaryInfo)
+// Module 11074 (UserProfilePrimaryInfo)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants2 from "Constants" /* 1087 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import UserUtilsDefault from "UserUtils" /* 5018 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5649 */;
-import QuestTypes from "QuestTypes" /* 6698 */;
-import openUserSettings from "openUserSettings" /* 7475 */;
-import GuildTagConstants from "GuildTagConstants" /* 8260 */;
-import GuildTagUtils from "GuildTagUtils" /* 8634 */;
-import Constants3 from "Constants" /* 8652 */;
-import BadgeId from "BadgeId" /* 8653 */;
-import Constants4 from "Constants" /* 8663 */;
-import useBadges from "useBadges" /* 8713 */;
-import BotTagDefault from "BotTag" /* 9110 */;
-import GuildTagDefault from "GuildTag" /* 9201 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9549 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9552 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10638 */;
-import types from "types" /* 10639 */;
-import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 11094 */;
-import BadgeUtils from "BadgeUtils" /* 11098 */;
+import UserUtilsDefault from "UserUtils" /* 5023 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5661 */;
+import QuestTypes from "QuestTypes" /* 6711 */;
+import openUserSettings from "openUserSettings" /* 7488 */;
+import GuildTagConstants from "GuildTagConstants" /* 8272 */;
+import GuildTagUtils from "GuildTagUtils" /* 8652 */;
+import Constants3 from "Constants" /* 8670 */;
+import BadgeId from "BadgeId" /* 8671 */;
+import Constants4 from "Constants" /* 8681 */;
+import useBadges from "useBadges" /* 8731 */;
+import BotTagDefault from "BotTag" /* 9133 */;
+import GuildTagDefault from "GuildTag" /* 9224 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9572 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9575 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10660 */;
+import types from "types" /* 10661 */;
+import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 11117 */;
+import BadgeUtils from "BadgeUtils" /* 11121 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 7289 */;
+import Constants from "Constants" /* 7302 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -310,7 +310,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayName(
   if (null == onPress) {
     let tmp5 = closure_14;
     const obj = { children: items };
-    let obj3 = { userId: user.id, guildId, userName: name, variant: headingVariant, effectDisplayType: user(10639).EffectDisplayType.STATIC, lineClamp: 2, pendingDisplayNameStyles, defaultColor: "mobile-text-heading-primary", accessibilityRole: displayNameAccessibilityRole, style: null, containerStyle: null };
+    let obj3 = { userId: user.id, guildId, userName: name, variant: headingVariant, effectDisplayType: user(10661).EffectDisplayType.STATIC, lineClamp: 2, pendingDisplayNameStyles, defaultColor: "mobile-text-heading-primary", accessibilityRole: displayNameAccessibilityRole, style: null, containerStyle: null };
     ({ displayNameText: obj2.style, displayNameText: obj2.containerStyle } = tmp);
     const tmp10 = UsernameWithEffectsDefault;
     items = [closure_13(tmp10, obj3), renderBotTag()];
@@ -318,15 +318,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayName(
   } else {
     let tmp12 = closure_14;
     const obj7 = { onPress, accessibilityRole: "button", accessibilityLabel: name, accessibilityHint, style: tmp.displayName, children: items1 };
-    const PressableOpacity = user(6893).PressableOpacity;
-    const obj8 = { userId: user.id, guildId, userName: name, variant: headingVariant, effectDisplayType: user(10639).EffectDisplayType.STATIC, lineClamp: 2, pendingDisplayNameStyles, defaultColor: "mobile-text-heading-primary", accessibilityRole: displayNameAccessibilityRole, style: null, containerStyle: null };
+    const PressableOpacity = user(6906).PressableOpacity;
+    const obj8 = { userId: user.id, guildId, userName: name, variant: headingVariant, effectDisplayType: user(10661).EffectDisplayType.STATIC, lineClamp: 2, pendingDisplayNameStyles, defaultColor: "mobile-text-heading-primary", accessibilityRole: displayNameAccessibilityRole, style: null, containerStyle: null };
     ({ displayNameText: obj4.style, displayNameText: obj4.containerStyle } = tmp);
     const tmp17 = UsernameWithEffectsDefault;
     items1 = [closure_13(tmp17, obj8), renderBotTag(), ];
     const tmp13 = user;
     const tmp15 = closure_13;
     if (showChevron) {
-      showChevron = tmp15(tmp13(11052).ChevronSmallDownIcon, { size: "sm", color: "icon-muted" });
+      showChevron = tmp15(tmp13(11075).ChevronSmallDownIcon, { size: "sm", color: "icon-muted" });
     }
     items1[2] = showChevron;
     tmp12Result = tmp12(PressableOpacity, obj7);
@@ -483,7 +483,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTagAndPr
         const tmp6 = require;
         if (null != onPressUserTag) {
           const obj3 = { onPress: tmp11, accessibilityRole: "button", accessibilityLabel: userTag, accessibilityHint: userTagAccessibilityHint, children: tmp10 };
-          tmp5Result = tmp5(tmp6(6893).PressableOpacity, obj3);
+          tmp5Result = tmp5(tmp6(6906).PressableOpacity, obj3);
         } else {
           const obj = { children: tmp10 };
           tmp5Result = tmp5(hasOwnProperty, obj);
@@ -544,7 +544,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTagAndPr
         const tmp6 = require;
         if (null != onPressUserTag) {
           const obj3 = { onPress: tmp11, accessibilityRole: "button", accessibilityLabel: userTag, accessibilityHint: userTagAccessibilityHint, children: tmp10 };
-          tmp5Result = tmp5(tmp6(6893).PressableOpacity, obj3);
+          tmp5Result = tmp5(tmp6(6906).PressableOpacity, obj3);
         } else {
           const obj = { children: tmp10 };
           tmp5Result = tmp5(hasOwnProperty, obj);
@@ -1989,7 +1989,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildT
   if (tmpResult2.isAndroid()) {
     num3 = 2;
   }
-  const sum1 = tmp(5220).TextStyleSheet[guildTagTextVariant].fontSize + num3;
+  const sum1 = tmp(5232).TextStyleSheet[guildTagTextVariant].fontSize + num3;
   if (null != tag) {
     if (null != guildId) {
       if (cResult[2] === guildTagHorizontalPadding) {
@@ -2132,6 +2132,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileP
   let displayNameAccessibilityHint;
   let displayNameAccessibilityRole;
   let guildId;
+  let hideBadges;
   let items;
   let items1;
   let onOpenBadgeDirectory;
@@ -2146,35 +2147,35 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileP
   let showChevron;
   let style;
   let themeType;
-  let tmp4;
+  let tmp5;
   let user;
   let userTagAccessibilityHint;
   const obj = react2;
-  const cResult = obj.c(48);
-  ({ user, guildId, displayName, pronouns, style, badges, catalogBadges, badgeContainerBackground, themeType, onPressDisplayName, displayNameAccessibilityHint, displayNameAccessibilityRole, onPressUserTag, userTagAccessibilityHint, onPressPronouns, pronounsAccessibilityHint, showChevron, showBadgeToastOnPress, canOpenBadgeDirectory, badgeDirectoryEntryPointRef, onOpenBadgeDirectory, pendingDisplayNameStyles, primaryGuildOverride } = arg0);
-  const tmp3 = closure_16();
+  const cResult = obj.c(49);
+  ({ user, guildId, displayName, pronouns, style, badges, catalogBadges, badgeContainerBackground, themeType, onPressDisplayName, displayNameAccessibilityHint, displayNameAccessibilityRole, onPressUserTag, userTagAccessibilityHint, onPressPronouns, pronounsAccessibilityHint, showChevron, showBadgeToastOnPress, canOpenBadgeDirectory, badgeDirectoryEntryPointRef, onOpenBadgeDirectory, pendingDisplayNameStyles, primaryGuildOverride, hideBadges } = arg0);
+  const tmp4 = closure_16();
   if (cResult[0] !== badgeContainerBackground) {
     const obj2 = { backgroundColor: badgeContainerBackground };
     cResult[0] = badgeContainerBackground;
     cResult[1] = obj2;
-    tmp4 = obj2;
+    tmp5 = obj2;
   } else {
-    tmp4 = cResult[1];
+    tmp5 = cResult[1];
   }
   const obj3 = UserUtilsDefault;
   const name = obj3.useName(user);
   UserUtilsDefault;
   if (cResult[2] === style) {
-    let tmp8;
-    if (cResult[3] === tmp3.container) {
-      tmp8 = cResult[4];
+    let tmp9;
+    if (cResult[3] === tmp4.container) {
+      tmp9 = cResult[4];
     }
-    let tmp9 = name;
+    let tmp10 = name;
     if ("" !== displayName) {
       if (displayName == null) {
         displayName = name;
       }
-      tmp9 = displayName;
+      tmp10 = displayName;
     }
     if (cResult[5] === displayNameAccessibilityHint) {
       if (cResult[6] === displayNameAccessibilityRole) {
@@ -2182,82 +2183,84 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileP
           if (cResult[8] === onPressDisplayName) {
             if (cResult[9] === pendingDisplayNameStyles) {
               if (cResult[10] === showChevron) {
-                if (cResult[11] === tmp9) {
+                if (cResult[11] === tmp10) {
                   if (cResult[12] === themeType) {
-                    let tmp11;
+                    let tmp12;
                     if (cResult[13] === user) {
-                      tmp11 = cResult[14];
+                      tmp12 = cResult[14];
                     }
-                    let tmp15 = null;
+                    let tmp16 = null;
                     if (!user.isProvisional) {
-                      tmp15 = tmp7;
+                      tmp16 = tmp8;
                     }
                     if (cResult[15] === onPressPronouns) {
                       if (cResult[16] === onPressUserTag) {
                         if (cResult[17] === pronouns) {
                           if (cResult[18] === pronounsAccessibilityHint) {
-                            if (cResult[19] === tmp15) {
+                            if (cResult[19] === tmp16) {
                               if (cResult[20] === themeType) {
-                                let tmp16;
+                                let tmp17;
                                 if (cResult[21] === userTagAccessibilityHint) {
-                                  tmp16 = cResult[22];
+                                  tmp17 = cResult[22];
                                 }
-                                if (cResult[23] === tmp4) {
+                                if (cResult[23] === tmp5) {
                                   if (cResult[24] === primaryGuildOverride) {
                                     if (cResult[25] === showBadgeToastOnPress) {
                                       if (cResult[26] === themeType) {
-                                        let tmp20;
+                                        let tmp21;
                                         if (cResult[27] === user) {
-                                          tmp20 = cResult[28];
+                                          tmp21 = cResult[28];
                                         }
                                         if (cResult[29] === badgeDirectoryEntryPointRef) {
                                           if (cResult[30] === badges) {
                                             if (cResult[31] === canOpenBadgeDirectory) {
                                               if (cResult[32] === catalogBadges) {
-                                                if (cResult[33] === tmp4) {
-                                                  if (cResult[34] === onOpenBadgeDirectory) {
-                                                    if (cResult[35] === showBadgeToastOnPress) {
-                                                      if (cResult[36] === themeType) {
-                                                        let tmp24;
-                                                        if (cResult[37] === user.id) {
-                                                          tmp24 = cResult[38];
-                                                        }
-                                                        if (cResult[39] === tmp3.details) {
-                                                          if (cResult[40] === tmp16) {
-                                                            if (cResult[41] === tmp20) {
-                                                              let tmp28;
-                                                              if (cResult[42] === tmp24) {
-                                                                tmp28 = cResult[43];
-                                                              }
-                                                              if (cResult[44] === tmp8) {
-                                                                if (cResult[45] === tmp11) {
-                                                                  let tmp32;
-                                                                  if (cResult[46] === tmp28) {
-                                                                    tmp32 = cResult[47];
-                                                                  }
-                                                                  return tmp32;
+                                                if (cResult[33] === tmp5) {
+                                                  if (cResult[34] === (undefined !== hideBadges && hideBadges)) {
+                                                    if (cResult[35] === onOpenBadgeDirectory) {
+                                                      if (cResult[36] === showBadgeToastOnPress) {
+                                                        if (cResult[37] === themeType) {
+                                                          let tmp25;
+                                                          if (cResult[38] === user.id) {
+                                                            tmp25 = cResult[39];
+                                                          }
+                                                          if (cResult[40] === tmp4.details) {
+                                                            if (cResult[41] === tmp17) {
+                                                              if (cResult[42] === tmp21) {
+                                                                let tmp29;
+                                                                if (cResult[43] === tmp25) {
+                                                                  tmp29 = cResult[44];
                                                                 }
+                                                                if (cResult[45] === tmp29) {
+                                                                  if (cResult[46] === tmp9) {
+                                                                    let tmp33;
+                                                                    if (cResult[47] === tmp12) {
+                                                                      tmp33 = cResult[48];
+                                                                    }
+                                                                    return tmp33;
+                                                                  }
+                                                                }
+                                                                const obj4 = { style: tmp9, children: items };
+                                                                items = [tmp12, tmp29];
+                                                                const tmp36 = syncedClientThemes(hasOwnProperty, obj4);
+                                                                cResult[45] = tmp29;
+                                                                cResult[46] = tmp9;
+                                                                cResult[47] = tmp12;
+                                                                cResult[48] = tmp36;
+                                                                tmp33 = tmp36;
                                                               }
-                                                              const obj4 = { style: tmp8, children: items };
-                                                              items = [tmp11, tmp28];
-                                                              const tmp35 = syncedClientThemes(hasOwnProperty, obj4);
-                                                              cResult[44] = tmp8;
-                                                              cResult[45] = tmp11;
-                                                              cResult[46] = tmp28;
-                                                              cResult[47] = tmp35;
-                                                              tmp32 = tmp35;
                                                             }
                                                           }
+                                                          const obj5 = { style: tmp4.details, children: items1 };
+                                                          items1 = [tmp17, tmp21, tmp25];
+                                                          const tmp32 = syncedClientThemes(hasOwnProperty, obj5);
+                                                          cResult[40] = tmp4.details;
+                                                          cResult[41] = tmp17;
+                                                          cResult[42] = tmp21;
+                                                          cResult[43] = tmp25;
+                                                          cResult[44] = tmp32;
+                                                          tmp29 = tmp32;
                                                         }
-                                                        const obj5 = { style: tmp3.details, children: items1 };
-                                                        items1 = [tmp16, tmp20, tmp24];
-                                                        const tmp31 = syncedClientThemes(hasOwnProperty, obj5);
-                                                        cResult[39] = tmp3.details;
-                                                        cResult[40] = tmp16;
-                                                        cResult[41] = tmp20;
-                                                        cResult[42] = tmp24;
-                                                        cResult[43] = tmp31;
-                                                        tmp28 = tmp31;
                                                       }
                                                     }
                                                   }
@@ -2266,49 +2269,53 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileP
                                             }
                                           }
                                         }
-                                        const obj6 = { userId: user.id, badges, catalogBadges, canOpenBadgeDirectory, badgeDirectoryEntryPointRef, onOpenBadgeDirectory, style: tmp4, themeType, showToastOnPress: showBadgeToastOnPress };
-                                        const tmp27 = map1(closure_23, obj6);
+                                        let tmp26 = !tmp3;
+                                        if (tmp26) {
+                                          const obj6 = { userId: user.id, badges, catalogBadges, canOpenBadgeDirectory, badgeDirectoryEntryPointRef, onOpenBadgeDirectory, style: tmp5, themeType, showToastOnPress: showBadgeToastOnPress };
+                                          tmp26 = map1(closure_23, obj6);
+                                        }
                                         cResult[29] = badgeDirectoryEntryPointRef;
                                         cResult[30] = badges;
                                         cResult[31] = canOpenBadgeDirectory;
                                         cResult[32] = catalogBadges;
-                                        cResult[33] = tmp4;
-                                        cResult[34] = onOpenBadgeDirectory;
-                                        cResult[35] = showBadgeToastOnPress;
-                                        cResult[36] = themeType;
-                                        cResult[37] = user.id;
-                                        cResult[38] = tmp27;
-                                        tmp24 = tmp27;
+                                        cResult[33] = tmp5;
+                                        cResult[34] = undefined !== hideBadges && hideBadges;
+                                        cResult[35] = onOpenBadgeDirectory;
+                                        cResult[36] = showBadgeToastOnPress;
+                                        cResult[37] = themeType;
+                                        cResult[38] = user.id;
+                                        cResult[39] = tmp26;
+                                        tmp25 = tmp26;
                                       }
                                     }
                                   }
                                 }
-                                const obj7 = { user, themeType, style: tmp4, showToastOnPress: showBadgeToastOnPress, primaryGuildOverride };
-                                const tmp23 = map1(closure_24, obj7);
-                                cResult[23] = tmp4;
+                                const obj7 = { user, themeType, style: tmp5, showToastOnPress: showBadgeToastOnPress, primaryGuildOverride };
+                                const tmp24 = map1(closure_24, obj7);
+                                cResult[23] = tmp5;
                                 cResult[24] = primaryGuildOverride;
                                 cResult[25] = showBadgeToastOnPress;
                                 cResult[26] = themeType;
                                 cResult[27] = user;
-                                cResult[28] = tmp23;
-                                tmp20 = tmp23;
+                                cResult[28] = tmp24;
+                                tmp21 = tmp24;
                               }
                             }
                           }
                         }
                       }
                     }
-                    const obj8 = { userTag: tmp15, pronouns, themeType, onPressUserTag, userTagAccessibilityHint, onPressPronouns, pronounsAccessibilityHint };
-                    const tmp19 = map1(closure_21, obj8);
+                    const obj8 = { userTag: tmp16, pronouns, themeType, onPressUserTag, userTagAccessibilityHint, onPressPronouns, pronounsAccessibilityHint };
+                    const tmp20 = map1(closure_21, obj8);
                     cResult[15] = onPressPronouns;
                     cResult[16] = onPressUserTag;
                     cResult[17] = pronouns;
                     cResult[18] = pronounsAccessibilityHint;
-                    cResult[19] = tmp15;
+                    cResult[19] = tmp16;
                     cResult[20] = themeType;
                     cResult[21] = userTagAccessibilityHint;
-                    cResult[22] = tmp19;
-                    tmp16 = tmp19;
+                    cResult[22] = tmp20;
+                    tmp17 = tmp20;
                   }
                 }
               }
@@ -2317,25 +2324,25 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileP
         }
       }
     }
-    const obj9 = { user, guildId, name: tmp9, themeType, onPress: onPressDisplayName, accessibilityHint: displayNameAccessibilityHint, displayNameAccessibilityRole, showChevron, pendingDisplayNameStyles };
-    const tmp14 = map1(closure_20, obj9);
+    const obj9 = { user, guildId, name: tmp10, themeType, onPress: onPressDisplayName, accessibilityHint: displayNameAccessibilityHint, displayNameAccessibilityRole, showChevron, pendingDisplayNameStyles };
+    const tmp15 = map1(closure_20, obj9);
     cResult[5] = displayNameAccessibilityHint;
     cResult[6] = displayNameAccessibilityRole;
     cResult[7] = guildId;
     cResult[8] = onPressDisplayName;
     cResult[9] = pendingDisplayNameStyles;
     cResult[10] = showChevron;
-    cResult[11] = tmp9;
+    cResult[11] = tmp10;
     cResult[12] = themeType;
     cResult[13] = user;
-    cResult[14] = tmp14;
-    tmp11 = tmp14;
+    cResult[14] = tmp15;
+    tmp12 = tmp15;
   }
-  const items2 = [tmp3.container, style];
+  const items2 = [tmp4.container, style];
   cResult[2] = style;
-  cResult[3] = tmp3.container;
+  cResult[3] = tmp4.container;
   cResult[4] = items2;
-  tmp8 = items2;
+  tmp9 = items2;
 }) : (function UserProfilePrimaryInfo(arg0) {
   let badgeContainerBackground;
   let badgeDirectoryEntryPointRef;
@@ -2346,6 +2353,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileP
   let displayNameAccessibilityHint;
   let displayNameAccessibilityRole;
   let guildId;
+  let hideBadges;
   let items;
   let items1;
   let items2;
@@ -2364,8 +2372,11 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileP
   let tmp8;
   let user;
   let userTagAccessibilityHint;
-  ({ user, displayName, themeType, showBadgeToastOnPress } = arg0);
+  ({ user, displayName, themeType, showBadgeToastOnPress, hideBadges } = arg0);
   ({ guildId, pronouns, style, badges, catalogBadges, badgeContainerBackground, onPressDisplayName, displayNameAccessibilityHint, displayNameAccessibilityRole, onPressUserTag, userTagAccessibilityHint, onPressPronouns, pronounsAccessibilityHint, showChevron, canOpenBadgeDirectory, badgeDirectoryEntryPointRef, onOpenBadgeDirectory, pendingDisplayNameStyles, primaryGuildOverride } = arg0);
+  if (hideBadges === undefined) {
+    hideBadges = false;
+  }
   const tmp = closure_16();
   const obj = { backgroundColor: badgeContainerBackground };
   const obj2 = UserUtilsDefault;
@@ -2391,8 +2402,12 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileP
     tmp11 = userTag;
   }
   items2 = [map1(tmp10, { userTag: tmp11, pronouns, themeType, onPressUserTag, userTagAccessibilityHint, onPressPronouns, pronounsAccessibilityHint }), map1(closure_24, { user, themeType, style: obj, showToastOnPress: showBadgeToastOnPress, primaryGuildOverride }), ];
-  const obj7 = { userId: user.id, badges, catalogBadges, canOpenBadgeDirectory, badgeDirectoryEntryPointRef, onOpenBadgeDirectory, style: obj, themeType, showToastOnPress: showBadgeToastOnPress };
-  items2[2] = map1(closure_23, obj7);
+  let tmp6Result = !hideBadges;
+  if (tmp6Result) {
+    const obj7 = { userId: user.id, badges, catalogBadges, canOpenBadgeDirectory, badgeDirectoryEntryPointRef, onOpenBadgeDirectory, style: obj, themeType, showToastOnPress: showBadgeToastOnPress };
+    tmp6Result = tmp6(closure_23, obj7);
+  }
+  items2[2] = tmp6Result;
   items1[1] = syncedClientThemes(hasOwnProperty, obj6);
   return syncedClientThemes(hasOwnProperty, obj4);
 });

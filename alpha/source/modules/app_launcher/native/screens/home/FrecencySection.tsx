@@ -1,24 +1,24 @@
-// Module ID: 11984
-// Function ID: 11985
+// Module ID: 12003
+// Function ID: 12004
 // Name: FrecencySection
-// Dependencies: [109, 32, 19, 17, 4820, 11985, 1087, 21, 4969, 587, 558, 576, 9625, 1388, 7242, 11986, 11141, 504, 11142, 5697, 5038, 5192, 1128, 9111, 11987, 11983, 2000, 8888, 11988, 5220, 11052, 9738, 6893, 11989, 5620, 5655, 11992, 2]
+// Dependencies: [109, 32, 19, 17, 4820, 12004, 1087, 21, 4969, 587, 558, 576, 9648, 1388, 7255, 12005, 11164, 504, 11165, 5709, 5050, 5204, 1128, 9134, 12006, 12002, 2000, 8911, 12007, 5232, 11075, 9760, 6906, 12008, 5632, 5667, 12011, 2]
 
-// Module 11984 (FrecencySection)
+// Module 12003 (FrecencySection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5038 */;
-import timing from "timing" /* 5192 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5697 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7242 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9625 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11142 */;
-import FrecencySectionStore2 from "FrecencySectionStore" /* 11985 */;
-import usePlaceholderSize from "usePlaceholderSize" /* 11986 */;
-import FrecencySectionStoreActionCreators from "FrecencySectionStoreActionCreators" /* 11987 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5050 */;
+import timing from "timing" /* 5204 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5709 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7255 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9648 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11165 */;
+import FrecencySectionStore2 from "FrecencySectionStore" /* 12004 */;
+import usePlaceholderSize from "usePlaceholderSize" /* 12005 */;
+import FrecencySectionStoreActionCreators from "FrecencySectionStoreActionCreators" /* 12006 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -48,7 +48,7 @@ let size;
 let size1;
 let size2;
 let tmp6;
-const ChevronSmallDownIcon = tmp6(11052);
+const ChevronSmallDownIcon = tmp6(11075);
 let closure_3 = ["ref"];
 ({ View: metroImportDefault, ScrollView: metroImportAll } = react_native);
 let EmbeddedActivitiesStore = EmbeddedActivitiesStore_mod;
@@ -145,7 +145,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFet
     });
     return mapped.filter(GlobalUtils.isNotNullish);
   }, items);
-  onlyActivityApps(7242)(memo);
+  onlyActivityApps(7255)(memo);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Placeholder() {
@@ -402,9 +402,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrecencySect
         }
         const obj = { num: length, section_name: RECENT_COMMANDS, location: AppLauncherTypes.AppLauncherLocations.HOME };
         if (tmp9 === tmp10.APPS) {
-          RECENT_COMMANDS = tmp5(11142).AppLauncherSectionName.RECENT_APPS;
+          RECENT_COMMANDS = tmp5(11165).AppLauncherSectionName.RECENT_APPS;
         } else {
-          RECENT_COMMANDS = tmp5(11142).AppLauncherSectionName.RECENT_COMMANDS;
+          RECENT_COMMANDS = tmp5(11165).AppLauncherSectionName.RECENT_COMMANDS;
         }
         trackWithMetadata(APP_LAUNCHER_FRECENTS_SEEN, obj);
       }
@@ -499,9 +499,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrecencySect
         }
         const obj = { num: length, section_name: RECENT_COMMANDS, location: AppLauncherTypes.AppLauncherLocations.HOME };
         if (tmp9 === tmp10.APPS) {
-          RECENT_COMMANDS = tmp5(11142).AppLauncherSectionName.RECENT_APPS;
+          RECENT_COMMANDS = tmp5(11165).AppLauncherSectionName.RECENT_APPS;
         } else {
-          RECENT_COMMANDS = tmp5(11142).AppLauncherSectionName.RECENT_COMMANDS;
+          RECENT_COMMANDS = tmp5(11165).AppLauncherSectionName.RECENT_COMMANDS;
         }
         trackWithMetadata(APP_LAUNCHER_FRECENTS_SEEN, obj);
       }
@@ -877,7 +877,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Frecen
   let onActivityItemSelected;
   let tmp6;
   let tmp7;
-  const f112333 = () => {
+  const f112521 = () => {
     const items = [EmbeddedActivitiesStore.isLaunchingActivity(), ];
     let id;
     const getLaunchState = EmbeddedActivitiesStore.getLaunchState;
@@ -897,8 +897,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Frecen
   let id = react.useId();
   let items = [EmbeddedActivitiesStore];
   const obj3 = context(handleActivityItemSelected[17]);
-  [tmp6, tmp7] = obj3.useStateFromStoresArray(items, f112333);
-  _slicedToArray(obj3.useStateFromStoresArray(items, f112333), 2);
+  [tmp6, tmp7] = obj3.useStateFromStoresArray(items, f112521);
+  _slicedToArray(obj3.useStateFromStoresArray(items, f112521), 2);
   let isLaunching = null != tmp7;
   const obj4 = context(handleActivityItemSelected[33]);
   const obj5 = { context, applicationId: app.applicationId };
@@ -943,7 +943,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Frecen
   } else {
     let name;
     if (cResult[0] !== app.section.application) {
-      const tmpResult = tmp(11983);
+      const tmpResult = tmp(12002);
       const appLauncherIconSource = tmpResult.getAppLauncherIconSource(app.section.application);
       cResult[0] = app.section.application;
       cResult[1] = appLauncherIconSource;
@@ -1027,7 +1027,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Frecen
             }
           }
           items = [tmp10, tmp14];
-          const tmp19 = closure_14(tmp(6893).PressableOpacity, obj2, app.applicationId);
+          const tmp19 = closure_14(tmp(6906).PressableOpacity, obj2, app.applicationId);
           cResult[11] = app.applicationId;
           cResult[12] = disabled;
           cResult[13] = tmp8;
@@ -1066,7 +1066,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Frecen
       let tmp11 = null != tmp6;
       if (tmp11) {
         const obj4 = { style: tmp5.appIcon, source: tmp6 };
-        tmp11 = closure_13(onAppSelected(5655), obj4);
+        tmp11 = closure_13(onAppSelected(5667), obj4);
       }
       cResult[5] = tmp6;
       class A {
@@ -1133,7 +1133,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Frecen
   if (null == app.section) {
     return null;
   } else {
-    const obj4 = app(11983);
+    const obj4 = app(12002);
     const appLauncherIconSource = obj4.getAppLauncherIconSource(app.section.application);
     let obj = {
       style: disabled ? tmp.appContainerDisabled : tmp.appContainer,
@@ -1156,7 +1156,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Frecen
     };
     const application = app.section.application;
     name = undefined;
-    const PressableOpacity = app(6893).PressableOpacity;
+    const PressableOpacity = app(6906).PressableOpacity;
     const tmp10 = closure_14;
     const tmp7 = app;
     if (application != null) {
@@ -1165,11 +1165,11 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Frecen
     let tmp3 = null != appLauncherIconSource;
     if (tmp3) {
       const obj2 = { style: tmp.appIcon, source: appLauncherIconSource };
-      tmp3 = closure_13(onAppSelected(5655), obj2);
+      tmp3 = closure_13(onAppSelected(5667), obj2);
     }
     items = [tmp3, ];
     const obj3 = { submitting, style: tmp.submittingOverlay };
-    items[1] = closure_13(tmp7(11992).SubmittingOverlay, obj3);
+    items[1] = closure_13(tmp7(12011).SubmittingOverlay, obj3);
     return tmp10(PressableOpacity, obj, app.applicationId);
   }
 });

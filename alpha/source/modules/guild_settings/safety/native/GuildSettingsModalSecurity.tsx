@@ -1,17 +1,17 @@
-// Module ID: 19023
-// Function ID: 19024
+// Module ID: 19067
+// Function ID: 19068
 // Name: GuildSettingsModalSecurity
-// Dependencies: [19, 17, 4839, 4843, 1392, 8982, 1087, 21, 4969, 587, 558, 576, 504, 8981, 1128, 5220, 5230, 5655, 15996, 5578, 2]
+// Dependencies: [19, 17, 4839, 4843, 1392, 9005, 1087, 21, 4969, 587, 558, 576, 504, 9004, 1128, 5232, 5242, 5667, 16029, 5590, 2]
 
-// Module 19023 (GuildSettingsModalSecurity)
+// Module 19067 (GuildSettingsModalSecurity)
 import nativeDefault from "native" /* 587 */;
 import GuildRecord from "GuildRecord" /* 4839 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8981 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9004 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import UserStore from "UserStore" /* 1392 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8982 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9005 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -152,7 +152,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
               }
             }
           }
-          const tmp30 = closure_12(tmp(5220).Text, obj2);
+          const tmp30 = closure_12(tmp(5232).Text, obj2);
           cResult[16] = tmp4.label;
           cResult[17] = tmp30;
           tmp28 = tmp30;
@@ -281,8 +281,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
                             }
                           }
                         }
-                        const tmp57 = stateFromStores(5655);
-                        tmp58[0] = stateFromStores(15996);
+                        const tmp57 = stateFromStores(5667);
+                        tmp58[0] = stateFromStores(16029);
                         tmp58[1] = tmp4.image;
                         const tmp59 = closure_12(tmp57, tmp58);
                         cResult[35] = tmp4.image;
@@ -362,7 +362,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
                                 }
                               }
                               if (tmp76 === Symbol.for("react.memo_cache_sentinel")) {
-                                const tmp79 = closure_12(tmp(5578).NavScrim, {});
+                                const tmp79 = closure_12(tmp(5590).NavScrim, {});
                                 class B {
                                   constructor() {
                                     if (null != stateFromStores) {
@@ -458,7 +458,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
           }
         }
         const obj9 = { text: tmp31, disabled: !tmp18, variant: str, onPress: tmp22, shrink: true };
-        const tmp37 = closure_12(tmp(5230).Button, obj9);
+        const tmp37 = closure_12(tmp(5242).Button, obj9);
         cResult[20] = tmp22;
         cResult[21] = tmp31;
         cResult[22] = !tmp18;
@@ -583,11 +583,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
     }
   }, items2);
   const obj5 = { style: tmp.label, variant: "text-md/medium", color: "mobile-text-heading-primary", children: intl.string(guildId(1128).t.Wi9LEV) };
-  const Text = tmp2(5220).Text;
+  const Text = tmp2(5232).Text;
   intl = tmp2(1128).intl;
   items4 = [closure_12(Text, obj5), , ];
   const obj6 = { style: tmp.button, children: closure_12(Button, obj7) };
-  Button = tmp2(5230).Button;
+  Button = tmp2(5242).Button;
   const intl2 = tmp2(1128).intl;
   const string = intl2.string;
   const t = tmp2(1128).t;
@@ -612,7 +612,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
   let tmp18Result = null;
   if (hasItem) {
     const obj8 = { variant: "text-sm/normal", color: "text-feedback-critical", children: intl3.string(guildId(1128).t["KG1V/E"]) };
-    const Text2 = tmp2(5220).Text;
+    const Text2 = tmp2(5232).Text;
     intl3 = tmp2(1128).intl;
     tmp18Result = tmp18(Text2, obj8);
   }
@@ -620,16 +620,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
   items4[2] = tmp18Result;
   items5 = [closure_13(closure_4, obj4), ];
   const obj10 = { style: tmp.center, children: items6 };
-  const obj11 = { source: stateFromStores(15996), style: tmp.image, resizeMode: "contain" };
-  const tmp23 = stateFromStores(5655);
+  const obj11 = { source: stateFromStores(16029), style: tmp.image, resizeMode: "contain" };
+  const tmp23 = stateFromStores(5667);
   items6 = [closure_12(tmp23, obj11), ];
   const obj12 = { style: tmp.infoWrapper, children: closure_12(Text3, obj13) };
   obj13 = { variant: "text-sm/medium", color: "text-muted", children: intl4.format(guildId(1128).t["FK0+iX"], {}) };
-  Text3 = tmp2(5220).Text;
+  Text3 = tmp2(5232).Text;
   intl4 = tmp2(1128).intl;
   items6[1] = closure_12(closure_4, obj12);
   items5[1] = closure_13(closure_4, obj10);
-  items7 = [closure_13(tmp16, obj3), closure_12(tmp2(5578).NavScrim, {})];
+  items7 = [closure_13(tmp16, obj3), closure_12(tmp2(5590).NavScrim, {})];
   return closure_13(tmp15, obj9);
 });
 const result = size.fileFinishedImporting("modules/guild_settings/safety/native/GuildSettingsModalSecurity.tsx");

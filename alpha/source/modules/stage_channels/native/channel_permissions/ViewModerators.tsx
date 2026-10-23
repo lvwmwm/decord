@@ -1,16 +1,16 @@
-// Module ID: 18197
-// Function ID: 18198
+// Module ID: 18241
+// Function ID: 18242
 // Name: ViewModerators
-// Dependencies: [5, 19, 4881, 4875, 4843, 1087, 7860, 21, 1267, 5196, 18198, 2002, 558, 576, 1505, 504, 6623, 8948, 4829, 2000, 5895, 1128, 7396, 8949, 5648, 1202, 8965, 5963, 6972, 6888, 11129, 2]
+// Dependencies: [5, 19, 4881, 4875, 4843, 1087, 7873, 21, 1267, 5208, 18242, 2002, 558, 576, 1505, 504, 6636, 8971, 4829, 2000, 5907, 1128, 7409, 8972, 5660, 1202, 8988, 5975, 6985, 6901, 11152, 2]
 // Exports: openAddModeratorsActionSheet
 
-// Module 18197 (ViewModerators)
+// Module 18241 (ViewModerators)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7860 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8965 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7873 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8988 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 4881 */;
@@ -97,7 +97,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewModerato
   const tmpResult = tmp(504);
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp7, tmp10, tmp11);
   ({ guild, sortedGuildRoles } = stateFromStoresObject);
-  const tmpResult2 = tmp(6623);
+  const tmpResult2 = tmp(6636);
   const canUpdateStageChannelModerators = tmpResult2.useCanUpdateStageChannelModerators(channel.id);
   if (null != guild) {
     if (null != sortedGuildRoles) {
@@ -130,9 +130,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewModerato
         id = guild.id;
       }
       const memberIds = getMemberIds(id);
-      let obj7 = canUpdateStageChannelModerators(8948);
+      let obj7 = canUpdateStageChannelModerators(8971);
       const existingMembersRows = obj7.getExistingMembersRows(memberIds, channel, guild, tmp(4829).MODERATE_STAGE_CHANNEL_PERMISSIONS);
-      let obj8 = canUpdateStageChannelModerators(8948);
+      let obj8 = canUpdateStageChannelModerators(8971);
       const existingRolesRowWithPermissionDisabled = obj8.getExistingRolesRowWithPermissionDisabled(guild, sortedGuildRoles, channel, tmp(4829).MODERATE_STAGE_CHANNEL_PERMISSIONS);
       if (cResult[14] !== channel) {
         function handleRemovePermission(id) {
@@ -266,12 +266,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewModerato
             let tmp31 = tmp14;
             if (tmp31) {
               let obj4 = { style: { paddingHorizontal: 16 }, spacing: 16, children: items2 };
-              const Stack = tmp(5963).Stack;
+              const Stack = tmp(5975).Stack;
               let obj5 = { title: intl.string(tmp(1128).t.f7VbhF), hasIcons: true, children: closure_10(TableRow, obj6) };
-              const TableRowGroup = tmp(6972).TableRowGroup;
+              const TableRowGroup = tmp(6985).TableRowGroup;
               intl = tmp(1128).intl;
               obj6 = {
-                icon: closure_10(tmp(11129).CirclePlusIcon, {}),
+                icon: closure_10(tmp(11152).CirclePlusIcon, {}),
                 label: intl2.string(tmp(1128).t.n3bcy8),
                 onPress() {
                               if (null != channel) {
@@ -281,22 +281,22 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewModerato
                                 const _HermesInternal = HermesInternal;
                                 ActionSheetActionCreatorsDefault;
                                 const obj2 = { channel, canSkip: false };
-                                const tmp8 = asyncRequire(18198, dependencyMap.paths);
+                                const tmp8 = asyncRequire(18242, dependencyMap.paths);
                                 openLazy(tmp8, "channel-add-moderators-" + channel.id, obj2);
                               }
                             },
                 disabled: !canUpdateStageChannelModerators,
                 arrow: true
               };
-              TableRow = tmp(6888).TableRow;
+              TableRow = tmp(6901).TableRow;
               intl2 = tmp(1128).intl;
               items2 = [closure_10(TableRowGroup, obj5), , ];
               let obj9 = { title: intl3.string(tmp(1128).t.ghdVJL), hasIcons: true, children: existingRolesRowWithPermissionDisabled.map((item) => closure_4(item)) };
-              const TableRowGroup2 = tmp(6972).TableRowGroup;
+              const TableRowGroup2 = tmp(6985).TableRowGroup;
               intl3 = tmp(1128).intl;
               items2[1] = closure_10(TableRowGroup2, obj9);
               let obj10 = { title: intl4.string(tmp(1128).t.ghdVJL), hasIcons: true, children: existingMembersRows.map((item) => closure_4(item)) };
-              const TableRowGroup3 = tmp(6972).TableRowGroup;
+              const TableRowGroup3 = tmp(6985).TableRowGroup;
               intl4 = tmp(1128).intl;
               items2[2] = closure_10(TableRowGroup3, obj10);
               tmp31 = closure_11(Stack, obj4);
@@ -506,7 +506,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewModerato
                     const _HermesInternal = HermesInternal;
                     ActionSheetActionCreatorsDefault;
                     const obj2 = { channel, canSkip: false };
-                    const tmp8 = asyncRequire(18198, dependencyMap.paths);
+                    const tmp8 = asyncRequire(18242, dependencyMap.paths);
                     openLazy(tmp8, "channel-add-moderators-" + channel.id, obj2);
                   }
                 },
@@ -555,7 +555,7 @@ function openAddModeratorsActionSheet(channel) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   const obj2 = { channel, canSkip: flag };
-  const tmp3 = asyncRequire(18198, dependencyMap.paths);
+  const tmp3 = asyncRequire(18242, dependencyMap.paths);
   openLazy(tmp3, "channel-add-moderators-" + channel.id, obj2);
 }
 let result = size.fileFinishedImporting("modules/stage_channels/native/channel_permissions/ViewModerators.tsx");

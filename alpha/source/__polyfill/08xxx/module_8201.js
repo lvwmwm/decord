@@ -1,79 +1,73 @@
 // Module ID: 8201
 // Function ID: 8202
-// Dependencies: [41, 42]
+// Dependencies: [8202, 8203, 8204, 8205]
 
 // Module 8201
-import _createClassDefault from "_createClass" /* 42 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
+import _mod8202 from "module_8202" /* 8202 */;
+import _mod8203 from "module_8203" /* 8203 */;
+import _mod8204 from "module_8204" /* 8204 */;
+import _mod8205 from "module_8205" /* 8205 */;
 
-class DataView {
-  constructor(buffer) {
-    const self = this;
-    _classCallCheck(this, DataView);
-    const tmp2 = typeof buffer !== "object" || undefined === buffer.length || undefined === buffer.readUInt8 || undefined === buffer.readUInt16LE || undefined === buffer.readUInt16BE || undefined === buffer.readUInt32LE || undefined === buffer.readUInt32BE || undefined === buffer.readInt32LE || undefined === buffer.readInt32BE;
-    if (tmp2) {
-      const _Error = Error;
-      const self2 = this;
-      const self3 = this;
-      const error = new Error("DataView: Passed buffer type is unsupported.");
-      throw error;
-    } else {
-      self.buffer = buffer;
-      self.byteLength = self.buffer.length;
+let hasOwnProperty;
+
+const self = this;
+let tmp = this && self.__createBinding;
+if (!tmp) {
+  let tmp2 = globalThis;
+  let _Object = Object;
+  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
     }
-  }
+    closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
+      }
+      tmp3 = !tmp4;
+    }
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
+    }
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
 }
-const entry = {
-  key: "getUint8",
-  value: function getUint8(sum) {
-    const buffer = this.buffer;
-    return buffer.readUInt8(sum);
+let closure_0 = tmp;
+let tmp3 = self && self.__exportStar || ((obj, arg1) => {
+  for (const key10007 in obj) {
+    let callResult = "default" === key10007;
+    if (!callResult) {
+      let _Object = Object;
+      hasOwnProperty = Object.prototype.hasOwnProperty;
+      callResult = hasOwnProperty.call(arg1, key10007);
+    }
+    if (callResult) {
+      continue;
+    } else {
+      let tmp3 = closure_0(arg1, obj, key10007);
+      continue;
+    }
+    continue;
   }
-};
-const items = [
-  entry,
-  {
-    key: "getUint16",
-    value: function getUint16(c5, arg1) {
-      let uInt16LE;
-      const buffer = this.buffer;
-      const tmp = arg1;
-      if (tmp) {
-        uInt16LE = buffer.readUInt16LE(c5);
-      } else {
-        uInt16LE = buffer.readUInt16BE(c5);
-      }
-      return uInt16LE;
-    }
-  },
-  {
-    key: "getUint32",
-    value: function getUint32(sum, arg1) {
-      let uInt32LE;
-      const buffer = this.buffer;
-      const tmp = arg1;
-      if (tmp) {
-        uInt32LE = buffer.readUInt32LE(sum);
-      } else {
-        uInt32LE = buffer.readUInt32BE(sum);
-      }
-      return uInt32LE;
-    }
-  },
-  {
-    key: "getInt32",
-    value: function getInt32(sum, arg1) {
-      let int32LE;
-      const buffer = this.buffer;
-      const tmp = arg1;
-      if (tmp) {
-        int32LE = buffer.readInt32LE(sum);
-      } else {
-        int32LE = buffer.readInt32BE(sum);
-      }
-      return int32LE;
-    }
-  }
-];
-
-export default _createClassDefault(DataView, items);
+});
+tmp3(_mod8202, exports);
+tmp3(_mod8203, exports);
+tmp3(_mod8204, exports);
+tmp3(_mod8205, exports);

@@ -1,12 +1,12 @@
-// Module ID: 12735
-// Function ID: 12736
+// Module ID: 12754
+// Function ID: 12755
 // Name: KickConfirm
-// Dependencies: [32, 19, 17, 4843, 1392, 21, 4969, 587, 558, 576, 5579, 11042, 504, 12736, 6815, 12737, 5655, 12738, 5220, 1128, 5018, 11750, 3830, 7165, 5230, 2]
+// Dependencies: [32, 19, 17, 4843, 1392, 21, 4969, 587, 558, 576, 5591, 11065, 504, 12755, 6828, 12756, 5667, 12757, 5232, 1128, 5023, 11770, 3830, 7178, 5242, 2]
 
-// Module 12735 (KickConfirm)
+// Module 12754 (KickConfirm)
 import nativeDefault from "native" /* 587 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6815 */;
-import removeConjureServerAppDefault from "removeConjureServerApp" /* 12737 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6828 */;
+import removeConjureServerAppDefault from "removeConjureServerApp" /* 12756 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -272,7 +272,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           kickUserResult = kickUser(id, id1, closure_9.current);
           tmp12 = onKick;
           nextPromise = kickUserResult.then(onKick);
-          catchPromise = nextPromise.catch(() => { /* body not rendered: F148895 */ });
+          catchPromise = nextPromise.catch(() => { /* body not rendered: F149179 */ });
         }
         return;
       }
@@ -336,7 +336,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp4Result6;
   let tmp7Result4;
   let v1Ie87p;
-  const f115334 = () => ({ kicking: false, kickError: false });
+  const f115527 = () => ({ kicking: false, kickError: false });
   guildId = guildId.guildId;
   const userId = guildId.userId;
   const onKick = guildId.onKick;
@@ -392,9 +392,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   closure_8 = tmp18[1];
   const first1 = tmp18[0];
   ref = obj.useRef("");
-  [tmp21, c10] = stateFromStores(stateFromStores1.useState(f115334), 2);
+  [tmp21, c10] = stateFromStores(stateFromStores1.useState(f115527), 2);
   const items4 = [stateFromStores, onKick, stateFromStores1];
-  stateFromStores(stateFromStores1.useState(f115334), 2);
+  stateFromStores(stateFromStores1.useState(f115527), 2);
   closure_11 = obj.useCallback(() => {
     const tmp2 = null != stateFromStores && null != stateFromStores1;
     if (tmp2) {

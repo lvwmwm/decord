@@ -1,13 +1,13 @@
-// Module ID: 6758
-// Function ID: 6759
+// Module ID: 6771
+// Function ID: 6772
 // Name: ConjureProjectStore
-// Dependencies: [32, 1392, 6759, 504, 584, 2]
+// Dependencies: [32, 1392, 6772, 504, 584, 2]
 // Exports: canPublishProject, canRemixProject
 
-// Module 6758 (ConjureProjectStore)
+// Module 6771 (ConjureProjectStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6759 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6772 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;

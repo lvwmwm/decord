@@ -1,10 +1,10 @@
-// Module ID: 8435
-// Function ID: 8436
+// Module ID: 8447
+// Function ID: 8448
 // Name: FriendAnniversaryUtils
 // Dependencies: [4398, 2]
 // Exports: categorizeFriendAnniversariesByAffinity, isFriendAnniversary, pruneTimestampMap, yearsSince
 
-// Module 8435 (FriendAnniversaryUtils)
+// Module 8447 (FriendAnniversaryUtils)
 import _mod4398 from "module_4398" /* 4398 */;
 import size from "module_2" /* 2 */;
 

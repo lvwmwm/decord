@@ -1,15 +1,15 @@
-// Module ID: 8719
-// Function ID: 8720
+// Module ID: 8737
+// Function ID: 8738
 // Name: VideoBackground
-// Dependencies: [109, 32, 19, 17, 1087, 21, 4969, 12, 8720, 8721, 4966, 587, 1901, 558, 576, 8722, 1202, 5244, 2]
+// Dependencies: [109, 32, 19, 17, 1087, 21, 4969, 12, 8738, 8739, 4966, 587, 1901, 558, 576, 8740, 1202, 5256, 2]
 
-// Module 8719 (VideoBackground)
+// Module 8737 (VideoBackground)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import native from "native" /* 1202 */;
 import react_nativeDefault from "react-native" /* 1901 */;
-import VideoBackgroundManagerDefault from "VideoBackgroundManager" /* 8721 */;
-import useProfileTileGradientDefault from "useProfileTileGradient" /* 8722 */;
+import VideoBackgroundManagerDefault from "VideoBackgroundManager" /* 8739 */;
+import useProfileTileGradientDefault from "useProfileTileGradient" /* 8740 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -28,7 +28,7 @@ let metroImportAll;
 let metroImportDefault;
 let tmp5;
 let unpackModuleId;
-const LinearGradientDefault = tmp5(5244);
+const LinearGradientDefault = tmp5(5256);
 function useDominantRGBFromImage(arg0, arg1) {
   let closure_0;
   let closure_2;
@@ -41,13 +41,13 @@ function useDominantRGBFromImage(arg0, arg1) {
     tmp = first;
   }
   let tmp3 = first;
-  const tmp5 = first(8720)();
+  const tmp5 = first(8738)();
   dependencyMap = tmp5;
   let obj = react;
   let hexToRgbResult;
   const useState = react.useState;
   if (null != arg0) {
-    hexToRgbResult = tmp3(8721).cachedDominantColors[arg0];
+    hexToRgbResult = tmp3(8739).cachedDominantColors[arg0];
   }
   if (hexToRgbResult == null) {
     const obj2 = require("ColorUtils");
@@ -271,7 +271,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoBackgro
                             }
                             const obj2 = { colors: tmp24, start: tmp46, end: tmp47, style: tmp31, children: items };
                             items = [tmp35, tmp26];
-                            const tmp50 = unpackModuleId(tmp23(5244), obj2);
+                            const tmp50 = unpackModuleId(tmp23(5256), obj2);
                             cResult[38] = tmp35;
                             cResult[39] = tmp31;
                             cResult[40] = tmp24;

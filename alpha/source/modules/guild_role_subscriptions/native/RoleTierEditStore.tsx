@@ -1,14 +1,14 @@
-// Module ID: 19178
-// Function ID: 19179
+// Module ID: 19222
+// Function ID: 19223
 // Name: RoleTierEditStore
-// Dependencies: [32, 5, 1274, 1269, 7341, 558, 576, 4884, 5249, 16485, 2]
+// Dependencies: [32, 5, 1274, 1269, 7354, 558, 576, 4884, 5261, 16532, 2]
 // Exports: resetImperatively
 
-// Module 19178 (RoleTierEditStore)
+// Module 19222 (RoleTierEditStore)
 import react from "react" /* 576 */;
 import react_native from "react-native" /* 1274 */;
-import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 7341 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16485 */;
+import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 7354 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16532 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1269 from "module_1269" /* 1269 */;
@@ -221,7 +221,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePriceTier
         if (cResult[6] === tmp9) {
           tmp10 = cResult[7];
         }
-        first1(5249)(tmp10);
+        first1(5261)(tmp10);
         if (cResult[8] === guildId) {
           if (cResult[9] === tmp9) {
             if (cResult[10] === tmp5[1]) {
@@ -272,7 +272,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePriceTier
     return items;
   }, require("_slicedToArray").shallow);
   let closure_2 = tmp3;
-  tiers(5249)(() => {
+  tiers(5261)(() => {
     let tmp2 = null == first;
     const tmp = guildId;
     if (tmp2) {

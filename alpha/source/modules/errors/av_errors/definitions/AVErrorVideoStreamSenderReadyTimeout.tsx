@@ -1,12 +1,12 @@
-// Module ID: 19294
-// Function ID: 19295
+// Module ID: 19338
+// Function ID: 19339
 // Name: AVErrorVideoStreamSenderReadyTimeout
-// Dependencies: [502, 6764, 5883, 2]
+// Dependencies: [502, 6777, 5895, 2]
 
-// Module 19294 (AVErrorVideoStreamSenderReadyTimeout)
-import AVError from "AVError" /* 5883 */;
+// Module 19338 (AVErrorVideoStreamSenderReadyTimeout)
+import AVError from "AVError" /* 5895 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import VideoStreamStore from "VideoStreamStore" /* 6764 */;
+import VideoStreamStore from "VideoStreamStore" /* 6777 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

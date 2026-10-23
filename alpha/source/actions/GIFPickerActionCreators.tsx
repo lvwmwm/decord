@@ -1,23 +1,23 @@
-// Module ID: 10109
-// Function ID: 10110
+// Module ID: 10131
+// Function ID: 10132
 // Name: GIFPickerActionCreators
-// Dependencies: [2068, 10108, 1087, 1097, 5697, 10110, 10111, 1297, 584, 12, 1281, 1386, 9695, 4802, 1247, 5894, 1128, 1267, 2]
+// Dependencies: [2068, 10130, 1087, 1097, 5709, 10132, 10133, 1297, 584, 12, 1281, 1386, 9717, 4802, 1247, 5906, 1128, 1267, 2]
 // Exports: addFavoriteGIF, fetchSuggestions, fetchTrending, fetchTrendingGIFs, fetchTrendingSearchTerms, gifUrlKey, initializeSearch, removeFavoriteGIF, resetSearch, search, trackSearchResultViewed, trackSearchStart, trackSelectGIF
 
-// Module 10109 (GIFPickerActionCreators)
+// Module 10131 (GIFPickerActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl3 from "intl" /* 1128 */;
 import frecency_user_settings from "frecency_user_settings" /* 1247 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import v1 from "v1" /* 1281 */;
 import URLUtilsDefault from "URLUtils" /* 1386 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5697 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5894 */;
-import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 9695 */;
-import GifProvider from "GifProvider" /* 10110 */;
-import GIFPickerUtils from "GIFPickerUtils" /* 10111 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5709 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5906 */;
+import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 9717 */;
+import GifProvider from "GifProvider" /* 10132 */;
+import GIFPickerUtils from "GIFPickerUtils" /* 10133 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
-import GIFPickerViewStore from "GIFPickerViewStore" /* 10108 */;
+import GIFPickerViewStore from "GIFPickerViewStore" /* 10130 */;
 import Constants from "Constants" /* 1087 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import module_12 from "module_12" /* 12 */;
@@ -298,7 +298,7 @@ export const gifUrlKey = function gifUrlKey(uri) {
     const obj2 = AttachmentUrlUtilsAll;
     const tmp5 = importAll;
     if (obj2.isAttachmentPathUrl(toURLSafeResult)) {
-      const tmp5Result = tmp5(9695);
+      const tmp5Result = tmp5(9717);
       const str = tmp5Result.removeSignedUrlParameters(toURLSafeResult);
       str1 = str.toString();
     }
@@ -333,7 +333,7 @@ export const addFavoriteGIF = function addFavoriteGIF(size) {
             let result = obj6.isExternalProxiedAttachmentUrl(toURLSafeResult);
             const tmp11 = importAll;
             if (!result) {
-              const tmp11Result = tmp11(9695);
+              const tmp11Result = tmp11(9717);
               result = tmp11Result.isAttachmentPathUrl(toURLSafeResult);
             }
             tmp10 = result;
@@ -387,7 +387,7 @@ export const addFavoriteGIF = function addFavoriteGIF(size) {
             const obj11 = AttachmentUrlUtilsAll;
             const tmp25 = importAll;
             if (obj11.isAttachmentPathUrl(toURLSafeResult1)) {
-              const tmp25Result = tmp25(9695);
+              const tmp25Result = tmp25(9717);
               const str9 = tmp25Result.removeSignedUrlParameters(toURLSafeResult1);
               url = str9.toString();
             }
@@ -427,7 +427,7 @@ export const addFavoriteGIF = function addFavoriteGIF(size) {
       let result3 = obj3.isExternalProxiedAttachmentUrl(toURLSafeResult2);
       const tmp7 = importAll;
       if (!result3) {
-        const tmp7Result = tmp7(9695);
+        const tmp7Result = tmp7(9717);
         result3 = tmp7Result.isAttachmentPathUrl(toURLSafeResult2);
       }
       tmp6 = result3;
@@ -452,7 +452,7 @@ export const removeFavoriteGIF = function removeFavoriteGIF(uri) {
         const obj2 = AttachmentUrlUtilsAll;
         const tmp7 = importAll;
         if (obj2.isAttachmentPathUrl(toURLSafeResult)) {
-          const tmp7Result = tmp7(9695);
+          const tmp7Result = tmp7(9717);
           const str = tmp7Result.removeSignedUrlParameters(toURLSafeResult);
           str1 = str.toString();
         }

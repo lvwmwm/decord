@@ -1,16 +1,16 @@
-// Module ID: 11250
-// Function ID: 11251
+// Module ID: 11273
+// Function ID: 11274
 // Name: UserProfileSection
-// Dependencies: [109, 19, 17, 21, 4969, 587, 558, 576, 5023, 7265, 4966, 8930, 5220, 2]
+// Dependencies: [109, 19, 17, 21, 4969, 587, 558, 576, 5035, 7278, 4966, 8953, 5232, 2]
 
-// Module 11250 (UserProfileSection)
+// Module 11273 (UserProfileSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ColorUtils from "ColorUtils" /* 4966 */;
-import native from "native" /* 5023 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 7265 */;
+import native from "native" /* 5035 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 7278 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -183,7 +183,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
     let borderColor;
     if (null != profileThemeValues) {
       const tmpResult4 = ColorUtils;
-      borderColor = tmpResult4.hexOpacityToRgba(tmp(8930).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
+      borderColor = tmpResult4.hexOpacityToRgba(tmp(8953).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
     }
     cResult[8] = primaryColor;
     cResult[9] = profileThemeValues;
@@ -220,7 +220,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
     let borderColor;
     if (null != profileThemeValues) {
       const tmp3Result = ColorUtils;
-      borderColor = tmp3Result.hexOpacityToRgba(tmp3(8930).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
+      borderColor = tmp3Result.hexOpacityToRgba(tmp3(8953).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
     }
     obj3.borderColor = borderColor;
     const obj4 = { style: items, children: items3 };

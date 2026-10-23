@@ -1,10 +1,10 @@
-// Module ID: 19376
-// Function ID: 19377
+// Module ID: 19420
+// Function ID: 19421
 // Name: libDiscoreSmokeTest
 // Dependencies: [5, 1087, 3, 566, 562, 559, 1267, 2]
 // Exports: default, formatErrorMessage, libDiscoreSmokeTest
 
-// Module 19376 (libDiscoreSmokeTest)
+// Module 19420 (libDiscoreSmokeTest)
 import LoggerDefault from "Logger" /* 3 */;
 import libdiscoreExperiments from "libdiscoreExperiments" /* 559 */;
 import initLibdiscore from "initLibdiscore" /* 566 */;

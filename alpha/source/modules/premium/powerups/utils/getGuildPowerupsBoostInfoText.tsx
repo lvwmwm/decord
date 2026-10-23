@@ -1,13 +1,13 @@
-// Module ID: 13413
-// Function ID: 13414
+// Module ID: 13436
+// Function ID: 13437
 // Name: getGuildPowerupsBoostInfoText
-// Dependencies: [5168, 1128, 2568, 2]
+// Dependencies: [5180, 1128, 2568, 2]
 // Exports: getGuildPowerupsBoostInfoText
 
-// Module 13413 (getGuildPowerupsBoostInfoText)
+// Module 13436 (getGuildPowerupsBoostInfoText)
 import intl4 from "intl" /* 1128 */;
 import _modDef2568 from "module_2568" /* 2568 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5168 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5180 */;
 import size from "module_2" /* 2 */;
 
 const BoostInfoType = GuildPowerupsConstants.BoostInfoType;

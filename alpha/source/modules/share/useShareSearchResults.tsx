@@ -1,18 +1,18 @@
-// Module ID: 12856
-// Function ID: 12857
+// Module ID: 12875
+// Function ID: 12876
 // Name: useShareSearchResults
-// Dependencies: [32, 19, 6481, 502, 6808, 12845, 12857, 504, 12862, 10114, 12844, 2]
+// Dependencies: [32, 19, 6494, 502, 6821, 12864, 12876, 504, 12881, 10136, 12863, 2]
 // Exports: makeAutocompleterSearchParams, useShareSearchResults
 
-// Module 12856 (useShareSearchResults)
-import formatResultsDefault from "formatResults" /* 12844 */;
-import ShareConstants from "ShareConstants" /* 12845 */;
-import QuickSwitcherActionCreators from "QuickSwitcherActionCreators" /* 12857 */;
+// Module 12875 (useShareSearchResults)
+import formatResultsDefault from "formatResults" /* 12863 */;
+import ShareConstants from "ShareConstants" /* 12864 */;
+import QuickSwitcherActionCreators from "QuickSwitcherActionCreators" /* 12876 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6481 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6494 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import FrecencyStore from "FrecencyStore" /* 6808 */;
+import FrecencyStore from "FrecencyStore" /* 6821 */;
 import size from "module_2" /* 2 */;
 
 let results;

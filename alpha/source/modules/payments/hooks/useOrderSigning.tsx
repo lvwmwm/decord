@@ -1,13 +1,13 @@
-// Module ID: 9434
-// Function ID: 9435
+// Module ID: 9457
+// Function ID: 9458
 // Name: useOrderSigning
-// Dependencies: [5, 32, 19, 5684, 4792, 4785, 7329, 9435, 1128, 9437, 2]
+// Dependencies: [5, 32, 19, 5696, 4792, 4785, 7342, 9458, 1128, 9460, 2]
 // Exports: useOrderSigning
 
-// Module 9434 (useOrderSigning)
+// Module 9457 (useOrderSigning)
 import BillingUtils from "BillingUtils" /* 4785 */;
 import BillingErrorDefault from "BillingError" /* 4792 */;
-import PaymentConstants from "PaymentConstants" /* 5684 */;
+import PaymentConstants from "PaymentConstants" /* 5696 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

@@ -1,20 +1,20 @@
-// Module ID: 17308
-// Function ID: 17309
+// Module ID: 17352
+// Function ID: 17353
 // Name: RegisterPasswordInput
-// Dependencies: [32, 109, 19, 7020, 17281, 21, 4969, 587, 5038, 558, 576, 17305, 1128, 5220, 15242, 7035, 5634, 504, 5127, 7046, 7048, 6993, 2]
+// Dependencies: [32, 109, 19, 7033, 17325, 21, 4969, 587, 5050, 558, 576, 17349, 1128, 5232, 15267, 7048, 5646, 504, 5139, 7059, 7061, 7006, 2]
 
-// Module 17308 (RegisterPasswordInput)
+// Module 17352 (RegisterPasswordInput)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
-import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 15242 */;
-import usePasswordScore from "usePasswordScore" /* 17305 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5050 */;
+import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 15267 */;
+import usePasswordScore from "usePasswordScore" /* 17349 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import PhoneStore from "PhoneStore" /* 7020 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17281 */;
+import PhoneStore from "PhoneStore" /* 7033 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17325 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -35,7 +35,7 @@ let obj3;
 let obj4;
 let tmp12;
 let unpackModuleId;
-const getErrorDefault = tmp12(7035);
+const getErrorDefault = tmp12(7048);
 let user = ["ref"];
 let closure_4 = ["password"];
 let closure_5 = ["password"];
@@ -139,7 +139,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwo
               return tmp17;
             }
             const obj2 = { variant: "text-xs/medium", style: tmp13, animated: true, children: items };
-            const Text = tmp(5220).Text;
+            const Text = tmp(5232).Text;
             const merged = Object.assign(obj5);
             const merged1 = Object.assign(obj6);
             items = [tmp15, ": ", str];
@@ -191,7 +191,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwo
             }
           }
           const obj = { variant: "text-xs/medium", style: items, animated: true, children: items1 };
-          const Text = tmp9(5220).Text;
+          const Text = tmp9(5232).Text;
           const merged = Object.assign(obj5);
           const merged1 = Object.assign(obj6);
           items = [tmp.passwordStrength, strong];
@@ -605,8 +605,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterPass
     cResult[34] = tmp40;
     cResult[35] = tmp45;
     cResult[36] = undefined;
-    cResult[37] = closure_13(tmp(6993).TextInput, obj4);
-    const tmp50 = closure_13(tmp(6993).TextInput, obj4);
+    cResult[37] = closure_13(tmp(7006).TextInput, obj4);
+    const tmp50 = closure_13(tmp(7006).TextInput, obj4);
   }
   class W {
     constructor(arg0) {

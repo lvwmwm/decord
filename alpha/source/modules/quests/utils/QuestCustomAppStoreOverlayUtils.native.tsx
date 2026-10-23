@@ -1,16 +1,16 @@
-// Module ID: 16247
-// Function ID: 16248
+// Module ID: 16280
+// Function ID: 16281
 // Name: QuestCustomAppStoreOverlayUtils
-// Dependencies: [9579, 9583, 14058, 2]
+// Dependencies: [9602, 9606, 14082, 2]
 // Exports: canOpenCustomAppStoreOverlayFromCta, prefetchCustomAppStoreOverlayContent
 
-// Module 16247 (QuestCustomAppStoreOverlayUtils)
-import apexExperiment from "apexExperiment" /* 9579 */;
-import AppStoreOverlayContent from "AppStoreOverlayContent" /* 14058 */;
+// Module 16280 (QuestCustomAppStoreOverlayUtils)
+import apexExperiment from "apexExperiment" /* 9602 */;
+import AppStoreOverlayContent from "AppStoreOverlayContent" /* 14082 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const QuestPlatformUtils = tmp(9583);
+const QuestPlatformUtils = tmp(9606);
 function fetchCustomAppStoreOverlayContent(cta) {
   let resolved;
   const CustomAppStoreOverlayExperiment = apexExperiment.CustomAppStoreOverlayExperiment;

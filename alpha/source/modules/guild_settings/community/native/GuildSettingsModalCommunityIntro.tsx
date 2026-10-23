@@ -1,24 +1,24 @@
-// Module ID: 19082
-// Function ID: 19083
+// Module ID: 19126
+// Function ID: 19127
 // Name: GuildSettingsModalCommunityIntro
-// Dependencies: [19, 17, 4843, 4901, 8982, 1087, 21, 4969, 587, 10128, 1128, 5220, 9938, 5672, 558, 576, 1505, 504, 8981, 19083, 19087, 5648, 5655, 2067, 5230, 5578, 2]
+// Dependencies: [19, 17, 4843, 4901, 9005, 1087, 21, 4969, 587, 10150, 1128, 5232, 9960, 5684, 558, 576, 1505, 504, 9004, 19127, 19131, 5660, 5667, 2067, 5242, 5590, 2]
 
-// Module 19082 (GuildSettingsModalCommunityIntro)
+// Module 19126 (GuildSettingsModalCommunityIntro)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import ToastUtils from "ToastUtils" /* 5648 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 5672 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8981 */;
-import LightbulbIcon2 from "LightbulbIcon" /* 9938 */;
-import AnalyticsIcon2 from "AnalyticsIcon" /* 10128 */;
-import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 19087 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import ToastUtils from "ToastUtils" /* 5660 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 5684 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9004 */;
+import LightbulbIcon2 from "LightbulbIcon" /* 9960 */;
+import AnalyticsIcon2 from "AnalyticsIcon" /* 10150 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 19131 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8982 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9005 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;

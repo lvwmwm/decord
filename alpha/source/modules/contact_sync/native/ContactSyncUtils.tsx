@@ -1,10 +1,10 @@
-// Module ID: 13519
-// Function ID: 13520
+// Module ID: 13542
+// Function ID: 13543
 // Name: ContactSyncUtils
-// Dependencies: [5, 17, 6485, 13518, 13517, 1087, 1385, 6661, 1275, 584, 13520, 4797, 1257, 558, 576, 504, 1405, 2067, 5646, 6657, 2]
+// Dependencies: [5, 17, 6498, 13541, 13540, 1087, 1385, 6674, 1275, 584, 13543, 4797, 1257, 558, 576, 504, 1405, 2067, 5658, 6670, 2]
 // Exports: adminDeleteContactSync, bulkAddFriends, checkContactPermissions, getContacts, getImageForContactId, getOpenLearnMoreUrl, getStoredContacts, handleOpenLearnMoreLink, isContactSyncAvailable, isContactSyncEnabled, transitionToAddFriendsLandingPage, uploadContacts
 
-// Module 13519 (ContactSyncUtils)
+// Module 13542 (ContactSyncUtils)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
@@ -13,14 +13,14 @@ import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
 import UserSettings from "UserSettings" /* 4797 */;
-import LinkingDefault from "Linking" /* 5646 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6657 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6661 */;
-import ContactSyncManager from "ContactSyncManager" /* 13520 */;
+import LinkingDefault from "Linking" /* 5658 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6670 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6674 */;
+import ContactSyncManager from "ContactSyncManager" /* 13543 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6485 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 13518 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13517 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6498 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 13541 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 13540 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

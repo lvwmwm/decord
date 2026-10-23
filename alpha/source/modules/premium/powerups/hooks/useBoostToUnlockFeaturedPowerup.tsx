@@ -1,16 +1,16 @@
-// Module ID: 13363
-// Function ID: 13364
+// Module ID: 13386
+// Function ID: 13387
 // Name: useBoostToUnlockFeaturedPowerup
-// Dependencies: [32, 19, 4843, 5167, 5168, 1087, 5171, 558, 576, 504, 8357, 2]
+// Dependencies: [32, 19, 4843, 5179, 5180, 1087, 5183, 558, 576, 504, 8369, 2]
 
-// Module 13363 (useBoostToUnlockFeaturedPowerup)
+// Module 13386 (useBoostToUnlockFeaturedPowerup)
 import Constants from "Constants" /* 1087 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5168 */;
-import Powerups from "Powerups" /* 5171 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5180 */;
+import Powerups from "Powerups" /* 5183 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5167 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5179 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBoostTo
   }
   const tmpResult = require("get initialized");
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  const available = unlockedPowerups(8357)(arg0).available;
+  const available = unlockedPowerups(8369)(arg0).available;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     class E {
       constructor() {

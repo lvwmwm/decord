@@ -1,15 +1,15 @@
-// Module ID: 16566
-// Function ID: 16567
+// Module ID: 16613
+// Function ID: 16614
 // Name: SettingsAppearanceMessagesHeaderItem
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 1128, 5220, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 1128, 5232, 2]
 
-// Module 16566 (SettingsAppearanceMessagesHeaderItem)
+// Module 16613 (SettingsAppearanceMessagesHeaderItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5220 */;
+import Text_Text from "Text/Text" /* 5232 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

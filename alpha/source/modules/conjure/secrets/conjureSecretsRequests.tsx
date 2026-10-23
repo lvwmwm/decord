@@ -1,11 +1,11 @@
-// Module ID: 12432
-// Function ID: 12433
+// Module ID: 12451
+// Function ID: 12452
 // Name: conjureSecretsRequests
-// Dependencies: [5, 10770, 2]
+// Dependencies: [5, 10792, 2]
 // Exports: submitProjectSecrets
 
-// Module 12432 (conjureSecretsRequests)
-import conjureWorkerFetch from "conjureWorkerFetch" /* 10770 */;
+// Module 12451 (conjureSecretsRequests)
+import conjureWorkerFetch from "conjureWorkerFetch" /* 10792 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

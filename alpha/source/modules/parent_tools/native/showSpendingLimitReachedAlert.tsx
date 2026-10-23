@@ -1,14 +1,14 @@
-// Module ID: 10434
-// Function ID: 10435
+// Module ID: 10456
+// Function ID: 10457
 // Name: showSpendingLimitReachedAlert
-// Dependencies: [6359, 4792, 8110, 5895, 1128, 7675, 7396, 2]
+// Dependencies: [6372, 4792, 8123, 5907, 1128, 7688, 7409, 2]
 // Exports: isSpendingLimitError, showSpendingLimitReachedAlert
 
-// Module 10434 (showSpendingLimitReachedAlert)
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5895 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6359 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7396 */;
-import LayerActionCreators from "LayerActionCreators" /* 7675 */;
+// Module 10456 (showSpendingLimitReachedAlert)
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5907 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6372 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7409 */;
+import LayerActionCreators from "LayerActionCreators" /* 7688 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/parent_tools/native/showSpendingLimitReachedAlert.tsx");
@@ -28,7 +28,7 @@ export const showSpendingLimitReachedAlert = function showSpendingLimitReachedAl
   let intl3;
   let intl4;
   let obj4;
-  let obj = activeLinkUserIds(8110);
+  let obj = activeLinkUserIds(8123);
   activeLinkUserIds = obj.getActiveLinkUserIds();
   let obj2 = { title: intl.string(activeLinkUserIds(1128).t.QJKKrT), body: intl2.string(activeLinkUserIds(1128).t["73Islf"]), isDismissable: true };
   const show = actions_AlertActionCreatorsDefault.show;

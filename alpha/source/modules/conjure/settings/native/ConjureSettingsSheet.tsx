@@ -1,18 +1,18 @@
-// Module ID: 11754
-// Function ID: 11755
+// Module ID: 11774
+// Function ID: 11775
 // Name: ConjureSettingsSheet
-// Dependencies: [5, 32, 19, 17, 10675, 10689, 6758, 21, 3830, 4969, 587, 558, 576, 5579, 504, 11755, 11771, 11795, 1128, 7278, 7233, 5963, 11797, 11800, 11802, 5220, 6865, 5230, 7283, 8876, 11804, 9122, 2]
+// Dependencies: [5, 32, 19, 17, 10697, 10711, 6771, 21, 3830, 4969, 587, 558, 576, 5591, 504, 11775, 11791, 11814, 1128, 7291, 7246, 5975, 11816, 11819, 11821, 5232, 6878, 5242, 7296, 8899, 11823, 9145, 2]
 
-// Module 11754 (ConjureSettingsSheet)
+// Module 11774 (ConjureSettingsSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10675 */;
-import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 10689 */;
-import ConjureProjectStore_mod from "ConjureProjectStore" /* 6758 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10697 */;
+import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 10711 */;
+import ConjureProjectStore_mod from "ConjureProjectStore" /* 6771 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -72,7 +72,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSetti
   } else {
     first = cResult[0];
   }
-  closure_15(ref(5579)(first).insets.bottom);
+  closure_15(ref(5591)(first).insets.bottom);
   const tmp5 = ref;
   ref = react.useRef(null);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -233,7 +233,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSetti
       }
     }
   }
-  const tmp5Result = tmp5(11755);
+  const tmp5Result = tmp5(11775);
   if (stateFromStores != null) {
     class N {
       constructor() {
@@ -773,7 +773,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
     intl = tabs(_undefined[18]).intl;
     return obj;
   }), items);
-  const tmp7 = tabs(8876);
+  const tmp7 = tabs(8899);
   obj = {
     items: memo,
     pageWidth: tmp2,
@@ -798,10 +798,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
   const tmp12 = View;
   if (tabs.length > 3) {
     const obj3 = { state: segmentedControlState };
-    tmp11Result = tmp11(tmp5(11804).Tabs, obj3);
+    tmp11Result = tmp11(tmp5(11823).Tabs, obj3);
   } else {
     const obj4 = { state: segmentedControlState };
-    tmp11Result = tmp11(tmp5(9122).SegmentedControl, obj4);
+    tmp11Result = tmp11(tmp5(9145).SegmentedControl, obj4);
   }
   return closure_12(tmp12, obj2);
 });

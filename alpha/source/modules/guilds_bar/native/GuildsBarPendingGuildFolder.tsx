@@ -1,18 +1,18 @@
-// Module ID: 17675
-// Function ID: 17676
+// Module ID: 17719
+// Function ID: 17720
 // Name: GuildsBarPendingGuildFolder
-// Dependencies: [19, 4995, 1087, 21, 558, 576, 17662, 12675, 504, 17655, 5038, 5198, 6815, 1128, 17661, 11963, 2]
+// Dependencies: [19, 5000, 1087, 21, 558, 576, 17706, 12694, 504, 17699, 5050, 5210, 6828, 1128, 17705, 11982, 2]
 
-// Module 17675 (GuildsBarPendingGuildFolder)
+// Module 17719 (GuildsBarPendingGuildFolder)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
-import HapticUtils from "HapticUtils" /* 5198 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6815 */;
-import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 12675 */;
-import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 17655 */;
-import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 17662 */;
+import HapticUtils from "HapticUtils" /* 5210 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6828 */;
+import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 12694 */;
+import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 17699 */;
+import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 17706 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5000 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -198,7 +198,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let onAccessibilityAction;
   id = id.id;
   ({ expanded, childNodes } = id);
-  let obj = id(17662);
+  let obj = id(17706);
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: false });
   importDefault = usePendingFolderGuildIdsDefault();
   let obj2 = id(504);
@@ -232,7 +232,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }, items1);
   ({ accessibilityActions, onAccessibilityAction } = memo);
   const items2 = [id];
-  const obj3 = id(5038);
+  const obj3 = id(5050);
   const sharedValue = obj3.useSharedValue("" + id);
   const memo1 = react.useMemo(() => {
     let obj = {
@@ -251,9 +251,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp = id;
   if (expanded) {
     const obj5 = { folderId: id, totalItems: childNodes.length };
-    tmp8Result = tmp8(tmp(17661).GuildsBarGuildFolderBG, obj5);
+    tmp8Result = tmp8(tmp(17705).GuildsBarGuildFolderBG, obj5);
   }
-  return <tmp9 id={"" + id} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} selected={stateFromStores} unread={false} circle={false} styles={guildsBarAnimatedWrapperStyles} label={intl.string(id(1128).t["scsU+l"])} sharedId={sharedValue} cutouts="IconComponent" overState="a" preventClipping="xs" config={memo1} externalChildren={tmp8Result}>{"text-feedback-critical"}</tmp9>;
+  return <tmp9 id={"" + id} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} selected={stateFromStores} unread={false} circle={false} styles={guildsBarAnimatedWrapperStyles} label={intl.string(id(1128).t["scsU+l"])} sharedId={sharedValue} cutouts="IconComponent" overState="a" preventClipping="enable" config={memo1} externalChildren={tmp8Result}>{"badge-primary-text"}</tmp9>;
 }));
 let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarPendingGuildFolder.tsx");
 

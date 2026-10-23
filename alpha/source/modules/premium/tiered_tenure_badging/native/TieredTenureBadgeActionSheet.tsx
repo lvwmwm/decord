@@ -1,20 +1,20 @@
-// Module ID: 11056
-// Function ID: 11057
+// Module ID: 11079
+// Function ID: 11080
 // Name: TieredTenureBadgeActionSheet
-// Dependencies: [19, 17, 1392, 1394, 1087, 21, 4969, 587, 558, 576, 11057, 7697, 11082, 5655, 5220, 1128, 11083, 504, 1991, 1275, 9337, 1633, 7475, 5196, 8648, 9893, 10155, 5255, 5251, 2]
+// Dependencies: [19, 17, 1392, 1394, 1087, 21, 4969, 587, 558, 576, 11080, 7710, 11105, 5667, 5232, 1128, 11106, 504, 1991, 1275, 9360, 1633, 7488, 5208, 8666, 9915, 10177, 5267, 5263, 2]
 
-// Module 11056 (TieredTenureBadgeActionSheet)
+// Module 11079 (TieredTenureBadgeActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import FastImageDefault from "FastImage" /* 5655 */;
-import openUserSettings from "openUserSettings" /* 7475 */;
-import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7697 */;
-import showUserProfileActionSheet from "showUserProfileActionSheet" /* 8648 */;
-import useMobileTenureBadgeImages from "useMobileTenureBadgeImages" /* 11057 */;
-import useTenureBadgeRequirementString from "useTenureBadgeRequirementString" /* 11082 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import FastImageDefault from "FastImage" /* 5667 */;
+import openUserSettings from "openUserSettings" /* 7488 */;
+import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7710 */;
+import showUserProfileActionSheet from "showUserProfileActionSheet" /* 8666 */;
+import useMobileTenureBadgeImages from "useMobileTenureBadgeImages" /* 11080 */;
+import useTenureBadgeRequirementString from "useTenureBadgeRequirementString" /* 11105 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
@@ -140,7 +140,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tiered
                     let tmp43 = isUsersBadge && null != premiumSince;
                     if (tmp43) {
                       const obj4 = { style: tmp4.badgePremiumSince, variant: "text-xs/normal", color: "text-muted", children: formatToPlainString(Hu4jfi, obj5) };
-                      const Text = tmp(5220).Text;
+                      const Text = tmp(5232).Text;
                       const intl2 = tmp(1128).intl;
                       formatToPlainString = intl2.formatToPlainString;
                       const _Date = Date;
@@ -221,7 +221,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tiered
       } else {
         tmp31 = cResult[18];
       }
-      Text1 = tmp(5220).Text;
+      Text1 = tmp(5232).Text;
       badgeName = tmp4.badgeName;
       const intl = tmp(1128).intl;
       stringResult = intl.string(tieredTenureBadgeData.nameUnformatted);
@@ -300,7 +300,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tiered
     const obj3 = { resizeMode: "contain", source: small };
     items1 = [authStore(FastImageDefault, obj3), , , ];
     const obj4 = { style: tmp.badgeName, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.string(tieredTenureBadgeData.nameUnformatted) };
-    const Text = tmp2(5220).Text;
+    const Text = tmp2(5232).Text;
     intl = tmp2(1128).intl;
     items1[1] = authStore(Text, obj4);
     const obj5 = { style: tmp.badgeRequirement, variant: "text-xs/normal", color: "mobile-text-heading-primary", children: tmp7 };
@@ -311,7 +311,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tiered
     }
     if (isUsersBadge) {
       const obj6 = { style: tmp.badgePremiumSince, variant: "text-xs/normal", color: "text-muted", children: formatToPlainString(Hu4jfi, obj7) };
-      const Text2 = tmp2(5220).Text;
+      const Text2 = tmp2(5232).Text;
       const intl2 = tmp2(1128).intl;
       formatToPlainString = intl2.formatToPlainString;
       const _Date = Date;

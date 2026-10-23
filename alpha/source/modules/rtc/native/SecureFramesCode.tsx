@@ -1,9 +1,9 @@
-// Module ID: 9186
-// Function ID: 9187
+// Module ID: 9209
+// Function ID: 9210
 // Name: SecureFramesCode
-// Dependencies: [19, 17, 1098, 21, 4969, 587, 558, 576, 5220, 2]
+// Dependencies: [19, 17, 1098, 21, 4969, 587, 558, 576, 5232, 2]
 
-// Module 9186 (SecureFramesCode)
+// Module 9209 (SecureFramesCode)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
@@ -26,7 +26,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const Text_Text = tmp(5220);
+const Text_Text = tmp(5232);
 let react = react_mod;
 ({ ActivityIndicator: c3, View: closure_4 } = react_native);
 const Fonts = Constants.Fonts;

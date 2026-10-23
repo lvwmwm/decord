@@ -1,17 +1,17 @@
-// Module ID: 18944
-// Function ID: 18945
+// Module ID: 18988
+// Function ID: 18989
 // Name: TriggerFields
-// Dependencies: [19, 21, 558, 576, 18928, 5220, 1128, 18945, 18946, 18950, 18954, 2]
+// Dependencies: [19, 21, 558, 576, 18972, 5232, 1128, 18989, 18990, 18994, 18998, 2]
 
-// Module 18944 (TriggerFields)
+// Module 18988 (TriggerFields)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 18928 */;
-import MentionSpamTriggerFieldsDefault from "MentionSpamTriggerFields" /* 18945 */;
-import DefaultKeywordListTriggerFieldsDefault from "DefaultKeywordListTriggerFields" /* 18946 */;
-import ApplicationTriggerFieldsDefault from "ApplicationTriggerFields" /* 18950 */;
-import KeywordFilterTriggerFieldsDefault from "KeywordFilterTriggerFields" /* 18954 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 18972 */;
+import MentionSpamTriggerFieldsDefault from "MentionSpamTriggerFields" /* 18989 */;
+import DefaultKeywordListTriggerFieldsDefault from "DefaultKeywordListTriggerFields" /* 18990 */;
+import ApplicationTriggerFieldsDefault from "ApplicationTriggerFields" /* 18994 */;
+import KeywordFilterTriggerFieldsDefault from "KeywordFilterTriggerFields" /* 18998 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -30,7 +30,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TriggerField
     let first;
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const Text = tmp(5220).Text;
+      const Text = tmp(5232).Text;
       const intl = tmp(1128).intl;
       const tmp24 = <Text variant="text-md/normal" color="text-default">{intl.string(intl2.t["1YgPj/"])}</Text>;
       cResult[0] = tmp24;
@@ -119,7 +119,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TriggerField
   onValidityChange = onValidityChange.onValidityChange;
   const obj = AutomodRuleUtils;
   if (obj.isRuleMLSpamFilter(rule)) {
-    const Text = tmp(5220).Text;
+    const Text = tmp(5232).Text;
     const intl = tmp(1128).intl;
     tmp3 = <Text variant="text-md/normal" color="text-default">{intl.string(intl2.t["1YgPj/"])}</Text>;
   } else {

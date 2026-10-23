@@ -1,17 +1,17 @@
-// Module ID: 17756
-// Function ID: 17757
+// Module ID: 17800
+// Function ID: 17801
 // Name: YouBarICYMIButton
-// Dependencies: [19, 16357, 21, 4969, 587, 558, 576, 17757, 14244, 5137, 1128, 17758, 2]
+// Dependencies: [19, 16407, 21, 4969, 587, 558, 576, 17801, 14268, 5149, 1128, 17802, 2]
 
-// Module 17756 (YouBarICYMIButton)
+// Module 17800 (YouBarICYMIButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import RootNavigationRef from "RootNavigationRef" /* 5137 */;
-import FlashIcon2 from "FlashIcon" /* 14244 */;
-import YouBarConstants from "YouBarConstants" /* 16357 */;
-import useICYMITabBadgeDefault from "useICYMITabBadge" /* 17757 */;
+import RootNavigationRef from "RootNavigationRef" /* 5149 */;
+import FlashIcon2 from "FlashIcon" /* 14268 */;
+import YouBarConstants from "YouBarConstants" /* 16407 */;
+import useICYMITabBadgeDefault from "useICYMITabBadge" /* 17801 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -19,7 +19,7 @@ import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp5;
-const YouBarButtonDefault = tmp5(17758);
+const YouBarButtonDefault = tmp5(17802);
 const YOU_BAR_BUTTON_ICON_SIZE = YouBarConstants.YOU_BAR_BUTTON_ICON_SIZE;
 const jsx = Fragment.jsx;
 let obj = { icon: { width: YOU_BAR_BUTTON_ICON_SIZE, height: YOU_BAR_BUTTON_ICON_SIZE }, badge: obj2 };

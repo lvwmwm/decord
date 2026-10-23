@@ -1,22 +1,22 @@
-// Module ID: 14276
-// Function ID: 14277
+// Module ID: 14300
+// Function ID: 14301
 // Name: UserProfileVoiceSettings
-// Dependencies: [19, 17, 5992, 2014, 4901, 5700, 1087, 1098, 21, 4969, 558, 576, 8659, 504, 5982, 9191, 5837, 11579, 1128, 9149, 11602, 7288, 14277, 13385, 1267, 14279, 11283, 6997, 5220, 13480, 14130, 8926, 5196, 9176, 9172, 2]
+// Dependencies: [19, 17, 6004, 2014, 4901, 5712, 1087, 1098, 21, 4969, 558, 576, 8677, 504, 5994, 9214, 5849, 11599, 1128, 9172, 11622, 7301, 14301, 13408, 1267, 14303, 11306, 7010, 5232, 13503, 14154, 8949, 5208, 9199, 9195, 2]
 
-// Module 14276 (UserProfileVoiceSettings)
+// Module 14300 (UserProfileVoiceSettings)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants2 from "Constants" /* 1098 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5837 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9176 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13480 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5849 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9199 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13503 */;
 import react from "react" /* 19 */;
-import SoundboardStore from "SoundboardStore" /* 5992 */;
+import SoundboardStore from "SoundboardStore" /* 6004 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5700 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5712 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -470,7 +470,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Curren
   channel = channel.channel;
   const style = channel.style;
   const tmp4 = closure_13();
-  const obj2 = channel(8659);
+  const obj2 = channel(8677);
   const trackUserProfileAction = obj2.useUserProfileAnalyticsContext().trackUserProfileAction;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [MediaEngineStore];
@@ -670,8 +670,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Curren
           }
         }
       }
-      const obj3 = { children: closure_11(tmp(7288).UserProfileFormRow, obj4, "mute") };
-      const UserProfileCardRows = tmp(7288).UserProfileCardRows;
+      const obj3 = { children: closure_11(tmp(7301).UserProfileFormRow, obj4, "mute") };
+      const UserProfileCardRows = tmp(7301).UserProfileCardRows;
       obj4 = { label: tmp16, icon: tmp19, onPress: tmp20 };
       cResult[13] = tmp16;
       cResult[14] = tmp19;
@@ -697,7 +697,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Curren
   channel = channel.channel;
   ({ user, style } = channel);
   let tmp = closure_13();
-  let obj = channel(8659);
+  let obj = channel(8677);
   const trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   const items = [MediaEngineStore];
   const obj2 = channel(504);
@@ -719,10 +719,10 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Curren
       let stringResult;
       const obj4 = { style: items2, title: intl.string(channel(1128).t.NiTd0e), titleStyle: tmp.cardTitle, children: closure_11(UserProfileCardRows, obj6) };
       items2 = [tmp.card, style];
-      const tmp6Result = tmp6(7288);
+      const tmp6Result = tmp6(7301);
       intl = tmp2(1128).intl;
-      UserProfileCardRows = tmp2(7288).UserProfileCardRows;
-      const UserProfileFormRow = tmp2(7288).UserProfileFormRow;
+      UserProfileCardRows = tmp2(7301).UserProfileCardRows;
+      const UserProfileFormRow = tmp2(7301).UserProfileFormRow;
       const intl2 = tmp2(1128).intl;
       const string = intl2.string;
       const t = tmp2(1128).t;
@@ -741,9 +741,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Curren
             }
       };
       if (stateFromStores) {
-        MicrophoneIcon = tmp2(9149).MicrophoneSlashIcon;
+        MicrophoneIcon = tmp2(9172).MicrophoneSlashIcon;
       } else {
-        MicrophoneIcon = tmp2(11602).MicrophoneIcon;
+        MicrophoneIcon = tmp2(11622).MicrophoneIcon;
       }
       obj6 = { children: closure_11(UserProfileFormRow, obj5, "mute") };
       tmp9Result = tmp9(tmp6Result, obj4);

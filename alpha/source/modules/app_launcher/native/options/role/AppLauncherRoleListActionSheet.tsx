@@ -1,20 +1,20 @@
-// Module ID: 12143
-// Function ID: 12144
+// Module ID: 12162
+// Function ID: 12163
 // Name: AppLauncherRoleListActionSheet
-// Dependencies: [32, 109, 19, 7210, 4876, 4875, 1087, 21, 558, 576, 8966, 12144, 504, 7211, 5220, 8546, 6888, 6812, 5196, 12111, 12113, 2]
+// Dependencies: [32, 109, 19, 7223, 4876, 4875, 1087, 21, 558, 576, 8989, 12163, 504, 7224, 5232, 8558, 6901, 6825, 5208, 12130, 12132, 2]
 
-// Module 12143 (AppLauncherRoleListActionSheet)
+// Module 12162 (AppLauncherRoleListActionSheet)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import GuildRoleRecord from "GuildRoleRecord" /* 4876 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6812 */;
-import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 7211 */;
-import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 12144 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6825 */;
+import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 7224 */;
+import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 12163 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7210 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7223 */;
 import GuildRoleStore from "GuildRoleStore" /* 4875 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -26,7 +26,7 @@ let _require;
 let closure_12;
 let map1;
 let tmp;
-const ShieldUserIcon2 = tmp(8966);
+const ShieldUserIcon2 = tmp(8989);
 let closure_4 = ["guildRole", "guildId"];
 let react = react_mod;
 const isEveryoneRole = GuildRoleRecord.isEveryoneRole;
@@ -232,7 +232,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleRow(guil
         }
       }
       const obj4 = { label: tmp21, icon: tmp23, trailing: tmp26 };
-      const TableRow = tmp(6888).TableRow;
+      const TableRow = tmp(6901).TableRow;
       const merged = Object.assign(tmp6);
       cResult[20] = tmp5.id;
       cResult[21] = tmp6;
@@ -258,7 +258,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleRow(guil
           }
         }
         const obj5 = { variant: "text-sm/normal", color: "text-muted", children: items2 };
-        const Text = tmp(5220).Text;
+        const Text = tmp(5232).Text;
         items2 = [closure_12(require("GroupIcon").GroupIcon, { size: "xxs", color: "text-muted" }), " ", stateFromStores];
         tmp28 = closure_13(Text, obj5);
       }
@@ -303,16 +303,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleRow(guil
     const obj = GuildRoleMemberActionCreatorsAll;
     const memberCounts = obj.fetchMemberCounts(guildId);
   }, items1);
-  const obj2 = { label: closure_12(guildRole(5220).Text, obj3), icon: closure_12(closure_15, { role: guildRole }), trailing: tmp8 };
-  const TableRow = guildRole(6888).TableRow;
+  const obj2 = { label: closure_12(guildRole(5232).Text, obj3), icon: closure_12(closure_15, { role: guildRole }), trailing: tmp8 };
+  const TableRow = guildRole(6901).TableRow;
   tmp8 = null;
   obj3 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: guildRole.name };
   if (!tmp5) {
     tmp8 = null;
     if (null != stateFromStores) {
       const obj4 = { variant: "text-sm/normal", color: "text-muted", children: items2 };
-      const Text = tmp2(5220).Text;
-      items2 = [closure_12(tmp2(8546).GroupIcon, { size: "xxs", color: "text-muted" }), " ", stateFromStores];
+      const Text = tmp2(5232).Text;
+      items2 = [closure_12(tmp2(8558).GroupIcon, { size: "xxs", color: "text-muted" }), " ", stateFromStores];
       tmp8 = closure_13(Text, obj4);
     }
   }

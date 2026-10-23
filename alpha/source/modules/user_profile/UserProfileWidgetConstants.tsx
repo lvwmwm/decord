@@ -1,12 +1,12 @@
-// Module ID: 7691
-// Function ID: 7692
+// Module ID: 7704
+// Function ID: 7705
 // Name: UserProfileWidgetConstants
-// Dependencies: [2045, 7689, 1128, 2]
+// Dependencies: [2045, 7702, 1128, 2]
 // Exports: widgetSupportsComment, widgetSupportsTags
 
-// Module 7691 (UserProfileWidgetConstants)
+// Module 7704 (UserProfileWidgetConstants)
 import intl2 from "intl" /* 1128 */;
-import WidgetType from "WidgetType" /* 7689 */;
+import WidgetType from "WidgetType" /* 7702 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
 import size from "module_2" /* 2 */;
 

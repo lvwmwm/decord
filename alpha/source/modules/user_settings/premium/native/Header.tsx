@@ -1,16 +1,16 @@
-// Module ID: 14726
-// Function ID: 14727
+// Module ID: 14750
+// Function ID: 14751
 // Name: Header
-// Dependencies: [19, 17, 21, 4969, 558, 576, 5191, 1128, 4976, 14727, 14728, 5655, 5220, 2]
+// Dependencies: [19, 17, 21, 4969, 558, 576, 5203, 1128, 4976, 14751, 14752, 5667, 5232, 2]
 
-// Module 14726 (Header)
+// Module 14750 (Header)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
 import shared from "shared" /* 4976 */;
-import useThemeDefault from "useTheme" /* 5191 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import FastImageDefault from "FastImage" /* 5655 */;
+import useThemeDefault from "useTheme" /* 5203 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import FastImageDefault from "FastImage" /* 5667 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -49,9 +49,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header(style
     }
     const tmpResult = shared;
     if (tmpResult.isThemeDark(tmp6)) {
-      tmp5Result = tmp5(14727);
+      tmp5Result = tmp5(14751);
     } else {
-      tmp5Result = tmp5(14728);
+      tmp5Result = tmp5(14752);
     }
     if (cResult[4] !== tmp5Result) {
       const obj2 = { accessible: true, accessibilityLabel: tmp9, accessibilityRole: "header", source: tmp5Result };
@@ -122,13 +122,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header(style
   const tmp5 = hasOwnProperty;
   const tmp6 = View;
   if (obj3.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(14727);
+    tmp2Result = tmp2(14751);
   } else {
-    tmp2Result = tmp2(14728);
+    tmp2Result = tmp2(14752);
   }
   items1 = [React3(tmp8, obj2), ];
   const obj4 = { style: tmp.headerText, variant: "text-md/medium", color: "mobile-text-heading-primary", children: intl2.string(intl3.t.SD5MJW) };
-  const Text = tmp9(5220).Text;
+  const Text = tmp9(5232).Text;
   intl2 = tmp9(1128).intl;
   items1[1] = React3(Text, obj4);
   return tmp5(tmp6, obj);

@@ -1,14 +1,14 @@
-// Module ID: 15995
-// Function ID: 15996
+// Module ID: 16028
+// Function ID: 16029
 // Name: TwoFASetupSuccess
-// Dependencies: [5, 32, 19, 17, 21, 4969, 587, 558, 576, 6662, 1128, 15984, 7027, 5655, 15996, 5220, 1202, 5230, 15985, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4969, 587, 558, 576, 6675, 1128, 16017, 7040, 5667, 16029, 5232, 1202, 5242, 16018, 2]
 
-// Module 15995 (TwoFASetupSuccess)
+// Module 16028 (TwoFASetupSuccess)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 5655 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 7027 */;
+import FastImageDefault from "FastImage" /* 5667 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 7040 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -28,10 +28,10 @@ let size;
 let tmp;
 const intl5 = tmp(1128);
 const native = tmp(1202);
-const Text_Text = tmp(5220);
-const components_Button_Button = tmp(5230);
-const TwoFASetupModal = tmp(15985);
-const AssetRegistry = tmp(15996);
+const Text_Text = tmp(5232);
+const components_Button_Button = tmp(5242);
+const TwoFASetupModal = tmp(16018);
+const AssetRegistry = tmp(16029);
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;

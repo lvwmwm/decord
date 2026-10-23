@@ -1,19 +1,19 @@
-// Module ID: 19207
-// Function ID: 19208
+// Module ID: 19251
+// Function ID: 19252
 // Name: GuildRoleSubscriptionBenefitPreview
-// Dependencies: [19, 17, 16478, 21, 4969, 558, 576, 16513, 1202, 11520, 5220, 4915, 16506, 5590, 8488, 1128, 2]
+// Dependencies: [19, 17, 16525, 21, 4969, 558, 576, 16560, 1202, 11540, 5232, 4915, 16553, 5602, 8500, 1128, 2]
 
-// Module 19207 (GuildRoleSubscriptionBenefitPreview)
+// Module 19251 (GuildRoleSubscriptionBenefitPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4915 */;
-import useChannelNameDefault from "useChannelName" /* 5590 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8488 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11520 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16478 */;
-import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 16506 */;
-import EmojiIconDefault from "EmojiIcon" /* 16513 */;
+import useChannelNameDefault from "useChannelName" /* 5602 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8500 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11540 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16525 */;
+import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 16553 */;
+import EmojiIconDefault from "EmojiIcon" /* 16560 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -24,7 +24,7 @@ let hasOwnProperty;
 let metroRequire;
 let tmp;
 const native = tmp(1202);
-const Text_Text = tmp(5220);
+const Text_Text = tmp(5232);
 const View = react_native.View;
 const constants = GuildRoleSubscriptionsConstants.GuildRoleSubscriptionBenefitTypes;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -279,7 +279,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: "[" + intl.string(intl2.t.bz1PZX) + "]" };
-      const Text = tmp(5220).Text;
+      const Text = tmp(5232).Text;
       intl = tmp(1128).intl;
       const _HermesInternal = HermesInternal;
       const tmp26 = hasOwnProperty(Text, obj3);
@@ -368,7 +368,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   }
   if (null == channelWithTemplateFallback) {
     const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: "[" + intl.string(intl2.t.bz1PZX) + "]" };
-    const Text = tmp2(5220).Text;
+    const Text = tmp2(5232).Text;
     intl = tmp2(1128).intl;
     const _HermesInternal = HermesInternal;
     tmp9 = hasOwnProperty(Text, obj2);

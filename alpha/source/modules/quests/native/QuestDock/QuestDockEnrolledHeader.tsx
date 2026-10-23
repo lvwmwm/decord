@@ -1,20 +1,20 @@
-// Module ID: 16447
-// Function ID: 16448
+// Module ID: 16494
+// Function ID: 16495
 // Name: QuestDockEnrolledHeader
-// Dependencies: [32, 19, 17, 16354, 21, 587, 4969, 558, 576, 16382, 9546, 14091, 6698, 11032, 16392, 5220, 2]
+// Dependencies: [32, 19, 17, 16404, 21, 587, 4969, 558, 576, 16432, 9569, 14115, 6711, 11055, 16442, 5232, 2]
 
-// Module 16447 (QuestDockEnrolledHeader)
+// Module 16494 (QuestDockEnrolledHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import QuestTypes from "QuestTypes" /* 6698 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9546 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11032 */;
-import QuestCopyHooks from "QuestCopyHooks" /* 14091 */;
-import QuestDockConstants from "QuestDockConstants" /* 16354 */;
-import QuestDockCreativeContext from "QuestDockCreativeContext" /* 16382 */;
-import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 16392 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import QuestTypes from "QuestTypes" /* 6711 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9569 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11055 */;
+import QuestCopyHooks from "QuestCopyHooks" /* 14115 */;
+import QuestDockConstants from "QuestDockConstants" /* 16404 */;
+import QuestDockCreativeContext from "QuestDockCreativeContext" /* 16432 */;
+import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 16442 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -121,7 +121,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         let tmp30 = null;
         if (tmp15 <= tmp16) {
           const obj9 = { variant: tmp14, color: "text-muted", lineClamp: 1, children: questBarSubtitle };
-          tmp30 = hasOwnProperty(tmp(5220).Text, obj9);
+          tmp30 = hasOwnProperty(tmp(5232).Text, obj9);
         }
         cResult[11] = tmp15 <= tmp16;
         cResult[12] = questBarSubtitle;

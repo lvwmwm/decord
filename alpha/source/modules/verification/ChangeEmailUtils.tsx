@@ -1,12 +1,12 @@
-// Module ID: 6974
-// Function ID: 6975
+// Module ID: 6987
+// Function ID: 6988
 // Name: ChangeEmailUtils
-// Dependencies: [6968, 1128, 2]
+// Dependencies: [6981, 1128, 2]
 // Exports: getChangeEmailReasonDisplayText
 
-// Module 6974 (ChangeEmailUtils)
+// Module 6987 (ChangeEmailUtils)
 import intl2 from "intl" /* 1128 */;
-import VerificationConstants from "VerificationConstants" /* 6968 */;
+import VerificationConstants from "VerificationConstants" /* 6981 */;
 import size from "module_2" /* 2 */;
 
 const ChangeEmailReasons = VerificationConstants.ChangeEmailReasons;

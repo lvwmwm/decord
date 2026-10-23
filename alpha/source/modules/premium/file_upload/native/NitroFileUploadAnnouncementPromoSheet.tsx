@@ -1,9 +1,9 @@
-// Module ID: 18332
-// Function ID: 18333
+// Module ID: 18376
+// Function ID: 18377
 // Name: NitroFileUploadAnnouncementPromoSheet
-// Dependencies: [19, 17, 4818, 21, 4969, 587, 558, 576, 5249, 18333, 1128, 2638, 5230, 10828, 2]
+// Dependencies: [19, 17, 4818, 21, 4969, 587, 558, 576, 5261, 18377, 1128, 2638, 5242, 10851, 2]
 
-// Module 18332 (NitroFileUploadAnnouncementPromoSheet)
+// Module 18376 (NitroFileUploadAnnouncementPromoSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroFileU
   } else {
     tmp6 = cResult[3];
   }
-  const tmpResult = tmp(5249);
+  const tmpResult = tmp(5261);
   const unmountEffect = tmpResult.useUnmountEffect(tmp6);
   if (cResult[4] !== tmp5) {
     class I {
@@ -85,7 +85,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroFileU
         closure_2(ContentDismissActionType.USER_DISMISS);
       }
     }
-    const tmp10 = jsx(tmp(18333).FileUploadSpotIllustration, { accessible: false, resizeMode: "contain" });
+    const tmp10 = jsx(tmp(18377).FileUploadSpotIllustration, { accessible: false, resizeMode: "contain" });
     cResult[6] = tmp10;
     tmp9 = tmp10;
   } else {
@@ -154,8 +154,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroFileU
       }
     }
     cResult[12] = tmp8;
-    cResult[13] = jsx(tmp(5230).Button, { grow: true, size: "lg", variant: "primary", text: tmp19, onPress: tmp8 });
-    const tmp22 = jsx(tmp(5230).Button, { grow: true, size: "lg", variant: "primary", text: tmp19, onPress: tmp8 });
+    cResult[13] = jsx(tmp(5242).Button, { grow: true, size: "lg", variant: "primary", text: tmp19, onPress: tmp8 });
+    const tmp22 = jsx(tmp(5242).Button, { grow: true, size: "lg", variant: "primary", text: tmp19, onPress: tmp8 });
   } else {
     class I {
       constructor() {
@@ -173,8 +173,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroFileU
   cResult[14] = tmp8;
   cResult[15] = tmp11;
   cResult[16] = tmp21;
-  cResult[17] = jsx(tmp(10828).PromoSheet, { illustration: tmp11, title: tmp14, description: tmp15, onDismiss: tmp8, actions: tmp21 });
-  jsx(tmp(10828).PromoSheet, { illustration: tmp11, title: tmp14, description: tmp15, onDismiss: tmp8, actions: tmp21 });
+  cResult[17] = jsx(tmp(10851).PromoSheet, { illustration: tmp11, title: tmp14, description: tmp15, onDismiss: tmp8, actions: tmp21 });
+  jsx(tmp(10851).PromoSheet, { illustration: tmp11, title: tmp14, description: tmp15, onDismiss: tmp8, actions: tmp21 });
 }) : (function NitroFileUploadAnnouncementPromoSheet(markAsDismissed) {
   let intl3;
   let ref;

@@ -1,17 +1,17 @@
-// Module ID: 14183
-// Function ID: 14184
+// Module ID: 14207
+// Function ID: 14208
 // Name: MediaModalSpoilerOverlay
-// Dependencies: [32, 19, 17, 21, 4969, 587, 1384, 558, 576, 5238, 14166, 5572, 8538, 5220, 1128, 5038, 2]
+// Dependencies: [32, 19, 17, 21, 4969, 587, 1384, 558, 576, 5250, 14190, 5584, 8550, 5232, 1128, 5050, 2]
 
-// Module 14183 (MediaModalSpoilerOverlay)
+// Module 14207 (MediaModalSpoilerOverlay)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5038 */;
-import useToken from "useToken" /* 5238 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5572 */;
-import ImageWarningIcon from "ImageWarningIcon" /* 8538 */;
-import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 14166 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5050 */;
+import useToken from "useToken" /* 5250 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5584 */;
+import ImageWarningIcon from "ImageWarningIcon" /* 8550 */;
+import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 14190 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -118,14 +118,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const obj6 = { style: tmp4.obscureContentContainer, children: items1 };
           items1 = [metroRequire(ImageWarningIcon.ImageWarningIcon, { size: "lg", color: "white" }), ];
           const obj7 = { accessibilityRole: "text", variant: "heading-md/medium", color: "text-overlay-light", children: intl2.string(intl3.t.SpxcUR) };
-          const Text2 = tmp(5220).Text;
+          const Text2 = tmp(5232).Text;
           intl2 = tmp(1128).intl;
           items1[1] = metroRequire(Text2, obj7);
           tmp19 = metroImportDefault(hasOwnProperty, obj6);
         } else {
           const obj8 = { style: tmp4.spoilerOverlayBackground, children: metroRequire(Text, obj9) };
           obj9 = { accessibilityRole: "text", variant: "heading-md/medium", color: "text-overlay-light", children: str2.toUpperCase() };
-          Text = tmp(5220).Text;
+          Text = tmp(5232).Text;
           const intl = tmp(1128).intl;
           str2 = intl.string(intl3.t["F+x38C"]);
           tmp19 = metroRequire(hasOwnProperty, obj8);
@@ -171,7 +171,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     let str;
     const obj3 = { style: items, children: items1 };
     items = [style, React3.absoluteFill, tmp7];
-    const View = tmp4(5038).View;
+    const View = tmp4(5050).View;
     const tmp10 = React3;
     const tmp4Result = VisualEffectViewDefault;
     if (source.obscure) {
@@ -188,7 +188,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       obj6.style = tmp.obscureContentContainer;
       const items2 = [metroRequire(ImageWarningIcon.ImageWarningIcon, { size: "lg", color: "white" }), ];
       const obj7 = { accessibilityRole: "text", variant: "heading-md/medium", color: "text-overlay-light", children: intl2.string(intl3.t.SpxcUR) };
-      const Text2 = tmp2(5220).Text;
+      const Text2 = tmp2(5232).Text;
       intl2 = tmp2(1128).intl;
       items2[1] = metroRequire(Text2, obj7);
       obj6.children = items2;
@@ -196,7 +196,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     } else {
       obj6.style = tmp.spoilerOverlayBackground;
       const obj8 = { accessibilityRole: "text", variant: "heading-md/medium", color: "text-overlay-light", children: str2.toUpperCase() };
-      const Text = tmp2(5220).Text;
+      const Text = tmp2(5232).Text;
       const intl = tmp2(1128).intl;
       str2 = intl.string(intl3.t["F+x38C"]);
       obj6.children = metroRequire(Text, obj8);

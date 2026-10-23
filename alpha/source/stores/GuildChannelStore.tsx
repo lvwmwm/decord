@@ -1,7 +1,7 @@
 // Module ID: 4899
 // Function ID: 4900
 // Name: GuildChannelStore
-// Dependencies: [4873, 4824, 4900, 4825, 502, 4821, 4881, 4843, 4901, 4911, 1392, 1087, 4846, 12, 5590, 1099, 4906, 504, 584, 2]
+// Dependencies: [4873, 4824, 4900, 4825, 502, 4821, 4881, 4843, 4901, 4911, 1392, 1087, 4846, 12, 5602, 1099, 4906, 504, 584, 2]
 
 // Module 4899 (GuildChannelStore)
 import get_initializedDefault from "get initialized" /* 504 */;

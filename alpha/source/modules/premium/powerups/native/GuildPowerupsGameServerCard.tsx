@@ -1,19 +1,19 @@
-// Module ID: 13433
-// Function ID: 13434
+// Module ID: 13456
+// Function ID: 13457
 // Name: GuildPowerupsGameServerCard
-// Dependencies: [19, 17, 4970, 8358, 21, 4969, 587, 558, 576, 504, 13434, 13435, 13425, 5107, 13430, 2]
+// Dependencies: [19, 17, 4970, 8370, 21, 4969, 587, 558, 576, 504, 13457, 13458, 13448, 5119, 13453, 2]
 
-// Module 13433 (GuildPowerupsGameServerCard)
+// Module 13456 (GuildPowerupsGameServerCard)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 13425 */;
-import GuildPowerupsPerkCardDefault from "GuildPowerupsPerkCard" /* 13430 */;
-import useGameServerPowerupStatusDefault from "useGameServerPowerupStatus" /* 13434 */;
-import useGameServerPerkDefault from "useGameServerPerk" /* 13435 */;
+import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 13448 */;
+import GuildPowerupsPerkCardDefault from "GuildPowerupsPerkCard" /* 13453 */;
+import useGameServerPowerupStatusDefault from "useGameServerPowerupStatus" /* 13457 */;
+import useGameServerPerkDefault from "useGameServerPerk" /* 13458 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
-import GameServerStore from "GameServerStore" /* 8358 */;
+import GameServerStore from "GameServerStore" /* 8370 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -85,7 +85,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
             return useReducedMotion.useReducedMotion;
           }
         }
-        const tmp20 = jsx(guildId(5107).GameServerHostingRive, { stateMachine: "SM_Auto", dataBinding: obj3 });
+        const tmp20 = jsx(guildId(5119).GameServerHostingRive, { stateMachine: "SM_Auto", dataBinding: obj3 });
         cResult[5] = stateFromStores1;
         cResult[6] = tmp20;
         tmp18 = tmp20;

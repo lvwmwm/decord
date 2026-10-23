@@ -1,16 +1,16 @@
-// Module ID: 17440
-// Function ID: 17441
+// Module ID: 17484
+// Function ID: 17485
 // Name: MessagesItemEmptyState
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5137, 1128, 5220, 5230, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5149, 1128, 5232, 5242, 2]
 
-// Module 17440 (MessagesItemEmptyState)
+// Module 17484 (MessagesItemEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
-import RootNavigationRef from "RootNavigationRef" /* 5137 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import components_Button_Button from "components/Button/Button" /* 5230 */;
+import RootNavigationRef from "RootNavigationRef" /* 5149 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import components_Button_Button from "components/Button/Button" /* 5242 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -98,7 +98,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { text: intl3.string(intl4.t.zIJnA6), onPress: first, size: "lg" };
-    const Button = tmp(5230).Button;
+    const Button = tmp(5242).Button;
     intl3 = tmp(1128).intl;
     const tmp18 = React3(Button, obj4);
     cResult[7] = tmp18;

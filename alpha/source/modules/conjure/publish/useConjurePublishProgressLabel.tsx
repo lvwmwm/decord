@@ -1,13 +1,13 @@
-// Module ID: 11832
-// Function ID: 11833
+// Module ID: 11851
+// Function ID: 11852
 // Name: useConjurePublishProgressLabel
-// Dependencies: [32, 19, 10691, 3830, 558, 576, 504, 1128, 11833, 2]
+// Dependencies: [32, 19, 10713, 3830, 558, 576, 504, 1128, 11852, 2]
 
-// Module 11832 (useConjurePublishProgressLabel)
+// Module 11851 (useConjurePublishProgressLabel)
 import _modDef3830 from "module_3830" /* 3830 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10691 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10713 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -129,7 +129,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     const obj2 = { action: intl2.string(obj[stateFromStores.stage]), detail: tmpResult2.formatElapsed(tmp10 - stateFromStores.stageStartedAt) };
     const prop = stateFromStores(3830)["ndkR+x"];
     intl2 = tmp(1128).intl;
-    tmpResult2 = tmp(11833);
+    tmpResult2 = tmp(11852);
     cResult[7] = tmp10;
     cResult[8] = stateFromStores.stage;
     cResult[9] = stateFromStores.stageStartedAt;
@@ -172,7 +172,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     const obj2 = { action: intl2.string(obj[stateFromStores.stage]), detail: tmpResult.formatElapsed(first - stateFromStores.stageStartedAt) };
     const prop = stateFromStores(3830)["ndkR+x"];
     intl2 = tmp(1128).intl;
-    tmpResult = tmp(11833);
+    tmpResult = tmp(11852);
     formatToPlainStringResult = formatToPlainString(prop, obj2);
   }
   return formatToPlainStringResult;

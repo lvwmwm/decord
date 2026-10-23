@@ -1,15 +1,15 @@
-// Module ID: 13143
-// Function ID: 13144
+// Module ID: 13166
+// Function ID: 13167
 // Name: GuildDirectoryTemplates
-// Dependencies: [19, 17, 13125, 13130, 21, 4969, 558, 576, 1202, 13144, 13152, 1505, 1633, 1128, 5220, 6972, 7015, 13129, 2]
+// Dependencies: [19, 17, 13148, 13153, 21, 4969, 558, 576, 1202, 13167, 13175, 1505, 1633, 1128, 5232, 6985, 7028, 13152, 2]
 
-// Module 13143 (GuildDirectoryTemplates)
+// Module 13166 (GuildDirectoryTemplates)
 import native from "native" /* 1202 */;
-import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 13130 */;
-import GuildDirectoryTemplatesIcons from "GuildDirectoryTemplatesIcons" /* 13144 */;
+import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 13153 */;
+import GuildDirectoryTemplatesIcons from "GuildDirectoryTemplatesIcons" /* 13167 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildDirectoryConstants from "GuildDirectoryConstants" /* 13125 */;
+import GuildDirectoryConstants from "GuildDirectoryConstants" /* 13148 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -63,7 +63,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildTemplat
       }
     }
     const obj2 = { Icon: tmp3, message: guildTemplate.label, onPress: tmp4 };
-    const tmp8 = closure_9(onGuildTemplatePress(13152), obj2);
+    const tmp8 = closure_9(onGuildTemplatePress(13175), obj2);
     cResult[5] = guildTemplate.label;
     cResult[6] = tmp3;
     cResult[7] = tmp4;
@@ -91,7 +91,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildTemplat
       return onGuildTemplatePress(guildTemplate);
     }
   };
-  return closure_9(onGuildTemplatePress(13152), obj);
+  return closure_9(onGuildTemplatePress(13175), obj);
 });
 let closure_12 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;

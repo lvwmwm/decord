@@ -1,23 +1,23 @@
-// Module ID: 12342
-// Function ID: 12343
+// Module ID: 12361
+// Function ID: 12362
 // Name: ConjureSubagentMark
-// Dependencies: [32, 12343, 587, 12347, 12351, 12355, 12359, 12363, 12367, 12371, 12375, 12379, 12383, 12387, 2]
+// Dependencies: [32, 12362, 587, 12366, 12370, 12374, 12378, 12382, 12386, 12390, 12394, 12398, 12402, 12406, 2]
 // Exports: familiarMark, subagentIllocons
 
-// Module 12342 (ConjureSubagentMark)
+// Module 12361 (ConjureSubagentMark)
 import nativeDefault from "native" /* 587 */;
-import SnailIllocon from "SnailIllocon" /* 12343 */;
-import GoatIllocon from "GoatIllocon" /* 12347 */;
-import FrogIllocon from "FrogIllocon" /* 12351 */;
-import BunnyIllocon from "BunnyIllocon" /* 12355 */;
-import CatIllocon from "CatIllocon" /* 12359 */;
-import CaterpillarIllocon from "CaterpillarIllocon" /* 12363 */;
-import ButterflyIllocon from "ButterflyIllocon" /* 12367 */;
-import DogIllocon from "DogIllocon" /* 12371 */;
-import SpiderIllocon from "SpiderIllocon" /* 12375 */;
-import BeeIllocon from "BeeIllocon" /* 12379 */;
-import BotIllocon from "BotIllocon" /* 12383 */;
-import ConjureSubagentMarks from "ConjureSubagentMarks" /* 12387 */;
+import SnailIllocon from "SnailIllocon" /* 12362 */;
+import GoatIllocon from "GoatIllocon" /* 12366 */;
+import FrogIllocon from "FrogIllocon" /* 12370 */;
+import BunnyIllocon from "BunnyIllocon" /* 12374 */;
+import CatIllocon from "CatIllocon" /* 12378 */;
+import CaterpillarIllocon from "CaterpillarIllocon" /* 12382 */;
+import ButterflyIllocon from "ButterflyIllocon" /* 12386 */;
+import DogIllocon from "DogIllocon" /* 12390 */;
+import SpiderIllocon from "SpiderIllocon" /* 12394 */;
+import BeeIllocon from "BeeIllocon" /* 12398 */;
+import BotIllocon from "BotIllocon" /* 12402 */;
+import ConjureSubagentMarks from "ConjureSubagentMarks" /* 12406 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

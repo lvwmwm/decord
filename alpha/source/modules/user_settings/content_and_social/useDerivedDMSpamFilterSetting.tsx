@@ -1,16 +1,16 @@
-// Module ID: 16069
-// Function ID: 16070
+// Module ID: 16102
+// Function ID: 16103
 // Name: useDerivedDMSpamFilterSetting
-// Dependencies: [1392, 4799, 558, 576, 4797, 504, 5630, 5637, 1211, 2]
+// Dependencies: [1392, 4799, 558, 576, 4797, 504, 5642, 5649, 1211, 2]
 
-// Module 16069 (useDerivedDMSpamFilterSetting)
+// Module 16102 (useDerivedDMSpamFilterSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
 import UserSettings from "UserSettings" /* 4797 */;
 import DMSafetyConstants from "DMSafetyConstants" /* 4799 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5630 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5637 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5642 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5649 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -41,7 +41,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDerived
   const tmpResult = get_initialized;
   const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
   const tmpResult2 = RegionalFeatureConfigUtils;
-  const isSettingTeenByDefault = tmpResult2.useIsSettingTeenByDefault(tmp(5637).SettingsDefaultFeature.SPAM_FILTERS);
+  const isSettingTeenByDefault = tmpResult2.useIsSettingTeenByDefault(tmp(5649).SettingsDefaultFeature.SPAM_FILTERS);
   if (setting === preloaded_user_settings.DmSpamFilterV2.DEFAULT_UNSET) {
     let FRIENDS_AND_NON_FRIENDS;
     let nsfwAllowed;

@@ -1,13 +1,13 @@
-// Module ID: 12473
-// Function ID: 12474
+// Module ID: 12492
+// Function ID: 12493
 // Name: useChatInputFloatingBounce
-// Dependencies: [32, 19, 12472, 558, 576, 5038, 5192, 5233, 2]
+// Dependencies: [32, 19, 12491, 558, 576, 5050, 5204, 5245, 2]
 
-// Module 12473 (useChatInputFloatingBounce)
-import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
+// Module 12492 (useChatInputFloatingBounce)
+import ReanimatedRexport from "ReanimatedRexport" /* 5050 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChatInputConstants from "ChatInputConstants" /* 12472 */;
+import ChatInputConstants from "ChatInputConstants" /* 12491 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -107,14 +107,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChatInput
   }
   class L {
     constructor() {
-      handleExitFinished = function handleExitFinished() { /* body not rendered: F148637 */ };
+      handleExitFinished = function handleExitFinished() { /* body not rendered: F148921 */ };
       tmp = handleExitFinished;
       if (tmp) {
         tmp19 = visible;
         tmp20 = onExitComplete;
         tmp21 = visible(onExitComplete[6]);
         tmp22 = closure_6;
-        fn2 = function n() { /* body not rendered: F148638 */ };
+        fn2 = function n() { /* body not rendered: F148922 */ };
         obj1 = { runOnJS: null, setEnterFinished: null };
         tmp23 = visible;
         tmp24 = onExitComplete;
@@ -168,7 +168,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChatInput
         set = closure_3.set;
         tmp5 = visible(onExitComplete[6]);
         tmp6 = closure_1_7;
-        fn = function t() { /* body not rendered: F148639 */ };
+        fn = function t() { /* body not rendered: F148923 */ };
         obj = { runOnJS: null, handleExitFinished: null };
         tmp7 = visible;
         tmp8 = onExitComplete;

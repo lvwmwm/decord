@@ -1,9 +1,9 @@
-// Module ID: 7058
-// Function ID: 7059
+// Module ID: 7071
+// Function ID: 7072
 // Name: CreateGuildConstants
 // Dependencies: [2]
 
-// Module 7058 (CreateGuildConstants)
+// Module 7071 (CreateGuildConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/create_guild/native/CreateGuildConstants.tsx");

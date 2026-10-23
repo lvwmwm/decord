@@ -1,11 +1,11 @@
-// Module ID: 13139
-// Function ID: 13140
+// Module ID: 13162
+// Function ID: 13163
 // Name: GuildDirectoryCreateOrAddDescription
-// Dependencies: [5, 19, 17, 21, 4969, 13140, 4835, 13141, 13128, 13129, 5220, 1128, 13137, 2]
+// Dependencies: [5, 19, 17, 21, 4969, 13163, 4835, 13164, 13151, 13152, 5232, 1128, 13160, 2]
 // Exports: default
 
-// Module 13139 (GuildDirectoryCreateOrAddDescription)
-import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 13137 */;
+// Module 13162 (GuildDirectoryCreateOrAddDescription)
+import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 13160 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -120,13 +120,13 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
   obj = { children: closure_7(closure_5, obj2) };
   obj2 = { style: tmp.container, keyboardShouldPersistTaps: "handled", children: items1 };
   const obj3 = { style: tmp.header, children: items };
-  const GuildDirectoryAddModalScreen = directoryChannelId(13129).GuildDirectoryAddModalScreen;
+  const GuildDirectoryAddModalScreen = directoryChannelId(13152).GuildDirectoryAddModalScreen;
   const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(directoryChannelId(1128).t["5bQcoa"]) };
-  const Text = directoryChannelId(5220).Text;
+  const Text = directoryChannelId(5232).Text;
   intl = directoryChannelId(1128).intl;
   items = [closure_6(Text, obj4), ];
   let obj5 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.string(directoryChannelId(1128).t.Ie60Wc) };
-  const Text2 = directoryChannelId(5220).Text;
+  const Text2 = directoryChannelId(5232).Text;
   intl2 = directoryChannelId(1128).intl;
   items[1] = closure_6(Text2, obj5);
   items1 = [closure_7(obj, obj3), ];

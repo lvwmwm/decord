@@ -1,26 +1,26 @@
-// Module ID: 9140
-// Function ID: 9141
+// Module ID: 9163
+// Function ID: 9164
 // Name: FormComponents
-// Dependencies: [109, 19, 5698, 21, 4969, 587, 558, 576, 6972, 6871, 9141, 1202, 7238, 9142, 9153, 7408, 6352, 9197, 8648, 7796, 504, 9198, 9200, 5220, 1128, 5018, 9201, 14130, 5230, 7398, 14132, 6888, 2]
+// Dependencies: [109, 19, 5710, 21, 4969, 587, 558, 576, 6985, 6884, 9164, 1202, 7251, 9165, 9176, 7421, 6365, 9220, 8666, 7809, 504, 9221, 9223, 5232, 1128, 5023, 9224, 14154, 5242, 7411, 14156, 6901, 2]
 // Exports: VoicePanelFormSection
 
-// Module 9140 (FormComponents)
+// Module 9163 (FormComponents)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import UserUtils from "UserUtils" /* 5018 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import NativeViewDefault from "NativeView" /* 6871 */;
-import TableRowGroup3 from "TableRowGroup" /* 6972 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 7398 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7796 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8648 */;
-import VoiceStateIcons from "VoiceStateIcons" /* 9141 */;
-import ShieldLockIcon from "ShieldLockIcon" /* 14130 */;
+import UserUtils from "UserUtils" /* 5023 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import NativeViewDefault from "NativeView" /* 6884 */;
+import TableRowGroup3 from "TableRowGroup" /* 6985 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 7411 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7809 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8666 */;
+import VoiceStateIcons from "VoiceStateIcons" /* 9164 */;
+import ShieldLockIcon from "ShieldLockIcon" /* 14154 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5698 */;
+import PresenceStore from "PresenceStore" /* 5710 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -31,7 +31,7 @@ let metroImportDefault;
 let obj2;
 let size;
 let tmp6;
-const GuildTagDefault = tmp6(9201);
+const GuildTagDefault = tmp6(9224);
 let closure_3 = ["style"];
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
@@ -91,7 +91,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceB
         const obj3 = { style: tmp4.iconWrapper, children: metroImportDefault(VideoIcon, obj4) };
         obj4 = { state: videoIconState, size: native.IconSizes.SMALL, style: tmp4.icon };
         const tmp14 = NativeViewDefault;
-        VideoIcon = tmp(9141).VideoIcon;
+        VideoIcon = tmp(9164).VideoIcon;
         tmp11 = metroImportDefault(tmp14, obj3);
       }
       cResult[4] = tmp4.icon;
@@ -106,7 +106,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceB
     const obj5 = { style: tmp4.iconWrapper, children: metroImportDefault(MuteDeafenIcon, obj6) };
     obj6 = { state: muteDeafenIconState, size: native.IconSizes.SMALL, style: tmp4.icon };
     const tmp9 = NativeViewDefault;
-    MuteDeafenIcon = tmp(9141).MuteDeafenIcon;
+    MuteDeafenIcon = tmp(9164).MuteDeafenIcon;
     tmp6 = metroImportDefault(tmp9, obj5);
   }
   cResult[0] = muteDeafenIconState;
@@ -541,7 +541,7 @@ export const VoicePanelFormSection = function VoicePanelFormSection(style) {
       }
       if (cResult[6] !== tmp18) {
         const obj2 = {};
-        const TableRowGroup2 = tmp15(6972).TableRowGroup;
+        const TableRowGroup2 = tmp15(6985).TableRowGroup;
         const merged = Object.assign(tmp18);
         const tmp31 = metroImportDefault(TableRowGroup2, obj2);
         cResult[6] = tmp18;

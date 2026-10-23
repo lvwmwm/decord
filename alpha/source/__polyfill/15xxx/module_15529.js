@@ -1,17 +1,11 @@
 // Module ID: 15529
 // Function ID: 15530
-// Dependencies: [15510, 15530]
+// Dependencies: [15527]
 
 // Module 15529
-import _mod15510 from "module_15510" /* 15510 */;
+import _mod15527 from "module_15527" /* 15527 */;
 
-let tmp2;
-const _mod15530 = tmp2(15530);
+let closure_0 = _mod15527({}.toString);
+let closure_1 = _mod15527("".slice);
 
-export default (arg0, arg1) => {
-  let tmp4;
-  if (!_mod15510(arg0[arg1])) {
-    tmp4 = _mod15530(tmp);
-  }
-  return tmp4;
-};
+export default (arg0) => closure_1(closure_0(arg0), 8, -1);

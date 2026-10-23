@@ -1,17 +1,17 @@
-// Module ID: 15778
-// Function ID: 15779
+// Module ID: 15799
+// Function ID: 15800
 // Name: DevToolsLazy
-// Dependencies: [19, 17, 7779, 7778, 21, 5959, 15779, 2002, 558, 576, 504, 1384, 17256, 2]
+// Dependencies: [19, 17, 7792, 7791, 21, 5971, 15800, 2002, 558, 576, 504, 1384, 17300, 2]
 
-// Module 15778 (DevToolsLazy)
+// Module 15799 (DevToolsLazy)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import KeyCommands from "KeyCommands" /* 5959 */;
+import KeyCommands from "KeyCommands" /* 5971 */;
 import react from "react" /* 19 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7779 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7778 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7792 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7791 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let obj = {
   eventName: "keyCommandShowDevTools",
   discoverabilityTitle: "Open DevTools Panel",
   onKeyCommand() {
-    const promise = asyncRequire(15779, dependencyMap.paths);
+    const promise = asyncRequire(15800, dependencyMap.paths);
     promise.then((navigateToDevTools) => {
       navigateToDevTools.navigateToDevTools();
     });
@@ -114,15 +114,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsLa
   } else {
     tmp14 = cResult[7];
   }
-  const tmpResult5 = tmp(5959);
+  const tmpResult5 = tmp(5971);
   const keyCommands = tmpResult5.useKeyCommands(tmp14);
   if (stateFromStores) {
     if (stateFromStores1) {
       let tmp19;
       const _Symbol = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        cResult[8] = tmp(17256);
-        tmp(17256);
+        cResult[8] = tmp(17300);
+        tmp(17300);
         class D {
           constructor() {
             return showDevWidget.showDevWidget;
@@ -171,11 +171,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsLa
       });
     }
   });
-  const obj3 = stateFromStores(5959);
+  const obj3 = stateFromStores(5971);
   const keyCommands = obj3.useKeyCommands(stateFromStores ? items : []);
   if (stateFromStores) {
     if (stateFromStores1) {
-      return jsx(tmp(17256).default, {});
+      return jsx(tmp(17300).default, {});
     }
   }
   return null;

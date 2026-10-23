@@ -1,15 +1,15 @@
-// Module ID: 16989
-// Function ID: 16990
+// Module ID: 17033
+// Function ID: 17034
 // Name: OrbOnboardingPill
-// Dependencies: [19, 17, 21, 558, 576, 9405, 5220, 1128, 4969, 587, 2]
+// Dependencies: [19, 17, 21, 558, 576, 9428, 5232, 1128, 4969, 587, 2]
 
-// Module 16989 (OrbOnboardingPill)
+// Module 17033 (OrbOnboardingPill)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import OrbsIcon from "OrbsIcon" /* 9405 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import OrbsIcon from "OrbsIcon" /* 9428 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -39,7 +39,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbOnboardin
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "text-sm/semibold", color: "redesign-button-tertiary-text", children: intl.string(intl2.t["9JpRfC"]) };
-    const Text = tmp(5220).Text;
+    const Text = tmp(5232).Text;
     intl = tmp(1128).intl;
     const tmp10 = _false(Text, obj2);
     cResult[1] = tmp10;

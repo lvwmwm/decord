@@ -1,10 +1,10 @@
-// Module ID: 5986
-// Function ID: 5987
+// Module ID: 5998
+// Function ID: 5999
 // Name: WebViewWebmSupportTest
 // Dependencies: [1384, 4926, 2]
 // Exports: isIOSWithWebM
 
-// Module 5986 (WebViewWebmSupportTest)
+// Module 5998 (WebViewWebmSupportTest)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import size from "module_2" /* 2 */;
 

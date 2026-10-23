@@ -1,16 +1,16 @@
-// Module ID: 9957
-// Function ID: 9958
+// Module ID: 9979
+// Function ID: 9980
 // Name: MessageReactions
-// Dependencies: [109, 19, 5996, 21, 558, 576, 504, 7238, 7263, 9958, 2]
+// Dependencies: [109, 19, 6008, 21, 558, 576, 504, 7251, 7276, 9980, 2]
 
-// Module 9957 (MessageReactions)
+// Module 9979 (MessageReactions)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7238 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7263 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7251 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7276 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 5996 */;
+import MessageStore from "MessageStore" /* 6008 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -221,11 +221,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRea
     }
   }
   if (arr3.length > 0) {
-    const MessageReactionsContent = tmp(9958).MessageReactionsContent;
+    const MessageReactionsContent = tmp(9980).MessageReactionsContent;
     let merged = Object.assign(tmp5);
     tmp21 = <MessageReactionsContent channelId={tmp4} messageId={tmp7} emoji={tmp6} reactions={arr3} isSelectedBurst={undefined !== tmp8 && tmp8} />;
   } else {
-    tmp21 = jsx(tmp(9958).MessageReactionsEmpty, {});
+    tmp21 = jsx(tmp(9980).MessageReactionsEmpty, {});
   }
   cResult[10] = tmp4;
   cResult[11] = tmp5;
@@ -281,11 +281,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRea
   const AnalyticsLocationProvider = useAnalyticsLocations.AnalyticsLocationProvider;
   if (items.length > 0) {
     let obj2 = { channelId, messageId, emoji, reactions: items, isSelectedBurst };
-    const MessageReactionsContent = tmp8(9958).MessageReactionsContent;
+    const MessageReactionsContent = tmp8(9980).MessageReactionsContent;
     let merged1 = Object.assign(merged);
     tmp7Result = tmp7(MessageReactionsContent, obj2);
   } else {
-    tmp7Result = tmp7(tmp8(9958).MessageReactionsEmpty, {});
+    tmp7Result = tmp7(tmp8(9980).MessageReactionsEmpty, {});
   }
   return <AnalyticsLocationProvider value={analyticsLocations}>{tmp7Result}</AnalyticsLocationProvider>;
 });

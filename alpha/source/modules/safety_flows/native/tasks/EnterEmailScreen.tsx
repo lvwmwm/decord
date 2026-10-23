@@ -1,13 +1,13 @@
-// Module ID: 19319
-// Function ID: 19320
+// Module ID: 19363
+// Function ID: 19364
 // Name: EnterEmailScreen
-// Dependencies: [32, 19, 21, 558, 576, 1505, 1128, 2832, 19311, 5963, 6993, 19320, 2]
+// Dependencies: [32, 19, 21, 558, 576, 1505, 1128, 2832, 19355, 5975, 7006, 19364, 2]
 
-// Module 19319 (EnterEmailScreen)
+// Module 19363 (EnterEmailScreen)
 import Fragment from "Fragment" /* 21 */;
 import _modDef2832 from "module_2832" /* 2832 */;
-import types from "types" /* 19311 */;
-import SafetyFlowTaskScreenDefault from "SafetyFlowTaskScreen" /* 19320 */;
+import types from "types" /* 19355 */;
+import SafetyFlowTaskScreenDefault from "SafetyFlowTaskScreen" /* 19364 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -52,7 +52,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnterEmail
     tmp13 = cResult[3];
   }
   if (cResult[4] !== first) {
-    const Stack = tmp(5963).Stack;
+    const Stack = tmp(5975).Stack;
     const tmp16 = <Stack>{null}</Stack>;
     cResult[4] = first;
     cResult[5] = tmp16;

@@ -1,27 +1,27 @@
-// Module ID: 10707
-// Function ID: 10708
+// Module ID: 10729
+// Function ID: 10730
 // Name: createProxyTicket
-// Dependencies: [5, 502, 1087, 1297, 5609, 2]
+// Dependencies: [5, 502, 1087, 1297, 5621, 2]
 // Exports: createProxyTicket, prefetchProxyTicket, rememberProxyTicket
 
-// Module 10707 (createProxyTicket)
+// Module 10729 (createProxyTicket)
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
-let c5, c6, set, surface;
+let c6, c7, set, surface;
 
 let obj = function _createProxyTicket() {
   obj = _asyncToGenerator(async (arg0, value, arg2) => {
     let closure_0 = arg0;
     let closure_1 = value;
     let closure_2 = arg2;
-    if (c6 === 2) {
-      c6 = 3;
+    if (c7 === 2) {
+      c7 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
@@ -31,14 +31,15 @@ let obj = function _createProxyTicket() {
         return { value: "IconComponent", done: null };
       }
     } else {
+      let c5;
       try {
-        c6 = 2;
-        if (0 === c5) {
+        c7 = 2;
+        if (0 === c6) {
           if (arg0 === 1) {
-            c6 = 3;
+            c7 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c6 = 3;
+            c7 = 3;
             const obj3 = { value, done: true };
             return obj3;
           } else {
@@ -49,32 +50,42 @@ let obj = function _createProxyTicket() {
             if (null != value) {
               const _Date = Date;
               if (value.expiresAt > Date.now()) {
-                const ticket = value.ticket;
                 c5 = 1;
-                c6 = 1;
-                const obj4 = { value: ticket.catch(() => null), done: false };
+                c6 = 2;
+                c7 = 1;
+                const obj4 = { value: value.ticket, done: false };
                 return obj4;
               }
             }
           }
+        } else if (1 === c6) {
+          c5 = 0;
         } else if (arg0 === 1) {
-          c6 = 3;
+          c7 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c6 = 3;
+          c5 = 0;
+          c7 = 3;
           const obj5 = { value, done: true };
           return obj5;
         } else if (null != value) {
-          c6 = 3;
+          c5 = 0;
+          c7 = 3;
           obj = { value, done: true };
           return obj;
+        } else {
+          c5 = 0;
         }
-        c6 = 3;
+        c7 = 3;
         const obj6 = { value: closure_132_9(closure_0, closure_1, closure_2), done: true };
         return obj6;
-      } catch (tmp16) {
-        c6 = 3;
-        throw tmp16;
+      } catch (tmp14) {
+        if (0 === c5) {
+          c7 = 3;
+          throw tmp14;
+        } else {
+          c6 = 1;
+        }
       }
     }
   });

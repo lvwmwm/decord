@@ -1,22 +1,22 @@
-// Module ID: 17023
-// Function ID: 17024
+// Module ID: 17067
+// Function ID: 17068
 // Name: DevToolsInAppNotificationTestingScreen
-// Dependencies: [19, 17, 6751, 4825, 4912, 4821, 4843, 4872, 1392, 1087, 21, 4969, 587, 5649, 13692, 13694, 6474, 11, 558, 576, 1633, 1202, 6972, 6888, 16865, 6897, 2]
+// Dependencies: [19, 17, 6764, 4825, 4912, 4821, 4843, 4872, 1392, 1087, 21, 4969, 587, 5661, 13715, 13717, 6487, 11, 558, 576, 1633, 1202, 6985, 6901, 16909, 6910, 2]
 
-// Module 17023 (DevToolsInAppNotificationTestingScreen)
+// Module 17067 (DevToolsInAppNotificationTestingScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import ChannelRecord from "ChannelRecord" /* 4825 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5649 */;
-import StickersTypes from "StickersTypes" /* 6474 */;
-import TableRowGroup2 from "TableRowGroup" /* 6972 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 13692 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 13694 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5661 */;
+import StickersTypes from "StickersTypes" /* 6487 */;
+import TableRowGroup2 from "TableRowGroup" /* 6985 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 13715 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 13717 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 6751 */;
+import StickersStore from "StickersStore" /* 6764 */;
 import MessageRecord from "MessageRecord" /* 4912 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;
@@ -607,7 +607,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsInAp
               return closure_1_14(TableRow, obj, label.label);
             })
       };
-      let TableRowGroup = tmp(6972).TableRowGroup;
+      let TableRowGroup = tmp(6985).TableRowGroup;
       const tmp20 = closure_14(TableRowGroup, obj4);
       cResult[8] = tmp20;
       tmp17 = tmp20;

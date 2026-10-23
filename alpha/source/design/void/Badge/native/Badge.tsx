@@ -1,9 +1,9 @@
-// Module ID: 15379
-// Function ID: 15380
+// Module ID: 15400
+// Function ID: 15401
 // Name: void/Badge/Badge
-// Dependencies: [19, 17, 2068, 1087, 1204, 21, 4969, 587, 1384, 558, 576, 4976, 504, 5220, 1903, 8942, 2]
+// Dependencies: [19, 17, 2068, 1087, 1204, 21, 4969, 587, 1384, 558, 576, 4976, 504, 5232, 1903, 8965, 2]
 
-// Module 15379 (void/Badge/Badge)
+// Module 15400 (void/Badge/Badge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -12,7 +12,7 @@ import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import NumberUtils from "NumberUtils" /* 1903 */;
 import shared from "shared" /* 4976 */;
-import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8942 */;
+import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8965 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
 import BadgeConstants from "BadgeConstants" /* 1204 */;
@@ -214,7 +214,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Badge(arg0
                   } else if (flag) {
                     const obj5 = { variant: "experimental/body-xs/semibold", color: "none", style: items2, lineClamp: 1, allowFontScaling: false, children: tmpResult5.humanizeValue(Math.min(value, num), stateFromStores) };
                     items2 = [tmp8.experimentalBadgeText, textStyle];
-                    const Text = tmp(5220).Text;
+                    const Text = tmp(5232).Text;
                     const _Math2 = Math;
                     tmpResult5 = NumberUtils;
                     tmp20Result = tmp20(Text, obj5);

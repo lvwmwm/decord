@@ -1,15 +1,15 @@
-// Module ID: 17233
-// Function ID: 17234
+// Module ID: 17277
+// Function ID: 17278
 // Name: NotifyFriendsOnComeOnlineSetting
-// Dependencies: [8318, 11181, 1128, 2704, 4797, 16781, 2]
+// Dependencies: [8330, 11204, 1128, 2704, 4797, 16825, 2]
 
-// Module 17233 (NotifyFriendsOnComeOnlineSetting)
+// Module 17277 (NotifyFriendsOnComeOnlineSetting)
 import intl2 from "intl" /* 1128 */;
 import _modDef2704 from "module_2704" /* 2704 */;
 import UserSettings from "UserSettings" /* 4797 */;
-import SettingsConstants from "SettingsConstants" /* 8318 */;
-import FriendOnlineNotificationUtils from "FriendOnlineNotificationUtils" /* 16781 */;
-import SettingBuilders from "SettingBuilders" /* 11181 */;
+import SettingsConstants from "SettingsConstants" /* 8330 */;
+import FriendOnlineNotificationUtils from "FriendOnlineNotificationUtils" /* 16825 */;
+import SettingBuilders from "SettingBuilders" /* 11204 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

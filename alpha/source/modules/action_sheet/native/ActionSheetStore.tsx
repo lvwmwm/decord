@@ -1,9 +1,9 @@
-// Module ID: 5197
-// Function ID: 5198
+// Module ID: 5209
+// Function ID: 5210
 // Name: ActionSheetStore
 // Dependencies: [504, 584, 2]
 
-// Module 5197 (ActionSheetStore)
+// Module 5209 (ActionSheetStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

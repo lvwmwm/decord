@@ -1,17 +1,32 @@
-// Module ID: 12897
-// Function ID: 12898
+// Module ID: 12916
+// Function ID: 12917
 // Name: CheckpointFlows
-// Dependencies: [6348, 12896, 12898, 12899, 2]
+// Dependencies: [6361, 12915, 12917, 12918, 2]
 // Exports: getAdjacentCheckpointRoute, getCheckpointFlow, getCheckpointRoutes
 
-// Module 12897 (CheckpointFlows)
-import CheckpointNavigation from "CheckpointNavigation" /* 6348 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 12896 */;
+// Module 12916 (CheckpointFlows)
+import CheckpointNavigation from "CheckpointNavigation" /* 6361 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 12915 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
+const f116161 = (item) => {
+  if (item === CheckpointNavigation.CheckpointRoute.SHARE) {
+    return false;
+  } else if (null != obj[item]) {
+    const tmp8 = null != closure_0 && obj[item](closure_0);
+    return tmp8;
+  } else {
+    let tmp6 = null == tmp5;
+    if (!tmp6) {
+      tmp6 = undefined === closure_0 || obj2[item](closure_0);
+      undefined === closure_0 || obj2[item](closure_0);
+    }
+    return tmp6;
+  }
+};
 let obj = {
   [CheckpointNavigation.CheckpointRoute.VOICE_INTRO]: (voice) => {
     obj = CheckpointStatsUtils;
@@ -51,55 +66,29 @@ export const getCheckpointRoutes = function getCheckpointRoutes(arg0, arg1) {
   let prop;
   _require = arg1;
   if (arg0 === require("CheckpointNavigation").CheckpointFlow.SHARED_DATA) {
-    prop = tmp(12898).CHECKPOINT_SHARED_DATA_FLOW;
+    prop = tmp(12917).CHECKPOINT_SHARED_DATA_FLOW;
   } else {
-    prop = tmp(12899).CHECKPOINT_NO_SHARED_DATA_FLOW;
+    prop = tmp(12918).CHECKPOINT_NO_SHARED_DATA_FLOW;
   }
-  return prop.filter((item) => {
-    if (null != obj[item]) {
-      const tmpResult = null != closure_0 && tmp(tmp6);
-      return tmpResult;
-    } else {
-      let tmp4 = null == tmp3;
-      if (!tmp4) {
-        tmp4 = undefined === closure_0 || obj2[item](closure_0);
-        undefined === closure_0 || obj2[item](closure_0);
-      }
-      return tmp4;
-    }
-  });
+  return prop.filter(f116161);
 };
 export const getAdjacentCheckpointRoute = function getAdjacentCheckpointRoute(arg0, arg1, arg2, arg3) {
   let INTRODUCTION;
   let closure_0;
   let prop;
   _require = arg3;
-  const tmp = _require;
   if (arg0 === require("CheckpointNavigation").CheckpointFlow.SHARED_DATA) {
-    prop = tmp(12898).CHECKPOINT_SHARED_DATA_FLOW;
+    prop = tmp(12917).CHECKPOINT_SHARED_DATA_FLOW;
   } else {
-    prop = tmp(12899).CHECKPOINT_NO_SHARED_DATA_FLOW;
+    prop = tmp(12918).CHECKPOINT_NO_SHARED_DATA_FLOW;
   }
-  const found = prop.filter((item) => {
-    if (null != obj[item]) {
-      const tmpResult = null != closure_0 && tmp(tmp6);
-      return tmpResult;
-    } else {
-      let tmp4 = null == tmp3;
-      if (!tmp4) {
-        tmp4 = undefined === closure_0 || obj2[item](closure_0);
-        undefined === closure_0 || obj2[item](closure_0);
-      }
-      return tmp4;
-    }
-  });
+  const found = prop.filter(f116161);
   const index = found.indexOf(arg1);
   if (-1 === index) {
-    INTRODUCTION = tmp(6348).CheckpointRoute.INTRODUCTION;
+    INTRODUCTION = tmp(6361).CheckpointRoute.INTRODUCTION;
   } else {
-    let tmp4 = arg2;
     INTRODUCTION = found[index + arg2];
-    const tmp6 = null;
+    let tmp6 = null;
     if (INTRODUCTION == null) {
       INTRODUCTION = null;
     }

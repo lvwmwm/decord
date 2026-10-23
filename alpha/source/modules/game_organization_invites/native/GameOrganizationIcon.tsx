@@ -1,14 +1,14 @@
-// Module ID: 12666
-// Function ID: 12667
+// Module ID: 12685
+// Function ID: 12686
 // Name: GameOrganizationIcon
-// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 5655, 2]
+// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 5667, 2]
 
-// Module 12666 (GameOrganizationIcon)
+// Module 12685 (GameOrganizationIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 5655 */;
+import FastImageDefault from "FastImage" /* 5667 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4969 */;

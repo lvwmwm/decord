@@ -1,24 +1,24 @@
-// Module ID: 11225
-// Function ID: 11226
+// Module ID: 11248
+// Function ID: 11249
 // Name: OptInChannelsUtils
-// Dependencies: [19, 4821, 7192, 6756, 4911, 1392, 1087, 4828, 7628, 6690, 7309, 6812, 5590, 7193, 7622, 11226, 7191, 1114, 558, 576, 4994, 4805, 504, 1128, 2049, 11, 2]
+// Dependencies: [19, 4821, 7205, 6769, 4911, 1392, 1087, 4828, 7641, 6703, 7322, 6825, 5602, 7206, 7635, 11249, 7204, 1114, 558, 576, 4999, 4805, 504, 1128, 2049, 11, 2]
 // Exports: clearRecentChannels, getActiveAgoTimestamp, getFirstRouteFor, useFilterCategoriesByQuery
 
-// Module 11225 (OptInChannelsUtils)
+// Module 11248 (OptInChannelsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef2049 from "module_2049" /* 2049 */;
-import useChannelName from "useChannelName" /* 5590 */;
-import ReadStateConstants from "ReadStateConstants" /* 6690 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6812 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7191 */;
-import ChannelListState from "ChannelListState" /* 7622 */;
-import GuildSidebarConstants from "GuildSidebarConstants" /* 7628 */;
-import RecentChannelsActionCreators from "RecentChannelsActionCreators" /* 11226 */;
+import useChannelName from "useChannelName" /* 5602 */;
+import ReadStateConstants from "ReadStateConstants" /* 6703 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6825 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7204 */;
+import ChannelListState from "ChannelListState" /* 7635 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 7641 */;
+import RecentChannelsActionCreators from "RecentChannelsActionCreators" /* 11249 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7192 */;
-import ReadStateStore from "ReadStateStore" /* 6756 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7205 */;
+import ReadStateStore from "ReadStateStore" /* 6769 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;

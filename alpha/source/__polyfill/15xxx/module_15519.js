@@ -1,47 +1,76 @@
 // Module ID: 15519
 // Function ID: 15520
-// Dependencies: [15499, 15520]
+// Dependencies: [15520, 15521, 15522, 15559, 15560, 15576, 15577]
 
 // Module 15519
-import _mod15499 from "module_15499" /* 15499 */;
 import _mod15520 from "module_15520" /* 15520 */;
+import _mod15522 from "module_15522" /* 15522 */;
+import isForced from "isForced" /* 15559 */;
 
-let tmp4;
-let tmp = _mod15499.process && _mod15499.process.versions;
-if (!tmp) {
-  tmp = _mod15499.Deno && _mod15499.Deno.version;
-  _mod15499.Deno && _mod15499.Deno.version;
-}
-let tmp3;
-if (tmp && tmp.v8) {
-  let num3;
-  const parts = str.split(".");
-  if (parts[0] <= 0) {
-    num3 = +parts[0] + parts[1];
+
+export default (dontCallGetSet, obj) => {
+  let _global;
+  let stat;
+  let target;
+  let tmp5;
+  ({ target, global: _global, stat } = dontCallGetSet);
+  const tmp3 = _mod15520;
+  if (_global) {
+    tmp5 = tmp3;
   } else {
-    num3 = 1;
+    let tmp4 = tmp3[target];
+    if (stat) {
+      if (!tmp4) {
+        tmp4 = tmp(15521)(target, {});
+      }
+      tmp5 = tmp4;
+    } else {
+      tmp5 = tmp4 && tmp(15520)[target].prototype;
+    }
   }
-  tmp3 = num3;
-  tmp4 = parts;
-}
-let match1 = !tmp3 && _mod15520;
-if (match1) {
-  const str3 = _mod15520;
-  const match = str3.match(/Edge\/(\d+)/);
-  let tmp8 = !match;
-  if (match) {
-    tmp8 = match[1] >= 74;
+  if (tmp5) {
+    for (const key10024 in obj) {
+      let tmp8;
+      let tmp22 = obj[key10024];
+      let tmp21 = key10024;
+      if (dontCallGetSet.dontCallGetSet) {
+        obj = _mod15522;
+        let iter = obj.f(tmp5, key10024);
+        let value = iter && iter.value;
+        tmp8 = value;
+      } else {
+        tmp8 = tmp5[key10024];
+      }
+      let tmp11 = require;
+      let sum = key10024;
+      let tmp13 = isForced;
+      if (!_global) {
+        let str4 = "#";
+        if (stat) {
+          str4 = ".";
+        }
+        sum = target + str4 + key10024;
+      }
+      if (!tmp13(sum, dontCallGetSet.forced)) {
+        if (undefined !== tmp8) {
+          if (typeof tmp22 === typeof tmp8) {
+            continue;
+          } else {
+            let tmp23 = tmp11(15560)(tmp22, tmp8);
+          }
+        }
+        continue;
+      }
+      let sham = dontCallGetSet.sham;
+      if (!sham) {
+        let sham2 = tmp8 && tmp8.sham;
+        sham = sham2;
+      }
+      if (sham) {
+        let tmp15 = tmp11(15576)(tmp22, "sham", true);
+      }
+      let tmp20 = tmp11(15577)(tmp5, tmp21, tmp22, dontCallGetSet);
+      continue;
+    }
   }
-  match1 = tmp8;
-  tmp4 = match;
-}
-if (match1) {
-  const str4 = _mod15520;
-  match1 = str4.match(/Chrome\/(\d+)/);
-  tmp4 = match1;
-}
-if (match1) {
-  tmp3 = +tmp4[1];
-}
-
-export default tmp3;
+};

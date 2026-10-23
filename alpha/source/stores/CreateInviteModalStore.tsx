@@ -1,18 +1,18 @@
-// Module ID: 9027
-// Function ID: 9028
+// Module ID: 9050
+// Function ID: 9051
 // Name: CreateInviteModalStore
-// Dependencies: [4821, 4843, 8842, 1087, 9028, 9030, 38, 504, 584, 2]
+// Dependencies: [4821, 4843, 8865, 1087, 9051, 9053, 38, 504, 584, 2]
 
-// Module 9027 (CreateInviteModalStore)
+// Module 9050 (CreateInviteModalStore)
 import _modDef38 from "module_38" /* 38 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9028 */;
-import DefaultInviteExpirationExperiments from "DefaultInviteExpirationExperiments" /* 9030 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9051 */;
+import DefaultInviteExpirationExperiments from "DefaultInviteExpirationExperiments" /* 9053 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import InstantInviteStore from "InstantInviteStore" /* 8842 */;
+import InstantInviteStore from "InstantInviteStore" /* 8865 */;
 import size from "module_2" /* 2 */;
 
 let c8, closure_6, closure_7, invite;

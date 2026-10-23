@@ -1,21 +1,21 @@
-// Module ID: 16457
-// Function ID: 16458
+// Module ID: 16504
+// Function ID: 16505
 // Name: QuestDockInsetHeaderBody
-// Dependencies: [19, 17, 16354, 21, 587, 4969, 558, 576, 14088, 14087, 16351, 1633, 16418, 5220, 5230, 1202, 16421, 2]
+// Dependencies: [19, 17, 16404, 21, 587, 4969, 558, 576, 14112, 14111, 16401, 1633, 16468, 5232, 5242, 1202, 16471, 2]
 
-// Module 16457 (QuestDockInsetHeaderBody)
+// Module 16504 (QuestDockInsetHeaderBody)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import QuestRewardTileDefault from "QuestRewardTile" /* 14087 */;
-import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 14088 */;
-import QuestDockHooks from "QuestDockHooks" /* 16351 */;
-import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 16418 */;
-import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 16421 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import QuestRewardTileDefault from "QuestRewardTile" /* 14111 */;
+import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 14112 */;
+import QuestDockHooks from "QuestDockHooks" /* 16401 */;
+import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 16468 */;
+import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 16471 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 16354 */;
+import QuestDockConstants from "QuestDockConstants" /* 16404 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -300,7 +300,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                           if ("primary" === str) {
                             const obj9 = { variant: "primary", grow: true, onPress: onCtaPress, loading: undefined !== ctaLoading && ctaLoading, icon: renderCtaIconResult, text: ctaText };
                             renderCtaIconResult = undefined;
-                            const Button = tmp(5230).Button;
+                            const Button = tmp(5242).Button;
                             const tmp58 = hasOwnProperty;
                             if (renderCtaIcon != null) {
                               renderCtaIconResult = renderCtaIcon();
@@ -470,7 +470,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if ("primary" === ctaButtonVariant) {
     const obj14 = { variant: "primary", grow: true, onPress: onCtaPress, loading: ctaLoading, icon: renderCtaIconResult, text: ctaText };
     renderCtaIconResult = undefined;
-    const Button = tmp2(5230).Button;
+    const Button = tmp2(5242).Button;
     if (renderCtaIcon != null) {
       renderCtaIconResult = renderCtaIcon();
     }

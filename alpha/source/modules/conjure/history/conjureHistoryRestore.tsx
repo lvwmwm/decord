@@ -1,12 +1,12 @@
-// Module ID: 12217
-// Function ID: 12218
+// Module ID: 12236
+// Function ID: 12237
 // Name: conjureHistoryRestore
-// Dependencies: [5, 12218, 12215, 1128, 3830, 2]
+// Dependencies: [5, 12237, 12234, 1128, 3830, 2]
 // Exports: rewindDataAfterVersionRestore
 
-// Module 12217 (conjureHistoryRestore)
-import conjureHistoryRequests from "conjureHistoryRequests" /* 12215 */;
-import conjureDatabaseLock from "conjureDatabaseLock" /* 12218 */;
+// Module 12236 (conjureHistoryRestore)
+import conjureHistoryRequests from "conjureHistoryRequests" /* 12234 */;
+import conjureDatabaseLock from "conjureDatabaseLock" /* 12237 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

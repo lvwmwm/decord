@@ -1,17 +1,17 @@
-// Module ID: 14525
-// Function ID: 14526
+// Module ID: 14549
+// Function ID: 14550
 // Name: InAppReportsUserPreview
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 7059, 4966, 1128, 5220, 1202, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 7072, 4966, 1128, 5232, 1202, 2]
 
-// Module 14525 (InAppReportsUserPreview)
+// Module 14549 (InAppReportsUserPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import ColorUtils from "ColorUtils" /* 4966 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7059 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7072 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -97,7 +97,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPrevie
             tmp16 = cResult[15];
           }
           if (cResult[16] !== user) {
-            const obj4 = { size: native.AvatarSizes.LARGE_48, user, guildId: "Array" };
+            const obj4 = { size: native.AvatarSizes.LARGE_48, user, guildId: "r" };
             const Avatar = tmp(1202).Avatar;
             const tmp19 = _false(Avatar, obj4);
             cResult[16] = user;
@@ -110,7 +110,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPrevie
             let tmp22 = null != user.globalName;
             if (tmp22) {
               const obj5 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: user.globalName };
-              tmp22 = _false(tmp(5220).Text, obj5);
+              tmp22 = _false(tmp(5232).Text, obj5);
             }
             cResult[18] = user.globalName;
             cResult[19] = tmp22;
@@ -235,14 +235,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPrevie
   items1 = [_false(Text, obj4), ];
   const obj5 = { style: items2, children: items3 };
   items2 = [tmp.userContainer, { borderColor: hexWithOpacityResult }];
-  const obj6 = { size: native.AvatarSizes.LARGE_48, user, guildId: "Array" };
+  const obj6 = { size: native.AvatarSizes.LARGE_48, user, guildId: "r" };
   const Avatar = tmp2(1202).Avatar;
   items3 = [_false(Avatar, obj6), ];
   let tmp8Result = null != user.globalName;
   const obj7 = { style: tmp.userProfileInfo, children: items4 };
   if (tmp8Result) {
     const obj8 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: user.globalName };
-    tmp8Result = tmp8(tmp2(5220).Text, obj8);
+    tmp8Result = tmp8(tmp2(5232).Text, obj8);
   }
   items4 = [tmp8Result, ];
   const obj9 = { color: "text-default", variant: "text-sm/normal", children: user.username };

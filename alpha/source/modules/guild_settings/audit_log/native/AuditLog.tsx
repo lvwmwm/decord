@@ -1,9 +1,9 @@
-// Module ID: 18977
-// Function ID: 18978
+// Module ID: 19021
+// Function ID: 19022
 // Name: AuditLog
-// Dependencies: [19, 17, 1207, 1406, 4911, 1392, 1087, 21, 4969, 587, 1420, 1417, 6487, 4976, 558, 576, 7242, 5220, 1384, 5023, 18965, 5018, 1202, 1128, 4835, 5590, 5980, 2049, 1388, 1105, 10387, 7212, 6890, 18969, 6893, 5196, 8648, 15800, 504, 2]
+// Dependencies: [19, 17, 1207, 1406, 4911, 1392, 1087, 21, 4969, 587, 1420, 1417, 6500, 4976, 558, 576, 7255, 5232, 1384, 5035, 19009, 5023, 1202, 1128, 4835, 5602, 5992, 2049, 1388, 1105, 10409, 7225, 6903, 19013, 6906, 5208, 8666, 15821, 504, 2]
 
-// Module 18977 (AuditLog)
+// Module 19021 (AuditLog)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,14 +12,14 @@ import native from "native" /* 1202 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 4835 */;
-import UserUtilsDefault from "UserUtils" /* 5018 */;
-import native2 from "native" /* 5023 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import PlatformsDefault from "Platforms" /* 6487 */;
-import EmojiDefault from "Emoji" /* 7212 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7242 */;
-import AppliedForumTag from "AppliedForumTag" /* 10387 */;
-import AuditLogUtilsAll from "AuditLogUtils" /* 18965 */;
+import UserUtilsDefault from "UserUtils" /* 5023 */;
+import native2 from "native" /* 5035 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
+import PlatformsDefault from "Platforms" /* 6500 */;
+import EmojiDefault from "Emoji" /* 7225 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7255 */;
+import AppliedForumTag from "AppliedForumTag" /* 10409 */;
+import AuditLogUtilsAll from "AuditLogUtils" /* 19009 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
 import UserRecord from "UserRecord" /* 1406 */;
@@ -55,8 +55,8 @@ let size;
 let size1;
 let tmp;
 let unpackModuleId;
-const Text_Text = tmp(5220);
-const showUserProfileActionSheetDefault = tmp(8648);
+const Text_Text = tmp(5232);
+const showUserProfileActionSheetDefault = tmp(8666);
 const View = react_native.View;
 ({ AuditLogTargetTypes: c10, AuditLogActionTypes: unpackModuleId, AuditLogActions: closure_12, Fonts, AuditLogChangeKeys: map1 } = Constants);
 let Fragment = Fragment_mod;
@@ -246,7 +246,7 @@ class AuditLog extends PureComponent {
                 const tmp15 = require;
                 if (obj6.isGuildRecord(target)) {
                   const obj5 = { variant: "text-md/medium", color: "text-default", children: target.name };
-                  tmp8Result = syncedClientThemes(tmp15(5220).Text, obj5, `target${tmp5.id}`);
+                  tmp8Result = syncedClientThemes(tmp15(5232).Text, obj5, `target${tmp5.id}`);
                 }
               }
             }
@@ -717,7 +717,7 @@ class AuditLog extends PureComponent {
     const obj4 = { accessible: false, style: items1, variant: str2, border: str3, onPress: onHeaderClick, children: null };
     items1 = [tmp.container, containerStyle];
     str2 = "secondary";
-    const Card = tmp10(6890).Card;
+    const Card = tmp10(6903).Card;
     if (expanded) {
       str2 = "primary";
     }
@@ -728,7 +728,7 @@ class AuditLog extends PureComponent {
     const obj5 = { style: tmp.rowContainer, children: null };
     const items2 = [, , , ];
     const obj6 = { action: log.action };
-    items2[0] = closure_14(user(18969), obj6);
+    items2[0] = closure_14(user(19013), obj6);
     const obj7 = {
       accessibilityRole: "button",
       accessibilityLabel: intl.string(tmp10(1128).t.iXAna6),
@@ -743,7 +743,7 @@ class AuditLog extends PureComponent {
       },
       children: null
     };
-    const PressableOpacity = tmp10(6893).PressableOpacity;
+    const PressableOpacity = tmp10(6906).PressableOpacity;
     intl = tmp10(1128).intl;
     username = undefined;
     const tmp16 = View;
@@ -757,7 +757,7 @@ class AuditLog extends PureComponent {
           let source;
           if (log.action !== constants2.AUTO_MODERATION_QUARANTINE_USER) {
             if (null != log.options.integration_type) {
-              const tmp18Result = user(6487);
+              const tmp18Result = user(6500);
               const value = tmp18Result.get(log.options.integration_type);
               if (null != value) {
                 const icon = value.icon;
@@ -782,12 +782,12 @@ class AuditLog extends PureComponent {
           items2[1] = closure_14(PressableOpacity, obj7);
           const obj9 = { accessibilityRole: "button", accessibilityState: obj10, onPress: onHeaderClick, style: tmp.titleContainer, disabled: !checkChangesToRenderResult, children: items3 };
           obj10 = { expanded, disabled: !checkChangesToRenderResult };
-          const PressableOpacity2 = tmp10(6893).PressableOpacity;
+          const PressableOpacity2 = tmp10(6906).PressableOpacity;
           items3 = [self.renderTitle(), tmp8];
           items2[2] = closure_15(PressableOpacity2, obj9);
           let tmp17Result = null;
           if (checkChangesToRenderResult) {
-            const obj11 = { style: items4, size: tmp10(1202).Icon.Sizes.CUSTOM, source: user(15800) };
+            const obj11 = { style: items4, size: tmp10(1202).Icon.Sizes.CUSTOM, source: user(15821) };
             items4 = [tmp.arrow, rotate90];
             const Icon = tmp10(1202).Icon;
             tmp17Result = tmp17(Icon, obj11);

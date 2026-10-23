@@ -1,12 +1,12 @@
-// Module ID: 14363
-// Function ID: 14364
+// Module ID: 14387
+// Function ID: 14388
 // Name: UserProfileGameFriendsCard
-// Dependencies: [19, 21, 4969, 558, 576, 7242, 1128, 13488, 5220, 7288, 2]
+// Dependencies: [19, 21, 4969, 558, 576, 7255, 1128, 13511, 5232, 7301, 2]
 
-// Module 14363 (UserProfileGameFriendsCard)
+// Module 14387 (UserProfileGameFriendsCard)
 import Fragment from "Fragment" /* 21 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7242 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13488 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7255 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13511 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 let dependencyMap, importDefault;
 
 let tmp5;
-const UserProfileCardDefault = tmp5(7288);
+const UserProfileCardDefault = tmp5(7301);
 let jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ card: { flexDirection: "column" } });
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileGameFriendsCard(style) {
@@ -115,7 +115,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
         tmp14 = cResult[7];
       }
       if (cResult[8] !== tmp7) {
-        const tmp18 = jsx(found(5220).Text, { variant: "text-md/normal", color: "text-default", children: tmp7 });
+        const tmp18 = jsx(found(5232).Text, { variant: "text-md/normal", color: "text-default", children: tmp7 });
         cResult[8] = tmp7;
         cResult[9] = tmp18;
         tmp16 = tmp18;

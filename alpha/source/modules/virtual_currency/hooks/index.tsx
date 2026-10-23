@@ -1,11 +1,11 @@
-// Module ID: 9426
-// Function ID: 9427
-// Dependencies: [2, 9427, 9431, 9432]
+// Module ID: 9449
+// Function ID: 9450
+// Dependencies: [2, 9450, 9454, 9455]
 
-// Module 9426
-import useFetchVirtualCurrencyBalance from "useFetchVirtualCurrencyBalance" /* 9427 */;
-import useFetchVirtualCurrencyTotalRedeemed from "useFetchVirtualCurrencyTotalRedeemed" /* 9431 */;
-import useRedeemVirtualCurrency from "useRedeemVirtualCurrency" /* 9432 */;
+// Module 9449
+import useFetchVirtualCurrencyBalance from "useFetchVirtualCurrencyBalance" /* 9450 */;
+import useFetchVirtualCurrencyTotalRedeemed from "useFetchVirtualCurrencyTotalRedeemed" /* 9454 */;
+import useRedeemVirtualCurrency from "useRedeemVirtualCurrency" /* 9455 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/virtual_currency/hooks/index.tsx");

@@ -1,26 +1,26 @@
-// Module ID: 16324
-// Function ID: 16325
+// Module ID: 16374
+// Function ID: 16375
 // Name: OrbsArcadeRewardShelf
-// Dependencies: [19, 17, 16316, 21, 587, 4969, 558, 576, 16322, 16325, 16326, 5220, 16317, 9415, 1128, 7539, 16327, 504, 16331, 683, 16332, 5244, 12881, 9382, 7290, 2]
+// Dependencies: [19, 17, 16366, 21, 587, 4969, 558, 576, 16372, 16375, 16376, 5232, 16367, 9438, 1128, 7552, 16377, 504, 16381, 683, 16382, 5256, 12900, 9405, 7303, 2]
 
-// Module 16324 (OrbsArcadeRewardShelf)
+// Module 16374 (OrbsArcadeRewardShelf)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import intl4 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import LinearGradientDefault from "LinearGradient" /* 5244 */;
-import useCountdownDefault from "useCountdown" /* 7539 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16317 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16322 */;
-import OrbsArcadeRewardPreviewDefault from "OrbsArcadeRewardPreview" /* 16325 */;
-import OrbsArcadeRewardStatusLabelDefault from "OrbsArcadeRewardStatusLabel" /* 16326 */;
-import ChestLogoSpotIllustration from "ChestLogoSpotIllustration" /* 16327 */;
-import useOrbsArcadeRewardAccentColorDefault from "useOrbsArcadeRewardAccentColor" /* 16331 */;
-import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 16332 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import LinearGradientDefault from "LinearGradient" /* 5256 */;
+import useCountdownDefault from "useCountdown" /* 7552 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16367 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16372 */;
+import OrbsArcadeRewardPreviewDefault from "OrbsArcadeRewardPreview" /* 16375 */;
+import OrbsArcadeRewardStatusLabelDefault from "OrbsArcadeRewardStatusLabel" /* 16376 */;
+import ChestLogoSpotIllustration from "ChestLogoSpotIllustration" /* 16377 */;
+import useOrbsArcadeRewardAccentColorDefault from "useOrbsArcadeRewardAccentColor" /* 16381 */;
+import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 16382 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16316 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16366 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -40,7 +40,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const NitroCoinSpotIllustration = tmp(9415);
+const NitroCoinSpotIllustration = tmp(9438);
 function formatTimeUntil(tmp3Result) {
   let days;
   let formatToPlainStringResult;
@@ -328,7 +328,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { variant: "heading-sm/semibold", color: "text-default", children: intl.string(intl4.t["/AJCN+"]) };
-      const Text = tmp(5220).Text;
+      const Text = tmp(5232).Text;
       intl = tmp(1128).intl;
       const tmp22 = metroImportAll(Text, obj4);
       cResult[8] = tmp22;
@@ -372,7 +372,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
     let tmp24 = null;
     if (null != windowEndsAt) {
       const obj7 = { variant: "text-xs/medium", color: "text-muted", children: formatToPlainString(fkzORZ, obj8) };
-      const Text2 = tmp(5220).Text;
+      const Text2 = tmp(5232).Text;
       const intl2 = tmp(1128).intl;
       formatToPlainString = intl2.formatToPlainString;
       obj8 = { duration: formatTimeUntil(tmp9) };
@@ -424,7 +424,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
   const tmp9 = metroImportAll;
   if (null != windowEndsAt) {
     const obj6 = { variant: "text-xs/medium", color: "text-muted", children: formatToPlainString(fkzORZ, obj7) };
-    const Text2 = tmp11(5220).Text;
+    const Text2 = tmp11(5232).Text;
     const intl2 = tmp11(1128).intl;
     formatToPlainString = intl2.formatToPlainString;
     obj7 = { duration: formatTimeUntil(tmp3Result) };
@@ -669,7 +669,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
           const obj5 = { children: items3 };
           const obj6 = {
             "aria-label": mapped.join(", "),
-            shape: tmp(9382).CutoutShape.Circle,
+            shape: tmp(9405).CutoutShape.Circle,
             size: 53,
             gap: 2,
             depthX: 0.3,
@@ -678,16 +678,16 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
                       return closure_1_8(closure_1_16, obj, reward.id);
                     })
           };
-          const Pile = tmp(12881).Pile;
+          const Pile = tmp(12900).Pile;
           mapped = rewards.map((name) => name.name);
           items3 = [closure_8(Pile, obj6), ];
           const obj7 = { style: tmp4.rewardShelfCopy, children: items4 };
           const obj8 = { variant: "heading-sm/semibold", color: "text-default", children: intl2.string(tmp(1128).t.ehbzo8) };
-          const Text = tmp(5220).Text;
+          const Text = tmp(5232).Text;
           intl2 = tmp(1128).intl;
           items4 = [closure_8(Text, obj8), ];
           const obj9 = { variant: "text-xs/medium", color: "text-muted", children: intl3.string(tmp(1128).t["5Gt1dt"]) };
-          const Text2 = tmp(5220).Text;
+          const Text2 = tmp(5232).Text;
           intl3 = tmp(1128).intl;
           items4[1] = closure_8(Text2, obj9);
           items3[1] = closure_9(closure_6, obj7);
@@ -709,7 +709,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
       cResult[16] = items5;
     }
   }
-  const tmpResult2 = tmp(16322);
+  const tmpResult2 = tmp(16372);
   const orbsArcadeFocusedReward = tmpResult2.getOrbsArcadeFocusedReward(rewards, stateFromStores);
   cResult[7] = stateFromStores;
   cResult[8] = rewards;
@@ -741,7 +741,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
     }
     return tmp;
   }, undefined);
-  const obj2 = game(16322);
+  const obj2 = game(16372);
   const orbsArcadeFocusedReward = obj2.getOrbsArcadeFocusedReward(rewards, stateFromStores);
   let tmp7 = orbsArcadeFocusedReward;
   if (orbsArcadeFocusedReward == null) {
@@ -828,7 +828,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
       const obj8 = { children: items5 };
       const obj9 = {
         "aria-label": mapped.join(", "),
-        shape: game(9382).CutoutShape.Circle,
+        shape: game(9405).CutoutShape.Circle,
         size: 53,
         gap: 2,
         depthX: 0.3,
@@ -837,23 +837,23 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
               return closure_1_8(closure_1_16, obj, reward.id);
             })
       };
-      const Pile = tmp2(12881).Pile;
+      const Pile = tmp2(12900).Pile;
       mapped = rewards.map((name) => name.name);
       items5 = [closure_8(Pile, obj9), ];
       const obj10 = { style: tmp.rewardShelfCopy, children: items6 };
       const obj11 = { variant: "heading-sm/semibold", color: "text-default", children: intl2.string(game(1128).t.ehbzo8) };
-      const Text = tmp2(5220).Text;
+      const Text = tmp2(5232).Text;
       intl2 = tmp2(1128).intl;
       items6 = [closure_8(Text, obj11), ];
       const obj12 = { variant: "text-xs/medium", color: "text-muted", children: intl3.string(game(1128).t["5Gt1dt"]) };
-      const Text2 = tmp2(5220).Text;
+      const Text2 = tmp2(5232).Text;
       intl3 = tmp2(1128).intl;
       items6[1] = closure_8(Text2, obj12);
       items5[1] = closure_9(closure_6, obj10);
       tmp21Result = tmp21(closure_10, obj8);
     }
     items4[1] = tmp21Result;
-    const ChevronSmallRightIcon = tmp2(7290).ChevronSmallRightIcon;
+    const ChevronSmallRightIcon = tmp2(7303).ChevronSmallRightIcon;
     const colors = tmp8(587).colors;
     const obj13 = { size: "md", color: null != enrolledAt ? colors.CONTROL_ICON_ONLY_ICON_DEFAULT : colors.ICON_MUTED };
     items4[2] = closure_8(ChevronSmallRightIcon, obj13);

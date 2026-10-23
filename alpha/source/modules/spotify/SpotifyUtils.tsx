@@ -1,20 +1,20 @@
-// Module ID: 11298
-// Function ID: 11299
+// Module ID: 11321
+// Function ID: 11322
 // Name: SpotifyUtils
-// Dependencies: [5, 2021, 11299, 6484, 8803, 1087, 1104, 6487, 11300, 11301, 2]
+// Dependencies: [5, 2021, 11322, 6497, 8826, 1087, 1104, 6500, 11323, 11324, 2]
 // Exports: ensureSpotifyPlayable, ensureSpotifyPremium, getSpotifyMetadataFromActivity, isSpotifyPlayable, isSpotifyPremium
 
-// Module 11298 (SpotifyUtils)
+// Module 11321 (SpotifyUtils)
 import Constants from "Constants" /* 1087 */;
 import DurationsDefault from "Durations" /* 1104 */;
-import PlatformsDefault from "Platforms" /* 6487 */;
-import SpotifyActionCreators from "SpotifyActionCreators" /* 11300 */;
-import UserActivityActionCreators from "UserActivityActionCreators" /* 11301 */;
+import PlatformsDefault from "Platforms" /* 6500 */;
+import SpotifyActionCreators from "SpotifyActionCreators" /* 11323 */;
+import UserActivityActionCreators from "UserActivityActionCreators" /* 11324 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import RunningGameStore from "RunningGameStore" /* 2021 */;
-import SpotifyProtocolStore from "SpotifyProtocolStore" /* 11299 */;
-import SpotifyStore from "SpotifyStore" /* 6484 */;
-import SpotifyConstants from "SpotifyConstants" /* 8803 */;
+import SpotifyProtocolStore from "SpotifyProtocolStore" /* 11322 */;
+import SpotifyStore from "SpotifyStore" /* 6497 */;
+import SpotifyConstants from "SpotifyConstants" /* 8826 */;
 import size from "module_2" /* 2 */;
 
 let TRACK, closure_3, closure_4;
@@ -157,7 +157,7 @@ export const ensureSpotifyPlayable = function ensureSpotifyPlayable() {
     if (isObservedAppRunning(obj2.get(PlatformTypes.SPOTIFY).name)) {
       if (playableComputerDevices.length > 0) {
         ({ socket, device } = playableComputerDevices[0]);
-        const obj3 = playableComputerDevices(11300);
+        const obj3 = playableComputerDevices(11323);
         obj3.setActiveDevice(socket.accountId, device.id);
         const obj4 = { socket, device };
         return Promise.resolve(obj4);

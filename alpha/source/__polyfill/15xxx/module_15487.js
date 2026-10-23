@@ -1,37 +1,54 @@
 // Module ID: 15487
 // Function ID: 15488
-// Dependencies: [15402, 15488]
-// Exports: getSupportedNumberingSystems
+// Dependencies: [15488, 15489, 15491, 1174, 15493, 15492]
+// Exports: getCanonicalLocales
 
 // Module 15487
+import emitUnicodeLanguageId from "emitUnicodeLanguageId" /* 15488 */;
+import canonicalizeUnicodeLanguageId from "canonicalizeUnicodeLanguageId" /* 15489 */;
+import likelySubtags from "likelySubtags" /* 15492 */;
+import _mod15493 from "module_15493" /* 15493 */;
+import module_1174_mod from "module_1174" /* 1174 */;
+
 const require = globalThis.__r;
-let _require;
 
+let module_1174 = module_1174_mod;
+module_1174.__exportStar(emitUnicodeLanguageId, exports);
+module_1174 = module_1174_mod;
+module_1174.__exportStar(_mod15493, exports);
+module_1174 = module_1174_mod;
+module_1174.__exportStar(likelySubtags, exports);
 
-export const getSupportedNumberingSystems = function getSupportedNumberingSystems(locale) {
-  _require = locale;
-  const numberingSystemNames = require("numberingSystemNames").numberingSystemNames;
-  return numberingSystemNames.filter((item) => {
-    function isSupportedNumberingSystem(item, arg1) {
-      let str = arg1;
-      if (undefined === arg1) {
-        str = "en";
-      }
-      try {
-        const concat = "".concat;
-        const createMemoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat;
-        const combined = "".concat(str, "-u-nu-");
-        const memoizedNumberFormat = createMemoizedNumberFormat(combined.concat(item));
-        const obj3 = memoizedNumberFormat;
-        if (memoizedNumberFormat.resolvedOptions().numberingSystem !== item) {
-          if ("123" === obj3.format(123)) {
-            return false;
-          }
-        }
-        return true;
-      } catch (err) {
-      }
+export const getCanonicalLocales = function getCanonicalLocales(items) {
+  if (undefined === items) {
+    items = [];
+  } else {
+    let arr3 = items;
+    if (typeof items === "string") {
+      const items1 = [items];
+      arr3 = items1;
     }
-    return isSupportedNumberingSystem(item, locale);
-  });
+    const items2 = [];
+    let num3 = 0;
+    items = items2;
+    if (0 < arr3.length) {
+      do {
+        let tmp = arr3[num3];
+        let emitUnicodeLocaleId = emitUnicodeLanguageId.emitUnicodeLocaleId;
+        let emitUnicodeLocaleIdResult = emitUnicodeLocaleId(canonicalizeUnicodeLanguageId.CanonicalizeUnicodeLocaleId(require("SEPARATOR").parseUnicodeLocaleId(tmp)));
+        if (items2.indexOf(emitUnicodeLocaleIdResult) < 0) {
+          let arr = items2.push(emitUnicodeLocaleIdResult);
+        }
+        num3 = num3 + 1;
+        items = items2;
+      } while (num3 < arr3.length);
+    }
+  }
+  return items;
 };
+export const isStructurallyValidLanguageTag = require("SEPARATOR").isStructurallyValidLanguageTag;
+export const isUnicodeLanguageSubtag = require("SEPARATOR").isUnicodeLanguageSubtag;
+export const isUnicodeRegionSubtag = require("SEPARATOR").isUnicodeRegionSubtag;
+export const isUnicodeScriptSubtag = require("SEPARATOR").isUnicodeScriptSubtag;
+export const parseUnicodeLanguageId = require("SEPARATOR").parseUnicodeLanguageId;
+export const parseUnicodeLocaleId = require("SEPARATOR").parseUnicodeLocaleId;

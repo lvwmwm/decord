@@ -1,65 +1,60 @@
 // Module ID: 15303
 // Function ID: 15304
-// Dependencies: [41, 42]
+// Dependencies: [15293]
 
 // Module 15303
-import _createClass from "_createClass" /* 42 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
+import _mod15293 from "module_15293" /* 15293 */;
 
-let map;
 
-class LRUCache {
-  constructor() {
-    _classCallCheck(this, LRUCache);
-    this.max = 1000;
-    this.map = new Map();
-    new Map();
-  }
-}
-const entry = {
-  key: "get",
-  value: function get(arg0) {
-    const self = this;
-    map = this.map;
-    const value = map.get(arg0);
-    let tmp2;
-    if (undefined !== value) {
-      const map2 = self.map;
-      map2.delete(arg0);
-      const map3 = self.map;
-      const result = map3.set(arg0, value);
-      tmp2 = value;
+export default (arg0, arg1) => {
+  const obj = _mod15293(arg0, null, true);
+  const tmp = _mod15293(arg1, null, true);
+  const compareResult = obj.compare(tmp);
+  if (0 === compareResult) {
+    return null;
+  } else {
+    let str5;
+    let tmp3 = tmp;
+    if (compareResult > 0) {
+      tmp3 = obj;
     }
-    return tmp2;
+    let tmp4 = obj;
+    if (compareResult > 0) {
+      tmp4 = tmp;
+    }
+    if (tmp4.prerelease.length) {
+      if (!tmp3.prerelease.length) {
+        let str;
+        if (tmp4.patch) {
+          let str2 = "patch";
+          if (!tmp3.patch) {
+            let str3 = "major";
+            if (tmp3.minor) {
+              str3 = "minor";
+            }
+            str2 = str3;
+          }
+          str = str2;
+        } else {
+          str = "major";
+        }
+        return str;
+      }
+    }
+    let str4 = "";
+    if (tmp3.prerelease.length) {
+      str4 = "pre";
+    }
+    if (obj.major !== tmp.major) {
+      str5 = `${str4}major`;
+    } else if (obj.minor !== tmp.minor) {
+      str5 = `${str4}minor`;
+    } else {
+      str5 = "prerelease";
+      if (obj.patch !== tmp.patch) {
+        str5 = `${str4}patch`;
+      }
+    }
+    return str5;
   }
 };
-const items = [
-  entry,
-  {
-    key: "delete",
-    value: function _delete(arg0) {
-      map = this.map;
-      return map.delete(arg0);
-    }
-  },
-  {
-    key: "set",
-    value: function set(arg0, arg1) {
-      const self = this;
-      if (!this.delete(arg0)) {
-        if (undefined !== arg1) {
-          if (self.map.size >= self.max) {
-            map = self.map;
-            const iter = map.keys();
-            self.delete(iter.next().value);
-          }
-          const map2 = self.map;
-          const result = map2.set(arg0, arg1);
-        }
-      }
-      return self;
-    }
-  }
-];
-
-export default _createClass(LRUCache, items);

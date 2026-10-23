@@ -1,45 +1,50 @@
-// Module ID: 15813
-// Function ID: 15814
+// Module ID: 15835
+// Function ID: 15836
 // Name: UserProfileDisplayNameStylesEditButton
-// Dependencies: [32, 19, 17, 1087, 4818, 21, 4969, 587, 558, 576, 1505, 15814, 4805, 7481, 8635, 6352, 10641, 1411, 1267, 1128, 15815, 1202, 14444, 10638, 15816, 2928, 15818, 2]
+// Dependencies: [32, 19, 17, 1087, 4818, 4994, 21, 4969, 587, 558, 576, 1505, 15836, 4805, 7494, 8653, 6365, 10663, 1411, 4997, 15837, 1267, 1128, 15840, 1202, 14468, 10660, 15841, 2928, 15843, 15844, 2]
 
-// Module 15813 (UserProfileDisplayNameStylesEditButton)
+// Module 15835 (UserProfileDisplayNameStylesEditButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1128 */;
+import intl3 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14444 */;
-import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 15815 */;
-import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 15816 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14468 */;
+import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 15840 */;
+import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 15841 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4994 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
+let c10;
+let closure_12;
 let closure_4;
 let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let obj2;
 let size;
+let unpackModuleId;
 let _slicedToArray = _slicedToArray_mod;
 ({ useCallback: closure_4, useMemo: hasOwnProperty } = react);
 const View = react_native.View;
 ({ AnalyticEvents: metroImportDefault, UserSettingsSections: metroImportAll } = Constants);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+({ HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT: c10, HexagonCampaignPerk: unpackModuleId, HexagonCampaignPerkAvailability: closure_12 } = HexagonCampaignConstants);
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
 let obj = { ggContainer: size, noneIcon: obj2 };
 size = { height: 48, width: 48, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, alignItems: "center", justifyContent: "center", paddingBottom: 4 };
 createStyles = createStyles.createStyles;
 obj2 = { tintColor: nativeDefault.colors.TEXT_SUBTLE };
-let closure_11 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileDisplayNameStylesEditButton(user) {
+let closure_14 = createStyles(obj);
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileDisplayNameStylesEditButton(user) {
   let closure_3;
   let first;
   let isTryItOut;
@@ -47,21 +52,21 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   let tmp7;
   let tmp8;
   const tmp = user;
-  let obj = user(isTryItOut[9]);
-  const cResult = obj.c(39);
+  let obj = user(isTryItOut[10]);
+  const cResult = obj.c(42);
   user = user.user;
   const guildId = user.guildId;
   isTryItOut = user.isTryItOut;
-  const tmp4 = closure_11();
+  const tmp4 = closure_14();
   _slicedToArray = tmp4;
-  let obj2 = user(isTryItOut[10]);
+  let obj2 = user(isTryItOut[11]);
   const nativeStackNavigation = obj2.useNativeStackNavigation();
-  const obj3 = user(isTryItOut[11]);
+  const obj3 = user(isTryItOut[12]);
   const isDisplayNameStylesFlywheelSettersEnabled = obj3.useIsDisplayNameStylesFlywheelSettersEnabled("UserProfileDisplayNameStylesEditButton");
   if (cResult[0] !== isDisplayNameStylesFlywheelSettersEnabled) {
     let items1;
     if (isDisplayNameStylesFlywheelSettersEnabled) {
-      const items = [tmp(tmp2[12]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_NEW_BADGE_PROFILE_PAGE];
+      const items = [tmp(tmp2[13]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_NEW_BADGE_PROFILE_PAGE];
       items1 = items;
     } else {
       items1 = [];
@@ -79,11 +84,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   } else {
     tmp8 = cResult[2];
   }
-  const tmpResult = tmp(isTryItOut[13]);
+  const tmpResult = tmp(isTryItOut[14]);
   [first, tmp11] = tmpResult.useSelectedDismissibleContent(tmp7, tmp8);
   let closure_5 = tmp11;
-  const tmpResult3 = tmp(isTryItOut[14]);
-  const guildMemberOrUserPendingDisplayNameStyles = tmpResult3.useGuildMemberOrUserPendingDisplayNameStyles(user, guildId);
+  const tmpResult5 = tmp(isTryItOut[15]);
+  const guildMemberOrUserPendingDisplayNameStyles = tmpResult5.useGuildMemberOrUserPendingDisplayNameStyles(user, guildId);
   let tryItOutDisplayNameStyles = guildMemberOrUserPendingDisplayNameStyles.pendingDisplayNameStyles;
   if (isTryItOut) {
     tryItOutDisplayNameStyles = guildMemberOrUserPendingDisplayNameStyles.tryItOutDisplayNameStyles;
@@ -94,43 +99,54 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
       if (cResult[5] === user.id) {
         tmp13 = cResult[6];
       }
-      const tmp15 = guildId(isTryItOut[15])(tmp13);
+      const tmp15 = guildId(isTryItOut[16])(tmp13);
       let closure_6 = tmp15;
       let effectId;
-      const useDisplayNameStylesEffectConfig = tmp(tmp2[16]).useDisplayNameStylesEffectConfig;
-      tmp(isTryItOut[16]);
+      const useDisplayNameStylesEffectConfig = tmp(tmp2[17]).useDisplayNameStylesEffectConfig;
+      tmp(isTryItOut[17]);
       if (tmp15 != null) {
         effectId = tmp15.effectId;
       }
       if (effectId == null) {
-        effectId = tmp(tmp2[17]).DisplayNameEffect.SOLID;
+        effectId = tmp(tmp2[18]).DisplayNameEffect.SOLID;
       }
+      const displayNameStylesEffectConfig = useDisplayNameStylesEffectConfig(effectId);
+      const tmpResult7 = tmp(isTryItOut[19]);
+      let tmp22 = tmpResult7.useHexagonCampaignPerkAvailability(constants3.DISPLAY_NAME_STYLE, "UserProfileDisplayNameStylesEditButton") === constants4.SELECTABLE && true !== isTryItOut;
+      if (tmp22) {
+        let fontId;
+        if (tmp15 != null) {
+          fontId = tmp15.fontId;
+        }
+        tmp22 = fontId !== closure_10;
+      }
+      tmp(isTryItOut[20]);
       if (cResult[7] === guildId) {
         if (cResult[8] === isTryItOut) {
           if (cResult[9] === tmp11) {
-            let tmp20;
+            let tmp27;
             let combined;
             if (cResult[10] === nativeStackNavigation) {
-              tmp20 = cResult[11];
+              tmp27 = cResult[11];
             }
             if (null != tmp15) {
-              let tmp23;
+              let tmp30;
               if (cResult[13] !== tmp15.fontId) {
-                const intl2 = tmp(tmp2[19]).intl;
-                const stringResult = intl2.string(guildId(isTryItOut[20])(tmp15.fontId));
+                const intl2 = tmp(tmp2[22]).intl;
+                const stringResult = intl2.string(guildId(isTryItOut[23])(tmp15.fontId));
                 cResult[13] = tmp15.fontId;
                 cResult[14] = stringResult;
-                tmp23 = stringResult;
+                tmp30 = stringResult;
               } else {
-                tmp23 = cResult[14];
+                tmp30 = cResult[14];
               }
               const _HermesInternal = HermesInternal;
-              combined = "" + tmp23 + " + " + tmp19.name;
+              combined = "" + tmp30 + " + " + displayNameStylesEffectConfig.name;
             } else {
               const _Symbol = Symbol;
               if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-                const intl = tmp(tmp2[19]).intl;
-                const stringResult1 = intl.string(tmp(isTryItOut[19]).t.PoWNfe);
+                const intl = tmp(tmp2[22]).intl;
+                const stringResult1 = intl.string(tmp(isTryItOut[22]).t.PoWNfe);
                 cResult[12] = stringResult1;
                 combined = stringResult1;
               } else {
@@ -141,125 +157,455 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
               if (cResult[16] === guildId) {
                 if (cResult[17] === tmp4.ggContainer) {
                   if (cResult[18] === tmp4.noneIcon) {
-                    let tmp25;
-                    let tmp26;
-                    let tmp27;
-                    let tmp30;
-                    let tmp33;
+                    let tmp32;
                     let tmp34;
-                    let tmp36;
                     if (cResult[19] === user.id) {
-                      tmp25 = cResult[20];
+                      tmp32 = cResult[20];
                     }
                     if (cResult[21] !== tmp15) {
-                      const fn2 = function k() {
-                        let effectId;
-                        let tmp3Result = null;
-                        if (null != closure_6) {
-                          let colors;
-                          const tmp3 = jsx;
-                          const tmp6 = DisplayNameStylesColorSwatchDefault;
-                          if (closure_6 != null) {
-                            colors = tmp.colors;
+                      class K {
+                        constructor() {
+                          let effectId;
+                          let tmp3Result = null;
+                          if (null != closure_6) {
+                            let colors;
+                            const tmp3 = jsx;
+                            const tmp6 = DisplayNameStylesColorSwatchDefault;
+                            if (closure_6 != null) {
+                              colors = tmp.colors;
+                            }
+                            if (colors == null) {
+                              colors = [];
+                            }
+                            const obj = { colors, effectId };
+                            effectId = undefined;
+                            if (closure_6 != null) {
+                              effectId = tmp.effectId;
+                            }
+                            tmp3Result = tmp3(tmp6, obj);
                           }
-                          if (colors == null) {
-                            colors = [];
-                          }
-                          const obj = { colors, effectId };
-                          effectId = undefined;
-                          if (closure_6 != null) {
-                            effectId = tmp.effectId;
-                          }
-                          tmp3Result = tmp3(tmp6, obj);
+                          return tmp3Result;
                         }
-                        return tmp3Result;
-                      };
+                      }
                       cResult[21] = tmp15;
-                      cResult[22] = fn2;
-                      tmp26 = fn2;
+                      cResult[22] = K;
                     } else {
-                      tmp26 = cResult[22];
+                      class K {
+                        constructor() {
+                          let effectId;
+                          let tmp3Result = null;
+                          if (null != closure_6) {
+                            let colors;
+                            const tmp3 = jsx;
+                            const tmp6 = DisplayNameStylesColorSwatchDefault;
+                            if (closure_6 != null) {
+                              colors = tmp.colors;
+                            }
+                            if (colors == null) {
+                              colors = [];
+                            }
+                            const obj = { colors, effectId };
+                            effectId = undefined;
+                            if (closure_6 != null) {
+                              effectId = tmp.effectId;
+                            }
+                            tmp3Result = tmp3(tmp6, obj);
+                          }
+                          return tmp3Result;
+                        }
+                      }
                     }
                     const _Symbol2 = Symbol;
                     if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
-                      const intl3 = tmp(tmp2[19]).intl;
-                      const stringResult2 = intl3.string(guildId(isTryItOut[25])["86GtGH"]);
-                      cResult[23] = stringResult2;
-                      tmp27 = stringResult2;
-                    } else {
-                      tmp27 = cResult[23];
-                    }
-                    const tmp29 = first === tmp(isTryItOut[12]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_NEW_BADGE_PROFILE_PAGE;
-                    if (cResult[24] !== tmp29) {
-                      const tmp32 = jsx(tmp(isTryItOut[26]).UserProfileEditFormLabelBadges, { showPremiumIcon: true, showNewBadge: tmp29 });
-                      cResult[24] = tmp29;
-                      cResult[25] = tmp32;
-                      tmp30 = tmp32;
-                    } else {
-                      tmp30 = cResult[25];
-                    }
-                    if (cResult[26] !== combined) {
-                      const obj6 = { text: combined };
-                      cResult[26] = combined;
-                      cResult[27] = obj6;
-                      tmp33 = obj6;
-                    } else {
-                      tmp33 = cResult[27];
-                    }
-                    if (cResult[28] !== tmp25) {
-                      const tmp25Result = tmp25();
-                      cResult[28] = tmp25;
-                      cResult[29] = tmp25Result;
-                      tmp34 = tmp25Result;
-                    } else {
-                      tmp34 = cResult[29];
-                    }
-                    if (cResult[30] !== tmp26) {
-                      const tmp26Result = tmp26();
-                      cResult[30] = tmp26;
-                      cResult[31] = tmp26Result;
-                      tmp36 = tmp26Result;
-                    } else {
-                      tmp36 = cResult[31];
-                    }
-                    if (cResult[32] === combined) {
-                      if (cResult[33] === tmp20) {
-                        if (cResult[34] === tmp30) {
-                          if (cResult[35] === tmp33) {
-                            if (cResult[36] === tmp34) {
-                              let tmp38;
-                              if (cResult[37] === tmp36) {
-                                tmp38 = cResult[38];
-                              }
-                              return tmp38;
+                      class K {
+                        constructor() {
+                          let effectId;
+                          let tmp3Result = null;
+                          if (null != closure_6) {
+                            let colors;
+                            const tmp3 = jsx;
+                            const tmp6 = DisplayNameStylesColorSwatchDefault;
+                            if (closure_6 != null) {
+                              colors = tmp.colors;
                             }
+                            if (colors == null) {
+                              colors = [];
+                            }
+                            const obj = { colors, effectId };
+                            effectId = undefined;
+                            if (closure_6 != null) {
+                              effectId = tmp.effectId;
+                            }
+                            tmp3Result = tmp3(tmp6, obj);
                           }
+                          return tmp3Result;
+                        }
+                      }
+                      const stringResult2 = obj9.string(guildId(isTryItOut[28])["86GtGH"]);
+                      cResult[23] = stringResult2;
+                      tmp34 = stringResult2;
+                    } else {
+                      class K {
+                        constructor() {
+                          let effectId;
+                          let tmp3Result = null;
+                          if (null != closure_6) {
+                            let colors;
+                            const tmp3 = jsx;
+                            const tmp6 = DisplayNameStylesColorSwatchDefault;
+                            if (closure_6 != null) {
+                              colors = tmp.colors;
+                            }
+                            if (colors == null) {
+                              colors = [];
+                            }
+                            const obj = { colors, effectId };
+                            effectId = undefined;
+                            if (closure_6 != null) {
+                              effectId = tmp.effectId;
+                            }
+                            tmp3Result = tmp3(tmp6, obj);
+                          }
+                          return tmp3Result;
                         }
                       }
                     }
-                    class Y {
-                      constructor() {
-                        const obj = AnalyticsUtilsDefault;
-                        obj.track(metroImportDefault.DISPLAY_NAME_STYLES_FROM_SETTINGS);
-                        const obj2 = { guildId, isTryItOut };
-                        nativeStackNavigation.navigate(metroImportAll.DISPLAY_NAME_STYLES, obj2);
-                        closure_5(ContentDismissActionType.TAKE_ACTION);
+                    const tmp36 = tmp22 && !tmp26 || first === tmp(isTryItOut[13]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_NEW_BADGE_PROFILE_PAGE;
+                    if (cResult[24] !== tmp36) {
+                      class K {
+                        constructor() {
+                          let effectId;
+                          let tmp3Result = null;
+                          if (null != closure_6) {
+                            let colors;
+                            const tmp3 = jsx;
+                            const tmp6 = DisplayNameStylesColorSwatchDefault;
+                            if (closure_6 != null) {
+                              colors = tmp.colors;
+                            }
+                            if (colors == null) {
+                              colors = [];
+                            }
+                            const obj = { colors, effectId };
+                            effectId = undefined;
+                            if (closure_6 != null) {
+                              effectId = tmp.effectId;
+                            }
+                            tmp3Result = tmp3(tmp6, obj);
+                          }
+                          return tmp3Result;
+                        }
+                      }
+                      cResult[24] = tmp36;
+                      cResult[25] = jsx(tmp(isTryItOut[29]).UserProfileEditFormLabelBadges, { showPremiumIcon: true, showNewBadge: tmp36 });
+                      const tmp38 = jsx(tmp(isTryItOut[29]).UserProfileEditFormLabelBadges, { showPremiumIcon: true, showNewBadge: tmp36 });
+                    } else {
+                      class K {
+                        constructor() {
+                          let effectId;
+                          let tmp3Result = null;
+                          if (null != closure_6) {
+                            let colors;
+                            const tmp3 = jsx;
+                            const tmp6 = DisplayNameStylesColorSwatchDefault;
+                            if (closure_6 != null) {
+                              colors = tmp.colors;
+                            }
+                            if (colors == null) {
+                              colors = [];
+                            }
+                            const obj = { colors, effectId };
+                            effectId = undefined;
+                            if (closure_6 != null) {
+                              effectId = tmp.effectId;
+                            }
+                            tmp3Result = tmp3(tmp6, obj);
+                          }
+                          return tmp3Result;
+                        }
                       }
                     }
-                    const tmp39 = jsx(tmp(isTryItOut[26]).UserProfileEditFormButton, { label: tmp27, labelTrailing: tmp30, buttonText: combined, accessibilityValue: tmp33, onPress: tmp20, leading: tmp34, trailing: tmp36 });
-                    cResult[32] = combined;
-                    cResult[33] = tmp20;
-                    cResult[34] = tmp30;
-                    cResult[35] = tmp33;
-                    cResult[36] = tmp34;
-                    cResult[37] = tmp36;
-                    cResult[38] = tmp39;
-                    tmp38 = tmp39;
+                    if (cResult[26] !== combined) {
+                      class K {
+                        constructor() {
+                          let effectId;
+                          let tmp3Result = null;
+                          if (null != closure_6) {
+                            let colors;
+                            const tmp3 = jsx;
+                            const tmp6 = DisplayNameStylesColorSwatchDefault;
+                            if (closure_6 != null) {
+                              colors = tmp.colors;
+                            }
+                            if (colors == null) {
+                              colors = [];
+                            }
+                            const obj = { colors, effectId };
+                            effectId = undefined;
+                            if (closure_6 != null) {
+                              effectId = tmp.effectId;
+                            }
+                            tmp3Result = tmp3(tmp6, obj);
+                          }
+                          return tmp3Result;
+                        }
+                      }
+                      tmp40[0] = combined;
+                      cResult[26] = combined;
+                      cResult[27] = tmp40;
+                    } else {
+                      class K {
+                        constructor() {
+                          let effectId;
+                          let tmp3Result = null;
+                          if (null != closure_6) {
+                            let colors;
+                            const tmp3 = jsx;
+                            const tmp6 = DisplayNameStylesColorSwatchDefault;
+                            if (closure_6 != null) {
+                              colors = tmp.colors;
+                            }
+                            if (colors == null) {
+                              colors = [];
+                            }
+                            const obj = { colors, effectId };
+                            effectId = undefined;
+                            if (closure_6 != null) {
+                              effectId = tmp.effectId;
+                            }
+                            tmp3Result = tmp3(tmp6, obj);
+                          }
+                          return tmp3Result;
+                        }
+                      }
+                    }
+                    if (cResult[28] !== tmp32) {
+                      class K {
+                        constructor() {
+                          let effectId;
+                          let tmp3Result = null;
+                          if (null != closure_6) {
+                            let colors;
+                            const tmp3 = jsx;
+                            const tmp6 = DisplayNameStylesColorSwatchDefault;
+                            if (closure_6 != null) {
+                              colors = tmp.colors;
+                            }
+                            if (colors == null) {
+                              colors = [];
+                            }
+                            const obj = { colors, effectId };
+                            effectId = undefined;
+                            if (closure_6 != null) {
+                              effectId = tmp.effectId;
+                            }
+                            tmp3Result = tmp3(tmp6, obj);
+                          }
+                          return tmp3Result;
+                        }
+                      }
+                      cResult[28] = tmp32;
+                      cResult[29] = tmp42;
+                    } else {
+                      class K {
+                        constructor() {
+                          let effectId;
+                          let tmp3Result = null;
+                          if (null != closure_6) {
+                            let colors;
+                            const tmp3 = jsx;
+                            const tmp6 = DisplayNameStylesColorSwatchDefault;
+                            if (closure_6 != null) {
+                              colors = tmp.colors;
+                            }
+                            if (colors == null) {
+                              colors = [];
+                            }
+                            const obj = { colors, effectId };
+                            effectId = undefined;
+                            if (closure_6 != null) {
+                              effectId = tmp.effectId;
+                            }
+                            tmp3Result = tmp3(tmp6, obj);
+                          }
+                          return tmp3Result;
+                        }
+                      }
+                    }
+                    if (cResult[30] !== tmp33) {
+                      class K {
+                        constructor() {
+                          let effectId;
+                          let tmp3Result = null;
+                          if (null != closure_6) {
+                            let colors;
+                            const tmp3 = jsx;
+                            const tmp6 = DisplayNameStylesColorSwatchDefault;
+                            if (closure_6 != null) {
+                              colors = tmp.colors;
+                            }
+                            if (colors == null) {
+                              colors = [];
+                            }
+                            const obj = { colors, effectId };
+                            effectId = undefined;
+                            if (closure_6 != null) {
+                              effectId = tmp.effectId;
+                            }
+                            tmp3Result = tmp3(tmp6, obj);
+                          }
+                          return tmp3Result;
+                        }
+                      }
+                      cResult[30] = tmp33;
+                      cResult[31] = tmp44;
+                    } else {
+                      class K {
+                        constructor() {
+                          let effectId;
+                          let tmp3Result = null;
+                          if (null != closure_6) {
+                            let colors;
+                            const tmp3 = jsx;
+                            const tmp6 = DisplayNameStylesColorSwatchDefault;
+                            if (closure_6 != null) {
+                              colors = tmp.colors;
+                            }
+                            if (colors == null) {
+                              colors = [];
+                            }
+                            const obj = { colors, effectId };
+                            effectId = undefined;
+                            if (closure_6 != null) {
+                              effectId = tmp.effectId;
+                            }
+                            tmp3Result = tmp3(tmp6, obj);
+                          }
+                          return tmp3Result;
+                        }
+                      }
+                    }
+                    if (cResult[32] !== tmp22) {
+                      let tmp46;
+                      class K {
+                        constructor() {
+                          let effectId;
+                          let tmp3Result = null;
+                          if (null != closure_6) {
+                            let colors;
+                            const tmp3 = jsx;
+                            const tmp6 = DisplayNameStylesColorSwatchDefault;
+                            if (closure_6 != null) {
+                              colors = tmp.colors;
+                            }
+                            if (colors == null) {
+                              colors = [];
+                            }
+                            const obj = { colors, effectId };
+                            effectId = undefined;
+                            if (closure_6 != null) {
+                              effectId = tmp.effectId;
+                            }
+                            tmp3Result = tmp3(tmp6, obj);
+                          }
+                          return tmp3Result;
+                        }
+                      }
+                      if (tmp22) {
+                        class K {
+                          constructor() {
+                            let effectId;
+                            let tmp3Result = null;
+                            if (null != closure_6) {
+                              let colors;
+                              const tmp3 = jsx;
+                              const tmp6 = DisplayNameStylesColorSwatchDefault;
+                              if (closure_6 != null) {
+                                colors = tmp.colors;
+                              }
+                              if (colors == null) {
+                                colors = [];
+                              }
+                              const obj = { colors, effectId };
+                              effectId = undefined;
+                              if (closure_6 != null) {
+                                effectId = tmp.effectId;
+                              }
+                              tmp3Result = tmp3(tmp6, obj);
+                            }
+                            return tmp3Result;
+                          }
+                        }
+                        tmp46 = jsx(guildId(isTryItOut[30]), {});
+                      }
+                      cResult[32] = tmp22;
+                      cResult[33] = tmp46;
+                    } else {
+                      class K {
+                        constructor() {
+                          let effectId;
+                          let tmp3Result = null;
+                          if (null != closure_6) {
+                            let colors;
+                            const tmp3 = jsx;
+                            const tmp6 = DisplayNameStylesColorSwatchDefault;
+                            if (closure_6 != null) {
+                              colors = tmp.colors;
+                            }
+                            if (colors == null) {
+                              colors = [];
+                            }
+                            const obj = { colors, effectId };
+                            effectId = undefined;
+                            if (closure_6 != null) {
+                              effectId = tmp.effectId;
+                            }
+                            tmp3Result = tmp3(tmp6, obj);
+                          }
+                          return tmp3Result;
+                        }
+                      }
+                    }
+                    if (cResult[34] === combined) {
+                      class K {
+                        constructor() {
+                          let effectId;
+                          let tmp3Result = null;
+                          if (null != closure_6) {
+                            let colors;
+                            const tmp3 = jsx;
+                            const tmp6 = DisplayNameStylesColorSwatchDefault;
+                            if (closure_6 != null) {
+                              colors = tmp.colors;
+                            }
+                            if (colors == null) {
+                              colors = [];
+                            }
+                            const obj = { colors, effectId };
+                            effectId = undefined;
+                            if (closure_6 != null) {
+                              effectId = tmp.effectId;
+                            }
+                            tmp3Result = tmp3(tmp6, obj);
+                          }
+                          return tmp3Result;
+                        }
+                      }
+                    }
+                    cResult[34] = combined;
+                    cResult[35] = tmp27;
+                    cResult[36] = tmp37;
+                    cResult[37] = tmp39;
+                    cResult[38] = tmp41;
+                    cResult[39] = tmp43;
+                    cResult[40] = tmp45;
+                    cResult[41] = jsx(tmp(isTryItOut[29]).UserProfileEditFormButton, { label: tmp34, labelTrailing: tmp37, buttonText: combined, accessibilityValue: tmp39, onPress: tmp27, leading: tmp41, trailing: tmp43, footer: tmp45 });
+                    const tmp49 = jsx(tmp(isTryItOut[29]).UserProfileEditFormButton, { label: tmp34, labelTrailing: tmp37, buttonText: combined, accessibilityValue: tmp39, onPress: tmp27, leading: tmp41, trailing: tmp43, footer: tmp45 });
                   }
                 }
               }
             }
-            const fn = function x() {
+            const fn2 = function $() {
               let tmp10;
               if (null == closure_6) {
                 const Icon = native.Icon;
@@ -272,111 +618,110 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
             cResult[15] = tmp15;
             cResult[16] = guildId;
             cResult[17] = tmp4.ggContainer;
-            class Y {
-              constructor() {
-                const obj = AnalyticsUtilsDefault;
-                obj.track(metroImportDefault.DISPLAY_NAME_STYLES_FROM_SETTINGS);
-                const obj2 = { guildId, isTryItOut };
-                nativeStackNavigation.navigate(metroImportAll.DISPLAY_NAME_STYLES, obj2);
-                closure_5(ContentDismissActionType.TAKE_ACTION);
-              }
-            }
+            cResult[18] = tmp4.noneIcon;
             cResult[19] = user.id;
-            cResult[20] = fn;
-            tmp25 = fn;
+            cResult[20] = fn2;
+            tmp32 = fn2;
           }
         }
       }
-      class Y {
-        constructor() {
-          const obj = AnalyticsUtilsDefault;
-          obj.track(metroImportDefault.DISPLAY_NAME_STYLES_FROM_SETTINGS);
-          const obj2 = { guildId, isTryItOut };
-          nativeStackNavigation.navigate(metroImportAll.DISPLAY_NAME_STYLES, obj2);
-          closure_5(ContentDismissActionType.TAKE_ACTION);
-        }
-      }
+      const fn = function h() {
+        const obj = AnalyticsUtilsDefault;
+        obj.track(metroImportDefault.DISPLAY_NAME_STYLES_FROM_SETTINGS);
+        const obj2 = { guildId, isTryItOut };
+        nativeStackNavigation.navigate(metroImportAll.DISPLAY_NAME_STYLES, obj2);
+        closure_5(ContentDismissActionType.TAKE_ACTION);
+      };
       cResult[7] = guildId;
       cResult[8] = isTryItOut;
       cResult[9] = tmp11;
       cResult[10] = nativeStackNavigation;
-      cResult[11] = Y;
-      tmp20 = Y;
+      cResult[11] = fn;
+      tmp27 = fn;
     }
   }
-  const obj8 = { userId: user.id, guildId, pendingDisplayNameStyles: tryItOutDisplayNameStyles, ignoreDisabledStylesSetting: true };
+  const obj7 = { userId: user.id, guildId, pendingDisplayNameStyles: tryItOutDisplayNameStyles, ignoreDisabledStylesSetting: true };
   cResult[3] = guildId;
   cResult[4] = tryItOutDisplayNameStyles;
   cResult[5] = user.id;
-  cResult[6] = obj8;
-  tmp13 = obj8;
+  cResult[6] = obj7;
+  tmp13 = obj7;
 }) : (function UserProfileDisplayNameStylesEditButton(user) {
   let closure_3;
   let first;
   let items1;
-  let pendingDisplayNameStyles;
   let tmp9;
-  let tryItOutDisplayNameStyles;
   user = user.user;
   const guildId = user.guildId;
   const isTryItOut = user.isTryItOut;
   let closure_5;
   let closure_6;
   let displayNameStylesEffectConfig;
-  const tmp = closure_11();
+  const tmp = closure_14();
   _slicedToArray = tmp;
   let tmp3 = isTryItOut;
-  let obj = user(isTryItOut[10]);
+  let obj = user(isTryItOut[11]);
   const nativeStackNavigation = obj.useNativeStackNavigation();
-  let obj2 = user(isTryItOut[11]);
+  let obj2 = user(isTryItOut[12]);
   const isDisplayNameStylesFlywheelSettersEnabled = obj2.useIsDisplayNameStylesFlywheelSettersEnabled("UserProfileDisplayNameStylesEditButton");
-  let tmp6 = user(isTryItOut[13]);
+  let tmp6 = user(isTryItOut[14]);
   const useSelectedDismissibleContent = tmp6.useSelectedDismissibleContent;
   if (isDisplayNameStylesFlywheelSettersEnabled) {
-    const items = [tmp2(tmp3[12]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_NEW_BADGE_PROFILE_PAGE];
+    const items = [tmp2(tmp3[13]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_NEW_BADGE_PROFILE_PAGE];
     items1 = items;
   } else {
     items1 = [];
   }
   [first, tmp9] = useSelectedDismissibleContent(items1, { bypassAutoDismiss: true });
   closure_5 = tmp9;
-  const tmp2Result = user(tmp3[14]);
+  const tmp2Result = user(tmp3[15]);
   const guildMemberOrUserPendingDisplayNameStyles = tmp2Result.useGuildMemberOrUserPendingDisplayNameStyles(user, guildId);
-  ({ pendingDisplayNameStyles, tryItOutDisplayNameStyles } = guildMemberOrUserPendingDisplayNameStyles);
+  let pendingDisplayNameStyles = guildMemberOrUserPendingDisplayNameStyles.pendingDisplayNameStyles;
+  const tryItOutDisplayNameStyles = guildMemberOrUserPendingDisplayNameStyles.tryItOutDisplayNameStyles;
   const obj3 = { userId: user.id, guildId, pendingDisplayNameStyles, ignoreDisabledStylesSetting: true };
-  const tmp11 = guildId;
-  const tmp12 = guildId(tmp3[15]);
+  const tmp12 = guildId(tmp3[16]);
   if (isTryItOut) {
     pendingDisplayNameStyles = tryItOutDisplayNameStyles;
   }
   const tmp12Result = tmp12(obj3);
   closure_6 = tmp12Result;
   let effectId;
-  const useDisplayNameStylesEffectConfig = tmp2(tmp3[16]).useDisplayNameStylesEffectConfig;
-  user(tmp3[16]);
+  const useDisplayNameStylesEffectConfig = tmp2(tmp3[17]).useDisplayNameStylesEffectConfig;
+  user(tmp3[17]);
   if (tmp12Result != null) {
     effectId = tmp12Result.effectId;
   }
   if (effectId == null) {
-    effectId = tmp2(tmp3[17]).DisplayNameEffect.SOLID;
+    effectId = tmp2(tmp3[18]).DisplayNameEffect.SOLID;
   }
   displayNameStylesEffectConfig = useDisplayNameStylesEffectConfig(effectId);
+  const tmp2Result5 = user(tmp3[19]);
+  let tmp17 = tmp2Result5.useHexagonCampaignPerkAvailability(constants3.DISPLAY_NAME_STYLE, "UserProfileDisplayNameStylesEditButton") === constants4.SELECTABLE && true !== isTryItOut;
+  if (tmp17) {
+    let fontId;
+    if (tmp12Result != null) {
+      fontId = tmp12Result.fontId;
+    }
+    tmp17 = fontId !== closure_10;
+  }
   const items2 = [guildId, isTryItOut, nativeStackNavigation, tmp9];
+  const tmp2Result6 = user(tmp3[20]);
+  const hexagonCampaignHasVisitedDisplayNameStyles = tmp2Result6.useHexagonCampaignHasVisitedDisplayNameStyles();
   const items3 = [displayNameStylesEffectConfig, tmp12Result];
-  const tmp17 = nativeStackNavigation(() => {
+  const tmp21 = nativeStackNavigation(() => {
     const obj = AnalyticsUtilsDefault;
     obj.track(metroImportDefault.DISPLAY_NAME_STYLES_FROM_SETTINGS);
     const obj2 = { guildId, isTryItOut };
     nativeStackNavigation.navigate(metroImportAll.DISPLAY_NAME_STYLES, obj2);
     closure_5(ContentDismissActionType.TAKE_ACTION);
   }, items2);
-  const tmp18 = closure_5(() => {
+  const tmp22 = closure_5(() => {
     let stringResult;
     if (null == closure_6) {
-      const intl2 = intl4.intl;
-      stringResult = intl2.string(intl4.t.PoWNfe);
+      const intl2 = intl3.intl;
+      stringResult = intl2.string(intl3.t.PoWNfe);
     } else {
-      const intl = intl4.intl;
+      const intl = intl3.intl;
       const _HermesInternal = HermesInternal;
       stringResult = "" + intl.string(getDisplayNameStylesFontNameDefault(tmp.fontId)) + " + " + displayNameStylesEffectConfig.name;
     }
@@ -384,7 +729,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   }, items3);
   const items4 = [tmp12Result, guildId, user.id, tmp];
   const items5 = [tmp12Result];
-  const tmp19 = nativeStackNavigation(() => {
+  const tmp23 = nativeStackNavigation(() => {
     let tmp10;
     if (null == closure_6) {
       const Icon = native.Icon;
@@ -394,7 +739,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     }
     return tmp10;
   }, items4);
-  const tmp20 = nativeStackNavigation(() => {
+  const tmp24 = nativeStackNavigation(() => {
     let effectId;
     let tmp3Result = null;
     if (null != closure_6) {
@@ -416,13 +761,23 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     }
     return tmp3Result;
   }, items5);
-  const UserProfileEditFormButton = tmp2(tmp3[26]).UserProfileEditFormButton;
-  let intl = tmp2(tmp3[19]).intl;
-  ({ showPremiumIcon: true, showNewBadge: first === user(tmp3[12]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_NEW_BADGE_PROFILE_PAGE });
-  const UserProfileEditFormLabelBadges = tmp2(tmp3[26]).UserProfileEditFormLabelBadges;
-  return <UserProfileEditFormButton label={intl.string(tmp11(tmp3[25])["86GtGH"])} labelTrailing={null} buttonText={tmp18} accessibilityValue={{ text: tmp18 }} onPress={tmp17} leading={tmp19()} trailing={tmp20()} />;
+  const UserProfileEditFormButton = tmp2(tmp3[29]).UserProfileEditFormButton;
+  let intl = tmp2(tmp3[22]).intl;
+  let tmp26 = tmp17;
+  const UserProfileEditFormLabelBadges = tmp2(tmp3[29]).UserProfileEditFormLabelBadges;
+  if (tmp17) {
+    tmp26 = !hexagonCampaignHasVisitedDisplayNameStyles;
+  }
+  if (!tmp26) {
+    tmp26 = first === tmp2(tmp3[13]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_NEW_BADGE_PROFILE_PAGE;
+  }
+  let tmp25Result;
+  if (tmp17) {
+    tmp25Result = tmp25(tmp11(tmp3[30]), {});
+  }
+  return <UserProfileEditFormButton label={intl.string(guildId(tmp3[28])["86GtGH"])} labelTrailing={null} buttonText={tmp22} accessibilityValue={{ text: tmp22 }} onPress={tmp21} leading={tmp23()} trailing={tmp24()} footer={tmp25Result} />;
 });
 size = size_mod;
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileDisplayNameStylesEditButton.tsx");
 
-export default tmp5;
+export default tmp6;

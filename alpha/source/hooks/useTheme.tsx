@@ -1,10 +1,10 @@
-// Module ID: 5191
-// Function ID: 5192
+// Module ID: 5203
+// Function ID: 5204
 // Name: useTheme
 // Dependencies: [1087, 558, 4976, 576, 2]
 // Exports: getThemeIndex
 
-// Module 5191 (useTheme)
+// Module 5203 (useTheme)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import shared from "shared" /* 4976 */;

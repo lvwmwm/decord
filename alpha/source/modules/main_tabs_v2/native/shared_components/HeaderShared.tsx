@@ -1,22 +1,22 @@
-// Module ID: 9676
-// Function ID: 9677
+// Module ID: 9698
+// Function ID: 9699
 // Name: HeaderShared
-// Dependencies: [109, 19, 17, 9677, 21, 4969, 587, 5220, 558, 576, 5238, 6910, 6918, 9678, 1384, 9683, 1633, 1506, 9685, 5581, 568, 9688, 13967, 1202, 6893, 2]
+// Dependencies: [109, 19, 17, 9699, 21, 4969, 587, 5232, 558, 576, 5250, 6923, 6931, 9700, 1384, 9705, 1633, 1506, 9707, 5593, 568, 9710, 13990, 1202, 6906, 2]
 // Exports: getDefaultChannelStackHeaderProps, getDefaultStackHeaderProps, getRenderBackImage, getRenderHeaderTextButton, getRenderModalBackImage, getRenderModalCloseImage, renderHeader
 
-// Module 9676 (HeaderShared)
+// Module 9698 (HeaderShared)
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import useToken2 from "useToken" /* 5238 */;
-import Pressables from "Pressables" /* 6893 */;
-import react_native from "react-native" /* 9677 */;
-import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 9683 */;
-import ChannelActionsDefault from "ChannelActions" /* 9688 */;
-import ChannelHeaderDefault from "ChannelHeader" /* 13967 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import useToken2 from "useToken" /* 5250 */;
+import Pressables from "Pressables" /* 6906 */;
+import react_native from "react-native" /* 9699 */;
+import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 9705 */;
+import ChannelActionsDefault from "ChannelActions" /* 9710 */;
+import ChannelHeaderDefault from "ChannelHeader" /* 13990 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
@@ -38,8 +38,8 @@ let obj4;
 let obj5;
 let tmp;
 let tmp6;
-const HeaderDebugOverlayDefault = tmp6(6910);
-const _mod6918 = tmp(6918);
+const HeaderDebugOverlayDefault = tmp6(6923);
+const _mod6931 = tmp(6931);
 function renderGenericTitle(children) {
   const obj = { title: children.children };
   return React4(closure_12, obj);
@@ -278,7 +278,7 @@ tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GenericHeaderTit
   }
   const tmp6 = closure_11();
   closure_5 = tmp6;
-  const tmp7 = tmp5(6910)("os-drawn");
+  const tmp7 = tmp5(6923)("os-drawn");
   if (null == subtitle) {
     let renderTitleContainerResult;
     if (null == tmp7) {
@@ -343,7 +343,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderTextBu
     }
     const obj3 = { labelStyle: tmp10, displayMode: "default", backImage: tmp12, truncatedLabel: null, accessibilityLabel: null };
     ({ label: obj2.truncatedLabel, label: obj2.accessibilityLabel } = tmp5);
-    const HeaderBackButton = _mod6918.HeaderBackButton;
+    const HeaderBackButton = _mod6931.HeaderBackButton;
     const merged = Object.assign(tmp5);
     const tmp18 = React4(HeaderBackButton, obj3);
     cResult[7] = tmp5;
@@ -371,7 +371,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderTextBu
   };
   items = [closure_11().backButtonLabel, labelStyle];
   closure_11();
-  const HeaderBackButton = _mod6918.HeaderBackButton;
+  const HeaderBackButton = _mod6931.HeaderBackButton;
   const merged1 = Object.assign(merged);
   return React4(HeaderBackButton, obj);
 });
@@ -407,7 +407,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   const tmpResult = navigation(1506);
   const text = tmpResult.useTheme().colors.text;
-  const tmpResult2 = navigation(9685);
+  const tmpResult2 = navigation(9707);
   const gradientTop = tmpResult2.useGradientTop();
   const sum = num + MIN_HEADER_HEIGHT;
   if (cResult[0] === num) {

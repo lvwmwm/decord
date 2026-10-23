@@ -1,11 +1,11 @@
-// Module ID: 15805
-// Function ID: 15806
+// Module ID: 15826
+// Function ID: 15827
 // Name: UserProfileEditFormSharedStyles
-// Dependencies: [7289, 4969, 587, 2]
+// Dependencies: [7302, 4969, 587, 2]
 
-// Module 15805 (UserProfileEditFormSharedStyles)
+// Module 15826 (UserProfileEditFormSharedStyles)
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 7289 */;
+import Constants from "Constants" /* 7302 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 14071
-// Function ID: 14072
+// Module ID: 14095
+// Function ID: 14096
 // Name: AppStoreOverlayAboutSection
-// Dependencies: [32, 19, 17, 21, 587, 4969, 558, 576, 1128, 5220, 2]
+// Dependencies: [32, 19, 17, 21, 587, 4969, 558, 576, 1128, 5232, 2]
 
-// Module 14071 (AppStoreOverlayAboutSection)
+// Module 14095 (AppStoreOverlayAboutSection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -21,7 +21,7 @@ let metroRequire;
 let obj2;
 let tmp;
 const intl3 = tmp(1128);
-const Text_Text = tmp(5220);
+const Text_Text = tmp(5232);
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const rect = { top: nativeDefault.space.PX_12, bottom: nativeDefault.space.PX_12, left: nativeDefault.space.PX_12, right: nativeDefault.space.PX_12 };
@@ -257,10 +257,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOv
   const stringResult = string(tmp3 ? t["6MwJo/"] : t.lBeKY2);
   const obj = { style: tmp.aboutSection, children: items2 };
   const obj2 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl3.t.CI0vSJ) };
-  const Text = tmp8(5220).Text;
+  const Text = tmp8(5232).Text;
   intl2 = tmp8(1128).intl;
   items2 = [metroRequire(Text, obj2), , ];
-  const Text2 = tmp8(5220).Text;
+  const Text2 = tmp8(5232).Text;
   const tmp11 = metroImportDefault;
   const tmp12 = hasOwnProperty;
   items2[1] = metroRequire(Text2, { variant: "text-sm/medium", color: "text-default", lineClamp: num, onTextLayout: callback, children: description });

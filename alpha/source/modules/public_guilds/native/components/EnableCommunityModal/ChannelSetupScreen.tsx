@@ -1,19 +1,19 @@
-// Module ID: 19102
-// Function ID: 19103
+// Module ID: 19146
+// Function ID: 19147
 // Name: ChannelSetupScreen
-// Dependencies: [19, 17, 8982, 4821, 4899, 4911, 1392, 8392, 1087, 21, 5238, 587, 19091, 504, 5590, 1128, 19092, 5196, 8900, 2002, 8981, 19089, 5220, 5655, 5963, 6972, 6888, 2]
+// Dependencies: [19, 17, 9005, 4821, 4899, 4911, 1392, 8404, 1087, 21, 5250, 587, 19135, 504, 5602, 1128, 19136, 5208, 8923, 2002, 9004, 19133, 5232, 5667, 5975, 6985, 6901, 2]
 // Exports: default
 
-// Module 19102 (ChannelSetupScreen)
+// Module 19146 (ChannelSetupScreen)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import intl10 from "intl" /* 1128 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import GuildChannelStore2 from "GuildChannelStore" /* 4899 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import PublicGuildsConstants from "PublicGuildsConstants" /* 8392 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
+import PublicGuildsConstants from "PublicGuildsConstants" /* 8404 */;
 import react from "react" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8982 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9005 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -145,7 +145,7 @@ export default function ChannelSetupScreen() {
       hasIcons: false
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(8900, dependencyMap.paths);
+    const tmp2 = asyncRequire(8923, dependencyMap.paths);
     intl = intl10.intl;
     id = undefined;
     if (rulesChannel != null) {
@@ -174,7 +174,7 @@ export default function ChannelSetupScreen() {
       hasIcons: false
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(8900, dependencyMap.paths);
+    const tmp2 = asyncRequire(8923, dependencyMap.paths);
     intl = intl10.intl;
     id = undefined;
     if (publicUpdatesChannel != null) {

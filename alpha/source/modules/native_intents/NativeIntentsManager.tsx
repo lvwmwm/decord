@@ -1,15 +1,15 @@
-// Module ID: 19305
-// Function ID: 19306
+// Module ID: 19349
+// Function ID: 19350
 // Name: NativeIntentsManager
-// Dependencies: [32, 4821, 4843, 4901, 4911, 4872, 1392, 1087, 19306, 19307, 5590, 14263, 1417, 1388, 5018, 7199, 2]
+// Dependencies: [32, 4821, 4843, 4901, 4911, 4872, 1392, 1087, 19350, 19351, 5602, 14287, 1417, 1388, 5023, 7212, 2]
 
-// Module 19305 (NativeIntentsManager)
+// Module 19349 (NativeIntentsManager)
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import UserUtilsDefault from "UserUtils" /* 5018 */;
-import useChannelName from "useChannelName" /* 5590 */;
-import getChannelIcon from "getChannelIcon" /* 14263 */;
-import NativeIntentsExperimentDefault from "NativeIntentsExperiment" /* 19306 */;
-import IntentsBindingsDefault from "IntentsBindings" /* 19307 */;
+import UserUtilsDefault from "UserUtils" /* 5023 */;
+import useChannelName from "useChannelName" /* 5602 */;
+import getChannelIcon from "getChannelIcon" /* 14287 */;
+import NativeIntentsExperimentDefault from "NativeIntentsExperiment" /* 19350 */;
+import IntentsBindingsDefault from "IntentsBindings" /* 19351 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;
@@ -18,7 +18,7 @@ import RelationshipStore from "RelationshipStore" /* 4911 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7199 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7212 */;
 import size from "module_2" /* 2 */;
 
 let id;

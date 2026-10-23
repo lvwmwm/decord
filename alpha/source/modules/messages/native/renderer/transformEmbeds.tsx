@@ -1,27 +1,27 @@
-// Module ID: 8573
-// Function ID: 8574
+// Module ID: 8585
+// Function ID: 8586
 // Name: transformEmbeds
-// Dependencies: [17, 1087, 8574, 8575, 6471, 8576, 1384, 8263, 5985, 1128, 1105, 8449, 4794, 7374, 7380, 6639, 8577, 2]
+// Dependencies: [17, 1087, 8586, 8587, 6484, 8588, 1384, 8275, 5997, 1128, 1105, 8461, 4794, 7387, 7393, 6652, 8589, 2]
 // Exports: default
 
-// Module 8573 (transformEmbeds)
+// Module 8585 (transformEmbeds)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
 import intl6 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import DateUtils from "DateUtils" /* 4794 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5985 */;
-import EmbedUtils from "EmbedUtils" /* 6471 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6639 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7374 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7380 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8263 */;
-import MarkupParsers from "MarkupParsers" /* 8449 */;
-import sanitizeMediaDimension from "sanitizeMediaDimension" /* 8574 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8575 */;
-import utils from "utils" /* 8576 */;
-import NativeChatCapabilities from "NativeChatCapabilities" /* 8577 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5997 */;
+import EmbedUtils from "EmbedUtils" /* 6484 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6652 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7387 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7393 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8275 */;
+import MarkupParsers from "MarkupParsers" /* 8461 */;
+import sanitizeMediaDimension from "sanitizeMediaDimension" /* 8586 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8587 */;
+import utils from "utils" /* 8588 */;
+import NativeChatCapabilities from "NativeChatCapabilities" /* 8589 */;
 import size from "module_2" /* 2 */;
 
 let borderLeftColor, type;
@@ -190,7 +190,7 @@ export default function transformEmbeds(arg0) {
                               }
                               ({ proxyURL: proxyURL4, url: url4 } = type.video);
                               let tmp52 = url4;
-                              const isWebPlayerVideoUrl = tmp3(5985).isWebPlayerVideoUrl;
+                              const isWebPlayerVideoUrl = tmp3(5997).isWebPlayerVideoUrl;
                               MediaFormatTesters;
                               if (null != proxyURL4) {
                                 tmp52 = url4;
@@ -211,7 +211,7 @@ export default function transformEmbeds(arg0) {
                               if (null == type.video.proxyURL) {
                                 const provider2 = type.provider;
                                 let name;
-                                const getEffectiveVideoProvider = tmp3(6471).getEffectiveVideoProvider;
+                                const getEffectiveVideoProvider = tmp3(6484).getEffectiveVideoProvider;
                                 EmbedUtils;
                                 if (provider2 != null) {
                                   name = provider2.name;
@@ -258,7 +258,7 @@ export default function transformEmbeds(arg0) {
                       if (null != type.url) {
                         let parseEmbedTitleMarkup;
                         if ("" !== type.url) {
-                          parseEmbedTitleMarkup = tmp3(8449).parseEmbedTitleMarkupWithoutLinks;
+                          parseEmbedTitleMarkup = tmp3(8461).parseEmbedTitleMarkupWithoutLinks;
                         }
                         if (type.type === MessageEmbedTypes.RICH) {
                           let rawTitle;
@@ -370,14 +370,14 @@ export default function transformEmbeds(arg0) {
                             tmp87 = closure_13(mapped2);
                           }
                           const obj13 = { type: ExplicitMediaRedactionModels.ObscuredMediaTypes.Embed, media: type };
-                          const getMediaObscuredReasonFromBitmask = tmp3(7374).getMediaObscuredReasonFromBitmask;
+                          const getMediaObscuredReasonFromBitmask = tmp3(7387).getMediaObscuredReasonFromBitmask;
                           ObscuredMediaUtils;
                           let isMediaScanPendingResult = !closure_10;
                           const mediaObscuredReasonFromBitmask = getMediaObscuredReasonFromBitmask(obj13, closure_9);
                           const tmp92 = closure_9;
                           if (!closure_10) {
                             const obj14 = { type: ExplicitMediaRedactionModels.ObscuredMediaTypes.Embed, media: type };
-                            const isMediaScanPending = tmp3(7374).isMediaScanPending;
+                            const isMediaScanPending = tmp3(7387).isMediaScanPending;
                             ObscuredMediaUtils;
                             isMediaScanPendingResult = isMediaScanPending(obj14, tmp92);
                           }
@@ -428,7 +428,7 @@ export default function transformEmbeds(arg0) {
                         }
                         rawTitle = type.rawTitle;
                       }
-                      parseEmbedTitleMarkup = tmp3(8449).parseEmbedTitleMarkup;
+                      parseEmbedTitleMarkup = tmp3(8461).parseEmbedTitleMarkup;
                     }
                     let tmp28 = null == tmp26;
                     if (!tmp28) {

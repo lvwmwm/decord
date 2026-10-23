@@ -1,16 +1,16 @@
-// Module ID: 18169
-// Function ID: 18170
+// Module ID: 18213
+// Function ID: 18214
 // Name: BadgeCustomizationProfileCoachmark
-// Dependencies: [32, 19, 1392, 4818, 587, 558, 576, 1499, 1633, 9494, 2053, 504, 4983, 1128, 5031, 9817, 2]
+// Dependencies: [32, 19, 1392, 4818, 587, 558, 576, 1499, 1633, 9517, 2053, 504, 4983, 1128, 5043, 9839, 2]
 
-// Module 18169 (BadgeCustomizationProfileCoachmark)
+// Module 18213 (BadgeCustomizationProfileCoachmark)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
-import BadgesCoachmarkRive from "BadgesCoachmarkRive" /* 5031 */;
+import BadgesCoachmarkRive from "BadgesCoachmarkRive" /* 5043 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -18,7 +18,7 @@ import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const YouBannerDecorations = tmp(9494);
+const YouBannerDecorations = tmp(9517);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const PX_64 = nativeDefault.space.PX_64;
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -211,7 +211,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeCustomi
                 if (cResult[19] === visible) {
                   tmp18 = cResult[20];
                 }
-                const tmpResult2 = markAsDismissed(9817);
+                const tmpResult2 = markAsDismissed(9839);
                 const coachmark = tmpResult2.useCoachmark(targetRef, tmp18);
                 return null;
               }
@@ -246,7 +246,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeCustomi
     cResult[13] = I;
     tmp17 = I;
   }
-  const obj3 = { type: "rive", rive: markAsDismissed(5031).BadgesCoachmarkRive, aspectRatio: "16/9", riveProps: obj4 };
+  const obj3 = { type: "rive", rive: markAsDismissed(5043).BadgesCoachmarkRive, aspectRatio: "16/9", riveProps: obj4 };
   obj4 = { dataBinding: { on: visible, reducedMotion: reducedMotion.enabled } };
   cResult[5] = reducedMotion.enabled;
   cResult[6] = visible;

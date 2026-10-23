@@ -1,13 +1,13 @@
-// Module ID: 13905
-// Function ID: 13906
+// Module ID: 13928
+// Function ID: 13929
 // Name: OrbLottieAnimation
-// Dependencies: [19, 21, 558, 576, 5191, 4976, 13906, 13908, 2]
+// Dependencies: [19, 21, 558, 576, 5203, 4976, 13929, 13931, 2]
 
-// Module 13905 (OrbLottieAnimation)
+// Module 13928 (OrbLottieAnimation)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import shared from "shared" /* 4976 */;
-import useTheme from "useTheme" /* 5191 */;
+import useTheme from "useTheme" /* 5203 */;
 import "react";
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -72,9 +72,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbLottieA
   }
   const imperativeHandle = react.useImperativeHandle(ref, tmp10);
   if (isThemeLightResult) {
-    SpendEarnOrbsLottie = tmp(13906).SpendEarnOrbsLightThemeLottie;
+    SpendEarnOrbsLottie = tmp(13929).SpendEarnOrbsLightThemeLottie;
   } else {
-    SpendEarnOrbsLottie = tmp(13908).SpendEarnOrbsLottie;
+    SpendEarnOrbsLottie = tmp(13931).SpendEarnOrbsLottie;
   }
   let str = "spend";
   if (null != animationType) {
@@ -123,9 +123,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbLottieA
     }
   }));
   if (isThemeLightResult) {
-    SpendEarnOrbsLottie = tmp(13906).SpendEarnOrbsLightThemeLottie;
+    SpendEarnOrbsLottie = tmp(13929).SpendEarnOrbsLightThemeLottie;
   } else {
-    SpendEarnOrbsLottie = tmp(13908).SpendEarnOrbsLottie;
+    SpendEarnOrbsLottie = tmp(13931).SpendEarnOrbsLottie;
   }
   size = { ref: tmp5, size: "custom", width: 60, height: 60, opacity: 0.8, animation: str, useLottieDefaultColors: true };
   str = "spend";

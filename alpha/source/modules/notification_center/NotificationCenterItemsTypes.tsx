@@ -1,9 +1,9 @@
-// Module ID: 6773
-// Function ID: 6774
+// Module ID: 6786
+// Function ID: 6787
 // Name: NotificationCenterItemsTypes
 // Dependencies: [2]
 
-// Module 6773 (NotificationCenterItemsTypes)
+// Module 6786 (NotificationCenterItemsTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/notification_center/NotificationCenterItemsTypes.tsx");

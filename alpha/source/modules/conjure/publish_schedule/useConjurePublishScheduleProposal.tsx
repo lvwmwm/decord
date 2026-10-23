@@ -1,11 +1,11 @@
-// Module ID: 12441
-// Function ID: 12442
+// Module ID: 12460
+// Function ID: 12461
 // Name: useConjurePublishScheduleProposal
-// Dependencies: [5, 32, 19, 6758, 558, 576, 504, 10782, 10783, 1128, 3830, 11799, 2]
+// Dependencies: [5, 32, 19, 6771, 558, 576, 504, 10804, 10805, 1128, 3830, 11818, 2]
 
-// Module 12441 (useConjurePublishScheduleProposal)
+// Module 12460 (useConjurePublishScheduleProposal)
 import _modDef3830 from "module_3830" /* 3830 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6758 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6771 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -148,7 +148,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePu
       const formatToPlainString = tmp19.formatToPlainString;
       let obj4 = { time: tmpResult2.formatPublishScheduleTime(trigger.next_run_at) };
       const orZDqY = _modDef3830.orZDqY;
-      tmpResult2 = tmp(11799);
+      tmpResult2 = tmp(11818);
       formatToPlainStringResult = formatToPlainString(orZDqY, obj4);
     }
     cResult[8] = trigger.next_run_at;
@@ -347,12 +347,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePu
     const formatToPlainString = intl.formatToPlainString;
     let obj2 = { time: tmpResult.formatPublishScheduleTime(trigger.next_run_at) };
     const orZDqY = _modDef3830.orZDqY;
-    tmpResult = tmp(11799);
+    tmpResult = tmp(11818);
     formatToPlainStringResult = formatToPlainString(orZDqY, obj2);
   }
   let obj3 = { summary: tmpResult2.publishScheduleSummary(trigger.trigger), firstPublish: formatToPlainStringResult, status: tmp5, error: first, onTurnOn: tmp11 };
   tmp11 = undefined;
-  tmpResult2 = tmp(11799);
+  tmpResult2 = tmp(11818);
   if (stateFromStores) {
     let tmp12 = arg2;
     if (tmp12) {

@@ -1,24 +1,24 @@
-// Module ID: 9458
-// Function ID: 9459
+// Module ID: 9481
+// Function ID: 9482
 // Name: GameProfileDetails
-// Dependencies: [19, 17, 8814, 21, 8805, 9459, 7038, 9268, 9461, 9463, 4969, 587, 558, 576, 5646, 9465, 9466, 9279, 1128, 2000, 4794, 9467, 5220, 2]
+// Dependencies: [19, 17, 8837, 21, 8828, 9482, 7051, 9291, 9484, 9486, 4969, 587, 558, 576, 5658, 9488, 9489, 9302, 1128, 2000, 4794, 9490, 5232, 2]
 
-// Module 9458 (GameProfileDetails)
+// Module 9481 (GameProfileDetails)
 import nativeDefault from "native" /* 587 */;
 import intl13 from "intl" /* 1128 */;
 import Server from "Server" /* 2000 */;
 import DateUtilsAll from "DateUtils" /* 4794 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import LinkingDefault from "Linking" /* 5646 */;
-import MobilePhoneIcon from "MobilePhoneIcon" /* 7038 */;
-import PlatformType from "PlatformType" /* 8805 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 8814 */;
-import XboxNeutralIcon from "XboxNeutralIcon" /* 9268 */;
-import SKUUtils from "SKUUtils" /* 9279 */;
-import ScreenIcon from "ScreenIcon" /* 9459 */;
-import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9461 */;
-import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 9463 */;
-import useGameProfilePlatformsDefault from "useGameProfilePlatforms" /* 9466 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import LinkingDefault from "Linking" /* 5658 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 7051 */;
+import PlatformType from "PlatformType" /* 8828 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 8837 */;
+import XboxNeutralIcon from "XboxNeutralIcon" /* 9291 */;
+import SKUUtils from "SKUUtils" /* 9302 */;
+import ScreenIcon from "ScreenIcon" /* 9482 */;
+import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9484 */;
+import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 9486 */;
+import useGameProfilePlatformsDefault from "useGameProfilePlatforms" /* 9489 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -145,7 +145,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
   ({ game, trackAction } = arg0);
   const tmp4 = closure_11();
   importDefault = tmp4;
-  let obj2 = trackAction(9465);
+  let obj2 = trackAction(9488);
   const gameProfileLinks = obj2.useGameProfileLinks(game);
   const arr2 = useGameProfilePlatformsDefault(game);
   if (null != game) {
@@ -178,7 +178,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
       let joined;
       if (game != null) {
         const genres1 = game.genres;
-        const mapped = genres1.map(tmp(9279).getGenreText);
+        const mapped = genres1.map(tmp(9302).getGenreText);
         joined = mapped.join(", ");
       }
       let genres2;
@@ -727,8 +727,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
       }
       const obj11 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: headerText, children: tmp78 };
       cResult[61] = tmp4.headerText;
-      cResult[62] = closure_8(tmp(5220).Text, obj11);
-      const tmp81 = closure_8(tmp(5220).Text, obj11);
+      cResult[62] = closure_8(tmp(5232).Text, obj11);
+      const tmp81 = closure_8(tmp(5232).Text, obj11);
     } else {
       class F {
         constructor(arg0) {

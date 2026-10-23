@@ -1,15 +1,15 @@
-// Module ID: 10647
-// Function ID: 10648
+// Module ID: 10669
+// Function ID: 10670
 // Name: LeaderboardWinnerBadge
-// Dependencies: [19, 17, 21, 4969, 558, 576, 10648, 10649, 10651, 10655, 10659, 2]
+// Dependencies: [19, 17, 21, 4969, 558, 576, 10670, 10671, 10673, 10677, 10681, 2]
 
-// Module 10647 (LeaderboardWinnerBadge)
+// Module 10669 (LeaderboardWinnerBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useActiveLeaderboardWinnerData from "useActiveLeaderboardWinnerData" /* 10648 */;
-import GuildLeaderboardUtils from "GuildLeaderboardUtils" /* 10649 */;
-import MedalFirstBadge from "MedalFirstBadge" /* 10651 */;
+import useActiveLeaderboardWinnerData from "useActiveLeaderboardWinnerData" /* 10670 */;
+import GuildLeaderboardUtils from "GuildLeaderboardUtils" /* 10671 */;
+import MedalFirstBadge from "MedalFirstBadge" /* 10673 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -77,9 +77,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeaderboardW
       num = 0;
     }
     if (num > 1) {
-      WinnerTrophyBadge = tmp(10655).StreakTrophyBadge;
+      WinnerTrophyBadge = tmp(10677).StreakTrophyBadge;
     } else {
-      WinnerTrophyBadge = tmp(10659).WinnerTrophyBadge;
+      WinnerTrophyBadge = tmp(10681).WinnerTrophyBadge;
     }
     const container = tmp4.container;
     if (cResult[6] !== tmp5) {
@@ -137,9 +137,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeaderboardW
       num = 0;
     }
     if (num > 1) {
-      let WinnerTrophyBadge = tmp4(10655).StreakTrophyBadge;
+      let WinnerTrophyBadge = tmp4(10677).StreakTrophyBadge;
     } else {
-      WinnerTrophyBadge = tmp4(10659).WinnerTrophyBadge;
+      WinnerTrophyBadge = tmp4(10681).WinnerTrophyBadge;
     }
     const size1 = { width: v16, height: v16 };
     const tmp4Result2 = GuildLeaderboardUtils;

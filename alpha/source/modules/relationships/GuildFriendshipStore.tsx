@@ -1,12 +1,12 @@
-// Module ID: 14985
-// Function ID: 14986
+// Module ID: 15009
+// Function ID: 15010
 // Name: GuildFriendshipStore
-// Dependencies: [504, 6815, 584, 2]
+// Dependencies: [504, 6828, 584, 2]
 
-// Module 14985 (GuildFriendshipStore)
+// Module 15009 (GuildFriendshipStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6815 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6828 */;
 import size from "module_2" /* 2 */;
 
 let closure_3;

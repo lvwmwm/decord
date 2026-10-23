@@ -1,20 +1,20 @@
-// Module ID: 13619
-// Function ID: 13620
+// Module ID: 13642
+// Function ID: 13643
 // Name: HubEmailConnectionSubmitSchool
-// Dependencies: [5, 32, 19, 17, 13597, 1087, 21, 4969, 587, 1505, 5579, 13611, 6359, 13606, 1202, 1128, 5220, 6992, 5230, 2]
+// Dependencies: [5, 32, 19, 17, 13620, 1087, 21, 4969, 587, 1505, 5591, 13634, 6372, 13629, 1202, 1128, 5232, 7005, 5242, 2]
 // Exports: default
 
-// Module 13619 (HubEmailConnectionSubmitSchool)
+// Module 13642 (HubEmailConnectionSubmitSchool)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl6 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import useNavigation from "useNavigation" /* 1505 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5579 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6992 */;
-import HubConstants from "HubConstants" /* 13597 */;
-import HubEmailConnectionModal from "HubEmailConnectionModal" /* 13606 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5591 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 7005 */;
+import HubConstants from "HubConstants" /* 13620 */;
+import HubEmailConnectionModal from "HubEmailConnectionModal" /* 13629 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -233,7 +233,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
       return obj(...arguments);
     }
   };
-  Button = tmp2(5230).Button;
+  Button = tmp2(5242).Button;
   intl5 = tmp2(1128).intl;
   items2[2] = closure_9(first1, obj12);
   return closure_9(HubEmailConnectionScreen, obj10);

@@ -1,13 +1,13 @@
-// Module ID: 10742
-// Function ID: 10743
+// Module ID: 10764
+// Function ID: 10765
 // Name: leaveFrame
-// Dependencies: [6760, 1388, 584, 2]
+// Dependencies: [6773, 1388, 584, 2]
 // Exports: leaveFrame
 
-// Module 10742 (leaveFrame)
+// Module 10764 (leaveFrame)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import FramesStore from "FramesStore" /* 6760 */;
+import FramesStore from "FramesStore" /* 6773 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/frames/leaveFrame.tsx");

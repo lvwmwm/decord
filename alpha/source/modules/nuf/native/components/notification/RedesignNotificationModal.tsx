@@ -1,21 +1,21 @@
-// Module ID: 17336
-// Function ID: 17337
+// Module ID: 17380
+// Function ID: 17381
 // Name: RedesignNotificationModal
-// Dependencies: [19, 17, 13245, 13246, 1087, 21, 4969, 587, 558, 576, 13247, 1267, 13248, 17337, 1128, 13527, 2]
+// Dependencies: [19, 17, 13268, 13269, 1087, 21, 4969, 587, 558, 576, 13270, 1267, 13271, 17381, 1128, 13550, 2]
 
-// Module 17336 (RedesignNotificationModal)
+// Module 17380 (RedesignNotificationModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13245 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13247 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13248 */;
-import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 13527 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13268 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13270 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13271 */;
+import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 13550 */;
 import react from "react" /* 19 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13246 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13269 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -108,7 +108,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignNo
         }
       }
     }
-    const tmp8 = jsx(tmp(17337).BellSpotIllustration, { width: 245, accessible: false });
+    const tmp8 = jsx(tmp(17381).BellSpotIllustration, { width: 245, accessible: false });
     cResult[4] = tmp8;
     tmp7 = tmp8;
   } else {

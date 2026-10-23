@@ -1,37 +1,37 @@
-// Module ID: 11989
-// Function ID: 11990
+// Module ID: 12008
+// Function ID: 12009
 // Name: useActivityShelfItem
-// Dependencies: [5, 4820, 2026, 1087, 558, 576, 5619, 1384, 11464, 11990, 11991, 2000, 6796, 11411, 11410, 7242, 4890, 7238, 11315, 11319, 10747, 2]
+// Dependencies: [5, 4820, 2026, 1087, 558, 576, 5631, 1384, 11484, 12009, 12010, 2000, 6809, 11431, 11430, 7255, 4890, 7251, 11338, 11342, 10769, 2]
 // Exports: getStaffReleasePhase
 
-// Module 11989 (useActivityShelfItem)
+// Module 12008 (useActivityShelfItem)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import Constants2 from "Constants" /* 2026 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4890 */;
-import getPlatformDefault from "getPlatform" /* 5619 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6796 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7238 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7242 */;
-import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 10747 */;
-import useCurrentEmbeddedApplicationDefault from "useCurrentEmbeddedApplication" /* 11410 */;
-import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 11411 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11464 */;
-import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 11991 */;
+import getPlatformDefault from "getPlatform" /* 5631 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6809 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7251 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7255 */;
+import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 10769 */;
+import useCurrentEmbeddedApplicationDefault from "useCurrentEmbeddedApplication" /* 11430 */;
+import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 11431 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11484 */;
+import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12010 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c0, c2;
+let c2;
 
-const f112338 = (str) => str.toUpperCase();
+const f112526 = (str) => str.toUpperCase();
 const STAFF_RELEASE_PHASES = Constants2.STAFF_RELEASE_PHASES;
 const ApplicationFlags = Constants.ApplicationFlags;
 const ActivityAction = { START: 0, [0]: "START", JOIN: 1, [1]: "JOIN", LEAVE: 2, [2]: "LEAVE" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityShelfItem(arg0) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityShelfItem(arg0) {
   let activityItem;
   let assetNames;
   let backgroundResolution;
@@ -169,7 +169,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityS
                           let replaced;
                           if (STAFF_RELEASE_PHASES.includes(str2)) {
                             const str5 = str2.replace("_", " ");
-                            replaced = str5.replace(/(^\w|\s\w)/g, f112338);
+                            replaced = str5.replace(/(^\w|\s\w)/g, f112526);
                           }
                         } else {
                           ApplicationFlagUtils;
@@ -219,7 +219,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityS
       }
       let tmp13 = null;
       if (null != activity.activity_preview_video_asset_id) {
-        tmp13 = tmp5(11990)(application.id, activity.activity_preview_video_asset_id);
+        tmp13 = tmp5(12009)(application.id, activity.activity_preview_video_asset_id);
       }
       cResult[6] = activity.activity_preview_video_asset_id;
       cResult[7] = application.id;
@@ -277,7 +277,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityS
   const obj2 = { applicationId: application.id, size: num, names: assetNames, format: "webp" };
   const tmp8 = useEmbeddedActivityBackgroundDefault(obj2);
   if (null != activity.activity_preview_video_asset_id) {
-    tmp9 = tmp(11990)(application.id, activity.activity_preview_video_asset_id);
+    tmp9 = tmp(12009)(application.id, activity.activity_preview_video_asset_id);
   }
   let channel;
   const tmpResult = useEmbeddedAppsForChannelDefault;
@@ -300,7 +300,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityS
     let replaced;
     if (STAFF_RELEASE_PHASES.includes(str)) {
       const str4 = str.replace("_", " ");
-      replaced = str4.replace(/(^\w|\s\w)/g, f112338);
+      replaced = str4.replace(/(^\w|\s\w)/g, f112526);
     }
     tmp16 = replaced;
   } else {
@@ -619,7 +619,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnActivit
   if (str == null) {
     str = "";
   }
-  let tmp = referrerId({ context, applicationId: str, fetchesApplication });
+  const tmp = referrerId({ context, applicationId: str, fetchesApplication });
   analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   closure_12 = useCurrentEmbeddedActivityDefault();
   if (null == application) {
@@ -628,159 +628,163 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnActivit
         tmp({ applicationId: "" });
       }
     };
-  } else {
-    const tmp2 = obj;
-    if (obj.START === tmp) {
-      return _asyncToGenerator(async (arg0, value) => {
-        let id;
-        let v1;
-        if (c2 === 2) {
-          c2 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
-          if (arg0 === 1) {
+  } else if (obj.START === tmp) {
+    const tmp4 = _asyncToGenerator;
+    return _asyncToGenerator(async (arg0, value) => {
+      let id;
+      let v1;
+      if (c2 === 2) {
+        c2 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          c2 = 2;
+          if (0 === locationObject) {
+            if (arg0 === 1) {
+              c2 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c2 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              let closure_0 = tmp;
+              const obj4 = { applicationId: str, channelId: id, locationObject: importDefault, analyticsLocations, componentId: _asyncToGenerator, commandOrigin: EmbeddedActivitiesStore, sectionName: STAFF_RELEASE_PHASES, source: ApplicationFlags, customId, referrerId, onConfirmActivityLaunchChecksAlertOpen };
+              id = null;
+              const launch = locationObject(c2[18]).launch;
+              const tmp27 = locationObject(c2[18]);
+              if ("channel" === context.type) {
+                id = context.channel.id;
+              }
+              locationObject = 1;
+              c2 = 1;
+              const obj5 = { value: launch(obj4), done: false };
+              return obj5;
+            }
+          } else if (arg0 === 1) {
+            c2 = 3;
             throw value;
           } else if (arg0 === 2) {
-            const obj2 = { value, done: true };
-            return obj2;
+            c2 = 3;
+            const obj6 = { value, done: true };
+            return obj6;
           } else {
+            if (value) {
+              if (closure_128_2 != null) {
+                const obj = { applicationId: closure_128_10 };
+                tmp6(obj);
+              }
+            }
+            c2 = 3;
             return { value: "IconComponent", done: null };
           }
+        } catch (tmp21) {
+          c2 = 3;
+          throw tmp21;
+        }
+      }
+    });
+  } else if (obj.JOIN === tmp) {
+    const tmp3 = _asyncToGenerator;
+    return _asyncToGenerator(async (arg0, value) => {
+      let id;
+      let v2;
+      if (c2 === 2) {
+        c2 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
         } else {
-          try {
-            c2 = 2;
-            if (0 === locationObject) {
-              if (arg0 === 1) {
-                c2 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c2 = 3;
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                let closure_0 = tmp;
-                const obj4 = { applicationId: str, channelId: id, locationObject: importDefault, analyticsLocations, componentId: _asyncToGenerator, commandOrigin: EmbeddedActivitiesStore, sectionName: STAFF_RELEASE_PHASES, source: ApplicationFlags, customId, referrerId, onConfirmActivityLaunchChecksAlertOpen };
-                id = null;
-                const launch = locationObject(c2[18]).launch;
-                const tmp27 = locationObject(c2[18]);
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          c2 = 2;
+          if (0 === locationObject) {
+            if (arg0 === 1) {
+              c2 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c2 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              let closure_0 = tmp;
+              if (!launchingActivity.isLaunchingActivity()) {
+                const obj4 = { applicationId: str, activityChannelId: id, locationObject: importDefault, analyticsLocations, componentId: _asyncToGenerator, sectionName: STAFF_RELEASE_PHASES, source: ApplicationFlags, customId, referrerId };
+                id = undefined;
+                const tmp13 = locationObject(c2[19]);
                 if ("channel" === context.type) {
                   id = context.channel.id;
                 }
                 locationObject = 1;
                 c2 = 1;
-                const obj5 = { value: launch(obj4), done: false };
+                const obj5 = { value: tmp13(obj4), done: false };
                 return obj5;
               }
-            } else if (arg0 === 1) {
+            }
+          } else if (1 === tmp4) {
+            if (arg0 === 1) {
               c2 = 3;
               throw value;
             } else if (arg0 === 2) {
               c2 = 3;
               const obj6 = { value, done: true };
               return obj6;
-            } else {
-              if (value) {
-                if (closure_128_2 != null) {
-                  const obj = { applicationId: closure_128_10 };
-                  tmp6(obj);
-                }
+            } else if (value) {
+              let tmp6Result;
+              if (closure_128_2 != null) {
+                const obj7 = { applicationId: closure_128_10 };
+                tmp6Result = tmp6(obj7);
               }
-              c2 = 3;
-              return { value: "IconComponent", done: null };
+              locationObject = 2;
+              c2 = 1;
+              const obj8 = { value: tmp6Result, done: false };
+              return obj8;
             }
-          } catch (tmp21) {
+          } else if (arg0 === 1) {
             c2 = 3;
-            throw tmp21;
-          }
-        }
-      });
-    } else if (tmp2.JOIN === tmp) {
-      let tmp3 = _asyncToGenerator;
-      return _asyncToGenerator(async (arg0, value) => {
-        let id;
-        let tmp6Result;
-        let v1;
-        if (c0 === 2) {
-          c0 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp2 === 3) {
-          if (arg0 === 1) {
             throw value;
           } else if (arg0 === 2) {
-            const obj2 = { value, done: true };
-            return obj2;
-          } else {
-            return { value: "IconComponent", done: null };
+            c2 = 3;
+            const obj = { value, done: true };
+            return obj;
           }
-        } else {
-          try {
-            c0 = 2;
-            if (0 === locationObject) {
-              if (arg0 === 1) {
-                c0 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c0 = 3;
-                const obj3 = { value, done: true };
-                return obj3;
-              } else if (!launchingActivity.isLaunchingActivity()) {
-                const obj4 = { applicationId: str, activityChannelId: id, locationObject: importDefault, analyticsLocations, componentId: _asyncToGenerator, sectionName: STAFF_RELEASE_PHASES, source: ApplicationFlags, customId, referrerId };
-                id = undefined;
-                const tmp6 = locationObject(dependencyMap[19]);
-                if ("channel" === context.type) {
-                  id = context.channel.id;
-                }
-                locationObject = 1;
-                c0 = 1;
-                const obj5 = {
-                  value: tmp6Result.then((result) => {
-                            let tmp = result;
-                            if (tmp) {
-                              let tmp2Result;
-                              if (closure_1_2 != null) {
-                                const obj = { applicationId };
-                                tmp2Result = tmp2(obj);
-                              }
-                              tmp = tmp2Result;
-                            }
-                            return tmp;
-                          }),
-                  done: false
-                };
-                tmp6Result = tmp6(obj4);
-                return obj5;
-              }
-            } else if (arg0 === 1) {
-              c0 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c0 = 3;
-              let obj = { value, done: true };
-              return obj;
-            }
-            c0 = 3;
-            return { value: "IconComponent", done: null };
-          } catch (tmp16) {
-            c0 = 3;
-            throw tmp16;
-          }
+          c2 = 3;
+          return { value: "IconComponent", done: null };
+        } catch (tmp23) {
+          c2 = 3;
+          throw tmp23;
         }
-      });
-    } else {
-      return tmp2.LEAVE === tmp ? (() => {
-        if (!EmbeddedActivitiesStore.isLaunchingActivity()) {
-          if (null != closure_12) {
-            const obj2 = { location: tmp.location, applicationId: str };
-            const obj = leaveEmbeddedActivity;
-            const result = obj.leaveEmbeddedActivity(obj2);
-          }
-          if (dependencyMap != null) {
-            const obj3 = { applicationId: str };
-            tmp7(obj3);
-          }
+      }
+    });
+  } else {
+    return obj.LEAVE === tmp ? (() => {
+      if (!EmbeddedActivitiesStore.isLaunchingActivity()) {
+        if (null != closure_12) {
+          const obj2 = { location: tmp.location, applicationId: str };
+          const obj = leaveEmbeddedActivity;
+          const result = obj.leaveEmbeddedActivity(obj2);
         }
-      }) : undefined;
-    }
+        if (dependencyMap != null) {
+          const obj3 = { applicationId: str };
+          tmp7(obj3);
+        }
+      }
+    }) : undefined;
   }
 });
 let closure_9 = tmp4;
@@ -796,7 +800,7 @@ function getStaffReleasePhase(application, client_platform_config) {
   let replaced;
   if (STAFF_RELEASE_PHASES.includes(str)) {
     const str4 = str.replace("_", " ");
-    replaced = str4.replace(/(^\w|\s\w)/g, f112338);
+    replaced = str4.replace(/(^\w|\s\w)/g, f112526);
   }
   return replaced;
 }

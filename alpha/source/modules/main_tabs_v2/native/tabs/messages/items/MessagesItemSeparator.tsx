@@ -1,9 +1,9 @@
-// Module ID: 17441
-// Function ID: 17442
+// Module ID: 17485
+// Function ID: 17486
 // Name: MessagesItemSeparator
 // Dependencies: [19, 17, 21, 587, 4969, 558, 576, 2]
 
-// Module 17441 (MessagesItemSeparator)
+// Module 17485 (MessagesItemSeparator)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

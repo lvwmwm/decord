@@ -1,15 +1,15 @@
-// Module ID: 7233
-// Function ID: 7234
+// Module ID: 7246
+// Function ID: 7247
 // Name: BottomSheetTitleHeader
-// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 1499, 5238, 5220, 6910, 2]
+// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 1499, 5250, 5232, 6923, 2]
 
-// Module 7233 (BottomSheetTitleHeader)
+// Module 7246 (BottomSheetTitleHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
-import useToken from "useToken" /* 5238 */;
-import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 6910 */;
+import useToken from "useToken" /* 5250 */;
+import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 6923 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -20,7 +20,7 @@ import size from "module_2" /* 2 */;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const Text_Text = tmp(5220);
+const Text_Text = tmp(5232);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;

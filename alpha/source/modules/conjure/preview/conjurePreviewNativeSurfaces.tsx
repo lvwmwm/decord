@@ -1,12 +1,12 @@
-// Module ID: 10739
-// Function ID: 10740
+// Module ID: 10761
+// Function ID: 10762
 // Name: conjurePreviewNativeSurfaces
-// Dependencies: [1087, 9245, 2]
+// Dependencies: [1087, 9268, 2]
 // Exports: beginNativeSurfaceSessionForFrame
 
-// Module 10739 (conjurePreviewNativeSurfaces)
+// Module 10761 (conjurePreviewNativeSurfaces)
 import Constants from "Constants" /* 1087 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 9245 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 9268 */;
 import size from "module_2" /* 2 */;
 
 function asString(str) {
@@ -146,15 +146,15 @@ let obj = {
   },
   [RPCCommands.REQUEST_DEVICE_PERMISSIONS]: (args) => {
     let found;
-    const f107702 = (permission) => ({ permission, state: "denied" });
+    const f107894 = (permission) => ({ permission, state: "denied" });
     if (Array.isArray(args.args.permissions)) {
       const permissions = args.args.permissions;
       found = permissions.filter((item) => typeof item === "string");
     } else {
       found = [];
     }
-    obj = { result: { permissions: found.map(f107702) }, answered: "denied; an agent may not grant device access", options: found };
-    ({ permissions: found.map(f107702) });
+    obj = { result: { permissions: found.map(f107894) }, answered: "denied; an agent may not grant device access", options: found };
+    ({ permissions: found.map(f107894) });
     return obj;
   },
   [RPCCommands.CAPTURE_SCREEN]: () => ({ result: { status: "permission_denied" }, answered: "denied; an agent may not capture the screen" }),
@@ -175,8 +175,8 @@ let obj = {
   [RPCCommands.HIDE_TOOLTIP]: () => ({ result: { hidden: true }, answered: "hidden" }),
   [RPCCommands.OPEN_MEDIA_VIEWER]: () => ({ result: { opened: true }, answered: "opened" }),
   [RPCCommands.SHOW_TOAST]: () => ({ result: { shown: true }, answered: "shown" }),
-  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "ix", answered: "Arbeit" }),
-  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "ix", answered: "Arbeit" })
+  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "ix", answered: "<string:3672396257>" }),
+  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "ix", answered: "<string:3672396257>" })
 };
 let closure_5 = {
   drain() {
@@ -210,7 +210,7 @@ export const beginNativeSurfaceSessionForFrame = function beginNativeSurfaceSess
       closure_6.unshift(obj2);
     }
     if (1 === arr.length) {
-      obj = obj2(9245);
+      obj = obj2(9268);
       let result = obj.setRpcCommandInterceptor(answerFor);
     }
     return {

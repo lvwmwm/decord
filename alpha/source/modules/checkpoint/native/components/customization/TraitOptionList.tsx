@@ -1,19 +1,19 @@
-// Module ID: 12964
-// Function ID: 12965
+// Module ID: 12987
+// Function ID: 12988
 // Name: TraitOptionList
-// Dependencies: [19, 17, 4970, 6001, 21, 587, 4969, 558, 576, 7947, 6347, 504, 5253, 5038, 5585, 1499, 5192, 5198, 12965, 2]
+// Dependencies: [19, 17, 4970, 6013, 21, 587, 4969, 558, 576, 7960, 6360, 504, 5265, 5050, 5597, 1499, 5204, 5210, 12988, 2]
 
-// Module 12964 (TraitOptionList)
+// Module 12987 (TraitOptionList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
-import HapticUtils from "HapticUtils" /* 5198 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6347 */;
-import inlineStyles from "inlineStyles" /* 7947 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5050 */;
+import HapticUtils from "HapticUtils" /* 5210 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6360 */;
+import inlineStyles from "inlineStyles" /* 7960 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
-import CheckpointConstants from "CheckpointConstants" /* 6001 */;
+import CheckpointConstants from "CheckpointConstants" /* 6013 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -45,7 +45,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Select
   const tmp4 = closure_13();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { points: CheckpointCustomizationUtils.TRAIT_OPTION_SHAPE_POINTS, fill: "transparent", stroke: metroRequire, strokeWidth: CheckpointCustomizationUtils.TRAIT_OPTION_STROKE_WIDTH };
-    const Polygon = tmp(7947).Polygon;
+    const Polygon = tmp(7960).Polygon;
     const tmp8 = React4(Polygon, obj2);
     cResult[0] = tmp8;
     first = tmp8;

@@ -1,11 +1,11 @@
-// Module ID: 9010
-// Function ID: 9011
+// Module ID: 9033
+// Function ID: 9034
 // Name: useStartEvent
-// Dependencies: [5, 32, 19, 558, 576, 9011, 9012, 6359, 2]
+// Dependencies: [5, 32, 19, 558, 576, 9034, 9035, 6372, 2]
 
-// Module 9010 (useStartEvent)
+// Module 9033 (useStartEvent)
 import react2 from "react" /* 576 */;
-import StartEventUtilsAll from "StartEventUtils" /* 9011 */;
+import StartEventUtilsAll from "StartEventUtils" /* 9034 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

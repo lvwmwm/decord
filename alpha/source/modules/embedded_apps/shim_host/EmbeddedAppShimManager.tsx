@@ -1,15 +1,15 @@
-// Module ID: 18702
-// Function ID: 18703
+// Module ID: 18746
+// Function ID: 18747
 // Name: EmbeddedAppShimManager
-// Dependencies: [32, 6760, 1087, 18703, 11424, 7199, 1123, 2]
+// Dependencies: [32, 6773, 1087, 18747, 11444, 7212, 1123, 2]
 
-// Module 18702 (EmbeddedAppShimManager)
+// Module 18746 (EmbeddedAppShimManager)
 import Constants from "Constants" /* 1087 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
-import EmbeddedAppShimActionCreators from "EmbeddedAppShimActionCreators" /* 11424 */;
+import EmbeddedAppShimActionCreators from "EmbeddedAppShimActionCreators" /* 11444 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import FramesStore from "FramesStore" /* 6760 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7199 */;
+import FramesStore from "FramesStore" /* 6773 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7212 */;
 import size from "module_2" /* 2 */;
 
 function getParentState(iframeId) {
@@ -30,8 +30,8 @@ function handleShimPipeOpen(iframeId) {
   let value = map.get(iframeId);
   if (null == value) {
     let tmp;
-    const createEmbeddedAppShimHost = iframeId(18703).createEmbeddedAppShimHost;
-    iframeId(18703);
+    const createEmbeddedAppShimHost = iframeId(18747).createEmbeddedAppShimHost;
+    iframeId(18747);
     const frameByIframeId = FramesStore.getFrameByIframeId(iframeId);
     if (null != frameByIframeId) {
       tmp = { muted: frameByIframeId.data.muted };
@@ -65,11 +65,16 @@ function handleIFrameUnmount(id) {
   }
 }
 function updateParentStates() {
+  let obj;
+  let tmp6;
   const tmp2 = map[Symbol.iterator]();
   while (tmp2 !== undefined) {
     let tmp5 = _slicedToArray(tmp3, 2);
-    let obj = tmp5[1];
-    let setParentStateResult = obj.setParentState(getParentState(tmp5[0]));
+    [tmp6, obj] = tmp5;
+    let tmp7 = tmp6;
+    if (null != FramesStore.getFrameByIframeId(tmp6)) {
+      let setParentStateResult = obj.setParentState(getParentState(tmp7));
+    }
     continue;
   }
 }

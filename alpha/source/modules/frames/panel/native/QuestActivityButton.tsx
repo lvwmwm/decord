@@ -1,24 +1,24 @@
-// Module ID: 18391
-// Function ID: 18392
+// Module ID: 18435
+// Function ID: 18436
 // Name: QuestActivityButton
-// Dependencies: [19, 17, 4970, 7761, 18392, 6695, 21, 5038, 7947, 4969, 587, 9546, 504, 6657, 18393, 2002, 5196, 18394, 5192, 5214, 16343, 18395, 14110, 1128, 14082, 2]
+// Dependencies: [19, 17, 4970, 7774, 18436, 6708, 21, 5050, 7960, 4969, 587, 9569, 504, 6670, 18437, 2002, 5208, 18438, 5204, 5226, 16393, 18439, 14134, 1128, 14106, 2]
 
-// Module 18391 (QuestActivityButton)
+// Module 18435 (QuestActivityButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import timing from "timing" /* 5192 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6657 */;
-import QuestConstants from "QuestConstants" /* 6695 */;
-import inlineStyles from "inlineStyles" /* 7947 */;
-import QuestMatchingUtils from "QuestMatchingUtils" /* 14082 */;
+import timing from "timing" /* 5204 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6670 */;
+import QuestConstants from "QuestConstants" /* 6708 */;
+import inlineStyles from "inlineStyles" /* 7960 */;
+import QuestMatchingUtils from "QuestMatchingUtils" /* 14106 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
-import QuestStore from "QuestStore" /* 7761 */;
-import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 18392 */;
+import QuestStore from "QuestStore" /* 7774 */;
+import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 18436 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5050 */;
 import createStyles from "createStyles" /* 4969 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ function QuestActivityButtonInner(quest) {
   let confetti;
   let tmp = quest;
   let tmp2 = dependencyMap;
-  let obj = quest(9546);
+  let obj = quest(9569);
   const completedRatio = obj.useQuestCompletionDetails(quest).completedRatio;
   let obj2 = quest(504);
   let items = [sharedValue];
@@ -81,11 +81,11 @@ function QuestActivityButtonInner(quest) {
     if (null == enrolledAt) {
       const obj2 = { questId: quest.id };
       const obj3 = ModalActionCreatorsDefault;
-      obj3.pushLazy(asyncRequire(18393, dependencyMap.paths), obj2, QUEST_ACTIVITY_UNENROLLED_MODAL_KEY);
+      obj3.pushLazy(asyncRequire(18437, dependencyMap.paths), obj2, QUEST_ACTIVITY_UNENROLLED_MODAL_KEY);
     } else {
       const obj4 = { questId: quest.id };
       const obj = ActionSheetActionCreatorsDefault;
-      obj.openLazy(asyncRequire(18394, dependencyMap.paths), "QuestProgressBottomSheet", obj4);
+      obj.openLazy(asyncRequire(18438, dependencyMap.paths), "QuestProgressBottomSheet", obj4);
     }
   }, items1);
   if (quest != null) {
@@ -117,11 +117,11 @@ function QuestActivityButtonInner(quest) {
     tmp9 = null != completedAt;
   }
   closure_4 = tmp9;
-  const tmpResult = tmp(5038);
+  const tmpResult = tmp(5050);
   sharedValue = tmpResult.useSharedValue(num);
   let num2 = 0;
-  const useSharedValue = tmp(5038).useSharedValue;
-  tmp(5038);
+  const useSharedValue = tmp(5050).useSharedValue;
+  tmp(5050);
   if (tmp9) {
     num2 = 1;
   }
@@ -137,7 +137,7 @@ function QuestActivityButtonInner(quest) {
   fn.__workletHash = 4459043613798;
   fn.__initData = __initData;
   const items2 = [tmp15.confetti];
-  const tmpResult5 = tmp(5038);
+  const tmpResult5 = tmp(5050);
   const animatedStyle = tmpResult5.useAnimatedStyle(fn);
   const memo = obj3.useMemo(() => {
     let items;
@@ -154,7 +154,7 @@ function QuestActivityButtonInner(quest) {
   fn2.__workletHash = 3373122453897;
   fn2.__initData = __initData2;
   const items3 = [sharedValue, num, stateFromStores];
-  const tmpResult6 = tmp(5038);
+  const tmpResult6 = tmp(5050);
   const animatedProps = tmpResult6.useAnimatedProps(fn2);
   const effect = obj3.useEffect(() => {
     num = 500;
@@ -197,25 +197,25 @@ function QuestActivityButtonInner(quest) {
   ({ container: arr6[0], completionGlow: arr6[1] } = tmp15);
   items5[2] = animatedStyle;
   const obj5 = { style: memo, pointerEvents: "none", children: closure_9(tmp21, obj6) };
-  View = stateFromStores(5038).View;
-  obj6 = { ref, source: tmp(16343), autoPlay: false, loop: false };
-  tmp21 = stateFromStores(5214);
+  View = stateFromStores(5050).View;
+  obj6 = { ref, source: tmp(16393), autoPlay: false, loop: false };
+  tmp21 = stateFromStores(5226);
   items6 = [closure_9(closure_4, obj5), , , ];
   const obj7 = { style: tmp15.buttonWrapper, children: closure_9(tmp22, obj8) };
-  obj8 = { icon: stateFromStores(14110), onPress: callback, accessibilityLabel: intl.string(tmp(1128).t.JALI2K) };
-  tmp22 = stateFromStores(18395);
+  obj8 = { icon: stateFromStores(14134), onPress: callback, accessibilityLabel: intl.string(tmp(1128).t.JALI2K) };
+  tmp22 = stateFromStores(18439);
   intl = tmp(1128).intl;
   items6[1] = closure_9(closure_4, obj7);
   const obj9 = { pointerEvents: "none", style: tmp15.canvas, children: closure_9(Svg, size) };
   size = { height: v32, width: v32, children: closure_9(Circle, obj10) };
-  Svg = tmp(7947).Svg;
+  Svg = tmp(7960).Svg;
   obj10 = { cx: 16, cy: 16, r: 14.3, fill: "none", stroke: stateFromStores(587).unsafe_rawColors.OPACITY_32, strokeWidth: 3.4, strokeDasharray: result };
-  Circle = tmp(7947).Circle;
+  Circle = tmp(7960).Circle;
   items6[2] = closure_9(closure_4, obj9);
   const obj11 = { pointerEvents: "none", style: tmp15.canvas, children: closure_9(Svg2, size1) };
   size1 = { height: v32, width: v32, children: closure_9(closure_12, obj12) };
   obj12 = { cx: 16, cy: 16, r: 14.3, fill: "none", stroke: tmp15.progressPath.color, strokeWidth: 3.4, strokeDasharray: result, animatedProps };
-  Svg2 = tmp(7947).Svg;
+  Svg2 = tmp(7960).Svg;
   items6[3] = closure_9(closure_4, obj11);
   return closure_10(View, obj4);
 }
@@ -283,7 +283,7 @@ const memoResult = react.memo(function QuestActivityButton(applicationId) {
     if (!tmp2) {
       const obj2 = { questId: memo.id };
       const obj = ModalActionCreatorsDefault;
-      obj.pushLazy(asyncRequire(18393, dependencyMap.paths), obj2, QUEST_ACTIVITY_UNENROLLED_MODAL_KEY);
+      obj.pushLazy(asyncRequire(18437, dependencyMap.paths), obj2, QUEST_ACTIVITY_UNENROLLED_MODAL_KEY);
     }
   }, items4);
   let tmp6 = null;

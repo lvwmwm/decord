@@ -1,18 +1,18 @@
-// Module ID: 7266
-// Function ID: 7267
+// Module ID: 7279
+// Function ID: 7280
 // Name: UserProfileRolesCard
-// Dependencies: [19, 17, 4881, 4875, 1087, 21, 4969, 587, 558, 576, 7267, 4797, 7269, 7270, 5648, 1128, 7268, 7275, 7284, 5220, 7286, 6893, 7287, 504, 7288, 2]
+// Dependencies: [19, 17, 4881, 4875, 1087, 21, 4969, 587, 558, 576, 7280, 4797, 7282, 7283, 5660, 1128, 7281, 7288, 7297, 5232, 7299, 6906, 7300, 504, 7301, 2]
 
-// Module 7266 (UserProfileRolesCard)
+// Module 7279 (UserProfileRolesCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import ToastUtils from "ToastUtils" /* 5648 */;
-import ClipboardUtils from "ClipboardUtils" /* 7270 */;
-import VerifiedRoleIconDefault from "VerifiedRoleIcon" /* 7284 */;
-import RoleIconDefault from "RoleIcon" /* 7286 */;
-import UserProfileRoleUtils from "UserProfileRoleUtils" /* 7287 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import ToastUtils from "ToastUtils" /* 5660 */;
+import ClipboardUtils from "ClipboardUtils" /* 7283 */;
+import VerifiedRoleIconDefault from "VerifiedRoleIcon" /* 7297 */;
+import RoleIconDefault from "RoleIcon" /* 7299 */;
+import UserProfileRoleUtils from "UserProfileRoleUtils" /* 7300 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 4881 */;
 import GuildRoleStore from "GuildRoleStore" /* 4875 */;
@@ -120,7 +120,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleItem(rol
     if (cResult[3] === role.id) {
       tmp8 = cResult[4];
     }
-    let tmpResult = tmp(7267);
+    let tmpResult = tmp(7280);
     const roleIconProps = tmpResult.useRoleIconProps(tmp8);
     const tags = role.tags;
     let guild_connections;
@@ -138,7 +138,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleItem(rol
       cResult[5] = obj2;
       cResult[6] = obj3;
     }
-    const tmp17 = guildId(7269);
+    const tmp17 = guildId(7282);
     if (cResult[7] === tmp5) {
       if (cResult[10] === tmp5) {
         if (cResult[11] === role) {
@@ -572,7 +572,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileR
           tmp13 = tmp20;
         }
         const obj2 = { title: tmp14, style, children: tmp16 };
-        const tmp23 = closure_9(guildId(7288), obj2);
+        const tmp23 = closure_9(guildId(7301), obj2);
         cResult[11] = style;
         cResult[12] = tmp16;
         cResult[13] = tmp23;
@@ -617,7 +617,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileR
   let tmp4 = null;
   if (0 !== roles.length) {
     const obj2 = { title: intl.string(userId(1128).t["LPJmL/"]), style, children: closure_9(closure_16, obj3) };
-    const tmp7 = guildId(7288);
+    const tmp7 = guildId(7301);
     intl = tmp(1128).intl;
     obj3 = { guildId, guildMemberRoleIds: roles };
     tmp4 = closure_9(tmp7, obj2);

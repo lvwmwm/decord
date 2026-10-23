@@ -1,14 +1,14 @@
-// Module ID: 7903
-// Function ID: 7904
+// Module ID: 7916
+// Function ID: 7917
 // Name: AgeVerificationQuestUnsupportedAlertModal
-// Dependencies: [19, 21, 558, 576, 1128, 3090, 5900, 5900, 2]
+// Dependencies: [19, 21, 558, 576, 1128, 3090, 5912, 5912, 2]
 
-// Module 7903 (AgeVerificationQuestUnsupportedAlertModal)
+// Module 7916 (AgeVerificationQuestUnsupportedAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import _modDef3090 from "module_3090" /* 3090 */;
-import AlertModal2 from "AlertModal" /* 5900 */;
+import AlertModal2 from "AlertModal" /* 5912 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -34,10 +34,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerific
     [tmp4, tmp5] = cResult;
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const AlertModal = tmp(5900).AlertModal;
-    const AlertActions = tmp(5900).AlertActions;
+    const AlertModal = tmp(5912).AlertModal;
+    const AlertActions = tmp(5912).AlertActions;
     ({ text: intl3.string(intl4.t["NX+WJN"]) });
-    const AlertActionButton = tmp(5900).AlertActionButton;
+    const AlertActionButton = tmp(5912).AlertActionButton;
     intl3 = tmp(1128).intl;
     const tmp11 = <AlertModal title={tmp4} content={tmp5} actions={null} />;
     cResult[2] = tmp11;

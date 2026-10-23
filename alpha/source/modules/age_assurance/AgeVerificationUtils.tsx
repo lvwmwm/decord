@@ -1,26 +1,26 @@
-// Module ID: 6639
-// Function ID: 6640
+// Module ID: 6652
+// Function ID: 6653
 // Name: AgeVerificationUtils
-// Dependencies: [5, 19, 5631, 502, 1392, 6640, 6641, 1112, 6642, 6644, 558, 2000, 576, 504, 5630, 6645, 1128, 3090, 6646, 2]
+// Dependencies: [5, 19, 5643, 502, 1392, 6653, 6654, 1112, 6655, 6657, 558, 2000, 576, 504, 5642, 6658, 1128, 3090, 6659, 2]
 // Exports: ageGateSourceHasLightboxBackdrop, getAgeVerificationGetStartedSubtitle, getAgeVerificationGetStartedTitle, isAgeVerified, isAssignedByDiscord, isFullscreenAgeVerificationEntryPoint, isVerifiedAdult, isVerifiedTeen, maybePerformReactiveCheck, shouldShowTiggerPawtect, useShouldShowTiggerPawtect
 
-// Module 6639 (AgeVerificationUtils)
+// Module 6652 (AgeVerificationUtils)
 import react2 from "react" /* 576 */;
 import intl7 from "intl" /* 1128 */;
 import Server from "Server" /* 2000 */;
 import _modDef3090 from "module_3090" /* 3090 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5630 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6641 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6642 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6644 */;
-import usePreviousDefault from "usePrevious" /* 6645 */;
-import ReactiveCheckActionCreators from "ReactiveCheckActionCreators" /* 6646 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5642 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6654 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6655 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6657 */;
+import usePreviousDefault from "usePrevious" /* 6658 */;
+import ReactiveCheckActionCreators from "ReactiveCheckActionCreators" /* 6659 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5631 */;
+import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5643 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1392 */;
-import AgeVerificationStore from "AgeVerificationStore" /* 6640 */;
+import AgeVerificationStore from "AgeVerificationStore" /* 6653 */;
 import AgeGateConstants from "AgeGateConstants" /* 1112 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -48,8 +48,8 @@ function shouldCallReactiveCheck() {
   }
   let tmp7 = !tmp5;
   if (tmp7) {
-    tmp7 = RegionalFeatureConfigStore.isFeatureAgeGated(tmp3(6644).AgeGatedFeature.REACTIVE_CHECK) && AgeVerificationStore.shouldCallReactiveCheck();
-    const isFeatureAgeGatedResult = RegionalFeatureConfigStore.isFeatureAgeGated(tmp3(6644).AgeGatedFeature.REACTIVE_CHECK) && AgeVerificationStore.shouldCallReactiveCheck();
+    tmp7 = RegionalFeatureConfigStore.isFeatureAgeGated(tmp3(6657).AgeGatedFeature.REACTIVE_CHECK) && AgeVerificationStore.shouldCallReactiveCheck();
+    const isFeatureAgeGatedResult = RegionalFeatureConfigStore.isFeatureAgeGated(tmp3(6657).AgeGatedFeature.REACTIVE_CHECK) && AgeVerificationStore.shouldCallReactiveCheck();
   }
   return tmp7;
 }

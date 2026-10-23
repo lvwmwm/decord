@@ -1,0 +1,15 @@
+// Module ID: 10518
+// Function ID: 10519
+// Name: DATA_LENGTH
+// Dependencies: [1658]
+
+// Module 10518 (DATA_LENGTH)
+import _mod1658 from "module_1658" /* 1658 */;
+
+let Easing;
+const obj = { easeOutQuart: Easing.bezier(0.25, 1, 0.5, 1) };
+Easing = _mod1658.Easing;
+const Easing_export = obj;
+
+export const DATA_LENGTH = { SINGLE_ITEM: 1, [1]: "SINGLE_ITEM", DOUBLE_ITEM: 2, [2]: "DOUBLE_ITEM" };
+export { Easing_export as Easing };

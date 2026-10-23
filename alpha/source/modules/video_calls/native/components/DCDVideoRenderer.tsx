@@ -1,11 +1,11 @@
-// Module ID: 11392
-// Function ID: 11393
+// Module ID: 11415
+// Function ID: 11416
 // Name: DCDVideoRenderer
-// Dependencies: [5575, 11393, 2]
+// Dependencies: [5587, 11416, 2]
 
-// Module 11392 (DCDVideoRenderer)
-import VideoRendererNativeComponentDefault from "VideoRendererNativeComponent" /* 11393 */;
-import requireNativeComponentOrDefault from "requireNativeComponentOrDefault" /* 5575 */;
+// Module 11415 (DCDVideoRenderer)
+import VideoRendererNativeComponentDefault from "VideoRendererNativeComponent" /* 11416 */;
+import requireNativeComponentOrDefault from "requireNativeComponentOrDefault" /* 5587 */;
 import size from "module_2" /* 2 */;
 
 const obj = { componentName: "DCDVideoRenderer", componentFoundInstance: VideoRendererNativeComponentDefault };

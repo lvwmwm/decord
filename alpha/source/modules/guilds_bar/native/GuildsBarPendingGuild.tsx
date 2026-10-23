@@ -1,21 +1,21 @@
-// Module ID: 17710
-// Function ID: 17711
+// Module ID: 17754
+// Function ID: 17755
 // Name: GuildsBarPendingGuild
-// Dependencies: [19, 4996, 4839, 4995, 6686, 21, 4969, 587, 558, 576, 17662, 5238, 504, 6868, 17694, 17665, 4998, 6820, 17677, 17701, 17654, 5038, 17683, 5655, 2]
+// Dependencies: [19, 5001, 4839, 5000, 6699, 21, 4969, 587, 558, 576, 17706, 5250, 504, 6881, 17738, 17709, 5003, 6833, 17721, 17745, 17698, 5050, 17727, 5667, 2]
 
-// Module 17710 (GuildsBarPendingGuild)
+// Module 17754 (GuildsBarPendingGuild)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4998 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6820 */;
-import GuildIcon from "GuildIcon" /* 6868 */;
-import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 17654 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17677 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5003 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6833 */;
+import GuildIcon from "GuildIcon" /* 6881 */;
+import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 17698 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17721 */;
 import react from "react" /* 19 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4996 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5001 */;
 import GuildRecord from "GuildRecord" /* 4839 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
-import SortedGuildStore from "SortedGuildStore" /* 6686 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5000 */;
+import SortedGuildStore from "SortedGuildStore" /* 6699 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;

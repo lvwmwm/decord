@@ -1,20 +1,20 @@
-// Module ID: 15846
-// Function ID: 15847
+// Module ID: 15879
+// Function ID: 15880
 // Name: UserPrimaryGuildListBottomSheet
-// Dependencies: [32, 19, 17, 8260, 21, 4969, 1384, 587, 558, 576, 8634, 5025, 5196, 1128, 6868, 9201, 6973, 6888, 14122, 12, 4978, 14125, 7263, 7233, 5230, 7283, 7130, 5220, 8926, 7205, 5251, 2]
+// Dependencies: [32, 19, 17, 8272, 21, 4969, 1384, 587, 558, 576, 8652, 5037, 5208, 1128, 6881, 9224, 6986, 6901, 14146, 12, 4978, 14149, 7276, 7246, 5242, 7296, 7143, 5232, 8949, 7218, 5263, 2]
 
-// Module 15846 (UserPrimaryGuildListBottomSheet)
+// Module 15879 (UserPrimaryGuildListBottomSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl11 from "intl" /* 1128 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4978 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import GuildIconDefault from "GuildIcon" /* 6868 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7263 */;
-import GuildTagConstants from "GuildTagConstants" /* 8260 */;
-import Form from "Form" /* 8926 */;
-import openGuildTagCreateFlowDefault from "openGuildTagCreateFlow" /* 14125 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
+import GuildIconDefault from "GuildIcon" /* 6881 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7276 */;
+import GuildTagConstants from "GuildTagConstants" /* 8272 */;
+import Form from "Form" /* 8949 */;
+import openGuildTagCreateFlowDefault from "openGuildTagCreateFlow" /* 14149 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -84,7 +84,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
     } else {
       tmp14 = cResult[4];
     }
-    const tmpResult = tmp(5025);
+    const tmpResult = tmp(5037);
     const radioA11yNative = tmpResult.useRadioA11yNative(tmp14);
     ({ accessibilityRole, accessibilityState } = radioA11yNative);
     let id1;
@@ -128,7 +128,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
                 }
                 if (cResult[19] !== selected) {
                   const obj3 = { selected };
-                  const tmp32 = closure_7(tmp(6973).FormRadio, obj3);
+                  const tmp32 = closure_7(tmp(6986).FormRadio, obj3);
                   cResult[19] = selected;
                   cResult[20] = tmp32;
                   tmp30 = tmp32;
@@ -161,7 +161,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
                       }
                     }
                     const obj4 = { start, end, onPress: tmp18, label: tmp20, icon: tmp21, accessibilityRole, accessibilityState, trailing: tmp33 };
-                    const tmp39 = closure_7(tmp(6888).TableRow, obj4);
+                    const tmp39 = closure_7(tmp(6901).TableRow, obj4);
                     cResult[25] = accessibilityRole;
                     cResult[26] = accessibilityState;
                     cResult[27] = end;
@@ -191,7 +191,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
           const obj7 = { containerStyles: null, textStyle: null, guildTag: tag, guildBadge: tmp8, badgeSize: GuildTagBadgeSize.SIZE_16, textVariant: "heading-md/semibold", textColor: "text-strong" };
           ({ tag: obj5.containerStyles, tagStyles: obj5.textStyle } = tmp4);
           tag = profile.tag;
-          const BaseGuildTagChiplet = tmp(9201).BaseGuildTagChiplet;
+          const BaseGuildTagChiplet = tmp(9224).BaseGuildTagChiplet;
           tmp28Result = closure_7(BaseGuildTagChiplet, obj7);
         }
         cResult[13] = tmp8;
@@ -204,8 +204,8 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
       }
       let tmp22 = null;
       if (null != item) {
-        const obj8 = { style: tmp4.guildIcon, guild: item, size: tmp(6868).GuildIconSizes.SMALL_32 };
-        const tmp25 = onSelectGuild(6868);
+        const obj8 = { style: tmp4.guildIcon, guild: item, size: tmp(6881).GuildIconSizes.SMALL_32 };
+        const tmp25 = onSelectGuild(6881);
         tmp22 = closure_7(tmp25, obj8);
       }
       cResult[10] = item;
@@ -238,9 +238,9 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
   let guildTagBadgeUrl = null != item;
   if (guildTagBadgeUrl) {
     let badge1;
-    const getGuildTagBadgeUrl = tmp(8634).getGuildTagBadgeUrl;
+    const getGuildTagBadgeUrl = tmp(8652).getGuildTagBadgeUrl;
     let id = item.id;
-    tmp(8634);
+    tmp(8652);
     if (profile != null) {
       badge1 = profile.badge;
     }
@@ -278,15 +278,15 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
   let guildTagBadgeUrl = null != item;
   if (guildTagBadgeUrl) {
     let badge;
-    const getGuildTagBadgeUrl = item(8634).getGuildTagBadgeUrl;
+    const getGuildTagBadgeUrl = item(8652).getGuildTagBadgeUrl;
     let id = item.id;
-    item(8634);
+    item(8652);
     if (profile != null) {
       badge = profile.badge;
     }
     guildTagBadgeUrl = getGuildTagBadgeUrl(id, badge, GuildTagBadgeSize.SIZE_24);
   }
-  let obj = item(5025);
+  let obj = item(5037);
   const radioA11yNative = obj.useRadioA11yNative({ selected });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   const obj2 = {
@@ -311,7 +311,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
     accessibilityState,
     trailing: tmp15(tmp16, obj4)
   };
-  const TableRow = item(6888).TableRow;
+  const TableRow = item(6901).TableRow;
   if (null != item) {
     name = item.name;
   } else {
@@ -320,7 +320,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
   }
   tmp11Result = null;
   if (null != item) {
-    const obj3 = { style: tmp.guildIcon, guild: item, size: item(6868).GuildIconSizes.SMALL_32 };
+    const obj3 = { style: tmp.guildIcon, guild: item, size: item(6881).GuildIconSizes.SMALL_32 };
     const tmp14 = GuildIconDefault;
     tmp11Result = tmp11(tmp14, obj3);
   }
@@ -335,10 +335,10 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
     const obj9 = { containerStyles: null, textStyle: null, guildTag: tag, guildBadge: guildTagBadgeUrl, badgeSize: GuildTagBadgeSize.SIZE_16, textVariant: "heading-md/semibold", textColor: "text-strong" };
     ({ tag: obj5.containerStyles, tagStyles: obj5.textStyle } = tmp);
     tag = profile.tag;
-    const BaseGuildTagChiplet = tmp8(9201).BaseGuildTagChiplet;
+    const BaseGuildTagChiplet = tmp8(9224).BaseGuildTagChiplet;
     tmp11Result2 = tmp11(BaseGuildTagChiplet, obj9);
   }
-  items = [tmp11Result2, closure_7(item(6973).FormRadio, { selected })];
+  items = [tmp11Result2, closure_7(item(6986).FormRadio, { selected })];
   return closure_7(TableRow, obj2);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -366,7 +366,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPrimaryG
   str = tmp5[0];
   const tmp6 = tmp5[1];
   ref = ref.useRef(null);
-  const obj3 = selectedGuildId(14122);
+  const obj3 = selectedGuildId(14146);
   const guildTagCreationUpsell = obj3.useGuildTagCreationUpsell("UserPrimaryGuildListBottomSheet");
   const creatableGuilds = guildTagCreationUpsell.creatableGuilds;
   const isUpsellVisible = guildTagCreationUpsell.isUpsellVisible;
@@ -498,7 +498,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPrimaryG
           }
         }
         ({ placeholder: intl.string(tmp(1128).t.uohsSv), accessibilityLabel: intl2.string(tmp(1128).t.uohsSv), onChange: tmp6 });
-        const SearchBar = tmp(7130).SearchBar;
+        const SearchBar = tmp(7143).SearchBar;
         intl = tmp(1128).intl;
         intl2 = tmp(1128).intl;
         class V {
@@ -603,7 +603,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPrimaryG
             }
           }
         }
-        const Button = tmp(5230).Button;
+        const Button = tmp(5242).Button;
         const intl3 = tmp(1128).intl;
         tmp37[0] = intl3.string(tmp(1128).t.CumH4u);
         const intl4 = tmp(1128).intl;

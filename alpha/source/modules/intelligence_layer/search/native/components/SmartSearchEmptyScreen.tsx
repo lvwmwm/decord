@@ -1,18 +1,18 @@
-// Module ID: 17993
-// Function ID: 17994
+// Module ID: 18037
+// Function ID: 18038
 // Name: SmartSearchEmptyScreen
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5579, 4978, 1128, 17994, 5220, 4085, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5591, 4978, 1128, 18038, 5232, 4085, 2]
 
-// Module 17993 (SmartSearchEmptyScreen)
+// Module 18037 (SmartSearchEmptyScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import _modDef4085 from "module_4085" /* 4085 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4978 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5579 */;
-import SuggestedSearchListDefault from "SuggestedSearchList" /* 17994 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5591 */;
+import SuggestedSearchListDefault from "SuggestedSearchList" /* 18038 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -99,7 +99,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const _Symbol = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
       const obj5 = { variant: "text-sm/semibold", color: "text-muted", accessibilityRole: "header", children: intl.string(_modDef4085["HX/WYf"]) };
-      const Text = tmp(5220).Text;
+      const Text = tmp(5232).Text;
       intl = tmp(1128).intl;
       const tmp17 = hasOwnProperty(Text, obj5);
       cResult[10] = tmp17;
@@ -110,7 +110,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const _Symbol2 = Symbol;
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
       const obj6 = { variant: "text-sm/semibold", color: "text-muted", accessibilityRole: "header", children: intl2.string(_modDef4085["0ySxbu"]) };
-      const Text2 = tmp(5220).Text;
+      const Text2 = tmp(5232).Text;
       intl2 = tmp(1128).intl;
       const tmp20 = hasOwnProperty(Text2, obj6);
       cResult[11] = tmp20;

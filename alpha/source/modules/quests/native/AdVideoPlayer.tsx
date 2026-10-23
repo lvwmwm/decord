@@ -1,18 +1,18 @@
-// Module ID: 16263
-// Function ID: 16264
+// Module ID: 16296
+// Function ID: 16297
 // Name: AdVideoPlayer
-// Dependencies: [32, 19, 17, 2001, 1087, 21, 587, 8771, 4969, 683, 558, 576, 16244, 5038, 5233, 5234, 5192, 5195, 1123, 504, 1384, 1257, 1633, 1128, 6893, 16264, 16266, 16268, 16270, 16271, 11742, 8745, 8747, 16272, 16273, 2]
+// Dependencies: [32, 19, 17, 2001, 1087, 21, 587, 8789, 4969, 683, 558, 576, 16277, 5050, 5245, 5246, 5204, 5207, 1123, 504, 1384, 1257, 1633, 1128, 6906, 16297, 16299, 16301, 16303, 16304, 11762, 8763, 8765, 16305, 16306, 2]
 
-// Module 16263 (AdVideoPlayer)
+// Module 16296 (AdVideoPlayer)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import timing from "timing" /* 5192 */;
-import timingPresets from "timingPresets" /* 5195 */;
-import spring from "spring" /* 5233 */;
-import TextTrackTypeDefault from "TextTrackType" /* 8771 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 16244 */;
+import timing from "timing" /* 5204 */;
+import timingPresets from "timingPresets" /* 5207 */;
+import spring from "spring" /* 5245 */;
+import media_playback_VideoDefault from "media_playback/Video" /* 8789 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 16277 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -46,12 +46,12 @@ let rect1;
 let rect2;
 let tmp2;
 let unpackModuleId;
-const springPresets = tmp2(5234);
+const springPresets = tmp2(5246);
 ({ View: hasOwnProperty, StyleSheet, Pressable: metroRequire, ActivityIndicator: metroImportDefault } = react_native);
 ({ AppStates: c9, ComponentActions: c10 } = Constants);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
 let rect = { left: nativeDefault.space.PX_16, right: nativeDefault.space.PX_16, top: nativeDefault.space.PX_16, bottom: nativeDefault.space.PX_16 };
-const TextTrackType = react.memo(TextTrackTypeDefault);
+const Video = react.memo(media_playback_VideoDefault);
 function hasVideoEnded(arg0, arg1) {
   return arg0 >= arg1 - 1;
 }

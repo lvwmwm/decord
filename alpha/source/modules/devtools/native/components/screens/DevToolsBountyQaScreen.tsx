@@ -1,18 +1,18 @@
-// Module ID: 16947
-// Function ID: 16948
+// Module ID: 16991
+// Function ID: 16992
 // Name: DevToolsBountyQaScreen
-// Dependencies: [5, 32, 19, 17, 7758, 21, 4969, 587, 5649, 558, 576, 1633, 6698, 7759, 504, 14086, 9547, 6702, 5220, 6969, 6970, 12213, 6888, 16366, 7048, 6972, 2]
+// Dependencies: [5, 32, 19, 17, 7771, 21, 4969, 587, 5661, 558, 576, 1633, 6711, 7772, 504, 14110, 9570, 6715, 5232, 6982, 6983, 12232, 6901, 16416, 7061, 6985, 2]
 
-// Module 16947 (DevToolsBountyQaScreen)
+// Module 16991 (DevToolsBountyQaScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5649 */;
-import AdCreativeType from "AdCreativeType" /* 6702 */;
-import QuestActionCreators from "QuestActionCreators" /* 9547 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5661 */;
+import AdCreativeType from "AdCreativeType" /* 6715 */;
+import QuestActionCreators from "QuestActionCreators" /* 9570 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7758 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7771 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -161,7 +161,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
         }
         if (cResult[16] !== str4) {
           let obj3 = { variant: "text-sm/medium", color: "text-muted", children: str4 };
-          const tmp24 = closure_8(tmp(5220).Text, obj3);
+          const tmp24 = closure_8(tmp(5232).Text, obj3);
           cResult[16] = str4;
           cResult[17] = tmp24;
           tmp22 = tmp24;
@@ -192,7 +192,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
           }
           const _Symbol2 = Symbol;
           if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp32 = closure_8(tmp(12213).UndoIcon, {});
+            const tmp32 = closure_8(tmp(12232).UndoIcon, {});
             cResult[23] = tmp32;
             tmp30 = tmp32;
           } else {
@@ -200,7 +200,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
           }
           if (cResult[24] !== tmp15) {
             let obj4 = { label: "Reset and re-serve", subLabel: "Clears serve, dismiss, claim, and impression for the selected scope, then asks the dock for a new decision.", icon: tmp30, onPress: tmp15 };
-            const tmp35 = closure_8(tmp(6888).TableRow, obj4);
+            const tmp35 = closure_8(tmp(6901).TableRow, obj4);
             cResult[24] = tmp15;
             cResult[25] = tmp35;
             tmp33 = tmp35;
@@ -209,8 +209,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
           }
           const _Symbol3 = Symbol;
           if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
-            let obj5 = { label: "Refresh Organic Serve", subLabel: "Re-runs the dock decision without clearing delivery state. Use to confirm a cooldown still blocks.", icon: closure_8(tmp(16366).RedoIcon, {}), onPress: tmp17 };
-            const TableRow = tmp(6888).TableRow;
+            let obj5 = { label: "Refresh Organic Serve", subLabel: "Re-runs the dock decision without clearing delivery state. Use to confirm a cooldown still blocks.", icon: closure_8(tmp(16416).RedoIcon, {}), onPress: tmp17 };
+            const TableRow = tmp(6901).TableRow;
             const tmp38 = closure_8(TableRow, obj5);
             cResult[26] = tmp38;
             tmp36 = tmp38;
@@ -253,7 +253,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
             }
             let obj7 = { title: "Dock QA", hasIcons: true, children: items2 };
             items2 = [tmp33, tmp36, tmp39];
-            const tmp44 = closure_9(tmp(6972).TableRowGroup, obj7);
+            const tmp44 = closure_9(tmp(6985).TableRowGroup, obj7);
             cResult[30] = tmp33;
             cResult[31] = tmp39;
             cResult[32] = tmp44;
@@ -261,8 +261,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
           }
           let tmp40 = null;
           if (null != stateFromStores) {
-            let obj8 = { label: "Reset Seen", subLabel: "Clears the Quest Home NEW pill for the last dock bounty. Does not restore the dock.", icon: closure_8(tmp(7048).EyeIcon, {}), onPress: tmp18 };
-            const TableRow2 = tmp(6888).TableRow;
+            let obj8 = { label: "Reset Seen", subLabel: "Clears the Quest Home NEW pill for the last dock bounty. Does not restore the dock.", icon: closure_8(tmp(7061).EyeIcon, {}), onPress: tmp18 };
+            const TableRow2 = tmp(6901).TableRow;
             tmp40 = closure_8(TableRow2, obj8);
           }
           cResult[27] = tmp18;
@@ -271,7 +271,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
           tmp39 = tmp40;
         }
         let obj9 = { title: "Reset scope", description: "Used by Reset and re-serve. Refresh Organic Serve ignores this.", value: str, onChange: tmp14, hasIcons: false, children: tmp25 };
-        const tmp29 = closure_8(tmp(6970).TableRadioGroup, obj9);
+        const tmp29 = closure_8(tmp(6983).TableRadioGroup, obj9);
         cResult[20] = str;
         cResult[21] = tmp25;
         cResult[22] = tmp29;

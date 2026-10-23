@@ -1,16 +1,16 @@
-// Module ID: 17428
-// Function ID: 17429
+// Module ID: 17472
+// Function ID: 17473
 // Name: HappeningNowAvatarStack
-// Dependencies: [32, 19, 17, 2068, 14262, 21, 4969, 587, 1202, 558, 576, 5038, 573, 5233, 9382, 1903, 5220, 17429, 2]
+// Dependencies: [32, 19, 17, 2068, 14286, 21, 4969, 587, 1202, 558, 576, 5050, 573, 5245, 9405, 1903, 5232, 17473, 2]
 
-// Module 17428 (HappeningNowAvatarStack)
+// Module 17472 (HappeningNowAvatarStack)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
-import spring from "spring" /* 5233 */;
-import ClipView from "ClipView" /* 9382 */;
-import ChannelAnimationConstants from "ChannelAnimationConstants" /* 14262 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5050 */;
+import spring from "spring" /* 5245 */;
+import ClipView from "ClipView" /* 9405 */;
+import ChannelAnimationConstants from "ChannelAnimationConstants" /* 14286 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import LocaleStore_mod from "LocaleStore" /* 2068 */;
@@ -104,8 +104,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HappeningNow
   let tmp7 = avatarSize(num2.useState(tmp6), 2);
   [tmp8, CHANNEL_SPRING_CONFIG] = tmp7;
   let num6 = 0;
-  const useSharedValue = tmp(5038).useSharedValue;
-  tmp(5038);
+  const useSharedValue = tmp(5050).useSharedValue;
+  tmp(5050);
   if (tmp4) {
     num6 = 1;
   }
@@ -128,7 +128,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HappeningNow
   }
   const tmpResult3 = tmp(573);
   const stateFromStores = tmpResult3.useStateFromStores(tmp11, tmp12);
-  const tmpResult4 = tmp(5038);
+  const tmpResult4 = tmp(5050);
   class J {
     constructor() {
       let obj2;
@@ -139,7 +139,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HappeningNow
       return obj;
     }
   }
-  let obj3 = { interpolate: tmp(5038).interpolate, typingValue: sharedValue, ELLIPSIS_WIDTH: 28 };
+  let obj3 = { interpolate: tmp(5050).interpolate, typingValue: sharedValue, ELLIPSIS_WIDTH: 28 };
   J.__closure = obj3;
   J.__workletHash = 14140918847743;
   J.__initData = __initData;

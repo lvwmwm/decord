@@ -1,29 +1,29 @@
-// Module ID: 9922
-// Function ID: 9923
+// Module ID: 9944
+// Function ID: 9945
 // Name: CustomEmojiContent
-// Dependencies: [19, 17, 6869, 4924, 4995, 1392, 1087, 21, 4969, 587, 2053, 1267, 9769, 5196, 9916, 504, 7238, 4923, 4918, 4893, 9806, 7269, 4797, 9923, 7475, 9917, 9920, 5649, 1128, 9924, 9926, 9928, 2002, 9620, 1202, 5230, 5655, 5220, 9929, 8926, 9930, 9931, 2]
+// Dependencies: [19, 17, 6882, 4924, 5000, 1392, 1087, 21, 4969, 587, 2053, 1267, 9791, 5208, 9938, 504, 7251, 4923, 4918, 4893, 9828, 7282, 4797, 9945, 7488, 9939, 9942, 5661, 1128, 9946, 9948, 9950, 2002, 9643, 1202, 5242, 5667, 5232, 9951, 8949, 9952, 9953, 2]
 // Exports: default
 
-// Module 9922 (CustomEmojiContent)
+// Module 9944 (CustomEmojiContent)
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2053 */;
 import RoleSubscriptionEmojiUtilsAll from "RoleSubscriptionEmojiUtils" /* 4923 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5649 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6869 */;
-import openUserSettings from "openUserSettings" /* 7475 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9769 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9920 */;
-import StarOutlineIcon2 from "StarOutlineIcon" /* 9924 */;
-import StarIcon2 from "StarIcon" /* 9926 */;
-import guild_GuildUtils from "guild/GuildUtils" /* 9929 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5661 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6882 */;
+import openUserSettings from "openUserSettings" /* 7488 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9791 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9942 */;
+import StarOutlineIcon2 from "StarOutlineIcon" /* 9946 */;
+import StarIcon2 from "StarIcon" /* 9948 */;
+import guild_GuildUtils from "guild/GuildUtils" /* 9951 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SubscriptionRoleStore from "SubscriptionRoleStore" /* 4924 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5000 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
@@ -324,7 +324,7 @@ export default function CustomEmojiContent(emojiNode) {
         handleOpenEmojiOptionsMenu = function handleOpenEmojiOptionsMenu() {
           const obj = ActionSheetActionCreatorsDefault;
           const obj2 = { emojiSrc: emojiNode.src };
-          obj.openLazy(asyncRequire(9928, dependencyMap.paths), "EmojiOptionsActionSheet", obj2, "stack");
+          obj.openLazy(asyncRequire(9950, dependencyMap.paths), "EmojiOptionsActionSheet", obj2, "stack");
         };
         intl5 = tmp2(tmp3[28]).intl;
         obj23 = { color: expressionSourceGuild(tmp3[9]).colors.INTERACTIVE_TEXT_DEFAULT };

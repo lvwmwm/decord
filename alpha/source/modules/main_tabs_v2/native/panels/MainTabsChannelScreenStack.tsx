@@ -1,29 +1,29 @@
-// Module ID: 17894
-// Function ID: 17895
+// Module ID: 17938
+// Function ID: 17939
 // Name: MainTabsChannelScreenStack
-// Dependencies: [32, 19, 17, 9677, 1087, 1098, 21, 4969, 558, 576, 5038, 17895, 17897, 5249, 5191, 5139, 5141, 17898, 5023, 11198, 17899, 5925, 5039, 1506, 5145, 17346, 11838, 5283, 5132, 17345, 584, 5146, 2]
+// Dependencies: [32, 19, 17, 9699, 1087, 1098, 21, 4969, 558, 576, 5050, 17939, 17941, 5261, 5203, 5151, 5153, 17942, 5035, 11221, 17943, 5937, 5051, 1506, 5157, 17390, 11857, 5295, 5144, 17389, 584, 5158, 2]
 
-// Module 17894 (MainTabsChannelScreenStack)
+// Module 17938 (MainTabsChannelScreenStack)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants2 from "Constants" /* 1098 */;
 import Link from "Link" /* 1506 */;
-import native from "native" /* 5023 */;
-import REAWorkaroundViewDefault from "REAWorkaroundView" /* 5039 */;
-import useChatLayoutDefault from "useChatLayout" /* 5139 */;
-import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 5141 */;
-import ChatInputUtils from "ChatInputUtils" /* 5145 */;
-import useThemeDefault from "useTheme" /* 5191 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5283 */;
-import react_native from "react-native" /* 9677 */;
-import reactDefault from "react" /* 11198 */;
-import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 11838 */;
-import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 17345 */;
-import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 17346 */;
-import navigationTTIEnabled from "navigationTTIEnabled" /* 17895 */;
-import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 17897 */;
-import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 17898 */;
-import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 17899 */;
+import native from "native" /* 5035 */;
+import REAWorkaroundViewDefault from "REAWorkaroundView" /* 5051 */;
+import useChatLayoutDefault from "useChatLayout" /* 5151 */;
+import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 5153 */;
+import ChatInputUtils from "ChatInputUtils" /* 5157 */;
+import useThemeDefault from "useTheme" /* 5203 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5295 */;
+import react_native from "react-native" /* 9699 */;
+import reactDefault from "react" /* 11221 */;
+import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 11857 */;
+import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 17389 */;
+import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 17390 */;
+import navigationTTIEnabled from "navigationTTIEnabled" /* 17939 */;
+import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 17941 */;
+import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 17942 */;
+import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 17943 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
@@ -46,9 +46,9 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let tmp5;
-const ReanimatedRexport = tmp(5038);
-const useMountEffect = tmp(5249);
-const react3 = tmp5(5925);
+const ReanimatedRexport = tmp(5050);
+const useMountEffect = tmp(5261);
+const react3 = tmp5(5937);
 function getKey(index) {
   return String(index.index);
 }
@@ -1365,8 +1365,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (cResult[7] !== sharedValue) {
     class J {
       constructor() {
-        closure_0 = setTimeout(() => { /* body not rendered: F153505 */ }, 10);
-        return () => { /* body not rendered: F153506 */ };
+        closure_0 = setTimeout(() => { /* body not rendered: F153806 */ }, 10);
+        return () => { /* body not rendered: F153807 */ };
       }
     }
     cResult[7] = sharedValue;
@@ -1375,24 +1375,24 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     class J {
       constructor() {
-        closure_0 = setTimeout(() => { /* body not rendered: F153505 */ }, 10);
-        return () => { /* body not rendered: F153506 */ };
+        closure_0 = setTimeout(() => { /* body not rendered: F153806 */ }, 10);
+        return () => { /* body not rendered: F153807 */ };
       }
     }
   }
   if (cResult[9] === shouldFreeze) {
     class J {
       constructor() {
-        closure_0 = setTimeout(() => { /* body not rendered: F153505 */ }, 10);
-        return () => { /* body not rendered: F153506 */ };
+        closure_0 = setTimeout(() => { /* body not rendered: F153806 */ }, 10);
+        return () => { /* body not rendered: F153807 */ };
       }
     }
     const effect1 = obj2.useEffect(tmp21, items);
     if (cResult[12] === firstScreenFrame) {
       class J {
         constructor() {
-          closure_0 = setTimeout(() => { /* body not rendered: F153505 */ }, 10);
-          return () => { /* body not rendered: F153506 */ };
+          closure_0 = setTimeout(() => { /* body not rendered: F153806 */ }, 10);
+          return () => { /* body not rendered: F153807 */ };
         }
       }
     }
@@ -1643,7 +1643,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         let isChatLockedOpen = tmp.type !== useChannelScreensFromNavigation.ChannelScreenType.DEFAULT;
         const tmp7 = require;
         if (!isChatLockedOpen) {
-          const tmp7Result = tmp7(5139);
+          const tmp7Result = tmp7(5151);
           isChatLockedOpen = tmp7Result.getChatLayout().isChatLockedOpen;
         }
         if (!isChatLockedOpen) {

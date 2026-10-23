@@ -1,27 +1,27 @@
-// Module ID: 11397
-// Function ID: 11398
+// Module ID: 11420
+// Function ID: 11421
 // Name: UserTile
-// Dependencies: [32, 19, 17, 5992, 11398, 502, 4821, 2014, 1087, 5618, 5704, 21, 4969, 587, 4966, 558, 576, 504, 11399, 1202, 11402, 5220, 1128, 8719, 11387, 11386, 11403, 11404, 11405, 11406, 6766, 10878, 11407, 10861, 11375, 5283, 11408, 2]
+// Dependencies: [32, 19, 17, 6004, 11421, 502, 4821, 2014, 1087, 5630, 5716, 21, 4969, 587, 4966, 558, 576, 504, 1202, 11422, 5232, 1128, 8737, 11410, 11409, 11423, 11424, 11425, 11426, 6779, 10901, 11427, 10884, 11398, 5295, 11428, 2]
 
-// Module 11397 (UserTile)
+// Module 11420 (UserTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import CallConstants from "CallConstants" /* 5618 */;
-import Constants2 from "Constants" /* 5704 */;
-import VoiceChannelEffectsStore2 from "VoiceChannelEffectsStore" /* 11398 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11402 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11403 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11404 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11405 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 11406 */;
-import mediaEngineContextFromParticipantTypeDefault from "mediaEngineContextFromParticipantType" /* 11407 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import CallConstants from "CallConstants" /* 5630 */;
+import Constants2 from "Constants" /* 5716 */;
+import VoiceChannelEffectsStore2 from "VoiceChannelEffectsStore" /* 11421 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11422 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11423 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11424 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 11425 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 11426 */;
+import mediaEngineContextFromParticipantTypeDefault from "mediaEngineContextFromParticipantType" /* 11427 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SoundboardStore from "SoundboardStore" /* 5992 */;
+import SoundboardStore from "SoundboardStore" /* 6004 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
@@ -62,7 +62,7 @@ ColorUtils = ColorUtils_mod;
 let closure_18 = createStyles(obj);
 const memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VideoContent(guildId) {
+let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VideoContent(arg0) {
   let avatarSize;
   let first;
   let first1;
@@ -74,13 +74,11 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
   let ringing;
   let speaking;
   let streamId;
-  let tmp21;
   let user;
   let tmp = hasVideo;
   let obj = hasVideo(id[16]);
-  const cResult = obj.c(36);
-  ({ streamId, user, resizeMode, ringing, avatarSize, speaking, playingSoundboard, gestureEnabled, hasVideo } = guildId);
-  guildId = guildId.guildId;
+  const cResult = obj.c(32);
+  ({ streamId, user, resizeMode, ringing, avatarSize, speaking, playingSoundboard, gestureEnabled, hasVideo } = arg0);
   const tmp4 = closure_18();
   let closure_1 = tmp4;
   id = user.id;
@@ -136,8 +134,8 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
       }
       tmp13 = cResult[8];
     }
-    const tmpResult4 = tmp(id[17]);
-    first1 = first1(tmpResult4.useStateFromStoresArray(tmp10, tmp12, tmp13), 1)[0];
+    const tmpResult3 = tmp(id[17]);
+    first1 = first1(tmpResult3.useStateFromStoresArray(tmp10, tmp12, tmp13), 1)[0];
     const _Symbol2 = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
       class R {
@@ -158,102 +156,67 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
       }
     }
     if (cResult[10] !== id) {
-      class U {
+      class R {
         constructor() {
-          let NONE;
-          if (null != id) {
-            NONE = MediaEngineStore.getVideoToggleState(tmp, MediaEngineContextTypes.DEFAULT);
-          } else {
-            NONE = VideoToggleState.NONE;
-          }
-          return NONE;
+          const items = [MediaEngineStore.isLocalVideoAutoDisabled(id)];
+          return items;
         }
       }
       const items4 = [id];
       cResult[10] = id;
-      cResult[11] = U;
+      cResult[11] = tmp19;
       cResult[12] = items4;
       tmp18 = items4;
-      tmp17 = U;
+      tmp17 = tmp19;
     } else {
-      class U {
+      class R {
         constructor() {
-          let NONE;
-          if (null != id) {
-            NONE = MediaEngineStore.getVideoToggleState(tmp, MediaEngineContextTypes.DEFAULT);
-          } else {
-            NONE = VideoToggleState.NONE;
-          }
-          return NONE;
+          const items = [MediaEngineStore.isLocalVideoAutoDisabled(id)];
+          return items;
         }
       }
       tmp18 = cResult[12];
     }
-    const tmpResult5 = tmp(id[17]);
-    const tmp20 = tmpResult5.useStateFromStores(tmp16, tmp17, tmp18) === VideoToggleState.AUTO_PROBING;
-    let closure_4 = tmp20;
-    if (cResult[13] === guildId) {
-      class U {
+    const tmpResult4 = tmp(id[17]);
+    const tmp21 = tmpResult4.useStateFromStores(tmp16, tmp17, tmp18) === VideoToggleState.AUTO_PROBING;
+    let closure_4 = tmp21;
+    if (cResult[13] === first1) {
+      class R {
         constructor() {
-          let NONE;
-          if (null != id) {
-            NONE = MediaEngineStore.getVideoToggleState(tmp, MediaEngineContextTypes.DEFAULT);
-          } else {
-            NONE = VideoToggleState.NONE;
-          }
-          return NONE;
+          const items = [MediaEngineStore.isLocalVideoAutoDisabled(id)];
+          return items;
         }
       }
-      const tmpResult6 = tmp(id[18]);
-      const avatarSpeakingColor = tmpResult6.useAvatarSpeakingColor(tmp21);
-      if (cResult[16] === first1) {
-        class U {
-          constructor() {
-            let NONE;
-            if (null != id) {
-              NONE = MediaEngineStore.getVideoToggleState(tmp, MediaEngineContextTypes.DEFAULT);
-            } else {
-              NONE = VideoToggleState.NONE;
-            }
-            return NONE;
-          }
-        }
-      }
-      function renderVideoAutoDisabledStatus() {
-        let intl;
-        let items;
-        let items1;
-        let obj2;
-        let tmp3;
-        const tmp = first1;
-        if (tmp) {
-          const obj = { style: closure_1.autoDisabledVideoWrapper, children: authStore3(View, obj2) };
-          obj2 = { style: items, children: items1 };
-          items = [, ];
-          ({ autoDisabledVideo: arr[0], autoDisabledVideoTextWrapper: arr[1] } = closure_1);
-          const obj3 = { source: AssetRegistryDefault, size: native.Icon.Sizes.SMALL, disableColor: true };
-          const Icon = native.Icon;
-          items1 = [closure_15(Icon, obj3), ];
-          const obj4 = { variant: "text-sm/normal", color: "text-default", style: closure_1.labelText, children: intl.string(intl2.t.m2Hyj0) };
-          const Text = Text_Text.Text;
-          intl = intl2.intl;
-          items1[1] = closure_15(Text, obj4);
-          tmp3 = closure_15(View, obj);
-        } else {
-          tmp3 = null;
-        }
-        return tmp3;
-      }
-      cResult[16] = first1;
-      cResult[17] = tmp20;
-      cResult[18] = tmp4;
-      cResult[19] = renderVideoAutoDisabledStatus;
     }
-    let obj2 = { userId: id, guildId };
-    cResult[13] = guildId;
-    cResult[14] = id;
-    cResult[15] = obj2;
-    tmp21 = obj2;
+    function renderVideoAutoDisabledStatus() {
+      let intl;
+      let items;
+      let items1;
+      let obj2;
+      let tmp3;
+      const tmp = first1;
+      if (tmp) {
+        const obj = { style: closure_1.autoDisabledVideoWrapper, children: authStore3(View, obj2) };
+        obj2 = { style: items, children: items1 };
+        items = [, ];
+        ({ autoDisabledVideo: arr[0], autoDisabledVideoTextWrapper: arr[1] } = closure_1);
+        const obj3 = { source: AssetRegistryDefault, size: native.Icon.Sizes.SMALL, disableColor: true };
+        const Icon = native.Icon;
+        items1 = [closure_15(Icon, obj3), ];
+        const obj4 = { variant: "text-sm/normal", color: "text-default", style: closure_1.labelText, children: intl.string(intl2.t.m2Hyj0) };
+        const Text = Text_Text.Text;
+        intl = intl2.intl;
+        items1[1] = closure_15(Text, obj4);
+        tmp3 = closure_15(View, obj);
+      } else {
+        tmp3 = null;
+      }
+      return tmp3;
+    }
+    cResult[13] = first1;
+    cResult[14] = tmp21;
+    cResult[15] = tmp4;
+    cResult[16] = renderVideoAutoDisabledStatus;
   }
   const fn = function l() {
     const tmp = hasVideo && id === AuthenticationStore.getId();
@@ -314,28 +277,25 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
     return NONE;
   }, items5) === VideoToggleState.AUTO_PROBING;
   let closure_4 = tmp5;
-  let obj4 = hasVideo(id[18]);
-  const avatarSpeakingColor = obj4.useAvatarSpeakingColor({ userId: id, guildId });
   const tmp2 = hasVideo;
   if (!ringing) {
     if (hasVideo) {
-      let tmp7Result;
+      let tmp6Result;
       if (!tmp5) {
-        const obj5 = { resizeMode, streamId, gestureEnabled, videoSpinnerContext: stateFromStores ? VideoSpinnerContext.SELF_VIDEO : VideoSpinnerContext.REMOTE_VIDEO, userId: user.id };
-        const tmp9 = require("VideoRenderer");
-        VideoSpinnerContext = tmp2(tmp3[25]).VideoSpinnerContext;
-        tmp7Result = closure_15(tmp9, obj5);
+        let obj4 = { resizeMode, streamId, gestureEnabled, videoSpinnerContext: stateFromStores ? VideoSpinnerContext.SELF_VIDEO : VideoSpinnerContext.REMOTE_VIDEO, userId: user.id };
+        const tmp8 = require("VideoRenderer");
+        VideoSpinnerContext = tmp2(tmp3[24]).VideoSpinnerContext;
+        tmp6Result = closure_15(tmp8, obj4);
       }
-      return tmp7Result;
+      return tmp6Result;
     }
   }
-  const obj6 = {
+  const obj5 = {
     style: tmp.imageBackground,
     url: user.getAvatarURL(guildId, 128),
     user,
     guildId,
     speaking,
-    speakingColor: avatarSpeakingColor,
     playingSoundboard,
     size: avatarSize,
     renderVideoDetails: function renderVideoAutoDisabledStatus() {
@@ -364,8 +324,8 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
       return tmp3;
     }
   };
-  const tmp11 = require("VideoBackground");
-  tmp7Result = closure_15(tmp11, obj6);
+  const tmp10 = require("VideoBackground");
+  tmp6Result = closure_15(tmp10, obj5);
 }));
 const memo2 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -573,7 +533,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
   let resizeMode;
   let statusStyle;
   let style;
-  let tmp42;
+  let tmp41;
   let voiceState;
   const tmp = participant;
   const obj = participant(onDoubleTap[16]);
@@ -584,7 +544,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
   const onLongPress = participant.onLongPress;
   ({ avatarSize, resizeMode, statusStyle, gestureEnabled, hasNotch, style } = participant);
   if (undefined === resizeMode) {
-    resizeMode = tmp(tmp2[24]).ResizeMode.COVER;
+    resizeMode = tmp(tmp2[23]).ResizeMode.COVER;
   }
   closure_18();
   if (cResult[0] === onSingleTap) {
@@ -598,12 +558,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
         tmp6 = cResult[5];
       }
       if (cResult[6] === onLongPress) {
-        let tmp8;
-        let tmp10;
-        let tmp14;
-        let tmp16;
+        let tmp7;
+        let tmp9;
+        let tmp13;
+        let tmp15;
         if (cResult[7] === participant) {
-          tmp8 = cResult[8];
+          tmp7 = cResult[8];
         }
         const streamId = participant.streamId;
         class UserTileTsx1 {
@@ -632,13 +592,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
           }
           cResult[9] = id;
           cResult[10] = obj2;
-          tmp10 = obj2;
+          tmp9 = obj2;
         } else {
-          tmp10 = cResult[10];
+          tmp9 = cResult[10];
         }
-        onSingleTap(onDoubleTap[30])(tmp10);
+        onSingleTap(onDoubleTap[29])(tmp9);
         const _Symbol = Symbol;
-        const tmp11 = onSingleTap;
+        const tmp10 = onSingleTap;
         if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
           const items = [];
           class UserTileTsx1 {
@@ -652,9 +612,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
             }
           }
           cResult[11] = items;
-          tmp14 = items;
+          tmp13 = items;
         } else {
-          tmp14 = cResult[11];
+          tmp13 = cResult[11];
         }
         if (cResult[12] !== participant.id) {
           class J {
@@ -673,7 +633,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
             }
           }
           cResult[13] = J;
-          tmp16 = J;
+          tmp15 = J;
         } else {
           class J {
             constructor() {
@@ -682,7 +642,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
           }
         }
         let tmpResult = tmp(tmp2[17]);
-        const stateFromStores = tmpResult.useStateFromStores(tmp14, tmp16);
+        const stateFromStores = tmpResult.useStateFromStores(tmp13, tmp15);
         const getChannel = ChannelStore.getChannel;
         if (voiceState != null) {
           class J {
@@ -691,7 +651,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
             }
           }
         }
-        const channel = getChannel(tmp20);
+        const channel = getChannel(tmp19);
         if (channel != null) {
           class J {
             constructor() {
@@ -722,7 +682,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
               return tmpResult;
             }
           }
-          cResult[15] = tmp24;
+          cResult[15] = tmp23;
         } else {
           class J {
             constructor() {
@@ -754,7 +714,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
             }
           }
           cResult[16] = voiceState;
-          cResult[17] = tmp26;
+          cResult[17] = tmp25;
         } else {
           class J {
             constructor() {
@@ -786,7 +746,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
             }
           }
           cResult[18] = voiceState;
-          cResult[19] = tmp28;
+          cResult[19] = tmp27;
         } else {
           class J {
             constructor() {
@@ -821,8 +781,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
           }
         }
         if (cResult[21] === participant.type) {
+          let tmp35;
           let tmp36;
-          let tmp37;
           class J {
             constructor() {
               return SoundboardStore.isUserPlayingSounds(participant.id);
@@ -839,7 +799,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
               return tmpResult;
             }
           }
-          const tmpResult5 = tmp(onDoubleTap[33]);
+          const tmpResult5 = tmp(onDoubleTap[32]);
           const voiceChatNavigationContext = tmpResult5.useVoiceChatNavigationContext();
           if (voiceChatNavigationContext != null) {
             class J {
@@ -855,7 +815,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
               }
             }
           }
-          let c5 = tmp35;
+          let c5 = tmp34;
           const _Symbol3 = Symbol;
           if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
             class J {
@@ -875,7 +835,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
               }
             }
             cResult[25] = items2;
-            tmp36 = items2;
+            tmp35 = items2;
           } else {
             class J {
               constructor() {
@@ -899,8 +859,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
                 return tmpResult;
               }
             }
-            cResult[27] = tmp38;
-            tmp37 = tmp38;
+            cResult[27] = tmp37;
+            tmp36 = tmp37;
           } else {
             class J {
               constructor() {
@@ -909,7 +869,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
             }
           }
           const tmpResult6 = tmp(onDoubleTap[17]);
-          const stateFromStores1 = tmpResult6.useStateFromStores(tmp36, tmp37);
+          const stateFromStores1 = tmpResult6.useStateFromStores(tmp35, tmp36);
           const type = participant.type;
           const USER = ParticipantTypes.USER;
           if (cResult[28] === tmp6) {
@@ -918,7 +878,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
                 return SoundboardStore.isUserPlayingSounds(participant.id);
               }
             }
-            const tmp43 = tmp11(onDoubleTap[34])(tmp42);
+            const tmp42 = tmp10(onDoubleTap[33])(tmp41);
             class UserTileTsx1 {
               constructor() {
                 tmpResult = undefined;
@@ -929,32 +889,32 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
                 return tmpResult;
               }
             }
-            const Gesture = tmp(tmp2[35]).Gesture;
+            const Gesture = tmp(tmp2[34]).Gesture;
             const LongPressResult = Gesture.LongPress();
             const runOnJSResult = LongPressResult.runOnJS(true);
-            const onStartResult = runOnJSResult.onStart(tmp8);
-            const tmp47 = onStartResult.minDuration(800);
-            if (null != tmp34) {
+            const onStartResult = runOnJSResult.onStart(tmp7);
+            const tmp46 = onStartResult.minDuration(800);
+            if (null != tmp33) {
               class J {
                 constructor() {
                   return SoundboardStore.isUserPlayingSounds(participant.id);
                 }
               }
             }
-            const GestureDetector = tmp(tmp2[35]).GestureDetector;
-            const Gesture2 = tmp(tmp2[35]).Gesture;
-            cResult[31] = tmp8;
-            cResult[32] = tmp34;
-            cResult[33] = tmp43;
+            const GestureDetector = tmp(tmp2[34]).GestureDetector;
+            const Gesture2 = tmp(tmp2[34]).Gesture;
+            cResult[31] = tmp7;
+            cResult[32] = tmp33;
+            cResult[33] = tmp42;
             cResult[34] = GestureDetector;
-            cResult[35] = Gesture2.Simultaneous(tmp47, tmp43);
-            const SimultaneousResult = Gesture2.Simultaneous(tmp47, tmp43);
+            cResult[35] = Gesture2.Simultaneous(tmp46, tmp42);
+            const SimultaneousResult = Gesture2.Simultaneous(tmp46, tmp42);
           }
           const obj3 = { onDoubleTapStart: tmp6, onSingleTapStart: tmp5 };
           cResult[28] = tmp6;
           cResult[29] = tmp5;
           cResult[30] = obj3;
-          tmp42 = obj3;
+          tmp41 = obj3;
         }
         function ie() {
           const isLocalVideoDisabledResult = null != user.id && MediaEngineStore.isLocalVideoDisabled(tmp.id, mediaEngineContextFromParticipantTypeDefault(participant.type));
@@ -983,12 +943,21 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
       cResult[6] = onLongPress;
       cResult[7] = participant;
       cResult[8] = UserTileTsx1;
-      tmp8 = UserTileTsx1;
+      tmp7 = UserTileTsx1;
+    }
+    class O {
+      constructor() {
+        let tmpResult;
+        if (onDoubleTap != null) {
+          tmpResult = tmp(participant);
+        }
+        return tmpResult;
+      }
     }
     cResult[3] = onDoubleTap;
     cResult[4] = participant;
-    cResult[5] = tmp7;
-    tmp6 = tmp7;
+    cResult[5] = O;
+    tmp6 = O;
   }
   const fn = function o() {
     let tmpResult;
@@ -1022,7 +991,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
   const avatarSize = participant.avatarSize;
   if (COVER === undefined) {
     const tmp = participant;
-    COVER = participant(onDoubleTap[24]).ResizeMode.COVER;
+    COVER = participant(onDoubleTap[23]).ResizeMode.COVER;
   }
   let user;
   let id;
@@ -1058,7 +1027,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
   const obj = { userId: participant.id };
   const items3 = [SoundboardStore];
   let channelId;
-  const tmp9 = onSingleTap(onDoubleTap[30])(obj);
+  const tmp9 = onSingleTap(onDoubleTap[29])(obj);
   const obj2 = participant(onDoubleTap[17]);
   const stateFromStores = obj2.useStateFromStores(items3, () => SoundboardStore.isUserPlayingSounds(participant.id));
   const getChannel = ChannelStore.getChannel;
@@ -1070,7 +1039,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
   if (channel != null) {
     guild_id = channel.guild_id;
   }
-  let tmp16 = tmp7(tmp8[31])(participant);
+  let tmp16 = tmp7(tmp8[30])(participant);
   let flag;
   if (voiceState != null) {
     flag = voiceState.isVoiceMuted();
@@ -1092,7 +1061,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
     const isLocalVideoDisabledResult = null != user.id && MediaEngineStore.isLocalVideoDisabled(tmp.id, mediaEngineContextFromParticipantTypeDefault(participant.type));
     return isLocalVideoDisabledResult;
   }, items5);
-  const tmp10Result3 = participant(onDoubleTap[33]);
+  const tmp10Result3 = participant(onDoubleTap[32]);
   const voiceChatNavigationContext = tmp10Result3.useVoiceChatNavigationContext();
   let swipeDismissRef;
   if (voiceChatNavigationContext != null) {
@@ -1115,8 +1084,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
   if (participant.type !== ParticipantTypes.USER) {
     const type = participant.type;
   }
-  const tmp22 = onSingleTap(onDoubleTap[34])({ onDoubleTapStart: callback1, onSingleTapStart: callback });
-  const Gesture = tmp10(tmp8[35]).Gesture;
+  const tmp22 = onSingleTap(onDoubleTap[33])({ onDoubleTapStart: callback1, onSingleTapStart: callback });
+  const Gesture = tmp10(tmp8[34]).Gesture;
   const LongPressResult = Gesture.LongPress();
   const runOnJSResult = LongPressResult.runOnJS(true);
   const onStartResult = runOnJSResult.onStart(callback2);
@@ -1126,8 +1095,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
     result = minDurationResult.requireExternalGestureToFail(swipeDismissRef);
   }
   const obj3 = { gesture: Gesture2.Simultaneous(result, tmp22), children: tmp25(tmp26, obj4) };
-  const GestureDetector = tmp10(tmp8[35]).GestureDetector;
-  Gesture2 = tmp10(tmp8[35]).Gesture;
+  const GestureDetector = tmp10(tmp8[34]).GestureDetector;
+  Gesture2 = tmp10(tmp8[34]).Gesture;
   obj4 = { style: items7, children: items8 };
   items7 = [tmp3.container, style];
   const obj5 = { guildId: guild_id, hasVideo: tmp16, streamId, user, resizeMode: COVER, ringing, speaking: tmp9, playingSoundboard: stateFromStores, avatarSize, gestureEnabled };
@@ -1150,7 +1119,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
         userId: id,
         hasNotch
       };
-      tmp24Result = tmp24(tmp7(tmp8[36]), obj6);
+      tmp24Result = tmp24(tmp7(tmp8[35]), obj6);
     }
   }
   items8[1] = tmp24Result;

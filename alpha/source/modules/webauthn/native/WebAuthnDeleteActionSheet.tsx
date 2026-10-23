@@ -1,13 +1,13 @@
-// Module ID: 16010
-// Function ID: 16011
+// Module ID: 16043
+// Function ID: 16044
 // Name: WebAuthnDeleteActionSheet
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5196, 6662, 5649, 1128, 7278, 7233, 5220, 5230, 5251, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5208, 6675, 5661, 1128, 7291, 7246, 5232, 5242, 5263, 2]
 
-// Module 16010 (WebAuthnDeleteActionSheet)
+// Module 16043 (WebAuthnDeleteActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6662 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
+import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6675 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -237,20 +237,20 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnDe
   }
   let tmp = closure_6();
   let obj = { contentStyles: tmp.sheetContent, bodyStyles: tmp.sheetBody, children: items };
-  BottomSheet = credential(5251).BottomSheet;
-  let obj2 = { title: intl.formatToPlainString(credential(1128).t.mI3CoL, obj3), trailing: closure_4(credential(7278).ActionSheetCloseButton, { onPress: handleClose }) };
-  const BottomSheetTitleHeader = credential(7233).BottomSheetTitleHeader;
+  BottomSheet = credential(5263).BottomSheet;
+  let obj2 = { title: intl.formatToPlainString(credential(1128).t.mI3CoL, obj3), trailing: closure_4(credential(7291).ActionSheetCloseButton, { onPress: handleClose }) };
+  const BottomSheetTitleHeader = credential(7246).BottomSheetTitleHeader;
   intl = credential(1128).intl;
   obj3 = { keyName: credential.name };
   items = [closure_4(BottomSheetTitleHeader, obj2), , , ];
   const obj4 = { style: tmp.content, children: closure_4(Text, obj5) };
   obj5 = { variant: "heading-md/normal", style: tmp.subtitle, children: intl2.string(credential(1128).t.IfTbc1) };
-  Text = credential(5220).Text;
+  Text = credential(5232).Text;
   intl2 = credential(1128).intl;
   items[1] = closure_4(View, obj4);
   const obj6 = { children: closure_4(Button, obj7) };
   obj7 = { text: intl3.string(credential(1128).t["lqK//z"]), onPress: handleClose, variant: "primary", grow: true };
-  Button = credential(5230).Button;
+  Button = credential(5242).Button;
   intl3 = credential(1128).intl;
   items[2] = closure_4(View, obj6);
   const obj8 = { children: closure_4(Button2, obj9) };
@@ -284,7 +284,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnDe
     loading: deleting,
     grow: true
   };
-  Button2 = credential(5230).Button;
+  Button2 = credential(5242).Button;
   intl4 = credential(1128).intl;
   items[3] = closure_4(View, obj8);
   return closure_5(BottomSheet, obj);

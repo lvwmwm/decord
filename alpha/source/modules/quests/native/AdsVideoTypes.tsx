@@ -1,9 +1,9 @@
-// Module ID: 16244
-// Function ID: 16245
+// Module ID: 16277
+// Function ID: 16278
 // Name: AdsVideoTypes
 // Dependencies: [2]
 
-// Module 16244 (AdsVideoTypes)
+// Module 16277 (AdsVideoTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/native/AdsVideoTypes.tsx");

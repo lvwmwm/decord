@@ -1,12 +1,12 @@
-// Module ID: 18819
-// Function ID: 18820
+// Module ID: 18863
+// Function ID: 18864
 // Name: SafetyFlowsLegacyRequiredActionsExperiment
-// Dependencies: [1087, 1455, 18820, 2]
+// Dependencies: [1087, 1455, 18864, 2]
 // Exports: shouldUseSafetyFlowsForRequiredAction
 
-// Module 18819 (SafetyFlowsLegacyRequiredActionsExperiment)
+// Module 18863 (SafetyFlowsLegacyRequiredActionsExperiment)
 import Constants from "Constants" /* 1087 */;
-import SafetyFlowsExperiment from "SafetyFlowsExperiment" /* 18820 */;
+import SafetyFlowsExperiment from "SafetyFlowsExperiment" /* 18864 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 
@@ -25,13 +25,13 @@ function config() {
   return obj;
 }
 function union() {
-  const f137551 = (requiredActions) => {
+  const f137825 = (requiredActions) => {
     const items = [...requiredActions.requiredActions];
     return items;
   };
   let items = [...arguments];
-  const obj = { requiredActions: new Set(items.flatMap(f137551)) };
-  new Set(items.flatMap(f137551));
+  const obj = { requiredActions: new Set(items.flatMap(f137825)) };
+  new Set(items.flatMap(f137825));
   return obj;
 }
 ({ REQUIRE_VERIFIED_EMAIL, REQUIRE_VERIFIED_PHONE, REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE, REQUIRE_REVERIFIED_EMAIL_OR_VERIFIED_PHONE, REQUIRE_CAPTCHA, REQUIRE_REVERIFIED_EMAIL, REQUIRE_REVERIFIED_PHONE, REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE, REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE } = Constants.UserRequiredActions);

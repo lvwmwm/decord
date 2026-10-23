@@ -1,13 +1,13 @@
-// Module ID: 10758
-// Function ID: 10759
+// Module ID: 10780
+// Function ID: 10781
 // Name: IntlLink
-// Dependencies: [19, 21, 4969, 587, 558, 576, 4983, 5646, 1951, 1202, 2]
+// Dependencies: [19, 21, 4969, 587, 558, 576, 4983, 5658, 1951, 1202, 2]
 
-// Module 10758 (IntlLink)
+// Module 10780 (IntlLink)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef1951 from "module_1951" /* 1951 */;
-import LinkingDefault from "Linking" /* 5646 */;
+import LinkingDefault from "Linking" /* 5658 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

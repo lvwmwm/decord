@@ -1,13 +1,13 @@
-// Module ID: 18563
-// Function ID: 18564
+// Module ID: 18607
+// Function ID: 18608
 // Name: HideSelfStreamAndVideoConfirmDialog
-// Dependencies: [109, 19, 17, 18562, 21, 4969, 558, 576, 5854, 1128, 5220, 5964, 2]
+// Dependencies: [109, 19, 17, 18606, 21, 4969, 558, 576, 5866, 1128, 5232, 5976, 2]
 
-// Module 18563 (HideSelfStreamAndVideoConfirmDialog)
+// Module 18607 (HideSelfStreamAndVideoConfirmDialog)
 import react_native from "react-native" /* 17 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5854 */;
-import AlertDefault from "Alert" /* 5964 */;
-import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 18562 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5866 */;
+import AlertDefault from "Alert" /* 5976 */;
+import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 18606 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -252,7 +252,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HideSelfStre
   obj2 = { style: tmp2.body, children: items };
   items = [, ];
   const obj3 = { style: tmp2.description, variant: "text-sm/medium", children: stringResult1 };
-  items[0] = closure_7(tmp6(5220).Text, obj3);
+  items[0] = closure_7(tmp6(5232).Text, obj3);
   const obj4 = {
     accessibilityRole: "link",
     style: items1,
@@ -266,7 +266,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HideSelfStre
   };
   items1 = [, ];
   ({ ctaLink: arr2[0], description: arr2[1] } = tmp2);
-  const Text = tmp6(5220).Text;
+  const Text = tmp6(5232).Text;
   intl7 = tmp6(1128).intl;
   items[1] = closure_7(Text, obj4);
   return closure_7(tmp12, obj);

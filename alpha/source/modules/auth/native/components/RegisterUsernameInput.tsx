@@ -1,20 +1,20 @@
-// Module ID: 17307
-// Function ID: 17308
+// Module ID: 17351
+// Function ID: 17352
 // Name: RegisterUsernameInput
-// Dependencies: [109, 32, 19, 17281, 21, 4969, 5038, 558, 576, 15934, 6997, 587, 5963, 5220, 1128, 15242, 1384, 6993, 2]
+// Dependencies: [109, 32, 19, 17325, 21, 4969, 5050, 558, 576, 15967, 7010, 587, 5975, 5232, 1128, 15267, 1384, 7006, 2]
 
-// Module 17307 (RegisterUsernameInput)
+// Module 17351 (RegisterUsernameInput)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 15242 */;
-import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 15934 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5050 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 15267 */;
+import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 15967 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17281 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17325 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -61,7 +61,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Userna
     const _Symbol2 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       obj2 = { size: "xs", color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
-      const CircleErrorIcon = tmp(6997).CircleErrorIcon;
+      const CircleErrorIcon = tmp(7010).CircleErrorIcon;
       const tmp35 = authStore(CircleErrorIcon, obj2);
       cResult[0] = tmp35;
       first = tmp35;
@@ -77,9 +77,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Userna
     }
     const obj3 = { direction: "horizontal", spacing: 4, align: "flex-start", children: items };
     items = [first, ];
-    const Stack = tmp(5963).Stack;
+    const Stack = tmp(5975).Stack;
     const obj4 = { variant: "text-xs/medium", color: "text-feedback-critical", style: tmp4.status, animated: true, children: usernameStatus.message };
-    const Text3 = tmp(5220).Text;
+    const Text3 = tmp(5232).Text;
     const merged = Object.assign(obj);
     const merged1 = Object.assign(obj2);
     items[1] = authStore(Text3, obj4);
@@ -113,7 +113,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Userna
           return tmp22;
         }
         const obj6 = { style: tmp4.status, variant: "text-xs/medium", animated: true, children: tmp19 };
-        const Text2 = tmp(5220).Text;
+        const Text2 = tmp(5232).Text;
         const merged2 = Object.assign(obj);
         const merged3 = Object.assign(obj2);
         const tmp30 = authStore(Text2, obj6);
@@ -138,7 +138,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Userna
       }
       if (cResult[10] !== tmp4.inputHint) {
         const obj7 = { style: inputHint, variant: "text-xs/medium", color: "text-muted", animated: true, children: tmp8 };
-        const Text = tmp(5220).Text;
+        const Text = tmp(5232).Text;
         const merged4 = Object.assign(obj);
         const merged5 = Object.assign(obj2);
         const tmp18 = authStore(Text, obj7);
@@ -168,12 +168,12 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Userna
   }
   if (type === UniqueUsernamesTypes.NameValidationState.ERROR) {
     obj2 = { direction: "horizontal", spacing: 4, align: "flex-start", children: items };
-    const Stack = tmp3(5963).Stack;
+    const Stack = tmp3(5975).Stack;
     const obj3 = { size: "xs", color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
-    const CircleErrorIcon = tmp3(6997).CircleErrorIcon;
+    const CircleErrorIcon = tmp3(7010).CircleErrorIcon;
     items = [authStore(CircleErrorIcon, obj3), ];
     const obj4 = { variant: "text-xs/medium", color: "text-feedback-critical", style: tmp.status, animated: true, children: usernameStatus.message };
-    const Text3 = tmp3(5220).Text;
+    const Text3 = tmp3(5232).Text;
     const merged = Object.assign(obj);
     const merged1 = Object.assign(obj2);
     items[1] = authStore(Text3, obj4);
@@ -186,7 +186,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Userna
       }
       if (type1 === UniqueUsernamesTypes.NameValidationState.AVAILABLE) {
         const obj5 = { style: tmp.status, variant: "text-xs/medium", animated: true, children: authStore(Text_Text.Text, obj6) };
-        const Text2 = tmp3(5220).Text;
+        const Text2 = tmp3(5232).Text;
         const merged2 = Object.assign(obj);
         const merged3 = Object.assign(obj2);
         obj6 = { variant: "text-xs/medium", color: "text-feedback-positive", children: usernameStatus.message };
@@ -196,7 +196,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Userna
     tmp6 = null;
     if (isUsernameFocused) {
       obj = { style: tmp.inputHint, variant: "text-xs/medium", color: "text-muted", animated: true, children: intl.string(intl3.t.y7LSyU) };
-      const Text = tmp3(5220).Text;
+      const Text = tmp3(5232).Text;
       const merged4 = Object.assign(obj);
       const merged5 = Object.assign(obj2);
       intl = tmp3(1128).intl;
@@ -340,7 +340,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterUser
         }
       }
     }
-    if (undefined === tmp(15934).NameValidationState.ERROR) {
+    if (undefined === tmp(15967).NameValidationState.ERROR) {
       class H {
         constructor() {
           tmp = closure_1(true);
@@ -356,7 +356,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterUser
         }
       }
     }
-    const TextInput = tmp(6993).TextInput;
+    const TextInput = tmp(7006).TextInput;
     const tmpResult = tmp(1384);
     if (tmpResult.isAndroid()) {
       class H {
@@ -452,7 +452,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterUser
     closure_1(false);
   }, items2);
   const obj3 = { ref, label: intl.string(setUsername(1128).t.IEpCBQ), accessibilityHint: intl2.string(setUsername(1128).t["47dcUZ"]), onChange: callback, autoCorrect: false, secureTextEntry: obj4.isAndroid(), keyboardType: str, value: username, onSubmitEditing, returnKeyType: "next", autoComplete: "username", textContentType: "username", autoCapitalize: "none", onFocus: callback1, onBlur: callback2, clearable: true, status: str2, submitBehavior };
-  const TextInput = setUsername(6993).TextInput;
+  const TextInput = setUsername(7006).TextInput;
   intl = setUsername(1128).intl;
   intl2 = setUsername(1128).intl;
   str = "default";
@@ -469,7 +469,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterUser
     type = usernameStatus.type;
   }
   str2 = undefined;
-  if (type === tmp15(15934).NameValidationState.ERROR) {
+  if (type === tmp15(15967).NameValidationState.ERROR) {
     str2 = "error";
   }
   const obj6 = { children: items3 };

@@ -1,23 +1,23 @@
-// Module ID: 12305
-// Function ID: 12306
+// Module ID: 12324
+// Function ID: 12325
 // Name: ConjureMessageRow
-// Dependencies: [19, 17, 1392, 21, 4969, 12297, 12306, 12307, 587, 558, 576, 10677, 12262, 12276, 11814, 12309, 11777, 504, 12317, 12318, 12312, 12319, 12225, 11825, 12310, 5220, 1128, 12316, 12320, 12321, 12322, 12323, 12324, 12332, 3830, 12337, 12339, 12340, 12232, 12341, 12390, 11770, 12391, 12261, 12393, 12416, 12428, 12430, 12329, 12433, 12438, 12439, 12440, 2]
+// Dependencies: [19, 17, 1392, 21, 4969, 12316, 12325, 12326, 587, 558, 576, 10699, 12281, 12295, 11833, 12328, 11796, 504, 12336, 12337, 12331, 12338, 12244, 11844, 12329, 5232, 1128, 12335, 12339, 12340, 12341, 12342, 12343, 12351, 3830, 12356, 12358, 12359, 12251, 12360, 12409, 11790, 12410, 12280, 12412, 12435, 12447, 12449, 12348, 12452, 12457, 12458, 12459, 2]
 
-// Module 12305 (ConjureMessageRow)
+// Module 12324 (ConjureMessageRow)
 import nativeDefault from "native" /* 587 */;
-import conjureChatTurns from "conjureChatTurns" /* 10677 */;
-import ConjureDesignFeedback from "ConjureDesignFeedback" /* 11814 */;
-import ConjureVersionRestoreConfirm from "ConjureVersionRestoreConfirm" /* 12225 */;
-import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 12232 */;
-import ConjureTimelineTree from "ConjureTimelineTree" /* 12262 */;
-import ConjureTodoAgents from "ConjureTodoAgents" /* 12276 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12297 */;
-import conjureNativeChatLayout from "conjureNativeChatLayout" /* 12306 */;
-import chat_ConjureRepliedMessage from "chat/ConjureRepliedMessage" /* 12307 */;
-import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 12312 */;
-import ConjureChatRestore from "ConjureChatRestore" /* 12317 */;
-import conjureQueuedMessage from "conjureQueuedMessage" /* 12319 */;
-import ConjureActivityBox from "ConjureActivityBox" /* 12341 */;
+import conjureChatTurns from "conjureChatTurns" /* 10699 */;
+import ConjureDesignFeedback from "ConjureDesignFeedback" /* 11833 */;
+import ConjureVersionRestoreConfirm from "ConjureVersionRestoreConfirm" /* 12244 */;
+import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 12251 */;
+import ConjureTimelineTree from "ConjureTimelineTree" /* 12281 */;
+import ConjureTodoAgents from "ConjureTodoAgents" /* 12295 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12316 */;
+import conjureNativeChatLayout from "conjureNativeChatLayout" /* 12325 */;
+import chat_ConjureRepliedMessage from "chat/ConjureRepliedMessage" /* 12326 */;
+import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 12331 */;
+import ConjureChatRestore from "ConjureChatRestore" /* 12336 */;
+import conjureQueuedMessage from "conjureQueuedMessage" /* 12338 */;
+import ConjureActivityBox from "ConjureActivityBox" /* 12360 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -319,7 +319,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                                       if (null != onRestoreVersion) {
                                                                         fn = () => {
                                                                           const obj = projectId(groupStart[22]);
-                                                                          const obj2 = { onConfirm() { /* body not rendered: F159546 */ } };
+                                                                          const obj2 = { onConfirm() { /* body not rendered: F159850 */ } };
                                                                           return obj.confirmRestoreVersion(obj2);
                                                                         };
                                                                       }
@@ -368,7 +368,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                                     if (null != onRestoreVersion) {
                                                                       fn = () => {
                                                                         const obj = projectId(groupStart[22]);
-                                                                        const obj2 = { onConfirm() { /* body not rendered: F159546 */ } };
+                                                                        const obj2 = { onConfirm() { /* body not rendered: F159850 */ } };
                                                                         return obj.confirmRestoreVersion(obj2);
                                                                       };
                                                                     }
@@ -416,7 +416,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                                   if (null != onRestoreVersion) {
                                                                     fn = () => {
                                                                       const obj = projectId(groupStart[22]);
-                                                                      const obj2 = { onConfirm() { /* body not rendered: F159546 */ } };
+                                                                      const obj2 = { onConfirm() { /* body not rendered: F159850 */ } };
                                                                       return obj.confirmRestoreVersion(obj2);
                                                                     };
                                                                   }
@@ -463,7 +463,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                               if (null != onRestoreVersion) {
                                                                 fn = () => {
                                                                   const obj = projectId(groupStart[22]);
-                                                                  const obj2 = { onConfirm() { /* body not rendered: F159546 */ } };
+                                                                  const obj2 = { onConfirm() { /* body not rendered: F159850 */ } };
                                                                   return obj.confirmRestoreVersion(obj2);
                                                                 };
                                                               }
@@ -513,7 +513,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                             if (null != onRestoreVersion) {
                                                               fn = () => {
                                                                 const obj = projectId(groupStart[22]);
-                                                                const obj2 = { onConfirm() { /* body not rendered: F159546 */ } };
+                                                                const obj2 = { onConfirm() { /* body not rendered: F159850 */ } };
                                                                 return obj.confirmRestoreVersion(obj2);
                                                               };
                                                             }
@@ -554,7 +554,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                         if (null != onRestoreVersion) {
                                                           fn = () => {
                                                             const obj = projectId(groupStart[22]);
-                                                            const obj2 = { onConfirm() { /* body not rendered: F159546 */ } };
+                                                            const obj2 = { onConfirm() { /* body not rendered: F159850 */ } };
                                                             return obj.confirmRestoreVersion(obj2);
                                                           };
                                                         }
@@ -587,7 +587,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                       if (null != onRestoreVersion) {
                                                         fn = () => {
                                                           const obj = projectId(groupStart[22]);
-                                                          const obj2 = { onConfirm() { /* body not rendered: F159546 */ } };
+                                                          const obj2 = { onConfirm() { /* body not rendered: F159850 */ } };
                                                           return obj.confirmRestoreVersion(obj2);
                                                         };
                                                       }
@@ -627,7 +627,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                     if (null != onRestoreVersion) {
                                                       fn = () => {
                                                         const obj = projectId(groupStart[22]);
-                                                        const obj2 = { onConfirm() { /* body not rendered: F159546 */ } };
+                                                        const obj2 = { onConfirm() { /* body not rendered: F159850 */ } };
                                                         return obj.confirmRestoreVersion(obj2);
                                                       };
                                                     }
@@ -660,7 +660,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                   if (null != onRestoreVersion) {
                                                     fn = () => {
                                                       const obj = projectId(groupStart[22]);
-                                                      const obj2 = { onConfirm() { /* body not rendered: F159546 */ } };
+                                                      const obj2 = { onConfirm() { /* body not rendered: F159850 */ } };
                                                       return obj.confirmRestoreVersion(obj2);
                                                     };
                                                   }
@@ -708,7 +708,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                     if (null != onRestoreVersion) {
                                                       fn = () => {
                                                         const obj = projectId(groupStart[22]);
-                                                        const obj2 = { onConfirm() { /* body not rendered: F159546 */ } };
+                                                        const obj2 = { onConfirm() { /* body not rendered: F159850 */ } };
                                                         return obj.confirmRestoreVersion(obj2);
                                                       };
                                                     }
@@ -741,7 +741,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                   if (null != onRestoreVersion) {
                                                     fn = () => {
                                                       const obj = projectId(groupStart[22]);
-                                                      const obj2 = { onConfirm() { /* body not rendered: F159546 */ } };
+                                                      const obj2 = { onConfirm() { /* body not rendered: F159850 */ } };
                                                       return obj.confirmRestoreVersion(obj2);
                                                     };
                                                   }
@@ -790,7 +790,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                         if (null != onRestoreVersion) {
                                                           fn = () => {
                                                             const obj = projectId(groupStart[22]);
-                                                            const obj2 = { onConfirm() { /* body not rendered: F159546 */ } };
+                                                            const obj2 = { onConfirm() { /* body not rendered: F159850 */ } };
                                                             return obj.confirmRestoreVersion(obj2);
                                                           };
                                                         }
@@ -828,7 +828,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                       if (null != onRestoreVersion) {
                                                         fn = () => {
                                                           const obj = projectId(groupStart[22]);
-                                                          const obj2 = { onConfirm() { /* body not rendered: F159546 */ } };
+                                                          const obj2 = { onConfirm() { /* body not rendered: F159850 */ } };
                                                           return obj.confirmRestoreVersion(obj2);
                                                         };
                                                       }
@@ -879,7 +879,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                         if (null != onRestoreVersion) {
                                                           fn = () => {
                                                             const obj = projectId(groupStart[22]);
-                                                            const obj2 = { onConfirm() { /* body not rendered: F159546 */ } };
+                                                            const obj2 = { onConfirm() { /* body not rendered: F159850 */ } };
                                                             return obj.confirmRestoreVersion(obj2);
                                                           };
                                                         }
@@ -917,7 +917,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                       if (null != onRestoreVersion) {
                                                         fn = () => {
                                                           const obj = projectId(groupStart[22]);
-                                                          const obj2 = { onConfirm() { /* body not rendered: F159546 */ } };
+                                                          const obj2 = { onConfirm() { /* body not rendered: F159850 */ } };
                                                           return obj.confirmRestoreVersion(obj2);
                                                         };
                                                       }
@@ -963,7 +963,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                     if (null != onRestoreVersion) {
                                                       fn = () => {
                                                         const obj = projectId(groupStart[22]);
-                                                        const obj2 = { onConfirm() { /* body not rendered: F159546 */ } };
+                                                        const obj2 = { onConfirm() { /* body not rendered: F159850 */ } };
                                                         return obj.confirmRestoreVersion(obj2);
                                                       };
                                                     }
@@ -996,7 +996,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                       if (null != onRestoreVersion) {
                                                         fn = () => {
                                                           const obj = projectId(groupStart[22]);
-                                                          const obj2 = { onConfirm() { /* body not rendered: F159546 */ } };
+                                                          const obj2 = { onConfirm() { /* body not rendered: F159850 */ } };
                                                           return obj.confirmRestoreVersion(obj2);
                                                         };
                                                       }
@@ -1052,7 +1052,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                     if (null != onRestoreVersion) {
                                                       fn = () => {
                                                         const obj = projectId(groupStart[22]);
-                                                        const obj2 = { onConfirm() { /* body not rendered: F159546 */ } };
+                                                        const obj2 = { onConfirm() { /* body not rendered: F159850 */ } };
                                                         return obj.confirmRestoreVersion(obj2);
                                                       };
                                                     }
@@ -1115,7 +1115,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                         if (null != onRestoreVersion) {
                                                           fn = () => {
                                                             const obj = projectId(groupStart[22]);
-                                                            const obj2 = { onConfirm() { /* body not rendered: F159546 */ } };
+                                                            const obj2 = { onConfirm() { /* body not rendered: F159850 */ } };
                                                             return obj.confirmRestoreVersion(obj2);
                                                           };
                                                         }
@@ -1223,7 +1223,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                                                           if (null != onRestoreVersion) {
                                                                                             fn = () => {
                                                                                               const obj = projectId(groupStart[22]);
-                                                                                              const obj2 = { onConfirm() { /* body not rendered: F159546 */ } };
+                                                                                              const obj2 = { onConfirm() { /* body not rendered: F159850 */ } };
                                                                                               return obj.confirmRestoreVersion(obj2);
                                                                                             };
                                                                                           }
@@ -1264,7 +1264,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                                                           if (null != onRestoreVersion) {
                                                                                             fn = () => {
                                                                                               const obj = projectId(groupStart[22]);
-                                                                                              const obj2 = { onConfirm() { /* body not rendered: F159546 */ } };
+                                                                                              const obj2 = { onConfirm() { /* body not rendered: F159850 */ } };
                                                                                               return obj.confirmRestoreVersion(obj2);
                                                                                             };
                                                                                           }
@@ -1296,7 +1296,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                                                         if (null != onRestoreVersion) {
                                                                                           fn = () => {
                                                                                             const obj = projectId(groupStart[22]);
-                                                                                            const obj2 = { onConfirm() { /* body not rendered: F159546 */ } };
+                                                                                            const obj2 = { onConfirm() { /* body not rendered: F159850 */ } };
                                                                                             return obj.confirmRestoreVersion(obj2);
                                                                                           };
                                                                                         }
@@ -1373,7 +1373,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                                                   if (null != onRestoreVersion) {
                                                                                     fn = () => {
                                                                                       const obj = projectId(groupStart[22]);
-                                                                                      const obj2 = { onConfirm() { /* body not rendered: F159546 */ } };
+                                                                                      const obj2 = { onConfirm() { /* body not rendered: F159850 */ } };
                                                                                       return obj.confirmRestoreVersion(obj2);
                                                                                     };
                                                                                   }
@@ -1462,7 +1462,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                               if (null != onRestoreVersion) {
                                 fn = () => {
                                   const obj = projectId(groupStart[22]);
-                                  const obj2 = { onConfirm() { /* body not rendered: F159546 */ } };
+                                  const obj2 = { onConfirm() { /* body not rendered: F159850 */ } };
                                   return obj.confirmRestoreVersion(obj2);
                                 };
                               }

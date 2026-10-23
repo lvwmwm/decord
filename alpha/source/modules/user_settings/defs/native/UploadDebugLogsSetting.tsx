@@ -1,21 +1,21 @@
-// Module ID: 16816
-// Function ID: 16817
+// Module ID: 16860
+// Function ID: 16861
 // Name: UploadDebugLogsSetting
-// Dependencies: [5, 17, 1087, 21, 570, 1274, 558, 576, 1384, 13741, 5649, 1128, 5672, 11181, 2]
+// Dependencies: [5, 17, 1087, 21, 570, 1274, 558, 576, 1384, 13764, 5661, 1128, 5684, 11204, 2]
 
-// Module 16816 (UploadDebugLogsSetting)
+// Module 16860 (UploadDebugLogsSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5672 */;
-import DebugUploadManager from "DebugUploadManager" /* 13741 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5684 */;
+import DebugUploadManager from "DebugUploadManager" /* 13764 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11181 */;
+import SettingBuilders from "SettingBuilders" /* 11204 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2;

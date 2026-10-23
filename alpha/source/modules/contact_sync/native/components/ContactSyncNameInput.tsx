@@ -1,13 +1,13 @@
-// Module ID: 13537
-// Function ID: 13538
+// Module ID: 13560
+// Function ID: 13561
 // Name: ContactSyncNameInput
-// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 5579, 1128, 5220, 1202, 5230, 13534, 2]
+// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 5591, 1128, 5232, 1202, 5242, 13557, 2]
 
-// Module 13537 (ContactSyncNameInput)
+// Module 13560 (ContactSyncNameInput)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5579 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5591 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -23,9 +23,9 @@ let tmp;
 let tmp10;
 const intl7 = tmp(1128);
 const native = tmp(1202);
-const Text_Text = tmp(5220);
-const components_Button_Button = tmp(5230);
-const ContactSyncErrorDefault = tmp10(13534);
+const Text_Text = tmp(5232);
+const components_Button_Button = tmp(5242);
+const ContactSyncErrorDefault = tmp10(13557);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -410,7 +410,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncN
   items = [tmp.content, { paddingBottom: insets.bottom }];
   const obj2 = { style: tmp.flex, children: items1 };
   const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: string2Result };
-  const Text = tmp10(5220).Text;
+  const Text = tmp10(5232).Text;
   const intl2 = tmp10(1128).intl;
   const string2 = intl2.string;
   const t2 = tmp10(1128).t;
@@ -421,7 +421,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncN
   }
   items1 = [metroRequire(Text, obj3), , , , ];
   const obj4 = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default", children: string3Result };
-  const Text2 = tmp10(5220).Text;
+  const Text2 = tmp10(5232).Text;
   const intl3 = tmp10(1128).intl;
   const string3 = intl3.string;
   const t3 = tmp10(1128).t;
@@ -432,7 +432,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncN
   }
   items1[1] = metroRequire(Text2, obj4);
   const obj5 = { variant: "eyebrow", color: "interactive-text-default", children: intl4.string(tmp10(1128).t["42/D2U"]) };
-  const Text3 = tmp10(5220).Text;
+  const Text3 = tmp10(5232).Text;
   intl4 = tmp10(1128).intl;
   items1[2] = metroRequire(Text3, obj5);
   const obj6 = { value: first, onChangeText: tmp4, style: tmp.input, autoFocus: true, showBorder: false, showTopContainer: false, clearButtonVisibility: tmp10(1202).ClearButtonVisibility.WITH_CONTENT, autoCorrect: true, autoComplete: "name", textContentType: "name" };
@@ -441,14 +441,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncN
   let tmp13Result = null;
   if (flag) {
     const obj7 = { style: tmp.formSubtitle, variant: "text-xs/medium", color: "text-default", children: intl5.string(tmp10(1128).t.bCQt9K) };
-    const Text4 = tmp10(5220).Text;
+    const Text4 = tmp10(5232).Text;
     intl5 = tmp10(1128).intl;
     tmp13Result = tmp13(Text4, obj7);
   }
   items1[4] = tmp13Result;
   items2 = [metroImportDefault(View, obj2), , , ];
   let str = "lg";
-  const Button = tmp10(5230).Button;
+  const Button = tmp10(5242).Button;
   if (null != onRemoveName) {
     str = "md";
   }
@@ -478,7 +478,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncN
           return tmp;
         }
     };
-    Button2 = tmp10(5230).Button;
+    Button2 = tmp10(5242).Button;
     intl6 = tmp10(1128).intl;
     tmp13Result2 = tmp13(tmp12, obj9);
   }

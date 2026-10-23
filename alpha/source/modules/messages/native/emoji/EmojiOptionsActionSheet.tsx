@@ -1,13 +1,13 @@
-// Module ID: 9928
-// Function ID: 9929
+// Module ID: 9950
+// Function ID: 9951
 // Name: EmojiOptionsActionSheet
-// Dependencies: [19, 21, 558, 576, 7270, 5648, 5196, 5664, 1128, 7283, 6972, 6888, 2]
+// Dependencies: [19, 21, 558, 576, 7283, 5660, 5208, 5676, 1128, 7296, 6985, 6901, 2]
 
-// Module 9928 (EmojiOptionsActionSheet)
+// Module 9950 (EmojiOptionsActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import ToastUtils from "ToastUtils" /* 5648 */;
-import ClipboardUtils from "ClipboardUtils" /* 7270 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
+import ToastUtils from "ToastUtils" /* 5660 */;
+import ClipboardUtils from "ClipboardUtils" /* 7283 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -35,16 +35,16 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiOptio
     tmp4 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp8 = jsx(emojiSrc(5664).LinkIcon, {});
+    const tmp8 = jsx(emojiSrc(5676).LinkIcon, {});
     const intl = tmp(1128).intl;
     const stringResult = intl.string(emojiSrc(1128).t.cIoudn);
     cResult[2] = tmp8;
     cResult[3] = stringResult;
   }
   if (cResult[4] !== tmp4) {
-    const ActionSheet = tmp(7283).ActionSheet;
+    const ActionSheet = tmp(7296).ActionSheet;
     let obj3 = { hasIcons: true, children: null };
-    const TableRowGroup = tmp(6972).TableRowGroup;
+    const TableRowGroup = tmp(6985).TableRowGroup;
     const tmp12 = <ActionSheet>{null}</ActionSheet>;
     cResult[4] = tmp4;
     cResult[5] = tmp12;
@@ -65,11 +65,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiOptio
     const obj3 = ActionSheetActionCreatorsDefault;
     obj3.hideActionSheet();
   }, items);
-  const ActionSheet = emojiSrc(7283).ActionSheet;
+  const ActionSheet = emojiSrc(7296).ActionSheet;
   let obj2 = { hasIcons: true, children: null };
-  const TableRowGroup = emojiSrc(6972).TableRowGroup;
+  const TableRowGroup = emojiSrc(6985).TableRowGroup;
   let obj3 = { icon: null, label: intl.string(emojiSrc(1128).t.cIoudn), onPress: callback };
-  const TableRow = emojiSrc(6888).TableRow;
+  const TableRow = emojiSrc(6901).TableRow;
   intl = emojiSrc(1128).intl;
   return <ActionSheet>{null}</ActionSheet>;
 });

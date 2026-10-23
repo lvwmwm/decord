@@ -1,21 +1,21 @@
-// Module ID: 16583
-// Function ID: 16584
+// Module ID: 16630
+// Function ID: 16631
 // Name: SyncThemeSetting
-// Dependencies: [4993, 1208, 1207, 1246, 8318, 1087, 558, 576, 504, 1128, 16584, 5854, 11181, 2]
+// Dependencies: [4993, 1208, 1207, 1246, 8330, 1087, 558, 576, 504, 1128, 16631, 5866, 11204, 2]
 
-// Module 16583 (SyncThemeSetting)
+// Module 16630 (SyncThemeSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5854 */;
-import SettingsConstants from "SettingsConstants" /* 8318 */;
-import actions_AnalyticsTrackingActionCreators from "actions/AnalyticsTrackingActionCreators" /* 16584 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5866 */;
+import SettingsConstants from "SettingsConstants" /* 8330 */;
+import actions_AnalyticsTrackingActionCreators from "actions/AnalyticsTrackingActionCreators" /* 16631 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4993 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1208 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11181 */;
+import SettingBuilders from "SettingBuilders" /* 11204 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

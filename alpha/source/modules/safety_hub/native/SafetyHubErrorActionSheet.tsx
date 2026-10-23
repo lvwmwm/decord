@@ -1,19 +1,19 @@
-// Module ID: 15973
-// Function ID: 15974
+// Module ID: 16006
+// Function ID: 16007
 // Name: SafetyHubErrorActionSheet
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 15972, 7003, 5220, 1128, 12774, 5230, 5251, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 16005, 7016, 5232, 1128, 12793, 5242, 5263, 2]
 
-// Module 15973 (SafetyHubErrorActionSheet)
+// Module 16006 (SafetyHubErrorActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import components_Button_Button from "components/Button/Button" /* 5230 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5251 */;
-import CircleXIcon2 from "CircleXIcon" /* 7003 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12774 */;
-import useSafetyHubLoadingDefault from "useSafetyHubLoading" /* 15972 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import components_Button_Button from "components/Button/Button" /* 5242 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5263 */;
+import CircleXIcon2 from "CircleXIcon" /* 7016 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12793 */;
+import useSafetyHubLoadingDefault from "useSafetyHubLoading" /* 16005 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -46,7 +46,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubErr
   const tmp6 = useSafetyHubLoadingDefault();
   if (cResult[0] !== tmp4.redesignErrorIcon) {
     const obj2 = { size: "custom", color: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT, style: tmp4.redesignErrorIcon };
-    const CircleXIcon = tmp(7003).CircleXIcon;
+    const CircleXIcon = tmp(7016).CircleXIcon;
     const tmp9 = hasOwnProperty(CircleXIcon, obj2);
     cResult[0] = tmp4.redesignErrorIcon;
     cResult[1] = tmp9;
@@ -63,7 +63,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubErr
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { variant: "heading-lg/normal", children: intl.string(intl3.t.TDRvqs) };
-      const Text = tmp(5220).Text;
+      const Text = tmp(5232).Text;
       intl = tmp(1128).intl;
       const tmp15 = hasOwnProperty(Text, obj3);
       cResult[5] = tmp15;

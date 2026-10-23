@@ -1,13 +1,13 @@
-// Module ID: 9281
-// Function ID: 9282
+// Module ID: 9304
+// Function ID: 9305
 // Name: GameCoverArt
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 9282, 5220, 5655, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 9305, 5232, 5667, 2]
 
-// Module 9281 (GameCoverArt)
+// Module 9304 (GameCoverArt)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useGameArtworkDefault from "useGameArtwork" /* 9282 */;
+import useGameArtworkDefault from "useGameArtwork" /* 9305 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -20,8 +20,8 @@ let obj2;
 let obj3;
 let tmp;
 let tmp4;
-const Text_Text = tmp(5220);
-const FastImageDefault = tmp4(5655);
+const Text_Text = tmp(5232);
+const FastImageDefault = tmp4(5667);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -161,7 +161,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameCoverArt
                 }
               }
               const obj7 = { source: tmp14, accessible: false, style: tmp15, onError: handleError, onLoad: handleLoad };
-              const tmp18 = React3(tmp9(5655), obj7, imageUrl);
+              const tmp18 = React3(tmp9(5667), obj7, imageUrl);
               cResult[21] = handleError;
               cResult[22] = handleLoad;
               cResult[23] = imageUrl;

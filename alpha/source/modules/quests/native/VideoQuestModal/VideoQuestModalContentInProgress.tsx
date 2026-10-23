@@ -1,36 +1,36 @@
-// Module ID: 16391
-// Function ID: 16392
+// Module ID: 16441
+// Function ID: 16442
 // Name: VideoQuestModalContentInProgress
-// Dependencies: [109, 32, 19, 17, 6695, 1098, 21, 683, 587, 16392, 4969, 558, 576, 1384, 9560, 5038, 5192, 1633, 16393, 16408, 5023, 7153, 16409, 16388, 16410, 5963, 6893, 5220, 16411, 5655, 5230, 9570, 7944, 1128, 9072, 10798, 7206, 9546, 14079, 16355, 8739, 5244, 16412, 10797, 16268, 16264, 16266, 14159, 9620, 16387, 5196, 16413, 2002, 9581, 7781, 9549, 9552, 6702, 7786, 6698, 8826, 16414, 9543, 16415, 6703, 2]
+// Dependencies: [109, 32, 19, 17, 6708, 1098, 21, 683, 587, 16442, 4969, 558, 576, 1384, 9583, 5050, 5204, 1633, 16443, 16458, 5035, 7166, 16459, 16438, 16460, 5975, 6906, 5232, 16461, 5667, 5242, 9593, 7957, 1128, 9095, 10821, 7219, 9569, 14103, 16405, 8757, 5256, 16462, 10820, 16301, 16297, 16299, 14183, 9643, 16437, 5208, 16463, 2002, 9604, 7794, 9572, 9575, 6715, 7799, 6711, 8849, 16464, 9566, 16465, 6716, 2]
 
-// Module 16391 (VideoQuestModalContentInProgress)
+// Module 16441 (VideoQuestModalContentInProgress)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
-import timing from "timing" /* 5192 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import LinearGradientDefault from "LinearGradient" /* 5244 */;
-import QuestTypes from "QuestTypes" /* 6698 */;
-import AdCreativeType from "AdCreativeType" /* 6702 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7786 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8739 */;
-import showShareActionSheet2 from "showShareActionSheet" /* 8826 */;
-import QuestUtils from "QuestUtils" /* 9543 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9546 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9549 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9552 */;
-import AssetUtils from "AssetUtils" /* 9560 */;
-import MoreHorizontalIcon2 from "MoreHorizontalIcon" /* 9620 */;
-import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 16392 */;
-import QuestContextMenuDefault from "QuestContextMenu" /* 16411 */;
-import VideoQuestModalHeaderDefault from "VideoQuestModalHeader" /* 16412 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5050 */;
+import timing from "timing" /* 5204 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
+import LinearGradientDefault from "LinearGradient" /* 5256 */;
+import QuestTypes from "QuestTypes" /* 6711 */;
+import AdCreativeType from "AdCreativeType" /* 6715 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7799 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8757 */;
+import showShareActionSheet2 from "showShareActionSheet" /* 8849 */;
+import QuestUtils from "QuestUtils" /* 9566 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9569 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9572 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9575 */;
+import AssetUtils from "AssetUtils" /* 9583 */;
+import MoreHorizontalIcon2 from "MoreHorizontalIcon" /* 9643 */;
+import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 16442 */;
+import QuestContextMenuDefault from "QuestContextMenu" /* 16461 */;
+import VideoQuestModalHeaderDefault from "VideoQuestModalHeader" /* 16462 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import QuestConstants from "QuestConstants" /* 6695 */;
+import QuestConstants from "QuestConstants" /* 6708 */;
 import Fragment from "Fragment" /* 21 */;
 import module_683_mod from "module_683" /* 683 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -49,21 +49,21 @@ let obj2;
 let tmp;
 let unpackModuleId;
 const intl5 = tmp(1128);
-const native = tmp(5023);
-const Text_Text = tmp(5220);
-const components_Button_Button = tmp(5230);
-const Stack_Stack = tmp(5963);
-const Pressables = tmp(6893);
-const common_SafeAreaView = tmp(7206);
-const QuestCopyUtils = tmp(9570);
-const ArrowSmallRightIcon = tmp(10797);
-const VideoQuestUtils = tmp(14079);
-const ShareIcon2 = tmp(14159);
-const ClosedCaptionsIcon = tmp(16264);
-const ClosedCaptionsOutlineIcon2 = tmp(16266);
-const TranscriptOutlineIcon2 = tmp(16268);
-const QuestDockGestureContext = tmp(16355);
-const VideoQuestPlayer2 = tmp(16393);
+const native = tmp(5035);
+const Text_Text = tmp(5232);
+const components_Button_Button = tmp(5242);
+const Stack_Stack = tmp(5975);
+const Pressables = tmp(6906);
+const common_SafeAreaView = tmp(7219);
+const QuestCopyUtils = tmp(9593);
+const ArrowSmallRightIcon = tmp(10820);
+const VideoQuestUtils = tmp(14103);
+const ShareIcon2 = tmp(14183);
+const ClosedCaptionsIcon = tmp(16297);
+const ClosedCaptionsOutlineIcon2 = tmp(16299);
+const TranscriptOutlineIcon2 = tmp(16301);
+const QuestDockGestureContext = tmp(16405);
+const VideoQuestPlayer2 = tmp(16443);
 let closure_3 = ["ref"];
 let closure_4 = ["ref"];
 let _objectWithoutProperties = _objectWithoutProperties_mod;
@@ -181,8 +181,8 @@ let closure_33 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
   }
   const tmp6 = closure_24(first);
   if (cResult[1] !== quest) {
-    const tmpResult7 = tmp(9560);
-    const questAsset = tmpResult7.getQuestAsset(quest, tmp(9560).QuestAssetType.HERO);
+    const tmpResult7 = tmp(9583);
+    const questAsset = tmpResult7.getQuestAsset(quest, tmp(9583).QuestAssetType.HERO);
     cResult[1] = quest;
     cResult[2] = questAsset;
   }
@@ -231,7 +231,7 @@ let closure_33 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
         closure_3(nativeDefault.space.PX_24 + nativeEvent.nativeEvent.layout.height);
       }
     }
-    const md = tmp(16392).QUEST_PROGRESS_DIAMETER_BY_SIZE.md;
+    const md = tmp(16442).QUEST_PROGRESS_DIAMETER_BY_SIZE.md;
     if (tmp14 == null) {
       class J {
         constructor(nativeEvent) {
@@ -241,7 +241,7 @@ let closure_33 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
     }
     const sum = md + tmp14;
     const sum1 = sum + 2 * setIsFullscreen(587).space.PX_16;
-    const tmpResult8 = tmp(5038);
+    const tmpResult8 = tmp(5050);
     const sharedValue = tmpResult8.useSharedValue(0);
     const tmp18 = setIsFullscreen;
     if (cResult[8] !== sharedValue) {
@@ -272,9 +272,9 @@ let closure_33 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
       const obj2 = { duration };
       return withDelay(c16, obj.withTiming(sharedValue.get(), obj2));
     }
-    let obj2 = { withDelay: tmp(5038).withDelay, LOGO_REWARD_TRANSITION_DELAY_MS, withTiming: tmp(5192).withTiming, isComponentMounted: sharedValue, LOGO_REWARD_TRANSITION_DURATION_MS };
-    const useDerivedValue = tmp(5038).useDerivedValue;
-    tmp(5038);
+    let obj2 = { withDelay: tmp(5050).withDelay, LOGO_REWARD_TRANSITION_DELAY_MS, withTiming: tmp(5204).withTiming, isComponentMounted: sharedValue, LOGO_REWARD_TRANSITION_DURATION_MS };
+    const useDerivedValue = tmp(5050).useDerivedValue;
+    tmp(5050);
     he.__closure = obj2;
     he.__workletHash = 12561024953493;
     he.__initData = __initData;
@@ -287,7 +287,7 @@ let closure_33 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
     ge.__closure = obj3;
     ge.__workletHash = 17463485679217;
     ge.__initData = __initData2;
-    const tmpResult10 = tmp(5038);
+    const tmpResult10 = tmp(5050);
     const animatedStyle = tmpResult10.useAnimatedStyle(ge);
     function ye() {
       const obj = { opacity: 1 - derivedValue.get() };
@@ -297,7 +297,7 @@ let closure_33 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
     ye.__closure = obj5;
     ye.__workletHash = 9103187579788;
     ye.__initData = __initData3;
-    const tmpResult11 = tmp(5038);
+    const tmpResult11 = tmp(5050);
     const animatedStyle1 = tmpResult11.useAnimatedStyle(ye);
     function _e() {
       let pointerEvents = "none";
@@ -310,7 +310,7 @@ let closure_33 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
     _e.__closure = obj6;
     _e.__workletHash = 6340268991801;
     _e.__initData = __initData4;
-    const tmpResult12 = tmp(5038);
+    const tmpResult12 = tmp(5050);
     const animatedProps = tmpResult12.useAnimatedProps(_e);
     tmp18(1633)();
     if (cResult[11] === isFullscreen) {
@@ -362,7 +362,7 @@ let closure_33 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
           closure_3(nativeDefault.space.PX_24 + nativeEvent.nativeEvent.layout.height);
         }
       }
-      if (diff < tmp(16392).QUEST_PROGRESS_DIAMETER_BY_SIZE.lg + tmp14) {
+      if (diff < tmp(16442).QUEST_PROGRESS_DIAMETER_BY_SIZE.lg + tmp14) {
         class J {
           constructor(nativeEvent) {
             closure_3(nativeDefault.space.PX_24 + nativeEvent.nativeEvent.layout.height);
@@ -1465,7 +1465,7 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
   ({ contentWidth, isFullscreen, onNavigateToPostWatchVideo, onEnd, setIsFullscreen } = arg0);
   let tmp = sourceQuestContent;
   let tmp2 = dependencyMap;
-  let obj = sourceQuestContent(16387);
+  let obj = sourceQuestContent(16437);
   const quest = obj.useVideoQuestModalContext().quest;
   items = [quest];
   items1 = [quest];
@@ -1485,14 +1485,14 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { quest };
-    const tmp2 = asyncRequire(16413, dependencyMap.paths);
+    const tmp2 = asyncRequire(16463, dependencyMap.paths);
     openLazy(tmp2, "transcript-" + quest.id, obj);
   }, items2);
-  let obj2 = sourceQuestContent(9581);
+  let obj2 = sourceQuestContent(9604);
   const getQuestImpressionId = obj2.useGetQuestImpressionId();
   [tmp11, closure_4] = videoQuestClickCtaAndMaybeCloseModal(react.useState(false), 2);
   const tmp10 = videoQuestClickCtaAndMaybeCloseModal(react.useState(false), 2);
-  let obj3 = sourceQuestContent(7781);
+  let obj3 = sourceQuestContent(7794);
   const isShareableQuestResult = obj3.isShareableQuest(quest.config);
   _objectWithoutProperties = isShareableQuestResult;
   const items3 = [isShareableQuestResult, quest.id, getQuestImpressionId, sourceQuestContent];
@@ -1518,7 +1518,7 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
       showShareActionSheet(obj2, "Video Quest Modal - " + quest.id);
     }
   }, items3);
-  const obj4 = sourceQuestContent(16414);
+  const obj4 = sourceQuestContent(16464);
   videoQuestClickCtaAndMaybeCloseModal = obj4.useVideoQuestClickCtaAndMaybeCloseModal({ quest, onClose, sourceQuestContent });
   const items4 = [videoQuestClickCtaAndMaybeCloseModal];
   const items5 = [videoQuestClickCtaAndMaybeCloseModal];
@@ -1530,12 +1530,12 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
     const obj2 = { questId: quest.id };
     const result = obj.openRewardDetailsBottomSheet(obj2);
   }, items6);
-  const obj5 = sourceQuestContent(16415);
+  const obj5 = sourceQuestContent(16465);
   const videoExternallyPaused = obj5.useVideoExternallyPaused(quest.id, tmp11);
-  const tmp19 = quest.config.taskConfigV2.tasks[sourceQuestContent(undefined, 6703).FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE];
+  const tmp19 = quest.config.taskConfigV2.tasks[sourceQuestContent(undefined, 6716).FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE];
   let tmp20 = null == tmp19;
   if (!tmp20) {
-    const tmpResult = tmp(14079);
+    const tmpResult = tmp(14103);
     tmp20 = "portrait" === tmpResult.getVideoOrientation(tmp19);
   }
   const obj6 = { quest, captionsEnabled: tmp6, contentWidth, handleClose: onClose, handleAdvertiserDetailsPress: callback3, handlePrimaryCtaPress: callback4, handleRewardDetailsPress: callback5, handleShareQuest: callback2, handleOpenTranscript: callback1, handleToggleCaptions: callback, isFullscreen, onNavigateToPostWatchVideo, onEnd, setIsFullscreen, externallyPaused: videoExternallyPaused, sourceQuestContent, hasCaptionAsset: null != memo, hasTranscriptAsset: null != memo1, isShareable: isShareableQuestResult };

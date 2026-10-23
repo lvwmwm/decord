@@ -1,9 +1,9 @@
-// Module ID: 17745
-// Function ID: 17746
+// Module ID: 17789
+// Function ID: 17790
 // Name: FocusModeOptionsActionSheet
-// Dependencies: [19, 21, 1104, 1128, 558, 576, 13688, 6888, 7283, 6972, 2]
+// Dependencies: [19, 21, 1104, 1128, 558, 576, 13711, 6901, 7296, 6985, 2]
 
-// Module 17745 (FocusModeOptionsActionSheet)
+// Module 17789 (FocusModeOptionsActionSheet)
 import DurationsDefault from "Durations" /* 1104 */;
 import intl5 from "intl" /* 1128 */;
 import react from "react" /* 19 */;
@@ -73,7 +73,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FocusModeO
   let obj = onSelect(576);
   const cResult = obj.c(9);
   onSelect = onSelect.onSelect;
-  const obj2 = onSelect(13688);
+  const obj2 = onSelect(13711);
   const focusModeEnabled = obj2.useFocusModeEnabled();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
@@ -118,8 +118,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FocusModeO
       }
       return tmp13;
     }
-    const obj3 = { children: closure_3(onSelect(6972).TableRowGroup, obj4) };
-    const ActionSheet = tmp(7283).ActionSheet;
+    const obj3 = { children: closure_3(onSelect(6985).TableRowGroup, obj4) };
+    const ActionSheet = tmp(7296).ActionSheet;
     obj4 = { title: first, hasIcons: false, children: items };
     items = [tmp7, tmp10];
     const tmp16 = closure_2(ActionSheet, obj3);
@@ -139,7 +139,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FocusModeO
       trailing: null,
       label: intl4.string(onSelect(1128).t.rk35Gm)
     };
-    let TableRow = tmp(6888).TableRow;
+    let TableRow = tmp(6901).TableRow;
     intl2 = tmp(1128).intl;
     intl3 = tmp(1128).intl;
     intl4 = tmp(1128).intl;
@@ -155,11 +155,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FocusModeO
   let intl3;
   let intl4;
   onSelect = onSelect.onSelect;
-  let obj = onSelect(13688);
+  let obj = onSelect(13711);
   const focusModeEnabled = obj.useFocusModeEnabled();
-  const ActionSheet = onSelect(7283).ActionSheet;
+  const ActionSheet = onSelect(7296).ActionSheet;
   const obj2 = { title: intl.string(onSelect(1128).t["sNX1E+"]), hasIcons: false, children: items };
-  const TableRowGroup = onSelect(6972).TableRowGroup;
+  const TableRowGroup = onSelect(6985).TableRowGroup;
   intl = onSelect(1128).intl;
   let tmp4Result = null;
   const tmp5 = closure_3;
@@ -173,7 +173,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FocusModeO
       trailing: null,
       label: intl4.string(onSelect(1128).t.rk35Gm)
     };
-    let TableRow = tmp(6888).TableRow;
+    let TableRow = tmp(6901).TableRow;
     intl2 = tmp(1128).intl;
     intl3 = tmp(1128).intl;
     intl4 = tmp(1128).intl;

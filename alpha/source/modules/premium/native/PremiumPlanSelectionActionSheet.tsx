@@ -1,10 +1,10 @@
-// Module ID: 7520
-// Function ID: 7521
+// Module ID: 7533
+// Function ID: 7534
 // Name: PremiumPlanSelectionActionSheet
-// Dependencies: [109, 5, 32, 19, 17, 7521, 2068, 7509, 7518, 1394, 1087, 1206, 5684, 1098, 21, 4969, 587, 2053, 558, 576, 1128, 5220, 38, 7528, 1903, 504, 14596, 7324, 5230, 5253, 5957, 10432, 7514, 5191, 7542, 8417, 9789, 8639, 7238, 7263, 5585, 10425, 7500, 5249, 10540, 1267, 5196, 7499, 1630, 5895, 10433, 6448, 7503, 4976, 10455, 10456, 10457, 10458, 10459, 10460, 1384, 2067, 5251, 11014, 5568, 5655, 8933, 14597, 1202, 9773, 10436, 10539, 2]
+// Dependencies: [109, 5, 32, 19, 17, 7534, 2068, 7522, 7531, 1394, 1087, 1206, 5696, 1098, 21, 4969, 587, 2053, 558, 576, 1128, 5232, 38, 7541, 1903, 504, 14620, 7337, 5242, 5265, 5969, 10454, 7527, 5203, 7555, 8429, 9811, 8657, 7251, 7276, 5597, 10447, 7513, 5261, 10562, 1267, 5208, 7512, 1630, 5907, 10455, 6461, 7516, 4976, 10477, 10478, 10479, 10480, 10481, 10482, 1384, 2067, 5263, 11037, 5580, 5667, 8956, 14621, 1202, 9795, 10458, 10561, 2]
 // Exports: default, getItemsByPremiumTypePredicate
 
-// Module 7520 (PremiumPlanSelectionActionSheet)
+// Module 7533 (PremiumPlanSelectionActionSheet)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,26 +15,26 @@ import PlatformUtils from "PlatformUtils" /* 1384 */;
 import NumberUtils from "NumberUtils" /* 1903 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2053 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import components_Button_Button from "components/Button/Button" /* 5230 */;
-import react_native from "react-native" /* 5957 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7521 */;
-import PremiumPlanActionSheetHeaderDefault from "PremiumPlanActionSheetHeader" /* 7528 */;
-import ACOMExperiments from "ACOMExperiments" /* 9773 */;
-import NativeCheckoutStoreProviderDefault from "NativeCheckoutStoreProvider" /* 10539 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10540 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import components_Button_Button from "components/Button/Button" /* 5242 */;
+import react_native from "react-native" /* 5969 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7534 */;
+import PremiumPlanActionSheetHeaderDefault from "PremiumPlanActionSheetHeader" /* 7541 */;
+import ACOMExperiments from "ACOMExperiments" /* 9795 */;
+import NativeCheckoutStoreProviderDefault from "NativeCheckoutStoreProvider" /* 10561 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10562 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
-import IAPStore from "IAPStore" /* 7509 */;
-import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 7518 */;
+import IAPStore from "IAPStore" /* 7522 */;
+import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 7531 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import Constants_mod from "Constants" /* 1087 */;
-import PaymentConstants from "PaymentConstants" /* 5684 */;
+import PaymentConstants from "PaymentConstants" /* 5696 */;
 import Constants_mod2 from "Constants" /* 1098 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -75,10 +75,10 @@ let obj3;
 let size;
 let tmp;
 const PremiumUtils = tmp(2053);
-const MobileWebRedirectCheckoutUtils = tmp(7500);
-const PremiumBundledPlansUtils = tmp(7503);
-const usePremiumTrialOffer = tmp(7542);
-const useIsEligibleForBogoOffer = tmp(10436);
+const MobileWebRedirectCheckoutUtils = tmp(7513);
+const PremiumBundledPlansUtils = tmp(7516);
+const usePremiumTrialOffer = tmp(7555);
+const useIsEligibleForBogoOffer = tmp(10458);
 function renderPlanOptionBadge(arg0) {
   let IAybsG;
   let customBadgeComponent;
@@ -160,8 +160,8 @@ function PremiumPlanSelectionActionSheet(premiumItems) {
   let tmp83;
   let userIsEligibleForBogoPromotion;
   let v9hnZoK;
-  const f98409 = (premiumTier) => premiumTier.premiumTier;
-  const f98419 = (patchOrderLineItems) => ({ patchOrderLineItems: patchOrderLineItems.patchOrderLineItems, isPatchOrderLoading: patchOrderLineItems.isPatchOrderLoading, orderRequired: patchOrderLineItems.orderRequired });
+  const f98590 = (premiumTier) => premiumTier.premiumTier;
+  const f98600 = (patchOrderLineItems) => ({ patchOrderLineItems: patchOrderLineItems.patchOrderLineItems, isPatchOrderLoading: patchOrderLineItems.isPatchOrderLoading, orderRequired: patchOrderLineItems.orderRequired });
   ({ applicationId: require, analyticsLocation, premiumType } = premiumItems);
   premiumItems = premiumItems.premiumItems;
   const onPaymentStart = premiumItems.onPaymentStart;
@@ -335,8 +335,8 @@ function PremiumPlanSelectionActionSheet(premiumItems) {
   const tmp16 = premiumType(premiumItems[33])();
   const tmp17 = ref((orderRecord) => orderRecord.orderRecord);
   let closure_13 = tmp17;
-  ({ patchOrderLineItems: c14, isPatchOrderLoading, orderRequired } = ref(f98419));
-  const tmp18 = ref(f98419);
+  ({ patchOrderLineItems: c14, isPatchOrderLoading, orderRequired } = ref(f98600));
+  const tmp18 = ref(f98600);
   if (!isPatchOrderLoading) {
     isPatchOrderLoading = ref((isCreateOrderLoading) => isCreateOrderLoading.isCreateOrderLoading);
   }
@@ -873,8 +873,8 @@ function PremiumPlanSelectionActionSheet(premiumItems) {
         const _Set = Set;
         const self = this;
         const self2 = this;
-        react = new Set(premiumItems.map(f98409)).size > 1;
-        set = new Set(premiumItems.map(f98409));
+        react = new Set(premiumItems.map(f98590)).size > 1;
+        set = new Set(premiumItems.map(f98590));
         items17[1] = tmp48(product_id, obj28);
         items15[1] = closure_36(tmp15Result13, obj25);
         tmp49Result2 = tmp49(tmp54, obj20);
@@ -1037,12 +1037,12 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
   let premiumType;
   let selectedPremiumType;
   let trialOffer;
-  const f98432 = (orderRequired) => ({ orderRequired: orderRequired.orderRequired, orderRecord: orderRequired.orderRecord });
+  const f98613 = (orderRequired) => ({ orderRequired: orderRequired.orderRequired, orderRecord: orderRequired.orderRecord });
   ({ premiumType, isPaymentSuccess, trialOffer } = arg0);
   ({ selectedPremiumType, discountOffer } = arg0);
   const tmp = closure_38();
-  ({ orderRequired, orderRecord } = useNativeCheckoutStore(f98432));
-  useNativeCheckoutStore(f98432);
+  ({ orderRequired, orderRecord } = useNativeCheckoutStore(f98613));
+  useNativeCheckoutStore(f98613);
   if (null == premiumType) {
     if (!isPaymentSuccess) {
       const obj = { style: tmp.headerText, variant: "text-md/semibold", color: "text-default", accessibilityRole: "header", children: intl.string(intl9.t.vLz3Zs) };
@@ -1218,7 +1218,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
   }
   const tmpResult = premiumItem(504);
   const stateFromStores = tmpResult.useStateFromStores(first1, tmp10);
-  const tmpResult5 = premiumItem(14596);
+  const tmpResult5 = premiumItem(14620);
   const checkoutPlanPriceString = tmpResult5.useCheckoutPlanPriceString(premiumItem.productId, stateFromStores);
   let priceString;
   if (stateFromStores != null) {
@@ -1232,7 +1232,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
     if (cResult[4] === priceString) {
       tmp14 = cResult[5];
     }
-    const tmpResult6 = premiumItem(14596);
+    const tmpResult6 = premiumItem(14620);
     const checkoutPlanDiscountPrices = tmpResult6.useCheckoutPlanDiscountPrices(premiumItem.productId, tmp14);
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
@@ -1421,7 +1421,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
       const formatToPlainString = tmp41.formatToPlainString;
       const obj2 = { price: tmpResult7.formatPrice(0, USD, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) };
       const hXcaLT = tmp(1128).t.hXcaLT;
-      tmpResult7 = premiumItem(7324);
+      tmpResult7 = premiumItem(7337);
       formatToPlainStringResult = formatToPlainString(hXcaLT, obj2);
     } else {
       class W {
@@ -1451,8 +1451,8 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
         }
       }
     }
-    const formatRate = tmp(7324).formatRate;
-    premiumItem(7324);
+    const formatRate = tmp(7337).formatRate;
+    premiumItem(7337);
     if (checkoutPlanDiscountPrices != null) {
       class W {
         constructor(orderRequired) {
@@ -1522,8 +1522,8 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
       cResult[48] = tmp48;
       cResult[49] = "interactive-text-default";
       cResult[50] = combined;
-      cResult[51] = closure_35(premiumItem(5220).Text, obj3);
-      const tmp53 = closure_35(premiumItem(5220).Text, obj3);
+      cResult[51] = closure_35(premiumItem(5232).Text, obj3);
+      const tmp53 = closure_35(premiumItem(5232).Text, obj3);
     }
     if (first > 0) {
       class W {
@@ -1587,7 +1587,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
   let trialOffer;
   let userIsEligibleForBogoPromotion;
   let v02Gmgm;
-  const f98437 = (orderRequired) => ({ orderRequired: orderRequired.orderRequired, orderRecord: orderRequired.orderRecord });
+  const f98618 = (orderRequired) => ({ orderRequired: orderRequired.orderRequired, orderRecord: orderRequired.orderRecord });
   premiumItem = premiumItem.premiumItem;
   ({ trialOffer, discountOffer, userIsEligibleForBogoPromotion } = premiumItem);
   ({ selectedProductId, optionNeedsProductNameLabel, customBadgeComponent, discountedPriceString } = premiumItem);
@@ -1603,21 +1603,21 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
   const items = [IAPStore];
   const obj = premiumItem(504);
   const stateFromStores = obj.useStateFromStores(items, () => IAPStore.getProduct(premiumItem.productId));
-  const obj2 = premiumItem(14596);
+  const obj2 = premiumItem(14620);
   let checkoutPlanPriceString = obj2.useCheckoutPlanPriceString(premiumItem.productId, stateFromStores);
   const obj3 = { discountedPriceString, regularPriceString: priceString };
   priceString = undefined;
-  const useCheckoutPlanDiscountPrices = premiumItem(14596).useCheckoutPlanDiscountPrices;
+  const useCheckoutPlanDiscountPrices = premiumItem(14620).useCheckoutPlanDiscountPrices;
   const productId = premiumItem.productId;
-  premiumItem(14596);
+  premiumItem(14620);
   if (stateFromStores != null) {
     priceString = stateFromStores.priceString;
   }
   const checkoutPlanDiscountPrices = useCheckoutPlanDiscountPrices(productId, obj3);
-  ({ orderRequired, orderRecord } = useNativeCheckoutStore(f98437));
+  ({ orderRequired, orderRecord } = useNativeCheckoutStore(f98618));
   const premiumTier = premiumItem.premiumTier;
   let tmp12 = null != trialOffer && null != premiumTier;
-  useNativeCheckoutStore(f98437);
+  useNativeCheckoutStore(f98618);
   if (tmp12) {
     const subscriptionTrial = trialOffer.subscriptionTrial;
     let skuId;
@@ -1681,7 +1681,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
   }
   let formatRateResult = null;
   if (null != checkoutPlanDiscountPrices) {
-    const tmp4Result4 = premiumItem(7324);
+    const tmp4Result4 = premiumItem(7337);
     formatRateResult = tmp4Result4.formatRate(checkoutPlanDiscountPrices.discountedPrice, tmp27.interval, tmp27.intervalCount);
   }
   if (tmp15) {
@@ -1689,7 +1689,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
     const formatToPlainString = intl.formatToPlainString;
     const obj5 = { price: tmp4Result5.formatPrice(0, USD, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) };
     const hXcaLT = tmp4(1128).t.hXcaLT;
-    tmp4Result5 = premiumItem(7324);
+    tmp4Result5 = premiumItem(7337);
     formatToPlainStringResult = formatToPlainString(hXcaLT, obj5);
   } else {
     formatToPlainStringResult = undefined;
@@ -1704,8 +1704,8 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
     }
   }
   let regularPrice;
-  const formatRate = premiumItem(7324).formatRate;
-  premiumItem(7324);
+  const formatRate = premiumItem(7337).formatRate;
+  premiumItem(7337);
   if (checkoutPlanDiscountPrices != null) {
     regularPrice = checkoutPlanDiscountPrices.regularPrice;
   }
@@ -1727,7 +1727,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
     planOptionPriceContainer = tmp.planOptionPriceContainer;
   }
   const obj9 = { style: tmp.planOptionContainer, children: items3 };
-  const Text = tmp4(5220).Text;
+  const Text = tmp4(5232).Text;
   if (null != discountOffer) {
     str3 = "text-lg/medium";
   } else {
@@ -1750,7 +1750,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
   items4 = [renderPlanOptionBadge({ userLocale: locale, discount: tmp23, hideDefaultDiscountBadges: tmp21, customBadgeComponent, showBogoPromotionBadge: userIsEligibleForBogoPromotion }), ];
   const obj13 = { style: tmp.priceText, variant: "text-lg/medium", color: str8, children: formatToPlainStringResult };
   str8 = str4;
-  const Text2 = tmp4(5220).Text;
+  const Text2 = tmp4(5232).Text;
   if (productId2 === selectedProductId) {
     str8 = "interactive-text-active";
   }
@@ -1759,7 +1759,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
   let tmp35Result = null;
   if (tmp15) {
     let str9 = str4;
-    const Text3 = tmp4(5220).Text;
+    const Text3 = tmp4(5232).Text;
     if (productId2 === selectedProductId) {
       str9 = "text-default";
     }
@@ -1804,7 +1804,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
       tmp35Result3 = null;
       if (null == selectedPremiumType) {
         let str10 = str4;
-        const Text4 = tmp4(5220).Text;
+        const Text4 = tmp4(5232).Text;
         if (productId2 === selectedProductId) {
           str10 = "text-default";
         }
@@ -1828,7 +1828,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
   items6 = [tmp35Result3, ];
   let tmp35Result4 = null != checkoutPlanDiscountPrices && null != discountOffer;
   if (tmp35Result4) {
-    const Text5 = tmp4(5220).Text;
+    const Text5 = tmp4(5232).Text;
     if (productId2 === selectedProductId) {
       str4 = "text-default";
     }
@@ -1926,7 +1926,7 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
         }
       }
       const obj3 = { text: ctaText, grow: true, onPress: tmp6, loading, disabled };
-      const Button = tmp(5230).Button;
+      const Button = tmp(5242).Button;
       const merged = Object.assign(tmp4);
       const tmp11 = __initData4(Button, obj3);
       cResult[8] = ctaText;

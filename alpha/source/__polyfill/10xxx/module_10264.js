@@ -1,21 +1,43 @@
 // Module ID: 10264
 // Function ID: 10265
-// Dependencies: [41, 42, 10216, 10197]
+// Dependencies: [41, 42, 93, 95, 98, 10265, 10238, 10216, 10220, 10221]
 
 // Module 10264
-import Meridiem from "Meridiem" /* 10197 */;
-import now2 from "now" /* 10216 */;
+import EmptyDuration from "EmptyDuration" /* 10216 */;
+import assignSimilarDate from "assignSimilarDate" /* 10220 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10221 */;
+import now2 from "now" /* 10238 */;
+import _mod10265 from "module_10265" /* 10265 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
 let hasOwnProperty;
 
-const self = this;
+let self = this;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
 let self2 = this;
 if (this) {
   self2 = self.__createBinding;
 }
 if (!self2) {
+  let tmp3 = globalThis;
   let _Object = Object;
   self2 = Object.create ? ((arg0, __esModule, arg2, arg3) => {
     function get() {
@@ -51,21 +73,21 @@ if (!self2) {
     arg0[tmp] = arg1[arg2];
   });
 }
-let tmp3 = self && self.__setModuleDefault;
-if (!tmp3) {
-  let tmp4 = globalThis;
+let tmp4 = self && self.__setModuleDefault;
+if (!tmp4) {
+  let tmp5 = globalThis;
   const _Object2 = Object;
-  tmp3 = Object.create ? ((arg0, value) => {
+  tmp4 = Object.create ? ((arg0, value) => {
     const obj = { enumerable: true, value };
     Object.defineProperty(arg0, "default", obj);
   }) : ((arg0, arg1) => {
     arg0.default = arg1;
   });
 }
-let closure_5 = tmp3;
+let closure_8 = tmp4;
 let fn = self && self.__importStar;
 if (!fn) {
-  fn = function t(arg0) {
+  fn = function u(arg0) {
     fn = Object.getOwnPropertyNames || ((obj) => {
       const items = [];
       for (const key10005 in obj) {
@@ -100,81 +122,110 @@ if (!fn) {
         }
       }
     }
-    closure_5(obj, __esModule);
+    closure_8(obj, __esModule);
     return obj;
   };
 }
+const tmp6 = self && self.__importDefault || ((__esModule) => {
+  let tmp2;
+  const tmp = __esModule;
+  if (!tmp) {
+    tmp2 = { default: __esModule };
+    const obj = { default: __esModule };
+  } else {
+    tmp2 = __esModule;
+  }
+  return tmp2;
+});
+const module_10265 = tmp6(_mod10265);
 const now = fn(now2);
-const re7 = /今日|きょう|本日|ほんじつ|昨日|きのう|明日|あした|今夜|こんや|今夕|こんゆう|今晩|こんばん|今朝|けさ/i;
-class JPCasualDateParser {
+const regExp = new RegExp("(jetzt|heute|morgen|\u00FCbermorgen|uebermorgen|gestern|vorgestern|letzte\\s*nacht)(?:\\s*(morgen|vormittag|mittags?|nachmittag|abend|nacht|mitternacht))?(?=\\W|$)", "i");
+class DECasualDateParser {
   constructor() {
-    _classCallCheck(this, JPCasualDateParser);
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, DECasualDateParser);
+    const obj = _getPrototypeOf(DECasualDateParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
   }
 }
+_inherits(DECasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "pattern",
-  value: function pattern() {
-    return re7;
+  key: "innerPattern",
+  value: function innerPattern(arg0) {
+    return regExp;
   }
 };
 let items = [
   entry,
   {
-    key: "extract",
-    value: function extract(createParsingComponents, arg1) {
-      let str6;
-      const first = arg1[0];
-      if ("\u304D\u3087\u3046" === first) {
-        str6 = "\u4ECA\u65E5";
-      } else if ("\u307B\u3093\u3058\u3064" === first) {
-        str6 = "\u672C\u65E5";
-      } else if ("\u304D\u306E\u3046" === first) {
-        str6 = "\u6628\u65E5";
-      } else if ("\u3042\u3057\u305F" === first) {
-        str6 = "\u660E\u65E5";
-      } else if ("\u3053\u3093\u3084" === first) {
-        str6 = "\u4ECA\u591C";
-      } else if ("\u3053\u3093\u3086\u3046" === first) {
-        str6 = "\u4ECA\u5915";
-      } else if ("\u3053\u3093\u3070\u3093" === first) {
-        str6 = "\u4ECA\u6669";
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      let nowResult;
+      reference = reference.reference;
+      const dateWithAdjustedTimezone = reference.getDateWithAdjustedTimezone();
+      const str = arg1[1] || "";
+      const str2 = str.toLowerCase();
+      const str3 = arg1[2] || "";
+      const formatted = str3.toLowerCase();
+      const parsingComponents = reference.createParsingComponents();
+      if ("jetzt" === str2) {
+        nowResult = now.now(reference.reference);
+      } else if ("heute" === str2) {
+        nowResult = now.today(reference.reference);
+      } else if ("morgen" === str2) {
+        const addDurationResult = EmptyDuration.addDuration(dateWithAdjustedTimezone, { day: 1 });
+        assignSimilarDate.assignSimilarDate(parsingComponents, addDurationResult);
+        assignSimilarDate.implySimilarTime(parsingComponents, addDurationResult);
+        nowResult = parsingComponents;
       } else {
-        str6 = "\u4ECA\u671D";
-        if ("\u3051\u3055" !== first) {
-          str6 = first;
-        }
-      }
-      const parsingComponents = createParsingComponents.createParsingComponents();
-      if ("\u6628\u65E5" === str6) {
-        return now.yesterday(createParsingComponents.reference);
-      } else if ("\u660E\u65E5" === str6) {
-        return now.tomorrow(createParsingComponents.reference);
-      } else {
-        if ("\u672C\u65E5" !== str6) {
-          if ("\u4ECA\u65E5" !== str6) {
-            if ("\u4ECA\u591C" != str6) {
-              if ("\u4ECA\u5915" != str6) {
-                if ("\u4ECA\u6669" != str6) {
-                  if (str6.match("\u4ECA\u671D")) {
-                    parsingComponents.imply("hour", 6);
-                    parsingComponents.assign("meridiem", Meridiem.Meridiem.AM);
-                  }
+        if ("\u00FCbermorgen" !== str2) {
+          if ("uebermorgen" !== str2) {
+            if ("gestern" === str2) {
+              const addDurationResult1 = EmptyDuration.addDuration(dateWithAdjustedTimezone, { day: -1 });
+              assignSimilarDate.assignSimilarDate(parsingComponents, addDurationResult1);
+              assignSimilarDate.implySimilarTime(parsingComponents, addDurationResult1);
+              nowResult = parsingComponents;
+            } else if ("vorgestern" === str2) {
+              const addDurationResult2 = EmptyDuration.addDuration(dateWithAdjustedTimezone, { day: -2 });
+              assignSimilarDate.assignSimilarDate(parsingComponents, addDurationResult2);
+              assignSimilarDate.implySimilarTime(parsingComponents, addDurationResult2);
+              nowResult = parsingComponents;
+            } else {
+              nowResult = parsingComponents;
+              if (str2.match(/letzte\s*nacht/)) {
+                let addDurationResult3 = dateWithAdjustedTimezone;
+                if (dateWithAdjustedTimezone.getHours() > 6) {
+                  addDurationResult3 = EmptyDuration.addDuration(dateWithAdjustedTimezone, { day: -1 });
                 }
-                const refDate = createParsingComponents.refDate;
-                parsingComponents.assign("day", refDate.getDate());
-                parsingComponents.assign("month", refDate.getMonth() + 1);
-                parsingComponents.assign("year", refDate.getFullYear());
-                return parsingComponents;
+                assignSimilarDate.assignSimilarDate(parsingComponents, addDurationResult3);
+                parsingComponents.imply("hour", 0);
+                nowResult = parsingComponents;
               }
             }
-            parsingComponents.imply("hour", 22);
-            parsingComponents.assign("meridiem", Meridiem.Meridiem.PM);
           }
         }
-        return now.today(createParsingComponents.reference);
+        const addDurationResult4 = EmptyDuration.addDuration(dateWithAdjustedTimezone, { day: 2 });
+        assignSimilarDate.assignSimilarDate(parsingComponents, addDurationResult4);
+        assignSimilarDate.implySimilarTime(parsingComponents, addDurationResult4);
+        nowResult = parsingComponents;
       }
+      let result = nowResult;
+      if (formatted) {
+        const _default = module_10265.default;
+        result = _default.extractTimeComponents(nowResult, formatted);
+      }
+      return result;
     }
   }
 ];
 
-export default _createClass(JPCasualDateParser, items);
+export default _createClass(DECasualDateParser, items);

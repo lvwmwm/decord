@@ -1,26 +1,26 @@
-// Module ID: 12866
-// Function ID: 12867
+// Module ID: 12885
+// Function ID: 12886
 // Name: ForwardPreview
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5191, 8595, 8118, 9749, 12867, 6022, 12868, 12, 1128, 12464, 9288, 8544, 10400, 1498, 5655, 9382, 5220, 12870, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5203, 8607, 8131, 9771, 12886, 6034, 12887, 12, 1128, 12483, 9311, 8556, 10422, 1498, 5667, 9405, 5232, 12889, 2]
 
-// Module 12866 (ForwardPreview)
+// Module 12885 (ForwardPreview)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1498 */;
-import useThemeDefault from "useTheme" /* 5191 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import FastImageDefault from "FastImage" /* 5655 */;
-import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6022 */;
-import RowGeneratorDefault from "RowGenerator" /* 8118 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8595 */;
-import CirclePlayIcon2 from "CirclePlayIcon" /* 9288 */;
-import ClipView from "ClipView" /* 9382 */;
-import ChatItemDefault from "ChatItem" /* 9749 */;
-import ForwardPreviewUtils from "ForwardPreviewUtils" /* 12867 */;
-import CheckpointForwardPreviewDefault from "CheckpointForwardPreview" /* 12870 */;
+import useThemeDefault from "useTheme" /* 5203 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import FastImageDefault from "FastImage" /* 5667 */;
+import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6034 */;
+import RowGeneratorDefault from "RowGenerator" /* 8131 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8607 */;
+import CirclePlayIcon2 from "CirclePlayIcon" /* 9311 */;
+import ClipView from "ClipView" /* 9405 */;
+import ChatItemDefault from "ChatItem" /* 9771 */;
+import ForwardPreviewUtils from "ForwardPreviewUtils" /* 12886 */;
+import CheckpointForwardPreviewDefault from "CheckpointForwardPreview" /* 12889 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -353,7 +353,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardPrevi
                                     let tmp111Result = null != tmp11;
                                     if (tmp111Result) {
                                       let str4 = "text-md/medium";
-                                      const Text2 = tmp(5220).Text;
+                                      const Text2 = tmp(5232).Text;
                                       const tmp111 = hasOwnProperty;
                                       if (hasContent) {
                                         str4 = "text-sm/medium";
@@ -641,7 +641,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardPrevi
           }
           const obj21 = { count: VIDEO };
           formatToPlainStringResult = obj6.formatToPlainString(intl5.t.SJ6pPX, obj21);
-          CirclePlayIcon = tmp(9288).CirclePlayIcon;
+          CirclePlayIcon = tmp(9311).CirclePlayIcon;
         } else {
           class G {
             constructor(arg0) {
@@ -796,7 +796,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardPrevi
           }
         }
         const obj26 = { variant: "text-md/medium", children: tmpResult6.getCheckpointLabel(checkpointDataFromMessage) };
-        const Text = tmp(5220).Text;
+        const Text = tmp(5232).Text;
         tmpResult6 = checkpoint_CheckpointMessageComponentUtils;
         tmp98 = hasOwnProperty(Text, obj26);
       }
@@ -901,7 +901,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardPrevi
         const intl4 = tmp2(1128).intl;
         const obj3 = { image_count: num, video_count: num2 };
         formatToPlainStringResult = intl4.formatToPlainString(tmp2(1128).t.Lr0Top, obj3);
-        AttachmentIcon = tmp2(12464).ImagesIcon;
+        AttachmentIcon = tmp2(12483).ImagesIcon;
       }
       if (num2 > 0) {
         if (attachments.length === num2) {
@@ -957,16 +957,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardPrevi
       const intl3 = tmp2(1128).intl;
       const obj12 = { count: num2 };
       formatToPlainStringResult = intl3.formatToPlainString(tmp2(1128).t.SJ6pPX, obj12);
-      AttachmentIcon = tmp2(9288).CirclePlayIcon;
+      AttachmentIcon = tmp2(9311).CirclePlayIcon;
     } else if (num > 0) {
       let ImagesIcon;
       const intl2 = tmp2(1128).intl;
       const obj13 = { count: num };
       const formatToPlainStringResult1 = intl2.formatToPlainString(intl5.t.h4pFfU, obj13);
       if (1 === num) {
-        ImagesIcon = tmp2(8544).ImageIcon;
+        ImagesIcon = tmp2(8556).ImageIcon;
       } else {
-        ImagesIcon = tmp2(12464).ImagesIcon;
+        ImagesIcon = tmp2(12483).ImagesIcon;
       }
       AttachmentIcon = ImagesIcon;
       formatToPlainStringResult = formatToPlainStringResult1;
@@ -974,7 +974,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardPrevi
       const intl = tmp2(1128).intl;
       const obj14 = { count: attachments.length };
       formatToPlainStringResult = intl.formatToPlainString(tmp2(1128).t["89ihS8"], obj14);
-      AttachmentIcon = tmp2(10400).AttachmentIcon;
+      AttachmentIcon = tmp2(10422).AttachmentIcon;
     }
   } else {
     tmp6 = null;
@@ -1004,7 +1004,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardPrevi
   const obj22 = { style: tmp.contentWrapper, children: items6 };
   if (tmp36Result) {
     const obj23 = { variant: "text-md/medium", children: tmp2Result2.getCheckpointLabel(checkpointDataFromMessage) };
-    const Text = tmp2(5220).Text;
+    const Text = tmp2(5232).Text;
     tmp2Result2 = checkpoint_CheckpointMessageComponentUtils;
     tmp36Result = tmp36(Text, obj23);
   }
@@ -1031,7 +1031,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardPrevi
     let tmp36Result7 = null != tmp8;
     if (tmp36Result7) {
       let str3 = "text-md/medium";
-      const Text2 = tmp2(5220).Text;
+      const Text2 = tmp2(5232).Text;
       if (hasContent) {
         str3 = "text-sm/medium";
       }

@@ -1,10 +1,10 @@
-// Module ID: 16319
-// Function ID: 16320
+// Module ID: 16369
+// Function ID: 16370
 // Name: useFetchOrbsArcadeGames
-// Dependencies: [19, 558, 576, 16320, 16321, 2]
+// Dependencies: [19, 558, 576, 16370, 16371, 2]
 
-// Module 16319 (useFetchOrbsArcadeGames)
-import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 16321 */;
+// Module 16369 (useFetchOrbsArcadeGames)
+import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 16371 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -25,7 +25,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchOr
   } else {
     tmp4 = cResult[1];
   }
-  const OrbsArcadeExperiment = tmp(16320).OrbsArcadeExperiment;
+  const OrbsArcadeExperiment = tmp(16370).OrbsArcadeExperiment;
   enabled = OrbsArcadeExperiment.useConfig(tmp4).enabled;
   if (cResult[2] !== enabled) {
     const fn = function o() {
@@ -49,7 +49,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchOr
   return enabled;
 }) : (function useFetchOrbsArcadeGames(location) {
   let enabled;
-  const OrbsArcadeExperiment = enabled(16320).OrbsArcadeExperiment;
+  const OrbsArcadeExperiment = enabled(16370).OrbsArcadeExperiment;
   let obj = { location };
   enabled = OrbsArcadeExperiment.useConfig(obj).enabled;
   const items = [enabled];

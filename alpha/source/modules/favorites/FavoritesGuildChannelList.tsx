@@ -1,30 +1,30 @@
-// Module ID: 17640
-// Function ID: 17641
+// Module ID: 17684
+// Function ID: 17685
 // Name: FavoritesGuildChannelList
-// Dependencies: [32, 19, 4820, 6481, 6769, 6755, 4903, 4825, 7198, 4821, 7621, 4901, 6756, 4872, 6689, 4824, 4900, 4834, 7628, 1098, 7622, 1211, 7395, 558, 576, 12, 1388, 10818, 2]
+// Dependencies: [32, 19, 4820, 6494, 6782, 6768, 4903, 4825, 7211, 4821, 7634, 4901, 6769, 4872, 6702, 4824, 4900, 4834, 7641, 1098, 7635, 1211, 7408, 558, 576, 12, 1388, 10841, 2]
 
-// Module 17640 (FavoritesGuildChannelList)
+// Module 17684 (FavoritesGuildChannelList)
 import Constants from "Constants" /* 1098 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
 import createFavoritesGuildChannelRecord from "createFavoritesGuildChannelRecord" /* 4900 */;
-import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7395 */;
-import ChannelListState from "ChannelListState" /* 7622 */;
-import GuildSidebarConstants from "GuildSidebarConstants" /* 7628 */;
+import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7408 */;
+import ChannelListState from "ChannelListState" /* 7635 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 7641 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6481 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6769 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6755 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6494 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6782 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6768 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4903 */;
 import ChannelRecord from "ChannelRecord" /* 4825 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7198 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7211 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7621 */;
+import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7634 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
-import ReadStateStore from "ReadStateStore" /* 6756 */;
+import ReadStateStore from "ReadStateStore" /* 6769 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6689 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6702 */;
 import FavoriteStore from "FavoriteStore" /* 4824 */;
 import FavoritesConstants from "FavoritesConstants" /* 4834 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -37,8 +37,9 @@ let c10;
 let c9;
 let closure_20;
 let closure_21;
+let closure_22;
 let metroImportAll;
-const f131032 = () => {
+const f131306 = () => {
   c0 = true;
 };
 function getMissingFavoriteThreadIds(includeLoading) {
@@ -94,7 +95,7 @@ function computeFavoritesState(favoriteChannels, arg1) {
   let channelMuted;
   let closure_2;
   let closure_3;
-  const f153131 = (arg0) => {
+  const f153432 = (arg0) => {
     let position;
     let record;
     let sum;
@@ -271,14 +272,14 @@ function computeFavoritesState(favoriteChannels, arg1) {
           activeJoinedUnreadThreadsForParent = closure_3_6.getActiveJoinedRelevantThreadsForParent(isPrivate.guild_id, isPrivate.id);
         });
         const found = mapped.filter(favoriteChannels(closure_2[26]).isNotNullish);
-        const iter = found.sortBy(f153131);
+        const iter = found.sortBy(f153432);
         closure_6 = iter.value();
       }
       return closure_6;
     },
     set: undefined
   });
-  const obj4 = favoriteChannels(10818);
+  const obj4 = favoriteChannels(10841);
   const favoritesCategories = obj4.getFavoritesCategories(favoriteChannels);
   let found = favoritesCategories.filter((id) => null != id.id);
   let mapped = found.map((id) => {
@@ -300,7 +301,7 @@ function computeFavoritesState(favoriteChannels, arg1) {
       let tmp5 = collapsed;
       closure_1 = null;
       const obj = {
-        isMuted: channelMuted.isChannelMuted(closure_1_20, id),
+        isMuted: channelMuted.isChannelMuted(closure_1_21, id),
         isCollapsed: collapsed.isCollapsed(id),
         record: categoryRecord,
         id,
@@ -318,7 +319,7 @@ function computeFavoritesState(favoriteChannels, arg1) {
             return 0 === items.length;
           }
       };
-      channelMuted.isChannelMuted(closure_1_20, id);
+      channelMuted.isChannelMuted(closure_1_21, id);
       let tmp7 = items[id];
       num = undefined;
       if (tmp7 != null) {
@@ -414,7 +415,7 @@ function computeFavoritesState(favoriteChannels, arg1) {
               });
               let tmp4 = items;
               const found = mapped.filter(items(closure_1_2[26]).isNotNullish);
-              const iter = found.sortBy(f153131);
+              const iter = found.sortBy(f153432);
               closure_1 = iter.value();
             }
             return closure_1;
@@ -539,24 +540,53 @@ function computeFavoritesState(favoriteChannels, arg1) {
       return null;
     },
     getSectionRowsFromChannel(arg0) {
-      items = [obj3, ...found1];
-      let num = 0;
-      if (0 < items.length) {
-        while (true) {
-          let num2 = 0;
-          if (0 < items[num].channelList.length) {
-            while (items[num].channelList[num2].id !== arg0) {
-              num2 = num2 + 1;
-              continue;
-            }
-            let obj = { section: num + ChannelListState.SECTION_INDEX_UNCATEGORIZED_CHANNELS, row: num2 };
-            let items1 = [obj];
-            return items1;
+      if (null == arg0) {
+        return [];
+      } else {
+        let num2;
+        items = [];
+        const items1 = [];
+        items2 = [];
+        const items3 = [obj3];
+        HermesBuiltin.arraySpread(items3, found1, 1);
+        for (let num2 = 0; num2 < items3.length; num2 = num2 + 1) {
+          let num;
+          let tmp2 = items3[num2];
+          let tmp4 = null;
+          if (0 < num2) {
+            tmp4 = found1[num2 - 1];
           }
-          num = num + 1;
+          let tmp6 = null != tmp4;
+          if (tmp6) {
+            let str = tmp4.record.name;
+            let str2 = str.trim();
+            let formatted = str2.toLowerCase();
+            tmp6 = formatted === closure_20.toLowerCase();
+          }
+          let sum = num2 + ChannelListState.SECTION_INDEX_UNCATEGORIZED_CHANNELS;
+          for (let num = 0; num < tmp2.channelList.length; num = num + 1) {
+            let tmp12 = tmp2.channelList[num];
+            if (tmp12.id !== arg0) {
+              let threadIds = tmp12.threadIds;
+              let index = threadIds.indexOf(arg0);
+              if (index >= 0) {
+                obj2 = { section: sum, row: num, threadOffset: index };
+                let arr2 = items1.push(obj2);
+              }
+            } else {
+              let arr = items;
+              if (tmp6) {
+                arr = items2;
+              }
+              let obj = { section: sum, row: num };
+              let arr3 = arr.push(obj);
+            }
+          }
         }
+        const items4 = [];
+        HermesBuiltin.arraySpread(items4, items2, HermesBuiltin.arraySpread(items4, items1, HermesBuiltin.arraySpread(items4, items, 0)));
+        return items4;
       }
-      return [];
     },
     forEachShownChannel(fn) {
       items = [obj3, ...found1];
@@ -601,7 +631,7 @@ function computeFavoritesState(favoriteChannels, arg1) {
 }
 ({ THREAD_CHANNEL_TYPES: metroImportAll, isGuildReadableType: c9, isVoiceChannel: c10 } = ChannelRecord);
 let closure_19 = createFavoritesGuildChannelRecord.createFavoritesGuildChannelRecord;
-({ FAVORITES_RAW_GUILD_ID: closure_20, MAX_FAVORITE_CHANNELS: closure_21 } = FavoritesConstants);
+({ FAVORITES_AUTO_ADDED_THREADS_CATEGORY_NAME: closure_20, FAVORITES_RAW_GUILD_ID: closure_21, MAX_FAVORITE_CHANNELS: closure_22 } = FavoritesConstants);
 const constants = GuildSidebarConstants.ChannelListChannelNoticeRow;
 const Permissions = Constants.Permissions;
 let items = [EmbeddedActivitiesStore, FavoriteStore, GatewayConnectionStore, GuildScheduledEventStore, ActiveJoinedThreadsStore, JoinedThreadsStore, CategoryCollapseStore, ChannelStore, PermissionStore, ReadStateStore, SelectedChannelStore, UserGuildSettingsStore];
@@ -772,7 +802,7 @@ const tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavori
       }
     }
     let flag2 = false;
-    if (tmp20 <= tmp(7622).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
+    if (tmp20 <= tmp(7635).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
       class I {
         constructor() {
           const tmp = closure_2;
@@ -788,7 +818,7 @@ const tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavori
           }
         }
       }
-      obj4.forEachShownChannel(f131032);
+      obj4.forEachShownChannel(f131306);
       flag2 = !closure_129_0;
     }
     cResult[11] = obj4;
@@ -885,9 +915,9 @@ const tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavori
   let c0;
   let flag2 = false;
   const tmp5 = getMissingFavoriteThreadIds({ limit: 1, includeLoading: true }).length > 0;
-  if (obj2.getSections().length <= flag(7622).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
+  if (obj2.getSections().length <= flag(7635).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
     c0 = false;
-    obj2.forEachShownChannel(f131032);
+    obj2.forEachShownChannel(f131306);
     flag2 = !c0;
   }
   return { guildChannels: obj2, shouldShowEmptyState: flag2 && !tmp5, hasNoChannels: flag2 };

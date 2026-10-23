@@ -1,10 +1,10 @@
-// Module ID: 11349
-// Function ID: 11350
+// Module ID: 11372
+// Function ID: 11373
 // Name: EmbeddedActivitiesActionCreators
-// Dependencies: [32, 5, 9626, 2045, 6757, 7815, 502, 4821, 4843, 4901, 1392, 5616, 4820, 2026, 5595, 1087, 1375, 4818, 7794, 11318, 10180, 10743, 11350, 11351, 11354, 11355, 584, 10707, 10748, 11356, 10753, 6360, 6004, 2031, 5612, 8857, 11357, 2000, 11358, 11360, 10175, 1267, 11361, 11369, 6647, 11370, 5894, 1128, 5615, 11371, 1275, 6661, 4890, 6765, 5696, 1297, 8841, 7551, 7396, 7740, 4806, 4805, 2]
+// Dependencies: [32, 5, 9649, 2045, 6770, 7828, 502, 4821, 4843, 4901, 1392, 5628, 4820, 2026, 5607, 1087, 1375, 4818, 7807, 11341, 10202, 10765, 11373, 11374, 11377, 11378, 584, 10729, 10770, 11379, 10775, 6373, 6016, 2031, 5624, 8880, 11380, 2000, 11381, 11383, 10197, 1267, 11384, 11392, 6660, 11393, 5906, 1128, 5627, 11394, 1275, 6674, 4890, 6778, 5708, 1297, 8864, 7564, 7409, 7753, 4806, 4805, 2]
 // Exports: consumeRequestToReactToSeriousThermalState, dismissNewActivityIndicator, disregardSeriousThermalState, maybeDisconnectFromCurrentActivity, openActivityPopoutWindow, refreshProxyTicket, requestRespondToSeriousThermalState, runPrimaryAppCommandOrJoinEmbeddedActivity, sendEmbeddedActivityInvite, sendEmbeddedActivityInviteUser, updateActivityPanelMode, updateActivityPopoutWindowLayout, updateFocusedActivityLayout, uploadImageAttachment, validateTestMode
 
-// Module 11349 (EmbeddedActivitiesActionCreators)
+// Module 11372 (EmbeddedActivitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import ApplicationConstants from "ApplicationConstants" /* 1375 */;
@@ -13,22 +13,22 @@ import dismissible_content from "dismissible_content" /* 4805 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 4806 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4890 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5595 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6765 */;
-import Constants3 from "Constants" /* 7794 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9626 */;
-import createProxyTicket2 from "createProxyTicket" /* 10707 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5607 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6778 */;
+import Constants3 from "Constants" /* 7807 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9649 */;
+import createProxyTicket2 from "createProxyTicket" /* 10729 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6757 */;
-import PopoutWindowStore from "PopoutWindowStore" /* 7815 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6770 */;
+import PopoutWindowStore from "PopoutWindowStore" /* 7828 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
 import UserStore from "UserStore" /* 1392 */;
-import VoiceStateStore from "VoiceStateStore" /* 5616 */;
+import VoiceStateStore from "VoiceStateStore" /* 5628 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
@@ -41,7 +41,7 @@ let closure_20;
 let closure_21;
 let closure_22;
 let tmp2;
-const ChannelRTCActionCreatorsDefault = tmp2(5696);
+const ChannelRTCActionCreatorsDefault = tmp2(5708);
 let obj = function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
   obj = _asyncToGenerator(async (channelId) => {
     let closure_8;
@@ -1077,7 +1077,7 @@ function stopEmbeddedActivity(showFeedback) {
         if ("" !== id) {
           const obj4 = { applicationId, instanceId: compositeInstanceId };
           compositeInstanceId = undefined;
-          const getEmbeddedActivityParticipantId = tmp7(6765).getEmbeddedActivityParticipantId;
+          const getEmbeddedActivityParticipantId = tmp7(6778).getEmbeddedActivityParticipantId;
           ChannelRTCParticipants;
           if (found != null) {
             compositeInstanceId = found.compositeInstanceId;
@@ -1275,19 +1275,18 @@ obj = function _sendEmbeddedActivityInvite() {
   return obj(...arguments);
 };
 obj = function _sendEmbeddedActivityInviteUser() {
-  obj = _asyncToGenerator(async (arg0, value) => {
+  obj = _asyncToGenerator(async function(arg0, value) {
     let c0;
     let c1;
     let c2;
     let c3;
     let c4;
     let c5;
-    let ensurePrivateChannelResult;
-    let obj5;
+    let obj4;
+    let obj7;
     let closure_0 = arg0;
     if (c4 === 2) {
       c4 = 3;
-      const str = "Generator functions may not be called on executing generators";
       throw new TypeError("Generator functions may not be called on executing generators");
     } else if (tmp3 === 3) {
       if (arg0 === 1) {
@@ -1301,16 +1300,19 @@ obj = function _sendEmbeddedActivityInviteUser() {
     } else {
       try {
         let target_application_id;
+        let code;
+        let closure_7;
+        let channel;
+        let content;
         c4 = 2;
-        const tmp4 = c3;
         if (0 === c3) {
           if (arg0 === 1) {
             c4 = 3;
             throw value;
           } else if (arg0 === 2) {
             c4 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
+            const obj5 = { value, done: true };
+            return obj5;
           } else {
             let closure_2 = tmp4;
             let closure_1 = tmp;
@@ -1319,12 +1321,15 @@ obj = function _sendEmbeddedActivityInviteUser() {
             c2 = undefined;
             c5 = undefined;
             ({ channelId: c0, applicationId: c1, userId: c2, location: c3, inviteAnalyticsMetadata: c4, prefixedContent: c5 } = closure_0);
-            let code;
+            code = undefined;
+            closure_7 = undefined;
+            channel = undefined;
+            content = undefined;
             c3 = 1;
             c4 = 1;
             return { value: "Reflect", done: true };
           }
-        } else if (1 === tmp4) {
+        } else if (1 === c3) {
           if (arg0 === 1) {
             c4 = 3;
             throw value;
@@ -1333,64 +1338,60 @@ obj = function _sendEmbeddedActivityInviteUser() {
             const obj6 = { value, done: true };
             return obj6;
           } else {
-            const obj7 = { target_type: closure_130_25.EMBEDDED_APPLICATION, target_application_id };
+            const obj8 = { target_type: closure_130_25.EMBEDDED_APPLICATION, target_application_id };
             c3 = 2;
             c4 = 1;
-            const obj8 = { value: obj5.createInvite(c0, obj7, c3), done: false };
-            obj5 = closure_130_1(closure_130_2[56]);
-            return obj8;
+            const obj9 = { value: obj7.createInvite(c0, obj8, c3), done: false };
+            obj7 = closure_130_1(closure_130_2[56]);
+            return obj9;
           }
-        } else if (2 === tmp4) {
+        } else if (2 === c3) {
           if (arg0 === 1) {
             c4 = 3;
             throw value;
           } else if (arg0 === 2) {
             c4 = 3;
-            const obj9 = { value, done: true };
-            return obj9;
+            const obj10 = { value, done: true };
+            return obj10;
           } else {
             code = value;
-            let obj2 = closure_130_1(closure_130_2[58]);
             c3 = 3;
             c4 = 1;
-            const obj10 = {
-              value: ensurePrivateChannelResult.then(function(result) {
-                        channel = channel.getChannel(result);
-                        if (null == channel) {
-                          const _Error = Error;
-                          const self = this;
-                          const self2 = this;
-                          const error = new Error("Private channel not found");
-                          throw error;
-                        } else {
-                          let content;
-                          if (null != closure_1_5) {
-                            obj = target_application_id(closure_2[59]);
-                            content = obj.parse(channel, tmp2).content;
-                          }
-                          const obj2 = target_application_id(closure_2[57]);
-                          obj2.sendInvite(result, code.code, closure_1_3, closure_1_4, content);
-                        }
-                      }),
-              done: false
-            };
-            ensurePrivateChannelResult = obj2.ensurePrivateChannel(c2);
-            return obj10;
+            const obj11 = { value: obj4.ensurePrivateChannel(c2), done: false };
+            obj4 = closure_130_1(closure_130_2[58]);
+            return obj11;
           }
         } else if (arg0 === 1) {
           c4 = 3;
           throw value;
         } else if (arg0 === 2) {
           c4 = 3;
-          obj = { value, done: true };
-          return obj;
+          const obj12 = { value, done: true };
+          return obj12;
         } else {
-          c4 = 3;
-          return { value: "IconComponent", done: null };
+          closure_7 = value;
+          channel = closure_130_10.getChannel(closure_7);
+          if (null == channel) {
+            const _Error = Error;
+            const self = this;
+            const self2 = this;
+            const error = new Error("Private channel not found");
+            throw error;
+          } else {
+            content = undefined;
+            if (null != c5) {
+              obj = closure_130_1(closure_130_2[59]);
+              content = obj.parse(channel, c5).content;
+            }
+            const obj2 = closure_130_1(closure_130_2[57]);
+            obj2.sendInvite(closure_7, code.code, c3, c4, content);
+            c4 = 3;
+            return { value: "IconComponent", done: null };
+          }
         }
-      } catch (tmp18) {
+      } catch (tmp38) {
         c4 = 3;
-        throw tmp18;
+        throw tmp38;
       }
     }
   });

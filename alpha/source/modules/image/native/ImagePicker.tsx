@@ -1,17 +1,17 @@
-// Module ID: 8141
-// Function ID: 8142
+// Module ID: 8153
+// Function ID: 8154
 // Name: ImagePicker
-// Dependencies: [1207, 1098, 1384, 8142, 8143, 8144, 587, 8146, 1128, 2]
+// Dependencies: [1207, 1098, 1384, 8154, 8155, 8156, 587, 8158, 1128, 2]
 
-// Module 8141 (ImagePicker)
+// Module 8153 (ImagePicker)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
 import intl7 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import ImagePickerUtils from "ImagePickerUtils" /* 8142 */;
-import AndroidPhotoPickerExperiment from "AndroidPhotoPickerExperiment" /* 8143 */;
-import launchCameraAll from "launchCamera" /* 8144 */;
-import react_nativeDefault from "react-native" /* 8146 */;
+import ImagePickerUtils from "ImagePickerUtils" /* 8154 */;
+import AndroidPhotoPickerExperiment from "AndroidPhotoPickerExperiment" /* 8155 */;
+import launchCameraAll from "launchCamera" /* 8156 */;
+import react_nativeDefault from "react-native" /* 8158 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
 import size_mod from "module_2" /* 2 */;
 

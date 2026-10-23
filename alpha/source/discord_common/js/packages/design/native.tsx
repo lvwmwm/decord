@@ -1,9 +1,9 @@
-// Module ID: 5023
-// Function ID: 5024
+// Module ID: 5035
+// Function ID: 5036
 // Name: native
-// Dependencies: [2, 4978, 5024, 5025, 5026, 4983, 4984, 4979, 4985, 5028, 5029, 4986, 4987, 4988, 4989, 5030, 4992, 5082, 5123]
+// Dependencies: [2, 4978, 5036, 5037, 5038, 4983, 4984, 4979, 4985, 5040, 5041, 4986, 4987, 4988, 4989, 5042, 4992, 5094, 5135]
 
-// Module 5023 (native)
+// Module 5035 (native)
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 4978 */;
 import AccessibilityAnnouncerLiveRegion from "AccessibilityAnnouncerLiveRegion" /* 4979 */;
 import react from "react" /* 4983 */;
@@ -13,14 +13,14 @@ import ThemeContextProvider from "ThemeContextProvider" /* 4987 */;
 import ThemeContextProvider_ThemeTypes from "ThemeContextProvider/ThemeTypes" /* 4988 */;
 import ThemeContextFlags from "ThemeContextFlags" /* 4989 */;
 import Colors from "Colors" /* 4992 */;
-import useBadgeTextVariant from "useBadgeTextVariant" /* 5024 */;
-import react_native from "react-native" /* 5025 */;
-import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 5026 */;
-import MotionTypes from "MotionTypes" /* 5028 */;
-import TransitionGroup_TransitionGroup from "TransitionGroup/TransitionGroup" /* 5029 */;
-import _mod5030 from "module_5030" /* 5030 */;
-import ManaContext from "ManaContext" /* 5082 */;
-import GraphicTypes from "GraphicTypes" /* 5123 */;
+import useBadgeTextVariant from "useBadgeTextVariant" /* 5036 */;
+import react_native from "react-native" /* 5037 */;
+import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 5038 */;
+import MotionTypes from "MotionTypes" /* 5040 */;
+import TransitionGroup_TransitionGroup from "TransitionGroup/TransitionGroup" /* 5041 */;
+import _mod5042 from "module_5042" /* 5042 */;
+import ManaContext from "ManaContext" /* 5094 */;
+import GraphicTypes from "GraphicTypes" /* 5135 */;
 import size from "module_2" /* 2 */;
 import AccessibilityConstants from "AccessibilityPreferencesContext/AccessibilityConstants" /* 4984 */;
 
@@ -81,8 +81,8 @@ for (const key10071 in ThemeContextFlags) {
   exports[key10071] = ThemeContextFlags[key10071];
   continue;
 }
-for (const key10075 in _mod5030) {
-  exports[key10075] = _mod5030[key10075];
+for (const key10075 in _mod5042) {
+  exports[key10075] = _mod5042[key10075];
   continue;
 }
 for (const key10079 in Colors) {

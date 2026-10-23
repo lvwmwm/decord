@@ -1,15 +1,15 @@
-// Module ID: 9814
-// Function ID: 9815
+// Module ID: 9836
+// Function ID: 9837
 // Name: DoubleTapEmojiUpdatedToast
-// Dependencies: [4970, 1395, 1417, 5253, 4978, 1128, 5649, 2]
+// Dependencies: [4970, 1395, 1417, 5265, 4978, 1128, 5661, 2]
 // Exports: getToastEmojiEntity, showDoubleTapEmojiUpdatedToast
 
-// Module 9814 (DoubleTapEmojiUpdatedToast)
+// Module 9836 (DoubleTapEmojiUpdatedToast)
 import intl3 from "intl" /* 1128 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5253 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5649 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5265 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5661 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
 import size from "module_2" /* 2 */;
 

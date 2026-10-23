@@ -1,15 +1,15 @@
-// Module ID: 13362
-// Function ID: 13363
+// Module ID: 13385
+// Function ID: 13386
 // Name: useGuildPowerupNewPerkMarketingVersion
-// Dependencies: [19, 4843, 4901, 5168, 1087, 558, 576, 5186, 504, 5173, 5172, 5171, 8984, 2]
+// Dependencies: [19, 4843, 4901, 5180, 1087, 558, 576, 5198, 504, 5185, 5184, 5183, 9007, 2]
 
-// Module 13362 (useGuildPowerupNewPerkMarketingVersion)
-import Powerups from "Powerups" /* 5171 */;
-import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 8984 */;
+// Module 13385 (useGuildPowerupNewPerkMarketingVersion)
+import Powerups from "Powerups" /* 5183 */;
+import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 9007 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5168 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5180 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -74,11 +74,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmpResult5 = tmp(5173);
+  const tmpResult5 = tmp(5185);
   const serverThemeEnabled = tmpResult5.useServerThemeEnabled(arg0, "useGuildPowerupNewPerkMarketingVersion");
-  const tmpResult6 = tmp(5172);
+  const tmpResult6 = tmp(5184);
   const serverThemeUserEnabled = tmpResult6.useServerThemeUserEnabled("useGuildPowerupNewPerkMarketingVersion");
-  const tmpResult7 = tmp(5173);
+  const tmpResult7 = tmp(5185);
   const serverThemeRollbackEnabled = tmpResult7.useServerThemeRollbackEnabled(arg0, "useGuildPowerupNewPerkMarketingVersion");
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     class U {

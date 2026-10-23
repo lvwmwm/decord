@@ -1,13 +1,13 @@
-// Module ID: 11823
-// Function ID: 11824
+// Module ID: 11842
+// Function ID: 11843
 // Name: ConjurePreviewMode
-// Dependencies: [5612, 3830, 1128, 2]
+// Dependencies: [5624, 3830, 1128, 2]
 // Exports: getPreviewFrameSurfaceLabel
 
-// Module 11823 (ConjurePreviewMode)
+// Module 11842 (ConjurePreviewMode)
 import intl2 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5612 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5624 */;
 import size from "module_2" /* 2 */;
 
 const obj = {};

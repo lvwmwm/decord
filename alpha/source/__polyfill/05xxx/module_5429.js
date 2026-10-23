@@ -1,105 +1,97 @@
 // Module ID: 5429
 // Function ID: 5430
-// Dependencies: [19, 17, 1658, 5256]
-// Exports: useKeyboard
+// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 5428]
 
 // Module 5429
-import react from "react" /* 19 */;
-import GESTURE_SOURCE from "GESTURE_SOURCE" /* 5256 */;
 import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import TOUCHABLE_STATEDefault from "TOUCHABLE_STATE" /* 5428 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import hasOwnProperty from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-let Platform;
-let c3;
-const useEffect = react.useEffect;
-({ Keyboard: c3, Platform } = react_native);
-const keyboardDidShow = "keyboardDidShow";
-const keyboardDidHide = "keyboardDidHide";
-let closure_6 = { code: "function pnpm_useKeyboardTs1(state,height,duration,easing,bottomOffset){const{KEYBOARD_STATE,shouldHandleKeyboardEvents,temporaryCachedKeyboardEvent,keyboardHeight,includeBottomOffset,keyboardAnimationDuration,keyboardAnimationEasing,keyboardState}=this.__closure;if(state===KEYBOARD_STATE.SHOWN&&!shouldHandleKeyboardEvents.value){temporaryCachedKeyboardEvent.value=[state,height,duration,easing];return;}keyboardHeight.value=state===KEYBOARD_STATE.SHOWN?height:keyboardHeight.value;if(bottomOffset&&includeBottomOffset){keyboardHeight.value=keyboardHeight.value+bottomOffset;}keyboardAnimationDuration.value=duration;keyboardAnimationEasing.value=easing;keyboardState.value=state;temporaryCachedKeyboardEvent.value=[];}" };
-let closure_7 = { code: "function pnpm_useKeyboardTs2(){const{shouldHandleKeyboardEvents}=this.__closure;return shouldHandleKeyboardEvents.value;}" };
-const __initData = { code: "function pnpm_useKeyboardTs3(result){const{temporaryCachedKeyboardEvent,handleKeyboardEvent}=this.__closure;const params=temporaryCachedKeyboardEvent.value;if(result&&params.length>0){handleKeyboardEvent(params[0],params[1],params[2],params[3]);}}" };
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-export const useKeyboard = (includeBottomOffset) => {
-  includeBottomOffset = includeBottomOffset.includeBottomOffset;
-  let shouldHandleKeyboardEvents;
-  let obj = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-  shouldHandleKeyboardEvents = obj.useSharedValue(false);
-  const obj2 = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-  const state = obj2.useSharedValue(includeBottomOffset(shouldHandleKeyboardEvents[3]).KEYBOARD_STATE.UNDETERMINED);
-  const obj3 = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-  const height = obj3.useSharedValue(0);
-  const obj4 = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-  const animationEasing = obj4.useSharedValue("keyboard");
-  const obj5 = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-  const animationDuration = obj5.useSharedValue(500);
-  const obj6 = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-  const sharedValue5 = obj6.useSharedValue([]);
-  const fn = function v(value, arg1, value2, value3, arg4) {
-    value = arg1;
-    if (value === GESTURE_SOURCE.KEYBOARD_STATE.SHOWN) {
-      if (!shouldHandleKeyboardEvents.value) {
-        const items = [value, value, value2, value3];
-        sharedValue5.value = items;
-      }
-    }
-    if (value !== GESTURE_SOURCE.KEYBOARD_STATE.SHOWN) {
-      value = iter.value;
-    }
-    height.value = value;
-    const tmp5 = arg4 && includeBottomOffset;
-    if (tmp5) {
-      height.value = height.value + arg4;
-    }
-    animationDuration.value = value2;
-    animationEasing.value = value3;
-    state.value = value;
-    sharedValue5.value = [];
-  };
-  const obj7 = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-  fn.__closure = { KEYBOARD_STATE: includeBottomOffset(shouldHandleKeyboardEvents[3]).KEYBOARD_STATE, shouldHandleKeyboardEvents, temporaryCachedKeyboardEvent: sharedValue5, keyboardHeight: height, includeBottomOffset, keyboardAnimationDuration: animationDuration, keyboardAnimationEasing: animationEasing, keyboardState: state };
-  fn.__workletHash = 7905199978020;
-  fn.__initData = sharedValue5;
-  ({ KEYBOARD_STATE: includeBottomOffset(shouldHandleKeyboardEvents[3]).KEYBOARD_STATE, shouldHandleKeyboardEvents, temporaryCachedKeyboardEvent: sharedValue5, keyboardHeight: height, includeBottomOffset, keyboardAnimationDuration: animationDuration, keyboardAnimationEasing: animationEasing, keyboardState: state });
-  const workletCallback = obj7.useWorkletCallback(fn, []);
-  let items = [workletCallback];
-  state(() => {
-    let closure_0 = height.addListener(animationEasing, (endCoordinates) => {
-      let duration;
-      let easing;
-      ({ duration, easing } = endCoordinates);
-      const obj = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-      const runOnUIResult = obj.runOnUI(workletCallback);
-      runOnUIResult(includeBottomOffset(shouldHandleKeyboardEvents[3]).KEYBOARD_STATE.SHOWN, endCoordinates.endCoordinates.height, duration, easing, includeBottomOffset(shouldHandleKeyboardEvents[3]).SCREEN_HEIGHT - endCoordinates.endCoordinates.height - endCoordinates.endCoordinates.screenY);
-    });
-    let closure_1 = height.addListener(animationDuration, (endCoordinates) => {
-      const obj = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-      const runOnUIResult = obj.runOnUI(workletCallback);
-      runOnUIResult(includeBottomOffset(shouldHandleKeyboardEvents[3]).KEYBOARD_STATE.HIDDEN, endCoordinates.endCoordinates.height, endCoordinates.duration, endCoordinates.easing);
-    });
-    return () => {
-      closure_0.remove();
-      closure_1.remove();
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
     };
-  }, items);
-  const fn2 = function b() {
-    return shouldHandleKeyboardEvents.value;
-  };
-  fn2.__closure = { shouldHandleKeyboardEvents };
-  fn2.__workletHash = 11615500623565;
-  fn2.__initData = workletCallback;
-  const fn3 = function y(arg0) {
-    let tmp = arg0;
-    const value = sharedValue5.value;
-    if (arg0) {
-      tmp = value.length > 0;
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+let closure_2 = ["style"];
+const Component = react2.Component;
+const Platform = react_native.Platform;
+const jsx = Fragment.jsx;
+class TouchableNativeFeedback {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, TouchableNativeFeedback);
+    const obj = _getPrototypeOf(TouchableNativeFeedback);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = hasOwnProperty;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
     }
-    if (tmp) {
-      workletCallback(value[0], value[1], value[2], value[3]);
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(TouchableNativeFeedback, Component);
+const entry = {
+  key: "getExtraButtonProps",
+  value: function getExtraButtonProps() {
+    const obj = { foreground: this.props.useForeground };
+    const background = this.props.background;
+    if (background) {
+      if ("RippleAndroid" === background.type) {
+        ({ borderless: obj.borderless, color: obj.rippleColor } = background);
+      } else if ("ThemeAttrAndroid" === background.type) {
+        obj.borderless = "selectableItemBackgroundBorderless" === background.attribute;
+      }
+      obj.rippleRadius = background.rippleRadius;
     }
-  };
-  fn3.__closure = { temporaryCachedKeyboardEvent: sharedValue5, handleKeyboardEvent: workletCallback };
-  fn3.__workletHash = 16636741173520;
-  fn3.__initData = __initData;
-  const obj9 = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-  const animatedReaction = obj9.useAnimatedReaction(fn2, fn3, []);
-  return { state, height, animationEasing, animationDuration, shouldHandleKeyboardEvents };
+    return obj;
+  }
 };
+const items = [
+  entry,
+  {
+    key: "render",
+    value: function render() {
+      const self = this;
+      const props = this.props;
+      let style = props.style;
+      if (undefined === style) {
+        style = {};
+      }
+      const tmp = _objectWithoutProperties(props, closure_2);
+      TOUCHABLE_STATEDefault;
+      const merged = Object.assign(tmp);
+      return <tmp2 style={style} extraButtonProps={self.getExtraButtonProps()} />;
+    }
+  }
+];
+const importDefaultResultResult = _createClass(TouchableNativeFeedback, items);
+let obj = { useForeground: true, extraButtonProps: { rippleColor: null } };
+let merged = Object.assign(TOUCHABLE_STATEDefault.defaultProps);
+importDefaultResultResult.defaultProps = obj;
+importDefaultResultResult.SelectableBackground = (rippleRadius) => ({ type: "ThemeAttrAndroid", attribute: "selectableItemBackground", rippleRadius });
+importDefaultResultResult.SelectableBackgroundBorderless = (rippleRadius) => ({ type: "ThemeAttrAndroid", attribute: "selectableItemBackgroundBorderless", rippleRadius });
+importDefaultResultResult.Ripple = (color, borderless, rippleRadius) => ({ type: "RippleAndroid", color, borderless, rippleRadius });
+importDefaultResultResult.canUseNativeForeground = () => Platform.Version >= 23;
+
+export default importDefaultResultResult;

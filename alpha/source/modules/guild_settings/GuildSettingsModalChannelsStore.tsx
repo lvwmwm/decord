@@ -1,12 +1,12 @@
-// Module ID: 17493
-// Function ID: 17494
+// Module ID: 17537
+// Function ID: 17538
 // Name: GuildSettingsModalChannelsStore
-// Dependencies: [109, 4825, 4899, 4901, 1087, 4846, 7193, 12, 504, 584, 2]
+// Dependencies: [109, 4825, 4899, 4901, 1087, 4846, 7206, 12, 504, 584, 2]
 
-// Module 17493 (GuildSettingsModalChannelsStore)
+// Module 17537 (GuildSettingsModalChannelsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 7193 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 7206 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import ChannelRecord from "ChannelRecord" /* 4825 */;
 import GuildChannelStore_mod from "GuildChannelStore" /* 4899 */;
@@ -25,7 +25,7 @@ let map1;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f130463 = (channel) => channel.channel.id;
+const f130737 = (channel) => channel.channel.id;
 function sortCategoryList(channel, channel2) {
   let num;
   channel = channel.channel;
@@ -126,7 +126,7 @@ function buildSortedChannels() {
       }
       return tmp;
     });
-    closure_15 = arr4.map(f130463);
+    closure_15 = arr4.map(f130737);
   }
 }
 let closure_3 = ["lock_permissions", "id"];
@@ -273,7 +273,7 @@ let obj = {
           }
           return tmp;
         });
-        closure_15 = arr.map(f130463);
+        closure_15 = arr.map(f130737);
       }
     }
   },
@@ -290,7 +290,7 @@ let obj = {
         }
         return tmp;
       });
-      closure_15 = arr.map(f130463);
+      closure_15 = arr.map(f130737);
     }
   },
   GUILD_SETTINGS_MODAL_LOCAL_SORT_CHANGE: function handleLocalSortChange(updates) {

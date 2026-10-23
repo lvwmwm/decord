@@ -1,9 +1,9 @@
-// Module ID: 10010
-// Function ID: 10011
+// Module ID: 10032
+// Function ID: 10033
 // Name: useAnnounceAsyncCompletion
-// Dependencies: [19, 17, 558, 576, 4976, 1384, 5253, 2]
+// Dependencies: [19, 17, 558, 576, 4976, 1384, 5265, 2]
 
-// Module 10010 (useAnnounceAsyncCompletion)
+// Module 10032 (useAnnounceAsyncCompletion)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

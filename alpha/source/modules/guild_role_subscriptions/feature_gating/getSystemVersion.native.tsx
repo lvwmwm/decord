@@ -1,10 +1,10 @@
-// Module ID: 6749
-// Function ID: 6750
+// Module ID: 6762
+// Function ID: 6763
 // Name: getSystemVersion
 // Dependencies: [4926, 2]
 // Exports: getSystemVersion
 
-// Module 6749 (getSystemVersion)
+// Module 6762 (getSystemVersion)
 import DeviceUtils from "DeviceUtils" /* 4926 */;
 import size from "module_2" /* 2 */;
 

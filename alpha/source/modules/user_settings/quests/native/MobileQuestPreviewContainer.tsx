@@ -1,9 +1,9 @@
-// Module ID: 16430
-// Function ID: 16431
+// Module ID: 16480
+// Function ID: 16481
 // Name: MobileQuestPreviewContainer
-// Dependencies: [17, 21, 4969, 587, 558, 576, 5220, 2]
+// Dependencies: [17, 21, 4969, 587, 558, 576, 5232, 2]
 
-// Module 16430 (MobileQuestPreviewContainer)
+// Module 16480 (MobileQuestPreviewContainer)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -17,7 +17,7 @@ let closure_4;
 let obj2;
 let obj3;
 let tmp;
-const Text_Text = tmp(5220);
+const Text_Text = tmp(5232);
 const View = react_native.View;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let createStyles = createStyles_mod;

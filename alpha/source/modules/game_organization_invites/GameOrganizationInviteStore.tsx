@@ -1,13 +1,13 @@
-// Module ID: 11001
-// Function ID: 11002
+// Module ID: 11024
+// Function ID: 11025
 // Name: GameOrganizationInviteStore
-// Dependencies: [11002, 11003, 504, 584, 2]
+// Dependencies: [11025, 11026, 504, 584, 2]
 
-// Module 11001 (GameOrganizationInviteStore)
+// Module 11024 (GameOrganizationInviteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11002 */;
-import fromServerGameOrganization from "fromServerGameOrganization" /* 11003 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11025 */;
+import fromServerGameOrganization from "fromServerGameOrganization" /* 11026 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -52,15 +52,17 @@ let obj = {
     let application;
     let display_noun;
     let game_organization;
+    let guild;
     let obj2;
     let obj3;
+    let tmp2Result;
     invite = invite.invite;
     const code = invite.code;
     map = new Map(map);
     const application_config = invite.application_config;
-    const obj = { code: invite.code, state: constants.RESOLVED, organization: obj2.fromServerGameOrganization(game_organization), application: obj3.fromServerGameOrganizationApplication(application), displayNoun: display_noun };
+    const obj = { code: invite.code, state: constants.RESOLVED, organization: obj2.fromServerGameOrganization(game_organization), application: obj3.fromServerGameOrganizationApplication(application), displayNoun: display_noun, linkedGuild: tmp2Result.fromServerGameOrganizationGuild(guild) };
     set = map.set;
-    ({ game_organization, application } = invite);
+    ({ game_organization, application, guild } = invite);
     obj2 = fromServerGameOrganization;
     display_noun = undefined;
     obj3 = fromServerGameOrganization;
@@ -70,6 +72,7 @@ let obj = {
     if (display_noun == null) {
       display_noun = null;
     }
+    tmp2Result = fromServerGameOrganization;
     const result = set(code, obj);
   },
   GAME_ORGANIZATION_INVITE_RESOLVE_FAILURE: function handleResolveFailure(code) {

@@ -1,14 +1,14 @@
-// Module ID: 13724
-// Function ID: 13725
+// Module ID: 13747
+// Function ID: 13748
 // Name: NotificationSettingsMockChannels
-// Dependencies: [19, 17, 6690, 21, 4969, 587, 558, 576, 1128, 13210, 8537, 5220, 1202, 2]
+// Dependencies: [19, 17, 6703, 21, 4969, 587, 558, 576, 1128, 13233, 8549, 5232, 1202, 2]
 
-// Module 13724 (NotificationSettingsMockChannels)
+// Module 13747 (NotificationSettingsMockChannels)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReadStateConstants from "ReadStateConstants" /* 6690 */;
-import TextIcon2 from "TextIcon" /* 8537 */;
-import StaticChannelIndicatorDefault from "StaticChannelIndicator" /* 13210 */;
+import ReadStateConstants from "ReadStateConstants" /* 6703 */;
+import TextIcon2 from "TextIcon" /* 8549 */;
+import StaticChannelIndicatorDefault from "StaticChannelIndicator" /* 13233 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -100,7 +100,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
     items[1] = hasOwnProperty(TextIcon, obj4);
     const obj5 = { style: { marginLeft: 4 }, variant: "text-sm/semibold", color: str2, children: unread.name };
     str2 = undefined;
-    const Text = tmp5(5220).Text;
+    const Text = tmp5(5232).Text;
     if (unread.resolvedUnreadSetting === tmp6.ONLY_MENTIONS) {
       str2 = "text-muted";
     }
@@ -161,7 +161,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
       items[1] = hasOwnProperty(TextIcon, obj4);
       const obj5 = { style: { marginLeft: 4 }, variant: "text-sm/semibold", color: str2, children: unread.name };
       str2 = undefined;
-      const Text = tmp5(5220).Text;
+      const Text = tmp5(5232).Text;
       if (unread.resolvedUnreadSetting === tmp6.ONLY_MENTIONS) {
         str2 = "text-muted";
       }

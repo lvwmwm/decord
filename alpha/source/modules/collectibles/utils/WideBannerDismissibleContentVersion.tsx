@@ -1,13 +1,13 @@
-// Module ID: 5624
-// Function ID: 5625
+// Module ID: 5636
+// Function ID: 5637
 // Name: WideBannerDismissibleContentVersion
-// Dependencies: [5625, 1089, 5626, 2]
+// Dependencies: [5637, 1089, 5638, 2]
 // Exports: getWideBannerDismissibleContentVersion
 
-// Module 5624 (WideBannerDismissibleContentVersion)
+// Module 5636 (WideBannerDismissibleContentVersion)
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
-import ShopBlockType from "ShopBlockType" /* 5626 */;
-import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 5625 */;
+import ShopBlockType from "ShopBlockType" /* 5638 */;
+import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 5637 */;
 import size from "module_2" /* 2 */;
 
 const CollectibleShopTab = CollectiblesShopConstants.CollectibleShopTab;

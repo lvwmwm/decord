@@ -1,23 +1,23 @@
-// Module ID: 16075
-// Function ID: 16076
+// Module ID: 16108
+// Function ID: 16109
 // Name: ContactSyncNameUpdateModal
-// Dependencies: [5, 32, 19, 17, 13517, 21, 6657, 4969, 587, 5254, 558, 576, 13519, 13523, 5649, 1128, 13537, 6909, 7080, 2]
+// Dependencies: [5, 32, 19, 17, 13540, 21, 6670, 4969, 587, 5266, 558, 576, 13542, 13546, 5661, 1128, 13560, 6922, 7093, 2]
 
-// Module 16075 (ContactSyncNameUpdateModal)
+// Module 16108 (ContactSyncNameUpdateModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import NavigatorConstants from "NavigatorConstants" /* 5254 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6657 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13517 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13519 */;
+import NavigatorConstants from "NavigatorConstants" /* 5266 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6670 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 13540 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13542 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import NavigatorHeader_mod from "NavigatorHeader" /* 6909 */;
+import NavigatorHeader_mod from "NavigatorHeader" /* 6922 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -26,7 +26,7 @@ let _require, c2, c4;
 let NavigatorHeader;
 let obj2;
 let tmp;
-const Navigator = tmp(7080);
+const Navigator = tmp(7093);
 function onClose() {
   const arr = ModalActionCreatorsDefault;
   arr.pop();
@@ -181,7 +181,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contac
     cResult[7] = tmp16;
     tmp13 = tmp16;
   }
-  const tmp12 = jsx(onNext(13537), { onNext, onRemoveName: tmp9, loading: tmp6, initialName: undefined });
+  const tmp12 = jsx(onNext(13560), { onNext, onRemoveName: tmp9, loading: tmp6, initialName: undefined });
   cResult[2] = tmp6;
   cResult[3] = undefined;
   cResult[4] = tmp12;

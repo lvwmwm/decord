@@ -1,14 +1,14 @@
-// Module ID: 17565
-// Function ID: 17566
+// Module ID: 17609
+// Function ID: 17610
 // Name: useConjureGuildUnreadSummary
-// Dependencies: [19, 6756, 6758, 6690, 558, 576, 10699, 504, 10697, 2]
+// Dependencies: [19, 6769, 6771, 6703, 558, 576, 10721, 504, 10719, 2]
 
-// Module 17565 (useConjureGuildUnreadSummary)
-import ReadStateConstants from "ReadStateConstants" /* 6690 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10697 */;
+// Module 17609 (useConjureGuildUnreadSummary)
+import ReadStateConstants from "ReadStateConstants" /* 6703 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10719 */;
 import react from "react" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 6756 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6758 */;
+import ReadStateStore from "ReadStateStore" /* 6769 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6771 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -70,7 +70,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     tmp11 = cResult[5];
   }
   const effect = react.useEffect(tmp10, tmp11);
-  const tmpResult2 = tmp(10699);
+  const tmpResult2 = tmp(10721);
   return tmpResult2.useConjureUnreadSummary(arg0);
 }) : (function useConjureGuildUnreadSummary(arg0) {
   let stateFromStoresArray;
@@ -96,7 +96,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
       const missingConjureProjects = obj.loadMissingConjureProjects(tmp);
     }
   }, items1);
-  const obj2 = stateFromStoresArray(10699);
+  const obj2 = stateFromStoresArray(10721);
   return obj2.useConjureUnreadSummary(arg0);
 });
 let result = size.fileFinishedImporting("modules/conjure/chat/useConjureGuildUnreadSummary.tsx");

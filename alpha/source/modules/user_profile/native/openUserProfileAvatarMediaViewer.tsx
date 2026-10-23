@@ -1,12 +1,12 @@
-// Module ID: 8730
-// Function ID: 8731
+// Module ID: 8748
+// Function ID: 8749
 // Name: openUserProfileAvatarMediaViewer
-// Dependencies: [4970, 1087, 8731, 2]
+// Dependencies: [4970, 1087, 8749, 2]
 // Exports: default
 
-// Module 8730 (openUserProfileAvatarMediaViewer)
+// Module 8748 (openUserProfileAvatarMediaViewer)
 import Constants from "Constants" /* 1087 */;
-import openMediaModal from "openMediaModal" /* 8731 */;
+import openMediaModal from "openMediaModal" /* 8749 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,17 +1,17 @@
-// Module ID: 19180
-// Function ID: 19181
+// Module ID: 19224
+// Function ID: 19225
 // Name: GuildRoleSubscriptionTierEditStep
-// Dependencies: [109, 19, 17, 21, 4969, 587, 558, 576, 5220, 16490, 7206, 1128, 1633, 5230, 1505, 2]
+// Dependencies: [109, 19, 17, 21, 4969, 587, 558, 576, 5232, 16537, 7219, 1128, 1633, 5242, 1505, 2]
 
-// Module 19180 (GuildRoleSubscriptionTierEditStep)
+// Module 19224 (GuildRoleSubscriptionTierEditStep)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import components_Button_Button from "components/Button/Button" /* 5230 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7206 */;
-import FormSeparatorDefault from "FormSeparator" /* 16490 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import components_Button_Button from "components/Button/Button" /* 5242 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7219 */;
+import FormSeparatorDefault from "FormSeparator" /* 16537 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -213,7 +213,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Footer
     stringResult = intl.string(intl3.t["bm6P5/"]);
     tmp5 = require;
   }
-  const obj = { style: items, children: metroImportAll(tmp5(5230).Button, obj3) };
+  const obj = { style: items, children: metroImportAll(tmp5(5242).Button, obj3) };
   items = [tmp.footerContainer, { paddingBottom: useSafeAreaInsetsDefault().bottom }];
   ({ paddingBottom: useSafeAreaInsetsDefault().bottom });
   obj3 = { loading: submitting, disabled: !canProceedToNextStep, text: stringResult, onPress: onProceed };

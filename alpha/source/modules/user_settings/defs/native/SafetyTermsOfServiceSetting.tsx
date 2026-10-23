@@ -1,14 +1,14 @@
-// Module ID: 17197
-// Function ID: 17198
+// Module ID: 17241
+// Function ID: 17242
 // Name: SafetyTermsOfServiceSetting
-// Dependencies: [8318, 1087, 5646, 11181, 1128, 2]
+// Dependencies: [8330, 1087, 5658, 11204, 1128, 2]
 
-// Module 17197 (SafetyTermsOfServiceSetting)
+// Module 17241 (SafetyTermsOfServiceSetting)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import LinkingDefault from "Linking" /* 5646 */;
-import SettingsConstants from "SettingsConstants" /* 8318 */;
-import SettingBuilders from "SettingBuilders" /* 11181 */;
+import LinkingDefault from "Linking" /* 5658 */;
+import SettingsConstants from "SettingsConstants" /* 8330 */;
+import SettingBuilders from "SettingBuilders" /* 11204 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

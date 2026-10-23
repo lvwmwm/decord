@@ -1,10 +1,10 @@
-// Module ID: 8948
-// Function ID: 8949
+// Module ID: 8971
+// Function ID: 8972
 // Name: ChannelPermissionsUtils
-// Dependencies: [4825, 4839, 4876, 4881, 1392, 7860, 1087, 4879, 1128, 1099, 11, 5018, 1388, 4906, 8949, 2000, 5980, 2]
+// Dependencies: [4825, 4839, 4876, 4881, 1392, 7873, 1087, 4879, 1128, 1099, 11, 5023, 1388, 4906, 8972, 2000, 5992, 2]
 // Exports: canCreatePrivateChannel, extractPermissionOverwrites, flipEveryonePermission, getAllExistingRolesWithPermission, getExistingMembers, getExistingMembersRows, getExistingRoles, getExistingRolesRowWithPermissionDisabled, getExistingRolesRows, getMembersRows, getNoRolesRow, getPrivateChannelHintText, getRemoveTooltipHint, getRolesRows, getRolesRowsWithPermissionDisabled, getRowTypeLabel, grantUserChannelAccess, isEveryoneRoleId, isPrivateGuildChannel, isPrivateTextChannel, toggleChannelEveryonePermission
 
-// Module 8948 (ChannelPermissionsUtils)
+// Module 8971 (ChannelPermissionsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import intl8 from "intl" /* 1128 */;
@@ -13,10 +13,10 @@ import ChannelRecord from "ChannelRecord" /* 4825 */;
 import GuildRecord from "GuildRecord" /* 4839 */;
 import GuildRoleUtils from "GuildRoleUtils" /* 4879 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4906 */;
-import UserUtilsDefault from "UserUtils" /* 5018 */;
-import ChannelUtils from "ChannelUtils" /* 5980 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7860 */;
-import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8949 */;
+import UserUtilsDefault from "UserUtils" /* 5023 */;
+import ChannelUtils from "ChannelUtils" /* 5992 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7873 */;
+import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8972 */;
 import GuildRoleRecord from "GuildRoleRecord" /* 4876 */;
 import GuildMemberStore from "GuildMemberStore" /* 4881 */;
 import UserStore from "UserStore" /* 1392 */;

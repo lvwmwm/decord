@@ -1,9 +1,9 @@
-// Module ID: 5040
-// Function ID: 5041
+// Module ID: 5052
+// Function ID: 5053
 // Name: ReanimatedViewNativeComponent
 // Dependencies: [65, 2]
 
-// Module 5040 (ReanimatedViewNativeComponent)
+// Module 5052 (ReanimatedViewNativeComponent)
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 12661
-// Function ID: 12662
+// Module ID: 12680
+// Function ID: 12681
 // Name: GameOrganizationJoinModal
-// Dependencies: [19, 12662, 21, 558, 576, 6909, 12663, 12668, 7080, 1128, 12670, 2]
+// Dependencies: [19, 12681, 21, 558, 576, 6922, 12682, 12687, 7093, 1128, 12689, 2]
 
-// Module 12661 (GameOrganizationJoinModal)
+// Module 12680 (GameOrganizationJoinModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
-import NavigatorHeader from "NavigatorHeader" /* 6909 */;
-import StepModal2 from "StepModal" /* 12670 */;
+import NavigatorHeader from "NavigatorHeader" /* 6922 */;
+import StepModal2 from "StepModal" /* 12689 */;
 import react from "react" /* 19 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12662 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12681 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -76,7 +76,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScre
     tmp4 = cResult[1];
     tmp5 = cResult[2];
   }
-  const tmpResult = tmp(7080);
+  const tmpResult = tmp(7093);
   return tmpResult.useNavigatorScreens(tmp4, tmp5);
 }) : (function useScreens(arg0) {
   let closure_0;

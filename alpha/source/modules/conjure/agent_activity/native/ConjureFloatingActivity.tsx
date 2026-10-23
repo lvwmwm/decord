@@ -1,16 +1,16 @@
-// Module ID: 12443
-// Function ID: 12444
+// Module ID: 12462
+// Function ID: 12463
 // Name: ConjureFloatingActivity
-// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 5038, 5192, 12391, 1128, 3830, 12298, 5220, 6893, 12444, 6826, 2]
+// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 5050, 5204, 12410, 1128, 3830, 12317, 5232, 6906, 12463, 6839, 2]
 
-// Module 12443 (ConjureFloatingActivity)
+// Module 12462 (ConjureFloatingActivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5038 */;
-import timing from "timing" /* 5192 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6826 */;
-import ConjureTodoListDefault from "ConjureTodoList" /* 12391 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5050 */;
+import timing from "timing" /* 5204 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6839 */;
+import ConjureTodoListDefault from "ConjureTodoList" /* 12410 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -56,7 +56,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureFloat
   const cResult = obj.c(41);
   ({ line, onJumpToActivity, bottom, todos, todosLive, agents } = arg0);
   const tmp4 = closure_8();
-  const tmpResult = sharedValue(5038);
+  const tmpResult = sharedValue(5050);
   sharedValue = tmpResult.useSharedValue(0);
   if (cResult[0] !== sharedValue) {
     const fn = function y() {
@@ -79,7 +79,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureFloat
     tmp7 = cResult[2];
   }
   const effect = react.useEffect(tmp6, tmp7);
-  const tmpResult2 = sharedValue(5038);
+  const tmpResult2 = sharedValue(5050);
   class B {
     constructor() {
       const obj = { opacity: sharedValue.get() };
@@ -161,7 +161,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureFloat
   importDefault = undefined;
   agents = agents.agents;
   const tmp = closure_8();
-  let obj = sharedValue(5038);
+  let obj = sharedValue(5050);
   sharedValue = obj.useSharedValue(0);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
@@ -173,7 +173,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureFloat
       return obj.cancelAnimation(closure_1_0);
     };
   }, items);
-  const obj2 = sharedValue(5038);
+  const obj2 = sharedValue(5050);
   class T {
     constructor() {
       const obj = { opacity: sharedValue.get() };
@@ -202,19 +202,19 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureFloat
   items2 = [tmp12, ];
   const obj6 = { style: tmp.pill, children: items4 };
   const obj7 = { style: tmp.pillMain, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(_modDef3830.xuQfOT, { activity: line }), hitSlop: 8, onPress: onJumpToActivity, children: items3 };
-  const PressableOpacity = tmp2(6893).PressableOpacity;
+  const PressableOpacity = tmp2(6906).PressableOpacity;
   intl = tmp2(1128).intl;
   const obj8 = { size: "xs", color: nativeDefault.colors.TEXT_BRAND };
-  const MagicWandIcon = tmp2(12298).MagicWandIcon;
+  const MagicWandIcon = tmp2(12317).MagicWandIcon;
   items3 = [closure_6(MagicWandIcon, obj8), ];
-  const obj9 = { style: tmp.label, children: closure_6(sharedValue(5220).Text, { variant: "text-sm/medium", color: "text-default", lineClamp: 1, children: line }) };
+  const obj9 = { style: tmp.label, children: closure_6(sharedValue(5232).Text, { variant: "text-sm/medium", color: "text-default", lineClamp: 1, children: line }) };
   items3[1] = closure_6(View, obj9);
   items4 = [closure_7(PressableOpacity, obj7), ];
   let tmp16Result = null;
   if (null != todos) {
     const obj10 = { style: tmp.checklistButton, children: closure_6(ToggleIconButton, obj11) };
     obj11 = { variant: "default", size: "sm", icon: AssetRegistryDefault, pressed: tmp8, accessibilityLabel: intl2.string(_modDef3830.Qp2isI), onPress: callback };
-    ToggleIconButton = tmp2(12444).ToggleIconButton;
+    ToggleIconButton = tmp2(12463).ToggleIconButton;
     intl2 = tmp2(1128).intl;
     tmp16Result = tmp16(tmp15, obj10);
   }

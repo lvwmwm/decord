@@ -1,13 +1,13 @@
-// Module ID: 12652
-// Function ID: 12653
+// Module ID: 12671
+// Function ID: 12672
 // Name: joinFrameActivity
-// Dependencies: [5, 4821, 4901, 1087, 2026, 584, 11353, 11185, 10754, 6360, 10759, 1128, 9231, 11301, 10697, 2]
+// Dependencies: [5, 4821, 4901, 1087, 2026, 584, 11376, 11208, 10776, 6373, 10781, 1128, 9254, 11324, 10719, 2]
 // Exports: default
 
-// Module 12652 (joinFrameActivity)
+// Module 12671 (joinFrameActivity)
 import Constants2 from "Constants" /* 2026 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10697 */;
-import UserActivityActionCreators from "UserActivityActionCreators" /* 11301 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10719 */;
+import UserActivityActionCreators from "UserActivityActionCreators" /* 11324 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
@@ -305,24 +305,80 @@ let obj = function _joinFrameActivity() {
   return obj(...arguments);
 };
 obj = function _getActivityChannelId() {
-  obj = _asyncToGenerator(async (arg0, arg1) => {
-    let c3;
-    let c4;
-    let channel_id;
-    let channel_id1;
-    let closure_2;
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let obj3;
     let closure_0 = arg0;
-    let closure_1 = arg1;
-    const obj3 = UserActivityActionCreators;
-    const metadata = obj3.getMetadata(closure_0, closure_1);
-    closure_0 = await metadata.catch(() => null);
-    if (closure_0 != null) {
-      channel_id = closure_0.channel_id;
+    let closure_1 = value;
+    if (c5 === 2) {
+      c5 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      let c4;
+      try {
+        c5 = 2;
+        if (0 === c3) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            let closure_2 = tmp3;
+            closure_0 = undefined;
+            c4 = 1;
+            c3 = 2;
+            c5 = 1;
+            const obj5 = { value: obj3.getMetadata(closure_0, closure_1), done: false };
+            obj3 = UserActivityActionCreators;
+            return obj5;
+          }
+        } else if (1 === c3) {
+          c4 = 0;
+          c5 = 3;
+          return { value: "IconComponent", done: null };
+        } else if (arg0 === 1) {
+          c5 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c4 = 0;
+          c5 = 3;
+          const obj6 = { value, done: true };
+          return obj6;
+        } else {
+          closure_0 = value;
+          let channel_id;
+          if (closure_0 != null) {
+            channel_id = closure_0.channel_id;
+          }
+          let channel_id1;
+          if (typeof channel_id === "string") {
+            channel_id1 = closure_0.channel_id;
+          }
+          c4 = 0;
+          c5 = 3;
+          obj = { value: channel_id1, done: true };
+          return obj;
+        }
+      } catch (tmp11) {
+        if (0 === c4) {
+          c5 = 3;
+          throw tmp11;
+        } else {
+          c3 = 1;
+        }
+      }
     }
-    if (typeof channel_id === "string") {
-      channel_id1 = closure_0.channel_id;
-    }
-    return channel_id1;
   });
   return obj(...arguments);
 };

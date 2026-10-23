@@ -1,14 +1,14 @@
-// Module ID: 8319
-// Function ID: 8320
+// Module ID: 8331
+// Function ID: 8332
 // Name: canReplyToMessage
-// Dependencies: [32, 4901, 1392, 1087, 1098, 1103, 558, 576, 7354, 8320, 504, 2]
+// Dependencies: [32, 4901, 1392, 1087, 1098, 1103, 558, 576, 7367, 8332, 504, 2]
 // Exports: canReplyToMessage
 
-// Module 8319 (canReplyToMessage)
+// Module 8331 (canReplyToMessage)
 import Constants2 from "Constants" /* 1098 */;
 import MessageTypes from "MessageTypes" /* 1103 */;
-import ThreadHooks from "ThreadHooks" /* 7354 */;
-import useUserCommunicationDisabled from "useUserCommunicationDisabled" /* 8320 */;
+import ThreadHooks from "ThreadHooks" /* 7367 */;
+import useUserCommunicationDisabled from "useUserCommunicationDisabled" /* 8332 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -44,7 +44,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanReplyT
   } else {
     tmp5 = cResult[1];
   }
-  const tmpResult = tmp(8320);
+  const tmpResult = tmp(8332);
   const tmp8 = _slicedToArray(tmpResult.useCurrentUserCommunicationDisabled(tmp5), 2)[1];
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [PermissionStore];

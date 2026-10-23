@@ -1,16 +1,16 @@
-// Module ID: 17390
-// Function ID: 17391
+// Module ID: 17434
+// Function ID: 17435
 // Name: useMessagesData
-// Dependencies: [32, 19, 6481, 502, 4911, 7307, 504, 17391, 4797, 2]
+// Dependencies: [32, 19, 6494, 502, 4911, 7320, 504, 17435, 4797, 2]
 // Exports: default
 
-// Module 17390 (useMessagesData)
+// Module 17434 (useMessagesData)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6481 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6494 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7307 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7320 */;
 import size from "module_2" /* 2 */;
 
 let _slicedToArray = _slicedToArray_mod;

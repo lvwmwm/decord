@@ -1,19 +1,19 @@
-// Module ID: 16294
-// Function ID: 16295
+// Module ID: 16326
+// Function ID: 16327
 // Name: BountiesNuxPromoSheet
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5196, 16293, 1128, 16295, 5230, 10828, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5208, 16325, 1128, 16327, 5242, 10851, 2]
 
-// Module 16294 (BountiesNuxPromoSheet)
+// Module 16326 (BountiesNuxPromoSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import components_Button_Button from "components/Button/Button" /* 5230 */;
-import PromoSheet2 from "PromoSheet" /* 10828 */;
-import openBountiesNuxPromoSheet from "openBountiesNuxPromoSheet" /* 16293 */;
-import BountiesPosterSpotIllustration from "BountiesPosterSpotIllustration" /* 16295 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
+import components_Button_Button from "components/Button/Button" /* 5242 */;
+import PromoSheet2 from "PromoSheet" /* 10851 */;
+import openBountiesNuxPromoSheet from "openBountiesNuxPromoSheet" /* 16325 */;
+import BountiesPosterSpotIllustration from "BountiesPosterSpotIllustration" /* 16327 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -75,7 +75,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesNu
     tmp13 = cResult[5];
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const Button = tmp(5230).Button;
+    const Button = tmp(5242).Button;
     const intl3 = tmp(1128).intl;
     const tmp19 = <Button grow size="lg" variant="primary" text={intl3.string(intl4.t.cpT0Cq)} onPress={first} />;
     cResult[6] = tmp19;

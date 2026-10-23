@@ -1,8 +1,8 @@
-// Module ID: 6021
-// Function ID: 6022
+// Module ID: 6033
+// Function ID: 6034
 // Dependencies: [2]
 
-// Module 6021
+// Module 6033
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/card-cassette.png.js");

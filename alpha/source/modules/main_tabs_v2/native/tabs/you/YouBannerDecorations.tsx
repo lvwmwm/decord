@@ -1,10 +1,10 @@
-// Module ID: 9494
-// Function ID: 9495
+// Module ID: 9517
+// Function ID: 9518
 // Name: YouBannerDecorations
-// Dependencies: [19, 17, 2069, 1392, 4818, 1394, 21, 1385, 587, 4969, 558, 9495, 7544, 4994, 4805, 1128, 504, 8655, 8698, 8709, 4976, 683, 2053, 9539, 9541, 6793, 9542, 9543, 6698, 5196, 14105, 2002, 14106, 12298, 3830, 14109, 14111, 9401, 7473, 14108, 5244, 2]
+// Dependencies: [19, 17, 2069, 1392, 4818, 1394, 21, 1385, 587, 4969, 558, 9518, 7557, 4999, 4805, 1128, 504, 8673, 8716, 8727, 4976, 683, 2053, 9562, 9564, 6806, 9565, 9566, 6711, 5208, 14129, 2002, 14130, 12317, 3830, 14133, 14135, 9424, 7486, 14132, 5256, 2]
 // Exports: getFloatingNavBottomMargin
 
-// Module 9494 (YouBannerDecorations)
+// Module 9517 (YouBannerDecorations)
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
@@ -12,12 +12,12 @@ import PremiumConstants from "PremiumConstants" /* 1394 */;
 import IntlLoaderStore from "IntlLoaderStore" /* 2069 */;
 import dismissible_content from "dismissible_content" /* 4805 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4994 */;
-import QuestTypes from "QuestTypes" /* 6698 */;
-import useTrialOffer from "useTrialOffer" /* 7544 */;
-import PromotionsHooks from "PromotionsHooks" /* 9495 */;
-import tracking_Tracking from "tracking/Tracking" /* 9542 */;
-import QuestUtils from "QuestUtils" /* 9543 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4999 */;
+import QuestTypes from "QuestTypes" /* 6711 */;
+import useTrialOffer from "useTrialOffer" /* 7557 */;
+import PromotionsHooks from "PromotionsHooks" /* 9518 */;
+import tracking_Tracking from "tracking/Tracking" /* 9565 */;
+import QuestUtils from "QuestUtils" /* 9566 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;

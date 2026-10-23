@@ -1,18 +1,18 @@
-// Module ID: 17695
-// Function ID: 17696
+// Module ID: 17739
+// Function ID: 17740
 // Name: useGuildsBarBadges
-// Dependencies: [109, 19, 11211, 4996, 4881, 4843, 4901, 1392, 1087, 21, 4969, 558, 576, 504, 4997, 17696, 5238, 587, 1202, 17697, 17666, 17665, 2]
+// Dependencies: [109, 19, 11234, 5001, 4881, 4843, 4901, 1392, 1087, 21, 4969, 558, 576, 504, 5002, 17740, 5250, 587, 1202, 17741, 17710, 17709, 2]
 
-// Module 17695 (useGuildsBarBadges)
+// Module 17739 (useGuildsBarBadges)
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 1202 */;
-import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 4997 */;
-import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 17666 */;
-import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 17697 */;
+import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 5002 */;
+import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 17710 */;
+import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 17741 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11211 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4996 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11234 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5001 */;
 import GuildMemberStore from "GuildMemberStore" /* 4881 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
@@ -293,10 +293,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildsBar
     }
     const tmpResult6 = tmp(504);
     const stateFromStores2 = tmpResult6.useStateFromStores(tmp13, tmp16, tmp17);
-    const tmp20 = stateFromStores(17696)(arg0);
-    const tmpResult7 = tmp(5238);
+    const tmp20 = stateFromStores(17740)(arg0);
+    const tmpResult7 = tmp(5250);
     const token = tmpResult7.useToken(stateFromStores(587).modules.mobile.GUILD_BAR_ITEM_SIZE);
-    const tmpResult8 = tmp(5238);
+    const tmpResult8 = tmp(5250);
     const token1 = tmpResult8.useToken(stateFromStores(587).modules.mobile.GUILD_BAR_ITEM_MARGIN);
     const diff = token1 - tmp(1202).BADGE_PADDING;
     if (cResult[12] !== diff) {

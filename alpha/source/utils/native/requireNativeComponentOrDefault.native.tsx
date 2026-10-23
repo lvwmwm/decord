@@ -1,10 +1,10 @@
-// Module ID: 5575
-// Function ID: 5576
+// Module ID: 5587
+// Function ID: 5588
 // Name: requireNativeComponentOrDefault
 // Dependencies: [17, 3, 2]
 // Exports: default
 
-// Module 5575 (requireNativeComponentOrDefault)
+// Module 5587 (requireNativeComponentOrDefault)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;

@@ -1,16 +1,16 @@
-// Module ID: 8093
-// Function ID: 8094
+// Module ID: 8106
+// Function ID: 8107
 // Name: ReportModals
-// Dependencies: [5, 4826, 4912, 1406, 1087, 8094, 8095, 8097, 4835, 5697, 2]
+// Dependencies: [5, 4826, 4912, 1406, 1087, 8107, 8108, 8110, 4835, 5709, 2]
 // Exports: showReportModalForApp, showReportModalForFirstDM, showReportModalForGuild, showReportModalForGuildDirectoryEntry, showReportModalForGuildScheduledEvent, showReportModalForInappropriateConversationSafetyAlert, showReportModalForMessage, showReportModalForStageChannel, showReportModalForUser, showReportModalForWidget, showReportToModMessageModal, showStaffTestReportModalForGuild, showStaffTestReportModalForMessage, showStaffTestReportModalForUser, showUnauthenticatedReportModalForGuild, showUnauthenticatedReportModalForMessage, showUnauthenticatedReportModalForTida, showUnauthenticatedReportModalForUser, submitHamReportForFirstDM, submitReportForInappropriateConversationSafetyAlert
 
-// Module 8093 (ReportModals)
+// Module 8106 (ReportModals)
 import Constants from "Constants" /* 1087 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 4835 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5697 */;
-import MenuTypes from "MenuTypes" /* 8094 */;
-import showReportModal2 from "showReportModal" /* 8095 */;
-import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8097 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5709 */;
+import MenuTypes from "MenuTypes" /* 8107 */;
+import showReportModal2 from "showReportModal" /* 8108 */;
+import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8110 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import StageInstanceStore from "StageInstanceStore" /* 4826 */;
 import MessageRecord from "MessageRecord" /* 4912 */;
@@ -372,7 +372,7 @@ export const showUnauthenticatedReportModalForMessage = function showUnauthentic
   const IAR_MODAL_OPEN = AnalyticEvents.IAR_MODAL_OPEN;
   obj = { report_type: MESSAGE };
   AppAnalyticsUtilsDefault;
-  const merged = Object.assign({ message_id: "Array", channel_id: "Reflect" });
+  const merged = Object.assign({ message_id: "cix", channel_id: "unicodeVersion" });
   trackWithMetadata(IAR_MODAL_OPEN, obj);
   const obj2 = showReportModal2;
   const obj3 = { name: MenuTypes.UnauthenticatedReportNames.MESSAGE, record: tmp };

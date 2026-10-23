@@ -1,16 +1,16 @@
-// Module ID: 7939
-// Function ID: 7940
+// Module ID: 7952
+// Function ID: 7953
 // Name: HelpMessage
-// Dependencies: [19, 17, 21, 4969, 587, 1105, 6997, 5672, 7003, 7252, 558, 576, 5220, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 1105, 7010, 5684, 7016, 7265, 558, 576, 5232, 2]
 
-// Module 7939 (HelpMessage)
+// Module 7952 (HelpMessage)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 5672 */;
-import CircleErrorIcon2 from "CircleErrorIcon" /* 6997 */;
-import CircleXIcon2 from "CircleXIcon" /* 7003 */;
-import CircleCheckIcon2 from "CircleCheckIcon" /* 7252 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 5684 */;
+import CircleErrorIcon2 from "CircleErrorIcon" /* 7010 */;
+import CircleXIcon2 from "CircleXIcon" /* 7016 */;
+import CircleCheckIcon2 from "CircleCheckIcon" /* 7265 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -32,7 +32,7 @@ let obj5;
 let obj6;
 let obj7;
 let tmp;
-const Text_Text = tmp(5220);
+const Text_Text = tmp(5232);
 function getIcon(arg0) {
   if (obj8.WARNING === arg0) {
     const obj2 = { color: nativeDefault.unsafe_rawColors.YELLOW_300 };

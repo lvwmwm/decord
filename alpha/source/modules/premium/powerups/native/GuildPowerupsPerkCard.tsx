@@ -1,21 +1,21 @@
-// Module ID: 13430
-// Function ID: 13431
+// Module ID: 13453
+// Function ID: 13454
 // Name: GuildPowerupsPerkCard
-// Dependencies: [109, 19, 17, 21, 4969, 587, 558, 576, 5191, 4976, 7060, 13380, 5244, 5220, 13381, 1202, 1128, 13426, 2]
+// Dependencies: [109, 19, 17, 21, 4969, 587, 558, 576, 5203, 4976, 7073, 13403, 5256, 5232, 13404, 1202, 1128, 13449, 2]
 
-// Module 13430 (GuildPowerupsPerkCard)
+// Module 13453 (GuildPowerupsPerkCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import shared from "shared" /* 4976 */;
-import useThemeDefault from "useTheme" /* 5191 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import LinearGradientDefault from "LinearGradient" /* 5244 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7060 */;
-import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 13380 */;
-import GuildPowerupsCardDefault from "GuildPowerupsCard" /* 13426 */;
+import useThemeDefault from "useTheme" /* 5203 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import LinearGradientDefault from "LinearGradient" /* 5256 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7073 */;
+import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 13403 */;
+import GuildPowerupsCardDefault from "GuildPowerupsCard" /* 13449 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -267,7 +267,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
                           tmp55 = tmp58;
                         }
                         const obj6 = { status: tmp10 };
-                        const GuildPowerupsCardFooter = tmp(13381).GuildPowerupsCardFooter;
+                        const GuildPowerupsCardFooter = tmp(13404).GuildPowerupsCardFooter;
                         const merged = Object.assign(tmp6);
                         const tmp54 = metroRequire(GuildPowerupsCardFooter, obj6);
                         cResult[40] = tmp6;
@@ -396,7 +396,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   let str;
   const obj7 = { style: tmp2.contentContainer, children: items4 };
   const obj8 = { style: tmp2.headerContainer, children: items3 };
-  const Text = tmp6(5220).Text;
+  const Text = tmp6(5232).Text;
   if (manaTypeConsolidationExperiment) {
     str = "text-strong";
   }
@@ -407,14 +407,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   }
   items3 = [metroRequire(Text, obj9), ];
   let str3 = "text-sm/medium";
-  const Text2 = tmp6(5220).Text;
+  const Text2 = tmp6(5232).Text;
   if (manaTypeConsolidationExperiment) {
     str3 = "experimental/body-sm/normal";
   }
   items3[1] = metroRequire(Text2, { variant: str3, children: description });
   items4 = [metroImportDefault(View, obj8), ];
   const obj10 = { status };
-  const GuildPowerupsCardFooter = tmp6(13381).GuildPowerupsCardFooter;
+  const GuildPowerupsCardFooter = tmp6(13404).GuildPowerupsCardFooter;
   const merged1 = Object.assign(merged);
   items4[1] = metroRequire(GuildPowerupsCardFooter, obj10);
   items2[1] = metroImportDefault(View, obj7);

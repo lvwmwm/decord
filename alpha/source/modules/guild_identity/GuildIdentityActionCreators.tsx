@@ -1,16 +1,16 @@
-// Module ID: 11162
-// Function ID: 11163
+// Module ID: 11185
+// Function ID: 11186
 // Name: GuildIdentityActionCreators
-// Dependencies: [5, 1087, 584, 1297, 7064, 7068, 2]
+// Dependencies: [5, 1087, 584, 1297, 7077, 7081, 2]
 // Exports: clearErrors, initGuildIdentitySettings, resetAllPending, resetPendingMemberChanges, resetPendingProfileChanges, saveGuildIdentityChanges, setCurrentGuild
 
-// Module 11162 (GuildIdentityActionCreators)
+// Module 11185 (GuildIdentityActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
-let avatar, avatar_description, avatar_id, closure_5, skuId, skuId2, vad_colors, value2;
+let avatar, avatar_description, avatar_id, closure_5, skuId, skuId2, value2;
 
 let obj = function _saveGuildIdentityChanges() {
   obj = _asyncToGenerator(async (guildId, nick) => {
@@ -24,8 +24,6 @@ let obj = function _saveGuildIdentityChanges() {
       let c4;
       let c5;
       let c6;
-      let c8;
-      let c9;
       let obj10;
       let obj11;
       let tmp30;
@@ -33,8 +31,8 @@ let obj = function _saveGuildIdentityChanges() {
       let tmp39;
       let tmp45;
       let tmp51;
-      if (vad_colors === 2) {
-        vad_colors = 3;
+      if (c8 === 2) {
+        c8 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -48,13 +46,13 @@ let obj = function _saveGuildIdentityChanges() {
         try {
           let obj7;
           let body;
-          vad_colors = 2;
+          c8 = 2;
           if (0 === c7) {
             if (arg0 === 1) {
-              vad_colors = 3;
+              c8 = 3;
               throw value;
             } else if (arg0 === 2) {
-              vad_colors = 3;
+              c8 = 3;
               return { value, done: true };
             } else {
               let closure_4 = tmp;
@@ -65,21 +63,20 @@ let obj = function _saveGuildIdentityChanges() {
               avatar_id = undefined;
               skuId = undefined;
               skuId2 = undefined;
-              c9 = undefined;
-              ({ nick: c1, avatar: c2, avatarDescription: c3, avatarId: c4, avatarDecoration: c5, nameplate: c6, displayNameStyles: c7, vadColors: c8, avatarOriginalMd5: c9 } = closure_1);
+              ({ nick: c1, avatar: c2, avatarDescription: c3, avatarId: c4, avatarDecoration: c5, nameplate: c6, displayNameStyles: c7, avatarOriginalMd5: c8 } = closure_1);
               obj7 = undefined;
               value = undefined;
               body = undefined;
               c7 = 1;
-              vad_colors = 1;
+              c8 = 1;
               return { value: "Reflect", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
-              vad_colors = 3;
+              c8 = 3;
               throw value;
             } else if (arg0 === 2) {
-              vad_colors = 3;
+              c8 = 3;
               return { value, done: true };
             } else if (null == guildId) {
               const _Error = Error;
@@ -91,7 +88,7 @@ let obj = function _saveGuildIdentityChanges() {
               const obj6 = { type: "USER_PROFILE_SETTINGS_SUBMIT", guildId };
               const obj20 = closure_132_1(closure_132_2[2]);
               obj20.dispatch(obj6);
-              obj7 = { nick, avatar, avatar_description, avatar_id, avatar_decoration_sku_id: tmp30, collectibles: tmp33, display_name_font_id: tmp39, display_name_effect_id: tmp45, display_name_colors: tmp51, vad_colors };
+              obj7 = { nick, avatar, avatar_description, avatar_id, avatar_decoration_sku_id: tmp30, collectibles: tmp33, display_name_font_id: tmp39, display_name_effect_id: tmp45, display_name_colors: tmp51 };
               tmp30 = undefined;
               if (undefined !== skuId) {
                 skuId = undefined;
@@ -143,9 +140,9 @@ let obj = function _saveGuildIdentityChanges() {
               const request = { url: closure_132_4.SET_GUILD_MEMBER(guildId), body: obj7, headers: obj10.buildHeadersForMd5(obj11), oldFormErrors: true, rejectWithError: false };
               const patch = HTTP.patch;
               obj11 = {};
-              obj11[closure_132_0(closure_132_2[5]).SafetyScannedUploadSurface.USER_GUILD_PROFILE_AVATAR] = c9;
+              obj11[closure_132_0(closure_132_2[5]).SafetyScannedUploadSurface.USER_GUILD_PROFILE_AVATAR] = c8;
               c7 = 3;
-              vad_colors = 1;
+              c8 = 1;
               obj10 = closure_132_1(closure_132_2[4]);
               const obj12 = { value: patch(request), done: false };
               return obj12;
@@ -160,19 +157,19 @@ let obj = function _saveGuildIdentityChanges() {
             }
             if (null != username) {
               body.nick = body.username;
-              delete body[tmp77];
+              delete body[tmp76];
             }
             const obj13 = { type: "USER_PROFILE_SETTINGS_SUBMIT_FAILURE", guildId, errors: value2.body };
             const obj4 = closure_132_1(closure_132_2[2]);
             obj4.dispatch(obj13);
-            vad_colors = 3;
+            c8 = 3;
             return { value: value2, done: true };
           } else if (arg0 === 1) {
-            vad_colors = 3;
+            c8 = 3;
             throw value;
           } else if (arg0 === 2) {
             skuId2 = 0;
-            vad_colors = 3;
+            c8 = 3;
             return { value, done: true };
           } else {
             body = value.body;
@@ -188,14 +185,14 @@ let obj = function _saveGuildIdentityChanges() {
               obj.dispatch({ type: "RECENT_AVATARS_UPDATE" });
             }
             skuId2 = 0;
-            vad_colors = 3;
+            c8 = 3;
             return { value, done: true };
           }
-        } catch (tmp69) {
-          closure_5 = tmp69;
+        } catch (tmp68) {
+          closure_5 = tmp68;
           if (0 === skuId2) {
-            vad_colors = 3;
-            throw tmp69;
+            c8 = 3;
+            throw tmp68;
           } else {
             c7 = 2;
           }

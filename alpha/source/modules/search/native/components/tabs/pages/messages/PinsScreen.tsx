@@ -1,20 +1,20 @@
-// Module ID: 18093
-// Function ID: 18094
+// Module ID: 18137
+// Function ID: 18138
 // Name: messages/PinsScreen
-// Dependencies: [19, 13935, 6777, 13172, 9691, 9690, 1087, 21, 504, 18006, 13934, 18002, 13179, 18068, 18010, 18009, 558, 576, 18091, 2]
+// Dependencies: [19, 13958, 6790, 13195, 9713, 9712, 1087, 21, 504, 18050, 13957, 18046, 13202, 18112, 18054, 18053, 558, 576, 18135, 2]
 
-// Module 18093 (messages/PinsScreen)
+// Module 18137 (messages/PinsScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
-import TrackingConstants from "TrackingConstants" /* 9690 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13179 */;
-import ChannelPinActionCreatorsDefault from "ChannelPinActionCreators" /* 13934 */;
-import ChannelPinsStore2 from "ChannelPinsStore" /* 13935 */;
-import MessagesScreenDefault from "MessagesScreen" /* 18091 */;
+import TrackingConstants from "TrackingConstants" /* 9712 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13202 */;
+import ChannelPinActionCreatorsDefault from "ChannelPinActionCreators" /* 13957 */;
+import ChannelPinsStore2 from "ChannelPinsStore" /* 13958 */;
+import MessagesScreenDefault from "MessagesScreen" /* 18135 */;
 import react from "react" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 6777 */;
-import SearchQueryStore from "SearchQueryStore" /* 13172 */;
-import SearchConstants from "SearchConstants" /* 9691 */;
+import SearchMessageStore from "SearchMessageStore" /* 6790 */;
+import SearchQueryStore from "SearchQueryStore" /* 13195 */;
+import SearchConstants from "SearchConstants" /* 9713 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

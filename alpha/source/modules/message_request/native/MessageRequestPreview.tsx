@@ -1,9 +1,9 @@
-// Module ID: 18253
-// Function ID: 18254
+// Module ID: 18297
+// Function ID: 18298
 // Name: MessageRequestPreview
-// Dependencies: [19, 17, 4911, 1087, 21, 4969, 6636, 587, 558, 576, 13455, 504, 1267, 1128, 8468, 6473, 1202, 2]
+// Dependencies: [19, 17, 4911, 1087, 21, 4969, 6649, 587, 558, 576, 13478, 504, 1267, 1128, 8480, 6486, 1202, 2]
 
-// Module 18253 (MessageRequestPreview)
+// Module 18297 (MessageRequestPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,7 +12,7 @@ import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
 import Constants from "Constants" /* 1087 */;
 import createStyles_mod from "createStyles" /* 4969 */;
-import TextStyles_mod from "TextStyles" /* 6636 */;
+import TextStyles_mod from "TextStyles" /* 6649 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   channel = channel.channel;
   const style = channel.style;
   const tmp4 = closure_9();
-  const obj2 = channel(13455);
+  const obj2 = channel(13478);
   const messageRequestPreview = obj2.useMessageRequestPreview(channel);
   const message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);
@@ -654,7 +654,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   channel = channel.channel;
   const style = channel.style;
   const tmp = closure_9();
-  let obj = channel(13455);
+  let obj = channel(13478);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   const message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);
@@ -704,7 +704,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       if (null != content) {
         if ("" !== message.content) {
-          const content1 = message(8468)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
+          const content1 = message(8480)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
           const _Array = Array;
           if (!Array.isArray(content1)) {
             flag = true;
@@ -715,7 +715,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
       if (null != message) {
-        const tmp2Result = channel(6473);
+        const tmp2Result = channel(6486);
         if (tmp2Result.getMessageStickers(message).length > 0) {
           const intl5 = tmp2(1128).intl;
           let stringResult1 = intl5.string(tmp2(1128).t["zuI+by"]);

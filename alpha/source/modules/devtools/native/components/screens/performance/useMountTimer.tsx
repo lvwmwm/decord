@@ -1,9 +1,9 @@
-// Module ID: 17028
-// Function ID: 17029
+// Module ID: 17072
+// Function ID: 17073
 // Name: useMountTimer
 // Dependencies: [32, 19, 558, 576, 2]
 
-// Module 17028 (useMountTimer)
+// Module 17072 (useMountTimer)
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

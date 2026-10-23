@@ -1,9 +1,9 @@
-// Module ID: 13115
-// Function ID: 13116
+// Module ID: 13138
+// Function ID: 13139
 // Name: Divider
 // Dependencies: [19, 17, 21, 4969, 587, 558, 576, 2]
 
-// Module 13115 (Divider)
+// Module 13138 (Divider)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

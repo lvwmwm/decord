@@ -1,12 +1,12 @@
-// Module ID: 15149
-// Function ID: 15150
+// Module ID: 15174
+// Function ID: 15175
 // Name: GuildBadgeWiltedFlower
-// Dependencies: [109, 19, 21, 558, 576, 15113, 7947, 2]
+// Dependencies: [109, 19, 21, 558, 576, 15138, 7960, 2]
 
-// Module 15149 (GuildBadgeWiltedFlower)
+// Module 15174 (GuildBadgeWiltedFlower)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 7947 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15113 */;
+import inlineStyles from "inlineStyles" /* 7960 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15138 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -179,7 +179,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadgeWi
       }
     }
     const obj7 = { width: num7, height: num8, viewBox: "0 0 16 16", fill: "none", children: items };
-    const Svg = tmp(7947).Svg;
+    const Svg = tmp(7960).Svg;
     const merged = Object.assign(tmp5);
     items = [tmp17, tmp21, tmp24, tmp27, tmp30, tmp35, tmp38, tmp39];
     const tmp48 = hasOwnProperty(Svg, obj7);
@@ -240,7 +240,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadgeWi
   const obj6 = { d: "M14 10v-1h1v2H12v-1h2ZM11 6h-1v2h-1v1h-1v-2h1V4h1v-1h1v3ZM13 4h1v5h-2v-1h-1v-2h1V3h1v1Z", fill: primaryColorsTransformed[2] };
   items[4] = React3(inlineStyles.Path, obj6);
   let first;
-  const Path2 = tmp2(7947).Path;
+  const Path2 = tmp2(7960).Path;
   if (secondaryColorsTransformed != null) {
     first = secondaryColorsTransformed[0];
   }

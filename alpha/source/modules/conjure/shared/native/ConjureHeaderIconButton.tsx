@@ -1,9 +1,9 @@
-// Module ID: 11811
-// Function ID: 11812
+// Module ID: 11830
+// Function ID: 11831
 // Name: ConjureHeaderIconButton
-// Dependencies: [19, 21, 4969, 558, 576, 6893, 2]
+// Dependencies: [19, 21, 4969, 558, 576, 6906, 2]
 
-// Module 11811 (ConjureHeaderIconButton)
+// Module 11830 (ConjureHeaderIconButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
@@ -12,7 +12,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Pressables = tmp(6893);
+const Pressables = tmp(6906);
 const jsx = Fragment.jsx;
 let closure_3 = createStyles.createStyles({ button: { width: 40, height: 40, alignItems: "center", justifyContent: "center" } });
 const androidRippleConfig = { borderless: true, radius: 20 };

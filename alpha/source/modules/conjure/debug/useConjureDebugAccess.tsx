@@ -1,10 +1,10 @@
-// Module ID: 12237
-// Function ID: 12238
+// Module ID: 12256
+// Function ID: 12257
 // Name: useConjureDebugAccess
 // Dependencies: [558, 4797, 2]
 // Exports: useConjureTraceTabEnabled
 
-// Module 12237 (useConjureDebugAccess)
+// Module 12256 (useConjureDebugAccess)
 import UserSettings from "UserSettings" /* 4797 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,11 +1,11 @@
-// Module ID: 7699
-// Function ID: 7700
+// Module ID: 7712
+// Function ID: 7713
 // Name: ProfileReadStateUtils
-// Dependencies: [7700, 2]
+// Dependencies: [7713, 2]
 // Exports: getWishlistUpdatedAtTimestamp, hasWishlistBeenUpdatedSinceLastViewed, isWishlistItemNew, parseProfileReadState
 
-// Module 7699 (ProfileReadStateUtils)
-import ProfileReadStateConstants from "ProfileReadStateConstants" /* 7700 */;
+// Module 7712 (ProfileReadStateUtils)
+import ProfileReadStateConstants from "ProfileReadStateConstants" /* 7713 */;
 import size from "module_2" /* 2 */;
 
 function parseTimestamp(arg0) {

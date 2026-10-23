@@ -1,10 +1,10 @@
-// Module ID: 15826
-// Function ID: 15827
+// Module ID: 15859
+// Function ID: 15860
 // Name: useOpenThemeColorPickerActionSheet
-// Dependencies: [19, 558, 576, 15793, 2]
+// Dependencies: [19, 558, 576, 15814, 2]
 
-// Module 15826 (useOpenThemeColorPickerActionSheet)
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 15793 */;
+// Module 15859 (useOpenThemeColorPickerActionSheet)
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 15814 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

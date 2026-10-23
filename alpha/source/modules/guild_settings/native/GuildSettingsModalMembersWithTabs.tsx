@@ -1,18 +1,18 @@
-// Module ID: 17941
-// Function ID: 17942
+// Module ID: 17985
+// Function ID: 17986
 // Name: GuildSettingsModalMembersWithTabs
-// Dependencies: [109, 32, 19, 17, 4843, 4901, 1392, 21, 4969, 587, 558, 576, 17563, 504, 7350, 1128, 17942, 17943, 17950, 4998, 1505, 9738, 17945, 7470, 9008, 8876, 11804, 11120, 2]
+// Dependencies: [109, 32, 19, 17, 4843, 4901, 1392, 21, 4969, 587, 558, 576, 17607, 504, 7363, 1128, 17986, 17987, 17994, 5003, 1505, 9760, 17989, 7483, 9031, 8899, 11823, 11143, 2]
 
-// Module 17941 (GuildSettingsModalMembersWithTabs)
+// Module 17985 (GuildSettingsModalMembersWithTabs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4998 */;
-import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7350 */;
-import ContextMenu2 from "ContextMenu" /* 9738 */;
-import MemberSafetyPageTypes from "MemberSafetyPageTypes" /* 17942 */;
-import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 17943 */;
-import GuildSettingsModalMemberApplicationsDefault from "GuildSettingsModalMemberApplications" /* 17950 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5003 */;
+import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7363 */;
+import ContextMenu2 from "ContextMenu" /* 9760 */;
+import MemberSafetyPageTypes from "MemberSafetyPageTypes" /* 17986 */;
+import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 17987 */;
+import GuildSettingsModalMemberApplicationsDefault from "GuildSettingsModalMemberApplications" /* 17994 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -31,7 +31,7 @@ let closure_12;
 let obj2;
 let tmp2;
 let unpackModuleId;
-const showMembersManagementActionSheet = tmp2(17945);
+const showMembersManagementActionSheet = tmp2(17989);
 let closure_3 = ["ref"];
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;

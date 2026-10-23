@@ -1,23 +1,23 @@
-// Module ID: 10893
-// Function ID: 10894
+// Module ID: 10916
+// Function ID: 10917
 // Name: useChannelSafeAreaBottomStyles
-// Dependencies: [19, 6481, 4902, 4821, 2014, 5700, 1087, 4828, 4969, 587, 558, 576, 10894, 5979, 5147, 1631, 1384, 573, 5238, 9685, 2]
+// Dependencies: [19, 6494, 4902, 4821, 2014, 5712, 1087, 4828, 4969, 587, 558, 576, 10917, 5991, 5159, 1631, 1384, 573, 5250, 9707, 2]
 
-// Module 10893 (useChannelSafeAreaBottomStyles)
+// Module 10916 (useChannelSafeAreaBottomStyles)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import KeyboardTypes from "KeyboardTypes" /* 1631 */;
 import ChannelConstants from "ChannelConstants" /* 4828 */;
-import useToken from "useToken" /* 5238 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 9685 */;
+import useToken from "useToken" /* 5250 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 9707 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6481 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6494 */;
 import LurkingStore from "LurkingStore" /* 4902 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5700 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5712 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -347,9 +347,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelSa
   let closure_1;
   let closure_2;
   let gradientBottom;
-  let obj = gradientBottom(5238);
+  let obj = gradientBottom(5250);
   const token = obj.useToken(nativeDefault.colors.MOBILE_KEYBOARD_GAP_BACKGROUND);
-  let obj2 = gradientBottom(9685);
+  let obj2 = gradientBottom(9707);
   gradientBottom = obj2.useGradientBottom();
   let backgroundColor1;
   if (gradientBottom != null) {

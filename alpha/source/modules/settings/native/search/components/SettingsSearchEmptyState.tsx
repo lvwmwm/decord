@@ -1,16 +1,16 @@
-// Module ID: 15929
-// Function ID: 15930
+// Module ID: 15962
+// Function ID: 15963
 // Name: SettingsSearchEmptyState
-// Dependencies: [19, 17, 21, 4969, 558, 576, 4978, 1128, 8974, 5220, 5963, 2]
+// Dependencies: [19, 17, 21, 4969, 558, 576, 4978, 1128, 8997, 5232, 5975, 2]
 
-// Module 15929 (SettingsSearchEmptyState)
+// Module 15962 (SettingsSearchEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4978 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import Stack_Stack from "Stack/Stack" /* 5963 */;
-import NoResultsAlt from "NoResultsAlt" /* 8974 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import Stack_Stack from "Stack/Stack" /* 5975 */;
+import NoResultsAlt from "NoResultsAlt" /* 8997 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -61,7 +61,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl.string(intl3.t.zihbmv) };
-    const Text = tmp(5220).Text;
+    const Text = tmp(5232).Text;
     intl = tmp(1128).intl;
     const tmp13 = React3(Text, obj2);
     cResult[3] = tmp13;
@@ -71,7 +71,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-xs/medium", color: "text-muted", children: intl2.string(intl3.t.XclvsB) };
-    const Text2 = tmp(5220).Text;
+    const Text2 = tmp(5232).Text;
     intl2 = tmp(1128).intl;
     const tmp16 = React3(Text2, obj3);
     cResult[4] = tmp16;

@@ -1,23 +1,10 @@
 // Module ID: 6959
 // Function ID: 6960
 // Name: react
-// Dependencies: [19, 6958]
-// Exports: useHeaderHeight
+// Dependencies: [6956]
 
 // Module 6959 (react)
-import react2 from "react" /* 6958 */;
-import react from "react" /* 19 */;
+import react from "react" /* 6956 */;
 
 
-export const useHeaderHeight = function useHeaderHeight() {
-  const context = react.useContext(react2.HeaderHeightContext);
-  if (undefined === context) {
-    const _Error = Error;
-    const self = this;
-    const self2 = this;
-    const error = new Error("Couldn't find the header height. Are you inside a screen in a navigator with a header?");
-    throw error;
-  } else {
-    return context;
-  }
-};
+export const HeaderShownContext = react.getNamedContext("HeaderShownContext", false);

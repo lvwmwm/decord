@@ -1,15 +1,15 @@
-// Module ID: 11505
-// Function ID: 11506
+// Module ID: 11525
+// Function ID: 11526
 // Name: ChannelCallNavigatorIcon
-// Dependencies: [19, 17, 10855, 1087, 21, 4969, 587, 558, 576, 4976, 5572, 1202, 6893, 2]
+// Dependencies: [19, 17, 10878, 1087, 21, 4969, 587, 558, 576, 4976, 5584, 1202, 6906, 2]
 
-// Module 11505 (ChannelCallNavigatorIcon)
+// Module 11525 (ChannelCallNavigatorIcon)
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import shared from "shared" /* 4976 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5572 */;
-import Pressables from "Pressables" /* 6893 */;
-import ChannelCallStore from "ChannelCallStore" /* 10855 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5584 */;
+import Pressables from "Pressables" /* 6906 */;
+import ChannelCallStore from "ChannelCallStore" /* 10878 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
@@ -136,7 +136,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCallN
                     }
                     const obj3 = { accessibilityRole: "button", accessibilityLabel, disabled, style: tmp6.pressable, onPress: tmp7, children: items };
                     items = [tmp24, children];
-                    const tmp30 = closure_8(tmp(6893).PressableOpacity, obj3);
+                    const tmp30 = closure_8(tmp(6906).PressableOpacity, obj3);
                     cResult[21] = accessibilityLabel;
                     cResult[22] = children;
                     cResult[23] = disabled;

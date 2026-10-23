@@ -1,9 +1,9 @@
-// Module ID: 7417
-// Function ID: 7418
+// Module ID: 7430
+// Function ID: 7431
 // Name: MobileWebHandoffUtils
 // Dependencies: [5, 1087, 1281, 1297, 2]
 
-// Module 7417 (MobileWebHandoffUtils)
+// Module 7430 (MobileWebHandoffUtils)
 import Constants from "Constants" /* 1087 */;
 import v1 from "v1" /* 1281 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;

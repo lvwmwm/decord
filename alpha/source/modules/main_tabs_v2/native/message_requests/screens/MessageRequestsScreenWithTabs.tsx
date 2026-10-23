@@ -1,14 +1,14 @@
-// Module ID: 18249
-// Function ID: 18250
+// Module ID: 18293
+// Function ID: 18294
 // Name: MessageRequestsScreenWithTabs
-// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 1128, 18250, 18266, 8876, 9122, 11120, 12794, 2]
+// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 1128, 18294, 18310, 8899, 9145, 11143, 12813, 2]
 
-// Module 18249 (MessageRequestsScreenWithTabs)
+// Module 18293 (MessageRequestsScreenWithTabs)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import MessageRequestListDefault from "MessageRequestList" /* 18250 */;
-import SpamMessageListDefault from "SpamMessageList" /* 18266 */;
+import MessageRequestListDefault from "MessageRequestList" /* 18294 */;
+import SpamMessageListDefault from "SpamMessageList" /* 18310 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -22,10 +22,10 @@ let obj2;
 let obj3;
 let tmp;
 const intl5 = tmp(1128);
-const SegmentedControlState = tmp(8876);
-const SegmentedControl = tmp(9122);
-const SegmentedControlPages = tmp(11120);
-const TTIFirstContentfulPaint = tmp(12794);
+const SegmentedControlState = tmp(8899);
+const SegmentedControl = tmp(9145);
+const SegmentedControlPages = tmp(11143);
+const TTIFirstContentfulPaint = tmp(12813);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const constants = { REQUEST: "REQUEST", SPAM: "SPAM" };

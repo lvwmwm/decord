@@ -1,15 +1,15 @@
-// Module ID: 11082
-// Function ID: 11083
+// Module ID: 11105
+// Function ID: 11106
 // Name: useTenureBadgeRequirementString
-// Dependencies: [1394, 558, 576, 11083, 7697, 1128, 2]
+// Dependencies: [1394, 558, 576, 11106, 7710, 1128, 2]
 // Exports: getTenureBadgeRequirementString
 
-// Module 11082 (useTenureBadgeRequirementString)
+// Module 11105 (useTenureBadgeRequirementString)
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7697 */;
-import useTenureBadging from "useTenureBadging" /* 11083 */;
+import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7710 */;
+import useTenureBadging from "useTenureBadging" /* 11106 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

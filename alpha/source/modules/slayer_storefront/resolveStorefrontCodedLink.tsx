@@ -1,13 +1,13 @@
-// Module ID: 18790
-// Function ID: 18791
+// Module ID: 18834
+// Function ID: 18835
 // Name: resolveStorefrontCodedLink
-// Dependencies: [32, 5, 6809, 18780, 11202, 5689, 584, 18791, 10533, 2]
+// Dependencies: [32, 5, 6822, 18824, 11225, 5701, 584, 18835, 10555, 2]
 // Exports: default
 
-// Module 18790 (resolveStorefrontCodedLink)
+// Module 18834 (resolveStorefrontCodedLink)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SKUStore from "SKUStore" /* 6809 */;
+import SKUStore from "SKUStore" /* 6822 */;
 import size from "module_2" /* 2 */;
 
 let c1, c4, closure_2;
@@ -19,10 +19,10 @@ export default function resolveStorefrontCodedLink(arg0, code) {
   let obj3;
   const tmp = obj3;
   const tmp2 = dependencyMap;
-  let obj = obj3(11202);
+  let obj = obj3(11225);
   const result = obj.parseStorefrontCodedLink(code);
   if (null != result) {
-    if (arg0 === tmp(5689).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
+    if (arg0 === tmp(5701).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
       let obj2 = { type: "application", applicationId: result.scopeId };
       obj3 = obj2;
     } else {
@@ -36,7 +36,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
         let obj5 = { type: "STORE_LISTINGS_FETCH_START", skuId };
         obj4.dispatch(obj5);
         const items = [skuId];
-        const tmpResult = tmp(11202);
+        const tmpResult = tmp(11225);
         const storefrontCodedLink = tmpResult.makeStorefrontCodedLink(items, result.scopeId);
         const tmp8 = _asyncToGenerator;
         skuId = _asyncToGenerator(async (arg0, value) => {
@@ -111,7 +111,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
         let obj7 = set;
         if (!set.has(storefrontCodedLink)) {
           obj7.add(storefrontCodedLink);
-          const tmpResult2 = tmp(18780);
+          const tmpResult2 = tmp(18824);
           const result1 = tmpResult2.queueMessageLinkFetch(tmp8(function*(arg0, value) {
             if (c4 === 2) {
               c4 = 3;

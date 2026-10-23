@@ -1,16 +1,16 @@
-// Module ID: 17052
-// Function ID: 17053
+// Module ID: 17096
+// Function ID: 17097
 // Name: UserSettingsDesignSystemLegacyButton
-// Dependencies: [32, 19, 17, 21, 1202, 558, 576, 5220, 5230, 4969, 587, 5963, 8926, 2]
+// Dependencies: [32, 19, 17, 21, 1202, 558, 576, 5232, 5242, 4969, 587, 5975, 8949, 2]
 
-// Module 17052 (UserSettingsDesignSystemLegacyButton)
+// Module 17096 (UserSettingsDesignSystemLegacyButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import components_Button_Button from "components/Button/Button" /* 5230 */;
-import Stack_Stack from "Stack/Stack" /* 5963 */;
-import Form from "Form" /* 8926 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import components_Button_Button from "components/Button/Button" /* 5242 */;
+import Stack_Stack from "Stack/Stack" /* 5975 */;
+import Form from "Form" /* 8949 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -275,7 +275,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Compar
   const tmp9 = hasItem && tmp.darkBg;
   items[1] = tmp9;
   let str = "text-muted";
-  const Text = tmp4(5220).Text;
+  const Text = tmp4(5232).Text;
   if (hasItem) {
     str = "text-default";
   }

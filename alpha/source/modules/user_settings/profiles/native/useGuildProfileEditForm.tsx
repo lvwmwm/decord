@@ -1,17 +1,17 @@
-// Module ID: 15897
-// Function ID: 15898
+// Module ID: 15930
+// Function ID: 15931
 // Name: useGuildProfileEditForm
-// Dependencies: [109, 5, 19, 8629, 7688, 4843, 6686, 1392, 1087, 558, 576, 504, 12759, 4816, 11162, 15898, 11158, 7070, 15807, 6359, 1128, 8636, 2]
+// Dependencies: [109, 5, 19, 8647, 7701, 4843, 6699, 1392, 1087, 558, 576, 504, 12778, 4816, 11185, 15931, 11181, 7083, 15829, 6372, 1128, 8654, 2]
 
-// Module 15897 (useGuildProfileEditForm)
+// Module 15930 (useGuildProfileEditForm)
 import Constants from "Constants" /* 1087 */;
-import UserProfileSettingsStore2 from "UserProfileSettingsStore" /* 8629 */;
+import UserProfileSettingsStore2 from "UserProfileSettingsStore" /* 8647 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7688 */;
+import UserProfileStore from "UserProfileStore" /* 7701 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import SortedGuildStore from "SortedGuildStore" /* 6686 */;
+import SortedGuildStore from "SortedGuildStore" /* 6699 */;
 import UserStore_mod from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

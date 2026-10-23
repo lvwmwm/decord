@@ -1,7 +1,7 @@
 // Module ID: 1205
 // Function ID: 1206
 // Name: Button/Button
-// Dependencies: [19, 17, 1087, 1206, 21, 4969, 587, 4966, 6692, 1384, 15340, 558, 576, 8942, 4976, 6971, 5230, 2]
+// Dependencies: [19, 17, 1087, 1206, 21, 4969, 587, 4966, 6705, 1384, 15361, 558, 576, 8965, 4976, 6984, 5242, 2]
 // Exports: getRedesignSize, getRedesignVariant
 
 // Module 1205 (Button/Button)
@@ -11,9 +11,9 @@ import Constants from "Constants" /* 1087 */;
 import FormConstants from "FormConstants" /* 1206 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import shared from "shared" /* 4976 */;
-import LegacyTokens from "LegacyTokens" /* 6692 */;
-import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8942 */;
-import StylesheetUtils from "StylesheetUtils" /* 15340 */;
+import LegacyTokens from "LegacyTokens" /* 6705 */;
+import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8965 */;
+import StylesheetUtils from "StylesheetUtils" /* 15361 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

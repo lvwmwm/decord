@@ -1,10 +1,10 @@
-// Module ID: 15184
-// Function ID: 15185
+// Module ID: 15209
+// Function ID: 15210
 // Name: openActivityDMLauncher
-// Dependencies: [5, 1504, 14145, 11315, 7263, 5620, 6794, 7396, 5145, 1631, 2]
+// Dependencies: [5, 1504, 14169, 11338, 7276, 5632, 6807, 7409, 5157, 1631, 2]
 // Exports: default
 
-// Module 15184 (openActivityDMLauncher)
+// Module 15209 (openActivityDMLauncher)
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;

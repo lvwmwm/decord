@@ -1,25 +1,25 @@
-// Module ID: 9648
-// Function ID: 9649
+// Module ID: 9671
+// Function ID: 9672
 // Name: PremiumUpsellUtils
-// Dependencies: [19, 1392, 1087, 1394, 21, 9649, 1128, 9650, 9651, 9652, 2053, 9653, 9654, 9655, 5895, 9841, 2002, 558, 576, 7542, 9770, 5145, 1267, 5196, 9769, 2]
+// Dependencies: [19, 1392, 1087, 1394, 21, 9672, 1128, 9673, 9674, 9675, 2053, 9676, 9677, 9678, 5907, 9863, 2002, 14027, 558, 576, 7555, 9792, 5157, 1267, 5208, 9791, 2]
 // Exports: getUpsellItems
 
-// Module 9648 (PremiumUpsellUtils)
+// Module 9671 (PremiumUpsellUtils)
 import Fragment from "Fragment" /* 21 */;
 import intl20 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import PremiumUtils from "PremiumUtils" /* 2053 */;
-import ChatInputUtils from "ChatInputUtils" /* 5145 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9649 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9650 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 9651 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 9652 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 9653 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 9654 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9769 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9770 */;
+import ChatInputUtils from "ChatInputUtils" /* 5157 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9672 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9673 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 9674 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 9675 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 9676 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 9677 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9791 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9792 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
@@ -74,7 +74,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumUp
     tmp10 = skuId === closure_8.TIER_0;
   }
   if (tmp10) {
-    TIER_2_LEADING = tmp(tmp2[20]).PremiumFeatureCardOrder.TIER_0_LEADING;
+    TIER_2_LEADING = tmp(tmp2[21]).PremiumFeatureCardOrder.TIER_0_LEADING;
   } else {
     if (constants3.UPLOAD !== arg0) {
       if (constants3.ANIMATED_EMOJI !== arg0) {
@@ -90,7 +90,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumUp
                           const ANIMATED_AVATAR = tmp13.ANIMATED_AVATAR;
                         }
                       }
-                      TIER_2_LEADING = tmp(tmp2[20]).PremiumFeatureCardOrder.TIER_0_LEADING;
+                      TIER_2_LEADING = tmp(tmp2[21]).PremiumFeatureCardOrder.TIER_0_LEADING;
                     }
                   }
                 }
@@ -100,7 +100,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumUp
         }
       }
     }
-    TIER_2_LEADING = tmp(tmp2[20]).PremiumFeatureCardOrder.TIER_2_LEADING;
+    TIER_2_LEADING = tmp(tmp2[21]).PremiumFeatureCardOrder.TIER_2_LEADING;
   }
   if (cResult[1] === _location) {
     if (cResult[2] === arg1) {
@@ -184,19 +184,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumUp
   class P {
     constructor() {
       tmp = closure_2;
-      obj = closure_0(closure_2[21]);
+      obj = closure_0(closure_2[22]);
       bestActiveInput = obj.getBestActiveInput();
       if (bestActiveInput != null) {
         closeCustomKeyboardResult = bestActiveInput.closeCustomKeyboard();
       }
-      obj3 = closure_1(tmp[22]);
+      obj3 = closure_1(tmp[23]);
       obj1 = { location: closure_1 };
       trackResult = obj3.track(AnalyticEvents.PREMIUM_PROMOTION_OPENED, obj1);
-      obj5 = closure_1(tmp[23]);
+      obj5 = closure_1(tmp[24]);
       hideAllActionSheetsResult = obj5.hideAllActionSheets();
       obj8 = { analyticsLocation: null, analyticsLocations: null, premiumFeatureCardOrder: null };
       obj9 = {};
-      tmp5 = closure_1(tmp[24]);
+      tmp5 = closure_1(tmp[25]);
       merged = Object.assign(closure_1);
       obj9.object = AnalyticsObjects.BUTTON_CTA;
       obj8.analyticsLocation = obj9;
@@ -385,8 +385,8 @@ let obj = {
         const obj8 = analyticsLocation(analyticsLocations[10]);
         flag = !obj8.canUsePremiumProfileCustomization(currentUser);
       } else if (constants3.APP_ICONS === initialUpsellKey) {
-        const obj7 = analyticsLocation(analyticsLocations[10]);
-        flag = !obj7.canUsePremiumAppIcons(currentUser);
+        const obj7 = initialUpsellKey(analyticsLocations[17]);
+        flag = !obj7.canUseAllAppIcons(currentUser);
       } else if (constants3.GLOBAL_STICKER === initialUpsellKey) {
         const obj6 = analyticsLocation(analyticsLocations[10]);
         flag = !obj6.canUseCustomStickersEverywhere(currentUser);
@@ -414,7 +414,7 @@ let obj = {
           importer() {
                 let imageSource;
                 let largestFileSize;
-                const promise = asyncRequire(9841, dependencyMap.paths);
+                const promise = asyncRequire(9863, dependencyMap.paths);
                 return promise.then((result) => {
                   let closure_0 = result.default;
                   return (arg0) => {

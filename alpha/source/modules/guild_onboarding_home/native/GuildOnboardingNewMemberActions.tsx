@@ -1,24 +1,24 @@
-// Module ID: 17933
-// Function ID: 17934
+// Module ID: 17977
+// Function ID: 17978
 // Name: GuildOnboardingNewMemberActions
-// Dependencies: [19, 17, 6710, 4821, 4881, 4843, 4901, 7310, 8287, 1087, 1395, 4887, 21, 4969, 587, 558, 576, 504, 5590, 1417, 13104, 5655, 4915, 5220, 1202, 12689, 1128, 13109, 17934, 6893, 1405, 17935, 2]
+// Dependencies: [19, 17, 6723, 4821, 4881, 4843, 4901, 7323, 8299, 1087, 1395, 4887, 21, 4969, 587, 558, 576, 504, 5602, 1417, 13127, 5667, 4915, 5232, 1202, 12708, 1128, 13132, 17978, 6906, 1405, 17979, 2]
 
-// Module 17933 (GuildOnboardingNewMemberActions)
+// Module 17977 (GuildOnboardingNewMemberActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 4887 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 13104 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 13127 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6710 */;
+import EmojiStore from "EmojiStore" /* 6723 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildMemberStore from "GuildMemberStore" /* 4881 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7310 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8287 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7323 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8299 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

@@ -1,9 +1,9 @@
-// Module ID: 12722
-// Function ID: 12723
+// Module ID: 12741
+// Function ID: 12742
 // Name: GuildSettingsModalMembersStore
 // Dependencies: [4881, 1087, 504, 584, 2]
 
-// Module 12722 (GuildSettingsModalMembersStore)
+// Module 12741 (GuildSettingsModalMembersStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;

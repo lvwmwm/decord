@@ -1,15 +1,15 @@
-// Module ID: 8726
-// Function ID: 8727
+// Module ID: 8744
+// Function ID: 8745
 // Name: UserProfileAvatar
-// Dependencies: [109, 19, 17, 8652, 7289, 21, 558, 576, 8712, 8727, 8659, 8730, 1128, 2]
+// Dependencies: [109, 19, 17, 8670, 7302, 21, 558, 576, 8730, 8745, 8677, 8748, 1128, 2]
 
-// Module 8726 (UserProfileAvatar)
+// Module 8744 (UserProfileAvatar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 7289 */;
-import Constants2 from "Constants" /* 8652 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8712 */;
-import openUserProfileAvatarMediaViewerDefault from "openUserProfileAvatarMediaViewer" /* 8730 */;
+import Constants from "Constants" /* 7302 */;
+import Constants2 from "Constants" /* 8670 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8730 */;
+import openUserProfileAvatarMediaViewerDefault from "openUserProfileAvatarMediaViewer" /* 8748 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -23,7 +23,7 @@ let c10;
 let closure_12;
 let tmp10;
 let unpackModuleId;
-const HeaderAvatarDefault = tmp10(8727);
+const HeaderAvatarDefault = tmp10(8745);
 let closure_3 = ["backgroundColor", "size", "ref"];
 let closure_4 = ["animate", "user", "guildId"];
 const View = react_native.View;

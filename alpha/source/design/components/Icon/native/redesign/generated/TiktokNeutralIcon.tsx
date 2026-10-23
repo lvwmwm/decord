@@ -1,14 +1,14 @@
-// Module ID: 13175
-// Function ID: 13176
+// Module ID: 13198
+// Function ID: 13199
 // Name: TiktokNeutralIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 13176, 5654, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 13199, 5666, 2]
 
-// Module 13175 (TiktokNeutralIcon)
+// Module 13198 (TiktokNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 5654 */;
-import AssetRegistry from "AssetRegistry" /* 13176 */;
+import BaseIconImage2 from "BaseIconImage" /* 5666 */;
+import AssetRegistry from "AssetRegistry" /* 13199 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TiktokNeut
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(5654).BaseIconImage;
+  const BaseIconImage = tmp(5666).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

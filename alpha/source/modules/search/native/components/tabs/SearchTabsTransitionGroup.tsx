@@ -1,15 +1,15 @@
-// Module ID: 18095
-// Function ID: 18096
+// Module ID: 18139
+// Function ID: 18140
 // Name: SearchTabsTransitionGroup
-// Dependencies: [19, 21, 558, 576, 4797, 11804, 5038, 5023, 5233, 5234, 13268, 2]
+// Dependencies: [19, 21, 558, 576, 4797, 11823, 5050, 5035, 5245, 5246, 13291, 2]
 
-// Module 18095 (SearchTabsTransitionGroup)
+// Module 18139 (SearchTabsTransitionGroup)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
-import spring from "spring" /* 5233 */;
-import springPresets from "springPresets" /* 5234 */;
-import Tabs2 from "Tabs" /* 11804 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5050 */;
+import spring from "spring" /* 5245 */;
+import springPresets from "springPresets" /* 5246 */;
+import Tabs2 from "Tabs" /* 11823 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 let set;
 
 let tmp;
-const native = tmp(5023);
+const native = tmp(5035);
 function getItemKey(items) {
   items = items.items;
   const mapped = items.map((id) => id.id);

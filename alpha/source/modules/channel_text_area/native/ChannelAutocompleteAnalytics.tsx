@@ -1,13 +1,13 @@
-// Module ID: 13228
-// Function ID: 13229
+// Module ID: 13251
+// Function ID: 13252
 // Name: ChannelAutocompleteAnalytics
-// Dependencies: [1087, 1267, 5697, 2]
+// Dependencies: [1087, 1267, 5709, 2]
 // Exports: iOSTrackAutocompleteOpen, iOSTrackAutocompleteSelect
 
-// Module 13228 (ChannelAutocompleteAnalytics)
+// Module 13251 (ChannelAutocompleteAnalytics)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5697 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5709 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

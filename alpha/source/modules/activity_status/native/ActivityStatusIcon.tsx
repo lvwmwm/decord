@@ -1,9 +1,9 @@
-// Module ID: 10617
-// Function ID: 10618
+// Module ID: 10639
+// Function ID: 10640
 // Name: ActivityStatusIcon
 // Dependencies: [109, 19, 21, 4969, 558, 576, 2]
 
-// Module 10617 (ActivityStatusIcon)
+// Module 10639 (ActivityStatusIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;

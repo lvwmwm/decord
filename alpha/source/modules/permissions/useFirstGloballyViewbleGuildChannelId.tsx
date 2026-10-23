@@ -1,9 +1,9 @@
-// Module ID: 17408
-// Function ID: 17409
+// Module ID: 17452
+// Function ID: 17453
 // Name: useFirstGloballyViewbleGuildChannelId
 // Dependencies: [4899, 1098, 558, 576, 4906, 504, 2]
 
-// Module 17408 (useFirstGloballyViewbleGuildChannelId)
+// Module 17452 (useFirstGloballyViewbleGuildChannelId)
 import Constants from "Constants" /* 1098 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4906 */;
 import GuildChannelStore from "GuildChannelStore" /* 4899 */;

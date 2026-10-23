@@ -1,21 +1,21 @@
-// Module ID: 13312
-// Function ID: 13313
+// Module ID: 13335
+// Function ID: 13336
 // Name: ChatInputGuardGuildMemberVerification
-// Dependencies: [19, 4970, 12472, 1087, 21, 4969, 558, 576, 6832, 4998, 13313, 1128, 5697, 6820, 13314, 6916, 6856, 504, 5214, 13315, 5655, 13291, 2]
+// Dependencies: [19, 4970, 12491, 1087, 21, 4969, 558, 576, 6845, 5003, 13336, 1128, 5709, 6833, 13337, 6929, 6869, 504, 5226, 13338, 5667, 13314, 2]
 
-// Module 13312 (ChatInputGuardGuildMemberVerification)
+// Module 13335 (ChatInputGuardGuildMemberVerification)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import intl5 from "intl" /* 1128 */;
-import LottieAnimationViewDefault from "LottieAnimationView" /* 5214 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5697 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6820 */;
-import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 6856 */;
-import ChatInputConstants from "ChatInputConstants" /* 12472 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 13291 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13313 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13314 */;
-import _mod13315 from "module_13315" /* 13315 */;
+import LottieAnimationViewDefault from "LottieAnimationView" /* 5226 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5709 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6833 */;
+import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 6869 */;
+import ChatInputConstants from "ChatInputConstants" /* 12491 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 13314 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13336 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13337 */;
+import _mod13338 from "module_13338" /* 13338 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -317,7 +317,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   renderAnimation = function renderAnimation() {
     LottieAnimationViewDefault;
-    return <tmp style={lottieAnimation.lottieAnimation} source={_mod13315} autoPlay={!stateFromStores} />;
+    return <tmp style={lottieAnimation.lottieAnimation} source={_mod13338} autoPlay={!stateFromStores} />;
   };
   cResult[12] = tmp4.lottieAnimation;
   cResult[13] = stateFromStores;
@@ -332,13 +332,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   guildId = guildId.guildId;
   const tmp = closure_7();
   const tmp2 = guildId;
-  let obj = guildId(6832);
+  let obj = guildId(6845);
   const currentUserGuildJoinRequest = obj.useCurrentUserGuildJoinRequest(guildId);
   let applicationStatus;
   if (currentUserGuildJoinRequest != null) {
     applicationStatus = currentUserGuildJoinRequest.applicationStatus;
   }
-  if (tmp2(4998).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
+  if (tmp2(5003).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
     tmp8 = AssetRegistryDefault;
     const intl3 = tmp2(1128).intl;
     stringResult = intl3.string(tmp2(1128).t.lk30cY);
@@ -350,9 +350,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const obj4 = { guildId, canWithdraw: false };
       const result = obj3.openMemberVerificationRejectedAlert(obj4);
     };
-  } else if (tmp2(4998).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
+  } else if (tmp2(5003).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
     tmp8 = AssetRegistryDefault2;
-    tmp7 = jsx(tmp2(6916).XSmallIcon, {});
+    tmp7 = jsx(tmp2(6929).XSmallIcon, {});
     const intl2 = tmp2(1128).intl;
     stringResult = intl2.string(tmp2(1128).t["5iLvSx"]);
     fn = function _() {
@@ -383,9 +383,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ChatInputGuardDefault;
   if (null != tmp8) {
     let obj2 = { style: tmp.noticeIcon, source: tmp8 };
-    tmp13Result = tmp13(tmp14(5655), obj2);
+    tmp13Result = tmp13(tmp14(5667), obj2);
   } else {
-    let obj3 = { style: tmp.lottieAnimation, source: tmp2(13315), autoPlay: !stateFromStores };
+    let obj3 = { style: tmp.lottieAnimation, source: tmp2(13338), autoPlay: !stateFromStores };
     const tmp14Result = LottieAnimationViewDefault;
     tmp13Result = tmp13(tmp14Result, obj3);
   }

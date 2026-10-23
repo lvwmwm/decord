@@ -1,15 +1,15 @@
-// Module ID: 17801
-// Function ID: 17802
+// Module ID: 17845
+// Function ID: 17846
 // Name: ForYouSuggestedFriendsSectionHeader
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 1128, 5220, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 1128, 5232, 2]
 
-// Module 17801 (ForYouSuggestedFriendsSectionHeader)
+// Module 17845 (ForYouSuggestedFriendsSectionHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5220 */;
+import Text_Text from "Text/Text" /* 5232 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

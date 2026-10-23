@@ -1,14 +1,14 @@
-// Module ID: 12294
-// Function ID: 12295
+// Module ID: 12313
+// Function ID: 12314
 // Name: ConjureLiveBehindTip
-// Dependencies: [19, 21, 558, 576, 11828, 1128, 3830, 12241, 12295, 9781, 12284, 2]
+// Dependencies: [19, 21, 558, 576, 11847, 1128, 3830, 12260, 12314, 9803, 12303, 2]
 
-// Module 12294 (ConjureLiveBehindTip)
+// Module 12313 (ConjureLiveBehindTip)
 import Fragment from "Fragment" /* 21 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import ConjurePublishSheetDefault from "ConjurePublishSheet" /* 12241 */;
-import conjureLiveBehindTip from "conjureLiveBehindTip" /* 12284 */;
-import ConjureTipHintDefault from "ConjureTipHint" /* 12295 */;
+import ConjurePublishSheetDefault from "ConjurePublishSheet" /* 12260 */;
+import conjureLiveBehindTip from "conjureLiveBehindTip" /* 12303 */;
+import ConjureTipHintDefault from "ConjureTipHint" /* 12314 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -22,7 +22,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function LiveBeh
   const cResult = obj.c(6);
   projectId = projectId.projectId;
   const onDismiss = projectId.onDismiss;
-  const context = react.useContext(projectId(11828).ConjurePublishActionContext);
+  const context = react.useContext(projectId(11847).ConjurePublishActionContext);
   if (cResult[0] === context) {
     let tmp5;
     if (cResult[1] === projectId) {
@@ -35,8 +35,8 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function LiveBeh
       }
       return tmp7;
     }
-    context(12295);
-    const tmp11 = <tmp10 icon={tmp(9781).UploadIcon} onDismiss={onDismiss}>{tmp5}</tmp10>;
+    context(12314);
+    const tmp11 = <tmp10 icon={tmp(9803).UploadIcon} onDismiss={onDismiss}>{tmp5}</tmp10>;
     cResult[3] = onDismiss;
     cResult[4] = tmp5;
     cResult[5] = tmp11;
@@ -59,7 +59,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function LiveBeh
   let closure_1;
   projectId = projectId.projectId;
   const onDismiss = projectId.onDismiss;
-  importDefault = react.useContext(projectId(11828).ConjurePublishActionContext);
+  importDefault = react.useContext(projectId(11847).ConjurePublishActionContext);
   const tmp = ConjureTipHintDefault;
   const intl = projectId(1128).intl;
   const obj2 = {
@@ -69,7 +69,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function LiveBeh
       }
     }
   };
-  return <tmp icon={projectId(9781).UploadIcon} onDismiss={onDismiss}>{intl.format(_modDef3830.fWfeZ8, obj2)}</tmp>;
+  return <tmp icon={projectId(9803).UploadIcon} onDismiss={onDismiss}>{intl.format(_modDef3830.fWfeZ8, obj2)}</tmp>;
 });
 let obj = {
   render(arg0, context) {

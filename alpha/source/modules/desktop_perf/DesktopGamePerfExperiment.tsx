@@ -1,15 +1,15 @@
-// Module ID: 5814
-// Function ID: 5815
+// Module ID: 5826
+// Function ID: 5827
 // Name: DesktopGamePerfExperiment
 // Dependencies: [1455, 1384, 2]
-// Exports: getDesktopGamePerfExperimentConfig, getIsFullscreenPopupOcclusionEnabled, getIsNativeSystemCpuTimesEnabled, getIsOverlayHiddenWavePausedEnabled, getIsOverlayOnlyAnimatesItselfEnabled
+// Exports: getDesktopGamePerfExperimentConfig, getIsFullscreenPopupOcclusionEnabled, getIsNativeSystemCpuTimesEnabled, getIsNotificationIconCpuCanvasEnabled, getIsOverlayHiddenWavePausedEnabled, getIsOverlayOnlyAnimatesItselfEnabled, getIsRenderOverlayWhileMinimizedEnabled
 
-// Module 5814 (DesktopGamePerfExperiment)
+// Module 5826 (DesktopGamePerfExperiment)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 
-let obj = { name: "2026-10-desktop-game-perf", kind: "user", defaultConfig: { nativeSystemCpuTimes: false, overlayOnlyAnimatesItself: false, fullscreenPopupOcclusion: false, overlayHiddenWavePaused: false }, variations: { 0: { nativeSystemCpuTimes: false, overlayOnlyAnimatesItself: false, fullscreenPopupOcclusion: false, overlayHiddenWavePaused: false }, 1: { nativeSystemCpuTimes: true, overlayOnlyAnimatesItself: true, fullscreenPopupOcclusion: true, overlayHiddenWavePaused: true } } };
+let obj = { name: "2026-10-desktop-game-perf", kind: "user", defaultConfig: { nativeSystemCpuTimes: false, overlayOnlyAnimatesItself: false, fullscreenPopupOcclusion: false, overlayHiddenWavePaused: false, renderOverlayWhileMinimized: false, notificationIconCpuCanvas: false }, variations: { 0: { nativeSystemCpuTimes: false, overlayOnlyAnimatesItself: false, fullscreenPopupOcclusion: false, overlayHiddenWavePaused: false, renderOverlayWhileMinimized: false, notificationIconCpuCanvas: false }, 1: { nativeSystemCpuTimes: true, overlayOnlyAnimatesItself: true, fullscreenPopupOcclusion: true, overlayHiddenWavePaused: true, renderOverlayWhileMinimized: true, notificationIconCpuCanvas: true } } };
 let closure_2 = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/desktop_perf/DesktopGamePerfExperiment.tsx");
 
@@ -58,4 +58,22 @@ export const getIsOverlayHiddenWavePausedEnabled = function getIsOverlayHiddenWa
   const obj = PlatformUtils;
   const overlayHiddenWavePaused = obj.isDesktop() && closure_2.getConfig({ location: "overlay_voice_user" }).overlayHiddenWavePaused;
   return overlayHiddenWavePaused;
+};
+export const getIsRenderOverlayWhileMinimizedEnabled = function getIsRenderOverlayWhileMinimizedEnabled(location) {
+  const obj = PlatformUtils;
+  let renderOverlayWhileMinimized = obj.isDesktop();
+  if (renderOverlayWhileMinimized) {
+    const tmpResult = PlatformUtils;
+    renderOverlayWhileMinimized = tmpResult.isWindows();
+  }
+  if (renderOverlayWhileMinimized) {
+    const obj2 = { location };
+    renderOverlayWhileMinimized = closure_2.getConfig(obj2).renderOverlayWhileMinimized;
+  }
+  return renderOverlayWhileMinimized;
+};
+export const getIsNotificationIconCpuCanvasEnabled = function getIsNotificationIconCpuCanvasEnabled() {
+  const obj = PlatformUtils;
+  const notificationIconCpuCanvas = obj.isDesktop() && closure_2.getConfig({ location: "icon_cropping_utils" }).notificationIconCpuCanvas;
+  return notificationIconCpuCanvas;
 };

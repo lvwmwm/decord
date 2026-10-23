@@ -13,7 +13,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import Constants from "Constants" /* 1950 */;
 import size from "module_2" /* 2 */;
 
-let f141947, f141948;
+let f142221, f142222;
 
 let c9;
 let metroImportAll;
@@ -42,7 +42,7 @@ class FormattedMessage {
       [first, tmp4] = self.getContext(arg0);
       const intlMessage2 = self.intlMessage;
       const formatResult = intlMessage2.format(first);
-      if (typeof f141947 === "function") {
+      if (typeof f142221 === "function") {
         const hasItem = formatResult.includes("\n\n");
         let text = formatResult;
         const tmp7 = !hasItem;
@@ -65,7 +65,7 @@ class FormattedMessage {
     let first;
     let tmp3;
     [first, tmp3] = this.getContext(arg0);
-    if (typeof f141948 === "function") {
+    if (typeof f142222 === "function") {
       const obj = { inline: false, context: first, unsafeContext: tmp3 };
       return closure_132_0(tmp4 + "\n\n", obj);
     } else {
@@ -116,7 +116,7 @@ export const setUpdateRules = function setUpdateRules(fn) {
   _modDef1951;
   const obj2 = _modDef1951;
   let closure_1 = reactFor(obj2.ruleOutput(rules, "react"));
-  f141947 = (arr, context, unsafeContext) => {
+  f142221 = (arr, context, unsafeContext) => {
     const hasItem = arr.includes("\n\n");
     let text = arr;
     const tmp2 = !hasItem;
@@ -131,7 +131,7 @@ export const setUpdateRules = function setUpdateRules(fn) {
   const rules2 = markdownRules.rules;
   const obj3 = _modDef1951;
   let closure_0 = obj3.parserFor(rules2);
-  f141948 = (arg0, context, unsafeContext) => {
+  f142222 = (arg0, context, unsafeContext) => {
     const obj = { inline: false, context, unsafeContext };
     return closure_0(arg0 + "\n\n", obj);
   };
@@ -141,7 +141,7 @@ export const getMessage = function getMessage(str, arg1) {
     return "";
   } else {
     let tmp5;
-    if (null == f141947) {
+    if (null == f142221) {
       const _default = updateRules.default;
       const rules = markdownRules.rules;
       let obj = _modDef1951;
@@ -150,7 +150,7 @@ export const getMessage = function getMessage(str, arg1) {
       _modDef1951;
       const obj2 = _modDef1951;
       let closure_1 = reactFor(obj2.ruleOutput(rules, "react"));
-      f141947 = (arr, context, unsafeContext) => {
+      f142221 = (arr, context, unsafeContext) => {
         const hasItem = arr.includes("\n\n");
         let text = arr;
         const tmp2 = !hasItem;
@@ -165,7 +165,7 @@ export const getMessage = function getMessage(str, arg1) {
       const rules2 = markdownRules.rules;
       const obj3 = _modDef1951;
       let closure_0 = obj3.parserFor(rules2);
-      f141948 = (arg0, context, unsafeContext) => {
+      f142222 = (arg0, context, unsafeContext) => {
         const obj = { inline: false, context, unsafeContext };
         return closure_0(arg0 + "\n\n", obj);
       };

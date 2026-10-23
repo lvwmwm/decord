@@ -1,17 +1,17 @@
-// Module ID: 15095
-// Function ID: 15096
+// Module ID: 15120
+// Function ID: 15121
 // Name: ShareScreen
-// Dependencies: [5, 32, 19, 17, 4825, 4821, 4901, 1087, 12843, 10593, 21, 4969, 587, 1128, 15096, 12844, 15097, 15098, 1267, 9694, 5693, 1384, 8827, 9643, 12879, 2002, 5896, 15099, 15100, 6918, 12854, 1630, 12855, 15101, 2]
+// Dependencies: [5, 32, 19, 17, 4825, 4821, 4901, 1087, 12862, 10615, 21, 4969, 587, 1128, 15121, 12863, 15122, 15123, 1267, 9716, 5705, 1384, 8850, 9666, 12898, 2002, 5908, 15124, 15125, 6931, 12873, 1630, 12874, 15126, 2]
 // Exports: default
 
-// Module 15095 (ShareScreen)
+// Module 15120 (ShareScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1128 */;
-import UserRowConstants from "UserRowConstants" /* 10593 */;
-import ForwardConstants from "ForwardConstants" /* 12843 */;
-import ShareAttachmentsDefault from "ShareAttachments" /* 15099 */;
-import ShareEmbedDefault from "ShareEmbed" /* 15100 */;
+import UserRowConstants from "UserRowConstants" /* 10615 */;
+import ForwardConstants from "ForwardConstants" /* 12862 */;
+import ShareAttachmentsDefault from "ShareAttachments" /* 15124 */;
+import ShareEmbedDefault from "ShareEmbed" /* 15125 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

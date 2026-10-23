@@ -1,10 +1,10 @@
-// Module ID: 12331
-// Function ID: 12332
+// Module ID: 12350
+// Function ID: 12351
 // Name: conjureSettingsSummary
-// Dependencies: [1128, 3830, 12328, 2]
+// Dependencies: [1128, 3830, 12347, 2]
 // Exports: conjureConnectedKeysSummary, conjureSettingsSummary
 
-// Module 12331 (conjureSettingsSummary)
+// Module 12350 (conjureSettingsSummary)
 import intl5 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import size from "module_2" /* 2 */;
@@ -93,7 +93,9 @@ export const conjureSettingsSummary = function conjureSettingsSummary(settingsRe
       } else {
         if ("role" !== type) {
           if ("user" !== type) {
-            stringResult = mapped.join(", ");
+            if ("game" !== type) {
+              stringResult = mapped.join(", ");
+            }
           }
         }
         const intl2 = tmp3(1128).intl;

@@ -1,27 +1,27 @@
-// Module ID: 6800
-// Function ID: 6801
+// Module ID: 6813
+// Function ID: 6814
 // Name: RecentMentionsStore
-// Dependencies: [4912, 502, 4821, 5996, 6756, 4911, 4995, 6689, 1392, 1087, 510, 5998, 6647, 6356, 12, 5708, 6801, 6802, 504, 584, 2]
+// Dependencies: [4912, 502, 4821, 6008, 6769, 4911, 5000, 6702, 1392, 1087, 510, 6010, 6660, 6369, 12, 5720, 6814, 6815, 504, 584, 2]
 
-// Module 6800 (RecentMentionsStore)
+// Module 6813 (RecentMentionsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import TimeUtils from "TimeUtils" /* 5708 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5998 */;
-import isMessageMentioned from "isMessageMentioned" /* 6356 */;
-import AgeGateUtils from "AgeGateUtils" /* 6647 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6801 */;
-import shouldRemoveSelfMentionDefault from "shouldRemoveSelfMention" /* 6802 */;
+import TimeUtils from "TimeUtils" /* 5720 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6010 */;
+import isMessageMentioned from "isMessageMentioned" /* 6369 */;
+import AgeGateUtils from "AgeGateUtils" /* 6660 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6814 */;
+import shouldRemoveSelfMentionDefault from "shouldRemoveSelfMention" /* 6815 */;
 import MessageRecord from "MessageRecord" /* 4912 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import MessageStore from "MessageStore" /* 5996 */;
-import ReadStateStore from "ReadStateStore" /* 6756 */;
+import MessageStore from "MessageStore" /* 6008 */;
+import ReadStateStore from "ReadStateStore" /* 6769 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6689 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5000 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6702 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import size_mod from "module_2" /* 2 */;
@@ -32,14 +32,14 @@ let closure_14;
 let closure_15;
 let closure_16;
 let map1;
-const f96472 = (getChannelId) => {
+const f96653 = (getChannelId) => {
   if (null == closure_1_19[getChannelId.getChannelId(getChannelId)]) {
     closure_1_19[getChannelId.getChannelId()] = 0;
   }
   const channelId = getChannelId.getChannelId();
   closure_1_19[channelId] = closure_1_19[channelId] + 1;
 };
-const f96473 = (getChannelId) => {
+const f96654 = (getChannelId) => {
   if (null != closure_1_19[getChannelId.getChannelId(getChannelId)]) {
     const _Math = Math;
     const channelId = getChannelId.getChannelId();
@@ -169,10 +169,10 @@ function deleteMessage(arg0) {
     arr2 = _modDef12;
     const tmp5 = importDefault;
     if (null != addedMessages) {
-      const item = addedMessages.forEach(f96472);
+      const item = addedMessages.forEach(f96653);
     }
     if (null != deletedMessages) {
-      const item1 = deletedMessages.forEach(f96473);
+      const item1 = deletedMessages.forEach(f96654);
     }
     const tmp5Result = tmp5(12);
     substr = tmp5Result.filter(substr, (id) => id.id !== id);
@@ -190,10 +190,10 @@ function handleMessageDelete(id) {
     arr = _modDef12;
     const tmp = importDefault;
     if (null != addedMessages) {
-      const item = addedMessages.forEach(f96472);
+      const item = addedMessages.forEach(f96653);
     }
     if (null != deletedMessages) {
-      const item1 = deletedMessages.forEach(f96473);
+      const item1 = deletedMessages.forEach(f96654);
     }
     const tmpResult = tmp(12);
     substr = tmpResult.filter(substr, (id) => id.id !== id);
@@ -252,10 +252,10 @@ function handleRelationshipUpdate() {
   ({ addedMessages, deletedMessages } = obj);
   arr = _modDef12;
   if (null != addedMessages) {
-    const item = addedMessages.forEach(f96472);
+    const item = addedMessages.forEach(f96653);
   }
   if (null != deletedMessages) {
-    const item1 = deletedMessages.forEach(f96473);
+    const item1 = deletedMessages.forEach(f96654);
   }
   substr = substr.filter((item) => !RelationshipStore.isBlockedOrIgnoredForMessage(item));
 }
@@ -276,10 +276,10 @@ function handleDeleteChannel(channel) {
   });
   ({ addedMessages, deletedMessages } = { deletedMessages: items });
   if (null != addedMessages) {
-    const item = addedMessages.forEach(f96472);
+    const item = addedMessages.forEach(f96653);
   }
   if (null != deletedMessages) {
-    const item1 = deletedMessages.forEach(f96473);
+    const item1 = deletedMessages.forEach(f96654);
   }
 }
 const RecentMentionsFilters = Constants.RecentMentionsFilters;
@@ -407,10 +407,10 @@ let obj2 = {
     const mapped = arr.map(messages, findOrCreateMessageRecord);
     ({ addedMessages, deletedMessages } = { addedMessages: mapped });
     if (null != addedMessages) {
-      const item = addedMessages.forEach(f96472);
+      const item = addedMessages.forEach(f96653);
     }
     if (null != deletedMessages) {
-      const item1 = deletedMessages.forEach(f96473);
+      const item1 = deletedMessages.forEach(f96654);
     }
     if (isAfter) {
       substr = substr.concat(mapped);
@@ -446,10 +446,10 @@ let obj2 = {
     ({ addedMessages, deletedMessages } = { deletedMessages: substr.slice(size) });
     ({ deletedMessages: substr.slice(size) });
     if (null != addedMessages) {
-      const item = addedMessages.forEach(f96472);
+      const item = addedMessages.forEach(f96653);
     }
     if (null != deletedMessages) {
-      const item1 = deletedMessages.forEach(f96473);
+      const item1 = deletedMessages.forEach(f96654);
     }
     let sum = size;
     if (size < substr.length) {
@@ -497,10 +497,10 @@ let obj2 = {
     });
     ({ addedMessages, deletedMessages } = { deletedMessages: items });
     if (null != addedMessages) {
-      const item = addedMessages.forEach(f96472);
+      const item = addedMessages.forEach(f96653);
     }
     if (null != deletedMessages) {
-      const item1 = deletedMessages.forEach(f96473);
+      const item1 = deletedMessages.forEach(f96654);
     }
   },
   MESSAGE_CREATE: function handleIncomingMessage(message) {
@@ -525,10 +525,10 @@ let obj2 = {
           items = [tmp3];
           ({ addedMessages, deletedMessages } = obj);
           if (null != addedMessages) {
-            const item = addedMessages.forEach(f96472);
+            const item = addedMessages.forEach(f96653);
           }
           if (null != deletedMessages) {
-            const item1 = deletedMessages.forEach(f96473);
+            const item1 = deletedMessages.forEach(f96654);
           }
         }
       }

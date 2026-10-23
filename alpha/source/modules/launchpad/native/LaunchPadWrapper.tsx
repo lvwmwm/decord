@@ -1,16 +1,16 @@
-// Module ID: 18594
-// Function ID: 18595
+// Module ID: 18638
+// Function ID: 18639
 // Name: LaunchPadWrapper
-// Dependencies: [32, 19, 17, 11177, 1087, 21, 4969, 587, 558, 576, 11696, 1123, 5136, 18595, 8739, 1267, 18592, 5198, 5958, 6870, 5038, 18596, 1128, 18598, 5925, 5954, 2]
+// Dependencies: [32, 19, 17, 11200, 1087, 21, 4969, 587, 558, 576, 11716, 1123, 5148, 18639, 8757, 1267, 18636, 5210, 5970, 6883, 5050, 18640, 1128, 18642, 5937, 5966, 2]
 
-// Module 18594 (LaunchPadWrapper)
+// Module 18638 (LaunchPadWrapper)
 import nativeDefault from "native" /* 587 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import HapticUtils from "HapticUtils" /* 5198 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11177 */;
-import RouteManagerDefault from "RouteManager" /* 11696 */;
-import LaunchPadPullTabCache from "LaunchPadPullTabCache" /* 18592 */;
+import HapticUtils from "HapticUtils" /* 5210 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11200 */;
+import RouteManagerDefault from "RouteManager" /* 11716 */;
+import LaunchPadPullTabCache from "LaunchPadPullTabCache" /* 18636 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -240,7 +240,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function LaunchPadW
               const tmp5 = closure_3;
               if (tmp5) {
                 const tmp2Result = HapticUtils;
-                const result1 = tmp2Result.triggerHapticFeedback(tmp2(5198).HapticFeedbackTypes.IMPACT_LIGHT);
+                const result1 = tmp2Result.triggerHapticFeedback(tmp2(5210).HapticFeedbackTypes.IMPACT_LIGHT);
               }
             }
           }
@@ -370,7 +370,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function LaunchPadW
         const tmp5 = closure_3;
         if (tmp5) {
           const tmp2Result = HapticUtils;
-          const result1 = tmp2Result.triggerHapticFeedback(tmp2(5198).HapticFeedbackTypes.IMPACT_LIGHT);
+          const result1 = tmp2Result.triggerHapticFeedback(tmp2(5210).HapticFeedbackTypes.IMPACT_LIGHT);
         }
       }
     }

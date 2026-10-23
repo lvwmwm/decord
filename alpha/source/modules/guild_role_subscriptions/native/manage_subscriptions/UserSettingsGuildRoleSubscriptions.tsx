@@ -1,16 +1,16 @@
-// Module ID: 16482
-// Function ID: 16483
+// Module ID: 16529
+// Function ID: 16530
 // Name: UserSettingsGuildRoleSubscriptions
-// Dependencies: [19, 17, 21, 4969, 558, 576, 5220, 1128, 1202, 16483, 16484, 16485, 16488, 16489, 2]
+// Dependencies: [19, 17, 21, 4969, 558, 576, 5232, 1128, 1202, 16530, 16531, 16532, 16535, 16536, 2]
 
-// Module 16482 (UserSettingsGuildRoleSubscriptions)
+// Module 16529 (UserSettingsGuildRoleSubscriptions)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import useRestorePurchasesDefault from "useRestorePurchases" /* 16483 */;
-import useActiveGuildSubscriptionsDefault from "useActiveGuildSubscriptions" /* 16484 */;
-import LoadingIndicatorDefault from "LoadingIndicator" /* 16488 */;
-import ManageSubscriptionCardDefault from "ManageSubscriptionCard" /* 16489 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import useRestorePurchasesDefault from "useRestorePurchases" /* 16530 */;
+import useActiveGuildSubscriptionsDefault from "useActiveGuildSubscriptions" /* 16531 */;
+import LoadingIndicatorDefault from "LoadingIndicator" /* 16535 */;
+import ManageSubscriptionCardDefault from "ManageSubscriptionCard" /* 16536 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -24,7 +24,7 @@ let hasOwnProperty;
 let metroRequire;
 let tmp;
 const native = tmp(1202);
-const GuildRoleSubscriptionsHooks = tmp(16485);
+const GuildRoleSubscriptionsHooks = tmp(16532);
 function renderSectionHeader(section) {
   let tmp = null;
   if (section.section.key === c7) {
@@ -49,7 +49,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRo
   const sectionHeader = tmp4.sectionHeader;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "eyebrow", color: "text-default", children: intl.string(intl3.t["KzCF/6"]) };
-    const Text = tmp(5220).Text;
+    const Text = tmp(5232).Text;
     intl = tmp(1128).intl;
     const tmp7 = hasOwnProperty(Text, obj2);
     cResult[0] = tmp7;

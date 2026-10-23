@@ -1,12 +1,12 @@
-// Module ID: 8149
-// Function ID: 8150
+// Module ID: 8161
+// Function ID: 8162
 // Name: ImageConversionDecision
-// Dependencies: [1384, 8150, 2]
+// Dependencies: [1384, 8162, 2]
 // Exports: isHeicUTI, isPhotoKitAsset, shouldConvertToJPG, shouldForceConvertToJPG
 
-// Module 8149 (ImageConversionDecision)
+// Module 8161 (ImageConversionDecision)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import IosImageTypesManagerDefault from "IosImageTypesManager" /* 8150 */;
+import IosImageTypesManagerDefault from "IosImageTypesManager" /* 8162 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/media_uploads/native/ImageConversionDecision.tsx");
@@ -91,7 +91,7 @@ export const shouldConvertToJPG = function shouldConvertToJPG(c0, c1, c2, c4, c7
             if (obj2.isExtensionAnimated(formatted)) {
               return false;
             } else {
-              const tmp14Result = tmp14(8150);
+              const tmp14Result = tmp14(8162);
               const supportedExtensions = tmp14Result.getSupportedExtensions();
               if (null !== supportedExtensions) {
                 if (supportedExtensions.has(formatted)) {

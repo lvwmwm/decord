@@ -1,14 +1,14 @@
-// Module ID: 18854
-// Function ID: 18855
+// Module ID: 18898
+// Function ID: 18899
 // Name: PushNotificationCacheManager
-// Dependencies: [13249, 1392, 5018, 7199, 10730, 2]
+// Dependencies: [13272, 1392, 5023, 7212, 10752, 2]
 
-// Module 18854 (PushNotificationCacheManager)
-import UserUtilsDefault from "UserUtils" /* 5018 */;
-import PushNotificationDefault from "PushNotification" /* 10730 */;
-import MultiAccountStore from "MultiAccountStore" /* 13249 */;
+// Module 18898 (PushNotificationCacheManager)
+import UserUtilsDefault from "UserUtils" /* 5023 */;
+import PushNotificationDefault from "PushNotification" /* 10752 */;
+import MultiAccountStore from "MultiAccountStore" /* 13272 */;
 import UserStore from "UserStore" /* 1392 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7199 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7212 */;
 import size from "module_2" /* 2 */;
 
 let currentUser, id, importDefault;

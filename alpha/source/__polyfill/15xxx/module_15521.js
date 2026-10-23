@@ -1,20 +1,17 @@
 // Module ID: 15521
 // Function ID: 15522
-// Dependencies: [15506]
+// Dependencies: [15520]
 
 // Module 15521
-import _mod15506 from "module_15506" /* 15506 */;
+import _mod15520 from "module_15520" /* 15520 */;
 
-let _window = 0;
-let closure_1 = Math.random();
-let closure_2 = _mod15506((1).toString);
 
-export default (arg0) => {
-  let _window;
-  let str = "";
-  if (undefined !== arg0) {
-    str = arg0;
+export default (arg0, value) => {
+  try {
+    const obj = { value, configurable: true, writable: true };
+    defineProperty(_mod15520, arg0, obj);
+  } catch (err) {
+    _mod15520[arg0] = value;
   }
-  _window = _window + 1;
-  return `Symbol(${str}` + ")_" + closure_2(_window + closure_1, 36);
+  return value;
 };

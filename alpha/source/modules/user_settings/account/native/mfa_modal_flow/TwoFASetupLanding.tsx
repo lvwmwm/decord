@@ -1,18 +1,18 @@
-// Module ID: 15988
-// Function ID: 15989
+// Module ID: 16021
+// Function ID: 16022
 // Name: TwoFASetupLanding
-// Dependencies: [19, 17, 21, 4969, 558, 576, 15989, 5655, 15990, 5220, 1128, 7206, 15985, 2]
+// Dependencies: [19, 17, 21, 4969, 558, 576, 16022, 5667, 16023, 5232, 1128, 7219, 16018, 2]
 
-// Module 15988 (TwoFASetupLanding)
+// Module 16021 (TwoFASetupLanding)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import FastImageDefault from "FastImage" /* 5655 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7206 */;
-import TwoFASetupModal from "TwoFASetupModal" /* 15985 */;
-import TwoFASetupStyles from "TwoFASetupStyles" /* 15989 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15990 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import FastImageDefault from "FastImage" /* 5667 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7219 */;
+import TwoFASetupModal from "TwoFASetupModal" /* 16018 */;
+import TwoFASetupStyles from "TwoFASetupStyles" /* 16022 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16023 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -50,7 +50,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetupLa
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl3.t["9E74Dx"]) };
-    const Heading = tmp(5220).Heading;
+    const Heading = tmp(5232).Heading;
     intl = tmp(1128).intl;
     const tmp13 = React3(Heading, obj4);
     cResult[2] = tmp13;
@@ -98,7 +98,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetupLa
         }
         const obj6 = { children: React3(View, obj7) };
         obj7 = { style: container, children: tmp20 };
-        const TwoFASetupModalScreen = tmp(15985).TwoFASetupModalScreen;
+        const TwoFASetupModalScreen = tmp(16018).TwoFASetupModalScreen;
         const tmp26 = React3(TwoFASetupModalScreen, obj6);
         cResult[13] = tmp4.container;
         cResult[14] = tmp20;

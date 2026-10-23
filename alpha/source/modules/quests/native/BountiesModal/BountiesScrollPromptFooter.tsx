@@ -1,22 +1,22 @@
-// Module ID: 16237
-// Function ID: 16238
+// Module ID: 16270
+// Function ID: 16271
 // Name: BountiesScrollPromptFooter
-// Dependencies: [109, 19, 17, 4970, 6695, 21, 4969, 587, 5192, 5195, 558, 576, 504, 1633, 5089, 5038, 16238, 16239, 9823, 2]
+// Dependencies: [109, 19, 17, 4970, 6708, 21, 4969, 587, 5204, 5207, 558, 576, 504, 1633, 5101, 5050, 16271, 16272, 9845, 2]
 
-// Module 16237 (BountiesScrollPromptFooter)
+// Module 16270 (BountiesScrollPromptFooter)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5038 */;
-import BountiesScrollGradientRive2 from "BountiesScrollGradientRive" /* 5089 */;
-import timing from "timing" /* 5192 */;
-import timingPresets from "timingPresets" /* 5195 */;
-import QuestConstants from "QuestConstants" /* 6695 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9823 */;
-import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 16238 */;
-import useVisibilityTransition from "useVisibilityTransition" /* 16239 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5050 */;
+import BountiesScrollGradientRive2 from "BountiesScrollGradientRive" /* 5101 */;
+import timing from "timing" /* 5204 */;
+import timingPresets from "timingPresets" /* 5207 */;
+import QuestConstants from "QuestConstants" /* 6708 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9845 */;
+import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 16271 */;
+import useVisibilityTransition from "useVisibilityTransition" /* 16272 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
@@ -254,7 +254,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
   items4 = [tmp.gradient, opacityStyle];
   const View2 = ReanimatedRexportDefault.View;
   str = "play";
-  BountiesScrollGradientRive = zIndex(5089).BountiesScrollGradientRive;
+  BountiesScrollGradientRive = zIndex(5101).BountiesScrollGradientRive;
   const tmp8 = closure_10;
   if (stateFromStores) {
     str = "halt";

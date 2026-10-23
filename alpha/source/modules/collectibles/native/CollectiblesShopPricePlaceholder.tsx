@@ -1,13 +1,13 @@
-// Module ID: 9438
-// Function ID: 9439
+// Module ID: 9461
+// Function ID: 9462
 // Name: CollectiblesShopPricePlaceholder
-// Dependencies: [19, 21, 4969, 587, 558, 576, 5038, 5192, 2]
+// Dependencies: [19, 21, 4969, 587, 558, 576, 5050, 5204, 2]
 
-// Module 9438 (CollectiblesShopPricePlaceholder)
+// Module 9461 (CollectiblesShopPricePlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
-import timing from "timing" /* 5192 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5050 */;
+import timing from "timing" /* 5204 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -32,7 +32,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibl
   const cResult = obj.c(7);
   style = style.style;
   const tmp4 = closure_5();
-  const obj2 = sharedValue(5038);
+  const obj2 = sharedValue(5050);
   sharedValue = obj2.useSharedValue(0.3);
   if (cResult[0] !== sharedValue) {
     const fn = function n() {
@@ -53,7 +53,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibl
     tmp7 = cResult[2];
   }
   const effect = react.useEffect(tmp6, tmp7);
-  const tmpResult = tmp(5038);
+  const tmpResult = tmp(5050);
   class C {
     constructor() {
       const obj = { opacity: sharedValue.get() };
@@ -84,7 +84,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibl
   let sharedValue;
   style = style.style;
   const tmp = closure_5();
-  let obj = sharedValue(5038);
+  let obj = sharedValue(5050);
   sharedValue = obj.useSharedValue(0.3);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
@@ -101,7 +101,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibl
   fn.__closure = { opacity: sharedValue };
   fn.__workletHash = 5265836727291;
   fn.__initData = __initData2;
-  const obj2 = sharedValue(5038);
+  const obj2 = sharedValue(5050);
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const items1 = [tmp.skeletonContainer, style, animatedStyle];
   return jsx(ReanimatedRexportDefault.View, { style: items1 });

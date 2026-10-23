@@ -1,27 +1,27 @@
-// Module ID: 11739
-// Function ID: 11740
+// Module ID: 11759
+// Function ID: 11760
 // Name: conjureProjectActions
-// Dependencies: [5, 10675, 10691, 6758, 4828, 11710, 5648, 5900, 1128, 3830, 11740, 11494, 11742, 7036, 9116, 10847, 10700, 10671, 5670, 11744, 11746, 5677, 5664, 7270, 5980, 10389, 5649, 5668, 7473, 11748, 11749, 7046, 11753, 5675, 10697, 2]
+// Dependencies: [5, 10697, 10713, 6771, 4828, 11730, 5660, 5912, 1128, 3830, 11760, 11514, 11762, 7049, 9139, 10870, 10722, 10693, 5682, 11764, 11766, 5689, 5676, 7283, 5992, 10411, 5661, 5680, 7486, 11768, 11769, 7059, 11773, 5687, 10719, 2]
 // Exports: conjureProjectActions
 
-// Module 11739 (conjureProjectActions)
+// Module 11759 (conjureProjectActions)
 import intl15 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import ChannelConstants from "ChannelConstants" /* 4828 */;
-import ToastUtils from "ToastUtils" /* 5648 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5649 */;
-import CopyIcon from "CopyIcon" /* 5668 */;
-import AlertModal from "AlertModal" /* 5900 */;
-import ChannelUtils from "ChannelUtils" /* 5980 */;
-import ClipboardUtils from "ClipboardUtils" /* 7270 */;
-import conjureProjectMute from "conjureProjectMute" /* 10700 */;
-import ConjureArchivePicker from "ConjureArchivePicker" /* 11710 */;
-import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 11748 */;
-import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 11753 */;
+import ToastUtils from "ToastUtils" /* 5660 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5661 */;
+import CopyIcon from "CopyIcon" /* 5680 */;
+import AlertModal from "AlertModal" /* 5912 */;
+import ChannelUtils from "ChannelUtils" /* 5992 */;
+import ClipboardUtils from "ClipboardUtils" /* 7283 */;
+import conjureProjectMute from "conjureProjectMute" /* 10722 */;
+import ConjureArchivePicker from "ConjureArchivePicker" /* 11730 */;
+import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 11768 */;
+import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 11773 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10675 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10691 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6758 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10697 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10713 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6771 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

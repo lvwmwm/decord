@@ -1,9 +1,9 @@
-// Module ID: 17601
-// Function ID: 17602
+// Module ID: 17645
+// Function ID: 17646
 // Name: useIsGuildEligibleForRoleSubscriptionsUpsell
-// Dependencies: [4839, 4843, 1392, 1087, 558, 576, 504, 7346, 2]
+// Dependencies: [4839, 4843, 1392, 1087, 558, 576, 504, 7359, 2]
 
-// Module 17601 (useIsGuildEligibleForRoleSubscriptionsUpsell)
+// Module 17645 (useIsGuildEligibleForRoleSubscriptionsUpsell)
 import Constants from "Constants" /* 1087 */;
 import GuildRecord from "GuildRecord" /* 4839 */;
 import GuildStore from "GuildStore" /* 4843 */;
@@ -219,7 +219,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsGuild
   if (tmp6) {
     tmp6 = isGuildOwner(stateFromStores, tmp5);
   }
-  const tmpResult = tmp(7346);
+  const tmpResult = tmp(7359);
   const isUserInCreatorMonetizationEligibleCountry = tmpResult.useIsUserInCreatorMonetizationEligibleCountry();
   if (tmp6) {
     let flag;

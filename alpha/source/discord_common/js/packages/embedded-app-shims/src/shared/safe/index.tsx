@@ -1,11 +1,11 @@
-// Module ID: 11456
-// Function ID: 11457
+// Module ID: 11476
+// Function ID: 11477
 // Name: Safe
-// Dependencies: [11457, 2]
+// Dependencies: [11477, 2]
 
-// Module 11456 (Safe)
+// Module 11476 (Safe)
 import "passThrough";
-import passThrough_mod from "passThrough" /* 11457 */;
+import passThrough_mod from "passThrough" /* 11477 */;
 import size from "module_2" /* 2 */;
 
 let passThrough;

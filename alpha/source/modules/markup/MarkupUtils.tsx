@@ -1,13 +1,14 @@
-// Module ID: 5691
-// Function ID: 5692
+// Module ID: 5703
+// Function ID: 5704
 // Name: MarkupUtils
-// Dependencies: [5692, 5967, 12, 5968, 8330, 2]
+// Dependencies: [5704, 5979, 12, 5980, 15060, 8342, 2]
 
-// Module 5691 (MarkupUtils)
-import MarkupReactRules from "MarkupReactRules" /* 5692 */;
-import combineMarkupRulesDefault from "combineMarkupRules" /* 5967 */;
-import MarkupRulesDefault from "MarkupRules" /* 5968 */;
-import MarkupParserAll from "MarkupParser" /* 8330 */;
+// Module 5703 (MarkupUtils)
+import MarkupReactRules from "MarkupReactRules" /* 5704 */;
+import combineMarkupRulesDefault from "combineMarkupRules" /* 5979 */;
+import MarkupRulesDefault from "MarkupRules" /* 5980 */;
+import MarkupParserAll from "MarkupParser" /* 8342 */;
+import reactParserFor from "reactParserFor" /* 15060 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -170,63 +171,63 @@ let closure_19 = module_12.once(() => {
 let obj2 = { text: MarkupRulesDefault.RULES.text };
 module_12 = module_12_mod;
 let closure_20 = module_12.once(() => {
-  const obj = MarkupParserAll;
-  return obj.reactParserFor(closure_6());
+  const obj = reactParserFor;
+  return obj.default(closure_6());
 });
 module_12 = module_12_mod;
 let closure_21 = module_12.once(() => {
-  const obj = MarkupParserAll;
-  return obj.reactParserFor(closure_7());
+  const obj = reactParserFor;
+  return obj.default(closure_7());
 });
 module_12 = module_12_mod;
 let closure_22 = module_12.once(() => {
-  const obj = MarkupParserAll;
-  return obj.reactParserFor(closure_9());
+  const obj = reactParserFor;
+  return obj.default(closure_9());
 });
 module_12 = module_12_mod;
 let closure_23 = module_12.once(() => {
-  const obj = MarkupParserAll;
-  return obj.reactParserFor(closure_10());
+  const obj = reactParserFor;
+  return obj.default(closure_10());
 });
 module_12 = module_12_mod;
 let closure_24 = module_12.once(() => {
-  const obj = MarkupParserAll;
-  return obj.reactParserFor(closure_11());
+  const obj = reactParserFor;
+  return obj.default(closure_11());
 });
 module_12 = module_12_mod;
 let closure_25 = module_12.once(() => {
-  const obj = MarkupParserAll;
-  return obj.reactParserFor(closure_12());
+  const obj = reactParserFor;
+  return obj.default(closure_12());
 });
 module_12 = module_12_mod;
 let closure_26 = module_12.once(() => {
-  const obj = MarkupParserAll;
-  return obj.reactParserFor(closure_13());
+  const obj = reactParserFor;
+  return obj.default(closure_13());
 });
 module_12 = module_12_mod;
 let closure_27 = module_12.once(() => {
-  const obj = MarkupParserAll;
-  return obj.reactParserFor(closure_14());
+  const obj = reactParserFor;
+  return obj.default(closure_14());
 });
 module_12 = module_12_mod;
 let closure_28 = module_12.once(() => {
-  const obj = MarkupParserAll;
-  return obj.reactParserFor(closure_15());
+  const obj = reactParserFor;
+  return obj.default(closure_15());
 });
 module_12 = module_12_mod;
 let closure_29 = module_12.once(() => {
-  const obj = MarkupParserAll;
-  return obj.reactParserFor(closure_16());
+  const obj = reactParserFor;
+  return obj.default(closure_16());
 });
 module_12 = module_12_mod;
 let closure_30 = module_12.once(() => {
-  const obj = MarkupParserAll;
-  return obj.reactParserFor(closure_18());
+  const obj = reactParserFor;
+  return obj.default(closure_18());
 });
 module_12 = module_12_mod;
 let closure_31 = module_12.once(() => {
-  const obj = MarkupParserAll;
-  return obj.reactParserFor(closure_8());
+  const obj = reactParserFor;
+  return obj.default(closure_8());
 });
 module_12 = module_12_mod;
 let closure_32 = module_12.once(() => {
@@ -269,7 +270,7 @@ let obj3 = {
   defaultReactRuleOptions,
   lockscreenWidgetMessageRules: obj2,
   astParserFor: MarkupParserAll.astParserFor,
-  reactParserFor: MarkupParserAll.reactParserFor,
+  reactParserFor: reactParserFor.default,
   parse() {
     const items = [...arguments];
     const tmp = closure_20();

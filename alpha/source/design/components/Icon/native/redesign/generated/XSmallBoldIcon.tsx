@@ -1,14 +1,14 @@
-// Module ID: 10998
-// Function ID: 10999
+// Module ID: 11021
+// Function ID: 11022
 // Name: XSmallBoldIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 7282, 5654, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 7295, 5666, 2]
 
-// Module 10998 (XSmallBoldIcon)
+// Module 11021 (XSmallBoldIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 5654 */;
-import AssetRegistry from "AssetRegistry" /* 7282 */;
+import BaseIconImage2 from "BaseIconImage" /* 5666 */;
+import AssetRegistry from "AssetRegistry" /* 7295 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function XSmallBold
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(5654).BaseIconImage;
+  const BaseIconImage = tmp(5666).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

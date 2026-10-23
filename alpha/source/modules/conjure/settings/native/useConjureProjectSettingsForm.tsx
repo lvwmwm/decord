@@ -1,21 +1,21 @@
-// Module ID: 11755
-// Function ID: 11756
+// Module ID: 11775
+// Function ID: 11776
 // Name: useConjureProjectSettingsForm
-// Dependencies: [5, 32, 19, 17, 4875, 6758, 1087, 21, 4969, 587, 558, 576, 504, 6759, 5196, 1128, 3830, 5220, 7233, 8909, 7130, 6972, 6885, 7283, 11756, 11759, 11761, 10712, 7330, 11762, 11763, 10697, 11764, 6888, 11768, 2]
+// Dependencies: [5, 32, 19, 17, 4875, 6771, 1087, 21, 4969, 587, 558, 576, 504, 6772, 5208, 1128, 3830, 5232, 7246, 8932, 7143, 6985, 6898, 7296, 11776, 11779, 11781, 10734, 7343, 11782, 11783, 10719, 11784, 6901, 11788, 2]
 // Exports: default
 
-// Module 11755 (useConjureProjectSettingsForm)
+// Module 11775 (useConjureProjectSettingsForm)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5196 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6759 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5208 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6772 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildRoleStore_mod from "GuildRoleStore" /* 4875 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6758 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6771 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

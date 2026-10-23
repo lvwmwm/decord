@@ -1,19 +1,19 @@
-// Module ID: 17899
-// Function ID: 17900
+// Module ID: 17943
+// Function ID: 17944
 // Name: StandaloneChannelScreen
-// Dependencies: [109, 19, 17, 4821, 9677, 1087, 4828, 21, 4969, 587, 558, 576, 1506, 1633, 9685, 4846, 504, 1128, 9622, 5136, 9738, 9678, 13967, 9688, 5583, 17900, 11179, 5979, 7309, 5191, 5139, 13979, 6792, 9693, 1202, 10602, 17905, 17922, 17940, 11701, 17958, 17962, 10864, 17976, 17977, 12989, 2]
+// Dependencies: [109, 19, 17, 4821, 9699, 1087, 4828, 21, 4969, 587, 558, 576, 1506, 1633, 9707, 4846, 504, 1128, 9645, 5148, 9760, 9700, 13990, 9710, 5595, 17944, 11202, 5991, 7322, 5203, 5151, 14002, 6805, 9715, 1202, 10624, 17949, 17966, 17984, 11721, 18002, 18006, 10887, 18020, 18021, 13012, 2]
 
-// Module 17899 (StandaloneChannelScreen)
+// Module 17943 (StandaloneChannelScreen)
 import nativeDefault from "native" /* 587 */;
 import ChannelConstants from "ChannelConstants" /* 4828 */;
 import FavoritesUtils from "FavoritesUtils" /* 4846 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5136 */;
-import PressableNavigatorBackIcon2 from "PressableNavigatorBackIcon" /* 9678 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5148 */;
+import PressableNavigatorBackIcon2 from "PressableNavigatorBackIcon" /* 9700 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import react_native_mod from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import react_native_mod2 from "react-native" /* 9677 */;
+import react_native_mod2 from "react-native" /* 9699 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -1164,20 +1164,20 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   dependencyMap = tmp;
   const obj = channelId(1506);
   navigation = obj.useNavigation();
-  const obj2 = channelId(11179);
+  const obj2 = channelId(11202);
   const isSwipeToMemberListEnabled = obj2.useIsSwipeToMemberListEnabled();
-  const needSubscriptionToAccess = frame(5979)(channelId).needSubscriptionToAccess;
+  const needSubscriptionToAccess = frame(5991)(channelId).needSubscriptionToAccess;
   let tmp7 = guildId;
-  const useCanSeeOnboardingHome = channelId(7309).useCanSeeOnboardingHome;
-  channelId(7309);
+  const useCanSeeOnboardingHome = channelId(7322).useCanSeeOnboardingHome;
+  channelId(7322);
   if (guildId == null) {
     tmp7 = closure_10;
   }
   const canSeeOnboardingHome = useCanSeeOnboardingHome(tmp7);
   const ref = isChatBesideChannelList.useRef(null);
-  const tmp10 = frame(5191)() === constants2.ONYX;
+  const tmp10 = frame(5203)() === constants2.ONYX;
   closure_4 = tmp10;
-  const tmp11 = frame(5139)();
+  const tmp11 = frame(5151)();
   isChatBesideChannelList = tmp11.isChatBesideChannelList;
   const isChatLockedOpen = tmp11.isChatLockedOpen;
   let items = [frame, tmp10, isChatBesideChannelList, , ];
@@ -1207,7 +1207,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     return items;
   }, items1);
   let tmp15 = !isChatLockedOpen;
-  const tmp2Result = channelId(13979);
+  const tmp2Result = channelId(14002);
   const isForumChannelSearchActive = tmp2Result.useIsForumChannelSearchActive(channelId);
   if (isChatLockedOpen) {
     tmp15 = isNavigationScreen;
@@ -1227,14 +1227,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     return channel;
   }, items3);
   let type;
-  const tmp2Result5 = channelId(6792);
+  const tmp2Result5 = channelId(6805);
   const dMAppChannelApplicationId = tmp2Result5.useDMAppChannelApplicationId(stateFromStores);
   if (stateFromStores != null) {
     type = stateFromStores.type;
   }
   let tmp21 = null;
-  const useDismissChannelSecondaryViewChatOnFrameDeepLink = tmp2(9693).useDismissChannelSecondaryViewChatOnFrameDeepLink;
-  channelId(9693);
+  const useDismissChannelSecondaryViewChatOnFrameDeepLink = tmp2(9715).useDismissChannelSecondaryViewChatOnFrameDeepLink;
+  channelId(9715);
   if (type === constants.GUILD_APP || null != dMAppChannelApplicationId) {
     tmp21 = channelId;
   }
@@ -1252,25 +1252,25 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             const tmp41 = closure_15;
             if (canSeeOnboardingHome) {
               const obj6 = { guildId };
-              tmp43Result = tmp43(tmp5(17922), obj6);
+              tmp43Result = tmp43(tmp5(17966), obj6);
             }
             items4[1] = closure_14(closure_6, obj5);
             return tmp41(closure_6, obj3);
           } else if (channelId === StaticChannelRoute.MEMBER_SAFETY) {
             const obj7 = { style: tmp.container, children: items5 };
-            items5 = [closure_14(frame(10602), { absolute: true }), ];
+            items5 = [closure_14(frame(10624), { absolute: true }), ];
             const obj8 = { guildId };
-            items5[1] = closure_14(frame(17940), obj8);
+            items5[1] = closure_14(frame(17984), obj8);
             return closure_15(closure_6, obj7);
           } else if (channelId === StaticChannelRoute.CONJURE) {
             const obj9 = { guildId, inline: true };
-            return closure_14(frame(11701), obj9);
+            return closure_14(frame(11721), obj9);
           } else if (showCreateThread) {
             const obj10 = { style: memo1, children: items6 };
             const obj11 = { channelId, frame, guildId, isNavigationScreen, screenIndex, showCreateThread, isBackEnabled: tmp15, measureNavigationTTI: false };
             items6 = [closure_14(closure_18, obj11), ];
             const obj12 = { channelId, screenIndex };
-            items6[1] = closure_14(channelId(17958).CreateThreadView, obj12);
+            items6[1] = closure_14(channelId(18002).CreateThreadView, obj12);
             return closure_15(closure_6, obj10);
           } else {
             let tmp25Result;
@@ -1279,7 +1279,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                 const obj13 = { style: memo, children: items7 };
                 const obj14 = { channelId, frame, guildId, isNavigationScreen, screenIndex, showCreateThread, isBackEnabled: tmp15, measureNavigationTTI: false };
                 items7 = [closure_14(closure_18, obj14), ];
-                const obj15 = { style: memo1, children: closure_14(frame(17962), obj16) };
+                const obj15 = { style: memo1, children: closure_14(frame(18006), obj16) };
                 obj16 = { channel: stateFromStores };
                 items7[1] = closure_14(closure_6, obj15);
                 return closure_15(closure_6, obj13);
@@ -1288,19 +1288,19 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             const obj17 = { children: items8 };
             const obj18 = { channelId, frame, guildId, isNavigationScreen, screenIndex, showCreateThread, isBackEnabled: tmp15, measureNavigationTTI: true };
             items8 = [closure_14(closure_18, obj18), ];
-            const obj19 = { name: "chat_container", tracking: "include", style: memo1, children: closure_14(frame(10864), obj20) };
-            const NavTTIView = tmp2(17900).NavTTIView;
+            const obj19 = { name: "chat_container", tracking: "include", style: memo1, children: closure_14(frame(10887), obj20) };
+            const NavTTIView = tmp2(17944).NavTTIView;
             obj20 = { guildId, channelId, isActive, chatInputRef: ref, screenIndex };
             items8[1] = closure_14(NavTTIView, obj19);
             const tmp27 = closure_15(closure_16, obj17);
             if (isSwipeToMemberListEnabled) {
               const obj21 = { style: memo, channelId, isNavigationTTIVisible, screenIndex, isBackEnabled: tmp15, children: tmp27 };
-              tmp25Result = tmp25(tmp5(17976), obj21);
+              tmp25Result = tmp25(tmp5(18020), obj21);
             } else {
               const obj22 = {
                 name: "channel_screen",
                 navigationKey: channelId,
-                definition: channelId(12989).CHANNEL_NAVIGATION_TTI,
+                definition: channelId(13012).CHANNEL_NAVIGATION_TTI,
                 visibilityMode: "prerendered",
                 isVisible: isNavigationTTIVisible,
                 descendantTracking: "included",
@@ -1314,7 +1314,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                 style: memo,
                 children: tmp27
               };
-              const NavTTISurfaceProvider = tmp2(17977).NavTTISurfaceProvider;
+              const NavTTISurfaceProvider = tmp2(18021).NavTTISurfaceProvider;
               tmp25Result = tmp25(NavTTISurfaceProvider, obj22);
             }
             return tmp25Result;
@@ -1325,11 +1325,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const obj24 = { channelId, frame, guildId, isNavigationScreen, screenIndex, showCreateThread, isBackEnabled: tmp15, measureNavigationTTI: false };
       items9 = [closure_14(closure_18, obj24), ];
       const obj25 = { style: memo1, children: items10 };
-      items10 = [closure_14(frame(10602), { absolute: true }), ];
+      items10 = [closure_14(frame(10624), { absolute: true }), ];
       const obj26 = { guildId, gatedChannelId: tmp51 };
       tmp51 = undefined;
       const tmp48 = closure_14;
-      const tmp5Result = frame(17905);
+      const tmp5Result = frame(17949);
       if (needSubscriptionToAccess) {
         tmp51 = channelId;
       }

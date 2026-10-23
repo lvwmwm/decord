@@ -1,9 +1,9 @@
-// Module ID: 10063
-// Function ID: 10064
+// Module ID: 10085
+// Function ID: 10086
 // Name: SendMessageOptionsStore
 // Dependencies: [4974, 504, 584, 2]
 
-// Module 10063 (SendMessageOptionsStore)
+// Module 10085 (SendMessageOptionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import MessageConstants from "MessageConstants" /* 4974 */;

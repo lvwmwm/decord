@@ -1,17 +1,17 @@
-// Module ID: 9340
-// Function ID: 9341
+// Module ID: 9363
+// Function ID: 9364
 // Name: WishlistNUXAddedItemActionSheet
-// Dependencies: [32, 19, 17, 1392, 8652, 21, 4969, 587, 558, 576, 504, 1995, 5196, 8648, 7263, 9341, 9342, 5220, 1128, 5230, 6681, 5251, 2]
+// Dependencies: [32, 19, 17, 1392, 8670, 21, 4969, 587, 558, 576, 504, 1995, 5208, 8666, 7276, 9364, 9365, 5232, 1128, 5242, 6694, 5263, 2]
 
-// Module 9340 (WishlistNUXAddedItemActionSheet)
+// Module 9363 (WishlistNUXAddedItemActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7263 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8648 */;
-import Constants from "Constants" /* 8652 */;
-import SKUPreview from "SKUPreview" /* 9341 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7276 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8666 */;
+import Constants from "Constants" /* 8670 */;
+import SKUPreview from "SKUPreview" /* 9364 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -194,8 +194,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistNUXA
     }
     const obj5 = { renderPreview: tmp18 };
     cResult[13] = tmp18;
-    cResult[14] = closure_8(obj4(9342), obj5);
-    const tmp21 = closure_8(obj4(9342), obj5);
+    cResult[14] = closure_8(obj4(9365), obj5);
+    const tmp21 = closure_8(obj4(9365), obj5);
   } else {
     class L {
       constructor() {
@@ -221,7 +221,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistNUXA
       }
     }
     const obj6 = { variant: "heading-lg/extrabold", color: "text-strong", accessibilityRole: "header", children: intl.string(tmp(1128).t["3T2jbf"]) };
-    const Text = tmp(5220).Text;
+    const Text = tmp(5232).Text;
     intl = tmp(1128).intl;
     const tmp23 = closure_8(Text, obj6);
     cResult[15] = tmp23;
@@ -278,8 +278,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistNUXA
     }
     const obj8 = { variant: "text-md/normal", color: "text-default", style: subtitle, children: tmp24 };
     cResult[17] = tmp4.subtitle;
-    cResult[18] = closure_8(tmp(5220).Text, obj8);
-    const tmp27 = closure_8(tmp(5220).Text, obj8);
+    cResult[18] = closure_8(tmp(5232).Text, obj8);
+    const tmp27 = closure_8(tmp(5232).Text, obj8);
   } else {
     class L {
       constructor() {
@@ -318,7 +318,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistNUXA
         }
       }
       const obj9 = { text: intl2.string(tmp(1128).t.tM4PUv), onPress: tmp16, size: "lg", variant: "primary", grow: true };
-      const Button = tmp(5230).Button;
+      const Button = tmp(5242).Button;
       intl2 = tmp(1128).intl;
       const tmp31 = closure_8(Button, obj9);
       cResult[22] = tmp31;
@@ -375,9 +375,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistNUXA
       }
       const obj10 = { direction: "horizontal", children: items2 };
       items2 = [tmp30, ];
-      const ButtonGroup = tmp(6681).ButtonGroup;
+      const ButtonGroup = tmp(6694).ButtonGroup;
       const obj12 = { text: tmp32, onPress: tmp17, variant: "secondary", size: "lg", grow: true };
-      items2[1] = closure_8(tmp(5230).Button, obj12);
+      items2[1] = closure_8(tmp(5242).Button, obj12);
       cResult[24] = tmp17;
       cResult[25] = closure_9(ButtonGroup, obj10);
       const tmp36 = closure_9(ButtonGroup, obj10);
@@ -408,7 +408,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistNUXA
     const obj13 = { children: closure_9(View, obj14) };
     obj14 = { style: container, children: items3 };
     items3 = [tmp19, tmp28, tmp34];
-    BottomSheet = tmp(5251).BottomSheet;
+    BottomSheet = tmp(5263).BottomSheet;
     cResult[26] = tmp4.container;
     cResult[27] = tmp28;
     cResult[28] = tmp34;

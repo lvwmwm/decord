@@ -1,14 +1,14 @@
-// Module ID: 13803
-// Function ID: 13804
+// Module ID: 13826
+// Function ID: 13827
 // Name: useInappropriateConversationsTiers
-// Dependencies: [1392, 10670, 558, 576, 10906, 504, 10905, 2]
+// Dependencies: [1392, 10692, 558, 576, 10929, 504, 10928, 2]
 
-// Module 13803 (useInappropriateConversationsTiers)
+// Module 13826 (useInappropriateConversationsTiers)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10670 */;
-import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 10905 */;
-import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 10906 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10692 */;
+import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 10928 */;
+import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 10929 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

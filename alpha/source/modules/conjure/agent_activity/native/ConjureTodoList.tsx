@@ -1,19 +1,19 @@
-// Module ID: 12391
-// Function ID: 12392
+// Module ID: 12410
+// Function ID: 12411
 // Name: ConjureTodoList
-// Dependencies: [19, 17, 21, 4969, 587, 1128, 3830, 558, 576, 12276, 12297, 5220, 6886, 12261, 12392, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 1128, 3830, 558, 576, 12295, 12316, 5232, 6899, 12280, 12411, 2]
 
-// Module 12391 (ConjureTodoList)
+// Module 12410 (ConjureTodoList)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl9 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import FormCheckbox from "FormCheckbox" /* 6886 */;
-import ConjureTodoState from "ConjureTodoState" /* 12261 */;
-import ConjureTodoAgents from "ConjureTodoAgents" /* 12276 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12297 */;
-import ConjureNativeCollapsibleSectionDefault from "ConjureNativeCollapsibleSection" /* 12392 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import FormCheckbox from "FormCheckbox" /* 6899 */;
+import ConjureTodoState from "ConjureTodoState" /* 12280 */;
+import ConjureTodoAgents from "ConjureTodoAgents" /* 12295 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12316 */;
+import ConjureNativeCollapsibleSectionDefault from "ConjureNativeCollapsibleSection" /* 12411 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -94,7 +94,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function TodoAge
                   let tmp18 = null;
                   if (tmp6 > 0) {
                     let obj2 = { variant: "text-xs/medium", color: "text-muted", accessibilityLabel: intl.formatToPlainString(items1(3830).SPGdDc, obj3), children: "+" + tmp6 };
-                    const Text = tmp(5220).Text;
+                    const Text = tmp(5232).Text;
                     intl = tmp(1128).intl;
                     obj3 = { count: tmp6 };
                     const _HermesInternal = HermesInternal;
@@ -217,7 +217,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function TodoAge
     const tmp11 = closure_5;
     if (overflow > 0) {
       let obj3 = { variant: "text-xs/medium", color: "text-muted", accessibilityLabel: intl.formatToPlainString(items(3830).SPGdDc, obj4), children: "+" + overflow };
-      const Text = tmp2(5220).Text;
+      const Text = tmp2(5232).Text;
       intl = tmp2(1128).intl;
       const _HermesInternal = HermesInternal;
       obj4 = { count: overflow };
@@ -401,8 +401,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function TodoMa
     const intl5 = intl9.intl;
     stringResult1 = intl5.string(_modDef3830.sPGeWi);
   }
-  obj = { accessible: true, accessibilityRole: "image", accessibilityLabel: stringResult1, children: metroRequire(tmp21(6886).FormCheckbox, { checked: "completed" === status }) };
-  ({ accessible: true, accessibilityRole: "image", accessibilityLabel: stringResult1, children: metroRequire(tmp21(6886).FormCheckbox, { checked: "completed" === status }) });
+  obj = { accessible: true, accessibilityRole: "image", accessibilityLabel: stringResult1, children: metroRequire(tmp21(6899).FormCheckbox, { checked: "completed" === status }) };
+  ({ accessible: true, accessibilityRole: "image", accessibilityLabel: stringResult1, children: metroRequire(tmp21(6899).FormCheckbox, { checked: "completed" === status }) });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureTodoList(arg0) {
@@ -738,7 +738,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureTodoL
                           }
                           tmp49[2] = tmp8.text;
                           tmp49[3] = provisional;
-                          items1[1] = closure_6(tmp(5220).Text, tmp49);
+                          items1[1] = closure_6(tmp(5232).Text, tmp49);
                           tmp44 = closure_7(closure_5, obj4);
                         }
                       }
@@ -917,7 +917,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureTodoL
           }
         }
         const obj5 = { accessibilityLiveRegion: str4, accessibilityLabel: tmp11, children: tmp10 };
-        const tmp31 = closure_6(tmp(12392).ConjureNativeCollapsibleMeta, obj5);
+        const tmp31 = closure_6(tmp(12411).ConjureNativeCollapsibleMeta, obj5);
         cResult[13] = tmp10;
         cResult[14] = tmp11;
         cResult[15] = str4;
@@ -927,7 +927,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureTodoL
     }
   }
   const forResult = Symbol.for("react.early_return_sentinel");
-  let tmpResult = tmp(12261);
+  let tmpResult = tmp(12280);
   ({ completed, total } = tmpResult.todoProgress(todos));
   tmpResult.todoProgress(todos);
   if (cResult[8] !== agents) {
@@ -942,7 +942,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureTodoL
     tmp16 = cResult[9];
   }
   if (cResult[10] !== tmp16) {
-    const tmpResult2 = tmp(12276);
+    const tmpResult2 = tmp(12295);
     const groupAgentsByTodoResult = tmpResult2.groupAgentsByTodo(tmp16);
     cResult[10] = tmp16;
     cResult[11] = groupAgentsByTodoResult;
@@ -1062,7 +1062,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureTodoL
   const onToggleExpanded = announceProgress.onToggleExpanded;
   let tmp = closure_8();
   dependencyMap = tmp;
-  let obj = agents(12261);
+  let obj = agents(12280);
   ({ completed, total } = obj.todoProgress(todos));
   let items = [agents];
   obj.todoProgress(todos);
@@ -1085,10 +1085,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureTodoL
   let tmp9 = closure_6;
   let obj2 = { title: intl3.string(flag2(3830).RtzECX), meta: tmp9(ConjureNativeCollapsibleMeta, { accessibilityLiveRegion: str, accessibilityLabel: formatToPlainStringResult1, children: formatToPlainStringResult }), showHeader: total > 0, superseded: flag3, expanded: flag4, onToggleExpanded, showLabel: intl4.string(tmp6(3830).RKyN9q), hideLabel: intl5.string(tmp6(3830).xydHoj), children: closure_7(closure_5, obj3) };
   formatToPlainStringResult1 = intl2.formatToPlainString(flag2(3830)["7tzwKB"], { completed, total });
-  const tmp10 = flag2(12392);
+  const tmp10 = flag2(12411);
   intl3 = tmp2(1128).intl;
   str = "none";
-  ConjureNativeCollapsibleMeta = tmp2(12392).ConjureNativeCollapsibleMeta;
+  ConjureNativeCollapsibleMeta = tmp2(12411).ConjureNativeCollapsibleMeta;
   if (flag) {
     str = "none";
     if (!flag3) {
@@ -1142,7 +1142,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureTodoL
       let obj4 = { style: tmp.row, children: items2 };
       items2 = [tmp9(closure_10, { status: "pending" }), ];
       const obj5 = { variant: "text-sm/normal", color: "text-muted", style: tmp.text, children: provisional };
-      items2[1] = tmp9(agents(5220).Text, obj5);
+      items2[1] = tmp9(agents(5232).Text, obj5);
       tmp11Result = tmp11(tmp12, obj4);
     }
   }

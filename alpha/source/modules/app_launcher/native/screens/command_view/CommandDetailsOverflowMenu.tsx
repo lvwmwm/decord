@@ -1,13 +1,13 @@
-// Module ID: 12100
-// Function ID: 12101
+// Module ID: 12119
+// Function ID: 12120
 // Name: CommandDetailsOverflowMenu
-// Dependencies: [109, 19, 21, 558, 576, 4797, 1128, 7270, 5648, 10389, 7944, 9115, 9738, 2]
+// Dependencies: [109, 19, 21, 558, 576, 4797, 1128, 7283, 5660, 10411, 7957, 9138, 9760, 2]
 
-// Module 12100 (CommandDetailsOverflowMenu)
+// Module 12119 (CommandDetailsOverflowMenu)
 import Fragment from "Fragment" /* 21 */;
-import ToastUtils from "ToastUtils" /* 5648 */;
-import ClipboardUtils from "ClipboardUtils" /* 7270 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9115 */;
+import ToastUtils from "ToastUtils" /* 5660 */;
+import ClipboardUtils from "ClipboardUtils" /* 7283 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9138 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -45,7 +45,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandDet
                   const obj2 = ToastUtils;
                   obj2.presentIdCopied();
                 },
-          IconComponent: tmp(10389).IdIcon
+          IconComponent: tmp(10411).IdIcon
         };
         const items = [obj2];
         cResult[1] = commandId;
@@ -70,7 +70,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandDet
         tmp8 = cResult[3];
       }
       if (cResult[4] !== tmp7) {
-        const tmp11 = jsx(tmp(9738).ContextMenu, { items: tmp7, children: tmp8 });
+        const tmp11 = jsx(tmp(9760).ContextMenu, { items: tmp7, children: tmp8 });
         cResult[4] = tmp7;
         cResult[5] = tmp11;
         tmp9 = tmp11;
@@ -95,11 +95,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandDet
               const obj2 = ToastUtils;
               obj2.presentIdCopied();
             },
-        IconComponent: commandId(10389).IdIcon
+        IconComponent: commandId(10411).IdIcon
       };
       intl = tmp(1128).intl;
       const items = [obj];
-      return jsx(commandId(9738).ContextMenu, {
+      return jsx(commandId(9760).ContextMenu, {
         items,
         children(ref) {
               ref = ref.ref;

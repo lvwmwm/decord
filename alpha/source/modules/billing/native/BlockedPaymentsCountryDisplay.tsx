@@ -1,9 +1,9 @@
-// Module ID: 11014
-// Function ID: 11015
+// Module ID: 11037
+// Function ID: 11038
 // Name: BlockedPaymentsCountryDisplay
-// Dependencies: [19, 17, 1087, 21, 4969, 587, 558, 576, 5191, 1128, 1202, 2067, 4976, 11015, 11016, 5655, 2]
+// Dependencies: [19, 17, 1087, 21, 4969, 587, 558, 576, 5203, 1128, 1202, 2067, 4976, 11038, 11039, 5667, 2]
 
-// Module 11014 (BlockedPaymentsCountryDisplay)
+// Module 11037 (BlockedPaymentsCountryDisplay)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,8 +12,8 @@ import intl3 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
 import shared from "shared" /* 4976 */;
-import useThemeDefault from "useTheme" /* 5191 */;
-import FastImageDefault from "FastImage" /* 5655 */;
+import useThemeDefault from "useTheme" /* 5203 */;
+import FastImageDefault from "FastImage" /* 5667 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -79,9 +79,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedPayme
   }
   const tmpResult = shared;
   if (tmpResult.isThemeDark(tmp6)) {
-    tmp5Result2 = tmp5(11015);
+    tmp5Result2 = tmp5(11038);
   } else {
-    tmp5Result2 = tmp5(11016);
+    tmp5Result2 = tmp5(11039);
   }
   if (cResult[4] === tmp4.image) {
     let tmp17;
@@ -142,9 +142,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedPayme
   const tmp6 = View;
   const tmp7 = hasOwnProperty;
   if (obj7.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(11015);
+    tmp2Result = tmp2(11038);
   } else {
-    tmp2Result = tmp2(11016);
+    tmp2Result = tmp2(11039);
   }
   items[2] = tmp7(tmp8, obj6);
   return tmp5(tmp6, obj);

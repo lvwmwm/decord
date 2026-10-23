@@ -6,6 +6,11 @@
 // Module 5452 (react-native)
 import react_native from "react-native" /* 17 */;
 
+let obj2;
 const StyleSheet = react_native.StyleSheet;
+const obj = { container: obj2 };
+const create = StyleSheet.create;
+obj2 = { pointerEvents: "box-none" };
+const merged = Object.assign(StyleSheet.absoluteFillObject);
 
-export const styles = StyleSheet.create({ container: { position: "absolute", top: 0, left: 0, right: 0, zIndex: 9999, pointerEvents: "box-none" } });
+export const styles = create(obj);

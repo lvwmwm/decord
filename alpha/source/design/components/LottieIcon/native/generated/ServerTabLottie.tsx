@@ -1,13 +1,13 @@
-// Module ID: 15199
-// Function ID: 15200
+// Module ID: 15224
+// Function ID: 15225
 // Name: ServerTabLottie
-// Dependencies: [109, 19, 21, 558, 576, 15200, 11548, 2]
+// Dependencies: [109, 19, 21, 558, 576, 15225, 11568, 2]
 
-// Module 15199 (ServerTabLottie)
+// Module 15224 (ServerTabLottie)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import LottieIcon2 from "LottieIcon" /* 11548 */;
-import AssetRegistry from "AssetRegistry" /* 15200 */;
+import LottieIcon2 from "LottieIcon" /* 11568 */;
+import AssetRegistry from "AssetRegistry" /* 15225 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -48,7 +48,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ServerTabL
     }
     return tmp11;
   }
-  const LottieIcon = tmp(11548).LottieIcon;
+  const LottieIcon = tmp(11568).LottieIcon;
   const merged = Object.assign(tmp4);
   const tmp13 = <LottieIcon dotLottie={tmp9} animation="all" ref={tmp5} layers={layers} markers={items} />;
   cResult[4] = tmp4;

@@ -1,11 +1,11 @@
-// Module ID: 13693
-// Function ID: 13694
+// Module ID: 13716
+// Function ID: 13717
 // Name: InAppNotificationConstants
-// Dependencies: [587, 5038, 2]
+// Dependencies: [587, 5050, 2]
 
-// Module 13693 (InAppNotificationConstants)
+// Module 13716 (InAppNotificationConstants)
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5050 */;
 import size from "module_2" /* 2 */;
 
 let Easing;

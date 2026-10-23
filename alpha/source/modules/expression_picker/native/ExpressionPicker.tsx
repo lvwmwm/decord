@@ -1,16 +1,16 @@
-// Module ID: 10103
-// Function ID: 10104
+// Module ID: 10125
+// Function ID: 10126
 // Name: ExpressionPicker
-// Dependencies: [19, 17, 1243, 1087, 1395, 21, 4969, 587, 558, 576, 10104, 9808, 1503, 1631, 8876, 5697, 9833, 10105, 5253, 9122, 10106, 10107, 10130, 2]
+// Dependencies: [19, 17, 1243, 1087, 1395, 21, 4969, 587, 558, 576, 10126, 9830, 1503, 1631, 8899, 5709, 9855, 10127, 5265, 9145, 10128, 10129, 10152, 2]
 
-// Module 10103 (ExpressionPicker)
+// Module 10125 (ExpressionPicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5697 */;
-import TopEmojisUtils from "TopEmojisUtils" /* 9808 */;
-import trackOnEmojiPickerOpenedDefault from "trackOnEmojiPickerOpened" /* 9833 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5709 */;
+import TopEmojisUtils from "TopEmojisUtils" /* 9830 */;
+import trackOnEmojiPickerOpenedDefault from "trackOnEmojiPickerOpened" /* 9855 */;
 import react from "react" /* 19 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1243 */;
 import Fragment from "Fragment" /* 21 */;
@@ -78,7 +78,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     if (cResult[1] === visibleTabs) {
       tmp6 = cResult[2];
     }
-    const tmp8 = expressionPickerViewType(10104)(tmp6);
+    const tmp8 = expressionPickerViewType(10126)(tmp6);
     ({ expressionPickerSelectedIndex, expressionPickerViewType } = tmp8);
     const prop = tmp8.expressionPickerTabStrings;
     if (cResult[3] !== channel) {
@@ -357,7 +357,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           }
         }
       }
-      const tmp28 = expressionPickerViewType(10105)(tmp26);
+      const tmp28 = expressionPickerViewType(10127)(tmp26);
       const tmpResult2 = require("useIsScreenReaderEnabled");
       const isScreenReaderEnabled = tmpResult2.useIsScreenReaderEnabled();
       if (cResult[20] === tmp28) {
@@ -805,7 +805,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                   }
                 }
                 let obj4 = { bottomSheetIndex, bottomSheetRef, channel, onPressEmoji, onBackspace, inPortalKeyboard, suggestedEmojis };
-                tmp46 = closure_9(expressionPickerViewType(10106), obj4);
+                tmp46 = closure_9(expressionPickerViewType(10128), obj4);
               } else {
                 class Z {
                   constructor() {

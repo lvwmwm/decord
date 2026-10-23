@@ -1,20 +1,20 @@
-// Module ID: 14008
-// Function ID: 14009
+// Module ID: 14032
+// Function ID: 14033
 // Name: ApplicationEducation
-// Dependencies: [19, 17, 1087, 21, 4969, 587, 558, 576, 9612, 8802, 1128, 5652, 14009, 9592, 7473, 5220, 14011, 2]
+// Dependencies: [19, 17, 1087, 21, 4969, 587, 558, 576, 9635, 8825, 1128, 5664, 14033, 9615, 7486, 5232, 14035, 2]
 
-// Module 14008 (ApplicationEducation)
+// Module 14032 (ApplicationEducation)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import FriendsIcon from "FriendsIcon" /* 5652 */;
-import SettingsIcon from "SettingsIcon" /* 7473 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8802 */;
-import GameControllerIcon from "GameControllerIcon" /* 9592 */;
-import useIsSocialLayerParentApplicationDefault from "useIsSocialLayerParentApplication" /* 9612 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 14009 */;
-import AuthorizeFormSeparator from "AuthorizeFormSeparator" /* 14011 */;
+import FriendsIcon from "FriendsIcon" /* 5664 */;
+import SettingsIcon from "SettingsIcon" /* 7486 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8825 */;
+import GameControllerIcon from "GameControllerIcon" /* 9615 */;
+import useIsSocialLayerParentApplicationDefault from "useIsSocialLayerParentApplication" /* 9635 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 14033 */;
+import AuthorizeFormSeparator from "AuthorizeFormSeparator" /* 14035 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -26,7 +26,7 @@ let metroImportDefault;
 let metroRequire;
 let size;
 let tmp;
-const Text_Text = tmp(5220);
+const Text_Text = tmp(5232);
 const View = react_native.View;
 const MAX_FRIENDS = Constants.MAX_FRIENDS;
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: metroImportDefault } = Fragment);
@@ -286,7 +286,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationE
         tmp44 = null;
         if (arr2.length > 0) {
           const obj15 = { variant: "text-sm/normal", color: "text-default", children: arr2 };
-          tmp44 = hasOwnProperty(tmp(5220).Text, obj15);
+          tmp44 = hasOwnProperty(tmp(5232).Text, obj15);
         }
       }
       cResult[34] = arr2;
@@ -456,7 +456,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationE
       tmp26 = null;
       if (arr2.length > 0) {
         const obj15 = { variant: "text-sm/normal", color: "text-default", children: arr2 };
-        tmp26 = hasOwnProperty(tmp4(5220).Text, obj15);
+        tmp26 = hasOwnProperty(tmp4(5232).Text, obj15);
       }
     }
     const obj16 = { children: items2 };

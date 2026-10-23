@@ -1,17 +1,17 @@
-// Module ID: 12841
-// Function ID: 12842
+// Module ID: 12860
+// Function ID: 12861
 // Name: showSearchableDestinationListModal
-// Dependencies: [5145, 6657, 1384, 7023, 2]
+// Dependencies: [5157, 6670, 1384, 7036, 2]
 // Exports: default
 
-// Module 12841 (showSearchableDestinationListModal)
+// Module 12860 (showSearchableDestinationListModal)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import ChatInputUtils from "ChatInputUtils" /* 5145 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6657 */;
+import ChatInputUtils from "ChatInputUtils" /* 5157 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6670 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useIsWindowLarge = tmp(7023);
+const useIsWindowLarge = tmp(7036);
 const result = size.fileFinishedImporting("modules/share/native/showSearchableDestinationListModal.tsx");
 
 export default function showSearchableDestinationListModal(promise, merged, c3) {

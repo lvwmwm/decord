@@ -1,15 +1,15 @@
-// Module ID: 11027
-// Function ID: 11028
+// Module ID: 11050
+// Function ID: 11051
 // Name: InfoBox
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5672, 6997, 5220, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5684, 7010, 5232, 2]
 
-// Module 11027 (InfoBox)
+// Module 11050 (InfoBox)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 5672 */;
-import CircleErrorIcon2 from "CircleErrorIcon" /* 6997 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 5684 */;
+import CircleErrorIcon2 from "CircleErrorIcon" /* 7010 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -94,7 +94,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InfoBox(arg0
   ({ infoBox: arr2[0], infoBoxWarning: arr2[1] } = tmp5);
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     obj4 = { color: nativeDefault.colors.TEXT_LINK };
-    const CircleInformationIcon = tmp(5672).CircleInformationIcon;
+    const CircleInformationIcon = tmp(5684).CircleInformationIcon;
     const tmp13 = React3(CircleInformationIcon, obj4);
     cResult[7] = tmp13;
     tmp10 = tmp13;
@@ -106,7 +106,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InfoBox(arg0
     obj5[obj4.INFO] = tmp10;
     const WARNING = tmp9.WARNING;
     const obj6 = { color: nativeDefault.colors.ICON_FEEDBACK_WARNING };
-    const CircleErrorIcon = tmp(6997).CircleErrorIcon;
+    const CircleErrorIcon = tmp(7010).CircleErrorIcon;
     obj5[WARNING] = React3(CircleErrorIcon, obj6);
     cResult[8] = obj5;
     tmp14 = obj5;

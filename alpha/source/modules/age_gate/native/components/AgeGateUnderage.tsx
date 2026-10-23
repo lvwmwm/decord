@@ -1,17 +1,17 @@
-// Module ID: 17323
-// Function ID: 17324
+// Module ID: 17367
+// Function ID: 17368
 // Name: AgeGateUnderage
-// Dependencies: [19, 17, 1087, 21, 4969, 587, 558, 576, 7022, 1505, 6909, 6915, 1128, 7053, 7056, 7887, 7052, 2067, 5220, 5230, 2]
+// Dependencies: [19, 17, 1087, 21, 4969, 587, 558, 576, 7035, 1505, 6922, 6928, 1128, 7066, 7069, 7900, 7065, 2067, 5232, 5242, 2]
 
-// Module 17323 (AgeGateUnderage)
+// Module 17367 (AgeGateUnderage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
-import NavigatorHeader from "NavigatorHeader" /* 6909 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7022 */;
-import AuthHeaderDefault from "AuthHeader" /* 7052 */;
-import AuthNavbarPlaceholderDefault from "AuthNavbarPlaceholder" /* 7056 */;
+import NavigatorHeader from "NavigatorHeader" /* 6922 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7035 */;
+import AuthHeaderDefault from "AuthHeader" /* 7065 */;
+import AuthNavbarPlaceholderDefault from "AuthNavbarPlaceholder" /* 7069 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -85,7 +85,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeGateUnder
         } else {
           tmp15 = cResult[7];
         }
-        const tmpResult2 = onClose(6915);
+        const tmpResult2 = onClose(6928);
         tmpResult2.useNavigatorBackPressHandler(tmp15);
         if (cResult[8] !== (undefined !== existingUser && existingUser)) {
           let stringResult;
@@ -106,7 +106,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeGateUnder
         if (cResult[10] !== tmp8) {
           let tmp20 = null;
           if (!tmp8) {
-            tmp20 = closure_6(tmp7(7053), {});
+            tmp20 = closure_6(tmp7(7066), {});
           }
           cResult[10] = tmp8;
           cResult[11] = tmp20;
@@ -117,7 +117,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeGateUnder
         const _Symbol = Symbol;
         if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
           const tmp26 = closure_6(AuthNavbarPlaceholderDefault, {});
-          const tmp27 = closure_6(onClose(7887).ShieldSpotIllustration, {});
+          const tmp27 = closure_6(onClose(7900).ShieldSpotIllustration, {});
           cResult[12] = tmp27;
           cResult[13] = tmp26;
           tmp24 = tmp26;
@@ -179,12 +179,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeGateUnder
               if (undefined !== existingUser && existingUser) {
                 const obj3 = { children: items1 };
                 const obj4 = { style: tmp9.body, variant: "text-md/medium", color: "interactive-text-default", children: intl4.format(onClose(1128).t["3axQdB"], { days: 30 }) };
-                const Text = tmp(5220).Text;
+                const Text = tmp(5232).Text;
                 intl4 = tmp(1128).intl;
                 items1 = [closure_6(Text, obj4), ];
                 const obj5 = { style: tmp9.buttonWrapper, children: closure_6(Button, obj6) };
                 obj6 = { onPress: onClose, text: intl5.string(onClose(1128).t.JhDw5o), grow: true };
-                Button = tmp(5230).Button;
+                Button = tmp(5242).Button;
                 intl5 = tmp(1128).intl;
                 items1[1] = closure_6(View, obj5);
                 tmp40 = closure_8(closure_7, obj3);
@@ -197,7 +197,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeGateUnder
               tmp39 = tmp40;
             }
             const obj7 = { style: tmp9.body, variant: "text-md/medium", color: "interactive-text-default", children: tmp31 };
-            const tmp38 = closure_6(onClose(5220).Text, obj7);
+            const tmp38 = closure_6(onClose(5232).Text, obj7);
             cResult[20] = tmp9.body;
             cResult[21] = tmp31;
             cResult[22] = tmp38;

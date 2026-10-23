@@ -1,107 +1,72 @@
 // Module ID: 7961
 // Function ID: 7962
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7955, 7962, 7969, 7970, 7971]
+// Dependencies: [7962, 7963, 8066, 8067, 8069, 8070, 7984]
 
 // Module 7961
-import Fragment from "Fragment" /* 21 */;
-import extractProps from "extractProps" /* 7962 */;
-import extractText from "extractText" /* 7969 */;
-import multiplyMatricesDefault from "multiplyMatrices" /* 7971 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import react from "react" /* 19 */;
+import _mod7962 from "module_7962" /* 7962 */;
+import Circle from "Circle" /* 7963 */;
+import multiplyMatricesDefault from "multiplyMatrices" /* 7984 */;
+import showErrorCSS from "showErrorCSS" /* 8066 */;
+import SvgAst from "SvgAst" /* 8067 */;
+import _mod8069 from "module_8069" /* 8069 */;
+import RNSVGCircle from "RNSVGCircle" /* 8070 */;
 
-const extractPropsDefault = extractProps;
-let root;
+const CircleDefault = Circle;
 
-let tmp4;
-const _modDef7970 = tmp4(7970);
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
+for (const key10013 in _mod7962) {
+  exports[key10013] = _mod7962[key10013];
+  continue;
 }
-const jsx = Fragment.jsx;
-class G {
-  constructor() {
-    let constructResult;
-    const self = this;
-    const items = [...arguments];
-    let closure_0;
-    let tmp = _classCallCheck(this, G);
-    const items1 = [...items];
-    const obj = _getPrototypeOf(G);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = _possibleConstructorReturn;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items1);
-    }
-    const tmp3Result = tmp3(self, constructResult);
-    closure_0 = tmp3Result;
-    tmp3Result.setNativeProps = (matrix) => {
-      const tmp = !matrix.matrix && closure_2_1(closure_2_2[7])(matrix);
-      if (tmp) {
-        matrix.matrix = tmp;
-      }
-      root = root.root;
-      if (root != null) {
-        root.setNativeProps(matrix);
-      }
-    };
-    return tmp3Result;
-  }
+for (const key10017 in Circle) {
+  exports[key10017] = Circle[key10017];
+  continue;
 }
-_inherits(G, multiplyMatricesDefault);
-const entry = {
-  key: "render",
-  value: function render() {
-    const self = this;
-    const props = this.props;
-    const obj = extractProps;
-    const propsAndStylesResult = obj.propsAndStyles(props);
-    const tmp5 = extractPropsDefault(propsAndStylesResult, this);
-    const obj2 = extractText;
-    const extractFontResult = obj2.extractFont(propsAndStylesResult);
-    if (typeof hasProps === "function") {
-      const keys = Object.keys();
-      if (keys !== undefined) {
-        let flag = true;
-        if (flag) {
-          tmp5.font = extractFontResult;
-        }
-        _modDef7970;
-        const merged = Object.assign(tmp5);
-        return <tmp4Result ref={function ref(arg0) {
-          return self.refMethod(arg0);
-        }}>{props.children}</tmp4Result>;
-      }
-      flag = false;
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  }
-};
-let items = [entry];
-const importDefaultResultResult = _createClass(G, items);
-importDefaultResultResult.displayName = "G";
-function hasProps(arg0) {
+const RNSVGCircle_export = RNSVGCircle.RNSVGCircle;
+const SvgAst_export = SvgAst.SvgAst;
 
-}
-
-export default importDefaultResultResult;
+export const inlineStyles = showErrorCSS.inlineStyles;
+export const loadLocalRawResource = showErrorCSS.loadLocalRawResource;
+export const LocalSvg = showErrorCSS.LocalSvg;
+export const SvgCss = showErrorCSS.SvgCss;
+export const SvgCssUri = showErrorCSS.SvgCssUri;
+export const SvgWithCss = showErrorCSS.SvgWithCss;
+export const SvgWithCssUri = showErrorCSS.SvgWithCssUri;
+export const WithLocalSvg = showErrorCSS.WithLocalSvg;
+export const camelCase = SvgAst.camelCase;
+export const fetchText = _mod8069.fetchText;
+export const parse = SvgAst.parse;
+export { RNSVGCircle_export as RNSVGCircle };
+export const RNSVGClipPath = RNSVGCircle.RNSVGClipPath;
+export const RNSVGDefs = RNSVGCircle.RNSVGDefs;
+export const RNSVGEllipse = RNSVGCircle.RNSVGEllipse;
+export const RNSVGFeColorMatrix = RNSVGCircle.RNSVGFeColorMatrix;
+export const RNSVGFeComposite = RNSVGCircle.RNSVGFeComposite;
+export const RNSVGFeGaussianBlur = RNSVGCircle.RNSVGFeGaussianBlur;
+export const RNSVGFeMerge = RNSVGCircle.RNSVGFeMerge;
+export const RNSVGFeOffset = RNSVGCircle.RNSVGFeOffset;
+export const RNSVGFilter = RNSVGCircle.RNSVGFilter;
+export const RNSVGForeignObject = RNSVGCircle.RNSVGForeignObject;
+export const RNSVGGroup = RNSVGCircle.RNSVGGroup;
+export const RNSVGImage = RNSVGCircle.RNSVGImage;
+export const RNSVGLine = RNSVGCircle.RNSVGLine;
+export const RNSVGLinearGradient = RNSVGCircle.RNSVGLinearGradient;
+export const RNSVGMarker = RNSVGCircle.RNSVGMarker;
+export const RNSVGMask = RNSVGCircle.RNSVGMask;
+export const RNSVGPath = RNSVGCircle.RNSVGPath;
+export const RNSVGPattern = RNSVGCircle.RNSVGPattern;
+export const RNSVGRadialGradient = RNSVGCircle.RNSVGRadialGradient;
+export const RNSVGRect = RNSVGCircle.RNSVGRect;
+export const RNSVGSvgAndroid = RNSVGCircle.RNSVGSvgAndroid;
+export const RNSVGSvgIOS = RNSVGCircle.RNSVGSvgIOS;
+export const RNSVGSymbol = RNSVGCircle.RNSVGSymbol;
+export const RNSVGText = RNSVGCircle.RNSVGText;
+export const RNSVGTextPath = RNSVGCircle.RNSVGTextPath;
+export const RNSVGTSpan = RNSVGCircle.RNSVGTSpan;
+export const RNSVGUse = RNSVGCircle.RNSVGUse;
+export const Shape = multiplyMatricesDefault;
+export { SvgAst_export as SvgAst };
+export const SvgFromUri = SvgAst.SvgFromUri;
+export const SvgFromXml = SvgAst.SvgFromXml;
+export const SvgUri = SvgAst.SvgUri;
+export const SvgXml = SvgAst.SvgXml;
+export default CircleDefault;

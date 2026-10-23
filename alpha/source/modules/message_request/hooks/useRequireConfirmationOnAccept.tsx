@@ -1,11 +1,11 @@
-// Module ID: 13287
-// Function ID: 13288
+// Module ID: 13310
+// Function ID: 13311
 // Name: useRequireConfirmationOnAccept
-// Dependencies: [558, 13288, 2]
+// Dependencies: [558, 13311, 2]
 // Exports: default
 
-// Module 13287 (useRequireConfirmationOnAccept)
-import useIsStricterMessageRequestsDefault from "useIsStricterMessageRequests" /* 13288 */;
+// Module 13310 (useRequireConfirmationOnAccept)
+import useIsStricterMessageRequestsDefault from "useIsStricterMessageRequests" /* 13311 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

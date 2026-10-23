@@ -1,35 +1,35 @@
-// Module ID: 16173
-// Function ID: 16174
+// Module ID: 16206
+// Function ID: 16207
 // Name: UserSettingsAuthedApp
-// Dependencies: [19, 17, 4820, 7188, 4821, 4911, 6689, 2068, 1087, 10001, 10932, 21, 4969, 587, 558, 576, 5672, 5220, 1505, 1506, 1128, 7244, 10747, 9612, 504, 13459, 1417, 5896, 13458, 5196, 10933, 2002, 1275, 7399, 7407, 7072, 7076, 8835, 5137, 7200, 7195, 11, 11988, 11134, 6972, 7280, 6888, 2]
+// Dependencies: [19, 17, 4820, 7201, 4821, 4911, 6702, 2068, 1087, 10023, 10955, 21, 4969, 587, 558, 576, 5684, 5232, 1505, 1506, 1128, 7257, 10769, 9635, 504, 13482, 1417, 5908, 13481, 5208, 10956, 2002, 1275, 7412, 7420, 7085, 7089, 8858, 5149, 7213, 7208, 11, 12007, 11157, 6985, 7293, 6901, 2]
 // Exports: default, handleDeleteApp
 
-// Module 16173 (UserSettingsAuthedApp)
+// Module 16206 (UserSettingsAuthedApp)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl12 from "intl" /* 1128 */;
 import Link from "Link" /* 1506 */;
-import RootNavigationRef from "RootNavigationRef" /* 5137 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 5672 */;
-import useAlertStore from "useAlertStore" /* 5896 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7072 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7076 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7195 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7200 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7244 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8835 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10001 */;
-import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10747 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 10932 */;
-import UserSettingsAuthedAppDeleteWarningModalDefault from "UserSettingsAuthedAppDeleteWarningModal" /* 13458 */;
+import RootNavigationRef from "RootNavigationRef" /* 5149 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 5684 */;
+import useAlertStore from "useAlertStore" /* 5908 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7085 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7089 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7208 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7213 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7257 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8858 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10023 */;
+import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10769 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 10955 */;
+import UserSettingsAuthedAppDeleteWarningModalDefault from "UserSettingsAuthedAppDeleteWarningModal" /* 13481 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7188 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7201 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6689 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6702 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
@@ -70,7 +70,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Warnin
   const tmp4 = closure_19();
   if (cResult[0] !== tmp4.warningIcon) {
     const obj2 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED, style: tmp4.warningIcon };
-    const CircleInformationIcon = tmp(5672).CircleInformationIcon;
+    const CircleInformationIcon = tmp(5684).CircleInformationIcon;
     const tmp8 = closure_17(CircleInformationIcon, obj2);
     cResult[0] = tmp4.warningIcon;
     cResult[1] = tmp8;

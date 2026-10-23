@@ -1,12 +1,12 @@
-// Module ID: 8799
-// Function ID: 8800
+// Module ID: 8822
+// Function ID: 8823
 // Name: ContentInventoryStore
-// Dependencies: [504, 8800, 584, 2]
+// Dependencies: [504, 8823, 584, 2]
 
-// Module 8799 (ContentInventoryStore)
+// Module 8822 (ContentInventoryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import matchUtils from "matchUtils" /* 8800 */;
+import matchUtils from "matchUtils" /* 8823 */;
 import size from "module_2" /* 2 */;
 
 let set;

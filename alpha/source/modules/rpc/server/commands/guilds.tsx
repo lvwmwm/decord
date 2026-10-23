@@ -1,27 +1,29 @@
-// Module ID: 15685
-// Function ID: 15686
+// Module ID: 15706
+// Function ID: 15707
 // Name: guilds
-// Dependencies: [4839, 4875, 4843, 6363, 1087, 15678, 8802, 9243, 9240, 11435, 2]
+// Dependencies: [4839, 4881, 4875, 4843, 6376, 1087, 15699, 8825, 9266, 9263, 11455, 2]
 
-// Module 15685 (guilds)
+// Module 15706 (guilds)
 import GuildRecord from "GuildRecord" /* 4839 */;
-import Constants2 from "Constants" /* 6363 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8802 */;
-import RPCErrorDefault from "RPCError" /* 9240 */;
-import botScopedAccess from "botScopedAccess" /* 9243 */;
-import RPCHelpers from "RPCHelpers" /* 11435 */;
+import Constants2 from "Constants" /* 6376 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8825 */;
+import RPCErrorDefault from "RPCError" /* 9263 */;
+import botScopedAccess from "botScopedAccess" /* 9266 */;
+import RPCHelpers from "RPCHelpers" /* 11455 */;
+import GuildMemberStore from "GuildMemberStore" /* 4881 */;
 import GuildRoleStore from "GuildRoleStore" /* 4875 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import Constants from "Constants" /* 1087 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15678 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15699 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;
-let metroRequire;
+let metroImportDefault;
 let obj3;
+let obj7;
 const getGuildIconURL = GuildRecord.getGuildIconURL;
 const RPC_SCOPE_CONFIG = Constants2.RPC_SCOPE_CONFIG;
-({ RPCCommands, RPCErrors: metroRequire } = Constants);
+({ RPCCommands, RPCErrors: metroImportDefault } = Constants);
 let obj = {};
 const GET_GUILD = RPCCommands.GET_GUILD;
 let CONTEXT_MENU_ICON_NAMES = CONTEXT_MENU_ICON_NAMES_mod;
@@ -55,7 +57,7 @@ let obj2 = {
         const _HermesInternal = HermesInternal;
         const self = this;
         const self2 = this;
-        const obj2 = { errorCode: metroRequire.INVALID_GUILD };
+        const obj2 = { errorCode: metroImportDefault.INVALID_GUILD };
         const tmp5 = RPCErrorDefault;
         const tmp52 = new tmp5(obj2, "Invalid guild id: " + require);
         throw tmp52;
@@ -117,7 +119,7 @@ const obj5 = {
       const _HermesInternal = HermesInternal;
       const self = this;
       const self2 = this;
-      const obj2 = { errorCode: metroRequire.INVALID_GUILD };
+      const obj2 = { errorCode: metroImportDefault.INVALID_GUILD };
       const tmp6 = RPCErrorDefault;
       const tmp62 = new tmp6(obj2, "Invalid guild id: " + guild_id);
       throw tmp62;
@@ -129,6 +131,78 @@ const obj5 = {
   }
 };
 obj[GET_ROLES] = CONTEXT_MENU_ICON_NAMES.createRPCCommand(RPCCommands.GET_ROLES, obj5);
+const GET_CURRENT_USER_GUILD_MEMBER = RPCCommands.GET_CURRENT_USER_GUILD_MEMBER;
+CONTEXT_MENU_ICON_NAMES = CONTEXT_MENU_ICON_NAMES_mod;
+const obj6 = {
+  scope: obj7,
+  validateAccess(botScopeOnly) {
+    if (botScopeOnly.botScopeOnly) {
+      const obj = botScopedAccess;
+      return obj.validateBotScopeHasGuildAccess(tmp2, tmp);
+    }
+  },
+  handler(args) {
+    const guild_id = args.args.guild_id;
+    if (null == GuildStore.getGuild(guild_id)) {
+      const _HermesInternal = HermesInternal;
+      const self = this;
+      const self2 = this;
+      const obj2 = { errorCode: metroImportDefault.INVALID_GUILD };
+      const tmp8 = RPCErrorDefault;
+      const tmp82 = new tmp8(obj2, "Invalid guild id: " + guild_id);
+      throw tmp82;
+    } else {
+      const selfMember = GuildMemberStore.getSelfMember(guild_id);
+      let transformGuildMemberResult = null;
+      if (null != selfMember) {
+        const obj = RPCHelpers;
+        transformGuildMemberResult = obj.transformGuildMember(selfMember);
+      }
+      return transformGuildMemberResult;
+    }
+  }
+};
+obj7 = {};
+const createRPCCommand2 = CONTEXT_MENU_ICON_NAMES.createRPCCommand;
+const GET_CURRENT_USER_GUILD_MEMBER2 = RPCCommands.GET_CURRENT_USER_GUILD_MEMBER;
+const ANY2 = RPC_SCOPE_CONFIG.ANY;
+const items1 = [OAuth2Scopes.OAuth2Scopes.GUILDS_MEMBERS_READ, OAuth2Scopes.OAuth2Scopes.BOT];
+obj7[ANY2] = items1;
+obj[GET_CURRENT_USER_GUILD_MEMBER] = createRPCCommand2(GET_CURRENT_USER_GUILD_MEMBER2, obj6);
+const GET_GUILD_MEMBER = RPCCommands.GET_GUILD_MEMBER;
+CONTEXT_MENU_ICON_NAMES = CONTEXT_MENU_ICON_NAMES_mod;
+const obj8 = {
+  scope: OAuth2Scopes.OAuth2Scopes.BOT,
+  validateAccess(args) {
+    const guild_id = args.args.guild_id;
+    const socket = args.socket;
+    const obj = botScopedAccess;
+    return obj.validateBotScopeHasGuildAccess(socket, guild_id);
+  },
+  handler(args) {
+    args = args.args;
+    const guild_id = args.guild_id;
+    const user_id = args.user_id;
+    if (null == GuildStore.getGuild(guild_id)) {
+      const _HermesInternal = HermesInternal;
+      const self = this;
+      const self2 = this;
+      const obj2 = { errorCode: metroImportDefault.INVALID_GUILD };
+      const tmp8 = RPCErrorDefault;
+      const tmp82 = new tmp8(obj2, "Invalid guild id: " + guild_id);
+      throw tmp82;
+    } else {
+      const member = GuildMemberStore.getMember(guild_id, user_id);
+      let transformGuildMemberResult = null;
+      if (null != member) {
+        const obj = RPCHelpers;
+        transformGuildMemberResult = obj.transformGuildMember(member);
+      }
+      return transformGuildMemberResult;
+    }
+  }
+};
+obj[GET_GUILD_MEMBER] = CONTEXT_MENU_ICON_NAMES.createRPCCommand(RPCCommands.GET_GUILD_MEMBER, obj8);
 const result = size.fileFinishedImporting("modules/rpc/server/commands/guilds.tsx");
 
 export default obj;

@@ -1,436 +1,308 @@
 // Module ID: 12631
 // Function ID: 12632
-// Dependencies: [32, 5, 12518, 12632, 12526, 12521, 12534, 12527]
-// Exports: addFetchEndInstrumentationHandler, addFetchInstrumentationHandler
+// Dependencies: []
+// Exports: basename, dirname, isAbsolute, join, relative
 
 // Module 12631
-import _mod12518 from "module_12518" /* 12518 */;
-import _mod12521 from "module_12521" /* 12521 */;
-import _mod12526 from "module_12526" /* 12526 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12534 */;
-import _mod12632 from "module_12632" /* 12632 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-
-const require = globalThis.__r;
-let _require, c1, c3, c6, closure_4;
-
-let obj = function _resolveResponse() {
-  obj = _asyncToGenerator(async (arg0, value) => {
-    let closure_2;
-    let closure_0 = arg0;
-    let closure_1 = value;
-    if (c6 === 2) {
-      c6 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
+function resolve() {
+  let tmp17;
+  const items = [...arguments];
+  let diff = items.length - 1;
+  let flag = false;
+  let str = "";
+  let flag2 = false;
+  let str2 = "";
+  if (-1 <= diff) {
+    while (true) {
+      let tmp3 = flag;
+      let str3 = "/";
+      if (0 <= diff) {
+        str3 = items[diff];
+      }
+      let combined = str;
+      if (str3) {
+        let _HermesInternal = HermesInternal;
+        combined = "" + str3 + "/" + str;
+        tmp3 = "/" === str3.charAt(0);
+      }
+      let diff1 = diff - 1;
+      flag2 = tmp3;
+      str2 = combined;
+      if (-1 > diff1) {
+        break;
       } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      let c5;
-      try {
-        let reader;
-        let timeout2;
-        let done;
-        let c4;
-        c6 = 2;
-        if (0 === c3) {
-          if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            closure_0 = closure_1;
-            let body;
-            reader = undefined;
-            let timeout;
-            c4 = undefined;
-            timeout2 = undefined;
-            done = undefined;
-            if (closure_0) {
-              if (closure_0.body) {
-                body = tmp44.body;
-                reader = body.getReader();
-                const _setTimeout = setTimeout;
-                timeout = setTimeout(() => {
-                  const cancelResult = closure_1_1.cancel();
-                  cancelResult.then(null, () => {
-
-                  });
-                }, 90000);
-                c4 = true;
-                const tmp26 = c4;
-                if (!tmp26) {
-                  const _clearTimeout5 = clearTimeout;
-                  clearTimeout(timeout);
-                  reader.releaseLock();
-                  let cancelResult = body.cancel();
-                  const nextPromise = cancelResult.then(null, () => {
-
-                  });
-                }
-              }
-            }
-            c6 = 3;
-            return { value: "IconComponent", done: null };
-          }
-        } else if (1 === c3) {
-          c5 = 0;
-          const _clearTimeout4 = clearTimeout;
-          clearTimeout(timeout2);
-          throw closure_4;
-        } else {
-          if (2 === c3) {
-            c5 = 1;
-            c4 = false;
-          } else if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 0;
-            const _clearTimeout2 = clearTimeout;
-            clearTimeout(timeout2);
-            c6 = 3;
-            obj = { value, done: true };
-            return obj;
-          } else {
-            done = value.done;
-            const _clearTimeout = clearTimeout;
-            clearTimeout(timeout2);
-            const tmp7 = done;
-            if (tmp7) {
-              closure_0();
-              c4 = false;
-            }
-            c5 = 1;
-          }
-          c5 = 0;
-          const _clearTimeout3 = clearTimeout;
-          clearTimeout(timeout2);
-        }
-        c5 = 2;
-        const _setTimeout2 = setTimeout;
-        timeout2 = setTimeout(() => {
-          const cancelResult = closure_1_1.cancel();
-          cancelResult.then(null, () => {
-
-          });
-        }, 5000);
-        c3 = 3;
-        c6 = 1;
-        const obj4 = { value: reader.read(), done: false };
-        return obj4;
-      } catch (tmp36) {
-        closure_4 = tmp36;
-        if (0 === c5) {
-          c6 = 3;
-          throw tmp36;
-        } else if (1 === tmp38) {
-          c3 = 1;
-        } else {
-          c3 = 2;
+        diff = diff1;
+        flag = tmp3;
+        str = combined;
+        str2 = combined;
+        flag2 = tmp3;
+        if (flag2) {
+          break;
         }
       }
     }
-  });
-  return obj(...arguments);
-};
-function streamHandler(clone) {
-  function resolveResponse(arg0, arg1) {
-    return obj(...arguments);
   }
-  const response = clone;
-  try {
-    !resolveResponse(clone.clone(), () => {
-      let obj2;
-      obj = { endTimestamp: 1000 * obj2.timestampInSeconds(), response };
-      const triggerHandlers = _mod12518.triggerHandlers;
-      obj2 = _browserPerformanceTimeOriginMode;
-      triggerHandlers("fetch-body-resolved", obj);
-    });
-  } catch (err) {
+  let str4 = "";
+  if (flag2) {
+    str4 = "/";
   }
+  const parts = str2.split("/");
+  const found = parts.filter((item) => item);
+  let diff2 = found.length - 1;
+  let num = 0;
+  let num2 = 0;
+  if (0 <= diff2) {
+    do {
+      let sum;
+      let tmp8 = found[diff2];
+      if ("." === tmp8) {
+        let spliceResult = found.splice(diff2, 1);
+        sum = num;
+      } else if (".." === tmp8) {
+        let spliceResult1 = found.splice(diff2, 1);
+        sum = num + 1;
+      } else {
+        sum = num;
+        if (sum) {
+          let spliceResult2 = found.splice(diff2, 1);
+          sum = num - 1;
+        }
+      }
+      diff2 = diff2 - 1;
+      num = sum;
+      num2 = sum;
+    } while (0 <= diff2);
+  }
+  if (!flag2) {
+    let diff3 = num2 - 1;
+    if (num2) {
+      do {
+        let arr = found.unshift("..");
+        tmp17 = diff3;
+        diff3 = diff3 - 1;
+      } while (tmp17);
+    }
+  }
+  const tmp18 = str4 + found.join("/") || ".";
+  return tmp18;
 }
-function parseFetchArgs(arg0) {
-  let str3;
-  let str5;
-  let str8;
-  let tmp7;
-  if (0 === arg0.length) {
-    return { method: "GET", url: "" };
-  } else if (2 === arg0.length) {
-    [str5, tmp7] = arg0;
-    let tmp8 = str5;
-    _slicedToArray(arg0, 2);
-    if (typeof str5 !== "string") {
-      let str6 = "";
-      let str7 = "";
-      if (str5) {
-        const tmp9 = str5 && typeof str5 === "object" && str5.url;
-        if (tmp9) {
-          str6 = str5.url;
-        } else if (str5.toString) {
-          str6 = str5.toString();
+function normalizePath(str) {
+  let tmp14;
+  const charAtResult = str.charAt(0);
+  const substr = str.slice(-1);
+  const parts = str.split("/");
+  const found = parts.filter((item) => item);
+  let diff = found.length - 1;
+  let num = 0;
+  let num2 = 0;
+  if (0 <= diff) {
+    do {
+      let sum;
+      let tmp4 = found[diff];
+      if ("." === tmp4) {
+        let spliceResult = found.splice(diff, 1);
+        sum = num;
+      } else if (".." === tmp4) {
+        let spliceResult1 = found.splice(diff, 1);
+        sum = num + 1;
+      } else {
+        sum = num;
+        if (sum) {
+          let spliceResult2 = found.splice(diff, 1);
+          sum = num - 1;
         }
-        str7 = str6;
       }
-      tmp8 = str7;
+      diff = diff - 1;
+      num = sum;
+      num2 = sum;
+    } while (0 <= diff);
+  }
+  if ("/" !== charAtResult) {
+    let diff1 = num2 - 1;
+    if (num2) {
+      do {
+        let arr = found.unshift("..");
+        tmp14 = diff1;
+        diff1 = diff1 - 1;
+      } while (tmp14);
     }
-    const request = { url: tmp8, method: str8 };
-    str8 = "GET";
-    const tmp10 = tmp7 && typeof tmp7 === "object" && tmp7.method;
-    if (tmp10) {
-      const _String2 = String;
-      const str9 = String(tmp7.method);
-      str8 = str9.toUpperCase();
-    }
-    return request;
+  }
+  str = found.join("/");
+  const tmp15 = str || "/" === charAtResult;
+  if (!tmp15) {
+    str = ".";
+  }
+  let text = str;
+  const tmp16 = str && "/" === substr;
+  if (tmp16) {
+    text = `${str}/`;
+  }
+  let str2 = "";
+  if ("/" === charAtResult) {
+    str2 = "/";
+  }
+  return str2 + text;
+}
+const re0 = /^(\S+:\\|\/?)([\s\S]*?)((?:\.{1,2}|[^/\\]+?|)(\.[^./\\]*|))(?:[/\\]*)$/;
+
+export const basename = function basename(arr, arg1) {
+  let combined = arr;
+  if (arr.length > 1024) {
+    const _HermesInternal = HermesInternal;
+    combined = "<truncated>" + arr.slice(-1024);
+  }
+  const match = re0.exec(combined);
+  if (match) {
+    let substr = match.slice(1);
   } else {
-    let tmp2 = str10;
-    if (typeof arg0[0] !== "string") {
-      let str = "";
-      let str2 = "";
-      if (arg0[0]) {
-        const tmp = arg0[0] && typeof arg0[0] === "object" && arg0[0].url;
-        if (tmp) {
-          str = str10.url;
-        } else if (arg0[0].toString) {
-          str = str10.toString();
-        }
-        str2 = str;
-      }
-      tmp2 = str2;
-    }
-    const request1 = { url: tmp2, method: str3 };
-    str3 = "GET";
-    const tmp3 = arg0[0] && typeof arg0[0] === "object" && arg0[0].method;
-    if (tmp3) {
-      const _String = String;
-      const str4 = String(arg0[0].method);
-      str3 = str4.toUpperCase();
-    }
-    return request1;
+    substr = [];
   }
-}
-
-export const addFetchEndInstrumentationHandler = function addFetchEndInstrumentationHandler(arg0) {
-  obj = _mod12518;
-  obj.addHandler("fetch-body-resolved", arg0);
-  const obj2 = _mod12518;
-  obj2.maybeInstrument("fetch-body-resolved", () => {
-    let closure_0 = closure_5;
-    {
-      obj = closure_0(closure_1[4]);
-      obj.fill(closure_0(closure_1[5]).GLOBAL_OBJ, "fetch", (arg0) => {
-        closure_0 = arg0;
-        return () => {
-          let obj2;
-          const items = [...arguments];
-          const error = new Error();
-          const request = closure_3_6(items);
-          obj = { args: items, fetchData: { method: request.method, url: request.url }, startTimestamp: 1000 * obj2.timestampInSeconds(), virtualError: error };
-          let tmp2 = closure_3_0;
-          obj2 = closure_3_0(closure_3_1[6]);
-          const tmp4 = closure_2_0;
-          if (!tmp4) {
-            let obj3 = {};
-            let tmp6 = obj3;
-            let triggerHandlers = tmp2(tmp3[2]).triggerHandlers;
-            tmp2(closure_3_1[2]);
-            let merged = Object.assign(obj);
-            triggerHandlers("fetch", obj3);
-          }
-          const applyResult = closure_0.apply(tmp2(closure_3_1[5]).GLOBAL_OBJ, items);
-          const then = applyResult.then;
-          closure_0 = closure_3_3(function*(arg0, value) {
-            let obj2;
-            value = arg0;
-            if (c1 === 2) {
-              c1 = 3;
-              throw new TypeError("Generator functions may not be called on executing generators");
-            } else if (tmp2 === 3) {
-              if (arg0 === 1) {
-                throw value;
-              } else if (arg0 === 2) {
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                return { value: "IconComponent", done: null };
-              }
-            } else {
-              try {
-                c1 = 2;
-                if (arg0 === 1) {
-                  c1 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c1 = 3;
-                  const obj4 = { value, done: true };
-                  return obj4;
-                } else {
-                  if (value) {
-                    tmp16(value);
-                  } else {
-                    obj = { endTimestamp: 1000 * obj2.timestampInSeconds(), response: value };
-                    const triggerHandlers = closure_3_0(closure_3_1[2]).triggerHandlers;
-                    const merged = Object.assign(c1);
-                    obj2 = closure_3_0(closure_3_1[6]);
-                    triggerHandlers("fetch", obj);
-                  }
-                  c1 = 3;
-                  const obj5 = { value, done: true };
-                  return obj5;
-                }
-              } catch (tmp11) {
-                c1 = 3;
-                throw tmp11;
-              }
-            }
-          });
-          return then(function(arg0) {
-            return closure_0(...arguments);
-          }, (error) => {
-            let obj2;
-            obj = { endTimestamp: 1000 * obj2.timestampInSeconds(), error };
-            const triggerHandlers = error(closure_3_1[2]).triggerHandlers;
-            const merged = Object.assign(obj);
-            obj2 = error(closure_3_1[6]);
-            triggerHandlers("fetch", obj);
-            const obj3 = error(closure_3_1[7]);
-            const tmp = error;
-            const tmp2 = closure_3_1;
-            const tmp6 = obj3.isError(error) && undefined === error.stack;
-            if (tmp6) {
-              error.stack = error.stack;
-              const tmpResult = tmp(tmp2[4]);
-              const result = tmpResult.addNonEnumerableProperty(error, "framesToPop", 1);
-            }
-            throw error;
-          });
-        };
-      });
-    }
-  });
+  let substr1 = arr3;
+  const tmp3 = arg1 && arr3.slice(-1 * arg1.length) === arg1;
+  if (tmp3) {
+    substr1 = arr3.slice(0, arr3.length - arg1.length);
+  }
+  return substr1;
 };
-export const addFetchInstrumentationHandler = function addFetchInstrumentationHandler(arg0, arg1) {
-  _require = arg1;
-  obj = require("module_12518");
-  obj.addHandler("fetch", arg0);
-  let obj2 = require("module_12518");
-  obj2.maybeInstrument("fetch", () => {
-    let flag = closure_0;
-    if (closure_0 === undefined) {
-      flag = false;
-    }
-    if (flag) {
-      let tmp = require;
-      let tmp2 = dependencyMap;
-      obj = _mod12632;
-      flag = !obj.supportsNativeFetch();
-    }
-    if (!flag) {
-      const tmp3 = require;
-      let tmp4 = dependencyMap;
-      let obj2 = _mod12526;
-      const str = "fetch";
-      obj2.fill(_mod12521.GLOBAL_OBJ, "fetch", (arg0) => {
-        closure_0 = arg0;
-        return () => {
-          let obj2;
-          const items = [...arguments];
-          const error = new Error();
-          const request = closure_3_6(items);
-          obj = { args: items, fetchData: { method: request.method, url: request.url }, startTimestamp: 1000 * obj2.timestampInSeconds(), virtualError: error };
-          let tmp2 = closure_3_0;
-          obj2 = closure_3_0(closure_3_1[6]);
-          const tmp4 = closure_2_0;
-          if (!tmp4) {
-            let obj3 = {};
-            let tmp6 = obj3;
-            let triggerHandlers = tmp2(tmp3[2]).triggerHandlers;
-            tmp2(closure_3_1[2]);
-            let merged = Object.assign(obj);
-            triggerHandlers("fetch", obj3);
-          }
-          const applyResult = closure_0.apply(tmp2(closure_3_1[5]).GLOBAL_OBJ, items);
-          const then = applyResult.then;
-          closure_0 = closure_3_3(function*(arg0, value) {
-            let obj2;
-            value = arg0;
-            if (c1 === 2) {
-              c1 = 3;
-              throw new TypeError("Generator functions may not be called on executing generators");
-            } else if (tmp2 === 3) {
-              if (arg0 === 1) {
-                throw value;
-              } else if (arg0 === 2) {
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                return { value: "IconComponent", done: null };
-              }
-            } else {
-              try {
-                c1 = 2;
-                if (arg0 === 1) {
-                  c1 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c1 = 3;
-                  const obj4 = { value, done: true };
-                  return obj4;
-                } else {
-                  if (value) {
-                    tmp16(value);
-                  } else {
-                    obj = { endTimestamp: 1000 * obj2.timestampInSeconds(), response: value };
-                    const triggerHandlers = closure_3_0(closure_3_1[2]).triggerHandlers;
-                    const merged = Object.assign(c1);
-                    obj2 = closure_3_0(closure_3_1[6]);
-                    triggerHandlers("fetch", obj);
-                  }
-                  c1 = 3;
-                  const obj5 = { value, done: true };
-                  return obj5;
-                }
-              } catch (tmp11) {
-                c1 = 3;
-                throw tmp11;
-              }
-            }
-          });
-          return then(function(arg0) {
-            return closure_0(...arguments);
-          }, (error) => {
-            let obj2;
-            obj = { endTimestamp: 1000 * obj2.timestampInSeconds(), error };
-            const triggerHandlers = error(closure_3_1[2]).triggerHandlers;
-            const merged = Object.assign(obj);
-            obj2 = error(closure_3_1[6]);
-            triggerHandlers("fetch", obj);
-            const obj3 = error(closure_3_1[7]);
-            const tmp = error;
-            const tmp2 = closure_3_1;
-            const tmp6 = obj3.isError(error) && undefined === error.stack;
-            if (tmp6) {
-              error.stack = error.stack;
-              const tmpResult = tmp(tmp2[4]);
-              const result = tmpResult.addNonEnumerableProperty(error, "framesToPop", 1);
-            }
-            throw error;
-          });
-        };
-      });
-    }
-  });
+export const dirname = function dirname(arr) {
+  let str2;
+  let substr;
+  let combined = arr;
+  if (arr.length > 1024) {
+    const _HermesInternal = HermesInternal;
+    combined = "<truncated>" + arr.slice(-1024);
+  }
+  const match = re0.exec(combined);
+  if (match) {
+    substr = match.slice(1);
+  } else {
+    substr = [];
+  }
+  if (substr[0] || "") {
+    const substr1 = arr3 && arr3.slice(0, arr3.length - 1);
+    str2 = tmp3 + substr1;
+  } else {
+    str2 = ".";
+  }
+  return str2;
 };
-export { parseFetchArgs };
+export const isAbsolute = function isAbsolute(str) {
+  return "/" === str.charAt(0);
+};
+export const join = function join() {
+  const items = [...arguments];
+  return normalizePath(items.join("/"));
+};
+export { normalizePath };
+export const relative = function relative(arg0, arg1) {
+  let items;
+  let items1;
+  let length;
+  const arr = resolve(arg0);
+  const str = arr.slice(1);
+  const arr2 = resolve(arg1);
+  const str2 = arr2.slice(1);
+  const parts = str.split("/");
+  let num = 0;
+  if (0 < parts.length) {
+    let num2 = 0;
+    num = 0;
+    if ("" === parts[0]) {
+      const sum = num2 + 1;
+      num = sum;
+      while (sum < parts.length) {
+        num2 = sum;
+        num = sum;
+        if ("" !== parts[sum]) {
+          break;
+        }
+      }
+    }
+  }
+  const diff = parts.length - 1;
+  let tmp3 = diff;
+  if (0 <= diff) {
+    let tmp4 = diff;
+    tmp3 = diff;
+    if ("" === parts[diff]) {
+      const diff1 = tmp4 - 1;
+      tmp3 = diff1;
+      while (0 <= diff1) {
+        tmp4 = diff1;
+        tmp3 = diff1;
+        if ("" !== parts[diff1]) {
+          break;
+        }
+      }
+    }
+  }
+  if (tmp3 < num) {
+    items = [];
+  } else {
+    items = parts.slice(num, tmp3 - num + 1);
+  }
+  const parts1 = str2.split("/");
+  let num3 = 0;
+  if (0 < parts1.length) {
+    let num4 = 0;
+    num3 = 0;
+    if ("" === parts1[0]) {
+      const sum1 = num4 + 1;
+      num3 = sum1;
+      while (sum1 < parts1.length) {
+        num4 = sum1;
+        num3 = sum1;
+        if ("" !== parts1[sum1]) {
+          break;
+        }
+      }
+    }
+  }
+  const diff2 = parts1.length - 1;
+  let tmp8 = diff2;
+  if (0 <= diff2) {
+    let tmp9 = diff2;
+    tmp8 = diff2;
+    if ("" === parts1[diff2]) {
+      const diff3 = tmp9 - 1;
+      tmp8 = diff3;
+      while (0 <= diff3) {
+        tmp9 = diff3;
+        tmp8 = diff3;
+        if ("" !== parts1[diff3]) {
+          break;
+        }
+      }
+    }
+  }
+  if (tmp8 < num3) {
+    items1 = [];
+  } else {
+    items1 = parts1.slice(num3, tmp8 - num3 + 1);
+  }
+  const bound = Math.min(items.length, items1.length);
+  let num5 = 0;
+  let tmp12 = bound;
+  if (0 < bound) {
+    tmp12 = num5;
+    while (items[num5] === items1[num5]) {
+      num5 = num5 + 1;
+      tmp12 = bound;
+      if (num5 >= bound) {
+        break;
+      }
+    }
+  }
+  const items2 = [];
+  let sum2 = tmp12;
+  if (tmp12 < items.length) {
+    do {
+      let arr3 = items2.push("..");
+      sum2 = sum2 + 1;
+      length = items.length;
+    } while (sum2 < length);
+  }
+  const combined = items2.concat(items1.slice(tmp12));
+  return combined.join("/");
+};
+export { resolve };

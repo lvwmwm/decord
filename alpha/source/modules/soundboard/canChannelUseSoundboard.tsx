@@ -1,10 +1,10 @@
-// Module ID: 7468
-// Function ID: 7469
+// Module ID: 7481
+// Function ID: 7482
 // Name: canChannelUseSoundboard
 // Dependencies: [4821, 4901, 4872, 1087, 558, 576, 504, 2]
 // Exports: canSelectedVoiceChannelUseSoundboard, default
 
-// Module 7468 (canChannelUseSoundboard)
+// Module 7481 (canChannelUseSoundboard)
 import ChannelStore from "ChannelStore" /* 4821 */;
 import PermissionStore from "PermissionStore" /* 4901 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;

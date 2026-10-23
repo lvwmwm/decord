@@ -1,25 +1,47 @@
 // Module ID: 15540
 // Function ID: 15541
-// Dependencies: [15506, 15527, 15541, 15551, 15552]
+// Dependencies: [15520, 15541]
 
 // Module 15540
-import _mod15506 from "module_15506" /* 15506 */;
-import _mod15527 from "module_15527" /* 15527 */;
-import f2 from "f" /* 15541 */;
-import _mod15551 from "module_15551" /* 15551 */;
-import _mod15552 from "module_15552" /* 15552 */;
+import _mod15520 from "module_15520" /* 15520 */;
+import _mod15541 from "module_15541" /* 15541 */;
 
-function ownKeys(arg0) {
-  const obj = f2;
-  const fResult = obj.f(_mod15551(arg0));
-  const f = _mod15552.f;
-  let tmp2 = fResult;
-  if (f) {
-    tmp2 = closure_2(fResult, f(arg0));
-  }
-  return tmp2;
+let tmp4;
+let tmp = _mod15520.process && _mod15520.process.versions;
+if (!tmp) {
+  tmp = _mod15520.Deno && _mod15520.Deno.version;
+  _mod15520.Deno && _mod15520.Deno.version;
 }
-let closure_2 = _mod15506([].concat);
-_mod15527("Reflect", "ownKeys") || ownKeys;
+let tmp3;
+if (tmp && tmp.v8) {
+  let num3;
+  const parts = str.split(".");
+  if (parts[0] <= 0) {
+    num3 = +parts[0] + parts[1];
+  } else {
+    num3 = 1;
+  }
+  tmp3 = num3;
+  tmp4 = parts;
+}
+let match1 = !tmp3 && _mod15541;
+if (match1) {
+  const str3 = _mod15541;
+  const match = str3.match(/Edge\/(\d+)/);
+  let tmp8 = !match;
+  if (match) {
+    tmp8 = match[1] >= 74;
+  }
+  match1 = tmp8;
+  tmp4 = match;
+}
+if (match1) {
+  const str4 = _mod15541;
+  match1 = str4.match(/Chrome\/(\d+)/);
+  tmp4 = match1;
+}
+if (match1) {
+  tmp3 = +tmp4[1];
+}
 
-export default _mod15527("Reflect", "ownKeys") || ownKeys;
+export default tmp3;

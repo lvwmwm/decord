@@ -1,15 +1,15 @@
-// Module ID: 9225
-// Function ID: 9226
+// Module ID: 9248
+// Function ID: 9249
 // Name: useResolveGameForProfile
-// Dependencies: [558, 576, 7242, 7805, 7806, 9226, 7391, 2]
+// Dependencies: [558, 576, 7255, 7818, 7819, 9249, 7404, 2]
 
-// Module 9225 (useResolveGameForProfile)
+// Module 9248 (useResolveGameForProfile)
 import react from "react" /* 576 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7242 */;
-import useGame2 from "useGame" /* 7391 */;
-import RobloxSubgameUtils from "RobloxSubgameUtils" /* 7805 */;
-import RobloxSubgameTypes from "RobloxSubgameTypes" /* 7806 */;
-import useResolveGameDefault from "useResolveGame" /* 9226 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7255 */;
+import useGame2 from "useGame" /* 7404 */;
+import RobloxSubgameUtils from "RobloxSubgameUtils" /* 7818 */;
+import RobloxSubgameTypes from "RobloxSubgameTypes" /* 7819 */;
+import useResolveGameDefault from "useResolveGame" /* 9249 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useResolve
     ROBLOX_GAME_ID = gameId;
     const tmpResult = RobloxSubgameUtils;
     if (tmpResult.isRobloxSubgameApplication(getOrFetchApplication)) {
-      ROBLOX_GAME_ID = tmp(7806).ROBLOX_GAME_ID;
+      ROBLOX_GAME_ID = tmp(7819).ROBLOX_GAME_ID;
     }
   }
   if (cResult[0] === applicationId) {
@@ -51,7 +51,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useResolve
     const useGame = useGame2.useGame;
     useGame2;
     if (isRobloxSubgameGameResult) {
-      ROBLOX_GAME_ID1 = tmp(7806).ROBLOX_GAME_ID;
+      ROBLOX_GAME_ID1 = tmp(7819).ROBLOX_GAME_ID;
     }
     const game = useGame(ROBLOX_GAME_ID1);
     ({ data, isLoading } = game);
@@ -99,7 +99,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useResolve
   const obj = { applicationId, gameId };
   const tmp7 = useResolveGameDefault;
   if (result) {
-    gameId = tmp(7806).ROBLOX_GAME_ID;
+    gameId = tmp(7819).ROBLOX_GAME_ID;
   }
   let tmp7Result = tmp7(obj);
   let isRobloxSubgameGameResult = null != tmp7Result.gameRecord;
@@ -111,7 +111,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useResolve
   const useGame = useGame2.useGame;
   useGame2;
   if (isRobloxSubgameGameResult) {
-    ROBLOX_GAME_ID = tmp(7806).ROBLOX_GAME_ID;
+    ROBLOX_GAME_ID = tmp(7819).ROBLOX_GAME_ID;
   }
   const game = useGame(ROBLOX_GAME_ID);
   let data = game.data;

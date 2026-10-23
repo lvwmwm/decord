@@ -1,9 +1,9 @@
-// Module ID: 8728
-// Function ID: 8729
+// Module ID: 8746
+// Function ID: 8747
 // Name: useAvatarDecorationIfNotExpired
 // Dependencies: [32, 19, 1087, 558, 576, 1987, 4816, 2]
 
-// Module 8728 (useAvatarDecorationIfNotExpired)
+// Module 8746 (useAvatarDecorationIfNotExpired)
 import Constants from "Constants" /* 1087 */;
 import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1987 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

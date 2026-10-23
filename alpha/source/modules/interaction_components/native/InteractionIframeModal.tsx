@@ -1,16 +1,16 @@
-// Module ID: 18765
-// Function ID: 18766
+// Module ID: 18809
+// Function ID: 18810
 // Name: InteractionIframeModal
-// Dependencies: [32, 19, 17, 1375, 21, 4969, 587, 558, 576, 18753, 11421, 5579, 8795, 18766, 5958, 5649, 1128, 10634, 6893, 5220, 9110, 6762, 11462, 18356, 2]
+// Dependencies: [32, 19, 17, 1375, 21, 4969, 587, 558, 576, 18797, 11441, 5591, 8818, 18810, 5970, 5661, 1128, 10656, 6906, 5232, 9133, 6775, 11482, 18400, 2]
 
-// Module 18765 (InteractionIframeModal)
+// Module 18809 (InteractionIframeModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import ApplicationConstants from "ApplicationConstants" /* 1375 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5649 */;
-import makeIframeIdDefault from "makeIframeId" /* 11421 */;
-import closeIFrameModalDefault from "closeIFrameModal" /* 18766 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5661 */;
+import makeIframeIdDefault from "makeIframeId" /* 11441 */;
+import closeIFrameModalDefault from "closeIFrameModal" /* 18810 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -68,7 +68,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Interactio
       constructor() {
         obj = id(closure_2[12]);
         lockOrientationResult = obj.lockOrientation("PORTRAIT");
-        return () => { /* body not rendered: F155760 */ };
+        return () => { /* body not rendered: F156061 */ };
       }
     }
     const items = [];
@@ -81,7 +81,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Interactio
       constructor() {
         obj = id(closure_2[12]);
         lockOrientationResult = obj.lockOrientation("PORTRAIT");
-        return () => { /* body not rendered: F155760 */ };
+        return () => { /* body not rendered: F156061 */ };
       }
     }
     tmp10 = cResult[2];

@@ -1,19 +1,19 @@
-// Module ID: 18018
-// Function ID: 18019
+// Module ID: 18062
+// Function ID: 18063
 // Name: GuildChannelRow
-// Dependencies: [109, 19, 17, 9691, 21, 4969, 587, 558, 576, 5590, 18019, 5655, 8488, 18021, 17997, 2]
+// Dependencies: [109, 19, 17, 9713, 21, 4969, 587, 558, 576, 5602, 18063, 5667, 8500, 18065, 18041, 2]
 
-// Module 18018 (GuildChannelRow)
+// Module 18062 (GuildChannelRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useChannelNameDefault from "useChannelName" /* 5590 */;
-import FastImageDefault from "FastImage" /* 5655 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8488 */;
-import SearchConstants from "SearchConstants" /* 9691 */;
-import SearchListRow2 from "SearchListRow" /* 17997 */;
-import renderChannelItem from "renderChannelItem" /* 18021 */;
+import useChannelNameDefault from "useChannelName" /* 5602 */;
+import FastImageDefault from "FastImage" /* 5667 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8500 */;
+import SearchConstants from "SearchConstants" /* 9713 */;
+import SearchListRow2 from "SearchListRow" /* 18041 */;
+import renderChannelItem from "renderChannelItem" /* 18065 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -22,7 +22,7 @@ import size_mod from "module_2" /* 2 */;
 
 let size;
 let tmp;
-const ChannelContent = tmp(18019);
+const ChannelContent = tmp(18063);
 let closure_3 = ["channel", "subtitle", "trailing", "extras", "onPress", "voiceStates"];
 const View = react_native.View;
 const layout = SearchConstants.CHANNEL_LIST_SEARCH_LAYOUT;
@@ -162,7 +162,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           }
         }
       }
-      const SearchListRow = tmp(17997).SearchListRow;
+      const SearchListRow = tmp(18041).SearchListRow;
       const merged = Object.assign(tmp15);
       const merged1 = Object.assign(tmp7);
       ({ container: obj7.containerStyle, iconContainer: obj7.iconContainerStyle } = tmp14);

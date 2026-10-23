@@ -1,14 +1,14 @@
-// Module ID: 18044
-// Function ID: 18045
+// Module ID: 18088
+// Function ID: 18089
 // Name: GenericTextRow
-// Dependencies: [5, 19, 17, 21, 4969, 558, 576, 5220, 17997, 2]
+// Dependencies: [5, 19, 17, 21, 4969, 558, 576, 5232, 18041, 2]
 
-// Module 18044 (GenericTextRow)
+// Module 18088 (GenericTextRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import SearchListRow2 from "SearchListRow" /* 17997 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import SearchListRow2 from "SearchListRow" /* 18041 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4969 */;

@@ -1,18 +1,18 @@
-// Module ID: 7429
-// Function ID: 7430
+// Module ID: 7442
+// Function ID: 7443
 // Name: SoundboardActionCreators
-// Dependencies: [5, 5992, 5994, 1087, 1097, 1297, 7430, 584, 7431, 6360, 7432, 1267, 4802, 12, 5894, 1128, 7433, 2]
+// Dependencies: [5, 6004, 6006, 1087, 1097, 1297, 7443, 584, 7444, 6373, 7445, 1267, 4802, 12, 5906, 1128, 7446, 2]
 // Exports: addFavoriteSound, deleteSound, fetchSoundGuildData, maybeFetchSoundboardSounds, playSoundLocally, removeFavoriteSound, reorderFavoriteSound, reportSoundFinishedPlaying, reportSoundStartedPlaying, updateSound, updateUserSoundboardVolume, uploadSound
 
-// Module 7429 (SoundboardActionCreators)
+// Module 7442 (SoundboardActionCreators)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl3 from "intl" /* 1128 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4802 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5894 */;
-import SoundboardConstants from "SoundboardConstants" /* 5994 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5906 */;
+import SoundboardConstants from "SoundboardConstants" /* 6006 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SoundboardStore from "SoundboardStore" /* 5992 */;
+import SoundboardStore from "SoundboardStore" /* 6004 */;
 import Constants from "Constants" /* 1087 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import size from "module_2" /* 2 */;
@@ -141,7 +141,7 @@ function _maybeFetchDefaultSounds() {
 }
 function _maybeFetchGuildSoundboardSounds() {
   let SOUNDBOARD_SOUNDS_RECEIVED;
-  obj = SOUNDBOARD_SOUNDS_RECEIVED(7432);
+  obj = SOUNDBOARD_SOUNDS_RECEIVED(7445);
   const guildIdsToFetchSoundsFor = obj.getGuildIdsToFetchSoundsFor();
   if (0 === guildIdsToFetchSoundsFor.length) {
     return Promise.resolve();

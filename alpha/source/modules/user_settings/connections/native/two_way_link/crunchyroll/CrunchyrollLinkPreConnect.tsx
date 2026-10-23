@@ -1,14 +1,14 @@
-// Module ID: 14047
-// Function ID: 14048
+// Module ID: 14071
+// Function ID: 14072
 // Name: CrunchyrollLinkPreConnect
-// Dependencies: [19, 14044, 1087, 8801, 21, 4969, 558, 576, 1505, 1128, 9599, 14048, 2]
+// Dependencies: [19, 14068, 1087, 8824, 21, 4969, 558, 576, 1505, 1128, 9622, 14072, 2]
 
-// Module 14047 (CrunchyrollLinkPreConnect)
+// Module 14071 (CrunchyrollLinkPreConnect)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
-import CrunchyrollConnectionConstants from "CrunchyrollConnectionConstants" /* 8801 */;
-import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 14044 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14048 */;
+import CrunchyrollConnectionConstants from "CrunchyrollConnectionConstants" /* 8824 */;
+import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 14068 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14072 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -83,7 +83,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Crunchyrol
     }
   }
   ({ platformType: PlatformTypes.CRUNCHYROLL, onError: tmp7, onNext: tmp6, img: AssetRegistryDefault, imgStyle: image, title: tmp8, body: tmp9, redirectDestination });
-  const TwoWayLinkPreConnect = tmp(9599).TwoWayLinkPreConnect;
+  const TwoWayLinkPreConnect = tmp(9622).TwoWayLinkPreConnect;
   cResult[6] = tmp7;
   cResult[7] = tmp6;
   cResult[8] = tmp4.image;
@@ -100,7 +100,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Crunchyrol
   const callback1 = react.useCallback(() => {
     navigation.push(constants.ERROR);
   }, items1);
-  const TwoWayLinkPreConnect = navigation(9599).TwoWayLinkPreConnect;
+  const TwoWayLinkPreConnect = navigation(9622).TwoWayLinkPreConnect;
   const intl = navigation(1128).intl;
   const intl2 = navigation(1128).intl;
   return <TwoWayLinkPreConnect platformType={PlatformTypes.CRUNCHYROLL} onError={callback1} onNext={callback} img={AssetRegistryDefault} imgStyle={tmp.image} title={intl.string(navigation(1128).t.siPkNp)} body={intl2.string(navigation(1128).t.oS4NEH)} redirectDestination={redirectDestination} />;

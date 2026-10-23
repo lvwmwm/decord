@@ -1,18 +1,18 @@
-// Module ID: 7859
-// Function ID: 7860
+// Module ID: 7872
+// Function ID: 7873
 // Name: StageChannelUtils
-// Dependencies: [5700, 4826, 6622, 1087, 7860, 12, 5975, 1128, 4906, 2]
+// Dependencies: [5712, 4826, 6635, 1087, 7873, 12, 5987, 1128, 4906, 2]
 // Exports: fillChunk, getParticipantNamesText, getRemoveModeratorTooltipHint, getStageChannelMetadata, summarizeUsernamesParticipating, summarizeUsernamesParticipatingWithSpeakerNickname
 
-// Module 7859 (StageChannelUtils)
+// Module 7872 (StageChannelUtils)
 import _mod12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1087 */;
 import intl5 from "intl" /* 1128 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4906 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5975 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6622 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7860 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5700 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5987 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6635 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7873 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5712 */;
 import StageInstanceStore from "StageInstanceStore" /* 4826 */;
 import size from "module_2" /* 2 */;
 

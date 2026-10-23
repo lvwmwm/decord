@@ -1,10 +1,10 @@
-// Module ID: 5826
-// Function ID: 5827
+// Module ID: 5838
+// Function ID: 5839
 // Name: getMediaPerformanceClass
 // Dependencies: [4926, 2]
 // Exports: default
 
-// Module 5826 (getMediaPerformanceClass)
+// Module 5838 (getMediaPerformanceClass)
 import DeviceUtils from "DeviceUtils" /* 4926 */;
 import size from "module_2" /* 2 */;
 

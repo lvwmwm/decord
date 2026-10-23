@@ -1,20 +1,20 @@
-// Module ID: 5978
-// Function ID: 5979
+// Module ID: 5990
+// Function ID: 5991
 // Name: MarkupChannelMentionRule
-// Dependencies: [4873, 4821, 4843, 4901, 4911, 1392, 1087, 2033, 1417, 1128, 5979, 5980, 5590, 5988, 5592, 5977, 1951, 2]
+// Dependencies: [4873, 4821, 4843, 4901, 4911, 1392, 1087, 2033, 1417, 1128, 5991, 5992, 5602, 6000, 5604, 5989, 1951, 2]
 // Exports: getGuildIdFromChannelId
 
-// Module 5978 (MarkupChannelMentionRule)
+// Module 5990 (MarkupChannelMentionRule)
 import intl3 from "intl" /* 1128 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import _modDef1951 from "module_1951" /* 1951 */;
 import StringUtils from "StringUtils" /* 2033 */;
-import useChannelName from "useChannelName" /* 5590 */;
-import LinkUtils from "LinkUtils" /* 5592 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 5977 */;
-import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5979 */;
-import ChannelUtils from "ChannelUtils" /* 5980 */;
-import markup_ChannelUtils from "markup/ChannelUtils" /* 5988 */;
+import useChannelName from "useChannelName" /* 5602 */;
+import LinkUtils from "LinkUtils" /* 5604 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 5989 */;
+import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5991 */;
+import ChannelUtils from "ChannelUtils" /* 5992 */;
+import markup_ChannelUtils from "markup/ChannelUtils" /* 6000 */;
 import GatedChannelStore from "GatedChannelStore" /* 4873 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildStore from "GuildStore" /* 4843 */;

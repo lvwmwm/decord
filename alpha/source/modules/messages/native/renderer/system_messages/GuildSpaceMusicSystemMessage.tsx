@@ -1,21 +1,21 @@
-// Module ID: 8446
-// Function ID: 8447
+// Module ID: 8458
+// Function ID: 8459
 // Name: GuildSpaceMusicSystemMessage
-// Dependencies: [4821, 6674, 1392, 4969, 587, 8340, 8341, 5975, 8304, 1128, 8306, 8263, 8447, 8308, 2]
+// Dependencies: [4821, 6687, 1392, 4969, 587, 8352, 8353, 5987, 8316, 1128, 8318, 8275, 8459, 8320, 2]
 // Exports: createGuildSpaceMusicSystemMessage
 
-// Module 8446 (GuildSpaceMusicSystemMessage)
+// Module 8458 (GuildSpaceMusicSystemMessage)
 import nativeDefault from "native" /* 587 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5975 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8263 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8304 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8306 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8308 */;
-import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 8340 */;
-import PopularMusicSystemMessageCopy from "PopularMusicSystemMessageCopy" /* 8341 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8447 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5987 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8275 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8316 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8318 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8320 */;
+import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 8352 */;
+import PopularMusicSystemMessageCopy from "PopularMusicSystemMessageCopy" /* 8353 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8459 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 6674 */;
+import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 6687 */;
 import UserStore from "UserStore" /* 1392 */;
 import createStyles from "createStyles" /* 4969 */;
 import size from "module_2" /* 2 */;

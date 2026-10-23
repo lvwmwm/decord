@@ -1,14 +1,14 @@
-// Module ID: 6805
-// Function ID: 6806
+// Module ID: 6818
+// Function ID: 6819
 // Name: ThreadNotificationSettings
-// Dependencies: [4821, 6689, 4903, 1127, 1087, 1405, 558, 576, 504, 2]
+// Dependencies: [4821, 6702, 4903, 1127, 1087, 1405, 558, 576, 504, 2]
 
-// Module 6805 (ThreadNotificationSettings)
+// Module 6818 (ThreadNotificationSettings)
 import Constants from "Constants" /* 1087 */;
 import ThreadConstants from "ThreadConstants" /* 1127 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6689 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6702 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4903 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

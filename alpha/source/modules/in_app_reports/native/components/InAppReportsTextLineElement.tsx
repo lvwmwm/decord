@@ -1,12 +1,12 @@
-// Module ID: 8115
-// Function ID: 8116
+// Module ID: 8128
+// Function ID: 8129
 // Name: InAppReportsTextLineElement
-// Dependencies: [5, 32, 19, 17, 21, 4969, 587, 558, 576, 5965, 5585, 7270, 5648, 1384, 4926, 5646, 5220, 1128, 5230, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4969, 587, 558, 576, 5977, 5597, 7283, 5660, 1384, 4926, 5658, 5232, 1128, 5242, 2]
 
-// Module 8115 (InAppReportsTextLineElement)
+// Module 8128 (InAppReportsTextLineElement)
 import nativeDefault from "native" /* 587 */;
-import ToastUtils from "ToastUtils" /* 5648 */;
-import ClipboardUtils from "ClipboardUtils" /* 7270 */;
+import ToastUtils from "ToastUtils" /* 5660 */;
+import ClipboardUtils from "ClipboardUtils" /* 7283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -64,7 +64,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextLineElem
   } else {
     first = cResult[0];
   }
-  const tmp8 = sms_body(5585)(first);
+  const tmp8 = sms_body(5597)(first);
   if (is_localized) {
     let tmp10;
     let tmp11;
@@ -146,7 +146,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextLineElem
                 }
                 if (cResult[22] !== sms) {
                   let obj2 = { variant: "text-sm/semibold", color: "interactive-text-active", children: sms };
-                  const tmp30 = closure_9(tmp(5220).Text, obj2);
+                  const tmp30 = closure_9(tmp(5232).Text, obj2);
                   cResult[22] = sms;
                   cResult[23] = tmp30;
                   tmp28 = tmp30;
@@ -199,7 +199,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextLineElem
                         }
                         if (cResult[37] !== tmp12) {
                           let obj3 = { text: tmp44, size: "md", onPress: tmp12 };
-                          const tmp48 = closure_9(tmp(5230).Button, obj3);
+                          const tmp48 = closure_9(tmp(5242).Button, obj3);
                           cResult[37] = tmp12;
                           cResult[38] = tmp48;
                           tmp46 = tmp48;
@@ -273,7 +273,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextLineElem
                   tmp36 = tmp39;
                 }
                 const obj9 = { text: tmp31, size: "sm", onPress: tmp10, variant: "secondary" };
-                const tmp35 = closure_9(tmp(5230).Button, obj9);
+                const tmp35 = closure_9(tmp(5242).Button, obj9);
                 cResult[26] = tmp10;
                 cResult[27] = tmp31;
                 cResult[28] = tmp35;
@@ -286,7 +286,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextLineElem
               tmp27 = items3;
             }
             const obj10 = { style: tmp20, variant: "text-md/medium", children: tmp21 };
-            const tmp25 = closure_9(tmp(5220).Text, obj10);
+            const tmp25 = closure_9(tmp(5232).Text, obj10);
             cResult[16] = tmp4.description;
             cResult[17] = tmp21;
             cResult[18] = tmp25;
@@ -299,7 +299,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextLineElem
           tmp21 = tmp8Result;
         }
         const obj11 = { style: tmp4.header, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title };
-        const tmp19 = closure_9(tmp(5220).Text, obj11);
+        const tmp19 = closure_9(tmp(5232).Text, obj11);
         cResult[10] = tmp4.header;
         cResult[11] = title;
         cResult[12] = tmp19;

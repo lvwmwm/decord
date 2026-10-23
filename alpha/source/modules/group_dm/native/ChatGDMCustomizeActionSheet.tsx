@@ -1,13 +1,13 @@
-// Module ID: 10003
-// Function ID: 10004
+// Module ID: 10025
+// Function ID: 10026
 // Name: ChatGDMCustomizeActionSheet
-// Dependencies: [19, 21, 558, 576, 10004, 1128, 10007, 10009, 2]
+// Dependencies: [19, 21, 558, 576, 10026, 1128, 10029, 10031, 2]
 
-// Module 10003 (ChatGDMCustomizeActionSheet)
+// Module 10025 (ChatGDMCustomizeActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import useNavigatorConfirmChangesOnBackDefault from "useNavigatorConfirmChangesOnBack" /* 10004 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10007 */;
-import ChatGDMCustomizeDefault from "ChatGDMCustomize" /* 10009 */;
+import useNavigatorConfirmChangesOnBackDefault from "useNavigatorConfirmChangesOnBack" /* 10026 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10029 */;
+import ChatGDMCustomizeDefault from "ChatGDMCustomize" /* 10031 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

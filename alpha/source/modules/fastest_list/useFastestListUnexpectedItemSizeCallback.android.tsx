@@ -1,10 +1,10 @@
-// Module ID: 7138
-// Function ID: 7139
+// Module ID: 7151
+// Function ID: 7152
 // Name: useFastestListUnexpectedItemSizeCallback
-// Dependencies: [19, 558, 576, 7139, 2]
+// Dependencies: [19, 558, 576, 7152, 2]
 
-// Module 7138 (useFastestListUnexpectedItemSizeCallback)
-import FastestListLogger from "FastestListLogger" /* 7139 */;
+// Module 7151 (useFastestListUnexpectedItemSizeCallback)
+import FastestListLogger from "FastestListLogger" /* 7152 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

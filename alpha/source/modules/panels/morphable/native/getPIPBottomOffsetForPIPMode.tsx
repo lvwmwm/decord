@@ -1,11 +1,11 @@
-// Module ID: 18290
-// Function ID: 18291
+// Module ID: 18334
+// Function ID: 18335
 // Name: getPIPBottomOffsetForPIPMode
-// Dependencies: [10874, 2]
+// Dependencies: [10897, 2]
 // Exports: default
 
-// Module 18290 (getPIPBottomOffsetForPIPMode)
-import MorphablePanelConstants from "MorphablePanelConstants" /* 10874 */;
+// Module 18334 (getPIPBottomOffsetForPIPMode)
+import MorphablePanelConstants from "MorphablePanelConstants" /* 10897 */;
 import size from "module_2" /* 2 */;
 
 const PIP_WINDOW_OFFSET = MorphablePanelConstants.PIP_WINDOW_OFFSET;

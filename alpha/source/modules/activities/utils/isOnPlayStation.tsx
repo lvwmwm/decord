@@ -1,10 +1,10 @@
-// Module ID: 14236
-// Function ID: 14237
+// Module ID: 14260
+// Function ID: 14261
 // Name: isOnPlayStation
 // Dependencies: [1087, 2]
 // Exports: default
 
-// Module 14236 (isOnPlayStation)
+// Module 14260 (isOnPlayStation)
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

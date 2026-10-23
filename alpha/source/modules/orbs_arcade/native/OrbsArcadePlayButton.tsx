@@ -1,13 +1,13 @@
-// Module ID: 16336
-// Function ID: 16337
+// Module ID: 16386
+// Function ID: 16387
 // Name: OrbsArcadePlayButton
-// Dependencies: [19, 16316, 21, 558, 576, 7238, 16337, 504, 16338, 9405, 587, 5230, 2]
+// Dependencies: [19, 16366, 21, 558, 576, 7251, 16387, 504, 16388, 9428, 587, 5242, 2]
 
-// Module 16336 (OrbsArcadePlayButton)
+// Module 16386 (OrbsArcadePlayButton)
 import Fragment from "Fragment" /* 21 */;
-import launchOrbsArcadeGameDefault from "launchOrbsArcadeGame" /* 16338 */;
+import launchOrbsArcadeGameDefault from "launchOrbsArcadeGame" /* 16388 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16316 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16366 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,9 +24,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
   game = game.game;
   size = game.size;
   const tmp4 = analyticsLocations;
-  analyticsLocations = analyticsLocations(7238)().analyticsLocations;
-  ({ text, isPaidPlay } = analyticsLocations(16337)(game));
-  analyticsLocations(16337)(game);
+  analyticsLocations = analyticsLocations(7251)().analyticsLocations;
+  ({ text, isPaidPlay } = analyticsLocations(16387)(game));
+  analyticsLocations(16387)(game);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [OrbsArcadeStore];
     cResult[0] = items;
@@ -59,7 +59,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
     if (cResult[7] !== isPaidPlay) {
       let tmp13;
       if (isPaidPlay) {
-        const OrbsIcon = tmp(9405).OrbsIcon;
+        const OrbsIcon = tmp(9428).OrbsIcon;
         tmp13 = <OrbsIcon size="sm" color={tmp4(587).colors.CONTROL_PRIMARY_TEXT_DEFAULT} />;
       }
       cResult[7] = isPaidPlay;
@@ -83,7 +83,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
         }
       }
     }
-    const tmp19 = jsx(game(5230).Button, { grow: true, size, variant: "primary", text, icon: tmp12, disabled: null == game.applicationId, loading: stateFromStores, onPress: tmp11 });
+    const tmp19 = jsx(game(5242).Button, { grow: true, size, variant: "primary", text, icon: tmp12, disabled: null == game.applicationId, loading: stateFromStores, onPress: tmp11 });
     cResult[9] = tmp11;
     cResult[10] = stateFromStores;
     cResult[11] = size;
@@ -107,9 +107,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
   let analyticsLocations;
   size = game.size;
   const tmp = analyticsLocations;
-  analyticsLocations = analyticsLocations(7238)().analyticsLocations;
-  ({ text, isPaidPlay } = analyticsLocations(16337)(game));
-  analyticsLocations(16337)(game);
+  analyticsLocations = analyticsLocations(7251)().analyticsLocations;
+  ({ text, isPaidPlay } = analyticsLocations(16387)(game));
+  analyticsLocations(16387)(game);
   const items = [OrbsArcadeStore];
   const items1 = [game.id];
   const items2 = [game, analyticsLocations];
@@ -117,11 +117,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
   const stateFromStores = obj.useStateFromStores(items, () => OrbsArcadeStore.isLaunchingGame(game.id), items1);
   const callback = react.useCallback(() => launchOrbsArcadeGameDefault(game, analyticsLocations), items2);
   let tmp7Result;
-  const Button = game(5230).Button;
+  const Button = game(5242).Button;
   const tmp4 = game;
   if (isPaidPlay) {
     const obj3 = { size: "sm", color: tmp(587).colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-    const OrbsIcon = tmp4(9405).OrbsIcon;
+    const OrbsIcon = tmp4(9428).OrbsIcon;
     tmp7Result = tmp7(OrbsIcon, obj3);
   }
   return <Button grow size={size} variant="primary" text={text} icon={tmp7Result} disabled={null == game.applicationId} loading={stateFromStores} onPress={callback} />;

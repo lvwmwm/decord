@@ -1,10 +1,10 @@
-// Module ID: 11970
-// Function ID: 11971
+// Module ID: 11989
+// Function ID: 11990
 // Name: useActivityApplications
-// Dependencies: [19, 558, 576, 11971, 11344, 2]
+// Dependencies: [19, 558, 576, 11990, 11367, 2]
 
-// Module 11970 (useActivityApplications)
-import fetchShelf from "fetchShelf" /* 11344 */;
+// Module 11989 (useActivityApplications)
+import fetchShelf from "fetchShelf" /* 11367 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -25,7 +25,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
   } else {
     tmp3 = cResult[1];
   }
-  const arr = fetchesShelf(11971)(tmp3);
+  const arr = fetchesShelf(11990)(tmp3);
   if (cResult[2] !== arr) {
     let tmp6;
     const _Symbol = Symbol;
@@ -74,7 +74,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
   guildId = guildId.guildId;
   const fetchesShelf = guildId.fetchesShelf;
   const items = [fetchesShelf, guildId];
-  const arr = fetchesShelf(11971)({ guildId });
+  const arr = fetchesShelf(11990)({ guildId });
   const mapped = arr.map((application) => application.application);
   const effect = react.useEffect(() => {
     const tmp = fetchesShelf;

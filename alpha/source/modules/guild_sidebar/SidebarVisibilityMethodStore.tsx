@@ -1,10 +1,10 @@
-// Module ID: 9548
-// Function ID: 9549
+// Module ID: 9571
+// Function ID: 9572
 // Name: SidebarVisibilityMethodStore
 // Dependencies: [570, 2]
 // Exports: getVisibleChannelIdsMethod, getVisibleGuildIdsMethod, setGetVisibleChannelIds, setGetVisibleGuildIds
 
-// Module 9548 (SidebarVisibilityMethodStore)
+// Module 9571 (SidebarVisibilityMethodStore)
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 17326
-// Function ID: 17327
+// Module ID: 17370
+// Function ID: 17371
 // Name: useAuthWebsocket
-// Dependencies: [5, 32, 19, 1087, 3, 558, 576, 17325, 569, 7042, 14901, 17327, 1123, 1297, 6653, 17329, 2]
+// Dependencies: [5, 32, 19, 1087, 3, 558, 576, 17369, 569, 7055, 14925, 17371, 1123, 1297, 6666, 17373, 2]
 
-// Module 17326 (useAuthWebsocket)
+// Module 17370 (useAuthWebsocket)
 import LoggerDefault from "Logger" /* 3 */;
 import BackoffDefault from "Backoff" /* 569 */;
-import useStableCallbackDefault from "useStableCallback" /* 7042 */;
-import typing from "typing" /* 17325 */;
-import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 17327 */;
+import useStableCallbackDefault from "useStableCallback" /* 7055 */;
+import typing from "typing" /* 17369 */;
+import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 17371 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -48,7 +48,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAuthWebso
   let tmp8 = tmp6[1];
   react = tmp8;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj3 = { step: tmp(17325).RemoteAuthStep.INITIALIZING };
+    let obj3 = { step: tmp(17369).RemoteAuthStep.INITIALIZING };
     cResult[0] = obj3;
     first1 = obj3;
   } else {
@@ -81,7 +81,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAuthWebso
         tmp2 = closure_1;
         if (tmp2) {
           tmp7 = closure_3;
-          tmp8 = closure_3(() => { /* body not rendered: F152756 */ });
+          tmp8 = closure_3(() => { /* body not rendered: F153057 */ });
         } else {
           tmp3 = closure_8;
           str = "document is not visible, will defer reconnection when document becomes visible.";
@@ -105,7 +105,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAuthWebso
         tmp2 = closure_1;
         if (tmp2) {
           tmp7 = closure_3;
-          tmp8 = closure_3(() => { /* body not rendered: F152756 */ });
+          tmp8 = closure_3(() => { /* body not rendered: F153057 */ });
         } else {
           tmp3 = closure_8;
           str = "document is not visible, will defer reconnection when document becomes visible.";
@@ -187,7 +187,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAuthWebso
         flag = false;
         tmp8 = closure_5(false);
         tmp9 = closure_3;
-        tmp10 = closure_3(() => { /* body not rendered: F152757 */ });
+        tmp10 = closure_3(() => { /* body not rendered: F153058 */ });
       }
       return;
     }

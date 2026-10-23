@@ -1,11 +1,11 @@
-// Module ID: 18577
-// Function ID: 18578
+// Module ID: 18621
+// Function ID: 18622
 // Name: useSelfHasVideo
-// Dependencies: [6757, 502, 2014, 558, 576, 10878, 504, 2]
+// Dependencies: [6770, 502, 2014, 558, 576, 10901, 504, 2]
 
-// Module 18577 (useSelfHasVideo)
-import participantHasVideo from "participantHasVideo" /* 10878 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6757 */;
+// Module 18621 (useSelfHasVideo)
+import participantHasVideo from "participantHasVideo" /* 10901 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6770 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

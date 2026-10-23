@@ -1,12 +1,12 @@
-// Module ID: 14213
-// Function ID: 14214
+// Module ID: 14237
+// Function ID: 14238
 // Name: useCardGridLayout
-// Dependencies: [7289, 558, 576, 1499, 2]
+// Dependencies: [7302, 558, 576, 1499, 2]
 
-// Module 14213 (useCardGridLayout)
+// Module 14237 (useCardGridLayout)
 import react from "react" /* 576 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
-import Constants from "Constants" /* 7289 */;
+import Constants from "Constants" /* 7302 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

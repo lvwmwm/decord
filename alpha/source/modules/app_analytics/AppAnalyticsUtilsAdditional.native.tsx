@@ -1,10 +1,10 @@
-// Module ID: 15029
-// Function ID: 15030
+// Module ID: 15053
+// Function ID: 15054
 // Name: AppAnalyticsUtilsAdditional
 // Dependencies: [2]
 // Exports: getVoiceAnalyticsMetadataAdditional
 
-// Module 15029 (AppAnalyticsUtilsAdditional)
+// Module 15053 (AppAnalyticsUtilsAdditional)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_analytics/AppAnalyticsUtilsAdditional.native.tsx");

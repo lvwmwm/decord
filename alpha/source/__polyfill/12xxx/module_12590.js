@@ -1,34 +1,65 @@
 // Module ID: 12590
 // Function ID: 12591
-// Dependencies: [12522]
-// Exports: applySdkMetadata
+// Dependencies: [12563, 12567, 12539, 12546]
+// Exports: notifyEventProcessors
 
 // Module 12590
-import _mod12522 from "module_12522" /* 12522 */;
+const require = globalThis.__r;
+let _require, closure_3, dependencyMap;
 
 
-export const applySdkMetadata = function applySdkMetadata(_metadata, arg1) {
-  let arr = arg2;
-  if (arg2 === undefined) {
-    const items = [arg1];
-    arr = items;
-  }
-  let str = arg3;
-  if (arg3 === undefined) {
-    str = "npm";
-  }
-  const tmp = _metadata._metadata || {};
-  if (!tmp.sdk) {
-    let obj = {
-      name: "sentry.javascript." + arg1,
-      packages: arr.map((item) => {
-          const obj = { name: "" + str + ":@sentry/" + item, version: _mod12522.SDK_VERSION };
-          return obj;
-        }),
-      version: str(12522).SDK_VERSION
-    };
-    const _HermesInternal = HermesInternal;
-    tmp.sdk = obj;
-  }
-  _metadata._metadata = tmp;
+export const notifyEventProcessors = function notifyEventProcessors(arg0, arg1, arg2) {
+  let closure_0;
+  let closure_1;
+  let num;
+  const f114986 = function(fn, arg1) {
+    closure_0 = fn;
+    let tmp3 = closure_0[closure_3];
+    let tmp4 = closure_1;
+    if (null !== closure_1) {
+      if (typeof tmp3 === "function") {
+        let obj = {};
+        let tmp13 = obj;
+        let tmp14 = tmp4;
+        let merged = Object.assign(tmp4);
+        let tmp16 = closure_2;
+        let tmp3Result = tmp3(obj, closure_2);
+        let tmp17 = closure_0;
+        let tmp18 = closure_1;
+        let tmp5 = closure_0(closure_1[1]).DEBUG_BUILD && tmp3.id && null === tmp3Result;
+        if (tmp5) {
+          let logger = tmp17(tmp18[2]).logger;
+          let tmp6 = globalThis;
+          let _HermesInternal = HermesInternal;
+          let str = "\" dropped event";
+          let str2 = "Event processor \"";
+          let logResult = logger.log("Event processor \"" + tmp3.id + "\" dropped event");
+        }
+        let tmp8 = arg1;
+        let tmp17Result = tmp17(tmp18[3]);
+        if (tmp17Result.isThenable(tmp3Result)) {
+          let nextPromise = tmp3Result.then(f149004);
+          let nextPromise1 = nextPromise.then(null, arg1);
+        } else {
+          let num = 1;
+          closure_0 = tmp;
+          closure_1 = tmp3Result;
+          closure_2 = tmp16;
+          closure_3 = tmp2 + 1;
+          let self = this;
+          let self2 = this;
+          let syncPromise = new tmp17(tmp18[0]).SyncPromise(f114986);
+          let tmp9 = syncPromise;
+          let nextPromise2 = syncPromise.then(fn);
+          let nextPromise3 = nextPromise2.then(null, arg1);
+        }
+      }
+    }
+    let tmp12 = fn(tmp4);
+  };
+  _require = arg0;
+  dependencyMap = arg1;
+  let closure_2 = arg2;
+  const syncPromise = new require("module_12563").SyncPromise(f114986);
+  return syncPromise;
 };

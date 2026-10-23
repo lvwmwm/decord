@@ -1,14 +1,14 @@
-// Module ID: 18072
-// Function ID: 18073
+// Module ID: 18116
+// Function ID: 18117
 // Name: GroupDMNitroCapBanner
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5238, 14678, 5244, 9401, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5250, 14702, 5256, 9424, 2]
 
-// Module 18072 (GroupDMNitroCapBanner)
+// Module 18116 (GroupDMNitroCapBanner)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 5238 */;
-import LinearGradientDefault from "LinearGradient" /* 5244 */;
-import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 14678 */;
+import useToken from "useToken" /* 5250 */;
+import LinearGradientDefault from "LinearGradient" /* 5256 */;
+import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 14702 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -26,7 +26,7 @@ let obj4;
 let obj5;
 let obj6;
 let tmp2;
-const NitroWheelIcon2 = tmp2(9401);
+const NitroWheelIcon2 = tmp2(9424);
 ({ StyleSheet: c3, View: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 const locations = [0.0065, 0.5046, 0.9196];
@@ -207,7 +207,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNit
           if (tmp28) {
             const obj11 = { style: tmp5.iconContainer, children: hasOwnProperty(NitroWheelIcon, obj12) };
             obj12 = { size: "md", color: nativeDefault.colors.WHITE };
-            NitroWheelIcon = tmp(9401).NitroWheelIcon;
+            NitroWheelIcon = tmp(9424).NitroWheelIcon;
             tmp28 = hasOwnProperty(React3, obj11);
           }
           cResult[19] = undefined === showLeadingIcon || showLeadingIcon;

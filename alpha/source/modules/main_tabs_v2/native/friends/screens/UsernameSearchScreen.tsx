@@ -1,9 +1,9 @@
-// Module ID: 18144
-// Function ID: 18145
+// Module ID: 18188
+// Function ID: 18189
 // Name: UsernameSearchScreen
-// Dependencies: [19, 17, 1087, 21, 4969, 587, 558, 576, 1267, 5579, 5253, 9685, 1384, 10602, 1128, 15045, 7120, 2]
+// Dependencies: [19, 17, 1087, 21, 4969, 587, 558, 576, 1267, 5591, 5265, 9707, 1384, 10624, 1128, 15070, 7133, 2]
 
-// Module 18144 (UsernameSearchScreen)
+// Module 18188 (UsernameSearchScreen)
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -63,7 +63,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UsernameSear
   }
   let obj2 = react;
   const effect = react.useEffect(tmp5, tmp6);
-  const insets = ref(5579)().insets;
+  const insets = ref(5591)().insets;
   ref = react.useRef(null);
   if (cResult[2] !== navigation) {
     class T {
@@ -110,7 +110,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UsernameSear
     tmp10 = cResult[4];
   }
   const effect1 = obj2.useEffect(tmp9, tmp10);
-  const tmpResult = navigation(9685);
+  const tmpResult = navigation(9707);
   const clientThemesOverride = tmpResult.useClientThemesOverride();
   if (cResult[5] === insets.top) {
     class T {
@@ -213,7 +213,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UsernameSear
     const obj2 = { friend_add_type: constants2.FRIENDS_ADD_BY_USERNAME_MODAL };
     obj.track(constants.FRIEND_ADD_VIEWED, obj2);
   }, []);
-  const insets = ref(5579)().insets;
+  const insets = ref(5591)().insets;
   ref = react.useRef(null);
   const items = [navigation];
   const effect1 = react.useEffect(() => navigation.addListener("transitionEnd", (data) => {
@@ -229,7 +229,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UsernameSear
       }
     }
   }), items);
-  let obj = navigation(9685);
+  let obj = navigation(9707);
   const clientThemesOverride = obj.useClientThemesOverride();
   let obj2 = navigation(1384);
   let prop = null;
@@ -246,13 +246,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UsernameSear
   obj4 = { style: items1, children: items2 };
   items1 = [tmp.content, clientThemesOverride];
   items2 = [, ];
-  tmp3Result = ref(7120);
-  items2[0] = closure_8(ref(10602), { absolute: true });
+  tmp3Result = ref(7133);
+  items2[0] = closure_8(ref(10624), { absolute: true });
   const obj5 = { alwaysBounceVertical: false, keyboardShouldPersistTaps: "handled", contentContainerStyle: items3, children: closure_8(tmp3Result2, obj7) };
   items3 = [tmp.container, prop, { paddingBottom: insets.bottom + tmp3(587).space.PX_16 }];
   obj7 = { style: tmp.inputContainer, autoFocusInput: false, headerText: intl.string(navigation(1128).t.YEOwDM), headerTextStyle: tmp.headerText, ref };
   ({ paddingBottom: insets.bottom + ref(587).space.PX_16 });
-  tmp3Result2 = ref(15045);
+  tmp3Result2 = ref(15070);
   intl = tmp7(1128).intl;
   items2[1] = closure_8(closure_4, obj5);
   return closure_8(closure_5, obj3);

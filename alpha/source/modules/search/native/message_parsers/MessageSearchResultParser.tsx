@@ -1,12 +1,12 @@
-// Module ID: 18053
-// Function ID: 18054
+// Module ID: 18097
+// Function ID: 18098
 // Name: MessageSearchResultParser
-// Dependencies: [4912, 9691, 18054, 13165, 18055, 12, 2]
+// Dependencies: [4912, 9713, 18098, 13188, 18099, 12, 2]
 
-// Module 18053 (MessageSearchResultParser)
+// Module 18097 (MessageSearchResultParser)
 import _mod12 from "module_12" /* 12 */;
-import SearchConstants from "SearchConstants" /* 9691 */;
-import CachedSearchResultParser2 from "CachedSearchResultParser" /* 18054 */;
+import SearchConstants from "SearchConstants" /* 9713 */;
+import CachedSearchResultParser2 from "CachedSearchResultParser" /* 18098 */;
 import MessageRecord from "MessageRecord" /* 4912 */;
 import size from "module_2" /* 2 */;
 

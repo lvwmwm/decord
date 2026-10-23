@@ -1,9 +1,9 @@
-// Module ID: 7306
-// Function ID: 7307
+// Module ID: 7319
+// Function ID: 7320
 // Name: ConjureBuilderRouteStore
 // Dependencies: [4828, 504, 584, 2]
 
-// Module 7306 (ConjureBuilderRouteStore)
+// Module 7319 (ConjureBuilderRouteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ChannelConstants from "ChannelConstants" /* 4828 */;

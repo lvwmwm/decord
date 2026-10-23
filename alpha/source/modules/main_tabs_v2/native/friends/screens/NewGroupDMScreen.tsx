@@ -1,26 +1,26 @@
-// Module ID: 18131
-// Function ID: 18132
+// Module ID: 18175
+// Function ID: 18176
 // Name: NewGroupDMScreen
-// Dependencies: [32, 5, 19, 17, 4821, 15013, 5700, 1392, 10593, 1087, 21, 4969, 587, 7396, 7852, 7398, 12650, 5196, 504, 11263, 11265, 11262, 1267, 5649, 1128, 18130, 9676, 11266, 5648, 9686, 9067, 8841, 9037, 1202, 10594, 18071, 2]
+// Dependencies: [32, 5, 19, 17, 4821, 15037, 5712, 1392, 10615, 1087, 21, 4969, 587, 7409, 7865, 7411, 12669, 5208, 504, 11286, 11288, 11285, 1267, 5661, 1128, 18174, 9698, 11289, 5660, 9708, 9090, 8864, 9060, 1202, 10616, 18115, 2]
 // Exports: default
 
-// Module 18131 (NewGroupDMScreen)
+// Module 18175 (NewGroupDMScreen)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import ToastUtils from "ToastUtils" /* 5648 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7396 */;
-import HeaderShared from "HeaderShared" /* 9676 */;
-import UserRowConstants from "UserRowConstants" /* 10593 */;
-import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11266 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 18130 */;
+import ToastUtils from "ToastUtils" /* 5660 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7409 */;
+import HeaderShared from "HeaderShared" /* 9698 */;
+import UserRowConstants from "UserRowConstants" /* 10615 */;
+import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11289 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 18174 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 15013 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5700 */;
+import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 15037 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5712 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;

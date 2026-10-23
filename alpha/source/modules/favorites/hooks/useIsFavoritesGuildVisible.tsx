@@ -1,12 +1,12 @@
-// Module ID: 16600
-// Function ID: 16601
+// Module ID: 16647
+// Function ID: 16648
 // Name: useIsFavoritesGuildVisible
-// Dependencies: [4995, 4824, 4846, 558, 576, 504, 2]
+// Dependencies: [5000, 4824, 4846, 558, 576, 504, 2]
 // Exports: isFavoritesGuildVisible
 
-// Module 16600 (useIsFavoritesGuildVisible)
+// Module 16647 (useIsFavoritesGuildVisible)
 import FavoritesUtils from "FavoritesUtils" /* 4846 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5000 */;
 import FavoriteStore from "FavoriteStore" /* 4824 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

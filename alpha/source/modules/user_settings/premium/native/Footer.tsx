@@ -1,18 +1,18 @@
-// Module ID: 14751
-// Function ID: 14752
+// Module ID: 14775
+// Function ID: 14776
 // Name: Footer
-// Dependencies: [19, 17, 21, 4969, 558, 576, 14752, 7263, 5220, 1128, 5230, 5655, 14753, 2]
+// Dependencies: [19, 17, 21, 4969, 558, 576, 14776, 7276, 5232, 1128, 5242, 5667, 14777, 2]
 
-// Module 14751 (Footer)
+// Module 14775 (Footer)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import components_Button_Button from "components/Button/Button" /* 5230 */;
-import FastImageDefault from "FastImage" /* 5655 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7263 */;
-import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 14752 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14753 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import components_Button_Button from "components/Button/Button" /* 5242 */;
+import FastImageDefault from "FastImage" /* 5667 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7276 */;
+import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 14776 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14777 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -94,7 +94,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Footer(arg0)
     if (tmp10) {
       const obj4 = { children: items1 };
       const obj5 = { style: tmp4.footerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl2.t["2bSPbq"]) };
-      const Text = tmp(5220).Text;
+      const Text = tmp(5232).Text;
       intl = tmp(1128).intl;
       items1 = [React3(Text, obj5), ];
       const obj6 = { style: tmp4.button, children: React3(components_Button_Button.Button, obj7) };

@@ -1,17 +1,17 @@
-// Module ID: 9968
-// Function ID: 9969
+// Module ID: 9990
+// Function ID: 9991
 // Name: MessagePreviewReactions
-// Dependencies: [19, 7682, 7686, 8825, 21, 558, 576, 504, 7238, 7263, 9958, 2]
+// Dependencies: [19, 7695, 7699, 8848, 21, 558, 576, 504, 7251, 7276, 9980, 2]
 
-// Module 9968 (MessagePreviewReactions)
+// Module 9990 (MessagePreviewReactions)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7238 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7263 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7251 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7276 */;
 import react from "react" /* 19 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7682 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7686 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 8825 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7695 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7699 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 8848 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -123,9 +123,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePre
     }
   }
   if (arr.length > 0) {
-    tmp7 = jsx(tmp(9958).MessageReactionsContent, { channelId, messageId, emoji, reactions: arr });
+    tmp7 = jsx(tmp(9980).MessageReactionsContent, { channelId, messageId, emoji, reactions: arr });
   } else {
-    tmp7 = jsx(tmp(9958).MessageReactionsEmpty, {});
+    tmp7 = jsx(tmp(9980).MessageReactionsEmpty, {});
   }
   cResult[0] = channelId;
   cResult[1] = emoji;
@@ -144,9 +144,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePre
   const AnalyticsLocationProvider = useAnalyticsLocations.AnalyticsLocationProvider;
   if (arr.length > 0) {
     const obj2 = { channelId, messageId, emoji, reactions: arr };
-    tmp3Result = tmp3(tmp4(9958).MessageReactionsContent, obj2);
+    tmp3Result = tmp3(tmp4(9980).MessageReactionsContent, obj2);
   } else {
-    tmp3Result = tmp3(tmp4(9958).MessageReactionsEmpty, {});
+    tmp3Result = tmp3(tmp4(9980).MessageReactionsEmpty, {});
   }
   return <AnalyticsLocationProvider value={tmp2(AnalyticsLocationDefault.MESSAGE_PREVIEW_REACTIONS).analyticsLocations}>{tmp3Result}</AnalyticsLocationProvider>;
 });

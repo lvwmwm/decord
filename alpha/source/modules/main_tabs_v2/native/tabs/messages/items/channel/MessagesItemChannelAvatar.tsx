@@ -1,18 +1,18 @@
-// Module ID: 17380
-// Function ID: 17381
+// Module ID: 17424
+// Function ID: 17425
 // Name: MessagesItemChannelAvatar
-// Dependencies: [19, 4970, 502, 5698, 12999, 1392, 12014, 21, 4969, 587, 558, 576, 1202, 504, 10665, 2]
+// Dependencies: [19, 4970, 502, 5710, 13022, 1392, 12033, 21, 4969, 587, 558, 576, 1202, 504, 10687, 2]
 
-// Module 17380 (MessagesItemChannelAvatar)
+// Module 17424 (MessagesItemChannelAvatar)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10665 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12014 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10687 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12033 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PresenceStore from "PresenceStore" /* 5698 */;
-import TypingStore from "TypingStore" /* 12999 */;
+import PresenceStore from "PresenceStore" /* 5710 */;
+import TypingStore from "TypingStore" /* 13022 */;
 import UserStore from "UserStore" /* 1392 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -421,7 +421,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             return isMobileOnlineResult;
           }
         }
-        const obj3 = { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: null, streaming: isStreaming, style: tmp4Result.avatar, size: REFRESH_MEDIUM_32, animate: stateFromStores1, typing: stateFromStores, autoStatusCutout: false };
+        const obj3 = { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: null, streaming: isStreaming, style: tmp4Result.avatar, size: REFRESH_MEDIUM_32, animate: stateFromStores1, typing: stateFromStores, autoStatusCutout: 17083713 };
         const Avatar = tmp(tmp2[12]).Avatar;
         if (!stateFromStores2.isSystemUser()) {
           class H {
@@ -560,7 +560,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     tmp11Result = null;
     if (null != stateFromStores2) {
-      const obj7 = { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: tmp12, streaming: isStreaming, style: tmpResult.avatar, size: REFRESH_MEDIUM_32, animate: stateFromStores1, typing: stateFromStores, autoStatusCutout: false };
+      const obj7 = { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: tmp12, streaming: isStreaming, style: tmpResult.avatar, size: REFRESH_MEDIUM_32, animate: stateFromStores1, typing: stateFromStores, autoStatusCutout: 17083713 };
       const Avatar = tmp3(1202).Avatar;
       tmp12 = null;
       const tmp11 = jsx;

@@ -1,10 +1,25 @@
 // Module ID: 15479
 // Function ID: 15480
-// Dependencies: []
-// Exports: shouldPolyfill
+// Dependencies: [1174]
+// Exports: isMissingLocaleDataError
 
 // Module 15479
+import module_1174 from "module_1174" /* 1174 */;
 
-export const shouldPolyfill = function shouldPolyfill() {
-  return !("supportedValuesOf" in Intl);
+module_1174.__extends(function MissingLocaleDataError() {
+  const self = this;
+  let applyResult = null !== Error;
+  const obj = Error;
+  if (applyResult) {
+    applyResult = obj(...arguments);
+  }
+  if (!applyResult) {
+    applyResult = self;
+  }
+  applyResult.type = "MISSING_LOCALE_DATA";
+  return applyResult;
+}, Error);
+
+export const isMissingLocaleDataError = function isMissingLocaleDataError(type) {
+  return "MISSING_LOCALE_DATA" === type.type;
 };

@@ -1,9 +1,9 @@
-// Module ID: 6365
-// Function ID: 6366
+// Module ID: 6378
+// Function ID: 6379
 // Name: AppliedGuildBoostError
 // Dependencies: [4793, 4794, 1104, 1128, 2]
 
-// Module 6365 (AppliedGuildBoostError)
+// Module 6378 (AppliedGuildBoostError)
 import DurationsDefault from "Durations" /* 1104 */;
 import intl from "intl" /* 1128 */;
 import DateUtils from "DateUtils" /* 4794 */;

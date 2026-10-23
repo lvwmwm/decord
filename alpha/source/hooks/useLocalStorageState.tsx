@@ -1,11 +1,11 @@
-// Module ID: 11511
-// Function ID: 11512
+// Module ID: 11531
+// Function ID: 11532
 // Name: useLocalStorageState
-// Dependencies: [32, 19, 558, 576, 510, 5249, 2]
+// Dependencies: [32, 19, 558, 576, 510, 5261, 2]
 
-// Module 11511 (useLocalStorageState)
+// Module 11531 (useLocalStorageState)
 import Storage3 from "Storage" /* 510 */;
-import useMountEffectDefault from "useMountEffect" /* 5249 */;
+import useMountEffectDefault from "useMountEffect" /* 5261 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

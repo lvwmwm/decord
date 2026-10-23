@@ -1,24 +1,24 @@
-// Module ID: 18532
-// Function ID: 18533
+// Module ID: 18576
+// Function ID: 18577
 // Name: useControlsButtons
-// Dependencies: [19, 2014, 10871, 1087, 21, 18533, 18536, 18542, 18544, 18546, 18548, 18550, 18555, 18419, 1630, 10872, 18396, 504, 5038, 13099, 8739, 2]
+// Dependencies: [19, 2014, 10894, 1087, 21, 18577, 18580, 18586, 18588, 18590, 18592, 18594, 18599, 18463, 1630, 10895, 18440, 504, 5050, 13122, 8757, 2]
 // Exports: default
 
-// Module 18532 (useControlsButtons)
+// Module 18576 (useControlsButtons)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
-import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 13099 */;
-import VoicePanelMicButton from "VoicePanelMicButton" /* 18533 */;
-import VoicePanelConnectButtonDefault from "VoicePanelConnectButton" /* 18536 */;
-import VoicePanelChatButtonDefault from "VoicePanelChatButton" /* 18542 */;
-import VoicePanelDisconnectCancelButtonDefault from "VoicePanelDisconnectCancelButton" /* 18544 */;
-import VoicePanelVideoButtonDefault from "VoicePanelVideoButton" /* 18546 */;
-import VoicePanelSoundboardButtonDefault from "VoicePanelSoundboardButton" /* 18548 */;
-import VoicePanelScreenshareButtonDefault from "VoicePanelScreenshareButton" /* 18550 */;
-import VoicePanelDrawerToggleButtonDefault from "VoicePanelDrawerToggleButton" /* 18555 */;
+import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 13122 */;
+import VoicePanelMicButton from "VoicePanelMicButton" /* 18577 */;
+import VoicePanelConnectButtonDefault from "VoicePanelConnectButton" /* 18580 */;
+import VoicePanelChatButtonDefault from "VoicePanelChatButton" /* 18586 */;
+import VoicePanelDisconnectCancelButtonDefault from "VoicePanelDisconnectCancelButton" /* 18588 */;
+import VoicePanelVideoButtonDefault from "VoicePanelVideoButton" /* 18590 */;
+import VoicePanelSoundboardButtonDefault from "VoicePanelSoundboardButton" /* 18592 */;
+import VoicePanelScreenshareButtonDefault from "VoicePanelScreenshareButton" /* 18594 */;
+import VoicePanelDrawerToggleButtonDefault from "VoicePanelDrawerToggleButton" /* 18599 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10871 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10894 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -88,29 +88,29 @@ export default function useControlsButtons() {
   let safeArea;
   let stateFromStores;
   let treatment;
-  const context = treatment.useContext(safeArea(10872));
+  const context = treatment.useContext(safeArea(10895));
   const windowDimensions = context.windowDimensions;
   safeArea = context.safeArea;
-  let tmp2 = safeArea(18396)(context.channelId);
+  let tmp2 = safeArea(18440)(context.channelId);
   dependencyMap = tmp2;
-  let obj = safeArea(18419);
+  let obj = safeArea(18463);
   treatment = obj.useConfig({ location: "VoicePanelControlButtons" }).treatment;
   let obj2 = windowDimensions(504);
   let items = [stateFromStores];
   stateFromStores = obj2.useStateFromStores(items, () => stateFromStores.getMode() === constants.PUSH_TO_TALK);
-  let obj3 = windowDimensions(5038);
+  let obj3 = windowDimensions(5050);
   const fn = function o() {
     const getControlsDefaultWidth = VoicePanelControlsUtils.getControlsDefaultWidth;
     VoicePanelControlsUtils;
     const width = windowDimensions.get().width;
     return getControlsDefaultWidth(width, safeArea.get().left, safeArea.get().right);
   };
-  let obj4 = { getControlsDefaultWidth: windowDimensions(13099).getControlsDefaultWidth, windowDimensions, safeArea };
+  let obj4 = { getControlsDefaultWidth: windowDimensions(13122).getControlsDefaultWidth, windowDimensions, safeArea };
   fn.__closure = obj4;
   fn.__workletHash = 16456936876254;
   fn.__initData = __initData;
   const derivedValue = obj3.useDerivedValue(fn);
-  const tmp5 = safeArea(8739)(derivedValue);
+  const tmp5 = safeArea(8757)(derivedValue);
   let closure_5 = tmp5;
   const items1 = [tmp2, stateFromStores, tmp5, treatment];
   return treatment.useMemo(() => {

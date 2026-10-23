@@ -1,15 +1,15 @@
-// Module ID: 12663
-// Function ID: 12664
+// Module ID: 12682
+// Function ID: 12683
 // Name: ViewStep
-// Dependencies: [19, 12662, 21, 4969, 558, 576, 1505, 12664, 12665, 7885, 7886, 5963, 587, 12666, 5220, 1128, 2406, 8546, 12667, 5230, 2]
+// Dependencies: [19, 12681, 21, 4969, 558, 576, 1505, 12683, 12684, 7898, 7899, 5975, 587, 12685, 5232, 1128, 2406, 8558, 12686, 5242, 2]
 
-// Module 12663 (ViewStep)
+// Module 12682 (ViewStep)
 import nativeDefault from "native" /* 587 */;
 import _modDef2406 from "module_2406" /* 2406 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12662 */;
-import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12664 */;
-import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 12665 */;
-import GameOrganizationIconDefault from "GameOrganizationIcon" /* 12666 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12681 */;
+import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12683 */;
+import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 12684 */;
+import GameOrganizationIconDefault from "GameOrganizationIcon" /* 12685 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -110,7 +110,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewStep(cod
                         }
                         if (cResult[31] !== application.name) {
                           const obj4 = { variant: "heading-md/medium", children: application.name };
-                          const tmp36 = closure_4(navigation(5220).Text, obj4);
+                          const tmp36 = closure_4(navigation(5232).Text, obj4);
                           cResult[31] = application.name;
                           cResult[32] = tmp36;
                           tmp34 = tmp36;
@@ -159,8 +159,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewStep(cod
                                               tmp54 = cResult[53];
                                             }
                                             if (cResult[54] !== navigation) {
-                                              const obj5 = { children: closure_4(navigation(5230).Button, obj6) };
-                                              const ModalFooter = tmp(12667).ModalFooter;
+                                              const obj5 = { children: closure_4(navigation(5242).Button, obj6) };
+                                              const ModalFooter = tmp(12686).ModalFooter;
                                               obj6 = {
                                                 text: tmp54,
                                                 size: "lg",
@@ -213,7 +213,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewStep(cod
                                     tmp47 = tmp49;
                                   }
                                   const obj10 = { direction: "horizontal", align: "center", justify: "center", spacing: nativeDefault.space.PX_16, children: items2 };
-                                  const Stack5 = tmp(5963).Stack;
+                                  const Stack5 = tmp(5975).Stack;
                                   items2 = [tmp37, tmp40];
                                   const tmp46 = closure_5(Stack5, obj10);
                                   cResult[42] = tmp37;
@@ -226,12 +226,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewStep(cod
                             let tmp41 = tmp8;
                             if (tmp41) {
                               const obj11 = { spacing: nativeDefault.space.PX_4, direction: "horizontal", align: "center", style: tmp4.inlineStack, children: items3 };
-                              const Stack4 = tmp(5963).Stack;
+                              const Stack4 = tmp(5975).Stack;
                               const obj12 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-                              const GroupIcon = tmp(8546).GroupIcon;
+                              const GroupIcon = tmp(8558).GroupIcon;
                               items3 = [closure_4(GroupIcon, obj12), ];
                               const obj13 = { variant: "heading-md/medium", children: intl2.formatToPlainString(_modDef2406.VuENGl, obj14) };
-                              const Text2 = tmp(5220).Text;
+                              const Text2 = tmp(5232).Text;
                               intl2 = tmp(1128).intl;
                               obj14 = { count: memberCount, max: maxMembers };
                               items3[1] = closure_4(Text2, obj13);
@@ -246,7 +246,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewStep(cod
                           }
                         }
                         const obj15 = { spacing: nativeDefault.space.PX_4, direction: "horizontal", align: "center", style: tmp4.inlineStack, children: items4 };
-                        const Stack3 = tmp(5963).Stack;
+                        const Stack3 = tmp(5975).Stack;
                         items4 = [tmp30, tmp34];
                         const tmp39 = closure_5(Stack3, obj15);
                         cResult[33] = tmp4.inlineStack;
@@ -284,11 +284,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewStep(cod
     }
     const obj18 = { displayNoun, lowercase: true };
     const tmp19 = getGameOrganizationDisplayNounDefault(obj18);
-    const ModalScreen = tmp(7885).ModalScreen;
-    const ModalContent = tmp(7886).ModalContent;
-    const Stack = tmp(5963).Stack;
+    const ModalScreen = tmp(7898).ModalScreen;
+    const ModalContent = tmp(7899).ModalContent;
+    const Stack = tmp(5975).Stack;
     const PX_24 = tmp6(587).space.PX_24;
-    const Stack2 = tmp(5963).Stack;
+    const Stack2 = tmp(5975).Stack;
     const PX_16 = tmp6(587).space.PX_16;
     if (cResult[16] !== organization.iconUrl) {
       const obj19 = { iconUrl: organization.iconUrl, size: 64 };
@@ -299,7 +299,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewStep(cod
     } else {
       tmp20 = cResult[17];
     }
-    const Text = tmp(5220).Text;
+    const Text = tmp(5232).Text;
     const text = tmp4.text;
     const intl = tmp(1128).intl;
     const obj20 = { noun: tmp19, orgName: organization.name };
@@ -364,24 +364,24 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewStep(cod
     ({ memberCount, maxMembers } = organization);
     const obj2 = { displayNoun: tmp5.displayNoun, lowercase: true };
     const tmp7 = getGameOrganizationDisplayNounDefault(obj2);
-    const ModalScreen = tmp2(7885).ModalScreen;
-    const ModalContent = tmp2(7886).ModalContent;
+    const ModalScreen = tmp2(7898).ModalScreen;
+    const ModalContent = tmp2(7899).ModalContent;
     const obj3 = { spacing: nativeDefault.space.PX_24, children: items1 };
-    const Stack2 = tmp2(5963).Stack;
+    const Stack2 = tmp2(5975).Stack;
     const obj4 = { spacing: nativeDefault.space.PX_16, align: "center", children: items };
-    const Stack3 = tmp2(5963).Stack;
+    const Stack3 = tmp2(5975).Stack;
     const obj5 = { iconUrl: organization.iconUrl, size: 64 };
     items = [closure_4(GameOrganizationIconDefault, obj5), ];
     const obj6 = { variant: "heading-xl/semibold", style: tmp.text, children: intl3.formatToPlainString(_modDef2406.gptW7Y, obj7) };
-    const Text2 = tmp2(5220).Text;
+    const Text2 = tmp2(5232).Text;
     intl3 = tmp2(1128).intl;
     obj7 = { noun: tmp7, orgName: organization.name };
     items[1] = closure_4(Text2, obj6);
     items1 = [closure_5(Stack3, obj4), ];
     const obj8 = { direction: "horizontal", align: "center", justify: "center", spacing: nativeDefault.space.PX_16, children: items3 };
-    const Stack4 = tmp2(5963).Stack;
+    const Stack4 = tmp2(5975).Stack;
     const obj9 = { spacing: nativeDefault.space.PX_4, direction: "horizontal", align: "center", style: tmp.inlineStack, children: items2 };
-    const Stack5 = tmp2(5963).Stack;
+    const Stack5 = tmp2(5975).Stack;
     const obj10 = { iconUrl: application.iconUrl, size: 16, borderRadius: nativeDefault.radii.xs };
     const tmp4Result = GameOrganizationIconDefault;
     items2 = [closure_4(tmp4Result, obj10), ];
@@ -391,12 +391,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewStep(cod
     let tmp8Result = null != memberCount && null != maxMembers;
     if (tmp8Result) {
       const obj12 = { spacing: nativeDefault.space.PX_4, direction: "horizontal", align: "center", style: tmp.inlineStack, children: items4 };
-      const Stack = tmp2(5963).Stack;
+      const Stack = tmp2(5975).Stack;
       const obj13 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-      const GroupIcon = tmp2(8546).GroupIcon;
+      const GroupIcon = tmp2(8558).GroupIcon;
       items4 = [closure_4(GroupIcon, obj13), ];
       const obj14 = { variant: "heading-md/medium", children: intl.formatToPlainString(_modDef2406.VuENGl, obj15) };
-      const Text = tmp2(5220).Text;
+      const Text = tmp2(5232).Text;
       intl = tmp2(1128).intl;
       obj15 = { count: memberCount, max: maxMembers };
       items4[1] = closure_4(Text, obj14);
@@ -408,7 +408,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewStep(cod
     items1[1] = closure_5(Stack4, obj8);
     items5 = [closure_4(ModalContent, obj17), ];
     const obj18 = { children: closure_4(Button, obj19) };
-    const ModalFooter = tmp2(12667).ModalFooter;
+    const ModalFooter = tmp2(12686).ModalFooter;
     obj19 = {
       text: intl2.string(require("intl").t["3PatSz"]),
       size: "lg",
@@ -416,7 +416,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewStep(cod
           return navigation.navigate(constants.ACCEPT);
         }
     };
-    Button = tmp2(5230).Button;
+    Button = tmp2(5242).Button;
     intl2 = tmp2(1128).intl;
     items5[1] = closure_4(ModalFooter, obj18);
     return closure_5(ModalScreen, obj16);

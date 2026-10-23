@@ -1,30 +1,30 @@
-// Module ID: 13711
-// Function ID: 13712
+// Module ID: 13734
+// Function ID: 13735
 // Name: ChannelSettingsNotifications
-// Dependencies: [19, 4825, 4821, 5180, 4911, 6689, 1392, 1087, 21, 1128, 4969, 587, 5023, 5697, 7200, 5196, 10980, 2002, 7195, 5590, 6972, 6888, 10982, 7280, 6970, 6969, 5220, 8926, 5963, 558, 576, 504, 10962, 13712, 2]
+// Dependencies: [19, 4825, 4821, 5192, 4911, 6702, 1392, 1087, 21, 1128, 4969, 587, 5035, 5709, 7213, 5208, 11003, 2002, 7208, 5602, 6985, 6901, 11005, 7293, 6983, 6982, 5232, 8949, 5975, 558, 576, 504, 10985, 13735, 2]
 
-// Module 13711 (ChannelSettingsNotifications)
+// Module 13734 (ChannelSettingsNotifications)
 import nativeDefault from "native" /* 587 */;
 import intl16 from "intl" /* 1128 */;
-import native from "native" /* 5023 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import useChannelName from "useChannelName" /* 5590 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5697 */;
-import Stack_Stack from "Stack/Stack" /* 5963 */;
-import TableRow2 from "TableRow" /* 6888 */;
-import TableRowGroup2 from "TableRowGroup" /* 6972 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7195 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7200 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 7280 */;
-import Form2 from "Form" /* 8926 */;
-import MutedUntilTextDefault from "MutedUntilText" /* 10982 */;
-import NotificationSettingsChannelDefault from "NotificationSettingsChannel" /* 13712 */;
+import native from "native" /* 5035 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import useChannelName from "useChannelName" /* 5602 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5709 */;
+import Stack_Stack from "Stack/Stack" /* 5975 */;
+import TableRow2 from "TableRow" /* 6901 */;
+import TableRowGroup2 from "TableRowGroup" /* 6985 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7208 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7213 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 7293 */;
+import Form2 from "Form" /* 8949 */;
+import MutedUntilTextDefault from "MutedUntilText" /* 11005 */;
+import NotificationSettingsChannelDefault from "NotificationSettingsChannel" /* 13735 */;
 import react_mod from "react" /* 19 */;
 import ChannelRecord from "ChannelRecord" /* 4825 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5180 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5192 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6689 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6702 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
@@ -185,9 +185,9 @@ class ChannelSettingsNotifications extends PureComponent {
       const obj6 = { muteConfig, type: CHANNEL };
       const tmp10 = MutedUntilTextDefault;
       if (channel.type === map1.GUILD_CATEGORY) {
-        CHANNEL = tmp(10982).MuteSettingType.CATEGORY;
+        CHANNEL = tmp(11005).MuteSettingType.CATEGORY;
       } else {
-        CHANNEL = tmp(10982).MuteSettingType.CHANNEL;
+        CHANNEL = tmp(11005).MuteSettingType.CHANNEL;
       }
       tmp6Result = tmp6(tmp10, obj6);
     }
@@ -255,10 +255,10 @@ class ChannelSettingsNotifications extends PureComponent {
       tmp7 = require;
     }
     const isGuildStageVoiceResult = channel.isGuildStageVoice();
-    const TableRadioGroup = tmp7(6970).TableRadioGroup;
+    const TableRadioGroup = tmp7(6983).TableRadioGroup;
     const obj = { value: messageNotifications, onChange: self.handleTypeChange, groupRef: self.radioGroupRef, title: intl3.string(tmp7(1128).t.h850Ss), hasIcons: false, children: null };
     intl3 = tmp7(1128).intl;
-    const TableRadioRow = tmp7(6969).TableRadioRow;
+    const TableRadioRow = tmp7(6982).TableRadioRow;
     if (isGuildStageVoiceResult) {
       const obj2 = { disabled: tmp18, label: stringResult, subLabel: stringResult1, value: constants2.NULL };
       tmp18 = muted || guildMuted;
@@ -274,14 +274,14 @@ class ChannelSettingsNotifications extends PureComponent {
       }
       const items = [authStore3(TableRadioRow, obj2), , ];
       let tmp21 = muted;
-      const TableRadioRow5 = tmp7(6969).TableRadioRow;
+      const TableRadioRow5 = tmp7(6982).TableRadioRow;
       if (!muted) {
         tmp21 = guildMuted;
       }
       const obj3 = { disabled: tmp21, value: constants2.ONLY_MENTIONS, label: intl12.string(tmp7(1128).t["BENn/6"]) };
       intl12 = tmp7(1128).intl;
       items[1] = authStore3(TableRadioRow5, obj3);
-      const TableRadioRow6 = tmp7(6969).TableRadioRow;
+      const TableRadioRow6 = tmp7(6982).TableRadioRow;
       if (!muted) {
         muted = guildMuted;
       }
@@ -304,7 +304,7 @@ class ChannelSettingsNotifications extends PureComponent {
       }
       const items1 = [authStore3(TableRadioRow, obj5), , , ];
       const obj6 = { label: intl6.string(tmp7(1128).t["n/bTaY"]), disabled: muted || guildMuted, subLabel: stringResult3, value: constants2.ALL_MESSAGES };
-      const TableRadioRow2 = tmp7(6969).TableRadioRow;
+      const TableRadioRow2 = tmp7(6982).TableRadioRow;
       intl6 = tmp7(1128).intl;
       stringResult3 = null;
       if (null != guildMemberCount) {
@@ -316,11 +316,11 @@ class ChannelSettingsNotifications extends PureComponent {
       }
       items1[1] = authStore3(TableRadioRow2, obj6);
       const obj7 = { label: intl8.format(tmp7(1128).t.L2hmYy, {}), disabled: muted || guildMuted, value: constants2.ONLY_MENTIONS };
-      const TableRadioRow3 = tmp7(6969).TableRadioRow;
+      const TableRadioRow3 = tmp7(6982).TableRadioRow;
       intl8 = tmp7(1128).intl;
       items1[2] = authStore3(TableRadioRow3, obj7);
       const obj8 = { label: intl9.string(tmp7(1128).t.CtVGyQ), disabled: muted || guildMuted, value: constants2.NO_MESSAGES };
-      const TableRadioRow4 = tmp7(6969).TableRadioRow;
+      const TableRadioRow4 = tmp7(6982).TableRadioRow;
       intl9 = tmp7(1128).intl;
       items1[3] = authStore3(TableRadioRow4, obj8);
       obj.children = items1;
@@ -385,7 +385,7 @@ class ChannelSettingsNotifications extends PureComponent {
       let tmp9Result = null;
       if (channel.isForumLikeChannel()) {
         const obj7 = { title: intl2.string(intl16.t.bK11jO), hasIcons: false, children: self.renderForumSettings() };
-        const TableRowGroup = tmp10(6972).TableRowGroup;
+        const TableRowGroup = tmp10(6985).TableRowGroup;
         intl2 = tmp10(1128).intl;
         tmp9Result = tmp9(TableRowGroup, obj7);
       }

@@ -1,13 +1,13 @@
-// Module ID: 18730
-// Function ID: 18731
+// Module ID: 18774
+// Function ID: 18775
 // Name: ForumManager
-// Dependencies: [4821, 4828, 7199, 7386, 2]
+// Dependencies: [4821, 4828, 7212, 7399, 2]
 
-// Module 18730 (ForumManager)
+// Module 18774 (ForumManager)
 import ChannelConstants from "ChannelConstants" /* 4828 */;
-import ForumPostDataLoader from "ForumPostDataLoader" /* 7386 */;
+import ForumPostDataLoader from "ForumPostDataLoader" /* 7399 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7199 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7212 */;
 import size from "module_2" /* 2 */;
 
 const isStaticChannelRoute = ChannelConstants.isStaticChannelRoute;

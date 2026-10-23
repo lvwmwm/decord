@@ -1,10 +1,10 @@
-// Module ID: 12419
-// Function ID: 12420
+// Module ID: 12438
+// Function ID: 12439
 // Name: ConjureClarification
 // Dependencies: [4821, 1392, 1087, 1128, 3830, 2]
 // Exports: clarificationAnswerAttachments, clarificationAnswersPayload, clarificationChannelType, clarificationDraftPlaceholder, clarificationEntities, clarificationPickerPlaceholder, entityAnswer, followingClarificationStep, formatClarificationAnswers, isClarificationComplete, isTypedClarificationQuestion, multiSelectAnswer, nextClarificationStep, toggleClarificationOption
 
-// Module 12419 (ConjureClarification)
+// Module 12438 (ConjureClarification)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
@@ -16,14 +16,16 @@ let items;
 let items1;
 let items2;
 let items3;
+let items4;
 const ChannelTypes = Constants.ChannelTypes;
 let closure_5 = { [ChannelTypes.GUILD_TEXT]: "text", [ChannelTypes.GUILD_VOICE]: "voice", [ChannelTypes.GUILD_ANNOUNCEMENT]: "announcement", [ChannelTypes.GUILD_STAGE_VOICE]: "stage", [ChannelTypes.GUILD_FORUM]: "forum", [ChannelTypes.GUILD_MEDIA]: "media" };
-let closure_6 = { channel: "#", role: "@", user: "@", project: "" };
-let obj = { channel: items, role: items1, user: items2, project: items3 };
+let closure_6 = { channel: "#", role: "@", user: "@", project: "", server: "" };
+let obj = { channel: items, role: items1, user: items2, project: items3, server: items4 };
 items = [_modDef3830["9+dfPT"], _modDef3830.pGSJqE];
 items1 = [_modDef3830["2VkCoD"], _modDef3830.c8YlX8];
 items2 = [_modDef3830.GZIAxl, _modDef3830["4bptbQ"]];
 items3 = [_modDef3830.twlOb6, _modDef3830.twlOb6];
+items4 = [_modDef3830.ZWXDeI, _modDef3830.ZWXDeI];
 let result = size.fileFinishedImporting("modules/conjure/clarification/ConjureClarification.tsx");
 
 export const isTypedClarificationQuestion = function isTypedClarificationQuestion(options) {

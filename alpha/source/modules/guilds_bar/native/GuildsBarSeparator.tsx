@@ -1,23 +1,23 @@
-// Module ID: 17709
-// Function ID: 17710
+// Module ID: 17753
+// Function ID: 17754
 // Name: GuildsBarSeparator
-// Dependencies: [19, 21, 4969, 587, 558, 576, 17368, 5038, 7153, 5238, 6871, 2]
+// Dependencies: [19, 21, 4969, 587, 558, 576, 17412, 5050, 7166, 5250, 6884, 2]
 
-// Module 17709 (GuildsBarSeparator)
+// Module 17753 (GuildsBarSeparator)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
-import useToken from "useToken" /* 5238 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7153 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 17368 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5050 */;
+import useToken from "useToken" /* 5250 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7166 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 17412 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp3;
-const NativeViewDefault = tmp3(6871);
+const NativeViewDefault = tmp3(6884);
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles((width) => {
   const obj = { separator: size };

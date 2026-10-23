@@ -1,12 +1,12 @@
-// Module ID: 5797
-// Function ID: 5798
+// Module ID: 5809
+// Function ID: 5810
 // Name: Devices
-// Dependencies: [5727, 1367, 2016, 2]
+// Dependencies: [5739, 1367, 2016, 2]
 // Exports: getAudioInputDevices, getAudioOutputDevices, getVideoInputDevices, sanitizeDevices
 
-// Module 5797 (Devices)
+// Module 5809 (Devices)
 import _modDef1367 from "module_1367" /* 1367 */;
-import Constants from "Constants" /* 5727 */;
+import Constants from "Constants" /* 5739 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;

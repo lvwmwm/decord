@@ -1,24 +1,24 @@
-// Module ID: 18731
-// Function ID: 18732
+// Module ID: 18775
+// Function ID: 18776
 // Name: FrecencyUserSettingsManager
-// Dependencies: [5, 9628, 9627, 6710, 5992, 6750, 6808, 1246, 1097, 1375, 1104, 7199, 4802, 1247, 1248, 12, 2]
+// Dependencies: [5, 9651, 9650, 6723, 6004, 6763, 6821, 1246, 1097, 1375, 1104, 7212, 4802, 1247, 1248, 12, 2]
 
-// Module 18731 (FrecencyUserSettingsManager)
+// Module 18775 (FrecencyUserSettingsManager)
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import frecency_user_settings from "frecency_user_settings" /* 1247 */;
 import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1248 */;
 import ApplicationConstants from "ApplicationConstants" /* 1375 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4802 */;
-import FrecencyStore2 from "FrecencyStore" /* 6808 */;
+import FrecencyStore2 from "FrecencyStore" /* 6821 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 9628 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9627 */;
-import EmojiStore from "EmojiStore" /* 6710 */;
-import SoundboardStore from "SoundboardStore" /* 5992 */;
-import StickersPersistedStore from "StickersPersistedStore" /* 6750 */;
+import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 9651 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9650 */;
+import EmojiStore from "EmojiStore" /* 6723 */;
+import SoundboardStore from "SoundboardStore" /* 6004 */;
+import StickersPersistedStore from "StickersPersistedStore" /* 6763 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7199 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7212 */;
 import size from "module_2" /* 2 */;
 
 const FrecencyStore = FrecencyStore2;

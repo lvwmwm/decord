@@ -1,18 +1,18 @@
-// Module ID: 14106
-// Function ID: 14107
+// Module ID: 14130
+// Function ID: 14131
 // Name: YouScreenNavIcon
-// Dependencies: [19, 17, 21, 14107, 587, 9382, 4969, 558, 576, 14108, 1128, 5127, 5220, 8888, 2]
+// Dependencies: [19, 17, 21, 14131, 587, 9405, 4969, 558, 576, 14132, 1128, 5139, 5232, 8911, 2]
 
-// Module 14106 (YouScreenNavIcon)
+// Module 14130 (YouScreenNavIcon)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import mergeProps from "mergeProps" /* 5127 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import ClipView from "ClipView" /* 9382 */;
-import getIconSize from "getIconSize" /* 14107 */;
-import YouScreenNavIconMeasurer from "YouScreenNavIconMeasurer" /* 14108 */;
+import mergeProps from "mergeProps" /* 5139 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import ClipView from "ClipView" /* 9405 */;
+import getIconSize from "getIconSize" /* 14131 */;
+import YouScreenNavIconMeasurer from "YouScreenNavIconMeasurer" /* 14132 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -123,7 +123,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             }
           }
           const obj4 = { ref: tmp20, style: tmp6.container, accessibilityRole: "button", accessibilityLabel, accessibilityValue: tmp18, onPress, hitSlop: nativeDefault.space.PX_8, testID, children: items };
-          const PressableScale = tmp(8888).PressableScale;
+          const PressableScale = tmp(8911).PressableScale;
           items = [tmp11, tmp23];
           const tmp30 = hasOwnProperty(PressableScale, obj4);
           cResult[14] = accessibilityLabel;
@@ -205,11 +205,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp12 = obj6;
   }
   const obj7 = { ref: tmpResult.mergeRefs(ref, containerRef), style: tmp4.container, accessibilityRole: "button", accessibilityLabel, accessibilityValue: tmp12, onPress, hitSlop: nativeDefault.space.PX_8, testID, children: items1 };
-  const PressableScale = tmp(8888).PressableScale;
+  const PressableScale = tmp(8911).PressableScale;
   items1 = [tmp7, ];
   const obj8 = { style: tmp4.label, variant: "text-xs/semibold", color, maxFontSizeMultiplier: 2, lineClamp: 1, children: label };
   tmpResult = mergeProps;
-  const Text = tmp(5220).Text;
+  const Text = tmp(5232).Text;
   const tmp13 = hasOwnProperty;
   if (label == null) {
     label = accessibilityLabel;

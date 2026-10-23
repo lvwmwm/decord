@@ -1,9 +1,9 @@
-// Module ID: 17968
-// Function ID: 17969
+// Module ID: 18012
+// Function ID: 18013
 // Name: VoiceChannelAppStore
 // Dependencies: [504, 584, 2]
 
-// Module 17968 (VoiceChannelAppStore)
+// Module 18012 (VoiceChannelAppStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

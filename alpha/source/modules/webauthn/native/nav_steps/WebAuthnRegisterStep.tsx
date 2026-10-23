@@ -1,16 +1,16 @@
-// Module ID: 16014
-// Function ID: 16015
+// Module ID: 16047
+// Function ID: 16048
 // Name: WebAuthnRegisterStep
-// Dependencies: [32, 19, 17, 1087, 21, 4969, 587, 7027, 558, 576, 1128, 1202, 1505, 1384, 16015, 16016, 5220, 6681, 5230, 7206, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 4969, 587, 7040, 558, 576, 1128, 1202, 1505, 1384, 16048, 16049, 5232, 6694, 5242, 7219, 2]
 
-// Module 16014 (WebAuthnRegisterStep)
+// Module 16047 (WebAuthnRegisterStep)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 7027 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 7040 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -185,10 +185,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
     tmp19 = cResult[3];
   }
   dependencyMap = tmp19;
-  const tmpResult = navigation(16015);
+  const tmpResult = navigation(16048);
   const announceError = tmpResult.useAnnounceError(tmp11);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp23 = closure_7(navigation(16016).KeyImage, {});
+    const tmp23 = closure_7(navigation(16049).KeyImage, {});
     cResult[4] = tmp23;
     tmp21 = tmp23;
   } else {
@@ -220,7 +220,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
       let tmp29 = "" !== tmp11;
       if (tmp29) {
         const obj6 = { variant: "text-md/normal", color: "text-feedback-critical", children: tmp11 };
-        tmp29 = closure_7(tmp(5220).Text, obj6);
+        tmp29 = closure_7(tmp(5232).Text, obj6);
       }
       cResult[10] = tmp11;
       cResult[11] = tmp29;
@@ -284,7 +284,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
                 tmp48[3] = tmp5.flexContainer;
                 const items = [tmp31, tmp34, tmp42];
                 tmp48[4] = items;
-                const tmp49 = closure_8(navigation(7206).SafeAreaPaddingView, tmp48);
+                const tmp49 = closure_8(navigation(7219).SafeAreaPaddingView, tmp48);
                 cResult[28] = tmp5.flexContainer;
                 cResult[29] = tmp42;
                 cResult[30] = tmp31;
@@ -298,9 +298,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
                 return closure_1(closure_2);
               }
             }
-            const ButtonGroup = tmp(6681).ButtonGroup;
+            const ButtonGroup = tmp(6694).ButtonGroup;
             const obj7 = { text: tmp39, disabled: first, loading: first, onPress: tmp41, size: "lg" };
-            tmp44[0] = closure_7(navigation(5230).Button, obj7);
+            tmp44[0] = closure_7(navigation(5242).Button, obj7);
             const tmp45 = closure_7(ButtonGroup, tmp44);
             cResult[24] = first;
             cResult[25] = tmp39;
@@ -343,7 +343,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
     tmp31 = tmp33;
   }
   const obj10 = { style: tmp5.margin, variant: "text-md/normal", children: tmp24 };
-  const tmp27 = closure_7(navigation(5220).Text, obj10);
+  const tmp27 = closure_7(navigation(5232).Text, obj10);
   cResult[7] = tmp5.margin;
   cResult[8] = tmp24;
   cResult[9] = tmp27;
@@ -383,14 +383,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
   let closure_5 = obj2.useMemo(() => obj4[first], items1);
   const items2 = [onRegisterSuccess, tmp11, tmp8];
   let closure_6 = obj2.useMemo(() => ({ onRegisterSuccess, setError: dependencyMap, setRegistering: importDefault }), items2);
-  const tmpResult = navigation(16015);
+  const tmpResult = navigation(16048);
   const announceError = tmpResult.useAnnounceError(tmp10);
   const rect = { bottom: true, left: true, right: true, style: tmp4.flexContainer, children: items4 };
   obj4 = { style: tmp4.centerFlex, children: items3 };
-  const SafeAreaPaddingView = tmp(7206).SafeAreaPaddingView;
-  items3 = [closure_7(navigation(16016).KeyImage, {}), , ];
+  const SafeAreaPaddingView = tmp(7219).SafeAreaPaddingView;
+  items3 = [closure_7(navigation(16049).KeyImage, {}), , ];
   const obj5 = { style: tmp4.margin, variant: "text-md/normal", children: stringResult };
-  const Text = tmp(5220).Text;
+  const Text = tmp(5232).Text;
   const intl = tmp(1128).intl;
   const string = intl.string;
   const t = tmp(1128).t;
@@ -404,7 +404,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
   let tmp20Result = "" !== tmp10;
   if (tmp20Result) {
     const obj6 = { variant: "text-md/normal", color: "text-feedback-critical", children: tmp10 };
-    tmp20Result = tmp20(tmp(5220).Text, obj6);
+    tmp20Result = tmp20(tmp(5232).Text, obj6);
   }
   items3[2] = tmp20Result;
   items4 = [closure_8(tmp19, obj4), , ];
@@ -414,8 +414,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
     shouldDisplayAndroidFidoSelector = tmp20(closure_12, obj7);
   }
   items4[1] = shouldDisplayAndroidFidoSelector;
-  const ButtonGroup = tmp(6681).ButtonGroup;
-  const Button = tmp(5230).Button;
+  const ButtonGroup = tmp(6694).ButtonGroup;
+  const Button = tmp(5242).Button;
   const intl2 = tmp(1128).intl;
   const string2 = intl2.string;
   const t2 = tmp(1128).t;

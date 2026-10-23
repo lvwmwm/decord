@@ -1,16 +1,16 @@
-// Module ID: 9368
-// Function ID: 9369
+// Module ID: 9391
+// Function ID: 9392
 // Name: ProfileEffectSampleV2
-// Dependencies: [17, 9367, 21, 4969, 587, 558, 576, 9369, 5655, 9370, 2]
+// Dependencies: [17, 9390, 21, 4969, 587, 558, 576, 9392, 5667, 9393, 2]
 
-// Module 9368 (ProfileEffectSampleV2)
+// Module 9391 (ProfileEffectSampleV2)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 5655 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9367 */;
-import _modDef9369 from "module_9369" /* 9369 */;
-import ProfileEffectDefault from "ProfileEffect" /* 9370 */;
+import FastImageDefault from "FastImage" /* 5667 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9390 */;
+import _modDef9392 from "module_9392" /* 9392 */;
+import ProfileEffectDefault from "ProfileEffect" /* 9393 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -46,7 +46,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileEffec
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { uri: _modDef9369 };
+      const obj2 = { uri: _modDef9392 };
       cResult[3] = obj2;
       tmp8 = obj2;
     } else {
@@ -130,7 +130,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileEffec
   const obj = { style: items, children: items1 };
   items[1] = profileBackground;
   const obj2 = { style: tmp.sampleProfileImage, source: obj3, accessible: false, resizeMode: "cover" };
-  obj3 = { uri: _modDef9369 };
+  obj3 = { uri: _modDef9392 };
   const tmp7 = FastImageDefault;
   items1 = [React3(tmp7, obj2), , ];
   let tmp4Result = !flag;

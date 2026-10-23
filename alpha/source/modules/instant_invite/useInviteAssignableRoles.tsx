@@ -1,9 +1,9 @@
-// Module ID: 19245
-// Function ID: 19246
+// Module ID: 19289
+// Function ID: 19290
 // Name: useInviteAssignableRoles
 // Dependencies: [19, 4876, 4875, 4901, 1392, 1087, 558, 576, 504, 4906, 2]
 
-// Module 19245 (useInviteAssignableRoles)
+// Module 19289 (useInviteAssignableRoles)
 import Constants from "Constants" /* 1087 */;
 import GuildRoleRecord from "GuildRoleRecord" /* 4876 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4906 */;

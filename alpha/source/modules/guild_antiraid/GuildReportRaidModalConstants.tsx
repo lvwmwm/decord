@@ -1,10 +1,10 @@
-// Module ID: 15168
-// Function ID: 15169
+// Module ID: 15193
+// Function ID: 15194
 // Name: GuildReportRaidModalConstants
 // Dependencies: [1087, 2067, 1128, 2]
 // Exports: getReportRaidHelpArticleURL, getReportRaidTypeLabel
 
-// Module 15168 (GuildReportRaidModalConstants)
+// Module 15193 (GuildReportRaidModalConstants)
 import Constants from "Constants" /* 1087 */;
 import intl6 from "intl" /* 1128 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;

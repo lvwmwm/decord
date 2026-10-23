@@ -1,9 +1,9 @@
-// Module ID: 15237
-// Function ID: 15238
+// Module ID: 15262
+// Function ID: 15263
 // Name: DEFAULT_TOAST_POSITION
-// Dependencies: [32, 19, 4980, 558, 576, 5651, 4983, 4978, 2]
+// Dependencies: [32, 19, 4980, 558, 576, 5663, 4983, 4978, 2]
 
-// Module 15237 (DEFAULT_TOAST_POSITION)
+// Module 15262 (DEFAULT_TOAST_POSITION)
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4978 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -277,7 +277,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useToastCont
   let obj = react;
   const tmp = closure_7(arg0, react.useId());
   let tmp2 = _require;
-  const obj2 = require("module_5651");
+  const obj2 = require("module_5663");
   const tmp3 = entry;
   entry = undefined;
   if (tmp) {

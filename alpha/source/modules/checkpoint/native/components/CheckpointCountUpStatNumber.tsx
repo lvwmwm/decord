@@ -1,13 +1,13 @@
-// Module ID: 12920
-// Function ID: 12921
+// Module ID: 12940
+// Function ID: 12941
 // Name: CheckpointCountUpStatNumber
-// Dependencies: [32, 19, 17, 4970, 21, 558, 576, 504, 12919, 2]
+// Dependencies: [32, 19, 17, 4970, 21, 558, 576, 504, 12939, 2]
 
-// Module 12920 (CheckpointCountUpStatNumber)
+// Module 12940 (CheckpointCountUpStatNumber)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 12919 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 12939 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
@@ -21,7 +21,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const CheckpointStatNumber = tmp(12919);
+const CheckpointStatNumber = tmp(12939);
 ({ useEffect: closure_4, useMemo: hasOwnProperty, useState: metroRequire } = react);
 const View = react_native.View;
 const jsx = Fragment.jsx;
@@ -224,7 +224,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointCo
     const obj = { width: obj2.getCheckpointStatNumberWidth(end, num2) };
     obj2 = CheckpointStatNumber;
     return obj;
-  }, items)}>{jsx(num2(12919), { value: tmp, size: num2 })}</View>;
+  }, items)}>{jsx(num2(12939), { value: tmp, size: num2 })}</View>;
 });
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointCountUpStatNumber.tsx");
 

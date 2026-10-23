@@ -1,19 +1,19 @@
-// Module ID: 15671
-// Function ID: 15672
+// Module ID: 15692
+// Function ID: 15693
 // Name: application
-// Dependencies: [2045, 6363, 1087, 11432, 11435, 15672, 6796, 9240, 15673, 1267, 1297, 9430, 2]
+// Dependencies: [2045, 6376, 1087, 11452, 11455, 15693, 6809, 9263, 15694, 1267, 1297, 9453, 2]
 
-// Module 15671 (application)
+// Module 15692 (application)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import Constants2 from "Constants" /* 6363 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6796 */;
-import RPCErrorDefault from "RPCError" /* 9240 */;
-import TestModeUtils from "TestModeUtils" /* 9430 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11432 */;
-import RPCHelpers from "RPCHelpers" /* 11435 */;
-import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 15672 */;
-import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 15673 */;
+import Constants2 from "Constants" /* 6376 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6809 */;
+import RPCErrorDefault from "RPCError" /* 9263 */;
+import TestModeUtils from "TestModeUtils" /* 9453 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11452 */;
+import RPCHelpers from "RPCHelpers" /* 11455 */;
+import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 15693 */;
+import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 15694 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;

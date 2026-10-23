@@ -1,16 +1,16 @@
-// Module ID: 13189
-// Function ID: 13190
+// Module ID: 13212
+// Function ID: 13213
 // Name: NewMessagesTagListInput
-// Dependencies: [19, 17, 1392, 21, 4969, 587, 1384, 558, 576, 1388, 10596, 6893, 1128, 13190, 11129, 5220, 4978, 8969, 2]
+// Dependencies: [19, 17, 1392, 21, 4969, 587, 1384, 558, 576, 1388, 10618, 6906, 1128, 13213, 11152, 5232, 4978, 8992, 2]
 
-// Module 13189 (NewMessagesTagListInput)
+// Module 13212 (NewMessagesTagListInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4978 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 10596 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 10618 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -61,7 +61,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     const mapped = items.map(UserStore.getUser);
     const found = mapped.filter(tmp(1388).isNotNullish);
-    const mapped1 = found.map(tags(10596));
+    const mapped1 = found.map(tags(10618));
     cResult[0] = selectedUserIds;
     cResult[1] = mapped1;
     tags = mapped1;
@@ -89,7 +89,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             tmp15 = cResult[8];
           }
           if (cResult[9] !== tmp4.header) {
-            const tmp19 = jsx(tmp(5220).Text, { style: header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: tmp15 });
+            const tmp19 = jsx(tmp(5232).Text, { style: header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: tmp15 });
             cResult[9] = tmp4.header;
             cResult[10] = tmp19;
             tmp17 = tmp19;
@@ -141,7 +141,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                 }
               }
             }
-            const tmp26 = jsx(tags(8969), { autoFocus, focusOnAdd: true, footer: tmp10, icon: tmp17, onChangeText, onFocus, onRemove: tmp20, placeholder: tmp21, tags, ref: tagListInputRef });
+            const tmp26 = jsx(tags(8992), { autoFocus, focusOnAdd: true, footer: tmp10, icon: tmp17, onChangeText, onFocus, onRemove: tmp20, placeholder: tmp21, tags, ref: tagListInputRef });
             cResult[15] = autoFocus;
             cResult[16] = onChangeText;
             cResult[17] = onFocus;
@@ -177,7 +177,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp12Result = null;
     if (tags.length > 0) {
       let stringResult2;
-      const PressableOpacity = tmp(6893).PressableOpacity;
+      const PressableOpacity = tmp(6906).PressableOpacity;
       let intl = tmp(1128).intl;
       const string = intl.string;
       const t = tmp(1128).t;
@@ -188,9 +188,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       const obj5 = { accessibilityRole: "button", accessibilityLabel: stringResult2, onPress: onForceSearchResults, style: tmp4.showSearchButton, children: null };
       if (forceSearchResults) {
-        let CirclePlusIcon = tmp(13190).ChevronLargeRightIcon;
+        let CirclePlusIcon = tmp(13213).ChevronLargeRightIcon;
       } else {
-        CirclePlusIcon = tmp(11129).CirclePlusIcon;
+        CirclePlusIcon = tmp(11152).CirclePlusIcon;
       }
       tmp12Result = tmp12(PressableOpacity, obj5);
     }

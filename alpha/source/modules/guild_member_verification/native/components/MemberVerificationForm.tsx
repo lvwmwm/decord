@@ -1,15 +1,15 @@
-// Module ID: 6878
-// Function ID: 6879
+// Module ID: 6891
+// Function ID: 6892
 // Name: MemberVerificationForm
-// Dependencies: [5, 32, 19, 17, 6860, 1087, 21, 4969, 5649, 1128, 558, 576, 6862, 4998, 5585, 504, 6879, 6834, 6880, 7018, 5230, 2]
+// Dependencies: [5, 32, 19, 17, 6873, 1087, 21, 4969, 5661, 1128, 558, 576, 6875, 5003, 5597, 504, 6892, 6847, 6893, 7031, 5242, 2]
 // Exports: default
 
-// Module 6878 (MemberVerificationForm)
+// Module 6891 (MemberVerificationForm)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4998 */;
-import useInitialValueDefault from "useInitialValue" /* 5585 */;
-import MemberVerificationFormStore2 from "MemberVerificationFormStore" /* 6860 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5003 */;
+import useInitialValueDefault from "useInitialValue" /* 5597 */;
+import MemberVerificationFormStore2 from "MemberVerificationFormStore" /* 6873 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -50,7 +50,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReq
     if (tmp4 === phone) {
       tmp7 = cResult[2];
     }
-    return initialVerification(5585)(tmp7);
+    return initialVerification(5597)(tmp7);
   }
   cResult[0] = id.verificationLevel;
   let phone1;

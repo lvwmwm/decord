@@ -1,21 +1,21 @@
-// Module ID: 6671
-// Function ID: 6672
+// Module ID: 6684
+// Function ID: 6685
 // Name: StageChannelRoleStore
-// Dependencies: [4821, 4881, 4875, 4843, 1392, 5616, 5982, 4906, 4829, 12, 504, 6672, 584, 2]
+// Dependencies: [4821, 4881, 4875, 4843, 1392, 5628, 5994, 4906, 4829, 12, 504, 6685, 584, 2]
 
-// Module 6671 (StageChannelRoleStore)
+// Module 6684 (StageChannelRoleStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4906 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5982 */;
-import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6672 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5994 */;
+import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6685 */;
 import ChannelStore from "ChannelStore" /* 4821 */;
 import GuildMemberStore from "GuildMemberStore" /* 4881 */;
 import GuildRoleStore from "GuildRoleStore" /* 4875 */;
 import GuildStore from "GuildStore" /* 4843 */;
 import UserStore from "UserStore" /* 1392 */;
-import VoiceStateStore from "VoiceStateStore" /* 5616 */;
+import VoiceStateStore from "VoiceStateStore" /* 5628 */;
 import size from "module_2" /* 2 */;
 
 let closure_11;

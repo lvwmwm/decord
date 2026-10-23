@@ -1,15 +1,15 @@
-// Module ID: 11095
-// Function ID: 11096
+// Module ID: 11118
+// Function ID: 11119
 // Name: BadgeDirectoryScreen
-// Dependencies: [19, 1392, 21, 4969, 5254, 587, 558, 576, 504, 1128, 6909, 11094, 11096, 7080, 11122, 2]
+// Dependencies: [19, 1392, 21, 4969, 5266, 587, 558, 576, 504, 1128, 6922, 11117, 11119, 7093, 11145, 2]
 
-// Module 11095 (BadgeDirectoryScreen)
+// Module 11118 (BadgeDirectoryScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import NavigatorConstants from "NavigatorConstants" /* 5254 */;
-import NavigatorHeader from "NavigatorHeader" /* 6909 */;
-import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 11094 */;
-import BadgeDirectoryViewDefault from "BadgeDirectoryView" /* 11096 */;
+import NavigatorConstants from "NavigatorConstants" /* 5266 */;
+import NavigatorHeader from "NavigatorHeader" /* 6922 */;
+import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 11117 */;
+import BadgeDirectoryViewDefault from "BadgeDirectoryView" /* 11119 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -98,8 +98,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirec
     }
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmpResult5 = tmp(6909);
-      const headerCloseButton = tmpResult5.getHeaderCloseButton(tmp(11094).closeBadgeDirectoryScreen);
+      const tmpResult5 = tmp(6922);
+      const headerCloseButton = tmpResult5.getHeaderCloseButton(tmp(11117).closeBadgeDirectoryScreen);
       cResult[8] = headerCloseButton;
       tmp16 = headerCloseButton;
     } else {
@@ -112,7 +112,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirec
         if (cResult[11] === tmp14) {
           tmp18 = cResult[12];
         }
-        const tmpResult6 = tmp(11094);
+        const tmpResult6 = tmp(11117);
         if (tmpResult6.isBadgeDirectoryIOSPageSheet()) {
           if (cResult[13] === tmp18) {
             if (cResult[14] === tmp4.sheetHeader) {
@@ -124,7 +124,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirec
             }
           }
           ({ sheetHeader: obj10.headerStyle, view: obj10.viewStyle } = tmp4);
-          const tmp27 = jsx(tmp(7080).Navigator, { screens: tmp18, initialRouteName, headerStatusBarHeight: 0, headerStyle: null, viewStyle: null });
+          const tmp27 = jsx(tmp(7093).Navigator, { screens: tmp18, initialRouteName, headerStatusBarHeight: 0, headerStyle: null, viewStyle: null });
           cResult[13] = tmp18;
           cResult[14] = tmp4.sheetHeader;
           cResult[15] = tmp4.view;
@@ -136,7 +136,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirec
               tmp20 = cResult[19];
             }
           }
-          const tmp23 = jsx(tmp(11122).Modal, { screens: tmp18, initialRouteName, viewStyle: tmp4.view });
+          const tmp23 = jsx(tmp(11145).Modal, { screens: tmp18, initialRouteName, viewStyle: tmp4.view });
           cResult[17] = tmp18;
           cResult[18] = tmp4.view;
           cResult[19] = tmp23;
@@ -234,14 +234,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirec
         obj3 = NavigatorHeader;
         return obj;
       }, items2);
-      const tmp2Result = targetUserId(11094);
+      const tmp2Result = targetUserId(11117);
       if (tmp2Result.isBadgeDirectoryIOSPageSheet()) {
         const obj4 = { screens: memo, initialRouteName, headerStatusBarHeight: 0, headerStyle: null, viewStyle: null };
         ({ sheetHeader: obj6.headerStyle, view: obj6.viewStyle } = tmp);
-        tmp9Result = tmp9(tmp2(7080).Navigator, obj4);
+        tmp9Result = tmp9(tmp2(7093).Navigator, obj4);
       } else {
         const obj5 = { screens: memo, initialRouteName, viewStyle: tmp.view };
-        tmp9Result = tmp9(tmp2(11122).Modal, obj5);
+        tmp9Result = tmp9(tmp2(11145).Modal, obj5);
       }
       return tmp9Result;
     }

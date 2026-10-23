@@ -1,27 +1,27 @@
-// Module ID: 15976
-// Function ID: 15977
+// Module ID: 16009
+// Function ID: 16010
 // Name: SafetyHubViolationsContainer
-// Dependencies: [32, 19, 17, 7907, 7883, 1087, 21, 4969, 587, 558, 576, 7942, 1128, 5220, 14833, 11052, 9017, 7882, 11, 15977, 7884, 6657, 12771, 2002, 12775, 504, 1267, 12773, 2]
+// Dependencies: [32, 19, 17, 7920, 7896, 1087, 21, 4969, 587, 558, 576, 7955, 1128, 5232, 14857, 11075, 9040, 7895, 11, 16010, 7897, 6670, 12790, 2002, 12794, 504, 1267, 12792, 2]
 
-// Module 15976 (SafetyHubViolationsContainer)
+// Module 16009 (SafetyHubViolationsContainer)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6657 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7882 */;
-import SafetyHubModels from "SafetyHubModels" /* 7884 */;
-import WarningIcon2 from "WarningIcon" /* 7942 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9017 */;
-import useSafetyHubClassifications from "useSafetyHubClassifications" /* 12773 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6670 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7895 */;
+import SafetyHubModels from "SafetyHubModels" /* 7897 */;
+import WarningIcon2 from "WarningIcon" /* 7955 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9040 */;
+import useSafetyHubClassifications from "useSafetyHubClassifications" /* 12792 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SafetyHubStore from "SafetyHubStore" /* 7907 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7883 */;
+import SafetyHubStore from "SafetyHubStore" /* 7920 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7896 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -122,7 +122,7 @@ function ClassificationDetail(classification) {
     onPress() {
       const obj = ModalActionCreatorsDefault;
       const obj2 = { classificationId: id, source: metroImportAll.StandingTab };
-      obj.pushLazy(asyncRequire(12771, dependencyMap.paths), obj2);
+      obj.pushLazy(asyncRequire(12790, dependencyMap.paths), obj2);
     },
     children: tmp12(closure_6, obj5)
   };
@@ -265,7 +265,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Safety
             }
             const obj5 = { onPress: onClick, style: tmp4.header, children: items };
             items = [tmp11, tmp23, tmp27];
-            const tmp32 = authStore2(tmp7(9017), obj5);
+            const tmp32 = authStore2(tmp7(9040), obj5);
             cResult[21] = onClick;
             cResult[22] = tmp4.header;
             cResult[23] = tmp11;
@@ -276,9 +276,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Safety
           }
           const tmp28 = unpackModuleId;
           if (opened) {
-            ChevronSmallDownIcon = tmp(14833).ChevronSmallUpIcon;
+            ChevronSmallDownIcon = tmp(14857).ChevronSmallUpIcon;
           } else {
-            ChevronSmallDownIcon = tmp(11052).ChevronSmallDownIcon;
+            ChevronSmallDownIcon = tmp(11075).ChevronSmallDownIcon;
           }
           const obj6 = { size: "md", style: tmp4.chevron };
           const tmp28Result = tmp28(ChevronSmallDownIcon, obj6);
@@ -341,7 +341,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Safety
   obj3 = { color: "active" === status ? colors.INTERACTIVE_TEXT_DEFAULT : colors.ICON_MUTED, size: "xs" };
   items = [unpackModuleId(metroRequire, obj2), , ];
   const obj4 = { style: tmp.headerTextContainer, children: items1 };
-  const Text = tmp7(5220).Text;
+  const Text = tmp7(5232).Text;
   const intl = tmp7(1128).intl;
   const formatToPlainString = intl.formatToPlainString;
   const t = tmp7(1128).t;
@@ -355,7 +355,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Safety
     formatToPlainStringResult = formatToPlainString(fZAHBT, obj6);
   }
   items1 = [unpackModuleId(Text, { variant: "heading-sm/semibold", children: formatToPlainStringResult }), ];
-  const Text2 = tmp7(5220).Text;
+  const Text2 = tmp7(5232).Text;
   const intl2 = tmp7(1128).intl;
   const string = intl2.string;
   const t2 = tmp7(1128).t;
@@ -367,9 +367,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Safety
   items1[1] = unpackModuleId(Text2, { variant: "text-xxs/normal", color: "text-muted", children: stringResult });
   items[1] = authStore2(metroRequire, obj4);
   if (opened) {
-    ChevronSmallDownIcon = tmp7(14833).ChevronSmallUpIcon;
+    ChevronSmallDownIcon = tmp7(14857).ChevronSmallUpIcon;
   } else {
-    ChevronSmallDownIcon = tmp7(11052).ChevronSmallDownIcon;
+    ChevronSmallDownIcon = tmp7(11075).ChevronSmallDownIcon;
   }
   const obj7 = { size: "md", style: tmp.chevron };
   items[2] = unpackModuleId(ChevronSmallDownIcon, obj7);
@@ -388,7 +388,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyA
   const tmp4 = closure_14();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "heading-sm/extrabold", children: intl.string(intl4.t.reLFaV) };
-    const Text = tmp(5220).Text;
+    const Text = tmp(5232).Text;
     intl = tmp(1128).intl;
     const tmp7 = unpackModuleId(Text, obj2);
     cResult[0] = tmp7;
@@ -398,7 +398,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyA
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-xs/normal", children: intl2.string(intl4.t.ERdH1o) };
-    const Text2 = tmp(5220).Text;
+    const Text2 = tmp(5232).Text;
     intl2 = tmp(1128).intl;
     const tmp10 = unpackModuleId(Text2, obj3);
     cResult[1] = tmp10;
@@ -442,7 +442,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyE
   const tmp4 = closure_14();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "text-xs/normal", children: intl.string(intl4.t.RV3AXf) };
-    const Text = tmp(5220).Text;
+    const Text = tmp(5232).Text;
     intl = tmp(1128).intl;
     const tmp7 = unpackModuleId(Text, obj2);
     cResult[0] = tmp7;
@@ -607,7 +607,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubV
   importDefault = tmp5[1];
   [tmp8, dependencyMap] = safetyHubAccountStanding(stateFromStores.useState(3), 2);
   const tmp7 = safetyHubAccountStanding(stateFromStores.useState(3), 2);
-  const obj3 = opened(12775);
+  const obj3 = opened(12794);
   safetyHubAccountStanding = obj3.useSafetyHubAccountStanding();
   const obj2 = stateFromStores;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -777,7 +777,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubV
   let obj11;
   let obj9;
   let status;
-  const f124867 = (classification) => {
+  const f125097 = (classification) => {
     const obj = { classification };
     return closure_1_11(ClassificationDetail, obj, classification.id);
   };
@@ -792,7 +792,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubV
   const tmp4 = first1(is_dsa_eligible.useState(3), 2);
   first1 = tmp4[0];
   is_dsa_eligible = tmp4[1];
-  let obj = classifications(12775);
+  let obj = classifications(12794);
   const safetyHubAccountStanding = obj.useSafetyHubAccountStanding();
   const items = [memo];
   const obj2 = classifications(504);
@@ -827,9 +827,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubV
   items3[0] = closure_11(closure_15, obj4);
   if (opened) {
     const obj5 = { style: tmp.separator };
-    const items4 = [closure_11(stateFromStores, obj5), memo.length > 0 && memo.map(f124867), , , ];
+    const items4 = [closure_11(stateFromStores, obj5), memo.length > 0 && memo.map(f125097), , , ];
     let tmp11Result = memo.length < classifications.length;
-    memo.length > 0 && memo.map(f124867);
+    memo.length > 0 && memo.map(f125097);
     if (tmp11Result) {
       const obj6 = { children: items5 };
       const obj7 = { style: tmp.separator };
@@ -843,7 +843,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubV
         children: closure_11(Text, obj10)
       };
       obj10 = { variant: "heading-sm/semibold", children: intl.format(classifications(1128).t["9Ml56H"], obj11) };
-      Text = tmp6(5220).Text;
+      Text = tmp6(5232).Text;
       intl = tmp6(1128).intl;
       obj11 = { nextPageSize: num };
       items5[1] = closure_11(stateFromStores, obj8);

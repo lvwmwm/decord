@@ -1,10 +1,10 @@
-// Module ID: 6479
-// Function ID: 6480
+// Module ID: 6492
+// Function ID: 6493
 // Name: IOSPushNotificationRawPayloadFixExperiment
 // Dependencies: [1455, 2]
 // Exports: isIOSPushNotificationRawPayloadFixExperimentEnabled
 
-// Module 6479 (IOSPushNotificationRawPayloadFixExperiment)
+// Module 6492 (IOSPushNotificationRawPayloadFixExperiment)
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 

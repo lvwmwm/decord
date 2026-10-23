@@ -1,10 +1,10 @@
-// Module ID: 8155
-// Function ID: 8156
+// Module ID: 8167
+// Function ID: 8168
 // Name: MobileLosslessImageUploadV2Experiment
 // Dependencies: [1455, 2]
 // Exports: useMobileLosslessImageUploadV2Experiment
 
-// Module 8155 (MobileLosslessImageUploadV2Experiment)
+// Module 8167 (MobileLosslessImageUploadV2Experiment)
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 19343
-// Function ID: 19344
+// Module ID: 19387
+// Function ID: 19388
 // Name: AccountLinkStore
-// Dependencies: [7188, 504, 584, 2]
+// Dependencies: [7201, 504, 584, 2]
 
-// Module 19343 (AccountLinkStore)
+// Module 19387 (AccountLinkStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7188 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7201 */;
 import size from "module_2" /* 2 */;
 
 const map = new Map();

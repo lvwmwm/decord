@@ -1,16 +1,16 @@
-// Module ID: 8569
-// Function ID: 8570
+// Module ID: 8581
+// Function ID: 8582
 // Name: transformNativeMarkupLink
-// Dependencies: [5966, 5972, 5978, 8486, 8570, 5989, 2]
+// Dependencies: [5978, 5984, 5990, 8498, 8582, 6001, 2]
 // Exports: transformNativeLink
 
-// Module 8569 (transformNativeMarkupLink)
-import MarkupTypes from "MarkupTypes" /* 5966 */;
-import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 5972 */;
-import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 5978 */;
-import MarkupAttachmentLinkRule from "MarkupAttachmentLinkRule" /* 5989 */;
-import transformNativeMarkupMention from "transformNativeMarkupMention" /* 8486 */;
-import ChannelLinkUrls from "ChannelLinkUrls" /* 8570 */;
+// Module 8581 (transformNativeMarkupLink)
+import MarkupTypes from "MarkupTypes" /* 5978 */;
+import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 5984 */;
+import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 5990 */;
+import MarkupAttachmentLinkRule from "MarkupAttachmentLinkRule" /* 6001 */;
+import transformNativeMarkupMention from "transformNativeMarkupMention" /* 8498 */;
+import ChannelLinkUrls from "ChannelLinkUrls" /* 8582 */;
 import size from "module_2" /* 2 */;
 
 function stripCredentialsForDisplay(url) {
@@ -85,7 +85,7 @@ export const transformNativeLink = function transformNativeLink(value, channelId
       obj5 = obj3;
       const obj4 = { type: MarkupTypes.AST_KEY.TEXT, content: name };
     } else {
-      obj5 = { type: MarkupTypes.AST_KEY.LINK, content: items1, target: url, title: "a" };
+      obj5 = { type: MarkupTypes.AST_KEY.LINK, content: items1, target: url, title: "Array" };
       const obj6 = { type: MarkupTypes.AST_KEY.TEXT, content: tmp8 };
       items1 = [obj6];
       tmp8 = stripCredentialsForDisplay(url);

@@ -1,16 +1,16 @@
-// Module ID: 14448
-// Function ID: 14449
+// Module ID: 14472
+// Function ID: 14473
 // Name: AvatarGrid
-// Dependencies: [19, 17, 4970, 5698, 21, 4969, 587, 558, 576, 504, 8718, 1202, 2]
+// Dependencies: [19, 17, 4970, 5710, 21, 4969, 587, 558, 576, 504, 8736, 1202, 2]
 
-// Module 14448 (AvatarGrid)
+// Module 14472 (AvatarGrid)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
-import PresenceStore from "PresenceStore" /* 5698 */;
+import PresenceStore from "PresenceStore" /* 5710 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -122,7 +122,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GridAva
               }
             }
           }
-          const tmpResult4 = user(8718);
+          const tmpResult4 = user(8736);
           class E {
             constructor() {
               return useReducedMotion.useReducedMotion;
@@ -200,7 +200,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GridAva
   const tmp7 = closure_5;
   if (undefined !== pendingAvatarSrc) {
     const obj4 = { source: tmp2Result.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores1) };
-    tmp2Result = user(8718);
+    tmp2Result = user(8736);
     const merged = Object.assign(obj3);
     obj5 = obj4;
   } else {

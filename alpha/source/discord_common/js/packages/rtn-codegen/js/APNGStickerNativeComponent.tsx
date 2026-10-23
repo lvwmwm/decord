@@ -1,9 +1,9 @@
-// Module ID: 10149
-// Function ID: 10150
+// Module ID: 10171
+// Function ID: 10172
 // Name: APNGStickerNativeComponent
 // Dependencies: [65, 2]
 
-// Module 10149 (APNGStickerNativeComponent)
+// Module 10171 (APNGStickerNativeComponent)
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;
 

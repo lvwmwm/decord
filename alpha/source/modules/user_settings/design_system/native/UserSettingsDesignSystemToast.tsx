@@ -1,22 +1,22 @@
-// Module ID: 17074
-// Function ID: 17075
+// Module ID: 17118
+// Function ID: 17119
 // Name: UserSettingsDesignSystemToast
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5220, 5230, 6890, 5963, 5650, 5649, 5672, 5668, 4919, 15232, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5232, 5242, 6903, 5975, 5662, 5661, 5684, 5680, 4919, 15257, 2]
 
-// Module 17074 (UserSettingsDesignSystemToast)
+// Module 17118 (UserSettingsDesignSystemToast)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import EmojiUtils from "EmojiUtils" /* 4919 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import components_Button_Button from "components/Button/Button" /* 5230 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5649 */;
-import toastUtils from "toastUtils" /* 5650 */;
-import CopyIcon from "CopyIcon" /* 5668 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5672 */;
-import Stack_Stack from "Stack/Stack" /* 5963 */;
-import Card_Card from "Card/Card" /* 6890 */;
-import Toast4 from "Toast" /* 15232 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import components_Button_Button from "components/Button/Button" /* 5242 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5661 */;
+import toastUtils from "toastUtils" /* 5662 */;
+import CopyIcon from "CopyIcon" /* 5680 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5684 */;
+import Stack_Stack from "Stack/Stack" /* 5975 */;
+import Card_Card from "Card/Card" /* 6903 */;
+import Toast4 from "Toast" /* 15257 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -95,9 +95,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoGr
     }
   }
   const obj4 = { children: hasOwnProperty(Stack, obj5) };
-  const Card = tmp(6890).Card;
+  const Card = tmp(6903).Card;
   obj5 = { spacing: nativeDefault.space.PX_8, children: items };
-  Stack = tmp(5963).Stack;
+  Stack = tmp(5975).Stack;
   items = [tmp4, tmp7, tmp10];
   const tmp15 = React3(Card, obj4);
   cResult[7] = tmp4;
@@ -206,9 +206,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function LiveSt
     }
   }
   const obj2 = { children: hasOwnProperty(Stack, obj3) };
-  const Card = tmp(6890).Card;
+  const Card = tmp(6903).Card;
   obj3 = { spacing: nativeDefault.space.PX_8, children: items };
-  Stack = tmp(5963).Stack;
+  Stack = tmp(5975).Stack;
   items = [tmp8, ];
   const obj4 = { variant: "text-md/medium", color: str, children: items1 };
   items1 = ["Mana: ", str2, str3];
@@ -449,10 +449,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
     const obj5 = { text, variant: "default" };
     const tmp31 = React3(Toast4.Toast, obj5);
     const obj6 = { text, variant: "default", icon: CircleInformationIcon.CircleInformationIcon };
-    const Toast = tmp(15232).Toast;
+    const Toast = tmp(15257).Toast;
     const tmp32 = React3(Toast, obj6);
     const obj7 = { text, variant: "default", icon: CircleInformationIcon.CircleInformationIcon, iconColor: nativeDefault.colors.ICON_BRAND, secondaryIconColor: nativeDefault.colors.ICON_DEFAULT };
-    const Toast2 = tmp(15232).Toast;
+    const Toast2 = tmp(15257).Toast;
     const tmp34 = React3(Toast2, obj7);
     const obj8 = { text, variant: "success" };
     const tmp35 = React3(Toast4.Toast, obj8);
@@ -484,7 +484,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   }
   if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
     let obj11;
-    const Toast3 = tmp(15232).Toast;
+    const Toast3 = tmp(15257).Toast;
     const tmp39 = React3;
     if ("" !== first) {
       obj11 = { type: "emoji", src: first, alt: "\u{1F525}" };
@@ -527,12 +527,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   }
   if (cResult[16] !== tmp6.previews) {
     const obj18 = { spacing: nativeDefault.space.PX_16, children: items };
-    const Stack = tmp(5963).Stack;
+    const Stack = tmp(5975).Stack;
     items = [tmp7, tmp8, tmp9, tmp10, ];
     const obj19 = { children: hasOwnProperty(Stack2, obj20) };
-    const Card = tmp(6890).Card;
+    const Card = tmp(6903).Card;
     obj20 = { spacing: nativeDefault.space.PX_12, style: tmp6.previews, children: items1 };
-    Stack2 = tmp(5963).Stack;
+    Stack2 = tmp(5975).Stack;
     items1 = [tmp23, tmp24, tmp25, tmp26, tmp27, tmp21, tmp22, tmp38, tmp41, tmp45, tmp49];
     items[4] = React3(Card, obj19);
     const tmp56 = hasOwnProperty(Stack, obj18);

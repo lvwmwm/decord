@@ -1,17 +1,17 @@
-// Module ID: 5954
-// Function ID: 5955
+// Module ID: 5966
+// Function ID: 5967
 // Name: AccessibilityView
-// Dependencies: [109, 19, 17, 21, 558, 576, 5955, 5038, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 5967, 5050, 2]
 
-// Module 5954 (AccessibilityView)
+// Module 5966 (AccessibilityView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useAccessibilityViewIsModalToggleDefault from "useAccessibilityViewIsModalToggle" /* 5955 */;
+import useAccessibilityViewIsModalToggleDefault from "useAccessibilityViewIsModalToggle" /* 5967 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5050 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = ["accessibilityViewIsModal", "nativeID", "collapsable", "onAccessibilityEscape", "ref"];

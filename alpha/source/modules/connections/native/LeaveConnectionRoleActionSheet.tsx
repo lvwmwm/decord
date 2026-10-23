@@ -1,15 +1,15 @@
-// Module ID: 11239
-// Function ID: 11240
+// Module ID: 11262
+// Function ID: 11263
 // Name: LeaveConnectionRoleActionSheet
-// Dependencies: [19, 17, 21, 4969, 558, 576, 5220, 1128, 5230, 5251, 2]
+// Dependencies: [19, 17, 21, 4969, 558, 576, 5232, 1128, 5242, 5263, 2]
 
-// Module 11239 (LeaveConnectionRoleActionSheet)
+// Module 11262 (LeaveConnectionRoleActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import components_Button_Button from "components/Button/Button" /* 5230 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5251 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import components_Button_Button from "components/Button/Button" /* 5242 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5263 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
@@ -39,7 +39,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeaveConnect
   const container = tmp4.container;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl4.t.vytvJF) };
-    const Text = tmp(5220).Text;
+    const Text = tmp(5232).Text;
     intl = tmp(1128).intl;
     const tmp7 = _false(Text, obj2);
     cResult[0] = tmp7;
@@ -100,7 +100,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeaveConnect
     const obj5 = { children: React3(View, obj6) };
     obj6 = { style: container, children: items };
     items = [first, tmp10, tmp18];
-    BottomSheet = tmp(5251).BottomSheet;
+    BottomSheet = tmp(5263).BottomSheet;
     const tmp24 = _false(BottomSheet, obj5);
     cResult[10] = tmp4.container;
     cResult[11] = tmp10;

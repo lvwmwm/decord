@@ -1,10 +1,10 @@
-// Module ID: 7916
-// Function ID: 7917
+// Module ID: 7929
+// Function ID: 7930
 // Name: AppStoreAgeSignalSupport
 // Dependencies: [1630, 4926, 1384, 2]
 // Exports: isAppStoreAgeSignalSupported
 
-// Module 7916 (AppStoreAgeSignalSupport)
+// Module 7929 (AppStoreAgeSignalSupport)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
 import DeviceUtils from "DeviceUtils" /* 4926 */;

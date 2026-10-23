@@ -1,9 +1,9 @@
-// Module ID: 16301
-// Function ID: 16302
+// Module ID: 16333
+// Function ID: 16334
 // Name: CollectibleSearchCurrencyFilter
 // Dependencies: [2]
 
-// Module 16301 (CollectibleSearchCurrencyFilter)
+// Module 16333 (CollectibleSearchCurrencyFilter)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/CollectibleSearchCurrencyFilter.tsx");

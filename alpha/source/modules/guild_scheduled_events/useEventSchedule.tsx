@@ -1,14 +1,14 @@
-// Module ID: 8873
-// Function ID: 8874
+// Module ID: 8896
+// Function ID: 8897
 // Name: useEventSchedule
-// Dependencies: [6769, 558, 576, 8865, 8872, 504, 2]
+// Dependencies: [6782, 558, 576, 8888, 8895, 504, 2]
 // Exports: getEventSchedule
 
-// Module 8873 (useEventSchedule)
+// Module 8896 (useEventSchedule)
 import react from "react" /* 576 */;
-import ScheduleUtils from "ScheduleUtils" /* 8865 */;
-import useEventException from "useEventException" /* 8872 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6769 */;
+import ScheduleUtils from "ScheduleUtils" /* 8888 */;
+import useEventException from "useEventException" /* 8895 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6782 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

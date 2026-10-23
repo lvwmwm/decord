@@ -1,12 +1,12 @@
-// Module ID: 12716
-// Function ID: 12717
+// Module ID: 12735
+// Function ID: 12736
 // Name: GuildRaidLockdownFeedbackActionSheet
-// Dependencies: [32, 19, 1087, 21, 4969, 558, 576, 1128, 7612, 5196, 5697, 7283, 7233, 7120, 6972, 6885, 7165, 5230, 2]
+// Dependencies: [32, 19, 1087, 21, 4969, 558, 576, 1128, 7625, 5208, 5709, 7296, 7246, 7133, 6985, 6898, 7178, 5242, 2]
 
-// Module 12716 (GuildRaidLockdownFeedbackActionSheet)
+// Module 12735 (GuildRaidLockdownFeedbackActionSheet)
 import Constants from "Constants" /* 1087 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5697 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5709 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -105,7 +105,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRaidLoc
                 }
                 if (cResult[31] !== tmp12) {
                   let obj2 = { onPress: tmp12, text: tmp32 };
-                  const tmp36 = closure_6(guildId(5230).Button, obj2);
+                  const tmp36 = closure_6(guildId(5242).Button, obj2);
                   cResult[31] = tmp12;
                   cResult[32] = tmp36;
                   tmp34 = tmp36;
@@ -155,10 +155,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRaidLoc
                 tmp37 = tmp39;
               }
             }
-            let hasItem = first1.includes(tmp(7612).RaidLockdownFeedbackType.OTHER);
+            let hasItem = first1.includes(tmp(7625).RaidLockdownFeedbackType.OTHER);
             if (hasItem) {
               const obj5 = { autoComplete: "off", value: first2, placeholder: intl8.string(guildId(1128).t["PAM+JR"]), onChange: tmp13 };
-              const TextArea = tmp(7165).TextArea;
+              const TextArea = tmp(7178).TextArea;
               intl8 = tmp(1128).intl;
               hasItem = closure_6(TextArea, obj5);
             }
@@ -179,22 +179,22 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRaidLoc
       }
     }
   }
-  const obj7 = { text: intl.string(guildId(1128).t["//3pvi"]), value: guildId(7612).RaidLockdownFeedbackType.DM_SPAM };
+  const obj7 = { text: intl.string(guildId(1128).t["//3pvi"]), value: guildId(7625).RaidLockdownFeedbackType.DM_SPAM };
   intl = tmp(1128).intl;
   const items2 = [obj7, , , , , ];
-  const obj8 = { text: intl2.string(guildId(1128).t.SdVsip), value: guildId(7612).RaidLockdownFeedbackType.MENTION_SPAM };
+  const obj8 = { text: intl2.string(guildId(1128).t.SdVsip), value: guildId(7625).RaidLockdownFeedbackType.MENTION_SPAM };
   intl2 = tmp(1128).intl;
   items2[1] = obj8;
-  const obj9 = { text: intl3.string(guildId(1128).t.uTiSVL), value: guildId(7612).RaidLockdownFeedbackType.CHANNEL_SPAM };
+  const obj9 = { text: intl3.string(guildId(1128).t.uTiSVL), value: guildId(7625).RaidLockdownFeedbackType.CHANNEL_SPAM };
   intl3 = tmp(1128).intl;
   items2[2] = obj9;
-  const obj10 = { text: intl4.string(guildId(1128).t.GQczU8), value: guildId(7612).RaidLockdownFeedbackType.SUS_NEW_MEMBERS };
+  const obj10 = { text: intl4.string(guildId(1128).t.GQczU8), value: guildId(7625).RaidLockdownFeedbackType.SUS_NEW_MEMBERS };
   intl4 = tmp(1128).intl;
   items2[3] = obj10;
-  const obj11 = { text: intl5.string(guildId(1128).t.AAgqy3), value: guildId(7612).RaidLockdownFeedbackType.CHANGING_SETTINGS };
+  const obj11 = { text: intl5.string(guildId(1128).t.AAgqy3), value: guildId(7625).RaidLockdownFeedbackType.CHANGING_SETTINGS };
   intl5 = tmp(1128).intl;
   items2[4] = obj11;
-  const obj12 = { text: intl6.string(guildId(1128).t.ryPKb7), value: guildId(7612).RaidLockdownFeedbackType.OTHER };
+  const obj12 = { text: intl6.string(guildId(1128).t.ryPKb7), value: guildId(7625).RaidLockdownFeedbackType.OTHER };
   intl6 = tmp(1128).intl;
   items2[5] = obj12;
   if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
@@ -224,11 +224,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRaidLoc
       if (cResult[19] === first2) {
         tmp19 = cResult[20];
       }
-      const ActionSheet = tmp(7283).ActionSheet;
+      const ActionSheet = tmp(7296).ActionSheet;
       const _Symbol = Symbol;
       if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
         const obj13 = { title: intl7.string(guildId(1128).t.f5hd9P) };
-        const BottomSheetTitleHeader = tmp(7233).BottomSheetTitleHeader;
+        const BottomSheetTitleHeader = tmp(7246).BottomSheetTitleHeader;
         intl7 = tmp(1128).intl;
         const tmp22 = closure_6(BottomSheetTitleHeader, obj13);
         cResult[21] = tmp22;
@@ -236,9 +236,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRaidLoc
       } else {
         tmp20 = cResult[21];
       }
-      const tmp24 = first1(7120);
+      const tmp24 = first1(7133);
       const container = tmp4.container;
-      const TableRowGroup = tmp(6972).TableRowGroup;
+      const TableRowGroup = tmp(6985).TableRowGroup;
       const mapped = items2.map((value) => {
         value = value.value;
         guildId = value;
@@ -323,28 +323,28 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRaidLoc
   const tmp3 = first1(react.useState(), 2);
   first1 = tmp3[0];
   react = tmp3[1];
-  let obj = { text: intl.string(guildId(1128).t["//3pvi"]), value: guildId(7612).RaidLockdownFeedbackType.DM_SPAM };
+  let obj = { text: intl.string(guildId(1128).t["//3pvi"]), value: guildId(7625).RaidLockdownFeedbackType.DM_SPAM };
   intl = guildId(1128).intl;
   let items = [obj, , , , , ];
-  let obj2 = { text: intl2.string(guildId(1128).t.SdVsip), value: guildId(7612).RaidLockdownFeedbackType.MENTION_SPAM };
+  let obj2 = { text: intl2.string(guildId(1128).t.SdVsip), value: guildId(7625).RaidLockdownFeedbackType.MENTION_SPAM };
   intl2 = guildId(1128).intl;
   items[1] = obj2;
-  let obj3 = { text: intl3.string(guildId(1128).t.uTiSVL), value: guildId(7612).RaidLockdownFeedbackType.CHANNEL_SPAM };
+  let obj3 = { text: intl3.string(guildId(1128).t.uTiSVL), value: guildId(7625).RaidLockdownFeedbackType.CHANNEL_SPAM };
   intl3 = guildId(1128).intl;
   items[2] = obj3;
-  const obj4 = { text: intl4.string(guildId(1128).t.GQczU8), value: guildId(7612).RaidLockdownFeedbackType.SUS_NEW_MEMBERS };
+  const obj4 = { text: intl4.string(guildId(1128).t.GQczU8), value: guildId(7625).RaidLockdownFeedbackType.SUS_NEW_MEMBERS };
   intl4 = guildId(1128).intl;
   items[3] = obj4;
-  const obj5 = { text: intl5.string(guildId(1128).t.AAgqy3), value: guildId(7612).RaidLockdownFeedbackType.CHANGING_SETTINGS };
+  const obj5 = { text: intl5.string(guildId(1128).t.AAgqy3), value: guildId(7625).RaidLockdownFeedbackType.CHANGING_SETTINGS };
   intl5 = guildId(1128).intl;
   items[4] = obj5;
-  const obj6 = { text: intl6.string(guildId(1128).t.ryPKb7), value: guildId(7612).RaidLockdownFeedbackType.OTHER };
+  const obj6 = { text: intl6.string(guildId(1128).t.ryPKb7), value: guildId(7625).RaidLockdownFeedbackType.OTHER };
   intl6 = guildId(1128).intl;
   items[5] = obj6;
   const obj7 = { startExpanded: true, header: closure_6(BottomSheetTitleHeader, obj8), children: tmp8(tmp9, obj9) };
-  const ActionSheet = guildId(7283).ActionSheet;
+  const ActionSheet = guildId(7296).ActionSheet;
   obj8 = { title: intl7.string(guildId(1128).t.f5hd9P) };
-  BottomSheetTitleHeader = guildId(7233).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = guildId(7246).BottomSheetTitleHeader;
   intl7 = guildId(1128).intl;
   obj9 = { style: tmp.container, children: items1 };
   const obj10 = {
@@ -369,10 +369,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRaidLoc
       return closure_1_6(TableCheckboxRow, obj, value);
     })
   };
-  tmp9 = raid_lockdown_feedback_type(7120);
-  const TableRowGroup = guildId(6972).TableRowGroup;
+  tmp9 = raid_lockdown_feedback_type(7133);
+  const TableRowGroup = guildId(6985).TableRowGroup;
   items1 = [closure_6(TableRowGroup, obj10), , ];
-  let hasItem = raid_lockdown_feedback_type.includes(guildId(7612).RaidLockdownFeedbackType.OTHER);
+  let hasItem = raid_lockdown_feedback_type.includes(guildId(7625).RaidLockdownFeedbackType.OTHER);
   tmp8 = closure_7;
   if (hasItem) {
     const obj11 = {
@@ -383,7 +383,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRaidLoc
           closure_4(arg0);
         }
     };
-    const TextArea = tmp5(7165).TextArea;
+    const TextArea = tmp5(7178).TextArea;
     intl8 = tmp5(1128).intl;
     hasItem = tmp7(TextArea, obj11);
   }
@@ -398,7 +398,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRaidLoc
     },
     text: intl9.string(guildId(1128).t.nAt0rE)
   };
-  const Button = tmp5(5230).Button;
+  const Button = tmp5(5242).Button;
   intl9 = tmp5(1128).intl;
   items1[2] = closure_6(Button, obj12);
   return closure_6(ActionSheet, obj7);

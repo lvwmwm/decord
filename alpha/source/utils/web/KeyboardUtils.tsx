@@ -1,15 +1,15 @@
-// Module ID: 15322
-// Function ID: 15323
+// Module ID: 15343
+// Function ID: 15344
 // Name: KeyboardUtils
-// Dependencies: [32, 7598, 1384, 12, 15323, 15324, 15325, 1388, 2]
+// Dependencies: [32, 7611, 1384, 12, 15344, 15345, 15346, 1388, 2]
 // Exports: areKeyCombosEqual, codeToKey, getEnv, getRawCodeFromKey, isKeyboardActivatedMouseEvent, toBrowserEvents, toCombo, toKeyNames, toString
 
-// Module 15322 (KeyboardUtils)
+// Module 15343 (KeyboardUtils)
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import keyCodeDefault from "keyCode" /* 15323 */;
-import KeyboardLayoutMapUtils from "KeyboardLayoutMapUtils" /* 15324 */;
+import keyCodeDefault from "keyCode" /* 15344 */;
+import KeyboardLayoutMapUtils from "KeyboardLayoutMapUtils" /* 15345 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import KeyboardConstants from "KeyboardConstants" /* 7598 */;
+import KeyboardConstants from "KeyboardConstants" /* 7611 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1384 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
@@ -43,7 +43,7 @@ function _codeToKey(items1) {
   }
   return tmp14;
 }
-const f123245 = (item) => {
+const f123438 = (item) => {
   let combined;
   let items1;
   let tmp;
@@ -353,7 +353,7 @@ function codeToKey(items1) {
   }
 }
 function toKeyNames(arr) {
-  const mapped = arr.map(f123245);
+  const mapped = arr.map(f123438);
   return mapped.filter(GlobalUtils.isNotNullish);
 }
 const frozen2 = Object.freeze(invertResult2);
@@ -478,7 +478,7 @@ export const toCombo = function toCombo(shortcut) {
   }
   let str = shortcut.replace(/numpad plus/i, "");
   const str2 = str.replace(/NUMPAD \+/i, "numpad plus");
-  const str3 = str2.replace(/mod/i, KEYBOARD_KEY(15325).modKey);
+  const str3 = str2.replace(/mod/i, KEYBOARD_KEY(15346).modKey);
   const parts = str3.split("+");
   const mapped = parts.map((item) => {
     const str = item.trim();
@@ -518,7 +518,7 @@ export const toString = function toString(arr) {
   if (arg1 === undefined) {
     flag = false;
   }
-  const mapped = arr.map(f123245);
+  const mapped = arr.map(f123438);
   const found = mapped.filter(GlobalUtils.isNotNullish);
   if (flag) {
     const tmp2 = global;

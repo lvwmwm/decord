@@ -1,17 +1,17 @@
-// Module ID: 13731
-// Function ID: 13732
+// Module ID: 13754
+// Function ID: 13755
 // Name: MessageNotificationHeader
-// Dependencies: [19, 17, 4970, 4911, 1392, 21, 4969, 587, 558, 576, 5220, 5590, 1108, 8528, 8530, 8488, 504, 2]
+// Dependencies: [19, 17, 4970, 4911, 1392, 21, 4969, 587, 558, 576, 5232, 5602, 1108, 8540, 8542, 8500, 504, 2]
 
-// Module 13731 (MessageNotificationHeader)
+// Module 13754 (MessageNotificationHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ChannelTypes from "ChannelTypes" /* 1108 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import useChannelName from "useChannelName" /* 5590 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8488 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import useChannelName from "useChannelName" /* 5602 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8500 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4970 */;
 import RelationshipStore from "RelationshipStore" /* 4911 */;
@@ -275,7 +275,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Locati
         let tmp12 = null != author;
         if (tmp12) {
           const obj4 = { variant: "text-md/bold", color, maxFontSizeMultiplier: 1.75, style: tmp4.separator, children: "\u00B7" };
-          tmp12 = metroImportDefault(tmp(5220).Text, obj4);
+          tmp12 = metroImportDefault(tmp(5232).Text, obj4);
         }
         cResult[7] = author;
         cResult[8] = tmp4.separator;
@@ -302,11 +302,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Locati
       if (null != parentChannel) {
         let ThreadIcon;
         if (parentChannel.type === ChannelTypes.ChannelTypes.GUILD_FORUM) {
-          ThreadIcon = tmp(8528).ChatIcon;
+          ThreadIcon = tmp(8540).ChatIcon;
         }
         simpleChannelIconComponent = ThreadIcon;
       }
-      ThreadIcon = tmp(8530).ThreadIcon;
+      ThreadIcon = tmp(8542).ThreadIcon;
     } else {
       const tmpResult = utils_ChannelUtils;
       simpleChannelIconComponent = tmpResult.getSimpleChannelIconComponent(channel);
@@ -343,11 +343,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Locati
         if (null != parentChannel) {
           let ThreadIcon;
           if (parentChannel.type === ChannelTypes.ChannelTypes.GUILD_FORUM) {
-            ThreadIcon = tmp3(8528).ChatIcon;
+            ThreadIcon = tmp3(8540).ChatIcon;
           }
           simpleChannelIconComponent = ThreadIcon;
         }
-        ThreadIcon = tmp3(8530).ThreadIcon;
+        ThreadIcon = tmp3(8542).ThreadIcon;
       } else {
         const tmp3Result = utils_ChannelUtils;
         simpleChannelIconComponent = tmp3Result.getSimpleChannelIconComponent(tmp);
@@ -493,7 +493,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageNotif
       if (tmp15) {
         const obj6 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: items2, children: author.nick };
         items2 = [tmp4.primaryText, tmp10];
-        tmp15 = metroImportDefault(tmp(5220).Text, obj6);
+        tmp15 = metroImportDefault(tmp(5232).Text, obj6);
       }
       cResult[8] = author;
       cResult[9] = tmp10;

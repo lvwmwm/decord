@@ -1,11 +1,11 @@
-// Module ID: 8331
-// Function ID: 8332
+// Module ID: 8343
+// Function ID: 8344
 // Name: markup/MarkupParser
-// Dependencies: [8332, 1951, 2]
+// Dependencies: [8344, 1951, 2]
 
-// Module 8331 (markup/MarkupParser)
+// Module 8343 (markup/MarkupParser)
 import _modDef1951 from "module_1951" /* 1951 */;
-import MarkupASTUtils from "MarkupASTUtils" /* 8332 */;
+import MarkupASTUtils from "MarkupASTUtils" /* 8344 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -75,14 +75,14 @@ let obj = {
       return result;
     };
   },
-  reactParserFor(importDefaultResultResult) {
+  reactParserFor(rules2) {
     let closure_1;
     let obj = _modDef1951;
-    let closure_0 = obj.parserFor(importDefaultResultResult);
+    let closure_0 = obj.parserFor(rules2);
     let tmp = _modDef1951;
     const reactFor = tmp.reactFor;
     let obj2 = _modDef1951;
-    importDefault = reactFor(obj2.ruleOutput(importDefaultResultResult, "react"));
+    importDefault = reactFor(obj2.ruleOutput(rules2, "react"));
     return () => {
       let str = arg0;
       if (arg0 === undefined) {

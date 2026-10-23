@@ -1,28 +1,28 @@
-// Module ID: 15908
-// Function ID: 15909
+// Module ID: 15941
+// Function ID: 15942
 // Name: SettingsAccountScreen
-// Dependencies: [32, 19, 17, 15909, 8318, 1087, 21, 4969, 587, 558, 576, 1505, 5655, 15910, 5220, 1128, 5230, 6890, 504, 15911, 7029, 6662, 6972, 15912, 11181, 15913, 15916, 12774, 5249, 2]
+// Dependencies: [32, 19, 17, 15942, 8330, 1087, 21, 4969, 587, 558, 576, 1505, 5667, 15943, 5232, 1128, 5242, 6903, 504, 15944, 7042, 6675, 6985, 15945, 11204, 15946, 15949, 12793, 5261, 2]
 
-// Module 15908 (SettingsAccountScreen)
+// Module 15941 (SettingsAccountScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
-import useMountEffectDefault from "useMountEffect" /* 5249 */;
-import FastImageDefault from "FastImage" /* 5655 */;
-import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6662 */;
-import TableRowGroup from "TableRowGroup" /* 6972 */;
-import MFAUtils from "MFAUtils" /* 7029 */;
-import SettingsConstants from "SettingsConstants" /* 8318 */;
-import SettingBuilders from "SettingBuilders" /* 11181 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12774 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 15912 */;
-import SettingsAccountHeaderDefault from "SettingsAccountHeader" /* 15913 */;
-import SettingLayoutDefault from "SettingLayout" /* 15916 */;
+import useMountEffectDefault from "useMountEffect" /* 5261 */;
+import FastImageDefault from "FastImage" /* 5667 */;
+import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6675 */;
+import TableRowGroup from "TableRowGroup" /* 6985 */;
+import MFAUtils from "MFAUtils" /* 7042 */;
+import SettingsConstants from "SettingsConstants" /* 8330 */;
+import SettingBuilders from "SettingBuilders" /* 11204 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12793 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 15945 */;
+import SettingsAccountHeaderDefault from "SettingsAccountHeader" /* 15946 */;
+import SettingLayoutDefault from "SettingLayout" /* 15949 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import WebAuthnStore from "WebAuthnStore" /* 15909 */;
+import WebAuthnStore from "WebAuthnStore" /* 15942 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -125,7 +125,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwo
   }
   if (cResult[4] !== tmp4.upsellImagePasswordless) {
     const obj4 = { style: tmp8, children: closure_10(tmp13, obj5) };
-    obj5 = { source: navigation(15910), resizeMode: "contain", style: tmp4.upsellImagePasswordless };
+    obj5 = { source: navigation(15943), resizeMode: "contain", style: tmp4.upsellImagePasswordless };
     tmp13 = FastImageDefault;
     const tmp14 = closure_10(View, obj4);
     cResult[4] = tmp4.upsellImagePasswordless;
@@ -150,7 +150,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwo
   }
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     const obj8 = { variant: "heading-lg/medium", color: "mobile-text-heading-primary", children: intl.string(navigation(1128).t["+Svv46"]) };
-    const Heading = tmp(5220).Heading;
+    const Heading = tmp(5232).Heading;
     intl = tmp(1128).intl;
     const tmp19 = closure_10(Heading, obj8);
     cResult[8] = tmp19;
@@ -160,7 +160,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwo
   }
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
     const obj9 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(navigation(1128).t.S0g2K9) };
-    const Text = tmp(5220).Text;
+    const Text = tmp(5232).Text;
     intl2 = tmp(1128).intl;
     const tmp22 = closure_10(Text, obj9);
     cResult[9] = tmp22;
@@ -185,7 +185,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwo
   }
   if (cResult[12] !== tmp6) {
     const obj11 = { text: tmp24, onPress: tmp6, size: "sm" };
-    const tmp28 = closure_10(navigation(5230).Button, obj11);
+    const tmp28 = closure_10(navigation(5242).Button, obj11);
     cResult[12] = tmp6;
     cResult[13] = tmp28;
     tmp26 = tmp28;
@@ -235,7 +235,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwo
   const obj16 = { border: "none", shadow: "none", children: closure_11(View, obj17) };
   obj17 = { style: tmp7, children: items2 };
   items2 = [tmp9, tmp33];
-  const Card = tmp(6890).Card;
+  const Card = tmp(6903).Card;
   const tmp39 = closure_10(Card, obj16);
   cResult[17] = tmp33;
   cResult[18] = tmp9;
@@ -323,9 +323,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Accoun
   const tmp7 = _slicedToArray(tmpResult.useStateFromStoresObject(tmp4, tmp5), 2);
   _require = tmp9;
   const first = tmp7[0];
-  const tmpResult2 = tmp(15911);
+  const tmpResult2 = tmp(15944);
   const isUserVerified = tmpResult2.useIsUserVerified();
-  const tmp11 = tmp(7029).hasWebAuthn && isUserVerified && tmp7[1] && !first;
+  const tmp11 = tmp(7042).hasWebAuthn && isUserVerified && tmp7[1] && !first;
   if (cResult[2] !== tmp7[1]) {
     const fn2 = function u() {
       const tmp = closure_0;
@@ -355,7 +355,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Accoun
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: intl.string(tmp(1128).t.fuTmEJ) };
-    const TableRowGroupTitle = tmp(6972).TableRowGroupTitle;
+    const TableRowGroupTitle = tmp(6985).TableRowGroupTitle;
     intl = tmp(1128).intl;
     const tmp21 = closure_10(TableRowGroupTitle, obj2);
     cResult[7] = tmp21;
@@ -387,7 +387,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Accoun
   }), 2);
   first = tmp3[0];
   let closure_1 = tmp5;
-  const obj2 = first(15911);
+  const obj2 = first(15944);
   const isUserVerified = obj2.useIsUserVerified();
   const items1 = [tmp3[1], first, isUserVerified];
   const memo = react.useMemo(() => {
@@ -411,7 +411,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Accoun
   const obj3 = { children: items3 };
   items3 = [tmp11, ];
   const obj4 = { title: intl.string(tmp(1128).t.fuTmEJ) };
-  const TableRowGroupTitle = tmp(6972).TableRowGroupTitle;
+  const TableRowGroupTitle = tmp(6985).TableRowGroupTitle;
   intl = tmp(1128).intl;
   items3[1] = closure_10(TableRowGroupTitle, obj4);
   return tmp9(tmp10, obj3);
@@ -463,7 +463,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Accoun
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { sections: getAccountSettings(), ListHeaderComponent: SettingsAccountHeaderDefault };
-    const createList = tmp(11181).createList;
+    const createList = tmp(11204).createList;
     SettingBuilders;
     const list = createList(obj2);
     cResult[0] = list;

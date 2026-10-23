@@ -1,14 +1,14 @@
-// Module ID: 15341
-// Function ID: 15342
+// Module ID: 15362
+// Function ID: 15363
 // Name: ShinyButton/ShinyButton
-// Dependencies: [32, 109, 19, 17, 4970, 21, 4969, 558, 576, 504, 5038, 5192, 1205, 2]
+// Dependencies: [32, 109, 19, 17, 4970, 21, 4969, 558, 576, 504, 5050, 5204, 1205, 2]
 
-// Module 15341 (ShinyButton/ShinyButton)
+// Module 15362 (ShinyButton/ShinyButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Button_ButtonDefault from "Button/Button" /* 1205 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
-import timing from "timing" /* 5192 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5050 */;
+import timing from "timing" /* 5204 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -165,7 +165,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShinyButton(
     tmp28 = cResult[12];
   }
   const effect = obj2.useEffect(tmp27, tmp28);
-  const tmpResult2 = tmp(5038);
+  const tmpResult2 = tmp(5050);
   class H {
     constructor() {
       let items;
@@ -199,7 +199,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShinyButton(
       return obj2;
     }
   }
-  let obj3 = { width, OFFSCREEN_OFFSET, withRepeat: tmp(5038).withRepeat, withSequence: tmp(5038).withSequence, withTiming: tmp(5192).withTiming, withDelay: tmp(5038).withDelay, INITIAL_ANIMATION_DELAY, ANIMATION_DURATION: v2000 };
+  let obj3 = { width, OFFSCREEN_OFFSET, withRepeat: tmp(5050).withRepeat, withSequence: tmp(5050).withSequence, withTiming: tmp(5204).withTiming, withDelay: tmp(5050).withDelay, INITIAL_ANIMATION_DELAY, ANIMATION_DURATION: v2000 };
   H.__closure = obj3;
   H.__workletHash = 3002595774498;
   H.__initData = __initData;

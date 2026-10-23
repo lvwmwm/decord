@@ -1,21 +1,21 @@
-// Module ID: 6625
-// Function ID: 6626
+// Module ID: 6638
+// Function ID: 6639
 // Name: StageMediaHooks
-// Dependencies: [4843, 5616, 6626, 558, 576, 504, 6673, 2]
+// Dependencies: [4843, 5628, 6639, 558, 576, 504, 6686, 2]
 // Exports: getStageHasMedia, getStageHasStream, isStageVideoEnabled
 
-// Module 6625 (StageMediaHooks)
-import StageChannelParticipants from "StageChannelParticipants" /* 6673 */;
+// Module 6638 (StageMediaHooks)
+import StageChannelParticipants from "StageChannelParticipants" /* 6686 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import VoiceStateStore from "VoiceStateStore" /* 5616 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6626 */;
+import VoiceStateStore from "VoiceStateStore" /* 5628 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6639 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f95936 = (type) => type.type === require("StageChannelParticipants").StageChannelParticipantTypes.STREAM;
+const f96117 = (type) => type.type === require("StageChannelParticipants").StageChannelParticipantTypes.STREAM;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStageHasMedia(arg0) {
   let closure_0;
@@ -88,7 +88,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStageHa
     class S {
       constructor() {
         mutableParticipants = closure_4.getMutableParticipants(closure_0, closure_0(closure_1[6]).StageChannelParticipantNamedIndex.SPEAKER);
-        return null != mutableParticipants.find(() => { /* body not rendered: F143528 */ });
+        return null != mutableParticipants.find(() => { /* body not rendered: F143803 */ });
       }
     }
     const items1 = [arg0];
@@ -101,7 +101,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStageHa
     class S {
       constructor() {
         mutableParticipants = closure_4.getMutableParticipants(closure_0, closure_0(closure_1[6]).StageChannelParticipantNamedIndex.SPEAKER);
-        return null != mutableParticipants.find(() => { /* body not rendered: F143528 */ });
+        return null != mutableParticipants.find(() => { /* body not rendered: F143803 */ });
       }
     }
     tmp7 = cResult[3];
@@ -199,7 +199,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsStageVi
 });
 function getStageHasStream(id) {
   const mutableParticipants = StageChannelParticipantStore.getMutableParticipants(id, StageChannelParticipants.StageChannelParticipantNamedIndex.SPEAKER);
-  return null != mutableParticipants.find(f95936);
+  return null != mutableParticipants.find(f96117);
 }
 const result = size.fileFinishedImporting("modules/stage_channels/StageMediaHooks.tsx");
 
@@ -207,7 +207,7 @@ export const useStageHasMedia = tmp2;
 export const useStageHasStream = tmp3;
 export const getStageHasMedia = function getStageHasMedia(id) {
   const mutableParticipants = StageChannelParticipantStore.getMutableParticipants(id, StageChannelParticipants.StageChannelParticipantNamedIndex.SPEAKER);
-  const hasVideoResult = null != mutableParticipants.find(f95936) || VoiceStateStore.hasVideo(id);
+  const hasVideoResult = null != mutableParticipants.find(f96117) || VoiceStateStore.hasVideo(id);
   return hasVideoResult;
 };
 export { getStageHasStream };

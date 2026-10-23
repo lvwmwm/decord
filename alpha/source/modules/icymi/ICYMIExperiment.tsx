@@ -1,13 +1,13 @@
-// Module ID: 8817
-// Function ID: 8818
+// Module ID: 8840
+// Function ID: 8841
 // Name: ICYMIExperiment
-// Dependencies: [8818, 1455, 558, 576, 8820, 2]
+// Dependencies: [8841, 1455, 558, 576, 8843, 2]
 // Exports: getICYMIEnabled, icymiEnabled
 
-// Module 8817 (ICYMIExperiment)
+// Module 8840 (ICYMIExperiment)
 import react from "react" /* 576 */;
-import useLabFeatureDefault from "useLabFeature" /* 8820 */;
-import LabFeatureStore from "LabFeatureStore" /* 8818 */;
+import useLabFeatureDefault from "useLabFeature" /* 8843 */;
+import LabFeatureStore from "LabFeatureStore" /* 8841 */;
 import ApexExperiment_mod from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

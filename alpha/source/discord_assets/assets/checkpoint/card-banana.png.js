@@ -1,8 +1,8 @@
-// Module ID: 6019
-// Function ID: 6020
+// Module ID: 6031
+// Function ID: 6032
 // Dependencies: [2]
 
-// Module 6019
+// Module 6031
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/card-banana.png.js");

@@ -1,22 +1,22 @@
-// Module ID: 15779
-// Function ID: 15780
+// Module ID: 15800
+// Function ID: 15801
 // Name: DevToolsNavigator
-// Dependencies: [32, 109, 19, 17, 21, 9720, 558, 576, 7080, 15780, 9676, 17038, 11733, 5220, 587, 16860, 15920, 5196, 6657, 5144, 2]
+// Dependencies: [32, 109, 19, 17, 21, 9742, 558, 576, 7093, 15801, 9698, 17082, 11753, 5232, 587, 16904, 15953, 5208, 6670, 5156, 2]
 // Exports: navigateToDevTools
 
-// Module 15779 (DevToolsNavigator)
+// Module 15800 (DevToolsNavigator)
 import react_native from "react-native" /* 17 */;
-import Types from "Types" /* 5144 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6657 */;
-import HeaderShared from "HeaderShared" /* 9676 */;
-import SettingHookHarnessDefault from "SettingHookHarness" /* 15780 */;
-import DevToolsContentDefault from "DevToolsContent" /* 17038 */;
+import Types from "Types" /* 5156 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6670 */;
+import HeaderShared from "HeaderShared" /* 9698 */;
+import SettingHookHarnessDefault from "SettingHookHarness" /* 15801 */;
+import DevToolsContentDefault from "DevToolsContent" /* 17082 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9720 */;
+import NativeStackView from "NativeStackView" /* 9742 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function D
   let obj = accessibilityNativeStackOptions(576);
   const cResult = obj.c(9);
   let str = screenKey.screenKey;
-  let obj2 = accessibilityNativeStackOptions(7080);
+  let obj2 = accessibilityNativeStackOptions(7093);
   accessibilityNativeStackOptions = obj2.useAccessibilityNativeStackOptions();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const tmp8 = closure_7(SettingHookHarnessDefault, {});
@@ -109,8 +109,8 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function D
     const tmp16 = closure_7(Screen, obj3);
     const _Object = Object;
     const obj4 = {};
-    let merged = Object.assign(tmp(16860).DevToolsScreens);
-    const merged1 = Object.assign(tmp(16860).PerformanceTestingScreens);
+    let merged = Object.assign(tmp(16904).DevToolsScreens);
+    const merged1 = Object.assign(tmp(16904).PerformanceTestingScreens);
     const entries1 = entries(obj4);
     const mapped = entries1.map((item) => {
       let tmp2;
@@ -127,7 +127,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function D
       _slicedToArray(item, 2);
       return closure_1_7(closure_1_10.Screen, obj, tmp2);
     });
-    let tmpResult = tmp(15920);
+    let tmpResult = tmp(15953);
     const designSystemScreens = tmpResult.getDesignSystemScreens();
     const mapped1 = designSystemScreens.map((item) => {
       let tmp2;
@@ -246,8 +246,8 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function D
   };
   items1[0] = tmp5(tmp7.Screen, obj4);
   const obj5 = {};
-  let merged = Object.assign(tmp(16860).DevToolsScreens);
-  let merged1 = Object.assign(tmp(16860).PerformanceTestingScreens);
+  let merged = Object.assign(tmp(16904).DevToolsScreens);
+  let merged1 = Object.assign(tmp(16904).PerformanceTestingScreens);
   const entries1 = entries(obj5);
   items1[1] = entries1.map((item) => {
     let tmp;
@@ -261,7 +261,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function D
     };
     return closure_1_7(closure_1_10.Screen, obj, tmp);
   });
-  let tmpResult = tmp(15920);
+  let tmpResult = tmp(15953);
   const designSystemScreens = tmpResult.getDesignSystemScreens();
   items1[2] = designSystemScreens.map((item) => {
     let tmp;

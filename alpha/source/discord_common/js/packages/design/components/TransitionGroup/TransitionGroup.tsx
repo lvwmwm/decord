@@ -1,9 +1,9 @@
-// Module ID: 5029
-// Function ID: 5030
+// Module ID: 5041
+// Function ID: 5042
 // Name: TransitionGroup/TransitionGroup
 // Dependencies: [32, 19, 21, 558, 576, 2]
 
-// Module 5029 (TransitionGroup/TransitionGroup)
+// Module 5041 (TransitionGroup/TransitionGroup)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

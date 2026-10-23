@@ -1,11 +1,11 @@
-// Module ID: 10080
-// Function ID: 10081
+// Module ID: 10102
+// Function ID: 10103
 // Name: getPreCompressionFileSize
-// Dependencies: [5, 8140, 2]
+// Dependencies: [5, 8152, 2]
 // Exports: getPreCompressionFileSize
 
-// Module 10080 (getPreCompressionFileSize)
-import utils_UploadUtils from "utils/UploadUtils" /* 8140 */;
+// Module 10102 (getPreCompressionFileSize)
+import utils_UploadUtils from "utils/UploadUtils" /* 8152 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

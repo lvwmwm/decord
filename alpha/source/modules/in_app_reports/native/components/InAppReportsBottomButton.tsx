@@ -1,9 +1,9 @@
-// Module ID: 14545
-// Function ID: 14546
+// Module ID: 14569
+// Function ID: 14570
 // Name: InAppReportsBottomButton
-// Dependencies: [19, 17, 1098, 21, 4969, 587, 558, 576, 1128, 2670, 5220, 5230, 1202, 2]
+// Dependencies: [19, 17, 1098, 21, 4969, 587, 558, 576, 1128, 2670, 5232, 5242, 1202, 2]
 
-// Module 14545 (InAppReportsBottomButton)
+// Module 14569 (InAppReportsBottomButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,7 +11,7 @@ import Constants from "Constants" /* 1098 */;
 import intl8 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import _modDef2670 from "module_2670" /* 2670 */;
-import components_Button_Button from "components/Button/Button" /* 5230 */;
+import components_Button_Button from "components/Button/Button" /* 5242 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -268,7 +268,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InAppRepor
           return onPress(button);
         }
       }
-      tmp27 = React3(tmp(5220).Text, obj7);
+      tmp27 = React3(tmp(5232).Text, obj7);
     }
     cResult[10] = tmp7;
     cResult[11] = tmp4.descriptionText;
@@ -332,7 +332,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InAppRepor
     const obj3 = { style: tmp.paddingHorizontal, children: items1 };
     if (null != tmp3) {
       const obj4 = { style: tmp.descriptionText, variant: "text-xs/medium", color: "text-default", children: tmp3 };
-      tmp12Result = tmp12(tmp15(5220).Text, obj4);
+      tmp12Result = tmp12(tmp15(5232).Text, obj4);
     }
     items1 = [tmp12Result, , ];
     const obj5 = {

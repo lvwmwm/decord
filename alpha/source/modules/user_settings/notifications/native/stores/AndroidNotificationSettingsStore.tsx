@@ -1,12 +1,12 @@
-// Module ID: 16758
-// Function ID: 16759
+// Module ID: 16802
+// Function ID: 16803
 // Name: AndroidNotificationSettingsStore
-// Dependencies: [5, 1269, 1384, 10730, 1274, 558, 576, 4884, 2]
+// Dependencies: [5, 1269, 1384, 10752, 1274, 558, 576, 4884, 2]
 // Exports: initializeAndroidNotificationSettingsStore, setAndroidMessageNotificationsEnabled, setAndroidNotificationLightsEnabled, setAndroidNotificationSoundsEnabled, setAndroidNotificationVibrationsEnabled
 
-// Module 16758 (AndroidNotificationSettingsStore)
+// Module 16802 (AndroidNotificationSettingsStore)
 import react from "react" /* 576 */;
-import PushNotificationDefault from "PushNotification" /* 10730 */;
+import PushNotificationDefault from "PushNotification" /* 10752 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1269 from "module_1269" /* 1269 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

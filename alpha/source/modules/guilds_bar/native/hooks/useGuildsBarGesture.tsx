@@ -1,29 +1,29 @@
-// Module ID: 17652
-// Function ID: 17653
+// Module ID: 17696
+// Function ID: 17697
 // Name: useGuildsBarGesture
-// Dependencies: [5, 19, 17, 4843, 6686, 17653, 17650, 5038, 551, 5198, 4976, 12, 1257, 1128, 7152, 17368, 5238, 587, 4884, 12025, 1274, 6815, 5854, 9739, 1384, 1633, 5253, 17654, 17655, 9739, 16358, 5283, 2]
+// Dependencies: [5, 19, 17, 4843, 6699, 17697, 17694, 5050, 551, 5210, 4976, 12, 1257, 1128, 7165, 17412, 5250, 587, 4884, 12044, 1274, 6828, 5866, 9761, 1384, 1633, 5265, 17698, 17699, 9761, 16408, 5295, 2]
 // Exports: default
 
-// Module 17652 (useGuildsBarGesture)
+// Module 17696 (useGuildsBarGesture)
 import react_native from "react-native" /* 17 */;
 import intl15 from "intl" /* 1128 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import react_native2 from "react-native" /* 1274 */;
 import shared from "shared" /* 4976 */;
-import HapticUtils from "HapticUtils" /* 5198 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5253 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5283 */;
-import SortedGuildStore2 from "SortedGuildStore" /* 6686 */;
-import FastList from "FastList" /* 7152 */;
-import ContextMenuState from "ContextMenuState" /* 9739 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12025 */;
+import HapticUtils from "HapticUtils" /* 5210 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5265 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5295 */;
+import SortedGuildStore2 from "SortedGuildStore" /* 6699 */;
+import FastList from "FastList" /* 7165 */;
+import ContextMenuState from "ContextMenuState" /* 9761 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12044 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4843 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17653 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17650 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17697 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17694 */;
 import "ReanimatedRexport";
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 5038 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 5050 */;
 import debounce from "debounce" /* 551 */;
 import module_12_mod from "module_12" /* 12 */;
 import size_mod from "module_2" /* 2 */;
@@ -285,7 +285,7 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, fastListRef, map) {
             if (null != element) {
               tmp7 = element;
             }
-          } else if (tmp10(7152).FastListItemTypes.ITEM === type) {
+          } else if (tmp10(7165).FastListItemTypes.ITEM === type) {
             if (element.type !== GuildsNodeType.ROOT) {
               let tmp13 = element;
               if (element.type !== GuildsNodeType.FOLDER) {
@@ -688,7 +688,7 @@ export default function useGuildsBarGesture() {
         const close = menu.requestClose(-1 === activeIndex.get());
       }
     }
-    setStateShallow({ dragSpecs: "Array", overSpecs: "Reflect" });
+    setStateShallow({ dragSpecs: "cix", overSpecs: "unicodeVersion" });
     const value = gestureState.get();
     if (null != value.mode) {
       const obj10 = { mode: null };
@@ -893,7 +893,7 @@ export default function useGuildsBarGesture() {
         id1 = node.id;
       }
       if (id !== id1) {
-        const ContextMenuStore = tmp66(9739).ContextMenuStore;
+        const ContextMenuStore = tmp66(9761).ContextMenuStore;
         if (null != ContextMenuStore.getState().menu) {
           const tmp66Result = ContextMenuState;
           tmp66Result.hideContextMenu();

@@ -1,30 +1,75 @@
 // Module ID: 12578
 // Function ID: 12579
-// Dependencies: [12534, 12564]
-// Exports: createClientReportEnvelope
+// Dependencies: [12571, 12566, 12579, 12567, 12539]
+// Exports: sampleSpan
 
 // Module 12578
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12534 */;
-import _mod12564 from "module_12564" /* 12564 */;
+import _mod12566 from "module_12566" /* 12566 */;
+import _mod12567 from "module_12567" /* 12567 */;
+import _mod12571 from "module_12571" /* 12571 */;
+import _mod12579 from "module_12579" /* 12579 */;
 
 
-export const createClientReportEnvelope = function createClientReportEnvelope(discarded_events, dsn, arg2) {
-  let obj3;
-  let result = arg2;
-  const items = [{ type: "client_report" }, ];
-  if (!arg2) {
-    const obj = _browserPerformanceTimeOriginMode;
-    result = obj.dateTimestampInSeconds();
-  }
-  items[1] = { timestamp: result, discarded_events };
-  const createEnvelope = _mod12564.createEnvelope;
-  _mod12564;
-  if (dsn) {
-    obj3 = { dsn };
-    const obj2 = { dsn };
+export const sampleSpan = function sampleSpan(tracesSampler, normalizedRequest) {
+  const obj = _mod12571;
+  if (obj.hasTracingEnabled(tracesSampler)) {
+    let num;
+    let items3;
+    const tmpResult = _mod12566;
+    const isolationScope = tmpResult.getIsolationScope();
+    const obj2 = { normalizedRequest: normalizedRequest.normalizedRequest || normalizedRequest };
+    normalizedRequest = isolationScope.getScopeData().sdkProcessingMetadata.normalizedRequest;
+    const merged = Object.assign(normalizedRequest);
+    if (typeof tracesSampler.tracesSampler === "function") {
+      num = tracesSampler.tracesSampler(obj2);
+    } else if (undefined !== obj2.parentSampled) {
+      num = obj2.parentSampled;
+    } else {
+      num = 1;
+      if (undefined !== tracesSampler.tracesSampleRate) {
+        num = tracesSampler.tracesSampleRate;
+      }
+    }
+    const tmpResult2 = _mod12579;
+    const parseSampleRateResult = tmpResult2.parseSampleRate(num);
+    if (undefined === parseSampleRateResult) {
+      if (_mod12567.DEBUG_BUILD) {
+        const logger3 = tmp(12539).logger;
+        logger3.warn("[Tracing] Discarding transaction because of invalid sample rate.");
+      }
+      const items = [false];
+      items3 = items;
+    } else if (parseSampleRateResult) {
+      let items2;
+      const _Math = Math;
+      if (Math.random() < parseSampleRateResult) {
+        const items1 = [true, parseSampleRateResult];
+        items2 = items1;
+      } else {
+        if (_mod12567.DEBUG_BUILD) {
+          const logger2 = tmp(12539).logger;
+          const _Number = Number;
+          const _HermesInternal = HermesInternal;
+          logger2.log("[Tracing] Discarding transaction because it's not included in the random sample (sampling rate = " + Number(num) + ")");
+        }
+        items2 = [false, parseSampleRateResult];
+      }
+      items3 = items2;
+    } else {
+      if (_mod12567.DEBUG_BUILD) {
+        const logger = tmp(12539).logger;
+        let str = "a negative sampling decision was inherited or tracesSampleRate is set to 0";
+        const log = logger.log;
+        if (typeof tracesSampler.tracesSampler === "function") {
+          str = "tracesSampler returned 0 or false";
+        }
+        log(`[Tracing] Discarding transaction because ${str}`);
+      }
+      items3 = [false, parseSampleRateResult];
+    }
+    return items3;
   } else {
-    obj3 = {};
+    const items4 = [false];
+    return items4;
   }
-  const items1 = [items];
-  return createEnvelope(obj3, items1);
 };

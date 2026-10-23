@@ -12,11 +12,11 @@ import react from "react" /* 19 */;
 
 let _require, activeSpan, attr, computedMatch, createElement, currentScope, dependencyMap, isExact, obj1, op, rootSpan, setTransactionNameResult, str2, str3, tmp2, tmp2Result, tmp2Result1, tmp2Result2, updateNameResult;
 
-function instrumentReactRouter(f141074, arg1, arg2, location, reactrouter_v4, arg5, arg6) {
+function instrumentReactRouter(f141348, arg1, arg2, location, reactrouter_v4, arg5, arg6) {
   let obj2;
   let tmp5;
   let tmp6;
-  _require = f141074;
+  _require = f141348;
   dependencyMap = reactrouter_v4;
   let items = arg5;
   if (arg5 === undefined) {
@@ -69,7 +69,7 @@ function instrumentReactRouter(f141074, arg1, arg2, location, reactrouter_v4, ar
       const tmp9 = require("feedbackAsyncIntegration");
       obj2[require("module_693").SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN] = "auto.pageload.react." + reactrouter_v4;
       obj2[require("module_693").SEMANTIC_ATTRIBUTE_SENTRY_SOURCE] = tmp6;
-      let result = startBrowserTracingPageLoadSpan(f141074, obj);
+      let result = startBrowserTracingPageLoadSpan(f141348, obj);
     }
   }
   const tmp12 = arg2 && location.listen;
@@ -98,7 +98,7 @@ function instrumentReactRouter(f141074, arg1, arg2, location, reactrouter_v4, ar
   }
 }
 function matchRoutes(pathname, search, arg2) {
-  const f86959 = (path) => {
+  const f87133 = (path) => {
     let match;
     if (path.path) {
       match = closure_1(search, path);
@@ -116,7 +116,7 @@ function matchRoutes(pathname, search, arg2) {
         if (items === undefined) {
           items = [];
         }
-        routes.some(f86959);
+        routes.some(f87133);
       }
     }
     return match;
@@ -127,7 +127,7 @@ function matchRoutes(pathname, search, arg2) {
   if (arg3 === undefined) {
     items = [];
   }
-  pathname.some(f86959);
+  pathname.some(f87133);
   return items;
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
@@ -145,9 +145,9 @@ export const reactRouterV4BrowserTracingIntegration = function reactRouterV4Brow
   instrumentNavigation = instrumentNavigation.instrumentNavigation;
   let closure_5 = undefined === instrumentNavigation || instrumentNavigation;
   const obj2 = {
-    afterAllSetup(f141074) {
-      require.afterAllSetup(f141074);
-      instrumentReactRouter(f141074, closure_4, closure_5, dependencyMap, "reactrouter_v4", _slicedToArray, react);
+    afterAllSetup(f141348) {
+      require.afterAllSetup(f141348);
+      instrumentReactRouter(f141348, closure_4, closure_5, dependencyMap, "reactrouter_v4", _slicedToArray, react);
     }
   };
   const merged1 = Object.assign(result);
@@ -166,9 +166,9 @@ export const reactRouterV5BrowserTracingIntegration = function reactRouterV5Brow
   instrumentNavigation = instrumentNavigation.instrumentNavigation;
   let closure_5 = undefined === instrumentNavigation || instrumentNavigation;
   const obj2 = {
-    afterAllSetup(f141074) {
-      require.afterAllSetup(f141074);
-      instrumentReactRouter(f141074, closure_4, closure_5, dependencyMap, "reactrouter_v5", _slicedToArray, react);
+    afterAllSetup(f141348) {
+      require.afterAllSetup(f141348);
+      instrumentReactRouter(f141348, closure_4, closure_5, dependencyMap, "reactrouter_v5", _slicedToArray, react);
     }
   };
   const merged1 = Object.assign(result);

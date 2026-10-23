@@ -1,12 +1,12 @@
-// Module ID: 17956
-// Function ID: 17957
+// Module ID: 18000
+// Function ID: 18001
 // Name: useSortedMemberApplications
-// Dependencies: [19, 6829, 558, 576, 504, 4998, 2]
+// Dependencies: [19, 6842, 558, 576, 504, 5003, 2]
 
-// Module 17956 (useSortedMemberApplications)
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4998 */;
+// Module 18000 (useSortedMemberApplications)
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5003 */;
 import react from "react" /* 19 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6829 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6842 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

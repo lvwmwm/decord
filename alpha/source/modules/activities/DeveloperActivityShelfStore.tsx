@@ -1,13 +1,13 @@
-// Module ID: 5611
-// Function ID: 5612
+// Module ID: 5623
+// Function ID: 5624
 // Name: DeveloperActivityShelfStore
-// Dependencies: [5612, 504, 4797, 584, 2]
+// Dependencies: [5624, 504, 4797, 584, 2]
 
-// Module 5611 (DeveloperActivityShelfStore)
+// Module 5623 (DeveloperActivityShelfStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import UserSettings from "UserSettings" /* 4797 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5612 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5624 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_5;

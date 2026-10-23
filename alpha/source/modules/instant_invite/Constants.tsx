@@ -1,9 +1,9 @@
-// Module ID: 7794
-// Function ID: 7795
+// Module ID: 7807
+// Function ID: 7808
 // Name: Constants
 // Dependencies: [1098, 2]
 
-// Module 7794 (Constants)
+// Module 7807 (Constants)
 import Constants from "Constants" /* 1098 */;
 import size from "module_2" /* 2 */;
 

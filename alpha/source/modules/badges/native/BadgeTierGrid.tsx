@@ -1,9 +1,9 @@
-// Module ID: 11119
-// Function ID: 11120
+// Module ID: 11142
+// Function ID: 11143
 // Name: BadgeTierGrid
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5220, 1128, 11098, 11090, 8552, 9932, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5232, 1128, 11121, 11113, 8564, 9954, 2]
 
-// Module 11119 (BadgeTierGrid)
+// Module 11142 (BadgeTierGrid)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
@@ -275,7 +275,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeTierGri
     const tmp6 = badge;
     const tmp7 = dependencyMap;
     let obj2 = { variant: "text-sm/medium", color: "text-default", style: tmp.progressLabel, children: intl.formatToPlainString(badge(1128).t.KyTwIh, obj3) };
-    let Text = badge(5220).Text;
+    let Text = badge(5232).Text;
     intl = badge(1128).intl;
     obj3 = { username: targetUsername };
     isViewingOtherUser = closure_4(Text, obj2);
@@ -365,7 +365,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeTierGri
     })
   };
   let tiers = badge.tiers;
-  let tmp9 = isViewingOtherUser(9932);
+  let tmp9 = isViewingOtherUser(9954);
   const tmp8 = closure_4;
   if (tiers == null) {
     tiers = [];

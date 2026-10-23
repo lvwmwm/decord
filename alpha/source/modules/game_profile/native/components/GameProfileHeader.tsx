@@ -1,20 +1,20 @@
-// Module ID: 9278
-// Function ID: 9279
+// Module ID: 9301
+// Function ID: 9302
 // Name: GameProfileHeader
-// Dependencies: [19, 17, 9276, 21, 4969, 587, 558, 576, 5038, 9279, 9280, 5655, 5244, 9281, 9283, 5220, 9285, 2]
+// Dependencies: [19, 17, 9299, 21, 4969, 587, 558, 576, 5050, 9302, 9303, 5667, 5256, 9304, 9306, 5232, 9308, 2]
 
-// Module 9278 (GameProfileHeader)
+// Module 9301 (GameProfileHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5038 */;
-import LinearGradientDefault from "LinearGradient" /* 5244 */;
-import FastImageDefault from "FastImage" /* 5655 */;
-import useGameProfileHeroBackgroundURLDefault from "useGameProfileHeroBackgroundURL" /* 9280 */;
-import GameCoverArtDefault from "GameCoverArt" /* 9281 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9285 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5050 */;
+import LinearGradientDefault from "LinearGradient" /* 5256 */;
+import FastImageDefault from "FastImage" /* 5667 */;
+import useGameProfileHeroBackgroundURLDefault from "useGameProfileHeroBackgroundURL" /* 9303 */;
+import GameCoverArtDefault from "GameCoverArt" /* 9304 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9308 */;
 import react from "react" /* 19 */;
-import GameProfileConstants from "GameProfileConstants" /* 9276 */;
+import GameProfileConstants from "GameProfileConstants" /* 9299 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -35,7 +35,7 @@ let rect;
 let size;
 let size1;
 let tmp;
-const SKUUtils = tmp(9279);
+const SKUUtils = tmp(9302);
 let View = react_native.View;
 ({ DISCORD_APP_GAME_ID: hasOwnProperty, MOBILE_GAME_PROFILE_MAX_WIDTH } = GameProfileConstants);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -185,7 +185,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
       }
       const obj5 = { source: obj6, style: tmp4.artHeroImage };
       obj6 = { uri: tmp9 };
-      tmp13 = metroRequire(tmp8(5655), obj5);
+      tmp13 = metroRequire(tmp8(5667), obj5);
     }
     cResult[7] = tmp9;
     cResult[8] = tmp4.artHeroImage;
@@ -227,7 +227,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
   const tmp2Result = ReanimatedRexport;
   const animatedStyle = tmp2Result.useAnimatedStyle(fn);
   const name = game.name;
-  const mapped = genres.map(tmp2(9279).getGenreText);
+  const mapped = genres.map(tmp2(9302).getGenreText);
   const joined = mapped.join(", ");
   const l30Rank = game.l30Rank;
   const tmp7 = useGameProfileHeroBackgroundURLDefault(game, 1024);
@@ -248,7 +248,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
   if (tmp10) {
     const obj4 = { source: obj5, style: tmp.artHeroImage };
     obj5 = { uri: tmp7 };
-    tmp10 = metroRequire(tmp6(5655), obj4);
+    tmp10 = metroRequire(tmp6(5667), obj4);
   }
   items2 = [tmp10, ];
   const obj6 = { colors: items3, style: tmp.artHeroGradient };
@@ -263,14 +263,14 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
   const obj10 = { style: tmp.titleContainer, children: items6 };
   if (tmp12Result) {
     const obj11 = { rank: l30Rank };
-    tmp12Result = tmp12(tmp6(9283), obj11);
+    tmp12Result = tmp12(tmp6(9306), obj11);
   }
   items6 = [tmp12Result, , ];
   const obj13 = { variant: "heading-xxl/semibold", color: "text-overlay-light", lineClamp: 2, style: items7, children: name };
   items7 = [, ];
   const obj12 = { style: tmp.titleRow, children: items8 };
   ({ textShadow: arr9[0], title: arr9[1] } = tmp);
-  items8 = [metroRequire(tmp2(5220).Text, obj13), ];
+  items8 = [metroRequire(tmp2(5232).Text, obj13), ];
   let tmp12Result3 = game.id === hasOwnProperty;
   if (tmp12Result3) {
     const obj14 = { source: AssetRegistryDefault, style: tmp.wavingWumpus, accessible: false, importantForAccessibility: "no" };
@@ -284,7 +284,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
     tmp12Result4 = null;
     if ("" !== joined) {
       const obj15 = { variant: "text-md/normal", color: "text-overlay-light", lineClamp: 2, style: tmp.textShadow, children: joined };
-      tmp12Result4 = tmp12(tmp2(5220).Text, obj15);
+      tmp12Result4 = tmp12(tmp2(5232).Text, obj15);
     }
   }
   items6[2] = tmp12Result4;

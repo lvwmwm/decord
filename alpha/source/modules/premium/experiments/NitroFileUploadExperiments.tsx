@@ -1,10 +1,10 @@
-// Module ID: 8132
-// Function ID: 8133
+// Module ID: 5030
+// Function ID: 5031
 // Name: NitroFileUploadExperiments
 // Dependencies: [1394, 1455, 558, 576, 2]
 // Exports: getNitroFileUploadLimitBytes, getNitroFileUploadRolloutConfig, getNitroFileUploadRolloutCopy
 
-// Module 8132 (NitroFileUploadExperiments)
+// Module 5030 (NitroFileUploadExperiments)
 import react from "react" /* 576 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import ApexExperiment_mod from "ApexExperiment" /* 1455 */;

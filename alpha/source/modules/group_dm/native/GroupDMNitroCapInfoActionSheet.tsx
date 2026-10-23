@@ -1,18 +1,18 @@
-// Module ID: 12153
-// Function ID: 12154
+// Module ID: 12172
+// Function ID: 12173
 // Name: GroupDMNitroCapInfoActionSheet
-// Dependencies: [19, 17, 11264, 21, 4969, 587, 558, 576, 5196, 1128, 5220, 5230, 5251, 2]
+// Dependencies: [19, 17, 11287, 21, 4969, 587, 558, 576, 5208, 1128, 5232, 5242, 5263, 2]
 
-// Module 12153 (GroupDMNitroCapInfoActionSheet)
+// Module 12172 (GroupDMNitroCapInfoActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5196 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import components_Button_Button from "components/Button/Button" /* 5230 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5251 */;
-import GroupDMConstants from "GroupDMConstants" /* 11264 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import components_Button_Button from "components/Button/Button" /* 5242 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5263 */;
+import GroupDMConstants from "GroupDMConstants" /* 11287 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -103,7 +103,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNitro
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { text: intl3.string(intl4.t.cpT0Cq), variant: "secondary", onPress: first, grow: true };
-    const Button = tmp(5230).Button;
+    const Button = tmp(5242).Button;
     intl3 = tmp(1128).intl;
     const tmp19 = metroRequire(Button, obj5);
     cResult[7] = tmp19;
@@ -134,7 +134,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNitro
   const obj7 = { showGradient: true, children: metroImportDefault(View, obj8) };
   obj8 = { style: container, children: items };
   items = [tmp8, tmp14, tmp20];
-  BottomSheet = tmp(5251).BottomSheet;
+  BottomSheet = tmp(5263).BottomSheet;
   const tmp25 = metroRequire(BottomSheet, obj7);
   cResult[10] = tmp4.container;
   cResult[11] = tmp8;

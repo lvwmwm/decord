@@ -1,9 +1,9 @@
-// Module ID: 7416
-// Function ID: 7417
+// Module ID: 7429
+// Function ID: 7430
 // Name: SimpleLoadingModalUI
-// Dependencies: [19, 17, 21, 4969, 558, 576, 6865, 2]
+// Dependencies: [19, 17, 21, 4969, 558, 576, 6878, 2]
 
-// Module 7416 (SimpleLoadingModalUI)
+// Module 7429 (SimpleLoadingModalUI)
 import Fragment from "Fragment" /* 21 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

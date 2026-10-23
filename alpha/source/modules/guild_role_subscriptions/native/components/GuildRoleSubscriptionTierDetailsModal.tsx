@@ -1,25 +1,25 @@
-// Module ID: 19216
-// Function ID: 19217
+// Module ID: 19260
+// Function ID: 19261
 // Name: GuildRoleSubscriptionTierDetailsModal
-// Dependencies: [32, 19, 16478, 1087, 21, 558, 576, 15093, 19196, 16500, 16485, 19173, 1128, 9020, 19179, 8926, 1202, 19217, 19180, 2]
+// Dependencies: [32, 19, 16525, 1087, 21, 558, 576, 15118, 19240, 16547, 16532, 19217, 1128, 9043, 19223, 8949, 1202, 19261, 19224, 2]
 
-// Module 19216 (GuildRoleSubscriptionTierDetailsModal)
+// Module 19260 (GuildRoleSubscriptionTierDetailsModal)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl8 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import FormHeaderDefault from "FormHeader" /* 9020 */;
-import FormStylesDefault from "FormStyles" /* 15093 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16485 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16500 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 19173 */;
-import FormImagePicker from "FormImagePicker" /* 19179 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 19180 */;
-import EditStateContextProvider from "EditStateContextProvider" /* 19196 */;
-import FormPriceTierDefault from "FormPriceTier" /* 19217 */;
+import FormHeaderDefault from "FormHeader" /* 9043 */;
+import FormStylesDefault from "FormStyles" /* 15118 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16532 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16547 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 19217 */;
+import FormImagePicker from "FormImagePicker" /* 19223 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 19224 */;
+import EditStateContextProvider from "EditStateContextProvider" /* 19240 */;
+import FormPriceTierDefault from "FormPriceTier" /* 19261 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16478 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16525 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -204,7 +204,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
   intl3 = tmp4(1128).intl;
   items[2] = React4(tmpResult7, obj9);
   const obj10 = { style: tmp3.textInput, showTopContainer: false, multiline: false, maxLength: metroImportDefault, value: tmp7, placeholder: intl4.string(intl8.t["i4/g+E"]), onChange: tmp8, autoFocus: true, clearButtonVisibility: native.ClearButtonVisibility.WITH_CONTENT, disabled: roleSubscriptionSettingsDisabled };
-  const FormInput = tmp4(8926).FormInput;
+  const FormInput = tmp4(8949).FormInput;
   intl4 = tmp4(1128).intl;
   items[3] = React4(FormInput, obj10);
   const obj11 = { style: tmp3.header, children: intl5.string(intl8.t["74JctW"]) };
@@ -212,7 +212,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
   intl5 = tmp4(1128).intl;
   items[4] = React4(tmpResult8, obj11);
   const obj12 = { style: tmp3.textInput, showTopContainer: false, multiline: true, maxLength: metroRequire, numberOfLines: 3, value: tmp15, placeholder: intl6.string(intl8.t["3YHwoG"]), onChange: tmp16, disabled: roleSubscriptionSettingsDisabled };
-  const FormInput2 = tmp4(8926).FormInput;
+  const FormInput2 = tmp4(8949).FormInput;
   intl6 = tmp4(1128).intl;
   items[5] = React4(FormInput2, obj12);
   const obj13 = { style: tmp3.header, children: intl7.string(intl8.t.CrRVAx) };

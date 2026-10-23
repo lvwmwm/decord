@@ -1,23 +1,23 @@
-// Module ID: 15175
-// Function ID: 15176
+// Module ID: 15200
+// Function ID: 15201
 // Name: GuildActionSheet
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 1633, 8639, 1384, 15170, 15176, 15106, 15177, 15180, 5568, 5255, 5251, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 1633, 8657, 1384, 15195, 15201, 15131, 15202, 15205, 5580, 5267, 5263, 2]
 
-// Module 15175 (GuildActionSheet)
+// Module 15200 (GuildActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5251 */;
-import BottomSheetModal from "BottomSheetModal" /* 5255 */;
-import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5568 */;
-import useBottomSheetRef from "useBottomSheetRef" /* 8639 */;
-import GuildActionSheetActions from "GuildActionSheetActions" /* 15106 */;
-import GuildActionSheetHeaderDefault from "GuildActionSheetHeader" /* 15170 */;
-import GuildActionSheetTabItemsDefault from "GuildActionSheetTabItems" /* 15176 */;
-import GuildActionSheetProgressDefault from "GuildActionSheetProgress" /* 15177 */;
-import GuildActionSheetEmojiSectionDefault from "GuildActionSheetEmojiSection" /* 15180 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5263 */;
+import BottomSheetModal from "BottomSheetModal" /* 5267 */;
+import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5580 */;
+import useBottomSheetRef from "useBottomSheetRef" /* 8657 */;
+import GuildActionSheetActions from "GuildActionSheetActions" /* 15131 */;
+import GuildActionSheetHeaderDefault from "GuildActionSheetHeader" /* 15195 */;
+import GuildActionSheetTabItemsDefault from "GuildActionSheetTabItems" /* 15201 */;
+import GuildActionSheetProgressDefault from "GuildActionSheetProgress" /* 15202 */;
+import GuildActionSheetEmojiSectionDefault from "GuildActionSheetEmojiSection" /* 15205 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4969 */;

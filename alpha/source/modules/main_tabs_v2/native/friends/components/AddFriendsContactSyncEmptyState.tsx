@@ -1,18 +1,18 @@
-// Module ID: 18139
-// Function ID: 18140
+// Module ID: 18183
+// Function ID: 18184
 // Name: AddFriendsContactSyncEmptyState
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 13515, 18140, 1128, 5220, 13519, 5230, 2]
+// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 13538, 18184, 1128, 5232, 13542, 5242, 2]
 
-// Module 18139 (AddFriendsContactSyncEmptyState)
+// Module 18183 (AddFriendsContactSyncEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5220 */;
-import components_Button_Button from "components/Button/Button" /* 5230 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13515 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13519 */;
-import CompassSpotIllustration from "CompassSpotIllustration" /* 18140 */;
+import Text_Text from "Text/Text" /* 5232 */;
+import components_Button_Button from "components/Button/Button" /* 5242 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13538 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13542 */;
+import CompassSpotIllustration from "CompassSpotIllustration" /* 18184 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4969 */;
@@ -128,7 +128,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddFriends
     const _Symbol = Symbol;
     if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
       const obj6 = { variant: "primary", size: "lg", text: intl3.string(intl4.t.QUXSpo), onPress: first };
-      const Button = tmp(5230).Button;
+      const Button = tmp(5242).Button;
       intl3 = tmp(1128).intl;
       const tmp27 = _false(Button, obj6);
       cResult[13] = tmp27;

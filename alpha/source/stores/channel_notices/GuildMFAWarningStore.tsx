@@ -1,9 +1,9 @@
-// Module ID: 15016
-// Function ID: 15017
+// Module ID: 15040
+// Function ID: 15041
 // Name: GuildMFAWarningStore
 // Dependencies: [4899, 1392, 1087, 504, 584, 2]
 
-// Module 15016 (GuildMFAWarningStore)
+// Module 15040 (GuildMFAWarningStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;

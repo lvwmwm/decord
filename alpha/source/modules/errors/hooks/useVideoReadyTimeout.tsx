@@ -1,11 +1,11 @@
-// Module ID: 11389
-// Function ID: 11390
+// Module ID: 11412
+// Function ID: 11413
 // Name: useVideoReadyTimeout
-// Dependencies: [19, 1104, 558, 576, 4816, 11386, 5725, 5809, 11390, 2]
+// Dependencies: [19, 1104, 558, 576, 4816, 11409, 5737, 5821, 11413, 2]
 
-// Module 11389 (useVideoReadyTimeout)
+// Module 11412 (useVideoReadyTimeout)
 import DurationsDefault from "Durations" /* 1104 */;
-import VideoStreamReadyActionCreators from "VideoStreamReadyActionCreators" /* 11390 */;
+import VideoStreamReadyActionCreators from "VideoStreamReadyActionCreators" /* 11413 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -77,8 +77,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoRead
                             tmp5 = closure_5;
                             current = closure_5.current;
                             tmp6 = loading;
-                            startResult = current.start(loading, () => { /* body not rendered: F147368 */ });
-                            return () => { /* body not rendered: F147369 */ };
+                            startResult = current.start(loading, () => { /* body not rendered: F147652 */ });
+                            return () => { /* body not rendered: F147653 */ };
                           }
                         }
                       }
@@ -105,8 +105,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoRead
                         tmp5 = closure_5;
                         current = closure_5.current;
                         tmp6 = loading;
-                        startResult = current.start(loading, () => { /* body not rendered: F147368 */ });
-                        return () => { /* body not rendered: F147369 */ };
+                        startResult = current.start(loading, () => { /* body not rendered: F147652 */ });
+                        return () => { /* body not rendered: F147653 */ };
                       }
                     }
                   }
@@ -135,8 +135,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoRead
               tmp5 = closure_5;
               current = closure_5.current;
               tmp6 = loading;
-              startResult = current.start(loading, () => { /* body not rendered: F147368 */ });
-              return () => { /* body not rendered: F147369 */ };
+              startResult = current.start(loading, () => { /* body not rendered: F147652 */ });
+              return () => { /* body not rendered: F147653 */ };
             }
           }
         }

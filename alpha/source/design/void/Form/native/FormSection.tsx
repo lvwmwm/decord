@@ -1,17 +1,17 @@
-// Module ID: 8933
-// Function ID: 8934
+// Module ID: 8956
+// Function ID: 8957
 // Name: FormSection
-// Dependencies: [19, 17, 1206, 21, 4969, 587, 558, 576, 6971, 7222, 8930, 6972, 8934, 1384, 2]
+// Dependencies: [19, 17, 1206, 21, 4969, 587, 558, 576, 6984, 7235, 8953, 6985, 8957, 1384, 2]
 
-// Module 8933 (FormSection)
+// Module 8956 (FormSection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import FormConstants from "FormConstants" /* 1206 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import RedesignCompat from "RedesignCompat" /* 6971 */;
-import FormRowDefault from "FormRow" /* 7222 */;
-import FormDividerDefault from "FormDivider" /* 8930 */;
-import FormTitleDefault from "FormTitle" /* 8934 */;
+import RedesignCompat from "RedesignCompat" /* 6984 */;
+import FormRowDefault from "FormRow" /* 7235 */;
+import FormDividerDefault from "FormDivider" /* 8953 */;
+import FormTitleDefault from "FormTitle" /* 8957 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -279,7 +279,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormSectio
         }
       }
     }
-    const TableRowGroup = tmp(6972).TableRowGroup;
+    const TableRowGroup = tmp(6985).TableRowGroup;
     if (hasIcons == null) {
       class X {
         constructor(arg0) {
@@ -579,7 +579,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormSectio
     const obj2 = { style: { marginBottom: 24 }, children: items };
     const obj3 = { style: { paddingHorizontal: 12 }, children: metroRequire(TableRowGroup, obj4) };
     obj4 = { title, hasIcons, hasTrailingText: flag, children: found };
-    TableRowGroup = tmp3(6972).TableRowGroup;
+    TableRowGroup = tmp3(6985).TableRowGroup;
     const tmp18 = metroImportDefault;
     if (hasIcons == null) {
       hasIcons = tmp17;
