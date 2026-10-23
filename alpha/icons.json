@@ -2953,6 +2953,34 @@
         "width": 576,
         "height": 324
     },
+    "hexagon_campaign_font_logo": {
+        "file": "app/modules/hexagon_campaign/images/hexagon_campaign_font_logo.png",
+        "hash": "c20f5cd14c5f693d97dedff22cf6001d",
+        "scales": [],
+        "width": 32,
+        "height": 24
+    },
+    "hexagon_campaign_legal_logo": {
+        "file": "app/modules/hexagon_campaign/images/hexagon_campaign_legal_logo.png",
+        "hash": "4135aa1407cb9dccb86248e1e9e37285",
+        "scales": [],
+        "width": 32,
+        "height": 32
+    },
+    "hexagon_campaign_logo": {
+        "file": "app/modules/hexagon_campaign/images/hexagon_campaign_logo.png",
+        "hash": "1314a80c1b4760307a1e41ed1c339f0e",
+        "scales": [],
+        "width": 88,
+        "height": 88
+    },
+    "HexagonIcon": {
+        "file": "app/images/native/custom_app_icons/HexagonIcon/HexagonIcon.png",
+        "hash": "6fc713ff4969740a35633ad9d71eaf93",
+        "scales": [],
+        "width": 102,
+        "height": 102
+    },
     "hi": {
         "file": "discord_common/js/shared/images/flags/hi.png",
         "hash": "78cbfbf0381b8c7f5a192c4a46bd0b0e",
