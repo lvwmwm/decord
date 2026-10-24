@@ -1,10 +1,10 @@
-// Module ID: 15756
-// Function ID: 15757
+// Module ID: 15778
+// Function ID: 15779
 // Name: transformApplication
 // Dependencies: [2]
 // Exports: default
 
-// Module 15756 (transformApplication)
+// Module 15778 (transformApplication)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/rpc/helpers/transformApplication.tsx");

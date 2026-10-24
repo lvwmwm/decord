@@ -1,13 +1,13 @@
-// Module ID: 10724
-// Function ID: 10725
+// Module ID: 10725
+// Function ID: 10726
 // Name: ConjureWorkerTickets
-// Dependencies: [5, 1087, 1297, 10725, 2]
+// Dependencies: [5, 1087, 1297, 10726, 2]
 // Exports: forgetEarlyTicket, forgetEarlyTickets, mintRemixTicket, mintWorkerTicket, prefetchWorkerTicket, rememberCreatedProjectTicket
 
-// Module 10724 (ConjureWorkerTickets)
+// Module 10725 (ConjureWorkerTickets)
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import conjureLocalDev from "conjureLocalDev" /* 10725 */;
+import conjureLocalDev from "conjureLocalDev" /* 10726 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

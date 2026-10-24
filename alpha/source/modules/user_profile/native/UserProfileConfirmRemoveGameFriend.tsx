@@ -1,11 +1,11 @@
-// Module ID: 13506
-// Function ID: 13507
+// Module ID: 13543
+// Function ID: 13544
 // Name: UserProfileConfirmRemoveGameFriend
-// Dependencies: [19, 21, 558, 576, 8678, 10628, 1128, 5912, 5912, 2]
+// Dependencies: [19, 21, 558, 576, 8680, 10629, 1128, 5914, 5914, 2]
 
-// Module 13506 (UserProfileConfirmRemoveGameFriend)
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8678 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10628 */;
+// Module 13543 (UserProfileConfirmRemoveGameFriend)
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8680 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10629 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -61,7 +61,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
       }
       if (cResult[9] !== tmp4) {
         let obj3 = { variant: "destructive", text: tmp10, onPress: tmp4 };
-        const tmp14 = closure_4(userId(5912).AlertActionButton, obj3, "confirm-remove");
+        const tmp14 = closure_4(userId(5914).AlertActionButton, obj3, "confirm-remove");
         cResult[9] = tmp4;
         cResult[10] = tmp14;
         tmp12 = tmp14;
@@ -71,7 +71,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
       const _Symbol2 = Symbol;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
         const obj4 = { variant: "secondary", text: intl4.string(userId(1128).t["eN6+rI"]) };
-        const AlertActionButton = tmp(5912).AlertActionButton;
+        const AlertActionButton = tmp(5914).AlertActionButton;
         intl4 = tmp(1128).intl;
         const tmp17 = closure_4(AlertActionButton, obj4, "nevermind");
         cResult[11] = tmp17;
@@ -82,7 +82,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
       if (cResult[12] !== tmp12) {
         const obj5 = { children: items };
         items = [tmp12, tmp15];
-        const tmp20 = closure_5(userId(5912).AlertActions, obj5);
+        const tmp20 = closure_5(userId(5914).AlertActions, obj5);
         cResult[12] = tmp12;
         cResult[13] = tmp20;
         tmp18 = tmp20;
@@ -99,7 +99,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
         }
       }
       const obj6 = { title: tmp5, content: tmp7, actions: tmp18 };
-      const tmp23 = closure_4(userId(5912).AlertModal, obj6);
+      const tmp23 = closure_4(userId(5914).AlertModal, obj6);
       cResult[14] = tmp5;
       cResult[15] = tmp7;
       cResult[16] = tmp18;
@@ -147,17 +147,17 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     obj2.removeFriend(obj3);
   }, items);
   let obj = { title: intl.formatToPlainString(userId(1128).t.fBKKfq, { name: userDisplayName }), content: intl2.formatToPlainString(userId(1128).t.dsU5bl, { name: userDisplayName, gameName }), actions: closure_5(AlertActions, obj2) };
-  const AlertModal = userId(5912).AlertModal;
+  const AlertModal = userId(5914).AlertModal;
   intl = userId(1128).intl;
   intl2 = userId(1128).intl;
   obj2 = { children: items1 };
-  AlertActions = userId(5912).AlertActions;
+  AlertActions = userId(5914).AlertActions;
   let obj3 = { variant: "destructive", text: intl3.string(userId(1128).t.RLcE6x), onPress: callback };
-  const AlertActionButton = userId(5912).AlertActionButton;
+  const AlertActionButton = userId(5914).AlertActionButton;
   intl3 = userId(1128).intl;
   items1 = [closure_4(AlertActionButton, obj3, "confirm-remove"), ];
   const obj4 = { variant: "secondary", text: intl4.string(userId(1128).t["eN6+rI"]) };
-  const AlertActionButton2 = userId(5912).AlertActionButton;
+  const AlertActionButton2 = userId(5914).AlertActionButton;
   intl4 = userId(1128).intl;
   items1[1] = closure_4(AlertActionButton2, obj4, "nevermind");
   return closure_4(AlertModal, obj);

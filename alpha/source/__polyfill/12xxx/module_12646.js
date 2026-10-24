@@ -1,43 +1,48 @@
 // Module ID: 12646
 // Function ID: 12647
-// Dependencies: [12566, 12545]
-// Exports: captureFeedback
+// Dependencies: [12600, 12587, 12573]
+// Exports: addBreadcrumb
 
 // Module 12646
-import _mod12545 from "module_12545" /* 12545 */;
-import _mod12566 from "module_12566" /* 12566 */;
+import _mod12573 from "module_12573" /* 12573 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12587 */;
+import _mod12600 from "module_12600" /* 12600 */;
 
 
-export const captureFeedback = function captureFeedback(arg0) {
-  let associatedEventId;
-  let email;
-  let message;
-  let name;
-  let obj4;
-  let obj6;
-  let source;
-  let tags;
-  let url;
-  let obj = arg1;
-  if (arg1 === undefined) {
-    obj = {};
-  }
-  let currentScope = arg2;
-  if (arg2 === undefined) {
-    const obj3 = _mod12566;
-    currentScope = obj3.getCurrentScope();
-  }
-  const obj2 = { contexts: obj4, type: "feedback", level: "info", tags };
-  obj4 = { feedback: obj6.dropUndefinedKeys({ contact_email: email, name, message, url, source, associated_event_id: associatedEventId }) };
-  ({ message, name, email, url, source, associatedEventId, tags } = arg0);
-  obj6 = _mod12545;
-  let client = currentScope && currentScope.getClient();
-  if (!client) {
-    const tmp3Result = _mod12566;
-    client = tmp3Result.getClient();
-  }
+export const addBreadcrumb = function addBreadcrumb(arg0, arg1) {
+  let tmpResult;
+  let closure_0 = arg1;
+  const obj = _mod12600;
+  const client = obj.getClient();
+  const obj3 = _mod12600;
+  const isolationScope = obj3.getIsolationScope();
   if (client) {
-    client.emit("beforeSendFeedback", obj2, obj);
+    const options = client.getOptions();
+    let beforeBreadcrumb = options.beforeBreadcrumb;
+    let tmp5 = null;
+    if (undefined !== beforeBreadcrumb) {
+      tmp5 = beforeBreadcrumb;
+    }
+    beforeBreadcrumb = tmp5;
+    const maxBreadcrumbs = options.maxBreadcrumbs;
+    let num = 100;
+    if (undefined !== maxBreadcrumbs) {
+      num = maxBreadcrumbs;
+    }
+    if (num > 0) {
+      let obj2 = { timestamp: tmpResult.dateTimestampInSeconds() };
+      tmpResult = _browserPerformanceTimeOriginMode;
+      const merged = Object.assign(arg0);
+      if (tmp5) {
+        const tmpResult2 = _mod12573;
+        obj2 = tmpResult2.consoleSandbox(() => beforeBreadcrumb(obj2, closure_0));
+      }
+      if (null !== obj2) {
+        if (client.emit) {
+          client.emit("beforeAddBreadcrumb", obj2, arg1);
+        }
+        isolationScope.addBreadcrumb(obj2, num);
+      }
+    }
   }
-  return currentScope.captureEvent(obj2, obj);
 };

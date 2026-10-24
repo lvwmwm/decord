@@ -1,32 +1,32 @@
-// Module ID: 17684
-// Function ID: 17685
+// Module ID: 17716
+// Function ID: 17717
 // Name: FavoritesGuildChannelList
-// Dependencies: [32, 19, 4820, 6494, 6782, 6768, 4903, 4825, 7211, 4821, 7634, 4901, 6769, 4872, 6702, 4824, 4900, 4834, 7641, 1098, 7635, 1211, 7408, 558, 576, 12, 1388, 10841, 2]
+// Dependencies: [32, 19, 4822, 6496, 6784, 6770, 4905, 4827, 7213, 4823, 7636, 4903, 6771, 4874, 6704, 4826, 4902, 4836, 7643, 1098, 7637, 1211, 7410, 558, 576, 12, 1388, 10842, 2]
 
-// Module 17684 (FavoritesGuildChannelList)
+// Module 17716 (FavoritesGuildChannelList)
 import Constants from "Constants" /* 1098 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
-import createFavoritesGuildChannelRecord from "createFavoritesGuildChannelRecord" /* 4900 */;
-import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7408 */;
-import ChannelListState from "ChannelListState" /* 7635 */;
-import GuildSidebarConstants from "GuildSidebarConstants" /* 7641 */;
+import createFavoritesGuildChannelRecord from "createFavoritesGuildChannelRecord" /* 4902 */;
+import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7410 */;
+import ChannelListState from "ChannelListState" /* 7637 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 7643 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6494 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6782 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6768 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4903 */;
-import ChannelRecord from "ChannelRecord" /* 4825 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7211 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
-import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7634 */;
-import PermissionStore from "PermissionStore" /* 4901 */;
-import ReadStateStore from "ReadStateStore" /* 6769 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6702 */;
-import FavoriteStore from "FavoriteStore" /* 4824 */;
-import FavoritesConstants from "FavoritesConstants" /* 4834 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6496 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6784 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6770 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4905 */;
+import ChannelRecord from "ChannelRecord" /* 4827 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7213 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7636 */;
+import PermissionStore from "PermissionStore" /* 4903 */;
+import ReadStateStore from "ReadStateStore" /* 6771 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6704 */;
+import FavoriteStore from "FavoriteStore" /* 4826 */;
+import FavoritesConstants from "FavoritesConstants" /* 4836 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let closure_20;
 let closure_21;
 let closure_22;
 let metroImportAll;
-const f131306 = () => {
+const f131641 = () => {
   c0 = true;
 };
 function getMissingFavoriteThreadIds(includeLoading) {
@@ -95,7 +95,7 @@ function computeFavoritesState(favoriteChannels, arg1) {
   let channelMuted;
   let closure_2;
   let closure_3;
-  const f153432 = (arg0) => {
+  const f153862 = (arg0) => {
     let position;
     let record;
     let sum;
@@ -272,14 +272,14 @@ function computeFavoritesState(favoriteChannels, arg1) {
           activeJoinedUnreadThreadsForParent = closure_3_6.getActiveJoinedRelevantThreadsForParent(isPrivate.guild_id, isPrivate.id);
         });
         const found = mapped.filter(favoriteChannels(closure_2[26]).isNotNullish);
-        const iter = found.sortBy(f153432);
+        const iter = found.sortBy(f153862);
         closure_6 = iter.value();
       }
       return closure_6;
     },
     set: undefined
   });
-  const obj4 = favoriteChannels(10841);
+  const obj4 = favoriteChannels(10842);
   const favoritesCategories = obj4.getFavoritesCategories(favoriteChannels);
   let found = favoritesCategories.filter((id) => null != id.id);
   let mapped = found.map((id) => {
@@ -415,7 +415,7 @@ function computeFavoritesState(favoriteChannels, arg1) {
               });
               let tmp4 = items;
               const found = mapped.filter(items(closure_1_2[26]).isNotNullish);
-              const iter = found.sortBy(f153432);
+              const iter = found.sortBy(f153862);
               closure_1 = iter.value();
             }
             return closure_1;
@@ -802,7 +802,7 @@ const tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavori
       }
     }
     let flag2 = false;
-    if (tmp20 <= tmp(7635).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
+    if (tmp20 <= tmp(7637).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
       class I {
         constructor() {
           const tmp = closure_2;
@@ -818,7 +818,7 @@ const tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavori
           }
         }
       }
-      obj4.forEachShownChannel(f131306);
+      obj4.forEachShownChannel(f131641);
       flag2 = !closure_129_0;
     }
     cResult[11] = obj4;
@@ -915,9 +915,9 @@ const tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavori
   let c0;
   let flag2 = false;
   const tmp5 = getMissingFavoriteThreadIds({ limit: 1, includeLoading: true }).length > 0;
-  if (obj2.getSections().length <= flag(7635).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
+  if (obj2.getSections().length <= flag(7637).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
     c0 = false;
-    obj2.forEachShownChannel(f131306);
+    obj2.forEachShownChannel(f131641);
     flag2 = !c0;
   }
   return { guildChannels: obj2, shouldShowEmptyState: flag2 && !tmp5, hasNoChannels: flag2 };

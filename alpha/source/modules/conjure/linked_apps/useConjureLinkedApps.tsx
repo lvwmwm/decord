@@ -1,15 +1,15 @@
-// Module ID: 11814
-// Function ID: 11815
+// Module ID: 11840
+// Function ID: 11841
 // Name: useConjureLinkedApps
-// Dependencies: [5, 32, 19, 6771, 558, 576, 11815, 504, 1128, 3830, 2]
+// Dependencies: [5, 32, 19, 6773, 558, 576, 11841, 504, 1128, 3830, 2]
 
-// Module 11814 (useConjureLinkedApps)
+// Module 11840 (useConjureLinkedApps)
 import intl2 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6771 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

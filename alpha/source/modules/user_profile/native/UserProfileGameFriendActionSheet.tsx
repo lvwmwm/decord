@@ -1,21 +1,21 @@
-// Module ID: 14319
-// Function ID: 14320
+// Module ID: 14343
+// Function ID: 14344
 // Name: UserProfileGameFriendActionSheet
-// Dependencies: [5, 32, 19, 17, 4911, 1087, 21, 4969, 587, 558, 576, 13503, 6929, 1202, 5232, 7292, 14320, 7255, 5987, 7412, 5660, 5208, 7296, 7246, 1128, 2]
+// Dependencies: [5, 32, 19, 17, 4913, 1087, 21, 4971, 587, 558, 576, 13540, 6931, 1202, 5234, 7294, 14344, 7257, 5989, 7414, 5662, 5210, 7298, 7248, 1128, 2]
 // Exports: default
 
-// Module 14319 (UserProfileGameFriendActionSheet)
+// Module 14343 (UserProfileGameFriendActionSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13503 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13540 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RelationshipStore from "RelationshipStore" /* 4911 */;
+import RelationshipStore from "RelationshipStore" /* 4913 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

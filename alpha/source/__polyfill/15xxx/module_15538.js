@@ -1,18 +1,11 @@
 // Module ID: 15538
 // Function ID: 15539
-// Dependencies: [15539]
+// Dependencies: [15539, 15604]
 
 // Module 15538
-import prop_mod from "module_15539" /* 15539 */;
+import _mod15604 from "module_15604" /* 15604 */;
+import module_15539 from "module_15539" /* 15539 */;
 
-let prop = prop_mod;
-if (prop) {
-  const _Symbol = Symbol;
-  prop = !Symbol.sham;
-}
-if (prop) {
-  const _Symbol2 = Symbol;
-  prop = typeof Symbol.iterator === "symbol";
-}
-
-export default prop;
+const obj = { target: "Object", stat: true, arity: 2, forced: Object.assign !== _mod15604 };
+const obj2 = { assign: _mod15604 };
+module_15539(obj, obj2);

@@ -1,21 +1,21 @@
-// Module ID: 16326
-// Function ID: 16327
+// Module ID: 16350
+// Function ID: 16351
 // Name: BountiesNuxPromoSheet
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5208, 16325, 1128, 16327, 5242, 10851, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 5210, 16349, 1128, 16351, 5244, 10852, 2]
 
-// Module 16326 (BountiesNuxPromoSheet)
+// Module 16350 (BountiesNuxPromoSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
-import components_Button_Button from "components/Button/Button" /* 5242 */;
-import PromoSheet2 from "PromoSheet" /* 10851 */;
-import openBountiesNuxPromoSheet from "openBountiesNuxPromoSheet" /* 16325 */;
-import BountiesPosterSpotIllustration from "BountiesPosterSpotIllustration" /* 16327 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import components_Button_Button from "components/Button/Button" /* 5244 */;
+import PromoSheet2 from "PromoSheet" /* 10852 */;
+import openBountiesNuxPromoSheet from "openBountiesNuxPromoSheet" /* 16349 */;
+import BountiesPosterSpotIllustration from "BountiesPosterSpotIllustration" /* 16351 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -75,7 +75,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesNu
     tmp13 = cResult[5];
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const Button = tmp(5242).Button;
+    const Button = tmp(5244).Button;
     const intl3 = tmp(1128).intl;
     const tmp19 = <Button grow size="lg" variant="primary" text={intl3.string(intl4.t.cpT0Cq)} onPress={first} />;
     cResult[6] = tmp19;

@@ -1,12 +1,12 @@
-// Module ID: 5889
-// Function ID: 5890
+// Module ID: 5891
+// Function ID: 5892
 // Name: SystemResources
-// Dependencies: [5, 5881, 1378, 5890, 2]
+// Dependencies: [5, 5883, 1378, 5892, 2]
 
-// Module 5889 (SystemResources)
+// Module 5891 (SystemResources)
 import ProcessUtilsDefault from "ProcessUtils" /* 1378 */;
-import Histogram from "Histogram" /* 5881 */;
-import DeviceState from "DeviceState" /* 5890 */;
+import Histogram from "Histogram" /* 5883 */;
+import DeviceState from "DeviceState" /* 5892 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

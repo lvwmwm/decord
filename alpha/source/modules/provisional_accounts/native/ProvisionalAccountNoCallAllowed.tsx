@@ -1,18 +1,18 @@
-// Module ID: 14608
-// Function ID: 14609
+// Module ID: 14631
+// Function ID: 14632
 // Name: ProvisionalAccountNoCallAllowed
-// Dependencies: [19, 1087, 21, 4969, 558, 576, 7010, 1128, 2067, 5912, 5912, 2]
+// Dependencies: [19, 1087, 21, 4971, 558, 576, 7012, 1128, 2067, 5914, 5914, 2]
 
-// Module 14608 (ProvisionalAccountNoCallAllowed)
+// Module 14631 (ProvisionalAccountNoCallAllowed)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
-import AlertModal2 from "AlertModal" /* 5912 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7010 */;
+import AlertModal2 from "AlertModal" /* 5914 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7012 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -56,9 +56,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Provisiona
     tmp9 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const AlertActions = tmp(5912).AlertActions;
+    const AlertActions = tmp(5914).AlertActions;
     ({ variant: "secondary", text: intl3.string(intl4.t["NX+WJN"]) });
-    const AlertActionButton = tmp(5912).AlertActionButton;
+    const AlertActionButton = tmp(5914).AlertActionButton;
     intl3 = tmp(1128).intl;
     const tmp17 = <AlertActions>{null}</AlertActions>;
     cResult[4] = tmp17;

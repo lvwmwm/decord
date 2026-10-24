@@ -1,13 +1,13 @@
-// Module ID: 13013
-// Function ID: 13014
+// Module ID: 13050
+// Function ID: 13051
 // Name: MessagesUtils
-// Dependencies: [1087, 7425, 5701, 8483, 5995, 2]
+// Dependencies: [1087, 7427, 5703, 8485, 5997, 2]
 
-// Module 13013 (MessagesUtils)
-import CodedLink from "CodedLink" /* 5701 */;
-import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 5995 */;
-import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7425 */;
-import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 8483 */;
+// Module 13050 (MessagesUtils)
+import CodedLink from "CodedLink" /* 5703 */;
+import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 5997 */;
+import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7427 */;
+import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 8485 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

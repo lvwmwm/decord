@@ -1,9 +1,9 @@
-// Module ID: 7651
-// Function ID: 7652
+// Module ID: 7653
+// Function ID: 7654
 // Name: CollectiblesBundledProductRecord
 // Dependencies: [2050, 2]
 
-// Module 7651 (CollectiblesBundledProductRecord)
+// Module 7653 (CollectiblesBundledProductRecord)
 import size from "module_2" /* 2 */;
 
 class CollectiblesBundledProductRecord {

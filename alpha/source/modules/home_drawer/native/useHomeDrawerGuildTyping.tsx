@@ -1,15 +1,15 @@
-// Module ID: 17731
-// Function ID: 17732
+// Module ID: 17763
+// Function ID: 17764
 // Name: useHomeDrawerGuildTyping
-// Dependencies: [4903, 4825, 4821, 13022, 568, 558, 576, 17728, 17729, 11, 504, 2]
+// Dependencies: [4905, 4827, 4823, 13059, 568, 558, 576, 17760, 17761, 11, 504, 2]
 
-// Module 17731 (useHomeDrawerGuildTyping)
+// Module 17763 (useHomeDrawerGuildTyping)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import shallowEqual from "shallowEqual" /* 568 */;
-import ChannelRecord from "ChannelRecord" /* 4825 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4903 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
-import TypingStore from "TypingStore" /* 13022 */;
+import ChannelRecord from "ChannelRecord" /* 4827 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4905 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import TypingStore from "TypingStore" /* 13059 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,20 +19,20 @@ let _require, basicChannel;
 function areHomeDrawerGuildTypingStatesEqual(typingChannelId, typingChannelId2) {
   let result = typingChannelId.typingChannelId === typingChannelId2.typingChannelId && typingChannelId.typingChannelName === typingChannelId2.typingChannelName;
   if (result) {
-    obj = shallowEqual;
+    const obj = shallowEqual;
     result = obj.areArraysShallowEqual(typingChannelId.typingUserIds, typingChannelId2.typingUserIds);
   }
   return result;
 }
 const isThread = ChannelRecord.isThread;
-let obj = { typingChannelId: "Array", typingChannelName: "toCharArray$esjava$1", typingUserIds: [] };
+let closure_7 = { typingChannelId: "Array", typingChannelName: "Reflect", typingUserIds: [] };
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHomeDrawerGuildTyping(arg0) {
   let closure_0;
   let first;
   let isHomeDrawerChannelInChannelList;
   _require = arg0;
   let tmp2 = isHomeDrawerChannelInChannelList;
-  obj = require("react");
+  let obj = require("react");
   const cResult = obj.c(6);
   let obj2 = require("isHomeDrawerChannelMuted");
   const isHomeDrawerChannelMuted = obj2.useIsHomeDrawerChannelMuted();
@@ -65,7 +65,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHomeDrawe
     let name;
     let obj2;
     const typingUsersByGuild = TypingStore.getTypingUsersByGuild(closure_0);
-    obj = SnowflakeUtilsDefault;
+    const obj = SnowflakeUtilsDefault;
     const keys = obj.keys(typingUsersByGuild);
     const found = keys.find((item) => {
       basicChannel = basicChannel.getBasicChannel(item);
@@ -78,7 +78,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHomeDrawe
       return tmp2;
     });
     if (null == found) {
-      obj2 = obj;
+      obj2 = closure_7;
     } else {
       obj2 = { typingChannelId: found, typingChannelName: name, typingUserIds: Object.keys(typingUsersByGuild[found]) };
       const channel = ChannelStore.getChannel(found);
@@ -102,7 +102,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHomeDrawe
   let closure_0;
   let isHomeDrawerChannelInChannelList;
   _require = arg0;
-  obj = require("isHomeDrawerChannelMuted");
+  let obj = require("isHomeDrawerChannelMuted");
   const isHomeDrawerChannelMuted = obj.useIsHomeDrawerChannelMuted();
   let obj2 = require("isHomeDrawerChannelInChannelList");
   isHomeDrawerChannelInChannelList = obj2.useIsHomeDrawerChannelInChannelList();
@@ -113,7 +113,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHomeDrawe
     let name;
     let obj2;
     const typingUsersByGuild = TypingStore.getTypingUsersByGuild(closure_0);
-    obj = SnowflakeUtilsDefault;
+    const obj = SnowflakeUtilsDefault;
     const keys = obj.keys(typingUsersByGuild);
     const found = keys.find((item) => {
       basicChannel = basicChannel.getBasicChannel(item);
@@ -126,7 +126,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHomeDrawe
       return tmp2;
     });
     if (null == found) {
-      obj2 = obj;
+      obj2 = closure_7;
     } else {
       obj2 = { typingChannelId: found, typingChannelName: name, typingUserIds: Object.keys(typingUsersByGuild[found]) };
       const channel = ChannelStore.getChannel(found);

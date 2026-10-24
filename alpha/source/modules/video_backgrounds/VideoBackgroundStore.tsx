@@ -1,16 +1,16 @@
-// Module ID: 5860
-// Function ID: 5861
+// Module ID: 5862
+// Function ID: 5863
 // Name: VideoBackgroundStore
-// Dependencies: [1209, 1246, 2014, 4872, 1392, 5737, 504, 584, 2]
+// Dependencies: [1209, 1246, 2014, 4874, 1392, 5739, 504, 584, 2]
 
-// Module 5860 (VideoBackgroundStore)
+// Module 5862 (VideoBackgroundStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5737 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5739 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1209 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 
@@ -133,7 +133,7 @@ let obj = {
       if (tmp3 != null) {
         graph = tmp3.graph;
       }
-      c10 = graph !== tmp(5737).FilterSettingsGraph.NONE;
+      c10 = graph !== tmp(5739).FilterSettingsGraph.NONE;
     }
     if (BaseConnectionEvent.FilterSettingsKey.CAMERA_BACKGROUND_PREVIEW in settings) {
       c13 = false;

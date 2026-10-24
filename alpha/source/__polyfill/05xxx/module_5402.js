@@ -1,17 +1,16 @@
 // Module ID: 5402
 // Function ID: 5403
-// Dependencies: [5403, 5354]
-// Exports: useCompetingGestures
+// Dependencies: [5403, 5378]
 
 // Module 5402
-import ComposedGestureName from "ComposedGestureName" /* 5354 */;
+import _mod5378 from "module_5378" /* 5378 */;
 import _mod5403 from "module_5403" /* 5403 */;
 
-
-export const useCompetingGestures = function useCompetingGestures() {
-  const items = [...arguments];
-  const useComposedGesture = _mod5403.useComposedGesture;
-  _mod5403;
-  const items1 = [ComposedGestureName.ComposedGestureName.Race, ...items];
-  return useComposedGesture.apply(items1);
-};
+for (const key10013 in _mod5403) {
+  exports[key10013] = _mod5403[key10013];
+  continue;
+}
+for (const key10017 in _mod5378) {
+  exports[key10017] = _mod5378[key10017];
+  continue;
+}

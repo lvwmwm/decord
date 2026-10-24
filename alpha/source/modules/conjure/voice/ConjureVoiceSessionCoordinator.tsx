@@ -1,24 +1,24 @@
-// Module ID: 15682
-// Function ID: 15683
+// Module ID: 15703
+// Function ID: 15704
 // Name: ConjureVoiceSessionCoordinator
-// Dependencies: [6773, 502, 2014, 5712, 1392, 5628, 1087, 5716, 5852, 9263, 15683, 1281, 15686, 12, 5849, 15687, 15684, 6776, 2]
+// Dependencies: [6775, 502, 2014, 5714, 1392, 5630, 1087, 5718, 5854, 9264, 15704, 1281, 15707, 12, 5851, 15708, 15705, 6778, 2]
 
-// Module 15682 (ConjureVoiceSessionCoordinator)
+// Module 15703 (ConjureVoiceSessionCoordinator)
 import _modDef12 from "module_12" /* 12 */;
 import Constants2 from "Constants" /* 1087 */;
-import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 5852 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6776 */;
-import RPCErrorDefault from "RPCError" /* 9263 */;
-import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 15684 */;
-import ConjureVoiceAcoustics from "ConjureVoiceAcoustics" /* 15686 */;
-import ConjureVoiceGeometry from "ConjureVoiceGeometry" /* 15687 */;
-import FramesStore from "FramesStore" /* 6773 */;
+import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 5854 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6778 */;
+import RPCErrorDefault from "RPCError" /* 9264 */;
+import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 15705 */;
+import ConjureVoiceAcoustics from "ConjureVoiceAcoustics" /* 15707 */;
+import ConjureVoiceGeometry from "ConjureVoiceGeometry" /* 15708 */;
+import FramesStore from "FramesStore" /* 6775 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5712 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
 import UserStore from "UserStore" /* 1392 */;
-import VoiceStateStore from "VoiceStateStore" /* 5628 */;
-import Constants from "Constants" /* 5716 */;
+import VoiceStateStore from "VoiceStateStore" /* 5630 */;
+import Constants from "Constants" /* 5718 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault, set, user, user_id;
@@ -26,7 +26,7 @@ let dependencyMap, importDefault, set, user, user_id;
 let c10;
 let tmp7;
 let unpackModuleId;
-const AudioActionCreatorsDefault = tmp7(5849);
+const AudioActionCreatorsDefault = tmp7(5851);
 const RPCErrors = Constants2.RPCErrors;
 ({ Features: c10, MediaEngineContextTypes: unpackModuleId } = Constants);
 let closure_12 = { x: 0, y: 0, z: -1 };
@@ -144,11 +144,11 @@ class ConjureVoiceSessionCoordinator {
     if (null != connectedRTCConnection) {
       if (null != mediaEngineConnectionId) {
         if (channelId !== connectedRTCConnection.channelId) {
-          const obj11 = handleFrameLifecycleChange(15683);
+          const obj11 = handleFrameLifecycleChange(15704);
           if (obj11.isConjureApplication(applicationId)) {
-            const tmp31Result = handleFrameLifecycleChange(15683);
+            const tmp31Result = handleFrameLifecycleChange(15704);
             if (!tmp31Result.isUserScopedConjureApplication(applicationId)) {
-              const tmp31Result2 = handleFrameLifecycleChange(15683);
+              const tmp31Result2 = handleFrameLifecycleChange(15704);
               if (!tmp31Result2.isVoiceChannelInFrameGuild(frame, connectedRTCConnection.channelId)) {
                 const self4 = this;
                 const self5 = this;
@@ -251,7 +251,7 @@ class ConjureVoiceSessionCoordinator {
         const tmp18 = new RPCErrorDefault(obj3, roomError);
         throw tmp18;
       } else {
-        const tmp9Result = tmp9(15686);
+        const tmp9Result = tmp9(15707);
         validateSessionResult.acoustics = tmp9Result.toSpatialAudioOverrides(acoustics);
         const result = self.syncSpatialAudioOverrides();
       }
@@ -649,8 +649,8 @@ class ConjureVoiceSessionCoordinator {
       updateTimer.updateTimer = null;
     }
   }
-  validateFrame(id) {
-    const frame = validateEmbeddedAppFrameDefault(id).frame;
+  validateFrame(arg0) {
+    const frame = validateEmbeddedAppFrameDefault(arg0).frame;
     const obj = { frame, frameId: frame.id, applicationId: frame.applicationId, channelId: getChannelIdForEmbeddedSurfaceDefault(frame.surface) };
     return obj;
   }

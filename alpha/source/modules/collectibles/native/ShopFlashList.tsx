@@ -1,19 +1,19 @@
-// Module ID: 17204
-// Function ID: 17205
+// Module ID: 17236
+// Function ID: 17237
 // Name: ShopFlashList
-// Dependencies: [19, 21, 4969, 587, 558, 576, 17167, 7218, 1202, 8721, 1128, 2]
+// Dependencies: [19, 21, 4971, 587, 558, 576, 17199, 7220, 1202, 8723, 1128, 2]
 
-// Module 17204 (ShopFlashList)
+// Module 17236 (ShopFlashList)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 7218 */;
-import generated_NoResults from "generated/NoResults" /* 8721 */;
-import useScrollToInitialIndexOnce2 from "useScrollToInitialIndexOnce" /* 17167 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7220 */;
+import generated_NoResults from "generated/NoResults" /* 8723 */;
+import useScrollToInitialIndexOnce2 from "useScrollToInitialIndexOnce" /* 17199 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

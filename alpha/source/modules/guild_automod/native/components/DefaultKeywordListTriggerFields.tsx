@@ -1,10 +1,10 @@
-// Module ID: 18990
-// Function ID: 18991
+// Module ID: 19018
+// Function ID: 19019
 // Name: DefaultKeywordListTriggerFields
-// Dependencies: [19, 12769, 21, 558, 576, 1128, 18991, 6898, 6985, 18992, 2]
+// Dependencies: [19, 12806, 21, 558, 576, 1128, 19019, 6900, 6987, 19020, 2]
 
-// Module 18990 (DefaultKeywordListTriggerFields)
-import Constants from "Constants" /* 12769 */;
+// Module 19018 (DefaultKeywordListTriggerFields)
+import Constants from "Constants" /* 12806 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

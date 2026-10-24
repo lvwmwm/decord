@@ -1,12 +1,12 @@
-// Module ID: 19044
-// Function ID: 19045
+// Module ID: 19072
+// Function ID: 19073
 // Name: GuildSettingsStickerCreateModal
-// Dependencies: [19, 21, 558, 576, 10026, 1128, 19045, 10029, 2]
+// Dependencies: [19, 21, 558, 576, 10027, 1128, 19073, 10030, 2]
 
-// Module 19044 (GuildSettingsStickerCreateModal)
+// Module 19072 (GuildSettingsStickerCreateModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1128 */;
-import GuildSettingsStickerCreateDefault from "GuildSettingsStickerCreate" /* 19045 */;
+import GuildSettingsStickerCreateDefault from "GuildSettingsStickerCreate" /* 19073 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -84,9 +84,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   ({ guildId: require, stickerId } = arg0);
   dependencyMap = undefined;
   c3 = undefined;
-  ({ onGoBack: c2, ref: c3 } = stickerId(10026)());
-  stickerId(10026)();
-  const tmp4 = stickerId(10029);
+  ({ onGoBack: c2, ref: c3 } = stickerId(10027)());
+  stickerId(10027)();
+  const tmp4 = stickerId(10030);
   const intl = intl2.intl;
   const string = intl.string;
   const tmp3 = c3;

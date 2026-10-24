@@ -1,33 +1,33 @@
-// Module ID: 15807
-// Function ID: 15808
+// Module ID: 15830
+// Function ID: 15831
 // Name: UserProfileEditForm
-// Dependencies: [109, 19, 17, 8679, 11120, 7302, 1087, 4994, 1097, 15808, 21, 7084, 15809, 558, 576, 2053, 7251, 7276, 8653, 15810, 1128, 15823, 15825, 8730, 15826, 8649, 7025, 5050, 5591, 587, 11065, 15827, 10489, 12778, 8673, 11053, 13024, 8656, 8731, 11114, 504, 8684, 14379, 4997, 15831, 8716, 8727, 15832, 15833, 5232, 15834, 8651, 15835, 15849, 15852, 15858, 8654, 15862, 15863, 15867, 15871, 15876, 15877, 15880, 15881, 15909, 5035, 11073, 15914, 11054, 11074, 15925, 15926, 15927, 15928, 2]
+// Dependencies: [109, 19, 17, 8681, 11121, 7304, 1087, 4996, 1097, 15831, 21, 7086, 15832, 558, 576, 2053, 7253, 7278, 8655, 15833, 1128, 15846, 15848, 8732, 15849, 8651, 7027, 5052, 5593, 587, 11066, 15850, 10490, 12815, 8675, 11054, 13061, 8658, 8733, 11115, 504, 8686, 14403, 4999, 15855, 8718, 8729, 15856, 15857, 5234, 15858, 8653, 15859, 15873, 15876, 15882, 8656, 15886, 15887, 15891, 15895, 15900, 15901, 15904, 15905, 15933, 5037, 11074, 15938, 11055, 11075, 15949, 15950, 15951, 15952, 2]
 
-// Module 15807 (UserProfileEditForm)
+// Module 15830 (UserProfileEditForm)
 import react2 from "react" /* 576 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import intl5 from "intl" /* 1128 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2053 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7084 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7251 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7276 */;
-import Constants2 from "Constants" /* 7302 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8653 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8684 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 14379 */;
-import UserProfileEditConstants from "UserProfileEditConstants" /* 15808 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15809 */;
-import useOpenChangeBannerActionSheetDefault from "useOpenChangeBannerActionSheet" /* 15810 */;
-import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 15823 */;
-import MobileWidgetEditingExperiment from "MobileWidgetEditingExperiment" /* 15825 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7086 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7253 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7278 */;
+import Constants2 from "Constants" /* 7304 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8655 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8686 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 14403 */;
+import UserProfileEditConstants from "UserProfileEditConstants" /* 15831 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15832 */;
+import useOpenChangeBannerActionSheetDefault from "useOpenChangeBannerActionSheet" /* 15833 */;
+import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 15846 */;
+import MobileWidgetEditingExperiment from "MobileWidgetEditingExperiment" /* 15848 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8679 */;
-import ProfileCustomizationNavigationStore_mod from "ProfileCustomizationNavigationStore" /* 11120 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8681 */;
+import ProfileCustomizationNavigationStore_mod from "ProfileCustomizationNavigationStore" /* 11121 */;
 import Constants from "Constants" /* 1087 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4994 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4996 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -221,7 +221,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditUs
   }
   const obj3 = { value: analyticsLocations, children: closure_17(tmp2Result, obj4) };
   const tmp6Result = tmp6(obj2);
-  const AnalyticsLocationProvider = tmp7(7251).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = tmp7(7253).AnalyticsLocationProvider;
   let banner1;
   obj4 = { user, displayProfile, pendingBanner, pendingAvatarSrc, pendingThemeColors, pendingAccentColor, bannerSafeArea: 12, showProfilePreviewButton: canUseCollectiblesResult, onPressEdit: tmp6Result, editButtonAccessibilityLabel: intl.string(intl5.t.VqsHy0), editDisabled: disabled };
   tmp2Result = UserProfileEditBannerButtonDefault;

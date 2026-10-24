@@ -1,22 +1,22 @@
-// Module ID: 19100
-// Function ID: 19101
+// Module ID: 19128
+// Function ID: 19129
 // Name: RolePermissionTemplatesActionSheet
-// Dependencies: [19, 17, 1087, 21, 4969, 587, 558, 576, 1267, 5208, 5660, 5906, 1128, 7246, 19078, 7296, 2]
+// Dependencies: [19, 17, 1087, 21, 4971, 587, 558, 576, 1267, 5210, 5662, 5908, 1128, 7248, 19106, 7298, 2]
 
-// Module 19100 (RolePermissionTemplatesActionSheet)
+// Module 19128 (RolePermissionTemplatesActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
-import ToastUtils from "ToastUtils" /* 5660 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5906 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7246 */;
-import ActionSheet2 from "ActionSheet" /* 7296 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import ToastUtils from "ToastUtils" /* 5662 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5908 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7248 */;
+import ActionSheet2 from "ActionSheet" /* 7298 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -105,7 +105,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RolePermissi
           obj.track(constants.OPEN_POPOUT, obj2);
         }
       }
-      const BottomSheetTitleHeader = tmp(7246).BottomSheetTitleHeader;
+      const BottomSheetTitleHeader = tmp(7248).BottomSheetTitleHeader;
       let intl = tmp(1128).intl;
       const tmp12 = <BottomSheetTitleHeader title={intl.string(tmp(1128).t.KgCkoQ)} />;
       cResult[7] = tmp12;
@@ -137,7 +137,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RolePermissi
         }
         return tmp18;
       }
-      const ActionSheet = tmp(7296).ActionSheet;
+      const ActionSheet = tmp(7298).ActionSheet;
       const tmp21 = <ActionSheet header={tmp11} startExpanded>{null}</ActionSheet>;
       cResult[11] = tmp4.templateContainer;
       cResult[12] = tmp13;
@@ -146,8 +146,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RolePermissi
     }
     cResult[8] = guildId;
     cResult[9] = tmp10;
-    cResult[10] = jsx(onPermissionsChanged(19078), { onSelect: tmp10, location: constants2.GUILD_ROLE_TEMPLATE_POPOUT, guildId });
-    const tmp17 = jsx(onPermissionsChanged(19078), { onSelect: tmp10, location: constants2.GUILD_ROLE_TEMPLATE_POPOUT, guildId });
+    cResult[10] = jsx(onPermissionsChanged(19106), { onSelect: tmp10, location: constants2.GUILD_ROLE_TEMPLATE_POPOUT, guildId });
+    const tmp17 = jsx(onPermissionsChanged(19106), { onSelect: tmp10, location: constants2.GUILD_ROLE_TEMPLATE_POPOUT, guildId });
   }
   function handleTemplateSelect(arg0) {
     let intl;

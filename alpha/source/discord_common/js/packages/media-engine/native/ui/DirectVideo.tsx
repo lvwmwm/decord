@@ -1,13 +1,13 @@
-// Module ID: 5742
-// Function ID: 5743
+// Module ID: 5744
+// Function ID: 5745
 // Name: DirectVideo
-// Dependencies: [19, 21, 4, 5743, 5744, 2]
+// Dependencies: [19, 21, 4, 5745, 5746, 2]
 // Exports: default
 
-// Module 5742 (DirectVideo)
+// Module 5744 (DirectVideo)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Fragment from "Fragment" /* 21 */;
-import DirectVideoStream from "DirectVideoStream" /* 5743 */;
+import DirectVideoStream from "DirectVideoStream" /* 5745 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 

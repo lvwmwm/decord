@@ -1,24 +1,24 @@
-// Module ID: 10548
-// Function ID: 10549
+// Module ID: 10549
+// Function ID: 10550
 // Name: PremiumGiftWishlistBanner
-// Dependencies: [5, 19, 17, 7329, 1394, 1087, 1089, 8670, 21, 587, 4969, 558, 576, 9356, 9368, 10549, 10553, 7251, 7276, 1267, 8666, 10497, 10554, 5149, 5661, 1128, 7647, 13851, 5023, 5232, 13876, 13881, 2]
+// Dependencies: [5, 19, 17, 7331, 1394, 1087, 1089, 8672, 21, 587, 4971, 558, 576, 9357, 9369, 10550, 10554, 7253, 7278, 1267, 8668, 10498, 10555, 5151, 5663, 1128, 7649, 13870, 5025, 5234, 13895, 13900, 2]
 
-// Module 10548 (PremiumGiftWishlistBanner)
+// Module 10549 (PremiumGiftWishlistBanner)
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7329 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8666 */;
-import Constants2 from "Constants" /* 8670 */;
-import useWishlistHooks from "useWishlistHooks" /* 9368 */;
-import WishlistBannerUtils from "WishlistBannerUtils" /* 10553 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7331 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
+import Constants2 from "Constants" /* 8672 */;
+import useWishlistHooks from "useWishlistHooks" /* 9369 */;
+import WishlistBannerUtils from "WishlistBannerUtils" /* 10554 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

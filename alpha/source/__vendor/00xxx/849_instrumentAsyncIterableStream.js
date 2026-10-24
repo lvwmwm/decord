@@ -263,6 +263,7 @@ let obj = function _instrumentAsyncIterableStream() {
       throw new TypeError("Generator functions may not be called on executing generators");
     } else {
       let str2 = "";
+      const flag = true;
       if (tmp3 === 3) {
         if (arg0 === 1) {
           throw value;
@@ -303,7 +304,7 @@ let obj = function _instrumentAsyncIterableStream() {
                 closure_3 = undefined;
                 value4 = undefined;
                 value5 = undefined;
-                obj5 = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "__initData", cacheCreationInputTokens: "toCharArray$esjava$1", cacheReadInputTokens: "toCharArray$esjava$1", toolCalls: [], activeToolBlocks: {} };
+                obj5 = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "__initData", cacheCreationInputTokens: "formatToPlainString", cacheReadInputTokens: "sa", toolCalls: [], activeToolBlocks: {} };
                 closure_4 = false;
                 c5 = false;
                 c9 = 4;
@@ -1062,7 +1063,7 @@ export const instrumentAsyncIterableStream = function instrumentAsyncIterableStr
 export const instrumentMessageStream = function instrumentMessageStream(applyResult, arg1, flag) {
   let closure_0 = arg1;
   let closure_1 = flag;
-  obj = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "__initData", cacheCreationInputTokens: "toCharArray$esjava$1", cacheReadInputTokens: "toCharArray$esjava$1", toolCalls: [], activeToolBlocks: {} };
+  obj = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "__initData", cacheCreationInputTokens: "formatToPlainString", cacheReadInputTokens: "sa", toolCalls: [], activeToolBlocks: {} };
   applyResult.on("streamEvent", (arg0) => {
     processEvent(arg0, obj, flag, closure_0);
   });

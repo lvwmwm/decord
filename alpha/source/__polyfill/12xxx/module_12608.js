@@ -1,17 +1,42 @@
 // Module ID: 12608
 // Function ID: 12609
-// Dependencies: []
-// Exports: parameterize
+// Dependencies: [12580]
+// Exports: handleCallbackErrors
 
 // Module 12608
+import _mod12580 from "module_12580" /* 12580 */;
 
-export const parameterize = function parameterize(join) {
-  const substr = [...arguments].slice();
-  const items = [join, ...substr];
-  const string = new String(String.raw.apply(items));
-  const str = join.join("\0");
-  const str2 = str.replace(/%/g, "%%");
-  string.__sentry_template_string__ = str2.replace(/\0/g, "%s");
-  string.__sentry_template_values__ = substr;
-  return string;
+
+export const handleCallbackErrors = function handleCallbackErrors(fn, fn2) {
+  function maybeHandlePromiseRejection(promise, fn2, fn) {
+    let closure_0 = fn2;
+    let closure_1 = fn;
+    const obj = _mod12580;
+    if (obj.isThenable(promise)) {
+      return promise.then((result) => {
+        closure_1();
+        return result;
+      }, (arg0) => {
+        closure_0(arg0);
+        closure_1();
+        throw arg0;
+      });
+    } else {
+      fn();
+      return promise;
+    }
+  }
+  fn = arg2;
+  if (arg2 === undefined) {
+    fn = function t() {
+
+    };
+  }
+  try {
+    return maybeHandlePromiseRejection(fn(), fn2, fn);
+  } catch (tmp2) {
+    fn2(tmp2);
+    fn();
+    throw tmp2;
+  }
 };

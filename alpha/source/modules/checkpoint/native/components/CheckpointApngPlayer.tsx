@@ -1,17 +1,17 @@
-// Module ID: 12935
-// Function ID: 12936
+// Module ID: 12972
+// Function ID: 12973
 // Name: CheckpointApngPlayer
-// Dependencies: [17, 4970, 21, 4969, 558, 576, 504, 5667, 1385, 9400, 2]
+// Dependencies: [17, 4972, 21, 4971, 558, 576, 504, 5669, 1385, 9401, 2]
 
-// Module 12935 (CheckpointApngPlayer)
+// Module 12972 (CheckpointApngPlayer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
-import FastImageDefault from "FastImage" /* 5667 */;
-import AccessibilityStore from "AccessibilityStore" /* 4970 */;
-import createStyles from "createStyles" /* 4969 */;
+import FastImageDefault from "FastImage" /* 5669 */;
+import AccessibilityStore from "AccessibilityStore" /* 4972 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -102,7 +102,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
       tmp9Result = tmp9(FastImageDefault, obj6);
     } else {
       const obj8 = { url: animatedUri, autoplay: true, style };
-      tmp9Result = tmp9(tmp(9400).APNGPlayer, obj8);
+      tmp9Result = tmp9(tmp(9401).APNGPlayer, obj8);
     }
     cResult[10] = animatedUri;
     cResult[11] = style;
@@ -134,7 +134,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
       tmp4Result = tmp4(FastImageDefault, obj5);
     } else {
       const obj7 = { url: animatedUri, autoplay: true, style };
-      tmp4Result = tmp4(tmp2(9400).APNGPlayer, obj7);
+      tmp4Result = tmp4(tmp2(9401).APNGPlayer, obj7);
     }
     obj2.children = tmp4Result;
     tmp8 = obj2;

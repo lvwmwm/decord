@@ -1,18 +1,18 @@
-// Module ID: 16632
-// Function ID: 16633
+// Module ID: 16664
+// Function ID: 16665
 // Name: DefaultGuildThemePreferenceSetting
-// Dependencies: [19, 8330, 4797, 558, 576, 1128, 1211, 11204, 5184, 2]
+// Dependencies: [19, 8332, 4799, 558, 576, 1128, 1211, 11205, 5186, 2]
 
-// Module 16632 (DefaultGuildThemePreferenceSetting)
+// Module 16664 (DefaultGuildThemePreferenceSetting)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
-import UserSettings from "UserSettings" /* 4797 */;
-import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 5184 */;
-import SettingsConstants from "SettingsConstants" /* 8330 */;
+import UserSettings from "UserSettings" /* 4799 */;
+import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 5186 */;
+import SettingsConstants from "SettingsConstants" /* 8332 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11204 */;
+import SettingBuilders from "SettingBuilders" /* 11205 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

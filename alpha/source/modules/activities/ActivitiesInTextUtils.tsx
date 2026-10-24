@@ -1,14 +1,14 @@
-// Module ID: 8880
-// Function ID: 8881
+// Module ID: 8882
+// Function ID: 8883
 // Name: ActivitiesInTextUtils
-// Dependencies: [4821, 4901, 1098, 1108, 558, 576, 504, 2]
+// Dependencies: [4823, 4903, 1098, 1108, 558, 576, 504, 2]
 // Exports: getIsAppLauncherEnabled, isActivitiesInTextEnabled
 
-// Module 8880 (ActivitiesInTextUtils)
+// Module 8882 (ActivitiesInTextUtils)
 import Constants from "Constants" /* 1098 */;
 import ChannelTypes from "ChannelTypes" /* 1108 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
-import PermissionStore from "PermissionStore" /* 4901 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import PermissionStore from "PermissionStore" /* 4903 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

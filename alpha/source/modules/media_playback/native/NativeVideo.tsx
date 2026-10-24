@@ -1,15 +1,15 @@
-// Module ID: 8792
-// Function ID: 8793
+// Module ID: 8794
+// Function ID: 8795
 // Name: NativeVideo
-// Dependencies: [32, 109, 19, 17, 21, 4969, 558, 576, 81, 8793, 5667, 2]
+// Dependencies: [32, 109, 19, 17, 21, 4971, 558, 576, 81, 8795, 5669, 2]
 
-// Module 8792 (NativeVideo)
+// Module 8794 (NativeVideo)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let c10;
 let c9;
 let obj2;
 let unpackModuleId;
-const f101424 = (item) => {
+const f101657 = (item) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = item;
@@ -115,7 +115,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeVide
     }
     if (!tmp19) {
       const _JSON2 = JSON;
-      let obj6 = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f101424) };
+      let obj6 = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f101657) };
       const _String = String;
       sum = sum + 1;
       let parsed = JSON.parse(json);
@@ -390,7 +390,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeVide
       };
       ({ uri: obj9.sourceUri, headers: obj9.sourceHeaders } = first1);
       ({ paused: obj9.paused, muted: obj9.muted, volume: obj9.volume, rate: obj9.rate, repeat: obj9.repeat, controls: obj9.controls, resizeMode: obj9.resizeMode, mixWithOthers: obj9.audioPolicy, disableFocus: obj9.disableFocus, httpEngine: obj9.httpEngine, bufferConfig: obj9.bufferConfig, playInBackground: obj9.playInBackground, playWhenInactive: obj9.playWhenInactive, pictureInPicture: obj9.pictureInPicture, preventsDisplaySleepDuringVideoPlayback: obj9.preventsDisplaySleepDuringVideoPlayback, automaticallyWaitsToMinimizeStalling: obj9.automaticallyWaitsToMinimizeStalling, maxBitRate: obj9.maxBitRate, preferredForwardBufferDuration: obj9.preferredForwardBufferDuration } = obj4);
-      items3 = [closure_10(ref1(8793), obj10), ];
+      items3 = [closure_10(ref1(8795), obj10), ];
       let tmp34Result = null != obj4.poster && tmp25 !== id;
       const tmp32 = closure_11;
       const tmp33 = closure_9;
@@ -400,7 +400,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeVide
         const obj11 = { accessible: false, style: tmp4.content, source: obj19, resizeMode: str2 };
         obj19 = { uri: obj4.poster };
         str2 = "center";
-        const tmp35Result = tmp35(5667);
+        const tmp35Result = tmp35(5669);
         if ("none" !== obj4.posterResizeMode) {
           let str4 = obj4.posterResizeMode;
           if (str4 == null) {
@@ -441,7 +441,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeVide
   }
   const fn = function w() {
     let entries;
-    const obj = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f101424) };
+    const obj = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f101657) };
     sum = sum + 1;
     const parsed = JSON.parse(json);
     entries = Object.entries(parsed);
@@ -506,7 +506,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeVide
   }
   const tmp4Result = id(obj.useState(() => {
     let entries;
-    const obj = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f101424) };
+    const obj = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f101657) };
     sum = sum + 1;
     const parsed = JSON.parse(json);
     entries = Object.entries(parsed);
@@ -520,7 +520,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeVide
   }
   if (!tmp15) {
     const _JSON2 = JSON;
-    let obj4 = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f101424) };
+    let obj4 = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f101657) };
     const _String = String;
     sum = sum + 1;
     let parsed = JSON.parse(json);
@@ -758,7 +758,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeVide
       }
     }
   };
-  items2 = [closure_10(ref1(8793), obj6), ];
+  items2 = [closure_10(ref1(8795), obj6), ];
   let tmp26Result = null != obj2.poster && tmp21 !== id;
   const tmp24 = closure_11;
   const tmp25 = closure_9;
@@ -768,7 +768,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeVide
     let obj7 = { accessible: false, style: tmp2.content, source: obj8, resizeMode: str2 };
     obj8 = { uri: obj2.poster };
     str2 = "center";
-    const tmp27Result = tmp27(5667);
+    const tmp27Result = tmp27(5669);
     if ("none" !== obj2.posterResizeMode) {
       let str4 = obj2.posterResizeMode;
       if (str4 == null) {

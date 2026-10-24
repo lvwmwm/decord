@@ -1,19 +1,19 @@
-// Module ID: 16454
-// Function ID: 16455
+// Module ID: 16486
+// Function ID: 16487
 // Name: VideoQuestCaptions
-// Dependencies: [19, 17, 21, 4969, 587, 683, 558, 576, 16455, 16457, 5232, 5584, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 683, 558, 576, 16487, 16489, 5234, 5586, 2]
 
-// Module 16454 (VideoQuestCaptions)
+// Module 16486 (VideoQuestCaptions)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5584 */;
-import useVideoQuestCaptions from "useVideoQuestCaptions" /* 16455 */;
-import VideoQuestCaptionsUtils from "VideoQuestCaptionsUtils" /* 16457 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5586 */;
+import useVideoQuestCaptions from "useVideoQuestCaptions" /* 16487 */;
+import VideoQuestCaptionsUtils from "VideoQuestCaptionsUtils" /* 16489 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import module_683 from "module_683" /* 683 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

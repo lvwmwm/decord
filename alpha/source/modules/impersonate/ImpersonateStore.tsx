@@ -1,9 +1,9 @@
-// Module ID: 4874
-// Function ID: 4875
+// Module ID: 4876
+// Function ID: 4877
 // Name: ImpersonateStore
-// Dependencies: [4875, 4843, 1087, 1097, 11, 4880, 1405, 504, 2041, 584, 2]
+// Dependencies: [4877, 4845, 1087, 1097, 11, 4882, 1405, 504, 2041, 584, 2]
 
-// Module 4874 (ImpersonateStore)
+// Module 4876 (ImpersonateStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -11,9 +11,9 @@ import Constants from "Constants" /* 1087 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import FlagUtilsAll from "FlagUtils" /* 1405 */;
 import FunctionUtils from "FunctionUtils" /* 2041 */;
-import ImpersonateTypes from "ImpersonateTypes" /* 4880 */;
-import GuildRoleStore from "GuildRoleStore" /* 4875 */;
-import GuildStore from "GuildStore" /* 4843 */;
+import ImpersonateTypes from "ImpersonateTypes" /* 4882 */;
+import GuildRoleStore from "GuildRoleStore" /* 4877 */;
+import GuildStore from "GuildStore" /* 4845 */;
 import size from "module_2" /* 2 */;
 
 const GuildSettingsSections = Constants.GuildSettingsSections;
@@ -182,7 +182,7 @@ let obj = {
     if (null != guildId) {
       if (null != closure_8[guildId]) {
         if (null != closure_8[guildId]) {
-          if (closure_8[guildId].type === overrides(4880).ImpersonateType.NEW_MEMBER) {
+          if (closure_8[guildId].type === overrides(4882).ImpersonateType.NEW_MEMBER) {
             optInChannels = tmp4.optInChannels;
             if (optInChannels == null) {
               let tmp = globalThis;
@@ -270,7 +270,7 @@ let obj = {
           }, {});
         }
         flag = true;
-        const tmp3 = null != flags && tmp2.type === guildId(4880).ImpersonateType.NEW_MEMBER;
+        const tmp3 = null != flags && tmp2.type === guildId(4882).ImpersonateType.NEW_MEMBER;
         if (tmp3) {
           closure_8[guildId].memberOptions.flags = flags;
           flag = true;

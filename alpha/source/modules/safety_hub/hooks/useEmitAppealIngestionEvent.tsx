@@ -1,13 +1,13 @@
-// Module ID: 12800
-// Function ID: 12801
+// Module ID: 12837
+// Function ID: 12838
 // Name: useEmitAppealIngestionEvent
-// Dependencies: [19, 7920, 7896, 1087, 558, 576, 504, 12792, 12794, 1267, 2]
+// Dependencies: [19, 7922, 7898, 1087, 558, 576, 504, 12829, 12831, 1267, 2]
 
-// Module 12800 (useEmitAppealIngestionEvent)
+// Module 12837 (useEmitAppealIngestionEvent)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7896 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7898 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7920 */;
+import SafetyHubStore from "SafetyHubStore" /* 7922 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

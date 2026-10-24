@@ -1,12 +1,12 @@
-// Module ID: 17119
-// Function ID: 17120
+// Module ID: 17151
+// Function ID: 17152
 // Name: DesignSystemsTextInputSetting
-// Dependencies: [8330, 1087, 11204, 17120, 2]
+// Dependencies: [8332, 1087, 11205, 17152, 2]
 
-// Module 17119 (DesignSystemsTextInputSetting)
+// Module 17151 (DesignSystemsTextInputSetting)
 import Constants from "Constants" /* 1087 */;
-import SettingsConstants from "SettingsConstants" /* 8330 */;
-import SettingBuilders from "SettingBuilders" /* 11204 */;
+import SettingsConstants from "SettingsConstants" /* 8332 */;
+import SettingBuilders from "SettingBuilders" /* 11205 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

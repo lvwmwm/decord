@@ -1,8 +1,8 @@
-// Module ID: 19085
-// Function ID: 19086
+// Module ID: 19113
+// Function ID: 19114
 // Dependencies: [2]
 
-// Module 19085
+// Module 19113
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MemberRolesAbstractUI-2x.png.js");

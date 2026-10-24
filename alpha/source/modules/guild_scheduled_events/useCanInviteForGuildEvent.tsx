@@ -1,19 +1,19 @@
-// Module ID: 8901
-// Function ID: 8902
+// Module ID: 8903
+// Function ID: 8904
 // Name: useCanInviteForGuildEvent
-// Dependencies: [4826, 4821, 4899, 4843, 4901, 6782, 4827, 1087, 4906, 8902, 558, 576, 504, 2]
+// Dependencies: [4828, 4823, 4901, 4845, 4903, 6784, 4829, 1087, 4908, 8904, 558, 576, 504, 2]
 
-// Module 8901 (useCanInviteForGuildEvent)
+// Module 8903 (useCanInviteForGuildEvent)
 import Constants from "Constants" /* 1087 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4827 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4906 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6782 */;
-import canViewInviteModal from "canViewInviteModal" /* 8902 */;
-import StageInstanceStore from "StageInstanceStore" /* 4826 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
-import GuildChannelStore from "GuildChannelStore" /* 4899 */;
-import GuildStore from "GuildStore" /* 4843 */;
-import PermissionStore from "PermissionStore" /* 4901 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4829 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4908 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6784 */;
+import canViewInviteModal from "canViewInviteModal" /* 8904 */;
+import StageInstanceStore from "StageInstanceStore" /* 4828 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import GuildChannelStore from "GuildChannelStore" /* 4901 */;
+import GuildStore from "GuildStore" /* 4845 */;
+import PermissionStore from "PermissionStore" /* 4903 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

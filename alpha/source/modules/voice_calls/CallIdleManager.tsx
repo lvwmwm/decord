@@ -1,18 +1,18 @@
-// Module ID: 18720
-// Function ID: 18721
+// Module ID: 18752
+// Function ID: 18753
 // Name: CallIdleManager
-// Dependencies: [4820, 4821, 5628, 5715, 7564, 1128, 6632, 7212, 4816, 2]
+// Dependencies: [4822, 4823, 5630, 5717, 7566, 1128, 6634, 7214, 4818, 2]
 
-// Module 18720 (CallIdleManager)
+// Module 18752 (CallIdleManager)
 import intl2 from "intl" /* 1128 */;
-import Timers from "Timers" /* 4816 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6632 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7564 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
-import VoiceStateStore from "VoiceStateStore" /* 5628 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5715 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7212 */;
+import Timers from "Timers" /* 4818 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6634 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7566 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import VoiceStateStore from "VoiceStateStore" /* 5630 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5717 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
 import size from "module_2" /* 2 */;
 
 function disconnect() {

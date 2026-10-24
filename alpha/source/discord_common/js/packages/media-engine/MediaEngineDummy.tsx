@@ -1,12 +1,12 @@
-// Module ID: 5810
-// Function ID: 5811
+// Module ID: 5812
+// Function ID: 5813
 // Name: MediaEngineDummy
-// Dependencies: [5716, 5740, 5746, 2]
+// Dependencies: [5718, 5742, 5748, 2]
 
-// Module 5810 (MediaEngineDummy)
-import MediaEngineEvent from "MediaEngineEvent" /* 5746 */;
-import Constants from "Constants" /* 5716 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 5740 */;
+// Module 5812 (MediaEngineDummy)
+import MediaEngineEvent from "MediaEngineEvent" /* 5748 */;
+import Constants from "Constants" /* 5718 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 5742 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -52,6 +52,9 @@ class MediaEngineDummy extends TypedEventEmitter {
   }
   setAudioMixerOptions() {
 
+  }
+  getSpatialAudioHrtfFiles() {
+    return { directory: null, files: [] };
   }
   setInputVolume() {
 

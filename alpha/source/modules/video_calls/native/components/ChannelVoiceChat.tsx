@@ -1,16 +1,16 @@
-// Module ID: 10877
-// Function ID: 10878
+// Module ID: 10878
+// Function ID: 10879
 // Name: ChannelVoiceChat
-// Dependencies: [19, 17, 10878, 21, 4969, 587, 558, 576, 9716, 1633, 10884, 12, 10882, 5203, 10624, 10885, 4976, 10887, 1128, 1202, 11270, 6906, 13694, 13701, 2]
+// Dependencies: [19, 17, 10879, 21, 4971, 587, 558, 576, 9717, 1633, 10885, 12, 10883, 5205, 10625, 10886, 4978, 10888, 1128, 1202, 11271, 6908, 13731, 13738, 2]
 
-// Module 10877 (ChannelVoiceChat)
+// Module 10878 (ChannelVoiceChat)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import MessageManagerDefault from "MessageManager" /* 9716 */;
-import ChannelCallStore from "ChannelCallStore" /* 10878 */;
+import MessageManagerDefault from "MessageManager" /* 9717 */;
+import ChannelCallStore from "ChannelCallStore" /* 10879 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -67,7 +67,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const effect = react.useEffect(tmp7, tmp8);
     ({ top, left, right } = guild_id(1633)());
     guild_id(1633)();
-    const tmpResult = id(10884);
+    const tmpResult = id(10885);
     const voiceChatNavigationContext = tmpResult.useVoiceChatNavigationContext();
     let openVoice;
     if (voiceChatNavigationContext != null) {
@@ -76,10 +76,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     if (openVoice == null) {
       openVoice = tmp10(12).noop;
     }
-    const tmpResult3 = id(10882);
+    const tmpResult3 = id(10883);
     const isConnectedToVoiceChannel = tmpResult3.useIsConnectedToVoiceChannel(channel2);
     const ref = obj2.useRef(null);
-    const tmp17 = guild_id(5203)();
+    const tmp17 = guild_id(5205)();
     let str = "no-hide-descendants";
     if (tmp6) {
       str = "yes";
@@ -98,7 +98,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           }
           const _Symbol = Symbol;
           if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp25 = closure_6(guild_id(10624), { absolute: true, tall: true });
+            const tmp25 = closure_6(guild_id(10625), { absolute: true, tall: true });
             cResult[11] = tmp25;
             tmp23 = tmp25;
           } else {
@@ -175,7 +175,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                             }
                             const _Symbol3 = Symbol;
                             if (cResult[38] === Symbol.for("react.memo_cache_sentinel")) {
-                              const obj4 = { source: guild_id(11270), size: id(1202).Icon.Sizes.MEDIUM };
+                              const obj4 = { source: guild_id(11271), size: id(1202).Icon.Sizes.MEDIUM };
                               const Icon = tmp(1202).Icon;
                               const tmp50 = closure_6(Icon, obj4);
                               cResult[38] = tmp50;
@@ -242,7 +242,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                       }
                                       const obj6 = { guildId: guild_id, channelId: id, children: items1 };
                                       items1 = [tmp26, tmp32, tmp37, tmp41, tmp61];
-                                      const tmp67 = closure_7(id(13701).ChannelContainer, obj6);
+                                      const tmp67 = closure_7(id(13738).ChannelContainer, obj6);
                                       cResult[52] = id;
                                       cResult[53] = guild_id;
                                       cResult[54] = tmp26;
@@ -271,14 +271,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                 tmp57 = tmp60;
                               }
                               const obj9 = { guildId: guild_id, channelId: id };
-                              const tmp56 = closure_6(id(13694).ChannelTitle, obj9);
+                              const tmp56 = closure_6(id(13731).ChannelTitle, obj9);
                               cResult[42] = id;
                               cResult[43] = guild_id;
                               cResult[44] = tmp56;
                               tmp54 = tmp56;
                             }
                             const obj10 = { accessibilityRole: "button", onPress: openVoice, accessibilityLabel: tmp46, style: tmp5.chatHeaderBackIconContainer, children: tmp48 };
-                            const tmp53 = closure_6(id(6906).PressableOpacity, obj10);
+                            const tmp53 = closure_6(id(6908).PressableOpacity, obj10);
                             cResult[39] = openVoice;
                             cResult[40] = tmp5.chatHeaderBackIconContainer;
                             cResult[41] = tmp53;
@@ -297,7 +297,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                         tmp44 = obj11;
                       }
                       const obj12 = { guildId: guild_id, channelId: id, chatInputRef: ref, screenIndex: "voice-panel" };
-                      const tmp43 = closure_6(guild_id(10887), obj12);
+                      const tmp43 = closure_6(guild_id(10888), obj12);
                       cResult[28] = id;
                       cResult[29] = guild_id;
                       cResult[30] = tmp43;
@@ -331,13 +331,13 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           if (!tmp4) {
             const tmp30 = !tmp6;
             const obj16 = { hidden: tmp30, animated: true, barStyle: str3 };
-            const tmp10Result = guild_id(10885);
+            const tmp10Result = guild_id(10886);
             const tmp28 = closure_6;
             if (isConnectedToVoiceChannel) {
               str3 = "light-content";
             } else {
               str3 = "dark-content";
-              id(4976);
+              id(4978);
             }
             tmp28Result = tmp28(tmp10Result, obj16);
           }
@@ -411,7 +411,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const tmp6 = guild_id(1633)();
   const top = tmp6.top;
   ({ left, right } = tmp6);
-  let obj2 = id(10884);
+  let obj2 = id(10885);
   const voiceChatNavigationContext = obj2.useVoiceChatNavigationContext();
   let openVoice;
   if (voiceChatNavigationContext != null) {
@@ -420,11 +420,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   if (openVoice == null) {
     openVoice = tmp4(12).noop;
   }
-  const tmp7Result = id(10882);
+  const tmp7Result = id(10883);
   const isConnectedToVoiceChannel = tmp7Result.useIsConnectedToVoiceChannel(channel2);
   let str = "no-hide-descendants";
   const ref = obj.useRef(null);
-  guild_id(5203)();
+  guild_id(5205)();
   if (tmp2) {
     str = "yes";
   }
@@ -436,19 +436,19 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const obj4 = { paddingLeft: left, paddingRight: right };
   }
   items1[1] = tmp15;
-  items2 = [closure_6(guild_id(10624), { absolute: true, tall: true }), ];
+  items2 = [closure_6(guild_id(10625), { absolute: true, tall: true }), ];
   let tmp16Result = null;
   const obj5 = { guildId: guild_id, channelId: id, children: items3 };
-  const ChannelContainer = tmp7(13701).ChannelContainer;
+  const ChannelContainer = tmp7(13738).ChannelContainer;
   if (!flag) {
     const tmp19 = !tmp2;
     const obj6 = { hidden: tmp19, animated: true, barStyle: str2 };
-    const tmp4Result = guild_id(10885);
+    const tmp4Result = guild_id(10886);
     if (isConnectedToVoiceChannel) {
       str2 = "light-content";
     } else {
       str2 = "dark-content";
-      id(4976);
+      id(4978);
     }
     tmp16Result = tmp16(tmp4Result, obj6);
   }
@@ -468,7 +468,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }
   items5[1] = { display: str4 };
   items3[2] = closure_6(View, { style: items5 });
-  items3[3] = closure_6(guild_id(10887), { guildId: guild_id, channelId: id, chatInputRef: ref, screenIndex: "voice-panel" });
+  items3[3] = closure_6(guild_id(10888), { guildId: guild_id, channelId: id, chatInputRef: ref, screenIndex: "voice-panel" });
   const items6 = [tmp.chatHeader, ];
   const obj8 = { top, display: str5 };
   str5 = undefined;
@@ -478,12 +478,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const obj9 = { style: items6, children: items7 };
   items6[1] = obj8;
   const obj10 = { accessibilityRole: "button", onPress: openVoice, accessibilityLabel: intl.string(id(1128).t["13/7kX"]), style: tmp.chatHeaderBackIconContainer, children: closure_6(Icon, obj11) };
-  const PressableOpacity = tmp7(6906).PressableOpacity;
+  const PressableOpacity = tmp7(6908).PressableOpacity;
   intl = tmp7(1128).intl;
-  obj11 = { source: guild_id(11270), size: id(1202).Icon.Sizes.MEDIUM };
+  obj11 = { source: guild_id(11271), size: id(1202).Icon.Sizes.MEDIUM };
   Icon = tmp7(1202).Icon;
   items7 = [closure_6(PressableOpacity, obj10), ];
-  const obj12 = { style: tmp.chatHeaderTitleContainer, children: closure_6(id(13694).ChannelTitle, { guildId: guild_id, channelId: id }) };
+  const obj12 = { style: tmp.chatHeaderTitleContainer, children: closure_6(id(13731).ChannelTitle, { guildId: guild_id, channelId: id }) };
   items7[1] = closure_6(View, obj12);
   items3[4] = closure_7(View, obj9);
   items2[1] = closure_7(ChannelContainer, obj5);

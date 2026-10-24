@@ -1,21 +1,21 @@
-// Module ID: 16732
-// Function ID: 16733
+// Module ID: 16764
+// Function ID: 16765
 // Name: ContrastModeSetting
-// Dependencies: [19, 4970, 8330, 21, 558, 576, 15662, 16634, 11152, 11204, 1128, 1202, 2]
+// Dependencies: [19, 4972, 8332, 21, 558, 576, 15682, 16666, 11153, 11205, 1128, 1202, 2]
 
-// Module 16732 (ContrastModeSetting)
+// Module 16764 (ContrastModeSetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import SettingsConstants from "SettingsConstants" /* 8330 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 11152 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15662 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 16634 */;
+import SettingsConstants from "SettingsConstants" /* 8332 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 11153 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15682 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 16666 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4970 */;
+import AccessibilityStore from "AccessibilityStore" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11204 */;
+import SettingBuilders from "SettingBuilders" /* 11205 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -25,7 +25,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useContras
   const obj = react2;
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { value: AccessibilityStore.contrast, onSlidingComplete: AccessibilityActionCreators.setContrast, minimumValue: 0, maximumValue: 2, step: 0.1, startIcon: jsx(CircleMinusIcon.CircleMinusIcon, {}), endIcon: jsx(CirclePlusIcon.CirclePlusIcon, {}) };
+    const obj2 = { value: AccessibilityStore.contrast, onChangeEnd: AccessibilityActionCreators.setContrast, minValue: 0, maxValue: 2, step: 0.1, startIcon: jsx(CircleMinusIcon.CircleMinusIcon, {}), endIcon: jsx(CirclePlusIcon.CirclePlusIcon, {}) };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -35,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useContras
 }) : (function useContrastSettingProps() {
   let contrast;
   return react.useMemo(() => {
-    const obj = { value: contrast.contrast, onSlidingComplete: AccessibilityActionCreators.setContrast, minimumValue: 0, maximumValue: 2, step: 0.1, startIcon: jsx(CircleMinusIcon.CircleMinusIcon, {}), endIcon: jsx(CirclePlusIcon.CirclePlusIcon, {}) };
+    const obj = { value: contrast.contrast, onChangeEnd: AccessibilityActionCreators.setContrast, minValue: 0, maxValue: 2, step: 0.1, startIcon: jsx(CircleMinusIcon.CircleMinusIcon, {}), endIcon: jsx(CirclePlusIcon.CirclePlusIcon, {}) };
     return obj;
   }, []);
 });

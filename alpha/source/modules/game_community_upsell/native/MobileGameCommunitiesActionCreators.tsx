@@ -1,18 +1,18 @@
-// Module ID: 17675
-// Function ID: 17676
+// Module ID: 17707
+// Function ID: 17708
 // Name: MobileGameCommunitiesActionCreators
-// Dependencies: [5, 14998, 16946, 1087, 14999, 16947, 1297, 1493, 584, 504, 1104, 2]
+// Dependencies: [5, 15021, 16978, 1087, 15022, 16979, 1297, 1493, 584, 504, 1104, 2]
 // Exports: dismissGuild
 
-// Module 17675 (MobileGameCommunitiesActionCreators)
+// Module 17707 (MobileGameCommunitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _modDef1493 from "module_1493" /* 1493 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 14998 */;
-import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 16946 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 15021 */;
+import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 16978 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 

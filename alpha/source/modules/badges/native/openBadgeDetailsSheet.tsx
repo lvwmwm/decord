@@ -1,12 +1,12 @@
-// Module ID: 11124
-// Function ID: 11125
+// Module ID: 11125
+// Function ID: 11126
 // Name: openBadgeDetailsSheet
-// Dependencies: [5208, 11125, 2002, 2]
+// Dependencies: [5210, 11126, 2002, 2]
 // Exports: openBadgeDetailsSheet
 
-// Module 11124 (openBadgeDetailsSheet)
+// Module 11125 (openBadgeDetailsSheet)
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
 import size from "module_2" /* 2 */;
 
 let c3 = "badge-details";
@@ -15,5 +15,5 @@ const result = size.fileFinishedImporting("modules/badges/native/openBadgeDetail
 export const BADGE_DETAILS_SHEET_KEY = "badge-details";
 export const openBadgeDetailsSheet = function openBadgeDetailsSheet(arg0) {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(11125, dependencyMap.paths), c3, arg0);
+  obj.openLazy(asyncRequire(11126, dependencyMap.paths), c3, arg0);
 };

@@ -1,11 +1,20 @@
 // Module ID: 12660
 // Function ID: 12661
 // Dependencies: []
-// Exports: escapeStringForRegex
+// Exports: severityLevelFromString
 
 // Module 12660
 
-export const escapeStringForRegex = function escapeStringForRegex(str) {
-  str = str.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&");
-  return str.replace(/-/g, "\\x2d");
+export const severityLevelFromString = function severityLevelFromString(arg0) {
+  let str = "warning";
+  if ("warn" !== arg0) {
+    const items = ["fatal", "error", "warning", "log", "info", "debug"];
+    let str2 = "log";
+    if (items.includes(arg0)) {
+      str2 = arg0;
+    }
+    str = str2;
+  }
+  return str;
 };
+export const validSeverityLevels = ["fatal", "error", "warning", "log", "info", "debug"];

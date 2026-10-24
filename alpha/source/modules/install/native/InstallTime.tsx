@@ -1,13 +1,13 @@
-// Module ID: 14986
-// Function ID: 14987
+// Module ID: 15009
+// Function ID: 15010
 // Name: InstallTime
-// Dependencies: [502, 510, 14987, 5720, 2]
+// Dependencies: [502, 510, 15010, 5722, 2]
 // Exports: getFirstInstallTimeElapsed
 
-// Module 14986 (InstallTime)
+// Module 15009 (InstallTime)
 import Storage4 from "Storage" /* 510 */;
-import TimeUtils from "TimeUtils" /* 5720 */;
-import react_nativeDefault from "react-native" /* 14987 */;
+import TimeUtils from "TimeUtils" /* 5722 */;
+import react_nativeDefault from "react-native" /* 15010 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 

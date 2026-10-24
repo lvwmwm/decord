@@ -1,9 +1,9 @@
-// Module ID: 6983
-// Function ID: 6984
+// Module ID: 6985
+// Function ID: 6986
 // Name: TableRadioGroup
-// Dependencies: [32, 19, 1087, 21, 558, 576, 6984, 6982, 6985, 2]
+// Dependencies: [32, 19, 1087, 21, 558, 576, 6986, 6984, 6987, 2]
 
-// Module 6983 (TableRadioGroup)
+// Module 6985 (TableRadioGroup)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -65,7 +65,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableRadioGr
         tmp9 = cResult[4];
       }
       const imperativeHandle = obj2.useImperativeHandle(groupRef, tmp8, tmp9);
-      context = obj2.useContext(tmp(6984).RedesignCompatContext);
+      context = obj2.useContext(tmp(6986).RedesignCompatContext);
       if (cResult[5] === tmp4) {
         let tmp12;
         if (cResult[6] === onChange) {
@@ -110,7 +110,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableRadioGr
               }
             }
             const obj4 = { accessibilityRole: "radiogroup", accessibilityLabel, title, description, helperText, hasIcons, children: tmp14 };
-            const tmp19 = context(tmp(6985).TableRowGroup, obj4);
+            const tmp19 = context(tmp(6987).TableRowGroup, obj4);
             cResult[16] = accessibilityLabel;
             cResult[17] = description;
             cResult[18] = hasIcons;
@@ -254,7 +254,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableRadioGr
       return selectedValue;
     }
   }), items);
-  jsx = obj.useContext(onChange(6984).RedesignCompatContext);
+  jsx = obj.useContext(onChange(6986).RedesignCompatContext);
   const items1 = [tmp, onChange];
   onSelect = obj.useCallback((arg0) => {
     const tmp = closure_1;
@@ -283,7 +283,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableRadioGr
     })
   });
   Children = obj.Children;
-  const TableRowGroup = onChange(6985).TableRowGroup;
+  const TableRowGroup = onChange(6987).TableRowGroup;
   return <Provider value={react.useMemo(() => ({ selectedValue, onSelect }), items2)}>{null}</Provider>;
 });
 const result = size.fileFinishedImporting("design/components/TableRow/native/TableRadioGroup.native.tsx");

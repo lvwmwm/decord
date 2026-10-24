@@ -1,29 +1,53 @@
-// Module ID: 14982
-// Function ID: 14983
+// Module ID: 15005
+// Function ID: 15006
 // Name: RequestReviewStore
-// Dependencies: [5188, 1261, 4872, 1087, 14983, 5720, 14984, 5149, 5148, 7025, 14986, 1107, 510, 1267, 504, 584, 2]
+// Dependencies: [5190, 1261, 4874, 1087, 1630, 15006, 5722, 15007, 5151, 5150, 7027, 15009, 1107, 510, 1267, 504, 584, 2]
 
-// Module 14982 (RequestReviewStore)
+// Module 15005 (RequestReviewStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5148 */;
-import RootNavigationRef from "RootNavigationRef" /* 5149 */;
-import TimeUtils from "TimeUtils" /* 5720 */;
-import useKeyboardIsOpen from "useKeyboardIsOpen" /* 7025 */;
-import RequestReviewNoTTIExperiment2 from "RequestReviewNoTTIExperiment" /* 14983 */;
-import requestReviewModalDefault from "requestReviewModal" /* 14984 */;
-import InstallTime from "InstallTime" /* 14986 */;
-import ExperimentStore from "ExperimentStore" /* 5188 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5150 */;
+import RootNavigationRef from "RootNavigationRef" /* 5151 */;
+import TimeUtils from "TimeUtils" /* 5722 */;
+import useKeyboardIsOpen from "useKeyboardIsOpen" /* 7027 */;
+import requestReviewModalDefault from "requestReviewModal" /* 15007 */;
+import InstallTime from "InstallTime" /* 15009 */;
+import ExperimentStore from "ExperimentStore" /* 5190 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1261 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
 import size from "module_2" /* 2 */;
 
-function showReviewRequestModal() {
+function delayShowReviewRequestModal() {
   let timeout;
+  if (-1 !== timeout) {
+    const _clearTimeout = clearTimeout;
+    clearTimeout(timeout);
+    timeout = -1;
+  }
+  obj = MetaQuestUtils;
+  if (!obj.isMetaQuest()) {
+    const RequestReviewNoTTIExperiment = tmp4(15006).RequestReviewNoTTIExperiment;
+    let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
+    let tmp6 = closure_10;
+    if (tmp6) {
+      if (!skipTTICheck) {
+        skipTTICheck = undefined !== tti && tmp7 < 2300;
+        const tmp8 = undefined !== tti && tmp7 < 2300;
+      }
+      tmp6 = skipTTICheck;
+    }
+    if (tmp6) {
+      const _setTimeout = setTimeout;
+      timeout = setTimeout(showReviewRequestModal, tmp4(5722).MS_PER_MINUTE);
+    }
+  }
+}
+function showReviewRequestModal() {
   obj = RootNavigationRef;
   const rootNavigationRef = obj.getRootNavigationRef();
   let tmp3 = null != rootNavigationRef && rootNavigationRef.isReady();
@@ -49,25 +73,7 @@ function showReviewRequestModal() {
   }
   const obj6 = AnalyticsUtilsDefault;
   obj6.track(AnalyticEvents.REVIEW_REQUEST_DEFERRED, { is_keyboard_open: keyboardIsOpen, is_in_voice: tmp5, is_viewing_chat: tmp3 });
-  if (-1 !== timeout) {
-    const _clearTimeout = clearTimeout;
-    clearTimeout(timeout);
-    timeout = -1;
-  }
-  const RequestReviewNoTTIExperiment = tmp(14983).RequestReviewNoTTIExperiment;
-  let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
-  let tmp18 = closure_10;
-  if (tmp18) {
-    if (!skipTTICheck) {
-      skipTTICheck = undefined !== tti && tmp19 < 2300;
-      const tmp20 = undefined !== tti && tmp19 < 2300;
-    }
-    tmp18 = skipTTICheck;
-  }
-  if (tmp18) {
-    const _setTimeout = setTimeout;
-    timeout = setTimeout(showReviewRequestModal, tmp(5720).MS_PER_MINUTE);
-  }
+  delayShowReviewRequestModal();
 }
 function handleConnectionClosedOrInterrupted() {
   if (-1 !== c11) {
@@ -96,121 +102,45 @@ const prototype = RequestReviewStore.prototype;
 RequestReviewStore.displayName = "RequestReviewStore";
 obj = {
   CONNECTION_OPEN: function handleConnectionOpen(guilds) {
-    let timeout;
     guilds = guilds.guilds;
     const user = guilds.user;
     obj = InstallTime;
     const obj2 = { from: "authed", unit: TimeUtils.TimeUnits.DAYS };
-    let tmp3 = obj.getFirstInstallTimeElapsed(obj2) >= 10;
+    let tmp2 = obj.getFirstInstallTimeElapsed(obj2) >= 10;
     const someResult = guilds.some((member_count) => member_count.member_count >= 5);
     if (obj.revision < 1) {
-      const obj4 = { is_hfu: true, is_install_old_enough: tmp3, is_in_large_enough_guild: someResult, is_account_verified: true === user.verified };
+      const obj4 = { is_hfu: true, is_install_old_enough: tmp2, is_in_large_enough_guild: someResult, is_account_verified: true === user.verified };
       const obj3 = AnalyticsUtilsDefault;
       obj3.track(AnalyticEvents.REVIEW_REQUEST_ELIGIBILITY_CHECKED, obj4);
     }
-    if (tmp3) {
-      tmp3 = tmp5;
+    if (tmp2) {
+      tmp2 = tmp4;
     }
-    if (tmp3) {
-      tmp3 = someResult;
+    if (tmp2) {
+      tmp2 = someResult;
     }
-    if (tmp3) {
-      tmp3 = tmp6;
+    if (tmp2) {
+      tmp2 = tmp5;
     }
-    closure_10 = tmp3;
-    if (-1 !== timeout) {
-      const _clearTimeout = clearTimeout;
-      clearTimeout(timeout);
-      timeout = -1;
-    }
-    const RequestReviewNoTTIExperiment = tmp(14983).RequestReviewNoTTIExperiment;
-    let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
-    let tmp13 = closure_10;
-    if (tmp13) {
-      if (!skipTTICheck) {
-        skipTTICheck = undefined !== tti && tmp14 < 2300;
-        const tmp15 = undefined !== tti && tmp14 < 2300;
-      }
-      tmp13 = skipTTICheck;
-    }
-    if (tmp13) {
-      const _setTimeout = setTimeout;
-      timeout = setTimeout(showReviewRequestModal, tmp(5720).MS_PER_MINUTE);
-    }
+    closure_10 = tmp2;
+    delayShowReviewRequestModal();
   },
   CONNECTION_RESUMED: function handleConnectionResumed() {
-    let timeout;
-    if (-1 !== timeout) {
-      const _clearTimeout = clearTimeout;
-      clearTimeout(timeout);
-      timeout = -1;
-    }
-    const RequestReviewNoTTIExperiment = RequestReviewNoTTIExperiment2.RequestReviewNoTTIExperiment;
-    let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
-    let tmp6 = closure_10;
-    if (tmp6) {
-      if (!skipTTICheck) {
-        skipTTICheck = undefined !== tti && tmp7 < 2300;
-        const tmp8 = undefined !== tti && tmp7 < 2300;
-      }
-      tmp6 = skipTTICheck;
-    }
-    if (tmp6) {
-      const _setTimeout = setTimeout;
-      timeout = setTimeout(showReviewRequestModal, TimeUtils.MS_PER_MINUTE);
-    }
+    delayShowReviewRequestModal();
   },
   CONNECTION_CLOSED: handleConnectionClosedOrInterrupted,
   CONNECTION_INTERRUPTED: handleConnectionClosedOrInterrupted,
   TTI_RECORDED: function handleTTIRecorded(tti) {
-    let timeout;
     tti = tti.tti;
-    if (-1 !== timeout) {
-      const _clearTimeout = clearTimeout;
-      clearTimeout(timeout);
-      timeout = -1;
-    }
-    const RequestReviewNoTTIExperiment = RequestReviewNoTTIExperiment2.RequestReviewNoTTIExperiment;
-    let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
-    let tmp6 = closure_10;
-    if (tmp6) {
-      if (!skipTTICheck) {
-        skipTTICheck = undefined !== tti && tmp7 < 2300;
-        const tmp8 = undefined !== tti && tmp7 < 2300;
-      }
-      tmp6 = skipTTICheck;
-    }
-    if (tmp6) {
-      const _setTimeout = setTimeout;
-      timeout = setTimeout(showReviewRequestModal, TimeUtils.MS_PER_MINUTE);
-    }
+    delayShowReviewRequestModal();
   },
   APP_STATE_UPDATE: function handleAppStateUpdate(state) {
-    let timeout;
     if (state.state === ConstantsIOS.AppStates.ACTIVE) {
-      if (-1 !== timeout) {
-        const _clearTimeout = clearTimeout;
-        clearTimeout(timeout);
-        timeout = -1;
-      }
-      const RequestReviewNoTTIExperiment = tmp(14983).RequestReviewNoTTIExperiment;
-      let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
-      let tmp8 = closure_10;
-      if (tmp8) {
-        if (!skipTTICheck) {
-          skipTTICheck = undefined !== tti && tmp9 < 2300;
-          const tmp10 = undefined !== tti && tmp9 < 2300;
-        }
-        tmp8 = skipTTICheck;
-      }
-      if (tmp8) {
-        const _setTimeout = setTimeout;
-        timeout = setTimeout(showReviewRequestModal, tmp(5720).MS_PER_MINUTE);
-      }
-    } else if (-1 !== timeout) {
-      const _clearTimeout2 = clearTimeout;
-      clearTimeout(timeout);
-      timeout = -1;
+      delayShowReviewRequestModal();
+    } else if (-1 !== c11) {
+      const _clearTimeout = clearTimeout;
+      clearTimeout(c11);
+      c11 = -1;
     }
   }
 };

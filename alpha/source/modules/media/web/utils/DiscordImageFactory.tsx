@@ -1,19 +1,19 @@
-// Module ID: 8181
-// Function ID: 8182
+// Module ID: 8183
+// Function ID: 8184
 // Name: DiscordImageFactory
-// Dependencies: [8182, 8209, 2]
+// Dependencies: [8184, 8211, 2]
 
-// Module 8181 (DiscordImageFactory)
-import _mod8182 from "module_8182" /* 8182 */;
+// Module 8183 (DiscordImageFactory)
+import _mod8184 from "module_8184" /* 8184 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const DiscordImagePng2 = tmp2(8209);
+const DiscordImagePng2 = tmp2(8211);
 const result = size.fileFinishedImporting("modules/media/web/utils/DiscordImageFactory.tsx");
 class DiscordImageFactory {
   static create(byteLength) {
     const uint8Array = new Uint8Array(byteLength, 0, Math.min(64, byteLength.byteLength));
-    const obj = _mod8182;
+    const obj = _mod8184;
     const detectFileResult = obj.detectFile(uint8Array);
     let mimeType;
     if (detectFileResult != null) {

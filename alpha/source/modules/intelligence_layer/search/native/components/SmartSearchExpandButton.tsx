@@ -1,16 +1,16 @@
-// Module ID: 18106
-// Function ID: 18107
+// Module ID: 18138
+// Function ID: 18139
 // Name: SmartSearchExpandButton
-// Dependencies: [19, 17, 21, 587, 4969, 558, 576, 18105, 11075, 14857, 5210, 1128, 4085, 2]
+// Dependencies: [19, 17, 21, 587, 4971, 558, 576, 18137, 11076, 14880, 5212, 1128, 4085, 2]
 
-// Module 18106 (SmartSearchExpandButton)
+// Module 18138 (SmartSearchExpandButton)
 import nativeDefault from "native" /* 587 */;
 import _modDef4085 from "module_4085" /* 4085 */;
-import HapticUtils from "HapticUtils" /* 5210 */;
+import HapticUtils from "HapticUtils" /* 5212 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,12 +45,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let obj = onPress(576);
   const cResult = obj.c(17);
   ({ isCollapsed, onPress } = arg0);
-  const obj2 = onPress(18105);
+  const obj2 = onPress(18137);
   const tmp4 = closure_10(obj2.useSearchHostSurfaceColor());
   if (isCollapsed) {
-    ChevronSmallUpIcon = tmp(11075).ChevronSmallDownIcon;
+    ChevronSmallUpIcon = tmp(11076).ChevronSmallDownIcon;
   } else {
-    ChevronSmallUpIcon = tmp(14857).ChevronSmallUpIcon;
+    ChevronSmallUpIcon = tmp(14880).ChevronSmallUpIcon;
   }
   if (cResult[0] !== onPress) {
     const fn = function l() {
@@ -142,12 +142,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let tmp7;
   let tmp8;
   ({ isCollapsed, onPress } = arg0);
-  let obj = onPress(18105);
+  let obj = onPress(18137);
   const tmp3 = closure_10(obj.useSearchHostSurfaceColor());
   if (isCollapsed) {
-    ChevronSmallUpIcon = tmp(11075).ChevronSmallDownIcon;
+    ChevronSmallUpIcon = tmp(11076).ChevronSmallDownIcon;
   } else {
-    ChevronSmallUpIcon = tmp(14857).ChevronSmallUpIcon;
+    ChevronSmallUpIcon = tmp(14880).ChevronSmallUpIcon;
   }
   const items = [onPress];
   const obj2 = { style: tmp3.block, hitSlop: rect, children: tmp7(tmp8, obj3) };

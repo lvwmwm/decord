@@ -1,16 +1,16 @@
-// Module ID: 19133
-// Function ID: 19134
+// Module ID: 19161
+// Function ID: 19162
 // Name: EnableCommunitySharedNavigation
-// Dependencies: [19, 17, 9005, 1087, 21, 4969, 558, 576, 504, 1505, 5265, 5969, 19131, 7132, 1128, 5242, 7219, 2]
+// Dependencies: [19, 17, 9006, 1087, 21, 4971, 558, 576, 504, 1505, 5267, 5971, 19159, 7134, 1128, 5244, 7221, 2]
 
-// Module 19133 (EnableCommunitySharedNavigation)
+// Module 19161 (EnableCommunitySharedNavigation)
 import Constants from "Constants" /* 1087 */;
-import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 19131 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 19159 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9005 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9006 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

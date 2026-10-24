@@ -1,14 +1,14 @@
-// Module ID: 12989
-// Function ID: 12990
+// Module ID: 13026
+// Function ID: 13027
 // Name: useTraitPickerOptions
-// Dependencies: [19, 1392, 12912, 558, 576, 504, 1991, 6360, 6363, 6362, 6038, 6014, 1128, 2]
+// Dependencies: [19, 1392, 12949, 558, 576, 504, 1991, 6362, 6365, 6364, 6040, 6016, 1128, 2]
 
-// Module 12989 (useTraitPickerOptions)
+// Module 13026 (useTraitPickerOptions)
 import intl2 from "intl" /* 1128 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6360 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6362 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import CheckpointStore from "CheckpointStore" /* 12912 */;
+import CheckpointStore from "CheckpointStore" /* 12949 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

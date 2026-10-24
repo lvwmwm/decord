@@ -1,17 +1,17 @@
-// Module ID: 12166
-// Function ID: 12167
+// Module ID: 12192
+// Function ID: 12193
 // Name: AppLauncherRoleOption
-// Dependencies: [32, 19, 4875, 21, 573, 12159, 5208, 12162, 2002, 12162, 2]
+// Dependencies: [32, 19, 4877, 21, 573, 12185, 5210, 12188, 2002, 12188, 2]
 // Exports: default
 
-// Module 12166 (AppLauncherRoleOption)
+// Module 12192 (AppLauncherRoleOption)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
-import AppLauncherRoleListActionSheet from "AppLauncherRoleListActionSheet" /* 12162 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import AppLauncherRoleListActionSheet from "AppLauncherRoleListActionSheet" /* 12188 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 4875 */;
+import GuildRoleStore from "GuildRoleStore" /* 4877 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -89,7 +89,7 @@ export default function AppLauncherRoleOption(option) {
         },
         onActionSheetDismiss: _slicedToArray
       };
-      const tmp4 = asyncRequire(12162, dependencyMap.paths);
+      const tmp4 = asyncRequire(12188, dependencyMap.paths);
       openLazy(tmp4, AppLauncherRoleListActionSheet.APP_LAUNCHER_ROLE_LIST_ACTION_SHEET_KEY, obj);
     },
     leading: guild_id(tmp3(tmp4[9]).RoleIcon, { role: stateFromStores }),

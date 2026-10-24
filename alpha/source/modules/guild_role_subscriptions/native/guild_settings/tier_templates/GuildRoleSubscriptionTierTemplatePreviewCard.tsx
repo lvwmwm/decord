@@ -1,26 +1,26 @@
-// Module ID: 19274
-// Function ID: 19275
+// Module ID: 19322
+// Function ID: 19323
 // Name: GuildRoleSubscriptionTierTemplatePreviewCard
-// Dependencies: [19, 17, 1087, 21, 4969, 587, 558, 576, 7072, 5232, 5208, 19275, 2002, 19279, 1202, 19278, 1128, 7247, 1505, 16547, 19280, 1267, 5709, 16553, 19276, 9956, 2]
+// Dependencies: [19, 17, 1087, 21, 4971, 587, 558, 576, 7074, 5234, 5210, 19323, 2002, 19327, 1202, 19326, 1128, 14880, 1505, 16579, 19328, 1267, 5711, 16585, 19324, 9957, 2]
 
-// Module 19274 (GuildRoleSubscriptionTierTemplatePreviewCard)
+// Module 19322 (GuildRoleSubscriptionTierTemplatePreviewCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7072 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7247 */;
-import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 19278 */;
-import GuildRoleSubscriptionTierTemplateActionCreators from "GuildRoleSubscriptionTierTemplateActionCreators" /* 19280 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7074 */;
+import ChevronSmallUpIcon from "ChevronSmallUpIcon" /* 14880 */;
+import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 19326 */;
+import GuildRoleSubscriptionTierTemplateActionCreators from "GuildRoleSubscriptionTierTemplateActionCreators" /* 19328 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let obj6;
 let rect;
 let size;
 let tmp;
-const AppAnalyticsUtils = tmp(5709);
+const AppAnalyticsUtils = tmp(5711);
 ({ TouchableOpacity: hasOwnProperty, View: metroRequire } = react_native);
 ({ AnalyticEvents: metroImportDefault, GuildSettingsSections: metroImportAll } = Constants);
 ({ jsx: c9, jsxs: c10 } = Fragment);
@@ -166,7 +166,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Benefi
     let tmp5 = title;
     if (typeof title === "string") {
       const obj2 = { variant: "text-md/semibold", color: "text-default", children: title };
-      tmp5 = React4(tmp(5232).Text, obj2);
+      tmp5 = React4(tmp(5234).Text, obj2);
     }
     cResult[0] = title;
     cResult[1] = tmp5;
@@ -316,13 +316,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewEntireTemplateFooter() {
-  let Icon;
   let intl;
   let items;
   let items1;
-  let items2;
-  let obj6;
-  let obj7;
   let tmp10;
   let tmp15;
   let tmp5;
@@ -332,7 +328,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewEn
   const tmp4 = closure_11();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "text-sm/semibold", color: "interactive-text-hover", style: { marginTop: -1 }, children: intl.string(intl3.t.kejaOD) };
-    const Text = tmp(5232).Text;
+    const Text = tmp(5234).Text;
     intl = tmp(1128).intl;
     const tmp8 = React4(Text, obj2);
     const tmp9 = React4(native.Spacer, { size: 3 });
@@ -356,39 +352,31 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewEn
     tmp10 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj5 = { children: React4(Icon, obj6) };
-    obj6 = { size: native.Icon.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, style: obj7 };
-    Icon = tmp(1202).Icon;
-    obj7 = { transform: items1 };
-    items1 = [{ rotate: "180deg" }];
-    const tmp19 = React4(metroRequire, obj5);
-    cResult[4] = tmp19;
-    tmp15 = tmp19;
+    const obj5 = { children: React4(ChevronSmallUpIcon.ChevronSmallUpIcon, { size: "xs" }) };
+    const tmp18 = React4(metroRequire, obj5);
+    cResult[4] = tmp18;
+    tmp15 = tmp18;
   } else {
     tmp15 = cResult[4];
   }
   if (cResult[5] === tmp4.viewEntireTemplateFooter) {
-    let tmp20;
+    let tmp19;
     if (cResult[6] === tmp10) {
-      tmp20 = cResult[7];
+      tmp19 = cResult[7];
     }
-    return tmp20;
+    return tmp19;
   }
-  const obj8 = { style: tmp4.viewEntireTemplateFooter, children: items2 };
-  items2 = [tmp10, tmp15];
-  const tmp21 = authStore(metroRequire, obj8);
+  const obj6 = { style: tmp4.viewEntireTemplateFooter, children: items1 };
+  items1 = [tmp10, tmp15];
+  const tmp20 = authStore(metroRequire, obj6);
   cResult[5] = tmp4.viewEntireTemplateFooter;
   cResult[6] = tmp10;
-  cResult[7] = tmp21;
-  tmp20 = tmp21;
+  cResult[7] = tmp20;
+  tmp19 = tmp20;
 }) : (function ViewEntireTemplateFooter() {
-  let Icon;
   let intl;
   let items;
   let items1;
-  let items2;
-  let obj6;
-  let obj7;
   const tmp = closure_11();
   const obj = { style: tmp.viewEntireTemplateFooter, children: items1 };
   const obj2 = { children: items };
@@ -399,11 +387,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewEn
   const obj4 = { style: tmp.viewEntireTemplateFooterUnderline };
   items[2] = React4(metroRequire, obj4);
   items1 = [authStore(metroRequire, obj2), ];
-  const obj5 = { children: React4(Icon, obj6) };
-  obj6 = { size: native.Icon.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, style: obj7 };
-  Icon = native.Icon;
-  obj7 = { transform: items2 };
-  items2 = [{ rotate: "180deg" }];
+  const obj5 = { children: React4(ChevronSmallUpIcon.ChevronSmallUpIcon, { size: "xs" }) };
   items1[1] = React4(metroRequire, obj5);
   return authStore(metroRequire, obj);
 });
@@ -594,7 +578,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                               function handleViewEntireTemplate() {
                                 const obj = ActionSheetActionCreatorsDefault;
                                 const obj2 = { template, guildId, handleSelectTemplateInPreview };
-                                obj.openLazy(asyncRequire(19275, dependencyMap.paths), "TierTemplateCard", obj2);
+                                obj.openLazy(asyncRequire(19323, dependencyMap.paths), "TierTemplateCard", obj2);
                               }
                               if (cResult[46] === handleViewEntireTemplate) {
                                 if (cResult[47] === tmp4.contentContainer) {
@@ -614,12 +598,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                                   const obj9 = { style: container, children: items };
                                   items = [tmp16, tmp68];
                                   const tmp75 = closure_10(suggestedUnusedPrices, obj9);
-                                  class N {
+                                  class H {
                                     constructor(selectedTemplate, arg1) {
                                       if (closure_7) {
                                         const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
                                         const obj = ActionSheetActionCreatorsDefault;
-                                        obj.openLazy(asyncRequire(19279, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+                                        obj.openLazy(asyncRequire(19327, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
                                       } else {
                                         handleCreateFromTemplate(selectedTemplate, arg1);
                                       }
@@ -633,12 +617,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                               }
                               const obj10 = { style: contentContainer, onPress: handleViewEntireTemplate, children: items1 };
                               items1 = [, ];
-                              class N {
+                              class H {
                                 constructor(selectedTemplate, arg1) {
                                   if (closure_7) {
                                     const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
                                     const obj = ActionSheetActionCreatorsDefault;
-                                    obj.openLazy(asyncRequire(19279, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+                                    obj.openLazy(asyncRequire(19327, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
                                   } else {
                                     handleCreateFromTemplate(selectedTemplate, arg1);
                                   }
@@ -656,12 +640,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                             items2 = [tmp36, tmp57];
                             const tmp63 = closure_10(tmp(navigation[25]).GappedList, obj11);
                             cResult[42] = tmp36;
-                            class N {
+                            class H {
                               constructor(selectedTemplate, arg1) {
                                 if (closure_7) {
                                   const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
                                   const obj = ActionSheetActionCreatorsDefault;
-                                  obj.openLazy(asyncRequire(19279, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+                                  obj.openLazy(asyncRequire(19327, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
                                 } else {
                                   handleCreateFromTemplate(selectedTemplate, arg1);
                                 }
@@ -673,12 +657,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                           }
                           const obj12 = { children: items3 };
                           items3 = [tmp43, tmp47, tmp50, ];
-                          class N {
+                          class H {
                             constructor(selectedTemplate, arg1) {
                               if (closure_7) {
                                 const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
                                 const obj = ActionSheetActionCreatorsDefault;
-                                obj.openLazy(asyncRequire(19279, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+                                obj.openLazy(asyncRequire(19327, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
                               } else {
                                 handleCreateFromTemplate(selectedTemplate, arg1);
                               }
@@ -693,12 +677,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                         const obj14 = { title: null, description: null };
                         ({ name: obj13.title, description: obj13.description } = first2);
                         const tmp53 = closure_9(closure_14, obj14);
-                        class N {
+                        class H {
                           constructor(selectedTemplate, arg1) {
                             if (closure_7) {
                               const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
                               const obj = ActionSheetActionCreatorsDefault;
-                              obj.openLazy(asyncRequire(19279, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+                              obj.openLazy(asyncRequire(19327, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
                             } else {
                               handleCreateFromTemplate(selectedTemplate, arg1);
                             }
@@ -711,12 +695,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                       const obj15 = { title: tmp41, count: additional_perks.length };
                       const tmp46 = closure_9(closure_12, obj15);
                       cResult[31] = additional_perks.length;
-                      class N {
+                      class H {
                         constructor(selectedTemplate, arg1) {
                           if (closure_7) {
                             const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
                             const obj = ActionSheetActionCreatorsDefault;
-                            obj.openLazy(asyncRequire(19279, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+                            obj.openLazy(asyncRequire(19327, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
                           } else {
                             handleCreateFromTemplate(selectedTemplate, arg1);
                           }
@@ -726,12 +710,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                       tmp43 = tmp46;
                     }
                     const obj16 = { children: tmp39 };
-                    class N {
+                    class H {
                       constructor(selectedTemplate, arg1) {
                         if (closure_7) {
                           const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
                           const obj = ActionSheetActionCreatorsDefault;
-                          obj.openLazy(asyncRequire(19279, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+                          obj.openLazy(asyncRequire(19327, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
                         } else {
                           handleCreateFromTemplate(selectedTemplate, arg1);
                         }
@@ -747,12 +731,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                     cResult[28] = tmp40;
                     tmp36 = tmp40;
                   }
-                  class N {
+                  class H {
                     constructor(selectedTemplate, arg1) {
                       if (closure_7) {
                         const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
                         const obj = ActionSheetActionCreatorsDefault;
-                        obj.openLazy(asyncRequire(19279, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+                        obj.openLazy(asyncRequire(19327, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
                       } else {
                         handleCreateFromTemplate(selectedTemplate, arg1);
                       }
@@ -766,12 +750,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
               }
             }
             const obj31 = { template, handleSelectTemplateInPreview: tmp14, subscriptionPlanTextStyle: tmp4.subscriptionPlanTextStyle, descriptionTextStyle: null, closeActionSheet: false, descriptionTextProps: tmp15 };
-            class N {
+            class H {
               constructor(selectedTemplate, arg1) {
                 if (closure_7) {
                   const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
                   const obj = ActionSheetActionCreatorsDefault;
-                  obj.openLazy(asyncRequire(19279, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+                  obj.openLazy(asyncRequire(19327, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
                 } else {
                   handleCreateFromTemplate(selectedTemplate, arg1);
                 }
@@ -786,12 +770,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
             tmp16 = tmp18;
           }
         }
-        class N {
+        class H {
           constructor(selectedTemplate, arg1) {
             if (closure_7) {
               const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
               const obj = ActionSheetActionCreatorsDefault;
-              obj.openLazy(asyncRequire(19279, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+              obj.openLazy(asyncRequire(19327, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
             } else {
               handleCreateFromTemplate(selectedTemplate, arg1);
             }
@@ -800,8 +784,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
         cResult[6] = tmp10;
         cResult[7] = null != suggestedUnusedPrices && suggestedUnusedPrices.length > 0;
         cResult[8] = suggestedUnusedPrices;
-        cResult[9] = N;
-        tmp14 = N;
+        cResult[9] = H;
+        tmp14 = H;
       }
     }
   }
@@ -888,7 +872,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     if (closure_7) {
       const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
       const obj = ActionSheetActionCreatorsDefault;
-      obj.openLazy(asyncRequire(19279, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+      obj.openLazy(asyncRequire(19327, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
     } else {
       handleCreateFromTemplate(selectedTemplate, arg1);
     }
@@ -902,7 +886,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     onPress: function handleViewEntireTemplate() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { template, guildId, handleSelectTemplateInPreview: callback1 };
-      obj.openLazy(asyncRequire(19275, dependencyMap.paths), "TierTemplateCard", obj2);
+      obj.openLazy(asyncRequire(19323, dependencyMap.paths), "TierTemplateCard", obj2);
     },
     children: items6
   };

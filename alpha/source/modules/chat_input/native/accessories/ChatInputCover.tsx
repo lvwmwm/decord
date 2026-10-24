@@ -1,9 +1,9 @@
-// Module ID: 13105
-// Function ID: 13106
+// Module ID: 13142
+// Function ID: 13143
 // Name: ChatInputCover
-// Dependencies: [19, 17, 21, 558, 576, 5265, 1631, 2]
+// Dependencies: [19, 17, 21, 558, 576, 5267, 1631, 2]
 
-// Module 13105 (ChatInputCover)
+// Module 13142 (ChatInputCover)
 import Fragment from "Fragment" /* 21 */;
 import KeyboardTypes from "KeyboardTypes" /* 1631 */;
 import react from "react" /* 19 */;

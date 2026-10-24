@@ -1,14 +1,14 @@
-// Module ID: 14703
-// Function ID: 14704
+// Module ID: 14726
+// Function ID: 14727
 // Name: usePromotionMarketingComponent
-// Dependencies: [32, 19, 7558, 9519, 558, 576, 9560, 9557, 504, 2]
+// Dependencies: [32, 19, 7560, 9520, 558, 576, 9561, 9558, 504, 2]
 
-// Module 14703 (usePromotionMarketingComponent)
-import constants from "constants" /* 9557 */;
+// Module 14726 (usePromotionMarketingComponent)
+import constants from "constants" /* 9558 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserOfferStore_mod from "UserOfferStore" /* 7558 */;
-import PromotionsStore from "PromotionsStore" /* 9519 */;
+import UserOfferStore_mod from "UserOfferStore" /* 7560 */;
+import PromotionsStore from "PromotionsStore" /* 9520 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

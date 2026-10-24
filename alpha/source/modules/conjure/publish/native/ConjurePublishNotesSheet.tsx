@@ -1,28 +1,28 @@
-// Module ID: 12354
-// Function ID: 12355
+// Module ID: 12380
+// Function ID: 12381
 // Name: ConjurePublishNotesSheet
-// Dependencies: [5, 32, 19, 17, 4899, 4843, 4911, 1392, 4974, 21, 4969, 587, 5591, 504, 7343, 9661, 12355, 10794, 5208, 11807, 1128, 3830, 7753, 7564, 7296, 7246, 7178, 5232, 5602, 5242, 2]
+// Dependencies: [5, 32, 19, 17, 4901, 4845, 4913, 1392, 4976, 21, 4971, 587, 5593, 504, 7345, 9662, 12381, 10795, 5210, 11833, 1128, 3830, 7755, 7566, 7298, 7248, 7180, 5234, 5604, 5244, 2]
 // Exports: default
 
-// Module 12354 (ConjurePublishNotesSheet)
+// Module 12380 (ConjurePublishNotesSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl10 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4899 */;
-import MessageConstants from "MessageConstants" /* 4974 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5208 */;
-import ConjureUtils from "ConjureUtils" /* 7343 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11807 */;
-import ConjurePatchNotesChannel from "ConjurePatchNotesChannel" /* 12355 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4901 */;
+import MessageConstants from "MessageConstants" /* 4976 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5210 */;
+import ConjureUtils from "ConjureUtils" /* 7345 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11833 */;
+import ConjurePatchNotesChannel from "ConjurePatchNotesChannel" /* 12381 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4843 */;
-import RelationshipStore from "RelationshipStore" /* 4911 */;
+import GuildStore from "GuildStore" /* 4845 */;
+import RelationshipStore from "RelationshipStore" /* 4913 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import size from "module_2" /* 2 */;
 
 const GuildChannelStore = GuildChannelStore2;

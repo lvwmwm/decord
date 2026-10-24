@@ -1,15 +1,15 @@
-// Module ID: 9084
-// Function ID: 9085
+// Module ID: 9085
+// Function ID: 9086
 // Name: AppCrash
-// Dependencies: [19, 21, 8722, 9085, 9086, 9087, 558, 576, 4976, 5667, 2]
+// Dependencies: [19, 21, 8724, 9086, 9087, 9088, 558, 576, 4978, 5669, 2]
 // Exports: getAppCrashSource
 
-// Module 9084 (AppCrash)
+// Module 9085 (AppCrash)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import shared from "shared" /* 4976 */;
-import FastImageDefault from "FastImage" /* 5667 */;
-import _mod8722 from "module_8722" /* 8722 */;
+import shared from "shared" /* 4978 */;
+import FastImageDefault from "FastImage" /* 5669 */;
+import _mod8724 from "module_8724" /* 8724 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -35,7 +35,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppCrashS
   const theme = obj2.useThemeContext().theme;
   if (cResult[0] !== theme) {
     const obj3 = { dark, darker, light };
-    const tmpResult = _mod8722;
+    const tmpResult = _mod8724;
     const illustrationSource = tmpResult.getIllustrationSource(theme, obj3);
     cResult[0] = theme;
     cResult[1] = illustrationSource;
@@ -47,7 +47,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppCrashS
 }) : (function useAppCrashSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8722;
+  const obj2 = _mod8724;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 });
@@ -78,7 +78,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppCrash(arg
   return <tmp2 source={tmp} />;
 });
 function getAppCrashSource(theme) {
-  const obj = _mod8722;
+  const obj = _mod8724;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }

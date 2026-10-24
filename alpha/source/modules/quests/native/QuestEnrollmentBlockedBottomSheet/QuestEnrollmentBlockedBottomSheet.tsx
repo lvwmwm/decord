@@ -1,20 +1,20 @@
-// Module ID: 16475
-// Function ID: 16476
+// Module ID: 16507
+// Function ID: 16508
 // Name: QuestEnrollmentBlockedBottomSheet
-// Dependencies: [19, 17, 7774, 21, 4969, 587, 558, 576, 504, 14118, 6711, 7552, 5232, 1128, 5263, 2]
+// Dependencies: [19, 17, 7776, 21, 4971, 587, 558, 576, 504, 14137, 6713, 7554, 5234, 1128, 5265, 2]
 
-// Module 16475 (QuestEnrollmentBlockedBottomSheet)
+// Module 16507 (QuestEnrollmentBlockedBottomSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5263 */;
-import useCountdownDefault from "useCountdown" /* 7552 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5265 */;
+import useCountdownDefault from "useCountdown" /* 7554 */;
 import react from "react" /* 19 */;
-import QuestStore from "QuestStore" /* 7774 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import QuestStore from "QuestStore" /* 7776 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -177,7 +177,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestEn
     let tmp26;
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const Text = tmp(5232).Text;
+      const Text = tmp(5234).Text;
       const intl = tmp(1128).intl;
       const tmp19 = <Text variant="heading-xl/bold">{intl.string(intl3.t["XEHDT/"])}</Text>;
       cResult[8] = tmp19;

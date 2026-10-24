@@ -1,27 +1,27 @@
-// Module ID: 11770
-// Function ID: 11771
+// Module ID: 11795
+// Function ID: 11796
 // Name: ConjureRemovedItems
-// Dependencies: [19, 17, 21, 4969, 587, 1128, 9133, 558, 576, 8575, 11771, 8543, 5975, 5232, 5037, 6899, 3830, 6985, 6898, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 1128, 9134, 558, 576, 8577, 11796, 8545, 5977, 5234, 5039, 6901, 3830, 6987, 6900, 2]
 // Exports: formatWithAppTag
 
-// Module 11770 (ConjureRemovedItems)
+// Module 11795 (ConjureRemovedItems)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import react_native from "react-native" /* 5037 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import TableCheckboxRow2 from "TableCheckboxRow" /* 6898 */;
-import FormCheckbox from "FormCheckbox" /* 6899 */;
-import TableRowGroup2 from "TableRowGroup" /* 6985 */;
-import FolderIcon from "FolderIcon" /* 8543 */;
-import AppsIcon from "AppsIcon" /* 8575 */;
-import BotTagDefault from "BotTag" /* 9133 */;
-import RobotIcon from "RobotIcon" /* 11771 */;
+import react_native from "react-native" /* 5039 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import TableCheckboxRow2 from "TableCheckboxRow" /* 6900 */;
+import FormCheckbox from "FormCheckbox" /* 6901 */;
+import TableRowGroup2 from "TableRowGroup" /* 6987 */;
+import FolderIcon from "FolderIcon" /* 8545 */;
+import AppsIcon from "AppsIcon" /* 8577 */;
+import BotTagDefault from "BotTag" /* 9134 */;
+import RobotIcon from "RobotIcon" /* 11796 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const Stack_Stack = tmp(5975);
+const Stack_Stack = tmp(5977);
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native2);
 let Fragment = Fragment_mod;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -356,7 +356,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Option
   }
   obj3 = { direction: "horizontal", spacing: 8, align: "center", children: items };
   const obj4 = { kind: item.kind };
-  Stack = tmp2(5975).Stack;
+  Stack = tmp2(5977).Stack;
   items = [metroRequire(closure_9, obj4), , ];
   const obj5 = { variant: "text-sm/medium", color: "text-subtle", style: tmp.optionalLabel, children: item.label };
   items[1] = metroRequire(Text_Text.Text, obj5);
@@ -376,7 +376,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRemov
   ({ items, optionalItem } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "text-md/semibold", color: "text-strong", children: intl.string(_modDef3830["+E2PqP"]) };
-    const Text = tmp(5232).Text;
+    const Text = tmp(5234).Text;
     intl = tmp(1128).intl;
     const tmp7 = metroRequire(Text, obj2);
     cResult[0] = tmp7;
@@ -406,7 +406,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRemov
   }
   const obj4 = { spacing: 8, children: items1 };
   items1 = [first, ];
-  const Stack = tmp(5975).Stack;
+  const Stack = tmp(5977).Stack;
   items1[1] = metroRequire(closure_10, { items, children: tmp8 });
   const tmp16 = metroImportDefault(Stack, obj4);
   cResult[3] = items;
@@ -487,7 +487,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRemov
     tmp10 = tmp13;
   }
   const obj4 = { hasIcons: false, children: metroRequire(TableCheckboxRow2.TableCheckboxRow, { label: first, checked, onPress: onChange }) };
-  const TableRowGroup = tmp(6985).TableRowGroup;
+  const TableRowGroup = tmp(6987).TableRowGroup;
   const tmp8 = metroRequire(TableRowGroup, obj4);
   cResult[1] = checked;
   cResult[2] = onChange;

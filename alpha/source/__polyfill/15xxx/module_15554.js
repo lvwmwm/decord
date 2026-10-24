@@ -1,42 +1,37 @@
 // Module ID: 15554
 // Function ID: 15555
-// Dependencies: [15546, 15545, 15553]
+// Dependencies: [15555, 15558, 15540, 15562, 15563, 15559]
 
 // Module 15554
-import _mod15545 from "module_15545" /* 15545 */;
-import _mod15546 from "module_15546" /* 15546 */;
-import _mod15553 from "module_15553" /* 15553 */;
+import _mod15540 from "module_15540" /* 15540 */;
+import _mod15555 from "module_15555" /* 15555 */;
+import _mod15559 from "module_15559" /* 15559 */;
+import _mod15562 from "module_15562" /* 15562 */;
+import _mod15563 from "module_15563" /* 15563 */;
+import prop from "module_15558" /* 15558 */;
 
+let tmp2;
+let closure_2 = _mod15555("wks");
+const _Symbol = _mod15540.Symbol;
+if (prop) {
+  tmp2 = _Symbol.for || _mod15540.Symbol;
+  const tmp3 = _Symbol.for || _mod15540.Symbol;
+} else {
+  tmp2 = _Symbol && _mod15540.Symbol.withoutSetter || _mod15562;
+}
+let closure_3 = tmp2;
 
-export default (arg0, arg1) => {
-  if ("string" === arg1) {
-    const toString = arg0.toString;
-    if (_mod15546(toString)) {
-      const tmpResult = _mod15545;
-      const tmp4 = _mod15553(toString, arg0);
-      if (!tmpResult(tmp4)) {
-        return tmp4;
+export default (arg0) => {
+  if (!_mod15563(closure_2, arg0)) {
+    if (_mod15559) {
+      let tmp6;
+      const tmpResult = _mod15563;
+      if (tmpResult(_mod15540.Symbol, arg0)) {
+        tmp6 = tmp(15540).Symbol[arg0];
       }
+      closure_2[arg0] = tmp6;
     }
+    tmp6 = closure_3(`Symbol.${arg0}`);
   }
-  const valueOf = arg0.valueOf;
-  if (_mod15546(valueOf)) {
-    const tmp5Result = _mod15545;
-    const tmp8 = _mod15553(valueOf, arg0);
-    if (!tmp5Result(tmp8)) {
-      return tmp8;
-    }
-  }
-  if ("string" !== arg1) {
-    const toString2 = arg0.toString;
-    if (_mod15546(toString2)) {
-      const tmp5Result2 = _mod15545;
-      const tmp10 = _mod15553(toString2, arg0);
-      if (!tmp5Result2(tmp10)) {
-        return tmp10;
-      }
-    }
-  }
-  const tmp11 = new TypeError("Can't convert object to primitive value");
-  throw tmp11;
+  return closure_2[arg0];
 };

@@ -1,12 +1,12 @@
-// Module ID: 12480
-// Function ID: 12481
+// Module ID: 12514
+// Function ID: 12515
 // Name: useConjureMentionCandidates
-// Dependencies: [19, 502, 6771, 558, 576, 504, 12481, 2]
+// Dependencies: [19, 502, 6773, 558, 576, 504, 12515, 2]
 
-// Module 12480 (useConjureMentionCandidates)
+// Module 12514 (useConjureMentionCandidates)
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6771 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

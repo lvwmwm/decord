@@ -1,17 +1,17 @@
-// Module ID: 10716
-// Function ID: 10717
+// Module ID: 10717
+// Function ID: 10718
 // Name: conjureChatConnection
-// Dependencies: [584, 10702, 1128, 3830, 10717, 10718, 10719, 2]
+// Dependencies: [584, 10703, 1128, 3830, 10718, 10719, 10720, 2]
 // Exports: appendTurnStep, sendFailedStep, sendQueuedMessageAction
 
-// Module 10716 (conjureChatConnection)
+// Module 10717 (conjureChatConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import conjureAgentReaction from "conjureAgentReaction" /* 10702 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 10717 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10718 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10719 */;
+import conjureAgentReaction from "conjureAgentReaction" /* 10703 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 10718 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10719 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10720 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -129,7 +129,7 @@ let obj2 = {
       const tmp13Result = tmp13(584);
       tmp13Result.dispatch(obj3);
       const obj6 = { message: stringResult };
-      const trackConjureErrored = tmp11(10717).trackConjureErrored;
+      const trackConjureErrored = tmp11(10718).trackConjureErrored;
       ConjureAnalytics;
       const merged = Object.assign(tmp);
       trackConjureErrored(projectId, obj6);
@@ -230,7 +230,7 @@ let obj2 = {
       const tmp13Result = tmp13(584);
       tmp13Result.dispatch(obj3);
       const obj6 = { message: stringResult };
-      const trackConjureErrored = tmp11(10717).trackConjureErrored;
+      const trackConjureErrored = tmp11(10718).trackConjureErrored;
       ConjureAnalytics;
       const merged = Object.assign(tmp);
       trackConjureErrored(projectId, obj6);
@@ -265,11 +265,11 @@ let obj2 = {
       obj.dispatch(obj2);
     }
   },
-  clarification(onSubmit, arg1) {
-    let tmp = null != onSubmit.clarification;
+  clarification(onKept, arg1) {
+    let tmp = null != onKept.clarification;
     const projectId = arg1.projectId;
     if (tmp) {
-      const questions = onSubmit.clarification.questions;
+      const questions = onKept.clarification.questions;
       let num;
       if (questions != null) {
         num = questions.length;
@@ -280,8 +280,8 @@ let obj2 = {
       tmp = num > 0;
     }
     if (tmp) {
-      const obj2 = { type: "CONJURE_CHAT_TURN_PATCH", projectId, turnId: onSubmit.turn_id, patch: obj3 };
-      obj3 = { clarification: onSubmit.clarification };
+      const obj2 = { type: "CONJURE_CHAT_TURN_PATCH", projectId, turnId: onKept.turn_id, patch: obj3 };
+      obj3 = { clarification: onKept.clarification };
       const obj = DispatcherDefault;
       obj.dispatch(obj2);
     }

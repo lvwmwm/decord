@@ -1,14 +1,14 @@
-// Module ID: 12698
-// Function ID: 12699
+// Module ID: 12735
+// Function ID: 12736
 // Name: AcceptGuildTemplateActionCreators
-// Dependencies: [6494, 4843, 1087, 584, 1297, 7447, 2]
+// Dependencies: [6496, 4845, 1087, 584, 1297, 7449, 2]
 
-// Module 12698 (AcceptGuildTemplateActionCreators)
+// Module 12735 (AcceptGuildTemplateActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
-import transitionToGuild from "transitionToGuild" /* 7447 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6494 */;
-import GuildStore from "GuildStore" /* 4843 */;
+import transitionToGuild from "transitionToGuild" /* 7449 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6496 */;
+import GuildStore from "GuildStore" /* 4845 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault, name;

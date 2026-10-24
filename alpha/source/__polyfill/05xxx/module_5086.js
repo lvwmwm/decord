@@ -1,26 +1,26 @@
 // Module ID: 5086
 // Function ID: 5087
-// Dependencies: [32, 576, 5082]
-// Exports: useRiveEnum
+// Dependencies: [32, 576, 5084]
+// Exports: useRiveString
 
 // Module 5086
 import react from "react" /* 576 */;
-import _mod5082 from "module_5082" /* 5082 */;
+import _mod5084 from "module_5084" /* 5084 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 
-function getEnumProperty(enumProperty, arg1) {
-  return enumProperty.enumProperty(arg1);
+function getStringProperty(stringProperty, arg1) {
+  return stringProperty.stringProperty(arg1);
 }
 
-export const useRiveEnum = function useRiveEnum(arg0, arg1) {
+export const useRiveString = function useRiveString(arg0, arg1) {
   let tmp3;
   let tmp4;
   let tmp5;
   const obj = react;
   const cResult = obj.c(4);
-  const obj2 = _mod5082;
-  [tmp3, tmp4, tmp5] = obj2.useRiveProperty(arg1, arg0, getEnumProperty);
-  _slicedToArray(obj2.useRiveProperty(arg1, arg0, getEnumProperty), 3);
+  const obj2 = _mod5084;
+  [tmp3, tmp4, tmp5] = obj2.useRiveProperty(arg1, arg0, getStringProperty);
+  _slicedToArray(obj2.useRiveProperty(arg1, arg0, getStringProperty), 3);
   if (cResult[0] === tmp5) {
     if (cResult[1] === tmp4) {
       let tmp6;

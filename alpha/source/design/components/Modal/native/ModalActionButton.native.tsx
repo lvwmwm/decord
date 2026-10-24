@@ -1,15 +1,15 @@
-// Module ID: 12896
-// Function ID: 12897
+// Module ID: 12933
+// Function ID: 12934
 // Name: ModalActionButton
-// Dependencies: [109, 19, 17, 21, 4969, 558, 576, 5242, 2]
+// Dependencies: [109, 19, 17, 21, 4971, 558, 576, 5244, 2]
 
-// Module 12896 (ModalActionButton)
+// Module 12933 (ModalActionButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const components_Button_Button = tmp(5242);
+const components_Button_Button = tmp(5244);
 let closure_2 = ["variant"];
 const View = react_native.View;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);

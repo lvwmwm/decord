@@ -1,15 +1,15 @@
-// Module ID: 11246
-// Function ID: 11247
+// Module ID: 11247
+// Function ID: 11248
 // Name: useBatchUpdateChannelSettings
-// Dependencies: [19, 7211, 6702, 1087, 584, 558, 576, 504, 7207, 11247, 11244, 2]
+// Dependencies: [19, 7213, 6704, 1087, 584, 558, 576, 504, 7209, 11248, 11245, 2]
 
-// Module 11246 (useBatchUpdateChannelSettings)
+// Module 11247 (useBatchUpdateChannelSettings)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
-import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7207 */;
+import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7209 */;
 import react from "react" /* 19 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7211 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6702 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7213 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6704 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,20 +1,20 @@
-// Module ID: 7721
-// Function ID: 7722
+// Module ID: 7723
+// Function ID: 7724
 // Name: Guilds
-// Dependencies: [5, 4839, 502, 4881, 4875, 4843, 3, 4847, 4879, 4877, 4835, 2]
+// Dependencies: [5, 4841, 502, 4883, 4877, 4845, 3, 4849, 4881, 4879, 4837, 2]
 
-// Module 7721 (Guilds)
+// Module 7723 (Guilds)
 import LoggerDefault from "Logger" /* 3 */;
-import GuildRecordUtilsAll from "GuildRecordUtils" /* 4835 */;
-import GuildRecord from "GuildRecord" /* 4839 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 4847 */;
-import GuildRoleRecordUtilsAll from "GuildRoleRecordUtils" /* 4877 */;
-import GuildRoleUtilsAll from "GuildRoleUtils" /* 4879 */;
+import GuildRecordUtilsAll from "GuildRecordUtils" /* 4837 */;
+import GuildRecord from "GuildRecord" /* 4841 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4849 */;
+import GuildRoleRecordUtilsAll from "GuildRoleRecordUtils" /* 4879 */;
+import GuildRoleUtilsAll from "GuildRoleUtils" /* 4881 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4881 */;
-import GuildRoleStore from "GuildRoleStore" /* 4875 */;
-import GuildStore from "GuildStore" /* 4843 */;
+import GuildMemberStore from "GuildMemberStore" /* 4883 */;
+import GuildRoleStore from "GuildRoleStore" /* 4877 */;
+import GuildStore from "GuildStore" /* 4845 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1, c2, c3;
@@ -201,11 +201,11 @@ class Guilds {
             tmp7 = importAll;
           }
           let put = self.put;
-          let tmp7Result = tmp7(4835);
+          let tmp7Result = tmp7(4837);
           let attachSerializedData = tmp7Result.attachSerializedData;
-          let tmp7Result3 = tmp7(4835);
+          let tmp7Result3 = tmp7(4837);
           let fromBackgroundSyncResult = tmp7Result3.fromBackgroundSync(tmp2, tmp23);
-          let tmp7Result4 = tmp7(4877);
+          let tmp7Result4 = tmp7(4879);
           let result = tmp7Result4.toSerializedPartition(filterRoleDeletesResult);
           let putResult = put(attachSerializedData(fromBackgroundSyncResult, result, GuildMemberStore.getSelfMember(tmp2.id)), arg1);
         }

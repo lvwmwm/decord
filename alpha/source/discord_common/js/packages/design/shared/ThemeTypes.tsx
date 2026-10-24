@@ -1,9 +1,9 @@
-// Module ID: 15848
-// Function ID: 15849
+// Module ID: 15872
+// Function ID: 15873
 // Name: shared/ThemeTypes
 // Dependencies: [2]
 
-// Module 15848 (shared/ThemeTypes)
+// Module 15872 (shared/ThemeTypes)
 import size from "module_2" /* 2 */;
 
 const obj = { ASH: "dark", LIGHT: "light", ONYX: "midnight", DARK: "darker" };

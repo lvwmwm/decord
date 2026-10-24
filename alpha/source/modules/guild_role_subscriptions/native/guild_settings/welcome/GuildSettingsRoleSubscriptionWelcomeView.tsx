@@ -1,30 +1,30 @@
-// Module ID: 19174
-// Function ID: 19175
+// Module ID: 19201
+// Function ID: 19202
 // Name: GuildSettingsRoleSubscriptionWelcomeView
-// Dependencies: [32, 19, 17, 16525, 1087, 19175, 21, 4969, 587, 558, 576, 12213, 1128, 19176, 5232, 19177, 1505, 5208, 19179, 2002, 19179, 8949, 5242, 1202, 5243, 11422, 19187, 19191, 19200, 19203, 19208, 19209, 1506, 1275, 9360, 5266, 19173, 5660, 5667, 19210, 7219, 2]
+// Dependencies: [32, 19, 17, 16557, 1087, 19202, 21, 4971, 587, 558, 576, 12239, 1128, 19203, 5234, 19204, 1505, 5210, 19206, 2002, 19206, 8951, 5244, 1202, 7012, 19212, 19225, 19250, 19253, 19258, 19259, 1506, 1275, 9361, 5268, 19200, 5662, 19260, 7221, 2]
 
-// Module 19174 (GuildSettingsRoleSubscriptionWelcomeView)
+// Module 19201 (GuildSettingsRoleSubscriptionWelcomeView)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import intl4 from "intl" /* 1128 */;
+import intl5 from "intl" /* 1128 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import NavigatorConstants from "NavigatorConstants" /* 5266 */;
-import ErrorBlockDefault from "ErrorBlock" /* 12213 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16525 */;
-import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 19175 */;
-import WarningNoticeDefault from "WarningNotice" /* 19176 */;
-import EligibilityActionSheet from "EligibilityActionSheet" /* 19179 */;
-import HowItWorksSectionDefault from "HowItWorksSection" /* 19187 */;
-import CreatorBenefitsSectionDefault from "CreatorBenefitsSection" /* 19191 */;
-import CreatorHighlightSectionDefault from "CreatorHighlightSection" /* 19200 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import NavigatorConstants from "NavigatorConstants" /* 5268 */;
+import ErrorBlockDefault from "ErrorBlock" /* 12239 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16557 */;
+import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 19202 */;
+import WarningNoticeDefault from "WarningNotice" /* 19203 */;
+import EligibilityActionSheet from "EligibilityActionSheet" /* 19206 */;
+import HowItWorksSectionDefault from "HowItWorksSection" /* 19212 */;
+import CreatorBenefitsSectionDefault from "CreatorBenefitsSection" /* 19225 */;
+import CreatorHighlightSectionDefault from "CreatorHighlightSection" /* 19250 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -39,7 +39,6 @@ let obj2;
 let size;
 let unpackModuleId;
 function StartEarningButton(isTermsAccepted) {
-  let Icon;
   let acceptTermsCheckboxText;
   let eligibility;
   let eligibleForMonetization;
@@ -50,7 +49,6 @@ function StartEarningButton(isTermsAccepted) {
   let items2;
   let items4;
   let loading;
-  let obj10;
   let style;
   let submitAcceptTermsRequest;
   let tmp11Result2;
@@ -82,7 +80,7 @@ function StartEarningButton(isTermsAccepted) {
         navigation.push(constants.SECURITY);
       }
     };
-    const tmp2 = asyncRequire(19179, dependencyMap.paths);
+    const tmp2 = asyncRequire(19206, dependencyMap.paths);
     return openLazy(tmp2, EligibilityActionSheet.ELIGIBILITY_ACTION_SHEET_KEY, obj);
   }, items1);
   const obj2 = {
@@ -109,7 +107,7 @@ function StartEarningButton(isTermsAccepted) {
     obj4.style = tmp.startEarningButton;
     const obj5 = { loading, disabled: tmp17, text: intl2.string(isTermsAccepted(submitAcceptTermsRequest[12]).t.NL5ZNS), onPress: callback };
     tmp17 = !isTermsAccepted;
-    const Button = tmp5(tmp3[22]).Button;
+    const Button2 = tmp5(tmp3[22]).Button;
     if (isTermsAccepted) {
       tmp17 = !canSubmitAcceptance;
     }
@@ -117,7 +115,7 @@ function StartEarningButton(isTermsAccepted) {
       tmp17 = !eligibleForMonetization;
     }
     intl2 = tmp5(tmp3[12]).intl;
-    obj4.children = closure_11(Button, obj5);
+    obj4.children = closure_11(Button2, obj5);
     const items3 = [closure_11(closure_6, obj4), ];
     let tmp11Result = null != error;
     if (tmp11Result) {
@@ -133,12 +131,10 @@ function StartEarningButton(isTermsAccepted) {
     tmp11Result2 = tmp11(tmp16, obj8);
   } else {
     obj4.style = tmp.startEarningButton;
-    const obj9 = { loading, text: intl.string(isTermsAccepted(submitAcceptTermsRequest[12]).t.NL5ZNS), icon: closure_11(Icon, obj10), pillStyle: { backgroundColor: "#EB5D30" }, onPress: callback1 };
-    const BaseTextButton = tmp5(tmp3[24]).BaseTextButton;
+    const obj9 = { loading, text: intl.string(isTermsAccepted(submitAcceptTermsRequest[12]).t.NL5ZNS), icon: closure_11(isTermsAccepted(submitAcceptTermsRequest[24]).CircleErrorIcon, { size: "sm", color: "control-primary-text-default" }), onPress: callback1 };
+    const Button = tmp5(tmp3[22]).Button;
     intl = tmp5(tmp3[12]).intl;
-    obj10 = { source: tmp2(submitAcceptTermsRequest[25]), color: tmp2(submitAcceptTermsRequest[8]).unsafe_rawColors.WHITE, size: isTermsAccepted(submitAcceptTermsRequest[23]).Icon.Sizes.SMALL_20 };
-    Icon = tmp5(tmp3[23]).Icon;
-    obj4.children = closure_11(BaseTextButton, obj9);
+    obj4.children = closure_11(Button, obj9);
     tmp11Result2 = tmp9(tmp12, obj4);
   }
   items2[1] = tmp11Result2;
@@ -151,7 +147,7 @@ const GuildSettingsSections = Constants.GuildSettingsSections;
 const constants = CreatorMonetizationEligibilityConstants.CreatorMonetizationOnboardingMarketingSection;
 ({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: { flex: 1 }, contentContainer: { flex: 1, padding: 24 }, heroImage: { resizeMode: "cover", width: "100%" }, subtitle: { marginTop: 8 }, tos: obj2, startEarningButton: { marginTop: 12 }, startEarningButtonContainer: { marginTop: 14 }, startEarningFabContainer: { marginHorizontal: 24 }, divider: size, sectionTitle: { marginTop: 36, marginBottom: 10 }, sectionFooter: { marginTop: 36 }, statusNoticeContainer: { marginHorizontal: 0, marginTop: 14 } };
+let obj = { container: { flex: 1 }, contentContainer: { flex: 1, padding: 24 }, heroImage: { alignItems: "center", paddingTop: 24 }, subtitle: { marginTop: 8 }, tos: obj2, startEarningButton: { marginTop: 12 }, startEarningButtonContainer: { marginTop: 14 }, startEarningFabContainer: { marginHorizontal: 24 }, divider: size, sectionTitle: { marginTop: 36, marginBottom: 10 }, sectionFooter: { marginTop: 36 }, statusNoticeContainer: { marginHorizontal: 0, marginTop: 14 } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.sm, marginTop: 10 };
 createStyles = createStyles.createStyles;
 size = { width: "100%", height: 0.8, marginTop: 36, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
@@ -221,7 +217,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applic
       const _Symbol2 = Symbol;
       if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
         const intl2 = tmp(1128).intl;
-        const stringResult = intl2.string(intl4.t.OrkTBn);
+        const stringResult = intl2.string(intl5.t.OrkTBn);
         cResult[10] = stringResult;
         tmp10 = stringResult;
       } else {
@@ -234,7 +230,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applic
         const _Symbol = Symbol;
         if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
           const intl = tmp(1128).intl;
-          const stringResult1 = intl.string(intl4.t["YKw/NQ"]);
+          const stringResult1 = intl.string(intl5.t["YKw/NQ"]);
           cResult[11] = stringResult1;
         }
         requestRejectedNoticeText = reapplyNoticeText;
@@ -296,14 +292,14 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applic
   } else {
     let stringResult;
     if (isApplicationPending) {
-      const intl2 = intl4.intl;
-      requestRejectedNoticeText = intl2.string(intl4.t.OrkTBn);
+      const intl2 = intl5.intl;
+      requestRejectedNoticeText = intl2.string(intl5.t.OrkTBn);
     } else if (null == requestRejectedNoticeText) {
       requestRejectedNoticeText = null;
       if (null != reapplyNoticeText) {
-        const intl = intl4.intl;
+        const intl = intl5.intl;
         requestRejectedNoticeText = reapplyNoticeText;
-        stringResult = intl.string(intl4.t["YKw/NQ"]);
+        stringResult = intl.string(intl5.t["YKw/NQ"]);
       }
     }
     let tmp7 = null;
@@ -377,7 +373,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SectionConta
     let tmp13 = null != footer;
     if (tmp13) {
       const obj4 = { style: tmp4.sectionFooter, variant: "text-sm/normal", color: "text-default", children: footer };
-      tmp13 = unpackModuleId(tmp(5232).Text, obj4);
+      tmp13 = unpackModuleId(tmp(5234).Text, obj4);
     }
     cResult[5] = footer;
     cResult[6] = tmp4.sectionFooter;
@@ -517,7 +513,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarketingS
       return tmp30;
     }
     if (cResult[12] !== tmp13) {
-      const fn = function x(type) {
+      const fn = function v(type) {
         let intl;
         let obj2;
         type = type.type;
@@ -526,8 +522,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarketingS
         } else if (constants.BENEFITS === type) {
           return closure_1;
         } else if (constants.OTHER_CREATORS === type) {
-          const obj = { title: intl.string(intl4.t["tJp+QV"]), children: unpackModuleId(CreatorHighlightSectionDefault, obj2) };
-          intl = intl4.intl;
+          const obj = { title: intl.string(intl5.t["tJp+QV"]), children: unpackModuleId(CreatorHighlightSectionDefault, obj2) };
+          intl = intl5.intl;
           obj2 = { highlightedCreators: type.creators };
           return unpackModuleId(closure_16, obj, constants.OTHER_CREATORS);
         }
@@ -589,8 +585,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarketingS
           } else if (constants.BENEFITS === type) {
             return closure_1;
           } else if (constants.OTHER_CREATORS === type) {
-            const obj = { title: intl.string(intl4.t["tJp+QV"]), children: unpackModuleId(CreatorHighlightSectionDefault, obj2) };
-            intl = intl4.intl;
+            const obj = { title: intl.string(intl5.t["tJp+QV"]), children: unpackModuleId(CreatorHighlightSectionDefault, obj2) };
+            intl = intl5.intl;
             obj2 = { highlightedCreators: type.creators };
             return unpackModuleId(closure_16, obj, constants.OTHER_CREATORS);
           }
@@ -621,7 +617,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   const tmp = refreshEligibility;
   const tmp2 = ref;
   const obj = refreshEligibility(ref[10]);
-  const cResult = obj.c(58);
+  const cResult = obj.c(59);
   guild = guild.guild;
   closure_14();
   const obj2 = refreshEligibility(ref[16]);
@@ -629,7 +625,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   const tmp7 = require("useOnboardingMonetizationEnableFlow")(guild);
   ({ isGuildOwner, eligibility, refreshEligibility } = tmp7);
   ({ eligibleForMonetization, acceptTermsCheckboxText, wasRejectedInV1, eligibilityLoading, eligibilityError } = tmp7);
-  const obj3 = refreshEligibility(ref[30]);
+  const obj3 = refreshEligibility(ref[29]);
   const creatorMonetizationIneligibleReasons = obj3.useCreatorMonetizationIneligibleReasons(eligibility);
   require("useCreatorMonetizationOnboardingMarketing")(guild.id);
   [r10045, r10046] = first(react.useState(false), 2);
@@ -647,7 +643,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   } else {
     tmp12 = cResult[1];
   }
-  const tmpResult = tmp(tmp2[32]);
+  const tmpResult = tmp(tmp2[31]);
   const focusEffect = tmpResult.useFocusEffect(tmp12);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const fn2 = function u() {
@@ -817,7 +813,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
       }
     }
   }
-  const obj6 = { type: tmp(tmp2[33]).ImpressionTypes.PANE, name: tmp(tmp2[33]).ImpressionNames.ENABLE_CREATOR_MONETIZATION_ACCEPT_TERMS_LANDING, properties: { guild_id: guild.id, is_owner: isGuildOwner, is_eligible: eligibleForMonetization, ineligible_reasons: creatorMonetizationIneligibleReasons } };
+  const obj6 = { type: tmp(tmp2[32]).ImpressionTypes.PANE, name: tmp(tmp2[32]).ImpressionNames.ENABLE_CREATOR_MONETIZATION_ACCEPT_TERMS_LANDING, properties: { guild_id: guild.id, is_owner: isGuildOwner, is_eligible: eligibleForMonetization, ineligible_reasons: creatorMonetizationIneligibleReasons } };
   cResult[4] = eligibleForMonetization;
   cResult[5] = guild.id;
   cResult[6] = creatorMonetizationIneligibleReasons;
@@ -825,6 +821,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   cResult[8] = obj6;
   tmp17 = obj6;
 }) : (function GuildSettingsRoleSubscriptionWelcomeView(guild) {
+  let MarketStallSpotIllustration;
   let _undefined;
   let acceptTermsCheckboxText;
   let closure_5;
@@ -835,11 +832,13 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   let eligibleForMonetization;
   let intl2;
   let intl3;
+  let intl4;
   let isGuildOwner;
   let isLoading;
   let items3;
   let items4;
   let items5;
+  let obj10;
   let obj8;
   let refreshEligibility;
   let tmp10;
@@ -858,18 +857,19 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   const tmp2 = refreshEligibility;
   const obj = refreshEligibility(ref1[16]);
   navigation = obj.useNavigation();
-  const tmp5 = ref(ref1[29])(guild);
+  const tmp5 = ref(ref1[28])(guild);
   ({ eligibility, refreshEligibility } = tmp5);
   ({ eligibleForMonetization, acceptTermsCheckboxText, wasRejectedInV1, isGuildOwner, eligibilityLoading, eligibilityError } = tmp5);
-  const obj2 = refreshEligibility(ref1[30]);
+  const obj2 = refreshEligibility(ref1[29]);
   const creatorMonetizationIneligibleReasons = obj2.useCreatorMonetizationIneligibleReasons(eligibility);
-  ({ isLoading, creatorMonetizationOnboardingMarketing } = ref(ref1[31])(guild.id));
-  ref(ref1[31])(guild.id);
+  ({ isLoading, creatorMonetizationOnboardingMarketing } = ref(ref1[30])(guild.id));
+  ref(ref1[30])(guild.id);
   [tmp10, tmp11] = first(react.useState(false), 2);
   first(react.useState(false), 2);
+  const tmp4 = ref;
   ref = react.useRef(true);
   const items = [ref, refreshEligibility];
-  const obj4 = refreshEligibility(ref1[32]);
+  const obj4 = refreshEligibility(ref1[31]);
   const focusEffect = obj4.useFocusEffect(react.useCallback(() => {
     if (!ref.current) {
       refreshEligibility();
@@ -880,8 +880,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
       tmp.current = false;
     }
   }, []);
-  const obj5 = { type: refreshEligibility(ref1[33]).ImpressionTypes.PANE, name: refreshEligibility(ref1[33]).ImpressionNames.ENABLE_CREATOR_MONETIZATION_ACCEPT_TERMS_LANDING, properties: { guild_id: guild.id, is_owner: isGuildOwner, is_eligible: eligibleForMonetization, ineligible_reasons: creatorMonetizationIneligibleReasons } };
-  const tmp15 = ref(ref1[34]);
+  const obj5 = { type: refreshEligibility(ref1[32]).ImpressionTypes.PANE, name: refreshEligibility(ref1[32]).ImpressionNames.ENABLE_CREATOR_MONETIZATION_ACCEPT_TERMS_LANDING, properties: { guild_id: guild.id, is_owner: isGuildOwner, is_eligible: eligibleForMonetization, ineligible_reasons: creatorMonetizationIneligibleReasons } };
+  const tmp15 = ref(ref1[33]);
   const tmp16 = null == guild.id || null == eligibility;
   tmp15(obj5, { disableTrack: tmp16 });
   [tmp19, tmp20] = first(react.useState(false), 2);
@@ -921,32 +921,34 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
         const obj6 = { bottom: true, style: tmp.container, children: items5 };
         const obj7 = { onScroll: tmp26, scrollEventThrottle: 36, children: closure_12(closure_6, obj8) };
         obj8 = { style: tmp.container, children: items3 };
-        const SafeAreaPaddingView = tmp2(tmp3[40]).SafeAreaPaddingView;
-        const obj9 = { source: ref(ref1[39]), resizeMethod: "scale", style: tmp.heroImage };
-        const tmp4Result = ref(ref1[38]);
-        items3 = [closure_11(tmp4Result, obj9), ];
-        const obj10 = { ref: ref1, style: tmp.contentContainer, collapsable: false, children: items4 };
-        const obj11 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl2.string(tmp2(ref1[12]).t.QYqDQ0) };
-        const Text = tmp2(tmp3[14]).Text;
+        const obj9 = { style: tmp.heroImage, children: closure_11(MarketStallSpotIllustration, obj10) };
+        const SafeAreaPaddingView = tmp2(tmp3[38]).SafeAreaPaddingView;
+        obj10 = { width: 240, accessible: true, accessibilityLabel: intl2.string(tmp2(ref1[12]).t.Af4klP) };
+        MarketStallSpotIllustration = tmp2(tmp3[37]).MarketStallSpotIllustration;
         intl2 = tmp2(tmp3[12]).intl;
-        items4 = [closure_11(Text, obj11), , , ];
-        const obj12 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: intl3.string(tmp2(ref1[12]).t["41wkMc"]) };
-        const Text2 = tmp2(tmp3[14]).Text;
+        items3 = [closure_11(closure_6, obj9), ];
+        const obj11 = { ref: ref1, style: tmp.contentContainer, collapsable: false, children: items4 };
+        const obj12 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl3.string(tmp2(ref1[12]).t.QYqDQ0) };
+        const Text = tmp2(tmp3[14]).Text;
         intl3 = tmp2(tmp3[12]).intl;
-        items4[1] = closure_11(Text2, obj12);
+        items4 = [closure_11(Text, obj12), , , ];
+        const obj13 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: intl4.string(tmp2(ref1[12]).t["41wkMc"]) };
+        const Text2 = tmp2(tmp3[14]).Text;
+        intl4 = tmp2(tmp3[12]).intl;
+        items4[1] = closure_11(Text2, obj13);
         const tmp33 = closure_7;
         if (wasRejectedInV1) {
-          const obj13 = { style: tmp.statusNoticeContainer };
+          const obj14 = { style: tmp.statusNoticeContainer };
           const merged = Object.assign(tmp5);
-          tmp32Result = tmp32(closure_15, obj13);
+          tmp32Result = tmp32(closure_15, obj14);
         } else {
-          const obj14 = { style: tmp.startEarningButtonContainer, guildId: guild.id, isTermsAccepted: tmp10, setTermsAccepted: tmp11, eligibleForMonetization, eligibility, acceptTermsCheckboxText };
-          tmp32Result = tmp32(StartEarningButton, obj14);
+          const obj15 = { style: tmp.startEarningButtonContainer, guildId: guild.id, isTermsAccepted: tmp10, setTermsAccepted: tmp11, eligibleForMonetization, eligibility, acceptTermsCheckboxText };
+          tmp32Result = tmp32(StartEarningButton, obj15);
         }
         items4[2] = tmp32Result;
-        const obj15 = { onboardingMarketing: creatorMonetizationOnboardingMarketing, onHowItWorksLayoutChange: callback };
-        items4[3] = closure_11(closure_18, obj15);
-        items3[1] = closure_12(closure_6, obj10);
+        const obj16 = { onboardingMarketing: creatorMonetizationOnboardingMarketing, onHowItWorksLayoutChange: callback };
+        items4[3] = closure_11(closure_18, obj16);
+        items3[1] = closure_12(closure_6, obj11);
         items5 = [closure_11(tmp33, obj7), ];
         if (tmp32Result2) {
           tmp32Result2 = eligibleForMonetization;
@@ -955,8 +957,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
           tmp32Result2 = !wasRejectedInV1;
         }
         if (tmp32Result2) {
-          const obj16 = { style: tmp.startEarningFabContainer, guildId: guild.id, isTermsAccepted: tmp10, setTermsAccepted: tmp11, eligibleForMonetization, eligibility, acceptTermsCheckboxText, isFab: true };
-          tmp32Result2 = tmp32(StartEarningButton, obj16);
+          const obj17 = { style: tmp.startEarningFabContainer, guildId: guild.id, isTermsAccepted: tmp10, setTermsAccepted: tmp11, eligibleForMonetization, eligibility, acceptTermsCheckboxText, isFab: true };
+          tmp32Result2 = tmp32(StartEarningButton, obj17);
         }
         items5[1] = tmp32Result2;
         tmp31Result = tmp31(SafeAreaPaddingView, obj6);
@@ -964,7 +966,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
       return tmp31Result;
     }
   }
-  tmp31Result = closure_11(tmp4(tmp3[36]), {});
+  tmp31Result = closure_11(tmp4(tmp3[35]), {});
 });
 size = size_mod;
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/welcome/GuildSettingsRoleSubscriptionWelcomeView.tsx");

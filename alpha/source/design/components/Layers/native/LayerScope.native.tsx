@@ -1,12 +1,12 @@
-// Module ID: 5595
-// Function ID: 5596
+// Module ID: 5597
+// Function ID: 5598
 // Name: LayerScope
-// Dependencies: [32, 19, 17, 1087, 21, 558, 576, 5596, 5597, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 558, 576, 5598, 5599, 2]
 
-// Module 5595 (LayerScope)
+// Module 5597 (LayerScope)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import useInitialValueDefault from "useInitialValue" /* 5597 */;
+import useInitialValueDefault from "useInitialValue" /* 5599 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -21,13 +21,13 @@ let hasOwnProperty;
 let metroImportAll;
 let metroRequire;
 let tmp;
-const LayerContext = tmp(5596);
+const LayerContext = tmp(5598);
 function Layer(zIndex) {
   let closure_2;
   let closure_3;
   zIndex = zIndex.zIndex;
   _slicedToArray = undefined;
-  const context = react.useContext(zIndex(5596).LayerContext);
+  const context = react.useContext(zIndex(5598).LayerContext);
   dependencyMap = _slicedToArray(react.useState({}), 2)[1];
   _slicedToArray = react.useRef(null);
   const items = [context];

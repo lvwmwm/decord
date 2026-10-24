@@ -1,36 +1,36 @@
-// Module ID: 9680
-// Function ID: 9681
+// Module ID: 9681
+// Function ID: 9682
 // Name: PremiumUpsellActionSheet
-// Dependencies: [19, 17, 4970, 1207, 5712, 5000, 1392, 1394, 1087, 5812, 9681, 21, 4969, 587, 558, 576, 5250, 2053, 5028, 8164, 8148, 9682, 9683, 1128, 9687, 9691, 9692, 5208, 9679, 9693, 14019, 14023, 1107, 1384, 9400, 5667, 5256, 504, 7251, 9671, 7555, 8429, 14024, 9931, 1267, 9915, 5157, 7296, 14026, 5232, 5242, 8420, 2]
+// Dependencies: [19, 17, 4972, 1207, 5714, 5002, 1392, 1394, 1087, 5814, 9682, 21, 4971, 587, 558, 576, 5252, 2053, 5030, 8166, 8150, 9683, 9684, 1128, 9688, 9692, 9693, 5210, 9680, 9694, 14038, 14042, 1107, 1384, 9401, 5669, 5258, 504, 7253, 9672, 7557, 8431, 14043, 9932, 1267, 9916, 5159, 7298, 14045, 5234, 5244, 8422, 2]
 
-// Module 9680 (PremiumUpsellActionSheet)
+// Module 9681 (PremiumUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import ChatInputUtils from "ChatInputUtils" /* 5157 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
-import useToken from "useToken" /* 5250 */;
-import LinearGradientDefault from "LinearGradient" /* 5256 */;
-import FastImageDefault from "FastImage" /* 5667 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5812 */;
-import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 9679 */;
-import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9681 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9691 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9692 */;
-import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9693 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14023 */;
+import ChatInputUtils from "ChatInputUtils" /* 5159 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import useToken from "useToken" /* 5252 */;
+import LinearGradientDefault from "LinearGradient" /* 5258 */;
+import FastImageDefault from "FastImage" /* 5669 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5814 */;
+import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 9680 */;
+import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9682 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9692 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9693 */;
+import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9694 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14042 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4970 */;
+import AccessibilityStore from "AccessibilityStore" /* 4972 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5712 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5000 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5002 */;
 import UserStore from "UserStore" /* 1392 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -53,14 +53,14 @@ let unpackModuleId;
 const ConstantsIOS = tmp(1107);
 const intl18 = tmp(1128);
 const PremiumUtils = tmp(2053);
-const EntitlementFeatureNames = tmp(5028);
-const FileUtils = tmp(8148);
-const UploadLimits = tmp(8164);
-const APNGPlayer = tmp(9400);
-const PremiumFeatureUpsellUtils = tmp(9682);
-const ReactionsSpotIllustration = tmp(9683);
-const StickersSpotIllustration = tmp(9687);
-const NitroScheduleMessageSpotIllustration = tmp(14019);
+const EntitlementFeatureNames = tmp(5030);
+const FileUtils = tmp(8150);
+const UploadLimits = tmp(8166);
+const APNGPlayer = tmp(9401);
+const PremiumFeatureUpsellUtils = tmp(9683);
+const ReactionsSpotIllustration = tmp(9684);
+const StickersSpotIllustration = tmp(9688);
+const NitroScheduleMessageSpotIllustration = tmp(14038);
 const View = react_native.View;
 ({ PremiumSubscriptionSKUs: c10, PremiumTypes: unpackModuleId, PremiumUpsellTypes: closure_12 } = PremiumConstants);
 ({ AnalyticEvents: map1, AnalyticsPages: closure_14, ThemeTypes: closure_15 } = Constants);

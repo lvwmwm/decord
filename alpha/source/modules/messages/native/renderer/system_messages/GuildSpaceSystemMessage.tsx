@@ -1,18 +1,18 @@
-// Module ID: 8455
-// Function ID: 8456
+// Module ID: 8457
+// Function ID: 8458
 // Name: GuildSpaceSystemMessage
-// Dependencies: [32, 4821, 1392, 1388, 1128, 2440, 8316, 8318, 8320, 8456, 8458, 2]
+// Dependencies: [32, 4823, 1392, 1388, 1128, 2440, 8318, 8320, 8322, 8458, 8460, 2]
 // Exports: createGuildSpaceSystemMessage
 
-// Module 8455 (GuildSpaceSystemMessage)
+// Module 8457 (GuildSpaceSystemMessage)
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import _modDef2440 from "module_2440" /* 2440 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8316 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8318 */;
-import GuildSpaceLeaderboardSystemMessage from "GuildSpaceLeaderboardSystemMessage" /* 8456 */;
-import GuildSpaceMusicSystemMessage from "GuildSpaceMusicSystemMessage" /* 8458 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8318 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8320 */;
+import GuildSpaceLeaderboardSystemMessage from "GuildSpaceLeaderboardSystemMessage" /* 8458 */;
+import GuildSpaceMusicSystemMessage from "GuildSpaceMusicSystemMessage" /* 8460 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 
@@ -58,12 +58,12 @@ export const createGuildSpaceSystemMessage = function createGuildSpaceSystemMess
         obj4 = { userId: tmp22.id, message, author: userAuthorWithProcessedColor, roleStyle };
         if (null != tmp23) {
           const obj5 = { userId: tmp23.id, message, author: userAuthorWithProcessedColor1, roleStyle };
-          tmp12 = tmp15(8318)(obj5);
+          tmp12 = tmp15(8320)(obj5);
         }
         formatToPartsResult = formatToParts(zUiZPF, obj3);
       }
       const obj6 = { content: formatToPartsResult };
-      const merged = Object.assign(tmp15(8320)(message));
+      const merged = Object.assign(tmp15(8322)(message));
       guildSpaceLeaderboardSystemMessage = obj6;
     }
     const intl = tmp9(1128).intl;

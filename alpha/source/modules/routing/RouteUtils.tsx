@@ -1,13 +1,13 @@
-// Module ID: 5018
-// Function ID: 5019
+// Module ID: 5020
+// Function ID: 5021
 // Name: RouteUtils
-// Dependencies: [1088, 4828, 2, 5019]
+// Dependencies: [1088, 4830, 2, 5021]
 // Exports: isPseudoGuildId, isValidChannelId, isValidGuildId
 
-// Module 5018 (RouteUtils)
+// Module 5020 (RouteUtils)
 import RouteConstants from "RouteConstants" /* 1088 */;
-import ChannelConstants from "ChannelConstants" /* 4828 */;
-import RouteParam from "RouteParam" /* 5019 */;
+import ChannelConstants from "ChannelConstants" /* 4830 */;
+import RouteParam from "RouteParam" /* 5021 */;
 import size from "module_2" /* 2 */;
 
 const PSEUDO_GUILD_IDS = RouteConstants.PSEUDO_GUILD_IDS;

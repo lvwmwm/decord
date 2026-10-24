@@ -1,19 +1,24 @@
-// Module ID: 11828
-// Function ID: 11829
+// Module ID: 11854
+// Function ID: 11855
 // Name: useConjureProjectIcon
-// Dependencies: [558, 576, 6807, 1417, 2]
+// Dependencies: [558, 576, 6809, 1417, 2]
+// Exports: conjureProjectIconMetrics
 
-// Module 11828 (useConjureProjectIcon)
+// Module 11854 (useConjureProjectIcon)
 import react from "react" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ApplicationActionCreators = tmp(6807);
+const ApplicationActionCreators = tmp(6809);
+function conjureProjectIconMetrics(arg0) {
+  const obj = { glyphSize: Math.round(0.6 * arg0), radius: arg0 / 4 };
+  return obj;
+}
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureProjectIcon(preview_application_id, size) {
   const obj = react;
-  const cResult = obj.c(10);
+  const cResult = obj.c(9);
   let application_id = preview_application_id.preview_application_id;
   if (application_id == null) {
     application_id = preview_application_id.application_id;
@@ -28,30 +33,27 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
         tmp4 = cResult[3];
       }
       if (cResult[4] !== size) {
+        const obj2 = { glyphSize: Math.round(0.6 * size), radius: size / 4 };
         const _Math = Math;
-        const rounded = Math.round(0.6 * size);
         cResult[4] = size;
-        cResult[5] = rounded;
-        tmp8 = rounded;
+        cResult[5] = obj2;
+        tmp8 = obj2;
       } else {
         tmp8 = cResult[5];
       }
-      const result = size / 4;
       if (cResult[6] === tmp4) {
+        let tmp10;
         if (cResult[7] === tmp8) {
-          let tmp12;
-          if (cResult[8] === result) {
-            tmp12 = cResult[9];
-          }
-          return tmp12;
+          tmp10 = cResult[8];
         }
+        return tmp10;
       }
-      const obj2 = { url: tmp4, glyphSize: tmp8, radius: result };
+      const obj4 = { url: tmp4 };
+      const merged = Object.assign(tmp8);
       cResult[6] = tmp4;
       cResult[7] = tmp8;
-      cResult[8] = result;
-      cResult[9] = obj2;
-      tmp12 = obj2;
+      cResult[8] = obj4;
+      tmp10 = obj4;
     }
   }
   let icon;
@@ -60,9 +62,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   }
   let applicationIconURL;
   if (null != icon) {
-    const obj4 = { id: application_id, icon: data.icon, size };
+    const obj5 = { id: application_id, icon: data.icon, size };
     const obj3 = AvatarUtilsDefault;
-    applicationIconURL = obj3.getApplicationIconURL(obj4);
+    applicationIconURL = obj3.getApplicationIconURL(obj5);
   }
   cResult[0] = data;
   cResult[1] = application_id;
@@ -86,9 +88,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     const obj2 = AvatarUtilsDefault;
     applicationIconURL = obj2.getApplicationIconURL(obj3);
   }
-  const obj4 = { url: applicationIconURL, glyphSize: Math.round(0.6 * size), radius: size / 4 };
+  const obj4 = { url: applicationIconURL };
+  const obj5 = { glyphSize: Math.round(0.6 * size), radius: size / 4 };
+  const merged = Object.assign(obj5);
   return obj4;
 });
-let result = size.fileFinishedImporting("modules/conjure/projects/useConjureProjectIcon.tsx");
+const result = size.fileFinishedImporting("modules/conjure/projects/useConjureProjectIcon.tsx");
 
 export default tmp2;
+export { conjureProjectIconMetrics };

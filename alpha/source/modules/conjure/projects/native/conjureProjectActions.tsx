@@ -1,27 +1,27 @@
-// Module ID: 11759
-// Function ID: 11760
+// Module ID: 11784
+// Function ID: 11785
 // Name: conjureProjectActions
-// Dependencies: [5, 10697, 10713, 6771, 4828, 11730, 5660, 5912, 1128, 3830, 11760, 11514, 11762, 7049, 9139, 10870, 10722, 10693, 5682, 11764, 11766, 5689, 5676, 7283, 5992, 10411, 5661, 5680, 7486, 11768, 11769, 7059, 11773, 5687, 10719, 2]
+// Dependencies: [5, 10698, 10714, 6773, 4830, 11757, 5662, 5914, 1128, 3830, 11785, 11534, 11787, 7051, 9140, 10871, 10723, 10694, 5684, 11789, 11791, 5691, 5678, 7285, 5994, 10412, 5663, 5682, 7488, 11793, 11794, 7061, 11798, 5689, 10720, 2]
 // Exports: conjureProjectActions
 
-// Module 11759 (conjureProjectActions)
+// Module 11784 (conjureProjectActions)
 import intl15 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import ChannelConstants from "ChannelConstants" /* 4828 */;
-import ToastUtils from "ToastUtils" /* 5660 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5661 */;
-import CopyIcon from "CopyIcon" /* 5680 */;
-import AlertModal from "AlertModal" /* 5912 */;
-import ChannelUtils from "ChannelUtils" /* 5992 */;
-import ClipboardUtils from "ClipboardUtils" /* 7283 */;
-import conjureProjectMute from "conjureProjectMute" /* 10722 */;
-import ConjureArchivePicker from "ConjureArchivePicker" /* 11730 */;
-import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 11768 */;
-import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 11773 */;
+import ChannelConstants from "ChannelConstants" /* 4830 */;
+import ToastUtils from "ToastUtils" /* 5662 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
+import CopyIcon from "CopyIcon" /* 5682 */;
+import AlertModal from "AlertModal" /* 5914 */;
+import ChannelUtils from "ChannelUtils" /* 5994 */;
+import ClipboardUtils from "ClipboardUtils" /* 7285 */;
+import conjureProjectMute from "conjureProjectMute" /* 10723 */;
+import ConjureArchivePicker from "ConjureArchivePicker" /* 11757 */;
+import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 11793 */;
+import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 11798 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10697 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10713 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6771 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10698 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10714 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

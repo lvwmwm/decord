@@ -1,27 +1,27 @@
-// Module ID: 16036
-// Function ID: 16037
+// Module ID: 16060
+// Function ID: 16061
 // Name: AccountSmsBackupSetting
-// Dependencies: [1392, 8330, 1087, 7136, 558, 576, 504, 16031, 1128, 16026, 16033, 5907, 6670, 7135, 2002, 7138, 12, 11204, 15944, 2]
+// Dependencies: [1392, 8332, 1087, 7138, 558, 576, 504, 16055, 1128, 16050, 16057, 5909, 6672, 7137, 2002, 7140, 12, 11205, 15968, 2]
 
-// Module 16036 (AccountSmsBackupSetting)
+// Module 16060 (AccountSmsBackupSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5907 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6670 */;
-import PhoneConstants from "PhoneConstants" /* 7136 */;
-import PhoneActionCreators from "PhoneActionCreators" /* 7138 */;
-import SettingsConstants from "SettingsConstants" /* 8330 */;
-import SettingsAccountUtils from "SettingsAccountUtils" /* 15944 */;
-import MFAActionCreatorsDefault from "MFAActionCreators" /* 16026 */;
-import account_MFAUtils from "account/MFAUtils" /* 16031 */;
-import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 16033 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5909 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
+import PhoneConstants from "PhoneConstants" /* 7138 */;
+import PhoneActionCreators from "PhoneActionCreators" /* 7140 */;
+import SettingsConstants from "SettingsConstants" /* 8332 */;
+import SettingsAccountUtils from "SettingsAccountUtils" /* 15968 */;
+import MFAActionCreatorsDefault from "MFAActionCreators" /* 16050 */;
+import account_MFAUtils from "account/MFAUtils" /* 16055 */;
+import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 16057 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import module_12 from "module_12" /* 12 */;
-import SettingBuilders from "SettingBuilders" /* 11204 */;
+import SettingBuilders from "SettingBuilders" /* 11205 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -166,7 +166,7 @@ let closure_7 = module_12.debounce(function toggleSMS(user) {
     const pushLazy = ModalActionCreatorsDefault.pushLazy;
     let obj = { reason: PhoneActionCreators.ChangePhoneReason.USER_SETTINGS_UPDATE };
     ModalActionCreatorsDefault;
-    const tmp6 = asyncRequire(7135, dependencyMap.paths);
+    const tmp6 = asyncRequire(7137, dependencyMap.paths);
     pushLazy(tmp6, obj, closure_5);
   }
 }, 200);

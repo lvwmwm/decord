@@ -1,16 +1,16 @@
-// Module ID: 18652
-// Function ID: 18653
+// Module ID: 18684
+// Function ID: 18685
 // Name: renderChannelBadge
-// Dependencies: [19, 21, 1202, 13139, 5232, 1128, 1903, 2]
+// Dependencies: [19, 21, 1202, 13176, 5234, 1128, 1903, 2]
 // Exports: default
 
-// Module 18652 (renderChannelBadge)
+// Module 18684 (renderChannelBadge)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import NumberUtils from "NumberUtils" /* 1903 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import NewBadgeDefault from "NewBadge" /* 13139 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import NewBadgeDefault from "NewBadge" /* 13176 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

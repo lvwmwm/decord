@@ -1,20 +1,20 @@
-// Module ID: 13842
-// Function ID: 13843
+// Module ID: 13861
+// Function ID: 13862
 // Name: useConjureAppChannelSheet
-// Dependencies: [19, 6771, 21, 4969, 587, 558, 576, 1417, 5667, 7344, 504, 13843, 1128, 3830, 5023, 2]
+// Dependencies: [19, 6773, 21, 4971, 587, 558, 576, 1417, 5669, 7346, 504, 13862, 1128, 3830, 5025, 2]
 
-// Module 13842 (useConjureAppChannelSheet)
+// Module 13861 (useConjureAppChannelSheet)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import UserUtils from "UserUtils" /* 5023 */;
-import FastImageDefault from "FastImage" /* 5667 */;
-import useConjureAppCreatorDefault from "useConjureAppCreator" /* 13843 */;
+import UserUtils from "UserUtils" /* 5025 */;
+import FastImageDefault from "FastImage" /* 5669 */;
+import useConjureAppCreatorDefault from "useConjureAppCreator" /* 13862 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6771 */;
-import createStyles from "createStyles" /* 4969 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -79,8 +79,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAp
     guild_id = null;
   }
   let tmp6 = null;
-  const useAppChannelApplication = tmp(7344).useAppChannelApplication;
-  tmp(7344);
+  const useAppChannelApplication = tmp(7346).useAppChannelApplication;
+  tmp(7346);
   if (arg1) {
     tmp6 = guild_id;
   }
@@ -161,7 +161,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAp
       const formatToPlainString = intl.formatToPlainString;
       const obj5 = { name: tmpResult4.getName(creator) };
       const prop = _modDef3830["6/x9LD"];
-      tmpResult4 = tmp(5023);
+      tmpResult4 = tmp(5025);
       formatToPlainStringResult = formatToPlainString(prop, obj5);
     }
     tmp21 = obj3;

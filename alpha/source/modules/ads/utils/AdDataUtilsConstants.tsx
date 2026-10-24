@@ -1,9 +1,9 @@
-// Module ID: 7802
-// Function ID: 7803
+// Module ID: 7804
+// Function ID: 7805
 // Name: AdDataUtilsConstants
 // Dependencies: [2]
 
-// Module 7802 (AdDataUtilsConstants)
+// Module 7804 (AdDataUtilsConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/ads/utils/AdDataUtilsConstants.tsx");

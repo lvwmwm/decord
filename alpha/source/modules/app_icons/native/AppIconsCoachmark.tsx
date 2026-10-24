@@ -1,22 +1,22 @@
-// Module ID: 18352
-// Function ID: 18353
+// Module ID: 18384
+// Function ID: 18385
 // Name: AppIconsCoachmark
-// Dependencies: [19, 17, 1392, 4818, 21, 4969, 587, 558, 576, 504, 2053, 5208, 14739, 5667, 18353, 1202, 9933, 5232, 1128, 5242, 5263, 2]
+// Dependencies: [19, 17, 1392, 4820, 21, 4971, 587, 558, 576, 504, 2053, 5210, 14762, 5669, 18385, 1202, 9934, 5234, 1128, 5244, 5265, 2]
 
-// Module 18352 (AppIconsCoachmark)
+// Module 18384 (AppIconsCoachmark)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2053 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
-import FastImageDefault from "FastImage" /* 5667 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9933 */;
-import AppIconUtils from "AppIconUtils" /* 14739 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18353 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import FastImageDefault from "FastImage" /* 5669 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9934 */;
+import AppIconUtils from "AppIconUtils" /* 14762 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18385 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -194,7 +194,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppIconsCoac
       }
     }
     const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(markAsDismissed(1128).t.EfA4Cq) };
-    const Text = tmp(5232).Text;
+    const Text = tmp(5234).Text;
     intl = tmp(1128).intl;
     const tmp24 = closure_7(Text, obj5);
     cResult[14] = tmp24;
@@ -299,8 +299,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppIconsCoac
     const obj7 = { variant: "text-md/normal", color: "text-default", style: tmp4.subtitle, children: tmp27 };
     cResult[20] = tmp4.subtitle;
     cResult[21] = tmp27;
-    cResult[22] = closure_7(markAsDismissed(5232).Text, obj7);
-    const tmp32 = closure_7(markAsDismissed(5232).Text, obj7);
+    cResult[22] = closure_7(markAsDismissed(5234).Text, obj7);
+    const tmp32 = closure_7(markAsDismissed(5234).Text, obj7);
   }
   const obj8 = { style: tmp4.titleContainer, children: items2 };
   items2 = [tmp20, tmp23];
@@ -343,7 +343,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppIconsCoac
     children: items4
   };
   const obj4 = { style: tmp.info, children: items2 };
-  BottomSheet = markAsDismissed(5263).BottomSheet;
+  BottomSheet = markAsDismissed(5265).BottomSheet;
   const obj5 = { source: AssetRegistryDefault2, style: tmp.image };
   const tmp10 = FastImageDefault;
   items2 = [closure_7(tmp10, obj5), , ];
@@ -352,12 +352,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppIconsCoac
   const Icon = markAsDismissed(1202).Icon;
   items3 = [closure_7(Icon, obj7), ];
   const obj8 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(markAsDismissed(1128).t.EfA4Cq) };
-  const Text = markAsDismissed(5232).Text;
+  const Text = markAsDismissed(5234).Text;
   intl = markAsDismissed(1128).intl;
   items3[1] = closure_7(Text, obj8);
   items2[1] = closure_8(View, obj6);
   const obj9 = { variant: "text-md/normal", color: "text-default", style: tmp.subtitle, children: stringResult };
-  const Text2 = markAsDismissed(5232).Text;
+  const Text2 = markAsDismissed(5234).Text;
   const intl2 = markAsDismissed(1128).intl;
   const string = intl2.string;
   const t = markAsDismissed(1128).t;
@@ -381,11 +381,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppIconsCoac
       const result = obj2.navigateToAppIconSettings();
     }
   };
-  const Button = tmp2(5242).Button;
+  const Button = tmp2(5244).Button;
   intl3 = tmp2(1128).intl;
   items5 = [closure_7(Button, obj11), ];
   const obj12 = { variant: "secondary", text: intl4.string(tmp2(1128).t.iSrIIZ), onPress: callback };
-  const Button2 = tmp2(5242).Button;
+  const Button2 = tmp2(5244).Button;
   intl4 = tmp2(1128).intl;
   items5[1] = closure_7(Button2, obj12);
   items4[1] = closure_8(View, obj10);

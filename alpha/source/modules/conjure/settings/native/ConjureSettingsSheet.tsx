@@ -1,20 +1,20 @@
-// Module ID: 11774
-// Function ID: 11775
+// Module ID: 11799
+// Function ID: 11800
 // Name: ConjureSettingsSheet
-// Dependencies: [5, 32, 19, 17, 10697, 10711, 6771, 21, 3830, 4969, 587, 558, 576, 5591, 504, 11775, 11791, 11814, 1128, 7291, 7246, 5975, 11816, 11819, 11821, 5232, 6878, 5242, 7296, 8899, 11823, 9145, 2]
+// Dependencies: [5, 32, 19, 17, 10698, 10712, 6773, 21, 3830, 4971, 587, 558, 576, 5593, 504, 11800, 11817, 11840, 1128, 7293, 7248, 5977, 11842, 11845, 11847, 5234, 6880, 5244, 7298, 8901, 11849, 9146, 2]
 
-// Module 11774 (ConjureSettingsSheet)
+// Module 11799 (ConjureSettingsSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10697 */;
-import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 10711 */;
-import ConjureProjectStore_mod from "ConjureProjectStore" /* 6771 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10698 */;
+import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 10712 */;
+import ConjureProjectStore_mod from "ConjureProjectStore" /* 6773 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -72,7 +72,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSetti
   } else {
     first = cResult[0];
   }
-  closure_15(ref(5591)(first).insets.bottom);
+  closure_15(ref(5593)(first).insets.bottom);
   const tmp5 = ref;
   ref = react.useRef(null);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -233,7 +233,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSetti
       }
     }
   }
-  const tmp5Result = tmp5(11775);
+  const tmp5Result = tmp5(11800);
   if (stateFromStores != null) {
     class N {
       constructor() {
@@ -773,7 +773,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
     intl = tabs(_undefined[18]).intl;
     return obj;
   }), items);
-  const tmp7 = tabs(8899);
+  const tmp7 = tabs(8901);
   obj = {
     items: memo,
     pageWidth: tmp2,
@@ -798,10 +798,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
   const tmp12 = View;
   if (tabs.length > 3) {
     const obj3 = { state: segmentedControlState };
-    tmp11Result = tmp11(tmp5(11823).Tabs, obj3);
+    tmp11Result = tmp11(tmp5(11849).Tabs, obj3);
   } else {
     const obj4 = { state: segmentedControlState };
-    tmp11Result = tmp11(tmp5(9145).SegmentedControl, obj4);
+    tmp11Result = tmp11(tmp5(9146).SegmentedControl, obj4);
   }
   return closure_12(tmp12, obj2);
 });

@@ -1,24 +1,24 @@
-// Module ID: 15835
-// Function ID: 15836
+// Module ID: 15859
+// Function ID: 15860
 // Name: UserProfileDisplayNameStylesEditButton
-// Dependencies: [32, 19, 17, 1087, 4818, 4994, 21, 4969, 587, 558, 576, 1505, 15836, 4805, 7494, 8653, 6365, 10663, 1411, 4997, 15837, 1267, 1128, 15840, 1202, 14468, 10660, 15841, 2928, 15843, 15844, 2]
+// Dependencies: [32, 19, 17, 1087, 4820, 4996, 21, 4971, 587, 558, 576, 1505, 15860, 4807, 7496, 8655, 6367, 10664, 1411, 4999, 15852, 6713, 15861, 1267, 1128, 15864, 1202, 14492, 10661, 15865, 2928, 15867, 15868, 2]
 
-// Module 15835 (UserProfileDisplayNameStylesEditButton)
+// Module 15859 (UserProfileDisplayNameStylesEditButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14468 */;
-import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 15840 */;
-import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 15841 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14492 */;
+import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 15864 */;
+import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 15865 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4994 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4996 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -87,8 +87,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
   const tmpResult = tmp(isTryItOut[14]);
   [first, tmp11] = tmpResult.useSelectedDismissibleContent(tmp7, tmp8);
   let closure_5 = tmp11;
-  const tmpResult5 = tmp(isTryItOut[15]);
-  const guildMemberOrUserPendingDisplayNameStyles = tmpResult5.useGuildMemberOrUserPendingDisplayNameStyles(user, guildId);
+  const tmpResult6 = tmp(isTryItOut[15]);
+  const guildMemberOrUserPendingDisplayNameStyles = tmpResult6.useGuildMemberOrUserPendingDisplayNameStyles(user, guildId);
   let tryItOutDisplayNameStyles = guildMemberOrUserPendingDisplayNameStyles.pendingDisplayNameStyles;
   if (isTryItOut) {
     tryItOutDisplayNameStyles = guildMemberOrUserPendingDisplayNameStyles.tryItOutDisplayNameStyles;
@@ -111,8 +111,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
         effectId = tmp(tmp2[18]).DisplayNameEffect.SOLID;
       }
       const displayNameStylesEffectConfig = useDisplayNameStylesEffectConfig(effectId);
-      const tmpResult7 = tmp(isTryItOut[19]);
-      let tmp22 = tmpResult7.useHexagonCampaignPerkAvailability(constants3.DISPLAY_NAME_STYLE, "UserProfileDisplayNameStylesEditButton") === constants4.SELECTABLE && true !== isTryItOut;
+      const tmpResult8 = tmp(isTryItOut[19]);
+      let tmp22 = tmpResult8.useHexagonCampaignPerkAvailability(constants3.DISPLAY_NAME_STYLE, "UserProfileDisplayNameStylesEditButton") === constants4.SELECTABLE && true !== isTryItOut;
       if (tmp22) {
         let fontId;
         if (tmp15 != null) {
@@ -120,33 +120,36 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
         }
         tmp22 = fontId !== closure_10;
       }
+      const useTrackHexagonCampaignContentViewed = tmp(tmp2[20]).useTrackHexagonCampaignContentViewed;
       tmp(isTryItOut[20]);
+      const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(tmp(tmp2[21]).QuestContent.DISPLAY_NAME_STYLES_SETTINGS, tmp(tmp2[20]).HexagonCampaignContentSurface.PROFILE_ROW_PROMO, tmp22);
+      tmp(isTryItOut[22]);
       if (cResult[7] === guildId) {
         if (cResult[8] === isTryItOut) {
           if (cResult[9] === tmp11) {
-            let tmp27;
+            let tmp29;
             let combined;
             if (cResult[10] === nativeStackNavigation) {
-              tmp27 = cResult[11];
+              tmp29 = cResult[11];
             }
             if (null != tmp15) {
-              let tmp30;
+              let tmp32;
               if (cResult[13] !== tmp15.fontId) {
-                const intl2 = tmp(tmp2[22]).intl;
-                const stringResult = intl2.string(guildId(isTryItOut[23])(tmp15.fontId));
+                const intl2 = tmp(tmp2[24]).intl;
+                const stringResult = intl2.string(guildId(isTryItOut[25])(tmp15.fontId));
                 cResult[13] = tmp15.fontId;
                 cResult[14] = stringResult;
-                tmp30 = stringResult;
+                tmp32 = stringResult;
               } else {
-                tmp30 = cResult[14];
+                tmp32 = cResult[14];
               }
               const _HermesInternal = HermesInternal;
-              combined = "" + tmp30 + " + " + displayNameStylesEffectConfig.name;
+              combined = "" + tmp32 + " + " + displayNameStylesEffectConfig.name;
             } else {
               const _Symbol = Symbol;
               if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-                const intl = tmp(tmp2[22]).intl;
-                const stringResult1 = intl.string(tmp(isTryItOut[22]).t.PoWNfe);
+                const intl = tmp(tmp2[24]).intl;
+                const stringResult1 = intl.string(tmp(isTryItOut[24]).t.PoWNfe);
                 cResult[12] = stringResult1;
                 combined = stringResult1;
               } else {
@@ -157,10 +160,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
               if (cResult[16] === guildId) {
                 if (cResult[17] === tmp4.ggContainer) {
                   if (cResult[18] === tmp4.noneIcon) {
-                    let tmp32;
                     let tmp34;
+                    let tmp36;
                     if (cResult[19] === user.id) {
-                      tmp32 = cResult[20];
+                      tmp34 = cResult[20];
                     }
                     if (cResult[21] !== tmp15) {
                       class K {
@@ -241,9 +244,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
                           return tmp3Result;
                         }
                       }
-                      const stringResult2 = obj9.string(guildId(isTryItOut[28])["86GtGH"]);
+                      const stringResult2 = obj9.string(guildId(isTryItOut[30])["86GtGH"]);
                       cResult[23] = stringResult2;
-                      tmp34 = stringResult2;
+                      tmp36 = stringResult2;
                     } else {
                       class K {
                         constructor() {
@@ -270,8 +273,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
                         }
                       }
                     }
-                    const tmp36 = tmp22 && !tmp26 || first === tmp(isTryItOut[13]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_NEW_BADGE_PROFILE_PAGE;
-                    if (cResult[24] !== tmp36) {
+                    const tmp38 = tmp22 && !tmp28 || first === tmp(isTryItOut[13]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_NEW_BADGE_PROFILE_PAGE;
+                    if (cResult[24] !== tmp38) {
                       class K {
                         constructor() {
                           let effectId;
@@ -296,9 +299,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
                           return tmp3Result;
                         }
                       }
-                      cResult[24] = tmp36;
-                      cResult[25] = jsx(tmp(isTryItOut[29]).UserProfileEditFormLabelBadges, { showPremiumIcon: true, showNewBadge: tmp36 });
-                      const tmp38 = jsx(tmp(isTryItOut[29]).UserProfileEditFormLabelBadges, { showPremiumIcon: true, showNewBadge: tmp36 });
+                      cResult[24] = tmp38;
+                      cResult[25] = jsx(tmp(isTryItOut[31]).UserProfileEditFormLabelBadges, { showPremiumIcon: true, showNewBadge: tmp38 });
+                      const tmp40 = jsx(tmp(isTryItOut[31]).UserProfileEditFormLabelBadges, { showPremiumIcon: true, showNewBadge: tmp38 });
                     } else {
                       class K {
                         constructor() {
@@ -350,9 +353,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
                           return tmp3Result;
                         }
                       }
-                      tmp40[0] = combined;
+                      tmp42[0] = combined;
                       cResult[26] = combined;
-                      cResult[27] = tmp40;
+                      cResult[27] = tmp42;
                     } else {
                       class K {
                         constructor() {
@@ -379,7 +382,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
                         }
                       }
                     }
-                    if (cResult[28] !== tmp32) {
+                    if (cResult[28] !== tmp34) {
                       class K {
                         constructor() {
                           let effectId;
@@ -404,8 +407,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
                           return tmp3Result;
                         }
                       }
-                      cResult[28] = tmp32;
-                      cResult[29] = tmp42;
+                      cResult[28] = tmp34;
+                      cResult[29] = tmp44;
                     } else {
                       class K {
                         constructor() {
@@ -432,7 +435,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
                         }
                       }
                     }
-                    if (cResult[30] !== tmp33) {
+                    if (cResult[30] !== tmp35) {
                       class K {
                         constructor() {
                           let effectId;
@@ -457,8 +460,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
                           return tmp3Result;
                         }
                       }
-                      cResult[30] = tmp33;
-                      cResult[31] = tmp44;
+                      cResult[30] = tmp35;
+                      cResult[31] = tmp46;
                     } else {
                       class K {
                         constructor() {
@@ -486,7 +489,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
                       }
                     }
                     if (cResult[32] !== tmp22) {
-                      let tmp46;
+                      let tmp48;
                       class K {
                         constructor() {
                           let effectId;
@@ -536,10 +539,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
                             return tmp3Result;
                           }
                         }
-                        tmp46 = jsx(guildId(isTryItOut[30]), {});
+                        tmp48 = jsx(guildId(isTryItOut[32]), {});
                       }
                       cResult[32] = tmp22;
-                      cResult[33] = tmp46;
+                      cResult[33] = tmp48;
                     } else {
                       class K {
                         constructor() {
@@ -592,20 +595,29 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
                         }
                       }
                     }
+                    const tmp51 = jsx(tmp(isTryItOut[31]).UserProfileEditFormButton, { label: tmp36, labelTrailing: tmp39, buttonText: combined, accessibilityValue: tmp41, onPress: tmp29, leading: tmp43, trailing: tmp45, footer: tmp47 });
+                    class U {
+                      constructor() {
+                        const obj = AnalyticsUtilsDefault;
+                        obj.track(metroImportDefault.DISPLAY_NAME_STYLES_FROM_SETTINGS);
+                        const obj2 = { guildId, isTryItOut };
+                        nativeStackNavigation.navigate(metroImportAll.DISPLAY_NAME_STYLES, obj2);
+                        closure_5(ContentDismissActionType.TAKE_ACTION);
+                      }
+                    }
                     cResult[34] = combined;
-                    cResult[35] = tmp27;
-                    cResult[36] = tmp37;
-                    cResult[37] = tmp39;
-                    cResult[38] = tmp41;
-                    cResult[39] = tmp43;
-                    cResult[40] = tmp45;
-                    cResult[41] = jsx(tmp(isTryItOut[29]).UserProfileEditFormButton, { label: tmp34, labelTrailing: tmp37, buttonText: combined, accessibilityValue: tmp39, onPress: tmp27, leading: tmp41, trailing: tmp43, footer: tmp45 });
-                    const tmp49 = jsx(tmp(isTryItOut[29]).UserProfileEditFormButton, { label: tmp34, labelTrailing: tmp37, buttonText: combined, accessibilityValue: tmp39, onPress: tmp27, leading: tmp41, trailing: tmp43, footer: tmp45 });
+                    cResult[35] = tmp29;
+                    cResult[36] = tmp39;
+                    cResult[37] = tmp41;
+                    cResult[38] = tmp43;
+                    cResult[39] = tmp45;
+                    cResult[40] = tmp47;
+                    cResult[41] = tmp51;
                   }
                 }
               }
             }
-            const fn2 = function $() {
+            const fn = function $() {
               let tmp10;
               if (null == closure_6) {
                 const Icon = native.Icon;
@@ -620,24 +632,26 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
             cResult[17] = tmp4.ggContainer;
             cResult[18] = tmp4.noneIcon;
             cResult[19] = user.id;
-            cResult[20] = fn2;
-            tmp32 = fn2;
+            cResult[20] = fn;
+            tmp34 = fn;
           }
         }
       }
-      const fn = function h() {
-        const obj = AnalyticsUtilsDefault;
-        obj.track(metroImportDefault.DISPLAY_NAME_STYLES_FROM_SETTINGS);
-        const obj2 = { guildId, isTryItOut };
-        nativeStackNavigation.navigate(metroImportAll.DISPLAY_NAME_STYLES, obj2);
-        closure_5(ContentDismissActionType.TAKE_ACTION);
-      };
+      class U {
+        constructor() {
+          const obj = AnalyticsUtilsDefault;
+          obj.track(metroImportDefault.DISPLAY_NAME_STYLES_FROM_SETTINGS);
+          const obj2 = { guildId, isTryItOut };
+          nativeStackNavigation.navigate(metroImportAll.DISPLAY_NAME_STYLES, obj2);
+          closure_5(ContentDismissActionType.TAKE_ACTION);
+        }
+      }
       cResult[7] = guildId;
       cResult[8] = isTryItOut;
       cResult[9] = tmp11;
       cResult[10] = nativeStackNavigation;
-      cResult[11] = fn;
-      tmp27 = fn;
+      cResult[11] = U;
+      tmp29 = U;
     }
   }
   const obj7 = { userId: user.id, guildId, pendingDisplayNameStyles: tryItOutDisplayNameStyles, ignoreDisabledStylesSetting: true };
@@ -695,8 +709,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
     effectId = tmp2(tmp3[18]).DisplayNameEffect.SOLID;
   }
   displayNameStylesEffectConfig = useDisplayNameStylesEffectConfig(effectId);
-  const tmp2Result5 = user(tmp3[19]);
-  let tmp17 = tmp2Result5.useHexagonCampaignPerkAvailability(constants3.DISPLAY_NAME_STYLE, "UserProfileDisplayNameStylesEditButton") === constants4.SELECTABLE && true !== isTryItOut;
+  const tmp2Result6 = user(tmp3[19]);
+  let tmp17 = tmp2Result6.useHexagonCampaignPerkAvailability(constants3.DISPLAY_NAME_STYLE, "UserProfileDisplayNameStylesEditButton") === constants4.SELECTABLE && true !== isTryItOut;
   if (tmp17) {
     let fontId;
     if (tmp12Result != null) {
@@ -704,18 +718,21 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
     }
     tmp17 = fontId !== closure_10;
   }
+  const useTrackHexagonCampaignContentViewed = tmp2(tmp3[20]).useTrackHexagonCampaignContentViewed;
+  user(tmp3[20]);
+  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(tmp2(tmp3[21]).QuestContent.DISPLAY_NAME_STYLES_SETTINGS, tmp2(tmp3[20]).HexagonCampaignContentSurface.PROFILE_ROW_PROMO, tmp17);
   const items2 = [guildId, isTryItOut, nativeStackNavigation, tmp9];
-  const tmp2Result6 = user(tmp3[20]);
-  const hexagonCampaignHasVisitedDisplayNameStyles = tmp2Result6.useHexagonCampaignHasVisitedDisplayNameStyles();
+  const tmp2Result8 = user(tmp3[22]);
+  const hexagonCampaignHasVisitedDisplayNameStyles = tmp2Result8.useHexagonCampaignHasVisitedDisplayNameStyles();
   const items3 = [displayNameStylesEffectConfig, tmp12Result];
-  const tmp21 = nativeStackNavigation(() => {
+  const tmp23 = nativeStackNavigation(() => {
     const obj = AnalyticsUtilsDefault;
     obj.track(metroImportDefault.DISPLAY_NAME_STYLES_FROM_SETTINGS);
     const obj2 = { guildId, isTryItOut };
     nativeStackNavigation.navigate(metroImportAll.DISPLAY_NAME_STYLES, obj2);
     closure_5(ContentDismissActionType.TAKE_ACTION);
   }, items2);
-  const tmp22 = closure_5(() => {
+  const tmp24 = closure_5(() => {
     let stringResult;
     if (null == closure_6) {
       const intl2 = intl3.intl;
@@ -729,7 +746,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
   }, items3);
   const items4 = [tmp12Result, guildId, user.id, tmp];
   const items5 = [tmp12Result];
-  const tmp23 = nativeStackNavigation(() => {
+  const tmp25 = nativeStackNavigation(() => {
     let tmp10;
     if (null == closure_6) {
       const Icon = native.Icon;
@@ -739,7 +756,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
     }
     return tmp10;
   }, items4);
-  const tmp24 = nativeStackNavigation(() => {
+  const tmp26 = nativeStackNavigation(() => {
     let effectId;
     let tmp3Result = null;
     if (null != closure_6) {
@@ -761,21 +778,21 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
     }
     return tmp3Result;
   }, items5);
-  const UserProfileEditFormButton = tmp2(tmp3[29]).UserProfileEditFormButton;
-  let intl = tmp2(tmp3[22]).intl;
-  let tmp26 = tmp17;
-  const UserProfileEditFormLabelBadges = tmp2(tmp3[29]).UserProfileEditFormLabelBadges;
+  const UserProfileEditFormButton = tmp2(tmp3[31]).UserProfileEditFormButton;
+  let intl = tmp2(tmp3[24]).intl;
+  let tmp28 = tmp17;
+  const UserProfileEditFormLabelBadges = tmp2(tmp3[31]).UserProfileEditFormLabelBadges;
   if (tmp17) {
-    tmp26 = !hexagonCampaignHasVisitedDisplayNameStyles;
+    tmp28 = !hexagonCampaignHasVisitedDisplayNameStyles;
   }
-  if (!tmp26) {
-    tmp26 = first === tmp2(tmp3[13]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_NEW_BADGE_PROFILE_PAGE;
+  if (!tmp28) {
+    tmp28 = first === tmp2(tmp3[13]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_NEW_BADGE_PROFILE_PAGE;
   }
-  let tmp25Result;
+  let tmp27Result;
   if (tmp17) {
-    tmp25Result = tmp25(tmp11(tmp3[30]), {});
+    tmp27Result = tmp27(tmp11(tmp3[32]), {});
   }
-  return <UserProfileEditFormButton label={intl.string(guildId(tmp3[28])["86GtGH"])} labelTrailing={null} buttonText={tmp22} accessibilityValue={{ text: tmp22 }} onPress={tmp21} leading={tmp23()} trailing={tmp24()} footer={tmp25Result} />;
+  return <UserProfileEditFormButton label={intl.string(guildId(tmp3[30])["86GtGH"])} labelTrailing={null} buttonText={tmp24} accessibilityValue={{ text: tmp24 }} onPress={tmp23} leading={tmp25()} trailing={tmp26()} footer={tmp27Result} />;
 });
 size = size_mod;
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileDisplayNameStylesEditButton.tsx");

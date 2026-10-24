@@ -1,18 +1,18 @@
-// Module ID: 18025
-// Function ID: 18026
+// Module ID: 18057
+// Function ID: 18058
 // Name: SearchScreenSearchBar
-// Dependencies: [19, 17, 21, 4969, 558, 576, 5139, 7025, 1896, 18026, 18028, 18033, 2]
+// Dependencies: [19, 17, 21, 4971, 558, 576, 5141, 7027, 1896, 18058, 18060, 18065, 2]
 
-// Module 18025 (SearchScreenSearchBar)
+// Module 18057 (SearchScreenSearchBar)
 import react_native from "react-native" /* 17 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1896 */;
-import mergeProps from "mergeProps" /* 5139 */;
-import useKeyboardIsOpen from "useKeyboardIsOpen" /* 7025 */;
-import SearchBarDefault from "SearchBar" /* 18026 */;
-import SearchFilterSuggestionsDefault from "SearchFilterSuggestions" /* 18028 */;
+import mergeProps from "mergeProps" /* 5141 */;
+import useKeyboardIsOpen from "useKeyboardIsOpen" /* 7027 */;
+import SearchBarDefault from "SearchBar" /* 18058 */;
+import SearchFilterSuggestionsDefault from "SearchFilterSuggestions" /* 18060 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let dependencyMap, importDefault, tmp2;
 let hasOwnProperty;
 let metroRequire;
 let tmp8;
-const SearchFilterButtonDefault = tmp8(18033);
+const SearchFilterButtonDefault = tmp8(18065);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ header: { flexDirection: "row", alignItems: "center", paddingLeft: 16, zIndex: 10 }, headerWithBackButton: { paddingLeft: 0 }, headerSearch: { flex: 1, flexGrow: 1 }, headerControlsRight: { paddingRight: 16, paddingLeft: 12 }, suggestionsAnchor: { height: 0 }, suggestions: { position: "absolute", left: 0, right: -50, top: 8 }, suggestionsWithBackButton: { left: -28 } });
@@ -40,7 +40,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp = ref1;
   ref1 = react.useRef(null);
   if (cResult[0] !== ref) {
-    const tmpResult = tmp(5139);
+    const tmpResult = tmp(5141);
     const mergeRefsResult = tmpResult.mergeRefs(ref, ref1);
     cResult[0] = ref;
     cResult[1] = mergeRefsResult;

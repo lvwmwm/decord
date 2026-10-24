@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "b7c23ecf7d498084060048eec006835a", name: "CircleInformationIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/application_streaming", width: 272, height: 93, scales: [2, 3], hash: "c73d40dd66a153a872cf68d5a6b8779e", name: "img_stream_full", type: "png" });

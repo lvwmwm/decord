@@ -1,9 +1,9 @@
-// Module ID: 11819
-// Function ID: 11820
+// Module ID: 11845
+// Function ID: 11846
 // Name: ConjureLinkedAppsTab
-// Dependencies: [19, 21, 558, 576, 5912, 1128, 3830, 5208, 11820, 6901, 11815, 6985, 5232, 5975, 587, 2]
+// Dependencies: [19, 21, 558, 576, 5914, 1128, 3830, 5210, 11846, 6903, 11841, 6987, 5234, 5977, 587, 2]
 
-// Module 11819 (ConjureLinkedAppsTab)
+// Module 11845 (ConjureLinkedAppsTab)
 import nativeDefault from "native" /* 587 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import react from "react" /* 19 */;
@@ -288,7 +288,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureLinke
   const tmp5 = closure_3;
   if (failed) {
     let obj3 = { variant: "text-sm/normal", color: "text-feedback-critical", accessibilityRole: "alert", accessibilityLiveRegion: "assertive", children: intl2.string(_modDef3830.dIEOrl) };
-    const Text = tmp2(5232).Text;
+    const Text = tmp2(5234).Text;
     intl2 = tmp2(1128).intl;
     tmp5Result = tmp5(Text, obj3);
   }

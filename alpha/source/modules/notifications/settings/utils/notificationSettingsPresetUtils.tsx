@@ -1,14 +1,14 @@
-// Module ID: 8297
-// Function ID: 8298
+// Module ID: 8299
+// Function ID: 8300
 // Name: notificationSettingsPresetUtils
-// Dependencies: [1087, 6703, 6482, 1128, 2]
+// Dependencies: [1087, 6705, 6484, 1128, 2]
 // Exports: arePresetSettingsUnset, presetName, webPresetFromSettings
 
-// Module 8297 (notificationSettingsPresetUtils)
+// Module 8299 (notificationSettingsPresetUtils)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import merged5 from "merged5" /* 6482 */;
-import ReadStateConstants from "ReadStateConstants" /* 6703 */;
+import merged5 from "merged5" /* 6484 */;
+import ReadStateConstants from "ReadStateConstants" /* 6705 */;
 import size from "module_2" /* 2 */;
 
 function presetFromSettings(stateFromStores, stateFromStores1) {
@@ -34,15 +34,15 @@ const result = size.fileFinishedImporting("modules/notifications/settings/utils/
 
 export { Presets };
 export { presetFromSettings };
-export const webPresetFromSettings = function webPresetFromSettings(guildUnreadSetting, messageNotifications) {
-  if (guildUnreadSetting === UnreadSetting.ALL_MESSAGES) {
+export const webPresetFromSettings = function webPresetFromSettings(stateFromStores, stateFromStores1) {
+  if (stateFromStores === UnreadSetting.ALL_MESSAGES) {
     let HYBRID;
-    if (messageNotifications === UserNotificationSettings.ONLY_MENTIONS) {
+    if (stateFromStores1 === UserNotificationSettings.ONLY_MENTIONS) {
       HYBRID = obj.HYBRID;
     }
     return HYBRID;
   }
-  HYBRID = presetFromSettings(guildUnreadSetting, messageNotifications);
+  HYBRID = presetFromSettings(stateFromStores, stateFromStores1);
 };
 export const presetName = function presetName(arg0) {
   const str = merged5;

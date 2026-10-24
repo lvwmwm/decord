@@ -1,10 +1,10 @@
-// Module ID: 11780
-// Function ID: 11781
+// Module ID: 11806
+// Function ID: 11807
 // Name: useConjureAppIdentity
-// Dependencies: [6771, 558, 576, 504, 6807, 2]
+// Dependencies: [6773, 558, 576, 504, 6809, 2]
 
-// Module 11780 (useConjureAppIdentity)
-import ConjureProjectStore from "ConjureProjectStore" /* 6771 */;
+// Module 11806 (useConjureAppIdentity)
+import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

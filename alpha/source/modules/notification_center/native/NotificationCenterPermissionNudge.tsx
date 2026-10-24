@@ -1,20 +1,20 @@
-// Module ID: 17819
-// Function ID: 17820
+// Module ID: 17851
+// Function ID: 17852
 // Name: NotificationCenterPermissionNudge
-// Dependencies: [32, 19, 17, 1087, 4818, 13269, 21, 4969, 587, 558, 576, 1267, 13270, 10870, 5232, 1128, 5242, 6929, 6906, 16803, 7494, 4805, 2]
+// Dependencies: [32, 19, 17, 1087, 4820, 13306, 21, 4971, 587, 558, 576, 1267, 13307, 10871, 5234, 1128, 5244, 6931, 6908, 16835, 7496, 4807, 2]
 
-// Module 17819 (NotificationCenterPermissionNudge)
+// Module 17851 (NotificationCenterPermissionNudge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 16803 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 16835 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13269 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13306 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -116,7 +116,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifi
   const container = tmp4.container;
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { size: "md", color: nativeDefault.colors.ICON_STRONG };
-    const BellSlashIcon = tmp(10870).BellSlashIcon;
+    const BellSlashIcon = tmp(10871).BellSlashIcon;
     const tmp13 = closure_14(BellSlashIcon, obj2);
     cResult[5] = tmp13;
     tmp10 = tmp13;
@@ -134,7 +134,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifi
   }
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { variant: "text-md/semibold", color: "text-default", children: intl.string(onDismiss(1128).t.G6YBna) };
-    const Text = tmp(5232).Text;
+    const Text = tmp(5234).Text;
     intl = tmp(1128).intl;
     const tmp20 = closure_14(Text, obj4);
     cResult[8] = tmp20;
@@ -145,7 +145,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifi
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { variant: "text-md/medium", color: "text-muted", style: obj6, children: intl2.string(onDismiss(1128).t["9CoPDE"]) };
     obj6 = { marginTop: nativeDefault.space.PX_4 };
-    const Text2 = tmp(5232).Text;
+    const Text2 = tmp(5234).Text;
     intl2 = tmp(1128).intl;
     const tmp24 = closure_14(Text2, obj5);
     cResult[9] = tmp24;
@@ -155,7 +155,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifi
   }
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
     const obj7 = { variant: "primary", size: "md", text: intl3.string(onDismiss(1128).t.a4bgO0), onPress: tmp8 };
-    const Button = tmp(5242).Button;
+    const Button = tmp(5244).Button;
     intl3 = tmp(1128).intl;
     const tmp27 = closure_14(Button, obj7);
     cResult[10] = tmp27;
@@ -184,7 +184,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifi
     if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
       const intl4 = tmp(1128).intl;
       const stringResult = intl4.string(onDismiss(1128).t.WAI6xu);
-      const tmp38 = closure_14(onDismiss(6929).XSmallIcon, { size: "sm", color: "icon-strong" });
+      const tmp38 = closure_14(onDismiss(6931).XSmallIcon, { size: "sm", color: "icon-strong" });
       cResult[16] = stringResult;
       cResult[17] = tmp38;
       tmp35 = tmp38;
@@ -195,7 +195,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifi
     }
     if (cResult[18] !== tmp9) {
       const obj9 = { onPress: tmp9, hitSlop: 8, accessibilityRole: "button", accessibilityLabel: tmp34, children: tmp35 };
-      const tmp41 = closure_14(onDismiss(6906).PressableHighlight, obj9);
+      const tmp41 = closure_14(onDismiss(6908).PressableHighlight, obj9);
       cResult[18] = tmp9;
       cResult[19] = tmp41;
       tmp39 = tmp41;
@@ -254,16 +254,16 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifi
   let obj = { style: tmp.container, children: items };
   let obj2 = { style: tmp.iconContainer, children: closure_14(BellSlashIcon, obj3) };
   obj3 = { size: "md", color: nativeDefault.colors.ICON_STRONG };
-  BellSlashIcon = onDismiss(10870).BellSlashIcon;
+  BellSlashIcon = onDismiss(10871).BellSlashIcon;
   items = [closure_14(View, obj2), , ];
   const obj4 = { style: tmp.contentContainer, children: items1 };
   const obj5 = { variant: "text-md/semibold", color: "text-default", children: intl.string(onDismiss(1128).t.G6YBna) };
-  const Text = onDismiss(5232).Text;
+  const Text = onDismiss(5234).Text;
   intl = onDismiss(1128).intl;
   items1 = [closure_14(Text, obj5), , ];
   const obj6 = { variant: "text-md/medium", color: "text-muted", style: obj7, children: intl2.string(onDismiss(1128).t["9CoPDE"]) };
   obj7 = { marginTop: nativeDefault.space.PX_4 };
-  const Text2 = onDismiss(5232).Text;
+  const Text2 = onDismiss(5234).Text;
   intl2 = onDismiss(1128).intl;
   items1[1] = closure_14(Text2, obj6);
   const obj8 = { style: tmp.ctaButton, children: closure_14(Button, obj9) };
@@ -279,7 +279,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifi
       obj2.track(constants.CONTEXTUAL_REMINDER_ACTION, obj3);
     }
   };
-  Button = onDismiss(5242).Button;
+  Button = onDismiss(5244).Button;
   intl3 = onDismiss(1128).intl;
   items1[2] = closure_14(View, obj8);
   items[1] = closure_15(View, obj4);
@@ -293,9 +293,9 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifi
     hitSlop: 8,
     accessibilityRole: "button",
     accessibilityLabel: intl4.string(onDismiss(1128).t.WAI6xu),
-    children: closure_14(onDismiss(6929).XSmallIcon, { size: "sm", color: "icon-strong" })
+    children: closure_14(onDismiss(6931).XSmallIcon, { size: "sm", color: "icon-strong" })
   };
-  const PressableHighlight = onDismiss(6906).PressableHighlight;
+  const PressableHighlight = onDismiss(6908).PressableHighlight;
   intl4 = onDismiss(1128).intl;
   items[2] = closure_14(PressableHighlight, obj10);
   return closure_15(View, obj);
@@ -331,7 +331,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
   if (!inHoldout) {
     prop = null;
     if (canSeePushNotificationNudge) {
-      prop = tmp(4805).DismissibleContent.NOTIFICATION_NUDGE_NOTIFICATION_CENTER_BANNER;
+      prop = tmp(4807).DismissibleContent.NOTIFICATION_NUDGE_NOTIFICATION_CENTER_BANNER;
     }
   }
   const tmp10 = _slicedToArray(useSelectedTimeRecurringDismissibleContent(prop, tmp6), 2);
@@ -374,7 +374,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
   if (!inHoldout) {
     prop = null;
     if (canSeePushNotificationNudge) {
-      prop = tmp2(4805).DismissibleContent.NOTIFICATION_NUDGE_NOTIFICATION_CENTER_BANNER;
+      prop = tmp2(4807).DismissibleContent.NOTIFICATION_NUDGE_NOTIFICATION_CENTER_BANNER;
     }
   }
   const obj3 = { cooldownDurationMs };

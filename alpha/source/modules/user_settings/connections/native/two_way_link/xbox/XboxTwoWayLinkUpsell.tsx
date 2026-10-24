@@ -1,21 +1,21 @@
-// Module ID: 16231
-// Function ID: 16232
+// Module ID: 16255
+// Function ID: 16256
 // Name: XboxTwoWayLinkUpsell
-// Dependencies: [19, 1087, 21, 4969, 558, 576, 2067, 16232, 1128, 5667, 16233, 9609, 4805, 2]
+// Dependencies: [19, 1087, 21, 4971, 558, 576, 2067, 16256, 1128, 5669, 16257, 9610, 4807, 2]
 
-// Module 16231 (XboxTwoWayLinkUpsell)
+// Module 16255 (XboxTwoWayLinkUpsell)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
-import dismissible_content from "dismissible_content" /* 4805 */;
-import FastImageDefault from "FastImage" /* 5667 */;
-import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9609 */;
-import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 16232 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16233 */;
+import dismissible_content from "dismissible_content" /* 4807 */;
+import FastImageDefault from "FastImage" /* 5669 */;
+import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9610 */;
+import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 16256 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16257 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxTwoWayLi
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = HelpdeskUtilsDefault;
     const articleURL = obj2.getArticleURL(constants.XBOX_CONNECTION);
-    const OneWayToTwoWayLinkUpsell = tmp(16232).OneWayToTwoWayLinkUpsell;
+    const OneWayToTwoWayLinkUpsell = tmp(16256).OneWayToTwoWayLinkUpsell;
     const intl = tmp(1128).intl;
     const stringResult = intl.string(intl3.t["2okkZV"]);
     const intl2 = tmp(1128).intl;

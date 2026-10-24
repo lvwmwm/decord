@@ -1,22 +1,22 @@
-// Module ID: 6034
-// Function ID: 6035
+// Module ID: 6036
+// Function ID: 6037
 // Name: checkpoint/CheckpointMessageComponentUtils
-// Dependencies: [6013, 11, 6035, 6036, 6037, 6038, 6358, 6359, 1128, 6022, 3088, 4915, 3056, 1900, 2000, 2]
+// Dependencies: [6015, 11, 6037, 6038, 6039, 6040, 6360, 6361, 1128, 6024, 3088, 4917, 3056, 1900, 2000, 2]
 // Exports: formatCheckpoint2026PowerLevel, getCharacterLayerUrls, getCheckpoint2026PowerBarUnits, getCheckpointDataFromMessage, getCheckpointLabel, toCheckpointMessageComponentData, transformCheckpoint2026CardComponent, transformCheckpoint2026CardToRowGeneratedComponent
 
-// Module 6034 (checkpoint/CheckpointMessageComponentUtils)
+// Module 6036 (checkpoint/CheckpointMessageComponentUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl19 from "intl" /* 1128 */;
 import Server from "Server" /* 2000 */;
 import _modDef3056 from "module_3056" /* 3056 */;
 import _modDef3088 from "module_3088" /* 3088 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4915 */;
-import CheckpointUtils from "CheckpointUtils" /* 6022 */;
-import CheckpointExperiments from "CheckpointExperiments" /* 6035 */;
-import CheckpointCardTypes from "CheckpointCardTypes" /* 6036 */;
-import CheckpointTrait from "CheckpointTrait" /* 6037 */;
-import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 6038 */;
-import CheckpointConstants from "CheckpointConstants" /* 6013 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4917 */;
+import CheckpointUtils from "CheckpointUtils" /* 6024 */;
+import CheckpointExperiments from "CheckpointExperiments" /* 6037 */;
+import CheckpointCardTypes from "CheckpointCardTypes" /* 6038 */;
+import CheckpointTrait from "CheckpointTrait" /* 6039 */;
+import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 6040 */;
+import CheckpointConstants from "CheckpointConstants" /* 6015 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

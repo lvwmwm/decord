@@ -1,11 +1,11 @@
-// Module ID: 14937
-// Function ID: 14938
+// Module ID: 14960
+// Function ID: 14961
 // Name: react-native
-// Dependencies: [14938, 2]
+// Dependencies: [14961, 2]
 // Exports: createZstdContextWeb, supportsZstd
 
-// Module 14937 (react-native)
-import react_nativeDefault from "react-native" /* 14938 */;
+// Module 14960 (react-native)
+import react_nativeDefault from "react-native" /* 14961 */;
 import size from "module_2" /* 2 */;
 
 let constants;

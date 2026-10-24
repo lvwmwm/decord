@@ -1,14 +1,14 @@
-// Module ID: 13512
-// Function ID: 13513
+// Module ID: 13549
+// Function ID: 13550
 // Name: useProvisionalAccountExplanationText
-// Dependencies: [19, 1087, 558, 576, 13513, 1128, 2067, 2]
+// Dependencies: [19, 1087, 558, 576, 13550, 1128, 2067, 2]
 
-// Module 13512 (useProvisionalAccountExplanationText)
+// Module 13549 (useProvisionalAccountExplanationText)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
-import useProvisionalAccountApplicationDefault from "useProvisionalAccountApplication" /* 13513 */;
+import useProvisionalAccountApplicationDefault from "useProvisionalAccountApplication" /* 13550 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

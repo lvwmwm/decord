@@ -1,10 +1,10 @@
-// Module ID: 10792
-// Function ID: 10793
+// Module ID: 10793
+// Function ID: 10794
 // Name: conjureWorkerFetch
-// Dependencies: [5, 10791, 2]
+// Dependencies: [5, 10792, 2]
 // Exports: fetchConjureWorker
 
-// Module 10792 (conjureWorkerFetch)
+// Module 10793 (conjureWorkerFetch)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

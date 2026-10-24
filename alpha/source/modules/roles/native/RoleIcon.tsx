@@ -1,19 +1,19 @@
-// Module ID: 7299
-// Function ID: 7300
+// Module ID: 7301
+// Function ID: 7302
 // Name: RoleIcon
-// Dependencies: [19, 21, 1384, 558, 576, 5667, 5232, 2]
+// Dependencies: [19, 21, 1384, 558, 576, 5669, 5234, 2]
 
-// Module 7299 (RoleIcon)
+// Module 7301 (RoleIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5667 */;
+import FastImageDefault from "FastImage" /* 5669 */;
 import react from "react" /* 19 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp;
-const Text_Text = tmp(5232);
+const Text_Text = tmp(5234);
 const jsx = Fragment.jsx;
 let num = 0.9375;
 if (PlatformUtils.isAndroid()) {
@@ -109,7 +109,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIcon(a
     cResult[7] = obj5;
     tmp7 = obj5;
   }
-  const obj6 = { fontFamily: "System", fontSize: result, lineHeight: "ix", textAlign: "<string:4294865153>", width: num, marginBottom: "<string:1090519040>" };
+  const obj6 = { fontFamily: "System", fontSize: result, lineHeight: "ix", textAlign: true, width: num, marginBottom: true };
   cResult[2] = num;
   cResult[3] = result;
   cResult[4] = obj6;
@@ -123,7 +123,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIcon(a
     size = 20;
   }
   const size1 = { height: size, width: size };
-  const obj = { fontFamily: "System", fontSize: size * num, lineHeight: "ix", textAlign: "<string:4294865153>", width: size, marginBottom: "<string:1090519040>" };
+  const obj = { fontFamily: "System", fontSize: size * num, lineHeight: "ix", textAlign: true, width: size, marginBottom: true };
   if (null != src) {
     const obj3 = { uri: src };
     tmp = jsx(FastImageDefault, { resizeMode: "contain", source: obj3, style: size1 });

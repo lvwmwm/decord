@@ -1,57 +1,83 @@
 // Module ID: 12637
 // Function ID: 12638
-// Dependencies: [12566, 12567, 12539]
+// Dependencies: [12597, 12630]
+// Exports: makePromiseBuffer
 
 // Module 12637
-import _mod12566 from "module_12566" /* 12566 */;
-import _mod12567 from "module_12567" /* 12567 */;
+import _mod12597 from "module_12597" /* 12597 */;
+
+let diff;
 
 
-export const profiler = {
-  startProfiler() {
-    const obj = _mod12566;
-    const client = obj.getClient();
-    if (client) {
-      const integrationByName = client.getIntegrationByName("ProfilingIntegration");
-      if (integrationByName) {
-        const tmp6 = integrationByName && undefined !== integrationByName._profiler && typeof integrationByName._profiler.start === "function" && typeof integrationByName._profiler.stop === "function";
-        if (tmp6) {
-          const _profiler = integrationByName._profiler;
-          _profiler.start();
-        } else if (_mod12567.DEBUG_BUILD) {
-          const logger3 = tmp(12539).logger;
-          logger3.warn("Profiler is not available on profiling integration.");
+export function makePromiseBuffer(arg0) {
+  let closure_0 = arg0;
+  const items = [];
+  let obj = {
+    $: items,
+    add(fn) {
+      let promise;
+      const tmp2 = undefined === promise || items.length < tmp;
+      if (tmp2) {
+        promise = fn();
+        const arr = items;
+        if (-1 === items.indexOf(promise)) {
+          arr.push(promise);
         }
-      } else if (_mod12567.DEBUG_BUILD) {
-        const logger2 = tmp(12539).logger;
-        logger2.warn("ProfilingIntegration is not available");
+        const nextPromise = promise.then(() => {
+          const first = items.splice(items.indexOf(promise), 1)[0] || Promise.resolve(undefined);
+          return first;
+        });
+        nextPromise.then(null, () => {
+          const first = items.splice(items.indexOf(promise), 1)[0] || Promise.resolve(undefined);
+          return first.then(null, () => {
+
+          });
+        });
+        return promise;
+      } else {
+        const self = this;
+        const self2 = this;
+        const rejectedSyncPromise = closure_0(items[0]).rejectedSyncPromise;
+        const sentryError = new closure_0(items[1]).SentryError("Not adding Promise because buffer limit was reached.");
+        return rejectedSyncPromise(sentryError);
       }
-    } else if (_mod12567.DEBUG_BUILD) {
-      const logger = tmp(12539).logger;
-      logger.warn("No Sentry client available, profiling is not started");
-    }
-  },
-  stopProfiler() {
-    const obj = _mod12566;
-    const client = obj.getClient();
-    if (client) {
-      const integrationByName = client.getIntegrationByName("ProfilingIntegration");
-      if (integrationByName) {
-        const tmp6 = integrationByName && undefined !== integrationByName._profiler && typeof integrationByName._profiler.start === "function" && typeof integrationByName._profiler.stop === "function";
-        if (tmp6) {
-          const _profiler = integrationByName._profiler;
-          _profiler.stop();
-        } else if (_mod12567.DEBUG_BUILD) {
-          const logger3 = tmp(12539).logger;
-          logger3.warn("Profiler is not available on profiling integration.");
+    },
+    drain(arg0) {
+      let length;
+      closure_0 = arg0;
+      const syncPromise = new closure_0(items[0]).SyncPromise((fn, arg1) => {
+        let closure_3;
+        closure_0 = fn;
+        let closure_1 = arg1;
+        const arr = length;
+        if (length.length) {
+          const tmp = globalThis;
+          const _setTimeout = setTimeout;
+          let tmp2 = closure_0;
+          const timeout = setTimeout(() => {
+            const tmp2 = closure_0 && tmp > 0;
+            if (tmp2) {
+              closure_0(false);
+            }
+          }, closure_0);
+          const item = arr.forEach((item) => {
+            const obj = _mod12597;
+            const resolvedSyncPromiseResult = obj.resolvedSyncPromise(item);
+            resolvedSyncPromiseResult.then(() => {
+              diff = diff - 1;
+              if (!diff) {
+                const _clearTimeout = clearTimeout;
+                clearTimeout(closure_1_3);
+                fn(true);
+              }
+            }, closure_1);
+          });
+        } else {
+          return fn(true);
         }
-      } else if (_mod12567.DEBUG_BUILD) {
-        const logger2 = tmp(12539).logger;
-        logger2.warn("ProfilingIntegration is not available");
-      }
-    } else if (_mod12567.DEBUG_BUILD) {
-      const logger = tmp(12539).logger;
-      logger.warn("No Sentry client available, profiling is not started");
+      });
+      return syncPromise;
     }
-  }
-};
+  };
+  return obj;
+}

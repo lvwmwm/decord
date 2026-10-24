@@ -1,9 +1,9 @@
-// Module ID: 11478
-// Function ID: 11479
+// Module ID: 11498
+// Function ID: 11499
 // Name: constants
 // Dependencies: [2]
 
-// Module 11478 (constants)
+// Module 11498 (constants)
 import size from "module_2" /* 2 */;
 
 const combined = "" + "__DISCORD_SHIM" + "_CHECK";

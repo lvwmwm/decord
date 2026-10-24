@@ -1,13 +1,13 @@
-// Module ID: 5970
-// Function ID: 5971
+// Module ID: 5972
+// Function ID: 5973
 // Name: useBackPressHandler
-// Dependencies: [19, 17, 5971, 1384, 5973, 558, 576, 2]
+// Dependencies: [19, 17, 5973, 1384, 5975, 558, 576, 2]
 // Exports: subscribeToBackPress
 
-// Module 5970 (useBackPressHandler)
+// Module 5972 (useBackPressHandler)
 import react_native from "react-native" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import KeyCommands from "KeyCommands" /* 5971 */;
+import KeyCommands from "KeyCommands" /* 5973 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 let tmp;
-const BackPressTracking = tmp(5973);
+const BackPressTracking = tmp(5975);
 let react = react_mod;
 const NativeModules = react_native.NativeModules;
 let obj = {
@@ -63,7 +63,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBackPress
         const obj2 = PlatformUtils;
         const tmp2 = require;
         if (!obj2.isIOS()) {
-          const tmp2Result = tmp2(5973);
+          const tmp2Result = tmp2(5975);
           closure_1 = tmp2Result.addBackPressListener(fn);
           fn2 = () => {
             closure_1.remove();
@@ -109,7 +109,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBackPress
       const obj2 = PlatformUtils;
       const tmp2 = require;
       if (!obj2.isIOS()) {
-        const tmp2Result = tmp2(5973);
+        const tmp2Result = tmp2(5975);
         let closure_1 = tmp2Result.addBackPressListener(fn);
         fn2 = () => {
           closure_1.remove();

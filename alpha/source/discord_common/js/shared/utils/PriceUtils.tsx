@@ -1,13 +1,13 @@
-// Module ID: 7338
-// Function ID: 7339
+// Module ID: 7340
+// Function ID: 7341
 // Name: utils/PriceUtils
-// Dependencies: [32, 109, 1098, 7339, 5646, 2]
+// Dependencies: [32, 109, 1098, 7341, 5648, 2]
 // Exports: convertToMinorCurrencyUnits, currencyCodeFromBCP47Locale, floorToWholeCurrencyUnits, formatPrice
 
-// Module 7338 (utils/PriceUtils)
+// Module 7340 (utils/PriceUtils)
 import Constants from "Constants" /* 1098 */;
-import CountryCodes from "CountryCodes" /* 5646 */;
-import _modDef7339 from "module_7339" /* 7339 */;
+import CountryCodes from "CountryCodes" /* 5648 */;
+import _modDef7341 from "module_7341" /* 7341 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ function convertToMajorCurrencyUnits(diff1, USD) {
   } else {
     const self = this;
     const self2 = this;
-    obj = new _modDef7339(diff1);
+    obj = new _modDef7341(diff1);
     const dividedByResult = obj.dividedBy(10 ** obj[USD]);
     return dividedByResult.toNumber();
   }
@@ -45,23 +45,34 @@ export const formatPrice = function(arg0, currency, arg2) {
     return arg0.toString();
   } else {
     const convertToMajorUnits = obj.convertToMajorUnits;
+    const tmp2 = undefined === convertToMajorUnits || convertToMajorUnits;
+    let tmp6;
+    const tmp5 = _objectWithoutProperties(obj, closure_2);
+    if (currency === tmp.IDR) {
+      tmp6 = obj[currency];
+    }
     obj2 = { style: "currency", currency };
-    const tmp = undefined === convertToMajorUnits || convertToMajorUnits;
-    const merged = Object.assign(_objectWithoutProperties(obj, closure_2));
+    let tmp9;
+    if (null != tmp6) {
+      tmp9 = { minimumFractionDigits: tmp6, maximumFractionDigits: tmp6 };
+      const obj3 = { minimumFractionDigits: tmp6, maximumFractionDigits: tmp6 };
+    }
+    const merged = Object.assign(tmp9);
+    const merged1 = Object.assign(tmp5);
     const _JSON = JSON;
     const _HermesInternal = HermesInternal;
     const combined = "" + arg2 + "|" + JSON.stringify(obj2);
     let value = map.get(combined);
-    const obj3 = map;
+    const obj4 = map;
     if (null == value) {
       const _Intl = Intl;
       const NumberFormatResult = Intl.NumberFormat(arg2, obj2);
-      const result = obj3.set(combined, NumberFormatResult);
+      const result = obj4.set(combined, NumberFormatResult);
       value = NumberFormatResult;
     }
     let toNumberResult = arg0;
     const format = value.format;
-    if (tmp) {
+    if (tmp2) {
       if (typeof convertToMajorCurrencyUnits === "function") {
         if (null == obj[currency]) {
           const _Error = Error;
@@ -73,8 +84,8 @@ export const formatPrice = function(arg0, currency, arg2) {
         } else {
           const self = this;
           const self2 = this;
-          const obj4 = new _modDef7339(arg0);
-          const dividedByResult = obj4.dividedBy(10 ** obj[currency]);
+          const obj5 = new _modDef7341(arg0);
+          const dividedByResult = obj5.dividedBy(10 ** obj[currency]);
           toNumberResult = dividedByResult.toNumber();
         }
       } else {
@@ -98,7 +109,7 @@ export const convertToMinorCurrencyUnits = function(arg0, arg1) {
   } else {
     const self = this;
     const self2 = this;
-    obj = new _modDef7339(arg0);
+    obj = new _modDef7341(arg0);
     const timesResult = obj.times(10 ** obj[arg1]);
     return timesResult.toNumber();
   }

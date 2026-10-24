@@ -1,25 +1,25 @@
-// Module ID: 9572
-// Function ID: 9573
+// Module ID: 9573
+// Function ID: 9574
 // Name: captureAdUserAction
-// Dependencies: [5, 7774, 1087, 6715, 7790, 7770, 7799, 7805, 1267, 1281, 1384, 7748, 9573, 7800, 7781, 9575, 2]
+// Dependencies: [5, 7776, 1087, 6717, 7792, 7772, 7801, 7807, 1267, 1281, 1384, 7750, 9574, 7802, 7783, 9576, 2]
 // Exports: captureAdUserAction
 
-// Module 9572 (captureAdUserAction)
+// Module 9573 (captureAdUserAction)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import AdCreativeType from "AdCreativeType" /* 6715 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7748 */;
-import QuestDataUtils from "QuestDataUtils" /* 7770 */;
-import getQuestLogger from "getQuestLogger" /* 7781 */;
-import AnalyticsActions from "AnalyticsActions" /* 7790 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7799 */;
-import AdDataUtils from "AdDataUtils" /* 7800 */;
-import QuestHomeSearchSession from "QuestHomeSearchSession" /* 7805 */;
-import BrandSafetyContext from "BrandSafetyContext" /* 9573 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9575 */;
+import AdCreativeType from "AdCreativeType" /* 6717 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 7750 */;
+import QuestDataUtils from "QuestDataUtils" /* 7772 */;
+import getQuestLogger from "getQuestLogger" /* 7783 */;
+import AnalyticsActions from "AnalyticsActions" /* 7792 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7801 */;
+import AdDataUtils from "AdDataUtils" /* 7802 */;
+import QuestHomeSearchSession from "QuestHomeSearchSession" /* 7807 */;
+import BrandSafetyContext from "BrandSafetyContext" /* 9574 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9576 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import QuestStore from "QuestStore" /* 7774 */;
+import QuestStore from "QuestStore" /* 7776 */;
 import size from "module_2" /* 2 */;
 
 let c2, c5, c7, c8, click_id;

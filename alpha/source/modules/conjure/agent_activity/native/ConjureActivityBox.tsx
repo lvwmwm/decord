@@ -1,22 +1,22 @@
-// Module ID: 12360
-// Function ID: 12361
+// Module ID: 12386
+// Function ID: 12387
 // Name: ConjureActivityBox
-// Dependencies: [32, 19, 17, 1087, 21, 4969, 12325, 587, 558, 576, 12361, 12281, 11852, 1128, 3830, 12316, 12407, 5232, 11743, 7955, 12408, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 4971, 12351, 587, 558, 576, 12387, 12308, 11878, 1128, 3830, 12342, 12433, 5234, 11756, 7957, 12434, 2]
 // Exports: stretchOf
 
-// Module 12360 (ConjureActivityBox)
+// Module 12386 (ConjureActivityBox)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import ConjureNativeStatusLineDefault from "ConjureNativeStatusLine" /* 12316 */;
-import conjureNativeChatLayout from "conjureNativeChatLayout" /* 12325 */;
-import ConjureSubagentMark from "ConjureSubagentMark" /* 12361 */;
-import ConjureNativeStepImagesDefault from "ConjureNativeStepImages" /* 12408 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import ConjureNativeStatusLineDefault from "ConjureNativeStatusLine" /* 12342 */;
+import conjureNativeChatLayout from "conjureNativeChatLayout" /* 12351 */;
+import ConjureSubagentMark from "ConjureSubagentMark" /* 12387 */;
+import ConjureNativeStepImagesDefault from "ConjureNativeStepImages" /* 12434 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp2;
-const WarningIcon2 = tmp2(7955);
+const WarningIcon2 = tmp2(7957);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const View = react_native.View;
@@ -780,7 +780,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Timeli
     arr = cResult[1];
   }
   if (cResult[3] !== node) {
-    let tmpResult = tmp(12281);
+    let tmpResult = tmp(12308);
     const describeNodeResult = tmpResult.describeNode(node);
     cResult[3] = node;
     cResult[4] = describeNodeResult;
@@ -797,8 +797,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Timeli
     let tmp14 = null;
     if (null != node.durationMs) {
       let obj2 = { variant: "text-xs/normal", color: "text-subtle", children: tmpResult2.describeDuration(node.durationMs) };
-      let Text = tmp(5232).Text;
-      tmpResult2 = node(11852);
+      let Text = tmp(5234).Text;
+      tmpResult2 = node(11878);
       tmp14 = closure_6(Text, obj2);
     }
     cResult[5] = node.durationMs;
@@ -970,7 +970,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Timeli
   let obj = { line: obj2.describeNode(node), live: flag2, settled: tmp9, failed: "failed" === node.status, presentation: str2, crestColor, inGutter: flag, epoch, trailing: tmp4Result };
   let tmp8 = node;
   let tmp7 = ConjureNativeStatusLineDefault;
-  obj2 = node(12281);
+  obj2 = node(12308);
   str2 = "detail";
   tmp9 = !flag2 && "failed" !== node.status;
   if (flag2) {
@@ -979,8 +979,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Timeli
   tmp4Result = null;
   if (null != node.durationMs) {
     let obj3 = { variant: "text-xs/normal", color: "text-subtle", children: tmp8Result.describeDuration(node.durationMs) };
-    let Text = tmp8(5232).Text;
-    tmp8Result = tmp8(11852);
+    let Text = tmp8(5234).Text;
+    tmp8Result = tmp8(11878);
     tmp4Result = tmp4(Text, obj3);
   }
   const children = [tmp4(tmp7, obj), , ];

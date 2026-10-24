@@ -1,11 +1,11 @@
-// Module ID: 11361
-// Function ID: 11362
+// Module ID: 11379
+// Function ID: 11380
 // Name: useBottomVoiceControlsSheetWidth
-// Dependencies: [10879, 558, 1499, 2]
+// Dependencies: [10880, 558, 1499, 2]
 
-// Module 11361 (useBottomVoiceControlsSheetWidth)
+// Module 11379 (useBottomVoiceControlsSheetWidth)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10879 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10880 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

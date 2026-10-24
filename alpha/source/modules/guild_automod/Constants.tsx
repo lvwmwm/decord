@@ -1,12 +1,12 @@
-// Module ID: 12769
-// Function ID: 12770
+// Module ID: 12806
+// Function ID: 12807
 // Name: Constants
-// Dependencies: [12770, 2, 12771, 12772]
+// Dependencies: [12807, 2, 12808, 12809]
 
-// Module 12769 (Constants)
-import AutomodTriggerType from "AutomodTriggerType" /* 12770 */;
-import AutomodEventType from "AutomodEventType" /* 12771 */;
-import AutomodActionType from "AutomodActionType" /* 12772 */;
+// Module 12806 (Constants)
+import AutomodTriggerType from "AutomodTriggerType" /* 12807 */;
+import AutomodEventType from "AutomodEventType" /* 12808 */;
+import AutomodActionType from "AutomodActionType" /* 12809 */;
 import size from "module_2" /* 2 */;
 
 const items = [AutomodTriggerType.AutomodTriggerType.USER_PROFILE, AutomodTriggerType.AutomodTriggerType.SERVER_POLICY, AutomodTriggerType.AutomodTriggerType.MENTION_SPAM, AutomodTriggerType.AutomodTriggerType.ML_SPAM, AutomodTriggerType.AutomodTriggerType.DEFAULT_KEYWORD_LIST, AutomodTriggerType.AutomodTriggerType.KEYWORD];

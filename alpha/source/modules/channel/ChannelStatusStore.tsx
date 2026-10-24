@@ -1,13 +1,13 @@
-// Module ID: 7636
-// Function ID: 7637
+// Module ID: 7638
+// Function ID: 7639
 // Name: ChannelStatusStore
-// Dependencies: [6494, 504, 1108, 584, 2]
+// Dependencies: [6496, 504, 1108, 584, 2]
 
-// Module 7636 (ChannelStatusStore)
+// Module 7638 (ChannelStatusStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ChannelTypes from "ChannelTypes" /* 1108 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6494 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6496 */;
 import size from "module_2" /* 2 */;
 
 function handleConnectionReset() {

@@ -1,13 +1,13 @@
-// Module ID: 14168
-// Function ID: 14169
+// Module ID: 14187
+// Function ID: 14188
 // Name: ProtocolUtils
-// Dependencies: [5820, 2]
+// Dependencies: [5822, 2]
 
-// Module 14168 (ProtocolUtils)
-import _modDef5820 from "module_5820" /* 5820 */;
+// Module 14187 (ProtocolUtils)
+import _modDef5822 from "module_5822" /* 5822 */;
 import size from "module_2" /* 2 */;
 
-const os = _modDef5820.os;
+const os = _modDef5822.os;
 let family;
 if (os != null) {
   family = os.family;
@@ -19,7 +19,7 @@ function launchMobile(href, arg1) {
 }
 let tmp3 = launchMobile;
 if ("Android" !== family) {
-  const os2 = _modDef5820.os;
+  const os2 = _modDef5822.os;
   let family1;
   if (os2 != null) {
     family1 = os2.family;
@@ -71,7 +71,7 @@ if ("Android" !== family) {
         return process.nextTick(() => closure_0(true));
       }
     }
-    if ("Gecko" !== _modDef5820.layout) {
+    if ("Gecko" !== _modDef5822.layout) {
       function launchChrome(href, arg1) {
         let closure_0 = arg1;
         function handleBlur() {
@@ -86,8 +86,8 @@ if ("Android" !== family) {
         }, 1000);
       }
       let launchSteam = launchChrome;
-      if (null != _modDef5820.ua) {
-        const ua = _modDef5820.ua;
+      if (null != _modDef5822.ua) {
+        const ua = _modDef5822.ua;
         launchSteam = launchChrome;
         if (-1 !== ua.indexOf("Valve Steam GameOverlay")) {
           launchSteam = function launchSteam(arg0, fn) {

@@ -1,17 +1,17 @@
-// Module ID: 16543
-// Function ID: 16544
+// Module ID: 16575
+// Function ID: 16576
 // Name: useManageSubscriptionCardData
-// Dependencies: [32, 19, 4843, 4894, 1087, 2049, 7337, 1128, 558, 576, 16534, 504, 16532, 2]
+// Dependencies: [32, 19, 4845, 4896, 1087, 2049, 7339, 1128, 558, 576, 16566, 504, 16564, 2]
 
-// Module 16543 (useManageSubscriptionCardData)
+// Module 16575 (useManageSubscriptionCardData)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef2049 from "module_2049" /* 2049 */;
-import PriceUtils from "PriceUtils" /* 7337 */;
+import PriceUtils from "PriceUtils" /* 7339 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore_mod from "GuildStore" /* 4843 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4894 */;
+import GuildStore_mod from "GuildStore" /* 4845 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

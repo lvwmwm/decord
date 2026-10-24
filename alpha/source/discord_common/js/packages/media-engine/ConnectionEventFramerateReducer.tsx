@@ -1,11 +1,11 @@
-// Module ID: 5753
-// Function ID: 5754
+// Module ID: 5755
+// Function ID: 5756
 // Name: ConnectionEventFramerateReducer
-// Dependencies: [5716, 4, 5754, 2]
+// Dependencies: [5718, 4, 5756, 2]
 
-// Module 5753 (ConnectionEventFramerateReducer)
+// Module 5755 (ConnectionEventFramerateReducer)
 import logger_Logger from "logger/Logger" /* 4 */;
-import Constants from "Constants" /* 5716 */;
+import Constants from "Constants" /* 5718 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -32,8 +32,8 @@ class ConnectionEventFramerateReducer {
     obj.connection = connection;
     obj.sinkWants = sinkWants;
     logger.enableNativeLogger(true);
-    connection.on(obj(5754).BaseConnectionEvent.Speaking, obj.handleSpeaking);
-    connection.on(obj(5754).BaseConnectionEvent.Mute, obj.handleSelfMute);
+    connection.on(obj(5756).BaseConnectionEvent.Speaking, obj.handleSpeaking);
+    connection.on(obj(5756).BaseConnectionEvent.Mute, obj.handleSelfMute);
     obj.initialize();
     return obj;
   }

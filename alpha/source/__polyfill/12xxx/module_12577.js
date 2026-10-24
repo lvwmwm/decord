@@ -1,98 +1,30 @@
 // Module ID: 12577
 // Function ID: 12578
-// Dependencies: [12567, 12544, 12539]
-// Exports: logSpanEnd, logSpanStart
+// Dependencies: [12571, 12574]
+// Exports: addGlobalUnhandledRejectionInstrumentationHandler
 
 // Module 12577
-import _mod12544 from "module_12544" /* 12544 */;
-import _mod12567 from "module_12567" /* 12567 */;
+import _mod12571 from "module_12571" /* 12571 */;
+import _mod12574 from "module_12574" /* 12574 */;
 
+function instrumentUnhandledRejection() {
+  onunhandledrejection = _mod12574.GLOBAL_OBJ.onunhandledrejection;
+  _mod12574.GLOBAL_OBJ.onunhandledrejection = function(arg0) {
+    const obj = _mod12571;
+    obj.triggerHandlers("unhandledrejection", arg0);
+    let applyResult = !onunhandledrejection;
+    if (onunhandledrejection) {
+      applyResult = onunhandledrejection(...arguments);
+    }
+    return applyResult;
+  };
+  _mod12574.GLOBAL_OBJ.onunhandledrejection.__SENTRY_INSTRUMENTED__ = true;
+}
+let onunhandledrejection = null;
 
-export const logSpanEnd = function logSpanEnd(spanContext) {
-  if (_mod12567.DEBUG_BUILD) {
-    const tmpResult = _mod12544;
-    const spanToJSONResult = tmpResult.spanToJSON(spanContext);
-    const description = spanToJSONResult.description;
-    let str = "< unknown name >";
-    if (undefined !== description) {
-      str = description;
-    }
-    const op = spanToJSONResult.op;
-    let str2 = "< unknown op >";
-    if (undefined !== op) {
-      str2 = op;
-    }
-    const spanId = spanContext.spanContext().spanId;
-    let str3 = "";
-    const tmpResult2 = _mod12544;
-    if (tmpResult2.getRootSpan(spanContext) === spanContext) {
-      str3 = "root ";
-    }
-    const _HermesInternal = HermesInternal;
-    const combined = "[Tracing] Finishing \"" + str2 + "\" " + str3 + "span \"" + str + "\" with ID " + spanId;
-    const logger = tmp(12539).logger;
-    logger.log(combined);
-  }
-};
-export const logSpanStart = function logSpanStart(spanContext) {
-  let description2;
-  let op2;
-  if (_mod12567.DEBUG_BUILD) {
-    const tmpResult = _mod12544;
-    const spanToJSONResult = tmpResult.spanToJSON(spanContext);
-    const description = spanToJSONResult.description;
-    let str = "< unknown name >";
-    if (undefined !== description) {
-      str = description;
-    }
-    const op = spanToJSONResult.op;
-    let str2 = "< unknown op >";
-    if (undefined !== op) {
-      str2 = op;
-    }
-    const parent_span_id = spanToJSONResult.parent_span_id;
-    const spanId = spanContext.spanContext().spanId;
-    const tmpResult4 = _mod12544;
-    const spanIsSampledResult = tmpResult4.spanIsSampled(spanContext);
-    const tmpResult5 = _mod12544;
-    const rootSpan = tmpResult5.getRootSpan(spanContext);
-    let str3 = "unsampled";
-    if (spanIsSampledResult) {
-      str3 = "sampled";
-    }
-    let str5 = "";
-    if (rootSpan === spanContext) {
-      str5 = "root ";
-    }
-    const _HermesInternal = HermesInternal;
-    const _HermesInternal2 = HermesInternal;
-    const combined = "[Tracing] Starting " + str3 + " " + str5 + "span";
-    const items = ["op: " + str2, , ];
-    const _HermesInternal3 = HermesInternal;
-    items[1] = "name: " + str;
-    const _HermesInternal4 = HermesInternal;
-    items[2] = "ID: " + spanId;
-    if (parent_span_id) {
-      const _HermesInternal5 = HermesInternal;
-      items.push("parent ID: " + parent_span_id);
-    }
-    if (rootSpan !== spanContext) {
-      const tmpResult6 = _mod12544;
-      ({ op: op2, description: description2 } = tmpResult6.spanToJSON(rootSpan));
-      const _HermesInternal6 = HermesInternal;
-      tmpResult6.spanToJSON(rootSpan);
-      items.push("root ID: " + rootSpan.spanContext().spanId);
-      if (op2) {
-        const _HermesInternal7 = HermesInternal;
-        items.push("root op: " + op2);
-      }
-      if (description2) {
-        const _HermesInternal8 = HermesInternal;
-        items.push("root description: " + description2);
-      }
-    }
-    const logger = tmp(12539).logger;
-    const _HermesInternal9 = HermesInternal;
-    logger.log("" + combined + "\n  " + items.join("\n  "));
-  }
+export const addGlobalUnhandledRejectionInstrumentationHandler = function addGlobalUnhandledRejectionInstrumentationHandler(arg0) {
+  const obj = _mod12571;
+  obj.addHandler("unhandledrejection", arg0);
+  const obj2 = _mod12571;
+  obj2.maybeInstrument("unhandledrejection", instrumentUnhandledRejection);
 };

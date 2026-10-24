@@ -1,11 +1,11 @@
-// Module ID: 9553
-// Function ID: 9554
+// Module ID: 9554
+// Function ID: 9555
 // Name: marketing_page_bento_box
-// Dependencies: [32, 1212, 9534, 2]
+// Dependencies: [32, 1212, 9535, 2]
 
-// Module 9553 (marketing_page_bento_box)
+// Module 9554 (marketing_page_bento_box)
 import _mod1212 from "module_1212" /* 1212 */;
-import theme_aware_asset from "theme_aware_asset" /* 9534 */;
+import theme_aware_asset from "theme_aware_asset" /* 9535 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

@@ -1,19 +1,19 @@
-// Module ID: 18320
-// Function ID: 18321
+// Module ID: 18352
+// Function ID: 18353
 // Name: RestrictedBlockedMessageGroup
-// Dependencies: [32, 19, 17, 21, 4969, 18318, 587, 558, 576, 1128, 5232, 6906, 2]
+// Dependencies: [32, 19, 17, 21, 4971, 18350, 587, 558, 576, 1128, 5234, 6908, 2]
 
-// Module 18320 (RestrictedBlockedMessageGroup)
+// Module 18352 (RestrictedBlockedMessageGroup)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import Pressables from "Pressables" /* 6906 */;
-import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 18318 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import Pressables from "Pressables" /* 6908 */;
+import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 18350 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -73,7 +73,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Restricted
   }
   if (cResult[5] !== tmp9) {
     const obj4 = { variant: "text-sm/medium", color: "text-muted", children: tmp9 };
-    const tmp13 = closure_5(renderMessage(5232).Text, obj4);
+    const tmp13 = closure_5(renderMessage(5234).Text, obj4);
     cResult[5] = tmp9;
     cResult[6] = tmp13;
     tmp11 = tmp13;
@@ -119,7 +119,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Restricted
       tmp16 = tmp17;
     }
   }
-  const tmp15 = closure_5(renderMessage(6906).PressableOpacity, { style: toggle, accessibilityRole: "button", accessibilityState: tmp8, onPress: first, children: tmp11 });
+  const tmp15 = closure_5(renderMessage(6908).PressableOpacity, { style: toggle, accessibilityRole: "button", accessibilityState: tmp8, onPress: first, children: tmp11 });
   cResult[7] = tmp4.toggle;
   cResult[8] = tmp8;
   cResult[9] = tmp11;

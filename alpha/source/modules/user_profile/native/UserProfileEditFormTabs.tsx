@@ -1,21 +1,21 @@
-// Module ID: 15926
-// Function ID: 15927
+// Module ID: 15950
+// Function ID: 15951
 // Name: UserProfileEditFormTabs
-// Dependencies: [32, 19, 17, 7302, 21, 4969, 587, 558, 576, 15925, 8730, 5157, 1128, 14350, 14403, 8899, 5050, 11823, 2]
+// Dependencies: [32, 19, 17, 7304, 21, 4971, 587, 558, 576, 15949, 8732, 5159, 1128, 14374, 14427, 8901, 5052, 11849, 2]
 
-// Module 15926 (UserProfileEditFormTabs)
+// Module 15950 (UserProfileEditFormTabs)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import ChatInputUtils from "ChatInputUtils" /* 5157 */;
-import Constants from "Constants" /* 7302 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8730 */;
-import reactDefault from "react" /* 15925 */;
+import ChatInputUtils from "ChatInputUtils" /* 5159 */;
+import Constants from "Constants" /* 7304 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8732 */;
+import reactDefault from "react" /* 15949 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp5;
-const UserProfileWidgetsBoardDefault = tmp5(14350);
+const UserProfileWidgetsBoardDefault = tmp5(14374);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const View = react_native.View;

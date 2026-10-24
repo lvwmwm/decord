@@ -1,21 +1,21 @@
-// Module ID: 16661
-// Function ID: 16662
+// Module ID: 16693
+// Function ID: 16694
 // Name: DisplayNameStylesFontPickerSheet
-// Dependencies: [32, 19, 17, 1410, 4994, 1098, 21, 9220, 587, 4969, 558, 576, 5232, 15845, 8657, 16658, 16660, 4997, 5037, 1412, 1409, 5210, 5208, 1128, 2928, 16662, 5242, 15851, 5035, 15848, 15840, 15846, 5667, 16663, 6986, 5975, 5684, 5263, 2]
+// Dependencies: [32, 19, 17, 1410, 4996, 1098, 21, 9221, 587, 4971, 558, 576, 5234, 15869, 8659, 16690, 16692, 4999, 15852, 6713, 5039, 1412, 1409, 5212, 5210, 1128, 2928, 16694, 5244, 4247, 15875, 5037, 15872, 15864, 15870, 5669, 16695, 6988, 5977, 5686, 5265, 2]
 
-// Module 16661 (DisplayNameStylesFontPickerSheet)
+// Module 16693 (DisplayNameStylesFontPickerSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1410 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
-import HapticUtils from "HapticUtils" /* 5210 */;
-import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9220 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import HapticUtils from "HapticUtils" /* 5212 */;
+import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9221 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4994 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4996 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ let unpackModuleId;
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ View: hasOwnProperty, Pressable: metroRequire } = react_native);
-let HEXAGON_CAMPAIGN_FONTS = DisplayNameStylesConstants.HEXAGON_CAMPAIGN_FONTS;
+const HEXAGON_CAMPAIGN_FONTS = DisplayNameStylesConstants.HEXAGON_CAMPAIGN_FONTS;
 const HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT = HexagonCampaignConstants.HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT;
 ({ HEXAGON_CAMPAIGN_NON_PREMIUM_CUTOFF_AT_MS: c9, HEXAGON_CAMPAIGN_PREMIUM_CUTOFF_AT_MS: c10, HexagonCampaignPerk: unpackModuleId, HexagonCampaignPerkAvailability: closure_12 } = HexagonCampaignConstants);
 const Fonts = Constants.Fonts;
@@ -64,21 +64,23 @@ obj8 = { borderColor: nativeDefault.colors.CONTROL_BRAND_FOREGROUND };
 size1 = { position: "absolute", top: nativeDefault.space.PX_8, right: nativeDefault.space.PX_8, width: nativeDefault.space.PX_8, height: nativeDefault.space.PX_8, borderRadius: nativeDefault.space.PX_8 / 2, backgroundColor: nativeDefault.colors.BADGE_PRIMARY_BACKGROUND, shadowColor: nativeDefault.colors.BADGE_PRIMARY_BACKGROUND, shadowRadius: nativeDefault.space.PX_4, shadowOpacity: 1, elevation: 4 };
 obj9 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_12, paddingVertical: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.sm, marginTop: nativeDefault.space.PX_16 };
 let closure_16 = createStyles(obj);
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameStylesFontPickerSheet(displayName) {
-  let closure_7;
+const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameStylesFontPickerSheet(arg0) {
+  let displayName;
   let dotFontIds;
   let first1;
+  let isTryItOut;
   let onSelectFont;
   let selectedFontId;
-  let tmp6;
+  let tmp7;
   let tmp = onSelectFont;
   let tmp2 = dotFontIds;
   let obj = onSelectFont(dotFontIds[11]);
   const cResult = obj.c(73);
-  ({ selectedFontId, onSelectFont } = displayName);
-  displayName = displayName.displayName;
-  let closure_1 = closure_16();
-  const tmp4 = closure_16();
+  ({ selectedFontId, onSelectFont } = arg0);
+  ({ displayName, isTryItOut } = arg0);
+  const tmp4 = undefined !== isTryItOut && isTryItOut;
+  const tmp5 = closure_16();
+  let closure_1 = tmp5;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     function learnMoreHook(children, arg1) {
       const obj = { variant: "text-xs/medium", color: "text-link", accessibilityRole: "link", onPress: onSelectFont(dotFontIds[13]).openHexagonCampaignLearnMore, children };
@@ -95,118 +97,127 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { includeCampaignFonts: true };
     cResult[1] = obj2;
-    tmp6 = obj2;
+    tmp7 = obj2;
   } else {
-    tmp6 = cResult[1];
+    tmp7 = cResult[1];
   }
-  const tmpResult5 = tmp(tmp2[15]);
-  const visibleFontOrder = tmpResult5.useVisibleFontOrder(tmp6);
-  const tmpResult6 = tmp(tmp2[16]);
-  const displayNameStylesNewFonts = tmpResult6.useDisplayNameStylesNewFonts(visibleFontOrder);
+  const tmpResult6 = tmp(tmp2[15]);
+  const visibleFontOrder = tmpResult6.useVisibleFontOrder(tmp7);
+  const tmpResult7 = tmp(tmp2[16]);
+  const displayNameStylesNewFonts = tmpResult7.useDisplayNameStylesNewFonts(visibleFontOrder);
   dotFontIds = displayNameStylesNewFonts.dotFontIds;
   const dismissFontDot = displayNameStylesNewFonts.dismissFontDot;
-  const tmpResult7 = tmp(tmp2[17]);
-  const tmp8 = tmpResult7.useHexagonCampaignPerkAvailability(constants.DISPLAY_NAME_STYLE, "DisplayNameStylesFontPickerSheet") === constants2.SELECTABLE;
-  if (cResult[2] === tmp8) {
-    let tmp20;
-    let tmp26;
+  const tmpResult8 = tmp(tmp2[17]);
+  let tmp9 = tmpResult8.useHexagonCampaignPerkAvailability(constants.DISPLAY_NAME_STYLE, "DisplayNameStylesFontPickerSheet") === constants2.SELECTABLE;
+  if (cResult[2] === tmp9) {
+    let tmp10;
+    let tmp24;
+    let tmp30;
     if (cResult[3] === visibleFontOrder) {
-      let tmp9 = cResult[4];
+      tmp10 = cResult[4];
     }
+    const useTrackHexagonCampaignContentViewed = tmp(tmp2[18]).useTrackHexagonCampaignContentViewed;
+    tmp(tmp2[18]);
+    const DISPLAY_NAME_STYLES_SETTINGS = tmp(tmp2[19]).QuestContent.DISPLAY_NAME_STYLES_SETTINGS;
+    let tmp13 = tmp10;
+    const FONT_PICKER = tmp(tmp2[18]).HexagonCampaignContentSurface.FONT_PICKER;
+    if (tmp10) {
+      tmp13 = !tmp4;
+    }
+    const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(DISPLAY_NAME_STYLES_SETTINGS, FONT_PICKER, tmp13);
     if (cResult[5] !== visibleFontOrder) {
-      let tmp12;
+      let tmp16;
       const _Symbol = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        class B {
+        class X {
           constructor(arg0) {
-            return !tmp27.includes(arg0);
+            return !Z.includes(arg0);
           }
         }
-        cResult[7] = B;
-        tmp12 = B;
+        cResult[7] = X;
+        tmp16 = X;
       } else {
-        class B {
+        class X {
           constructor(arg0) {
-            return !tmp27.includes(arg0);
+            return !Z.includes(arg0);
           }
         }
       }
-      const found = visibleFontOrder.filter(tmp12);
+      const found = visibleFontOrder.filter(tmp16);
       cResult[5] = visibleFontOrder;
       cResult[6] = found;
-      const tmp11 = found;
     } else {
-      class B {
+      class X {
         constructor(arg0) {
-          return !tmp27.includes(arg0);
+          return !Z.includes(arg0);
         }
       }
     }
-    const tmp16 = dismissFontDot(first1.useState(selectedFontId), 2);
-    first1 = tmp16[0];
-    let closure_5 = tmp16[1];
+    const tmp20 = dismissFontDot(first1.useState(selectedFontId), 2);
+    first1 = tmp20[0];
+    let closure_5 = tmp20[1];
     if (cResult[8] !== (first1 === HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT)) {
-      class B {
+      class X {
         constructor(arg0) {
-          return !tmp27.includes(arg0);
+          return !Z.includes(arg0);
         }
       }
-      tmp21[0] = first1 === HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT;
+      tmp25[0] = first1 === HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT;
       cResult[8] = first1 === HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT;
-      cResult[9] = tmp21;
-      tmp20 = tmp21;
+      cResult[9] = tmp25;
+      tmp24 = tmp25;
     } else {
-      class B {
+      class X {
         constructor(arg0) {
-          return !tmp27.includes(arg0);
+          return !Z.includes(arg0);
         }
       }
     }
-    const tmpResult8 = tmp(tmp2[18]);
-    const radioA11yNative = tmpResult8.useRadioA11yNative(tmp20);
-    const DEFAULT = tmp(tmp2[19]).DisplayNameFont.DEFAULT;
+    const tmpResult10 = tmp(tmp2[20]);
+    const radioA11yNative = tmpResult10.useRadioA11yNative(tmp24);
+    const DEFAULT = tmp(tmp2[21]).DisplayNameFont.DEFAULT;
     if (cResult[10] !== displayName) {
-      class B {
+      class X {
         constructor(arg0) {
-          return !tmp27.includes(arg0);
+          return !Z.includes(arg0);
         }
       }
       cResult[10] = displayName;
       cResult[11] = obj8.hasNonLatinLetters(displayName);
       const hasNonLatinLettersResult = obj8.hasNonLatinLetters(displayName);
     } else {
-      class B {
+      class X {
         constructor(arg0) {
-          return !tmp27.includes(arg0);
+          return !Z.includes(arg0);
         }
       }
     }
-    let closure_6 = tmp25;
+    let closure_6 = tmp29;
     const _Symbol2 = Symbol;
     if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-      class B {
+      class Z {
         constructor(arg0) {
-          return !tmp27.includes(arg0);
+          closure_5(arg0);
         }
       }
-      cResult[12] = tmp27;
-      tmp26 = tmp27;
+      cResult[12] = Z;
+      tmp30 = Z;
     } else {
-      class B {
+      class Z {
         constructor(arg0) {
-          return !tmp27.includes(arg0);
+          closure_5(arg0);
         }
       }
     }
-    HEXAGON_CAMPAIGN_FONTS = tmp26;
+    Z = tmp30;
     if (cResult[13] === first1 !== selectedFontId) {
-      class B {
+      class Z {
         constructor(arg0) {
-          return !tmp27.includes(arg0);
+          closure_5(arg0);
         }
       }
     }
-    const fn = function $() {
+    function te() {
       const obj = HapticUtils;
       const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
       const tmp3 = closure_6;
@@ -215,31 +226,33 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
       }
       const obj2 = ActionSheetActionCreatorsDefault;
       obj2.hideActionSheet();
-    };
+    }
     cResult[13] = first1 !== selectedFontId;
     cResult[14] = first1;
     cResult[15] = onSelectFont;
-    cResult[16] = fn;
+    cResult[16] = te;
   }
-  let hasItem = tmp8;
+  let hasItem = tmp9;
   if (hasItem) {
-    class B {
+    class Z {
       constructor(arg0) {
-        return !tmp27.includes(arg0);
+        closure_5(arg0);
       }
     }
     hasItem = visibleFontOrder.includes(HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT);
   }
-  cResult[2] = tmp8;
+  cResult[2] = tmp9;
   cResult[3] = visibleFontOrder;
   cResult[4] = hasItem;
-}) : (function DisplayNameStylesFontPickerSheet(displayName) {
+  tmp10 = hasItem;
+}) : (function DisplayNameStylesFontPickerSheet(arg0) {
   let Button;
   let _undefined;
   let c3;
   let c4;
   let closure_1;
   let closure_6;
+  let displayName;
   let first;
   let intl;
   let intl2;
@@ -247,6 +260,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
   let intl4;
   let intl5;
   let intl6;
+  let isTryItOut;
   let items2;
   let items3;
   let items5;
@@ -263,15 +277,19 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
   let obj9;
   let onSelectFont;
   let selectedFontId;
-  let tmp17Result;
-  let tmp18;
-  ({ selectedFontId, onSelectFont } = displayName);
-  displayName = displayName.displayName;
+  let tmp20Result;
+  let tmp21;
+  ({ selectedFontId, onSelectFont } = arg0);
+  ({ displayName, isTryItOut } = arg0);
+  if (isTryItOut === undefined) {
+    isTryItOut = false;
+  }
   let visibleFontOrder;
   _slicedToArray = undefined;
   react = undefined;
   first = undefined;
   closure_6 = undefined;
+  let closure_7;
   let closure_8;
   let tmp = closure_16();
   importDefault = tmp;
@@ -287,17 +305,25 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
   const tmp5 = constants;
   const obj5 = onSelectFont(visibleFontOrder[17]);
   let hasItem = obj5.useHexagonCampaignPerkAvailability(constants.DISPLAY_NAME_STYLE, "DisplayNameStylesFontPickerSheet") === constants2.SELECTABLE && visibleFontOrder.includes(closure_8);
+  const useTrackHexagonCampaignContentViewed = tmp2(tmp3[18]).useTrackHexagonCampaignContentViewed;
+  tmp2(tmp3[18]);
+  const DISPLAY_NAME_STYLES_SETTINGS = tmp2(tmp3[19]).QuestContent.DISPLAY_NAME_STYLES_SETTINGS;
+  let tmp9 = hasItem;
+  const FONT_PICKER = tmp2(tmp3[18]).HexagonCampaignContentSurface.FONT_PICKER;
+  if (hasItem) {
+    tmp9 = !isTryItOut;
+  }
+  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(DISPLAY_NAME_STYLES_SETTINGS, FONT_PICKER, tmp9);
   let items = [visibleFontOrder];
   const memo = react.useMemo(() => visibleFontOrder.filter((item) => !closure_1_7.includes(item)), items);
   [first, closure_6] = react.useState(selectedFontId);
-  const tmp11 = first === closure_8;
-  let tmp10 = closure_8;
-  const tmp2Result = tmp2(tmp3[18]);
-  const radioA11yNative = tmp2Result.useRadioA11yNative({ selected: tmp11 });
-  const DEFAULT = tmp2(tmp3[19]).DisplayNameFont.DEFAULT;
-  let closure_7 = tmp14;
-  const tmp2Result2 = tmp2(tmp3[20]);
-  const hasNonLatinLettersResult = tmp2Result2.hasNonLatinLetters(displayName);
+  const tmp2Result3 = tmp2(tmp3[20]);
+  const radioA11yNative = tmp2Result3.useRadioA11yNative({ selected: tmp14 });
+  const DEFAULT = tmp2(tmp3[21]).DisplayNameFont.DEFAULT;
+  closure_7 = tmp17;
+  const tmp2Result4 = tmp2(tmp3[22]);
+  const hasNonLatinLettersResult = tmp2Result4.hasNonLatinLetters(displayName);
+  const tmp13 = closure_8;
   closure_8 = react.useCallback((arg0) => {
     closure_6(arg0);
   }, []);
@@ -312,55 +338,55 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
     const obj2 = ActionSheetActionCreatorsDefault;
     obj2.hideActionSheet();
   }, items1);
-  let obj3 = { ref: bottomSheetRef, startExpanded: hasItem, header: closure_14(tmp18, obj6), children: closure_14(first, obj8) };
-  BottomSheet = tmp2(tmp3[37]).BottomSheet;
+  let obj3 = { ref: bottomSheetRef, startExpanded: hasItem, header: closure_14(tmp21, obj6), children: closure_14(first, obj8) };
+  BottomSheet = tmp2(tmp3[40]).BottomSheet;
   obj6 = { title: intl.string(require("module_2928")["0JCuGm"]), trailing: closure_14(Button, obj7) };
-  tmp18 = require("DisplayNameStylesSheetHeader");
-  intl = tmp2(tmp3[23]).intl;
-  obj7 = { text: intl2.string(tmp2(tmp3[23]).t.XqMe3N), onPress: callback, variant: "primary", size: "sm" };
-  Button = tmp2(tmp3[26]).Button;
-  intl2 = tmp2(tmp3[23]).intl;
+  tmp21 = require("DisplayNameStylesSheetHeader");
+  intl = tmp2(tmp3[25]).intl;
+  obj7 = { text: intl2.string(tmp2(tmp3[25]).t.XqMe3N), onPress: callback, variant: "primary", size: "sm" };
+  Button = tmp2(tmp3[28]).Button;
+  intl2 = tmp2(tmp3[25]).intl;
   obj8 = { style: tmp.container, children: closure_15(first, obj9) };
   obj9 = { style: tmp.contentContainer, children: items6 };
   if (hasItem) {
     const obj10 = { style: tmp.campaignSection, children: closure_15(first, obj11) };
     obj11 = { style: tmp.campaignContent, children: items3 };
     const obj12 = { style: tmp.campaignHeader, children: items2 };
-    const obj13 = { variant: "text-sm/semibold", color: "text-subtle", children: intl3.string(tmp2(tmp3[23]).t["2UCcmW"]) };
+    const obj13 = { variant: "text-sm/semibold", color: "text-subtle", children: intl3.string(require("module_4247")["2UCcmW"]) };
     let Text = tmp2(tmp3[12]).Text;
-    intl3 = tmp2(tmp3[23]).intl;
+    intl3 = tmp2(tmp3[25]).intl;
     items2 = [closure_14(Text, obj13), ];
     const obj14 = { perk: tmp5.DISPLAY_NAME_STYLE };
     items2[1] = closure_14(require("HexagonCampaignDaysLeftBadge"), obj14);
     items3 = [closure_15(first, obj12), , ];
-    const obj15 = { theme: tmp2(tmp3[29]).ThemeTypes.DARK, children: closure_14(closure_6, obj16) };
-    const ThemeContextProvider = tmp2(tmp3[28]).ThemeContextProvider;
+    const obj15 = { theme: tmp2(tmp3[32]).ThemeTypes.DARK, children: closure_14(closure_6, obj16) };
+    const ThemeContextProvider = tmp2(tmp3[31]).ThemeContextProvider;
     obj16 = {
       onPress() {
           return closure_8(HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT);
         },
-      accessibilityLabel: intl4.string(require("getDisplayNameStylesFontName")(tmp10)),
+      accessibilityLabel: intl4.string(require("getDisplayNameStylesFontName")(tmp13)),
       children: closure_15(first, obj17)
     };
     const merged = Object.assign(radioA11yNative);
-    intl4 = tmp2(tmp3[23]).intl;
+    intl4 = tmp2(tmp3[25]).intl;
     const items4 = [tmp.campaignCard, ];
     obj17 = { style: items4, children: items5 };
-    const tmp25 = tmp11 && tmp.campaignCardSelected;
-    items4[1] = tmp25;
+    const tmp28 = first === closure_8 && tmp.campaignCardSelected;
+    items4[1] = tmp28;
     items5 = [closure_14(require("HexagonCampaignPromoGradient"), { angle: 166 }), , , ];
-    const obj18 = { style: tmp.campaignLogoFrame, children: closure_14(tmp17Result, obj19) };
+    const obj18 = { style: tmp.campaignLogoFrame, children: closure_14(tmp20Result, obj19) };
     obj19 = { source: require("AssetRegistry"), style: tmp.campaignLogo, resizeMode: "contain", accessible: false };
-    tmp17Result = require("FastImage");
+    tmp20Result = require("FastImage");
     items5[1] = closure_14(first, obj18);
     const obj20 = { variant: "heading-xl/semibold", color: "text-default", style: tmp.campaignName, lineClamp: 1, children: displayName };
     items5[2] = closure_14(tmp2(tmp3[12]).Text, obj20);
-    const obj21 = { selected: tmp11 };
-    items5[3] = closure_14(tmp2(tmp3[34]).FormRadio, obj21);
+    const obj21 = { selected: first === closure_8 };
+    items5[3] = closure_14(tmp2(tmp3[37]).FormRadio, obj21);
     items3[1] = closure_14(ThemeContextProvider, obj15);
-    const obj22 = { variant: "text-xs/medium", color: "text-muted", style: tmp.campaignLegal, children: intl5.format(tmp2(tmp3[23]).t.y2YmJv, obj23) };
+    const obj22 = { variant: "text-xs/medium", color: "text-muted", style: tmp.campaignLegal, children: intl5.format(require("module_4247").y2YmJv, obj23) };
     const Text2 = tmp2(tmp3[12]).Text;
-    intl5 = tmp2(tmp3[23]).intl;
+    intl5 = tmp2(tmp3[25]).intl;
     obj23 = {
       nonPremiumEndDate,
       premiumEndDate,
@@ -371,9 +397,9 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
         }
     };
     items3[2] = closure_14(Text2, obj22);
-    hasItem = tmp16(tmp19, obj10);
+    hasItem = tmp19(tmp22, obj10);
   }
-  let tmp20Result = first !== DEFAULT;
+  let tmp23Result = first !== DEFAULT;
   items6 = [hasItem, , ];
   const obj24 = {
     direction: "horizontal",
@@ -389,8 +415,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
       let closure_0 = item;
       let tmp = first;
       let tmp3 = visibleFontOrder;
-      const intl = onSelectFont(visibleFontOrder[23]).intl;
-      const stringResult = intl.string(closure_1(visibleFontOrder[30])(item));
+      const intl = onSelectFont(visibleFontOrder[25]).intl;
+      const stringResult = intl.string(closure_1(visibleFontOrder[33])(item));
       let PRIMARY_SEMIBOLD = onSelectFont(visibleFontOrder[7]).DISPLAY_NAME_STYLES_FONT_FAMILY_MAP[item];
       const tmp2 = onSelectFont;
       if (PRIMARY_SEMIBOLD == null) {
@@ -436,21 +462,21 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
       return closure_1_14(tmp9, obj, item);
     })
   };
-  const Stack = tmp2(tmp3[35]).Stack;
+  const Stack = tmp2(tmp3[38]).Stack;
   items6[1] = closure_14(Stack, obj24);
-  if (tmp20Result) {
-    tmp20Result = hasNonLatinLettersResult;
+  if (tmp23Result) {
+    tmp23Result = hasNonLatinLettersResult;
   }
-  if (tmp20Result) {
+  if (tmp23Result) {
     const obj25 = { style: tmp.nonLatinDisclaimer, children: items7 };
-    items7 = [closure_14(tmp2(tmp3[36]).CircleInformationIcon, { size: "sm" }), ];
+    items7 = [closure_14(tmp2(tmp3[39]).CircleInformationIcon, { size: "sm" }), ];
     const obj26 = { variant: "text-xs/normal", color: "text-subtle", style: tmp.disclaimerText, children: intl6.string(require("module_2928")["+O1xL2"]) };
     const Text3 = tmp2(tmp3[12]).Text;
-    intl6 = tmp2(tmp3[23]).intl;
+    intl6 = tmp2(tmp3[25]).intl;
     items7[1] = closure_14(Text3, obj26);
-    tmp20Result = tmp20(tmp19, obj25);
+    tmp23Result = tmp23(tmp22, obj25);
   }
-  items6[2] = tmp20Result;
+  items6[2] = tmp23Result;
   return closure_14(BottomSheet, obj3);
 });
 size = size_mod;

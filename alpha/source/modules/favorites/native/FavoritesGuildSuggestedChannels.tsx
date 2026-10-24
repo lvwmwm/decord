@@ -1,25 +1,25 @@
-// Module ID: 17593
-// Function ID: 17594
+// Module ID: 17625
+// Function ID: 17626
 // Name: FavoritesGuildSuggestedChannels
-// Dependencies: [19, 17, 17594, 1087, 12033, 21, 587, 4969, 558, 576, 17496, 1128, 3412, 6929, 7142, 17595, 17596, 5242, 12863, 2]
+// Dependencies: [19, 17, 17626, 1087, 12059, 21, 587, 4971, 558, 576, 17528, 1128, 3412, 6931, 7144, 17627, 17628, 5244, 12900, 2]
 // Exports: getFavoritesSuggestionsNoticeHeight
 
-// Module 17593 (FavoritesGuildSuggestedChannels)
+// Module 17625 (FavoritesGuildSuggestedChannels)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
 import _modDef3412 from "module_3412" /* 3412 */;
-import components_Button_Button from "components/Button/Button" /* 5242 */;
-import XSmallIcon from "XSmallIcon" /* 6929 */;
-import useScaledRowHeightDefault from "useScaledRowHeight" /* 7142 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12033 */;
-import SearchableDestinationListRowDefault from "SearchableDestinationListRow" /* 17595 */;
-import handleFavoritesGuildAddSuggestedChannelDefault from "handleFavoritesGuildAddSuggestedChannel" /* 17596 */;
+import components_Button_Button from "components/Button/Button" /* 5244 */;
+import XSmallIcon from "XSmallIcon" /* 6931 */;
+import useScaledRowHeightDefault from "useScaledRowHeight" /* 7144 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12059 */;
+import SearchableDestinationListRowDefault from "SearchableDestinationListRow" /* 17627 */;
+import handleFavoritesGuildAddSuggestedChannelDefault from "handleFavoritesGuildAddSuggestedChannel" /* 17628 */;
 import react_mod from "react" /* 19 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17594 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17626 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
   let obj = arr(576);
   const cResult = obj.c(21);
   const tmp4 = closure_13();
-  let obj2 = arr(17496);
+  let obj2 = arr(17528);
   const categoryStyles = obj2.useCategoryStyles();
   arr = closure_5();
   const tmp6 = closure_6();
@@ -65,7 +65,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
     first = cResult[0];
   }
   if (cResult[1] !== tmp6) {
-    let obj3 = { label: first, perform: tmp6, Icon: tmp(6929).XSmallIcon };
+    let obj3 = { label: first, perform: tmp6, Icon: tmp(6931).XSmallIcon };
     cResult[1] = tmp6;
     cResult[2] = obj3;
     tmp10 = obj3;
@@ -167,8 +167,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
       tmp19 = fn;
     }
     const obj7 = { name: intl2.string(_modDef3412.oHWnLy), withMarginTop: false, styles: categoryStyles, trailingAction: tmp10 };
-    const renderCategoryItem = tmp(17496).renderCategoryItem;
-    tmp(17496);
+    const renderCategoryItem = tmp(17528).renderCategoryItem;
+    tmp(17528);
     intl2 = tmp(1128).intl;
     const renderCategoryItemResult = renderCategoryItem(obj7);
     cResult[5] = categoryStyles;
@@ -184,7 +184,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
   let perform;
   let style;
   let tmp = closure_13();
-  let obj = arr(17496);
+  let obj = arr(17528);
   const categoryStyles = obj.useCategoryStyles();
   arr = closure_5();
   const tmp5 = closure_6();
@@ -204,8 +204,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
   if (0 !== arr.length) {
     let obj2 = { style: tmp.container, children: items2 };
     let obj3 = { name: intl.string(_modDef3412.oHWnLy), withMarginTop: false, styles: categoryStyles, trailingAction: memo };
-    const renderCategoryItem = arr(17496).renderCategoryItem;
-    arr(17496);
+    const renderCategoryItem = arr(17528).renderCategoryItem;
+    arr(17528);
     intl = tmp2(1128).intl;
     items2 = [renderCategoryItem(obj3), ];
     const obj4 = {

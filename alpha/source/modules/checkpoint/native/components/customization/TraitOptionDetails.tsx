@@ -1,17 +1,17 @@
-// Module ID: 12991
-// Function ID: 12992
+// Module ID: 13028
+// Function ID: 13029
 // Name: TraitOptionDetails
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 6038, 1128, 3088, 5232, 9791, 7276, 6360, 12992, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 6040, 1128, 3088, 5234, 9792, 7278, 6362, 13029, 2]
 
-// Module 12991 (TraitOptionDetails)
+// Module 13028 (TraitOptionDetails)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3088 from "module_3088" /* 3088 */;
-import RarityBadgeDefault from "RarityBadge" /* 12992 */;
+import RarityBadgeDefault from "RarityBadge" /* 13029 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let hasOwnProperty;
 let metroRequire;
 let obj2;
 let tmp;
-const Text_Text = tmp(5232);
+const Text_Text = tmp(5234);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty, Fragment: metroRequire } = Fragment);
 let obj = { titleRow: obj2, title: { textTransform: "capitalize" }, subscribeLink: { textDecorationLine: "underline" } };
@@ -41,7 +41,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetDe
   _require = tmp4;
   let tmp5 = null;
   if (!hidden) {
-    if (asset.status === tmp(6038).CheckpointTraitOptionStatus.NITRO_LOCKED) {
+    if (asset.status === tmp(6040).CheckpointTraitOptionStatus.NITRO_LOCKED) {
       let tmp8;
       if (cResult[0] !== tmp4) {
         const intl = tmp(1128).intl;
@@ -76,7 +76,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetDe
     } else {
       let tmp6;
       if (cResult[2] !== asset) {
-        const tmpResult = tmp(6360);
+        const tmpResult = tmp(6362);
         const assetDescription = tmpResult.getAssetDescription(asset);
         cResult[2] = asset;
         cResult[3] = assetDescription;
@@ -94,7 +94,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetDe
     }
     return tmp12;
   }
-  const tmp13 = closure_4(tmp(5232).Text, { variant: "text-md/medium", color: "text-subtle", accessibilityElementsHidden: null == tmp5, children: tmp5 });
+  const tmp13 = closure_4(tmp(5234).Text, { variant: "text-md/medium", color: "text-subtle", accessibilityElementsHidden: null == tmp5, children: tmp5 });
   cResult[4] = tmp5;
   cResult[5] = null == tmp5;
   cResult[6] = tmp13;

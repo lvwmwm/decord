@@ -6,7 +6,8 @@
 // Module 5281 (react)
 import react from "react" /* 19 */;
 
-const context = react.createContext(null);
+const createContext = react.createContext;
+const context = createContext(null);
 
-export const BottomSheetModalInternalContext = context;
-export const BottomSheetModalInternalProvider = context.Provider;
+export const BottomSheetGestureHandlersContext = context;
+export const BottomSheetDraggableContext = createContext(null);

@@ -1,8 +1,8 @@
-// Module ID: 6325
-// Function ID: 6326
+// Module ID: 6327
+// Function ID: 6328
 // Dependencies: [2]
 
-// Module 6325
+// Module 6327
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/wearable/cat_backpack.png.js");

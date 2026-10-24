@@ -1,14 +1,14 @@
-// Module ID: 16015
-// Function ID: 16016
+// Module ID: 16039
+// Function ID: 16040
 // Name: AccountConfirmPasswordSetting
-// Dependencies: [8330, 1087, 11204, 1128, 7087, 2]
+// Dependencies: [8332, 1087, 11205, 1128, 7089, 2]
 
-// Module 16015 (AccountConfirmPasswordSetting)
+// Module 16039 (AccountConfirmPasswordSetting)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import UserSettingsConfirmPassword from "UserSettingsConfirmPassword" /* 7087 */;
-import SettingsConstants from "SettingsConstants" /* 8330 */;
-import SettingBuilders from "SettingBuilders" /* 11204 */;
+import UserSettingsConfirmPassword from "UserSettingsConfirmPassword" /* 7089 */;
+import SettingsConstants from "SettingsConstants" /* 8332 */;
+import SettingBuilders from "SettingBuilders" /* 11205 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

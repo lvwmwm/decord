@@ -1,17 +1,18 @@
-// Module ID: 19184
-// Function ID: 19185
+// Module ID: 19211
+// Function ID: 19212
 // Name: EligibilityChecklist
-// Dependencies: [19, 17, 21, 4969, 558, 576, 19185, 19186, 5667, 5232, 5242, 1202, 16537, 2]
+// Dependencies: [19, 17, 21, 4971, 558, 576, 7267, 587, 7018, 5234, 5244, 16569, 2]
 
-// Module 19184 (EligibilityChecklist)
+// Module 19211 (EligibilityChecklist)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import components_Button_Button from "components/Button/Button" /* 5242 */;
-import FastImageDefault from "FastImage" /* 5667 */;
+import nativeDefault from "native" /* 587 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import components_Button_Button from "components/Button/Button" /* 5244 */;
+import FormSeparatorDefault from "FormSeparator" /* 16569 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +21,7 @@ let hasOwnProperty;
 let metroRequire;
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty, Fragment: metroRequire } = Fragment);
-let closure_7 = createStyles.createStyles({ row: { paddingHorizontal: 24, paddingTop: 16, flex: 0, flexDirection: "row" }, eligibleRow: { opacity: 0.8 }, rowStatusIcon: { height: 20, width: 20, marginRight: 16 }, rowTextColumn: { flex: 1, flexDirection: "column" }, rowLabel: { marginBottom: 4 }, actionButtonWrapper: { marginTop: 12 }, divider: { marginHorizontal: 24 } });
+let closure_7 = createStyles.createStyles({ row: { paddingHorizontal: 24, paddingTop: 16, flex: 0, flexDirection: "row" }, eligibleRow: { opacity: 0.8 }, rowStatusIcon: { height: 20, width: 20, marginRight: 16 }, rowTextColumn: { flex: 1, flexDirection: "column" }, rowLabel: { marginBottom: 4 }, actionButtonWrapper: { marginTop: 12 }, divider: { marginHorizontal: 24 }, lastRowSpacer: { height: 16 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function EligibilityChecklistRow(arg0) {
   let isLast;
@@ -28,200 +29,213 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Eligibi
   let items;
   let items1;
   let items2;
-  let obj9;
+  let obj10;
+  let tmp6Result;
   const obj = react2;
-  const cResult = obj.c(30);
+  const cResult = obj.c(31);
   ({ isLast, item } = arg0);
   const tmp4 = closure_7();
-  if (cResult[0] === tmp4.row) {
-    let tmp6;
-    let tmp7Result;
-    let tmp9;
-    if (cResult[1] === (item.checked && tmp4.eligibleRow)) {
-      tmp6 = cResult[2];
+  if (cResult[0] === item.checked) {
+    let tmp5;
+    if (cResult[1] === tmp4.rowStatusIcon) {
+      tmp5 = cResult[2];
     }
-    if (item.checked) {
-      tmp7Result = tmp7(19185);
-      tmp9 = tmp7;
-    } else {
-      tmp7Result = tmp7(19186);
-      tmp9 = tmp7;
-    }
-    if (cResult[3] === tmp4.rowStatusIcon) {
-      let tmp10;
-      if (cResult[4] === tmp7Result) {
-        tmp10 = cResult[5];
+    if (cResult[3] === tmp4.rowTextColumn) {
+      let tmp11;
+      if (cResult[4] === (item.checked && tmp4.eligibleRow)) {
+        tmp11 = cResult[5];
       }
-      const tmp13 = item.checked ? item.checkedLabel : item.uncheckedLabel;
+      const tmp12 = item.checked ? item.checkedLabel : item.uncheckedLabel;
       if (cResult[6] === tmp4.rowLabel) {
-        let tmp14;
-        let tmp17;
-        if (cResult[7] === tmp13) {
-          tmp14 = cResult[8];
+        let tmp13;
+        let tmp16;
+        if (cResult[7] === tmp12) {
+          tmp13 = cResult[8];
         }
         if (cResult[9] !== item.description) {
           const obj2 = { variant: "text-sm/normal", color: "interactive-text-default", children: item.description };
-          const tmp19 = React3(Text_Text.Text, obj2);
+          const tmp18 = React3(Text_Text.Text, obj2);
           cResult[9] = item.description;
-          cResult[10] = tmp19;
-          tmp17 = tmp19;
+          cResult[10] = tmp18;
+          tmp16 = tmp18;
         } else {
-          tmp17 = cResult[10];
+          tmp16 = cResult[10];
         }
         if (cResult[11] === item.actionHandler) {
           if (cResult[12] === item.actionLabel) {
-            let tmp20;
+            let tmp19;
             if (cResult[13] === tmp4.actionButtonWrapper) {
-              tmp20 = cResult[14];
+              tmp19 = cResult[14];
             }
-            if (cResult[15] === tmp4.rowTextColumn) {
-              if (cResult[16] === tmp14) {
-                if (cResult[17] === tmp17) {
-                  let tmp25;
-                  if (cResult[18] === tmp20) {
-                    tmp25 = cResult[19];
+            if (cResult[15] === tmp11) {
+              if (cResult[16] === tmp13) {
+                if (cResult[17] === tmp16) {
+                  let tmp24;
+                  if (cResult[18] === tmp19) {
+                    tmp24 = cResult[19];
                   }
-                  if (cResult[20] === tmp6) {
-                    if (cResult[21] === tmp10) {
-                      let tmp29;
-                      let tmp34Result;
-                      if (cResult[22] === tmp25) {
-                        tmp29 = cResult[23];
+                  if (cResult[20] === tmp4.row) {
+                    if (cResult[21] === tmp5) {
+                      let tmp28;
+                      let tmp33Result;
+                      if (cResult[22] === tmp24) {
+                        tmp28 = cResult[23];
                       }
                       if (cResult[24] === isLast) {
-                        let tmp33;
                         if (cResult[25] === tmp4.divider) {
-                          tmp33 = cResult[26];
-                        }
-                        if (cResult[27] === tmp29) {
-                          let tmp36;
-                          if (cResult[28] === tmp33) {
-                            tmp36 = cResult[29];
+                          let tmp32;
+                          if (cResult[26] === tmp4.lastRowSpacer) {
+                            tmp32 = cResult[27];
                           }
-                          return tmp36;
+                          if (cResult[28] === tmp32) {
+                            let tmp37;
+                            if (cResult[29] === tmp28) {
+                              tmp37 = cResult[30];
+                            }
+                            return tmp37;
+                          }
+                          const obj3 = { children: items };
+                          items = [tmp28, tmp32];
+                          const tmp40 = hasOwnProperty(metroRequire, obj3);
+                          cResult[28] = tmp32;
+                          cResult[29] = tmp28;
+                          cResult[30] = tmp40;
+                          tmp37 = tmp40;
                         }
-                        const obj3 = { children: items };
-                        items = [tmp29, tmp33];
-                        const tmp39 = hasOwnProperty(metroRequire, obj3);
-                        cResult[27] = tmp29;
-                        cResult[28] = tmp33;
-                        cResult[29] = tmp39;
-                        tmp36 = tmp39;
                       }
                       if (isLast) {
-                        tmp34Result = tmp34(tmp(1202).Spacer, { size: 16 });
+                        const obj4 = { style: tmp4.lastRowSpacer };
+                        tmp33Result = tmp33(View, obj4);
                       } else {
-                        const obj4 = { style: tmp4.divider };
-                        tmp34Result = tmp34(tmp9(16537), obj4);
+                        const obj5 = { style: tmp4.divider };
+                        tmp33Result = tmp33(FormSeparatorDefault, obj5);
                       }
                       cResult[24] = isLast;
                       cResult[25] = tmp4.divider;
-                      cResult[26] = tmp34Result;
-                      tmp33 = tmp34Result;
+                      cResult[26] = tmp4.lastRowSpacer;
+                      cResult[27] = tmp33Result;
+                      tmp32 = tmp33Result;
                     }
                   }
-                  const obj5 = { style: tmp6, children: items1 };
-                  items1 = [tmp10, tmp25];
-                  const tmp32 = hasOwnProperty(View, obj5);
-                  cResult[20] = tmp6;
-                  cResult[21] = tmp10;
-                  cResult[22] = tmp25;
-                  cResult[23] = tmp32;
-                  tmp29 = tmp32;
+                  const obj6 = { style: tmp4.row, children: items1 };
+                  items1 = [tmp5, tmp24];
+                  const tmp31 = hasOwnProperty(View, obj6);
+                  cResult[20] = tmp4.row;
+                  cResult[21] = tmp5;
+                  cResult[22] = tmp24;
+                  cResult[23] = tmp31;
+                  tmp28 = tmp31;
                 }
               }
             }
-            const obj7 = { style: tmp4.rowTextColumn, children: items2 };
-            items2 = [tmp14, tmp17, tmp20];
-            const tmp28 = hasOwnProperty(View, obj7);
-            cResult[15] = tmp4.rowTextColumn;
-            cResult[16] = tmp14;
-            cResult[17] = tmp17;
-            cResult[18] = tmp20;
-            cResult[19] = tmp28;
-            tmp25 = tmp28;
+            const obj8 = { style: tmp11, children: items2 };
+            items2 = [tmp13, tmp16, tmp19];
+            const tmp27 = hasOwnProperty(View, obj8);
+            cResult[15] = tmp11;
+            cResult[16] = tmp13;
+            cResult[17] = tmp16;
+            cResult[18] = tmp19;
+            cResult[19] = tmp27;
+            tmp24 = tmp27;
           }
         }
-        let tmp22 = null != item.actionHandler && null != item.actionLabel;
-        if (tmp22) {
-          const obj8 = { style: tmp4.actionButtonWrapper, children: React3(components_Button_Button.Button, obj9) };
-          obj9 = { text: null, onPress: null, grow: true };
-          ({ actionLabel: obj6.text, actionHandler: obj6.onPress } = item);
-          tmp22 = React3(View, obj8);
+        let tmp21 = null != item.actionHandler && null != item.actionLabel;
+        if (tmp21) {
+          const obj9 = { style: tmp4.actionButtonWrapper, children: React3(components_Button_Button.Button, obj10) };
+          obj10 = { text: null, onPress: null, grow: true };
+          ({ actionLabel: obj7.text, actionHandler: obj7.onPress } = item);
+          tmp21 = React3(View, obj9);
         }
         cResult[11] = item.actionHandler;
         cResult[12] = item.actionLabel;
         cResult[13] = tmp4.actionButtonWrapper;
-        cResult[14] = tmp22;
-        tmp20 = tmp22;
+        cResult[14] = tmp21;
+        tmp19 = tmp21;
       }
-      const obj10 = { style: tmp4.rowLabel, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp13 };
-      const tmp16 = React3(Text_Text.Text, obj10);
+      const obj11 = { style: tmp4.rowLabel, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp12 };
+      const tmp15 = React3(Text_Text.Text, obj11);
       cResult[6] = tmp4.rowLabel;
-      cResult[7] = tmp13;
-      cResult[8] = tmp16;
-      tmp14 = tmp16;
+      cResult[7] = tmp12;
+      cResult[8] = tmp15;
+      tmp13 = tmp15;
     }
-    const obj19 = { style: tmp4.rowStatusIcon, source: tmp7Result };
-    const tmp12 = React3(tmp9(5667), obj19);
-    cResult[3] = tmp4.rowStatusIcon;
-    cResult[4] = tmp7Result;
-    cResult[5] = tmp12;
-    tmp10 = tmp12;
+    const items3 = [tmp4.rowTextColumn, item.checked && tmp4.eligibleRow];
+    cResult[3] = tmp4.rowTextColumn;
+    cResult[4] = item.checked && tmp4.eligibleRow;
+    cResult[5] = items3;
+    tmp11 = items3;
   }
-  const items3 = [tmp4.row, item.checked && tmp4.eligibleRow];
-  cResult[0] = tmp4.row;
-  cResult[1] = item.checked && tmp4.eligibleRow;
-  cResult[2] = items3;
-  tmp6 = items3;
+  if (item.checked) {
+    const obj12 = { style: tmp4.rowStatusIcon, size: "custom", color: nativeDefault.colors.CONTROL_PRIMARY_BACKGROUND_DEFAULT, secondaryColor: nativeDefault.colors.WHITE };
+    const CircleCheckIcon = tmp(7267).CircleCheckIcon;
+    tmp6Result = tmp6(CircleCheckIcon, obj12);
+  } else {
+    const obj23 = { style: tmp4.rowStatusIcon, size: "custom", color: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT, secondaryColor: nativeDefault.colors.WHITE };
+    const CircleXIcon = tmp(7018).CircleXIcon;
+    tmp6Result = tmp6(CircleXIcon, obj23);
+  }
+  cResult[0] = item.checked;
+  cResult[1] = tmp4.rowStatusIcon;
+  cResult[2] = tmp6Result;
+  tmp5 = tmp6Result;
 }) : (function EligibilityChecklistRow(item) {
-  let items1;
+  let items;
   let items2;
-  let obj8;
-  let tmp5Result2;
-  let tmp6Result;
+  let obj9;
+  let tmp10;
+  let tmp12;
+  let tmp13;
+  let tmp13Result2;
+  let tmp5Result;
   item = item.item;
   const isLast = item.isLast;
   const tmp = closure_7();
-  const items = [tmp.row, ];
-  let eligibleRow = item.checked;
+  const obj = { style: tmp.row, children: items };
   const tmp3 = metroRequire;
-  if (eligibleRow) {
-    eligibleRow = tmp.eligibleRow;
-  }
-  const obj = { style: items, children: items1 };
-  items[1] = eligibleRow;
-  const obj2 = { style: tmp.rowStatusIcon, source: tmp6Result };
-  const tmp8 = FastImageDefault;
   if (item.checked) {
-    tmp6Result = tmp6(19185);
+    const obj2 = { style: tmp.rowStatusIcon, size: "custom", color: nativeDefault.colors.CONTROL_PRIMARY_BACKGROUND_DEFAULT, secondaryColor: nativeDefault.colors.WHITE };
+    const CircleCheckIcon = tmp6(7267).CircleCheckIcon;
+    tmp5Result = tmp5(CircleCheckIcon, obj2);
+    tmp10 = tmp6;
+    tmp12 = importDefault;
+    tmp13 = tmp5;
   } else {
-    tmp6Result = tmp6(19186);
+    const obj3 = { style: tmp.rowStatusIcon, size: "custom", color: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT, secondaryColor: nativeDefault.colors.WHITE };
+    const CircleXIcon = tmp6(7018).CircleXIcon;
+    tmp5Result = tmp5(CircleXIcon, obj3);
+    tmp10 = tmp6;
+    tmp12 = importDefault;
+    tmp13 = tmp5;
   }
-  items1 = [React3(tmp8, obj2), ];
-  const obj3 = { style: tmp.rowTextColumn, children: items2 };
+  items = [tmp5Result, ];
+  const items1 = [tmp.rowTextColumn, ];
+  const obj4 = { style: items1, children: items2 };
+  const tmp15 = item.checked && tmp.eligibleRow;
+  items1[1] = tmp15;
   items2 = [, , ];
-  const obj4 = { style: tmp.rowLabel, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: item.checked ? item.checkedLabel : item.uncheckedLabel };
-  items2[0] = React3(Text_Text.Text, obj4);
-  const obj5 = { variant: "text-sm/normal", color: "interactive-text-default", children: item.description };
-  items2[1] = React3(Text_Text.Text, obj5);
-  let tmp5Result = null != item.actionHandler && null != item.actionLabel;
-  if (tmp5Result) {
-    const obj6 = { style: tmp.actionButtonWrapper, children: React3(components_Button_Button.Button, obj8) };
-    obj8 = { text: null, onPress: null, grow: true };
-    ({ actionLabel: obj7.text, actionHandler: obj7.onPress } = item);
-    tmp5Result = tmp5(tmp4, obj6);
+  const obj5 = { style: tmp.rowLabel, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: item.checked ? item.checkedLabel : item.uncheckedLabel };
+  items2[0] = tmp13(tmp10(5234).Text, obj5);
+  const obj6 = { variant: "text-sm/normal", color: "interactive-text-default", children: item.description };
+  items2[1] = tmp13(tmp10(5234).Text, obj6);
+  let tmp13Result = null != item.actionHandler && null != item.actionLabel;
+  if (tmp13Result) {
+    const obj7 = { style: tmp.actionButtonWrapper, children: tmp13(tmp10(5244).Button, obj9) };
+    obj9 = { text: null, onPress: null, grow: true };
+    ({ actionLabel: obj8.text, actionHandler: obj8.onPress } = item);
+    tmp13Result = tmp13(tmp4, obj7);
   }
-  items2[2] = tmp5Result;
-  items1[1] = hasOwnProperty(View, obj3);
+  items2[2] = tmp13Result;
+  items[1] = hasOwnProperty(View, obj4);
   const children = [hasOwnProperty(View, obj), ];
+  const obj17 = { style: null };
   if (isLast) {
-    tmp5Result2 = tmp5(tmp10(1202).Spacer, { size: 16 });
+    obj17.style = tmp.lastRowSpacer;
+    tmp13Result2 = tmp13(tmp4, obj17);
   } else {
-    const obj15 = { style: tmp.divider };
-    tmp5Result2 = tmp5(tmp6(16537), obj15);
+    obj17.style = tmp.divider;
+    tmp13Result2 = tmp13(tmp12(16569), obj17);
   }
-  children[1] = tmp5Result2;
+  children[1] = tmp13Result2;
   return hasOwnProperty(tmp3, { children });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -238,7 +252,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EligibilityC
     if (cResult[0] !== items) {
       let tmp3;
       if (cResult[2] !== items.length) {
-        const fn = function o(item, arg1) {
+        const fn = function c(item, arg1) {
           const obj = { item, isLast: arg1 === items.length - 1 };
           return React3(closure_8, obj, item.checkedLabel);
         };

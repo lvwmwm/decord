@@ -1,16 +1,16 @@
-// Module ID: 16852
-// Function ID: 16853
+// Module ID: 16884
+// Function ID: 16885
 // Name: SettingsAdvancedScreen
-// Dependencies: [19, 8330, 1087, 21, 1128, 558, 576, 11204, 15949, 2]
+// Dependencies: [19, 8332, 1087, 21, 1128, 558, 576, 11205, 15973, 2]
 
-// Module 16852 (SettingsAdvancedScreen)
+// Module 16884 (SettingsAdvancedScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl5 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8330 */;
-import SettingBuilders from "SettingBuilders" /* 11204 */;
-import SettingLayoutDefault from "SettingLayout" /* 15949 */;
+import SettingsConstants from "SettingsConstants" /* 8332 */;
+import SettingBuilders from "SettingBuilders" /* 11205 */;
+import SettingLayoutDefault from "SettingLayout" /* 15973 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -55,7 +55,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { sections: getAdvancedSettings() };
-    const createList = tmp(11204).createList;
+    const createList = tmp(11205).createList;
     SettingBuilders;
     const list = createList(obj2);
     cResult[0] = list;

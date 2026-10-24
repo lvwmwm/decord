@@ -1,18 +1,18 @@
-// Module ID: 19372
-// Function ID: 19373
+// Module ID: 19432
+// Function ID: 19433
 // Name: AgeUpdateFooter
-// Dependencies: [19, 21, 4969, 558, 576, 1128, 2832, 7881, 6655, 5232, 2]
+// Dependencies: [19, 21, 4971, 558, 576, 1128, 2832, 7883, 6657, 5234, 2]
 
-// Module 19372 (AgeUpdateFooter)
+// Module 19432 (AgeUpdateFooter)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef2832 from "module_2832" /* 2832 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6655 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7881 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6657 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7883 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

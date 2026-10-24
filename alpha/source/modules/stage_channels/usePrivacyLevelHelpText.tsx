@@ -1,16 +1,16 @@
-// Module ID: 9042
-// Function ID: 9043
+// Module ID: 9043
+// Function ID: 9044
 // Name: usePrivacyLevelHelpText
-// Dependencies: [4901, 1087, 4827, 1098, 558, 576, 504, 4906, 1099, 1128, 2067, 2]
+// Dependencies: [4903, 1087, 4829, 1098, 558, 576, 504, 4908, 1099, 1128, 2067, 2]
 
-// Module 9042 (usePrivacyLevelHelpText)
+// Module 9043 (usePrivacyLevelHelpText)
 import Constants from "Constants" /* 1087 */;
 import Constants2 from "Constants" /* 1098 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4827 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4906 */;
-import PermissionStore from "PermissionStore" /* 4901 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4829 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4908 */;
+import PermissionStore from "PermissionStore" /* 4903 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

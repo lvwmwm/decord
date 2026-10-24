@@ -1,9 +1,9 @@
-// Module ID: 11429
-// Function ID: 11430
+// Module ID: 11449
+// Function ID: 11450
 // Name: ActivityTile
-// Dependencies: [5, 32, 19, 17, 4820, 1392, 1087, 1206, 2026, 21, 1202, 4969, 587, 558, 576, 1388, 504, 7255, 5987, 5023, 11430, 7251, 7276, 9934, 1128, 11432, 11342, 11434, 11435, 11436, 6906, 11483, 5232, 5243, 5035, 2]
+// Dependencies: [5, 32, 19, 17, 4822, 1392, 1087, 1206, 2026, 21, 1202, 4971, 587, 558, 576, 1388, 504, 7257, 5989, 5025, 11450, 7253, 7278, 9935, 1128, 11452, 11360, 11454, 11455, 11456, 6908, 11503, 5234, 5245, 5037, 2]
 
-// Module 11429 (ActivityTile)
+// Module 11449 (ActivityTile)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,15 +11,15 @@ import native from "native" /* 1202 */;
 import FormConstants from "FormConstants" /* 1206 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import Constants2 from "Constants" /* 2026 */;
-import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 11435 */;
+import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 11455 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let obj4;
 let size;
 let tmp;
 let unpackModuleId;
-const native2 = tmp(5035);
+const native2 = tmp(5037);
 const View = react_native.View;
 ({ ThemeTypes: metroImportAll, Fonts } = Constants);
 const getThemedRippleConfig = FormConstants.getThemedRippleConfig;

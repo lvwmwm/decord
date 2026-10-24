@@ -1,12 +1,12 @@
-// Module ID: 7497
-// Function ID: 7498
+// Module ID: 7499
+// Function ID: 7500
 // Name: useSelectedDismissibleContentShared
-// Dependencies: [19, 4808, 4818, 558, 576, 4809, 4812, 2]
+// Dependencies: [19, 4810, 4820, 558, 576, 4811, 4814, 2]
 
-// Module 7497 (useSelectedDismissibleContentShared)
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
+// Module 7499 (useSelectedDismissibleContentShared)
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
 import react_mod from "react" /* 19 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4808 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4810 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedD
           const effect = react.useEffect(tmp7, tmp8);
           class T {
             constructor() {
-              return () => { /* body not rendered: F144510 */ };
+              return () => { /* body not rendered: F144886 */ };
             }
           }
         }
@@ -52,7 +52,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedD
     }
     class T {
       constructor() {
-        return () => { /* body not rendered: F144510 */ };
+        return () => { /* body not rendered: F144886 */ };
       }
     }
     const items = [tmp5, arg1, arg0, arg3];
@@ -67,7 +67,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedD
   }
   let tmp6 = null != arg0 && !tmp4;
   if (tmp6) {
-    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = tmp(4809).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
+    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = tmp(4811).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
     tmp6 = !CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(arg0);
   }
   cResult[0] = undefined !== arg2 && arg2;

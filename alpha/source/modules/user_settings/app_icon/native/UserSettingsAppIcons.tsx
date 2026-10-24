@@ -1,23 +1,23 @@
-// Module ID: 16847
-// Function ID: 16848
+// Module ID: 16879
+// Function ID: 16880
 // Name: UserSettingsAppIcons
-// Dependencies: [5, 32, 19, 17, 1392, 1087, 9864, 4994, 21, 4969, 504, 14739, 1991, 7251, 15828, 5661, 1128, 16357, 9865, 4997, 9791, 9792, 9671, 8949, 16848, 10177, 2]
+// Dependencies: [5, 32, 19, 17, 1392, 1087, 9865, 4996, 21, 4971, 504, 14762, 1991, 7253, 15851, 5663, 1128, 16375, 15852, 6713, 9866, 4999, 9792, 9793, 9672, 8951, 16880, 10178, 2]
 
-// Module 16847 (UserSettingsAppIcons)
+// Module 16879 (UserSettingsAppIcons)
 import react_native from "react-native" /* 17 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4994 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7251 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9791 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9792 */;
-import AppIconRowsDefault from "AppIconRows" /* 16848 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4996 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7253 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9792 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9793 */;
+import AppIconRowsDefault from "AppIconRows" /* 16880 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
-import AppIconConstants from "AppIconConstants" /* 9864 */;
+import AppIconConstants from "AppIconConstants" /* 9865 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, c7, c8, closure_1, closure_2, dependencyMap, importDefault;
@@ -30,7 +30,7 @@ let map1;
 let metroImportAll;
 let tmp6;
 let unpackModuleId;
-const NitroUpsellButtonDefault = tmp6(10177);
+const NitroUpsellButtonDefault = tmp6(10178);
 const View = react_native.View;
 ({ UpsellTypes: metroImportAll, AnalyticsPages: c9 } = Constants);
 ({ getIconById: c10, isHexagonCampaignAppIcon: unpackModuleId } = AppIconConstants);
@@ -52,8 +52,9 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
   let obj = function _selectHexagonCampaignAppIcon() {
     obj = _asyncToGenerator(async (arg0, value) => {
       let intl;
-      let obj10;
-      let obj7;
+      let items;
+      let obj11;
+      let obj8;
       let closure_0 = arg0;
       if (c8 === 2) {
         c8 = 3;
@@ -86,8 +87,8 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
               c5 = 1;
               c7 = 2;
               c8 = 1;
-              obj4 = { value: obj10.ensureHexagonCampaignEnrollment(constants.APP_ICON), done: false };
-              obj10 = closure_0(closure_2[14]);
+              obj4 = { value: obj11.ensureHexagonCampaignEnrollment(constants.APP_ICON), done: false };
+              obj11 = closure_0(closure_2[14]);
               return obj4;
             }
           } else if (1 === c7) {
@@ -105,20 +106,20 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
               const obj5 = { value, done: true };
               return obj5;
             } else if (value) {
-              const tmp42 = closure_0(closure_2[17]);
-              closure_2 = tmp42;
-              closure_1 = tmp42.saveHexagonCampaignPreviousAppIcon;
+              const tmp51 = closure_0(closure_2[17]);
+              closure_2 = tmp51;
+              closure_1 = tmp51.saveHexagonCampaignPreviousAppIcon;
               c7 = 3;
               c8 = 1;
-              const obj6 = { value: obj7.fetchCurrentAppIcon(), done: false };
-              obj7 = closure_0(closure_2[11]);
+              const obj6 = { value: obj8.fetchCurrentAppIcon(), done: false };
+              obj8 = closure_0(closure_2[11]);
               return obj6;
             } else {
-              const obj8 = { text: intl.string(closure_0(closure_2[16]).t.F8FvUy) };
+              const obj7 = { text: intl.string(closure_0(closure_2[16]).t.F8FvUy) };
               const open = closure_1(closure_2[15]).open;
-              const tmp31 = closure_1(closure_2[15]);
+              const tmp40 = closure_1(closure_2[15]);
               intl = closure_0(closure_2[16]).intl;
-              open("HEXAGON_CAMPAIGN_ENROLLMENT_ERROR", obj8);
+              open("HEXAGON_CAMPAIGN_ENROLLMENT_ERROR", obj7);
               c5 = 0;
               closure_132_7(null);
               c8 = 3;
@@ -133,20 +134,20 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
               c5 = 0;
               closure_132_7(null);
               c8 = 3;
-              const obj11 = { value, done: true };
-              return obj11;
+              const obj10 = { value, done: true };
+              return obj10;
             } else {
               closure_1(value);
               let premiumType;
               const setAppIcon = closure_0(closure_2[11]).setAppIcon;
-              const tmp23 = closure_0(closure_2[11]);
-              const tmp24 = closure_0;
+              const tmp32 = closure_0(closure_2[11]);
+              const tmp33 = closure_0;
               if (closure_132_0 != null) {
                 premiumType = closure_132_0.premiumType;
               }
               c7 = 4;
               c8 = 1;
-              const obj12 = { value: setAppIcon(tmp24, premiumType), done: false };
+              const obj12 = { value: setAppIcon(tmp33, premiumType), done: false };
               return obj12;
             }
           } else if (arg0 === 1) {
@@ -162,17 +163,22 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
             if (value) {
               obj = closure_0(closure_2[14]);
               const result = obj.markHexagonCampaignPerkApplied(constants.APP_ICON);
+              const obj14 = { perks: items, content: closure_0(closure_2[19]).QuestContent.APP_ICON_SETTINGS, contentSurface: closure_0(closure_2[18]).HexagonCampaignContentSurface.APP_ICON_PICKER };
+              items = [constants.APP_ICON];
+              const trackHexagonCampaignPerkAction = closure_0(closure_2[18]).trackHexagonCampaignPerkAction;
+              const tmp12 = closure_0(closure_2[18]);
+              const result1 = trackHexagonCampaignPerkAction(obj14);
             }
             c5 = 0;
             closure_132_7(null);
             c8 = 3;
             return { value: "IconComponent", done: null };
           }
-        } catch (tmp59) {
-          closure_6 = tmp59;
+        } catch (tmp68) {
+          closure_6 = tmp68;
           if (0 === c5) {
             c8 = 3;
-            throw tmp59;
+            throw tmp68;
           } else {
             c7 = 1;
           }
@@ -220,11 +226,11 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
                 if (id === closure_0) {
                   const tmp8 = closure_1_11;
                   if (closure_1_11(id)) {
-                    const obj6 = closure_0(c2[19]);
+                    const obj6 = closure_0(c2[21]);
                     const tmp9 = closure_0;
                     if (obj6.isHexagonCampaignPerkExpiredForCurrentUser(constants2.APP_ICON)) {
-                      obj4 = { analyticsLocation, analyticsLocations, premiumFeatureCardOrder: tmp9(c2[21]).PremiumFeatureCardOrder.TIER_2_LEADING };
-                      const tmp23 = c1(c2[20]);
+                      obj4 = { analyticsLocation, analyticsLocations, premiumFeatureCardOrder: tmp9(c2[23]).PremiumFeatureCardOrder.TIER_2_LEADING };
+                      const tmp23 = c1(c2[22]);
                       tmp23(obj4);
                     }
                   }
@@ -233,7 +239,7 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
                       const tmp13 = dependencyMap;
                       if (!tmp13) {
                         const obj5 = { initialUpsellKey: constants.APP_ICONS, imageSource: tmp37 };
-                        const obj7 = c1(c2[22]);
+                        const obj7 = c1(c2[24]);
                         const result = obj7.handleShowUpsellAlert(obj5);
                       }
                     }
@@ -259,7 +265,7 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
                   const setAppIcon = closure_0(c2[11]).setAppIcon;
                   let premiumType1;
                   const tmp6 = closure_0(c2[11]);
-                  const DEFAULT = closure_0(c2[18]).FreemiumAppIconIds.DEFAULT;
+                  const DEFAULT = closure_0(c2[20]).FreemiumAppIconIds.DEFAULT;
                   if (stateFromStores != null) {
                     premiumType1 = stateFromStores.premiumType;
                   }
@@ -314,9 +320,9 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
   const tmp3 = dependencyMap;
   let tmp = closure_16();
   obj = stateFromStores(504);
-  const items = [setPending];
+  let items = [setPending];
   stateFromStores = obj.useStateFromStores(items, () => setPending.getCurrentUser());
-  let obj2 = stateFromStores(14739);
+  let obj2 = stateFromStores(14762);
   importDefault = obj2.useCurrentAppIcon();
   let obj3 = stateFromStores(1991);
   const isPremiumResult = obj3.isPremium(stateFromStores);
@@ -330,7 +336,8 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
   let tmp9 = closure_15;
   let obj5 = { children: closure_13(closure_6, obj6) };
   obj6 = { accessibilityRole: "radiogroup", children: closure_13(AppIconRowsDefault, obj7) };
-  const Form = stateFromStores(8949).Form;
+  const Form = stateFromStores(8951).Form;
+  let tmp12 = closure_6;
   obj7 = {
     onSelect(arg0) {
       return obj(...arguments);
@@ -340,7 +347,6 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
   const children = [closure_13(Form, obj5), ];
   let tmp11Result = !isPremiumResult;
   const tmp10 = closure_14;
-  const tmp12 = closure_6;
   if (tmp11Result) {
     let obj8 = { style: tmp.upsellButtonContainer, children: tmp11(tmp6Result, obj9) };
     obj9 = {

@@ -1,12 +1,12 @@
-// Module ID: 13488
-// Function ID: 13489
+// Module ID: 13525
+// Function ID: 13526
 // Name: useIsEmptyMessageRequestChat
-// Dependencies: [6008, 558, 576, 504, 10925, 2]
+// Dependencies: [6010, 558, 576, 504, 10926, 2]
 // Exports: isEmptyLoadedChat
 
-// Module 13488 (useIsEmptyMessageRequestChat)
-import useIsMessageRequest from "useIsMessageRequest" /* 10925 */;
-import MessageStore from "MessageStore" /* 6008 */;
+// Module 13525 (useIsEmptyMessageRequestChat)
+import useIsMessageRequest from "useIsMessageRequest" /* 10926 */;
+import MessageStore from "MessageStore" /* 6010 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

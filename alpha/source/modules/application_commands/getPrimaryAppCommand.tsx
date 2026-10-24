@@ -1,19 +1,19 @@
-// Module ID: 11380
-// Function ID: 11381
+// Module ID: 11400
+// Function ID: 11401
 // Name: getPrimaryAppCommand
-// Dependencies: [5, 19, 4821, 9649, 2000, 9655, 558, 576, 9653, 5601, 2]
+// Dependencies: [5, 19, 4823, 9650, 2000, 9656, 558, 576, 9654, 5603, 2]
 // Exports: default, isPrimaryAppCommandUsableInAppDM
 
-// Module 11380 (getPrimaryAppCommand)
+// Module 11400 (getPrimaryAppCommand)
 import react2 from "react" /* 576 */;
 import Server from "Server" /* 2000 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5601 */;
-import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 9653 */;
-import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9655 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5603 */;
+import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 9654 */;
+import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9656 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
-import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 9649 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 9650 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -218,7 +218,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPrimary
         let hasItem = null != tmp4.integration_types;
         if (hasItem) {
           const integration_types = tmp4.integration_types;
-          hasItem = integration_types.includes(tmp(5601).ApplicationIntegrationType.USER_INSTALL);
+          hasItem = integration_types.includes(tmp(5603).ApplicationIntegrationType.USER_INSTALL);
         }
         let hasItem1 = null != tmp4.contexts;
         if (hasItem1) {

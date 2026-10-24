@@ -1,15 +1,15 @@
-// Module ID: 7024
-// Function ID: 7025
+// Module ID: 7026
+// Function ID: 7027
 // Name: NativeTextInput
-// Dependencies: [19, 17, 1501, 1087, 21, 558, 576, 7025, 5261, 5265, 7026, 5035, 5137, 2]
+// Dependencies: [19, 17, 1501, 1087, 21, 558, 576, 7027, 5263, 5267, 7028, 5037, 5139, 2]
 // Exports: NativeTextInput
 
-// Module 7024 (NativeTextInput)
+// Module 7026 (NativeTextInput)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import native from "native" /* 5035 */;
-import native2 from "native" /* 5137 */;
-import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 7026 */;
+import native from "native" /* 5037 */;
+import native2 from "native" /* 5139 */;
+import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 7028 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1501 */;
@@ -27,7 +27,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const useMountEffect = tmp(5261);
+const useMountEffect = tmp(5263);
 let react = react_mod;
 ({ Pressable: closure_4, TextInput: hasOwnProperty, StyleSheet: metroRequire, View: metroImportDefault } = react_native);
 const KeyboardThemes = Constants.KeyboardThemes;
@@ -114,7 +114,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCon
         const mountLayoutEffect = tmpResult.useMountLayoutEffect(tmp8);
         const _Symbol = Symbol;
         if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj2 = { value: "cix", defaultValue: "unicodeVersion" };
+          const obj2 = { value: "Array", defaultValue: "Reflect" };
           cResult[8] = obj2;
           tmp11 = obj2;
         } else {
@@ -180,7 +180,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCon
       current.setNativeProps(obj);
     }
   });
-  return { value: "cix", defaultValue: "unicodeVersion" };
+  return { value: "Array", defaultValue: "Reflect" };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePanGestureWrapper(arg0) {

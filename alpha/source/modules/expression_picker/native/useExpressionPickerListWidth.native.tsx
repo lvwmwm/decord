@@ -1,13 +1,13 @@
-// Module ID: 9853
-// Function ID: 9854
+// Module ID: 9854
+// Function ID: 9855
 // Name: useExpressionPickerListWidth
-// Dependencies: [1243, 5264, 558, 1499, 1633, 2]
+// Dependencies: [1243, 5266, 558, 1499, 1633, 2]
 
-// Module 9853 (useExpressionPickerListWidth)
+// Module 9854 (useExpressionPickerListWidth)
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1243 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5264 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5266 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 9557
-// Function ID: 9558
+// Module ID: 9558
+// Function ID: 9559
 // Name: constants
 // Dependencies: [2]
 
-// Module 9557 (constants)
+// Module 9558 (constants)
 import size from "module_2" /* 2 */;
 
 const items = ["logitech", "youtube", "best_buy", "call_of_duty"];

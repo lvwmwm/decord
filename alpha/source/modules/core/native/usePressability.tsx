@@ -1,9 +1,9 @@
-// Module ID: 17707
-// Function ID: 17708
+// Module ID: 17739
+// Function ID: 17740
 // Name: usePressability
 // Dependencies: [2, 301]
 
-// Module 17707 (usePressability)
+// Module 17739 (usePressability)
 import usePressabilityDefault from "usePressability" /* 301 */;
 import size from "module_2" /* 2 */;
 

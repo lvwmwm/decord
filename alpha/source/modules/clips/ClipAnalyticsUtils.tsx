@@ -1,21 +1,21 @@
-// Module ID: 7811
-// Function ID: 7812
+// Module ID: 7813
+// Function ID: 7814
 // Name: ClipAnalyticsUtils
-// Dependencies: [5877, 6640, 5712, 7812, 2020, 8146, 1087, 6643, 5898, 5802, 1267, 2]
+// Dependencies: [5879, 6642, 5714, 7814, 2020, 8148, 1087, 6645, 5900, 5804, 1267, 2]
 // Exports: getClipBaseProperties, getClipContextProperties, getClipSaveFailureAnalytics, getClipSavedAnalytics, getClipType, getPreSaveClipAnalytics, trackClipEdited
 
-// Module 7811 (ClipAnalyticsUtils)
+// Module 7813 (ClipAnalyticsUtils)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import isEqualDefault from "isEqual" /* 5802 */;
-import VideoQualityStats from "VideoQualityStats" /* 5898 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6643 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5877 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6640 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5712 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7812 */;
+import isEqualDefault from "isEqual" /* 5804 */;
+import VideoQualityStats from "VideoQualityStats" /* 5900 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6645 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5879 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6642 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7814 */;
 import ClipsStore from "ClipsStore" /* 2020 */;
-import ClipsConstants from "ClipsConstants" /* 8146 */;
+import ClipsConstants from "ClipsConstants" /* 8148 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -76,69 +76,69 @@ function getPostSaveClipAnalytics(arg0, framesEncodedByEncoder) {
   if (num2 == null) {
     num2 = 0;
   }
-  num3 = map.get(tmp3(5898).Encoders.NVIDIA_DIRECT_3D);
+  num3 = map.get(tmp3(5900).Encoders.NVIDIA_DIRECT_3D);
   if (num3 == null) {
     num3 = 0;
   }
-  num4 = map.get(tmp3(5898).Encoders.OPENH264);
+  num4 = map.get(tmp3(5900).Encoders.OPENH264);
   if (num4 == null) {
     num4 = 0;
   }
-  num5 = map.get(tmp3(5898).Encoders.VIDEOTOOLBOX);
+  num5 = map.get(tmp3(5900).Encoders.VIDEOTOOLBOX);
   if (num5 == null) {
     num5 = 0;
   }
-  num6 = map.get(tmp3(5898).Encoders.AMD_DIRECT_3D);
+  num6 = map.get(tmp3(5900).Encoders.AMD_DIRECT_3D);
   if (num6 == null) {
     num6 = 0;
   }
-  num7 = map.get(tmp3(5898).Encoders.AMD_VAAPI);
+  num7 = map.get(tmp3(5900).Encoders.AMD_VAAPI);
   if (num7 == null) {
     num7 = 0;
   }
-  num8 = map.get(tmp3(5898).Encoders.INTEL);
+  num8 = map.get(tmp3(5900).Encoders.INTEL);
   if (num8 == null) {
     num8 = 0;
   }
-  num9 = map.get(tmp3(5898).Encoders.INTEL_DIRECT_3D);
+  num9 = map.get(tmp3(5900).Encoders.INTEL_DIRECT_3D);
   if (num9 == null) {
     num9 = 0;
   }
-  num10 = map.get(tmp3(5898).Encoders.WMF_DIRECT_3D_INTEL);
+  num10 = map.get(tmp3(5900).Encoders.WMF_DIRECT_3D_INTEL);
   if (num10 == null) {
     num10 = 0;
   }
-  num11 = map.get(tmp3(5898).Encoders.WMF_DIRECT_3D_NVIDIA);
+  num11 = map.get(tmp3(5900).Encoders.WMF_DIRECT_3D_NVIDIA);
   if (num11 == null) {
     num11 = 0;
   }
-  num12 = map.get(tmp3(5898).Encoders.WMF_DIRECT_3D_AMD);
+  num12 = map.get(tmp3(5900).Encoders.WMF_DIRECT_3D_AMD);
   if (num12 == null) {
     num12 = 0;
   }
-  let num13 = map.get(tmp3(5898).Encoders.WMF_DIRECT_3D);
+  let num13 = map.get(tmp3(5900).Encoders.WMF_DIRECT_3D);
   if (num13 == null) {
     num13 = 0;
   }
-  let num14 = map.get(tmp3(5898).Encoders.WMF_DIRECT_3D_INTEL);
+  let num14 = map.get(tmp3(5900).Encoders.WMF_DIRECT_3D_INTEL);
   if (num14 == null) {
     num14 = 0;
   }
   const sum = num13 + num14;
-  let num15 = map.get(tmp3(5898).Encoders.WMF_DIRECT_3D_NVIDIA);
+  let num15 = map.get(tmp3(5900).Encoders.WMF_DIRECT_3D_NVIDIA);
   if (num15 == null) {
     num15 = 0;
   }
   sum1 = sum + num15;
-  num16 = map.get(tmp3(5898).Encoders.WMF_DIRECT_3D_AMD);
+  num16 = map.get(tmp3(5900).Encoders.WMF_DIRECT_3D_AMD);
   if (num16 == null) {
     num16 = 0;
   }
-  num17 = map.get(tmp3(5898).Encoders.UNCATEGORIZED);
+  num17 = map.get(tmp3(5900).Encoders.UNCATEGORIZED);
   if (num17 == null) {
     num17 = 0;
   }
-  num18 = map.get(tmp3(5898).Encoders.UNKNOWN);
+  num18 = map.get(tmp3(5900).Encoders.UNKNOWN);
   if (num18 == null) {
     num18 = 0;
   }

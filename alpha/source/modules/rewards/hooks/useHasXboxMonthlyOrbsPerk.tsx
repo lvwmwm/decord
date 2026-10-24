@@ -1,10 +1,10 @@
-// Module ID: 15012
-// Function ID: 15013
+// Module ID: 15035
+// Function ID: 15036
 // Name: useHasXboxMonthlyOrbsPerk
 // Dependencies: [1392, 1394, 2053, 1398, 1400, 558, 576, 504, 2]
 // Exports: hasCrepeMonthlyOrbsPerk
 
-// Module 15012 (useHasXboxMonthlyOrbsPerk)
+// Module 15035 (useHasXboxMonthlyOrbsPerk)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;

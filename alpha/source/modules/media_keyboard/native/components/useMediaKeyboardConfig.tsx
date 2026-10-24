@@ -1,17 +1,17 @@
-// Module ID: 12185
-// Function ID: 12186
+// Module ID: 12211
+// Function ID: 12212
 // Name: useMediaKeyboardConfig
-// Dependencies: [19, 1629, 1087, 558, 576, 8282, 12186, 7367, 8880, 10417, 2000, 2]
+// Dependencies: [19, 1629, 1087, 558, 576, 8284, 12212, 7369, 8882, 10418, 2000, 2]
 
-// Module 12185 (useMediaKeyboardConfig)
+// Module 12211 (useMediaKeyboardConfig)
 import react2 from "react" /* 576 */;
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1629 */;
 import Server from "Server" /* 2000 */;
-import ThreadHooks from "ThreadHooks" /* 7367 */;
-import PollsUtils from "PollsUtils" /* 8282 */;
-import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 8880 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10417 */;
-import useUploadDisabledDefault from "useUploadDisabled" /* 12186 */;
+import ThreadHooks from "ThreadHooks" /* 7369 */;
+import PollsUtils from "PollsUtils" /* 8284 */;
+import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 8882 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10418 */;
+import useUploadDisabledDefault from "useUploadDisabled" /* 12212 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -135,12 +135,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaKe
   MediaKeyboardTarget = undefined;
   let mediaKeyboardDraftType;
   const tmp = context.target === MediaKeyboardTarget.COMMAND;
-  let obj = context(8282);
+  let obj = context(8284);
   const tmp4 = obj.useCanPostPollsInChannel(channel) && !tmp;
   importDefault = tmp4;
   const tmp5 = useUploadDisabledDefault(channel);
   dependencyMap = tmp5;
-  const tmp2Result = context(7367);
+  const tmp2Result = context(7369);
   let canStartThread = tmp2Result.useCanStartThread(channel);
   if (canStartThread) {
     const GUILD_THREADS_ONLY = mediaKeyboardDraftType.GUILD_THREADS_ONLY;
@@ -152,10 +152,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaKe
   if (canStartThread) {
     canStartThread = !tmp;
   }
-  const tmp2Result3 = context(8880);
+  const tmp2Result3 = context(8882);
   const tmp8 = tmp2Result3.useIsAppLauncherEnabled(channel.id) && !tmp;
   MediaKeyboardTarget = tmp8;
-  const tmp2Result4 = context(10417);
+  const tmp2Result4 = context(10418);
   mediaKeyboardDraftType = tmp2Result4.getMediaKeyboardDraftType(context.target);
   let items = [context, tmp4, tmp5, mediaKeyboardDraftType, canStartThread, tmp8];
   return canStartThread.useMemo(function() {

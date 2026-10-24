@@ -1,9 +1,9 @@
-// Module ID: 6358
-// Function ID: 6359
+// Module ID: 6360
+// Function ID: 6361
 // Name: CheckpointTraitConfig
 // Dependencies: [2]
 
-// Module 6358 (CheckpointTraitConfig)
+// Module 6360 (CheckpointTraitConfig)
 import size from "module_2" /* 2 */;
 
 const set = new Set([1, 6, 9, 11, 13]);

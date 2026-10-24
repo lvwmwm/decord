@@ -1,11 +1,11 @@
-// Module ID: 13226
-// Function ID: 13227
+// Module ID: 13263
+// Function ID: 13264
 // Name: useIsHubForGuild
-// Dependencies: [4843, 1087, 558, 576, 504, 2]
+// Dependencies: [4845, 1087, 558, 576, 504, 2]
 
-// Module 13226 (useIsHubForGuild)
+// Module 13263 (useIsHubForGuild)
 import Constants from "Constants" /* 1087 */;
-import GuildStore from "GuildStore" /* 4843 */;
+import GuildStore from "GuildStore" /* 4845 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

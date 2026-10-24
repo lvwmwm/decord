@@ -1,22 +1,22 @@
-// Module ID: 14860
-// Function ID: 14861
+// Module ID: 14883
+// Function ID: 14884
 // Name: GuildPowerupsMarketingHeader
-// Dependencies: [19, 17, 5179, 21, 4969, 587, 683, 558, 576, 5232, 14861, 13370, 13393, 14862, 1128, 2568, 2]
+// Dependencies: [19, 17, 5181, 21, 4971, 587, 683, 558, 576, 5234, 14884, 13407, 13430, 14885, 1128, 2568, 2]
 
-// Module 14860 (GuildPowerupsMarketingHeader)
+// Module 14883 (GuildPowerupsMarketingHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import intl3 from "intl" /* 1128 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13370 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13393 */;
-import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 14861 */;
-import orderMarketablePerksForDisplayDefault from "orderMarketablePerksForDisplay" /* 14862 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13407 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13430 */;
+import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 14884 */;
+import orderMarketablePerksForDisplayDefault from "orderMarketablePerksForDisplay" /* 14885 */;
 import react from "react" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5179 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5181 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let alphaResult1;
 let obj2;
 let obj4;
 let tmp;
-const Text_Text = tmp(5232);
+const Text_Text = tmp(5234);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -68,7 +68,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
   const cResult = obj.c(13);
   guild = guild.guild;
   const tmp4 = closure_7();
-  arr = arr(14861)(guild.id);
+  arr = arr(14884)(guild.id);
   if (cResult[0] !== guild.id) {
     const fn = function s() {
       const tmp = guild;
@@ -88,7 +88,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
     tmp7 = cResult[2];
   }
   const effect = react.useEffect(tmp6, tmp7);
-  if (arr(13393)(guild.id)) {
+  if (arr(13430)(guild.id)) {
     let num4;
     if (arr != null) {
       num4 = arr.length;
@@ -157,7 +157,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
         cResult[12] = tmp20;
         tmp17 = tmp20;
       }
-      const tmp16 = jsx(tmp(5232).Text, { style: text, variant: "text-sm/semibold", children: tmp11 });
+      const tmp16 = jsx(tmp(5234).Text, { style: text, variant: "text-sm/semibold", children: tmp11 });
       cResult[7] = tmp4.text;
       cResult[8] = tmp11;
       cResult[9] = tmp16;
@@ -188,7 +188,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
     }
     if (0 !== num) {
       ({ style: tmp.text, variant: "text-sm/semibold", children: format(v7lwpzR, obj7) });
-      const Text = guild(5232).Text;
+      const Text = guild(5234).Text;
       const intl = guild(1128).intl;
       format = intl.format;
       let str2 = "";

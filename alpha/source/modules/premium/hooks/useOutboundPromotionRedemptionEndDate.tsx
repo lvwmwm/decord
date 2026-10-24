@@ -1,11 +1,11 @@
-// Module ID: 14843
-// Function ID: 14844
+// Module ID: 14866
+// Function ID: 14867
 // Name: useOutboundPromotionRedemptionEndDate
-// Dependencies: [19, 2049, 558, 576, 4794, 2]
+// Dependencies: [19, 2049, 558, 576, 4796, 2]
 
-// Module 14843 (useOutboundPromotionRedemptionEndDate)
+// Module 14866 (useOutboundPromotionRedemptionEndDate)
 import react2 from "react" /* 576 */;
-import DateUtils from "DateUtils" /* 4794 */;
+import DateUtils from "DateUtils" /* 4796 */;
 import react from "react" /* 19 */;
 import module_2049 from "module_2049" /* 2049 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -25,7 +25,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOutboun
       return tmp4;
     }
   }
-  const dateFormat = tmp(4794).dateFormat;
+  const dateFormat = tmp(4796).dateFormat;
   DateUtils;
   if (arg1) {
     let addResult;

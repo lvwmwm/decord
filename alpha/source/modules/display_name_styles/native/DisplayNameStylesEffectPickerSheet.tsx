@@ -1,23 +1,23 @@
-// Module ID: 16664
-// Function ID: 16665
+// Module ID: 16696
+// Function ID: 16697
 // Name: DisplayNameStylesEffectPickerSheet
-// Dependencies: [32, 19, 17, 21, 4969, 587, 558, 576, 8657, 16659, 16660, 5210, 5208, 1128, 2928, 16662, 5242, 5975, 5263, 10663, 10660, 10661, 2]
+// Dependencies: [32, 19, 17, 21, 4971, 587, 558, 576, 8659, 16691, 16692, 5212, 5210, 1128, 2928, 16694, 5244, 5977, 5265, 10664, 10661, 10662, 2]
 
-// Module 16664 (DisplayNameStylesEffectPickerSheet)
+// Module 16696 (DisplayNameStylesEffectPickerSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import _modDef2928 from "module_2928" /* 2928 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
-import HapticUtils from "HapticUtils" /* 5210 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10660 */;
-import types from "types" /* 10661 */;
-import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10663 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import HapticUtils from "HapticUtils" /* 5212 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10661 */;
+import types from "types" /* 10662 */;
+import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10664 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -380,11 +380,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
   closure_5 = undefined;
   let tmp = closure_9();
   let tmp3 = dependencyMap;
-  let obj = userId(8657);
+  let obj = userId(8659);
   const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
-  let obj2 = userId(16659);
+  let obj2 = userId(16691);
   const visibleEffectOrder = obj2.useVisibleEffectOrder();
-  const obj3 = userId(16660);
+  const obj3 = userId(16692);
   const displayNameStylesNewEffects = obj3.useDisplayNameStylesNewEffects(visibleEffectOrder);
   ({ dotEffectIds: c2, dismissEffectDot: c3 } = displayNameStylesNewEffects);
   [first, closure_5] = first.useState(selectedEffectId);
@@ -396,12 +396,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
   let tmp9 = null;
   if (null != userId) {
     const obj4 = { ref: bottomSheetRef, header: closure_7(tmp12, obj5), children: closure_7(closure_5, obj7) };
-    BottomSheet = tmp2(5263).BottomSheet;
+    BottomSheet = tmp2(5265).BottomSheet;
     obj5 = { title: intl.string(onSelectEffect(2928).RVtMxT), trailing: closure_7(Button, obj6) };
-    tmp12 = onSelectEffect(16662);
+    tmp12 = onSelectEffect(16694);
     intl = tmp2(1128).intl;
     obj6 = { text: intl2.string(userId(1128).t.XqMe3N), onPress: tmp8, variant: "primary", size: "sm" };
-    Button = tmp2(5242).Button;
+    Button = tmp2(5244).Button;
     intl2 = tmp2(1128).intl;
     obj7 = { style: tmp.container, children: closure_7(closure_5, obj8) };
     obj8 = { style: tmp.contentContainer, children: closure_7(Stack, obj9) };
@@ -427,7 +427,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
           return closure_7(closure_1_10, obj, effectId);
         })
     };
-    Stack = tmp2(5975).Stack;
+    Stack = tmp2(5977).Stack;
     tmp9 = closure_7(BottomSheet, obj4);
   }
   return tmp9;
@@ -448,7 +448,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Effect
   if (cResult[0] !== effectId) {
     const intl = tmp(1128).intl;
     const string = intl.string;
-    let OpWJ3f = tmp(10663).DISPLAY_NAME_STYLES_EFFECT_NAMES[effectId];
+    let OpWJ3f = tmp(10664).DISPLAY_NAME_STYLES_EFFECT_NAMES[effectId];
     if (OpWJ3f == null) {
       OpWJ3f = _modDef2928.OpWJ3f;
     }

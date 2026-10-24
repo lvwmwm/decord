@@ -1,9 +1,9 @@
-// Module ID: 13732
-// Function ID: 13733
+// Module ID: 13769
+// Function ID: 13770
 // Name: InAppNotificationContext
 // Dependencies: [19, 558, 2]
 
-// Module 13732 (InAppNotificationContext)
+// Module 13769 (InAppNotificationContext)
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

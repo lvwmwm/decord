@@ -1,9 +1,9 @@
-// Module ID: 12043
-// Function ID: 12044
+// Module ID: 12069
+// Function ID: 12070
 // Name: useFormattedTimestamp
-// Dependencies: [32, 19, 1104, 558, 576, 2049, 8497, 2]
+// Dependencies: [32, 19, 1104, 558, 576, 2049, 8499, 2]
 
-// Module 12043 (useFormattedTimestamp)
+// Module 12069 (useFormattedTimestamp)
 import DurationsDefault from "Durations" /* 1104 */;
 import _modDef2049 from "module_2049" /* 2049 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -59,7 +59,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormatt
         cResult[6] = formatted2;
         tmp9 = formatted2;
       }
-      let TIMESTAMP_FORMATS = tmp(8497).TIMESTAMP_FORMATS;
+      let TIMESTAMP_FORMATS = tmp(8499).TIMESTAMP_FORMATS;
       formatted2 = TIMESTAMP_FORMATS.R(format.parsed);
     } else {
       formatted = format.formatted;

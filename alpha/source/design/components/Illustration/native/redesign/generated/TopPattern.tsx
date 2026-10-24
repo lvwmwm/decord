@@ -1,15 +1,15 @@
-// Module ID: 14801
-// Function ID: 14802
+// Module ID: 14824
+// Function ID: 14825
 // Name: TopPattern
-// Dependencies: [19, 21, 8722, 14802, 14803, 14804, 558, 576, 4976, 5667, 2]
+// Dependencies: [19, 21, 8724, 14825, 14826, 14827, 558, 576, 4978, 5669, 2]
 // Exports: getTopPatternSource
 
-// Module 14801 (TopPattern)
+// Module 14824 (TopPattern)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import shared from "shared" /* 4976 */;
-import FastImageDefault from "FastImage" /* 5667 */;
-import _mod8722 from "module_8722" /* 8722 */;
+import shared from "shared" /* 4978 */;
+import FastImageDefault from "FastImage" /* 5669 */;
+import _mod8724 from "module_8724" /* 8724 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -35,7 +35,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTopPatter
   const theme = obj2.useThemeContext().theme;
   if (cResult[0] !== theme) {
     const obj3 = { dark, darker, light };
-    const tmpResult = _mod8722;
+    const tmpResult = _mod8724;
     const illustrationSource = tmpResult.getIllustrationSource(theme, obj3);
     cResult[0] = theme;
     cResult[1] = illustrationSource;
@@ -47,7 +47,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTopPatter
 }) : (function useTopPatternSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8722;
+  const obj2 = _mod8724;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 });
@@ -78,7 +78,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TopPattern(a
   return <tmp2 source={tmp} />;
 });
 function getTopPatternSource(theme) {
-  const obj = _mod8722;
+  const obj = _mod8724;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }

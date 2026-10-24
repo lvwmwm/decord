@@ -1,14 +1,14 @@
-// Module ID: 8785
-// Function ID: 8786
+// Module ID: 8787
+// Function ID: 8788
 // Name: MediaModalTiktok
-// Dependencies: [32, 19, 21, 8786, 558, 576, 6658, 8751, 8752, 8753, 2]
+// Dependencies: [32, 19, 21, 8788, 558, 576, 6660, 8753, 8754, 8755, 2]
 // Exports: createTiktokVideoControls
 
-// Module 8785 (MediaModalTiktok)
+// Module 8787 (MediaModalTiktok)
 import Fragment from "Fragment" /* 21 */;
-import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8751 */;
-import useVideoControls from "useVideoControls" /* 8752 */;
-import MediaModalWebViewBase from "MediaModalWebViewBase" /* 8786 */;
+import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8753 */;
+import useVideoControls from "useVideoControls" /* 8754 */;
+import MediaModalWebViewBase from "MediaModalWebViewBase" /* 8788 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -19,7 +19,7 @@ let baseURL, c4;
 let react = react_mod;
 let jsx = Fragment.jsx;
 let c6 = "https://www.tiktok.com/player/v1/";
-let closure_7 = { controls: 0, enable_music_info: 0, enable_timestamp: 0, utm_source: "discord.gg" };
+let closure_7 = { autoplay: 1, controls: 0, enable_music_info: 0, enable_timestamp: 0, utm_source: "discord.gg" };
 let c8 = "\n  window.addEventListener('message', function(event) {\n    if (!event.data[\"x-tiktok-player\"]) {\n      return;\n    }\n    window.ReactNativeWebView.postMessage(JSON.stringify(event.data));\n  }, true);\n";
 let obj = { "-1": MediaModalWebViewBase.PlayerState.UNSTARTED, 0: null, 1: null, 2: null, 3: null };
 obj[0] = MediaModalWebViewBase.PlayerState.ENDED;
@@ -49,7 +49,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   [first, _slicedToArray] = react.useState(visible(first[3]).PlayerState.UNREADY);
   const tmp6 = controls(first[6])(first);
   react = tmp6;
-  const tmp7 = controls(first[6])(visible);
+  let tmp7 = controls(first[6])(visible);
   let closure_5 = tmp7;
   let ref;
   if (controls != null) {
@@ -154,80 +154,93 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       }
     }
   }
-  class U {
-    constructor() {
-      let current1;
-      if (ref != null) {
-        current1 = tmp.current;
+  const fn2 = function h() {
+    let current1;
+    if (ref != null) {
+      current1 = tmp.current;
+    }
+    const tmp3 = null != current1 && first !== MediaModalWebViewBase.PlayerState.UNREADY;
+    if (tmp3) {
+      let tmp7 = visible;
+      const tmp8 = visible && closure_4 === MediaModalWebViewBase.PlayerState.UNREADY && first === MediaModalWebViewBase.PlayerState.READY;
+      if (tmp8) {
+        const _JSON = JSON;
+        const merged = Object.assign({ type: "play" });
+        const current = tmp.current;
+        if (current != null) {
+          const _HermesInternal = HermesInternal;
+          current.injectJavaScript("\n    window.postMessage(" + tmp18 + ", '*')\n  ");
+        }
       }
-      const tmp3 = null != current1 && first !== MediaModalWebViewBase.PlayerState.UNREADY;
-      if (tmp3) {
-        const tmp8 = visible && closure_4 === MediaModalWebViewBase.PlayerState.UNREADY && first === MediaModalWebViewBase.PlayerState.READY;
-        if (tmp8) {
-          const _JSON = JSON;
-          const merged = Object.assign({ type: "play" });
-          const current = tmp.current;
-          if (current != null) {
-            const _HermesInternal = HermesInternal;
-            current.injectJavaScript("\n    window.postMessage(" + tmp18 + ", '*')\n  ");
-          }
+      const tmp20 = tmp7 && !closure_5;
+      if (tmp20) {
+        const _JSON2 = JSON;
+        const stringify2 = JSON.stringify;
+        const merged1 = Object.assign({ type: "play" });
+        const current2 = tmp.current;
+        if (current2 != null) {
+          const _HermesInternal2 = HermesInternal;
+          current2.injectJavaScript("\n    window.postMessage(" + tmp25 + ", '*')\n  ");
         }
-        const tmp20 = tmp7 && !closure_5;
-        if (tmp20) {
-          const _JSON2 = JSON;
-          const stringify2 = JSON.stringify;
-          const merged1 = Object.assign({ type: "play" });
-          const current2 = tmp.current;
-          if (current2 != null) {
-            const _HermesInternal2 = HermesInternal;
-            current2.injectJavaScript("\n    window.postMessage(" + tmp25 + ", '*')\n  ");
-          }
+      }
+      const tmp27 = !tmp7 && closure_5;
+      if (tmp27) {
+        const _JSON3 = JSON;
+        const stringify3 = JSON.stringify;
+        const merged2 = Object.assign({ type: "pause" });
+        const current3 = tmp.current;
+        if (current3 != null) {
+          const _HermesInternal3 = HermesInternal;
+          current3.injectJavaScript("\n    window.postMessage(" + tmp31 + ", '*')\n  ");
         }
-        const tmp27 = !visible && closure_5;
-        if (tmp27) {
-          const _JSON3 = JSON;
-          const stringify3 = JSON.stringify;
-          const merged2 = Object.assign({ type: "pause" });
-          const current3 = tmp.current;
-          if (current3 != null) {
-            const _HermesInternal3 = HermesInternal;
-            current3.injectJavaScript("\n    window.postMessage(" + tmp31 + ", '*')\n  ");
-          }
+      }
+      if (!tmp7) {
+        tmp7 = !closure_5 && first !== MediaModalWebViewBase.PlayerState.PLAYING;
+        const tmp34 = !closure_5 && first !== MediaModalWebViewBase.PlayerState.PLAYING;
+      }
+      if (!tmp7) {
+        const _JSON4 = JSON;
+        const stringify4 = JSON.stringify;
+        const merged3 = Object.assign({ type: "pause" });
+        const current4 = tmp.current;
+        if (current4 != null) {
+          const _HermesInternal4 = HermesInternal;
+          current4.injectJavaScript("\n    window.postMessage(" + tmp41 + ", '*')\n  ");
         }
-        if (first === MediaModalWebViewBase.PlayerState.ENDED) {
-          const _JSON6 = JSON;
-          const stringify6 = JSON.stringify;
-          const merged3 = Object.assign({ type: "seekTo", value: 0 });
-          const current6 = tmp.current;
-          if (current6 != null) {
-            const _HermesInternal4 = HermesInternal;
-            current6.injectJavaScript("\n    window.postMessage(" + tmp51 + ", '*')\n  ");
-          }
-          const _JSON4 = JSON;
-          const stringify4 = JSON.stringify;
-          const merged4 = Object.assign({ type: "play" });
-          const current4 = tmp.current;
-          if (current4 != null) {
-            const _HermesInternal5 = HermesInternal;
-            current4.injectJavaScript("\n    window.postMessage(" + tmp39 + ", '*')\n  ");
-          }
-        }
-        let str11 = "unMute";
-        if (mediaPlayerMutedStore) {
-          str11 = "mute";
+      }
+      if (first === MediaModalWebViewBase.PlayerState.ENDED) {
+        const _JSON7 = JSON;
+        const stringify7 = JSON.stringify;
+        const merged4 = Object.assign({ type: "seekTo", value: 0 });
+        const current7 = tmp.current;
+        if (current7 != null) {
+          const _HermesInternal5 = HermesInternal;
+          current7.injectJavaScript("\n    window.postMessage(" + tmp61 + ", '*')\n  ");
         }
         const _JSON5 = JSON;
         const stringify5 = JSON.stringify;
-        const obj6 = { type: str11 };
-        const merged5 = Object.assign(obj6);
+        const merged5 = Object.assign({ type: "play" });
         const current5 = tmp.current;
         if (current5 != null) {
           const _HermesInternal6 = HermesInternal;
-          current5.injectJavaScript("\n    window.postMessage(" + tmp46 + ", '*')\n  ");
+          current5.injectJavaScript("\n    window.postMessage(" + tmp49 + ", '*')\n  ");
         }
       }
+      let str13 = "unMute";
+      if (mediaPlayerMutedStore) {
+        str13 = "mute";
+      }
+      const _JSON6 = JSON;
+      const stringify6 = JSON.stringify;
+      const obj7 = { type: str13 };
+      const merged6 = Object.assign(obj7);
+      const current6 = tmp.current;
+      if (current6 != null) {
+        const _HermesInternal7 = HermesInternal;
+        current6.injectJavaScript("\n    window.postMessage(" + tmp56 + ", '*')\n  ");
+      }
     }
-  }
+  };
   const items = [ref, visible, tmp7, tmp6, first, mediaPlayerMutedStore];
   cResult[3] = mediaPlayerMutedStore;
   cResult[4] = first;
@@ -235,7 +248,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   cResult[6] = tmp7;
   cResult[7] = visible;
   cResult[8] = ref;
-  cResult[9] = U;
+  cResult[9] = fn2;
   cResult[10] = items;
 }) : (function MediaModalTiktok(visible) {
   let closure_4;
@@ -260,7 +273,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   react = tmp3[1];
   const tmp6 = source(controls[6])(playerState);
   jsx = tmp6;
-  const tmp7 = source(controls[6])(visible);
+  let tmp7 = source(controls[6])(visible);
   baseURL = tmp7;
   let ref;
   const tmp5 = source;
@@ -345,6 +358,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
     const tmp3 = null != current1 && first !== MediaModalWebViewBase.PlayerState.UNREADY;
     if (tmp3) {
+      let tmp7 = visible;
       const tmp8 = visible && closure_5 === MediaModalWebViewBase.PlayerState.UNREADY && first === MediaModalWebViewBase.PlayerState.READY;
       if (tmp8) {
         const _JSON = JSON;
@@ -366,7 +380,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           current2.injectJavaScript("\n    window.postMessage(" + tmp25 + ", '*')\n  ");
         }
       }
-      const tmp27 = !visible && closure_6;
+      const tmp27 = !tmp7 && closure_6;
       if (tmp27) {
         const _JSON3 = JSON;
         const stringify3 = JSON.stringify;
@@ -377,36 +391,50 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           current3.injectJavaScript("\n    window.postMessage(" + tmp31 + ", '*')\n  ");
         }
       }
-      if (first === MediaModalWebViewBase.PlayerState.ENDED) {
-        const _JSON6 = JSON;
-        const stringify6 = JSON.stringify;
-        const merged3 = Object.assign({ type: "seekTo", value: 0 });
-        const current6 = tmp.current;
-        if (current6 != null) {
-          const _HermesInternal4 = HermesInternal;
-          current6.injectJavaScript("\n    window.postMessage(" + tmp51 + ", '*')\n  ");
-        }
+      if (!tmp7) {
+        tmp7 = !closure_6 && first !== MediaModalWebViewBase.PlayerState.PLAYING;
+        const tmp34 = !closure_6 && first !== MediaModalWebViewBase.PlayerState.PLAYING;
+      }
+      if (!tmp7) {
         const _JSON4 = JSON;
         const stringify4 = JSON.stringify;
-        const merged4 = Object.assign({ type: "play" });
+        const merged3 = Object.assign({ type: "pause" });
         const current4 = tmp.current;
         if (current4 != null) {
-          const _HermesInternal5 = HermesInternal;
-          current4.injectJavaScript("\n    window.postMessage(" + tmp39 + ", '*')\n  ");
+          const _HermesInternal4 = HermesInternal;
+          current4.injectJavaScript("\n    window.postMessage(" + tmp41 + ", '*')\n  ");
         }
       }
-      let str11 = "unMute";
-      if (mediaPlayerMutedStore) {
-        str11 = "mute";
+      if (first === MediaModalWebViewBase.PlayerState.ENDED) {
+        const _JSON7 = JSON;
+        const stringify7 = JSON.stringify;
+        const merged4 = Object.assign({ type: "seekTo", value: 0 });
+        const current7 = tmp.current;
+        if (current7 != null) {
+          const _HermesInternal5 = HermesInternal;
+          current7.injectJavaScript("\n    window.postMessage(" + tmp61 + ", '*')\n  ");
+        }
+        const _JSON5 = JSON;
+        const stringify5 = JSON.stringify;
+        const merged5 = Object.assign({ type: "play" });
+        const current5 = tmp.current;
+        if (current5 != null) {
+          const _HermesInternal6 = HermesInternal;
+          current5.injectJavaScript("\n    window.postMessage(" + tmp49 + ", '*')\n  ");
+        }
       }
-      const _JSON5 = JSON;
-      const stringify5 = JSON.stringify;
-      const obj6 = { type: str11 };
-      const merged5 = Object.assign(obj6);
-      const current5 = tmp.current;
-      if (current5 != null) {
-        const _HermesInternal6 = HermesInternal;
-        current5.injectJavaScript("\n    window.postMessage(" + tmp46 + ", '*')\n  ");
+      let str13 = "unMute";
+      if (mediaPlayerMutedStore) {
+        str13 = "mute";
+      }
+      const _JSON6 = JSON;
+      const stringify6 = JSON.stringify;
+      const obj7 = { type: str13 };
+      const merged6 = Object.assign(obj7);
+      const current6 = tmp.current;
+      if (current6 != null) {
+        const _HermesInternal7 = HermesInternal;
+        current6.injectJavaScript("\n    window.postMessage(" + tmp56 + ", '*')\n  ");
       }
     }
   }, items1);
@@ -489,13 +517,13 @@ export const createTiktokVideoControls = function createTiktokVideoControls() {
       },
       onCurrentSecond(arg0) {
         c3 = arg0;
-        if (_require != null) {
+        if (require != null) {
           tmp(c3, c4);
         }
       },
       onDuration(arg0) {
         c4 = arg0;
-        if (_require != null) {
+        if (require != null) {
           tmp(c3, c4);
         }
       }

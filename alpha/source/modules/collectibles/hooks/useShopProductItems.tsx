@@ -1,10 +1,10 @@
-// Module ID: 8658
-// Function ID: 8659
+// Module ID: 8660
+// Function ID: 8661
 // Name: useShopProductItems
 // Dependencies: [19, 1995, 558, 576, 1128, 2]
 // Exports: getBundleItemNames, getProductItems, getPurchasedItem
 
-// Module 8658 (useShopProductItems)
+// Module 8660 (useShopProductItems)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import react from "react" /* 19 */;
@@ -105,7 +105,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShopProdu
     }
   }, items);
 });
-function getProductItems(type) {
+function getProductItems(product) {
   if (typeof ItemsSortingHat === "function") {
     const obj = Object.create(ItemsSortingHat.prototype);
     obj.itemsByTypes = obj.sortByTypes(tmp);

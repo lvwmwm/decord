@@ -1,21 +1,21 @@
-// Module ID: 11156
-// Function ID: 11157
+// Module ID: 11157
+// Function ID: 11158
 // Name: BioText
-// Dependencies: [19, 17, 1087, 4871, 21, 4969, 558, 576, 5658, 1267, 5232, 11157, 1384, 4870, 1128, 2]
+// Dependencies: [19, 17, 1087, 4873, 21, 4971, 558, 576, 5660, 1267, 5234, 11158, 1384, 4872, 1128, 2]
 
-// Module 11156 (BioText)
+// Module 11157 (BioText)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import isChangelogUserDefault from "isChangelogUser" /* 4870 */;
-import ChangelogConstants from "ChangelogConstants" /* 4871 */;
-import LinkingDefault from "Linking" /* 5658 */;
-import BioMarkupUtils from "BioMarkupUtils" /* 11157 */;
+import isChangelogUserDefault from "isChangelogUser" /* 4872 */;
+import ChangelogConstants from "ChangelogConstants" /* 4873 */;
+import LinkingDefault from "Linking" /* 5660 */;
+import BioMarkupUtils from "BioMarkupUtils" /* 11158 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const Text_Text = tmp(5232);
+const Text_Text = tmp(5234);
 const Pressable = react_native.Pressable;
 const AnalyticEvents = Constants.AnalyticEvents;
 const CHANGELOG_URL = ChangelogConstants.CHANGELOG_URL;
@@ -203,7 +203,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BioText(arg0
                 }
               }
               const obj4 = { variant: str, color: str3, lineClamp, style: span, children: tmp20 };
-              const tmp24 = closure_8(lineClamp(5232).Text, obj4, "changelog-cta");
+              const tmp24 = closure_8(lineClamp(5234).Text, obj4, "changelog-cta");
               cResult[12] = lineClamp;
               cResult[13] = tmp4.span;
               cResult[14] = tmp20;
@@ -216,7 +216,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BioText(arg0
         }
         const obj5 = { variant: str, color: str4, lineClamp, style: text, children: items1 };
         items1 = [tmp15, "\n"];
-        const tmp19 = closure_7(lineClamp(5232).Text, obj5, "changelog-bio");
+        const tmp19 = closure_7(lineClamp(5234).Text, obj5, "changelog-bio");
         cResult[5] = lineClamp;
         cResult[6] = tmp4.text;
         cResult[7] = str4;
@@ -250,7 +250,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BioText(arg0
           }
         }
         const obj6 = { variant: str, color: str2, lineClamp, style: tmp4.text, children: tmp5 };
-        const tmp13 = closure_8(lineClamp(5232).Text, obj6);
+        const tmp13 = closure_8(lineClamp(5234).Text, obj6);
         cResult[21] = lineClamp;
         cResult[22] = tmp4.text;
         cResult[23] = str2;
@@ -262,8 +262,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BioText(arg0
     }
   }
   const obj7 = { guildId, linkVariant: str, textVariant: str, customEmojiOffsetY: num };
-  const parseBioReact = lineClamp(11157).parseBioReact;
-  lineClamp(11157);
+  const parseBioReact = lineClamp(11158).parseBioReact;
+  lineClamp(11158);
   num = undefined;
   const tmpResult2 = lineClamp(1384);
   if (tmpResult2.isAndroid()) {

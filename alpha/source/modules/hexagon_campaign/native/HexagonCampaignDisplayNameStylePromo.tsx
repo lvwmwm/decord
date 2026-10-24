@@ -1,17 +1,18 @@
-// Module ID: 15844
-// Function ID: 15845
+// Module ID: 15868
+// Function ID: 15869
 // Name: HexagonCampaignDisplayNameStylePromo
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5232, 15845, 15846, 1128, 5035, 15848, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 5234, 15869, 15870, 1128, 4247, 5037, 15872, 2]
 
-// Module 15844 (HexagonCampaignDisplayNameStylePromo)
+// Module 15868 (HexagonCampaignDisplayNameStylePromo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import openHexagonCampaignLearnMore from "openHexagonCampaignLearnMore" /* 15845 */;
-import HexagonCampaignPromoGradientDefault from "HexagonCampaignPromoGradient" /* 15846 */;
+import _modDef4247 from "module_4247" /* 4247 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import openHexagonCampaignLearnMore from "openHexagonCampaignLearnMore" /* 15869 */;
+import HexagonCampaignPromoGradientDefault from "HexagonCampaignPromoGradient" /* 15870 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +27,7 @@ const View = react_native.View;
 let obj = { promo: obj2, link: { textDecorationLine: "underline" } };
 obj2 = { height: 32, justifyContent: "center", paddingBottom: 2, paddingLeft: nativeDefault.space.PX_12, paddingRight: nativeDefault.space.PX_8 };
 let closure_6 = createStyles.createStyles(obj);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampaignDisplayNameStylePromo(showLearnMore) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampaignDisplayNameStylePromo(showLearnMore) {
   let formatResult;
   let items;
   let link;
@@ -59,42 +60,42 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCam
   }
   if (cResult[3] === tmp6) {
     let tmp11;
-    let tmp13;
+    let tmp15;
     if (cResult[4] === (undefined !== showLearnMore && showLearnMore)) {
       tmp11 = cResult[5];
     }
     if (cResult[6] !== tmp11) {
       const obj2 = { variant: "text-xxs/medium", color: "text-default", lineClamp: 1, children: tmp11 };
-      const tmp15 = closure_4(require("Text/Text").Text, obj2);
+      const tmp17 = closure_4(require("Text/Text").Text, obj2);
       cResult[6] = tmp11;
-      cResult[7] = tmp15;
-      tmp13 = tmp15;
+      cResult[7] = tmp17;
+      tmp15 = tmp17;
     } else {
-      tmp13 = cResult[7];
+      tmp15 = cResult[7];
     }
     if (cResult[8] === tmp5.promo) {
-      let tmp16;
-      if (cResult[9] === tmp13) {
-        tmp16 = cResult[10];
+      let tmp18;
+      if (cResult[9] === tmp15) {
+        tmp18 = cResult[10];
       }
-      return tmp16;
+      return tmp18;
     }
     const obj3 = { theme: require("shared/ThemeTypes").ThemeTypes.DARK, children: closure_5(View, obj4) };
-    const ThemeContextProvider = tmp(5035).ThemeContextProvider;
+    const ThemeContextProvider = tmp(5037).ThemeContextProvider;
     obj4 = { style: tmp5.promo, children: items };
-    items = [tmp7, tmp13];
-    const tmp20 = closure_4(ThemeContextProvider, obj3);
+    items = [tmp7, tmp15];
+    const tmp22 = closure_4(ThemeContextProvider, obj3);
     cResult[8] = tmp5.promo;
-    cResult[9] = tmp13;
-    cResult[10] = tmp20;
-    tmp16 = tmp20;
+    cResult[9] = tmp15;
+    cResult[10] = tmp22;
+    tmp18 = tmp22;
   }
   const intl = tmp(1128).intl;
   if (undefined !== showLearnMore && showLearnMore) {
     const obj5 = { learnMoreHook: tmp6 };
-    formatResult = intl.format(tmp(1128).t.eb99JA, obj5);
+    formatResult = intl.format(_modDef4247.eb99JA, obj5);
   } else {
-    formatResult = intl.string(tmp(1128).t.WyZOg3);
+    formatResult = intl.string(_modDef4247.WyZOg3);
   }
   cResult[3] = tmp6;
   cResult[4] = undefined !== showLearnMore && showLearnMore;
@@ -105,22 +106,22 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCam
   let items;
   let link;
   let obj2;
+  let tmp4;
   let tmp5;
-  let tmp6;
   let flag = showLearnMore.showLearnMore;
   if (flag === undefined) {
     flag = false;
   }
   const tmp = closure_6();
   _require = tmp;
-  let obj = { theme: require("shared/ThemeTypes").ThemeTypes.DARK, children: tmp5(tmp6, obj2) };
+  let obj = { theme: require("shared/ThemeTypes").ThemeTypes.DARK, children: tmp4(tmp5, obj2) };
   const ThemeContextProvider = require("native").ThemeContextProvider;
   obj2 = { style: tmp.promo, children: items };
   items = [closure_4(HexagonCampaignPromoGradientDefault, { angle: 172 }), ];
   let Text = require("Text/Text").Text;
   const intl = require("intl").intl;
-  tmp5 = closure_5;
-  tmp6 = View;
+  tmp4 = closure_5;
+  tmp5 = View;
   if (flag) {
     const obj3 = {
       learnMoreHook(children, arg1) {
@@ -129,9 +130,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCam
           return React3(Text, obj, arg1);
         }
     };
-    formatResult = intl.format(tmp3(1128).t.eb99JA, obj3);
+    formatResult = intl.format(tmp6(4247).eb99JA, obj3);
   } else {
-    formatResult = intl.string(tmp3(1128).t.WyZOg3);
+    formatResult = intl.string(tmp6(4247).WyZOg3);
   }
   items[1] = closure_4(Text, { variant: "text-xxs/medium", color: "text-default", lineClamp: 1, children: formatResult });
   return closure_4(ThemeContextProvider, obj);

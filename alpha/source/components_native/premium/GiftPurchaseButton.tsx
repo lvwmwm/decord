@@ -1,15 +1,15 @@
-// Module ID: 14853
-// Function ID: 14854
+// Module ID: 14876
+// Function ID: 14877
 // Name: GiftPurchaseButton
-// Dependencies: [5, 19, 17, 2058, 7522, 21, 558, 576, 5249, 5232, 504, 7517, 13889, 7251, 10498, 5907, 1128, 2053, 10445, 5243, 14854, 2]
+// Dependencies: [5, 19, 17, 2058, 7524, 21, 558, 576, 5251, 5234, 504, 7519, 13908, 7253, 10499, 5909, 1128, 2053, 10446, 5245, 14877, 2]
 
-// Module 14853 (GiftPurchaseButton)
+// Module 14876 (GiftPurchaseButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 2058 */;
-import IAPStore from "IAPStore" /* 7522 */;
+import IAPStore from "IAPStore" /* 7524 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -56,10 +56,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftPurcha
     tmp4 = cResult[1];
   }
   dependencyMap = tmp4;
-  const tmpResult = tmp(5249);
+  const tmpResult = tmp(5251);
   const buttonTextColorStyles = tmpResult.useButtonTextColorStyles(str);
   const obj3 = {};
-  const merged = Object.assign(tmp(5232).TextStyleSheet["text-sm/semibold"]);
+  const merged = Object.assign(tmp(5234).TextStyleSheet["text-sm/semibold"]);
   const merged1 = Object.assign(buttonTextColorStyles);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SubscriptionStore];
@@ -77,7 +77,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftPurcha
   const tmpResult7 = tmp(504);
   const stateFromStores = tmpResult7.useStateFromStores(tmp8, tmp9);
   if (cResult[4] !== planId) {
-    const tmpResult8 = tmp(7517);
+    const tmpResult8 = tmp(7519);
     const productIdForGift = tmpResult8.getProductIdForGift(planId);
     cResult[4] = planId;
     cResult[5] = productIdForGift;
@@ -86,7 +86,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftPurcha
     tmp12 = cResult[5];
   }
   _asyncToGenerator = tmp12;
-  const tmpResult9 = tmp(13889);
+  const tmpResult9 = tmp(13908);
   const canPurchaseIAP = tmpResult9.useCanPurchaseIAP(tmp12);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [IAPStore];
@@ -130,8 +130,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftPurcha
   if (tmp23) {
     tmp23 = stateFromStores.planId === planId;
   }
-  const analyticsLocations = recipientUserId(7251)().analyticsLocations;
-  const tmpResult12 = tmp(10498);
+  const analyticsLocations = recipientUserId(7253)().analyticsLocations;
+  const tmpResult12 = tmp(10499);
   const createOrReuseGiftOrder = tmpResult12.useCreateOrReuseGiftOrder("GiftPurchaseButton");
   const tmp24 = recipientUserId;
   if (cResult[12] === tmp4) {
@@ -143,9 +143,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftPurcha
             if (cResult[17] === recipientUserId) {
               tmp26 = cResult[18];
             }
-            const BaseTextButton = tmp(5243).BaseTextButton;
+            const BaseTextButton = tmp(5245).BaseTextButton;
             let obj4 = { style: obj3, basePlanId: planId, isCurrentPlan: tmp23, isGift: true, product: stateFromStores2 };
-            const tmp28 = tmp24(14854)(obj4);
+            const tmp28 = tmp24(14877)(obj4);
             if (cResult[19] === BaseTextButton) {
               if (cResult[20] === tmp26) {
                 if (cResult[21] === stateFromStores1) {

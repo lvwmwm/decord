@@ -1,18 +1,18 @@
-// Module ID: 7957
-// Function ID: 7958
+// Module ID: 7959
+// Function ID: 7960
 // Name: IconButton
-// Dependencies: [109, 19, 21, 4969, 587, 558, 576, 7958, 5232, 5252, 2]
+// Dependencies: [109, 19, 21, 4971, 587, 558, 576, 7960, 5234, 5254, 2]
 
-// Module 7957 (IconButton)
+// Module 7959 (IconButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import Button_BaseButton from "Button/BaseButton" /* 5252 */;
-import BaseIconButton3 from "BaseIconButton" /* 7958 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import Button_BaseButton from "Button/BaseButton" /* 5254 */;
+import BaseIconButton3 from "BaseIconButton" /* 7960 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -104,7 +104,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconButton(a
               }
             }
             const obj2 = { style: tmp14.labelPressable, variant: "none", accessibilityLabel: tmp5, accessibilityHint: tmp4, children: items };
-            const BaseButton = tmp(5252).BaseButton;
+            const BaseButton = tmp(5254).BaseButton;
             const merged = Object.assign(tmp9);
             items = [tmp21, tmp27];
             const tmp35 = metroRequire(BaseButton, obj2);
@@ -128,7 +128,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconButton(a
       }
     }
     const obj4 = { ref: tmp10, accessibilityRole: "none", accessibilityLabel: "", size: "lg", maxFontSizeMultiplier: tmp8 };
-    const BaseIconButton2 = tmp(7958).BaseIconButton;
+    const BaseIconButton2 = tmp(7960).BaseIconButton;
     const merged1 = Object.assign(tmp9);
     const tmp26 = hasOwnProperty(BaseIconButton2, obj4);
     cResult[8] = tmp8;
@@ -149,7 +149,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconButton(a
       }
     }
     const obj5 = { ref: tmp10, accessibilityLabel: tmp5, accessibilityHint: tmp4, maxFontSizeMultiplier: tmp8 };
-    const BaseIconButton = tmp(7958).BaseIconButton;
+    const BaseIconButton = tmp(7960).BaseIconButton;
     const merged2 = Object.assign(tmp9);
     const tmp20 = hasOwnProperty(BaseIconButton, obj5);
     cResult[23] = tmp4;

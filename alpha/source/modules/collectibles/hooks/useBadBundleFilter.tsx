@@ -1,17 +1,17 @@
-// Module ID: 16335
-// Function ID: 16336
+// Module ID: 16359
+// Function ID: 16360
 // Name: useBadBundleFilter
-// Dependencies: [19, 1392, 7663, 558, 576, 573, 2053, 9433, 7660, 7659, 2]
+// Dependencies: [19, 1392, 7665, 558, 576, 573, 2053, 9434, 7662, 7661, 2]
 
-// Module 16335 (useBadBundleFilter)
+// Module 16359 (useBadBundleFilter)
 import react from "react" /* 19 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2053 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7659 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7660 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9433 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7661 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7662 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9434 */;
 import UserStore from "UserStore" /* 1392 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7663 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7665 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -86,7 +86,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBadBund
                           let num2 = 0;
                           if (null != product.bundledProducts) {
                             const bundledProducts = product.bundledProducts;
-                            num2 = bundledProducts.reduce(() => { /* body not rendered: F160583 */ }, 0);
+                            num2 = bundledProducts.reduce(() => { /* body not rendered: F161024 */ }, 0);
                           }
                           return result.amount < num2;
                         }
@@ -138,7 +138,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBadBund
                           let num2 = 0;
                           if (null != product.bundledProducts) {
                             const bundledProducts = product.bundledProducts;
-                            num2 = bundledProducts.reduce(() => { /* body not rendered: F160583 */ }, 0);
+                            num2 = bundledProducts.reduce(() => { /* body not rendered: F161024 */ }, 0);
                           }
                           return result.amount < num2;
                         }

@@ -1,23 +1,23 @@
-// Module ID: 17387
-// Function ID: 17388
+// Module ID: 17419
+// Function ID: 17420
 // Name: MainTabsNavigatorPanel
-// Dependencies: [32, 19, 17, 1087, 21, 3, 4969, 587, 558, 576, 1506, 5151, 11220, 11219, 17388, 5157, 17389, 5149, 5705, 1123, 17390, 7409, 17393, 5050, 6924, 9709, 17394, 17395, 17402, 17936, 17937, 17938, 18156, 17612, 5295, 11857, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 3, 4971, 587, 558, 576, 1506, 5153, 11221, 11220, 17420, 5159, 17421, 5151, 5707, 1123, 17422, 7411, 17425, 5052, 6926, 9710, 17426, 17427, 17434, 17968, 17969, 17970, 18188, 17644, 5297, 11883, 2]
 
-// Module 17387 (MainTabsNavigatorPanel)
+// Module 17419 (MainTabsNavigatorPanel)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 587 */;
-import RootNavigationRef from "RootNavigationRef" /* 5149 */;
-import ChatInputUtils from "ChatInputUtils" /* 5157 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7409 */;
-import PanelsNavigationUtils from "PanelsNavigationUtils" /* 17388 */;
-import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 17389 */;
-import ChannelScreenAnimatedFrameDefault from "ChannelScreenAnimatedFrame" /* 17393 */;
+import RootNavigationRef from "RootNavigationRef" /* 5151 */;
+import ChatInputUtils from "ChatInputUtils" /* 5159 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
+import PanelsNavigationUtils from "PanelsNavigationUtils" /* 17420 */;
+import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 17421 */;
+import ChannelScreenAnimatedFrameDefault from "ChannelScreenAnimatedFrame" /* 17425 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -504,7 +504,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           }
           if ("modal" !== name) {
             tmp3.current = true;
-            const tmp15Result = tmp15(5705);
+            const tmp15Result = tmp15(5707);
             tmp15Result.transitionToChannel(tmp6.current.channelId);
           }
         }
@@ -546,7 +546,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp61;
   let tmp65;
   let type1;
-  const f130023 = () => first4;
+  const f130358 = () => first4;
   let tmp = closure_13();
   const tmp3 = drawerWidth;
   let obj = navigation(drawerWidth[10]);
@@ -623,9 +623,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj = useChannelScreensFromNavigation;
     return obj.isActiveTabsGuilds(navigation.getState());
   });
-  [tmp23, closure_13] = react.useState(f130023);
+  [tmp23, closure_13] = react.useState(f130358);
   const items3 = [navigation];
-  _slicedToArray(react.useState(f130023), 2);
+  _slicedToArray(react.useState(f130358), 2);
   const effect1 = obj3.useEffect(() => {
     function handleStateChange(data) {
       const obj = navigation(drawerWidth[16]);
@@ -672,7 +672,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           }
           if ("modal" !== name) {
             tmp3.current = true;
-            const tmp15Result = tmp15(5705);
+            const tmp15Result = tmp15(5707);
             tmp15Result.transitionToChannel(tmp6.current.channelId);
           }
         }
@@ -766,7 +766,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           movePanel(true, false, 0, true);
         }
       } else if (movePanel(false, false, 0, false)) {
-        const tmp4Result = tmp4(5157);
+        const tmp4Result = tmp4(5159);
         tmp4Result.dismissKeyboard();
       }
     }

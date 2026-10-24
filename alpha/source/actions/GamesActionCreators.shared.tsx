@@ -1,25 +1,25 @@
-// Module ID: 11340
-// Function ID: 11341
+// Module ID: 11359
+// Function ID: 11360
 // Name: tryJoinAsFrame
-// Dependencies: [5, 4820, 6770, 4821, 5710, 1087, 6774, 7407, 11341, 11339, 11342, 4890, 12671, 2031, 5624, 11374, 11373, 10765, 6778, 12672, 12673, 7409, 2]
+// Dependencies: [5, 4822, 6772, 4823, 5712, 1087, 6776, 7409, 11353, 11358, 11360, 4892, 12705, 2031, 5626, 11393, 11392, 10766, 6780, 12708, 12709, 7411, 2]
 // Exports: tryJoinAsFrame, tryStartAsEmbeddedApp
 
-// Module 11340 (tryJoinAsFrame)
+// Module 11359 (tryJoinAsFrame)
 import Constants from "Constants" /* 1087 */;
-import FramesConstants from "FramesConstants" /* 6774 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7409 */;
-import getOrFetchApplicationDefault from "getOrFetchApplication" /* 11339 */;
-import canLaunchContextlessFrame2 from "canLaunchContextlessFrame" /* 11341 */;
-import handleJoinEmbeddedActivityDefault from "handleJoinEmbeddedActivity" /* 11342 */;
-import handleUsePrimaryEntryPointAppCommandDefault from "handleUsePrimaryEntryPointAppCommand" /* 12673 */;
+import FramesConstants from "FramesConstants" /* 6776 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
+import getFrameSurfaces from "getFrameSurfaces" /* 11353 */;
+import getOrFetchApplicationDefault from "getOrFetchApplication" /* 11358 */;
+import handleJoinEmbeddedActivityDefault from "handleJoinEmbeddedActivity" /* 11360 */;
+import handleUsePrimaryEntryPointAppCommandDefault from "handleUsePrimaryEntryPointAppCommand" /* 12709 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6770 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
-import PresenceStore from "PresenceStore" /* 5710 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6772 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import PresenceStore from "PresenceStore" /* 5712 */;
 import size from "module_2" /* 2 */;
 
-let c8, c9, customId, embeddedActivitiesForChannel, inviterUserId, referrerId, source, user;
+let application, c8, c9, channelId2, customId, embeddedActivitiesForChannel, inviterUserId, referrerId, source, user;
 
 let obj = function _tryJoinAsFrame() {
   let applicationActivity;
@@ -57,7 +57,7 @@ let obj = function _tryJoinAsFrame() {
         let intent;
         let _location;
         let userId;
-        let canLaunchContextlessFrame;
+        let isFrameApp;
         c9 = 2;
         if (0 === c8) {
           if (arg0 === 1) {
@@ -86,9 +86,9 @@ let obj = function _tryJoinAsFrame() {
             }
             activity = applicationActivity2;
             const embedded = tmp55.embedded;
-            const tmp46 = canLaunchContextlessFrame2;
+            const tmp46 = getFrameSurfaces;
             let closure_5 = tmp46;
-            canLaunchContextlessFrame = tmp46.canLaunchContextlessFrame;
+            isFrameApp = tmp46.isFrameApp;
             c8 = 1;
             c9 = 1;
             const obj5 = { value: getOrFetchApplicationDefault(applicationId), done: false };
@@ -101,7 +101,7 @@ let obj = function _tryJoinAsFrame() {
           c9 = 3;
           const obj6 = { value, done: true };
           return obj6;
-        } else if (canLaunchContextlessFrame(value)) {
+        } else if (isFrameApp(value)) {
           let tmp28Result;
           _location = closure_134_4.getEmbeddedActivityForUserId(userId, applicationId, true);
           if (null != _location) {
@@ -132,85 +132,48 @@ let obj = function _tryJoinAsFrame() {
 };
 obj = function _tryStartAsEmbeddedApp() {
   obj = _asyncToGenerator(async (arg0) => {
+    let closure_2;
     const applicationId = arg0;
     let c3 = 0;
     let c4 = 0;
-    return (async (arg0, value) => {
+    return (async (arg0) => {
+      let tmp11;
       function startFrame() {
         return closure_1_12(...arguments);
       }
       function startActivity() {
         return closure_1_13(...arguments);
       }
-      if (c4 === 2) {
-        c4 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp4 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: null };
-        }
+      closure_1 = await getOrFetchApplicationDefault(applicationId.applicationId);
+      const obj8 = closure_130_0(closure_130_2[8]);
+      if (obj8.canOpenFrame(closure_1)) {
+        tmp11 = startFrame(applicationId, closure_1);
       } else {
-        try {
-          c4 = 2;
-          if (0 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              closure_2 = tmp;
-              closure_1 = undefined;
-              c3 = 1;
-              c4 = 1;
-              const obj5 = { value: getOrFetchApplicationDefault(applicationId.applicationId), done: false };
-              return obj5;
-            }
-          } else if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            return { value, done: true };
-          } else {
-            let tmp13;
-            closure_1 = value;
-            if (null != closure_1) {
-              obj = closure_130_0(closure_130_2[8]);
-              if (obj.canLaunchContextlessFrame(closure_1)) {
-                tmp13 = startFrame(applicationId);
-              }
-              c4 = 3;
-              return { value: tmp13, done: true };
-            }
-            tmp13 = null;
-            if (null != closure_1) {
-              tmp13 = null;
-              const obj2 = closure_130_0(closure_130_2[13]);
-              if (obj2.supportsEmbeddedSurface(closure_1, closure_130_0(closure_130_2[14]).EmbeddedSurfaceType.MAIN)) {
-                tmp13 = startActivity(applicationId, closure_1);
-              }
+        obj = closure_130_0(closure_130_2[8]);
+        tmp11 = !obj.isFrameApp(closure_1);
+        const isFrameAppResult = obj.isFrameApp(closure_1);
+        if (tmp11) {
+          let tmp15 = null;
+          if (null != closure_1) {
+            tmp15 = null;
+            const obj2 = closure_130_0(closure_130_2[13]);
+            if (obj2.supportsEmbeddedSurface(closure_1, closure_130_0(closure_130_2[14]).EmbeddedSurfaceType.MAIN)) {
+              tmp15 = startActivity(applicationId, closure_1);
             }
           }
-        } catch (tmp29) {
-          c4 = 3;
-          throw tmp29;
+          tmp11 = tmp15;
         }
       }
+      return tmp11;
     })();
   });
   return obj(...arguments);
 };
 obj = function _startFrame() {
-  obj = _asyncToGenerator(async (applicationId) => {
-    let c4 = 0;
+  obj = _asyncToGenerator(async (applicationId, channelId) => {
     let c5 = 0;
-    let c3 = 0;
+    let c6 = 0;
+    let c4 = 0;
     const iter = (async (arg0, value) => {
       let analyticsLocations;
       let c0;
@@ -219,8 +182,9 @@ obj = function _startFrame() {
       let c4;
       let c5;
       let c6;
+      let c7;
       let fromLink;
-      let obj7;
+      let obj9;
       if (source === 2) {
         source = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -235,8 +199,8 @@ obj = function _startFrame() {
       } else {
         try {
           let guildId;
-          let obj5;
           let obj6;
+          let obj7;
           let frameParticipantId;
           source = 2;
           if (0 === referrerId) {
@@ -247,29 +211,32 @@ obj = function _startFrame() {
               source = 3;
               return { value, done: true };
             } else {
-              closure_2 = tmp;
-              let closure_1 = tmp4;
+              let closure_3 = tmp;
+              closure_2 = tmp4;
               applicationId = undefined;
               channelId = undefined;
               fromLink = undefined;
+              channelId2 = undefined;
               customId = undefined;
               referrerId = undefined;
               source = undefined;
               inviterUserId = undefined;
               analyticsLocations = undefined;
+              application = undefined;
               ({ applicationId: c0, channelId: c1, fromLink } = closure_0);
-              const tmp74 = closure_0;
+              const tmp87 = closure_0;
               if (fromLink === undefined) {
                 fromLink = false;
               }
-              ({ customId: c3, referrerId: c4, source: c5, inviterUserId: c6, analyticsLocations } = tmp74);
+              ({ linkChannelId: c3, customId: c4, referrerId: c5, source: c6, inviterUserId: c7, analyticsLocations } = tmp87);
               if (analyticsLocations === undefined) {
                 analyticsLocations = [];
               }
+              application = closure_1;
               user = undefined;
               guildId = undefined;
-              obj5 = undefined;
               obj6 = undefined;
+              obj7 = undefined;
               id = undefined;
               frameParticipantId = undefined;
               referrerId = 1;
@@ -284,41 +251,45 @@ obj = function _startFrame() {
               source = 3;
               return { value, done: true };
             } else {
-              user = closure_130_6.getChannel(channelId);
+              user = closure_131_6.getChannel(channelId);
               guildId = undefined;
-              const obj15 = user;
+              const obj17 = user;
               if (user != null) {
-                guildId = obj15.getGuildId();
+                guildId = obj17.getGuildId();
               }
-              obj5 = { isStart: true, analyticsLocations, source, inviterUserId, channelId, guildId };
-              obj6 = { customId, referrerId };
-              if (fromLink) {
-                source = 3;
-                const obj8 = { applicationId, analyticsContext: obj5, launch: obj6, preferAppChannel: true };
-                const obj9 = { value: obj7.tryLaunchAsFrame(obj8), done: true };
-                obj7 = closure_130_0(closure_130_2[15]);
-                return obj9;
-              } else {
-                closure_130_1(closure_130_2[16])(channelId);
-                customId = 1;
-                closure_130_1(closure_130_2[17]);
-                const obj10 = { applicationId, surface: null, analyticsContext: null, launch: null };
-                if (null != user) {
-                  let tmp38;
-                  if (null != guildId) {
-                    tmp38 = { type: closure_130_0(closure_130_2[14]).EmbeddedSurfaceType.MAIN, channelId: user.id, guildId };
-                    const obj11 = { type: closure_130_0(closure_130_2[14]).EmbeddedSurfaceType.MAIN, channelId: user.id, guildId };
+              obj6 = { isStart: true, analyticsLocations, source, inviterUserId, channelId, guildId };
+              obj7 = { customId, referrerId };
+              const tmp21 = fromLink;
+              if (!tmp21) {
+                const obj4 = closure_131_0(closure_131_2[8]);
+                const frameSurfaces = obj4.getFrameSurfaces(application);
+                if (frameSurfaces.has(closure_131_0(closure_131_2[14]).EmbeddedSurfaceType.MAIN)) {
+                  closure_131_1(closure_131_2[16])(channelId);
+                  customId = 1;
+                  closure_131_1(closure_131_2[17]);
+                  const obj8 = { applicationId, surface: null, analyticsContext: null, launch: null };
+                  if (null != user) {
+                    let tmp45;
+                    if (null != guildId) {
+                      tmp45 = { type: closure_131_0(closure_131_2[14]).EmbeddedSurfaceType.MAIN, channelId: user.id, guildId };
+                      const obj10 = { type: closure_131_0(closure_131_2[14]).EmbeddedSurfaceType.MAIN, channelId: user.id, guildId };
+                    }
+                    obj8.surface = tmp45;
+                    obj8.analyticsContext = obj6;
+                    obj8.launch = obj7;
+                    referrerId = 3;
+                    source = 1;
+                    const obj11 = { value: tmp39(obj8), done: false };
+                    return obj11;
                   }
-                  obj10.surface = tmp38;
-                  obj10.analyticsContext = obj5;
-                  obj10.launch = obj6;
-                  referrerId = 3;
-                  source = 1;
-                  const obj12 = { value: tmp32(obj10), done: false };
-                  return obj12;
+                  tmp45 = closure_131_9;
                 }
-                tmp38 = closure_130_9;
               }
+              source = 3;
+              const obj12 = { applicationId, application, analyticsContext: obj6, launch: obj7, preferAppChannel: fromLink, channelId: channelId2 };
+              const obj13 = { value: obj9.tryLaunchAsFrame(obj12), done: true };
+              obj9 = closure_131_0(closure_131_2[15]);
+              return obj13;
             }
           } else if (2 === referrerId) {
             customId = 0;
@@ -335,20 +306,20 @@ obj = function _startFrame() {
             id = value;
             if (null != user) {
               const obj14 = { applicationId, id };
-              const obj13 = closure_130_0(closure_130_2[18]);
-              frameParticipantId = obj13.getFrameParticipantId(obj14);
-              if (null != closure_130_5.getParticipant(user.id, frameParticipantId)) {
-                closure_130_1(closure_130_2[19])(user.id, frameParticipantId);
+              const obj15 = closure_131_0(closure_131_2[18]);
+              frameParticipantId = obj15.getFrameParticipantId(obj14);
+              if (null != closure_131_5.getParticipant(user.id, frameParticipantId)) {
+                closure_131_1(closure_131_2[19])(user.id, frameParticipantId);
               }
             }
             customId = 0;
             source = 3;
             return { value: true, done: true };
           }
-        } catch (tmp53) {
+        } catch (tmp66) {
           if (0 === customId) {
             source = 3;
-            throw tmp53;
+            throw tmp66;
           } else {
             referrerId = 2;
           }

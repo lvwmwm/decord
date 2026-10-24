@@ -1,13 +1,13 @@
-// Module ID: 11566
-// Function ID: 11567
+// Module ID: 11586
+// Function ID: 11587
 // Name: CameraLottie
-// Dependencies: [109, 19, 21, 558, 576, 11567, 11568, 2]
+// Dependencies: [109, 19, 21, 558, 576, 11587, 11588, 2]
 
-// Module 11566 (CameraLottie)
+// Module 11586 (CameraLottie)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import AssetRegistry from "AssetRegistry" /* 11567 */;
-import LottieIcon2 from "LottieIcon" /* 11568 */;
+import AssetRegistry from "AssetRegistry" /* 11587 */;
+import LottieIcon2 from "LottieIcon" /* 11588 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -48,7 +48,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CameraLott
     }
     return tmp11;
   }
-  const LottieIcon = tmp(11568).LottieIcon;
+  const LottieIcon = tmp(11588).LottieIcon;
   const merged = Object.assign(tmp4);
   const tmp13 = <LottieIcon dotLottie={tmp9} ref={tmp5} layers={layers} markers={items} />;
   cResult[4] = tmp4;

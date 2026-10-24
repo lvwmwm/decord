@@ -1,17 +1,17 @@
-// Module ID: 5628
-// Function ID: 5629
+// Module ID: 5630
+// Function ID: 5631
 // Name: VoiceStateStore
-// Dependencies: [32, 5629, 1087, 5630, 12, 504, 1630, 584, 2]
+// Dependencies: [32, 5631, 1087, 5632, 12, 504, 1630, 584, 2]
 
-// Module 5628 (VoiceStateStore)
+// Module 5630 (VoiceStateStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
-import CallConstants from "CallConstants" /* 5630 */;
+import CallConstants from "CallConstants" /* 5632 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import VoiceStateRecord from "VoiceStateRecord" /* 5629 */;
+import VoiceStateRecord from "VoiceStateRecord" /* 5631 */;
 import size from "module_2" /* 2 */;
 
 let closure_14, closure_16, closure_9, sessionId, set2, set3;
@@ -253,12 +253,12 @@ class VoiceStateStore extends Store {
     }
     return tmp4;
   }
-  getVoiceStateForUser(userId) {
-    let tmp2 = closure_16[userId];
+  getVoiceStateForUser(id) {
+    let tmp2 = closure_16[id];
     const _Object = Object;
     if (null == tmp2) {
       const obj = {};
-      tmp[userId] = obj;
+      tmp[id] = obj;
       tmp2 = obj;
     }
     return values(tmp2)[0];

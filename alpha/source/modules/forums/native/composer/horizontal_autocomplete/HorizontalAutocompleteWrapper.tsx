@@ -1,12 +1,12 @@
-// Module ID: 10193
-// Function ID: 10194
+// Module ID: 10194
+// Function ID: 10195
 // Name: HorizontalAutocompleteWrapper
-// Dependencies: [19, 1087, 21, 558, 576, 10194, 10406, 5050, 5204, 7218, 2]
+// Dependencies: [19, 1087, 21, 558, 576, 10195, 10407, 5052, 5206, 7220, 2]
 
-// Module 10193 (HorizontalAutocompleteWrapper)
+// Module 10194 (HorizontalAutocompleteWrapper)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
-import timing from "timing" /* 5204 */;
+import timing from "timing" /* 5206 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

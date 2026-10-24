@@ -1,16 +1,16 @@
-// Module ID: 17401
-// Function ID: 17402
+// Module ID: 17433
+// Function ID: 17434
 // Name: getJankSurfaceName
-// Dependencies: [19, 5209, 17397, 17396, 5151, 17400, 2]
+// Dependencies: [19, 5211, 17429, 17428, 5153, 17432, 2]
 // Exports: attachJankActionSheetReporter, getJankSurfaceName, recordJankChannelDetailsOpen, setJankChannelDetailsOpen, setJankPanelOpen, setJankVoicePanelFocus, setJankVoicePanelTab
 
-// Module 17401 (getJankSurfaceName)
-import useChatLayout from "useChatLayout" /* 5151 */;
-import getJankScreenName from "getJankScreenName" /* 17396 */;
-import react_nativeDefault from "react-native" /* 17400 */;
+// Module 17433 (getJankSurfaceName)
+import useChatLayout from "useChatLayout" /* 5153 */;
+import getJankScreenName from "getJankScreenName" /* 17428 */;
+import react_nativeDefault from "react-native" /* 17432 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 5209 */;
-import JankScreenConstants from "JankScreenConstants" /* 17397 */;
+import ActionSheetStore from "ActionSheetStore" /* 5211 */;
+import JankScreenConstants from "JankScreenConstants" /* 17429 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;

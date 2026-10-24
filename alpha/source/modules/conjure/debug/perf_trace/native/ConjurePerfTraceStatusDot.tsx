@@ -1,21 +1,21 @@
-// Module ID: 12508
-// Function ID: 12509
+// Module ID: 12542
+// Function ID: 12543
 // Name: ConjurePerfTraceStatusDot
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 12504, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 12538, 2]
 
-// Module 12508 (ConjurePerfTraceStatusDot)
+// Module 12542 (ConjurePerfTraceStatusDot)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const ConjurePerfTraceFormat = tmp(12504);
+const ConjurePerfTraceFormat = tmp(12538);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;

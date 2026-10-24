@@ -1,28 +1,28 @@
-// Module ID: 6920
-// Function ID: 6921
+// Module ID: 6922
+// Function ID: 6923
 // Name: EmailVerificationModal
-// Dependencies: [32, 19, 1392, 6921, 1087, 21, 6919, 1275, 6922, 6980, 6988, 6994, 7000, 7003, 7074, 7087, 7092, 558, 576, 504, 5597, 1128, 7093, 2]
+// Dependencies: [32, 19, 1392, 6923, 1087, 21, 6921, 1275, 6924, 6982, 6990, 6996, 7002, 7005, 7076, 7089, 7094, 558, 576, 504, 5599, 1128, 7095, 2]
 
-// Module 6920 (EmailVerificationModal)
+// Module 6922 (EmailVerificationModal)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
-import useInitialValueDefault from "useInitialValue" /* 5597 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6919 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 6921 */;
-import NavigatorHeader from "NavigatorHeader" /* 6922 */;
-import ChangeEmailCollectReasonsDefault from "ChangeEmailCollectReasons" /* 6980 */;
-import ChangeEmailWarningDefault from "ChangeEmailWarning" /* 6988 */;
-import ResendEmailDefault from "ResendEmail" /* 6994 */;
-import ConfirmEmailChangeStartDefault from "ConfirmEmailChangeStart" /* 7000 */;
-import ConfirmEmailChangeCodeDefault from "ConfirmEmailChangeCode" /* 7003 */;
-import EnterEmailDefault from "EnterEmail" /* 7074 */;
-import UserSettingsConfirmPasswordDefault from "UserSettingsConfirmPassword" /* 7087 */;
-import ChangeEmailCompleteDefault from "ChangeEmailComplete" /* 7092 */;
-import Navigator2 from "Navigator" /* 7093 */;
+import useInitialValueDefault from "useInitialValue" /* 5599 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6921 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 6923 */;
+import NavigatorHeader from "NavigatorHeader" /* 6924 */;
+import ChangeEmailCollectReasonsDefault from "ChangeEmailCollectReasons" /* 6982 */;
+import ChangeEmailWarningDefault from "ChangeEmailWarning" /* 6990 */;
+import ResendEmailDefault from "ResendEmail" /* 6996 */;
+import ConfirmEmailChangeStartDefault from "ConfirmEmailChangeStart" /* 7002 */;
+import ConfirmEmailChangeCodeDefault from "ConfirmEmailChangeCode" /* 7005 */;
+import EnterEmailDefault from "EnterEmail" /* 7076 */;
+import UserSettingsConfirmPasswordDefault from "UserSettingsConfirmPassword" /* 7089 */;
+import ChangeEmailCompleteDefault from "ChangeEmailComplete" /* 7094 */;
+import Navigator2 from "Navigator" /* 7095 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;

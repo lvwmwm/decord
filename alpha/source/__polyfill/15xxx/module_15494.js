@@ -1,74 +1,23 @@
 // Module ID: 15494
 // Function ID: 15495
-// Dependencies: [15495, 15496, 1174, 15497, 15498]
-// Exports: getCalendarPreferenceDataForRegion, getHourCyclesPreferenceDataForLocaleOrRegion, getTimeZonePreferenceForRegion, getWeekDataForRegion
+// Dependencies: [15484, 15487]
+// Exports: LookupSupportedLocales
 
 // Module 15494
-import _mod1174 from "module_1174" /* 1174 */;
-import calendars2 from "calendars" /* 15495 */;
-import hourCycles from "hourCycles" /* 15496 */;
-import timezones from "timezones" /* 15497 */;
-import weekData2 from "weekData" /* 15498 */;
+import _mod15484 from "module_15484" /* 15484 */;
+import BestAvailableLocale from "BestAvailableLocale" /* 15487 */;
 
 
-export const getCalendarPreferenceDataForRegion = function getCalendarPreferenceDataForRegion(region) {
-  let str = null;
-  if (region) {
-    str = region.toUpperCase();
-  }
-  const calendars = calendars2.calendars;
-  if (!str) {
-    str = "";
-  }
-  const arr = calendars[str] || calendars2.calendars["001"];
-  return arr.map((item) => {
-    let str = "gregory";
-    if ("gregorian" !== item) {
-      let str2 = "islamicc";
-      if ("islamic-civil" !== item) {
-        str2 = item;
-      }
-      str = str2;
-    }
-    return str;
-  });
-};
-export const getHourCyclesPreferenceDataForLocaleOrRegion = function getHourCyclesPreferenceDataForLocaleOrRegion(locale, region) {
-  const formatted = locale.toLowerCase();
-  let str = "";
-  if (region) {
-    str = region.toUpperCase();
-  }
-  let v001 = hourCycles.hourCycles[formatted] || tmp2(15496).hourCycles[str];
-  if (!v001) {
-    const concat = "".concat;
-    v001 = tmp2(15496).hourCycles["".concat("", formatted, "-001")];
-  }
-  if (!v001) {
-    v001 = tmp2(15496).hourCycles["001"];
-  }
-  const tmp2Result = _mod1174;
-  return tmp2Result.__spreadArray([], v001, true);
-};
-export const getTimeZonePreferenceForRegion = function getTimeZonePreferenceForRegion(region) {
-  const formatted = region.toLowerCase();
+export const LookupSupportedLocales = function LookupSupportedLocales(arg0, arg1) {
+  let num;
   const items = [];
-  if (timezones.timezones[formatted]) {
-    const tmp2Result = _mod1174;
-    return tmp2Result.__spreadArray(items, timezones.timezones[formatted], true);
-  } else {
-    return items;
+  for (let num = 0; num < arg1.length; num = num + 1) {
+    let str = arg1[num];
+    let replaced = str.replace(_mod15484.UNICODE_EXTENSION_SEQUENCE_REGEX, "");
+    let BestAvailableLocaleResult = BestAvailableLocale.BestAvailableLocale(arg0, replaced);
+    if (BestAvailableLocaleResult) {
+      let arr = items.push(BestAvailableLocaleResult);
+    }
   }
-};
-export const getWeekDataForRegion = function getWeekDataForRegion(region) {
-  let str = "";
-  if (region) {
-    str = region.toUpperCase();
-  }
-  const weekData = weekData2.weekData;
-  if (!str) {
-    str = "001";
-  }
-  const tmp3 = weekData[str] || weekData2.weekData["001"];
-  return tmp3;
+  return items;
 };

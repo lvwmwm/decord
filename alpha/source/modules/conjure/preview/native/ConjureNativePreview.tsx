@@ -1,42 +1,42 @@
-// Module ID: 11855
-// Function ID: 11856
+// Module ID: 11881
+// Function ID: 11882
 // Name: ConjureNativePreview
-// Dependencies: [32, 19, 17, 6773, 502, 4821, 6769, 2001, 11832, 6771, 1087, 6774, 21, 4969, 587, 558, 576, 5232, 6903, 10727, 10764, 11856, 10760, 504, 11858, 10741, 10765, 5591, 11859, 11860, 11861, 11865, 11867, 11869, 1128, 3830, 5242, 7706, 11877, 10739, 7409, 7204, 10887, 1384, 11984, 2]
+// Dependencies: [32, 19, 17, 6775, 502, 4823, 6771, 2001, 11858, 6773, 1087, 6776, 21, 4971, 587, 558, 576, 5234, 6905, 10728, 10765, 11882, 10761, 504, 11884, 10742, 10766, 5593, 11885, 11886, 11887, 11891, 11893, 11895, 1128, 3830, 5244, 7708, 11903, 10740, 7411, 7206, 10888, 1384, 12010, 2]
 // Exports: leaveConjurePreviewFrame
 
-// Module 11855 (ConjureNativePreview)
+// Module 11881 (ConjureNativePreview)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl9 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import components_Button_Button from "components/Button/Button" /* 5242 */;
-import FramesConstants from "FramesConstants" /* 6774 */;
-import Card_Card from "Card/Card" /* 6903 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7204 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7409 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7706 */;
-import conjurePreviewSurface2 from "conjurePreviewSurface" /* 10727 */;
-import ConjurePlatformUtils from "ConjurePlatformUtils" /* 10741 */;
-import leaveFrame from "leaveFrame" /* 10764 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10765 */;
-import useEdgeOnlySwipeExitDefault from "useEdgeOnlySwipeExit" /* 11856 */;
-import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 11859 */;
-import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 11877 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import components_Button_Button from "components/Button/Button" /* 5244 */;
+import FramesConstants from "FramesConstants" /* 6776 */;
+import Card_Card from "Card/Card" /* 6905 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7206 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7708 */;
+import conjurePreviewSurface2 from "conjurePreviewSurface" /* 10728 */;
+import ConjurePlatformUtils from "ConjurePlatformUtils" /* 10742 */;
+import leaveFrame from "leaveFrame" /* 10765 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10766 */;
+import useEdgeOnlySwipeExitDefault from "useEdgeOnlySwipeExit" /* 11882 */;
+import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 11885 */;
+import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 11903 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import FramesStore_mod from "FramesStore" /* 6773 */;
+import FramesStore_mod from "FramesStore" /* 6775 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
-import ReadStateStore from "ReadStateStore" /* 6769 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import ReadStateStore from "ReadStateStore" /* 6771 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
-import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 11832 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6771 */;
+import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 11858 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -155,7 +155,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Status
     let tmp8 = null;
     if (null != body) {
       const obj6 = { variant: "text-sm/normal", color: "text-muted", style: tmp4.cardText, children: body };
-      tmp8 = authStore5(tmp(5232).Text, obj6);
+      tmp8 = authStore5(tmp(5234).Text, obj6);
     }
     cResult[3] = body;
     cResult[4] = tmp4.cardText;
@@ -650,7 +650,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     const self = this;
     const self2 = this;
     const obj2 = { applicationId };
-    const applicationWidget = new tmp(7706).ApplicationWidget(obj2);
+    const applicationWidget = new tmp(7708).ApplicationWidget(obj2);
     cResult[2] = applicationId;
     cResult[3] = applicationWidget;
     tmp9 = applicationWidget;
@@ -1102,7 +1102,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     intl = tmp7(1128).intl;
     intl2 = tmp7(1128).intl;
     obj4 = { variant: "secondary", size: "sm", text: intl3.string(projectId(1128).t["5911Lb"]), onPress: callback };
-    Button = tmp7(5242).Button;
+    Button = tmp7(5244).Button;
     intl3 = tmp7(1128).intl;
     tmp28Result = closure_22(closure_25, obj3);
   } else if (null == stateFromStores) {
@@ -1111,14 +1111,14 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
   } else {
     const obj6 = { style: tmp.dm, children: items8 };
     const obj7 = { guildId, channelId: stateFromStores.id, chatInputRef: tmp19, screenIndex: "conjure-preview", alwaysRespectKeyboard: true, disableGradient: true };
-    items8 = [closure_22(previewApplicationId(10887), obj7, stateFromStores.id), ];
+    items8 = [closure_22(previewApplicationId(10888), obj7, stateFromStores.id), ];
     let tmp30Result = null;
     const tmp28 = closure_23;
     const tmp29 = id;
     const tmp30 = closure_22;
     const tmp7Result4 = projectId(1384);
     if (tmp7Result4.isAndroid()) {
-      tmp30Result = tmp30(tmp7(11984).PortalKeyboardRenderer, { portal: true });
+      tmp30Result = tmp30(tmp7(12010).PortalKeyboardRenderer, { portal: true });
     }
     items8[1] = tmp30Result;
     tmp28Result = tmp28(tmp29, obj6);

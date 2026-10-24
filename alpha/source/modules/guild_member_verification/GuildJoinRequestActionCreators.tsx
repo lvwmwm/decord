@@ -1,17 +1,17 @@
-// Module ID: 6841
-// Function ID: 6842
+// Module ID: 6843
+// Function ID: 6844
 // Name: GuildJoinRequestActionCreators
-// Dependencies: [5, 4825, 6842, 5001, 1087, 5003, 584, 1297, 6843, 5906, 1128, 6632, 2]
+// Dependencies: [5, 4827, 6844, 5003, 1087, 5005, 584, 1297, 6845, 5908, 1128, 6634, 2]
 
-// Module 6841 (GuildJoinRequestActionCreators)
+// Module 6843 (GuildJoinRequestActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import ChannelRecord from "ChannelRecord" /* 4825 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5001 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5003 */;
-import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 6843 */;
+import ChannelRecord from "ChannelRecord" /* 4827 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5003 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5005 */;
+import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 6845 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6842 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6844 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -262,7 +262,6 @@ obj = function _ackUserGuildJoinRequest() {
     let c5 = 0;
     return (async (arg0, value) => {
       let obj15;
-      let tmp;
       if (c7 === 2) {
         c7 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");

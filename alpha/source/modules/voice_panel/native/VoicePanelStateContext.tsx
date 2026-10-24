@@ -1,18 +1,18 @@
-// Module ID: 10895
-// Function ID: 10896
+// Module ID: 10896
+// Function ID: 10897
 // Name: VoicePanelStateContext
-// Dependencies: [19, 10896, 10894, 10897, 7167, 10898, 1635, 10904, 2]
+// Dependencies: [19, 10897, 10895, 10898, 7169, 10899, 1635, 10905, 2]
 
-// Module 10895 (VoicePanelStateContext)
+// Module 10896 (VoicePanelStateContext)
 import SafeAreaConstants from "SafeAreaConstants" /* 1635 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10896 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 10897 */;
-import VoicePanelCardLayoutManagerDefault from "VoicePanelCardLayoutManager" /* 10898 */;
-import VoicePanelPIPHandoffDefault from "VoicePanelPIPHandoff" /* 10904 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10897 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 10898 */;
+import VoicePanelCardLayoutManagerDefault from "VoicePanelCardLayoutManager" /* 10899 */;
+import VoicePanelPIPHandoffDefault from "VoicePanelPIPHandoff" /* 10905 */;
 import react from "react" /* 19 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10894 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10895 */;
 import "ReanimatedHelperTypes";
-import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7167 */;
+import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7169 */;
 import size from "module_2" /* 2 */;
 
 let CONTROLS_HEIGHT;

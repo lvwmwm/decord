@@ -1,25 +1,25 @@
-// Module ID: 12500
-// Function ID: 12501
+// Module ID: 12534
+// Function ID: 12535
 // Name: ConjureDebugScene
-// Dependencies: [32, 19, 17, 10697, 10703, 21, 4969, 587, 1128, 3830, 558, 576, 1505, 1633, 12256, 8899, 504, 10732, 11844, 12501, 7283, 12510, 5661, 5680, 11830, 9145, 12511, 12517, 12519, 2]
+// Dependencies: [32, 19, 17, 10698, 10704, 21, 4971, 587, 1128, 3830, 558, 576, 1505, 1633, 12282, 8901, 504, 10733, 11870, 12535, 7285, 12544, 5663, 5682, 11856, 9146, 12545, 12551, 12553, 2]
 
-// Module 12500 (ConjureDebugScene)
+// Module 12534 (ConjureDebugScene)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5661 */;
-import CopyIcon from "CopyIcon" /* 5680 */;
-import ClipboardUtils from "ClipboardUtils" /* 7283 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10697 */;
-import conjureDebugConnection from "conjureDebugConnection" /* 10732 */;
-import conjureTraceRequests2 from "conjureTraceRequests" /* 11844 */;
-import ConjureDebugSnapshot from "ConjureDebugSnapshot" /* 12510 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
+import CopyIcon from "CopyIcon" /* 5682 */;
+import ClipboardUtils from "ClipboardUtils" /* 7285 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10698 */;
+import conjureDebugConnection from "conjureDebugConnection" /* 10733 */;
+import conjureTraceRequests2 from "conjureTraceRequests" /* 11870 */;
+import ConjureDebugSnapshot from "ConjureDebugSnapshot" /* 12544 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConjureDebugStore from "ConjureDebugStore" /* 10703 */;
+import ConjureDebugStore from "ConjureDebugStore" /* 10704 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -265,7 +265,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDeb
         const tmp4 = projectId;
         if (null != result) {
           setActiveIndex(arr.indexOf("trace"), false);
-          const tmp2Result = tmp2(12501);
+          const tmp2Result = tmp2(12535);
           tmp2Result.openPerfTrace(tmp4, result);
         }
       }
@@ -360,7 +360,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDeb
       const tmp4 = projectId;
       if (null != result) {
         setActiveIndex(memo.indexOf("trace"), false);
-        const tmp2Result = tmp2(12501);
+        const tmp2Result = tmp2(12535);
         tmp2Result.openPerfTrace(tmp4, result);
       }
     }

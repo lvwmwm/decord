@@ -1,12 +1,12 @@
-// Module ID: 14744
-// Function ID: 14745
+// Module ID: 14767
+// Function ID: 14768
 // Name: useMaybeFetchTieredTenureBadgeData
-// Dependencies: [1392, 1394, 558, 576, 504, 11078, 8674, 5261, 2]
+// Dependencies: [1392, 1394, 558, 576, 504, 11079, 8676, 5263, 2]
 
-// Module 14744 (useMaybeFetchTieredTenureBadgeData)
+// Module 14767 (useMaybeFetchTieredTenureBadgeData)
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import useMountEffectDefault from "useMountEffect" /* 5261 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8674 */;
+import useMountEffectDefault from "useMountEffect" /* 5263 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8676 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -37,14 +37,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFe
   }
   const tmpResult = tmp(504);
   stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  const tmpResult2 = tmp(11078);
+  const tmpResult2 = tmp(11079);
   const isPremiumSubscriber = tmpResult2.useIsPremiumSubscriber(PremiumTypes.TIER_2);
   if (cResult[2] === stateFromStores) {
     let tmp9;
     if (cResult[3] === isPremiumSubscriber) {
       tmp9 = cResult[4];
     }
-    isPremiumSubscriber(5261)(tmp9);
+    isPremiumSubscriber(5263)(tmp9);
   }
   const fn2 = function c() {
     let id;

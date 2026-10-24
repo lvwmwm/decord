@@ -1,19 +1,19 @@
-// Module ID: 16391
-// Function ID: 16392
+// Module ID: 16418
+// Function ID: 16419
 // Name: OrbsArcadeRewardChainCell
-// Dependencies: [32, 19, 17, 4970, 21, 4969, 587, 5050, 558, 576, 504, 5204, 4976, 5250, 16367, 683, 16392, 9438, 16375, 7265, 5226, 16393, 2]
+// Dependencies: [32, 19, 17, 4972, 21, 4971, 587, 5052, 558, 576, 504, 5206, 4978, 5252, 16391, 683, 16419, 9439, 16399, 7267, 5228, 16420, 2]
 
-// Module 16391 (OrbsArcadeRewardChainCell)
+// Module 16418 (OrbsArcadeRewardChainCell)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5050 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4970 */;
+import AccessibilityStore from "AccessibilityStore" /* 4972 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -570,7 +570,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
       if (null != closure_5) {
         const items = [closure_5, closure_5 + 400];
         const tmpResult = ReanimatedRexport;
-        num = tmpResult.interpolate(value, items, [0, 1], tmp(5050).Extrapolation.CLAMP);
+        num = tmpResult.interpolate(value, items, [0, 1], tmp(5052).Extrapolation.CLAMP);
       }
       const obj = { transform: items1 };
       items1 = [{ scale: interpolate(num, [0, 0.6, 1], [0, 1.2, 1]) }];
@@ -976,7 +976,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
       if (null != c6) {
         const items = [c6, c6 + 400];
         const tmpResult = ReanimatedRexport;
-        num = tmpResult.interpolate(value, items, [0, 1], tmp(5050).Extrapolation.CLAMP);
+        num = tmpResult.interpolate(value, items, [0, 1], tmp(5052).Extrapolation.CLAMP);
       }
       const obj = { transform: items1 };
       items1 = [{ scale: interpolate(num, [0, 0.6, 1], [0, 1.2, 1]) }];

@@ -1,155 +1,73 @@
 // Module ID: 5546
 // Function ID: 5547
-// Dependencies: [17, 19, 21, 5514, 5547, 5548, 5549]
-// Exports: useSecondaryProps
+// Dependencies: [5499, 19, 5544]
+// Exports: useOnListLoad
 
 // Module 5546
-import react2 from "react" /* 19 */;
-import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 5547 */;
-import react3 from "react" /* 5548 */;
-import react_native2 from "react-native" /* 5549 */;
-import react_native3 from "react-native" /* 17 */;
+import _slicedToArray2 from "_slicedToArray" /* 5544 */;
+import _slicedToArray from "_slicedToArray" /* 5499 */;
+import react from "react" /* 19 */;
 
-const react = react2;
+let isFirstLayoutComplete;
 
-let c2;
 let c3;
-({ Animated: c2, RefreshControl: c3 } = react_native3);
-const useMemo = react2.useMemo;
-const jsx = Fragment.jsx;
+let closure_4;
+let hasOwnProperty;
+let metroRequire;
+({ useEffect: c3, useMemo: closure_4, useRef: hasOwnProperty, useState: metroRequire } = react);
+function useOnLoad(arg0, arg1) {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let closure_2 = hasOwnProperty(false);
+  _false(() => {
+    isFirstLayoutComplete = isFirstLayoutComplete.getIsFirstLayoutComplete() && !ref.current;
+    if (isFirstLayoutComplete) {
+      ref.current = true;
+      f95164();
+    }
+  });
+}
 
-export const useSecondaryProps = function useSecondaryProps(ListHeaderComponent) {
-  let items5;
-  let tmp;
-  let tmp5Result;
-  ListHeaderComponent = ListHeaderComponent.ListHeaderComponent;
-  const ListHeaderComponentStyle = ListHeaderComponent.ListHeaderComponentStyle;
-  const ListFooterComponent = ListHeaderComponent.ListFooterComponent;
-  const ListFooterComponentStyle = ListHeaderComponent.ListFooterComponentStyle;
-  const ListEmptyComponent = ListHeaderComponent.ListEmptyComponent;
-  const ListEmptyComponentStyle = ListHeaderComponent.ListEmptyComponentStyle;
-  const renderScrollComponent = ListHeaderComponent.renderScrollComponent;
-  const refreshing = ListHeaderComponent.refreshing;
-  const progressViewOffset = ListHeaderComponent.progressViewOffset;
-  const onRefresh = ListHeaderComponent.onRefresh;
-  const data = ListHeaderComponent.data;
-  const refreshControl = ListHeaderComponent.refreshControl;
-  const stickyHeaderConfig = ListHeaderComponent.stickyHeaderConfig;
-  let invertedTransformStyle;
-  if (ListHeaderComponent.inverted) {
-    let tmp3 = ListHeaderComponent;
-    let tmp4 = ListHeaderComponentStyle;
-    let obj = ListHeaderComponent(ListHeaderComponentStyle[3]);
-    invertedTransformStyle = obj.getInvertedTransformStyle(tmp);
-  }
-  const tmp5 = ListEmptyComponentStyle;
-  let items = [onRefresh, refreshing, progressViewOffset, refreshControl];
-  const items1 = [ListHeaderComponent, ListHeaderComponentStyle, invertedTransformStyle];
-  const items2 = [ListFooterComponent, ListFooterComponentStyle, invertedTransformStyle];
-  const tmp6 = ListEmptyComponentStyle(() => {
-    let tmp = refreshControl;
-    if (!tmp) {
-      let tmp3;
-      if (onRefresh) {
-        const _Boolean = Boolean;
-        tmp3 = <_false refreshing={Boolean(refreshing)} progressViewOffset={progressViewOffset} onRefresh={tmp2} />;
-      }
-      tmp = tmp3;
-    }
-    return tmp;
+export const useOnListLoad = (getDataLength, arg1) => {
+  let closure_129_3;
+  let tmp3;
+  let closure_0 = getDataLength;
+  let closure_1 = arg1;
+  let tmp = hasOwnProperty;
+  let closure_2 = hasOwnProperty(Date.now());
+  [tmp3, closure_129_3] = _slicedToArray(metroRequire(false), 2);
+  const tmp2 = _slicedToArray(metroRequire(false), 2);
+  const dataLength = getDataLength.getDataLength();
+  let obj = _slicedToArray2;
+  const requestAnimationFrame = obj.useUnmountAwareAnimationFrame().requestAnimationFrame;
+  const items = [dataLength];
+  React3(() => {
+    closure_2.current = Date.now();
   }, items);
-  let tmp7 = ListEmptyComponentStyle(() => {
-    let tmp2 = null;
-    if (ListHeaderComponent) {
-      const items = [ListHeaderComponentStyle, invertedTransformStyle];
-      const CompatView = react_native.CompatView;
-      tmp2 = <CompatView style={items}>{react3.getValidComponent(tmp)}</CompatView>;
-    }
-    return tmp2;
-  }, items1);
-  const items3 = [ListEmptyComponent, data, invertedTransformStyle, ListEmptyComponentStyle];
-  const tmp8 = ListEmptyComponentStyle(() => {
-    let tmp2 = null;
-    if (ListFooterComponent) {
-      const items = [ListFooterComponentStyle, invertedTransformStyle];
-      const CompatView = react_native.CompatView;
-      tmp2 = <CompatView style={items}>{react3.getValidComponent(tmp)}</CompatView>;
-    }
-    return tmp2;
-  }, items2);
-  let backdropComponent;
-  const tmp9 = ListEmptyComponentStyle(() => {
-    if (ListEmptyComponent) {
-      let tmp7;
-      const obj = react3;
-      const validComponent = obj.getValidComponent(tmp);
-      const tmp2 = require;
-      if (invertedTransformStyle) {
-        const items = [ListEmptyComponentStyle, tmp5];
-        tmp7 = jsx(tmp2(5547).CompatView, { style: items, children: validComponent });
-      } else {
-        tmp7 = validComponent;
-      }
-      return tmp7;
-    }
-    return null;
-  }, items3);
-  if (stickyHeaderConfig != null) {
-    backdropComponent = stickyHeaderConfig.backdropComponent;
-  }
-  const items4 = [backdropComponent, invertedTransformStyle];
-  let obj2 = {
-    refreshControl: tmp6,
-    renderHeader: tmp7,
-    renderFooter: tmp8,
-    renderEmpty: tmp9,
-    CompatScrollView: tmp5(() => {
-      let forwardRefResult;
-      const CompatAnimatedScroller = react_native2.CompatAnimatedScroller;
-      if (typeof renderScrollComponent === "function") {
-        const tmpResult = react3;
-        if (!tmpResult.isComponentClass(renderScrollComponent)) {
-          forwardRefResult = react.forwardRef((arg0, ref) => {
-            const obj = { ref };
-            const merged = Object.assign(arg0);
-            return renderScrollComponent(obj);
-          });
-          forwardRefResult.displayName = "CustomScrollView";
+  if (typeof useOnLoad === "function") {
+    closure_0 = getDataLength;
+    const f95164 = () => {
+      const elapsedTimeInMs = Date.now() - ref.current;
+      const tmp = closure_4(() => {
+        elapsedTimeInMs.isFirstPaintOnUiComplete = true;
+        if (f95164 != null) {
+          const obj = { elapsedTimeInMs };
+          tmp(obj);
         }
-        return React2.createAnimatedComponent(forwardRefResult);
+        closure_2_3(true);
+      });
+    };
+    closure_2 = tmp(false);
+    _false(() => {
+      isFirstLayoutComplete = isFirstLayoutComplete.getIsFirstLayoutComplete() && !ref.current;
+      if (isFirstLayoutComplete) {
+        ref.current = true;
+        f95164();
       }
-      forwardRefResult = CompatAnimatedScroller;
-      if (renderScrollComponent) {
-        forwardRefResult = tmp3;
-      }
-    }, items5),
-    renderStickyHeaderBackdrop: tmp5Result
-  };
-  items5 = [renderScrollComponent];
-  tmp5Result = tmp5(() => {
-    let backdropComponent1;
-    let getValidComponent;
-    let items;
-    let backdropComponent;
-    if (stickyHeaderConfig != null) {
-      backdropComponent = tmp.backdropComponent;
-    }
-    let tmp4Result = null;
-    if (backdropComponent) {
-      const obj = { style: items, children: getValidComponent(backdropComponent1) };
-      items = [{ position: "absolute", inset: 0, pointerEvents: "none" }, invertedTransformStyle];
-      const CompatView = react_native.CompatView;
-      backdropComponent1 = undefined;
-      getValidComponent = react3.getValidComponent;
-      react3;
-      const tmp4 = jsx;
-      if (stickyHeaderConfig != null) {
-        backdropComponent1 = tmp.backdropComponent;
-      }
-      tmp4Result = tmp4(CompatView, obj);
-    }
-    return tmp4Result;
-  }, items4);
-  return obj2;
+    });
+    return { isLoaded: tmp3 };
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
 };
+export { useOnLoad };

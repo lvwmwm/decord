@@ -1,13 +1,13 @@
-// Module ID: 17579
-// Function ID: 17580
+// Module ID: 17611
+// Function ID: 17612
 // Name: useActiveEventOrStageInstanceChannel
-// Dependencies: [4821, 558, 576, 9021, 17578, 2]
+// Dependencies: [4823, 558, 576, 9022, 17610, 2]
 
-// Module 17579 (useActiveEventOrStageInstanceChannel)
+// Module 17611 (useActiveEventOrStageInstanceChannel)
 import react from "react" /* 576 */;
-import useGuildScheduledEvents from "useGuildScheduledEvents" /* 9021 */;
-import useLiveStageChannelsDefault from "useLiveStageChannels" /* 17578 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
+import useGuildScheduledEvents from "useGuildScheduledEvents" /* 9022 */;
+import useLiveStageChannelsDefault from "useLiveStageChannels" /* 17610 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

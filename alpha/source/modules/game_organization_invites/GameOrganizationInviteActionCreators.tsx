@@ -1,9 +1,9 @@
-// Module ID: 18833
-// Function ID: 18834
+// Module ID: 11317
+// Function ID: 11318
 // Name: GameOrganizationInviteActionCreators
-// Dependencies: [5, 1087, 584, 1297, 6373, 2]
+// Dependencies: [5, 1087, 584, 1297, 6375, 2]
 
-// Module 18833 (GameOrganizationInviteActionCreators)
+// Module 11317 (GameOrganizationInviteActionCreators)
 import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -178,6 +178,82 @@ let obj = {
         } catch (tmp12) {
           c3 = 3;
           throw tmp12;
+        }
+      }
+    })();
+  },
+  acceptGameOrganizationInvite(arg0, arg1) {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    return (async function(arg0, value) {
+      let obj4;
+      if (c5 === 2) {
+        c5 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        let c3;
+        try {
+          let character_id;
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              character_id = tmp;
+              closure_0 = tmp4;
+              c3 = 1;
+              const HTTP = closure_0(closure_2[3]).HTTP;
+              const request = { url: c4.GAME_ORGANIZATION_INVITE_JOIN(closure_0), body: obj4, rejectWithError: true };
+              const post = HTTP.post;
+              obj4 = { character_id };
+              c4 = 2;
+              c5 = 1;
+              const obj5 = { value: post(request), done: false };
+              return obj5;
+            }
+          } else if (1 === c4) {
+            c3 = 0;
+            closure_0 = closure_2;
+            const self = this;
+            const self2 = this;
+            const tmp12 = new character_id(closure_2[4])(closure_0);
+            throw tmp12;
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 0;
+            c5 = 3;
+            const obj6 = { value, done: true };
+            return obj6;
+          } else {
+            c3 = 0;
+            c5 = 3;
+            obj = { value: value.body, done: true };
+            return obj;
+          }
+        } catch (tmp14) {
+          closure_2 = tmp14;
+          if (0 === c3) {
+            c5 = 3;
+            throw tmp14;
+          } else {
+            c4 = 1;
+          }
         }
       }
     })();

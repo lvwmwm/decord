@@ -1,10 +1,10 @@
-// Module ID: 10624
-// Function ID: 10625
+// Module ID: 10625
+// Function ID: 10626
 // Name: ThemedGradient
-// Dependencies: [109, 19, 17, 4993, 21, 4969, 4976, 4967, 5142, 4966, 558, 576, 1499, 5256, 5203, 587, 5145, 683, 1257, 573, 5147, 5202, 1256, 2]
+// Dependencies: [109, 19, 17, 4995, 21, 4971, 4978, 4969, 5144, 4968, 558, 576, 1499, 5258, 5205, 587, 5147, 683, 1257, 573, 5149, 5204, 1256, 2]
 // Exports: validateColors
 
-// Module 10624 (ThemedGradient)
+// Module 10625 (ThemedGradient)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
@@ -12,18 +12,18 @@ import nativeDefault from "native" /* 587 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1256 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
-import ColorUtils from "ColorUtils" /* 4966 */;
-import utils_ColorDefault from "utils/Color" /* 4967 */;
-import shared from "shared" /* 4976 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5142 */;
-import GuildThemePresets from "GuildThemePresets" /* 5145 */;
-import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 5202 */;
-import useThemeDefault from "useTheme" /* 5203 */;
+import ColorUtils from "ColorUtils" /* 4968 */;
+import utils_ColorDefault from "utils/Color" /* 4969 */;
+import shared from "shared" /* 4978 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5144 */;
+import GuildThemePresets from "GuildThemePresets" /* 5147 */;
+import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 5204 */;
+import useThemeDefault from "useTheme" /* 5205 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4993 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4995 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,9 +34,9 @@ let c10;
 let tmp4;
 let tmp6;
 let unpackModuleId;
-const useRoutedActiveGuildThemeDefault = tmp6(5147);
-const LinearGradientDefault = tmp4(5256);
-const f107401 = (item) => item / 100;
+const useRoutedActiveGuildThemeDefault = tmp6(5149);
+const LinearGradientDefault = tmp4(5258);
+const f107634 = (item) => item / 100;
 function getMixedGradientColor(mixColorOverride) {
   let b;
   let darkFallbackAmount;
@@ -475,7 +475,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildT
     tmp4 = cResult[1];
   }
   dependencyMap = tmp4;
-  const tmp5 = mixColorOverride(5203)();
+  const tmp5 = mixColorOverride(5205)();
   theme = tmp5;
   if (cResult[2] === mix) {
     if (cResult[3] === tmp4) {
@@ -536,7 +536,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildT
       }
     }
   }
-  const tmpResult = tmp(5145);
+  const tmpResult = tmp(5147);
   const guildThemePresetAppearance = tmpResult.getGuildThemePresetAppearance(preset, tmp5);
   if (cResult[11] === mix) {
     if (cResult[12] === tmp4) {
@@ -797,7 +797,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Custom
     gradientColorStops = [];
   }
   if (gradientColorStops.length === reduced.length) {
-    mapped1 = gradientColorStops.map(f107401);
+    mapped1 = gradientColorStops.map(f107634);
   } else if (1 === reduced.length) {
     mapped1 = [0, 1];
   } else {
@@ -1048,7 +1048,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Custom
     gradientColorStops = [];
   }
   if (gradientColorStops.length === reduced.length) {
-    mapped1 = gradientColorStops.map(f107401);
+    mapped1 = gradientColorStops.map(f107634);
   } else if (1 === reduced.length) {
     mapped1 = [0, 1];
   } else {
@@ -1074,7 +1074,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Custom
   if (reduced.length >= 2) {
     let obj = { colors: reduced, locations: mapped1, start: point, end: point1, style: items2 };
     const tmp10 = closure_10;
-    const tmp2Result = tmp2(5256);
+    const tmp2Result = tmp2(5258);
     if (wide) {
       let obj2 = { width };
       wide = obj2;
@@ -1288,7 +1288,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Active
       }
       let GUILD_THEME_DEFAULT_BASE_MIX = customUserThemeSettings.baseMix;
       if (GUILD_THEME_DEFAULT_BASE_MIX == null) {
-        GUILD_THEME_DEFAULT_BASE_MIX = tmp2(5145).GUILD_THEME_DEFAULT_BASE_MIX;
+        GUILD_THEME_DEFAULT_BASE_MIX = tmp2(5147).GUILD_THEME_DEFAULT_BASE_MIX;
       }
       if (cResult[8] === tmp6) {
         if (cResult[9] === tmp19) {
@@ -1361,7 +1361,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Active
     }
     GUILD_THEME_DEFAULT_BASE_MIX = customUserThemeSettings.baseMix;
     if (GUILD_THEME_DEFAULT_BASE_MIX == null) {
-      GUILD_THEME_DEFAULT_BASE_MIX = tmp14(5145).GUILD_THEME_DEFAULT_BASE_MIX;
+      GUILD_THEME_DEFAULT_BASE_MIX = tmp14(5147).GUILD_THEME_DEFAULT_BASE_MIX;
     }
     return tmp9(tmp10, obj2);
   } else {

@@ -1,32 +1,32 @@
-// Module ID: 15789
-// Function ID: 15790
+// Module ID: 15812
+// Function ID: 15813
 // Name: LocalMessageCacheManager
-// Dependencies: [5, 32, 4912, 502, 4821, 6008, 1087, 15790, 3, 1104, 510, 2049, 4794, 10206, 7564, 11319, 13959, 2002, 2004, 584, 6489, 9716, 2]
+// Dependencies: [5, 32, 4914, 502, 4823, 6010, 1087, 15813, 3, 1104, 510, 2049, 4796, 10207, 7566, 11337, 13978, 2002, 2004, 584, 6491, 9717, 2]
 
-// Module 15789 (LocalMessageCacheManager)
+// Module 15812 (LocalMessageCacheManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import _modDef2049 from "module_2049" /* 2049 */;
-import DateUtils from "DateUtils" /* 4794 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7564 */;
-import createMessageDefault from "createMessage" /* 10206 */;
+import DateUtils from "DateUtils" /* 4796 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7566 */;
+import createMessageDefault from "createMessage" /* 10207 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import MessageRecord from "MessageRecord" /* 4912 */;
+import MessageRecord from "MessageRecord" /* 4914 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
-import MessageStore from "MessageStore" /* 6008 */;
-import MutexUtils from "MutexUtils" /* 15790 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import MessageStore from "MessageStore" /* 6010 */;
+import MutexUtils from "MutexUtils" /* 15813 */;
 import LifecycleManager from "LifecycleManager" /* 2004 */;
 import size from "module_2" /* 2 */;
 
 let _self, channel, closure_8, set;
 
 let tmp;
-const UploadActionCreatorsDefault = tmp(11319);
+const UploadActionCreatorsDefault = tmp(11337);
 function _getKeyForFileId(arg0) {
   const entries = Object.entries(_getMessages());
   obj = entries[Symbol.iterator]();

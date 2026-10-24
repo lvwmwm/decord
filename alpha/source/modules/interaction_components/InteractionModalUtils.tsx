@@ -1,9 +1,9 @@
-// Module ID: 18797
-// Function ID: 18798
+// Module ID: 18829
+// Function ID: 18830
 // Name: InteractionModalUtils
-// Dependencies: [5, 32, 19, 502, 4821, 7629, 4881, 5000, 8291, 15621, 8594, 1087, 558, 8593, 2000, 576, 1417, 5621, 7352, 504, 5597, 11, 584, 9664, 1128, 38, 6012, 10104, 8598, 6017, 8144, 1297, 1104, 2]
+// Dependencies: [5, 32, 19, 502, 4823, 7631, 4883, 5002, 8293, 15641, 8596, 1087, 558, 8595, 2000, 576, 1417, 5623, 7354, 504, 5599, 11, 584, 9665, 1128, 38, 6014, 10105, 8600, 6019, 8146, 1297, 1104, 2]
 
-// Module 18797 (InteractionModalUtils)
+// Module 18829 (InteractionModalUtils)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -11,20 +11,20 @@ import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import Server from "Server" /* 2000 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 5621 */;
-import DraftStore from "DraftStore" /* 7629 */;
-import ComponentStateContext from "ComponentStateContext" /* 8593 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9664 */;
-import InteractionModalStore2 from "InteractionModalStore" /* 15621 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 5623 */;
+import DraftStore from "DraftStore" /* 7631 */;
+import ComponentStateContext from "ComponentStateContext" /* 8595 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9665 */;
+import InteractionModalStore2 from "InteractionModalStore" /* 15641 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
-import GuildMemberStore from "GuildMemberStore" /* 4881 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5000 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8291 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8594 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import GuildMemberStore from "GuildMemberStore" /* 4883 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5002 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8293 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8596 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ function validate(arr) {
   return c0;
 }
 function getData(arg0, arr, arg2) {
-  const f137639 = (type) => {
+  const f137978 = (type) => {
     let components;
     let items;
     let mapped;
@@ -54,7 +54,7 @@ function getData(arg0, arr, arg2) {
     let values2;
     type = type.type;
     if (Server.ComponentType.ACTION_ROW === type) {
-      const obj4 = { type: type.type, components: components.map(f137639) };
+      const obj4 = { type: type.type, components: components.map(f137978) };
       components = type.components;
       return obj4;
     } else if (Server.ComponentType.TEXT_INPUT === type) {
@@ -115,7 +115,7 @@ function getData(arg0, arr, arg2) {
               if (Server.ComponentType.TEXT_DISPLAY === type) {
                 return { type: type.type };
               } else if (Server.ComponentType.LABEL === type) {
-                const obj21 = { type: type.type, component: items.map(f137639)[0] };
+                const obj21 = { type: type.type, component: items.map(f137978)[0] };
                 items = [type.component];
                 return obj21;
               } else if (Server.ComponentType.RADIO_GROUP === type) {
@@ -177,7 +177,7 @@ function getData(arg0, arr, arg2) {
   };
   let closure_0 = arg0;
   let closure_1 = arg2;
-  return arr.map(f137639);
+  return arr.map(f137978);
 }
 function getUploadsForModal(id, arg1) {
   let closure_0 = arg1;

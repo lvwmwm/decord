@@ -1,14 +1,14 @@
-// Module ID: 13200
-// Function ID: 13201
+// Module ID: 13237
+// Function ID: 13238
 // Name: TwitterNeutralIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 13201, 5666, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 13238, 5668, 2]
 
-// Module 13200 (TwitterNeutralIcon)
+// Module 13237 (TwitterNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 5666 */;
-import AssetRegistry from "AssetRegistry" /* 13201 */;
+import BaseIconImage2 from "BaseIconImage" /* 5668 */;
+import AssetRegistry from "AssetRegistry" /* 13238 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwitterNeu
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(5666).BaseIconImage;
+  const BaseIconImage = tmp(5668).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

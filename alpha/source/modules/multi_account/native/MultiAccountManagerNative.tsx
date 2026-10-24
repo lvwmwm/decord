@@ -1,21 +1,21 @@
-// Module ID: 18840
-// Function ID: 18841
+// Module ID: 18870
+// Function ID: 18871
 // Name: MultiAccountManagerNative
-// Dependencies: [13273, 1087, 3, 1104, 6670, 18841, 2002, 5149, 1123, 18842, 15, 13276, 1114, 5154, 5148, 5661, 1128, 18843, 2]
+// Dependencies: [13310, 1087, 3, 1104, 6672, 18871, 2002, 5151, 1123, 18872, 15, 13313, 1114, 5156, 5150, 5663, 1128, 18873, 2]
 
-// Module 18840 (MultiAccountManagerNative)
+// Module 18870 (MultiAccountManagerNative)
 import LoggerDefault from "Logger" /* 3 */;
 import fast_connect from "fast_connect" /* 15 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import intl2 from "intl" /* 1128 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import RootNavigationRef from "RootNavigationRef" /* 5149 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5661 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6670 */;
-import Constants2 from "Constants" /* 13273 */;
-import ArrowsLeftRightIcon from "ArrowsLeftRightIcon" /* 18843 */;
+import RootNavigationRef from "RootNavigationRef" /* 5151 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
+import Constants2 from "Constants" /* 13310 */;
+import ArrowsLeftRightIcon from "ArrowsLeftRightIcon" /* 18873 */;
 import Constants from "Constants" /* 1087 */;
-import MultiAccountManager from "MultiAccountManager" /* 18842 */;
+import MultiAccountManager from "MultiAccountManager" /* 18872 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,7 +27,7 @@ let tmp;
 const ComponentDispatchUtils = tmp(1123);
 function push() {
   obj = ModalActionCreatorsDefault;
-  obj.pushLazy(asyncRequire(18841, dependencyMap.paths), {}, c7);
+  obj.pushLazy(asyncRequire(18871, dependencyMap.paths), {}, c7);
   const tmp3 = c7;
   if (obj.cancelled) {
     const tmpResult = ModalActionCreatorsDefault;
@@ -105,7 +105,7 @@ class MultiAccountManagerNative extends MultiAccountManager {
       const MobileHomeDrawerExperiment = require("HomeDrawerExperiment").MobileHomeDrawerExperiment;
       const tmp2 = _require;
       if (MobileHomeDrawerExperiment.getConfig({ location: "multi-account" }).enableHome) {
-        const tmp2Result = tmp2(5148);
+        const tmp2Result = tmp2(5150);
         tmp2Result.setHomeDrawerState(false);
       }
     }

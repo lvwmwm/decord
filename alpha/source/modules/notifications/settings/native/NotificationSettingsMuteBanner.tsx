@@ -1,19 +1,19 @@
-// Module ID: 13736
-// Function ID: 13737
+// Module ID: 19343
+// Function ID: 19344
 // Name: NotificationSettingsMuteBanner
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 5232, 1128, 5242, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 5234, 1128, 5244, 2]
 // Exports: getMuteBannerSubtitleFromConfig
 
-// Module 13736 (NotificationSettingsMuteBanner)
+// Module 19343 (NotificationSettingsMuteBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import components_Button_Button from "components/Button/Button" /* 5242 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import components_Button_Button from "components/Button/Button" /* 5244 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -144,12 +144,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
 const result = size.fileFinishedImporting("modules/notifications/settings/native/NotificationSettingsMuteBanner.tsx");
 
 export const NotificationSettingsMuteBanner = tmp4;
-export const getMuteBannerSubtitleFromConfig = function getMuteBannerSubtitleFromConfig(config) {
+export const getMuteBannerSubtitleFromConfig = function getMuteBannerSubtitleFromConfig(muteConfig) {
   let date;
   let stringResult;
   let end_time;
-  if (config != null) {
-    end_time = config.end_time;
+  if (muteConfig != null) {
+    end_time = muteConfig.end_time;
   }
   if (null == end_time) {
     const intl = intl3.intl;
@@ -162,7 +162,7 @@ export const getMuteBannerSubtitleFromConfig = function getMuteBannerSubtitleFro
     const self2 = this;
     const obj = { endTime: date.toLocaleString(intl3.intl.currentLocale, { month: "numeric", day: "numeric", hour: "numeric", minute: "2-digit" }) };
     const C7m4oh = intl3.t.C7m4oh;
-    date = new Date(config.end_time);
+    date = new Date(muteConfig.end_time);
     stringResult = formatToPlainString(C7m4oh, obj);
   }
   return stringResult;

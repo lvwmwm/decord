@@ -1,18 +1,12 @@
 // Module ID: 15325
 // Function ID: 15326
-// Dependencies: [15323]
+// Dependencies: [15314]
 
 // Module 15325
-import _mod15323 from "module_15323" /* 15323 */;
+import _mod15314 from "module_15314" /* 15314 */;
 
 
-export default function(arg0, arg1, arg2) {
-  try {
-    const self = this;
-    const self2 = this;
-    const tmp5 = new _mod15323(arg1, arg2);
-    return tmp5.test(arg0);
-  } catch (err) {
-    return false;
-  }
+export default (arg0, arg1) => {
+  const tmp = new _mod15314(arg0, arg1);
+  return tmp.minor;
 };

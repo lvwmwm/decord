@@ -1,25 +1,25 @@
-// Module ID: 8584
-// Function ID: 8585
+// Module ID: 8586
+// Function ID: 8587
 // Name: ExplicitMediaRedactionUtils
-// Dependencies: [5235, 4821, 7388, 7390, 1087, 1211, 1128, 1267, 7386, 6466, 6471, 5642, 6657, 6652, 558, 576, 7392, 2]
+// Dependencies: [5237, 4823, 7390, 7392, 1087, 1211, 1128, 1267, 7388, 6468, 6473, 5644, 6659, 6654, 558, 576, 7394, 2]
 // Exports: hasMessageSnapshotsWithAttachmentsOrEmbeds, isObscuredMediaBelowConstraints, isPendingScanVersion, redactionSettingToRenderedString, shouldAgeVerifyForExplicitMedia, trackExplicitMediaRedactableMessagedLoaded, trackExplicitMediaScanComplete, trackMediaRedactionAction, trackRedactableMessageLoaded, trackScanTiming, trackScanningTimedOut, trackToggleMediaObscurityV2
 
-// Module 8584 (ExplicitMediaRedactionUtils)
+// Module 8586 (ExplicitMediaRedactionUtils)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5642 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6466 */;
-import MetricEvents from "MetricEvents" /* 6471 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6652 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6657 */;
-import SelfModUtils from "SelfModUtils" /* 7386 */;
-import DevSettingsStore from "DevSettingsStore" /* 5235 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
-import ExplicitMediaStore from "ExplicitMediaStore" /* 7388 */;
-import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7390 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5644 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6468 */;
+import MetricEvents from "MetricEvents" /* 6473 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6654 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6659 */;
+import SelfModUtils from "SelfModUtils" /* 7388 */;
+import DevSettingsStore from "DevSettingsStore" /* 5237 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import ExplicitMediaStore from "ExplicitMediaStore" /* 7390 */;
+import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7392 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const ObscureMediaModels = tmp(7392);
+const ObscureMediaModels = tmp(7394);
 ({ EXPLICIT_MEDIA_MIN_HEIGHT: metroRequire, EXPLICIT_MEDIA_MIN_WIDTH: metroImportDefault, MESSAGE_SCAN_TIMEOUT: metroImportAll } = ExplicitMediaRedactionConstants);
 const AnalyticEvents = Constants.AnalyticEvents;
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -236,7 +236,7 @@ export const trackExplicitMediaRedactableMessagedLoaded = function trackExplicit
     const sum = numOfAttachmentsPendingScan + numOfEmbedsPendingScan;
     if (sum > 0) {
       const obj = { name: MetricEvents.MetricEvents.EXPLICIT_MEDIA_PENDING_MESSAGE_LOADED_V2 };
-      const distribution = tmp11(6466).distribution;
+      const distribution = tmp11(6468).distribution;
       MonitoringAgentDefault;
       distribution(obj, sum);
     }

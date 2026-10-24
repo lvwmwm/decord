@@ -1,11 +1,11 @@
-// Module ID: 17708
-// Function ID: 17709
+// Module ID: 17740
+// Function ID: 17741
 // Name: useHomeDrawerToggleAccessibilityAction
-// Dependencies: [19, 558, 576, 1128, 5148, 4978, 2]
+// Dependencies: [19, 558, 576, 1128, 5150, 4980, 2]
 
-// Module 17708 (useHomeDrawerToggleAccessibilityAction)
+// Module 17740 (useHomeDrawerToggleAccessibilityAction)
 import intl2 from "intl" /* 1128 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5148 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5150 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require;
 
 let tmp;
-const AccessibilityAnnouncer2 = tmp(4978);
+const AccessibilityAnnouncer2 = tmp(4980);
 let c3 = "toggle-home-drawer";
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHomeDrawerToggleAccessibilityAction(arg0, arg1) {
   let closure_0;

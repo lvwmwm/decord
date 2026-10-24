@@ -1,19 +1,19 @@
-// Module ID: 11450
-// Function ID: 11451
+// Module ID: 11470
+// Function ID: 11471
 // Name: buildEmbeddedContext
-// Dependencies: [4820, 6773, 8268, 4821, 6774, 11451, 6775, 5624, 4890, 2]
+// Dependencies: [4822, 6775, 8270, 4823, 6776, 11471, 6777, 5626, 4892, 2]
 // Exports: default
 
-// Module 11450 (buildEmbeddedContext)
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4890 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5624 */;
-import FramesConstants from "FramesConstants" /* 6774 */;
-import EmbeddedAppTypes from "EmbeddedAppTypes" /* 6775 */;
-import ActivityPlatform from "ActivityPlatform" /* 11451 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
-import FramesStore from "FramesStore" /* 6773 */;
-import InteractionStore from "InteractionStore" /* 8268 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
+// Module 11470 (buildEmbeddedContext)
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4892 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5626 */;
+import FramesConstants from "FramesConstants" /* 6776 */;
+import EmbeddedAppTypes from "EmbeddedAppTypes" /* 6777 */;
+import ActivityPlatform from "ActivityPlatform" /* 11471 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
+import FramesStore from "FramesStore" /* 6775 */;
+import InteractionStore from "InteractionStore" /* 8270 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 const asLaunched = FramesConstants.asLaunched;

@@ -1,32 +1,31 @@
-// Module ID: 16374
-// Function ID: 16375
+// Module ID: 16398
+// Function ID: 16399
 // Name: OrbsArcadeRewardShelf
-// Dependencies: [19, 17, 16366, 21, 587, 4969, 558, 576, 16372, 16375, 16376, 5232, 16367, 9438, 1128, 7552, 16377, 504, 16381, 683, 16382, 5256, 12900, 9405, 7303, 2]
+// Dependencies: [19, 17, 2068, 16390, 21, 587, 4971, 558, 576, 504, 12937, 9406, 5234, 1128, 16396, 16399, 16400, 16391, 9439, 7554, 16401, 16405, 683, 16406, 5258, 7305, 2]
 
-// Module 16374 (OrbsArcadeRewardShelf)
+// Module 16398 (OrbsArcadeRewardShelf)
+import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import intl4 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import LinearGradientDefault from "LinearGradient" /* 5256 */;
-import useCountdownDefault from "useCountdown" /* 7552 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16367 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16372 */;
-import OrbsArcadeRewardPreviewDefault from "OrbsArcadeRewardPreview" /* 16375 */;
-import OrbsArcadeRewardStatusLabelDefault from "OrbsArcadeRewardStatusLabel" /* 16376 */;
-import ChestLogoSpotIllustration from "ChestLogoSpotIllustration" /* 16377 */;
-import useOrbsArcadeRewardAccentColorDefault from "useOrbsArcadeRewardAccentColor" /* 16381 */;
-import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 16382 */;
-import react from "react" /* 19 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import useCountdownDefault from "useCountdown" /* 7554 */;
+import ClipView from "ClipView" /* 9406 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16391 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16396 */;
+import OrbsArcadeRewardPreviewDefault from "OrbsArcadeRewardPreview" /* 16399 */;
+import OrbsArcadeRewardStatusLabelDefault from "OrbsArcadeRewardStatusLabel" /* 16400 */;
+import ChestLogoSpotIllustration from "ChestLogoSpotIllustration" /* 16401 */;
+import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 16406 */;
+import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16366 */;
+import LocaleStore from "LocaleStore" /* 2068 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let importDefault;
 
 let c10;
 let c9;
@@ -34,13 +33,13 @@ let closure_4;
 let hasOwnProperty;
 let items1;
 let items2;
-let metroImportAll;
 let metroRequire;
 let obj2;
 let obj3;
 let obj4;
 let tmp;
-const NitroCoinSpotIllustration = tmp(9438);
+let unpackModuleId;
+const NitroCoinSpotIllustration = tmp(9439);
 function formatTimeUntil(tmp3Result) {
   let days;
   let formatToPlainStringResult;
@@ -64,9 +63,10 @@ function formatTimeUntil(tmp3Result) {
   }
   return formatToPlainStringResult;
 }
+let react = react_mod;
 ({ Pressable: closure_4, StyleSheet: hasOwnProperty, View: metroRequire } = react_native);
-({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = Fragment);
-let c11 = 50;
+({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = Fragment);
+let c12 = 50;
 let items = [nativeDefault.unsafe_rawColors.TRANSPARENT, "rgba(16, 142, 77, 0.5)"];
 let createStyles = createStyles_mod;
 let obj = { rewardShelf: obj2, rewardShelfCopy: { flex: 1 }, allRewardsClaimedShelf: { backgroundColor: "rgba(151, 151, 159, 0.08)" }, rewardShelfGlowContainer: obj3, chestLogo: { width: 50, height: 50, overflow: "hidden", alignItems: "center", justifyContent: "center" }, chestLogoMirrored: obj4 };
@@ -76,16 +76,227 @@ obj3 = { borderRadius: nativeDefault.radii.lg, boxShadow: items1 };
 items1 = [{ offsetX: 0, offsetY: 0, blurRadius: 10, color: "#0E482B" }];
 obj4 = { transform: items2 };
 items2 = [{ scaleX: -1 }];
-let closure_13 = createStyles(obj);
+let closure_14 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeFocusedRewardShelfContent(arg0) {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeClaimableRewardsShelfContent(rewards) {
+  let intl;
+  let items1;
+  let items2;
+  let locale;
+  let tmp10;
+  let tmp28;
+  let tmp5;
+  let tmp6;
+  let obj = react2;
+  const cResult = obj.c(21);
+  rewards = rewards.rewards;
+  const tmp4 = closure_14();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    items = [LocaleStore];
+    const fn = function n() {
+      return locale.locale;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  if (cResult[2] === stateFromStores) {
+    let tmp9;
+    if (cResult[3] === rewards) {
+      tmp9 = cResult[4];
+    }
+    if (cResult[6] !== rewards) {
+      let tmp14;
+      const _Symbol = Symbol;
+      if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+        class A {
+          constructor(reward) {
+            const obj = { reward, size };
+            return closure_1_9(closure_1_18, obj, reward.id);
+          }
+        }
+        cResult[8] = A;
+        tmp14 = A;
+      } else {
+        class A {
+          constructor(reward) {
+            const obj = { reward, size };
+            return closure_1_9(closure_1_18, obj, reward.id);
+          }
+        }
+      }
+      const mapped = rewards.map(tmp14);
+      cResult[6] = rewards;
+      cResult[7] = mapped;
+    } else {
+      class A {
+        constructor(reward) {
+          const obj = { reward, size };
+          return closure_1_9(closure_1_18, obj, reward.id);
+        }
+      }
+    }
+    if (cResult[9] === tmp9) {
+      let tmp20;
+      class A {
+        constructor(reward) {
+          const obj = { reward, size };
+          return closure_1_9(closure_1_18, obj, reward.id);
+        }
+      }
+      const _Symbol2 = Symbol;
+      if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+        class A {
+          constructor(reward) {
+            const obj = { reward, size };
+            return closure_1_9(closure_1_18, obj, reward.id);
+          }
+        }
+        const obj2 = { variant: "heading-sm/semibold", color: "text-default", children: intl.string(intl4.t.DCCcdz) };
+        const Text = tmp(5234).Text;
+        intl = tmp(1128).intl;
+        const tmp21 = React4(Text, obj2);
+        cResult[12] = tmp21;
+        tmp20 = tmp21;
+      } else {
+        class A {
+          constructor(reward) {
+            const obj = { reward, size };
+            return closure_1_9(closure_1_18, obj, reward.id);
+          }
+        }
+      }
+      if (cResult[13] !== tmp9) {
+        class A {
+          constructor(reward) {
+            const obj = { reward, size };
+            return closure_1_9(closure_1_18, obj, reward.id);
+          }
+        }
+        const obj3 = { variant: "heading-sm/semibold", color: "text-subtle", lineClamp: 2, children: tmp9 };
+        cResult[13] = tmp9;
+        cResult[14] = React4(Text_Text.Text, obj3);
+        const tmp23 = React4(Text_Text.Text, obj3);
+      } else {
+        class A {
+          constructor(reward) {
+            const obj = { reward, size };
+            return closure_1_9(closure_1_18, obj, reward.id);
+          }
+        }
+      }
+      if (cResult[15] === tmp4.rewardShelfCopy) {
+        class A {
+          constructor(reward) {
+            const obj = { reward, size };
+            return closure_1_9(closure_1_18, obj, reward.id);
+          }
+        }
+        if (cResult[18] === tmp16) {
+          class A {
+            constructor(reward) {
+              const obj = { reward, size };
+              return closure_1_9(closure_1_18, obj, reward.id);
+            }
+          }
+          return tmp28;
+        }
+        const obj4 = { children: items1 };
+        items1 = [tmp16, tmp24];
+        const tmp31 = authStore(unpackModuleId, obj4);
+        cResult[18] = tmp16;
+        cResult[19] = tmp24;
+        cResult[20] = tmp31;
+        tmp28 = tmp31;
+      }
+      const obj5 = { style: tmp4.rewardShelfCopy, children: items2 };
+      items2 = [tmp20, tmp22];
+      cResult[15] = tmp4.rewardShelfCopy;
+      cResult[16] = tmp22;
+      cResult[17] = authStore(metroRequire, obj5);
+      const tmp27 = authStore(metroRequire, obj5);
+    }
+    const obj6 = { "aria-label": tmp9, shape: ClipView.CutoutShape.Circle, size: v50, gap: 2, depthX: 0.3, children: tmp13 };
+    const Pile = tmp(12937).Pile;
+    cResult[9] = tmp9;
+    cResult[10] = tmp13;
+    cResult[11] = React4(Pile, obj6);
+    const tmp19 = React4(Pile, obj6);
+  }
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class A {
+      constructor(reward) {
+        const obj = { reward, size };
+        return closure_1_9(closure_1_18, obj, reward.id);
+      }
+    }
+    cResult[5] = tmp11;
+    tmp10 = tmp11;
+  } else {
+    class A {
+      constructor(reward) {
+        const obj = { reward, size };
+        return closure_1_9(closure_1_18, obj, reward.id);
+      }
+    }
+  }
+  const listFormat = new Intl.ListFormat(stateFromStores);
+  const formatResult = listFormat.format(rewards.map(tmp10));
+  cResult[2] = stateFromStores;
+  cResult[3] = rewards;
+  cResult[4] = formatResult;
+  tmp9 = formatResult;
+}) : (function OrbsArcadeClaimableRewardsShelfContent(rewards) {
+  let intl;
+  let items2;
+  let items3;
+  let locale;
+  rewards = rewards.rewards;
+  const tmp = closure_14();
+  let obj = rewards(504);
+  items = [LocaleStore];
+  const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
+  const items1 = [stateFromStores, rewards];
+  const memo = react.useMemo(() => {
+    const listFormat = new Intl.ListFormat(stateFromStores);
+    return listFormat.format(rewards.map((name) => name.name));
+  }, items1);
+  const obj2 = { children: items2 };
+  const obj3 = {
+    "aria-label": memo,
+    shape: rewards(9406).CutoutShape.Circle,
+    size: v50,
+    gap: 2,
+    depthX: 0.3,
+    children: rewards.map((reward) => {
+      const obj = { reward, size };
+      return closure_1_9(closure_1_18, obj, reward.id);
+    })
+  };
+  const Pile = rewards(12937).Pile;
+  items2 = [closure_9(Pile, obj3), ];
+  const obj4 = { style: tmp.rewardShelfCopy, children: items3 };
+  const obj5 = { variant: "heading-sm/semibold", color: "text-default", children: intl.string(rewards(1128).t.DCCcdz) };
+  const Text = rewards(5234).Text;
+  intl = rewards(1128).intl;
+  items3 = [closure_9(Text, obj5), closure_9(rewards(5234).Text, { variant: "heading-sm/semibold", color: "text-subtle", lineClamp: 2, children: memo })];
+  items2[1] = closure_10(closure_6, obj4);
+  return closure_10(closure_11, obj2);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeFocusedRewardShelfContent(arg0) {
   let gameState;
   let items1;
   let reward;
   const obj = react2;
   const cResult = obj.c(23);
   ({ reward, gameState } = arg0);
-  const tmp4 = closure_13();
+  const tmp4 = closure_14();
   if (cResult[0] === gameState) {
     let tmp5;
     let tmp7;
@@ -94,7 +305,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
     }
     if (cResult[3] !== reward) {
       const obj2 = { reward, size: v50 };
-      const tmp11 = metroImportAll(OrbsArcadeRewardPreviewDefault, obj2);
+      const tmp11 = React4(OrbsArcadeRewardPreviewDefault, obj2);
       cResult[3] = reward;
       cResult[4] = tmp11;
       tmp7 = tmp11;
@@ -109,7 +320,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
       }
       if (cResult[8] !== reward.name) {
         const obj3 = { variant: "heading-sm/semibold", color: "text-subtle", children: reward.name };
-        const tmp19 = metroImportAll(Text_Text.Text, obj3);
+        const tmp19 = React4(Text_Text.Text, obj3);
         cResult[8] = reward.name;
         cResult[9] = tmp19;
         tmp17 = tmp19;
@@ -124,7 +335,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
         }
         if (cResult[13] !== tmp20) {
           const obj4 = { variant: "text-xs/medium", color: "text-muted", children: tmp20 };
-          const tmp24 = metroImportAll(Text_Text.Text, obj4);
+          const tmp24 = React4(Text_Text.Text, obj4);
           cResult[13] = tmp20;
           cResult[14] = tmp24;
           tmp22 = tmp24;
@@ -147,7 +358,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
               }
               const obj5 = { children: items };
               items = [tmp7, tmp25];
-              const tmp32 = React4(authStore, obj5);
+              const tmp32 = authStore(unpackModuleId, obj5);
               cResult[20] = tmp7;
               cResult[21] = tmp25;
               cResult[22] = tmp32;
@@ -157,7 +368,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
         }
         const obj6 = { style: tmp12, children: items1 };
         items1 = [tmp13, tmp17, tmp22];
-        const tmp28 = React4(metroRequire, obj6);
+        const tmp28 = authStore(metroRequire, obj6);
         cResult[15] = tmp4.rewardShelfCopy;
         cResult[16] = tmp13;
         cResult[17] = tmp17;
@@ -173,7 +384,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
       tmp20 = orbsArcadeRewardScoreLabel;
     }
     const obj7 = { reward, status: tmp5, color: "text-default" };
-    const tmp16 = metroImportAll(OrbsArcadeRewardStatusLabelDefault, obj7);
+    const tmp16 = React4(OrbsArcadeRewardStatusLabelDefault, obj7);
     cResult[5] = reward;
     cResult[6] = tmp5;
     cResult[7] = tmp16;
@@ -190,33 +401,33 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
   let obj7;
   reward = reward.reward;
   const gameState = reward.gameState;
-  const tmp = closure_13();
+  const tmp = closure_14();
   const obj = OrbsArcadeRewardUtils;
   const orbsArcadeRewardStatus = obj.getOrbsArcadeRewardStatus(reward.id, gameState);
   const obj2 = { children: items };
   items = [, ];
   const obj3 = { reward, size: v50 };
-  items[0] = metroImportAll(OrbsArcadeRewardPreviewDefault, obj3);
+  items[0] = React4(OrbsArcadeRewardPreviewDefault, obj3);
   const obj4 = { style: tmp.rewardShelfCopy, children: items1 };
-  items1 = [metroImportAll(OrbsArcadeRewardStatusLabelDefault, { reward, status: orbsArcadeRewardStatus, color: "text-default" }), , ];
+  items1 = [React4(OrbsArcadeRewardStatusLabelDefault, { reward, status: orbsArcadeRewardStatus, color: "text-default" }), , ];
   const obj5 = { variant: "heading-sm/semibold", color: "text-subtle", children: reward.name };
-  items1[1] = metroImportAll(Text_Text.Text, obj5);
+  items1[1] = React4(Text_Text.Text, obj5);
   const obj6 = { variant: "text-xs/medium", color: "text-muted", children: obj7.getOrbsArcadeRewardScoreLabel(reward, orbsArcadeRewardStatus) };
   const Text = Text_Text.Text;
   obj7 = OrbsArcadeRewardUtils;
-  items1[2] = metroImportAll(Text, obj6);
-  items[1] = React4(metroRequire, obj4);
-  return React4(authStore, obj2);
+  items1[2] = React4(Text, obj6);
+  items[1] = authStore(metroRequire, obj4);
+  return authStore(unpackModuleId, obj2);
 });
 createStyles = createStyles_mod;
-let closure_15 = createStyles.createStyles((width) => ({ nitroCoin: { width, height: width, alignItems: "center", justifyContent: "center" } }));
+let closure_17 = createStyles.createStyles((width) => ({ nitroCoin: { width, height: width, alignItems: "center", justifyContent: "center" } }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadePileReward(arg0) {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadePileReward(arg0) {
   let reward;
   const obj = react2;
   const cResult = obj.c(8);
   ({ reward, size } = arg0);
-  const tmp4 = closure_15(size);
+  const tmp4 = closure_17(size);
   if (reward.type !== OrbsArcadeTypes.OrbsArcadeRewardType.FRACTIONAL_PREMIUM) {
     if (cResult[0] === reward) {
       let tmp12;
@@ -226,7 +437,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
       return tmp12;
     }
     const obj2 = { reward, size };
-    const tmp15 = metroImportAll(OrbsArcadeRewardPreviewDefault, obj2);
+    const tmp15 = React4(OrbsArcadeRewardPreviewDefault, obj2);
     cResult[0] = reward;
     cResult[1] = size;
     cResult[2] = tmp15;
@@ -236,7 +447,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
     const result = 0.85 * size;
     if (cResult[3] !== result) {
       const obj3 = { height: result };
-      const tmp7 = metroImportAll(NitroCoinSpotIllustration.NitroCoinSpotIllustration, obj3);
+      const tmp7 = React4(NitroCoinSpotIllustration.NitroCoinSpotIllustration, obj3);
       cResult[3] = result;
       cResult[4] = tmp7;
       tmp5 = tmp7;
@@ -251,7 +462,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
       return tmp8;
     }
     const obj4 = { style: tmp4.nitroCoin, children: tmp5 };
-    const tmp11 = metroImportAll(metroRequire, obj4);
+    const tmp11 = React4(metroRequire, obj4);
     cResult[5] = tmp4.nitroCoin;
     cResult[6] = tmp5;
     cResult[7] = tmp11;
@@ -262,19 +473,19 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
   let reward;
   let tmp6;
   ({ reward, size } = arg0);
-  const tmp = closure_15(size);
+  const tmp = closure_17(size);
   if (reward.type !== OrbsArcadeTypes.OrbsArcadeRewardType.FRACTIONAL_PREMIUM) {
     const obj2 = { reward, size };
-    tmp6 = metroImportAll(OrbsArcadeRewardPreviewDefault, obj2);
+    tmp6 = React4(OrbsArcadeRewardPreviewDefault, obj2);
   } else {
-    const obj = { style: tmp.nitroCoin, children: metroImportAll(NitroCoinSpotIllustration.NitroCoinSpotIllustration, obj3) };
+    const obj = { style: tmp.nitroCoin, children: React4(NitroCoinSpotIllustration.NitroCoinSpotIllustration, obj3) };
     obj3 = { height: 0.85 * size };
-    tmp6 = metroImportAll(metroRequire, obj);
+    tmp6 = React4(metroRequire, obj);
   }
   return tmp6;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeAllRewardsClaimedShelfContent(windowEndsAt) {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeAllRewardsClaimedShelfContent(windowEndsAt) {
   let fkzORZ;
   let formatToPlainString;
   let intl;
@@ -286,7 +497,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
   const obj = react2;
   const cResult = obj.c(18);
   windowEndsAt = windowEndsAt.windowEndsAt;
-  const tmp4 = closure_13();
+  const tmp4 = closure_14();
   if (cResult[0] !== windowEndsAt) {
     let num2 = 0;
     if (null != windowEndsAt) {
@@ -304,7 +515,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
   const tmp9 = useCountdownDefault(tmp5, 60000, undefined, null == windowEndsAt);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { accessible: false, height: v50 };
-    const tmp13 = metroImportAll(ChestLogoSpotIllustration.ChestLogoSpotIllustration, obj2);
+    const tmp13 = React4(ChestLogoSpotIllustration.ChestLogoSpotIllustration, obj2);
     cResult[2] = tmp13;
     tmp10 = tmp13;
   } else {
@@ -312,7 +523,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
   }
   if (cResult[3] !== tmp4.chestLogoMirrored) {
     const obj3 = { style: tmp4.chestLogoMirrored, children: tmp10 };
-    const tmp17 = metroImportAll(metroRequire, obj3);
+    const tmp17 = React4(metroRequire, obj3);
     cResult[3] = tmp4.chestLogoMirrored;
     cResult[4] = tmp17;
     tmp14 = tmp17;
@@ -328,9 +539,9 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { variant: "heading-sm/semibold", color: "text-default", children: intl.string(intl4.t["/AJCN+"]) };
-      const Text = tmp(5232).Text;
+      const Text = tmp(5234).Text;
       intl = tmp(1128).intl;
-      const tmp22 = metroImportAll(Text, obj4);
+      const tmp22 = React4(Text, obj4);
       cResult[8] = tmp22;
       tmp20 = tmp22;
     } else {
@@ -355,7 +566,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
         }
         const obj5 = { children: items };
         items = [tmp18, tmp27];
-        const tmp34 = React4(authStore, obj5);
+        const tmp34 = authStore(unpackModuleId, obj5);
         cResult[15] = tmp18;
         cResult[16] = tmp27;
         cResult[17] = tmp34;
@@ -363,7 +574,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
       }
       const obj6 = { style: tmp4.rewardShelfCopy, children: items1 };
       items1 = [tmp20, tmp23];
-      const tmp30 = React4(metroRequire, obj6);
+      const tmp30 = authStore(metroRequire, obj6);
       cResult[12] = tmp4.rewardShelfCopy;
       cResult[13] = tmp23;
       cResult[14] = tmp30;
@@ -372,12 +583,12 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
     let tmp24 = null;
     if (null != windowEndsAt) {
       const obj7 = { variant: "text-xs/medium", color: "text-muted", children: formatToPlainString(fkzORZ, obj8) };
-      const Text2 = tmp(5232).Text;
+      const Text2 = tmp(5234).Text;
       const intl2 = tmp(1128).intl;
       formatToPlainString = intl2.formatToPlainString;
       obj8 = { duration: formatTimeUntil(tmp9) };
       fkzORZ = tmp(1128).t.fkzORZ;
-      tmp24 = metroImportAll(Text2, obj7);
+      tmp24 = React4(Text2, obj7);
     }
     cResult[9] = tmp9;
     cResult[10] = windowEndsAt;
@@ -385,7 +596,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
     tmp23 = tmp24;
   }
   const obj9 = { style: tmp4.chestLogo, children: tmp14 };
-  const tmp19 = metroImportAll(metroRequire, obj9);
+  const tmp19 = React4(metroRequire, obj9);
   cResult[5] = tmp4.chestLogo;
   cResult[6] = tmp14;
   cResult[7] = tmp19;
@@ -399,7 +610,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
   let obj3;
   let obj7;
   windowEndsAt = windowEndsAt.windowEndsAt;
-  const tmp = closure_13();
+  const tmp = closure_14();
   let num = 0;
   const tmp3 = useCountdownDefault;
   if (null != windowEndsAt) {
@@ -408,23 +619,23 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
     const self2 = this;
     num = new Date(windowEndsAt);
   }
-  const obj = { style: tmp.chestLogo, children: metroImportAll(metroRequire, obj2) };
-  obj2 = { style: tmp.chestLogoMirrored, children: metroImportAll(ChestLogoSpotIllustration.ChestLogoSpotIllustration, obj3) };
+  const obj = { style: tmp.chestLogo, children: React4(metroRequire, obj2) };
+  obj2 = { style: tmp.chestLogoMirrored, children: React4(ChestLogoSpotIllustration.ChestLogoSpotIllustration, obj3) };
   obj3 = { accessible: false, height: v50 };
   const tmp3Result = tmp3(num, 60000, undefined, null == windowEndsAt);
-  items = [metroImportAll(metroRequire, obj), ];
+  items = [React4(metroRequire, obj), ];
   const obj4 = { style: tmp.rewardShelfCopy, children: items1 };
   const obj5 = { variant: "heading-sm/semibold", color: "text-default", children: intl.string(intl4.t["/AJCN+"]) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
-  items1 = [metroImportAll(Text, obj5), ];
+  items1 = [React4(Text, obj5), ];
   let tmp9Result = null;
   const tmp10 = metroRequire;
-  const tmp8 = authStore;
-  const tmp9 = metroImportAll;
+  const tmp8 = unpackModuleId;
+  const tmp9 = React4;
   if (null != windowEndsAt) {
     const obj6 = { variant: "text-xs/medium", color: "text-muted", children: formatToPlainString(fkzORZ, obj7) };
-    const Text2 = tmp11(5232).Text;
+    const Text2 = tmp11(5234).Text;
     const intl2 = tmp11(1128).intl;
     formatToPlainString = intl2.formatToPlainString;
     obj7 = { duration: formatTimeUntil(tmp3Result) };
@@ -433,25 +644,21 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
   }
   const obj8 = { children: items };
   items1[1] = tmp9Result;
-  items[1] = React4(tmp10, obj4);
-  return React4(tmp8, obj8);
+  items[1] = authStore(tmp10, obj4);
+  return authStore(tmp8, obj8);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRewardShelf(game) {
   let first;
-  let intl2;
-  let intl3;
-  let items3;
-  let items4;
-  let mapped;
-  let tmp10;
+  let stateFromStores;
+  let tmp25;
   let tmp7;
   let tmp8;
   let tmp = game;
-  let obj = game(576);
-  const cResult = obj.c(44);
+  let obj = game(stateFromStores[8]);
+  const cResult = obj.c(50);
   game = game.game;
-  const tmp4 = closure_13();
+  const tmp4 = closure_14();
   const rewards = game.rewards;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     items = [OrbsArcadeStore];
@@ -461,7 +668,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
     first = cResult[0];
   }
   if (cResult[1] !== game.id) {
-    const fn = function h() {
+    const fn = function c() {
       return OrbsArcadeStore.getGameStateForGame(game.id);
     };
     const items1 = [game.id];
@@ -474,266 +681,384 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
     tmp7 = cResult[2];
     tmp8 = cResult[3];
   }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp7, tmp8);
+  let tmpResult = tmp(tmp2[9]);
+  stateFromStores = tmpResult.useStateFromStores(first, tmp7, tmp8);
   if (cResult[4] !== rewards) {
     let tmp11;
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn2 = function _(arg0, scoreTarget) {
+      class L {
+        constructor(arg0, scoreTarget) {
+          let tmp = arg0;
+          if (null == arg0) {
+            tmp = scoreTarget;
+          }
+          return tmp;
+        }
+      }
+      cResult[6] = L;
+      tmp11 = L;
+    } else {
+      class L {
+        constructor(arg0, scoreTarget) {
+          let tmp = arg0;
+          if (null == arg0) {
+            tmp = scoreTarget;
+          }
+          return tmp;
+        }
+      }
+    }
+    const reduced = rewards.reduce(tmp11, undefined);
+    cResult[4] = rewards;
+    cResult[5] = reduced;
+  } else {
+    class L {
+      constructor(arg0, scoreTarget) {
         let tmp = arg0;
         if (null == arg0) {
           tmp = scoreTarget;
         }
         return tmp;
-      };
-      cResult[6] = fn2;
-      tmp11 = fn2;
-    } else {
-      tmp11 = cResult[6];
+      }
     }
-    const reduced = rewards.reduce(tmp11, undefined);
-    cResult[4] = rewards;
-    cResult[5] = reduced;
-    tmp10 = reduced;
-  } else {
-    tmp10 = cResult[5];
   }
   if (cResult[7] === stateFromStores) {
-    let tmp13;
-    let tmp27;
-    let tmp29;
-    if (cResult[8] === rewards) {
-      tmp13 = cResult[9];
+    class L {
+      constructor(arg0, scoreTarget) {
+        let tmp = arg0;
+        if (null == arg0) {
+          tmp = scoreTarget;
+        }
+        return tmp;
+      }
     }
-    let tmp16 = tmp13;
     if (tmp13 == null) {
-      tmp16 = tmp10;
+      class L {
+        constructor(arg0, scoreTarget) {
+          let tmp = arg0;
+          if (null == arg0) {
+            tmp = scoreTarget;
+          }
+          return tmp;
+        }
+      }
     }
-    const tmp18 = useOrbsArcadeRewardAccentColorDefault(tmp16);
-    let enrolledAt;
+    const tmp18 = rewards(stateFromStores[21])(tmp13);
+    const tmp17 = rewards;
     if (stateFromStores != null) {
-      enrolledAt = stateFromStores.enrolledAt;
+      class L {
+        constructor(arg0, scoreTarget) {
+          let tmp = arg0;
+          if (null == arg0) {
+            tmp = scoreTarget;
+          }
+          return tmp;
+        }
+      }
     }
-    let expiresAt;
+    let tmp22 = null != undefined;
+    if (tmp22) {
+      class L {
+        constructor(arg0, scoreTarget) {
+          let tmp = arg0;
+          if (null == arg0) {
+            tmp = scoreTarget;
+          }
+          return tmp;
+        }
+      }
+      tmp22 = rewards.length > 0;
+    }
+    if (tmp22) {
+      class L {
+        constructor(arg0, scoreTarget) {
+          let tmp = arg0;
+          if (null == arg0) {
+            tmp = scoreTarget;
+          }
+          return tmp;
+        }
+      }
+    }
     if (stateFromStores != null) {
-      expiresAt = stateFromStores.expiresAt;
+      class L {
+        constructor(arg0, scoreTarget) {
+          let tmp = arg0;
+          if (null == arg0) {
+            tmp = scoreTarget;
+          }
+          return tmp;
+        }
+      }
     }
-    if (expiresAt == null) {
-      expiresAt = null;
+    if (undefined == null) {
+      class L {
+        constructor(arg0, scoreTarget) {
+          let tmp = arg0;
+          if (null == arg0) {
+            tmp = scoreTarget;
+          }
+          return tmp;
+        }
+      }
     }
-    let tmp24 = null != expiresAt;
+    let tmp24 = null != tmp23;
     if (tmp24) {
-      let tmp25 = null == game.endsAt;
+      class L {
+        constructor(arg0, scoreTarget) {
+          let tmp = arg0;
+          if (null == arg0) {
+            tmp = scoreTarget;
+          }
+          return tmp;
+        }
+      }
       if (!tmp25) {
+        class L {
+          constructor(arg0, scoreTarget) {
+            let tmp = arg0;
+            if (null == arg0) {
+              tmp = scoreTarget;
+            }
+            return tmp;
+          }
+        }
         const _Date = Date;
-        const _Date2 = Date;
-        const parsed = Date.parse(expiresAt);
+        const parsed = Date.parse(tmp23);
         tmp25 = parsed < Date.parse(game.endsAt);
       }
       tmp24 = tmp25;
     }
-    if (cResult[10] !== tmp18) {
-      const obj4 = _modDef683(tmp18);
-      const alphaResult = obj4.alpha(0.5);
-      const cssResult = alphaResult.css();
-      cResult[10] = tmp18;
-      cResult[11] = cssResult;
-      tmp27 = cssResult;
-    } else {
-      tmp27 = cResult[11];
-    }
-    if (cResult[12] !== tmp27) {
-      const items2 = [nativeDefault.unsafe_rawColors.TRANSPARENT, tmp27];
-      cResult[12] = tmp27;
-      cResult[13] = items2;
-      tmp29 = items2;
-    } else {
-      tmp29 = cResult[13];
-    }
-    if (tmp21 && rewards.length > 0 && null == tmp13) {
-      tmp29 = items;
-    }
-    if (0 === rewards.length) {
-      return null;
-    } else {
-      if (tmp21 && rewards.length > 0 && null == tmp13) {
-        const rewardShelfGlowContainer = tmp4.rewardShelfGlowContainer;
+    if (cResult[10] === stateFromStores) {
+      class L {
+        constructor(arg0, scoreTarget) {
+          let tmp = arg0;
+          if (null == arg0) {
+            tmp = scoreTarget;
+          }
+          return tmp;
+        }
       }
-      let prop;
-      if (tmp21 && rewards.length > 0 && null == tmp13) {
-        prop = tmp4.allRewardsClaimedShelf;
+      if (cResult[13] !== tmp18) {
+        class L {
+          constructor(arg0, scoreTarget) {
+            let tmp = arg0;
+            if (null == arg0) {
+              tmp = scoreTarget;
+            }
+            return tmp;
+          }
+        }
+        const alphaResult = obj5.alpha(0.5);
+        cResult[13] = tmp18;
+        cResult[14] = alphaResult.css();
+        const cssResult = alphaResult.css();
+      } else {
+        class L {
+          constructor(arg0, scoreTarget) {
+            let tmp = arg0;
+            if (null == arg0) {
+              tmp = scoreTarget;
+            }
+            return tmp;
+          }
+        }
       }
-      if (cResult[14] === tmp4.rewardShelf) {
-        let tmp36;
-        let tmp35;
-        let tmp47Result;
-        const _Symbol2 = Symbol;
-        if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1128).intl;
-          cResult[17] = intl.string(tmp(1128).t.XpfUWL);
-          const stringResult = intl.string(tmp(1128).t.XpfUWL);
-        }
-        if (cResult[18] !== game.id) {
-          class W {
-            constructor() {
-              const obj = openOrbsArcadeSheets;
-              return obj.openOrbsArcadeRewardsSheet(game.id);
+      if (cResult[15] !== tmp29) {
+        class L {
+          constructor(arg0, scoreTarget) {
+            let tmp = arg0;
+            if (null == arg0) {
+              tmp = scoreTarget;
             }
-          }
-          cResult[18] = game.id;
-          cResult[19] = W;
-        } else {
-          class W {
-            constructor() {
-              const obj = openOrbsArcadeSheets;
-              return obj.openOrbsArcadeRewardsSheet(game.id);
-            }
+            return tmp;
           }
         }
-        const _Symbol3 = Symbol;
-        if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-          class W {
-            constructor() {
-              const obj = openOrbsArcadeSheets;
-              return obj.openOrbsArcadeRewardsSheet(game.id);
+        tmp32[0] = tmp17(stateFromStores[5]).unsafe_rawColors.TRANSPARENT;
+        tmp32[1] = tmp29;
+        cResult[15] = tmp29;
+        cResult[16] = tmp32;
+      } else {
+        class L {
+          constructor(arg0, scoreTarget) {
+            let tmp = arg0;
+            if (null == arg0) {
+              tmp = scoreTarget;
             }
-          }
-          const point = { x: 0, y: 1 };
-          cResult[20] = tmp37;
-          cResult[21] = point;
-          tmp36 = point;
-          tmp35 = tmp37;
-        } else {
-          class W {
-            constructor() {
-              const obj = openOrbsArcadeSheets;
-              return obj.openOrbsArcadeRewardsSheet(game.id);
-            }
-          }
-          tmp36 = cResult[21];
-        }
-        if (cResult[22] !== tmp29) {
-          class W {
-            constructor() {
-              const obj = openOrbsArcadeSheets;
-              return obj.openOrbsArcadeRewardsSheet(game.id);
-            }
-          }
-          const obj2 = { style: closure_5.absoluteFill, start: tmp35, end: tmp36, colors: tmp29 };
-          cResult[22] = tmp29;
-          cResult[23] = closure_8(LinearGradientDefault, obj2);
-          const tmp40 = closure_8(LinearGradientDefault, obj2);
-        } else {
-          class W {
-            constructor() {
-              const obj = openOrbsArcadeSheets;
-              return obj.openOrbsArcadeRewardsSheet(game.id);
-            }
+            return tmp;
           }
         }
-        if (cResult[24] === (tmp21 && rewards.length > 0 && null == tmp13)) {
-          class W {
-            constructor() {
-              const obj = openOrbsArcadeSheets;
-              return obj.openOrbsArcadeRewardsSheet(game.id);
+      }
+      if (tmp22) {
+        class L {
+          constructor(arg0, scoreTarget) {
+            let tmp = arg0;
+            if (null == arg0) {
+              tmp = scoreTarget;
+            }
+            return tmp;
+          }
+        }
+      }
+      if (0 === rewards.length) {
+        class L {
+          constructor(arg0, scoreTarget) {
+            let tmp = arg0;
+            if (null == arg0) {
+              tmp = scoreTarget;
+            }
+            return tmp;
+          }
+        }
+      } else {
+        class L {
+          constructor(arg0, scoreTarget) {
+            let tmp = arg0;
+            if (null == arg0) {
+              tmp = scoreTarget;
+            }
+            return tmp;
+          }
+        }
+        if (tmp22) {
+          class L {
+            constructor(arg0, scoreTarget) {
+              let tmp = arg0;
+              if (null == arg0) {
+                tmp = scoreTarget;
+              }
+              return tmp;
             }
           }
         }
-        if (tmp21 && rewards.length > 0 && null == tmp13) {
-          class W {
-            constructor() {
-              const obj = openOrbsArcadeSheets;
-              return obj.openOrbsArcadeRewardsSheet(game.id);
+        if (tmp22) {
+          class L {
+            constructor(arg0, scoreTarget) {
+              let tmp = arg0;
+              if (null == arg0) {
+                tmp = scoreTarget;
+              }
+              return tmp;
             }
           }
-          const tmp47 = closure_8;
-          const tmp48 = closure_18;
-          if (tmp24) {
-            class W {
+        }
+        if (cResult[17] === tmp4.rewardShelf) {
+          class L {
+            constructor(arg0, scoreTarget) {
+              let tmp = arg0;
+              if (null == arg0) {
+                tmp = scoreTarget;
+              }
+              return tmp;
+            }
+          }
+          const _Symbol2 = Symbol;
+          if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
+            class L {
+              constructor(arg0, scoreTarget) {
+                let tmp = arg0;
+                if (null == arg0) {
+                  tmp = scoreTarget;
+                }
+                return tmp;
+              }
+            }
+            cResult[20] = obj7.string(tmp(stateFromStores[13]).t.XpfUWL);
+            obj7.string(tmp(stateFromStores[13]).t.XpfUWL);
+            class J {
               constructor() {
-                const obj = openOrbsArcadeSheets;
-                return obj.openOrbsArcadeRewardsSheet(game.id);
+                let result;
+                const obj = OrbsArcadeRewardUtils;
+                if (obj.getOrbsArcadeClaimableRewards(rewards, stateFromStores).length > 0) {
+                  const tmpResult = openOrbsArcadeSheets;
+                  result = tmpResult.openOrbsArcadeRewardUnlockedSheet(game.id);
+                } else {
+                  const tmpResult2 = openOrbsArcadeSheets;
+                  result = tmpResult2.openOrbsArcadeRewardsSheet(game.id);
+                }
+                return result;
+              }
+            }
+          } else {
+            class L {
+              constructor(arg0, scoreTarget) {
+                let tmp = arg0;
+                if (null == arg0) {
+                  tmp = scoreTarget;
+                }
+                return tmp;
               }
             }
           }
-          const obj3 = { windowEndsAt: tmp49 };
-          tmp47Result = tmp47(tmp48, obj3);
-        } else {
-          class W {
-            constructor() {
-              const obj = openOrbsArcadeSheets;
-              return obj.openOrbsArcadeRewardsSheet(game.id);
+          if (cResult[21] === game.id) {
+            class L {
+              constructor(arg0, scoreTarget) {
+                let tmp = arg0;
+                if (null == arg0) {
+                  tmp = scoreTarget;
+                }
+                return tmp;
+              }
             }
           }
-          const obj5 = { children: items3 };
-          const obj6 = {
-            "aria-label": mapped.join(", "),
-            shape: tmp(9405).CutoutShape.Circle,
-            size: 53,
-            gap: 2,
-            depthX: 0.3,
-            children: rewards.map((reward) => {
-                      const obj = { reward, size: 53 };
-                      return closure_1_8(closure_1_16, obj, reward.id);
-                    })
-          };
-          const Pile = tmp(12900).Pile;
-          mapped = rewards.map((name) => name.name);
-          items3 = [closure_8(Pile, obj6), ];
-          const obj7 = { style: tmp4.rewardShelfCopy, children: items4 };
-          const obj8 = { variant: "heading-sm/semibold", color: "text-default", children: intl2.string(tmp(1128).t.ehbzo8) };
-          const Text = tmp(5232).Text;
-          intl2 = tmp(1128).intl;
-          items4 = [closure_8(Text, obj8), ];
-          const obj9 = { variant: "text-xs/medium", color: "text-muted", children: intl3.string(tmp(1128).t["5Gt1dt"]) };
-          const Text2 = tmp(5232).Text;
-          intl3 = tmp(1128).intl;
-          items4[1] = closure_8(Text2, obj9);
-          items3[1] = closure_9(closure_6, obj7);
-          tmp47Result = closure_9(closure_10, obj5);
+          class J {
+            constructor() {
+              let result;
+              const obj = OrbsArcadeRewardUtils;
+              if (obj.getOrbsArcadeClaimableRewards(rewards, stateFromStores).length > 0) {
+                const tmpResult = openOrbsArcadeSheets;
+                result = tmpResult.openOrbsArcadeRewardUnlockedSheet(game.id);
+              } else {
+                const tmpResult2 = openOrbsArcadeSheets;
+                result = tmpResult2.openOrbsArcadeRewardsSheet(game.id);
+              }
+              return result;
+            }
+          }
+          cResult[21] = game.id;
+          cResult[22] = stateFromStores;
+          cResult[23] = rewards;
+          cResult[24] = J;
         }
-        cResult[24] = tmp21 && rewards.length > 0 && null == tmp13;
-        cResult[25] = tmp16;
-        cResult[26] = stateFromStores;
-        cResult[27] = tmp24;
-        cResult[28] = null != enrolledAt;
-        cResult[29] = rewards;
-        cResult[30] = tmp4.rewardShelfCopy;
-        cResult[31] = expiresAt;
-        cResult[32] = tmp47Result;
+        tmp35[0] = tmp4.rewardShelf;
+        tmp35[1] = undefined;
+        cResult[17] = tmp4.rewardShelf;
+        cResult[18] = undefined;
+        cResult[19] = tmp35;
       }
-      const items5 = [tmp4.rewardShelf, prop];
-      cResult[14] = tmp4.rewardShelf;
-      cResult[15] = prop;
-      cResult[16] = items5;
     }
+    const tmpResult3 = tmp(stateFromStores[14]);
+    const orbsArcadeClaimableRewards = tmpResult3.getOrbsArcadeClaimableRewards(rewards, stateFromStores);
+    cResult[10] = stateFromStores;
+    cResult[11] = rewards;
+    cResult[12] = orbsArcadeClaimableRewards;
   }
-  const tmpResult2 = tmp(16372);
-  const orbsArcadeFocusedReward = tmpResult2.getOrbsArcadeFocusedReward(rewards, stateFromStores);
+  const tmpResult4 = tmp(stateFromStores[14]);
+  const orbsArcadeFocusedReward = tmpResult4.getOrbsArcadeFocusedReward(rewards, stateFromStores);
   cResult[7] = stateFromStores;
   cResult[8] = rewards;
   cResult[9] = orbsArcadeFocusedReward;
-  tmp13 = orbsArcadeFocusedReward;
 }) : (function OrbsArcadeRewardShelf(game) {
-  let closure_1;
+  let closure_3;
   let intl;
   let intl2;
   let intl3;
-  let items4;
   let items5;
   let items6;
+  let items7;
   let mapped;
   let obj4;
   let tmp22;
   game = game.game;
-  importDefault = undefined;
-  let tmp = closure_13();
+  let stateFromStores;
+  react = undefined;
+  let tmp = closure_14();
   const rewards = game.rewards;
-  let obj = game(504);
+  let obj = game(stateFromStores[9]);
   items = [OrbsArcadeStore];
   const items1 = [game.id];
-  const stateFromStores = obj.useStateFromStores(items, () => OrbsArcadeStore.getGameStateForGame(game.id), items1);
+  stateFromStores = obj.useStateFromStores(items, () => OrbsArcadeStore.getGameStateForGame(game.id), items1);
   const reduced = rewards.reduce((acc, scoreTarget) => {
     let tmp = acc;
     if (null == acc) {
@@ -741,17 +1066,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
     }
     return tmp;
   }, undefined);
-  const obj2 = game(16372);
+  const obj2 = game(stateFromStores[14]);
   const orbsArcadeFocusedReward = obj2.getOrbsArcadeFocusedReward(rewards, stateFromStores);
   let tmp7 = orbsArcadeFocusedReward;
   if (orbsArcadeFocusedReward == null) {
     tmp7 = reduced;
   }
-  const tmp9 = useOrbsArcadeRewardAccentColorDefault(tmp7);
-  importDefault = tmp9;
-  let enrolledAt;
+  const tmp9 = rewards(stateFromStores[21])(tmp7);
+  react = tmp9;
+  let currentRun;
   if (stateFromStores != null) {
-    enrolledAt = stateFromStores.enrolledAt;
+    currentRun = stateFromStores.currentRun;
   }
   let expiresAt;
   if (stateFromStores != null) {
@@ -771,95 +1096,114 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
     }
     tmp14 = tmp15;
   }
-  const items2 = [tmp9];
-  let memo = react.useMemo(() => {
+  const items2 = [rewards, stateFromStores];
+  const memo = react.useMemo(() => {
+    const obj = OrbsArcadeRewardUtils;
+    return obj.getOrbsArcadeClaimableRewards(rewards, stateFromStores);
+  }, items2);
+  const items3 = [tmp9];
+  let memo1 = react.useMemo(() => {
     items = [nativeDefault.unsafe_rawColors.TRANSPARENT, ];
-    const obj = _modDef683(closure_1);
+    const obj = _modDef683(closure_3);
     const alphaResult = obj.alpha(0.5);
     items[1] = alphaResult.css();
     return items;
-  }, items2);
+  }, items3);
   if (tmp11 && rewards.length > 0 && null == orbsArcadeFocusedReward) {
-    memo = items;
+    memo1 = items;
   }
-  let tmp30Result2 = null;
+  let tmp31Result2 = null;
   if (0 !== rewards.length) {
     let tmp21Result;
     let prop;
     if (tmp11 && rewards.length > 0 && null == orbsArcadeFocusedReward) {
       prop = tmp.rewardShelfGlowContainer;
     }
-    const items3 = [tmp.rewardShelf, ];
+    const items4 = [tmp.rewardShelf, ];
     let prop1;
-    const obj3 = { style: prop, children: closure_9(tmp22, obj4) };
+    const obj3 = { style: prop, children: closure_10(tmp22, obj4) };
     tmp22 = closure_4;
     if (tmp11 && rewards.length > 0 && null == orbsArcadeFocusedReward) {
       prop1 = tmp.allRewardsClaimedShelf;
     }
-    items3[1] = prop1;
+    items4[1] = prop1;
     obj4 = {
-      style: items3,
+      style: items4,
       accessibilityRole: "button",
-      accessibilityLabel: intl.string(game(1128).t.XpfUWL),
+      accessibilityLabel: intl.string(game(stateFromStores[13]).t.XpfUWL),
       onPress() {
-          const obj = openOrbsArcadeSheets;
-          return obj.openOrbsArcadeRewardsSheet(game.id);
+          let result;
+          const obj = OrbsArcadeRewardUtils;
+          if (obj.getOrbsArcadeClaimableRewards(rewards, stateFromStores).length > 0) {
+            const tmpResult = openOrbsArcadeSheets;
+            result = tmpResult.openOrbsArcadeRewardUnlockedSheet(game.id);
+          } else {
+            const tmpResult2 = openOrbsArcadeSheets;
+            result = tmpResult2.openOrbsArcadeRewardsSheet(game.id);
+          }
+          return result;
         },
-      children: items4
+      children: items5
     };
-    intl = tmp2(1128).intl;
-    const obj5 = { style: closure_5.absoluteFill, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: memo };
-    items4 = [closure_8(LinearGradientDefault, obj5), , ];
+    intl = tmp2(tmp3[13]).intl;
+    const obj5 = { style: absoluteFill.absoluteFill, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: memo1 };
+    items5 = [closure_9(rewards(tmp3[24]), obj5), , ];
     if (tmp11 && rewards.length > 0 && null == orbsArcadeFocusedReward) {
-      let tmp29 = null;
-      const tmp28 = closure_18;
+      let tmp30 = null;
+      const tmp29 = closure_20;
       if (tmp14) {
-        tmp29 = expiresAt;
+        tmp30 = expiresAt;
       }
-      const obj6 = { windowEndsAt: tmp29 };
-      tmp21Result = tmp30(tmp28, obj6);
+      const obj6 = { windowEndsAt: tmp30 };
+      tmp21Result = tmp31(tmp29, obj6);
     } else {
-      if (null != enrolledAt) {
-        if (null != tmp7) {
-          const obj7 = { reward: tmp7, gameState: stateFromStores };
-          tmp21Result = tmp30(closure_14, obj7);
+      if (null != currentRun) {
+        if (memo.length > 1) {
+          const obj7 = { rewards: memo };
+          tmp21Result = tmp31(closure_15, obj7);
         }
       }
-      const obj8 = { children: items5 };
-      const obj9 = {
+      if (null != currentRun) {
+        if (null != tmp7) {
+          const obj8 = { reward: tmp7, gameState: stateFromStores };
+          tmp21Result = tmp31(closure_16, obj8);
+        }
+      }
+      const obj9 = { children: items6 };
+      const obj10 = {
         "aria-label": mapped.join(", "),
-        shape: game(9405).CutoutShape.Circle,
+        shape: game(stateFromStores[11]).CutoutShape.Circle,
         size: 53,
         gap: 2,
         depthX: 0.3,
         children: rewards.map((reward) => {
               const obj = { reward, size: 53 };
-              return closure_1_8(closure_1_16, obj, reward.id);
+              return closure_1_9(closure_1_18, obj, reward.id);
             })
       };
-      const Pile = tmp2(12900).Pile;
+      const Pile = tmp2(tmp3[10]).Pile;
       mapped = rewards.map((name) => name.name);
-      items5 = [closure_8(Pile, obj9), ];
-      const obj10 = { style: tmp.rewardShelfCopy, children: items6 };
-      const obj11 = { variant: "heading-sm/semibold", color: "text-default", children: intl2.string(game(1128).t.ehbzo8) };
-      const Text = tmp2(5232).Text;
-      intl2 = tmp2(1128).intl;
-      items6 = [closure_8(Text, obj11), ];
-      const obj12 = { variant: "text-xs/medium", color: "text-muted", children: intl3.string(game(1128).t["5Gt1dt"]) };
-      const Text2 = tmp2(5232).Text;
-      intl3 = tmp2(1128).intl;
-      items6[1] = closure_8(Text2, obj12);
-      items5[1] = closure_9(closure_6, obj10);
-      tmp21Result = tmp21(closure_10, obj8);
+      items6 = [closure_9(Pile, obj10), ];
+      const obj11 = { style: tmp.rewardShelfCopy, children: items7 };
+      const obj12 = { variant: "heading-sm/semibold", color: "text-default", children: intl2.string(game(stateFromStores[13]).t.ehbzo8) };
+      const Text = tmp2(tmp3[12]).Text;
+      intl2 = tmp2(tmp3[13]).intl;
+      items7 = [closure_9(Text, obj12), ];
+      const obj13 = { variant: "text-xs/medium", color: "text-muted", children: intl3.string(game(stateFromStores[13]).t["5Gt1dt"]) };
+      const Text2 = tmp2(tmp3[12]).Text;
+      intl3 = tmp2(tmp3[13]).intl;
+      items7[1] = closure_9(Text2, obj13);
+      items6[1] = closure_10(closure_6, obj11);
+      tmp21Result = tmp21(closure_11, obj9);
     }
-    items4[1] = tmp21Result;
-    const ChevronSmallRightIcon = tmp2(7303).ChevronSmallRightIcon;
-    const colors = tmp8(587).colors;
-    const obj13 = { size: "md", color: null != enrolledAt ? colors.CONTROL_ICON_ONLY_ICON_DEFAULT : colors.ICON_MUTED };
-    items4[2] = closure_8(ChevronSmallRightIcon, obj13);
-    tmp30Result2 = tmp30(tmp31, obj3);
+    items5[1] = tmp21Result;
+    const ChevronSmallRightIcon = tmp2(tmp3[25]).ChevronSmallRightIcon;
+    const colors = tmp8(tmp3[5]).colors;
+    const obj14 = { size: "md", color: null != currentRun ? colors.CONTROL_ICON_ONLY_ICON_DEFAULT : colors.ICON_MUTED };
+    items5[2] = closure_9(ChevronSmallRightIcon, obj14);
+    tmp31Result2 = tmp31(tmp32, obj3);
   }
-  return tmp30Result2;
+  return tmp31Result2;
 });
 let result = size.fileFinishedImporting("modules/orbs_arcade/native/OrbsArcadeRewardShelf.tsx");
 

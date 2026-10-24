@@ -1,15 +1,15 @@
-// Module ID: 9078
-// Function ID: 9079
+// Module ID: 9079
+// Function ID: 9080
 // Name: createAutocompleterResultForChannelId
-// Dependencies: [4821, 4911, 1392, 6823, 1087, 5602, 2]
+// Dependencies: [4823, 4913, 1392, 6825, 1087, 5604, 2]
 // Exports: default
 
-// Module 9078 (createAutocompleterResultForChannelId)
+// Module 9079 (createAutocompleterResultForChannelId)
 import Constants from "Constants" /* 1087 */;
-import useChannelName from "useChannelName" /* 5602 */;
-import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 6823 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
-import RelationshipStore from "RelationshipStore" /* 4911 */;
+import useChannelName from "useChannelName" /* 5604 */;
+import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 6825 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import RelationshipStore from "RelationshipStore" /* 4913 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 14464
-// Function ID: 14465
+// Module ID: 14488
+// Function ID: 14489
 // Name: useShouldPinCollectiblesEditPreview
-// Dependencies: [558, 1499, 1633, 5266, 2]
+// Dependencies: [558, 1499, 1633, 5268, 2]
 
-// Module 14464 (useShouldPinCollectiblesEditPreview)
+// Module 14488 (useShouldPinCollectiblesEditPreview)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import NavigatorConstants from "NavigatorConstants" /* 5266 */;
+import NavigatorConstants from "NavigatorConstants" /* 5268 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

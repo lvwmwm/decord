@@ -1,12 +1,12 @@
-// Module ID: 13851
-// Function ID: 13852
+// Module ID: 13870
+// Function ID: 13871
 // Name: openGiftModal
-// Dependencies: [6670, 13852, 2002, 2]
+// Dependencies: [6672, 13871, 2002, 2]
 // Exports: closeShopGiftModal, openShopGiftModal
 
-// Module 13851 (openGiftModal)
+// Module 13870 (openGiftModal)
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6670 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
 import size from "module_2" /* 2 */;
 
 let c3 = "Shop Gift Modal";
@@ -23,7 +23,7 @@ export const openShopGiftModal = function openShopGiftModal(arg0) {
   ({ navigationParams, skuId, analyticsLocations, lockedRecipientUser, onGiftModalDismiss, giftingOrigin } = arg0);
   const obj = ModalActionCreatorsDefault;
   const obj2 = { skuId, analyticsLocations, lockedRecipientUser, onGiftModalDismiss, giftingOrigin };
-  obj.pushLazy(asyncRequire(13852, dependencyMap.paths), obj2, c3, navigationParams);
+  obj.pushLazy(asyncRequire(13871, dependencyMap.paths), obj2, c3, navigationParams);
 };
 export const closeShopGiftModal = function closeShopGiftModal() {
   const obj = ModalActionCreatorsDefault;

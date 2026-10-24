@@ -1,27 +1,27 @@
-// Module ID: 19221
-// Function ID: 19222
+// Module ID: 19273
+// Function ID: 19274
 // Name: GuildRoleSubscriptionGroupDetailsModal
-// Dependencies: [32, 19, 17, 19222, 16525, 1087, 21, 4969, 558, 576, 15118, 19217, 1128, 9043, 19223, 5232, 16537, 8949, 19224, 2]
+// Dependencies: [32, 19, 17, 19274, 16557, 1087, 21, 4971, 558, 576, 15140, 19270, 1128, 9044, 19275, 5234, 16569, 7180, 19276, 2]
 
-// Module 19221 (GuildRoleSubscriptionGroupDetailsModal)
+// Module 19273 (GuildRoleSubscriptionGroupDetailsModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import intl5 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import Form from "Form" /* 8949 */;
-import FormHeaderDefault from "FormHeader" /* 9043 */;
-import FormStylesDefault from "FormStyles" /* 15118 */;
-import FormSeparatorDefault from "FormSeparator" /* 16537 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 19217 */;
-import FormImagePicker from "FormImagePicker" /* 19223 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 19224 */;
+import intl6 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import TextArea2 from "TextArea" /* 7180 */;
+import FormHeaderDefault from "FormHeader" /* 9044 */;
+import FormStylesDefault from "FormStyles" /* 15140 */;
+import FormSeparatorDefault from "FormSeparator" /* 16569 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 19270 */;
+import FormImagePicker from "FormImagePicker" /* 19275 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 19276 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 19222 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16525 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 19274 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16557 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Content(arg0
   let setDescription;
   let tmp10;
   const obj = react2;
-  const cResult = obj.c(32);
+  const cResult = obj.c(33);
   ({ cover, setCover, description, setDescription } = arg0);
   const tmp4 = closure_12();
   const tmp6 = FormStylesDefault();
@@ -55,7 +55,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Content(arg0
   const header = tmp6.header;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
-    const stringResult = intl.string(intl5.t["3S8gA7"]);
+    const stringResult = intl.string(intl6.t["3S8gA7"]);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -83,7 +83,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Content(arg0
         const coverDescription = tmp4.coverDescription;
         if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
           const intl2 = tmp(1128).intl;
-          const stringResult1 = intl2.string(intl5.t["0ng4rB"]);
+          const stringResult1 = intl2.string(intl6.t["0ng4rB"]);
           cResult[8] = stringResult1;
           tmp16 = stringResult1;
         } else {
@@ -105,6 +105,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Content(arg0
             let tmp28;
             let tmp30;
             let tmp33;
+            let tmp35;
             if (cResult[13] === tmp18) {
               tmp21 = cResult[14];
             }
@@ -121,7 +122,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Content(arg0
             const header2 = tmp6.header;
             if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
               const intl3 = tmp(1128).intl;
-              const stringResult2 = intl3.string(intl5.t["74JctW"]);
+              const stringResult2 = intl3.string(intl6.t["74JctW"]);
               cResult[17] = stringResult2;
               tmp28 = stringResult2;
             } else {
@@ -137,56 +138,65 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Content(arg0
               tmp30 = cResult[19];
             }
             const _Symbol3 = Symbol;
-            const textInput = tmp6.textInput;
+            const inputContainer = tmp6.inputContainer;
             if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
               const intl4 = tmp(1128).intl;
-              const stringResult3 = intl4.string(intl5.t["3YHwoG"]);
+              const stringResult3 = intl4.string(intl6.t["74JctW"]);
               cResult[20] = stringResult3;
               tmp33 = stringResult3;
             } else {
               tmp33 = cResult[20];
             }
-            if (cResult[21] === description) {
-              if (cResult[22] === tmp6.textInput) {
-                if (cResult[23] === roleSubscriptionSettingsDisabled) {
-                  let tmp35;
-                  if (cResult[24] === setDescription) {
-                    tmp35 = cResult[25];
+            const _Symbol4 = Symbol;
+            if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
+              const intl5 = tmp(1128).intl;
+              const stringResult4 = intl5.string(intl6.t["3YHwoG"]);
+              cResult[21] = stringResult4;
+              tmp35 = stringResult4;
+            } else {
+              tmp35 = cResult[21];
+            }
+            if (cResult[22] === description) {
+              if (cResult[23] === tmp6.inputContainer) {
+                if (cResult[24] === roleSubscriptionSettingsDisabled) {
+                  let tmp37;
+                  if (cResult[25] === setDescription) {
+                    tmp37 = cResult[26];
                   }
-                  if (cResult[26] === tmp25) {
-                    if (cResult[27] === tmp30) {
-                      if (cResult[28] === tmp35) {
-                        if (cResult[29] === tmp10) {
-                          let tmp39;
-                          if (cResult[30] === tmp21) {
-                            tmp39 = cResult[31];
+                  if (cResult[27] === tmp25) {
+                    if (cResult[28] === tmp30) {
+                      if (cResult[29] === tmp37) {
+                        if (cResult[30] === tmp10) {
+                          let tmp41;
+                          if (cResult[31] === tmp21) {
+                            tmp41 = cResult[32];
                           }
-                          return tmp39;
+                          return tmp41;
                         }
                       }
                     }
                   }
                   const obj7 = { children: items };
-                  items = [tmp10, tmp21, tmp25, tmp30, tmp35];
-                  const tmp42 = authStore(unpackModuleId, obj7);
-                  cResult[26] = tmp25;
-                  cResult[27] = tmp30;
-                  cResult[28] = tmp35;
-                  cResult[29] = tmp10;
-                  cResult[30] = tmp21;
-                  cResult[31] = tmp42;
-                  tmp39 = tmp42;
+                  items = [tmp10, tmp21, tmp25, tmp30, tmp37];
+                  const tmp44 = authStore(unpackModuleId, obj7);
+                  cResult[27] = tmp25;
+                  cResult[28] = tmp30;
+                  cResult[29] = tmp37;
+                  cResult[30] = tmp10;
+                  cResult[31] = tmp21;
+                  cResult[32] = tmp44;
+                  tmp41 = tmp44;
                 }
               }
             }
-            const obj8 = { style: textInput, showTopContainer: false, multiline: true, maxLength: metroImportDefault, numberOfLines: 3, value: description, placeholder: tmp33, onChange: setDescription, disabled: roleSubscriptionSettingsDisabled };
-            const tmp38 = React4(Form.FormInput, obj8);
-            cResult[21] = description;
-            cResult[22] = tmp6.textInput;
-            cResult[23] = roleSubscriptionSettingsDisabled;
-            cResult[24] = setDescription;
-            cResult[25] = tmp38;
-            tmp35 = tmp38;
+            const obj8 = { containerStyle: inputContainer, accessibilityLabel: tmp33, maxLength: metroImportDefault, value: description, placeholder: tmp35, onChange: setDescription, disabled: roleSubscriptionSettingsDisabled };
+            const tmp40 = React4(TextArea2.TextArea, obj8);
+            cResult[22] = description;
+            cResult[23] = tmp6.inputContainer;
+            cResult[24] = roleSubscriptionSettingsDisabled;
+            cResult[25] = setDescription;
+            cResult[26] = tmp40;
+            tmp37 = tmp40;
           }
         }
         const obj9 = { style: tmp13, children: items1 };
@@ -201,7 +211,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Content(arg0
     }
   }
   const obj10 = { style: tmp4.coverPhoto, image: cover, imageUploadSize: UPLOAD_BANNER_SIZE.width, previewShape: FormImagePicker.PreviewShape.SQUIRCLE, setImage: setCover, disabled: roleSubscriptionSettingsDisabled, standalone: true, size: 114 };
-  const ImagePickerIcon = tmp(19223).ImagePickerIcon;
+  const ImagePickerIcon = tmp(19275).ImagePickerIcon;
   const tmp15 = React4(ImagePickerIcon, obj10);
   cResult[3] = cover;
   cResult[4] = roleSubscriptionSettingsDisabled;
@@ -216,6 +226,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Content(arg0
   let intl2;
   let intl3;
   let intl4;
+  let intl5;
   let items;
   let items1;
   let setCover;
@@ -226,29 +237,30 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Content(arg0
   const obj = RoleSubscriptionSettingsDisabledContext;
   const roleSubscriptionSettingsDisabled = obj.useRoleSubscriptionSettingsDisabled();
   const obj2 = { children: items };
-  const obj3 = { style: tmp2.header, children: intl.string(intl5.t["3S8gA7"]) };
+  const obj3 = { style: tmp2.header, children: intl.string(intl6.t["3S8gA7"]) };
   const tmp4 = FormHeaderDefault;
-  intl = intl5.intl;
+  intl = intl6.intl;
   items = [React4(tmp4, obj3), , , , ];
   const obj4 = { style: tmp.paddedContainer, children: items1 };
   const obj5 = { style: tmp.coverPhoto, image: cover, imageUploadSize: UPLOAD_BANNER_SIZE.width, previewShape: FormImagePicker.PreviewShape.SQUIRCLE, setImage: setCover, disabled: roleSubscriptionSettingsDisabled, standalone: true, size: 114 };
   const ImagePickerIcon = FormImagePicker.ImagePickerIcon;
   items1 = [React4(ImagePickerIcon, obj5), ];
-  const obj6 = { style: tmp.coverDescription, variant: "text-sm/medium", color: "text-default", children: intl2.string(intl5.t["0ng4rB"]) };
+  const obj6 = { style: tmp.coverDescription, variant: "text-sm/medium", color: "text-default", children: intl2.string(intl6.t["0ng4rB"]) };
   const Text = Text_Text.Text;
-  intl2 = intl5.intl;
+  intl2 = intl6.intl;
   items1[1] = React4(Text, obj6);
   items[1] = authStore(View, obj4);
   const obj7 = { style: tmp.paddedContainer };
   items[2] = React4(FormSeparatorDefault, obj7);
-  const obj8 = { style: tmp2.header, children: intl3.string(intl5.t["74JctW"]) };
+  const obj8 = { style: tmp2.header, children: intl3.string(intl6.t["74JctW"]) };
   const tmp5 = FormHeaderDefault;
-  intl3 = intl5.intl;
+  intl3 = intl6.intl;
   items[3] = React4(tmp5, obj8);
-  const obj9 = { style: tmp2.textInput, showTopContainer: false, multiline: true, maxLength: metroImportDefault, numberOfLines: 3, value: description, placeholder: intl4.string(intl5.t["3YHwoG"]), onChange: setDescription, disabled: roleSubscriptionSettingsDisabled };
-  const FormInput = Form.FormInput;
-  intl4 = intl5.intl;
-  items[4] = React4(FormInput, obj9);
+  const obj9 = { containerStyle: tmp2.inputContainer, accessibilityLabel: intl4.string(intl6.t["74JctW"]), maxLength: metroImportDefault, value: description, placeholder: intl5.string(intl6.t["3YHwoG"]), onChange: setDescription, disabled: roleSubscriptionSettingsDisabled };
+  const TextArea = TextArea2.TextArea;
+  intl4 = intl6.intl;
+  intl5 = intl6.intl;
+  items[4] = React4(TextArea, obj9);
   return authStore(unpackModuleId, obj2);
 });
 let closure_13 = tmp5;
@@ -272,9 +284,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
-    const stringResult = intl.string(intl5.t.EPOLQD);
+    const stringResult = intl.string(intl6.t.EPOLQD);
     const intl2 = tmp(1128).intl;
-    const stringResult1 = intl2.string(intl5.t["LeAm+L"]);
+    const stringResult1 = intl2.string(intl6.t["LeAm+L"]);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
     tmp11 = stringResult;
@@ -334,10 +346,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   _slicedToArray(RoleTierEditStore.useGroupCoverState(), 2);
   [first, tmp5] = RoleTierEditStore.useGroupDescriptionState();
   const tmp6 = first.length > 0 && null != tmp2;
-  const obj = { title: intl.string(intl5.t.EPOLQD), description: intl2.string(intl5.t["LeAm+L"]), canProceedToNextStep: tmp6, nextStep: metroRequire.DETAILS, children: React4(closure_13, obj2) };
+  const obj = { title: intl.string(intl6.t.EPOLQD), description: intl2.string(intl6.t["LeAm+L"]), canProceedToNextStep: tmp6, nextStep: metroRequire.DETAILS, children: React4(closure_13, obj2) };
   const tmp8 = GuildRoleSubscriptionTierEditStepDefault;
-  intl = intl5.intl;
-  intl2 = intl5.intl;
+  intl = intl6.intl;
+  intl2 = intl6.intl;
   const merged = Object.assign(arg0);
   obj2 = { cover: tmp2, setCover: tmp3, description: first, setDescription: tmp5 };
   const merged1 = Object.assign(arg0);

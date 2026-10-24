@@ -1,11 +1,11 @@
-// Module ID: 13873
-// Function ID: 13874
+// Module ID: 13892
+// Function ID: 13893
 // Name: GiftingBadgeConstants
-// Dependencies: [8679, 2]
+// Dependencies: [8681, 2]
 // Exports: getNextTierForProgress, getRemainingGiftsToNextTier, getTierForProgress
 
-// Module 13873 (GiftingBadgeConstants)
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8679 */;
+// Module 13892 (GiftingBadgeConstants)
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8681 */;
 import size from "module_2" /* 2 */;
 
 let closure_0 = BadgeDirectoryStore.getSingleRequirementThreshold;

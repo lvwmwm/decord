@@ -1,20 +1,20 @@
 // Module ID: 10337
 // Function ID: 10338
-// Dependencies: [10252, 10210, 10217, 10219, 10338, 10321, 10323, 10324, 10325, 10326, 10339, 10340, 10250]
+// Dependencies: [10253, 10211, 10218, 10220, 10328, 10329, 10331, 10332, 10333, 10334, 10335, 10336, 10251]
 // Exports: createCasualConfiguration, parse, parseDate
 
 // Module 10337
-import includeCommonConfiguration2 from "includeCommonConfiguration" /* 10250 */;
-import _mod10252 from "module_10252" /* 10252 */;
-import _mod10321 from "module_10321" /* 10321 */;
-import _mod10323 from "module_10323" /* 10323 */;
-import _mod10324 from "module_10324" /* 10324 */;
-import _mod10325 from "module_10325" /* 10325 */;
-import _mod10326 from "module_10326" /* 10326 */;
-import _mod10338 from "module_10338" /* 10338 */;
-import _mod10339 from "module_10339" /* 10339 */;
-import _mod10340 from "module_10340" /* 10340 */;
-import { Chrono } from "module_10210" /* 10210 */;
+import includeCommonConfiguration2 from "includeCommonConfiguration" /* 10251 */;
+import _mod10253 from "module_10253" /* 10253 */;
+import _mod10328 from "module_10328" /* 10328 */;
+import _mod10329 from "module_10329" /* 10329 */;
+import _mod10331 from "module_10331" /* 10331 */;
+import _mod10332 from "module_10332" /* 10332 */;
+import _mod10333 from "module_10333" /* 10333 */;
+import _mod10334 from "module_10334" /* 10334 */;
+import _mod10335 from "module_10335" /* 10335 */;
+import _mod10336 from "module_10336" /* 10336 */;
+import { Chrono } from "module_10211" /* 10211 */;
 
 const require = globalThis.__r;
 
@@ -23,23 +23,23 @@ function createConfiguration() {
   let items1;
   const obj = { parsers: items, refiners: items1 };
   const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
-  items = [new module_10321.default(), , , , ];
-  new module_10321.default();
-  items[1] = new module_10324.default();
-  new module_10324.default();
-  items[2] = new module_10326.default();
-  new module_10326.default();
-  items[3] = new module_10325.default();
-  new module_10325.default();
-  items[4] = new module_10323.default();
-  new module_10323.default();
-  items1 = [new module_10339.default(), ];
-  new module_10339.default();
-  items1[1] = new module_10340.default();
-  new module_10340.default();
+  items = [new module_10329.default(), , , , ];
+  new module_10329.default();
+  items[1] = new module_10332.default();
+  new module_10332.default();
+  items[2] = new module_10334.default();
+  new module_10334.default();
+  items[3] = new module_10333.default();
+  new module_10333.default();
+  items[4] = new module_10331.default();
+  new module_10331.default();
+  items1 = [new module_10335.default(), ];
+  new module_10335.default();
+  items1[1] = new module_10336.default();
+  new module_10336.default();
   const result = includeCommonConfiguration(obj);
   const refiners = result.refiners;
-  result.refiners = refiners.filter((item) => !(item instanceof module_10252.default));
+  result.refiners = refiners.filter((item) => !(item instanceof module_10253.default));
   return result;
 }
 const fn = this && this.__importDefault || ((__esModule) => {
@@ -57,33 +57,33 @@ function createCasualConfiguration() {
   const tmp = createConfiguration();
   const parsers = tmp.parsers;
   const unshift = parsers.unshift;
-  const _default = new module_10338.default();
+  const _default = new module_10328.default();
   unshift(_default);
   return tmp;
 }
-const module_10252 = fn(_mod10252);
-const module_10338 = fn(_mod10338);
-const module_10321 = fn(_mod10321);
-const module_10323 = fn(_mod10323);
-const module_10324 = fn(_mod10324);
-const module_10325 = fn(_mod10325);
-const module_10326 = fn(_mod10326);
-const module_10339 = fn(_mod10339);
-const module_10340 = fn(_mod10340);
+const module_10253 = fn(_mod10253);
+const module_10328 = fn(_mod10328);
+const module_10329 = fn(_mod10329);
+const module_10331 = fn(_mod10331);
+const module_10332 = fn(_mod10332);
+const module_10333 = fn(_mod10333);
+const module_10334 = fn(_mod10334);
+const module_10335 = fn(_mod10335);
+const module_10336 = fn(_mod10336);
 const configuration = createConfiguration();
 let parsers = configuration.parsers;
 let unshift = parsers.unshift;
-let _default = new module_10338.default();
+let _default = new module_10328.default();
 unshift(_default);
 const chrono = new Chrono(configuration);
 const configuration1 = createConfiguration();
 const parsers1 = configuration1.parsers;
 const unshift2 = parsers1.unshift;
-const _default1 = new module_10338.default();
+const _default1 = new module_10328.default();
 unshift2(_default1);
 const chrono2 = new Chrono(configuration1);
-const chrono1 = new require("module_10210").Chrono(createConfiguration());
-const Chrono_export = require("module_10210").Chrono;
+const chrono1 = new require("module_10211").Chrono(createConfiguration());
+const Chrono_export = require("module_10211").Chrono;
 
 export const parse = function parse(arg0, arg1, arg2) {
   const casual = exports.casual;
@@ -101,6 +101,6 @@ export const ParsingComponents = require("ReferenceWithTimezone").ParsingCompone
 export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
 export const Meridiem = require("Meridiem").Meridiem;
 export const Weekday = require("Meridiem").Weekday;
-export const hans = chrono;
+export const hant = chrono;
 export const casual = chrono2;
 export const strict = chrono1;

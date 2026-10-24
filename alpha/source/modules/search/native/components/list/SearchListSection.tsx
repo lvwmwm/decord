@@ -1,22 +1,22 @@
-// Module ID: 18089
-// Function ID: 18090
+// Module ID: 18121
+// Function ID: 18122
 // Name: SearchListSection
-// Dependencies: [19, 17, 9713, 21, 4969, 558, 576, 5232, 2]
+// Dependencies: [19, 17, 9714, 21, 4971, 558, 576, 5234, 2]
 
-// Module 18089 (SearchListSection)
+// Module 18121 (SearchListSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import SearchConstants from "SearchConstants" /* 9713 */;
+import SearchConstants from "SearchConstants" /* 9714 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 let tmp;
-const Text_Text = tmp(5232);
+const Text_Text = tmp(5234);
 const View = react_native.View;
 const SEARCH_LIST_SECTION_TOP_PADDING = SearchConstants.SEARCH_LIST_SECTION_TOP_PADDING;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);

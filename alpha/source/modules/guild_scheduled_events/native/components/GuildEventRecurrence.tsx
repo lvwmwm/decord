@@ -1,19 +1,19 @@
-// Module ID: 9030
-// Function ID: 9031
+// Module ID: 9031
+// Function ID: 9032
 // Name: GuildEventRecurrence
-// Dependencies: [19, 17, 4821, 4843, 6782, 21, 4969, 587, 558, 576, 504, 8895, 8942, 8896, 8888, 1128, 8904, 8900, 6906, 5232, 1202, 9031, 2]
+// Dependencies: [19, 17, 4823, 4845, 6784, 21, 4971, 587, 558, 576, 504, 8897, 8944, 8898, 8890, 1128, 8906, 8902, 6908, 5234, 1202, 9032, 2]
 
-// Module 9030 (GuildEventRecurrence)
+// Module 9031 (GuildEventRecurrence)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ScheduleUtils from "ScheduleUtils" /* 8888 */;
-import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8904 */;
+import ScheduleUtils from "ScheduleUtils" /* 8890 */;
+import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8906 */;
 import react from "react" /* 19 */;
-import ChannelStore_mod from "ChannelStore" /* 4821 */;
-import GuildStore_mod from "GuildStore" /* 4843 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6782 */;
+import ChannelStore_mod from "ChannelStore" /* 4823 */;
+import GuildStore_mod from "GuildStore" /* 4845 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6784 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -444,7 +444,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEvent
   const stateFromStores = obj.useStateFromStores(items, () => GuildScheduledEventStore.getGuildScheduledEvent(guildEventId));
   let id;
   const tmp5 = guildEventId;
-  const tmp6 = guildEventId(8895);
+  const tmp6 = guildEventId(8897);
   if (stateFromStores != null) {
     id = stateFromStores.id;
   }
@@ -469,13 +469,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEvent
     }
     return getChannel(channel_id);
   });
-  const useManageResourcePermissions = tmp2(8942).useManageResourcePermissions;
-  tmp2(8942);
+  const useManageResourcePermissions = tmp2(8944).useManageResourcePermissions;
+  tmp2(8944);
   if (stateFromStores2 == null) {
     stateFromStores2 = stateFromStores1;
   }
   closure_5 = useManageResourcePermissions(stateFromStores2).canManageGuildEvent(stateFromStores);
-  const tmp2Result6 = tmp2(8896);
+  const tmp2Result6 = tmp2(8898);
   const eventScheduleById = tmp2Result6.useEventScheduleById(guildEventId, recurrenceId);
   let toISOStringResult;
   if (eventScheduleById != null) {
@@ -535,15 +535,15 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEvent
           }
         },
       style: tmp.eventHeader,
-      children: closure_8(tmp2(8900).GuildEventCardHeader, obj5)
+      children: closure_8(tmp2(8902).GuildEventCardHeader, obj5)
     };
-    const PressableOpacity = tmp2(6906).PressableOpacity;
+    const PressableOpacity = tmp2(6908).PressableOpacity;
     obj5 = { isActive, event: stateFromStores, showUserCount: false, showCreator: false, recurrenceId };
     items5 = [closure_8(PressableOpacity, obj4), ];
     const obj6 = { style: tmp.actions, children: items6 };
     if (tmp22Result) {
       const obj7 = { variant: "text-sm/semibold", color: "text-feedback-critical", children: intl2.string(tmp2(1128).t.fyBVRm) };
-      const Text = tmp2(5232).Text;
+      const Text = tmp2(5234).Text;
       intl2 = tmp2(1128).intl;
       tmp22Result = tmp22(Text, obj7);
     }
@@ -564,10 +564,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEvent
       style: tmp.secondarySmallButton,
       children: closure_8(Icon, obj9)
     };
-    const PressableOpacity2 = tmp2(6906).PressableOpacity;
+    const PressableOpacity2 = tmp2(6908).PressableOpacity;
     intl3 = tmp2(1128).intl;
     const _HermesInternal3 = HermesInternal;
-    obj9 = { source: tmp5(9031), size: tmp2(1202).Icon.Sizes.REFRESH_SMALL_16, style: tmp.secondarySmallIcon };
+    obj9 = { source: tmp5(9032), size: tmp2(1202).Icon.Sizes.REFRESH_SMALL_16, style: tmp.secondarySmallIcon };
     Icon = tmp2(1202).Icon;
     items6[1] = closure_8(PressableOpacity2, obj8);
     items5[1] = closure_9(stateFromStores1, obj6);

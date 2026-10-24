@@ -1,23 +1,23 @@
-// Module ID: 9700
-// Function ID: 9701
+// Module ID: 9701
+// Function ID: 9702
 // Name: PressableNavigatorBackIcon
-// Dependencies: [109, 19, 17, 4821, 6812, 4872, 21, 4969, 1202, 587, 558, 576, 504, 5250, 5142, 1128, 5667, 9701, 9702, 9704, 6906, 2]
+// Dependencies: [109, 19, 17, 4823, 6814, 4874, 21, 4971, 1202, 587, 558, 576, 504, 5252, 5144, 1128, 5669, 9702, 9703, 9705, 6908, 2]
 
-// Module 9700 (PressableNavigatorBackIcon)
+// Module 9701 (PressableNavigatorBackIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
-import FastImageDefault from "FastImage" /* 5667 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9701 */;
-import MaskedBadgeDefault from "MaskedBadge" /* 9702 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9704 */;
+import FastImageDefault from "FastImage" /* 5669 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9702 */;
+import MaskedBadgeDefault from "MaskedBadge" /* 9703 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9705 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6812 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6814 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -135,12 +135,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PressableN
       tmp19 = tmp20;
     }
   }
-  const tmpResult3 = tmp(5250);
+  const tmpResult3 = tmp(5252);
   let backgroundColor = tmpResult3.useToken(tmp4);
-  const useGradientValue = tmp(5142).useGradientValue;
-  tmp(5142);
+  const useGradientValue = tmp(5144).useGradientValue;
+  tmp(5144);
   if (backgroundColor == null) {
-    backgroundColor = useGradientValue(tmp(5142).GradientPercentage.START);
+    backgroundColor = useGradientValue(tmp(5144).GradientPercentage.START);
   }
   if (backgroundColor == null) {
     backgroundColor = tmp12.maskStroke.backgroundColor;
@@ -209,7 +209,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PressableN
             const obj7 = { children: closure_10(PressableOpacity, obj8) };
             obj8 = { ref: tmp8, accessibilityRole: "button", accessibilityLabel: tmp24, onPress: tmp23, style: tmp12.actionButtonPressable, children: tmp36 };
             const tmp43 = PressableNavigatorButtonWrapperDefault;
-            PressableOpacity = tmp(6906).PressableOpacity;
+            PressableOpacity = tmp(6908).PressableOpacity;
             const merged = Object.assign(tmp7);
             const tmp47 = closure_10(tmp43, obj7);
             cResult[25] = tmp23;

@@ -1,19 +1,19 @@
-// Module ID: 8786
-// Function ID: 8787
+// Module ID: 8788
+// Function ID: 8789
 // Name: MediaModalWebViewBase
-// Dependencies: [109, 19, 17, 21, 1384, 4969, 558, 576, 5050, 5204, 5658, 7905, 2]
+// Dependencies: [109, 19, 17, 21, 1384, 4971, 558, 576, 5052, 5206, 5660, 7907, 2]
 
-// Module 8786 (MediaModalWebViewBase)
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5050 */;
-import timing from "timing" /* 5204 */;
-import LinkingDefault from "Linking" /* 5658 */;
-import WebViewDefault from "WebView" /* 7905 */;
+// Module 8788 (MediaModalWebViewBase)
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5052 */;
+import timing from "timing" /* 5206 */;
+import LinkingDefault from "Linking" /* 5660 */;
+import WebViewDefault from "WebView" /* 7907 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -108,11 +108,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     str = tmp10;
   }
   const tmp15 = closure_12();
-  const tmpResult = tmp(5050);
+  const tmpResult = tmp(5052);
   sharedValue = tmpResult.useSharedValue(1);
-  const tmpResult4 = tmp(5050);
+  const tmpResult4 = tmp(5052);
   const sharedValue1 = tmpResult4.useSharedValue(0);
-  const tmpResult5 = tmp(5050);
+  const tmpResult5 = tmp(5052);
   class A {
     constructor() {
       let obj2;
@@ -121,12 +121,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       return obj;
     }
   }
-  let obj2 = { withTiming: tmp(5204).withTiming, webviewOpacity: sharedValue1 };
+  let obj2 = { withTiming: tmp(5206).withTiming, webviewOpacity: sharedValue1 };
   A.__closure = obj2;
   A.__workletHash = 10763244381367;
   A.__initData = __initData;
   const animatedStyle = tmpResult5.useAnimatedStyle(A);
-  const tmpResult6 = tmp(5050);
+  const tmpResult6 = tmp(5052);
   class U {
     constructor() {
       let obj2;
@@ -135,10 +135,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       return obj;
     }
   }
-  U.__closure = { withTiming: tmp(5204).withTiming, loaderOpacity: sharedValue };
+  U.__closure = { withTiming: tmp(5206).withTiming, loaderOpacity: sharedValue };
   U.__workletHash = 335623571284;
   U.__initData = __initData2;
-  ({ withTiming: tmp(5204).withTiming, loaderOpacity: sharedValue });
+  ({ withTiming: tmp(5206).withTiming, loaderOpacity: sharedValue });
   const animatedStyle1 = tmpResult6.useAnimatedStyle(U);
   if (cResult[9] === sharedValue) {
     if (cResult[10] === tmp7) {

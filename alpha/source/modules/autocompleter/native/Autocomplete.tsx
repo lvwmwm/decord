@@ -1,9 +1,9 @@
-// Module ID: 13240
-// Function ID: 13241
+// Module ID: 13277
+// Function ID: 13278
 // Name: Autocomplete
-// Dependencies: [19, 17, 4843, 4911, 1392, 1087, 10112, 21, 4969, 587, 558, 576, 8949, 504, 5023, 1202, 9132, 6912, 6901, 1128, 8605, 8500, 5602, 5232, 5667, 13241, 10153, 10169, 6906, 12, 8497, 13242, 2032, 2033, 8072, 13243, 2]
+// Dependencies: [19, 17, 4845, 4913, 1392, 1087, 10113, 21, 4971, 587, 558, 576, 8951, 504, 5025, 1202, 9133, 6914, 6903, 1128, 8607, 8502, 5604, 5234, 5669, 13278, 10154, 10170, 6908, 12, 8499, 13279, 2032, 2033, 8074, 13280, 2]
 
-// Module 13240 (Autocomplete)
+// Module 13277 (Autocomplete)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -11,26 +11,26 @@ import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2032 */;
 import StringUtils from "StringUtils" /* 2033 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import useChannelName from "useChannelName" /* 5602 */;
-import FastImageDefault from "FastImage" /* 5667 */;
-import TableRow2 from "TableRow" /* 6901 */;
-import TableRowTrailingText2 from "TableRowTrailingText" /* 6912 */;
-import TimestampUtils from "TimestampUtils" /* 8497 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8500 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8605 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10112 */;
-import StickersHooks from "StickersHooks" /* 10153 */;
-import StickerDefault from "Sticker" /* 10169 */;
-import ChannelAutocompleteEmojiUpsellDefault from "ChannelAutocompleteEmojiUpsell" /* 13241 */;
-import GameSearchRowExperimentDefault from "GameSearchRowExperiment" /* 13242 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import useChannelName from "useChannelName" /* 5604 */;
+import FastImageDefault from "FastImage" /* 5669 */;
+import TableRow2 from "TableRow" /* 6903 */;
+import TableRowTrailingText2 from "TableRowTrailingText" /* 6914 */;
+import TimestampUtils from "TimestampUtils" /* 8499 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8502 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8607 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10113 */;
+import StickersHooks from "StickersHooks" /* 10154 */;
+import StickerDefault from "Sticker" /* 10170 */;
+import ChannelAutocompleteEmojiUpsellDefault from "ChannelAutocompleteEmojiUpsell" /* 13278 */;
+import GameSearchRowExperimentDefault from "GameSearchRowExperiment" /* 13279 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4843 */;
-import RelationshipStore from "RelationshipStore" /* 4911 */;
+import GuildStore from "GuildStore" /* 4845 */;
+import RelationshipStore from "RelationshipStore" /* 4913 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -50,8 +50,8 @@ let size;
 let size1;
 let tmp;
 let tmp15;
-const Pressables = tmp(6906);
-const Form = tmp(8949);
+const Pressables = tmp(6908);
+const Form = tmp(8951);
 const View = react_native.View;
 ({ ChannelTypes: metroImportAll, Fonts } = Constants);
 const AUTOCOMPLETE_ROW_HEIGHT = ApplicationCommandsConstants.AUTOCOMPLETE_ROW_HEIGHT;
@@ -165,7 +165,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(user) {
                     }
                   }
                   const obj4 = { DEPRECATED_style: tmp4.row, onPress, accessibilityRole: "menuitem", label: tmp13, leading: tmp17, trailing: tmp21 };
-                  const tmp27 = closure_9(user(8949).FormRow, obj4);
+                  const tmp27 = closure_9(user(8951).FormRow, obj4);
                   cResult[21] = onPress;
                   cResult[22] = tmp4.row;
                   cResult[23] = tmp13;
@@ -176,7 +176,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(user) {
                 }
               }
               const obj5 = { user, usernameStyle: tmp20, discriminatorStyle: tmp4.trailing };
-              const tmp24 = closure_9(guildId(9132), obj5);
+              const tmp24 = closure_9(guildId(9133), obj5);
               cResult[17] = tmp4.trailing;
               cResult[18] = tmp20;
               cResult[19] = user;
@@ -206,7 +206,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(user) {
       name = stateFromStores;
     }
     if (name == null) {
-      const obj3 = guildId(5023);
+      const obj3 = guildId(5025);
       name = obj3.getName(user);
     }
     cResult[4] = stateFromStores;
@@ -249,14 +249,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(user) {
     }
     return nickname;
   });
-  const obj2 = { DEPRECATED_style: tmp.row, onPress, accessibilityRole: "menuitem", label: closure_9(tmp6, { text: nick }), leading: closure_9(Avatar, obj4), trailing: closure_9(guildId(9132), obj5) };
-  const FormRow = user(8949).FormRow;
+  const obj2 = { DEPRECATED_style: tmp.row, onPress, accessibilityRole: "menuitem", label: closure_9(tmp6, { text: nick }), leading: closure_9(Avatar, obj4), trailing: closure_9(guildId(9133), obj5) };
+  const FormRow = user(8951).FormRow;
   tmp6 = closure_12;
   if (nick == null) {
     nick = stateFromStores;
   }
   if (nick == null) {
-    const obj3 = guildId(5023);
+    const obj3 = guildId(5025);
     nick = obj3.getName(user);
   }
   obj4 = { status, user, size: user(1202).AvatarSizes.SMALL, guildId, autoStatusCutout: true };
@@ -459,7 +459,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Role(name) {
   items[1] = tmp5;
   str = "";
   obj3 = { style: items, text: "@" + name };
-  TableRowTrailingText = tmp3(6912).TableRowTrailingText;
+  TableRowTrailingText = tmp3(6914).TableRowTrailingText;
   if (showDescription) {
     const intl = tmp3(1128).intl;
     str = intl.string(tmp3(1128).t.HrUmDH);
@@ -1019,7 +1019,7 @@ const obj10 = {
             let tmp17;
             if (extraChromeEnabled) {
               const obj6 = { platforms: game.platformAvailability };
-              tmp17 = React4(tmp6(13243), obj6);
+              tmp17 = React4(tmp6(13280), obj6);
             }
             cResult[9] = extraChromeEnabled;
             cResult[10] = game.platformAvailability;
@@ -1033,7 +1033,7 @@ const obj10 = {
     const tmpResult = StringUtils;
     if (tmpResult.isNullOrEmpty(tmp8)) {
       const obj7 = { size: "sm", style: tmp4.gameIcon };
-      tmp9Result = tmp9(tmp(8072).UnknownGameIcon, obj7);
+      tmp9Result = tmp9(tmp(8074).UnknownGameIcon, obj7);
     } else {
       const items = [tmp4.gameIcon, ];
       let gameIconBackground = extraChromeEnabled;
@@ -1068,7 +1068,7 @@ const obj10 = {
     const obj2 = StringUtils;
     if (obj2.isNullOrEmpty(tmp4)) {
       const obj3 = { size: "sm", style: tmp.gameIcon };
-      tmp6Result = tmp6(tmp5(8072).UnknownGameIcon, obj3);
+      tmp6Result = tmp6(tmp5(8074).UnknownGameIcon, obj3);
       tmp9 = tmp6;
     } else {
       const items = [tmp.gameIcon, ];
@@ -1085,11 +1085,11 @@ const obj10 = {
     }
     const obj6 = { onPress, accessibilityRole: "menuitem", leading: tmp6Result, label: tmp9(closure_12, obj7), trailing: tmp9Result };
     obj7 = { text: game.name };
-    const FormRow = tmp5(8949).FormRow;
+    const FormRow = tmp5(8951).FormRow;
     tmp9Result = undefined;
     if (extraChromeEnabled) {
       const obj8 = { platforms: game.platformAvailability };
-      tmp9Result = tmp9(tmp2(13243), obj8);
+      tmp9Result = tmp9(tmp2(13280), obj8);
     }
     return tmp9(FormRow, obj6);
   }),
@@ -1169,8 +1169,8 @@ tmp15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Timestamp(arg0)
   if (null != result) {
     const obj2 = { onPress, accessibilityRole: "menuitem", label: React4(closure_12, obj3), trailing: React4(TableRowTrailingText, obj4) };
     obj3 = { text: result.formatted };
-    const TableRow = tmp(6901).TableRow;
-    TableRowTrailingText = tmp(6912).TableRowTrailingText;
+    const TableRow = tmp(6903).TableRow;
+    TableRowTrailingText = tmp(6914).TableRowTrailingText;
     if (str == null) {
       str = "";
     }

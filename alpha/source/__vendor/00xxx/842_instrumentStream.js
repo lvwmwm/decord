@@ -308,7 +308,6 @@ let obj = function _instrumentStream() {
       throw new TypeError("Generator functions may not be called on executing generators");
     } else {
       let str2 = "";
-      const flag = true;
       if (tmp3 === 3) {
         if (arg0 === 1) {
           throw value;
@@ -351,7 +350,7 @@ let obj = function _instrumentStream() {
                 value = undefined;
                 value2 = undefined;
                 items9 = undefined;
-                obj5 = { eventTypes: [], responseTexts: [], finishReasons: [], responseId: "", responseModel: "", responseTimestamp: 0, promptTokens: "r", completionTokens: "unicodeVersion", totalTokens: "next", chatCompletionToolCalls: {}, responsesApiToolCalls: [] };
+                obj5 = { eventTypes: [], responseTexts: [], finishReasons: [], responseId: "", responseModel: "", responseTimestamp: 0, promptTokens: "r", completionTokens: "__packager_asset", totalTokens: "Path", chatCompletionToolCalls: {}, responsesApiToolCalls: [] };
                 c4 = false;
                 c5 = false;
                 c19 = 4;

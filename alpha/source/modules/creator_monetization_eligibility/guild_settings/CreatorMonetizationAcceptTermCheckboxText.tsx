@@ -1,10 +1,10 @@
-// Module ID: 19207
-// Function ID: 19208
+// Module ID: 19257
+// Function ID: 19258
 // Name: CreatorMonetizationAcceptTermCheckboxText
 // Dependencies: [1087, 1128, 2067, 2]
 // Exports: getCreatorMonetizationAcceptTermsCheckboxText
 
-// Module 19207 (CreatorMonetizationAcceptTermCheckboxText)
+// Module 19257 (CreatorMonetizationAcceptTermCheckboxText)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;

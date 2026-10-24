@@ -1,10 +1,10 @@
-// Module ID: 10969
-// Function ID: 10970
+// Module ID: 10970
+// Function ID: 10971
 // Name: useShouldShowInitialSafetyToolsButtonTooltip
-// Dependencies: [10692, 558, 576, 10968, 504, 2]
+// Dependencies: [10693, 558, 576, 10969, 504, 2]
 
-// Module 10969 (useShouldShowInitialSafetyToolsButtonTooltip)
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10692 */;
+// Module 10970 (useShouldShowInitialSafetyToolsButtonTooltip)
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10693 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

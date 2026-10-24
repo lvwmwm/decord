@@ -1,9 +1,9 @@
-// Module ID: 19276
-// Function ID: 19277
+// Module ID: 19324
+// Function ID: 19325
 // Name: GuildRoleSubscriptionTierTemplateBasicInfo
-// Dependencies: [19, 17, 1394, 1098, 21, 4969, 587, 558, 576, 5667, 1202, 5232, 1128, 7337, 16551, 5243, 2]
+// Dependencies: [19, 17, 1394, 1098, 21, 4971, 587, 558, 576, 5669, 1202, 5234, 1128, 7339, 16583, 5244, 2]
 
-// Module 19276 (GuildRoleSubscriptionTierTemplateBasicInfo)
+// Module 19324 (GuildRoleSubscriptionTierTemplateBasicInfo)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,32 +11,28 @@ import Constants from "Constants" /* 1098 */;
 import intl3 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import BaseTextButton2 from "BaseTextButton" /* 5243 */;
-import FastImageDefault from "FastImage" /* 5667 */;
-import PriceUtils from "PriceUtils" /* 7337 */;
-import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 16551 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import components_Button_Button from "components/Button/Button" /* 5244 */;
+import FastImageDefault from "FastImage" /* 5669 */;
+import PriceUtils from "PriceUtils" /* 7339 */;
+import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 16583 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;
 let metroRequire;
-let obj2;
 let size;
 const View = react_native.View;
 const SubscriptionIntervalTypes = PremiumConstants.SubscriptionIntervalTypes;
 const CurrencyCodes = Constants.CurrencyCodes;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { container: { paddingBottom: 24 }, header: { flexDirection: "row" }, image: size, templateCTAButton: obj2 };
+let obj = { container: { paddingBottom: 24 }, header: { flexDirection: "row" }, image: size };
 size = { width: 48, height: 48, borderRadius: nativeDefault.radii.sm };
-createStyles = createStyles.createStyles;
-obj2 = { borderRadius: nativeDefault.radii.sm };
-let closure_8 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionTierTemplateBasicInfo(template) {
+let closure_8 = createStyles.createStyles(obj);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionTierTemplateBasicInfo(template) {
   let closeActionSheet;
   let container;
   let description;
@@ -54,7 +50,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   let tmpResult;
   let tmpResult2;
   const obj = react2;
-  const cResult = obj.c(40);
+  const cResult = obj.c(37);
   template = template.template;
   const handleSelectTemplateInPreview = template.handleSelectTemplateInPreview;
   ({ subscriptionPlanTextStyle, descriptionTextStyle, closeActionSheet } = template);
@@ -73,6 +69,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   if (cResult[2] === tmp4.image) {
     let tmp6;
     let tmp9;
+    let tmp12;
     let tmp13;
     let tmp14;
     let tmp17;
@@ -92,6 +89,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { flexShrink: 1 };
       cResult[6] = obj3;
+      tmp12 = obj3;
+    } else {
+      tmp12 = cResult[6];
     }
     const _Symbol3 = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
@@ -152,97 +152,74 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
             if (cResult[23] === description) {
               if (cResult[24] === descriptionTextProps) {
                 let tmp35;
-                let tmp40;
+                let tmp41;
                 if (cResult[25] === descriptionTextStyle) {
                   tmp35 = cResult[26];
                 }
                 const _Symbol5 = Symbol;
                 if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
                   const intl2 = tmp(1128).intl;
-                  cResult[27] = intl2.string(intl3.t["1W7mCt"]);
-                  intl2.string(intl3.t["1W7mCt"]);
-                  class I {
-                    constructor() {
-                      return closure_1(template, closeActionSheet);
-                    }
-                  }
+                  const stringResult = intl2.string(intl3.t["1W7mCt"]);
+                  cResult[27] = stringResult;
+                  tmp41 = stringResult;
                 } else {
-                  tmp40 = cResult[27];
+                  tmp41 = cResult[27];
                 }
                 if (cResult[28] === closeActionSheet) {
                   if (cResult[29] === handleSelectTemplateInPreview) {
-                    let tmp42;
+                    let tmp43;
                     if (cResult[30] === template) {
-                      tmp42 = cResult[31];
+                      tmp43 = cResult[31];
                     }
-                    if (cResult[32] === tmp4.templateCTAButton) {
-                      let tmp43;
-                      if (cResult[33] === tmp42) {
-                        tmp43 = cResult[34];
-                      }
-                      if (cResult[35] === tmp4.container) {
-                        if (cResult[36] === tmp31) {
-                          if (cResult[37] === tmp35) {
-                            let tmp46;
-                            if (cResult[38] === tmp43) {
-                              tmp46 = cResult[39];
-                            }
-                            return tmp46;
+                    if (cResult[32] === tmp4.container) {
+                      if (cResult[33] === tmp31) {
+                        if (cResult[34] === tmp35) {
+                          let tmp46;
+                          if (cResult[35] === tmp43) {
+                            tmp46 = cResult[36];
                           }
+                          return tmp46;
                         }
                       }
-                      const obj8 = { style: null, children: items };
-                      class I {
-                        constructor() {
-                          return closure_1(template, closeActionSheet);
-                        }
-                      }
-                      items = [tmp31, tmp35, tmp43];
-                      const tmp49 = metroImportDefault(View, obj8);
-                      cResult[35] = tmp4.container;
-                      cResult[36] = tmp31;
-                      cResult[37] = tmp35;
-                      cResult[38] = tmp43;
-                      cResult[39] = tmp49;
-                      tmp46 = tmp49;
                     }
-                    const obj9 = { text: tmp40, pillStyle: null, onPress: tmp42, grow: true };
-                    class I {
-                      constructor() {
-                        return closure_1(template, closeActionSheet);
-                      }
-                    }
-                    const tmp45 = metroRequire(BaseTextButton2.BaseTextButton, obj9);
-                    cResult[32] = tmp4.templateCTAButton;
-                    cResult[33] = tmp42;
-                    cResult[34] = tmp45;
-                    tmp43 = tmp45;
+                    const obj8 = { style: container, children: items };
+                    items = [tmp31, tmp35, tmp43];
+                    const tmp49 = metroImportDefault(View, obj8);
+                    cResult[32] = tmp4.container;
+                    cResult[33] = tmp31;
+                    cResult[34] = tmp35;
+                    cResult[35] = tmp43;
+                    cResult[36] = tmp49;
+                    tmp46 = tmp49;
                   }
                 }
-                class I {
-                  constructor() {
-                    return closure_1(template, closeActionSheet);
-                  }
-                }
+                const obj9 = {
+                  text: tmp41,
+                  onPress() {
+                                  return handleSelectTemplateInPreview(template, closeActionSheet);
+                                },
+                  grow: true
+                };
+                const tmp45 = metroRequire(components_Button_Button.Button, obj9);
                 cResult[28] = closeActionSheet;
                 cResult[29] = handleSelectTemplateInPreview;
                 cResult[30] = template;
-                cResult[31] = I;
-                tmp42 = I;
+                cResult[31] = tmp45;
+                tmp43 = tmp45;
               }
             }
             const obj10 = { variant: "text-sm/normal", style: descriptionTextStyle, children: description };
-            const Text = tmp(5232).Text;
+            const Text = tmp(5234).Text;
             const merged = Object.assign(descriptionTextProps);
-            const tmp39 = metroRequire(Text, obj10);
+            const tmp40 = metroRequire(Text, obj10);
             cResult[23] = description;
             cResult[24] = descriptionTextProps;
             cResult[25] = descriptionTextStyle;
-            cResult[26] = tmp39;
-            tmp35 = tmp39;
+            cResult[26] = tmp40;
+            tmp35 = tmp40;
           }
         }
-        const obj11 = { style: null, children: items1 };
+        const obj11 = { style: header, children: items1 };
         items1 = [tmp6, tmp9, tmp27];
         const tmp34 = metroImportDefault(View, obj11);
         cResult[19] = tmp4.header;
@@ -251,7 +228,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
         cResult[22] = tmp34;
         tmp31 = tmp34;
       }
-      const obj12 = { style: null, children: items2 };
+      const obj12 = { style: tmp12, children: items2 };
       items2 = [tmp14, tmp17, tmp24];
       const tmp30 = metroImportDefault(View, obj12);
       cResult[16] = tmp24;
@@ -323,18 +300,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   items2[1] = metroRequire(Text2, obj10);
   const obj11 = {
     text: intl2.string(intl3.t["1W7mCt"]),
-    pillStyle: tmp.templateCTAButton,
     onPress() {
       return closure_1_1(template, closure_1_2);
     },
     grow: true
   };
-  const BaseTextButton = BaseTextButton2.BaseTextButton;
+  const Button = components_Button_Button.Button;
   intl2 = intl3.intl;
-  items2[2] = metroRequire(BaseTextButton, obj11);
+  items2[2] = metroRequire(Button, obj11);
   return metroImportDefault(View, obj);
 });
 size = size_mod;
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplateBasicInfo.tsx");
 
-export const GuildRoleSubscriptionTierTemplateBasicInfo = tmp5;
+export const GuildRoleSubscriptionTierTemplateBasicInfo = tmp4;

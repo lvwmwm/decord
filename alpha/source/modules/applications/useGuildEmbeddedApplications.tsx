@@ -1,13 +1,13 @@
-// Module ID: 8978
-// Function ID: 8979
+// Module ID: 8979
+// Function ID: 8980
 // Name: useGuildEmbeddedApplications
-// Dependencies: [5, 19, 2045, 1087, 504, 1104, 1388, 6807, 558, 576, 2]
+// Dependencies: [5, 19, 2045, 1087, 504, 1104, 1388, 6809, 558, 576, 2]
 
-// Module 8978 (useGuildEmbeddedApplications)
+// Module 8979 (useGuildEmbeddedApplications)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import DurationsDefault from "Durations" /* 1104 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6807 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6809 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;

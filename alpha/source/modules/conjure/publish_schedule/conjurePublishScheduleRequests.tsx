@@ -1,12 +1,12 @@
-// Module ID: 10804
-// Function ID: 10805
+// Module ID: 10805
+// Function ID: 10806
 // Name: conjurePublishScheduleRequests
-// Dependencies: [10805, 10718, 2]
+// Dependencies: [10806, 10719, 2]
 // Exports: deletePublishSchedule, fetchPublishSchedule, setPublishSchedule
 
-// Module 10804 (conjurePublishScheduleRequests)
-import conjureProjectSockets from "conjureProjectSockets" /* 10718 */;
-import ConjurePublishScheduleErrorDefault from "ConjurePublishScheduleError" /* 10805 */;
+// Module 10805 (conjurePublishScheduleRequests)
+import conjureProjectSockets from "conjureProjectSockets" /* 10719 */;
+import ConjurePublishScheduleErrorDefault from "ConjurePublishScheduleError" /* 10806 */;
 import size from "module_2" /* 2 */;
 
 function rejectPendingPublishSchedule(projectId) {

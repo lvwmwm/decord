@@ -1,24 +1,23 @@
-// Module ID: 19252
-// Function ID: 19253
+// Module ID: 19302
+// Function ID: 19303
 // Name: AllChannelsSwitch
-// Dependencies: [19, 17, 16548, 1087, 21, 4969, 587, 6649, 558, 576, 5037, 1202, 9040, 1128, 19253, 19254, 2]
+// Dependencies: [19, 17, 16580, 21, 4971, 587, 558, 576, 5039, 1202, 5234, 9041, 1128, 19303, 19304, 2]
 
-// Module 19252 (AllChannelsSwitch)
+// Module 19302 (AllChannelsSwitch)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import react_native2 from "react-native" /* 5037 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9040 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16548 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19253 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 19254 */;
+import react_native2 from "react-native" /* 5039 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9041 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16580 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19303 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 19304 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
-import TextStyles_mod from "TextStyles" /* 6649 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,23 +27,14 @@ let hasOwnProperty;
 let metroRequire;
 let obj2;
 let obj3;
-let obj4;
-let obj5;
 const View = react_native.View;
 const AllChannelAccessOptions = GuildRoleSubscriptionEditStore.AllChannelAccessOptions;
-const Fonts = Constants.Fonts;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: obj2, row: { alignSelf: "stretch", alignItems: "center", flexDirection: "row", justifyContent: "flex-start", padding: 16 }, rowLabel: obj3, rowLabelSelected: obj4, rowIndicator: { marginStart: "auto" }, separator: obj5 };
+let obj = { container: obj2, row: { alignSelf: "stretch", alignItems: "center", flexDirection: "row", justifyContent: "flex-start", padding: 16 }, rowLabel: { flexShrink: 1, marginHorizontal: 16 }, rowIndicator: { marginStart: "auto" }, separator: obj3 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm };
 createStyles = createStyles.createStyles;
-obj3 = { flexShrink: 1, marginHorizontal: 16 };
-let TextStyles = TextStyles_mod;
-const merged = Object.assign(TextStyles(Fonts.PRIMARY_MEDIUM, nativeDefault.colors.TEXT_SUBTLE, 16));
-obj4 = {};
-TextStyles = TextStyles_mod;
-const merged1 = Object.assign(TextStyles(Fonts.PRIMARY_SEMIBOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 16));
-obj5 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, height: 1, marginStart: 56 };
+obj3 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, height: 1, marginStart: 56 };
 let closure_7 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Row(arg0) {
@@ -57,7 +47,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Row(arg
   let onPress;
   let selected;
   const obj = react2;
-  const cResult = obj.c(23);
+  const cResult = obj.c(22);
   ({ icon, label, onPress, selected, disabled } = arg0);
   const tmp5 = closure_7();
   if (cResult[0] === (undefined !== disabled && disabled)) {
@@ -79,73 +69,76 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Row(arg
     } else {
       tmp9 = cResult[4];
     }
-    if (cResult[5] === tmp5.rowLabel) {
-      let tmp13;
-      if (cResult[6] === (selected && tmp5.rowLabelSelected)) {
-        tmp13 = cResult[7];
-      }
-      if (cResult[8] === label) {
-        let tmp14;
-        if (cResult[9] === tmp13) {
-          tmp14 = cResult[10];
-        }
-        if (cResult[11] === selected) {
-          let tmp17;
-          if (cResult[12] === tmp5.rowIndicator) {
-            tmp17 = cResult[13];
+    let str = "text-md/medium";
+    if (selected) {
+      str = "text-md/semibold";
+    }
+    let str2 = "text-subtle";
+    if (selected) {
+      str2 = "mobile-text-heading-primary";
+    }
+    if (cResult[5] === label) {
+      if (cResult[6] === tmp5.rowLabel) {
+        if (cResult[7] === str) {
+          let tmp12;
+          if (cResult[8] === str2) {
+            tmp12 = cResult[9];
           }
-          if (cResult[14] === accessibilityRole) {
-            if (cResult[15] === accessibilityState) {
-              if (cResult[16] === onPress) {
-                if (cResult[17] === tmp5.row) {
-                  if (cResult[18] === (selected || undefined !== disabled && disabled)) {
-                    if (cResult[19] === tmp9) {
-                      if (cResult[20] === tmp14) {
-                        let tmp20;
-                        if (cResult[21] === tmp17) {
-                          tmp20 = cResult[22];
+          if (cResult[10] === selected) {
+            let tmp15;
+            if (cResult[11] === tmp5.rowIndicator) {
+              tmp15 = cResult[12];
+            }
+            if (cResult[13] === accessibilityRole) {
+              if (cResult[14] === accessibilityState) {
+                if (cResult[15] === onPress) {
+                  if (cResult[16] === tmp5.row) {
+                    if (cResult[17] === (selected || undefined !== disabled && disabled)) {
+                      if (cResult[18] === tmp9) {
+                        if (cResult[19] === tmp12) {
+                          let tmp18;
+                          if (cResult[20] === tmp15) {
+                            tmp18 = cResult[21];
+                          }
+                          return tmp18;
                         }
-                        return tmp20;
                       }
                     }
                   }
                 }
               }
             }
+            const obj3 = { style: tmp5.row, accessibilityRole, accessibilityState, disabled: selected || undefined !== disabled && disabled, onPress, children: items };
+            items = [tmp9, tmp12, tmp15];
+            const tmp21 = metroRequire(TouchableHitBoxDefault, obj3);
+            cResult[13] = accessibilityRole;
+            cResult[14] = accessibilityState;
+            cResult[15] = onPress;
+            cResult[16] = tmp5.row;
+            cResult[17] = selected || undefined !== disabled && disabled;
+            cResult[18] = tmp9;
+            cResult[19] = tmp12;
+            cResult[20] = tmp15;
+            cResult[21] = tmp21;
+            tmp18 = tmp21;
           }
-          const obj3 = { style: tmp5.row, accessibilityRole, accessibilityState, disabled: selected || undefined !== disabled && disabled, onPress, children: items };
-          items = [tmp9, tmp14, tmp17];
-          const tmp23 = metroRequire(TouchableHitBoxDefault, obj3);
-          cResult[14] = accessibilityRole;
-          cResult[15] = accessibilityState;
-          cResult[16] = onPress;
-          cResult[17] = tmp5.row;
-          cResult[18] = selected || undefined !== disabled && disabled;
-          cResult[19] = tmp9;
-          cResult[20] = tmp14;
-          cResult[21] = tmp17;
-          cResult[22] = tmp23;
-          tmp20 = tmp23;
+          const obj4 = { style: tmp5.rowIndicator, active: selected };
+          const tmp17 = hasOwnProperty(native.RadioIndicator, obj4);
+          cResult[10] = selected;
+          cResult[11] = tmp5.rowIndicator;
+          cResult[12] = tmp17;
+          tmp15 = tmp17;
         }
-        const obj4 = { style: tmp5.rowIndicator, active: selected };
-        const tmp19 = hasOwnProperty(native.RadioIndicator, obj4);
-        cResult[11] = selected;
-        cResult[12] = tmp5.rowIndicator;
-        cResult[13] = tmp19;
-        tmp17 = tmp19;
       }
-      const obj5 = { style: tmp13, numberOfLines: 1, ellipsizeMode: "tail", children: label };
-      const tmp16 = hasOwnProperty(native.LegacyText, obj5);
-      cResult[8] = label;
-      cResult[9] = tmp13;
-      cResult[10] = tmp16;
-      tmp14 = tmp16;
     }
-    const items1 = [tmp5.rowLabel, selected && tmp5.rowLabelSelected];
-    cResult[5] = tmp5.rowLabel;
-    cResult[6] = selected && tmp5.rowLabelSelected;
-    cResult[7] = items1;
-    tmp13 = items1;
+    const obj5 = { style: tmp5.rowLabel, variant: str, color: str2, lineClamp: 1, children: label };
+    const tmp14 = hasOwnProperty(Text_Text.Text, obj5);
+    cResult[5] = label;
+    cResult[6] = tmp5.rowLabel;
+    cResult[7] = str;
+    cResult[8] = str2;
+    cResult[9] = tmp14;
+    tmp12 = tmp14;
   }
   const obj6 = { selected, disabled: undefined !== disabled && disabled };
   cResult[0] = undefined !== disabled && disabled;
@@ -161,6 +154,8 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Row(arg
   let label;
   let onPress;
   let selected;
+  let str;
+  let str2;
   let tmp7;
   ({ selected, disabled } = arg0);
   ({ icon, label, onPress } = arg0);
@@ -181,23 +176,25 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Row(arg
   const obj3 = { size: native.Icon.Sizes.MEDIUM, source: icon };
   const Icon = tmp2(1202).Icon;
   items = [hasOwnProperty(Icon, obj3), , ];
-  const items1 = [tmp.rowLabel, ];
-  let rowLabelSelected = selected;
-  const LegacyText = tmp2(1202).LegacyText;
+  const obj4 = { style: tmp.rowLabel, variant: str, color: str2, lineClamp: 1, children: label };
+  str = "text-md/medium";
+  const Text = tmp2(5234).Text;
   if (selected) {
-    rowLabelSelected = tmp.rowLabelSelected;
+    str = "text-md/semibold";
   }
-  items1[1] = rowLabelSelected;
-  items[1] = hasOwnProperty(LegacyText, { style: items1, numberOfLines: 1, ellipsizeMode: "tail", children: label });
-  const obj4 = { style: tmp.rowIndicator, active: selected };
-  items[2] = hasOwnProperty(native.RadioIndicator, obj4);
+  str2 = "text-subtle";
+  if (selected) {
+    str2 = "mobile-text-heading-primary";
+  }
+  items[1] = hasOwnProperty(Text, obj4);
+  const obj5 = { style: tmp.rowIndicator, active: selected };
+  items[2] = hasOwnProperty(native.RadioIndicator, obj5);
   return tmp5(tmp6, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function AllChannelsSwitch(arg0) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AllChannelsSwitch(arg0) {
   let channelAccessFormat;
   let disabled;
-  let items;
   let setChannelAccessFormat;
   let style;
   const obj = setChannelAccessFormat(576);
@@ -206,20 +203,12 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function AllChannelsS
   ({ style, disabled } = arg0);
   const tmp5 = closure_7();
   if (cResult[0] === style) {
-    let tmp6;
-    let tmp7;
     let tmp9;
     let tmp12;
-    if (cResult[1] === tmp5.container) {
-      tmp6 = cResult[2];
-    }
     if (cResult[3] !== (undefined !== disabled && disabled)) {
       const obj2 = { disabled: undefined !== disabled && disabled };
       cResult[3] = undefined !== disabled && disabled;
       cResult[4] = obj2;
-      tmp7 = obj2;
-    } else {
-      tmp7 = cResult[4];
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
@@ -233,7 +222,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function AllChannelsS
     const SOME_CHANNELS_ACCESS = AllChannelAccessOptions.SOME_CHANNELS_ACCESS;
     const tmp11 = AllChannelAccessOptions;
     if (cResult[6] !== setChannelAccessFormat) {
-      const fn = function h() {
+      const fn = function v() {
         return setChannelAccessFormat(AllChannelAccessOptions.SOME_CHANNELS_ACCESS);
       };
       cResult[6] = setChannelAccessFormat;
@@ -244,21 +233,12 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function AllChannelsS
     }
     if (cResult[8] === (undefined !== disabled && disabled)) {
       if (cResult[9] === channelAccessFormat === SOME_CHANNELS_ACCESS) {
-        let tmp14;
-        let tmp19;
         let tmp23;
-        let tmp25;
-        if (cResult[10] === tmp12) {
-          tmp14 = cResult[11];
-        }
         if (cResult[12] !== tmp5.separator) {
           const obj3 = { style: tmp5.separator };
-          const tmp22 = closure_5(View, obj3);
           cResult[12] = tmp5.separator;
-          cResult[13] = tmp22;
-          tmp19 = tmp22;
-        } else {
-          tmp19 = cResult[13];
+          cResult[13] = closure_5(View, obj3);
+          const tmp22 = closure_5(View, obj3);
         }
         const _Symbol2 = Symbol;
         if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
@@ -271,68 +251,46 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function AllChannelsS
         }
         const ALL_CHANNELS_ACCESS = tmp11.ALL_CHANNELS_ACCESS;
         if (cResult[15] !== setChannelAccessFormat) {
-          const fn2 = function f() {
-            return setChannelAccessFormat(AllChannelAccessOptions.ALL_CHANNELS_ACCESS);
-          };
+          class I {
+            constructor() {
+              return setChannelAccessFormat(AllChannelAccessOptions.ALL_CHANNELS_ACCESS);
+            }
+          }
           cResult[15] = setChannelAccessFormat;
-          cResult[16] = fn2;
-          tmp25 = fn2;
+          cResult[16] = I;
         } else {
-          tmp25 = cResult[16];
-        }
-        if (cResult[17] === (undefined !== disabled && disabled)) {
-          if (cResult[18] === channelAccessFormat === ALL_CHANNELS_ACCESS) {
-            let tmp27;
-            if (cResult[19] === tmp25) {
-              tmp27 = cResult[20];
+          class I {
+            constructor() {
+              return setChannelAccessFormat(AllChannelAccessOptions.ALL_CHANNELS_ACCESS);
             }
-            if (cResult[21] === tmp27) {
-              if (cResult[22] === tmp6) {
-                if (cResult[23] === tmp7) {
-                  if (cResult[24] === tmp14) {
-                    let tmp32;
-                    if (cResult[25] === tmp19) {
-                      tmp32 = cResult[26];
-                    }
-                    return tmp32;
-                  }
-                }
-              }
-            }
-            const obj4 = { style: tmp6, accessibilityRole: "radiogroup", accessibilityState: tmp7, children: items };
-            items = [tmp14, tmp19, tmp27];
-            const tmp35 = closure_6(View, obj4);
-            cResult[21] = tmp27;
-            cResult[22] = tmp6;
-            cResult[23] = tmp7;
-            cResult[24] = tmp14;
-            cResult[25] = tmp19;
-            cResult[26] = tmp35;
-            tmp32 = tmp35;
           }
         }
-        const obj5 = { icon: AssetRegistryDefault2, label: tmp23, selected: channelAccessFormat === ALL_CHANNELS_ACCESS, onPress: tmp25, disabled: undefined !== disabled && disabled };
-        const tmp31 = closure_5(closure_8, obj5);
+        if (cResult[17] === (undefined !== disabled && disabled)) {
+          class I {
+            constructor() {
+              return setChannelAccessFormat(AllChannelAccessOptions.ALL_CHANNELS_ACCESS);
+            }
+          }
+        }
+        const obj4 = { icon: AssetRegistryDefault2, label: tmp23, selected: channelAccessFormat === ALL_CHANNELS_ACCESS, onPress: tmp25, disabled: undefined !== disabled && disabled };
         cResult[17] = undefined !== disabled && disabled;
         cResult[18] = channelAccessFormat === ALL_CHANNELS_ACCESS;
         cResult[19] = tmp25;
-        cResult[20] = tmp31;
-        tmp27 = tmp31;
+        cResult[20] = closure_5(closure_8, obj4);
+        const tmp31 = closure_5(closure_8, obj4);
       }
     }
-    const obj6 = { icon: AssetRegistryDefault, label: tmp9, selected: channelAccessFormat === SOME_CHANNELS_ACCESS, onPress: tmp12, disabled: undefined !== disabled && disabled };
-    const tmp18 = closure_5(closure_8, obj6);
+    const obj5 = { icon: AssetRegistryDefault, label: tmp9, selected: channelAccessFormat === SOME_CHANNELS_ACCESS, onPress: tmp12, disabled: undefined !== disabled && disabled };
     cResult[8] = undefined !== disabled && disabled;
     cResult[9] = channelAccessFormat === SOME_CHANNELS_ACCESS;
     cResult[10] = tmp12;
-    cResult[11] = tmp18;
-    tmp14 = tmp18;
+    cResult[11] = closure_5(closure_8, obj5);
+    const tmp18 = closure_5(closure_8, obj5);
   }
-  const items1 = [tmp5.container, style];
+  const items = [tmp5.container, style];
   cResult[0] = style;
   cResult[1] = tmp5.container;
-  cResult[2] = items1;
-  tmp6 = items1;
+  cResult[2] = items;
 }) : (function AllChannelsSwitch(style) {
   let channelAccessFormat;
   let disabled;
@@ -376,4 +334,4 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function AllChannelsS
 });
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/AllChannelsSwitch.tsx");
 
-export default tmp9;
+export default tmp5;

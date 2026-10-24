@@ -1,18 +1,18 @@
-// Module ID: 16371
-// Function ID: 16372
+// Module ID: 16395
+// Function ID: 16396
 // Name: OrbsArcadeActionCreators
-// Dependencies: [5, 502, 16366, 1087, 1104, 569, 584, 1297, 16367, 6373, 16372, 2]
-// Exports: claimOrbsArcadeRewards, fetchOrbsArcadeGamesIfStale, resetOrbsArcadeGame
+// Dependencies: [5, 502, 16390, 1087, 1104, 569, 584, 1297, 16391, 6375, 16396, 2]
+// Exports: claimOrbsArcadeRewards, ensureOrbsArcadeEnrollment, fetchOrbsArcadeGamesIfStale, resetOrbsArcadeGame
 
-// Module 16371 (OrbsArcadeActionCreators)
+// Module 16395 (OrbsArcadeActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16372 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16396 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16366 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16390 */;
 import Backoff from "Backoff" /* 569 */;
 import size from "module_2" /* 2 */;
 
@@ -212,6 +212,87 @@ obj = function _resetOrbsArcadeGame() {
   });
   return obj(...arguments);
 };
+obj = function _ensureOrbsArcadeEnrollment() {
+  obj = _asyncToGenerator(async (arg0) => {
+    const user = arg0;
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    return (async function(arg0, value) {
+      let obj4;
+      if (c6 === 2) {
+        c6 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          let body;
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              closure_2 = tmp;
+              closure_1 = tmp4;
+              body = undefined;
+              c4 = 1;
+              const HTTP = HTTPUtils.HTTP;
+              const request = { url: Endpoints.ORBS_ARCADE_GAME_ENROLLMENT(user.id), body: obj4, rejectWithError: false };
+              const put = HTTP.put;
+              c5 = 2;
+              c6 = 1;
+              obj4 = { game_version_id: user.versionId };
+              const obj5 = { value: put(request), done: false };
+              return obj5;
+            }
+          } else if (1 === c5) {
+            c4 = 0;
+            closure_2 = closure_3;
+            const self = this;
+            const self2 = this;
+            const tmp20 = new closure_130_1(closure_130_2[9])(closure_2);
+            throw tmp20;
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 0;
+            c6 = 3;
+            return { value, done: true };
+          } else {
+            body = value.body;
+            c4 = 0;
+            const obj7 = { type: "ORBS_ARCADE_GAME_STATE_UPDATE", game_id: user.id, game_state: body };
+            obj = closure_130_1(closure_130_2[6]);
+            obj.dispatch(obj7);
+            c6 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp22) {
+          closure_3 = tmp22;
+          if (0 === c4) {
+            c6 = 3;
+            throw tmp22;
+          } else {
+            c5 = 1;
+          }
+        }
+      }
+    })();
+  });
+  return obj(...arguments);
+};
 function postOrbsArcadeClaimRewards() {
   return obj(...arguments);
 }
@@ -352,7 +433,7 @@ obj = function _postOrbsArcadeClaimRewardsWithRetry() {
               c6 = 2;
               c7 = 5;
               c8 = 1;
-              const obj7 = { value: closure_132_15(closure_0), done: false };
+              const obj7 = { value: closure_132_16(closure_0), done: false };
               return obj7;
             }
           } else if (3 === c7) {
@@ -447,7 +528,7 @@ obj = function _claimOrbsArcadeRewards() {
     let c4 = 0;
     return (async function(arg0, value) {
       function postOrbsArcadeClaimRewardsWithRetry() {
-        return closure_1_17(...arguments);
+        return closure_1_18(...arguments);
       }
       if (c6 === 2) {
         c6 = 3;
@@ -581,6 +662,9 @@ export const fetchOrbsArcadeGamesIfStale = function fetchOrbsArcadeGamesIfStale(
   }
 };
 export const resetOrbsArcadeGame = function resetOrbsArcadeGame() {
+  return obj(...arguments);
+};
+export const ensureOrbsArcadeEnrollment = function ensureOrbsArcadeEnrollment() {
   return obj(...arguments);
 };
 export const claimOrbsArcadeRewards = function claimOrbsArcadeRewards() {

@@ -1,15 +1,15 @@
-// Module ID: 19000
-// Function ID: 19001
+// Module ID: 19028
+// Function ID: 19029
 // Name: TimeoutDurationActionSheet
-// Dependencies: [19, 12769, 4883, 21, 558, 576, 18979, 5208, 7296, 7246, 5232, 1128, 6983, 6982, 2]
+// Dependencies: [19, 12806, 4885, 21, 558, 576, 19007, 5210, 7298, 7248, 5234, 1128, 6985, 6984, 2]
 
-// Module 19000 (TimeoutDurationActionSheet)
+// Module 19028 (TimeoutDurationActionSheet)
 import intl3 from "intl" /* 1128 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4883 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
-import TableRadioRow2 from "TableRadioRow" /* 6982 */;
-import Constants from "Constants" /* 12769 */;
-import getActionInfo from "getActionInfo" /* 18979 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4885 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import TableRadioRow2 from "TableRadioRow" /* 6984 */;
+import Constants from "Constants" /* 12806 */;
+import getActionInfo from "getActionInfo" /* 19007 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -146,7 +146,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TimeoutDurat
       if (cResult[19] === onSelectDuration) {
         tmp21 = cResult[20];
       }
-      const ActionSheet = tmp(7296).ActionSheet;
+      const ActionSheet = tmp(7298).ActionSheet;
       let str;
       if (tmp4 != null) {
         str = tmp4.headerText;
@@ -156,7 +156,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TimeoutDurat
       }
       if (cResult[21] !== str) {
         const obj4 = { title: str };
-        const tmp24 = closure_5(onSelectDuration(7246).BottomSheetTitleHeader, obj4);
+        const tmp24 = closure_5(onSelectDuration(7248).BottomSheetTitleHeader, obj4);
         cResult[21] = str;
         cResult[22] = tmp24;
         tmp22 = tmp24;
@@ -166,7 +166,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TimeoutDurat
       const _Symbol = Symbol;
       if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
         const obj5 = { variant: "text-md/normal", children: intl.string(onSelectDuration(1128).t.DWGBAh) };
-        const Text = tmp(5232).Text;
+        const Text = tmp(5234).Text;
         intl = tmp(1128).intl;
         const tmp28 = closure_5(Text, obj5);
         cResult[23] = tmp28;
@@ -174,7 +174,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TimeoutDurat
       } else {
         tmp26 = cResult[23];
       }
-      const TableRadioGroup = tmp(6983).TableRadioGroup;
+      const TableRadioGroup = tmp(6985).TableRadioGroup;
       let headerText1;
       if (tmp4 != null) {
         headerText1 = tmp4.headerText;
@@ -188,7 +188,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TimeoutDurat
       const _Symbol2 = Symbol;
       if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
         const obj6 = { value, label: intl2.string(onSelectDuration(1128).t.PoWNfe) };
-        let TableRadioRow = tmp(6982).TableRadioRow;
+        let TableRadioRow = tmp(6984).TableRadioRow;
         intl2 = tmp(1128).intl;
         const tmp34 = closure_5(TableRadioRow, obj6);
         cResult[24] = tmp34;
@@ -289,7 +289,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TimeoutDurat
     cResult[20] = handleChange;
     tmp21 = handleChange;
   }
-  const tmpResult = onSelectDuration(18979);
+  const tmpResult = onSelectDuration(19007);
   const actionInfo = tmpResult.getActionInfo(AutomodActionType.USER_COMMUNICATION_DISABLED, action, triggerType);
   cResult[0] = action;
   cResult[1] = triggerType;
@@ -311,9 +311,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TimeoutDurat
   if (action != null) {
     durationSeconds = action.metadata.durationSeconds;
   }
-  const ActionSheet = tmp(7296).ActionSheet;
+  const ActionSheet = tmp(7298).ActionSheet;
   let str;
-  const BottomSheetTitleHeader = tmp(7246).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = tmp(7248).BottomSheetTitleHeader;
   if (actionInfo != null) {
     str = actionInfo.headerText;
   }
@@ -322,11 +322,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TimeoutDurat
   }
   const obj2 = { startExpanded: true, header: closure_5(BottomSheetTitleHeader, { title: str }), children: items };
   const obj3 = { variant: "text-md/normal", children: intl.string(intl3.t.DWGBAh) };
-  const Text = tmp(5232).Text;
+  const Text = tmp(5234).Text;
   intl = tmp(1128).intl;
   items = [tmp6(Text, obj3), ];
   let headerText;
-  const TableRadioGroup = tmp(6983).TableRadioGroup;
+  const TableRadioGroup = tmp(6985).TableRadioGroup;
   if (actionInfo != null) {
     headerText = actionInfo.headerText;
   }
@@ -353,7 +353,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TimeoutDurat
     StringResult = value;
   }
   const obj5 = { value, label: intl2.string(intl3.t.PoWNfe) };
-  let TableRadioRow = tmp(6982).TableRadioRow;
+  let TableRadioRow = tmp(6984).TableRadioRow;
   intl2 = tmp(1128).intl;
   items1 = [
     tmp6(TableRadioRow, obj5),

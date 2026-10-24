@@ -1,44 +1,15 @@
 // Module ID: 15599
 // Function ID: 15600
-// Dependencies: []
+// Dependencies: [15547, 15566, 15556]
 
 // Module 15599
-const obj = {
-  isASCIIDigit(decodeResult) {
-    return decodeResult >= 48 && decodeResult <= 57;
-  },
-  isASCIIAlpha(input) {
-    let tmp = input >= 65 && input <= 90;
-    if (!tmp) {
-      tmp = input >= 97 && input <= 122;
-      const tmp2 = input >= 97 && input <= 122;
-    }
-    return tmp;
-  },
-  isASCIIAlphanumeric(arg0) {
-    let tmp = arg0 >= 65 && arg0 <= 90;
-    if (!tmp) {
-      tmp = arg0 >= 97 && arg0 <= 122;
-      const tmp2 = arg0 >= 97 && arg0 <= 122;
-    }
-    if (!tmp) {
-      tmp = arg0 >= 48 && arg0 <= 57;
-      const tmp3 = arg0 >= 48 && arg0 <= 57;
-    }
-    return tmp;
-  },
-  isASCIIHex(decodeResult) {
-    let tmp = decodeResult >= 48 && decodeResult <= 57;
-    if (!tmp) {
-      tmp = decodeResult >= 65 && decodeResult <= 70;
-      const tmp2 = decodeResult >= 65 && decodeResult <= 70;
-    }
-    if (!tmp) {
-      tmp = decodeResult >= 97 && decodeResult <= 102;
-      const tmp3 = decodeResult >= 97 && decodeResult <= 102;
-    }
-    return tmp;
-  }
-};
+import _mod15547 from "module_15547" /* 15547 */;
+import _mod15556 from "module_15556" /* 15556 */;
+import module_15566 from "module_15566" /* 15566 */;
 
-export default obj;
+let closure_0 = _mod15547(Function.toString);
+if (!module_15566(_mod15556.inspectSource)) {
+  _mod15556.inspectSource = (arg0) => closure_0(arg0);
+}
+
+export default _mod15556.inspectSource;

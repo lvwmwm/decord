@@ -1,14 +1,14 @@
-// Module ID: 15274
-// Function ID: 15275
+// Module ID: 15294
+// Function ID: 15295
 // Name: clipPOVOverlap
-// Dependencies: [8146, 1087, 1405, 15275, 2]
+// Dependencies: [8148, 1087, 1405, 15295, 2]
 // Exports: getClipAttachmentPOVWindow, getClipPOVOverlapMilliseconds, getClipPOVWindow
 
-// Module 15274 (clipPOVOverlap)
+// Module 15294 (clipPOVOverlap)
 import Constants from "Constants" /* 1087 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
-import ClipsConstants from "ClipsConstants" /* 8146 */;
-import getPOVExportTargetDefault from "getPOVExportTarget" /* 15275 */;
+import ClipsConstants from "ClipsConstants" /* 8148 */;
+import getPOVExportTargetDefault from "getPOVExportTarget" /* 15295 */;
 import size from "module_2" /* 2 */;
 
 const ClipType = ClipsConstants.ClipType;

@@ -1,9 +1,9 @@
-// Module ID: 7398
-// Function ID: 7399
+// Module ID: 7400
+// Function ID: 7401
 // Name: ForumChannelTypes
 // Dependencies: [2]
 
-// Module 7398 (ForumChannelTypes)
+// Module 7400 (ForumChannelTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/forums/ForumChannelTypes.tsx");

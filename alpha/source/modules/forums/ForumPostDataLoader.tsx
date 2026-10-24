@@ -1,18 +1,18 @@
-// Module ID: 7399
-// Function ID: 7400
+// Module ID: 7401
+// Function ID: 7402
 // Name: ForumPostDataLoader
-// Dependencies: [5, 4821, 7400, 7382, 7403, 1087, 12, 11, 558, 576, 504, 1297, 584, 2]
+// Dependencies: [5, 4823, 7402, 7384, 7405, 1087, 12, 11, 558, 576, 504, 1297, 584, 2]
 // Exports: preloadForumThreads
 
-// Module 7399 (ForumPostDataLoader)
+// Module 7401 (ForumPostDataLoader)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1087 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 7400 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 7402 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7382 */;
-import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 7403 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7384 */;
+import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 7405 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

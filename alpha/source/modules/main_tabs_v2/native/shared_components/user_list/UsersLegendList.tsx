@@ -1,17 +1,17 @@
-// Module ID: 13847
-// Function ID: 13848
+// Module ID: 13866
+// Function ID: 13867
 // Name: UsersLegendList
-// Dependencies: [32, 19, 17, 21, 4969, 5267, 558, 576, 5050, 1499, 7157, 13848, 2]
+// Dependencies: [32, 19, 17, 21, 4971, 5269, 558, 576, 5052, 1499, 7159, 13867, 2]
 
-// Module 13847 (UsersLegendList)
+// Module 13866 (UsersLegendList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5050 */;
-import BottomSheetModal from "BottomSheetModal" /* 5267 */;
-import FastestListItemTypeDefault from "FastestListItemType" /* 7157 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
+import BottomSheetModal from "BottomSheetModal" /* 5269 */;
+import FastestListItemTypeDefault from "FastestListItemType" /* 7159 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 9260
-// Function ID: 9261
+// Module ID: 9261
+// Function ID: 9262
 // Name: RPCServer
-// Dependencies: [5, 6376, 1087, 12, 9261, 9263, 9265, 1267, 38, 9266, 9268, 4816, 1104, 2]
+// Dependencies: [5, 6378, 1087, 12, 9262, 9264, 9266, 1267, 38, 9267, 9269, 4818, 1104, 2]
 
-// Module 9260 (RPCServer)
+// Module 9261 (RPCServer)
 import _modDef12 from "module_12" /* 12 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import Constants2 from "Constants" /* 6376 */;
-import transformUserDefault from "transformUser" /* 9261 */;
-import RPCErrorDefault from "RPCError" /* 9263 */;
-import validateScopeDefault from "validateScope" /* 9265 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 9268 */;
+import Constants2 from "Constants" /* 6378 */;
+import transformUserDefault from "transformUser" /* 9262 */;
+import RPCErrorDefault from "RPCError" /* 9264 */;
+import validateScopeDefault from "validateScope" /* 9266 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 9269 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
@@ -68,7 +68,12 @@ class RPCServer {
       if (null == currentUser) {
         v.close(metroRequire.CLOSE_NORMAL, "User logged out");
       } else {
-        obj.user = transformUserDefault(currentUser);
+        const tmp8 = transformUserDefault(currentUser);
+        const tmp9 = v.transport === TransportTypes.POST_MESSAGE && null == tmp8.avatar;
+        if (tmp9) {
+          delete tmp8["avatar"];
+        }
+        obj.user = tmp8;
       }
     }
     self.dispatch(v, null, metroImportDefault.DISPATCH, constants5.READY, obj);
@@ -82,7 +87,7 @@ class RPCServer {
     this.onDisconnect(abortController, arg1);
   }
   handleRequest(socket, arg1) {
-    const f145930 = function() {
+    const f146306 = function() {
       return closure_0(...arguments);
     };
     let closure_2 = arg1;
@@ -216,8 +221,8 @@ class RPCServer {
         }
       })();
     });
-    const then2 = then(f145930).then;
-    then(f145930);
+    const then2 = then(f146306).then;
+    then(f146306);
     let closure_0 = self((command) => {
       let closure_1;
       let c3 = 0;

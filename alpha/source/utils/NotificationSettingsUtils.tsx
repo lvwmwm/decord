@@ -1,19 +1,19 @@
-// Module ID: 7208
-// Function ID: 7209
+// Module ID: 7210
+// Function ID: 7211
 // Name: NotificationSettingsUtils
-// Dependencies: [7209, 4821, 6008, 6702, 1087, 4914, 6703, 1097, 1405, 5709, 1267, 2]
+// Dependencies: [7211, 4823, 6010, 6704, 1087, 4916, 6705, 1097, 1405, 5711, 1267, 2]
 // Exports: getCurrentChannelSettings, getCurrentGuildSettings, getManyCurrentChannelSettings, getManyCurrentGuildSettings, muteConfigToTimestamp, trackAccountNotificationSettingUpdated, trackChannelNotificationSettingsUpdate, trackGuildNotificationSettingsUpdate
 
-// Module 7208 (NotificationSettingsUtils)
+// Module 7210 (NotificationSettingsUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
-import NotificationConstants from "NotificationConstants" /* 4914 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5709 */;
-import ReadStateConstants from "ReadStateConstants" /* 6703 */;
-import LastMentionTimestampStore from "LastMentionTimestampStore" /* 7209 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
-import MessageStore from "MessageStore" /* 6008 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6702 */;
+import NotificationConstants from "NotificationConstants" /* 4916 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5711 */;
+import ReadStateConstants from "ReadStateConstants" /* 6705 */;
+import LastMentionTimestampStore from "LastMentionTimestampStore" /* 7211 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import MessageStore from "MessageStore" /* 6010 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6704 */;
 import Constants from "Constants" /* 1087 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import size from "module_2" /* 2 */;
@@ -68,13 +68,13 @@ let obj2 = {
     }
     return UnreadsDefault;
   },
-  notifications(message_notifications) {
+  notifications(ONLY_MENTIONS) {
     let NotificationsDefault;
-    if (message_notifications === UserNotificationSettings.ALL_MESSAGES) {
+    if (ONLY_MENTIONS === UserNotificationSettings.ALL_MESSAGES) {
       NotificationsDefault = obj.NotificationsAll;
-    } else if (message_notifications === UserNotificationSettings.ONLY_MENTIONS) {
+    } else if (ONLY_MENTIONS === UserNotificationSettings.ONLY_MENTIONS) {
       NotificationsDefault = obj.NotificationsMentions;
-    } else if (message_notifications === UserNotificationSettings.NO_MESSAGES) {
+    } else if (ONLY_MENTIONS === UserNotificationSettings.NO_MESSAGES) {
       NotificationsDefault = obj.NotificationsNothing;
     } else {
       NotificationsDefault = obj.NotificationsDefault;

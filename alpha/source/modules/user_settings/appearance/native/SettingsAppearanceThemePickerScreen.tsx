@@ -1,33 +1,35 @@
-// Module ID: 16588
-// Function ID: 16589
+// Module ID: 16620
+// Function ID: 16621
 // Name: SettingsAppearanceThemePickerScreen
-// Dependencies: [5, 32, 19, 17, 4993, 1253, 1392, 1208, 1207, 1209, 1210, 4994, 1098, 21, 4969, 587, 1384, 1128, 16589, 13815, 16591, 558, 576, 1499, 573, 5200, 1211, 1256, 4991, 16358, 5597, 4996, 1506, 7251, 7276, 6931, 8899, 5050, 4966, 5142, 5204, 5207, 16357, 15828, 5661, 5035, 9705, 5232, 6878, 6906, 6928, 16359, 16593, 9145, 16599, 16611, 16620, 7219, 10885, 2]
+// Dependencies: [5, 32, 19, 17, 4995, 1253, 1392, 1208, 1207, 1209, 1210, 4996, 1098, 21, 4971, 587, 1384, 1128, 16621, 13835, 16623, 558, 576, 1499, 573, 5202, 1211, 1256, 4993, 16376, 5599, 4998, 1506, 7253, 7278, 6933, 8901, 5052, 4968, 5144, 5206, 5209, 16375, 15851, 15852, 6713, 5663, 5037, 9706, 5234, 6880, 6908, 6930, 16377, 16625, 9146, 16631, 16643, 16652, 7221, 10886, 2]
 
-// Module 16588 (SettingsAppearanceThemePickerScreen)
+// Module 16620 (SettingsAppearanceThemePickerScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
 import intl4 from "intl" /* 1128 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1256 */;
-import themes2 from "themes" /* 4991 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4994 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5050 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 5200 */;
-import timing from "timing" /* 5204 */;
-import timingPresets from "timingPresets" /* 5207 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import ThemeDarkIcon from "ThemeDarkIcon" /* 13815 */;
-import HexagonActionCreators from "HexagonActionCreators" /* 15828 */;
-import HexagonCampaignPreviousPerkValues from "HexagonCampaignPreviousPerkValues" /* 16357 */;
-import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 16358 */;
-import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 16359 */;
-import ThemeLightIcon from "ThemeLightIcon" /* 16589 */;
-import ThemeMidnightIcon from "ThemeMidnightIcon" /* 16591 */;
+import themes2 from "themes" /* 4993 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4996 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 5202 */;
+import timing from "timing" /* 5206 */;
+import timingPresets from "timingPresets" /* 5209 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import QuestTypes from "QuestTypes" /* 6713 */;
+import ThemeDarkIcon from "ThemeDarkIcon" /* 13835 */;
+import HexagonActionCreators from "HexagonActionCreators" /* 15851 */;
+import HexagonCampaignAnalytics from "HexagonCampaignAnalytics" /* 15852 */;
+import HexagonCampaignPreviousPerkValues from "HexagonCampaignPreviousPerkValues" /* 16375 */;
+import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 16376 */;
+import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 16377 */;
+import ThemeLightIcon from "ThemeLightIcon" /* 16621 */;
+import ThemeMidnightIcon from "ThemeMidnightIcon" /* 16623 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4993 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4995 */;
 import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1253 */;
 import UserStore from "UserStore" /* 1392 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1208 */;
@@ -35,7 +37,7 @@ import ThemeStore from "ThemeStore" /* 1207 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1209 */;
 import ThemeConstants from "ThemeConstants" /* 1210 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -52,7 +54,7 @@ let num;
 let obj3;
 let obj4;
 let tmp;
-const HexagonCampaignUtils = tmp(4996);
+const HexagonCampaignUtils = tmp(4998);
 function needsHexagonCampaignEnrollment(themes) {
   const obj = MobileThemesUtils;
   let result = obj.isHexagonCampaignMobileTheme(themes);
@@ -285,7 +287,7 @@ function ThemePicker(defaultIndex) {
     return hexWithOpacity(defaultIndex(isPreview[39]).OverlayColors.LIGHT, defaultIndex(isPreview[39]).OverlayOpacity.LEVEL_1);
   }, []);
   const tmp3Result13 = tmp3(tmp4[37]);
-  class Pe {
+  class Re {
     constructor() {
       let interpolateColorResult;
       let obj4;
@@ -314,11 +316,11 @@ function ThemePicker(defaultIndex) {
     }
   }
   let obj5 = { mobileThemes, isClientThemesSelector: tmp14, currentThemeIndex: themeIndex, themeTypeIndex: activeIndex2, ClientThemeType: tmp3(tmp4[27]).ClientThemeType, withTiming: tmp3(tmp4[40]).withTiming, interpolateColor: tmp3(tmp4[37]).interpolateColor, cardSecondaryStops, cardSecondaryStyles: first1, timingStandard: tmp3(tmp4[41]).timingStandard, bgRaised: memo2 };
-  Pe.__closure = obj5;
-  Pe.__workletHash = 16778869283384;
-  Pe.__initData = __initData3;
+  Re.__closure = obj5;
+  Re.__workletHash = 16778869283384;
+  Re.__initData = __initData3;
   obj6 = { textNormal: stateFromStores1(activeIndex2), textMuted: closure_32(activeIndex2), textBrand: closure_39(activeIndex2), borderFaint: closure_33(activeIndex2), borderStrong: closure_34(activeIndex2), borderNormal: closure_35(activeIndex2), headerPrimary: callback4(activeIndex2), headerSecondary: closure_31(activeIndex2), activityIcon: closure_36(activeIndex2), bgModSubtle: closure_25(activeIndex2), bgModStrong: callback1(activeIndex2), iconHeaderSecondary: closure_37(activeIndex2), iconInteractive: closure_38(activeIndex2), bgBasePrimary: closure_24(activeIndex2), bgSurfaceOverlay: callback2(activeIndex2), bgSurfaceHigh: callback3(activeIndex2), bgRaised: animatedStyle };
-  animatedStyle = tmp3Result13.useAnimatedStyle(Pe);
+  animatedStyle = tmp3Result13.useAnimatedStyle(Re);
   const tmp8Result6 = tmp8(obj2.useState(false), 2);
   first1 = tmp8Result6[0];
   cardSecondaryStops = tmp8Result6[1];
@@ -328,20 +330,47 @@ function ThemePicker(defaultIndex) {
   callback1 = obj2.useCallback((themes) => {
     const obj = MobileThemesUtils;
     const result = obj.isHexagonCampaignMobileTheme(themes);
+    let tmp4 = result;
+    if (tmp4) {
+      let id;
+      const isHexagonCampaignClientThemePreset = HexagonCampaignUtils.isHexagonCampaignClientThemePreset;
+      HexagonCampaignUtils;
+      if (null != mode) {
+        const syncedClientTheme = ThemeStore.getSyncedClientTheme(tmp6);
+        let prop;
+        if (syncedClientTheme != null) {
+          prop = syncedClientTheme.backgroundGradientPresetId;
+        }
+        id = prop;
+      } else {
+        const gradientPreset = ClientThemesBackgroundStore.gradientPreset;
+        if (gradientPreset != null) {
+          id = gradientPreset.id;
+        }
+      }
+      tmp4 = !isHexagonCampaignClientThemePreset(id);
+    }
     if (result) {
-      const tmpResult = HexagonCampaignPreviousPerkValues;
-      const result1 = tmpResult.saveHexagonCampaignPreviousClientTheme();
+      const tmpResult6 = HexagonCampaignPreviousPerkValues;
+      const result1 = tmpResult6.saveHexagonCampaignPreviousClientTheme();
     }
     if (null != mode) {
-      const tmpResult4 = UserSettingsAppearanceThemeUtils;
-      const result2 = tmpResult4.handleSaveSyncedModeTheme(themes, tmp5, analyticsLocations);
+      const tmpResult7 = UserSettingsAppearanceThemeUtils;
+      const result2 = tmpResult7.handleSaveSyncedModeTheme(themes, tmp13, analyticsLocations);
     } else {
-      const tmpResult5 = UserSettingsAppearanceThemeUtils;
-      tmpResult5.handleSaveTheme(themes, analyticsLocations, isSynced);
+      const tmpResult8 = UserSettingsAppearanceThemeUtils;
+      tmpResult8.handleSaveTheme(themes, analyticsLocations, isSynced);
     }
     if (result) {
-      const tmpResult6 = HexagonActionCreators;
-      const result3 = tmpResult6.markHexagonCampaignPerkApplied(HexagonCampaignPerk.CLIENT_THEME);
+      const tmpResult9 = HexagonActionCreators;
+      const result3 = tmpResult9.markHexagonCampaignPerkApplied(HexagonCampaignPerk.CLIENT_THEME);
+    }
+    if (tmp4) {
+      const obj2 = { perks: items, content: QuestTypes.QuestContent.CLIENT_THEME_SETTINGS, contentSurface: HexagonCampaignAnalytics.HexagonCampaignContentSurface.THEME_PICKER };
+      items = [HexagonCampaignPerk.CLIENT_THEME];
+      const trackHexagonCampaignPerkAction = HexagonCampaignAnalytics.trackHexagonCampaignPerkAction;
+      HexagonCampaignAnalytics;
+      const result4 = trackHexagonCampaignPerkAction(obj2);
     }
   }, items1);
   const useCallback = obj2.useCallback;
@@ -418,8 +447,8 @@ function ThemePicker(defaultIndex) {
           const tmp20 = value;
           if (!tmp20) {
             obj6 = { text: intl.string(closure_0(isPreview[17]).t.F8FvUy) };
-            const open = mobileThemes(isPreview[44]).open;
-            const tmp24 = mobileThemes(isPreview[44]);
+            const open = mobileThemes(isPreview[46]).open;
+            const tmp24 = mobileThemes(isPreview[46]);
             intl = closure_0(isPreview[17]).intl;
             open("HEXAGON_CAMPAIGN_ENROLLMENT_ERROR", obj6);
           }
@@ -666,8 +695,8 @@ function ThemePicker(defaultIndex) {
             }
             tmp4 = theme;
           }
-          const obj = { theme: tmp4, children: c17(mobileThemes(isPreview[46]), obj2) };
-          const ThemeContextProvider = defaultIndex(isPreview[45]).ThemeContextProvider;
+          const obj = { theme: tmp4, children: c17(mobileThemes(isPreview[48]), obj2) };
+          const ThemeContextProvider = defaultIndex(isPreview[47]).ThemeContextProvider;
           obj2 = { navigation };
           return c17(ThemeContextProvider, obj);
         } else {
@@ -678,7 +707,7 @@ function ThemePicker(defaultIndex) {
         let stringResult;
         const obj = { animated: true, variant: "redesign/heading-18/bold", style: textNormal.textNormal, children: stringResult };
         stringResult = headerTitle;
-        const Text = defaultIndex(isPreview[47]).Text;
+        const Text = defaultIndex(isPreview[49]).Text;
         const tmp = c17;
         if (headerTitle == null) {
           const intl = tmp2(tmp3[17]).intl;
@@ -698,11 +727,11 @@ function ThemePicker(defaultIndex) {
         let tmp5;
         let tmpResult;
         if (first1) {
-          tmpResult = tmp(tmp2(6878).ActivityIndicator, { size: "small" });
+          tmpResult = tmp(tmp2(6880).ActivityIndicator, { size: "small" });
         } else {
           let obj2 = result;
           const obj = { hitSlop: 8, disabled: result, onPress: callback3, children: tmp5(Text, obj3) };
-          const PressableOpacity = tmp2(6906).PressableOpacity;
+          const PressableOpacity = tmp2(6908).PressableOpacity;
           items = [obj6.textBrand, ];
           Text = Text_Text.Text;
           tmp5 = closure_17;
@@ -719,7 +748,7 @@ function ThemePicker(defaultIndex) {
     }
     setOptions(obj3);
   }, items7);
-  const tmp3Result15 = tmp3(tmp4[50]);
+  const tmp3Result15 = tmp3(tmp4[52]);
   tmp3Result15.useNavigatorBackPressHandler(() => !canGoBack);
   const items8 = [themeIndex];
   let rounded = deviceWidth;
@@ -736,7 +765,7 @@ function ThemePicker(defaultIndex) {
   }
   if ("nitro" === themeSelector) {
     let obj7 = { themes: mobileThemes, currentThemeIndex: themeIndex, isPreview, isSynced, defaultIndex, deviceWidth: rounded, animatedStyles: obj6, hasOnyxNux, onThemeSelected: callback5 };
-    tmp48 = c17(tmp6(tmp4[52]), obj7);
+    tmp48 = c17(tmp6(tmp4[54]), obj7);
     tmp49 = c17;
   } else {
     let tmp44;
@@ -749,13 +778,13 @@ function ThemePicker(defaultIndex) {
     }
     const tmp46 = headerTitle;
     const obj8 = { style: tmp.segmentedControlContainer, onLayout: callback, children: items9 };
-    const obj9 = { theme: tmp44, children: c17(tmp3(tmp4[53]).SegmentedControl, obj10) };
-    let ThemeContextProvider = tmp3(tmp4[45]).ThemeContextProvider;
+    const obj9 = { theme: tmp44, children: c17(tmp3(tmp4[55]).SegmentedControl, obj10) };
+    let ThemeContextProvider = tmp3(tmp4[47]).ThemeContextProvider;
     obj10 = { variant: "experimental_Large", state: segmentedControlState };
     items9 = [c17(ThemeContextProvider, obj9), ];
     const obj11 = { animated: true, variant: "text-xs/medium", style: items10, children: intl.string(tmp3(tmp4[17]).t.d5Gu9A) };
     items10 = [obj6.headerSecondary, tmp.textCentered];
-    let Text = tmp3(tmp4[47]).Text;
+    let Text = tmp3(tmp4[49]).Text;
     intl = tmp3(tmp4[17]).intl;
     items9[1] = c17(Text, obj11);
     tmp48 = activeIndex(headerTitle, obj8);
@@ -781,10 +810,10 @@ function ThemePicker(defaultIndex) {
     }
     tmp5(str);
   }, items11);
-  const memo3 = obj2.useMemo(tmp6(tmp4[54]), []);
+  const memo3 = obj2.useMemo(tmp6(tmp4[56]), []);
   const obj12 = { themes: mobileThemes, themeIndex, animatedStyles: obj6, data: memo3, useGradientBackground: "nitro" === themeSelector, isNitroLocked: result };
   result = tmp14;
-  const tmp6Result = tmp6(tmp4[55]);
+  const tmp6Result = tmp6(tmp4[57]);
   if ("nitro" === themeSelector) {
     result = isPreview;
   }
@@ -804,19 +833,19 @@ function ThemePicker(defaultIndex) {
   let tmp49Result2 = null;
   if ("nitro" === themeSelector) {
     const obj14 = { themes: mobileThemes, themeIndex, isDimmed: true };
-    tmp49Result2 = tmp49(tmp6(tmp4[56]), obj14);
+    tmp49Result2 = tmp49(tmp6(tmp4[58]), obj14);
   }
   items13 = [tmp49Result2, ];
   const items14 = [tmp.container, , ];
   let landscapeContainer = tmp2;
-  const SafeAreaPaddingView = tmp3(tmp4[57]).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp3(tmp4[59]).SafeAreaPaddingView;
   if (tmp2) {
     landscapeContainer = tmp.landscapeContainer;
   }
   const obj15 = { bottom: true, style: items14, children: items15 };
   items14[1] = landscapeContainer;
   items14[2] = { marginTop: headerHeight };
-  items15 = [tmp49(tmp6(tmp4[58]), { animated: true, barStyle: tmp12 }), ];
+  items15 = [tmp49(tmp6(tmp4[60]), { animated: true, barStyle: tmp12 }), ];
   const obj16 = { children: null };
   const tmp58 = activeIndex2;
   if (tmp2) {
@@ -1053,7 +1082,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedThe
     tmp25 = J;
   }
   if (cResult[5] !== tmp18) {
-    class D {
+    class G {
       constructor(type) {
         let tmp3 = type.type !== ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET;
         if (!tmp3) {
@@ -1066,10 +1095,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedThe
       }
     }
     cResult[5] = tmp18;
-    cResult[6] = D;
-    tmp19 = D;
+    cResult[6] = G;
+    tmp19 = G;
   } else {
-    class D {
+    class G {
       constructor(type) {
         let tmp3 = type.type !== ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET;
         if (!tmp3) {

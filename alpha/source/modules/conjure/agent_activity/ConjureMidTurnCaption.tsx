@@ -1,10 +1,10 @@
-// Module ID: 12409
-// Function ID: 12410
+// Module ID: 12435
+// Function ID: 12436
 // Name: ConjureMidTurnCaption
 // Dependencies: [1128, 3830, 2]
 // Exports: midTurnCaption
 
-// Module 12409 (ConjureMidTurnCaption)
+// Module 12435 (ConjureMidTurnCaption)
 import intl5 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import size from "module_2" /* 2 */;

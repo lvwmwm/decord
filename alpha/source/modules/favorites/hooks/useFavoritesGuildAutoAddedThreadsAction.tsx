@@ -1,13 +1,13 @@
-// Module ID: 17530
-// Function ID: 17531
+// Module ID: 17562
+// Function ID: 17563
 // Name: useFavoritesGuildAutoAddedThreadsAction
-// Dependencies: [19, 1392, 4824, 558, 576, 504, 10840, 1128, 3412, 2]
+// Dependencies: [19, 1392, 4826, 558, 576, 504, 10841, 1128, 3412, 2]
 
-// Module 17530 (useFavoritesGuildAutoAddedThreadsAction)
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10840 */;
+// Module 17562 (useFavoritesGuildAutoAddedThreadsAction)
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10841 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import FavoriteStore from "FavoriteStore" /* 4824 */;
+import FavoriteStore from "FavoriteStore" /* 4826 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

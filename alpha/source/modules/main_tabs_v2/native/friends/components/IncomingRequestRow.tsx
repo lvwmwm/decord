@@ -1,20 +1,20 @@
-// Module ID: 18180
-// Function ID: 18181
+// Module ID: 18212
+// Function ID: 18213
 // Name: IncomingRequestRow
-// Dependencies: [109, 19, 4970, 2045, 10615, 1087, 21, 558, 576, 5050, 573, 1128, 5023, 17433, 13511, 17849, 18181, 10626, 2]
+// Dependencies: [109, 19, 4972, 2045, 10616, 1087, 21, 558, 576, 5052, 573, 1128, 5025, 17465, 13548, 17881, 18213, 10627, 2]
 
-// Module 18180 (IncomingRequestRow)
+// Module 18212 (IncomingRequestRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl6 from "intl" /* 1128 */;
-import UserUtilsDefault from "UserUtils" /* 5023 */;
-import UserRowConstants from "UserRowConstants" /* 10615 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13511 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17433 */;
+import UserUtilsDefault from "UserUtils" /* 5025 */;
+import UserRowConstants from "UserRowConstants" /* 10616 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13548 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17465 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4970 */;
+import AccessibilityStore from "AccessibilityStore" /* 4972 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -227,7 +227,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Incomi
                           }
                         }
                       }
-                      const tmp42 = jsx(tmp33(13511), { application: null, textVariant: "text-xs/medium", iconSize: 12 }, stateFromStores1.id);
+                      const tmp42 = jsx(tmp33(13548), { application: null, textVariant: "text-xs/medium", iconSize: 12 }, stateFromStores1.id);
                       cResult[32] = stateFromStores1;
                       cResult[33] = tmp42;
                       tmp40 = tmp42;

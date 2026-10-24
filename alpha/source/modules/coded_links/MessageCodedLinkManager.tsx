@@ -1,17 +1,17 @@
-// Module ID: 18823
-// Function ID: 18824
+// Module ID: 18855
+// Function ID: 18856
 // Name: MessageCodedLinkManager
-// Dependencies: [5, 7565, 4821, 5698, 1098, 5697, 5701, 18824, 8864, 7423, 14522, 18831, 12692, 18834, 12021, 7212, 18837, 2]
+// Dependencies: [5, 7567, 4823, 5700, 1098, 5699, 5703, 18856, 8866, 7425, 11286, 18863, 12729, 18864, 12047, 7214, 18867, 2]
 
-// Module 18823 (MessageCodedLinkManager)
+// Module 18855 (MessageCodedLinkManager)
 import Constants from "Constants" /* 1098 */;
-import findCodedLinksDefault from "findCodedLinks" /* 5697 */;
-import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 18837 */;
+import findCodedLinksDefault from "findCodedLinks" /* 5699 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 18867 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7565 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
-import InviteStore from "InviteStore" /* 5698 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7212 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7567 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import InviteStore from "InviteStore" /* 5700 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1, c2;
@@ -20,7 +20,7 @@ let tmp;
 let tmp2;
 let tmp3;
 function resolveMessageCodedLinks(content) {
-  const f137730 = (item) => {
+  const f138069 = (item) => {
     let code;
     let type;
     ({ type, code } = item);
@@ -253,7 +253,7 @@ function resolveMessageCodedLinks(content) {
     tmp2 = 0 !== arr.length;
   }
   if (tmp2) {
-    let item = arr.forEach(f137730);
+    let item = arr.forEach(f138069);
   }
   const message_snapshots = content.message_snapshots;
   if (message_snapshots != null) {
@@ -264,7 +264,7 @@ function resolveMessageCodedLinks(content) {
         tmp = 0 !== arr.length;
       }
       if (tmp) {
-        const item = arr.forEach(f137730);
+        const item = arr.forEach(f138069);
       }
     });
   }

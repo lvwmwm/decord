@@ -1,16 +1,16 @@
-// Module ID: 19032
-// Function ID: 19033
+// Module ID: 19060
+// Function ID: 19061
 // Name: EmojiOverflowActionSheet
-// Dependencies: [5, 19, 17, 21, 4969, 558, 576, 1417, 5667, 5232, 5687, 1128, 6901, 9942, 10119, 6372, 5660, 6929, 6985, 7296, 2]
+// Dependencies: [5, 19, 17, 21, 4971, 558, 576, 1417, 5669, 5234, 5689, 1128, 6903, 9943, 10120, 6374, 5662, 6931, 6987, 7298, 2]
 
-// Module 19032 (EmojiOverflowActionSheet)
+// Module 19060 (EmojiOverflowActionSheet)
 import react_native from "react-native" /* 17 */;
-import FastImageDefault from "FastImage" /* 5667 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9942 */;
+import FastImageDefault from "FastImage" /* 5669 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9943 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -403,7 +403,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiOverflo
   const tmp3 = emoji;
   const tmp4 = dependencyMap;
   let obj = { style: tmp.header, children: items };
-  const ActionSheet = emoji(7296).ActionSheet;
+  const ActionSheet = emoji(7298).ActionSheet;
   let obj2 = { style: tmp.emojiImage, source: obj3 };
   obj3 = { uri: obj4.getEmojiURL(obj5) };
   const tmp6 = FastImageDefault;
@@ -411,12 +411,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiOverflo
   obj5 = { id: emoji.id, animated: emoji.animated, size: 48 };
   items = [closure_6(tmp6, obj2), ];
   let obj6 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: ":" + emoji.name + ":" };
-  const Text = emoji(5232).Text;
+  const Text = emoji(5234).Text;
   items[1] = closure_6(Text, obj6);
   const items1 = [closure_7(View, obj), ];
-  const TableRowGroup = emoji(6985).TableRowGroup;
+  const TableRowGroup = emoji(6987).TableRowGroup;
   let obj7 = {
-    icon: closure_6(emoji(5687).TrashIcon, { color: "text-feedback-critical" }),
+    icon: closure_6(emoji(5689).TrashIcon, { color: "text-feedback-critical" }),
     label: closure_6(Text2, obj8),
     onPress() {
       const obj = EmojiActionCreators;
@@ -424,28 +424,28 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiOverflo
       onClose();
     }
   };
-  const TableRow = emoji(6901).TableRow;
+  const TableRow = emoji(6903).TableRow;
   obj8 = { variant: "text-md/semibold", color: "text-feedback-critical", children: intl.string(emoji(1128).t.oyYWHE) };
-  Text2 = emoji(5232).Text;
+  Text2 = emoji(5234).Text;
   intl = emoji(1128).intl;
   const items2 = [closure_6(TableRow, obj7), , , ];
   const obj9 = {
-    icon: closure_6(emoji(10119).PencilIcon, {}),
+    icon: closure_6(emoji(10120).PencilIcon, {}),
     label: closure_6(Text3, obj10),
     onPress() {
       dependencyMap();
       onClose();
     }
   };
-  const TableRow2 = emoji(6901).TableRow;
+  const TableRow2 = emoji(6903).TableRow;
   obj10 = { variant: "text-md/semibold", children: intl2.string(emoji(1128).t.bt75uw) };
-  Text3 = emoji(5232).Text;
+  Text3 = emoji(5234).Text;
   intl2 = emoji(1128).intl;
   items2[1] = closure_6(TableRow2, obj9);
   let tmp5Result = null;
   if (null != onSelectRolesForEmoji) {
     const obj11 = {
-      icon: closure_6(tmp3(10119).PencilIcon, {}),
+      icon: closure_6(tmp3(10120).PencilIcon, {}),
       label: closure_6(Text4, obj12),
       onPress: onClose(function*(arg0, value) {
           let obj2;
@@ -545,19 +545,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiOverflo
           }
         })
     };
-    const TableRow3 = tmp3(6901).TableRow;
+    const TableRow3 = tmp3(6903).TableRow;
     obj12 = { variant: "text-md/semibold", children: intl3.string(tmp3(1128).t["+riKdA"]) };
-    Text4 = tmp3(5232).Text;
+    Text4 = tmp3(5234).Text;
     intl3 = tmp3(1128).intl;
     tmp5Result = tmp5(TableRow3, obj11);
   }
   const obj13 = { children: items1 };
   const obj14 = { hasIcons: true, children: items2 };
   items2[2] = tmp5Result;
-  const obj15 = { icon: closure_6(tmp3(6929).XSmallIcon, {}), label: closure_6(Text5, obj16), onPress: onClose };
-  const TableRow4 = tmp3(6901).TableRow;
+  const obj15 = { icon: closure_6(tmp3(6931).XSmallIcon, {}), label: closure_6(Text5, obj16), onPress: onClose };
+  const TableRow4 = tmp3(6903).TableRow;
   obj16 = { variant: "text-md/semibold", children: intl4.string(tmp3(1128).t["ETE/oC"]) };
-  Text5 = tmp3(5232).Text;
+  Text5 = tmp3(5234).Text;
   intl4 = tmp3(1128).intl;
   items2[3] = closure_6(TableRow4, obj15);
   items1[1] = closure_7(TableRowGroup, obj14);

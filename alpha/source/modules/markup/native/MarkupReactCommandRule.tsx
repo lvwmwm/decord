@@ -1,20 +1,20 @@
-// Module ID: 11161
-// Function ID: 11162
+// Module ID: 11162
+// Function ID: 11163
 // Name: MarkupReactCommandRule
-// Dependencies: [19, 4821, 1504, 5981, 5982, 21, 5632, 5149, 5208, 1631, 5907, 1128, 1202, 11162, 5660, 7283, 4797, 10411, 7288, 558, 576, 11164, 5157, 11167, 8469, 5232, 2]
+// Dependencies: [19, 4823, 1504, 5983, 5984, 21, 5634, 5151, 5210, 1631, 5909, 1128, 1202, 11163, 5662, 7285, 4799, 10412, 7290, 558, 576, 11165, 5159, 11168, 8471, 5234, 2]
 
-// Module 11161 (MarkupReactCommandRule)
+// Module 11162 (MarkupReactCommandRule)
 import Fragment from "Fragment" /* 21 */;
 import KeyboardTypes from "KeyboardTypes" /* 1631 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5632 */;
-import ToastUtils from "ToastUtils" /* 5660 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5981 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5982 */;
-import ClipboardUtils from "ClipboardUtils" /* 7283 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 11167 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5634 */;
+import ToastUtils from "ToastUtils" /* 5662 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5983 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5984 */;
+import ClipboardUtils from "ClipboardUtils" /* 7285 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 11168 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -177,7 +177,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupReac
   const cResult = obj.c(18);
   node = node.node;
   ({ output, state, style } = node);
-  const tmp4 = null != react.useContext(node(11164).AppLauncherContext);
+  const tmp4 = null != react.useContext(node(11165).AppLauncherContext);
   let closure_1 = tmp4;
   const tmp5 = closure_6();
   dependencyMap = tmp5;
@@ -212,7 +212,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupReac
                   }
                 }
                 const items = ["/", tmp8];
-                const tmp12 = jsxs(tmp(5232).Text, { style, variant: "text-md/bold", onPress: tmp6, onLongPress: tmp7, children: items });
+                const tmp12 = jsxs(tmp(5234).Text, { style, variant: "text-md/bold", onPress: tmp6, onLongPress: tmp7, children: items });
                 cResult[13] = style;
                 cResult[14] = tmp6;
                 cResult[15] = tmp7;
@@ -221,7 +221,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupReac
                 tmp10 = tmp12;
               }
             }
-            const tmpResult = tmp(8469);
+            const tmpResult = tmp(8471);
             const smartOutputResult = tmpResult.smartOutput(node, output, state);
             cResult[9] = node;
             cResult[10] = output;
@@ -304,10 +304,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupReac
   let style;
   node = node.node;
   ({ output, state, style } = node);
-  let closure_1 = null != react.useContext(node(11164).AppLauncherContext);
+  let closure_1 = null != react.useContext(node(11165).AppLauncherContext);
   dependencyMap = closure_6();
-  const Text = node(5232).Text;
-  let obj2 = node(8469);
+  const Text = node(5234).Text;
+  let obj2 = node(8471);
   const items = ["/", obj2.smartOutput(node, output, state)];
   return <Text style={style} variant="text-md/bold" onPress={function onPress() {
     let str;

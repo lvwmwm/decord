@@ -1,17 +1,17 @@
-// Module ID: 13029
-// Function ID: 13030
+// Module ID: 13066
+// Function ID: 13067
 // Name: CustomTypingIndicatorAnnounceActionSheet
-// Dependencies: [19, 17, 1087, 4818, 21, 4969, 587, 558, 576, 7251, 7276, 7488, 5580, 13030, 13031, 13032, 1400, 13033, 13034, 13035, 13036, 13037, 1128, 1202, 3832, 5232, 5242, 7219, 5263, 2]
+// Dependencies: [19, 17, 1087, 4820, 21, 4971, 587, 558, 576, 7253, 7278, 7490, 5582, 13067, 13068, 13069, 1400, 13070, 13071, 13072, 13073, 13074, 1128, 1202, 3832, 5234, 5244, 7221, 5265, 2]
 
-// Module 13029 (CustomTypingIndicatorAnnounceActionSheet)
+// Module 13066 (CustomTypingIndicatorAnnounceActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
-import openUserSettings from "openUserSettings" /* 7488 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
+import openUserSettings from "openUserSettings" /* 7490 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

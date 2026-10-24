@@ -1,23 +1,23 @@
-// Module ID: 14564
-// Function ID: 14565
+// Module ID: 14587
+// Function ID: 14588
 // Name: InAppReportsSettingsUpsellsElement
-// Dependencies: [32, 19, 17, 4821, 1087, 21, 4969, 587, 558, 576, 8110, 5261, 7486, 14558, 504, 8118, 1128, 6985, 7488, 5709, 5232, 2]
+// Dependencies: [32, 19, 17, 4823, 1087, 21, 4971, 587, 558, 576, 8112, 5263, 7488, 14581, 504, 8120, 1128, 6987, 7490, 5711, 5234, 2]
 
-// Module 14564 (InAppReportsSettingsUpsellsElement)
+// Module 14587 (InAppReportsSettingsUpsellsElement)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import useMountEffectDefault from "useMountEffect" /* 5261 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5709 */;
-import SettingsIcon from "SettingsIcon" /* 7486 */;
-import openUserSettings from "openUserSettings" /* 7488 */;
-import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8110 */;
-import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 14558 */;
+import useMountEffectDefault from "useMountEffect" /* 5263 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5711 */;
+import SettingsIcon from "SettingsIcon" /* 7488 */;
+import openUserSettings from "openUserSettings" /* 7490 */;
+import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8112 */;
+import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 14581 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -66,7 +66,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
   } else {
     tmp6 = cResult[1];
   }
-  trackSettingsUpsellsAction(5261)(tmp6);
+  trackSettingsUpsellsAction(5263)(tmp6);
   const tmp7 = trackSettingsUpsellsAction;
   if (cResult[2] === onButtonClick) {
     let tmp9;
@@ -76,7 +76,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp13 = closure_9(tmp(7486).SettingsIcon, {});
+      const tmp13 = closure_9(tmp(7488).SettingsIcon, {});
       cResult[5] = tmp13;
       tmp11 = tmp13;
     } else {
@@ -96,7 +96,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
       }
     }
     const obj2 = { title, disabledTitle, description, disabled: tmp5, onPress: tmp9, icon: tmp11 };
-    const tmp16 = closure_9(tmp7(14558), obj2);
+    const tmp16 = closure_9(tmp7(14581), obj2);
     cResult[6] = description;
     cResult[7] = disabledTitle;
     cResult[8] = tmp5;

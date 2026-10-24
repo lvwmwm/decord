@@ -1,14 +1,14 @@
-// Module ID: 8383
-// Function ID: 8384
+// Module ID: 8385
+// Function ID: 8386
 // Name: GuildAntiRaidUtils
-// Dependencies: [8384, 2049, 8385, 1128, 2]
+// Dependencies: [8386, 2049, 8387, 1128, 2]
 // Exports: getDisabledInterventions, getEnabledInterventions, getIncidentAlertType, getSecurityActionDetailsString, hasDMsDisabled, hasDetectedActivity, hasDetectedDMRaid, hasDetectedRaid, hasInvitesDisabled, initialLockdownDurationHours, isUnderLockdown
 
-// Module 8383 (GuildAntiRaidUtils)
+// Module 8385 (GuildAntiRaidUtils)
 import intl4 from "intl" /* 1128 */;
 import _modDef2049 from "module_2049" /* 2049 */;
-import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 8385 */;
-import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8384 */;
+import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 8387 */;
+import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8386 */;
 import size from "module_2" /* 2 */;
 
 let c3;

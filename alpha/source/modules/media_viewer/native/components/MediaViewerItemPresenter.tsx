@@ -1,12 +1,12 @@
-// Module ID: 14215
-// Function ID: 14216
+// Module ID: 14239
+// Function ID: 14240
 // Name: MediaViewerItemPresenter
-// Dependencies: [19, 17, 21, 14214, 8754, 14213, 5050, 5051, 2]
+// Dependencies: [19, 17, 21, 14238, 8756, 14237, 5052, 5053, 2]
 // Exports: default
 
-// Module 14215 (MediaViewerItemPresenter)
+// Module 14239 (MediaViewerItemPresenter)
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5050 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import size_mod from "module_2" /* 2 */;

@@ -1,29 +1,29 @@
-// Module ID: 11847
-// Function ID: 11848
+// Module ID: 11873
+// Function ID: 11874
 // Name: useConjurePublishAction
-// Dependencies: [5, 19, 2045, 7701, 4821, 4899, 4843, 4901, 6771, 10713, 1087, 6772, 7343, 10730, 11845, 6807, 10741, 10719, 10794, 1128, 3830, 11848, 10784, 584, 8668, 10803, 10800, 2002, 11849, 10717, 10802, 11841, 504, 11851, 2]
+// Dependencies: [5, 19, 2045, 7703, 4823, 4901, 4845, 4903, 6773, 10714, 1087, 6774, 7345, 10731, 11871, 6809, 10742, 10720, 10795, 1128, 3830, 11874, 10785, 584, 8670, 10804, 10801, 2002, 11875, 10718, 10803, 11867, 504, 11877, 2]
 // Exports: default, isConjureLiveNameOutdated, publishGuildId
 
-// Module 11847 (useConjurePublishAction)
+// Module 11873 (useConjurePublishAction)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6772 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6807 */;
-import ConjureUtils from "ConjureUtils" /* 7343 */;
-import UserActionCreators from "UserActionCreators" /* 8668 */;
-import conjureAppInServer from "conjureAppInServer" /* 10730 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 10803 */;
-import conjurePublishAction2 from "conjurePublishAction" /* 11849 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6774 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6809 */;
+import ConjureUtils from "ConjureUtils" /* 7345 */;
+import UserActionCreators from "UserActionCreators" /* 8670 */;
+import conjureAppInServer from "conjureAppInServer" /* 10731 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 10804 */;
+import conjurePublishAction2 from "conjurePublishAction" /* 11875 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
-import UserProfileStore from "UserProfileStore" /* 7701 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
-import GuildChannelStore from "GuildChannelStore" /* 4899 */;
-import GuildStore from "GuildStore" /* 4843 */;
-import PermissionStore from "PermissionStore" /* 4901 */;
-import ConjureProjectStore_mod from "ConjureProjectStore" /* 6771 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10713 */;
+import UserProfileStore from "UserProfileStore" /* 7703 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import GuildChannelStore from "GuildChannelStore" /* 4901 */;
+import GuildStore from "GuildStore" /* 4845 */;
+import PermissionStore from "PermissionStore" /* 4903 */;
+import ConjureProjectStore_mod from "ConjureProjectStore" /* 6773 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10714 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,7 +31,7 @@ let _require, c10, c11, closure_5, intent;
 
 let closure_12;
 let unpackModuleId;
-const f111639 = () => {
+const f111923 = () => {
 
 };
 function readPublishSubject(projectId, arg1) {
@@ -151,32 +151,28 @@ let obj = function _requestConjureInstallConsent() {
             const obj15 = project;
             project = project.getProject(closure_0);
             let prop;
-            const tmp31 = closure_0;
-            const tmp32 = closure_1;
+            const tmp30 = closure_0;
+            const tmp31 = closure_1;
             if (project != null) {
               prop = project.preview_application_id;
             }
             if (null != project) {
               if (null != prop) {
-                const obj9 = require("ConjureInstallTarget");
-                guildId = obj9.conjureInstallGuildId(project, obj15.getIntegrationStatus(tmp31), tmp32);
-                if (null == application.getApplication(prop)) {
-                  const obj11 = require("ApplicationActionCreators");
-                  application = obj11.fetchApplication(prop);
-                  c4 = 1;
-                  c5 = 1;
-                  const obj6 = {
-                    value: application.catch(() => {
+                const obj10 = require("ConjureInstallTarget");
+                guildId = obj10.conjureInstallGuildId(project, obj15.getIntegrationStatus(tmp30), tmp31);
+                const obj11 = require("ApplicationActionCreators");
+                let application = obj11.fetchApplication(prop);
+                c4 = 1;
+                c5 = 1;
+                const obj6 = {
+                  value: application.catch(() => {
 
-                                  }),
-                    done: false
-                  };
-                  return obj6;
-                }
+                              }),
+                  done: false
+                };
+                return obj6;
               }
             }
-            c5 = 3;
-            return { value: "IconComponent", done: null };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {
@@ -186,6 +182,23 @@ let obj = function _requestConjureInstallConsent() {
             c5 = 3;
             const obj7 = { value, done: true };
             return obj7;
+          } else {
+            const self = this;
+            const self2 = this;
+            const promise = new Promise((onClose) => {
+              obj = { applicationId, application, guildId, onClose };
+              const openConjureAppInstallModal = closure_1(applicationId[16]).openConjureAppInstallModal;
+              closure_1(applicationId[16]);
+              application = application.getApplication(applicationId);
+              if (application == null) {
+                application = null;
+              }
+              const result = openConjureAppInstallModal(obj);
+            });
+            c4 = 2;
+            c5 = 1;
+            const obj8 = { value: promise, done: false };
+            return obj8;
           }
         } else if (2 === c4) {
           if (arg0 === 1) {
@@ -193,20 +206,20 @@ let obj = function _requestConjureInstallConsent() {
             throw value;
           } else if (arg0 === 2) {
             c5 = 3;
-            const obj8 = { value, done: true };
-            return obj8;
+            const obj9 = { value, done: true };
+            return obj9;
           } else {
             const obj5 = closure_131_0(closure_131_2[14]);
             let result = obj5.repairConjureGuildHints(project, guildId);
             c4 = 3;
             c5 = 1;
-            const obj10 = {
+            const obj12 = {
               value: result.catch(() => {
 
                       }),
               done: false
             };
-            return obj10;
+            return obj12;
           }
         } else if (3 === c4) {
           if (arg0 === 1) {
@@ -214,20 +227,20 @@ let obj = function _requestConjureInstallConsent() {
             throw value;
           } else if (arg0 === 2) {
             c5 = 3;
-            const obj12 = { value, done: true };
-            return obj12;
+            const obj13 = { value, done: true };
+            return obj13;
           } else {
             const obj2 = closure_131_0(closure_131_2[17]);
             const project1 = obj2.getProject(closure_0);
             c4 = 4;
             c5 = 1;
-            const obj13 = {
+            const obj14 = {
               value: project1.catch(() => {
 
                       }),
               done: false
             };
-            return obj13;
+            return obj14;
           }
         } else if (arg0 === 1) {
           c5 = 3;
@@ -237,25 +250,11 @@ let obj = function _requestConjureInstallConsent() {
           obj = { value, done: true };
           return obj;
         }
-        const self = this;
-        const self2 = this;
-        const promise = new Promise((onClose) => {
-          obj = { applicationId, application, guildId, onClose };
-          const openConjureAppInstallModal = closure_1(applicationId[16]).openConjureAppInstallModal;
-          closure_1(applicationId[16]);
-          application = application.getApplication(applicationId);
-          if (application == null) {
-            application = null;
-          }
-          const result = openConjureAppInstallModal(obj);
-        });
-        c4 = 2;
-        c5 = 1;
-        const obj14 = { value: promise, done: false };
-        return obj14;
-      } catch (tmp27) {
         c5 = 3;
-        throw tmp27;
+        return { value: "IconComponent", done: null };
+      } catch (tmp26) {
+        c5 = 3;
+        throw tmp26;
       }
     }
   });
@@ -442,7 +441,7 @@ obj = function _startPublish() {
                       tmp(closure_1_2[24]);
                       const tmpResult3 = tmp(closure_1_2[13]);
                       const profile = fetchProfile(tmpResult3.conjureProductionBotUserId(closure_3), { withMutualGuilds: true });
-                      profile.catch(f111639);
+                      profile.catch(f111923);
                     }
                     const tmpResult4 = tmp(closure_1_2[22]);
                     result = tmpResult4.refreshPublishedProject(projectId, { isPreview: false });
@@ -473,19 +472,20 @@ obj = function _startPublish() {
                     obj = isUpdate(closure_2[23]);
                     const obj2 = { type: "CONJURE_PROJECT_APP_CHANNEL_PENDING", projectId, pending: false };
                     obj.dispatch(obj2);
-                    const showError = closure_1_4.showError;
-                    const tmp = isUpdate;
+                    const tmp = projectId;
                     if (message instanceof Error) {
                       message = message.message;
                     } else {
-                      const intl = closure_0(tmp2[19]).intl;
-                      message = intl.string(tmp(tmp2[20]).gMWZeG);
+                      const intl = closure_0(tmp3[19]).intl;
+                      message = intl.string(tmp2(tmp3[20]).gMWZeG);
                     }
-                    showError(message);
+                    const tmp2Result = isUpdate(closure_2[23]);
+                    tmp2Result.dispatch({ type: "CONJURE_PROJECT_PUBLISH_FAILED", projectId: tmp, message });
+                    closure_1_4.showError(message);
                   });
                 }
               }
-              let showError = tmp.showError;
+              const showError = tmp.showError;
               let intl = closure_132_0(closure_132_2[19]).intl;
               showError(intl.string(closure_132_1(closure_132_2[20])["TD/ze/"]));
             }
@@ -756,9 +756,10 @@ obj = function _continuePublish() {
     } else {
       let c9;
       try {
-        let _null;
         let integrationInstalled;
+        let closure_6;
         let guildId;
+        let platform;
         c11 = 2;
         if (0 === c10) {
           if (arg0 === 1) {
@@ -770,37 +771,40 @@ obj = function _continuePublish() {
             return obj3;
           } else {
             let closure_7 = tmp;
-            let closure_6 = tmp4;
-            _null = undefined;
             integrationInstalled = undefined;
+            closure_6 = undefined;
             guildId = closure_2.guildId;
-            const platform = closure_2.platform;
-            const tmp68 = readPublishSubject(closure_0, guildId);
-            const tmp66 = closure_2;
-            if (null != tmp68) {
+            platform = closure_2.platform;
+            const tmp79 = readPublishSubject(closure_0, guildId);
+            const tmp77 = closure_2;
+            if (null != tmp79) {
               if (!projectPublishing.isProjectPublishing(closure_0)) {
-                if ("consent_then_publish" !== intent.intent) {
-                  c10 = 1;
-                  c11 = 1;
-                  const obj4 = { value: startPublish(tmp68, intent, tmp66), done: false };
-                  return obj4;
-                } else {
+                if ("consent_then_publish" === intent.intent) {
                   set.add(closure_0);
                   c9 = 1;
                   const requestConsent = platform.requestConsent;
-                  let f159732 = requestConsent;
+                  let f160162 = requestConsent;
                   if (requestConsent == null) {
-                    f159732 = (arg0) => closure_2_18(arg0, closure_1_3);
+                    f160162 = (arg0) => closure_2_18(arg0, closure_1_3);
                   }
                   c10 = 3;
                   c11 = 1;
-                  const obj5 = { value: f159732(closure_0), done: false };
+                  const obj4 = { value: f160162(closure_0), done: false };
+                  return obj4;
+                } else {
+                  c10 = 2;
+                  c11 = 1;
+                  const obj5 = { value: startPublish(tmp79, intent, tmp77), done: false };
                   return obj5;
                 }
               }
             }
           }
         } else if (1 === c10) {
+          c9 = 0;
+          closure_135_24.delete(closure_0);
+          throw closure_8;
+        } else if (2 === c10) {
           if (arg0 === 1) {
             c11 = 3;
             throw value;
@@ -809,85 +813,89 @@ obj = function _continuePublish() {
             const obj6 = { value, done: true };
             return obj6;
           }
-        } else if (2 === c10) {
-          c9 = 0;
-          closure_135_24.delete(closure_0);
-          throw closure_8;
-        } else if (3 === c10) {
-          if (arg0 === 1) {
+        } else {
+          if (3 === c10) {
+            if (arg0 === 1) {
+              c11 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c9 = 0;
+              closure_135_24.delete(closure_0);
+              c11 = 3;
+              const obj7 = { value, done: true };
+              return obj7;
+            } else {
+              c9 = 0;
+              closure_135_24.delete(closure_0);
+              if (closure_135_14.isProjectPublishing(closure_0)) {
+                c11 = 3;
+                return { value: "IconComponent", done: null };
+              } else {
+                integrationInstalled = closure_135_17(closure_0, guildId);
+                let integrationStatus;
+                if (integrationInstalled != null) {
+                  integrationStatus = integrationInstalled.input.integrationStatus;
+                }
+                let c4 = integrationStatus;
+                if (integrationStatus == null) {
+                  c4 = null;
+                }
+                closure_6 = c4;
+                if (null != integrationInstalled) {
+                  const obj8 = { installScope: integrationInstalled.project.install_scope, previewReady: true === preview_ready, integrationInstalled, botPermissionsChanged: true === prop1 };
+                  preview_ready = undefined;
+                  const requiresPermissionReview = closure_135_0(closure_135_2[31]).requiresPermissionReview;
+                  const tmp73 = closure_135_0(closure_135_2[31]);
+                  if (closure_6 != null) {
+                    preview_ready = closure_6.preview_ready;
+                  }
+                  let prop;
+                  if (closure_6 != null) {
+                    prop = closure_6.integration_installed;
+                  }
+                  integrationInstalled = prop;
+                  if (prop == null) {
+                    integrationInstalled = null;
+                  }
+                  prop1 = undefined;
+                  if (closure_6 != null) {
+                    prop1 = closure_6.bot_permissions_changed;
+                  }
+                  if (!requiresPermissionReview(obj8)) {
+                    c10 = 4;
+                    c11 = 1;
+                    const obj9 = { value: closure_135_20(integrationInstalled, intent, closure_2), done: false };
+                    return obj9;
+                  }
+                }
+                if (null != integrationInstalled) {
+                  const showError = platform.showError;
+                  const intl = closure_135_0(closure_135_2[19]).intl;
+                  showError(intl.string(closure_135_1(closure_135_2[20]).zJUQOI));
+                }
+              }
+            }
+          } else if (arg0 === 1) {
             c11 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c9 = 0;
-            closure_135_24.delete(closure_0);
             c11 = 3;
-            const obj7 = { value, done: true };
-            return obj7;
-          } else {
-            c9 = 0;
-            closure_135_24.delete(closure_0);
-            if (closure_135_14.isProjectPublishing(closure_0)) {
-              c11 = 3;
-              return { value: "IconComponent", done: null };
-            } else {
-              _null = closure_135_17(closure_0, guildId);
-              let integrationStatus;
-              if (_null != null) {
-                integrationStatus = _null.input.integrationStatus;
-              }
-              let c4 = integrationStatus;
-              if (integrationStatus == null) {
-                c4 = null;
-              }
-              integrationInstalled = c4;
-              if (null != _null) {
-                const obj8 = { installScope: _null.project.install_scope, previewReady: true === preview_ready, integrationInstalled, botPermissionsChanged: true === prop1 };
-                preview_ready = undefined;
-                const requiresPermissionReview = closure_135_0(closure_135_2[31]).requiresPermissionReview;
-                const tmp62 = closure_135_0(closure_135_2[31]);
-                if (integrationInstalled != null) {
-                  preview_ready = integrationInstalled.preview_ready;
-                }
-                let prop;
-                if (integrationInstalled != null) {
-                  prop = integrationInstalled.integration_installed;
-                }
-                integrationInstalled = prop;
-                if (prop == null) {
-                  integrationInstalled = null;
-                }
-                prop1 = undefined;
-                if (integrationInstalled != null) {
-                  prop1 = integrationInstalled.bot_permissions_changed;
-                }
-                if (!requiresPermissionReview(obj8)) {
-                  c10 = 4;
-                  c11 = 1;
-                  const obj9 = { value: closure_135_20(_null, intent, closure_2), done: false };
-                  return obj9;
-                }
-              }
-              c11 = 3;
-              return { value: "IconComponent", done: null };
-            }
+            obj = { value, done: true };
+            return obj;
           }
-        } else if (arg0 === 1) {
           c11 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c11 = 3;
-          obj = { value, done: true };
-          return obj;
+          const obj10 = { value: tmp5, done: true };
+          return obj10;
         }
         c11 = 3;
         return { value: "IconComponent", done: null };
-      } catch (tmp42) {
-        closure_8 = tmp42;
+      } catch (tmp53) {
+        closure_8 = tmp53;
         if (0 === c9) {
           c11 = 3;
-          throw tmp42;
+          throw tmp53;
         } else {
-          c10 = 2;
+          c10 = 1;
         }
       }
     }
@@ -909,6 +917,7 @@ export default function useConjurePublishAction(arg0, arg1) {
   let approvalUrl;
   let botInGuild;
   let closure_0;
+  let failure;
   let guildId;
   let guildName;
   let installScope;
@@ -919,6 +928,7 @@ export default function useConjurePublishAction(arg0, arg1) {
   let publishing;
   let status;
   let status1;
+  let tmp26;
   let usesAppChannels;
   let viewerCanPublish;
   _require = arg0;
@@ -945,6 +955,7 @@ export default function useConjurePublishAction(arg0, arg1) {
     let flag3;
     let flag4;
     let publishApprovalUrl;
+    let publishFailure;
     let status1;
     let tmp14;
     let tmp2 = null;
@@ -955,7 +966,7 @@ export default function useConjurePublishAction(arg0, arg1) {
       }
     }
     status = undefined;
-    obj = { viewerCanPublish: null != tmp2 && unpackModuleId(tmp2.project), publishOffered: canPublishResult, project, guildId, appChannelId, publishing: tmp14, approvalUrl: publishApprovalUrl, installScope, status: status1, integrationStatus, guildName, appChannelName, appChannelPending: flag2, canManageGuild, canManageChannels, usesAppChannels: flag3, botInGuild, liveNameOutdated: flag4 };
+    obj = { viewerCanPublish: null != tmp2 && unpackModuleId(tmp2.project), publishOffered: canPublishResult, project, guildId, appChannelId, publishing: tmp14, failure: publishFailure, approvalUrl: publishApprovalUrl, installScope, status: status1, integrationStatus, guildName, appChannelName, appChannelPending: flag2, canManageGuild, canManageChannels, usesAppChannels: flag3, botInGuild, liveNameOutdated: flag4 };
     if (tmp2 != null) {
       status = tmp2.input.status;
     }
@@ -997,6 +1008,10 @@ export default function useConjurePublishAction(arg0, arg1) {
         isProjectPublishingResult = true === publishing;
       }
       tmp14 = isProjectPublishingResult;
+    }
+    publishFailure = null;
+    if (null != closure_0) {
+      publishFailure = ConjurePublishStatusStore.getPublishFailure(tmp);
     }
     publishApprovalUrl = null;
     if (null != closure_0) {
@@ -1081,7 +1096,7 @@ export default function useConjurePublishAction(arg0, arg1) {
     }
     return obj;
   }, items1);
-  ({ publishing, project } = stateFromStoresObject);
+  ({ publishing, approvalUrl, project } = stateFromStoresObject);
   guildId = stateFromStoresObject.guildId;
   installScope = stateFromStoresObject.installScope;
   status = stateFromStoresObject.status;
@@ -1095,7 +1110,7 @@ export default function useConjurePublishAction(arg0, arg1) {
   botInGuild = stateFromStoresObject.botInGuild;
   const liveNameOutdated = stateFromStoresObject.liveNameOutdated;
   const items2 = [project, installScope, status, integrationStatus, guildName, appChannelName, appChannelPending, canManageGuild, canManageChannels, usesAppChannels, botInGuild, liveNameOutdated];
-  ({ viewerCanPublish, publishOffered, approvalUrl, appChannelId } = stateFromStoresObject);
+  ({ viewerCanPublish, publishOffered, failure, appChannelId } = stateFromStoresObject);
   memo = obj.useMemo(() => {
     let tmp = null;
     if (null != project) {
@@ -1155,7 +1170,7 @@ export default function useConjurePublishAction(arg0, arg1) {
       UserActionCreators;
       const obj2 = conjureAppInServer;
       const profile = fetchProfile(obj2.conjureProductionBotUserId(tmp), { withMutualGuilds: true });
-      profile.catch(f111639);
+      profile.catch(f111923);
     }
   }, items3);
   let application_id;
@@ -1213,7 +1228,7 @@ export default function useConjurePublishAction(arg0, arg1) {
           const intl = tmp3(tmp4[19]).intl;
           label = intl.string(tmp17(tmp4[20]).qru9M5);
         }
-        const obj3 = { status: status1, guildId, appChannelId, publishing, showsProgress: null != stringResult, label, disabled: publishing, run: tmp21 };
+        const obj3 = { status: status1, guildId, appChannelId, publishing, failure: tmp26, showsProgress: null != stringResult, awaitingApproval: null != approvalUrl, label, disabled: publishing, run: tmp21 };
         const merged = Object.assign(memo1);
         status1 = undefined;
         if (memo != null) {
@@ -1221,6 +1236,10 @@ export default function useConjurePublishAction(arg0, arg1) {
         }
         if (status1 == null) {
           status1 = null;
+        }
+        tmp26 = null;
+        if (!publishing) {
+          tmp26 = failure;
         }
         if (publishing) {
           if (stringResult == null) {

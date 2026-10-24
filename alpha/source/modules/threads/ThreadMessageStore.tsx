@@ -1,21 +1,21 @@
-// Module ID: 7401
-// Function ID: 7402
+// Module ID: 7403
+// Function ID: 7404
 // Name: ThreadMessageStore
-// Dependencies: [4825, 4912, 1406, 4821, 6008, 1127, 1087, 12, 11, 6010, 504, 584, 2]
+// Dependencies: [4827, 4914, 1406, 4823, 6010, 1127, 1087, 12, 11, 6012, 504, 584, 2]
 
-// Module 7401 (ThreadMessageStore)
+// Module 7403 (ThreadMessageStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import ThreadConstants from "ThreadConstants" /* 1127 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6010 */;
-import ChannelRecord from "ChannelRecord" /* 4825 */;
-import MessageRecord from "MessageRecord" /* 4912 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6012 */;
+import ChannelRecord from "ChannelRecord" /* 4827 */;
+import MessageRecord from "MessageRecord" /* 4914 */;
 import UserRecord from "UserRecord" /* 1406 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
-import MessageStore from "MessageStore" /* 6008 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import MessageStore from "MessageStore" /* 6010 */;
 import size from "module_2" /* 2 */;
 
 let closure_13, thread;

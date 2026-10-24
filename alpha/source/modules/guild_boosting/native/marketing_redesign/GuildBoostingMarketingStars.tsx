@@ -1,11 +1,11 @@
-// Module ID: 14863
-// Function ID: 14864
+// Module ID: 14886
+// Function ID: 14887
 // Name: GuildBoostingMarketingStars
-// Dependencies: [19, 21, 558, 576, 7960, 2]
+// Dependencies: [19, 21, 558, 576, 7962, 2]
 
-// Module 14863 (GuildBoostingMarketingStars)
+// Module 14886 (GuildBoostingMarketingStars)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 7960 */;
+import inlineStyles from "inlineStyles" /* 7962 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

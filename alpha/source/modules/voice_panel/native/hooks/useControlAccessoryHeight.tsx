@@ -1,10 +1,10 @@
-// Module ID: 18601
-// Function ID: 18602
+// Module ID: 18633
+// Function ID: 18634
 // Name: useControlAccessoryHeight
-// Dependencies: [19, 558, 576, 10895, 18567, 5050, 18573, 18470, 18571, 2]
+// Dependencies: [19, 558, 576, 10896, 18599, 5052, 18605, 18502, 18603, 2]
 
-// Module 18601 (useControlAccessoryHeight)
-import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 18573 */;
+// Module 18633 (useControlAccessoryHeight)
+import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 18605 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

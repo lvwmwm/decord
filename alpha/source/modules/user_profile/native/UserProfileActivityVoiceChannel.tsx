@@ -1,21 +1,21 @@
-// Module ID: 14281
-// Function ID: 14282
+// Module ID: 14305
+// Function ID: 14306
 // Name: UserProfileActivityVoiceChannel
-// Dependencies: [17, 4839, 4901, 1098, 21, 4969, 1384, 7251, 8677, 5265, 14282, 5602, 504, 8566, 8570, 1128, 6881, 6906, 5661, 7303, 5232, 9017, 7865, 5208, 14283, 2002, 8666, 14284, 1202, 2]
+// Dependencies: [17, 4841, 4903, 1098, 21, 4971, 1384, 7253, 8679, 5267, 14306, 5604, 504, 8568, 8572, 1128, 6883, 6908, 5663, 7305, 5234, 9018, 7867, 5210, 14307, 2002, 8668, 14308, 1202, 2]
 // Exports: default
 
-// Module 14281 (UserProfileActivityVoiceChannel)
+// Module 14305 (UserProfileActivityVoiceChannel)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1098 */;
 import native from "native" /* 1202 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import GuildRecord from "GuildRecord" /* 4839 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5661 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7865 */;
-import PermissionStore from "PermissionStore" /* 4901 */;
+import GuildRecord from "GuildRecord" /* 4841 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7867 */;
+import PermissionStore from "PermissionStore" /* 4903 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import size from "module_2" /* 2 */;
 
@@ -161,7 +161,7 @@ export default function UserProfileActivityVoiceChannel(guild) {
           return tmp(obj);
         }
       };
-      obj.openLazy(asyncRequire(14283, dependencyMap.paths), "UserProfileActivityVoiceChannelUsers", obj2, "stack");
+      obj.openLazy(asyncRequire(14307, dependencyMap.paths), "UserProfileActivityVoiceChannelUsers", obj2, "stack");
     },
     children: tmp13(AvatarPile, obj17)
   };

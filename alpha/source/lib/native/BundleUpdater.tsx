@@ -1,15 +1,15 @@
-// Module ID: 12677
-// Function ID: 12678
+// Module ID: 12713
+// Function ID: 12714
 // Name: BundleUpdater
-// Dependencies: [5, 17, 1087, 3, 1384, 81, 2002, 6482, 1267, 6466, 2]
+// Dependencies: [5, 17, 1087, 3, 1384, 81, 2002, 6484, 1267, 6468, 2]
 
-// Module 12677 (BundleUpdater)
+// Module 12713 (BundleUpdater)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6466 */;
-import merged5 from "merged5" /* 6482 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6468 */;
+import merged5 from "merged5" /* 6484 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;

@@ -1,20 +1,22 @@
 // Module ID: 6410
 // Function ID: 6411
 // Name: trim
-// Dependencies: [1341, 6411, 6397]
+// Dependencies: [1476, 6411, 6399, 6414, 6412, 6418]
 
 // Module 6410 (trim)
-import callBoundIntrinsic from "callBoundIntrinsic" /* 1341 */;
-import RequireObjectCoercible from "RequireObjectCoercible" /* 6397 */;
-import ToString from "ToString" /* 6411 */;
+import RequireObjectCoercible from "RequireObjectCoercible" /* 6399 */;
+import getPolyfill from "getPolyfill" /* 6411 */;
+import trim2 from "trim" /* 6412 */;
+import shimStringTrim from "shimStringTrim" /* 6418 */;
+import callBind from "callBind" /* 1476 */;
+import defineProperties from "defineProperties" /* 6414 */;
 
-let closure_2 = callBoundIntrinsic("String.prototype.replace");
-const obj = /^\s$/;
-const isMatch = obj.test("\u180E");
-let closure_3 = isMatch ? /^[\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF]+/ : /^[\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF]+/;
-let closure_4 = isMatch ? /[\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF]+$/ : /[\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF]+$/;
+let closure_2 = callBind(getPolyfill());
+function trim(arg0) {
+  RequireObjectCoercible(arg0);
+  return closure_2(arg0);
+}
+const obj = { getPolyfill, implementation: trim2, shim: shimStringTrim };
+defineProperties(trim, obj);
 
-export default function trim() {
-  const tmp = ToString;
-  return closure_2(closure_2(tmp(RequireObjectCoercible(this)), closure_3, ""), closure_4, "");
-};
+export default trim;

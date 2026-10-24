@@ -1,14 +1,14 @@
-// Module ID: 13988
-// Function ID: 13989
+// Module ID: 14007
+// Function ID: 14008
 // Name: ConfirmStartCall
-// Dependencies: [19, 21, 558, 576, 1128, 5912, 5912, 5908, 2]
+// Dependencies: [19, 21, 558, 576, 1128, 5914, 5914, 5910, 2]
 // Exports: confirmStartCall
 
-// Module 13988 (ConfirmStartCall)
+// Module 14007 (ConfirmStartCall)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1128 */;
-import useAlertStore from "useAlertStore" /* 5908 */;
-import AlertModal2 from "AlertModal" /* 5912 */;
+import useAlertStore from "useAlertStore" /* 5910 */;
+import AlertModal2 from "AlertModal" /* 5914 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -61,7 +61,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Confirm
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "secondary", text: intl4.string(intl5.t["ETE/oC"]) };
-    const AlertActionButton = tmp(5912).AlertActionButton;
+    const AlertActionButton = tmp(5914).AlertActionButton;
     intl4 = tmp(1128).intl;
     const tmp15 = React2(AlertActionButton, obj3, "cancel");
     cResult[5] = tmp15;
@@ -71,7 +71,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Confirm
   }
   if (cResult[6] !== tmp10) {
     const obj4 = { title: tmp4, content: tmp5, actions: _false(AlertModal2.AlertActions, obj5) };
-    const AlertModal = tmp(5912).AlertModal;
+    const AlertModal = tmp(5914).AlertModal;
     obj5 = { children: items };
     items = [tmp10, tmp13];
     const tmp19 = React2(AlertModal, obj4);

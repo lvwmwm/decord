@@ -1,9 +1,9 @@
-// Module ID: 16290
-// Function ID: 16291
+// Module ID: 16314
+// Function ID: 16315
 // Name: BountyConstants
 // Dependencies: [2]
 
-// Module 16290 (BountyConstants)
+// Module 16314 (BountyConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountyConstants.tsx");

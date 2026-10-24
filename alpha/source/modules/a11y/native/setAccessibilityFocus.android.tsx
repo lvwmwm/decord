@@ -1,10 +1,10 @@
-// Module ID: 5969
-// Function ID: 5970
+// Module ID: 5971
+// Function ID: 5972
 // Name: react-native
 // Dependencies: [17, 2]
 // Exports: setAccessibilityFocus
 
-// Module 5969 (react-native)
+// Module 5971 (react-native)
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 

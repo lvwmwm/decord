@@ -1,9 +1,9 @@
-// Module ID: 16651
-// Function ID: 16652
+// Module ID: 16683
+// Function ID: 16684
 // Name: SettingsAccessibilityScreen
-// Dependencies: [19, 4970, 4798, 8330, 1087, 21, 1128, 2067, 2928, 7488, 7131, 16652, 558, 576, 1505, 573, 11204, 15949, 2]
+// Dependencies: [19, 4972, 4800, 8332, 1087, 21, 1128, 2067, 2928, 7490, 7133, 16684, 558, 576, 1505, 573, 11205, 15973, 2]
 
-// Module 16651 (SettingsAccessibilityScreen)
+// Module 16683 (SettingsAccessibilityScreen)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
@@ -11,14 +11,14 @@ import intl15 from "intl" /* 1128 */;
 import useNavigation from "useNavigation" /* 1505 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
 import _modDef2928 from "module_2928" /* 2928 */;
-import openUserSettings from "openUserSettings" /* 7488 */;
-import SettingsConstants from "SettingsConstants" /* 8330 */;
-import SettingBuilders from "SettingBuilders" /* 11204 */;
-import SettingLayoutDefault from "SettingLayout" /* 15949 */;
-import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 16652 */;
+import openUserSettings from "openUserSettings" /* 7490 */;
+import SettingsConstants from "SettingsConstants" /* 8332 */;
+import SettingBuilders from "SettingBuilders" /* 11205 */;
+import SettingLayoutDefault from "SettingLayout" /* 15973 */;
+import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 16684 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4970 */;
-import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 4798 */;
+import AccessibilityStore from "AccessibilityStore" /* 4972 */;
+import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 4800 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

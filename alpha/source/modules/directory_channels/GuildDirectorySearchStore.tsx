@@ -1,12 +1,12 @@
-// Module ID: 13146
-// Function ID: 13147
+// Module ID: 13183
+// Function ID: 13184
 // Name: GuildDirectorySearchStore
-// Dependencies: [13147, 504, 584, 2]
+// Dependencies: [13184, 504, 584, 2]
 
-// Module 13146 (GuildDirectorySearchStore)
+// Module 13183 (GuildDirectorySearchStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GuildDirectoryUtils from "GuildDirectoryUtils" /* 13147 */;
+import GuildDirectoryUtils from "GuildDirectoryUtils" /* 13184 */;
 import size from "module_2" /* 2 */;
 
 let results;
@@ -74,7 +74,7 @@ let obj = {
     const obj3 = { results: obj4.orderByTotalMemberCount(items), lastSearchedAt: Date.now() };
     obj2[query] = obj3;
     closure_4[channelId] = obj2;
-    obj4 = items(13147);
+    obj4 = items(13184);
   },
   GUILD_DIRECTORY_SEARCH_FAILURE: function handleSearchFailure(channelId) {
     channelId = channelId.channelId;

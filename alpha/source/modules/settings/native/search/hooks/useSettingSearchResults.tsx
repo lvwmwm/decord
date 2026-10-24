@@ -1,17 +1,17 @@
-// Module ID: 15959
-// Function ID: 15960
+// Module ID: 15983
+// Function ID: 15984
 // Name: useSettingSearchResults
-// Dependencies: [32, 19, 2068, 15951, 15802, 15954, 15803, 558, 576, 504, 15960, 15953, 551, 2]
+// Dependencies: [32, 19, 2068, 15975, 15825, 15978, 15826, 558, 576, 504, 15984, 15977, 551, 2]
 
-// Module 15959 (useSettingSearchResults)
+// Module 15983 (useSettingSearchResults)
 import debounceDefault from "debounce" /* 551 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 15953 */;
-import UserSettingSearchManagerDefault from "UserSettingSearchManager" /* 15960 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 15977 */;
+import UserSettingSearchManagerDefault from "UserSettingSearchManager" /* 15984 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 15951 */;
-import SettingBlocklistStore from "SettingBlocklistStore" /* 15802 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 15975 */;
+import SettingBlocklistStore from "SettingBlocklistStore" /* 15825 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSettingSe
     const self = this;
     const self2 = this;
     const tmp10 = UserSettingSearchManagerDefault;
-    const tmpResult2 = tmp(15953);
+    const tmpResult2 = tmp(15977);
     const tmp102 = new tmp10(tmpResult2.getSettingSearchableTitles(), stateFromStores);
     cResult[2] = stateFromStores;
     cResult[3] = tmp102;

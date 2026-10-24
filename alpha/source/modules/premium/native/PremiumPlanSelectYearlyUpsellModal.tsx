@@ -1,24 +1,24 @@
-// Module ID: 14838
-// Function ID: 14839
+// Module ID: 14861
+// Function ID: 14862
 // Name: PremiumPlanSelectYearlyUpsellModal
-// Dependencies: [32, 19, 17, 2068, 7522, 14825, 1394, 1098, 21, 4969, 6649, 6705, 558, 576, 7516, 504, 1903, 5667, 14839, 1202, 1128, 5242, 5976, 2053, 2]
+// Dependencies: [32, 19, 17, 2068, 7524, 14848, 1394, 1098, 21, 4971, 6651, 6707, 558, 576, 7518, 504, 1903, 5669, 14862, 1202, 1128, 5244, 5978, 2053, 2]
 
-// Module 14838 (PremiumPlanSelectYearlyUpsellModal)
+// Module 14861 (PremiumPlanSelectYearlyUpsellModal)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1098 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import FastImageDefault from "FastImage" /* 5667 */;
-import AlertDefault from "Alert" /* 5976 */;
-import TextStylesDefault from "TextStyles" /* 6649 */;
-import LegacyTokens from "LegacyTokens" /* 6705 */;
-import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 14825 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14839 */;
+import FastImageDefault from "FastImage" /* 5669 */;
+import AlertDefault from "Alert" /* 5978 */;
+import TextStylesDefault from "TextStyles" /* 6651 */;
+import LegacyTokens from "LegacyTokens" /* 6707 */;
+import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 14848 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14862 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
-import IAPStore from "IAPStore" /* 7522 */;
+import IAPStore from "IAPStore" /* 7524 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -266,7 +266,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPla
   const tmp2 = usePremiumPlanSelectStore((isPurchasing) => isPurchasing.isPurchasing);
   [tmp4, c3] = _slicedToArray(react.useState(null), 2);
   const tmp3 = _slicedToArray(react.useState(null), 2);
-  const obj2 = productId(7516);
+  const obj2 = productId(7518);
   const premiumBundledItemsFromProductId = obj2.getPremiumBundledItemsFromProductId(productId);
   let items = [LocaleStore];
   const obj3 = productId(504);
@@ -329,7 +329,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPla
       disabled: tmp2 || tmp9[1],
       loading: "upsell" === tmp4 && tmp2
     };
-    Button = tmp5(5242).Button;
+    Button = tmp5(5244).Button;
     intl3 = tmp5(1128).intl;
     obj14 = { price: orderPriceString };
     items2[3] = closure_10(View, obj12);
@@ -344,12 +344,12 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPla
       disabled: tmp2 || tmp9[1],
       loading: "default" === tmp4 && tmp2
     };
-    Button2 = tmp5(5242).Button;
+    Button2 = tmp5(5244).Button;
     intl4 = tmp5(1128).intl;
     items2[4] = closure_10(View, obj15);
     const obj17 = { style: tmp.cancelButton, children: closure_10(Button3, obj18) };
     obj18 = { variant: "tertiary", text: intl5.string(productId(1128).t.cpT0Cq), onPress: onClose };
-    Button3 = tmp5(5242).Button;
+    Button3 = tmp5(5244).Button;
     intl5 = tmp5(1128).intl;
     items2[5] = closure_10(View, obj17);
     return closure_10(tmp19, obj5);

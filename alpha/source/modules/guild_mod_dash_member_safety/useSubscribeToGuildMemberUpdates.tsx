@@ -1,10 +1,10 @@
-// Module ID: 17988
-// Function ID: 17989
+// Module ID: 18020
+// Function ID: 18021
 // Name: useSubscribeToGuildMemberUpdates
-// Dependencies: [19, 558, 576, 7375, 2]
+// Dependencies: [19, 558, 576, 7377, 2]
 
-// Module 17988 (useSubscribeToGuildMemberUpdates)
-import GuildSubscriptionsActionCreatorsAll from "GuildSubscriptionsActionCreators" /* 7375 */;
+// Module 18020 (useSubscribeToGuildMemberUpdates)
+import GuildSubscriptionsActionCreatorsAll from "GuildSubscriptionsActionCreators" /* 7377 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

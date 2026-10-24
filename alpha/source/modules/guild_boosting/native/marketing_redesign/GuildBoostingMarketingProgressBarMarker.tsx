@@ -1,19 +1,19 @@
-// Module ID: 14867
-// Function ID: 14868
+// Module ID: 14890
+// Function ID: 14891
 // Name: GuildBoostingMarketingProgressBarMarker
-// Dependencies: [19, 17, 1087, 21, 14868, 14869, 14870, 4969, 587, 558, 576, 5203, 5050, 4966, 4976, 5245, 13466, 5667, 11253, 8364, 5232, 2]
+// Dependencies: [19, 17, 1087, 21, 14891, 14892, 14893, 4971, 587, 558, 576, 5205, 5052, 4968, 4978, 5247, 13503, 5669, 11254, 8366, 5234, 2]
 
-// Module 14867 (GuildBoostingMarketingProgressBarMarker)
+// Module 14890 (GuildBoostingMarketingProgressBarMarker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import spring from "spring" /* 5245 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14868 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14869 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14870 */;
+import spring from "spring" /* 5247 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14891 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14892 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14893 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -364,8 +364,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressBarM
   isDisabled = isDisabled.isDisabled;
   const revealedTier = isDisabled.revealedTier;
   const tmp4 = closure_15();
-  const tmp6 = sharedValue(5203)();
-  obj2 = useReducedMotion(5050);
+  const tmp6 = sharedValue(5205)();
+  obj2 = useReducedMotion(5052);
   sharedValue = obj2.useSharedValue(1);
   dependencyMap = tmp8;
   backgroundColor = tmp11;
@@ -397,7 +397,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressBarM
         fn2.__closure = obj3;
         fn2.__workletHash = 6048829722949;
         fn2.__initData = __initData3;
-        const tmpResult = tmp(5050);
+        const tmpResult = tmp(5052);
         const animatedStyle = tmpResult.useAnimatedStyle(fn2);
         const text = `${100 * obj[tier]}%`;
         if (cResult[5] !== `${100 * obj[tier]}%`) {
@@ -444,7 +444,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressBarM
                                 tmp34 = cResult[27];
                               }
                               if (cResult[28] !== tier) {
-                                const tmpResult4 = tmp(8364);
+                                const tmpResult4 = tmp(8366);
                                 const tierName = tmpResult4.getTierName(tier, { useLevels: false });
                                 cResult[28] = tier;
                                 cResult[29] = tierName;
@@ -454,7 +454,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressBarM
                               }
                               if (cResult[30] !== tmp39) {
                                 const obj5 = { variant: "text-xs/medium", children: tmp39 };
-                                const tmp43 = closure_6(tmp(5232).Text, obj5);
+                                const tmp43 = closure_6(tmp(5234).Text, obj5);
                                 cResult[30] = tmp39;
                                 cResult[31] = tmp43;
                                 tmp41 = tmp43;
@@ -501,8 +501,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressBarM
                           }
                           let tmp35 = tmp11 && tier !== BoostedGuildTiers.NONE;
                           if (tmp35) {
-                            const obj8 = { source: sharedValue(11253), style: tmp4.progressBarMarkerUnlockedIcon };
-                            const tmp5Result = sharedValue(5667);
+                            const obj8 = { source: sharedValue(11254), style: tmp4.progressBarMarkerUnlockedIcon };
+                            const tmp5Result = sharedValue(5669);
                             tmp35 = closure_6(tmp5Result, obj8);
                           }
                           cResult[24] = tmp4.progressBarMarkerUnlockedIcon;
@@ -536,7 +536,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressBarM
           }
           const obj10 = { style: items3 };
           items3 = [tmp4.progressBarMarkerBackground, animatedStyle];
-          const tmp26 = closure_6(sharedValue(5050).View, obj10);
+          const tmp26 = closure_6(sharedValue(5052).View, obj10);
           cResult[10] = tmp4.progressBarMarkerBackground;
           cResult[11] = animatedStyle;
           cResult[12] = tmp26;
@@ -567,10 +567,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressBarM
     tmp15 = items5;
     tmp14 = fn;
   }
-  const tmpResult5 = tmp(4976);
+  const tmpResult5 = tmp(4978);
   const isThemeDarkResult = tmpResult5.isThemeDark(tmp6);
-  const hexWithOpacity = tmp(4966).hexWithOpacity;
-  tmp(4966);
+  const hexWithOpacity = tmp(4968).hexWithOpacity;
+  tmp(4968);
   const unsafe_rawColors = tmp5(587).unsafe_rawColors;
   if (isThemeDarkResult) {
     PREMIUM_PERK_PINK = hexWithOpacity(unsafe_rawColors.WHITE, 0.4);
@@ -596,8 +596,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressBarM
   let PREMIUM_PERK_PINK;
   ({ revealedTier, isDisabled } = arg0);
   let tmp = closure_15();
-  const tmp4 = sharedValue(5203)();
-  let obj = useReducedMotion(5050);
+  const tmp4 = sharedValue(5205)();
+  let obj = useReducedMotion(5052);
   sharedValue = obj.useSharedValue(1);
   dependencyMap = tmp7;
   let tmp20Result = tmp9 && tmp8;
@@ -616,7 +616,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressBarM
         const result1 = set(obj.withSpring(1, closure_11));
       }
     }, items);
-    const tmp5Result = useReducedMotion(5050);
+    const tmp5Result = useReducedMotion(5052);
     class P {
       constructor() {
         let items;
@@ -640,7 +640,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressBarM
     const animatedStyle = tmp5Result.useAnimatedStyle(P);
     const obj5 = { style: items2 };
     items2 = [tmp.progressBarMarkerBackground, animatedStyle];
-    items3 = [closure_6(tmp2(5050).View, obj5), , ];
+    items3 = [closure_6(tmp2(5052).View, obj5), , ];
     const obj6 = { tier, isDisabled, isTierUnlocked: guild.premiumTier >= tier, isTierAnimated: revealedTier >= tier, isCurrentTier: tier === guild.premiumTier, useReducedMotion };
     items3[1] = closure_6(closure_14, obj6);
     const items4 = [tmp.progressBarMarkerLabel, !tmp20Result && tmp.progressBarMarkerLabelLocked, ];
@@ -651,22 +651,22 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressBarM
       tmp20Result = tier !== BoostedGuildTiers.NONE;
     }
     if (tmp20Result) {
-      const obj8 = { source: sharedValue(11253), style: tmp.progressBarMarkerUnlockedIcon };
-      const tmp2Result = sharedValue(5667);
+      const obj8 = { source: sharedValue(11254), style: tmp.progressBarMarkerUnlockedIcon };
+      const tmp2Result = sharedValue(5669);
       tmp20Result = tmp20(tmp2Result, obj8);
     }
     items5 = [tmp20Result, ];
     const obj9 = { variant: "text-xs/medium", children: tmp5Result4.getTierName(tier, { useLevels: false }) };
-    const Text = tmp5(5232).Text;
-    tmp5Result4 = useReducedMotion(8364);
+    const Text = tmp5(5234).Text;
+    tmp5Result4 = useReducedMotion(8366);
     items5[1] = closure_6(Text, obj9);
     items3[2] = closure_7(PREMIUM_PERK_PINK, obj7);
     return closure_7(PREMIUM_PERK_PINK, obj3);
   }
-  const tmp5Result5 = useReducedMotion(4976);
+  const tmp5Result5 = useReducedMotion(4978);
   const isThemeDarkResult = tmp5Result5.isThemeDark(tmp4);
-  const hexWithOpacity = tmp5(4966).hexWithOpacity;
-  useReducedMotion(4966);
+  const hexWithOpacity = tmp5(4968).hexWithOpacity;
+  useReducedMotion(4968);
   const unsafe_rawColors = tmp2(587).unsafe_rawColors;
   if (isThemeDarkResult) {
     PREMIUM_PERK_PINK = hexWithOpacity(unsafe_rawColors.WHITE, 0.4);

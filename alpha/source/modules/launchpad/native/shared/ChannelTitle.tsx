@@ -1,21 +1,21 @@
-// Module ID: 18070
-// Function ID: 18071
+// Module ID: 18102
+// Function ID: 18103
 // Name: ChannelTitle
-// Dependencies: [19, 6703, 21, 4969, 587, 558, 576, 18066, 5232, 2]
+// Dependencies: [19, 6705, 21, 4971, 587, 558, 576, 18098, 5234, 2]
 
-// Module 18070 (ChannelTitle)
+// Module 18102 (ChannelTitle)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReadStateConstants from "ReadStateConstants" /* 6703 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 18066 */;
+import ReadStateConstants from "ReadStateConstants" /* 6705 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 18098 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Text_Text = tmp(5232);
+const Text_Text = tmp(5234);
 const UnreadSetting = ReadStateConstants.UnreadSetting;
 const jsx = Fragment.jsx;
 let obj = { muted: nativeDefault.colors.TEXT_MUTED, normal: nativeDefault.colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, unreadOrConnected: nativeDefault.colors.REDESIGN_CHANNEL_NAME_TEXT };

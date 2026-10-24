@@ -1,40 +1,40 @@
-// Module ID: 14594
-// Function ID: 14595
+// Module ID: 14617
+// Function ID: 14618
 // Name: VoiceMemberUser
-// Dependencies: [109, 19, 17, 6004, 1207, 502, 6495, 4821, 4881, 2014, 5710, 1087, 21, 4969, 587, 558, 576, 6779, 504, 4976, 14595, 14596, 1202, 14597, 14598, 14599, 14600, 11422, 5232, 1128, 8949, 7809, 11688, 5148, 7865, 5208, 7411, 6906, 5987, 7421, 5023, 2]
+// Dependencies: [109, 19, 17, 6006, 1207, 502, 6497, 4823, 4883, 2014, 5712, 1087, 21, 4971, 587, 558, 576, 6781, 504, 4978, 14618, 14619, 1202, 14620, 14621, 14622, 14623, 11442, 5234, 1128, 8951, 7811, 11708, 5150, 7867, 5210, 7413, 6908, 5989, 7423, 5025, 2]
 
-// Module 14594 (VoiceMemberUser)
+// Module 14617 (VoiceMemberUser)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import shared from "shared" /* 4976 */;
-import UserUtilsDefault from "UserUtils" /* 5023 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5148 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import useIsSpeakingDefault from "useIsSpeaking" /* 6779 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 7411 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7809 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7865 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11422 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14597 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14598 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 14599 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 14600 */;
+import shared from "shared" /* 4978 */;
+import UserUtilsDefault from "UserUtils" /* 5025 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5150 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import useIsSpeakingDefault from "useIsSpeaking" /* 6781 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 7413 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7811 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7867 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11442 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14620 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14621 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 14622 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 14623 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SoundboardStore from "SoundboardStore" /* 6004 */;
+import SoundboardStore from "SoundboardStore" /* 6006 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 6495 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
-import GuildMemberStore_mod from "GuildMemberStore" /* 4881 */;
+import CallStore from "CallStore" /* 6497 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import GuildMemberStore_mod from "GuildMemberStore" /* 4883 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import PresenceStore from "PresenceStore" /* 5710 */;
+import PresenceStore from "PresenceStore" /* 5712 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -426,7 +426,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
   const id = AuthenticationStore.getId();
   const obj2 = { userId: user.id };
   const items = [SoundboardStore];
-  const tmp7 = channel(6779)(obj2);
+  const tmp7 = channel(6781)(obj2);
   const obj3 = user(504);
   const stateFromStores = obj3.useStateFromStores(items, () => SoundboardStore.isUserPlayingSounds(user.id));
   const items1 = [ThemeStore];
@@ -511,7 +511,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
       const tmp25 = closure_15;
       const tmp26 = closure_5;
       if (isSpectating) {
-        const obj10 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14600), style: tmp21 };
+        const obj10 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14623), style: tmp21 };
         const Icon = tmp8(1202).Icon;
         tmp22Result = tmp22(Icon, obj10);
       }
@@ -519,11 +519,11 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
       let tmp22Result5 = null;
       if (tmp16) {
         let tmp5Result;
-        const tmp8Result = user(4976);
+        const tmp8Result = user(4978);
         if (tmp8Result.isThemeDark(stateFromStores1)) {
-          tmp5Result = tmp5(14595);
+          tmp5Result = tmp5(14618);
         } else {
-          tmp5Result = tmp5(14596);
+          tmp5Result = tmp5(14619);
         }
         const obj11 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: tmp5Result, style: tmp2.voiceStatusIconMargin, color: tmp21.tintColor, disableColor: localMute };
         const Icon2 = tmp8(1202).Icon;
@@ -532,7 +532,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
       items4[1] = tmp22Result5;
       let tmp22Result6 = null;
       if (tmp15) {
-        const obj12 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14597), style: tmp21 };
+        const obj12 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14620), style: tmp21 };
         const Icon3 = tmp8(1202).Icon;
         tmp22Result6 = tmp22(Icon3, obj12);
       }
@@ -542,10 +542,10 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
         let obj14;
         const Icon4 = tmp8(1202).Icon;
         if (localVideoDisabled) {
-          obj14 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14598), style: tmp2.voiceStatusIconMargin, disableColor: true };
-          const obj13 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14598), style: tmp2.voiceStatusIconMargin, disableColor: true };
+          obj14 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14621), style: tmp2.voiceStatusIconMargin, disableColor: true };
+          const obj13 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14621), style: tmp2.voiceStatusIconMargin, disableColor: true };
         } else {
-          obj14 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14599), style: tmp21 };
+          obj14 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14622), style: tmp21 };
         }
         tmp22Result7 = tmp22(Icon4, obj14);
       }
@@ -560,16 +560,16 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
     }
   }
   const obj16 = { disabled: flag4, label: closure_14(Label, obj19), subLabel: stringResult };
-  const FormRow = tmp8(8949).FormRow;
+  const FormRow = tmp8(8951).FormRow;
   const merged1 = Object.assign(merged);
   const merged2 = Object.assign(obj7);
   let tmp35 = name;
-  Label = tmp8(8949).FormRow.Label;
+  Label = tmp8(8951).FormRow.Label;
   if (stateFromStores2) {
     const obj17 = { children: items5 };
     items5 = [name, ];
     const obj18 = { variant: "text-md/semibold", lineClamp: 1, color: "status-positive", children: items6 };
-    const Text = tmp8(5232).Text;
+    const Text = tmp8(5234).Text;
     const intl = tmp8(1128).intl;
     items6 = ["\u00A0", intl.string(user(1128).t["pFO/Ph"])];
     items5[1] = closure_15(Text, obj18);
@@ -582,11 +582,11 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
   }
   if (localVideoAutoDisabled) {
     const obj20 = { style: tmp2.autoDisabledVideo, children: items7 };
-    const obj21 = { source: channel(11422), size: user(1202).Icon.Sizes.EXTRA_SMALL, disableColor: true };
+    const obj21 = { source: channel(11442), size: user(1202).Icon.Sizes.EXTRA_SMALL, disableColor: true };
     const Icon5 = tmp8(1202).Icon;
     items7 = [closure_14(Icon5, obj21), ];
     const obj22 = { variant: "text-xs/medium", color: "text-default", style: tmp2.autoDisabledVideoLabel, children: intl3.string(user(1128).t.m2Hyj0) };
-    const Text2 = tmp8(5232).Text;
+    const Text2 = tmp8(5234).Text;
     intl3 = tmp8(1128).intl;
     items7[1] = closure_14(Text2, obj22);
     stringResult = closure_15(closure_5, obj20);
@@ -700,7 +700,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Stream
         let guildId;
         const obj4 = { style: tmp4.streamPreview, children: closure_14(tmp30, obj5) };
         const tmp28 = closure_5;
-        tmp30 = channel(11688);
+        tmp30 = channel(11708);
         if (channel != null) {
           guildId = channel.getGuildId();
         }
@@ -740,7 +740,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Stream
     cResult[10] = tmp23;
     tmp17 = tmp23;
   }
-  const tmp16 = closure_14(tmp(8949).FormSubLabel, { text: tmp10, style: labelCallScreen });
+  const tmp16 = closure_14(tmp(8951).FormSubLabel, { text: tmp10, style: labelCallScreen });
   cResult[5] = tmp10;
   cResult[6] = labelCallScreen;
   cResult[7] = tmp16;
@@ -784,7 +784,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Stream
   const merged = Object.assign(user);
   obj4 = { text: formatResult, style: labelCallScreen };
   labelCallScreen = null;
-  FormSubLabel = tmp3(8949).FormSubLabel;
+  FormSubLabel = tmp3(8951).FormSubLabel;
   const tmp11 = closure_19;
   const tmp8 = closure_15;
   const tmp9 = closure_16;
@@ -797,7 +797,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Stream
     let guildId;
     const obj5 = { style: tmp.streamPreview, children: tmp10(tmp17, obj6) };
     const tmp15 = closure_5;
-    tmp17 = channel(11688);
+    tmp17 = channel(11708);
     if (channel != null) {
       guildId = channel.getGuildId();
     }
@@ -874,7 +874,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function RingBu
           }
         }
         const obj3 = { onPress: tmp6, accessibilityRole: "button", style: tmp7, children: tmp12 };
-        const tmp17 = closure_14(channelId(6906).PressableOpacity, obj3);
+        const tmp17 = closure_14(channelId(6908).PressableOpacity, obj3);
         cResult[6] = tmp6;
         cResult[7] = tmp7;
         cResult[8] = tmp12;
@@ -916,7 +916,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function RingBu
         style: isActionSheet ? tmp2.ringingButton : tmp.ringingButton,
         children: closure_14(LegacyText, obj2)
       };
-      const PressableOpacity = channelId(6906).PressableOpacity;
+      const PressableOpacity = channelId(6908).PressableOpacity;
       obj2 = { style: isActionSheet ? tmp2.ringingButtonLabel : tmp.ringingButtonLabel, children: intl.string(channelId(1128).t.bHa9kN) };
       LegacyText = tmp5(1202).LegacyText;
       intl = tmp5(1128).intl;
@@ -973,7 +973,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function StopRi
           }
         }
         const obj3 = { onPress: tmp6, accessibilityRole: "button", style: tmp7, children: tmp12 };
-        const tmp17 = closure_14(channelId(6906).PressableOpacity, obj3);
+        const tmp17 = closure_14(channelId(6908).PressableOpacity, obj3);
         cResult[6] = tmp6;
         cResult[7] = tmp7;
         cResult[8] = tmp12;
@@ -1015,7 +1015,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function StopRi
         style: isActionSheet ? tmp2.ringingButton : tmp.ringingButton,
         children: closure_14(LegacyText, obj2)
       };
-      const PressableOpacity = channelId(6906).PressableOpacity;
+      const PressableOpacity = channelId(6908).PressableOpacity;
       obj2 = { style: isActionSheet ? tmp2.ringingButtonLabel : tmp.ringingButtonLabel, children: intl.string(channelId(1128).t.ygslb0) };
       LegacyText = tmp5(1202).LegacyText;
       intl = tmp5(1128).intl;
@@ -1217,7 +1217,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
     }
     return hasItem;
   }, items1);
-  const obj2 = channel(5987);
+  const obj2 = channel(5989);
   const name = obj2.getName(channel.guild_id, channel.id, user);
   const obj4 = {
     onPress() {
@@ -1227,11 +1227,11 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
     leading: closure_14(Avatar, obj6),
     trailing: tmp7Result
   };
-  const obj3 = user(7421);
+  const obj3 = user(7423);
   const canRing = obj3.useCanRing(user);
   obj5 = { text: name, style: labelCallScreen };
   labelCallScreen = null;
-  Label = user(8949).FormRow.Label;
+  Label = user(8951).FormRow.Label;
   if (isActionSheet) {
     labelCallScreen = tmp.labelCallScreen;
   }
@@ -1243,7 +1243,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
     tmp7Result = tmp7(stateFromStores ? closure_22 : closure_21, obj7);
   }
   const obj8 = {};
-  const FormRow = tmp2(8949).FormRow;
+  const FormRow = tmp2(8951).FormRow;
   const merged = Object.assign(obj4);
   return closure_14(FormRow, obj8);
 }));

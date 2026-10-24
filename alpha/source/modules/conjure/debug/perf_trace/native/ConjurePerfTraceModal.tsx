@@ -1,23 +1,23 @@
-// Module ID: 12502
-// Function ID: 12503
+// Module ID: 12536
+// Function ID: 12537
 // Name: ConjurePerfTraceModal
-// Dependencies: [19, 17, 10703, 21, 4969, 587, 558, 576, 12503, 7303, 11075, 5232, 7955, 12504, 12506, 1633, 12507, 10733, 5242, 504, 6922, 6670, 11145, 2]
+// Dependencies: [19, 17, 10704, 21, 4971, 587, 558, 576, 12537, 7305, 11076, 5234, 7957, 12538, 12540, 1633, 12541, 10734, 5244, 504, 6924, 6672, 11146, 2]
 
-// Module 12502 (ConjurePerfTraceModal)
+// Module 12536 (ConjurePerfTraceModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import NavigatorHeader from "NavigatorHeader" /* 6922 */;
-import ChevronSmallRightIcon2 from "ChevronSmallRightIcon" /* 7303 */;
-import ConjurePerfTraceStatsHeaderDefault from "ConjurePerfTraceStatsHeader" /* 12503 */;
-import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 12504 */;
-import useConjurePerfTraceTreeDefault from "useConjurePerfTraceTree" /* 12507 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import NavigatorHeader from "NavigatorHeader" /* 6924 */;
+import ChevronSmallRightIcon2 from "ChevronSmallRightIcon" /* 7305 */;
+import ConjurePerfTraceStatsHeaderDefault from "ConjurePerfTraceStatsHeader" /* 12537 */;
+import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 12538 */;
+import useConjurePerfTraceTreeDefault from "useConjurePerfTraceTree" /* 12541 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConjureDebugStore from "ConjureDebugStore" /* 10703 */;
+import ConjureDebugStore from "ConjureDebugStore" /* 10704 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ let obj9;
 let rect;
 let size;
 let tmp;
-const ConjurePerfTraceStats = tmp(12506);
+const ConjurePerfTraceStats = tmp(12540);
 ({ Pressable: closure_4, ScrollView: hasOwnProperty, View: metroRequire } = react_native);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 const perf_trace = "perf_trace";
@@ -550,12 +550,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Waterf
   const detail = tmp;
   let tmp2 = node;
   let tmp3 = dependencyMap;
-  let obj = node(12503);
+  let obj = node(12537);
   const perfCategoryColors = obj.usePerfCategoryColors();
   if (collapsed) {
-    ChevronSmallDownIcon = tmp2(7303).ChevronSmallRightIcon;
+    ChevronSmallDownIcon = tmp2(7305).ChevronSmallRightIcon;
   } else {
-    ChevronSmallDownIcon = tmp2(11075).ChevronSmallDownIcon;
+    ChevronSmallDownIcon = tmp2(11076).ChevronSmallDownIcon;
   }
   if (node.failed) {
     running = tmp.failed;
@@ -618,35 +618,35 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Waterf
   let tmp14Result = null;
   if (node.descendants > 0) {
     const obj9 = { variant: "text-xs/normal", color: "text-muted", children: node.descendants };
-    tmp14Result = tmp14(tmp2(5232).Text, obj9);
+    tmp14Result = tmp14(tmp2(5234).Text, obj9);
   }
   items2[1] = tmp14Result;
   const obj10 = { style: items3 };
   items3 = [tmp.swatch, perfCategoryColors[node.category]];
   items2[2] = tmp14(closure_6, obj10);
   const obj11 = { variant: "text-xs/semibold", color: "text-strong", children: node.service };
-  items2[3] = tmp14(tmp2(5232).Text, obj11);
+  items2[3] = tmp14(tmp2(5234).Text, obj11);
   const obj12 = { variant: "text-xs/normal", color: "text-default", style: tmp.operation, lineClamp: 1, children: node.operation };
-  items2[4] = tmp14(tmp2(5232).Text, obj12);
+  items2[4] = tmp14(tmp2(5234).Text, obj12);
   let tmp14Result4 = null;
   if (node.count > 1) {
     const obj13 = { style: tmp.badge, children: tmp14(Text, obj14) };
     const _HermesInternal = HermesInternal;
     obj14 = { variant: "text-xxs/semibold", color: "text-default", children: "\u00D7" + node.count };
-    Text = tmp2(5232).Text;
+    Text = tmp2(5234).Text;
     tmp14Result4 = tmp14(tmp10, obj13);
   }
   items2[5] = tmp14Result4;
   let tmp14Result5 = null;
   if (node.failed) {
     const obj15 = { size: "xs", color: selected(587).colors.STATUS_DANGER };
-    const WarningIcon = tmp2(7955).WarningIcon;
+    const WarningIcon = tmp2(7957).WarningIcon;
     tmp14Result5 = tmp14(WarningIcon, obj15);
   }
   items2[6] = tmp14Result5;
   const obj16 = { variant: "text-xs/normal", color: "text-muted", children: tmp2Result.perfNodeDuration(node) };
-  const Text2 = tmp2(5232).Text;
-  tmp2Result = tmp2(12504);
+  const Text2 = tmp2(5234).Text;
+  tmp2Result = tmp2(12538);
   items2[7] = tmp14(Text2, obj16);
   items4 = [tmp6(closure_6, obj4), , ];
   const obj17 = { style: tmp.track, children: tmp14(closure_6, obj18) };
@@ -706,7 +706,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Waterf
     items6 = [tmp.detail, ];
     items6[1] = { paddingLeft: node.depth * selected(587).space.PX_12 };
     const obj21 = { paddingLeft: node.depth * selected(587).space.PX_12 };
-    const tmp2Result2 = tmp2(12504);
+    const tmp2Result2 = tmp2(12538);
     perfNodeSectionsResult = tmp2Result2.perfNodeSections(node);
     tmp14Result6 = tmp14(tmp10, obj20);
   }
@@ -762,7 +762,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Smalle
       const _Symbol = Symbol;
       if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
         const obj3 = { size: "xs", color: tmp9(587).colors.ICON_SUBTLE };
-        const ChevronSmallRightIcon = tmp(7303).ChevronSmallRightIcon;
+        const ChevronSmallRightIcon = tmp(7305).ChevronSmallRightIcon;
         const tmp16 = metroImportAll(ChevronSmallRightIcon, obj3);
         cResult[10] = tmp16;
         tmp14 = tmp16;
@@ -1103,7 +1103,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Waterf
       if (null != trace.started_by) {
         const _HermesInternal = HermesInternal;
         const obj5 = { variant: "text-sm/normal", color: "text-muted", children: "Started by " + trace.started_by.trace_name };
-        const Text = tmp(5232).Text;
+        const Text = tmp(5234).Text;
         tmp23 = closure_8(Text, obj5);
       }
       cResult[15] = trace.started_by;
@@ -1116,7 +1116,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Waterf
       let tmp27 = null;
       if (0 !== trace.dropped) {
         const obj6 = { variant: "text-sm/normal", color: "text-feedback-warning", children: "" + tmpResult6.formatSpanCount(trace.dropped) + " not recorded" };
-        const Text2 = tmp(5232).Text;
+        const Text2 = tmp(5234).Text;
         const _HermesInternal2 = HermesInternal;
         tmpResult6 = require("ConjurePerfTraceFormat");
         tmp27 = closure_8(Text2, obj6);
@@ -1467,14 +1467,14 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Waterf
   if (null != trace.started_by) {
     const _HermesInternal = HermesInternal;
     const obj9 = { variant: "text-sm/normal", color: "text-muted", children: "Started by " + trace.started_by.trace_name };
-    const Text3 = tmp4(5232).Text;
+    const Text3 = tmp4(5234).Text;
     tmp8Result = tmp8(Text3, obj9);
   }
   items1[2] = tmp8Result;
   let tmp8Result2 = null;
   if (0 !== trace.dropped) {
     const obj10 = { variant: "text-sm/normal", color: "text-feedback-warning", children: "" + tmp4Result.formatSpanCount(trace.dropped) + " not recorded" };
-    const Text4 = tmp4(5232).Text;
+    const Text4 = tmp4(5234).Text;
     const _HermesInternal2 = HermesInternal;
     tmp4Result = require("ConjurePerfTraceFormat");
     tmp8Result2 = tmp8(Text4, obj10);
@@ -1539,7 +1539,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PerfTr
       let tmp14;
       const _Symbol = Symbol;
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp16 = closure_8(projectId(5232).Text, { variant: "text-sm/normal", color: "text-muted", children: "This trace is no longer available." });
+        const tmp16 = closure_8(projectId(5234).Text, { variant: "text-sm/normal", color: "text-muted", children: "This trace is no longer available." });
         cResult[5] = tmp16;
         tmp14 = tmp16;
       } else {
@@ -1577,7 +1577,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PerfTr
   const stateFromStores = obj.useStateFromStores(items, () => ConjureDebugStore.getTimingTrace(projectId, traceId), items1);
   const tmp = projectId;
   if (null == stateFromStores) {
-    tmp6 = closure_8(tmp(5232).Text, { variant: "text-sm/normal", color: "text-muted", children: "This trace is no longer available." });
+    tmp6 = closure_8(tmp(5234).Text, { variant: "text-sm/normal", color: "text-muted", children: "This trace is no longer available." });
   } else {
     const obj2 = { trace: stateFromStores };
     tmp6 = closure_8(closure_15, obj2);
@@ -1610,7 +1610,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
     const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmpResult2 = projectId(6922);
+      const tmpResult2 = projectId(6924);
       const headerCloseButton = tmpResult2.getHeaderCloseButton(() => {
         const arr = traceId(dependencyMap[21]);
         return arr.pop();
@@ -1633,7 +1633,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
         }
         if (cResult[12] !== tmp12) {
           const obj2 = { initialRouteName: perf_trace, screens: tmp12 };
-          const tmp17 = closure_8(projectId(11145).Modal, obj2);
+          const tmp17 = closure_8(projectId(11146).Modal, obj2);
           cResult[12] = tmp12;
           cResult[13] = tmp17;
           tmp14 = tmp17;

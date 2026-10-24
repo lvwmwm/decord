@@ -1,15 +1,15 @@
-// Module ID: 11849
-// Function ID: 11850
+// Module ID: 11875
+// Function ID: 11876
 // Name: conjurePublishAction
-// Dependencies: [10803, 1128, 3830, 11841, 11850, 2]
+// Dependencies: [10804, 1128, 3830, 11867, 11876, 2]
 // Exports: conjurePublishTooltip, resolveConjurePublishAction
 
-// Module 11849 (conjurePublishAction)
+// Module 11875 (conjurePublishAction)
 import intl5 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 10803 */;
-import conjurePreviewModes from "conjurePreviewModes" /* 11841 */;
-import ConjureHistoryFormat from "ConjureHistoryFormat" /* 11850 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 10804 */;
+import conjurePreviewModes from "conjurePreviewModes" /* 11867 */;
+import ConjureHistoryFormat from "ConjureHistoryFormat" /* 11876 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conjure/publish/conjurePublishAction.tsx");
@@ -103,7 +103,7 @@ export const resolveConjurePublishAction = function resolveConjurePublishAction(
   if (result) {
     str5 = "consent_then_publish";
   }
-  const obj7 = { intent: str5, isUpdate: "live_outdated" === tmp.publishState && !tmp9, disabledReason: formatResult, confirmReason: tmp24, missingSurface: tmp29 };
+  const obj7 = { intent: str5, isUpdate: "live_outdated" === tmp.publishState && !tmp9, upToDate: "live_current" === tmp.publishState && !tmp9, disabledReason: formatResult, confirmReason: tmp24, missingSurface: tmp29 };
   tmp24 = null;
   if (null == formatResult) {
     let str6 = input.guildName;

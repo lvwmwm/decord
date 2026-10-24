@@ -1,18 +1,19 @@
-// Module ID: 16363
-// Function ID: 16364
+// Module ID: 16381
+// Function ID: 16382
 // Name: HexagonCampaignThemeLegal
-// Dependencies: [19, 17, 4994, 21, 4969, 587, 558, 576, 5232, 15845, 1128, 5667, 16364, 2]
+// Dependencies: [19, 17, 4996, 21, 4971, 587, 558, 576, 5234, 15869, 1128, 4247, 5669, 16382, 2]
 
-// Module 16363 (HexagonCampaignThemeLegal)
+// Module 16381 (HexagonCampaignThemeLegal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import FastImageDefault from "FastImage" /* 5667 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16364 */;
+import _modDef4247 from "module_4247" /* 4247 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import FastImageDefault from "FastImage" /* 5669 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16382 */;
 import react from "react" /* 19 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4994 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4996 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +25,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp2;
-const openHexagonCampaignLearnMore = tmp2(15845);
+const openHexagonCampaignLearnMore = tmp2(15869);
 const View = react_native.View;
 ({ HEXAGON_CAMPAIGN_NON_PREMIUM_CUTOFF_AT_MS: closure_4, HEXAGON_CAMPAIGN_PREMIUM_CUTOFF_AT_MS: hasOwnProperty } = HexagonCampaignConstants);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -69,7 +70,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
         if (cResult[7] !== tmp9) {
           const intl = tmp(1128).intl;
           const obj2 = { nonPremiumEndDate, premiumEndDate, learnMoreHook: tmp9 };
-          const formatResult = intl.format(tmp(1128).t.y2YmJv, obj2);
+          const formatResult = intl.format(_modDef4247.y2YmJv, obj2);
           cResult[7] = tmp9;
           cResult[8] = formatResult;
           tmp14 = formatResult;
@@ -79,53 +80,53 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
         if (cResult[9] === null != animatedStyles) {
           if (cResult[10] === "text-muted") {
             if (cResult[11] === tmp13) {
-              let tmp18;
+              let tmp19;
               if (cResult[12] === tmp14) {
-                tmp18 = cResult[13];
+                tmp19 = cResult[13];
               }
-              let tmp21 = tmp18;
+              let tmp22 = tmp19;
               if (undefined !== showLogo && showLogo) {
-                let tmp22;
+                let tmp23;
                 if (cResult[14] !== tmp5.logo) {
                   const obj3 = { source: AssetRegistryDefault, style: tmp5.logo, resizeMode: "contain", accessible: false };
-                  const tmp25 = FastImageDefault;
-                  const tmp26 = closure_6(tmp25, obj3);
+                  const tmp26 = FastImageDefault;
+                  const tmp27 = closure_6(tmp26, obj3);
                   cResult[14] = tmp5.logo;
-                  cResult[15] = tmp26;
-                  tmp22 = tmp26;
+                  cResult[15] = tmp27;
+                  tmp23 = tmp27;
                 } else {
-                  tmp22 = cResult[15];
+                  tmp23 = cResult[15];
                 }
-                if (cResult[16] === tmp18) {
+                if (cResult[16] === tmp19) {
                   if (cResult[17] === tmp5.legalWithLogo) {
-                    let tmp27;
-                    if (cResult[18] === tmp22) {
-                      tmp27 = cResult[19];
+                    let tmp28;
+                    if (cResult[18] === tmp23) {
+                      tmp28 = cResult[19];
                     }
-                    tmp21 = tmp27;
+                    tmp22 = tmp28;
                   }
                 }
                 const obj4 = { style: tmp5.legalWithLogo, children: items };
-                items = [tmp22, tmp18];
-                const tmp30 = closure_7(View, obj4);
-                cResult[16] = tmp18;
+                items = [tmp23, tmp19];
+                const tmp31 = closure_7(View, obj4);
+                cResult[16] = tmp19;
                 cResult[17] = tmp5.legalWithLogo;
-                cResult[18] = tmp22;
-                cResult[19] = tmp30;
-                tmp27 = tmp30;
+                cResult[18] = tmp23;
+                cResult[19] = tmp31;
+                tmp28 = tmp31;
               }
-              return tmp21;
+              return tmp22;
             }
           }
         }
         const obj5 = { animated: null != animatedStyles, variant: "text-xs/medium", color: "text-muted", style: tmp13, children: tmp14 };
-        const tmp20 = closure_6(tmp(5232).Text, obj5);
+        const tmp21 = closure_6(tmp(5234).Text, obj5);
         cResult[9] = null != animatedStyles;
         cResult[10] = "text-muted";
         cResult[11] = tmp13;
         cResult[12] = tmp14;
-        cResult[13] = tmp20;
-        tmp18 = tmp20;
+        cResult[13] = tmp21;
+        tmp19 = tmp21;
       }
       const items1 = [headerSecondary, tmp12];
       cResult[4] = headerSecondary;
@@ -176,9 +177,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
   let tmp2 = null != animatedStyles;
   dependencyMap = tmp2;
   let tmp5 = dependencyMap;
-  let obj = { animated: tmp2, variant: "text-xs/medium", color: str, style: items, children: intl.format(tmp4(1128).t.y2YmJv, obj2) };
-  let Text = animatedStyles(5232).Text;
+  let obj = { animated: tmp2, variant: "text-xs/medium", color: str, style: items, children: intl.format(_modDef4247.y2YmJv, obj2) };
+  let Text = animatedStyles(5234).Text;
   let headerSecondary;
+  const tmp4 = animatedStyles;
   if (animatedStyles != null) {
     headerSecondary = animatedStyles.headerSecondary;
   }
@@ -205,15 +207,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
     }
   };
   const tmp3Result = closure_6(Text, obj);
-  let tmp8 = tmp3Result;
+  let tmp9 = tmp3Result;
   if (flag) {
     const obj3 = { style: tmp.legalWithLogo, children: items1 };
     const obj4 = { source: AssetRegistryDefault, style: tmp.logo, resizeMode: "contain", accessible: false };
-    const tmp12 = FastImageDefault;
-    items1 = [tmp3(tmp12, obj4), tmp3Result];
-    tmp8 = closure_7(View, obj3);
+    const tmp7Result = FastImageDefault;
+    items1 = [tmp3(tmp7Result, obj4), tmp3Result];
+    tmp9 = closure_7(View, obj3);
   }
-  return tmp8;
+  return tmp9;
 });
 const result = size.fileFinishedImporting("modules/hexagon_campaign/native/HexagonCampaignThemeLegal.tsx");
 

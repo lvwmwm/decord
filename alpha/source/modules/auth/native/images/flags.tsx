@@ -1,40 +1,40 @@
-// Module ID: 16743
-// Function ID: 16744
+// Module ID: 16775
+// Function ID: 16776
 // Name: flags
-// Dependencies: [16744, 16745, 16746, 16747, 16748, 16749, 16750, 16751, 16752, 16753, 16754, 16755, 16756, 16757, 16758, 16759, 16760, 16761, 16762, 16763, 16764, 16765, 16766, 16767, 16768, 16769, 16770, 16771, 16772, 16773, 16774, 2]
+// Dependencies: [16776, 16777, 16778, 16779, 16780, 16781, 16782, 16783, 16784, 16785, 16786, 16787, 16788, 16789, 16790, 16791, 16792, 16793, 16794, 16795, 16796, 16797, 16798, 16799, 16800, 16801, 16802, 16803, 16804, 16805, 16806, 2]
 
-// Module 16743 (flags)
-import AssetRegistry from "AssetRegistry" /* 16744 */;
-import AssetRegistry2 from "AssetRegistry" /* 16745 */;
-import AssetRegistry3 from "AssetRegistry" /* 16746 */;
-import AssetRegistry4 from "AssetRegistry" /* 16747 */;
-import AssetRegistry5 from "AssetRegistry" /* 16748 */;
-import AssetRegistry6 from "AssetRegistry" /* 16749 */;
-import AssetRegistry7 from "AssetRegistry" /* 16750 */;
-import AssetRegistry8 from "AssetRegistry" /* 16751 */;
-import AssetRegistry9 from "AssetRegistry" /* 16752 */;
-import AssetRegistry10 from "AssetRegistry" /* 16753 */;
-import AssetRegistry11 from "AssetRegistry" /* 16754 */;
-import AssetRegistry12 from "AssetRegistry" /* 16755 */;
-import AssetRegistry13 from "AssetRegistry" /* 16756 */;
-import AssetRegistry14 from "AssetRegistry" /* 16757 */;
-import AssetRegistry15 from "AssetRegistry" /* 16758 */;
-import AssetRegistry16 from "AssetRegistry" /* 16759 */;
-import AssetRegistry17 from "AssetRegistry" /* 16760 */;
-import AssetRegistry18 from "AssetRegistry" /* 16761 */;
-import AssetRegistry19 from "AssetRegistry" /* 16762 */;
-import AssetRegistry20 from "AssetRegistry" /* 16763 */;
-import AssetRegistry21 from "AssetRegistry" /* 16764 */;
-import AssetRegistry22 from "AssetRegistry" /* 16765 */;
-import AssetRegistry23 from "AssetRegistry" /* 16766 */;
-import AssetRegistry24 from "AssetRegistry" /* 16767 */;
-import AssetRegistry25 from "AssetRegistry" /* 16768 */;
-import AssetRegistry26 from "AssetRegistry" /* 16769 */;
-import AssetRegistry27 from "AssetRegistry" /* 16770 */;
-import AssetRegistry28 from "AssetRegistry" /* 16771 */;
-import AssetRegistry29 from "AssetRegistry" /* 16772 */;
-import AssetRegistry30 from "AssetRegistry" /* 16773 */;
-import AssetRegistry31 from "AssetRegistry" /* 16774 */;
+// Module 16775 (flags)
+import AssetRegistry from "AssetRegistry" /* 16776 */;
+import AssetRegistry2 from "AssetRegistry" /* 16777 */;
+import AssetRegistry3 from "AssetRegistry" /* 16778 */;
+import AssetRegistry4 from "AssetRegistry" /* 16779 */;
+import AssetRegistry5 from "AssetRegistry" /* 16780 */;
+import AssetRegistry6 from "AssetRegistry" /* 16781 */;
+import AssetRegistry7 from "AssetRegistry" /* 16782 */;
+import AssetRegistry8 from "AssetRegistry" /* 16783 */;
+import AssetRegistry9 from "AssetRegistry" /* 16784 */;
+import AssetRegistry10 from "AssetRegistry" /* 16785 */;
+import AssetRegistry11 from "AssetRegistry" /* 16786 */;
+import AssetRegistry12 from "AssetRegistry" /* 16787 */;
+import AssetRegistry13 from "AssetRegistry" /* 16788 */;
+import AssetRegistry14 from "AssetRegistry" /* 16789 */;
+import AssetRegistry15 from "AssetRegistry" /* 16790 */;
+import AssetRegistry16 from "AssetRegistry" /* 16791 */;
+import AssetRegistry17 from "AssetRegistry" /* 16792 */;
+import AssetRegistry18 from "AssetRegistry" /* 16793 */;
+import AssetRegistry19 from "AssetRegistry" /* 16794 */;
+import AssetRegistry20 from "AssetRegistry" /* 16795 */;
+import AssetRegistry21 from "AssetRegistry" /* 16796 */;
+import AssetRegistry22 from "AssetRegistry" /* 16797 */;
+import AssetRegistry23 from "AssetRegistry" /* 16798 */;
+import AssetRegistry24 from "AssetRegistry" /* 16799 */;
+import AssetRegistry25 from "AssetRegistry" /* 16800 */;
+import AssetRegistry26 from "AssetRegistry" /* 16801 */;
+import AssetRegistry27 from "AssetRegistry" /* 16802 */;
+import AssetRegistry28 from "AssetRegistry" /* 16803 */;
+import AssetRegistry29 from "AssetRegistry" /* 16804 */;
+import AssetRegistry30 from "AssetRegistry" /* 16805 */;
+import AssetRegistry31 from "AssetRegistry" /* 16806 */;
 import size from "module_2" /* 2 */;
 
 const obj = { bg: AssetRegistry, cs: AssetRegistry2, da: AssetRegistry3, de: AssetRegistry4, el: AssetRegistry5, "en-GB": AssetRegistry6, "en-US": AssetRegistry7, "es-ES": AssetRegistry8, "es-419": AssetRegistry9, fi: AssetRegistry10, fr: AssetRegistry11, hi: AssetRegistry12, hr: AssetRegistry13, hu: AssetRegistry14, it: AssetRegistry15, ja: AssetRegistry16, ko: AssetRegistry17, lt: AssetRegistry18, nl: AssetRegistry19, no: AssetRegistry20, pl: AssetRegistry21, "pt-BR": AssetRegistry22, ro: AssetRegistry23, ru: AssetRegistry24, "sv-SE": AssetRegistry25, th: AssetRegistry26, tr: AssetRegistry27, uk: AssetRegistry28, vi: AssetRegistry29, "zh-CN": AssetRegistry30, "zh-TW": AssetRegistry31 };

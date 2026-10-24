@@ -1,28 +1,28 @@
-// Module ID: 12951
-// Function ID: 12952
+// Module ID: 12988
+// Function ID: 12989
 // Name: CheckpointTopServerStatsScreen
-// Dependencies: [17, 12912, 6013, 21, 4969, 587, 558, 576, 504, 12915, 1128, 3088, 12932, 12950, 6881, 5232, 12949, 9645, 12930, 12940, 12943, 2]
+// Dependencies: [17, 12949, 6015, 21, 4971, 587, 558, 576, 504, 12952, 1128, 3088, 12969, 12987, 6883, 5234, 12986, 9646, 12967, 12977, 12980, 2]
 
-// Module 12951 (CheckpointTopServerStatsScreen)
+// Module 12988 (CheckpointTopServerStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3088 from "module_3088" /* 3088 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import GuildIcon from "GuildIcon" /* 6881 */;
-import ServerIcon from "ServerIcon" /* 9645 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 12915 */;
-import CheckpointTextDefault from "CheckpointText" /* 12930 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 12932 */;
-import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 12940 */;
-import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 12943 */;
-import CheckpointGuildStatsDefault from "CheckpointGuildStats" /* 12949 */;
-import CheckpointRankTagDefault from "CheckpointRankTag" /* 12950 */;
-import CheckpointStore from "CheckpointStore" /* 12912 */;
-import CheckpointConstants from "CheckpointConstants" /* 6013 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import GuildIcon from "GuildIcon" /* 6883 */;
+import ServerIcon from "ServerIcon" /* 9646 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 12952 */;
+import CheckpointTextDefault from "CheckpointText" /* 12967 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12969 */;
+import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 12977 */;
+import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 12980 */;
+import CheckpointGuildStatsDefault from "CheckpointGuildStats" /* 12986 */;
+import CheckpointRankTagDefault from "CheckpointRankTag" /* 12987 */;
+import CheckpointStore from "CheckpointStore" /* 12949 */;
+import CheckpointConstants from "CheckpointConstants" /* 6015 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

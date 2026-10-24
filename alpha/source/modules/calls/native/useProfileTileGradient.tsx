@@ -1,10 +1,10 @@
-// Module ID: 8740
-// Function ID: 8741
+// Module ID: 8742
+// Function ID: 8743
 // Name: useProfileTileGradient
-// Dependencies: [32, 19, 558, 576, 8673, 8741, 8674, 8742, 2]
+// Dependencies: [32, 19, 558, 576, 8675, 8743, 8676, 8744, 2]
 
-// Module 8740 (useProfileTileGradient)
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8674 */;
+// Module 8742 (useProfileTileGradient)
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8676 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

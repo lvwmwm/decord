@@ -1,20 +1,20 @@
-// Module ID: 17261
-// Function ID: 17262
+// Module ID: 17293
+// Function ID: 17294
 // Name: ParentalControlsMessageRequests
-// Dependencies: [7643, 8330, 558, 8125, 16081, 17247, 7881, 6655, 16080, 11204, 1128, 2536, 2]
+// Dependencies: [7645, 8332, 558, 8127, 16105, 17279, 7883, 6657, 16104, 11205, 1128, 2536, 2]
 
-// Module 17261 (ParentalControlsMessageRequests)
+// Module 17293 (ParentalControlsMessageRequests)
 import intl2 from "intl" /* 1128 */;
 import _modDef2536 from "module_2536" /* 2536 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7881 */;
-import useSelectedTeen from "useSelectedTeen" /* 8125 */;
-import SettingsConstants from "SettingsConstants" /* 8330 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16080 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16081 */;
-import DefaultDMSettingsExperiment from "DefaultDMSettingsExperiment" /* 17247 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7643 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7883 */;
+import useSelectedTeen from "useSelectedTeen" /* 8127 */;
+import SettingsConstants from "SettingsConstants" /* 8332 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16104 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16105 */;
+import DefaultDMSettingsExperiment from "DefaultDMSettingsExperiment" /* 17279 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7645 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11204 */;
+import SettingBuilders from "SettingBuilders" /* 11205 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -72,7 +72,7 @@ let obj = {
         const obj = DefaultDMSettingsExperiment;
         const tmp2 = require;
         if (obj.shouldAgeVerifyForDMDefaultOff()) {
-          const obj2 = { entryPoint: tmp2(6655).AgeVerificationModalEntryPoint.MESSAGE_REQUESTS_SETTINGS };
+          const obj2 = { entryPoint: tmp2(6657).AgeVerificationModalEntryPoint.MESSAGE_REQUESTS_SETTINGS };
           const showAgeVerificationGetStartedModal = AgeVerificationActionCreatorsDefault.showAgeVerificationGetStartedModal;
           AgeVerificationActionCreatorsDefault;
           const result = showAgeVerificationGetStartedModal(obj2);

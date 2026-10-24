@@ -1,35 +1,35 @@
-// Module ID: 7647
-// Function ID: 7648
+// Module ID: 7649
+// Function ID: 7650
 // Name: CollectiblesActionCreators
-// Dependencies: [5, 5235, 2068, 7648, 7662, 5633, 7663, 7664, 7668, 7650, 7674, 7675, 1089, 1087, 5637, 7687, 5149, 584, 7688, 7689, 7691, 1297, 6372, 7444, 7690, 7660, 7692, 7693, 2]
+// Dependencies: [5, 5237, 2068, 7650, 7664, 5635, 7665, 7666, 7670, 7652, 7676, 7677, 1089, 1087, 5639, 7689, 5151, 584, 7690, 7691, 7693, 1297, 6374, 7446, 7692, 7662, 7694, 7695, 2]
 // Exports: areRequestOptionsEqual, claimPremiumCollectiblesProduct, closeCollectiblesShop, dispatchOpenCollectiblesShop, fetchCollectiblesCategories, fetchCollectiblesMarketings, fetchCollectiblesPurchases, fetchCollectiblesShopHome, isCollectiblesShopOpen, maybeFetchCollectiblesProduct, openCollectiblesShop, productDetailsOpened, restoreCollectiblesMarketingsFromCache, seedCollectiblesProductFromStandaloneLoad, setShopHomeConfigOverride, setSkipNumCategories, validateCollectiblesRecipient, validateCollectiblesRecipientsBatch
 
-// Module 7647 (CollectiblesActionCreators)
+// Module 7649 (CollectiblesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import RootNavigationRef from "RootNavigationRef" /* 5149 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7660 */;
-import CollectiblesDebugStore from "CollectiblesDebugStore" /* 7662 */;
-import CollectiblesCategoriesRecord from "CollectiblesCategoriesRecord" /* 7664 */;
-import CollectiblesShopHomeRecord from "CollectiblesShopHomeRecord" /* 7675 */;
-import LayerActionCreators from "LayerActionCreators" /* 7688 */;
-import utils_CollectiblesUtils from "utils/CollectiblesUtils" /* 7689 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7690 */;
-import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7691 */;
-import CollectiblesMarketingReleaseType from "CollectiblesMarketingReleaseType" /* 7692 */;
+import RootNavigationRef from "RootNavigationRef" /* 5151 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7662 */;
+import CollectiblesDebugStore from "CollectiblesDebugStore" /* 7664 */;
+import CollectiblesCategoriesRecord from "CollectiblesCategoriesRecord" /* 7666 */;
+import CollectiblesShopHomeRecord from "CollectiblesShopHomeRecord" /* 7677 */;
+import LayerActionCreators from "LayerActionCreators" /* 7690 */;
+import utils_CollectiblesUtils from "utils/CollectiblesUtils" /* 7691 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7692 */;
+import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7693 */;
+import CollectiblesMarketingReleaseType from "CollectiblesMarketingReleaseType" /* 7694 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevSettingsStore from "DevSettingsStore" /* 5235 */;
+import DevSettingsStore from "DevSettingsStore" /* 5237 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7648 */;
-import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 5633 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7663 */;
-import CollectiblesMarketingRecord from "CollectiblesMarketingRecord" /* 7668 */;
-import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7650 */;
-import CollectiblesPurchaseRecord from "CollectiblesPurchaseRecord" /* 7674 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7650 */;
+import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 5635 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7665 */;
+import CollectiblesMarketingRecord from "CollectiblesMarketingRecord" /* 7670 */;
+import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7652 */;
+import CollectiblesPurchaseRecord from "CollectiblesPurchaseRecord" /* 7676 */;
 import Constants from "Constants" /* 1087 */;
-import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 5637 */;
-import CollectiblesShopStore from "CollectiblesShopStore" /* 7687 */;
+import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 5639 */;
+import CollectiblesShopStore from "CollectiblesShopStore" /* 7689 */;
 import size from "module_2" /* 2 */;
 
 let c2, closure_4, closure_5, closure_6, options, recipient_id;
@@ -1050,7 +1050,7 @@ export { openCollectiblesShop };
 export { openCollectiblesShopMobile };
 export const isCollectiblesShopOpen = function isCollectiblesShopOpen() {
   let isCollectiblesShopRoute;
-  obj = isCollectiblesShopRoute(5149);
+  obj = isCollectiblesShopRoute(5151);
   const rootNavigationRef = obj.getRootNavigationRef();
   let tmp2 = !(null == rootNavigationRef || !rootNavigationRef.isReady());
   const tmp = null == rootNavigationRef || !rootNavigationRef.isReady();

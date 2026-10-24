@@ -1,21 +1,21 @@
-// Module ID: 10853
-// Function ID: 10854
+// Module ID: 10854
+// Function ID: 10855
 // Name: FavoritesCleanup
-// Dependencies: [5, 4825, 4821, 4901, 6769, 4824, 1098, 1211, 7408, 1104, 6820, 2]
+// Dependencies: [5, 4827, 4823, 4903, 6771, 4826, 1098, 1211, 7410, 1104, 6822, 2]
 // Exports: getFavoritesCleanupCandidates, loadFavoriteThreadsForCleanup
 
-// Module 10853 (FavoritesCleanup)
+// Module 10854 (FavoritesCleanup)
 import Constants from "Constants" /* 1098 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
-import ChannelRecord from "ChannelRecord" /* 4825 */;
-import getThreadAutoArchiveTimeOnce from "getThreadAutoArchiveTimeOnce" /* 6820 */;
-import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7408 */;
+import ChannelRecord from "ChannelRecord" /* 4827 */;
+import getThreadAutoArchiveTimeOnce from "getThreadAutoArchiveTimeOnce" /* 6822 */;
+import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7410 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
-import PermissionStore from "PermissionStore" /* 4901 */;
-import ReadStateStore from "ReadStateStore" /* 6769 */;
-import FavoriteStore from "FavoriteStore" /* 4824 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import PermissionStore from "PermissionStore" /* 4903 */;
+import ReadStateStore from "ReadStateStore" /* 6771 */;
+import FavoriteStore from "FavoriteStore" /* 4826 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;

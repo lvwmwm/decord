@@ -1,14 +1,14 @@
-// Module ID: 9562
-// Function ID: 9563
+// Module ID: 9563
+// Function ID: 9564
 // Name: useHasNewAdContent
-// Dependencies: [32, 9563, 7774, 1104, 558, 576, 7780, 504, 6715, 7494, 4805, 2]
+// Dependencies: [32, 9564, 7776, 1104, 558, 576, 7782, 504, 6717, 7496, 4807, 2]
 
-// Module 9562 (useHasNewAdContent)
+// Module 9563 (useHasNewAdContent)
 import DurationsDefault from "Durations" /* 1104 */;
-import AdCreativeType from "AdCreativeType" /* 6715 */;
+import AdCreativeType from "AdCreativeType" /* 6717 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import AdContentSeenStore from "AdContentSeenStore" /* 9563 */;
-import QuestStore from "QuestStore" /* 7774 */;
+import AdContentSeenStore from "AdContentSeenStore" /* 9564 */;
+import QuestStore from "QuestStore" /* 7776 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -91,10 +91,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasNewAdC
     tmp14 = cResult[7];
   }
   let prop = null;
-  const useSelectedTimeRecurringDismissibleContent = tmp(7494).useSelectedTimeRecurringDismissibleContent;
-  tmp(7494);
+  const useSelectedTimeRecurringDismissibleContent = tmp(7496).useSelectedTimeRecurringDismissibleContent;
+  tmp(7496);
   if (stateFromStores) {
-    prop = tmp(4805).DismissibleContent.QUEST_HOME_NEW_QUEST_BADGE;
+    prop = tmp(4807).DismissibleContent.QUEST_HOME_NEW_QUEST_BADGE;
   }
   const tmp18 = _slicedToArray(useSelectedTimeRecurringDismissibleContent(prop, tmp14, undefined, true), 2);
   if (cResult[8] === tmp18[1]) {
@@ -140,10 +140,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasNewAdC
     return false;
   }, items2);
   let prop = null;
-  const useSelectedTimeRecurringDismissibleContent = stateFromStoresArray(7494).useSelectedTimeRecurringDismissibleContent;
-  stateFromStoresArray(7494);
+  const useSelectedTimeRecurringDismissibleContent = stateFromStoresArray(7496).useSelectedTimeRecurringDismissibleContent;
+  stateFromStoresArray(7496);
   if (stateFromStores) {
-    prop = tmp(4805).DismissibleContent.QUEST_HOME_NEW_QUEST_BADGE;
+    prop = tmp(4807).DismissibleContent.QUEST_HOME_NEW_QUEST_BADGE;
   }
   const obj3 = { cooldownDurationMs: DAY };
   const tmp7 = _slicedToArray(useSelectedTimeRecurringDismissibleContent(prop, obj3, undefined, true), 2);

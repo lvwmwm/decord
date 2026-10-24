@@ -1,11 +1,11 @@
-// Module ID: 12897
-// Function ID: 12898
+// Module ID: 12934
+// Function ID: 12935
 // Name: ForwardFailedAlertModal
-// Dependencies: [19, 21, 558, 576, 12858, 1128, 12898, 2]
+// Dependencies: [19, 21, 558, 576, 12895, 1128, 12935, 2]
 
-// Module 12897 (ForwardFailedAlertModal)
+// Module 12934 (ForwardFailedAlertModal)
 import Fragment from "Fragment" /* 21 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 12858 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 12895 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

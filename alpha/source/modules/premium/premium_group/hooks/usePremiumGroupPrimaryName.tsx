@@ -1,13 +1,13 @@
-// Module ID: 14769
-// Function ID: 14770
+// Module ID: 14792
+// Function ID: 14793
 // Name: usePremiumGroupPrimaryName
-// Dependencies: [558, 576, 14770, 14774, 5023, 2]
+// Dependencies: [558, 576, 14793, 14797, 5025, 2]
 
-// Module 14769 (usePremiumGroupPrimaryName)
+// Module 14792 (usePremiumGroupPrimaryName)
 import react from "react" /* 576 */;
-import UserUtils from "UserUtils" /* 5023 */;
-import usePremiumGroupMembershipDefault from "usePremiumGroupMembership" /* 14770 */;
-import usePremiumGroupMembersDefault from "usePremiumGroupMembers" /* 14774 */;
+import UserUtils from "UserUtils" /* 5025 */;
+import usePremiumGroupMembershipDefault from "usePremiumGroupMembership" /* 14793 */;
+import usePremiumGroupMembersDefault from "usePremiumGroupMembers" /* 14797 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumGr
         tmp9 = cResult[7];
       }
       let subscriptionId;
-      const tmp8Result = tmp8(14774);
+      const tmp8Result = tmp8(14797);
       if (premiumGroupMembership != null) {
         subscriptionId = premiumGroupMembership.subscriptionId;
       }
@@ -64,7 +64,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumGr
         let nameFromUserResult = null;
         if (null != primary1) {
           let primary2;
-          const nameFromUser = tmp(5023).nameFromUser;
+          const nameFromUser = tmp(5025).nameFromUser;
           UserUtils;
           if (premiumGroupMembers != null) {
             primary2 = premiumGroupMembers.primary;

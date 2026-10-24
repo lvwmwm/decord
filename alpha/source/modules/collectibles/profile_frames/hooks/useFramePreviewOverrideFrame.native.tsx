@@ -1,13 +1,13 @@
-// Module ID: 8691
-// Function ID: 8692
+// Module ID: 8693
+// Function ID: 8694
 // Name: useFramePreviewOverrideFrame
-// Dependencies: [19, 7655, 8692, 558, 576, 1995, 2]
+// Dependencies: [19, 7657, 8694, 558, 576, 1995, 2]
 
-// Module 8691 (useFramePreviewOverrideFrame)
+// Module 8693 (useFramePreviewOverrideFrame)
 import react2 from "react" /* 576 */;
-import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8692 */;
+import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8694 */;
 import react from "react" /* 19 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7655 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7657 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

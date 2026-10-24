@@ -1,11 +1,11 @@
-// Module ID: 6875
-// Function ID: 6876
+// Module ID: 6877
+// Function ID: 6878
 // Name: MemberVerificationModalHooks
-// Dependencies: [19, 1392, 6876, 558, 576, 5003, 504, 2]
+// Dependencies: [19, 1392, 6878, 558, 576, 5005, 504, 2]
 
-// Module 6875 (MemberVerificationModalHooks)
+// Module 6877 (MemberVerificationModalHooks)
 import react2 from "react" /* 576 */;
-import InitialMemberVerificationStore2 from "InitialMemberVerificationStore" /* 6876 */;
+import InitialMemberVerificationStore2 from "InitialMemberVerificationStore" /* 6878 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

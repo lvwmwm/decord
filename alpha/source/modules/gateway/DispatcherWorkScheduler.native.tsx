@@ -1,14 +1,14 @@
-// Module ID: 14929
-// Function ID: 14930
+// Module ID: 14952
+// Function ID: 14953
 // Name: DispatcherWorkScheduler
-// Dependencies: [14928, 1087, 14930, 584, 2]
+// Dependencies: [14951, 1087, 14953, 584, 2]
 // Exports: createDispatcherWorkScheduler
 
-// Module 14929 (DispatcherWorkScheduler)
+// Module 14952 (DispatcherWorkScheduler)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
-import BasicWorkScheduler2 from "BasicWorkScheduler" /* 14930 */;
-import DispatcherWorkConstants from "DispatcherWorkConstants" /* 14928 */;
+import BasicWorkScheduler2 from "BasicWorkScheduler" /* 14953 */;
+import DispatcherWorkConstants from "DispatcherWorkConstants" /* 14951 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -17,7 +17,7 @@ let c2;
 let c3;
 let closure_4;
 let hasOwnProperty;
-const f122758 = (state) => {
+const f123040 = (state) => {
   const result = closure_0._trackAppBackgrounded(state.state === AppStates.BACKGROUND);
 };
 ({ DISPATCHER_CALLBACK_MAX_TIME_REMAINING_MS: c2, NATIVE_WORK_BACKOFF_MS: c3, NATIVE_WORK_DEADLINE_MS: closure_4, WorkIdleDeadline: hasOwnProperty } = DispatcherWorkConstants);
@@ -29,7 +29,7 @@ class DispatcherWorkScheduler extends BasicWorkScheduler {
     const tmp3 = new DispatcherWorkScheduler(tmp2, tmp, new.target, this, undefined);
     importDefault = tmp3;
     const obj = DispatcherDefault;
-    const subscription = obj.subscribe("APP_STATE_UPDATE", f122758);
+    const subscription = obj.subscribe("APP_STATE_UPDATE", f123040);
     return tmp3;
   }
   _queueIdleCallback() {
@@ -71,7 +71,7 @@ export const createDispatcherWorkScheduler = function createDispatcherWorkSchedu
     const tmp5 = new DispatcherWorkScheduler(tmp2, tmp, tmp3, this, undefined);
     importDefault = tmp5;
     const obj = DispatcherDefault;
-    const subscription = obj.subscribe("APP_STATE_UPDATE", f122758);
+    const subscription = obj.subscribe("APP_STATE_UPDATE", f123040);
     return tmp5;
   } else {
     throw new TypeError("Trying to call a non-function");

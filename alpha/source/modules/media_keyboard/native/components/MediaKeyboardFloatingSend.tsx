@@ -1,20 +1,20 @@
-// Module ID: 12222
-// Function ID: 12223
+// Module ID: 12248
+// Function ID: 12249
 // Name: MediaKeyboardFloatingSend
-// Dependencies: [32, 19, 17, 8291, 21, 4969, 587, 558, 576, 504, 5050, 1633, 5245, 683, 5256, 1128, 5678, 8918, 2]
+// Dependencies: [32, 19, 17, 8293, 21, 4971, 587, 558, 576, 504, 5052, 1633, 5247, 683, 5258, 1128, 5680, 8920, 2]
 
-// Module 12222 (MediaKeyboardFloatingSend)
+// Module 12248 (MediaKeyboardFloatingSend)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5050 */;
-import spring from "spring" /* 5245 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
+import spring from "spring" /* 5247 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8291 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8293 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

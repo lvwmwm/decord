@@ -1,24 +1,25 @@
-// Module ID: 4994
-// Function ID: 4995
+// Module ID: 4996
+// Function ID: 4997
 // Name: HexagonCampaignConstants
-// Dependencies: [1394, 1412, 1411, 1400, 1211, 4995, 2]
+// Dependencies: [1394, 1412, 1411, 1400, 1211, 4997, 2]
 
-// Module 4994 (HexagonCampaignConstants)
+// Module 4996 (HexagonCampaignConstants)
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import user from "user" /* 1400 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1411 */;
 import DisplayNameFont from "DisplayNameFont" /* 1412 */;
-import HexagonCampaignDates from "HexagonCampaignDates" /* 4995 */;
+import HexagonCampaignDates from "HexagonCampaignDates" /* 4997 */;
 import size from "module_2" /* 2 */;
 
 const PremiumTypes = PremiumConstants.PremiumTypes;
 const combined = "/quests/special-events/" + "1549285425984831508" + "/enroll";
 const HEXAGON = DisplayNameFont.DisplayNameFont.HEXAGON;
 const obj2 = { DISPLAY_NAME_STYLE: "display_name_style", CLIENT_THEME: "client_theme", APP_ICON: "app_icon" };
-const obj3 = {};
 const obj = { fontId: HEXAGON, effectId: DisplayNameEffect.DisplayNameEffect.SOLID, colors: [] };
 const frozen = Object.freeze(obj);
+const obj3 = {};
+const frozen1 = Object.freeze({ [obj2.CLIENT_THEME]: "client_theme", [obj2.DISPLAY_NAME_STYLE]: "display_name_font", [obj2.APP_ICON]: "app_icon" });
 obj3[obj2.DISPLAY_NAME_STYLE] = user.Perk.DISPLAY_NAME_STYLES;
 obj3[obj2.CLIENT_THEME] = user.Perk.CLIENT_THEMES;
 obj3[obj2.APP_ICON] = user.Perk.APP_ICONS;
@@ -31,7 +32,7 @@ const parsed1 = Date.parse(HexagonCampaignDates.HEXAGON_CAMPAIGN_END_AT);
 const parsed2 = Date.parse(HexagonCampaignDates.HEXAGON_CAMPAIGN_NON_PREMIUM_CUTOFF_AT);
 const obj4 = { [obj2.DISPLAY_NAME_STYLE]: PremiumTypes.TIER_2, [obj2.CLIENT_THEME]: PremiumTypes.TIER_2, [obj2.APP_ICON]: PremiumTypes.TIER_2 };
 const parsed3 = Date.parse(HexagonCampaignDates.HEXAGON_CAMPAIGN_PREMIUM_CUTOFF_AT);
-const frozen1 = Object.freeze(obj4);
+const frozen2 = Object.freeze(obj4);
 const result = size.fileFinishedImporting("modules/hexagon_campaign/HexagonCampaignConstants.tsx");
 
 export const HEXAGON_SPECIAL_EVENT_ID = "1549285425984831508";
@@ -39,12 +40,14 @@ export const HEXAGON_CAMPAIGN_ENROLL_ENDPOINT = combined;
 export const HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT = HEXAGON;
 export const HEXAGON_CAMPAIGN_DISPLAY_NAME_STYLES = frozen;
 export const HEXAGON_CAMPAIGN_LEARN_MORE_URL = "https://dis.gd/gtavi-theme-available-in-discord";
+export const HEXAGON_CAMPAIGN_AD_CONTENT_ID = "1549285425984831508";
 export const HexagonCampaignPerk = obj2;
 export const HexagonCampaignPerkAvailability = { HIDDEN: "hidden", LOCKED: "locked", SELECTABLE: "selectable" };
+export const HEXAGON_CAMPAIGN_PERK_ANALYTICS_ACTION = frozen1;
 export const HEXAGON_CAMPAIGN_PERK_TO_PERK = freezeResult;
 export const HEXAGON_CAMPAIGN_CLIENT_THEME_PRESET_IDS = set;
 export const HEXAGON_CAMPAIGN_START_AT_MS = parsed;
 export const HEXAGON_CAMPAIGN_END_AT_MS = parsed1;
 export const HEXAGON_CAMPAIGN_NON_PREMIUM_CUTOFF_AT_MS = parsed2;
 export const HEXAGON_CAMPAIGN_PREMIUM_CUTOFF_AT_MS = parsed3;
-export const HEXAGON_CAMPAIGN_PERK_MINIMUM_PREMIUM_TYPE = frozen1;
+export const HEXAGON_CAMPAIGN_PERK_MINIMUM_PREMIUM_TYPE = frozen2;

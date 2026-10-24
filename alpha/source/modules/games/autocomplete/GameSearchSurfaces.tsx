@@ -1,9 +1,9 @@
-// Module ID: 9504
-// Function ID: 9505
+// Module ID: 9505
+// Function ID: 9506
 // Name: GameSearchSurfaces
 // Dependencies: [2]
 
-// Module 9504 (GameSearchSurfaces)
+// Module 9505 (GameSearchSurfaces)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/games/autocomplete/GameSearchSurfaces.tsx");

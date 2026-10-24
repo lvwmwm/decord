@@ -1,19 +1,19 @@
-// Module ID: 11448
-// Function ID: 11449
+// Module ID: 11468
+// Function ID: 11469
 // Name: PostMessageTransport
-// Dependencies: [5, 32, 4820, 6773, 6376, 1087, 6774, 1104, 11449, 580, 1123, 1267, 4890, 9263, 6775, 11450, 10729, 6776, 9259, 2002, 11452, 11453, 2]
+// Dependencies: [5, 32, 4822, 6775, 6378, 1087, 6776, 1104, 11469, 580, 1123, 1267, 4892, 9264, 6777, 11470, 10730, 6778, 9260, 2002, 11472, 11473, 2]
 
-// Module 11448 (PostMessageTransport)
+// Module 11468 (PostMessageTransport)
 import _mod580 from "module_580" /* 580 */;
 import DurationsDefault from "Durations" /* 1104 */;
-import Constants2 from "Constants" /* 6376 */;
-import FramesConstants from "FramesConstants" /* 6774 */;
-import RPCErrorDefault from "RPCError" /* 9263 */;
-import RPCOpcodesDefault from "RPCOpcodes" /* 11449 */;
+import Constants2 from "Constants" /* 6378 */;
+import FramesConstants from "FramesConstants" /* 6776 */;
+import RPCErrorDefault from "RPCError" /* 9264 */;
+import RPCOpcodesDefault from "RPCOpcodes" /* 11469 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
-import FramesStore from "FramesStore" /* 6773 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
+import FramesStore from "FramesStore" /* 6775 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -454,51 +454,54 @@ class PostMessageTransport extends EventEmitter {
     return tmp4;
   }
   routeEvent(value, iframeId, arg2, postMessageToRPCClient) {
-    let tmp6;
     let tmp7;
+    let tmp8;
+    const self = this;
     if (Array.isArray(arg2)) {
-      const self = this;
-      [tmp6, tmp7] = arg2;
+      [tmp7, tmp8] = arg2;
       _slicedToArray(arg2, 2);
-      if (RPCOpcodesDefault.HANDSHAKE === tmp6) {
+      if (RPCOpcodesDefault.HANDSHAKE === tmp7) {
         if (null != value) {
           const self8 = this;
           const self9 = this;
           const obj2 = { closeCode: constants2.CLOSE_UNSUPPORTED };
-          const tmp32 = new RPCErrorDefault(obj2, "Already connected");
-          throw tmp32;
+          const tmp33 = new RPCErrorDefault(obj2, "Already connected");
+          throw tmp33;
         } else {
-          return self.handleHandshake(iframeId, tmp7, postMessageToRPCClient);
+          return self.handleHandshake(iframeId, tmp8, postMessageToRPCClient);
         }
-      } else if (RPCOpcodesDefault.FRAME === tmp6) {
-        if (!self.handleFrameTicketRefresh(value, iframeId, tmp7, postMessageToRPCClient)) {
+      } else if (RPCOpcodesDefault.FRAME === tmp7) {
+        if (!self.handleFrameTicketRefresh(value, iframeId, tmp8, postMessageToRPCClient)) {
           if (null == value) {
             const self6 = this;
             const self7 = this;
             const obj3 = { closeCode: constants2.CLOSE_UNSUPPORTED };
-            const tmp27 = new RPCErrorDefault(obj3, "Not connected");
-            throw tmp27;
+            const tmp28 = new RPCErrorDefault(obj3, "Not connected");
+            throw tmp28;
           } else {
-            return self.handleFrame(iframeId, value, tmp7);
+            return self.handleFrame(iframeId, value, tmp8);
           }
         }
-      } else if (RPCOpcodesDefault.CLOSE === tmp6) {
+      } else if (RPCOpcodesDefault.CLOSE === tmp7) {
         if (null == value) {
           const self4 = this;
           const self5 = this;
           const obj4 = { closeCode: constants2.CLOSE_UNSUPPORTED };
-          const tmp17 = new RPCErrorDefault(obj4, "Not connected");
-          throw tmp17;
+          const tmp18 = new RPCErrorDefault(obj4, "Not connected");
+          throw tmp18;
         } else {
-          return self.handleClose(value, tmp7);
+          return self.handleClose(value, tmp8);
         }
       } else {
         const self2 = this;
         const self3 = this;
         const obj = { closeCode: constants2.CLOSE_UNSUPPORTED };
-        const tmp12 = new RPCErrorDefault(obj, "Invalid opcode");
-        throw tmp12;
+        const tmp13 = new RPCErrorDefault(obj, "Invalid opcode");
+        throw tmp13;
       }
+    } else {
+      const logger = self.logger;
+      logger.warn("Protocol error: event data should be an Array!");
     }
   }
   handleFrameTicketRefresh(context, iframeId, cmd, postMessageToRPCClient) {

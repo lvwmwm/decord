@@ -1,18 +1,18 @@
-// Module ID: 15744
-// Function ID: 15745
+// Module ID: 15766
+// Function ID: 15767
 // Name: commands/activities
-// Dependencies: [5, 6376, 1087, 7866, 15699, 8825, 15709, 9263, 9049, 9257, 6776, 10727, 8153, 7883, 11372, 6373, 2]
+// Dependencies: [5, 6378, 1087, 7868, 15720, 8827, 15730, 9264, 9050, 9258, 6778, 10728, 8155, 7885, 11390, 6375, 2]
 
-// Module 15744 (commands/activities)
-import NativePermissionConstants from "NativePermissionConstants" /* 7866 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8825 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9049 */;
-import RPCErrorDefault from "RPCError" /* 9263 */;
-import validateOpenInviteDialog from "validateOpenInviteDialog" /* 15709 */;
+// Module 15766 (commands/activities)
+import NativePermissionConstants from "NativePermissionConstants" /* 7868 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8827 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9050 */;
+import RPCErrorDefault from "RPCError" /* 9264 */;
+import validateOpenInviteDialog from "validateOpenInviteDialog" /* 15730 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants_mod from "Constants" /* 6376 */;
+import Constants_mod from "Constants" /* 6378 */;
 import Constants_mod2 from "Constants" /* 1087 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15699 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15720 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, c4;
@@ -49,7 +49,7 @@ let obj2 = {
     } else {
       const obj3 = { source: constants.ACTIVITY_INVITE, targetApplicationId: id };
       id = socket.application.id;
-      const showInstantInviteActionSheet = tmp(9049).showInstantInviteActionSheet;
+      const showInstantInviteActionSheet = tmp(9050).showInstantInviteActionSheet;
       instant_invite_InstantInviteUtils;
       const result1 = showInstantInviteActionSheet(tmp4, obj3);
     }

@@ -1,20 +1,20 @@
-// Module ID: 17610
-// Function ID: 17611
+// Module ID: 17642
+// Function ID: 17643
 // Name: ChannelBadge
-// Dependencies: [19, 17, 2068, 21, 4969, 558, 576, 573, 11829, 13139, 1903, 5232, 2]
+// Dependencies: [19, 17, 2068, 21, 4971, 558, 576, 573, 11855, 13176, 1903, 5234, 2]
 
-// Module 17610 (ChannelBadge)
+// Module 17642 (ChannelBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import NumberUtils from "NumberUtils" /* 1903 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import MentionsBadgeDefault from "MentionsBadge" /* 11829 */;
-import NewBadgeDefault from "NewBadge" /* 13139 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import MentionsBadgeDefault from "MentionsBadge" /* 11855 */;
+import NewBadgeDefault from "NewBadge" /* 13176 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -172,7 +172,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelBad
           tmp5 = null;
           if (postsWithUnreadsCount > 0) {
             ({ variant: "text-xs/semibold", color: "text-muted", children: tmp2Result.humanizeValue(postsWithUnreadsCount, stateFromStores) });
-            const Text = tmp2(5232).Text;
+            const Text = tmp2(5234).Text;
             tmp5 = <View style={tmp.channelInfoContainer}>{null}</View>;
             tmp2Result = NumberUtils;
           }

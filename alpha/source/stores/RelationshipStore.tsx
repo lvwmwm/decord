@@ -1,15 +1,15 @@
-// Module ID: 4911
-// Function ID: 4912
+// Module ID: 4913
+// Function ID: 4914
 // Name: RelationshipStore
-// Dependencies: [32, 4912, 1392, 1087, 584, 504, 4889, 2]
+// Dependencies: [32, 4914, 1392, 1087, 584, 504, 4891, 2]
 
-// Module 4911 (RelationshipStore)
+// Module 4913 (RelationshipStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4889 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4891 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import MessageRecord from "MessageRecord" /* 4912 */;
+import MessageRecord from "MessageRecord" /* 4914 */;
 import UserStore from "UserStore" /* 1392 */;
 import size_mod from "module_2" /* 2 */;
 

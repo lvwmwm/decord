@@ -1,11 +1,11 @@
-// Module ID: 12268
-// Function ID: 12269
+// Module ID: 12294
+// Function ID: 12295
 // Name: conjurePublishPopoutMode
-// Dependencies: [10803, 2]
+// Dependencies: [10804, 2]
 // Exports: conjurePublishPopoutMode
 
-// Module 12268 (conjurePublishPopoutMode)
-import ConjurePublishTypes from "ConjurePublishTypes" /* 10803 */;
+// Module 12294 (conjurePublishPopoutMode)
+import ConjurePublishTypes from "ConjurePublishTypes" /* 10804 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/publish/conjurePublishPopoutMode.tsx");

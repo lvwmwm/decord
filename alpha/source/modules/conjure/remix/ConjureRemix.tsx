@@ -1,16 +1,16 @@
-// Module ID: 10696
-// Function ID: 10697
+// Module ID: 10697
+// Function ID: 10698
 // Name: ConjureRemix
-// Dependencies: [5, 10697, 584, 1128, 3830, 10724, 10806, 10202, 10719, 2]
+// Dependencies: [5, 10698, 584, 1128, 3830, 10725, 10807, 10203, 10720, 2]
 // Exports: remixConjureProjectInto
 
-// Module 10696 (ConjureRemix)
+// Module 10697 (ConjureRemix)
 import _modDef3830 from "module_3830" /* 3830 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10719 */;
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 10724 */;
-import conjureRemixConnection from "conjureRemixConnection" /* 10806 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10720 */;
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 10725 */;
+import conjureRemixConnection from "conjureRemixConnection" /* 10807 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10697 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10698 */;
 import Dispatcher from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let hasOwnProperty;
 function prepareConjureRemix(project, currentGuildId, arg2) {
   let closure_1;
   let name;
-  const f147032 = () => "rejected";
+  const f147408 = () => "rejected";
   _require = currentGuildId;
   importDefault = arg2;
   function accept(comma) {
@@ -30,7 +30,7 @@ function prepareConjureRemix(project, currentGuildId, arg2) {
     if (hasOwnProperty == null) {
       obj = conjureRemixConnection;
       const acceptRemixResult = obj.acceptRemix(_asyncToGenerator, comma);
-      hasOwnProperty = acceptRemixResult.catch(f147032);
+      hasOwnProperty = acceptRemixResult.catch(f147408);
     }
     return hasOwnProperty;
   }
@@ -208,7 +208,7 @@ function prepareConjureRemix(project, currentGuildId, arg2) {
     if (hasOwnProperty == null) {
       const tmp2Result = conjureRemixConnection;
       const acceptRemixResult = tmp2Result.acceptRemix(_asyncToGenerator, id);
-      hasOwnProperty = acceptRemixResult.catch(f147032);
+      hasOwnProperty = acceptRemixResult.catch(f147408);
     }
   });
   const tmp4 = require("ConjureActionCreators");
@@ -235,7 +235,7 @@ function prepareConjureRemix(project, currentGuildId, arg2) {
     if (hasOwnProperty == null) {
       const obj2 = conjureRemixConnection;
       const acceptRemixResult = obj2.acceptRemix(_asyncToGenerator, id);
-      hasOwnProperty = acceptRemixResult.catch(f147032);
+      hasOwnProperty = acceptRemixResult.catch(f147408);
     }
     return remix_preview;
   }, () => {

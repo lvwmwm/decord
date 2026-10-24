@@ -1,20 +1,20 @@
-// Module ID: 7213
-// Function ID: 7214
+// Module ID: 7215
+// Function ID: 7216
 // Name: NotificationSettingsModalActionCreators
-// Dependencies: [5, 6702, 1087, 4914, 1097, 584, 7208, 7210, 11, 4976, 1128, 1405, 1297, 2]
+// Dependencies: [5, 6704, 1087, 4916, 1097, 584, 7210, 7212, 11, 4978, 1128, 1405, 1297, 2]
 
-// Module 7213 (NotificationSettingsModalActionCreators)
+// Module 7215 (NotificationSettingsModalActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import intl2 from "intl" /* 1128 */;
-import NotificationConstants from "NotificationConstants" /* 4914 */;
-import shared from "shared" /* 4976 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7208 */;
-import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 7210 */;
+import NotificationConstants from "NotificationConstants" /* 4916 */;
+import shared from "shared" /* 4978 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7210 */;
+import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 7212 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6702 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6704 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -148,7 +148,7 @@ let obj = {
     const obj7 = { updateType: constants.AUTHORIZED_APP_DM, guildId, channelId: id, applicationId: id2, change: settings, previous: currentChannelSettings, label: NotificationLabel2 };
     const result1 = obj6.trackChannelNotificationSettingsUpdate(obj7);
   },
-  setForumThreadsCreated(channel, arg1) {
+  setForumThreadsCreated(guildId, arg1) {
     let NEW_FORUM_THREADS_OFF;
     let NotificationLabel;
     let tmp2;
@@ -160,10 +160,10 @@ let obj = {
       NEW_FORUM_THREADS_OFF = tmp.NEW_FORUM_THREADS_OFF;
       tmp2 = tmp;
     }
-    const obj = { guildId: channel.guild_id, channelId: channel.id, settings: { flags: UserGuildSettingsStore.getChannelFlags(channel) & ~tmp3 | NEW_FORUM_THREADS_OFF }, label: NotificationLabel.forumThreadsCreated(arg1) };
+    const obj = { guildId: guildId.guild_id, channelId: guildId.id, settings: { flags: UserGuildSettingsStore.getChannelFlags(guildId) & ~tmp3 | NEW_FORUM_THREADS_OFF }, label: NotificationLabel.forumThreadsCreated(arg1) };
     tmp3 = arg1 ? tmp2.NEW_FORUM_THREADS_OFF : tmp2.NEW_FORUM_THREADS_ON;
     const updateChannelOverrideSettings = this.updateChannelOverrideSettings;
-    ({ flags: UserGuildSettingsStore.getChannelFlags(channel) & ~tmp3 | NEW_FORUM_THREADS_OFF });
+    ({ flags: UserGuildSettingsStore.getChannelFlags(guildId) & ~tmp3 | NEW_FORUM_THREADS_OFF });
     NotificationLabel = NotificationSettingsUtils.NotificationLabel;
     const result = updateChannelOverrideSettings(obj);
   },

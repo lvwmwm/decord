@@ -1,21 +1,21 @@
-// Module ID: 15964
-// Function ID: 15965
+// Module ID: 15988
+// Function ID: 15989
 // Name: SettingSegmentedControlRenderer
-// Dependencies: [32, 19, 17, 15951, 11205, 21, 4969, 587, 558, 576, 15954, 15803, 38, 15953, 8899, 9145, 11143, 2]
+// Dependencies: [32, 19, 17, 15975, 11206, 21, 4971, 587, 558, 576, 15978, 15826, 38, 15977, 8901, 9146, 11144, 2]
 
-// Module 15964 (SettingSegmentedControlRenderer)
+// Module 15988 (SettingSegmentedControlRenderer)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 587 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 11205 */;
-import SettingsRendererConfig from "SettingsRendererConfig" /* 15803 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 15953 */;
-import SettingTreeManagerDefault from "SettingTreeManager" /* 15954 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11206 */;
+import SettingsRendererConfig from "SettingsRendererConfig" /* 15826 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 15977 */;
+import SettingTreeManagerDefault from "SettingTreeManager" /* 15978 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 15951 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 15975 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -168,7 +168,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingSegme
   let settings;
   let tmp3;
   let tmp5;
-  const f124973 = () => {
+  const f125253 = () => {
     const field = UserSettingSearchStore.getField("selected");
     if (null != field) {
       const index = settings.indexOf(field);
@@ -195,9 +195,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingSegme
   let tmp = closure_11();
   let tmp2 = _slicedToArray(react.useState(0), 2);
   [tmp3, c2] = tmp2;
-  [tmp5, r10021] = _slicedToArray(react.useState(f124973), 2);
+  [tmp5, r10021] = _slicedToArray(react.useState(f125253), 2);
   let items = [settings];
-  const tmp4 = _slicedToArray(react.useState(f124973), 2);
+  const tmp4 = _slicedToArray(react.useState(f125253), 2);
   const callback = react.useCallback((nativeEvent) => {
     _undefined(nativeEvent.nativeEvent.layout.width);
   }, []);

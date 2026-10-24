@@ -1,26 +1,18 @@
 // Module ID: 15592
 // Function ID: 15593
-// Dependencies: [15593, 15597, 15600]
+// Dependencies: [15565]
 
 // Module 15592
-import _mod15593 from "module_15593" /* 15593 */;
-import _mod15597 from "module_15597" /* 15597 */;
-import _mod15600 from "module_15600" /* 15600 */;
+import _mod15565 from "module_15565" /* 15565 */;
 
-const obj = {};
-const _URL = _mod15593.URL;
-_URL.install(obj);
-const _URLSearchParams = _mod15593.URLSearchParams;
-_URLSearchParams.install(obj);
-({ URL: exports.URL, URLSearchParams: exports.URLSearchParams } = obj);
 
-export const parseURL = _mod15597.parseURL;
-export const basicURLParse = _mod15597.basicURLParse;
-export const serializeURL = _mod15597.serializeURL;
-export const serializeHost = _mod15597.serializeHost;
-export const serializeInteger = _mod15597.serializeInteger;
-export const serializeURLOrigin = _mod15597.serializeURLOrigin;
-export const setTheUsername = _mod15597.setTheUsername;
-export const setThePassword = _mod15597.setThePassword;
-export const cannotHaveAUsernamePasswordPort = _mod15597.cannotHaveAUsernamePasswordPort;
-export const percentDecode = _mod15600.percentDecode;
+export default function(arg0) {
+  if (_mod15565(arg0)) {
+    return arg0;
+  } else {
+    const self = this;
+    const self2 = this;
+    const tmp3 = new TypeError(String(arg0) + " is not an object");
+    throw tmp3;
+  }
+};

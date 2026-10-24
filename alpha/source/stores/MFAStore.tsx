@@ -1,9 +1,9 @@
-// Module ID: 15029
-// Function ID: 15030
+// Module ID: 15052
+// Function ID: 15053
 // Name: MFAStore
 // Dependencies: [1113, 12, 504, 584, 2]
 
-// Module 15029 (MFAStore)
+// Module 15052 (MFAStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;

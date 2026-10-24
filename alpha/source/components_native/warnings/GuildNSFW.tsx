@@ -1,16 +1,16 @@
-// Module ID: 10891
-// Function ID: 10892
+// Module ID: 10892
+// Function ID: 10893
 // Name: GuildNSFW
-// Dependencies: [109, 19, 4843, 21, 558, 576, 504, 6660, 6828, 7881, 6655, 1128, 10892, 2]
+// Dependencies: [109, 19, 4845, 21, 558, 576, 504, 6662, 6830, 7883, 6657, 1128, 10893, 2]
 
-// Module 10891 (GuildNSFW)
+// Module 10892 (GuildNSFW)
 import Fragment from "Fragment" /* 21 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6828 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7881 */;
-import GatedContentDefault from "GatedContent" /* 10892 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6830 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7883 */;
+import GatedContentDefault from "GatedContent" /* 10893 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4843 */;
+import GuildStore from "GuildStore" /* 4845 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

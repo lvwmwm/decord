@@ -1,10 +1,10 @@
 // Module ID: 6959
 // Function ID: 6960
 // Name: react
-// Dependencies: [6956]
+// Dependencies: [6960]
 
 // Module 6959 (react)
-import react from "react" /* 6956 */;
+import react from "react" /* 6960 */;
 
 
-export const HeaderShownContext = react.getNamedContext("HeaderShownContext", false);
+export default react;

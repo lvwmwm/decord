@@ -1,15 +1,15 @@
-// Module ID: 15998
-// Function ID: 15999
+// Module ID: 16022
+// Function ID: 16023
 // Name: useAccountStandingStatusLabel
-// Dependencies: [558, 576, 12794, 12828, 15999, 1128, 16000, 2]
+// Dependencies: [558, 576, 12831, 12865, 16023, 1128, 16024, 2]
 
-// Module 15998 (useAccountStandingStatusLabel)
+// Module 16022 (useAccountStandingStatusLabel)
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
-import useSafetyHubAccountStanding from "useSafetyHubAccountStanding" /* 12794 */;
-import useSafetyHubInitialized from "useSafetyHubInitialized" /* 12828 */;
-import useSafetyHubFetchError from "useSafetyHubFetchError" /* 15999 */;
-import SafetyHubAccountStandingLabels from "SafetyHubAccountStandingLabels" /* 16000 */;
+import useSafetyHubAccountStanding from "useSafetyHubAccountStanding" /* 12831 */;
+import useSafetyHubInitialized from "useSafetyHubInitialized" /* 12865 */;
+import useSafetyHubFetchError from "useSafetyHubFetchError" /* 16023 */;
+import SafetyHubAccountStandingLabels from "SafetyHubAccountStandingLabels" /* 16024 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -81,7 +81,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccount
           return arg0;
         }
     };
-    formatToPlainStringResult = intl.formatToPlainString(tmp(16000).ACCOUNT_STANDING_SHORT_STATUS[safetyHubAccountStanding.state], obj4);
+    formatToPlainStringResult = intl.formatToPlainString(tmp(16024).ACCOUNT_STANDING_SHORT_STATUS[safetyHubAccountStanding.state], obj4);
   } else {
     let ZTNur7;
     const string = intl.string;

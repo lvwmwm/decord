@@ -1,12 +1,12 @@
-// Module ID: 18882
-// Function ID: 18883
+// Module ID: 18912
+// Function ID: 18913
 // Name: ParentalConsentManager
-// Dependencies: [1087, 7212, 8084, 2]
+// Dependencies: [1087, 7214, 8086, 2]
 
-// Module 18882 (ParentalConsentManager)
+// Module 18912 (ParentalConsentManager)
 import Constants from "Constants" /* 1087 */;
-import AppStoreAgeSignalReport from "AppStoreAgeSignalReport" /* 8084 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7212 */;
+import AppStoreAgeSignalReport from "AppStoreAgeSignalReport" /* 8086 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
 import size from "module_2" /* 2 */;
 
 const AppStates = Constants.AppStates;

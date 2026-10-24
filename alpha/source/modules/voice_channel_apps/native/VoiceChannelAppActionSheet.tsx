@@ -1,12 +1,12 @@
-// Module ID: 18234
-// Function ID: 18235
+// Module ID: 18266
+// Function ID: 18267
 // Name: VoiceChannelAppActionSheet
-// Dependencies: [19, 21, 1128, 3928, 558, 576, 18232, 5208, 7246, 6982, 8979, 7296, 6983, 2]
+// Dependencies: [19, 21, 1128, 3928, 558, 576, 18264, 5210, 7248, 6984, 8980, 7298, 6985, 2]
 
-// Module 18234 (VoiceChannelAppActionSheet)
+// Module 18266 (VoiceChannelAppActionSheet)
 import _modDef3928 from "module_3928" /* 3928 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
-import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 8979 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 8980 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -35,7 +35,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChann
   const cResult = obj.c(15);
   ({ selectedApplicationId, onChange } = guildId);
   guildId = guildId.guildId;
-  const obj2 = onChange(18232);
+  const obj2 = onChange(18264);
   const voiceChannelAppSettingOptions = obj2.useVoiceChannelAppSettingOptions(guildId, selectedApplicationId);
   ({ options, listState } = voiceChannelAppSettingOptions);
   if (cResult[0] !== onChange) {
@@ -65,7 +65,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChann
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { title: tmp6 };
-    const tmp11 = closure_4(tmp(7246).BottomSheetTitleHeader, obj3);
+    const tmp11 = closure_4(tmp(7248).BottomSheetTitleHeader, obj3);
     cResult[3] = tmp11;
     tmp9 = tmp11;
   } else {
@@ -152,7 +152,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChann
       }
     }
     const obj4 = { value: none, label: intl5.string(_modDef3928.KEB4Rm) };
-    let TableRadioRow = tmp(6982).TableRadioRow;
+    let TableRadioRow = tmp(6984).TableRadioRow;
     intl5 = tmp(1128).intl;
     const tmp23 = closure_4(TableRadioRow, obj4);
     cResult[9] = tmp23;
@@ -183,8 +183,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChann
       }
     }
   }
-  const obj5 = { header: tmp9, children: closure_5(tmp(6983).TableRadioGroup, obj6) };
-  const ActionSheet = tmp(7296).ActionSheet;
+  const obj5 = { header: tmp9, children: closure_5(tmp(6985).TableRadioGroup, obj6) };
+  const ActionSheet = tmp(7298).ActionSheet;
   obj6 = { accessibilityLabel: tmp6, value: tmp12, onChange: tmp5, helperText: tmp13, hasIcons: true, children: items };
   items = [tmp17, tmp20];
   cResult[10] = tmp5;
@@ -208,7 +208,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChann
   let tmp = onChange;
   let tmp2 = dependencyMap;
   guildId = guildId.guildId;
-  let obj = onChange(18232);
+  let obj = onChange(18264);
   const voiceChannelAppSettingOptions = obj.useVoiceChannelAppSettingOptions(guildId, selectedApplicationId);
   ({ options, listState } = voiceChannelAppSettingOptions);
   const items = [onChange];
@@ -224,10 +224,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChann
   }, items);
   const intl = onChange(1128).intl;
   const stringResult = intl.string(_modDef3928.AdT7SZ);
-  const obj2 = { header: closure_4(onChange(7246).BottomSheetTitleHeader, { title: stringResult }), children: tmp8(TableRadioGroup, obj3) };
-  const ActionSheet = onChange(7296).ActionSheet;
+  const obj2 = { header: closure_4(onChange(7248).BottomSheetTitleHeader, { title: stringResult }), children: tmp8(TableRadioGroup, obj3) };
+  const ActionSheet = onChange(7298).ActionSheet;
   obj3 = { accessibilityLabel: stringResult, value: selectedApplicationId, onChange: callback, helperText: stringResult1, hasIcons: true, children: items1 };
-  TableRadioGroup = onChange(6983).TableRadioGroup;
+  TableRadioGroup = onChange(6985).TableRadioGroup;
   tmp8 = closure_5;
   if (selectedApplicationId == null) {
     selectedApplicationId = none;
@@ -255,7 +255,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChann
 
   ];
   const obj4 = { value: none, label: intl5.string(_modDef3928.KEB4Rm) };
-  let TableRadioRow = tmp(6982).TableRadioRow;
+  let TableRadioRow = tmp(6984).TableRadioRow;
   intl5 = tmp(1128).intl;
   items1[1] = closure_4(TableRadioRow, obj4);
   return closure_4(ActionSheet, obj2);

@@ -1,15 +1,15 @@
-// Module ID: 10717
-// Function ID: 10718
+// Module ID: 10718
+// Function ID: 10719
 // Name: ConjureAnalytics
-// Dependencies: [6771, 1087, 7343, 5709, 1384, 2]
+// Dependencies: [6773, 1087, 7345, 5711, 1384, 2]
 // Exports: trackConjureErrored, trackConjurePublishActionClicked, trackConjureRatingFeedbackSubmitted, trackConjureRatingSubmitted, trackConjureTurnResulted
 
-// Module 10717 (ConjureAnalytics)
+// Module 10718 (ConjureAnalytics)
 import Constants from "Constants" /* 1087 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5709 */;
-import ConjureUtils from "ConjureUtils" /* 7343 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6771 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5711 */;
+import ConjureUtils from "ConjureUtils" /* 7345 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
 import size from "module_2" /* 2 */;
 
 function projectFields(projectId) {

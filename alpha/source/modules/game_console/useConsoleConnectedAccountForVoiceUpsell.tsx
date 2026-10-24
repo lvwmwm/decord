@@ -1,14 +1,14 @@
-// Module ID: 18509
-// Function ID: 18510
+// Module ID: 18541
+// Function ID: 18542
 // Name: useConsoleConnectedAccountForVoiceUpsell
-// Dependencies: [6498, 6496, 5713, 9625, 1087, 558, 576, 504, 18510, 2]
+// Dependencies: [6500, 6498, 5715, 9626, 1087, 558, 576, 504, 18542, 2]
 
-// Module 18509 (useConsoleConnectedAccountForVoiceUpsell)
+// Module 18541 (useConsoleConnectedAccountForVoiceUpsell)
 import Constants from "Constants" /* 1087 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 9625 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6498 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6496 */;
-import GameConsoleStore from "GameConsoleStore" /* 5713 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 9626 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6500 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6498 */;
+import GameConsoleStore from "GameConsoleStore" /* 5715 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

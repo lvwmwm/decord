@@ -1,14 +1,14 @@
-// Module ID: 5179
-// Function ID: 5180
+// Module ID: 5181
+// Function ID: 5182
 // Name: GuildPowerupsStore
-// Dependencies: [32, 4843, 5180, 1087, 504, 584, 2]
+// Dependencies: [32, 4845, 5182, 1087, 504, 584, 2]
 
-// Module 5179 (GuildPowerupsStore)
+// Module 5181 (GuildPowerupsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GuildStore from "GuildStore" /* 4843 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5180 */;
+import GuildStore from "GuildStore" /* 4845 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5182 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

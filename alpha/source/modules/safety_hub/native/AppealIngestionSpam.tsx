@@ -1,17 +1,17 @@
-// Module ID: 12826
-// Function ID: 12827
+// Module ID: 12863
+// Function ID: 12864
 // Name: AppealIngestionSpam
-// Dependencies: [19, 17, 21, 4969, 558, 576, 1202, 7219, 12798, 2]
+// Dependencies: [19, 17, 21, 4971, 558, 576, 1202, 7221, 12835, 2]
 
-// Module 12826 (AppealIngestionSpam)
+// Module 12863 (AppealIngestionSpam)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import native from "native" /* 1202 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7219 */;
-import AppealIngestionModal from "AppealIngestionModal" /* 12798 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7221 */;
+import AppealIngestionModal from "AppealIngestionModal" /* 12835 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealInge
     }
     return tmp11;
   }
-  const AppealIngestionModalScreen = tmp(12798).AppealIngestionModalScreen;
+  const AppealIngestionModalScreen = tmp(12835).AppealIngestionModalScreen;
   const tmp12 = <AppealIngestionModalScreen>{null}</AppealIngestionModalScreen>;
   cResult[3] = tmp4.container;
   cResult[4] = tmp8;

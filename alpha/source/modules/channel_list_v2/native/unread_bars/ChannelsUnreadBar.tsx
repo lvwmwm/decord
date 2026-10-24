@@ -1,22 +1,22 @@
-// Module ID: 17574
-// Function ID: 17575
+// Module ID: 17606
+// Function ID: 17607
 // Name: ChannelsUnreadBar
-// Dependencies: [32, 19, 17, 12033, 1087, 21, 5050, 4969, 587, 1384, 558, 576, 9708, 5251, 11055, 5709, 16409, 5245, 5246, 8559, 12531, 12529, 1128, 5232, 2]
+// Dependencies: [32, 19, 17, 12059, 1087, 21, 5052, 4971, 587, 1384, 558, 576, 9709, 5253, 11056, 5711, 16441, 5247, 5248, 8561, 12565, 12563, 1128, 5234, 2]
 
-// Module 17574 (ChannelsUnreadBar)
+// Module 17606 (ChannelsUnreadBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5050 */;
-import spring from "spring" /* 5245 */;
-import springPresets from "springPresets" /* 5246 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5709 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5052 */;
+import spring from "spring" /* 5247 */;
+import springPresets from "springPresets" /* 5248 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5711 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12033 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12059 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

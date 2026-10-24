@@ -1,15 +1,15 @@
-// Module ID: 10498
-// Function ID: 10499
+// Module ID: 10499
+// Function ID: 10500
 // Name: createOrReuseGiftOrder
-// Dependencies: [5, 19, 5696, 1394, 1098, 3, 7539, 1384, 2049, 4785, 2]
+// Dependencies: [5, 19, 5698, 1394, 1098, 3, 7541, 1384, 2049, 4787, 2]
 // Exports: useCreateOrReuseGiftOrder
 
-// Module 10498 (createOrReuseGiftOrder)
+// Module 10499 (createOrReuseGiftOrder)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1098 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import _modDef2049 from "module_2049" /* 2049 */;
-import PaymentConstants from "PaymentConstants" /* 5696 */;
+import PaymentConstants from "PaymentConstants" /* 5698 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

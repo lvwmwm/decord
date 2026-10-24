@@ -1,9 +1,9 @@
-// Module ID: 15027
-// Function ID: 15028
+// Module ID: 15050
+// Function ID: 15051
 // Name: ChannelSKUStore
 // Dependencies: [504, 584, 2]
 
-// Module 15027 (ChannelSKUStore)
+// Module 15050 (ChannelSKUStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

@@ -1,22 +1,22 @@
-// Module ID: 14435
-// Function ID: 14436
+// Module ID: 14459
+// Function ID: 14460
 // Name: ShopNitroUpsellPromoSheet
-// Dependencies: [19, 1087, 21, 558, 576, 7251, 9682, 5028, 9671, 9915, 14436, 1128, 10177, 5242, 6694, 10851, 2]
+// Dependencies: [19, 1087, 21, 558, 576, 7253, 9683, 5030, 9672, 9916, 14460, 1128, 10178, 5244, 6696, 10852, 2]
 
-// Module 14435 (ShopNitroUpsellPromoSheet)
+// Module 14459 (ShopNitroUpsellPromoSheet)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 5028 */;
-import components_Button_Button from "components/Button/Button" /* 5242 */;
-import ButtonGroup2 from "ButtonGroup" /* 6694 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7251 */;
-import PremiumUpsellUtils from "PremiumUpsellUtils" /* 9671 */;
-import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9682 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9915 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10177 */;
-import PromoSheet2 from "PromoSheet" /* 10851 */;
-import DiscountsMegaphoneSpotIllustration from "DiscountsMegaphoneSpotIllustration" /* 14436 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 5030 */;
+import components_Button_Button from "components/Button/Button" /* 5244 */;
+import ButtonGroup2 from "ButtonGroup" /* 6696 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7253 */;
+import PremiumUpsellUtils from "PremiumUpsellUtils" /* 9672 */;
+import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9683 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9916 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10178 */;
+import PromoSheet2 from "PromoSheet" /* 10852 */;
+import DiscountsMegaphoneSpotIllustration from "DiscountsMegaphoneSpotIllustration" /* 14460 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -54,7 +54,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopNitroUps
   const analyticsLocations2 = useAnalyticsLocationsDefault(tmp4).analyticsLocations;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const tmpResult = PremiumFeatureUpsellUtils;
-    const upsellType = tmpResult.getUpsellType(tmp(5028).EntitlementFeatureNames.SHOP_MEMBER_PRICING);
+    const upsellType = tmpResult.getUpsellType(tmp(5030).EntitlementFeatureNames.SHOP_MEMBER_PRICING);
     cResult[2] = upsellType;
     tmp7 = upsellType;
   } else {

@@ -1,15 +1,15 @@
-// Module ID: 8498
-// Function ID: 8499
+// Module ID: 8500
+// Function ID: 8501
 // Name: transformNativeMarkupMention
-// Dependencies: [8499, 5980, 5978, 5990, 8580, 2]
+// Dependencies: [8501, 5982, 5980, 5992, 8582, 2]
 // Exports: applyChannelMentionIcons, transformNativeMention
 
-// Module 8498 (transformNativeMarkupMention)
-import MarkupTypes from "MarkupTypes" /* 5978 */;
-import MarkupRules from "MarkupRules" /* 5980 */;
-import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 5990 */;
-import PlatformMarkupRules from "PlatformMarkupRules" /* 8499 */;
-import StaticMentionRoutes from "StaticMentionRoutes" /* 8580 */;
+// Module 8500 (transformNativeMarkupMention)
+import MarkupTypes from "MarkupTypes" /* 5980 */;
+import MarkupRules from "MarkupRules" /* 5982 */;
+import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 5992 */;
+import PlatformMarkupRules from "PlatformMarkupRules" /* 8501 */;
+import StaticMentionRoutes from "StaticMentionRoutes" /* 8582 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup_v2/native/transformNativeMarkupMention.tsx");
@@ -37,10 +37,10 @@ export const transformNativeMention = function transformNativeMention(value, all
     return hydrateUserMention(obj5, allowGameMentions);
   } else if ("everyone" === type) {
     const obj15 = MarkupRules;
-    return obj15.hydrateUserMention({ fullMatch: "@everyone", id: "application", everyoneOrHere: null }, allowGameMentions);
+    return obj15.hydrateUserMention({ fullMatch: "@everyone", id: "application", everyoneOrHere: false }, allowGameMentions);
   } else if ("here" === type) {
     const obj14 = MarkupRules;
-    return obj14.hydrateUserMention({ fullMatch: "@here", id: "application", everyoneOrHere: true }, allowGameMentions);
+    return obj14.hydrateUserMention({ fullMatch: "@here", id: "application", everyoneOrHere: false }, allowGameMentions);
   } else if ("role" === type) {
     const obj13 = MarkupRules;
     const str8 = value.value;

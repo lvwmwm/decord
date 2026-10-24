@@ -1,16 +1,16 @@
-// Module ID: 13473
-// Function ID: 13474
+// Module ID: 13510
+// Function ID: 13511
 // Name: GuildProgressCircle
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 13474, 13353, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 13511, 13390, 2]
 
-// Module 13473 (GuildProgressCircle)
+// Module 13510 (GuildProgressCircle)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ProgressCircleDefault from "ProgressCircle" /* 13474 */;
+import ProgressCircleDefault from "ProgressCircle" /* 13511 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const GuildProgressUtils = tmp(13353);
+const GuildProgressUtils = tmp(13390);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { wrapper: { position: "relative" }, circle: { position: "absolute" }, progressCircle: obj2 };

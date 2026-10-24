@@ -1,436 +1,114 @@
 // Module ID: 12650
 // Function ID: 12651
-// Dependencies: [32, 5, 12537, 12651, 12545, 12540, 12553, 12546]
-// Exports: addFetchEndInstrumentationHandler, addFetchInstrumentationHandler
+// Dependencies: [12580, 12582]
+// Exports: applyAggregateErrorsToEvent
 
 // Module 12650
-import _mod12537 from "module_12537" /* 12537 */;
-import _mod12540 from "module_12540" /* 12540 */;
-import _mod12545 from "module_12545" /* 12545 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12553 */;
-import _mod12651 from "module_12651" /* 12651 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _mod12580 from "module_12580" /* 12580 */;
+import _mod12582 from "module_12582" /* 12582 */;
 
 const require = globalThis.__r;
-let _require, c1, c3, c6, closure_4;
+let _require, dependencyMap, length;
 
-let obj = function _resolveResponse() {
-  obj = _asyncToGenerator(async (arg0, value) => {
-    let closure_2;
-    let closure_0 = arg0;
-    let closure_1 = value;
-    if (c6 === 2) {
-      c6 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      let c5;
-      try {
-        let reader;
-        let timeout2;
-        let done;
-        let c4;
-        c6 = 2;
-        if (0 === c3) {
-          if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            closure_0 = closure_1;
-            let body;
-            reader = undefined;
-            let timeout;
-            c4 = undefined;
-            timeout2 = undefined;
-            done = undefined;
-            if (closure_0) {
-              if (closure_0.body) {
-                body = tmp44.body;
-                reader = body.getReader();
-                const _setTimeout = setTimeout;
-                timeout = setTimeout(() => {
-                  const cancelResult = closure_1_1.cancel();
-                  cancelResult.then(null, () => {
-
-                  });
-                }, 90000);
-                c4 = true;
-                const tmp26 = c4;
-                if (!tmp26) {
-                  const _clearTimeout5 = clearTimeout;
-                  clearTimeout(timeout);
-                  reader.releaseLock();
-                  let cancelResult = body.cancel();
-                  const nextPromise = cancelResult.then(null, () => {
-
-                  });
-                }
-              }
-            }
-            c6 = 3;
-            return { value: "IconComponent", done: null };
-          }
-        } else if (1 === c3) {
-          c5 = 0;
-          const _clearTimeout4 = clearTimeout;
-          clearTimeout(timeout2);
-          throw closure_4;
-        } else {
-          if (2 === c3) {
-            c5 = 1;
-            c4 = false;
-          } else if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 0;
-            const _clearTimeout2 = clearTimeout;
-            clearTimeout(timeout2);
-            c6 = 3;
-            obj = { value, done: true };
-            return obj;
-          } else {
-            done = value.done;
-            const _clearTimeout = clearTimeout;
-            clearTimeout(timeout2);
-            const tmp7 = done;
-            if (tmp7) {
-              closure_0();
-              c4 = false;
-            }
-            c5 = 1;
-          }
-          c5 = 0;
-          const _clearTimeout3 = clearTimeout;
-          clearTimeout(timeout2);
-        }
-        c5 = 2;
-        const _setTimeout2 = setTimeout;
-        timeout2 = setTimeout(() => {
-          const cancelResult = closure_1_1.cancel();
-          cancelResult.then(null, () => {
-
-          });
-        }, 5000);
-        c3 = 3;
-        c6 = 1;
-        const obj4 = { value: reader.read(), done: false };
-        return obj4;
-      } catch (tmp36) {
-        closure_4 = tmp36;
-        if (0 === c5) {
-          c6 = 3;
-          throw tmp36;
-        } else if (1 === tmp38) {
-          c3 = 1;
-        } else {
-          c3 = 2;
-        }
-      }
-    }
-  });
-  return obj(...arguments);
-};
-function streamHandler(clone) {
-  function resolveResponse(arg0, arg1) {
-    return obj(...arguments);
-  }
-  const response = clone;
-  try {
-    !resolveResponse(clone.clone(), () => {
-      let obj2;
-      obj = { endTimestamp: 1000 * obj2.timestampInSeconds(), response };
-      const triggerHandlers = _mod12537.triggerHandlers;
-      obj2 = _browserPerformanceTimeOriginMode;
-      triggerHandlers("fetch-body-resolved", obj);
-    });
-  } catch (err) {
-  }
-}
-function parseFetchArgs(arg0) {
-  let str3;
-  let str5;
-  let str8;
-  let tmp7;
-  if (0 === arg0.length) {
-    return { method: "GET", url: "" };
-  } else if (2 === arg0.length) {
-    [str5, tmp7] = arg0;
-    let tmp8 = str5;
-    _slicedToArray(arg0, 2);
-    if (typeof str5 !== "string") {
-      let str6 = "";
-      let str7 = "";
-      if (str5) {
-        const tmp9 = str5 && typeof str5 === "object" && str5.url;
-        if (tmp9) {
-          str6 = str5.url;
-        } else if (str5.toString) {
-          str6 = str5.toString();
-        }
-        str7 = str6;
-      }
-      tmp8 = str7;
-    }
-    const request = { url: tmp8, method: str8 };
-    str8 = "GET";
-    const tmp10 = tmp7 && typeof tmp7 === "object" && tmp7.method;
-    if (tmp10) {
-      const _String2 = String;
-      const str9 = String(tmp7.method);
-      str8 = str9.toUpperCase();
-    }
-    return request;
+function aggregateExceptionsFromError(fn, arg1, arg2, errors, source, arg5, mechanism, exception_id) {
+  let closure_1;
+  let closure_2;
+  _require = fn;
+  dependencyMap = arg1;
+  aggregateExceptionsFromError = arg2;
+  let closure_3 = source;
+  if (arg5.length >= arg2 + 1) {
+    return arg5;
   } else {
-    let tmp2 = str10;
-    if (typeof arg0[0] !== "string") {
-      let str = "";
-      let str2 = "";
-      if (arg0[0]) {
-        const tmp = arg0[0] && typeof arg0[0] === "object" && arg0[0].url;
-        if (tmp) {
-          str = str10.url;
-        } else if (arg0[0].toString) {
-          str = str10.toString();
+    let items = [];
+    HermesBuiltin.arraySpread(items, arg5, 0);
+    length = items;
+    let obj3 = require("module_12580");
+    const _Error = Error;
+    if (obj3.isInstanceOf(errors[source], Error)) {
+      mechanism.mechanism = mechanism.mechanism || { type: "generic", handled: true };
+      let obj = { exception_id };
+      const tmp2 = obj;
+      let merged = Object.assign(mechanism.mechanism);
+      const tmp4 = "AggregateError" === mechanism.type && { is_exception_group: true };
+      let tmp6 = tmp4;
+      let merged1 = Object.assign(tmp4);
+      mechanism.mechanism = obj;
+      const tmp8 = fn(arg1, errors[source]);
+      length = length.length;
+      tmp8.mechanism = tmp8.mechanism || { type: "generic", handled: true };
+      let obj2 = { type: "chained", source, exception_id: length, parent_id: exception_id };
+      let merged2 = Object.assign(tmp8.mechanism);
+      tmp8.mechanism = obj2;
+      const tmp12 = aggregateExceptionsFromError;
+      const items1 = [tmp8];
+      let tmp13 = errors[source];
+      HermesBuiltin.arraySpread(items1, length, 1);
+      length = aggregateExceptionsFromError(fn, arg1, arg2, tmp13, source, items1, tmp8, length);
+    }
+    const _Array = Array;
+    if (Array.isArray(errors.errors)) {
+      errors = errors.errors;
+      const item = errors.forEach((item, index) => {
+        const obj = _mod12580;
+        if (obj.isInstanceOf(item, Error)) {
+          mechanism.mechanism = mechanism.mechanism || { type: "generic", handled: true };
+          const obj2 = { exception_id };
+          const merged = Object.assign(tmp2.mechanism);
+          const tmp6 = "AggregateError" === mechanism.type && { is_exception_group: true };
+          const merged1 = Object.assign(tmp6);
+          mechanism.mechanism = obj2;
+          const tmp13 = fn(closure_1, item);
+          length = length.length;
+          const _HermesInternal = HermesInternal;
+          mechanism = tmp13.mechanism;
+          const combined = "errors[" + index + "]";
+          if (!mechanism) {
+            mechanism = { type: "generic", handled: true };
+          }
+          tmp13.mechanism = mechanism;
+          const obj3 = { type: "chained", source: combined, exception_id: length, parent_id: exception_id };
+          const merged2 = Object.assign(tmp13.mechanism);
+          tmp13.mechanism = obj3;
+          const items = [tmp13];
+          HermesBuiltin.arraySpread(items, length, 1);
+          length = aggregateExceptionsFromError(tmp11, tmp12, closure_2, item, source, items, tmp13, length);
         }
-        str2 = str;
-      }
-      tmp2 = str2;
+      });
     }
-    const request1 = { url: tmp2, method: str3 };
-    str3 = "GET";
-    const tmp3 = arg0[0] && typeof arg0[0] === "object" && arg0[0].method;
-    if (tmp3) {
-      const _String = String;
-      const str4 = String(arg0[0].method);
-      str3 = str4.toUpperCase();
-    }
-    return request1;
+    return length;
   }
 }
 
-export const addFetchEndInstrumentationHandler = function addFetchEndInstrumentationHandler(arg0) {
-  obj = _mod12537;
-  obj.addHandler("fetch-body-resolved", arg0);
-  const obj2 = _mod12537;
-  obj2.maybeInstrument("fetch-body-resolved", () => {
-    let closure_0 = closure_5;
-    {
-      obj = closure_0(closure_1[4]);
-      obj.fill(closure_0(closure_1[5]).GLOBAL_OBJ, "fetch", (arg0) => {
-        closure_0 = arg0;
-        return () => {
-          let obj2;
-          const items = [...arguments];
-          const error = new Error();
-          const request = closure_3_6(items);
-          obj = { args: items, fetchData: { method: request.method, url: request.url }, startTimestamp: 1000 * obj2.timestampInSeconds(), virtualError: error };
-          let tmp2 = closure_3_0;
-          obj2 = closure_3_0(closure_3_1[6]);
-          const tmp4 = closure_2_0;
-          if (!tmp4) {
-            let obj3 = {};
-            let tmp6 = obj3;
-            let triggerHandlers = tmp2(tmp3[2]).triggerHandlers;
-            tmp2(closure_3_1[2]);
-            let merged = Object.assign(obj);
-            triggerHandlers("fetch", obj3);
+export const applyAggregateErrorsToEvent = function applyAggregateErrorsToEvent(arg0, arg1, arg2, arg3, arg4, exception, originalException) {
+  let num = arg2;
+  if (arg2 === undefined) {
+    num = 250;
+  }
+  if (exception.exception) {
+    if (exception.exception.values) {
+      const tmp = originalException;
+      if (tmp) {
+        let obj = num(12580);
+        const _Error = Error;
+        if (obj.isInstanceOf(originalException.originalException, Error)) {
+          let tmp5;
+          if (exception.exception.values.length > 0) {
+            tmp5 = exception.exception.values[exception.exception.values.length - 1];
           }
-          const applyResult = closure_0.apply(tmp2(closure_3_1[5]).GLOBAL_OBJ, items);
-          const then = applyResult.then;
-          closure_0 = closure_3_3(function*(arg0, value) {
-            let obj2;
-            value = arg0;
-            if (c1 === 2) {
-              c1 = 3;
-              throw new TypeError("Generator functions may not be called on executing generators");
-            } else if (tmp2 === 3) {
-              if (arg0 === 1) {
-                throw value;
-              } else if (arg0 === 2) {
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                return { value: "IconComponent", done: null };
+          if (tmp5) {
+            exception = exception.exception;
+            const arr = aggregateExceptionsFromError(arg0, arg1, arg4, originalException.originalException, arg3, exception.exception.values, tmp5, 0);
+            exception.values = arr.map((value) => {
+              if (value.value) {
+                const obj = _mod12582;
+                value.value = obj.truncate(value.value, num);
               }
-            } else {
-              try {
-                c1 = 2;
-                if (arg0 === 1) {
-                  c1 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c1 = 3;
-                  const obj4 = { value, done: true };
-                  return obj4;
-                } else {
-                  if (value) {
-                    tmp16(value);
-                  } else {
-                    obj = { endTimestamp: 1000 * obj2.timestampInSeconds(), response: value };
-                    const triggerHandlers = closure_3_0(closure_3_1[2]).triggerHandlers;
-                    const merged = Object.assign(c1);
-                    obj2 = closure_3_0(closure_3_1[6]);
-                    triggerHandlers("fetch", obj);
-                  }
-                  c1 = 3;
-                  const obj5 = { value, done: true };
-                  return obj5;
-                }
-              } catch (tmp11) {
-                c1 = 3;
-                throw tmp11;
-              }
-            }
-          });
-          return then(function(arg0) {
-            return closure_0(...arguments);
-          }, (error) => {
-            let obj2;
-            obj = { endTimestamp: 1000 * obj2.timestampInSeconds(), error };
-            const triggerHandlers = error(closure_3_1[2]).triggerHandlers;
-            const merged = Object.assign(obj);
-            obj2 = error(closure_3_1[6]);
-            triggerHandlers("fetch", obj);
-            const obj3 = error(closure_3_1[7]);
-            const tmp = error;
-            const tmp2 = closure_3_1;
-            const tmp6 = obj3.isError(error) && undefined === error.stack;
-            if (tmp6) {
-              error.stack = error.stack;
-              const tmpResult = tmp(tmp2[4]);
-              const result = tmpResult.addNonEnumerableProperty(error, "framesToPop", 1);
-            }
-            throw error;
-          });
-        };
-      });
-    }
-  });
-};
-export const addFetchInstrumentationHandler = function addFetchInstrumentationHandler(arg0, arg1) {
-  _require = arg1;
-  obj = require("module_12537");
-  obj.addHandler("fetch", arg0);
-  let obj2 = require("module_12537");
-  obj2.maybeInstrument("fetch", () => {
-    let flag = closure_0;
-    if (closure_0 === undefined) {
-      flag = false;
-    }
-    if (flag) {
-      let tmp = require;
-      let tmp2 = dependencyMap;
-      obj = _mod12651;
-      flag = !obj.supportsNativeFetch();
-    }
-    if (!flag) {
-      const tmp3 = require;
-      let tmp4 = dependencyMap;
-      let obj2 = _mod12545;
-      const str = "fetch";
-      obj2.fill(_mod12540.GLOBAL_OBJ, "fetch", (arg0) => {
-        closure_0 = arg0;
-        return () => {
-          let obj2;
-          const items = [...arguments];
-          const error = new Error();
-          const request = closure_3_6(items);
-          obj = { args: items, fetchData: { method: request.method, url: request.url }, startTimestamp: 1000 * obj2.timestampInSeconds(), virtualError: error };
-          let tmp2 = closure_3_0;
-          obj2 = closure_3_0(closure_3_1[6]);
-          const tmp4 = closure_2_0;
-          if (!tmp4) {
-            let obj3 = {};
-            let tmp6 = obj3;
-            let triggerHandlers = tmp2(tmp3[2]).triggerHandlers;
-            tmp2(closure_3_1[2]);
-            let merged = Object.assign(obj);
-            triggerHandlers("fetch", obj3);
+              return value;
+            });
           }
-          const applyResult = closure_0.apply(tmp2(closure_3_1[5]).GLOBAL_OBJ, items);
-          const then = applyResult.then;
-          closure_0 = closure_3_3(function*(arg0, value) {
-            let obj2;
-            value = arg0;
-            if (c1 === 2) {
-              c1 = 3;
-              throw new TypeError("Generator functions may not be called on executing generators");
-            } else if (tmp2 === 3) {
-              if (arg0 === 1) {
-                throw value;
-              } else if (arg0 === 2) {
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                return { value: "IconComponent", done: null };
-              }
-            } else {
-              try {
-                c1 = 2;
-                if (arg0 === 1) {
-                  c1 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c1 = 3;
-                  const obj4 = { value, done: true };
-                  return obj4;
-                } else {
-                  if (value) {
-                    tmp16(value);
-                  } else {
-                    obj = { endTimestamp: 1000 * obj2.timestampInSeconds(), response: value };
-                    const triggerHandlers = closure_3_0(closure_3_1[2]).triggerHandlers;
-                    const merged = Object.assign(c1);
-                    obj2 = closure_3_0(closure_3_1[6]);
-                    triggerHandlers("fetch", obj);
-                  }
-                  c1 = 3;
-                  const obj5 = { value, done: true };
-                  return obj5;
-                }
-              } catch (tmp11) {
-                c1 = 3;
-                throw tmp11;
-              }
-            }
-          });
-          return then(function(arg0) {
-            return closure_0(...arguments);
-          }, (error) => {
-            let obj2;
-            obj = { endTimestamp: 1000 * obj2.timestampInSeconds(), error };
-            const triggerHandlers = error(closure_3_1[2]).triggerHandlers;
-            const merged = Object.assign(obj);
-            obj2 = error(closure_3_1[6]);
-            triggerHandlers("fetch", obj);
-            const obj3 = error(closure_3_1[7]);
-            const tmp = error;
-            const tmp2 = closure_3_1;
-            const tmp6 = obj3.isError(error) && undefined === error.stack;
-            if (tmp6) {
-              error.stack = error.stack;
-              const tmpResult = tmp(tmp2[4]);
-              const result = tmpResult.addNonEnumerableProperty(error, "framesToPop", 1);
-            }
-            throw error;
-          });
-        };
-      });
+        }
+      }
     }
-  });
+  }
 };
-export { parseFetchArgs };

@@ -1,22 +1,22 @@
-// Module ID: 18638
-// Function ID: 18639
+// Module ID: 18670
+// Function ID: 18671
 // Name: LaunchPadWrapper
-// Dependencies: [32, 19, 17, 11200, 1087, 21, 4969, 587, 558, 576, 11716, 1123, 5148, 18639, 8757, 1267, 18636, 5210, 5970, 6883, 5050, 18640, 1128, 18642, 5937, 5966, 2]
+// Dependencies: [32, 19, 17, 11201, 1087, 21, 4971, 587, 558, 576, 11736, 1123, 5150, 18671, 8759, 1267, 18668, 5212, 5972, 6885, 5052, 18672, 1128, 18674, 5939, 5968, 2]
 
-// Module 18638 (LaunchPadWrapper)
+// Module 18670 (LaunchPadWrapper)
 import nativeDefault from "native" /* 587 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import HapticUtils from "HapticUtils" /* 5210 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11200 */;
-import RouteManagerDefault from "RouteManager" /* 11716 */;
-import LaunchPadPullTabCache from "LaunchPadPullTabCache" /* 18636 */;
+import HapticUtils from "HapticUtils" /* 5212 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11201 */;
+import RouteManagerDefault from "RouteManager" /* 11736 */;
+import LaunchPadPullTabCache from "LaunchPadPullTabCache" /* 18668 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -240,7 +240,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function LaunchPadW
               const tmp5 = closure_3;
               if (tmp5) {
                 const tmp2Result = HapticUtils;
-                const result1 = tmp2Result.triggerHapticFeedback(tmp2(5210).HapticFeedbackTypes.IMPACT_LIGHT);
+                const result1 = tmp2Result.triggerHapticFeedback(tmp2(5212).HapticFeedbackTypes.IMPACT_LIGHT);
               }
             }
           }
@@ -370,7 +370,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function LaunchPadW
         const tmp5 = closure_3;
         if (tmp5) {
           const tmp2Result = HapticUtils;
-          const result1 = tmp2Result.triggerHapticFeedback(tmp2(5210).HapticFeedbackTypes.IMPACT_LIGHT);
+          const result1 = tmp2Result.triggerHapticFeedback(tmp2(5212).HapticFeedbackTypes.IMPACT_LIGHT);
         }
       }
     }

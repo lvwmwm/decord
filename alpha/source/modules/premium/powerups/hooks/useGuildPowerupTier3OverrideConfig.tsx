@@ -1,12 +1,12 @@
-// Module ID: 13438
-// Function ID: 13439
+// Module ID: 13475
+// Function ID: 13476
 // Name: useGuildPowerupTier3OverrideConfig
-// Dependencies: [4843, 1087, 558, 576, 504, 1128, 2568, 2]
+// Dependencies: [4845, 1087, 558, 576, 504, 1128, 2568, 2]
 
-// Module 13438 (useGuildPowerupTier3OverrideConfig)
+// Module 13475 (useGuildPowerupTier3OverrideConfig)
 import Constants from "Constants" /* 1087 */;
 import _modDef2568 from "module_2568" /* 2568 */;
-import GuildStore from "GuildStore" /* 4843 */;
+import GuildStore from "GuildStore" /* 4845 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

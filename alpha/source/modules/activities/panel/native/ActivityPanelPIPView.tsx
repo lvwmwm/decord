@@ -1,9 +1,9 @@
-// Module ID: 18422
-// Function ID: 18423
+// Module ID: 18454
+// Function ID: 18455
 // Name: ActivityPanelPIPView
-// Dependencies: [19, 17, 4970, 11491, 4821, 4820, 2026, 5607, 18329, 1087, 10897, 21, 1202, 4969, 587, 558, 576, 1633, 504, 1499, 18418, 10900, 5050, 18423, 5035, 5204, 5245, 18424, 18425, 1128, 5295, 4890, 11436, 18420, 2]
+// Dependencies: [19, 17, 4972, 11511, 4823, 4822, 2026, 5609, 18361, 1087, 10898, 21, 1202, 4971, 587, 558, 576, 1633, 504, 1499, 18450, 10901, 5052, 18455, 5037, 5206, 5247, 18456, 18457, 1128, 5297, 4892, 11456, 18452, 2]
 
-// Module 18422 (ActivityPanelPIPView)
+// Module 18454 (ActivityPanelPIPView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -12,22 +12,22 @@ import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import Constants2 from "Constants" /* 2026 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5050 */;
-import timing from "timing" /* 5204 */;
-import spring from "spring" /* 5245 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 10897 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10900 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 18329 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 18420 */;
-import MorphablePanelUtils from "MorphablePanelUtils" /* 18423 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
+import timing from "timing" /* 5206 */;
+import spring from "spring" /* 5247 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 10898 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10901 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 18361 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 18452 */;
+import MorphablePanelUtils from "MorphablePanelUtils" /* 18455 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4970 */;
-import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 11491 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5607 */;
+import AccessibilityStore from "AccessibilityStore" /* 4972 */;
+import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 11511 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5609 */;
 import native from "native" /* 1202 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let obj2;
 let obj3;
 let tmp;
 let unpackModuleId;
-const native2 = tmp(5035);
+const native2 = tmp(5037);
 let View = react_native.View;
 const ActivityLayoutMode = Constants2.ActivityLayoutMode;
 let ACTIVITY_PIP_SIZE = ActivityPanelConstants.ACTIVITY_PIP_SIZE;
@@ -533,7 +533,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseActivit
           obj.runOnJS(transitionCleanUp)();
         }
       }
-      let obj = { transitionState, TransitionStates: tmp(5035).TransitionStates, runOnJS: tmp(5050).runOnJS, transitionCleanUp };
+      let obj = { transitionState, TransitionStates: tmp(5037).TransitionStates, runOnJS: tmp(5052).runOnJS, transitionCleanUp };
       transitionComplete.__closure = obj;
       transitionComplete.__workletHash = 1100699381874;
       transitionComplete.__initData = __initData;
@@ -551,7 +551,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseActivit
       const tmpResult3 = spring;
       items = [{ translateY: tmpResult3.withSpring(y2, wrapperOffset.get().gestureActive ? closure_12 : map1, "animate-always") }, ];
       ({ translateY: tmpResult3.withSpring(y2, wrapperOffset.get().gestureActive ? closure_12 : map1, "animate-always") });
-      const withSpring = tmp(5245).withSpring;
+      const withSpring = tmp(5247).withSpring;
       spring;
       let tmp22;
       const tmp21 = wrapperOffset.get().gestureActive ? closure_12 : map1;
@@ -758,7 +758,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         }
       }
     }
-    const tmp23 = <closure_28 transitionState={transitionState} transitionCleanUp={transitionCleanUp} pipOrientationLockState={stateFromStores} hasActivity={null != activity} context={applicationId(18420)}>{tmp17}</closure_28>;
+    const tmp23 = <closure_28 transitionState={transitionState} transitionCleanUp={transitionCleanUp} pipOrientationLockState={stateFromStores} hasActivity={null != activity} context={applicationId(18452)}>{tmp17}</closure_28>;
     cResult[11] = stateFromStores;
     cResult[12] = null != activity;
     cResult[13] = tmp17;
@@ -768,8 +768,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }
   cResult[8] = stateFromStores1;
   cResult[9] = landscapeSafeAreasConfig;
-  cResult[10] = jsx(applicationId(11436), { channel: stateFromStores1, layoutMode: ActivityLayoutMode.PIP, portraitSafeAreasConfig, landscapeSafeAreasConfig });
-  const tmp18 = jsx(applicationId(11436), { channel: stateFromStores1, layoutMode: ActivityLayoutMode.PIP, portraitSafeAreasConfig, landscapeSafeAreasConfig });
+  cResult[10] = jsx(applicationId(11456), { channel: stateFromStores1, layoutMode: ActivityLayoutMode.PIP, portraitSafeAreasConfig, landscapeSafeAreasConfig });
+  const tmp18 = jsx(applicationId(11456), { channel: stateFromStores1, layoutMode: ActivityLayoutMode.PIP, portraitSafeAreasConfig, landscapeSafeAreasConfig });
 }) : (function ActivityPanelPIPView(transitionState) {
   let _undefined;
   let activity;

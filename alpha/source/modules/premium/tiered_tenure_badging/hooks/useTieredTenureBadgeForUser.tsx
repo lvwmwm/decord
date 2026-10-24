@@ -1,11 +1,11 @@
-// Module ID: 11107
-// Function ID: 11108
+// Module ID: 11108
+// Function ID: 11109
 // Name: useTieredTenureBadgeForUser
-// Dependencies: [7701, 1392, 558, 576, 7710, 504, 2]
+// Dependencies: [7703, 1392, 558, 576, 7712, 504, 2]
 
-// Module 11107 (useTieredTenureBadgeForUser)
-import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7710 */;
-import UserProfileStore from "UserProfileStore" /* 7701 */;
+// Module 11108 (useTieredTenureBadgeForUser)
+import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7712 */;
+import UserProfileStore from "UserProfileStore" /* 7703 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

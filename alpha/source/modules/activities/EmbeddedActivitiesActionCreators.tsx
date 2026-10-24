@@ -1,35 +1,35 @@
-// Module ID: 11372
-// Function ID: 11373
+// Module ID: 11390
+// Function ID: 11391
 // Name: EmbeddedActivitiesActionCreators
-// Dependencies: [32, 5, 9649, 2045, 6770, 7828, 502, 4821, 4843, 4901, 1392, 5628, 4820, 2026, 5607, 1087, 1375, 4818, 7807, 11341, 10202, 10765, 11373, 11374, 11377, 11378, 584, 10729, 10770, 11379, 10775, 6373, 6016, 2031, 5624, 8880, 11380, 2000, 11381, 11383, 10197, 1267, 11384, 11392, 6660, 11393, 5906, 1128, 5627, 11394, 1275, 6674, 4890, 6778, 5708, 1297, 8864, 7564, 7409, 7753, 4806, 4805, 2]
+// Dependencies: [32, 5, 9650, 2045, 6772, 7830, 502, 4823, 4845, 4903, 1392, 5630, 4822, 2026, 5609, 1087, 1375, 4820, 7809, 11391, 10203, 10766, 11392, 11393, 11397, 11398, 584, 10730, 10771, 11399, 10776, 6375, 6018, 2031, 5626, 8882, 11400, 2000, 11401, 11403, 10198, 1267, 11404, 11412, 6662, 11413, 5908, 1128, 5629, 11414, 1275, 6676, 4892, 6780, 5710, 1297, 8866, 7566, 7411, 7755, 4808, 4807, 2]
 // Exports: consumeRequestToReactToSeriousThermalState, dismissNewActivityIndicator, disregardSeriousThermalState, maybeDisconnectFromCurrentActivity, openActivityPopoutWindow, refreshProxyTicket, requestRespondToSeriousThermalState, runPrimaryAppCommandOrJoinEmbeddedActivity, sendEmbeddedActivityInvite, sendEmbeddedActivityInviteUser, updateActivityPanelMode, updateActivityPopoutWindowLayout, updateFocusedActivityLayout, uploadImageAttachment, validateTestMode
 
-// Module 11372 (EmbeddedActivitiesActionCreators)
+// Module 11390 (EmbeddedActivitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import ApplicationConstants from "ApplicationConstants" /* 1375 */;
 import Constants2 from "Constants" /* 2026 */;
-import dismissible_content from "dismissible_content" /* 4805 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 4806 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4818 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4890 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5607 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6778 */;
-import Constants3 from "Constants" /* 7807 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9649 */;
-import createProxyTicket2 from "createProxyTicket" /* 10729 */;
+import dismissible_content from "dismissible_content" /* 4807 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 4808 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4892 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5609 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6780 */;
+import Constants3 from "Constants" /* 7809 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9650 */;
+import createProxyTicket2 from "createProxyTicket" /* 10730 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6770 */;
-import PopoutWindowStore from "PopoutWindowStore" /* 7828 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6772 */;
+import PopoutWindowStore from "PopoutWindowStore" /* 7830 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
-import GuildStore from "GuildStore" /* 4843 */;
-import PermissionStore from "PermissionStore" /* 4901 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import GuildStore from "GuildStore" /* 4845 */;
+import PermissionStore from "PermissionStore" /* 4903 */;
 import UserStore from "UserStore" /* 1392 */;
-import VoiceStateStore from "VoiceStateStore" /* 5628 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
+import VoiceStateStore from "VoiceStateStore" /* 5630 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ let closure_20;
 let closure_21;
 let closure_22;
 let tmp2;
-const ChannelRTCActionCreatorsDefault = tmp2(5708);
+const ChannelRTCActionCreatorsDefault = tmp2(5710);
 let obj = function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
   obj = _asyncToGenerator(async (channelId) => {
     let closure_8;
@@ -66,8 +66,8 @@ let obj = function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
       let c7;
       let c8;
       let c9;
+      let obj10;
       let obj6;
-      let obj9;
       function isSupportedChannelType(c1, type) {
         type = undefined;
         if (type != null) {
@@ -166,9 +166,9 @@ let obj = function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
             } else {
               type = closure_141_10.getChannel(channelId);
               guildId = undefined;
-              const obj27 = type;
+              const obj28 = type;
               if (type != null) {
-                guildId = obj27.getGuildId();
+                guildId = obj28.getGuildId();
               }
               applicationId = guildId;
               if (guildId == null) {
@@ -209,37 +209,41 @@ let obj = function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
               obj6 = { customId: _null8, referrerId: _null7 };
               const obj16 = closure_141_0(closure_141_2[23]);
               if (obj16.tryLaunchAsFrame(obj5)) {
-                const obj7 = { isStart: _null, inviterUserId, channelId: _null, guildId: _null3, locationKind: PRIVATE_CHANNEL2 };
-                _null = channelId;
-                const stashPendingFrameLaunch = closure_141_0(closure_141_2[24]).stashPendingFrameLaunch;
-                closure_141_0(closure_141_2[24]);
-                const tmp222 = applicationId;
-                if (channelId == null) {
-                  _null = null;
+                let flag = !c18;
+                if (!flag) {
+                  const obj7 = { isStart: _null, inviterUserId, channelId: _null2, guildId: _null3, locationKind: PRIVATE_CHANNEL2 };
+                  _null2 = channelId;
+                  const stashPendingFrameLaunch = closure_141_0(closure_141_2[24]).stashPendingFrameLaunch;
+                  closure_141_0(closure_141_2[24]);
+                  const tmp225 = applicationId;
+                  if (channelId == null) {
+                    _null2 = null;
+                  }
+                  _null3 = guildId;
+                  if (guildId == null) {
+                    _null3 = null;
+                  }
+                  if (null != guildId) {
+                    PRIVATE_CHANNEL2 = closure_141_0(closure_141_2[25]).EmbeddedActivityLocationKind.GUILD_CHANNEL;
+                  } else {
+                    PRIVATE_CHANNEL2 = closure_141_0(closure_141_2[25]).EmbeddedActivityLocationKind.PRIVATE_CHANNEL;
+                  }
+                  let result1 = stashPendingFrameLaunch(tmp225, obj7);
+                  flag = true;
                 }
-                _null3 = guildId;
-                if (guildId == null) {
-                  _null3 = null;
-                }
-                if (null != guildId) {
-                  PRIVATE_CHANNEL2 = closure_141_0(closure_141_2[25]).EmbeddedActivityLocationKind.GUILD_CHANNEL;
-                } else {
-                  PRIVATE_CHANNEL2 = closure_141_0(closure_141_2[25]).EmbeddedActivityLocationKind.PRIVATE_CHANNEL;
-                }
-                let result1 = stashPendingFrameLaunch(tmp222, obj7);
                 c15 = 0;
                 c17 = 3;
-                return { value: true, done: true };
+                return { value: flag, done: true };
               } else {
-                const obj8 = { type: "EMBEDDED_ACTIVITY_LAUNCH_START", nonce, applicationId, channelId: _null2, componentId, analyticsLocations: _null2, source, commandOrigin: _null4, inviterUserId, launchParams: obj9 };
-                _null2 = channelId;
+                const obj9 = { type: "EMBEDDED_ACTIVITY_LAUNCH_START", nonce, applicationId, channelId: _null, componentId, analyticsLocations: _null2, source, commandOrigin: _null4, inviterUserId, launchParams: obj10 };
+                _null = channelId;
                 const dispatch4 = closure_141_1(closure_141_2[26]).dispatch;
                 closure_141_1(closure_141_2[26]);
                 if (channelId == null) {
-                  _null2 = null;
+                  _null = null;
                 }
-                obj9 = { customId: _null8, referrerId: _null7, renderInFramePool };
-                dispatch4(obj8);
+                obj10 = { customId: _null8, referrerId: _null7, renderInFramePool };
+                dispatch4(obj9);
                 componentId = channelId;
                 const createProxyTicket = closure_141_0(closure_141_2[27]).createProxyTicket;
                 closure_141_0(closure_141_2[27]);
@@ -250,8 +254,8 @@ let obj = function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
                 const items = [createProxyTicket(tmp211, componentId), closure_141_1(closure_141_2[28])(applicationId)];
                 c16 = 3;
                 c17 = 1;
-                const obj10 = { value: all(items), done: false };
-                return obj10;
+                const obj11 = { value: all(items), done: false };
+                return obj11;
               }
             }
           } else if (2 === c16) {
@@ -267,7 +271,7 @@ let obj = function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
               } else {
                 PRIVATE_CHANNEL = closure_141_0(closure_141_2[25]).EmbeddedActivityLocationKind.PRIVATE_CHANNEL;
               }
-              const obj11 = { type: "EMBEDDED_ACTIVITY_LAUNCH_FAIL", nonce, applicationId, channelId: _null7, guildId: _null8, isStart: _null, error: null, locationKind: null };
+              const obj17 = { type: "EMBEDDED_ACTIVITY_LAUNCH_FAIL", nonce, applicationId, channelId: _null7, guildId: _null8, isStart: _null, error: null, locationKind: null };
               _null7 = channelId;
               const dispatch3 = closure_141_1(closure_141_2[26]).dispatch;
               closure_141_1(closure_141_2[26]);
@@ -286,9 +290,9 @@ let obj = function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
                     const self8 = this;
                     tmp138 = new closure_141_1(closure_141_2[31])(closure_26);
                   }
-                  obj11.error = tmp138;
-                  obj11.locationKind = PRIVATE_CHANNEL;
-                  dispatch3(obj11);
+                  obj17.error = tmp138;
+                  obj17.locationKind = PRIVATE_CHANNEL;
+                  dispatch3(obj17);
                   c17 = 3;
                   return { value: false, done: true };
                 }
@@ -306,24 +310,24 @@ let obj = function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
             } else {
               constants = value;
               proxyTicket = closure_141_3(constants, 1)[0];
-              const obj18 = { type: "EMBEDDED_ACTIVITY_LAUNCH_SET_PROXY_TICKET", applicationId, channelId: _null4, proxyTicket };
+              const obj19 = { type: "EMBEDDED_ACTIVITY_LAUNCH_SET_PROXY_TICKET", applicationId, channelId: _null4, proxyTicket };
               _null4 = channelId;
               const dispatch5 = closure_141_1(closure_141_2[26]).dispatch;
               closure_141_1(closure_141_2[26]);
               if (channelId == null) {
                 _null4 = null;
               }
-              dispatch5(obj18);
+              dispatch5(obj19);
               id = closure_141_13.getCurrentUser();
               if (null != id) {
                 let JOIN;
-                const tmp267 = closure_141_1(closure_141_2[29]);
+                const tmp270 = closure_141_1(closure_141_2[29]);
                 if (_null) {
-                  JOIN = tmp270.LAUNCH;
+                  JOIN = tmp273.LAUNCH;
                 } else {
-                  JOIN = tmp270.JOIN;
+                  JOIN = tmp273.JOIN;
                 }
-                const obj19 = { type: JOIN, userId: id, guildId, channelId, channelType: type, applicationId, locationObject: _null3, analyticsLocations, source, referrerId: _null7, inviterUserId };
+                const obj20 = { type: JOIN, userId: id, guildId, channelId, channelType: type, applicationId, locationObject: _null3, analyticsLocations, source, referrerId: _null7, inviterUserId };
                 id = undefined;
                 if (id != null) {
                   id = id.id;
@@ -336,7 +340,7 @@ let obj = function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
                 if (_null2 == null) {
                   analyticsLocations = [];
                 }
-                tmp267(obj19);
+                tmp270(obj20);
               }
               const tmp70 = _null;
               if (tmp70) {
@@ -344,9 +348,9 @@ let obj = function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
                   if (isSupportedChannelType(applicationId, type)) {
                     c16 = 5;
                     c17 = 1;
-                    const obj20 = { applicationId, nonce, channelId, guildId, commandOrigin: _null4, sectionName: _null5, source, onExecutedCallback: _null6, onConfirmActivityLaunchChecksAlertOpen };
-                    const obj21 = { value: maybeSendPrimaryAppCommand(obj20), done: false };
-                    return obj21;
+                    const obj21 = { applicationId, nonce, channelId, guildId, commandOrigin: _null4, sectionName: _null5, source, onExecutedCallback: _null6, onConfirmActivityLaunchChecksAlertOpen };
+                    const obj22 = { value: maybeSendPrimaryAppCommand(obj21), done: false };
+                    return obj22;
                   }
                 }
                 const self5 = this;
@@ -357,9 +361,9 @@ let obj = function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
               } else {
                 c16 = 4;
                 c17 = 1;
-                const obj22 = { applicationId, channelId, isStart: _null, guildId };
-                const obj23 = { value: joinEmbeddedActivity(obj22), done: false };
-                return obj23;
+                const obj23 = { applicationId, channelId, isStart: _null, guildId };
+                const obj24 = { value: joinEmbeddedActivity(obj23), done: false };
+                return obj24;
               }
             }
           } else {
@@ -415,23 +419,23 @@ let obj = function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
                 }
               }
             }
-            const obj26 = { type: "EMBEDDED_ACTIVITY_LAUNCH_SUCCESS", nonce, applicationId, channelId: _null5 };
+            const obj27 = { type: "EMBEDDED_ACTIVITY_LAUNCH_SUCCESS", nonce, applicationId, channelId: _null5 };
             _null5 = channelId;
             const dispatch2 = closure_141_1(closure_141_2[26]).dispatch;
             closure_141_1(closure_141_2[26]);
             if (channelId == null) {
               _null5 = null;
             }
-            dispatch2(obj26);
+            dispatch2(obj27);
             c15 = 0;
             c17 = 3;
             return { value: true, done: true };
           }
-        } catch (tmp239) {
-          closure_14 = tmp239;
+        } catch (tmp242) {
+          closure_14 = tmp242;
           if (0 === c15) {
             c17 = 3;
-            throw tmp239;
+            throw tmp242;
           } else {
             c16 = 2;
           }
@@ -1077,7 +1081,7 @@ function stopEmbeddedActivity(showFeedback) {
         if ("" !== id) {
           const obj4 = { applicationId, instanceId: compositeInstanceId };
           compositeInstanceId = undefined;
-          const getEmbeddedActivityParticipantId = tmp7(6778).getEmbeddedActivityParticipantId;
+          const getEmbeddedActivityParticipantId = tmp7(6780).getEmbeddedActivityParticipantId;
           ChannelRTCParticipants;
           if (found != null) {
             compositeInstanceId = found.compositeInstanceId;

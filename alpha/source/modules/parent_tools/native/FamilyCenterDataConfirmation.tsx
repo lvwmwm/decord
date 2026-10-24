@@ -1,15 +1,15 @@
-// Module ID: 12840
-// Function ID: 12841
+// Module ID: 12877
+// Function ID: 12878
 // Name: FamilyCenterDataConfirmation
-// Dependencies: [19, 21, 558, 576, 5232, 6901, 6985, 5975, 1128, 2536, 12841, 5670, 9645, 8557, 12842, 7941, 12844, 9970, 5689, 12845, 7486, 6929, 2]
+// Dependencies: [19, 21, 558, 576, 5234, 6903, 6987, 5977, 1128, 2536, 12878, 5672, 9646, 8559, 12879, 7943, 12881, 9971, 5691, 12882, 7488, 6931, 2]
 
-// Module 12840 (FamilyCenterDataConfirmation)
+// Module 12877 (FamilyCenterDataConfirmation)
 import react2 from "react" /* 576 */;
 import _modDef2536 from "module_2536" /* 2536 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import Stack_Stack from "Stack/Stack" /* 5975 */;
-import TableRow2 from "TableRow" /* 6901 */;
-import TableRowGroup2 from "TableRowGroup" /* 6985 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import Stack_Stack from "Stack/Stack" /* 5977 */;
+import TableRow2 from "TableRow" /* 6903 */;
+import TableRowGroup2 from "TableRowGroup" /* 6987 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -19,18 +19,18 @@ let c3;
 let closure_4;
 let tmp;
 const intl37 = tmp(1128);
-const UserPlusIcon = tmp(5670);
-const ClockIcon = tmp(5689);
-const XSmallIcon = tmp(6929);
-const SettingsIcon = tmp(7486);
-const CreditCardIcon = tmp(7941);
-const ForumIcon = tmp(8557);
-const ServerIcon = tmp(9645);
-const FlagIcon = tmp(9970);
-const useAgeSpecificText12 = tmp(12841);
-const PhoneIcon = tmp(12842);
-const GiftIcon = tmp(12844);
-const PiggyBankIcon = tmp(12845);
+const UserPlusIcon = tmp(5672);
+const ClockIcon = tmp(5691);
+const XSmallIcon = tmp(6931);
+const SettingsIcon = tmp(7488);
+const CreditCardIcon = tmp(7943);
+const ForumIcon = tmp(8559);
+const ServerIcon = tmp(9646);
+const FlagIcon = tmp(9971);
+const useAgeSpecificText12 = tmp(12878);
+const PhoneIcon = tmp(12879);
+const GiftIcon = tmp(12881);
+const PiggyBankIcon = tmp(12882);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RowGroup(arg0) {

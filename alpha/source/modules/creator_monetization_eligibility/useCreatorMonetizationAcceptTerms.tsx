@@ -1,15 +1,15 @@
-// Module ID: 19177
-// Function ID: 19178
+// Module ID: 19204
+// Function ID: 19205
 // Name: useCreatorMonetizationAcceptTerms
-// Dependencies: [5, 32, 19, 4839, 4843, 1392, 504, 7359, 19178, 6373, 2]
+// Dependencies: [5, 32, 19, 4841, 4845, 1392, 504, 7361, 19205, 6375, 2]
 // Exports: default
 
-// Module 19177 (useCreatorMonetizationAcceptTerms)
-import GuildRecord from "GuildRecord" /* 4839 */;
+// Module 19204 (useCreatorMonetizationAcceptTerms)
+import GuildRecord from "GuildRecord" /* 4841 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4843 */;
+import GuildStore from "GuildStore" /* 4845 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 

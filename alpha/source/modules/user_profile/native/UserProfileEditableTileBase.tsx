@@ -1,17 +1,17 @@
-// Module ID: 15923
-// Function ID: 15924
+// Module ID: 15947
+// Function ID: 15948
 // Name: UserProfileEditableTileBase
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 1128, 6906, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 1128, 6908, 2]
 
-// Module 15923 (UserProfileEditableTileBase)
+// Module 15947 (UserProfileEditableTileBase)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import Pressables from "Pressables" /* 6906 */;
+import Pressables from "Pressables" /* 6908 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

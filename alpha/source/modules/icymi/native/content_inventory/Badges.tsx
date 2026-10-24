@@ -1,30 +1,30 @@
-// Module ID: 14265
-// Function ID: 14266
+// Module ID: 14289
+// Function ID: 14290
 // Name: Badges
-// Dependencies: [19, 17, 2068, 21, 587, 4969, 558, 576, 14263, 8615, 5232, 504, 9615, 11299, 14266, 1128, 14268, 14270, 14140, 11762, 1104, 9307, 2]
+// Dependencies: [19, 17, 2068, 21, 587, 4971, 558, 576, 14287, 8617, 5234, 504, 9616, 11303, 14290, 1128, 14292, 14294, 14159, 11787, 1104, 9308, 2]
 
-// Module 14265 (Badges)
+// Module 14289 (Badges)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import intl3 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import utils from "utils" /* 8615 */;
-import TrophyIcon from "TrophyIcon" /* 9307 */;
-import GameControllerIcon from "GameControllerIcon" /* 9615 */;
-import TimerIcon2 from "TimerIcon" /* 11299 */;
-import RetryIcon from "RetryIcon" /* 11762 */;
-import FireIcon from "FireIcon" /* 14140 */;
-import useTimestampTickedNow from "useTimestampTickedNow" /* 14263 */;
-import NewUserIcon from "NewUserIcon" /* 14266 */;
-import FlashIcon2 from "FlashIcon" /* 14268 */;
-import TrendingType from "TrendingType" /* 14270 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import utils from "utils" /* 8617 */;
+import TrophyIcon from "TrophyIcon" /* 9308 */;
+import GameControllerIcon from "GameControllerIcon" /* 9616 */;
+import TimerIcon2 from "TimerIcon" /* 11303 */;
+import RetryIcon from "RetryIcon" /* 11787 */;
+import FireIcon from "FireIcon" /* 14159 */;
+import useTimestampTickedNow from "useTimestampTickedNow" /* 14287 */;
+import NewUserIcon from "NewUserIcon" /* 14290 */;
+import FlashIcon2 from "FlashIcon" /* 14292 */;
+import TrendingType from "TrendingType" /* 14294 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -137,14 +137,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActiveTimest
 }) : (function ActiveTimestamp(entry) {
   entry = entry.entry;
   const style = entry.style;
-  obj = entry(14263);
+  obj = entry(14287);
   const now = obj.useTimestampTickedNow().now;
   const items = [entry, now];
   const children = react.useMemo(() => {
     obj = utils;
     return obj.formatActiveTimestamp(entry, now);
   }, items);
-  return closure_6(entry(5232).Text, { style, variant: "text-sm/medium", tabularNumbers: true, color: "text-feedback-positive", children });
+  return closure_6(entry(5234).Text, { style, variant: "text-sm/medium", tabularNumbers: true, color: "text-feedback-positive", children });
 });
 let closure_14 = tmp6;
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -237,7 +237,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
         tmp12Result = tmp12(closure_14, obj2);
       } else {
         const obj3 = { variant: "text-sm/medium", color: tmp5.text, children: tmp6Result.formatEndedTimestamp(entry, tmp11) };
-        const Text = tmp6(5232).Text;
+        const Text = tmp6(5234).Text;
         tmp6Result = utils;
         tmp12Result = tmp12(Text, obj3);
       }
@@ -436,7 +436,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameTimestam
         }
         const obj3 = { style: tmpResult.badgeContainer, children: items };
         const obj4 = { style: tmpResult.icon, color: icon };
-        items = [metroRequire(tmp8(9615).GameControllerIcon, obj4), ];
+        items = [metroRequire(tmp8(9616).GameControllerIcon, obj4), ];
         const obj5 = { entry };
         items[1] = metroRequire(closure_15, obj5);
         return metroImportDefault(View, obj3);
@@ -641,7 +641,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreakBadge
         tmp19 = null;
         if (streakCount >= 2) {
           tmp24 = closure_16;
-          FlashIcon = tmp(14268).FlashIcon;
+          FlashIcon = tmp(14292).FlashIcon;
           const intl = tmp(1128).intl;
           const obj3 = { days: streakCount };
           formatToPlainStringResult = intl.formatToPlainString(tmp(1128).t["Klie/P"], obj3);

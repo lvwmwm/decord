@@ -1,23 +1,23 @@
-// Module ID: 11397
-// Function ID: 11398
+// Module ID: 11417
+// Function ID: 11418
 // Name: ScreenshareTile
-// Dependencies: [19, 17, 1087, 21, 4969, 587, 558, 576, 11398, 1202, 5667, 11399, 1128, 5232, 5295, 2]
+// Dependencies: [19, 17, 1087, 21, 4971, 587, 558, 576, 11418, 1202, 5669, 11419, 1128, 5234, 5297, 2]
 
-// Module 11397 (ScreenshareTile)
+// Module 11417 (ScreenshareTile)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5295 */;
-import FastImageDefault from "FastImage" /* 5667 */;
-import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 11398 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11399 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5297 */;
+import FastImageDefault from "FastImage" /* 5669 */;
+import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 11418 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11419 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,28 +1,28 @@
-// Module ID: 16362
-// Function ID: 16363
+// Module ID: 16380
+// Function ID: 16381
 // Name: DisplayNameStylesEditPreview
-// Dependencies: [19, 17, 4970, 8647, 21, 4969, 587, 558, 576, 8653, 1992, 8656, 504, 1128, 2928, 11052, 11170, 16361, 6780, 8646, 4794, 1202, 8736, 10660, 10661, 5232, 2]
+// Dependencies: [19, 17, 4972, 8649, 21, 4971, 587, 558, 576, 8655, 1992, 8658, 504, 1128, 2928, 11053, 11171, 16379, 6782, 8648, 4796, 1202, 8738, 10661, 10662, 5234, 2]
 
-// Module 16362 (DisplayNameStylesEditPreview)
+// Module 16380 (DisplayNameStylesEditPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import _modDef2928 from "module_2928" /* 2928 */;
-import DateUtils from "DateUtils" /* 4794 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 6780 */;
-import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 8646 */;
-import RecentAvatarUtils from "RecentAvatarUtils" /* 8656 */;
-import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8736 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10660 */;
-import types from "types" /* 10661 */;
+import DateUtils from "DateUtils" /* 4796 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 6782 */;
+import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 8648 */;
+import RecentAvatarUtils from "RecentAvatarUtils" /* 8658 */;
+import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8738 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10661 */;
+import types from "types" /* 10662 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4970 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8647 */;
+import AccessibilityStore from "AccessibilityStore" /* 4972 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8649 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -100,7 +100,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   let chatPreviewWrapperTilted = undefined !== tilted && tilted;
   const tmp9 = closure_9();
   const tmp10 = closure_10(num);
-  const tmpResult = user(8653);
+  const tmpResult = user(8655);
   const guildMemberAndUserPendingNameplate = tmpResult.useGuildMemberAndUserPendingNameplate(user, guildId);
   ({ userNameplate, guildNameplate, pendingNameplate } = guildMemberAndUserPendingNameplate);
   if (cResult[0] !== guildNameplate) {
@@ -231,7 +231,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
                                                             let tmp47 = null != appIconId;
                                                             if (tmp47) {
                                                               let obj3 = { id: appIconId, size: 102, style: tmp10.appIconTilted };
-                                                              tmp47 = closure_7(guildId(16361), obj3);
+                                                              tmp47 = closure_7(guildId(16379), obj3);
                                                             }
                                                             cResult[49] = appIconId;
                                                             cResult[50] = tmp10;
@@ -251,7 +251,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
                                             const obj4 = { style: tmp9.nameplatePreviewWrapper, children: closure_7(NameplatePreview, obj5) };
                                             obj5 = { user, nameplate: pendingNameplate, nameplateData: tmp43, guildId, pendingAvatarSrc: stateFromStores, pendingDisplayNameStyles: tmp18, pendingGlobalName: displayName };
                                             tmp43 = undefined;
-                                            NameplatePreview = tmp(11170).NameplatePreview;
+                                            NameplatePreview = tmp(11171).NameplatePreview;
                                             const tmp41 = View;
                                             if (null == pendingNameplate) {
                                               let tmp44 = tmp12;
@@ -311,7 +311,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
               }
             }
             const obj8 = { user, displayName, guildId, displayNameStylesOverride: tmp18, isPremiumTryItOut: undefined !== isTryItOut && isTryItOut, compact: true, hideFrame: true, hideBadges: undefined !== hideBadges && hideBadges, hidePronouns: undefined !== hidePronouns && hidePronouns, hideGuildTag: undefined !== hideGuildTag && hideGuildTag, maxWidth: 320, style: profilePreviewTilted, accessibilityLabel: tmp22 };
-            const tmp28 = closure_7(guildId(11052), obj8);
+            const tmp28 = closure_7(guildId(11053), obj8);
             cResult[15] = displayName;
             cResult[16] = tmp18;
             cResult[17] = guildId;
@@ -727,7 +727,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatPr
   items2[1] = metroImportDefault(Text_Text.Text, obj9);
   items3 = [metroImportAll(View, obj7), ];
   const obj10 = { variant: "text-md/normal", color: "text-default", style: tmp.chatMessageText, children: intl.string(_modDef2928.h5Cuej) };
-  const Text = tmp2(5232).Text;
+  const Text = tmp2(5234).Text;
   intl = tmp2(1128).intl;
   items3[1] = metroImportDefault(Text, obj10);
   items1[1] = metroImportAll(View, obj6);

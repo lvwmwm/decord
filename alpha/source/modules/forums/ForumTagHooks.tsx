@@ -1,16 +1,16 @@
-// Module ID: 7380
-// Function ID: 7381
+// Module ID: 7382
+// Function ID: 7383
 // Name: ForumTagHooks
-// Dependencies: [19, 4821, 4901, 1098, 558, 576, 504, 1388, 7381, 2]
+// Dependencies: [19, 4823, 4903, 1098, 558, 576, 504, 1388, 7383, 2]
 
-// Module 7380 (ForumTagHooks)
+// Module 7382 (ForumTagHooks)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1098 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ReportToModUtils from "ReportToModUtils" /* 7381 */;
+import ReportToModUtils from "ReportToModUtils" /* 7383 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
-import PermissionStore from "PermissionStore" /* 4901 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import PermissionStore from "PermissionStore" /* 4903 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

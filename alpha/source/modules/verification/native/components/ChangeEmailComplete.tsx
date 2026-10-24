@@ -1,22 +1,22 @@
-// Module ID: 7092
-// Function ID: 7093
+// Module ID: 7094
+// Function ID: 7095
 // Name: ChangeEmailComplete
-// Dependencies: [19, 17, 6921, 21, 4969, 587, 6919, 558, 576, 5667, 7002, 1128, 5232, 5242, 2]
+// Dependencies: [19, 17, 6923, 21, 4971, 587, 6921, 558, 576, 5669, 7004, 1128, 5234, 5244, 2]
 
-// Module 7092 (ChangeEmailComplete)
+// Module 7094 (ChangeEmailComplete)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import components_Button_Button from "components/Button/Button" /* 5242 */;
-import FastImageDefault from "FastImage" /* 5667 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6919 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 6921 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7002 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import components_Button_Button from "components/Button/Button" /* 5244 */;
+import FastImageDefault from "FastImage" /* 5669 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6921 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 6923 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7004 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -131,7 +131,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
         const _Symbol2 = Symbol;
         if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
           const obj6 = { text: intl4.string(intl5.t.BddRzS), onPress: handlePress, grow: true };
-          const Button = tmp(5242).Button;
+          const Button = tmp(5244).Button;
           intl4 = tmp(1128).intl;
           const tmp31 = metroRequire(Button, obj6);
           cResult[17] = tmp31;

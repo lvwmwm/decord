@@ -1,19 +1,19 @@
-// Module ID: 18625
-// Function ID: 18626
+// Module ID: 18657
+// Function ID: 18658
 // Name: MediaPlaybackPanelContainer
-// Dependencies: [19, 21, 558, 576, 15774, 4886, 18626, 18628, 2]
+// Dependencies: [19, 21, 558, 576, 15797, 4888, 18658, 18660, 2]
 
-// Module 18625 (MediaPlaybackPanelContainer)
+// Module 18657 (MediaPlaybackPanelContainer)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import MediaPlaybackPanelControllerDefault from "MediaPlaybackPanelController" /* 18626 */;
+import MediaPlaybackPanelControllerDefault from "MediaPlaybackPanelController" /* 18658 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const react3 = tmp(4886);
-const MediaPlayerManager = tmp(15774);
+const react3 = tmp(4888);
+const MediaPlayerManager = tmp(15797);
 const jsx = Fragment.jsx;
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPlaybackPanelContainer() {
   let first;

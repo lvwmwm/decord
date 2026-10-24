@@ -1,14 +1,14 @@
-// Module ID: 12343
-// Function ID: 12344
+// Module ID: 12369
+// Function ID: 12370
 // Name: ConjureProjectEventLine
-// Dependencies: [19, 21, 12335, 12331, 558, 576, 12344, 12346, 5232, 12348, 2]
+// Dependencies: [19, 21, 12361, 12357, 558, 576, 12370, 12372, 5234, 12374, 2]
 
-// Module 12343 (ConjureProjectEventLine)
+// Module 12369 (ConjureProjectEventLine)
 import react2 from "react" /* 576 */;
-import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 12331 */;
-import ConjureSelectedMentionDefault from "ConjureSelectedMention" /* 12335 */;
-import useConjureProjectEventLineDefault from "useConjureProjectEventLine" /* 12344 */;
-import useConjureRemixSettingsRequestDefault from "useConjureRemixSettingsRequest" /* 12346 */;
+import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 12357 */;
+import ConjureSelectedMentionDefault from "ConjureSelectedMention" /* 12361 */;
+import useConjureProjectEventLineDefault from "useConjureProjectEventLine" /* 12370 */;
+import useConjureRemixSettingsRequestDefault from "useConjureRemixSettingsRequest" /* 12372 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -19,8 +19,8 @@ let closure_4;
 let hasOwnProperty;
 let tmp;
 let tmp4;
-const Text_Text = tmp(5232);
-const ConjureSettingsRequestCardDefault = tmp4(12348);
+const Text_Text = tmp(5234);
+const ConjureSettingsRequestCardDefault = tmp4(12374);
 function renderMention(arg0, arg1, arg2) {
   let closure_0 = arg0;
   let obj = {

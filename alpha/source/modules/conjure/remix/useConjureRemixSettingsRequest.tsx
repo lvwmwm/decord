@@ -1,11 +1,11 @@
-// Module ID: 12346
-// Function ID: 12347
+// Module ID: 12372
+// Function ID: 12373
 // Name: useConjureRemixSettingsRequest
-// Dependencies: [10715, 558, 576, 12347, 504, 1128, 3830, 2]
+// Dependencies: [10716, 558, 576, 12373, 504, 1128, 3830, 2]
 
-// Module 12346 (useConjureRemixSettingsRequest)
-import conjureSettingsRequest from "conjureSettingsRequest" /* 12347 */;
-import ConjureSettingsStore from "ConjureSettingsStore" /* 10715 */;
+// Module 12372 (useConjureRemixSettingsRequest)
+import conjureSettingsRequest from "conjureSettingsRequest" /* 12373 */;
+import ConjureSettingsStore from "ConjureSettingsStore" /* 10716 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

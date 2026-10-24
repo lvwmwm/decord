@@ -1,24 +1,24 @@
-// Module ID: 17690
-// Function ID: 17691
+// Module ID: 17722
+// Function ID: 17723
 // Name: FavoritesGuildSidebarHeader
-// Dependencies: [19, 17, 17594, 21, 4969, 587, 558, 576, 13828, 5232, 1128, 3412, 8549, 8570, 8540, 5975, 2]
+// Dependencies: [19, 17, 17626, 21, 4971, 587, 558, 576, 13847, 5234, 1128, 3412, 8551, 8572, 8542, 5977, 2]
 
-// Module 17690 (FavoritesGuildSidebarHeader)
+// Module 17722 (FavoritesGuildSidebarHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef3412 from "module_3412" /* 3412 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import Stack_Stack from "Stack/Stack" /* 5975 */;
-import ChatIcon2 from "ChatIcon" /* 8540 */;
-import TextIcon2 from "TextIcon" /* 8549 */;
-import VoiceNormalIcon2 from "VoiceNormalIcon" /* 8570 */;
-import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 13828 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17594 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import Stack_Stack from "Stack/Stack" /* 5977 */;
+import ChatIcon2 from "ChatIcon" /* 8542 */;
+import TextIcon2 from "TextIcon" /* 8551 */;
+import VoiceNormalIcon2 from "VoiceNormalIcon" /* 8572 */;
+import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 13847 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17626 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -67,7 +67,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyB
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: variant2, color: "text-muted", children: intl.format(_modDef3412.Z3Hdr5, obj3) };
-    const Text = tmp(5232).Text;
+    const Text = tmp(5234).Text;
     intl = tmp(1128).intl;
     obj3 = { onClick: first };
     const tmp9 = metroRequire(Text, obj2);
@@ -102,7 +102,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Placeh
   const tmp4 = closure_11();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
-    const TextIcon = tmp(8549).TextIcon;
+    const TextIcon = tmp(8551).TextIcon;
     const tmp8 = metroRequire(TextIcon, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -123,7 +123,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Placeh
       const _Symbol = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
         const obj3 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
-        const VoiceNormalIcon = tmp(8570).VoiceNormalIcon;
+        const VoiceNormalIcon = tmp(8572).VoiceNormalIcon;
         const tmp18 = metroRequire(VoiceNormalIcon, obj3);
         cResult[7] = tmp18;
         tmp15 = tmp18;
@@ -144,7 +144,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Placeh
           const _Symbol2 = Symbol;
           if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
             const obj4 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
-            const ChatIcon = tmp(8540).ChatIcon;
+            const ChatIcon = tmp(8542).ChatIcon;
             const tmp30 = metroRequire(ChatIcon, obj4);
             cResult[14] = tmp30;
             tmp27 = tmp30;
@@ -292,7 +292,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { variant, color: "mobile-text-heading-primary", children: intl.string(_modDef3412["1n0TGE"]) };
-      const Heading = tmp(5232).Heading;
+      const Heading = tmp(5234).Heading;
       intl = tmp(1128).intl;
       const tmp16 = metroRequire(Heading, obj2);
       const tmp18 = metroRequire(closure_12, {});
@@ -306,7 +306,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
     }
     if (cResult[5] !== tmp4.copy) {
       const obj3 = { spacing: nativeDefault.space.PX_8, style: tmp4.copy, children: items };
-      const Stack = tmp(5975).Stack;
+      const Stack = tmp(5977).Stack;
       items = [tmp11, tmp12];
       const tmp22 = metroImportDefault(Stack, obj3);
       cResult[5] = tmp4.copy;
@@ -330,7 +330,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
         }
       }
       const obj4 = { spacing: nativeDefault.space.PX_8, children: items1 };
-      const Stack2 = tmp(5975).Stack;
+      const Stack2 = tmp(5977).Stack;
       items1 = [tmp6, tmp19, tmp23];
       const tmp33 = metroImportDefault(Stack2, obj4);
       cResult[10] = tmp6;
@@ -376,9 +376,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
   }
   items = [tmp7, , ];
   const obj3 = { spacing: nativeDefault.space.PX_8, style: tmp.copy, children: items1 };
-  const Stack2 = tmp4(5975).Stack;
+  const Stack2 = tmp4(5977).Stack;
   const obj4 = { variant, color: "mobile-text-heading-primary", children: intl.string(_modDef3412["1n0TGE"]) };
-  const Heading = tmp4(5232).Heading;
+  const Heading = tmp4(5234).Heading;
   intl = tmp4(1128).intl;
   items1 = [metroRequire(Heading, obj4), metroRequire(closure_12, {})];
   items[1] = metroImportDefault(Stack2, obj3);

@@ -1,20 +1,20 @@
-// Module ID: 15678
-// Function ID: 15679
+// Module ID: 15699
+// Function ID: 15700
 // Name: PreloadedUserSettingsMigrations
-// Dependencies: [4821, 1087, 1211, 4804, 7306, 510, 1248, 504, 1242, 4805, 7628, 2]
+// Dependencies: [4823, 1087, 1211, 4806, 7308, 510, 1248, 504, 1242, 4807, 7630, 2]
 
-// Module 15678 (PreloadedUserSettingsMigrations)
+// Module 15699 (PreloadedUserSettingsMigrations)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage4 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1087 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
 import wrappers from "wrappers" /* 1242 */;
 import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1248 */;
-import Uint8ArrayUtils from "Uint8ArrayUtils" /* 4804 */;
-import dismissible_content from "dismissible_content" /* 4805 */;
-import HotspotStore2 from "HotspotStore" /* 7306 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7628 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
+import Uint8ArrayUtils from "Uint8ArrayUtils" /* 4806 */;
+import dismissible_content from "dismissible_content" /* 4807 */;
+import HotspotStore2 from "HotspotStore" /* 7308 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7630 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 function migrateHotspotLocation(userContent, HUB_LINK_CHANNEL_NOTICE, CHANNEL_NOTICE_HUBLINK) {
@@ -321,7 +321,7 @@ let items = [
       }
       let tmp4 = false === obj[ChannelNoticeTypes.INVITE];
       if (tmp4) {
-        const CHANNEL_NOTICE_INVITE = tmp(4805).DismissibleContent.CHANNEL_NOTICE_INVITE;
+        const CHANNEL_NOTICE_INVITE = tmp(4807).DismissibleContent.CHANNEL_NOTICE_INVITE;
         if (null == userContent.userContent) {
           const UserContentSettings = tmp(1211).UserContentSettings;
           userContent.userContent = UserContentSettings.create();
@@ -349,7 +349,7 @@ let items = [
       }
       let tmp8 = false === obj[tmp3.QUICKSWITCHER];
       if (tmp8) {
-        const CHANNEL_NOTICE_QUICKSWITCHER = tmp(4805).DismissibleContent.CHANNEL_NOTICE_QUICKSWITCHER;
+        const CHANNEL_NOTICE_QUICKSWITCHER = tmp(4807).DismissibleContent.CHANNEL_NOTICE_QUICKSWITCHER;
         if (null == userContent.userContent) {
           const UserContentSettings2 = tmp(1211).UserContentSettings;
           userContent.userContent = UserContentSettings2.create();
@@ -377,7 +377,7 @@ let items = [
       }
       let tmp12 = false === obj[tmp3.GUILD_BOOSTING];
       if (tmp12) {
-        const CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION = tmp(4805).DismissibleContent.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION;
+        const CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION = tmp(4807).DismissibleContent.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION;
         if (null == userContent.userContent) {
           const UserContentSettings3 = tmp(1211).UserContentSettings;
           userContent.userContent = UserContentSettings3.create();
@@ -416,7 +416,7 @@ let items = [
       const Storage = Storage4.Storage;
       let value = Storage.get("hideNag");
       if (value) {
-        const NAGBAR_NOTICE_DOWNLOAD = tmp(4805).DismissibleContent.NAGBAR_NOTICE_DOWNLOAD;
+        const NAGBAR_NOTICE_DOWNLOAD = tmp(4807).DismissibleContent.NAGBAR_NOTICE_DOWNLOAD;
         if (null == userContent.userContent) {
           const UserContentSettings = tmp(1211).UserContentSettings;
           userContent.userContent = UserContentSettings.create();
@@ -446,7 +446,7 @@ let items = [
       const Storage2 = tmp(510).Storage;
       let value2 = Storage2.get("hideConnectSpotify");
       if (value2) {
-        const NAGBAR_NOTICE_CONNECT_SPOTIFY = tmp(4805).DismissibleContent.NAGBAR_NOTICE_CONNECT_SPOTIFY;
+        const NAGBAR_NOTICE_CONNECT_SPOTIFY = tmp(4807).DismissibleContent.NAGBAR_NOTICE_CONNECT_SPOTIFY;
         if (null == userContent.userContent) {
           const UserContentSettings2 = tmp(1211).UserContentSettings;
           userContent.userContent = UserContentSettings2.create();
@@ -487,7 +487,7 @@ let items = [
       const Storage = Storage4.Storage;
       let value = Storage.get("hidePremiumPromo");
       if (value) {
-        const NAGBAR_NOTICE_PREMIUM_PROMO = tmp(4805).DismissibleContent.NAGBAR_NOTICE_PREMIUM_PROMO;
+        const NAGBAR_NOTICE_PREMIUM_PROMO = tmp(4807).DismissibleContent.NAGBAR_NOTICE_PREMIUM_PROMO;
         if (null == userContent.userContent) {
           const UserContentSettings = tmp(1211).UserContentSettings;
           userContent.userContent = UserContentSettings.create();
@@ -517,7 +517,7 @@ let items = [
       const Storage2 = tmp(510).Storage;
       let value3 = Storage2.get("hidePremiumTier2TrialEnding");
       if (value3) {
-        const NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING = tmp(4805).DismissibleContent.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING;
+        const NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING = tmp(4807).DismissibleContent.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING;
         if (null == userContent.userContent) {
           const UserContentSettings2 = tmp(1211).UserContentSettings;
           userContent.userContent = UserContentSettings2.create();
@@ -546,7 +546,7 @@ let items = [
       const Storage3 = tmp(510).Storage;
       let value4 = Storage3.get("hidePremiumReactivateNotice");
       if (value4) {
-        const NAGBAR_NOTICE_PREMIUM_REACTIVATE = tmp(4805).DismissibleContent.NAGBAR_NOTICE_PREMIUM_REACTIVATE;
+        const NAGBAR_NOTICE_PREMIUM_REACTIVATE = tmp(4807).DismissibleContent.NAGBAR_NOTICE_PREMIUM_REACTIVATE;
         if (null == userContent.userContent) {
           const UserContentSettings3 = tmp(1211).UserContentSettings;
           userContent.userContent = UserContentSettings3.create();

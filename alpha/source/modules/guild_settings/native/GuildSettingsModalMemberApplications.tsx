@@ -1,21 +1,21 @@
-// Module ID: 17994
-// Function ID: 17995
+// Module ID: 18026
+// Function ID: 18027
 // Name: GuildSettingsModalMemberApplications
-// Dependencies: [19, 17, 6842, 21, 4969, 587, 558, 576, 5023, 5232, 17995, 1417, 1202, 6901, 1633, 5003, 18000, 18001, 504, 1128, 7218, 8721, 5590, 2]
+// Dependencies: [19, 17, 6844, 21, 4971, 587, 558, 576, 5025, 5234, 18027, 1417, 1202, 6903, 1633, 5005, 18032, 18033, 504, 1128, 7220, 8723, 5592, 2]
 
-// Module 17994 (GuildSettingsModalMemberApplications)
+// Module 18026 (GuildSettingsModalMemberApplications)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5003 */;
-import UserUtilsDefault from "UserUtils" /* 5023 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 17995 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5005 */;
+import UserUtilsDefault from "UserUtils" /* 5025 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 18027 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6842 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6844 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -91,7 +91,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let tmp11 = null != tmp4;
   if (tmp11) {
     const obj5 = { variant: "text-xs/medium", children: user.username };
-    tmp11 = metroImportDefault(tmp(5232).Text, obj5);
+    tmp11 = metroImportDefault(tmp(5234).Text, obj5);
   }
   cResult[4] = tmp4;
   cResult[5] = user;
@@ -193,7 +193,7 @@ let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
         }
       }
       const obj5 = { arrow: true, icon: tmp8, label: tmp11, onPress: tmp4, start, end };
-      const tmp17 = closure_7(joinRequest(6901).TableRow, obj5);
+      const tmp17 = closure_7(joinRequest(6903).TableRow, obj5);
       cResult[8] = end;
       cResult[9] = tmp4;
       cResult[10] = start;
@@ -225,7 +225,7 @@ let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
         userAvatarSource = obj.getUserAvatarSource(user);
       }
       const obj2 = { arrow: true, icon: closure_7(Avatar, obj3), label: closure_7(closure_11, obj4), onPress: tmp, start, end };
-      const TableRow = joinRequest(6901).TableRow;
+      const TableRow = joinRequest(6903).TableRow;
       obj3 = { source: userAvatarSource, size: joinRequest(1202).AvatarSizes.SMALL };
       Avatar = joinRequest(1202).Avatar;
       obj4 = { user };

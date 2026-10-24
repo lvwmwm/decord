@@ -1,11 +1,11 @@
-// Module ID: 17650
-// Function ID: 17651
+// Module ID: 17682
+// Function ID: 17683
 // Name: ChannelListLegendList
-// Dependencies: [19, 21, 17651, 5050, 7165, 13848, 2]
+// Dependencies: [19, 21, 17683, 5052, 7167, 13867, 2]
 
-// Module 17650 (ChannelListLegendList)
-import ReanimatedRexport from "ReanimatedRexport" /* 5050 */;
-import FastList from "FastList" /* 7165 */;
+// Module 17682 (ChannelListLegendList)
+import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
+import FastList from "FastList" /* 7167 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -34,6 +34,7 @@ const memoResult = react.memo(function ChannelListLegendList(listViewportHeight)
   let headerSize;
   let insetEnd;
   let items6;
+  let num2;
   let onEndReached;
   let ref;
   let renderAccessory;
@@ -48,6 +49,7 @@ const memoResult = react.memo(function ChannelListLegendList(listViewportHeight)
   const renderSectionFooter = listViewportHeight.renderSectionFooter;
   const renderSectionHeader = listViewportHeight.renderSectionHeader;
   const scrollIndicatorInsetBottom = listViewportHeight.scrollIndicatorInsetBottom;
+  const drawDistanceMode = listViewportHeight.drawDistanceMode;
   c13 = undefined;
   c14 = undefined;
   contentSize = undefined;
@@ -297,7 +299,7 @@ const memoResult = react.memo(function ChannelListLegendList(listViewportHeight)
   const imperativeHandle = listViewportHeight.useImperativeHandle(ref, () => memo1, items1);
   let obj2 = require("ReanimatedRexport");
   const tmp5 = require;
-  class G {
+  class Q {
     constructor(contentOffset) {
       const result = sharedValue.set(contentOffset.contentOffset.y);
       onScrollWorklet(contentOffset.contentOffset.y, contentOffset.contentSize.height, contentOffset.layoutMeasurement.height);
@@ -307,12 +309,12 @@ const memoResult = react.memo(function ChannelListLegendList(listViewportHeight)
       }
     }
   }
-  G.__closure = { scrollPosValue: sharedValue, onScrollWorklet, onScroll, runOnJS: require("ReanimatedRexport").runOnJS };
-  G.__workletHash = 11450141164730;
-  G.__initData = scrollIndicatorInsetBottom;
+  Q.__closure = { scrollPosValue: sharedValue, onScrollWorklet, onScroll, runOnJS: require("ReanimatedRexport").runOnJS };
+  Q.__workletHash = 11450141164730;
+  Q.__initData = scrollIndicatorInsetBottom;
   const items2 = [renderItem, renderSectionFooter, renderSectionHeader];
   ({ scrollPosValue: sharedValue, onScrollWorklet, onScroll, runOnJS: require("ReanimatedRexport").runOnJS });
-  const animatedScrollHandler = obj2.useAnimatedScrollHandler(G);
+  const animatedScrollHandler = obj2.useAnimatedScrollHandler(Q);
   const callback = listViewportHeight.useCallback((item) => {
     item = item.item;
     const type = item.type;
@@ -340,12 +342,24 @@ const memoResult = react.memo(function ChannelListLegendList(listViewportHeight)
   if (listViewportHeight > 0) {
     num = endReachedThreshold / listViewportHeight;
   }
-  const obj4 = { children: items6 };
-  items6 = [, ];
-  const obj5 = { ref: ref1, contentContainerStyle: memo3, data: listData, drawDistance: listViewportHeight, estimatedHeaderSize: headerSize, getFixedItemSize: callback3, getItemType: callback1, initialScrollOffset: memo, keyExtractor: callback2, ListHeaderComponent: memo2, ListHeaderComponentStyle: renderSectionHeader, onEndReached, onEndReachedThreshold: num, onScroll: animatedScrollHandler, recycleItems: true, renderItem: callback, scrollIndicatorInsets: memo4 };
-  items6[0] = onScrollWorklet(tmp5(tmp2[5]).AnimatedLegendList, obj5);
-  items6[1] = renderAccessory(memo1);
-  return renderHeader(onScroll, obj4);
+  const obj4 = { ref: ref1, contentContainerStyle: memo3, data: listData, drawDistance: num2, estimatedHeaderSize: headerSize, getFixedItemSize: callback3, getItemType: callback1, initialScrollOffset: memo, keyExtractor: callback2, ListHeaderComponent: memo2, ListHeaderComponentStyle: renderSectionHeader, onEndReached, onEndReachedThreshold: num, onScroll: animatedScrollHandler, recycleItems: true, renderItem: callback, scrollIndicatorInsets: memo4 };
+  const AnimatedLegendList = tmp5(tmp2[5]).AnimatedLegendList;
+  const tmp19 = renderHeader;
+  const tmp20 = onScroll;
+  const tmp21 = onScrollWorklet;
+  if ("viewport" === drawDistanceMode) {
+    num2 = listViewportHeight;
+  } else {
+    let str = "small";
+    if ("small" === drawDistanceMode) {
+      num2 = 100;
+    } else {
+      let str2 = "default";
+    }
+  }
+  const obj5 = { children: items6 };
+  items6 = [tmp21(AnimatedLegendList, obj4), renderAccessory(memo1)];
+  return tmp19(tmp20, obj5);
 });
 let result = size.fileFinishedImporting("modules/channel_list_v2/native/ChannelListLegendList.tsx");
 

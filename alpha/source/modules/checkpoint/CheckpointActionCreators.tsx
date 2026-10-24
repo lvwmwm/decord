@@ -1,20 +1,21 @@
-// Module ID: 12913
-// Function ID: 12914
+// Module ID: 12950
+// Function ID: 12951
 // Name: CheckpointActionCreators
-// Dependencies: [5, 4821, 12912, 1087, 584, 1297, 12914, 12915, 7409, 1267, 7753, 7564, 2]
-// Exports: completeCheckpoint, fetchCheckpointData, resetCheckpoint, resetEditedCharacter, selectCharacterTrait, sendSidekickMessage, toggleMute
+// Dependencies: [5, 4823, 12949, 1087, 584, 1297, 12951, 12952, 7411, 1267, 7755, 7566, 12900, 1388, 2]
+// Exports: completeCheckpoint, fetchCheckpointData, resetCheckpoint, resetEditedCharacter, selectCharacterTrait, sendCheckpointCard, sendSidekickMessage, toggleMute
 
-// Module 12913 (CheckpointActionCreators)
+// Module 12950 (CheckpointActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7409 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
+import formatResults from "formatResults" /* 12900 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
-import CheckpointStore from "CheckpointStore" /* 12912 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import CheckpointStore from "CheckpointStore" /* 12949 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
-let c1, id;
+let c1, c10, c9;
 
 let metroImportDefault;
 let metroRequire;
@@ -335,6 +336,117 @@ obj = function _sendSidekickMessage() {
   });
   return obj(...arguments);
 };
+obj = function _sendCheckpointCard() {
+  obj = _asyncToGenerator(async (arg0, value, arg2) => {
+    let checkpointCardType;
+    let closure_1;
+    let closure_4;
+    let closure_0 = arg0;
+    let closure_2 = arg2;
+    if (c10 === 2) {
+      c10 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        let obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      while (true) {
+        let closure_3;
+        let c4;
+        c10 = 2;
+        let tmp4 = c9;
+        if (0 === c9) {
+          if (arg0 === 1) {
+            c10 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c10 = 3;
+            let obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_6 = tmp;
+            let closure_5 = tmp4;
+            closure_0 = checkpointCardType;
+            checkpointCardType = closure_2;
+            closure_2 = undefined;
+            closure_3 = undefined;
+            c4 = undefined;
+            let _Promise2 = Promise;
+            c9 = 1;
+            c10 = 1;
+            let obj4 = { value: Promise.all(closure_0.map(formatResults.getOrResolveChannelIdFromDestinationId)), done: false };
+            return obj4;
+          }
+        } else if (1 === tmp4) {
+          if (arg0 === 1) {
+            c10 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c10 = 3;
+            let obj5 = { value, done: true };
+            return obj5;
+          } else {
+            closure_2 = value.filter(closure_134_0(closure_134_2[13]).isNotNullish);
+            let _Promise = Promise;
+            c9 = 2;
+            c10 = 1;
+            let obj6 = {
+              value: Promise.allSettled(closure_2.map((item) => {
+                        channel = channel.getChannel(item);
+                        if (null != channel) {
+                          const id = channel.id;
+                          const sendMessage = checkpointCardType(closure_2[11]).sendMessage;
+                          const obj2 = { location: "checkpoint", checkpointCardType };
+                          const tmp4 = checkpointCardType(closure_2[11]);
+                          obj = checkpointCardType(closure_2[10]);
+                          return sendMessage(id, obj.parse(channel, closure_1_0), false, obj2);
+                        }
+                      })),
+              done: false
+            };
+            return obj6;
+          }
+        } else if (2 === tmp4) {
+          if (arg0 === 1) {
+            c10 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c10 = 3;
+            obj = { value, done: true };
+            return obj;
+          } else {
+            closure_3 = value;
+            let channel = closure_3;
+            closure_3 = closure_3[Symbol.iterator]();
+            while (closure_3 !== undefined) {
+              let c8 = 1;
+              c4 = tmp13;
+              if ("rejected" === c4.status) {
+                throw c4.reason;
+              } else {
+                c8 = 0;
+                continue;
+              }
+            }
+            c10 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } else {
+          c8 = 0;
+          closure_3.return();
+          throw closure_1_7;
+        }
+      }
+    }
+  });
+  return obj(...arguments);
+};
 ({ AnalyticEvents: metroRequire, Endpoints: metroImportDefault } = Constants);
 const result = size.fileFinishedImporting("modules/checkpoint/CheckpointActionCreators.tsx");
 
@@ -361,5 +473,8 @@ export const resetCheckpoint = function resetCheckpoint() {
   return obj(...arguments);
 };
 export const sendSidekickMessage = function sendSidekickMessage() {
+  return obj(...arguments);
+};
+export const sendCheckpointCard = function sendCheckpointCard() {
   return obj(...arguments);
 };

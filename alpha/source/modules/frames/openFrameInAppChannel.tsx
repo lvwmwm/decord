@@ -1,60 +1,60 @@
-// Module ID: 11375
-// Function ID: 11376
+// Module ID: 11394
+// Function ID: 11395
 // Name: openFrameInAppChannel
-// Dependencies: [5, 11376, 10719, 2]
+// Dependencies: [5, 11395, 11396, 2]
 // Exports: default
 
-// Module 11375 (openFrameInAppChannel)
+// Module 11394 (openFrameInAppChannel)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
+
+let channel, launch;
 
 let obj = function _openFrameInAppChannel() {
   obj = _asyncToGenerator(async (applicationId) => {
     let analyticsContext;
-    let closure_2;
+    let preferredChannelId;
     let c3 = 0;
     let c4 = 0;
     const iter = (async (arg0, value) => {
       let c0;
       let c1;
-      let first;
-      let obj4;
-      let tmp13;
-      if (1 === c3) {
+      let c2;
+      let c3;
+      let tmp5;
+      if (1 === launch) {
         if (arg0 === 1) {
-          c4 = 3;
+          let c4 = 3;
           throw value;
         } else if (arg0 === 2) {
           c4 = 3;
           return { value, done: true };
         } else {
-          const obj9 = closure_130_0(closure_130_2[1]);
-          if (obj9.shouldOpenAppChannel(applicationId)) {
-            c3 = 2;
+          tmp5 = null;
+          const obj8 = closure_130_0(closure_130_2[1]);
+          if (obj8.shouldOpenAppChannel(applicationId)) {
+            launch = 2;
             c4 = 1;
-            const obj6 = { value: obj4.fetchApplicationChannels(applicationId), done: false };
-            obj4 = closure_130_0(closure_130_2[2]);
+            const obj5 = { preferredChannelId };
+            const obj6 = { value: closure_130_1(closure_130_2[2])(applicationId, obj5), done: false };
             return obj6;
           }
         }
       } else if (arg0 === 1) {
         c4 = 3;
         throw value;
-      } else if (arg0 === 2) {
-        c4 = 3;
-        return { value, done: true };
       } else {
-        first = value[0];
+        tmp5 = value;
+        if (arg0 === 2) {
+          c4 = 3;
+          return { value, done: true };
+        }
       }
-      const obj7 = { applicationId, channel: tmp13, analyticsContext };
-      tmp13 = null;
-      const tmp10 = closure_130_1(closure_130_2[1]);
-      if (null != first) {
-        tmp13 = { guildId: first.guild_id, channelId: first.channel_id };
-      }
-      tmp10(obj7);
+      channel = tmp5;
+      const obj7 = { applicationId, channel, analyticsContext, launch };
+      closure_130_1(closure_130_2[1])(obj7);
       await "IconComponent";
-      ({ applicationId: c0, analyticsContext: c1 } = closure_0);
+      ({ applicationId: c0, channelId: c1, analyticsContext: c2, launch: c3 } = closure_0);
       return "Reflect";
     })();
     iter.next();

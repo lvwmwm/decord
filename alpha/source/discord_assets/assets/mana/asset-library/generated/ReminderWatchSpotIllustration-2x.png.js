@@ -1,8 +1,8 @@
-// Module ID: 13807
-// Function ID: 13808
+// Module ID: 13827
+// Function ID: 13828
 // Dependencies: [2]
 
-// Module 13807
+// Module 13827
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ReminderWatchSpotIllustration-2x.png.js");

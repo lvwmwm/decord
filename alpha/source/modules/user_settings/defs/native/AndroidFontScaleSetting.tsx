@@ -1,23 +1,26 @@
-// Module ID: 16633
-// Function ID: 16634
+// Module ID: 16665
+// Function ID: 16666
 // Name: AndroidFontScaleSetting
-// Dependencies: [19, 16585, 1097, 8330, 21, 558, 576, 1274, 16634, 11152, 1128, 11204, 1384, 2]
+// Dependencies: [19, 16617, 1097, 8332, 21, 558, 576, 1274, 16666, 11153, 11205, 1128, 1384, 2]
 
-// Module 16633 (AndroidFontScaleSetting)
+// Module 16665 (AndroidFontScaleSetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import intl2 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import SettingsConstants from "SettingsConstants" /* 8330 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 11152 */;
-import FontScaleStore from "FontScaleStore" /* 16585 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 16634 */;
+import SettingsConstants from "SettingsConstants" /* 8332 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 11153 */;
+import FontScaleStore from "FontScaleStore" /* 16617 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 16666 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11204 */;
+import SettingBuilders from "SettingBuilders" /* 11205 */;
 import size from "module_2" /* 2 */;
 
+function formatFontScale(arg0) {
+  return 100 * FontScales[Math.round(Math, arg0)] + "%";
+}
 const useFontScaleStore = FontScaleStore.useFontScaleStore;
 const FontScales = UserSettingsConstants.FontScales;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -26,13 +29,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFontSca
   let state;
   let tmp10;
   let tmp11;
-  let tmp12;
-  let tmp18;
-  let tmp19;
+  let tmp15;
   let tmp5;
   let tmp9;
   let obj = react2;
-  const cResult = obj.c(13);
+  const cResult = obj.c(9);
   const tmp4 = useFontScaleStore();
   if (cResult[0] !== tmp4.persistedFontScale) {
     let index;
@@ -61,54 +62,38 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFontSca
   }
   const fontScale = tmp4.fontScale;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp14 = jsx(CircleMinusIcon.CircleMinusIcon, {});
-    const tmp15 = jsx(CirclePlusIcon.CirclePlusIcon, {});
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(intl2.t.i19n5L);
-    cResult[3] = tmp14;
-    cResult[4] = tmp15;
-    cResult[5] = stringResult;
-    tmp12 = stringResult;
-    tmp11 = tmp15;
-    tmp10 = tmp14;
+    const tmp13 = jsx(CircleMinusIcon.CircleMinusIcon, {});
+    const tmp14 = jsx(CirclePlusIcon.CirclePlusIcon, {});
+    cResult[3] = tmp13;
+    cResult[4] = tmp14;
+    tmp11 = tmp14;
+    tmp10 = tmp13;
   } else {
     tmp10 = cResult[3];
     tmp11 = cResult[4];
-    tmp12 = cResult[5];
+  }
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    const index1 = FontScales.indexOf(1);
+    cResult[5] = index1;
+    tmp15 = index1;
+  } else {
+    tmp15 = cResult[5];
   }
   const text = `${fontScale * 100}%`;
-  if (cResult[6] !== `${fontScale * 100}%`) {
-    const obj2 = { text };
-    cResult[6] = text;
-    cResult[7] = obj2;
-    tmp18 = obj2;
-  } else {
-    tmp18 = cResult[7];
-  }
-  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    const index1 = FontScales.indexOf(1);
-    cResult[8] = index1;
-    tmp19 = index1;
-  } else {
-    tmp19 = cResult[8];
-  }
-  if (cResult[9] === tmp5) {
-    if (cResult[10] === tmp18) {
-      let tmp22;
-      if (cResult[11] === text) {
-        tmp22 = cResult[12];
-      }
-      return tmp22;
+  if (cResult[6] === tmp5) {
+    let tmp19;
+    if (cResult[7] === `${fontScale * 100}%`) {
+      tmp19 = cResult[8];
     }
+    return tmp19;
   }
-  const obj3 = { value: tmp5, minimumValue: 0, maximumValue: FontScales.length - 1, step: 1, onValueChange: tmp9, startIcon: tmp10, endIcon: tmp11, accessibilityLabel: tmp12, accessibilityValue: tmp18, valueLabel: text, defaultValue: tmp19 };
-  cResult[9] = tmp5;
-  cResult[10] = tmp18;
-  cResult[11] = text;
-  cResult[12] = obj3;
-  tmp22 = obj3;
+  const obj2 = { value: tmp5, minValue: 0, maxValue: FontScales.length - 1, step: 1, onChange: tmp9, startIcon: tmp10, endIcon: tmp11, formatValue: formatFontScale, valueLabel: text, defaultValue: tmp15 };
+  cResult[6] = tmp5;
+  cResult[7] = text;
+  cResult[8] = obj2;
+  tmp19 = obj2;
 }) : (function useFontScaleSliderProps() {
-  let onValueChange;
+  let onChange;
   let state;
   const tmp = useFontScaleStore();
   let closure_0 = tmp;
@@ -116,7 +101,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFontSca
   if (null != tmp.persistedFontScale) {
     index = FontScales.indexOf(tmp.persistedFontScale);
   }
-  onValueChange = onValueChange.useCallback((arg0) => {
+  onChange = onChange.useCallback((arg0) => {
     closure_0 = arg0;
     let obj = closure_0(index[7]);
     obj.batchUpdates(() => {
@@ -124,12 +109,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFontSca
       return state.setState(obj);
     });
   }, []);
-  const items = [index, onValueChange, tmp.fontScale];
-  return onValueChange.useMemo(() => {
-    let intl;
-    const text = `${closure_0.fontScale * 100}%`;
-    const obj = { value: index, minimumValue: 0, maximumValue: FontScales.length - 1, step: 1, onValueChange, startIcon: jsx(CircleMinusIcon.CircleMinusIcon, {}), endIcon: jsx(CirclePlusIcon.CirclePlusIcon, {}), accessibilityLabel: intl.string(intl2.t.i19n5L), accessibilityValue: { text }, valueLabel: text, defaultValue: FontScales.indexOf(1) };
-    intl = intl2.intl;
+  const items = [index, onChange, tmp.fontScale];
+  return onChange.useMemo(() => {
+    let fontScale;
+    const obj = { value: index, minValue: 0, maxValue: FontScales.length - 1, step: 1, onChange, startIcon: jsx(CircleMinusIcon.CircleMinusIcon, {}), endIcon: jsx(CirclePlusIcon.CirclePlusIcon, {}), formatValue: formatFontScale, valueLabel: `${fontScale * 100}%`, defaultValue: FontScales.indexOf(1) };
+    fontScale = closure_0.fontScale;
     return obj;
   }, items);
 });

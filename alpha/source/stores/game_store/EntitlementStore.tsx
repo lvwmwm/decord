@@ -1,18 +1,18 @@
-// Module ID: 7504
-// Function ID: 7505
+// Module ID: 7506
+// Function ID: 7507
 // Name: EntitlementStore
-// Dependencies: [2046, 2043, 6822, 1087, 1394, 504, 12, 7505, 1090, 584, 2]
+// Dependencies: [2046, 2043, 6824, 1087, 1394, 504, 12, 7507, 1090, 584, 2]
 
-// Module 7504 (EntitlementStore)
+// Module 7506 (EntitlementStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedAll from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1090 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7505 */;
+import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7507 */;
 import EntitlementRecord from "EntitlementRecord" /* 2046 */;
 import LibraryApplicationStore from "LibraryApplicationStore" /* 2043 */;
-import SKUStore from "SKUStore" /* 6822 */;
+import SKUStore from "SKUStore" /* 6824 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

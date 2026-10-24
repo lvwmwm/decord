@@ -1,18 +1,18 @@
-// Module ID: 11745
-// Function ID: 11746
+// Module ID: 11770
+// Function ID: 11771
 // Name: ConjureEffortPicker
-// Dependencies: [32, 19, 17, 21, 558, 576, 1128, 3830, 11746, 11748, 6982, 6983, 6985, 6901, 11747, 7293, 5975, 587, 7246, 7296, 2]
+// Dependencies: [32, 19, 17, 21, 558, 576, 1128, 3830, 11771, 11773, 6984, 6985, 6987, 6903, 11772, 7295, 5977, 587, 7248, 7298, 2]
 
-// Module 11745 (ConjureEffortPicker)
+// Module 11770 (ConjureEffortPicker)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl7 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import TableRadioRow2 from "TableRadioRow" /* 6982 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7246 */;
-import ActionSheet2 from "ActionSheet" /* 7296 */;
-import ConjureEffortTiers from "ConjureEffortTiers" /* 11746 */;
-import ConjureModelLabels from "ConjureModelLabels" /* 11747 */;
+import TableRadioRow2 from "TableRadioRow" /* 6984 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7248 */;
+import ActionSheet2 from "ActionSheet" /* 7298 */;
+import ConjureEffortTiers from "ConjureEffortTiers" /* 11771 */;
+import ConjureModelLabels from "ConjureModelLabels" /* 11772 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -461,10 +461,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureEff
   const stringResult1 = intl2.string(disabled(3830)["59TDiR"]);
   const intl3 = settings(1128).intl;
   const stringResult2 = intl3.string(disabled(3830).fpdVCO);
-  let obj = settings(11746);
+  let obj = settings(11771);
   const conjureTierModelResult = obj.conjureTierModel(settings, tiers, settings.tier);
   let obj2 = { direction: "vertical", spacing: disabled(587).space.PX_16, children: items };
-  const Stack = settings(5975).Stack;
+  const Stack = settings(5977).Stack;
   let obj3 = {
     hasIcons: false,
     value: settings.tier,
@@ -489,25 +489,25 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureEff
     })
   };
   tmp13 = undefined;
-  const TableRadioGroup = settings(6983).TableRadioGroup;
+  const TableRadioGroup = settings(6985).TableRadioGroup;
   if (!hideTitle) {
     tmp13 = stringResult;
   }
-  CONJURE_MODEL_TIERS = tmp4(11748).CONJURE_MODEL_TIERS;
+  CONJURE_MODEL_TIERS = tmp4(11773).CONJURE_MODEL_TIERS;
   items = [closure_6(TableRadioGroup, obj3), , ];
   const obj4 = { hasIcons: false, children: closure_6(TableRow, obj5) };
-  const TableRowGroup = tmp4(6985).TableRowGroup;
+  const TableRowGroup = tmp4(6987).TableRowGroup;
   obj5 = { label: string(tmp4Result.conjureCustomizeMessage(choices)), arrow: !tmp2, accessibilityState: { expanded: tmp2 }, onPress: callback };
-  TableRow = tmp4(6901).TableRow;
+  TableRow = tmp4(6903).TableRow;
   const intl4 = tmp4(1128).intl;
   string = intl4.string;
-  tmp4Result = settings(11746);
+  tmp4Result = settings(11771);
   items[1] = closure_6(TableRowGroup, obj4);
   let tmp11Result = null;
   if (tmp2) {
     let tmp12Result = null;
     const tmp15 = closure_7;
-    const tmp4Result3 = settings(11746);
+    const tmp4Result3 = settings(11771);
     if (tmp4Result3.conjureCanPickModel(choices)) {
       tmp12Result = null;
       if (null != conjureTierModelResult) {
@@ -528,13 +528,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureEff
                 })
         };
         main = choices.main;
-        const TableRadioGroup2 = tmp4(6983).TableRadioGroup;
+        const TableRadioGroup2 = tmp4(6985).TableRadioGroup;
         tmp12Result = tmp12(TableRadioGroup2, obj6);
       }
     }
     const items1 = [tmp12Result, , ];
     let str = settings.thinking;
-    const TableRadioGroup3 = tmp4(6983).TableRadioGroup;
+    const TableRadioGroup3 = tmp4(6985).TableRadioGroup;
     if (str == null) {
       let thinking;
       if (tiers != null) {
@@ -572,10 +572,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureEff
     thinking1 = choices.thinking;
     items1[1] = closure_6(TableRadioGroup3, obj7);
     let tmp12Result2 = null;
-    const tmp4Result4 = settings(11746);
+    const tmp4Result4 = settings(11771);
     if (tmp4Result4.conjureCeilingSupportsFast(settings, tiers, choices.main)) {
       const obj8 = { hasIcons: false, children: closure_6(TableSwitchRow, obj9) };
-      const TableRowGroup2 = tmp4(6985).TableRowGroup;
+      const TableRowGroup2 = tmp4(6987).TableRowGroup;
       obj9 = {
         label: intl5.string(disabled(3830)["5AblQX"]),
         subLabel: intl6.string(disabled(3830).QnUV8M),
@@ -588,7 +588,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureEff
               dependencyMap(obj2.conjureNormalizeFast(obj));
             }
       };
-      TableSwitchRow = tmp4(7293).TableSwitchRow;
+      TableSwitchRow = tmp4(7295).TableSwitchRow;
       intl5 = tmp4(1128).intl;
       intl6 = tmp4(1128).intl;
       tmp12Result2 = tmp12(TableRowGroup2, obj8);
@@ -630,7 +630,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureEffor
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: intl.string(_modDef3830.aBPQxX) };
-    const BottomSheetTitleHeader = tmp(7246).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(7248).BottomSheetTitleHeader;
     intl = tmp(1128).intl;
     const tmp10 = metroRequire(BottomSheetTitleHeader, obj2);
     cResult[2] = tmp10;
@@ -651,7 +651,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureEffor
   }
   const obj3 = { header: tmp7, children: metroRequire(View, obj4) };
   obj4 = { children: metroRequire(closure_9, { settings: tmp5, tiers, choices, disabled: false, onChange: tmp6, hideTitle: true }) };
-  const ActionSheet = tmp(7296).ActionSheet;
+  const ActionSheet = tmp(7298).ActionSheet;
   const tmp12 = metroRequire(ActionSheet, obj3);
   cResult[3] = choices;
   cResult[4] = tmp6;

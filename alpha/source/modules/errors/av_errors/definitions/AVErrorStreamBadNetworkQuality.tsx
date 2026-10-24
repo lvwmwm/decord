@@ -1,14 +1,14 @@
-// Module ID: 19332
-// Function ID: 19333
+// Module ID: 19392
+// Function ID: 19393
 // Name: AVErrorStreamBadNetworkQuality
-// Dependencies: [7812, 1087, 5895, 19325, 1388, 2]
+// Dependencies: [7814, 1087, 5897, 19385, 1388, 2]
 
-// Module 19332 (AVErrorStreamBadNetworkQuality)
+// Module 19392 (AVErrorStreamBadNetworkQuality)
 import Constants from "Constants" /* 1087 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import AVError from "AVError" /* 5895 */;
-import AVErrorContext from "AVErrorContext" /* 19325 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7812 */;
+import AVError from "AVError" /* 5897 */;
+import AVErrorContext from "AVErrorContext" /* 19385 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7814 */;
 import size from "module_2" /* 2 */;
 
 const RTCConnectionQuality = Constants.RTCConnectionQuality;

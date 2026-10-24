@@ -1,22 +1,25 @@
-// Module ID: 15684
-// Function ID: 15685
+// Module ID: 15705
+// Function ID: 15706
 // Name: validateEmbeddedAppFrame
-// Dependencies: [15685, 1087, 9256, 5624, 10727, 11455, 2031, 9263, 9257, 2]
-// Exports: tryValidateEmbeddedAppFrame
+// Dependencies: [15706, 1087, 9257, 5626, 10728, 11475, 2031, 9264, 9258, 2]
+// Exports: tryValidateEmbeddedAppFrame, validateEmbeddedAppFrameOnAnySurface
 
-// Module 15684 (validateEmbeddedAppFrame)
+// Module 15705 (validateEmbeddedAppFrame)
 import Constants from "Constants" /* 1087 */;
 import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2031 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5624 */;
-import getSocketFrameDefault from "getSocketFrame" /* 9256 */;
-import isPostMessageSocketDefault from "isPostMessageSocket" /* 9257 */;
-import RPCErrorDefault from "RPCError" /* 9263 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 10727 */;
-import RPCHelpers from "RPCHelpers" /* 11455 */;
-import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 15685 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5626 */;
+import getSocketFrameDefault from "getSocketFrame" /* 9257 */;
+import isPostMessageSocketDefault from "isPostMessageSocket" /* 9258 */;
+import RPCErrorDefault from "RPCError" /* 9264 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 10728 */;
+import RPCHelpers from "RPCHelpers" /* 11475 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 15706 */;
 import size from "module_2" /* 2 */;
 
-function validateEmbeddedAppFrame(transport) {
+function validateEmbeddedAppFrame(socket) {
+  return validateFrame(socket, false);
+}
+function validateFrame(transport, arg1) {
   const obj = RPCHelpers;
   const result = obj.validatePostMessageTransport(transport.transport);
   const obj2 = RPCHelpers;
@@ -24,52 +27,64 @@ function validateEmbeddedAppFrame(transport) {
   const obj3 = EmbeddedSurfaceUtils;
   if (obj3.isEmbeddedApplication(transport.application)) {
     if (isPostMessageSocketDefault(transport)) {
-      const tmp14 = getSocketFrameDefault(transport);
-      let tmp16 = null;
-      if (null != tmp14) {
-        tmp16 = null;
-        if (tmp14.applicationId === transport.application.id) {
-          const tmp17 = tmp14.applicationId === ConjureBuilderPreviewStore.getBuilderPreviewApplicationId() || tmp14.data.runsInBackground;
-          const type = tmp14.surface.type;
-          if (EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL !== type) {
-            if (EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL !== type) {
-              tmp16 = tmp14;
-              if (EmbeddedSurfaceType.EmbeddedSurfaceType.OVERLAY !== type) {
-                if (EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN === type) {
-                  let tmp18 = null;
-                  if (tmp17) {
-                    tmp18 = tmp14;
-                  }
-                  tmp16 = tmp18;
-                } else {
-                  tmp16 = null;
-                  if (EmbeddedSurfaceType.EmbeddedSurfaceType.INTERACTION_MODAL !== type) {
-                    const surface = tmp14.surface;
-                    tmp16 = null;
+      let tmp17;
+      const tmp15 = getSocketFrameDefault(transport);
+      if (arg1) {
+        let tmp22 = null;
+        if (null != tmp15) {
+          tmp22 = null;
+          if (tmp15.applicationId === transport.application.id) {
+            tmp22 = tmp15;
+          }
+        }
+        tmp17 = tmp22;
+      } else {
+        tmp17 = null;
+        if (null != tmp15) {
+          tmp17 = null;
+          if (tmp15.applicationId === transport.application.id) {
+            const tmp18 = tmp15.applicationId === ConjureBuilderPreviewStore.getBuilderPreviewApplicationId() || tmp15.data.runsInBackground;
+            const type = tmp15.surface.type;
+            if (EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL !== type) {
+              if (EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL !== type) {
+                tmp17 = tmp15;
+                if (EmbeddedSurfaceType.EmbeddedSurfaceType.OVERLAY !== type) {
+                  if (EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN === type) {
+                    let tmp19 = null;
+                    if (tmp18) {
+                      tmp19 = tmp15;
+                    }
+                    tmp17 = tmp19;
+                  } else {
+                    tmp17 = null;
+                    if (EmbeddedSurfaceType.EmbeddedSurfaceType.INTERACTION_MODAL !== type) {
+                      const surface = tmp15.surface;
+                      tmp17 = null;
+                    }
                   }
                 }
               }
             }
-          }
-          let tmp19 = tmp14;
-          if (tmp14.surface.channelId === conjurePreviewSurface.CONJURE_UNKNOWN_CHANNEL) {
-            let tmp20 = null;
-            if (tmp17) {
-              tmp20 = tmp14;
+            let tmp20 = tmp15;
+            if (tmp15.surface.channelId === conjurePreviewSurface.CONJURE_UNKNOWN_CHANNEL) {
+              let tmp21 = null;
+              if (tmp18) {
+                tmp21 = tmp15;
+              }
+              tmp20 = tmp21;
             }
-            tmp19 = tmp20;
+            tmp17 = tmp20;
           }
-          tmp16 = tmp19;
         }
       }
-      if (null == tmp16) {
+      if (null == tmp17) {
         const self5 = this;
         const self6 = this;
         const obj4 = { errorCode: RPCErrors.UNAUTHORIZED_FOR_APPLICATION };
-        const tmp23 = new RPCErrorDefault(obj4, "Command not available for this application");
-        throw tmp23;
+        const tmp25 = new RPCErrorDefault(obj4, "Command not available for this application");
+        throw tmp25;
       } else {
-        return { frame: tmp16, iframeId: transport.source.iframeId };
+        return { frame: tmp17, iframeId: transport.source.iframeId };
       }
     } else {
       const self3 = this;
@@ -90,9 +105,12 @@ const RPCErrors = Constants.RPCErrors;
 let result = size.fileFinishedImporting("modules/rpc/helpers/validateEmbeddedAppFrame.tsx");
 
 export default validateEmbeddedAppFrame;
-export const tryValidateEmbeddedAppFrame = function tryValidateEmbeddedAppFrame(transport) {
+export const validateEmbeddedAppFrameOnAnySurface = function validateEmbeddedAppFrameOnAnySurface(arg0) {
+  return validateFrame(arg0, true);
+};
+export const tryValidateEmbeddedAppFrame = function tryValidateEmbeddedAppFrame(socket) {
   try {
-    return validateEmbeddedAppFrame(transport);
+    return validateEmbeddedAppFrame(socket);
   } catch (tmp3) {
     if (tmp3 instanceof RPCErrorDefault) {
       return null;

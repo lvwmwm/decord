@@ -1,13 +1,13 @@
-// Module ID: 17662
-// Function ID: 17663
+// Module ID: 17694
+// Function ID: 17695
 // Name: useDefaultAuthorizationNotifiers
-// Dependencies: [19, 2001, 1087, 558, 576, 504, 5691, 6658, 5661, 1128, 3282, 2]
+// Dependencies: [19, 2001, 1087, 558, 576, 504, 5693, 6660, 5663, 1128, 3282, 2]
 
-// Module 17662 (useDefaultAuthorizationNotifiers)
+// Module 17694 (useDefaultAuthorizationNotifiers)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef3282 from "module_3282" /* 3282 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5661 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
 import react_mod from "react" /* 19 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -62,7 +62,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDefaultAu
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
-  const tmpResult3 = tmp(5691);
+  const tmpResult3 = tmp(5693);
   const isInAppBrowserOpen = tmpResult3.useIsInAppBrowserOpen();
   if (cResult[4] !== arg0) {
     const fn2 = function _(arg0) {
@@ -81,7 +81,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDefaultAu
     if (cResult[7] === value) {
       tmp13 = cResult[8];
     }
-    const tmpResult4 = tmp(6658);
+    const tmpResult4 = tmp(6660);
     const previousWhen = tmpResult4.usePreviousWhen(tmp13);
     if (cResult[9] === (stateFromStores && !isInAppBrowserOpen)) {
       if (cResult[10] === value) {

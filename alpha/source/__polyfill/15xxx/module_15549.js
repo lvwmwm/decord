@@ -1,9 +1,11 @@
 // Module ID: 15549
 // Function ID: 15550
-// Dependencies: [15527]
+// Dependencies: [15547]
 
 // Module 15549
-import _mod15527 from "module_15527" /* 15527 */;
+import _mod15547 from "module_15547" /* 15547 */;
 
+let closure_0 = _mod15547({}.toString);
+let closure_1 = _mod15547("".slice);
 
-export default _mod15527({}.isPrototypeOf);
+export default (arg0) => closure_1(closure_0(arg0), 8, -1);

@@ -1,38 +1,41 @@
-// Module ID: 18328
-// Function ID: 18329
+// Module ID: 18360
+// Function ID: 18361
 // Name: OrbsArcadeGameScreen
-// Dependencies: [19, 17, 6773, 1087, 5607, 18329, 6774, 21, 4969, 587, 558, 576, 1633, 504, 1506, 11860, 10764, 11480, 11861, 11865, 18330, 18331, 5035, 2]
+// Dependencies: [19, 17, 6775, 16390, 1087, 5609, 18361, 6776, 21, 4971, 587, 16396, 16406, 558, 576, 1633, 504, 1506, 11886, 10765, 11500, 11887, 11891, 18362, 18363, 5037, 2]
 
-// Module 18328 (OrbsArcadeGameScreen)
+// Module 18360 (OrbsArcadeGameScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import Link from "Link" /* 1506 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5607 */;
-import leaveFrame from "leaveFrame" /* 10764 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 18329 */;
-import react_mod from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6773 */;
-import FramesConstants from "FramesConstants" /* 6774 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5609 */;
+import leaveFrame from "leaveFrame" /* 10765 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 18361 */;
+import react from "react" /* 19 */;
+import FramesStore from "FramesStore" /* 6775 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16390 */;
+import FramesConstants from "FramesConstants" /* 6776 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let game, set;
+
 let FrameLayoutModes;
+let c10;
 let c9;
 let metroImportAll;
-let metroImportDefault;
 let obj2;
 let obj3;
 let rect;
-let react = react_mod;
+const f135389 = (id) => id.id;
 const View = react_native.View;
 const ThemeTypes = Constants.ThemeTypes;
 const ACTIVITY_PANEL_PORTRAIT_HEADER_HEIGHT = ActivityPanelConstants.ACTIVITY_PANEL_PORTRAIT_HEADER_HEIGHT;
 const DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG = ActivityPanelNativeConstants.DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG;
-({ isLaunched: metroImportDefault, FrameLayoutModes } = FramesConstants);
-({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+({ isLaunched: metroImportAll, FrameLayoutModes } = FramesConstants);
+({ jsx: c9, jsxs: c10 } = Fragment);
 const OrbsArcadeGame = "OrbsArcadeGame";
 const presentation = { layoutMode: FrameLayoutModes.FOCUSED, portraitSafeAreasConfig: DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG };
 let createStyles = createStyles_mod;
@@ -41,26 +44,26 @@ obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BLACK };
 createStyles = createStyles.createStyles;
 obj3 = { flex: 1, overflow: "hidden", borderTopStartRadius: nativeDefault.radii.lg, borderTopEndRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 rect = { position: "absolute", top: 0, left: 0, right: 0, height: ACTIVITY_PANEL_PORTRAIT_HEADER_HEIGHT, flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.VOICE_VIDEO_VIDEO_TILE_BLUR_FALLBACK };
-let closure_12 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeGameScreen(navigation) {
-  let closure_3;
+let closure_13 = createStyles(obj);
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeGameScreen(navigation) {
   let first;
-  let frame;
   let frameId;
-  let items3;
-  let items4;
-  let tmp8;
+  let tmp10;
   let tmp9;
   let tmp = navigation;
-  let obj = navigation(frameId[11]);
-  const cResult = obj.c(36);
+  let obj = navigation(frameId[14]);
+  const cResult = obj.c(41);
   navigation = navigation.navigation;
   const route = navigation.route;
-  frameId = route.params.frameId;
-  const tmp4 = closure_12();
-  const rect = route(frameId[12])();
+  const params = route.params;
+  frameId = params.frameId;
+  const gameId = params.gameId;
+  const claimableRewardIdsAtLaunch = params.claimableRewardIdsAtLaunch;
+  closure_13();
+  let tmp5 = route;
+  let tmp6 = route(frameId[15])();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [FramesStore];
+    const items = [closure_5];
     cResult[0] = items;
     first = items;
   } else {
@@ -74,29 +77,29 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
     cResult[1] = frameId;
     cResult[2] = fn;
     cResult[3] = items1;
-    tmp9 = items1;
-    tmp8 = fn;
+    tmp10 = items1;
+    tmp9 = fn;
   } else {
-    tmp8 = cResult[2];
-    tmp9 = cResult[3];
+    tmp9 = cResult[2];
+    tmp10 = cResult[3];
   }
-  const tmpResult = tmp(frameId[13]);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp8, tmp9);
-  react = tmp11;
+  const tmpResult = tmp(frameId[16]);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp9, tmp10);
+  closure_5 = tmp12;
   if (cResult[4] === null != stateFromStores) {
     if (cResult[5] === navigation) {
-      let tmp12;
       let tmp13;
+      let tmp14;
+      let tmp20;
       let tmp19;
-      let tmp18;
       if (cResult[6] === route.key) {
-        tmp12 = cResult[7];
-        tmp13 = cResult[8];
+        tmp13 = cResult[7];
+        tmp14 = cResult[8];
       }
-      const effect = react.useEffect(tmp12, tmp13);
+      let obj3 = gameId;
+      const effect = gameId.useEffect(tmp13, tmp14);
       let applicationId;
-      const obj3 = react;
-      const tmp5Result = route(frameId[15]);
+      let tmp5Result = tmp5(tmp2[18]);
       if (stateFromStores != null) {
         applicationId = stateFromStores.applicationId;
       }
@@ -105,12 +108,12 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
       }
       tmp5Result(applicationId);
       if (cResult[9] !== frameId) {
-        class T {
+        class O {
           constructor() {
             return () => {
               const tmp = closure_1_2;
               if (null != frame.getFrame(closure_1_2)) {
-                const obj = navigation(frameId[16]);
+                const obj = navigation(frameId[19]);
                 obj.leaveFrame(tmp);
               }
             };
@@ -118,151 +121,73 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
         }
         const items2 = [frameId];
         cResult[9] = frameId;
-        cResult[10] = T;
+        cResult[10] = O;
         cResult[11] = items2;
-        tmp19 = items2;
-        tmp18 = T;
+        tmp20 = items2;
+        tmp19 = O;
       } else {
-        class T {
+        class O {
           constructor() {
             return () => {
               const tmp = closure_1_2;
               if (null != frame.getFrame(closure_1_2)) {
-                const obj = navigation(frameId[16]);
+                const obj = navigation(frameId[19]);
                 obj.leaveFrame(tmp);
               }
             };
           }
         }
-        tmp19 = cResult[11];
+        tmp20 = cResult[11];
       }
-      const effect1 = obj3.useEffect(tmp18, tmp19);
-      if (cResult[12] !== frameId) {
+      const effect1 = obj3.useEffect(tmp19, tmp20);
+      if (cResult[12] === claimableRewardIdsAtLaunch) {
         class O {
           constructor() {
-            const obj = leaveFrame;
-            return obj.leaveFrame(frameId);
-          }
-        }
-        cResult[12] = frameId;
-        cResult[13] = O;
-      } else {
-        class O {
-          constructor() {
-            const obj = leaveFrame;
-            return obj.leaveFrame(frameId);
+            return () => {
+              const tmp = closure_1_2;
+              if (null != frame.getFrame(closure_1_2)) {
+                const obj = navigation(frameId[19]);
+                obj.leaveFrame(tmp);
+              }
+            };
           }
         }
       }
-      if (cResult[14] !== rect.top) {
-        class O {
-          constructor() {
-            const obj = leaveFrame;
-            return obj.leaveFrame(frameId);
-          }
-        }
-        tmp23[0] = rect.top;
-        cResult[14] = rect.top;
-        cResult[15] = tmp23;
-      } else {
-        class O {
-          constructor() {
-            const obj = leaveFrame;
-            return obj.leaveFrame(frameId);
-          }
-        }
-      }
-      if (cResult[16] === tmp4.container) {
-        class O {
-          constructor() {
-            const obj = leaveFrame;
-            return obj.leaveFrame(frameId);
-          }
-        }
-        const _Symbol = Symbol;
-        if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-          class O {
-            constructor() {
-              const obj = leaveFrame;
-              return obj.leaveFrame(frameId);
-            }
-          }
-          const obj2 = { wakeLockKey: OrbsArcadeGame };
-          cResult[19] = closure_8(route(frameId[17]), obj2);
-          const tmp27 = closure_8(route(frameId[17]), obj2);
-        } else {
-          class O {
-            constructor() {
-              const obj = leaveFrame;
-              return obj.leaveFrame(frameId);
-            }
-          }
-        }
-        if (cResult[20] === stateFromStores) {
-          class O {
-            constructor() {
-              const obj = leaveFrame;
-              return obj.leaveFrame(frameId);
-            }
-          }
-          if (cResult[23] === stateFromStores) {
-            class O {
-              constructor() {
-                const obj = leaveFrame;
-                return obj.leaveFrame(frameId);
+      class B {
+        constructor() {
+          return navigation.addListener("beforeRemove", function() {
+            let closure_0 = claimableRewardIdsAtLaunch;
+            const obj = game;
+            game = game.getGame(gameId);
+            if (null != game) {
+              const _Set = Set;
+              const obj3 = navigation(frameId[11]);
+              const orbsArcadeClaimableRewards = obj3.getOrbsArcadeClaimableRewards(game.rewards, obj.getGameStateForGame(tmp));
+              const mapped = orbsArcadeClaimableRewards.map(f135389);
+              const self = this;
+              const self2 = this;
+              set = new Set(mapped.filter(() => { /* body not rendered: F135390 */ }));
+              const tmp5 = navigation;
+              const tmp6 = frameId;
+              if (set.size > 0) {
+                const tmp5Result = tmp5(tmp6[12]);
+                const result = tmp5Result.openOrbsArcadeRewardUnlockedSheet(tmp, set);
               }
             }
-          }
-          let tmp34 = null;
-          if (null != stateFromStores) {
-            class O {
-              constructor() {
-                const obj = leaveFrame;
-                return obj.leaveFrame(frameId);
-              }
-            }
-            const obj4 = { style: items3, children: items4 };
-            items3 = [tmp4.header, ];
-            items3[1] = { paddingLeft: route(frameId[9]).space.PX_8 + rect.left, paddingRight: route(frameId[9]).space.PX_8 + rect.right };
-            const obj5 = { paddingLeft: route(frameId[9]).space.PX_8 + rect.left, paddingRight: route(frameId[9]).space.PX_8 + rect.right };
-            const obj6 = { applicationId: stateFromStores.applicationId };
-            items4 = [closure_8(tmp5(tmp2[20]), obj6), ];
-            const obj7 = { onPress: tmp21 };
-            items4[1] = closure_8(tmp(frameId[21]).BaseLeaveActivityButton, obj7);
-            tmp34 = closure_9(View, obj4);
-          }
-          cResult[23] = stateFromStores;
-          cResult[24] = tmp21;
-          cResult[25] = rect.left;
-          cResult[26] = rect.right;
-          cResult[27] = tmp4.header;
-          cResult[28] = tmp34;
+          });
         }
-        let tmp30 = null;
-        if (closure_7(stateFromStores)) {
-          class O {
-            constructor() {
-              const obj = leaveFrame;
-              return obj.leaveFrame(frameId);
-            }
-          }
-          const obj8 = { frameId, level: tmp(frameId[19]).FrameStackLevel.AboveAppContent, presentation };
-          const tmp5Result2 = route(frameId[18]);
-          tmp30 = closure_8(tmp5Result2, obj8);
-        }
-        cResult[20] = stateFromStores;
-        cResult[21] = frameId;
-        cResult[22] = tmp30;
       }
-      const items5 = [tmp4.container, tmp22];
-      cResult[16] = tmp4.container;
-      cResult[17] = tmp22;
-      cResult[18] = items5;
+      const items3 = [navigation, gameId, claimableRewardIdsAtLaunch];
+      cResult[12] = claimableRewardIdsAtLaunch;
+      cResult[13] = gameId;
+      cResult[14] = navigation;
+      cResult[15] = B;
+      cResult[16] = items3;
     }
   }
-  class L {
+  class F {
     constructor() {
-      const tmp = closure_3;
+      const tmp = closure_5;
       if (!tmp) {
         const dispatch = navigation.dispatch;
         const obj = { source: route.key };
@@ -272,18 +197,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
       }
     }
   }
-  const items6 = [null != stateFromStores, navigation, route.key];
+  const items4 = [null != stateFromStores, navigation, route.key];
   cResult[4] = null != stateFromStores;
   cResult[5] = navigation;
   cResult[6] = route.key;
-  cResult[7] = L;
-  cResult[8] = items6;
-  tmp13 = items6;
-  tmp12 = L;
+  cResult[7] = F;
+  cResult[8] = items4;
+  tmp14 = items4;
+  tmp13 = F;
 }) : (function OrbsArcadeGameScreen(navigation) {
-  let closure_3;
-  let frame;
-  let items5;
+  let items10;
   let items6;
   let items7;
   let items8;
@@ -291,17 +214,22 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
   let obj4;
   navigation = navigation.navigation;
   const route = navigation.route;
-  const frameId = route.params.frameId;
-  let tmp = closure_12();
-  const rect = route(frameId[12])();
-  let obj = navigation(frameId[13]);
-  const items = [FramesStore];
+  let closure_5;
+  const params = route.params;
+  const frameId = params.frameId;
+  const gameId = params.gameId;
+  const claimableRewardIdsAtLaunch = params.claimableRewardIdsAtLaunch;
+  let tmp = closure_13();
+  const rect = route(frameId[15])();
+  let obj = navigation(frameId[16]);
+  const items = [closure_5];
   const items1 = [frameId];
   const stateFromStores = obj.useStateFromStores(items, () => FramesStore.getFrame(frameId), items1);
-  react = tmp6;
-  const items2 = [null != stateFromStores, navigation, route.key];
-  const effect = react.useEffect(() => {
-    const tmp = closure_3;
+  let tmp6 = null != stateFromStores;
+  closure_5 = tmp6;
+  const items2 = [tmp6, navigation, route.key];
+  const effect = gameId.useEffect(() => {
+    const tmp = closure_5;
     if (!tmp) {
       const dispatch = navigation.dispatch;
       const obj = { source: route.key };
@@ -311,7 +239,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
     }
   }, items2);
   let applicationId;
-  const tmp8 = route(frameId[15]);
+  const tmp8 = route(frameId[18]);
   if (stateFromStores != null) {
     applicationId = stateFromStores.applicationId;
   }
@@ -320,49 +248,73 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
   }
   tmp8(applicationId);
   const items3 = [frameId];
-  const effect1 = obj2.useEffect(() => () => {
-    const tmp = closure_1_2;
-    if (null != frame.getFrame(closure_1_2)) {
-      const obj = navigation(frameId[16]);
-      obj.leaveFrame(tmp);
-    }
+  const effect1 = obj2.useEffect(() => {
+    let frame;
+    return () => {
+      const tmp = closure_1_2;
+      if (null != frame.getFrame(closure_1_2)) {
+        const obj = navigation(frameId[19]);
+        obj.leaveFrame(tmp);
+      }
+    };
   }, items3);
-  const items4 = [frameId];
+  const items4 = [navigation, gameId, claimableRewardIdsAtLaunch];
+  const effect2 = obj2.useEffect(() => navigation.addListener("beforeRemove", function() {
+    let closure_0 = claimableRewardIdsAtLaunch;
+    const obj = game;
+    game = game.getGame(gameId);
+    if (null != game) {
+      const _Set = Set;
+      const obj3 = navigation(frameId[11]);
+      const orbsArcadeClaimableRewards = obj3.getOrbsArcadeClaimableRewards(game.rewards, obj.getGameStateForGame(tmp));
+      const mapped = orbsArcadeClaimableRewards.map(f135389);
+      const self = this;
+      const self2 = this;
+      set = new Set(mapped.filter((item) => !closure_0.includes(item)));
+      const tmp5 = navigation;
+      const tmp6 = frameId;
+      if (set.size > 0) {
+        const tmp5Result = tmp5(tmp6[12]);
+        const result = tmp5Result.openOrbsArcadeRewardUnlockedSheet(tmp, set);
+      }
+    }
+  }), items4);
+  const items5 = [frameId];
   const callback = obj2.useCallback(() => {
     const obj = leaveFrame;
     return obj.leaveFrame(frameId);
-  }, items4);
-  const obj3 = { theme: ThemeTypes.DARK, children: closure_9(View, obj4) };
-  obj4 = { style: items5, children: items6 };
-  items5 = [tmp.container, { paddingTop: rect.top }];
-  const ThemeContextProvider = tmp4(tmp3[22]).ThemeContextProvider;
-  items6 = [, ];
+  }, items5);
+  let obj3 = { theme: ThemeTypes.DARK, children: closure_10(claimableRewardIdsAtLaunch, obj4) };
+  obj4 = { style: items6, children: items7 };
+  items6 = [tmp.container, { paddingTop: rect.top }];
+  const ThemeContextProvider = tmp4(tmp3[25]).ThemeContextProvider;
+  items7 = [, ];
   const obj5 = { wakeLockKey: OrbsArcadeGame };
-  items6[0] = closure_8(route(frameId[17]), obj5);
-  let tmp13Result = null;
-  const obj6 = { style: tmp.wrapper, children: items7 };
-  if (closure_7(stateFromStores)) {
-    const obj7 = { frameId, level: navigation(frameId[19]).FrameStackLevel.AboveAppContent, presentation };
-    const tmp2Result = route(frameId[18]);
-    tmp13Result = tmp13(tmp2Result, obj7);
-  }
-  items7 = [tmp13Result, ];
+  items7[0] = closure_9(route(frameId[20]), obj5);
   let tmp14Result = null;
-  if (null != stateFromStores) {
-    const obj8 = { style: items8, children: items9 };
-    items8 = [tmp.header, ];
-    items8[1] = { paddingLeft: route(frameId[9]).space.PX_8 + rect.left, paddingRight: route(frameId[9]).space.PX_8 + rect.right };
-    const obj10 = { applicationId: stateFromStores.applicationId };
-    const obj9 = { paddingLeft: route(frameId[9]).space.PX_8 + rect.left, paddingRight: route(frameId[9]).space.PX_8 + rect.right };
-    items9 = [closure_8(tmp2(tmp3[20]), obj10), ];
-    const obj11 = { onPress: callback };
-    items9[1] = closure_8(navigation(frameId[21]).BaseLeaveActivityButton, obj11);
-    tmp14Result = tmp14(tmp15, obj8);
+  const obj6 = { style: tmp.wrapper, children: items8 };
+  if (closure_8(stateFromStores)) {
+    const obj7 = { frameId, level: navigation(frameId[22]).FrameStackLevel.AboveAppContent, presentation };
+    const tmp2Result = route(frameId[21]);
+    tmp14Result = tmp14(tmp2Result, obj7);
   }
-  items7[1] = tmp14Result;
-  items6[1] = closure_9(View, obj6);
-  return closure_8(ThemeContextProvider, obj3);
+  items8 = [tmp14Result, ];
+  let tmp15Result = null;
+  if (null != stateFromStores) {
+    const obj8 = { style: items9, children: items10 };
+    items9 = [tmp.header, ];
+    items9[1] = { paddingLeft: route(frameId[10]).space.PX_8 + rect.left, paddingRight: route(frameId[10]).space.PX_8 + rect.right };
+    const obj10 = { applicationId: stateFromStores.applicationId };
+    const obj9 = { paddingLeft: route(frameId[10]).space.PX_8 + rect.left, paddingRight: route(frameId[10]).space.PX_8 + rect.right };
+    items10 = [closure_9(tmp2(tmp3[23]), obj10), ];
+    const obj11 = { onPress: callback };
+    items10[1] = closure_9(navigation(frameId[24]).BaseLeaveActivityButton, obj11);
+    tmp15Result = tmp15(tmp16, obj8);
+  }
+  items8[1] = tmp15Result;
+  items7[1] = closure_10(claimableRewardIdsAtLaunch, obj6);
+  return closure_9(ThemeContextProvider, obj3);
 });
-const result = size.fileFinishedImporting("modules/orbs_arcade/native/OrbsArcadeGameScreen.tsx");
+let result = size.fileFinishedImporting("modules/orbs_arcade/native/OrbsArcadeGameScreen.tsx");
 
 export default tmp5;

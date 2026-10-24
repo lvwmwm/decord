@@ -1,13 +1,13 @@
-// Module ID: 16551
-// Function ID: 16552
+// Module ID: 16583
+// Function ID: 16584
 // Name: GuildRoleSubscriptionTypeUtils
-// Dependencies: [16525, 1394, 1128, 2]
+// Dependencies: [16557, 1394, 1128, 2]
 // Exports: formatPlanInterval, formatPlanIntervalDuration, getBenefitKey, isChannelBenefit, isIntangibleBenefit
 
-// Module 16551 (GuildRoleSubscriptionTypeUtils)
+// Module 16583 (GuildRoleSubscriptionTypeUtils)
 import intl5 from "intl" /* 1128 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16525 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16557 */;
 import size from "module_2" /* 2 */;
 
 const constants = GuildRoleSubscriptionsConstants.GuildRoleSubscriptionBenefitTypes;

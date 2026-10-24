@@ -1,10 +1,10 @@
-// Module ID: 15197
-// Function ID: 15198
+// Module ID: 15216
+// Function ID: 15217
 // Name: GuildPopoutActionCreators
 // Dependencies: [5, 1087, 584, 1297, 2]
 // Exports: fetchGuildForPopout
 
-// Module 15197 (GuildPopoutActionCreators)
+// Module 15216 (GuildPopoutActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;

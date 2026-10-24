@@ -1,23 +1,23 @@
-// Module ID: 5738
-// Function ID: 5739
+// Module ID: 5740
+// Function ID: 5741
 // Name: MediaEngineNative
-// Dependencies: [109, 32, 5, 5716, 5739, 5740, 5741, 5745, 4, 2016, 5746, 5747, 1367, 1385, 5749, 5754, 5809, 2]
+// Dependencies: [109, 32, 5, 5718, 5741, 5742, 5743, 5747, 4, 2016, 5748, 5749, 1367, 1385, 5751, 5756, 5811, 2]
 
-// Module 5738 (MediaEngineNative)
+// Module 5740 (MediaEngineNative)
 import _modDef1367 from "module_1367" /* 1367 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
 import inject from "inject" /* 2016 */;
-import VideoDefault from "Video" /* 5741 */;
-import CameraDefault from "Camera" /* 5745 */;
-import MediaEngineEvent from "MediaEngineEvent" /* 5746 */;
-import ConnectionDefault from "Connection" /* 5749 */;
-import Devices from "Devices" /* 5809 */;
+import VideoDefault from "Video" /* 5743 */;
+import CameraDefault from "Camera" /* 5747 */;
+import MediaEngineEvent from "MediaEngineEvent" /* 5748 */;
+import ConnectionDefault from "Connection" /* 5751 */;
+import Devices from "Devices" /* 5811 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants_mod from "Constants" /* 5716 */;
-import Constants_mod2 from "Constants" /* 5739 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 5740 */;
+import Constants_mod from "Constants" /* 5718 */;
+import Constants_mod2 from "Constants" /* 5741 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 5742 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ let metroImportAll;
 let metroImportDefault;
 let tmp10;
 let unpackModuleId;
-const pollConnectionStatsDefault = tmp10(5747);
+const pollConnectionStatsDefault = tmp10(5749);
 let closure_3 = ["id", "useGraphicsCapture", "useGraphicsCaptureApiLevel"];
 let Constants = Constants_mod2;
 ({ QUEUE_METRICS_INTERVAL_MS: metroImportDefault, SIDECHAIN_COMPRESSION_MAX_RATIO: metroImportAll, SIDECHAIN_COMPRESSION_MAX_THRESHOLD: c9, SIDECHAIN_COMPRESSION_MIN_RATIO: c10, SIDECHAIN_COMPRESSION_MIN_THRESHOLD: unpackModuleId, ProcessPriority: closure_12 } = Constants);
@@ -347,7 +347,7 @@ class MediaEngineNative extends TypedEventEmitter {
       return obj(...arguments);
     };
     let c1 = false;
-    obj.on(obj(5746).MediaEngineEvent.Destroy, () => {
+    obj.on(obj(5748).MediaEngineEvent.Destroy, () => {
       c1 = true;
       return true;
     });
@@ -591,8 +591,8 @@ class MediaEngineNative extends TypedEventEmitter {
       videoSupported.experiments = undefined;
     }
     let flag = videoSupported.videoSupported;
-    const create = self(5749).create;
-    const tmp3 = self(5749);
+    const create = self(5751).create;
+    const tmp3 = self(5751);
     if (flag == null) {
       flag = true;
     }
@@ -600,7 +600,7 @@ class MediaEngineNative extends TypedEventEmitter {
       flag = self.supports(constants3.VIDEO);
     }
     obj2 = create(arg0, arg1, videoSupported, flag);
-    obj2.on(obj2(5754).BaseConnectionEvent.Destroy, (arg0) => {
+    obj2.on(obj2(5756).BaseConnectionEvent.Destroy, (arg0) => {
       const connections = self.connections;
       connections.delete(arg0);
       if (self.connectionsEmpty()) {
@@ -614,10 +614,10 @@ class MediaEngineNative extends TypedEventEmitter {
         }
       }
     });
-    obj2.on(obj2(5754).BaseConnectionEvent.Connected, () => {
+    obj2.on(obj2(5756).BaseConnectionEvent.Connected, () => {
       obj2.setVideoBroadcast(self.shouldConnectionBroadcastVideo(obj2));
     });
-    obj2.on(obj2(5754).BaseConnectionEvent.Silence, (arg0) => {
+    obj2.on(obj2(5756).BaseConnectionEvent.Silence, (arg0) => {
       self.emit(MediaEngineEvent.MediaEngineEvent.Silence, arg0);
     });
     let connections = self.connections;
@@ -637,7 +637,7 @@ class MediaEngineNative extends TypedEventEmitter {
         let result = setNativeThreadsPriority(videoSupported.threadPriorityConfiguration);
       }
     }
-    self.emit(tmp(5746).MediaEngineEvent.Connection, obj2);
+    self.emit(tmp(5748).MediaEngineEvent.Connection, obj2);
     return obj2;
   }
   shouldConnectionBroadcastVideo(context) {
@@ -673,6 +673,27 @@ class MediaEngineNative extends TypedEventEmitter {
       const obj2 = { audioMixerOptions };
       voiceEngine.setTransportOptions(obj2);
     }
+  }
+  getSpatialAudioHrtfFiles() {
+    let obj3;
+    const obj = inject;
+    if (obj.supportsFeature(constants5.SPATIAL_AUDIO)) {
+      const tmpResult = inject;
+      const voiceEngine = tmpResult.getVoiceEngine();
+      const getSpatialAudioHrtfFiles = voiceEngine.getSpatialAudioHrtfFiles;
+      let spatialAudioHrtfFiles;
+      if (getSpatialAudioHrtfFiles != null) {
+        spatialAudioHrtfFiles = getSpatialAudioHrtfFiles();
+      }
+      if (spatialAudioHrtfFiles == null) {
+        spatialAudioHrtfFiles = { directory: null, files: [] };
+        const obj2 = { directory: null, files: [] };
+      }
+      obj3 = spatialAudioHrtfFiles;
+    } else {
+      obj3 = { directory: null, files: [] };
+    }
+    return obj3;
   }
   setAudioInputBypassSystemProcessing(bypassSystemProcessing) {
     const obj = inject;
@@ -1750,7 +1771,7 @@ class MediaEngineNative extends TypedEventEmitter {
       const voiceEngine1 = tmp2Result5.getVoiceEngine();
       const setEmitVADLevel2 = voiceEngine1.setEmitVADLevel2;
       if (!tmp) {
-        tmp = self.listenerCount(tmp2(5746).MediaEngineEvent.VoiceActivity) > 0;
+        tmp = self.listenerCount(tmp2(5748).MediaEngineEvent.VoiceActivity) > 0;
       }
       setEmitVADLevel2(tmp);
     } else {
@@ -1759,7 +1780,7 @@ class MediaEngineNative extends TypedEventEmitter {
       let tmp7 = tmp;
       const setEmitVADLevel = voiceEngine2.setEmitVADLevel;
       if (!tmp) {
-        tmp7 = self.listenerCount(tmp2(5746).MediaEngineEvent.VoiceActivity) > 0;
+        tmp7 = self.listenerCount(tmp2(5748).MediaEngineEvent.VoiceActivity) > 0;
       }
       const obj4 = { echoCancellation: null, noiseSuppression: null, automaticGainControl: enabled1, noiseCancellation: null, noiseCancellationDuringProcessing: null };
       ({ echoCancellation: obj5.echoCancellation, noiseSuppression: obj5.noiseSuppression, automaticGainControlConfig: automaticGainControlConfig2 } = arg1);
@@ -1889,7 +1910,7 @@ class MediaEngineNative extends TypedEventEmitter {
     const replay = obj.createReplay(arg0, arg1);
     let tmp2 = null;
     if (null != replay) {
-      replay.on(self(5754).BaseConnectionEvent.Destroy, (arg0) => {
+      replay.on(self(5756).BaseConnectionEvent.Destroy, (arg0) => {
         const connections = self.connections;
         connections.delete(arg0);
         if (self.connectionsEmpty()) {
@@ -1901,7 +1922,7 @@ class MediaEngineNative extends TypedEventEmitter {
       connections.add(replay);
       const obj3 = self(2016);
       obj3.setProcessPriority(constants.HIGH);
-      self.emit(self(5746).MediaEngineEvent.Connection, replay);
+      self.emit(self(5748).MediaEngineEvent.Connection, replay);
       tmp2 = replay;
     }
     return tmp2;
@@ -1979,7 +2000,7 @@ class MediaEngineNative extends TypedEventEmitter {
         closure_0(arg0, arg1);
       });
     }
-    let tmp5 = this.listenerCount(tmp(5746).MediaEngineEvent.VoiceActivity) > 0;
+    let tmp5 = this.listenerCount(tmp(5748).MediaEngineEvent.VoiceActivity) > 0;
     if (tmp5) {
       const tmpResult = inject;
       tmp5 = null != tmpResult.getVoiceEngine().setEmitVADLevel2;

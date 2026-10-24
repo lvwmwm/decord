@@ -1,22 +1,22 @@
-// Module ID: 18871
-// Function ID: 18872
+// Module ID: 18901
+// Function ID: 18902
 // Name: RedesignDiscoverabilityLanding
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 1633, 5266, 1128, 5232, 18872, 13542, 5242, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 1633, 5268, 1128, 5234, 18902, 13579, 5244, 2]
 
-// Module 18871 (RedesignDiscoverabilityLanding)
+// Module 18901 (RedesignDiscoverabilityLanding)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1128 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import components_Button_Button from "components/Button/Button" /* 5242 */;
-import NavigatorConstants from "NavigatorConstants" /* 5266 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13542 */;
-import LanternSpotIllustration from "LanternSpotIllustration" /* 18872 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import components_Button_Button from "components/Button/Button" /* 5244 */;
+import NavigatorConstants from "NavigatorConstants" /* 5268 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13579 */;
+import LanternSpotIllustration from "LanternSpotIllustration" /* 18902 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

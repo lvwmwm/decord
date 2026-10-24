@@ -1,10 +1,10 @@
-// Module ID: 9649
-// Function ID: 9650
+// Module ID: 9650
+// Function ID: 9651
 // Name: ApplicationCommandIndexStore
-// Dependencies: [32, 5, 19, 9650, 2068, 502, 4821, 4881, 4843, 1392, 9651, 5981, 1087, 3, 9652, 9653, 7628, 7631, 6828, 38, 504, 9654, 1267, 2000, 9655, 584, 558, 576, 9656, 9657, 4802, 10204, 5632, 6825, 2]
+// Dependencies: [32, 5, 19, 9651, 2068, 502, 4823, 4883, 4845, 1392, 9652, 5983, 1087, 3, 9653, 9654, 7630, 7633, 6830, 38, 504, 9655, 1267, 2000, 9656, 584, 558, 576, 9657, 9658, 4804, 10205, 5634, 6827, 2]
 // Exports: appLauncherOnlyCompareNames, getOrFetchApplicationCommandIndexForTarget, getSection, isStale
 
-// Module 9649 (ApplicationCommandIndexStore)
+// Module 9650 (ApplicationCommandIndexStore)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -12,27 +12,27 @@ import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import Server from "Server" /* 2000 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5632 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6825 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6828 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7628 */;
-import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 9653 */;
-import CommandPermissionContext from "CommandPermissionContext" /* 9654 */;
-import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9655 */;
-import ApplicationCommandBuiltIns from "ApplicationCommandBuiltIns" /* 9657 */;
-import CommandPermissionUtils from "CommandPermissionUtils" /* 10204 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5634 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6827 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6830 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7630 */;
+import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 9654 */;
+import CommandPermissionContext from "CommandPermissionContext" /* 9655 */;
+import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9656 */;
+import ApplicationCommandBuiltIns from "ApplicationCommandBuiltIns" /* 9658 */;
+import CommandPermissionUtils from "CommandPermissionUtils" /* 10205 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9650 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9651 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
-import GuildMemberStore from "GuildMemberStore" /* 4881 */;
-import GuildStore from "GuildStore" /* 4843 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import GuildMemberStore from "GuildMemberStore" /* 4883 */;
+import GuildStore from "GuildStore" /* 4845 */;
 import UserStore from "UserStore" /* 1392 */;
-import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 9651 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5981 */;
+import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 9652 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5983 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -339,11 +339,11 @@ function handleFetchSuccess(arg0) {
           }
           obj = { permissions: keyPermissionsResult, botId: tmp6.bot_id };
           let tmp19 = id;
-          let obj2 = id(7628);
+          let obj2 = id(7630);
           let merged = Object.assign(obj2.getApplicationCommandSection(toApplication(tmp6), false));
           keyPermissionsResult = undefined;
           if (null != tmp6.permissions) {
-            let tmp19Result = tmp19(7631);
+            let tmp19Result = tmp19(7633);
             keyPermissionsResult = tmp19Result.keyPermissions(toServerPermissions(tmp6.permissions, id));
           }
           let obj6 = { descriptor: obj, commands: {} };
@@ -366,7 +366,7 @@ function handleFetchSuccess(arg0) {
       const membersById = requestMembersById(guildId, items);
     }
     const application_commands = index.application_commands;
-    const obj5 = id(7628);
+    const obj5 = id(7630);
     const applicationCommands = obj5.buildApplicationCommands(application_commands.map((description_default) => {
       let mapped;
       let name_default;
@@ -493,7 +493,7 @@ function queryIndex(allowApplicationCommands) {
   ({ permissionContext, contextState, userState, applicationStates, text, builtIns } = allowApplicationCommands);
   if (builtIns === undefined) {
     let tmp = NONE;
-    builtIns = NONE(9655).BuiltInCommandFilter.ALLOW;
+    builtIns = NONE(9656).BuiltInCommandFilter.ALLOW;
   }
   let flag = allowApplicationCommands.allowApplicationCommands;
   if (flag === undefined) {
@@ -505,7 +505,7 @@ function queryIndex(allowApplicationCommands) {
   }
   NONE = allowApplicationCommands.scoreMethod;
   if (NONE === undefined) {
-    NONE = NONE(9655).ScoreMethod.NONE;
+    NONE = NONE(9656).ScoreMethod.NONE;
   }
   let sortOptions = allowApplicationCommands.sortOptions;
   if (sortOptions === undefined) {
@@ -525,11 +525,11 @@ function queryIndex(allowApplicationCommands) {
   if (formatted != null) {
     parts = formatted.split(" ");
   }
-  const ONLY_TEXT = NONE(9655).BuiltInCommandFilter.ONLY_TEXT;
+  const ONLY_TEXT = NONE(9656).BuiltInCommandFilter.ONLY_TEXT;
   const tmp9 = NONE;
-  if (builtIns !== NONE(9655).BuiltInCommandFilter.DENY) {
+  if (builtIns !== NONE(9656).BuiltInCommandFilter.DENY) {
     const tmp12 = builtIns === ONLY_TEXT;
-    const tmp9Result = tmp9(9657);
+    const tmp9Result = tmp9(9658);
     builtInCommands = tmp9Result.getBuiltInCommands(commandTypes, true, tmp12);
   } else {
     builtInCommands = [];
@@ -656,7 +656,7 @@ function queryIndex(allowApplicationCommands) {
     }
   }
   if (sortOptions.applications.useFrecency) {
-    const FrecencyUserSettingsActionCreators = NONE(4802).FrecencyUserSettingsActionCreators;
+    const FrecencyUserSettingsActionCreators = NONE(4804).FrecencyUserSettingsActionCreators;
     const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
   }
   const sorted = items.sort((section, section2) => {
@@ -698,7 +698,7 @@ function queryIndex(allowApplicationCommands) {
   });
   if (builtInCommands.length > 0) {
     let num2 = 0;
-    const tmp87 = queryIndexSection(NONE(9657).BUILT_IN_SECTIONS[constants.BUILT_IN], builtInCommands, true, true, obj);
+    const tmp87 = queryIndexSection(NONE(9658).BUILT_IN_SECTIONS[constants.BUILT_IN], builtInCommands, true, true, obj);
     if (null != tmp87) {
       items.push(tmp87);
     }
@@ -711,7 +711,7 @@ function queryIndex(allowApplicationCommands) {
       return obj;
     });
   });
-  if (NONE === NONE(9655).ScoreMethod.COMMAND_ONLY) {
+  if (NONE === NONE(9656).ScoreMethod.COMMAND_ONLY) {
     const context = permissionContext.context;
     let guild_id;
     const getGuild = GuildStore.getGuild;
@@ -724,7 +724,7 @@ function queryIndex(allowApplicationCommands) {
     const guild = getGuild(guild_id);
     const tmp96 = sortOptions.commands.useFrecency && items.some((section) => section.section.id !== constants.BUILT_IN && section.data.length > 0);
     if (tmp96) {
-      const FrecencyUserSettingsActionCreators2 = tmp89(4802).FrecencyUserSettingsActionCreators;
+      const FrecencyUserSettingsActionCreators2 = tmp89(4804).FrecencyUserSettingsActionCreators;
       const ifNecessary1 = FrecencyUserSettingsActionCreators2.loadIfNecessary();
     }
     let tmp98;
@@ -1154,7 +1154,7 @@ function scoreCommand(untranslatedName, arg1, arg2, arg3) {
               if (!toLocaleLowerCaseResult1.includes(arg1)) {
                 const tmp25 = importDefault;
                 if (!fuzzysearchDefault(arg1, str)) {
-                  if (!tmp25(6825)(arg1, str2)) {
+                  if (!tmp25(6827)(arg1, str2)) {
                     let COMMAND_DESCRIPTION_FUZZY_MATCHES;
                     let options1 = untranslatedName.options;
                     if (options1 == null) {

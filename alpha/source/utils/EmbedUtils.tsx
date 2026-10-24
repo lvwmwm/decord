@@ -1,16 +1,16 @@
-// Module ID: 6484
-// Function ID: 6485
+// Module ID: 6486
+// Function ID: 6487
 // Name: EmbedUtils
-// Dependencies: [1087, 6485, 11, 1405, 12, 2049, 6012, 2]
+// Dependencies: [1087, 6487, 11, 1405, 12, 2049, 6014, 2]
 // Exports: canEmbedLinks, getMaxEmbedMediaSize, isCollectiblesShopArticleEmbed, isEmbedInline, isGameProfileArticleEmbed, isServerShopArticleEmbed, isSocialLayerStorefrontArticleEmbed, isUserProfileArticleEmbed, mergeEmbedsOnURL, sanitizeEmbed, shouldStripEmbeds
 
-// Module 6484 (EmbedUtils)
+// Module 6486 (EmbedUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
 import _modDef2049 from "module_2049" /* 2049 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 6012 */;
-import EmbedConstants from "EmbedConstants" /* 6485 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 6014 */;
+import EmbedConstants from "EmbedConstants" /* 6487 */;
 import Constants from "Constants" /* 1087 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -19,15 +19,15 @@ let map;
 let c3;
 let closure_4;
 let hasOwnProperty;
-function getEffectiveVideoProvider(name, url) {
+function getEffectiveVideoProvider(name, url1) {
   if ("YouTube" !== name) {
     if ("TikTok" !== name) {
-      if (null != url) {
+      if (null != url1) {
         try {
           const _URL = URL;
           const self = this;
           const self2 = this;
-          const uRL = new URL(url);
+          const uRL = new URL(url1);
           const hostname = uRL.hostname;
           if ("www.youtube.com" === hostname) {
             return "YouTube";

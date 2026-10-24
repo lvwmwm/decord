@@ -1,22 +1,22 @@
-// Module ID: 14789
-// Function ID: 14790
+// Module ID: 14812
+// Function ID: 14813
 // Name: BoostedGuildTierProgressCircle
-// Dependencies: [19, 17, 1087, 21, 4969, 587, 14790, 14794, 14795, 14796, 558, 576, 8369, 5667, 8364, 5232, 13474, 2]
+// Dependencies: [19, 17, 1087, 21, 4971, 587, 14813, 14817, 14818, 14819, 558, 576, 8371, 5669, 8366, 5234, 13511, 2]
 
-// Module 14789 (BoostedGuildTierProgressCircle)
+// Module 14812 (BoostedGuildTierProgressCircle)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import FastImageDefault from "FastImage" /* 5667 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 8364 */;
-import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 8369 */;
-import ProgressCircleDefault from "ProgressCircle" /* 13474 */;
-import Tier048Px from "Tier048Px" /* 14790 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import FastImageDefault from "FastImage" /* 5669 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8366 */;
+import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 8371 */;
+import ProgressCircleDefault from "ProgressCircle" /* 13511 */;
+import Tier048Px from "Tier048Px" /* 14813 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -172,11 +172,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostedGui
       if (guild.premiumTier !== hasOwnProperty.NONE) {
         const premiumTier = guild.premiumTier;
         if (hasOwnProperty.TIER_1 === premiumTier) {
-          tier048PxSource1 = tmp5(14794);
+          tier048PxSource1 = tmp5(14817);
         } else if (hasOwnProperty.TIER_2 === premiumTier) {
-          tier048PxSource1 = tmp5(14795);
+          tier048PxSource1 = tmp5(14818);
         } else if (hasOwnProperty.TIER_3 === premiumTier) {
-          tier048PxSource1 = tmp5(14796);
+          tier048PxSource1 = tmp5(14819);
         }
       }
       cResult[8] = guild;
@@ -230,17 +230,17 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostedGui
       if (guild.premiumTier !== hasOwnProperty.NONE) {
         const premiumTier = guild.premiumTier;
         if (hasOwnProperty.TIER_1 === premiumTier) {
-          tmp2Result4 = tmp2(14794);
+          tmp2Result4 = tmp2(14817);
         } else if (hasOwnProperty.TIER_2 === premiumTier) {
-          tmp2Result4 = tmp2(14795);
+          tmp2Result4 = tmp2(14818);
         } else if (hasOwnProperty.TIER_3 === premiumTier) {
-          tmp2Result4 = tmp2(14796);
+          tmp2Result4 = tmp2(14819);
         }
       }
       const obj5 = { source: tmp2Result4, style: tmp.guildTierIcon, accessibilityElementsHidden: true, importantForAccessibility: "no" };
       const items = [metroRequire(tmp12, obj5), ];
       const obj6 = { style: tmp.guildTierName, variant: "text-xs/semibold", color: "interactive-text-active", children: tmp19Result.getTierName(guild.premiumTier) };
-      const Text = tmp19(5232).Text;
+      const Text = tmp19(5234).Text;
       tmp19Result = GuildBoostingUtils;
       items[1] = metroRequire(Text, obj6);
       obj4.children = items;

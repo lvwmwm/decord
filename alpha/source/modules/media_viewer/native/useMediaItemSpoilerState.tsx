@@ -1,11 +1,11 @@
-// Module ID: 14190
-// Function ID: 14191
+// Module ID: 14209
+// Function ID: 14210
 // Name: useMediaItemSpoilerState
-// Dependencies: [32, 19, 558, 576, 8754, 5050, 5204, 1202, 2]
+// Dependencies: [32, 19, 558, 576, 8756, 5052, 5206, 1202, 2]
 
-// Module 14190 (useMediaItemSpoilerState)
-import ReanimatedRexport from "ReanimatedRexport" /* 5050 */;
-import timing from "timing" /* 5204 */;
+// Module 14209 (useMediaItemSpoilerState)
+import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
+import timing from "timing" /* 5206 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -26,13 +26,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaItem
   const tmp2 = dependencyMap;
   let obj = mediaItemHasSpoiler(576);
   const cResult = obj.c(7);
-  const obj2 = mediaItemHasSpoiler(8754);
+  const obj2 = mediaItemHasSpoiler(8756);
   mediaItemHasSpoiler = obj2.useMediaItemHasSpoiler(arg0);
   [tmp6, dependencyMap] = sharedValue(react.useState(mediaItemHasSpoiler), 2);
   let num = 0;
   const tmp5 = sharedValue(react.useState(mediaItemHasSpoiler), 2);
-  const useSharedValue = mediaItemHasSpoiler(5050).useSharedValue;
-  mediaItemHasSpoiler(5050);
+  const useSharedValue = mediaItemHasSpoiler(5052).useSharedValue;
+  mediaItemHasSpoiler(5052);
   const obj3 = react;
   if (mediaItemHasSpoiler) {
     num = 1;
@@ -46,7 +46,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaItem
       tmp10 = cResult[3];
     }
     const effect = obj3.useEffect(tmp9, tmp10);
-    const tmpResult = tmp(5050);
+    const tmpResult = tmp(5052);
     class A {
       constructor() {
         const obj = { opacity: sharedValue.get() };
@@ -104,14 +104,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaItem
   let tmp5;
   const tmp = mediaItemHasSpoiler;
   const tmp2 = dependencyMap;
-  let obj = mediaItemHasSpoiler(8754);
+  let obj = mediaItemHasSpoiler(8756);
   mediaItemHasSpoiler = obj.useMediaItemHasSpoiler(arg0);
   const obj2 = react;
   const tmp4 = sharedValue(react.useState(mediaItemHasSpoiler), 2);
   [tmp5, dependencyMap] = tmp4;
   let num = 0;
-  const useSharedValue = mediaItemHasSpoiler(5050).useSharedValue;
-  mediaItemHasSpoiler(5050);
+  const useSharedValue = mediaItemHasSpoiler(5052).useSharedValue;
+  mediaItemHasSpoiler(5052);
   if (mediaItemHasSpoiler) {
     num = 1;
   }
@@ -144,7 +144,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaItem
   fn.__closure = { spoilerOpacity: sharedValue };
   fn.__workletHash = 11024579603555;
   fn.__initData = __initData2;
-  const tmpResult = tmp(5050);
+  const tmpResult = tmp(5052);
   items1[1] = tmpResult.useAnimatedStyle(fn);
   return items1;
 });

@@ -1,22 +1,22 @@
-// Module ID: 17984
-// Function ID: 17985
+// Module ID: 18016
+// Function ID: 18017
 // Name: StandaloneMembersView
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 9709, 10624, 1505, 1633, 9004, 6922, 1128, 17985, 12740, 12754, 12758, 7093, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 9710, 10625, 1505, 1633, 9005, 6924, 1128, 18017, 12777, 12791, 12795, 7095, 2]
 
-// Module 17984 (StandaloneMembersView)
+// Module 18016 (StandaloneMembersView)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9004 */;
-import useActiveTheme from "useActiveTheme" /* 9709 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10624 */;
-import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 12740 */;
-import KickConfirmDefault from "KickConfirm" /* 12754 */;
-import BanConfirmDefault from "BanConfirm" /* 12758 */;
-import GuildSettingsModalMembersWithTabsDefault from "GuildSettingsModalMembersWithTabs" /* 17985 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9005 */;
+import useActiveTheme from "useActiveTheme" /* 9710 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10625 */;
+import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 12777 */;
+import KickConfirmDefault from "KickConfirm" /* 12791 */;
+import BanConfirmDefault from "BanConfirm" /* 12795 */;
+import GuildSettingsModalMembersWithTabsDefault from "GuildSettingsModalMembersWithTabs" /* 18017 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -155,7 +155,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function StandaloneMe
   }
   dependencyMap = tmp10;
   if (cResult[5] !== navigation) {
-    const tmpResult = tmp(6922);
+    const tmpResult = tmp(6924);
     const headerCloseButton = tmpResult.getHeaderCloseButton(() => navigation.goBack());
     cResult[5] = navigation;
     cResult[6] = headerCloseButton;

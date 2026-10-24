@@ -1,9 +1,9 @@
-// Module ID: 16939
-// Function ID: 16940
+// Module ID: 16971
+// Function ID: 16972
 // Name: DevToolsDataStorageScreen
-// Dependencies: [32, 19, 17, 505, 502, 21, 4969, 587, 558, 576, 6901, 4847, 5661, 4864, 504, 1506, 5591, 7142, 10625, 10623, 7143, 5208, 5232, 7148, 7246, 7292, 7296, 2]
+// Dependencies: [32, 19, 17, 505, 502, 21, 4971, 587, 558, 576, 6903, 4849, 5663, 4866, 504, 1506, 5593, 7144, 10626, 10624, 7145, 5210, 5234, 7150, 7248, 7294, 7298, 2]
 
-// Module 16939 (DevToolsDataStorageScreen)
+// Module 16971 (DevToolsDataStorageScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -11,20 +11,20 @@ import PersistedStore2 from "PersistedStore" /* 505 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Link from "Link" /* 1506 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 4847 */;
-import DatabaseManagerDefault from "DatabaseManager" /* 4864 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5591 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5661 */;
-import useScaledRowHeightDefault from "useScaledRowHeight" /* 7142 */;
-import FastestListDefault from "FastestList" /* 7148 */;
-import useFastestListTableRowPlaceholderConfigDefault from "useFastestListTableRowPlaceholderConfig" /* 10623 */;
-import useScaledSectionHeightDefault from "useScaledSectionHeight" /* 10625 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4849 */;
+import DatabaseManagerDefault from "DatabaseManager" /* 4866 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5593 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
+import useScaledRowHeightDefault from "useScaledRowHeight" /* 7144 */;
+import FastestListDefault from "FastestList" /* 7150 */;
+import useFastestListTableRowPlaceholderConfigDefault from "useFastestListTableRowPlaceholderConfig" /* 10624 */;
+import useScaledSectionHeightDefault from "useScaledSectionHeight" /* 10626 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let _require, importDefault, navigation, num, num2, num4, num5, num6, obj1, obj5
 let obj2;
 let obj3;
 let tmp;
-const TableRow3 = tmp(6901);
+const TableRow3 = tmp(6903);
 const View = react_native.View;
 let PersistedStore = PersistedStore2.PersistedStore;
 const jsx = Fragment.jsx;
@@ -703,7 +703,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToo
     tmp4 = cResult[1];
   }
   if (cResult[2] !== tmp4) {
-    const tmp8 = jsx(store(7246).BottomSheetTitleHeader, { title: tmp4 });
+    const tmp8 = jsx(store(7248).BottomSheetTitleHeader, { title: tmp4 });
     cResult[2] = tmp4;
     cResult[3] = tmp8;
     tmp6 = tmp8;
@@ -722,13 +722,13 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToo
       }
       return tmp11;
     }
-    const tmp13 = jsx(store(7296).ActionSheet, { header: tmp6, children: tmp9 });
+    const tmp13 = jsx(store(7298).ActionSheet, { header: tmp6, children: tmp9 });
     cResult[7] = tmp6;
     cResult[8] = tmp9;
     cResult[9] = tmp13;
     tmp11 = tmp13;
   }
-  const Group = tmp(7292).ActionSheetRow.Group;
+  const Group = tmp(7294).ActionSheetRow.Group;
   const tmp10 = <Group hasIcons={false}>{null}</Group>;
   cResult[4] = close;
   cResult[5] = store;
@@ -737,10 +737,10 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToo
 }) : (function DevToolsPersistedStoresActionSheet(store) {
   store = store.store;
   const close = store.close;
-  const ActionSheet = store(7296).ActionSheet;
+  const ActionSheet = store(7298).ActionSheet;
   ({ title: store.getName() });
-  const BottomSheetTitleHeader = store(7246).BottomSheetTitleHeader;
-  const Group = store(7292).ActionSheetRow.Group;
+  const BottomSheetTitleHeader = store(7248).BottomSheetTitleHeader;
+  const Group = store(7294).ActionSheetRow.Group;
   return <ActionSheet header={null}>{null}</ActionSheet>;
 });
 let result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsDataStorageScreen.tsx");

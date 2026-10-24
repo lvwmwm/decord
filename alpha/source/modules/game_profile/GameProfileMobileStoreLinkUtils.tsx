@@ -1,12 +1,12 @@
-// Module ID: 9321
-// Function ID: 9322
+// Module ID: 9322
+// Function ID: 9323
 // Name: GameProfileMobileStoreLinkUtils
-// Dependencies: [9272, 1106, 2]
+// Dependencies: [9273, 1106, 2]
 // Exports: getMobileStoreLink
 
-// Module 9321 (GameProfileMobileStoreLinkUtils)
+// Module 9322 (GameProfileMobileStoreLinkUtils)
 import ApplicationDistributors from "ApplicationDistributors" /* 1106 */;
-import ThirdPartyGameApplicationWebsiteCategory from "ThirdPartyGameApplicationWebsiteCategory" /* 9272 */;
+import ThirdPartyGameApplicationWebsiteCategory from "ThirdPartyGameApplicationWebsiteCategory" /* 9273 */;
 import size from "module_2" /* 2 */;
 
 let websiteHostnames;
@@ -18,19 +18,19 @@ let obj3;
 let obj = { appStore: obj2, googlePlay: obj3 };
 obj2 = {
   websiteCategories: items,
-  websiteHostnames: ["apps.apple.com", "itunes.apple.com"],
+  websiteHostnames: ThirdPartyGameApplicationWebsiteCategory.APP_STORE_WEBSITE_HOSTNAMES,
   distributor: ApplicationDistributors.ApplicationDistributors.APPLE_APP_STORE,
   buildUrl(arg0) {
-    return "https://apps.apple.com/app/id" + arg0;
+    return "https://" + ThirdPartyGameApplicationWebsiteCategory.APP_STORE_WEBSITE_HOSTNAMES[0] + "/app/id" + arg0;
   }
 };
 items = [ThirdPartyGameApplicationWebsiteCategory.ThirdPartyGameApplicationWebsiteCategory.IPHONE, ThirdPartyGameApplicationWebsiteCategory.ThirdPartyGameApplicationWebsiteCategory.IPAD];
 obj3 = {
   websiteCategories: items1,
-  websiteHostnames: ["play.google.com"],
+  websiteHostnames: ThirdPartyGameApplicationWebsiteCategory.GOOGLE_PLAY_WEBSITE_HOSTNAMES,
   distributor: ApplicationDistributors.ApplicationDistributors.GOOGLE_PLAY,
   buildUrl(arg0) {
-    return "https://play.google.com/store/apps/details?id=" + encodeURIComponent(arg0);
+    return "https://" + ThirdPartyGameApplicationWebsiteCategory.GOOGLE_PLAY_WEBSITE_HOSTNAMES[0] + "/store/apps/details?id=" + encodeURIComponent(arg0);
   }
 };
 items1 = [ThirdPartyGameApplicationWebsiteCategory.ThirdPartyGameApplicationWebsiteCategory.ANDROID];

@@ -1,12 +1,12 @@
-// Module ID: 12679
-// Function ID: 12680
+// Module ID: 12715
+// Function ID: 12716
 // Name: openGameOrganizationJoinModal
-// Dependencies: [6670, 12680, 2002, 2]
+// Dependencies: [6672, 12716, 2002, 2]
 // Exports: default
 
-// Module 12679 (openGameOrganizationJoinModal)
+// Module 12715 (openGameOrganizationJoinModal)
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6670 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_organization_invites/native/openGameOrganizationJoinModal.tsx");
@@ -14,5 +14,5 @@ const result = size.fileFinishedImporting("modules/game_organization_invites/nat
 export default function openGameOrganizationJoinModal(code) {
   const obj = ModalActionCreatorsDefault;
   const obj2 = { code };
-  obj.pushLazy(asyncRequire(12680, dependencyMap.paths), obj2);
+  obj.pushLazy(asyncRequire(12716, dependencyMap.paths), obj2);
 };

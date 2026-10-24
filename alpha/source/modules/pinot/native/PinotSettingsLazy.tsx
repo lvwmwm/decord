@@ -1,12 +1,12 @@
-// Module ID: 17224
-// Function ID: 17225
+// Module ID: 17256
+// Function ID: 17257
 // Name: PinotSettingsLazy
-// Dependencies: [8330, 11204, 2]
+// Dependencies: [8332, 11205, 2]
 // Exports: usePinotDataPrivacySections
 
-// Module 17224 (PinotSettingsLazy)
-import SettingsConstants from "SettingsConstants" /* 8330 */;
-import SettingBuilders from "SettingBuilders" /* 11204 */;
+// Module 17256 (PinotSettingsLazy)
+import SettingsConstants from "SettingsConstants" /* 8332 */;
+import SettingBuilders from "SettingBuilders" /* 11205 */;
 import size from "module_2" /* 2 */;
 
 const obj = {

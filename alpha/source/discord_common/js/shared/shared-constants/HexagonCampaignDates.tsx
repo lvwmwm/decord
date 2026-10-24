@@ -1,9 +1,9 @@
-// Module ID: 4995
-// Function ID: 4996
+// Module ID: 4997
+// Function ID: 4998
 // Name: HexagonCampaignDates
 // Dependencies: [2]
 
-// Module 4995 (HexagonCampaignDates)
+// Module 4997 (HexagonCampaignDates)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/HexagonCampaignDates.tsx");

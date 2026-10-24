@@ -1,14 +1,14 @@
-// Module ID: 8430
-// Function ID: 8431
+// Module ID: 8432
+// Function ID: 8433
 // Name: useDiscountOffer
-// Dependencies: [32, 19, 1392, 7558, 1394, 558, 576, 504, 2053, 4816, 2]
+// Dependencies: [32, 19, 1392, 7560, 1394, 558, 576, 504, 2053, 4818, 2]
 
-// Module 8430 (useDiscountOffer)
+// Module 8432 (useDiscountOffer)
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import UserOfferStore from "UserOfferStore" /* 7558 */;
+import UserOfferStore from "UserOfferStore" /* 7560 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -156,7 +156,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDiscountO
               }
               const obj2 = timeout;
               if (timeout != null) {
-                obj2.start(num, f158628);
+                obj2.start(num, f159056);
               }
             }
           });
@@ -207,7 +207,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDiscountO
   const items2 = [first, stateFromStores];
   const hasItem = CHURN_DISCOUNT_IDS.includes(arg0);
   const effect = obj3.useEffect(function() {
-    const f158629 = () => {
+    const f159057 = () => {
       const tmp = first;
       if (!tmp) {
         if (stateFromStores.hasExpired()) {
@@ -228,7 +228,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDiscountO
         }
         const obj2 = timeout;
         if (timeout != null) {
-          obj2.start(num, f158629);
+          obj2.start(num, f159057);
         }
       }
     };
@@ -253,7 +253,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDiscountO
           let time = expiresAt.getTime();
           num = time - Date.now();
         }
-        timeout.start(num, f158629);
+        timeout.start(num, f159057);
       }
       return () => timeout.stop();
     }

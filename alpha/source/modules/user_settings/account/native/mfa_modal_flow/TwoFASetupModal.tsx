@@ -1,22 +1,22 @@
-// Module ID: 16018
-// Function ID: 16019
+// Module ID: 16042
+// Function ID: 16043
 // Name: TwoFASetupModal
-// Dependencies: [19, 17, 16019, 21, 4969, 587, 558, 576, 1505, 1506, 16017, 7219, 5242, 1128, 16020, 6922, 16021, 16024, 16025, 16028, 7042, 5597, 7093, 2]
+// Dependencies: [19, 17, 16043, 21, 4971, 587, 558, 576, 1505, 1506, 16041, 7221, 5244, 1128, 16044, 6924, 16045, 16048, 16049, 16052, 7044, 5599, 7095, 2]
 
-// Module 16018 (TwoFASetupModal)
+// Module 16042 (TwoFASetupModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import useInitialValueDefault from "useInitialValue" /* 5597 */;
-import Navigator2 from "Navigator" /* 7093 */;
-import TwoFASetupModalActionCreatorsDefault from "TwoFASetupModalActionCreators" /* 16017 */;
-import TwoFAConstants from "TwoFAConstants" /* 16019 */;
-import TwoFASetupScanDefault from "TwoFASetupScan" /* 16024 */;
-import TwoFASetupEnterCodeDefault from "TwoFASetupEnterCode" /* 16025 */;
+import useInitialValueDefault from "useInitialValue" /* 5599 */;
+import Navigator2 from "Navigator" /* 7095 */;
+import TwoFASetupModalActionCreatorsDefault from "TwoFASetupModalActionCreators" /* 16041 */;
+import TwoFAConstants from "TwoFAConstants" /* 16043 */;
+import TwoFASetupScanDefault from "TwoFASetupScan" /* 16048 */;
+import TwoFASetupEnterCodeDefault from "TwoFASetupEnterCode" /* 16049 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -90,9 +90,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetup
     let tmp12Result = tmp9;
     if (tmp12Result) {
       const obj5 = { bottom: true, style: tmp4.floatingButton, children: closure_6(Button, obj6) };
-      const SafeAreaPaddingView = tmp(7219).SafeAreaPaddingView;
+      const SafeAreaPaddingView = tmp(7221).SafeAreaPaddingView;
       obj6 = { onPress: tmp8, text: stringResult };
-      Button = tmp(5242).Button;
+      Button = tmp(5244).Button;
       if (name === tmp6.SUCCESS) {
         const intl2 = tmp(1128).intl;
         stringResult = intl2.string(tmp(1128).t.i4jeWR);
@@ -146,9 +146,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetup
   const tmp9 = View;
   if (tmp10Result) {
     const obj4 = { bottom: true, style: tmp.floatingButton, children: closure_6(Button, obj5) };
-    const SafeAreaPaddingView = tmp2(7219).SafeAreaPaddingView;
+    const SafeAreaPaddingView = tmp2(7221).SafeAreaPaddingView;
     obj5 = { onPress: tmp7, text: stringResult };
-    Button = tmp2(5242).Button;
+    Button = tmp2(5244).Button;
     if (name === tmp5.SUCCESS) {
       const intl2 = tmp2(1128).intl;
       stringResult = intl2.string(tmp2(1128).t.i4jeWR);
@@ -246,7 +246,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetupMo
   tmp9 = tmp10;
 }) : (function TwoFASetupModal(initialRouteName) {
   let intl;
-  const f125119 = () => {
+  const f125399 = () => {
     let obj4;
     let obj6;
     let totpSecret;
@@ -297,8 +297,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetupMo
   if (LANDING === undefined) {
     LANDING = TwoFAModalSetupSections.LANDING;
   }
-  let obj = { initialRouteName: LANDING, screens: useInitialValueDefault(f125119), headerBackTitle: intl.string(intl3.t["13/7kX"]), headerTitleAlign: "center" };
-  useInitialValueDefault(f125119);
+  let obj = { initialRouteName: LANDING, screens: useInitialValueDefault(f125399), headerBackTitle: intl.string(intl3.t["13/7kX"]), headerTitleAlign: "center" };
+  useInitialValueDefault(f125399);
   const Navigator = Navigator2.Navigator;
   intl = intl3.intl;
   return metroRequire(Navigator, obj);

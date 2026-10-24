@@ -1,20 +1,20 @@
-// Module ID: 9026
-// Function ID: 9027
+// Module ID: 9027
+// Function ID: 9028
 // Name: GuildEventCard
-// Dependencies: [19, 17, 5712, 6782, 4827, 21, 4969, 587, 558, 576, 8900, 6694, 504, 8887, 7880, 9027, 6903, 2]
+// Dependencies: [19, 17, 5714, 6784, 4829, 21, 4971, 587, 558, 576, 8902, 6696, 504, 8889, 7882, 9028, 6905, 2]
 
-// Module 9026 (GuildEventCard)
+// Module 9027 (GuildEventCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4827 */;
-import ButtonGroup2 from "ButtonGroup" /* 6694 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6782 */;
-import GuildEventCardComponents from "GuildEventCardComponents" /* 8900 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4829 */;
+import ButtonGroup2 from "ButtonGroup" /* 6696 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6784 */;
+import GuildEventCardComponents from "GuildEventCardComponents" /* 8902 */;
 import react from "react" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5712 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -84,10 +84,10 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildE
         cResult[13] = tmp16;
         tmp14 = tmp16;
       }
-      let tmp9 = primaryActionButtonType === tmp(8900).PrimaryActionType.START;
+      let tmp9 = primaryActionButtonType === tmp(8902).PrimaryActionType.START;
       if (tmp9) {
         const obj5 = { event };
-        tmp9 = metroImportDefault(tmp(8900).GuildEventCardRSVPAction, obj5);
+        tmp9 = metroImportDefault(tmp(8902).GuildEventCardRSVPAction, obj5);
       }
       cResult[4] = event;
       cResult[5] = primaryActionButtonType;
@@ -117,7 +117,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildE
   const tmp5 = metroImportAll;
   if (tmp6Result) {
     const obj3 = { event };
-    tmp6Result = tmp6(tmp2(8900).GuildEventCardRSVPAction, obj3);
+    tmp6Result = tmp6(tmp2(8902).GuildEventCardRSVPAction, obj3);
   }
   items[1] = tmp6Result;
   items[2] = metroImportDefault(GuildEventCardComponents.GuildEventShareAction, { event });

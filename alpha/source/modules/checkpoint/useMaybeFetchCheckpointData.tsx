@@ -1,11 +1,11 @@
-// Module ID: 12996
-// Function ID: 12997
+// Module ID: 13033
+// Function ID: 13034
 // Name: useMaybeFetchCheckpointData
-// Dependencies: [19, 12912, 558, 576, 504, 12913, 7405, 2]
+// Dependencies: [19, 12949, 558, 576, 504, 12950, 7407, 2]
 
-// Module 12996 (useMaybeFetchCheckpointData)
-import GameActionCreators from "GameActionCreators" /* 7405 */;
-import CheckpointStore2 from "CheckpointStore" /* 12912 */;
+// Module 13033 (useMaybeFetchCheckpointData)
+import GameActionCreators from "GameActionCreators" /* 7407 */;
+import CheckpointStore2 from "CheckpointStore" /* 12949 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

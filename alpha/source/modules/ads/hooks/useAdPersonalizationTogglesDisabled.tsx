@@ -1,11 +1,11 @@
-// Module ID: 17221
-// Function ID: 17222
+// Module ID: 17253
+// Function ID: 17254
 // Name: useAdPersonalizationTogglesDisabled
-// Dependencies: [14970, 558, 576, 504, 2]
+// Dependencies: [14993, 558, 576, 504, 2]
 
-// Module 17221 (useAdPersonalizationTogglesDisabled)
+// Module 17253 (useAdPersonalizationTogglesDisabled)
 import react from "react" /* 576 */;
-import AdPersonalizationStore from "AdPersonalizationStore" /* 14970 */;
+import AdPersonalizationStore from "AdPersonalizationStore" /* 14993 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

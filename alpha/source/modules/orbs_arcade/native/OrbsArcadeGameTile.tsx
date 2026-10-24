@@ -1,26 +1,26 @@
-// Module ID: 16373
-// Function ID: 16374
+// Module ID: 16397
+// Function ID: 16398
 // Name: OrbsArcadeGameTile
-// Dependencies: [19, 17, 16366, 16368, 1087, 21, 4969, 587, 4966, 558, 576, 504, 5667, 5256, 5232, 16374, 16386, 7957, 16395, 1128, 16382, 5242, 6694, 16396, 6903, 5035, 2]
+// Dependencies: [19, 17, 16390, 16392, 1087, 21, 4971, 587, 4968, 558, 576, 504, 5669, 5258, 5234, 16398, 16413, 7959, 16427, 1128, 16406, 5244, 6696, 16428, 6905, 5037, 2]
 
-// Module 16373 (OrbsArcadeGameTile)
+// Module 16397 (OrbsArcadeGameTile)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import ColorUtils from "ColorUtils" /* 4966 */;
-import LinearGradientDefault from "LinearGradient" /* 5256 */;
-import FastImageDefault from "FastImage" /* 5667 */;
-import OrbsArcadeNativeConstants from "OrbsArcadeNativeConstants" /* 16368 */;
-import OrbsArcadeRewardShelfDefault from "OrbsArcadeRewardShelf" /* 16374 */;
-import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 16382 */;
-import OrbsArcadePlayButtonDefault from "OrbsArcadePlayButton" /* 16386 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16395 */;
-import OrbsArcadeGameContextMenuDefault from "OrbsArcadeGameContextMenu" /* 16396 */;
+import ColorUtils from "ColorUtils" /* 4968 */;
+import LinearGradientDefault from "LinearGradient" /* 5258 */;
+import FastImageDefault from "FastImage" /* 5669 */;
+import OrbsArcadeNativeConstants from "OrbsArcadeNativeConstants" /* 16392 */;
+import OrbsArcadeRewardShelfDefault from "OrbsArcadeRewardShelf" /* 16398 */;
+import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 16406 */;
+import OrbsArcadePlayButtonDefault from "OrbsArcadePlayButton" /* 16413 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16427 */;
+import OrbsArcadeGameContextMenuDefault from "OrbsArcadeGameContextMenu" /* 16428 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16366 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let obj3;
 let obj4;
 let rect;
 let tmp;
-const native = tmp(5035);
+const native = tmp(5037);
 ({ View: c3, StyleSheet } = react_native);
 const ORBS_ARCADE_GAME_TILE_MIN_HEIGHT = OrbsArcadeNativeConstants.ORBS_ARCADE_GAME_TILE_MIN_HEIGHT;
 const ThemeTypes = Constants.ThemeTypes;
@@ -106,11 +106,11 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
   if (cResult[1] !== game.id) {
     const fn = function s() {
       const gameStateForGame = OrbsArcadeStore.getGameStateForGame(game.id);
-      let enrolledAt;
+      let currentRun;
       if (gameStateForGame != null) {
-        enrolledAt = gameStateForGame.enrolledAt;
+        currentRun = gameStateForGame.currentRun;
       }
-      return null != enrolledAt;
+      return null != currentRun;
     };
     const items1 = [game.id];
     cResult[1] = game.id;
@@ -162,7 +162,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
         }
         if (cResult[16] !== name) {
           const obj2 = { variant: "heading-lg/semibold", color: "text-strong", children: name };
-          const tmp26 = closure_6(game(5232).Heading, obj2);
+          const tmp26 = closure_6(game(5234).Heading, obj2);
           cResult[16] = name;
           cResult[17] = tmp26;
           tmp24 = tmp26;
@@ -173,7 +173,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
           let tmp28 = null;
           if (null != tmp6) {
             const obj3 = { variant: "text-xs/medium", color: "text-subtle", children: tmp6 };
-            tmp28 = closure_6(tmp(5232).Text, obj3);
+            tmp28 = closure_6(tmp(5234).Text, obj3);
           }
           cResult[18] = tmp6;
           cResult[19] = tmp28;
@@ -214,8 +214,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
               tmp38 = cResult[27];
             }
             if (cResult[28] === game.id) {
-              if (cResult[29] === tmp6) {
-                if (cResult[30] === stateFromStores) {
+              if (cResult[29] === stateFromStores) {
+                if (cResult[30] === tmp6) {
                   tmp42 = cResult[31];
                 }
                 if (cResult[32] === tmp4.buttonGroup) {
@@ -265,7 +265,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
                                     }
                                     const obj7 = { style: tmp4.card, radius: 12, border: "subtle", children: items3 };
                                     items3 = [tmp54, tmp62];
-                                    const tmp68 = closure_7(game(6903).Card, obj7);
+                                    const tmp68 = closure_7(game(6905).Card, obj7);
                                     cResult[52] = tmp4.card;
                                     cResult[53] = tmp54;
                                     cResult[54] = tmp62;
@@ -307,7 +307,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
                 }
                 const obj11 = { direction: str2, size: "md", style: tmp4.buttonGroup, children: items6 };
                 items6 = [tmp38, tmp42];
-                const tmp49 = closure_7(game(6694).ButtonGroup, obj11);
+                const tmp49 = closure_7(game(6696).ButtonGroup, obj11);
                 cResult[32] = tmp4.buttonGroup;
                 cResult[33] = str2;
                 cResult[34] = tmp38;
@@ -328,13 +328,13 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
                                   return obj.openOrbsArcadeHowToPlaySheet(game.id);
                                 }
                 };
-                const IconButton = tmp(7957).IconButton;
+                const IconButton = tmp(7959).IconButton;
                 intl2 = tmp(1128).intl;
                 tmp43 = closure_6(IconButton, obj12);
               }
               cResult[28] = game.id;
-              cResult[29] = tmp6;
-              cResult[30] = stateFromStores;
+              cResult[29] = stateFromStores;
+              cResult[30] = tmp6;
               cResult[31] = tmp43;
               tmp42 = tmp43;
             }
@@ -349,7 +349,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
                               return obj.openOrbsArcadeHowToPlaySheet(game.id);
                             }
               };
-              const Button = tmp(5242).Button;
+              const Button = tmp(5244).Button;
               intl = tmp(1128).intl;
               tmp43 = closure_6(Button, obj13);
             }
@@ -417,16 +417,16 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
   const items1 = [game.id];
   const stateFromStores = obj.useStateFromStores(items, () => {
     const gameStateForGame = OrbsArcadeStore.getGameStateForGame(game.id);
-    let enrolledAt;
+    let currentRun;
     if (gameStateForGame != null) {
-      enrolledAt = gameStateForGame.enrolledAt;
+      currentRun = gameStateForGame.currentRun;
     }
-    return null != enrolledAt;
+    return null != currentRun;
   }, items1);
   const obj2 = { style: tmp.card, radius: 12, border: "subtle", children: null };
   const obj3 = { style: tmp.hero, children: null };
   let tmp9 = null;
-  const Card = game(6903).Card;
+  const Card = game(6905).Card;
   if (null != asset) {
     const obj4 = { source: obj5, style: tmp.heroImage, accessible: false };
     obj5 = { uri: asset };
@@ -438,16 +438,16 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
   items2[1] = closure_6(LinearGradientDefault, obj6);
   const obj7 = { style: tmp.content, children: null };
   const obj8 = { style: tmp.copy, children: items4 };
-  items4 = [closure_6(game(5232).Heading, { variant: "heading-lg/semibold", color: "text-strong", children: name }), ];
+  items4 = [closure_6(game(5234).Heading, { variant: "heading-lg/semibold", color: "text-strong", children: name }), ];
   let tmp12Result = null;
   if (null != tmp3) {
     const obj9 = { variant: "text-xs/medium", color: "text-subtle", children: tmp3 };
-    tmp12Result = tmp12(tmp4(5232).Text, obj9);
+    tmp12Result = tmp12(tmp4(5234).Text, obj9);
   }
   items4[1] = tmp12Result;
   const items5 = [closure_7(closure_3, obj8), closure_6(OrbsArcadeRewardShelfDefault, { game }), ];
   let str2 = "vertical";
-  const ButtonGroup = tmp4(6694).ButtonGroup;
+  const ButtonGroup = tmp4(6696).ButtonGroup;
   if (stateFromStores) {
     str2 = "horizontal";
   }
@@ -465,7 +465,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
               return obj.openOrbsArcadeHowToPlaySheet(game.id);
             }
       };
-      const IconButton = tmp4(7957).IconButton;
+      const IconButton = tmp4(7959).IconButton;
       intl2 = tmp4(1128).intl;
       tmp12Result2 = tmp12(IconButton, obj11);
     }
@@ -493,7 +493,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
           return obj.openOrbsArcadeHowToPlaySheet(game.id);
         }
     };
-    const Button = tmp4(5242).Button;
+    const Button = tmp4(5244).Button;
     intl = tmp4(1128).intl;
     tmp12Result2 = tmp12(Button, obj14);
   }

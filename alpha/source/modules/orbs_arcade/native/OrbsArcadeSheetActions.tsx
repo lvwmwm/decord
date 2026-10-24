@@ -1,12 +1,11 @@
-// Module ID: 16385
-// Function ID: 16386
+// Module ID: 16409
+// Function ID: 16410
 // Name: OrbsArcadeSheetActions
-// Dependencies: [19, 21, 1128, 5208, 16382, 558, 576, 16386, 5242, 6694, 2]
+// Dependencies: [19, 21, 1128, 5210, 16406, 558, 576, 16410, 16413, 5244, 6696, 2]
 
-// Module 16385 (OrbsArcadeSheetActions)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
-import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 16382 */;
-import OrbsArcadePlayButtonDefault from "OrbsArcadePlayButton" /* 16386 */;
+// Module 16409 (OrbsArcadeSheetActions)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 16406 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -15,88 +14,104 @@ import size from "module_2" /* 2 */;
 let c3;
 let closure_4;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
-const OrbsArcadeSheetSecondaryAction = { CLOSE: "CLOSE", HOW_TO_PLAY: "HOW_TO_PLAY" };
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeSheetActions(arg0) {
+const OrbsArcadeSheetPrimaryAction = { PLAY: "PLAY", CLAIM: "CLAIM" };
+let obj2 = { CLOSE: "CLOSE", HOW_TO_PLAY: "HOW_TO_PLAY" };
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeSheetActions(arg0) {
   let direction;
   let game;
   let intl;
   let intl2;
   let items;
+  let primaryAction;
   let secondaryAction;
   let sheetKey;
   let style;
-  let tmp7;
+  let tmp8;
   const obj = game(576);
-  const cResult = obj.c(13);
-  ({ game, sheetKey, secondaryAction, direction, style } = arg0);
+  const cResult = obj.c(14);
+  ({ game, sheetKey, primaryAction, secondaryAction, direction, style } = arg0);
+  if (undefined === primaryAction) {
+    primaryAction = obj.PLAY;
+  }
   if (cResult[0] === game) {
     if (cResult[1] === secondaryAction) {
-      let tmp4;
-      let tmp8;
-      let tmp12;
+      let tmp5;
+      let tmp11;
       if (cResult[2] === sheetKey) {
-        tmp4 = cResult[3];
+        tmp5 = cResult[3];
       }
-      if (cResult[4] !== game) {
-        const obj2 = { game, size: "lg" };
-        const tmp11 = closure_3(sheetKey(16386), obj2);
-        cResult[4] = game;
-        cResult[5] = tmp11;
-        tmp8 = tmp11;
-      } else {
-        tmp8 = cResult[5];
-      }
-      if (cResult[6] !== tmp4) {
-        let tmp13 = null;
-        if (null != tmp4) {
-          const obj3 = { grow: true, size: "lg", variant: "secondary", text: null, onPress: null };
-          ({ text: obj5.text, onPress: obj5.onPress } = tmp4);
-          tmp13 = closure_3(tmp(5242).Button, obj3);
+      if (cResult[4] === game) {
+        let tmp9;
+        let tmp16;
+        if (cResult[5] === primaryAction) {
+          tmp9 = cResult[6];
         }
-        cResult[6] = tmp4;
-        cResult[7] = tmp13;
-        tmp12 = tmp13;
-      } else {
-        tmp12 = cResult[7];
-      }
-      if (cResult[8] === direction) {
-        if (cResult[9] === style) {
-          if (cResult[10] === tmp8) {
-            let tmp15;
-            if (cResult[11] === tmp12) {
-              tmp15 = cResult[12];
+        if (cResult[7] !== tmp5) {
+          let tmp17 = null;
+          if (null != tmp5) {
+            obj2 = { grow: true, size: "lg", variant: "secondary", text: null, onPress: null };
+            ({ text: obj6.text, onPress: obj6.onPress } = tmp5);
+            tmp17 = closure_3(tmp(5244).Button, obj2);
+          }
+          cResult[7] = tmp5;
+          cResult[8] = tmp17;
+          tmp16 = tmp17;
+        } else {
+          tmp16 = cResult[8];
+        }
+        if (cResult[9] === direction) {
+          if (cResult[10] === style) {
+            if (cResult[11] === tmp9) {
+              let tmp19;
+              if (cResult[12] === tmp16) {
+                tmp19 = cResult[13];
+              }
+              return tmp19;
             }
-            return tmp15;
           }
         }
+        const obj3 = { direction, size: "lg", style, children: items };
+        items = [tmp9, tmp16];
+        const tmp21 = closure_4(game(6696).ButtonGroup, obj3);
+        cResult[9] = direction;
+        cResult[10] = style;
+        cResult[11] = tmp9;
+        cResult[12] = tmp16;
+        cResult[13] = tmp21;
+        tmp19 = tmp21;
       }
-      const obj4 = { direction, size: "lg", style, children: items };
-      items = [tmp8, tmp12];
-      const tmp17 = closure_4(game(6694).ButtonGroup, obj4);
-      cResult[8] = direction;
-      cResult[9] = style;
-      cResult[10] = tmp8;
-      cResult[11] = tmp12;
-      cResult[12] = tmp17;
-      tmp15 = tmp17;
+      if (primaryAction === obj.CLAIM) {
+        const obj4 = { game, size: "lg" };
+        tmp11 = closure_3(sheetKey(16410), obj4);
+      } else {
+        tmp11 = null;
+        if (primaryAction === tmp10.PLAY) {
+          const obj5 = { game, size: "lg" };
+          tmp11 = closure_3(sheetKey(16413), obj5);
+        }
+      }
+      cResult[4] = game;
+      cResult[5] = primaryAction;
+      cResult[6] = tmp11;
+      tmp9 = tmp11;
     }
   }
-  if (obj.CLOSE === secondaryAction) {
-    const obj6 = {
+  if (obj2.CLOSE === secondaryAction) {
+    const obj7 = {
       text: intl2.string(game(1128).t.cpT0Cq),
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
-          return obj.hideActionSheet(importDefault);
+          return obj.hideActionSheet(sheetKey);
         }
     };
     intl2 = tmp(1128).intl;
-    tmp7 = obj6;
-  } else if (tmp5.HOW_TO_PLAY === secondaryAction) {
-    let tmp6 = null;
+    tmp8 = obj7;
+  } else if (tmp6.HOW_TO_PLAY === secondaryAction) {
+    let tmp7 = null;
     if (null != game.instructions) {
-      tmp6 = null;
+      tmp7 = null;
       if ("" !== game.instructions) {
-        const obj11 = {
+        const obj13 = {
           text: intl.string(game(1128).t["uz4M/z"]),
           onPress() {
                   const obj = openOrbsArcadeSheets;
@@ -104,42 +119,48 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeSh
                 }
         };
         intl = tmp(1128).intl;
-        tmp6 = obj11;
+        tmp7 = obj13;
       }
     }
-    tmp7 = tmp6;
+    tmp8 = tmp7;
   }
   cResult[0] = game;
   cResult[1] = secondaryAction;
   cResult[2] = sheetKey;
-  cResult[3] = tmp7;
-  tmp4 = tmp7;
-}) : (function OrbsArcadeSheetActions(arg0) {
+  cResult[3] = tmp8;
+  tmp5 = tmp8;
+}) : (function OrbsArcadeSheetActions(sheetKey) {
   let direction;
   let game;
   let intl;
   let intl2;
   let items;
   let obj;
-  let secondaryAction;
+  let primaryAction;
   let style;
-  let tmp5;
-  ({ game, secondaryAction } = arg0);
-  ({ sheetKey: importDefault, direction, style } = arg0);
-  if (obj.CLOSE === secondaryAction) {
-    const obj2 = {
+  let tmp13;
+  let tmp6;
+  ({ game, primaryAction } = sheetKey);
+  sheetKey = sheetKey.sheetKey;
+  if (primaryAction === undefined) {
+    primaryAction = obj.PLAY;
+  }
+  const secondaryAction = sheetKey.secondaryAction;
+  ({ direction, style } = sheetKey);
+  if (obj2.CLOSE === secondaryAction) {
+    obj2 = {
       text: intl2.string(game(1128).t.cpT0Cq),
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
-          return obj.hideActionSheet(importDefault);
+          return obj.hideActionSheet(sheetKey);
         }
     };
     intl2 = game(1128).intl;
-    tmp5 = obj2;
-  } else if (tmp.HOW_TO_PLAY === secondaryAction) {
-    let tmp2 = null;
+    tmp6 = obj2;
+  } else if (tmp2.HOW_TO_PLAY === secondaryAction) {
+    let tmp3 = null;
     if (null != game.instructions) {
-      tmp2 = null;
+      tmp3 = null;
       if ("" !== game.instructions) {
         obj = {
           text: intl.string(game(1128).t["uz4M/z"]),
@@ -149,27 +170,37 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeSh
                 }
         };
         intl = game(1128).intl;
-        tmp2 = obj;
+        tmp3 = obj;
       }
     }
-    tmp5 = tmp2;
+    tmp6 = tmp3;
   }
   const obj3 = { direction, size: "lg", style, children: items };
-  const ButtonGroup = game(6694).ButtonGroup;
-  items = [closure_3(OrbsArcadePlayButtonDefault, { game, size: "lg" }), ];
-  let tmp11Result = null;
-  const tmp11 = closure_3;
-  const tmp8 = closure_4;
-  const tmp9 = game;
-  if (null != tmp5) {
-    const obj7 = { grow: true, size: "lg", variant: "secondary", text: null, onPress: null };
-    ({ text: obj4.text, onPress: obj4.onPress } = tmp5);
-    tmp11Result = tmp11(tmp9(5242).Button, obj7);
+  const ButtonGroup = game(6696).ButtonGroup;
+  const tmp10 = game;
+  const tmp9 = closure_4;
+  if (primaryAction === obj.CLAIM) {
+    const obj4 = { game, size: "lg" };
+    tmp13 = closure_3(sheetKey(16410), obj4);
+  } else {
+    tmp13 = null;
+    if (primaryAction === tmp12.PLAY) {
+      const obj5 = { game, size: "lg" };
+      tmp13 = closure_3(sheetKey(16413), obj5);
+    }
   }
-  items[1] = tmp11Result;
-  return tmp8(ButtonGroup, obj3);
+  items = [tmp13, ];
+  let tmp18 = null;
+  if (null != tmp6) {
+    const obj11 = { grow: true, size: "lg", variant: "secondary", text: null, onPress: null };
+    ({ text: obj6.text, onPress: obj6.onPress } = tmp6);
+    tmp18 = closure_3(tmp10(5244).Button, obj11);
+  }
+  items[1] = tmp18;
+  return tmp9(ButtonGroup, obj3);
 });
 const result = size.fileFinishedImporting("modules/orbs_arcade/native/OrbsArcadeSheetActions.tsx");
 
 export default tmp4;
-export { OrbsArcadeSheetSecondaryAction };
+export { OrbsArcadeSheetPrimaryAction };
+export const OrbsArcadeSheetSecondaryAction = obj2;

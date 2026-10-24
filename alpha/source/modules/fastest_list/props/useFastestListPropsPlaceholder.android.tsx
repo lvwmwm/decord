@@ -1,13 +1,13 @@
-// Module ID: 7154
-// Function ID: 7155
+// Module ID: 7156
+// Function ID: 7157
 // Name: useFastestListPropsPlaceholder
-// Dependencies: [19, 17, 7155, 4966, 558, 576, 2]
+// Dependencies: [19, 17, 7157, 4968, 558, 576, 2]
 
-// Module 7154 (useFastestListPropsPlaceholder)
+// Module 7156 (useFastestListPropsPlaceholder)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import ColorUtils from "ColorUtils" /* 4966 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7155 */;
+import ColorUtils from "ColorUtils" /* 4968 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7157 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ function createNativePlaceholderConfig(listFooter) {
   if (type == null) {
     NONE = FastestListPropsPlaceholder.FastestListPropsPlaceholderType.NONE;
   }
-  size = { borderRadius: "Array", borderTopLeftRadius: "defineProperty", borderTopRightRadius: "ix", borderBottomLeftRadius: "gap", borderBottomRightRadius: "guildId", divider: "ix", dividerColor: "Reflect", dividerPaddingLeft: "intl", dividerPaddingRight: "ix", placeholderShape: "push", placeholderShapeColor: "raw", placeholderShapeCount: "ix", placeholderShapeGap: "forEach", placeholderShapePaddingHorizontal: "guildId", placeholderShapePaddingVertical: "ix", placeholderFeedBackgroundColor: "has", placeholderFeedColor: "guildId", placeholderFeedLabelPadding: "ix", placeholderFeedLabelPaddingInnerRatio: "Reflect", placeholderFeedLabelSize: "__initData", placeholderFeedLabelSecondarySize: "toCharArray$esjava$1", placeholderFeedPadding: "toCharArray$esjava$1", placeholderFeedShape: "toCharArray$esjava$1", placeholderFeedShapeSize: "toCharArray$esjava$1", placeholderType: NONE, width: 12544, height: 0, verticalAlignment: 17924080, horizontalAlignment: 35722112 };
+  size = { borderRadius: "Array", borderTopLeftRadius: "defineProperty", borderTopRightRadius: "ix", borderBottomLeftRadius: "title", borderBottomRightRadius: "status", divider: "ix", dividerColor: "max", dividerPaddingLeft: "guildId", dividerPaddingRight: "ix", placeholderShape: "Object", placeholderShapeColor: "limit", placeholderShapeCount: "ix", placeholderShapeGap: "Button", placeholderShapePaddingHorizontal: "registerAsset", placeholderShapePaddingVertical: "ix", placeholderFeedBackgroundColor: "location", placeholderFeedColor: "guildId", placeholderFeedLabelPadding: "ix", placeholderFeedLabelPaddingInnerRatio: "name", placeholderFeedLabelSize: "guildId", placeholderFeedLabelSecondarySize: "ix", placeholderFeedPadding: "scales", placeholderFeedShape: "diversity", placeholderFeedShapeSize: "ix", placeholderType: NONE, width: false, height: false, verticalAlignment: false, horizontalAlignment: false };
   if (null == listFooter) {
     return size;
   } else {

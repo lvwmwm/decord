@@ -1,12 +1,12 @@
-// Module ID: 11394
-// Function ID: 11395
+// Module ID: 11414
+// Function ID: 11415
 // Name: selectAndWaitForVoiceChannelJoin
-// Dependencies: [5, 4872, 6632, 2]
+// Dependencies: [5, 4874, 6634, 2]
 // Exports: default
 
-// Module 11394 (selectAndWaitForVoiceChannelJoin)
+// Module 11414 (selectAndWaitForVoiceChannelJoin)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, closure_3;

@@ -1,13 +1,13 @@
-// Module ID: 13837
-// Function ID: 13838
+// Module ID: 13856
+// Function ID: 13857
 // Name: ChannelSortingUtils
-// Dependencies: [4825, 1087, 13275, 7206, 2]
+// Dependencies: [4827, 1087, 13312, 7208, 2]
 // Exports: areTypesInSameSection, getChannelPlacementUpdates, getDropData, getSectionSiblings
 
-// Module 13837 (ChannelSortingUtils)
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 7206 */;
-import DragAndDropUtilsDefault from "DragAndDropUtils" /* 13275 */;
-import ChannelRecord from "ChannelRecord" /* 4825 */;
+// Module 13856 (ChannelSortingUtils)
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 7208 */;
+import DragAndDropUtilsDefault from "DragAndDropUtils" /* 13312 */;
+import ChannelRecord from "ChannelRecord" /* 4827 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -133,7 +133,7 @@ function getChannelMoveUpdates(localChannel, channel, parentId, channels) {
       c2 = null;
       const found = substr.filter((channel) => {
         const type = channel.channel.type;
-        let tmp2 = null != closure_0;
+        let tmp2 = null != id;
         if (tmp2) {
           let tmp3 = c1;
           if (!tmp3) {
@@ -158,7 +158,7 @@ function getChannelMoveUpdates(localChannel, channel, parentId, channels) {
         return tmp2;
       });
       const found1 = found.find((item, index) => {
-        let flag = null != closure_0 && tmp === closure_0.id;
+        let flag = null != id && tmp === id.id;
         if (flag) {
           c2 = index;
           flag = true;
@@ -176,7 +176,7 @@ function getChannelMoveUpdates(localChannel, channel, parentId, channels) {
       c2 = null;
       const found2 = substr.filter((channel) => {
         const type = channel.channel.type;
-        let tmp2 = null != closure_0;
+        let tmp2 = null != id;
         if (tmp2) {
           let tmp3 = c1;
           if (!tmp3) {
@@ -201,7 +201,7 @@ function getChannelMoveUpdates(localChannel, channel, parentId, channels) {
         return tmp2;
       });
       const found3 = found2.find((item, index) => {
-        let flag = null != closure_0 && tmp === closure_0.id;
+        let flag = null != id && tmp === id.id;
         if (flag) {
           c2 = index;
           flag = true;
@@ -229,7 +229,7 @@ function getChannelMoveUpdates(localChannel, channel, parentId, channels) {
       c2 = null;
       const found4 = tmp11Result.filter((channel) => {
         const type = channel.channel.type;
-        let tmp2 = null != closure_0;
+        let tmp2 = null != id;
         if (tmp2) {
           let tmp3 = c1;
           if (!tmp3) {
@@ -254,7 +254,7 @@ function getChannelMoveUpdates(localChannel, channel, parentId, channels) {
         return tmp2;
       });
       const found5 = found4.find((item, index) => {
-        let flag = null != closure_0 && tmp === closure_0.id;
+        let flag = null != id && tmp === id.id;
         if (flag) {
           c2 = index;
           flag = true;
@@ -272,7 +272,7 @@ function getChannelMoveUpdates(localChannel, channel, parentId, channels) {
       c2 = null;
       const found6 = tmp11Result.filter((channel) => {
         const type = channel.channel.type;
-        let tmp2 = null != closure_0;
+        let tmp2 = null != id;
         if (tmp2) {
           let tmp3 = c1;
           if (!tmp3) {
@@ -297,7 +297,7 @@ function getChannelMoveUpdates(localChannel, channel, parentId, channels) {
         return tmp2;
       });
       const found7 = found6.find((item, index) => {
-        let flag = null != closure_0 && tmp === closure_0.id;
+        let flag = null != id && tmp === id.id;
         if (flag) {
           c2 = index;
           flag = true;
@@ -325,7 +325,7 @@ function getChannelMoveUpdates(localChannel, channel, parentId, channels) {
       c2 = null;
       const found8 = tmp19Result.filter((channel) => {
         const type = channel.channel.type;
-        let tmp2 = null != closure_0;
+        let tmp2 = null != id;
         if (tmp2) {
           let tmp3 = c1;
           if (!tmp3) {
@@ -350,7 +350,7 @@ function getChannelMoveUpdates(localChannel, channel, parentId, channels) {
         return tmp2;
       });
       const found9 = found8.find((item, index) => {
-        let flag = null != closure_0 && tmp === closure_0.id;
+        let flag = null != id && tmp === id.id;
         if (flag) {
           c2 = index;
           flag = true;
@@ -367,7 +367,7 @@ function getChannelMoveUpdates(localChannel, channel, parentId, channels) {
       c2 = null;
       const found10 = tmp19Result.filter((channel) => {
         const type = channel.channel.type;
-        let tmp2 = null != closure_0;
+        let tmp2 = null != id;
         if (tmp2) {
           let tmp3 = c1;
           if (!tmp3) {
@@ -392,7 +392,7 @@ function getChannelMoveUpdates(localChannel, channel, parentId, channels) {
         return tmp2;
       });
       const found11 = found10.find((item, index) => {
-        let flag = null != closure_0 && tmp === closure_0.id;
+        let flag = null != id && tmp === id.id;
         if (flag) {
           c2 = index;
           flag = true;
@@ -468,7 +468,7 @@ export const getDropData = function getDropData(localChannel, arg1, localChannel
               c2 = null;
               const found = channelList.filter((channel) => {
                 const type = channel.channel.type;
-                let tmp2 = null != closure_0;
+                let tmp2 = null != id;
                 if (tmp2) {
                   let tmp3 = c1;
                   if (!tmp3) {
@@ -493,7 +493,7 @@ export const getDropData = function getDropData(localChannel, arg1, localChannel
                 return tmp2;
               });
               const found1 = found.find((item, index) => {
-                let flag = null != closure_0 && tmp === closure_0.id;
+                let flag = null != id && tmp === id.id;
                 if (flag) {
                   c2 = index;
                   flag = true;
@@ -512,8 +512,8 @@ export const getDropData = function getDropData(localChannel, arg1, localChannel
               if (tmp53.channel.id !== localChannel.id) {
                 let tmp55;
                 if (null == channelList[num17 + 1]) {
-                  let obj2 = { referenceId: tmp53.channel.id, parentId: null };
-                  tmp55 = obj2;
+                  tmp55 = { referenceId: tmp53.channel.id, parentId: null };
+                  const obj2 = { referenceId: tmp53.channel.id, parentId: null };
                 } else {
                   tmp55 = null;
                 }
@@ -523,7 +523,7 @@ export const getDropData = function getDropData(localChannel, arg1, localChannel
             tmp48 = tmp54;
           }
         }
-        let obj3 = { referenceId: null, parentId: null };
+        const obj3 = { referenceId: null, parentId: null };
         ({ id: obj13.referenceId, parent_id: obj13.parentId } = localChannel2);
         tmp48 = obj3;
       } else {
@@ -545,7 +545,7 @@ export const getDropData = function getDropData(localChannel, arg1, localChannel
           tmp = tmp2;
         }
         if (tmp) {
-          let obj4 = { referenceId: null, parentId: null };
+          const obj4 = { referenceId: null, parentId: null };
           ({ id: obj11.referenceId, parent_id: obj11.parentId } = localChannel2);
           tmp12 = obj4;
         } else if (to < arg1) {
@@ -559,7 +559,7 @@ export const getDropData = function getDropData(localChannel, arg1, localChannel
               c2 = null;
               const found2 = channelList.filter((channel) => {
                 const type = channel.channel.type;
-                let tmp2 = null != closure_0;
+                let tmp2 = null != id;
                 if (tmp2) {
                   let tmp3 = c1;
                   if (!tmp3) {
@@ -584,7 +584,7 @@ export const getDropData = function getDropData(localChannel, arg1, localChannel
                 return tmp2;
               });
               const found3 = found2.find((item, index) => {
-                let flag = null != closure_0 && tmp === closure_0.id;
+                let flag = null != id && tmp === id.id;
                 if (flag) {
                   c2 = index;
                   flag = true;
@@ -639,7 +639,7 @@ export const getDropData = function getDropData(localChannel, arg1, localChannel
               c2 = null;
               const found4 = channelList.filter((channel) => {
                 const type = channel.channel.type;
-                let tmp2 = null != closure_0;
+                let tmp2 = null != id;
                 if (tmp2) {
                   let tmp3 = c1;
                   if (!tmp3) {
@@ -664,7 +664,7 @@ export const getDropData = function getDropData(localChannel, arg1, localChannel
                 return tmp2;
               });
               const found5 = found4.find((item, index) => {
-                let flag = null != closure_0 && tmp === closure_0.id;
+                let flag = null != id && tmp === id.id;
                 if (flag) {
                   c2 = index;
                   flag = true;
@@ -712,7 +712,7 @@ export const getDropData = function getDropData(localChannel, arg1, localChannel
             c2 = null;
             const found6 = channelList.filter((channel) => {
               const type = channel.channel.type;
-              let tmp2 = null != closure_0;
+              let tmp2 = null != id;
               if (tmp2) {
                 let tmp3 = c1;
                 if (!tmp3) {
@@ -737,7 +737,7 @@ export const getDropData = function getDropData(localChannel, arg1, localChannel
               return tmp2;
             });
             const found7 = found6.find((item, index) => {
-              let flag = null != closure_0 && tmp === closure_0.id;
+              let flag = null != id && tmp === id.id;
               if (flag) {
                 c2 = index;
                 flag = true;
@@ -749,7 +749,6 @@ export const getDropData = function getDropData(localChannel, arg1, localChannel
           if (num5 == null) {
             num5 = 0;
           }
-          const tmp16 = getFirstChannelOfType;
           const tmp18 = getFirstChannelOfType(-1, localChannel2.id, localChannel.type, channelList);
           let tmp19 = null;
           if (null != tmp18) {
@@ -797,7 +796,7 @@ export const getDropData = function getDropData(localChannel, arg1, localChannel
             c2 = null;
             const found8 = channelList.filter((channel) => {
               const type = channel.channel.type;
-              let tmp2 = null != closure_0;
+              let tmp2 = null != id;
               if (tmp2) {
                 let tmp3 = c1;
                 if (!tmp3) {
@@ -822,7 +821,7 @@ export const getDropData = function getDropData(localChannel, arg1, localChannel
               return tmp2;
             });
             const found9 = found8.find((item, index) => {
-              let flag = null != closure_0 && tmp === closure_0.id;
+              let flag = null != id && tmp === id.id;
               if (flag) {
                 c2 = index;
                 flag = true;
@@ -834,17 +833,15 @@ export const getDropData = function getDropData(localChannel, arg1, localChannel
           if (num == null) {
             num = 0;
           }
-          let tmp8 = channelList[num + 1];
-          let tmp9 = getFirstChannelOfType;
           const tmp11 = getFirstChannelOfType(-1, localChannel2.id, localChannel.type, channelList);
           tmp12 = null;
           if (null != tmp11) {
             if (!localChannel.isGuildVocal()) {
               let tmp13 = null;
               if (localChannel.isCategory()) {
-                if (null == tmp8) {
-                  let obj = { referenceId: tmp11.channel.id, parentId: null };
-                  tmp13 = obj;
+                if (null == channelList[num + 1]) {
+                  tmp13 = { referenceId: tmp11.channel.id, parentId: null };
+                  const obj = { referenceId: tmp11.channel.id, parentId: null };
                 } else {
                   const channel2 = tmp8.channel;
                   tmp13 = null;
@@ -852,13 +849,13 @@ export const getDropData = function getDropData(localChannel, arg1, localChannel
               }
               tmp12 = tmp13;
             } else {
-              if (null != tmp8) {
+              if (null != channelList[num + 1]) {
                 const channel7 = tmp8.channel;
                 if (!channel7.isCategory()) {
                   const channel = tmp8.channel;
                   if (channel.isGuildVocal()) {
-                    tmp12 = { referenceId: tmp11.channel.id, parentId: tmp8.channel.parent_id };
-                    const obj27 = { referenceId: tmp11.channel.id, parentId: tmp8.channel.parent_id };
+                    tmp12 = { referenceId: tmp11.channel.id, parentId: channelList[num + 1].channel.parent_id };
+                    const obj27 = { referenceId: tmp11.channel.id, parentId: channelList[num + 1].channel.parent_id };
                   }
                 }
               }

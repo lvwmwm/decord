@@ -1,15 +1,15 @@
-// Module ID: 11350
-// Function ID: 11351
+// Module ID: 11368
+// Function ID: 11369
 // Name: ChannelCallLifecycleStore
-// Dependencies: [4872, 10879, 8818, 1357, 504, 584, 2]
+// Dependencies: [4874, 10880, 8820, 1357, 504, 584, 2]
 
-// Module 11350 (ChannelCallLifecycleStore)
+// Module 11368 (ChannelCallLifecycleStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _modDef1357 from "module_1357" /* 1357 */;
-import DeviceOrientation from "DeviceOrientation" /* 8818 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10879 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4872 */;
+import DeviceOrientation from "DeviceOrientation" /* 8820 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10880 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
 import size_mod from "module_2" /* 2 */;
 
 let voiceChannelId;

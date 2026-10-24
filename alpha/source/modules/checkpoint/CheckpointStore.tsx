@@ -1,9 +1,9 @@
-// Module ID: 12912
-// Function ID: 12913
+// Module ID: 12949
+// Function ID: 12950
 // Name: CheckpointStore
 // Dependencies: [504, 584, 2]
 
-// Module 12912 (CheckpointStore)
+// Module 12949 (CheckpointStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
@@ -19,6 +19,7 @@ let c5 = null;
 let c6 = null;
 let INIT = obj.INIT;
 let c8 = null;
+let c9 = false;
 const PersistedStore = get_initializedDefault.PersistedStore;
 class CheckpointStore extends PersistedStore {
   getState() {
@@ -63,6 +64,12 @@ Object.defineProperty(prototype, "fetchState", {
   },
   set: undefined
 });
+Object.defineProperty(prototype, "isSaving", {
+  get: function isSaving() {
+    return c9;
+  },
+  set: undefined
+});
 Object.defineProperty(prototype, "selectedCharacterTraits", {
   get: function selectedCharacterTraits() {
     let tmp = c8;
@@ -92,9 +99,16 @@ const obj4 = {
   CHECKPOINT_FETCH_FAILED: function handleFetchFailed() {
     INIT = obj.ERROR;
   },
+  CHECKPOINT_COMPLETE_START: function handleCompleteStart() {
+    c9 = true;
+  },
   CHECKPOINT_COMPLETE_SUCCESS: function handleCompleteSuccess(character) {
     character = character.character;
     c8 = null;
+    c9 = false;
+  },
+  CHECKPOINT_COMPLETE_FAILED: function handleCompleteFailed() {
+    c9 = false;
   },
   CHECKPOINT_RESET_SUCCESS: function handleResetSuccess() {
     c6 = null;
@@ -124,6 +138,7 @@ const obj4 = {
     c6 = null;
     INIT = obj.INIT;
     c8 = null;
+    c9 = false;
   }
 };
 const checkpointStore = new CheckpointStore(DispatcherDefault, obj4);

@@ -1,33 +1,32 @@
-// Module ID: 8949
-// Function ID: 8950
+// Module ID: 8951
+// Function ID: 8952
 // Name: Form
-// Dependencies: [2, 7236, 7239, 7234, 7244, 8950, 8952, 8953, 8954, 7245, 8955, 7237, 7241, 7235, 8956, 7238, 8958, 8959, 8957, 8960, 8961, 7233, 8962, 8963, 8964]
+// Dependencies: [2, 7238, 7241, 7236, 7246, 8952, 8954, 8955, 8956, 7247, 8957, 7239, 7243, 7237, 8958, 7240, 8960, 8961, 8959, 8962, 8963, 7235, 8964, 8965]
 
-// Module 8949 (Form)
-import FormCheckboxRowDefault from "FormCheckboxRow" /* 7233 */;
-import Form_FormCheckboxDefault from "Form/FormCheckbox" /* 7234 */;
-import FormRowDefault from "FormRow" /* 7235 */;
-import Form_FormDefault from "Form/Form" /* 7236 */;
-import FormLabelDefault from "FormLabel" /* 7237 */;
-import FormSubLabelDefault from "FormSubLabel" /* 7238 */;
-import FormArrowDefault from "FormArrow" /* 7239 */;
-import Form_FormRadioDefault from "Form/FormRadio" /* 7241 */;
-import FormCheckmarkDefault from "FormCheckmark" /* 7244 */;
-import FormIconDefault from "FormIcon" /* 7245 */;
-import FormCTADefault from "FormCTA" /* 8950 */;
-import FormCTAButtonDefault from "FormCTAButton" /* 8952 */;
-import FormDividerDefault from "FormDivider" /* 8953 */;
-import FormHintDefault from "FormHint" /* 8954 */;
-import FormInputDefault from "FormInput" /* 8955 */;
-import FormSectionDefault from "FormSection" /* 8956 */;
-import FormTitleDefault from "FormTitle" /* 8957 */;
-import Form_FormSwitchDefault from "Form/FormSwitch" /* 8958 */;
-import FormText from "FormText" /* 8959 */;
-import FormSwitchRowDefault from "FormSwitchRow" /* 8960 */;
-import FormRadioRowDefault from "FormRadioRow" /* 8961 */;
-import FormRadioGroupDefault from "FormRadioGroup" /* 8962 */;
-import FormSliderRowDefault from "FormSliderRow" /* 8963 */;
-import CardSectionDefault from "CardSection" /* 8964 */;
+// Module 8951 (Form)
+import FormCheckboxRowDefault from "FormCheckboxRow" /* 7235 */;
+import Form_FormCheckboxDefault from "Form/FormCheckbox" /* 7236 */;
+import FormRowDefault from "FormRow" /* 7237 */;
+import Form_FormDefault from "Form/Form" /* 7238 */;
+import FormLabelDefault from "FormLabel" /* 7239 */;
+import FormSubLabelDefault from "FormSubLabel" /* 7240 */;
+import FormArrowDefault from "FormArrow" /* 7241 */;
+import Form_FormRadioDefault from "Form/FormRadio" /* 7243 */;
+import FormCheckmarkDefault from "FormCheckmark" /* 7246 */;
+import FormIconDefault from "FormIcon" /* 7247 */;
+import FormCTADefault from "FormCTA" /* 8952 */;
+import FormCTAButtonDefault from "FormCTAButton" /* 8954 */;
+import FormDividerDefault from "FormDivider" /* 8955 */;
+import FormHintDefault from "FormHint" /* 8956 */;
+import FormInputDefault from "FormInput" /* 8957 */;
+import FormSectionDefault from "FormSection" /* 8958 */;
+import FormTitleDefault from "FormTitle" /* 8959 */;
+import Form_FormSwitchDefault from "Form/FormSwitch" /* 8960 */;
+import FormText from "FormText" /* 8961 */;
+import FormSwitchRowDefault from "FormSwitchRow" /* 8962 */;
+import FormRadioRowDefault from "FormRadioRow" /* 8963 */;
+import FormRadioGroupDefault from "FormRadioGroup" /* 8964 */;
+import CardSectionDefault from "CardSection" /* 8965 */;
 import size from "module_2" /* 2 */;
 
 const FormTextDefault = FormText;
@@ -58,5 +57,4 @@ export const FormSwitchRow = FormSwitchRowDefault;
 export const FormRadioRow = FormRadioRowDefault;
 export const FormCheckboxRow = FormCheckboxRowDefault;
 export const FormRadioGroup = FormRadioGroupDefault;
-export const FormSliderRow = FormSliderRowDefault;
 export const FormCardSection = CardSectionDefault;

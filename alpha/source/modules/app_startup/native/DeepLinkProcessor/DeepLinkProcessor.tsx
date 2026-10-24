@@ -1,9 +1,9 @@
-// Module ID: 19393
-// Function ID: 19394
+// Module ID: 19453
+// Function ID: 19454
 // Name: DeepLinkProcessor
 // Dependencies: [1384, 2]
 
-// Module 19393 (DeepLinkProcessor)
+// Module 19453 (DeepLinkProcessor)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import size from "module_2" /* 2 */;
 

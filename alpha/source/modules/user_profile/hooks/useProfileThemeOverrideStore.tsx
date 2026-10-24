@@ -1,14 +1,14 @@
-// Module ID: 8717
-// Function ID: 8718
+// Module ID: 8719
+// Function ID: 8720
 // Name: useProfileThemeOverrideStore
-// Dependencies: [1087, 570, 558, 576, 5203, 8718, 4976, 2]
+// Dependencies: [1087, 570, 558, 576, 5205, 8720, 4978, 2]
 
-// Module 8717 (useProfileThemeOverrideStore)
+// Module 8719 (useProfileThemeOverrideStore)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import shared from "shared" /* 4976 */;
-import useThemeDefault from "useTheme" /* 5203 */;
-import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8718 */;
+import shared from "shared" /* 4978 */;
+import useThemeDefault from "useTheme" /* 5205 */;
+import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8720 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

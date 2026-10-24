@@ -1,9 +1,9 @@
-// Module ID: 15825
-// Function ID: 15826
+// Module ID: 15848
+// Function ID: 15849
 // Name: MobileWidgetEditingExperiment
 // Dependencies: [1455, 558, 576, 2]
 
-// Module 15825 (MobileWidgetEditingExperiment)
+// Module 15848 (MobileWidgetEditingExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

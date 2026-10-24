@@ -1,33 +1,33 @@
-// Module ID: 16470
-// Function ID: 16471
+// Module ID: 16502
+// Function ID: 16503
 // Name: QuestBottomSheetConsoleConnect
-// Dependencies: [109, 19, 17, 1087, 21, 587, 4969, 9569, 9604, 9606, 5208, 7488, 16430, 2002, 9572, 9575, 6715, 7799, 6711, 9608, 558, 576, 6901, 1128, 6912, 6985, 9484, 9291, 6903, 2]
+// Dependencies: [109, 19, 17, 1087, 21, 587, 4971, 9570, 9605, 9607, 5210, 7490, 16462, 2002, 9573, 9576, 6717, 7801, 6713, 9609, 558, 576, 6903, 1128, 6914, 6987, 9485, 9292, 6905, 2]
 // Exports: default
 
-// Module 16470 (QuestBottomSheetConsoleConnect)
+// Module 16502 (QuestBottomSheetConsoleConnect)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
-import QuestTypes from "QuestTypes" /* 6711 */;
-import AdCreativeType from "AdCreativeType" /* 6715 */;
-import TableRow3 from "TableRow" /* 6901 */;
-import TableRowGroup2 from "TableRowGroup" /* 6985 */;
-import openUserSettings from "openUserSettings" /* 7488 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7799 */;
-import XboxNeutralIcon from "XboxNeutralIcon" /* 9291 */;
-import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9484 */;
-import captureAdUserAction3 from "captureAdUserAction" /* 9572 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9575 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9606 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 9608 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import QuestTypes from "QuestTypes" /* 6713 */;
+import AdCreativeType from "AdCreativeType" /* 6717 */;
+import TableRow3 from "TableRow" /* 6903 */;
+import TableRowGroup2 from "TableRowGroup" /* 6987 */;
+import openUserSettings from "openUserSettings" /* 7490 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7801 */;
+import XboxNeutralIcon from "XboxNeutralIcon" /* 9292 */;
+import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9485 */;
+import captureAdUserAction3 from "captureAdUserAction" /* 9573 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9576 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9607 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 9609 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function NonInli
     }
     if (cResult[5] !== tmp4) {
       const obj2 = { hasIcons: true, children: tmp4 };
-      const tmp9 = closure_8(tmp(6985).TableRowGroup, obj2);
+      const tmp9 = closure_8(tmp(6987).TableRowGroup, obj2);
       cResult[5] = tmp4;
       cResult[6] = tmp9;
       tmp7 = tmp9;
@@ -327,11 +327,11 @@ export default function QuestBottomSheetConsoleConnect(quest) {
   function openQuestBottomSheet() {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { questId: quest.id, initialStep: importDefault, sourceQuestContent: dependencyMap };
-    obj.openLazy(asyncRequire(16430, dependencyMap.paths), "QuestBottomSheet", obj2);
+    obj.openLazy(asyncRequire(16462, dependencyMap.paths), "QuestBottomSheet", obj2);
   }
-  let obj = quest(9569);
+  let obj = quest(9570);
   const xboxAndPlaystationAccounts = obj.useConnectedAccounts().xboxAndPlaystationAccounts;
-  let obj2 = quest(9604);
+  let obj2 = quest(9605);
   let closure_4 = obj2.useGetQuestImpressionId();
   const items = [quest, xboxAndPlaystationAccounts];
   let obj3 = {

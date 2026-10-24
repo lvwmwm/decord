@@ -1,16 +1,16 @@
-// Module ID: 15837
-// Function ID: 15838
+// Module ID: 15861
+// Function ID: 15862
 // Name: useHexagonCampaignNewFontBadge
-// Dependencies: [19, 15838, 15618, 4994, 558, 576, 4997, 504, 15839, 15828, 2]
+// Dependencies: [19, 15862, 15638, 4996, 558, 576, 4999, 504, 15863, 15851, 2]
 
-// Module 15837 (useHexagonCampaignNewFontBadge)
+// Module 15861 (useHexagonCampaignNewFontBadge)
 import react2 from "react" /* 576 */;
-import HexagonCampaignPerkAvailability from "HexagonCampaignPerkAvailability" /* 4997 */;
-import HexagonActionCreators from "HexagonActionCreators" /* 15828 */;
+import HexagonCampaignPerkAvailability from "HexagonCampaignPerkAvailability" /* 4999 */;
+import HexagonActionCreators from "HexagonActionCreators" /* 15851 */;
 import react from "react" /* 19 */;
-import DisplayNameStylesSeenStore from "DisplayNameStylesSeenStore" /* 15838 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15618 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4994 */;
+import DisplayNameStylesSeenStore from "DisplayNameStylesSeenStore" /* 15862 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15638 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4996 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

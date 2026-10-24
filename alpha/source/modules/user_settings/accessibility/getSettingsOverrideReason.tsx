@@ -1,14 +1,14 @@
-// Module ID: 16652
-// Function ID: 16653
+// Module ID: 16684
+// Function ID: 16685
 // Name: getSettingsOverrideReason
-// Dependencies: [4798, 1097, 1128, 4023, 558, 576, 504, 2]
+// Dependencies: [4800, 1097, 1128, 4023, 558, 576, 504, 2]
 // Exports: default
 
-// Module 16652 (getSettingsOverrideReason)
+// Module 16684 (getSettingsOverrideReason)
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import intl4 from "intl" /* 1128 */;
 import _modDef4023 from "module_4023" /* 4023 */;
-import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 4798 */;
+import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 4800 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

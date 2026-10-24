@@ -1,26 +1,24 @@
 // Module ID: 15556
 // Function ID: 15557
-// Dependencies: [15545, 15520]
+// Dependencies: [15540, 15541, 15557]
 
 // Module 15556
-import _mod15520 from "module_15520" /* 15520 */;
-import module_15545 from "module_15545" /* 15545 */;
+import _mod15540 from "module_15540" /* 15540 */;
+import _mod15541 from "module_15541" /* 15541 */;
+import _mod15557 from "module_15557" /* 15557 */;
 
-let _moduleResult = module_15545(_mod15520.document);
-if (_moduleResult) {
-  const _module1 = module_15545;
-  _moduleResult = _module1(_mod15520.document.createElement);
+const prop = _mod15540["__core-js_shared__"] || _mod15541("__core-js_shared__", {});
+let versions = prop.versions;
+if (!versions) {
+  const items = [];
+  prop.versions = items;
+  versions = items;
 }
-let c2 = _moduleResult;
+const push = versions.push;
+let str2 = "global";
+if (_mod15557) {
+  str2 = "pure";
+}
+push({ version: "3.41.0", mode: str2, copyright: "\u00A9 2014-2025 Denis Pushkarev (zloirock.ru)", license: "https://github.com/zloirock/core-js/blob/v3.41.0/LICENSE", source: "https://github.com/zloirock/core-js" });
 
-export default (arg0) => {
-  let element;
-  const tmp = c2;
-  if (tmp) {
-    const _document = _mod15520.document;
-    element = _document.createElement(arg0);
-  } else {
-    element = {};
-  }
-  return element;
-};
+export default prop;

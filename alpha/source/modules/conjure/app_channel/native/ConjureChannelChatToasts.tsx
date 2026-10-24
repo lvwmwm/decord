@@ -1,20 +1,20 @@
-// Module ID: 18014
-// Function ID: 18015
+// Module ID: 18046
+// Function ID: 18047
 // Name: ConjureChannelChatToasts
-// Dependencies: [19, 17, 21, 4969, 587, 1128, 558, 576, 5023, 1202, 5232, 6903, 18015, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 1128, 558, 576, 5025, 1202, 5234, 6905, 18047, 2]
 
-// Module 18014 (ConjureChannelChatToasts)
+// Module 18046 (ConjureChannelChatToasts)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
-import UserUtils from "UserUtils" /* 5023 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import Card_Card from "Card/Card" /* 6903 */;
-import useConjureChatToastMessagesDefault from "useConjureChatToastMessages" /* 18015 */;
+import UserUtils from "UserUtils" /* 5025 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import Card_Card from "Card/Card" /* 6905 */;
+import useConjureChatToastMessagesDefault from "useConjureChatToastMessages" /* 18047 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -185,7 +185,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatToa
   const obj2 = { style: tmp.opaque, children: metroRequire(Card, obj3) };
   const callback = react.useCallback(() => onOpenChat(message), items);
   obj3 = { variant: "primary", shadow: "high", border: "subtle", style: tmp.card, onPress: callback, children: items1 };
-  Card = tmp2(6903).Card;
+  Card = tmp2(6905).Card;
   const obj4 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "r" };
   const Avatar = tmp2(1202).Avatar;
   items1 = [hasOwnProperty(Avatar, obj4), ];

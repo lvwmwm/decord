@@ -1,14 +1,14 @@
-// Module ID: 14108
-// Function ID: 14109
+// Module ID: 14127
+// Function ID: 14128
 // Name: useRefocusOrLaunchActivity
-// Dependencies: [5, 19, 6773, 4820, 6774, 558, 576, 6807, 504, 10765, 11343, 11338, 2]
+// Dependencies: [5, 19, 6775, 4822, 6776, 558, 576, 6809, 504, 10766, 11361, 11357, 2]
 
-// Module 14108 (useRefocusOrLaunchActivity)
-import FramesConstants from "FramesConstants" /* 6774 */;
+// Module 14127 (useRefocusOrLaunchActivity)
+import FramesConstants from "FramesConstants" /* 6776 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6773 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4820 */;
+import FramesStore from "FramesStore" /* 6775 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

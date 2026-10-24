@@ -1,22 +1,22 @@
-// Module ID: 11689
-// Function ID: 11690
+// Module ID: 11709
+// Function ID: 11710
 // Name: StreamPreview
-// Dependencies: [19, 17, 1207, 21, 4969, 587, 5035, 5667, 4976, 11690, 11691, 1128, 6906, 558, 576, 11692, 504, 2]
+// Dependencies: [19, 17, 1207, 21, 4971, 587, 5037, 5669, 4978, 11710, 11711, 1128, 6908, 558, 576, 11712, 504, 2]
 
-// Module 11689 (StreamPreview)
+// Module 11709 (StreamPreview)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import shared from "shared" /* 4976 */;
-import native from "native" /* 5035 */;
-import FastImageDefault from "FastImage" /* 5667 */;
-import Pressables from "Pressables" /* 6906 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 11692 */;
+import shared from "shared" /* 4978 */;
+import native from "native" /* 5037 */;
+import FastImageDefault from "FastImage" /* 5669 */;
+import Pressables from "Pressables" /* 6908 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 11712 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -52,9 +52,9 @@ class DefaultFallback extends PureComponent {
     const obj3 = shared;
     const tmp3 = _false;
     if (obj3.isThemeDark(theme)) {
-      tmp4Result = tmp4(11690);
+      tmp4Result = tmp4(11710);
     } else {
-      tmp4Result = tmp4(11691);
+      tmp4Result = tmp4(11711);
     }
     return hasOwnProperty(tmp3, obj);
   }

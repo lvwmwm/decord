@@ -1,14 +1,14 @@
-// Module ID: 14218
-// Function ID: 14219
+// Module ID: 14242
+// Function ID: 14243
 // Name: MediaViewerPager
-// Dependencies: [32, 19, 21, 558, 576, 8755, 8754, 10079, 14213, 5050, 14211, 5157, 5295, 8750, 1384, 14215, 14219, 14220, 2]
+// Dependencies: [32, 19, 21, 558, 576, 8757, 8756, 10080, 14237, 5052, 14235, 5159, 5297, 8752, 1384, 14239, 14243, 14244, 2]
 
-// Module 14218 (MediaViewerPager)
+// Module 14242 (MediaViewerPager)
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5295 */;
-import useMediaViewerSources from "useMediaViewerSources" /* 8750 */;
-import MediaViewerItemPresenterDefault from "MediaViewerItemPresenter" /* 14215 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5297 */;
+import useMediaViewerSources from "useMediaViewerSources" /* 8752 */;
+import MediaViewerItemPresenterDefault from "MediaViewerItemPresenter" /* 14239 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -275,14 +275,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     if (obj.isAndroid()) {
       num = 20;
     }
-    const Gesture = tmp(5295).Gesture;
+    const Gesture = tmp(5297).Gesture;
     const TapResult = Gesture.Tap();
     const runOnJSResult = TapResult.runOnJS(true);
     const enabledResult = runOnJSResult.enabled(!mediaItemHasSpoiler);
     const numberOfTapsResult = enabledResult.numberOfTaps(2);
     const maxDistanceResult = numberOfTapsResult.maxDistance(num);
     onStartResult = maxDistanceResult.onStart(callback2);
-    const Gesture2 = tmp(5295).Gesture;
+    const Gesture2 = tmp(5297).Gesture;
     const TapResult1 = Gesture2.Tap();
     let tmp6 = !mediaItemHasSpoiler;
     const enabled = TapResult1.runOnJS(true).enabled;
@@ -297,16 +297,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const enabledResult1 = enabled(tmp6);
     const maxDistanceResult1 = enabledResult1.maxDistance(num);
     const onStartResult1 = maxDistanceResult1.onStart(callback1);
-    const Gesture3 = tmp(5295).Gesture;
+    const Gesture3 = tmp(5297).Gesture;
     const LongPressResult = Gesture3.LongPress();
     const runOnJSResult2 = LongPressResult.runOnJS(true);
     const enabledResult2 = runOnJSResult2.enabled(!mediaItemHasSpoiler);
     const onStartResult2 = enabledResult2.onStart(callback3);
-    const Gesture4 = tmp(5295).Gesture;
+    const Gesture4 = tmp(5297).Gesture;
     const Simultaneous = Gesture4.Simultaneous;
-    const Gesture5 = tmp(5295).Gesture;
+    const Gesture5 = tmp(5297).Gesture;
     const RaceResult = Gesture5.Race(onStartResult, c22);
-    const Gesture6 = tmp(5295).Gesture;
+    const Gesture6 = tmp(5297).Gesture;
     return Simultaneous(RaceResult, Gesture6.Exclusive(onStartResult, onStartResult1), onStartResult2);
   }, items5);
   const tmp8Result8 = entranceAnimationDriver(pagerIndex[9]);

@@ -1,21 +1,21 @@
-// Module ID: 8393
-// Function ID: 8394
+// Module ID: 8395
+// Function ID: 8396
 // Name: GuildProductPurchaseSystemMessage
-// Dependencies: [4912, 4821, 1087, 6364, 8316, 1420, 1417, 8349, 8318, 1128, 8320, 2]
+// Dependencies: [4914, 4823, 1087, 6366, 8318, 1420, 1417, 8351, 8320, 1128, 8322, 2]
 // Exports: createGuildProductPurchaseSystemMessage
 
-// Module 8393 (GuildProductPurchaseSystemMessage)
+// Module 8395 (GuildProductPurchaseSystemMessage)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import AvatarUtils from "AvatarUtils" /* 1417 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1420 */;
-import useMessageAuthor from "useMessageAuthor" /* 6364 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8316 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8318 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8320 */;
-import GuildProductSystemMessageUtils from "GuildProductSystemMessageUtils" /* 8349 */;
-import MessageRecord from "MessageRecord" /* 4912 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
+import useMessageAuthor from "useMessageAuthor" /* 6366 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8318 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8320 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8322 */;
+import GuildProductSystemMessageUtils from "GuildProductSystemMessageUtils" /* 8351 */;
+import MessageRecord from "MessageRecord" /* 4914 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 const MessageTypes = Constants.MessageTypes;

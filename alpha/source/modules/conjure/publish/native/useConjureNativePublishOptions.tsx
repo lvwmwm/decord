@@ -1,14 +1,14 @@
-// Module ID: 12226
-// Function ID: 12227
+// Module ID: 12252
+// Function ID: 12253
 // Name: useConjureNativePublishOptions
-// Dependencies: [19, 6771, 10801, 12227, 5661, 558, 576, 504, 6807, 2]
+// Dependencies: [19, 6773, 10802, 12253, 5663, 558, 576, 504, 6809, 2]
 
-// Module 12226 (useConjureNativePublishOptions)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5661 */;
-import ConjurePublishBlockedSheetDefault from "ConjurePublishBlockedSheet" /* 10801 */;
-import ConjurePublishDestinationSheetDefault from "ConjurePublishDestinationSheet" /* 12227 */;
+// Module 12252 (useConjureNativePublishOptions)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
+import ConjurePublishBlockedSheetDefault from "ConjurePublishBlockedSheet" /* 10802 */;
+import ConjurePublishDestinationSheetDefault from "ConjurePublishDestinationSheet" /* 12253 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6771 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,287 +1,237 @@
 // Module ID: 8259
 // Function ID: 8260
-// Dependencies: [8215, 8231, 8243, 8212, 8219, 8245]
+// Dependencies: [8219, 8234, 8235, 8231, 8214]
 
 // Module 8259
-import _mod8212 from "module_8212" /* 8212 */;
-import _modDef8215 from "module_8215" /* 8215 */;
-import PNG_CHUNK_TYPE_SIZE from "PNG_CHUNK_TYPE_SIZE" /* 8219 */;
+import _mod8214 from "module_8214" /* 8214 */;
+import _modDef8219 from "module_8219" /* 8219 */;
 import _modDef8231 from "module_8231" /* 8231 */;
-import _modDef8243 from "module_8243" /* 8243 */;
-import _modDef8245 from "module_8245" /* 8245 */;
+import get0thIfdOffset from "get0thIfdOffset" /* 8234 */;
+import IFD_TYPE_0TH from "IFD_TYPE_0TH" /* 8235 */;
 
-const require = globalThis.__r;
-let _require;
-
-function constructTag(decompressResult, type, items2, items1) {
-  let stringFromDataView = decompressResult;
-  if (decompressResult instanceof DataView) {
-    const obj = _mod8212;
-    stringFromDataView = obj.getStringFromDataView(decompressResult, 0, decompressResult.byteLength);
-  }
-  const obj2 = _mod8212;
-  const stringValueFromArray = obj2.getStringValueFromArray(items1);
-  let combined = stringValueFromArray;
-  if (type !== PNG_CHUNK_TYPE_SIZE.TYPE_TEXT) {
-    combined = stringValueFromArray;
-    if (0 !== items2.length) {
-      const _HermesInternal = HermesInternal;
-      const tmp4Result = _mod8212;
-      combined = "" + stringValueFromArray + " (" + tmp4Result.getStringValueFromArray(items2) + ")";
-    }
-  }
-  const obj3 = { name: combined, value: stringFromDataView, description: stringFromDataView };
-  if (type === PNG_CHUNK_TYPE_SIZE.TYPE_ITXT) {
-    const decoder = _modDef8245;
-    stringFromDataView = decoder.decode("UTF-8", decompressResult);
-  }
-  return obj3;
-}
-function isExifGroupTag(name, value) {
-  const tmp = "raw profile type exif" === name.toLowerCase() && "exif" === value.substring(1, 5);
-  return tmp;
-}
-function isIptcGroupTag(name, value) {
-  const tmp = "raw profile type iptc" === name.toLowerCase() && "iptc" === value.substring(1, 5);
-  return tmp;
-}
-function decodeRawData(value) {
-  let length;
-  let sum;
-  const str = value.match(/\n(exif|iptc)\n\s*\d+\n([\s\S]*)$/)[2];
-  const replaced = str.replace(/\n/g, "");
-  const arrayBuffer = new ArrayBuffer(replaced.length / 2);
-  const dataView = new DataView(arrayBuffer);
-  let num = 0;
-  if (0 < replaced.length) {
-    do {
-      let _parseInt = parseInt;
-      sum = num + 2;
-      let setUint8Result = dataView.setUint8(num / 2, parseInt(replaced.substring(num, sum), 16));
-      num = sum;
-      length = replaced.length;
-    } while (sum < length);
-  }
-  return dataView;
-}
 let obj = {
-  read(byteLength, arg1, arg2, arg3) {
-    let allPromises;
-    let closure_0;
-    let length;
-    let offset;
-    let type;
-    _require = arg3;
-    let obj = {};
-    const items = [];
-    let num = 0;
-    if (0 < arg1.length) {
-      while (true) {
-        let str;
-        let catchPromise;
-        ({ offset, length, type } = arg1[num]);
-        let items1 = [];
-        let items2 = [];
-        let items3 = [];
-        let tmp = STATE_KEYWORD;
-        let COMPRESSION_METHOD_NONE = require("module_8212").COMPRESSION_METHOD_NONE;
-        let tmp5 = COMPRESSION_METHOD_NONE;
-        let dataView;
-        if (0 < length) {
-          let num2 = 0;
-          let tmp7 = COMPRESSION_METHOD_NONE;
-          tmp5 = COMPRESSION_METHOD_NONE;
-          if (offset < byteLength.byteLength) {
-            while (true) {
-              let tmp16;
-              let sum1;
-              let COMPRESSION_METHOD_NONE2;
-              let tmp8 = STATE_COMPRESSION;
-              if (tmp !== STATE_COMPRESSION) {
-                let tmp19 = STATE_TEXT;
-                if (tmp === STATE_TEXT) {
-                  break;
-                } else {
-                  let uint8 = byteLength.getUint8(offset + num2);
-                  if (0 === uint8) {
-                    let tmp28;
-                    if (tmp !== STATE_KEYWORD) {
-                      let tmp30;
-                      if (tmp === tmp8) {
-                        if (type === require("PNG_CHUNK_TYPE_SIZE").TYPE_ITXT) {
-                          tmp19 = STATE_LANG;
-                        }
-                        tmp30 = tmp19;
-                      } else {
-                        tmp30 = tmp19;
-                        if (tmp === STATE_LANG) {
-                          tmp30 = STATE_TRANSLATED_KEYWORD;
-                        }
-                      }
-                      tmp28 = tmp30;
-                    } else {
-                      let items4 = [require("PNG_CHUNK_TYPE_SIZE").TYPE_ITXT, require("PNG_CHUNK_TYPE_SIZE").TYPE_ZTXT];
-                      tmp28 = tmp8;
-                    }
-                    tmp16 = tmp28;
-                    sum1 = num2;
-                    COMPRESSION_METHOD_NONE2 = tmp7;
-                  } else if (tmp === STATE_KEYWORD) {
-                    let arr = items1.push(uint8);
-                    sum1 = num2;
-                    COMPRESSION_METHOD_NONE2 = tmp7;
-                    tmp16 = tmp;
-                  } else if (tmp === STATE_LANG) {
-                    let arr2 = items2.push(uint8);
-                    sum1 = num2;
-                    COMPRESSION_METHOD_NONE2 = tmp7;
-                    tmp16 = tmp;
-                  } else {
-                    sum1 = num2;
-                    COMPRESSION_METHOD_NONE2 = tmp7;
-                    tmp16 = tmp;
-                    if (tmp === STATE_TRANSLATED_KEYWORD) {
-                      let arr3 = items3.push(uint8);
-                      sum1 = num2;
-                      COMPRESSION_METHOD_NONE2 = tmp7;
-                      tmp16 = tmp;
-                    }
-                  }
-                }
-              } else {
-                let sum = offset + num2;
-                let tmp48 = _require;
-                if (type === require("PNG_CHUNK_TYPE_SIZE").TYPE_ITXT) {
-                  if (byteLength.getUint8(sum) === c9) {
-                    COMPRESSION_METHOD_NONE2 = byteLength.getUint8(sum + 1);
-                    sum1 = num2;
-                    if (type === tmp48(8219).TYPE_ITXT) {
-                      sum1 = num2 + c8;
-                    }
-                    if (tmp !== STATE_KEYWORD) {
-                      let tmp18;
-                      if (tmp === tmp8) {
-                        tmp18 = type === tmp48(8219).TYPE_ITXT ? STATE_LANG : STATE_TEXT;
-                      } else {
-                        tmp18 = tmp === STATE_LANG ? STATE_TRANSLATED_KEYWORD : STATE_TEXT;
-                      }
-                      tmp16 = tmp18;
-                    } else {
-                      let items5 = [tmp48(8219).TYPE_ITXT, tmp48(8219).TYPE_ZTXT];
-                      tmp16 = tmp8;
-                    }
-                  }
-                } else if (type === tmp48(8219).TYPE_ZTXT) {
-                  COMPRESSION_METHOD_NONE2 = byteLength.getUint8(sum);
-                }
-                COMPRESSION_METHOD_NONE2 = tmp48(8212).COMPRESSION_METHOD_NONE;
-              }
-              let sum2 = sum1 + 1;
-              tmp5 = COMPRESSION_METHOD_NONE2;
-              if (sum2 < length) {
-                num2 = sum2;
-                tmp7 = COMPRESSION_METHOD_NONE2;
-                tmp = tmp16;
-                tmp5 = COMPRESSION_METHOD_NONE2;
-              }
-              continue;
+  read(buffer, c5, arg2) {
+    let str11;
+    let str12;
+    let tmp16;
+    let obj = _modDef8219;
+    const byteOrder = obj.getByteOrder(buffer, c5);
+    const readIfd = get0thIfdOffset.readIfd;
+    get0thIfdOffset;
+    const IFD_TYPE_MPF = IFD_TYPE_0TH.IFD_TYPE_MPF;
+    const obj2 = get0thIfdOffset;
+    const ifd = readIfd(buffer, IFD_TYPE_MPF, c5, obj2.get0thIfdOffset(buffer, c5, byteOrder), byteOrder, arg2);
+    if (ifd.MPEntry) {
+      const items = [];
+      const _Math = Math;
+      let num13 = 0;
+      if (0 < Math.ceil(ifd.MPEntry.value.length / c3)) {
+        do {
+          let num16;
+          let num22;
+          let num35;
+          let num41;
+          items[num13] = {};
+          let value = ifd.MPEntry.value;
+          let result = num13 * c3;
+          let obj3 = _modDef8231;
+          let typeSize = obj3.getTypeSize("LONG");
+          if (byteOrder === _modDef8219.LITTLE_ENDIAN) {
+            let num17 = 0;
+            let num18 = 0;
+            let num19 = 0;
+            if (0 < typeSize) {
+              do {
+                num18 = num18 + (value[result + num17] << 8 * num17);
+                num17 = num17 + 1;
+                num19 = num18;
+              } while (num17 < typeSize);
             }
-            let _DataView = DataView;
-            let buffer = byteLength.buffer;
-            let self = this;
-            let self2 = this;
-            dataView = new DataView(buffer.slice(offset + num2, offset + length));
-            tmp5 = tmp7;
-          }
-        }
-        let tmp34 = _require;
-        if (tmp5 !== require("module_8212").COMPRESSION_METHOD_NONE) {
-          let obj2;
-          if (!arg2) {
-            obj2 = {};
-          }
-          let _Promise2 = Promise;
-          if (obj2 instanceof Promise) {
-            let arr4 = items.push(obj2.then((result) => {
-              let name;
-              let tmp2Result;
-              let tmp2Result2;
-              let value;
-              ({ name, value } = result);
-              try {
-                if (_modDef8215.USE_EXIF) {
-                  if (isExifGroupTag(name, value)) {
-                    const obj2 = { __exif: tmp2Result.read(decodeRawData(value), c10, closure_0).tags };
-                    tmp2Result = _modDef8231;
-                    return obj2;
-                  }
-                }
-                if (_modDef8215.USE_IPTC) {
-                  if (isIptcGroupTag(name, value)) {
-                    const obj3 = { __iptc: tmp2Result2.read(decodeRawData(value), 0, closure_0) };
-                    tmp2Result2 = _modDef8243;
-                    return obj3;
-                  }
-                }
-                if (name) {
-                  if (!isExifGroupTag(name, value)) {
-                    if (!isIptcGroupTag(name, value)) {
-                      const obj = {};
-                      const obj4 = { value, description: tmp };
-                      obj[name] = obj4;
-                      return obj;
-                    }
-                  }
-                }
-                return {};
-              } catch (err) {
-              }
-            }));
+            num16 = num19;
           } else {
-            let name = obj2.name;
-            if (name) {
-              let obj3 = { value: tmp43, description: tmp44 };
-              obj[name] = obj3;
+            let num14 = 0;
+            let num15 = 0;
+            num16 = 0;
+            if (0 < typeSize) {
+              do {
+                num15 = num15 + (value[result + num14] << 8 * (typeSize - 1 - num14));
+                num14 = num14 + 1;
+                num16 = num15;
+              } while (num14 < typeSize);
             }
           }
-          num = num + 1;
-          if (num >= arg1.length) {
-            break;
+          let items1 = [num16 >> 31 & 1, num16 >> 30 & 1, num16 >> 29 & 1];
+          let items2 = [];
+          let tmp12 = items[num13];
+          if (items1[0]) {
+            let arr = items2.push("Dependent Parent Image");
           }
-        }
-        let tmp34Result = tmp34(8212);
-        let decompress = tmp34Result.decompress;
-        if (type === tmp34(8219).TYPE_TEXT) {
-          str = "latin1";
-        } else {
-          str = "utf-8";
-        }
-        let decompressResult = decompress(dataView, tmp5, str);
-        let _Promise = Promise;
-        if (decompressResult instanceof Promise) {
-          let nextPromise = decompressResult.then((result) => constructTag(result, type, items2, items1));
-          catchPromise = nextPromise.catch(() => constructTag("<text using unknown compression>".split(""), type, items2, items1));
-        } else {
-          catchPromise = constructTag(decompressResult, type, items2, items1);
-        }
-        obj2 = catchPromise;
+          if (items1[1]) {
+            let arr2 = items2.push("Dependent Child Image");
+          }
+          if (items1[2]) {
+            let arr3 = items2.push("Representative Image");
+          }
+          let obj4 = { value: items1, description: tmp16 };
+          tmp16 = items2.join(", ") || "None";
+          tmp12.ImageFlags = obj4;
+          let tmp18 = num16 >> 24 & 7;
+          let obj5 = { value: tmp18, description: str11 };
+          str11 = "Unknown";
+          let tmp17 = items[num13];
+          if (0 === tmp18) {
+            str11 = "JPEG";
+          }
+          tmp17.ImageFormat = obj5;
+          let tmp20 = 16777215 & num16;
+          let obj6 = { value: tmp20, description: str12 };
+          str12 = { 196608: "Baseline MP Primary Image", 65537: "Large Thumbnail (VGA equivalent)", 65538: "Large Thumbnail (Full HD equivalent)", 131073: "Multi-Frame Image (Panorama)", 131074: "Multi-Frame Image (Disparity)", 131075: "Multi-Frame Image (Multi-Angle)", 0: "Undefined" }[tmp20];
+          let tmp19 = items[num13];
+          if (!str12) {
+            str12 = "Unknown";
+          }
+          tmp19.ImageType = obj6;
+          let value2 = ifd.MPEntry.value;
+          let sum = num13 * c3 + 4;
+          let obj7 = _modDef8231;
+          let typeSize1 = obj7.getTypeSize("LONG");
+          if (byteOrder === _modDef8219.LITTLE_ENDIAN) {
+            let num23 = 0;
+            let num24 = 0;
+            let num25 = 0;
+            if (0 < typeSize1) {
+              do {
+                num24 = num24 + (value2[sum + num23] << 8 * num23);
+                num23 = num23 + 1;
+                num25 = num24;
+              } while (num23 < typeSize1);
+            }
+            num22 = num25;
+          } else {
+            let num20 = 0;
+            let num21 = 0;
+            num22 = 0;
+            if (0 < typeSize1) {
+              do {
+                num21 = num21 + (value2[sum + num20] << 8 * (typeSize1 - 1 - num20));
+                num20 = num20 + 1;
+                num22 = num21;
+              } while (num20 < typeSize1);
+            }
+          }
+          let obj8 = { value: num22, description: "" + num22 };
+          items[num13].ImageSize = obj8;
+          let num26 = 0;
+          if (0 !== num13) {
+            let num29;
+            let value3 = ifd.MPEntry.value;
+            let sum1 = num13 * c3 + 8;
+            let obj15 = _modDef8231;
+            let typeSize2 = obj15.getTypeSize("LONG");
+            if (byteOrder === _modDef8219.LITTLE_ENDIAN) {
+              let num30 = 0;
+              let num31 = 0;
+              let num32 = 0;
+              if (0 < typeSize2) {
+                do {
+                  num31 = num31 + (value3[sum1 + num30] << 8 * num30);
+                  num30 = num30 + 1;
+                  num32 = num31;
+                } while (num30 < typeSize2);
+              }
+              num29 = num32;
+            } else {
+              let num27 = 0;
+              let num28 = 0;
+              num29 = 0;
+              if (0 < typeSize2) {
+                do {
+                  num28 = num28 + (value3[sum1 + num27] << 8 * (typeSize2 - 1 - num27));
+                  num27 = num27 + 1;
+                  num29 = num28;
+                } while (num27 < typeSize2);
+              }
+            }
+            num26 = num29 + c5;
+          }
+          let obj9 = { value: num26, description: "" + num26 };
+          items[num13].ImageOffset = obj9;
+          let value4 = ifd.MPEntry.value;
+          let sum2 = num13 * c3 + 12;
+          let obj10 = _modDef8231;
+          let typeSize3 = obj10.getTypeSize("SHORT");
+          if (byteOrder === _modDef8219.LITTLE_ENDIAN) {
+            let num36 = 0;
+            let num37 = 0;
+            let num38 = 0;
+            if (0 < typeSize3) {
+              do {
+                num37 = num37 + (value4[sum2 + num36] << 8 * num36);
+                num36 = num36 + 1;
+                num38 = num37;
+              } while (num36 < typeSize3);
+            }
+            num35 = num38;
+          } else {
+            let num33 = 0;
+            let num34 = 0;
+            num35 = 0;
+            if (0 < typeSize3) {
+              do {
+                num34 = num34 + (value4[sum2 + num33] << 8 * (typeSize3 - 1 - num33));
+                num33 = num33 + 1;
+                num35 = num34;
+              } while (num33 < typeSize3);
+            }
+          }
+          let obj11 = { value: num35, description: "" + num35 };
+          items[num13].DependentImage1EntryNumber = obj11;
+          let value5 = ifd.MPEntry.value;
+          let sum3 = num13 * c3 + 14;
+          let obj12 = _modDef8231;
+          let typeSize4 = obj12.getTypeSize("SHORT");
+          if (byteOrder === _modDef8219.LITTLE_ENDIAN) {
+            let num42 = 0;
+            let num43 = 0;
+            let num44 = 0;
+            if (0 < typeSize4) {
+              do {
+                num43 = num43 + (value5[sum3 + num42] << 8 * num42);
+                num42 = num42 + 1;
+                num44 = num43;
+              } while (num42 < typeSize4);
+            }
+            num41 = num44;
+          } else {
+            let num39 = 0;
+            let num40 = 0;
+            num41 = 0;
+            if (0 < typeSize4) {
+              do {
+                num40 = num40 + (value5[sum3 + num39] << 8 * (typeSize4 - 1 - num39));
+                num39 = num39 + 1;
+                num41 = num40;
+              } while (num39 < typeSize4);
+            }
+          }
+          let obj13 = { value: num41, description: "" + num41 };
+          items[num13].DependentImage2EntryNumber = obj13;
+          buffer = buffer.buffer;
+          items[num13].image = buffer.slice(num26, num26 + num22);
+          let obj14 = _mod8214;
+          let deferInitResult = obj14.deferInit(items[num13], "base64", function() {
+            const obj = _mod8214;
+            return obj.getBase64Image(this.image);
+          });
+          num13 = num13 + 1;
+          let _Math2 = Math;
+        } while (num13 < Math.ceil(ifd.MPEntry.value.length / c3));
       }
+      ifd.Images = items;
     }
-    let obj4 = { readTags: obj, readTagsPromise: allPromises };
-    allPromises = undefined;
-    if (items.length > 0) {
-      allPromises = Promise.all(items);
-    }
-    return obj4;
+    return ifd;
   }
 };
-const STATE_KEYWORD = "STATE_KEYWORD";
-const STATE_COMPRESSION = "STATE_COMPRESSION";
-const STATE_LANG = "STATE_LANG";
-const STATE_TRANSLATED_KEYWORD = "STATE_TRANSLATED_KEYWORD";
-const STATE_TEXT = "STATE_TEXT";
-let c8 = 1;
-let c9 = 1;
-let c10 = 6;
+let c3 = 16;
 
 export default obj;

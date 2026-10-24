@@ -1,19 +1,19 @@
-// Module ID: 13223
-// Function ID: 13224
+// Module ID: 13260
+// Function ID: 13261
 // Name: SearchButton
-// Dependencies: [109, 19, 17, 21, 4969, 587, 558, 576, 7144, 1128, 5232, 2]
+// Dependencies: [109, 19, 17, 21, 4971, 587, 558, 576, 7146, 1128, 5234, 2]
 
-// Module 13223 (SearchButton)
+// Module 13260 (SearchButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7144 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7146 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

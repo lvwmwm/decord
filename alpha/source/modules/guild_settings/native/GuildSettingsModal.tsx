@@ -1,59 +1,59 @@
-// Module ID: 18946
-// Function ID: 18947
+// Module ID: 18976
+// Function ID: 18977
 // Name: GuildSettingsModal
-// Dependencies: [32, 19, 4843, 9005, 1087, 21, 17538, 9004, 1275, 1128, 6922, 18947, 18959, 18967, 18968, 18987, 19006, 19011, 19026, 19027, 19039, 19051, 19053, 18259, 18268, 19061, 19065, 19066, 18270, 17539, 19067, 19068, 19088, 19109, 19113, 19116, 19119, 12740, 12754, 12758, 19120, 19125, 19126, 19148, 19171, 19211, 19212, 19226, 19265, 19269, 19270, 19273, 19281, 19282, 558, 576, 1633, 5597, 504, 7093, 2]
+// Dependencies: [32, 19, 4845, 9006, 1087, 21, 17570, 9005, 1275, 1128, 6924, 18977, 18987, 18995, 18996, 19015, 19034, 19039, 19054, 19055, 19067, 19079, 19081, 18291, 18300, 19089, 19093, 19094, 18302, 17571, 19095, 19096, 19116, 19137, 19141, 19144, 19147, 12777, 12791, 12795, 19148, 19153, 19154, 19176, 19198, 19264, 19265, 19278, 19314, 19317, 19318, 19321, 19329, 19330, 558, 576, 1633, 5599, 504, 7095, 2]
 
-// Module 18946 (GuildSettingsModal)
+// Module 18976 (GuildSettingsModal)
 import Fragment from "Fragment" /* 21 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9004 */;
-import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 12740 */;
-import KickConfirmDefault from "KickConfirm" /* 12754 */;
-import BanConfirmDefault from "BanConfirm" /* 12758 */;
-import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 17538 */;
-import GuildSettingsModalChannelsDefault from "GuildSettingsModalChannels" /* 17539 */;
-import IntegrationsSettingsWebhooksOverviewDefault from "IntegrationsSettingsWebhooksOverview" /* 18259 */;
-import IntegrationsSettingsEditWebhookDefault from "IntegrationsSettingsEditWebhook" /* 18268 */;
-import IntegrationsSettingsEditLinkedLobbyDefault from "IntegrationsSettingsEditLinkedLobby" /* 18270 */;
-import GuildSettingsModalLandingDefault from "GuildSettingsModalLanding" /* 18947 */;
-import GuildSettingsModalOverviewDefault from "GuildSettingsModalOverview" /* 18959 */;
-import GuildSettingsModalModerationDefault from "GuildSettingsModalModeration" /* 18967 */;
-import GuildSettingsAutoModerationDefault from "GuildSettingsAutoModeration" /* 18968 */;
-import GuildSettingsAutomodRuleDefault from "GuildSettingsAutomodRule" /* 18987 */;
-import GuildSettingsModalAuditLogDefault from "GuildSettingsModalAuditLog" /* 19006 */;
-import GuildSettingsModalAuditLogFilterDefault from "GuildSettingsModalAuditLogFilter" /* 19011 */;
-import GuildSettingsModalIntegrationsDefault from "GuildSettingsModalIntegrations" /* 19026 */;
-import GuildSettingsModalEmojiDefault from "GuildSettingsModalEmoji" /* 19027 */;
-import GuildSettingsModalStickersDefault from "GuildSettingsModalStickers" /* 19039 */;
-import GuildSettingsModalServerTagDefault from "GuildSettingsModalServerTag" /* 19051 */;
-import GuildSettingsModalServerTagCustomizeDefault from "GuildSettingsModalServerTagCustomize" /* 19053 */;
-import GuildSettingsModalIntegrationSettingsDefault from "GuildSettingsModalIntegrationSettings" /* 19061 */;
-import GuildSettingsModalIntegrationPlatformDefault from "GuildSettingsModalIntegrationPlatform" /* 19065 */;
-import GuildSettingsModalLobbiesLinkedDefault from "GuildSettingsModalLobbiesLinked" /* 19066 */;
-import GuildSettingsModalSecurityDefault from "GuildSettingsModalSecurity" /* 19067 */;
-import GuildSettingsRolesDefault from "GuildSettingsRoles" /* 19068 */;
-import GuildSettingsRoleEditDefault from "GuildSettingsRoleEdit" /* 19088 */;
-import GuildSettingsModalVanityURLDefault from "GuildSettingsModalVanityURL" /* 19109 */;
-import GuildSettingsModalInstantInvitesDefault from "GuildSettingsModalInstantInvites" /* 19113 */;
-import GuildSettingsModalTemplateDefault from "GuildSettingsModalTemplate" /* 19116 */;
-import GuildSettingsModalMembersWrapperDefault from "GuildSettingsModalMembersWrapper" /* 19119 */;
-import GuildSettingsModalBansDefault from "GuildSettingsModalBans" /* 19120 */;
-import GuildSettingsModalCommunityDefault from "GuildSettingsModalCommunity" /* 19125 */;
-import GuildSettingsModalCommunityIntroDefault from "GuildSettingsModalCommunityIntro" /* 19126 */;
-import GuildSettingsModalAnalyticsDefault from "GuildSettingsModalAnalytics" /* 19148 */;
-import GuildSettingsRoleSubscriptionsEmptyDefault from "GuildSettingsRoleSubscriptionsEmpty" /* 19171 */;
-import GuildSettingsRoleSubscriptionsEnableMonetizationDefault from "GuildSettingsRoleSubscriptionsEnableMonetization" /* 19211 */;
-import GuildSettingsRoleSubscriptionsGroupEditDefault from "GuildSettingsRoleSubscriptionsGroupEdit" /* 19212 */;
-import GuildSettingsRoleSubscriptionTiersDefault from "GuildSettingsRoleSubscriptionTiers" /* 19226 */;
-import GuildSettingsRoleSubscriptionTierEditDefault from "GuildSettingsRoleSubscriptionTierEdit" /* 19265 */;
-import GuildSettingsRoleSubscriptionsPaymentsDefault from "GuildSettingsRoleSubscriptionsPayments" /* 19269 */;
-import GuildSettingsRoleSubscriptionEmojisDefault from "GuildSettingsRoleSubscriptionEmojis" /* 19270 */;
-import GuildSettingsRoleSubscriptionTierTemplateSelectionDefault from "GuildSettingsRoleSubscriptionTierTemplateSelection" /* 19273 */;
-import GuildSettingsModalOfficialMessagesDefault from "GuildSettingsModalOfficialMessages" /* 19281 */;
-import GuildSettingsModalGuildSpaceDefault from "GuildSettingsModalGuildSpace" /* 19282 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9005 */;
+import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 12777 */;
+import KickConfirmDefault from "KickConfirm" /* 12791 */;
+import BanConfirmDefault from "BanConfirm" /* 12795 */;
+import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 17570 */;
+import GuildSettingsModalChannelsDefault from "GuildSettingsModalChannels" /* 17571 */;
+import IntegrationsSettingsWebhooksOverviewDefault from "IntegrationsSettingsWebhooksOverview" /* 18291 */;
+import IntegrationsSettingsEditWebhookDefault from "IntegrationsSettingsEditWebhook" /* 18300 */;
+import IntegrationsSettingsEditLinkedLobbyDefault from "IntegrationsSettingsEditLinkedLobby" /* 18302 */;
+import GuildSettingsModalLandingDefault from "GuildSettingsModalLanding" /* 18977 */;
+import GuildSettingsModalOverviewDefault from "GuildSettingsModalOverview" /* 18987 */;
+import GuildSettingsModalModerationDefault from "GuildSettingsModalModeration" /* 18995 */;
+import GuildSettingsAutoModerationDefault from "GuildSettingsAutoModeration" /* 18996 */;
+import GuildSettingsAutomodRuleDefault from "GuildSettingsAutomodRule" /* 19015 */;
+import GuildSettingsModalAuditLogDefault from "GuildSettingsModalAuditLog" /* 19034 */;
+import GuildSettingsModalAuditLogFilterDefault from "GuildSettingsModalAuditLogFilter" /* 19039 */;
+import GuildSettingsModalIntegrationsDefault from "GuildSettingsModalIntegrations" /* 19054 */;
+import GuildSettingsModalEmojiDefault from "GuildSettingsModalEmoji" /* 19055 */;
+import GuildSettingsModalStickersDefault from "GuildSettingsModalStickers" /* 19067 */;
+import GuildSettingsModalServerTagDefault from "GuildSettingsModalServerTag" /* 19079 */;
+import GuildSettingsModalServerTagCustomizeDefault from "GuildSettingsModalServerTagCustomize" /* 19081 */;
+import GuildSettingsModalIntegrationSettingsDefault from "GuildSettingsModalIntegrationSettings" /* 19089 */;
+import GuildSettingsModalIntegrationPlatformDefault from "GuildSettingsModalIntegrationPlatform" /* 19093 */;
+import GuildSettingsModalLobbiesLinkedDefault from "GuildSettingsModalLobbiesLinked" /* 19094 */;
+import GuildSettingsModalSecurityDefault from "GuildSettingsModalSecurity" /* 19095 */;
+import GuildSettingsRolesDefault from "GuildSettingsRoles" /* 19096 */;
+import GuildSettingsRoleEditDefault from "GuildSettingsRoleEdit" /* 19116 */;
+import GuildSettingsModalVanityURLDefault from "GuildSettingsModalVanityURL" /* 19137 */;
+import GuildSettingsModalInstantInvitesDefault from "GuildSettingsModalInstantInvites" /* 19141 */;
+import GuildSettingsModalTemplateDefault from "GuildSettingsModalTemplate" /* 19144 */;
+import GuildSettingsModalMembersWrapperDefault from "GuildSettingsModalMembersWrapper" /* 19147 */;
+import GuildSettingsModalBansDefault from "GuildSettingsModalBans" /* 19148 */;
+import GuildSettingsModalCommunityDefault from "GuildSettingsModalCommunity" /* 19153 */;
+import GuildSettingsModalCommunityIntroDefault from "GuildSettingsModalCommunityIntro" /* 19154 */;
+import GuildSettingsModalAnalyticsDefault from "GuildSettingsModalAnalytics" /* 19176 */;
+import GuildSettingsRoleSubscriptionsEmptyDefault from "GuildSettingsRoleSubscriptionsEmpty" /* 19198 */;
+import GuildSettingsRoleSubscriptionsEnableMonetizationDefault from "GuildSettingsRoleSubscriptionsEnableMonetization" /* 19264 */;
+import GuildSettingsRoleSubscriptionsGroupEditDefault from "GuildSettingsRoleSubscriptionsGroupEdit" /* 19265 */;
+import GuildSettingsRoleSubscriptionTiersDefault from "GuildSettingsRoleSubscriptionTiers" /* 19278 */;
+import GuildSettingsRoleSubscriptionTierEditDefault from "GuildSettingsRoleSubscriptionTierEdit" /* 19314 */;
+import GuildSettingsRoleSubscriptionsPaymentsDefault from "GuildSettingsRoleSubscriptionsPayments" /* 19317 */;
+import GuildSettingsRoleSubscriptionEmojisDefault from "GuildSettingsRoleSubscriptionEmojis" /* 19318 */;
+import GuildSettingsRoleSubscriptionTierTemplateSelectionDefault from "GuildSettingsRoleSubscriptionTierTemplateSelection" /* 19321 */;
+import GuildSettingsModalOfficialMessagesDefault from "GuildSettingsModalOfficialMessages" /* 19329 */;
+import GuildSettingsModalGuildSpaceDefault from "GuildSettingsModalGuildSpace" /* 19330 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4843 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9005 */;
+import GuildStore from "GuildStore" /* 4845 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9006 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -696,7 +696,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     } else {
       tmp8 = cResult[3];
     }
-    const tmp9 = tmp4(5597)(tmp8);
+    const tmp9 = tmp4(5599)(tmp8);
     _require = tmp9;
     const _Symbol2 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
@@ -820,7 +820,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
             }
           }
           LANDING = undefined;
-          const Navigator = tmp(7093).Navigator;
+          const Navigator = tmp(7095).Navigator;
           if (null == first) {
             class A {
               constructor() {

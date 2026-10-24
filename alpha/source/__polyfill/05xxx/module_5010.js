@@ -1,7 +1,9 @@
 // Module ID: 5010
 // Function ID: 5011
-// Dependencies: []
+// Dependencies: [5011]
 
 // Module 5010
+import _mod5011 from "module_5011" /* 5011 */;
 
-export default "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";
+
+export default _mod5011();

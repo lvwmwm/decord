@@ -1,14 +1,14 @@
-// Module ID: 13778
-// Function ID: 13779
+// Module ID: 13798
+// Function ID: 13799
 // Name: showForLaterModal
-// Dependencies: [10077, 13779, 6670, 13780, 2002, 2]
+// Dependencies: [10078, 13799, 6672, 13800, 2002, 2]
 // Exports: showForLaterModal
 
-// Module 13778 (showForLaterModal)
+// Module 13798 (showForLaterModal)
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6670 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 10077 */;
-import MessageRemindersSeenStorage from "MessageRemindersSeenStorage" /* 13779 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 10078 */;
+import MessageRemindersSeenStorage from "MessageRemindersSeenStorage" /* 13799 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/saved_messages/native/showForLaterModal.tsx");
@@ -21,5 +21,5 @@ export const showForLaterModal = function showForLaterModal(BOOKMARK) {
   }
   const obj = { type: BOOKMARK };
   const obj2 = ModalActionCreatorsDefault;
-  obj2.pushLazy(asyncRequire(13780, tmp2.paths), obj, "for-later-modal", { presentation: "modal" });
+  obj2.pushLazy(asyncRequire(13800, tmp2.paths), obj, "for-later-modal", { presentation: "modal" });
 };

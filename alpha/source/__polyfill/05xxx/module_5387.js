@@ -1,53 +1,48 @@
 // Module ID: 5387
 // Function ID: 5388
-// Dependencies: [5363, 5378, 5354]
-// Exports: useHoverGesture
+// Dependencies: [5365, 5380, 5356]
+// Exports: usePinchGesture
 
 // Module 5387
-import ComposedGestureName from "ComposedGestureName" /* 5354 */;
-import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 5363 */;
-import _mod5378 from "module_5378" /* 5378 */;
+import ComposedGestureName from "ComposedGestureName" /* 5356 */;
+import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 5365 */;
+import _mod5380 from "module_5380" /* 5380 */;
 
-function transformHoverProps(arg0) {
+function transformPinchProps(arg0) {
   const obj = maybeExtractNativeEvent;
   arg0.changeEventCalculator = obj.getChangeEventCalculator(diffCalculator);
   arg0.fillInDefaultValues = fillInDefaultValues;
   return arg0;
 }
-function diffCalculator(arg0, arg1) {
-  let num2;
-  let num = 0;
-  if (arg1) {
-    num = arg0.x - arg1.x;
+function diffCalculator(scale, scale2) {
+  let scaleChange;
+  scale = scale.scale;
+  if (scale2) {
+    scaleChange = scale / scale2.scale;
+  } else {
+    scaleChange = scale;
   }
-  const obj = { changeX: num, changeY: num2 };
-  num2 = 0;
-  if (arg1) {
-    num2 = arg0.y - arg1.y;
-  }
-  return obj;
+  return { scaleChange };
 }
 diffCalculator.__closure = {};
-diffCalculator.__workletHash = 622993324586;
-diffCalculator.__initData = { code: "function diffCalculator_Pnpm_useHoverGestureTs1(current,previous){return{changeX:previous?current.x-previous.x:0,changeY:previous?current.y-previous.y:0};}" };
+diffCalculator.__workletHash = 7517335332069;
+diffCalculator.__initData = { code: "function diffCalculator_Pnpm_usePinchGestureTs1(current,previous){return{scaleChange:previous?current.scale/previous.scale:current.scale};}" };
 function fillInDefaultValues(arg0) {
-  arg0.changeX = 0;
-  arg0.changeY = 0;
+  arg0.scaleChange = 1;
 }
 fillInDefaultValues.__closure = {};
-fillInDefaultValues.__workletHash = 11545520927040;
-fillInDefaultValues.__initData = { code: "function fillInDefaultValues_Pnpm_useHoverGestureTs2(event){event.changeX=0;event.changeY=0;}" };
-const items = [["effect", "hoverEffect"]];
-const map = new Map(items);
+fillInDefaultValues.__workletHash = 10393435493424;
+fillInDefaultValues.__initData = { code: "function fillInDefaultValues_Pnpm_usePinchGestureTs2(event){event.scaleChange=1;}" };
+const map = new Map();
 let closure_6 = {};
 
-export const useHoverGesture = function useHoverGesture(cResult) {
+export const usePinchGesture = function usePinchGesture(cResult) {
   let tmp = cResult;
   if (cResult === undefined) {
     tmp = closure_6;
   }
   const obj = maybeExtractNativeEvent;
-  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformHoverProps);
-  const obj2 = _mod5378;
-  return obj2.useGesture(ComposedGestureName.SingleGestureName.Hover, clonedAndRemappedConfig);
+  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformPinchProps);
+  const obj2 = _mod5380;
+  return obj2.useGesture(ComposedGestureName.SingleGestureName.Pinch, clonedAndRemappedConfig);
 };

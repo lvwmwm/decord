@@ -1,24 +1,24 @@
-// Module ID: 9231
-// Function ID: 9232
+// Module ID: 9232
+// Function ID: 9233
 // Name: GuildProfileHeader
-// Dependencies: [19, 17, 2068, 502, 4881, 9232, 21, 4969, 587, 558, 576, 504, 7808, 11, 4835, 9233, 9234, 5661, 5208, 7447, 6881, 5232, 9235, 6906, 1128, 2]
+// Dependencies: [19, 17, 2068, 502, 4883, 9233, 21, 4971, 587, 558, 576, 504, 7810, 11, 4837, 9234, 9235, 5663, 5210, 7449, 6883, 5234, 9236, 6908, 1128, 2]
 
-// Module 9231 (GuildProfileHeader)
+// Module 9232 (GuildProfileHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4835 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5661 */;
-import transitionToGuild from "transitionToGuild" /* 7447 */;
-import GuildBadgeConstants from "GuildBadgeConstants" /* 9232 */;
-import GuildTraits from "GuildTraits" /* 9233 */;
-import BadgeCategory from "BadgeCategory" /* 9234 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4837 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
+import transitionToGuild from "transitionToGuild" /* 7449 */;
+import GuildBadgeConstants from "GuildBadgeConstants" /* 9233 */;
+import GuildTraits from "GuildTraits" /* 9234 */;
+import BadgeCategory from "BadgeCategory" /* 9235 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4881 */;
+import GuildMemberStore from "GuildMemberStore" /* 4883 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

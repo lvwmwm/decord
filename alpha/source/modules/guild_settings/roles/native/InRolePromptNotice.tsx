@@ -1,21 +1,21 @@
-// Module ID: 19097
-// Function ID: 19098
+// Module ID: 19125
+// Function ID: 19126
 // Name: InRolePromptNotice
-// Dependencies: [19, 17, 1087, 21, 4969, 587, 558, 576, 1405, 19098, 1202, 11422, 1128, 5232, 2]
+// Dependencies: [19, 17, 1087, 21, 4971, 587, 558, 576, 1405, 19126, 1202, 11442, 1128, 5234, 2]
 
-// Module 19097 (InRolePromptNotice)
+// Module 19125 (InRolePromptNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11422 */;
-import GuildSettingsUtils from "GuildSettingsUtils" /* 19098 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11442 */;
+import GuildSettingsUtils from "GuildSettingsUtils" /* 19126 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -164,7 +164,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InRoleProm
       const obj3 = { style: tmp.icon, source: AssetRegistryDefault, color: nativeDefault.unsafe_rawColors.YELLOW_300 };
       const items = [hasOwnProperty(Icon, obj3), ];
       const obj4 = { style: tmp.promptText, variant: "text-sm/medium", children: intl2.string(intl3.t.YRbgXz) };
-      const Text2 = tmp2(5232).Text;
+      const Text2 = tmp2(5234).Text;
       intl2 = tmp2(1128).intl;
       items[1] = hasOwnProperty(Text2, obj4);
       obj2.children = items;
@@ -173,7 +173,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InRoleProm
       const obj5 = { style: tmp.icon, source: AssetRegistryDefault };
       const items1 = [hasOwnProperty(Icon, obj5), ];
       const obj6 = { style: tmp.promptText, variant: "text-sm/medium", children: intl.string(intl3.t.mqeO2v) };
-      const Text = tmp2(5232).Text;
+      const Text = tmp2(5234).Text;
       intl = tmp2(1128).intl;
       items1[1] = hasOwnProperty(Text, obj6);
       obj2.children = items1;

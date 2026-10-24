@@ -1,43 +1,40 @@
-// Module ID: 17302
-// Function ID: 17303
+// Module ID: 17334
+// Function ID: 17335
 // Name: VEVOOPropBlurAmount
-// Dependencies: [32, 19, 5585, 21, 4969, 558, 576, 7294, 17303, 8949, 2]
+// Dependencies: [32, 19, 5587, 21, 4971, 558, 576, 7296, 17335, 8951, 2]
 
-// Module 17302 (VEVOOPropBlurAmount)
+// Module 17334 (VEVOOPropBlurAmount)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import FormSwitch from "FormSwitch" /* 7294 */;
-import Form from "Form" /* 8949 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import FormSwitch from "FormSwitch" /* 7296 */;
+import Form from "Form" /* 8951 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VEVOOStore from "VEVOOStore" /* 5585 */;
-import createStyles from "createStyles" /* 4969 */;
+import VEVOOStore from "VEVOOStore" /* 5587 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap;
+let dependencyMap, tmp2Result;
 
 let hasOwnProperty;
 let metroRequire;
-let _slicedToArray = _slicedToArray_mod;
 ({ getVisualEffectViewOverrides: hasOwnProperty, setVisualEffectViewOverides: metroRequire } = VEVOOStore);
 const jsx = Fragment.jsx;
 let closure_8 = createStyles.createStyles({ enabledSwitchStyle: { alignSelf: "flex-start" } });
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VEVOOPropBlurAmount() {
   let closure_2;
-  let closure_3;
   let first;
   let require;
-  let tmp13;
   let tmp14;
   let tmp7;
   let tmp2 = dependencyMap;
   let obj = react2;
   const cResult = obj.c(18);
   const tmp4 = closure_8();
-  [tmp7, require] = react.useState(false);
-  _slicedToArray(react.useState(false), 2);
-  const tmp5 = _slicedToArray;
+  [tmp7, require] = O(react.useState(false), 2);
+  O(react.useState(false), 2);
+  const tmp5 = O;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const tmp10 = closure_5();
     cResult[0] = tmp10;
@@ -50,96 +47,167 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   dependencyMap = tmp5Result[1];
   const ref = react.useRef(first1);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function h(blurAmountOverride) {
-      if (null != blurAmountOverride) {
-        closure_2(blurAmountOverride);
+    class O {
+      constructor(arg0) {
+        if (null != arg0) {
+          tmp = closure_2;
+          tmp2 = closure_2(arg0);
+        }
+        obj = {};
+        merged = Object.assign(closure_5());
+        obj.blurAmountOverride = arg0;
+        tmp4 = closure_6(obj);
+        return;
       }
-      const obj = { blurAmountOverride };
-      const merged = Object.assign(hasOwnProperty());
-      metroRequire(obj);
-    };
-    cResult[1] = fn;
-    tmp13 = fn;
-  } else {
-    tmp13 = cResult[1];
-  }
-  _slicedToArray = tmp13;
-  if (cResult[2] !== first1) {
-    let str;
-    if (first1 != null) {
-      str = first1.toFixed(3);
     }
-    if (str == null) {
-      str = "";
+    cResult[1] = O;
+  } else {
+    class O {
+      constructor(arg0) {
+        if (null != arg0) {
+          tmp = closure_2;
+          tmp2 = closure_2(arg0);
+        }
+        obj = {};
+        merged = Object.assign(closure_5());
+        obj.blurAmountOverride = arg0;
+        tmp4 = closure_6(obj);
+        return;
+      }
+    }
+  }
+  O = tmp13;
+  if (cResult[2] !== first1) {
+    class O {
+      constructor(arg0) {
+        if (null != arg0) {
+          tmp = closure_2;
+          tmp2 = closure_2(arg0);
+        }
+        obj = {};
+        merged = Object.assign(closure_5());
+        obj.blurAmountOverride = arg0;
+        tmp4 = closure_6(obj);
+        return;
+      }
+    }
+    let toFixedResult;
+    if (first1 != null) {
+      class O {
+        constructor(arg0) {
+          if (null != arg0) {
+            tmp = closure_2;
+            tmp2 = closure_2(arg0);
+          }
+          obj = {};
+          merged = Object.assign(closure_5());
+          obj.blurAmountOverride = arg0;
+          tmp4 = closure_6(obj);
+          return;
+        }
+      }
+      toFixedResult = first1.toFixed(3);
+    }
+    if (toFixedResult == null) {
+      class O {
+        constructor(arg0) {
+          if (null != arg0) {
+            tmp = closure_2;
+            tmp2 = closure_2(arg0);
+          }
+          obj = {};
+          merged = Object.assign(closure_5());
+          obj.blurAmountOverride = arg0;
+          tmp4 = closure_6(obj);
+          return;
+        }
+      }
     }
     cResult[2] = first1;
-    cResult[3] = str;
-    tmp14 = str;
+    cResult[3] = toFixedResult;
+    tmp14 = toFixedResult;
   } else {
-    tmp14 = cResult[3];
+    class O {
+      constructor(arg0) {
+        if (null != arg0) {
+          tmp = closure_2;
+          tmp2 = closure_2(arg0);
+        }
+        obj = {};
+        merged = Object.assign(closure_5());
+        obj.blurAmountOverride = arg0;
+        tmp4 = closure_6(obj);
+        return;
+      }
+    }
   }
   const combined = "Blur Amount " + tmp14;
   if (cResult[4] !== first1) {
-    class E {
+    class C {
       constructor(arg0) {
-        _require(arg0);
-        let tmp3;
-        const tmp2 = closure_3;
+        tmp = closure_0(arg0);
+        tmp3 = undefined;
+        tmp2 = closure_3;
         if (arg0) {
-          tmp3 = first1;
+          tmp3 = closure_1;
         }
-        tmp2(tmp3);
+        tmp2Result = tmp2(tmp3);
+        return;
       }
     }
     cResult[4] = first1;
-    cResult[5] = E;
+    cResult[5] = C;
   } else {
-    class E {
+    class C {
       constructor(arg0) {
-        _require(arg0);
-        let tmp3;
-        const tmp2 = closure_3;
+        tmp = closure_0(arg0);
+        tmp3 = undefined;
+        tmp2 = closure_3;
         if (arg0) {
-          tmp3 = first1;
+          tmp3 = closure_1;
         }
-        tmp2(tmp3);
+        tmp2Result = tmp2(tmp3);
+        return;
       }
     }
   }
   if (cResult[6] === tmp7) {
-    class E {
+    class C {
       constructor(arg0) {
-        _require(arg0);
-        let tmp3;
-        const tmp2 = closure_3;
+        tmp = closure_0(arg0);
+        tmp3 = undefined;
+        tmp2 = closure_3;
         if (arg0) {
-          tmp3 = first1;
+          tmp3 = closure_1;
         }
-        tmp2(tmp3);
+        tmp2Result = tmp2(tmp3);
+        return;
       }
     }
     if (cResult[9] === !tmp7) {
-      class E {
+      class C {
         constructor(arg0) {
-          _require(arg0);
-          let tmp3;
-          const tmp2 = closure_3;
+          tmp = closure_0(arg0);
+          tmp3 = undefined;
+          tmp2 = closure_3;
           if (arg0) {
-            tmp3 = first1;
+            tmp3 = closure_1;
           }
-          tmp2(tmp3);
+          tmp2Result = tmp2(tmp3);
+          return;
         }
       }
       if (cResult[12] === tmp4.enabledSwitchStyle) {
-        class E {
+        class C {
           constructor(arg0) {
-            _require(arg0);
-            let tmp3;
-            const tmp2 = closure_3;
+            tmp = closure_0(arg0);
+            tmp3 = undefined;
+            tmp2 = closure_3;
             if (arg0) {
-              tmp3 = first1;
+              tmp3 = closure_1;
             }
-            tmp2(tmp3);
+            tmp2Result = tmp2(tmp3);
+            return;
           }
         }
       }
@@ -153,8 +221,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     cResult[9] = !tmp7;
     cResult[10] = !tmp7;
-    cResult[11] = jsx(first1(17303), { disabled: !tmp7, disabledOpacity: !tmp7, initialValue: ref, onValueChange: tmp13 });
-    const tmp25 = jsx(first1(17303), { disabled: !tmp7, disabledOpacity: !tmp7, initialValue: ref, onValueChange: tmp13 });
+    cResult[11] = jsx(first1(17335), { disabled: !tmp7, disabledOpacity: !tmp7, initialValue: ref, onValueChange: tmp13, accessibilityLabel: "Blur Amount" });
+    const tmp25 = jsx(first1(17335), { disabled: !tmp7, disabledOpacity: !tmp7, initialValue: ref, onValueChange: tmp13, accessibilityLabel: "Blur Amount" });
   }
   cResult[6] = tmp7;
   cResult[7] = tmp17;

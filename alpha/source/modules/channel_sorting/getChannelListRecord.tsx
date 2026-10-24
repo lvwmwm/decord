@@ -1,14 +1,14 @@
-// Module ID: 13834
-// Function ID: 13835
+// Module ID: 13853
+// Function ID: 13854
 // Name: getChannelListRecord
-// Dependencies: [4821, 4899, 1087, 4846, 2]
+// Dependencies: [4823, 4901, 1087, 4848, 2]
 // Exports: default
 
-// Module 13834 (getChannelListRecord)
+// Module 13853 (getChannelListRecord)
 import Constants from "Constants" /* 1087 */;
-import FavoritesUtils from "FavoritesUtils" /* 4846 */;
-import ChannelStore from "ChannelStore" /* 4821 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4899 */;
+import FavoritesUtils from "FavoritesUtils" /* 4848 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4901 */;
 import size from "module_2" /* 2 */;
 
 let c3;

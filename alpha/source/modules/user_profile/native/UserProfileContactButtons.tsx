@@ -1,25 +1,25 @@
-// Module ID: 14411
-// Function ID: 14412
+// Module ID: 14435
+// Function ID: 14436
 // Name: UserProfileContactButtons
-// Dependencies: [109, 19, 17, 4911, 1087, 21, 4969, 587, 558, 576, 5242, 7251, 8677, 14320, 504, 5023, 14412, 5670, 1128, 13503, 7412, 11167, 5208, 6670, 7409, 14414, 8540, 7957, 9719, 13988, 2]
+// Dependencies: [109, 19, 17, 4913, 1087, 21, 4971, 587, 558, 576, 5244, 7253, 8679, 14344, 504, 5025, 14436, 5672, 1128, 13540, 7414, 11168, 5210, 6672, 7411, 14438, 8542, 7959, 9720, 14007, 2]
 
-// Module 14411 (UserProfileContactButtons)
+// Module 14435 (UserProfileContactButtons)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5208 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6670 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7409 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7412 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 11167 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13503 */;
-import ConfirmStartCall from "ConfirmStartCall" /* 13988 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7414 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 11168 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13540 */;
+import ConfirmStartCall from "ConfirmStartCall" /* 14007 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4911 */;
+import RelationshipStore from "RelationshipStore" /* 4913 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let metroImportAll;
 let obj2;
 let obj3;
 let tmp;
-const components_Button_Button = tmp(5242);
+const components_Button_Button = tmp(5244);
 let closure_3 = ["icon", "label", "hasCustomProfileTheme", "isPending"];
 const View = react_native.View;
 const RelationshipTypes = Constants.RelationshipTypes;
@@ -155,8 +155,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
   const cResult = obj.c(23);
   user = user.user;
   ({ hasCustomProfileTheme, location: _location, ButtonComponent } = user);
-  const newestAnalyticsLocation = trackUserProfileAction(7251)().newestAnalyticsLocation;
-  let obj2 = user(8677);
+  const newestAnalyticsLocation = trackUserProfileAction(7253)().newestAnalyticsLocation;
+  let obj2 = user(8679);
   const tmp4 = trackUserProfileAction;
   trackUserProfileAction = obj2.useUserProfileAnalyticsContext().trackUserProfileAction;
   if (_location == null) {
@@ -171,7 +171,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
     tmp5 = cResult[1];
   }
   dependencyMap = tmp5;
-  const tmpResult = tmp(14320);
+  const tmpResult = tmp(14344);
   const gameFriendsForUser = tmpResult.useGameFriendsForUser(user.id);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [RelationshipStore];
@@ -192,7 +192,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
   }
   const tmpResult2 = tmp(504);
   const stateFromStores = tmpResult2.useStateFromStores(tmp6, tmp8);
-  const tmp4Result = tmp4(5023);
+  const tmp4Result = tmp4(5025);
   const name = tmp4Result.useName(user);
   if (stateFromStores !== RelationshipTypes.FRIEND) {
     if (stateFromStores !== RelationshipTypes.BLOCKED) {
@@ -205,9 +205,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
         let tmp12;
         let tmp14;
         if (stateFromStores === RelationshipTypes.PENDING_OUTGOING) {
-          UserPlusIcon = tmp(14412).UserClockIcon;
+          UserPlusIcon = tmp(14436).UserClockIcon;
         } else {
-          UserPlusIcon = tmp(5670).UserPlusIcon;
+          UserPlusIcon = tmp(5672).UserPlusIcon;
         }
         if (cResult[5] !== (stateFromStores === RelationshipTypes.PENDING_OUTGOING)) {
           let stringResult;
@@ -323,19 +323,19 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
   let userDisplayName;
   ({ hasCustomProfileTheme, ButtonComponent } = user);
   const tmp = trackUserProfileAction;
-  const newestAnalyticsLocation = trackUserProfileAction(7251)().newestAnalyticsLocation;
-  let obj = user(8677);
+  const newestAnalyticsLocation = trackUserProfileAction(7253)().newestAnalyticsLocation;
+  let obj = user(8679);
   trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   if (_location == null) {
     _location = newestAnalyticsLocation;
   }
   dependencyMap = { location: _location };
-  const tmp3Result = user(14320);
+  const tmp3Result = user(14344);
   const gameFriendsForUser = tmp3Result.useGameFriendsForUser(user.id);
   const items = [RelationshipStore];
   const tmp3Result2 = user(504);
   stateFromStores = tmp3Result2.useStateFromStores(items, () => RelationshipStore.getRelationshipType(user.id));
-  const tmpResult = tmp(5023);
+  const tmpResult = tmp(5025);
   userDisplayName = tmpResult.useName(user);
   if (stateFromStores !== RelationshipTypes.FRIEND) {
     if (stateFromStores !== RelationshipTypes.BLOCKED) {
@@ -348,9 +348,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
         let stringResult;
         let string2Result;
         if (stateFromStores === RelationshipTypes.PENDING_OUTGOING) {
-          UserPlusIcon = tmp3(14412).UserClockIcon;
+          UserPlusIcon = tmp3(14436).UserClockIcon;
         } else {
-          UserPlusIcon = tmp3(5670).UserPlusIcon;
+          UserPlusIcon = tmp3(5672).UserPlusIcon;
         }
         const intl = tmp3(1128).intl;
         const string = intl.string;

@@ -1,16 +1,16 @@
-// Module ID: 13434
-// Function ID: 13435
+// Module ID: 13471
+// Function ID: 13472
 // Name: GuildPowerupsSectionHeader
-// Dependencies: [17, 21, 4969, 587, 558, 576, 7073, 5232, 2]
+// Dependencies: [17, 21, 4971, 587, 558, 576, 7075, 5234, 2]
 
-// Module 13434 (GuildPowerupsSectionHeader)
+// Module 13471 (GuildPowerupsSectionHeader)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7073 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7075 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4969 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

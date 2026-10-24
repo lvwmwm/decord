@@ -1,15 +1,15 @@
-// Module ID: 8402
-// Function ID: 8403
+// Module ID: 8404
+// Function ID: 8405
 // Name: getTagProperties
-// Dependencies: [17, 4974, 8403, 1128, 8405, 8407, 2]
+// Dependencies: [17, 4976, 8405, 1128, 8407, 8409, 2]
 // Exports: default
 
-// Module 8402 (getTagProperties)
+// Module 8404 (getTagProperties)
 import react_native from "react-native" /* 17 */;
 import intl7 from "intl" /* 1128 */;
-import MessageConstants from "MessageConstants" /* 4974 */;
-import PublicGuildsUtils from "PublicGuildsUtils" /* 8403 */;
-import isCrosspostDefault from "isCrosspost" /* 8405 */;
+import MessageConstants from "MessageConstants" /* 4976 */;
+import PublicGuildsUtils from "PublicGuildsUtils" /* 8405 */;
+import isCrosspostDefault from "isCrosspost" /* 8407 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
@@ -49,7 +49,7 @@ export default function getTagProperties(arg0) {
           let uri;
           const stringResult1 = intl.string(intl7.t["9RNkeF"]);
           if (isVerifiedBotResult) {
-            uri = Image.resolveAssetSource(tmp4(8407)).uri;
+            uri = Image.resolveAssetSource(tmp4(8409)).uri;
           }
           flag = isVerifiedBotResult;
           stringResult = stringResult1;
@@ -97,7 +97,7 @@ export default function getTagProperties(arg0) {
       const intl6 = tmp2(1128).intl;
       stringResult3 = intl6.string(tmp2(1128).t.fyE8sH);
     }
-    const obj2 = { tagText: stringResult, tagAccessibilityLabel: tmp12, tagVerified: flag, tagTextColor: "Boolean", tagBackgroundColor: "__packager_asset", tagType: SYSTEM_DM_TAG_SYSTEM_TYPE, tagIconUrl: tmp5, opTagText: stringResult3, opTagTextColor: -499040364, opTagBackgroundColor: 16777537 };
+    const obj2 = { tagText: stringResult, tagAccessibilityLabel: tmp12, tagVerified: flag, tagTextColor: "Boolean", tagBackgroundColor: "application", tagType: SYSTEM_DM_TAG_SYSTEM_TYPE, tagIconUrl: tmp5, opTagText: stringResult3, opTagTextColor: "RiveColor", opTagBackgroundColor: "keys" };
     ({ opTagTextColor: obj3.opTagTextColor, opTagBackgroundColor: obj3.opTagBackgroundColor } = colors);
     return obj2;
   }

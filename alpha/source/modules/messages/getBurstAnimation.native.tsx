@@ -1,10 +1,10 @@
-// Module ID: 4928
-// Function ID: 4929
+// Module ID: 4930
+// Function ID: 4931
 // Name: getBurstAnimation
-// Dependencies: [5, 4929, 4930, 4931, 4932, 4933, 4934, 4935, 4936, 4937, 4938, 4939, 4940, 4941, 4942, 4943, 4944, 4945, 4946, 4947, 4948, 4949, 4950, 4951, 4952, 4953, 4954, 4955, 4956, 4957, 4958, 4959, 4960, 4961, 4962, 4963, 4964, 4965, 2]
+// Dependencies: [5, 4931, 4932, 4933, 4934, 4935, 4936, 4937, 4938, 4939, 4940, 4941, 4942, 4943, 4944, 4945, 4946, 4947, 4948, 4949, 4950, 4951, 4952, 4953, 4954, 4955, 4956, 4957, 4958, 4959, 4960, 4961, 4962, 4963, 4964, 4965, 4966, 4967, 2]
 // Exports: getBurstAnimation
 
-// Module 4928 (getBurstAnimation)
+// Module 4930 (getBurstAnimation)
 import _asyncToGeneratorDefault from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -13,21 +13,11 @@ let closure_5;
 
 const obj = {
   load() {
-    return require("module_4929");
+    return require("module_4931");
   }
 };
 const items = [
   obj,
-  {
-    load() {
-      return require("module_4930");
-    }
-  },
-  {
-    load() {
-      return require("module_4931");
-    }
-  },
   {
     load() {
       return require("module_4932");
@@ -102,25 +92,25 @@ const items = [
     load() {
       return require("module_4946");
     }
-  }
-];
-const obj2 = {
-  load() {
-    return require("module_4947");
-  }
-};
-const items1 = [
-  obj2,
+  },
+  {
+    load() {
+      return require("module_4947");
+    }
+  },
   {
     load() {
       return require("module_4948");
     }
-  },
-  {
-    load() {
-      return require("module_4949");
-    }
-  },
+  }
+];
+const obj2 = {
+  load() {
+    return require("module_4949");
+  }
+};
+const items1 = [
+  obj2,
   {
     load() {
       return require("module_4950");
@@ -194,6 +184,16 @@ const items1 = [
   {
     load() {
       return require("module_4964");
+    }
+  },
+  {
+    load() {
+      return require("module_4965");
+    }
+  },
+  {
+    load() {
+      return require("module_4966");
     }
   }
 ];

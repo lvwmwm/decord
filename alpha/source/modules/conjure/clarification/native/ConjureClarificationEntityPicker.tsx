@@ -1,25 +1,25 @@
-// Module ID: 12444
-// Function ID: 12445
+// Module ID: 12477
+// Function ID: 12478
 // Name: ConjureClarificationEntityPicker
-// Dependencies: [19, 4899, 4843, 4911, 1392, 21, 558, 576, 12291, 5208, 12445, 12438, 6985, 6901, 11805, 504, 7343, 11807, 1128, 3830, 5602, 11809, 2]
+// Dependencies: [19, 4901, 4845, 4913, 1392, 21, 558, 576, 11747, 5210, 12478, 12471, 6883, 6903, 6987, 12316, 12479, 11831, 504, 7345, 11833, 1128, 3830, 5604, 11835, 2]
 
-// Module 12444 (ConjureClarificationEntityPicker)
+// Module 12477 (ConjureClarificationEntityPicker)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5208 */;
-import TableRow2 from "TableRow" /* 6901 */;
-import TableRowGroup2 from "TableRowGroup" /* 6985 */;
-import ConjureUtils from "ConjureUtils" /* 7343 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11807 */;
-import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 11809 */;
-import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 12291 */;
-import ConjureClarification from "ConjureClarification" /* 12438 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5210 */;
+import TableRow2 from "TableRow" /* 6903 */;
+import TableRowGroup2 from "TableRowGroup" /* 6987 */;
+import ConjureUtils from "ConjureUtils" /* 7345 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11833 */;
+import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 11835 */;
+import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 12316 */;
+import ConjureClarification from "ConjureClarification" /* 12471 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4899 */;
-import GuildStore from "GuildStore" /* 4843 */;
-import RelationshipStore from "RelationshipStore" /* 4911 */;
+import GuildChannelStore from "GuildChannelStore" /* 4901 */;
+import GuildStore from "GuildStore" /* 4845 */;
+import RelationshipStore from "RelationshipStore" /* 4913 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -29,40 +29,267 @@ let importDefault;
 
 const jsx = Fragment.jsx;
 const ConjureClarificationPickerSheet = "ConjureClarificationPickerSheet";
+const ConjureClarificationEntityPicker_str = "ConjureClarificationEntityPicker";
 let ReactCompilerGating = ReactCompilerGating_mod;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClarificationEntityPicker(question) {
-  let tmp2;
   const obj = react2;
-  const cResult = obj.c(2);
-  if (cResult[0] !== question) {
-    let tmp8;
-    if ("project" === question.question.input) {
+  const cResult = obj.c(6);
+  const input = question.question.input;
+  if ("project" === input) {
+    let tmp16;
+    if (cResult[0] !== question) {
       const merged = Object.assign(question);
-      tmp8 = <closure_9 />;
+      const tmp22 = <closure_11 />;
+      cResult[0] = question;
+      cResult[1] = tmp22;
+      tmp16 = tmp22;
     } else {
-      const merged1 = Object.assign(question);
-      tmp8 = <closure_10 />;
+      tmp16 = cResult[1];
     }
-    cResult[0] = question;
-    cResult[1] = tmp8;
-    tmp2 = tmp8;
+    return tmp16;
+  } else if ("server" === input) {
+    let tmp9;
+    if (cResult[2] !== question) {
+      const merged1 = Object.assign(question);
+      const tmp15 = <closure_10 />;
+      cResult[2] = question;
+      cResult[3] = tmp15;
+      tmp9 = tmp15;
+    } else {
+      tmp9 = cResult[3];
+    }
+    return tmp9;
   } else {
-    tmp2 = cResult[1];
+    let tmp2;
+    if (cResult[4] !== question) {
+      const merged2 = Object.assign(question);
+      const tmp8 = <closure_12 />;
+      cResult[4] = question;
+      cResult[5] = tmp8;
+      tmp2 = tmp8;
+    } else {
+      tmp2 = cResult[5];
+    }
+    return tmp2;
   }
-  return tmp2;
 }) : (function ConjureClarificationEntityPicker(question) {
-  let tmp6;
-  if ("project" === question.question.input) {
+  const input = question.question.input;
+  if ("project" === input) {
     const merged = Object.assign(question);
-    tmp6 = <closure_9 />;
-  } else {
+    return <closure_11 />;
+  } else if ("server" === input) {
     const merged1 = Object.assign(question);
-    tmp6 = <closure_10 />;
+    return <closure_10 />;
+  } else {
+    const merged2 = Object.assign(question);
+    return <closure_12 />;
   }
-  return tmp6;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProjectPicker(question) {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ServerPicker(question) {
+  let disabled;
+  let onChange;
+  const tmp = question;
+  let obj = question(onChange[7]);
+  const cResult = obj.c(22);
+  question = question.question;
+  const value = question.value;
+  importDefault = value;
+  ({ disabled, onChange } = question);
+  const fallback = question.fallback;
+  const obj2 = question(onChange[8]);
+  const conjureEligibleGuilds = obj2.useConjureEligibleGuilds(ConjureClarificationEntityPicker_str);
+  if (0 === conjureEligibleGuilds.length) {
+    return fallback;
+  } else {
+    let tmp13;
+    if (cResult[0] === conjureEligibleGuilds) {
+      let tmp8;
+      let first = value[0];
+      let id;
+      const tmp4 = cResult[1];
+      if (first != null) {
+        id = first.id;
+      }
+      if (tmp4 === id) {
+        tmp8 = cResult[2];
+      }
+      if (cResult[5] === conjureEligibleGuilds) {
+        if (cResult[6] === onChange) {
+          if (cResult[7] === question.question) {
+            let tmp19;
+            let tmp25;
+            let tmp30;
+            if (cResult[8] === value) {
+              tmp19 = cResult[9];
+            }
+            const first1 = value[0];
+            let name;
+            const tmp22 = cResult[10];
+            if (first1 != null) {
+              name = first1.name;
+            }
+            if (tmp22 !== name) {
+              const first2 = value[0];
+              let name1;
+              if (first2 != null) {
+                name1 = first2.name;
+              }
+              if (name1 == null) {
+                const tmpResult = tmp(onChange[11]);
+                name1 = tmpResult.clarificationPickerPlaceholder("server", false);
+              }
+              const first3 = value[0];
+              let name2;
+              if (first3 != null) {
+                name2 = first3.name;
+              }
+              cResult[10] = name2;
+              cResult[11] = name1;
+              tmp25 = name1;
+            } else {
+              tmp25 = cResult[11];
+            }
+            if (cResult[12] !== tmp8) {
+              let tmp31;
+              if (null != tmp8) {
+                require("GuildIcon");
+                tmp31 = <tmp34 guild={tmp8} size={tmp(onChange[12]).GuildIconSizes.SMALL_32} />;
+              }
+              cResult[12] = tmp8;
+              cResult[13] = tmp31;
+              tmp30 = tmp31;
+            } else {
+              tmp30 = cResult[13];
+            }
+            if (cResult[14] === disabled) {
+              if (cResult[15] === tmp19) {
+                if (cResult[16] === tmp25) {
+                  let tmp35;
+                  if (cResult[17] === tmp30) {
+                    tmp35 = cResult[18];
+                  }
+                  if (cResult[19] === null != tmp8) {
+                    let tmp38;
+                    if (cResult[20] === tmp35) {
+                      tmp38 = cResult[21];
+                    }
+                    return tmp38;
+                  }
+                  const tmp40 = jsx(tmp(onChange[14]).TableRowGroup, { hasIcons: null != tmp8, children: tmp35 });
+                  cResult[19] = null != tmp8;
+                  cResult[20] = tmp35;
+                  cResult[21] = tmp40;
+                  tmp38 = tmp40;
+                }
+              }
+            }
+            const tmp37 = jsx(tmp(onChange[13]).TableRow, { label: tmp25, icon: tmp30, arrow: true, disabled, onPress: tmp19 });
+            cResult[14] = disabled;
+            cResult[15] = tmp19;
+            cResult[16] = tmp25;
+            cResult[17] = tmp30;
+            cResult[18] = tmp37;
+            tmp35 = tmp37;
+          }
+        }
+      }
+      function openSheet() {
+        let obj = { content: null, key: ConjureClarificationPickerSheet, stackingBehavior: "stack" };
+        const showActionSheet = ActionSheetActionCreators.showActionSheet;
+        ActionSheetActionCreators;
+        showActionSheet(obj);
+      }
+      cResult[5] = conjureEligibleGuilds;
+      cResult[6] = onChange;
+      cResult[7] = question.question;
+      cResult[8] = value;
+      cResult[9] = openSheet;
+      tmp19 = openSheet;
+    }
+    const first4 = value[0];
+    let id1;
+    const tmp9 = cResult[3];
+    if (first4 != null) {
+      id1 = first4.id;
+    }
+    if (tmp9 !== id1) {
+      const first5 = value[0];
+      let id2;
+      if (first5 != null) {
+        id2 = first5.id;
+      }
+      const fn = function l(id) {
+        const first = importDefault[0];
+        let id1;
+        id = id.id;
+        if (first != null) {
+          id1 = first.id;
+        }
+        return id === id1;
+      };
+      cResult[3] = id2;
+      cResult[4] = fn;
+      tmp13 = fn;
+    } else {
+      tmp13 = cResult[4];
+    }
+    const found = conjureEligibleGuilds.find(tmp13);
+    cResult[0] = conjureEligibleGuilds;
+    const first6 = value[0];
+    let id3;
+    if (first6 != null) {
+      id3 = first6.id;
+    }
+    cResult[1] = id3;
+    cResult[2] = found;
+    tmp8 = found;
+  }
+}) : (function ServerPicker(onChange) {
+  let disabled;
+  let fallback;
+  let value;
+  ({ question: require, value } = onChange);
+  importDefault = value;
+  onChange = onChange.onChange;
+  const tmp = require;
+  ({ disabled, fallback } = onChange);
+  let obj = require("useConjureProjects");
+  const conjureEligibleGuilds = obj.useConjureEligibleGuilds(ConjureClarificationEntityPicker_str);
+  if (0 === conjureEligibleGuilds.length) {
+    return fallback;
+  } else {
+    const found = conjureEligibleGuilds.find((id) => {
+      const first = importDefault[0];
+      let id1;
+      id = id.id;
+      if (first != null) {
+        id1 = first.id;
+      }
+      return id === id1;
+    });
+    const TableRowGroup = tmp(tmp2[14]).TableRowGroup;
+    let first = value[0];
+    let name;
+    const TableRow = tmp(tmp2[13]).TableRow;
+    if (first != null) {
+      name = first.name;
+    }
+    if (name == null) {
+      const tmpResult = tmp(onChange[11]);
+      name = tmpResult.clarificationPickerPlaceholder("server", false);
+    }
+    let tmp8Result;
+    if (null != found) {
+      const obj4 = { guild: found, size: tmp(onChange[12]).GuildIconSizes.SMALL_32 };
+      const tmp6 = require("GuildIcon");
+      tmp8Result = tmp8(tmp6, obj4);
+    }
+    return <TableRowGroup hasIcons={null != found}>{null}</TableRowGroup>;
+  }
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProjectPicker(question) {
   let disabled;
   let fallback;
   let onChange;
@@ -123,7 +350,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Project
               return tmp14;
             }
           }
-          const TableRowGroup = tmp(tmp2[12]).TableRowGroup;
+          const TableRowGroup = tmp(tmp2[14]).TableRowGroup;
           const tmp16 = <TableRowGroup hasIcons={false}>{null}</TableRowGroup>;
           cResult[7] = disabled;
           cResult[8] = tmp4;
@@ -166,7 +393,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Project
       name = first.name;
     }
     if (name == null) {
-      const tmp4Result = tmp4(12438);
+      const tmp4Result = tmp4(12471);
       name = tmp4Result.clarificationPickerPlaceholder("project", false);
     }
     let obj = { hasIcons: false, children: null };
@@ -186,7 +413,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Project
   return fallback;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEntityPicker(question) {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEntityPicker(question) {
   let disabled;
   let fallback;
   let first;
@@ -201,7 +428,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildE
   importDefault = value;
   ({ disabled, onChange } = question);
   ({ projectId, fallback } = question);
-  const obj2 = question(onChange[14]);
+  const obj2 = question(onChange[17]);
   const conjureSettingsGuildId = obj2.useConjureSettingsGuildId(projectId, true);
   const input = question.input;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -219,7 +446,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildE
       tmp7 = cResult[3];
       tmp8 = cResult[4];
     }
-    const tmpResult = tmp(tmp2[15]);
+    const tmpResult = tmp(tmp2[18]);
     const stateFromStores = tmpResult.useStateFromStores(first, tmp7, tmp8);
     if (null != conjureSettingsGuildId) {
       if (null != input) {
@@ -254,7 +481,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildE
                                 }
                               }
                               let tmp16 = jsx;
-                              const TableRowGroup = tmp(tmp2[12]).TableRowGroup;
+                              const TableRowGroup = tmp(tmp2[14]).TableRowGroup;
                               let obj4 = { label: tmp13, arrow: true, disabled, onPress: tmp12 };
                               const tmp17 = <TableRowGroup hasIcons={false}>{null}</TableRowGroup>;
                               cResult[18] = disabled;
@@ -316,7 +543,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildE
                                                 let obj = question(onChange[11]);
                                                 const items1 = [id.id];
                                                 items = obj.clarificationEntities(input, items1, () => {
-                                                  const obj = closure_2_0(closure_2_2[20]);
+                                                  const obj = closure_2_0(closure_2_2[23]);
                                                   return obj.computeChannelName(closure_0, closure_2_6, closure_2_5);
                                                 }, closure_1_1);
                                               }
@@ -428,10 +655,10 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildE
   let tmp = question;
   const tmp2 = onChange;
   ({ projectId, disabled, fallback } = question);
-  let obj = question(onChange[14]);
+  let obj = question(onChange[17]);
   const conjureSettingsGuildId = obj.useConjureSettingsGuildId(projectId, true);
   const input = question.input;
-  const obj2 = question(onChange[15]);
+  const obj2 = question(onChange[18]);
   let items = [conjureSettingsGuildId];
   let items1 = [conjureSettingsGuildId, input];
   const stateFromStores = obj2.useStateFromStores(items, () => {
@@ -452,7 +679,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildE
           const tmp5 = true === question.multi_select;
           closure_6 = tmp5;
           const tmp6 = jsx;
-          const TableRowGroup = tmp(tmp2[12]).TableRowGroup;
+          const TableRowGroup = tmp(tmp2[14]).TableRowGroup;
           let num = 0;
           const TableRow = tmp(tmp2[13]).TableRow;
           if (value.length > 0) {
@@ -500,7 +727,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildE
                                                         let obj = question(onChange[11]);
                                                         const items1 = [id.id];
                                                         items = obj.clarificationEntities(input, items1, () => {
-                                                          const obj = closure_2_0(closure_2_2[20]);
+                                                          const obj = closure_2_0(closure_2_2[23]);
                                                           return obj.computeChannelName(closure_0, closure_2_6, closure_2_5);
                                                         }, closure_1_1);
                                                       }

@@ -1,24 +1,24 @@
-// Module ID: 15851
-// Function ID: 15852
+// Module ID: 15875
+// Function ID: 15876
 // Name: HexagonCampaignDaysLeftBadge
-// Dependencies: [19, 17, 1392, 4994, 21, 1104, 4969, 587, 558, 576, 504, 4996, 7552, 5035, 4976, 5232, 5689, 1128, 9424, 2]
+// Dependencies: [19, 17, 1392, 4996, 21, 1104, 4971, 587, 558, 576, 504, 4998, 7554, 5037, 4978, 5234, 5691, 1128, 4247, 2]
 
-// Module 15851 (HexagonCampaignDaysLeftBadge)
+// Module 15875 (HexagonCampaignDaysLeftBadge)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import DurationsDefault from "Durations" /* 1104 */;
-import intl2 from "intl" /* 1128 */;
-import shared from "shared" /* 4976 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4994 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 4996 */;
-import native from "native" /* 5035 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import useCountdownDefault from "useCountdown" /* 7552 */;
+import _modDef4247 from "module_4247" /* 4247 */;
+import shared from "shared" /* 4978 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4996 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 4998 */;
+import native from "native" /* 5037 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import useCountdownDefault from "useCountdown" /* 7554 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,6 +31,8 @@ let obj2;
 let obj3;
 let obj4;
 let obj5;
+let tmp;
+const intl2 = tmp(1128);
 const View = react_native.View;
 const HexagonCampaignPerk = HexagonCampaignConstants.HexagonCampaignPerk;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -86,7 +88,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHexagonCa
     return max(days + num4, 1);
   }
   if (null != item) {
-    const tmp2Result2 = stateFromStores(4996);
+    const tmp2Result2 = stateFromStores(4998);
     hexagonCampaignPerkCutoffMs = tmp2Result2.getHexagonCampaignPerkCutoffMs(item, stateFromStores);
   } else {
     const _Math = Math;
@@ -133,7 +135,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHexagonCa
     }
     return hexagonCampaignPerkCutoffMs;
   }, items1);
-  const tmp3 = stateFromStores(7552)(memo, closure_8);
+  const tmp3 = stateFromStores(7554)(memo, closure_8);
   let num = 0;
   const days = tmp3.days;
   let _Math = Math;
@@ -334,9 +336,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
     first = cResult[0];
   }
   if (cResult[1] !== tmp4) {
-    const intl = tmp(1128).intl;
+    const intl = intl2.intl;
     const obj2 = { days: tmp4 };
-    const formatToPlainStringResult = intl.formatToPlainString(intl2.t["noGK/D"], obj2);
+    const formatToPlainStringResult = intl.formatToPlainString(_modDef4247["noGK/D"], obj2);
     cResult[1] = tmp4;
     cResult[2] = formatToPlainStringResult;
     tmp6 = formatToPlainStringResult;
@@ -344,17 +346,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
     tmp6 = cResult[2];
   }
   if (cResult[3] === tmp6) {
-    let tmp8;
+    let tmp9;
     if (cResult[4] === variant) {
-      tmp8 = cResult[5];
+      tmp9 = cResult[5];
     }
-    return tmp8;
+    return tmp9;
   }
-  const tmp9 = metroRequire(closure_12, { variant, renderIcon: first, text: tmp6 });
+  const tmp10 = metroRequire(closure_12, { variant, renderIcon: first, text: tmp6 });
   cResult[3] = tmp6;
   cResult[4] = variant;
-  cResult[5] = tmp9;
-  tmp8 = tmp9;
+  cResult[5] = tmp10;
+  tmp9 = tmp10;
 }) : (function HexagonCampaignDaysLeftBadge(variant) {
   let intl;
   let tmp;
@@ -364,54 +366,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
       const obj = { size: "xxs", color };
       return closure_1_6(require("ClockIcon").ClockIcon, obj);
     },
-    text: intl.formatToPlainString(intl2.t["noGK/D"], { days: tmp })
+    text: intl.formatToPlainString(_modDef4247["noGK/D"], { days: tmp })
   };
   tmp = closure_11(variant.perk);
-  intl = intl2.intl;
-  return metroRequire(closure_12, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampaignExtendPerkBadge(variant) {
-  let tmp4;
-  let tmp5;
-  let tmp7;
-  let obj = react2;
-  const cResult = obj.c(4);
-  variant = variant.variant;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t(color) {
-      const obj = { size: "xxs", color };
-      return closure_1_6(require("NitroWheelIcon").NitroWheelIcon, obj);
-    };
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(intl2.t["5Z2qmz"]);
-    cResult[0] = fn;
-    cResult[1] = stringResult;
-    tmp4 = fn;
-    tmp5 = stringResult;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  if (cResult[2] !== variant) {
-    const obj2 = { variant, renderIcon: tmp4, text: tmp5 };
-    const tmp10 = metroRequire(closure_12, obj2);
-    cResult[2] = variant;
-    cResult[3] = tmp10;
-    tmp7 = tmp10;
-  } else {
-    tmp7 = cResult[3];
-  }
-  return tmp7;
-}) : (function HexagonCampaignExtendPerkBadge(variant) {
-  let intl;
-  let obj = {
-    variant: variant.variant,
-    renderIcon(color) {
-      const obj = { size: "xxs", color };
-      return closure_1_6(require("NitroWheelIcon").NitroWheelIcon, obj);
-    },
-    text: intl.string(intl2.t["5Z2qmz"])
-  };
   intl = intl2.intl;
   return metroRequire(closure_12, obj);
 });
@@ -419,4 +376,3 @@ const result = size.fileFinishedImporting("modules/hexagon_campaign/native/Hexag
 
 export default tmp5;
 export const useHexagonCampaignDaysLeft = tmp4;
-export const HexagonCampaignExtendPerkBadge = tmp6;

@@ -1,18 +1,18 @@
-// Module ID: 9306
-// Function ID: 9307
+// Module ID: 9307
+// Function ID: 9308
 // Name: GameProfileRankPill
-// Dependencies: [19, 17, 21, 4969, 587, 558, 576, 9307, 1128, 5232, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 9308, 1128, 5234, 2]
 
-// Module 9306 (GameProfileRankPill)
+// Module 9307 (GameProfileRankPill)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import TrophyIcon2 from "TrophyIcon" /* 9307 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import TrophyIcon2 from "TrophyIcon" /* 9308 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
   ({ container, gameRankPill } = tmp5);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xxs", color: nativeDefault.colors.BLACK };
-    const TrophyIcon = tmp(9307).TrophyIcon;
+    const TrophyIcon = tmp(9308).TrophyIcon;
     const tmp9 = React3(TrophyIcon, obj2);
     cResult[0] = tmp9;
     first = tmp9;

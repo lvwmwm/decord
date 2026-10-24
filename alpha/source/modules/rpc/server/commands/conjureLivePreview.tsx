@@ -1,14 +1,14 @@
-// Module ID: 15738
-// Function ID: 15739
+// Module ID: 15760
+// Function ID: 15761
 // Name: conjureLivePreview
-// Dependencies: [6376, 1087, 15699, 15683, 10788, 2]
+// Dependencies: [6378, 1087, 15720, 15704, 10789, 2]
 
-// Module 15738 (conjureLivePreview)
+// Module 15760 (conjureLivePreview)
 import Constants2 from "Constants" /* 1087 */;
-import conjureLiveRelaunch from "conjureLiveRelaunch" /* 10788 */;
-import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 15683 */;
-import Constants from "Constants" /* 6376 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15699 */;
+import conjureLiveRelaunch from "conjureLiveRelaunch" /* 10789 */;
+import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 15704 */;
+import Constants from "Constants" /* 6378 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15720 */;
 import size from "module_2" /* 2 */;
 
 let RPC_AUTHENTICATED_SCOPE;

@@ -1,21 +1,21 @@
-// Module ID: 11281
-// Function ID: 11282
+// Module ID: 11282
+// Function ID: 11283
 // Name: RoleMembersActionSheet
-// Dependencies: [19, 17, 4970, 7370, 4875, 21, 4969, 587, 558, 576, 11, 7224, 504, 7222, 1202, 5232, 11282, 5263, 2]
+// Dependencies: [19, 17, 4972, 7372, 4877, 21, 4971, 587, 558, 576, 11, 7226, 504, 7224, 1202, 5234, 11283, 5265, 2]
 
-// Module 11281 (RoleMembersActionSheet)
+// Module 11282 (RoleMembersActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5232 */;
-import GuildRoleMemberActionCreators from "GuildRoleMemberActionCreators" /* 7224 */;
-import ChannelMemberStore from "ChannelMemberStore" /* 7370 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import GuildRoleMemberActionCreators from "GuildRoleMemberActionCreators" /* 7226 */;
+import ChannelMemberStore from "ChannelMemberStore" /* 7372 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4970 */;
-import GuildRoleStore from "GuildRoleStore" /* 4875 */;
+import AccessibilityStore from "AccessibilityStore" /* 4972 */;
+import GuildRoleStore from "GuildRoleStore" /* 4877 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4969 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -100,7 +100,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleMembersA
       }
       const obj4 = roleId(11);
       const result = obj4.castGuildIdAsEveryoneGuildRoleId(guildId);
-      const tmp22 = roleId(7222)(guildId);
+      const tmp22 = roleId(7224)(guildId);
       class I {
         constructor() {
           const obj = SnowflakeUtilsDefault;
@@ -140,8 +140,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleMembersA
           let obj2 = { variant: "text-sm/semibold", style: tmp4.headerText, children: name };
           cResult[15] = tmp4.headerText;
           cResult[16] = name;
-          cResult[17] = closure_8(tmp(5232).Text, obj2);
-          closure_8(tmp(5232).Text, obj2);
+          cResult[17] = closure_8(tmp(5234).Text, obj2);
+          closure_8(tmp(5234).Text, obj2);
           class I {
             constructor() {
               const obj = SnowflakeUtilsDefault;
@@ -253,7 +253,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleMembersA
   const tmp9 = roleId;
   let obj3 = roleId(11);
   const result = obj3.castGuildIdAsEveryoneGuildRoleId(guildId);
-  const tmp11 = roleId(7222)(guildId);
+  const tmp11 = roleId(7224)(guildId);
   let tmp12 = null;
   if (roleId !== result) {
     let tmp13;
@@ -270,9 +270,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleMembersA
   let tmp16Result = null;
   if (null != stateFromStores) {
     let obj4 = { scrollable: true, header: tmp14, children: closure_8(tmp9Result, obj5) };
-    BottomSheet = tmp3(5263).BottomSheet;
+    BottomSheet = tmp3(5265).BottomSheet;
     obj5 = { guildId, channelId, roleId, headerShown: false, inActionSheet: true, disableStickySections: true, disableThemedGradient: true };
-    tmp9Result = tmp9(11282);
+    tmp9Result = tmp9(11283);
     if (channelId == null) {
       channelId = EVERYONE_CHANNEL_ID;
     }

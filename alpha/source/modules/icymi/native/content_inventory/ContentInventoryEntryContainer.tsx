@@ -1,18 +1,18 @@
-// Module ID: 17917
-// Function ID: 17918
+// Module ID: 17949
+// Function ID: 17950
 // Name: ContentInventoryEntryContainer
-// Dependencies: [19, 17, 1392, 21, 17863, 587, 1384, 558, 576, 8839, 8666, 504, 1202, 17902, 6906, 2]
+// Dependencies: [19, 17, 1392, 21, 17895, 587, 1384, 558, 576, 8841, 8668, 504, 1202, 17934, 6908, 2]
 
-// Module 17917 (ContentInventoryEntryContainer)
+// Module 17949 (ContentInventoryEntryContainer)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8666 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8839 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8841 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 17863 */;
+import createICYMIStyles from "createICYMIStyles" /* 17895 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -106,7 +106,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContentInv
               tmp15 = cResult[10];
             }
             if (cResult[11] !== stateFromStores) {
-              let obj2 = { animate: true, size: tmp(tmp2[12]).AvatarSizes.NORMAL, user: stateFromStores, guildId: "application" };
+              let obj2 = { animate: true, size: tmp(tmp2[12]).AvatarSizes.NORMAL, user: stateFromStores, guildId: "Array" };
               const Avatar = tmp(tmp2[12]).Avatar;
               const tmp18 = closure_6(Avatar, obj2, stateFromStores.id);
               cResult[11] = stateFromStores;
@@ -312,7 +312,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContentInv
     obj4 = { style: items2, children: items5 };
     items2[1] = screenshotContainer;
     let obj5 = { style: tmp.header, children: items3 };
-    let obj6 = { animate: true, size: tmp3(tmp4[12]).AvatarSizes.NORMAL, user: stateFromStores, guildId: "application" };
+    let obj6 = { animate: true, size: tmp3(tmp4[12]).AvatarSizes.NORMAL, user: stateFromStores, guildId: "Array" };
     const Avatar = tmp3(tmp4[12]).Avatar;
     items3 = [tmp7(Avatar, obj6, stateFromStores.id), ];
     let obj7 = { style: tmp.headerInfo, children: items4 };
