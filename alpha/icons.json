@@ -384,27 +384,6 @@
         "width": 61,
         "height": 61
     },
-    "asset_role_subscription_earnings": {
-        "file": "app/modules/guild_role_subscriptions/native/guild_settings/welcome/images/asset_role_subscription_earnings.png",
-        "hash": "4932e4c7d6568b95e72c98ec5bd9e9c7",
-        "scales": [],
-        "width": 92,
-        "height": 53
-    },
-    "asset_role_subscription_exclusive_perks": {
-        "file": "app/modules/guild_role_subscriptions/native/guild_settings/welcome/images/asset_role_subscription_exclusive_perks.png",
-        "hash": "d8d9b21fdc821b420337e07a880866f5",
-        "scales": [],
-        "width": 87,
-        "height": 61.5
-    },
-    "asset_role_subscription_megaphone": {
-        "file": "app/modules/guild_role_subscriptions/native/guild_settings/welcome/images/asset_role_subscription_megaphone.png",
-        "hash": "9e37ee2a11d88922a3b56da1b883c062",
-        "scales": [],
-        "width": 71,
-        "height": 54
-    },
     "asset_ruby_badge_small": {
         "file": "app/modules/premium/tiered_tenure_badging/native/images/asset_ruby_badge_small.png",
         "hash": "c4946770ab3c50ce3672b0e2087496ae",
@@ -3079,13 +3058,6 @@
         "width": 20,
         "height": 20
     },
-    "ic_add_perk_24px": {
-        "file": "app/modules/guild_role_subscriptions/native/images/ic_add_perk_24px.png",
-        "hash": "4e2695064a96facdf08d029a4fb1d275",
-        "scales": [],
-        "width": 24,
-        "height": 24
-    },
     "ic_add_reaction_v2": {
         "file": "app/images/native/ic_add_reaction_v2.png",
         "hash": "36e39be8b33ba48e0db05b6e6fe9d9e1",
@@ -3099,13 +3071,6 @@
         "scales": [],
         "width": 18,
         "height": 18
-    },
-    "ic_add_tier_40px": {
-        "file": "app/modules/guild_role_subscriptions/native/images/ic_add_tier_40px.png",
-        "hash": "4b2e500a83e119218e6e2834f09f9cd5",
-        "scales": [],
-        "width": 40,
-        "height": 40
     },
     "ic_alert": {
         "file": "app/images/native/icons/ic_alert.png",
@@ -3359,13 +3324,6 @@
         "width": 24,
         "height": 24
     },
-    "ic_close_circle": {
-        "file": "app/images/native/icons/ic_close_circle.png",
-        "hash": "0ddefd9d8828364a18e4207ffcdf1e76",
-        "scales": [],
-        "width": 16,
-        "height": 16
-    },
     "ic_close_circle_24px": {
         "file": "app/images/native/icons/ic_close_circle_24px.png",
         "hash": "2f67acde4c60441cfd2d6684d11b6d76",
@@ -3449,13 +3407,6 @@
         "scales": [],
         "width": 24,
         "height": 24
-    },
-    "ic_emoji_picker_20px": {
-        "file": "app/modules/guild_role_subscriptions/native/images/ic_emoji_picker_20px.png",
-        "hash": "66f5395e0dcbde2df92fe7a6979a5fca",
-        "scales": [],
-        "width": 20,
-        "height": 20
     },
     "ic_emoji_recent_color_24px": {
         "file": "app/images/native/emoji/ic_emoji_recent_color_24px.png",
@@ -3642,13 +3593,6 @@
     "ic_friend_wave_24px": {
         "file": "app/images/native/icons/ic_friend_wave_24px.png",
         "hash": "9418ce18a45ac2ccf91c54293677973d",
-        "scales": [],
-        "width": 24,
-        "height": 24
-    },
-    "ic_full_server_gating_24px": {
-        "file": "app/modules/guild_role_subscriptions/native/images/ic_full_server_gating_24px.png",
-        "hash": "ed13dc1c27325d7ffd6ba2403047329c",
         "scales": [],
         "width": 24,
         "height": 24
@@ -3975,13 +3919,6 @@
         "width": 16,
         "height": 16
     },
-    "ic_money_emoji_24px": {
-        "file": "app/modules/guild_role_subscriptions/native/images/ic_money_emoji_24px.png",
-        "hash": "a17cd266a5cb265705b13e07d0e2871a",
-        "scales": [],
-        "width": 24,
-        "height": 24
-    },
     "ic_monitor": {
         "file": "app/images/native/icons/ic_monitor.png",
         "hash": "025ed70341d831a8d87cf223149523d3",
@@ -4150,30 +4087,9 @@
         "width": 16,
         "height": 16
     },
-    "ic_premium_info_24px": {
-        "file": "app/modules/guild_role_subscriptions/native/images/ic_premium_info_24px.png",
-        "hash": "009fbd96b391fb5fe3194dabbc819a91",
-        "scales": [],
-        "width": 24,
-        "height": 24
-    },
     "ic_premium_overview_24px": {
         "file": "app/modules/guild_role_subscriptions/native/images/ic_premium_overview_24px.png",
         "hash": "9f983315273ecf4164927351f28f2400",
-        "scales": [],
-        "width": 24,
-        "height": 24
-    },
-    "ic_premium_perk_money_24px": {
-        "file": "app/modules/guild_role_subscriptions/native/images/ic_premium_perk_money_24px.png",
-        "hash": "0ad684cb154c8b73e2d19dd6933251ad",
-        "scales": [],
-        "width": 24,
-        "height": 24
-    },
-    "ic_premium_tiers_24px": {
-        "file": "app/modules/guild_role_subscriptions/native/images/ic_premium_tiers_24px.png",
-        "hash": "5d792e9e92a8795cc3d086a321f6344d",
         "scales": [],
         "width": 24,
         "height": 24
@@ -4202,13 +4118,6 @@
     "ic_radio_circle": {
         "file": "app/images/native/icons/ic_radio_circle.png",
         "hash": "d69183c841a46891894e3608d083bf5f",
-        "scales": [],
-        "width": 24,
-        "height": 24
-    },
-    "ic_radio_circle_checked": {
-        "file": "app/images/native/icons/ic_radio_circle_checked.png",
-        "hash": "26d0550d85f689dbef34ccad40bbdeb4",
         "scales": [],
         "width": 24,
         "height": 24
@@ -4485,13 +4394,6 @@
         "scales": [],
         "width": 24,
         "height": 24
-    },
-    "ic_trash_filled_16px": {
-        "file": "app/modules/guild_role_subscriptions/native/images/ic_trash_filled_16px.png",
-        "hash": "a73209a775cff7b9f0bb0d6d53c071e6",
-        "scales": [],
-        "width": 16,
-        "height": 16
     },
     "ic_unmute_channel_24px": {
         "file": "app/images/native/icons/ic_unmute_channel_24px.png",
@@ -7867,69 +7769,6 @@
         "width": 30,
         "height": 30
     },
-    "role_subscription_benefit_avatar_1": {
-        "file": "app/modules/guild_role_subscriptions/native/guild_settings/welcome/images/role_subscription_benefit_avatar_1.png",
-        "hash": "0839bdcd20fab094e9db3928575b1df5",
-        "scales": [],
-        "width": 40,
-        "height": 40.5
-    },
-    "role_subscription_benefit_bunny_avatar": {
-        "file": "app/modules/guild_role_subscriptions/native/guild_settings/welcome/images/role_subscription_benefit_bunny_avatar.png",
-        "hash": "4247c923735157dd7bfbbedd55448819",
-        "scales": [],
-        "width": 40,
-        "height": 40.5
-    },
-    "role_subscription_benefit_nelly_avatar": {
-        "file": "app/modules/guild_role_subscriptions/native/guild_settings/welcome/images/role_subscription_benefit_nelly_avatar.png",
-        "hash": "e3602af71cc76e8c04bf027b54c9843f",
-        "scales": [],
-        "width": 40,
-        "height": 40.5
-    },
-    "role_subscription_benefit_wise_avatar": {
-        "file": "app/modules/guild_role_subscriptions/native/guild_settings/welcome/images/role_subscription_benefit_wise_avatar.png",
-        "hash": "a3768a48fee4076951a25e660d265530",
-        "scales": [],
-        "width": 40,
-        "height": 40.5
-    },
-    "role_subscription_earning_illo": {
-        "file": "app/modules/guild_role_subscriptions/native/guild_settings/welcome/images/role_subscription_earning_illo.png",
-        "hash": "676cd159b1913e0ab2a481c3bd4a0b5c",
-        "scales": [],
-        "width": 88.5,
-        "height": 72.5
-    },
-    "role_subscription_earning_metric_avatar": {
-        "file": "app/modules/guild_role_subscriptions/native/guild_settings/welcome/images/role_subscription_earning_metric_avatar.png",
-        "hash": "bae4699ad33ec116553db1943dc80292",
-        "scales": [],
-        "width": 54,
-        "height": 54.5
-    },
-    "role_subscription_lanyard_illo": {
-        "file": "app/modules/guild_role_subscriptions/native/guild_settings/welcome/images/role_subscription_lanyard_illo.png",
-        "hash": "deeeb1ec32f8166fcc70387b3490f426",
-        "scales": [],
-        "width": 159,
-        "height": 105.5
-    },
-    "role_subscription_settings_hero": {
-        "file": "app/modules/guild_role_subscriptions/native/guild_settings/welcome/images/role_subscription_settings_hero.png",
-        "hash": "a089de21c15f6e03808f87d787c28c08",
-        "scales": [],
-        "width": 375,
-        "height": 187
-    },
-    "role_subscription_social": {
-        "file": "app/modules/guild_role_subscriptions/native/guild_settings/welcome/images/role_subscription_social.png",
-        "hash": "b5e600063095a5da796a5f2ddbe5b3f0",
-        "scales": [],
-        "width": 138,
-        "height": 92.5
-    },
     "ru": {
         "file": "discord_common/js/shared/images/flags/ru.png",
         "hash": "64f37efd5319b9b581557604864f042a",
@@ -9214,6 +9053,13 @@
     "VrHeadsetIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/VrHeadsetIcon.png",
         "hash": "912599b20b4f4689d8c9b765ff8e94f3",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
+    "WalletIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/WalletIcon.png",
+        "hash": "0a9a387fb9d47e12759ef9517ca0c2ad",
         "scales": [],
         "width": 24,
         "height": 24
