@@ -323,7 +323,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUserA
       cResult[8] = tmp15;
       tmp13 = tmp15;
     }
-    const obj3 = { size, user: messageAuthorUser, guildId: "r" };
+    const obj3 = { size, user: messageAuthorUser, guildId: "Array" };
     const tmp12 = closure_5(tmp(1202).Avatar, obj3);
     cResult[3] = size;
     cResult[4] = messageAuthorUser;
@@ -356,7 +356,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUserA
     const obj2 = { onPress: callback, onLongPress: callback, accessibilityRole: "button", accessibilityLabel: intl.string(messageAuthorUser(1128).t.iXAna6), children: closure_5(messageAuthorUser(1202).Avatar, obj3) };
     const PressableOpacity = tmp3(6462).PressableOpacity;
     intl = tmp3(1128).intl;
-    obj3 = { size: NORMAL, user: messageAuthorUser, guildId: "r" };
+    obj3 = { size: NORMAL, user: messageAuthorUser, guildId: "Array" };
     tmp7 = closure_5(PressableOpacity, obj2);
   }
   return tmp7;

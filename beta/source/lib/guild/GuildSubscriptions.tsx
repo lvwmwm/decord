@@ -19,25 +19,25 @@ const ME = Constants.ME;
 const result = size.fileFinishedImporting("lib/guild/GuildSubscriptions.tsx");
 class GuildSubscriptions {
   constructor(_onChange) {
-    const f96589 = (guildId1, members) => {
+    const f96599 = (guildId1, members) => {
       obj = { members };
       return obj._enqueue(guildId1, obj);
     };
-    const f96590 = (guildId1, channels) => {
+    const f96600 = (guildId1, channels) => {
       obj = { channels };
       return obj._enqueue(guildId1, obj);
     };
-    const f96591 = (guildId1, thread_member_lists) => {
+    const f96601 = (guildId1, thread_member_lists) => {
       obj = { thread_member_lists };
       return obj._enqueue(guildId1, obj);
     };
     let obj = Object.create(new.target.prototype);
-    obj._members = new GuildMemberSubscriptionsDefault(f96589);
-    new GuildMemberSubscriptionsDefault(f96589);
-    obj._channels = new GuildChannelSubscriptionsDefault(f96590);
-    new GuildChannelSubscriptionsDefault(f96590);
-    obj._threadMemberLists = new GuildThreadSubscriptionsDefault(f96591);
-    new GuildThreadSubscriptionsDefault(f96591);
+    obj._members = new GuildMemberSubscriptionsDefault(f96599);
+    new GuildMemberSubscriptionsDefault(f96599);
+    obj._channels = new GuildChannelSubscriptionsDefault(f96600);
+    new GuildChannelSubscriptionsDefault(f96600);
+    obj._threadMemberLists = new GuildThreadSubscriptionsDefault(f96601);
+    new GuildThreadSubscriptionsDefault(f96601);
     obj._typing = new Set();
     new Set();
     obj._threads = new Set();

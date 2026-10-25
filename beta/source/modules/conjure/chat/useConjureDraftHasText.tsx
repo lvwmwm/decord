@@ -70,13 +70,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureDr
 }) : (function useConjureDraftHasText(arg0) {
   let tmp2;
   let tmp3;
-  const f112152 = () => {
+  const f112166 = () => {
     const str = ConjureComposerDraftStore.getDraft(closure_0);
     return "" !== str.trim();
   };
   let closure_0 = arg0;
-  [tmp2, tmp3] = react.useState(f112152);
-  _slicedToArray(react.useState(f112152), 2);
+  [tmp2, tmp3] = react.useState(f112166);
+  _slicedToArray(react.useState(f112166), 2);
   const tmp4 = _slicedToArray(react.useState(arg0), 2);
   const tmp5 = tmp4[1];
   if (tmp4[0] !== arg0) {

@@ -74,7 +74,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatToa
       tmp9 = cResult[4];
     }
     if (cResult[5] !== message.author) {
-      const obj3 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "r" };
+      const obj3 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "Array" };
       const Avatar = tmp(1202).Avatar;
       const tmp12 = hasOwnProperty(Avatar, obj3);
       cResult[5] = message.author;
@@ -186,7 +186,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatToa
   const callback = react.useCallback(() => onOpenChat(message), items);
   obj3 = { variant: "primary", shadow: "high", border: "subtle", style: tmp.card, onPress: callback, children: items1 };
   Card = tmp2(6459).Card;
-  const obj4 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "r" };
+  const obj4 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "Array" };
   const Avatar = tmp2(1202).Avatar;
   items1 = [hasOwnProperty(Avatar, obj4), ];
   const obj5 = { style: tmp.body, children: items2 };

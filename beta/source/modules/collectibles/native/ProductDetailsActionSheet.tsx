@@ -1003,7 +1003,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
   let tmp48;
   let tmp50;
   let type;
-  const f99459 = () => {
+  const f99469 = () => {
     let tmp;
     if (closure_6) {
       const first = require.items[0];
@@ -1105,8 +1105,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
   const tmp32Result = closure_21(obj7);
   const tmp34 = product.type === require("CollectiblesItemType").CollectiblesItemType.BUNDLE;
   react = tmp34;
-  [type, c7] = obj.useState(f99459);
-  _slicedToArray(obj.useState(f99459), 2);
+  [type, c7] = obj.useState(f99469);
+  _slicedToArray(obj.useState(f99469), 2);
   const tmp36 = c7((type) => {
     _undefined(type);
     _undefined2(type.type);

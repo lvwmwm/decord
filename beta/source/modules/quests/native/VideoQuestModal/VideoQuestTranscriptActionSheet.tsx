@@ -42,7 +42,7 @@ export default function VideoQuestTranscriptActionSheet(quest) {
   let obj3;
   let obj4;
   let tmp8;
-  const f124810 = (children, index) => {
+  const f124824 = (children, index) => {
     const obj = { variant: "heading-md/normal", color: "text-muted", children };
     return closure_1_7(quest(dependencyMap[14]).Text, obj, index);
   };
@@ -117,7 +117,7 @@ export default function VideoQuestTranscriptActionSheet(quest) {
     const obj5 = { style: tmp.loadingSpinner, size: "large" };
     tmp7Result = tmp7(ActivityIndicator, obj5);
   }
-  items2 = [tmp7Result, memo.length > 0 && memo.map(f124810)];
-  memo.length > 0 && memo.map(f124810);
+  items2 = [tmp7Result, memo.length > 0 && memo.map(f124824)];
+  memo.length > 0 && memo.map(f124824);
   return closure_7(ActionSheet, obj);
 };

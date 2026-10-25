@@ -286,7 +286,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatCounter(
   }
   class E {
     constructor() {
-      obj = { onMessageLengthChanged() { /* body not rendered: F147341 */ } };
+      obj = { onMessageLengthChanged() { /* body not rendered: F147354 */ } };
       return obj;
     }
   }

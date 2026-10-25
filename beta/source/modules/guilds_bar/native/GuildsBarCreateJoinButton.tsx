@@ -277,7 +277,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     };
     return obj;
   }, items1);
-  obj4 = { selected: tmp5, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: intl.string(enabled(1128).t.l5WIbf), expandedChildren: "down", children: jsx(CirclePlusIcon, obj5) };
+  obj4 = { selected: tmp5, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: intl.string(enabled(1128).t.l5WIbf), expandedChildren: "timing", children: jsx(CirclePlusIcon, obj5) };
   tmp9 = GuildsBarAnimatedItemWrapperDefault;
   intl = tmp2(1128).intl;
   CirclePlusIcon = tmp2(10936).CirclePlusIcon;

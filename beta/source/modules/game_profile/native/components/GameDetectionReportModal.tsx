@@ -192,8 +192,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
         tmp13 = closure_0;
         tmp14 = closure_2;
         obj1.title = intl2.string(closure_0(closure_2[14]).t["6tnjbD"]);
-        obj1.headerLeft = function headerLeft() { /* body not rendered: F143766 */ };
-        obj1.headerRight = function headerRight() { /* body not rendered: F143767 */ };
+        obj1.headerLeft = function headerLeft() { /* body not rendered: F143780 */ };
+        obj1.headerRight = function headerRight() { /* body not rendered: F143781 */ };
         setOptions2Result = setOptions2(obj1);
       } else {
         str = "game_search";
@@ -210,8 +210,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
           tmp7 = closure_0;
           tmp8 = closure_2;
           obj2 = closure_0(closure_2[17]);
-          obj.headerLeft = obj2.getHeaderBackButton(() => { /* body not rendered: F143768 */ });
-          obj.headerRight = function headerRight() { /* body not rendered: F143769 */ };
+          obj.headerLeft = obj2.getHeaderBackButton(() => { /* body not rendered: F143782 */ });
+          obj.headerRight = function headerRight() { /* body not rendered: F143783 */ };
           setOptionsResult = setOptions(obj);
         } else {
           tmp16 = closure_2;
@@ -226,8 +226,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
           tmp21 = closure_0;
           tmp22 = closure_2;
           obj5 = closure_0(closure_2[17]);
-          obj6.headerLeft = obj5.getHeaderBackButton(() => { /* body not rendered: F143770 */ });
-          obj6.headerRight = function headerRight() { /* body not rendered: F143771 */ };
+          obj6.headerLeft = obj5.getHeaderBackButton(() => { /* body not rendered: F143784 */ });
+          obj6.headerRight = function headerRight() { /* body not rendered: F143785 */ };
           setOptions3Result = setOptions3(obj6);
         }
       }

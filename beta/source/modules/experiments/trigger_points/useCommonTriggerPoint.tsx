@@ -65,7 +65,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCommonT
   tmp11 = items1;
 }) : (function useCommonTriggerPoint(arg0) {
   let closure_0;
-  const f120302 = () => {
+  const f120316 = () => {
     const items = [authStore.getAllUserExperimentDescriptors(), authStore.getGuildExperiments()];
     return items;
   };
@@ -73,8 +73,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCommonT
   let items = [ExperimentStore];
   const obj = require("get initialized");
   const items1 = [arg0, , ];
-  [arr2[1], arr2[2]] = obj.useStateFromStoresArray(items, f120302);
-  _slicedToArray(obj.useStateFromStoresArray(items, f120302), 2);
+  [arr2[1], arr2[2]] = obj.useStateFromStoresArray(items, f120316);
+  _slicedToArray(obj.useStateFromStoresArray(items, f120316), 2);
   const effect = react.useEffect(() => {
     closure_0.trigger();
   }, items1);

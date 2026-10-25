@@ -41,7 +41,7 @@ let obj9;
 let size;
 let tmp;
 const Text_Text = tmp(5187);
-const f112510 = (caption) => {
+const f112524 = (caption) => {
   let obj2;
   obj = { caption: caption.caption, children: closure_1_5(closure_1_10, obj2) };
   const key = caption.key;
@@ -494,7 +494,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Experi
         const arraySpreadResult = HermesBuiltin.arraySpread(items3, items2, 0);
         const tmp2Result = conjurePlanExperienceSections;
         const result = tmp2Result.conjurePlanRequirementGroups(proposal);
-        HermesBuiltin.arraySpread(items3, result.map(f112510), arraySpreadResult);
+        HermesBuiltin.arraySpread(items3, result.map(f112524), arraySpreadResult);
         cResult[5] = proposal;
         cResult[6] = items3;
         tmp7 = items3;
@@ -548,7 +548,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Experi
       const arraySpreadResult = HermesBuiltin.arraySpread(items3, items2, 0);
       const obj3 = conjurePlanExperienceSections;
       const result = obj3.conjurePlanRequirementGroups(proposal);
-      HermesBuiltin.arraySpread(items3, result.map(f112510), arraySpreadResult);
+      HermesBuiltin.arraySpread(items3, result.map(f112524), arraySpreadResult);
       items = items3;
     }
   }

@@ -14,7 +14,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f112277 = () => {
+const f112291 = () => {
 
 };
 const set = new Set();
@@ -47,7 +47,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageAu
               const obj = UserActionCreatorsAll;
               const user = obj.getUser(tmp);
               const cleanupPromise = user.finally(() => set.delete(closure_0));
-              cleanupPromise.catch(f112277);
+              cleanupPromise.catch(f112291);
             }
           }
         }
@@ -121,7 +121,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageAu
             const obj = UserActionCreatorsAll;
             const user = obj.getUser(tmp);
             const cleanupPromise = user.finally(() => set.delete(closure_0));
-            cleanupPromise.catch(f112277);
+            cleanupPromise.catch(f112291);
           }
         }
       }
@@ -180,7 +180,7 @@ function requestMessageAuthor(actor_user_id) {
           const obj = UserActionCreatorsAll;
           const user = obj.getUser(actor_user_id);
           const cleanupPromise = user.finally(() => set.delete(closure_0));
-          cleanupPromise.catch(f112277);
+          cleanupPromise.catch(f112291);
         }
       }
     }

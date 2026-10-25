@@ -459,7 +459,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingRe
   let tmp15;
   let tmp16;
   let tmp4;
-  const f137515 = () => {
+  const f137529 = () => {
     set = new Set();
     return set;
   };
@@ -488,8 +488,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingRe
   const declineLinkRequest = familyCenterActions.declineLinkRequest;
   ({ isAcceptLoading, isDeclineLoading } = familyCenterActions);
   let closure_5 = tmp6;
-  [c6, c7] = tmp2(react.useState(f137515), 2);
-  tmp2(react.useState(f137515), 2);
+  [c6, c7] = tmp2(react.useState(f137529), 2);
+  tmp2(react.useState(f137529), 2);
   const callback = obj2.useCallback((arg0) => {
     let closure_0 = arg0;
     let tmp = _undefined3(function(has) {
@@ -668,7 +668,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingRe
   let stateFromStores;
   let tmp3;
   let tmp4;
-  const f137524 = () => {
+  const f137538 = () => {
     let str = "connected";
     if (stateFromStores !== UserLinkStatus.ACTIVE) {
       let str2;
@@ -692,8 +692,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingRe
     }
     return link_status;
   });
-  [tmp3, tmp4] = _slicedToArray(react.useState(f137524), 2);
-  const tmp2 = _slicedToArray(react.useState(f137524), 2);
+  [tmp3, tmp4] = _slicedToArray(react.useState(f137538), 2);
+  const tmp2 = _slicedToArray(react.useState(f137538), 2);
   const tmp5 = _slicedToArray(react.useState(stateFromStores), 2);
   const first = tmp5[0];
   if (stateFromStores !== first) {

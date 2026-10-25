@@ -19,8 +19,8 @@ let fn = function m() {
   let tmp74;
   let tmp8;
   let tmp9;
-  const f156159 = (item) => null !== item;
-  const f156174 = (getTime, getTime2) => {
+  const f156172 = (item) => null !== item;
+  const f156187 = (getTime, getTime2) => {
     const time = getTime.getTime();
     return time - getTime2.getTime();
   };
@@ -5083,7 +5083,7 @@ let fn = function m() {
     }
   }
   function st(str) {
-    const f156160 = function(item) {
+    const f156173 = function(item) {
       let formatted;
       let index;
       let isMatch;
@@ -5095,7 +5095,7 @@ let fn = function m() {
       let str;
       let str2;
       let tmp24;
-      const f160213 = function(item) {
+      const f160226 = function(item) {
         if (2 === item.length) {
           return closure_1_69[item];
         } else {
@@ -5337,7 +5337,7 @@ let fn = function m() {
         case "BYWEEKDAY":
         {
           parts2 = str2.split(",");
-          fn = f160213;
+          fn = f160226;
           mapped1 = parts2.map(fn);
           closure_1.byweekday = mapped1;
           break;
@@ -5345,7 +5345,7 @@ let fn = function m() {
         case "BYDAY":
         {
           parts2 = str2.split(",");
-          fn = f160213;
+          fn = f160226;
           mapped1 = parts2.map(fn);
           closure_1.byweekday = mapped1;
           break;
@@ -5445,7 +5445,7 @@ let fn = function m() {
         let closure_1 = tmp12;
         const str9 = replaced.replace(/^(?:RRULE|EXRULE):/i, "");
         let parts = str9.split(";");
-        const item = parts.forEach(f156160);
+        const item = parts.forEach(f156173);
         return tmp12;
       } else {
         const tmp4 = at(replaced.replace(/^RRULE:/i, ""));
@@ -5453,7 +5453,7 @@ let fn = function m() {
         str = replaced.replace(/^(?:RRULE|EXRULE):/i, "");
         const str2 = ";";
         let parts1 = str.split(";");
-        const item1 = parts1.forEach(f156160);
+        const item1 = parts1.forEach(f156173);
         return tmp4;
       }
     } else {
@@ -6471,7 +6471,7 @@ let fn = function m() {
                       throw new TypeError("Trying to call a non-function");
                     }
                     if (typeof R === "function") {
-                      let sorted = items3.sort(f156174);
+                      let sorted = items3.sort(f156187);
                       let num10 = 0;
                       let tmp185 = count;
                       tmp122 = count;
@@ -6760,7 +6760,7 @@ let fn = function m() {
         }
         let item1 = parts1.forEach(function(value) {
           let name;
-          const f156165 = function(item) {
+          const f156178 = function(item) {
             if (typeof closure_1_34 === "function") {
               obj = /^(\d{4})(\d{2})(\d{2})(T(\d{2})(\d{2})(\d{2})Z?)?$/;
               const match = obj.exec(item);
@@ -6795,7 +6795,7 @@ let fn = function m() {
               throw new TypeError("Trying to call a non-function");
             }
           };
-          const f159357 = function(item) {
+          const f159370 = function(item) {
             obj = /(VALUE=DATE(-TIME)?)|(TZID=)/;
             if (!obj.test(item)) {
               const _Error = Error;
@@ -6840,7 +6840,7 @@ let fn = function m() {
                   const push2 = items1.push;
                   const parts2 = value.split("\n");
                   const mapped = parts2.map(st);
-                  const found = mapped.filter(f156159);
+                  const found = mapped.filter(f156172);
                   push2(closure_2_38(closure_2_38({}, found[0]), found[1]));
                 }
               } else if ("RDATE" === formatted) {
@@ -6854,9 +6854,9 @@ let fn = function m() {
                   closure_4 = tmp19;
                 }
                 const concat4 = concat.concat;
-                const item = substr2.forEach(f159357);
+                const item = substr2.forEach(f159370);
                 const parts3 = value.split(",");
-                concat = concat4(parts3.map(f156165));
+                concat = concat4(parts3.map(f156178));
               } else if ("EXRULE" === formatted) {
                 if (substr2.length) {
                   const _Error2 = Error;
@@ -6871,14 +6871,14 @@ let fn = function m() {
                   const parts4 = value.split("\n");
                   let tmp11 = st;
                   const mapped1 = parts4.map(st);
-                  const found1 = mapped1.filter(f156159);
+                  const found1 = mapped1.filter(f156172);
                   push(closure_2_38(closure_2_38({}, found1[0]), found1[1]));
                 }
               } else if ("EXDATE" === formatted) {
                 concat2 = concat2.concat;
-                const item1 = substr2.forEach(f159357);
+                const item1 = substr2.forEach(f159370);
                 const parts5 = value.split(",");
-                concat2 = concat2(parts5.map(f156165));
+                concat2 = concat2(parts5.map(f156178));
               } else if ("DTSTART" !== formatted) {
                 const _Error4 = Error;
                 const self7 = this;
@@ -7055,7 +7055,7 @@ let fn = function m() {
               if (!tmp12) {
                 _exdate.push(arg0);
                 if (typeof R === "function") {
-                  const sorted = _exdate.sort(f156174);
+                  const sorted = _exdate.sort(f156187);
                 } else {
                   throw new TypeError("Trying to call a non-function");
                 }
@@ -8691,7 +8691,7 @@ let fn = function m() {
       });
       obj = closure_4;
       if (typeof R === "function") {
-        const sorted = obj.sort(f156174);
+        const sorted = obj.sort(f156187);
         return closure_4;
       } else {
         throw new TypeError("Trying to call a non-function");
@@ -8715,7 +8715,7 @@ let fn = function m() {
         }
       });
       if (typeof R === "function") {
-        const sorted = mapped.sort(f156174);
+        const sorted = mapped.sort(f156187);
         return mapped;
       } else {
         throw new TypeError("Trying to call a non-function");
@@ -9127,14 +9127,14 @@ let fn = function m() {
   }
   let closure_36 = tmp4;
   fn = function j(arg0, arg1) {
-    const f156180 = (arg0, arg1) => {
+    const f156193 = (arg0, arg1) => {
       arg0.__proto__ = arg1;
     };
     fn = Object.setPrototypeOf;
     if (!fn) {
       const _Array = Array;
-      fn = Object.create([]) instanceof Array && f156180;
-      const fn2 = Object.create([]) instanceof Array && f156180;
+      fn = Object.create([]) instanceof Array && f156193;
+      const fn2 = Object.create([]) instanceof Array && f156193;
     }
     if (!fn) {
       fn = (arg0, obj) => {
@@ -9749,7 +9749,7 @@ let fn = function m() {
       });
       const _result = accept._result;
       if (typeof R === "function") {
-        const sorted = _result.sort(f156174);
+        const sorted = _result.sort(f156187);
         const method = accept.method;
         let tmp10 = _result;
         if ("all" !== method) {
@@ -9802,7 +9802,7 @@ let fn = function m() {
       });
     }
     valueOf() {
-      const f156167 = function(item) {
+      const f156180 = function(item) {
         let flag = closure_0;
         const valueOfResult = item.valueOf();
         if (typeof closure_2_33 === "function") {
@@ -9874,7 +9874,7 @@ let fn = function m() {
           const combined1 = concat("RDATE", ";TZID=");
           combined = combined1.concat(str, ":");
         }
-        let mapped = _rdate.map(f156167);
+        let mapped = _rdate.map(f156180);
         const concat2 = "".concat;
         const joined = mapped.join(",");
         const combined2 = "".concat(combined);
@@ -9898,7 +9898,7 @@ let fn = function m() {
           const concat3Result1 = concat3("EXDATE", ";TZID=");
           concat3Result = concat3Result1.concat(str8, ":");
         }
-        const mapped1 = _exdate.map(f156167);
+        const mapped1 = _exdate.map(f156180);
         const concat4 = "".concat;
         const joined1 = mapped1.join(",");
         const combined3 = "".concat(concat3Result);
@@ -10489,7 +10489,7 @@ let fn = function m() {
   function ot(str) {
     const parts = str.split("\n");
     const mapped = parts.map(st);
-    const found = mapped.filter(f156159);
+    const found = mapped.filter(f156172);
     return obj(obj({}, found[0]), found[1]);
   }
   const obj9 = {

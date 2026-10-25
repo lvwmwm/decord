@@ -93,7 +93,7 @@ export default function UserProfileMutuals(user) {
         totalCount: mapped.length,
         names: mapped.map((username) => username.username),
         children: mapped.map((user) => {
-              const obj = { user, size: user(c2[16]).AvatarSizes.SIZE_16, guildId: "r" };
+              const obj = { user, size: user(c2[16]).AvatarSizes.SIZE_16, guildId: "Array" };
               const Avatar = user(c2[16]).Avatar;
               return closure_1_6(Avatar, obj, user.id);
             })

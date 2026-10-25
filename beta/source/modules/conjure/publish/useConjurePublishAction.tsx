@@ -29,19 +29,19 @@ import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const conjurePublishFailureMessageDefault = conjurePublishFailureMessage;
-let _null, _require, c4, closure_10, closure_11, closure_13, f157183, integrationInstalled, promptFirstPublish;
+let _null, _require, c4, closure_10, closure_11, closure_13, f157196, integrationInstalled, promptFirstPublish;
 
 let closure_12;
 let tmp;
 let unpackModuleId;
 const _modDef3883 = tmp(3883);
-const f109906 = () => {
+const f109916 = () => {
 
 };
-const f109907 = () => {
+const f109917 = () => {
 
 };
-const f109913 = () => {
+const f109923 = () => {
 
 };
 function readPublishSubject(projectId, arg1) {
@@ -471,7 +471,7 @@ function hydratePreviewApplication(applicationId) {
     if (null == value) {
       const obj2 = require("ApplicationActionCreators");
       const application = obj2.fetchApplication(applicationId);
-      const nextPromise = application.then(f109906, f109907);
+      const nextPromise = application.then(f109916, f109917);
       const cleanupPromise = nextPromise.finally(() => map.delete(prop));
       const result = obj.set(applicationId, cleanupPromise);
       value = cleanupPromise;
@@ -539,7 +539,7 @@ function startPublish(project, isUpdate, arg2) {
       tmp(dependencyMap[24]);
       const tmpResult3 = tmp(dependencyMap[13]);
       const profile = fetchProfile(tmpResult3.conjureProductionBotUserId(project), { withMutualGuilds: true });
-      profile.catch(f109913);
+      profile.catch(f109923);
     }
     const tmpResult4 = tmp(dependencyMap[22]);
     result = tmpResult4.refreshPublishedProject(id, { isPreview: false });
@@ -953,13 +953,13 @@ obj = function _continuePublish() {
             closure_139_27.add(projectId);
             c12 = 2;
             const requestConsent = platform.requestConsent;
-            f157183 = requestConsent;
+            f157196 = requestConsent;
             if (requestConsent == null) {
-              f157183 = (arg0) => closure_2_18(arg0, closure_1_3);
+              f157196 = (arg0) => closure_2_18(arg0, closure_1_3);
             }
             c14 = 5;
             c15 = 1;
-            const obj10 = { value: f157183(projectId), done: false };
+            const obj10 = { value: f157196(projectId), done: false };
             return obj10;
           }
         } catch (tmp101) {
@@ -1223,7 +1223,7 @@ export default function useConjurePublishAction(arg0, arg1) {
       UserActionCreators;
       obj = conjureAppInServer;
       const profile = fetchProfile(obj.conjureProductionBotUserId(tmp), { withMutualGuilds: true });
-      profile.catch(f109913);
+      profile.catch(f109923);
     }
   }, items3);
   let application_id;
@@ -1343,7 +1343,7 @@ export const prepareConjurePublish = function prepareConjurePublish(projectId) {
       if (null == result) {
         const tmpResult2 = prop(6357);
         const application = tmpResult2.fetchApplication(prop);
-        const nextPromise = application.then(f109906, f109907);
+        const nextPromise = application.then(f109916, f109917);
         const cleanupPromise = nextPromise.finally(() => map.delete(prop));
         const result1 = obj2.set(prop, cleanupPromise);
         result = cleanupPromise;

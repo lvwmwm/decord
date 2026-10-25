@@ -30,7 +30,7 @@ export const preloadChannelAppFrame = function preloadChannelAppFrame(id) {
   let frameId;
   let timeout;
   let timeout1;
-  const f117526 = () => {
+  const f117540 = () => {
     const value = map.get(frameId);
     const obj = map;
     if (null != value) {
@@ -83,13 +83,13 @@ export const preloadChannelAppFrame = function preloadChannelAppFrame(id) {
       if (value == null) {
         const self3 = this;
         const self4 = this;
-        const obj4 = { stopTimer: timeout, launchRequestId: "a" };
+        const obj4 = { stopTimer: timeout, launchRequestId: "Array" };
         timeout = new frameId(2063).Timeout();
         value = obj4;
       }
       const result = obj9.set(frameId, value);
       const stopTimer2 = value.stopTimer;
-      stopTimer2.start(5000, f117526);
+      stopTimer2.start(5000, f117540);
     } else {
       let obj2 = FramesStore;
       if (null == FramesStore.getFrame(frameId)) {
@@ -103,13 +103,13 @@ export const preloadChannelAppFrame = function preloadChannelAppFrame(id) {
                 if (value3 == null) {
                   const self = this;
                   const self2 = this;
-                  const obj5 = { stopTimer: timeout1, launchRequestId: "a" };
+                  const obj5 = { stopTimer: timeout1, launchRequestId: "Array" };
                   timeout1 = new tmp7(2063).Timeout();
                   value3 = obj5;
                 }
                 const result1 = obj9.set(frameId, value3);
                 let stopTimer = value3.stopTimer;
-                stopTimer.start(5000, f117526);
+                stopTimer.start(5000, f117540);
                 const obj6 = { applicationId, surface, showErrorModal: false };
                 const tmp7Result2 = frameId(11044);
                 const launchFrameResult = tmp7Result2.launchFrame(obj6);

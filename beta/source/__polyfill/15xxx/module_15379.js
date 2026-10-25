@@ -6,9 +6,9 @@
 import _mod15327 from "module_15327" /* 15327 */;
 import _mod15328 from "module_15328" /* 15328 */;
 
-const f69988 = () => 42 !== Object.defineProperty(() => {
+const f69989 = () => 42 !== Object.defineProperty(() => {
 
 }, "prototype", { value: 42, writable: false }).prototype;
-_mod15327 && _mod15328(f69988);
+_mod15327 && _mod15328(f69989);
 
-export default _mod15327 && _mod15328(f69988);
+export default _mod15327 && _mod15328(f69989);

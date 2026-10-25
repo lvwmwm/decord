@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, map;
 
-const f93243 = () => {
+const f93253 = () => {
   c5 = false;
   map = new Map();
   for (const item10012 of closure_1_4) {
@@ -52,7 +52,7 @@ function registerKeyCommand(arg0) {
   if (!tmp4) {
     c5 = true;
     const _queueMicrotask = queueMicrotask;
-    queueMicrotask(f93243);
+    queueMicrotask(f93253);
   }
 }
 function unregisterKeyCommand(arg0) {
@@ -62,7 +62,7 @@ function unregisterKeyCommand(arg0) {
   if (!tmp) {
     c5 = true;
     const _queueMicrotask = queueMicrotask;
-    queueMicrotask(f93243);
+    queueMicrotask(f93253);
   }
 }
 let react_native = react_native_mod;
@@ -154,7 +154,7 @@ export const subscribeKeyCommand = function subscribeKeyCommand(arg0) {
   if (!tmp4) {
     c5 = true;
     let _queueMicrotask = queueMicrotask;
-    queueMicrotask(f93243);
+    queueMicrotask(f93253);
   }
   return () => {
     items = items.filter((item) => item !== closure_0);
@@ -162,7 +162,7 @@ export const subscribeKeyCommand = function subscribeKeyCommand(arg0) {
     if (!tmp) {
       c5 = true;
       const _queueMicrotask = queueMicrotask;
-      queueMicrotask(f93243);
+      queueMicrotask(f93253);
     }
   };
 };

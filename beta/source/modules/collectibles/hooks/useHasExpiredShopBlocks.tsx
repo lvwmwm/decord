@@ -15,7 +15,7 @@ let _require, dependencyMap;
 
 let c3;
 let closure_4;
-const f127087 = (type) => {
+const f127101 = (type) => {
   const tmp = time1;
   const tmp2 = closure_2_1;
   if (type.type === time1(closure_2_1[5]).ShopBlockType.IMMERSIVE_BANNER) {
@@ -68,7 +68,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
   const fn = function p() {
     let timeout;
     let c0 = null;
-    const item = timeout.forEach(f127087);
+    const item = timeout.forEach(f127101);
     const tmp3 = closure_1;
     if (!tmp3) {
       const tmp4 = closure_2;
@@ -112,7 +112,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
   let tmp3 = closure_3(() => {
     let timeout;
     let time1 = null;
-    const item = timeout.forEach(f127087);
+    const item = timeout.forEach(f127101);
     let tmp2 = time1;
     const tmp3 = closure_1;
     if (!tmp3) {

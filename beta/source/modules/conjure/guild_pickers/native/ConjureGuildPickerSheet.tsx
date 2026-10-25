@@ -203,7 +203,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureGuild
   let channelFilter;
   let str;
   let title;
-  const f145602 = (id) => ({ id: id.value, label: id.label });
+  const f145616 = (id) => ({ id: id.value, label: id.label });
   guildId = guildId.guildId;
   const type = guildId.type;
   const maxPicks = guildId.maxPicks;
@@ -306,7 +306,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureGuild
         } else {
           items = [value];
         }
-        onSubmit(items.map(f145602));
+        onSubmit(items.map(f145616));
         obj = ActionSheetActionCreatorsDefault;
         obj.hideActionSheet();
       } else if (hasItem) {
@@ -318,7 +318,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureGuild
       }
     },
     submitSelection() {
-      onSubmit(first.map(f145602));
+      onSubmit(first.map(f145616));
       obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
     },

@@ -52,7 +52,7 @@ UnenrolledActivityQuestStore.displayName = "UnenrolledActivityQuestStore";
 UnenrolledActivityQuestStore.persistKey = "UnenrolledActivityQuestStore";
 let obj = {
   UNENROLLED_ACTIVITY_QUEST_DISMISS: function handleDismissUnenrolledActivityQuest(questId) {
-    const f133275 = (item) => item.toString();
+    const f133289 = (item) => item.toString();
     if (_Set1.size >= 20) {
       const _Array = Array;
       const arr = Array.from(_Set1);
@@ -62,8 +62,8 @@ let obj = {
       const _Set = Set;
       const self = this;
       const self2 = this;
-      _Set1 = new Set(substr.map(f133275));
-      set = new Set(substr.map(f133275));
+      _Set1 = new Set(substr.map(f133289));
+      set = new Set(substr.map(f133289));
     }
     _Set1.add(questId.questId);
     return true;

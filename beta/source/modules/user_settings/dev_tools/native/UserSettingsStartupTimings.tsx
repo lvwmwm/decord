@@ -441,7 +441,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
           obj42 = {
             label: "Hide the Noise",
             onPress() {
-                      return closure_1_2(() => { /* body not rendered: F158116 */ });
+                      return closure_1_2(() => { /* body not rendered: F158129 */ });
                     },
             checked: closure_1
           };
@@ -450,7 +450,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
           obj43 = {
             label: "Hide paints",
             onPress() {
-                      return closure_1_4(() => { /* body not rendered: F158117 */ });
+                      return closure_1_4(() => { /* body not rendered: F158130 */ });
                     },
             checked: !closure_3
           };

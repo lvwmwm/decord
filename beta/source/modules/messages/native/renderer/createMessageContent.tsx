@@ -1222,7 +1222,7 @@ function createMessageContent(message) {
       }
       applicationIconSource = author.getAvatarSource(undefined);
     }
-    parseMessageMarkupResult = { content: "test", hasSpoilerEmbeds: "onGestureHandlerStateChange", hasBailedAst: "onContentSizeChange" };
+    parseMessageMarkupResult = { content: "test", hasSpoilerEmbeds: "insan", hasBailedAst: "kraliyet" };
   }
 }
 const processColor = react_native.processColor;

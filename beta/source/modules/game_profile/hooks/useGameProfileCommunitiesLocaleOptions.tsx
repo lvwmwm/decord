@@ -14,7 +14,7 @@ const require = globalThis.__r;
 const GameProfileCommunitiesLocaleFilterStore_mod = GameProfileCommunitiesLocaleFilterStore2;
 let _require;
 
-const f101866 = (locale) => {
+const f101876 = (locale) => {
   let intl2;
   let stringResult;
   closure_0 = locale;
@@ -33,7 +33,7 @@ const f101866 = (locale) => {
     return obj;
   }
 };
-const f101867 = (label, label2) => {
+const f101877 = (label, label2) => {
   label = label.label;
   return label.localeCompare(label2.label);
 };
@@ -65,8 +65,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameProfi
   if (cResult[1] !== arr) {
     const tmpResult = tmp(1128);
     _require = tmpResult.getAvailableLocales();
-    const mapped = arr.map(f101866);
-    const sorted = mapped.sort(f101867);
+    const mapped = arr.map(f101876);
+    const sorted = mapped.sort(f101877);
     cResult[1] = arr;
     cResult[2] = sorted;
     arr = sorted;
@@ -171,8 +171,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameProfi
   memo = react.useMemo(() => {
     let obj = intl3;
     const availableLocales = obj.getAvailableLocales();
-    const mapped = closure_1.map(f101866);
-    return mapped.sort(f101867);
+    const mapped = closure_1.map(f101876);
+    return mapped.sort(f101877);
   }, items);
   let obj = {
     options: react.useMemo(() => {

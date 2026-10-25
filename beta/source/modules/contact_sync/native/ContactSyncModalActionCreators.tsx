@@ -45,7 +45,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let unpackModuleId;
-const f116585 = (result) => {
+const f116599 = (result) => {
   closure_1_7(result);
 };
 function handleNameInputScreenOrSuggestions() {
@@ -729,7 +729,7 @@ export const upsellDismissed = function upsellDismissed() {
 export const openContactSyncModal = function openContactSyncModal(initialRoutes, HUB_PROGRESS, arg2) {
   obj = ContactSyncUtils;
   const result = obj.checkContactPermissions();
-  result.then(f116585);
+  result.then(f116599);
   const tmp2 = dependencyMap;
   if (null == initialRoutes.initialRoutes) {
     syncedClientThemes(map1.NORMAL);
@@ -778,7 +778,7 @@ export const openContactSyncModalDeeplink = function openContactSyncModalDeeplin
   obj = {};
   const obj2 = ContactSyncUtils;
   const result = obj2.checkContactPermissions();
-  result.then(f116585);
+  result.then(f116599);
   const tmp2 = dependencyMap;
   if (null == obj.initialRoutes) {
     syncedClientThemes(map1.NORMAL);
@@ -793,6 +793,6 @@ export const openContactSyncModalDeeplink = function openContactSyncModalDeeplin
 export const refreshContactSyncPermissionStatus = function refreshContactSyncPermissionStatus() {
   obj = ContactSyncUtils;
   const result = obj.checkContactPermissions();
-  result.then(f116585);
+  result.then(f116599);
 };
 export { closeContactSyncModal };

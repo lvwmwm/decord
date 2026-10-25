@@ -193,9 +193,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSav
       tmp = closure_4(true);
       tmp2 = closure_5(false);
       obj = closure_0(closure_2[8]);
-      result = obj.withConjureDatabaseLock(projectId, () => { /* body not rendered: F146230 */ });
-      nextPromise = result.then(() => { /* body not rendered: F146231 */ });
-      nextPromise1 = nextPromise.then(() => { /* body not rendered: F146232 */ }, () => { /* body not rendered: F146233 */ });
+      result = obj.withConjureDatabaseLock(projectId, () => { /* body not rendered: F146244 */ });
+      nextPromise = result.then(() => { /* body not rendered: F146245 */ });
+      nextPromise1 = nextPromise.then(() => { /* body not rendered: F146246 */ }, () => { /* body not rendered: F146247 */ });
       return;
     }
   }

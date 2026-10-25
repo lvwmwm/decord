@@ -82,8 +82,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpamRequests
   if (cResult[4] !== stateFromStoresArray) {
     class N {
       constructor() {
-        mapped = closure_1.map(() => { /* body not rendered: F152512 */ });
-        return mapped.filter(() => { /* body not rendered: F152513 */ });
+        mapped = closure_1.map(() => { /* body not rendered: F152525 */ });
+        return mapped.filter(() => { /* body not rendered: F152526 */ });
       }
     }
     const items2 = [stateFromStoresArray];
@@ -101,8 +101,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpamRequests
   } else {
     class N {
       constructor() {
-        mapped = closure_1.map(() => { /* body not rendered: F152512 */ });
-        return mapped.filter(() => { /* body not rendered: F152513 */ });
+        mapped = closure_1.map(() => { /* body not rendered: F152525 */ });
+        return mapped.filter(() => { /* body not rendered: F152526 */ });
       }
     }
     tmp15 = cResult[6];

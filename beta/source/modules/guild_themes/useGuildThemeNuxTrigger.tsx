@@ -117,8 +117,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildThem
             tmp4 = globalThis;
             _setTimeout = setTimeout;
             tmp5 = closure_5;
-            closure_0 = setTimeout(() => { /* body not rendered: F150767 */ }, closure_5);
-            return () => { /* body not rendered: F150768 */ };
+            closure_0 = setTimeout(() => { /* body not rendered: F150780 */ }, closure_5);
+            return () => { /* body not rendered: F150781 */ };
           }
         }
       }

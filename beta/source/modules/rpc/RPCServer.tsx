@@ -68,7 +68,12 @@ class RPCServer {
       if (null == currentUser) {
         v.close(metroRequire.CLOSE_NORMAL, "User logged out");
       } else {
-        obj.user = transformUserDefault(currentUser);
+        const tmp8 = transformUserDefault(currentUser);
+        const tmp9 = v.transport === TransportTypes.POST_MESSAGE && null == tmp8.avatar;
+        if (tmp9) {
+          delete tmp8["avatar"];
+        }
+        obj.user = tmp8;
       }
     }
     self.dispatch(v, null, metroImportDefault.DISPATCH, constants5.READY, obj);
@@ -82,7 +87,7 @@ class RPCServer {
     this.onDisconnect(abortController, arg1);
   }
   handleRequest(socket, arg1) {
-    const f101277 = (result) => {
+    const f101287 = (result) => {
       let closure_0 = self(function*(arg0, value) {
         let closure_1;
         closure_0 = arg0;
@@ -202,8 +207,8 @@ class RPCServer {
       const tmp21 = new RPCErrorDefault(obj4, "Payload requires a nonce");
       throw tmp21;
     });
-    const then = promise.then(f101277).then;
-    promise.then(f101277);
+    const then = promise.then(f101287).then;
+    promise.then(f101287);
     let closure_0 = self((command) => {
       let closure_1;
       let c3 = 0;

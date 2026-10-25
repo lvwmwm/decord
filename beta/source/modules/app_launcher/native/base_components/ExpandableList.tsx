@@ -452,7 +452,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Expandable
   let obj14;
   let showsExpandCTAOverride;
   let title;
-  const f145946 = (fn, index) => {
+  const f145960 = (fn, index) => {
     const isLastRow = closure_1 && index === memo1.length - 1;
     return fn({ isLastRow });
   };
@@ -562,7 +562,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Expandable
     onLayout: function handleCollapsedListLayout(nativeEvent) {
       const result = sharedValue.set(nativeEvent.nativeEvent.layout.height);
     },
-    children: memo.map(f145946)
+    children: memo.map(f145960)
   };
   View = tmp4(4945).View;
   const tmp16 = bound;
@@ -580,7 +580,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Expandable
         },
       accessibilityElementsHidden: !first,
       importantForAccessibility: "no-hide-descendants",
-      children: memo1.map(f145946)
+      children: memo1.map(f145960)
     };
     tmp17Result = tmp17(tmp18, obj9);
   }

@@ -470,7 +470,7 @@ export const chatInputHandleSendText = function chatInputHandleSendText(text) {
               threadId: channel.id,
               attachments: uploads,
               sendMessage() {
-                          obj = { text: require, parsedMessage, tts: "application", source: true, params };
+                          obj = { text: require, parsedMessage, tts: "application", source: null, params };
                           chatInputSendMessage(obj);
                         }
             };
@@ -478,7 +478,7 @@ export const chatInputHandleSendText = function chatInputHandleSendText(text) {
             obj5.openLazy(tmp20(2002)(12855, tmp21.paths), "add-media-to-original-forum-post", obj4);
           }
         }
-        const obj6 = { text, parsedMessage: tmp2, tts: "application", source: "<string:1107361793>", params };
+        const obj6 = { text, parsedMessage: tmp2, tts: "application", source: true, params };
         chatInputSendMessage(obj6);
       }
     }

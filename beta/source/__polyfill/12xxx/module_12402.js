@@ -141,7 +141,7 @@ let items = [
     key: "setUser",
     value: function setUser(user) {
       const self = this;
-      const tmp = user || { email: "unicodeVersion", id: "code", ip_address: "loadJsonAsset", username: "color" };
+      const tmp = user || { email: "enabled", id: "Date", ip_address: "toCharArray$esjava$1", username: "toCharArray$esjava$1" };
       this._user = tmp;
       if (this._session) {
         const obj2 = { user };

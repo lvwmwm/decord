@@ -11,7 +11,7 @@ import size from "module_2" /* 2 */;
 
 let set;
 
-const f112002 = (arg0) => arg0[1];
+const f112012 = (arg0) => arg0[1];
 let c2 = "<file:(\\d{16}-[a-z0-9]{6})>";
 let regExp = new RegExp("<file:(\\d{16}-[a-z0-9]{6})>", "g");
 const regExp1 = new RegExp("<file:(\\d{16}-[a-z0-9]{6})>");
@@ -24,8 +24,8 @@ export const hasConjureFileMentions = function hasConjureFileMentions(arg0) {
   return regExp1.test(arg0);
 };
 export const conjureFileMentionIds = function conjureFileMentionIds(str) {
-  const items = [...new Set(Array.from(str.matchAll(regExp), f112002))];
-  new Set(Array.from(str.matchAll(regExp), f112002));
+  const items = [...new Set(Array.from(str.matchAll(regExp), f112012))];
+  new Set(Array.from(str.matchAll(regExp), f112012));
   return items;
 };
 export const filterConjureFileCandidates = function filterConjureFileCandidates(arr, text) {
@@ -61,7 +61,7 @@ export const withoutInlineFileMentions = function withoutInlineFileMentions(atta
       const self = this;
       const self2 = this;
       const items = [];
-      set = new Set(Array.from(content.matchAll(regExp), f112002));
+      set = new Set(Array.from(content.matchAll(regExp), f112012));
       HermesBuiltin.arraySpread(items, set, 0);
       const self3 = this;
       const self4 = this;

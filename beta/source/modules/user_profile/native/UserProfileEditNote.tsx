@@ -81,13 +81,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
             setOptions = closure_4.setOptions;
             obj2 = closure_0(closure_2[11]);
             obj.headerLeft = obj2.getHeaderConditionalBackButton(() => {
-              const promise = new Promise(() => { /* body not rendered: F157713 */ });
+              const promise = new Promise(() => { /* body not rendered: F157726 */ });
               return promise;
             });
             obj.headerRight = function headerRight(arg0) {
               let intl;
               let str;
-              const obj = { label: intl.string(userId(onClose[14]).t["R3BPH+"]), disabled: str === first, onPress() { /* body not rendered: F157714 */ } };
+              const obj = { label: intl.string(userId(onClose[14]).t["R3BPH+"]), disabled: str === first, onPress() { /* body not rendered: F157727 */ } };
               const HeaderTextButton = userId(onClose[13]).HeaderTextButton;
               const merged = Object.assign(arg0);
               intl = userId(onClose[14]).intl;
@@ -139,13 +139,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
           setOptions = closure_4.setOptions;
           obj2 = closure_0(closure_2[11]);
           obj.headerLeft = obj2.getHeaderConditionalBackButton(() => {
-            const promise = new Promise(() => { /* body not rendered: F157713 */ });
+            const promise = new Promise(() => { /* body not rendered: F157726 */ });
             return promise;
           });
           obj.headerRight = function headerRight(arg0) {
             let intl;
             let str;
-            const obj = { label: intl.string(userId(onClose[14]).t["R3BPH+"]), disabled: str === first, onPress() { /* body not rendered: F157714 */ } };
+            const obj = { label: intl.string(userId(onClose[14]).t["R3BPH+"]), disabled: str === first, onPress() { /* body not rendered: F157727 */ } };
             const HeaderTextButton = userId(onClose[13]).HeaderTextButton;
             const merged = Object.assign(arg0);
             intl = userId(onClose[14]).intl;

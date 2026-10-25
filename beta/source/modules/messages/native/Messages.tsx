@@ -801,7 +801,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -841,7 +841,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -876,7 +876,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -903,7 +903,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
         embeddedActivitiesByChannel = closure_8.getEmbeddedActivitiesByChannel();
         item = embeddedActivitiesByChannel.forEach((arr, index) => {
           let closure_0 = index;
-          let item = arr.forEach(() => { /* body not rendered: F156952 */ });
+          let item = arr.forEach(() => { /* body not rendered: F156965 */ });
         });
         return Array.from(set);
       }
@@ -925,7 +925,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -961,7 +961,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -988,7 +988,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
         embeddedActivitiesByChannel = closure_8.getEmbeddedActivitiesByChannel();
         item = embeddedActivitiesByChannel.forEach((arr, index) => {
           let closure_0 = index;
-          let item = arr.forEach(() => { /* body not rendered: F156952 */ });
+          let item = arr.forEach(() => { /* body not rendered: F156965 */ });
         });
         return Array.from(set);
       }
@@ -1010,7 +1010,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1046,7 +1046,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1073,7 +1073,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
         embeddedActivitiesByChannel = closure_8.getEmbeddedActivitiesByChannel();
         item = embeddedActivitiesByChannel.forEach((arr, index) => {
           let closure_0 = index;
-          let item = arr.forEach(() => { /* body not rendered: F156952 */ });
+          let item = arr.forEach(() => { /* body not rendered: F156965 */ });
         });
         return Array.from(set);
       }
@@ -1095,7 +1095,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1131,7 +1131,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1176,7 +1176,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1213,7 +1213,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1258,7 +1258,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1295,7 +1295,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1340,7 +1340,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1379,7 +1379,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1417,7 +1417,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1453,7 +1453,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1485,7 +1485,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
             const value = iter.next().value;
             let findActivityResult;
             if (null != value) {
-              findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+              findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
             }
             let details;
             if (findActivityResult != null) {
@@ -1523,7 +1523,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
             const value = iter.next().value;
             let findActivityResult;
             if (null != value) {
-              findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+              findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
             }
             let details;
             if (findActivityResult != null) {
@@ -1561,7 +1561,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
             const value = iter.next().value;
             let findActivityResult;
             if (null != value) {
-              findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+              findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
             }
             let details;
             if (findActivityResult != null) {
@@ -1599,7 +1599,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
             const value = iter.next().value;
             let findActivityResult;
             if (null != value) {
-              findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+              findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
             }
             let details;
             if (findActivityResult != null) {
@@ -1637,7 +1637,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1671,7 +1671,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1711,7 +1711,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1744,7 +1744,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1784,7 +1784,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1821,7 +1821,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1863,7 +1863,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1899,7 +1899,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1939,7 +1939,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1972,7 +1972,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -2015,7 +2015,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -2051,7 +2051,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -2091,7 +2091,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -2124,7 +2124,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -2167,7 +2167,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -2203,7 +2203,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -2243,7 +2243,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156951 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156964 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -2556,7 +2556,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
   let unloadedContentEntryMessageIds;
   let useReducedMotion;
   let version;
-  const f106732 = () => {
+  const f106742 = () => {
     const items = [LocalInteractionComponentStateStore.getInteractionComponentStates(), LocalInteractionComponentStateStore.getInteractionComponentStateVersion()];
     return items;
   };
@@ -2847,8 +2847,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
   const stateFromStoresObject3 = tmp2Result112.useStateFromStoresObject(items46, () => messageInteractionStates.getMessageInteractionStates());
   const items47 = [LocalInteractionComponentStateStore];
   const tmp2Result113 = tmp2(tmp3[62]);
-  [tmp67, tmp68] = stateFromStores1(tmp2Result113.useStateFromStores(items47, f106732, [], tmp2(tmp3[75]).isVersionEqual), 2);
-  stateFromStores1(tmp2Result113.useStateFromStores(items47, f106732, [], tmp2(tmp3[75]).isVersionEqual), 2);
+  [tmp67, tmp68] = stateFromStores1(tmp2Result113.useStateFromStores(items47, f106742, [], tmp2(tmp3[75]).isVersionEqual), 2);
+  stateFromStores1(tmp2Result113.useStateFromStores(items47, f106742, [], tmp2(tmp3[75]).isVersionEqual), 2);
   const items48 = [ExperimentStore];
   const tmp2Result114 = tmp2(tmp3[62]);
   let stateFromStores22 = tmp2Result114.useStateFromStores(items48, () => hasLoadedExperiments.hasLoadedExperiments);

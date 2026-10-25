@@ -1196,7 +1196,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
     class N {
       constructor(arg0) {
         closure_0 = onSelectRow;
-        obj = { guildId: guild_id, user: onSelectRow, isEditing: closure_0, onSelect() { /* body not rendered: F152618 */ }, onDelete() { /* body not rendered: F152619 */ } };
+        obj = { guildId: guild_id, user: onSelectRow, isEditing: closure_0, onSelect() { /* body not rendered: F152631 */ }, onDelete() { /* body not rendered: F152632 */ } };
         return closure_1_16(closure_1_24, obj, onSelectRow.id);
       }
     }

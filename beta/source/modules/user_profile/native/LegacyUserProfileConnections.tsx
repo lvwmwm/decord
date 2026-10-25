@@ -249,7 +249,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedUse
                       tmp4 = account;
                       tmp5 = PlatformTypes;
                       obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                      obj1.onConfirm = function onConfirm() { /* body not rendered: F145193 */ };
+                      obj1.onConfirm = function onConfirm() { /* body not rendered: F145207 */ };
                       handleClickResult = obj.handleClick(obj1);
                     }
                     return;
@@ -284,7 +284,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedUse
                       tmp4 = account;
                       tmp5 = PlatformTypes;
                       obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                      obj1.onConfirm = function onConfirm() { /* body not rendered: F145193 */ };
+                      obj1.onConfirm = function onConfirm() { /* body not rendered: F145207 */ };
                       handleClickResult = obj.handleClick(obj1);
                     }
                     return;
@@ -314,7 +314,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedUse
                       tmp4 = account;
                       tmp5 = PlatformTypes;
                       obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                      obj1.onConfirm = function onConfirm() { /* body not rendered: F145193 */ };
+                      obj1.onConfirm = function onConfirm() { /* body not rendered: F145207 */ };
                       handleClickResult = obj.handleClick(obj1);
                     }
                     return;
@@ -394,7 +394,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedUse
               tmp4 = account;
               tmp5 = PlatformTypes;
               obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-              obj1.onConfirm = function onConfirm() { /* body not rendered: F145193 */ };
+              obj1.onConfirm = function onConfirm() { /* body not rendered: F145207 */ };
               handleClickResult = obj.handleClick(obj1);
             }
             return;
@@ -472,7 +472,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedUse
           tmp4 = account;
           tmp5 = PlatformTypes;
           obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-          obj1.onConfirm = function onConfirm() { /* body not rendered: F145193 */ };
+          obj1.onConfirm = function onConfirm() { /* body not rendered: F145207 */ };
           handleClickResult = obj.handleClick(obj1);
         }
         return;
@@ -528,7 +528,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedUse
           tmp4 = account;
           tmp5 = PlatformTypes;
           obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-          obj1.onConfirm = function onConfirm() { /* body not rendered: F145193 */ };
+          obj1.onConfirm = function onConfirm() { /* body not rendered: F145207 */ };
           handleClickResult = obj.handleClick(obj1);
         }
         return;
@@ -939,7 +939,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
                   if (null != applicationRoleConnection.application.bot) {
                     const self = this;
                     const self2 = this;
-                    const obj2 = { style: tmp3.connectedAccountPoweredByAvatar, user: tmp10, size: native.AvatarSizes.SIZE_16, guildId: "a" };
+                    const obj2 = { style: tmp3.connectedAccountPoweredByAvatar, user: tmp10, size: native.AvatarSizes.SIZE_16, guildId: "Array" };
                     const Avatar = native.Avatar;
                     tmp10 = new UserRecord(applicationRoleConnection.application.bot);
                     tmp5 = syncedClientThemes(Avatar, obj2);
@@ -1040,7 +1040,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
       if (null != applicationRoleConnection.application.bot) {
         const self = this;
         const self2 = this;
-        const obj2 = { style: tmp3.connectedAccountPoweredByAvatar, user: tmp10, size: native.AvatarSizes.SIZE_16, guildId: "a" };
+        const obj2 = { style: tmp3.connectedAccountPoweredByAvatar, user: tmp10, size: native.AvatarSizes.SIZE_16, guildId: "Array" };
         const Avatar = native.Avatar;
         tmp10 = new UserRecord(applicationRoleConnection.application.bot);
         tmp5 = syncedClientThemes(Avatar, obj2);

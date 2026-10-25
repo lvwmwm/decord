@@ -39,7 +39,7 @@ let closure_17;
 let closure_18;
 let closure_19;
 let closure_20;
-const f119858 = (type) => type.type === constants.LISTENING;
+const f119872 = (type) => type.type === constants.LISTENING;
 function createActivityStreamRequestInviteEmbed(application, guildId, forcedTheme, application1) {
   let appGradientColors;
   let applicationActivity;
@@ -101,7 +101,7 @@ function createActivityStreamRequestInviteEmbed(application, guildId, forcedThem
     }
     applicationActivity = PresenceStore.getApplicationActivity(tmp18, application.application.id);
   } else {
-    applicationActivity = PresenceStore.findActivity(application.author.id, f119858);
+    applicationActivity = PresenceStore.findActivity(application.author.id, f119872);
   }
   let id2;
   const tmpResult = isInviteActiveDefault;
@@ -221,7 +221,7 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
             }
             applicationActivity = PresenceStore.getApplicationActivity(tmp25, message.application.id);
           } else {
-            applicationActivity = PresenceStore.findActivity(message.author.id, f119858);
+            applicationActivity = PresenceStore.findActivity(message.author.id, f119872);
           }
           const activity3 = message.activity;
           let type2;
@@ -509,11 +509,11 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
                   intl12 = tmp4(1128).intl;
                   obj16 = obj10;
                 } else if (canSendInvite) {
-                  const obj11 = { label: intl11.string(tmp4(1128).t["hC/Zey"]), disabled: message.author.id === id3, footerLabel: "r" };
+                  const obj11 = { label: intl11.string(tmp4(1128).t["hC/Zey"]), disabled: message.author.id === id3, footerLabel: "Array" };
                   intl11 = tmp4(1128).intl;
                   obj16 = obj11;
                 } else if (isInParty) {
-                  const obj12 = { label: intl10.string(tmp4(1128).t.KC26NR), disabled: true, footerLabel: "a" };
+                  const obj12 = { label: intl10.string(tmp4(1128).t.KC26NR), disabled: true, footerLabel: "Array" };
                   intl10 = tmp4(1128).intl;
                   obj16 = obj12;
                 } else if (isAskToJoin) {
@@ -646,7 +646,7 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
               return null;
             }
           }
-          obj = { displayType: obj.BLOCKED, headerText: intl.string(tmp4(1128).t.pkq6Vq), subtitle: stringResult5, ctaButtonEnabled: false, ctaButtonText: "Reflect", ctaButtonIsLoading: "Array", footerLabel: "test", gradientColors: [], iconSrc: null, isPlatformSupported: "Array", isSpotifyParty: "end", maxPartySize: "username", partyMemberAvatarURIs: "", partySizeText: 720, platformIconKeys: [], coverImageUrl: 115, detailsText: 512, title: 0 };
+          obj = { displayType: obj.BLOCKED, headerText: intl.string(tmp4(1128).t.pkq6Vq), subtitle: stringResult5, ctaButtonEnabled: false, ctaButtonText: "Reflect", ctaButtonIsLoading: "Array", footerLabel: "test", gradientColors: [], iconSrc: null, isPlatformSupported: "Array", isSpotifyParty: "__packager_asset", maxPartySize: "formatToPlainString", partyMemberAvatarURIs: "sa", partySizeText: -262050131775794300000000000000000000000000000000000000000000000000000000000000000000000000000000000000, platformIconKeys: [], coverImageUrl: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009432759788671276, detailsText: -18446906182744170000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, title: -615.9891406249999 };
           intl = tmp4(1128).intl;
           if (contentClassificationVisibility === tmp4(12797).ContentClassificationVisibility.BLOCK_UNDERAGE) {
             const intl3 = tmp4(1128).intl;

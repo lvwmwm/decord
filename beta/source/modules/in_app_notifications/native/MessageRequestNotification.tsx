@@ -58,7 +58,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReq
     }
     if (cResult[6] !== author) {
       const Avatar = tmp(1202).Avatar;
-      const tmp11 = <Avatar user={author} size={native.AvatarSizes.NORMAL} guildId="r" />;
+      const tmp11 = <Avatar user={author} size={native.AvatarSizes.NORMAL} guildId="Array" />;
       cResult[6] = author;
       cResult[7] = tmp11;
       tmp9 = tmp11;
@@ -120,7 +120,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReq
     }
   }, []);
   const NotificationPressable = author(13555).NotificationPressable;
-  let obj2 = { user: author, size: author(1202).AvatarSizes.NORMAL, guildId: "r" };
+  let obj2 = { user: author, size: author(1202).AvatarSizes.NORMAL, guildId: "Array" };
   const Avatar = author(1202).Avatar;
   ({ text: intl.string(author(1128).t["Bx4/Lf"]) });
   const SystemMessageText = author(13527).SystemMessageText;

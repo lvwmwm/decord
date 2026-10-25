@@ -16,7 +16,7 @@ import size_mod from "module_2" /* 2 */;
 let obj2;
 let tmp;
 const Text_Text = tmp(5187);
-const f112507 = (label) => {
+const f112521 = (label) => {
   let Children;
   let cloneElement;
   let cloneElementResult;
@@ -45,7 +45,7 @@ const f112507 = (label) => {
       cloneElementResult = mapped;
       if (null != mapped.props.children) {
         ({ Children, cloneElement } = tmp11);
-        cloneElementResult = cloneElement(mapped, undefined, Children.map(mapped.props.children, f112507));
+        cloneElementResult = cloneElement(mapped, undefined, Children.map(mapped.props.children, f112521));
       }
     }
   }
@@ -193,7 +193,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanC
   let mapped = markup;
   if (null != conjurePlanCommandPattern) {
     const Children = react.Children;
-    mapped = Children.map(markup, f112507);
+    mapped = Children.map(markup, f112521);
   }
   cResult[0] = markup;
   cResult[1] = conjurePlanCommandPattern;
@@ -216,7 +216,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanC
       let closure_0 = tmp;
       let closure_1 = size;
       const Children = react.Children;
-      mapped = Children.map(markup, f112507);
+      mapped = Children.map(markup, f112521);
     }
     return mapped;
   }, items);

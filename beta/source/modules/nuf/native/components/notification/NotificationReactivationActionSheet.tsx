@@ -77,7 +77,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
     const fn2 = function v() {
       const SKIP_STEP = EventActionType.SKIP_STEP;
       const obj = AnalyticsUtilsDefault;
-      const obj2 = { action_type: SKIP_STEP, action_location: _location, permission_granted: "r" };
+      const obj2 = { action_type: SKIP_STEP, action_location: _location, permission_granted: "Array" };
       obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
       const obj3 = ActionSheetActionCreatorsDefault;
       obj3.hideActionSheet();
@@ -233,7 +233,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
   const callback1 = react.useCallback(() => {
     const SKIP_STEP = EventActionType.SKIP_STEP;
     const obj = AnalyticsUtilsDefault;
-    const obj2 = { action_type: SKIP_STEP, action_location: _location, permission_granted: "r" };
+    const obj2 = { action_type: SKIP_STEP, action_location: _location, permission_granted: "Array" };
     obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
     const obj3 = ActionSheetActionCreatorsDefault;
     obj3.hideActionSheet();

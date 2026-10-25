@@ -73,7 +73,7 @@ if ("captureStackTrace" in Error) {
 
   };
 }
-const f58427 = function() {
+const f58428 = function() {
   if (typeof navigator !== "undefined") {
     let hasItem;
     if (navigator != null) {

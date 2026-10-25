@@ -366,7 +366,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pricin
   let tmp16;
   let tmp2Result17;
   let tmp2Result18;
-  const f120469 = () => {
+  const f120483 = () => {
     const items = [IAPStore.getProduct(closure_0(str3[18]).ProductIds.PREMIUM_GUILD_1_MONTHLY), IAPStore.getProduct(closure_0(str3[18]).ProductIds.PREMIUM_TIER_2_MONTHLY), IAPStore.getProduct(closure_0(str3[18]).ProductIds.PREMIUM_TIER_2_PREMIUM_GUILD_1_MONTHLY), IAPStore.getProduct(closure_0(str3[18]).ProductIds.PREMIUM_TIER_2_YEARLY), IAPStore.getProduct(closure_0(str3[18]).ProductIds.PREMIUM_TIER_2_PREMIUM_GUILD_1_YEARLY)];
     return items;
   };
@@ -402,8 +402,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pricin
   }, []);
   const items4 = [IAPStore];
   const obj7 = require("get initialized");
-  [tmp12, tmp13, tmp14, tmp15, tmp16] = str2(obj7.useStateFromStoresArray(items4, f120469), 5);
-  str2(obj7.useStateFromStoresArray(items4, f120469), 5);
+  [tmp12, tmp13, tmp14, tmp15, tmp16] = str2(obj7.useStateFromStoresArray(items4, f120483), 5);
+  str2(obj7.useStateFromStoresArray(items4, f120483), 5);
   const obj8 = IAPStore;
   if (stateFromStores2 == null) {
     stateFromStores2 = closure_13[constants.PREMIUM_MONTH_GUILD];

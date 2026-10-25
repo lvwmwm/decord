@@ -4,15 +4,15 @@
 
 // Module 5221
 let tmp7;
-const f140942 = (item) => {
+const f140956 = (item) => {
   let closure_0 = item;
   obj4[item] = function(arg0) {
     return this._invoke(closure_0, arg0);
   };
 };
 function enqueue(arg0, arg1) {
-  const f159209 = (arg0, fn) => {
-    const f155579 = (result) => {
+  const f159222 = (arg0, fn) => {
+    const f155592 = (result) => {
       const tmp2 = closure_1_10(closure_2_0.next, closure_2_0, result);
       const tmp = closure_1;
       if ("throw" !== tmp2.type) {
@@ -22,7 +22,7 @@ function enqueue(arg0, arg1) {
           if (typeof value === "object") {
             if (closure_0.call(value, "__await")) {
               const resolved = Promise.resolve(value.__await);
-              resolved.then(f155579, f155580);
+              resolved.then(f155592, f155593);
             }
           }
         }
@@ -30,12 +30,12 @@ function enqueue(arg0, arg1) {
         resolved1.then((value) => {
           iter.value = value;
           closure_0(iter);
-        }, f155582);
+        }, f155595);
       } else {
         tmp(tmp2.arg);
       }
     };
-    const f155580 = (arg0) => {
+    const f155593 = (arg0) => {
       const tmp2 = closure_1_10(closure_2_0.throw, closure_2_0, arg0);
       const tmp = closure_1;
       if ("throw" !== tmp2.type) {
@@ -45,7 +45,7 @@ function enqueue(arg0, arg1) {
           if (typeof value === "object") {
             if (closure_0.call(value, "__await")) {
               const resolved = Promise.resolve(value.__await);
-              resolved.then(f155579, f155580);
+              resolved.then(f155592, f155593);
             }
           }
         }
@@ -53,12 +53,12 @@ function enqueue(arg0, arg1) {
         resolved1.then((value) => {
           iter.value = value;
           closure_0(iter);
-        }, f155582);
+        }, f155595);
       } else {
         tmp(tmp2.arg);
       }
     };
-    const f155582 = (arg0) => {
+    const f155595 = (arg0) => {
       let tmp4;
       const tmp2 = closure_1_10(closure_2_0.throw, closure_2_0, arg0);
       const tmp = closure_1;
@@ -69,7 +69,7 @@ function enqueue(arg0, arg1) {
           if (typeof value === "object") {
             if (closure_0.call(value, "__await")) {
               const resolved = Promise.resolve(value.__await);
-              nextPromise = resolved.then(f155579, f155580);
+              nextPromise = resolved.then(f155592, f155593);
             }
             tmp4 = nextPromise;
           }
@@ -78,7 +78,7 @@ function enqueue(arg0, arg1) {
         nextPromise = resolved1.then((value) => {
           iter.value = value;
           closure_0(iter);
-        }, f155582);
+        }, f155595);
       } else {
         tmp(tmp2.arg);
       }
@@ -94,7 +94,7 @@ function enqueue(arg0, arg1) {
         if (typeof value === "object") {
           if (closure_1_0.call(value, "__await")) {
             let resolved = Promise.resolve(value.__await);
-            nextPromise = resolved.then(f155579, f155580);
+            nextPromise = resolved.then(f155592, f155593);
           }
         }
       }
@@ -102,7 +102,7 @@ function enqueue(arg0, arg1) {
       resolved1.then((value) => {
         iter.value = value;
         closure_0(iter);
-      }, f155582);
+      }, f155595);
     } else {
       let tmp2 = fn(tmp.arg);
     }
@@ -112,7 +112,7 @@ function enqueue(arg0, arg1) {
   let promise = nextPromise;
   if (promise) {
     function callInvokeWithMethodAndArg() {
-      const promise = new Promise(f159209);
+      const promise = new Promise(f159222);
       return promise;
     }
     nextPromise = promise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg);
@@ -121,7 +121,7 @@ function enqueue(arg0, arg1) {
     const _Promise = Promise;
     const self = this;
     const self2 = this;
-    nextPromise = new Promise(f159209);
+    nextPromise = new Promise(f159222);
   }
   return nextPromise;
 }
@@ -518,7 +518,7 @@ if (regeneratorRuntime) {
   tmp6.awrap = (__await) => ({ __await });
   let closure_0 = AsyncIterator.prototype;
   let items1 = ["next", "throw", "return"];
-  let item = items1.forEach(f140942);
+  let item = items1.forEach(f140956);
   AsyncIterator.prototype[tmp4] = function() {
     return this;
   };
@@ -635,7 +635,7 @@ if (regeneratorRuntime) {
     return nextPromise;
   };
   const items2 = ["next", "throw", "return"];
-  const item1 = items2.forEach(f140942);
+  const item1 = items2.forEach(f140956);
   let str7 = "Generator";
   obj4[tmp5] = "Generator";
   obj4[tmp3] = function() {
