@@ -1,10 +1,10 @@
-// Module ID: 12747
-// Function ID: 12748
+// Module ID: 12752
+// Function ID: 12753
 // Name: ExperimentEmbed
-// Dependencies: [19, 17, 502, 5191, 7809, 21, 8275, 8485, 11215, 11216, 4993, 12748, 12749, 12750, 8277, 12751, 558, 576, 8487, 5210, 5195, 7248, 12752, 5265, 11214, 2]
+// Dependencies: [19, 17, 502, 5191, 7809, 21, 8275, 8485, 11216, 11217, 4993, 12753, 12754, 12755, 8277, 12756, 558, 576, 8487, 5210, 5195, 7248, 12757, 5265, 11215, 2]
 // Exports: createExperimentEmbed
 
-// Module 12747 (ExperimentEmbed)
+// Module 12752 (ExperimentEmbed)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -17,10 +17,10 @@ import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8275 */;
 import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8277 */;
 import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 8485 */;
 import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 8487 */;
-import useLegacyExperiments from "useLegacyExperiments" /* 11215 */;
-import useApexExperiments from "useApexExperiments" /* 11216 */;
-import useExperimentAssignments from "useExperimentAssignments" /* 12750 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12751 */;
+import useLegacyExperiments from "useLegacyExperiments" /* 11216 */;
+import useApexExperiments from "useApexExperiments" /* 11217 */;
+import useExperimentAssignments from "useExperimentAssignments" /* 12755 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12756 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -29,7 +29,7 @@ import size from "module_2" /* 2 */;
 let BottomSheet, map;
 
 let tmp;
-const useCodedLinksExperimentEmbeds = tmp(11214);
+const useCodedLinksExperimentEmbeds = tmp(11215);
 const Image = react_native.Image;
 const ExperimentEmbedType = ExperimentConstants.ExperimentEmbedType;
 const InviteTypes = Constants.InviteTypes;
@@ -429,9 +429,9 @@ export const createExperimentEmbed = function createExperimentEmbed(url, arg1) {
   resolveAssetSource = Image.resolveAssetSource;
   const tmp4Result10 = themes;
   if (tmp4Result10.isThemeDark(arg1)) {
-    tmpResult = tmp(12748);
+    tmpResult = tmp(12753);
   } else {
-    tmpResult = tmp(12749);
+    tmpResult = tmp(12754);
   }
   return obj7;
 };

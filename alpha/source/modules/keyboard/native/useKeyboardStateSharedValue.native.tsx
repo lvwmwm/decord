@@ -1,11 +1,11 @@
-// Module ID: 12530
-// Function ID: 12531
+// Module ID: 12534
+// Function ID: 12535
 // Name: useKeyboardStateSharedValue
-// Dependencies: [1501, 5052, 5596, 1899, 5161, 10901, 2]
+// Dependencies: [1501, 5052, 5596, 1899, 5161, 10902, 2]
 // Exports: default, getKeyboardStateWorklet
 
-// Module 12530 (useKeyboardStateSharedValue)
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10901 */;
+// Module 12534 (useKeyboardStateSharedValue)
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10902 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1501 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
 import useCustomKeyboardHeight_mod from "useCustomKeyboardHeight" /* 5596 */;

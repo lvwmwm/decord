@@ -1,9 +1,9 @@
-// Module ID: 16073
-// Function ID: 16074
+// Module ID: 16078
+// Function ID: 16079
 // Name: KeyImage
-// Dependencies: [17, 21, 4971, 587, 558, 576, 16074, 2]
+// Dependencies: [17, 21, 4971, 587, 558, 576, 16079, 2]
 
-// Module 16073 (KeyImage)
+// Module 16078 (KeyImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
@@ -14,7 +14,7 @@ import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const SecurityKeySpotIllustration = tmp(16074);
+const SecurityKeySpotIllustration = tmp(16079);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { container: obj2 };

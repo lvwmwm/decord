@@ -1,10 +1,10 @@
-// Module ID: 14046
-// Function ID: 14047
+// Module ID: 14051
+// Function ID: 14052
 // Name: HexagonCampaignEntitlements
 // Dependencies: [4996, 4998, 5028, 2053, 2]
 // Exports: canUseAllAppIcons
 
-// Module 14046 (HexagonCampaignEntitlements)
+// Module 14051 (HexagonCampaignEntitlements)
 import PremiumUtilsDefault from "PremiumUtils" /* 2053 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4996 */;
 import HexagonCampaignUtils from "HexagonCampaignUtils" /* 4998 */;

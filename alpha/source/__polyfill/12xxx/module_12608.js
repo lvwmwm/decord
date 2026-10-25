@@ -1,42 +1,13 @@
 // Module ID: 12608
 // Function ID: 12609
-// Dependencies: [12580]
-// Exports: handleCallbackErrors
+// Dependencies: [12574]
+// Exports: addTracingExtensions
 
 // Module 12608
-import _mod12580 from "module_12580" /* 12580 */;
+import _mod12574 from "module_12574" /* 12574 */;
 
 
-export const handleCallbackErrors = function handleCallbackErrors(fn, fn2) {
-  function maybeHandlePromiseRejection(promise, fn2, fn) {
-    let closure_0 = fn2;
-    let closure_1 = fn;
-    const obj = _mod12580;
-    if (obj.isThenable(promise)) {
-      return promise.then((result) => {
-        closure_1();
-        return result;
-      }, (arg0) => {
-        closure_0(arg0);
-        closure_1();
-        throw arg0;
-      });
-    } else {
-      fn();
-      return promise;
-    }
-  }
-  fn = arg2;
-  if (arg2 === undefined) {
-    fn = function t() {
-
-    };
-  }
-  try {
-    return maybeHandlePromiseRejection(fn(), fn2, fn);
-  } catch (tmp2) {
-    fn2(tmp2);
-    fn();
-    throw tmp2;
-  }
+export const addTracingExtensions = function addTracingExtensions() {
+  const obj = _mod12574;
+  const result = obj.registerSpanErrorInstrumentation();
 };

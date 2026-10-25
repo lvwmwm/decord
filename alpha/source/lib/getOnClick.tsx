@@ -1,7 +1,7 @@
 // Module ID: 8865
 // Function ID: 8866
 // Name: getOnClick
-// Dependencies: [32, 5, 2045, 6784, 7332, 502, 4883, 4845, 5700, 6010, 4874, 5002, 6701, 1087, 1089, 7333, 584, 5701, 8866, 8888, 2002, 6830, 7347, 8883, 5699, 5703, 7764, 5656, 1267, 13037, 11353, 14188, 11357, 7765, 14192, 11226, 10555, 9565, 1386, 9567, 6715, 14193, 7649, 5711, 5606, 8610, 11279, 2]
+// Dependencies: [32, 5, 2045, 6784, 7332, 502, 4883, 4845, 5700, 6010, 4874, 5002, 6701, 1087, 1089, 7333, 584, 5701, 8866, 8888, 2002, 6830, 7347, 8883, 5699, 5703, 7764, 5656, 1267, 13042, 11354, 14193, 11358, 7765, 14197, 11227, 10555, 9565, 1386, 9567, 6715, 14198, 7649, 5711, 5606, 8610, 11280, 2]
 // Exports: default
 
 // Module 8865 (getOnClick)
@@ -18,9 +18,9 @@ import _slicedToArray2 from "_slicedToArray" /* 7764 */;
 import activityBookmarkUtils from "activityBookmarkUtils" /* 7765 */;
 import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8866 */;
 import QuestUtils from "QuestUtils" /* 9567 */;
-import storefrontCodedLink from "storefrontCodedLink" /* 11226 */;
-import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 11279 */;
-import GamesActionCreatorsDefault from "GamesActionCreators" /* 11357 */;
+import storefrontCodedLink from "storefrontCodedLink" /* 11227 */;
+import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 11280 */;
+import GamesActionCreatorsDefault from "GamesActionCreators" /* 11358 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
@@ -414,7 +414,7 @@ export default function getOnClick(url) {
         }
         [closure_129_0, closure_129_1] = _undefined.code.split("-");
         _slicedToArray(_undefined.code.split("-"), 2);
-        const promise = asyncRequire(14192, dependencyMap.paths);
+        const promise = asyncRequire(14197, dependencyMap.paths);
         promise.then((openGuildProductLink) => {
           openGuildProductLink.openGuildProductLink(closure_1_0, closure_1_1);
         });

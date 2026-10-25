@@ -1,9 +1,9 @@
-// Module ID: 19366
-// Function ID: 19367
+// Module ID: 19371
+// Function ID: 19372
 // Name: QuestMobileEmbedVisibilityManager
-// Dependencies: [32, 5211, 6772, 9712, 6804, 4827, 4823, 4874, 10022, 2001, 7776, 9575, 1087, 7783, 7214, 1459, 5703, 6713, 6717, 14138, 6802, 5150, 1107, 1108, 5910, 7801, 5151, 2]
+// Dependencies: [32, 5211, 6772, 9712, 6804, 4827, 4823, 4874, 10022, 2001, 7776, 9575, 1087, 7783, 7214, 1459, 5703, 6713, 6717, 14143, 6802, 5150, 1107, 1108, 5910, 7801, 5151, 2]
 
-// Module 19366 (QuestMobileEmbedVisibilityManager)
+// Module 19371 (QuestMobileEmbedVisibilityManager)
 import Constants from "Constants" /* 1087 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
 import ChannelTypes from "ChannelTypes" /* 1108 */;
@@ -18,7 +18,7 @@ import isChannelFocused from "isChannelFocused" /* 6802 */;
 import getQuestLogger from "getQuestLogger" /* 7783 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 7801 */;
 import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 9575 */;
-import ContentImpressionTracker from "ContentImpressionTracker" /* 14138 */;
+import ContentImpressionTracker from "ContentImpressionTracker" /* 14143 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ActionSheetStore from "ActionSheetStore" /* 5211 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6772 */;

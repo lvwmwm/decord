@@ -1,9 +1,9 @@
-// Module ID: 11307
-// Function ID: 11308
+// Module ID: 11308
+// Function ID: 11309
 // Name: ChannelMembersActionSheet
-// Dependencies: [19, 17, 4823, 4883, 4877, 4845, 4903, 1087, 21, 4971, 587, 558, 576, 1633, 504, 1505, 5604, 11308, 8972, 5210, 10093, 11309, 5234, 1128, 8989, 6908, 7488, 7248, 8953, 11306, 10856, 7953, 5269, 5265, 2]
+// Dependencies: [19, 17, 4823, 4883, 4877, 4845, 4903, 1087, 21, 4971, 587, 558, 576, 1633, 504, 1505, 5604, 11309, 8972, 5210, 10093, 11310, 5234, 1128, 8989, 6908, 7488, 7248, 8953, 11307, 10857, 7953, 5269, 5265, 2]
 
-// Module 11307 (ChannelMembersActionSheet)
+// Module 11308 (ChannelMembersActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
@@ -17,10 +17,10 @@ import SettingsIcon from "SettingsIcon" /* 7488 */;
 import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8972 */;
 import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8989 */;
 import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10093 */;
-import GroupPlusIcon from "GroupPlusIcon" /* 10856 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11306 */;
-import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11308 */;
-import ChannelDetailsUtils from "ChannelDetailsUtils" /* 11309 */;
+import GroupPlusIcon from "GroupPlusIcon" /* 10857 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11307 */;
+import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11309 */;
+import ChannelDetailsUtils from "ChannelDetailsUtils" /* 11310 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import GuildMemberStore from "GuildMemberStore" /* 4883 */;
@@ -167,7 +167,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelMembe
   const tmpResult7 = channelId(1505);
   navigation = tmpResult7.useNavigation();
   tmp5(5604)(stateFromStores);
-  const tmpResult8 = channelId(11308);
+  const tmpResult8 = channelId(11309);
   const appChannelBotUserId = tmpResult8.useAppChannelBotUserId(stateFromStores);
   if (null != stateFromStores) {
     class B {

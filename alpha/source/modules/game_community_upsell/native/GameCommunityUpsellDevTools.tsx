@@ -1,16 +1,16 @@
-// Module ID: 16977
-// Function ID: 16978
+// Module ID: 16982
+// Function ID: 16983
 // Name: GameCommunityUpsellDevTools
-// Dependencies: [32, 19, 17, 15021, 16978, 21, 4971, 587, 558, 576, 504, 16979, 15023, 15022, 6987, 6903, 11785, 6912, 2]
+// Dependencies: [32, 19, 17, 15026, 16983, 21, 4971, 587, 558, 576, 504, 16984, 15028, 15027, 6987, 6903, 11786, 6912, 2]
 
-// Module 16977 (GameCommunityUpsellDevTools)
+// Module 16982 (GameCommunityUpsellDevTools)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 15021 */;
-import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 16978 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 15026 */;
+import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 16983 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -246,7 +246,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function MultiG
                                 dependencyMap();
                               }
                             }
-                            const tmp62 = closure_8(tmp(11785).RefreshIcon, {});
+                            const tmp62 = closure_8(tmp(11786).RefreshIcon, {});
                             const tmp63 = closure_8(tmp(6912).TableRowArrow, {});
                             class T {
                               constructor() {
@@ -305,7 +305,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function MultiG
                               onPress() {
                                                           MobileGameCommunitiesStore.DEV_clearState();
                                                         },
-                              icon: closure_8(tmp(11785).RefreshIcon, {}),
+                              icon: closure_8(tmp(11786).RefreshIcon, {}),
                               trailing: closure_8(tmp(6912).TableRowArrow, {})
                             };
                             class T {
@@ -444,7 +444,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function MultiG
       }
     }
   }
-  const entries = Object.entries(tmp(16979).DETECTABLE_GAME_TO_APPLICATION_ID_MAP);
+  const entries = Object.entries(tmp(16984).DETECTABLE_GAME_TO_APPLICATION_ID_MAP);
   const mapped = entries.map((item) => {
     let flag;
     let lastScannedAt;

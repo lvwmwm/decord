@@ -1,16 +1,16 @@
-// Module ID: 17638
-// Function ID: 17639
+// Module ID: 17643
+// Function ID: 17644
 // Name: GuildMemberDashChannelRow
-// Dependencies: [19, 1087, 4830, 12059, 21, 4971, 587, 558, 576, 17639, 6843, 5005, 1114, 13269, 1128, 8560, 1202, 2]
+// Dependencies: [19, 1087, 4830, 12060, 21, 4971, 587, 558, 576, 17644, 6843, 5005, 1114, 13274, 1128, 8560, 1202, 2]
 
-// Module 17638 (GuildMemberDashChannelRow)
+// Module 17643 (GuildMemberDashChannelRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import router_utils from "router_utils" /* 1114 */;
 import ChannelConstants from "ChannelConstants" /* 4830 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 5005 */;
 import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6843 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12059 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12060 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import createStyles_mod from "createStyles" /* 4971 */;
@@ -47,7 +47,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildMemberD
   ({ guild, selected } = arg0);
   const tmp4 = closure_8();
   id = guild.id;
-  const obj2 = id(17639);
+  const obj2 = id(17644);
   let num = obj2.useSubmittedGuildJoinRequestTotal({ guildId: id });
   if (num == null) {
     num = 0;
@@ -94,7 +94,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildMemberD
             }
           }
         }
-        const ChannelModes = tmp(13269).ChannelModes;
+        const ChannelModes = tmp(13274).ChannelModes;
         const tmp13 = selected ? ChannelModes.SELECTED : ChannelModes.DEFAULT;
         const _Symbol = Symbol;
         const container = tmp4.container;
@@ -166,8 +166,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildMemberD
               return;
             }
           }
-          const tmp23 = jsx(tmp(13269).BaseChannelName, { name: tmp19, mode: tmp13 });
-          const BaseChannelIcon = tmp(13269).BaseChannelIcon;
+          const tmp23 = jsx(tmp(13274).BaseChannelName, { name: tmp19, mode: tmp13 });
+          const BaseChannelIcon = tmp(13274).BaseChannelIcon;
           const tmp24 = <BaseChannelIcon mode={tmp13} IconComponent={tmp(8560).GroupIcon} />;
           cResult[15] = tmp13;
           cResult[16] = tmp24;
@@ -262,7 +262,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildMemberD
   let hasItem;
   let tmp = closure_8();
   const id = guild.id;
-  let obj = id(17639);
+  let obj = id(17644);
   let num = obj.useSubmittedGuildJoinRequestTotal({ guildId: id });
   if (num == null) {
     num = 0;
@@ -284,15 +284,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildMemberD
     const obj = router_utils;
     obj.transitionTo(hasOwnProperty.CHANNEL(id, StaticChannelRoute.MEMBER_SAFETY));
   }, items1);
-  const ChannelModes = tmp2(13269).ChannelModes;
+  const ChannelModes = tmp2(13274).ChannelModes;
   const tmp7 = selected ? ChannelModes.SELECTED : ChannelModes.DEFAULT;
-  hasItem(13269);
+  hasItem(13274);
   const intl = tmp2(1128).intl;
   ({ name: intl2.string(id(1128).t["9Oq93m"]), mode: tmp7 });
-  const BaseChannelName = tmp2(13269).BaseChannelName;
+  const BaseChannelName = tmp2(13274).BaseChannelName;
   intl2 = tmp2(1128).intl;
   ({ mode: tmp7, IconComponent: id(8560).GroupIcon });
-  const BaseChannelIcon = tmp2(13269).BaseChannelIcon;
+  const BaseChannelIcon = tmp2(13274).BaseChannelIcon;
   let tmp8Result = null;
   if (num > 0) {
     const obj9 = { style: null, textStyle: null, value: num };

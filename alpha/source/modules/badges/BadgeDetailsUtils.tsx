@@ -1,16 +1,16 @@
-// Module ID: 11130
-// Function ID: 11131
+// Module ID: 11131
+// Function ID: 11132
 // Name: BadgeDetailsUtils
-// Dependencies: [8681, 1394, 8673, 1128, 8682, 11122, 2033, 2]
+// Dependencies: [8681, 1394, 8673, 1128, 8682, 11123, 2033, 2]
 // Exports: getBadgeArtUrls, getBadgeCtaVariant, getBadgeDescriptionText, getBadgeProgressDisplay, getBadgeStatusText, getBadgeTitle, isLegacyDisplayBadge, isUpgradeableNitroViewer, shouldShowLegacyUnavailableNotice
 
-// Module 11130 (BadgeDetailsUtils)
+// Module 11131 (BadgeDetailsUtils)
 import intl5 from "intl" /* 1128 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import StringUtils from "StringUtils" /* 2033 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8681 */;
 import BadgeIdResolution from "BadgeIdResolution" /* 8682 */;
-import BadgeUtils from "BadgeUtils" /* 11122 */;
+import BadgeUtils from "BadgeUtils" /* 11123 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

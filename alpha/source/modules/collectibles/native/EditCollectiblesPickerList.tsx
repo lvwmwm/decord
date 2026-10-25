@@ -1,11 +1,11 @@
-// Module ID: 14495
-// Function ID: 14496
+// Module ID: 14500
+// Function ID: 14501
 // Name: EditCollectiblesPickerList
-// Dependencies: [32, 19, 17, 21, 4971, 14490, 558, 576, 5234, 12, 7220, 2]
+// Dependencies: [32, 19, 17, 21, 4971, 14495, 558, 576, 5234, 12, 7220, 2]
 
-// Module 14495 (EditCollectiblesPickerList)
+// Module 14500 (EditCollectiblesPickerList)
 import react2 from "react" /* 576 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 14490 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 14495 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

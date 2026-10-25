@@ -1,17 +1,17 @@
-// Module ID: 11794
-// Function ID: 11795
+// Module ID: 11795
+// Function ID: 11796
 // Name: conjureRemoveApp
-// Dependencies: [19, 2045, 7703, 4901, 4883, 4845, 4903, 4913, 1392, 10714, 6773, 1087, 10731, 5604, 558, 576, 504, 12, 6830, 1128, 3830, 10804, 2]
+// Dependencies: [19, 2045, 7703, 4901, 4883, 4845, 4903, 4913, 1392, 10714, 6773, 1087, 10731, 5604, 558, 576, 504, 12, 6830, 1128, 3830, 10805, 2]
 // Exports: conjureDeleteProjectBody, conjureDeleteProjectItems, conjurePreviewAppItem, conjureRemoveAppItems, conjureRemoveAppKeptChannels, conjureRemoveAppSuccess, conjureTitleWithAppTag, isPublishedConjureUserApp
 
-// Module 11794 (conjureRemoveApp)
+// Module 11795 (conjureRemoveApp)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import useChannelName from "useChannelName" /* 5604 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6830 */;
 import conjureAppInServer from "conjureAppInServer" /* 10731 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 10804 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 10805 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
 import UserProfileStore from "UserProfileStore" /* 7703 */;
@@ -29,7 +29,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, tmp5;
 
-const f111506 = (item) => {
+const f111522 = (item) => {
   const obj = { key: "channel:" + item, kind: "channel", label: "#" + item };
   return obj;
 };
@@ -417,13 +417,13 @@ export { readConjureRemoveTarget };
 export const useConjureRemoveTarget = tmp2;
 export const conjureRemoveAppItems = function conjureRemoveAppItems(target) {
   const channelNames = target.channelNames;
-  return channelNames.map(f111506);
+  return channelNames.map(f111522);
 };
 export const conjureDeleteProjectItems = function conjureDeleteProjectItems(target) {
   let obj = { key: "project", kind: "project", label: target.projectName };
   const items = [obj];
   const channelNames = target.channelNames;
-  const items1 = [...channelNames.map(f111506)];
+  const items1 = [...channelNames.map(f111522)];
   items.push.apply(items1);
   const previewAppName = target.previewAppName;
   let tmp2 = null;

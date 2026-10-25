@@ -1,9 +1,9 @@
-// Module ID: 11654
-// Function ID: 11655
+// Module ID: 11655
+// Function ID: 11656
 // Name: game_console/GameConsoleAlertUtils
-// Dependencies: [19, 2014, 9626, 1087, 21, 5001, 4807, 1128, 5909, 11655, 9609, 2]
+// Dependencies: [19, 2014, 9626, 1087, 21, 5001, 4807, 1128, 5909, 11656, 9609, 2]
 
-// Module 11654 (game_console/GameConsoleAlertUtils)
+// Module 11655 (game_console/GameConsoleAlertUtils)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1128 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5909 */;
@@ -89,7 +89,7 @@ let obj = {
     };
     const show = tmp.show;
     ({ body, errorCodeMessage, dismissCallback: actions_AlertActionCreatorsDefault.close });
-    const SelfDismissibleAlertBody = reconnectPlatformType(11655).SelfDismissibleAlertBody;
+    const SelfDismissibleAlertBody = reconnectPlatformType(11656).SelfDismissibleAlertBody;
     show(obj);
   }
 };

@@ -1,9 +1,9 @@
-// Module ID: 19067
-// Function ID: 19068
+// Module ID: 19072
+// Function ID: 19073
 // Name: GuildSettingsModalStickers
-// Dependencies: [19, 17, 4845, 4903, 1392, 1087, 4802, 21, 1128, 19068, 9808, 14830, 4971, 587, 1633, 504, 8944, 19070, 7134, 8366, 5234, 6379, 5244, 19071, 8951, 5977, 6987, 6903, 8566, 10170, 1202, 5989, 6912, 19077, 2]
+// Dependencies: [19, 17, 4845, 4903, 1392, 1087, 4802, 21, 1128, 19073, 9808, 14835, 4971, 587, 1633, 504, 8944, 19075, 7134, 8366, 5234, 6379, 5244, 19076, 8951, 5977, 6987, 6903, 8566, 10170, 1202, 5989, 6912, 19082, 2]
 
-// Module 19067 (GuildSettingsModalStickers)
+// Module 19072 (GuildSettingsModalStickers)
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import StickersConstants from "StickersConstants" /* 4802 */;
@@ -11,9 +11,9 @@ import TableRow2 from "TableRow" /* 6903 */;
 import TableRowGroup2 from "TableRowGroup" /* 6987 */;
 import GuildBoostingUtils from "GuildBoostingUtils" /* 8366 */;
 import BoostGemIcon from "BoostGemIcon" /* 9808 */;
-import BoostTier3Icon from "BoostTier3Icon" /* 14830 */;
-import BoostGemOutlineIcon from "BoostGemOutlineIcon" /* 19068 */;
-import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 19071 */;
+import BoostTier3Icon from "BoostTier3Icon" /* 14835 */;
+import BoostGemOutlineIcon from "BoostGemOutlineIcon" /* 19073 */;
+import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 19076 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 4845 */;

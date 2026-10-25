@@ -1,9 +1,9 @@
-// Module ID: 17845
-// Function ID: 17846
+// Module ID: 17850
+// Function ID: 17851
 // Name: BackIconWithBadge
-// Dependencies: [19, 17, 6814, 21, 4971, 587, 558, 576, 504, 17836, 1202, 9406, 1385, 6928, 6931, 10657, 2]
+// Dependencies: [19, 17, 6814, 21, 4971, 587, 558, 576, 504, 17841, 1202, 9406, 1385, 6928, 6931, 10657, 2]
 
-// Module 17845 (BackIconWithBadge)
+// Module 17850 (BackIconWithBadge)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -14,7 +14,7 @@ import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6928 */;
 import XSmallIcon from "XSmallIcon" /* 6931 */;
 import ClipView from "ClipView" /* 9406 */;
 import XLargeIcon from "XLargeIcon" /* 10657 */;
-import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 17836 */;
+import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 17841 */;
 import react from "react" /* 19 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6814 */;
 import Fragment from "Fragment" /* 21 */;
@@ -225,7 +225,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconWit
   const obj = require("get initialized");
   const stateFromStores = obj.useStateFromStores(items, () => totalMentionCount.getTotalMentionCount());
   let num = 0;
-  const value = memo(17836)().value;
+  const value = memo(17841)().value;
   const tmp5 = memo;
   if (null != stateFromStores) {
     num = stateFromStores;

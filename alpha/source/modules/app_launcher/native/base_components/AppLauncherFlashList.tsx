@@ -1,13 +1,13 @@
-// Module ID: 12090
-// Function ID: 12091
+// Module ID: 12091
+// Function ID: 12092
 // Name: AppLauncherFlashList
-// Dependencies: [109, 19, 17, 21, 5297, 558, 12091, 576, 11165, 11166, 7220, 2]
+// Dependencies: [109, 19, 17, 21, 5297, 558, 12092, 576, 11166, 11167, 7220, 2]
 // Exports: useAppLauncherFlashListProps
 
-// Module 12090 (AppLauncherFlashList)
+// Module 12091 (AppLauncherFlashList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import useAnimatedScrollLock from "useAnimatedScrollLock" /* 12091 */;
+import useAnimatedScrollLock from "useAnimatedScrollLock" /* 12092 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -36,7 +36,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
     tmp4 = cResult[1];
     tmp5 = cResult[2];
   }
-  const tmpResult = simultaneousHandlers(11165);
+  const tmpResult = simultaneousHandlers(11166);
   const items = [simultaneousHandlers];
   const entrypoint = tmpResult.useAppLauncherContext().entrypoint;
   const memo = react.useMemo(() => (function ScrollViewGestureAware(ref) {
@@ -51,7 +51,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
     const merged1 = Object.assign(merged);
     return <GestureDetector gesture={memo}>{null}</GestureDetector>;
   }), items);
-  if (entrypoint === tmp4.simultaneousHandlers(11166).AppLauncherEntrypoint.VOICE) {
+  if (entrypoint === tmp4.simultaneousHandlers(11167).AppLauncherEntrypoint.VOICE) {
     if (cResult[3] === memo) {
       if (cResult[4] === tmp4.ListHeaderComponent) {
         if (cResult[5] === tmp4.animatedOnScroll) {
@@ -171,7 +171,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   let tmp6;
   ref = ref.ref;
   let merged = Object.assign(ref, Object.assign({ ref: 0 }));
-  const obj = simultaneousHandlers(11165);
+  const obj = simultaneousHandlers(11166);
   simultaneousHandlers = merged.simultaneousHandlers;
   const items = [simultaneousHandlers];
   const entrypoint = obj.useAppLauncherContext().entrypoint;
@@ -187,7 +187,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
     const merged1 = Object.assign(merged);
     return <GestureDetector gesture={memo}>{null}</GestureDetector>;
   }), items);
-  if (entrypoint === simultaneousHandlers(11166).AppLauncherEntrypoint.VOICE) {
+  if (entrypoint === simultaneousHandlers(11167).AppLauncherEntrypoint.VOICE) {
     ({ ListHeaderComponent: obj2.ListHeaderComponent, animatedOnScroll: obj2.onScroll, contentContainerStyle: obj2.contentContainerStyle, scrollIndicatorInsets: obj2.scrollIndicatorInsets, renderItem: obj2.renderItem, getItemType: obj2.getItemType, data: obj2.data, automaticallyAdjustsScrollIndicatorInsets: obj2.automaticallyAdjustsScrollIndicatorInsets, keyboardDismissMode: obj2.keyboardDismissMode, keyboardShouldPersistTaps: obj2.keyboardShouldPersistTaps, showsVerticalScrollIndicator: obj2.showsVerticalScrollIndicator, onViewableItemsChanged: obj2.onViewableItemsChanged, viewabilityConfigCallbackPairs: obj2.viewabilityConfigCallbackPairs, animatedProps: obj2.animatedProps } = merged);
     tmp6 = jsx(tmp2(7220).AnimatedFlashList, { renderScrollComponent: memo, ListHeaderComponent: null, onScroll: null, contentContainerStyle: null, scrollIndicatorInsets: null, renderItem: null, getItemType: null, data: null, automaticallyAdjustsScrollIndicatorInsets: null, keyboardDismissMode: null, keyboardShouldPersistTaps: null, showsVerticalScrollIndicator: null, onViewableItemsChanged: null, viewabilityConfigCallbackPairs: null, animatedProps: null, overScrollMode: "never", ref });
   } else {

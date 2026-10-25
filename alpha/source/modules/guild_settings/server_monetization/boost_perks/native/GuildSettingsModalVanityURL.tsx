@@ -1,9 +1,9 @@
-// Module ID: 19137
-// Function ID: 19138
+// Module ID: 19142
+// Function ID: 19143
 // Name: GuildSettingsModalVanityURL
-// Dependencies: [19, 17, 19138, 4845, 9006, 1087, 21, 4971, 587, 6924, 7485, 1128, 19139, 9061, 5234, 18980, 7008, 5669, 19140, 558, 576, 1505, 504, 5592, 2]
+// Dependencies: [19, 17, 19143, 4845, 9006, 1087, 21, 4971, 587, 6924, 7485, 1128, 19144, 9061, 5234, 18985, 7008, 5669, 19145, 558, 576, 1505, 504, 5592, 2]
 
-// Module 19137 (GuildSettingsModalVanityURL)
+// Module 19142 (GuildSettingsModalVanityURL)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -13,11 +13,11 @@ import FastImageDefault from "FastImage" /* 5669 */;
 import TextInput_TextInput from "TextInput/TextInput" /* 7008 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7485 */;
 import getInviteURLDefault from "getInviteURL" /* 9061 */;
-import GuildSettingsVanityURLUtils from "GuildSettingsVanityURLUtils" /* 18980 */;
-import ChangeVanityURLActionCreatorsDefault from "ChangeVanityURLActionCreators" /* 19139 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19140 */;
+import GuildSettingsVanityURLUtils from "GuildSettingsVanityURLUtils" /* 18985 */;
+import ChangeVanityURLActionCreatorsDefault from "ChangeVanityURLActionCreators" /* 19144 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19145 */;
 import react from "react" /* 19 */;
-import ChangeVanityURLModalStore from "ChangeVanityURLModalStore" /* 19138 */;
+import ChangeVanityURLModalStore from "ChangeVanityURLModalStore" /* 19143 */;
 import GuildStore from "GuildStore" /* 4845 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 9006 */;
 import Fragment from "Fragment" /* 21 */;

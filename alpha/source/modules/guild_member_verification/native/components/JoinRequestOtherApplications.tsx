@@ -1,9 +1,9 @@
-// Module ID: 18030
-// Function ID: 18031
+// Module ID: 18035
+// Function ID: 18036
 // Name: JoinRequestOtherApplications
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 5005, 7267, 7018, 18031, 1128, 5234, 18027, 4796, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 5005, 7267, 7018, 18036, 1128, 5234, 18032, 4796, 2]
 
-// Module 18030 (JoinRequestOtherApplications)
+// Module 18035 (JoinRequestOtherApplications)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import DateUtils from "DateUtils" /* 4796 */;

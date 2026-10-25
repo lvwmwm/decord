@@ -1,18 +1,18 @@
-// Module ID: 14349
-// Function ID: 14350
+// Module ID: 14354
+// Function ID: 14355
 // Name: BadgeDirectoryNuxCoachmark
-// Dependencies: [19, 17, 4820, 21, 4971, 587, 558, 576, 14350, 14354, 14358, 14347, 14362, 14366, 11114, 1128, 11118, 9840, 2]
+// Dependencies: [19, 17, 4820, 21, 4971, 587, 558, 576, 14355, 14359, 14363, 14352, 14367, 14371, 11115, 1128, 11119, 9840, 2]
 
-// Module 14349 (BadgeDirectoryNuxCoachmark)
+// Module 14354 (BadgeDirectoryNuxCoachmark)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
-import BadgeArtImageDefault from "BadgeArtImage" /* 11114 */;
-import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 11118 */;
-import GameTimeTier9LargeBadge from "GameTimeTier9LargeBadge" /* 14350 */;
-import StreamingTier10LargeBadge from "StreamingTier10LargeBadge" /* 14354 */;
-import GameDiversityTier8LargeBadge from "GameDiversityTier8LargeBadge" /* 14358 */;
+import BadgeArtImageDefault from "BadgeArtImage" /* 11115 */;
+import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 11119 */;
+import GameTimeTier9LargeBadge from "GameTimeTier9LargeBadge" /* 14355 */;
+import StreamingTier10LargeBadge from "StreamingTier10LargeBadge" /* 14359 */;
+import GameDiversityTier8LargeBadge from "GameDiversityTier8LargeBadge" /* 14363 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;

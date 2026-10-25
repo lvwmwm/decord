@@ -1,17 +1,17 @@
-// Module ID: 18269
-// Function ID: 18270
+// Module ID: 18274
+// Function ID: 18275
 // Name: ChannelSettingsInstantInvites
-// Dependencies: [32, 19, 17, 10094, 4823, 1087, 21, 4971, 587, 558, 576, 1633, 504, 10093, 10818, 1202, 10836, 10837, 1128, 7134, 18270, 7150, 2]
+// Dependencies: [32, 19, 17, 10094, 4823, 1087, 21, 4971, 587, 558, 576, 1633, 504, 10093, 10819, 1202, 10837, 10838, 1128, 7134, 18275, 7150, 2]
 
-// Module 18269 (ChannelSettingsInstantInvites)
+// Module 18274 (ChannelSettingsInstantInvites)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import FastestListDefault from "FastestList" /* 7150 */;
-import InstantInvite from "InstantInvite" /* 10818 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10836 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10837 */;
+import InstantInvite from "InstantInvite" /* 10819 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10837 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10838 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelSettingsStore from "ChannelSettingsStore" /* 10094 */;
@@ -706,7 +706,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedCha
   const tmp19 = closure_9;
   if (memo1.length > 0) {
     const obj8 = { item: memo1[0], onMeasured: callback };
-    tmp19Result = tmp19(tmp2(18270), obj8);
+    tmp19Result = tmp19(tmp2(18275), obj8);
   }
   items8[1] = tmp19Result;
   tmp17Result = tmp17(tmp18, obj7);

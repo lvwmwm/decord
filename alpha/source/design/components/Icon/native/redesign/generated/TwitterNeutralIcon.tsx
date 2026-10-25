@@ -1,14 +1,14 @@
-// Module ID: 13237
-// Function ID: 13238
+// Module ID: 13242
+// Function ID: 13243
 // Name: TwitterNeutralIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 13238, 5668, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 13243, 5668, 2]
 
-// Module 13237 (TwitterNeutralIcon)
+// Module 13242 (TwitterNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5668 */;
-import AssetRegistry from "AssetRegistry" /* 13238 */;
+import AssetRegistry from "AssetRegistry" /* 13243 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,42 +1,17 @@
 // Module ID: 12647
 // Function ID: 12648
-// Dependencies: [12579, 12600, 12629]
+// Dependencies: []
+// Exports: parameterize
 
 // Module 12647
-import module_12629 from "module_12629" /* 12629 */;
 
-let has, toString;
-
-const weakMap = new WeakMap();
-
-export const functionToStringIntegration = module_12629.defineIntegration(() => {
-  let obj = {
-    name: "FunctionToString",
-    setupOnce() {
-      toString = Function.prototype.toString;
-      try {
-        const _Function = Function;
-        Function.prototype.toString = function() {
-          const items = [...arguments];
-          const obj = closure_1_0(closure_1_1[0]);
-          const originalFunction = obj.getOriginalFunction(this);
-          has = has.has;
-          let self = this;
-          const obj2 = closure_1_0(closure_1_1[1]);
-          if (has(obj2.getClient())) {
-            self = this;
-            if (undefined !== originalFunction) {
-              self = originalFunction;
-            }
-          }
-          return toString.apply(self, items);
-        };
-      } catch (err) {
-      }
-    },
-    setup(arg0) {
-      const result = weakMap.set(arg0, true);
-    }
-  };
-  return obj;
-});
+export const parameterize = function parameterize(join) {
+  const substr = [...arguments].slice();
+  const items = [join, ...substr];
+  const string = new String(String.raw.apply(items));
+  const str = join.join("\0");
+  const str2 = str.replace(/%/g, "%%");
+  string.__sentry_template_string__ = str2.replace(/\0/g, "%s");
+  string.__sentry_template_values__ = substr;
+  return string;
+};

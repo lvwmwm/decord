@@ -1,10 +1,10 @@
-// Module ID: 11756
-// Function ID: 11757
+// Module ID: 11757
+// Function ID: 11758
 // Name: ConjureAttachmentTypes
 // Dependencies: [6379, 2]
 // Exports: conjureAttachmentLimit, formatConjureAttachmentLimit, isConjureAttachmentWithinLimit
 
-// Module 11756 (ConjureAttachmentTypes)
+// Module 11757 (ConjureAttachmentTypes)
 import FileSizeUtils from "FileSizeUtils" /* 6379 */;
 import size from "module_2" /* 2 */;
 

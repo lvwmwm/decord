@@ -1,15 +1,15 @@
-// Module ID: 10795
-// Function ID: 10796
+// Module ID: 10796
+// Function ID: 10797
 // Name: conjurePublishConnection
-// Dependencies: [5, 2045, 6773, 10714, 584, 10796, 10800, 10801, 2002, 10798, 10785, 10719, 10804, 2]
+// Dependencies: [5, 2045, 6773, 10714, 584, 10797, 10801, 10802, 2002, 10799, 10786, 10719, 10805, 2]
 // Exports: draftPatchNotes, preparePublish, publishProject, publishStateFromFrame, recordPatchNotesSent, rejectPendingPublish, requestPublishOptions
 
-// Module 10795 (conjurePublishConnection)
+// Module 10796 (conjurePublishConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import conjureProjectSockets from "conjureProjectSockets" /* 10719 */;
-import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 10785 */;
-import conjureDevicePermissions from "conjureDevicePermissions" /* 10798 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 10804 */;
+import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 10786 */;
+import conjureDevicePermissions from "conjureDevicePermissions" /* 10799 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 10805 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
@@ -19,7 +19,7 @@ import size from "module_2" /* 2 */;
 let paths;
 
 let tmp;
-const requestConjureDevicePermissionsDefault = tmp(10796);
+const requestConjureDevicePermissionsDefault = tmp(10797);
 function rejectPendingPatchNotesDraft(projectId, arg1) {
   const value = map1.get(projectId);
   const obj = map1;
@@ -496,8 +496,8 @@ export const publishProject = function publishProject(id, selected_destination_i
     }
   });
 };
-export const draftPatchNotes = function draftPatchNotes(c0) {
-  let closure_0 = c0;
+export const draftPatchNotes = function draftPatchNotes(arg0) {
+  let closure_0 = arg0;
   const promise = new Promise(function(resolve, reject) {
     let error;
     let obj = conjureProjectSockets;

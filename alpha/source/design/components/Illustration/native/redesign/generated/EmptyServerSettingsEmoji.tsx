@@ -1,10 +1,10 @@
-// Module ID: 19063
-// Function ID: 19064
+// Module ID: 19068
+// Function ID: 19069
 // Name: EmptyServerSettingsEmoji
-// Dependencies: [19, 21, 8724, 19064, 19065, 19066, 558, 576, 4978, 5669, 2]
+// Dependencies: [19, 21, 8724, 19069, 19070, 19071, 558, 576, 4978, 5669, 2]
 // Exports: getEmptyServerSettingsEmojiSource
 
-// Module 19063 (EmptyServerSettingsEmoji)
+// Module 19068 (EmptyServerSettingsEmoji)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import shared from "shared" /* 4978 */;

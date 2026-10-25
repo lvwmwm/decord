@@ -1,14 +1,14 @@
-// Module ID: 18172
-// Function ID: 18173
+// Module ID: 18177
+// Function ID: 18178
 // Name: SearchTabsGradient
-// Dependencies: [19, 21, 558, 576, 5252, 587, 4968, 13699, 2]
+// Dependencies: [19, 21, 558, 576, 5252, 587, 4968, 13704, 2]
 
-// Module 18172 (SearchTabsGradient)
+// Module 18177 (SearchTabsGradient)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 5252 */;
-import TabsGradientDefault from "TabsGradient" /* 13699 */;
+import TabsGradientDefault from "TabsGradient" /* 13704 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

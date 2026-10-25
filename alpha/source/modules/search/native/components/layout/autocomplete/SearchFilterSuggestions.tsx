@@ -1,9 +1,9 @@
-// Module ID: 18060
-// Function ID: 18061
+// Module ID: 18065
+// Function ID: 18066
 // Name: SearchFilterSuggestions
-// Dependencies: [32, 109, 19, 17, 9713, 21, 4971, 587, 558, 576, 18061, 5234, 6903, 5052, 5247, 5248, 5037, 18055, 18064, 13218, 2]
+// Dependencies: [32, 109, 19, 17, 9713, 21, 4971, 587, 558, 576, 18066, 5234, 6903, 5052, 5247, 5248, 5037, 18060, 18069, 13223, 2]
 
-// Module 18060 (SearchFilterSuggestions)
+// Module 18065 (SearchFilterSuggestions)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -14,8 +14,8 @@ import Text_Text from "Text/Text" /* 5234 */;
 import spring from "spring" /* 5247 */;
 import springPresets from "springPresets" /* 5248 */;
 import TrackingConstants from "TrackingConstants" /* 9713 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13218 */;
-import SearchFilterUtils from "SearchFilterUtils" /* 18061 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13223 */;
+import SearchFilterUtils from "SearchFilterUtils" /* 18066 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
@@ -26,9 +26,9 @@ import size from "module_2" /* 2 */;
 let dependencyMap, obj1, set, style, tmp3, token;
 
 let obj2;
-const f133581 = (text) => text.text;
+const f133608 = (text) => text.text;
 function getSuggestionsKey(arr) {
-  const mapped = arr.map(f133581);
+  const mapped = arr.map(f133608);
   return mapped.join(" ");
 }
 let closure_3 = ["text", "searchTokenType", "onPress"];
@@ -425,7 +425,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             class W {
               constructor(arg0, arg1, arg2, arg3) {
                 obj = { state: arg2, cleanUp: arg3, children: null };
-                obj1 = { ref: suggestionsRef, style: closure_7, collapsable: false, children: arg1.map(() => { /* body not rendered: F154379 */ }) };
+                obj1 = { ref: suggestionsRef, style: closure_7, collapsable: false, children: arg1.map(() => { /* body not rendered: F154410 */ }) };
                 obj.children = jsx(View, obj1);
                 return jsx(AnimatedEnterExitContainer, obj, searchContext);
               }
@@ -440,7 +440,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           class W {
             constructor(arg0, arg1, arg2, arg3) {
               obj = { state: arg2, cleanUp: arg3, children: null };
-              obj1 = { ref: suggestionsRef, style: closure_7, collapsable: false, children: arg1.map(() => { /* body not rendered: F154379 */ }) };
+              obj1 = { ref: suggestionsRef, style: closure_7, collapsable: false, children: arg1.map(() => { /* body not rendered: F154410 */ }) };
               obj.children = jsx(View, obj1);
               return jsx(AnimatedEnterExitContainer, obj, searchContext);
             }
@@ -525,7 +525,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   class D {
     constructor() {
       obj = closure_1(closure_2[19]);
-      return obj.subscribeSearchQueryState(searchContext, () => { /* body not rendered: F154377 */ }, () => { /* body not rendered: F154378 */ });
+      return obj.subscribeSearchQueryState(searchContext, () => { /* body not rendered: F154408 */ }, () => { /* body not rendered: F154409 */ });
     }
   }
   const items4 = [validFilterTokens, searchContext, tmp9];
@@ -541,12 +541,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const containerStyle = searchContext.containerStyle;
   let tmp = closure_10();
   dependencyMap = tmp;
-  let obj = searchContext(18055);
+  let obj = searchContext(18060);
   const searchSuggestionsContext = obj.useSearchSuggestionsContext();
   const suggestionsRef = searchSuggestionsContext.suggestionsRef;
   const suggestionsMounted = searchSuggestionsContext.suggestionsMounted;
   const dismissed = searchSuggestionsContext.dismissed;
-  let obj2 = searchContext(18064);
+  let obj2 = searchContext(18069);
   const validFilterTokens = obj2.useValidFilterTokens(searchContext);
   const tmp4 = suggestionsMounted(validFilterTokens.useState([]), 2);
   const first = tmp4[0];
@@ -580,10 +580,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
               }
             });
             constants((arr) => {
-              const mapped = arr.map(f133581);
+              const mapped = arr.map(f133608);
               let tmp2 = closure_1;
               const joined = mapped.join(" ");
-              const mapped1 = closure_1.map(f133581);
+              const mapped1 = closure_1.map(f133608);
               if (joined === mapped1.join(" ")) {
                 tmp2 = arr;
               }

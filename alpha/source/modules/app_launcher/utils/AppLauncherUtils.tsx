@@ -1,7 +1,7 @@
 // Module ID: 9649
 // Function ID: 9650
 // Name: AppLauncherUtils
-// Dependencies: [109, 5, 9650, 2024, 12075, 1087, 5983, 4976, 1128, 2031, 5626, 6811, 5633, 1384, 2000, 5634, 10198, 7755, 7566, 5908, 1417, 11166, 12111, 7630, 11402, 2]
+// Dependencies: [109, 5, 9650, 2024, 12076, 1087, 5983, 4976, 1128, 2031, 5626, 6811, 5633, 1384, 2000, 5634, 10198, 7755, 7566, 5908, 1417, 11167, 12112, 7630, 11403, 2]
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getEmbeddedActivityConfig, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isActivityApp, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isPartnerApplication, isPromotedApplication, isRealApplication
 
 // Module 9649 (AppLauncherUtils)
@@ -17,14 +17,14 @@ import getPlatformDefault from "getPlatform" /* 5633 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5983 */;
 import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6811 */;
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7630 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11166 */;
-import ApplicationInstallUtils from "ApplicationInstallUtils" /* 11402 */;
-import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 12111 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11167 */;
+import ApplicationInstallUtils from "ApplicationInstallUtils" /* 11403 */;
+import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 12112 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9650 */;
 import ApplicationRecord from "ApplicationRecord" /* 2024 */;
-import AppLauncherStore from "AppLauncherStore" /* 12075 */;
+import AppLauncherStore from "AppLauncherStore" /* 12076 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

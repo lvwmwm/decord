@@ -1,9 +1,9 @@
-// Module ID: 17710
-// Function ID: 17711
+// Module ID: 17715
+// Function ID: 17716
 // Name: GuildsEmpty
-// Dependencies: [32, 19, 17, 502, 4845, 5002, 1087, 21, 4971, 587, 5234, 13608, 558, 576, 17711, 1128, 5244, 5977, 1506, 573, 1275, 9361, 4848, 5152, 8691, 16441, 2]
+// Dependencies: [32, 19, 17, 502, 4845, 5002, 1087, 21, 4971, 587, 5234, 13613, 558, 576, 17716, 1128, 5244, 5977, 1506, 573, 1275, 9361, 4848, 5152, 8691, 16446, 2]
 
-// Module 17710 (GuildsEmpty)
+// Module 17715 (GuildsEmpty)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
@@ -11,8 +11,8 @@ import FavoritesUtils from "FavoritesUtils" /* 4848 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import components_Button_Button from "components/Button/Button" /* 5244 */;
 import Stack_Stack from "Stack/Stack" /* 5977 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13608 */;
-import CheersSpotIllustration from "CheersSpotIllustration" /* 17711 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13613 */;
+import CheersSpotIllustration from "CheersSpotIllustration" /* 17716 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -358,7 +358,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const effect = react.useEffect(tmp13, tmp14);
     const tmpResult3 = tmp(8691);
     const isScreenLandscape = tmpResult3.useIsScreenLandscape();
-    const tmpResult4 = tmp(16441);
+    const tmpResult4 = tmp(16446);
     const youBarTotalHeight = tmpResult4.useYouBarTotalHeight();
     let tmp19 = null;
     if (stateFromStores) {
@@ -557,7 +557,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }, items1);
   const tmp2Result = navigation(8691);
   const isScreenLandscape = tmp2Result.useIsScreenLandscape();
-  navigation(16441);
+  navigation(16446);
   let tmp14Result = null;
   if (stateFromStores) {
     const obj4 = { style: items2, children: items3 };

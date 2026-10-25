@@ -1,13 +1,13 @@
-// Module ID: 16413
-// Function ID: 16414
+// Module ID: 16418
+// Function ID: 16419
 // Name: OrbsArcadePlayButton
-// Dependencies: [19, 16390, 21, 558, 576, 7253, 16414, 504, 16415, 16396, 16410, 9429, 587, 5244, 2]
+// Dependencies: [19, 16395, 21, 558, 576, 7253, 16419, 504, 16420, 16401, 16415, 9429, 587, 5244, 2]
 
-// Module 16413 (OrbsArcadePlayButton)
+// Module 16418 (OrbsArcadePlayButton)
 import Fragment from "Fragment" /* 21 */;
-import launchOrbsArcadeGameDefault from "launchOrbsArcadeGame" /* 16415 */;
+import launchOrbsArcadeGameDefault from "launchOrbsArcadeGame" /* 16420 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16390 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16395 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -27,8 +27,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
   game = game.game;
   size = game.size;
   analyticsLocations = analyticsLocations(7253)().analyticsLocations;
-  ({ text, isPaidPlay } = analyticsLocations(16414)(game));
-  analyticsLocations(16414)(game);
+  ({ text, isPaidPlay } = analyticsLocations(16419)(game));
+  analyticsLocations(16419)(game);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [OrbsArcadeStore];
     cResult[0] = items;
@@ -101,8 +101,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
         }
         cResult[11] = game;
         cResult[12] = size;
-        cResult[13] = jsx(analyticsLocations(16410), { game, size });
-        const tmp26 = jsx(analyticsLocations(16410), { game, size });
+        cResult[13] = jsx(analyticsLocations(16415), { game, size });
+        const tmp26 = jsx(analyticsLocations(16415), { game, size });
       }
     }
     if (cResult[14] !== isPaidPlay) {
@@ -162,8 +162,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
   size = game.size;
   let analyticsLocations;
   analyticsLocations = analyticsLocations(7253)().analyticsLocations;
-  ({ text, isPaidPlay } = analyticsLocations(16414)(game));
-  analyticsLocations(16414)(game);
+  ({ text, isPaidPlay } = analyticsLocations(16419)(game));
+  analyticsLocations(16419)(game);
   const items = [OrbsArcadeStore];
   const items1 = [game.id];
   const obj = game(504);
@@ -176,9 +176,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
   const callback = react.useCallback(() => launchOrbsArcadeGameDefault(game, analyticsLocations), items4);
   if (null != stateFromStores) {
     let tmp8Result2;
-    const tmp4Result = game(16396);
+    const tmp4Result = game(16401);
     if (tmp4Result.mustClaimOrbsArcadeRewardsToPlay(stateFromStores)) {
-      tmp8Result2 = jsx(tmp(16410), { game, size });
+      tmp8Result2 = jsx(tmp(16415), { game, size });
     }
     return tmp8Result2;
   }

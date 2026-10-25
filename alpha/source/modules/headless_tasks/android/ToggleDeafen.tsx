@@ -1,12 +1,12 @@
-// Module ID: 19491
-// Function ID: 19492
+// Module ID: 19496
+// Function ID: 19497
 // Name: ToggleDeafen
-// Dependencies: [4823, 19488, 11673, 11640, 2]
+// Dependencies: [4823, 19493, 11674, 11641, 2]
 
-// Module 19491 (ToggleDeafen)
-import VoiceActionUtils from "VoiceActionUtils" /* 11640 */;
-import useDeafStates from "useDeafStates" /* 11673 */;
-import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 19488 */;
+// Module 19496 (ToggleDeafen)
+import VoiceActionUtils from "VoiceActionUtils" /* 11641 */;
+import useDeafStates from "useDeafStates" /* 11674 */;
+import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 19493 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import size from "module_2" /* 2 */;
 

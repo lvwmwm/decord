@@ -1,56 +1,84 @@
 // Module ID: 12630
 // Function ID: 12631
-// Dependencies: [42, 41, 93, 95, 98, 158]
+// Dependencies: [12579]
+// Exports: getDebugImagesForResources
 
 // Module 12630
-import _createClass from "_createClass" /* 42 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import map from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import _wrapNativeSuper from "_wrapNativeSuper" /* 158 */;
+const require = globalThis.__r;
+let _require, obj;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
+function getFilenameToDebugIdMap(arg0) {
+  let _sentryDebugIds;
+  let closure_0;
+  let length;
+  let reduced;
+  _require = arg0;
+  _sentryDebugIds = require("module_12579").GLOBAL_OBJ._sentryDebugIds;
+  if (_sentryDebugIds) {
+    let tmp = globalThis;
+    const _Object = Object;
+    const keys = Object.keys(_sentryDebugIds);
+    const tmp2 = reduced;
+    if (tmp2) {
+      return reduced;
+    }
+    reduced = keys.reduce((acc, item) => {
+      let tmp7;
+      let tmp9;
+      let tmp = obj;
+      if (!tmp) {
+        obj = {};
+        tmp = obj;
+      }
+      if (tmp[item]) {
+        acc[tmp[item][0]] = tmp[item][1];
+      } else {
+        const arr = closure_0(item);
+        let diff = arr.length - 1;
+        if (0 <= diff) {
+          while (true) {
+            let tmp5 = arr[diff];
+            tmp7 = tmp5 && tmp5.filename;
+            tmp9 = _sentryDebugIds[item];
+            if (tmp7) {
+              if (tmp9) {
+                break;
+              }
+            }
+            diff = diff - 1;
+          }
+          acc[tmp7] = tmp9;
+          const items = [tmp7, tmp9];
+          obj[item] = items;
+        }
+      }
+      return acc;
+    }, {});
+  } else {
+    return {};
   }
 }
-class SentryError {
-  constructor(message) {
-    let constructResult;
-    let str = arg1;
-    if (arg1 === undefined) {
-      str = "warn";
-    }
-    const self = this;
-    _classCallCheck(this, SentryError);
-    const items = [message];
-    const obj = _getPrototypeOf(SentryError);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items);
-    }
-    const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.message = message;
-    tmp3Result.logLevel = str;
-    return tmp3Result;
-  }
-}
-_inherits(SentryError, _wrapNativeSuper(Error));
-const SentryError_export = _createClass(SentryError);
 
-export { SentryError_export as SentryError };
+export const getDebugImagesForResources = function getDebugImagesForResources(arg0, arg1) {
+  const tmp = getFilenameToDebugIdMap(arg0);
+  const items = [];
+  if (tmp) {
+    const iter = arg1[Symbol.iterator]();
+    let nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp7 = nextResult;
+      if (tmp7) {
+        nextResult = tmp[tmp7];
+      }
+      if (nextResult) {
+        obj = { type: "sourcemap", code_file: tmp7, debug_id: tmp[tmp7] };
+        let arr = items.push(obj);
+      }
+      continue;
+    }
+    return items;
+  } else {
+    return items;
+  }
+};
+export { getFilenameToDebugIdMap };

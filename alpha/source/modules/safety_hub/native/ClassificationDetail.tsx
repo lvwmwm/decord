@@ -1,9 +1,9 @@
-// Module ID: 12828
-// Function ID: 12829
+// Module ID: 12833
+// Function ID: 12834
 // Name: ClassificationDetail
-// Dependencies: [19, 17, 2068, 7922, 7898, 1087, 21, 4971, 587, 558, 576, 5234, 7899, 1128, 504, 3154, 5660, 10950, 9041, 6903, 5244, 12829, 12831, 7921, 6657, 1267, 12832, 6468, 6473, 12834, 12839, 7897, 7221, 2]
+// Dependencies: [19, 17, 2068, 7922, 7898, 1087, 21, 4971, 587, 558, 576, 5234, 7899, 1128, 504, 3154, 5660, 10951, 9041, 6903, 5244, 12834, 12836, 7921, 6657, 1267, 12837, 6468, 6473, 12839, 12844, 7897, 7221, 2]
 
-// Module 12828 (ClassificationDetail)
+// Module 12833 (ClassificationDetail)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -18,8 +18,8 @@ import MetricEvents from "MetricEvents" /* 6473 */;
 import TableRow2 from "TableRow" /* 6903 */;
 import SafetyHubModels from "SafetyHubModels" /* 7899 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 9041 */;
-import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 12832 */;
-import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 12834 */;
+import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 12837 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 12839 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
@@ -69,7 +69,7 @@ function ClassificationPolicyCard(policyExplainerLink) {
   let obj7;
   let tmp11;
   let tmp9;
-  let tmp = closure_25;
+  const tmp = closure_25;
   if (tmp) {
     let tmp17;
     let tmp19;
@@ -95,7 +95,7 @@ function ClassificationPolicyCard(policyExplainerLink) {
     const classificationPolicyCard = tmp16.classificationPolicyCard;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "sm", color: nativeDefault.colors.TEXT_LINK };
-      const ShieldIcon2 = tmp12(10950).ShieldIcon;
+      const ShieldIcon2 = tmp12(10951).ShieldIcon;
       const tmp22 = closure_13(ShieldIcon2, obj2);
       cResult[2] = tmp22;
       tmp19 = tmp22;
@@ -166,7 +166,6 @@ function ClassificationPolicyCard(policyExplainerLink) {
     tmp32 = tmp35;
   } else {
     policyExplainerLink = policyExplainerLink.policyExplainerLink;
-    let tmp2 = closure_16;
     const classificationTypeText = policyExplainerLink.classificationTypeText;
     const tmp3 = closure_16();
     let obj = { children: closure_14(tmp9, obj10) };
@@ -181,7 +180,7 @@ function ClassificationPolicyCard(policyExplainerLink) {
     const obj11 = { style: tmp3.classificationPolicyCardIcon, children: closure_13(ShieldIcon, obj12) };
     obj12 = { size: "sm", color: nativeDefault.colors.TEXT_LINK };
     tmp9 = TouchableHitBoxDefault;
-    ShieldIcon = policyExplainerLink(10950).ShieldIcon;
+    ShieldIcon = policyExplainerLink(10951).ShieldIcon;
     items1 = [closure_13(closure_4, obj11), ];
     const obj13 = { style: tmp3.classificationPolicyCardContent, children: closure_13(Text, obj14) };
     obj14 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.format(policyExplainerLink(1128).t.zxUdpj, obj15) };

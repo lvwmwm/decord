@@ -1,10 +1,10 @@
-// Module ID: 11441
-// Function ID: 11442
+// Module ID: 11442
+// Function ID: 11443
 // Name: VoiceChannelEffectsStore
 // Dependencies: [5632, 584, 1104, 12, 7457, 4978, 504, 2]
 // Exports: clearVoiceChannelEffectForUser
 
-// Module 11441 (VoiceChannelEffectsStore)
+// Module 11442 (VoiceChannelEffectsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1104 */;

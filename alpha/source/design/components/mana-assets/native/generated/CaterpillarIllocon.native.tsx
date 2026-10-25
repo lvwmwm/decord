@@ -1,28 +1,28 @@
-// Module ID: 12408
-// Function ID: 12409
+// Module ID: 12412
+// Function ID: 12413
 // Name: CaterpillarIllocon
-// Dependencies: [19, 21, 12409, 12410, 12411, 558, 576, 6995, 5669, 2]
+// Dependencies: [19, 21, 12413, 12414, 12415, 558, 576, 6995, 5669, 2]
 
-// Module 12408 (CaterpillarIllocon)
+// Module 12412 (CaterpillarIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import react_native from "react-native" /* 6995 */;
-import _modDef12409 from "module_12409" /* 12409 */;
-import _modDef12410 from "module_12410" /* 12410 */;
-import _modDef12411 from "module_12411" /* 12411 */;
+import _modDef12413 from "module_12413" /* 12413 */;
+import _modDef12414 from "module_12414" /* 12414 */;
+import _modDef12415 from "module_12415" /* 12415 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef12409 };
+let obj2 = { uri: _modDef12413 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef12410 };
-({ uri: _modDef12410 });
-obj[3] = { uri: _modDef12411 };
-({ uri: _modDef12411 });
+obj[2] = { uri: _modDef12414 };
+({ uri: _modDef12414 });
+obj[3] = { uri: _modDef12415 };
+({ uri: _modDef12415 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CaterpillarIllocon(arg0) {
   let accessibilityLabel;
   let accessible;

@@ -1,14 +1,14 @@
-// Module ID: 19340
-// Function ID: 19341
+// Module ID: 19345
+// Function ID: 19346
 // Name: NotificationSettingsMockChannels
-// Dependencies: [19, 17, 6705, 21, 4971, 587, 558, 576, 1128, 13270, 8551, 5234, 1202, 2]
+// Dependencies: [19, 17, 6705, 21, 4971, 587, 558, 576, 1128, 13275, 8551, 5234, 1202, 2]
 
-// Module 19340 (NotificationSettingsMockChannels)
+// Module 19345 (NotificationSettingsMockChannels)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ReadStateConstants from "ReadStateConstants" /* 6705 */;
 import TextIcon2 from "TextIcon" /* 8551 */;
-import StaticChannelIndicatorDefault from "StaticChannelIndicator" /* 13270 */;
+import StaticChannelIndicatorDefault from "StaticChannelIndicator" /* 13275 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;

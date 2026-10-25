@@ -1,9 +1,9 @@
-// Module ID: 12457
-// Function ID: 12458
+// Module ID: 12461
+// Function ID: 12462
 // Name: ConjurePlanCommandMenuPreview
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 12458, 1128, 5234, 5669, 1417, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 12462, 1128, 5234, 5669, 1417, 2]
 
-// Module 12457 (ConjurePlanCommandMenuPreview)
+// Module 12461 (ConjurePlanCommandMenuPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,7 +11,7 @@ import intl2 from "intl" /* 1128 */;
 import AvatarUtils from "AvatarUtils" /* 1417 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import FastImageDefault from "FastImage" /* 5669 */;
-import ArrowAngleLeftUpIcon2 from "ArrowAngleLeftUpIcon" /* 12458 */;
+import ArrowAngleLeftUpIcon2 from "ArrowAngleLeftUpIcon" /* 12462 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
@@ -58,7 +58,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanC
       let tmp9 = null;
       if ("message" === target) {
         const obj2 = { size: "xs", color: nativeDefault.colors.ICON_DEFAULT };
-        const ArrowAngleLeftUpIcon = tmp(12458).ArrowAngleLeftUpIcon;
+        const ArrowAngleLeftUpIcon = tmp(12462).ArrowAngleLeftUpIcon;
         tmp9 = React3(ArrowAngleLeftUpIcon, obj2);
       }
       cResult[3] = "message" === target;

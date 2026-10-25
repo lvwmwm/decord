@@ -1,9 +1,9 @@
-// Module ID: 13774
-// Function ID: 13775
+// Module ID: 13779
+// Function ID: 13780
 // Name: MessageNotificationHeader
 // Dependencies: [19, 17, 4972, 4913, 1392, 21, 4971, 587, 558, 576, 5234, 5604, 1108, 8542, 8544, 8502, 504, 2]
 
-// Module 13774 (MessageNotificationHeader)
+// Module 13779 (MessageNotificationHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;

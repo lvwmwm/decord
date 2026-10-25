@@ -1,10 +1,10 @@
-// Module ID: 19440
-// Function ID: 19441
+// Module ID: 19445
+// Function ID: 19446
 // Name: UserApplicationIdentityManager
-// Dependencies: [10790, 7214, 2]
+// Dependencies: [10791, 7214, 2]
 
-// Module 19440 (UserApplicationIdentityManager)
-import UserApplicationIdentityActionCreators from "UserApplicationIdentityActionCreators" /* 10790 */;
+// Module 19445 (UserApplicationIdentityManager)
+import UserApplicationIdentityActionCreators from "UserApplicationIdentityActionCreators" /* 10791 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 17665
-// Function ID: 17666
+// Module ID: 17670
+// Function ID: 17671
 // Name: UnknownChannel
-// Dependencies: [19, 12059, 6705, 21, 4971, 587, 5663, 1128, 5686, 558, 576, 5604, 10691, 17550, 2]
+// Dependencies: [19, 12060, 6705, 21, 4971, 587, 5663, 1128, 5686, 558, 576, 5604, 10691, 17555, 2]
 
-// Module 17665 (UnknownChannel)
+// Module 17670 (UnknownChannel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
@@ -12,7 +12,7 @@ import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 5686 */;
 import ReadStateConstants from "ReadStateConstants" /* 6705 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10691 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12059 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12060 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -20,7 +20,7 @@ import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp5;
-const ChannelItemDefault = tmp5(17550);
+const ChannelItemDefault = tmp5(17555);
 function handlePress() {
   let intl;
   const obj = { text: intl.string(intl2.t["/ZjyYE"]), icon: CircleInformationIcon.CircleInformationIcon };

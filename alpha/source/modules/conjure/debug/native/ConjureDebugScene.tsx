@@ -1,9 +1,9 @@
-// Module ID: 12534
-// Function ID: 12535
+// Module ID: 12538
+// Function ID: 12539
 // Name: ConjureDebugScene
-// Dependencies: [32, 19, 17, 10698, 10704, 21, 4971, 587, 1128, 3830, 558, 576, 1505, 1633, 12282, 8901, 504, 10733, 11870, 12535, 7285, 12544, 5663, 5682, 11856, 9146, 12545, 12551, 12553, 2]
+// Dependencies: [32, 19, 17, 10698, 10704, 21, 4971, 587, 1128, 3830, 558, 576, 1505, 1633, 12283, 8901, 504, 10733, 11871, 12539, 7285, 12548, 5663, 5682, 11857, 9146, 12549, 12555, 12557, 2]
 
-// Module 12534 (ConjureDebugScene)
+// Module 12538 (ConjureDebugScene)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
@@ -12,8 +12,8 @@ import CopyIcon from "CopyIcon" /* 5682 */;
 import ClipboardUtils from "ClipboardUtils" /* 7285 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 10698 */;
 import conjureDebugConnection from "conjureDebugConnection" /* 10733 */;
-import conjureTraceRequests2 from "conjureTraceRequests" /* 11870 */;
-import ConjureDebugSnapshot from "ConjureDebugSnapshot" /* 12544 */;
+import conjureTraceRequests2 from "conjureTraceRequests" /* 11871 */;
+import ConjureDebugSnapshot from "ConjureDebugSnapshot" /* 12548 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -265,7 +265,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDeb
         const tmp4 = projectId;
         if (null != result) {
           setActiveIndex(arr.indexOf("trace"), false);
-          const tmp2Result = tmp2(12535);
+          const tmp2Result = tmp2(12539);
           tmp2Result.openPerfTrace(tmp4, result);
         }
       }
@@ -360,7 +360,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDeb
       const tmp4 = projectId;
       if (null != result) {
         setActiveIndex(memo.indexOf("trace"), false);
-        const tmp2Result = tmp2(12535);
+        const tmp2Result = tmp2(12539);
         tmp2Result.openPerfTrace(tmp4, result);
       }
     }

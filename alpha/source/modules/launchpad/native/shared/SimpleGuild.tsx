@@ -1,18 +1,18 @@
-// Module ID: 18676
-// Function ID: 18677
+// Module ID: 18681
+// Function ID: 18682
 // Name: SimpleGuild
-// Dependencies: [19, 17, 4841, 6814, 4845, 1087, 21, 4971, 558, 576, 6883, 18677, 504, 18678, 18680, 1128, 17773, 8542, 587, 18679, 2]
+// Dependencies: [19, 17, 4841, 6814, 4845, 1087, 21, 4971, 558, 576, 6883, 18682, 504, 18683, 18685, 1128, 17778, 8542, 587, 18684, 2]
 
-// Module 18676 (SimpleGuild)
+// Module 18681 (SimpleGuild)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
 import GuildRecord from "GuildRecord" /* 4841 */;
 import GuildIconDefault from "GuildIcon" /* 6883 */;
-import useSimpleGuildDefaultColorsDefault from "useSimpleGuildDefaultColors" /* 18677 */;
-import CutoutImageDefault from "CutoutImage" /* 18679 */;
-import useSimpleGuildSizeDefault from "useSimpleGuildSize" /* 18680 */;
+import useSimpleGuildDefaultColorsDefault from "useSimpleGuildDefaultColors" /* 18682 */;
+import CutoutImageDefault from "CutoutImage" /* 18684 */;
+import useSimpleGuildSizeDefault from "useSimpleGuildSize" /* 18685 */;
 import react from "react" /* 19 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6814 */;
 import GuildStore from "GuildStore" /* 4845 */;
@@ -119,7 +119,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SimpleGuild(
   const tmpResult4 = guildId(504);
   const stateFromStoresObject = tmpResult4.useStateFromStoresObject(tmp14, tmp16, tmp17);
   ({ unread: unread2, badge: badge2 } = stateFromStoresObject);
-  const tmpResult5 = guildId(18678);
+  const tmpResult5 = guildId(18683);
   const tmp20 = tmp4 ? tmpResult5.SimpleGuildContainerAnimated : tmpResult5.SimpleGuildContainer;
   if (cResult[7] === size) {
     let tmp21;
@@ -178,7 +178,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SimpleGuild(
         tmp23 = tmp24;
       }
     }
-    const tmpResult6 = guildId(17773);
+    const tmpResult6 = guildId(17778);
     const activityIndicatorState = tmpResult6.useActivityIndicatorState(guildId);
     if (cResult[18] === containerSize) {
       if (cResult[19] === stateFromStores) {

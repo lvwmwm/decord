@@ -1,9 +1,9 @@
-// Module ID: 15902
-// Function ID: 15903
+// Module ID: 15907
+// Function ID: 15908
 // Name: useUserAvailableGuildsWithTags
 // Dependencies: [4883, 4845, 558, 576, 8654, 504, 2]
 
-// Module 15902 (useUserAvailableGuildsWithTags)
+// Module 15907 (useUserAvailableGuildsWithTags)
 import react from "react" /* 576 */;
 import GuildMemberStore from "GuildMemberStore" /* 4883 */;
 import GuildStore from "GuildStore" /* 4845 */;

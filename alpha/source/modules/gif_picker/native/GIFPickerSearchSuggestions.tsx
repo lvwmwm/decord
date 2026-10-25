@@ -143,7 +143,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           Button = onClickSuggestion(closure_1_2[11]).Button;
           obj.hitSlop = closure_1_1(closure_1_2[5]).space.PX_8;
           obj.text = onClickSuggestion;
-          obj.onPress = function onPress() { /* body not rendered: F147003 */ };
+          obj.onPress = function onPress() { /* body not rendered: F147029 */ };
           return closure_1_5(Button, obj, onClickSuggestion);
         }
       }
@@ -163,7 +163,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           Button = onClickSuggestion(closure_1_2[11]).Button;
           obj.hitSlop = closure_1_1(closure_1_2[5]).space.PX_8;
           obj.text = onClickSuggestion;
-          obj.onPress = function onPress() { /* body not rendered: F147003 */ };
+          obj.onPress = function onPress() { /* body not rendered: F147029 */ };
           return closure_1_5(Button, obj, onClickSuggestion);
         }
       }

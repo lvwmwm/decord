@@ -1,9 +1,9 @@
-// Module ID: 11485
-// Function ID: 11486
+// Module ID: 11486
+// Function ID: 11487
 // Name: BaseEmbeddedAppWebView
-// Dependencies: [5, 32, 19, 17, 5625, 1087, 2026, 21, 4971, 3, 1384, 558, 576, 10774, 11486, 7907, 11487, 11488, 1383, 11471, 11489, 11490, 11491, 11482, 1267, 573, 5908, 1128, 11492, 5623, 1297, 11493, 11494, 1386, 10758, 6660, 2]
+// Dependencies: [5, 32, 19, 17, 5625, 1087, 2026, 21, 4971, 3, 1384, 558, 576, 10775, 11487, 7907, 11488, 11489, 1383, 11472, 11490, 11491, 11492, 11483, 1267, 573, 5908, 1128, 11493, 5623, 1297, 11494, 11495, 1386, 10759, 6660, 2]
 
-// Module 11485 (BaseEmbeddedAppWebView)
+// Module 11486 (BaseEmbeddedAppWebView)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -16,8 +16,8 @@ import Constants2 from "Constants" /* 2026 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5908 */;
 import usePreviousDefault from "usePrevious" /* 6660 */;
 import WebView2 from "WebView" /* 7907 */;
-import useEmbeddedAppCSPDefault from "useEmbeddedAppCSP" /* 10774 */;
-import isAllowedFrameNavigation from "isAllowedFrameNavigation" /* 11494 */;
+import useEmbeddedAppCSPDefault from "useEmbeddedAppCSP" /* 10775 */;
+import isAllowedFrameNavigation from "isAllowedFrameNavigation" /* 11495 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

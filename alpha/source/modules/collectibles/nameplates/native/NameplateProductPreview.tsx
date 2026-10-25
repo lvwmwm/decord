@@ -1,9 +1,9 @@
-// Module ID: 14451
-// Function ID: 14452
+// Module ID: 14456
+// Function ID: 14457
 // Name: NameplateProductPreview
 // Dependencies: [19, 17, 4972, 21, 4971, 587, 558, 576, 8660, 1992, 1128, 5234, 5258, 8667, 8655, 8748, 504, 5025, 6367, 10661, 10662, 1202, 10686, 6903, 2]
 
-// Module 14451 (NameplateProductPreview)
+// Module 14456 (NameplateProductPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -521,7 +521,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepla
         tmp27 = tmp29;
       }
     }
-    const obj6 = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration: tmp9, animate: !stateFromStores, autoStatusCutout: null, "aria-hidden": null };
+    const obj6 = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration: tmp9, animate: !stateFromStores, autoStatusCutout: false, "aria-hidden": false };
     const Avatar = tmp(1202).Avatar;
     const tmp26 = metroRequire(Avatar, obj6);
     cResult[12] = tmp9;
@@ -571,7 +571,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepla
   }
   const items1 = [currentUser, tmp5Result, stateFromStores];
   const icon = react.useMemo(() => {
-    const obj = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration, animate: !stateFromStores, autoStatusCutout: null, "aria-hidden": null };
+    const obj = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration, animate: !stateFromStores, autoStatusCutout: false, "aria-hidden": false };
     const Avatar = native.Avatar;
     return metroRequire(Avatar, obj);
   }, items1);

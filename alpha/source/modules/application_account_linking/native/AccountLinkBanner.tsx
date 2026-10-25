@@ -1,17 +1,17 @@
-// Module ID: 17618
-// Function ID: 17619
+// Module ID: 17623
+// Function ID: 17624
 // Name: AccountLinkBanner
-// Dependencies: [19, 17, 1392, 4820, 21, 587, 7261, 11056, 5250, 4971, 558, 576, 573, 7253, 7278, 6931, 6908, 1202, 1128, 5234, 9338, 5244, 6905, 2]
+// Dependencies: [19, 17, 1392, 4820, 21, 587, 7261, 11057, 5250, 4971, 558, 576, 573, 7253, 7278, 6931, 6908, 1202, 1128, 5234, 9338, 5244, 6905, 2]
 // Exports: getScaledAccountLinkBannerHeight
 
-// Module 17618 (AccountLinkBanner)
+// Module 17623 (AccountLinkBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
 import ButtonConstants from "ButtonConstants" /* 5250 */;
 import GameIcon from "GameIcon" /* 7261 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11056 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11057 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;

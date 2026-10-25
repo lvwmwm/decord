@@ -1,9 +1,9 @@
-// Module ID: 12367
-// Function ID: 12368
+// Module ID: 12370
+// Function ID: 12371
 // Name: ConjureAgentReaction
 // Dependencies: [19, 17, 21, 4971, 587, 558, 576, 4799, 1417, 10703, 7227, 2]
 
-// Module 12367 (ConjureAgentReaction)
+// Module 12370 (ConjureAgentReaction)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

@@ -1,9 +1,9 @@
-// Module ID: 14274
-// Function ID: 14275
+// Module ID: 14279
+// Function ID: 14280
 // Name: AddOrOpenAppButton
-// Dependencies: [5, 32, 19, 9650, 1087, 1504, 21, 558, 576, 12135, 10744, 5210, 7285, 12121, 5662, 1386, 8092, 9469, 1128, 587, 5244, 6809, 7411, 5159, 1631, 1267, 2]
+// Dependencies: [5, 32, 19, 9650, 1087, 1504, 21, 558, 576, 12136, 10744, 5210, 7285, 12122, 5662, 1386, 8092, 9469, 1128, 587, 5244, 6809, 7411, 5159, 1631, 1267, 2]
 
-// Module 14274 (AddOrOpenAppButton)
+// Module 14279 (AddOrOpenAppButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
@@ -13,8 +13,8 @@ import ToastUtils from "ToastUtils" /* 5662 */;
 import ClipboardUtils from "ClipboardUtils" /* 7285 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9650 */;
 import ApplicationUtils from "ApplicationUtils" /* 10744 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 12121 */;
-import useIsAppDMDefault from "useIsAppDM" /* 12135 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 12122 */;
+import useIsAppDMDefault from "useIsAppDM" /* 12136 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

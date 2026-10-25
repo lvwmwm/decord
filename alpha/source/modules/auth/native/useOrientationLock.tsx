@@ -1,9 +1,9 @@
-// Module ID: 17417
-// Function ID: 17418
+// Module ID: 17422
+// Function ID: 17423
 // Name: useOrientationLock
 // Dependencies: [19, 4928, 1630, 558, 576, 7037, 8820, 2]
 
-// Module 17417 (useOrientationLock)
+// Module 17422 (useOrientationLock)
 import DeviceUtils from "DeviceUtils" /* 4928 */;
 import useWideAuthViewDefault from "useWideAuthView" /* 7037 */;
 import react from "react" /* 19 */;

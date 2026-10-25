@@ -1,16 +1,16 @@
-// Module ID: 12486
-// Function ID: 12487
+// Module ID: 12490
+// Function ID: 12491
 // Name: ConjurePublishCtaCard
-// Dependencies: [19, 21, 558, 576, 11873, 12286, 5977, 5244, 12304, 12487, 5234, 12488, 2]
+// Dependencies: [19, 21, 558, 576, 11874, 12287, 5977, 5244, 12305, 12491, 5234, 12492, 2]
 
-// Module 12486 (ConjurePublishCtaCard)
+// Module 12490 (ConjurePublishCtaCard)
 import react2 from "react" /* 576 */;
 import components_Button_Button from "components/Button/Button" /* 5244 */;
 import Stack_Stack from "Stack/Stack" /* 5977 */;
-import useConjurePublishAction from "useConjurePublishAction" /* 11873 */;
-import ConjurePublishSheetDefault from "ConjurePublishSheet" /* 12286 */;
-import conjurePublishCard from "conjurePublishCard" /* 12304 */;
-import ConjureTipInlineCalloutDefault from "ConjureTipInlineCallout" /* 12487 */;
+import useConjurePublishAction from "useConjurePublishAction" /* 11874 */;
+import ConjurePublishSheetDefault from "ConjurePublishSheet" /* 12287 */;
+import conjurePublishCard from "conjurePublishCard" /* 12305 */;
+import ConjureTipInlineCalloutDefault from "ConjureTipInlineCallout" /* 12491 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -29,7 +29,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publish
   const cResult = obj.c(7);
   projectId = projectId.projectId;
   const publish = projectId.publish;
-  const context = react.useContext(projectId(11873).ConjurePublishActionContext);
+  const context = react.useContext(projectId(11874).ConjurePublishActionContext);
   if (cResult[0] === context) {
     let tmp6;
     if (cResult[1] === projectId) {
@@ -129,7 +129,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePubli
       let tmp8Result3 = null;
       if (null != turnId) {
         const obj4 = { projectId, turnId, cta, status: tmp5.status };
-        tmp8Result3 = tmp8(tmp4(12488), obj4, turnId);
+        tmp8Result3 = tmp8(tmp4(12492), obj4, turnId);
       }
       const obj5 = { children: tmp10(Stack, obj6) };
       obj6 = { spacing: 12, children: items };
@@ -169,7 +169,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePubli
       let tmp6Result3 = null;
       if (null != turnId) {
         const obj4 = { projectId, turnId, cta, status: tmp3.status };
-        tmp6Result3 = tmp6(tmp(12488), obj4, turnId);
+        tmp6Result3 = tmp6(tmp(12492), obj4, turnId);
       }
       const obj5 = { children: tmp8(Stack, obj6) };
       obj6 = { spacing: 12, children: items };

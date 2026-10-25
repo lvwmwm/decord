@@ -1,8 +1,8 @@
-// Module ID: 12891
-// Function ID: 12892
+// Module ID: 12896
+// Function ID: 12897
 // Dependencies: [2]
 
-// Module 12891
+// Module 12896
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/FamilyShieldSpotIllustration-3x.png.js");

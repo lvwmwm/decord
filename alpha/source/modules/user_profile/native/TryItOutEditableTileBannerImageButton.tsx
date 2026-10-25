@@ -1,9 +1,9 @@
-// Module ID: 15945
-// Function ID: 15946
+// Module ID: 15950
+// Function ID: 15951
 // Name: TryItOutEditableTileBannerImageButton
-// Dependencies: [19, 17, 4972, 8649, 7703, 21, 1105, 587, 558, 576, 504, 4799, 8675, 15946, 15947, 1128, 15944, 5669, 1417, 2]
+// Dependencies: [19, 17, 4972, 8649, 7703, 21, 1105, 587, 558, 576, 504, 4799, 8675, 15951, 15952, 1128, 15949, 5669, 1417, 2]
 
-// Module 15945 (TryItOutEditableTileBannerImageButton)
+// Module 15950 (TryItOutEditableTileBannerImageButton)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -13,8 +13,8 @@ import AvatarUtils from "AvatarUtils" /* 1417 */;
 import UserSettings from "UserSettings" /* 4799 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import useDisplayProfileDefault from "useDisplayProfile" /* 8675 */;
-import UserProfileEditingAccessibilityUtils from "UserProfileEditingAccessibilityUtils" /* 15944 */;
-import UserProfileEditableTileBaseDefault from "UserProfileEditableTileBase" /* 15947 */;
+import UserProfileEditingAccessibilityUtils from "UserProfileEditingAccessibilityUtils" /* 15949 */;
+import UserProfileEditableTileBaseDefault from "UserProfileEditableTileBase" /* 15952 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4972 */;
@@ -75,7 +75,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Editab
   if (primaryColor == null) {
     primaryColor = closure_9;
   }
-  const hex = tmp9(15946)(primaryColor).hex;
+  const hex = tmp9(15951)(primaryColor).hex;
   const tmp9Result = UserProfileEditableTileBaseDefault;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
@@ -165,7 +165,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Editab
   if (primaryColor == null) {
     primaryColor = closure_9;
   }
-  const hex = tmp5(15946)(primaryColor).hex;
+  const hex = tmp5(15951)(primaryColor).hex;
   UserProfileEditableTileBaseDefault;
   const intl = tmp(1128).intl;
   const tmpResult = UserProfileEditingAccessibilityUtils;

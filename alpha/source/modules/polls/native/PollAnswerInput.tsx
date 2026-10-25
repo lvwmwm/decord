@@ -1,10 +1,10 @@
-// Module ID: 12241
-// Function ID: 12242
+// Module ID: 12242
+// Function ID: 12243
 // Name: PollAnswerInput
-// Dependencies: [19, 17, 4823, 7631, 8310, 1395, 21, 4971, 587, 558, 576, 12242, 1128, 8284, 1202, 6908, 9825, 9665, 5210, 12243, 2002, 9351, 8951, 5690, 12246, 2]
+// Dependencies: [19, 17, 4823, 7631, 8310, 1395, 21, 4971, 587, 558, 576, 12243, 1128, 8284, 1202, 6908, 9825, 9665, 5210, 12244, 2002, 9351, 8951, 5690, 12247, 2]
 // Exports: default
 
-// Module 12241 (PollAnswerInput)
+// Module 12242 (PollAnswerInput)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
@@ -16,7 +16,7 @@ import DraftStore from "DraftStore" /* 7631 */;
 import PollsUtils from "PollsUtils" /* 8284 */;
 import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9665 */;
 import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9825 */;
-import useRenderPollAnswerImageDefault from "useRenderPollAnswerImage" /* 12242 */;
+import useRenderPollAnswerImageDefault from "useRenderPollAnswerImage" /* 12243 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
@@ -369,7 +369,7 @@ export default function PollAnswerInput(answer) {
     openImageInputActionSheet() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { channelId, index, answer, onSaveAltText: handleSaveAltText, onRemoveAnswerImage, openExpressionPicker };
-      obj.openLazy(asyncRequire(12243, dependencyMap.paths), authStore, obj2);
+      obj.openLazy(asyncRequire(12244, dependencyMap.paths), authStore, obj2);
     },
     iconSrc: index(channelId[21]),
     containerStyle: tmp.defaultImageContainer,

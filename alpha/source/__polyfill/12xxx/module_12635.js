@@ -1,39 +1,56 @@
 // Module ID: 12635
 // Function ID: 12636
-// Dependencies: [12601, 12573, 12600]
-// Exports: initAndBind, setCurrentClient
+// Dependencies: [42, 41, 93, 95, 98, 158]
 
 // Module 12635
-import _mod12573 from "module_12573" /* 12573 */;
-import _mod12600 from "module_12600" /* 12600 */;
-import _mod12601 from "module_12601" /* 12601 */;
+import _createClass from "_createClass" /* 42 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import map from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import _wrapNativeSuper from "_wrapNativeSuper" /* 158 */;
 
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-export const initAndBind = function initAndBind(arg0, debug) {
-  if (true === debug.debug) {
-    const DEBUG_BUILD = _mod12601.DEBUG_BUILD;
-    const obj = _mod12573;
-    if (DEBUG_BUILD) {
-      const logger = obj.logger;
-      logger.enable();
-    } else {
-      obj.consoleSandbox(() => {
-        console.warn("[Sentry] Cannot initialize SDK with `debug` option using a non-debug bundle.");
-      });
-    }
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  const obj2 = _mod12600;
-  const currentScope = obj2.getCurrentScope();
-  currentScope.update(debug.initialScope);
-  const obj4 = new arg0(debug);
-  const obj5 = _mod12600;
-  const currentScope1 = obj5.getCurrentScope();
-  currentScope1.setClient(obj4);
-  obj4.init();
-  return obj4;
-};
-export const setCurrentClient = function setCurrentClient(arg0) {
-  const obj = _mod12600;
-  const currentScope = obj.getCurrentScope();
-  currentScope.setClient(arg0);
-};
+}
+class SentryError {
+  constructor(message) {
+    let constructResult;
+    let str = arg1;
+    if (arg1 === undefined) {
+      str = "warn";
+    }
+    const self = this;
+    _classCallCheck(this, SentryError);
+    const items = [message];
+    const obj = _getPrototypeOf(SentryError);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = map;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items);
+    }
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.message = message;
+    tmp3Result.logLevel = str;
+    return tmp3Result;
+  }
+}
+_inherits(SentryError, _wrapNativeSuper(Error));
+const SentryError_export = _createClass(SentryError);
+
+export { SentryError_export as SentryError };

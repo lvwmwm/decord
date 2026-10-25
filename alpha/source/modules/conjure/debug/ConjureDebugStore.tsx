@@ -63,15 +63,15 @@ class ConjureDebugStore extends Store {
     }
     return value;
   }
-  getForceCompactionState(projectId) {
-    let str = map2.get(projectId);
+  getForceCompactionState(arg0) {
+    let str = map2.get(arg0);
     if (str == null) {
       str = "idle";
     }
     return str;
   }
-  getSandboxRestartState(projectId) {
-    let str = map3.get(projectId);
+  getSandboxRestartState(arg0) {
+    let str = map3.get(arg0);
     if (str == null) {
       str = "idle";
     }

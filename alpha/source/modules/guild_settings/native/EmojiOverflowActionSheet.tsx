@@ -1,9 +1,9 @@
-// Module ID: 19060
-// Function ID: 19061
+// Module ID: 19065
+// Function ID: 19066
 // Name: EmojiOverflowActionSheet
 // Dependencies: [5, 19, 17, 21, 4971, 558, 576, 1417, 5669, 5234, 5689, 1128, 6903, 9943, 10120, 6374, 5662, 6931, 6987, 7298, 2]
 
-// Module 19060 (EmojiOverflowActionSheet)
+// Module 19065 (EmojiOverflowActionSheet)
 import react_native from "react-native" /* 17 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import EmojiActionCreators from "EmojiActionCreators" /* 9943 */;

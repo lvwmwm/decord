@@ -1,10 +1,10 @@
-// Module ID: 11801
-// Function ID: 11802
+// Module ID: 11802
+// Function ID: 11803
 // Name: useConjureProjectSettingsDraft
-// Dependencies: [5, 32, 19, 6773, 504, 11802, 11805, 11807, 10735, 6774, 7345, 11808, 1128, 3830, 11809, 10720, 2]
+// Dependencies: [5, 32, 19, 6773, 504, 11803, 11806, 11808, 10735, 6774, 7345, 11809, 1128, 3830, 11810, 10720, 2]
 // Exports: default
 
-// Module 11801 (useConjureProjectSettingsDraft)
+// Module 11802 (useConjureProjectSettingsDraft)
 import _modDef3830 from "module_3830" /* 3830 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6774 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

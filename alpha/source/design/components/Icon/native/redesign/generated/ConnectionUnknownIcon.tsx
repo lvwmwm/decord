@@ -1,14 +1,14 @@
-// Module ID: 17839
-// Function ID: 17840
+// Module ID: 17844
+// Function ID: 17845
 // Name: ConnectionUnknownIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 17840, 5668, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 17845, 5668, 2]
 
-// Module 17839 (ConnectionUnknownIcon)
+// Module 17844 (ConnectionUnknownIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5668 */;
-import AssetRegistry from "AssetRegistry" /* 17840 */;
+import AssetRegistry from "AssetRegistry" /* 17845 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

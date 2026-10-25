@@ -1,10 +1,10 @@
-// Module ID: 10914
-// Function ID: 10915
+// Module ID: 10915
+// Function ID: 10916
 // Name: subscribeToSafeAreaInsets
 // Dependencies: [1502, 1634, 2]
 // Exports: default
 
-// Module 10914 (subscribeToSafeAreaInsets)
+// Module 10915 (subscribeToSafeAreaInsets)
 import AppEntryKeyContext from "AppEntryKeyContext" /* 1502 */;
 import SafeAreaStoreDefault from "SafeAreaStore" /* 1634 */;
 import size from "module_2" /* 2 */;

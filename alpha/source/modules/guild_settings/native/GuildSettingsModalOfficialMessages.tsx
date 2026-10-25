@@ -1,10 +1,10 @@
-// Module ID: 19329
-// Function ID: 19330
+// Module ID: 19334
+// Function ID: 19335
 // Name: GuildSettingsModalOfficialMessages
-// Dependencies: [32, 19, 17, 6899, 4972, 4845, 9006, 4976, 1098, 21, 4971, 587, 1128, 16621, 13835, 16623, 1505, 504, 9005, 6924, 7485, 5210, 17735, 2002, 8901, 5052, 6903, 15839, 1105, 5234, 9146, 558, 576, 4796, 7367, 683, 1202, 16636, 2]
+// Dependencies: [32, 19, 17, 6899, 4972, 4845, 9006, 4976, 1098, 21, 4971, 587, 1128, 16626, 13840, 16628, 1505, 504, 9005, 6924, 7485, 5210, 17740, 2002, 8901, 5052, 6903, 15844, 1105, 5234, 9146, 558, 576, 4796, 7367, 683, 1202, 16641, 2]
 // Exports: default
 
-// Module 19329 (GuildSettingsModalOfficialMessages)
+// Module 19334 (GuildSettingsModalOfficialMessages)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
@@ -19,7 +19,7 @@ import Text_Text from "Text/Text" /* 5234 */;
 import TableRowConstants from "TableRowConstants" /* 6899 */;
 import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 7367 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7485 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16636 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16641 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -466,7 +466,7 @@ export default function GuildSettingsModalOfficialMessages(guildId) {
       }
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(17735, dependencyMap.paths);
+    const tmp2 = asyncRequire(17740, dependencyMap.paths);
     intl = intl4.intl;
     openLazy(tmp2, "RoleColorPicker", obj);
   }, items5);

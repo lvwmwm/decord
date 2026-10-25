@@ -1,12 +1,12 @@
-// Module ID: 19378
-// Function ID: 19379
+// Module ID: 19383
+// Function ID: 19384
 // Name: GlobalDiscoveryServersFeaturedSearchManager
-// Dependencies: [5, 15015, 9007, 1087, 7214, 19379, 584, 1297, 1493, 19380, 7448, 2]
+// Dependencies: [5, 15020, 9007, 1087, 7214, 19384, 584, 1297, 1493, 19385, 7448, 2]
 
-// Module 19378 (GlobalDiscoveryServersFeaturedSearchManager)
+// Module 19383 (GlobalDiscoveryServersFeaturedSearchManager)
 import Constants from "Constants" /* 1087 */;
 import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9007 */;
-import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 15015 */;
+import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 15020 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
 import size from "module_2" /* 2 */;

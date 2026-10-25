@@ -1,10 +1,10 @@
-// Module ID: 13322
-// Function ID: 13323
+// Module ID: 13327
+// Function ID: 13328
 // Name: EmojiSuggestionBarUtils
-// Dependencies: [32, 19, 4972, 1087, 21, 1202, 558, 576, 5052, 5247, 5037, 5206, 504, 7253, 7278, 13287, 13323, 12251, 9903, 9672, 2]
+// Dependencies: [32, 19, 4972, 1087, 21, 1202, 558, 576, 5052, 5247, 5037, 5206, 504, 7253, 7278, 13292, 13328, 12252, 9903, 9672, 2]
 // Exports: getEmojiEntranceKey, getEmojiIdentity, sortEmojisForDisplay
 
-// Module 13322 (EmojiSuggestionBarUtils)
+// Module 13327 (EmojiSuggestionBarUtils)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import native from "native" /* 1202 */;
@@ -291,7 +291,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
   const stateFromStores = tmpResult.useStateFromStores(tmp7, tmp8);
   const tmp12 = chatInputStateRef(7253);
   analyticsLocations = tmp12(chatInputStateRef(7278).EMOJI_SUGGESTIONS).analyticsLocations;
-  const tmp13 = chatInputStateRef(13287)(tmp6, 16);
+  const tmp13 = chatInputStateRef(13292)(tmp6, 16);
   setData = tmp13.setData;
   setDataImmediate = tmp13.setDataImmediate;
   const tmp11 = chatInputStateRef;
@@ -323,7 +323,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
               if (cResult[11] === text) {
                 tmp17 = cResult[12];
               }
-              const tmp18 = tmp11(13323)(tmp17);
+              const tmp18 = tmp11(13328)(tmp17);
               const unlockedEmojis = tmp18.unlockedEmojis;
               ({ lockedEmojis, queryEnd } = tmp18);
               clear = tmp18.clear;
@@ -513,13 +513,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
   const stateFromStores = obj2.useStateFromStores(items, () => setDataImmediate.useReducedMotion);
   const tmp5 = chatInputStateRef(7253);
   analyticsLocations = tmp5(chatInputStateRef(7278).EMOJI_SUGGESTIONS).analyticsLocations;
-  const tmp6 = chatInputStateRef(13287)(tmp3, 16);
+  const tmp6 = chatInputStateRef(13292)(tmp3, 16);
   setData = tmp6.setData;
   setDataImmediate = tmp6.setDataImmediate;
   const items1 = [setData];
   const imperativeHandle = setData.useImperativeHandle(ref, () => ({ setData }), items1);
   let obj3 = { channel, text, selectionStart, selectionEnd, enabled: focused, maxCount, minUnlockedEmojis };
-  const tmp8 = chatInputStateRef(13323);
+  const tmp8 = chatInputStateRef(13328);
   if (focused) {
     focused = !suppressed;
   }

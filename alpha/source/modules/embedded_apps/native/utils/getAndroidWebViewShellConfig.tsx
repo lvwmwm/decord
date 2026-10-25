@@ -1,10 +1,10 @@
-// Module ID: 11492
-// Function ID: 11493
+// Module ID: 11493
+// Function ID: 11494
 // Name: getAndroidWebViewShellConfig
 // Dependencies: [2]
 // Exports: getAndroidWebViewShellConfig
 
-// Module 11492 (getAndroidWebViewShellConfig)
+// Module 11493 (getAndroidWebViewShellConfig)
 import size from "module_2" /* 2 */;
 
 let c0 = "https://discord.com";

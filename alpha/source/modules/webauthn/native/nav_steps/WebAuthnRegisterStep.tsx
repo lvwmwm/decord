@@ -1,9 +1,9 @@
-// Module ID: 16071
-// Function ID: 16072
+// Module ID: 16076
+// Function ID: 16077
 // Name: WebAuthnRegisterStep
-// Dependencies: [32, 19, 17, 1087, 21, 4971, 587, 7042, 558, 576, 1128, 1202, 1505, 1384, 16072, 16073, 5234, 6696, 5244, 7221, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 4971, 587, 7042, 558, 576, 1128, 1202, 1505, 1384, 16077, 16078, 5234, 6696, 5244, 7221, 2]
 
-// Module 16071 (WebAuthnRegisterStep)
+// Module 16076 (WebAuthnRegisterStep)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -185,10 +185,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
     tmp19 = cResult[3];
   }
   dependencyMap = tmp19;
-  const tmpResult = navigation(16072);
+  const tmpResult = navigation(16077);
   const announceError = tmpResult.useAnnounceError(tmp11);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp23 = closure_7(navigation(16073).KeyImage, {});
+    const tmp23 = closure_7(navigation(16078).KeyImage, {});
     cResult[4] = tmp23;
     tmp21 = tmp23;
   } else {
@@ -383,12 +383,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
   let closure_5 = obj2.useMemo(() => obj4[first], items1);
   const items2 = [onRegisterSuccess, tmp11, tmp8];
   let closure_6 = obj2.useMemo(() => ({ onRegisterSuccess, setError: dependencyMap, setRegistering: importDefault }), items2);
-  const tmpResult = navigation(16072);
+  const tmpResult = navigation(16077);
   const announceError = tmpResult.useAnnounceError(tmp10);
   const rect = { bottom: true, left: true, right: true, style: tmp4.flexContainer, children: items4 };
   obj4 = { style: tmp4.centerFlex, children: items3 };
   const SafeAreaPaddingView = tmp(7221).SafeAreaPaddingView;
-  items3 = [closure_7(navigation(16073).KeyImage, {}), , ];
+  items3 = [closure_7(navigation(16078).KeyImage, {}), , ];
   const obj5 = { style: tmp4.margin, variant: "text-md/normal", children: stringResult };
   const Text = tmp(5234).Text;
   const intl = tmp(1128).intl;

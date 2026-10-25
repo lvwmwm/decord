@@ -1,10 +1,10 @@
-// Module ID: 12952
-// Function ID: 12953
+// Module ID: 12957
+// Function ID: 12958
 // Name: CheckpointStatsUtils
 // Dependencies: [1406, 4837, 11, 2]
 // Exports: getCheckpointTopPercent, globalStatsFromServer, hasCheckpointEmojis, hasCheckpointGames, hasCheckpointGuilds, hasCheckpointMessages, hasCheckpointSidekick, hasCheckpointSquad, hasCheckpointVoiceMinutes, statsFromServer
 
-// Module 12952 (CheckpointStatsUtils)
+// Module 12957 (CheckpointStatsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 4837 */;
 import UserRecord from "UserRecord" /* 1406 */;

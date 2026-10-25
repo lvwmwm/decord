@@ -1,13 +1,13 @@
-// Module ID: 11583
-// Function ID: 11584
+// Module ID: 11584
+// Function ID: 11585
 // Name: StageActionBar
-// Dependencies: [19, 17, 21, 4971, 558, 576, 6638, 11584, 11562, 11386, 11521, 6640, 11518, 11639, 2]
+// Dependencies: [19, 17, 21, 4971, 558, 576, 6638, 11585, 11563, 11387, 11522, 6640, 11519, 11640, 2]
 
-// Module 11583 (StageActionBar)
+// Module 11584 (StageActionBar)
 import react_native from "react-native" /* 17 */;
-import StageActionBarButtons from "StageActionBarButtons" /* 11518 */;
-import ChannelCallActionBar from "ChannelCallActionBar" /* 11584 */;
-import ChannelCallMicButton from "ChannelCallMicButton" /* 11639 */;
+import StageActionBarButtons from "StageActionBarButtons" /* 11519 */;
+import ChannelCallActionBar from "ChannelCallActionBar" /* 11585 */;
+import ChannelCallMicButton from "ChannelCallMicButton" /* 11640 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;
@@ -43,12 +43,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   } else {
     tmp6 = cResult[1];
   }
-  const tmpResult = tmp(11584);
+  const tmpResult = tmp(11585);
   const actionBarPrimaryButton = tmpResult.useActionBarPrimaryButton(tmp6);
-  const tmpResult5 = tmp(11562);
+  const tmpResult5 = tmp(11563);
   const getActionBarHeight = tmpResult5.useGetActionBarHeight(channel.id);
-  const tmp9 = actionBarPrimaryButton(11386)(channel.id);
-  const tmpResult6 = tmp(11521);
+  const tmp9 = actionBarPrimaryButton(11387)(channel.id);
+  const tmpResult6 = tmp(11522);
   const tmp10 = tmpResult6.useShowStageMusicMuteButton(channel.id) && !tmp9;
   if (cResult[2] !== channel.guild_id) {
     const tmpResult7 = tmp(6640);
@@ -125,14 +125,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                   tmp46 = tmp13Result;
                 }
                 const obj5 = { channel, isSmallSize: tmp11 };
-                const tmp45 = closure_5(tmp(11518).ChatButton, obj5);
+                const tmp45 = closure_5(tmp(11519).ChatButton, obj5);
                 cResult[18] = channel;
                 cResult[19] = tmp11;
                 cResult[20] = tmp45;
                 tmp43 = tmp45;
               }
             }
-            const tmpResult8 = tmp(11518);
+            const tmpResult8 = tmp(11519);
             const obj6 = { channel, isSmallSize: tmp11 };
             const tmp40Result = closure_5(canModerateRequestToSpeak ? tmpResult8.RequestToSpeakListButton : tmpResult8.MoveToAudienceButton, obj6);
             cResult[14] = channel;
@@ -142,7 +142,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             tmp39 = tmp40Result;
           }
           const obj7 = { channel, isSmallSize: tmp11 };
-          const tmp38 = closure_5(tmp(11639).ChannelCallMicButton, obj7);
+          const tmp38 = closure_5(tmp(11640).ChannelCallMicButton, obj7);
           cResult[11] = channel;
           cResult[12] = tmp11;
           cResult[13] = tmp38;
@@ -152,7 +152,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       let tmp34 = tmp11;
       if (tmp34) {
         const obj8 = { channel, isSmallSize: tmp11 };
-        tmp34 = closure_5(tmp(11584).VideoButton, obj8);
+        tmp34 = closure_5(tmp(11585).VideoButton, obj8);
       }
       cResult[7] = channel;
       cResult[8] = tmp11;
@@ -216,7 +216,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                   tmp27 = tmp13Result2;
                 }
                 const obj10 = { channel, isSmallSize: tmp10 && canModerateRequestToSpeak };
-                const tmp26 = closure_5(tmp(11518).ChatButton, obj10);
+                const tmp26 = closure_5(tmp(11519).ChatButton, obj10);
                 cResult[41] = channel;
                 cResult[42] = tmp10 && canModerateRequestToSpeak;
                 cResult[43] = tmp26;
@@ -226,7 +226,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             let tmp22 = canModerateRequestToSpeak;
             if (tmp22) {
               const obj11 = { channel, isSmallSize: tmp10 && canModerateRequestToSpeak };
-              tmp22 = closure_5(tmp(11518).RequestToSpeakListButton, obj11);
+              tmp22 = closure_5(tmp(11519).RequestToSpeakListButton, obj11);
             }
             cResult[37] = channel;
             cResult[38] = canModerateRequestToSpeak;
@@ -235,7 +235,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             tmp21 = tmp22;
           }
           const obj12 = { channel, isSmallSize: tmp10 && canModerateRequestToSpeak };
-          const tmp20 = closure_5(tmp(11518).RequestToSpeakButton, obj12);
+          const tmp20 = closure_5(tmp(11519).RequestToSpeakButton, obj12);
           cResult[34] = channel;
           cResult[35] = tmp10 && canModerateRequestToSpeak;
           cResult[36] = tmp20;
@@ -245,7 +245,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       let tmp16 = tmp10;
       if (tmp16) {
         const obj13 = { channel, isSmallSize: tmp10 && canModerateRequestToSpeak };
-        tmp16 = closure_5(tmp(11518).MusicMuteButton, obj13);
+        tmp16 = closure_5(tmp(11519).MusicMuteButton, obj13);
       }
       cResult[30] = channel;
       cResult[31] = tmp10 && canModerateRequestToSpeak;
@@ -291,12 +291,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const tmp = actionBarPrimaryButton;
     if (actionBarPrimaryButton === ChannelCallActionBar.ActionBarPrimaryButton.END_STREAM) {
       const obj2 = { channel, isSmallSize };
-      tmp4 = hasOwnProperty(tmp2(11584).DisconnectStreamButton, obj2);
+      tmp4 = hasOwnProperty(tmp2(11585).DisconnectStreamButton, obj2);
     } else {
       tmp4 = null;
       if (tmp === ChannelCallActionBar.ActionBarPrimaryButton.END_CALL) {
         const obj = { channel, isSmallSize };
-        tmp4 = hasOwnProperty(tmp2(11518).DisconnectStageButton, obj);
+        tmp4 = hasOwnProperty(tmp2(11519).DisconnectStageButton, obj);
       }
     }
     return tmp4;
@@ -334,12 +334,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const tmp = actionBarPrimaryButton;
     if (actionBarPrimaryButton === ChannelCallActionBar.ActionBarPrimaryButton.END_STREAM) {
       const obj2 = { channel, isSmallSize };
-      tmp4 = hasOwnProperty(tmp2(11584).DisconnectStreamButton, obj2);
+      tmp4 = hasOwnProperty(tmp2(11585).DisconnectStreamButton, obj2);
     } else {
       tmp4 = null;
       if (tmp === ChannelCallActionBar.ActionBarPrimaryButton.END_CALL) {
         const obj = { channel, isSmallSize };
-        tmp4 = hasOwnProperty(tmp2(11518).DisconnectStageButton, obj);
+        tmp4 = hasOwnProperty(tmp2(11519).DisconnectStageButton, obj);
       }
     }
     return tmp4;

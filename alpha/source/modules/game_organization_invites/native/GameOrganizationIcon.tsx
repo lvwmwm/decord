@@ -1,9 +1,9 @@
-// Module ID: 12721
-// Function ID: 12722
+// Module ID: 12726
+// Function ID: 12727
 // Name: GameOrganizationIcon
 // Dependencies: [32, 19, 17, 21, 4971, 587, 558, 576, 5669, 2]
 
-// Module 12721 (GameOrganizationIcon)
+// Module 12726 (GameOrganizationIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

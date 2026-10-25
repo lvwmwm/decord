@@ -1,16 +1,16 @@
-// Module ID: 18327
-// Function ID: 18328
+// Module ID: 18332
+// Function ID: 18333
 // Name: MessageRequestRowSenderDetails
-// Dependencies: [19, 17, 4913, 21, 4971, 1202, 587, 558, 576, 5025, 504, 18328, 1420, 1128, 5234, 18329, 18330, 2]
+// Dependencies: [19, 17, 4913, 21, 4971, 1202, 587, 558, 576, 5025, 504, 18333, 1420, 1128, 5234, 18334, 18335, 2]
 // Exports: default
 
-// Module 18327 (MessageRequestRowSenderDetails)
+// Module 18332 (MessageRequestRowSenderDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import utils_AvatarUtilsDefault from "utils/AvatarUtils" /* 1420 */;
 import UserUtilsDefault from "UserUtils" /* 5025 */;
-import MessageRequestMutualServersDefault from "MessageRequestMutualServers" /* 18330 */;
+import MessageRequestMutualServersDefault from "MessageRequestMutualServers" /* 18335 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4913 */;
 import Fragment from "Fragment" /* 21 */;
@@ -34,7 +34,7 @@ createStyles = createStyles.createStyles;
 obj3 = { flexShrink: 1, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 let closure_8 = createStyles(obj);
 let closure_9 = ReactCompilerGating.isReactCompilerEnabled();
-const result = size.fileFinishedImporting("modules/message_request/native/MessageRequestRowSenderDetails.tsx");
+let result = size.fileFinishedImporting("modules/message_request/native/MessageRequestRowSenderDetails.tsx");
 
 export default function MessageRequestRowSenderDetails(isRestricted) {
   let Avatar;
@@ -58,7 +58,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
   let otherUser2;
   let stringResult1;
   let tmp14Result2;
-  const tmp = closure_9;
+  let tmp = closure_9;
   if (tmp) {
     let first;
     let tmp35;
@@ -70,7 +70,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     const tmp31 = closure_8();
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const items = [RelationshipStore];
+      let items = [RelationshipStore];
       cResult[0] = items;
       first = items;
     } else {
@@ -97,14 +97,14 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     }
     const tmp26Result = otherUser(504);
     const stateFromStores = tmp26Result.useStateFromStores(first, tmp35);
-    const tmp26Result3 = otherUser(18328);
+    const tmp26Result3 = otherUser(18333);
     const messageRequestRelativeTimestampText = tmp26Result3.useMessageRequestRelativeTimestampText(channel2);
     const _Math3 = Math;
     const _Math4 = Math;
     const floor2 = Math.floor;
     const random = Math.random();
     const floor2Result = floor2(random * utils_AvatarUtilsDefault.DEFAULT_AVATARS.length);
-    let tmp41 = utils_AvatarUtilsDefault.DEFAULT_AVATARS[floor2Result];
+    const tmp41 = utils_AvatarUtilsDefault.DEFAULT_AVATARS[floor2Result];
     if (cResult[3] === otherUser2) {
       let tmp42;
       if (cResult[4] === tmp31.avatar) {
@@ -231,8 +231,8 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
                         }
                         let tmp78 = !tmp29;
                         if (tmp78) {
-                          let obj8 = { style: tmp31.messagePreview, channel: channel2 };
-                          tmp78 = closure_5(tmp39(18329), obj8);
+                          const obj8 = { style: tmp31.messagePreview, channel: channel2 };
+                          tmp78 = closure_5(tmp39(18334), obj8);
                         }
                         cResult[31] = channel2;
                         cResult[32] = undefined !== isRestricted && isRestricted;
@@ -253,7 +253,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
                   tmp73 = tmp76;
                 }
               }
-              const obj10 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp31.usernameTextContainer, children: items4 };
+              let obj10 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp31.usernameTextContainer, children: items4 };
               items4 = [tmp58, tmp61];
               const tmp66 = closure_6(otherUser(5234).Text, obj10);
               cResult[18] = tmp31.usernameTextContainer;
@@ -292,7 +292,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
           stringResult = username1;
         }
         if (stringResult == null) {
-          let intl3 = tmp26(1128).intl;
+          const intl3 = tmp26(1128).intl;
           stringResult = intl3.string(tmp26(1128).t["30mdIx"]);
         }
         let username2;
@@ -337,8 +337,8 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     let tmp2 = closure_8;
     const tmp3 = closure_8();
     const tmp4 = otherUser;
-    let tmp5 = dependencyMap;
     let obj = otherUser(504);
+    let tmp6 = RelationshipStore;
     const items6 = [RelationshipStore];
     const stateFromStores1 = obj.useStateFromStores(items6, () => {
       let tmp2 = null;
@@ -352,16 +352,16 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
       }
       return tmp2;
     });
-    let obj2 = otherUser(18328);
+    let obj2 = otherUser(18333);
     const _Math = Math;
     const _Math2 = Math;
     const messageRequestRelativeTimestampText1 = obj2.useMessageRequestRelativeTimestampText(channel);
     const random1 = Math.random();
     const obj16 = { style: tmp3.avatarContainer, children: closure_5(Avatar, obj19) };
     const floorResult = floor(random1 * utils_AvatarUtilsDefault.DEFAULT_AVATARS.length);
+    const tmp15 = closure_7;
     const tmp13 = utils_AvatarUtilsDefault.DEFAULT_AVATARS[floorResult];
     Avatar = otherUser(1202).Avatar;
-    const tmp15 = closure_7;
     if (null != otherUser) {
       const obj18 = { avatarStyle: tmp3.avatar, user: otherUser, guildId: "IconComponent", disablePlaceholder: null, avatarDecoration: avatarDecoration1 };
       avatarDecoration1 = undefined;
@@ -372,7 +372,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     } else {
       obj19 = { avatarStyle: tmp3.avatar, source: tmp13 };
     }
-    const items7 = [closure_5(tmp17, obj16), ];
+    const items7 = [tmp16(tmp17, obj16), ];
     const obj20 = { style: tmp3.detailsContainer, children: items11 };
     const obj21 = { style: tmp3.messageDetails, children: items10 };
     const obj22 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp3.usernameTextContainer, children: items8 };
@@ -388,10 +388,10 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
       stringResult1 = username3;
     }
     if (stringResult1 == null) {
-      let intl = tmp4(1128).intl;
+      const intl = tmp4(1128).intl;
       stringResult1 = intl.string(tmp4(1128).t["30mdIx"]);
     }
-    items8 = [closure_5(Text2, obj23), ];
+    items8 = [tmp16(Text2, obj23), ];
     let tmp14Result = null != stateFromStores1;
     if (tmp14Result) {
       const obj24 = { variant: "text-md/medium", color: "text-muted", children: items9 };
@@ -411,7 +411,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     let tmp16Result = !flag;
     if (tmp16Result) {
       const obj27 = { style: tmp3.messagePreview, channel };
-      tmp16Result = tmp16(tmp11(18329), obj27);
+      tmp16Result = tmp16(tmp11(18334), obj27);
     }
     items11[1] = tmp16Result;
     if (flag) {

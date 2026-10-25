@@ -1,28 +1,28 @@
-// Module ID: 19242
-// Function ID: 19243
+// Module ID: 19247
+// Function ID: 19248
 // Name: StarKeySpotIllustration
-// Dependencies: [19, 21, 19243, 19244, 19245, 558, 576, 6995, 5669, 2]
+// Dependencies: [19, 21, 19248, 19249, 19250, 558, 576, 6995, 5669, 2]
 
-// Module 19242 (StarKeySpotIllustration)
+// Module 19247 (StarKeySpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import react_native from "react-native" /* 6995 */;
-import _modDef19243 from "module_19243" /* 19243 */;
-import _modDef19244 from "module_19244" /* 19244 */;
-import _modDef19245 from "module_19245" /* 19245 */;
+import _modDef19248 from "module_19248" /* 19248 */;
+import _modDef19249 from "module_19249" /* 19249 */;
+import _modDef19250 from "module_19250" /* 19250 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef19243 };
+let obj2 = { uri: _modDef19248 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef19244 };
+let obj3 = { uri: _modDef19249 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef19245 };
-({ uri: _modDef19245 });
+obj[3] = { uri: _modDef19250 };
+({ uri: _modDef19250 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function StarKeySpotIllustration(arg0) {
   let accessibilityLabel;
   let accessible;

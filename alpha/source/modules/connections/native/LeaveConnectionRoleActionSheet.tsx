@@ -1,9 +1,9 @@
-// Module ID: 11263
-// Function ID: 11264
+// Module ID: 11264
+// Function ID: 11265
 // Name: LeaveConnectionRoleActionSheet
 // Dependencies: [19, 17, 21, 4971, 558, 576, 5234, 1128, 5244, 5265, 2]
 
-// Module 11263 (LeaveConnectionRoleActionSheet)
+// Module 11264 (LeaveConnectionRoleActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;

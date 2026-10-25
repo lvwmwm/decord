@@ -1,18 +1,8 @@
 // Module ID: 15321
 // Function ID: 15322
-// Dependencies: [15313]
+// Dependencies: []
 
 // Module 15321
-import _mod15313 from "module_15313" /* 15313 */;
+const tmp = Number.MAX_SAFE_INTEGER || 9007199254740991;
 
-
-export default (str, arg1) => {
-  const tmp = _mod15313;
-  str = str.trim();
-  const tmpResult = tmp(str.replace(/^[=v]+/, ""), arg1);
-  let version = null;
-  if (tmpResult) {
-    version = tmpResult.version;
-  }
-  return version;
-};
+export default { MAX_LENGTH: 256, MAX_SAFE_COMPONENT_LENGTH: 16, MAX_SAFE_BUILD_LENGTH: 250, MAX_SAFE_INTEGER: tmp, RELEASE_TYPES: ["major", "premajor", "minor", "preminor", "patch", "prepatch", "prerelease"], SEMVER_SPEC_VERSION: "2.0.0", FLAG_INCLUDE_PRERELEASE: 1, FLAG_LOOSE: 2 };

@@ -1,14 +1,14 @@
-// Module ID: 13095
-// Function ID: 13096
+// Module ID: 13100
+// Function ID: 13101
 // Name: ForumPostPinIcon
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 1202, 13096, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 1202, 13101, 2]
 
-// Module 13095 (ForumPostPinIcon)
+// Module 13100 (ForumPostPinIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13096 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13101 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

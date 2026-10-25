@@ -1,9 +1,9 @@
-// Module ID: 19308
-// Function ID: 19309
+// Module ID: 19313
+// Function ID: 19314
 // Name: GuildRoleSubscriptionTierDesignModal
-// Dependencies: [32, 19, 17, 16557, 1087, 21, 4971, 587, 558, 576, 5252, 16590, 15140, 19291, 16579, 7283, 19270, 1128, 9044, 19275, 19309, 19276, 2]
+// Dependencies: [32, 19, 17, 16562, 1087, 21, 4971, 587, 558, 576, 5252, 16595, 15145, 19296, 16584, 7283, 19275, 1128, 9044, 19280, 19314, 19281, 2]
 
-// Module 19308 (GuildRoleSubscriptionTierDesignModal)
+// Module 19313 (GuildRoleSubscriptionTierDesignModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,14 +12,14 @@ import intl4 from "intl" /* 1128 */;
 import useToken5 from "useToken" /* 5252 */;
 import RoleIconUtils from "RoleIconUtils" /* 7283 */;
 import FormHeaderDefault from "FormHeader" /* 9044 */;
-import FormStylesDefault from "FormStyles" /* 15140 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16557 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16579 */;
-import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 16590 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 19270 */;
-import FormImagePicker from "FormImagePicker" /* 19275 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 19276 */;
-import EditStateContextProvider from "EditStateContextProvider" /* 19291 */;
+import FormStylesDefault from "FormStyles" /* 15145 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16562 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16584 */;
+import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 16595 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 19275 */;
+import FormImagePicker from "FormImagePicker" /* 19280 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 19281 */;
+import EditStateContextProvider from "EditStateContextProvider" /* 19296 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -328,7 +328,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
   let role;
   let tmp7;
   let tmp8;
-  const tmp3 = role(15140)();
+  const tmp3 = role(15145)();
   let obj = require("EditStateContextProvider");
   const editStateContext = obj.useEditStateContext();
   ({ editStateId, guildId } = editStateContext);
@@ -373,14 +373,14 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
     },
     disabled: roleSubscriptionSettingsDisabled
   };
-  const tmpResult3 = role(19275);
+  const tmpResult3 = role(19280);
   intl2 = tmp4(1128).intl;
   items1[2] = closure_9(tmpResult3, obj8);
   const obj9 = { style: tmp3.header, children: intl3.string(require("intl").t["W7hH+z"]) };
   const tmpResult4 = role(9044);
   intl3 = tmp4(1128).intl;
   items1[3] = closure_9(tmpResult4, obj9);
-  items1[4] = closure_9(role(19309), { color: tmp7, onChange: tmp8, disabled: roleSubscriptionSettingsDisabled });
+  items1[4] = closure_9(role(19314), { color: tmp7, onChange: tmp8, disabled: roleSubscriptionSettingsDisabled });
   return closure_10(closure_11, obj6);
 });
 ReactCompilerGating = ReactCompilerGating_mod;

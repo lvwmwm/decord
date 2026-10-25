@@ -1,10 +1,10 @@
-// Module ID: 17542
-// Function ID: 17543
+// Module ID: 17547
+// Function ID: 17548
 // Name: VoiceUserItem
-// Dependencies: [19, 17, 1087, 21, 1202, 11056, 4971, 587, 12060, 558, 576, 9222, 9224, 1267, 1417, 17543, 9171, 9173, 9167, 9169, 11324, 14177, 8507, 14175, 2]
+// Dependencies: [19, 17, 1087, 21, 1202, 11057, 4971, 587, 12061, 558, 576, 9222, 9224, 1267, 1417, 17548, 9171, 9173, 9167, 9169, 11325, 14182, 8507, 14180, 2]
 // Exports: getVoiceUserHeight
 
-// Module 17542 (VoiceUserItem)
+// Module 17547 (VoiceUserItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -16,15 +16,15 @@ import HeadphonesDenyIcon from "HeadphonesDenyIcon" /* 9167 */;
 import HeadphonesSlashIcon from "HeadphonesSlashIcon" /* 9169 */;
 import MicrophoneDenyIcon from "MicrophoneDenyIcon" /* 9171 */;
 import MicrophoneSlashIcon from "MicrophoneSlashIcon" /* 9173 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11056 */;
-import VideoIcon from "VideoIcon" /* 11324 */;
-import GameActivityIconDefault from "GameActivityIcon" /* 14175 */;
-import getConsoleIcon from "getConsoleIcon" /* 14177 */;
-import VoiceUserNameItemDefault from "VoiceUserNameItem" /* 17543 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11057 */;
+import VideoIcon from "VideoIcon" /* 11325 */;
+import GameActivityIconDefault from "GameActivityIcon" /* 14180 */;
+import getConsoleIcon from "getConsoleIcon" /* 14182 */;
+import VoiceUserNameItemDefault from "VoiceUserNameItem" /* 17548 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
-import ChannelListLayout from "ChannelListLayout" /* 12060 */;
+import ChannelListLayout from "ChannelListLayout" /* 12061 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

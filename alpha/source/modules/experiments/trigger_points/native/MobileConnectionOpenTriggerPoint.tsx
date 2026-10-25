@@ -1,9 +1,9 @@
-// Module ID: 15003
-// Function ID: 15004
+// Module ID: 15008
+// Function ID: 15009
 // Name: MobileConnectionOpenTriggerPoint
 // Dependencies: [5191, 10564, 2]
 
-// Module 15003 (MobileConnectionOpenTriggerPoint)
+// Module 15008 (MobileConnectionOpenTriggerPoint)
 import ExperimentConstants from "ExperimentConstants" /* 5191 */;
 import Helpers from "Helpers" /* 10564 */;
 import size from "module_2" /* 2 */;

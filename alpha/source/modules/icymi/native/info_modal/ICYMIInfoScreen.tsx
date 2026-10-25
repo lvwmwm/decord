@@ -1,10 +1,10 @@
-// Module ID: 17913
-// Function ID: 17914
+// Module ID: 17918
+// Function ID: 17919
 // Name: ICYMIInfoScreen
-// Dependencies: [32, 5, 19, 17, 1098, 21, 4971, 587, 5268, 1633, 5205, 1505, 15644, 17914, 6672, 9699, 9707, 1128, 5669, 17916, 17917, 17918, 17919, 5234, 9646, 14290, 7267, 5210, 17920, 2002, 5244, 2]
+// Dependencies: [32, 5, 19, 17, 1098, 21, 4971, 587, 5268, 1633, 5205, 1505, 15649, 17919, 6672, 9699, 9707, 1128, 5669, 17921, 17922, 17923, 17924, 5234, 9646, 14295, 7267, 5210, 17925, 2002, 5244, 2]
 // Exports: default
 
-// Module 17913 (ICYMIInfoScreen)
+// Module 17918 (ICYMIInfoScreen)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
 import NavigatorConstants from "NavigatorConstants" /* 5268 */;
@@ -181,7 +181,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   let obj4 = { style: items4, children: items5 };
   items4 = [tmp.container, { marginBottom: bottom }];
   let obj5 = { source: obj6, style: tmp.bgImage };
-  obj6 = { uri: navigation(17916) };
+  obj6 = { uri: navigation(17921) };
   const tmp17 = navigation(5669);
   items5 = [closure_9(tmp17, obj5), ];
   const obj7 = { style: items6, children: items8 };
@@ -192,14 +192,14 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   const tmp16 = closure_7;
   const tmp18 = navigation(5669);
   if (tmp5 === ThemeTypes.LIGHT) {
-    tmp2Result = tmp2(17917);
+    tmp2Result = tmp2(17922);
   } else {
-    tmp2Result = tmp2(17918);
+    tmp2Result = tmp2(17923);
   }
   items7 = [, , , ];
   const obj10 = { source: { uri: tmp2Result }, style: tmp.headerImg };
   items7[0] = closure_9(tmp18, obj10);
-  const obj11 = { source: navigation(17919), style: tmp.flashIcon };
+  const obj11 = { source: navigation(17924), style: tmp.flashIcon };
   const tmp2Result2 = navigation(5669);
   items7[1] = closure_9(tmp2Result2, obj11);
   const obj12 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: intl2.string(extendedOnboarding(1128).t["jnXV/V"]) };
@@ -226,7 +226,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   items10[1] = closure_9(closure_6, obj19);
   const obj20 = { style: tmp.infoRow, children: items11 };
   items11 = [, ];
-  const obj21 = { style: tmp.infoIcon, children: closure_9(extendedOnboarding(14290).NewUserIcon, { size: "sm", color: "interactive-text-active" }) };
+  const obj21 = { style: tmp.infoIcon, children: closure_9(extendedOnboarding(14295).NewUserIcon, { size: "sm", color: "interactive-text-active" }) };
   items11[0] = closure_9(closure_6, obj21);
   const obj22 = { variant: "text-md/medium", color: "mobile-text-heading-primary", style: tmp.infoText, children: intl5.string(extendedOnboarding(1128).t.BnUXZi) };
   const Text4 = tmp6(5234).Text;

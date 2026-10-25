@@ -1,16 +1,16 @@
-// Module ID: 12454
-// Function ID: 12455
+// Module ID: 12458
+// Function ID: 12459
 // Name: ConjurePlanAutomodExamples
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 12455, 1202, 1417, 5234, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 12459, 1202, 1417, 5234, 2]
 
-// Module 12454 (ConjurePlanAutomodExamples)
+// Module 12458 (ConjurePlanAutomodExamples)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import AvatarUtils from "AvatarUtils" /* 1417 */;
 import Text_Text from "Text/Text" /* 5234 */;
-import ConjurePlanAutomodOutcomes from "ConjurePlanAutomodOutcomes" /* 12455 */;
+import ConjurePlanAutomodOutcomes from "ConjurePlanAutomodOutcomes" /* 12459 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
@@ -296,13 +296,13 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Exampl
   const cResult = obj.c(31);
   ({ group, firstIndex } = arg0);
   const tmp4 = closure_8();
-  const obj2 = firstIndex(12455).CONJURE_PLAN_AUTOMOD_SECTIONS[group.section];
+  const obj2 = firstIndex(12459).CONJURE_PLAN_AUTOMOD_SECTIONS[group.section];
   if (cResult[0] !== group.examples) {
     const _Set = Set;
     const examples = group.examples;
     const self = this;
     const self2 = this;
-    set = new Set(examples.map(firstIndex(12455).planAutomodReasonText));
+    set = new Set(examples.map(firstIndex(12459).planAutomodReasonText));
     cResult[0] = group.examples;
     cResult[1] = set;
     tmp5 = set;
@@ -433,7 +433,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Exampl
   }
   let result = null;
   if (1 === tmp5.size) {
-    const tmpResult = firstIndex(12455);
+    const tmpResult = firstIndex(12459);
     result = tmpResult.planAutomodReasonText(group.examples[0]);
   }
   cResult[2] = group.examples[0];

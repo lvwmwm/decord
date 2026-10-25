@@ -1,9 +1,9 @@
-// Module ID: 18907
-// Function ID: 18908
+// Module ID: 18912
+// Function ID: 18913
 // Name: useConnectGuardianGate
 // Dependencies: [32, 19, 7645, 558, 576, 504, 7647, 5263, 2]
 
-// Module 18907 (useConnectGuardianGate)
+// Module 18912 (useConnectGuardianGate)
 import get_initialized from "get initialized" /* 504 */;
 import useMountEffectDefault from "useMountEffect" /* 5263 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

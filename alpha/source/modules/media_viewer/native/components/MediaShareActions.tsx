@@ -1,7 +1,7 @@
 // Module ID: 8822
 // Function ID: 8823
 // Name: MediaShareActions
-// Dependencies: [19, 8823, 4823, 6010, 8850, 1087, 7392, 21, 573, 8586, 8608, 5210, 8757, 5999, 8851, 8753, 7285, 5662, 8860, 5660, 12895, 5707, 5153, 12821, 2002, 10079, 8855, 5684, 1128, 12907, 14202, 5678, 14026, 12519, 8552, 558, 576, 7294, 7298, 2]
+// Dependencies: [19, 8823, 4823, 6010, 8850, 1087, 7392, 21, 573, 8586, 8608, 5210, 8757, 5999, 8851, 8753, 7285, 5662, 8860, 5660, 12900, 5707, 5153, 12826, 2002, 10079, 8855, 5684, 1128, 12912, 14207, 5678, 14031, 12523, 8552, 558, 576, 7294, 7298, 2]
 
 // Module 8822 (MediaShareActions)
 import Fragment from "Fragment" /* 21 */;
@@ -24,11 +24,11 @@ import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8753 */
 import MediaSourceUtil from "MediaSourceUtil" /* 8757 */;
 import showShareActionSheet from "showShareActionSheet" /* 8851 */;
 import MaskedLinkUtils from "MaskedLinkUtils" /* 8860 */;
-import ChatArrowRightIcon from "ChatArrowRightIcon" /* 12519 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 12895 */;
-import ForwardingIconDefault from "ForwardingIcon" /* 12907 */;
-import WindowLaunchIcon from "WindowLaunchIcon" /* 14026 */;
-import ShareIcon from "ShareIcon" /* 14202 */;
+import ChatArrowRightIcon from "ChatArrowRightIcon" /* 12523 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 12900 */;
+import ForwardingIconDefault from "ForwardingIcon" /* 12912 */;
+import WindowLaunchIcon from "WindowLaunchIcon" /* 14031 */;
+import ShareIcon from "ShareIcon" /* 14207 */;
 import react from "react" /* 19 */;
 import ICYMIStore from "ICYMIStore" /* 8823 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
@@ -200,7 +200,7 @@ function useMediaShareActions(source) {
       const obj2 = { messageId: null, channelId: null, attachmentId };
       ({ messageId: obj3.messageId, channelId: obj3.channelId } = source);
       const tmpResult = ActionSheetActionCreatorsDefault;
-      tmpResult.openLazy(asyncRequire(12821, tmp2.paths), closure_11, obj2);
+      tmpResult.openLazy(asyncRequire(12826, tmp2.paths), closure_11, obj2);
     }
   }, items8);
   let tmpResult = tmp(tmp2[25]);

@@ -1,9 +1,9 @@
-// Module ID: 14060
-// Function ID: 14061
+// Module ID: 14065
+// Function ID: 14066
 // Name: ApplicationDetails
-// Dependencies: [19, 17, 21, 4971, 587, 9633, 9492, 14061, 558, 576, 11, 9631, 5678, 1128, 9635, 8566, 11778, 5691, 8827, 11796, 10950, 5234, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 9633, 9492, 14066, 558, 576, 11, 9631, 5678, 1128, 9635, 8566, 11779, 5691, 8827, 11797, 10951, 5234, 2]
 
-// Module 14060 (ApplicationDetails)
+// Module 14065 (ApplicationDetails)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -16,9 +16,9 @@ import GlobeEarthIcon from "GlobeEarthIcon" /* 9492 */;
 import scopes from "scopes" /* 9631 */;
 import disclosures from "disclosures" /* 9633 */;
 import Utils from "Utils" /* 9635 */;
-import HammerIcon from "HammerIcon" /* 11778 */;
-import RobotIcon from "RobotIcon" /* 11796 */;
-import EmbedIcon from "EmbedIcon" /* 14061 */;
+import HammerIcon from "HammerIcon" /* 11779 */;
+import RobotIcon from "RobotIcon" /* 11797 */;
+import EmbedIcon from "EmbedIcon" /* 14066 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;
@@ -32,7 +32,7 @@ let tmp;
 let tmp4;
 const Text_Text = tmp(5234);
 const ClockIcon2 = tmp4(5691);
-const ShieldIcon = tmp4(10950);
+const ShieldIcon = tmp4(10951);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { applicationDetails: { flexDirection: "column", gap: 16 }, entry: { flexDirection: "row", alignItems: "center", gap: 8 }, entryText: { flex: 1 }, entryIcon: size };
@@ -97,7 +97,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationDetai
                     tmp44 = cResult[35];
                   }
                   if (cResult[36] !== tmp7) {
-                    let obj3 = { iconComponent: tmp(10950).ShieldIcon, text: tmp7 };
+                    let obj3 = { iconComponent: tmp(10951).ShieldIcon, text: tmp7 };
                     const tmp52 = React3(closure_7, obj3);
                     cResult[36] = tmp7;
                     cResult[37] = tmp52;

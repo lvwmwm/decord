@@ -1,10 +1,10 @@
-// Module ID: 13748
-// Function ID: 13749
+// Module ID: 13753
+// Function ID: 13754
 // Name: FocusModeUtils
-// Dependencies: [6498, 4916, 1087, 558, 576, 4799, 4804, 1242, 1267, 5908, 1128, 13749, 2]
+// Dependencies: [6498, 4916, 1087, 558, 576, 4799, 4804, 1242, 1267, 5908, 1128, 13754, 2]
 // Exports: getFocusModeEnabled, setFocusMode
 
-// Module 13748 (FocusModeUtils)
+// Module 13753 (FocusModeUtils)
 import react from "react" /* 576 */;
 import wrappers from "wrappers" /* 1242 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;

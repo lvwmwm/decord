@@ -1,13 +1,13 @@
-// Module ID: 17735
-// Function ID: 17736
+// Module ID: 17740
+// Function ID: 17741
 // Name: RoleColorPickerActionSheet
-// Dependencies: [32, 19, 17, 1087, 21, 4971, 587, 558, 576, 15839, 9731, 5210, 15837, 1128, 7248, 5244, 16704, 5265, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 4971, 587, 558, 576, 15844, 9731, 5210, 15842, 1128, 7248, 5244, 16709, 5265, 2]
 
-// Module 17735 (RoleColorPickerActionSheet)
+// Module 17740 (RoleColorPickerActionSheet)
 import nativeDefault from "native" /* 587 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 15837 */;
-import ColorBlockDefault from "ColorBlock" /* 15839 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 15842 */;
+import ColorBlockDefault from "ColorBlock" /* 15844 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

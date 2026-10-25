@@ -1,9 +1,9 @@
-// Module ID: 17716
-// Function ID: 17717
+// Module ID: 17721
+// Function ID: 17722
 // Name: FavoritesGuildChannelList
-// Dependencies: [32, 19, 4822, 6496, 6784, 6770, 4905, 4827, 7213, 4823, 7636, 4903, 6771, 4874, 6704, 4826, 4902, 4836, 7643, 1098, 7637, 1211, 7410, 558, 576, 12, 1388, 10842, 2]
+// Dependencies: [32, 19, 4822, 6496, 6784, 6770, 4905, 4827, 7213, 4823, 7636, 4903, 6771, 4874, 6704, 4826, 4902, 4836, 7643, 1098, 7637, 1211, 7410, 558, 576, 12, 1388, 10843, 2]
 
-// Module 17716 (FavoritesGuildChannelList)
+// Module 17721 (FavoritesGuildChannelList)
 import Constants from "Constants" /* 1098 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
 import createFavoritesGuildChannelRecord from "createFavoritesGuildChannelRecord" /* 4902 */;
@@ -39,7 +39,7 @@ let closure_20;
 let closure_21;
 let closure_22;
 let metroImportAll;
-const f131641 = () => {
+const f131668 = () => {
   c0 = true;
 };
 function getMissingFavoriteThreadIds(includeLoading) {
@@ -95,7 +95,7 @@ function computeFavoritesState(favoriteChannels, arg1) {
   let channelMuted;
   let closure_2;
   let closure_3;
-  const f153862 = (arg0) => {
+  const f153893 = (arg0) => {
     let position;
     let record;
     let sum;
@@ -272,14 +272,14 @@ function computeFavoritesState(favoriteChannels, arg1) {
           activeJoinedUnreadThreadsForParent = closure_3_6.getActiveJoinedRelevantThreadsForParent(isPrivate.guild_id, isPrivate.id);
         });
         const found = mapped.filter(favoriteChannels(closure_2[26]).isNotNullish);
-        const iter = found.sortBy(f153862);
+        const iter = found.sortBy(f153893);
         closure_6 = iter.value();
       }
       return closure_6;
     },
     set: undefined
   });
-  const obj4 = favoriteChannels(10842);
+  const obj4 = favoriteChannels(10843);
   const favoritesCategories = obj4.getFavoritesCategories(favoriteChannels);
   let found = favoritesCategories.filter((id) => null != id.id);
   let mapped = found.map((id) => {
@@ -415,7 +415,7 @@ function computeFavoritesState(favoriteChannels, arg1) {
               });
               let tmp4 = items;
               const found = mapped.filter(items(closure_1_2[26]).isNotNullish);
-              const iter = found.sortBy(f153862);
+              const iter = found.sortBy(f153893);
               closure_1 = iter.value();
             }
             return closure_1;
@@ -818,7 +818,7 @@ const tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavori
           }
         }
       }
-      obj4.forEachShownChannel(f131641);
+      obj4.forEachShownChannel(f131668);
       flag2 = !closure_129_0;
     }
     cResult[11] = obj4;
@@ -917,7 +917,7 @@ const tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavori
   const tmp5 = getMissingFavoriteThreadIds({ limit: 1, includeLoading: true }).length > 0;
   if (obj2.getSections().length <= flag(7637).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
     c0 = false;
-    obj2.forEachShownChannel(f131641);
+    obj2.forEachShownChannel(f131668);
     flag2 = !c0;
   }
   return { guildChannels: obj2, shouldShowEmptyState: flag2 && !tmp5, hasNoChannels: flag2 };

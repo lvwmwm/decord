@@ -1,13 +1,13 @@
-// Module ID: 13518
-// Function ID: 13519
+// Module ID: 13523
+// Function ID: 13524
 // Name: UserSettingsAuthedAppDeleteWarningModal
-// Dependencies: [21, 558, 576, 11225, 1128, 13519, 11051, 5914, 2]
+// Dependencies: [21, 558, 576, 11226, 1128, 13524, 11052, 5914, 2]
 
-// Module 13518 (UserSettingsAuthedAppDeleteWarningModal)
+// Module 13523 (UserSettingsAuthedAppDeleteWarningModal)
 import intl7 from "intl" /* 1128 */;
-import InfoBox from "InfoBox" /* 11051 */;
-import isSocialLayerApplication from "isSocialLayerApplication" /* 11225 */;
-import shouldWarnAuthorizedAppTwoWayDefault from "shouldWarnAuthorizedAppTwoWay" /* 13519 */;
+import InfoBox from "InfoBox" /* 11052 */;
+import isSocialLayerApplication from "isSocialLayerApplication" /* 11226 */;
+import shouldWarnAuthorizedAppTwoWayDefault from "shouldWarnAuthorizedAppTwoWay" /* 13524 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -184,7 +184,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     cResult[5] = formatToPlainStringResult1;
     tmp6 = formatToPlainStringResult1;
   }
-  const tmpResult = tmp(11225);
+  const tmpResult = tmp(11226);
   const result = tmpResult.isSocialLayerSDKAuthorization(application, scopes);
   cResult[0] = application;
   cResult[1] = scopes;

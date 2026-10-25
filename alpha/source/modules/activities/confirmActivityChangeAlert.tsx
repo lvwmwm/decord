@@ -1,10 +1,10 @@
-// Module ID: 11407
-// Function ID: 11408
+// Module ID: 11408
+// Function ID: 11409
 // Name: confirmActivityChangeAlert
 // Dependencies: [4913, 1392, 5604, 5908, 1128, 2033, 2]
 // Exports: default
 
-// Module 11407 (confirmActivityChangeAlert)
+// Module 11408 (confirmActivityChangeAlert)
 import intl7 from "intl" /* 1128 */;
 import StringUtils from "StringUtils" /* 2033 */;
 import useChannelName from "useChannelName" /* 5604 */;

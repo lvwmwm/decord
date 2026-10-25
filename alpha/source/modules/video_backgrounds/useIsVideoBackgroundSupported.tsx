@@ -1,9 +1,9 @@
-// Module ID: 11615
-// Function ID: 11616
+// Module ID: 11616
+// Function ID: 11617
 // Name: useIsVideoBackgroundSupported
 // Dependencies: [2014, 558, 576, 5876, 504, 2]
 
-// Module 11615 (useIsVideoBackgroundSupported)
+// Module 11616 (useIsVideoBackgroundSupported)
 import react from "react" /* 576 */;
 import isVideoBackgroundSupportedDefault from "isVideoBackgroundSupported" /* 5876 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;

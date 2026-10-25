@@ -1,9 +1,9 @@
-// Module ID: 18802
-// Function ID: 18803
+// Module ID: 18807
+// Function ID: 18808
 // Name: InAppReportsFeedbackActionSheet
-// Dependencies: [19, 1087, 10045, 21, 558, 576, 18803, 1267, 18804, 10048, 5662, 18805, 1128, 10066, 2]
+// Dependencies: [19, 1087, 10045, 21, 558, 576, 18808, 1267, 18809, 10048, 5662, 18810, 1128, 10066, 2]
 
-// Module 18802 (InAppReportsFeedbackActionSheet)
+// Module 18807 (InAppReportsFeedbackActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
@@ -12,9 +12,9 @@ import ToastUtils from "ToastUtils" /* 5662 */;
 import Constants2 from "Constants" /* 10045 */;
 import FeedbackUtils from "FeedbackUtils" /* 10048 */;
 import FeedbackActionSheetDefault from "FeedbackActionSheet" /* 10066 */;
-import getInAppReportsFeedbackOptionsDefault from "getInAppReportsFeedbackOptions" /* 18803 */;
-import trackInAppReportsFeedbackDefault from "trackInAppReportsFeedback" /* 18804 */;
-import improperGetEnglishIntlMessageText from "improperGetEnglishIntlMessageText" /* 18805 */;
+import getInAppReportsFeedbackOptionsDefault from "getInAppReportsFeedbackOptions" /* 18808 */;
+import trackInAppReportsFeedbackDefault from "trackInAppReportsFeedback" /* 18809 */;
+import improperGetEnglishIntlMessageText from "improperGetEnglishIntlMessageText" /* 18810 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InAppReports
   reportId = reportId.reportId;
   const reportType = reportId.reportType;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp6 = reportType(18803)();
+    const tmp6 = reportType(18808)();
     cResult[0] = tmp6;
     first = tmp6;
   } else {
@@ -52,7 +52,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InAppReports
       }
       const _Symbol = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmpResult = reportId(18805);
+        const tmpResult = reportId(18810);
         const result = tmpResult.improperGetEnglishIntlMessageText("CALL_FEEDBACK_OPTION_OTHER");
         cResult[7] = result;
         tmp9 = result;

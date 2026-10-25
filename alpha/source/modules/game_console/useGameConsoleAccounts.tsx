@@ -1,9 +1,9 @@
-// Module ID: 11646
-// Function ID: 11647
+// Module ID: 11647
+// Function ID: 11648
 // Name: useGameConsoleAccounts
 // Dependencies: [6500, 1087, 558, 576, 1388, 504, 2]
 
-// Module 11646 (useGameConsoleAccounts)
+// Module 11647 (useGameConsoleAccounts)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;

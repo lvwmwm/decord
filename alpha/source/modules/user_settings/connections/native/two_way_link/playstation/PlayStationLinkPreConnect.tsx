@@ -1,12 +1,12 @@
-// Module ID: 14079
-// Function ID: 14080
+// Module ID: 14084
+// Function ID: 14085
 // Name: PlayStationLinkPreConnect
-// Dependencies: [19, 14076, 21, 4971, 558, 576, 1505, 14080, 1128, 9623, 2]
+// Dependencies: [19, 14081, 21, 4971, 558, 576, 1505, 14085, 1128, 9623, 2]
 
-// Module 14079 (PlayStationLinkPreConnect)
+// Module 14084 (PlayStationLinkPreConnect)
 import Fragment from "Fragment" /* 21 */;
-import PlayStationLinkConstants from "PlayStationLinkConstants" /* 14076 */;
-import _modDef14080 from "module_14080" /* 14080 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 14081 */;
+import _modDef14085 from "module_14085" /* 14085 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -57,7 +57,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
         navigation.push(constants.ERROR, {});
       }
     }
-    tmp9[0] = _modDef14080;
+    tmp9[0] = _modDef14085;
     cResult[4] = tmp9;
   } else {
     class S {
@@ -115,7 +115,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
     navigation.push(constants.ERROR, {});
   }, items1);
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef14080 };
+    const obj = { uri: _modDef14085 };
     return obj;
   }, []);
   const TwoWayLinkPreConnect = navigation(9623).TwoWayLinkPreConnect;

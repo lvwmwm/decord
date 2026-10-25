@@ -1,16 +1,21 @@
 // Module ID: 15320
 // Function ID: 15321
-// Dependencies: [15313]
+// Dependencies: []
 
 // Module 15320
-import _mod15313 from "module_15313" /* 15313 */;
+let closure_0 = Object.freeze({ loose: true });
+let closure_1 = Object.freeze({});
 
-
-export default (arg0, arg1) => {
-  const tmp = _mod15313(arg0, arg1);
-  let version = null;
+export default (arg0) => {
+  let tmp2;
+  let tmp = arg0;
   if (tmp) {
-    version = tmp.version;
+    if (typeof tmp !== "object") {
+      tmp = closure_0;
+    }
+    tmp2 = tmp;
+  } else {
+    tmp2 = closure_1;
   }
-  return version;
+  return tmp2;
 };

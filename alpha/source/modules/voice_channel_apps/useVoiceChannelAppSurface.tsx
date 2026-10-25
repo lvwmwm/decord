@@ -1,14 +1,14 @@
-// Module ID: 18547
-// Function ID: 18548
+// Module ID: 18552
+// Function ID: 18553
 // Name: useVoiceChannelAppSurface
-// Dependencies: [6775, 18044, 558, 18263, 576, 12707, 504, 18051, 2]
+// Dependencies: [6775, 18049, 558, 18268, 576, 12712, 504, 18056, 2]
 
-// Module 18547 (useVoiceChannelAppSurface)
-import voiceChannelAppSession from "voiceChannelAppSession" /* 12707 */;
-import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 18051 */;
-import useVoiceChannelApp from "useVoiceChannelApp" /* 18263 */;
+// Module 18552 (useVoiceChannelAppSurface)
+import voiceChannelAppSession from "voiceChannelAppSession" /* 12712 */;
+import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 18056 */;
+import useVoiceChannelApp from "useVoiceChannelApp" /* 18268 */;
 import FramesStore from "FramesStore" /* 6775 */;
-import VoiceChannelAppStore from "VoiceChannelAppStore" /* 18044 */;
+import VoiceChannelAppStore from "VoiceChannelAppStore" /* 18049 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

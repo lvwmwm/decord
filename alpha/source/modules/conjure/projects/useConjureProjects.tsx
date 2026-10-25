@@ -1,17 +1,17 @@
-// Module ID: 11747
-// Function ID: 11748
+// Module ID: 11748
+// Function ID: 11749
 // Name: useConjureProjects
-// Dependencies: [32, 19, 2045, 7703, 4901, 4845, 4903, 5002, 10699, 6773, 1128, 3830, 558, 576, 6808, 11744, 10731, 1455, 504, 7345, 2]
+// Dependencies: [32, 19, 2045, 7703, 4901, 4845, 4903, 5002, 10699, 6773, 1128, 3830, 558, 576, 6808, 11745, 10731, 1455, 504, 7345, 2]
 // Exports: describeConjureProjectRow
 
-// Module 11747 (useConjureProjects)
+// Module 11748 (useConjureProjects)
 import react2 from "react" /* 576 */;
 import intl6 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6808 */;
 import ConjureUtils from "ConjureUtils" /* 7345 */;
 import conjureAppInServer from "conjureAppInServer" /* 10731 */;
-import ConjureActivity from "ConjureActivity" /* 11744 */;
+import ConjureActivity from "ConjureActivity" /* 11745 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
@@ -60,7 +60,7 @@ function collectEntries(_location) {
         const conjureActivityResult = tmpResult.conjureActivity(obj4);
         if ("done" === conjureActivityResult) {
           if (null != num) {
-            const sum = num + tmp(11744).CONJURE_DONE_WINDOW_MS;
+            const sum = num + tmp(11745).CONJURE_DONE_WINDOW_MS;
             bound = sum;
             if (null != bound) {
               const _Math = Math;

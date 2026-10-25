@@ -1,12 +1,12 @@
-// Module ID: 19418
-// Function ID: 19419
+// Module ID: 19423
+// Function ID: 19424
 // Name: SafetyFlowsModal
-// Dependencies: [32, 19, 21, 558, 576, 19415, 19419, 19423, 6924, 19425, 19427, 19428, 19429, 19430, 19438, 19439, 7095, 19421, 12726, 19420, 2]
+// Dependencies: [32, 19, 21, 558, 576, 19420, 19424, 19428, 6924, 19430, 19432, 19433, 19434, 19435, 19443, 19444, 7095, 19426, 12731, 19425, 2]
 
-// Module 19418 (SafetyFlowsModal)
+// Module 19423 (SafetyFlowsModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import StepModal from "StepModal" /* 12726 */;
+import StepModal from "StepModal" /* 12731 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -379,7 +379,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyFlow
     }
   }, items);
   const memo1 = react.useMemo(() => ({ task, setTask }), items1);
-  const Provider = task(19420).SafetyFlowTaskContext.Provider;
+  const Provider = task(19425).SafetyFlowTaskContext.Provider;
   return <Provider value={memo1}>{null}</Provider>;
 });
 const result = size.fileFinishedImporting("modules/safety_flows/native/SafetyFlowsModal.tsx");

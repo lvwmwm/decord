@@ -1,9 +1,9 @@
-// Module ID: 15805
-// Function ID: 15806
+// Module ID: 15810
+// Function ID: 15811
 // Name: ICYMIManager
 // Dependencies: [8841, 1104, 2004, 584, 8842, 2]
 
-// Module 15805 (ICYMIManager)
+// Module 15810 (ICYMIManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8841 */;
 import ICYMIExperiment from "ICYMIExperiment" /* 8842 */;
@@ -22,7 +22,7 @@ class ICYMIManager extends LifecycleManager {
   }
   handlePostConnectionOpen() {
     let timeout;
-    const f124519 = () => {
+    const f124546 = () => {
       let timeout;
       const obj = ICYMIActionCreatorsDefault;
       const dehydrated = obj.fetchDehydrated({ isInitialLoad: false });
@@ -32,7 +32,7 @@ class ICYMIManager extends LifecycleManager {
         const _clearTimeout = clearTimeout;
         clearTimeout(timeout);
       }
-      timeout = setTimeout(f124519, 15 * tmp(tmp2[1]).Millis.MINUTE);
+      timeout = setTimeout(f124546, 15 * tmp(tmp2[1]).Millis.MINUTE);
     };
     let tmp = dependencyMap;
     let obj = ICYMIExperiment;
@@ -46,7 +46,7 @@ class ICYMIManager extends LifecycleManager {
         clearTimeout(timeout);
       }
       const _setTimeout = setTimeout;
-      timeout = setTimeout(f124519, 15 * tmp2(1104).Millis.MINUTE);
+      timeout = setTimeout(f124546, 15 * tmp2(1104).Millis.MINUTE);
       const tmp2Result = tmp2(8841);
       const guildChannelScores = tmp2Result.getGuildChannelScores();
       const tmp2Result2 = tmp2(8841);

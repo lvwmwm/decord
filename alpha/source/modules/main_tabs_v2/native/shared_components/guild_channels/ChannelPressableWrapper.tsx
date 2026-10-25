@@ -1,13 +1,13 @@
-// Module ID: 17879
-// Function ID: 17880
+// Module ID: 17884
+// Function ID: 17885
 // Name: ChannelPressableWrapper
-// Dependencies: [19, 17, 21, 12060, 2]
+// Dependencies: [19, 17, 21, 12061, 2]
 // Exports: renderChannelPressableWrapper
 
-// Module 17879 (ChannelPressableWrapper)
+// Module 17884 (ChannelPressableWrapper)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ChannelListLayout from "ChannelListLayout" /* 12060 */;
+import ChannelListLayout from "ChannelListLayout" /* 12061 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 14244
-// Function ID: 14245
+// Module ID: 14249
+// Function ID: 14250
 // Name: ZoomLayoutGesture
 // Dependencies: [19, 17, 21, 5208, 5247, 5052, 4971, 558, 576, 5297, 2]
 
-// Module 14244 (ZoomLayoutGesture)
+// Module 14249 (ZoomLayoutGesture)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
@@ -310,7 +310,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                                                                                                                                                                                                   }
                                                                                                                                                                                                                   scale = tmp;
                                                                                                                                                                                                                   obj = onLayout(contentHeight[5]);
-                                                                                                                                                                                                                  const fn = function n() { /* body not rendered: F160712 */ };
+                                                                                                                                                                                                                  const fn = function n() { /* body not rendered: F160746 */ };
                                                                                                                                                                                                                   let obj2 = { stopAnimation, touchStoppedAnimation, panInterrupted, minimumZoomScale, maximumZoomScale, requestedScale: num, scale, x_1: x, containerWidth, y_1: y, containerHeight, clampTranslation, translateX, translateY, animated: tmp, withSpring: onLayout(contentHeight[4]).withSpring, SPRING_CONFIG };
                                                                                                                                                                                                                   fn.__closure = obj2;
                                                                                                                                                                                                                   fn.__workletHash = 8380953020180;
@@ -325,7 +325,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                                                                                                                                                                                                   const animated = obj.animated;
                                                                                                                                                                                                                   let closure_0 = tmp;
                                                                                                                                                                                                                   let obj2 = onLayout(contentHeight[5]);
-                                                                                                                                                                                                                  const fn = function n() { /* body not rendered: F160713 */ };
+                                                                                                                                                                                                                  const fn = function n() { /* body not rendered: F160747 */ };
                                                                                                                                                                                                                   let obj3 = { stopAnimation, touchStoppedAnimation, panInterrupted, scale, animated_0: tmp, withSpring: onLayout(contentHeight[4]).withSpring, minimumZoomScale, SPRING_CONFIG, translateX, translateY };
                                                                                                                                                                                                                   fn.__closure = obj3;
                                                                                                                                                                                                                   fn.__workletHash = 7952194524856;
@@ -393,7 +393,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                                                                                                                                                           }
                                                                                                                                                                           scale = tmp;
                                                                                                                                                                           obj = onLayout(contentHeight[5]);
-                                                                                                                                                                          const fn = function n() { /* body not rendered: F160712 */ };
+                                                                                                                                                                          const fn = function n() { /* body not rendered: F160746 */ };
                                                                                                                                                                           let obj2 = { stopAnimation, touchStoppedAnimation, panInterrupted, minimumZoomScale, maximumZoomScale, requestedScale: num, scale, x_1: x, containerWidth, y_1: y, containerHeight, clampTranslation, translateX, translateY, animated: tmp, withSpring: onLayout(contentHeight[4]).withSpring, SPRING_CONFIG };
                                                                                                                                                                           fn.__closure = obj2;
                                                                                                                                                                           fn.__workletHash = 8380953020180;
@@ -408,7 +408,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                                                                                                                                                           const animated = obj.animated;
                                                                                                                                                                           let closure_0 = tmp;
                                                                                                                                                                           let obj2 = onLayout(contentHeight[5]);
-                                                                                                                                                                          const fn = function n() { /* body not rendered: F160713 */ };
+                                                                                                                                                                          const fn = function n() { /* body not rendered: F160747 */ };
                                                                                                                                                                           let obj3 = { stopAnimation, touchStoppedAnimation, panInterrupted, scale, animated_0: tmp, withSpring: onLayout(contentHeight[4]).withSpring, minimumZoomScale, SPRING_CONFIG, translateX, translateY };
                                                                                                                                                                           fn.__closure = obj3;
                                                                                                                                                                           fn.__workletHash = 7952194524856;

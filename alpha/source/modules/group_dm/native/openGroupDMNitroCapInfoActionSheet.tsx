@@ -1,10 +1,10 @@
-// Module ID: 12197
-// Function ID: 12198
+// Module ID: 12198
+// Function ID: 12199
 // Name: openGroupDMNitroCapInfoActionSheet
-// Dependencies: [5210, 12198, 2002, 2]
+// Dependencies: [5210, 12199, 2002, 2]
 // Exports: default
 
-// Module 12197 (openGroupDMNitroCapInfoActionSheet)
+// Module 12198 (openGroupDMNitroCapInfoActionSheet)
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
 import size from "module_2" /* 2 */;
@@ -13,5 +13,5 @@ const result = size.fileFinishedImporting("modules/group_dm/native/openGroupDMNi
 
 export default function openGroupDMNitroCapInfoActionSheet() {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(12198, dependencyMap.paths), "GroupDMNitroCapInfoActionSheet");
+  obj.openLazy(asyncRequire(12199, dependencyMap.paths), "GroupDMNitroCapInfoActionSheet");
 };

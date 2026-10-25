@@ -11,7 +11,7 @@ import TYPE from "TYPE" /* 1191 */;
 const require = globalThis.__r;
 let _require, map, map1;
 
-const f87852 = (acc, item) => {
+const f87868 = (acc, item) => {
   let __spreadArrayResult;
   if (Array.isArray(closure_0[item])) {
     const obj = _mod1174;
@@ -23,7 +23,7 @@ const f87852 = (acc, item) => {
       if (typeof closure_0[item] === "object") {
         const _Object = Object;
         const keys = Object.keys(arr);
-        __spreadArrayResult = keys.reduce(f87852, {});
+        __spreadArrayResult = keys.reduce(f87868, {});
       }
     }
   }
@@ -43,7 +43,7 @@ function cloneDeep(arr) {
       if (typeof arr === "object") {
         const _Object = Object;
         const keys = Object.keys(arr);
-        __spreadArrayResult = keys.reduce(f87852, {});
+        __spreadArrayResult = keys.reduce(f87868, {});
       }
     }
   }
@@ -53,14 +53,14 @@ function hoistSelectors(arr) {
   let options;
   let tmp;
   let tmp2;
-  const f87854 = (children) => {
+  const f87870 = (children) => {
     let tmp4 = arr(num[1]).isPluralElement(children) || arr(num[1]).isSelectElement(children);
     arr(num[1]).isPluralElement(children) || arr(num[1]).isSelectElement(children);
     if (!tmp4) {
       let isTagElementResult = tmp(tmp2[1]).isTagElement(children);
       if (isTagElementResult) {
         children = children.children;
-        isTagElementResult = children.find(f87854);
+        isTagElementResult = children.find(f87870);
       }
       tmp4 = isTagElementResult;
     }
@@ -83,7 +83,7 @@ function hoistSelectors(arr) {
       } else {
         if (tmp(tmp2[1]).isTagElement(arr)) {
           let items = [arr];
-          if (items.find(f87854)) {
+          if (items.find(f87870)) {
             let tmp5 = globalThis;
             let _Error = Error;
             let self = this;
@@ -108,7 +108,7 @@ function hoistSelectors(arr) {
         if (typeof arr === "object") {
           const _Object2 = Object;
           let keys = Object.keys(arr);
-          __spreadArrayResult = keys.reduce(f87852, {});
+          __spreadArrayResult = keys.reduce(f87868, {});
         }
       }
     }
@@ -135,7 +135,7 @@ function hoistSelectors(arr) {
 export { hoistSelectors };
 export const isStructurallySame = function isStructurallySame(arr, arr2) {
   let error;
-  const f87855 = function(value) {
+  const f87871 = function(value) {
     let tmp = value;
     let tmp2 = closure_1_1;
     if (!value(closure_1_1[1]).isArgumentElement(value)) {
@@ -147,13 +147,13 @@ export const isStructurallySame = function isStructurallySame(arr, arr2) {
           let tmp7 = globalThis;
           let _Object = Object;
           let keys = Object.keys(value.options);
-          let item = keys.forEach(f141924);
+          let item = keys.forEach(f141950);
         }
         if (tmp(tmp2[1]).isTagElement(value)) {
           let tmp9 = value;
           let result1 = value.set(value.value, value.type);
           let children = value.children;
-          let item1 = children.forEach(f87855);
+          let item1 = children.forEach(f87871);
         }
       }
     }
@@ -176,8 +176,8 @@ export const isStructurallySame = function isStructurallySame(arr, arr2) {
   };
   map = new Map();
   map1 = new Map();
-  const item = arr.forEach(f87855);
-  const item1 = arr2.forEach(f87855);
+  const item = arr.forEach(f87871);
+  const item1 = arr2.forEach(f87871);
   if (map.size !== map1.size) {
     let obj = { success: false, error };
     let _Error = Error;

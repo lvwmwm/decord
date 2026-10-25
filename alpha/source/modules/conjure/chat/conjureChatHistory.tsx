@@ -66,23 +66,18 @@ function newMessageFromHistory(ts) {
     if (true === startsWithResult) {
       substr = id.slice(length.length);
     }
+    let extractTimestampResult = null;
     if (null != substr) {
-      const obj = /^\d+$/;
-      if (obj.test(substr)) {
-        const obj2 = SnowflakeUtilsDefault;
-        const extractTimestampResult = obj2.extractTimestamp(substr);
-        const _Number = Number;
-        let tmp9 = null;
-        if (Number.isFinite(extractTimestampResult)) {
-          tmp9 = null;
-          if (extractTimestampResult > 0) {
-            tmp9 = extractTimestampResult;
-          }
-        }
-        return tmp9;
+      extractTimestampResult = null;
+      const obj = SnowflakeUtilsDefault;
+      const tmp6 = importDefault;
+      const tmp7 = dependencyMap;
+      if (obj.isProbablyAValidSnowflake(substr)) {
+        const tmp6Result = tmp6(tmp7[2]);
+        extractTimestampResult = tmp6Result.extractTimestamp(substr);
       }
     }
-    return null;
+    return extractTimestampResult;
   }
   let obj = { ts: ts.ts, id: ts.id, userId: ts.user_id, attachments: ts.attachments };
   const tmp = newMessage(ts.role, ts.content, obj);
@@ -99,7 +94,7 @@ function newMessageFromHistory(ts) {
     if (null != ts.ts) {
       const _Date = Date;
       const parsed = Date.parse(ts.ts);
-      let _Number = Number;
+      const _Number = Number;
       if (Number.isFinite(parsed)) {
         tmp.settled_at = parsed;
       }
@@ -116,7 +111,7 @@ function newMessageFromHistory(ts) {
   if (null != ts.proposal) {
     tmp.proposal = ts.proposal;
   }
-  const tmp7 = null != ts.ideas && ts.ideas.length > 0;
+  let tmp7 = null != ts.ideas && ts.ideas.length > 0;
   if (tmp7) {
     tmp.ideas = ts.ideas;
   }
@@ -151,12 +146,12 @@ function newMessageFromHistory(ts) {
   if (null != ts.source_sha) {
     tmp.sourceSha = ts.source_sha;
   }
-  let tmp9 = null == ts.steps && null == ts.events && null != ts.todos && ts.todos.length > 0;
+  const tmp9 = null == ts.steps && null == ts.events && null != ts.todos && ts.todos.length > 0;
   if (tmp9) {
     tmp.todos = ts.todos;
   }
   if (null != ts.steps) {
-    let obj2 = conjureStepTimeline;
+    const obj2 = conjureStepTimeline;
     tmp.steps = obj2.replayTimeline(ts.steps);
   } else if (null != ts.events) {
     const events = ts.events;

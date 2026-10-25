@@ -1,12 +1,12 @@
-// Module ID: 14582
-// Function ID: 14583
+// Module ID: 14587
+// Function ID: 14588
 // Name: InAppReportsShareWithParentElement
-// Dependencies: [32, 19, 21, 558, 576, 7647, 5662, 1128, 7422, 14202, 14581, 2]
+// Dependencies: [32, 19, 21, 558, 576, 7647, 5662, 1128, 7422, 14207, 14586, 2]
 
-// Module 14582 (InAppReportsShareWithParentElement)
+// Module 14587 (InAppReportsShareWithParentElement)
 import Fragment from "Fragment" /* 21 */;
 import FamilyCenterActionCreators from "FamilyCenterActionCreators" /* 7647 */;
-import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 14581 */;
+import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 14586 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -87,7 +87,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((parents) => {
                       }
                       const _Symbol = Symbol;
                       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-                        const tmp58 = jsx(tmp(14202).ShareIcon, {});
+                        const tmp58 = jsx(tmp(14207).ShareIcon, {});
                         const intl3 = tmp(1128).intl;
                         const stringResult = intl3.string(tmp(1128).t["5l/hlt"]);
                         cResult[15] = tmp58;
@@ -255,7 +255,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((parents) => {
     if (tmp5 != null) {
       username1 = tmp5.username;
     }
-    let obj = { title: formatToPlainString2(HqyWeO, obj2), disabledTitle: formatToPlainString(BlAMme, obj3), icon: tmp8(parents(14202).ShareIcon, {}), description: intl2.string(parents(1128).t["5l/hlt"]), disabled: first, onPress: tmp3 };
+    let obj = { title: formatToPlainString2(HqyWeO, obj2), disabledTitle: formatToPlainString(BlAMme, obj3), icon: tmp8(parents(14207).ShareIcon, {}), description: intl2.string(parents(1128).t["5l/hlt"]), disabled: first, onPress: tmp3 };
     formatToPlainString2(HqyWeO, obj2);
     const tmp10 = InAppReportsUpsellsTableRowDefault;
     let intl = tmp16(1128).intl;

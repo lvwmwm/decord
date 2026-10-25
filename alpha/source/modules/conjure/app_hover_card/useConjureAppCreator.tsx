@@ -1,10 +1,10 @@
-// Module ID: 13862
-// Function ID: 13863
+// Module ID: 13867
+// Function ID: 13868
 // Name: useConjureAppCreator
-// Dependencies: [5, 32, 19, 1392, 558, 576, 13863, 12353, 504, 13864, 2]
+// Dependencies: [5, 32, 19, 1392, 558, 576, 13868, 12356, 504, 13869, 2]
 
-// Module 13862 (useConjureAppCreator)
-import react_native from "react-native" /* 13864 */;
+// Module 13867 (useConjureAppCreator)
+import react_native from "react-native" /* 13869 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -25,7 +25,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAp
   let obj = require("react");
   const cResult = obj.c(19);
   conjureProjectId = undefined;
-  let tmp4 = owner_user_id(13863);
+  let tmp4 = owner_user_id(13868);
   if (conjureProjectId != null) {
     conjureProjectId = conjureProjectId.conjureProjectId;
   }

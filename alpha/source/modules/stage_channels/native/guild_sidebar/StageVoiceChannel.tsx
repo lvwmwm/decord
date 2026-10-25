@@ -1,9 +1,9 @@
-// Module ID: 17662
-// Function ID: 17663
+// Module ID: 17667
+// Function ID: 17668
 // Name: StageVoiceChannel
-// Dependencies: [19, 17, 7636, 4903, 6771, 6704, 5717, 4828, 1087, 12059, 21, 1128, 4971, 587, 558, 576, 6640, 504, 17663, 6694, 6688, 8531, 6871, 1896, 7867, 10691, 5604, 10883, 17654, 17540, 17550, 2]
+// Dependencies: [19, 17, 7636, 4903, 6771, 6704, 5717, 4828, 1087, 12060, 21, 1128, 4971, 587, 558, 576, 6640, 504, 17668, 6694, 6688, 8531, 6871, 1896, 7867, 10691, 5604, 10884, 17659, 17545, 17555, 2]
 
-// Module 17662 (StageVoiceChannel)
+// Module 17667 (StageVoiceChannel)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,10 +15,10 @@ import MemberVerificationModalActionCreators from "MemberVerificationModalAction
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7867 */;
 import useShowMemberVerificationGate from "useShowMemberVerificationGate" /* 8531 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10691 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12059 */;
-import ChannelItemDefault from "ChannelItem" /* 17550 */;
-import ChannelInfoDefault from "ChannelInfo" /* 17654 */;
-import useStageChannelSpeakerVoiceStatesDefault from "useStageChannelSpeakerVoiceStates" /* 17663 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12060 */;
+import ChannelItemDefault from "ChannelItem" /* 17555 */;
+import ChannelInfoDefault from "ChannelInfo" /* 17659 */;
+import useStageChannelSpeakerVoiceStatesDefault from "useStageChannelSpeakerVoiceStates" /* 17668 */;
 import react from "react" /* 19 */;
 import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7636 */;
 import PermissionStore from "PermissionStore" /* 4903 */;
@@ -206,7 +206,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
   }
   const tmp21 = useChannelNameDefault(channel, false);
-  const tmpResult4 = tmp(10883);
+  const tmpResult4 = tmp(10884);
   const isConnectedToVoiceChannel = tmpResult4.useIsConnectedToVoiceChannel(channel);
   if (stageInstance != null) {
     class N {
@@ -303,7 +303,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }, items3);
   let topic;
   const tmp10 = useChannelNameDefault(channel, false);
-  const tmp2Result2 = channel(10883);
+  const tmp2Result2 = channel(10884);
   const isConnectedToVoiceChannel = tmp2Result2.useIsConnectedToVoiceChannel(channel);
   if (stageInstance != null) {
     topic = stageInstance.topic;

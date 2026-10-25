@@ -1,17 +1,16 @@
-// Module ID: 12473
-// Function ID: 12474
+// Module ID: 12477
+// Function ID: 12478
 // Name: clarification/ConjureImageOptions
-// Dependencies: [5, 32, 19, 17, 21, 4971, 587, 558, 576, 11829, 8552, 1128, 3830, 5234, 5669, 5039, 6901, 6988, 12469, 6905, 7959, 5689, 12474, 11755, 8751, 12476, 5244, 11811, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4971, 587, 558, 576, 11830, 8552, 1128, 3830, 5234, 5669, 5039, 6901, 6988, 12473, 6905, 7959, 5689, 12478, 11756, 8751, 12480, 5244, 11812, 2]
 
-// Module 12473 (clarification/ConjureImageOptions)
+// Module 12477 (clarification/ConjureImageOptions)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import react_native from "react-native" /* 5039 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import openMediaModal from "openMediaModal" /* 8751 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 11829 */;
-import ConjureImageOptions2 from "ConjureImageOptions" /* 12469 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 11830 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -40,9 +39,17 @@ let obj7;
 let obj8;
 let obj9;
 let tmp;
+let tmp2;
 const intl5 = tmp(1128);
 const Text_Text = tmp(5234);
+const TrashIcon = tmp2(5689);
+const FormCheckbox = tmp2(6901);
+const Card_Card = tmp2(6905);
+const FormRadio = tmp2(6988);
+const IconButton2 = tmp2(7959);
 const ImageWarningIcon2 = tmp(8552);
+const ConjureImageOptions2 = tmp2(12473);
+const MaximizeIcon2 = tmp2(12478);
 let react = react_mod;
 ({ ScrollView: metroRequire, View: metroImportDefault } = react_native2);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -653,18 +660,20 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
   ({ multi, galleryWidth, selected, disabled, frameHeight, onFrameHeight: closure_129_1, onPick: closure_129_2, onView: closure_129_3, onRemove } = option);
   ({ projectId, onMeasured } = option);
   const tmp = closure_12();
-  const obj = react_native;
+  const tmp2 = require;
+  const tmp3 = dependencyMap;
+  let obj = react_native;
   const checkboxA11yNative = obj.useCheckboxA11yNative({ checked: selected, disabled });
-  const obj2 = react_native;
+  let obj2 = react_native;
   let radioA11yNative = obj2.useRadioA11yNative({ selected, disabled });
   if (multi) {
     radioA11yNative = checkboxA11yNative;
   }
-  const intl = tmp2(1128).intl;
+  const intl = intl5.intl;
   const stringResult = intl.string(_modDef3830["4/eeDD"]);
   if (null != galleryWidth) {
-    rowTile = { width: galleryWidth };
-    const obj3 = { width: galleryWidth };
+    let obj3 = { width: galleryWidth };
+    rowTile = obj3;
   } else {
     rowTile = tmp.rowTile;
   }
@@ -673,7 +682,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
   if (selected) {
     ringSelected = tmp.ringSelected;
   }
-  const obj4 = { style: items, children: items5 };
+  let obj4 = { style: items, children: items5 };
   items[2] = ringSelected;
   const obj5 = {
     style: tmp.card,
@@ -698,12 +707,12 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
     },
     children: items4
   };
-  const Card = tmp2(6905).Card;
-  intl2 = tmp2(1128).intl;
+  const Card = Card_Card.Card;
+  intl2 = intl5.intl;
   obj6 = { answer: option.label };
   if (null != onRemove) {
     const obj7 = { name: "remove", label: intl3.string(_modDef3830.HQEXJM) };
-    intl3 = tmp2(1128).intl;
+    intl3 = intl5.intl;
     const items1 = [obj7];
     tmp11 = items1;
   } else if (null != option.image) {
@@ -731,22 +740,22 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
     const obj12 = { style: tmp.indicator, children: tmp12Result };
     if (multi) {
       const obj13 = { checked: selected };
-      tmp12Result = tmp12(tmp2(6901).FormCheckbox, obj13);
+      tmp12Result = tmp12(FormCheckbox.FormCheckbox, obj13);
     } else {
       const obj14 = { selected };
-      tmp12Result = tmp12(tmp2(6988).FormRadio, obj14);
+      tmp12Result = tmp12(FormRadio.FormRadio, obj14);
     }
     tmp12Result3 = tmp12(tmp9, obj12);
   } else {
     tmp12Result3 = null;
   }
   items3[1] = tmp12Result3;
-  items4 = [React4(metroImportDefault, obj9), ];
+  items4 = [tmp8(tmp9, obj9), ];
   const obj15 = { variant: "text-xs/normal", color: "text-muted", lineClamp: 1, style: tmp.caption, children: tmp2Result.imageOptionCaption(option) };
-  const Text = tmp2(5234).Text;
+  const Text = Text_Text.Text;
   tmp2Result = ConjureImageOptions2;
   items4[1] = tmp12(Text, obj15);
-  items5 = [React4(Card, obj5), ];
+  items5 = [tmp8(Card, obj5), ];
   let tmp12Result4 = null;
   if (null != option.image) {
     tmp12Result4 = null;
@@ -756,17 +765,17 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
       items6 = [tmp.view, ];
       items6[1] = { top: frameHeight - nativeDefault.space.PX_32 };
       const obj17 = { top: frameHeight - nativeDefault.space.PX_32 };
-      IconButton = tmp2(7959).IconButton;
+      IconButton = IconButton2.IconButton;
       if (null != onRemove) {
-        MaximizeIcon = tmp2(5689).TrashIcon;
+        MaximizeIcon = TrashIcon.TrashIcon;
       } else {
-        MaximizeIcon = tmp2(12474).MaximizeIcon;
+        MaximizeIcon = MaximizeIcon2.MaximizeIcon;
       }
       obj18 = { icon: tmp12(MaximizeIcon, { size: "xs" }), size: "sm", variant: "secondary-overlay", onPress: onRemove, accessibilityLabel: intl4.formatToPlainString(_modDef3830.JGjZMs, obj19) };
       if (null == onRemove) {
         onRemove = () => closure_1_3(option);
       }
-      intl4 = tmp2(1128).intl;
+      intl4 = intl5.intl;
       obj19 = { answer: option.label };
       tmp12Result4 = tmp12(tmp9, obj16);
     }

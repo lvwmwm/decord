@@ -1,9 +1,9 @@
-// Module ID: 17359
-// Function ID: 17360
+// Module ID: 17364
+// Function ID: 17365
 // Name: Welcome
-// Dependencies: [19, 17, 17360, 5190, 7567, 13309, 1406, 5700, 9055, 1087, 7427, 7809, 21, 4971, 587, 558, 576, 13658, 1128, 38, 1202, 5025, 5234, 5669, 14540, 7038, 7074, 15100, 1505, 1633, 504, 7584, 1267, 510, 5263, 6668, 5599, 17361, 17356, 1506, 5244, 6696, 5268, 12850, 5037, 2]
+// Dependencies: [19, 17, 17365, 5190, 7567, 13314, 1406, 5700, 9055, 1087, 7427, 7809, 21, 4971, 587, 558, 576, 13663, 1128, 38, 1202, 5025, 5234, 5669, 14545, 7038, 7074, 15105, 1505, 1633, 504, 7584, 1267, 510, 5263, 6668, 5599, 17366, 17361, 1506, 5244, 6696, 5268, 12855, 5037, 2]
 
-// Module 17359 (Welcome)
+// Module 17364 (Welcome)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -19,16 +19,16 @@ import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform
 import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7427 */;
 import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7584 */;
 import Constants2 from "Constants" /* 7809 */;
-import GuildInviteIconDefault from "GuildInviteIcon" /* 13658 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14540 */;
-import AssetRegistry from "AssetRegistry" /* 15100 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 17356 */;
+import GuildInviteIconDefault from "GuildInviteIcon" /* 13663 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14545 */;
+import AssetRegistry from "AssetRegistry" /* 15105 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 17361 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AgeGateStore from "AgeGateStore" /* 17360 */;
+import AgeGateStore from "AgeGateStore" /* 17365 */;
 import ExperimentStore from "ExperimentStore" /* 5190 */;
 import GuildTemplateStore from "GuildTemplateStore" /* 7567 */;
-import MultiAccountStore from "MultiAccountStore" /* 13309 */;
+import MultiAccountStore from "MultiAccountStore" /* 13314 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import InviteStore from "InviteStore" /* 5700 */;
 import DisplayedInviteStore from "DisplayedInviteStore" /* 9055 */;

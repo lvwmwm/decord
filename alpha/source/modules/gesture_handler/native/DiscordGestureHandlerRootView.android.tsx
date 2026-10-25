@@ -1,12 +1,12 @@
-// Module ID: 15815
-// Function ID: 15816
+// Module ID: 15820
+// Function ID: 15821
 // Name: DiscordGestureHandlerRootView
-// Dependencies: [19, 17, 21, 558, 576, 15816, 5297, 2]
+// Dependencies: [19, 17, 21, 558, 576, 15821, 5297, 2]
 
-// Module 15815 (DiscordGestureHandlerRootView)
+// Module 15820 (DiscordGestureHandlerRootView)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import DiscordGestureHandlerRootViewNativeComponentDefault from "DiscordGestureHandlerRootViewNativeComponent" /* 15816 */;
+import DiscordGestureHandlerRootViewNativeComponentDefault from "DiscordGestureHandlerRootViewNativeComponent" /* 15821 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

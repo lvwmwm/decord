@@ -1,9 +1,9 @@
-// Module ID: 14802
-// Function ID: 14803
+// Module ID: 14807
+// Function ID: 14808
 // Name: PremiumManagePlan
-// Dependencies: [5, 32, 19, 17, 6899, 2051, 1392, 2054, 2057, 2058, 7506, 2001, 7524, 1087, 5698, 1394, 21, 3, 4971, 587, 558, 576, 1505, 6928, 6908, 5234, 1128, 7253, 14694, 7278, 504, 5037, 4978, 1107, 6463, 5599, 10448, 7513, 1267, 14691, 14699, 2053, 38, 7339, 5669, 14803, 14804, 14668, 14678, 8438, 5244, 14657, 14698, 8562, 9794, 14704, 7957, 2067, 5258, 1202, 8422, 6905, 1633, 14766, 7505, 7357, 5263, 8436, 14768, 14728, 4840, 7087, 7091, 5585, 14700, 14781, 2]
+// Dependencies: [5, 32, 19, 17, 6899, 2051, 1392, 2054, 2057, 2058, 7506, 2001, 7524, 1087, 5698, 1394, 21, 3, 4971, 587, 558, 576, 1505, 6928, 6908, 5234, 1128, 7253, 14699, 7278, 504, 5037, 4978, 1107, 6463, 5599, 10448, 7513, 1267, 14696, 14704, 2053, 38, 7339, 5669, 14808, 14809, 14673, 14683, 8438, 5244, 14662, 14703, 8562, 9794, 14709, 7957, 2067, 5258, 1202, 8422, 6905, 1633, 14771, 7505, 7357, 5263, 8436, 14773, 14733, 4840, 7087, 7091, 5585, 14705, 14786, 2]
 
-// Module 14802 (PremiumManagePlan)
+// Module 14807 (PremiumManagePlan)
 import LoggerDefault from "Logger" /* 3 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -27,11 +27,11 @@ import UserSettingsUtils from "UserSettingsUtils" /* 7091 */;
 import PremiumManagementUtils from "PremiumManagementUtils" /* 7513 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8422 */;
 import PremiumFeaturesCardDefault from "PremiumFeaturesCard" /* 9794 */;
-import PremiumSubscriptionDetails from "PremiumSubscriptionDetails" /* 14657 */;
-import PremiumBillingInfoDefault from "PremiumBillingInfo" /* 14698 */;
-import PremiumAccountCreditDefault from "PremiumAccountCredit" /* 14700 */;
-import PremiumNitroHomeUtils from "PremiumNitroHomeUtils" /* 14728 */;
-import PremiumFeaturesTableDefault from "PremiumFeaturesTable" /* 14781 */;
+import PremiumSubscriptionDetails from "PremiumSubscriptionDetails" /* 14662 */;
+import PremiumBillingInfoDefault from "PremiumBillingInfo" /* 14703 */;
+import PremiumAccountCreditDefault from "PremiumAccountCredit" /* 14705 */;
+import PremiumNitroHomeUtils from "PremiumNitroHomeUtils" /* 14733 */;
+import PremiumFeaturesTableDefault from "PremiumFeaturesTable" /* 14786 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -74,7 +74,7 @@ let tmp5;
 const useMountEffectDefault = tmp5(5263);
 const VisualEffectViewAnimatedDefault = tmp5(5585);
 const useFractionalPremiumInfoDefault = tmp5(7505);
-const useFPDurationLeftDefault = tmp5(14768);
+const useFPDurationLeftDefault = tmp5(14773);
 function SubscriptionAndBillingInfo(subscription) {
   let Button;
   let _undefined;
@@ -1188,7 +1188,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
   let tmp5 = importDefault;
   ({ top, bottom } = useSafeAreaInsetsDefault());
   const tmp6 = useSafeAreaInsetsDefault();
-  let obj2 = navigation(14766);
+  let obj2 = navigation(14771);
   const youBarSettingsOutsideSafeAreaTop = obj2.useYouBarSettingsOutsideSafeAreaTop();
   let obj3 = navigation(1505);
   navigation = obj3.useNavigation();
@@ -1312,7 +1312,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
   const tmpResult8 = navigation(8436);
   const isInReverseTrial = tmpResult8.useIsInReverseTrial();
   const tmp5Result = useFPDurationLeftDefault;
-  tmp5Result(tmp27.endsAt, navigation(14768).CountDownMessageTypes.SHORT_TIME);
+  tmp5Result(tmp27.endsAt, navigation(14773).CountDownMessageTypes.SHORT_TIME);
   if (cResult[11] !== tmp27) {
     class X {
       constructor() {
@@ -1638,7 +1638,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
   let items9;
   let tmp10;
   let tmp11;
-  const f122682 = () => {
+  const f122709 = () => {
     const items = [SubscriptionStore.getPremiumTypeSubscription(), SubscriptionStore.hasFetchedSubscriptions()];
     return items;
   };
@@ -1646,7 +1646,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
   const rect = useSafeAreaInsetsDefault();
   const top = rect.top;
   const bottom = rect.bottom;
-  let obj = navigation(14766);
+  let obj = navigation(14771);
   const youBarSettingsOutsideSafeAreaTop = obj.useYouBarSettingsOutsideSafeAreaTop();
   let obj2 = navigation(1505);
   navigation = obj2.useNavigation();
@@ -1660,8 +1660,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
   const stateFromStores = obj4.useStateFromStores(items1, () => SubscriptionPlanStore.isLoadedForPremiumSKUs());
   const items2 = [SubscriptionStore];
   const obj5 = navigation(504);
-  [tmp10, tmp11] = obj5.useStateFromStoresArray(items2, f122682);
-  _slicedToArray(obj5.useStateFromStoresArray(items2, f122682), 2);
+  [tmp10, tmp11] = obj5.useStateFromStoresArray(items2, f122709);
+  _slicedToArray(obj5.useStateFromStoresArray(items2, f122709), 2);
   const items3 = [UserStore];
   const obj6 = navigation(504);
   const stateFromStores1 = obj6.useStateFromStores(items3, () => currentUser.getCurrentUser());
@@ -1681,7 +1681,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
   const obj8 = navigation(8436);
   let isInReverseTrial = obj8.useIsInReverseTrial();
   const tmp15 = useFPDurationLeftDefault;
-  const tmp15Result = tmp15(tmp12.endsAt, navigation(14768).CountDownMessageTypes.SHORT_TIME);
+  const tmp15Result = tmp15(tmp12.endsAt, navigation(14773).CountDownMessageTypes.SHORT_TIME);
   const obj9 = navigation(2053);
   const unactivatedFractionalPremiumDurationString = obj9.getUnactivatedFractionalPremiumDurationString(tmp12);
   if (null !== tmp10) {
@@ -1796,7 +1796,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
         },
       subscription: tmp10
     };
-    items10 = [closure_28(tmp2(14657), obj17), ];
+    items10 = [closure_28(tmp2(14662), obj17), ];
     const obj18 = { style: tmp.billingInfo, subscription: tmp10 };
     items10[1] = closure_28(PremiumBillingInfoDefault, obj18);
     tmp27Result = tmp27(tmp28, obj16);

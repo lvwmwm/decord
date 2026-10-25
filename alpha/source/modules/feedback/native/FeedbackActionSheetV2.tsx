@@ -1,10 +1,10 @@
-// Module ID: 18794
-// Function ID: 18795
+// Module ID: 18799
+// Function ID: 18800
 // Name: FeedbackActionSheetV2
 // Dependencies: [32, 19, 17, 10045, 21, 4971, 587, 5210, 12, 6660, 5263, 6672, 10067, 2002, 1128, 5234, 10049, 6900, 6987, 6903, 5244, 1633, 5265, 7248, 7293, 5269, 2]
 // Exports: default
 
-// Module 18794 (FeedbackActionSheetV2)
+// Module 18799 (FeedbackActionSheetV2)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
@@ -81,7 +81,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
   let tmp33Result;
   let tmp40Result;
   let tmp41;
-  const f137877 = (problemOptions) => {
+  const f137904 = (problemOptions) => {
     let concat;
     let freeformConfig;
     const obj = { problemOptions: concat(freeformConfig) };
@@ -125,14 +125,14 @@ export default function FeedbackActionSheetV2(optionsTree) {
   let closure_5 = tmp5;
   const useState = ref.useState;
   let obj2 = _modDef12;
-  [first, closure_7] = useState(obj2.shuffle(optionsTree.map(f137877)));
+  [first, closure_7] = useState(obj2.shuffle(optionsTree.map(f137904)));
   const items = [optionsTree, tmp5];
   const effect = ref.useEffect(() => {
     let obj = _modDef12;
     const arr = optionsTree;
     if (!obj.isEqual(closure_5, optionsTree)) {
       const tmpResult = _modDef12;
-      closure_7(tmpResult.shuffle(arr.map(f137877)));
+      closure_7(tmpResult.shuffle(arr.map(f137904)));
     }
   }, items);
   [first1, closure_9] = ref.useState(false);

@@ -1,15 +1,15 @@
-// Module ID: 12900
-// Function ID: 12901
+// Module ID: 12905
+// Function ID: 12906
 // Name: formatResults
-// Dependencies: [5, 9066, 4823, 4903, 1392, 12901, 1087, 9067, 7411, 9079, 1128, 1388, 12, 2]
+// Dependencies: [5, 9066, 4823, 4903, 1392, 12906, 1087, 9067, 7411, 9079, 1128, 1388, 12, 2]
 // Exports: default, destinationKey, formatResultsWithHeaders, getDestinationIdFromChannelId, getDestinationIdFromResult, getOrResolveChannelIdFromDestinationId
 
-// Module 12900 (formatResults)
+// Module 12905 (formatResults)
 import _mod12 from "module_12" /* 12 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
 import _mod9067 from "module_9067" /* 9067 */;
 import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9079 */;
-import ShareConstants from "ShareConstants" /* 12901 */;
+import ShareConstants from "ShareConstants" /* 12906 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import QuickSwitcherStore from "QuickSwitcherStore" /* 9066 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
@@ -182,7 +182,7 @@ export default function formatResults(hasQuery) {
   let queryMode;
   let selectedDestinations;
   let targetDestination;
-  const f116305 = (type) => {
+  const f116332 = (type) => {
     obj = queryMode(dependencyMap[11]);
     let isNotNullishResult = obj.isNotNullish(type);
     const tmp = queryMode;
@@ -205,7 +205,7 @@ export default function formatResults(hasQuery) {
     if (channelFilter === undefined) {
       channelFilter = canShareToChannel;
     }
-    return tmp26(results.filter(f116305));
+    return tmp26(results.filter(f116332));
   } else {
     let tmp2 = null;
     if (null != pinnedDestinations) {
@@ -269,7 +269,7 @@ export default function formatResults(hasQuery) {
         tmp21 = canShareToChannel;
       }
       closure_1 = tmp21;
-      const found = items.filter(f116305);
+      const found = items.filter(f116332);
       if (selectedDestinations != null) {
         found1 = selectedDestinations.find((item) => {
           obj = _mod12;

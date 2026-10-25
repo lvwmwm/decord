@@ -1,10 +1,10 @@
-// Module ID: 13931
-// Function ID: 13932
+// Module ID: 13936
+// Function ID: 13937
 // Name: iapProducts
-// Dependencies: [13932, 2]
+// Dependencies: [13937, 2]
 
-// Module 13931 (iapProducts)
-import billing_iapProducts from "billing/iapProducts" /* 13932 */;
+// Module 13936 (iapProducts)
+import billing_iapProducts from "billing/iapProducts" /* 13937 */;
 import size from "module_2" /* 2 */;
 
 const obj = {

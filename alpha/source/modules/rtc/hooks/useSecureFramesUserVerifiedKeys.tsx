@@ -1,9 +1,9 @@
-// Module ID: 17247
-// Function ID: 17248
+// Module ID: 17252
+// Function ID: 17253
 // Name: useSecureFramesUserVerifiedKeys
 // Dependencies: [32, 9180, 558, 576, 12, 504, 2]
 
-// Module 17247 (useSecureFramesUserVerifiedKeys)
+// Module 17252 (useSecureFramesUserVerifiedKeys)
 import _modDef12 from "module_12" /* 12 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import VerifiedKeyStore from "VerifiedKeyStore" /* 9180 */;

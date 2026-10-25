@@ -1,9 +1,9 @@
-// Module ID: 16161
-// Function ID: 16162
+// Module ID: 16166
+// Function ID: 16167
 // Name: FamilyCenterInlineWarningNotice
 // Dependencies: [19, 17, 21, 4971, 587, 558, 576, 7957, 5234, 2]
 
-// Module 16161 (FamilyCenterInlineWarningNotice)
+// Module 16166 (FamilyCenterInlineWarningNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

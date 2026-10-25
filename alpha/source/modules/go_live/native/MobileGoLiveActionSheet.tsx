@@ -1,10 +1,10 @@
-// Module ID: 11591
-// Function ID: 11592
+// Module ID: 11592
+// Function ID: 11593
 // Name: MobileGoLiveActionSheet
-// Dependencies: [32, 19, 5879, 6642, 4823, 4845, 4874, 1392, 5814, 1087, 5718, 21, 4971, 587, 1385, 5210, 11591, 2002, 1275, 558, 576, 504, 11592, 11596, 7253, 7278, 5052, 7829, 5851, 7053, 1128, 2342, 11597, 11599, 6886, 5234, 5668, 9934, 5265, 5269, 7221, 9672, 1107, 6984, 6987, 6985, 9931, 5030, 10178, 7295, 5244, 11590, 2]
+// Dependencies: [32, 19, 5879, 6642, 4823, 4845, 4874, 1392, 5814, 1087, 5718, 21, 4971, 587, 1385, 5210, 11592, 2002, 1275, 558, 576, 504, 11593, 11597, 7253, 7278, 5052, 7829, 5851, 7053, 1128, 2342, 11598, 11600, 6886, 5234, 5668, 9934, 5265, 5269, 7221, 9672, 1107, 6984, 6987, 6985, 9931, 5030, 10178, 7295, 5244, 11591, 2]
 // Exports: showMobileGoLiveActionSheet
 
-// Module 11591 (MobileGoLiveActionSheet)
+// Module 11592 (MobileGoLiveActionSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
@@ -21,9 +21,9 @@ import MobilePhoneIcon from "MobilePhoneIcon" /* 7053 */;
 import StreamActionCreators from "StreamActionCreators" /* 7829 */;
 import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9672 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9934 */;
-import getStreamSettingsForPreset from "getStreamSettingsForPreset" /* 11592 */;
-import SpeedometerIcon from "SpeedometerIcon" /* 11597 */;
-import ImageSparkleIcon from "ImageSparkleIcon" /* 11599 */;
+import getStreamSettingsForPreset from "getStreamSettingsForPreset" /* 11593 */;
+import SpeedometerIcon from "SpeedometerIcon" /* 11598 */;
+import ImageSparkleIcon from "ImageSparkleIcon" /* 11600 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5879 */;
@@ -257,7 +257,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     } else {
       tmp21 = cResult[9];
     }
-    let obj6 = guildPremiumTier(11596);
+    let obj6 = guildPremiumTier(11597);
     const goLiveUpsellVariant = obj6.useConfig(tmp21).goLiveUpsellVariant;
     const tmp23 = guildPremiumTier(7253);
     analyticsLocations = tmp23(guildPremiumTier(7278).MOBILE_GO_LIVE_ACTION_SHEET).analyticsLocations;
@@ -1760,6 +1760,6 @@ export const showMobileGoLiveActionSheet = function showMobileGoLiveActionSheet(
   const obj = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.MOBILE_GO_LIVE_ACTION_SHEET, impressionProperties: obj2 };
   ActionSheetActionCreatorsDefault;
   obj2 = { location_stack };
-  const tmp2 = asyncRequire(11591, dependencyMap.paths);
+  const tmp2 = asyncRequire(11592, dependencyMap.paths);
   openLazy(tmp2, MobileGoLiveActionSheet_str, obj);
 };

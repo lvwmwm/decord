@@ -1,7 +1,16 @@
 // Module ID: 15593
 // Function ID: 15594
-// Dependencies: []
+// Dependencies: [15594]
 
 // Module 15593
+import _mod15594 from "module_15594" /* 15594 */;
 
-export const f = Object.getOwnPropertySymbols;
+
+export default (arg0) => {
+  const tmp = _mod15594(arg0);
+  let num = 0;
+  if (tmp > 0) {
+    num = min(tmp, 9007199254740991);
+  }
+  return num;
+};

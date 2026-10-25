@@ -1,91 +1,85 @@
 // Module ID: 12590
 // Function ID: 12591
-// Dependencies: []
-// Exports: getSpanStatusFromHttpCode, setHttpStatus
+// Dependencies: [12591, 12588]
+// Exports: extractTraceparentData, generateSentryTraceHeader, propagationContextFromHeaders
 
 // Module 12590
+import generatePropagationContext from "generatePropagationContext" /* 12588 */;
+import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 12591 */;
 
-export const SPAN_STATUS_ERROR = 2;
-export const SPAN_STATUS_OK = 1;
-export const SPAN_STATUS_UNSET = 0;
-export const getSpanStatusFromHttpCode = function getSpanStatusFromHttpCode(arg0) {
-  if (arg0 < 400) {
-    if (arg0 >= 100) {
-      return { code: 1 };
-    }
-  }
-  if (arg0 >= 400) {
-    if (arg0 < 500) {
-      if (401 === arg0) {
-        return { code: 2, message: "unauthenticated" };
-      } else if (403 === arg0) {
-        return { code: 2, message: "permission_denied" };
-      } else if (404 === arg0) {
-        return { code: 2, message: "not_found" };
-      } else if (409 === arg0) {
-        return { code: 2, message: "already_exists" };
-      } else if (413 === arg0) {
-        return { code: 2, message: "failed_precondition" };
-      } else if (429 === arg0) {
-        return { code: 2, message: "resource_exhausted" };
-      } else {
-        return 499 === arg0 ? { code: 2, message: "cancelled" } : { code: 2, message: "invalid_argument" };
+const regExp = new RegExp("^[ \\t]*([0-9a-f]{32})?-?([0-9a-f]{16})?-?([01])?[ \\t]*$");
+
+export const TRACEPARENT_REGEXP = regExp;
+export const extractTraceparentData = function extractTraceparentData(str) {
+  const tmp = str;
+  if (tmp) {
+    const match = str.match(regExp);
+    if (match) {
+      let flag = true;
+      if ("1" !== match[3]) {
+        if ("0" === match[3]) {
+          flag = false;
+        }
       }
+      return { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
     }
   }
-  if (arg0 >= 500) {
-    if (arg0 < 600) {
-      if (501 === arg0) {
-        return { code: 2, message: "unimplemented" };
-      } else if (503 === arg0) {
-        return { code: 2, message: "unavailable" };
-      } else {
-        return 504 === arg0 ? { code: 2, message: "deadline_exceeded" } : { code: 2, message: "internal_error" };
-      }
-    }
-  }
-  return { code: 2, message: "unknown_error" };
 };
-export const setHttpStatus = function setHttpStatus(setAttribute, arg1) {
-  let obj;
-  const attr = setAttribute.setAttribute("http.response.status_code", arg1);
-  if (arg1 < 400) {
-    if (arg1 >= 100) {
-      obj = { code: 1 };
-    }
-    if ("unknown_error" !== obj.message) {
-      setAttribute.setStatus(obj);
-    }
+export const generateSentryTraceHeader = function generateSentryTraceHeader() {
+  let traceId = arg0;
+  if (arg0 === undefined) {
+    const obj = generatePropagationContext;
+    traceId = obj.generateTraceId();
   }
-  if (arg1 >= 400) {
-    if (arg1 < 500) {
-      if (401 === arg1) {
-        obj = { code: 2, message: "unauthenticated" };
-      } else if (403 === arg1) {
-        obj = { code: 2, message: "permission_denied" };
-      } else if (404 === arg1) {
-        obj = { code: 2, message: "not_found" };
-      } else if (409 === arg1) {
-        obj = { code: 2, message: "already_exists" };
-      } else if (413 === arg1) {
-        obj = { code: 2, message: "failed_precondition" };
-      } else if (429 === arg1) {
-        obj = { code: 2, message: "resource_exhausted" };
-      } else {
-        obj = 499 === arg1 ? { code: 2, message: "cancelled" } : { code: 2, message: "invalid_argument" };
+  let spanId = arg1;
+  if (arg1 === undefined) {
+    const obj2 = generatePropagationContext;
+    spanId = obj2.generateSpanId();
+  }
+  let str = "";
+  if (undefined !== arg2) {
+    let str2 = "-0";
+    if (arg2) {
+      str2 = "-1";
+    }
+    str = str2;
+  }
+  return "" + traceId + "-" + spanId + str;
+};
+export const propagationContextFromHeaders = function propagationContextFromHeaders(str, arg1) {
+  let parentSampled;
+  let tmp4Result;
+  let tmp4Result3;
+  let tmp4Result4;
+  let tmp;
+  if (str) {
+    const match = str.match(regExp);
+    if (match) {
+      let flag = true;
+      if ("1" !== match[3]) {
+        if ("0" === match[3]) {
+          flag = false;
+        }
       }
+      tmp = { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
+      const obj = { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
     }
   }
-  if (arg1 >= 500) {
-    if (arg1 < 600) {
-      if (501 === arg1) {
-        obj = { code: 2, message: "unimplemented" };
-      } else if (503 === arg1) {
-        obj = { code: 2, message: "unavailable" };
-      } else {
-        obj = 504 === arg1 ? { code: 2, message: "deadline_exceeded" } : { code: 2, message: "internal_error" };
+  const obj2 = BAGGAGE_HEADER_NAME;
+  let result = obj2.baggageHeaderToDynamicSamplingContext(arg1);
+  if (tmp) {
+    if (tmp.traceId) {
+      const obj3 = { traceId: null, parentSpanId: null, spanId: tmp4Result.generateSpanId(), sampled: parentSampled, dsc: result };
+      ({ traceId: obj7.traceId, parentSpanId: obj7.parentSpanId, parentSampled } = tmp);
+      tmp4Result = generatePropagationContext;
+      if (!result) {
+        result = {};
       }
+      return obj3;
     }
   }
-  obj = { code: 2, message: "unknown_error" };
+  const obj4 = { traceId: tmp4Result3.generateTraceId(), spanId: tmp4Result4.generateSpanId() };
+  tmp4Result3 = generatePropagationContext;
+  tmp4Result4 = generatePropagationContext;
+  return obj4;
 };

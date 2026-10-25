@@ -1,13 +1,13 @@
-// Module ID: 15764
-// Function ID: 15765
+// Module ID: 15769
+// Function ID: 15770
 // Name: voiceChannelChat
-// Dependencies: [6378, 1087, 11472, 15765, 9264, 2]
+// Dependencies: [6378, 1087, 11473, 15770, 9264, 2]
 
-// Module 15764 (voiceChannelChat)
+// Module 15769 (voiceChannelChat)
 import Constants2 from "Constants" /* 6378 */;
 import RPCErrorDefault from "RPCError" /* 9264 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11472 */;
-import toggleVoiceChannelChat from "toggleVoiceChannelChat" /* 15765 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11473 */;
+import toggleVoiceChannelChat from "toggleVoiceChannelChat" /* 15770 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

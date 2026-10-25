@@ -1,11 +1,11 @@
-// Module ID: 19356
-// Function ID: 19357
+// Module ID: 19361
+// Function ID: 19362
 // Name: MidjourneyOnboardingManager
-// Dependencies: [5, 15098, 1087, 7214, 15097, 7347, 2]
+// Dependencies: [5, 15103, 1087, 7214, 15102, 7347, 2]
 
-// Module 19356 (MidjourneyOnboardingManager)
+// Module 19361 (MidjourneyOnboardingManager)
 import Constants from "Constants" /* 1087 */;
-import MidjourneyOnboardingConstants from "MidjourneyOnboardingConstants" /* 15098 */;
+import MidjourneyOnboardingConstants from "MidjourneyOnboardingConstants" /* 15103 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
 import size from "module_2" /* 2 */;

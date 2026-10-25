@@ -1,9 +1,9 @@
-// Module ID: 13660
-// Function ID: 13661
+// Module ID: 13665
+// Function ID: 13666
 // Name: InviteError
-// Dependencies: [19, 17, 1087, 21, 4971, 587, 558, 576, 4978, 5205, 13661, 13662, 13663, 1128, 5244, 5669, 5234, 1417, 1202, 13664, 6883, 2067, 2]
+// Dependencies: [19, 17, 1087, 21, 4971, 587, 558, 576, 4978, 5205, 13666, 13667, 13668, 1128, 5244, 5669, 5234, 1417, 1202, 13669, 6883, 2067, 2]
 
-// Module 13660 (InviteError)
+// Module 13665 (InviteError)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -17,8 +17,8 @@ import Text_Text from "Text/Text" /* 5234 */;
 import components_Button_Button from "components/Button/Button" /* 5244 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import GuildIcon from "GuildIcon" /* 6883 */;
-import InviteErrorUtils from "InviteErrorUtils" /* 13663 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13664 */;
+import InviteErrorUtils from "InviteErrorUtils" /* 13668 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13669 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
@@ -72,13 +72,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
   }
   importDefault = tmp5;
   const tmpResult = onPressClose(4978);
-  const tmp6Result = importDefault(tmpResult.isThemeDark(useThemeDefault()) ? 13661 : 13662);
+  const tmp6Result = importDefault(tmpResult.isThemeDark(useThemeDefault()) ? 13666 : 13667);
   let code;
   if (inviteError != null) {
     code = inviteError.code;
   }
   if (cResult[2] !== code) {
-    const tmpResult2 = onPressClose(13663);
+    const tmpResult2 = onPressClose(13668);
     const descriptiveInviteError = tmpResult2.getDescriptiveInviteError(code);
     cResult[2] = code;
     cResult[3] = descriptiveInviteError;
@@ -234,7 +234,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
   const tmp = closure_10();
   const obj = shared;
   let code;
-  const tmp4Result = importDefault(obj.isThemeDark(useThemeDefault()) ? 13661 : 13662);
+  const tmp4Result = importDefault(obj.isThemeDark(useThemeDefault()) ? 13666 : 13667);
   const getDescriptiveInviteError = InviteErrorUtils.getDescriptiveInviteError;
   InviteErrorUtils;
   if (inviteError != null) {

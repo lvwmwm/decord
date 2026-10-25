@@ -1,9 +1,9 @@
-// Module ID: 18807
-// Function ID: 18808
+// Module ID: 18812
+// Function ID: 18813
 // Name: FrecencyUserSettingsManager
 // Dependencies: [5, 9652, 9651, 6725, 6006, 6765, 6823, 1246, 1097, 1375, 1104, 7214, 4804, 1247, 1248, 12, 2]
 
-// Module 18807 (FrecencyUserSettingsManager)
+// Module 18812 (FrecencyUserSettingsManager)
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import frecency_user_settings from "frecency_user_settings" /* 1247 */;

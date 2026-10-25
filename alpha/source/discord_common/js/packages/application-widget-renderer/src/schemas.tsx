@@ -1,13 +1,13 @@
-// Module ID: 11912
-// Function ID: 11913
+// Module ID: 11913
+// Function ID: 11914
 // Name: schemas
-// Dependencies: [11913, 11911, 11910, 11869, 2]
+// Dependencies: [11914, 11912, 11911, 11870, 2]
 
-// Module 11912 (schemas)
-import ApplicationWidgetConfigSurface from "ApplicationWidgetConfigSurface" /* 11869 */;
-import ApplicationWidgetFieldPresentationType from "ApplicationWidgetFieldPresentationType" /* 11910 */;
-import ApplicationWidgetFieldValueType from "ApplicationWidgetFieldValueType" /* 11911 */;
-import z18 from "z" /* 11913 */;
+// Module 11913 (schemas)
+import ApplicationWidgetConfigSurface from "ApplicationWidgetConfigSurface" /* 11870 */;
+import ApplicationWidgetFieldPresentationType from "ApplicationWidgetFieldPresentationType" /* 11911 */;
+import ApplicationWidgetFieldValueType from "ApplicationWidgetFieldValueType" /* 11912 */;
+import z18 from "z" /* 11914 */;
 import size from "module_2" /* 2 */;
 
 let partialRecord;

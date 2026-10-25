@@ -11,83 +11,90 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
-let c6, c7, set, surface;
+let channel_id, closure_4, closure_5, set, surface;
 
 let obj = function _createProxyTicket() {
-  obj = _asyncToGenerator(async (arg0, value, arg2) => {
+  obj = _asyncToGenerator(async (arg0, arg1, arg2, value) => {
     let closure_0 = arg0;
-    let closure_1 = value;
+    let closure_1 = arg1;
     let closure_2 = arg2;
-    if (c7 === 2) {
-      c7 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      let c5;
-      try {
-        c7 = 2;
-        if (0 === c6) {
-          if (arg0 === 1) {
-            c7 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c7 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            let closure_4 = tmp;
-            const tmp25 = prefetchKey(closure_0, closure_1, closure_2);
-            value = map.get(tmp25);
-            map.delete(tmp25);
-            if (null != value) {
-              const _Date = Date;
-              if (value.expiresAt > Date.now()) {
-                c5 = 1;
-                c6 = 2;
-                c7 = 1;
-                const obj4 = { value: value.ticket, done: false };
-                return obj4;
-              }
-            }
-          }
-        } else if (1 === c6) {
-          c5 = 0;
-        } else if (arg0 === 1) {
-          c7 = 3;
+    let c7 = 0;
+    let c8 = 0;
+    let c6 = 0;
+    return (async (arg0, value, arg2, arg3) => {
+      if (c8 === 2) {
+        c8 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
-          c5 = 0;
-          c7 = 3;
-          const obj5 = { value, done: true };
-          return obj5;
-        } else if (null != value) {
-          c5 = 0;
-          c7 = 3;
-          obj = { value, done: true };
-          return obj;
+          return { value, done: true };
         } else {
-          c5 = 0;
+          return { value: "IconComponent", done: null };
         }
-        c7 = 3;
-        const obj6 = { value: closure_132_9(closure_0, closure_1, closure_2), done: true };
-        return obj6;
-      } catch (tmp14) {
-        if (0 === c5) {
-          c7 = 3;
-          throw tmp14;
-        } else {
-          c6 = 1;
+      } else {
+        try {
+          c8 = 2;
+          if (0 === c7) {
+            if (arg0 === 1) {
+              c8 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c8 = 3;
+              return { value, done: true };
+            } else {
+              closure_5 = tmp;
+              closure_4 = tmp4;
+              value = undefined;
+              if (null != value) {
+                c8 = 3;
+                const obj4 = { value: mintProxyTicket(closure_0, closure_1, closure_2, value), done: true };
+                return obj4;
+              } else {
+                const tmp31 = prefetchKey(closure_0, closure_1, closure_2);
+                value = map.get(tmp31);
+                map.delete(tmp31);
+                if (null != value) {
+                  const _Date = Date;
+                  if (value.expiresAt > Date.now()) {
+                    c6 = 1;
+                    c7 = 2;
+                    c8 = 1;
+                    return { value: value.ticket, done: false };
+                  }
+                }
+              }
+            }
+          } else if (1 === c7) {
+            c6 = 0;
+          } else if (arg0 === 1) {
+            c8 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 0;
+            c8 = 3;
+            return { value, done: true };
+          } else if (null != value) {
+            c6 = 0;
+            c8 = 3;
+            return { value, done: true };
+          } else {
+            c6 = 0;
+          }
+          c8 = 3;
+          const obj7 = { value: closure_133_9(closure_0, closure_1, closure_2), done: true };
+          return obj7;
+        } catch (tmp19) {
+          if (0 === c6) {
+            c8 = 3;
+            throw tmp19;
+          } else {
+            c7 = 1;
+          }
         }
       }
-    }
+    })();
   });
   return obj(...arguments);
 };
@@ -109,9 +116,10 @@ function mintProxyTicket() {
   return obj(...arguments);
 }
 obj = function _mintProxyTicket() {
-  obj = _asyncToGenerator(async (arg0, arg1, arg2) => {
-    let c3;
+  obj = _asyncToGenerator(async (arg0, arg1, arg2, arg3) => {
     let c4;
+    let c5;
+    let closure_1;
     let closure_2;
     function prewarmApplication(arg0) {
       const tmp = closure_1_1(closure_1_2[4])(arg0);
@@ -131,14 +139,18 @@ obj = function _mintProxyTicket() {
       }
     }
     let closure_0 = arg0;
-    let closure_1 = arg1;
+    channel_id = arg1;
     surface = arg2;
+    let closure_3 = arg3;
     prewarmApplication(closure_0);
     const obj4 = { use_stateless_ticket: true };
     const tmp11 = closure_0;
-    const tmp12 = closure_1;
-    if (null != closure_1) {
-      obj4.channel_id = tmp12;
+    const tmp14 = closure_3;
+    if (null != closure_3) {
+      ({ channelId: obj7.invite_channel_id, messageId: obj7.invite_message_id } = tmp14);
+    }
+    if (null != channel_id) {
+      obj4.channel_id = channel_id;
     }
     if (null != surface) {
       obj4.surface = surface;

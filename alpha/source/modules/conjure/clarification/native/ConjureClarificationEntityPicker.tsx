@@ -1,9 +1,9 @@
-// Module ID: 12477
-// Function ID: 12478
+// Module ID: 12481
+// Function ID: 12482
 // Name: ConjureClarificationEntityPicker
-// Dependencies: [19, 4901, 4845, 4913, 1392, 21, 558, 576, 11747, 5210, 12478, 12471, 6883, 6903, 6987, 12316, 12479, 11831, 504, 7345, 11833, 1128, 3830, 5604, 11835, 2]
+// Dependencies: [19, 4901, 4845, 4913, 1392, 21, 558, 576, 11748, 5210, 12482, 12475, 6883, 6903, 6987, 12317, 12483, 11832, 504, 7345, 11834, 1128, 3830, 5604, 11836, 2]
 
-// Module 12477 (ConjureClarificationEntityPicker)
+// Module 12481 (ConjureClarificationEntityPicker)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
@@ -12,10 +12,10 @@ import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5210 */;
 import TableRow2 from "TableRow" /* 6903 */;
 import TableRowGroup2 from "TableRowGroup" /* 6987 */;
 import ConjureUtils from "ConjureUtils" /* 7345 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11833 */;
-import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 11835 */;
-import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 12316 */;
-import ConjureClarification from "ConjureClarification" /* 12471 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11834 */;
+import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 11836 */;
+import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 12317 */;
+import ConjureClarification from "ConjureClarification" /* 12475 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 4901 */;
 import GuildStore from "GuildStore" /* 4845 */;
@@ -393,7 +393,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
       name = first.name;
     }
     if (name == null) {
-      const tmp4Result = tmp4(12471);
+      const tmp4Result = tmp4(12475);
       name = tmp4Result.clarificationPickerPlaceholder("project", false);
     }
     let obj = { hasIcons: false, children: null };

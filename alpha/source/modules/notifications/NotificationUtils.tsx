@@ -1,10 +1,10 @@
-// Module ID: 10986
-// Function ID: 10987
+// Module ID: 10987
+// Function ID: 10988
 // Name: notifications/NotificationUtils
 // Dependencies: [6704, 1087, 1097, 1128, 11, 1405, 4906, 558, 576, 504, 2]
 // Exports: filterOverrides, getMuteTimeOptions, shouldShowUseNewNotificationSystem
 
-// Module 10986 (notifications/NotificationUtils)
+// Module 10987 (notifications/NotificationUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;

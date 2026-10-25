@@ -1,20 +1,20 @@
-// Module ID: 16117
-// Function ID: 16118
+// Module ID: 16122
+// Function ID: 16123
 // Name: ExplicitMediaFiltersGuildsSetting
-// Dependencies: [8332, 558, 8124, 16104, 576, 16112, 8586, 7396, 1128, 16113, 1211, 11205, 2]
+// Dependencies: [8332, 558, 8124, 16109, 576, 16117, 8586, 7396, 1128, 16118, 1211, 11206, 2]
 
-// Module 16117 (ExplicitMediaFiltersGuildsSetting)
+// Module 16122 (ExplicitMediaFiltersGuildsSetting)
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
 import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7396 */;
 import useUserIsTeen from "useUserIsTeen" /* 8124 */;
 import SettingsConstants from "SettingsConstants" /* 8332 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16104 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 16112 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16113 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16109 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 16117 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16118 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11205 */;
+import SettingBuilders from "SettingBuilders" /* 11206 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

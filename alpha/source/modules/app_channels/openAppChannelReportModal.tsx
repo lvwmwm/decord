@@ -1,10 +1,10 @@
-// Module ID: 13998
-// Function ID: 13999
+// Module ID: 14003
+// Function ID: 14004
 // Name: openAppChannelReportModal
-// Dependencies: [5, 2045, 6809, 13999, 8108, 2]
+// Dependencies: [5, 2045, 6809, 14004, 8108, 2]
 // Exports: default
 
-// Module 13998 (openAppChannelReportModal)
+// Module 14003 (openAppChannelReportModal)
 import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6809 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;

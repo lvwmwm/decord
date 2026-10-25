@@ -1,9 +1,9 @@
-// Module ID: 13952
-// Function ID: 13953
+// Module ID: 13957
+// Function ID: 13958
 // Name: BalanceCounter
-// Dependencies: [32, 19, 21, 558, 576, 5052, 4985, 5247, 13953, 5234, 2]
+// Dependencies: [32, 19, 21, 558, 576, 5052, 4985, 5247, 13958, 5234, 2]
 
-// Module 13952 (BalanceCounter)
+// Module 13957 (BalanceCounter)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react3 from "react" /* 4985 */;

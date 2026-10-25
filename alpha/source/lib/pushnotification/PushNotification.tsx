@@ -1,12 +1,13 @@
 // Module ID: 10753
 // Function ID: 10754
 // Name: PushNotification
-// Dependencies: [17, 1384, 10754, 10755, 10756, 2]
+// Dependencies: [17, 1384, 10754, 10755, 10756, 10757, 2]
 
 // Module 10753 (PushNotification)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import _modDef10754 from "module_10754" /* 10754 */;
 import react_nativeDefault from "react-native" /* 10756 */;
+import react_nativeDefault2 from "react-native" /* 10757 */;
 import react_native2 from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
@@ -184,14 +185,14 @@ let obj = {
   getScheduledLocalNotifications(arg0) {
     const obj = PlatformUtils;
     if (!obj.isAndroid()) {
-      const obj2 = _modDef10754;
+      const obj2 = react_nativeDefault;
       const scheduledLocalNotifications = obj2.getScheduledLocalNotifications(arg0);
     }
   },
   cancelLocalNotifications(arg0) {
     const obj = PlatformUtils;
     if (!obj.isAndroid()) {
-      const obj2 = _modDef10754;
+      const obj2 = react_nativeDefault;
       const result = obj2.cancelLocalNotifications(arg0);
     }
   },
@@ -225,7 +226,7 @@ let obj = {
     return permissions;
   },
   openNotificationSettings() {
-    react_nativeDefault();
+    react_nativeDefault2();
   },
   addNotificationEventListener(localNotification, handleLocalNotification) {
     _require = handleLocalNotification;

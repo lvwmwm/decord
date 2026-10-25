@@ -1,9 +1,9 @@
-// Module ID: 18852
-// Function ID: 18853
+// Module ID: 18857
+// Function ID: 18858
 // Name: JSWatchdogManager
-// Dependencies: [5, 1087, 3, 1104, 7214, 18853, 1257, 1267, 7584, 7581, 7571, 2]
+// Dependencies: [5, 1087, 3, 1104, 7214, 18858, 1257, 1267, 7584, 7581, 7571, 2]
 
-// Module 18852 (JSWatchdogManager)
+// Module 18857 (JSWatchdogManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;

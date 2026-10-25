@@ -1,406 +1,751 @@
 // Module ID: 18862
 // Function ID: 18863
-// Dependencies: []
+// Dependencies: [5, 41, 42, 93, 95, 98, 18863, 18865, 18867]
 
 // Module 18862
-class Events {
-  constructor() {
+import pTimeout from "pTimeout" /* 18863 */;
+import _mod18865 from "module_18865" /* 18865 */;
+import _mod18867 from "module_18867" /* 18867 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
+let _resolveEmpty, _resolveIdle, c4, closure_1, closure_3, set;
+
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
-function EE(fn, context, arg2) {
-  let flag = arg2;
-  if (!arg2) {
-    flag = false;
-  }
-}
-let flag = "~";
-let c1 = "~";
-let str = "~";
-if (Object.create) {
-  let _Object = Object;
-  class Events {
-    constructor() {
+function empty() {
 
-    }
-  }
-  Events.prototype = Object.create(null);
-  if (!Object.create(Events.prototype).__proto__) {
-    let flag2 = false;
-    class Events {
-      constructor() {
-
-      }
-    }
-    flag = false;
-  }
-  str = flag;
 }
-class EventEmitter {
-  constructor() {
-    ({ _events: Object.create(Events.prototype), _eventsCount: 0 });
-  }
-  eventNames() {
-    const items = [];
-    if (0 === this._eventsCount) {
-      return items;
-    } else {
-      const _events = tmp._events;
-      for (const key10004 in _events) {
-        if (!hasOwnProperty.call(_events, key10004)) {
-          continue;
-        } else {
-          let substr = key10004;
-          let push = items.push;
-          if (c1) {
-            substr = key10004.slice(1);
-          }
-          let arr = push(substr);
-          continue;
-        }
-        continue;
-      }
-      const _Object = Object;
-      let combined = items;
-      if (Object.getOwnPropertySymbols) {
-        const _Object2 = Object;
-        combined = items.concat(Object.getOwnPropertySymbols(_events));
-      }
-      return combined;
-    }
-  }
-  listeners(arg0) {
-    let sum = arg0;
-    if (c1) {
-      sum = c1 + arg0;
-    }
-    if (this._events[sum]) {
-      if (this._events[sum].fn) {
-        const items = [this._events[sum].fn];
-        return items;
-      } else {
-        let num;
-        const _Array = Array;
-        const self = this;
-        const self2 = this;
-        const array = new Array(length);
-        for (let num = 0; num < this._events[sum].length; num = num + 1) {
-          array[num] = arr[num].fn;
-        }
-        return array;
-      }
-    } else {
-      return [];
-    }
-  }
-  listenerCount(arg0) {
-    let sum = arg0;
-    if (c1) {
-      sum = c1 + arg0;
-    }
-    let num = 0;
-    if (this._events[sum]) {
-      let num2 = 1;
-      if (!this._events[sum].fn) {
-        num2 = arr.length;
-      }
-      num = num2;
-    }
-    return num;
-  }
-  emit(arg0, arg1, arg2, arg3, arg4, arg5) {
-    let context2;
-    let context3;
-    let context4;
-    let fn7;
-    let fn8;
-    let fn9;
-    let tmp6;
-    let sum = arg0;
-    if (c1) {
-      sum = c1 + arg0;
-    }
+const timeoutError = new pTimeout.TimeoutError();
+let closure_2;
+let _false;
+let closure_4;
+class PQueue {
+  constructor(arg0) {
+    let constructResult;
     const self = this;
-    if (this._events[sum]) {
-      const length = arguments.length;
-      if (self._events[sum].fn) {
-        if (self._events[sum].once) {
-          self.removeListener(arg0, self._events[sum].fn, undefined, true);
-        }
-        if (1 === length) {
-          const fn12 = self._events[sum].fn;
-          fn12.call(self._events[sum].context);
-          return true;
-        } else if (2 === length) {
-          const fn11 = self._events[sum].fn;
-          fn11.call(self._events[sum].context, arg1);
-          return true;
-        } else if (3 === length) {
-          const fn10 = self._events[sum].fn;
-          fn10.call(self._events[sum].context, arg1, arg2);
-          return true;
-        } else if (4 === length) {
-          ({ fn: fn9, context: context4 } = self._events[sum]);
-          fn9.call(context4, arg1, arg2, arg3);
-          return true;
-        } else if (5 === length) {
-          ({ fn: fn8, context: context3 } = self._events[sum]);
-          fn8.call(context3, arg1, arg2, arg3, arg4);
-          return true;
-        } else if (6 === length) {
-          ({ fn: fn7, context: context2 } = self._events[sum]);
-          fn7.call(context2, arg1, arg2, arg3, arg4, arg5);
-          return true;
-        } else {
-          let num8;
-          const _Array2 = Array;
-          const self4 = this;
-          const self5 = this;
-          const array = new Array(length - 1);
-          for (let num8 = 1; num8 < length; num8 = num8 + 1) {
-            array[num8 - 1] = arguments[num8];
+    _classCallCheck(this, PQueue);
+    const obj = _getPrototypeOf(PQueue);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = _possibleConstructorReturn;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, undefined);
+    }
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result._intervalCount = 0;
+    tmp3Result._intervalEnd = 0;
+    tmp3Result._pendingCount = 0;
+    tmp3Result._resolveEmpty = empty;
+    tmp3Result._resolveIdle = empty;
+    const obj2 = { carryoverConcurrencyCount: false, intervalCap: Infinity, interval: 0, concurrency: Infinity, autoStart: true, queueClass: _mod18865.default };
+    const merged = Object.assign(obj2, arg0);
+    if (typeof merged.intervalCap === "number") {
+      if (merged.intervalCap >= 1) {
+        if (undefined !== merged.interval) {
+          const _Number = Number;
+          if (Number.isFinite(merged.interval)) {
+            if (merged.interval >= 0) {
+              tmp3Result._carryoverConcurrencyCount = merged.carryoverConcurrencyCount;
+              tmp3Result._isIntervalIgnored = merged.intervalCap === Infinity || 0 === merged.interval;
+              ({ intervalCap: tmp6._intervalCap, interval: tmp6._interval } = merged);
+              const self2 = this;
+              const self3 = this;
+              const queueClass = new merged.queueClass();
+              tmp3Result._queue = queueClass;
+              ({ queueClass: tmp6._queueClass, concurrency: tmp6.concurrency, timeout: tmp6._timeout } = merged);
+              tmp3Result._throwOnTimeout = true === merged.throwOnTimeout;
+              tmp3Result._isPaused = false === merged.autoStart;
+              return tmp3Result;
+            }
           }
-          const fn6 = self._events[sum].fn;
-          fn6.apply(self._events[sum].context, array);
         }
-      } else {
-        let num = 0;
-        if (0 < self._events[sum].length) {
-          do {
-            let tmp12;
-            if (arr[num].once) {
-              let flag2 = true;
-              let removeListenerResult1 = self.removeListener(arg0, arr[num].fn, undefined, true);
-            }
-            if (1 === length) {
-              let fn5 = arr[num].fn;
-              let callResult6 = fn5.call(arr[num].context);
-              tmp12 = tmp6;
-            } else if (2 === length) {
-              let fn4 = arr[num].fn;
-              let callResult7 = fn4.call(arr[num].context, arg1);
-              tmp12 = tmp6;
-            } else if (3 === length) {
-              let fn3 = arr[num].fn;
-              let callResult8 = fn3.call(arr[num].context, arg1, arg2);
-              tmp12 = tmp6;
-            } else if (4 === length) {
-              let fn2 = arr[num].fn;
-              let context = arr[num].context;
-              let callResult9 = fn2.call(context, arg1, arg2, arg3);
-              tmp12 = tmp6;
-            } else {
-              tmp12 = tmp6;
-              if (!tmp12) {
-                let _Array = Array;
-                let self2 = this;
-                let self3 = this;
-                let array2 = new Array(length - 1);
-                let num6 = 1;
-                tmp12 = array2;
-                if (1 < length) {
-                  do {
-                    array2[num6 - 1] = arguments[num6];
-                    num6 = num6 + 1;
-                    tmp12 = array2;
-                  } while (num6 < length);
-                }
-              }
-              let fn = arr[num].fn;
-              let applyResult1 = fn.apply(arr[num].context, tmp12);
-            }
-            num = num + 1;
-            tmp6 = tmp12;
-          } while (num < self._events[sum].length);
+        let str1;
+        const _TypeError2 = TypeError;
+        if (null !== merged.interval) {
+          if (undefined !== merged.interval) {
+            str1 = str3.toString();
+          }
+        }
+        let str5 = "";
+        if (null !== str1) {
+          str5 = "";
+          if (undefined !== str1) {
+            str5 = str1;
+          }
+        }
+        const _HermesInternal = HermesInternal;
+        const self4 = this;
+        const self5 = this;
+        const _TypeError21 = new _TypeError2("Expected `interval` to be a finite number >= 0, got `" + str5 + "` (" + typeof merged.interval + ")");
+        throw _TypeError21;
+      }
+    }
+    let str9;
+    const _TypeError = TypeError;
+    if (null !== merged.intervalCap) {
+      if (undefined !== merged.intervalCap) {
+        str9 = str.toString();
+      }
+    }
+    let str2 = "";
+    if (null !== str9) {
+      str2 = "";
+      if (undefined !== str9) {
+        str2 = str9;
+      }
+    }
+    const _TypeError1 = new _TypeError("Expected `intervalCap` to be a number from 1 and up, got `" + str2 + "` (" + typeof merged.intervalCap + ")");
+    throw _TypeError1;
+  }
+}
+_inherits(PQueue, _mod18867);
+let obj = {
+  key: "_doesIntervalAllowAnother",
+  get() {
+    const self = this;
+    return this._isIntervalIgnored || self._intervalCount < self._intervalCap;
+  }
+};
+const items = [
+  obj,
+  {
+    key: "_doesConcurrentAllowAnother",
+    get() {
+      return this._pendingCount < this._concurrency;
+    }
+  },
+  {
+    key: "_next",
+    value: function _next() {
+      this._pendingCount = this._pendingCount - 1;
+      this._tryToStartAnother();
+      this.emit("next");
+    }
+  },
+  {
+    key: "_resolvePromises",
+    value: function _resolvePromises() {
+      const self = this;
+      this._resolveEmpty();
+      this._resolveEmpty = empty;
+      if (0 === this._pendingCount) {
+        self._resolveIdle();
+        self._resolveIdle = tmp2;
+        self.emit("idle");
+      }
+    }
+  },
+  {
+    key: "_onResumeInterval",
+    value: function _onResumeInterval() {
+      this._onInterval();
+      const result = this._initializeIntervalIfNeeded();
+      this._timeoutId = undefined;
+    }
+  },
+  {
+    key: "_isIntervalPaused",
+    value: function _isIntervalPaused() {
+      const self = this;
+      if (undefined === this._intervalId) {
+        const diff = self._intervalEnd - tmp;
+        if (diff < 0) {
+          let num2 = 0;
+          if (self._carryoverConcurrencyCount) {
+            num2 = self._pendingCount;
+          }
+          self._intervalCount = num2;
+        } else {
+          if (undefined === self._timeoutId) {
+            const _setTimeout = setTimeout;
+            self._timeoutId = setTimeout(() => {
+              self._onResumeInterval();
+            }, diff);
+          }
+          return true;
         }
       }
-      return true;
-    } else {
       return false;
     }
-  }
-  on(arg0, fn, arg2) {
-    if (typeof fn !== "function") {
-      const _TypeError = TypeError;
+  },
+  {
+    key: "_tryToStartAnother",
+    value: function _tryToStartAnother() {
       const self = this;
-      const self2 = this;
-      const typeError = new TypeError("The listener must be a function");
-      throw typeError;
-    } else {
-      const self3 = this;
-      let tmp = arg2;
-      const tmp9 = EE;
-      if (!arg2) {
-        tmp = self3;
-      }
-      Object.create(tmp9.prototype);
-      const obj = { fn, context: tmp, once: false };
-      let sum = arg0;
-      if (c1) {
-        sum = c1 + arg0;
-      }
-      const _events = self3._events;
-      if (self3._events[sum]) {
-        const _events2 = self3._events;
-        if (_events[sum].fn) {
-          const items = [self3._events[sum], obj];
-          _events2[sum] = items;
-        } else {
-          const arr = _events2[sum];
-          arr.push(obj);
+      if (0 === this._queue.size) {
+        if (self._intervalId) {
+          const _clearInterval = clearInterval;
+          clearInterval(self._intervalId);
         }
+        self._intervalId = undefined;
+        self._resolvePromises();
+        return false;
       } else {
-        _events[sum] = obj;
-        self3._eventsCount = self3._eventsCount + 1;
+        if (!self._isPaused) {
+          const _isIntervalPausedResult = self._isIntervalPaused();
+          if (self._doesIntervalAllowAnother) {
+            if (self._doesConcurrentAllowAnother) {
+              const _queue = self._queue;
+              const dequeueResult = _queue.dequeue();
+              let flag = dequeueResult;
+              if (flag) {
+                self.emit("active");
+                dequeueResult();
+                flag = true;
+                if (!_isIntervalPausedResult) {
+                  const result = self._initializeIntervalIfNeeded();
+                  flag = true;
+                }
+              }
+              return flag;
+            }
+          }
+        }
+        return false;
       }
-      return self3;
     }
-  }
-  once(arg0, fn, arg2) {
-    if (typeof fn !== "function") {
-      const _TypeError = TypeError;
+  },
+  {
+    key: "_initializeIntervalIfNeeded",
+    value: function _initializeIntervalIfNeeded() {
       const self = this;
-      const self2 = this;
-      const typeError = new TypeError("The listener must be a function");
-      throw typeError;
-    } else {
-      const self3 = this;
-      let tmp = arg2;
-      const tmp9 = EE;
-      if (!arg2) {
-        tmp = self3;
+      const _isIntervalIgnored = this._isIntervalIgnored || undefined !== self._intervalId;
+      if (!_isIntervalIgnored) {
+        const _setInterval = setInterval;
+        self._intervalId = setInterval(() => {
+          self._onInterval();
+        }, self._interval);
+        const _Date = Date;
+        self._intervalEnd = Date.now() + self._interval;
       }
-      Object.create(tmp9.prototype);
-      const obj = { fn, context: tmp, once: true };
-      let sum = arg0;
-      if (c1) {
-        sum = c1 + arg0;
+    }
+  },
+  {
+    key: "_onInterval",
+    value: function _onInterval() {
+      const self = this;
+      const tmp = 0 === this._intervalCount && 0 === self._pendingCount && self._intervalId;
+      if (tmp) {
+        const _clearInterval = clearInterval;
+        clearInterval(self._intervalId);
+        self._intervalId = undefined;
       }
-      const _events = self3._events;
-      if (self3._events[sum]) {
-        const _events2 = self3._events;
-        if (_events[sum].fn) {
-          const items = [self3._events[sum], obj];
-          _events2[sum] = items;
-        } else {
-          const arr = _events2[sum];
-          arr.push(obj);
+      let num = 0;
+      if (self._carryoverConcurrencyCount) {
+        num = self._pendingCount;
+      }
+      self._intervalCount = num;
+      self._processQueue();
+    }
+  },
+  {
+    key: "_processQueue",
+    value: function _processQueue() {
+      let _tryToStartAnotherResult;
+      const self = this;
+      if (this._tryToStartAnother()) {
+        do {
+          _tryToStartAnotherResult = self._tryToStartAnother();
+        } while (_tryToStartAnotherResult);
+      }
+    }
+  },
+  {
+    key: "concurrency",
+    get() {
+      return this._concurrency;
+    },
+    set(_concurrency) {
+      if (typeof _concurrency === "number") {
+        if (_concurrency >= 1) {
+          const self = this;
+          this._concurrency = _concurrency;
+          this._processQueue();
         }
-      } else {
-        _events[sum] = obj;
-        self3._eventsCount = self3._eventsCount + 1;
       }
-      return self3;
+      const typeError = new TypeError("Expected `concurrency` to be a number from 1 and up, got `" + _concurrency + "` (" + typeof _concurrency + ")");
+      throw typeError;
     }
+  },
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+
+];
+const entry = {
+  key: "add",
+  value: function add(arg0) {
+    return closure_4(...arguments);
   }
-  removeListener(arg0, arg1, arg2, arg3) {
-    let sum = arg0;
-    if (c1) {
-      sum = c1 + arg0;
-    }
-    const self = this;
-    if (this._events[sum]) {
-      const tmp2 = arg1;
-      if (tmp2) {
-        let tmp6 = arg3;
-        if (self._events[sum].fn) {
-          let tmp15 = arr.fn !== arg1;
-          if (!tmp15) {
-            if (tmp6) {
-              tmp6 = !arr.once;
-            }
-            tmp15 = tmp6;
-          }
-          if (!tmp15) {
-            tmp15 = arg2 && self._events[sum].context !== arg2;
-          }
-          if (!tmp15) {
-            const diff = self._eventsCount - 1;
-            self._eventsCount = diff;
-            if (0 == diff) {
-              self._events = Object.create(Events.prototype);
-            } else {
-              delete self._events[tmp];
-            }
-          }
-        } else {
-          let num4;
-          const items = [];
-          const length = self._events[sum].length;
-          for (let num4 = 0; num4 < length; num4 = num4 + 1) {
-            let tmp7 = arr[num4].fn !== arg1;
-            if (!tmp7) {
-              let tmp9 = tmp6 && !arr[num4].once;
-              tmp7 = tmp9;
-            }
-            if (!tmp7) {
-              let tmp10 = arg2 && arr[num4].context !== arg2;
-              tmp7 = tmp10;
-            }
-            if (tmp7) {
-              let arr2 = items.push(arr[num4]);
-            }
-          }
-          if (items.length) {
-            let first = items;
-            const _events = self._events;
-            if (1 === items.length) {
-              first = items[0];
-            }
-            _events[sum] = first;
+};
+closure_4 = _asyncToGenerator(async function(arg0) {
+  let self = this;
+  closure_1 = arg0;
+  closure_2 = arg1;
+  let c5 = 0;
+  let c6 = 0;
+  const iter = (async function(arg0, value) {
+    if (c6 === 2) {
+      c6 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        let obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        c6 = 2;
+        const tmp4 = c5;
+        if (0 === c5) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            let obj3 = { value, done: true };
+            return obj3;
           } else {
-            const diff1 = self._eventsCount - 1;
-            self._eventsCount = diff1;
-            if (0 == diff1) {
-              self._events = Object.create(Events.prototype);
-            } else {
-              delete self._events[tmp];
+            closure_4 = self;
+            closure_3 = self;
+            let obj4 = closure_2;
+            if (closure_2 === undefined) {
+              obj4 = {};
             }
+            let closure_0;
+            c5 = 1;
+            c6 = 1;
+            return { value: "Reflect", done: true };
           }
-        }
-        return self;
-      } else {
-        const diff2 = self._eventsCount - 1;
-        self._eventsCount = diff2;
-        if (0 == diff2) {
-          self._events = Object.create(Events.prototype);
+        } else if (arg0 === 1) {
+          c6 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c6 = 3;
+          return { value, done: true };
         } else {
-          delete self._events[tmp];
+          let tmp5 = closure_3;
+          closure_0 = closure_4;
+          self = this;
+          const self2 = this;
+          const promise = new Promise((arg0, arg1) => {
+            closure_1 = arg1;
+            let closure_0 = closure_1_2(function*(arg0, value) {
+              let throwOnTimeout;
+              if (c5 === 2) {
+                c5 = 3;
+                throw new TypeError("Generator functions may not be called on executing generators");
+              } else if (tmp3 === 3) {
+                if (arg0 === 1) {
+                  throw value;
+                } else if (arg0 === 2) {
+                  const obj2 = { value, done: true };
+                  return obj2;
+                } else {
+                  return { value: "IconComponent", done: null };
+                }
+              } else {
+                let c3;
+                try {
+                  c5 = 2;
+                  if (0 === c4) {
+                    if (arg0 === 1) {
+                      c5 = 3;
+                      throw value;
+                    } else if (arg0 === 2) {
+                      c5 = 3;
+                      const obj3 = { value, done: true };
+                      return obj3;
+                    } else {
+                      let timeout;
+                      closure_1 = tmp;
+                      _throwOnTimeout._pendingCount = _throwOnTimeout._pendingCount + 1;
+                      _throwOnTimeout._intervalCount = _throwOnTimeout._intervalCount + 1;
+                      c3 = 1;
+                      if (undefined === _throwOnTimeout._timeout) {
+                        let _defaultResult;
+                        if (undefined === config.timeout) {
+                          _defaultResult = closure_2_1();
+                        }
+                        c4 = 2;
+                        c5 = 1;
+                        const obj4 = { value: _defaultResult, done: false };
+                        return obj4;
+                      }
+                      const _default = _throwOnTimeout(closure_1[6]).default;
+                      const resolved = Promise.resolve(closure_2_1());
+                      if (undefined === config.timeout) {
+                        timeout = _throwOnTimeout._timeout;
+                      } else {
+                        timeout = tmp21.timeout;
+                      }
+                      _defaultResult = _default(resolved, timeout, () => {
+                        if (undefined === throwOnTimeout.throwOnTimeout) {
+                          throwOnTimeout = _throwOnTimeout._throwOnTimeout;
+                        } else {
+                          throwOnTimeout = tmp.throwOnTimeout;
+                        }
+                        if (throwOnTimeout) {
+                          closure_1_1(closure_3_8);
+                        }
+                      });
+                    }
+                  } else {
+                    if (1 === tmp4) {
+                      c3 = 0;
+                      closure_1(throwOnTimeout);
+                    } else if (arg0 === 1) {
+                      c5 = 3;
+                      throw value;
+                    } else if (arg0 === 2) {
+                      c3 = 0;
+                      c5 = 3;
+                      const obj = { value, done: true };
+                      return obj;
+                    } else {
+                      _throwOnTimeout(value);
+                      c3 = 0;
+                    }
+                    _throwOnTimeout._next();
+                    c5 = 3;
+                    return { value: "IconComponent", done: null };
+                  }
+                } catch (tmp26) {
+                  throwOnTimeout = tmp26;
+                  if (0 === c3) {
+                    c5 = 3;
+                    throw tmp26;
+                  } else {
+                    c4 = 1;
+                  }
+                }
+              }
+            });
+            const _queue = closure_3._queue;
+            _queue.enqueue(function run() {
+              return closure_0(...arguments);
+            }, closure_2);
+            closure_3._tryToStartAnother();
+            closure_3.emit("add");
+          });
+          c6 = 3;
+          let obj = { value: promise, done: true };
+          return obj;
         }
-        return self;
+      } catch (tmp12) {
+        c6 = 3;
+        throw tmp12;
       }
-    } else {
-      return self;
     }
+  })();
+  iter.next();
+  return iter;
+});
+items[11] = entry;
+const entry1 = {
+  key: "addAll",
+  value: function addAll(arg0, arg1) {
+    return closure_3(...arguments);
   }
-  removeAllListeners(arg0) {
-    const self = this;
-    const tmp = arg0;
-    if (tmp) {
-      let sum = arg0;
-      if (c1) {
-        sum = c1 + arg0;
-      }
-      if (self._events[sum]) {
-        const diff = self._eventsCount - 1;
-        self._eventsCount = diff;
-        if (0 == diff) {
-          self._events = Object.create(Events.prototype);
-        } else {
-          delete self._events[tmp3];
-        }
+};
+_false = _asyncToGenerator(async function(arg0, arg1) {
+  const self = this;
+  closure_1 = arg0;
+  closure_2 = arg1;
+  let c3 = 0;
+  return (async (arg0, value) => {
+    if (c3 === 2) {
+      c3 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        let obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
       }
     } else {
-      self._events = Object.create(Events.prototype);
-      self._eventsCount = 0;
+      try {
+        c3 = 2;
+        if (arg0 === 1) {
+          c3 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c3 = 3;
+          let obj3 = { value, done: true };
+          return obj3;
+        } else {
+          let closure_0 = closure_2;
+          closure_1 = self;
+          const tmp6 = globalThis;
+          c3 = 3;
+          let obj = {
+            value: Promise.all(closure_1.map((() => {
+                    closure_0 = closure_1_2(function*(arg0, value) {
+                      closure_0 = arg0;
+                      if (set === 2) {
+                        set = 3;
+                        throw new TypeError("Generator functions may not be called on executing generators");
+                      } else if (tmp2 === 3) {
+                        if (arg0 === 1) {
+                          throw value;
+                        } else if (arg0 === 2) {
+                          const obj2 = { value, done: true };
+                          return obj2;
+                        } else {
+                          return { value: "IconComponent", done: null };
+                        }
+                      } else {
+                        try {
+                          set = 2;
+                          if (arg0 === 1) {
+                            set = 3;
+                            throw value;
+                          } else if (arg0 === 2) {
+                            set = 3;
+                            const obj3 = { value, done: true };
+                            return obj3;
+                          } else {
+                            set = 3;
+                            const obj = { value: set.add(closure_0, closure_0), done: true };
+                            return obj;
+                          }
+                        } catch (tmp6) {
+                          set = 3;
+                          throw tmp6;
+                        }
+                      }
+                    });
+                    return function(arg0) {
+                      return closure_0(...arguments);
+                    };
+                  })())),
+            done: true
+          };
+          return obj;
+        }
+      } catch (tmp7) {
+        c3 = 3;
+        throw tmp7;
+      }
+    }
+  })();
+});
+items[12] = entry1;
+items[13] = {
+  key: "start",
+  value: function start() {
+    const self = this;
+    if (this._isPaused) {
+      self._isPaused = false;
+      self._processQueue();
     }
     return self;
   }
-}
-EventEmitter.prototype.off = EventEmitter.prototype.removeListener;
-EventEmitter.prototype.addListener = EventEmitter.prototype.on;
-EventEmitter.prefixed = str;
-EventEmitter.EventEmitter = EventEmitter;
-if (undefined !== module) {
-  module.exports = EventEmitter;
-}
+};
+items[14] = {
+  key: "pause",
+  value: function pause() {
+    this._isPaused = true;
+  }
+};
+items[15] = {
+  key: "clear",
+  value: function clear() {
+    const _queueClass = new this._queueClass();
+    this._queue = _queueClass;
+  }
+};
+const entry2 = {
+  key: "onEmpty",
+  value: function onEmpty() {
+    return closure_2(...arguments);
+  }
+};
+closure_2 = _asyncToGenerator(async function() {
+  let self = this;
+  let c1 = 0;
+  return (async function(arg0, value) {
+    if (c1 === 2) {
+      c1 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        return { value, done: true };
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        c1 = 2;
+        if (arg0 === 1) {
+          c1 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c1 = 3;
+          return { value, done: true };
+        } else {
+          let closure_0 = self;
+          if (0 !== self._queue.size) {
+            self = this;
+            const self2 = this;
+            c1 = 3;
+            const obj = {
+              value: new Promise((arg0) => {
+                        _resolveEmpty = arg0;
+                        _resolveEmpty = _resolveEmpty._resolveEmpty;
+                        _resolveEmpty._resolveEmpty = () => {
+                          _resolveEmpty();
+                          closure_0();
+                        };
+                      }),
+              done: true
+            };
+            return obj;
+          } else {
+            c1 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        }
+      } catch (tmp7) {
+        c1 = 3;
+        throw tmp7;
+      }
+    }
+  })();
+});
+items[16] = entry2;
+const entry3 = {
+  key: "onIdle",
+  value: function onIdle() {
+    return closure_1(...arguments);
+  }
+};
+_asyncToGenerator(async function() {
+  let self = this;
+  let c1 = 0;
+  return (async function(arg0, value) {
+    if (c1 === 2) {
+      c1 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        return { value, done: true };
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        c1 = 2;
+        if (arg0 === 1) {
+          c1 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c1 = 3;
+          return { value, done: true };
+        } else {
+          let closure_0 = self;
+          if (0 === self._pendingCount) {
+            if (0 === self._queue.size) {
+              c1 = 3;
+              return { value: "IconComponent", done: null };
+            }
+          }
+          self = this;
+          const self2 = this;
+          c1 = 3;
+          const obj = {
+            value: new Promise((arg0) => {
+                    _resolveIdle = arg0;
+                    _resolveIdle = _resolveIdle._resolveIdle;
+                    _resolveIdle._resolveIdle = () => {
+                      _resolveIdle();
+                      closure_0();
+                    };
+                  }),
+            done: true
+          };
+          return obj;
+        }
+      } catch (tmp6) {
+        c1 = 3;
+        throw tmp6;
+      }
+    }
+  })();
+});
+items[17] = entry3;
+items[18] = {
+  key: "size",
+  get() {
+    return this._queue.size;
+  }
+};
+items[19] = {
+  key: "sizeBy",
+  value: function sizeBy(arg0) {
+    const _queue = this._queue;
+    return _queue.filter(arg0).length;
+  }
+};
+items[20] = {
+  key: "pending",
+  get() {
+    return this._pendingCount;
+  }
+};
+items[21] = {
+  key: "isPaused",
+  get() {
+    return this._isPaused;
+  }
+};
+items[22] = {
+  key: "timeout",
+  get() {
+    return this._timeout;
+  },
+  set(_timeout) {
+    this._timeout = _timeout;
+  }
+};
+
+export default _createClass(PQueue, items);

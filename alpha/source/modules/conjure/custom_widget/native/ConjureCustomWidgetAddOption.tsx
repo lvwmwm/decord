@@ -1,18 +1,18 @@
-// Module ID: 14371
-// Function ID: 14372
+// Module ID: 14376
+// Function ID: 14377
 // Name: ConjureCustomWidgetAddOption
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 14372, 5210, 14373, 8953, 12343, 1128, 3830, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 14377, 5210, 14378, 8953, 12345, 1128, 3830, 2]
 
-// Module 14371 (ConjureCustomWidgetAddOption)
+// Module 14376 (ConjureCustomWidgetAddOption)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5210 */;
-import MagicWandIcon from "MagicWandIcon" /* 12343 */;
-import ConjureCustomWidget from "ConjureCustomWidget" /* 14372 */;
-import ConjureCustomWidgetSheet from "ConjureCustomWidgetSheet" /* 14373 */;
+import MagicWandIcon from "MagicWandIcon" /* 12345 */;
+import ConjureCustomWidget from "ConjureCustomWidget" /* 14377 */;
+import ConjureCustomWidgetSheet from "ConjureCustomWidgetSheet" /* 14378 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

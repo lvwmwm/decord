@@ -1,178 +1,48 @@
 // Module ID: 12664
 // Function ID: 12665
-// Dependencies: [12629, 12574, 12665]
-// Exports: generateIteratee
+// Dependencies: [12576, 12579, 12578, 12584]
+// Exports: addConsoleInstrumentationHandler
 
 // Module 12664
-import _mod12665 from "module_12665" /* 12665 */;
-import module_12629 from "module_12629" /* 12629 */;
+import _mod12576 from "module_12576" /* 12576 */;
+import _mod12579 from "module_12579" /* 12579 */;
 
-const require = globalThis.__r;
-let _require, stacktrace;
-
-
-export const generateIteratee = function generateIteratee(arg0) {
-  let closure_2;
-  let require;
-  ({ isBrowser: require, root: dependencyMap, prefix: closure_2 } = arg0);
-  return (filename) => {
-    if (filename.filename) {
-      const obj = /^[a-zA-Z]:\\/;
-      let isMatch = obj.test(filename.filename);
-      if (!isMatch) {
-        filename = filename.filename;
-        let hasItem = filename.includes("\\");
-        if (hasItem) {
-          const filename2 = filename.filename;
-          hasItem = !filename2.includes("/");
-        }
-        isMatch = hasItem;
-      }
-      const tmp5 = closure_0;
-      if (tmp5) {
-        if (root) {
-          const filename1 = filename.filename;
-          if (0 === filename1.indexOf(root)) {
-            filename.filename = filename1.replace(root, prefix);
-          }
-        }
-      } else if (isMatch) {
-        let replaced;
-        let relativeResult;
-        if (isMatch) {
-          const str5 = filename.filename.replace(/^[a-zA-Z]:/, "");
-          replaced = str5.replace(/\\/g, "/");
-        } else {
-          replaced = str3;
-        }
-        const obj2 = _mod12665;
-        if (root) {
-          relativeResult = obj2.relative(tmp7, replaced);
-        } else {
-          relativeResult = obj2.basename(replaced);
-        }
-        const _HermesInternal = HermesInternal;
-        filename.filename = "" + prefix + relativeResult;
-      }
-      return filename;
-    } else {
-      return filename;
-    }
-  };
-};
-export const rewriteFramesIntegration = module_12629.defineIntegration(() => {
-  let closure_0;
-  let prefix;
-  let root;
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  let fn;
-  ({ prefix, root } = obj);
-  if (!prefix) {
-    prefix = "app:///";
-  }
-  const tmp = _require;
-  let tmp2 = root;
-  fn = obj.iteratee;
-  const tmp3 = "window" in require("module_12574").GLOBAL_OBJ && undefined !== tmp(tmp2[1]).GLOBAL_OBJ.window;
-  if (!fn) {
-    _require = tmp3;
-    fn = (filename) => {
-      if (filename.filename) {
-        const obj = /^[a-zA-Z]:\\/;
-        let isMatch = obj.test(filename.filename);
-        if (!isMatch) {
-          filename = filename.filename;
-          let hasItem = filename.includes("\\");
-          if (hasItem) {
-            const filename2 = filename.filename;
-            hasItem = !filename2.includes("/");
-          }
-          isMatch = hasItem;
-        }
-        const tmp5 = closure_0;
-        if (tmp5) {
-          if (root) {
-            const filename1 = filename.filename;
-            if (0 === filename1.indexOf(root)) {
-              filename.filename = filename1.replace(root, prefix);
+let tmp;
+const _mod12578 = tmp(12578);
+function instrumentConsole() {
+  let tmp = require;
+  let tmp2 = dependencyMap;
+  if ("console" in _mod12579.GLOBAL_OBJ) {
+    const CONSOLE_LEVELS = _mod12578.CONSOLE_LEVELS;
+    const item = CONSOLE_LEVELS.forEach((item) => {
+      let closure_0 = item;
+      let tmp = closure_0;
+      let tmp2 = closure_1;
+      if (item in closure_0(closure_1[1]).GLOBAL_OBJ.console) {
+        const tmpResult = tmp(tmp2[3]);
+        tmpResult.fill(tmp(tmp2[1]).GLOBAL_OBJ.console, item, (arg0) => {
+          _mod12578.originalConsoleMethods[level] = arg0;
+          return () => {
+            const items = [...arguments];
+            const obj = { args: items, level };
+            const obj2 = level(closure_2_1[0]);
+            obj2.triggerHandlers("console", obj);
+            const obj3 = level(closure_2_1[2]).originalConsoleMethods[level];
+            const tmp = level;
+            const tmp2 = closure_2_1;
+            if (obj3) {
+              obj3.apply(tmp(tmp2[1]).GLOBAL_OBJ.console, items);
             }
-          }
-        } else if (isMatch) {
-          let replaced;
-          let relativeResult;
-          if (isMatch) {
-            const str5 = filename.filename.replace(/^[a-zA-Z]:/, "");
-            replaced = str5.replace(/\\/g, "/");
-          } else {
-            replaced = str3;
-          }
-          const obj2 = _mod12665;
-          if (root) {
-            relativeResult = obj2.relative(tmp7, replaced);
-          } else {
-            relativeResult = obj2.basename(replaced);
-          }
-          const _HermesInternal = HermesInternal;
-          filename.filename = "" + prefix + relativeResult;
-        }
-        return filename;
-      } else {
-        return filename;
-      }
-    };
-  }
-  let obj2 = {
-    name: "RewriteFrames",
-    processEvent(exception) {
-      function _processExceptionsEvent(exception) {
-        let obj2;
-        let values;
-        try {
-          let obj = { exception: obj2 };
-          let merged = Object.assign(exception);
-          obj2 = {
-            values: values.map((stacktrace) => {
-                let mapped;
-                const obj = {};
-                const merged = Object.assign(stacktrace);
-                stacktrace = stacktrace.stacktrace;
-                if (stacktrace) {
-                  const stacktrace2 = stacktrace.stacktrace;
-                  const obj2 = { frames: mapped };
-                  const merged1 = Object.assign(stacktrace2);
-                  mapped = stacktrace2 && stacktrace2.frames;
-                  if (mapped) {
-                    const frames = stacktrace2.frames;
-                    mapped = frames.map((item) => closure_1_0(item));
-                  }
-                  stacktrace = { stacktrace: obj2 };
-                  const obj3 = { stacktrace: obj2 };
-                }
-                const merged2 = Object.assign(stacktrace);
-                return obj;
-              })
           };
-          let merged1 = Object.assign(exception.exception);
-          values = exception.exception.values;
-          return obj;
-        } catch (err) {
-          return exception;
-        }
+        });
       }
-      exception = exception.exception;
-      if (exception) {
-        const _Array = Array;
-        exception = Array.isArray(exception.exception.values);
-      }
-      let tmp2 = exception;
-      if (exception) {
-        tmp2 = _processExceptionsEvent(exception);
-      }
-      return tmp2;
-    }
-  };
-  return obj2;
-});
+    });
+  }
+}
+
+export const addConsoleInstrumentationHandler = function addConsoleInstrumentationHandler(arg0) {
+  const obj = _mod12576;
+  obj.addHandler("console", arg0);
+  const obj2 = _mod12576;
+  obj2.maybeInstrument("console", instrumentConsole);
+};

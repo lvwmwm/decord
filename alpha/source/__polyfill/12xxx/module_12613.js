@@ -1,41 +1,42 @@
 // Module ID: 12613
 // Function ID: 12614
-// Dependencies: [12601, 12573]
-// Exports: parseSampleRate
+// Dependencies: [12585]
+// Exports: handleCallbackErrors
 
 // Module 12613
-import _mod12601 from "module_12601" /* 12601 */;
+import _mod12585 from "module_12585" /* 12585 */;
 
 
-export const parseSampleRate = function parseSampleRate(flag) {
-  if (typeof flag === "boolean") {
-    const _Number = Number;
-    return Number(flag);
-  } else {
-    let parsed = flag;
-    if (typeof flag === "string") {
-      const _parseFloat = parseFloat;
-      parsed = parseFloat(flag);
+export const handleCallbackErrors = function handleCallbackErrors(fn, fn2) {
+  function maybeHandlePromiseRejection(promise, fn2, fn) {
+    let closure_0 = fn2;
+    let closure_1 = fn;
+    const obj = _mod12585;
+    if (obj.isThenable(promise)) {
+      return promise.then((result) => {
+        closure_1();
+        return result;
+      }, (arg0) => {
+        closure_0(arg0);
+        closure_1();
+        throw arg0;
+      });
+    } else {
+      fn();
+      return promise;
     }
-    if (typeof parsed === "number") {
-      const _isNaN = isNaN;
-      if (!isNaN(parsed)) {
-        if (parsed >= 0) {
-          if (parsed <= 1) {
-            return parsed;
-          }
-        }
-      }
-    }
-    const tmp = require;
-    if (_mod12601.DEBUG_BUILD) {
-      const logger = tmp(12573).logger;
-      const _JSON = JSON;
-      const warn = logger.warn;
-      const json = JSON.stringify(flag);
-      const _JSON2 = JSON;
-      const _HermesInternal = HermesInternal;
-      warn("[Tracing] Given sample rate is invalid. Sample rate must be a boolean or a number between 0 and 1. Got " + json + " of type " + JSON.stringify(typeof flag) + ".");
-    }
+  }
+  fn = arg2;
+  if (arg2 === undefined) {
+    fn = function t() {
+
+    };
+  }
+  try {
+    return maybeHandlePromiseRejection(fn(), fn2, fn);
+  } catch (tmp2) {
+    fn2(tmp2);
+    fn();
+    throw tmp2;
   }
 };

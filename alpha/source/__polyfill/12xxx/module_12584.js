@@ -1,205 +1,274 @@
 // Module ID: 12584
 // Function ID: 12585
-// Dependencies: [12574, 12582, 12579]
-// Exports: addContextToFrame, addExceptionMechanism, addExceptionTypeValue, arrayify, checkOrSetAlreadyCaught, getEventDescription, parseSemver, uuid4
+// Dependencies: [12577, 12578, 12585, 12586, 12587]
+// Exports: dropUndefinedKeys, extractExceptionKeysForMessage, fill, getOriginalFunction, objectify, urlEncode
 
 // Module 12584
-import _mod12574 from "module_12574" /* 12574 */;
-import _mod12579 from "module_12579" /* 12579 */;
-import _mod12582 from "module_12582" /* 12582 */;
+import _mod12577 from "module_12577" /* 12577 */;
+import _mod12585 from "module_12585" /* 12585 */;
+import _mod12587 from "module_12587" /* 12587 */;
 
-const re2 = /^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$/;
+let hasOwnProperty;
 
-export const addContextToFrame = function addContextToFrame(arr, lineno) {
-  let num = arg2;
-  if (arg2 === undefined) {
-    num = 5;
-  }
-  if (undefined !== lineno.lineno) {
-    const _Math2 = Math;
-    const _Math3 = Math;
-    const bound = Math.max(Math.min(length - 1, lineno.lineno - 1), 0);
-    const _Math4 = Math;
-    const substr = arr.slice(Math.max(0, bound - num), bound);
-    lineno.pre_context = substr.map((item) => {
-      const obj = _mod12582;
-      return obj.snipLine(item, 0);
-    });
-    const _Math5 = Math;
-    const bound1 = Math.min(length - 1, bound);
-    let num2 = lineno.colno;
-    const snipLine = _mod12582.snipLine;
-    _mod12582;
-    const tmp8 = arr[bound1];
-    if (!num2) {
-      num2 = 0;
-    }
-    lineno.context_line = snipLine(tmp8, num2);
-    const _Math = Math;
-    const substr1 = arr.slice(Math.min(bound + 1, length), bound + 1 + num);
-    lineno.post_context = substr1.map((item) => {
-      const obj = _mod12582;
-      return obj.snipLine(item, 0);
-    });
-  }
-};
-export const addExceptionMechanism = function addExceptionMechanism(exception, data) {
-  let first;
-  if (exception.exception) {
-    if (exception.exception.values) {
-      first = exception.exception.values[0];
-    }
-  }
-  if (first) {
-    const mechanism = first.mechanism;
-    const obj = { type: "generic", handled: true };
-    const merged = Object.assign(mechanism);
-    const merged1 = Object.assign(data);
-    first.mechanism = obj;
-    if (data) {
-      if ("data" in data) {
-        const obj2 = {};
-        const merged2 = Object.assign(tmp9);
-        const merged3 = Object.assign(data.data);
-        first.mechanism.data = obj2;
-      }
-    }
-  }
-};
-export const addExceptionTypeValue = function addExceptionTypeValue(exception, arg1, arg2) {
-  const tmp = exception.exception || {};
-  exception.exception = tmp;
-  const tmp2 = tmp.values || [];
-  tmp.values = tmp2;
-  const iter = tmp2[0] || {};
-  tmp2[0] = iter;
-  if (!iter.value) {
-    iter.value = arg1 || "";
-  }
-  if (!iter.type) {
-    iter.type = arg2 || "Error";
-  }
-};
-export const arrayify = function arrayify(arg0) {
-  let tmp = arg0;
-  if (!Array.isArray(arg0)) {
-    const items = [arg0];
-    tmp = items;
-  }
-  return tmp;
-};
-export const checkOrSetAlreadyCaught = function checkOrSetAlreadyCaught(__sentry_captured__) {
-  function isAlreadyCaptured(__sentry_captured__) {
-    try {
-      return __sentry_captured__.__sentry_captured__;
-    } catch (err) {
-    }
-  }
-  if (isAlreadyCaptured(__sentry_captured__)) {
-    return true;
-  } else {
-    try {
-      const obj = _mod12579;
-      const result = obj.addNonEnumerableProperty(__sentry_captured__, "__sentry_captured__", true);
-    } catch (err) {
-    }
-    return false;
-  }
-};
-export const getEventDescription = function getEventDescription(exception) {
-  let event_id;
-  let message;
-  ({ message, event_id } = exception);
-  if (message) {
-    return message;
-  } else {
-    let tmp2;
-    let first;
-    if (exception.exception) {
-      if (exception.exception.values) {
-        first = exception.exception.values[0];
-      }
-    }
-    if (first) {
-      if (first.type) {
-        let combined;
-        if (first.value) {
-          const _HermesInternal = HermesInternal;
-          combined = "" + first.type + ": " + first.value;
-        }
-        tmp2 = combined;
-      }
-      combined = first.type || first.value || event_id || "<unknown>";
-    } else {
-      tmp2 = event_id || "<unknown>";
-    }
-    return tmp2;
-  }
-};
-export const parseSemver = function parseSemver(str) {
-  let tmp5;
-  let tmp6;
-  let tmp7;
-  const tmp = str.match(re2) || [];
-  str = tmp[1];
-  const _parseInt = parseInt;
-  if (!str) {
-    str = "";
-  }
-  const _parseIntResult = _parseInt(str, 10);
-  let str2 = tmp[2];
-  const _parseInt2 = parseInt;
-  if (!str2) {
-    str2 = "";
-  }
-  const _parseInt2Result = _parseInt2(str2, 10);
-  let str3 = tmp[3];
-  const _parseInt3 = parseInt;
-  if (!str3) {
-    str3 = "";
-  }
-  const _parseInt3Result = _parseInt3(str3, 10);
-  const obj = { buildmetadata: tmp[5], major: tmp5, minor: tmp6, patch: tmp7, prerelease: tmp[4] };
-  tmp5 = undefined;
-  if (!isNaN(_parseIntResult)) {
-    tmp5 = _parseIntResult;
-  }
-  tmp6 = undefined;
-  if (!isNaN(_parseInt2Result)) {
-    tmp6 = _parseInt2Result;
-  }
-  tmp7 = undefined;
-  if (!isNaN(_parseInt3Result)) {
-    tmp7 = _parseInt3Result;
-  }
-  return obj;
-};
-export const uuid4 = function uuid4() {
-  const GLOBAL_OBJ = _mod12574.GLOBAL_OBJ;
-  const obj = GLOBAL_OBJ.crypto || GLOBAL_OBJ.msCrypto;
-  function getRandomByte() {
-    return 16 * Math.random();
-  }
+function addNonEnumerableProperty(arg0, arg1, value) {
   try {
-    if (obj) {
-      if (obj.randomUUID) {
-        let str = obj.randomUUID();
-        return str.replace(/-/g, "");
-      }
+    const _Object = Object;
+    const obj = { value, writable: true, configurable: true };
+    Object.defineProperty(arg0, arg1, obj);
+  } catch (err) {
+    const tmp4 = require;
+    if (_mod12577.DEBUG_BUILD) {
+      const logger = tmp4(12578).logger;
+      const _HermesInternal = HermesInternal;
+      logger.log("Failed to add non-enumerable property \"" + arg1 + "\" to object", arg0);
     }
-    const getRandomValues = obj && obj.getRandomValues;
-    if (getRandomValues) {
-      getRandomByte = function getRandomByte() {
-        const uint8Array = new Uint8Array(1);
-        const randomValues = obj.getRandomValues(uint8Array);
-        return uint8Array[0];
-      };
-    }
-    const replace = "10000000100040008000100000000000".replace;
-    return "10000000100040008000100000000000".replace(/[018]/g, (arg0) => {
-      const str = arg0 ^ (15 & getRandomByte()) >> arg0 / 4;
-      return str.toString(16);
-    });
+  }
+}
+function markFunctionWrapped(arg0, arg1) {
+  try {
+    const prototype = arg1.prototype || {};
+    arg1.prototype = prototype;
+    arg0.prototype = prototype;
+    addNonEnumerableProperty(arg0, "__sentry_original__", arg1);
   } catch (err) {
   }
+}
+function convertToPlainObject(type) {
+  const obj = _mod12585;
+  if (obj.isError(type)) {
+    const error = { message: null, name: null, stack: null };
+    ({ message: obj6.message, name: obj6.name, stack: obj6.stack } = type);
+    if (typeof type === "object") {
+      let obj3;
+      if (null !== type) {
+        const obj2 = {};
+        obj3 = obj2;
+        const keys = Object.keys();
+        if (keys !== undefined) {
+          obj3 = obj2;
+          while (keys[tmp] !== undefined) {
+            let _Object2 = Object;
+            let hasOwnProperty2 = Object.prototype.hasOwnProperty;
+            if (!hasOwnProperty2.call(type, tmp17)) {
+              continue;
+            } else {
+              obj2[tmp17] = type[tmp17];
+              continue;
+            }
+            continue;
+          }
+        }
+      }
+      const merged = Object.assign(obj3);
+      return error;
+    }
+    obj3 = {};
+  } else {
+    const tmp2Result = _mod12585;
+    if (tmp2Result.isEvent(type)) {
+      const obj4 = { type: type.type, target: serializeEventTarget(type.target), currentTarget: serializeEventTarget(type.currentTarget) };
+      if (typeof type === "object") {
+        let obj7;
+        if (null !== type) {
+          const obj5 = {};
+          obj7 = obj5;
+          const keys1 = Object.keys();
+          if (keys1 !== undefined) {
+            obj7 = obj5;
+            while (keys1[tmp] !== undefined) {
+              let _Object = Object;
+              hasOwnProperty = Object.prototype.hasOwnProperty;
+              if (!hasOwnProperty.call(type, tmp8)) {
+                continue;
+              } else {
+                obj5[tmp8] = type[tmp8];
+                continue;
+              }
+              continue;
+            }
+          }
+        }
+        const merged1 = Object.assign(obj7);
+        let isInstanceOfResult = typeof globalThis.CustomEvent !== "undefined";
+        if (typeof globalThis.CustomEvent !== "undefined") {
+          const CustomEvent2 = globalThis.CustomEvent;
+          const tmp2Result2 = _mod12585;
+          isInstanceOfResult = tmp2Result2.isInstanceOf(type, globalThis.CustomEvent);
+        }
+        if (isInstanceOfResult) {
+          obj4.detail = type.detail;
+        }
+        return obj4;
+      }
+      obj7 = {};
+    } else {
+      return type;
+    }
+  }
+}
+function serializeEventTarget(arg0) {
+  try {
+    let htmlTreeAsStringResult;
+    const obj = _mod12585;
+    const tmp2 = require;
+    if (obj.isElement(arg0)) {
+      const tmp2Result = tmp2(12586);
+      htmlTreeAsStringResult = tmp2Result.htmlTreeAsString(arg0);
+    } else {
+      const _Object = Object;
+      htmlTreeAsStringResult = toString.call(arg0);
+    }
+    return htmlTreeAsStringResult;
+  } catch (err) {
+    return "<unknown>";
+  }
+}
+function _dropUndefinedKeys(arr, map) {
+  function isPojo(arr) {
+    const obj = map(items[2]);
+    if (obj.isPlainObject(arr)) {
+      try {
+        const _Object = Object;
+        const name = Object.getPrototypeOf(arr).constructor.name;
+        return !name || "Object" === tmp2;
+      } catch (err) {
+        return true;
+      }
+    } else {
+      return false;
+    }
+  }
+  if (isPojo(arr)) {
+    const value = map.get(arr);
+    if (undefined !== value) {
+      return value;
+    } else {
+      let obj = {};
+      const result = map.set(arr, obj);
+      let _Object = Object;
+      const ownPropertyNames = Object.getOwnPropertyNames(arr);
+      for (const item10030 of ownPropertyNames) {
+        let tmp11 = item10030;
+        if (undefined !== arr[item10030]) {
+          obj[tmp11] = _dropUndefinedKeys(arr[tmp11], map);
+        }
+        continue;
+      }
+      return obj;
+    }
+  } else {
+    const _Array = Array;
+    if (Array.isArray(arr)) {
+      const value2 = map.get(arr);
+      if (undefined !== value2) {
+        return value2;
+      } else {
+        const items = [];
+        const result1 = map.set(arr, items);
+        const item = arr.forEach((item) => {
+          items.push(_dropUndefinedKeys(item, map));
+        });
+        return items;
+      }
+    } else {
+      return arr;
+    }
+  }
+}
+
+export { addNonEnumerableProperty };
+export { convertToPlainObject };
+export const dropUndefinedKeys = function dropUndefinedKeys(arr) {
+  map = new Map();
+  return _dropUndefinedKeys(arr, map);
+};
+export const extractExceptionKeysForMessage = function extractExceptionKeysForMessage(arg0) {
+  let num = arg1;
+  if (arg1 === undefined) {
+    num = 40;
+  }
+  const keys = Object.keys(convertToPlainObject(arg0));
+  const sorted = keys.sort();
+  const first = keys[0];
+  if (first) {
+    if (first.length >= num) {
+      const obj3 = _mod12587;
+      return obj3.truncate(first, num);
+    } else {
+      let length = keys.length;
+      if (length > 0) {
+        const substr = keys.slice(0, length);
+        const joined = substr.join(", ");
+        while (joined.length > num) {
+          length = length - 1;
+        }
+        let truncateResult = joined;
+        if (length !== keys.length) {
+          const obj2 = _mod12587;
+          truncateResult = obj2.truncate(joined, num);
+        }
+        return truncateResult;
+      }
+      return "";
+    }
+  } else {
+    return "[object has no keys]";
+  }
+};
+export const fill = function fill(arg0, arg1, fn) {
+  if (arg1 in arg0) {
+    const tmp3 = fn(arg0[arg1]);
+    if (typeof tmp3 === "function") {
+      markFunctionWrapped(tmp3, arg0[arg1]);
+    }
+    try {
+      arg0[arg1] = tmp3;
+    } catch (err) {
+      const tmp4 = require;
+      if (_mod12577.DEBUG_BUILD) {
+        const logger = tmp4(12578).logger;
+        const _HermesInternal = HermesInternal;
+        logger.log("Failed to replace method \"" + arg1 + "\" in object", arg0);
+      }
+    }
+  }
+};
+export const getOriginalFunction = function getOriginalFunction(__sentry_original__) {
+  return __sentry_original__.__sentry_original__;
+};
+export { markFunctionWrapped };
+export const objectify = function objectify(arg0) {
+  let string;
+  if (null == arg0 === true) {
+    const _String = String;
+    const self3 = this;
+    const self4 = this;
+    string = new String(arg0);
+  } else {
+    const tmp = typeof arg0 === "symbol" || typeof arg0 === "bigint";
+    if (tmp === true) {
+      const _Object = Object;
+      string = Object(arg0);
+    } else {
+      string = arg0;
+      const obj = _mod12585;
+      if (obj.isPrimitive(arg0) === true) {
+        const self = this;
+        const self2 = this;
+        string = new arg0.constructor(arg0);
+      }
+    }
+  }
+  return string;
+};
+export const urlEncode = function urlEncode(arg0) {
+  const entries = Object.entries(arg0);
+  const mapped = entries.map((item) => {
+    let tmp;
+    let tmp2;
+    [tmp, tmp2] = item;
+    const encodeURIComponentResult = encodeURIComponent(tmp);
+    return "" + encodeURIComponentResult + "=" + encodeURIComponent(tmp2);
+  });
+  return mapped.join("&");
 };

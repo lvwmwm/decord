@@ -1,7 +1,7 @@
 // Module ID: 10617
 // Function ID: 10618
 // Name: SearchableUserList
-// Dependencies: [32, 19, 17, 1392, 10616, 21, 4971, 587, 558, 576, 10618, 1388, 10619, 4978, 1128, 10620, 10622, 12919, 10625, 8993, 2]
+// Dependencies: [32, 19, 17, 1392, 10616, 21, 4971, 587, 558, 576, 10618, 1388, 10619, 4978, 1128, 10620, 10622, 12924, 10625, 8993, 2]
 
 // Module 10617 (SearchableUserList)
 import react_native from "react-native" /* 17 */;
@@ -30,7 +30,7 @@ let UserStore = UserStore_mod;
 const UserRowModes = UserRowConstants.UserRowModes;
 ({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { searchBarContainer: obj2, searchBar: { height: "emoji", minHeight: false }, searchBarRowContainer: obj3, noResults: obj4 };
+let obj = { searchBarContainer: obj2, searchBar: { height: "duration", minHeight: false }, searchBarRowContainer: obj3, noResults: obj4 };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 createStyles = createStyles.createStyles;
 obj3 = { paddingTop: nativeDefault.space.PX_8 };

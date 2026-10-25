@@ -1,9 +1,9 @@
-// Module ID: 10846
-// Function ID: 10847
+// Module ID: 10847
+// Function ID: 10848
 // Name: useTrackFavoritesGuildUpsellModalOpened
 // Dependencies: [19, 1087, 558, 576, 7253, 7278, 1267, 2]
 
-// Module 10846 (useTrackFavoritesGuildUpsellModalOpened)
+// Module 10847 (useTrackFavoritesGuildUpsellModalOpened)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;

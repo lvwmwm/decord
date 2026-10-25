@@ -1,9 +1,9 @@
-// Module ID: 13962
-// Function ID: 13963
+// Module ID: 13967
+// Function ID: 13968
 // Name: PremiumGiftAnalytics
 // Dependencies: [19, 1087, 558, 576, 10450, 10448, 1384, 1267, 1128, 10563, 2]
 
-// Module 13962 (PremiumGiftAnalytics)
+// Module 13967 (PremiumGiftAnalytics)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
@@ -56,7 +56,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGif
         if (cResult[7] !== basePurchaseAnalytics) {
           class E {
             constructor() {
-              return () => { /* body not rendered: F150852 */ };
+              return () => { /* body not rendered: F150883 */ };
             }
           }
           const items = [basePurchaseAnalytics, ref];
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGif
         } else {
           class E {
             constructor() {
-              return () => { /* body not rendered: F150852 */ };
+              return () => { /* body not rendered: F150883 */ };
             }
           }
           tmp10 = cResult[9];

@@ -1,10 +1,10 @@
-// Module ID: 10854
-// Function ID: 10855
+// Module ID: 10855
+// Function ID: 10856
 // Name: FavoritesCleanup
 // Dependencies: [5, 4827, 4823, 4903, 6771, 4826, 1098, 1211, 7410, 1104, 6822, 2]
 // Exports: getFavoritesCleanupCandidates, loadFavoriteThreadsForCleanup
 
-// Module 10854 (FavoritesCleanup)
+// Module 10855 (FavoritesCleanup)
 import Constants from "Constants" /* 1098 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;

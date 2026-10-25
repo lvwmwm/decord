@@ -1,15 +1,15 @@
-// Module ID: 17310
-// Function ID: 17311
+// Module ID: 17315
+// Function ID: 17316
 // Name: NotifyFriendsOnProfileUpdateSetting
-// Dependencies: [8332, 11205, 1128, 2736, 4799, 17311, 2]
+// Dependencies: [8332, 11206, 1128, 2736, 4799, 17316, 2]
 
-// Module 17310 (NotifyFriendsOnProfileUpdateSetting)
+// Module 17315 (NotifyFriendsOnProfileUpdateSetting)
 import intl2 from "intl" /* 1128 */;
 import _modDef2736 from "module_2736" /* 2736 */;
 import UserSettings from "UserSettings" /* 4799 */;
 import SettingsConstants from "SettingsConstants" /* 8332 */;
-import NotifyFriendsOnProfileUpdateUtils from "NotifyFriendsOnProfileUpdateUtils" /* 17311 */;
-import SettingBuilders from "SettingBuilders" /* 11205 */;
+import NotifyFriendsOnProfileUpdateUtils from "NotifyFriendsOnProfileUpdateUtils" /* 17316 */;
+import SettingBuilders from "SettingBuilders" /* 11206 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

@@ -1,9 +1,9 @@
-// Module ID: 16033
-// Function ID: 16034
+// Module ID: 16038
+// Function ID: 16039
 // Name: SafetyHubViolationsContainer
-// Dependencies: [32, 19, 17, 7922, 7898, 1087, 21, 4971, 587, 558, 576, 7957, 1128, 5234, 14880, 11076, 9041, 7897, 11, 16034, 7899, 6672, 12827, 2002, 12831, 504, 1267, 12829, 2]
+// Dependencies: [32, 19, 17, 7922, 7898, 1087, 21, 4971, 587, 558, 576, 7957, 1128, 5234, 14885, 11077, 9041, 7897, 11, 16039, 7899, 6672, 12832, 2002, 12836, 504, 1267, 12834, 2]
 
-// Module 16033 (SafetyHubViolationsContainer)
+// Module 16038 (SafetyHubViolationsContainer)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -16,7 +16,7 @@ import SafetyHubUtils from "SafetyHubUtils" /* 7897 */;
 import SafetyHubModels from "SafetyHubModels" /* 7899 */;
 import WarningIcon2 from "WarningIcon" /* 7957 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 9041 */;
-import useSafetyHubClassifications from "useSafetyHubClassifications" /* 12829 */;
+import useSafetyHubClassifications from "useSafetyHubClassifications" /* 12834 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -122,7 +122,7 @@ function ClassificationDetail(classification) {
     onPress() {
       const obj = ModalActionCreatorsDefault;
       const obj2 = { classificationId: id, source: metroImportAll.StandingTab };
-      obj.pushLazy(asyncRequire(12827, dependencyMap.paths), obj2);
+      obj.pushLazy(asyncRequire(12832, dependencyMap.paths), obj2);
     },
     children: tmp12(closure_6, obj5)
   };
@@ -276,9 +276,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Safety
           }
           const tmp28 = unpackModuleId;
           if (opened) {
-            ChevronSmallDownIcon = tmp(14880).ChevronSmallUpIcon;
+            ChevronSmallDownIcon = tmp(14885).ChevronSmallUpIcon;
           } else {
-            ChevronSmallDownIcon = tmp(11076).ChevronSmallDownIcon;
+            ChevronSmallDownIcon = tmp(11077).ChevronSmallDownIcon;
           }
           const obj6 = { size: "md", style: tmp4.chevron };
           const tmp28Result = tmp28(ChevronSmallDownIcon, obj6);
@@ -367,9 +367,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Safety
   items1[1] = unpackModuleId(Text2, { variant: "text-xxs/normal", color: "text-muted", children: stringResult });
   items[1] = authStore2(metroRequire, obj4);
   if (opened) {
-    ChevronSmallDownIcon = tmp7(14880).ChevronSmallUpIcon;
+    ChevronSmallDownIcon = tmp7(14885).ChevronSmallUpIcon;
   } else {
-    ChevronSmallDownIcon = tmp7(11076).ChevronSmallDownIcon;
+    ChevronSmallDownIcon = tmp7(11077).ChevronSmallDownIcon;
   }
   const obj7 = { size: "md", style: tmp.chevron };
   items[2] = unpackModuleId(ChevronSmallDownIcon, obj7);
@@ -607,7 +607,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubV
   importDefault = tmp5[1];
   [tmp8, dependencyMap] = safetyHubAccountStanding(stateFromStores.useState(3), 2);
   const tmp7 = safetyHubAccountStanding(stateFromStores.useState(3), 2);
-  const obj3 = opened(12831);
+  const obj3 = opened(12836);
   safetyHubAccountStanding = obj3.useSafetyHubAccountStanding();
   const obj2 = stateFromStores;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -777,7 +777,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubV
   let obj11;
   let obj9;
   let status;
-  const f125377 = (classification) => {
+  const f125404 = (classification) => {
     const obj = { classification };
     return closure_1_11(ClassificationDetail, obj, classification.id);
   };
@@ -792,7 +792,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubV
   const tmp4 = first1(is_dsa_eligible.useState(3), 2);
   first1 = tmp4[0];
   is_dsa_eligible = tmp4[1];
-  let obj = classifications(12831);
+  let obj = classifications(12836);
   const safetyHubAccountStanding = obj.useSafetyHubAccountStanding();
   const items = [memo];
   const obj2 = classifications(504);
@@ -827,9 +827,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubV
   items3[0] = closure_11(closure_15, obj4);
   if (opened) {
     const obj5 = { style: tmp.separator };
-    const items4 = [closure_11(stateFromStores, obj5), memo.length > 0 && memo.map(f125377), , , ];
+    const items4 = [closure_11(stateFromStores, obj5), memo.length > 0 && memo.map(f125404), , , ];
     let tmp11Result = memo.length < classifications.length;
-    memo.length > 0 && memo.map(f125377);
+    memo.length > 0 && memo.map(f125404);
     if (tmp11Result) {
       const obj6 = { children: items5 };
       const obj7 = { style: tmp.separator };

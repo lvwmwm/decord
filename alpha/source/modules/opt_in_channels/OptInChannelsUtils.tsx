@@ -1,10 +1,10 @@
-// Module ID: 11249
-// Function ID: 11250
+// Module ID: 11250
+// Function ID: 11251
 // Name: OptInChannelsUtils
-// Dependencies: [19, 4823, 7207, 6771, 4913, 1392, 1087, 4830, 7643, 6705, 7324, 6827, 5604, 7208, 7637, 11250, 7206, 1114, 558, 576, 5001, 4807, 504, 1128, 2049, 11, 2]
+// Dependencies: [19, 4823, 7207, 6771, 4913, 1392, 1087, 4830, 7643, 6705, 7324, 6827, 5604, 7208, 7637, 11251, 7206, 1114, 558, 576, 5001, 4807, 504, 1128, 2049, 11, 2]
 // Exports: clearRecentChannels, getActiveAgoTimestamp, getFirstRouteFor, useFilterCategoriesByQuery
 
-// Module 11249 (OptInChannelsUtils)
+// Module 11250 (OptInChannelsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef2049 from "module_2049" /* 2049 */;
@@ -14,7 +14,7 @@ import fuzzysearchDefault from "fuzzysearch" /* 6827 */;
 import ReadStateActionCreators from "ReadStateActionCreators" /* 7206 */;
 import ChannelListState from "ChannelListState" /* 7637 */;
 import GuildSidebarConstants from "GuildSidebarConstants" /* 7643 */;
-import RecentChannelsActionCreators from "RecentChannelsActionCreators" /* 11250 */;
+import RecentChannelsActionCreators from "RecentChannelsActionCreators" /* 11251 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import GuildCategoryStore from "GuildCategoryStore" /* 7207 */;

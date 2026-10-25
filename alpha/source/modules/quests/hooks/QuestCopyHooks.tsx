@@ -1,10 +1,10 @@
-// Module ID: 14134
-// Function ID: 14135
+// Module ID: 14139
+// Function ID: 14140
 // Name: QuestCopyHooks
-// Dependencies: [5, 32, 19, 2068, 1392, 6710, 1087, 1394, 1128, 558, 576, 9570, 7796, 7798, 9589, 2067, 14135, 1991, 504, 14136, 9245, 9246, 6713, 9594, 1903, 11453, 14123, 9607, 7801, 7800, 2]
+// Dependencies: [5, 32, 19, 2068, 1392, 6710, 1087, 1394, 1128, 558, 576, 9570, 7796, 7798, 9589, 2067, 14140, 1991, 504, 14141, 9245, 9246, 6713, 9594, 1903, 11454, 14128, 9607, 7801, 7800, 2]
 // Exports: getQuestsInstructionsToWinReward, getRewardCodeRedemptionInstructions
 
-// Module 14134 (QuestCopyHooks)
+// Module 14139 (QuestCopyHooks)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
@@ -19,9 +19,9 @@ import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9246 */;
 import hooks_QuestHooks from "hooks/QuestHooks" /* 9570 */;
 import QuestRewardUtils from "QuestRewardUtils" /* 9589 */;
 import QuestCopyUtils from "QuestCopyUtils" /* 9594 */;
-import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 11453 */;
-import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 14123 */;
-import useInGameQuestConnectState from "useInGameQuestConnectState" /* 14136 */;
+import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 11454 */;
+import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 14128 */;
+import useInGameQuestConnectState from "useInGameQuestConnectState" /* 14141 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -42,7 +42,7 @@ let tmp2;
 const intl13 = tmp(1128);
 const utils_QuestUtils = tmp(7796);
 const GameProfileAnalyticUtils = tmp2(9245);
-const SponsoredQuestUtils = tmp(14135);
+const SponsoredQuestUtils = tmp(14140);
 function _getQuestsInstructionsToWinReward(arg0) {
   let applications;
   let currentUser;

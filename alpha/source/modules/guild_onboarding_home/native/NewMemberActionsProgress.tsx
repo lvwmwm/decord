@@ -1,10 +1,10 @@
-// Module ID: 17634
-// Function ID: 17635
+// Module ID: 17639
+// Function ID: 17640
 // Name: NewMemberActionsProgress
-// Dependencies: [19, 17, 4883, 7325, 8301, 4830, 4889, 21, 4971, 587, 558, 576, 5258, 573, 1405, 6908, 1114, 5234, 1128, 1202, 11560, 2]
+// Dependencies: [19, 17, 4883, 7325, 8301, 4830, 4889, 21, 4971, 587, 558, 576, 5258, 573, 1405, 6908, 1114, 5234, 1128, 1202, 11561, 2]
 // Exports: NewMemberActionsProgress
 
-// Module 17634 (NewMemberActionsProgress)
+// Module 17639 (NewMemberActionsProgress)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

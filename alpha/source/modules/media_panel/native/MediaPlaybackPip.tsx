@@ -1,17 +1,17 @@
-// Module ID: 18661
-// Function ID: 18662
+// Module ID: 18666
+// Function ID: 18667
 // Name: MediaPlaybackPip
-// Dependencies: [32, 19, 17, 4823, 6010, 4913, 1392, 1087, 18442, 21, 4971, 587, 558, 576, 5252, 5604, 504, 8758, 5234, 18662, 5258, 7566, 7347, 5052, 5206, 1128, 8913, 6928, 10657, 1267, 15797, 4888, 18659, 8767, 8765, 18663, 2]
+// Dependencies: [32, 19, 17, 4823, 6010, 4913, 1392, 1087, 18447, 21, 4971, 587, 558, 576, 5252, 5604, 504, 8758, 5234, 18667, 5258, 7566, 7347, 5052, 5206, 1128, 8913, 6928, 10657, 1267, 15802, 4888, 18664, 8767, 8765, 18668, 2]
 
-// Module 18661 (MediaPlaybackPip)
+// Module 18666 (MediaPlaybackPip)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import timing from "timing" /* 5206 */;
 import useChannelName from "useChannelName" /* 5604 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 7566 */;
-import MediaPlayerManagerDefault from "MediaPlayerManager" /* 15797 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18442 */;
+import MediaPlayerManagerDefault from "MediaPlayerManager" /* 15802 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18447 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -211,7 +211,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaI
           }
           const obj4 = { style: { flex: 1 }, children: items2 };
           const obj5 = { spacing: 20, speed: 0.2, children: tmp27 };
-          items2 = [closure_15(tmp(18662).Marquee, obj5), ];
+          items2 = [closure_15(tmp(18667).Marquee, obj5), ];
           const obj6 = { start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, locations: [0, 0.1, 0.2, 0.8, 0.9, 1], colors: items3, style: tmp4.infoContainerGradient };
           items3 = [token, `${tmp6}CC`, `${tmp6}00`, `${tmp6}00`, `${tmp6}CC`, token];
           items2[1] = closure_15(LinearGradientDefault, obj6);
@@ -346,7 +346,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaI
         if (memo) {
           const obj6 = { style: { flex: 1 }, children: items3 };
           const obj7 = { spacing: 20, speed: 0.2, children: tmp14 };
-          items3 = [closure_15(message(18662).Marquee, obj7), ];
+          items3 = [closure_15(message(18667).Marquee, obj7), ];
           const obj8 = { start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, locations: [0, 0.1, 0.2, 0.8, 0.9, 1], colors: items4, style: tmp.infoContainerGradient };
           items4 = [token, `${tmp5}CC`, `${tmp5}00`, `${tmp5}00`, `${tmp5}CC`, token];
           items3[1] = closure_15(first(5258), obj8);

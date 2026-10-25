@@ -1,10 +1,10 @@
-// Module ID: 13654
-// Function ID: 13655
+// Module ID: 13659
+// Function ID: 13660
 // Name: AcceptInviteContainer
-// Dependencies: [5, 19, 4883, 4845, 5700, 1087, 4889, 21, 4971, 587, 1505, 504, 6924, 1405, 7190, 2002, 7808, 8906, 7428, 8866, 10015, 13655, 7221, 5037, 2]
+// Dependencies: [5, 19, 4883, 4845, 5700, 1087, 4889, 21, 4971, 587, 1505, 504, 6924, 1405, 7190, 2002, 7808, 8906, 7428, 8866, 10015, 13660, 7221, 5037, 2]
 // Exports: default
 
-// Module 13654 (AcceptInviteContainer)
+// Module 13659 (AcceptInviteContainer)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;

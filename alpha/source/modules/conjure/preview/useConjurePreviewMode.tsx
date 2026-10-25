@@ -1,10 +1,10 @@
-// Module ID: 11864
-// Function ID: 11865
+// Module ID: 11865
+// Function ID: 11866
 // Name: useConjurePreviewMode
-// Dependencies: [32, 19, 502, 6776, 558, 576, 504, 11865, 11867, 11869, 6809, 11391, 10729, 10728, 10765, 5626, 2]
+// Dependencies: [32, 19, 502, 6776, 558, 576, 504, 11866, 11868, 11870, 6809, 11392, 10729, 10728, 10766, 5626, 2]
 // Exports: resolvePreviewAppChannel
 
-// Module 11864 (useConjurePreviewMode)
+// Module 11865 (useConjurePreviewMode)
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5626 */;
 import FramesConstants from "FramesConstants" /* 6776 */;
 import conjurePreviewSurface from "conjurePreviewSurface" /* 10728 */;
@@ -92,26 +92,26 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp20, tmp21);
-  const tmp24 = previewFrameSurface(11865);
+  const tmp24 = previewFrameSurface(11866);
   const applicationWidgetConfig = tmp24(stateFromStores, tmp19).applicationWidgetConfig;
   let surfaces;
   if (applicationWidgetConfig != null) {
     surfaces = applicationWidgetConfig.surfaces;
   }
   let tmp28;
-  const profileSurfaceAvailability = tmp(11867).profileSurfaceAvailability;
-  tmp(11867);
+  const profileSurfaceAvailability = tmp(11868).profileSurfaceAvailability;
+  tmp(11868);
   if (surfaces != null) {
-    tmp28 = surfaces[tmp(undefined, 11869).ApplicationWidgetConfigSurface.WIDGET_TOP];
+    tmp28 = surfaces[tmp(undefined, 11870).ApplicationWidgetConfigSurface.WIDGET_TOP];
   }
   const obj2 = { widgetTop: null != tmp28, widgetBottom: null != tmp29, miniProfile: null != tmp30 };
   tmp29 = undefined;
   if (surfaces != null) {
-    tmp29 = surfaces[tmp(undefined, 11869).ApplicationWidgetConfigSurface.WIDGET_BOTTOM];
+    tmp29 = surfaces[tmp(undefined, 11870).ApplicationWidgetConfigSurface.WIDGET_BOTTOM];
   }
   tmp30 = undefined;
   if (surfaces != null) {
-    tmp30 = surfaces[tmp(undefined, 11869).ApplicationWidgetConfigSurface.MINI_PROFILE];
+    tmp30 = surfaces[tmp(undefined, 11870).ApplicationWidgetConfigSurface.MINI_PROFILE];
   }
   const result = profileSurfaceAvailability(obj2);
   const tmp32 = null != tmp19 && (tmp4 ? result.hasMainCard : result.hasAny);
@@ -134,15 +134,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
   const application2 = useApplication2(applicationId);
   ({ data: data2, isLoading } = application2);
   if (!declaredActivity) {
-    const tmpResult12 = tmp(11391);
+    const tmpResult12 = tmp(11392);
     declaredActivity = tmpResult12.canLaunchContextlessFrame(data2);
   }
   let obj3 = { legacy: { hasFrame: declaredActivity, hasProfileWidget: tmp32, hasBotDm: tmp35 }, widgetResolvable: null != tmp19, botDmResolvable: tmp35 };
-  const tmpResult13 = tmp(11867);
+  const tmpResult13 = tmp(11868);
   const result1 = tmpResult13.previewCapabilitiesFromSurfaces(previewSupportedSurfaces, obj3);
   const obj4 = { installScope, hasOverlay: tmp5, ownerAuthorizationRevoked };
-  const previewModeAvailability = tmp(11867).previewModeAvailability;
-  tmp(11867);
+  const previewModeAvailability = tmp(11868).previewModeAvailability;
+  tmp(11868);
   const merged = Object.assign(result1);
   const result2 = previewModeAvailability(obj4);
   if (cResult[2] !== previewSupportedSurfaces) {
@@ -214,7 +214,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
                 tmp13 = tmp14 !== closure_2;
               }
               if (tmp13) {
-                let tmp5Result = tmp5(10765);
+                let tmp5Result = tmp5(10766);
                 let leaveFrameResult = tmp5Result.leaveFrame(tmp3.id);
               }
               continue;
@@ -421,7 +421,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
           tmp13 = tmp14 !== first;
         }
         if (tmp13) {
-          let tmp5Result = tmp5(10765);
+          let tmp5Result = tmp5(10766);
           let leaveFrameResult = tmp5Result.leaveFrame(tmp3.id);
         }
         continue;

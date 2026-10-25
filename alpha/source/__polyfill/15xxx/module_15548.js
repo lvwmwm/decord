@@ -1,16 +1,16 @@
 // Module ID: 15548
 // Function ID: 15549
-// Dependencies: [15544]
+// Dependencies: [15549]
 
 // Module 15548
-import _mod15544 from "module_15544" /* 15544 */;
+import _mod15549 from "module_15549" /* 15549 */;
 
 
-export default !_mod15544(() => {
-  const fn = () => {
-
+export default !_mod15549(() => {
+  const obj = {
+    get() {
+      return 7;
+    }
   };
-  const bindResult = fn.bind();
-  const hasOwnPropertyResult = typeof bindResult !== "function" || bindResult.hasOwnProperty("prototype");
-  return hasOwnPropertyResult;
+  return 7 !== Object.defineProperty({}, 1, obj)[1];
 });

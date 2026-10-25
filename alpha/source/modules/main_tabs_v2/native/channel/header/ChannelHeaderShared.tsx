@@ -1,10 +1,10 @@
-// Module ID: 14016
-// Function ID: 14017
+// Module ID: 14021
+// Function ID: 14022
 // Name: ChannelHeaderShared
-// Dependencies: [32, 19, 17, 4913, 1392, 21, 4971, 587, 558, 576, 1384, 6908, 10661, 5234, 1202, 14017, 10688, 5252, 8502, 7075, 14018, 1128, 5604, 5669, 1417, 9134, 2]
+// Dependencies: [32, 19, 17, 4913, 1392, 21, 4971, 587, 558, 576, 1384, 6908, 10661, 5234, 1202, 14022, 10688, 5252, 8502, 7075, 14023, 1128, 5604, 5669, 1417, 9134, 2]
 // Exports: renderAppSubTitle, renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 14016 (ChannelHeaderShared)
+// Module 14021 (ChannelHeaderShared)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -22,8 +22,8 @@ import utils_ChannelUtils from "utils/ChannelUtils" /* 8502 */;
 import BotTagDefault from "BotTag" /* 9134 */;
 import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10661 */;
 import GroupDMAvatarDefault from "GroupDMAvatar" /* 10688 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14017 */;
-import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 14018 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14022 */;
+import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 14023 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4913 */;
@@ -392,7 +392,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserAv
       }
     }
   }
-  const obj2 = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status: tmp5, isMobileOnline, isVROnline, style: tmp4.channelIcon, autoStatusCutout: false };
+  const obj2 = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status: tmp5, isMobileOnline, isVROnline, style: tmp4.channelIcon, autoStatusCutout: "jsona" };
   const Avatar = tmp(1202).Avatar;
   const tmp7 = metroImportAll(Avatar, obj2);
   cResult[0] = isMobileOnline;
@@ -410,7 +410,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserAv
   let tmp3;
   user = user.user;
   ({ status, isMobileOnline, isVROnline } = user);
-  const obj = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status: tmp3, isMobileOnline, isVROnline, style: tmp.channelIcon, autoStatusCutout: false };
+  const obj = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status: tmp3, isMobileOnline, isVROnline, style: tmp.channelIcon, autoStatusCutout: "jsona" };
   tmp = closure_12();
   const Avatar = native.Avatar;
   tmp3 = null;

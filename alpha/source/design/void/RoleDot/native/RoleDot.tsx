@@ -1,9 +1,9 @@
-// Module ID: 15416
-// Function ID: 15417
+// Module ID: 15421
+// Function ID: 15422
 // Name: RoleDot
 // Dependencies: [19, 17, 21, 4971, 587, 1384, 558, 576, 5253, 5988, 5258, 1388, 2]
 
-// Module 15416 (RoleDot)
+// Module 15421 (RoleDot)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

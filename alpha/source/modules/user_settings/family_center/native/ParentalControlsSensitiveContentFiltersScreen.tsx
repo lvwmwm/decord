@@ -1,15 +1,15 @@
-// Module ID: 17291
-// Function ID: 17292
+// Module ID: 17296
+// Function ID: 17297
 // Name: ParentalControlsSensitiveContentFiltersScreen
-// Dependencies: [19, 8332, 21, 1128, 558, 576, 11205, 15973, 2]
+// Dependencies: [19, 8332, 21, 1128, 558, 576, 11206, 15978, 2]
 
-// Module 17291 (ParentalControlsSensitiveContentFiltersScreen)
+// Module 17296 (ParentalControlsSensitiveContentFiltersScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1128 */;
 import SettingsConstants from "SettingsConstants" /* 8332 */;
-import SettingBuilders from "SettingBuilders" /* 11205 */;
-import SettingLayoutDefault from "SettingLayout" /* 15973 */;
+import SettingBuilders from "SettingBuilders" /* 11206 */;
+import SettingLayoutDefault from "SettingLayout" /* 15978 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -45,7 +45,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { sections: items };
-    const createList = tmp2(11205).createList;
+    const createList = tmp2(11206).createList;
     items = [];
     SettingBuilders;
     HermesBuiltin.arraySpread(items, getContentCategory(), 0);

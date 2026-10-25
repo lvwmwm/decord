@@ -1,15 +1,15 @@
-// Module ID: 18007
-// Function ID: 18008
+// Module ID: 18012
+// Function ID: 18013
 // Name: OnboardingHomeResourcesSheet
-// Dependencies: [19, 18005, 21, 558, 576, 5252, 587, 18006, 13164, 5210, 1417, 7294, 5669, 7298, 2]
+// Dependencies: [19, 18010, 21, 558, 576, 5252, 587, 18011, 13169, 5210, 1417, 7294, 5669, 7298, 2]
 
-// Module 18007 (OnboardingHomeResourcesSheet)
+// Module 18012 (OnboardingHomeResourcesSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 13164 */;
-import OnboardingHomeConstants from "OnboardingHomeConstants" /* 18005 */;
-import useResourceChannelsDefault from "useResourceChannels" /* 18006 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 13169 */;
+import OnboardingHomeConstants from "OnboardingHomeConstants" /* 18010 */;
+import useResourceChannelsDefault from "useResourceChannels" /* 18011 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -30,7 +30,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Onboarding
   guildId = guildId.guildId;
   let obj2 = guildId(5252);
   token = obj2.useToken(token(587).modules.mobile.TABLE_ROW_ICON_SIZE);
-  const arr = token(18006)(guildId);
+  const arr = token(18011)(guildId);
   if (cResult[0] !== guildId) {
     function handleChannelPress(channelId) {
       const obj = GuildOnboardingHomeActionCreators;

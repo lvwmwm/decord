@@ -1,55 +1,121 @@
 // Module ID: 12690
 // Function ID: 12691
-// Dependencies: []
-// Exports: makeFifoCache
+// Dependencies: [12579, 12577, 12578]
+// Exports: supportsDOMError, supportsDOMException, supportsErrorEvent, supportsNativeFetch, supportsReferrerPolicy, supportsReportingObserver
 
 // Module 12690
+import _mod12577 from "module_12577" /* 12577 */;
+import _mod12579 from "module_12579" /* 12579 */;
 
-export function makeFifoCache(arg0) {
-  let closure_0 = arg0;
-  let closure_1 = [];
-  let closure_2 = {};
-  return {
-    add(arg0, arg1) {
-      if (closure_1.length >= closure_0) {
-        do {
-          let arr = closure_1.shift();
-          if (undefined !== arr) {
-            delete closure_2[tmp2];
-          }
-        } while (closure_1.length >= closure_0);
-      }
-      if (closure_2[arg0]) {
-        const self = this;
-        this.delete(arg0);
-      }
-      closure_1.push(arg0);
-      closure_2[arg0] = arg1;
-    },
-    clear() {
-      closure_2 = {};
-      closure_1 = [];
-    },
-    get(arg0) {
-      return closure_2[arg0];
-    },
-    size() {
-      return closure_1.length;
-    },
-    delete: (arg0) => {
-      if (closure_2[arg0]) {
-        delete closure_2[tmp];
-        let num = 0;
-        if (0 < closure_1.length) {
-          while (closure_1[num] !== arg0) {
-            num = num + 1;
-          }
-          closure_1.splice(num, 1);
-        }
-        return true;
-      } else {
-        return false;
-      }
+function supportsFetch() {
+  if ("fetch" in _mod12579.GLOBAL_OBJ) {
+    try {
+      const _Headers = Headers;
+      const self = this;
+      const headers = new Headers();
+      const _Request = Request;
+      const self2 = this;
+      const request = new Request("http://www.example.com");
+      const _Response = Response;
+      const self3 = this;
+      const response = new Response();
+      return true;
+    } catch (err) {
+      return false;
     }
-  };
+  } else {
+    return false;
+  }
 }
+function isNativeFunction(arg0) {
+  let isMatch = arg0;
+  if (isMatch) {
+    const obj = /^function\s+\w+\(\)\s+\{\s+\[native code\]\s+\}$/;
+    isMatch = obj.test(arg0.toString());
+  }
+  return isMatch;
+}
+
+export { isNativeFunction };
+export const supportsDOMError = function supportsDOMError() {
+  try {
+    const self = this;
+    const dOMError = new globalThis.DOMError("");
+    return true;
+  } catch (err) {
+    return false;
+  }
+};
+export const supportsDOMException = function supportsDOMException() {
+  try {
+    const self = this;
+    const dOMException = new globalThis.DOMException("");
+    return true;
+  } catch (err) {
+    return false;
+  }
+};
+export const supportsErrorEvent = function supportsErrorEvent() {
+  try {
+    const self = this;
+    const errorEvent = new globalThis.ErrorEvent("");
+    return true;
+  } catch (err) {
+    return false;
+  }
+};
+export { supportsFetch };
+export const supportsNativeFetch = function supportsNativeFetch() {
+  if (typeof globalThis.EdgeRuntime === "string") {
+    return true;
+  } else if (supportsFetch()) {
+    const tmp = isNativeFunction;
+    if (isNativeFunction(_mod12579.GLOBAL_OBJ.fetch)) {
+      return true;
+    } else {
+      let flag2 = false;
+      const _document = tmp2(12579).GLOBAL_OBJ.document;
+      if (_document) {
+        if (typeof _document.createElement === "function") {
+          try {
+            const element = <iframe />;
+            element.hidden = true;
+            const head = _document.head;
+            head.appendChild(element);
+            const _fetch = element.contentWindow && tmp5.contentWindow.fetch;
+            if (_fetch) {
+              flag2 = tmp(tmp5.contentWindow.fetch);
+            }
+            const head2 = _document.head;
+            head2.removeChild(element);
+          } catch (tmp10) {
+            if (_mod12577.DEBUG_BUILD) {
+              const logger = tmp2(12578).logger;
+              logger.warn("Could not create sandbox iframe for pure fetch check, bailing to window.fetch: ", tmp10);
+            }
+          }
+        }
+      }
+      return flag2;
+    }
+  } else {
+    return false;
+  }
+};
+export const supportsReferrerPolicy = function supportsReferrerPolicy() {
+  if (supportsFetch()) {
+    try {
+      const _Request = Request;
+      const self = this;
+      const request = new Request("_", { referrerPolicy: "origin" });
+      return true;
+    } catch (err) {
+      return false;
+    }
+  } else {
+    return false;
+  }
+};
+export const supportsReportingObserver = function supportsReportingObserver() {
+  return "ReportingObserver" in _mod12579.GLOBAL_OBJ;
+};

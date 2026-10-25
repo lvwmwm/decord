@@ -1,9 +1,9 @@
-// Module ID: 19352
-// Function ID: 19353
+// Module ID: 19357
+// Function ID: 19358
 // Name: VoicePanelManager
 // Dependencies: [4823, 5714, 6804, 7214, 2]
 
-// Module 19352 (VoicePanelManager)
+// Module 19357 (VoicePanelManager)
 import ChannelStore from "ChannelStore" /* 4823 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
 import VoicePanelStore from "VoicePanelStore" /* 6804 */;

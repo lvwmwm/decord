@@ -1,9 +1,9 @@
-// Module ID: 12065
-// Function ID: 12066
+// Module ID: 12066
+// Function ID: 12067
 // Name: HighlightText
 // Dependencies: [19, 1087, 21, 4971, 4968, 587, 558, 576, 1202, 2]
 
-// Module 12065 (HighlightText)
+// Module 12066 (HighlightText)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

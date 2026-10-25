@@ -1,9 +1,9 @@
-// Module ID: 14074
-// Function ID: 14075
+// Module ID: 14079
+// Function ID: 14080
 // Name: PlayStationLinkModalActionCreators
-// Dependencies: [6672, 14075, 2002, 2]
+// Dependencies: [6672, 14080, 2002, 2]
 
-// Module 14074 (PlayStationLinkModalActionCreators)
+// Module 14079 (PlayStationLinkModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
 import size from "module_2" /* 2 */;
@@ -13,7 +13,7 @@ let obj = {
   showModal(locationStack, platformType) {
     const obj = ModalActionCreatorsDefault;
     const obj2 = { locationStack, platformType };
-    obj.pushLazy(asyncRequire(14075, dependencyMap.paths), obj2, USER_SETTINGS_CONNECTIONS_PS_LINK_MODAL_KEY);
+    obj.pushLazy(asyncRequire(14080, dependencyMap.paths), obj2, USER_SETTINGS_CONNECTIONS_PS_LINK_MODAL_KEY);
   },
   hideModal() {
     const obj = ModalActionCreatorsDefault;

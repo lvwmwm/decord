@@ -1,14 +1,14 @@
-// Module ID: 14446
-// Function ID: 14447
+// Module ID: 14451
+// Function ID: 14452
 // Name: ProductDetailsActionSheetPreview
-// Dependencies: [32, 19, 17, 21, 4971, 587, 558, 576, 1995, 14447, 14449, 2]
+// Dependencies: [32, 19, 17, 21, 4971, 587, 558, 576, 1995, 14452, 14454, 2]
 
-// Module 14446 (ProductDetailsActionSheetPreview)
+// Module 14451 (ProductDetailsActionSheetPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BundleProductDetailsActionSheetPreviewDefault from "BundleProductDetailsActionSheetPreview" /* 14447 */;
+import BundleProductDetailsActionSheetPreviewDefault from "BundleProductDetailsActionSheetPreview" /* 14452 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4971 */;

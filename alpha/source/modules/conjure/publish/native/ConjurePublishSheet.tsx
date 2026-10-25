@@ -1,10 +1,10 @@
-// Module ID: 12286
-// Function ID: 12287
+// Module ID: 12287
+// Function ID: 12288
 // Name: ConjurePublishSheet
-// Dependencies: [5, 19, 17, 6773, 21, 9483, 8572, 6774, 11796, 12287, 12289, 10950, 4971, 587, 5663, 558, 576, 11873, 12252, 504, 12291, 8577, 1128, 3830, 5210, 11810, 11853, 7008, 7180, 5234, 6883, 11837, 5244, 7298, 5604, 2]
+// Dependencies: [5, 19, 17, 6773, 21, 9483, 8572, 6774, 11797, 12288, 12290, 10951, 4971, 587, 5663, 558, 576, 11874, 12253, 504, 12292, 8577, 1128, 3830, 5210, 11811, 11854, 7008, 7180, 5234, 6883, 11838, 5244, 7298, 5604, 2]
 // Exports: default
 
-// Module 12286 (ConjurePublishSheet)
+// Module 12287 (ConjurePublishSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,12 +14,12 @@ import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6774 */;
 import VoiceNormalIcon from "VoiceNormalIcon" /* 8572 */;
 import ScreenIcon from "ScreenIcon" /* 9483 */;
-import ShieldIcon from "ShieldIcon" /* 10950 */;
-import RobotIcon from "RobotIcon" /* 11796 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 11873 */;
-import useConjureNativePublishOptionsDefault from "useConjureNativePublishOptions" /* 12252 */;
-import ActivitiesIcon from "ActivitiesIcon" /* 12287 */;
-import BadgeIcon from "BadgeIcon" /* 12289 */;
+import ShieldIcon from "ShieldIcon" /* 10951 */;
+import RobotIcon from "RobotIcon" /* 11797 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 11874 */;
+import useConjureNativePublishOptionsDefault from "useConjureNativePublishOptions" /* 12253 */;
+import ActivitiesIcon from "ActivitiesIcon" /* 12288 */;
+import BadgeIcon from "BadgeIcon" /* 12290 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
@@ -186,7 +186,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
   ({ project, publish } = entryPoint);
   entryPoint = entryPoint.entryPoint;
   const tmp4 = closure_13();
-  const tmp6 = entryPoint(12291)(project, publish);
+  const tmp6 = entryPoint(12292)(project, publish);
   dependencyMap = tmp6;
   ({ initial, editable, identity, sharing } = tmp6);
   if (cResult[0] === initial) {
@@ -333,7 +333,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
                                         }
                                         tmp52[0] = tmp4.onlyMeIcon;
                                         const obj7 = { size: "xs", color: entryPoint(587).colors.ICON_DEFAULT };
-                                        const UserIcon = tmp(11837).UserIcon;
+                                        const UserIcon = tmp(11838).UserIcon;
                                         tmp52[1] = closure_6(UserIcon, obj7);
                                         tmp50Result = tmp50(tmp49, tmp52);
                                       }
@@ -500,7 +500,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
                   obj.open("CONJURE_PUBLISH_SHEET_ERROR", obj2);
                 }
               };
-              tmp13Result = tmp13(tmp(11810).ConjureAppIconTile, tmp16);
+              tmp13Result = tmp13(tmp(11811).ConjureAppIconTile, tmp16);
             } else {
               class V {
                 constructor(arg0) {
@@ -511,7 +511,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
                 }
               }
               tmp14[0] = project;
-              tmp13Result = tmp13(tmp5(11853), tmp14);
+              tmp13Result = tmp13(tmp5(11854), tmp14);
             }
             cResult[10] = editable;
             cResult[11] = identity;
@@ -766,7 +766,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
   };
   const tmp = closure_13();
   const tmp3 = dependencyMap;
-  const tmp4 = entryPoint(12291)(project, publish);
+  const tmp4 = entryPoint(12292)(project, publish);
   dependencyMap = tmp4;
   ({ editable, identity, sharing } = tmp4);
   if (tmp4.initial) {
@@ -809,10 +809,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
           }
         }
     };
-    tmp6Result = tmp6(tmp7(11810).ConjureAppIconTile, obj3);
+    tmp6Result = tmp6(tmp7(11811).ConjureAppIconTile, obj3);
   } else {
     let obj4 = { project, size: "card" };
-    tmp6Result = tmp6(tmp2(11853), obj4);
+    tmp6Result = tmp6(tmp2(11854), obj4);
   }
   items1 = [tmp6Result, , , , , ];
   if (editable) {
@@ -873,7 +873,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
     } else {
       const obj18 = { style: tmp.onlyMeIcon, children: closure_6(UserIcon, obj19) };
       obj19 = { size: "xs", color: entryPoint(587).colors.ICON_DEFAULT };
-      UserIcon = tmp7(11837).UserIcon;
+      UserIcon = tmp7(11838).UserIcon;
       tmp6Result6 = tmp6(tmp9, obj18);
     }
     items5 = [tmp6Result6, ];

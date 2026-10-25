@@ -1,17 +1,17 @@
-// Module ID: 13603
-// Function ID: 13604
+// Module ID: 13608
+// Function ID: 13609
 // Name: AddPhoneScreens
-// Dependencies: [5, 32, 19, 17, 1392, 13576, 21, 4971, 5268, 587, 558, 576, 1505, 1128, 5234, 13575, 7139, 7140, 573, 7133, 38, 7173, 7089, 2]
+// Dependencies: [5, 32, 19, 17, 1392, 13581, 21, 4971, 5268, 587, 558, 576, 1505, 1128, 5234, 13580, 7139, 7140, 573, 7133, 38, 7173, 7089, 2]
 
-// Module 13603 (AddPhoneScreens)
+// Module 13608 (AddPhoneScreens)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import NavigatorConstants from "NavigatorConstants" /* 5268 */;
 import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7133 */;
 import AddPhoneDefault from "AddPhone" /* 7139 */;
 import PhoneActionCreators from "PhoneActionCreators" /* 7140 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13575 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 13576 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13580 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 13581 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -344,7 +344,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VerifyPhoneS
               result = obj.handlePhoneVerificationComplete(tmp, closure_2);
               nextPromise = result.then(() => {
                 const obj = RunAfterInteractionsUtils;
-                closure_0 = obj.runAfterInteractions(() => { /* body not rendered: F160566 */ });
+                closure_0 = obj.runAfterInteractions(() => { /* body not rendered: F160600 */ });
               });
             }
             return () => {
@@ -375,7 +375,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VerifyPhoneS
         result = obj.handlePhoneVerificationComplete(tmp, closure_2);
         nextPromise = result.then(() => {
           const obj = RunAfterInteractionsUtils;
-          closure_0 = obj.runAfterInteractions(() => { /* body not rendered: F160566 */ });
+          closure_0 = obj.runAfterInteractions(() => { /* body not rendered: F160600 */ });
         });
       }
       return () => {

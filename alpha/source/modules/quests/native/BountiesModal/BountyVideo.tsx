@@ -1,20 +1,20 @@
-// Module ID: 16317
-// Function ID: 16318
+// Module ID: 16322
+// Function ID: 16323
 // Name: BountyVideo
-// Dependencies: [32, 19, 17, 16293, 21, 1385, 9584, 587, 5052, 5258, 683, 4971, 16318, 558, 576, 16319, 5252, 5206, 5209, 16303, 16320, 16332, 5669, 1128, 16333, 16335, 16336, 13945, 2]
+// Dependencies: [32, 19, 17, 16298, 21, 1385, 9584, 587, 5052, 5258, 683, 4971, 16323, 558, 576, 16324, 5252, 5206, 5209, 16308, 16325, 16337, 5669, 1128, 16338, 16340, 16341, 13950, 2]
 
-// Module 16317 (BountyVideo)
+// Module 16322 (BountyVideo)
 import nativeDefault from "native" /* 587 */;
 import timing from "timing" /* 5206 */;
 import timingPresets from "timingPresets" /* 5209 */;
 import LinearGradientDefault from "LinearGradient" /* 5258 */;
 import AssetUtils from "AssetUtils" /* 9584 */;
-import BountiesModalProgress from "BountiesModalProgress" /* 16318 */;
-import pickBountyVideoRendition from "pickBountyVideoRendition" /* 16319 */;
+import BountiesModalProgress from "BountiesModalProgress" /* 16323 */;
+import pickBountyVideoRendition from "pickBountyVideoRendition" /* 16324 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BountiesModalConstants from "BountiesModalConstants" /* 16293 */;
+import BountiesModalConstants from "BountiesModalConstants" /* 16298 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1385 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;

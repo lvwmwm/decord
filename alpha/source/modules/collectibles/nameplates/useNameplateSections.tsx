@@ -1,9 +1,9 @@
-// Module ID: 15898
-// Function ID: 15899
+// Module ID: 15903
+// Function ID: 15904
 // Name: useNameplateSections
-// Dependencies: [32, 19, 7650, 7665, 558, 576, 573, 7662, 1128, 14484, 2]
+// Dependencies: [32, 19, 7650, 7665, 558, 576, 573, 7662, 1128, 14489, 2]
 
-// Module 15898 (useNameplateSections)
+// Module 15903 (useNameplateSections)
 import react from "react" /* 19 */;
 import intl4 from "intl" /* 1128 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 7662 */;
@@ -350,7 +350,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNamepla
     items1[2] = obj4;
     return items1.filter((items) => items.items.length > 0);
   }, items2);
-  return first(14484)(tmp5, obj.PREVIEW);
+  return first(14489)(tmp5, obj.PREVIEW);
 });
 let result = size.fileFinishedImporting("modules/collectibles/nameplates/useNameplateSections.tsx");
 

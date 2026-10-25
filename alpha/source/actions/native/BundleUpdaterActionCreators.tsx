@@ -1,9 +1,9 @@
-// Module ID: 19455
-// Function ID: 19456
+// Module ID: 19460
+// Function ID: 19461
 // Name: BundleUpdaterActionCreators
 // Dependencies: [17, 5908, 1128, 2]
 
-// Module 19455 (BundleUpdaterActionCreators)
+// Module 19460 (BundleUpdaterActionCreators)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1128 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5908 */;

@@ -1,9 +1,9 @@
-// Module ID: 10817
-// Function ID: 10818
+// Module ID: 10818
+// Function ID: 10819
 // Name: GroupDMInviteManagementScreen
-// Dependencies: [5, 32, 19, 17, 8868, 10094, 1087, 21, 4971, 587, 558, 576, 1297, 5263, 12, 10818, 7134, 1202, 10836, 10837, 1128, 7220, 6924, 1275, 7095, 2]
+// Dependencies: [5, 32, 19, 17, 8868, 10094, 1087, 21, 4971, 587, 558, 576, 1297, 5263, 12, 10819, 7134, 1202, 10837, 10838, 1128, 7220, 6924, 1275, 7095, 2]
 
-// Module 10817 (GroupDMInviteManagementScreen)
+// Module 10818 (GroupDMInviteManagementScreen)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -268,7 +268,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupD
       const EmptyState = tmp(1202).EmptyState;
       const intl = tmp(1128).intl;
       const intl2 = tmp(1128).intl;
-      tmp17 = <EmptyState lightSource={tmp10(10836)} darkSource={tmp10(10837)} title={intl.string(tmp(1128).t["+nLJkZ"])} body={intl2.string(tmp(1128).t.F53CAc)} />;
+      tmp17 = <EmptyState lightSource={tmp10(10837)} darkSource={tmp10(10838)} title={intl.string(tmp(1128).t["+nLJkZ"])} body={intl2.string(tmp(1128).t.F53CAc)} />;
     } else {
       class F {
         constructor(invite) {
@@ -398,7 +398,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupD
     const EmptyState = channelId(1202).EmptyState;
     const intl = channelId(1128).intl;
     const intl2 = channelId(1128).intl;
-    tmp13 = <EmptyState lightSource={tmp5(10836)} darkSource={tmp5(10837)} title={intl.string(channelId(1128).t["+nLJkZ"])} body={intl2.string(channelId(1128).t.F53CAc)} />;
+    tmp13 = <EmptyState lightSource={tmp5(10837)} darkSource={tmp5(10838)} title={intl.string(channelId(1128).t["+nLJkZ"])} body={intl2.string(channelId(1128).t.F53CAc)} />;
   } else {
     const tmp12 = channelId;
     tmp13 = jsx(channelId(7220).FlashList, { contentContainerStyle: tmp.listContent, data: memo, keyExtractor: callback, renderItem: tmp10 });

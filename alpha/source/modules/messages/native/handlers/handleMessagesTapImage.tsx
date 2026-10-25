@@ -1,10 +1,10 @@
-// Module ID: 11236
-// Function ID: 11237
+// Module ID: 11237
+// Function ID: 11238
 // Name: handleMessagesTapImage
 // Dependencies: [7696, 4913, 1392, 1087, 8760, 10021, 1110, 8757, 5660, 6022, 8751, 5604, 8502, 2]
 // Exports: handleMessagesTapImage
 
-// Module 11236 (handleMessagesTapImage)
+// Module 11237 (handleMessagesTapImage)
 import Constants from "Constants" /* 1087 */;
 import LinkingDefault from "Linking" /* 5660 */;
 import MediaSourceUtil from "MediaSourceUtil" /* 8757 */;

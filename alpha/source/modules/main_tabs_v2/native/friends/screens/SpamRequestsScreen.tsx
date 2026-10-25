@@ -1,9 +1,9 @@
-// Module ID: 18227
-// Function ID: 18228
+// Module ID: 18232
+// Function ID: 18233
 // Name: SpamRequestsScreen
-// Dependencies: [19, 4913, 1392, 10616, 1087, 21, 558, 576, 7253, 7278, 18226, 504, 1275, 9361, 8668, 10622, 2]
+// Dependencies: [19, 4913, 1392, 10616, 1087, 21, 558, 576, 7253, 7278, 18231, 504, 1275, 9361, 8668, 10622, 2]
 
-// Module 18227 (SpamRequestsScreen)
+// Module 18232 (SpamRequestsScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
@@ -82,8 +82,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpamRequests
   if (cResult[4] !== stateFromStoresArray) {
     class N {
       constructor() {
-        mapped = closure_1.map(() => { /* body not rendered: F155484 */ });
-        return mapped.filter(() => { /* body not rendered: F155485 */ });
+        mapped = closure_1.map(() => { /* body not rendered: F155515 */ });
+        return mapped.filter(() => { /* body not rendered: F155516 */ });
       }
     }
     const items2 = [stateFromStoresArray];
@@ -101,8 +101,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpamRequests
   } else {
     class N {
       constructor() {
-        mapped = closure_1.map(() => { /* body not rendered: F155484 */ });
-        return mapped.filter(() => { /* body not rendered: F155485 */ });
+        mapped = closure_1.map(() => { /* body not rendered: F155515 */ });
+        return mapped.filter(() => { /* body not rendered: F155516 */ });
       }
     }
     tmp15 = cResult[6];

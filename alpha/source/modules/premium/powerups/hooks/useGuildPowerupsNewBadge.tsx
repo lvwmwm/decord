@@ -1,14 +1,14 @@
-// Module ID: 13427
-// Function ID: 13428
+// Module ID: 13432
+// Function ID: 13433
 // Name: useGuildPowerupsNewBadge
-// Dependencies: [32, 19, 5181, 5182, 4820, 4807, 558, 576, 504, 13422, 7496, 4808, 2]
+// Dependencies: [32, 19, 5181, 5182, 4820, 4807, 558, 576, 504, 13427, 7496, 4808, 2]
 
-// Module 13427 (useGuildPowerupsNewBadge)
+// Module 13432 (useGuildPowerupsNewBadge)
 import dismissible_content from "dismissible_content" /* 4807 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 4808 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
 import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5182 */;
-import useGuildPowerupNewPerkMarketingVersionDefault from "useGuildPowerupNewPerkMarketingVersion" /* 13422 */;
+import useGuildPowerupNewPerkMarketingVersionDefault from "useGuildPowerupNewPerkMarketingVersion" /* 13427 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 5181 */;

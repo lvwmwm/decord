@@ -1,13 +1,13 @@
-// Module ID: 15857
-// Function ID: 15858
+// Module ID: 15862
+// Function ID: 15863
 // Name: useScrollToUserProfileEditFormSection
-// Dependencies: [19, 17, 4972, 11121, 558, 576, 504, 2]
+// Dependencies: [19, 17, 4972, 11122, 558, 576, 504, 2]
 
-// Module 15857 (useScrollToUserProfileEditFormSection)
+// Module 15862 (useScrollToUserProfileEditFormSection)
 import react_native from "react-native" /* 17 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4972 */;
-import ProfileCustomizationNavigationStore_mod from "ProfileCustomizationNavigationStore" /* 11121 */;
+import ProfileCustomizationNavigationStore_mod from "ProfileCustomizationNavigationStore" /* 11122 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -116,7 +116,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScrollToU
           const tmp = findNodeHandle(ref.current);
           if (null != tmp) {
             if (ref2.current[ref] != null) {
-              ref2.current[ref].measureLayout(tmp, () => { /* body not rendered: F160947 */ });
+              ref2.current[ref].measureLayout(tmp, () => { /* body not rendered: F160981 */ });
             }
             ProfileCustomizationNavigationStore.setState({ scrollPosition: null });
           }

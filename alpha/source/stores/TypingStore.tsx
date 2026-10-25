@@ -1,9 +1,9 @@
-// Module ID: 13059
-// Function ID: 13060
+// Module ID: 13064
+// Function ID: 13065
 // Name: TypingStore
 // Dependencies: [502, 4823, 7760, 1087, 1104, 7323, 1297, 584, 504, 2]
 
-// Module 13059 (TypingStore)
+// Module 13064 (TypingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;

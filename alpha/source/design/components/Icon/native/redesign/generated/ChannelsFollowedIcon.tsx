@@ -1,14 +1,14 @@
-// Module ID: 18289
-// Function ID: 18290
+// Module ID: 18294
+// Function ID: 18295
 // Name: ChannelsFollowedIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 18290, 5668, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 18295, 5668, 2]
 
-// Module 18289 (ChannelsFollowedIcon)
+// Module 18294 (ChannelsFollowedIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5668 */;
-import AssetRegistry from "AssetRegistry" /* 18290 */;
+import AssetRegistry from "AssetRegistry" /* 18295 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

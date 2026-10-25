@@ -1,9 +1,9 @@
-// Module ID: 17159
-// Function ID: 17160
+// Module ID: 17164
+// Function ID: 17165
 // Name: UserSettingsDesignSystemStack
 // Dependencies: [19, 17, 21, 4971, 587, 558, 576, 5234, 6905, 5977, 2]
 
-// Module 17159 (UserSettingsDesignSystemStack)
+// Module 17164 (UserSettingsDesignSystemStack)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5234 */;

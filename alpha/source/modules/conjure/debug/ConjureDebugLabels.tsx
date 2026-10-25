@@ -1,13 +1,13 @@
-// Module ID: 12547
-// Function ID: 12548
+// Module ID: 12551
+// Function ID: 12552
 // Name: ConjureDebugLabels
-// Dependencies: [1128, 3830, 12548, 2]
+// Dependencies: [1128, 3830, 12552, 2]
 // Exports: analyticsMemoryValue, analyticsRoleLabel, analyticsUnavailableReason, debugEnvLabel, debugLogFilterLabel, debugYesNo, filterDebugLogs, forceCompactionStatus, isRenderableLog, sandboxRestartStatus
 
-// Module 12547 (ConjureDebugLabels)
+// Module 12551 (ConjureDebugLabels)
 import intl6 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import ConjureDebugFormat from "ConjureDebugFormat" /* 12548 */;
+import ConjureDebugFormat from "ConjureDebugFormat" /* 12552 */;
 import size from "module_2" /* 2 */;
 
 let log;
@@ -136,31 +136,31 @@ export const filterDebugLogs = function filterDebugLogs(stateFromStores, arg1, f
     return tmp2;
   });
 };
-export const forceCompactionStatus = function forceCompactionStatus(stateFromStores3) {
-  if ("idle" === stateFromStores3) {
+export const forceCompactionStatus = function forceCompactionStatus(forceState) {
+  if ("idle" === forceState) {
     const intl4 = intl6.intl;
     return intl4.string(_modDef3830.wox6Ev);
-  } else if ("pending" === stateFromStores3) {
+  } else if ("pending" === forceState) {
     const intl3 = intl6.intl;
     return intl3.string(_modDef3830.OcPHQ1);
   } else {
     const obj3 = ConjureDebugFormat;
-    const formatObservedAtResult = obj3.formatObservedAt(stateFromStores3.observedAt);
-    if ("compacted" === stateFromStores3.outcome) {
+    const formatObservedAtResult = obj3.formatObservedAt(forceState.observedAt);
+    if ("compacted" === forceState.outcome) {
       const intl2 = tmp12(1128).intl;
       const obj2 = { time: formatObservedAtResult };
       return intl2.formatToPlainString(_modDef3830.BhRjZZ, obj2);
     } else {
       let ZoUSVK;
-      if ("declined" === stateFromStores3.outcome) {
+      if ("declined" === forceState.outcome) {
         ZoUSVK = _modDef3830["o/FKzF"];
-      } else if ("busy" === stateFromStores3.outcome) {
+      } else if ("busy" === forceState.outcome) {
         ZoUSVK = _modDef3830.YZb4hK;
       } else {
         ZoUSVK = _modDef3830.ZoUSVK;
       }
       const intl = tmp12(1128).intl;
-      let str2 = stateFromStores3.reason;
+      let str2 = forceState.reason;
       const formatToPlainString = intl.formatToPlainString;
       if (str2 == null) {
         str2 = "no reason given";
@@ -210,7 +210,7 @@ export const analyticsMemoryValue = function analyticsMemoryValue(found) {
     }
     const obj = { p50: formatBytes(num), p999: formatBytes2(num2) };
     num2 = found.memory_p999_bytes;
-    formatBytes2 = tmp2(12548).formatBytes;
+    formatBytes2 = tmp2(12552).formatBytes;
     ConjureDebugFormat;
     if (num2 == null) {
       num2 = found.memory_p50_bytes;
@@ -236,25 +236,25 @@ export const analyticsRoleLabel = function analyticsRoleLabel(role) {
   }
   return stringResult;
 };
-export const sandboxRestartStatus = function sandboxRestartStatus(stateFromStores4) {
-  if ("idle" === stateFromStores4) {
+export const sandboxRestartStatus = function sandboxRestartStatus(restartState) {
+  if ("idle" === restartState) {
     const intl2 = intl6.intl;
     return intl2.string(_modDef3830.mlok8D);
-  } else if ("pending" === stateFromStores4) {
+  } else if ("pending" === restartState) {
     const intl = intl6.intl;
     return intl.string(_modDef3830["1ugSyK"]);
   } else {
     let FiVRoT;
     const obj2 = ConjureDebugFormat;
-    const formatObservedAtResult = obj2.formatObservedAt(stateFromStores4.observedAt);
+    const formatObservedAtResult = obj2.formatObservedAt(restartState.observedAt);
     const intl3 = intl6.intl;
     const formatToPlainString = intl3.formatToPlainString;
-    if ("restarted" === stateFromStores4.outcome) {
+    if ("restarted" === restartState.outcome) {
       FiVRoT = _modDef3830["76mfqO"];
     } else {
       FiVRoT = _modDef3830.FiVRoT;
     }
-    let str = stateFromStores4.reason;
+    let str = restartState.reason;
     if (str == null) {
       str = "";
     }

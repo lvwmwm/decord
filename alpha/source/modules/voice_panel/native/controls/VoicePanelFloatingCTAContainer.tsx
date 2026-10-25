@@ -1,10 +1,10 @@
-// Module ID: 18603
-// Function ID: 18604
+// Module ID: 18608
+// Function ID: 18609
 // Name: VoicePanelFloatingCTAContainer
-// Dependencies: [32, 109, 19, 4823, 10897, 10900, 1098, 21, 12196, 587, 4971, 558, 576, 5977, 8953, 5037, 10896, 18505, 7497, 573, 18502, 18604, 5052, 13159, 12070, 5247, 10408, 7168, 2]
+// Dependencies: [32, 109, 19, 4823, 10898, 10901, 1098, 21, 12197, 587, 4971, 558, 576, 5977, 8953, 5037, 10897, 18510, 7497, 573, 18507, 18609, 5052, 13164, 12071, 5247, 10408, 7168, 2]
 // Exports: getFloatingCTATotalViewHeight, renderVoicePanelFloatingCTA
 
-// Module 18603 (VoicePanelFloatingCTAContainer)
+// Module 18608 (VoicePanelFloatingCTAContainer)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,12 +13,12 @@ import native from "native" /* 5037 */;
 import spring from "spring" /* 5247 */;
 import Stack_Stack from "Stack/Stack" /* 5977 */;
 import RowButton2 from "RowButton" /* 8953 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10897 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 10900 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12070 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12196 */;
-import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 13159 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 18502 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10898 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 10901 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12071 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12197 */;
+import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 13164 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 18507 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;

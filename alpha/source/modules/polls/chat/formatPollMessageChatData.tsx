@@ -1,10 +1,10 @@
-// Module ID: 12222
-// Function ID: 12223
+// Module ID: 12223
+// Function ID: 12224
 // Name: formatPollMessageChatData
-// Dependencies: [4972, 6725, 4823, 4883, 6010, 1392, 11030, 1087, 1098, 6484, 4917, 4921, 1417, 9347, 4909, 4890, 12223, 1128, 8284, 12225, 1384, 12226, 12227, 2]
+// Dependencies: [4972, 6725, 4823, 4883, 6010, 1392, 11031, 1087, 1098, 6484, 4917, 4921, 1417, 9347, 4909, 4890, 12224, 1128, 8284, 12226, 1384, 12227, 12228, 2]
 // Exports: default, isPollMessageDirectlyInteractive
 
-// Module 12222 (formatPollMessageChatData)
+// Module 12223 (formatPollMessageChatData)
 import Constants2 from "Constants" /* 1098 */;
 import intl5 from "intl" /* 1128 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
@@ -14,8 +14,8 @@ import UnicodeEmojisDefault from "UnicodeEmojis" /* 4917 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 4921 */;
 import merged5 from "merged5" /* 6484 */;
 import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 9347 */;
-import PollsInteractionStore from "PollsInteractionStore" /* 11030 */;
-import PollLayoutTypes from "PollLayoutTypes" /* 12225 */;
+import PollsInteractionStore from "PollsInteractionStore" /* 11031 */;
+import PollLayoutTypes from "PollLayoutTypes" /* 12226 */;
 import AccessibilityStore from "AccessibilityStore" /* 4972 */;
 import EmojiStore from "EmojiStore" /* 6725 */;
 import ChannelStore from "ChannelStore" /* 4823 */;

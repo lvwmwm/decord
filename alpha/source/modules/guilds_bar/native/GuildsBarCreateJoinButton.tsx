@@ -1,16 +1,16 @@
-// Module ID: 17792
-// Function ID: 17793
+// Module ID: 17797
+// Function ID: 17798
 // Name: GuildsBarCreateJoinButton
-// Dependencies: [5, 19, 17, 5002, 1087, 1394, 21, 4971, 10139, 2002, 13608, 7307, 9672, 7278, 558, 576, 17738, 504, 17753, 1128, 17793, 587, 11153, 2]
+// Dependencies: [5, 19, 17, 5002, 1087, 1394, 21, 4971, 10139, 2002, 13613, 7307, 9672, 7278, 558, 576, 17743, 504, 17758, 1128, 17798, 587, 11154, 2]
 
-// Module 17792 (GuildsBarCreateJoinButton)
+// Module 17797 (GuildsBarCreateJoinButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import GuildCapUpsellHooks from "GuildCapUpsellHooks" /* 7307 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17738 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17743 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5002 */;
@@ -30,8 +30,8 @@ let metroImportDefault;
 let tmp;
 const get_initialized = tmp(504);
 const intl2 = tmp(1128);
-const CirclePlusIcon2 = tmp(11153);
-const HomeDrawerAddServerRow = tmp(17793);
+const CirclePlusIcon2 = tmp(11154);
+const HomeDrawerAddServerRow = tmp(17798);
 function handleCreateJoinGuildPress() {
   return obj(...arguments);
 }
@@ -225,7 +225,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       tmp23 = tmp26;
     }
   }
-  const tmp22 = jsx(tmp17(17738), { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: tmp10, label: tmp11, expandedChildren: tmp12, children: tmp18 });
+  const tmp22 = jsx(tmp17(17743), { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: tmp10, label: tmp11, expandedChildren: tmp12, children: tmp18 });
   cResult[7] = stateFromStores;
   cResult[8] = tmp18;
   cResult[9] = guildsBarAnimatedWrapperStyles;

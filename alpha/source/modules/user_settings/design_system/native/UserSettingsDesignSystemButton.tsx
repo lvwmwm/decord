@@ -1,10 +1,10 @@
-// Module ID: 17123
-// Function ID: 17124
+// Module ID: 17128
+// Function ID: 17129
 // Name: UserSettingsDesignSystemButton
-// Dependencies: [32, 19, 17, 1087, 1255, 21, 558, 576, 17124, 17125, 5244, 7959, 7489, 9127, 15271, 8280, 12497, 10872, 9174, 12498, 4971, 587, 1505, 5210, 17126, 2002, 5977, 5234, 10437, 9117, 9123, 9125, 9124, 9122, 9121, 6696, 5037, 1105, 5258, 6905, 10625, 8920, 2]
+// Dependencies: [32, 19, 17, 1087, 1255, 21, 558, 576, 17129, 17130, 5244, 7959, 7489, 9127, 15276, 8280, 12501, 10873, 9174, 12502, 4971, 587, 1505, 5210, 17131, 2002, 5977, 5234, 10437, 9117, 9123, 9125, 9124, 9122, 9121, 6696, 5037, 1105, 5258, 6905, 10625, 8920, 2]
 // Exports: default
 
-// Module 17123 (UserSettingsDesignSystemButton)
+// Module 17128 (UserSettingsDesignSystemButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -19,9 +19,9 @@ import AssetRegistryDefault7 from "AssetRegistry" /* 9124 */;
 import AssetRegistryDefault8 from "AssetRegistry" /* 9125 */;
 import AssetRegistryDefault9 from "AssetRegistry" /* 9174 */;
 import AssetRegistryDefault10 from "AssetRegistry" /* 10437 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 10872 */;
-import useToggleButtonProps from "useToggleButtonProps" /* 12498 */;
-import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 17124 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 10873 */;
+import useToggleButtonProps from "useToggleButtonProps" /* 12502 */;
+import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 17129 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -49,9 +49,9 @@ let unpackModuleId;
 const components_Button_Button = tmp(5244);
 const IconButton4 = tmp(7959);
 const ImageButton2 = tmp(9127);
-const ToggleIconButton2 = tmp(12497);
-const ToggleButton2 = tmp(15271);
-const AssetRegistryDefault12 = tmp(17125);
+const ToggleIconButton2 = tmp(12501);
+const ToggleButton2 = tmp(15276);
+const AssetRegistryDefault12 = tmp(17130);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, ScrollView: metroRequire } = react_native);
 const ThemeTypes = Constants.ThemeTypes;

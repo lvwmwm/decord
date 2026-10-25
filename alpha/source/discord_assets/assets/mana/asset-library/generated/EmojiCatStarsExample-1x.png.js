@@ -1,8 +1,8 @@
-// Module ID: 13073
-// Function ID: 13074
+// Module ID: 13078
+// Function ID: 13079
 // Dependencies: [2]
 
-// Module 13073
+// Module 13078
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/EmojiCatStarsExample-1x.png.js");

@@ -1,9 +1,9 @@
-// Module ID: 12363
-// Function ID: 12364
+// Module ID: 12366
+// Function ID: 12367
 // Name: useConjureTurnTraceId
-// Dependencies: [10704, 558, 576, 12282, 10700, 504, 2]
+// Dependencies: [10704, 558, 576, 12283, 10700, 504, 2]
 
-// Module 12363 (useConjureTurnTraceId)
+// Module 12366 (useConjureTurnTraceId)
 import ConjureDebugStore from "ConjureDebugStore" /* 10704 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

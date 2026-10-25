@@ -1,9 +1,9 @@
-// Module ID: 11799
-// Function ID: 11800
+// Module ID: 11800
+// Function ID: 11801
 // Name: ConjureSettingsSheet
-// Dependencies: [5, 32, 19, 17, 10698, 10712, 6773, 21, 3830, 4971, 587, 558, 576, 5593, 504, 11800, 11817, 11840, 1128, 7293, 7248, 5977, 11842, 11845, 11847, 5234, 6880, 5244, 7298, 8901, 11849, 9146, 2]
+// Dependencies: [5, 32, 19, 17, 10698, 10712, 6773, 21, 3830, 4971, 587, 558, 576, 5593, 504, 11801, 11818, 11841, 1128, 7293, 7248, 5977, 11843, 11846, 11848, 5234, 6880, 5244, 7298, 8901, 11850, 9146, 2]
 
-// Module 11799 (ConjureSettingsSheet)
+// Module 11800 (ConjureSettingsSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3830 from "module_3830" /* 3830 */;
@@ -233,7 +233,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSetti
       }
     }
   }
-  const tmp5Result = tmp5(11800);
+  const tmp5Result = tmp5(11801);
   if (stateFromStores != null) {
     class N {
       constructor() {
@@ -798,7 +798,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
   const tmp12 = View;
   if (tabs.length > 3) {
     const obj3 = { state: segmentedControlState };
-    tmp11Result = tmp11(tmp5(11849).Tabs, obj3);
+    tmp11Result = tmp11(tmp5(11850).Tabs, obj3);
   } else {
     const obj4 = { state: segmentedControlState };
     tmp11Result = tmp11(tmp5(9146).SegmentedControl, obj4);

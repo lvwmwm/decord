@@ -1,13 +1,13 @@
-// Module ID: 18221
-// Function ID: 18222
+// Module ID: 18226
+// Function ID: 18227
 // Name: SuggestedFriendsScreen
-// Dependencies: [19, 17, 1087, 21, 4971, 587, 558, 576, 7253, 7278, 1267, 17467, 18210, 8668, 18214, 10625, 10622, 12919, 1128, 2]
+// Dependencies: [19, 17, 1087, 21, 4971, 587, 558, 576, 7253, 7278, 1267, 17472, 18215, 8668, 18219, 10625, 10622, 12924, 1128, 2]
 
-// Module 18221 (SuggestedFriendsScreen)
+// Module 18226 (SuggestedFriendsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
-import ContactSuggestionRow2 from "ContactSuggestionRow" /* 18214 */;
+import ContactSuggestionRow2 from "ContactSuggestionRow" /* 18219 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
@@ -155,7 +155,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuggestedFri
         itemType: str,
         key: tmp.user.id,
         component() {
-              const obj = { added: added.includes(suggestedFriend), suggestedFriend, start: 0 === closure_0, end, onPress, onAddSuggestion() { /* body not rendered: F161482 */ }, location: metroRequire.FRIENDS_SUGGESTED_FRIENDS_MODAL };
+              const obj = { added: added.includes(suggestedFriend), suggestedFriend, start: 0 === closure_0, end, onPress, onAddSuggestion() { /* body not rendered: F161516 */ }, location: metroRequire.FRIENDS_SUGGESTED_FRIENDS_MODAL };
               const ContactSuggestionRow = ContactSuggestionRow2.ContactSuggestionRow;
               return metroImportDefault(ContactSuggestionRow, obj);
             }

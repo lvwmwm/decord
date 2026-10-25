@@ -1,9 +1,9 @@
-// Module ID: 17571
-// Function ID: 17572
+// Module ID: 17576
+// Function ID: 17577
 // Name: GuildSettingsModalChannels
-// Dependencies: [19, 17, 4823, 4845, 4903, 4913, 1392, 17569, 1087, 21, 4971, 6651, 587, 4848, 5037, 1128, 4978, 1105, 8951, 1202, 17572, 558, 576, 504, 8502, 5604, 6908, 1633, 7290, 8975, 9469, 5244, 7485, 4908, 13856, 17573, 5592, 10093, 17574, 17570, 12745, 16651, 10841, 11308, 6830, 5908, 1505, 38, 5253, 2]
+// Dependencies: [19, 17, 4823, 4845, 4903, 4913, 1392, 17574, 1087, 21, 4971, 6651, 587, 4848, 5037, 1128, 4978, 1105, 8951, 1202, 17577, 558, 576, 504, 8502, 5604, 6908, 1633, 7290, 8975, 9469, 5244, 7485, 4908, 13861, 17578, 5592, 10093, 17579, 17575, 12750, 16656, 10842, 11309, 6830, 5908, 1505, 38, 5253, 2]
 
-// Module 17571 (GuildSettingsModalChannels)
+// Module 17576 (GuildSettingsModalChannels)
 import _modDef38 from "module_38" /* 38 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
@@ -26,13 +26,13 @@ import HeaderActionButton2 from "HeaderActionButton" /* 7485 */;
 import Form from "Form" /* 8951 */;
 import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8975 */;
 import ChannelSettingsActionCreators from "ChannelSettingsActionCreators" /* 10093 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10841 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12745 */;
-import ChannelSortingUtils from "ChannelSortingUtils" /* 13856 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 16651 */;
-import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 17570 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 17572 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 17574 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10842 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12750 */;
+import ChannelSortingUtils from "ChannelSortingUtils" /* 13861 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16656 */;
+import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 17575 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 17577 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 17579 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
@@ -40,7 +40,7 @@ import GuildStore from "GuildStore" /* 4845 */;
 import PermissionStore from "PermissionStore" /* 4903 */;
 import RelationshipStore from "RelationshipStore" /* 4913 */;
 import UserStore from "UserStore" /* 1392 */;
-import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 17569 */;
+import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 17574 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;
@@ -106,7 +106,8 @@ class Category extends PureComponent {
     if (sortingEnabled) {
       sortHandlers = self.props.sortHandlers;
     }
-    const obj = {
+    const tmp3 = authStore3;
+    let obj = {
       accessibilityRole: "button",
       accessibilityActions: items,
       onAccessibilityAction(nativeEvent) {
@@ -121,15 +122,14 @@ class Category extends PureComponent {
         return tmp;
       },
       underlayColor: hex2rgbResult,
-      children: authStore3(tmp13, obj7)
+      children: tmp3(tmp13, obj7)
     };
-    const obj2 = { name: "activate", label: intl.string(intl5.t.bt75uw) };
+    let obj2 = { name: "activate", label: intl.string(intl5.t.bt75uw) };
     intl = intl5.intl;
     items = [obj2];
-    const obj3 = shared;
+    let obj3 = shared;
     const isThemeDarkResult = obj3.isThemeDark(self.context.theme);
     const hex2rgb = utils_ColorUtils.hex2rgb;
-    utils_ColorUtils;
     const unsafe_rawColors = nativeDefault.unsafe_rawColors;
     const tmp4 = metroRequire;
     if (isThemeDarkResult) {
@@ -140,7 +140,7 @@ class Category extends PureComponent {
       tmp11 = tmp9;
     }
     const merged = Object.assign(sortHandlers);
-    const obj4 = { title: category.name, numberOfLines: 1, textStyle: tmp.categoryText, viewStyle: items1, icon: tmp3Result };
+    let obj4 = { title: category.name, numberOfLines: 1, textStyle: tmp.categoryText, viewStyle: items1, icon: tmp3Result };
     items1 = [tmp.categoryView, ];
     let sortingCategoryView = null;
     const FormTitle = tmp5(8951).FormTitle;
@@ -160,13 +160,13 @@ class Category extends PureComponent {
     } else {
       tmp3Result = null;
       if (null != sortHandlers) {
-        const obj6 = { source: tmp11(17572), style: actionIconStyle };
+        const obj6 = { source: tmp11(17577), style: actionIconStyle };
         const Icon = tmp5(1202).Icon;
         tmp3Result = tmp3(Icon, obj6);
       }
     }
-    obj7 = { children: authStore3(FormTitle, obj4) };
-    return authStore3(tmp4, obj);
+    obj7 = { children: tmp3(FormTitle, obj4) };
+    return tmp3(tmp4, obj);
   }
 }
 const prototype = Category.prototype;
@@ -521,7 +521,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   if (stateFromStores) {
     tmp7Result2 = null;
     if (sortingEnabled) {
-      const obj10 = { source: tmp13(17572), style: actionIconStyle };
+      const obj10 = { source: tmp13(17577), style: actionIconStyle };
       const Icon2 = tmp(8951).FormRow.Icon;
       tmp7Result2 = tmp7(Icon2, obj10);
     }

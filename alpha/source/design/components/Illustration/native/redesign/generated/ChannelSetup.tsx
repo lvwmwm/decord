@@ -1,10 +1,10 @@
-// Module ID: 19167
-// Function ID: 19168
+// Module ID: 19172
+// Function ID: 19173
 // Name: ChannelSetup
-// Dependencies: [19, 21, 8724, 19168, 19169, 19170, 558, 576, 4978, 5669, 2]
+// Dependencies: [19, 21, 8724, 19173, 19174, 19175, 558, 576, 4978, 5669, 2]
 // Exports: getChannelSetupSource
 
-// Module 19167 (ChannelSetup)
+// Module 19172 (ChannelSetup)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import shared from "shared" /* 4978 */;

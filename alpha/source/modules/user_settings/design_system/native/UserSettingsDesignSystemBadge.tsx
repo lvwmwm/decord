@@ -1,9 +1,9 @@
-// Module ID: 17169
-// Function ID: 17170
+// Module ID: 17174
+// Function ID: 17175
 // Name: UserSettingsDesignSystemBadge
-// Dependencies: [32, 19, 17, 21, 4971, 587, 8566, 9463, 11132, 11134, 11136, 11138, 9949, 558, 576, 5234, 7233, 6984, 6985, 7008, 7295, 5977, 6905, 1202, 2]
+// Dependencies: [32, 19, 17, 21, 4971, 587, 8566, 9463, 11133, 11135, 11137, 11139, 9949, 558, 576, 5234, 7233, 6984, 6985, 7008, 7295, 5977, 6905, 1202, 2]
 
-// Module 17169 (UserSettingsDesignSystemBadge)
+// Module 17174 (UserSettingsDesignSystemBadge)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
@@ -14,7 +14,7 @@ import TableRadioGroup3 from "TableRadioGroup" /* 6985 */;
 import Badge_Badge from "Badge/Badge" /* 7233 */;
 import TableSwitchRow from "TableSwitchRow" /* 7295 */;
 import StarIcon3 from "StarIcon" /* 9949 */;
-import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 11136 */;
+import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 11137 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -213,13 +213,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Playgr
       } else if ("inverted" === first) {
         StarIcon = tmp(9463).TagIcon;
       } else if ("rarity-common" === first) {
-        StarIcon = tmp(11132).ExperimentalCommonIcon;
+        StarIcon = tmp(11133).ExperimentalCommonIcon;
       } else if ("rarity-rare" === first) {
-        StarIcon = tmp(11134).ExperimentalRareIcon;
+        StarIcon = tmp(11135).ExperimentalRareIcon;
       } else if ("rarity-epic" === first) {
-        StarIcon = tmp(11136).ExperimentalEpicIcon;
+        StarIcon = tmp(11137).ExperimentalEpicIcon;
       } else if ("rarity-mythic" === first) {
-        StarIcon = tmp(11138).ExperimentalMythicIcon;
+        StarIcon = tmp(11139).ExperimentalMythicIcon;
       } else {
         StarIcon = tmp(9949).StarIcon;
       }
@@ -285,13 +285,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Playgr
     } else if ("inverted" === first) {
       StarIcon = tmp14(9463).TagIcon;
     } else if ("rarity-common" === first) {
-      StarIcon = tmp14(11132).ExperimentalCommonIcon;
+      StarIcon = tmp14(11133).ExperimentalCommonIcon;
     } else if ("rarity-rare" === first) {
-      StarIcon = tmp14(11134).ExperimentalRareIcon;
+      StarIcon = tmp14(11135).ExperimentalRareIcon;
     } else if ("rarity-epic" === first) {
-      StarIcon = tmp14(11136).ExperimentalEpicIcon;
+      StarIcon = tmp14(11137).ExperimentalEpicIcon;
     } else if ("rarity-mythic" === first) {
-      StarIcon = tmp14(11138).ExperimentalMythicIcon;
+      StarIcon = tmp14(11139).ExperimentalMythicIcon;
     } else {
       StarIcon = tmp14(9949).StarIcon;
     }
@@ -381,13 +381,13 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Varian
       } else if ("inverted" === variant) {
         StarIcon = tmp2(9463).TagIcon;
       } else if ("rarity-common" === variant) {
-        StarIcon = tmp2(11132).ExperimentalCommonIcon;
+        StarIcon = tmp2(11133).ExperimentalCommonIcon;
       } else if ("rarity-rare" === variant) {
-        StarIcon = tmp2(11134).ExperimentalRareIcon;
+        StarIcon = tmp2(11135).ExperimentalRareIcon;
       } else if ("rarity-epic" === variant) {
-        StarIcon = tmp2(11136).ExperimentalEpicIcon;
+        StarIcon = tmp2(11137).ExperimentalEpicIcon;
       } else if ("rarity-mythic" === variant) {
-        StarIcon = tmp2(11138).ExperimentalMythicIcon;
+        StarIcon = tmp2(11139).ExperimentalMythicIcon;
       } else {
         StarIcon = tmp2(9949).StarIcon;
       }
@@ -399,13 +399,13 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Varian
       } else if ("inverted" === variant) {
         StarIcon2 = tmp2(9463).TagIcon;
       } else if ("rarity-common" === variant) {
-        StarIcon2 = tmp2(11132).ExperimentalCommonIcon;
+        StarIcon2 = tmp2(11133).ExperimentalCommonIcon;
       } else if ("rarity-rare" === variant) {
-        StarIcon2 = tmp2(11134).ExperimentalRareIcon;
+        StarIcon2 = tmp2(11135).ExperimentalRareIcon;
       } else if ("rarity-epic" === variant) {
-        StarIcon2 = tmp2(11136).ExperimentalEpicIcon;
+        StarIcon2 = tmp2(11137).ExperimentalEpicIcon;
       } else if ("rarity-mythic" === variant) {
-        StarIcon2 = tmp2(11138).ExperimentalMythicIcon;
+        StarIcon2 = tmp2(11139).ExperimentalMythicIcon;
       } else {
         StarIcon2 = tmp2(9949).StarIcon;
       }
@@ -470,13 +470,13 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Varian
       } else if ("inverted" === variant) {
         StarIcon = tmp2(9463).TagIcon;
       } else if ("rarity-common" === variant) {
-        StarIcon = tmp2(11132).ExperimentalCommonIcon;
+        StarIcon = tmp2(11133).ExperimentalCommonIcon;
       } else if ("rarity-rare" === variant) {
-        StarIcon = tmp2(11134).ExperimentalRareIcon;
+        StarIcon = tmp2(11135).ExperimentalRareIcon;
       } else if ("rarity-epic" === variant) {
-        StarIcon = tmp2(11136).ExperimentalEpicIcon;
+        StarIcon = tmp2(11137).ExperimentalEpicIcon;
       } else if ("rarity-mythic" === variant) {
-        StarIcon = tmp2(11138).ExperimentalMythicIcon;
+        StarIcon = tmp2(11139).ExperimentalMythicIcon;
       } else {
         StarIcon = tmp2(9949).StarIcon;
       }
@@ -488,13 +488,13 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Varian
       } else if ("inverted" === variant) {
         StarIcon2 = tmp2(9463).TagIcon;
       } else if ("rarity-common" === variant) {
-        StarIcon2 = tmp2(11132).ExperimentalCommonIcon;
+        StarIcon2 = tmp2(11133).ExperimentalCommonIcon;
       } else if ("rarity-rare" === variant) {
-        StarIcon2 = tmp2(11134).ExperimentalRareIcon;
+        StarIcon2 = tmp2(11135).ExperimentalRareIcon;
       } else if ("rarity-epic" === variant) {
-        StarIcon2 = tmp2(11136).ExperimentalEpicIcon;
+        StarIcon2 = tmp2(11137).ExperimentalEpicIcon;
       } else if ("rarity-mythic" === variant) {
-        StarIcon2 = tmp2(11138).ExperimentalMythicIcon;
+        StarIcon2 = tmp2(11139).ExperimentalMythicIcon;
       } else {
         StarIcon2 = tmp2(9949).StarIcon;
       }

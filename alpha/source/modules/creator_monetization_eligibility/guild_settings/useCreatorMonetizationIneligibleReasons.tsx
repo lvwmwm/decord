@@ -1,11 +1,11 @@
-// Module ID: 19258
-// Function ID: 19259
+// Module ID: 19263
+// Function ID: 19264
 // Name: useCreatorMonetizationIneligibleReasons
-// Dependencies: [558, 576, 19207, 2]
+// Dependencies: [558, 576, 19212, 2]
 
-// Module 19258 (useCreatorMonetizationIneligibleReasons)
+// Module 19263 (useCreatorMonetizationIneligibleReasons)
 import react from "react" /* 576 */;
-import useCreatorMonetizationEligibilityItemsDefault from "useCreatorMonetizationEligibilityItems" /* 19207 */;
+import useCreatorMonetizationEligibilityItemsDefault from "useCreatorMonetizationEligibilityItems" /* 19212 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

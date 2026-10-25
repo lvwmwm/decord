@@ -1,9 +1,9 @@
-// Module ID: 12724
-// Function ID: 12725
+// Module ID: 12729
+// Function ID: 12730
 // Name: GameOrganizationLinkedServerCard
 // Dependencies: [19, 17, 21, 6883, 4971, 587, 558, 576, 1417, 5234, 5977, 1128, 6905, 2]
 
-// Module 12724 (GameOrganizationLinkedServerCard)
+// Module 12729 (GameOrganizationLinkedServerCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

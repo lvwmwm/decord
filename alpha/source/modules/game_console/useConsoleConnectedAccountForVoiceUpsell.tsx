@@ -1,9 +1,9 @@
-// Module ID: 18541
-// Function ID: 18542
+// Module ID: 18546
+// Function ID: 18547
 // Name: useConsoleConnectedAccountForVoiceUpsell
-// Dependencies: [6500, 6498, 5715, 9626, 1087, 558, 576, 504, 18542, 2]
+// Dependencies: [6500, 6498, 5715, 9626, 1087, 558, 576, 504, 18547, 2]
 
-// Module 18541 (useConsoleConnectedAccountForVoiceUpsell)
+// Module 18546 (useConsoleConnectedAccountForVoiceUpsell)
 import Constants from "Constants" /* 1087 */;
 import GameConsoleConstants from "GameConsoleConstants" /* 9626 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6500 */;

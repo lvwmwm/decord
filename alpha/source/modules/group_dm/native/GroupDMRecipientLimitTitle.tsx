@@ -1,17 +1,17 @@
-// Module ID: 18206
-// Function ID: 18207
+// Module ID: 18211
+// Function ID: 18212
 // Name: GroupDMRecipientLimitTitle
-// Dependencies: [19, 17, 1087, 21, 4971, 587, 1384, 558, 576, 11289, 5252, 1128, 5234, 9425, 12197, 2]
+// Dependencies: [19, 17, 1087, 21, 4971, 587, 1384, 558, 576, 11290, 5252, 1128, 5234, 9425, 12198, 2]
 
-// Module 18206 (GroupDMRecipientLimitTitle)
+// Module 18211 (GroupDMRecipientLimitTitle)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import useToken from "useToken" /* 5252 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11289 */;
-import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 12197 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11290 */;
+import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 12198 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

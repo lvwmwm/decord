@@ -1,16 +1,16 @@
-// Module ID: 15719
-// Function ID: 15720
+// Module ID: 15724
+// Function ID: 15725
 // Name: channels
-// Dependencies: [32, 5, 4827, 4823, 4845, 4903, 4874, 5630, 6378, 1087, 15704, 5626, 9264, 10796, 15720, 8827, 9267, 11475, 12, 9258, 6778, 6634, 5994, 1114, 8866, 2]
+// Dependencies: [32, 5, 4827, 4823, 4845, 4903, 4874, 5630, 6378, 1087, 15709, 5626, 9264, 10797, 15725, 8827, 9267, 11476, 12, 9258, 6778, 6634, 5994, 1114, 8866, 2]
 
-// Module 15719 (channels)
+// Module 15724 (channels)
 import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6778 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 8827 */;
 import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8866 */;
 import isPostMessageSocketDefault from "isPostMessageSocket" /* 9258 */;
 import RPCErrorDefault from "RPCError" /* 9264 */;
 import botScopedAccess from "botScopedAccess" /* 9267 */;
-import RPCHelpers from "RPCHelpers" /* 11475 */;
+import RPCHelpers from "RPCHelpers" /* 11476 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelRecord from "ChannelRecord" /* 4827 */;
@@ -21,7 +21,7 @@ import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
 import VoiceStateStore from "VoiceStateStore" /* 5630 */;
 import Constants_mod from "Constants" /* 6378 */;
 import Constants_mod2 from "Constants" /* 1087 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15720 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15725 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, state;
@@ -263,7 +263,7 @@ let obj8 = {
   handler(args) {
     let server;
     let socket;
-    const f124343 = function(type) {
+    const f124370 = function(type) {
       if (null == type) {
         const _HermesInternal = HermesInternal;
         const self5 = this;
@@ -406,8 +406,8 @@ let obj8 = {
         const tmp = new channel_id(flag2[12])(obj, "Request to select voice channel timed out.");
         throw tmp;
       });
-      const then = catchPromise.then(f124343).then;
-      catchPromise.then(f124343);
+      const then = catchPromise.then(f124370).then;
+      catchPromise.then(f124370);
       let closure_0 = obj(function*(arg0, value) {
         function validateUserAllowsJoiningVoice() {
           return closure_1_15(...arguments);

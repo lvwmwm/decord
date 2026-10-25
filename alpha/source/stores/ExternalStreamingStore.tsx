@@ -1,9 +1,9 @@
-// Module ID: 11196
-// Function ID: 11197
+// Module ID: 11197
+// Function ID: 11198
 // Name: ExternalStreamingStore
 // Dependencies: [5, 6500, 5026, 1087, 1104, 1297, 7274, 584, 8620, 6502, 1357, 504, 2]
 
-// Module 11196 (ExternalStreamingStore)
+// Module 11197 (ExternalStreamingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;

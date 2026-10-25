@@ -1,18 +1,29 @@
-// Module ID: 12332
-// Function ID: 12333
+// Module ID: 12333
+// Function ID: 12334
 // Name: conjureIdeasIntroTip
-// Dependencies: [2]
+// Dependencies: [12334, 2]
 // Exports: resolveIdeasIntroTip
 
-// Module 12332 (conjureIdeasIntroTip)
+// Module 12333 (conjureIdeasIntroTip)
+import conjureBotPermissionsTip from "conjureBotPermissionsTip" /* 12334 */;
 import size from "module_2" /* 2 */;
 
-function resolveIdeasIntroTip(turn) {
-  if (null == turn.turn) {
-    let str = null;
-    return str;
+function resolveIdeasIntroTip(arg0) {
+  let hasPublished;
+  let justRemixed;
+  let publish;
+  let turn;
+  ({ turn, publish, hasPublished, justRemixed } = arg0);
+  let tmp = null;
+  const obj = conjureBotPermissionsTip;
+  if (!obj.isBotPermissionsReviewPending(publish)) {
+    if (null == turn) {
+      let str = null;
+      tmp = str;
+    }
+    str = "card";
   }
-  str = "card";
+  return tmp;
 }
 const result = size.fileFinishedImporting("modules/conjure/tips/conjureIdeasIntroTip.tsx");
 

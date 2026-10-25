@@ -1,17 +1,23 @@
 // Module ID: 15552
 // Function ID: 15553
-// Dependencies: [15553, 15567]
+// Dependencies: [15553]
 
 // Module 15552
-import _mod15553 from "module_15553" /* 15553 */;
-import _mod15567 from "module_15567" /* 15567 */;
+import module_15553_mod from "module_15553" /* 15553 */;
 
+const call = prototype.call;
+let module_15553 = module_15553_mod;
+if (module_15553) {
+  const bind = prototype.bind;
+  module_15553 = bind.bind(call, call);
+}
+if (!module_15553) {
+  module_15553 = (arg0) => {
+    let closure_0 = arg0;
+    return function() {
+      return call(...arguments);
+    };
+  };
+}
 
-export default (arg0) => {
-  const tmp = _mod15553(arg0, "string");
-  let text = tmp;
-  if (!_mod15567(tmp)) {
-    text = `${tmp}`;
-  }
-  return text;
-};
+export default module_15553;

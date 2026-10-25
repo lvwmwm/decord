@@ -1,16 +1,16 @@
-// Module ID: 16300
-// Function ID: 16301
+// Module ID: 16305
+// Function ID: 16306
 // Name: BountiesScrollVideoItem
-// Dependencies: [5, 32, 19, 17, 9452, 7775, 6710, 21, 558, 576, 16301, 504, 16302, 14129, 16307, 16308, 16309, 16305, 14137, 6717, 6715, 16312, 16317, 2]
+// Dependencies: [5, 32, 19, 17, 9452, 7775, 6710, 21, 558, 576, 16306, 504, 16307, 14134, 16312, 16313, 16314, 16310, 14142, 6717, 6715, 16317, 16322, 2]
 
-// Module 16300 (BountiesScrollVideoItem)
+// Module 16305 (BountiesScrollVideoItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import QuestConstants from "QuestConstants" /* 6710 */;
 import QuestContent from "QuestContent" /* 6715 */;
 import AdCreativeType from "AdCreativeType" /* 6717 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 14137 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 16301 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 14142 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 16306 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -433,7 +433,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
   let tmp21;
   let tmp7;
   let tmp8;
-  const f126275 = () => {
+  const f126302 = () => {
     let currentBalance = null;
     if (isActive) {
       currentBalance = VirtualCurrencyStore.getCurrentBalance();
@@ -492,9 +492,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
   const handlePlayerStateChange = isEndCardVisible({ isActive, playerRef: ref }).handlePlayerStateChange;
   [tmp17, tmp18] = isActive(obj.useState(isActive), 2);
   isActive(obj.useState(isActive), 2);
-  [tmp20, tmp21] = isActive(obj.useState(f126275), 2);
+  [tmp20, tmp21] = isActive(obj.useState(f126302), 2);
   VirtualCurrencyStore = tmp21;
-  isActive(obj.useState(f126275), 2);
+  isActive(obj.useState(f126302), 2);
   const first = tmp5(obj.useState(0), 2)[0];
   isActive(obj.useState(0), 2);
   const tmp12 = flushProgress;
@@ -804,7 +804,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesScro
       return <closure_12 bounty={bounty} sourceQuestContent={sourceQuestContent} width={dependencyMap} height={_asyncToGenerator} index={_slicedToArray} isActive={isActive} isRecapPageRevealed={flag} isRecapPageOnTop={flag2} isScrollingInBoundsSharedValue={BountyStore} shouldLoadHls={shouldLoadHls} softDownloadCapsEnabled={flag3} isScrollIndicatorEnabled={flag4} />;
     }
   };
-  const BillableAdPlacementImpressionTrackerNative = bounty(14137).BillableAdPlacementImpressionTrackerNative;
+  const BillableAdPlacementImpressionTrackerNative = bounty(14142).BillableAdPlacementImpressionTrackerNative;
   return flag3(BillableAdPlacementImpressionTrackerNative, obj);
 });
 let size = size_mod;

@@ -1,9 +1,9 @@
-// Module ID: 19306
-// Function ID: 19307
+// Module ID: 19311
+// Function ID: 19312
 // Name: GuildRoleSubscriptionListingPreview
-// Dependencies: [32, 109, 19, 17, 21, 4971, 587, 558, 576, 7339, 5234, 1128, 16583, 16579, 5669, 19307, 19282, 19301, 16590, 2]
+// Dependencies: [32, 109, 19, 17, 21, 4971, 587, 558, 576, 7339, 5234, 1128, 16588, 16584, 5669, 19312, 19287, 19306, 16595, 2]
 
-// Module 19306 (GuildRoleSubscriptionListingPreview)
+// Module 19311 (GuildRoleSubscriptionListingPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,12 +11,12 @@ import intl2 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import PriceUtils from "PriceUtils" /* 7339 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16579 */;
-import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 16583 */;
-import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 16590 */;
-import GuildRoleSubscriptionsActionCreatorExtras from "GuildRoleSubscriptionsActionCreatorExtras" /* 19282 */;
-import GuildRoleSubscriptionBenefitPreview2 from "GuildRoleSubscriptionBenefitPreview" /* 19301 */;
-import GuildPremiumRoleSubscribeButton from "GuildPremiumRoleSubscribeButton" /* 19307 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16584 */;
+import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 16588 */;
+import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 16595 */;
+import GuildRoleSubscriptionsActionCreatorExtras from "GuildRoleSubscriptionsActionCreatorExtras" /* 19287 */;
+import GuildRoleSubscriptionBenefitPreview2 from "GuildRoleSubscriptionBenefitPreview" /* 19306 */;
+import GuildPremiumRoleSubscribeButton from "GuildPremiumRoleSubscribeButton" /* 19312 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -523,7 +523,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BenefitsSect
       if (cResult[1] === label) {
         tmp6 = cResult[2];
       }
-      const tmp8 = listingId === guildId(19282).NEW_LISTING_EDIT_STATE_ID;
+      const tmp8 = listingId === guildId(19287).NEW_LISTING_EDIT_STATE_ID;
       let closure_2 = tmp8;
       if (cResult[3] === benefits) {
         if (cResult[4] === guildId) {

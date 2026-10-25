@@ -1,19 +1,19 @@
-// Module ID: 14125
-// Function ID: 14126
+// Module ID: 14130
+// Function ID: 14131
 // Name: QuestMatchingUtils
-// Dependencies: [32, 2045, 11192, 6710, 1087, 2026, 7798, 7782, 7796, 13716, 2]
+// Dependencies: [32, 2045, 11193, 6710, 1087, 2026, 7798, 7782, 7796, 13721, 2]
 // Exports: allPlayOnDesktopQuestsByApplicationId, getEligibleQuestsForApplicationId, getQuestApplicationIdsForRunningGame, getQuestByApplicationId, getQuestsFromActivities
 
-// Module 14125 (QuestMatchingUtils)
+// Module 14130 (QuestMatchingUtils)
 import Constants from "Constants" /* 1087 */;
 import Constants2 from "Constants" /* 2026 */;
 import QuestExpirationUtils from "QuestExpirationUtils" /* 7782 */;
 import utils_QuestUtils from "utils/QuestUtils" /* 7796 */;
 import QuestTaskUtils from "QuestTaskUtils" /* 7798 */;
-import getApplicationIdsForGameDefault from "getApplicationIdsForGame" /* 13716 */;
+import getApplicationIdsForGameDefault from "getApplicationIdsForGame" /* 13721 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
-import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 11192 */;
+import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 11193 */;
 import QuestConstants from "QuestConstants" /* 6710 */;
 import size from "module_2" /* 2 */;
 

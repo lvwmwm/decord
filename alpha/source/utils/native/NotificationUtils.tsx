@@ -1,14 +1,14 @@
-// Module ID: 13314
-// Function ID: 13315
+// Module ID: 13319
+// Function ID: 13320
 // Name: NotificationUtils
-// Dependencies: [5, 13305, 1087, 13308, 1267, 10753, 7891, 11522, 2]
+// Dependencies: [5, 13310, 1087, 13313, 1267, 10753, 7891, 11523, 2]
 
-// Module 13314 (NotificationUtils)
+// Module 13319 (NotificationUtils)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import PushNotificationDefault from "PushNotification" /* 10753 */;
-import SoundUtils from "SoundUtils" /* 11522 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13305 */;
+import SoundUtils from "SoundUtils" /* 11523 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13310 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

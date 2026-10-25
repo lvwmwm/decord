@@ -1,14 +1,14 @@
-// Module ID: 10981
-// Function ID: 10982
+// Module ID: 10982
+// Function ID: 10983
 // Name: EducationIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 10980, 5668, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 10981, 5668, 2]
 
-// Module 10981 (EducationIcon)
+// Module 10982 (EducationIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5668 */;
-import AssetRegistry from "AssetRegistry" /* 10980 */;
+import AssetRegistry from "AssetRegistry" /* 10981 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,9 +1,9 @@
-// Module ID: 18275
-// Function ID: 18276
+// Module ID: 18280
+// Function ID: 18281
 // Name: ChannelSettingsPermissionsOverview
-// Dependencies: [32, 5, 19, 17, 4878, 4823, 4877, 4845, 4913, 1392, 1087, 21, 4971, 587, 558, 576, 5908, 1128, 5604, 4908, 11308, 8974, 10093, 12, 6987, 11785, 6903, 1505, 11148, 10121, 16666, 504, 2000, 10829, 18276, 5595, 9699, 7411, 2]
+// Dependencies: [32, 5, 19, 17, 4878, 4823, 4877, 4845, 4913, 1392, 1087, 21, 4971, 587, 558, 576, 5908, 1128, 5604, 4908, 11309, 8974, 10093, 12, 6987, 11786, 6903, 1505, 11149, 10121, 16671, 504, 2000, 10830, 18281, 5595, 9699, 7411, 2]
 
-// Module 18275 (ChannelSettingsPermissionsOverview)
+// Module 18280 (ChannelSettingsPermissionsOverview)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -16,9 +16,9 @@ import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5595 */;
 import TableRow3 from "TableRow" /* 6903 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
 import RoleLabel from "RoleLabel" /* 10121 */;
-import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10829 */;
-import CircleMinusIcon2 from "CircleMinusIcon" /* 16666 */;
-import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 18276 */;
+import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10830 */;
+import CircleMinusIcon2 from "CircleMinusIcon" /* 16671 */;
+import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 18281 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
@@ -86,7 +86,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
         const tmp15 = globalThis;
         const _Symbol = Symbol;
         if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-          const tmp19 = closure_16(tmp(11785).RefreshIcon, {});
+          const tmp19 = closure_16(tmp(11786).RefreshIcon, {});
           let intl2 = tmp(1128).intl;
           const stringResult = intl2.string(tmp(1128).t.NVwuHq);
           cResult[10] = tmp19;
@@ -390,7 +390,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     formatToPlainStringResult = formatToPlainString(t.OIhm0M, obj4);
   }
   obj5 = { title: formatToPlainStringResult, hasIcons: true, children: tmp6(TableRow, obj6) };
-  obj6 = { icon: tmp6(tmp3(11785).RefreshIcon, {}), label: intl2.string(tmp3(1128).t.NVwuHq), onPress: callback };
+  obj6 = { icon: tmp6(tmp3(11786).RefreshIcon, {}), label: intl2.string(tmp3(1128).t.NVwuHq), onPress: callback };
   TableRow = tmp3(6903).TableRow;
   intl2 = tmp3(1128).intl;
   return closure_16(tmp7, obj2);
@@ -482,7 +482,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddPer
     }
     const _Symbol2 = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp13 = closure_16(navigation(11148).PlusMediumIcon, {});
+      const tmp13 = closure_16(navigation(11149).PlusMediumIcon, {});
       const intl2 = tmp(1128).intl;
       const stringResult1 = intl2.string(navigation(1128).t.fVWxvT);
       cResult[3] = tmp13;
@@ -510,7 +510,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddPer
     }
     const _Symbol3 = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp21 = closure_16(navigation(11148).PlusMediumIcon, {});
+      const tmp21 = closure_16(navigation(11149).PlusMediumIcon, {});
       const intl3 = tmp(1128).intl;
       const stringResult2 = intl3.string(navigation(1128).t.riesLt);
       cResult[7] = tmp21;
@@ -673,7 +673,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleRo
         tmp11 = null;
         if (!tmp4) {
           const obj3 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, accessibilityLabel: intl.string(intl5.t.N86XcP) };
-          const CircleMinusIcon = tmp(16666).CircleMinusIcon;
+          const CircleMinusIcon = tmp(16671).CircleMinusIcon;
           intl = tmp(1128).intl;
           tmp11 = authStore3(CircleMinusIcon, obj3);
         }
@@ -710,7 +710,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleRo
     tmp2Result = null;
     if (!tmp) {
       const obj2 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, accessibilityLabel: intl.string(intl5.t.N86XcP) };
-      const CircleMinusIcon = tmp3(16666).CircleMinusIcon;
+      const CircleMinusIcon = tmp3(16671).CircleMinusIcon;
       intl = tmp3(1128).intl;
       tmp2Result = tmp2(CircleMinusIcon, obj2);
     }
@@ -1002,7 +1002,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
     let tmp6 = null;
     if (isEditing) {
       const obj2 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, accessibilityLabel: intl.string(intl5.t.N86XcP) };
-      const CircleMinusIcon = tmp(16666).CircleMinusIcon;
+      const CircleMinusIcon = tmp(16671).CircleMinusIcon;
       intl = tmp(1128).intl;
       tmp6 = authStore3(CircleMinusIcon, obj2);
     }
@@ -1196,7 +1196,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
     class N {
       constructor(arg0) {
         closure_0 = onSelectRow;
-        obj = { guildId: guild_id, user: onSelectRow, isEditing: closure_0, onSelect() { /* body not rendered: F155586 */ }, onDelete() { /* body not rendered: F155587 */ } };
+        obj = { guildId: guild_id, user: onSelectRow, isEditing: closure_0, onSelect() { /* body not rendered: F155617 */ }, onDelete() { /* body not rendered: F155618 */ } };
         return closure_1_16(closure_1_24, obj, onSelectRow.id);
       }
     }

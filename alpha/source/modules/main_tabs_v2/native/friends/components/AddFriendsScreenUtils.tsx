@@ -1,10 +1,10 @@
-// Module ID: 17465
-// Function ID: 17466
+// Module ID: 17470
+// Function ID: 17471
 // Name: AddFriendsScreenUtils
-// Dependencies: [5, 4823, 1087, 4976, 10629, 7411, 5662, 1128, 13153, 7566, 7414, 2]
+// Dependencies: [5, 4823, 1087, 4976, 10629, 7411, 5662, 1128, 13158, 7566, 7414, 2]
 // Exports: acceptIncomingRequest, addContactSuggestion, dismissIncomingRequest, sendWave
 
-// Module 17465 (AddFriendsScreenUtils)
+// Module 17470 (AddFriendsScreenUtils)
 import Constants from "Constants" /* 1087 */;
 import MessageConstants from "MessageConstants" /* 4976 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7414 */;

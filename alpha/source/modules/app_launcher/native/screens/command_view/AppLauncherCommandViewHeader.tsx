@@ -1,16 +1,16 @@
-// Module ID: 12144
-// Function ID: 12145
+// Module ID: 12145
+// Function ID: 12146
 // Name: AppLauncherCommandViewHeader
-// Dependencies: [19, 17, 1504, 21, 12120, 4971, 587, 558, 576, 12028, 5052, 5252, 8614, 5669, 5234, 12145, 2]
+// Dependencies: [19, 17, 1504, 21, 12121, 4971, 587, 558, 576, 12029, 5052, 5252, 8614, 5669, 5234, 12146, 2]
 
-// Module 12144 (AppLauncherCommandViewHeader)
+// Module 12145 (AppLauncherCommandViewHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
 import useAvatarColorDefault from "useAvatarColor" /* 8614 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12028 */;
-import AppLauncherBackButton from "AppLauncherBackButton" /* 12120 */;
-import CommandDetailsOverflowMenuDefault from "CommandDetailsOverflowMenu" /* 12145 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12029 */;
+import AppLauncherBackButton from "AppLauncherBackButton" /* 12121 */;
+import CommandDetailsOverflowMenuDefault from "CommandDetailsOverflowMenu" /* 12146 */;
 import react from "react" /* 19 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
 import Fragment from "Fragment" /* 21 */;
@@ -73,7 +73,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
     application = section.application;
   }
   if (cResult[0] !== application) {
-    const tmpResult = scrollOffsetY(12028);
+    const tmpResult = scrollOffsetY(12029);
     const appLauncherIconSource = tmpResult.getAppLauncherIconSource(application);
     cResult[0] = application;
     cResult[1] = appLauncherIconSource;
@@ -496,7 +496,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   items2[1] = prop;
   const obj11 = { style: items3 };
   items3 = [tmp.headerBannerOverlay, animatedStyle2];
-  items4 = [tmp16(section(5052).View, obj11), tmp16(section(12120), { onPress: onPressBack }), , , ];
+  items4 = [tmp16(section(5052).View, obj11), tmp16(section(12121), { onPress: onPressBack }), , , ];
   const obj12 = { lineClamp: 1, animated: true, style: items5, variant: "heading-lg/bold", color: "text-overlay-light", children: displayName };
   items5 = [tmp.appSmallName, animatedStyle];
   displayName = undefined;
@@ -507,7 +507,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   items4[2] = tmp16(Text, obj12);
   const obj13 = { style: tmp.overflowMenuContainer, children: tmp16(tmp8Result, { commandId: id }) };
   id = undefined;
-  tmp8Result = section(12145);
+  tmp8Result = section(12146);
   if (command != null) {
     const rootCommand = command.rootCommand;
     if (rootCommand != null) {

@@ -1,15 +1,15 @@
-// Module ID: 16649
-// Function ID: 16650
+// Module ID: 16654
+// Function ID: 16655
 // Name: HappeningNowCard
-// Dependencies: [109, 19, 17, 16648, 21, 4971, 558, 576, 7038, 5146, 6905, 5234, 2]
+// Dependencies: [109, 19, 17, 16653, 21, 4971, 558, 576, 7038, 5146, 6905, 5234, 2]
 
-// Module 16649 (HappeningNowCard)
+// Module 16654 (HappeningNowCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 7038 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 16648 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 16653 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

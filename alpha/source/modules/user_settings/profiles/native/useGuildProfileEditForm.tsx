@@ -1,9 +1,9 @@
-// Module ID: 15954
-// Function ID: 15955
+// Module ID: 15959
+// Function ID: 15960
 // Name: useGuildProfileEditForm
-// Dependencies: [109, 5, 19, 8649, 7703, 4883, 4845, 6701, 1392, 1087, 4996, 558, 576, 504, 12815, 4818, 11186, 15955, 11182, 4998, 7085, 15852, 6713, 15853, 6374, 1128, 8656, 2]
+// Dependencies: [109, 5, 19, 8649, 7703, 4883, 4845, 6701, 1392, 1087, 4996, 558, 576, 504, 12820, 4818, 11187, 15960, 11183, 4998, 7085, 15857, 6713, 15858, 6374, 1128, 8656, 2]
 
-// Module 15954 (useGuildProfileEditForm)
+// Module 15959 (useGuildProfileEditForm)
 import Constants from "Constants" /* 1087 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4996 */;
 import UserProfileSettingsStore2 from "UserProfileSettingsStore" /* 8649 */;

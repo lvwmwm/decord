@@ -1,9 +1,9 @@
-// Module ID: 13979
-// Function ID: 13980
+// Module ID: 13984
+// Function ID: 13985
 // Name: EditAttachmentActionSheet
 // Dependencies: [5, 32, 19, 6010, 4976, 1087, 21, 558, 576, 8659, 8758, 1405, 1128, 4980, 7566, 7248, 5234, 7180, 6900, 5244, 5977, 587, 7298, 2]
 
-// Module 13979 (EditAttachmentActionSheet)
+// Module 13984 (EditAttachmentActionSheet)
 import Constants from "Constants" /* 1087 */;
 import MessageConstants from "MessageConstants" /* 4976 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4980 */;

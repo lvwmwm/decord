@@ -1,14 +1,14 @@
-// Module ID: 16933
-// Function ID: 16934
+// Module ID: 16938
+// Function ID: 16939
 // Name: StaffBadgeIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 16934, 5668, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 16939, 5668, 2]
 
-// Module 16933 (StaffBadgeIcon)
+// Module 16938 (StaffBadgeIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5668 */;
-import AssetRegistry from "AssetRegistry" /* 16934 */;
+import AssetRegistry from "AssetRegistry" /* 16939 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

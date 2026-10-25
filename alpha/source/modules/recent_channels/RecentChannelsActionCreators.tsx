@@ -1,10 +1,10 @@
-// Module ID: 11250
-// Function ID: 11251
+// Module ID: 11251
+// Function ID: 11252
 // Name: RecentChannelsActionCreators
 // Dependencies: [5, 1087, 4804, 1241, 584, 1267, 2]
 // Exports: bulkClearRecents
 
-// Module 11250 (RecentChannelsActionCreators)
+// Module 11251 (RecentChannelsActionCreators)
 import Constants from "Constants" /* 1087 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4804 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

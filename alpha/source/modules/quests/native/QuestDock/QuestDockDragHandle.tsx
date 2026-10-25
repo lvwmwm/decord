@@ -1,14 +1,14 @@
-// Module ID: 16523
-// Function ID: 16524
+// Module ID: 16528
+// Function ID: 16529
 // Name: QuestDockDragHandle
-// Dependencies: [19, 17, 6710, 16436, 21, 4971, 558, 576, 16437, 16438, 5052, 5247, 1128, 5582, 7168, 16435, 2]
+// Dependencies: [19, 17, 6710, 16441, 21, 4971, 558, 576, 16442, 16443, 5052, 5247, 1128, 5582, 7168, 16440, 2]
 
-// Module 16523 (QuestDockDragHandle)
+// Module 16528 (QuestDockDragHandle)
 import react_native from "react-native" /* 17 */;
 import spring from "spring" /* 5247 */;
 import QuestConstants from "QuestConstants" /* 6710 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 16436 */;
+import QuestDockConstants from "QuestDockConstants" /* 16441 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -64,11 +64,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   isExpanded = isExpanded.isExpanded;
   const variant = isExpanded.variant;
   const tmp4 = closure_9();
-  const context = youBarHorizontalMargin.useContext(activeQuestDockMode(16437).QuestDockGestureContext);
+  const context = youBarHorizontalMargin.useContext(activeQuestDockMode(16442).QuestDockGestureContext);
   activeQuestDockMode = context.activeQuestDockMode;
   const windowDimensions = context.windowDimensions;
   dependencyMap = tmp6;
-  let obj2 = activeQuestDockMode(16438);
+  let obj2 = activeQuestDockMode(16443);
   youBarHorizontalMargin = obj2.useYouBarHorizontalMargin();
   const obj3 = activeQuestDockMode(5052);
   const fn = function n() {
@@ -236,7 +236,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
               tmp37 = tmp40;
             }
           }
-          const obj14 = { style: animatedStyle1, layout: tmp(16435).dimensionsLayoutTransition, children: items };
+          const obj14 = { style: animatedStyle1, layout: tmp(16440).dimensionsLayoutTransition, children: items };
           items = [tmp19, tmp28];
           const tmp35 = windowDimensions(7168);
           const tmp36 = closure_8(tmp35, obj14);
@@ -291,11 +291,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp = closure_9();
   let tmp3 = dependencyMap;
   const tmp2 = activeQuestDockMode;
-  const context = youBarHorizontalMargin.useContext(activeQuestDockMode(16437).QuestDockGestureContext);
+  const context = youBarHorizontalMargin.useContext(activeQuestDockMode(16442).QuestDockGestureContext);
   activeQuestDockMode = context.activeQuestDockMode;
   const windowDimensions = context.windowDimensions;
   dependencyMap = tmp5;
-  let obj = activeQuestDockMode(16438);
+  let obj = activeQuestDockMode(16443);
   youBarHorizontalMargin = obj.useYouBarHorizontalMargin();
   let obj2 = activeQuestDockMode(5052);
   const fn = function n() {
@@ -376,7 +376,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const animatedStyle3 = obj8.useAnimatedStyle(fn3);
   const obj10 = { style: items, children: tmp14(tmp15, obj11) };
   items = [tmp.dragHandleWrapper, animatedStyle];
-  obj11 = { style: animatedStyle1, layout: activeQuestDockMode(16435).dimensionsLayoutTransition, children: items2 };
+  obj11 = { style: animatedStyle1, layout: activeQuestDockMode(16440).dimensionsLayoutTransition, children: items2 };
   const tmp13 = windowDimensions(7168);
   tmp15 = windowDimensions(7168);
   const obj12 = { style: items1, children: closure_7(ActionSheetHeaderBar, { variant: "overlay", accessibilityLabel: stringResult }) };

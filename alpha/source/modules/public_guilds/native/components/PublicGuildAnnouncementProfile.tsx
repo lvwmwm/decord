@@ -1,9 +1,9 @@
-// Module ID: 11327
-// Function ID: 11328
+// Module ID: 11328
+// Function ID: 11329
 // Name: PublicGuildAnnouncementProfile
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 8405, 5669, 1202, 11328, 1128, 5234, 5265, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 8405, 5669, 1202, 11329, 1128, 5234, 5265, 2]
 
-// Module 11327 (PublicGuildAnnouncementProfile)
+// Module 11328 (PublicGuildAnnouncementProfile)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,7 +13,7 @@ import Text_Text from "Text/Text" /* 5234 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5265 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import PublicGuildsUtils from "PublicGuildsUtils" /* 8405 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11328 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11329 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;

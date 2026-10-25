@@ -1,9 +1,9 @@
-// Module ID: 15935
-// Function ID: 15936
+// Module ID: 15940
+// Function ID: 15941
 // Name: UserProfileTryItOutEditForm
-// Dependencies: [109, 19, 17, 8649, 7304, 21, 558, 576, 7253, 7278, 15833, 1128, 15846, 8732, 15849, 15855, 15906, 1633, 15936, 504, 8675, 11054, 8658, 8733, 8718, 8729, 587, 15938, 11055, 11075, 5244, 9426, 15928, 11074, 11727, 15940, 5037, 2]
+// Dependencies: [109, 19, 17, 8649, 7304, 21, 558, 576, 7253, 7278, 15838, 1128, 15851, 8732, 15854, 15860, 15911, 1633, 15941, 504, 8675, 11055, 8658, 8733, 8718, 8729, 587, 15943, 11056, 11076, 5244, 9426, 15933, 11075, 11728, 15945, 5037, 2]
 
-// Module 15935 (UserProfileTryItOutEditForm)
+// Module 15940 (UserProfileTryItOutEditForm)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -19,19 +19,19 @@ import useProfileThemeDefault from "useProfileTheme" /* 8718 */;
 import useUserProfileColors from "useUserProfileColors" /* 8729 */;
 import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8732 */;
 import useBadgesDefault from "useBadges" /* 8733 */;
-import userSettingToActivity from "userSettingToActivity" /* 11054 */;
-import UserProfileCustomStatusBubbleDefault from "UserProfileCustomStatusBubble" /* 11055 */;
-import UserProfileGradientContainerDefault from "UserProfileGradientContainer" /* 11074 */;
-import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 11075 */;
-import useOpenChangeBannerActionSheetDefault from "useOpenChangeBannerActionSheet" /* 15833 */;
-import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 15846 */;
-import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 15849 */;
-import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 15855 */;
-import usePremiumTryItOutPresetShuffleDefault from "usePremiumTryItOutPresetShuffle" /* 15906 */;
-import UserProfileTryItOutFieldsDefault from "UserProfileTryItOutFields" /* 15928 */;
-import UserProfileFloatingUpsell from "UserProfileFloatingUpsell" /* 15936 */;
-import EditUserProfileAvatarDefault from "EditUserProfileAvatar" /* 15938 */;
-import UserProfileTryItOutGetPremiumUpsellDefault from "UserProfileTryItOutGetPremiumUpsell" /* 15940 */;
+import userSettingToActivity from "userSettingToActivity" /* 11055 */;
+import UserProfileCustomStatusBubbleDefault from "UserProfileCustomStatusBubble" /* 11056 */;
+import UserProfileGradientContainerDefault from "UserProfileGradientContainer" /* 11075 */;
+import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 11076 */;
+import useOpenChangeBannerActionSheetDefault from "useOpenChangeBannerActionSheet" /* 15838 */;
+import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 15851 */;
+import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 15854 */;
+import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 15860 */;
+import usePremiumTryItOutPresetShuffleDefault from "usePremiumTryItOutPresetShuffle" /* 15911 */;
+import UserProfileTryItOutFieldsDefault from "UserProfileTryItOutFields" /* 15933 */;
+import UserProfileFloatingUpsell from "UserProfileFloatingUpsell" /* 15941 */;
+import EditUserProfileAvatarDefault from "EditUserProfileAvatar" /* 15943 */;
+import UserProfileTryItOutGetPremiumUpsellDefault from "UserProfileTryItOutGetPremiumUpsell" /* 15945 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -400,7 +400,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileT
                                                                                           }
                                                                                           if (cResult[96] !== onLayout) {
                                                                                             const obj9 = { children: React4(UserProfileTryItOutGetPremiumUpsellDefault, obj10) };
-                                                                                            const DisableCustomTheme = tmp(11727).DisableCustomTheme;
+                                                                                            const DisableCustomTheme = tmp(11728).DisableCustomTheme;
                                                                                             obj10 = { onLayout };
                                                                                             const tmp83 = React4(DisableCustomTheme, obj9);
                                                                                             cResult[96] = onLayout;
@@ -769,7 +769,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileT
   items2[1] = authStore(tmpResult, obj9);
   items10 = [authStore(tmp22, obj16), ];
   const obj18 = { children: React4(UserProfileTryItOutGetPremiumUpsellDefault, { onLayout }) };
-  const DisableCustomTheme = tmp5(11727).DisableCustomTheme;
+  const DisableCustomTheme = tmp5(11728).DisableCustomTheme;
   items10[1] = React4(DisableCustomTheme, obj18);
   return React4(ThemeContextProvider, obj6);
 });

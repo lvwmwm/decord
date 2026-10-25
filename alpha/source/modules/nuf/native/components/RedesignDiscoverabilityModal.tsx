@@ -1,9 +1,9 @@
-// Module ID: 18900
-// Function ID: 18901
+// Module ID: 18905
+// Function ID: 18906
 // Name: RedesignDiscoverabilityModal
-// Dependencies: [19, 17, 13576, 1392, 1087, 21, 4971, 587, 5268, 558, 576, 1505, 504, 13583, 1107, 18901, 13604, 13597, 1275, 13596, 1128, 7095, 2]
+// Dependencies: [19, 17, 13581, 1392, 1087, 21, 4971, 587, 5268, 558, 576, 1505, 504, 13588, 1107, 18906, 13609, 13602, 1275, 13601, 1128, 7095, 2]
 
-// Module 18900 (RedesignDiscoverabilityModal)
+// Module 18905 (RedesignDiscoverabilityModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,9 +11,9 @@ import Constants from "Constants" /* 1087 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
 import NavigatorConstants from "NavigatorConstants" /* 5268 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 13576 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 13583 */;
-import NUFActionCreators from "NUFActionCreators" /* 13604 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 13581 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 13588 */;
+import NUFActionCreators from "NUFActionCreators" /* 13609 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import createStyles_mod from "createStyles" /* 4971 */;
@@ -232,7 +232,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Discov
       cResult[11] = tmp18;
       tmp15 = tmp18;
     }
-    const tmp14 = jsx(allowPhone(13597), { onNext: tmp9, loading: false, initialName: name });
+    const tmp14 = jsx(allowPhone(13602), { onNext: tmp9, loading: false, initialName: name });
     cResult[6] = tmp9;
     cResult[7] = name;
     cResult[8] = tmp14;
@@ -272,7 +272,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Discov
     const result = obj.startContactSyncForDiscoverability(arg0);
     onComplete();
   }, items1);
-  allowPhone(13597);
+  allowPhone(13602);
   if (name == null) {
     name = "";
   }

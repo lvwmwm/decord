@@ -1,10 +1,10 @@
-// Module ID: 14865
-// Function ID: 14866
+// Module ID: 14870
+// Function ID: 14871
 // Name: OutboundPromotionCard
-// Dependencies: [32, 19, 17, 1087, 21, 4971, 587, 6707, 558, 576, 7248, 1128, 5705, 5265, 5234, 5205, 9560, 14866, 5909, 14867, 2002, 9561, 5669, 5244, 5210, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 4971, 587, 6707, 558, 576, 7248, 1128, 5705, 5265, 5234, 5205, 9560, 14871, 5909, 14872, 2002, 9561, 5669, 5244, 5210, 2]
 // Exports: default
 
-// Module 14865 (OutboundPromotionCard)
+// Module 14870 (OutboundPromotionCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

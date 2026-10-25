@@ -1,16 +1,16 @@
-// Module ID: 17559
-// Function ID: 17560
+// Module ID: 17564
+// Function ID: 17565
 // Name: FavoritesGuildActionSheet
-// Dependencies: [19, 4826, 21, 17560, 17561, 17562, 504, 7298, 7248, 1128, 7294, 8544, 3412, 5689, 6672, 17563, 2002, 12141, 17567, 7061, 2]
+// Dependencies: [19, 4826, 21, 17565, 17566, 17567, 504, 7298, 7248, 1128, 7294, 8544, 3412, 5689, 6672, 17568, 2002, 12142, 17572, 7061, 2]
 // Exports: default
 
-// Module 17559 (FavoritesGuildActionSheet)
+// Module 17564 (FavoritesGuildActionSheet)
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
-import useFavoritesGuildHideActionDefault from "useFavoritesGuildHideAction" /* 17560 */;
-import useFavoritesGuildResetActionDefault from "useFavoritesGuildResetAction" /* 17561 */;
-import useFavoritesGuildAutoAddedThreadsActionDefault from "useFavoritesGuildAutoAddedThreadsAction" /* 17562 */;
-import openFavoritesGuildChannelSortModalDefault from "openFavoritesGuildChannelSortModal" /* 17567 */;
+import useFavoritesGuildHideActionDefault from "useFavoritesGuildHideAction" /* 17565 */;
+import useFavoritesGuildResetActionDefault from "useFavoritesGuildResetAction" /* 17566 */;
+import useFavoritesGuildAutoAddedThreadsActionDefault from "useFavoritesGuildAutoAddedThreadsAction" /* 17567 */;
+import openFavoritesGuildChannelSortModalDefault from "openFavoritesGuildChannelSortModal" /* 17572 */;
 import react from "react" /* 19 */;
 import FavoriteStore from "FavoriteStore" /* 4826 */;
 import Fragment from "Fragment" /* 21 */;
@@ -79,7 +79,7 @@ export default function FavoritesGuildActionSheet(onClose) {
       onPress() {
           onClose();
           const obj = ModalActionCreatorsDefault;
-          obj.pushLazy(asyncRequire(17563, dependencyMap.paths), undefined, "FavoritesGuildCleanupModal");
+          obj.pushLazy(asyncRequire(17568, dependencyMap.paths), undefined, "FavoritesGuildCleanupModal");
         }
     };
     const ActionSheetRow = tmp6(7294).ActionSheetRow;
@@ -104,7 +104,7 @@ export default function FavoritesGuildActionSheet(onClose) {
     };
     ActionSheetRow2 = tmp6(7294).ActionSheetRow;
     intl3 = tmp6(1128).intl;
-    obj12 = { IconComponent: onClose(12141).ArrowsUpDownIcon };
+    obj12 = { IconComponent: onClose(12142).ArrowsUpDownIcon };
     Icon3 = tmp6(7294).ActionSheetRow.Icon;
     tmp9Result = tmp9(Group2, obj10);
   }

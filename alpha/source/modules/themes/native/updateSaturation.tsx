@@ -1,11 +1,11 @@
-// Module ID: 15683
-// Function ID: 15684
+// Module ID: 15688
+// Function ID: 15689
 // Name: react-native
-// Dependencies: [15684, 2]
+// Dependencies: [15689, 2]
 // Exports: updateSaturation
 
-// Module 15683 (react-native)
-import react_nativeDefault from "react-native" /* 15684 */;
+// Module 15688 (react-native)
+import react_nativeDefault from "react-native" /* 15689 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/themes/native/updateSaturation.tsx");

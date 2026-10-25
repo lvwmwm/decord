@@ -1,9 +1,9 @@
-// Module ID: 16253
-// Function ID: 16254
+// Module ID: 16258
+// Function ID: 16259
 // Name: ConnectedAccount
-// Dependencies: [5, 32, 19, 17, 6500, 4845, 1087, 7276, 21, 4971, 1202, 587, 6651, 7274, 558, 576, 504, 5244, 1128, 5234, 6883, 6502, 6898, 5037, 16254, 11051, 5908, 5978, 9609, 16255, 16258, 7295, 7275, 11267, 5660, 2067, 7959, 9216, 11785, 3186, 1417, 4978, 9218, 6904, 6903, 2]
+// Dependencies: [5, 32, 19, 17, 6500, 4845, 1087, 7276, 21, 4971, 1202, 587, 6651, 7274, 558, 576, 504, 5244, 1128, 5234, 6883, 6502, 6898, 5037, 16259, 11052, 5908, 5978, 9609, 16260, 16263, 7295, 7275, 11268, 5660, 2067, 7959, 9216, 11786, 3186, 1417, 4978, 9218, 6904, 6903, 2]
 
-// Module 16253 (ConnectedAccount)
+// Module 16258 (ConnectedAccount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
@@ -21,10 +21,10 @@ import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreat
 import Constants2 from "Constants" /* 7276 */;
 import TableSwitchRow2 from "TableSwitchRow" /* 7295 */;
 import XLargeBoldIcon from "XLargeBoldIcon" /* 9218 */;
-import InfoBoxDefault from "InfoBox" /* 11051 */;
-import shouldWarnConnectedAccountTwoWayDefault from "shouldWarnConnectedAccountTwoWay" /* 16254 */;
-import XboxTwoWayLinkUpsell from "XboxTwoWayLinkUpsell" /* 16255 */;
-import PlayStationTwoWayLinkUpsell from "PlayStationTwoWayLinkUpsell" /* 16258 */;
+import InfoBoxDefault from "InfoBox" /* 11052 */;
+import shouldWarnConnectedAccountTwoWayDefault from "shouldWarnConnectedAccountTwoWay" /* 16259 */;
+import XboxTwoWayLinkUpsell from "XboxTwoWayLinkUpsell" /* 16260 */;
+import PlayStationTwoWayLinkUpsell from "PlayStationTwoWayLinkUpsell" /* 16263 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -894,35 +894,35 @@ class ConnectedAccount extends PureComponent {
     const type = account.type;
     const tmp4 = MetadataFields;
     if (constants.REDDIT === type) {
-      const tmp2Result = account(11267);
+      const tmp2Result = account(11268);
       redditMetadataItems = tmp2Result.generateRedditMetadataItems(metadata);
     } else if (constants.STEAM === type) {
-      const tmp2Result7 = account(11267);
+      const tmp2Result7 = account(11268);
       redditMetadataItems = tmp2Result7.generateSteamMetadataItems(metadata);
     } else if (constants.LETTERBOXD === type) {
-      const tmp2Result8 = account(11267);
+      const tmp2Result8 = account(11268);
       redditMetadataItems = tmp2Result8.generateLetterboxdMetadataItems(metadata);
     } else {
       if (constants.BLUESKY !== type) {
         if (constants.TWITTER !== type) {
           if (constants.MASTODON !== type) {
             if (constants.EBAY === type) {
-              const tmp2Result9 = account(11267);
+              const tmp2Result9 = account(11268);
               redditMetadataItems = tmp2Result9.generateEbayMetadataItems(metadata);
             } else if (constants.PAYPAL === type) {
-              const tmp2Result10 = account(11267);
+              const tmp2Result10 = account(11268);
               redditMetadataItems = tmp2Result10.generatePaypalMetadataItems(metadata);
             } else {
               redditMetadataItems = [];
               if (constants.TIKTOK === type) {
-                const tmp2Result11 = account(11267);
+                const tmp2Result11 = account(11268);
                 redditMetadataItems = tmp2Result11.generateTikTokMetadataItems(metadata);
               }
             }
           }
         }
       }
-      const tmp2Result12 = account(11267);
+      const tmp2Result12 = account(11268);
       redditMetadataItems = tmp2Result12.generateTwitterMetadataItems(metadata);
     }
     if (null !== createdAtDate) {
@@ -1005,7 +1005,7 @@ class ConnectedAccount extends PureComponent {
       if (self.state.metadataAlreadyRefreshed) {
         tmp19Result = tmp19(tmp2(9216).CheckmarkLargeBoldIcon, { size: "sm" });
       } else {
-        tmp19Result = tmp19(tmp2(11785).RefreshIcon, { size: "sm" });
+        tmp19Result = tmp19(tmp2(11786).RefreshIcon, { size: "sm" });
       }
       const obj12 = { size: "sm", variant: "icon-only", icon: tmp19Result, accessibilityLabel: intl2.string(account(1128).t.wzzjk9), onPress: handleRefresh, disabled: self.state.metadataRefreshing || self.state.metadataAlreadyRefreshed };
       intl2 = tmp2(1128).intl;

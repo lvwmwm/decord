@@ -1,94 +1,49 @@
 // Module ID: 12692
 // Function ID: 12693
-// Dependencies: [377, 41, 42]
+// Dependencies: [12693]
+// Exports: isNodeEnv, loadModule
 
 // Module 12692
-import _readOnlyError from "_readOnlyError" /* 377 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
+import _mod12693 from "module_12693" /* 12693 */;
 
-class LRUMap {
-  constructor(_maxSize) {
-    _classCallCheck(this, LRUMap);
-    this._maxSize = _maxSize;
-    this._cache = new Map();
-    new Map();
-  }
+function dynamicRequire(require, arg1) {
+  return require.require(arg1);
 }
-let items = [, , , , , , ];
-const obj = {
-  key: "size",
-  get() {
-    return this._cache.size;
-  }
-};
-items[0] = obj;
-items[1] = {
-  key: "get",
-  value: function get(arg0) {
-    const self = this;
-    const _cache = this._cache;
-    const value = _cache.get(arg0);
-    if (undefined !== value) {
-      const _cache2 = self._cache;
-      _cache2.delete(arg0);
-      const _cache3 = self._cache;
-      const result = _cache3.set(arg0, value);
-      return value;
-    }
-  }
-};
-items[2] = {
-  key: "set",
-  value: function set(arg0, arg1) {
-    let _cache;
-    let _cache2;
-    const self = this;
-    if (this._cache.size >= this._maxSize) {
-      ({ _cache, _cache: _cache2 } = self);
-      const _delete = _cache.delete;
-      const iter = _cache2.keys();
-      _delete(iter.next().value);
-    }
-    const _cache3 = self._cache;
-    const result = _cache3.set(arg0, arg1);
-  }
-};
-items[3] = {
-  key: "remove",
-  value: function remove(arg0) {
-    const _cache = this._cache;
-    const value = _cache.get(arg0);
-    if (value) {
-      const _cache2 = this._cache;
-      _cache2.delete(arg0);
-    }
-    return value;
-  }
-};
-items[4] = {
-  key: "clear",
-  value: function clear() {
-    const _cache = this._cache;
-    _cache.clear();
-  }
-};
-items[5] = {
-  key: "keys",
-  value: function keys() {
-    const _cache = this._cache;
-    return Array.from(_cache.keys());
-  }
-};
-items[6] = {
-  key: "values",
-  value: function values() {
-    const items = [];
-    const _cache = this._cache;
-    const item = _cache.forEach((item) => items.push(item));
-    return items;
-  }
-};
-const LRUMap_export = _createClass(LRUMap, items);
 
-export { LRUMap_export as LRUMap };
+export { dynamicRequire };
+export const isNodeEnv = function isNodeEnv() {
+  const obj = _mod12693;
+  let tmp2 = !obj.isBrowserBundle();
+  obj.isBrowserBundle();
+  if (tmp2) {
+    const _Object = Object;
+    const _process = process;
+    let num = 0;
+    const call = toString.call;
+    if (typeof process !== "undefined") {
+      num = process;
+    }
+    tmp2 = "[object process]" === call(num);
+  }
+  return tmp2;
+};
+export const loadModule = function loadModule(arg0) {
+  let tmp = arg1;
+  if (arg1 === undefined) {
+    tmp = module;
+  }
+  let tmp2;
+  try {
+    tmp2 = dynamicRequire(tmp, arg0);
+  } catch (err) {
+  }
+  const tmp4 = tmp2;
+  if (!tmp4) {
+    try {
+      const _HermesInternal = HermesInternal;
+      tmp2 = dynamicRequire(tmp, "" + dynamicRequire(tmp, "process").cwd() + "/node_modules/" + arg0);
+    } catch (err) {
+    }
+  }
+  return tmp2;
+};

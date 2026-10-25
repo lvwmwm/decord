@@ -1,9 +1,9 @@
-// Module ID: 16487
-// Function ID: 16488
+// Module ID: 16492
+// Function ID: 16493
 // Name: useVideoQuestCaptions
-// Dependencies: [32, 19, 558, 576, 9584, 1297, 16488, 2]
+// Dependencies: [32, 19, 558, 576, 9584, 1297, 16493, 2]
 
-// Module 16487 (useVideoQuestCaptions)
+// Module 16492 (useVideoQuestCaptions)
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

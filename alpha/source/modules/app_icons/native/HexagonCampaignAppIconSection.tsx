@@ -1,14 +1,14 @@
-// Module ID: 16882
-// Function ID: 16883
+// Module ID: 16887
+// Function ID: 16888
 // Name: HexagonCampaignAppIconSection
-// Dependencies: [19, 17, 4996, 21, 4971, 587, 558, 576, 4999, 15852, 6713, 9866, 5039, 1128, 4247, 5252, 5234, 15869, 15875, 15870, 16379, 6880, 6988, 5037, 15872, 2]
+// Dependencies: [19, 17, 4996, 21, 4971, 587, 558, 576, 4999, 15857, 6713, 9866, 5039, 1128, 4247, 5252, 5234, 15874, 15880, 15875, 16384, 6880, 6988, 5037, 15877, 2]
 
-// Module 16882 (HexagonCampaignAppIconSection)
+// Module 16887 (HexagonCampaignAppIconSection)
 import nativeDefault from "native" /* 587 */;
 import _modDef4247 from "module_4247" /* 4247 */;
 import AppIconTypes from "AppIconTypes" /* 9866 */;
-import HexagonCampaignPromoGradientDefault from "HexagonCampaignPromoGradient" /* 15870 */;
-import AppIconDefault from "AppIcon" /* 16379 */;
+import HexagonCampaignPromoGradientDefault from "HexagonCampaignPromoGradient" /* 15875 */;
+import AppIconDefault from "AppIcon" /* 16384 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4996 */;
@@ -58,9 +58,9 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCam
   const tmp5 = closure_11();
   const tmpResult = onSelect(4999);
   const hexagonCampaignPerkAvailability = tmpResult.useHexagonCampaignPerkAvailability(constants.APP_ICON, "HexagonCampaignAppIconSection");
-  const useTrackHexagonCampaignContentViewed = onSelect(15852).useTrackHexagonCampaignContentViewed;
-  onSelect(15852);
-  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(tmp(6713).QuestContent.APP_ICON_SETTINGS, tmp(15852).HexagonCampaignContentSurface.APP_ICON_PICKER, true);
+  const useTrackHexagonCampaignContentViewed = onSelect(15857).useTrackHexagonCampaignContentViewed;
+  onSelect(15857);
+  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(tmp(6713).QuestContent.APP_ICON_SETTINGS, tmp(15857).HexagonCampaignContentSurface.APP_ICON_PICKER, true);
   const tmp10 = currentAppIcon === onSelect(9866).LimitedTimeAppIconIds.HEXAGON;
   const tmp6 = constants;
   if (cResult[0] === tmp4) {
@@ -108,7 +108,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCam
       let tmp25 = hexagonCampaignPerkAvailability !== constants2.LOCKED;
       if (tmp25) {
         const obj3 = { perk: tmp6.APP_ICON };
-        tmp25 = closure_9(tmp17(15875), obj3);
+        tmp25 = closure_9(tmp17(15880), obj3);
       }
       cResult[6] = hexagonCampaignPerkAvailability;
       cResult[7] = tmp25;
@@ -247,9 +247,9 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCam
   const tmp = closure_11();
   let obj = onSelect(4999);
   const hexagonCampaignPerkAvailability = obj.useHexagonCampaignPerkAvailability(constants.APP_ICON, "HexagonCampaignAppIconSection");
-  const useTrackHexagonCampaignContentViewed = onSelect(15852).useTrackHexagonCampaignContentViewed;
-  onSelect(15852);
-  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(onSelect(6713).QuestContent.APP_ICON_SETTINGS, onSelect(15852).HexagonCampaignContentSurface.APP_ICON_PICKER, true);
+  const useTrackHexagonCampaignContentViewed = onSelect(15857).useTrackHexagonCampaignContentViewed;
+  onSelect(15857);
+  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(onSelect(6713).QuestContent.APP_ICON_SETTINGS, onSelect(15857).HexagonCampaignContentSurface.APP_ICON_PICKER, true);
   const tmp8 = currentAppIcon === onSelect(9866).LimitedTimeAppIconIds.HEXAGON;
   const obj2 = onSelect(5039);
   const radioA11yNative = obj2.useRadioA11yNative({ selected: tmp8, busy: flag });
@@ -267,11 +267,11 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCam
   const tmp4 = constants;
   if (tmp15Result) {
     const obj7 = { perk: tmp4.APP_ICON };
-    tmp15Result = tmp15(tmp10(15875), obj7);
+    tmp15Result = tmp15(tmp10(15880), obj7);
   }
   items[1] = tmp15Result;
   items1 = [closure_10(closure_4, obj5), ];
-  const obj8 = { theme: onSelect(15872).ThemeTypes.DARK, children: closure_10(tmp17, obj9) };
+  const obj8 = { theme: onSelect(15877).ThemeTypes.DARK, children: closure_10(tmp17, obj9) };
   const ThemeContextProvider = tmp2(5037).ThemeContextProvider;
   obj9 = {
     onPress() {

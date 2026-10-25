@@ -1,9 +1,9 @@
-// Module ID: 19373
-// Function ID: 19374
+// Module ID: 19378
+// Function ID: 19379
 // Name: ApiRequestConfigManager
 // Dependencies: [17, 502, 1297, 1267, 7214, 1384, 2]
 
-// Module 19373 (ApiRequestConfigManager)
+// Module 19378 (ApiRequestConfigManager)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;

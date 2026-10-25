@@ -1,10 +1,10 @@
-// Module ID: 13014
-// Function ID: 13015
+// Module ID: 13019
+// Function ID: 13020
 // Name: useCanDM
 // Dependencies: [7731, 4904, 502, 4883, 4913, 4799, 558, 576, 504, 2]
 // Exports: canDm
 
-// Module 13014 (useCanDM)
+// Module 13019 (useCanDM)
 import UserSettings from "UserSettings" /* 4799 */;
 import GameRelationshipStore from "GameRelationshipStore" /* 7731 */;
 import LurkingStore from "LurkingStore" /* 4904 */;

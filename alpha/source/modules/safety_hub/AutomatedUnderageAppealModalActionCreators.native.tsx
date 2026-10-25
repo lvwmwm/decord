@@ -1,9 +1,9 @@
-// Module ID: 12832
-// Function ID: 12833
+// Module ID: 12837
+// Function ID: 12838
 // Name: AutomatedUnderageAppealModalActionCreators
-// Dependencies: [5, 7898, 6656, 21, 12830, 584, 5210, 12833, 2002, 7897, 7921, 6657, 7927, 7883, 6672, 7934, 8088, 2]
+// Dependencies: [5, 7898, 6656, 21, 12835, 584, 5210, 12838, 2002, 7897, 7921, 6657, 7927, 7883, 6672, 7934, 8088, 2]
 
-// Module 12832 (AutomatedUnderageAppealModalActionCreators)
+// Module 12837 (AutomatedUnderageAppealModalActionCreators)
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
@@ -29,7 +29,7 @@ let obj = {
     obj.dispatch({ type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN" });
     const obj2 = ActionSheetActionCreatorsDefault;
     const obj3 = { classificationId, onClose };
-    obj2.openLazy(asyncRequire(12833, dependencyMap.paths), React3, obj3);
+    obj2.openLazy(asyncRequire(12838, dependencyMap.paths), React3, obj3);
   },
   openV2(classificationId, onClose) {
     _require = classificationId;

@@ -1,9 +1,9 @@
-// Module ID: 18537
-// Function ID: 18538
+// Module ID: 18542
+// Function ID: 18543
 // Name: VoicePanelHeaderSpeaker
-// Dependencies: [109, 19, 17, 18538, 5715, 5734, 18539, 4823, 5716, 1087, 21, 558, 18540, 576, 18485, 9153, 11608, 11567, 573, 14177, 11646, 18544, 1384, 9160, 5735, 1128, 9157, 9159, 18545, 14176, 5001, 4807, 6886, 18471, 15239, 2]
+// Dependencies: [109, 19, 17, 18543, 5715, 5734, 18544, 4823, 5716, 1087, 21, 558, 18545, 576, 18490, 9153, 11609, 11568, 573, 14182, 11647, 18549, 1384, 9160, 5735, 1128, 9157, 9159, 18550, 14181, 5001, 4807, 6886, 18476, 15244, 2]
 
-// Module 18537 (VoicePanelHeaderSpeaker)
+// Module 18542 (VoicePanelHeaderSpeaker)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
@@ -11,16 +11,16 @@ import PlatformUtils from "PlatformUtils" /* 1384 */;
 import dismissible_content from "dismissible_content" /* 4807 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5001 */;
 import NativeViewDefault from "NativeView" /* 6886 */;
-import useOnConnectToConsole from "useOnConnectToConsole" /* 14176 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 14177 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 18471 */;
-import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 18538 */;
-import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 18540 */;
+import useOnConnectToConsole from "useOnConnectToConsole" /* 14181 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 14182 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 18476 */;
+import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 18543 */;
+import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 18545 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import GameConsoleStore_mod from "GameConsoleStore" /* 5715 */;
 import AudioRouteStore from "AudioRouteStore" /* 5734 */;
-import AudioRouteSwitchingStore from "AudioRouteSwitchingStore" /* 18539 */;
+import AudioRouteSwitchingStore from "AudioRouteSwitchingStore" /* 18544 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import SessionsStore from "SessionsStore" /* 5716 */;
 import Fragment from "Fragment" /* 21 */;

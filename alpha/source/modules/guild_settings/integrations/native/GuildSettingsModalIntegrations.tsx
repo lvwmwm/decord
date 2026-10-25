@@ -1,9 +1,9 @@
-// Module ID: 19054
-// Function ID: 19055
+// Module ID: 19059
+// Function ID: 19060
 // Name: GuildSettingsModalIntegrations
-// Dependencies: [19, 4903, 9006, 1087, 21, 4971, 587, 558, 576, 5252, 1505, 504, 5205, 18983, 8951, 5977, 6987, 6903, 1128, 18180, 18289, 11785, 6502, 5669, 1417, 4978, 5592, 2]
+// Dependencies: [19, 4903, 9006, 1087, 21, 4971, 587, 558, 576, 5252, 1505, 504, 5205, 18988, 8951, 5977, 6987, 6903, 1128, 18185, 18294, 11786, 6502, 5669, 1417, 4978, 5592, 2]
 
-// Module 19054 (GuildSettingsModalIntegrations)
+// Module 19059 (GuildSettingsModalIntegrations)
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
 import PermissionStore_mod from "PermissionStore" /* 4903 */;

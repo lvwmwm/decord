@@ -1,17 +1,17 @@
-// Module ID: 12499
-// Function ID: 12500
+// Module ID: 12503
+// Function ID: 12504
 // Name: ConjureNativeStatusStrip
-// Dependencies: [32, 19, 17, 10714, 11898, 21, 4971, 587, 558, 576, 12323, 11897, 12500, 504, 1128, 5210, 12505, 6908, 3830, 12506, 5234, 5686, 2]
+// Dependencies: [32, 19, 17, 10714, 11899, 21, 4971, 587, 558, 576, 12324, 11898, 12504, 504, 1128, 5210, 12509, 6908, 3830, 12510, 5234, 5686, 2]
 
-// Module 12499 (ConjureNativeStatusStrip)
+// Module 12503 (ConjureNativeStatusStrip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5210 */;
-import AILoaderConstants from "AILoaderConstants" /* 11898 */;
-import ConjureStatusLabels from "ConjureStatusLabels" /* 12323 */;
-import ConjureUsageSheet from "ConjureUsageSheet" /* 12505 */;
-import ConjureNativeTurnTimerDefault from "ConjureNativeTurnTimer" /* 12506 */;
+import AILoaderConstants from "AILoaderConstants" /* 11899 */;
+import ConjureStatusLabels from "ConjureStatusLabels" /* 12324 */;
+import ConjureUsageSheet from "ConjureUsageSheet" /* 12509 */;
+import ConjureNativeTurnTimerDefault from "ConjureNativeTurnTimer" /* 12510 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10714 */;
@@ -418,11 +418,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
                   tmp15 = cResult[12];
                   tmp16 = cResult[13];
                 }
-                const first1 = tmp(12323).RECALLING_LINES[0];
+                const first1 = tmp(12324).RECALLING_LINES[0];
                 if (cResult[14] !== projectUsage) {
                   let runesUsedLabelsResult = null;
                   if (null != projectUsage) {
-                    const tmpResult3 = tmp(12323);
+                    const tmpResult3 = tmp(12324);
                     runesUsedLabelsResult = tmpResult3.runesUsedLabels(projectUsage);
                   }
                   cResult[14] = projectUsage;
@@ -572,8 +572,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     }
   }
   const obj4 = { activity, compacting, saving: tmp4, remixing: null != remixStartedAt, recalling: undefined !== recalling && recalling, controlling, publishPending: stateFromStores, publishing: stateFromStores };
-  const thinkingLabel = tmp(12323).thinkingLabel;
-  tmp(12323);
+  const thinkingLabel = tmp(12324).thinkingLabel;
+  tmp(12324);
   if (stateFromStores) {
     class K {
       constructor() {
@@ -653,8 +653,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   }
   let obj2 = { activity, compacting, saving, remixing: tmp5, recalling: flag, controlling, publishPending: tmp9, publishing: stateFromStores };
   tmp9 = stateFromStores;
-  const thinkingLabel = projectId(12323).thinkingLabel;
-  projectId(12323);
+  const thinkingLabel = projectId(12324).thinkingLabel;
+  projectId(12324);
   if (stateFromStores) {
     tmp9 = tmp7;
   }
@@ -662,9 +662,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   const intl = tmp2(1128).intl;
   const stringResult = intl.string(thinkingLabelResult);
   let runesUsedLabelsResult = null;
-  const first = tmp2(12323).RECALLING_LINES[0];
+  const first = tmp2(12324).RECALLING_LINES[0];
   if (null != projectUsage) {
-    const tmp2Result2 = projectId(12323);
+    const tmp2Result2 = projectId(12324);
     runesUsedLabelsResult = tmp2Result2.runesUsedLabels(projectUsage);
   }
   let tmp14 = null != activity && "" !== activity.text;

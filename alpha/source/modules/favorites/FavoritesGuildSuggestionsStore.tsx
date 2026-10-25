@@ -1,10 +1,10 @@
-// Module ID: 17626
-// Function ID: 17627
+// Module ID: 17631
+// Function ID: 17632
 // Name: FavoritesGuildSuggestionsStore
 // Dependencies: [32, 19, 4815, 1087, 4820, 570, 558, 576, 4807, 7496, 2]
 // Exports: setFavoritesGuildSuggestions
 
-// Module 17626 (FavoritesGuildSuggestionsStore)
+// Module 17631 (FavoritesGuildSuggestionsStore)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;

@@ -1,10 +1,10 @@
-// Module ID: 15777
-// Function ID: 15778
+// Module ID: 15782
+// Function ID: 15783
 // Name: transformGuildMember
 // Dependencies: [9263, 2]
 // Exports: default
 
-// Module 15777 (transformGuildMember)
+// Module 15782 (transformGuildMember)
 import transformAvatarDecorationDefault from "transformAvatarDecoration" /* 9263 */;
 import size from "module_2" /* 2 */;
 

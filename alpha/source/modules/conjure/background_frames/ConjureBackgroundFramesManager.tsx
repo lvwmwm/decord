@@ -1,9 +1,9 @@
-// Module ID: 18767
-// Function ID: 18768
+// Module ID: 18772
+// Function ID: 18773
 // Name: ConjureBackgroundFramesManager
-// Dependencies: [5, 7214, 5626, 18042, 2002, 2]
+// Dependencies: [5, 7214, 5626, 18047, 2002, 2]
 
-// Module 18767 (ConjureBackgroundFramesManager)
+// Module 18772 (ConjureBackgroundFramesManager)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
 import size from "module_2" /* 2 */;

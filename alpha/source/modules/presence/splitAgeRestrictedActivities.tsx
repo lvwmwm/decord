@@ -1,10 +1,10 @@
-// Module ID: 15067
-// Function ID: 15068
+// Module ID: 15072
+// Function ID: 15073
 // Name: splitAgeRestrictedActivities
 // Dependencies: [5611, 2]
 // Exports: default
 
-// Module 15067 (splitAgeRestrictedActivities)
+// Module 15072 (splitAgeRestrictedActivities)
 import ContentClassificationReference from "ContentClassificationReference" /* 5611 */;
 import size from "module_2" /* 2 */;
 

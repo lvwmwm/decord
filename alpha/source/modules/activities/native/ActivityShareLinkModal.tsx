@@ -1,9 +1,9 @@
-// Module ID: 15737
-// Function ID: 15738
+// Module ID: 15742
+// Function ID: 15743
 // Name: ActivityShareLinkModal
-// Dependencies: [5, 32, 19, 17, 4823, 1392, 4822, 10616, 4976, 21, 4971, 587, 558, 576, 504, 12900, 12121, 15736, 7257, 1388, 15738, 7566, 7755, 5663, 1128, 7285, 5662, 7485, 5678, 1499, 1384, 12910, 10625, 12911, 12932, 2]
+// Dependencies: [5, 32, 19, 17, 4823, 1392, 4822, 10616, 4976, 21, 4971, 587, 558, 576, 504, 12905, 12122, 15741, 7257, 1388, 15743, 7566, 7755, 5663, 1128, 7285, 5662, 7485, 5678, 1499, 1384, 12915, 10625, 12916, 12937, 2]
 
-// Module 15737 (ActivityShareLinkModal)
+// Module 15742 (ActivityShareLinkModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
@@ -14,9 +14,9 @@ import LinkIcon from "LinkIcon" /* 5678 */;
 import ClipboardUtils from "ClipboardUtils" /* 7285 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7485 */;
 import UserRowConstants from "UserRowConstants" /* 10616 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 12121 */;
-import formatResults from "formatResults" /* 12900 */;
-import openActivityShareLinkModal from "openActivityShareLinkModal" /* 15736 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 12122 */;
+import formatResults from "formatResults" /* 12905 */;
+import openActivityShareLinkModal from "openActivityShareLinkModal" /* 15741 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

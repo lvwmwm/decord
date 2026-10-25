@@ -1,11 +1,11 @@
-// Module ID: 13428
-// Function ID: 13429
+// Module ID: 13433
+// Function ID: 13434
 // Name: useShowGuildPowerupRollbackSheet
-// Dependencies: [32, 19, 4820, 558, 576, 13429, 7496, 13431, 5210, 2]
+// Dependencies: [32, 19, 4820, 558, 576, 13434, 7496, 13436, 5210, 2]
 
-// Module 13428 (useShowGuildPowerupRollbackSheet)
+// Module 13433 (useShowGuildPowerupRollbackSheet)
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
-import openGuildPowerupRollbackSheetDefault from "openGuildPowerupRollbackSheet" /* 13431 */;
+import openGuildPowerupRollbackSheetDefault from "openGuildPowerupRollbackSheet" /* 13436 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -24,8 +24,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowGuild
   let tmp = modalConfig;
   let obj = modalConfig(576);
   const cResult = obj.c(9);
-  ({ shouldShow, modalConfig } = first(13429)(arg0, arg1));
-  const tmp5 = first(13429)(arg0, arg1);
+  ({ shouldShow, modalConfig } = first(13434)(arg0, arg1));
+  const tmp5 = first(13434)(arg0, arg1);
   if (cResult[0] === modalConfig) {
     if (cResult[1] === shouldShow) {
       let tmp6;
@@ -127,8 +127,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowGuild
   dependencyMap = undefined;
   _slicedToArray = undefined;
   let tmp = dependencyMap;
-  ({ shouldShow, modalConfig } = first(13429)(arg0, arg1));
-  const tmp2 = first(13429)(arg0, arg1);
+  ({ shouldShow, modalConfig } = first(13434)(arg0, arg1));
+  const tmp2 = first(13434)(arg0, arg1);
   if (shouldShow) {
     shouldShow = null != modalConfig;
   }

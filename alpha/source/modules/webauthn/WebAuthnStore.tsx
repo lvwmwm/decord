@@ -1,9 +1,9 @@
-// Module ID: 15966
-// Function ID: 15967
+// Module ID: 15971
+// Function ID: 15972
 // Name: WebAuthnStore
 // Dependencies: [2000, 504, 584, 2]
 
-// Module 15966 (WebAuthnStore)
+// Module 15971 (WebAuthnStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Server from "Server" /* 2000 */;
@@ -31,7 +31,7 @@ Object.defineProperty(WebAuthnStore.prototype, "hasCredentials", {
   set: undefined
 });
 WebAuthnStore.displayName = "WebAuthnStore";
-let obj = {
+const obj = {
   LOGOUT: function handleReset() {
     closure_3 = [];
     c2 = false;
@@ -90,7 +90,6 @@ let obj = {
       const type = credential.type;
       return false;
     } else {
-      let tmp = closure_3;
       closure_3 = closure_3.filter((id) => id.id !== credential.id);
     }
   },
@@ -111,6 +110,6 @@ let obj = {
   }
 };
 const webAuthnStore = new WebAuthnStore(DispatcherDefault, obj);
-let result = size.fileFinishedImporting("modules/webauthn/WebAuthnStore.tsx");
+const result = size.fileFinishedImporting("modules/webauthn/WebAuthnStore.tsx");
 
 export default webAuthnStore;

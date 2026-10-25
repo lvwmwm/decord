@@ -1,9 +1,9 @@
-// Module ID: 13097
-// Function ID: 13098
+// Module ID: 13102
+// Function ID: 13103
 // Name: ForumPostUsername
-// Dependencies: [19, 17, 4972, 13093, 21, 4971, 558, 576, 9725, 4833, 11220, 13098, 504, 8319, 1202, 5234, 2]
+// Dependencies: [19, 17, 4972, 13098, 21, 4971, 558, 576, 9725, 4833, 11221, 13103, 504, 8319, 1202, 5234, 2]
 
-// Module 13097 (ForumPostUsername)
+// Module 13102 (ForumPostUsername)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -11,8 +11,8 @@ import native from "native" /* 1202 */;
 import ForumLayout from "ForumLayout" /* 4833 */;
 import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8319 */;
 import ForumHooks from "ForumHooks" /* 9725 */;
-import useChatWidthDefault from "useChatWidth" /* 11220 */;
-import ForumChannelStore from "ForumChannelStore" /* 13093 */;
+import useChatWidthDefault from "useChatWidth" /* 11221 */;
+import ForumChannelStore from "ForumChannelStore" /* 13098 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4972 */;
 import Fragment from "Fragment" /* 21 */;
@@ -23,7 +23,7 @@ import size from "module_2" /* 2 */;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const ForumPostGridBody = tmp(13098);
+const ForumPostGridBody = tmp(13103);
 const View = react_native.View;
 const useForumChannelStore = ForumChannelStore.useForumChannelStore;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);

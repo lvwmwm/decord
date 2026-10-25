@@ -1,9 +1,9 @@
-// Module ID: 12972
-// Function ID: 12973
+// Module ID: 12977
+// Function ID: 12978
 // Name: CheckpointApngPlayer
 // Dependencies: [17, 4972, 21, 4971, 558, 576, 504, 5669, 1385, 9401, 2]
 
-// Module 12972 (CheckpointApngPlayer)
+// Module 12977 (CheckpointApngPlayer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;

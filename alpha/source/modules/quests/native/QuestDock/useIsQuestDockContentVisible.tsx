@@ -1,14 +1,14 @@
-// Module ID: 16544
-// Function ID: 16545
+// Module ID: 16549
+// Function ID: 16550
 // Name: useIsQuestDockContentVisible
-// Dependencies: [19, 16434, 6710, 558, 576, 16518, 504, 2]
+// Dependencies: [19, 16439, 6710, 558, 576, 16523, 504, 2]
 
-// Module 16544 (useIsQuestDockContentVisible)
+// Module 16549 (useIsQuestDockContentVisible)
 import react2 from "react" /* 576 */;
 import QuestConstants from "QuestConstants" /* 6710 */;
-import reactDefault from "react" /* 16518 */;
+import reactDefault from "react" /* 16523 */;
 import react from "react" /* 19 */;
-import QuestDockStore from "QuestDockStore" /* 16434 */;
+import QuestDockStore from "QuestDockStore" /* 16439 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

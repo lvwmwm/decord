@@ -1,10 +1,10 @@
-// Module ID: 11886
-// Function ID: 11887
+// Module ID: 11887
+// Function ID: 11888
 // Name: useInlineFrameOAuthNavigation
 // Dependencies: [5, 19, 6775, 6776, 1087, 10745, 6672, 10749, 2002, 1123, 2]
 // Exports: default
 
-// Module 11886 (useInlineFrameOAuthNavigation)
+// Module 11887 (useInlineFrameOAuthNavigation)
 import Constants from "Constants" /* 1087 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;

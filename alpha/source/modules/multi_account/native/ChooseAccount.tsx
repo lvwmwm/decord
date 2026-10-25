@@ -1,19 +1,19 @@
-// Module ID: 17361
-// Function ID: 17362
+// Module ID: 17366
+// Function ID: 17367
 // Name: ChooseAccount
-// Dependencies: [5, 19, 17, 13309, 13310, 1087, 21, 4971, 587, 558, 576, 1505, 17362, 1267, 13313, 5909, 1128, 1202, 5210, 7290, 5234, 17363, 6908, 9032, 8951, 17364, 7065, 15102, 2]
+// Dependencies: [5, 19, 17, 13314, 13315, 1087, 21, 4971, 587, 558, 576, 1505, 17367, 1267, 13318, 5909, 1128, 1202, 5210, 7290, 5234, 17368, 6908, 9032, 8951, 17369, 7065, 15107, 2]
 
-// Module 17361 (ChooseAccount)
+// Module 17366 (ChooseAccount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5909 */;
-import MultiAccountStore from "MultiAccountStore" /* 13309 */;
-import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13313 */;
+import MultiAccountStore from "MultiAccountStore" /* 13314 */;
+import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13318 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import Constants_mod from "Constants" /* 13310 */;
+import Constants_mod from "Constants" /* 13315 */;
 import Constants_mod2 from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
@@ -59,7 +59,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChooseAccoun
   const tmp4 = closure_13();
   let obj2 = navigation(1505);
   navigation = obj2.useNavigation();
-  let obj3 = navigation(17362);
+  let obj3 = navigation(17367);
   const multiAccountUsers = obj3.useMultiAccountUsers().multiAccountUsers;
   if (cResult[0] !== navigation) {
     function handlePressUser(tokenStatus) {
@@ -245,7 +245,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChooseAccoun
         }
         const _Symbol4 = Symbol;
         if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-          let obj5 = { themedColor: multiAccountUsers(587).colors.TEXT_LINK, size: tmp(1202).Icon.Sizes.SMALL_20, source: multiAccountUsers(17364) };
+          let obj5 = { themedColor: multiAccountUsers(587).colors.TEXT_LINK, size: tmp(1202).Icon.Sizes.SMALL_20, source: multiAccountUsers(17369) };
           const tmp26 = multiAccountUsers;
           let Icon = tmp(8951).FormRow.Icon;
           const tmp27 = closure_11(Icon, obj5);
@@ -277,7 +277,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChooseAccoun
                 }
                 return tmp36;
               }
-              let obj6 = { headerText: tmp13, subHeader: tmp15, backgroundImageSource: multiAccountUsers(15102), backgroundImageCover: true, contentStyle: tmp18, children: tmp32 };
+              let obj6 = { headerText: tmp13, subHeader: tmp15, backgroundImageSource: multiAccountUsers(15107), backgroundImageCover: true, contentStyle: tmp18, children: tmp32 };
               cResult[26] = tmp4.container;
               cResult[27] = tmp32;
               const tmp39 = multiAccountUsers(7065);
@@ -533,7 +533,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChooseAccoun
   _require = obj.useNavigation();
   let obj2 = require("useMultiAccount");
   const multiAccountUsers = obj2.useMultiAccountUsers().multiAccountUsers;
-  let obj3 = { headerText: intl.string(require("intl").t.bVbB63), subHeader: closure_11(Text, obj4), backgroundImageSource: multiAccountUsers(15102), backgroundImageCover: true, contentStyle: tmp.container, children: closure_12(View, obj5) };
+  let obj3 = { headerText: intl.string(require("intl").t.bVbB63), subHeader: closure_11(Text, obj4), backgroundImageSource: multiAccountUsers(15107), backgroundImageCover: true, contentStyle: tmp.container, children: closure_12(View, obj5) };
   let tmp2 = multiAccountUsers(7065);
   intl = require("intl").intl;
   obj4 = { variant: "text-sm/medium", color: "text-default", children: intl2.string(require("intl").t["0M5fN7"]) };
@@ -637,7 +637,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChooseAccoun
     }
   };
   const FormRow = require("Form").FormRow;
-  obj7 = { themedColor: multiAccountUsers(587).colors.TEXT_LINK, size: require("native").Icon.Sizes.SMALL_20, source: multiAccountUsers(17364) };
+  obj7 = { themedColor: multiAccountUsers(587).colors.TEXT_LINK, size: require("native").Icon.Sizes.SMALL_20, source: multiAccountUsers(17369) };
   Icon = require("Form").FormRow.Icon;
   intl3 = require("intl").intl;
   items[1] = closure_11(FormRow, obj6);

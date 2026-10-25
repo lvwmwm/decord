@@ -1,400 +1,196 @@
 // Module ID: 13921
 // Function ID: 13922
-// Dependencies: [5, 17, 13913]
-// Exports: buyPromotedProductIOS, clearProductsIOS, clearTransactionIOS, deepLinkToSubscriptionsIos, getPendingPurchasesIOS, getPromotedProductIOS, getReceiptIOS, presentCodeRedemptionSheetIOS, validateReceiptIos
+// Dependencies: [17, 13922]
+// Exports: getAndroidModuleType, getIosModule, getNativeModule, isIosStorekit2, setAndroidNativeModule, setIosNativeModule, storekit1Mode, storekit2Mode, storekitHybridMode
 
 // Module 13921
-import _mod13913 from "module_13913" /* 13913 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _createClass from "_createClass" /* 13922 */;
 import react_native from "react-native" /* 17 */;
 
-let c3, c4, c5;
+let NativeModules;
+let Platform;
+let RNIapModule;
+let c3;
+({ NativeModules, Platform } = react_native);
+let RNIapIos = NativeModules.RNIapIos;
+({ RNIapIosSk2: c3, RNIapModule } = NativeModules);
+const RNIapAmazonModule = NativeModules.RNIapAmazonModule;
+let c6 = false;
+function checkNativeAndroidAvailable() {
+  const tmp = RNIapModule;
+  if (!tmp) {
+    const tmp2 = RNIapAmazonModule;
+    if (!tmp2) {
+      const _Error = Error;
+      const self = this;
+      const self2 = this;
+      const error = new Error(_createClass.ErrorCode.E_IAP_NOT_AVAILABLE);
+      throw error;
+    }
+  }
+}
+function getAndroidModule() {
+  if (typeof checkNativeAndroidAvailable === "function") {
+    let tmp = RNIapModule;
+    if (!tmp) {
+      const tmp2 = RNIapAmazonModule;
+      if (!tmp2) {
+        const _Error = Error;
+        const self = this;
+        const self2 = this;
+        const error = new Error(_createClass.ErrorCode.E_IAP_NOT_AVAILABLE);
+        throw error;
+      }
+    }
+    let tmp8 = RNIapModule;
+    if (!tmp8) {
+      if (!tmp) {
+        tmp = RNIapAmazonModule;
+      }
+      tmp8 = tmp;
+    }
+    return tmp8;
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+}
+function isStorekit2Available() {
+  return c6;
+}
 
-const Linking = react_native.Linking;
-const RNIapIos = react_native.NativeModules.RNIapIos;
-_asyncToGenerator(async (arg0, value) => {
-  let v3;
-  if (c0 === 2) {
-    c0 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp2 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "IconComponent", done: null };
-    }
-  } else {
-    try {
-      c0 = 2;
-      if (arg0 === 1) {
-        c0 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c0 = 3;
-        const obj3 = { value, done: true };
-        return obj3;
-      } else {
-        const obj = c0(dependencyMap[2]);
-        const iosModule = obj.getIosModule();
-        c0 = 3;
-        const obj4 = { value: iosModule.getPendingTransactions(), done: true };
-        return obj4;
-      }
-    } catch (tmp5) {
-      c0 = 3;
-      throw tmp5;
-    }
-  }
-});
-_asyncToGenerator(async (arg0, value) => {
-  let _false;
-  closure_0 = arg0;
-  if (c5 === 2) {
-    c5 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp3 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "IconComponent", done: null };
-    }
-  } else {
-    try {
-      let requestReceipt;
-      let forceRefresh;
-      c5 = 2;
-      if (0 === c4) {
-        if (arg0 === 1) {
-          c5 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          requestReceipt = tmp4;
-          let closure_2 = tmp;
-          forceRefresh = closure_0.forceRefresh;
-          c4 = 1;
-          c5 = 1;
-          return { value: "Reflect", done: true };
-        }
-      } else if (arg0 === 1) {
-        c5 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c5 = 3;
-        const obj4 = { value, done: true };
-        return obj4;
-      } else {
-        let rejectResult;
-        const obj5 = closure_0(_false[2]);
-        if (obj5.isIosStorekit2()) {
-          rejectResult = Promise.reject("Only available on Sk1");
-        } else {
-          _false = forceRefresh;
-          requestReceipt = requestReceipt.requestReceipt;
-          if (forceRefresh == null) {
-            _false = false;
-          }
-          rejectResult = requestReceipt(_false);
-        }
-        c5 = 3;
-        const obj = { value: rejectResult, done: true };
-        return obj;
-      }
-    } catch (tmp14) {
-      c5 = 3;
-      throw tmp14;
-    }
-  }
-});
-_asyncToGenerator(async (arg0, value) => {
-  let v3;
-  if (c0 === 2) {
-    c0 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp2 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "IconComponent", done: null };
-    }
-  } else {
-    try {
-      c0 = 2;
-      if (arg0 === 1) {
-        c0 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c0 = 3;
-        const obj3 = { value, done: true };
-        return obj3;
-      } else {
-        const obj = c0(dependencyMap[2]);
-        const iosModule = obj.getIosModule();
-        c0 = 3;
-        const obj4 = { value: iosModule.presentCodeRedemptionSheet(), done: true };
-        return obj4;
-      }
-    } catch (tmp5) {
-      c0 = 3;
-      throw tmp5;
-    }
-  }
-});
-_asyncToGenerator(async function(arg0, value) {
-  closure_0 = arg0;
-  let closure_1 = value;
-  if (c4 === 2) {
-    c4 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp2 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "IconComponent", done: null };
-    }
-  } else {
-    try {
-      c4 = 2;
-      if (0 === c3) {
-        if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          let closure_2 = tmp3;
-          closure_0 = undefined;
-          const _fetch = fetch;
-          const request = { method: "POST", headers: { Accept: "application/json", "Content-Type": "application/json" }, body: JSON.stringify(closure_1) };
-          const _JSON = JSON;
-          c3 = 1;
-          c4 = 1;
-          const obj4 = { value: fetch(closure_0, request), done: false };
-          return obj4;
-        }
-      } else if (arg0 === 1) {
-        c4 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c4 = 3;
-        const obj5 = { value, done: true };
-        return obj5;
-      } else {
-        closure_0 = value;
-        if (closure_0.ok) {
-          c4 = 3;
-          const obj6 = { value: closure_0.json(), done: true };
-          return obj6;
-        } else {
-          const _Object = Object;
+export const isIos = false;
+export const isAndroid = true;
+export const isAmazon = RNIapAmazonModule;
+export const isPlay = RNIapModule;
+export const setAndroidNativeModule = (arg0) => {
+  RNIapModule = arg0;
+};
+export { checkNativeAndroidAvailable };
+export { getAndroidModule };
+export const getAndroidModuleType = function() {
+  if (typeof getAndroidModule === "function") {
+    if (typeof checkNativeAndroidAvailable === "function") {
+      if (!RNIapModule) {
+        const tmp3 = RNIapAmazonModule;
+        if (!tmp3) {
           const _Error = Error;
           const self = this;
           const self2 = this;
-          const error = new Error(closure_0.statusText);
-          const obj = { statusCode: closure_0.status };
-          throw assign(error, obj);
+          const error = new Error(_createClass.ErrorCode.E_IAP_NOT_AVAILABLE);
+          throw error;
         }
       }
-    } catch (tmp13) {
-      c4 = 3;
-      throw tmp13;
-    }
-  }
-});
-function fetchJsonOrThrow(arg0, arg1) {
-  return closure_0(...arguments);
-}
-_asyncToGenerator(async (arg0, value) => {
-  let closure_2;
-  let tmp5;
-  let v3;
-  closure_0 = arg0;
-  let status = tmp;
-  await c4("https://buy.itunes.apple.com/verifyReceipt", closure_0);
-  if (1 === c3) {
-    if (arg0 === 1) {
-      c4 = 3;
-      throw value;
-    } else if (arg0 === 2) {
-      c4 = 3;
-      const obj5 = { value, done: true };
-      return obj5;
-    } else {
-      status = value;
-      const tmp19 = status;
-      if (tmp19) {
-        if (21007 === status.status) {
-          c3 = 2;
-          c4 = 1;
-          const obj6 = { value: c4("https://sandbox.itunes.apple.com/verifyReceipt", closure_0), done: false };
-          return obj6;
-        }
+      let tmp9 = RNIapModule;
+      if (!tmp9) {
+        tmp9 = RNIapModule || RNIapAmazonModule;
       }
-      tmp5 = status;
-    }
-  } else if (arg0 === 1) {
-    c4 = 3;
-    throw value;
-  } else {
-    tmp5 = value;
-    if (arg0 === 2) {
-      c4 = 3;
-      const obj = { value, done: true };
-      return obj;
-    }
-  }
-  return tmp5;
-});
-function requestAgnosticReceiptValidationIos(arg0) {
-  return closure_0(...arguments);
-}
-let closure_0 = _asyncToGenerator(async (arg0, value) => {
-  let c0;
-  let c1;
-  let v3;
-  closure_0 = arg0;
-  if (c4 === 2) {
-    c4 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp3 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "IconComponent", done: null };
-    }
-  } else {
-    try {
-      let str;
-      c4 = 2;
-      if (0 === c3) {
-        if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          let closure_2 = tmp4;
-          let closure_1 = tmp;
-          c0 = undefined;
-          c1 = undefined;
-          ({ receiptBody: c0, isTest: c1 } = closure_0);
-          str = undefined;
-          c3 = 1;
-          c4 = 1;
-          return { value: "Reflect", done: true };
-        }
-      } else if (1 === c3) {
-        if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          const obj4 = { value, done: true };
-          return obj4;
-        } else if (null == c1) {
-          c3 = 2;
-          c4 = 1;
-          const obj5 = { value: requestAgnosticReceiptValidationIos(c0), done: false };
-          return obj5;
-        } else {
-          str = "https://buy.itunes.apple.com/verifyReceipt";
-          if (c1) {
-            str = "https://sandbox.itunes.apple.com/verifyReceipt";
-          }
-          c3 = 3;
-          c4 = 1;
-          const obj6 = { value: c4(str, c0), done: false };
-          return obj6;
-        }
-      } else if (2 === c3) {
-        if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          const obj7 = { value, done: true };
-          return obj7;
-        } else {
-          c4 = 3;
-          const obj8 = { value, done: true };
-          return obj8;
-        }
-      } else if (arg0 === 1) {
-        c4 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c4 = 3;
-        const obj9 = { value, done: true };
-        return obj9;
+      if (RNIapModule === tmp9) {
+        return "android";
+      } else if (RNIapAmazonModule === tmp9) {
+        return "amazon";
       } else {
-        c4 = 3;
-        const obj = { value, done: true };
-        return obj;
+        return null;
       }
-    } catch (tmp16) {
-      c4 = 3;
-      throw tmp16;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+};
+export const getNativeModule = function() {
+  if (typeof getAndroidModule === "function") {
+    if (typeof checkNativeAndroidAvailable === "function") {
+      let tmp2 = RNIapModule;
+      if (!tmp2) {
+        const tmp3 = RNIapAmazonModule;
+        if (!tmp3) {
+          const _Error = Error;
+          const self = this;
+          const self2 = this;
+          const error = new Error(_createClass.ErrorCode.E_IAP_NOT_AVAILABLE);
+          throw error;
+        }
+      }
+      let tmp9 = RNIapModule;
+      if (!tmp9) {
+        if (!tmp2) {
+          tmp2 = RNIapAmazonModule;
+        }
+        tmp9 = tmp2;
+      }
+      return tmp9;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+};
+export { isStorekit2Available };
+export const isIosStorekit2 = () => c6;
+export const setIosNativeModule = (arg0) => {
+  RNIapIos = arg0;
+};
+export const storekit2Mode = () => {
+  RNIapIos = _false;
+  if (typeof isStorekit2Available === "function") {
+    let flag = !c6;
+    if (c6) {
+      RNIapIos.disable();
+      flag = true;
+    }
+    return flag;
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+};
+export const storekit1Mode = () => {
+  if (typeof isStorekit2Available === "function") {
+    let flag = c6;
+    if (flag) {
+      _false.disable();
+      flag = true;
+    }
+    return flag;
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+};
+export const storekitHybridMode = () => {
+  if (typeof isStorekit2Available === "function") {
+    const tmp = c6;
+    if (tmp) {
+      RNIapIos = _false;
+      const _console2 = console;
+      console.info("Using Storekit 2");
+    } else {
+      const _console = console;
+      console.info("Using Storekit 1");
+    }
+    return true;
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+};
+export const getIosModule = function() {
+  if (!RNIapIos) {
+    if (typeof isStorekit2Available === "function") {
+      const tmp3 = c6;
+      if (!tmp3) {
+        const _Error = Error;
+        const self = this;
+        const self2 = this;
+        const error = new Error(_createClass.ErrorCode.E_IAP_NOT_AVAILABLE);
+        throw error;
+      }
+    } else {
+      throw new TypeError("Trying to call a non-function");
     }
   }
-});
-
-export const getPendingPurchasesIOS = function getPendingPurchasesIOS() {
-  return closure_0(...arguments);
-};
-export const getReceiptIOS = function getReceiptIOS(arg0) {
-  return closure_0(...arguments);
-};
-export const presentCodeRedemptionSheetIOS = function presentCodeRedemptionSheetIOS() {
-  return closure_0(...arguments);
-};
-export const getPromotedProductIOS = () => {
-  let rejectResult;
-  const obj = _mod13913;
-  if (obj.isIosStorekit2()) {
-    rejectResult = Promise.reject("Only available on Sk1");
-  } else {
-    rejectResult = RNIapIos.promotedProduct();
+  let tmp9 = RNIapIos;
+  if (!tmp9) {
+    tmp9 = _false || RNIapIos;
   }
-  return rejectResult;
+  return tmp9;
 };
-export const buyPromotedProductIOS = () => {
-  const obj = _mod13913;
-  const iosModule = obj.getIosModule();
-  return iosModule.buyPromotedProduct();
-};
-export const validateReceiptIos = function validateReceiptIos(arg0) {
-  return closure_0(...arguments);
-};
-export const clearTransactionIOS = () => {
-  const obj = _mod13913;
-  const iosModule = obj.getIosModule();
-  return iosModule.clearTransaction();
-};
-export const clearProductsIOS = () => {
-  const obj = _mod13913;
-  const iosModule = obj.getIosModule();
-  return iosModule.clearProducts();
-};
-export const deepLinkToSubscriptionsIos = () => Linking.openURL("https://apps.apple.com/account/subscriptions");

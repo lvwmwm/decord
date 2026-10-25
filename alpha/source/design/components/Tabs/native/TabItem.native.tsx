@@ -1,9 +1,9 @@
-// Module ID: 11850
-// Function ID: 11851
+// Module ID: 11851
+// Function ID: 11852
 // Name: TabItem
 // Dependencies: [109, 19, 17, 21, 5052, 4971, 587, 558, 5247, 576, 5234, 1384, 1128, 2]
 
-// Module 11850 (TabItem)
+// Module 11851 (TabItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 5052 */;

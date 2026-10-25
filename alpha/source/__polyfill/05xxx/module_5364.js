@@ -14,7 +14,7 @@ export const prepareRelations = function prepareRelations(config, handlerTag) {
   let items;
   let items1;
   let items2;
-  const f94636 = (handlerTags) => {
+  const f94652 = (handlerTags) => {
     if ("handlerTags" in handlerTags) {
       handlerTags = handlerTags.handlerTags;
     } else {
@@ -57,7 +57,7 @@ export const prepareRelations = function prepareRelations(config, handlerTag) {
     let flatMapResult;
     const _Array2 = Array;
     if (Array.isArray(simultaneousWith)) {
-      flatMapResult = simultaneousWith.flatMap(f94636);
+      flatMapResult = simultaneousWith.flatMap(f94652);
     } else if ("handlerTags" in simultaneousWith) {
       flatMapResult = simultaneousWith.handlerTags;
     } else {
@@ -73,7 +73,7 @@ export const prepareRelations = function prepareRelations(config, handlerTag) {
     let flatMapResult1;
     const _Array3 = Array;
     if (Array.isArray(requireToFail)) {
-      flatMapResult1 = requireToFail.flatMap(f94636);
+      flatMapResult1 = requireToFail.flatMap(f94652);
     } else if ("handlerTags" in requireToFail) {
       flatMapResult1 = requireToFail.handlerTags;
     } else {
@@ -88,7 +88,7 @@ export const prepareRelations = function prepareRelations(config, handlerTag) {
     let flatMapResult2;
     const _Array4 = Array;
     if (Array.isArray(block)) {
-      flatMapResult2 = block.flatMap(f94636);
+      flatMapResult2 = block.flatMap(f94652);
     } else if ("handlerTags" in block) {
       flatMapResult2 = block.handlerTags;
     } else {

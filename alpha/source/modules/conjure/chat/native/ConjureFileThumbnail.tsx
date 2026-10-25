@@ -1,16 +1,16 @@
-// Module ID: 11826
-// Function ID: 11827
+// Module ID: 11827
+// Function ID: 11828
 // Name: ConjureFileThumbnail
-// Dependencies: [19, 21, 558, 576, 587, 11756, 11827, 11829, 5669, 2]
+// Dependencies: [19, 21, 558, 576, 587, 11757, 11828, 11830, 5669, 2]
 
-// Module 11826 (ConjureFileThumbnail)
+// Module 11827 (ConjureFileThumbnail)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import FastImageDefault from "FastImage" /* 5669 */;
-import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 11756 */;
-import FileIcon from "FileIcon" /* 11827 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 11829 */;
+import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 11757 */;
+import FileIcon from "FileIcon" /* 11828 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 11830 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureFil
   }
   if (null != projectId) {
     if (null != file) {
-      const CONJURE_VIEWABLE_IMAGE_TYPES = tmp(11756).CONJURE_VIEWABLE_IMAGE_TYPES;
+      const CONJURE_VIEWABLE_IMAGE_TYPES = tmp(11757).CONJURE_VIEWABLE_IMAGE_TYPES;
       if (CONJURE_VIEWABLE_IMAGE_TYPES.has(file.content_type)) {
         if (cResult[3] === file.id) {
           if (cResult[4] === iconColor) {

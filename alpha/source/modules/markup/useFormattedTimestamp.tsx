@@ -1,9 +1,9 @@
-// Module ID: 12069
-// Function ID: 12070
+// Module ID: 12070
+// Function ID: 12071
 // Name: useFormattedTimestamp
 // Dependencies: [32, 19, 1104, 558, 576, 2049, 8499, 2]
 
-// Module 12069 (useFormattedTimestamp)
+// Module 12070 (useFormattedTimestamp)
 import DurationsDefault from "Durations" /* 1104 */;
 import _modDef2049 from "module_2049" /* 2049 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

@@ -1,9 +1,9 @@
-// Module ID: 18198
-// Function ID: 18199
+// Module ID: 18203
+// Function ID: 18204
 // Name: FriendsScreen
-// Dependencies: [19, 17, 7731, 4913, 21, 4971, 587, 558, 576, 1505, 7253, 7278, 1633, 18199, 504, 1896, 8668, 18200, 18203, 1128, 17883, 5680, 6903, 5244, 12919, 16455, 10617, 12850, 2]
+// Dependencies: [19, 17, 7731, 4913, 21, 4971, 587, 558, 576, 1505, 7253, 7278, 1633, 18204, 504, 1896, 8668, 18205, 18208, 1128, 17888, 5680, 6903, 5244, 12924, 16460, 10617, 12855, 2]
 
-// Module 18198 (FriendsScreen)
+// Module 18203 (FriendsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1128 */;
@@ -12,9 +12,9 @@ import components_Button_Button from "components/Button/Button" /* 5244 */;
 import SendMessageIcon from "SendMessageIcon" /* 5680 */;
 import TableRow2 from "TableRow" /* 6903 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
-import NoResultsDefault from "NoResults" /* 12919 */;
-import WumpusCouchSpotIllustration from "WumpusCouchSpotIllustration" /* 16455 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17883 */;
+import NoResultsDefault from "NoResults" /* 12924 */;
+import WumpusCouchSpotIllustration from "WumpusCouchSpotIllustration" /* 16460 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17888 */;
 import react from "react" /* 19 */;
 import GameRelationshipStore from "GameRelationshipStore" /* 7731 */;
 import RelationshipStore from "RelationshipStore" /* 4913 */;

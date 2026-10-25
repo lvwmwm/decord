@@ -1,9 +1,9 @@
-// Module ID: 13548
-// Function ID: 13549
+// Module ID: 13553
+// Function ID: 13554
 // Name: ApplicationIconAndName
 // Dependencies: [21, 4971, 587, 558, 576, 1202, 5234, 2]
 
-// Module 13548 (ApplicationIconAndName)
+// Module 13553 (ApplicationIconAndName)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;

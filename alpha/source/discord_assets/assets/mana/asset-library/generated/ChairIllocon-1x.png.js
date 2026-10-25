@@ -1,8 +1,8 @@
-// Module ID: 13641
-// Function ID: 13642
+// Module ID: 13646
+// Function ID: 13647
 // Dependencies: [2]
 
-// Module 13641
+// Module 13646
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ChairIllocon-1x.png.js");

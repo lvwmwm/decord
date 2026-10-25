@@ -1,9 +1,9 @@
-// Module ID: 13939
-// Function ID: 13940
+// Module ID: 13944
+// Function ID: 13945
 // Name: ProductPurchaseSuccessModal
-// Dependencies: [32, 729, 19, 17, 4972, 1087, 21, 4971, 587, 1995, 558, 576, 13938, 6931, 1128, 6933, 5052, 5247, 5206, 5212, 7660, 13940, 5252, 5258, 8667, 13942, 504, 13943, 11179, 9451, 8820, 8660, 9390, 9403, 11052, 11170, 11171, 5669, 13944, 5234, 7662, 5244, 7221, 2]
+// Dependencies: [32, 729, 19, 17, 4972, 1087, 21, 4971, 587, 1995, 558, 576, 13943, 6931, 1128, 6933, 5052, 5247, 5206, 5212, 7660, 13945, 5252, 5258, 8667, 13947, 504, 13948, 11180, 9451, 8820, 8660, 9390, 9403, 11053, 11171, 11172, 5669, 13949, 5234, 7662, 5244, 7221, 2]
 
-// Module 13939 (ProductPurchaseSuccessModal)
+// Module 13944 (ProductPurchaseSuccessModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
@@ -18,11 +18,11 @@ import _mod6933 from "module_6933" /* 6933 */;
 import _modDef7660 from "module_7660" /* 7660 */;
 import BundleSampleV2Default from "BundleSampleV2" /* 9390 */;
 import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9403 */;
-import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 11052 */;
-import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 11170 */;
-import NameplatePreview from "NameplatePreview" /* 11171 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 13938 */;
-import useCollectiblesShopStylesDefault from "useCollectiblesShopStyles" /* 13940 */;
+import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 11053 */;
+import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 11171 */;
+import NameplatePreview from "NameplatePreview" /* 11172 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 13943 */;
+import useCollectiblesShopStylesDefault from "useCollectiblesShopStyles" /* 13945 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 729 */;
 import react from "react" /* 19 */;
@@ -53,9 +53,9 @@ const CollectiblesUtils = tmp(7662);
 const useShopProductItems = tmp(8660);
 const useCurrentUser = tmp(8667);
 const useFetchVirtualCurrencyBalance = tmp(9451);
-const useHandleUseNow = tmp(11179);
-const useAvatarDecorationPreviewSizes = tmp(13942);
-const useFetchCollectiblesProductCategory = tmp(13943);
+const useHandleUseNow = tmp(11180);
+const useAvatarDecorationPreviewSizes = tmp(13947);
+const useFetchCollectiblesProductCategory = tmp(13948);
 ({ ScrollView: metroRequire, View: metroImportDefault } = react_native);
 ({ Orientation: c9, VerticalGradient: c10 } = Constants);
 ({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = Fragment);
@@ -675,7 +675,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductPurch
   }
   const tmpResult = useCurrentUser;
   const currentUser = tmpResult.useCurrentUser();
-  const backgroundColors = currentUser(13940)(product.styles).backgroundColors;
+  const backgroundColors = currentUser(13945)(product.styles).backgroundColors;
   let tertiary;
   if (backgroundColors != null) {
     tertiary = backgroundColors.tertiary;
@@ -1534,7 +1534,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductPurch
       const obj9 = { style: tmp6.headerLeading, children: showOrbBalancePill };
       if (showOrbBalancePill) {
         const obj10 = { initialRenderedBalance: prop, balance };
-        showOrbBalancePill = tmp33(tmp2(13944).BalanceWidgetPill, obj10);
+        showOrbBalancePill = tmp33(tmp2(13949).BalanceWidgetPill, obj10);
       }
       items4 = [tmp33(closure_7, obj9), ];
       let toHexStringResult;
@@ -1569,15 +1569,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductPurch
         tmp32Result2 = tmp32(tmp4(9403), obj16);
       } else if (require("CollectiblesItemType").CollectiblesItemType.PROFILE_EFFECT === type) {
         const obj17 = { user: currentUser, profileEffect: product.items[0] };
-        tmp32Result2 = tmp32(tmp4(11052), obj17);
+        tmp32Result2 = tmp32(tmp4(11053), obj17);
       } else if (require("CollectiblesItemType").CollectiblesItemType.PROFILE_FRAME === type) {
         const obj18 = { user: currentUser, profileFrame: product.items[0] };
-        tmp32Result2 = tmp32(tmp4(11170), obj18);
+        tmp32Result2 = tmp32(tmp4(11171), obj18);
       } else {
         tmp32Result2 = null;
         if (require("CollectiblesItemType").CollectiblesItemType.NAMEPLATE === type) {
           const obj19 = { user: currentUser, nameplate: product.items[0], animate: true };
-          tmp32Result2 = tmp32(tmp2(11171).NameplatePreview, obj19);
+          tmp32Result2 = tmp32(tmp2(11172).NameplatePreview, obj19);
         }
       }
       items7 = [tmp33(View, obj13), ];

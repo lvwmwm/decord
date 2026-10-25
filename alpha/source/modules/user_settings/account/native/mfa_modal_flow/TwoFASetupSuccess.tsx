@@ -1,9 +1,9 @@
-// Module ID: 16052
-// Function ID: 16053
+// Module ID: 16057
+// Function ID: 16058
 // Name: TwoFASetupSuccess
-// Dependencies: [5, 32, 19, 17, 21, 4971, 587, 558, 576, 6677, 1128, 16041, 7042, 5669, 16053, 5234, 1202, 5244, 16042, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4971, 587, 558, 576, 6677, 1128, 16046, 7042, 5669, 16058, 5234, 1202, 5244, 16047, 2]
 
-// Module 16052 (TwoFASetupSuccess)
+// Module 16057 (TwoFASetupSuccess)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -30,8 +30,8 @@ const intl5 = tmp(1128);
 const native = tmp(1202);
 const Text_Text = tmp(5234);
 const components_Button_Button = tmp(5244);
-const TwoFASetupModal = tmp(16042);
-const AssetRegistry = tmp(16053);
+const TwoFASetupModal = tmp(16047);
+const AssetRegistry = tmp(16058);
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;

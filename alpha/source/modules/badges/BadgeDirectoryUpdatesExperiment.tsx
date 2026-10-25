@@ -1,9 +1,9 @@
-// Module ID: 11117
-// Function ID: 11118
+// Module ID: 11118
+// Function ID: 11119
 // Name: BadgeDirectoryUpdatesExperiment
 // Dependencies: [1455, 558, 576, 2]
 
-// Module 11117 (BadgeDirectoryUpdatesExperiment)
+// Module 11118 (BadgeDirectoryUpdatesExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

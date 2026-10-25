@@ -1,9 +1,9 @@
-// Module ID: 12752
-// Function ID: 12753
+// Module ID: 12757
+// Function ID: 12758
 // Name: DevToolsExperimentsScreen
-// Dependencies: [32, 19, 17, 5190, 502, 4845, 5191, 21, 4971, 587, 558, 576, 11215, 11216, 5593, 7144, 12753, 12, 1202, 8723, 7145, 7150, 8487, 5195, 5210, 5234, 6903, 1280, 12750, 6987, 8485, 7285, 5663, 7248, 5265, 2]
+// Dependencies: [32, 19, 17, 5190, 502, 4845, 5191, 21, 4971, 587, 558, 576, 11216, 11217, 5593, 7144, 12758, 12, 1202, 8723, 7145, 7150, 8487, 5195, 5210, 5234, 6903, 1280, 12755, 6987, 8485, 7285, 5663, 7248, 5265, 2]
 
-// Module 12752 (DevToolsExperimentsScreen)
+// Module 12757 (DevToolsExperimentsScreen)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -41,7 +41,7 @@ const FingerprintUtils = tmp(1280);
 const ExperimentManager = tmp(5195);
 const TableRow5 = tmp(6903);
 const TableRowGroup6 = tmp(6987);
-const useExperimentAssignments = tmp(12750);
+const useExperimentAssignments = tmp(12755);
 const View = react_native.View;
 ({ ExperimentBuckets: c9, ExperimentTypes: c10 } = ExperimentConstants);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
@@ -245,9 +245,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           tmp27 = A;
         }
       }
-      const getBestMatches = tmp(12753).getBestMatches;
+      const getBestMatches = tmp(12758).getBestMatches;
       require("UserSettingsExperimentsUtils");
-      const sortEntries = tmp(12753).sortEntries;
+      const sortEntries = tmp(12758).sortEntries;
       require("UserSettingsExperimentsUtils");
       const tmpResult4 = require("UserSettingsExperimentsUtils");
       const bestMatches = getBestMatches(sortEntries(tmpResult4.getEntries(tmp10), tmp13), tmp6);
@@ -1948,7 +1948,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExperimentDe
     class S {
       constructor() {
         obj = closure_0(closure_2[31]);
-        copyResult = obj.copy(closure_1, () => { /* body not rendered: F149557 */ });
+        copyResult = obj.copy(closure_1, () => { /* body not rendered: F149588 */ });
         return;
       }
     }
@@ -1958,7 +1958,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExperimentDe
   class S {
     constructor() {
       obj = closure_0(closure_2[31]);
-      copyResult = obj.copy(closure_1, () => { /* body not rendered: F149557 */ });
+      copyResult = obj.copy(closure_1, () => { /* body not rendered: F149588 */ });
       return;
     }
   }

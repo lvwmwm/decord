@@ -1,9 +1,9 @@
-// Module ID: 13849
-// Function ID: 13850
+// Module ID: 13854
+// Function ID: 13855
 // Name: useFavoritesGuildChannelFilter
 // Dependencies: [19, 4823, 4903, 4826, 1087, 558, 576, 504, 9067, 4848, 1388, 2]
 
-// Module 13849 (useFavoritesGuildChannelFilter)
+// Module 13854 (useFavoritesGuildChannelFilter)
 import Constants from "Constants" /* 1087 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import FavoritesUtils from "FavoritesUtils" /* 4848 */;

@@ -1,37 +1,7 @@
 // Module ID: 15528
 // Function ID: 15529
-// Dependencies: [15443, 15529]
-// Exports: getSupportedNumberingSystems
+// Dependencies: []
 
 // Module 15528
-const require = globalThis.__r;
-let _require;
 
-
-export const getSupportedNumberingSystems = function getSupportedNumberingSystems(locale) {
-  _require = locale;
-  const numberingSystemNames = require("numberingSystemNames").numberingSystemNames;
-  return numberingSystemNames.filter((item) => {
-    function isSupportedNumberingSystem(item, arg1) {
-      let str = arg1;
-      if (undefined === arg1) {
-        str = "en";
-      }
-      try {
-        const concat = "".concat;
-        const createMemoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat;
-        const combined = "".concat(str, "-u-nu-");
-        const memoizedNumberFormat = createMemoizedNumberFormat(combined.concat(item));
-        const obj3 = memoizedNumberFormat;
-        if (memoizedNumberFormat.resolvedOptions().numberingSystem !== item) {
-          if ("123" === obj3.format(123)) {
-            return false;
-          }
-        }
-        return true;
-      } catch (err) {
-      }
-    }
-    return isSupportedNumberingSystem(item, locale);
-  });
-};
+export const calendars = ["buddhist", "chinese", "coptic", "dangi", "ethioaa", "ethiopic", "gregory", "hebrew", "indian", "islamic", "islamic-civil", "islamic-rgsa", "islamic-tbla", "islamic-umalqura", "islamicc", "iso8601", "japanese", "persian", "roc"];

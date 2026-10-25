@@ -1,27 +1,27 @@
-// Module ID: 15828
-// Function ID: 15829
+// Module ID: 15833
+// Function ID: 15834
 // Name: ProfileCustomizationSettingScreen
-// Dependencies: [5, 109, 32, 19, 17, 11121, 8649, 1097, 1087, 21, 4971, 1128, 15829, 15953, 558, 576, 15962, 5252, 587, 1505, 7090, 8901, 11068, 7078, 15850, 15954, 573, 5711, 11186, 6924, 7485, 1506, 11849, 11144, 2]
+// Dependencies: [5, 109, 32, 19, 17, 11122, 8649, 1097, 1087, 21, 4971, 1128, 15834, 15958, 558, 576, 15967, 5252, 587, 1505, 7090, 8901, 11069, 7078, 15855, 15959, 573, 5711, 11187, 6924, 7485, 1506, 11850, 11145, 2]
 
-// Module 15828 (ProfileCustomizationSettingScreen)
+// Module 15833 (ProfileCustomizationSettingScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import intl2 from "intl" /* 1128 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5711 */;
 import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7078 */;
-import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11068 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11186 */;
-import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 15829 */;
-import useUserProfileEditFormDefault from "useUserProfileEditForm" /* 15850 */;
-import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 15953 */;
-import useGuildProfileEditFormDefault from "useGuildProfileEditForm" /* 15954 */;
-import useMaybeFetchCollectiblesRecommendationsDefault from "useMaybeFetchCollectiblesRecommendations" /* 15962 */;
+import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11069 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11187 */;
+import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 15834 */;
+import useUserProfileEditFormDefault from "useUserProfileEditForm" /* 15855 */;
+import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 15958 */;
+import useGuildProfileEditFormDefault from "useGuildProfileEditForm" /* 15959 */;
+import useMaybeFetchCollectiblesRecommendationsDefault from "useMaybeFetchCollectiblesRecommendations" /* 15967 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ProfileCustomizationNavigationStore_mod from "ProfileCustomizationNavigationStore" /* 11121 */;
+import ProfileCustomizationNavigationStore_mod from "ProfileCustomizationNavigationStore" /* 11122 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8649 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;

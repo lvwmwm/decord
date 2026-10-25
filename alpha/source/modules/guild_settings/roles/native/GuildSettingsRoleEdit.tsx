@@ -1,9 +1,9 @@
-// Module ID: 19116
-// Function ID: 19117
+// Module ID: 19121
+// Function ID: 19122
 // Name: GuildSettingsRoleEdit
-// Dependencies: [109, 5, 19, 17, 4878, 502, 4883, 4877, 4845, 9006, 19103, 19098, 1087, 19105, 21, 4971, 587, 5037, 6924, 7485, 1128, 5711, 19107, 12, 1267, 8972, 19117, 5663, 6830, 11265, 5908, 1202, 6987, 6903, 7953, 19118, 19127, 19129, 19130, 5977, 8951, 558, 576, 1505, 4908, 504, 5592, 2]
+// Dependencies: [109, 5, 19, 17, 4878, 502, 4883, 4877, 4845, 9006, 19108, 19103, 1087, 19110, 21, 4971, 587, 5037, 6924, 7485, 1128, 5711, 19112, 12, 1267, 8972, 19122, 5663, 6830, 11266, 5908, 1202, 6987, 6903, 7953, 19123, 19132, 19134, 19135, 5977, 8951, 558, 576, 1505, 4908, 504, 5592, 2]
 
-// Module 19116 (GuildSettingsRoleEdit)
+// Module 19121 (GuildSettingsRoleEdit)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
@@ -23,16 +23,16 @@ import TableRowGroup2 from "TableRowGroup" /* 6987 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7485 */;
 import InlineNotice2 from "InlineNotice" /* 7953 */;
 import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8972 */;
-import ConnectionsRoleActionCreators from "ConnectionsRoleActionCreators" /* 11265 */;
-import GuildSettingsConstants from "GuildSettingsConstants" /* 19098 */;
-import GuildSettingsRolesStore2 from "GuildSettingsRolesStore" /* 19103 */;
-import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 19105 */;
-import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 19107 */;
-import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 19117 */;
-import GuildSettingsRoleEditDisplayDefault from "GuildSettingsRoleEditDisplay" /* 19118 */;
-import GuildSettingsRoleEditPermissionsDefault from "GuildSettingsRoleEditPermissions" /* 19127 */;
-import GuildSettingsRoleMembersDefault from "GuildSettingsRoleMembers" /* 19129 */;
-import GuildSettingsRoleEditConnectionsControlsDefault from "GuildSettingsRoleEditConnectionsControls" /* 19130 */;
+import ConnectionsRoleActionCreators from "ConnectionsRoleActionCreators" /* 11266 */;
+import GuildSettingsConstants from "GuildSettingsConstants" /* 19103 */;
+import GuildSettingsRolesStore2 from "GuildSettingsRolesStore" /* 19108 */;
+import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 19110 */;
+import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 19112 */;
+import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 19122 */;
+import GuildSettingsRoleEditDisplayDefault from "GuildSettingsRoleEditDisplay" /* 19123 */;
+import GuildSettingsRoleEditPermissionsDefault from "GuildSettingsRoleEditPermissions" /* 19132 */;
+import GuildSettingsRoleMembersDefault from "GuildSettingsRoleMembers" /* 19134 */;
+import GuildSettingsRoleEditConnectionsControlsDefault from "GuildSettingsRoleEditConnectionsControls" /* 19135 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

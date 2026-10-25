@@ -1,9 +1,9 @@
-// Module ID: 18975
-// Function ID: 18976
+// Module ID: 18980
+// Function ID: 18981
 // Name: NewTermsModal
 // Dependencies: [5, 32, 19, 17, 4817, 1087, 21, 4971, 587, 7290, 1128, 6668, 558, 576, 1633, 6930, 5972, 8670, 1275, 9361, 5234, 5244, 9041, 9032, 2]
 
-// Module 18975 (NewTermsModal)
+// Module 18980 (NewTermsModal)
 import nativeDefault from "native" /* 587 */;
 import intl10 from "intl" /* 1128 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;

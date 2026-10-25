@@ -1,10 +1,10 @@
-// Module ID: 19149
-// Function ID: 19150
+// Module ID: 19154
+// Function ID: 19155
 // Name: BansEmpty
-// Dependencies: [19, 21, 8724, 19150, 19151, 19152, 558, 576, 4978, 5669, 2]
+// Dependencies: [19, 21, 8724, 19155, 19156, 19157, 558, 576, 4978, 5669, 2]
 // Exports: getBansEmptySource
 
-// Module 19149 (BansEmpty)
+// Module 19154 (BansEmpty)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import shared from "shared" /* 4978 */;

@@ -1,10 +1,10 @@
-// Module ID: 16834
-// Function ID: 16835
+// Module ID: 16839
+// Function ID: 16840
 // Name: AndroidNotificationSettingsStore
 // Dependencies: [5, 1269, 1384, 10753, 1274, 558, 576, 4886, 2]
 // Exports: initializeAndroidNotificationSettingsStore, setAndroidMessageNotificationsEnabled, setAndroidNotificationLightsEnabled, setAndroidNotificationSoundsEnabled, setAndroidNotificationVibrationsEnabled
 
-// Module 16834 (AndroidNotificationSettingsStore)
+// Module 16839 (AndroidNotificationSettingsStore)
 import react from "react" /* 576 */;
 import PushNotificationDefault from "PushNotification" /* 10753 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -148,7 +148,7 @@ let obj = function _initializeAndroidNotificationSettingsStore() {
   });
   return obj(...arguments);
 };
-let closure_4 = module_1269.createWithEqualityFn(() => ({ isLightsEnabled: "Array", isVibrationsEnabled: "test", isSoundsEnabled: "y", isNotifyEveryTime: "IconComponent" }));
+let closure_4 = module_1269.createWithEqualityFn(() => ({ isLightsEnabled: "toCharArray$esjava$1", isVibrationsEnabled: "test", isSoundsEnabled: "ix", isNotifyEveryTime: "test" }));
 let ReactCompilerGating = ReactCompilerGating_mod;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAndroidNotificationLightsEnabled() {
   let first;

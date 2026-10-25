@@ -1,9 +1,9 @@
-// Module ID: 15822
-// Function ID: 15823
+// Module ID: 15827
+// Function ID: 15828
 // Name: DevToolsLazy
-// Dependencies: [19, 17, 7794, 7793, 21, 5973, 15823, 2002, 558, 576, 504, 1384, 17332, 2]
+// Dependencies: [19, 17, 7794, 7793, 21, 5973, 15828, 2002, 558, 576, 504, 1384, 17337, 2]
 
-// Module 15822 (DevToolsLazy)
+// Module 15827 (DevToolsLazy)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
@@ -25,7 +25,7 @@ let obj = {
   eventName: "keyCommandShowDevTools",
   discoverabilityTitle: "Open DevTools Panel",
   onKeyCommand() {
-    const promise = asyncRequire(15823, dependencyMap.paths);
+    const promise = asyncRequire(15828, dependencyMap.paths);
     promise.then((navigateToDevTools) => {
       navigateToDevTools.navigateToDevTools();
     });
@@ -121,8 +121,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsLa
       let tmp19;
       const _Symbol = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        cResult[8] = tmp(17332);
-        tmp(17332);
+        cResult[8] = tmp(17337);
+        tmp(17337);
         class D {
           constructor() {
             return showDevWidget.showDevWidget;
@@ -175,7 +175,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsLa
   const keyCommands = obj3.useKeyCommands(stateFromStores ? items : []);
   if (stateFromStores) {
     if (stateFromStores1) {
-      return jsx(tmp(17332).default, {});
+      return jsx(tmp(17337).default, {});
     }
   }
   return null;

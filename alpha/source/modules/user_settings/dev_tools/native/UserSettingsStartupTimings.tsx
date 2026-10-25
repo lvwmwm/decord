@@ -1,9 +1,9 @@
-// Module ID: 16921
-// Function ID: 16922
+// Module ID: 16926
+// Function ID: 16927
 // Name: UserSettingsStartupTimings
-// Dependencies: [5, 32, 19, 17, 1372, 1087, 21, 4971, 587, 558, 576, 5234, 5157, 1633, 13788, 504, 9, 7584, 8851, 5977, 6987, 6900, 1373, 6903, 14202, 7220, 2]
+// Dependencies: [5, 32, 19, 17, 1372, 1087, 21, 4971, 587, 558, 576, 5234, 5157, 1633, 13793, 504, 9, 7584, 8851, 5977, 6987, 6900, 1373, 6903, 14207, 7220, 2]
 
-// Module 16921 (UserSettingsStartupTimings)
+// Module 16926 (UserSettingsStartupTimings)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,8 +12,8 @@ import Stack_Stack from "Stack/Stack" /* 5977 */;
 import TableCheckboxRow from "TableCheckboxRow" /* 6900 */;
 import TableRow4 from "TableRow" /* 6903 */;
 import TableRowGroup6 from "TableRowGroup" /* 6987 */;
-import serializeAppStartLogsDefault from "serializeAppStartLogs" /* 13788 */;
-import ShareIcon from "ShareIcon" /* 14202 */;
+import serializeAppStartLogsDefault from "serializeAppStartLogs" /* 13793 */;
+import ShareIcon from "ShareIcon" /* 14207 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -441,7 +441,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
           obj42 = {
             label: "Hide the Noise",
             onPress() {
-                      return closure_1_2(() => { /* body not rendered: F161163 */ });
+                      return closure_1_2(() => { /* body not rendered: F161197 */ });
                     },
             checked: closure_1
           };
@@ -450,7 +450,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
           obj43 = {
             label: "Hide paints",
             onPress() {
-                      return closure_1_4(() => { /* body not rendered: F161164 */ });
+                      return closure_1_4(() => { /* body not rendered: F161198 */ });
                     },
             checked: !closure_3
           };
@@ -483,7 +483,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
       tmp29 = X;
     }
   }
-  const str = checked(13788)(useResult, !checked, first1);
+  const str = checked(13793)(useResult, !checked, first1);
   const parts = str.split("\n");
   cResult[0] = useResult;
   cResult[1] = checked;

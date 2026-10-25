@@ -1,27 +1,27 @@
-// Module ID: 15711
-// Function ID: 15712
+// Module ID: 15716
+// Function ID: 15717
 // Name: NativeRPCImplementation
-// Dependencies: [4972, 1207, 1246, 15712, 15766, 15767, 15768, 15770, 15771, 15772, 15773, 15774, 15776, 15779, 15780, 15781, 9259, 11466, 2]
+// Dependencies: [4972, 1207, 1246, 15717, 15771, 15772, 15773, 15775, 15776, 15777, 15778, 15779, 15781, 15784, 15785, 15786, 9259, 11467, 2]
 
-// Module 15711 (NativeRPCImplementation)
+// Module 15716 (NativeRPCImplementation)
 import NativeRPCServerDefault from "NativeRPCServer" /* 9259 */;
-import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 11466 */;
-import crossPlatformRPCCommands from "crossPlatformRPCCommands" /* 15712 */;
-import commands_activitiesDefault from "commands/activities" /* 15766 */;
-import audioSessionDefault from "audioSession" /* 15767 */;
-import authDefault from "auth" /* 15768 */;
-import screenCaptureDefault from "screenCapture" /* 15770 */;
-import setRunsInBackgroundDefault from "setRunsInBackground" /* 15771 */;
-import frameRelaunchDeepLinkDefault from "frameRelaunchDeepLink" /* 15772 */;
-import voiceSettingsDefault from "voiceSettings" /* 15773 */;
-import unsupportedDefault from "unsupported" /* 15774 */;
-import crossPlatformRPCEventHandlersDefault from "crossPlatformRPCEventHandlers" /* 15776 */;
-import screenCaptureEvents from "screenCaptureEvents" /* 15780 */;
-import voiceSettingsEventHandlers from "voiceSettingsEventHandlers" /* 15781 */;
+import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 11467 */;
+import crossPlatformRPCCommands from "crossPlatformRPCCommands" /* 15717 */;
+import commands_activitiesDefault from "commands/activities" /* 15771 */;
+import audioSessionDefault from "audioSession" /* 15772 */;
+import authDefault from "auth" /* 15773 */;
+import screenCaptureDefault from "screenCapture" /* 15775 */;
+import setRunsInBackgroundDefault from "setRunsInBackground" /* 15776 */;
+import frameRelaunchDeepLinkDefault from "frameRelaunchDeepLink" /* 15777 */;
+import voiceSettingsDefault from "voiceSettings" /* 15778 */;
+import unsupportedDefault from "unsupported" /* 15779 */;
+import crossPlatformRPCEventHandlersDefault from "crossPlatformRPCEventHandlers" /* 15781 */;
+import screenCaptureEvents from "screenCaptureEvents" /* 15785 */;
+import voiceSettingsEventHandlers from "voiceSettingsEventHandlers" /* 15786 */;
 import AccessibilityStore from "AccessibilityStore" /* 4972 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import discordEnvironmentEvents from "discordEnvironmentEvents" /* 15779 */;
+import discordEnvironmentEvents from "discordEnvironmentEvents" /* 15784 */;
 import size from "module_2" /* 2 */;
 
 let items;

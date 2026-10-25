@@ -1,9 +1,9 @@
-// Module ID: 10934
-// Function ID: 10935
+// Module ID: 10935
+// Function ID: 10936
 // Name: LikelyAtoWarningBanner
-// Dependencies: [19, 10693, 10935, 1087, 1097, 21, 4971, 587, 10936, 10937, 6672, 10938, 7422, 5660, 10940, 1128, 10943, 2002, 5234, 10954, 2]
+// Dependencies: [19, 10693, 10936, 1087, 1097, 21, 4971, 587, 10937, 10938, 6672, 10939, 7422, 5660, 10941, 1128, 10944, 2002, 5234, 10955, 2]
 
-// Module 10934 (LikelyAtoWarningBanner)
+// Module 10935 (LikelyAtoWarningBanner)
 import nativeDefault from "native" /* 587 */;
 import Constants2 from "Constants" /* 1087 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
@@ -14,12 +14,12 @@ import LinkingDefault from "Linking" /* 5660 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
 import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7422 */;
 import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10693 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10936 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10937 */;
-import MuteSettingsUtils from "MuteSettingsUtils" /* 10938 */;
-import LikelyAtoMoreTipsModalActionItemsDefault from "LikelyAtoMoreTipsModalActionItems" /* 10954 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10937 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10938 */;
+import MuteSettingsUtils from "MuteSettingsUtils" /* 10939 */;
+import LikelyAtoMoreTipsModalActionItemsDefault from "LikelyAtoMoreTipsModalActionItems" /* 10955 */;
 import react_mod from "react" /* 19 */;
-import Constants from "Constants" /* 10935 */;
+import Constants from "Constants" /* 10936 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;
 import size from "module_2" /* 2 */;
@@ -113,7 +113,7 @@ class LikelyAtoWarningBanner {
           learnMore: authStore(Text, obj3)
         };
         ModalActionCreatorsDefault;
-        const tmp2 = asyncRequire(10943, dependencyMap.paths);
+        const tmp2 = asyncRequire(10944, dependencyMap.paths);
         intl = intl5.intl;
         obj2 = {
           senderId,

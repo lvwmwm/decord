@@ -1,15 +1,15 @@
-// Module ID: 18846
-// Function ID: 18847
+// Module ID: 18851
+// Function ID: 18852
 // Name: JankSessionManager
-// Dependencies: [7570, 1087, 3, 7214, 17432, 1366, 17426, 18847, 17433, 18848, 7584, 2]
+// Dependencies: [7570, 1087, 3, 7214, 17437, 1366, 17431, 18852, 17438, 18853, 7584, 2]
 
-// Module 18846 (JankSessionManager)
+// Module 18851 (JankSessionManager)
 import LoggerDefault from "Logger" /* 3 */;
 import clientLaunchId from "clientLaunchId" /* 1366 */;
-import isJankScreenReportingEnabled from "isJankScreenReportingEnabled" /* 17426 */;
-import react_nativeDefault from "react-native" /* 17432 */;
-import JankNavigationReporterDefault from "JankNavigationReporter" /* 18847 */;
-import attachJankPanelReportersDefault from "attachJankPanelReporters" /* 18848 */;
+import isJankScreenReportingEnabled from "isJankScreenReportingEnabled" /* 17431 */;
+import react_nativeDefault from "react-native" /* 17437 */;
+import JankNavigationReporterDefault from "JankNavigationReporter" /* 18852 */;
+import attachJankPanelReportersDefault from "attachJankPanelReporters" /* 18853 */;
 import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7570 */;
 import Constants from "Constants" /* 1087 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
@@ -20,7 +20,7 @@ let screens;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const getJankSurfaceName = tmp(17433);
+const getJankSurfaceName = tmp(17438);
 ({ AnalyticEvents: closure_4, AppStates: hasOwnProperty } = Constants);
 let closure_6 = new LoggerDefault("JankSessionManager");
 const tmp3 = new LoggerDefault("JankSessionManager");
@@ -66,7 +66,7 @@ class JankSessionManager extends AutomaticLifecycleManager {
     let logger;
     const self = this;
     if (!this._isDelivering) {
-      let obj = self(17432);
+      let obj = self(17437);
       tmp._isDelivering = true;
       const pendingReports = obj.getPendingReports();
       const nextPromise = pendingReports.then((arr) => {

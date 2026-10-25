@@ -1,9 +1,9 @@
-// Module ID: 18880
-// Function ID: 18881
+// Module ID: 18885
+// Function ID: 18886
 // Name: AddAvatarModal
-// Dependencies: [5, 32, 19, 17, 8649, 1087, 21, 4971, 587, 5268, 6651, 558, 576, 1633, 504, 15835, 18881, 8658, 8739, 8154, 8653, 8655, 1128, 5234, 18890, 1202, 18878, 5244, 1275, 7485, 6924, 7095, 2]
+// Dependencies: [5, 32, 19, 17, 8649, 1087, 21, 4971, 587, 5268, 6651, 558, 576, 1633, 504, 15840, 18886, 8658, 8739, 8154, 8653, 8655, 1128, 5234, 18895, 1202, 18883, 5244, 1275, 7485, 6924, 7095, 2]
 
-// Module 18880 (AddAvatarModal)
+// Module 18885 (AddAvatarModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,7 +11,7 @@ import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 127
 import NavigatorConstants from "NavigatorConstants" /* 5268 */;
 import NavigatorHeader from "NavigatorHeader" /* 6924 */;
 import Navigator from "Navigator" /* 7095 */;
-import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 18878 */;
+import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 18883 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -41,8 +41,8 @@ const Text_Text = tmp(5234);
 const components_Button_Button = tmp(5244);
 const RecentAvatarUtils = tmp(8658);
 const VideoBackground = tmp(8739);
-const ProfilePendingImageUtils = tmp(15835);
-const PresetAvatarSelect = tmp(18881);
+const ProfilePendingImageUtils = tmp(15840);
+const PresetAvatarSelect = tmp(18886);
 function headerRight() {
   let intl;
   let obj = {
@@ -342,7 +342,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddAva
                   }
                   if (cResult[37] !== selectedAvatar) {
                     let obj6 = { onAvatarSelect: tmp9, selectedAvatar };
-                    const tmp59 = closure_9(selectedAvatar(18881), obj6);
+                    const tmp59 = closure_9(selectedAvatar(18886), obj6);
                     cResult[37] = selectedAvatar;
                     cResult[38] = tmp59;
                     tmp57 = tmp59;
@@ -445,7 +445,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddAva
         tmp46 = tmp48;
       }
       const obj13 = { avatarSource: tmp20, showPendingAvatar: null != tmp15, onSelectAvatar: tmp22 };
-      const tmp43 = closure_9(tmp10(18890), obj13);
+      const tmp43 = closure_9(tmp10(18895), obj13);
       cResult[21] = tmp20;
       cResult[22] = null != tmp15;
       cResult[23] = tmp43;
@@ -576,8 +576,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddAva
   let pendingImage;
   const stateFromStores = obj.useStateFromStores(items, () => pendingChanges.getPendingChanges().pendingAvatar);
   if (null != selectedAvatar) {
-    let obj2 = { imageUri: tmp9(18881).DEFAULT_AVATARS[selectedAvatar], description: tmp9Result3.generateAvatarDescription() };
-    let createPendingImage = tmp9(15835).createPendingImage;
+    let obj2 = { imageUri: tmp9(18886).DEFAULT_AVATARS[selectedAvatar], description: tmp9Result3.generateAvatarDescription() };
+    let createPendingImage = tmp9(15840).createPendingImage;
     ProfilePendingImageUtils;
     tmp9Result3 = RecentAvatarUtils;
     pendingImage = createPendingImage(obj2);
@@ -618,7 +618,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddAva
       return obj(...arguments);
     }
   };
-  items3[1] = closure_9(selectedAvatar(18890), obj8);
+  items3[1] = closure_9(selectedAvatar(18895), obj8);
   let obj9 = { style: tmp.errorContainer, children: tmp18(LegacyText, obj10) };
   obj10 = { style: tmp.errorText, children: stringResult };
   LegacyText = tmp9(1202).LegacyText;
@@ -627,7 +627,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddAva
     stringResult = intl3.string(intl5.t.XyLlVm);
   }
   items3[2] = closure_9(tmp17, obj9);
-  items4 = [tmp16(tmp17, obj4), tmp18(tmp7(18881), { onAvatarSelect: tmp6, selectedAvatar }), ];
+  items4 = [tmp16(tmp17, obj4), tmp18(tmp7(18886), { onAvatarSelect: tmp6, selectedAvatar }), ];
   const obj11 = { style: tmp.buttonContainer, children: closure_9(Button, obj12) };
   obj12 = {
     text: intl4.string(intl5.t.PDTjLN),

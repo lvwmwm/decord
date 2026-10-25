@@ -1,9 +1,9 @@
-// Module ID: 18235
-// Function ID: 18236
+// Module ID: 18240
+// Function ID: 18241
 // Name: ShopCoachmark
 // Dependencies: [19, 4820, 21, 4971, 558, 576, 1202, 1128, 587, 9840, 2]
 
-// Module 18235 (ShopCoachmark)
+// Module 18240 (ShopCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

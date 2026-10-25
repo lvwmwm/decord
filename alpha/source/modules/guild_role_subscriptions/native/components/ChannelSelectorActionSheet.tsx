@@ -1,10 +1,10 @@
-// Module ID: 19297
-// Function ID: 19298
+// Module ID: 19302
+// Function ID: 19303
 // Name: ChannelSelectorActionSheet
-// Dependencies: [32, 19, 17, 4823, 7207, 4903, 1087, 6705, 21, 4971, 587, 558, 576, 5604, 5210, 17550, 7267, 504, 7298, 5234, 1128, 7145, 6908, 6672, 8950, 2002, 8970, 8975, 9469, 7220, 2]
+// Dependencies: [32, 19, 17, 4823, 7207, 4903, 1087, 6705, 21, 4971, 587, 558, 576, 5604, 5210, 17555, 7267, 504, 7298, 5234, 1128, 7145, 6908, 6672, 8950, 2002, 8970, 8975, 9469, 7220, 2]
 // Exports: default
 
-// Module 19297 (ChannelSelectorActionSheet)
+// Module 19302 (ChannelSelectorActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -104,7 +104,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
       }
     }
     const obj5 = { style: tmp4.channelRow, onPress: tmp7, accessible: true, accessibilityLabel: tmp6, channel, selected, disableHighlightOnPress: true, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS };
-    const tmp13 = closure_11(onChannelSelected(17550), obj5);
+    const tmp13 = closure_11(onChannelSelected(17555), obj5);
     cResult[3] = channel;
     cResult[4] = tmp7;
     cResult[5] = selected;
@@ -137,7 +137,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     onChannelSelected(channel);
   }, items);
   let obj = { style: tmp.channelRow, onPress: callback, accessible: true, accessibilityLabel: tmp4, channel, selected, disableHighlightOnPress: true, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS };
-  const tmp9 = onChannelSelected(17550);
+  const tmp9 = onChannelSelected(17555);
   const children = [closure_11(tmp9, obj), ];
   const tmp6 = closure_13;
   const tmp7 = closure_12;

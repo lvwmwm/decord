@@ -1,10 +1,10 @@
-// Module ID: 14546
-// Function ID: 14547
+// Module ID: 14551
+// Function ID: 14552
 // Name: GameOrganizationInviteEmbed
-// Dependencies: [11025, 10004, 11026, 7809, 8275, 1128, 2406, 8137, 587, 12720, 4968, 2]
+// Dependencies: [11026, 10004, 11027, 7809, 8275, 1128, 2406, 8137, 587, 12725, 4968, 2]
 // Exports: createGameOrganizationInviteEmbed
 
-// Module 14546 (GameOrganizationInviteEmbed)
+// Module 14551 (GameOrganizationInviteEmbed)
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
 import _modDef2406 from "module_2406" /* 2406 */;
@@ -13,9 +13,9 @@ import Constants from "Constants" /* 7809 */;
 import react_native from "react-native" /* 8137 */;
 import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8275 */;
 import CodedLinksConstants from "CodedLinksConstants" /* 10004 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11026 */;
-import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 12720 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11025 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11027 */;
+import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 12725 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11026 */;
 import size from "module_2" /* 2 */;
 
 const CodedLinkExtendedType = CodedLinksConstants.CodedLinkExtendedType;

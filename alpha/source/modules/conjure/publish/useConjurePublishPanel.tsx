@@ -1,10 +1,10 @@
-// Module ID: 12291
-// Function ID: 12292
+// Module ID: 12292
+// Function ID: 12293
 // Name: useConjurePublishPanel
-// Dependencies: [5, 32, 19, 6773, 6774, 3830, 12292, 11805, 12293, 12294, 11809, 11876, 10720, 1128, 2]
+// Dependencies: [5, 32, 19, 6773, 6774, 3830, 12293, 11806, 12294, 12295, 11810, 11877, 10720, 1128, 2]
 // Exports: default
 
-// Module 12291 (useConjurePublishPanel)
+// Module 12292 (useConjurePublishPanel)
 import _modDef3830 from "module_3830" /* 3830 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6774 */;

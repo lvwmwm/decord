@@ -1,15 +1,15 @@
-// Module ID: 12277
-// Function ID: 12278
+// Module ID: 12278
+// Function ID: 12279
 // Name: ConjureNativeMarkdown
-// Dependencies: [19, 17, 21, 587, 4971, 558, 576, 12278, 5234, 11821, 12279, 2]
+// Dependencies: [19, 17, 21, 587, 4971, 558, 576, 12279, 5234, 11822, 12280, 2]
 
-// Module 12277 (ConjureNativeMarkdown)
+// Module 12278 (ConjureNativeMarkdown)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5234 */;
-import conjureMarkup from "conjureMarkup" /* 11821 */;
-import ConjureMarkdownBlocks from "ConjureMarkdownBlocks" /* 12278 */;
+import conjureMarkup from "conjureMarkup" /* 11822 */;
+import ConjureMarkdownBlocks from "ConjureMarkdownBlocks" /* 12279 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
@@ -25,7 +25,7 @@ let obj4;
 let obj5;
 let obj6;
 let tmp;
-const useConjureRevealedText = tmp(12279);
+const useConjureRevealedText = tmp(12280);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 const CONJURE_MARKUP_OPTIONS = { allowList: true, allowHeading: true, allowLinks: true };
@@ -51,7 +51,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   const tmp = _require;
   _require = tmp4;
   if (cResult[0] !== source) {
-    const tmpResult = tmp(12278);
+    const tmpResult = tmp(12279);
     const splitMarkdownBlocksResult = tmpResult.splitMarkdownBlocks(source);
     cResult[0] = source;
     cResult[1] = splitMarkdownBlocksResult;

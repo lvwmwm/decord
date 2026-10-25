@@ -1,12 +1,12 @@
-// Module ID: 19256
-// Function ID: 19257
+// Module ID: 19261
+// Function ID: 19262
 // Name: useIsCreatorMonetizationRequestRejected
-// Dependencies: [19202, 1128, 2]
+// Dependencies: [19207, 1128, 2]
 // Exports: default
 
-// Module 19256 (useIsCreatorMonetizationRequestRejected)
+// Module 19261 (useIsCreatorMonetizationRequestRejected)
 import intl6 from "intl" /* 1128 */;
-import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 19202 */;
+import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 19207 */;
 import size from "module_2" /* 2 */;
 
 const constants = CreatorMonetizationEligibilityConstants.CreatorMonetizationApplicationState;

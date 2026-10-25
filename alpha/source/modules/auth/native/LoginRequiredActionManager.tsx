@@ -1,9 +1,9 @@
-// Module ID: 18854
-// Function ID: 18855
+// Module ID: 18859
+// Function ID: 18860
 // Name: LoginRequiredActionManager
 // Dependencies: [1392, 4816, 1087, 7214, 7490, 6668, 2]
 
-// Module 18854 (LoginRequiredActionManager)
+// Module 18859 (LoginRequiredActionManager)
 import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6668 */;
 import UserStore from "UserStore" /* 1392 */;
 import LoginRequiredActionStore from "LoginRequiredActionStore" /* 4816 */;

@@ -1,9 +1,9 @@
-// Module ID: 14586
-// Function ID: 14587
+// Module ID: 14591
+// Function ID: 14592
 // Name: InAppReportsLeaveGuildElement
-// Dependencies: [32, 19, 1087, 21, 558, 576, 9005, 5711, 5909, 1128, 5978, 11534, 14581, 2]
+// Dependencies: [32, 19, 1087, 21, 558, 576, 9005, 5711, 5909, 1128, 5978, 11535, 14586, 2]
 
-// Module 14586 (InAppReportsLeaveGuildElement)
+// Module 14591 (InAppReportsLeaveGuildElement)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import intl5 from "intl" /* 1128 */;

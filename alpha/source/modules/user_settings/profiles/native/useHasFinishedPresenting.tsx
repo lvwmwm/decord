@@ -1,9 +1,9 @@
-// Module ID: 15881
-// Function ID: 15882
+// Module ID: 15886
+// Function ID: 15887
 // Name: useHasFinishedPresenting
 // Dependencies: [32, 19, 558, 576, 1505, 2]
 
-// Module 15881 (useHasFinishedPresenting)
+// Module 15886 (useHasFinishedPresenting)
 import react2 from "react" /* 576 */;
 import useNavigation from "useNavigation" /* 1505 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -16,12 +16,12 @@ let navigation;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasFinishedPresenting() {
   let closure_2;
   let first;
-  let obj = react2;
+  const obj = react2;
   const cResult = obj.c(4);
-  let obj2 = useNavigation;
+  const obj2 = useNavigation;
   navigation = obj2.useNavigation();
-  let obj3 = react;
   [first, closure_2] = react.useState(false);
+  const obj3 = react;
   if (cResult[0] === first) {
     let tmp5;
     let tmp6;
@@ -67,7 +67,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasFinish
 }) : (function useHasFinishedPresenting() {
   let closure_2;
   let first;
-  const obj = useNavigation;
+  let obj = useNavigation;
   navigation = obj.useNavigation();
   [first, closure_2] = react.useState(false);
   const items = [navigation, first];

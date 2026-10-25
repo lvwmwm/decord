@@ -1,15 +1,15 @@
-// Module ID: 17633
-// Function ID: 17634
+// Module ID: 17638
+// Function ID: 17639
 // Name: DirectoryChannel
-// Dependencies: [19, 4823, 4901, 12059, 6705, 21, 4971, 587, 558, 576, 573, 1114, 10691, 9018, 17550, 2]
+// Dependencies: [19, 4823, 4901, 12060, 6705, 21, 4971, 587, 558, 576, 573, 1114, 10691, 9018, 17555, 2]
 
-// Module 17633 (DirectoryChannel)
+// Module 17638 (DirectoryChannel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import router_utils from "router_utils" /* 1114 */;
 import ReadStateConstants from "ReadStateConstants" /* 6705 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10691 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12059 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12060 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import GuildChannelStore from "GuildChannelStore" /* 4901 */;
@@ -125,7 +125,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           }
         }
       }
-      const tmp21 = jsx(id(17550), { onPress: tmp11, onLongPress: tmp12, style: container, accessible: true, accessibilityRole: "button", accessibilityLabel: tmp13, accessibilityState: tmp16, channel: stateFromStores, selected, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS });
+      const tmp21 = jsx(id(17555), { onPress: tmp11, onLongPress: tmp12, style: container, accessible: true, accessibilityRole: "button", accessibilityLabel: tmp13, accessibilityState: tmp16, channel: stateFromStores, selected, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS });
       cResult[12] = stateFromStores;
       cResult[13] = tmp12;
       cResult[14] = tmp11;
@@ -184,7 +184,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let tmp7 = null;
   if (null != stateFromStores) {
     const obj3 = { channel: stateFromStores };
-    id(17550);
+    id(17555);
     const obj4 = { selected };
     tmp7 = <tmp10 onPress={callback} onLongPress={tmp6} style={tmp.container} accessible accessibilityRole="button" accessibilityLabel={id(9018)(obj3)} accessibilityState={obj4} channel={stateFromStores} selected={selected} resolvedUnreadSetting={UnreadSetting.ONLY_MENTIONS} />;
   }

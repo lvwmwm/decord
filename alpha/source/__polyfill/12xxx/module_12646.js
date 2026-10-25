@@ -1,48 +1,28 @@
 // Module ID: 12646
 // Function ID: 12647
-// Dependencies: [12600, 12587, 12573]
-// Exports: addBreadcrumb
+// Dependencies: []
+// Exports: isSentryRequestUrl
 
 // Module 12646
-import _mod12573 from "module_12573" /* 12573 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12587 */;
-import _mod12600 from "module_12600" /* 12600 */;
 
-
-export const addBreadcrumb = function addBreadcrumb(arg0, arg1) {
-  let tmpResult;
-  let closure_0 = arg1;
-  const obj = _mod12600;
-  const client = obj.getClient();
-  const obj3 = _mod12600;
-  const isolationScope = obj3.getIsolationScope();
-  if (client) {
-    const options = client.getOptions();
-    let beforeBreadcrumb = options.beforeBreadcrumb;
-    let tmp5 = null;
-    if (undefined !== beforeBreadcrumb) {
-      tmp5 = beforeBreadcrumb;
-    }
-    beforeBreadcrumb = tmp5;
-    const maxBreadcrumbs = options.maxBreadcrumbs;
-    let num = 100;
-    if (undefined !== maxBreadcrumbs) {
-      num = maxBreadcrumbs;
-    }
-    if (num > 0) {
-      let obj2 = { timestamp: tmpResult.dateTimestampInSeconds() };
-      tmpResult = _browserPerformanceTimeOriginMode;
-      const merged = Object.assign(arg0);
-      if (tmp5) {
-        const tmpResult2 = _mod12573;
-        obj2 = tmpResult2.consoleSandbox(() => beforeBreadcrumb(obj2, closure_0));
+export const isSentryRequestUrl = function isSentryRequestUrl(arr, getDsn) {
+  const tmp = getDsn && getDsn.getDsn();
+  arr = getDsn && getDsn.getOptions().tunnel;
+  let tmp2 = tmp && arr.includes(tmp.host);
+  if (!tmp2) {
+    let flag = false;
+    if (arr) {
+      let substr = arr;
+      if ("/" === arr[arr.length - 1]) {
+        substr = arr.slice(0, -1);
       }
-      if (null !== obj2) {
-        if (client.emit) {
-          client.emit("beforeAddBreadcrumb", obj2, arg1);
-        }
-        isolationScope.addBreadcrumb(obj2, num);
+      let substr1 = arr;
+      if ("/" === arr[arr.length - 1]) {
+        substr1 = arr.slice(0, -1);
       }
+      flag = substr === substr1;
     }
+    tmp2 = flag;
   }
+  return tmp2;
 };

@@ -1,9 +1,9 @@
-// Module ID: 10835
-// Function ID: 10836
+// Module ID: 10836
+// Function ID: 10837
 // Name: InstantInviteUsesLabel
 // Dependencies: [19, 21, 558, 576, 5234, 2]
 
-// Module 10835 (InstantInviteUsesLabel)
+// Module 10836 (InstantInviteUsesLabel)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;

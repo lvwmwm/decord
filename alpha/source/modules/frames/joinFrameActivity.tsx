@@ -1,14 +1,14 @@
-// Module ID: 12705
-// Function ID: 12706
+// Module ID: 12710
+// Function ID: 12711
 // Name: joinFrameActivity
-// Dependencies: [5, 2045, 4823, 5630, 6776, 1087, 2026, 584, 11395, 11353, 5626, 11396, 10782, 1128, 11414, 12706, 11209, 10777, 6375, 12707, 9255, 7411, 11342, 2]
+// Dependencies: [5, 2045, 4823, 5630, 6776, 1087, 2026, 584, 11396, 11354, 5626, 11397, 10783, 1128, 11415, 12711, 11210, 10778, 6375, 12712, 9255, 7411, 11343, 2]
 // Exports: default
 
-// Module 12705 (joinFrameActivity)
+// Module 12710 (joinFrameActivity)
 import Constants2 from "Constants" /* 2026 */;
 import FramesConstants from "FramesConstants" /* 6776 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
-import UserActivityActionCreators from "UserActivityActionCreators" /* 11342 */;
+import UserActivityActionCreators from "UserActivityActionCreators" /* 11343 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
@@ -16,7 +16,7 @@ import VoiceStateStore from "VoiceStateStore" /* 5630 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
-let c7, channel, closure_7, preferredChannelId, session_id, session_id2, set, voiceStateForSession;
+let c7, channel, closure_7, messageId, preferredChannelId, session_id, session_id2, set, voiceStateForSession;
 
 let c10;
 let c9;
@@ -29,6 +29,7 @@ let obj = function _joinFrameActivity() {
     let c8 = 0;
     const iter = (async function(arg0, value) {
       let obj20;
+      let tmp117;
       function getActivityChannelId() {
         return closure_1_14(...arguments);
       }
@@ -52,8 +53,6 @@ let obj = function _joinFrameActivity() {
         try {
           let c1;
           let c2;
-          let c4;
-          let c5;
           let intent;
           let hasItem1;
           let secret;
@@ -68,6 +67,8 @@ let obj = function _joinFrameActivity() {
             {
               let c0;
               let c3;
+              let c4;
+              let c5;
               if (arg0 === 1) {
                 c10 = 3;
                 throw value;
@@ -80,8 +81,8 @@ let obj = function _joinFrameActivity() {
                 c1 = undefined;
                 c2 = undefined;
                 session_id = undefined;
-                c4 = undefined;
-                c5 = undefined;
+                channelId = undefined;
+                messageId = undefined;
                 intent = undefined;
                 ({ application: c0, userId: c1, activity: c2, sessionId: c3, channelId: c4, messageId: c5, intent } = closure_0);
                 if (intent === undefined) {
@@ -210,8 +211,8 @@ let obj = function _joinFrameActivity() {
                         session_id = closure_134_2[16];
                         const getJoinSecret = closure_134_1(session_id).getJoinSecret;
                         const tmp143 = closure_134_1(session_id);
-                        if (null != c5) {
-                          session_id = c4;
+                        if (null != messageId) {
+                          session_id = channelId;
                         } else {
                           channelId = session_id;
                           if (session_id == null) {
@@ -223,11 +224,11 @@ let obj = function _joinFrameActivity() {
                           }
                           let closure_3 = channelId;
                           if (channelId == null) {
-                            closure_3 = c4;
+                            closure_3 = channelId;
                           }
                           session_id = closure_3;
                         }
-                        session_id = getJoinSecret(tmp144, tmp145, tmp146, session_id, c5);
+                        session_id = getJoinSecret(tmp144, tmp145, tmp146, session_id, messageId);
                         preferredChannelId = 9;
                         c10 = 1;
                         return { value: session_id, done: false };
@@ -237,8 +238,16 @@ let obj = function _joinFrameActivity() {
                           session_id = obj18;
                           obj20 = closure_134_0(closure_134_2[19]);
                         } else {
-                          const obj19 = { applicationId: id, channel };
-                          session_id = closure_134_1(closure_134_2[8])(obj19);
+                          session_id = closure_134_1(closure_134_2[8]);
+                          const obj19 = { applicationId: id, channel, invite: tmp117 };
+                          tmp117 = undefined;
+                          if (null != channelId) {
+                            if (null != messageId) {
+                              tmp117 = { channelId, messageId };
+                              const obj22 = { channelId, messageId };
+                            }
+                          }
+                          session_id = session_id(obj19);
                         }
                         frameId = session_id.frameId;
                         session_id = session_id.launched;
@@ -246,9 +255,9 @@ let obj = function _joinFrameActivity() {
                           c10 = 3;
                           return { value: true, done: true };
                         } else {
-                          const obj22 = { type: "ACTIVITY_JOIN_NAVIGATION_COMPLETE", applicationId: id };
+                          const obj23 = { type: "ACTIVITY_JOIN_NAVIGATION_COMPLETE", applicationId: id };
                           const obj21 = closure_134_1(closure_134_2[7]);
-                          obj21.dispatch(obj22);
+                          obj21.dispatch(obj23);
                           c8 = 2;
                           preferredChannelId = 11;
                           c10 = 1;
@@ -424,9 +433,9 @@ let obj = function _joinFrameActivity() {
                 return { value, done: true };
               } else {
                 c8 = 0;
-                const obj36 = { type: "ACTIVITY_JOIN", applicationId: id, parentApplicationId: null, frameId, secret, intent, embedded: true };
+                const obj37 = { type: "ACTIVITY_JOIN", applicationId: id, parentApplicationId: null, frameId, secret, intent, embedded: true };
                 const obj33 = closure_134_1(closure_134_2[7]);
-                obj33.dispatch(obj36);
+                obj33.dispatch(obj37);
                 c10 = 3;
                 return { value: true, done: true };
               }

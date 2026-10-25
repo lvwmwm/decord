@@ -1,11 +1,11 @@
-// Module ID: 12782
-// Function ID: 12783
+// Module ID: 12787
+// Function ID: 12788
 // Name: GuildDisableCommunicationModal
-// Dependencies: [19, 21, 558, 576, 10029, 1128, 5989, 12783, 10030, 2]
+// Dependencies: [19, 21, 558, 576, 10029, 1128, 5989, 12788, 10030, 2]
 
-// Module 12782 (GuildDisableCommunicationModal)
+// Module 12787 (GuildDisableCommunicationModal)
 import Fragment from "Fragment" /* 21 */;
-import GuildDisableCommunicationDefault from "GuildDisableCommunication" /* 12783 */;
+import GuildDisableCommunicationDefault from "GuildDisableCommunication" /* 12788 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

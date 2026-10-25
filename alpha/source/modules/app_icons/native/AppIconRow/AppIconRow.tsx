@@ -1,9 +1,9 @@
-// Module ID: 16881
-// Function ID: 16882
+// Module ID: 16886
+// Function ID: 16887
 // Name: AppIconRow
-// Dependencies: [32, 19, 21, 1128, 4971, 587, 558, 576, 9866, 12, 5039, 16379, 6988, 6903, 2]
+// Dependencies: [32, 19, 21, 1128, 4971, 587, 558, 576, 9866, 12, 5039, 16384, 6988, 6903, 2]
 
-// Module 16881 (AppIconRow)
+// Module 16886 (AppIconRow)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -13,7 +13,7 @@ import react_native from "react-native" /* 5039 */;
 import TableRow2 from "TableRow" /* 6903 */;
 import FormRadio from "FormRadio" /* 6988 */;
 import AppIconTypes from "AppIconTypes" /* 9866 */;
-import AppIconDefault from "AppIcon" /* 16379 */;
+import AppIconDefault from "AppIcon" /* 16384 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4971 */;

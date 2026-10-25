@@ -1,12 +1,12 @@
-// Module ID: 16228
-// Function ID: 16229
+// Module ID: 16233
+// Function ID: 16234
 // Name: AuthorizedAppSetting
-// Dependencies: [8332, 1087, 11205, 16229, 2]
+// Dependencies: [8332, 1087, 11206, 16234, 2]
 
-// Module 16228 (AuthorizedAppSetting)
+// Module 16233 (AuthorizedAppSetting)
 import Constants from "Constants" /* 1087 */;
 import SettingsConstants from "SettingsConstants" /* 8332 */;
-import SettingBuilders from "SettingBuilders" /* 11205 */;
+import SettingBuilders from "SettingBuilders" /* 11206 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

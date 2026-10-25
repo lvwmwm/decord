@@ -1,17 +1,17 @@
-// Module ID: 16440
-// Function ID: 16441
+// Module ID: 16445
+// Function ID: 16446
 // Name: QuestDockExternalCoordinationContext
-// Dependencies: [19, 16434, 6710, 16436, 21, 1104, 7169, 558, 576, 5052, 16435, 9571, 1384, 2]
+// Dependencies: [19, 16439, 6710, 16441, 21, 1104, 7169, 558, 576, 5052, 16440, 9571, 1384, 2]
 
-// Module 16440 (QuestDockExternalCoordinationContext)
+// Module 16445 (QuestDockExternalCoordinationContext)
 import Fragment from "Fragment" /* 21 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
 import QuestConstants from "QuestConstants" /* 6710 */;
 import QuestActionCreators from "QuestActionCreators" /* 9571 */;
-import QuestDockConstants from "QuestDockConstants" /* 16436 */;
+import QuestDockConstants from "QuestDockConstants" /* 16441 */;
 import react from "react" /* 19 */;
-import QuestDockStore from "QuestDockStore" /* 16434 */;
+import QuestDockStore from "QuestDockStore" /* 16439 */;
 import "ReanimatedHelperTypes";
 import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7169 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

@@ -109,12 +109,13 @@ let obj = {
   FRAME_LAUNCH_START: function handleFrameLaunchStart(arg0) {
     let applicationId;
     let hostWindowKey;
+    let invite;
     let launch;
     let launchRequestId;
     let surface;
     ({ frameId, surface, hostWindowKey } = arg0);
-    ({ applicationId, launch, launchRequestId } = arg0);
-    const obj = { id: frameId, applicationId, intent: metroRequire(surface), surface, state: "loading", data: null, hostWindowKey, launch, launchRequestId };
+    ({ applicationId, launch, invite, launchRequestId } = arg0);
+    const obj = { id: frameId, applicationId, intent: metroRequire(surface), surface, state: "loading", data: null, hostWindowKey, launch, invite, launchRequestId };
     set = map.set;
     if (hostWindowKey == null) {
       hostWindowKey = null;
@@ -123,12 +124,13 @@ let obj = {
   },
   FRAME_LAUNCH: function handleFrameLaunch(arg0) {
     let hostWindowKey;
+    let invite;
     let launch;
     let launchRequestId;
     let obj5;
     let proxyTicket;
     ({ frameId, hostWindowKey, launchRequestId } = arg0);
-    ({ proxyTicket, launch } = arg0);
+    ({ proxyTicket, launch, invite } = arg0);
     const value = map.get(frameId);
     if (null != value) {
       const tmp2 = null != launchRequestId && value.launchRequestId !== launchRequestId;
@@ -143,7 +145,7 @@ let obj = {
           const obj3 = { id: null, applicationId: null, intent: null, surface: null, launchRequestId: null, state: "launched", data: obj5 };
           ({ id: obj2.id, applicationId: obj2.applicationId, intent: obj2.intent, surface: obj2.surface, launchRequestId: obj2.launchRequestId } = value);
           const _Date = Date;
-          obj5 = { url: tmp5, connectedSince: Date.now(), layoutMode: hasOwnProperty.FOCUSED, activityPanelMode: ActivityPanelModes.PANEL, proxyTicket, proxyTicketRefreshing: false, orientationLock: null, pipOrientationLock: null, runsInBackground: false, poolVisibility: "unpooled", muted: false, userMuted: false, iframeId: null, hostWindowKey, launch };
+          obj5 = { url: tmp5, connectedSince: Date.now(), layoutMode: hasOwnProperty.FOCUSED, activityPanelMode: ActivityPanelModes.PANEL, proxyTicket, proxyTicketRefreshing: false, orientationLock: null, pipOrientationLock: null, runsInBackground: false, poolVisibility: "unpooled", muted: false, userMuted: false, iframeId: null, hostWindowKey, launch, invite };
           set = map.set;
           const merged = Object.assign(closure_12);
           if (hostWindowKey == null) {

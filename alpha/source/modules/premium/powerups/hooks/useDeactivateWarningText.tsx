@@ -1,9 +1,9 @@
-// Module ID: 13461
-// Function ID: 13462
+// Module ID: 13466
+// Function ID: 13467
 // Name: useDeactivateWarningText
 // Dependencies: [19, 5194, 4877, 4845, 558, 576, 504, 7224, 5185, 1128, 2568, 2]
 
-// Module 13461 (useDeactivateWarningText)
+// Module 13466 (useDeactivateWarningText)
 import _modDef2568 from "module_2568" /* 2568 */;
 import Powerups from "Powerups" /* 5185 */;
 import useGuildRoleMemberCountsDefault from "useGuildRoleMemberCounts" /* 7224 */;
@@ -149,7 +149,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDeactivat
           tmp3 = closure_5;
           tmp4 = closure_0;
           sortedRoles = closure_5.getSortedRoles(closure_0);
-          num = sortedRoles.reduce(() => { /* body not rendered: F150344 */ }, 0);
+          num = sortedRoles.reduce(() => { /* body not rendered: F150375 */ }, 0);
         }
       }
       return num;

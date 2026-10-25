@@ -1,10 +1,10 @@
-// Module ID: 14500
-// Function ID: 14501
+// Module ID: 14505
+// Function ID: 14506
 // Name: transformMessageAttachments
-// Dependencies: [8134, 1087, 1405, 9998, 5999, 8589, 1384, 8588, 1128, 12925, 8610, 8758, 8151, 8608, 2]
+// Dependencies: [8134, 1087, 1405, 9998, 5999, 8589, 1384, 8588, 1128, 12930, 8610, 8758, 8151, 8608, 2]
 // Exports: default
 
-// Module 14500 (transformMessageAttachments)
+// Module 14505 (transformMessageAttachments)
 import Constants from "Constants" /* 1087 */;
 import intl8 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
@@ -18,7 +18,7 @@ import ExplicitMediaUtils from "ExplicitMediaUtils" /* 8608 */;
 import SuspiciousDownloadUtils from "SuspiciousDownloadUtils" /* 8610 */;
 import getDisplayFilenameDefault from "getDisplayFilename" /* 8758 */;
 import MediaPlaybackFacts from "MediaPlaybackFacts" /* 9998 */;
-import PlaintextFilePreviewHelpers from "PlaintextFilePreviewHelpers" /* 12925 */;
+import PlaintextFilePreviewHelpers from "PlaintextFilePreviewHelpers" /* 12930 */;
 import size from "module_2" /* 2 */;
 
 const AttachmentType = RowGeneratorConstants.AttachmentType;

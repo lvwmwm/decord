@@ -1,22 +1,22 @@
-// Module ID: 14315
-// Function ID: 14316
+// Module ID: 14320
+// Function ID: 14321
 // Name: getActivityJoinability
-// Dependencies: [1087, 11352, 11349, 11353, 5626, 11452, 11383, 7409, 14316, 1384, 11346, 11347, 11348, 2]
+// Dependencies: [1087, 11353, 11350, 11354, 5626, 11453, 11384, 7409, 14321, 1384, 11347, 11348, 11349, 2]
 // Exports: default
 
-// Module 14315 (getActivityJoinability)
+// Module 14320 (getActivityJoinability)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5626 */;
 import hasFlagDefault from "hasFlag" /* 7409 */;
-import _slicedToArray from "_slicedToArray" /* 11346 */;
-import hasPartySize from "hasPartySize" /* 11347 */;
-import isPartyFull from "isPartyFull" /* 11348 */;
-import getIsInParty from "getIsInParty" /* 11349 */;
-import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11352 */;
-import getFrameSurfaces from "getFrameSurfaces" /* 11353 */;
-import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 11383 */;
-import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 11452 */;
-import isActivityJoinableOnCurrentPlatformDefault from "isActivityJoinableOnCurrentPlatform" /* 14316 */;
+import _slicedToArray from "_slicedToArray" /* 11347 */;
+import hasPartySize from "hasPartySize" /* 11348 */;
+import isPartyFull from "isPartyFull" /* 11349 */;
+import getIsInParty from "getIsInParty" /* 11350 */;
+import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11353 */;
+import getFrameSurfaces from "getFrameSurfaces" /* 11354 */;
+import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 11384 */;
+import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 11453 */;
+import isActivityJoinableOnCurrentPlatformDefault from "isActivityJoinableOnCurrentPlatform" /* 14321 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

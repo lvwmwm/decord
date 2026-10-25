@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 
 let closure_4;
 
-const f99505 = function(contact_names) {
+const f99521 = function(contact_names) {
   let name;
   let tmp7;
   if (null != contact_names.contact_names) {
@@ -37,7 +37,7 @@ const f99505 = function(contact_names) {
     return obj;
   }
 };
-const f99506 = (key) => key.key;
+const f99522 = (key) => key.key;
 const React3 = {};
 let friendSuggestionCount = 0;
 let c6 = false;
@@ -121,8 +121,8 @@ let obj = {
     suggestions = suggestions.suggestions;
     let obj = _modDef12;
     const chainResult = obj.chain(suggestions);
-    const mapped = chainResult.map(f99505);
-    const iter = mapped.keyBy(f99506);
+    const mapped = chainResult.map(f99521);
+    const iter = mapped.keyBy(f99522);
     closure_4 = iter.value();
     const obj3 = _modDef12;
     friendSuggestionCount = obj3.keys(closure_4).length;
@@ -139,7 +139,7 @@ export default friendSuggestionStore;
 export const transformFriendSuggestions = function transformFriendSuggestions(arg0) {
   const obj = _modDef12;
   const chainResult = obj.chain(arg0);
-  const mapped = chainResult.map(f99505);
-  const iter = mapped.keyBy(f99506);
+  const mapped = chainResult.map(f99521);
+  const iter = mapped.keyBy(f99522);
   return iter.value();
 };

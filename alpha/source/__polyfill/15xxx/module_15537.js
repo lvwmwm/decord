@@ -1,10 +1,30 @@
 // Module ID: 15537
 // Function ID: 15538
-// Dependencies: [15538, 15606]
+// Dependencies: [15448, 15538]
+// Exports: getSupportedUnits
 
 // Module 15537
-import _mod15606 from "module_15606" /* 15606 */;
-import module_15538 from "module_15538" /* 15538 */;
+const require = globalThis.__r;
+let _require;
 
 
-export default _mod15606.Object.assign;
+export const getSupportedUnits = function getSupportedUnits(locale) {
+  _require = locale;
+  const units = require("module_15538").units;
+  return units.filter((item) => {
+    function isSupported(unit, arg1) {
+      let str = arg1;
+      if (undefined === arg1) {
+        str = "en";
+      }
+      try {
+        const obj = { style: "unit", unit };
+        const memoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat(str, obj);
+        return memoizedNumberFormat.resolvedOptions().unit === unit;
+      } catch (err) {
+        return false;
+      }
+    }
+    return isSupported(item, locale);
+  });
+};

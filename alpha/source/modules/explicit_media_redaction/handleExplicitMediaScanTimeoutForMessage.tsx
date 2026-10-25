@@ -32,11 +32,11 @@ const FAILOVER_SCAN_VERSION = ExplicitMediaRedactionConstants.FAILOVER_SCAN_VERS
 const result = size.fileFinishedImporting("modules/explicit_media_redaction/handleExplicitMediaScanTimeoutForMessage.tsx");
 
 export const handleExplicitMediaScanTimeoutForMessage = function handleExplicitMediaScanTimeoutForMessage(message) {
-  const f99375 = (item) => {
+  const f99391 = (item) => {
     item.content_scan_version = -1;
     return item;
   };
-  const f99376 = (components) => {
+  const f99392 = (components) => {
     components.contentScanVersion = -1;
     components = components.components;
     const tmp = closure_1_3;
@@ -48,9 +48,9 @@ export const handleExplicitMediaScanTimeoutForMessage = function handleExplicitM
   };
   let attachments = message.attachments;
   let embeds = message.embeds;
-  const attachments1 = attachments.map(f99375);
+  const attachments1 = attachments.map(f99391);
   let components = message.components;
-  const embeds1 = embeds.map(f99376);
+  const embeds1 = embeds.map(f99392);
   failOverComponentMedia(components);
   const messageSnapshots = message.messageSnapshots;
   let messageSnapshots1 = messageSnapshots;
@@ -61,9 +61,9 @@ export const handleExplicitMediaScanTimeoutForMessage = function handleExplicitM
         message = message.message;
         const attachments = message.attachments;
         const embeds = message.embeds;
-        const mapped = attachments.map(f99375);
+        const mapped = attachments.map(f99391);
         let components = message.components;
-        const mapped1 = embeds.map(f99376);
+        const mapped1 = embeds.map(f99392);
         failOverComponentMedia(components);
         const obj = { message: message.merge({ attachments: mapped, embeds: mapped1, components }) };
         return message.merge(obj);

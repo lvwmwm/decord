@@ -1,9 +1,9 @@
-// Module ID: 17535
-// Function ID: 17536
+// Module ID: 17540
+// Function ID: 17541
 // Name: ThreadChannel
-// Dependencies: [19, 17, 4905, 4823, 4903, 6771, 4874, 1392, 5630, 5717, 12059, 1087, 6705, 1127, 21, 4971, 587, 558, 576, 7962, 5253, 504, 13174, 5707, 10996, 17536, 9018, 17538, 1202, 17540, 17549, 5994, 17550, 2]
+// Dependencies: [19, 17, 4905, 4823, 4903, 6771, 4874, 1392, 5630, 5717, 12060, 1087, 6705, 1127, 21, 4971, 587, 558, 576, 7962, 5253, 504, 13179, 5707, 10997, 17541, 9018, 17543, 1202, 17545, 17554, 5994, 17555, 2]
 
-// Module 17535 (ThreadChannel)
+// Module 17540 (ThreadChannel)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,8 +12,8 @@ import ThreadConstants from "ThreadConstants" /* 1127 */;
 import transitionToChannel from "transitionToChannel" /* 5707 */;
 import ReadStateConstants from "ReadStateConstants" /* 6705 */;
 import inlineStylesDefault from "inlineStyles" /* 7962 */;
-import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 10996 */;
-import showThreadLongPressActionSheetDefault from "showThreadLongPressActionSheet" /* 17536 */;
+import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 10997 */;
+import showThreadLongPressActionSheetDefault from "showThreadLongPressActionSheet" /* 17541 */;
 import react_mod from "react" /* 19 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4905 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
@@ -23,7 +23,7 @@ import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
 import UserStore from "UserStore" /* 1392 */;
 import VoiceStateStore from "VoiceStateStore" /* 5630 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5717 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12059 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12060 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

@@ -1,9 +1,9 @@
-// Module ID: 16470
-// Function ID: 16471
+// Module ID: 16475
+// Function ID: 16476
 // Name: QuestModalContentCloudBackground
-// Dependencies: [19, 17, 21, 4971, 558, 576, 5205, 4993, 5258, 16471, 16472, 5669, 2]
+// Dependencies: [19, 17, 21, 4971, 558, 576, 5205, 4993, 5258, 16476, 16477, 5669, 2]
 
-// Module 16470 (QuestModalContentCloudBackground)
+// Module 16475 (QuestModalContentCloudBackground)
 import react2 from "react" /* 576 */;
 import themes from "themes" /* 4993 */;
 import useTheme from "useTheme" /* 5205 */;
@@ -103,7 +103,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestModalCo
             if (cResult[11] === tmp14) {
               tmp15 = cResult[12];
             }
-            const tmp16Result = importDefault(tmp6 ? 16471 : 16472);
+            const tmp16Result = importDefault(tmp6 ? 16476 : 16477);
             if (cResult[13] === str2) {
               if (cResult[14] === tmp15) {
                 let tmp18;
@@ -200,7 +200,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestModalCo
     tmp9 = tmp7;
   }
   items1 = [tmp7Result, ];
-  const obj5 = { style: items2, source: importDefault(isThemeDarkResult ? 16471 : 16472), resizeMode: str2 };
+  const obj5 = { style: items2, source: importDefault(isThemeDarkResult ? 16476 : 16477), resizeMode: str2 };
   items2 = [isThemeDarkResult ? tmp.cloudsImage : tmp.cloudsImageLight, imgStyle];
   const tmp12 = FastImageDefault;
   items1[1] = tmp9(tmp12, obj5);

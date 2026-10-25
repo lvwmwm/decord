@@ -1,9 +1,9 @@
-// Module ID: 15873
-// Function ID: 15874
+// Module ID: 15878
+// Function ID: 15879
 // Name: UserProfileHexagonCampaignDisplayNameStyleEditButton
-// Dependencies: [5, 32, 19, 17, 1392, 1087, 4996, 21, 4971, 587, 558, 576, 15874, 1128, 2928, 15852, 6713, 8655, 6367, 4998, 10661, 5263, 8653, 15851, 5663, 7253, 7278, 9792, 9793, 15875, 6966, 5258, 6912, 7296, 6908, 15868, 7009, 2]
+// Dependencies: [5, 32, 19, 17, 1392, 1087, 4996, 21, 4971, 587, 558, 576, 15879, 1128, 2928, 15857, 6713, 8655, 6367, 4998, 10661, 5263, 8653, 15856, 5663, 7253, 7278, 9792, 9793, 15880, 6966, 5258, 6912, 7296, 6908, 15873, 7009, 2]
 
-// Module 15873 (UserProfileHexagonCampaignDisplayNameStyleEditButton)
+// Module 15878 (UserProfileHexagonCampaignDisplayNameStyleEditButton)
 import nativeDefault from "native" /* 587 */;
 import _modDef2928 from "module_2928" /* 2928 */;
 import LinearGradientDefault from "LinearGradient" /* 5258 */;
@@ -81,7 +81,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
   }
   closure_19();
   _require = tmp6;
-  const tmpResult = tmp(15874);
+  const tmpResult = tmp(15879);
   const displayNameStylesPendingName = tmpResult.useDisplayNameStylesPendingName(user);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let intl = tmp(1128).intl;
@@ -91,9 +91,9 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
   } else {
     first = cResult[0];
   }
-  const useTrackHexagonCampaignContentViewed = tmp(15852).useTrackHexagonCampaignContentViewed;
-  tmp(15852);
-  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(tmp(6713).QuestContent.DISPLAY_NAME_STYLES_SETTINGS, tmp(15852).HexagonCampaignContentSurface.NON_NITRO_CARD, true);
+  const useTrackHexagonCampaignContentViewed = tmp(15857).useTrackHexagonCampaignContentViewed;
+  tmp(15857);
+  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(tmp(6713).QuestContent.DISPLAY_NAME_STYLES_SETTINGS, tmp(15857).HexagonCampaignContentSurface.NON_NITRO_CARD, true);
   const tmpResult6 = tmp(8655);
   pendingDisplayNameStyles = tmpResult6.useGuildMemberOrUserPendingDisplayNameStyles(user).pendingDisplayNameStyles;
   if (cResult[1] === pendingDisplayNameStyles) {
@@ -590,7 +590,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
   tmp18Result = undefined;
   const Input = tmp3(7009).Input;
   if (availability !== constants5.LOCKED) {
-    let obj7 = { style: tmp.labelBadge, children: tmp18(tmp6(15875), obj8) };
+    let obj7 = { style: tmp.labelBadge, children: tmp18(tmp6(15880), obj8) };
     obj8 = { perk: constants4.DISPLAY_NAME_STYLE };
     tmp18Result = tmp18(closure_6, obj7);
   }
@@ -636,7 +636,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
     tmp18Result4 = tmp18(tmp3(7296).FormSwitch, obj20);
   }
   items4[1] = tmp18Result4;
-  items5 = [tmp31(PressableHighlight, obj10), tmp18(tmp6(15868), { showLearnMore: true })];
+  items5 = [tmp31(PressableHighlight, obj10), tmp18(tmp6(15873), { showLearnMore: true })];
   return tmp18(Input, obj6);
 });
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileHexagonCampaignDisplayNameStyleEditButton.tsx");

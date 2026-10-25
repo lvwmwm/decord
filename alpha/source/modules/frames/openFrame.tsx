@@ -1,14 +1,14 @@
-// Module ID: 11395
-// Function ID: 11396
+// Module ID: 11396
+// Function ID: 11397
 // Name: openFrame
-// Dependencies: [6775, 6776, 1087, 10766, 5626, 1114, 2]
+// Dependencies: [6775, 6776, 1087, 10767, 5626, 1114, 2]
 // Exports: default, shouldOpenAppChannel
 
-// Module 11395 (openFrame)
+// Module 11396 (openFrame)
 import Constants from "Constants" /* 1087 */;
 import router_utils from "router_utils" /* 1114 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5626 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10766 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10767 */;
 import FramesStore from "FramesStore" /* 6775 */;
 import FramesConstants from "FramesConstants" /* 6776 */;
 import size from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ export default function openFrame(arg0) {
   let launchFrameResult;
   ({ applicationId, channel, analyticsContext, launch } = arg0);
   if (null == channel) {
-    const obj2 = { applicationId, surface, analyticsContext, launch };
+    const obj2 = { applicationId, surface, analyticsContext, launch, invite: tmp };
     const obj3 = { frameId: hasOwnProperty(applicationId, surface), launched: launchFrameResult };
     const obj = FramesActionCreatorsDefault;
     launchFrameResult = obj.launchFrame(obj2);

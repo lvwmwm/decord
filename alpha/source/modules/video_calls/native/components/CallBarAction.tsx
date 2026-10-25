@@ -1,15 +1,15 @@
-// Module ID: 11378
-// Function ID: 11379
+// Module ID: 11379
+// Function ID: 11380
 // Name: CallBarAction
-// Dependencies: [109, 19, 17, 10879, 21, 4968, 587, 4971, 558, 576, 11379, 11380, 5669, 6908, 5234, 2]
+// Dependencies: [109, 19, 17, 10880, 21, 4968, 587, 4971, 558, 576, 11380, 11381, 5669, 6908, 5234, 2]
 
-// Module 11378 (CallBarAction)
+// Module 11379 (CallBarAction)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Pressables from "Pressables" /* 6908 */;
-import ChannelCallStore from "ChannelCallStore" /* 10879 */;
-import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 11380 */;
+import ChannelCallStore from "ChannelCallStore" /* 10880 */;
+import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 11381 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -223,9 +223,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionButton
                                 const obj5 = { style: items1 };
                                 items1 = [tmp7.badge, ];
                                 const size1 = { width: result1, height: result1, borderRadius: tmp11.badgeRadius, top: tmpResult.getBadgeTop(tmp11.badgeRadius, tmp11.buttonRadius, cutoutPositionInDegrees), left: tmpResult2.getBadgeLeft(tmp11.badgeRadius, tmp11.buttonRadius, cutoutPositionInDegrees) };
-                                tmpResult = onPress(11380);
+                                tmpResult = onPress(11381);
                                 items1[1] = size1;
-                                tmpResult2 = onPress(11380);
+                                tmpResult2 = onPress(11381);
                                 tmp37 = closure_10(View, obj5);
                               }
                               cResult[34] = tmp11.badgeRadius;

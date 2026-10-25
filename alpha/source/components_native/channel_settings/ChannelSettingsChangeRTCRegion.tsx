@@ -1,9 +1,9 @@
-// Module ID: 18304
-// Function ID: 18305
+// Module ID: 18309
+// Function ID: 18310
 // Name: ChannelSettingsChangeRTCRegion
-// Dependencies: [729, 19, 4823, 18254, 21, 4971, 587, 5037, 1128, 10093, 6984, 6985, 8951, 558, 576, 504, 38, 2]
+// Dependencies: [729, 19, 4823, 18259, 21, 4971, 587, 5037, 1128, 10093, 6984, 6985, 8951, 558, 576, 504, 38, 2]
 
-// Module 18304 (ChannelSettingsChangeRTCRegion)
+// Module 18309 (ChannelSettingsChangeRTCRegion)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,7 +16,7 @@ import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators"
 import _toArray from "_toArray" /* 729 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
-import RegionStore from "RegionStore" /* 18254 */;
+import RegionStore from "RegionStore" /* 18259 */;
 import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

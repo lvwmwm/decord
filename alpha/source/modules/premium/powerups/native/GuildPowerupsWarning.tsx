@@ -1,9 +1,9 @@
-// Module ID: 13479
-// Function ID: 13480
+// Module ID: 13484
+// Function ID: 13485
 // Name: GuildPowerupsWarning
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 7075, 13480, 7012, 5234, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 7075, 13485, 7012, 5234, 2]
 
-// Module 13479 (GuildPowerupsWarning)
+// Module 13484 (GuildPowerupsWarning)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5234 */;
@@ -46,7 +46,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   _require = tmp4;
   const obj2 = require("ManaTypeConsolidationExperiment");
   const manaTypeConsolidationExperiment = obj2.useManaTypeConsolidationExperiment("GuildPowerupsWarning");
-  const tmp7 = manaTypeConsolidationExperiment(13480)(guildId, powerupNames);
+  const tmp7 = manaTypeConsolidationExperiment(13485)(guildId, powerupNames);
   ({ title, description } = tmp7);
   const tmp6 = manaTypeConsolidationExperiment;
   if (tmp7.shouldShow) {
@@ -175,7 +175,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsWarning");
   let tmp10Result = null;
   const tmp5 = manaTypeConsolidationExperiment;
-  const tmp6 = manaTypeConsolidationExperiment(13480)(guildId, powerupNames);
+  const tmp6 = manaTypeConsolidationExperiment(13485)(guildId, powerupNames);
   if (tmp6.shouldShow) {
     const obj2 = { style: tmp.container, children: tmp12(View, obj3) };
     obj3 = { style: tmp.contentContainer, children: items };

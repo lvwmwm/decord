@@ -1,10 +1,10 @@
-// Module ID: 10900
-// Function ID: 10901
+// Module ID: 10901
+// Function ID: 10902
 // Name: VoicePanelCardConstants
 // Dependencies: [587, 2]
 // Exports: getCallTileGutter, getEdgeGutter
 
-// Module 10900 (VoicePanelCardConstants)
+// Module 10901 (VoicePanelCardConstants)
 import nativeDefault from "native" /* 587 */;
 import size from "module_2" /* 2 */;
 

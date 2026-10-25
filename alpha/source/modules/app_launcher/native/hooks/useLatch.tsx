@@ -1,9 +1,9 @@
-// Module ID: 12150
-// Function ID: 12151
+// Module ID: 12151
+// Function ID: 12152
 // Name: useLatch
 // Dependencies: [19, 558, 576, 2]
 
-// Module 12150 (useLatch)
+// Module 12151 (useLatch)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

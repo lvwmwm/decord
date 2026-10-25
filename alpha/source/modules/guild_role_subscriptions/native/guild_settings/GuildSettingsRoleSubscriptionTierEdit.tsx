@@ -1,10 +1,10 @@
-// Module ID: 19314
-// Function ID: 19315
+// Module ID: 19319
+// Function ID: 19320
 // Name: GuildSettingsRoleSubscriptionTierEdit
-// Dependencies: [32, 19, 17, 4896, 19274, 16557, 1087, 4820, 21, 4971, 587, 558, 576, 1505, 19291, 19280, 7353, 9044, 5234, 5689, 5244, 7221, 19310, 19308, 19286, 16564, 19270, 1202, 12239, 1128, 19315, 16579, 5662, 6924, 7485, 8901, 4807, 19316, 2002, 10408, 10409, 9146, 2]
+// Dependencies: [32, 19, 17, 4896, 19279, 16562, 1087, 4820, 21, 4971, 587, 558, 576, 1505, 19296, 19285, 7353, 9044, 5234, 5689, 5244, 7221, 19315, 19313, 19291, 16569, 19275, 1202, 12240, 1128, 19320, 16584, 5662, 6924, 7485, 8901, 4807, 19321, 2002, 10408, 10409, 9146, 2]
 // Exports: default
 
-// Module 19314 (GuildSettingsRoleSubscriptionTierEdit)
+// Module 19319 (GuildSettingsRoleSubscriptionTierEdit)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -19,20 +19,20 @@ import TrashIcon2 from "TrashIcon" /* 5689 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7221 */;
 import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7353 */;
 import FormHeaderDefault from "FormHeader" /* 9044 */;
-import ErrorBlockDefault from "ErrorBlock" /* 12239 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16557 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16564 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 19270 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 19280 */;
-import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 19286 */;
-import EditStateContextProvider2 from "EditStateContextProvider" /* 19291 */;
-import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 19308 */;
-import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 19310 */;
-import ActionableNoticeDefault from "ActionableNotice" /* 19315 */;
+import ErrorBlockDefault from "ErrorBlock" /* 12240 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16562 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16569 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 19275 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 19285 */;
+import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 19291 */;
+import EditStateContextProvider2 from "EditStateContextProvider" /* 19296 */;
+import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 19313 */;
+import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 19315 */;
+import ActionableNoticeDefault from "ActionableNotice" /* 19320 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 19274 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 19279 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -339,18 +339,18 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function DraftP
   let obj = react2;
   const cResult = obj.c(21);
   ref = ref.ref;
-  let obj2 = EditStateContextProvider2;
+  const obj2 = EditStateContextProvider2;
   const editStateContext = obj2.useEditStateContext();
   const guildId = editStateContext.guildId;
   const groupListingId = editStateContext.groupListingId;
   const editStateId = editStateContext.editStateId;
-  let obj3 = GuildRoleSubscriptionsHooks;
+  const obj3 = GuildRoleSubscriptionsHooks;
   const publishSubscriptionListing1 = obj3.usePublishSubscriptionListing();
   ({ error, submitting, publishSubscriptionListing } = publishSubscriptionListing1);
   const clearError = publishSubscriptionListing1.clearError;
-  let obj4 = GuildRoleSubscriptionsHooks;
+  const obj4 = GuildRoleSubscriptionsHooks;
   const subscriptionListing = obj4.useSubscriptionListing(editStateId);
-  let obj5 = RoleSubscriptionSettingsDisabledContext;
+  const obj5 = RoleSubscriptionSettingsDisabledContext;
   const roleSubscriptionSettingsDisabled = obj5.useRoleSubscriptionSettingsDisabled();
   if (cResult[0] !== clearError) {
     const fn = function s() {
@@ -494,16 +494,17 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function DraftP
   c2 = undefined;
   c3 = undefined;
   const tmp2 = require;
+  const tmp3 = dependencyMap;
   let obj = EditStateContextProvider2;
   const editStateContext = obj.useEditStateContext();
   ({ guildId: c0, groupListingId } = editStateContext);
   const editStateId = editStateContext.editStateId;
-  const obj2 = GuildRoleSubscriptionsHooks;
+  let obj2 = GuildRoleSubscriptionsHooks;
   const publishSubscriptionListing = obj2.usePublishSubscriptionListing();
   ({ error, publishSubscriptionListing: c2, clearError: c3, submitting } = publishSubscriptionListing);
-  const obj3 = GuildRoleSubscriptionsHooks;
+  let obj3 = GuildRoleSubscriptionsHooks;
   const subscriptionListing = obj3.useSubscriptionListing(editStateId);
-  const obj4 = RoleSubscriptionSettingsDisabledContext;
+  let obj4 = RoleSubscriptionSettingsDisabledContext;
   const roleSubscriptionSettingsDisabled = obj4.useRoleSubscriptionSettingsDisabled();
   const imperativeHandle = react.useImperativeHandle(ref, () => ({ dismissError }));
   let tmp9 = null;
@@ -514,7 +515,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function DraftP
       if (!subscriptionListing.published) {
         let tmp15;
         if (null != error) {
-          const obj5 = { children: items };
+          let obj5 = { children: items };
           items = [syncedClientThemes(native.Spacer, { size: 16 }), , ];
           const obj6 = { children: error.getAnyErrorMessage() };
           const tmp14 = ErrorBlockDefault;
@@ -561,7 +562,7 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
   let obj7;
   let obj8;
   let tmp17;
-  const f139770 = (currentScene) => {
+  const f139797 = (currentScene) => {
     let DETAILS = currentScene.currentScene;
     if (DETAILS == null) {
       DETAILS = handleCreateOrUpdateFromEditState.DETAILS;
@@ -641,9 +642,9 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
       presentError(anyErrorMessage);
     }
   }, items1);
-  [tmp17, c14] = _slicedToArray(loading.useRoleTierEditStore(f139770), 2);
+  [tmp17, c14] = _slicedToArray(loading.useRoleTierEditStore(f139797), 2);
   const items2 = [navigation, hasChanges, first1, loading, callback];
-  _slicedToArray(loading.useRoleTierEditStore(f139770), 2);
+  _slicedToArray(loading.useRoleTierEditStore(f139797), 2);
   const layoutEffect1 = obj.useLayoutEffect(() => {
     let onPress;
     let title;

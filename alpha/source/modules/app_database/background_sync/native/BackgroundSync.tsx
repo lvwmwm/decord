@@ -1,10 +1,10 @@
-// Module ID: 18750
-// Function ID: 18751
+// Module ID: 18755
+// Function ID: 18756
 // Name: background_sync/BackgroundSync
-// Dependencies: [32, 5, 4827, 4823, 6771, 2001, 7588, 1087, 6766, 6725, 4845, 3, 1104, 510, 10098, 1384, 584, 1257, 1267, 4849, 1297, 11, 12, 7726, 7729, 7727, 14980, 16928, 7586, 1388, 7596, 2]
+// Dependencies: [32, 5, 4827, 4823, 6771, 2001, 7588, 1087, 6766, 6725, 4845, 3, 1104, 510, 10098, 1384, 584, 1257, 1267, 4849, 1297, 11, 12, 7726, 7729, 7727, 14985, 16933, 7586, 1388, 7596, 2]
 // Exports: backgroundSync
 
-// Module 18750 (background_sync/BackgroundSync)
+// Module 18755 (background_sync/BackgroundSync)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import Storage4 from "Storage" /* 510 */;

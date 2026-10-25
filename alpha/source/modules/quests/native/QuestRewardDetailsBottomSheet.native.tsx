@@ -1,7 +1,7 @@
 // Module ID: 9569
 // Function ID: 9570
 // Name: QuestRewardDetailsBottomSheet
-// Dependencies: [19, 17, 1392, 21, 4971, 587, 558, 576, 9567, 5210, 9570, 9589, 7781, 1128, 504, 14130, 5234, 5977, 5265, 2]
+// Dependencies: [19, 17, 1392, 21, 4971, 587, 558, 576, 9567, 5210, 9570, 9589, 7781, 1128, 504, 14135, 5234, 5977, 5265, 2]
 
 // Module 9569 (QuestRewardDetailsBottomSheet)
 import react_native from "react-native" /* 17 */;
@@ -14,7 +14,7 @@ import Text_Text from "Text/Text" /* 5234 */;
 import QuestRewardTypes from "QuestRewardTypes" /* 7781 */;
 import QuestUtils from "QuestUtils" /* 9567 */;
 import QuestRewardUtils from "QuestRewardUtils" /* 9589 */;
-import QuestRewardTileDefault from "QuestRewardTile" /* 14130 */;
+import QuestRewardTileDefault from "QuestRewardTile" /* 14135 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
@@ -352,7 +352,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
   const Stack = quest(5977).Stack;
   const obj4 = { align: "center", direction: "horizontal", spacing: memo(587).space.PX_16, children: items3 };
   const Stack2 = quest(5977).Stack;
-  items3 = [closure_6(memo(14130), { quest, height: 56, width: 56, withAnimation: true }), ];
+  items3 = [closure_6(memo(14135), { quest, height: 56, width: 56, withAnimation: true }), ];
   const obj5 = { direction: "vertical", spacing: memo(587).space.PX_4, style: tmp.rewardDetailsCopy, children: items4 };
   const Stack3 = quest(5977).Stack;
   const obj6 = { variant: "eyebrow", color: "text-subtle", children: intl.string(quest(1128).t["jyYgZ+"]) };

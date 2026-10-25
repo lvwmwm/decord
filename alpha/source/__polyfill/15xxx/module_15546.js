@@ -1,27 +1,17 @@
 // Module ID: 15546
 // Function ID: 15547
-// Dependencies: [15547, 15544, 15549]
+// Dependencies: [15545]
 
 // Module 15546
-import _mod15544 from "module_15544" /* 15544 */;
-import _mod15547 from "module_15547" /* 15547 */;
-import _mod15549 from "module_15549" /* 15549 */;
+import _mod15545 from "module_15545" /* 15545 */;
 
-let fn = Object;
-let closure_3 = _mod15547("".split);
-if (_mod15544(() => {
-  const obj = Object("z");
-  return !obj.propertyIsEnumerable(0);
-})) {
-  fn = (arg0) => {
-    let tmp2;
-    if ("String" === _mod15549(arg0)) {
-      tmp2 = closure_3(arg0, "");
-    } else {
-      tmp2 = Object(arg0);
-    }
-    return tmp2;
-  };
-}
 
-export default fn;
+export default (arg0, value) => {
+  try {
+    const obj = { value, configurable: true, writable: true };
+    defineProperty(_mod15545, arg0, obj);
+  } catch (err) {
+    _mod15545[arg0] = value;
+  }
+  return value;
+};

@@ -1,7 +1,7 @@
 // Module ID: 7827
 // Function ID: 7828
 // Name: VoiceEngineStreamingManager
-// Dependencies: [5, 17, 6642, 4823, 4874, 1087, 2026, 3, 4818, 4799, 584, 1297, 7828, 2004, 2016, 38, 7829, 5710, 6645, 1499, 1384, 11590, 10753, 1128, 2]
+// Dependencies: [5, 17, 6642, 4823, 4874, 1087, 2026, 3, 4818, 4799, 584, 1297, 7828, 2004, 2016, 38, 7829, 5710, 6645, 1499, 1384, 11591, 10753, 1128, 2]
 
 // Module 7827 (VoiceEngineStreamingManager)
 import LoggerDefault from "Logger" /* 3 */;
@@ -35,7 +35,7 @@ let c9;
 let metroImportAll;
 let tmp2;
 let unpackModuleId;
-const useScreenshareUtils = tmp2(11590);
+const useScreenshareUtils = tmp2(11591);
 function handleThumbnailUpload() {
   return obj(...arguments);
 }

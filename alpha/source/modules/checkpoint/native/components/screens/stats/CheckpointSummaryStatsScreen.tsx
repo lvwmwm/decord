@@ -1,9 +1,9 @@
-// Module ID: 13015
-// Function ID: 13016
+// Module ID: 13020
+// Function ID: 13021
 // Name: CheckpointSummaryStatsScreen
-// Dependencies: [32, 19, 17, 4972, 12949, 6015, 21, 587, 4971, 1385, 558, 576, 504, 8624, 12969, 1417, 8074, 13016, 1128, 3088, 3056, 6883, 4917, 7227, 5669, 12967, 12976, 2]
+// Dependencies: [32, 19, 17, 4972, 12954, 6015, 21, 587, 4971, 1385, 558, 576, 504, 8624, 12974, 1417, 8074, 13021, 1128, 3088, 3056, 6883, 4917, 7227, 5669, 12972, 12981, 2]
 
-// Module 13015 (CheckpointSummaryStatsScreen)
+// Module 13020 (CheckpointSummaryStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -16,14 +16,14 @@ import CheckpointConstants from "CheckpointConstants" /* 6015 */;
 import GuildIcon from "GuildIcon" /* 6883 */;
 import EmojiDefault from "Emoji" /* 7227 */;
 import CheckpointCardColors from "CheckpointCardColors" /* 8624 */;
-import CheckpointTextDefault from "CheckpointText" /* 12967 */;
-import CheckpointScreen from "CheckpointScreen" /* 12969 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 12976 */;
-import CheckpointRecapCardDefault from "CheckpointRecapCard" /* 13016 */;
+import CheckpointTextDefault from "CheckpointText" /* 12972 */;
+import CheckpointScreen from "CheckpointScreen" /* 12974 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 12981 */;
+import CheckpointRecapCardDefault from "CheckpointRecapCard" /* 13021 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4972 */;
-import CheckpointStore from "CheckpointStore" /* 12949 */;
+import CheckpointStore from "CheckpointStore" /* 12954 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import PlatformUtils_mod from "utils/PlatformUtils" /* 1385 */;

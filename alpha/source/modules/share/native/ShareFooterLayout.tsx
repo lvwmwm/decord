@@ -1,9 +1,9 @@
-// Module ID: 12931
-// Function ID: 12932
+// Module ID: 12936
+// Function ID: 12937
 // Name: ShareFooterLayout
 // Dependencies: [19, 17, 21, 4971, 587, 558, 576, 5593, 5052, 5247, 5248, 5234, 2]
 
-// Module 12931 (ShareFooterLayout)
+// Module 12936 (ShareFooterLayout)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

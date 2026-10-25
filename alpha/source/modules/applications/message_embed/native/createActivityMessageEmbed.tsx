@@ -1,15 +1,15 @@
-// Module ID: 14527
-// Function ID: 14528
+// Module ID: 14532
+// Function ID: 14533
 // Name: createActivityMessageEmbed
-// Dependencies: [13034, 14188, 2]
+// Dependencies: [13039, 14193, 2]
 // Exports: createActivityMessageEmbed
 
-// Module 14527 (createActivityMessageEmbed)
-import createAppMessageEmbed from "createAppMessageEmbed" /* 13034 */;
+// Module 14532 (createActivityMessageEmbed)
+import createAppMessageEmbed from "createAppMessageEmbed" /* 13039 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const CustomActivityLinkUtils = tmp(14188);
+const CustomActivityLinkUtils = tmp(14193);
 const result = size.fileFinishedImporting("modules/applications/message_embed/native/createActivityMessageEmbed.tsx");
 
 export const createActivityMessageEmbed = function createActivityMessageEmbed(app) {

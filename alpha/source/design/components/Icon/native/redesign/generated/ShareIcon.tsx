@@ -1,9 +1,9 @@
-// Module ID: 14202
-// Function ID: 14203
+// Module ID: 14207
+// Function ID: 14208
 // Name: ShareIcon
 // Dependencies: [109, 19, 21, 558, 576, 587, 9096, 5668, 2]
 
-// Module 14202 (ShareIcon)
+// Module 14207 (ShareIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

@@ -1,18 +1,18 @@
-// Module ID: 16111
-// Function ID: 16112
+// Module ID: 16116
+// Function ID: 16117
 // Name: ExplicitMediaFiltersFriendsDMsSetting
-// Dependencies: [8332, 558, 576, 16112, 8586, 7396, 1128, 16113, 11205, 16115, 2]
+// Dependencies: [8332, 558, 576, 16117, 8586, 7396, 1128, 16118, 11206, 16120, 2]
 
-// Module 16111 (ExplicitMediaFiltersFriendsDMsSetting)
+// Module 16116 (ExplicitMediaFiltersFriendsDMsSetting)
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7396 */;
 import SettingsConstants from "SettingsConstants" /* 8332 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 16112 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16113 */;
-import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 16115 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 16117 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16118 */;
+import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 16120 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11205 */;
+import SettingBuilders from "SettingBuilders" /* 11206 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

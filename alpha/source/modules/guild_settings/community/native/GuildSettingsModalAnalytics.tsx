@@ -1,14 +1,14 @@
-// Module ID: 19176
-// Function ID: 19177
+// Module ID: 19181
+// Function ID: 19182
 // Name: GuildSettingsModalAnalytics
-// Dependencies: [5, 19, 17, 2068, 1087, 21, 4971, 587, 558, 576, 504, 19177, 1267, 7429, 7433, 5234, 1128, 7953, 5244, 5977, 19196, 5592, 2]
+// Dependencies: [5, 19, 17, 2068, 1087, 21, 4971, 587, 558, 576, 504, 19182, 1267, 7429, 7433, 5234, 1128, 7953, 5244, 5977, 19201, 5592, 2]
 
-// Module 19176 (GuildSettingsModalAnalytics)
+// Module 19181 (GuildSettingsModalAnalytics)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import MobileWebHandoffLinkingDefault from "MobileWebHandoffLinking" /* 7429 */;
-import GuildSettingsAnalyticsCardDefault from "GuildSettingsAnalyticsCard" /* 19196 */;
+import GuildSettingsAnalyticsCardDefault from "GuildSettingsAnalyticsCard" /* 19201 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
@@ -71,7 +71,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   }
   const tmpResult = guildId(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const tmpResult6 = guildId(19177);
+  const tmpResult6 = guildId(19182);
   const guildAnalyticsOverview = tmpResult6.useGuildAnalyticsOverview(guildId);
   ({ analytics, notice } = guildAnalyticsOverview);
   if (cResult[2] !== guildId) {
@@ -267,27 +267,27 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
       const tmp33 = GuildSettingsAnalyticsCardDefault;
       intl4 = tmp(1128).intl;
       intl5 = tmp(1128).intl;
-      const tmpResult7 = guildId(19177);
+      const tmpResult7 = guildId(19182);
       const merged = Object.assign(tmpResult7.getGuildAnalyticsCardProps(analytics.visitors, analytics.visitorsChange, stateFromStores));
       items3 = [closure_9(tmp33, obj11), , , ];
       const obj12 = { metricKey: "communicators", title: intl6.string(guildId(1128).t.DDAHdQ), description: intl7.string(guildId(1128).t.HxWUkU) };
       const tmp36 = GuildSettingsAnalyticsCardDefault;
       intl6 = tmp(1128).intl;
       intl7 = tmp(1128).intl;
-      const tmpResult8 = guildId(19177);
+      const tmpResult8 = guildId(19182);
       const merged1 = Object.assign(tmpResult8.getGuildAnalyticsCardProps(analytics.communicators, analytics.communicatorsChange, stateFromStores));
       items3[1] = closure_9(tmp36, obj12);
       const obj13 = { metricKey: "new_members", title: intl8.string(guildId(1128).t.hYeOqC) };
       const tmp39 = GuildSettingsAnalyticsCardDefault;
       intl8 = tmp(1128).intl;
-      const tmpResult9 = guildId(19177);
+      const tmpResult9 = guildId(19182);
       const merged2 = Object.assign(tmpResult9.getGuildAnalyticsCardProps(analytics.newMembers, analytics.newMembersChange, stateFromStores));
       items3[2] = closure_9(tmp39, obj13);
       const obj14 = { metricKey: "new_member_retention", title: intl9.string(guildId(1128).t.jj7OPw), description: intl10.string(guildId(1128).t.MQCslz) };
       const tmp42 = GuildSettingsAnalyticsCardDefault;
       intl9 = tmp(1128).intl;
       intl10 = tmp(1128).intl;
-      const tmpResult10 = guildId(19177);
+      const tmpResult10 = guildId(19182);
       const merged3 = Object.assign(tmpResult10.getGuildAnalyticsCardProps(analytics.pctRetained, analytics.pctRetainedChange, stateFromStores, true));
       items3[3] = closure_9(tmp42, obj14);
       tmp29 = closure_10(Stack, obj10);
@@ -329,7 +329,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   let obj = guildId(504);
   const items = [LocaleStore];
   const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
-  let obj2 = guildId(19177);
+  let obj2 = guildId(19182);
   const guildAnalyticsOverview = obj2.useGuildAnalyticsOverview(guildId);
   ({ analytics, notice } = guildAnalyticsOverview);
   const items1 = [guildId];
@@ -422,27 +422,27 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     const tmp11Result = GuildSettingsAnalyticsCardDefault;
     intl4 = tmp2(1128).intl;
     intl5 = tmp2(1128).intl;
-    const tmp2Result = tmp2(19177);
+    const tmp2Result = tmp2(19182);
     const merged = Object.assign(tmp2Result.getGuildAnalyticsCardProps(analytics.visitors, analytics.visitorsChange, stateFromStores));
     items4 = [tmp9(tmp11Result, obj11), , , ];
     const obj12 = { metricKey: "communicators", title: intl6.string(tmp2(1128).t.DDAHdQ), description: intl7.string(tmp2(1128).t.HxWUkU) };
     const tmp11Result4 = GuildSettingsAnalyticsCardDefault;
     intl6 = tmp2(1128).intl;
     intl7 = tmp2(1128).intl;
-    const tmp2Result4 = tmp2(19177);
+    const tmp2Result4 = tmp2(19182);
     const merged1 = Object.assign(tmp2Result4.getGuildAnalyticsCardProps(analytics.communicators, analytics.communicatorsChange, stateFromStores));
     items4[1] = closure_9(tmp11Result4, obj12);
     const obj13 = { metricKey: "new_members", title: intl8.string(tmp2(1128).t.hYeOqC) };
     const tmp11Result5 = GuildSettingsAnalyticsCardDefault;
     intl8 = tmp2(1128).intl;
-    const tmp2Result5 = tmp2(19177);
+    const tmp2Result5 = tmp2(19182);
     const merged2 = Object.assign(tmp2Result5.getGuildAnalyticsCardProps(analytics.newMembers, analytics.newMembersChange, stateFromStores));
     items4[2] = closure_9(tmp11Result5, obj13);
     const obj14 = { metricKey: "new_member_retention", title: intl9.string(tmp2(1128).t.jj7OPw), description: intl10.string(tmp2(1128).t.MQCslz) };
     const tmp11Result6 = GuildSettingsAnalyticsCardDefault;
     intl9 = tmp2(1128).intl;
     intl10 = tmp2(1128).intl;
-    const tmp2Result6 = tmp2(19177);
+    const tmp2Result6 = tmp2(19182);
     const merged3 = Object.assign(tmp2Result6.getGuildAnalyticsCardProps(analytics.pctRetained, analytics.pctRetainedChange, stateFromStores, true));
     items4[3] = closure_9(tmp11Result6, obj14);
     tmp7Result = tmp7(Stack2, obj10);

@@ -1,24 +1,25 @@
-// Module ID: 10768
-// Function ID: 10769
+// Module ID: 10769
+// Function ID: 10770
 // Name: launchFrame
-// Dependencies: [32, 5, 6775, 6776, 5609, 10769, 584, 10730, 6778, 10771, 10777, 10782, 10765, 2]
+// Dependencies: [32, 5, 6775, 6776, 5609, 10770, 584, 10730, 6778, 10772, 10778, 10783, 10766, 2]
 // Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameLayoutModes, setFrameRunsInBackground, setFrameUserMuted, updateFramePanelMode
 
-// Module 10768 (launchFrame)
+// Module 10769 (launchFrame)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5609 */;
 import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6778 */;
 import createProxyTicket from "createProxyTicket" /* 10730 */;
-import leaveFrame from "leaveFrame" /* 10765 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10769 */;
+import leaveFrame from "leaveFrame" /* 10766 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10770 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import FramesStore from "FramesStore" /* 6775 */;
 import FramesConstants from "FramesConstants" /* 6776 */;
 import size from "module_2" /* 2 */;
 
-let analyticsContext, dispatchResult1, error, hostWindowKey, intent, launch, launchRequestId, message, proxyTicket, type;
+let analyticsContext, closure_1, error, hostWindowKey, intent, launch, launchRequestId, message, proxyTicket, type;
 
+let c10;
 let c9;
 let metroImportAll;
 let metroImportDefault;
@@ -50,8 +51,9 @@ let obj = function _launchFrame() {
         }
       } else {
         try {
+          let invite;
           let frameId;
-          let closure_9;
+          let closure_10;
           c7 = 2;
           if (0 === c6) {
             if (arg0 === 1) {
@@ -69,14 +71,17 @@ let obj = function _launchFrame() {
               analyticsContext = undefined;
               hostWindowKey = undefined;
               showErrorModal = undefined;
+              invite = undefined;
               ({ applicationId: c0, surface: c1, launch: c2, analyticsContext: c3, hostWindowKey: c4, showErrorModal } = closure_0);
+              const tmp120 = closure_0;
               if (showErrorModal === undefined) {
                 showErrorModal = true;
               }
+              invite = tmp120.invite;
               frameId = undefined;
               intent = undefined;
               launchRequestId = undefined;
-              closure_9 = undefined;
+              closure_10 = undefined;
               proxyTicket = undefined;
               message = undefined;
               c6 = 1;
@@ -91,13 +96,13 @@ let obj = function _launchFrame() {
               c7 = 3;
               return { value, done: true };
             } else {
-              frameId = closure_131_9(applicationId, type);
+              frameId = closure_131_10(applicationId, type);
               intent = frame.getFrame(frameId);
               if (null != intent) {
                 if (intent.intent === constants.MAIN) {
-                  closure_131_15(frameId);
+                  closure_131_16(frameId);
                   const obj7 = { frameId, layoutMode: constants2.FOCUSED };
-                  closure_131_16(obj7);
+                  closure_131_17(obj7);
                 }
                 c7 = 3;
                 return { value: frameId, done: true };
@@ -105,18 +110,16 @@ let obj = function _launchFrame() {
                 if (closure_131_8(type) === constants.MAIN) {
                   const obj8 = closure_131_0(closure_131_2[5]);
                   const result = obj8.leaveCurrentEmbeddedActivity();
-                  closure_131_13();
+                  closure_131_14();
                 }
                 sum = sum + 1;
                 launchRequestId = sum;
-                const obj12 = { type: "FRAME_LAUNCH_START", applicationId, frameId, surface: type, hostWindowKey, launch, launchRequestId };
+                const obj12 = { type: "FRAME_LAUNCH_START", applicationId, frameId, surface: type, hostWindowKey, launch, invite, launchRequestId };
                 const obj9 = closure_131_1(closure_131_2[6]);
                 obj9.dispatch(obj12);
                 c5 = 1;
-                const items = [, ];
                 const obj11 = closure_131_0(closure_131_2[7]);
-                items[0] = obj11.createProxyTicket(applicationId, closure_131_1(closure_131_2[8])(type), type.type);
-                items[1] = closure_131_1(closure_131_2[9])(applicationId);
+                const items = [obj11.createProxyTicket(applicationId, closure_131_1(closure_131_2[8])(type), type.type, invite), closure_131_1(closure_131_2[9])(applicationId)];
                 c6 = 3;
                 c7 = 1;
                 const obj13 = { value: all(items), done: false };
@@ -127,8 +130,8 @@ let obj = function _launchFrame() {
             if (2 === c6) {
               c5 = 0;
               error = closure_4;
-              const tmp19 = showErrorModal;
-              if (tmp19) {
+              const tmp20 = showErrorModal;
+              if (tmp20) {
                 c6 = 4;
                 c7 = 1;
                 const obj14 = { value: obj6.getActivityLaunchErrorInfo(error, applicationId), done: false };
@@ -144,9 +147,9 @@ let obj = function _launchFrame() {
                 c7 = 3;
                 return { value, done: true };
               } else {
-                closure_9 = value;
-                proxyTicket = closure_131_3(closure_9, 1)[0];
-                const obj16 = { type: "FRAME_LAUNCH", applicationId, frameId, surface: type, proxyTicket, analyticsContext, launch: type, hostWindowKey, launchRequestId };
+                closure_10 = value;
+                proxyTicket = closure_131_3(closure_10, 1)[0];
+                const obj16 = { type: "FRAME_LAUNCH", applicationId, frameId, surface: type, proxyTicket, analyticsContext, launch: type, invite, hostWindowKey, launchRequestId };
                 type = launch;
                 const dispatch = closure_131_1(closure_131_2[6]).dispatch;
                 closure_131_1(closure_131_2[6]);
@@ -173,11 +176,11 @@ let obj = function _launchFrame() {
             obj4.dispatch(obj18);
             throw error;
           }
-        } catch (tmp81) {
-          closure_4 = tmp81;
+        } catch (tmp86) {
+          closure_4 = tmp86;
           if (0 === c5) {
             c7 = 3;
-            throw tmp81;
+            throw tmp86;
           } else {
             c6 = 2;
           }
@@ -241,7 +244,7 @@ function promoteFrame(frameId) {
     const tmp4 = require;
     if (null != mainFrame1) {
       if (mainFrame1.intent === metroRequire.MAIN) {
-        const tmp4Result = tmp4(10765);
+        const tmp4Result = tmp4(10766);
         tmp4Result.leaveFrame(mainFrame1.id);
       } else {
         demoteMainFrame(mainFrame1.id);
@@ -268,7 +271,7 @@ obj = function _refreshProxyTicket() {
     let c6 = 0;
     let c4 = 0;
     return (async (arg0, value) => {
-      let obj22;
+      let obj7;
       if (c6 === 2) {
         c6 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -292,25 +295,32 @@ obj = function _refreshProxyTicket() {
               c6 = 3;
               return { value, done: true };
             } else {
+              closure_1 = tmp4;
               applicationId = undefined;
               proxyTicket = undefined;
               message = undefined;
               frame = frame.getFrame(frameId);
-              const tmp71 = frameId;
+              const tmp81 = frameId;
               if (null == frame) {
                 c6 = 3;
                 return { value: false, done: true };
               } else {
+                let invite;
                 applicationId = frame.applicationId;
                 const surface = frame.surface;
-                const obj5 = { type: "FRAME_SET_PROXY_TICKET_REFRESHING", applicationId, frameId: tmp71, refreshing: true };
-                const obj20 = DispatcherDefault;
-                obj20.dispatch(obj5);
+                if (closure_2_9(frame)) {
+                  invite = frame.data.invite;
+                } else {
+                  invite = frame.invite;
+                }
+                const obj5 = { type: "FRAME_SET_PROXY_TICKET_REFRESHING", applicationId, frameId: tmp81, refreshing: true };
+                const obj11 = DispatcherDefault;
+                obj11.dispatch(obj5);
                 c4 = 2;
                 c5 = 4;
                 c6 = 1;
-                const obj6 = { value: obj22.createProxyTicket(applicationId, getChannelIdForEmbeddedSurfaceDefault(surface), surface.type), done: false };
-                obj22 = createProxyTicket;
+                const obj13 = createProxyTicket;
+                const obj6 = { value: obj13.createProxyTicket(applicationId, getChannelIdForEmbeddedSurfaceDefault(surface), surface.type, invite), done: false };
                 return obj6;
               }
             }
@@ -318,34 +328,34 @@ obj = function _refreshProxyTicket() {
             c4 = 0;
             const obj8 = { type: "FRAME_SET_PROXY_TICKET_REFRESHING", applicationId, frameId, refreshing: false };
             const obj9 = closure_130_1(closure_130_2[6]);
-            dispatchResult1 = obj9.dispatch(obj8);
+            obj9.dispatch(obj8);
             throw message;
           } else if (2 === c5) {
             c4 = 1;
             let closure_4 = message;
-            const obj7 = closure_130_0(closure_130_2[10]);
-            dispatchResult1 = obj7.getActivityLaunchErrorInfo(closure_4, applicationId);
             c5 = 3;
             c6 = 1;
-            return { value: dispatchResult1, done: false };
+            const obj10 = { value: obj7.getActivityLaunchErrorInfo(closure_4, applicationId), done: false };
+            obj7 = closure_130_0(closure_130_2[10]);
+            return obj10;
           } else if (3 === c5) {
             if (arg0 === 1) {
               c6 = 3;
               throw value;
             } else if (arg0 === 2) {
               c4 = 0;
-              const obj11 = { type: "FRAME_SET_PROXY_TICKET_REFRESHING", applicationId, frameId, refreshing: false };
+              const obj12 = { type: "FRAME_SET_PROXY_TICKET_REFRESHING", applicationId, frameId, refreshing: false };
               const obj4 = closure_130_1(closure_130_2[6]);
-              obj4.dispatch(obj11);
+              obj4.dispatch(obj12);
               c6 = 3;
               return { value, done: true };
             } else {
               message = value;
               closure_130_1(closure_130_2[11])(message.message);
               c4 = 0;
-              const obj13 = { type: "FRAME_SET_PROXY_TICKET_REFRESHING", applicationId, frameId, refreshing: false };
-              const obj18 = closure_130_1(closure_130_2[6]);
-              obj18.dispatch(obj13);
+              const obj15 = { type: "FRAME_SET_PROXY_TICKET_REFRESHING", applicationId, frameId, refreshing: false };
+              const obj21 = closure_130_1(closure_130_2[6]);
+              obj21.dispatch(obj15);
               c6 = 3;
               return { value: false, done: true };
             }
@@ -354,29 +364,29 @@ obj = function _refreshProxyTicket() {
             throw value;
           } else if (arg0 === 2) {
             c4 = 0;
-            const obj15 = { type: "FRAME_SET_PROXY_TICKET_REFRESHING", applicationId, frameId, refreshing: false };
+            const obj16 = { type: "FRAME_SET_PROXY_TICKET_REFRESHING", applicationId, frameId, refreshing: false };
             obj = closure_130_1(closure_130_2[6]);
-            obj.dispatch(obj15);
+            obj.dispatch(obj16);
             c6 = 3;
             return { value, done: true };
           } else {
             proxyTicket = value;
-            const obj19 = { type: "FRAME_UPDATE_PROXY_TICKET", applicationId, frameId, proxyTicket };
-            const obj14 = closure_130_1(closure_130_2[6]);
-            obj14.dispatch(obj19);
+            const obj20 = { type: "FRAME_UPDATE_PROXY_TICKET", applicationId, frameId, proxyTicket };
+            const obj17 = closure_130_1(closure_130_2[6]);
+            obj17.dispatch(obj20);
             c4 = 0;
-            const obj21 = { type: "FRAME_SET_PROXY_TICKET_REFRESHING", applicationId, frameId, refreshing: false };
-            const obj16 = closure_130_1(closure_130_2[6]);
-            obj16.dispatch(obj21);
+            const obj22 = { type: "FRAME_SET_PROXY_TICKET_REFRESHING", applicationId, frameId, refreshing: false };
+            const obj19 = closure_130_1(closure_130_2[6]);
+            obj19.dispatch(obj22);
             c6 = 3;
             return { value: true, done: true };
           }
-        } catch (tmp36) {
-          message = tmp36;
+        } catch (tmp46) {
+          message = tmp46;
           if (0 === c4) {
             c6 = 3;
-            throw tmp36;
-          } else if (1 === tmp38) {
+            throw tmp46;
+          } else if (1 === tmp48) {
             c5 = 1;
           } else {
             c5 = 2;
@@ -387,9 +397,9 @@ obj = function _refreshProxyTicket() {
   });
   return obj(...arguments);
 };
-({ FrameIntent: metroRequire, FrameLayoutModes: metroImportDefault, getFrameIntentForSurface: metroImportAll, makeFrameId: c9 } = FramesConstants);
+({ FrameIntent: metroRequire, FrameLayoutModes: metroImportDefault, getFrameIntentForSurface: metroImportAll, isLaunched: c9, makeFrameId: c10 } = FramesConstants);
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
-let c11 = 0;
+let c12 = 0;
 let result = size.fileFinishedImporting("modules/frames/FramesActionCreators.shared.tsx");
 
 export const launchFrame = function launchFrame() {

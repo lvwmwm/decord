@@ -1,12 +1,12 @@
-// Module ID: 11516
-// Function ID: 11517
+// Module ID: 11517
+// Function ID: 11518
 // Name: useStageChannelConnectAction
-// Dependencies: [558, 576, 7871, 11515, 2]
+// Dependencies: [558, 576, 7871, 11516, 2]
 
-// Module 11516 (useStageChannelConnectAction)
+// Module 11517 (useStageChannelConnectAction)
 import react from "react" /* 576 */;
 import useStateChannelIsLiveDefault from "useStateChannelIsLive" /* 7871 */;
-import useCurrentUserStageRolesDefault from "useCurrentUserStageRoles" /* 11515 */;
+import useCurrentUserStageRolesDefault from "useCurrentUserStageRoles" /* 11516 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

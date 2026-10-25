@@ -1,20 +1,25 @@
-// Module ID: 10764
-// Function ID: 10765
+// Module ID: 10765
+// Function ID: 10766
 // Name: restartFrames
-// Dependencies: [6775, 6776, 10765, 10766, 2]
+// Dependencies: [6775, 6776, 10766, 10767, 2]
 // Exports: restartAppFrames
 
-// Module 10764 (restartFrames)
+// Module 10765 (restartFrames)
 import FramesConstants from "FramesConstants" /* 6776 */;
-import leaveFrame from "leaveFrame" /* 10765 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10766 */;
+import leaveFrame from "leaveFrame" /* 10766 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10767 */;
 import FramesStore from "FramesStore" /* 6775 */;
 import size from "module_2" /* 2 */;
 
 function restartFrame(item10016) {
   let launch;
+  const tmp = isLaunched;
   if (isLaunched(item10016)) {
     launch = item10016.data.launch;
+  }
+  let invite;
+  if (tmp(item10016)) {
+    invite = item10016.data.invite;
   }
   const mainFrame = FramesStore.getMainFrame();
   let id1;
@@ -25,14 +30,14 @@ function restartFrame(item10016) {
   const obj = leaveFrame;
   obj.leaveFrame(item10016.id);
   const obj2 = FramesActionCreatorsDefault;
-  const obj3 = { applicationId: item10016.applicationId, surface: item10016.surface, launch };
+  const obj3 = { applicationId: item10016.applicationId, surface: item10016.surface, launch, invite };
   const launchFrameResult = obj2.launchFrame(obj3);
   launchFrameResult.catch(() => {
 
   });
   if (id1 !== id) {
-    const tmp6Result = FramesActionCreatorsDefault;
-    tmp6Result.demoteMainFrame(item10016.id);
+    const tmp8Result = FramesActionCreatorsDefault;
+    tmp8Result.demoteMainFrame(item10016.id);
   }
 }
 const isLaunched = FramesConstants.isLaunched;

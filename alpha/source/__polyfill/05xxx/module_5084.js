@@ -14,13 +14,13 @@ let hasOwnProperty;
 let metroRequire;
 ({ useCallback: c3, useEffect: closure_4, useRef: hasOwnProperty, useState: metroRequire } = react);
 
-export const useRiveProperty = function useRiveProperty(arg0, arg1, f33556) {
+export const useRiveProperty = function useRiveProperty(arg0, arg1, f33561) {
   let closure_7;
   let first;
   let first1;
   let closure_0 = arg0;
   let closure_1 = arg1;
-  let closure_2 = f33556;
+  let closure_2 = f33561;
   let tmp = hasOwnProperty(undefined);
   let c3 = tmp;
   const items = [arg0, arg1];

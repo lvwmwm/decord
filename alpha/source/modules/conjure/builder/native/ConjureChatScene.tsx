@@ -1,10 +1,10 @@
-// Module ID: 11857
-// Function ID: 11858
+// Module ID: 11858
+// Function ID: 11859
 // Name: ConjureChatScene
-// Dependencies: [5, 32, 19, 17, 2045, 10698, 11858, 10721, 6773, 10714, 6776, 21, 4971, 587, 1505, 1633, 11860, 1647, 5052, 504, 6809, 11864, 10794, 11870, 11742, 11867, 10720, 5623, 11871, 10742, 11872, 11873, 10761, 1128, 3830, 11879, 11076, 11880, 1499, 8901, 11881, 12252, 5210, 11799, 10696, 12254, 5663, 12258, 12260, 5662, 11876, 12262, 12264, 12282, 10728, 11884, 10764, 12283, 10723, 11794, 11875, 9804, 12286, 7488, 12295, 11784, 12297, 6924, 11856, 12298, 9761, 9644, 5234, 5244, 12300, 11822, 12301, 558, 576, 2]
+// Dependencies: [5, 32, 19, 17, 2045, 10698, 11859, 10721, 6773, 10714, 6776, 21, 4971, 587, 1505, 1633, 11861, 1647, 5052, 504, 6809, 11865, 10795, 11871, 11743, 11868, 10720, 5623, 11872, 10742, 11873, 11874, 10762, 1128, 3830, 11880, 11077, 11881, 1499, 8901, 11882, 12253, 5210, 11800, 10696, 12255, 5663, 12259, 12261, 5662, 11877, 12263, 12265, 12283, 10728, 11885, 10765, 12284, 10723, 11795, 11876, 9804, 12287, 7488, 12296, 11785, 12298, 6924, 11857, 12299, 9761, 9644, 5234, 5244, 12301, 11823, 12302, 558, 576, 2]
 // Exports: default
 
-// Module 11857 (ConjureChatScene)
+// Module 11858 (ConjureChatScene)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1128 */;
@@ -19,23 +19,23 @@ import ConjureRemixSheet from "ConjureRemixSheet" /* 10696 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 10698 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 10720 */;
 import conjurePreviewSurface from "conjurePreviewSurface" /* 10728 */;
-import restartFrames from "restartFrames" /* 10764 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11742 */;
-import conjureProjectActions2 from "conjureProjectActions" /* 11784 */;
-import ConjureSettingsSheet from "ConjureSettingsSheet" /* 11799 */;
-import useConjurePublishAction from "useConjurePublishAction" /* 11873 */;
-import conjurePublishAction from "conjurePublishAction" /* 11875 */;
-import conjurePreviewTargets from "conjurePreviewTargets" /* 11879 */;
-import ConjureConnectToolSheet from "ConjureConnectToolSheet" /* 12254 */;
-import ConjureHistorySheet from "ConjureHistorySheet" /* 12264 */;
-import BugIcon from "BugIcon" /* 12295 */;
-import ConjureProjectHeaderTitleDefault from "ConjureProjectHeaderTitle" /* 12297 */;
+import restartFrames from "restartFrames" /* 10765 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11743 */;
+import conjureProjectActions2 from "conjureProjectActions" /* 11785 */;
+import ConjureSettingsSheet from "ConjureSettingsSheet" /* 11800 */;
+import useConjurePublishAction from "useConjurePublishAction" /* 11874 */;
+import conjurePublishAction from "conjurePublishAction" /* 11876 */;
+import conjurePreviewTargets from "conjurePreviewTargets" /* 11880 */;
+import ConjureConnectToolSheet from "ConjureConnectToolSheet" /* 12255 */;
+import ConjureHistorySheet from "ConjureHistorySheet" /* 12265 */;
+import BugIcon from "BugIcon" /* 12296 */;
+import ConjureProjectHeaderTitleDefault from "ConjureProjectHeaderTitle" /* 12298 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
-import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 11858 */;
+import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 11859 */;
 import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 10721 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
 import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10714 */;
@@ -59,7 +59,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const ExperimentalDirectSelectIcon2 = tmp(12298);
+const ExperimentalDirectSelectIcon2 = tmp(12299);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ ActivityIndicator: metroRequire, Keyboard: metroImportDefault, View: metroImportAll } = react_native);
@@ -511,30 +511,33 @@ export default function ConjureChatScene(guildId) {
     let modes = availability.modes;
     hasItem = modes.includes("frame");
   }
-  let tmp61 = hasItem && tmp58;
-  if (tmp61) {
+  const tmpResult24 = tmp(tmp2[25]);
+  const result2 = tmpResult24.permissionReviewBlocksMode(activeMode, result, tmp34);
+  let tmp62 = hasItem && tmp58;
+  if (tmp62) {
     let str2 = "frame";
-    tmp61 = "frame" === activeMode;
+    tmp62 = "frame" === activeMode;
   }
-  __initData3 = tmp61;
+  if (tmp62) {
+    tmp62 = !result2;
+  }
+  __initData3 = tmp62;
   if (hasItem) {
-    hasItem = tmp45 || tmp61 || conjureAgentNeedsPreview;
-    const tmp62 = tmp45 || tmp61 || conjureAgentNeedsPreview;
+    hasItem = tmp45 || tmp62 || conjureAgentNeedsPreview;
+    const tmp63 = tmp45 || tmp62 || conjureAgentNeedsPreview;
   }
-  const tmp63 = hasItem && !tmp45;
-  if (tmp63) {
+  const tmp64 = hasItem && !tmp45;
+  if (tmp64) {
     tmp46(true);
   }
-  let tmp65 = tmp58;
-  if (tmp65) {
-    tmp65 = "bot" === activeMode;
+  let tmp66 = tmp58;
+  if (tmp66) {
+    tmp66 = "bot" === activeMode;
   }
-  closure_25 = tmp65;
+  closure_25 = tmp66;
   if (stateFromStores2 != null) {
     integration_installed = stateFromStores2.integration_installed;
   }
-  const tmpResult24 = tmp(tmp2[25]);
-  const result2 = tmpResult24.permissionReviewBlocksMode(activeMode, result, tmp34);
   closure_26 = tmp67;
   ref = obj2.useRef(false);
   const items13 = [guildId, tmp67, projectId];
@@ -566,7 +569,7 @@ export default function ConjureChatScene(guildId) {
       return { paddingBottom };
     }
   }
-  Ue.__closure = { previewShowing: tmp58, botFaceShowing: tmp65, keyboardHeight: tmp6, safeAreaBottom: bottom };
+  Ue.__closure = { previewShowing: tmp58, botFaceShowing: tmp66, keyboardHeight: tmp6, safeAreaBottom: bottom };
   Ue.__workletHash = 9469604169548;
   Ue.__initData = __initData2;
   const animatedStyle = tmpResult25.useAnimatedStyle(Ue);
@@ -1037,7 +1040,7 @@ export default function ConjureChatScene(guildId) {
     }
     return items;
   }, items34);
-  const items35 = [conjureControlActive, active, stringResult, tmp61, callback3, callback1, navigation, memo6, stateFromStores, projectExists, projectName, stateFromStores1, tmp5];
+  const items35 = [conjureControlActive, active, stringResult, tmp62, callback3, callback1, navigation, memo6, stateFromStores, projectExists, projectName, stateFromStores1, tmp5];
   const effect5 = obj2.useEffect(() => {
     let accessibilityLabel;
     let disabled;
@@ -1145,16 +1148,16 @@ export default function ConjureChatScene(guildId) {
     if (hasItem) {
       tmp127Result = null;
       if (null != previewAppId) {
-        const obj18 = { style: tmp61 ? tmp5.pane : tmp5.paneBackstage, pointerEvents: str5, accessibilityElementsHidden: !tmp61, importantForAccessibility: str6, children: setFrameSurface(tmp(tmp2[40]).PreviewFrame, obj19) };
+        const obj18 = { style: tmp62 ? tmp5.pane : tmp5.paneBackstage, pointerEvents: str5, accessibilityElementsHidden: !tmp62, importantForAccessibility: str6, children: setFrameSurface(tmp(tmp2[40]).PreviewFrame, obj19) };
         str5 = "none";
-        if (tmp61) {
+        if (tmp62) {
           str5 = "auto";
         }
         str6 = "no-hide-descendants";
-        if (tmp61) {
+        if (tmp62) {
           str6 = "auto";
         }
-        obj19 = { applicationId: previewAppId, projectId, frameSurface, launch: frameLaunchParams, visible: tmp61 };
+        obj19 = { applicationId: previewAppId, projectId, frameSurface, launch: frameLaunchParams, visible: tmp62 };
         tmp127Result = tmp127(tmp125, obj18);
       }
     }
@@ -1164,7 +1167,7 @@ export default function ConjureChatScene(guildId) {
       tmp129Result = null;
       if (null != previewAppId) {
         tmp129Result = null;
-        if (!tmp61) {
+        if (!tmp62) {
           const obj20 = { style: tmp5.pane, children: setFrameSurface(tmp4Result4, obj21) };
           obj21 = { projectId, previewApplicationId: previewAppId, mode: activeMode, availability, frameSurface, frameLaunchParams, widgetApplicationId, frameHostAvailable: tmp37, permissionsGate: tmp131 };
           tmp131 = null;

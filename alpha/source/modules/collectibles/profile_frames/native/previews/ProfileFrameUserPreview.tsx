@@ -1,13 +1,13 @@
-// Module ID: 11170
-// Function ID: 11171
+// Module ID: 11171
+// Function ID: 11172
 // Name: ProfileFrameUserPreview
-// Dependencies: [109, 19, 21, 558, 576, 1128, 11053, 2]
+// Dependencies: [109, 19, 21, 558, 576, 1128, 11054, 2]
 
-// Module 11170 (ProfileFrameUserPreview)
+// Module 11171 (ProfileFrameUserPreview)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
-import UserProfilePreviewDefault from "UserProfilePreview" /* 11053 */;
+import UserProfilePreviewDefault from "UserProfilePreview" /* 11054 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

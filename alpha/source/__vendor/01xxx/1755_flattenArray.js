@@ -7,10 +7,10 @@
 // Module 1755 (flattenArray)
 
 export const flattenArray = function flattenArray(style) {
-  const f142383 = (arr) => {
+  const f142409 = (arr) => {
     if (Array.isArray(arr)) {
       if (typeof _flattenArray === "function") {
-        const item = arr.forEach(f142383);
+        const item = arr.forEach(f142409);
       } else {
         throw new TypeError("Trying to call a non-function");
       }
@@ -23,7 +23,7 @@ export const flattenArray = function flattenArray(style) {
     function _flattenArray(arg0) {
 
     }
-    let item = style.forEach(f142383);
+    let item = style.forEach(f142409);
     return items;
   } else {
     const items1 = [style];

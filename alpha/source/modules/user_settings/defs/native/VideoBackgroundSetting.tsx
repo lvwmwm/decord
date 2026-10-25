@@ -1,20 +1,20 @@
-// Module ID: 17314
-// Function ID: 17315
+// Module ID: 17319
+// Function ID: 17320
 // Name: VideoBackgroundSetting
-// Dependencies: [8332, 1087, 558, 576, 5866, 11634, 5861, 5864, 11205, 1128, 11614, 2]
+// Dependencies: [8332, 1087, 558, 576, 5866, 11635, 5861, 5864, 11206, 1128, 11615, 2]
 
-// Module 17314 (VideoBackgroundSetting)
+// Module 17319 (VideoBackgroundSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import applyBackgroundOption from "applyBackgroundOption" /* 5861 */;
 import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 5864 */;
 import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 5866 */;
 import SettingsConstants from "SettingsConstants" /* 8332 */;
-import useIsVideoBackgroundEnabledDefault from "useIsVideoBackgroundEnabled" /* 11614 */;
-import VideoBackgroundOptions from "VideoBackgroundOptions" /* 11634 */;
+import useIsVideoBackgroundEnabledDefault from "useIsVideoBackgroundEnabled" /* 11615 */;
+import VideoBackgroundOptions from "VideoBackgroundOptions" /* 11635 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11205 */;
+import SettingBuilders from "SettingBuilders" /* 11206 */;
 import size from "module_2" /* 2 */;
 
 let c3;

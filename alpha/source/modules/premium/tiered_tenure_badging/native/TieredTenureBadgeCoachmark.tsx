@@ -1,9 +1,9 @@
-// Module ID: 11112
-// Function ID: 11113
+// Module ID: 11113
+// Function ID: 11114
 // Name: TieredTenureBadgeCoachmark
-// Dependencies: [32, 19, 17, 1087, 4820, 21, 4971, 558, 576, 11081, 5669, 7712, 4807, 7496, 1128, 7490, 9840, 2]
+// Dependencies: [32, 19, 17, 1087, 4820, 21, 4971, 558, 576, 11082, 5669, 7712, 4807, 7496, 1128, 7490, 9840, 2]
 
-// Module 11112 (TieredTenureBadgeCoachmark)
+// Module 11113 (TieredTenureBadgeCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -13,7 +13,7 @@ import dismissible_content from "dismissible_content" /* 4807 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import openUserSettings from "openUserSettings" /* 7490 */;
-import useMobileTenureBadgeImages2 from "useMobileTenureBadgeImages" /* 11081 */;
+import useMobileTenureBadgeImages2 from "useMobileTenureBadgeImages" /* 11082 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4971 */;

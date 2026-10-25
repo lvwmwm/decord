@@ -1,10 +1,10 @@
-// Module ID: 13275
-// Function ID: 13276
+// Module ID: 13280
+// Function ID: 13281
 // Name: DiceRollUtils
 // Dependencies: [1128, 2]
 // Exports: getBarText
 
-// Module 13275 (DiceRollUtils)
+// Module 13280 (DiceRollUtils)
 import intl3 from "intl" /* 1128 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 13280
-// Function ID: 13281
+// Module ID: 13285
+// Function ID: 13286
 // Name: GamePlatformBadgeRow
-// Dependencies: [19, 21, 13281, 9483, 7053, 9616, 9282, 4971, 558, 576, 13282, 5977, 587, 2]
+// Dependencies: [19, 21, 13286, 9483, 7053, 9616, 9282, 4971, 558, 576, 13287, 5977, 587, 2]
 
-// Module 13280 (GamePlatformBadgeRow)
+// Module 13285 (GamePlatformBadgeRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,7 +11,7 @@ import MobilePhoneIcon from "MobilePhoneIcon" /* 7053 */;
 import RobloxNeutralIcon from "RobloxNeutralIcon" /* 9282 */;
 import ScreenIcon from "ScreenIcon" /* 9483 */;
 import GameControllerIcon from "GameControllerIcon" /* 9616 */;
-import GamePlatformAvailability from "GamePlatformAvailability" /* 13281 */;
+import GamePlatformAvailability from "GamePlatformAvailability" /* 13286 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -19,7 +19,7 @@ import size from "module_2" /* 2 */;
 
 let tmp;
 const Stack_Stack = tmp(5977);
-const GamePlatformBadges = tmp(13282);
+const GamePlatformBadges = tmp(13287);
 const jsx = Fragment.jsx;
 let obj = {};
 obj[GamePlatformAvailability.GamePlatformAvailability.DESKTOP] = ScreenIcon.ScreenIcon;

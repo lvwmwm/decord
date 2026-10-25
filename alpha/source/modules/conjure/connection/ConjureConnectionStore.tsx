@@ -1,7 +1,7 @@
 // Module ID: 10698
 // Function ID: 10699
 // Name: ConjureConnectionStore
-// Dependencies: [5, 1392, 10699, 10704, 6773, 10707, 10708, 10709, 10711, 10712, 10713, 10714, 10715, 10716, 584, 10717, 10732, 10733, 10735, 10737, 10738, 10739, 10795, 10805, 10807, 10808, 10810, 10811, 10812, 10718, 10813, 10725, 10784, 10814, 569, 10719, 10742, 10203, 10792, 504, 2]
+// Dependencies: [5, 1392, 10699, 10704, 6773, 10707, 10708, 10709, 10711, 10712, 10713, 10714, 10715, 10716, 584, 10717, 10732, 10733, 10735, 10737, 10738, 10739, 10796, 10806, 10808, 10809, 10811, 10812, 10813, 10718, 10814, 10725, 10785, 10815, 569, 10719, 10742, 10203, 10793, 504, 2]
 // Exports: closeConnection, ensureConnection, interruptTurn, loadOlderHistory, optimisticMessageId, prepareTemplate, resetHistoryPaging, sendUserMessage, showUserMessage, stageModelSettings, subscribeDebugBacklog, withdrawUserMessage
 
 // Module 10698 (ConjureConnectionStore)
@@ -21,17 +21,17 @@ import conjureLiveReloadConnection from "conjureLiveReloadConnection" /* 10737 *
 import conjureModelSettingsConnection from "conjureModelSettingsConnection" /* 10738 */;
 import conjurePreviewConnection from "conjurePreviewConnection" /* 10739 */;
 import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10742 */;
-import conjurePreviewClaims from "conjurePreviewClaims" /* 10784 */;
-import conjureMediaTickets from "conjureMediaTickets" /* 10792 */;
-import conjurePublishConnection from "conjurePublishConnection" /* 10795 */;
-import conjurePublishScheduleRequests from "conjurePublishScheduleRequests" /* 10805 */;
-import conjureRemixConnection from "conjureRemixConnection" /* 10807 */;
-import conjureSettingsConnection from "conjureSettingsConnection" /* 10808 */;
-import conjureSmartContextConnection from "conjureSmartContextConnection" /* 10810 */;
-import conjureAppBuildRequestConnection from "conjureAppBuildRequestConnection" /* 10811 */;
-import conjureProjectConnection from "conjureProjectConnection" /* 10812 */;
-import conjureKnownStepKinds from "conjureKnownStepKinds" /* 10813 */;
-import ConjureWebSocket from "ConjureWebSocket" /* 10814 */;
+import conjurePreviewClaims from "conjurePreviewClaims" /* 10785 */;
+import conjureMediaTickets from "conjureMediaTickets" /* 10793 */;
+import conjurePublishConnection from "conjurePublishConnection" /* 10796 */;
+import conjurePublishScheduleRequests from "conjurePublishScheduleRequests" /* 10806 */;
+import conjureRemixConnection from "conjureRemixConnection" /* 10808 */;
+import conjureSettingsConnection from "conjureSettingsConnection" /* 10809 */;
+import conjureSmartContextConnection from "conjureSmartContextConnection" /* 10811 */;
+import conjureAppBuildRequestConnection from "conjureAppBuildRequestConnection" /* 10812 */;
+import conjureProjectConnection from "conjureProjectConnection" /* 10813 */;
+import conjureKnownStepKinds from "conjureKnownStepKinds" /* 10814 */;
+import ConjureWebSocket from "ConjureWebSocket" /* 10815 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1392 */;
 import ConjureDebugStore from "ConjureDebugStore" /* 10704 */;
@@ -98,7 +98,7 @@ function appendFailedUserMessage(projectId, nonce, message) {
   const result = set(nonce, id);
   const tmp6 = DispatcherDefault;
   const dispatch = tmp6.dispatch;
-  obj2 = { type: "CONJURE_CHAT_MESSAGE_APPEND", projectId, content, id: "optimistic:" + nonce, userId: id1, timestamp: date.toISOString(), attachments, held: "emoji" };
+  obj2 = { type: "CONJURE_CHAT_MESSAGE_APPEND", projectId, content, id: "optimistic:" + nonce, userId: id1, timestamp: date.toISOString(), attachments, held: "duration" };
   const currentUser1 = obj.getCurrentUser();
   id1 = undefined;
   if (currentUser1 != null) {

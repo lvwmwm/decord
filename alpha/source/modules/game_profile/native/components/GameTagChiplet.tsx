@@ -1,9 +1,9 @@
-// Module ID: 18579
-// Function ID: 18580
+// Module ID: 18584
+// Function ID: 18585
 // Name: GameTagChiplet
 // Dependencies: [19, 21, 4971, 558, 576, 9245, 9246, 5669, 9225, 2]
 
-// Module 18579 (GameTagChiplet)
+// Module 18584 (GameTagChiplet)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import GuildTag from "GuildTag" /* 9225 */;

@@ -1,9 +1,9 @@
-// Module ID: 12240
-// Function ID: 12241
+// Module ID: 12241
+// Function ID: 12242
 // Name: MessageBlock
 // Dependencies: [19, 17, 21, 587, 4971, 558, 576, 5234, 2]
 
-// Module 12240 (MessageBlock)
+// Module 12241 (MessageBlock)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

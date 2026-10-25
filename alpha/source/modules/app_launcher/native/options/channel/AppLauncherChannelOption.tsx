@@ -1,14 +1,14 @@
-// Module ID: 12199
-// Function ID: 12200
+// Module ID: 12200
+// Function ID: 12201
 // Name: AppLauncherChannelOption
-// Dependencies: [32, 19, 4823, 21, 504, 5604, 12185, 12200, 5210, 12200, 2002, 2]
+// Dependencies: [32, 19, 4823, 21, 504, 5604, 12186, 12201, 5210, 12201, 2002, 2]
 // Exports: default
 
-// Module 12199 (AppLauncherChannelOption)
+// Module 12200 (AppLauncherChannelOption)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import AppLauncherChannelListActionSheet from "AppLauncherChannelListActionSheet" /* 12200 */;
+import AppLauncherChannelListActionSheet from "AppLauncherChannelListActionSheet" /* 12201 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
@@ -87,7 +87,7 @@ export default function AppLauncherChannelOption(option) {
         },
         onActionSheetDismiss: _slicedToArray
       };
-      const tmp4 = asyncRequire(12200, dependencyMap.paths);
+      const tmp4 = asyncRequire(12201, dependencyMap.paths);
       openLazy(tmp4, AppLauncherChannelListActionSheet.APP_LAUNCHER_CHANNEL_LIST_ACTION_SHEET_KEY, obj);
     },
     autoFocus

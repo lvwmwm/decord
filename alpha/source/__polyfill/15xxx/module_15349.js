@@ -1,88 +1,65 @@
 // Module ID: 15349
 // Function ID: 15350
-// Dependencies: [15343, 15314, 15334]
+// Dependencies: [41, 42]
 
 // Module 15349
-import _mod15314 from "module_15314" /* 15314 */;
+import _createClass from "_createClass" /* 42 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
 
-let tmp;
-const _mod15334 = tmp(15334);
+let map;
 
-export default function(arg0, arg1) {
-  let obj;
-  let tmp = obj;
-  obj = new obj(15343)(arg0, arg1);
-  const tmp3 = new obj(15314)("0.0.0");
-  if (obj.test(tmp3)) {
-    return tmp3;
-  } else {
-    let self = this;
-    let self2 = this;
-    const tmp4 = new tmp(15314)("0.0.0-0");
-    if (obj.test(tmp4)) {
-      return tmp4;
-    } else {
-      let num = 0;
-      let num3 = 0;
-      let tmp7 = null;
-      let tmp8 = null;
-      if (0 < obj.set.length) {
-        do {
-          let arr = obj.set[num3];
-          obj = null;
-          let item = arr.forEach(function(semver) {
-            obj = new _mod15314(semver.semver.version);
-            const operator = semver.operator;
-            if (">" === operator) {
-              if (0 === obj.prerelease.length) {
-                obj.patch = obj.patch + 1;
-              } else {
-                const prerelease = obj.prerelease;
-                prerelease.push(0);
-              }
-              obj.raw = obj.format();
-            } else if ("" !== operator) {
-              if (">=" !== operator) {
-                if ("<" !== operator) {
-                  if ("<=" !== operator) {
-                    const _Error = Error;
-                    const _HermesInternal = HermesInternal;
-                    const self = this;
-                    const self2 = this;
-                    const error = new Error("Unexpected operation: " + semver.operator);
-                    throw error;
-                  }
-                }
-              }
-            }
-            obj && !_mod15334(obj, obj);
-          });
-          let tmp11 = !obj;
-          let tmp12 = tmp7;
-          if (obj) {
-            let tmp14 = tmp12;
-            if (tmp14) {
-              tmp14 = !obj(15334)(tmp12, obj);
-            }
-            tmp11 = tmp14;
-          }
-          if (!tmp11) {
-            tmp12 = obj;
-          }
-          num3 = num + 1;
-          tmp7 = tmp12;
-          tmp8 = tmp12;
-          num = num3;
-        } while (num3 < obj.set.length);
-      }
-      let tmp18 = null;
-      if (tmp8) {
-        tmp18 = null;
-        if (obj.test(tmp8)) {
-          tmp18 = tmp8;
-        }
-      }
-      return tmp18;
+class LRUCache {
+  constructor() {
+    _classCallCheck(this, LRUCache);
+    this.max = 1000;
+    this.map = new Map();
+    new Map();
+  }
+}
+const entry = {
+  key: "get",
+  value: function get(arg0) {
+    const self = this;
+    map = this.map;
+    const value = map.get(arg0);
+    let tmp2;
+    if (undefined !== value) {
+      const map2 = self.map;
+      map2.delete(arg0);
+      const map3 = self.map;
+      const result = map3.set(arg0, value);
+      tmp2 = value;
     }
+    return tmp2;
   }
 };
+const items = [
+  entry,
+  {
+    key: "delete",
+    value: function _delete(arg0) {
+      map = this.map;
+      return map.delete(arg0);
+    }
+  },
+  {
+    key: "set",
+    value: function set(arg0, arg1) {
+      const self = this;
+      if (!this.delete(arg0)) {
+        if (undefined !== arg1) {
+          if (self.map.size >= self.max) {
+            map = self.map;
+            const iter = map.keys();
+            self.delete(iter.next().value);
+          }
+          const map2 = self.map;
+          const result = map2.set(arg0, arg1);
+        }
+      }
+      return self;
+    }
+  }
+];
+
+export default _createClass(LRUCache, items);

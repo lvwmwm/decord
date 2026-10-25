@@ -1,10 +1,10 @@
-// Module ID: 11807
-// Function ID: 11808
+// Module ID: 11808
+// Function ID: 11809
 // Name: ConjureSmartContext
-// Dependencies: [32, 19, 10699, 10698, 10708, 558, 576, 504, 10810, 1128, 3830, 10736, 2]
+// Dependencies: [32, 19, 10699, 10698, 10708, 558, 576, 504, 10811, 1128, 3830, 10736, 2]
 
-// Module 11807 (ConjureSmartContext)
-import conjureSmartContextConnection from "conjureSmartContextConnection" /* 10810 */;
+// Module 11808 (ConjureSmartContext)
+import conjureSmartContextConnection from "conjureSmartContextConnection" /* 10811 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ConjureChatStore from "ConjureChatStore" /* 10699 */;

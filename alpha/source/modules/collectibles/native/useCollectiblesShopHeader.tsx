@@ -1,9 +1,9 @@
-// Module ID: 17233
-// Function ID: 17234
+// Module ID: 17238
+// Function ID: 17239
 // Name: useCollectiblesShopHeader
-// Dependencies: [19, 17, 1392, 1089, 1087, 6710, 8672, 21, 4971, 587, 558, 576, 12127, 1128, 5234, 504, 9451, 9565, 7649, 7278, 7230, 5210, 13955, 2002, 1267, 9567, 6713, 6672, 8668, 13944, 7959, 9367, 9761, 17234, 1505, 2]
+// Dependencies: [19, 17, 1392, 1089, 1087, 6710, 8672, 21, 4971, 587, 558, 576, 12128, 1128, 5234, 504, 9451, 9565, 7649, 7278, 7230, 5210, 13960, 2002, 1267, 9567, 6713, 6672, 8668, 13949, 7959, 9367, 9761, 17239, 1505, 2]
 
-// Module 17233 (useCollectiblesShopHeader)
+// Module 17238 (useCollectiblesShopHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -18,7 +18,7 @@ import QuestConstants from "QuestConstants" /* 6710 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7278 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
 import Constants2 from "Constants" /* 8672 */;
-import ShopIcon from "ShopIcon" /* 12127 */;
+import ShopIcon from "ShopIcon" /* 12128 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;

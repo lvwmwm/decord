@@ -1,9 +1,9 @@
-// Module ID: 17762
-// Function ID: 17763
+// Module ID: 17767
+// Function ID: 17768
 // Name: HomeDrawerGuildVoiceState
-// Dependencies: [19, 17, 4901, 4913, 6704, 5717, 1087, 21, 4971, 587, 558, 576, 1202, 14308, 1128, 5234, 11712, 5669, 5258, 17761, 504, 15019, 12, 2]
+// Dependencies: [19, 17, 4901, 4913, 6704, 5717, 1087, 21, 4971, 587, 558, 576, 1202, 14313, 1128, 5234, 11713, 5669, 5258, 17766, 504, 15024, 12, 2]
 
-// Module 17762 (HomeDrawerGuildVoiceState)
+// Module 17767 (HomeDrawerGuildVoiceState)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -15,9 +15,9 @@ import GuildChannelStore2 from "GuildChannelStore" /* 4901 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import LinearGradientDefault from "LinearGradient" /* 5258 */;
 import FastImageDefault from "FastImage" /* 5669 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 11712 */;
-import AvatarPile2 from "AvatarPile" /* 14308 */;
-import BlockedUserUtils from "BlockedUserUtils" /* 15019 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 11713 */;
+import AvatarPile2 from "AvatarPile" /* 14313 */;
+import BlockedUserUtils from "BlockedUserUtils" /* 15024 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4913 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6704 */;
@@ -120,7 +120,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceU
       }
       const obj3 = { style: tmp5, children: closure_11(AvatarPile, obj4) };
       obj4 = { size: guildId(1202).AvatarSizes.XSMALL, names: tmp6, totalCount: tmp9, children: tmp10 };
-      AvatarPile = tmp(14308).AvatarPile;
+      AvatarPile = tmp(14313).AvatarPile;
       const tmp16 = closure_11(View, obj3);
       cResult[11] = tmp6;
       cResult[12] = tmp10;

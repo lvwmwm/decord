@@ -1,10 +1,10 @@
-// Module ID: 18279
-// Function ID: 18280
+// Module ID: 18284
+// Function ID: 18285
 // Name: ChannelSettingsPermissionsOverrides
-// Dependencies: [32, 5, 19, 17, 4841, 4823, 4877, 4845, 4903, 4913, 1392, 1087, 21, 4971, 587, 1505, 1633, 504, 7346, 11308, 4908, 1099, 8974, 7411, 2000, 5025, 5908, 1128, 5660, 2067, 4831, 18280, 9699, 5234, 5604, 10829, 6903, 7953, 6987, 18284, 1384, 18285, 2]
+// Dependencies: [32, 5, 19, 17, 4841, 4823, 4877, 4845, 4903, 4913, 1392, 1087, 21, 4971, 587, 1505, 1633, 504, 7346, 11309, 4908, 1099, 8974, 7411, 2000, 5025, 5908, 1128, 5660, 2067, 4831, 18285, 9699, 5234, 5604, 10830, 6903, 7953, 6987, 18289, 1384, 18290, 2]
 // Exports: default
 
-// Module 18279 (ChannelSettingsPermissionsOverrides)
+// Module 18284 (ChannelSettingsPermissionsOverrides)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
@@ -14,8 +14,8 @@ import GuildRecord from "GuildRecord" /* 4841 */;
 import PermissionUtils from "PermissionUtils" /* 4908 */;
 import TableRowGroup2 from "TableRowGroup" /* 6987 */;
 import useAppChannelApplication from "useAppChannelApplication" /* 7346 */;
-import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11308 */;
-import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 18280 */;
+import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11309 */;
+import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 18285 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -351,7 +351,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
   const tmp13 = closure_19(Text, obj5);
   if (type === constants.MEMBER) {
     let obj6 = { userId: id, guildId: stateFromStores.guild_id, start: true, end: true, trailing: tmp13 };
-    tmp12Result = tmp12(tmp5(10829), obj6);
+    tmp12Result = tmp12(tmp5(10830), obj6);
   } else {
     let TableRow = TableRow2.TableRow;
     const role = GuildRoleStore.getRole(stateFromStores.guild_id, id);

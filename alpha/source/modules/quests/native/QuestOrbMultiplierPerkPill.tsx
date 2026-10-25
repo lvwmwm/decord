@@ -1,9 +1,9 @@
-// Module ID: 16504
-// Function ID: 16505
+// Module ID: 16509
+// Function ID: 16510
 // Name: QuestOrbMultiplierPerkPill
-// Dependencies: [19, 17, 1087, 21, 4971, 587, 558, 576, 5205, 4993, 5252, 4968, 9570, 9592, 16505, 1128, 9425, 5234, 5258, 6908, 2]
+// Dependencies: [19, 17, 1087, 21, 4971, 587, 558, 576, 5205, 4993, 5252, 4968, 9570, 9592, 16510, 1128, 9425, 5234, 5258, 6908, 2]
 
-// Module 16504 (QuestOrbMultiplierPerkPill)
+// Module 16509 (QuestOrbMultiplierPerkPill)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import ColorUtils from "ColorUtils" /* 4968 */;
@@ -13,7 +13,7 @@ import Text_Text from "Text/Text" /* 5234 */;
 import useToken from "useToken" /* 5252 */;
 import hooks_QuestHooks from "hooks/QuestHooks" /* 9570 */;
 import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 9592 */;
-import openQuestOrbMultiplierPerkInfoActionSheetDefault from "openQuestOrbMultiplierPerkInfoActionSheet" /* 16505 */;
+import openQuestOrbMultiplierPerkInfoActionSheetDefault from "openQuestOrbMultiplierPerkInfoActionSheet" /* 16510 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

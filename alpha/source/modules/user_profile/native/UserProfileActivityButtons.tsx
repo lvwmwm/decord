@@ -1,10 +1,10 @@
-// Module ID: 14313
-// Function ID: 14314
+// Module ID: 14318
+// Function ID: 14319
 // Name: UserProfileActivityButtons
-// Dependencies: [5, 19, 4822, 4823, 6500, 5194, 4845, 11191, 4903, 4913, 4874, 6498, 5630, 1087, 8828, 21, 4971, 587, 558, 576, 7253, 4892, 14314, 573, 6662, 14315, 7812, 1128, 8577, 5210, 6672, 11357, 5244, 10651, 1202, 8623, 11338, 5660, 14317, 8749, 5151, 7878, 7867, 6502, 1417, 9609, 7490, 8832, 11342, 1386, 8860, 2]
+// Dependencies: [5, 19, 4822, 4823, 6500, 5194, 4845, 11192, 4903, 4913, 4874, 6498, 5630, 1087, 8828, 21, 4971, 587, 558, 576, 7253, 4892, 14319, 573, 6662, 14320, 7812, 1128, 8577, 5210, 6672, 11358, 5244, 10651, 1202, 8623, 11339, 5660, 14322, 8749, 5151, 7878, 7867, 6502, 1417, 9609, 7490, 8832, 11343, 1386, 8860, 2]
 // Exports: CustomActivityButton
 
-// Module 14313 (UserProfileActivityButtons)
+// Module 14318 (UserProfileActivityButtons)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import nativeDefault from "native" /* 587 */;
@@ -21,10 +21,10 @@ import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7867 */;
 import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7878 */;
 import isStreamingDefault from "isStreaming" /* 8749 */;
 import authorizeConnectionDefault from "authorizeConnection" /* 9609 */;
-import GamesActionCreatorsDefault from "GamesActionCreators" /* 11357 */;
-import getActivityChannelIdDefault from "getActivityChannelId" /* 14314 */;
-import getActivityJoinability from "getActivityJoinability" /* 14315 */;
-import getStreamURLDefault from "getStreamURL" /* 14317 */;
+import GamesActionCreatorsDefault from "GamesActionCreators" /* 11358 */;
+import getActivityChannelIdDefault from "getActivityChannelId" /* 14319 */;
+import getActivityJoinability from "getActivityJoinability" /* 14320 */;
+import getStreamURLDefault from "getStreamURL" /* 14322 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
@@ -32,7 +32,7 @@ import ChannelStore from "ChannelStore" /* 4823 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6500 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 5194 */;
 import GuildStore from "GuildStore" /* 4845 */;
-import LocalActivityStore from "LocalActivityStore" /* 11191 */;
+import LocalActivityStore from "LocalActivityStore" /* 11192 */;
 import PermissionStore from "PermissionStore" /* 4903 */;
 import RelationshipStore from "RelationshipStore" /* 4913 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;

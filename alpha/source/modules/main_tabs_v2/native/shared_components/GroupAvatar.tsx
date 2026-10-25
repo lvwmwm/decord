@@ -1,9 +1,9 @@
-// Module ID: 14320
-// Function ID: 14321
+// Module ID: 14325
+// Function ID: 14326
 // Name: GroupAvatar
 // Dependencies: [19, 17, 4972, 21, 4971, 587, 558, 576, 4978, 6885, 573, 5052, 5206, 5247, 7075, 5234, 5669, 2]
 
-// Module 14320 (GroupAvatar)
+// Module 14325 (GroupAvatar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import react3 from "react" /* 576 */;

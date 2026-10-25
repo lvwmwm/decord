@@ -1,9 +1,9 @@
-// Module ID: 11075
-// Function ID: 11076
+// Module ID: 11076
+// Function ID: 11077
 // Name: UserProfilePrimaryInfo
-// Dependencies: [19, 17, 1392, 8672, 7304, 1087, 8274, 8683, 21, 4971, 587, 1384, 558, 576, 10661, 10662, 9134, 11076, 6908, 5234, 11078, 5151, 11110, 8673, 7490, 5663, 8733, 9573, 9576, 6713, 1128, 11112, 5669, 11113, 11115, 11116, 11118, 11122, 11147, 1499, 11148, 8654, 9225, 5025, 2]
+// Dependencies: [19, 17, 1392, 8672, 7304, 1087, 8274, 8683, 21, 4971, 587, 1384, 558, 576, 10661, 10662, 9134, 11077, 6908, 5234, 11079, 5151, 11111, 8673, 7490, 5663, 8733, 9573, 9576, 6713, 1128, 11113, 5669, 11114, 11116, 11117, 11119, 11123, 11148, 1499, 11149, 8654, 9225, 5025, 2]
 
-// Module 11075 (UserProfilePrimaryInfo)
+// Module 11076 (UserProfilePrimaryInfo)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants2 from "Constants" /* 1087 */;
@@ -25,8 +25,8 @@ import captureAdUserAction2 from "captureAdUserAction" /* 9573 */;
 import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9576 */;
 import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10661 */;
 import types from "types" /* 10662 */;
-import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 11118 */;
-import BadgeUtils from "BadgeUtils" /* 11122 */;
+import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 11119 */;
+import BadgeUtils from "BadgeUtils" /* 11123 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -326,7 +326,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayName(
     const tmp13 = user;
     const tmp15 = closure_13;
     if (showChevron) {
-      showChevron = tmp15(tmp13(11076).ChevronSmallDownIcon, { size: "sm", color: "icon-muted" });
+      showChevron = tmp15(tmp13(11077).ChevronSmallDownIcon, { size: "sm", color: "icon-muted" });
     }
     items1[2] = showChevron;
     tmp12Result = tmp12(PressableOpacity, obj7);

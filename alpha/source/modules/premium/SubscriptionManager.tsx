@@ -1,9 +1,9 @@
-// Module ID: 18952
-// Function ID: 18953
+// Module ID: 18957
+// Function ID: 18958
 // Name: SubscriptionManager
 // Dependencies: [5, 1392, 2054, 2058, 7506, 1394, 7214, 1991, 6463, 7508, 2]
 
-// Module 18952 (SubscriptionManager)
+// Module 18957 (SubscriptionManager)
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1991 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1392 */;

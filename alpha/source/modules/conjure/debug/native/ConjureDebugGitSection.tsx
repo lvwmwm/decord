@@ -1,9 +1,9 @@
-// Module ID: 12554
-// Function ID: 12555
+// Module ID: 12559
+// Function ID: 12560
 // Name: ConjureDebugGitSection
-// Dependencies: [32, 19, 17, 21, 4971, 587, 8545, 10120, 12555, 12557, 9047, 12559, 9646, 12561, 11597, 11827, 7267, 7957, 7018, 12563, 12565, 558, 576, 12567, 5234, 12550, 5039, 5914, 6901, 5977, 11787, 5244, 2]
+// Dependencies: [32, 19, 17, 21, 4971, 587, 8545, 10120, 12560, 12562, 9047, 12564, 9646, 12566, 11598, 11828, 7267, 7957, 7018, 12568, 12570, 558, 576, 12572, 5234, 12554, 5039, 5914, 6901, 5977, 11788, 5244, 2]
 
-// Module 12554 (ConjureDebugGitSection)
+// Module 12559 (ConjureDebugGitSection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AlertModal from "AlertModal" /* 5914 */;
@@ -14,15 +14,15 @@ import FolderIcon from "FolderIcon" /* 8545 */;
 import CalendarIcon from "CalendarIcon" /* 9047 */;
 import ServerIcon from "ServerIcon" /* 9646 */;
 import PencilIcon from "PencilIcon" /* 10120 */;
-import SpeedometerIcon from "SpeedometerIcon" /* 11597 */;
-import FileIcon from "FileIcon" /* 11827 */;
-import CloudIcon from "CloudIcon" /* 12555 */;
-import ListNumberedIcon from "ListNumberedIcon" /* 12557 */;
-import SaveIcon from "SaveIcon" /* 12559 */;
-import CloudDownloadIcon from "CloudDownloadIcon" /* 12561 */;
-import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 12563 */;
-import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 12565 */;
-import ConjureDebugGit from "ConjureDebugGit" /* 12567 */;
+import SpeedometerIcon from "SpeedometerIcon" /* 11598 */;
+import FileIcon from "FileIcon" /* 11828 */;
+import CloudIcon from "CloudIcon" /* 12560 */;
+import ListNumberedIcon from "ListNumberedIcon" /* 12562 */;
+import SaveIcon from "SaveIcon" /* 12564 */;
+import CloudDownloadIcon from "CloudDownloadIcon" /* 12566 */;
+import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 12568 */;
+import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 12570 */;
+import ConjureDebugGit from "ConjureDebugGit" /* 12572 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -47,7 +47,7 @@ let obj2;
 let obj3;
 let tmp;
 const Text_Text = tmp(5234);
-const ConjureDebugPrimitives = tmp(12550);
+const ConjureDebugPrimitives = tmp(12554);
 ({ Pressable: hasOwnProperty, View: metroRequire } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;

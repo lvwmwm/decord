@@ -1,9 +1,9 @@
-// Module ID: 18607
-// Function ID: 18608
+// Module ID: 18612
+// Function ID: 18613
 // Name: VoicePanelVisualEffectView
 // Dependencies: [19, 17, 1207, 21, 4971, 587, 558, 576, 5252, 4978, 504, 1384, 8913, 2]
 
-// Module 18607 (VoicePanelVisualEffectView)
+// Module 18612 (VoicePanelVisualEffectView)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

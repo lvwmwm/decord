@@ -1,10 +1,10 @@
-// Module ID: 17947
-// Function ID: 17948
+// Module ID: 17952
+// Function ID: 17953
 // Name: useReplyActions
-// Dependencies: [5, 19, 4823, 7631, 1392, 1395, 4976, 504, 8613, 9665, 7411, 17948, 5025, 7755, 7566, 17946, 5210, 5663, 1128, 16174, 8841, 9825, 5225, 17948, 2002, 2]
+// Dependencies: [5, 19, 4823, 7631, 1392, 1395, 4976, 504, 8613, 9665, 7411, 17953, 5025, 7755, 7566, 17951, 5210, 5663, 1128, 16179, 8841, 9825, 5225, 17953, 2002, 2]
 // Exports: useReplyActions
 
-// Module 17947 (useReplyActions)
+// Module 17952 (useReplyActions)
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import MessageConstants from "MessageConstants" /* 4976 */;
@@ -255,7 +255,7 @@ export const useReplyActions = function useReplyActions(cResult) {
             obj2.feedItemActioned(obj3);
             const obj5 = { content, author: tmp, sendMessage, onPressEmoji: callback1 };
             const obj4 = ActionSheetActionCreatorsDefault;
-            obj4.openLazy(asyncRequire(17948, tmp10.paths), "ReactActionSheet", obj5);
+            obj4.openLazy(asyncRequire(17953, tmp10.paths), "ReactActionSheet", obj5);
           }
         }, items6),
       openEmojiPicker: callback2

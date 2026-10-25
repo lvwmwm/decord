@@ -1,12 +1,19 @@
 // Module ID: 15332
 // Function ID: 15333
-// Dependencies: [15331]
+// Dependencies: [15318]
 
 // Module 15332
-import _mod15331 from "module_15331" /* 15331 */;
+import _mod15318 from "module_15318" /* 15318 */;
 
 
-export default (arr, arg1) => {
-  let closure_0 = arg1;
-  return arr.sort((arg0, arg1) => _mod15331(arg0, arg1, closure_0));
+export default (arg0, arg1) => {
+  const tmp = _mod15318(arg0, arg1);
+  let prerelease = null;
+  if (tmp) {
+    prerelease = null;
+    if (tmp.prerelease.length) {
+      prerelease = tmp.prerelease;
+    }
+  }
+  return prerelease;
 };

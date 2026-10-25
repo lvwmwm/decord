@@ -1,15 +1,15 @@
-// Module ID: 13330
-// Function ID: 13331
+// Module ID: 13335
+// Function ID: 13336
 // Name: EmojiSuggestionBarSmall
-// Dependencies: [109, 19, 9828, 21, 587, 4971, 558, 576, 13322, 5052, 9911, 9936, 5037, 2]
+// Dependencies: [109, 19, 9828, 21, 587, 4971, 558, 576, 13327, 5052, 9911, 9936, 5037, 2]
 
-// Module 13330 (EmojiSuggestionBarSmall)
+// Module 13335 (EmojiSuggestionBarSmall)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
 import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9828 */;
 import EmojiPickerListRow from "EmojiPickerListRow" /* 9911 */;
-import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 13322 */;
+import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 13327 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4971 */;
@@ -129,7 +129,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiS
   ({ reducedMotion: importDefault, handlePress: dependencyMap, handlePressEmojiUnavailable: closure_3, transitionState } = displayEmojis);
   ({ onOccupiedHeightChange, cleanUp } = displayEmojis);
   const tmp = closure_9(displayEmojis.anchorTop);
-  let obj = displayEmojis(13322);
+  let obj = displayEmojis(13327);
   const suggestionBarHeight = obj.useSuggestionBarHeight(transitionState, cleanUp, CONTAINER_SMALL_WRAPPER_HEIGHT, onOccupiedHeightChange);
   let obj2 = displayEmojis(5052);
   const fn = function j() {
@@ -193,7 +193,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiSuggest
     tmp7 = cResult[4];
   }
   const tmpResult = require("EmojiSuggestionBarUtils");
-  const emojiSuggestionBarState = tmpResult.useEmojiSuggestionBarState(tmp6, tmp(13322).MAX_SUGGESTIONS_LARGE, 1, tmp7);
+  const emojiSuggestionBarState = tmpResult.useEmojiSuggestionBarState(tmp6, tmp(13327).MAX_SUGGESTIONS_LARGE, 1, tmp7);
   ({ unlockedEmojis, lockedEmojis, reducedMotion, handlePress, handlePressEmojiUnavailable } = emojiSuggestionBarState);
   if (0 !== unlockedEmojis.length) {
     if (cResult[5] === lockedEmojis) {

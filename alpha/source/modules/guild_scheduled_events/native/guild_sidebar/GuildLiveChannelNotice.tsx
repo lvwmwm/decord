@@ -1,10 +1,10 @@
-// Module ID: 17612
-// Function ID: 17613
+// Module ID: 17617
+// Function ID: 17618
 // Name: GuildLiveChannelNotice
-// Dependencies: [19, 17, 6641, 4828, 6642, 4903, 5717, 4829, 1098, 21, 587, 1202, 5705, 12067, 8471, 11056, 1384, 5250, 4971, 558, 576, 5234, 13447, 12060, 6662, 1896, 7867, 7878, 5205, 9709, 4978, 5244, 5604, 504, 1128, 8502, 9047, 8893, 8930, 8883, 6694, 6688, 6640, 9022, 8568, 17611, 10691, 6905, 2]
+// Dependencies: [19, 17, 6641, 4828, 6642, 4903, 5717, 4829, 1098, 21, 587, 1202, 5705, 12068, 8471, 11057, 1384, 5250, 4971, 558, 576, 5234, 13452, 12061, 6662, 1896, 7867, 7878, 5205, 9709, 4978, 5244, 5604, 504, 1128, 8502, 9047, 8893, 8930, 8883, 6694, 6688, 6640, 9022, 8568, 17616, 10691, 6905, 2]
 // Exports: getScaledLiveChannelNoticeHeight
 
-// Module 17612 (GuildLiveChannelNotice)
+// Module 17617 (GuildLiveChannelNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -28,8 +28,8 @@ import LocationIcon from "LocationIcon" /* 8930 */;
 import CalendarIcon from "CalendarIcon" /* 9047 */;
 import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9709 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10691 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11056 */;
-import MarkupInlineChannelMentionRules from "MarkupInlineChannelMentionRules" /* 12067 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11057 */;
+import MarkupInlineChannelMentionRules from "MarkupInlineChannelMentionRules" /* 12068 */;
 import react from "react" /* 19 */;
 import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6641 */;
 import StageInstanceStore from "StageInstanceStore" /* 4828 */;
@@ -202,8 +202,8 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSu
               items2 = [, ];
               ({ badge: arr2[0], audienceBadge: arr2[1] } = tmp5);
               let obj6 = { size: "custom", style: tmpResult.makeSizeStyle(14) };
-              const HeadphonesIcon = tmp(13447).HeadphonesIcon;
-              tmpResult = tmp(12060);
+              const HeadphonesIcon = tmp(13452).HeadphonesIcon;
+              tmpResult = tmp(12061);
               items3 = [tmp14(HeadphonesIcon, obj6), ];
               let obj7 = { variant: "text-xs/semibold", style: { marginLeft: 4 }, maxFontSizeMultiplier: 1, children: audienceCount };
               items3[1] = tmp14(tmp(5234).Text, obj7);
@@ -367,8 +367,8 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSu
       items2 = [, ];
       ({ badge: arr3[0], audienceBadge: arr3[1] } = tmp);
       let obj4 = { size: "custom", style: obj5.makeSizeStyle(14) };
-      const HeadphonesIcon = max(13447).HeadphonesIcon;
-      obj5 = max(12060);
+      const HeadphonesIcon = max(13452).HeadphonesIcon;
+      obj5 = max(12061);
       items3 = [tmp8(HeadphonesIcon, obj4), ];
       let obj6 = { variant: "text-xs/semibold", style: { marginLeft: 4 }, maxFontSizeMultiplier: 1, children: audienceCount };
       items3[1] = closure_13(max(5234).Text, obj6);
@@ -1349,7 +1349,7 @@ const memoResult = react.memo(function GuildLiveChannelNotice(guild) {
   const style = guild.style;
   const tmp2 = activeEventOrStageInstanceChannel;
   const tmp = closure_30();
-  let obj = activeEventOrStageInstanceChannel(17611);
+  let obj = activeEventOrStageInstanceChannel(17616);
   activeEventOrStageInstanceChannel = obj.useActiveEventOrStageInstanceChannel(guild.id);
   let obj2 = activeEventOrStageInstanceChannel(9022);
   const guildActiveEvent = obj2.useGuildActiveEvent(guild.id);

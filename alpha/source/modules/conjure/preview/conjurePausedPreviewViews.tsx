@@ -1,10 +1,10 @@
-// Module ID: 10783
-// Function ID: 10784
+// Module ID: 10784
+// Function ID: 10785
 // Name: conjurePausedPreviewViews
 // Dependencies: [19, 558, 576, 2]
 // Exports: isConjurePausedPreviewMounted, registerConjurePausedPreview
 
-// Module 10783 (conjurePausedPreviewViews)
+// Module 10784 (conjurePausedPreviewViews)
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

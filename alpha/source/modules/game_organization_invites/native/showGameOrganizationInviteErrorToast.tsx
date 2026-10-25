@@ -1,10 +1,10 @@
-// Module ID: 11323
-// Function ID: 11324
+// Module ID: 11324
+// Function ID: 11325
 // Name: showGameOrganizationInviteErrorToast
 // Dependencies: [5663, 1128, 2]
 // Exports: default
 
-// Module 11323 (showGameOrganizationInviteErrorToast)
+// Module 11324 (showGameOrganizationInviteErrorToast)
 import intl2 from "intl" /* 1128 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
 import size from "module_2" /* 2 */;

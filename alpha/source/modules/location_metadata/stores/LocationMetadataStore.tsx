@@ -1,9 +1,9 @@
-// Module ID: 10778
-// Function ID: 10779
+// Module ID: 10779
+// Function ID: 10780
 // Name: LocationMetadataStore
 // Dependencies: [5646, 504, 584, 2]
 
-// Module 10778 (LocationMetadataStore)
+// Module 10779 (LocationMetadataStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import CountryCodeUtils from "CountryCodeUtils" /* 5646 */;

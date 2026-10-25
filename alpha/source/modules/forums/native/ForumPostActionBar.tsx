@@ -1,9 +1,9 @@
-// Module ID: 10990
-// Function ID: 10991
+// Module ID: 10991
+// Function ID: 10992
 // Name: ForumPostActionBar
-// Dependencies: [32, 19, 17, 4904, 4905, 4823, 1087, 21, 4971, 587, 558, 576, 504, 7401, 1499, 9781, 7566, 11, 5201, 9708, 10991, 6908, 1128, 6919, 5234, 9140, 5678, 11013, 2]
+// Dependencies: [32, 19, 17, 4904, 4905, 4823, 1087, 21, 4971, 587, 558, 576, 504, 7401, 1499, 9781, 7566, 11, 5201, 9708, 10992, 6908, 1128, 6919, 5234, 9140, 5678, 11014, 2]
 
-// Module 10990 (ForumPostActionBar)
+// Module 10991 (ForumPostActionBar)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
@@ -205,7 +205,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostAct
             react(width - nativeEvent.nativeEvent.layout.width - 40);
           }
         }
-        let obj2 = { style: tmp4.reactionRow, children: closure_10(tmp(10991).ForumPostActionBarReactions, obj3) };
+        let obj2 = { style: tmp4.reactionRow, children: closure_10(tmp(10992).ForumPostActionBarReactions, obj3) };
         obj3 = { thread: channel, parentChannel: stateFromStores, firstMessage, containerWidth: tmp20 };
         tmp30 = closure_10(View, obj2);
       }
@@ -273,7 +273,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostAct
   items4[1] = obj5.useGradientTop();
   let tmp12 = null != firstMessage;
   if (tmp12) {
-    const obj7 = { style: tmp.reactionRow, children: closure_10(channel(10991).ForumPostActionBarReactions, obj8) };
+    const obj7 = { style: tmp.reactionRow, children: closure_10(channel(10992).ForumPostActionBarReactions, obj8) };
     obj8 = { thread: channel, parentChannel: stateFromStores, firstMessage, containerWidth: first };
     tmp12 = closure_10(tmp11, obj7);
   }
@@ -349,7 +349,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostAct
       obj2 = SnowflakeUtilsDefault;
       jumpToMessage(obj);
     },
-    children: closure_10(channel(11013).ArrowLargeUpIcon, { size: "xs" })
+    children: closure_10(channel(11014).ArrowLargeUpIcon, { size: "xs" })
   };
   const PressableOpacity3 = tmp2(6908).PressableOpacity;
   intl5 = tmp2(1128).intl;

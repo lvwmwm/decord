@@ -1,17 +1,17 @@
-// Module ID: 16524
-// Function ID: 16525
+// Module ID: 16529
+// Function ID: 16530
 // Name: QuestDockGestureDetector
-// Dependencies: [19, 6710, 16436, 21, 558, 576, 16464, 16433, 16437, 10913, 16440, 16518, 5052, 16441, 16438, 5297, 16435, 5212, 2]
+// Dependencies: [19, 6710, 16441, 21, 558, 576, 16469, 16438, 16442, 10914, 16445, 16523, 5052, 16446, 16443, 5297, 16440, 5212, 2]
 
-// Module 16524 (QuestDockGestureDetector)
+// Module 16529 (QuestDockGestureDetector)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
 import HapticUtils from "HapticUtils" /* 5212 */;
 import QuestConstants from "QuestConstants" /* 6710 */;
-import QuestDockUtils from "QuestDockUtils" /* 16435 */;
+import QuestDockUtils from "QuestDockUtils" /* 16440 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 16436 */;
+import QuestDockConstants from "QuestDockConstants" /* 16441 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

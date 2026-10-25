@@ -1,10 +1,10 @@
-// Module ID: 11881
-// Function ID: 11882
+// Module ID: 11882
+// Function ID: 11883
 // Name: ConjureNativePreview
-// Dependencies: [32, 19, 17, 6775, 502, 4823, 6771, 2001, 11858, 6773, 1087, 6776, 21, 4971, 587, 558, 576, 5234, 6905, 10728, 10765, 11882, 10761, 504, 11884, 10742, 10766, 5593, 11885, 11886, 11887, 11891, 11893, 11895, 1128, 3830, 5244, 7708, 11903, 10740, 7411, 7206, 10888, 1384, 12010, 2]
+// Dependencies: [32, 19, 17, 6775, 502, 4823, 6771, 2001, 11859, 6773, 1087, 6776, 21, 4971, 587, 558, 576, 5234, 6905, 10728, 10766, 11883, 10762, 504, 11885, 10742, 10767, 5593, 11886, 11887, 11888, 11892, 11894, 11896, 1128, 3830, 5244, 7708, 11904, 10740, 7411, 7206, 10889, 1384, 12011, 2]
 // Exports: leaveConjurePreviewFrame
 
-// Module 11881 (ConjureNativePreview)
+// Module 11882 (ConjureNativePreview)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -19,11 +19,11 @@ import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
 import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7708 */;
 import conjurePreviewSurface2 from "conjurePreviewSurface" /* 10728 */;
 import ConjurePlatformUtils from "ConjurePlatformUtils" /* 10742 */;
-import leaveFrame from "leaveFrame" /* 10765 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10766 */;
-import useEdgeOnlySwipeExitDefault from "useEdgeOnlySwipeExit" /* 11882 */;
-import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 11885 */;
-import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 11903 */;
+import leaveFrame from "leaveFrame" /* 10766 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10767 */;
+import useEdgeOnlySwipeExitDefault from "useEdgeOnlySwipeExit" /* 11883 */;
+import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 11886 */;
+import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 11904 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -32,7 +32,7 @@ import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import ReadStateStore from "ReadStateStore" /* 6771 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
-import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 11858 */;
+import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 11859 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
@@ -362,7 +362,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewFrame
         const _HermesInternal = HermesInternal;
         const combined = "" + frameSurface + ":" + tmp27;
         const tmp30 = visible(obj3.useState(null), 2);
-        class U {
+        class D {
           constructor() {
             if (null != c6) {
               const obj = ConjurePlatformUtils;
@@ -417,7 +417,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewFrame
         cResult[23] = re;
         cResult[24] = items1;
       }
-      class U {
+      class D {
         constructor() {
           if (null != c6) {
             const obj = ConjurePlatformUtils;
@@ -428,9 +428,9 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewFrame
       const items2 = [undefined, visible];
       cResult[13] = undefined;
       cResult[14] = visible;
-      cResult[15] = U;
+      cResult[15] = D;
       cResult[16] = items2;
-      tmp24 = U;
+      tmp24 = D;
       tmp25 = items2;
     }
     const tmpResult4 = tmp(launch[19]);
@@ -805,7 +805,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
           id = null;
         }
         if (cResult[10] !== id) {
-          class W {
+          class U {
             constructor() {
               if (null != id) {
                 const obj = ChannelActionCreatorsDefault;
@@ -815,12 +815,12 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
           }
           const items2 = [id];
           cResult[10] = id;
-          cResult[11] = W;
+          cResult[11] = U;
           cResult[12] = items2;
           tmp22 = items2;
-          tmp21 = W;
+          tmp21 = U;
         } else {
-          class W {
+          class U {
             constructor() {
               if (null != id) {
                 const obj = ChannelActionCreatorsDefault;
@@ -833,7 +833,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
         const effect1 = obj2.useEffect(tmp21, tmp22);
         const _Symbol = Symbol;
         if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-          class W {
+          class U {
             constructor() {
               if (null != id) {
                 const obj = ChannelActionCreatorsDefault;
@@ -845,7 +845,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
           cResult[13] = items3;
           tmp24 = items3;
         } else {
-          class W {
+          class U {
             constructor() {
               if (null != id) {
                 const obj = ChannelActionCreatorsDefault;
@@ -855,7 +855,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
           }
         }
         if (cResult[14] !== id) {
-          class X {
+          class J {
             constructor() {
               const hasUnreadResult = null != id && ReadStateStore.hasUnread(tmp);
               return hasUnreadResult;
@@ -864,11 +864,11 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
           const items4 = [id];
           cResult[14] = id;
           cResult[15] = items4;
-          cResult[16] = X;
-          tmp26 = X;
+          cResult[16] = J;
+          tmp26 = J;
           tmp25 = items4;
         } else {
-          class X {
+          class J {
             constructor() {
               const hasUnreadResult = null != id && ReadStateStore.hasUnread(tmp);
               return hasUnreadResult;
@@ -880,24 +880,24 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
         const stateFromStores1 = tmpResult3.useStateFromStores(tmp24, tmp26, tmp25);
         const _Symbol2 = Symbol;
         if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-          class X {
+          class J {
             constructor() {
               const hasUnreadResult = null != id && ReadStateStore.hasUnread(tmp);
               return hasUnreadResult;
             }
           }
           const items5 = [AppStateStore];
-          class Y {
+          class Z {
             constructor() {
               return state.getState() === constants.ACTIVE;
             }
           }
           cResult[17] = items5;
-          cResult[18] = Y;
-          tmp29 = Y;
+          cResult[18] = Z;
+          tmp29 = Z;
           tmp28 = items5;
         } else {
-          class X {
+          class J {
             constructor() {
               const hasUnreadResult = null != id && ReadStateStore.hasUnread(tmp);
               return hasUnreadResult;
@@ -908,7 +908,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
         const tmpResult4 = tmp(504);
         const stateFromStores2 = tmpResult4.useStateFromStores(tmp28, tmp29);
         if (cResult[19] === stateFromStores2) {
-          class X {
+          class J {
             constructor() {
               const hasUnreadResult = null != id && ReadStateStore.hasUnread(tmp);
               return hasUnreadResult;
@@ -1111,14 +1111,14 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
   } else {
     const obj6 = { style: tmp.dm, children: items8 };
     const obj7 = { guildId, channelId: stateFromStores.id, chatInputRef: tmp19, screenIndex: "conjure-preview", alwaysRespectKeyboard: true, disableGradient: true };
-    items8 = [closure_22(previewApplicationId(10888), obj7, stateFromStores.id), ];
+    items8 = [closure_22(previewApplicationId(10889), obj7, stateFromStores.id), ];
     let tmp30Result = null;
     const tmp28 = closure_23;
     const tmp29 = id;
     const tmp30 = closure_22;
     const tmp7Result4 = projectId(1384);
     if (tmp7Result4.isAndroid()) {
-      tmp30Result = tmp30(tmp7(12010).PortalKeyboardRenderer, { portal: true });
+      tmp30Result = tmp30(tmp7(12011).PortalKeyboardRenderer, { portal: true });
     }
     items8[1] = tmp30Result;
     tmp28Result = tmp28(tmp29, obj6);
@@ -1194,9 +1194,9 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNati
     const _Symbol2 = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       const intl5 = tmp(1128).intl;
-      const stringResult1 = intl5.string(_modDef3830.xu1I8B);
+      const stringResult1 = intl5.string(_modDef3830.FExK4w);
       const intl6 = tmp(1128).intl;
-      const stringResult2 = intl6.string(_modDef3830["8qJtGr"]);
+      const stringResult2 = intl6.string(_modDef3830["2pDCXO"]);
       cResult[7] = stringResult1;
       cResult[8] = stringResult2;
       tmp28 = stringResult2;
@@ -1345,7 +1345,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNati
     ({ onReviewPermissions: obj9.onPress, loading: obj9.loading } = permissionsGate);
     return authStore5(metroImportDefault, obj2);
   } else if (null != permissionsGate) {
-    const obj4 = { title: intl5.string(_modDef3830.xu1I8B), body: intl6.string(_modDef3830["8qJtGr"]), children: authStore5(Button, obj5) };
+    const obj4 = { title: intl5.string(_modDef3830.FExK4w), body: intl6.string(_modDef3830["2pDCXO"]), children: authStore5(Button, obj5) };
     intl5 = intl9.intl;
     intl6 = intl9.intl;
     obj5 = { variant: "primary", size: "sm", text: intl7.string(_modDef3830["Nub/J6"]), onPress: null, loading: null };

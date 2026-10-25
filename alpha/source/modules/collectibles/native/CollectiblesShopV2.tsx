@@ -1,9 +1,9 @@
-// Module ID: 17186
-// Function ID: 17187
+// Module ID: 17191
+// Function ID: 17192
 // Name: CollectiblesShopV2
-// Dependencies: [32, 19, 17, 5237, 1207, 1392, 7650, 5639, 7682, 1089, 1087, 4820, 21, 4971, 7278, 558, 576, 14764, 17187, 504, 1281, 5599, 10490, 17188, 17190, 17191, 9478, 1384, 9448, 9797, 8667, 9369, 4978, 7253, 1505, 17193, 2065, 17195, 5001, 4807, 2053, 17196, 1267, 7693, 8676, 17197, 17198, 17200, 17201, 17233, 1257, 17236, 17237, 17204, 10575, 9466, 17238, 9360, 6469, 1630, 2]
+// Dependencies: [32, 19, 17, 5237, 1207, 1392, 7650, 5639, 7682, 1089, 1087, 4820, 21, 4971, 7278, 558, 576, 14769, 17192, 504, 1281, 5599, 10490, 17193, 17195, 17196, 9478, 1384, 9448, 9797, 8667, 9369, 4978, 7253, 1505, 17198, 2065, 17200, 5001, 4807, 2053, 17201, 1267, 7693, 8676, 17202, 17203, 17205, 17206, 17238, 1257, 17241, 17242, 17209, 10575, 9466, 17243, 9360, 6469, 1630, 2]
 
-// Module 17186 (CollectiblesShopV2)
+// Module 17191 (CollectiblesShopV2)
 import react2 from "react" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
@@ -19,10 +19,10 @@ import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9
 import ImprovedMobileShopLoadingExperiment from "ImprovedMobileShopLoadingExperiment" /* 9466 */;
 import CollectiblesShopManager2 from "CollectiblesShopManager" /* 9478 */;
 import NativePaymentHooksDefault from "NativePaymentHooks" /* 9797 */;
-import takeWhileDefault from "takeWhile" /* 17193 */;
-import ShopCategory from "ShopCategory" /* 17198 */;
-import ShopNitroUpsellBanner2 from "ShopNitroUpsellBanner" /* 17200 */;
-import CollectiblesShopFeaturedPageDefault from "CollectiblesShopFeaturedPage" /* 17201 */;
+import takeWhileDefault from "takeWhile" /* 17198 */;
+import ShopCategory from "ShopCategory" /* 17203 */;
+import ShopNitroUpsellBanner2 from "ShopNitroUpsellBanner" /* 17205 */;
+import CollectiblesShopFeaturedPageDefault from "CollectiblesShopFeaturedPage" /* 17206 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -52,7 +52,7 @@ let map1;
 let metroRequire;
 let tmp;
 const SentryUtilsDefault = tmp(1257);
-const MobileNitroUpsellInShopFeedExperimentDefault = tmp(17196);
+const MobileNitroUpsellInShopFeedExperimentDefault = tmp(17201);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = react_native);
 const FeedBlockRecord = FeedBlockRecord2.FeedBlockRecord;
 ({ COLLECTIBLES_SHOP_CACHE_DURATION_MS: map1, CollectiblesMobileShopScreen: closure_14, CollectibleShopTab: closure_15, SHOP_ALL_PAGE_SIZE } = CollectiblesShopConstants);
@@ -718,7 +718,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsSourc
       const tmp19 = loadedGoogleSkuIds;
       const tmp20 = require;
       if (closure_31 == null) {
-        GET_NITRO = tmp20(17196).NitroUpsellBannerButtonVariant.GET_NITRO;
+        GET_NITRO = tmp20(17201).NitroUpsellBannerButtonVariant.GET_NITRO;
       }
       tmp19Result = tmp19(ShopNitroUpsellBanner, obj2);
     } else {

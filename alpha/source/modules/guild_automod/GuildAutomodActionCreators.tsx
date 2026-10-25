@@ -1,17 +1,17 @@
-// Module ID: 12811
-// Function ID: 12812
+// Module ID: 12816
+// Function ID: 12817
 // Name: GuildAutomodActionCreators
-// Dependencies: [5, 4877, 4845, 4903, 1087, 12812, 1388, 11, 1297, 12805, 5711, 7627, 584, 2]
+// Dependencies: [5, 4877, 4845, 4903, 1087, 12817, 1388, 11, 1297, 12810, 5711, 7627, 584, 2]
 // Exports: clearMentionRaidDetected, createAutomodRule, deleteAutomodRule, executeAlertAction, fetchAutomodRules, removeMentionRaidRestrictionWithFeedback, updateAutomodRule, validateAutomodRule
 
-// Module 12811 (GuildAutomodActionCreators)
+// Module 12816 (GuildAutomodActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5711 */;
 import AutomodFeedback from "AutomodFeedback" /* 7627 */;
-import DataUtils from "DataUtils" /* 12812 */;
+import DataUtils from "DataUtils" /* 12817 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildRoleStore from "GuildRoleStore" /* 4877 */;
 import GuildStore from "GuildStore" /* 4845 */;

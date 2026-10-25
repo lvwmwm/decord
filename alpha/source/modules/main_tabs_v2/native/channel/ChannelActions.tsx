@@ -1,7 +1,7 @@
 // Module ID: 9711
 // Function ID: 9712
 // Name: ChannelActions
-// Dependencies: [19, 17, 6790, 4827, 4823, 5630, 9712, 1087, 9713, 21, 4971, 558, 576, 9715, 1128, 8542, 9716, 9720, 587, 9722, 8572, 9724, 9725, 9731, 504, 7369, 9732, 9733, 7379, 13995, 7867, 14000, 7146, 13180, 9727, 1384, 5159, 13179, 13239, 11203, 1123, 5151, 11334, 8544, 10875, 14001, 13996, 6662, 14002, 14004, 2]
+// Dependencies: [19, 17, 6790, 4827, 4823, 5630, 9712, 1087, 9713, 21, 4971, 558, 576, 9715, 1128, 8542, 9716, 9720, 587, 9722, 8572, 9724, 9725, 9731, 504, 7369, 9732, 9733, 7379, 14000, 7867, 14005, 7146, 13185, 9727, 1384, 5159, 13184, 13244, 11204, 1123, 5151, 11335, 8544, 10876, 14006, 14001, 6662, 14007, 14009, 2]
 
 // Module 9711 (ChannelActions)
 import react_native from "react-native" /* 17 */;
@@ -16,14 +16,14 @@ import ChannelDetailsStore from "ChannelDetailsStore" /* 9712 */;
 import TrackingConstants from "TrackingConstants" /* 9713 */;
 import openChannelSecondaryViewChatDefault from "openChannelSecondaryViewChat" /* 9716 */;
 import ForumActionCreatorsDefault from "ForumActionCreators" /* 9727 */;
-import showThreadBrowserModalDefault from "showThreadBrowserModal" /* 10875 */;
-import SwipeToMemberListUtils from "SwipeToMemberListUtils" /* 11203 */;
-import useSearchContext from "useSearchContext" /* 13179 */;
-import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 13180 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13239 */;
-import IconActionButtonDefault from "IconActionButton" /* 13996 */;
-import ConversationCoachmark from "ConversationCoachmark" /* 14001 */;
-import PrivateChannelButtonsDefault from "PrivateChannelButtons" /* 14004 */;
+import showThreadBrowserModalDefault from "showThreadBrowserModal" /* 10876 */;
+import SwipeToMemberListUtils from "SwipeToMemberListUtils" /* 11204 */;
+import useSearchContext from "useSearchContext" /* 13184 */;
+import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 13185 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13244 */;
+import IconActionButtonDefault from "IconActionButton" /* 14001 */;
+import ConversationCoachmark from "ConversationCoachmark" /* 14006 */;
+import PrivateChannelButtonsDefault from "PrivateChannelButtons" /* 14009 */;
 import ActiveThreadsStore_mod from "ActiveThreadsStore" /* 6790 */;
 import ChannelRecord from "ChannelRecord" /* 4827 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
@@ -996,7 +996,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelActio
   }
   if (hasForumSearchQuery) {
     const obj3 = { channelId };
-    tmp12 = closure_14(tmp(14002).ForumChannelCloseSearchButton, obj3);
+    tmp12 = closure_14(tmp(14007).ForumChannelCloseSearchButton, obj3);
   } else {
     if (!isDM) {
       if (!isMultiUserDM) {
@@ -1056,7 +1056,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelActio
   const tmp5 = View;
   if (obj2.useHasForumSearchQuery(channelId)) {
     const obj4 = { channelId };
-    tmp4Result = tmp4(tmp(14002).ForumChannelCloseSearchButton, obj4);
+    tmp4Result = tmp4(tmp(14007).ForumChannelCloseSearchButton, obj4);
   } else {
     if (!isDM) {
       if (!isMultiUserDM) {

@@ -1,12 +1,12 @@
-// Module ID: 11887
-// Function ID: 11888
+// Module ID: 11888
+// Function ID: 11889
 // Name: FrameRenderTarget
-// Dependencies: [19, 21, 4971, 558, 576, 11888, 7907, 2]
+// Dependencies: [19, 21, 4971, 558, 576, 11889, 7907, 2]
 
-// Module 11887 (FrameRenderTarget)
+// Module 11888 (FrameRenderTarget)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useFramePoolBorrowDefault from "useFramePoolBorrow" /* 11888 */;
+import useFramePoolBorrowDefault from "useFramePoolBorrow" /* 11889 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

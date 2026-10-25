@@ -1,9 +1,9 @@
-// Module ID: 16599
-// Function ID: 16600
+// Module ID: 16604
+// Function ID: 16605
 // Name: SettingsVoiceScreen
-// Dependencies: [19, 17, 2014, 8332, 1087, 21, 2067, 4971, 558, 576, 5205, 4978, 11631, 11632, 1128, 5669, 5297, 11630, 5234, 11627, 11205, 15973, 2]
+// Dependencies: [19, 17, 2014, 8332, 1087, 21, 2067, 4971, 558, 576, 5205, 4978, 11632, 11633, 1128, 5669, 5297, 11631, 5234, 11628, 11206, 15978, 2]
 
-// Module 16599 (SettingsVoiceScreen)
+// Module 16604 (SettingsVoiceScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
@@ -12,10 +12,10 @@ import shared from "shared" /* 4978 */;
 import useThemeDefault from "useTheme" /* 5205 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import SettingsConstants from "SettingsConstants" /* 8332 */;
-import SettingBuilders from "SettingBuilders" /* 11205 */;
-import NoiseCancellationUtils from "NoiseCancellationUtils" /* 11627 */;
-import KrispLogo2 from "KrispLogo" /* 11630 */;
-import SettingLayoutDefault from "SettingLayout" /* 15973 */;
+import SettingBuilders from "SettingBuilders" /* 11206 */;
+import NoiseCancellationUtils from "NoiseCancellationUtils" /* 11628 */;
+import KrispLogo2 from "KrispLogo" /* 11631 */;
+import SettingLayoutDefault from "SettingLayout" /* 15978 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import Fragment from "Fragment" /* 21 */;
@@ -124,9 +124,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function KrispL
   const tmp6 = useThemeDefault();
   const obj2 = shared;
   if (obj2.isThemeLight(tmp6)) {
-    tmp5Result = tmp5(11631);
-  } else {
     tmp5Result = tmp5(11632);
+  } else {
+    tmp5Result = tmp5(11633);
   }
   ({ krisp, logo } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -198,9 +198,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function KrispL
   const tmp4 = useThemeDefault();
   const obj = shared;
   if (obj.isThemeLight(tmp4)) {
-    tmp2Result = tmp2(11631);
-  } else {
     tmp2Result = tmp2(11632);
+  } else {
+    tmp2Result = tmp2(11633);
   }
   const obj2 = { style: tmp.krisp, children: items };
   const obj3 = { style: tmp.logo, source: tmp2Result, accessibilityLabel: intl.string(intl10.t.vFiCSx) };
@@ -273,7 +273,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsVoic
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { sections: getVoiceSettings() };
-    const createList = tmp(11205).createList;
+    const createList = tmp(11206).createList;
     SettingBuilders;
     const list = createList(obj2);
     cResult[0] = list;

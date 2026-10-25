@@ -1,9 +1,9 @@
-// Module ID: 16090
-// Function ID: 16091
+// Module ID: 16095
+// Function ID: 16096
 // Name: BlockedUserRowV2
-// Dependencies: [19, 1392, 21, 7414, 558, 576, 7253, 1128, 8668, 1202, 16091, 5244, 6903, 504, 2]
+// Dependencies: [19, 1392, 21, 7414, 558, 576, 7253, 1128, 8668, 1202, 16096, 5244, 6903, 504, 2]
 
-// Module 16090 (BlockedUserRowV2)
+// Module 16095 (BlockedUserRowV2)
 import Fragment from "Fragment" /* 21 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7414 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
@@ -129,7 +129,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocked
             tmp20 = tmp22;
           }
         }
-        const tmp16 = jsx(userRecord(16091).RestrictedUserRowLabel, { userRecord, accessibilityActions: tmp13, onAccessibilityAction: tmp7 });
+        const tmp16 = jsx(userRecord(16096).RestrictedUserRowLabel, { userRecord, accessibilityActions: tmp13, onAccessibilityAction: tmp7 });
         cResult[14] = tmp7;
         cResult[15] = tmp13;
         cResult[16] = userRecord;

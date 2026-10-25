@@ -1,9 +1,9 @@
-// Module ID: 18834
-// Function ID: 18835
+// Module ID: 18839
+// Function ID: 18840
 // Name: FileUploadActionComponent
-// Dependencies: [5, 19, 17, 4823, 7631, 1087, 21, 4971, 558, 576, 6379, 6903, 11789, 1128, 6014, 7267, 12168, 6931, 7959, 8595, 38, 504, 12149, 8166, 8150, 18835, 2000, 5908, 8154, 13089, 9665, 10419, 1896, 10418, 8152, 6987, 5977, 587, 2]
+// Dependencies: [5, 19, 17, 4823, 7631, 1087, 21, 4971, 558, 576, 6379, 6903, 11790, 1128, 6014, 7267, 12169, 6931, 7959, 8595, 38, 504, 12150, 8166, 8150, 18840, 2000, 5908, 8154, 13094, 9665, 10419, 1896, 10418, 8152, 6987, 5977, 587, 2]
 
-// Module 18834 (FileUploadActionComponent)
+// Module 18839 (FileUploadActionComponent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
@@ -17,8 +17,8 @@ import DraftStore from "DraftStore" /* 7631 */;
 import IconButton2 from "IconButton" /* 7959 */;
 import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9665 */;
 import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10418 */;
-import FileUpIcon from "FileUpIcon" /* 11789 */;
-import AttachmentPreview from "AttachmentPreview" /* 12168 */;
+import FileUpIcon from "FileUpIcon" /* 11790 */;
+import AttachmentPreview from "AttachmentPreview" /* 12169 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4823 */;

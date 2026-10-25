@@ -1,9 +1,9 @@
-// Module ID: 13433
-// Function ID: 13434
+// Module ID: 13438
+// Function ID: 13439
 // Name: powerupListing
 // Dependencies: [32, 19, 5181, 5182, 5185, 558, 576, 504, 2]
 
-// Module 13433 (powerupListing)
+// Module 13438 (powerupListing)
 import Powerups from "Powerups" /* 5185 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

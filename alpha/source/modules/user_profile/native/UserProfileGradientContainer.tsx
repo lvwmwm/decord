@@ -1,9 +1,9 @@
-// Module ID: 11074
-// Function ID: 11075
+// Module ID: 11075
+// Function ID: 11076
 // Name: UserProfileGradientContainer
 // Dependencies: [19, 21, 558, 576, 8730, 5258, 2]
 
-// Module 11074 (UserProfileGradientContainer)
+// Module 11075 (UserProfileGradientContainer)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import LinearGradientDefault from "LinearGradient" /* 5258 */;

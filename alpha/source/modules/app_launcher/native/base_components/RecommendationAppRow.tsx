@@ -1,9 +1,9 @@
-// Module ID: 12081
-// Function ID: 12082
+// Module ID: 12082
+// Function ID: 12083
 // Name: RecommendationAppRow
-// Dependencies: [19, 21, 558, 576, 1417, 12056, 2]
+// Dependencies: [19, 21, 558, 576, 1417, 12057, 2]
 
-// Module 12081 (RecommendationAppRow)
+// Module 12082 (RecommendationAppRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
@@ -12,7 +12,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const AppLauncherHomeScreen = tmp(12056);
+const AppLauncherHomeScreen = tmp(12057);
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RecommendationAppRow(arg0) {
   let application;

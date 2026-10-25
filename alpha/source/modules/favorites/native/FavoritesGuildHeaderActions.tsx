@@ -1,16 +1,16 @@
-// Module ID: 17575
-// Function ID: 17576
+// Module ID: 17580
+// Function ID: 17581
 // Name: FavoritesGuildHeaderActions
-// Dependencies: [19, 21, 558, 576, 7959, 11149, 17576, 1128, 3412, 2]
+// Dependencies: [19, 21, 558, 576, 7959, 11150, 17581, 1128, 3412, 2]
 
-// Module 17575 (FavoritesGuildHeaderActions)
+// Module 17580 (FavoritesGuildHeaderActions)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef3412 from "module_3412" /* 3412 */;
 import IconButton2 from "IconButton" /* 7959 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11149 */;
-import FavoritesGuildAddActionSheet from "FavoritesGuildAddActionSheet" /* 17576 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11150 */;
+import FavoritesGuildAddActionSheet from "FavoritesGuildAddActionSheet" /* 17581 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

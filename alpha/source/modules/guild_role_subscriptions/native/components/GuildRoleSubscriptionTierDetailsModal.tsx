@@ -1,24 +1,24 @@
-// Module ID: 19310
-// Function ID: 19311
+// Module ID: 19315
+// Function ID: 19316
 // Name: GuildRoleSubscriptionTierDetailsModal
-// Dependencies: [32, 19, 16557, 1087, 21, 558, 576, 15140, 19291, 16579, 16564, 19270, 1128, 9044, 19275, 7008, 7180, 19311, 19276, 2]
+// Dependencies: [32, 19, 16562, 1087, 21, 558, 576, 15145, 19296, 16584, 16569, 19275, 1128, 9044, 19280, 7008, 7180, 19316, 19281, 2]
 
-// Module 19310 (GuildRoleSubscriptionTierDetailsModal)
+// Module 19315 (GuildRoleSubscriptionTierDetailsModal)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl10 from "intl" /* 1128 */;
 import FormHeaderDefault from "FormHeader" /* 9044 */;
-import FormStylesDefault from "FormStyles" /* 15140 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16564 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16579 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 19270 */;
-import FormImagePicker from "FormImagePicker" /* 19275 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 19276 */;
-import EditStateContextProvider from "EditStateContextProvider" /* 19291 */;
-import FormPriceTierDefault from "FormPriceTier" /* 19311 */;
+import FormStylesDefault from "FormStyles" /* 15145 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16569 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16584 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 19275 */;
+import FormImagePicker from "FormImagePicker" /* 19280 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 19281 */;
+import EditStateContextProvider from "EditStateContextProvider" /* 19296 */;
+import FormPriceTierDefault from "FormPriceTier" /* 19316 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16557 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16562 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

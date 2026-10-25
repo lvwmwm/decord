@@ -1,9 +1,9 @@
-// Module ID: 18183
-// Function ID: 18184
+// Module ID: 18188
+// Function ID: 18189
 // Name: ChannelDetailsMoreButton
 // Dependencies: [19, 21, 558, 576, 10691, 1128, 9705, 9699, 9032, 2]
 
-// Module 18183 (ChannelDetailsMoreButton)
+// Module 18188 (ChannelDetailsMoreButton)
 import Fragment from "Fragment" /* 21 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9032 */;
 import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9705 */;

@@ -1,9 +1,9 @@
-// Module ID: 15791
-// Function ID: 15792
+// Module ID: 15796
+// Function ID: 15797
 // Name: EmbeddedActivitiesNativeManager
-// Dependencies: [17, 4823, 5714, 4822, 1087, 1384, 15792, 15793, 1123, 5904, 4892, 1267, 584, 15709, 11390, 5159, 5909, 1128, 5663, 1388, 11460, 2]
+// Dependencies: [17, 4823, 5714, 4822, 1087, 1384, 15797, 15798, 1123, 5904, 4892, 1267, 584, 15714, 11391, 5159, 5909, 1128, 5663, 1388, 11461, 2]
 
-// Module 15791 (EmbeddedActivitiesNativeManager)
+// Module 15796 (EmbeddedActivitiesNativeManager)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
@@ -14,15 +14,15 @@ import ChatInputUtils from "ChatInputUtils" /* 5159 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
 import ThermalUtilsDefault from "ThermalUtils" /* 5904 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5909 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 11390 */;
-import activityWebViewController from "activityWebViewController" /* 11460 */;
-import react_nativeDefault from "react-native" /* 15792 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 11391 */;
+import activityWebViewController from "activityWebViewController" /* 11461 */;
+import react_nativeDefault from "react-native" /* 15797 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
 import Constants from "Constants" /* 1087 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 15793 */;
+import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 15798 */;
 import size from "module_2" /* 2 */;
 
 let basicChannel, currentEmbeddedActivity, rawThermalState;

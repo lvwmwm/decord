@@ -1,9 +1,9 @@
-// Module ID: 16019
-// Function ID: 16020
+// Module ID: 16024
+// Function ID: 16025
 // Name: SettingsAgeGroupResetAlert
 // Dependencies: [5, 21, 558, 576, 1505, 6661, 5910, 5662, 1128, 3090, 5914, 5914, 2]
 
-// Module 16019 (SettingsAgeGroupResetAlert)
+// Module 16024 (SettingsAgeGroupResetAlert)
 import _modDef3090 from "module_3090" /* 3090 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Fragment from "Fragment" /* 21 */;

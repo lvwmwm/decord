@@ -1,10 +1,10 @@
-// Module ID: 18097
-// Function ID: 18098
+// Module ID: 18102
+// Function ID: 18103
 // Name: renderChannelItem
-// Dependencies: [19, 17, 4845, 4913, 1392, 6705, 21, 9018, 1128, 4971, 587, 558, 576, 18098, 504, 6883, 12200, 6789, 18099, 10688, 18101, 5604, 2]
+// Dependencies: [19, 17, 4845, 4913, 1392, 6705, 21, 9018, 1128, 4971, 587, 558, 576, 18103, 504, 6883, 12201, 6789, 18104, 10688, 18106, 5604, 2]
 // Exports: default, getChannelAccessibilityProps
 
-// Module 18097 (renderChannelItem)
+// Module 18102 (renderChannelItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
@@ -13,9 +13,9 @@ import ReadStateConstants from "ReadStateConstants" /* 6705 */;
 import NotificationCenterUtils from "NotificationCenterUtils" /* 6789 */;
 import GuildIconDefault from "GuildIcon" /* 6883 */;
 import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9018 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 18098 */;
-import renderChannelWrapperDefault from "renderChannelWrapper" /* 18099 */;
-import renderChannelContentDefault from "renderChannelContent" /* 18101 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 18103 */;
+import renderChannelWrapperDefault from "renderChannelWrapper" /* 18104 */;
+import renderChannelContentDefault from "renderChannelContent" /* 18106 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4845 */;
 import RelationshipStore from "RelationshipStore" /* 4913 */;
@@ -89,7 +89,7 @@ function LaunchpadChannelIcon(channel) {
       }
       if (cResult[9] !== channel2) {
         const obj3 = { channel: channel2, size: "sm", wrapperSize: 32 };
-        const tmp38 = closure_8(channel(12200).ChannelIcon, obj3);
+        const tmp38 = closure_8(channel(12201).ChannelIcon, obj3);
         cResult[9] = channel2;
         cResult[10] = tmp38;
         tmp36 = tmp38;
@@ -129,7 +129,7 @@ function LaunchpadChannelIcon(channel) {
     obj9 = { guild: stateFromStores1, size: tmp6.icon.guildBadgeIconSize };
     items3 = [closure_8(View, obj8), ];
     const obj10 = { channel, size: "sm", wrapperSize: 32 };
-    items3[1] = closure_8(channel(12200).ChannelIcon, obj10);
+    items3[1] = closure_8(channel(12201).ChannelIcon, obj10);
     tmp14 = closure_10(closure_9, obj7);
   }
   return tmp14;

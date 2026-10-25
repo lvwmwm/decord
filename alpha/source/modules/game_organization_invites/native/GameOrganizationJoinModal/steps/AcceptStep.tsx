@@ -1,10 +1,10 @@
-// Module ID: 12723
-// Function ID: 12724
+// Module ID: 12728
+// Function ID: 12729
 // Name: AcceptStep
-// Dependencies: [5, 32, 19, 17, 12717, 21, 4971, 587, 558, 576, 5669, 5234, 5977, 12719, 1505, 11317, 5663, 1128, 7900, 7901, 2406, 12724, 12722, 6696, 5244, 2]
+// Dependencies: [5, 32, 19, 17, 12722, 21, 4971, 587, 558, 576, 5669, 5234, 5977, 12724, 1505, 11318, 5663, 1128, 7900, 7901, 2406, 12729, 12727, 6696, 5244, 2]
 // Exports: AcceptStep
 
-// Module 12723 (AcceptStep)
+// Module 12728 (AcceptStep)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,12 +12,12 @@ import _modDef2406 from "module_2406" /* 2406 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import Stack_Stack from "Stack/Stack" /* 5977 */;
-import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12719 */;
-import GameOrganizationLinkedServerCardDefault from "GameOrganizationLinkedServerCard" /* 12724 */;
+import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12724 */;
+import GameOrganizationLinkedServerCardDefault from "GameOrganizationLinkedServerCard" /* 12729 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12717 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12722 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -288,7 +288,7 @@ export const AcceptStep = function AcceptStep(code) {
     items1[1] = closure_10(Stack, obj9);
     items4 = [tmp11(ModalContent, obj6), ];
     const obj14 = { children: closure_10(ButtonGroup, obj15) };
-    const ModalFooter = tmp5(12722).ModalFooter;
+    const ModalFooter = tmp5(12727).ModalFooter;
     obj15 = { children: items5 };
     ButtonGroup = tmp5(6696).ButtonGroup;
     const obj16 = {

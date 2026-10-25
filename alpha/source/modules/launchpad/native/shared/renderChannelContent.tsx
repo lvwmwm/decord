@@ -1,10 +1,10 @@
-// Module ID: 18101
-// Function ID: 18102
+// Module ID: 18106
+// Function ID: 18107
 // Name: renderChannelContent
-// Dependencies: [19, 17, 12059, 6705, 21, 4971, 1384, 558, 576, 18098, 7202, 18102, 5234, 8566, 7957, 17552, 2]
+// Dependencies: [19, 17, 12060, 6705, 21, 4971, 1384, 558, 576, 18103, 7202, 18107, 5234, 8566, 7957, 17557, 2]
 // Exports: default
 
-// Module 18101 (renderChannelContent)
+// Module 18106 (renderChannelContent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Text_Text from "Text/Text" /* 5234 */;
@@ -12,10 +12,10 @@ import ReadStateConstants from "ReadStateConstants" /* 6705 */;
 import isRoleRequiredDefault from "isRoleRequired" /* 7202 */;
 import WarningIcon from "WarningIcon" /* 7957 */;
 import LockIcon from "LockIcon" /* 8566 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12059 */;
-import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 17552 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 18098 */;
-import ChannelTitleDefault from "ChannelTitle" /* 18102 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12060 */;
+import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 17557 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 18103 */;
+import ChannelTitleDefault from "ChannelTitle" /* 18107 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
@@ -535,7 +535,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
       const obj12 = { locked: needSubscriptionToAccess, isInMainTabsExperiment: true };
-      isSubscriptionGated = tmp9(tmp2(17552), obj12);
+      isSubscriptionGated = tmp9(tmp2(17557), obj12);
     }
     items3[2] = isSubscriptionGated;
     tmp11Result = tmp11(tmp10, obj8);

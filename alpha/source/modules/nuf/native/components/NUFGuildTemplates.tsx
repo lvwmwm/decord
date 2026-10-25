@@ -1,9 +1,9 @@
-// Module ID: 13606
-// Function ID: 13607
+// Module ID: 13611
+// Function ID: 13612
 // Name: NUFGuildTemplates
-// Dependencies: [5, 19, 17, 5006, 1087, 13607, 7073, 21, 6830, 13390, 11168, 13608, 13687, 1267, 1275, 6924, 13582, 1114, 13610, 13639, 13213, 1128, 13653, 13654, 13688, 13666, 558, 576, 7095, 2]
+// Dependencies: [5, 19, 17, 5006, 1087, 13612, 7073, 21, 6830, 13395, 11169, 13613, 13692, 1267, 1275, 6924, 13587, 1114, 13615, 13644, 13218, 1128, 13658, 13659, 13693, 13671, 558, 576, 7095, 2]
 
-// Module 13606 (NUFGuildTemplates)
+// Module 13611 (NUFGuildTemplates)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -13,14 +13,14 @@ import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 127
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6830 */;
 import NavigatorHeader from "NavigatorHeader" /* 6924 */;
 import Navigator2 from "Navigator" /* 7095 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 13582 */;
-import create_guild_CreateGuildConstants from "create_guild/CreateGuildConstants" /* 13607 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13608 */;
-import GuildTemplatesDefault from "GuildTemplates" /* 13610 */;
-import CreationIntentDefault from "CreationIntent" /* 13639 */;
-import components_JoinServerDefault from "components/JoinServer" /* 13653 */;
-import AcceptInviteContainerDefault from "AcceptInviteContainer" /* 13654 */;
-import HubEmailConnectionModalDefault from "HubEmailConnectionModal" /* 13666 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 13587 */;
+import create_guild_CreateGuildConstants from "create_guild/CreateGuildConstants" /* 13612 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13613 */;
+import GuildTemplatesDefault from "GuildTemplates" /* 13615 */;
+import CreationIntentDefault from "CreationIntent" /* 13644 */;
+import components_JoinServerDefault from "components/JoinServer" /* 13658 */;
+import AcceptInviteContainerDefault from "AcceptInviteContainer" /* 13659 */;
+import HubEmailConnectionModalDefault from "HubEmailConnectionModal" /* 13671 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import DefaultRouteStore from "DefaultRouteStore" /* 5006 */;

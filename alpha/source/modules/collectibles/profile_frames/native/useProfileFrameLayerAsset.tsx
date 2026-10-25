@@ -18,7 +18,7 @@ let _Promise, c4, c5, importDefault, nextPromise, num2;
 
 let metroImportDefault;
 let metroRequire;
-const f101406 = (arg0) => {
+const f101422 = (arg0) => {
   closure_0 = arg0;
   size = size.getSize(closure_0, (arg0, arg1) => {
     if (arg0 > 0) {
@@ -45,7 +45,7 @@ function measureProfileFrameLayer(arg0) {
     if (null == value2) {
       const self = this;
       const self2 = this;
-      const promise = new Promise(f101406);
+      const promise = new Promise(f101422);
       const cleanupPromise = promise.finally(() => set.delete(closure_0));
       const result = obj.set(arg0, cleanupPromise);
       value2 = cleanupPromise;
@@ -255,7 +255,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileFr
             if (null == resolved) {
               const self = this;
               const self2 = this;
-              const promise = new Promise(f101406);
+              const promise = new Promise(f101422);
               const cleanupPromise = promise.finally(() => set.delete(closure_0));
               const result = obj.set(tmp, cleanupPromise);
               resolved = cleanupPromise;
@@ -325,7 +325,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileFr
             if (null == resolved) {
               const self = this;
               const self2 = this;
-              const promise = new Promise(f101406);
+              const promise = new Promise(f101422);
               const cleanupPromise = promise.finally(() => set.delete(closure_0));
               let result = obj.set(tmp, cleanupPromise);
               resolved = cleanupPromise;

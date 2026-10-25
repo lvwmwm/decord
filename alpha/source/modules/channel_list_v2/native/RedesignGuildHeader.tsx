@@ -1,9 +1,9 @@
-// Module ID: 17555
-// Function ID: 17556
+// Module ID: 17560
+// Function ID: 17561
 // Name: RedesignGuildHeader
-// Dependencies: [19, 17, 4972, 5211, 12059, 1087, 21, 558, 576, 9709, 5205, 4978, 5253, 17556, 4848, 17526, 11056, 5252, 587, 5250, 12070, 4971, 5052, 10625, 5053, 17557, 1499, 504, 1506, 5247, 5248, 15150, 1417, 5669, 17601, 2]
+// Dependencies: [19, 17, 4972, 5211, 12060, 1087, 21, 558, 576, 9709, 5205, 4978, 5253, 17561, 4848, 17531, 11057, 5252, 587, 5250, 12071, 4971, 5052, 10625, 5053, 17562, 1499, 504, 1506, 5247, 5248, 15155, 1417, 5669, 17606, 2]
 
-// Module 17555 (RedesignGuildHeader)
+// Module 17560 (RedesignGuildHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -18,17 +18,17 @@ import useToken from "useToken" /* 5252 */;
 import useFontScale from "useFontScale" /* 5253 */;
 import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9709 */;
 import ThemedGradientDefault from "ThemedGradient" /* 10625 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11056 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12070 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 15150 */;
-import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 17526 */;
-import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 17556 */;
-import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 17557 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11057 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12071 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 15155 */;
+import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 17531 */;
+import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 17561 */;
+import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 17562 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4972 */;
 import ActionSheetStore from "ActionSheetStore" /* 5211 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12059 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12060 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import createStyles_mod from "createStyles" /* 4971 */;
@@ -455,7 +455,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildI
   fn.__workletHash = 10484004701424;
   fn.__initData = __initData3;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  let obj2 = ReanimatedRexport;
+  const obj2 = ReanimatedRexport;
   const fn2 = function c() {
     let items;
     const obj = { transform: items };
@@ -467,12 +467,12 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildI
   fn2.__workletHash = 3877270083017;
   fn2.__initData = __initData4;
   const animatedStyle1 = obj2.useAnimatedStyle(fn2);
-  let obj3 = FavoritesUtils;
+  const obj3 = FavoritesUtils;
   const isFavoritesGuildIdResult = obj3.isFavoritesGuildId(guild.id);
-  let obj4 = { style: items, children: items1 };
+  const obj4 = { style: items, children: items1 };
   items = [animatedStyle, { overflow: "hidden" }];
-  const tmp5 = REAWorkaroundViewDefault;
   const obj5 = { style: animatedStyle1, children: map1(ThemedGradientDefault, { absolute: true, tall: true }) };
+  const tmp5 = REAWorkaroundViewDefault;
   const tmp6 = REAWorkaroundViewDefault;
   items1 = [map1(tmp6, obj5), ];
   const obj6 = { style: tmp.headerWrapper, children: map1(ChannelListStickyHeaderDefault, obj7) };

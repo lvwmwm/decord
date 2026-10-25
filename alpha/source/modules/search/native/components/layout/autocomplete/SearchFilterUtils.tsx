@@ -1,23 +1,23 @@
-// Module ID: 18061
-// Function ID: 18062
+// Module ID: 18066
+// Function ID: 18067
 // Name: SearchFilterUtils
-// Dependencies: [9714, 9713, 1087, 1128, 11837, 10423, 15079, 8561, 9047, 18062, 12237, 11796, 13226, 13243, 13218, 5210, 8933, 2002, 13239, 2]
+// Dependencies: [9714, 9713, 1087, 1128, 11838, 10423, 15084, 8561, 9047, 18067, 12238, 11797, 13231, 13248, 13223, 5210, 8933, 2002, 13244, 2]
 // Exports: getSearchFilterSuggestions, getSearchTokenIcon, getSearchTokenLabel, getSearchTokenPressHandler, getSearchTokenSubLabel
 
-// Module 18061 (SearchFilterUtils)
+// Module 18066 (SearchFilterUtils)
 import intl10 from "intl" /* 1128 */;
 import AtIcon from "AtIcon" /* 8561 */;
 import CalendarIcon from "CalendarIcon" /* 9047 */;
 import TrackingConstants from "TrackingConstants" /* 9713 */;
 import AttachmentIcon from "AttachmentIcon" /* 10423 */;
-import RobotIcon from "RobotIcon" /* 11796 */;
-import UserIcon from "UserIcon" /* 11837 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 12237 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 13218 */;
-import SearchTokens from "SearchTokens" /* 13226 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13243 */;
-import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 15079 */;
-import CalendarMinusIcon from "CalendarMinusIcon" /* 18062 */;
+import RobotIcon from "RobotIcon" /* 11797 */;
+import UserIcon from "UserIcon" /* 11838 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 12238 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 13223 */;
+import SearchTokens from "SearchTokens" /* 13231 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13248 */;
+import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 15084 */;
+import CalendarMinusIcon from "CalendarMinusIcon" /* 18067 */;
 import SearchConstants from "SearchConstants" /* 9714 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
@@ -247,7 +247,7 @@ export const getSearchTokenPressHandler = function getSearchTokenPressHandler(se
 export const getSearchFilterSuggestions = function getSearchFilterSuggestions(textInputValue) {
   let closure_0 = textInputValue;
   const items = [];
-  const keys = Object.keys(items(13226));
+  const keys = Object.keys(items(13231));
   const item = keys.forEach(function(token) {
     const obj = SearchTokens;
     if (obj.isSearchFilterTokenType(token)) {

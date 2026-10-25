@@ -1,9 +1,9 @@
-// Module ID: 15420
-// Function ID: 15421
+// Module ID: 15425
+// Function ID: 15426
 // Name: void/Badge/Badge
 // Dependencies: [19, 17, 2068, 1087, 1204, 21, 4971, 587, 1384, 558, 576, 4978, 504, 5234, 1903, 8966, 2]
 
-// Module 15420 (void/Badge/Badge)
+// Module 15425 (void/Badge/Badge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;

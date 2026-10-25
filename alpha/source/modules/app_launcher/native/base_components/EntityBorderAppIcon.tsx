@@ -1,9 +1,9 @@
-// Module ID: 12033
-// Function ID: 12034
+// Module ID: 12034
+// Function ID: 12035
 // Name: EntityBorderAppIcon
 // Dependencies: [17, 21, 587, 4971, 558, 576, 5669, 2]
 
-// Module 12033 (EntityBorderAppIcon)
+// Module 12034 (EntityBorderAppIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;

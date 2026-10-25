@@ -1,19 +1,19 @@
-// Module ID: 18325
-// Function ID: 18326
+// Module ID: 18330
+// Function ID: 18331
 // Name: MessageRequestsScreenWithTabs
-// Dependencies: [32, 19, 17, 21, 4971, 587, 558, 576, 1128, 18326, 18342, 8901, 9146, 11144, 12850, 2]
+// Dependencies: [32, 19, 17, 21, 4971, 587, 558, 576, 1128, 18331, 18347, 8901, 9146, 11145, 12855, 2]
 
-// Module 18325 (MessageRequestsScreenWithTabs)
+// Module 18330 (MessageRequestsScreenWithTabs)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import SegmentedControlState from "SegmentedControlState" /* 8901 */;
 import SegmentedControl from "SegmentedControl" /* 9146 */;
-import SegmentedControlPages from "SegmentedControlPages" /* 11144 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12850 */;
-import MessageRequestListDefault from "MessageRequestList" /* 18326 */;
-import SpamMessageListDefault from "SpamMessageList" /* 18342 */;
+import SegmentedControlPages from "SegmentedControlPages" /* 11145 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12855 */;
+import MessageRequestListDefault from "MessageRequestList" /* 18331 */;
+import SpamMessageListDefault from "SpamMessageList" /* 18347 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -210,9 +210,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let items2;
   navigation = navigation.navigation;
   closure_1 = undefined;
-  let tmp = closure_9();
+  const tmp = closure_9();
   [first, closure_1] = react.useState(0);
-  let items = [navigation];
+  const items = [navigation];
   const callback = react.useCallback((channelId) => {
     const obj = { channelId };
     return navigation.push("preview", obj);
@@ -220,24 +220,25 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const callback1 = react.useCallback((nativeEvent) => {
     closure_1(nativeEvent.nativeEvent.layout.width);
   }, []);
-  let tmp6 = SegmentedControlState;
   let obj = { items: items1, pageWidth: first, defaultIndex: 0 };
-  let obj2 = { label: intl.string(intl3.t["7RFcXZ"]), id: constants.REQUEST, page: metroRequire(MessageRequestListDefault, { goToMessageRequestPreview: callback }) };
-  const useSegmentedControlState = tmp6.useSegmentedControlState;
+  const obj2 = { label: intl.string(intl3.t["7RFcXZ"]), id: constants.REQUEST, page: metroRequire(MessageRequestListDefault, { goToMessageRequestPreview: callback }) };
+  const useSegmentedControlState = SegmentedControlState.useSegmentedControlState;
+  SegmentedControlState;
   intl = intl3.intl;
   items1 = [obj2, ];
-  let obj3 = { label: intl2.string(intl3.t.ulKXHp), id: constants.SPAM, page: metroRequire(SpamMessageListDefault, { goToMessageRequestPreview: callback }) };
+  const obj3 = { label: intl2.string(intl3.t.ulKXHp), id: constants.SPAM, page: metroRequire(SpamMessageListDefault, { goToMessageRequestPreview: callback }) };
   intl2 = intl3.intl;
   items1[1] = obj3;
   const segmentedControlState = useSegmentedControlState(obj);
-  let obj4 = { style: tmp.container, children: items2 };
-  let obj5 = { style: tmp.tabContainer, onLayout: callback1, children: metroRequire(SegmentedControl.SegmentedControl, { state: segmentedControlState }) };
-  items2 = [metroRequire(View, obj5), , ];
-  let obj6 = { style: tmp.messageRequestContent, children: metroRequire(SegmentedControlPages.SegmentedControlPages, { state: segmentedControlState }) };
+  const obj4 = { style: tmp.container, children: items2 };
+  items2 = [, , ];
+  const obj5 = { style: tmp.tabContainer, onLayout: callback1, children: metroRequire(SegmentedControl.SegmentedControl, { state: segmentedControlState }) };
+  items2[0] = metroRequire(View, obj5);
+  const obj6 = { style: tmp.messageRequestContent, children: metroRequire(SegmentedControlPages.SegmentedControlPages, { state: segmentedControlState }) };
   items2[1] = metroRequire(View, obj6);
   items2[2] = metroRequire(TTIFirstContentfulPaint.TTIFirstContentfulPaint, { label: "message_requests" });
   return metroImportDefault(View, obj4);
 }));
-let result = size.fileFinishedImporting("modules/main_tabs_v2/native/message_requests/screens/MessageRequestsScreenWithTabs.tsx");
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/message_requests/screens/MessageRequestsScreenWithTabs.tsx");
 
 export default memoResult;

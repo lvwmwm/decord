@@ -1,9 +1,9 @@
-// Module ID: 18583
-// Function ID: 18584
+// Module ID: 18588
+// Function ID: 18589
 // Name: VoicePanelGamesSection
-// Dependencies: [19, 21, 558, 576, 7406, 9245, 9246, 1128, 14175, 6903, 18584, 9164, 2]
+// Dependencies: [19, 21, 558, 576, 7406, 9245, 9246, 1128, 14180, 6903, 18589, 9164, 2]
 
-// Module 18583 (VoicePanelGamesSection)
+// Module 18588 (VoicePanelGamesSection)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
@@ -11,13 +11,13 @@ import useGame from "useGame" /* 7406 */;
 import FormComponents from "FormComponents" /* 9164 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9245 */;
 import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9246 */;
-import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 18584 */;
+import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 18589 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp5;
-const GameActivityIconDefault = tmp5(14175);
+const GameActivityIconDefault = tmp5(14180);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameRow(gameId) {

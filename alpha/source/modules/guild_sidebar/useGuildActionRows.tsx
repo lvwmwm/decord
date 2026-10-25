@@ -1,16 +1,16 @@
-// Module ID: 17687
-// Function ID: 17688
+// Module ID: 17692
+// Function ID: 17693
 // Name: useGuildActionRows
-// Dependencies: [32, 7325, 7643, 1087, 558, 576, 13262, 7364, 7350, 7362, 7330, 7324, 573, 7345, 7326, 13168, 17688, 17691, 7365, 7328, 13430, 17649, 7367, 5200, 17692, 4807, 7496, 2]
+// Dependencies: [32, 7325, 7643, 1087, 558, 576, 13267, 7364, 7350, 7362, 7330, 7324, 573, 7345, 7326, 13173, 17693, 17696, 7365, 7328, 13435, 17654, 7367, 5200, 17697, 4807, 7496, 2]
 
-// Module 17687 (useGuildActionRows)
+// Module 17692 (useGuildActionRows)
 import Constants from "Constants" /* 1087 */;
 import useIsNewMemberDefault from "useIsNewMember" /* 7326 */;
 import GuildSidebarConstants from "GuildSidebarConstants" /* 7643 */;
-import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 13262 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13430 */;
-import useTotalPossibleBoostCountDefault from "useTotalPossibleBoostCount" /* 17649 */;
-import useIsEligibleForServerOnboardingSetupProgressDefault from "useIsEligibleForServerOnboardingSetupProgress" /* 17688 */;
+import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 13267 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13435 */;
+import useTotalPossibleBoostCountDefault from "useTotalPossibleBoostCount" /* 17654 */;
+import useIsEligibleForServerOnboardingSetupProgressDefault from "useIsEligibleForServerOnboardingSetupProgress" /* 17693 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7325 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

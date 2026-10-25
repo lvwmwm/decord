@@ -1,12 +1,12 @@
-// Module ID: 16020
-// Function ID: 16021
+// Module ID: 16025
+// Function ID: 16026
 // Name: AgeGroupConfirmAccountStatusSetting
-// Dependencies: [8332, 11205, 16015, 2]
+// Dependencies: [8332, 11206, 16020, 2]
 
-// Module 16020 (AgeGroupConfirmAccountStatusSetting)
+// Module 16025 (AgeGroupConfirmAccountStatusSetting)
 import SettingsConstants from "SettingsConstants" /* 8332 */;
-import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 16015 */;
-import SettingBuilders from "SettingBuilders" /* 11205 */;
+import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 16020 */;
+import SettingBuilders from "SettingBuilders" /* 11206 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

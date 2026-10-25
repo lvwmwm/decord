@@ -1,9 +1,9 @@
-// Module ID: 19144
-// Function ID: 19145
+// Module ID: 19149
+// Function ID: 19150
 // Name: GuildSettingsModalTemplate
-// Dependencies: [5, 32, 19, 17, 21, 4971, 587, 558, 576, 19145, 5234, 1128, 8951, 7134, 1505, 5914, 12732, 6374, 6924, 7485, 7008, 7180, 5244, 5977, 5592, 6905, 7267, 7018, 19146, 7285, 5662, 5682, 7009, 8913, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4971, 587, 558, 576, 19150, 5234, 1128, 8951, 7134, 1505, 5914, 12737, 6374, 6924, 7485, 7008, 7180, 5244, 5977, 5592, 6905, 7267, 7018, 19151, 7285, 5662, 5682, 7009, 8913, 2]
 
-// Module 19144 (GuildSettingsModalTemplate)
+// Module 19149 (GuildSettingsModalTemplate)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -20,8 +20,8 @@ import ClipboardUtils from "ClipboardUtils" /* 7285 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7485 */;
 import native from "native" /* 8913 */;
 import Form3 from "Form" /* 8951 */;
-import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 12732 */;
-import GuildTemplateSettingsUtils from "GuildTemplateSettingsUtils" /* 19145 */;
+import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 12737 */;
+import GuildTemplateSettingsUtils from "GuildTemplateSettingsUtils" /* 19150 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -2178,7 +2178,7 @@ let closure_16 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   };
   [first, _slicedToArray] = react.useState(false);
   const tmp3 = dependencyMap;
-  const tmp4 = guildTemplate(19146)(guildTemplate.code);
+  const tmp4 = guildTemplate(19151)(guildTemplate.code);
   react = tmp4;
   obj = { spacing: guildTemplate(587).space.PX_12, children: items };
   const Stack = Stack_Stack.Stack;

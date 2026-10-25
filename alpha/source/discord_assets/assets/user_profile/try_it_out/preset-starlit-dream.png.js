@@ -1,8 +1,8 @@
-// Module ID: 15921
-// Function ID: 15922
+// Module ID: 15926
+// Function ID: 15927
 // Dependencies: [2]
 
-// Module 15921
+// Module 15926
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/user_profile/try_it_out/preset-starlit-dream.png.js");

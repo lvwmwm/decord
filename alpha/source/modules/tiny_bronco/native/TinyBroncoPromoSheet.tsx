@@ -1,9 +1,9 @@
-// Module ID: 16005
-// Function ID: 16006
+// Module ID: 16010
+// Function ID: 16011
 // Name: TinyBroncoPromoSheet
-// Dependencies: [19, 6665, 1087, 4820, 21, 4971, 587, 558, 576, 6654, 16006, 5210, 16004, 7883, 6657, 2067, 7490, 1128, 3122, 5669, 16007, 5244, 6696, 10852, 2]
+// Dependencies: [19, 6665, 1087, 4820, 21, 4971, 587, 558, 576, 6654, 16011, 5210, 16009, 7883, 6657, 2067, 7490, 1128, 3122, 5669, 16012, 5244, 6696, 10853, 2]
 
-// Module 16005 (TinyBroncoPromoSheet)
+// Module 16010 (TinyBroncoPromoSheet)
 import nativeDefault from "native" /* 587 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
 import _modDef3122 from "module_3122" /* 3122 */;
@@ -13,7 +13,7 @@ import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 665
 import TinyBroncoConstants from "TinyBroncoConstants" /* 6665 */;
 import openUserSettings from "openUserSettings" /* 7490 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7883 */;
-import openTinyBroncoPromoSheet from "openTinyBroncoPromoSheet" /* 16004 */;
+import openTinyBroncoPromoSheet from "openTinyBroncoPromoSheet" /* 16009 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
@@ -42,7 +42,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TinyBronco
   closure_10();
   let obj2 = dismissOnce(6654);
   const isVerifiedTeen = obj2.useIsVerifiedTeen();
-  let obj3 = dismissOnce(16006);
+  let obj3 = dismissOnce(16011);
   const tmp = dismissOnce;
   dismissOnce = obj3.useDismissOnce(markAsDismissed);
   if (cResult[0] !== dismissOnce) {
@@ -236,7 +236,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TinyBronco
   const tmp = closure_10();
   let obj = dismissOnce(6654);
   const isVerifiedTeen = obj.useIsVerifiedTeen();
-  let obj2 = dismissOnce(16006);
+  let obj2 = dismissOnce(16011);
   dismissOnce = obj2.useDismissOnce(markAsDismissed);
   const items = [dismissOnce];
   const items1 = [dismissOnce];
@@ -296,8 +296,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TinyBronco
     tmp15 = obj3;
   }
   const obj4 = { illustration: closure_8(tmp14Result, obj5), title: intl2.string(tmp14(3122).GdTVPF), description: formatResult, onDismiss: callback, actions: closure_9(ButtonGroup, obj8) };
-  const PromoSheet = tmp2(10852).PromoSheet;
-  obj5 = { source: tmp14(16007), style: tmp.illustration, resizeMode: "contain" };
+  const PromoSheet = tmp2(10853).PromoSheet;
+  obj5 = { source: tmp14(16012), style: tmp.illustration, resizeMode: "contain" };
   tmp14Result = tmp14(5669);
   intl2 = tmp2(1128).intl;
   const intl3 = tmp2(1128).intl;

@@ -1,9 +1,9 @@
-// Module ID: 18019
-// Function ID: 18020
+// Module ID: 18024
+// Function ID: 18025
 // Name: GuildSettingsModalMembers
-// Dependencies: [109, 32, 19, 17, 502, 5194, 4883, 4877, 4845, 4903, 1392, 9006, 1087, 21, 9067, 4971, 587, 558, 576, 1505, 10834, 5989, 5025, 1128, 10829, 1633, 504, 7365, 18020, 8972, 9761, 18021, 7485, 9032, 6830, 9005, 11, 4980, 7145, 7220, 1202, 8723, 5592, 2]
+// Dependencies: [109, 32, 19, 17, 502, 5194, 4883, 4877, 4845, 4903, 1392, 9006, 1087, 21, 9067, 4971, 587, 558, 576, 1505, 10835, 5989, 5025, 1128, 10830, 1633, 504, 7365, 18025, 8972, 9761, 18026, 7485, 9032, 6830, 9005, 11, 4980, 7145, 7220, 1202, 8723, 5592, 2]
 
-// Module 18019 (GuildSettingsModalMembers)
+// Module 18024 (GuildSettingsModalMembers)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -13,7 +13,7 @@ import GuildActionCreatorsDefault from "GuildActionCreators" /* 6830 */;
 import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7365 */;
 import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8972 */;
 import _mod9067 from "module_9067" /* 9067 */;
-import RolePillDefault from "RolePill" /* 10834 */;
+import RolePillDefault from "RolePill" /* 10835 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -340,7 +340,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
       end
     };
     tmp12Result = null;
-    const tmp14 = guildMember(10829);
+    const tmp14 = guildMember(10830);
     if (mapped.length > 0) {
       const obj5 = { style: tmp.roleList, pointerEvents: "none", children: mapped };
       tmp12Result = tmp12(View, obj5);
@@ -766,7 +766,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let obj10;
   let obj12;
   let tmp33Result;
-  const f133312 = () => {
+  const f133339 = () => {
     const tmp = new _modDef9067((arg0) => {
       closure_1_10(arg0);
       closure_1_14(false);
@@ -837,9 +837,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp16 = stateFromStores(stateFromStores1.useState(false), 2);
   first2 = tmp16[0];
   closure_14 = tmp16[1];
-  first3 = stateFromStores(stateFromStores1.useState(f133312), 2)[0];
+  first3 = stateFromStores(stateFromStores1.useState(f133339), 2)[0];
   const items8 = [guildId, stateFromStoresArray, first, stateFromStores1, first1];
-  const tmp18 = stateFromStores(stateFromStores1.useState(f133312), 2);
+  const tmp18 = stateFromStores(stateFromStores1.useState(f133339), 2);
   const memo = stateFromStores1.useMemo(() => {
     function guildRoleIsFiltered(roles) {
       let tmp2 = null != stateFromStores1;

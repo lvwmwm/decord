@@ -1,15 +1,15 @@
-// Module ID: 18658
-// Function ID: 18659
+// Module ID: 18663
+// Function ID: 18664
 // Name: MediaPlaybackPanelController
-// Dependencies: [32, 19, 4972, 4822, 6804, 15798, 5609, 10898, 21, 5052, 1633, 18447, 558, 576, 15797, 504, 18659, 2]
+// Dependencies: [32, 19, 4972, 4822, 6804, 15803, 5609, 10899, 21, 5052, 1633, 18452, 558, 576, 15802, 504, 18664, 2]
 
-// Module 18658 (MediaPlaybackPanelController)
+// Module 18663 (MediaPlaybackPanelController)
 import Fragment from "Fragment" /* 21 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5609 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 10898 */;
-import MediaPlayerManagerDefault from "MediaPlayerManager" /* 15797 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15798 */;
-import MediaPlaybackPanelStateContextDefault from "MediaPlaybackPanelStateContext" /* 18659 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 10899 */;
+import MediaPlayerManagerDefault from "MediaPlayerManager" /* 15802 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15803 */;
+import MediaPlaybackPanelStateContextDefault from "MediaPlaybackPanelStateContext" /* 18664 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4972 */;
@@ -64,7 +64,7 @@ function useCoreState() {
   const obj7 = sharedValue(5052);
   const derivedValue = obj7.useDerivedValue(fn);
   const tmp9 = sharedValue3(1633)();
-  const tmp10 = sharedValue3(18447)(tmp9);
+  const tmp10 = sharedValue3(18452)(tmp9);
   const obj9 = sharedValue(5052);
   const sharedValue6 = obj9.useSharedValue(false);
   const obj10 = sharedValue(5052);

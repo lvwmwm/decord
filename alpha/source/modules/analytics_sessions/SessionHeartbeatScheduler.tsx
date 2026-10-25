@@ -145,7 +145,7 @@ function isActive() {
   return items.length > 0;
 }
 function scheduleHeartbeatTracking() {
-  const f144988 = () => {
+  const f145014 = () => {
     trackHeartbeat();
     obj = {
       type: "interval",
@@ -181,8 +181,8 @@ function scheduleHeartbeatTracking() {
       SentryUtilsDefault;
       addBreadcrumb(obj3);
       const _setTimeout = setTimeout;
-      user = { type: "timeout", id: setTimeout(f144988, num) };
-      const obj4 = { type: "timeout", id: setTimeout(f144988, num) };
+      user = { type: "timeout", id: setTimeout(f145014, num) };
+      const obj4 = { type: "timeout", id: setTimeout(f145014, num) };
     }
   } else {
     let flag = false;

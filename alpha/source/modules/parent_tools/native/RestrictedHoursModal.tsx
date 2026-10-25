@@ -1,17 +1,17 @@
-// Module ID: 18722
-// Function ID: 18723
+// Module ID: 18727
+// Function ID: 18728
 // Name: RestrictedHoursModal
-// Dependencies: [32, 19, 17, 1392, 21, 4971, 587, 558, 576, 6880, 1633, 18723, 504, 5052, 5206, 1128, 2536, 18724, 5669, 5133, 5234, 7900, 7095, 18725, 6668, 18721, 5972, 11146, 2]
+// Dependencies: [32, 19, 17, 1392, 21, 4971, 587, 558, 576, 6880, 1633, 18728, 504, 5052, 5206, 1128, 2536, 18729, 5669, 5133, 5234, 7900, 7095, 18730, 6668, 18726, 5972, 11147, 2]
 
-// Module 18722 (RestrictedHoursModal)
+// Module 18727 (RestrictedHoursModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
 import timing from "timing" /* 5206 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6668 */;
-import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 18721 */;
-import useIsInRestrictedHoursDefault from "useIsInRestrictedHours" /* 18725 */;
+import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 18726 */;
+import useIsInRestrictedHoursDefault from "useIsInRestrictedHours" /* 18730 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -966,7 +966,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedHo
       }
     }
     const obj3 = { screens: tmp12, initialRouteName: constants.MAIN };
-    const tmp20 = closure_7(tmp(11146).Modal, obj3);
+    const tmp20 = closure_7(tmp(11147).Modal, obj3);
     cResult[7] = tmp12;
     cResult[8] = tmp20;
     tmp18 = tmp20;

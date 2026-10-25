@@ -1,18 +1,9 @@
 // Module ID: 15592
 // Function ID: 15593
-// Dependencies: [15565]
+// Dependencies: [15593]
 
 // Module 15592
-import _mod15565 from "module_15565" /* 15565 */;
+import _mod15593 from "module_15593" /* 15593 */;
 
 
-export default function(arg0) {
-  if (_mod15565(arg0)) {
-    return arg0;
-  } else {
-    const self = this;
-    const self2 = this;
-    const tmp3 = new TypeError(String(arg0) + " is not an object");
-    throw tmp3;
-  }
-};
+export default (arg0) => _mod15593(arg0.length);

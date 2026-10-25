@@ -1,20 +1,20 @@
-// Module ID: 18540
-// Function ID: 18541
+// Module ID: 18545
+// Function ID: 18546
 // Name: useSpeakerTooltips
-// Dependencies: [32, 19, 18538, 10895, 4820, 21, 18541, 18505, 11568, 10896, 5052, 7496, 18485, 1128, 4807, 18543, 558, 576, 9840, 2]
+// Dependencies: [32, 19, 18543, 10896, 4820, 21, 18546, 18510, 11569, 10897, 5052, 7496, 18490, 1128, 4807, 18548, 558, 576, 9840, 2]
 // Exports: default
 
-// Module 18540 (useSpeakerTooltips)
+// Module 18545 (useSpeakerTooltips)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10895 */;
-import VoicePanelConsoleFacepile from "VoicePanelConsoleFacepile" /* 18543 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10896 */;
+import VoicePanelConsoleFacepile from "VoicePanelConsoleFacepile" /* 18548 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 18538 */;
+import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 18543 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

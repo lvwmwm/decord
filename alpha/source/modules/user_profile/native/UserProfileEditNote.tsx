@@ -1,13 +1,13 @@
-// Module ID: 14337
-// Function ID: 14338
+// Module ID: 14342
+// Function ID: 14343
 // Name: UserProfileEditNote
-// Dependencies: [32, 19, 17, 1087, 21, 4971, 558, 576, 1505, 14333, 14338, 6924, 11068, 7485, 1128, 5234, 7180, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 4971, 558, 576, 1505, 14338, 14343, 6924, 11069, 7485, 1128, 5234, 7180, 2]
 
-// Module 14337 (UserProfileEditNote)
+// Module 14342 (UserProfileEditNote)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import NavigatorHeader from "NavigatorHeader" /* 6924 */;
-import NoteActionCreatorsDefault from "NoteActionCreators" /* 14338 */;
+import NoteActionCreatorsDefault from "NoteActionCreators" /* 14343 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -81,13 +81,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
             setOptions = closure_4.setOptions;
             obj2 = closure_0(closure_2[11]);
             obj.headerLeft = obj2.getHeaderConditionalBackButton(() => {
-              const promise = new Promise(() => { /* body not rendered: F160725 */ });
+              const promise = new Promise(() => { /* body not rendered: F160759 */ });
               return promise;
             });
             obj.headerRight = function headerRight() {
               let intl;
               let str;
-              const obj = { text: intl.string(userId(onClose[14]).t["R3BPH+"]), disabled: str === first, onPress() { /* body not rendered: F160726 */ } };
+              const obj = { text: intl.string(userId(onClose[14]).t["R3BPH+"]), disabled: str === first, onPress() { /* body not rendered: F160760 */ } };
               const HeaderActionButton = userId(onClose[13]).HeaderActionButton;
               intl = userId(onClose[14]).intl;
               str = note;
@@ -138,13 +138,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
           setOptions = closure_4.setOptions;
           obj2 = closure_0(closure_2[11]);
           obj.headerLeft = obj2.getHeaderConditionalBackButton(() => {
-            const promise = new Promise(() => { /* body not rendered: F160725 */ });
+            const promise = new Promise(() => { /* body not rendered: F160759 */ });
             return promise;
           });
           obj.headerRight = function headerRight() {
             let intl;
             let str;
-            const obj = { text: intl.string(userId(onClose[14]).t["R3BPH+"]), disabled: str === first, onPress() { /* body not rendered: F160726 */ } };
+            const obj = { text: intl.string(userId(onClose[14]).t["R3BPH+"]), disabled: str === first, onPress() { /* body not rendered: F160760 */ } };
             const HeaderActionButton = userId(onClose[13]).HeaderActionButton;
             intl = userId(onClose[14]).intl;
             str = note;

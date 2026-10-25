@@ -19,7 +19,7 @@ export const transitionToGuild = function transitionToGuild(id, arg1) {
   const obj = getGuildTransitionRoute;
   const first = _slicedToArray(obj.getGuildTransitionRoute(id), 1)[0];
   const obj2 = DeprecatedLayoutAnimation;
-  const result = obj2.DeprecatedLayoutAnimation({ duration: 0, create: "r", update: "__packager_asset", delete: "Path" });
+  const result = obj2.DeprecatedLayoutAnimation({ duration: 0, create: "r", update: "__packager_asset", delete: "Reflect" });
   const transitionTo = router_utils.transitionTo;
   const obj3 = { navigationReplace: true };
   router_utils;

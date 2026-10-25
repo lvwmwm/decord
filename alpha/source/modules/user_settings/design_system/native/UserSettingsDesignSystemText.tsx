@@ -1,9 +1,9 @@
-// Module ID: 17121
-// Function ID: 17122
+// Module ID: 17126
+// Function ID: 17127
 // Name: UserSettingsDesignSystemText
 // Dependencies: [19, 17, 21, 558, 576, 5252, 587, 6987, 5235, 6903, 5234, 5977, 2]
 
-// Module 17121 (UserSettingsDesignSystemText)
+// Module 17126 (UserSettingsDesignSystemText)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

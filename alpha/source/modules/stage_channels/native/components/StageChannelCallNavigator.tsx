@@ -1,9 +1,9 @@
-// Module ID: 11512
-// Function ID: 11513
+// Module ID: 11513
+// Function ID: 11514
 // Name: StageChannelCallNavigator
-// Dependencies: [32, 19, 17, 1098, 21, 558, 576, 11513, 5052, 5247, 587, 11514, 11582, 11516, 10883, 10882, 9717, 10902, 5710, 11583, 11668, 5037, 11364, 11676, 11677, 11563, 11682, 11690, 11692, 11725, 11726, 4971, 11727, 11518, 2]
+// Dependencies: [32, 19, 17, 1098, 21, 558, 576, 11514, 5052, 5247, 587, 11515, 11583, 11517, 10884, 10883, 9717, 10903, 5710, 11584, 11669, 5037, 11365, 11677, 11678, 11564, 11683, 11691, 11693, 11726, 11727, 4971, 11728, 11519, 2]
 
-// Module 11512 (StageChannelCallNavigator)
+// Module 11513 (StageChannelCallNavigator)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
@@ -11,8 +11,8 @@ import ReanimatedRexportDefault from "ReanimatedRexport" /* 5052 */;
 import spring from "spring" /* 5247 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5710 */;
 import MessageManagerDefault from "MessageManager" /* 9717 */;
-import participantHasVideoDefault from "participantHasVideo" /* 10902 */;
-import JoinStageViewDefault from "JoinStageView" /* 11582 */;
+import participantHasVideoDefault from "participantHasVideo" /* 10903 */;
+import JoinStageViewDefault from "JoinStageView" /* 11583 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -31,8 +31,8 @@ let metroImportAll;
 let metroRequire;
 let obj2;
 let tmp;
-const StageActionBarButtons = tmp(11518);
-const ThemeContextProvider_RootThemeContextProvider = tmp(11727);
+const StageActionBarButtons = tmp(11519);
+const ThemeContextProvider_RootThemeContextProvider = tmp(11728);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ StyleSheet: hasOwnProperty, View: metroRequire } = react_native);

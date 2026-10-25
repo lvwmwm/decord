@@ -1,9 +1,9 @@
-// Module ID: 16398
-// Function ID: 16399
+// Module ID: 16403
+// Function ID: 16404
 // Name: OrbsArcadeRewardShelf
-// Dependencies: [19, 17, 2068, 16390, 21, 587, 4971, 558, 576, 504, 12937, 9406, 5234, 1128, 16396, 16399, 16400, 16391, 9439, 7554, 16401, 16405, 683, 16406, 5258, 7305, 2]
+// Dependencies: [19, 17, 2068, 16395, 21, 587, 4971, 558, 576, 504, 12942, 9406, 5234, 1128, 16401, 16404, 16405, 16396, 9439, 7554, 16406, 16410, 683, 16411, 5258, 7305, 2]
 
-// Module 16398 (OrbsArcadeRewardShelf)
+// Module 16403 (OrbsArcadeRewardShelf)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,16 +12,16 @@ import intl4 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import useCountdownDefault from "useCountdown" /* 7554 */;
 import ClipView from "ClipView" /* 9406 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16391 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16396 */;
-import OrbsArcadeRewardPreviewDefault from "OrbsArcadeRewardPreview" /* 16399 */;
-import OrbsArcadeRewardStatusLabelDefault from "OrbsArcadeRewardStatusLabel" /* 16400 */;
-import ChestLogoSpotIllustration from "ChestLogoSpotIllustration" /* 16401 */;
-import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 16406 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16396 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16401 */;
+import OrbsArcadeRewardPreviewDefault from "OrbsArcadeRewardPreview" /* 16404 */;
+import OrbsArcadeRewardStatusLabelDefault from "OrbsArcadeRewardStatusLabel" /* 16405 */;
+import ChestLogoSpotIllustration from "ChestLogoSpotIllustration" /* 16406 */;
+import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 16411 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16390 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16395 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -222,7 +222,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
       const tmp27 = authStore(metroRequire, obj5);
     }
     const obj6 = { "aria-label": tmp9, shape: ClipView.CutoutShape.Circle, size: v50, gap: 2, depthX: 0.3, children: tmp13 };
-    const Pile = tmp(12937).Pile;
+    const Pile = tmp(12942).Pile;
     cResult[9] = tmp9;
     cResult[10] = tmp13;
     cResult[11] = React4(Pile, obj6);
@@ -278,7 +278,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
       return closure_1_9(closure_1_18, obj, reward.id);
     })
   };
-  const Pile = rewards(12937).Pile;
+  const Pile = rewards(12942).Pile;
   items2 = [closure_9(Pile, obj3), ];
   const obj4 = { style: tmp.rewardShelfCopy, children: items3 };
   const obj5 = { variant: "heading-sm/semibold", color: "text-default", children: intl.string(rewards(1128).t.DCCcdz) };

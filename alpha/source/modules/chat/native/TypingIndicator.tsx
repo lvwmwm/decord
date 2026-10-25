@@ -1,10 +1,10 @@
-// Module ID: 13058
-// Function ID: 13059
+// Module ID: 13063
+// Function ID: 13064
 // Name: TypingIndicator
-// Dependencies: [19, 17, 9782, 5237, 6726, 7760, 13059, 1392, 1087, 21, 558, 576, 13060, 504, 4971, 587, 13061, 13062, 13063, 5989, 1267, 7253, 7278, 13064, 13065, 5052, 5252, 5037, 5247, 5248, 13075, 1202, 5234, 13079, 2]
+// Dependencies: [19, 17, 9782, 5237, 6726, 7760, 13064, 1392, 1087, 21, 558, 576, 13065, 504, 4971, 587, 13066, 13067, 13068, 5989, 1267, 7253, 7278, 13069, 13070, 5052, 5252, 5037, 5247, 5248, 13080, 1202, 5234, 13084, 2]
 // Exports: hasTypingIndicatorContent
 
-// Module 13058 (TypingIndicator)
+// Module 13063 (TypingIndicator)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -16,14 +16,14 @@ import springPresets from "springPresets" /* 5248 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 5989 */;
 import SlowmodeStore from "SlowmodeStore" /* 7760 */;
 import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9782 */;
-import useTypingUsersIds from "useTypingUsersIds" /* 13060 */;
-import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 13063 */;
-import CustomTypingIndicatorAnalytics from "CustomTypingIndicatorAnalytics" /* 13064 */;
-import openCustomTypingIndicatorAnnounceActionSheet from "openCustomTypingIndicatorAnnounceActionSheet" /* 13065 */;
+import useTypingUsersIds from "useTypingUsersIds" /* 13065 */;
+import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 13068 */;
+import CustomTypingIndicatorAnalytics from "CustomTypingIndicatorAnalytics" /* 13069 */;
+import openCustomTypingIndicatorAnnounceActionSheet from "openCustomTypingIndicatorAnnounceActionSheet" /* 13070 */;
 import react from "react" /* 19 */;
 import DevSettingsStore from "DevSettingsStore" /* 5237 */;
 import RawGuildEmojiStore_mod from "RawGuildEmojiStore" /* 6726 */;
-import TypingStore from "TypingStore" /* 13059 */;
+import TypingStore from "TypingStore" /* 13064 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

@@ -1,9 +1,9 @@
-// Module ID: 17794
-// Function ID: 17795
+// Module ID: 17799
+// Function ID: 17800
 // Name: GuildsBarUnreadBars
-// Dependencies: [32, 19, 17, 6814, 5002, 6701, 17726, 16439, 21, 4971, 7167, 558, 576, 1633, 16432, 16441, 551, 568, 504, 5052, 17795, 2]
+// Dependencies: [32, 19, 17, 6814, 5002, 6701, 17731, 16444, 21, 4971, 7167, 558, 576, 1633, 16437, 16446, 551, 568, 504, 5052, 17800, 2]
 
-// Module 17794 (GuildsBarUnreadBars)
+// Module 17799 (GuildsBarUnreadBars)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -13,14 +13,14 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
 import SortedGuildStore2 from "SortedGuildStore" /* 6701 */;
 import FastList from "FastList" /* 7167 */;
-import QuestHooks from "QuestHooks" /* 16432 */;
-import useYouBarTotalHeight2 from "useYouBarTotalHeight" /* 16441 */;
+import QuestHooks from "QuestHooks" /* 16437 */;
+import useYouBarTotalHeight2 from "useYouBarTotalHeight" /* 16446 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6814 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5002 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17726 */;
-import YouBarConstants from "YouBarConstants" /* 16439 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17731 */;
+import YouBarConstants from "YouBarConstants" /* 16444 */;
 import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

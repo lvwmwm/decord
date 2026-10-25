@@ -1,16 +1,16 @@
-// Module ID: 11692
-// Function ID: 11693
+// Module ID: 11693
+// Function ID: 11694
 // Name: StageChannelCallView
-// Dependencies: [19, 21, 11563, 4971, 558, 576, 1633, 11693, 11694, 5052, 10886, 11695, 2]
+// Dependencies: [19, 21, 11564, 4971, 558, 576, 1633, 11694, 11695, 5052, 10887, 11696, 2]
 
-// Module 11692 (StageChannelCallView)
+// Module 11693 (StageChannelCallView)
 import react2 from "react" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 5052 */;
-import StatusBarDefault from "StatusBar" /* 10886 */;
-import StageChannelAnimationUtils from "StageChannelAnimationUtils" /* 11693 */;
-import StageChannelBackgroundDefault from "StageChannelBackground" /* 11694 */;
-import StageChannelCallListDefault from "StageChannelCallList" /* 11695 */;
+import StatusBarDefault from "StatusBar" /* 10887 */;
+import StageChannelAnimationUtils from "StageChannelAnimationUtils" /* 11694 */;
+import StageChannelBackgroundDefault from "StageChannelBackground" /* 11695 */;
+import StageChannelCallListDefault from "StageChannelCallList" /* 11696 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;
@@ -21,7 +21,7 @@ let c3;
 let closure_4;
 let hasOwnProperty;
 let tmp4;
-const FocusedControls = tmp4(11563);
+const FocusedControls = tmp4(11564);
 ({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = Fragment);
 function CONTROL_PADDING_PX(arg0) {
 
@@ -39,7 +39,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageCh
   const top = useSafeAreaInsetsDefault().top;
   if (cResult[0] !== top) {
     if (typeof CONTROL_PADDING_PX === "function") {
-      const sum = tmp(11563).FOCUSED_CONTROLS_HEADER_HEIGHT + top;
+      const sum = tmp(11564).FOCUSED_CONTROLS_HEADER_HEIGHT + top;
       cResult[0] = top;
       cResult[1] = sum;
       tmp6 = sum;

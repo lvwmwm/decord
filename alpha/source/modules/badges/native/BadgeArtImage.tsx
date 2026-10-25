@@ -1,9 +1,9 @@
-// Module ID: 11114
-// Function ID: 11115
+// Module ID: 11115
+// Function ID: 11116
 // Name: BadgeArtImage
 // Dependencies: [19, 17, 21, 558, 576, 1384, 9401, 5669, 7962, 2]
 
-// Module 11114 (BadgeArtImage)
+// Module 11115 (BadgeArtImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;

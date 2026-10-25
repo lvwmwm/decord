@@ -1,9 +1,9 @@
-// Module ID: 15856
-// Function ID: 15857
+// Module ID: 15861
+// Function ID: 15862
 // Name: useTryItOutUpsellScrollTracking
 // Dependencies: [19, 558, 576, 5052, 2]
 
-// Module 15856 (useTryItOutUpsellScrollTracking)
+// Module 15861 (useTryItOutUpsellScrollTracking)
 import react2 from "react" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
 import react from "react" /* 19 */;

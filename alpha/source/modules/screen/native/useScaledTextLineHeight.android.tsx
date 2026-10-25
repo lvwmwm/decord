@@ -1,14 +1,14 @@
-// Module ID: 11056
-// Function ID: 11057
+// Module ID: 11057
+// Function ID: 11058
 // Name: useScaledTextLineHeight
-// Dependencies: [11057, 5234, 558, 576, 5253, 2]
+// Dependencies: [11058, 5234, 558, 576, 5253, 2]
 // Exports: scaleLineHeight, scaleTextLineHeight
 
-// Module 11056 (useScaledTextLineHeight)
+// Module 11057 (useScaledTextLineHeight)
 import react from "react" /* 576 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import useFontScale from "useFontScale" /* 5253 */;
-import react_nativeDefault from "react-native" /* 11057 */;
+import react_nativeDefault from "react-native" /* 11058 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

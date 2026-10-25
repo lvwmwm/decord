@@ -1,14 +1,14 @@
-// Module ID: 11372
-// Function ID: 11373
+// Module ID: 11373
+// Function ID: 11374
 // Name: usePipVideoOrStream
-// Dependencies: [4822, 6772, 11373, 6642, 502, 4823, 2014, 5714, 5632, 558, 576, 6645, 5150, 11362, 504, 2]
+// Dependencies: [4822, 6772, 11374, 6642, 502, 4823, 2014, 5714, 5632, 558, 576, 6645, 5150, 11363, 504, 2]
 
-// Module 11372 (usePipVideoOrStream)
+// Module 11373 (usePipVideoOrStream)
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5150 */;
-import ChannelCallModalDefault from "ChannelCallModal" /* 11362 */;
+import ChannelCallModalDefault from "ChannelCallModal" /* 11363 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6772 */;
-import VideoSpeakerStore from "VideoSpeakerStore" /* 11373 */;
+import VideoSpeakerStore from "VideoSpeakerStore" /* 11374 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6642 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4823 */;

@@ -1,15 +1,15 @@
-// Module ID: 12348
-// Function ID: 12349
+// Module ID: 12351
+// Function ID: 12352
 // Name: ConjureIdeasTip
-// Dependencies: [19, 21, 12331, 12340, 9961, 1128, 3830, 2]
+// Dependencies: [19, 21, 12332, 12342, 9961, 1128, 3830, 2]
 
-// Module 12348 (ConjureIdeasTip)
+// Module 12351 (ConjureIdeasTip)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import LightbulbIcon from "LightbulbIcon" /* 9961 */;
-import conjureIdeasTip from "conjureIdeasTip" /* 12331 */;
-import ConjureTipHintDefault from "ConjureTipHint" /* 12340 */;
+import conjureIdeasTip from "conjureIdeasTip" /* 12332 */;
+import ConjureTipHintDefault from "ConjureTipHint" /* 12342 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

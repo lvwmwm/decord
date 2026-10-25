@@ -1,10 +1,10 @@
-// Module ID: 17728
-// Function ID: 17729
+// Module ID: 17733
+// Function ID: 17734
 // Name: useGuildsBarGesture
-// Dependencies: [5, 19, 17, 4845, 6701, 17729, 17726, 5052, 551, 5212, 4978, 12, 1257, 1128, 7167, 17444, 5252, 587, 4886, 12070, 1274, 6830, 5868, 9762, 1384, 1633, 5267, 17730, 17731, 9762, 16440, 5297, 2]
+// Dependencies: [5, 19, 17, 4845, 6701, 17734, 17731, 5052, 551, 5212, 4978, 12, 1257, 1128, 7167, 17449, 5252, 587, 4886, 12071, 1274, 6830, 5868, 9762, 1384, 1633, 5267, 17735, 17736, 9762, 16445, 5297, 2]
 // Exports: default
 
-// Module 17728 (useGuildsBarGesture)
+// Module 17733 (useGuildsBarGesture)
 import react_native from "react-native" /* 17 */;
 import intl15 from "intl" /* 1128 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
@@ -16,12 +16,12 @@ import LegacyBaseButton from "LegacyBaseButton" /* 5297 */;
 import SortedGuildStore2 from "SortedGuildStore" /* 6701 */;
 import FastList from "FastList" /* 7167 */;
 import ContextMenuState from "ContextMenuState" /* 9762 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12070 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4845 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17729 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17726 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17734 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17731 */;
 import "ReanimatedRexport";
 import ReanimatedRexport_mod from "ReanimatedRexport" /* 5052 */;
 import debounce from "debounce" /* 551 */;
@@ -268,7 +268,7 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, fastListRef, map) {
     sectionItemFromPosition = current.getSectionItemFromPosition(bound, map);
   }
   if (sectionItemFromPosition == null) {
-    sectionItemFromPosition = { item: "emoji", positionPercentage: false };
+    sectionItemFromPosition = { item: "duration", positionPercentage: false };
   }
   const item = sectionItemFromPosition.item;
   let tmp6;

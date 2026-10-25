@@ -1,10 +1,10 @@
-// Module ID: 18258
-// Function ID: 18259
+// Module ID: 18263
+// Function ID: 18264
 // Name: openConjureDeleteAppChannelAlert
-// Dependencies: [5, 32, 19, 21, 558, 576, 12792, 12793, 1128, 3830, 11795, 5977, 5234, 5914, 5910, 2]
+// Dependencies: [5, 32, 19, 21, 558, 576, 12797, 12798, 1128, 3830, 11796, 5977, 5234, 5914, 5910, 2]
 // Exports: default
 
-// Module 18258 (openConjureDeleteAppChannelAlert)
+// Module 18263 (openConjureDeleteAppChannelAlert)
 import useAlertStore from "useAlertStore" /* 5910 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

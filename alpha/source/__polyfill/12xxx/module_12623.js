@@ -1,201 +1,236 @@
 // Module ID: 12623
 // Function ID: 12624
-// Dependencies: [12598, 12579, 12578, 12609]
-// Exports: applyScopeDataToEvent, mergeAndOverwriteScopeData, mergeScopeData
+// Dependencies: [32, 12624, 12584, 12585, 12581]
+// Exports: normalizeUrlToBase
 
 // Module 12623
-import _mod12578 from "module_12578" /* 12578 */;
-import _mod12579 from "module_12579" /* 12579 */;
-import _mod12598 from "module_12598" /* 12598 */;
-import _mod12609 from "module_12609" /* 12609 */;
+import _mod12581 from "module_12581" /* 12581 */;
+import _mod12584 from "module_12584" /* 12584 */;
+import _mod12585 from "module_12585" /* 12585 */;
+import memoBuilder from "memoBuilder" /* 12624 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
+let hasOwnProperty;
 
-export const applyScopeDataToEvent = function applyScopeDataToEvent(extra, arg1) {
-  let breadcrumbs;
-  let contexts;
-  let fingerprint;
-  let items1;
-  let level;
-  let sdkProcessingMetadata;
-  let span;
-  let tags;
-  let tmpResult10;
-  let tmpResult9;
-  let transactionName;
-  let user;
-  ({ fingerprint, span, breadcrumbs, sdkProcessingMetadata, level, transactionName } = arg1);
-  ({ extra, tags, user, contexts } = arg1);
-  const obj = _mod12579;
-  const dropUndefinedKeysResult = obj.dropUndefinedKeys(extra);
-  let length = dropUndefinedKeysResult;
-  if (length) {
-    const _Object = Object;
-    length = Object.keys(dropUndefinedKeysResult).length;
+function normalize(arg0) {
+  let num = arg1;
+  if (arg1 === undefined) {
+    num = 100;
   }
-  const tmp5 = extra;
-  if (length) {
-    const obj2 = {};
-    const merged = Object.assign(dropUndefinedKeysResult);
-    const merged1 = Object.assign(extra.extra);
-    extra.extra = obj2;
+  let num2 = arg2;
+  if (arg2 === undefined) {
+    num2 = Infinity;
   }
-  const tmpResult = _mod12579;
-  const dropUndefinedKeysResult1 = tmpResult.dropUndefinedKeys(tags);
-  let length2 = dropUndefinedKeysResult1;
-  if (length2) {
-    const _Object2 = Object;
-    length2 = Object.keys(dropUndefinedKeysResult1).length;
+  try {
+    return visit("", arg0, num, num2);
+  } catch (tmp5) {
+    const _HermesInternal = HermesInternal;
+    const obj = { ERROR: "**non-serializable** (" + tmp5 + ")" };
+    return obj;
   }
-  if (length2) {
-    const obj3 = {};
-    const merged2 = Object.assign(dropUndefinedKeysResult1);
-    const merged3 = Object.assign(extra.tags);
-    extra.tags = obj3;
-  }
-  const tmpResult7 = _mod12579;
-  const dropUndefinedKeysResult2 = tmpResult7.dropUndefinedKeys(user);
-  let length3 = dropUndefinedKeysResult2;
-  if (length3) {
-    const _Object3 = Object;
-    length3 = Object.keys(dropUndefinedKeysResult2).length;
-  }
-  if (length3) {
-    const obj4 = {};
-    const merged4 = Object.assign(dropUndefinedKeysResult2);
-    const merged5 = Object.assign(extra.user);
-    extra.user = obj4;
-  }
-  const tmpResult8 = _mod12579;
-  const dropUndefinedKeysResult3 = tmpResult8.dropUndefinedKeys(contexts);
-  let length4 = dropUndefinedKeysResult3;
-  if (length4) {
-    const _Object4 = Object;
-    length4 = Object.keys(dropUndefinedKeysResult3).length;
-  }
-  if (length4) {
-    const obj5 = {};
-    const merged6 = Object.assign(dropUndefinedKeysResult3);
-    const merged7 = Object.assign(extra.contexts);
-    extra.contexts = obj5;
-  }
-  if (level) {
-    extra.level = level;
-  }
-  const tmp32 = transactionName && "transaction" !== extra.type;
-  if (tmp32) {
-    extra.transaction = transactionName;
-  }
-  if (span) {
-    const obj6 = { trace: tmpResult9.spanToTraceContext(span) };
-    tmpResult9 = _mod12578;
-    const merged8 = Object.assign(extra.contexts);
-    extra.contexts = obj6;
-    const obj7 = { dynamicSamplingContext: tmpResult10.getDynamicSamplingContextFromSpan(span) };
-    tmpResult10 = _mod12609;
-    const merged9 = Object.assign(extra.sdkProcessingMetadata);
-    extra.sdkProcessingMetadata = obj7;
-    const tmpResult11 = _mod12578;
-    const rootSpan = tmpResult11.getRootSpan(span);
-    const tmpResult12 = _mod12578;
-    const description = tmpResult12.spanToJSON(rootSpan).description;
-    const tmp38 = description && !extra.transaction && "transaction" === extra.type;
-    if (tmp38) {
-      extra.transaction = description;
+}
+function visit(arg0, __sentry_skip_normalization__) {
+  function stringifyValue(arg0, _events) {
+    function getConstructorName(_events) {
+      const prototypeOf = Object.getPrototypeOf(_events);
+      let str = "null prototype";
+      if (prototypeOf) {
+        str = prototypeOf.constructor.name;
+      }
+      return str;
+    }
+    try {
+      let str = "domain";
+      if ("domain" === arg0) {
+        if (_events) {
+          if (typeof _events === "object") {
+            if (_events._events) {
+              return "[Domain]";
+            }
+          }
+        }
+      }
+      if ("domainEmitter" === arg0) {
+        return "[DomainEmitter]";
+      } else {
+        if (undefined !== global) {
+          if (_events === global) {
+            return "[Global]";
+          }
+        }
+        const _window = window;
+        if (typeof window !== "undefined") {
+          const _window2 = window;
+          if (_events === window) {
+            return "[Window]";
+          }
+        }
+        const _document = document;
+        if (typeof document !== "undefined") {
+          const _document2 = document;
+          if (_events === document) {
+            return "[Document]";
+          }
+        }
+        const obj = _mod12585;
+        if (obj.isVueViewModel(_events)) {
+          return "[VueViewModel]";
+        } else {
+          const tmp4Result = _mod12585;
+          if (tmp4Result.isSyntheticEvent(_events)) {
+            return "[SyntheticEvent]";
+          } else {
+            if (typeof _events === "number") {
+              const _Number = Number;
+              if (!Number.isFinite(_events)) {
+                const _HermesInternal = HermesInternal;
+                return "[" + _events + "]";
+              }
+            }
+            if (typeof _events === "function") {
+              const _HermesInternal4 = HermesInternal;
+              const tmp4Result2 = _mod12581;
+              return "[Function: " + tmp4Result2.getFunctionName(_events) + "]";
+            } else if (typeof _events === "symbol") {
+              const _String2 = String;
+              const _HermesInternal3 = HermesInternal;
+              return "[" + String(_events) + "]";
+            } else if (typeof _events === "bigint") {
+              const _String = String;
+              const _HermesInternal2 = HermesInternal;
+              return "[BigInt: " + String(_events) + "]";
+            } else {
+              let combined;
+              const _HermesInternal6 = HermesInternal;
+              const obj4 = /^HTML(\w*)Element$/;
+              const tmp9 = getConstructorName(_events);
+              if (obj4.test(tmp9)) {
+                combined = concat(tmp10, "]");
+              } else {
+                combined = concat(tmp10, "]");
+              }
+              return combined;
+            }
+          }
+        }
+      }
+    } catch (tmp7) {
+      const _HermesInternal5 = HermesInternal;
+      return "**non-serializable** (" + tmp7 + ")";
     }
   }
-  if (extra.fingerprint) {
-    let items;
-    const _Array = Array;
-    const fingerprint2 = extra.fingerprint;
-    if (Array.isArray(extra.fingerprint)) {
-      items = fingerprint2;
-    } else {
-      items = [fingerprint2];
+  let num = arg2;
+  if (arg2 === undefined) {
+    num = Infinity;
+  }
+  let num2 = arg3;
+  if (arg3 === undefined) {
+    num2 = Infinity;
+  }
+  let memoBuilderResult = arg4;
+  if (arg4 === undefined) {
+    let obj = memoBuilder;
+    memoBuilderResult = obj.memoBuilder();
+  }
+  _slicedToArray(memoBuilderResult, 2);
+  if (null != __sentry_skip_normalization__) {
+    const items = ["boolean", "string"];
+    if (!items.includes(typeof __sentry_skip_normalization__)) {
+      if (typeof __sentry_skip_normalization__ === "number") {
+        let _Number = Number;
+      }
+      let tmp9 = arg0;
+      let str = stringifyValue(arg0, __sentry_skip_normalization__);
+      if (str.startsWith("[object ")) {
+        if (__sentry_skip_normalization__.__sentry_skip_normalization__) {
+          return __sentry_skip_normalization__;
+        } else {
+          if (typeof __sentry_skip_normalization__.__sentry_override_normalization_depth__ === "number") {
+            num = __sentry_skip_normalization__.__sentry_override_normalization_depth__;
+          }
+          if (0 === num) {
+            return str.replace("object ", "");
+          } else if (tmp6(__sentry_skip_normalization__)) {
+            return "[Circular ~]";
+          } else {
+            if (__sentry_skip_normalization__) {
+              if (typeof __sentry_skip_normalization__.toJSON === "function") {
+                try {
+                  const tmp10 = visit;
+                  return visit("", __sentry_skip_normalization__.toJSON(), num - 1, num2, memoBuilderResult);
+                } catch (err) {
+                }
+              }
+            }
+            const _Array = Array;
+            const tmp14 = Array.isArray(__sentry_skip_normalization__) ? [] : {};
+            const obj2 = _mod12584;
+            const convertToPlainObjectResult = obj2.convertToPlainObject(__sentry_skip_normalization__);
+            const keys = Object.keys();
+            if (keys !== undefined) {
+              while (keys[tmp] !== undefined) {
+                let _Object = Object;
+                hasOwnProperty = Object.prototype.hasOwnProperty;
+                let tmp28 = tmp21;
+                if (!hasOwnProperty.call(convertToPlainObjectResult, tmp21)) {
+                  continue;
+                } else {
+                  if (tmp20 >= num2) {
+                    let str4 = "[MaxProperties ~]";
+                    tmp14[tmp21] = "[MaxProperties ~]";
+                    break;
+                  } else {
+                    tmp14[tmp21] = visit(tmp28, convertToPlainObjectResult[tmp21], num - 1, num2, tmp8);
+                    let num6 = tmp20 + 1;
+                    continue;
+                  }
+                  break;
+                }
+                break;
+              }
+            }
+            tmp7(__sentry_skip_normalization__);
+            return tmp14;
+          }
+        }
+      } else {
+        return str;
+      }
     }
-    items1 = items;
-  } else {
-    items1 = [];
   }
-  extra.fingerprint = items1;
-  if (fingerprint) {
-    const fingerprint3 = extra.fingerprint;
-    extra.fingerprint = fingerprint3.concat(fingerprint);
+  return __sentry_skip_normalization__;
+}
+function normalizeToSize(arg0) {
+  let num = arg1;
+  if (arg1 === undefined) {
+    num = 3;
   }
-  const tmp40 = extra.fingerprint && !extra.fingerprint.length;
-  if (tmp40) {
-    delete tmp5["fingerprint"];
+  let num2 = arg2;
+  if (arg2 === undefined) {
+    num2 = 102400;
   }
-  const items2 = [...breadcrumbs];
-  let tmp42;
-  if (items2.length) {
-    tmp42 = items2;
+  let tmp = normalize(arg0, num);
+  const str = encodeURI(JSON.stringify(tmp));
+  if (~(-str.split(/%..|./).length) > num2) {
+    tmp = normalizeToSize(arg0, num - 1, num2);
   }
-  extra.breadcrumbs = tmp42;
-  const obj8 = {};
-  const merged10 = Object.assign(extra.sdkProcessingMetadata);
-  const merged11 = Object.assign(sdkProcessingMetadata);
-  extra.sdkProcessingMetadata = obj8;
-};
-export const mergeAndOverwriteScopeData = function mergeAndOverwriteScopeData(arg0, arg1, arg2) {
-  const obj = _mod12598;
-  arg0[arg1] = obj.merge(arg0[arg1], arg2, 1);
-};
-export const mergeScopeData = function mergeScopeData(extra, arg1) {
-  let attachments;
-  let breadcrumbs;
-  let contexts;
-  let eventProcessors;
-  let fingerprint;
-  let level;
-  let propagationContext;
-  let sdkProcessingMetadata;
-  let span;
-  let tags;
-  let transactionName;
-  let user;
-  ({ level, breadcrumbs, fingerprint, eventProcessors, attachments, propagationContext, transactionName, span } = arg1);
-  ({ extra, tags, user, contexts, sdkProcessingMetadata } = arg1);
-  const obj = _mod12598;
-  extra.extra = obj.merge(extra.extra, extra, 1);
-  const obj2 = _mod12598;
-  extra.tags = obj2.merge(extra.tags, tags, 1);
-  const obj3 = _mod12598;
-  extra.user = obj3.merge(extra.user, user, 1);
-  const obj4 = _mod12598;
-  extra.contexts = obj4.merge(extra.contexts, contexts, 1);
-  const obj5 = _mod12598;
-  extra.sdkProcessingMetadata = obj5.merge(extra.sdkProcessingMetadata, sdkProcessingMetadata, 2);
-  if (level) {
-    extra.level = level;
+  return tmp;
+}
+
+export { normalize };
+export { normalizeToSize };
+export const normalizeUrlToBase = function normalizeUrlToBase(arg0, str) {
+  let str2 = arg0;
+  str = str.replace(/\\/g, "/");
+  const replaced = str.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&");
+  try {
+    const _decodeURI = decodeURI;
+    str2 = decodeURI(arg0);
+  } catch (err) {
   }
-  if (transactionName) {
-    extra.transactionName = transactionName;
-  }
-  if (span) {
-    extra.span = span;
-  }
-  if (breadcrumbs.length) {
-    const items = [];
-    HermesBuiltin.arraySpread(items, breadcrumbs, HermesBuiltin.arraySpread(items, extra.breadcrumbs, 0));
-    extra.breadcrumbs = items;
-  }
-  if (fingerprint.length) {
-    const items1 = [];
-    HermesBuiltin.arraySpread(items1, fingerprint, HermesBuiltin.arraySpread(items1, extra.fingerprint, 0));
-    extra.fingerprint = items1;
-  }
-  if (eventProcessors.length) {
-    const items2 = [];
-    HermesBuiltin.arraySpread(items2, eventProcessors, HermesBuiltin.arraySpread(items2, extra.eventProcessors, 0));
-    extra.eventProcessors = items2;
-  }
-  if (attachments.length) {
-    const items3 = [];
-    HermesBuiltin.arraySpread(items3, attachments, HermesBuiltin.arraySpread(items3, extra.attachments, 0));
-    extra.attachments = items3;
-  }
-  const obj6 = {};
-  const merged = Object.assign(extra.propagationContext);
-  const merged1 = Object.assign(propagationContext);
-  extra.propagationContext = obj6;
+  const str3 = str2.replace(/\\/g, "/");
+  const replace = str3.replace(/webpack:\/?/g, "").replace;
+  str3.replace(/webpack:\/?/g, "");
+  const regExp = new RegExp("(file://)?/*" + replaced + "/*", "ig");
+  return replace(regExp, "app:///");
 };

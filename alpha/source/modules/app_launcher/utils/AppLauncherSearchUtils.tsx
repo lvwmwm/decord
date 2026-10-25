@@ -1,20 +1,20 @@
-// Module ID: 12043
-// Function ID: 12044
+// Module ID: 12044
+// Function ID: 12045
 // Name: AppLauncherSearchUtils
-// Dependencies: [32, 19, 9652, 9650, 9651, 12044, 5983, 5984, 558, 576, 2000, 9655, 9649, 10205, 12016, 12046, 12, 11166, 504, 5603, 12045, 12047, 2]
+// Dependencies: [32, 19, 9652, 9650, 9651, 12045, 5983, 5984, 558, 576, 2000, 9655, 9649, 10205, 12017, 12047, 12, 11167, 504, 5603, 12046, 12048, 2]
 // Exports: bucketApplicationDescriptionContains, bucketApplicationDescriptionStartsWith, bucketApplicationNameContains, bucketApplicationNameStartsWith, bucketCommandNameContains, bucketCommandOptionNameContains, bucketCommandSectionNameContains, bucketCommandSectionNameStartsWith, bucketFullCommandNameStartsWith, bucketOptionNameStartsWithOrCommandAndOptionStartsWith, bucketRootCommandNameStartsWith, defaultApplicationBucketing, defaultCommandBucketing, defaultCommandsSort, filterApplicationAllowed, filterCommandAllowed, sortCommandsByFreceny, useGlobalSearchResults, useLocalSearchResults
 
-// Module 12043 (AppLauncherSearchUtils)
+// Module 12044 (AppLauncherSearchUtils)
 import Server from "Server" /* 2000 */;
 import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5603 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5983 */;
 import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5984 */;
 import AppLauncherUtils from "AppLauncherUtils" /* 9649 */;
 import CommandPermissionContext from "CommandPermissionContext" /* 9655 */;
-import ApplicationDirectorySearchStore2 from "ApplicationDirectorySearchStore" /* 12044 */;
-import SearchAppsRequestSource from "SearchAppsRequestSource" /* 12045 */;
-import ArraySearch from "ArraySearch" /* 12046 */;
-import ApplicationDirectoryActionCreatorsAll from "ApplicationDirectoryActionCreators" /* 12047 */;
+import ApplicationDirectorySearchStore2 from "ApplicationDirectorySearchStore" /* 12045 */;
+import SearchAppsRequestSource from "SearchAppsRequestSource" /* 12046 */;
+import ArraySearch from "ArraySearch" /* 12047 */;
+import ApplicationDirectoryActionCreatorsAll from "ApplicationDirectoryActionCreators" /* 12048 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 9652 */;
@@ -1597,7 +1597,7 @@ export const useGlobalSearchResults = function useGlobalSearchResults(fetches) {
     tmp = substr;
   }
   const tmp3 = query;
-  const tmp5 = entrypoint === query(11166).AppLauncherEntrypoint.VOICE;
+  const tmp5 = entrypoint === query(11167).AppLauncherEntrypoint.VOICE;
   dependencyMap = tmp5;
   guild_id = undefined;
   if ("channel" === context.type) {

@@ -1,9 +1,9 @@
-// Module ID: 10781
-// Function ID: 10782
+// Module ID: 10782
+// Function ID: 10783
 // Name: IntlLink
 // Dependencies: [19, 21, 4971, 587, 558, 576, 4985, 5660, 1951, 1202, 2]
 
-// Module 10781 (IntlLink)
+// Module 10782 (IntlLink)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef1951 from "module_1951" /* 1951 */;

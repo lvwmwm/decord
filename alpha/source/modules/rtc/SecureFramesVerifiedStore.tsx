@@ -16,7 +16,7 @@ import TransientKeyStore from "TransientKeyStore" /* 9179 */;
 import VerifiedKeyStore from "VerifiedKeyStore" /* 9180 */;
 import size from "module_2" /* 2 */;
 
-const f102797 = (acc, item) => {
+const f102813 = (acc, item) => {
   const obj = closure_0(dependencyMap[7]);
   const tmp = true === map.get(obj.decodeStreamKey(item).ownerId);
   const value = map1.get(item);
@@ -68,7 +68,7 @@ function handleUserUpdate(userId) {
       const result = map.set(userId, isKeyVerifiedResult);
     }
     const allActiveStreamKeys = StreamRTCConnectionStore.getAllActiveStreamKeys();
-    const reduced = allActiveStreamKeys.reduce(f102797, false);
+    const reduced = allActiveStreamKeys.reduce(f102813, false);
     const tmp16 = computeCallVerification();
     if (!flag) {
       flag = reduced;
@@ -153,7 +153,7 @@ let obj = {
       return tmp;
     }, false);
     const allActiveStreamKeys = StreamRTCConnectionStore.getAllActiveStreamKeys();
-    const reduced1 = allActiveStreamKeys.reduce(f102797, false);
+    const reduced1 = allActiveStreamKeys.reduce(f102813, false);
     const tmp3 = computeCallVerification();
     if (!reduced) {
       reduced = reduced1;

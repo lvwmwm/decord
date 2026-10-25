@@ -1,10 +1,10 @@
-// Module ID: 12819
-// Function ID: 12820
+// Module ID: 12824
+// Function ID: 12825
 // Name: ExplicitMediaLearnMoreActionSheet
-// Dependencies: [19, 17, 7392, 1087, 21, 4971, 587, 12820, 6654, 8586, 1128, 7490, 5210, 5660, 2067, 7883, 12821, 2002, 5265, 7902, 5234, 5244, 2]
+// Dependencies: [19, 17, 7392, 1087, 21, 4971, 587, 12825, 6654, 8586, 1128, 7490, 5210, 5660, 2067, 7883, 12826, 2002, 5265, 7902, 5234, 5244, 2]
 // Exports: default
 
-// Module 12819 (ExplicitMediaLearnMoreActionSheet)
+// Module 12824 (ExplicitMediaLearnMoreActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;

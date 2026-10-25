@@ -1,14 +1,14 @@
-// Module ID: 11487
-// Function ID: 11488
+// Module ID: 11488
+// Function ID: 11489
 // Name: useStableSafeAreaInsets
-// Dependencies: [32, 19, 1502, 1384, 1645, 1633, 558, 576, 10914, 2]
+// Dependencies: [32, 19, 1502, 1384, 1645, 1633, 558, 576, 10915, 2]
 // Exports: getStableSafeAreaInsets
 
-// Module 11487 (useStableSafeAreaInsets)
+// Module 11488 (useStableSafeAreaInsets)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import AppEntryKeyContext from "AppEntryKeyContext" /* 1502 */;
 import react_nativeDefault from "react-native" /* 1645 */;
-import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 10914 */;
+import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 10915 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

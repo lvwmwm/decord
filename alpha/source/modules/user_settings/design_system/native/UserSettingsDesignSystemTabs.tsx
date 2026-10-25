@@ -1,9 +1,9 @@
-// Module ID: 17144
-// Function ID: 17145
+// Module ID: 17149
+// Function ID: 17150
 // Name: UserSettingsDesignSystemTabs
-// Dependencies: [32, 19, 17, 21, 4971, 587, 558, 576, 5234, 5252, 4968, 8901, 11849, 13699, 11144, 5244, 5977, 7295, 2]
+// Dependencies: [32, 19, 17, 21, 4971, 587, 558, 576, 5234, 5252, 4968, 8901, 11850, 13704, 11145, 5244, 5977, 7295, 2]
 
-// Module 17144 (UserSettingsDesignSystemTabs)
+// Module 17149 (UserSettingsDesignSystemTabs)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5234 */;
@@ -12,9 +12,9 @@ import useToken from "useToken" /* 5252 */;
 import Stack_Stack from "Stack/Stack" /* 5977 */;
 import TableSwitchRow from "TableSwitchRow" /* 7295 */;
 import SegmentedControlState from "SegmentedControlState" /* 8901 */;
-import SegmentedControlPages from "SegmentedControlPages" /* 11144 */;
-import Tabs from "Tabs" /* 11849 */;
-import TabsGradientDefault from "TabsGradient" /* 13699 */;
+import SegmentedControlPages from "SegmentedControlPages" /* 11145 */;
+import Tabs from "Tabs" /* 11850 */;
+import TabsGradientDefault from "TabsGradient" /* 13704 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

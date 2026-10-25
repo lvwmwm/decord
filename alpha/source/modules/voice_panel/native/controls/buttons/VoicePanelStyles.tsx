@@ -1,9 +1,9 @@
-// Module ID: 18610
-// Function ID: 18611
+// Module ID: 18615
+// Function ID: 18616
 // Name: VoicePanelStyles
 // Dependencies: [4971, 587, 558, 576, 8759, 2]
 
-// Module 18610 (VoicePanelStyles)
+// Module 18615 (VoicePanelStyles)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import createStyles from "createStyles" /* 4971 */;

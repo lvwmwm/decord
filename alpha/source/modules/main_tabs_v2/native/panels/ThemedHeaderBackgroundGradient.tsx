@@ -1,9 +1,9 @@
-// Module ID: 17969
-// Function ID: 17970
+// Module ID: 17974
+// Function ID: 17975
 // Name: ThemedHeaderBackgroundGradient
 // Dependencies: [19, 17, 21, 4971, 558, 576, 587, 1633, 5252, 1105, 5258, 2]
 
-// Module 17969 (ThemedHeaderBackgroundGradient)
+// Module 17974 (ThemedHeaderBackgroundGradient)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

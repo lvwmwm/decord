@@ -1,9 +1,9 @@
-// Module ID: 16380
-// Function ID: 16381
+// Module ID: 16385
+// Function ID: 16386
 // Name: DisplayNameStylesEditPreview
-// Dependencies: [19, 17, 4972, 8649, 21, 4971, 587, 558, 576, 8655, 1992, 8658, 504, 1128, 2928, 11053, 11171, 16379, 6782, 8648, 4796, 1202, 8738, 10661, 10662, 5234, 2]
+// Dependencies: [19, 17, 4972, 8649, 21, 4971, 587, 558, 576, 8655, 1992, 8658, 504, 1128, 2928, 11054, 11172, 16384, 6782, 8648, 4796, 1202, 8738, 10661, 10662, 5234, 2]
 
-// Module 16380 (DisplayNameStylesEditPreview)
+// Module 16385 (DisplayNameStylesEditPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -231,7 +231,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
                                                             let tmp47 = null != appIconId;
                                                             if (tmp47) {
                                                               let obj3 = { id: appIconId, size: 102, style: tmp10.appIconTilted };
-                                                              tmp47 = closure_7(guildId(16379), obj3);
+                                                              tmp47 = closure_7(guildId(16384), obj3);
                                                             }
                                                             cResult[49] = appIconId;
                                                             cResult[50] = tmp10;
@@ -251,7 +251,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
                                             const obj4 = { style: tmp9.nameplatePreviewWrapper, children: closure_7(NameplatePreview, obj5) };
                                             obj5 = { user, nameplate: pendingNameplate, nameplateData: tmp43, guildId, pendingAvatarSrc: stateFromStores, pendingDisplayNameStyles: tmp18, pendingGlobalName: displayName };
                                             tmp43 = undefined;
-                                            NameplatePreview = tmp(11171).NameplatePreview;
+                                            NameplatePreview = tmp(11172).NameplatePreview;
                                             const tmp41 = View;
                                             if (null == pendingNameplate) {
                                               let tmp44 = tmp12;
@@ -311,7 +311,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
               }
             }
             const obj8 = { user, displayName, guildId, displayNameStylesOverride: tmp18, isPremiumTryItOut: undefined !== isTryItOut && isTryItOut, compact: true, hideFrame: true, hideBadges: undefined !== hideBadges && hideBadges, hidePronouns: undefined !== hidePronouns && hidePronouns, hideGuildTag: undefined !== hideGuildTag && hideGuildTag, maxWidth: 320, style: profilePreviewTilted, accessibilityLabel: tmp22 };
-            const tmp28 = closure_7(guildId(11053), obj8);
+            const tmp28 = closure_7(guildId(11054), obj8);
             cResult[15] = displayName;
             cResult[16] = tmp18;
             cResult[17] = guildId;

@@ -1,9 +1,9 @@
-// Module ID: 12191
-// Function ID: 12192
+// Module ID: 12192
+// Function ID: 12193
 // Name: UsernameText
 // Dependencies: [19, 21, 558, 576, 5989, 5234, 2]
 
-// Module 12191 (UsernameText)
+// Module 12192 (UsernameText)
 import react2 from "react" /* 576 */;
 import NicknameUtils from "NicknameUtils" /* 5989 */;
 import react from "react" /* 19 */;

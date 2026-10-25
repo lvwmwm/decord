@@ -1,9 +1,9 @@
-// Module ID: 14702
-// Function ID: 14703
+// Module ID: 14707
+// Function ID: 14708
 // Name: PremiumNitroNavigationStore
 // Dependencies: [5163, 2]
 
-// Module 14702 (PremiumNitroNavigationStore)
+// Module 14707 (PremiumNitroNavigationStore)
 import ZustandStore from "ZustandStore" /* 5163 */;
 import size from "module_2" /* 2 */;
 

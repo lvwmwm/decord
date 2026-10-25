@@ -1,14 +1,14 @@
-// Module ID: 18613
-// Function ID: 18614
+// Module ID: 18618
+// Function ID: 18619
 // Name: VoicePanelNoJoinPermissionsAlert
-// Dependencies: [19, 21, 558, 576, 5914, 18614, 1128, 5914, 2]
+// Dependencies: [19, 21, 558, 576, 5914, 18619, 1128, 5914, 2]
 
-// Module 18613 (VoicePanelNoJoinPermissionsAlert)
+// Module 18618 (VoicePanelNoJoinPermissionsAlert)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import AlertModal2 from "AlertModal" /* 5914 */;
-import VoicePanelLockedIconDefault from "VoicePanelLockedIcon" /* 18614 */;
+import VoicePanelLockedIconDefault from "VoicePanelLockedIcon" /* 18619 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

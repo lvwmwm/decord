@@ -1,9 +1,9 @@
-// Module ID: 19400
-// Function ID: 19401
+// Module ID: 19405
+// Function ID: 19406
 // Name: AVErrorVideoStreamSenderReadyTimeoutNoStream
 // Dependencies: [502, 6779, 5897, 2]
 
-// Module 19400 (AVErrorVideoStreamSenderReadyTimeoutNoStream)
+// Module 19405 (AVErrorVideoStreamSenderReadyTimeoutNoStream)
 import AVError from "AVError" /* 5897 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import VideoStreamStore from "VideoStreamStore" /* 6779 */;

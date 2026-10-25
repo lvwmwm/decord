@@ -1,9 +1,9 @@
-// Module ID: 14175
-// Function ID: 14176
+// Module ID: 14180
+// Function ID: 14181
 // Name: GameActivityIcon
 // Dependencies: [19, 17, 21, 4971, 587, 558, 576, 5037, 4978, 8074, 5669, 1417, 2]
 
-// Module 14175 (GameActivityIcon)
+// Module 14180 (GameActivityIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

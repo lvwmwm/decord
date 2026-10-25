@@ -1,121 +1,43 @@
 // Module ID: 12685
 // Function ID: 12686
-// Dependencies: [12574, 12572, 12573]
-// Exports: supportsDOMError, supportsDOMException, supportsErrorEvent, supportsNativeFetch, supportsReferrerPolicy, supportsReportingObserver
+// Dependencies: [12605, 12584]
+// Exports: captureFeedback
 
 // Module 12685
-import _mod12572 from "module_12572" /* 12572 */;
-import _mod12574 from "module_12574" /* 12574 */;
+import _mod12584 from "module_12584" /* 12584 */;
+import _mod12605 from "module_12605" /* 12605 */;
 
-function supportsFetch() {
-  if ("fetch" in _mod12574.GLOBAL_OBJ) {
-    try {
-      const _Headers = Headers;
-      const self = this;
-      const headers = new Headers();
-      const _Request = Request;
-      const self2 = this;
-      const request = new Request("http://www.example.com");
-      const _Response = Response;
-      const self3 = this;
-      const response = new Response();
-      return true;
-    } catch (err) {
-      return false;
-    }
-  } else {
-    return false;
-  }
-}
-function isNativeFunction(arg0) {
-  let isMatch = arg0;
-  if (isMatch) {
-    const obj = /^function\s+\w+\(\)\s+\{\s+\[native code\]\s+\}$/;
-    isMatch = obj.test(arg0.toString());
-  }
-  return isMatch;
-}
 
-export { isNativeFunction };
-export const supportsDOMError = function supportsDOMError() {
-  try {
-    const self = this;
-    const dOMError = new globalThis.DOMError("");
-    return true;
-  } catch (err) {
-    return false;
+export const captureFeedback = function captureFeedback(arg0) {
+  let associatedEventId;
+  let email;
+  let message;
+  let name;
+  let obj4;
+  let obj6;
+  let source;
+  let tags;
+  let url;
+  let obj = arg1;
+  if (arg1 === undefined) {
+    obj = {};
   }
-};
-export const supportsDOMException = function supportsDOMException() {
-  try {
-    const self = this;
-    const dOMException = new globalThis.DOMException("");
-    return true;
-  } catch (err) {
-    return false;
+  let currentScope = arg2;
+  if (arg2 === undefined) {
+    const obj3 = _mod12605;
+    currentScope = obj3.getCurrentScope();
   }
-};
-export const supportsErrorEvent = function supportsErrorEvent() {
-  try {
-    const self = this;
-    const errorEvent = new globalThis.ErrorEvent("");
-    return true;
-  } catch (err) {
-    return false;
+  const obj2 = { contexts: obj4, type: "feedback", level: "info", tags };
+  obj4 = { feedback: obj6.dropUndefinedKeys({ contact_email: email, name, message, url, source, associated_event_id: associatedEventId }) };
+  ({ message, name, email, url, source, associatedEventId, tags } = arg0);
+  obj6 = _mod12584;
+  let client = currentScope && currentScope.getClient();
+  if (!client) {
+    const tmp3Result = _mod12605;
+    client = tmp3Result.getClient();
   }
-};
-export { supportsFetch };
-export const supportsNativeFetch = function supportsNativeFetch() {
-  if (typeof globalThis.EdgeRuntime === "string") {
-    return true;
-  } else if (supportsFetch()) {
-    const tmp = isNativeFunction;
-    if (isNativeFunction(_mod12574.GLOBAL_OBJ.fetch)) {
-      return true;
-    } else {
-      let flag2 = false;
-      const _document = tmp2(12574).GLOBAL_OBJ.document;
-      if (_document) {
-        if (typeof _document.createElement === "function") {
-          try {
-            const element = <iframe />;
-            element.hidden = true;
-            const head = _document.head;
-            head.appendChild(element);
-            const _fetch = element.contentWindow && tmp5.contentWindow.fetch;
-            if (_fetch) {
-              flag2 = tmp(tmp5.contentWindow.fetch);
-            }
-            const head2 = _document.head;
-            head2.removeChild(element);
-          } catch (tmp10) {
-            if (_mod12572.DEBUG_BUILD) {
-              const logger = tmp2(12573).logger;
-              logger.warn("Could not create sandbox iframe for pure fetch check, bailing to window.fetch: ", tmp10);
-            }
-          }
-        }
-      }
-      return flag2;
-    }
-  } else {
-    return false;
+  if (client) {
+    client.emit("beforeSendFeedback", obj2, obj);
   }
-};
-export const supportsReferrerPolicy = function supportsReferrerPolicy() {
-  if (supportsFetch()) {
-    try {
-      const _Request = Request;
-      const self = this;
-      const request = new Request("_", { referrerPolicy: "origin" });
-      return true;
-    } catch (err) {
-      return false;
-    }
-  } else {
-    return false;
-  }
-};
-export const supportsReportingObserver = function supportsReportingObserver() {
-  return "ReportingObserver" in _mod12574.GLOBAL_OBJ;
+  return currentScope.captureEvent(obj2, obj);
 };
